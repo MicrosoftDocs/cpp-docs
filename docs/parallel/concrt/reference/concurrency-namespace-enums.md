@@ -60,7 +60,7 @@ enum CriticalRegionType;
 ```  
   
 ##  <a name="dynamicprogressfeedbacktype"></a>  DynamicProgressFeedbackType Enumeration  
- Used by the `DynamicProgressFeedback` policy to describe whether resources for the scheduler will be rebalanced according to statistical information gathered from the scheduler or only based on virtual processors going in and out of the idle state through calls to the `Activate` and `Deactivate` methods on the `IVirtualProcessorRoot` interface. For more information on available scheduler policies, see [PolicyElementKey Enumeration](../../../parallel/concrt/reference/concurrency-namespace-enums.md).  
+ Used by the `DynamicProgressFeedback` policy to describe whether resources for the scheduler will be rebalanced according to statistical information gathered from the scheduler or only based on virtual processors going in and out of the idle state through calls to the `Activate` and `Deactivate` methods on the `IVirtualProcessorRoot` interface. For more information on available scheduler policies, see [PolicyElementKey Enumeration](concurrency-namespace-enums.md).  
   
 ```
 enum DynamicProgressFeedbackType;
@@ -88,14 +88,14 @@ enum PolicyElementKey;
 ```  
   
 ##  <a name="schedulertype"></a>  SchedulerType Enumeration  
- Used by the `SchedulerKind` policy to describe the type of threads that the scheduler should utilize for underlying execution contexts. For more information on available scheduler policies, see [PolicyElementKey Enumeration](../../../parallel/concrt/reference/concurrency-namespace-enums.md).  
+ Used by the `SchedulerKind` policy to describe the type of threads that the scheduler should utilize for underlying execution contexts. For more information on available scheduler policies, see [PolicyElementKey Enumeration](concurrency-namespace-enums.md).  
   
 ```
 enum SchedulerType;
 ```  
   
 ##  <a name="schedulingprotocoltype"></a>  SchedulingProtocolType Enumeration  
- Used by the `SchedulingProtocol` policy to describe which scheduling algorithm will be utilized for the scheduler. For more information on available scheduler policies, see [PolicyElementKey Enumeration](../../../parallel/concrt/reference/concurrency-namespace-enums.md).  
+ Used by the `SchedulingProtocol` policy to describe which scheduling algorithm will be utilized for the scheduler. For more information on available scheduler policies, see [PolicyElementKey Enumeration](concurrency-namespace-enums.md).  
   
 ```
 enum SchedulingProtocolType;
@@ -111,7 +111,7 @@ enum SwitchingProxyState;
 ### Remarks  
  A parameter of type `SwitchingProxyState` is passed in to the method `IThreadProxy::SwitchTo` to instruct the Resource Manager how to treat the thread proxy that is making the call.  
   
- For more information on how this type is used, see [IThreadProxy::SwitchTo](../../../parallel/concrt/reference/ithreadproxy-structure.md#switchto).  
+ For more information on how this type is used, see [IThreadProxy::SwitchTo](ithreadproxy-structure.md#switchto).  
   
 ##  <a name="task_group_status"></a>  task_group_status Enumeration  
  Describes the execution status of a `task_group` or `structured_task_group` object. A value of this type is returned by numerous methods that wait on tasks scheduled to a task group to complete.  
@@ -121,11 +121,11 @@ enum task_group_status;
 ```  
   
 ##  <a name="winrtinitializationtype"></a>  WinRTInitializationType Enumeration  
- Used by the `WinRTInitialization` policy to describe whether and how the Windows Runtime will be initialized on scheduler threads for an application which runs on operating systems with version Windows 8 or higher. For more information on available scheduler policies, see [PolicyElementKey Enumeration](../../../parallel/concrt/reference/concurrency-namespace-enums.md).  
+ Used by the `WinRTInitialization` policy to describe whether and how the Windows Runtime will be initialized on scheduler threads for an application which runs on operating systems with version Windows 8 or higher. For more information on available scheduler policies, see [PolicyElementKey Enumeration](concurrency-namespace-enums.md).  
   
 ```
 enum WinRTInitializationType;
 ```  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

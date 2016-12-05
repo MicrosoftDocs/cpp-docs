@@ -49,7 +49,7 @@ class ScheduleGroup;
   
 |Name|Description|  
 |----------|-----------------|  
-|[ScheduleGroup::~ScheduleGroup Destructor](#ctor)||  
+|[ScheduleGroup::~ScheduleGroup Destructor](#dtor)||  
   
 ### Public Methods  
   
@@ -107,7 +107,7 @@ virtual unsigned int Reference() = 0;
  The newly incremented reference count.  
   
 ### Remarks  
- This is typically used to manage the lifetime of the schedule group for composition. When the reference count of a schedule group falls to zero, the schedule group is deleted by the runtime. A schedule group created using either the [CurrentScheduler::CreateScheduleGroup](../../../parallel/concrt/reference/currentscheduler-class.md#createschedulegroup) method, or the [Scheduler::CreateScheduleGroup](../../../parallel/concrt/reference/scheduler-class.md#createschedulegroup) method starts out with a reference count of one.  
+ This is typically used to manage the lifetime of the schedule group for composition. When the reference count of a schedule group falls to zero, the schedule group is deleted by the runtime. A schedule group created using either the [CurrentScheduler::CreateScheduleGroup](currentscheduler-class.md#createschedulegroup) method, or the [Scheduler::CreateScheduleGroup](scheduler-class.md#createschedulegroup) method starts out with a reference count of one.  
   
 ##  <a name="release"></a>  ScheduleGroup::Release Method  
  Decrements the scheduler group reference count.  
@@ -150,9 +150,9 @@ virtual void ScheduleTask(
  Calling the `ScheduleTask` method implicitly places a reference count on the schedule group which is removed by the runtime at an appropriate time after the task executes.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [CurrentScheduler Class](../../../parallel/concrt/reference/currentscheduler-class.md)   
- [Scheduler Class](../../../parallel/concrt/reference/scheduler-class.md)   
+ [concurrency Namespace](concurrency-namespace.md)   
+ [CurrentScheduler Class](currentscheduler-class.md)   
+ [Scheduler Class](scheduler-class.md)   
  [Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)
 
 

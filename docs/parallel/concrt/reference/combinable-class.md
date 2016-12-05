@@ -55,7 +55,7 @@ class combinable;
 |Name|Description|  
 |----------|-----------------|  
 |[combinable::combinable Constructor](#ctor)|Overloaded. Constructs a new `combinable` object.|  
-|[combinable::~combinable Destructor](#ctor)|Destroys a `combinable` object.|  
+|[combinable::~combinable Destructor](#dtor)|Destroys a `combinable` object.|  
   
 ### Public Methods  
   
@@ -190,4 +190,4 @@ combinable& operator= (const combinable& _Copy);
  A reference to this `combinable` object.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

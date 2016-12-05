@@ -113,10 +113,10 @@ void get() const;
  The result of the task.  
   
 ### Remarks  
- If the task is canceled, a call to `get` will throw a [task_canceled](../../../parallel/concrt/reference/task-canceled-class.md) exception. If the task encountered an different exception or an exception was propagated to it from an antecedent task, a call to `get` will throw that exception.  
+ If the task is canceled, a call to `get` will throw a [task_canceled](task-canceled-class.md) exception. If the task encountered an different exception or an exception was propagated to it from an antecedent task, a call to `get` will throw that exception.  
   
 > [!IMPORTANT]
->  In a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app, do not call [concurrency::task::wait](#wait) or `get` ( `wait` calls `get`) in code that runs on the STA. Otherwise, the runtime throws [concurrency::invalid_operation](../../../parallel/concrt/reference/invalid-operation-class.md) because these methods block the current thread and can cause the app to become unresponsive. However, you can call the `get` method to receive the result of the antecedent task in a task-based continuation because the result is immediately available.  
+>  In a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app, do not call [concurrency::task::wait](#wait) or `get` ( `wait` calls `get`) in code that runs on the STA. Otherwise, the runtime throws [concurrency::invalid_operation](invalid-operation-class.md) because these methods block the current thread and can cause the app to become unresponsive. However, you can call the `get` method to receive the result of the antecedent task in a task-based continuation because the result is immediately available.  
   
 ##  <a name="is_apartment_aware"></a>  task::is_apartment_aware Method  
  Determines whether the task unwraps a Windows Runtime `IAsyncInfo` interface or is descended from such a task.  
@@ -298,7 +298,7 @@ __declspec(
  The cancellation token to associate with the continuation task. A continuation task that is created without a cancellation token will inherit the token of its antecedent task.  
   
  `_ContinuationContext`  
- A variable that specifies where the continuation should execute. This variable is only useful when used in a Windows Store style app. For more information, see [task_continuation_context](../../../parallel/concrt/reference/task-continuation-context-class.md)  
+ A variable that specifies where the continuation should execute. This variable is only useful when used in a Windows Store style app. For more information, see [task_continuation_context](task-continuation-context-class.md)  
   
 ### Return Value  
  The newly created continuation task. The result type of the returned task is determined by what `_Func` returns.  
@@ -321,7 +321,7 @@ task_status wait() const;
 ### Remarks  
   
 > [!IMPORTANT]
->  In a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app, do not call `wait` in code that runs on the STA. Otherwise, the runtime throws [concurrency::invalid_operation](../../../parallel/concrt/reference/invalid-operation-class.md) because this method blocks the current thread and can cause the app to become unresponsive. However, you can call the [concurrency::task::get](#get) method to receive the result of the antecedent task in a task-based continuation.  
+>  In a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app, do not call `wait` in code that runs on the STA. Otherwise, the runtime throws [concurrency::invalid_operation](invalid-operation-class.md) because this method blocks the current thread and can cause the app to become unresponsive. However, you can call the [concurrency::task::get](#get) method to receive the result of the antecedent task in a task-based continuation.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

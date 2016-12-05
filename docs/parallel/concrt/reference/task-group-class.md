@@ -13,7 +13,7 @@ class task_group;
 |Name|Description|  
 |----------|-----------------|  
 |[task_group::task_group Constructor](#ctor)|Overloaded. Constructs a new `task_group` object.|  
-|[task_group::~task_group Destructor](#ctor)|Destroys a `task_group` object. You are expected to call the either the `wait` or `run_and_wait` method on the object prior to the destructor executing, unless the destructor is executing as the result of stack unwinding due to an exception.|  
+|[task_group::~task_group Destructor](#dtor)|Destroys a `task_group` object. You are expected to call the either the `wait` or `run_and_wait` method on the object prior to the destructor executing, unless the destructor is executing as the result of stack unwinding due to an exception.|  
   
 ### Public Methods  
   

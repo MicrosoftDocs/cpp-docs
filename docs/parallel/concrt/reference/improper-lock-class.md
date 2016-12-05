@@ -78,6 +78,6 @@ improper_lock() throw();
  A descriptive message of the error.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [critical_section Class](../../../parallel/concrt/reference/critical-section-class.md)   
- [reader_writer_lock Class](../../../parallel/concrt/reference/reader-writer-lock-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [critical_section Class](critical-section-class.md)   
+ [reader_writer_lock Class](reader-writer-lock-class.md)

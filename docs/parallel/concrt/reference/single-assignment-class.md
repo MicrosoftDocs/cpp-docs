@@ -55,7 +55,7 @@ class single_assignment : public propagator_block<multi_link_registry<ITarget<T>
 |Name|Description|  
 |----------|-----------------|  
 |[single_assignment::single_assignment Constructor](#ctor)|Overloaded. Constructs a `single_assignment` messaging block.|  
-|[single_assignment::~single_assignment Destructor](#ctor)|Destroys the `single_assignment` messaging block.|  
+|[single_assignment::~single_assignment Destructor](#dtor)|Destroys the `single_assignment` messaging block.|  
   
 ### Public Methods  
   
@@ -73,9 +73,9 @@ class single_assignment : public propagator_block<multi_link_registry<ITarget<T>
 |[single_assignment::link_target_notification Method](#link_target_notification)|A callback that notifies that a new target has been linked to this `single_assignment` messaging block.|  
 |[single_assignment::propagate_message Method](#propagate_message)|Asynchronously passes a message from an `ISource` block to this `single_assignment` messaging block. It is invoked by the `propagate` method, when called by a source block.|  
 |[single_assignment::propagate_to_any_targets Method](#propagate_to_any_targets)|Places the `message``_PMessage` in this `single_assignment` messaging block and offers it to all of the linked targets.|  
-|[single_assignment::release_message Method](#release_message)|Releases a previous message reservation. (Overrides [source_block::release_message](../../../parallel/concrt/reference/source-block-class.md#release_message).)|  
-|[single_assignment::reserve_message Method](#reserve_message)|Reserves a message previously offered by this `single_assignment` messaging block. (Overrides [source_block::reserve_message](../../../parallel/concrt/reference/source-block-class.md#reserve_message).)|  
-|[single_assignment::resume_propagation Method](#resume_propagation)|Resumes propagation after a reservation has been released. (Overrides [source_block::resume_propagation](../../../parallel/concrt/reference/source-block-class.md#resume_propagation).)|  
+|[single_assignment::release_message Method](#release_message)|Releases a previous message reservation. (Overrides [source_block::release_message](source-block-class.md#release_message).)|  
+|[single_assignment::reserve_message Method](#reserve_message)|Reserves a message previously offered by this `single_assignment` messaging block. (Overrides [source_block::reserve_message](source-block-class.md#reserve_message).)|  
+|[single_assignment::resume_propagation Method](#resume_propagation)|Resumes propagation after a reservation has been released. (Overrides [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
 |[single_assignment::send_message Method](#send_message)|Synchronously passes a message from an `ISource` block to this `single_assignment` messaging block. It is invoked by the `send` method, when called by a source block.|  
   
 ## Remarks  
@@ -84,13 +84,13 @@ class single_assignment : public propagator_block<multi_link_registry<ITarget<T>
  For more information, see [Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md).  
   
 ## Inheritance Hierarchy  
- [ISource](../../../parallel/concrt/reference/isource-class.md)  
+ [ISource](isource-class.md)  
   
- [ITarget](../../../parallel/concrt/reference/itarget-class.md)  
+ [ITarget](itarget-class.md)  
   
- [source_block](../../../parallel/concrt/reference/source-block-class.md)  
+ [source_block](source-block-class.md)  
   
- [propagator_block](../../../parallel/concrt/reference/propagator-block-class.md)  
+ [propagator_block](propagator-block-class.md)  
   
  `single_assignment`  
   
@@ -171,7 +171,7 @@ virtual message_status propagate_message(
  A pointer to the source block offering the message.  
   
 ### Return Value  
- A [message_status](../../../parallel/concrt/reference/concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
+ A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
   
 ##  <a name="propagate_to_any_targets"></a>  single_assignment::propagate_to_any_targets Method  
  Places the `message``_PMessage` in this `single_assignment` messaging block and offers it to all of the linked targets.  
@@ -236,7 +236,7 @@ virtual message_status send_message(
  A pointer to the source block offering the message.  
   
 ### Return Value  
- A [message_status](../../../parallel/concrt/reference/concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
+ A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
   
 ##  <a name="ctor"></a>  single_assignment::single_assignment Constructor  
  Constructs a `single_assignment` messaging block.  
@@ -298,7 +298,7 @@ T const& value();
  This method will wait until a message arrives if no message is currently stored in the `single_assignment` messaging block.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [overwrite_buffer Class](../../../parallel/concrt/reference/overwrite-buffer-class.md)   
+ [concurrency Namespace](concurrency-namespace.md)   
+ [overwrite_buffer Class](overwrite-buffer-class.md)   
  [unbounded_buffer Class](unbounded-buffer-class.md)
 

@@ -99,7 +99,7 @@ virtual unsigned int GetId() const = 0;
 ### Remarks  
  The Concurrency Runtime represents hardware threads on the system in groups of processor nodes. Nodes are usually derived from the hardware topology of the system. For example, all processors on a specific socket or a specific NUMA node may belong to the same processor node. The Resource Manager assigns unique identifiers to these nodes starting with `0` up to and including `nodeCount - 1`, where `nodeCount` represents the total number of processor nodes on the system.  
   
- The count of nodes can be obtained from the function [GetProcessorNodeCount](../../../parallel/concrt/reference/concurrency-namespace-functions.md).  
+ The count of nodes can be obtained from the function [GetProcessorNodeCount](concurrency-namespace-functions.md).  
   
 ##  <a name="getnext"></a>  ITopologyNode::GetNext Method  
  Returns an interface to the next topology node in enumeration order.  
@@ -125,4 +125,4 @@ virtual unsigned long GetNumaNode() const = 0;
  A thread proxy running on a virtual processor root belonging to this node will have affinity to at least the NUMA node level for the NUMA node returned by this method.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

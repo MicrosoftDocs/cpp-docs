@@ -58,7 +58,7 @@ class call : public target_block<multi_link_registry<ISource<T>>>;
 |Name|Description|  
 |----------|-----------------|  
 |[call::call Constructor](#ctor)|Overloaded. Constructs a `call` messaging block.|  
-|[call::~call Destructor](#ctor)|Destroys the `call` messaging block.|  
+|[call::~call Destructor](#dtor)|Destroys the `call` messaging block.|  
   
 ### Protected Methods  
   
@@ -68,15 +68,15 @@ class call : public target_block<multi_link_registry<ISource<T>>>;
 |[call::process_message Method](#process_message)|Processes a message that was accepted by this `call` messaging block.|  
 |[call::propagate_message Method](#propagate_message)|Asynchronously passes a message from an `ISource` block to this `call` messaging block. It is invoked by the `propagate` method, when called by a source block.|  
 |[call::send_message Method](#send_message)|Synchronously passes a message from an `ISource` block to this `call` messaging block. It is invoked by the `send` method, when called by a source block.|  
-|[call::supports_anonymous_source Method](#supports_anonymous_source)|Overrides the `supports_anonymous_source` method to indicate that this block can accept messages offered to it by a source that is not linked. (Overrides [ITarget::supports_anonymous_source](../../../parallel/concrt/reference/itarget-class.md#supports_anonymous_source).)|  
+|[call::supports_anonymous_source Method](#supports_anonymous_source)|Overrides the `supports_anonymous_source` method to indicate that this block can accept messages offered to it by a source that is not linked. (Overrides [ITarget::supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|  
   
 ## Remarks  
  For more information, see [Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md).  
   
 ## Inheritance Hierarchy  
- [ITarget](../../../parallel/concrt/reference/itarget-class.md)  
+ [ITarget](itarget-class.md)  
   
- [target_block](../../../parallel/concrt/reference/target-block-class.md)  
+ [target_block](target-block-class.md)  
   
  `call`  
   
@@ -180,7 +180,7 @@ virtual message_status propagate_message(
  A pointer to the source block offering the message.  
   
 ### Return Value  
- A [message_status](../../../parallel/concrt/reference/concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
+ A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
   
 ##  <a name="send_message"></a>  call::send_message Method  
  Synchronously passes a message from an `ISource` block to this `call` messaging block. It is invoked by the `send` method, when called by a source block.  
@@ -199,7 +199,7 @@ virtual message_status send_message(
  A pointer to the source block offering the message.  
   
 ### Return Value  
- A [message_status](../../../parallel/concrt/reference/concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
+ A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
   
 ##  <a name="supports_anonymous_source"></a>  call::supports_anonymous_source Method  
  Overrides the `supports_anonymous_source` method to indicate that this block can accept messages offered to it by a source that is not linked.  
@@ -212,5 +212,5 @@ virtual bool supports_anonymous_source();
  `true` because the block does not postpone offered messages.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [transformer Class](../../../parallel/concrt/reference/transformer-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [transformer Class](transformer-class.md)

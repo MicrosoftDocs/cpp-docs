@@ -78,5 +78,5 @@ nested_scheduler_missing_detach() throw();
  A descriptive message of the error.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [Scheduler Class](../../../parallel/concrt/reference/scheduler-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [Scheduler Class](scheduler-class.md)

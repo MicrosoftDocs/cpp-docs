@@ -78,7 +78,7 @@ class concurrent_vector: protected details::_Allocator_base<T,
 |Name|Description|  
 |----------|-----------------|  
 |[concurrent_vector::concurrent_vector Constructor](#ctor)|Overloaded. Constructs a concurrent vector.|  
-|[concurrent_vector::~concurrent_vector Destructor](#ctor)|Erases all elements and destroys this concurrent vector.|  
+|[concurrent_vector::~concurrent_vector Destructor](#dtor)|Erases all elements and destroys this concurrent vector.|  
   
 ### Public Methods  
   
@@ -604,7 +604,7 @@ void swap(concurrent_vector& _Vector);
  The `concurrent_vector` object to swap contents with.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
+ [concurrency Namespace](concurrency-namespace.md)   
  [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md)
 
 

@@ -265,7 +265,7 @@ bool try_pop(reference _Elem);
  `true` if a value was popped, `false` otherwise.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
+ [concurrency Namespace](concurrency-namespace.md)   
  [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md)
 
 

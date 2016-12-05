@@ -63,7 +63,7 @@ struct IResourceManager;
 |[IResourceManager::Release Method](#release)|Decrements the reference count on the Resource Manager instance. The Resource Manager is destroyed when its reference count goes to `0`.|  
   
 ## Remarks  
- Use the [CreateResourceManager](../../../parallel/concrt/reference/concurrency-namespace-functions.md) function to obtain an interface to the singleton Resource Manager instance. The method increments a reference count on the Resource Manager, and you should invoke the [IResourceManager::Release](#release) method to release the reference when you are done with Resource Manager. Typically, each scheduler you create will invoke this method during creation, and release the reference to the Resource Manager after it shuts down.  
+ Use the [CreateResourceManager](concurrency-namespace-functions.md) function to obtain an interface to the singleton Resource Manager instance. The method increments a reference count on the Resource Manager, and you should invoke the [IResourceManager::Release](#release) method to release the reference when you are done with Resource Manager. Typically, each scheduler you create will invoke this method during creation, and release the reference to the Resource Manager after it shuts down.  
   
 ## Inheritance Hierarchy  
  `IResourceManager`  
@@ -100,7 +100,7 @@ virtual void CreateNodeTopology(
 ### Remarks  
  [invalid_argument](../../../standard-library/invalid-argument-class.md) is thrown if the parameter `nodeCount` has the value `0` was passed in, or if the parameter `pCoreCount` has the value `NULL`.  
   
- [invalid_operation](../../../parallel/concrt/reference/invalid-operation-class.md) is thrown if this method is called while other schedulers exist in the process.  
+ [invalid_operation](invalid-operation-class.md) is thrown if this method is called while other schedulers exist in the process.  
   
 ##  <a name="getavailablenodecount"></a>  IResourceManager::GetAvailableNodeCount Method  
  Returns the number of nodes available to the Resource Manager.  
@@ -159,7 +159,7 @@ virtual ISchedulerProxy *RegisterScheduler(
  The `ISchedulerProxy` interface the Resource Manager has associated with your scheduler. Your scheduler should use this interface to communicate with Resource Manager from this point on.  
   
 ### Remarks  
- Use this method to initiate communication with the Resource Manager. The method associates the `IScheduler` interface for your scheduler with an `ISchedulerProxy` interface and hands it back to you. You can use the returned interface to request execution resources for use by your scheduler, or to subscribe threads with the Resource Manager. The Resource Manager will use policy elements from the scheduler policy returned by the [IScheduler::GetPolicy](../../../parallel/concrt/reference/ischeduler-structure.md#getpolicy) method to determine what type of threads the scheduler will need to execute work. If your `SchedulerKind` policy key has the value `UmsThreadDefault` and the value is read back out of the policy as the value `UmsThreadDefault`, the `IScheduler` interface passed to the method must be an `IUMSScheduler` interface.  
+ Use this method to initiate communication with the Resource Manager. The method associates the `IScheduler` interface for your scheduler with an `ISchedulerProxy` interface and hands it back to you. You can use the returned interface to request execution resources for use by your scheduler, or to subscribe threads with the Resource Manager. The Resource Manager will use policy elements from the scheduler policy returned by the [IScheduler::GetPolicy](ischeduler-structure.md#getpolicy) method to determine what type of threads the scheduler will need to execute work. If your `SchedulerKind` policy key has the value `UmsThreadDefault` and the value is read back out of the policy as the value `UmsThreadDefault`, the `IScheduler` interface passed to the method must be an `IUMSScheduler` interface.  
   
  The method throws an `invalid_argument` exception if the parameter `pScheduler` has the value `NULL` or if the parameter `version` is not a valid version for the communication interface.  
   
@@ -174,6 +174,6 @@ virtual unsigned int Release() = 0;
  The resulting reference count.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [ISchedulerProxy Structure](../../../parallel/concrt/reference/ischedulerproxy-structure.md)   
- [IScheduler Structure](../../../parallel/concrt/reference/ischeduler-structure.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [ISchedulerProxy Structure](ischedulerproxy-structure.md)   
+ [IScheduler Structure](ischeduler-structure.md)

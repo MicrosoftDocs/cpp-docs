@@ -127,5 +127,5 @@ virtual void wait() = 0;
  Processor implementations should override this method.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [ordered_message_processor Class](../../../parallel/concrt/reference/ordered-message-processor-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [ordered_message_processor Class](ordered-message-processor-class.md)

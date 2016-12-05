@@ -96,4 +96,4 @@ unsigned int m_reserved : 31;
 ```  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

@@ -143,6 +143,6 @@ virtual bool remove(_EType _Link) = 0;
  `true` if the link was found and removed, `false` otherwise.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [single_link_registry Class](../../../parallel/concrt/reference/single-link-registry-class.md)   
- [multi_link_registry Class](../../../parallel/concrt/reference/multi-link-registry-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [single_link_registry Class](single-link-registry-class.md)   
+ [multi_link_registry Class](multi-link-registry-class.md)

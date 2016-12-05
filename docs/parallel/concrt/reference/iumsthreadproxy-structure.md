@@ -56,7 +56,7 @@ struct IUMSThreadProxy : public IThreadProxy;
 |[IUMSThreadProxy::GetCriticalRegionType Method](#getcriticalregiontype)|Returns what kind of critical region the thread proxy is within. Because hyper-critical regions are a superset of critical regions, if code has entered a critical region and then a hyper-critical region, `InsideHyperCriticalRegion` will be returned.|  
   
 ## Inheritance Hierarchy  
- [IThreadProxy](../../../parallel/concrt/reference/ithreadproxy-structure.md)  
+ [IThreadProxy](ithreadproxy-structure.md)  
   
  `IUMSThreadProxy`  
   
@@ -119,5 +119,5 @@ virtual CriticalRegionType GetCriticalRegionType() const = 0;
  The type of critical region the thread proxy is within.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [IUMSScheduler Structure](../../../parallel/concrt/reference/iumsscheduler-structure.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [IUMSScheduler Structure](iumsscheduler-structure.md)

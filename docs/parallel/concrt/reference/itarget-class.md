@@ -61,7 +61,7 @@ class ITarget;
   
 |Name|Description|  
 |----------|-----------------|  
-|[ITarget::~ITarget Destructor](#ctor)|Destroys the `ITarget` object.|  
+|[ITarget::~ITarget Destructor](#dtor)|Destroys the `ITarget` object.|  
   
 ### Public Methods  
   
@@ -128,7 +128,7 @@ virtual message_status propagate(
  A pointer to the source block offering the message.  
   
 ### Return Value  
- A [message_status](../../../parallel/concrt/reference/concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
+ A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
   
 ### Remarks  
  The method throws an [invalid_argument](../../../standard-library/invalid-argument-class.md) exception if either the `_PMessage` or `_PSource` parameter is `NULL`.  
@@ -150,7 +150,7 @@ virtual message_status send(
  A pointer to the source block offering the message.  
   
 ### Return Value  
- A [message_status](../../../parallel/concrt/reference/concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
+ A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
   
 ### Remarks  
  The method throws an [invalid_argument](../../../standard-library/invalid-argument-class.md) exception if either the `_PMessage` or `_PSource` parameter is `NULL`.  
@@ -191,5 +191,5 @@ virtual void unlink_sources() = 0;
 ```  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [ISource Class](../../../parallel/concrt/reference/isource-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [ISource Class](isource-class.md)

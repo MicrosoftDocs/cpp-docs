@@ -49,7 +49,7 @@ class Context;
   
 |Name|Description|  
 |----------|-----------------|  
-|[Context::~Context Destructor](#ctor)||  
+|[Context::~Context Destructor](#dtor)||  
   
 ### Public Methods  
   
@@ -70,7 +70,7 @@ class Context;
 |[Context::Yield Method](#yield)|Yields execution so that another context can execute. If no other context is available to yield to, the scheduler can yield to another operating system thread.|  
   
 ## Remarks  
- The Concurrency Runtime scheduler (see [Scheduler](../../../parallel/concrt/reference/scheduler-class.md)) uses execution contexts to execute the work queued to it by your application. A Win32 thread is an example of an execution context on a Windows operating system.  
+ The Concurrency Runtime scheduler (see [Scheduler](scheduler-class.md)) uses execution contexts to execute the work queued to it by your application. A Win32 thread is an example of an execution context on a Windows operating system.  
   
  At any time, the concurrency level of a scheduler is equal to the number of virtual processors granted to it by the Resource Manager. A virtual processor is an abstraction for a processing resource and maps to a hardware thread on the underlying system. Only a single scheduler context can execute on a virtual processor at a given time.  
   
@@ -98,7 +98,7 @@ static void __cdecl Block();
   
  After the `Block` method has been called or will be called, you must pair it with a call to the [Unblock](#unblock) method from another execution context in order for it to run again. Be aware that there is a critical period between the point where your code publishes its context for another thread to be able to call the `Unblock` method and the point where the actual method call to `Block` is made. During this period, you must not call any method which can in turn block and unblock for its own reasons (for example, acquiring a lock). Calls to the `Block` and `Unblock` method do not track the reason for the blocking and unblocking. Only one object should have ownership of a `Block`- `Unblock` pair.  
   
- This method can throw a variety of exceptions, including [scheduler_resource_allocation_error](../../../parallel/concrt/reference/scheduler-resource-allocation-error-class.md).  
+ This method can throw a variety of exceptions, including [scheduler_resource_allocation_error](scheduler-resource-allocation-error-class.md).  
   
 ##  <a name="dtor"></a>  Context::~Context Destructor  
   
@@ -232,7 +232,7 @@ virtual void Unblock() = 0;
 ### Remarks  
  It is perfectly legal for a call to the `Unblock` method to come before a corresponding call to the [Block](#block) method. As long as calls to the `Block` and `Unblock` methods are properly paired, the runtime properly handles the natural race of either ordering. An `Unblock` call coming before a `Block` call simply negates the effect of the `Block` call.  
   
- There are several exceptions which can be thrown from this method. If a context attempts to call the `Unblock` method on itself, a [context_self_unblock](../../../parallel/concrt/reference/context-self-unblock-class.md) exception will be thrown. If calls to `Block` and `Unblock` are not properly paired (for example, two calls to `Unblock` are made for a context which is currently running), a [context_unblock_unbalanced](../../../parallel/concrt/reference/context-unblock-unbalanced-class.md) exception will be thrown.  
+ There are several exceptions which can be thrown from this method. If a context attempts to call the `Unblock` method on itself, a [context_self_unblock](context-self-unblock-class.md) exception will be thrown. If calls to `Block` and `Unblock` are not properly paired (for example, two calls to `Unblock` are made for a context which is currently running), a [context_unblock_unbalanced](context-unblock-unbalanced-class.md) exception will be thrown.  
   
  Be aware that there is a critical period between the point where your code publishes its context for another thread to be able to call the `Unblock` method and the point where the actual method call to `Block` is made. During this period, you must not call any method which can in turn block and unblock for its own reasons (for example, acquiring a lock). Calls to the `Block` and `Unblock` method do not track the reason for the blocking and unblocking. Only one object should have ownership of a `Block` and `Unblock` pair.  
   
@@ -272,8 +272,8 @@ static void __cdecl YieldExecution();
  This function is new in [!INCLUDE[vs_dev14](../../../ide/includes/vs_dev14_md.md)] and is identical to the [Yield](#yield) function but does not conflict with the Yield macro in Windows.h.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [Scheduler Class](../../../parallel/concrt/reference/scheduler-class.md)   
+ [concurrency Namespace](concurrency-namespace.md)   
+ [Scheduler Class](scheduler-class.md)   
  [Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)
 
 

@@ -50,7 +50,7 @@ class simple_partitioner;
 |Name|Description|  
 |----------|-----------------|  
 |[simple_partitioner::simple_partitioner Constructor](#ctor)|Constructs a `simple_partitioner` object.|  
-|[simple_partitioner::~simple_partitioner Destructor](#ctor)|Destroys a `simple_partitioner` object.|  
+|[simple_partitioner::~simple_partitioner Destructor](#dtor)|Destroys a `simple_partitioner` object.|  
   
 ## Inheritance Hierarchy  
  `simple_partitioner`  
@@ -78,4 +78,4 @@ explicit simple_partitioner(_Size_type _Chunk_size);
  `_Chunk_size`  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

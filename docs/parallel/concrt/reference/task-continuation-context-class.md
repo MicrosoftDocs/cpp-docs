@@ -156,4 +156,4 @@ static task_continuation_context use_synchronous_execution();
   
  
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

@@ -57,7 +57,7 @@ class scheduler_worker_creation_error : public scheduler_resource_allocation_err
 ## Inheritance Hierarchy  
  `exception`  
   
- [scheduler_resource_allocation_error](../../../parallel/concrt/reference/scheduler-resource-allocation-error-class.md)  
+ [scheduler_resource_allocation_error](scheduler-resource-allocation-error-class.md)  
   
  `scheduler_worker_creation_error`  
   
@@ -86,4 +86,4 @@ explicit _CRTIMP scheduler_worker_creation_error(
  The `HRESULT` value of the error that caused the exception.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

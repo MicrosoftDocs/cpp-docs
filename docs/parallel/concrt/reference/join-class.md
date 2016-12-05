@@ -60,7 +60,7 @@ class join : public propagator_block<single_link_registry<ITarget<std::vector<T>
 |Name|Description|  
 |----------|-----------------|  
 |[join::join Constructor](#ctor)|Overloaded. Constructs a `join` messaging block.|  
-|[join::~join Destructor](#ctor)|Destroys the `join` block.|  
+|[join::~join Destructor](#dtor)|Destroys the `join` block.|  
   
 ### Protected Methods  
   
@@ -71,21 +71,21 @@ class join : public propagator_block<single_link_registry<ITarget<std::vector<T>
 |[join::link_target_notification Method](#link_target_notification)|A callback that notifies that a new target has been linked to this `join` messaging block.|  
 |[join::propagate_message Method](#propagate_message)|Asynchronously passes a message from an `ISource` block to this `join` messaging block. It is invoked by the `propagate` method, when called by a source block.|  
 |[join::propagate_to_any_targets Method](#propagate_to_any_targets)|Constructs an output message containing an input message from each source when they have all propagated a message. Sends this output message out to each of its targets.|  
-|[join::release_message Method](#release_message)|Releases a previous message reservation. (Overrides [source_block::release_message](../../../parallel/concrt/reference/source-block-class.md#release_message).)|  
-|[join::reserve_message Method](#reserve_message)|Reserves a message previously offered by this `join` messaging block. (Overrides [source_block::reserve_message](../../../parallel/concrt/reference/source-block-class.md#reserve_message).)|  
-|[join::resume_propagation Method](#resume_propagation)|Resumes propagation after a reservation has been released. (Overrides [source_block::resume_propagation](../../../parallel/concrt/reference/source-block-class.md#resume_propagation).)|  
+|[join::release_message Method](#release_message)|Releases a previous message reservation. (Overrides [source_block::release_message](source-block-class.md#release_message).)|  
+|[join::reserve_message Method](#reserve_message)|Reserves a message previously offered by this `join` messaging block. (Overrides [source_block::reserve_message](source-block-class.md#reserve_message).)|  
+|[join::resume_propagation Method](#resume_propagation)|Resumes propagation after a reservation has been released. (Overrides [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
   
 ## Remarks  
  For more information, see [Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md).  
   
 ## Inheritance Hierarchy  
- [ISource](../../../parallel/concrt/reference/isource-class.md)  
+ [ISource](isource-class.md)  
   
- [ITarget](../../../parallel/concrt/reference/itarget-class.md)  
+ [ITarget](itarget-class.md)  
   
- [source_block](../../../parallel/concrt/reference/source-block-class.md)  
+ [source_block](source-block-class.md)  
   
- [propagator_block](../../../parallel/concrt/reference/propagator-block-class.md)  
+ [propagator_block](propagator-block-class.md)  
   
  `join`  
   
@@ -204,7 +204,7 @@ message_status propagate_message(
  A pointer to the source block offering the message.  
   
 ### Return Value  
- A [message_status](../../../parallel/concrt/reference/concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
+ A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
   
 ##  <a name="propagate_to_any_targets"></a>  join::propagate_to_any_targets Method  
  Constructs an output message containing an input message from each source when they have all propagated a message. Sends this output message out to each of its targets.  
@@ -249,6 +249,6 @@ virtual void resume_propagation();
 ```  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [choice Class](../../../parallel/concrt/reference/choice-class.md)   
- [multitype_join Class](../../../parallel/concrt/reference/multitype-join-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [choice Class](choice-class.md)   
+ [multitype_join Class](multitype-join-class.md)

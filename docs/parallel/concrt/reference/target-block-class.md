@@ -64,7 +64,7 @@ class target_block : public ITarget<typename _SourceLinkRegistry::type::source_t
 |Name|Description|  
 |----------|-----------------|  
 |[target_block::target_block Constructor](#ctor)|Constructs a `target_block` object.|  
-|[target_block::~target_block Destructor](#ctor)|Destroys the `target_block` object.|  
+|[target_block::~target_block Destructor](#dtor)|Destroys the `target_block` object.|  
   
 ### Public Methods  
   
@@ -90,11 +90,11 @@ class target_block : public ITarget<typename _SourceLinkRegistry::type::source_t
 |[target_block::send_message Method](#send_message)|When overridden in a derived class, this method synchronously passes a message from an `ISource` block to this `target_block` object. It is invoked by the `send` method, when called by a source block.|  
 |[target_block::sync_send Method](#sync_send)|Synchronously send a message for processing.|  
 |[target_block::unlink_source Method](#unlink_source)|Unlinks a specified source block from this `target_block` object.|  
-|[target_block::unlink_sources Method](#unlink_sources)|Unlinks all source blocks from this `target_block` object. (Overrides [ITarget::unlink_sources](../../../parallel/concrt/reference/itarget-class.md#unlink_sources).)|  
+|[target_block::unlink_sources Method](#unlink_sources)|Unlinks all source blocks from this `target_block` object. (Overrides [ITarget::unlink_sources](itarget-class.md#unlink_sources).)|  
 |[target_block::wait_for_async_sends Method](#wait_for_async_sends)|Waits for all asynchronous propagations to complete.|  
   
 ## Inheritance Hierarchy  
- [ITarget](../../../parallel/concrt/reference/itarget-class.md)  
+ [ITarget](itarget-class.md)  
   
  `target_block`  
   
@@ -195,7 +195,7 @@ virtual message_status propagate(
  A pointer to the source block offering the message.  
   
 ### Return Value  
- A [message_status](../../../parallel/concrt/reference/concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
+ A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
   
 ### Remarks  
  The method throws an [invalid_argument](../../../standard-library/invalid-argument-class.md) exception if either the `_PMessage` or `_PSource` parameter is `NULL`.  
@@ -217,7 +217,7 @@ virtual message_status propagate_message(
  A pointer to the source block offering the message.  
   
 ### Return Value  
- A [message_status](../../../parallel/concrt/reference/concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
+ A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
   
 ##  <a name="register_filter"></a>  target_block::register_filter Method  
  Registers a filter method that will be invoked on every message received.  
@@ -257,7 +257,7 @@ virtual message_status send(
  A pointer to the source block offering the message.  
   
 ### Return Value  
- A [message_status](../../../parallel/concrt/reference/concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
+ A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
   
 ### Remarks  
  The method throws an [invalid_argument](../../../standard-library/invalid-argument-class.md) exception if either the `_PMessage` or `_PSource` parameter is `NULL`.  
@@ -276,7 +276,7 @@ virtual message_status send_message(
 ```  
   
 ### Return Value  
- A [message_status](../../../parallel/concrt/reference/concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
+ A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
   
 ### Remarks  
  By default, this block returns `declined` unless overridden by a derived class.  
@@ -335,5 +335,5 @@ void wait_for_async_sends();
  This method is used by message block destructors to ensure all asynchronous operations have had time to finish before destroying the block.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [ITarget Class](../../../parallel/concrt/reference/itarget-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [ITarget Class](itarget-class.md)

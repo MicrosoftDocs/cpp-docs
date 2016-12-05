@@ -49,7 +49,7 @@ class event;
   
 |Name|Description|  
 |----------|-----------------|  
-|[event::~event Destructor](#ctor)|Destroys an event.|  
+|[event::~event Destructor](#dtor)|Destroys an event.|  
   
 ### Public Methods  
   
@@ -171,4 +171,4 @@ static size_t __cdecl wait_for_multiple(
 >  In a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app, do not call `wait_for_multiple` on the ASTA thread because this call can block the current thread and can cause the app to become unresponsive.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

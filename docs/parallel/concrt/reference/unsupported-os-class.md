@@ -75,4 +75,4 @@ unsupported_os() throw();
  A descriptive message of the error.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

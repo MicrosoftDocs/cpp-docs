@@ -51,7 +51,7 @@ class agent;
 |Name|Description|  
 |----------|-----------------|  
 |[agent::agent Constructor](#ctor)|Overloaded. Constructs an agent.|  
-|[agent::~agent Destructor](#ctor)|Destroys the agent.|  
+|[agent::~agent Destructor](#dtor)|Destroys the agent.|  
   
 ### Public Methods  
   
@@ -199,7 +199,7 @@ static agent_status __cdecl wait(
 ### Remarks  
  An agent task is completed when the agent enters the `agent_canceled` or `agent_done` states.  
   
- If the parameter `_Timeout` has a value other than the constant `COOPERATIVE_TIMEOUT_INFINITE`, the exception [operation_timed_out](../../../parallel/concrt/reference/operation-timed-out-class.md) is thrown if the specified amount of time expires before the agent has completed its task.  
+ If the parameter `_Timeout` has a value other than the constant `COOPERATIVE_TIMEOUT_INFINITE`, the exception [operation_timed_out](operation-timed-out-class.md) is thrown if the specified amount of time expires before the agent has completed its task.  
   
 ##  <a name="wait_for_all"></a>  agent::wait_for_all Method  
  Waits for all of the specified agents to complete their tasks.  
@@ -228,7 +228,7 @@ static void __cdecl wait_for_all(
 ### Remarks  
  An agent task is completed when the agent enters the `agent_canceled` or `agent_done` states.  
   
- If the parameter `_Timeout` has a value other than the constant `COOPERATIVE_TIMEOUT_INFINITE`, the exception [operation_timed_out](../../../parallel/concrt/reference/operation-timed-out-class.md) is thrown if the specified amount of time expires before the agent has completed its task.  
+ If the parameter `_Timeout` has a value other than the constant `COOPERATIVE_TIMEOUT_INFINITE`, the exception [operation_timed_out](operation-timed-out-class.md) is thrown if the specified amount of time expires before the agent has completed its task.  
   
 ##  <a name="wait_for_one"></a>  agent::wait_for_one Method  
  Waits for any one of the specified agents to complete its task.  
@@ -261,7 +261,7 @@ static void __cdecl wait_for_one(
 ### Remarks  
  An agent task is completed when the agent enters the `agent_canceled` or `agent_done` states.  
   
- If the parameter `_Timeout` has a value other than the constant `COOPERATIVE_TIMEOUT_INFINITE`, the exception [operation_timed_out](../../../parallel/concrt/reference/operation-timed-out-class.md) is thrown if the specified amount of time expires before the agent has completed its task.  
+ If the parameter `_Timeout` has a value other than the constant `COOPERATIVE_TIMEOUT_INFINITE`, the exception [operation_timed_out](operation-timed-out-class.md) is thrown if the specified amount of time expires before the agent has completed its task.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

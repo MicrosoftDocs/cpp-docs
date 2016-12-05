@@ -64,7 +64,7 @@ class source_block : public ISource<typename _TargetLinkRegistry::type::type>;
 |Name|Description|  
 |----------|-----------------|  
 |[source_block::source_block Constructor](#ctor)|Constructs a `source_block` object.|  
-|[source_block::~source_block Destructor](#ctor)|Destroys the `source_block` object.|  
+|[source_block::~source_block Destructor](#dtor)|Destroys the `source_block` object.|  
   
 ### Public Methods  
   
@@ -78,7 +78,7 @@ class source_block : public ISource<typename _TargetLinkRegistry::type::type>;
 |[source_block::release_ref Method](#release_ref)|Releases a reference count on this `source_block` object.|  
 |[source_block::reserve Method](#reserve)|Reserves a message previously offered by this `source_block` object.|  
 |[source_block::unlink_target Method](#unlink_target)|Unlinks a target block from this `source_block` object.|  
-|[source_block::unlink_targets Method](#unlink_targets)|Unlinks all target blocks from this `source_block` object. (Overrides [ISource::unlink_targets](../../../parallel/concrt/reference/isource-class.md#unlink_targets).)|  
+|[source_block::unlink_targets Method](#unlink_targets)|Unlinks all target blocks from this `source_block` object. (Overrides [ISource::unlink_targets](isource-class.md#unlink_targets).)|  
   
 ### Protected Methods  
   
@@ -105,7 +105,7 @@ class source_block : public ISource<typename _TargetLinkRegistry::type::type>;
  Message blocks should derive from this block to take advantage of link management and synchronization provided by this class.  
   
 ## Inheritance Hierarchy  
- [ISource](../../../parallel/concrt/reference/isource-class.md)  
+ [ISource](isource-class.md)  
   
  `source_block`  
   
@@ -198,7 +198,7 @@ virtual message<_Target_type>* consume(
 ### Remarks  
  The method throws an [invalid_argument](../../../standard-library/invalid-argument-class.md) exception if the parameter `_PTarget` is `NULL`.  
   
- The method throws a [bad_target](../../../parallel/concrt/reference/bad-target-class.md) exception if the parameter `_PTarget` does not represent the target that called `reserve`.  
+ The method throws a [bad_target](bad-target-class.md) exception if the parameter `_PTarget` does not represent the target that called `reserve`.  
   
  The `consume` method is similar to `accept`, but must always be preceded by a call to `reserve` that returned `true`.  
   
@@ -310,7 +310,7 @@ virtual void release(
 ### Remarks  
  The method throws an [invalid_argument](../../../standard-library/invalid-argument-class.md) exception if the parameter `_PTarget` is `NULL`.  
   
- The method throws a [bad_target](../../../parallel/concrt/reference/bad-target-class.md) exception if the parameter `_PTarget` does not represent the target that called `reserve`.  
+ The method throws a [bad_target](bad-target-class.md) exception if the parameter `_PTarget` does not represent the target that called `reserve`.  
   
 ##  <a name="release_message"></a>  source_block::release_message Method  
  When overridden in a derived class, releases a previous message reservation.  
@@ -457,5 +457,5 @@ void wait_for_outstanding_async_sends();
 ```  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [ISource Class](../../../parallel/concrt/reference/isource-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [ISource Class](isource-class.md)

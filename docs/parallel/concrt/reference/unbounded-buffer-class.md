@@ -57,7 +57,7 @@ class unbounded_buffer : public propagator_block<multi_link_registry<ITarget<   
 |Name|Description|  
 |----------|-----------------|  
 |[unbounded_buffer::unbounded_buffer Constructor](#ctor)|Overloaded. Constructs an `unbounded_buffer` messaging block.|  
-|[unbounded_buffer::~unbounded_buffer Destructor](#ctor)|Destroys the `unbounded_buffer` messaging block.|  
+|[unbounded_buffer::~unbounded_buffer Destructor](#dtor)|Destroys the `unbounded_buffer` messaging block.|  
   
 ### Public Methods  
   

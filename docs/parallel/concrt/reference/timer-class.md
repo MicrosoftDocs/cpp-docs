@@ -55,7 +55,7 @@ class timer : public Concurrency::details::_Timer, public source_block<single_li
 |Name|Description|  
 |----------|-----------------|  
 |[timer::timer Constructor](#ctor)|Overloaded. Constructs a `timer` messaging block that will fire a given message after a specified interval.|  
-|[timer::~timer Destructor](#ctor)|Destroys a `timer` messaging block.|  
+|[timer::~timer Destructor](#dtor)|Destroys a `timer` messaging block.|  
   
 ### Public Methods  
   
@@ -73,17 +73,17 @@ class timer : public Concurrency::details::_Timer, public source_block<single_li
 |[timer::consume_message Method](#consume_message)|Consumes a message previously offered by the `timer` and reserved by the target, transferring ownership to the caller.|  
 |[timer::link_target_notification Method](#link_target_notification)|A callback that notifies that a new target has been linked to this `timer` messaging block.|  
 |[timer::propagate_to_any_targets Method](#propagate_to_any_targets)|Tries to offer the message produced by the `timer` block to all of the linked targets.|  
-|[timer::release_message Method](#release_message)|Releases a previous message reservation. (Overrides [source_block::release_message](../../../parallel/concrt/reference/source-block-class.md#release_message).)|  
-|[timer::reserve_message Method](#reserve_message)|Reserves a message previously offered by this `timer` messaging block. (Overrides [source_block::reserve_message](../../../parallel/concrt/reference/source-block-class.md#reserve_message).)|  
-|[timer::resume_propagation Method](#resume_propagation)|Resumes propagation after a reservation has been released. (Overrides [source_block::resume_propagation](../../../parallel/concrt/reference/source-block-class.md#resume_propagation).)|  
+|[timer::release_message Method](#release_message)|Releases a previous message reservation. (Overrides [source_block::release_message](source-block-class.md#release_message).)|  
+|[timer::reserve_message Method](#reserve_message)|Reserves a message previously offered by this `timer` messaging block. (Overrides [source_block::reserve_message](source-block-class.md#reserve_message).)|  
+|[timer::resume_propagation Method](#resume_propagation)|Resumes propagation after a reservation has been released. (Overrides [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
   
 ## Remarks  
  For more information, see [Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md).  
   
 ## Inheritance Hierarchy  
- [ISource](../../../parallel/concrt/reference/isource-class.md)  
+ [ISource](isource-class.md)  
   
- [source_block](../../../parallel/concrt/reference/source-block-class.md)  
+ [source_block](source-block-class.md)  
   
  `timer`  
   
@@ -252,4 +252,4 @@ timer(
 ```  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

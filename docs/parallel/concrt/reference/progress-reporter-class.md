@@ -91,4 +91,4 @@ void report(const _ProgressType& val) const;
  The payload to report through a progress notification.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

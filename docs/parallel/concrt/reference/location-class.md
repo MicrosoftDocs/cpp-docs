@@ -50,7 +50,7 @@ class location;
 |Name|Description|  
 |----------|-----------------|  
 |[location::location Constructor](#ctor)|Overloaded. Constructs a `location` object.|  
-|[location::~location Destructor](#ctor)|Destroys a `location` object.|  
+|[location::~location Destructor](#dtor)|Destroys a `location` object.|  
   
 ### Public Methods  
   
@@ -172,4 +172,4 @@ bool operator== (const location& _Rhs) const;
  `true` if the two locations are identical, and `false` otherwise.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

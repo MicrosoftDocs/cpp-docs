@@ -50,7 +50,7 @@ class structured_task_group;
 |Name|Description|  
 |----------|-----------------|  
 |[structured_task_group::structured_task_group Constructor](#ctor)|Overloaded. Constructs a new `structured_task_group` object.|  
-|[structured_task_group::~structured_task_group Destructor](#ctor)|Destroys a `structured_task_group` object. You are expected to call either the `wait` or `run_and_wait` method on the object prior to the destructor executing, unless the destructor is executing as a result of stack unwinding due to an exception.|  
+|[structured_task_group::~structured_task_group Destructor](#dtor)|Destroys a `structured_task_group` object. You are expected to call either the `wait` or `run_and_wait` method on the object prior to the destructor executing, unless the destructor is executing as a result of stack unwinding due to an exception.|  
   
 ### Public Methods  
   
@@ -135,7 +135,7 @@ void run(
   
  If the `structured_task_group` destructs as the result of stack unwinding from an exception, you do not need to guarantee that a call has been made to either the `wait` or `run_and_wait` method. In this case, the destructor will appropriately cancel and wait for the task represented by the `_Task_handle` parameter to complete.  
   
- Throws an [invalid_multiple_scheduling](../../../parallel/concrt/reference/invalid-multiple-scheduling-class.md) exception if the task handle given by the `_Task_handle` parameter has already been scheduled onto a task group object via the `run` method and there has been no intervening call to either the `wait` or `run_and_wait` method on that task group.  
+ Throws an [invalid_multiple_scheduling](invalid-multiple-scheduling-class.md) exception if the task handle given by the `_Task_handle` parameter has already been scheduled onto a task group object via the `run` method and there has been no intervening call to either the `wait` or `run_and_wait` method on that task group.  
   
 ##  <a name="run_and_wait"></a>  structured_task_group::run_and_wait Method  
  Schedules a task to be run inline on the calling context with the assistance of the `structured_task_group` object for full cancellation support. If a `task_handle` object is passed as a parameter to `run_and_wait`, the caller is responsible for managing the lifetime of the `task_handle` object. The function then waits until all work on the `structured_task_group` object has either completed or been canceled.  
@@ -159,7 +159,7 @@ task_group_status run_and_wait(const _Function& _Func);
  A function which will be called to invoke the body of the work. This may be a lambda or other object which supports a version of the function call operator with the signature `void operator()()`.  
   
 ### Return Value  
- An indication of whether the wait was satisfied or the task group was canceled, due to either an explicit cancel operation or an exception being thrown from one of its tasks. For more information, see [task_group_status](../../../parallel/concrt/reference/concurrency-namespace-enums.md)  
+ An indication of whether the wait was satisfied or the task group was canceled, due to either an explicit cancel operation or an exception being thrown from one of its tasks. For more information, see [task_group_status](concurrency-namespace-enums.md)  
   
 ### Remarks  
  Note that one or more of the tasks scheduled to this `structured_task_group` object may execute inline on the calling context.  
@@ -194,7 +194,7 @@ structured_task_group(cancellation_token _CancellationToken);
 ```  
   
 ### Remarks  
- If the destructor runs as the result of normal execution (for example, not stack unwinding due to an exception) and neither the `wait` nor `run_and_wait` methods have been called, the destructor may throw a [missing_wait](../../../parallel/concrt/reference/missing-wait-class.md) exception.  
+ If the destructor runs as the result of normal execution (for example, not stack unwinding due to an exception) and neither the `wait` nor `run_and_wait` methods have been called, the destructor may throw a [missing_wait](missing-wait-class.md) exception.  
   
 ##  <a name="wait"></a>  structured_task_group::wait Method  
  Waits until all work on the `structured_task_group` has completed or is canceled.  
@@ -204,7 +204,7 @@ task_group_status wait();
 ```  
   
 ### Return Value  
- An indication of whether the wait was satisfied or the task group was canceled, due to either an explicit cancel operation or an exception being thrown from one of its tasks. For more information, see [task_group_status](../../../parallel/concrt/reference/concurrency-namespace-enums.md)  
+ An indication of whether the wait was satisfied or the task group was canceled, due to either an explicit cancel operation or an exception being thrown from one of its tasks. For more information, see [task_group_status](concurrency-namespace-enums.md)  
   
 ### Remarks  
  Note that one or more of the tasks scheduled to this `structured_task_group` object may execute inline on the calling context.  
@@ -216,6 +216,6 @@ task_group_status wait();
  In the non-exceptional path of execution, you have a mandate to call either this method or the `run_and_wait` method before the destructor of the `structured_task_group` executes.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
+ [concurrency Namespace](concurrency-namespace.md)   
  [task_group Class](task-group-class.md)   
- [task_handle Class](../../../parallel/concrt/reference/task-handle-class.md)
+ [task_handle Class](task-handle-class.md)

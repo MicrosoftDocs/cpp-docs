@@ -72,7 +72,7 @@ class concurrent_queue: public ::Concurrency::details::_Concurrent_queue_base_v4
 |Name|Description|  
 |----------|-----------------|  
 |[concurrent_queue::concurrent_queue Constructor](#ctor)|Overloaded. Constructs a concurrent queue.|  
-|[concurrent_queue::~concurrent_queue Destructor](#ctor)|Destroys the concurrent queue.|  
+|[concurrent_queue::~concurrent_queue Destructor](#dtor)|Destroys the concurrent queue.|  
   
 ### Public Methods  
   
@@ -261,4 +261,4 @@ size_type unsafe_size() const;
  `unsafe_size` is not concurrency-safe and can produce incorrect results if called concurrently with calls to the methods `push`, `try_pop`, and `empty`.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

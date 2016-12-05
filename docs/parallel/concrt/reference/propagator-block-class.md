@@ -69,7 +69,7 @@ class propagator_block : public source_block<_TargetLinkRegistry,
 |Name|Description|  
 |----------|-----------------|  
 |[propagator_block::propagator_block Constructor](#ctor)|Constructs a `propagator_block` object.|  
-|[propagator_block::~propagator_block Destructor](#ctor)|Destroys a `propagator_block` object.|  
+|[propagator_block::~propagator_block Destructor](#dtor)|Destroys a `propagator_block` object.|  
   
 ### Public Methods  
   
@@ -85,23 +85,23 @@ class propagator_block : public source_block<_TargetLinkRegistry,
 |[propagator_block::decline_incoming_messages Method](#decline_incoming_messages)|Indicates to the block that new messages should be declined.|  
 |[propagator_block::initialize_source_and_target Method](#initialize_source_and_target)|Initializes the base object. Specifically, the `message_processor` object needs to be initialized.|  
 |[propagator_block::link_source Method](#link_source)|Links a specified source block to this `propagator_block` object.|  
-|[propagator_block::process_input_messages Method](#process_input_messages)|Process input messages. This is only useful for propagator blocks, which derive from source_block (Overrides [source_block::process_input_messages](../../../parallel/concrt/reference/source-block-class.md#process_input_messages).)|  
+|[propagator_block::process_input_messages Method](#process_input_messages)|Process input messages. This is only useful for propagator blocks, which derive from source_block (Overrides [source_block::process_input_messages](source-block-class.md#process_input_messages).)|  
 |[propagator_block::propagate_message Method](#propagate_message)|When overridden in a derived class, this method asynchronously passes a message from an `ISource` block to this `propagator_block` object. It is invoked by the `propagate` method, when called by a source block.|  
 |[propagator_block::register_filter Method](#register_filter)|Registers a filter method that will be invoked on every received message.|  
 |[propagator_block::remove_network_links Method](#remove_network_links)|Removes all the source and target network links from this `propagator_block` object.|  
 |[propagator_block::send_message Method](#send_message)|When overridden in a derived class, this method synchronously passes a message from an `ISource` block to this `propagator_block` object. It is invoked by the `send` method, when called by a source block.|  
 |[propagator_block::unlink_source Method](#unlink_source)|Unlinks a specified source block from this `propagator_block` object.|  
-|[propagator_block::unlink_sources Method](#unlink_sources)|Unlinks all source blocks from this `propagator_block` object. (Overrides [ITarget::unlink_sources](../../../parallel/concrt/reference/itarget-class.md#unlink_sources).)|  
+|[propagator_block::unlink_sources Method](#unlink_sources)|Unlinks all source blocks from this `propagator_block` object. (Overrides [ITarget::unlink_sources](itarget-class.md#unlink_sources).)|  
   
 ## Remarks  
  To avoid multiple inheritance, the `propagator_block` class inherits from the `source_block` class and `ITarget` abstract class. Most of the functionality in the `target_block` class is replicated here.  
   
 ## Inheritance Hierarchy  
- [ISource](../../../parallel/concrt/reference/isource-class.md)  
+ [ISource](isource-class.md)  
   
- [ITarget](../../../parallel/concrt/reference/itarget-class.md)  
+ [ITarget](itarget-class.md)  
   
- [source_block](../../../parallel/concrt/reference/source-block-class.md)  
+ [source_block](source-block-class.md)  
   
  `propagator_block`  
   
@@ -174,7 +174,7 @@ virtual message_status propagate(
  A pointer to the source block offering the message.  
   
 ### Return Value  
- A [message_status](../../../parallel/concrt/reference/concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
+ A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
   
 ### Remarks  
  The `propagate` method is invoked on a target block by a linked source block. It queues up an asynchronous task to handle the message, if one is not already queued or executing.  
@@ -198,7 +198,7 @@ virtual message_status propagate_message(
  A pointer to the source block offering the message.  
   
 ### Return Value  
- A [message_status](../../../parallel/concrt/reference/concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
+ A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
   
 ##  <a name="ctor"></a>  propagator_block::propagator_block Constructor  
  Constructs a `propagator_block` object.  
@@ -249,7 +249,7 @@ virtual message_status send(
  A pointer to the source block offering the message.  
   
 ### Return Value  
- A [message_status](../../../parallel/concrt/reference/concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
+ A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
   
 ### Remarks  
  This method throws an [invalid_argument](../../../standard-library/invalid-argument-class.md) exception if either the `_PMessage` or `_PSource` parameter is `NULL`.  
@@ -264,7 +264,7 @@ virtual message_status send_message(
 ```  
   
 ### Return Value  
- A [message_status](../../../parallel/concrt/reference/concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
+ A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
   
 ### Remarks  
  By default, this block returns `declined` unless overridden by a derived class.  
@@ -288,6 +288,6 @@ virtual void unlink_sources();
 ```  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [source_block Class](../../../parallel/concrt/reference/source-block-class.md)   
- [ITarget Class](../../../parallel/concrt/reference/itarget-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [source_block Class](source-block-class.md)   
+ [ITarget Class](itarget-class.md)

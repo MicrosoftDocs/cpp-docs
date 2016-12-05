@@ -55,7 +55,7 @@ class overwrite_buffer : public propagator_block<multi_link_registry<ITarget<T>>
 |Name|Description|  
 |----------|-----------------|  
 |[overwrite_buffer::overwrite_buffer Constructor](#ctor)|Overloaded. Constructs an `overwrite_buffer` messaging block.|  
-|[overwrite_buffer::~overwrite_buffer Destructor](#ctor)|Destroys the `overwrite_buffer` messaging block.|  
+|[overwrite_buffer::~overwrite_buffer Destructor](#dtor)|Destroys the `overwrite_buffer` messaging block.|  
   
 ### Public Methods  
   
@@ -73,11 +73,11 @@ class overwrite_buffer : public propagator_block<multi_link_registry<ITarget<T>>
 |[overwrite_buffer::link_target_notification Method](#link_target_notification)|A callback that notifies that a new target has been linked to this `overwrite_buffer` messaging block.|  
 |[overwrite_buffer::propagate_message Method](#propagate_message)|Asynchronously passes a message from an `ISource` block to this `overwrite_buffer` messaging block. It is invoked by the `propagate` method, when called by a source block.|  
 |[overwrite_buffer::propagate_to_any_targets Method](#propagate_to_any_targets)|Places the `message``_PMessage` in this `overwrite_buffer` messaging block and offers it to all of the linked targets.|  
-|[overwrite_buffer::release_message Method](#release_message)|Releases a previous message reservation. (Overrides [source_block::release_message](../../../parallel/concrt/reference/source-block-class.md#release_message).)|  
-|[overwrite_buffer::reserve_message Method](#reserve_message)|Reserves a message previously offered by this `overwrite_buffer` messaging block. (Overrides [source_block::reserve_message](../../../parallel/concrt/reference/source-block-class.md#reserve_message).)|  
-|[overwrite_buffer::resume_propagation Method](#resume_propagation)|Resumes propagation after a reservation has been released. (Overrides [source_block::resume_propagation](../../../parallel/concrt/reference/source-block-class.md#resume_propagation).)|  
+|[overwrite_buffer::release_message Method](#release_message)|Releases a previous message reservation. (Overrides [source_block::release_message](source-block-class.md#release_message).)|  
+|[overwrite_buffer::reserve_message Method](#reserve_message)|Reserves a message previously offered by this `overwrite_buffer` messaging block. (Overrides [source_block::reserve_message](source-block-class.md#reserve_message).)|  
+|[overwrite_buffer::resume_propagation Method](#resume_propagation)|Resumes propagation after a reservation has been released. (Overrides [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
 |[overwrite_buffer::send_message Method](#send_message)|Synchronously passes a message from an `ISource` block to this `overwrite_buffer` messaging block. It is invoked by the `send` method, when called by a source block.|  
-|[overwrite_buffer::supports_anonymous_source Method](#supports_anonymous_source)|Overrides the `supports_anonymous_source` method to indicate that this block can accept messages offered to it by a source that is not linked. (Overrides [ITarget::supports_anonymous_source](../../../parallel/concrt/reference/itarget-class.md#supports_anonymous_source).)|  
+|[overwrite_buffer::supports_anonymous_source Method](#supports_anonymous_source)|Overrides the `supports_anonymous_source` method to indicate that this block can accept messages offered to it by a source that is not linked. (Overrides [ITarget::supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|  
   
 ## Remarks  
  An `overwrite_buffer` messaging block propagates out copies of its stored message to each of its targets.  
@@ -85,13 +85,13 @@ class overwrite_buffer : public propagator_block<multi_link_registry<ITarget<T>>
  For more information, see [Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md).  
   
 ## Inheritance Hierarchy  
- [ISource](../../../parallel/concrt/reference/isource-class.md)  
+ [ISource](isource-class.md)  
   
- [ITarget](../../../parallel/concrt/reference/itarget-class.md)  
+ [ITarget](itarget-class.md)  
   
- [source_block](../../../parallel/concrt/reference/source-block-class.md)  
+ [source_block](source-block-class.md)  
   
- [propagator_block](../../../parallel/concrt/reference/propagator-block-class.md)  
+ [propagator_block](propagator-block-class.md)  
   
  `overwrite_buffer`  
   
@@ -218,7 +218,7 @@ virtual message_status propagate_message(
  A pointer to the source block offering the message.  
   
 ### Return Value  
- A [message_status](../../../parallel/concrt/reference/concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
+ A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
   
 ##  <a name="propagate_to_any_targets"></a>  overwrite_buffer::propagate_to_any_targets Method  
  Places the `message``_PMessage` in this `overwrite_buffer` messaging block and offers it to all of the linked targets.  
@@ -251,7 +251,7 @@ virtual message_status send_message(
  A pointer to the source block offering the message.  
   
 ### Return Value  
- A [message_status](../../../parallel/concrt/reference/concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
+ A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
   
 ##  <a name="supports_anonymous_source"></a>  overwrite_buffer::supports_anonymous_source Method  
  Overrides the `supports_anonymous_source` method to indicate that this block can accept messages offered to it by a source that is not linked.  
@@ -312,6 +312,6 @@ T value();
  The value stored in the `overwrite_buffer` could change immediately after this method returns. This method will wait until a message arrives if no message is currently stored in the `overwrite_buffer`.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
+ [concurrency Namespace](concurrency-namespace.md)   
  [unbounded_buffer Class](unbounded-buffer-class.md)   
- [single_assignment Class](../../../parallel/concrt/reference/single-assignment-class.md)
+ [single_assignment Class](single-assignment-class.md)

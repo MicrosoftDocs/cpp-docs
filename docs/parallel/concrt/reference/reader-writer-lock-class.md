@@ -49,15 +49,15 @@ class reader_writer_lock;
   
 |Name|Description|  
 |----------|-----------------|  
-|[reader_writer_lock::scoped_lock Class](#reader_writer_lock__scoped_lock_class)|An exception safe RAII wrapper that can be used to acquire `reader_writer_lock` lock objects as a writer.|  
-|[reader_writer_lock::scoped_lock_read Class](#reader_writer_lock__scoped_lock_read_class)|An exception safe RAII wrapper that can be used to acquire `reader_writer_lock` lock objects as a reader.|  
+|[reader_writer_lock::scoped_lock Class](#scoped_lock_class)|An exception safe RAII wrapper that can be used to acquire `reader_writer_lock` lock objects as a writer.|  
+|[reader_writer_lock::scoped_lock_read Class](#scoped_lock_read_class)|An exception safe RAII wrapper that can be used to acquire `reader_writer_lock` lock objects as a reader.|  
   
 ### Public Constructors  
   
 |Name|Description|  
 |----------|-----------------|  
 |[reader_writer_lock::reader_writer_lock Constructor](#ctor)|Constructs a new `reader_writer_lock` object.|  
-|[reader_writer_lock::~reader_writer_lock Destructor](#ctor)|Destroys the `reader_writer_lock` object.|  
+|[reader_writer_lock::~reader_writer_lock Destructor](#dtor)|Destroys the `reader_writer_lock` object.|  
   
 ### Public Methods  
   
@@ -88,13 +88,13 @@ void lock();
 ```  
   
 ### Remarks  
- It is often safer to utilize the [scoped_lock](#reader_writer_lock__scoped_lock_class) construct to acquire and release a `reader_writer_lock` object as a writer in an exception safe way.  
+ It is often safer to utilize the [scoped_lock](#scoped_lock_class) construct to acquire and release a `reader_writer_lock` object as a writer in an exception safe way.  
   
  After a writer attempts to acquire the lock, any future readers will block until the writers have successfully acquired and released the lock. This lock is biased towards writers and can starve readers under a continuous load of writers.  
   
  Writers are chained so that a writer exiting the lock releases the next writer in line.  
   
- If the lock is already held by the calling context, an [improper_lock](../../../parallel/concrt/reference/improper-lock-class.md) exception will be thrown.  
+ If the lock is already held by the calling context, an [improper_lock](improper-lock-class.md) exception will be thrown.  
   
 ##  <a name="lock_read"></a>  reader_writer_lock::lock_read Method  
  Acquires the reader-writer lock as a reader. If there are writers, active readers have to wait until they are done. The reader simply registers an interest in the lock and waits for writers to release it.  
@@ -104,7 +104,7 @@ void lock_read();
 ```  
   
 ### Remarks  
- It is often safer to utilize the [scoped_lock_read](#reader_writer_lock__scoped_lock_read_class) construct to acquire and release a `reader_writer_lock` object as a reader in an exception safe way.  
+ It is often safer to utilize the [scoped_lock_read](#scoped_lock_read_class) construct to acquire and release a `reader_writer_lock` object as a reader in an exception safe way.  
   
  If there are writers waiting on the lock, the reader will wait until all writers in line have acquired and released the lock. This lock is biased towards writers and can starve readers under a continuous load of writers.  
   
@@ -125,13 +125,13 @@ reader_writer_lock();
 ### Remarks  
  It is expected that the lock is no longer held when the destructor runs. Allowing the reader writer lock to destruct with the lock still held results in undefined behavior.  
   
-##  <a name="reader_writer_lock__scoped_lock_class"></a>  reader_writer_lock::scoped_lock Class  
+##  <a name="scoped_lock_class"></a>  reader_writer_lock::scoped_lock Class  
  An exception safe RAII wrapper that can be used to acquire `reader_writer_lock` lock objects as a writer.  
   
 ```
 class scoped_lock;
 ``` 
-## <a name="reader_writer_lock__scoped_lock_ctor"></a>  reader_writer_lock::scoped_lock::scoped_lock Constructor
+## <a name="scoped_lock_ctor"></a>  reader_writer_lock::scoped_lock::scoped_lock Constructor
 Constructs a `scoped_lock` object and acquires the `reader_writer_lock` object passed in the `_Reader_writer_lock` parameter as a writer. If the lock is held by another thread, this call will block.  
   
   
@@ -143,7 +143,7 @@ explicit _CRTIMP scoped_lock(reader_writer_lock& _Reader_writer_lock);
  `_Reader_writer_lock`  
  The `reader_writer_lock` object to acquire as a writer.  
   
-## <a name="reader_writer_lock__scoped_lock_dtor"></a>  reader_writer_lock::scoped_lock::~scoped_lock Destructor
+## <a name="scoped_lock_dtor"></a>  reader_writer_lock::scoped_lock::~scoped_lock Destructor
 
 Destroys a `reader_writer_lock` object and releases the lock supplied in its constructor.   
 
@@ -151,7 +151,7 @@ Destroys a `reader_writer_lock` object and releases the lock supplied in its con
 ~scoped_lock();
 ```  
   
-##  <a name="reader_writer_lock__scoped_lock_read_class"></a>  reader_writer_lock::scoped_lock_read Class  
+##  <a name="scoped_lock_read_class"></a>  reader_writer_lock::scoped_lock_read Class  
  An exception safe RAII wrapper that can be used to acquire `reader_writer_lock` lock objects as a reader.  
   
 ```
@@ -161,7 +161,7 @@ class scoped_lock_read;
 ##  <a name="try_lock"></a>  reader_writer_lock::try_lock Method  
  Attempts to acquire the reader-writer lock as a writer without blocking.  
 
-## reader_writer_lock::scoped_lock_read::scoped_lock_read Constructor
+## <a name="scoped_lock_read_ctor"></a>  reader_writer_lock::scoped_lock_read::scoped_lock_read Constructor
 Constructs a `scoped_lock_read` object and acquires the `reader_writer_lock` object passed in the `_Reader_writer_lock` parameter as a reader. If the lock is held by another thread as a writer or there are pending writers, this call will block.  
   
 ```
@@ -172,7 +172,7 @@ explicit _CRTIMP scoped_lock_read(reader_writer_lock& _Reader_writer_lock);
  `_Reader_writer_lock`  
  The `reader_writer_lock` object to acquire as a reader.  
   
-## reader_writer_lock::scoped_lock_read::~scoped_lock_read Destructor
+## <a name="scoped_lock_read_dtor">  reader_writer_lock::scoped_lock_read::~scoped_lock_read Destructor
 Destroys a `scoped_lock_read` object and releases the lock supplied in its constructor.  
 
 ```
@@ -208,5 +208,5 @@ void unlock();
  If there are writers waiting on the lock, the release of the lock will always go to the next writer in FIFO order. This lock is biased towards writers and can starve readers under a continuous load of writers.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [critical_section Class](../../../parallel/concrt/reference/critical-section-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [critical_section Class](critical-section-class.md)

@@ -50,7 +50,7 @@ class cancellation_token_registration;
 |Name|Description|  
 |----------|-----------------|  
 |[cancellation_token_registration::cancellation_token_registration Constructor](#ctor)||  
-|[cancellation_token_registration::~cancellation_token_registration Destructor](#ctor)||  
+|[cancellation_token_registration::~cancellation_token_registration Destructor](#dtor)||  
   
 ### Public Operators  
   
@@ -123,4 +123,4 @@ bool operator== (const cancellation_token_registration& _Rhs) const;
 ### Return Value  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

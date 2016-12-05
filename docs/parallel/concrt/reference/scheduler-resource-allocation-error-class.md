@@ -100,4 +100,4 @@ explicit _CRTIMP scheduler_resource_allocation_error(
  The `HRESULT` value of the error that caused the exception.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

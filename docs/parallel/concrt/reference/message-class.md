@@ -61,7 +61,7 @@ class message : public ::Concurrency::details::_Runtime_object;
 |Name|Description|  
 |----------|-----------------|  
 |[message::message Constructor](#ctor)|Overloaded. Constructs a `message` object.|  
-|[message::~message Destructor](#ctor)|Destroys the `message` object.|  
+|[message::~message Destructor](#dtor)|Destroys the `message` object.|  
   
 ### Public Methods  
   
@@ -164,4 +164,4 @@ long remove_ref();
  The new value of the reference count.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

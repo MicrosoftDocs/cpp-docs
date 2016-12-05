@@ -50,7 +50,7 @@ class cancellation_token_source;
 |Name|Description|  
 |----------|-----------------|  
 |[cancellation_token_source::cancellation_token_source Constructor](#ctor)|Overloaded. Constructs a new `cancellation_token_source`. The source can be used to flag cancellation of some cancelable operation.|  
-|[cancellation_token_source::~cancellation_token_source Destructor](#ctor)||  
+|[cancellation_token_source::~cancellation_token_source Destructor](#dtor)||  
   
 ### Public Methods  
   
@@ -174,4 +174,4 @@ bool operator== (const cancellation_token_source& _Src) const;
 ### Return Value  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

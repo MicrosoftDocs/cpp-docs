@@ -60,7 +60,7 @@ class ISource;
   
 |Name|Description|  
 |----------|-----------------|  
-|[ISource::~ISource Destructor](#ctor)|Destroys the `ISource` object.|  
+|[ISource::~ISource Destructor](#dtor)|Destroys the `ISource` object.|  
   
 ### Public Methods  
   
@@ -234,5 +234,5 @@ virtual void unlink_targets() = 0;
 ```  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [ITarget Class](../../../parallel/concrt/reference/itarget-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [ITarget Class](itarget-class.md)

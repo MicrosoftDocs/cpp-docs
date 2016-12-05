@@ -67,7 +67,7 @@ class multitype_join: public ISource<typename _Unwrap<T>::type>;
 |Name|Description|  
 |----------|-----------------|  
 |[multitype_join::multitype_join Constructor](#ctor)|Overloaded. Constructs a `multitype_join` messaging block.|  
-|[multitype_join::~multitype_join Destructor](#ctor)|Destroys the `multitype_join` messaging block.|  
+|[multitype_join::~multitype_join Destructor](#dtor)|Destroys the `multitype_join` messaging block.|  
   
 ### Public Methods  
   
@@ -81,13 +81,13 @@ class multitype_join: public ISource<typename _Unwrap<T>::type>;
 |[multitype_join::release_ref Method](#release_ref)|Releases a reference count on this `multiple_join` messaging block.|  
 |[multitype_join::reserve Method](#reserve)|Reserves a message previously offered by this `multitype_join` messaging block.|  
 |[multitype_join::unlink_target Method](#unlink_target)|Unlinks a target block from this `multitype_join` messaging block.|  
-|[multitype_join::unlink_targets Method](#unlink_targets)|Unlinks all targets from this `multitype_join` messaging block. (Overrides [ISource::unlink_targets](../../../parallel/concrt/reference/isource-class.md#unlink_targets).)|  
+|[multitype_join::unlink_targets Method](#unlink_targets)|Unlinks all targets from this `multitype_join` messaging block. (Overrides [ISource::unlink_targets](isource-class.md#unlink_targets).)|  
   
 ## Remarks  
  For more information, see [Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md).  
   
 ## Inheritance Hierarchy  
- [ISource](../../../parallel/concrt/reference/isource-class.md)  
+ [ISource](isource-class.md)  
   
  `multitype_join`  
   
@@ -280,6 +280,6 @@ virtual void unlink_targets();
 ```  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [choice Class](../../../parallel/concrt/reference/choice-class.md)   
- [join Class](../../../parallel/concrt/reference/join-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [choice Class](choice-class.md)   
+ [join Class](join-class.md)

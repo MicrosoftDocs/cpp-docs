@@ -78,8 +78,8 @@ missing_wait() throw();
  A descriptive message of the error.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
+ [concurrency Namespace](concurrency-namespace.md)   
  [task_group Class](task-group-class.md)   
  [task_group::wait Method](task-group-class.md)   
  [task_group::run_and_wait Method](task-group-class.md)   
- [structured_task_group Class](../../../parallel/concrt/reference/structured-task-group-class.md)
+ [structured_task_group Class](structured-task-group-class.md)

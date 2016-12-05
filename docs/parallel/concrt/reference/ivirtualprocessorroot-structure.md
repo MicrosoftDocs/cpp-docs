@@ -55,12 +55,12 @@ struct IVirtualProcessorRoot : public IExecutionResource;
 |[IVirtualProcessorRoot::GetId Method](#getid)|Returns a unique identifier for the virtual processor root.|  
   
 ## Remarks  
- Every virtual processor root has an associated execution resource. The `IVirtualProcessorRoot` interface inherits from the [IExecutionResource](../../../parallel/concrt/reference/iexecutionresource-structure.md) interface. Multiple virtual processor roots may correspond to the same underlying hardware thread.  
+ Every virtual processor root has an associated execution resource. The `IVirtualProcessorRoot` interface inherits from the [IExecutionResource](iexecutionresource-structure.md) interface. Multiple virtual processor roots may correspond to the same underlying hardware thread.  
   
  The Resource Manager grants virtual processor roots to schedulers in response to requests for resources. A scheduler can use a virtual processor root to perform work by activating it with an execution context.  
   
 ## Inheritance Hierarchy  
- [IExecutionResource](../../../parallel/concrt/reference/iexecutionresource-structure.md)  
+ [IExecutionResource](iexecutionresource-structure.md)  
   
  `IVirtualProcessorRoot`  
   
@@ -93,7 +93,7 @@ virtual void Activate(_Inout_ IExecutionContext* pContext) = 0;
   
  `invalid_operation` is thrown if the argument `pContext` does not represent the execution context that was most recently dispatched by this virtual processor root.  
   
- The act of activating a virtual processor root increases the subscription level of the underlying hardware thread by one. For more information on subscription levels, see [IExecutionResource::CurrentSubscriptionLevel](../../../parallel/concrt/reference/iexecutionresource-structure.md#currentsubscriptionlevel).  
+ The act of activating a virtual processor root increases the subscription level of the underlying hardware thread by one. For more information on subscription levels, see [IExecutionResource::CurrentSubscriptionLevel](iexecutionresource-structure.md#currentsubscriptionlevel).  
   
 ##  <a name="deactivate"></a>  IVirtualProcessorRoot::Deactivate Method  
  Causes the thread proxy currently executing on this virtual processor root to stop dispatching the execution context. The thread proxy will resume executing on a call to the `Activate` method.  
@@ -120,7 +120,7 @@ virtual bool Deactivate(_Inout_ IExecutionContext* pContext) = 0;
   
  `invalid_operation` is thrown if the virtual processor root has never been activated, or the argument `pContext` does not represent the execution context that was most recently dispatched by this virtual processor root.  
   
- The act of deactivating a virtual processor root decreases the subscription level of the underlying hardware thread by one. For more information on subscription levels, see [IExecutionResource::CurrentSubscriptionLevel](../../../parallel/concrt/reference/iexecutionresource-structure.md#currentsubscriptionlevel).  
+ The act of deactivating a virtual processor root decreases the subscription level of the underlying hardware thread by one. For more information on subscription levels, see [IExecutionResource::CurrentSubscriptionLevel](iexecutionresource-structure.md#currentsubscriptionlevel).  
   
 ##  <a name="ensurealltasksvisible"></a>  IVirtualProcessorRoot::EnsureAllTasksVisible Method  
  Causes data stored in the memory hierarchy of individual processors to become visible to all processors on the system. It ensures that a full memory fence has been executed on all processors before the method returns.  
@@ -153,4 +153,4 @@ virtual unsigned int GetId() const = 0;
  An integer identifier.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

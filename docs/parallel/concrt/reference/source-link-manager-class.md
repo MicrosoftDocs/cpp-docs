@@ -64,7 +64,7 @@ class source_link_manager;
 |Name|Description|  
 |----------|-----------------|  
 |[source_link_manager::source_link_manager Constructor](#ctor)|Constructs a `source_link_manager` object.|  
-|[source_link_manager::~source_link_manager Destructor](#ctor)|Destroys the `source_link_manager` object.|  
+|[source_link_manager::~source_link_manager Destructor](#dtor)|Destroys the `source_link_manager` object.|  
   
 ### Public Methods  
   
@@ -204,6 +204,6 @@ source_link_manager();
 ```  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [single_link_registry Class](../../../parallel/concrt/reference/single-link-registry-class.md)   
- [multi_link_registry Class](../../../parallel/concrt/reference/multi-link-registry-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [single_link_registry Class](single-link-registry-class.md)   
+ [multi_link_registry Class](multi-link-registry-class.md)

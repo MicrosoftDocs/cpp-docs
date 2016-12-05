@@ -55,21 +55,21 @@ class multi_link_registry : public network_link_registry<_Block>;
 |Name|Description|  
 |----------|-----------------|  
 |[multi_link_registry::multi_link_registry Constructor](#ctor)|Constructs a `multi_link_registry` object.|  
-|[multi_link_registry::~multi_link_registry Destructor](#ctor)|Destroys the `multi_link_registry` object.|  
+|[multi_link_registry::~multi_link_registry Destructor](#dtor)|Destroys the `multi_link_registry` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[multi_link_registry::add Method](#add)|Adds a link to the `multi_link_registry` object. (Overrides [network_link_registry::add](../../../parallel/concrt/reference/network-link-registry-class.md#add).)|  
-|[multi_link_registry::begin Method](#begin)|Returns an iterator to the first element in the `multi_link_registry` object. (Overrides [network_link_registry::begin](../../../parallel/concrt/reference/network-link-registry-class.md#begin).)|  
-|[multi_link_registry::contains Method](#contains)|Searches the `multi_link_registry` object for a specified block. (Overrides [network_link_registry::contains](../../../parallel/concrt/reference/network-link-registry-class.md#contains).)|  
-|[multi_link_registry::count Method](#count)|Counts the number of items in the `multi_link_registry` object. (Overrides [network_link_registry::count](../../../parallel/concrt/reference/network-link-registry-class.md#count).)|  
-|[multi_link_registry::remove Method](#remove)|Removes a link from the `multi_link_registry` object. (Overrides [network_link_registry::remove](../../../parallel/concrt/reference/network-link-registry-class.md#remove).)|  
+|[multi_link_registry::add Method](#add)|Adds a link to the `multi_link_registry` object. (Overrides [network_link_registry::add](network-link-registry-class.md#add).)|  
+|[multi_link_registry::begin Method](#begin)|Returns an iterator to the first element in the `multi_link_registry` object. (Overrides [network_link_registry::begin](network-link-registry-class.md#begin).)|  
+|[multi_link_registry::contains Method](#contains)|Searches the `multi_link_registry` object for a specified block. (Overrides [network_link_registry::contains](network-link-registry-class.md#contains).)|  
+|[multi_link_registry::count Method](#count)|Counts the number of items in the `multi_link_registry` object. (Overrides [network_link_registry::count](network-link-registry-class.md#count).)|  
+|[multi_link_registry::remove Method](#remove)|Removes a link from the `multi_link_registry` object. (Overrides [network_link_registry::remove](network-link-registry-class.md#remove).)|  
 |[multi_link_registry::set_bound Method](#set_bound)|Sets an upper bound on the number of links that the `multi_link_registry` object can hold.|  
   
 ## Inheritance Hierarchy  
- [network_link_registry](../../../parallel/concrt/reference/network-link-registry-class.md)  
+ [network_link_registry](network-link-registry-class.md)  
   
  `multi_link_registry`  
   
@@ -90,7 +90,7 @@ virtual void add(_EType _Link);
  A pointer to a block to be added.  
   
 ### Remarks  
- The method throws an [invalid_link_target](../../../parallel/concrt/reference/invalid-link-target-class.md) exception if the link is already present in the registry, or if a bound has already been set with the `set_bound` function and a link has since been removed.  
+ The method throws an [invalid_link_target](invalid-link-target-class.md) exception if the link is already present in the registry, or if a bound has already been set with the `set_bound` function and a link has since been removed.  
   
 ##  <a name="begin"></a>  multi_link_registry::begin Method  
  Returns an iterator to the first element in the `multi_link_registry` object.  
@@ -144,7 +144,7 @@ virtual ~multi_link_registry();
 ```  
   
 ### Remarks  
- The method throws an [invalid_operation](../../../parallel/concrt/reference/invalid-operation-class.md) exception if called before all links are removed.  
+ The method throws an [invalid_operation](invalid-operation-class.md) exception if called before all links are removed.  
   
 ##  <a name="remove"></a>  multi_link_registry::remove Method  
  Removes a link from the `multi_link_registry` object.  
@@ -175,5 +175,5 @@ void set_bound(size_t _MaxLinks);
  After a bound is set, unlinking an entry will cause the `multi_link_registry` object to enter an immutable state where further calls to `add` will throw an `invalid_link_target` exception.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [single_link_registry Class](../../../parallel/concrt/reference/single-link-registry-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [single_link_registry Class](single-link-registry-class.md)

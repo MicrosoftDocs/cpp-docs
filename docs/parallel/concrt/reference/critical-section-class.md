@@ -62,7 +62,7 @@ class critical_section;
 |Name|Description|  
 |----------|-----------------|  
 |[critical_section::critical_section Constructor](#ctor)|Constructs a new critical section.|  
-|[critical_section::~critical_section Destructor](#ctor)|Destroys a critical section.|  
+|[critical_section::~critical_section Destructor](#dtor)|Destroys a critical section.|  
   
 ### Public Methods  
   
@@ -112,7 +112,7 @@ void lock();
 ### Remarks  
  It is often safer to utilize the [scoped_lock](#critical_section__scoped_lock_class) construct to acquire and release a `critical_section` object in an exception safe way.  
   
- If the lock is already held by the calling context, an [improper_lock](../../../parallel/concrt/reference/improper-lock-class.md) exception will be thrown.  
+ If the lock is already held by the calling context, an [improper_lock](improper-lock-class.md) exception will be thrown.  
   
 ##  <a name="native_handle"></a>  critical_section::native_handle Method  
  Returns a platform specific native handle, if one exists.  
@@ -184,5 +184,5 @@ void unlock();
 ```  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [reader_writer_lock Class](../../../parallel/concrt/reference/reader-writer-lock-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [reader_writer_lock Class](reader-writer-lock-class.md)

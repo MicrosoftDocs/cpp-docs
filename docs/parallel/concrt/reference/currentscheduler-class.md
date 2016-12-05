@@ -61,7 +61,7 @@ class CurrentScheduler;
 |[CurrentScheduler::ScheduleTask Method](#scheduletask)|Overloaded. Schedules a light-weight task within the scheduler associated with the calling context. The light-weight task will be placed in a schedule group determined by the runtime. The version that takes the parameter `_Placement` causes the task to be biased towards executing at the specified location.|  
   
 ## Remarks  
- If there is no scheduler (see [Scheduler](../../../parallel/concrt/reference/scheduler-class.md)) associated with the calling context, many methods within the `CurrentScheduler` class will result in attachment of the process' default scheduler. This may also imply that the process' default scheduler is created during such a call.  
+ If there is no scheduler (see [Scheduler](scheduler-class.md)) associated with the calling context, many methods within the `CurrentScheduler` class will result in attachment of the process' default scheduler. This may also imply that the process' default scheduler is created during such a call.  
   
 ## Inheritance Hierarchy  
  `CurrentScheduler`  
@@ -89,7 +89,7 @@ static void __cdecl Create(const SchedulerPolicy& _Policy);
   
  If this method is called from a context that is already attached to a different scheduler, the existing scheduler is remembered as the previous scheduler, and the newly created scheduler becomes the current scheduler. When you call the `CurrentScheduler::Detach` method at a later point, the previous scheduler is restored as the current scheduler.  
   
- This method can throw a variety of exceptions, including [scheduler_resource_allocation_error](../../../parallel/concrt/reference/scheduler-resource-allocation-error-class.md) and [invalid_scheduler_policy_value](../../../parallel/concrt/reference/invalid-scheduler-policy-value-class.md).  
+ This method can throw a variety of exceptions, including [scheduler_resource_allocation_error](scheduler-resource-allocation-error-class.md) and [invalid_scheduler_policy_value](invalid-scheduler-policy-value-class.md).  
   
 ##  <a name="createschedulegroup"></a>  CurrentScheduler::CreateScheduleGroup Method  
  Creates a new schedule group within the scheduler associated with the calling context. The version that takes the parameter `_Placement` causes tasks within the newly created schedule group to be biased towards executing at the location specified by that parameter.  
@@ -110,7 +110,7 @@ static ScheduleGroup* __cdecl CreateScheduleGroup(location& _Placement);
 ### Remarks  
  This method will result in the process' default scheduler being created and/or attached to the calling context if there is no scheduler currently associated with the calling context.  
   
- You must invoke the [Release](../../../parallel/concrt/reference/schedulegroup-class.md#release) method on a schedule group when you are done scheduling work to it. The scheduler will destroy the schedule group when all work queued to it has completed.  
+ You must invoke the [Release](schedulegroup-class.md#release) method on a schedule group when you are done scheduling work to it. The scheduler will destroy the schedule group when all work queued to it has completed.  
   
  Note that if you explicitly created this scheduler, you must release all references to schedule groups within it, before you release your reference on the scheduler, by detaching the current context from it.  
   
@@ -124,9 +124,9 @@ static void __cdecl Detach();
 ### Remarks  
  The `Detach` method implicitly removes a reference count from the scheduler.  
   
- If there is no scheduler attached to the calling context, calling this method will result in a [scheduler_not_attached](../../../parallel/concrt/reference/scheduler-not-attached-class.md) exception being thrown.  
+ If there is no scheduler attached to the calling context, calling this method will result in a [scheduler_not_attached](scheduler-not-attached-class.md) exception being thrown.  
   
- Calling this method from a context that is internal to and managed by a scheduler, or a context that was attached using a method other than the [Scheduler::Attach](../../../parallel/concrt/reference/scheduler-class.md#attach) or [CurrentScheduler::Create](#create) methods, will result in an [improper_scheduler_detach](../../../parallel/concrt/reference/improper-scheduler-detach-class.md) exception being thrown.  
+ Calling this method from a context that is internal to and managed by a scheduler, or a context that was attached using a method other than the [Scheduler::Attach](scheduler-class.md#attach) or [CurrentScheduler::Create](#create) methods, will result in an [improper_scheduler_detach](improper-scheduler-detach-class.md) exception being thrown.  
   
 ##  <a name="get"></a>  CurrentScheduler::Get Method  
  Returns a pointer to the scheduler associated with the calling context, also referred to as the current scheduler.  
@@ -213,7 +213,7 @@ static void __cdecl RegisterShutdownEvent(HANDLE _ShutdownEvent);
  A handle to a Windows event object which will be signaled by the runtime when the scheduler associated with the current context shuts down and destroys itself.  
   
 ### Remarks  
- If there is no scheduler attached to the calling context, calling this method will result in a [scheduler_not_attached](../../../parallel/concrt/reference/scheduler-not-attached-class.md) exception being thrown.  
+ If there is no scheduler attached to the calling context, calling this method will result in a [scheduler_not_attached](scheduler-not-attached-class.md) exception being thrown.  
   
 ##  <a name="scheduletask"></a>  CurrentScheduler::ScheduleTask Method  
  Schedules a light-weight task within the scheduler associated with the calling context. The light-weight task will be placed in a schedule group determined by the runtime. The version that takes the parameter `_Placement` causes the task to be biased towards executing at the specified location.  
@@ -243,9 +243,9 @@ static void __cdecl ScheduleTask(
  This method will result in the process' default scheduler being created and/or attached to the calling context if there is no scheduler currently associated with the calling context.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [Scheduler Class](../../../parallel/concrt/reference/scheduler-class.md)   
- [PolicyElementKey Enumeration](../../../parallel/concrt/reference/concurrency-namespace-enums.md)   
+ [concurrency Namespace](concurrency-namespace.md)   
+ [Scheduler Class](scheduler-class.md)   
+ [PolicyElementKey Enumeration](concurrency-namespace-enums.md)   
  [Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)
 
 

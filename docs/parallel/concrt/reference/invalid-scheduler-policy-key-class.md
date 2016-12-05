@@ -75,5 +75,5 @@ invalid_scheduler_policy_key() throw();
  A descriptive message of the error.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [SchedulerPolicy Class](../../../parallel/concrt/reference/schedulerpolicy-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [SchedulerPolicy Class](schedulerpolicy-class.md)

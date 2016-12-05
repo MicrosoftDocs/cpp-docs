@@ -75,10 +75,10 @@ invalid_multiple_scheduling() throw();
  A descriptive message of the error.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [task_handle Class](../../../parallel/concrt/reference/task-handle-class.md)   
+ [concurrency Namespace](concurrency-namespace.md)   
+ [task_handle Class](task-handle-class.md)   
  [task_group Class](task-group-class.md)   
  [task_group::run Method](task-group-class.md)   
  [task_group::wait Method](task-group-class.md)   
  [task_group::run_and_wait Method](task-group-class.md)   
- [structured_task_group Class](../../../parallel/concrt/reference/structured-task-group-class.md)
+ [structured_task_group Class](structured-task-group-class.md)

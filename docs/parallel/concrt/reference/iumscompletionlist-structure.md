@@ -76,6 +76,6 @@ virtual IUMSUnblockNotification *GetUnblockNotifications() = 0;
  The returned notifications are invalid once the execution contexts are rescheduled.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [IUMSScheduler Structure](../../../parallel/concrt/reference/iumsscheduler-structure.md)   
- [IUMSUnblockNotification Structure](../../../parallel/concrt/reference/iumsunblocknotification-structure.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [IUMSScheduler Structure](iumsscheduler-structure.md)   
+ [IUMSUnblockNotification Structure](iumsunblocknotification-structure.md)

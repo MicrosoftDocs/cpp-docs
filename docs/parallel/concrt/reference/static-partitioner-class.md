@@ -50,7 +50,7 @@ class static_partitioner;
 |Name|Description|  
 |----------|-----------------|  
 |[static_partitioner::static_partitioner Constructor](#ctor)|Constructs a `static_partitioner` object.|  
-|[static_partitioner::~static_partitioner Destructor](#ctor)|Destroys a `static_partitioner` object.|  
+|[static_partitioner::~static_partitioner Destructor](#dtor)|Destroys a `static_partitioner` object.|  
   
 ## Inheritance Hierarchy  
  `static_partitioner`  
@@ -75,4 +75,4 @@ static_partitioner();
 ```  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

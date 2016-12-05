@@ -51,7 +51,7 @@ struct IScheduler;
 |----------|-----------------|  
 |[IScheduler::AddVirtualProcessors Method](#addvirtualprocessors)|Provides a scheduler with a set of virtual processor roots for its use. Each `IVirtualProcessorRoot` interface represents the right to execute a single thread that can perform work on behalf of the scheduler.|  
 |[IScheduler::GetId Method](#getid)|Returns a unique identifier for the scheduler.|  
-|[IScheduler::GetPolicy Method](#getpolicy)|Returns a copy of the scheduler's policy. For more information on scheduler policies, see [SchedulerPolicy](../../../parallel/concrt/reference/schedulerpolicy-class.md).|  
+|[IScheduler::GetPolicy Method](#getpolicy)|Returns a copy of the scheduler's policy. For more information on scheduler policies, see [SchedulerPolicy](schedulerpolicy-class.md).|  
 |[IScheduler::NotifyResourcesExternallyBusy Method](#notifyresourcesexternallybusy)|Notifies this scheduler that the hardware threads represented by the set of virtual processor roots in the array `ppVirtualProcessorRoots` are now being used by other schedulers.|  
 |[IScheduler::NotifyResourcesExternallyIdle Method](#notifyresourcesexternallyidle)|Notifies this scheduler that the hardware threads represented by the set of virtual processor roots in the array `ppVirtualProcessorRoots` are not being used by other schedulers.|  
 |[IScheduler::RemoveVirtualProcessors Method](#removevirtualprocessors)|Initiates the removal of virtual processor roots that were previously allocated to this scheduler.|  
@@ -98,12 +98,12 @@ virtual unsigned int GetId() const = 0;
  A unique integer identifier.  
   
 ### Remarks  
- You should use the [GetSchedulerId](../../../parallel/concrt/reference/concurrency-namespace-functions.md) function to obtain a unique identifier for the object that implements the `IScheduler` interface, before you use the interface as a parameter to methods supplied by the Resource Manager. You are expected to return the same identifier when the `GetId` function is invoked.  
+ You should use the [GetSchedulerId](concurrency-namespace-functions.md) function to obtain a unique identifier for the object that implements the `IScheduler` interface, before you use the interface as a parameter to methods supplied by the Resource Manager. You are expected to return the same identifier when the `GetId` function is invoked.  
   
  An identifier obtained from a different source could result in undefined behavior.  
   
 ##  <a name="getpolicy"></a>  IScheduler::GetPolicy Method  
- Returns a copy of the scheduler's policy. For more information on scheduler policies, see [SchedulerPolicy](../../../parallel/concrt/reference/schedulerpolicy-class.md).  
+ Returns a copy of the scheduler's policy. For more information on scheduler policies, see [SchedulerPolicy](schedulerpolicy-class.md).  
   
 ```
 virtual SchedulerPolicy GetPolicy() const = 0;
@@ -133,7 +133,7 @@ virtual void NotifyResourcesExternallyBusy(
   
  The subscription level of a hardware thread is denoted by the number of subscribed threads and activated virtual processor roots associated with that hardware thread. From a particular scheduler's point of view, the external subscription level of a hardware thread is the portion of the subscription other schedulers contribute to. Notifications that resources are externally busy are sent to a scheduler when the external subscription level for a hardware thread moves from zero into positive territory.  
   
- Notifications via this method are only sent to schedulers that have a policy where the value for the `MinConcurrency` policy key is equal to the value for the `MaxConcurrency` policy key. For more information on scheduler policies, see [SchedulerPolicy](../../../parallel/concrt/reference/schedulerpolicy-class.md).  
+ Notifications via this method are only sent to schedulers that have a policy where the value for the `MinConcurrency` policy key is equal to the value for the `MaxConcurrency` policy key. For more information on scheduler policies, see [SchedulerPolicy](schedulerpolicy-class.md).  
   
  A scheduler that qualifies for notifications gets a set of initial notifications when it is created, informing it whether the resources it was just assigned are externally busy or idle.  
   
@@ -158,7 +158,7 @@ virtual void NotifyResourcesExternallyIdle(
   
  The subscription level of a hardware thread is denoted by the number of subscribed threads and activated virtual processor roots associated with that hardware thread. From a particular scheduler's point of view, the external subscription level of a hardware thread is the portion of the subscription other schedulers contribute to. Notifications that resources are externally busy are sent to a scheduler when the external subscription level for a hardware thread falls to zero from a previous positive value.  
   
- Notifications via this method are only sent to schedulers that have a policy where the value for the `MinConcurrency` policy key is equal to the value for the `MaxConcurrency` policy key. For more information on scheduler policies, see [SchedulerPolicy](../../../parallel/concrt/reference/schedulerpolicy-class.md).  
+ Notifications via this method are only sent to schedulers that have a policy where the value for the `MinConcurrency` policy key is equal to the value for the `MaxConcurrency` policy key. For more information on scheduler policies, see [SchedulerPolicy](schedulerpolicy-class.md).  
   
  A scheduler that qualifies for notifications gets a set of initial notifications when it is created, informing it whether the resources it was just assigned are externally busy or idle.  
   
@@ -179,7 +179,7 @@ virtual void RemoveVirtualProcessors(
  The number of `IVirtualProcessorRoot` interfaces in the array.  
   
 ### Remarks  
- The Resource Manager invokes the `RemoveVirtualProcessors` method to take back a set of virtual processor roots from a scheduler. The scheduler is expected to invoke the [Remove](../../../parallel/concrt/reference/iexecutionresource-structure.md#remove) method on each interface when it is done with the virtual processor roots. Do not use an `IVirtualProcessorRoot` interface once you have invoked the `Remove` method on it.  
+ The Resource Manager invokes the `RemoveVirtualProcessors` method to take back a set of virtual processor roots from a scheduler. The scheduler is expected to invoke the [Remove](iexecutionresource-structure.md#remove) method on each interface when it is done with the virtual processor roots. Do not use an `IVirtualProcessorRoot` interface once you have invoked the `Remove` method on it.  
   
  The parameter `ppVirtualProcessorRoots` points to an array of interfaces. Among the set of virtual processor roots to be removed, the roots have never been activated can be returned immediately using the `Remove` method. The roots that have been activated and are either executing work, or have been deactivated and are waiting for work to arrive, should be returned asynchronously. The scheduler must make every attempt to remove the virtual processor root as quickly as possible. Delaying removal of the virtual processor roots may result in unintentional oversubscription within the scheduler.  
   
@@ -208,13 +208,13 @@ virtual void Statistics(
   
  You should implement this method if you want the Resource Manager to use feedback about such things as task arrival to determine how to balance resource between your scheduler and other schedulers registered with the Resource Manager. If you choose not to gather statistics, you can set the policy key `DynamicProgressFeedback` to the value `DynamicProgressFeedbackDisabled` in your scheduler's policy, and the Resource Manager will not invoke this method on your scheduler.  
   
- In the absence of statistical information, the Resource Manager will use hardware thread subscription levels to make resource allocation and migration decisions. For more information on subscription levels, see [IExecutionResource::CurrentSubscriptionLevel](../../../parallel/concrt/reference/iexecutionresource-structure.md#currentsubscriptionlevel).  
+ In the absence of statistical information, the Resource Manager will use hardware thread subscription levels to make resource allocation and migration decisions. For more information on subscription levels, see [IExecutionResource::CurrentSubscriptionLevel](iexecutionresource-structure.md#currentsubscriptionlevel).  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [PolicyElementKey Enumeration](../../../parallel/concrt/reference/concurrency-namespace-enums.md)   
- [SchedulerPolicy Class](../../../parallel/concrt/reference/schedulerpolicy-class.md)   
- [IExecutionContext Structure](../../../parallel/concrt/reference/iexecutioncontext-structure.md)   
- [IThreadProxy Structure](../../../parallel/concrt/reference/ithreadproxy-structure.md)   
- [IVirtualProcessorRoot Structure](../../../parallel/concrt/reference/ivirtualprocessorroot-structure.md)   
- [IResourceManager Structure](../../../parallel/concrt/reference/iresourcemanager-structure.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [PolicyElementKey Enumeration](concurrency-namespace-enums.md)   
+ [SchedulerPolicy Class](schedulerpolicy-class.md)   
+ [IExecutionContext Structure](iexecutioncontext-structure.md)   
+ [IThreadProxy Structure](ithreadproxy-structure.md)   
+ [IVirtualProcessorRoot Structure](ivirtualprocessorroot-structure.md)   
+ [IResourceManager Structure](iresourcemanager-structure.md)

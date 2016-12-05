@@ -63,7 +63,7 @@ class choice: public ISource<size_t>;
 |Name|Description|  
 |----------|-----------------|  
 |[choice::choice Constructor](#ctor)|Overloaded. Constructs a `choice` messaging block.|  
-|[choice::~choice Destructor](#ctor)|Destroys the `choice` messaging block.|  
+|[choice::~choice Destructor](#dtor)|Destroys the `choice` messaging block.|  
   
 ### Public Methods  
   
@@ -79,7 +79,7 @@ class choice: public ISource<size_t>;
 |[choice::release_ref Method](#release_ref)|Releases a reference count on this `choice` messaging block.|  
 |[choice::reserve Method](#reserve)|Reserves a message previously offered by this `choice` messaging block.|  
 |[choice::unlink_target Method](#unlink_target)|Unlinks a target block from this `choice` messaging block.|  
-|[choice::unlink_targets Method](#unlink_targets)|Unlinks all targets from this `choice` messaging block. (Overrides [ISource::unlink_targets](../../../parallel/concrt/reference/isource-class.md#unlink_targets).)|  
+|[choice::unlink_targets Method](#unlink_targets)|Unlinks all targets from this `choice` messaging block. (Overrides [ISource::unlink_targets](isource-class.md#unlink_targets).)|  
 |[choice::value Method](#value)|Gets the message whose index was selected by the `choice` messaging block.|  
   
 ## Remarks  
@@ -88,7 +88,7 @@ class choice: public ISource<size_t>;
  For more information, see [Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md).  
   
 ## Inheritance Hierarchy  
- [ISource](../../../parallel/concrt/reference/isource-class.md)  
+ [ISource](isource-class.md)  
   
  `choice`  
   
@@ -329,6 +329,6 @@ _Payload_type const& value();
  Because a `choice` messaging block can take inputs with different payload types, you must specify the type of the payload at the point of retrieval. You can determine the type based on the result of the `index` method.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [join Class](../../../parallel/concrt/reference/join-class.md)   
- [single_assignment Class](../../../parallel/concrt/reference/single-assignment-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [join Class](join-class.md)   
+ [single_assignment Class](single-assignment-class.md)

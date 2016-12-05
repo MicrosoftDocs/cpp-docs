@@ -55,20 +55,20 @@ class single_link_registry : public network_link_registry<_Block>;
 |Name|Description|  
 |----------|-----------------|  
 |[single_link_registry::single_link_registry Constructor](#ctor)|Constructs a `single_link_registry` object.|  
-|[single_link_registry::~single_link_registry Destructor](#ctor)|Destroys the `single_link_registry` object.|  
+|[single_link_registry::~single_link_registry Destructor](#dtor)|Destroys the `single_link_registry` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[single_link_registry::add Method](#add)|Adds a link to the `single_link_registry` object. (Overrides [network_link_registry::add](../../../parallel/concrt/reference/network-link-registry-class.md#add).)|  
-|[single_link_registry::begin Method](#begin)|Returns an iterator to the first element in the `single_link_registry` object. (Overrides [network_link_registry::begin](../../../parallel/concrt/reference/network-link-registry-class.md#begin).)|  
-|[single_link_registry::contains Method](#contains)|Searches the `single_link_registry` object for a specified block. (Overrides [network_link_registry::contains](../../../parallel/concrt/reference/network-link-registry-class.md#contains).)|  
-|[single_link_registry::count Method](#count)|Counts the number of items in the `single_link_registry` object. (Overrides [network_link_registry::count](../../../parallel/concrt/reference/network-link-registry-class.md#count).)|  
-|[single_link_registry::remove Method](#remove)|Removes a link from the `single_link_registry` object. (Overrides [network_link_registry::remove](../../../parallel/concrt/reference/network-link-registry-class.md#remove).)|  
+|[single_link_registry::add Method](#add)|Adds a link to the `single_link_registry` object. (Overrides [network_link_registry::add](network-link-registry-class.md#add).)|  
+|[single_link_registry::begin Method](#begin)|Returns an iterator to the first element in the `single_link_registry` object. (Overrides [network_link_registry::begin](network-link-registry-class.md#begin).)|  
+|[single_link_registry::contains Method](#contains)|Searches the `single_link_registry` object for a specified block. (Overrides [network_link_registry::contains](network-link-registry-class.md#contains).)|  
+|[single_link_registry::count Method](#count)|Counts the number of items in the `single_link_registry` object. (Overrides [network_link_registry::count](network-link-registry-class.md#count).)|  
+|[single_link_registry::remove Method](#remove)|Removes a link from the `single_link_registry` object. (Overrides [network_link_registry::remove](network-link-registry-class.md#remove).)|  
   
 ## Inheritance Hierarchy  
- [network_link_registry](../../../parallel/concrt/reference/network-link-registry-class.md)  
+ [network_link_registry](network-link-registry-class.md)  
   
  `single_link_registry`  
   
@@ -89,7 +89,7 @@ virtual void add(_EType _Link);
  A pointer to a block to be added.  
   
 ### Remarks  
- The method throws an [invalid_link_target](../../../parallel/concrt/reference/invalid-link-target-class.md) exception if there is already a link in this registry.  
+ The method throws an [invalid_link_target](invalid-link-target-class.md) exception if there is already a link in this registry.  
   
 ##  <a name="begin"></a>  single_link_registry::begin Method  
  Returns an iterator to the first element in the `single_link_registry` object.  
@@ -157,8 +157,8 @@ virtual ~single_link_registry();
 ```  
   
 ### Remarks  
- The method throws an [invalid_operation](../../../parallel/concrt/reference/invalid-operation-class.md) exception if it is called before the link is removed.  
+ The method throws an [invalid_operation](invalid-operation-class.md) exception if it is called before the link is removed.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [multi_link_registry Class](../../../parallel/concrt/reference/multi-link-registry-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [multi_link_registry Class](multi-link-registry-class.md)

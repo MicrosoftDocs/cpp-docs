@@ -50,7 +50,7 @@ class Scheduler;
 |Name|Description|  
 |----------|-----------------|  
 |[Scheduler::Scheduler Constructor](#ctor)|An object of the `Scheduler` class can only created using factory methods, or implicitly.|  
-|[Scheduler::~Scheduler Destructor](#ctor)|An object of the `Scheduler` class is implicitly destroyed when all external references to it cease to exist.|  
+|[Scheduler::~Scheduler Destructor](#dtor)|An object of the `Scheduler` class is implicitly destroyed when all external references to it cease to exist.|  
   
 ### Public Methods  
   
@@ -93,11 +93,11 @@ virtual void Attach() = 0;
 ### Remarks  
  Attaching a scheduler implicitly places a reference on the scheduler.  
   
- At some point in the future, you must call the [CurrentScheduler::Detach](../../../parallel/concrt/reference/currentscheduler-class.md#detach) method in order to allow the scheduler to shut down.  
+ At some point in the future, you must call the [CurrentScheduler::Detach](currentscheduler-class.md#detach) method in order to allow the scheduler to shut down.  
   
  If this method is called from a context that is already attached to a different scheduler, the existing scheduler is remembered as the previous scheduler, and the newly created scheduler becomes the current scheduler. When you call the `CurrentScheduler::Detach` method at a later point, the previous scheduler is restored as the current scheduler.  
   
- This method will throw an [improper_scheduler_attach](../../../parallel/concrt/reference/improper-scheduler-attach-class.md) exception if this scheduler is the current scheduler of the calling context.  
+ This method will throw an [improper_scheduler_attach](improper-scheduler-attach-class.md) exception if this scheduler is the current scheduler of the calling context.  
   
 ##  <a name="create"></a>  Scheduler::Create Method  
  Creates a new scheduler whose behavior is described by the `_Policy` parameter, places an initial reference on the scheduler, and returns a pointer to it.  
@@ -118,7 +118,7 @@ static Scheduler* __cdecl Create(const SchedulerPolicy& _Policy);
   
  A scheduler created with this method is not attached to the calling context. It can be attached to a context using the [Attach](#attach) method.  
   
- This method can throw a variety of exceptions, including [scheduler_resource_allocation_error](../../../parallel/concrt/reference/scheduler-resource-allocation-error-class.md) and [invalid_scheduler_policy_value](../../../parallel/concrt/reference/invalid-scheduler-policy-value-class.md).  
+ This method can throw a variety of exceptions, including [scheduler_resource_allocation_error](scheduler-resource-allocation-error-class.md) and [invalid_scheduler_policy_value](invalid-scheduler-policy-value-class.md).  
   
 ##  <a name="createschedulegroup"></a>  Scheduler::CreateScheduleGroup Method  
  Creates a new schedule group within the scheduler. The version that takes the parameter `_Placement` causes tasks within the newly created schedule group to be biased towards executing at the location specified by that parameter.  
@@ -137,7 +137,7 @@ virtual ScheduleGroup* CreateScheduleGroup(location& _Placement) = 0;
  A pointer to the newly created schedule group. This `ScheduleGroup` object has an initial reference count placed on it.  
   
 ### Remarks  
- You must invoke the [Release](../../../parallel/concrt/reference/schedulegroup-class.md#release) method on a schedule group when you are done scheduling work to it. The scheduler will destroy the schedule group when all work queued to it has completed.  
+ You must invoke the [Release](schedulegroup-class.md#release) method on a schedule group when you are done scheduling work to it. The scheduler will destroy the schedule group when all work queued to it has completed.  
   
  Note that if you explicitly created this scheduler, you must release all references to schedule groups within it, before you release your references on the scheduler.  
   
@@ -201,7 +201,7 @@ virtual unsigned int Reference() = 0 ;
 ### Remarks  
  This is typically used to manage the lifetime of the scheduler for composition. When the reference count of a scheduler falls to zero, the scheduler will shut down and destruct itself after all work on the scheduler has completed.  
   
- The method will throw an [improper_scheduler_reference](../../../parallel/concrt/reference/improper-scheduler-reference-class.md) exception if the reference count prior to calling the `Reference` method was zero and the call is made from a context that is not owned by the scheduler.  
+ The method will throw an [improper_scheduler_reference](improper-scheduler-reference-class.md) exception if the reference count prior to calling the `Reference` method was zero and the call is made from a context that is not owned by the scheduler.  
   
 ##  <a name="registershutdownevent"></a>  Scheduler::RegisterShutdownEvent Method  
  Causes the Windows event handle passed in the `_Event` parameter to be signaled when the scheduler shuts down and destroys itself. At the time the event is signaled, all work that had been scheduled to the scheduler is complete. Multiple shutdown events can be registered through this method.  
@@ -292,12 +292,12 @@ static void __cdecl SetDefaultSchedulerPolicy(const SchedulerPolicy& _Policy);
  The policy to be set as the default scheduler policy.  
   
 ### Remarks  
- If the `SetDefaultSchedulerPolicy` method is called when a default scheduler already exists within the process, the runtime will throw a [default_scheduler_exists](../../../parallel/concrt/reference/default-scheduler-exists-class.md) exception.  
+ If the `SetDefaultSchedulerPolicy` method is called when a default scheduler already exists within the process, the runtime will throw a [default_scheduler_exists](default-scheduler-exists-class.md) exception.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [Scheduler Class](../../../parallel/concrt/reference/scheduler-class.md)   
- [PolicyElementKey Enumeration](../../../parallel/concrt/reference/concurrency-namespace-enums.md)   
+ [concurrency Namespace](concurrency-namespace.md)   
+ [Scheduler Class](scheduler-class.md)   
+ [PolicyElementKey Enumeration](concurrency-namespace-enums.md)   
  [Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)
 
 
