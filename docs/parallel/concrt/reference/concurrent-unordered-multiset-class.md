@@ -93,23 +93,23 @@ template <typename K,
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_unordered_multiset::concurrent_unordered_multiset Constructor](#concurrent_unordered_multiset__concurrent_unordered_multiset_constructor)|Overloaded. Constructs a concurrent unordered multiset.|  
+|[concurrent_unordered_multiset::concurrent_unordered_multiset Constructor](#ctor)|Overloaded. Constructs a concurrent unordered multiset.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_unordered_multiset::hash_function Method](#concurrent_unordered_multiset__hash_function_method)|Returns the stored hash function object.|  
-|[concurrent_unordered_multiset::insert Method](#concurrent_unordered_multiset__insert_method)|Overloaded. Adds elements to the `concurrent_unordered_multiset` object.|  
-|[concurrent_unordered_multiset::key_eq Method](#concurrent_unordered_multiset__key_eq_method)|The stored equality comparison function object.|  
-|[concurrent_unordered_multiset::swap Method](#concurrent_unordered_multiset__swap_method)|Swaps the contents of two `concurrent_unordered_multiset` objects. This method is not concurrency-safe.|  
-|[concurrent_unordered_multiset::unsafe_erase Method](#concurrent_unordered_multiset__unsafe_erase_method)|Overloaded. Removes elements from the `concurrent_unordered_multiset` at specified positions. This method is not concurrency-safe.|  
+|[concurrent_unordered_multiset::hash_function Method](#hash_function)|Returns the stored hash function object.|  
+|[concurrent_unordered_multiset::insert Method](#insert)|Overloaded. Adds elements to the `concurrent_unordered_multiset` object.|  
+|[concurrent_unordered_multiset::key_eq Method](#key_eq)|The stored equality comparison function object.|  
+|[concurrent_unordered_multiset::swap Method](#swap)|Swaps the contents of two `concurrent_unordered_multiset` objects. This method is not concurrency-safe.|  
+|[concurrent_unordered_multiset::unsafe_erase Method](#unsafe_erase)|Overloaded. Removes elements from the `concurrent_unordered_multiset` at specified positions. This method is not concurrency-safe.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_unordered_multiset::operator= Operator](#concurrent_unordered_multiset__operator_eq_operator)|Overloaded. Assigns the contents of another `concurrent_unordered_multiset` object to this one. This method is not concurrency-safe.|  
+|[concurrent_unordered_multiset::operator= Operator](#operator_eq)|Overloaded. Assigns the contents of another `concurrent_unordered_multiset` object to this one. This method is not concurrency-safe.|  
   
 ## Remarks  
  For detailed information on the `concurrent_unordered_multiset` class, see [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md).  
@@ -126,7 +126,7 @@ template <typename K,
   
  **Namespace:** concurrency  
   
-##  <a name="concurrent_unordered_multiset__begin_method"></a>  concurrent_unordered_multiset::begin Method  
+##  <a name="begin"></a>  concurrent_unordered_multiset::begin Method  
  Returns an iterator pointing to the first element in the concurrent container. This method is concurrency safe.  
   
 ```
@@ -138,7 +138,7 @@ const_iterator begin() const;
 ### Return Value  
  An iterator to the first element in the concurrent container.  
   
-##  <a name="concurrent_unordered_multiset__cbegin_method"></a>  concurrent_unordered_multiset::cbegin Method  
+##  <a name="cbegin"></a>  concurrent_unordered_multiset::cbegin Method  
  Returns a const iterator pointing to the first element in the concurrent container. This method is concurrency safe.  
   
 ```
@@ -148,7 +148,7 @@ const_iterator cbegin() const;
 ### Return Value  
  A const iterator to the first element in the concurrent container.  
   
-##  <a name="concurrent_unordered_multiset__cend_method"></a>  concurrent_unordered_multiset::cend Method  
+##  <a name="cend"></a>  concurrent_unordered_multiset::cend Method  
  Returns a const iterator pointing to the location succeeding the last element in the concurrent container. This method is concurrency safe.  
   
 ```
@@ -158,14 +158,14 @@ const_iterator cend() const;
 ### Return Value  
  A const iterator to the location succeeding the last element in the concurrent container.  
   
-##  <a name="concurrent_unordered_multiset__clear_method"></a>  concurrent_unordered_multiset::clear Method  
+##  <a name="clear"></a>  concurrent_unordered_multiset::clear Method  
  Erases all the elements in the concurrent container. This function is not concurrency safe.  
   
 ```
 void clear();
 ```  
   
-##  <a name="concurrent_unordered_multiset__concurrent_unordered_multiset_constructor"></a>  concurrent_unordered_multiset::concurrent_unordered_multiset Constructor  
+##  <a name="ctor"></a>  concurrent_unordered_multiset::concurrent_unordered_multiset Constructor  
  Constructs a concurrent unordered multiset.  
   
 ```
@@ -231,7 +231,7 @@ concurrent_unordered_multiset(
   
  The last constructor specifies a move of the concurrent unordered multiset `_Uset`.  
   
-##  <a name="concurrent_unordered_multiset__count_method"></a>  concurrent_unordered_multiset::count Method  
+##  <a name="count"></a>  concurrent_unordered_multiset::count Method  
  Counts the number of elements matching a specified key. This function is concurrency safe.  
   
 ```
@@ -245,7 +245,7 @@ size_type count(const key_type& KVal) const;
 ### Return Value  
  The number of times number of times the key appears in the container.  
   
-##  <a name="concurrent_unordered_multiset__empty_method"></a>  concurrent_unordered_multiset::empty Method  
+##  <a name="empty"></a>  concurrent_unordered_multiset::empty Method  
  Tests whether no elements are present. This method is concurrency safe.  
   
 ```
@@ -258,7 +258,7 @@ bool empty() const;
 ### Remarks  
  In the presence of concurrent inserts, whether or not the concurrent container is empty may change immediately after calling this function, before the return value is even read.  
   
-##  <a name="concurrent_unordered_multiset__end_method"></a>  concurrent_unordered_multiset::end Method  
+##  <a name="end"></a>  concurrent_unordered_multiset::end Method  
  Returns an iterator pointing to the location succeeding the last element in the concurrent container. This method is concurrency safe.  
   
 ```
@@ -270,7 +270,7 @@ const_iterator end() const;
 ### Return Value  
  An iterator to the location succeeding the last element in the concurrent container.  
   
-##  <a name="concurrent_unordered_multiset__equal_range_method"></a>  concurrent_unordered_multiset::equal_range Method  
+##  <a name="equal_range"></a>  concurrent_unordered_multiset::equal_range Method  
  Finds a range that matches a specified key. This function is concurrency safe.  
   
 ```
@@ -293,7 +293,7 @@ std::pair<const_iterator,
 ### Remarks  
  It is possible for concurrent inserts to cause additional keys to be inserted after the begin iterator and before the end iterator.  
   
-##  <a name="concurrent_unordered_multiset__find_method"></a>  concurrent_unordered_multiset::find Method  
+##  <a name="find"></a>  concurrent_unordered_multiset::find Method  
  Finds an element that matches a specified key. This function is concurrency safe.  
   
 ```
@@ -309,7 +309,7 @@ const_iterator find(const key_type& KVal) const;
 ### Return Value  
  An iterator pointing to the location of the the first element that matched the key provided, or the iterator `end()` if no such element exists.  
   
-##  <a name="concurrent_unordered_multiset__get_allocator_method"></a>  concurrent_unordered_multiset::get_allocator Method  
+##  <a name="get_allocator"></a>  concurrent_unordered_multiset::get_allocator Method  
  Returns the stored allocator object for this concurrent container. This method is concurrency safe.  
   
 ```
@@ -319,7 +319,7 @@ allocator_type get_allocator() const;
 ### Return Value  
  The stored allocator object for this concurrent container.  
   
-##  <a name="concurrent_unordered_multiset__hash_function_method"></a>  concurrent_unordered_multiset::hash_function Method  
+##  <a name="hash_function"></a>  concurrent_unordered_multiset::hash_function Method  
  Returns the stored hash function object.  
   
 ```
@@ -329,7 +329,7 @@ hasher hash_function() const;
 ### Return Value  
  The stored hash function object.  
   
-##  <a name="concurrent_unordered_multiset__insert_method"></a>  concurrent_unordered_multiset::insert Method  
+##  <a name="insert"></a>  concurrent_unordered_multiset::insert Method  
  Adds elements to the `concurrent_unordered_multiset` object.  
   
 ```
@@ -387,7 +387,7 @@ typename std::tr1::enable_if<!std::tr1::is_same<const_iterator,
   
  The last two member functions behave the same as the first two, except that `value` is used to construct the inserted value.  
   
-##  <a name="concurrent_unordered_multiset__key_eq_method"></a>  concurrent_unordered_multiset::key_eq Method  
+##  <a name="key_eq"></a>  concurrent_unordered_multiset::key_eq Method  
  The stored equality comparison function object.  
   
 ```
@@ -397,7 +397,7 @@ key_equal key_eq() const;
 ### Return Value  
  The stored equality comparison function object.  
   
-##  <a name="concurrent_unordered_multiset__load_factor_method"></a>  concurrent_unordered_multiset::load_factor Method  
+##  <a name="load_factor"></a>  concurrent_unordered_multiset::load_factor Method  
  Computes and returns the current load factor of the container. The load factor is the number of elements in the container divided by the number of buckets.  
   
 ```
@@ -407,7 +407,7 @@ float load_factor() const;
 ### Return Value  
  The load factor for the container.  
   
-##  <a name="concurrent_unordered_multiset__max_load_factor_method"></a>  concurrent_unordered_multiset::max_load_factor Method  
+##  <a name="max_load_factor"></a>  concurrent_unordered_multiset::max_load_factor Method  
  Gets or sets the maximum load factor of the container. The maximum load factor is the largest number of elements than can be in any bucket before the container grows its internal table.  
   
 ```
@@ -422,7 +422,7 @@ void max_load_factor(float _Newmax);
 ### Return Value  
  The first member function returns the stored maximum load factor. The second member function does not return a value but throws an [out_of_range](../../../standard-library/out-of-range-class.md) exception if the supplied load factor is invalid..  
   
-##  <a name="concurrent_unordered_multiset__max_size_method"></a>  concurrent_unordered_multiset::max_size Method  
+##  <a name="max_size"></a>  concurrent_unordered_multiset::max_size Method  
  Returns the maximum size of the concurrent container, determined by the allocator. This method is concurrency safe.  
   
 ```
@@ -435,7 +435,7 @@ size_type max_size() const;
 ### Remarks  
  This upper bound value may actually be higher than what the container can actually hold.  
   
-##  <a name="concurrent_unordered_multiset__operator_eq_operator"></a>  concurrent_unordered_multiset::operator= Operator  
+##  <a name="operator_eq"></a>  concurrent_unordered_multiset::operator= Operator  
  Assigns the contents of another `concurrent_unordered_multiset` object to this one. This method is not concurrency-safe.  
   
 ```
@@ -454,7 +454,7 @@ concurrent_unordered_multiset& operator= (concurrent_unordered_multiset&& _Uset)
 ### Remarks  
  After erasing any existing elements in a concurrent unordered multiset, `operator=` either copies or moves the contents of `_Uset` into the concurrent unordered multiset.  
   
-##  <a name="concurrent_unordered_multiset__rehash_method"></a>  concurrent_unordered_multiset::rehash Method  
+##  <a name="rehash"></a>  concurrent_unordered_multiset::rehash Method  
  Rebuilds the hash table.  
   
 ```
@@ -470,7 +470,7 @@ void rehash(size_type _Buckets);
   
  It throws an [out_of_range](../../../standard-library/out-of-range-class.md) exception if the number of buckets is invalid (either 0 or greater than the maximum number of buckets).  
   
-##  <a name="concurrent_unordered_multiset__size_method"></a>  concurrent_unordered_multiset::size Method  
+##  <a name="size"></a>  concurrent_unordered_multiset::size Method  
  Returns the number of elements in this concurrent container. This method is concurrency safe.  
   
 ```
@@ -483,7 +483,7 @@ size_type size() const;
 ### Remarks  
  In the presence of concurrent inserts, the number of elements in the concurrent container may change immediately after calling this function, before the return value is even read.  
   
-##  <a name="concurrent_unordered_multiset__swap_method"></a>  concurrent_unordered_multiset::swap Method  
+##  <a name="swap"></a>  concurrent_unordered_multiset::swap Method  
  Swaps the contents of two `concurrent_unordered_multiset` objects. This method is not concurrency-safe.  
   
 ```
@@ -494,7 +494,7 @@ void swap(concurrent_unordered_multiset& _Uset);
  `_Uset`  
  The `concurrent_unordered_multiset` object to swap with.  
   
-##  <a name="concurrent_unordered_multiset__unsafe_begin_method"></a>  concurrent_unordered_multiset::unsafe_begin Method  
+##  <a name="unsafe_begin"></a>  concurrent_unordered_multiset::unsafe_begin Method  
  Returns an iterator to the first element in this container for a specific bucket.  
   
 ```
@@ -510,7 +510,7 @@ const_local_iterator unsafe_begin(size_type _Bucket) const;
 ### Return Value  
  An iterator pointing to the beginning of the bucket.  
   
-##  <a name="concurrent_unordered_multiset__unsafe_bucket_method"></a>  concurrent_unordered_multiset::unsafe_bucket Method  
+##  <a name="unsafe_bucket"></a>  concurrent_unordered_multiset::unsafe_bucket Method  
  Returns the bucket index that a specific key maps to in this container.  
   
 ```
@@ -524,7 +524,7 @@ size_type unsafe_bucket(const key_type& KVal) const;
 ### Return Value  
  The bucket index for the key in this container.  
   
-##  <a name="concurrent_unordered_multiset__unsafe_bucket_count_method"></a>  concurrent_unordered_multiset::unsafe_bucket_count Method  
+##  <a name="unsafe_bucket_count"></a>  concurrent_unordered_multiset::unsafe_bucket_count Method  
  Returns the current number of buckets in this container.  
   
 ```
@@ -534,7 +534,7 @@ size_type unsafe_bucket_count() const;
 ### Return Value  
  The current number of buckets in this container.  
   
-##  <a name="concurrent_unordered_multiset__unsafe_bucket_size_method"></a>  concurrent_unordered_multiset::unsafe_bucket_size Method  
+##  <a name="unsafe_bucket_size"></a>  concurrent_unordered_multiset::unsafe_bucket_size Method  
  Returns the number of items in a specific bucket of this container.  
   
 ```
@@ -548,7 +548,7 @@ size_type unsafe_bucket_size(size_type _Bucket);
 ### Return Value  
  The current number of buckets in this container.  
   
-##  <a name="concurrent_unordered_multiset__unsafe_cbegin_method"></a>  concurrent_unordered_multiset::unsafe_cbegin Method  
+##  <a name="unsafe_cbegin"></a>  concurrent_unordered_multiset::unsafe_cbegin Method  
  Returns an iterator to the first element in this container for a specific bucket.  
   
 ```
@@ -562,7 +562,7 @@ const_local_iterator unsafe_cbegin(size_type _Bucket) const;
 ### Return Value  
  An iterator pointing to the beginning of the bucket.  
   
-##  <a name="concurrent_unordered_multiset__unsafe_cend_method"></a>  concurrent_unordered_multiset::unsafe_cend Method  
+##  <a name="unsafe_cend"></a>  concurrent_unordered_multiset::unsafe_cend Method  
  Returns an iterator to the location succeeding the last element in a specific bucket.  
   
 ```
@@ -576,7 +576,7 @@ const_local_iterator unsafe_cend(size_type _Bucket) const;
 ### Return Value  
  An iterator pointing to the beginning of the bucket.  
   
-##  <a name="concurrent_unordered_multiset__unsafe_end_method"></a>  concurrent_unordered_multiset::unsafe_end Method  
+##  <a name="unsafe_end"></a>  concurrent_unordered_multiset::unsafe_end Method  
  Returns an iterator to the last element in this container for a specific bucket.  
   
 ```
@@ -592,7 +592,7 @@ const_local_iterator unsafe_end(size_type _Bucket) const;
 ### Return Value  
  An iterator pointing to the end of the bucket.  
   
-##  <a name="concurrent_unordered_multiset__unsafe_erase_method"></a>  concurrent_unordered_multiset::unsafe_erase Method  
+##  <a name="unsafe_erase"></a>  concurrent_unordered_multiset::unsafe_erase Method  
  Removes elements from the `concurrent_unordered_multiset` at specified positions. This method is not concurrency-safe.  
   
 ```
@@ -617,14 +617,14 @@ size_type unsafe_erase(
  The key value to erase.  
   
 ### Return Value  
- The first two member functions return an iterator that designates the first element remaining beyond any elements removed, or [concurrent_unordered_multiset::end Method](#concurrent_unordered_multiset__end_method)() if no such element exists. The third member function returns the number of elements it removes.  
+ The first two member functions return an iterator that designates the first element remaining beyond any elements removed, or [concurrent_unordered_multiset::end Method](#end)() if no such element exists. The third member function returns the number of elements it removes.  
   
 ### Remarks  
  The first member function removes the element pointed to by `_Where`. The second member function removes the elements in the range [ `_Begin`, `_End`).  
   
- The third member function removes the elements in the range delimited by [concurrent_unordered_multiset::equal_range Method](#concurrent_unordered_multiset__equal_range_method)(KVal).  
+ The third member function removes the elements in the range delimited by [concurrent_unordered_multiset::equal_range Method](#equal_range)(KVal).  
   
-##  <a name="concurrent_unordered_multiset__unsafe_max_bucket_count_method"></a>  concurrent_unordered_multiset::unsafe_max_bucket_count Method  
+##  <a name="unsafe_max_bucket_count"></a>  concurrent_unordered_multiset::unsafe_max_bucket_count Method  
  Returns the maximum number of buckets in this container.  
   
 ```
@@ -635,7 +635,7 @@ size_type unsafe_max_bucket_count() const;
  The maximum number of buckets in this container.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
+ [concurrency Namespace](concurrency-namespace.md)   
  [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md)
 
 

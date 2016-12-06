@@ -50,4 +50,4 @@ struct adopt_d3d_access_lock_t;
  **Namespace:** concurrency::direct3d  
   
 ## See Also  
- [Concurrency::direct3d Namespace](../../../parallel/amp/reference/concurrency-direct3d-namespace.md)
+ [Concurrency::direct3d Namespace](concurrency-direct3d-namespace.md)

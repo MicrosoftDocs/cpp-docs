@@ -49,7 +49,7 @@ class invalid_operation : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[invalid_operation::invalid_operation Constructor](#invalid_operation__invalid_operation_constructor)|Overloaded. Constructs an `invalid_operation` object.|  
+|[invalid_operation::invalid_operation Constructor](#ctor)|Overloaded. Constructs an `invalid_operation` object.|  
   
 ## Remarks  
  The various methods which throw this exception will generally document under what circumstances they will throw it.  
@@ -64,7 +64,7 @@ class invalid_operation : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="invalid_operation__invalid_operation_constructor"></a>  invalid_operation::invalid_operation Constructor  
+##  <a name="ctor"></a>  invalid_operation::invalid_operation Constructor  
  Constructs an `invalid_operation` object.  
   
 ```
@@ -78,4 +78,4 @@ invalid_operation() throw();
  A descriptive message of the error.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

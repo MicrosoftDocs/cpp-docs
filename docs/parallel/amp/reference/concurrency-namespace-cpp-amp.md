@@ -124,8 +124,8 @@ namespace Concurrency;
   
 |Name|Description|  
 |----------|-----------------|  
-|[HLSL_MAX_NUM_BUFFERS Constant](concurrency-namespace-constants-amp.md#hlsl_max_num_buffers_constant)|The maximum number of buffers allowed by DirectX.|  
-|[MODULENAME_MAX_LENGTH Constant](concurrency-namespace-constants-amp.md#modulename_max_length_constant)|Stores the maximum length of the module name. This value must be the same on the compiler and the runtime.|  
+|[HLSL_MAX_NUM_BUFFERS Constant](concurrency-namespace-constants-amp.md#hlsl_max_num_buffers)|The maximum number of buffers allowed by DirectX.|  
+|[MODULENAME_MAX_LENGTH Constant](concurrency-namespace-constants-amp.md#modulename_max_length)|Stores the maximum length of the module name. This value must be the same on the compiler and the runtime.|  
   
 ## Requirements  
  **Header:** amp.h  

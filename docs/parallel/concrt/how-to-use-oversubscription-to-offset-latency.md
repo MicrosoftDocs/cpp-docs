@@ -40,7 +40,7 @@ Oversubscription can improve the overall efficiency of some applications that co
 ## Example  
  This example uses the [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md) to download files from HTTP servers. The `http_reader` class derives from [concurrency::agent](../../parallel/concrt/reference/agent-class.md) and uses message passing to asynchronously read which URL names to download.  
   
- The `http_reader` class uses the [concurrency::task_group](reference/task-group-class.md) class to concurrently read each file. Each task calls the [concurrency::Context::Oversubscribe](reference/context-class.md#context__oversubscribe_method) method with the `_BeginOversubscription` parameter set to `true` to enable oversubscription in the current context. Each task then uses the Microsoft Foundation Classes (MFC) [CInternetSession](../../mfc/reference/cinternetsession-class.md) and [CHttpFile](../../mfc/reference/chttpfile-class.md) classes to download the file. Finally, each task calls `Context::Oversubscribe` with the `_BeginOversubscription` parameter set to `false` to disable oversubscription.  
+ The `http_reader` class uses the [concurrency::task_group](reference/task-group-class.md) class to concurrently read each file. Each task calls the [concurrency::Context::Oversubscribe](reference/context-class.md#oversubscribe) method with the `_BeginOversubscription` parameter set to `true` to enable oversubscription in the current context. Each task then uses the Microsoft Foundation Classes (MFC) [CInternetSession](../../mfc/reference/cinternetsession-class.md) and [CHttpFile](../../mfc/reference/chttpfile-class.md) classes to download the file. Finally, each task calls `Context::Oversubscribe` with the `_BeginOversubscription` parameter set to `false` to disable oversubscription.  
   
  When oversubscription is enabled, the runtime creates one additional thread in which to run tasks. Each of these threads can also oversubscribe the current context and thereby create additional threads. The `http_reader` class uses a [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) object to limit the number of threads that the application uses. The agent initializes the buffer with a fixed number of token values. For each download operation, the agent reads a token value from the buffer before the operation starts and then writes that value back to the buffer after the operation finishes. When the buffer is empty, the agent waits for one of the download operations to write a value back to the buffer.  
   
@@ -98,6 +98,6 @@ Downloaded 1801040 bytes in 3276 ms.
   
 ## See Also  
  [Contexts](../../parallel/concrt/contexts.md)   
- [Context::Oversubscribe Method](reference/context-class.md#context__oversubscribe_method)
+ [Context::Oversubscribe Method](reference/context-class.md#oversubscribe)
 
 

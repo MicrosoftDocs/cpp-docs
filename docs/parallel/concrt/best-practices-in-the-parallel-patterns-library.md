@@ -117,7 +117,7 @@ This document describes how best to make effective use of the Parallel Patterns 
  The PPL provides two ways to cancel the parallel work that is performed by a task group or parallel algorithm. One way is to use the cancellation mechanism that is provided by the [concurrency::task_group](reference/task-group-class.md) and [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) classes. The other way is to throw an exception in the body of a task work function. The cancellation mechanism is more efficient than exception handling at canceling a tree of parallel work. A *parallel work tree* is a group of related task groups in which some task groups contain other task groups. The cancellation mechanism cancels a task group and its child task groups in a top-down manner. Conversely, exception handling works in a bottom-up manner and must cancel each child task group independently as the exception propagates upward.  
   
 
- When you work directly with a task group object, use the [concurrency::task_group::cancel](reference/task-group-class.md#task_group__cancel_method) or [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#structured_task_group__cancel_method) methods to cancel the work that belongs to that task group. To cancel a parallel algorithm, for example, `parallel_for`, create a parent task group and cancel that task group. For example, consider the following function, `parallel_find_any`, which searches for a value in an array in parallel.  
+ When you work directly with a task group object, use the [concurrency::task_group::cancel](reference/task-group-class.md#cancel) or [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#cancel) methods to cancel the work that belongs to that task group. To cancel a parallel algorithm, for example, `parallel_for`, create a parent task group and cancel that task group. For example, consider the following function, `parallel_find_any`, which searches for a value in an array in parallel.  
 
 
   
@@ -188,7 +188,7 @@ Container 1: Freeing resources...Exiting program...
   
 ##  <a name="blocking"></a> Do Not Perform Blocking Operations When You Cancel Parallel Work  
 
- When possible, do not perform blocking operations before you call the [concurrency::task_group::cancel](reference/task-group-class.md#task_group__cancel_method) or [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#structured_task_group__cancel_method) method to cancel parallel work.  
+ When possible, do not perform blocking operations before you call the [concurrency::task_group::cancel](reference/task-group-class.md#cancel) or [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#cancel) method to cancel parallel work.  
 
 
   
@@ -200,7 +200,7 @@ Container 1: Freeing resources...Exiting program...
   
 
 
- The `new` operator performs a heap allocation, which might block. The runtime performs other work only when the task performs a cooperative blocking call, such as a call to [concurrency::critical_section::lock](reference/critical-section-class.md#critical_section__lock_method).  
+ The `new` operator performs a heap allocation, which might block. The runtime performs other work only when the task performs a cooperative blocking call, such as a call to [concurrency::critical_section::lock](reference/critical-section-class.md#lock).  
 
 
   
@@ -222,7 +222,7 @@ Container 1: Freeing resources...Exiting program...
   
  The PPL defines the [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) class, which helps you eliminate shared state by providing access to shared resources in a lock-free manner. The `combinable` class provides thread-local storage that lets you perform fine-grained computations and then merge those computations into a final result. You can think of a `combinable` object as a reduction variable.  
   
- The following example modifies the previous one by using a `combinable` object instead of a `critical_section` object to compute the sum. This example scales because each thread holds its own local copy of the sum. This example uses the [concurrency::combinable::combine](reference/combinable-class.md#combinable__combine_method) method to merge the local computations into the final result.  
+ The following example modifies the previous one by using a `combinable` object instead of a `critical_section` object to compute the sum. This example scales because each thread holds its own local copy of the sum. This example uses the [concurrency::combinable::combine](reference/combinable-class.md#combine) method to merge the local computations into the final result.  
 
   
  [!code-cpp[concrt-parallel-sum-of-primes#3](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_16.cpp)]  
@@ -267,7 +267,7 @@ Container 1: Freeing resources...Exiting program...
   
  Because the `object` variable is passed by value, any state changes that occur to this variable do not appear in the original copy.  
   
- The following example uses the [concurrency::task_group::wait](reference/task-group-class.md#task_group__wait_method) method to make sure that the task finishes before the `perform_action` function returns.  
+ The following example uses the [concurrency::task_group::wait](reference/task-group-class.md#wait) method to make sure that the task finishes before the `perform_action` function returns.  
 
 
   

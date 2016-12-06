@@ -77,7 +77,7 @@ class float_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|[float_2::float_2 Constructor](#float_2__float_2_constructor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[float_2::float_2 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -113,7 +113,7 @@ class float_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|[float_2::size Constant](#float_2__size_constant)||  
+|[float_2::size Constant](#float_2__size)||  
   
 ### Public Data Members  
   
@@ -136,7 +136,7 @@ class float_2;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="float_2__float_2_constructor"></a>  float_2::float_2 Constructor  
+##  <a name="ctor"></a>  float_2::float_2 Constructor  
  Default constructor, initializes all elements with 0.  
   
 ```  
@@ -198,11 +198,11 @@ explicit inline float_2(
  `_Other`  
  The object used to initialize.  
   
-##  <a name="float_2__size_constant"></a>  float_2::size Constant  
+##  <a name="float_2__size"></a>  float_2::size Constant  
   
 ```  
 static const int size = 2;  
 ```  
   
 ## See Also  
- [Concurrency::graphics Namespace](../../../parallel/amp/reference/concurrency-graphics-namespace.md)
+ [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

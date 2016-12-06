@@ -164,7 +164,7 @@ void copy (
  An ending iterator into the source container.  
   
 ##  <a name="copy_async_function"></a>  copy_async Function (Concurrency::graphics Namespace)  
- Asynchronously copies a source texture into a destination buffer, or copies a source buffer into a destination buffer, and then returns a [completion_future](../../../parallel/amp/reference/completion-future-class.md) object that can be waited on. Data can't be copied when code is running on an accelerator. The general form of this function is `copy(src, dest)`.  
+ Asynchronously copies a source texture into a destination buffer, or copies a source buffer into a destination buffer, and then returns a [completion_future](completion-future-class.md) object that can be waited on. Data can't be copied when code is running on an accelerator. The general form of this function is `copy(src, dest)`.  
   
 ```  
 template<
@@ -306,4 +306,4 @@ concurrency::completion_future copy_async(_Src_type& _Src,
  An ending iterator into the source container.  
   
 ## See Also  
- [Concurrency::graphics Namespace](../../../parallel/amp/reference/concurrency-graphics-namespace.md)
+ [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

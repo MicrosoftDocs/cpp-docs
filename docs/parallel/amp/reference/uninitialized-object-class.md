@@ -50,7 +50,7 @@ class uninitialized_object : public runtime_exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[uninitialized_object::uninitialized_object Constructor](#uninitialized_object__ctor)|Initializes a new instance of the `uninitialized_object` class.|  
+|[uninitialized_object::uninitialized_object Constructor](#ctor)|Initializes a new instance of the `uninitialized_object` class.|  
 
   
 ## Inheritance Hierarchy  
@@ -84,4 +84,4 @@ unsupported_feature() throw();
  The `unsupported_feature` object. 
 
 ## See Also  
- [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)
+ [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

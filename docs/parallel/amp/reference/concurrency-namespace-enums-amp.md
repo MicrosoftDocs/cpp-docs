@@ -46,7 +46,7 @@ enum queuing_mode;
 |----------|-----------------|  
 
 |`queuing_mode_immediate`|A queuing mode that specifies that any commands, for example, [parallel_for_each Function (C++ AMP)](concurrency-namespace-functions-amp.md#parallel_for_each), are sent to the corresponding accelerator device as soon as they return to the caller.|  
-|`queuing_mode_automatic`|A queuing mode that specifies that commands be queued up on a command queue that corresponds to the [accelerator_view](accelerator-view-class.md) object. Commands are sent to the device when [accelerator_view::flush](accelerator-view-class.md#accelerator_view__flush) is called.|   
+|`queuing_mode_automatic`|A queuing mode that specifies that commands be queued up on a command queue that corresponds to the [accelerator_view](accelerator-view-class.md) object. Commands are sent to the device when [accelerator_view::flush](accelerator-view-class.md#flush) is called.|   
   
 ## See Also  
- [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)
+ [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

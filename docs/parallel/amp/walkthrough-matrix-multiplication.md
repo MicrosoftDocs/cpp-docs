@@ -184,7 +184,7 @@ getchar();
   
 -   You can create `tile_static` variables. Access to data in `tile_static` space can be many times faster than access to data in the global space. An instance of a `tile_static` variable is created for each tile, and all threads in the tile have access to the variable. The primary benefit of tiling is the performance gain due to `tile_static` access.  
   
--   You can call the [tile_barrier::wait](reference/tile-barrier-class.md#tile_barrier__wait_method) method to stop all of the threads in one tile at a specified line of code. You cannot guarantee the order that the threads will run in, only that all of the threads in one tile will stop at the call to `tile_barrier::wait` before they continue execution.  
+-   You can call the [tile_barrier::wait](reference/tile-barrier-class.md#wait) method to stop all of the threads in one tile at a specified line of code. You cannot guarantee the order that the threads will run in, only that all of the threads in one tile will stop at the call to `tile_barrier::wait` before they continue execution.  
 
   
 -   You have access to the index of the thread relative to the entire `array_view` object and the index relative to the tile. By using the local index, you can make your code easier to read and debug.  

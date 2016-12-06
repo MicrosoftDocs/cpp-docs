@@ -1038,4 +1038,4 @@ inline float truncf(float _X) restrict(amp);
  Returns the integer component of the argument  
   
 ## See Also  
- [Concurrency::fast_math Namespace](../../../parallel/amp/reference/concurrency-fast-math-namespace.md)
+ [Concurrency::fast_math Namespace](concurrency-fast-math-namespace.md)

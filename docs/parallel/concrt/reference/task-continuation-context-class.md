@@ -50,11 +50,11 @@ class task_continuation_context : public details::_ContextCallback;
   
 |Name|Description|  
 |----------|-----------------|  
-|[task_continuation_context::get_current_winrt_context Method](#task_continuation_context__get_current_winrt_context_method)|Returns a task continuation context object that represents the current winrt thread context.|  
-|[task_continuation_context::use_arbitrary Method](#task_continuation_context__use_arbitrary_method)|Creates a task continuation context which allows the Runtime to choose the execution context for a continuation.|  
-|[task_continuation_context::use_current Method](#task_continuation_context__use_current_method)|Returns a task continuation context object that represents the current execution context.|  
-|[task_continuation_context::use_default Method](#task_continuation_context__use_default_method)|Creates the default task continuation context.|  
-|[task_continuation_context::use_synchronous_execution Method](#task_continuation_context__use_synchronous_execution_method)|Returns a task continuation context object that represents the synchronous execution context.|  
+|[task_continuation_context::get_current_winrt_context Method](#get_current_winrt_context)|Returns a task continuation context object that represents the current winrt thread context.|  
+|[task_continuation_context::use_arbitrary Method](#use_arbitrary)|Creates a task continuation context which allows the Runtime to choose the execution context for a continuation.|  
+|[task_continuation_context::use_current Method](#use_current)|Returns a task continuation context object that represents the current execution context.|  
+|[task_continuation_context::use_default Method](#use_default)|Creates the default task continuation context.|  
+|[task_continuation_context::use_synchronous_execution Method](#use_synchronous_execution)|Returns a task continuation context object that represents the synchronous execution context.|  
   
 ## Inheritance Hierarchy  
  `_ContextCallback`  
@@ -66,7 +66,7 @@ class task_continuation_context : public details::_ContextCallback;
   
  **Namespace:** concurrency  
 
-## <a name="task_continuation_context__get_current_winrt_context_method"></a> get_current_winrt_context
+## <a name="get_current_winrt_context"></a> get_current_winrt_context
  Returns a task continuation context object that represents the current WinRT thread context.  
   
 ## Syntax  
@@ -86,7 +86,7 @@ static task_continuation_context get_current_winrt_context();
  This method is similar to the  `use_current` method, but it is also available to native C++ code without C++/CX extension support. It is intended for use by advanced users writing C++/CX-agnostic library code for both native and Windows Runtime callers. Unless you need this functionality, we recommend the `use_current` method, which is only available to C++/CX clients.  
   
   
-##  <a name="task_continuation_context__use_arbitrary_method"></a>  task_continuation_context::use_arbitrary Method  
+##  <a name="use_arbitrary"></a>  task_continuation_context::use_arbitrary Method  
  Creates a task continuation context which allows the Runtime to choose the execution context for a continuation.  
   
 ```
@@ -103,7 +103,7 @@ static task_continuation_context use_arbitrary();
   
  This method is only available to Windows Store apps.  
   
-##  <a name="task_continuation_context__use_current_method"></a>  task_continuation_context::use_current Method  
+##  <a name="use_current"></a>  task_continuation_context::use_current Method  
  Returns a task continuation context object that represents the current execution context.  
   
 ```
@@ -120,7 +120,7 @@ static task_continuation_context use_current();
   
  This method is only available to Windows Store apps.  
   
-##  <a name="task_continuation_context__use_default_method"></a>  task_continuation_context::use_default Method  
+##  <a name="use_default"></a>  task_continuation_context::use_default Method  
  Creates the default task continuation context.  
   
 ```
@@ -137,7 +137,7 @@ static task_continuation_context use_default();
   
  A continuation on a non-apartment aware task will execute in a context the Runtime chooses.  
 
-## <a name="task_continuation_context__use_synchronous_execution_method"></a> task_continuation_context::use_synchronous_execution  
+## <a name="use_synchronous_execution"></a> task_continuation_context::use_synchronous_execution  
 Returns a task continuation context object that represents the synchronous execution context.  
   
 ## Syntax  
@@ -156,4 +156,4 @@ static task_continuation_context use_synchronous_execution();
   
  
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

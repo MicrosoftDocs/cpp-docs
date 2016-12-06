@@ -51,4 +51,4 @@ _T&& declval();
  **Namespace:** stdx  
   
 ## See Also  
- [stdx Namespace](../../../parallel/concrt/reference/stdx-namespace.md)
+ [stdx Namespace](stdx-namespace.md)

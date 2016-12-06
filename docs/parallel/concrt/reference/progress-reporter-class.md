@@ -54,13 +54,13 @@ class progress_reporter;
   
 |Name|Description|  
 |----------|-----------------|  
-|[progress_reporter::progress_reporter Constructor](#progress_reporter__progress_reporter_constructor)||  
+|[progress_reporter::progress_reporter Constructor](#ctor)||  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[progress_reporter::report Method](#progress_reporter__report_method)|Sends a progress report to the asynchronous action or operation to which this progress reporter is bound.|  
+|[progress_reporter::report Method](#report)|Sends a progress report to the asynchronous action or operation to which this progress reporter is bound.|  
   
 ## Remarks  
  This type is only available to Windows Store apps.  
@@ -73,13 +73,13 @@ class progress_reporter;
   
  **Namespace:** concurrency  
   
-##  <a name="progress_reporter__progress_reporter_constructor"></a>  progress_reporter::progress_reporter Constructor  
+##  <a name="ctor"></a>  progress_reporter::progress_reporter Constructor  
   
 ```
 progress_reporter();
 ```  
   
-##  <a name="progress_reporter__report_method"></a>  progress_reporter::report Method  
+##  <a name="report"></a>  progress_reporter::report Method  
  Sends a progress report to the asynchronous action or operation to which this progress reporter is bound.  
   
 ```
@@ -91,4 +91,4 @@ void report(const _ProgressType& val) const;
  The payload to report through a progress notification.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

@@ -73,7 +73,7 @@ class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_extent::tiled_extent Constructor](#tiled_extent__ctor)|Initializes a new instance of the `tiled_extent` class.|  
+|[tiled_extent::tiled_extent Constructor](#ctor)|Initializes a new instance of the `tiled_extent` class.|  
 
   
 ### Public Methods  
@@ -227,4 +227,4 @@ __declspec(property(get= get_tile_extent)) Concurrency::extent<rank> tile_extent
   
   
 ## See Also  
- [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)
+ [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

@@ -60,16 +60,15 @@ class extent;
   
 |Name|Description|  
 |----------|-----------------|  
-|[extent::extent Constructor](#extent__ctor)|Initializes a new instance of the `extent` class.|  
+|[extent::extent Constructor](#ctor)|Initializes a new instance of the `extent` class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[extent::contains Method](#extent__contains_method)|Verifies that the specified `extent` object has the specified rank.|  
-|[extent::size Method](#extent__size_method)|Returns the total linear size of the extent (in units of elements).|  
-|[extent::tile Method](#extent__tile_method)|Produces a `tiled_extent` object with the tile extents given by specified dimensions.|  
-
+|[extent::contains Method](#contains)|Verifies that the specified `extent` object has the specified rank.|  
+|[extent::size Method](#size)|Returns the total linear size of the extent (in units of elements).|  
+|[extent::tile Method](#tile)|Produces a `tiled_extent` object with the tile extents given by specified dimensions.|  
   
 ### Public Operators  
   
@@ -92,8 +91,7 @@ class extent;
   
 |Name|Description|  
 |----------|-----------------|  
-|[extent::rank Constant](#extent__rank_constant)|Gets the rank of the `extent` object.|  
-
+|[extent::rank Constant](#rank)|Gets the rank of the `extent` object.|  
   
 ## Inheritance Hierarchy  
  `extent`  
@@ -381,7 +379,7 @@ Returns the total linear size of the `extent` object (in units of elements).
 unsigned int size() const restrict(amp,cpu);  
 ```  
   
-## <a name="extent__tile_method"></a> extent::tile Method
+## <a name="tile"></a> extent::tile Method
 Produces a tiled_extent object with the specified tile dimensions.
 
 ```

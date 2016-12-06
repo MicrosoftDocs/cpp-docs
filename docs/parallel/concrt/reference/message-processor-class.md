@@ -60,15 +60,15 @@ class message_processor;
   
 |Name|Description|  
 |----------|-----------------|  
-|[message_processor::async_send Method](#message_processor__async_send_method)|When overridden in a derived class, places messages into the block asynchronously.|  
-|[message_processor::sync_send Method](#message_processor__sync_send_method)|When overridden in a derived class, places messages into the block synchronously.|  
-|[message_processor::wait Method](#message_processor__wait_method)|When overridden in a derived class, waits for all asynchronous operations to complete.|  
+|[message_processor::async_send Method](#async_send)|When overridden in a derived class, places messages into the block asynchronously.|  
+|[message_processor::sync_send Method](#sync_send)|When overridden in a derived class, places messages into the block synchronously.|  
+|[message_processor::wait Method](#wait)|When overridden in a derived class, waits for all asynchronous operations to complete.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[message_processor::process_incoming_message Method](#message_processor__process_incoming_message_method)|When overridden in a derived class, performs the forward processing of messages into the block. Called once every time a new message is added and the queue is found to be empty.|  
+|[message_processor::process_incoming_message Method](#process_incoming_message)|When overridden in a derived class, performs the forward processing of messages into the block. Called once every time a new message is added and the queue is found to be empty.|  
   
 ## Inheritance Hierarchy  
  `message_processor`  
@@ -78,7 +78,7 @@ class message_processor;
   
  **Namespace:** concurrency  
   
-##  <a name="message_processor__async_send_method"></a>  message_processor::async_send Method  
+##  <a name="async_send"></a>  message_processor::async_send Method  
  When overridden in a derived class, places messages into the block asynchronously.  
   
 ```
@@ -92,7 +92,7 @@ virtual void async_send(_Inout_opt_ message<T>* _Msg) = 0;
 ### Remarks  
  Processor implementations should override this method.  
   
-##  <a name="message_processor__process_incoming_message_method"></a>  message_processor::process_incoming_message Method  
+##  <a name="process_incoming_message"></a>  message_processor::process_incoming_message Method  
  When overridden in a derived class, performs the forward processing of messages into the block. Called once every time a new message is added and the queue is found to be empty.  
   
 ```
@@ -102,7 +102,7 @@ virtual void process_incoming_message() = 0;
 ### Remarks  
  Message block implementations should override this method.  
   
-##  <a name="message_processor__sync_send_method"></a>  message_processor::sync_send Method  
+##  <a name="sync_send"></a>  message_processor::sync_send Method  
  When overridden in a derived class, places messages into the block synchronously.  
   
 ```
@@ -116,7 +116,7 @@ virtual void sync_send(_Inout_opt_ message<T>* _Msg) = 0;
 ### Remarks  
  Processor implementations should override this method.  
   
-##  <a name="message_processor__wait_method"></a>  message_processor::wait Method  
+##  <a name="wait"></a>  message_processor::wait Method  
  When overridden in a derived class, waits for all asynchronous operations to complete.  
   
 ```
@@ -127,5 +127,5 @@ virtual void wait() = 0;
  Processor implementations should override this method.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [ordered_message_processor Class](../../../parallel/concrt/reference/ordered-message-processor-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [ordered_message_processor Class](ordered-message-processor-class.md)
