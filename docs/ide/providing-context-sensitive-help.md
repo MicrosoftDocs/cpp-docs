@@ -44,7 +44,7 @@ When you use the [Custom Wizard](../ide/application-settings-custom-wizard.md) t
  onClick="window.external.OnHelp('vc.appwiz.custom.overview');">  
 ```  
   
- The <xref:Microsoft.VisualStudio.VsWizard.VCWizCtlClass.OnHelp%2A> specifies the keyword of the HTML Help file associated with that page of your wizard. For more information about creating HTML Help files to associate with the page, see [HTML Help Start Page](vsconhh1start). To provide your own help for this wizard page, you must replace the string `'vc.appwiz.custom.overview'` with the keyword that identifies the HTML Help topic for the page.  
+ The `Microsoft.VisualStudio.VsWizard.VCWizCtlClass.OnHelp` method specifies the keyword of the HTML Help file associated with that page of your wizard. To provide your own help for this wizard page, you must replace the string `'vc.appwiz.custom.overview'` with the keyword that identifies the HTML Help topic for the page.  
   
  **Note** This .htm file cannot be integrated into the compiled MSDN Help.  
   

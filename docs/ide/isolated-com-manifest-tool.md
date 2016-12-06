@@ -59,7 +59,6 @@ Use this dialog box to specify **Isolated COM** options for [Mt.exe](http://msdn
   
 ## See Also  
  [Isolated Applications](http://msdn.microsoft.com/library/aa375190)   
- [Side-by-side Assemblies](_win32_side_by_side_assemblies)   
  [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)   
  [Manifest Tool Property Pages](../ide/manifest-tool-property-pages.md)   
  [Working with Project Properties](../ide/working-with-project-properties.md)   
