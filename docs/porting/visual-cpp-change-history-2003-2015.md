@@ -2872,4 +2872,4 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
 -   The compiler now reports unreachable code (C4702).  
   
 ## See Also  
-[What's New for Visual C++ in Visual Studio](../cpp/what-s-new-for-visual-cpp-in-visual-studio.md)
+[What's New for Visual C++ in Visual Studio](../what-s-new-for-visual-cpp-in-visual-studio.md)
