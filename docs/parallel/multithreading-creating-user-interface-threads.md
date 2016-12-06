@@ -49,12 +49,12 @@ A user-interface thread is commonly used to handle user input and respond to use
 |Function|Purpose|  
 |--------------|-------------|  
 
-|[ExitInstance](../mfc/reference/cwinthread-class.md#cwinthread__exitinstance)|Perform cleanup when thread terminates. Usually overridden.|  
-|[InitInstance](../mfc/reference/cwinthread-class.md#cwinthread__initinstance)|Perform thread instance initialization. Must be overridden.|  
-|[OnIdle](../mfc/reference/cwinthread-class.md#cwinthread__onidle)|Perform thread-specific idle-time processing. Not usually overridden.|  
-|[PreTranslateMessage](../mfc/reference/cwinthread-class.md#cwinthread__pretranslatemessage)|Filter messages before they are dispatched to **TranslateMessage** and **DispatchMessage**. Not usually overridden.|  
-|[ProcessWndProcException](../mfc/reference/cwinthread-class.md#cwinthread__processwndprocexception)|Intercept unhandled exceptions thrown by the thread's message and command handlers. Not usually overridden.|  
-|[Run](../mfc/reference/cwinthread-class.md#cwinthread__run)|Controlling function for the thread. Contains the message pump. Rarely overridden.|  
+|[ExitInstance](../mfc/reference/cwinthread-class.md#exitinstance)|Perform cleanup when thread terminates. Usually overridden.|  
+|[InitInstance](../mfc/reference/cwinthread-class.md#initinstance)|Perform thread instance initialization. Must be overridden.|  
+|[OnIdle](../mfc/reference/cwinthread-class.md#onidle)|Perform thread-specific idle-time processing. Not usually overridden.|  
+|[PreTranslateMessage](../mfc/reference/cwinthread-class.md#pretranslatemessage)|Filter messages before they are dispatched to **TranslateMessage** and **DispatchMessage**. Not usually overridden.|  
+|[ProcessWndProcException](../mfc/reference/cwinthread-class.md#processwndprocexception)|Intercept unhandled exceptions thrown by the thread's message and command handlers. Not usually overridden.|  
+|[Run](../mfc/reference/cwinthread-class.md#run)|Controlling function for the thread. Contains the message pump. Rarely overridden.|  
 
   
  MFC provides two versions of `AfxBeginThread` through parameter overloading: one that can only create worker threads and one that can create user-interface threads or worker threads. To start your user-interface thread, call the second overload of [AfxBeginThread](http://msdn.microsoft.com/library/e9e8684d-24f7-4599-8fdf-1f4f560a753b), providing the following information:  
@@ -69,7 +69,7 @@ A user-interface thread is commonly used to handle user input and respond to use
   
 -   (Optional) The desired security attributes. The default is the same access as the parent thread. For more information about the format of this security information, see [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) in the [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
   
- `AfxBeginThread` does most of the work for you. It creates a new object of your class, initializes it with the information you supply, and calls [CWinThread::CreateThread](../mfc/reference/cwinthread-class.md#cwinthread__createthread) to start executing the thread. Checks are made throughout the procedure to make sure all objects are deallocated properly should any part of the creation fail.  
+ `AfxBeginThread` does most of the work for you. It creates a new object of your class, initializes it with the information you supply, and calls [CWinThread::CreateThread](../mfc/reference/cwinthread-class.md#createthread) to start executing the thread. Checks are made throughout the procedure to make sure all objects are deallocated properly should any part of the creation fail.  
   
 ## What do you want to know more about?  
   

@@ -90,7 +90,7 @@ System::Type^ pManagedViewType);
   
 ### Parameters  
  `pManagedViewType`  
- A pointer to the data type of the Windows Forms user control. For more information, see <xref:System.TypequalifyHint%3DTrue%26autoUpgrade%3DTrue>.  
+ A pointer to the data type of the Windows Forms user control.   
   
 ### Example  
  In the following example, the `CUserView` class inherits from `CWinFormsView` and passes the type of `UserControl1` to the `CWinFormsView` constructor. `UserControl1` is a custom-built control in ControlLibrary1.dll.  
