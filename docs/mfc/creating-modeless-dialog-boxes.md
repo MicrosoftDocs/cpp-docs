@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Creating Modeless Dialog Boxes
-For a modeless dialog box, you must provide your own public constructor in your dialog class. To create a modeless dialog box, call your public constructor and then call the dialog object's [Create](../mfc/reference/cdialog-class.md#cdialog__create) member function to load the dialog resource. You can call **Create** either during or after the constructor call. If the dialog resource has the property **WS_VISIBLE**, the dialog box appears immediately. If not, you must call its [ShowWindow](../mfc/reference/cwnd-class.md#cwnd__showwindow) member function.  
+For a modeless dialog box, you must provide your own public constructor in your dialog class. To create a modeless dialog box, call your public constructor and then call the dialog object's [Create](../mfc/reference/cdialog-class.md#create) member function to load the dialog resource. You can call **Create** either during or after the constructor call. If the dialog resource has the property **WS_VISIBLE**, the dialog box appears immediately. If not, you must call its [ShowWindow](../mfc/reference/cwnd-class.md#showwindow) member function.  
   
 ## See Also  
  [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)

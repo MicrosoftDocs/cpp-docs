@@ -50,7 +50,7 @@ One of the more powerful uses of ActiveX controls is data binding, which allows 
  ![Conceptual diagram of a data&#45;bound control](../mfc/media/vc374v1.gif "vc374v1")  
 Conceptual Diagram of a Data-Bound Control  
   
- The `COleControl` class provides two member functions that make data binding an easy process to implement. The first function, [BoundPropertyRequestEdit](../mfc/reference/colecontrol-class.md#colecontrol__boundpropertyrequestedit), is used to request permission to change the property value. [BoundPropertyChanged](../mfc/reference/colecontrol-class.md#colecontrol__boundpropertychanged), the second function, is called after the property value has been successfully changed.  
+ The `COleControl` class provides two member functions that make data binding an easy process to implement. The first function, [BoundPropertyRequestEdit](../mfc/reference/colecontrol-class.md#boundpropertyrequestedit), is used to request permission to change the property value. [BoundPropertyChanged](../mfc/reference/colecontrol-class.md#boundpropertychanged), the second function, is called after the property value has been successfully changed.  
   
  This article covers the following topics:  
   

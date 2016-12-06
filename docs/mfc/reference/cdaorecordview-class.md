@@ -54,16 +54,16 @@ class AFX_NOVTABLE CDaoRecordView : public CFormView
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDaoRecordView::CDaoRecordView](#cdaorecordview__cdaorecordview)|Constructs a `CDaoRecordView` object.|  
+|[CDaoRecordView::CDaoRecordView](#cdaorecordview)|Constructs a `CDaoRecordView` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDaoRecordView::IsOnFirstRecord](#cdaorecordview__isonfirstrecord)|Returns nonzero if the current record is the first record in the associated recordset.|  
-|[CDaoRecordView::IsOnLastRecord](#cdaorecordview__isonlastrecord)|Returns nonzero if the current record is the last record in the associated recordset.|  
-|[CDaoRecordView::OnGetRecordset](#cdaorecordview__ongetrecordset)|Returns a pointer to an object of a class derived from `CDaoRecordset`. ClassWizard overrides this function for you and creates the recordset if necessary.|  
-|[CDaoRecordView::OnMove](#cdaorecordview__onmove)|If the current record has changed, updates it on the data source, then moves to the specified record (next, previous, first, or last).|  
+|[CDaoRecordView::IsOnFirstRecord](#isonfirstrecord)|Returns nonzero if the current record is the first record in the associated recordset.|  
+|[CDaoRecordView::IsOnLastRecord](#isonlastrecord)|Returns nonzero if the current record is the last record in the associated recordset.|  
+|[CDaoRecordView::OnGetRecordset](#ongetrecordset)|Returns a pointer to an object of a class derived from `CDaoRecordset`. ClassWizard overrides this function for you and creates the recordset if necessary.|  
+|[CDaoRecordView::OnMove](#onmove)|If the current record has changed, updates it on the data source, then moves to the specified record (next, previous, first, or last).|  
   
 ## Remarks  
  The view is a form view directly connected to a `CDaoRecordset` object. The view is created from a dialog template resource and displays the fields of the `CDaoRecordset` object in the dialog template's controls. The `CDaoRecordView` object uses dialog data exchange (DDX) and DAO record field exchange (DFX) to automate the movement of data between the controls on the form and the fields of the recordset. `CDaoRecordView` also supplies a default implementation for moving to the first, next, previous, or last record and an interface for updating the record currently in view.  
@@ -101,7 +101,7 @@ class AFX_NOVTABLE CDaoRecordView : public CFormView
 ## Requirements  
  **Header:** afxdao.h  
   
-##  <a name="cdaorecordview__cdaorecordview"></a>  CDaoRecordView::CDaoRecordView  
+##  <a name="cdaorecordview"></a>  CDaoRecordView::CDaoRecordView  
  When you create an object of a type derived from `CDaoRecordView`, call either form of the constructor to initialize the view object and identify the dialog resource on which the view is based.  
   
 ```  
@@ -131,7 +131,7 @@ explicit CDaoRecordView(UINT nIDTemplate);
   
  [!code-cpp[NVC_MFCDatabase#35](../../mfc/codesnippet/cpp/cdaorecordview-class_1.cpp)]  
   
-##  <a name="cdaorecordview__isonfirstrecord"></a>  CDaoRecordView::IsOnFirstRecord  
+##  <a name="isonfirstrecord"></a>  CDaoRecordView::IsOnFirstRecord  
  Call this member function to determine whether the current record is the first record in the recordset object associated with this record view.  
   
 ```  
@@ -146,7 +146,7 @@ BOOL IsOnFirstRecord();
   
  If the user moves to the first record, the framework disables any user interface objects (for example, menu items or toolbar buttons) you have for moving to the first or the previous record.  
   
-##  <a name="cdaorecordview__isonlastrecord"></a>  CDaoRecordView::IsOnLastRecord  
+##  <a name="isonlastrecord"></a>  CDaoRecordView::IsOnLastRecord  
  Call this member function to determine whether the current record is the last record in the recordset object associated with this record view.  
   
 ```  
@@ -162,7 +162,7 @@ BOOL IsOnLastRecord();
 > [!CAUTION]
 >  The result of this function is reliable except that the view may not be able to detect the end of the recordset until the user has moved past it. The user might have to move beyond the last record before the record view can tell that it must disable any user interface objects for moving to the next or last record. If the user moves past the last record and then moves back to the last record (or before it), the record view can track the user's position in the recordset and disable user interface objects correctly.  
   
-##  <a name="cdaorecordview__ongetrecordset"></a>  CDaoRecordView::OnGetRecordset  
+##  <a name="ongetrecordset"></a>  CDaoRecordView::OnGetRecordset  
  Returns a pointer to the `CDaoRecordset`-derived object associated with the record view.  
   
 ```  
@@ -177,7 +177,7 @@ virtual CDaoRecordset* OnGetRecordset() = 0;
   
  For more information and examples, see the article [Record Views: Using a Record View](../../data/using-a-record-view-mfc-data-access.md).  
   
-##  <a name="cdaorecordview__onmove"></a>  CDaoRecordView::OnMove  
+##  <a name="onmove"></a>  CDaoRecordView::OnMove  
  Call this member function to move to a different record in the recordset and display its fields in the controls of the record view.  
   
 ```  

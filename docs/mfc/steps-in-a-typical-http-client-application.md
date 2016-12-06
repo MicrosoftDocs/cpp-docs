@@ -43,9 +43,9 @@ The following table shows the steps you might perform in a typical HTTP client a
 |Your goal|Actions you take|Effects|  
 |---------------|----------------------|-------------|  
 |Begin an HTTP session.|Create a [CInternetSession](../mfc/reference/cinternetsession-class.md) object.|Initializes WinInet and connects to server.|  
-|Connect to an HTTP server.|Use [CInternetSession::GetHttpConnection](../mfc/reference/cinternetsession-class.md#cinternetsession__gethttpconnection).|Returns a [CHttpConnection](../mfc/reference/chttpconnection-class.md) object.|  
-|Open an HTTP request.|Use [CHttpConnection::OpenRequest](../mfc/reference/chttpconnection-class.md#chttpconnection__openrequest).|Returns a [CHttpFile](../mfc/reference/chttpfile-class.md) object.|  
-|Send an HTTP request.|Use [CHttpFile::AddRequestHeaders](../mfc/reference/chttpfile-class.md#chttpfile__addrequestheaders) and [CHttpFile::SendRequest](../mfc/reference/chttpfile-class.md#chttpfile__sendrequest).|Finds the file. Returns FALSE if the file is not found.|  
+|Connect to an HTTP server.|Use [CInternetSession::GetHttpConnection](../mfc/reference/cinternetsession-class.md#gethttpconnection).|Returns a [CHttpConnection](../mfc/reference/chttpconnection-class.md) object.|  
+|Open an HTTP request.|Use [CHttpConnection::OpenRequest](../mfc/reference/chttpconnection-class.md#openrequest).|Returns a [CHttpFile](../mfc/reference/chttpfile-class.md) object.|  
+|Send an HTTP request.|Use [CHttpFile::AddRequestHeaders](../mfc/reference/chttpfile-class.md#addrequestheaders) and [CHttpFile::SendRequest](../mfc/reference/chttpfile-class.md#sendrequest).|Finds the file. Returns FALSE if the file is not found.|  
 |Read from the file.|Use [CHttpFile](../mfc/reference/chttpfile-class.md).|Reads the specified number of bytes using a buffer you supply.|  
 |Handle exceptions.|Use the [CInternetException](../mfc/reference/cinternetexception-class.md) class.|Handles all common Internet exception types.|  
 |End the HTTP session.|Dispose of the [CInternetSession](../mfc/reference/cinternetsession-class.md) object.|Automatically cleans up open file handles and connections.|  

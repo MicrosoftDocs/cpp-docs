@@ -119,7 +119,7 @@ The Microsoft Foundation Class Library provides collection classes to manage gro
   
 -   [Creating Stack and Queue Collections](../mfc/creating-stack-and-queue-collections.md)  
   
--   [CArray::Add](../mfc/reference/carray-class.md#carray__add)  
+-   [CArray::Add](../mfc/reference/carray-class.md#add)  
   
 #### Template-Based Collection-Class Tasks  
   

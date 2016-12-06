@@ -42,7 +42,7 @@ You use different methods for calling member functions in a [CTreeCtrl](../mfc/r
   
 -   If the tree control is a child window, use the `CTreeCtrl` object (or pointer) you used to construct the object.  
   
--   If you're using a `CTreeView` object, use the function [CTreeView::GetTreeCtrl](../mfc/reference/ctreeview-class.md#ctreeview__gettreectrl) to get a reference to the tree control. You can initialize another reference with this value or assign the address of the reference to a `CTreeCtrl` pointer.  
+-   If you're using a `CTreeView` object, use the function [CTreeView::GetTreeCtrl](../mfc/reference/ctreeview-class.md#gettreectrl) to get a reference to the tree control. You can initialize another reference with this value or assign the address of the reference to a `CTreeCtrl` pointer.  
   
 ## See Also  
  [Using CTreeCtrl](../mfc/using-ctreectrl.md)   

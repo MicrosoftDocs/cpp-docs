@@ -55,24 +55,24 @@ class CRecentDockSiteInfo : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRecentDockSiteInfo::CleanUp](#crecentdocksiteinfo__cleanup)||  
-|[CRecentDockSiteInfo::GetRecentDefaultPaneDivider](#crecentdocksiteinfo__getrecentdefaultpanedivider)||  
-|[CRecentDockSiteInfo::GetRecentDockedPercent](#crecentdocksiteinfo__getrecentdockedpercent)||  
-|[CRecentDockSiteInfo::GetRecentDockedRect](#crecentdocksiteinfo__getrecentdockedrect)||  
-|[CRecentDockSiteInfo::GetRecentListOfPanes](#crecentdocksiteinfo__getrecentlistofpanes)||  
-|[CRecentDockSiteInfo::GetRecentPaneContainer](#crecentdocksiteinfo__getrecentpanecontainer)||  
-|[CRecentDockSiteInfo::GetRecentTabContainer](#crecentdocksiteinfo__getrecenttabcontainer)||  
-|[CRecentDockSiteInfo::Init](#crecentdocksiteinfo__init)||  
-|[CRecentDockSiteInfo::IsRecentLeftPane](#crecentdocksiteinfo__isrecentleftpane)||  
-|[CRecentDockSiteInfo::operator =](#crecentdocksiteinfo__operator__eq)||  
-|[CRecentDockSiteInfo::SaveListOfRecentPanes](#crecentdocksiteinfo__savelistofrecentpanes)||  
-|[CRecentDockSiteInfo::SetInfo](#crecentdocksiteinfo__setinfo)||  
-|[CRecentDockSiteInfo::StoreDockInfo](#crecentdocksiteinfo__storedockinfo)||  
+|[CRecentDockSiteInfo::CleanUp](#cleanup)||  
+|[CRecentDockSiteInfo::GetRecentDefaultPaneDivider](#getrecentdefaultpanedivider)||  
+|[CRecentDockSiteInfo::GetRecentDockedPercent](#getrecentdockedpercent)||  
+|[CRecentDockSiteInfo::GetRecentDockedRect](#getrecentdockedrect)||  
+|[CRecentDockSiteInfo::GetRecentListOfPanes](#getrecentlistofpanes)||  
+|[CRecentDockSiteInfo::GetRecentPaneContainer](#getrecentpanecontainer)||  
+|[CRecentDockSiteInfo::GetRecentTabContainer](#getrecenttabcontainer)||  
+|[CRecentDockSiteInfo::Init](#init)||  
+|[CRecentDockSiteInfo::IsRecentLeftPane](#isrecentleftpane)||  
+|[CRecentDockSiteInfo::operator =](#operator_eq)||  
+|[CRecentDockSiteInfo::SaveListOfRecentPanes](#savelistofrecentpanes)||  
+|[CRecentDockSiteInfo::SetInfo](#setinfo)||  
+|[CRecentDockSiteInfo::StoreDockInfo](#storedockinfo)||  
   
 ## Remarks  
  The `CRecentDockSiteInfo` class is a data management class. It tracks the last state of a `CPane` as it transitions between being docked and floating. When a user double clicks a floating dockable pane, it becomes docked. Double clicking the docked pane returns it to its previous location, size, and state. Similarly, when the pane is re-docked it returns to its previous docking location. This data class is what makes that possible. Since the members of this class store state information for the docked pane, they should not be directly modified by your application.  
   
- A `CRecentDockSiteInfo` object is created every time that a pane is created. Each `CPane` object has a member variable, [CPane::m_recentDockInfo](../../mfc/reference/cpane-class.md#cpane__m_recentdockinfo), to store this information.  
+ A `CRecentDockSiteInfo` object is created every time that a pane is created. Each `CPane` object has a member variable, [CPane::m_recentDockInfo](../../mfc/reference/cpane-class.md#m_recentdockinfo), to store this information.  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -82,7 +82,7 @@ class CRecentDockSiteInfo : public CObject
 ## Requirements  
  **Header:** afxrecentDockSiteInfo.h  
   
-##  <a name="crecentdocksiteinfo__cleanup"></a>  CRecentDockSiteInfo::CleanUp  
+##  <a name="cleanup"></a>  CRecentDockSiteInfo::CleanUp  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -91,7 +91,7 @@ void CleanUp();
   
 ### Remarks  
   
-##  <a name="crecentdocksiteinfo__crecentdocksiteinfo"></a>  CRecentDockSiteInfo::CRecentDockSiteInfo  
+##  <a name="crecentdocksiteinfo"></a>  CRecentDockSiteInfo::CRecentDockSiteInfo  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -103,7 +103,7 @@ CRecentDockSiteInfo(CPane* pBar);
   
 ### Remarks  
   
-##  <a name="crecentdocksiteinfo__getrecentdefaultpanedivider"></a>  CRecentDockSiteInfo::GetRecentDefaultPaneDivider  
+##  <a name="getrecentdefaultpanedivider"></a>  CRecentDockSiteInfo::GetRecentDefaultPaneDivider  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -114,7 +114,7 @@ CPaneDivider* GetRecentDefaultPaneDivider();
   
 ### Remarks  
   
-##  <a name="crecentdocksiteinfo__getrecentdockedpercent"></a>  CRecentDockSiteInfo::GetRecentDockedPercent  
+##  <a name="getrecentdockedpercent"></a>  CRecentDockSiteInfo::GetRecentDockedPercent  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -128,7 +128,7 @@ int GetRecentDockedPercent(BOOL bForSlider);
   
 ### Remarks  
   
-##  <a name="crecentdocksiteinfo__getrecentdockedrect"></a>  CRecentDockSiteInfo::GetRecentDockedRect  
+##  <a name="getrecentdockedrect"></a>  CRecentDockSiteInfo::GetRecentDockedRect  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -142,7 +142,7 @@ CRect& GetRecentDockedRect(BOOL bForSlider);
   
 ### Remarks  
   
-##  <a name="crecentdocksiteinfo__getrecentlistofpanes"></a>  CRecentDockSiteInfo::GetRecentListOfPanes  
+##  <a name="getrecentlistofpanes"></a>  CRecentDockSiteInfo::GetRecentListOfPanes  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -157,7 +157,7 @@ CList<HWND, HWND>& GetRecentListOfPanes(
   
 ### Remarks  
   
-##  <a name="crecentdocksiteinfo__getrecentpanecontainer"></a>  CRecentDockSiteInfo::GetRecentPaneContainer  
+##  <a name="getrecentpanecontainer"></a>  CRecentDockSiteInfo::GetRecentPaneContainer  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -171,7 +171,7 @@ CPaneContainer* GetRecentPaneContainer(BOOL bForSlider);
   
 ### Remarks  
   
-##  <a name="crecentdocksiteinfo__getrecenttabcontainer"></a>  CRecentDockSiteInfo::GetRecentTabContainer  
+##  <a name="getrecenttabcontainer"></a>  CRecentDockSiteInfo::GetRecentTabContainer  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -185,7 +185,7 @@ CPaneContainer* GetRecentTabContainer(BOOL bForSlider);
   
 ### Remarks  
   
-##  <a name="crecentdocksiteinfo__init"></a>  CRecentDockSiteInfo::Init  
+##  <a name="init"></a>  CRecentDockSiteInfo::Init  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -194,7 +194,7 @@ void Init();
   
 ### Remarks  
   
-##  <a name="crecentdocksiteinfo__isrecentleftpane"></a>  CRecentDockSiteInfo::IsRecentLeftPane  
+##  <a name="isrecentleftpane"></a>  CRecentDockSiteInfo::IsRecentLeftPane  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -208,7 +208,7 @@ BOOL IsRecentLeftPane(BOOL bForSlider);
   
 ### Remarks  
   
-##  <a name="crecentdocksiteinfo__operator__eq"></a>  CRecentDockSiteInfo::operator =  
+##  <a name="operator_eq"></a>  CRecentDockSiteInfo::operator =  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -222,7 +222,7 @@ CRecentDockSiteInfo& operator=(CRecentDockSiteInfo& src);
   
 ### Remarks  
   
-##  <a name="crecentdocksiteinfo__savelistofrecentpanes"></a>  CRecentDockSiteInfo::SaveListOfRecentPanes  
+##  <a name="savelistofrecentpanes"></a>  CRecentDockSiteInfo::SaveListOfRecentPanes  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -238,7 +238,7 @@ void SaveListOfRecentPanes(CList<HWND,
   
 ### Remarks  
   
-##  <a name="crecentdocksiteinfo__setinfo"></a>  CRecentDockSiteInfo::SetInfo  
+##  <a name="setinfo"></a>  CRecentDockSiteInfo::SetInfo  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -253,7 +253,7 @@ virtual void SetInfo(
   
 ### Remarks  
   
-##  <a name="crecentdocksiteinfo__storedockinfo"></a>  CRecentDockSiteInfo::StoreDockInfo  
+##  <a name="storedockinfo"></a>  CRecentDockSiteInfo::StoreDockInfo  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  

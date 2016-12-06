@@ -94,7 +94,7 @@ typedef struct tagBITMAP {  /* bm */
   
  The pixels on a monochrome device are either black or white. If the corresponding bit in the bitmap is 1, the pixel is turned on (white). If the corresponding bit in the bitmap is 0, the pixel is turned off (black).  
   
- All devices support bitmaps that have the **RC_BITBLT** bit set in the **RASTERCAPS** index of the [CDC::GetDeviceCaps](../../mfc/reference/cdc-class.md#cdc__getdevicecaps) member function.  
+ All devices support bitmaps that have the **RC_BITBLT** bit set in the **RASTERCAPS** index of the [CDC::GetDeviceCaps](../../mfc/reference/cdc-class.md#getdevicecaps) member function.  
   
  Each device has its own unique color format. In order to transfer a bitmap from one device to another, use the [GetDIBits](http://msdn.microsoft.com/library/windows/desktop/dd144879) and [SetDIBits](http://msdn.microsoft.com/library/windows/desktop/dd162973) Windows functions.  
   
@@ -103,4 +103,4 @@ typedef struct tagBITMAP {  /* bm */
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CBitmap::CreateBitmapIndirect](../../mfc/reference/cbitmap-class.md#cbitmap__createbitmapindirect)
+ [CBitmap::CreateBitmapIndirect](../../mfc/reference/cbitmap-class.md#createbitmapindirect)

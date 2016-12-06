@@ -49,71 +49,71 @@ class COleControlSite : public CCmdTarget
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleControlSite::COleControlSite](#colecontrolsite__colecontrolsite)|Constructs a `COleControlSite` object.|  
+|[COleControlSite::COleControlSite](#colecontrolsite)|Constructs a `COleControlSite` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleControlSite::BindDefaultProperty](#colecontrolsite__binddefaultproperty)|Binds the default property of the hosted control to a data source.|  
-|[COleControlSite::BindProperty](#colecontrolsite__bindproperty)|Binds a property of the hosted control to a data source.|  
-|[COleControlSite::CreateControl](#colecontrolsite__createcontrol)|Creates a hosted ActiveX control.|  
-|[COleControlSite::DestroyControl](#colecontrolsite__destroycontrol)|Destroys the hosted control.|  
-|[COleControlSite::DoVerb](#colecontrolsite__doverb)|Executes a specific verb of the hosted control.|  
-|[COleControlSite::EnableDSC](#colecontrolsite__enabledsc)|Enables data sourcing for a control site.|  
-|[COleControlSite::EnableWindow](#colecontrolsite__enablewindow)|Enables the control site.|  
-|[COleControlSite::FreezeEvents](#colecontrolsite__freezeevents)|Specifies if the control site is accepting events.|  
-|[COleControlSite::GetDefBtnCode](#colecontrolsite__getdefbtncode)|Retrieves the default button code for the hosted control.|  
-|[COleControlSite::GetDlgCtrlID](#colecontrolsite__getdlgctrlid)|Retrieves the identifier of the control.|  
-|[COleControlSite::GetEventIID](#colecontrolsite__geteventiid)|Retrieves the ID of an event interface for a hosted control.|  
-|[COleControlSite::GetExStyle](#colecontrolsite__getexstyle)|Retrieves the extended styles of the control site.|  
-|[COleControlSite::GetProperty](#colecontrolsite__getproperty)|Retrieves a specific property of the hosted control.|  
-|[COleControlSite::GetStyle](#colecontrolsite__getstyle)|Retrieves the styles of the control site.|  
-|[COleControlSite::GetWindowText](#colecontrolsite__getwindowtext)|Retrieves the text of the hosted control.|  
-|[COleControlSite::InvokeHelper](#colecontrolsite__invokehelper)|Invoke a specific method of the hosted control.|  
-|[COleControlSite::InvokeHelperV](#colecontrolsite__invokehelperv)|Invoke a specific method of the hosted control with a variable list of arguments.|  
-|[COleControlSite::IsDefaultButton](#colecontrolsite__isdefaultbutton)|Determines if the control is the default button in the window.|  
-|[COleControlSite::IsWindowEnabled](#colecontrolsite__iswindowenabled)|Checks the visible state of the control site.|  
-|[COleControlSite::ModifyStyle](#colecontrolsite__modifystyle)|Modifies the current extended styles of the control site.|  
-|[COleControlSite::ModifyStyleEx](#colecontrolsite__modifystyleex)|Modifies the current styles of the control site.|  
-|[COleControlSite::MoveWindow](#colecontrolsite__movewindow)|Changes the position of the control site.|  
-|[COleControlSite::QuickActivate](#colecontrolsite__quickactivate)|Quick activates the hosted control.|  
-|[COleControlSite::SafeSetProperty](#colecontrolsite__safesetproperty)|Sets a property or method of the control without chance of throwing an exception.|  
-|[COleControlSite::SetDefaultButton](#colecontrolsite__setdefaultbutton)|Sets the default button in the window.|  
-|[COleControlSite::SetDlgCtrlID](#colecontrolsite__setdlgctrlid)|Retrieves the identifier of the control.|  
-|[COleControlSite::SetFocus](#colecontrolsite__setfocus)|Sets the focus to the control site.|  
-|[COleControlSite::SetProperty](#colecontrolsite__setproperty)|Sets a specific property of the hosted control.|  
-|[COleControlSite::SetPropertyV](#colecontrolsite__setpropertyv)|Sets a specific property of the hosted control with a variable list of arguments.|  
-|[COleControlSite::SetWindowPos](#colecontrolsite__setwindowpos)|Sets the position of the control site.|  
-|[COleControlSite::SetWindowText](#colecontrolsite__setwindowtext)|Sets the text of the hosted control.|  
-|[COleControlSite::ShowWindow](#colecontrolsite__showwindow)|Shows or hides the control site.|  
+|[COleControlSite::BindDefaultProperty](#binddefaultproperty)|Binds the default property of the hosted control to a data source.|  
+|[COleControlSite::BindProperty](#bindproperty)|Binds a property of the hosted control to a data source.|  
+|[COleControlSite::CreateControl](#createcontrol)|Creates a hosted ActiveX control.|  
+|[COleControlSite::DestroyControl](#destroycontrol)|Destroys the hosted control.|  
+|[COleControlSite::DoVerb](#doverb)|Executes a specific verb of the hosted control.|  
+|[COleControlSite::EnableDSC](#enabledsc)|Enables data sourcing for a control site.|  
+|[COleControlSite::EnableWindow](#enablewindow)|Enables the control site.|  
+|[COleControlSite::FreezeEvents](#freezeevents)|Specifies if the control site is accepting events.|  
+|[COleControlSite::GetDefBtnCode](#getdefbtncode)|Retrieves the default button code for the hosted control.|  
+|[COleControlSite::GetDlgCtrlID](#getdlgctrlid)|Retrieves the identifier of the control.|  
+|[COleControlSite::GetEventIID](#geteventiid)|Retrieves the ID of an event interface for a hosted control.|  
+|[COleControlSite::GetExStyle](#getexstyle)|Retrieves the extended styles of the control site.|  
+|[COleControlSite::GetProperty](#getproperty)|Retrieves a specific property of the hosted control.|  
+|[COleControlSite::GetStyle](#getstyle)|Retrieves the styles of the control site.|  
+|[COleControlSite::GetWindowText](#getwindowtext)|Retrieves the text of the hosted control.|  
+|[COleControlSite::InvokeHelper](#invokehelper)|Invoke a specific method of the hosted control.|  
+|[COleControlSite::InvokeHelperV](#invokehelperv)|Invoke a specific method of the hosted control with a variable list of arguments.|  
+|[COleControlSite::IsDefaultButton](#isdefaultbutton)|Determines if the control is the default button in the window.|  
+|[COleControlSite::IsWindowEnabled](#iswindowenabled)|Checks the visible state of the control site.|  
+|[COleControlSite::ModifyStyle](#modifystyle)|Modifies the current extended styles of the control site.|  
+|[COleControlSite::ModifyStyleEx](#modifystyleex)|Modifies the current styles of the control site.|  
+|[COleControlSite::MoveWindow](#movewindow)|Changes the position of the control site.|  
+|[COleControlSite::QuickActivate](#quickactivate)|Quick activates the hosted control.|  
+|[COleControlSite::SafeSetProperty](#safesetproperty)|Sets a property or method of the control without chance of throwing an exception.|  
+|[COleControlSite::SetDefaultButton](#setdefaultbutton)|Sets the default button in the window.|  
+|[COleControlSite::SetDlgCtrlID](#setdlgctrlid)|Retrieves the identifier of the control.|  
+|[COleControlSite::SetFocus](#setfocus)|Sets the focus to the control site.|  
+|[COleControlSite::SetProperty](#setproperty)|Sets a specific property of the hosted control.|  
+|[COleControlSite::SetPropertyV](#setpropertyv)|Sets a specific property of the hosted control with a variable list of arguments.|  
+|[COleControlSite::SetWindowPos](#setwindowpos)|Sets the position of the control site.|  
+|[COleControlSite::SetWindowText](#setwindowtext)|Sets the text of the hosted control.|  
+|[COleControlSite::ShowWindow](#showwindow)|Shows or hides the control site.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleControlSite::GetControlInfo](#colecontrolsite__getcontrolinfo)|Retrieves keyboard information and mnemonics for the hosted control.|  
+|[COleControlSite::GetControlInfo](#getcontrolinfo)|Retrieves keyboard information and mnemonics for the hosted control.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleControlSite::m_bIsWindowless](#colecontrolsite__m_biswindowless)|Determines if the hosted control is a windowless control.|  
-|[COleControlSite::m_ctlInfo](#colecontrolsite__m_ctlinfo)|Contains information on keyboard handling for the control.|  
-|[COleControlSite::m_dwEventSink](#colecontrolsite__m_dweventsink)|The cookie of the control's connection point.|  
-|[COleControlSite::m_dwMiscStatus](#colecontrolsite__m_dwmiscstatus)|The miscellaneous states for the hosted control.|  
-|[COleControlSite::m_dwPropNotifySink](#colecontrolsite__m_dwpropnotifysink)|The `IPropertyNotifySink` cookie of the control.|  
-|[COleControlSite::m_dwStyle](#colecontrolsite__m_dwstyle)|The styles of the hosted control.|  
-|[COleControlSite::m_hWnd](#colecontrolsite__m_hwnd)|The handle of the control site.|  
-|[COleControlSite::m_iidEvents](#colecontrolsite__m_iidevents)|The ID of the event interface for the hosted control.|  
-|[COleControlSite::m_nID](#colecontrolsite__m_nid)|The ID of the hosted control.|  
-|[COleControlSite::m_pActiveObject](#colecontrolsite__m_pactiveobject)|A pointer to the `IOleInPlaceActiveObject` object of the hosted control.|  
-|[COleControlSite::m_pCtrlCont](#colecontrolsite__m_pctrlcont)|The container of the hosted control.|  
-|[COleControlSite::m_pInPlaceObject](#colecontrolsite__m_pinplaceobject)|A pointer to the `IOleInPlaceObject` object of the hosted control.|  
-|[COleControlSite::m_pObject](#colecontrolsite__m_pobject)|A pointer to the `IOleObjectInterface` interface of the control.|  
-|[COleControlSite::m_pWindowlessObject](#colecontrolsite__m_pwindowlessobject)|A pointer to the `IOleInPlaceObjectWindowless` interface of the control.|  
-|[COleControlSite::m_pWndCtrl](#colecontrolsite__m_pwndctrl)|A pointer to the window object for the hosted control.|  
-|[COleControlSite::m_rect](#colecontrolsite__m_rect)|The dimensions of the control site.|  
+|[COleControlSite::m_bIsWindowless](#m_biswindowless)|Determines if the hosted control is a windowless control.|  
+|[COleControlSite::m_ctlInfo](#m_ctlinfo)|Contains information on keyboard handling for the control.|  
+|[COleControlSite::m_dwEventSink](#m_dweventsink)|The cookie of the control's connection point.|  
+|[COleControlSite::m_dwMiscStatus](#m_dwmiscstatus)|The miscellaneous states for the hosted control.|  
+|[COleControlSite::m_dwPropNotifySink](#m_dwpropnotifysink)|The `IPropertyNotifySink` cookie of the control.|  
+|[COleControlSite::m_dwStyle](#m_dwstyle)|The styles of the hosted control.|  
+|[COleControlSite::m_hWnd](#m_hwnd)|The handle of the control site.|  
+|[COleControlSite::m_iidEvents](#m_iidevents)|The ID of the event interface for the hosted control.|  
+|[COleControlSite::m_nID](#m_nid)|The ID of the hosted control.|  
+|[COleControlSite::m_pActiveObject](#m_pactiveobject)|A pointer to the `IOleInPlaceActiveObject` object of the hosted control.|  
+|[COleControlSite::m_pCtrlCont](#m_pctrlcont)|The container of the hosted control.|  
+|[COleControlSite::m_pInPlaceObject](#m_pinplaceobject)|A pointer to the `IOleInPlaceObject` object of the hosted control.|  
+|[COleControlSite::m_pObject](#m_pobject)|A pointer to the `IOleObjectInterface` interface of the control.|  
+|[COleControlSite::m_pWindowlessObject](#m_pwindowlessobject)|A pointer to the `IOleInPlaceObjectWindowless` interface of the control.|  
+|[COleControlSite::m_pWndCtrl](#m_pwndctrl)|A pointer to the window object for the hosted control.|  
+|[COleControlSite::m_rect](#m_rect)|The dimensions of the control site.|  
   
 ## Remarks  
  This support is the primary means by which an embedded ActiveX control obtains information about the location and extent of its display site, its moniker, its user interface, its ambient properties, and other resources provided by its container. `COleControlSite` fully implements the [IOleControlSite](http://msdn.microsoft.com/library/windows/desktop/ms688502), [IOleInPlaceSite](http://msdn.microsoft.com/library/windows/desktop/ms686586), [IOleClientSite](http://msdn.microsoft.com/library/windows/desktop/ms693706), [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638), **IBoundObjectSite**, **INotifyDBEvents**, [IRowSetNotify](../../data/oledb/irowsetnotifyimpl-class.md)       interfaces. In addition, the IDispatch interface (providing support for ambient properties and event sinks) is also implemented.  
@@ -130,7 +130,7 @@ class COleControlSite : public CCmdTarget
 ## Requirements  
  **Header:** afxocc.h  
   
-##  <a name="colecontrolsite__binddefaultproperty"></a>  COleControlSite::BindDefaultProperty  
+##  <a name="binddefaultproperty"></a>  COleControlSite::BindDefaultProperty  
  Binds the calling object's default simple bound property, as marked in the type library, to the underlying cursor that is defined by the DataSource, UserName, Password, and SQL properties of the data-source control.  
   
 ```  
@@ -157,7 +157,7 @@ virtual void BindDefaultProperty(
 ### Remarks  
  The `CWnd` object on which you call this function must be a data-bound control.  
   
-##  <a name="colecontrolsite__bindproperty"></a>  COleControlSite::BindProperty  
+##  <a name="bindproperty"></a>  COleControlSite::BindProperty  
  Binds the calling object's simple bound property, as marked in the type library, to the underlying cursor that is defined by the DataSource, UserName, Password, and SQL properties of the data-source control.  
   
 ```  
@@ -176,7 +176,7 @@ virtual void BindProperty(
 ### Remarks  
  The `CWnd` object on which you call this function must be a data-bound control.  
   
-##  <a name="colecontrolsite__colecontrolsite"></a>  COleControlSite::COleControlSite  
+##  <a name="colecontrolsite"></a>  COleControlSite::COleControlSite  
  Constructs a new `COleControlSite` object.  
   
 ```  
@@ -188,9 +188,9 @@ explicit COleControlSite(COleControlContainer* pCtrlCont);
  A pointer to the control's container (which represents the window that hosts the AtiveX control).  
   
 ### Remarks  
- This function is called by the [COccManager::CreateContainer](../../mfc/reference/coccmanager-class.md#coccmanager__createcontainer) function. For more information on customizing the creation of containers, see [COccManager::CreateSite](../../mfc/reference/coccmanager-class.md#coccmanager__createsite).  
+ This function is called by the [COccManager::CreateContainer](../../mfc/reference/coccmanager-class.md#createcontainer) function. For more information on customizing the creation of containers, see [COccManager::CreateSite](../../mfc/reference/coccmanager-class.md#createsite).  
   
-##  <a name="colecontrolsite__createcontrol"></a>  COleControlSite::CreateControl  
+##  <a name="createcontrol"></a>  COleControlSite::CreateControl  
  Creates an ActiveX control, hosted by the `COleControlSite` object.  
   
 ```  
@@ -271,7 +271,7 @@ virtual HRESULT CreateControl(
   
  Use the second overload to create default-sized controls.  
   
-##  <a name="colecontrolsite__destroycontrol"></a>  COleControlSite::DestroyControl  
+##  <a name="destroycontrol"></a>  COleControlSite::DestroyControl  
  Destroys the `COleControlSite` object.  
   
 ```  
@@ -284,7 +284,7 @@ virtual BOOL DestroyControl();
 ### Remarks  
  Once completed, the object is freed from memory and any pointers to the object are no longer valid.  
   
-##  <a name="colecontrolsite__doverb"></a>  COleControlSite::DoVerb  
+##  <a name="doverb"></a>  COleControlSite::DoVerb  
  Executes the specified verb.  
   
 ```  
@@ -319,7 +319,7 @@ virtual HRESULT DoVerb(
   
  For more information, see [IOleObject::DoVerb](http://msdn.microsoft.com/library/windows/desktop/ms694508) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="colecontrolsite__enabledsc"></a>  COleControlSite::EnableDSC  
+##  <a name="enabledsc"></a>  COleControlSite::EnableDSC  
  Enables data sourcing for the control site.  
   
 ```  
@@ -329,7 +329,7 @@ virtual void EnableDSC();
 ### Remarks  
  Called by the framework to enable and initialize data sourcing for the control site. Override this function to provide customized behavior.  
   
-##  <a name="colecontrolsite__enablewindow"></a>  COleControlSite::EnableWindow  
+##  <a name="enablewindow"></a>  COleControlSite::EnableWindow  
  Enables or disables mouse and keyboard input to the control site.  
   
 ```  
@@ -343,7 +343,7 @@ virtual BOOL EnableWindow(BOOL bEnable);
 ### Return Value  
  Nonzero if the window was previously disabled, otherwise 0.  
   
-##  <a name="colecontrolsite__freezeevents"></a>  COleControlSite::FreezeEvents  
+##  <a name="freezeevents"></a>  COleControlSite::FreezeEvents  
  Specifies whether the control site will handle or ignore events fired from a control.  
   
 ```  
@@ -360,7 +360,7 @@ void FreezeEvents(BOOL bFreeze);
 > [!NOTE]
 >  The control is not required to stop firing events if requested by the control site. It can continue firing but all subsequent events will be ignored by the control site.  
   
-##  <a name="colecontrolsite__getcontrolinfo"></a>  COleControlSite::GetControlInfo  
+##  <a name="getcontrolinfo"></a>  COleControlSite::GetControlInfo  
  Retrieves information about a control's keyboard mnemonics and keyboard behavior.  
   
 ```  
@@ -368,9 +368,9 @@ void GetControlInfo();
 ```  
   
 ### Remarks  
- The information is stored in [COleControlSite::m_ctlInfo](#colecontrolsite__m_ctlinfo).  
+ The information is stored in [COleControlSite::m_ctlInfo](#m_ctlinfo).  
   
-##  <a name="colecontrolsite__getdefbtncode"></a>  COleControlSite::GetDefBtnCode  
+##  <a name="getdefbtncode"></a>  COleControlSite::GetDefBtnCode  
  Determines if the control is a default push button.  
   
 ```  
@@ -386,7 +386,7 @@ DWORD GetDefBtnCode();
   
 - **0** Control is not a button.  
   
-##  <a name="colecontrolsite__getdlgctrlid"></a>  COleControlSite::GetDlgCtrlID  
+##  <a name="getdlgctrlid"></a>  COleControlSite::GetDlgCtrlID  
  Retrieves the identifier of the control.  
   
 ```  
@@ -398,7 +398,7 @@ virtual int GetDlgCtrlID() const;
 ### Return Value  
  The dialog item identifier of the control.  
   
-##  <a name="colecontrolsite__geteventiid"></a>  COleControlSite::GetEventIID  
+##  <a name="geteventiid"></a>  COleControlSite::GetEventIID  
  Retrieves a pointer to the control's default event interface.  
   
 ```  
@@ -412,7 +412,7 @@ BOOL GetEventIID(IID* piid);
 ### Return Value  
  Nonzero if successful, otherwise 0. If successful, `piid` contains the interface ID for the control's default event interface.  
   
-##  <a name="colecontrolsite__getexstyle"></a>  COleControlSite::GetExStyle  
+##  <a name="getexstyle"></a>  COleControlSite::GetExStyle  
  Retrieves the window's extended styles.  
   
 ```  
@@ -425,9 +425,9 @@ virtual DWORD GetExStyle() const;
  The control window's extended styles.  
   
 ### Remarks  
- To retrieve the regular styles, call [COleControlSite::GetStyle](#colecontrolsite__getstyle).  
+ To retrieve the regular styles, call [COleControlSite::GetStyle](#getstyle).  
   
-##  <a name="colecontrolsite__getproperty"></a>  COleControlSite::GetProperty  
+##  <a name="getproperty"></a>  COleControlSite::GetProperty  
  Gets the control property specified by `dwDispID`.  
   
 ```  
@@ -444,7 +444,7 @@ virtual void GetProperty(
  Identifies the dispatch ID of the property, found on the control's default `IDispatch` interface, to be retrieved.  
   
  `vtProp`  
- Specifies the type of the property to be retrieved. For possible values, see the Remarks section for [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#coledispatchdriver__invokehelper).  
+ Specifies the type of the property to be retrieved. For possible values, see the Remarks section for [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).  
   
  `pvProp`  
  Address of the variable that will receive the property value. It must match the type specified by `vtProp`.  
@@ -452,7 +452,7 @@ virtual void GetProperty(
 ### Remarks  
  The value is returned through `pvProp`.  
   
-##  <a name="colecontrolsite__getstyle"></a>  COleControlSite::GetStyle  
+##  <a name="getstyle"></a>  COleControlSite::GetStyle  
  Retrieves the styles of the control site.  
   
 ```  
@@ -465,9 +465,9 @@ virtual DWORD GetStyle() const;
  The window's styles.  
   
 ### Remarks  
- For a list of possible values, see [Windows Styles](../../mfc/reference/window-styles.md). To retrieve the extended styles of the control site, call [COleControlSite::GetExStyle](#colecontrolsite__getexstyle).  
+ For a list of possible values, see [Windows Styles](../../mfc/reference/window-styles.md). To retrieve the extended styles of the control site, call [COleControlSite::GetExStyle](#getexstyle).  
   
-##  <a name="colecontrolsite__getwindowtext"></a>  COleControlSite::GetWindowText  
+##  <a name="getwindowtext"></a>  COleControlSite::GetWindowText  
  Retrieves the current text of the control.  
   
 ```  
@@ -483,7 +483,7 @@ virtual void GetWindowText(CString& str) const;
 ### Remarks  
  If the control supports the Caption stock property, this value is returned. If the Caption stock property is not supported, the value for the Text property is returned.  
   
-##  <a name="colecontrolsite__invokehelper"></a>  COleControlSite::InvokeHelper  
+##  <a name="invokehelper"></a>  COleControlSite::InvokeHelper  
  Invokes the method or property specified by `dwDispID`, in the context specified by `wFlags`.  
   
 ```  
@@ -503,13 +503,13 @@ virtual void AFX_CDECL InvokeHelper(
  Flags describing the context of the call to IDispatch::Invoke. For possible `wFlags` values, see `IDispatch::Invoke` in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
  `vtRet`  
- Specifies the type of the return value. For possible values, see the Remarks section for [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#coledispatchdriver__invokehelper).  
+ Specifies the type of the return value. For possible values, see the Remarks section for [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).  
   
  `pvRet`  
  Address of the variable that will receive the property value or return value. It must match the type specified by `vtRet`.  
   
  `pbParamInfo`  
- Pointer to a null-terminated string of bytes specifying the types of the parameters following `pbParamInfo`. For possible values, see the Remarks section for [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#coledispatchdriver__invokehelper).  
+ Pointer to a null-terminated string of bytes specifying the types of the parameters following `pbParamInfo`. For possible values, see the Remarks section for [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).  
   
  *...*  
  Variable list of parameters, of types specified in `pbParamInfo`.  
@@ -519,7 +519,7 @@ virtual void AFX_CDECL InvokeHelper(
   
  This function converts the parameters to **VARIANTARG** values, then invokes the **IDispatch::Invoke** method on the control. If the call to **IDispatch::Invoke** fails, this function will throw an exception. If the status code returned by **IDispatch::Invoke** is `DISP_E_EXCEPTION`, this function throws a **COleDispatchException** object, otherwise it throws a `COleException`.  
   
-##  <a name="colecontrolsite__invokehelperv"></a>  COleControlSite::InvokeHelperV  
+##  <a name="invokehelperv"></a>  COleControlSite::InvokeHelperV  
  Invokes the method or property specified by `dwDispID`, in the context specified by `wFlags`.  
   
 ```  
@@ -540,13 +540,13 @@ virtual void InvokeHelperV(
  Flags describing the context of the call to IDispatch::Invoke.  
   
  `vtRet`  
- Specifies the type of the return value. For possible values, see the Remarks section for [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#coledispatchdriver__invokehelper).  
+ Specifies the type of the return value. For possible values, see the Remarks section for [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).  
   
  `pvRet`  
  Address of the variable that will receive the property value or return value. It must match the type specified by `vtRet`.  
   
  `pbParamInfo`  
- Pointer to a null-terminated string of bytes specifying the types of the parameters following `pbParamInfo`. For possible values, see the Remarks section for [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#coledispatchdriver__invokehelper).  
+ Pointer to a null-terminated string of bytes specifying the types of the parameters following `pbParamInfo`. For possible values, see the Remarks section for [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).  
   
  `argList`  
  Pointer to a variable argument list.  
@@ -556,7 +556,7 @@ virtual void InvokeHelperV(
   
  Typically, this function is called by `COleControlSite::InvokeHelper`.  
   
-##  <a name="colecontrolsite__isdefaultbutton"></a>  COleControlSite::IsDefaultButton  
+##  <a name="isdefaultbutton"></a>  COleControlSite::IsDefaultButton  
  Determines if the control is the default button.  
   
 ```  
@@ -566,7 +566,7 @@ BOOL IsDefaultButton();
 ### Return Value  
  Nonzero if the control is the default button on the window, otherwise zero.  
   
-##  <a name="colecontrolsite__iswindowenabled"></a>  COleControlSite::IsWindowEnabled  
+##  <a name="iswindowenabled"></a>  COleControlSite::IsWindowEnabled  
  Determines if the control site is enabled.  
   
 ```  
@@ -581,7 +581,7 @@ virtual BOOL IsWindowEnabled() const;
 ### Remarks  
  The value is retrieved from the control's Enabled stock property.  
   
-##  <a name="colecontrolsite__m_biswindowless"></a>  COleControlSite::m_bIsWindowless  
+##  <a name="m_biswindowless"></a>  COleControlSite::m_bIsWindowless  
  Determines if the object is a windowless control.  
   
 ```  
@@ -591,7 +591,7 @@ BOOL m_bIsWindowless;
 ### Remarks  
  Nonzero if the control has no window, otherwise zero.  
   
-##  <a name="colecontrolsite__m_ctlinfo"></a>  COleControlSite::m_ctlInfo  
+##  <a name="m_ctlinfo"></a>  COleControlSite::m_ctlInfo  
  Information on how keyboard input is handled by the control.  
   
 ```  
@@ -601,14 +601,14 @@ CONTROLINFO m_ctlInfo;
 ### Remarks  
  This information is stored in a [CONTROLINFO](http://msdn.microsoft.com/library/windows/desktop/ms680734) structure.  
   
-##  <a name="colecontrolsite__m_dweventsink"></a>  COleControlSite::m_dwEventSink  
+##  <a name="m_dweventsink"></a>  COleControlSite::m_dwEventSink  
  Contains the connection point's cookie from the control's event sink.  
   
 ```  
 DWORD m_dwEventSink;  
 ```  
   
-##  <a name="colecontrolsite__m_dwmiscstatus"></a>  COleControlSite::m_dwMiscStatus  
+##  <a name="m_dwmiscstatus"></a>  COleControlSite::m_dwMiscStatus  
  Contains miscellaneous information about the control.  
   
 ```  
@@ -618,91 +618,91 @@ DWORD m_dwMiscStatus;
 ### Remarks  
  For more information, see [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497)in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="colecontrolsite__m_dwpropnotifysink"></a>  COleControlSite::m_dwPropNotifySink  
+##  <a name="m_dwpropnotifysink"></a>  COleControlSite::m_dwPropNotifySink  
  Contains the [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638) cookie.  
   
 ```  
 DWORD m_dwPropNotifySink;  
 ```  
   
-##  <a name="colecontrolsite__m_dwstyle"></a>  COleControlSite::m_dwStyle  
+##  <a name="m_dwstyle"></a>  COleControlSite::m_dwStyle  
  Contains the Window styles of the control.  
   
 ```  
 DWORD m_dwStyle;  
 ```  
   
-##  <a name="colecontrolsite__m_hwnd"></a>  COleControlSite::m_hWnd  
+##  <a name="m_hwnd"></a>  COleControlSite::m_hWnd  
  Contains the `HWND` of the control, or **NULL** if the control is windowless.  
   
 ```  
 HWND m_hWnd;  
 ```  
   
-##  <a name="colecontrolsite__m_iidevents"></a>  COleControlSite::m_iidEvents  
+##  <a name="m_iidevents"></a>  COleControlSite::m_iidEvents  
  Contains the interface ID of the control's default event sink interface.  
   
 ```  
 IID m_iidEvents;  
 ```  
   
-##  <a name="colecontrolsite__m_nid"></a>  COleControlSite::m_nID  
+##  <a name="m_nid"></a>  COleControlSite::m_nID  
  Contains the control's dialog item ID.  
   
 ```  
 UINT m_nID;  
 ```  
   
-##  <a name="colecontrolsite__m_pactiveobject"></a>  COleControlSite::m_pActiveObject  
+##  <a name="m_pactiveobject"></a>  COleControlSite::m_pActiveObject  
  Contains the [IOleInPlaceActiveObject](http://msdn.microsoft.com/library/windows/desktop/ms691299) interface of the control.  
   
 ```  
 LPOLEINPLACEACTIVEOBJECT m_pActiveObject;  
 ```  
   
-##  <a name="colecontrolsite__m_pctrlcont"></a>  COleControlSite::m_pCtrlCont  
+##  <a name="m_pctrlcont"></a>  COleControlSite::m_pCtrlCont  
  Contains the control's container (representing the form).  
   
 ```  
 COleControlContainer* m_pCtrlCont;  
 ```  
   
-##  <a name="colecontrolsite__m_pinplaceobject"></a>  COleControlSite::m_pInPlaceObject  
+##  <a name="m_pinplaceobject"></a>  COleControlSite::m_pInPlaceObject  
  Contains the `IOleInPlaceObject` [IOleInPlaceObject](http://msdn.microsoft.com/library/windows/desktop/ms692646) interface of the control.  
   
 ```  
 LPOLEINPLACEOBJECT m_pInPlaceObject;  
 ```  
   
-##  <a name="colecontrolsite__m_pobject"></a>  COleControlSite::m_pObject  
+##  <a name="m_pobject"></a>  COleControlSite::m_pObject  
  Contains the **IOleObjectInterface** interface of the control.  
   
 ```  
 LPOLEOBJECT m_pObject;  
 ```  
   
-##  <a name="colecontrolsite__m_pwindowlessobject"></a>  COleControlSite::m_pWindowlessObject  
+##  <a name="m_pwindowlessobject"></a>  COleControlSite::m_pWindowlessObject  
  Contains the `IOleInPlaceObjectWindowless`[IOleInPlaceObjectWindowless](http://msdn.microsoft.com/library/windows/desktop/ms687304) interface of the control.  
   
 ```  
 IOleInPlaceObjectWindowless* m_pWindowlessObject;  
 ```  
   
-##  <a name="colecontrolsite__m_pwndctrl"></a>  COleControlSite::m_pWndCtrl  
+##  <a name="m_pwndctrl"></a>  COleControlSite::m_pWndCtrl  
  Contains a pointer to the `CWnd` object that represents the control itself.  
   
 ```  
 CWnd* m_pWndCtrl;  
 ```  
   
-##  <a name="colecontrolsite__m_rect"></a>  COleControlSite::m_rect  
+##  <a name="m_rect"></a>  COleControlSite::m_rect  
  Contains the bounds of the control, relative to the container's window.  
   
 ```  
 CRect m_rect;  
 ```  
   
-##  <a name="colecontrolsite__modifystyle"></a>  COleControlSite::ModifyStyle  
+##  <a name="modifystyle"></a>  COleControlSite::ModifyStyle  
  Modifies the styles of the control.  
   
 ```  
@@ -740,9 +740,9 @@ virtual BOOL ModifyStyle(
   
 - `SWP_NOACTIVATE` Does not activate the window.  
   
- To modify a window's extended styles, call [ModifyStyleEx](#colecontrolsite__modifystyleex).  
+ To modify a window's extended styles, call [ModifyStyleEx](#modifystyleex).  
   
-##  <a name="colecontrolsite__modifystyleex"></a>  COleControlSite::ModifyStyleEx  
+##  <a name="modifystyleex"></a>  COleControlSite::ModifyStyleEx  
  Modifies the extended styles of the control.  
   
 ```  
@@ -780,9 +780,9 @@ virtual BOOL ModifyStyleEx(
   
 - `SWP_NOACTIVATE` Does not activate the window.  
   
- To modify a window's extended styles, call [ModifyStyle](#colecontrolsite__modifystyle).  
+ To modify a window's extended styles, call [ModifyStyle](#modifystyle).  
   
-##  <a name="colecontrolsite__movewindow"></a>  COleControlSite::MoveWindow  
+##  <a name="movewindow"></a>  COleControlSite::MoveWindow  
  Changes the position of the control.  
   
 ```  
@@ -806,7 +806,7 @@ virtual void MoveWindow(
  `nHeight`  
  The new height of the window.  
   
-##  <a name="colecontrolsite__quickactivate"></a>  COleControlSite::QuickActivate  
+##  <a name="quickactivate"></a>  COleControlSite::QuickActivate  
  Quick activates the contained control.  
   
 ```  
@@ -821,7 +821,7 @@ virtual BOOL QuickActivate();
   
  The `IPersist*::Load` and `IPersist*::InitNew` methods should be called after quick activation occurs. The control should establish its connections to the container's sinks during quick activation. However, these connections are not live until `IPersist*::Load` or `IPersist*::InitNew` has been called.  
   
-##  <a name="colecontrolsite__safesetproperty"></a>  COleControlSite::SafeSetProperty  
+##  <a name="safesetproperty"></a>  COleControlSite::SafeSetProperty  
  Sets the control property specified by `dwDispID`.  
   
 ```  
@@ -835,7 +835,7 @@ virtual BOOL AFX_CDECL SafeSetProperty(
  Identifies the dispatch ID of the property or method, found on the control's `IDispatch` interface, to be set.  
   
  `vtProp`  
- Specifies the type of property to be set. For possible values, see the Remarks section for [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#coledispatchdriver__invokehelper).  
+ Specifies the type of property to be set. For possible values, see the Remarks section for [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).  
   
  *...*  
  A single parameter of the type specified by `vtProp`.  
@@ -848,7 +848,7 @@ virtual BOOL AFX_CDECL SafeSetProperty(
 > [!NOTE]
 >  Unlike `SetProperty` and `SetPropertyV`, if an error is encountered (such as trying to set a nonexistent property), no exception is thrown.  
   
-##  <a name="colecontrolsite__setdefaultbutton"></a>  COleControlSite::SetDefaultButton  
+##  <a name="setdefaultbutton"></a>  COleControlSite::SetDefaultButton  
  Sets the control as the default button.  
   
 ```  
@@ -864,7 +864,7 @@ void SetDefaultButton(BOOL bDefault);
 > [!NOTE]
 >  The control must have the **OLEMISC_ACTSLIKEBUTTON** status bit set.  
   
-##  <a name="colecontrolsite__setdlgctrlid"></a>  COleControlSite::SetDlgCtrlID  
+##  <a name="setdlgctrlid"></a>  COleControlSite::SetDlgCtrlID  
  Changes the value of the control's dialog item identifier.  
   
 ```  
@@ -880,7 +880,7 @@ virtual int SetDlgCtrlID(int nID);
   
 ### Remarks  
   
-##  <a name="colecontrolsite__setfocus"></a>  COleControlSite::SetFocus  
+##  <a name="setfocus"></a>  COleControlSite::SetFocus  
  Sets focus to the control.  
   
 ```  
@@ -897,7 +897,7 @@ virtual CWnd* SetFocus(LPMSG lpmsg);
 ### Return Value  
  A pointer to the window that previously had focus.  
   
-##  <a name="colecontrolsite__setproperty"></a>  COleControlSite::SetProperty  
+##  <a name="setproperty"></a>  COleControlSite::SetProperty  
  Sets the control property specified by `dwDispID`.  
   
 ```  
@@ -911,7 +911,7 @@ virtual void AFX_CDECL SetProperty(
  Identifies the dispatch ID of the property or method, found on the control's `IDispatch` interface, to be set.  
   
  `vtProp`  
- Specifies the type of property to be set. For possible values, see the Remarks section for [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#coledispatchdriver__invokehelper).  
+ Specifies the type of property to be set. For possible values, see the Remarks section for [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).  
   
  *...*  
  A single parameter of the type specified by `vtProp`.  
@@ -921,7 +921,7 @@ virtual void AFX_CDECL SetProperty(
   
  The type of exception is determined by the return value of the attempt to set the property or method. If the return value is `DISP_E_EXCEPTION`, a **COleDispatchExcpetion** is thrown; otherwise a `COleException`.  
   
-##  <a name="colecontrolsite__setpropertyv"></a>  COleControlSite::SetPropertyV  
+##  <a name="setpropertyv"></a>  COleControlSite::SetPropertyV  
  Sets the control property specified by `dwDispID`.  
   
 ```  
@@ -936,7 +936,7 @@ virtual void SetPropertyV(
  Identifies the dispatch ID of the property or method, found on the control's `IDispatch` interface, to be set.  
   
  `vtProp`  
- Specifies the type of property to be set. For possible values, see the Remarks section for [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#coledispatchdriver__invokehelper).  
+ Specifies the type of property to be set. For possible values, see the Remarks section for [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).  
   
  `argList`  
  Pointer to the list of arguments.  
@@ -946,7 +946,7 @@ virtual void SetPropertyV(
   
  The type of exception is determined by the return value of the attempt to set the property or method. If the return value is `DISP_E_EXCEPTION`, a **COleDispatchExcpetion** is thrown; otherwise a `COleException`.  
   
-##  <a name="colecontrolsite__setwindowpos"></a>  COleControlSite::SetWindowPos  
+##  <a name="setwindowpos"></a>  COleControlSite::SetWindowPos  
  Sets the size, position, and Z order of the control site.  
   
 ```  
@@ -981,7 +981,7 @@ virtual BOOL SetWindowPos(
 ### Return Value  
  Nonzero if successful, otherwise zero.  
   
-##  <a name="colecontrolsite__setwindowtext"></a>  COleControlSite::SetWindowText  
+##  <a name="setwindowtext"></a>  COleControlSite::SetWindowText  
  Sets the text for the control site.  
   
 ```  
@@ -995,7 +995,7 @@ virtual void SetWindowText(LPCTSTR lpszString);
 ### Remarks  
  This function first attempts to set the Caption stock property. If the Caption stock property is not supported, the Text property is set instead.  
   
-##  <a name="colecontrolsite__showwindow"></a>  COleControlSite::ShowWindow  
+##  <a name="showwindow"></a>  COleControlSite::ShowWindow  
  Sets the window's show state.  
   
 ```  

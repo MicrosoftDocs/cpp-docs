@@ -91,6 +91,6 @@ translation.priority.ht:
   
 ## See Also  
  [Styles Used by MFC](../../mfc/reference/styles-used-by-mfc.md)   
- [CEdit::Create](../../mfc/reference/cedit-class.md#cedit__create)   
+ [CEdit::Create](../../mfc/reference/cedit-class.md#create)   
  [Edit Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775464)
 

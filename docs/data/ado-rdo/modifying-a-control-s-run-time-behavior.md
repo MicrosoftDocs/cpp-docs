@@ -45,7 +45,7 @@ After you [insert a control](../../data/ado-rdo/inserting-the-control-into-a-vis
  If you want to use ADO and RDO directly, you should connect to the ADO or RDO DLLs directly (Msado15.dll or Msrdo20.dll), either with the [compiler COM support classes](../../cpp/compiler-com-support-classes.md), which support the [#import directive](../../preprocessor/preprocessor-directives.md), or with the respective SDK.  
   
 ## To Set Control Properties at Run Time  
- Note that some properties of an ActiveX control might be read-only at run time, which makes dynamic creation difficult. You can temporarily simulate design mode for property initialization by overriding the control container's [OnAmbientPropertyChange](../mfc/reference/colecontrol-class.md#colecontrol__onambientpropertychange) handler, as described in the Knowledge Base article, "How to: Set ActiveX Control Design-Time Properties at Run Time (Q260744)". You can find Knowledge Base articles at [http://support.microsoft.com/](http://support.microsoft.com/).  
+ Note that some properties of an ActiveX control might be read-only at run time, which makes dynamic creation difficult. You can temporarily simulate design mode for property initialization by overriding the control container's [OnAmbientPropertyChange](../mfc/reference/colecontrol-class.md#onambientpropertychange) handler, as described in the Knowledge Base article, "How to: Set ActiveX Control Design-Time Properties at Run Time (Q260744)". You can find Knowledge Base articles at [http://support.microsoft.com/](http://support.microsoft.com/).  
   
 ## See Also  
  [Using ActiveX Controls](../../data/ado-rdo/using-activex-controls.md)

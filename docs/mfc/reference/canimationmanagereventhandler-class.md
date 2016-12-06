@@ -50,15 +50,15 @@ class CAnimationManagerEventHandler : public CUIAnimationManagerEventHandlerBase
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAnimationManagerEventHandler::CAnimationManagerEventHandler](#canimationmanagereventhandler__canimationmanagereventhandler)|Constructs a `CAnimationManagerEventHandler` object.|  
+|[CAnimationManagerEventHandler::CAnimationManagerEventHandler](#canimationmanagereventhandler)|Constructs a `CAnimationManagerEventHandler` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAnimationManagerEventHandler::CreateInstance](#canimationmanagereventhandler__createinstance)|Creates an instance of `CAnimationManagerEventHandler` object.|  
-|[CAnimationManagerEventHandler::OnManagerStatusChanged](#canimationmanagereventhandler__onmanagerstatuschanged)|Called when a status of animation manager has changed. (Overrides `CUIAnimationManagerEventHandlerBase::OnManagerStatusChanged`.)|  
-|[CAnimationManagerEventHandler::SetAnimationController](#canimationmanagereventhandler__setanimationcontroller)|Stores a pointer to animation controller to route events.|  
+|[CAnimationManagerEventHandler::CreateInstance](#createinstance)|Creates an instance of `CAnimationManagerEventHandler` object.|  
+|[CAnimationManagerEventHandler::OnManagerStatusChanged](#onmanagerstatuschanged)|Called when a status of animation manager has changed. (Overrides `CUIAnimationManagerEventHandlerBase::OnManagerStatusChanged`.)|  
+|[CAnimationManagerEventHandler::SetAnimationController](#setanimationcontroller)|Stores a pointer to animation controller to route events.|  
   
 ## Remarks  
  This event handler is created and passed to IUIAnimationManager::SetManagerEventHandler method, when you call CAnimationController::EnableAnimationManagerEvent.  
@@ -73,7 +73,7 @@ class CAnimationManagerEventHandler : public CUIAnimationManagerEventHandlerBase
 ## Requirements  
  **Header:** afxanimationcontroller.h  
   
-##  <a name="canimationmanagereventhandler__canimationmanagereventhandler"></a>  CAnimationManagerEventHandler::CAnimationManagerEventHandler  
+##  <a name="canimationmanagereventhandler"></a>  CAnimationManagerEventHandler::CAnimationManagerEventHandler  
  [!INCLUDE[dev10_sp1required](../../mfc/reference/includes/dev10_sp1required_md.md)]  
   
  Constructs a CAnimationManagerEventHandler object.  
@@ -82,7 +82,7 @@ class CAnimationManagerEventHandler : public CUIAnimationManagerEventHandlerBase
 CAnimationManagerEventHandler();
 ```  
   
-##  <a name="canimationmanagereventhandler__createinstance"></a>  CAnimationManagerEventHandler::CreateInstance  
+##  <a name="createinstance"></a>  CAnimationManagerEventHandler::CreateInstance  
  [!INCLUDE[dev10_sp1required](../../mfc/reference/includes/dev10_sp1required_md.md)]  
   
  Creates an instance of CAnimationManagerEventHandler object.  
@@ -103,7 +103,7 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
 ### Return Value  
  If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.  
   
-##  <a name="canimationmanagereventhandler__onmanagerstatuschanged"></a>  CAnimationManagerEventHandler::OnManagerStatusChanged  
+##  <a name="onmanagerstatuschanged"></a>  CAnimationManagerEventHandler::OnManagerStatusChanged  
  [!INCLUDE[dev10_sp1required](../../mfc/reference/includes/dev10_sp1required_md.md)]  
   
  Called when a status of animation manager has changed.  
@@ -123,7 +123,7 @@ IFACEMETHOD(
 ### Return Value  
  Current implementation always returns S_OK;  
   
-##  <a name="canimationmanagereventhandler__setanimationcontroller"></a>  CAnimationManagerEventHandler::SetAnimationController  
+##  <a name="setanimationcontroller"></a>  CAnimationManagerEventHandler::SetAnimationController  
  [!INCLUDE[dev10_sp1required](../../mfc/reference/includes/dev10_sp1required_md.md)]  
   
  Stores a pointer to animation controller to route events.  

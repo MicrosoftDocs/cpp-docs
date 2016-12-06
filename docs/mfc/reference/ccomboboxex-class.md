@@ -54,26 +54,26 @@ class CComboBoxEx : public CComboBox
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComboBoxEx::CComboBoxEx](#ccomboboxex__ccomboboxex)|Constructs a `CComboBoxEx` object.|  
+|[CComboBoxEx::CComboBoxEx](#ccomboboxex)|Constructs a `CComboBoxEx` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComboBoxEx::Create](#ccomboboxex__create)|Creates the combo box and attaches it to the `CComboBoxEx` object.|  
-|[CComboBoxEx::CreateEx](#ccomboboxex__createex)|Creates a combo box with the specified Windows extended styles and attaches it to a **ComboBoxEx** object.|  
-|[CComboBoxEx::DeleteItem](#ccomboboxex__deleteitem)|Removes an item from a **ComboBoxEx** control.|  
-|[CComboBoxEx::GetComboBoxCtrl](#ccomboboxex__getcomboboxctrl)|Retrieves a pointer to the child combo box control.|  
-|[CComboBoxEx::GetEditCtrl](#ccomboboxex__geteditctrl)|Retrieves the handle to the edit control portion of a **ComboBoxEx** control.|  
-|[CComboBoxEx::GetExtendedStyle](#ccomboboxex__getextendedstyle)|Retrieves the extended styles that are in use for a **ComboBoxEx** control.|  
-|[CComboBoxEx::GetImageList](#ccomboboxex__getimagelist)|Retrieves a pointer to the image list assigned to a **ComboBoxEx** control.|  
-|[CComboBoxEx::GetItem](#ccomboboxex__getitem)|Retrieves item information for a given **ComboBoxEx** item.|  
-|[CComboBoxEx::HasEditChanged](#ccomboboxex__haseditchanged)|Determines if the user has changed the contents of the **ComboBoxEx** edit control by typing.|  
-|[CComboBoxEx::InsertItem](#ccomboboxex__insertitem)|Inserts a new item in a **ComboBoxEx** control.|  
-|[CComboBoxEx::SetExtendedStyle](#ccomboboxex__setextendedstyle)|Sets extended styles within a **ComboBoxEx** control.|  
-|[CComboBoxEx::SetImageList](#ccomboboxex__setimagelist)|Sets an image list for a **ComboBoxEx** control.|  
-|[CComboBoxEx::SetItem](#ccomboboxex__setitem)|Sets the attributes for an item in a **ComboBoxEx** control.|  
-|[CComboBoxEx::SetWindowTheme](#ccomboboxex__setwindowtheme)|Sets the visual style of the extended combo box control.|  
+|[CComboBoxEx::Create](#create)|Creates the combo box and attaches it to the `CComboBoxEx` object.|  
+|[CComboBoxEx::CreateEx](#createex)|Creates a combo box with the specified Windows extended styles and attaches it to a **ComboBoxEx** object.|  
+|[CComboBoxEx::DeleteItem](#deleteitem)|Removes an item from a **ComboBoxEx** control.|  
+|[CComboBoxEx::GetComboBoxCtrl](#getcomboboxctrl)|Retrieves a pointer to the child combo box control.|  
+|[CComboBoxEx::GetEditCtrl](#geteditctrl)|Retrieves the handle to the edit control portion of a **ComboBoxEx** control.|  
+|[CComboBoxEx::GetExtendedStyle](#getextendedstyle)|Retrieves the extended styles that are in use for a **ComboBoxEx** control.|  
+|[CComboBoxEx::GetImageList](#getimagelist)|Retrieves a pointer to the image list assigned to a **ComboBoxEx** control.|  
+|[CComboBoxEx::GetItem](#getitem)|Retrieves item information for a given **ComboBoxEx** item.|  
+|[CComboBoxEx::HasEditChanged](#haseditchanged)|Determines if the user has changed the contents of the **ComboBoxEx** edit control by typing.|  
+|[CComboBoxEx::InsertItem](#insertitem)|Inserts a new item in a **ComboBoxEx** control.|  
+|[CComboBoxEx::SetExtendedStyle](#setextendedstyle)|Sets extended styles within a **ComboBoxEx** control.|  
+|[CComboBoxEx::SetImageList](#setimagelist)|Sets an image list for a **ComboBoxEx** control.|  
+|[CComboBoxEx::SetItem](#setitem)|Sets the attributes for an item in a **ComboBoxEx** control.|  
+|[CComboBoxEx::SetWindowTheme](#setwindowtheme)|Sets the visual style of the extended combo box control.|  
   
 ## Remarks  
  By using `CComboBoxEx` to create combo box controls, you no longer need to implement your own image drawing code. Instead, use `CComboBoxEx` to access images from an image list.  
@@ -82,7 +82,7 @@ class CComboBoxEx : public CComboBox
  In a standard combo box, the owner of the combo box is responsible for drawing an image by creating the combo box as an owner-draw control. When you use `CComboBoxEx`, you do not need to set the drawing styles **CBS_OWNERDRAWFIXED** and **CBS_HASSTRINGS** because they are implied. Otherwise, you must write code to perform drawing operations. A `CComboBoxEx` control supports up to three images per item: one for a selected state, one for an unselected state, and one for an overlay image.  
   
 ## Styles  
- `CComboBoxEx` supports the styles **CBS_SIMPLE**, **CBS_DROPDOWN**, **CBS_DROPDOWNLIST**, and **WS_CHILD**. All other styles passed when you create the window are ignored by the control. After the window is created, you can provide other combo box styles by calling the `CComboBoxEx` member function [SetExtendedStyle](#ccomboboxex__setextendedstyle). With these styles, you can:  
+ `CComboBoxEx` supports the styles **CBS_SIMPLE**, **CBS_DROPDOWN**, **CBS_DROPDOWNLIST**, and **WS_CHILD**. All other styles passed when you create the window are ignored by the control. After the window is created, you can provide other combo box styles by calling the `CComboBoxEx` member function [SetExtendedStyle](#setextendedstyle). With these styles, you can:  
   
 -   Set string searches in the list to be case-sensitive.  
   
@@ -113,14 +113,14 @@ class CComboBoxEx : public CComboBox
 ## Requirements  
  **Header:** afxcmn.h  
   
-##  <a name="ccomboboxex__ccomboboxex"></a>  CComboBoxEx::CComboBoxEx  
+##  <a name="ccomboboxex"></a>  CComboBoxEx::CComboBoxEx  
  Call this member function to create a `CComboBoxEx` object.  
   
 ```  
 CComboBoxEx();
 ```  
   
-##  <a name="ccomboboxex__create"></a>  CComboBoxEx::Create  
+##  <a name="create"></a>  CComboBoxEx::Create  
  Creates the combo box and attaches it to the `CComboBoxEx` object.  
   
 ```  
@@ -150,7 +150,7 @@ virtual BOOL Create(
 ### Remarks  
  Create a `CComboBoxEx` object in two steps:  
   
-1.  Call [CComboBoxEx](#ccomboboxex__ccomboboxex) to construct a `CComboBoxEx` object.  
+1.  Call [CComboBoxEx](#ccomboboxex) to construct a `CComboBoxEx` object.  
   
 2.  Call this member function, which creates the extended Windows combo box and attaches it to the `CComboBoxEx` object.  
   
@@ -168,11 +168,11 @@ virtual BOOL Create(
   
 - **WS_CHILD**  
   
- All other styles passed when you create the window are ignored. The **ComboBoxEx** control also supports extended styles that provide additional features. These styles are described in [ComboBoxEx control extended styles](http://msdn.microsoft.com/library/windows/desktop/bb775742), in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. Set these styles by calling [SetExtendedStyle](#ccomboboxex__setextendedstyle).  
+ All other styles passed when you create the window are ignored. The **ComboBoxEx** control also supports extended styles that provide additional features. These styles are described in [ComboBoxEx control extended styles](http://msdn.microsoft.com/library/windows/desktop/bb775742), in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. Set these styles by calling [SetExtendedStyle](#setextendedstyle).  
   
- If you want to use extended windows styles with your control, call [CreateEx](#ccomboboxex__createex) instead of **Create**.  
+ If you want to use extended windows styles with your control, call [CreateEx](#createex) instead of **Create**.  
   
-##  <a name="ccomboboxex__createex"></a>  CComboBoxEx::CreateEx  
+##  <a name="createex"></a>  CComboBoxEx::CreateEx  
  Call this function to create an extended combo box control (a child window) and associate it with the `CComboBoxEx` object.  
   
 ```  
@@ -189,7 +189,7 @@ virtual BOOL CreateEx(
  Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
  `dwStyle`  
- The combo box control's style. See [Create](#ccomboboxex__create) for a list of styles.  
+ The combo box control's style. See [Create](#create) for a list of styles.  
   
  `rect`  
  A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of `pParentWnd`.  
@@ -206,9 +206,9 @@ virtual BOOL CreateEx(
 ### Remarks  
  Use `CreateEx` instead of **Create** to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
   
- `CreateEx` creates the control with the extended Windows styles specified by `dwExStyle`. You must set extended styles specific to an extended combo box control using [SetExtendedStyle](#ccomboboxex__setextendedstyle). For example, use `CreateEx` to set such styles as **WS_EX_CONTEXTHELP**, but use `SetExtendedStyle` to set such styles as **CBES_EX_CASESENSITIVE**. For more information, see the styles described in the topic [ComboBoxEx Control Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb775742) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ `CreateEx` creates the control with the extended Windows styles specified by `dwExStyle`. You must set extended styles specific to an extended combo box control using [SetExtendedStyle](#setextendedstyle). For example, use `CreateEx` to set such styles as **WS_EX_CONTEXTHELP**, but use `SetExtendedStyle` to set such styles as **CBES_EX_CASESENSITIVE**. For more information, see the styles described in the topic [ComboBoxEx Control Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb775742) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ccomboboxex__deleteitem"></a>  CComboBoxEx::DeleteItem  
+##  <a name="deleteitem"></a>  CComboBoxEx::DeleteItem  
  Removes an item from a **ComboBoxEx** control.  
   
 ```  
@@ -225,7 +225,7 @@ int DeleteItem(int iIndex);
 ### Remarks  
  This member function implements the functionality of the message [CBEM_DELETEITEM](http://msdn.microsoft.com/library/windows/desktop/bb775768), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. When you call DeleteItem, a [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583) message with **CBEN_DELETEITEM** notification will be sent to the parent window.  
   
-##  <a name="ccomboboxex__getcomboboxctrl"></a>  CComboBoxEx::GetComboBoxCtrl  
+##  <a name="getcomboboxctrl"></a>  CComboBoxEx::GetComboBoxCtrl  
  Call this member function to get a pointer to a combo box control within a `CComboBoxEx` object.  
   
 ```  
@@ -240,7 +240,7 @@ CComboBox* GetComboBoxCtrl();
   
  The `CComboBox` object pointed to by the return value is a temporary object and is destroyed during the next idle processing time.  
   
-##  <a name="ccomboboxex__geteditctrl"></a>  CComboBoxEx::GetEditCtrl  
+##  <a name="geteditctrl"></a>  CComboBoxEx::GetEditCtrl  
  Call this member function to get a pointer to the edit control for a combo box.  
   
 ```  
@@ -255,7 +255,7 @@ CEdit* GetEditCtrl();
   
  The `CEdit` object pointed to by the return value is a temporary object and is destroyed during the next idle processing time.  
   
-##  <a name="ccomboboxex__getextendedstyle"></a>  CComboBoxEx::GetExtendedStyle  
+##  <a name="getextendedstyle"></a>  CComboBoxEx::GetExtendedStyle  
  Call this member function to get the extended styles used for a `CComboBoxEx` control.  
   
 ```  
@@ -270,7 +270,7 @@ DWORD GetExtendedStyle() const;
 ### Remarks  
  See [ComboBoxEx Control Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb775742) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information about these styles.  
   
-##  <a name="ccomboboxex__getimagelist"></a>  CComboBoxEx::GetImageList  
+##  <a name="getimagelist"></a>  CComboBoxEx::GetImageList  
  Call this member function to get a pointer to the image list used by a `CComboBoxEx` control.  
   
 ```  
@@ -285,7 +285,7 @@ CImageList* GetImageList() const;
 ### Remarks  
  The `CImageList` object pointed to by the return value is a temporary object and is destroyed during the next idle processing time.  
   
-##  <a name="ccomboboxex__getitem"></a>  CComboBoxEx::GetItem  
+##  <a name="getitem"></a>  CComboBoxEx::GetItem  
  Retrieves item information for a given **ComboBoxEx** item.  
   
 ```  
@@ -302,7 +302,7 @@ BOOL GetItem(COMBOBOXEXITEM* pCBItem);
 ### Remarks  
  This member function implements the functionality of the message [CBEM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb775779), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ccomboboxex__haseditchanged"></a>  CComboBoxEx::HasEditChanged  
+##  <a name="haseditchanged"></a>  CComboBoxEx::HasEditChanged  
  Determines if the user has changed the contents of the **ComboBoxEx** edit control by typing.  
   
 ```  
@@ -315,7 +315,7 @@ BOOL HasEditChanged();
 ### Remarks  
  This member function implements the functionality of the message [CBEM_HASEDITCHANGED](http://msdn.microsoft.com/library/windows/desktop/bb775782), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ccomboboxex__insertitem"></a>  CComboBoxEx::InsertItem  
+##  <a name="insertitem"></a>  CComboBoxEx::InsertItem  
  Inserts a new item in a **ComboBoxEx** control.  
   
 ```  
@@ -332,7 +332,7 @@ int InsertItem(const COMBOBOXEXITEM* pCBItem);
 ### Remarks  
  When you call `InsertItem`, a [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583) message with [CBEN_INSERTITEM](http://msdn.microsoft.com/library/windows/desktop/bb775764) notification will be sent to the parent window.  
   
-##  <a name="ccomboboxex__setextendedstyle"></a>  CComboBoxEx::SetExtendedStyle  
+##  <a name="setextendedstyle"></a>  CComboBoxEx::SetExtendedStyle  
  Call this member function to set the extended styles used for a combo box extended control.  
   
 ```  
@@ -354,9 +354,9 @@ DWORD SetExtendedStyle(
 ### Remarks  
  See [ComboBoxEx Control Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb775742) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information about these styles.  
   
- To create a combo box extended control with extended windows styles, use [CreateEx](#ccomboboxex__createex).  
+ To create a combo box extended control with extended windows styles, use [CreateEx](#createex).  
   
-##  <a name="ccomboboxex__setimagelist"></a>  CComboBoxEx::SetImageList  
+##  <a name="setimagelist"></a>  CComboBoxEx::SetImageList  
  Sets an image list for a **ComboBoxEx** control.  
   
 ```  
@@ -375,7 +375,7 @@ CImageList* SetImageList(CImageList* pImageList);
   
  The `CImageList` object pointed to by the return value is a temporary object and is destroyed during the next idle processing time.  
   
-##  <a name="ccomboboxex__setitem"></a>  CComboBoxEx::SetItem  
+##  <a name="setitem"></a>  CComboBoxEx::SetItem  
  Sets the attributes for an item in a **ComboBoxEx** control.  
   
 ```  
@@ -392,7 +392,7 @@ BOOL SetItem(const COMBOBOXEXITEM* pCBItem);
 ### Remarks  
  This member function implements the functionality of the message [CBEM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb775788), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ccomboboxex__setwindowtheme"></a>  CComboBoxEx::SetWindowTheme  
+##  <a name="setwindowtheme"></a>  CComboBoxEx::SetWindowTheme  
  Sets the visual style of the extended combo box control.  
   
 ```  

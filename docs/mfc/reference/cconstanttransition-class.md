@@ -50,19 +50,19 @@ class CConstantTransition : public CBaseTransition;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CConstantTransition::CConstantTransition](#cconstanttransition__cconstanttransition)|Constructs a transition object and initializes its duration.|  
+|[CConstantTransition::CConstantTransition](#cconstanttransition)|Constructs a transition object and initializes its duration.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CConstantTransition::Create](#cconstanttransition__create)|Calls the transition library to create encapsulated transition COM object. (Overrides [CBaseTransition::Create](../../mfc/reference/cbasetransition-class.md#cbasetransition__create).)|  
+|[CConstantTransition::Create](#create)|Calls the transition library to create encapsulated transition COM object. (Overrides [CBaseTransition::Create](../../mfc/reference/cbasetransition-class.md#create).)|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CConstantTransition::m_duration](#cconstanttransition__m_duration)|The duration of the transition.|  
+|[CConstantTransition::m_duration](#m_duration)|The duration of the transition.|  
   
 ## Remarks  
  During a constant transition, the value of an animation variable remains at the initial value over the duration of the transition. Because all transitions are cleared automatically, it's recommended to allocated them using operator new. The encapsulated IUIAnimationTransition COM object is created by CAnimationController::AnimateGroup, until then it's NULL. Changing member variables after creation of this COM object has no effect.  
@@ -77,7 +77,7 @@ class CConstantTransition : public CBaseTransition;
 ## Requirements  
  **Header:** afxanimationcontroller.h  
   
-##  <a name="cconstanttransition__cconstanttransition"></a>  CConstantTransition::CConstantTransition  
+##  <a name="cconstanttransition"></a>  CConstantTransition::CConstantTransition  
  Constructs a transition object and initializes its duration.  
   
 ```  
@@ -88,7 +88,7 @@ CConstantTransition (UI_ANIMATION_SECONDS duration);
  `duration`  
  The duration of the transition.  
   
-##  <a name="cconstanttransition__create"></a>  CConstantTransition::Create  
+##  <a name="create"></a>  CConstantTransition::Create  
  Calls the transition library to create encapsulated transition COM object.  
   
 ```  
@@ -104,7 +104,7 @@ virtual BOOL Create(
 ### Return Value  
  TRUE if transition is created successfully; otherwise FALSE.  
   
-##  <a name="cconstanttransition__m_duration"></a>  CConstantTransition::m_duration  
+##  <a name="m_duration"></a>  CConstantTransition::m_duration  
  The duration of the transition.  
   
 ```  

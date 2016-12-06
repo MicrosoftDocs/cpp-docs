@@ -51,22 +51,22 @@ class CPaintDC : public CDC
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPaintDC::CPaintDC](#cpaintdc__cpaintdc)|Constructs a `CPaintDC` connected to the specified [CWnd](../../mfc/reference/cwnd-class.md).|  
+|[CPaintDC::CPaintDC](#cpaintdc)|Constructs a `CPaintDC` connected to the specified [CWnd](../../mfc/reference/cwnd-class.md).|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPaintDC::m_ps](#cpaintdc__m_ps)|Contains the [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) used to paint the client area.|  
+|[CPaintDC::m_ps](#m_ps)|Contains the [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) used to paint the client area.|  
   
 ### Protected Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPaintDC::m_hWnd](#cpaintdc__m_hwnd)|The `HWND` to which this `CPaintDC` object is attached.|  
+|[CPaintDC::m_hWnd](#m_hwnd)|The `HWND` to which this `CPaintDC` object is attached.|  
   
 ## Remarks  
- It performs a [CWnd::BeginPaint](../../mfc/reference/cwnd-class.md#cwnd__beginpaint) at construction time and [CWnd::EndPaint](../../mfc/reference/cwnd-class.md#cwnd__endpaint) at destruction time.  
+ It performs a [CWnd::BeginPaint](../../mfc/reference/cwnd-class.md#beginpaint) at construction time and [CWnd::EndPaint](../../mfc/reference/cwnd-class.md#endpaint) at destruction time.  
   
  A `CPaintDC` object can only be used when responding to a [WM_PAINT](http://msdn.microsoft.com/library/windows/desktop/dd145213) message, usually in your `OnPaint` message-handler member function.  
   
@@ -82,8 +82,8 @@ class CPaintDC : public CDC
 ## Requirements  
  **Header:** afxwin.h  
   
-##  <a name="cpaintdc__cpaintdc"></a>  CPaintDC::CPaintDC  
- Constructs a `CPaintDC` object, prepares the application window for painting, and stores the [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) structure in the [m_ps](#cpaintdc__m_ps) member variable.  
+##  <a name="cpaintdc"></a>  CPaintDC::CPaintDC  
+ Constructs a `CPaintDC` object, prepares the application window for painting, and stores the [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) structure in the [m_ps](#m_ps) member variable.  
   
 ```  
 explicit CPaintDC(CWnd* pWnd);
@@ -99,7 +99,7 @@ explicit CPaintDC(CWnd* pWnd);
 ### Example  
  [!code-cpp[NVC_MFCDocView#97](../../mfc/codesnippet/cpp/cpaintdc-class_1.cpp)]  
   
-##  <a name="cpaintdc__m_hwnd"></a>  CPaintDC::m_hWnd  
+##  <a name="m_hwnd"></a>  CPaintDC::m_hWnd  
  The `HWND` to which this `CPaintDC` object is attached.  
   
 ```  
@@ -112,7 +112,7 @@ HWND m_hWnd;
 ### Example  
  [!code-cpp[NVC_MFCDocView#98](../../mfc/codesnippet/cpp/cpaintdc-class_2.cpp)]  
   
-##  <a name="cpaintdc__m_ps"></a>  CPaintDC::m_ps  
+##  <a name="m_ps"></a>  CPaintDC::m_ps  
  `m_ps` is a public member variable of type [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md).  
   
 ```  
@@ -120,14 +120,14 @@ PAINTSTRUCT m_ps;
 ```  
   
 ### Remarks  
- It is the `PAINTSTRUCT` that is passed to and filled out by [CWnd::BeginPaint](../../mfc/reference/cwnd-class.md#cwnd__beginpaint).  
+ It is the `PAINTSTRUCT` that is passed to and filled out by [CWnd::BeginPaint](../../mfc/reference/cwnd-class.md#beginpaint).  
   
  The `PAINTSTRUCT` contains information that the application uses to paint the client area of the window associated with a `CPaintDC` object.  
   
  Note that you can access the device-context handle through the `PAINTSTRUCT`. However, you can access the handle more directly through the `m_hDC` member variable that `CPaintDC` inherits from `CDC`.  
   
 ### Example  
-  See the example for [CPaintDC::m_hWnd](#cpaintdc__m_hwnd).  
+  See the example for [CPaintDC::m_hWnd](#m_hwnd).  
   
 ## See Also  
  [MFC Sample MDI](../../visual-cpp-samples.md)   

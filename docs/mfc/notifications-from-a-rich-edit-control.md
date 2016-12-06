@@ -38,7 +38,7 @@ translation.priority.ht:
 # Notifications from a Rich Edit Control
 Notification messages report events affecting a rich edit control ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)). They can be processed by the parent window or, using message reflection, by the rich edit control itself. Rich edit controls support all of the notification messages used with edit controls as well as several additional ones. You can determine which notification messages a rich edit control sends its parent window by setting its "event mask."  
   
- To set the event mask for a rich edit control, use the [SetEventMask](../mfc/reference/cricheditctrl-class.md#cricheditctrl__seteventmask) member function. You can retrieve the current event mask for a rich edit control by using the [GetEventMask](../mfc/reference/cricheditctrl-class.md#cricheditctrl__geteventmask) member function.  
+ To set the event mask for a rich edit control, use the [SetEventMask](../mfc/reference/cricheditctrl-class.md#seteventmask) member function. You can retrieve the current event mask for a rich edit control by using the [GetEventMask](../mfc/reference/cricheditctrl-class.md#geteventmask) member function.  
   
  The following paragraphs list several specific notifications and their uses:  
   

@@ -49,55 +49,55 @@ class CMFCRibbonGallery : public CMFCRibbonButton
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonGallery::CMFCRibbonGallery](#cmfcribbongallery__cmfcribbongallery)|Constructs and initializes a `CMFCRibbonGallery` object.|  
+|[CMFCRibbonGallery::CMFCRibbonGallery](#cmfcribbongallery)|Constructs and initializes a `CMFCRibbonGallery` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonGallery::AddGroup](#cmfcribbongallery__addgroup)|Adds a new group to the gallery.|  
-|[CMFCRibbonGallery::AddSubItem](#cmfcribbongallery__addsubitem)|Adds a new menu item to the drop-down menu.|  
-|[CMFCRibbonGallery::Clear](#cmfcribbongallery__clear)|Clears the content of the gallery.|  
-|[CMFCRibbonGallery::EnableMenuResize](#cmfcribbongallery__enablemenuresize)|Enables or disables resizing of the menu panel.|  
-|[CMFCRibbonGallery::EnableMenuSideBar](#cmfcribbongallery__enablemenusidebar)|Enables or disables the side bar to the left of the popup menu.|  
-|[CMFCRibbonGallery::GetCompactSize](#cmfcribbongallery__getcompactsize)|(Overrides [CMFCRibbonButton::GetCompactSize](../../mfc/reference/cmfcribbonbutton-class.md#cmfcribbonbutton__getcompactsize).)|  
-|[CMFCRibbonGallery::GetDroppedDown](#cmfcribbongallery__getdroppeddown)|(Overrides [CMFCRibbonBaseElement::GetDroppedDown](../../mfc/reference/cmfcribbonbaseelement-class.md#cmfcribbonbaseelement__getdroppeddown).)|  
-|[CMFCRibbonGallery::GetGroupName](#cmfcribbongallery__getgroupname)|Returns the name of the group that is located at the specified index.|  
-|[CMFCRibbonGallery::GetGroupOffset](#cmfcribbongallery__getgroupoffset)||  
-|[CMFCRibbonGallery::GetIconsInRow](#cmfcribbongallery__geticonsinrow)|Returns the number of items in a row of the ribbon gallery.|  
-|[CMFCRibbonGallery::GetItemToolTip](#cmfcribbongallery__getitemtooltip)|Returns the tooltip text that is associated with an item in the gallery.|  
-|[CMFCRibbonGallery::GetLastSelectedItem](#cmfcribbongallery__getlastselecteditem)|Returns the index of the last item in the gallery that the user selected.|  
-|[CMFCRibbonGallery::GetPaletteID](#cmfcribbongallery__getpaletteid)|Returns the command ID of the current gallery.|  
-|[CMFCRibbonGallery::GetRegularSize](#cmfcribbongallery__getregularsize)|(Overrides [CMFCRibbonButton::GetRegularSize](../../mfc/reference/cmfcribbonbutton-class.md#cmfcribbonbutton__getregularsize).)|  
-|[CMFCRibbonGallery::GetSelectedItem](#cmfcribbongallery__getselecteditem)||  
-|[CMFCRibbonGallery::HasMenu](#cmfcribbongallery__hasmenu)|(Overrides [CMFCRibbonButton::HasMenu](../../mfc/reference/cmfcribbonbutton-class.md#cmfcribbonbutton__hasmenu).)|  
-|[CMFCRibbonGallery::IsButtonMode](#cmfcribbongallery__isbuttonmode)|Specifies whether the gallery is contained in a gallery button.|  
-|[CMFCRibbonGallery::IsMenuResizeEnabled](#cmfcribbongallery__ismenuresizeenabled)|Specifies whether menu resizing is enabled or disabled.|  
-|[CMFCRibbonGallery::IsMenuResizeVertical](#cmfcribbongallery__ismenuresizevertical)||  
-|[CMFCRibbonGallery::IsMenuSideBar](#cmfcribbongallery__ismenusidebar)|Specifies whether the side bar is enabled or disabled.|  
-|[CMFCRibbonGallery::OnAfterChangeRect](#cmfcribbongallery__onafterchangerect)|(Overrides `CMFCRibbonButton::OnAfterChangeRect`.)|  
-|[CMFCRibbonGallery::OnDraw](#cmfcribbongallery__ondraw)|(Overrides [CMFCRibbonButton::OnDraw](../../mfc/reference/cmfcribbonbutton-class.md#cmfcribbonbutton__ondraw).)|  
-|[CMFCRibbonGallery::OnEnable](#cmfcribbongallery__onenable)|(Overrides `CMFCRibbonBaseElement::OnEnable`.)|  
-|[CMFCRibbonGallery::OnRTLChanged](#cmfcribbongallery__onrtlchanged)|(Overrides [CMFCRibbonBaseElement::OnRTLChanged](../../mfc/reference/cmfcribbonbaseelement-class.md#cmfcribbonbaseelement__onrtlchanged).)|  
-|[CMFCRibbonGallery::RedrawIcons](#cmfcribbongallery__redrawicons)|Redraws the gallery.|  
-|[CMFCRibbonGallery::RemoveItemToolTips](#cmfcribbongallery__removeitemtooltips)|Removes the tooltips from all items in the gallery.|  
-|[CMFCRibbonGallery::SelectItem](#cmfcribbongallery__selectitem)||  
-|[CMFCRibbonGallery::SetACCData](#cmfcribbongallery__setaccdata)|(Overrides [CMFCRibbonButton::SetACCData](../../mfc/reference/cmfcribbonbutton-class.md#cmfcribbonbutton__setaccdata).)|  
-|[CMFCRibbonGallery::SetButtonMode](#cmfcribbongallery__setbuttonmode)|Specifies whether to display the ribbon gallery as a drop-down button or as a palette directly on the ribbon.|  
-|[CMFCRibbonGallery::SetGroupName](#cmfcribbongallery__setgroupname)|Sets the name of a group.|  
-|[CMFCRibbonGallery::SetIconsInRow](#cmfcribbongallery__seticonsinrow)|Defines the number of items per row in the gallery.|  
-|[CMFCRibbonGallery::SetItemToolTip](#cmfcribbongallery__setitemtooltip)|Sets the tooltip text for an item in the gallery.|  
-|[CMFCRibbonGallery::SetPalette](#cmfcribbongallery__setpalette)|Attaches a palette to a ribbon gallery.|  
-|[CMFCRibbonGallery::SetPaletteID](#cmfcribbongallery__setpaletteid)|Defines the command ID that is sent in the `WM_COMMAND` message when a gallery item has been selected.|  
+|[CMFCRibbonGallery::AddGroup](#addgroup)|Adds a new group to the gallery.|  
+|[CMFCRibbonGallery::AddSubItem](#addsubitem)|Adds a new menu item to the drop-down menu.|  
+|[CMFCRibbonGallery::Clear](#clear)|Clears the content of the gallery.|  
+|[CMFCRibbonGallery::EnableMenuResize](#enablemenuresize)|Enables or disables resizing of the menu panel.|  
+|[CMFCRibbonGallery::EnableMenuSideBar](#enablemenusidebar)|Enables or disables the side bar to the left of the popup menu.|  
+|[CMFCRibbonGallery::GetCompactSize](#getcompactsize)|(Overrides [CMFCRibbonButton::GetCompactSize](../../mfc/reference/cmfcribbonbutton-class.md#getcompactsize).)|  
+|[CMFCRibbonGallery::GetDroppedDown](#getdroppeddown)|(Overrides [CMFCRibbonBaseElement::GetDroppedDown](../../mfc/reference/cmfcribbonbaseelement-class.md#getdroppeddown).)|  
+|[CMFCRibbonGallery::GetGroupName](#getgroupname)|Returns the name of the group that is located at the specified index.|  
+|[CMFCRibbonGallery::GetGroupOffset](#getgroupoffset)||  
+|[CMFCRibbonGallery::GetIconsInRow](#geticonsinrow)|Returns the number of items in a row of the ribbon gallery.|  
+|[CMFCRibbonGallery::GetItemToolTip](#getitemtooltip)|Returns the tooltip text that is associated with an item in the gallery.|  
+|[CMFCRibbonGallery::GetLastSelectedItem](#getlastselecteditem)|Returns the index of the last item in the gallery that the user selected.|  
+|[CMFCRibbonGallery::GetPaletteID](#getpaletteid)|Returns the command ID of the current gallery.|  
+|[CMFCRibbonGallery::GetRegularSize](#getregularsize)|(Overrides [CMFCRibbonButton::GetRegularSize](../../mfc/reference/cmfcribbonbutton-class.md#getregularsize).)|  
+|[CMFCRibbonGallery::GetSelectedItem](#getselecteditem)||  
+|[CMFCRibbonGallery::HasMenu](#hasmenu)|(Overrides [CMFCRibbonButton::HasMenu](../../mfc/reference/cmfcribbonbutton-class.md#hasmenu).)|  
+|[CMFCRibbonGallery::IsButtonMode](#isbuttonmode)|Specifies whether the gallery is contained in a gallery button.|  
+|[CMFCRibbonGallery::IsMenuResizeEnabled](#ismenuresizeenabled)|Specifies whether menu resizing is enabled or disabled.|  
+|[CMFCRibbonGallery::IsMenuResizeVertical](#ismenuresizevertical)||  
+|[CMFCRibbonGallery::IsMenuSideBar](#ismenusidebar)|Specifies whether the side bar is enabled or disabled.|  
+|[CMFCRibbonGallery::OnAfterChangeRect](#onafterchangerect)|(Overrides `CMFCRibbonButton::OnAfterChangeRect`.)|  
+|[CMFCRibbonGallery::OnDraw](#ondraw)|(Overrides [CMFCRibbonButton::OnDraw](../../mfc/reference/cmfcribbonbutton-class.md#ondraw).)|  
+|[CMFCRibbonGallery::OnEnable](#onenable)|(Overrides `CMFCRibbonBaseElement::OnEnable`.)|  
+|[CMFCRibbonGallery::OnRTLChanged](#onrtlchanged)|(Overrides [CMFCRibbonBaseElement::OnRTLChanged](../../mfc/reference/cmfcribbonbaseelement-class.md#onrtlchanged).)|  
+|[CMFCRibbonGallery::RedrawIcons](#redrawicons)|Redraws the gallery.|  
+|[CMFCRibbonGallery::RemoveItemToolTips](#removeitemtooltips)|Removes the tooltips from all items in the gallery.|  
+|[CMFCRibbonGallery::SelectItem](#selectitem)||  
+|[CMFCRibbonGallery::SetACCData](#setaccdata)|(Overrides [CMFCRibbonButton::SetACCData](../../mfc/reference/cmfcribbonbutton-class.md#setaccdata).)|  
+|[CMFCRibbonGallery::SetButtonMode](#setbuttonmode)|Specifies whether to display the ribbon gallery as a drop-down button or as a palette directly on the ribbon.|  
+|[CMFCRibbonGallery::SetGroupName](#setgroupname)|Sets the name of a group.|  
+|[CMFCRibbonGallery::SetIconsInRow](#seticonsinrow)|Defines the number of items per row in the gallery.|  
+|[CMFCRibbonGallery::SetItemToolTip](#setitemtooltip)|Sets the tooltip text for an item in the gallery.|  
+|[CMFCRibbonGallery::SetPalette](#setpalette)|Attaches a palette to a ribbon gallery.|  
+|[CMFCRibbonGallery::SetPaletteID](#setpaletteid)|Defines the command ID that is sent in the `WM_COMMAND` message when a gallery item has been selected.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonGallery::OnDrawPaletteIcon](#cmfcribbongallery__ondrawpaletteicon)|Called by the framework when a gallery icon is drawn.|  
+|[CMFCRibbonGallery::OnDrawPaletteIcon](#ondrawpaletteicon)|Called by the framework when a gallery icon is drawn.|  
   
 ## Remarks  
- A gallery button behaves just like a regular menu button except that it displays a gallery when a user opens it. When you select an item in a gallery, the framework sends the `WM_COMMAND` message together with command ID of the button. When you handle the message, you should call [CMFCRibbonGallery::GetLastSelectedItem](#cmfcribbongallery__getlastselecteditem) to determine which item was selected from the gallery.  
+ A gallery button behaves just like a regular menu button except that it displays a gallery when a user opens it. When you select an item in a gallery, the framework sends the `WM_COMMAND` message together with command ID of the button. When you handle the message, you should call [CMFCRibbonGallery::GetLastSelectedItem](#getlastselecteditem) to determine which item was selected from the gallery.  
   
 ## Example  
  The following example demonstrates how to use various methods in the `CMFCRibbonGallery` class to configure a `CMFCRibbonGallery` object. The example illustrates how to specify the number of items per row in the gallery, enable resizing of the menu panel, enable the side bar to the left of the pop-up menu, and display the ribbon gallery as a palette directly on the ribbon bar. This code snippet is part of the [Draw Client sample](../../visual-cpp-samples.md).  
@@ -112,7 +112,7 @@ class CMFCRibbonGallery : public CMFCRibbonButton
 ## Requirements  
  **Header:** afxRibbonPaletteGallery.h  
   
-##  <a name="cmfcribbongallery__addgroup"></a>  CMFCRibbonGallery::AddGroup  
+##  <a name="addgroup"></a>  CMFCRibbonGallery::AddGroup  
  Adds a new group to the gallery.  
   
 ```  
@@ -151,7 +151,7 @@ void AddGroup(
 ### Remarks  
  You can divide the items on a ribbon gallery into multiple groups by calling this method. Each group can have a caption.  
   
-##  <a name="cmfcribbongallery__addsubitem"></a>  CMFCRibbonGallery::AddSubItem  
+##  <a name="addsubitem"></a>  CMFCRibbonGallery::AddSubItem  
  Adds a new menu item to the drop-down menu.  
   
 ```  
@@ -179,7 +179,7 @@ void AddSubItem(
 > [!NOTE]
 >  The parameter `nIndex` specifies the insertion index both at the top of the gallery and at the bottom of the gallery. For example, if you need to insert an item one position before the gallery, set `nIndex` to 1 and `bOnTop` to `TRUE`. Similarly, if you need to insert an item one position below the gallery, set `nIndex` to 1 and `bOnTop` to `FALSE`.  
   
-##  <a name="cmfcribbongallery__clear"></a>  CMFCRibbonGallery::Clear  
+##  <a name="clear"></a>  CMFCRibbonGallery::Clear  
  Clears the content of the gallery.  
   
 ```  
@@ -189,7 +189,7 @@ virtual void Clear();
 ### Remarks  
  Call this method to remove all content from the ribbon gallery. This must be done before you attach a new ribbon gallery or set of groups to the ribbon gallery.  
   
-##  <a name="cmfcribbongallery__cmfcribbongallery"></a>  CMFCRibbonGallery::CMFCRibbonGallery  
+##  <a name="cmfcribbongallery"></a>  CMFCRibbonGallery::CMFCRibbonGallery  
  Constructs and initializes a [CMFCRibbonGallery](../../mfc/reference/cmfcribbongallery-class.md) object.  
   
 ```  
@@ -253,7 +253,7 @@ CMFCRibbonGallery (
   
 ### Remarks  
   
-##  <a name="cmfcribbongallery__enablemenuresize"></a>  CMFCRibbonGallery::EnableMenuResize  
+##  <a name="enablemenuresize"></a>  CMFCRibbonGallery::EnableMenuResize  
  Enables or disables resizing of the menu panel.  
   
 ```  
@@ -272,7 +272,7 @@ void EnableMenuResize(
 ### Remarks  
  Use this method to enable or disable resizing the ribbon gallery. When resizing is enabled, the ribbon gallery displays a gripper that a user can use to resize it.  
   
-##  <a name="cmfcribbongallery__enablemenusidebar"></a>  CMFCRibbonGallery::EnableMenuSideBar  
+##  <a name="enablemenusidebar"></a>  CMFCRibbonGallery::EnableMenuSideBar  
  Enables or disables the side bar to the left of the popup menu.  
   
 ```  
@@ -286,7 +286,7 @@ void EnablMenuSideBar(BOOL bEnable=TRUE);
 ### Remarks  
  Call this method to enable or disable the Office XP-style side bar at the left side of the menu.  
   
-##  <a name="cmfcribbongallery__getcompactsize"></a>  CMFCRibbonGallery::GetCompactSize  
+##  <a name="getcompactsize"></a>  CMFCRibbonGallery::GetCompactSize  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -300,7 +300,7 @@ virtual CSize GetCompactSize(CDC* pDC);
   
 ### Remarks  
   
-##  <a name="cmfcribbongallery__getdroppeddown"></a>  CMFCRibbonGallery::GetDroppedDown  
+##  <a name="getdroppeddown"></a>  CMFCRibbonGallery::GetDroppedDown  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -311,7 +311,7 @@ virtual CMFCRibbonBaseElement* GetDroppedDown();
   
 ### Remarks  
   
-##  <a name="cmfcribbongallery__getgroupname"></a>  CMFCRibbonGallery::GetGroupName  
+##  <a name="getgroupname"></a>  CMFCRibbonGallery::GetGroupName  
  Returns the name of the group that is located at the specified index.  
   
 ```  
@@ -329,7 +329,7 @@ LPCTSTR GetGroupName(int nGroupIndex) const;
   
 ### Remarks  
   
-##  <a name="cmfcribbongallery__getgroupoffset"></a>  CMFCRibbonGallery::GetGroupOffset  
+##  <a name="getgroupoffset"></a>  CMFCRibbonGallery::GetGroupOffset  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -342,7 +342,7 @@ virtual int GetGroupOffset() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbongallery__geticonsinrow"></a>  CMFCRibbonGallery::GetIconsInRow  
+##  <a name="geticonsinrow"></a>  CMFCRibbonGallery::GetIconsInRow  
  Returns the number of items in a row of the ribbon gallery.  
   
 ```  
@@ -356,7 +356,7 @@ int GetIconsInRow() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbongallery__getitemtooltip"></a>  CMFCRibbonGallery::GetItemToolTip  
+##  <a name="getitemtooltip"></a>  CMFCRibbonGallery::GetItemToolTip  
  Returns the tooltip text that is associated with an item in the gallery.  
   
 ```  
@@ -374,7 +374,7 @@ LPCTSTR GetItemToolTip(int nItemIndex) const;
   
 ### Remarks  
   
-##  <a name="cmfcribbongallery__getlastselecteditem"></a>  CMFCRibbonGallery::GetLastSelectedItem  
+##  <a name="getlastselecteditem"></a>  CMFCRibbonGallery::GetLastSelectedItem  
  Returns the index of the last item in the ribbon gallery that the user selected.  
   
 ```  
@@ -390,7 +390,7 @@ static int GetLastSelectedItem(UINT uiCmdID);
   
 ### Remarks  
   
-##  <a name="cmfcribbongallery__getpaletteid"></a>  CMFCRibbonGallery::GetPaletteID  
+##  <a name="getpaletteid"></a>  CMFCRibbonGallery::GetPaletteID  
  Returns the command ID of the current palette.  
   
 ```  
@@ -404,7 +404,7 @@ int GetPaletteID() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbongallery__getregularsize"></a>  CMFCRibbonGallery::GetRegularSize  
+##  <a name="getregularsize"></a>  CMFCRibbonGallery::GetRegularSize  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -418,7 +418,7 @@ virtual CSize GetRegularSize(CDC* pDC);
   
 ### Remarks  
   
-##  <a name="cmfcribbongallery__getselecteditem"></a>  CMFCRibbonGallery::GetSelectedItem  
+##  <a name="getselecteditem"></a>  CMFCRibbonGallery::GetSelectedItem  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -431,7 +431,7 @@ int GetSelectedItem() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbongallery__hasmenu"></a>  CMFCRibbonGallery::HasMenu  
+##  <a name="hasmenu"></a>  CMFCRibbonGallery::HasMenu  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -444,7 +444,7 @@ virtual BOOL HasMenu() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbongallery__isbuttonmode"></a>  CMFCRibbonGallery::IsButtonMode  
+##  <a name="isbuttonmode"></a>  CMFCRibbonGallery::IsButtonMode  
  Specifies whether the palette is contained in a gallery button.  
   
 ```  
@@ -458,7 +458,7 @@ BOOL IsButtonMode() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbongallery__ismenuresizeenabled"></a>  CMFCRibbonGallery::IsMenuResizeEnabled  
+##  <a name="ismenuresizeenabled"></a>  CMFCRibbonGallery::IsMenuResizeEnabled  
  Specifies whether menu resizing is enabled.  
   
 ```  
@@ -472,7 +472,7 @@ BOOL IsMenuResizeEnabled() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbongallery__ismenuresizevertical"></a>  CMFCRibbonGallery::IsMenuResizeVertical  
+##  <a name="ismenuresizevertical"></a>  CMFCRibbonGallery::IsMenuResizeVertical  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -485,7 +485,7 @@ BOOL IsMenuResizeVertical() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbongallery__ismenusidebar"></a>  CMFCRibbonGallery::IsMenuSideBar  
+##  <a name="ismenusidebar"></a>  CMFCRibbonGallery::IsMenuSideBar  
  Specifies whether the side bar is enabled or disabled.  
   
 ```  
@@ -499,7 +499,7 @@ BOOL IsMenuSideBar() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbongallery__onafterchangerect"></a>  CMFCRibbonGallery::OnAfterChangeRect  
+##  <a name="onafterchangerect"></a>  CMFCRibbonGallery::OnAfterChangeRect  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -511,7 +511,7 @@ virtual void OnAfterChangeRect(CDC* pDC);
   
 ### Remarks  
   
-##  <a name="cmfcribbongallery__ondraw"></a>  CMFCRibbonGallery::OnDraw  
+##  <a name="ondraw"></a>  CMFCRibbonGallery::OnDraw  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -523,7 +523,7 @@ virtual void OnDraw(CDC* pDC);
   
 ### Remarks  
   
-##  <a name="cmfcribbongallery__ondrawpaletteicon"></a>  CMFCRibbonGallery::OnDrawPaletteIcon  
+##  <a name="ondrawpaletteicon"></a>  CMFCRibbonGallery::OnDrawPaletteIcon  
  Called by the framework when a gallery icon is drawn.  
   
 ```  
@@ -554,7 +554,7 @@ virtual void OnDrawPaletteIcon(
 ### Remarks  
  You can override this method in a derived class to customize the appearance of a ribbon gallery.  
   
-##  <a name="cmfcribbongallery__onenable"></a>  CMFCRibbonGallery::OnEnable  
+##  <a name="onenable"></a>  CMFCRibbonGallery::OnEnable  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -566,7 +566,7 @@ virtual void OnEnable(BOOL bEnable);
   
 ### Remarks  
   
-##  <a name="cmfcribbongallery__onrtlchanged"></a>  CMFCRibbonGallery::OnRTLChanged  
+##  <a name="onrtlchanged"></a>  CMFCRibbonGallery::OnRTLChanged  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -578,7 +578,7 @@ virtual void OnRTLChanged(BOOL bIsRTL);
   
 ### Remarks  
   
-##  <a name="cmfcribbongallery__redrawicons"></a>  CMFCRibbonGallery::RedrawIcons  
+##  <a name="redrawicons"></a>  CMFCRibbonGallery::RedrawIcons  
  Redraws the gallery.  
   
 ```  
@@ -588,7 +588,7 @@ void RedrawIcons();
 ### Remarks  
  Call this function to redraw the gallery. You must call this method if you have changed the contents of the gallery at runtime.  
   
-##  <a name="cmfcribbongallery__removeitemtooltips"></a>  CMFCRibbonGallery::RemoveItemToolTips  
+##  <a name="removeitemtooltips"></a>  CMFCRibbonGallery::RemoveItemToolTips  
  Removes the tooltips from all items in the gallery.  
   
 ```  
@@ -597,7 +597,7 @@ void RemoveItemToolTips();
   
 ### Remarks  
   
-##  <a name="cmfcribbongallery__selectitem"></a>  CMFCRibbonGallery::SelectItem  
+##  <a name="selectitem"></a>  CMFCRibbonGallery::SelectItem  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -609,7 +609,7 @@ void SelectItem(int nItemIndex);
   
 ### Remarks  
   
-##  <a name="cmfcribbongallery__setaccdata"></a>  CMFCRibbonGallery::SetACCData  
+##  <a name="setaccdata"></a>  CMFCRibbonGallery::SetACCData  
  Populates the specified `CAccessibilityData` object by using accessibility data from the ribbon gallery.  
   
 ```  
@@ -630,7 +630,7 @@ virtual BOOL SetACCData(
 ### Remarks  
  `TRUE` if the method is successful; otherwise, `FALSE`.  
   
-##  <a name="cmfcribbongallery__setbuttonmode"></a>  CMFCRibbonGallery::SetButtonMode  
+##  <a name="setbuttonmode"></a>  CMFCRibbonGallery::SetButtonMode  
  Determines whether to display the ribbon gallery as a drop-down button or as a palette directly on the ribbon.  
   
 ```  
@@ -643,7 +643,7 @@ void SetButtonMode(BOOL bSet=TRUE);
   
 ### Remarks  
   
-##  <a name="cmfcribbongallery__setgroupname"></a>  CMFCRibbonGallery::SetGroupName  
+##  <a name="setgroupname"></a>  CMFCRibbonGallery::SetGroupName  
  Sets the name of a group.  
   
 ```  
@@ -660,9 +660,9 @@ void SetGroupName(
  Specifies the new name for the group.  
   
 ### Remarks  
- The group whose name is being changed must have been added using the [CMFCRibbonGallery::AddGroup](#cmfcribbongallery__addgroup) method.  
+ The group whose name is being changed must have been added using the [CMFCRibbonGallery::AddGroup](#addgroup) method.  
   
-##  <a name="cmfcribbongallery__seticonsinrow"></a>  CMFCRibbonGallery::SetIconsInRow  
+##  <a name="seticonsinrow"></a>  CMFCRibbonGallery::SetIconsInRow  
  Specifies the number of items per row in the gallery.  
   
 ```  
@@ -676,7 +676,7 @@ void SetIconsInRow(int nIconsInRow);
 ### Remarks  
  Use this method to specify the width of the ribbon gallery.  
   
-##  <a name="cmfcribbongallery__setitemtooltip"></a>  CMFCRibbonGallery::SetItemToolTip  
+##  <a name="setitemtooltip"></a>  CMFCRibbonGallery::SetItemToolTip  
  Sets the tooltip text for an item in the gallery.  
   
 ```  
@@ -694,7 +694,7 @@ void SetItemToolTip(
   
 ### Remarks  
   
-##  <a name="cmfcribbongallery__setpalette"></a>  CMFCRibbonGallery::SetPalette  
+##  <a name="setpalette"></a>  CMFCRibbonGallery::SetPalette  
  Attaches a palette to a ribbon gallery.  
   
 ```  
@@ -719,7 +719,7 @@ void SetPalette(
   
 ### Remarks  
   
-##  <a name="cmfcribbongallery__setpaletteid"></a>  CMFCRibbonGallery::SetPaletteID  
+##  <a name="setpaletteid"></a>  CMFCRibbonGallery::SetPaletteID  
  Defines the command ID that is sent in the **WM_COMMAND** message when a user selects a gallery item.  
   
 ```  
@@ -731,7 +731,7 @@ void SetPaletteID(UINT nID);
  Specifies the command ID that is sent in the **WM_COMMAND** message when a user selects a gallery item.  
   
 ### Remarks  
- To determine the specific item that a user selected from the gallery, call the [CMFCRibbonGallery::GetLastSelectedItem](#cmfcribbongallery__getlastselecteditem) static method.  
+ To determine the specific item that a user selected from the gallery, call the [CMFCRibbonGallery::GetLastSelectedItem](#getlastselecteditem) static method.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

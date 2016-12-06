@@ -67,5 +67,5 @@ BOOL CALLBACK EXPORT OutputFunc(
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CDC::GrayString](../../mfc/reference/cdc-class.md#cdc__graystring)
+ [CDC::GrayString](../../mfc/reference/cdc-class.md#graystring)
 

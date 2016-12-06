@@ -62,10 +62,10 @@ The standard relationship among a document, its view, and its frame window is de
   
  To create extra document classes, see [Adding a Class](../ide/adding-a-class-visual-cpp.md). Choose [CDocument](../mfc/reference/cdocument-class.md) as the Class Type to derive from and supply the requested document information. Then implement the new class's data.  
   
- To let the framework know about your extra document class, you must add a second call to [AddDocTemplate](../mfc/reference/cwinapp-class.md#cwinapp__adddoctemplate) in your application class's [InitInstance](../mfc/reference/cwinapp-class.md#cwinapp__initinstance) override. For more information, see [Document Templates](../mfc/document-templates-and-the-document-view-creation-process.md).  
+ To let the framework know about your extra document class, you must add a second call to [AddDocTemplate](../mfc/reference/cwinapp-class.md#adddoctemplate) in your application class's [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) override. For more information, see [Document Templates](../mfc/document-templates-and-the-document-view-creation-process.md).  
   
 ##  <a name="_core_multiple_views"></a> Multiple Views  
- Many documents require only a single view, but it is possible to support more than one view of a single document. To help you implement multiple views, a document object keeps a list of its views, provides member functions for adding and removing views, and supplies the [UpdateAllViews](../mfc/reference/cdocument-class.md#cdocument__updateallviews) member function for letting multiple views know when the document's data has changed.  
+ Many documents require only a single view, but it is possible to support more than one view of a single document. To help you implement multiple views, a document object keeps a list of its views, provides member functions for adding and removing views, and supplies the [UpdateAllViews](../mfc/reference/cdocument-class.md#updateallviews) member function for letting multiple views know when the document's data has changed.  
   
  MFC supports three common user interfaces requiring multiple views on the same document. These models are:  
   

@@ -49,32 +49,32 @@ class CMFCAutoHideBar : public CPane
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCAutoHideBar::CMFCAutoHideBar](#cmfcautohidebar__cmfcautohidebar)||  
+|[CMFCAutoHideBar::CMFCAutoHideBar](#cmfcautohidebar)||  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCAutoHideBar::AddAutoHideWindow](#cmfcautohidebar__addautohidewindow)||  
-|[CMFCAutoHideBar::AllowShowOnPaneMenu](#cmfcautohidebar__allowshowonpanemenu)|(Overrides `CPane::AllowShowOnPaneMenu`.)|  
-|[CMFCAutoHideBar::CalcFixedLayout](#cmfcautohidebar__calcfixedlayout)|(Overrides [CBasePane::CalcFixedLayout](../../mfc/reference/cbasepane-class.md#cbasepane__calcfixedlayout).)|  
-|[CMFCAutoHideBar::Create](#cmfcautohidebar__create)|Creates a control bar and attaches it to the [CPane](../../mfc/reference/cpane-class.md) object. (Overrides [CPane::Create](../../mfc/reference/cpane-class.md#cpane__create).)|  
-|[CMFCAutoHideBar::GetFirstAHWindow](#cmfcautohidebar__getfirstahwindow)||  
-|[CMFCAutoHideBar::GetVisibleCount](#cmfcautohidebar__getvisiblecount)||  
-|[CMFCAutoHideBar::OnShowControlBarMenu](#cmfcautohidebar__onshowcontrolbarmenu)|Called by the framework when a special pane menu is about to be displayed. (Overrides [CPane::OnShowControlBarMenu](../../mfc/reference/cpane-class.md#cpane__onshowcontrolbarmenu).)|  
-|[CMFCAutoHideBar::RemoveAutoHideWindow](#cmfcautohidebar__removeautohidewindow)||  
-|[CMFCAutoHideBar::SetActiveInGroup](#cmfcautohidebar__setactiveingroup)|(Overrides [CPane::SetActiveInGroup](../../mfc/reference/cpane-class.md#cpane__setactiveingroup).)|  
-|[CMFCAutoHideBar::SetRecentVisibleState](#cmfcautohidebar__setrecentvisiblestate)||  
-|[CMFCAutoHideBar::ShowAutoHideWindow](#cmfcautohidebar__showautohidewindow)||  
-|[CMFCAutoHideBar::StretchPane](#cmfcautohidebar__stretchpane)|Stretches a pane vertically or horizontally. (Overrides [CBasePane::StretchPane](../../mfc/reference/cbasepane-class.md#cbasepane__stretchpane).)|  
-|[CMFCAutoHideBar::UnSetAutoHideMode](#cmfcautohidebar__unsetautohidemode)||  
-|[CMFCAutoHideBar::UpdateVisibleState](#cmfcautohidebar__updatevisiblestate)||  
+|[CMFCAutoHideBar::AddAutoHideWindow](#addautohidewindow)||  
+|[CMFCAutoHideBar::AllowShowOnPaneMenu](#allowshowonpanemenu)|(Overrides `CPane::AllowShowOnPaneMenu`.)|  
+|[CMFCAutoHideBar::CalcFixedLayout](#calcfixedlayout)|(Overrides [CBasePane::CalcFixedLayout](../../mfc/reference/cbasepane-class.md#calcfixedlayout).)|  
+|[CMFCAutoHideBar::Create](#create)|Creates a control bar and attaches it to the [CPane](../../mfc/reference/cpane-class.md) object. (Overrides [CPane::Create](../../mfc/reference/cpane-class.md#create).)|  
+|[CMFCAutoHideBar::GetFirstAHWindow](#getfirstahwindow)||  
+|[CMFCAutoHideBar::GetVisibleCount](#getvisiblecount)||  
+|[CMFCAutoHideBar::OnShowControlBarMenu](#onshowcontrolbarmenu)|Called by the framework when a special pane menu is about to be displayed. (Overrides [CPane::OnShowControlBarMenu](../../mfc/reference/cpane-class.md#onshowcontrolbarmenu).)|  
+|[CMFCAutoHideBar::RemoveAutoHideWindow](#removeautohidewindow)||  
+|[CMFCAutoHideBar::SetActiveInGroup](#setactiveingroup)|(Overrides [CPane::SetActiveInGroup](../../mfc/reference/cpane-class.md#setactiveingroup).)|  
+|[CMFCAutoHideBar::SetRecentVisibleState](#setrecentvisiblestate)||  
+|[CMFCAutoHideBar::ShowAutoHideWindow](#showautohidewindow)||  
+|[CMFCAutoHideBar::StretchPane](#stretchpane)|Stretches a pane vertically or horizontally. (Overrides [CBasePane::StretchPane](../../mfc/reference/cbasepane-class.md#stretchpane).)|  
+|[CMFCAutoHideBar::UnSetAutoHideMode](#unsetautohidemode)||  
+|[CMFCAutoHideBar::UpdateVisibleState](#updatevisiblestate)||  
   
 ### Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCAutoHideBar::m_nShowAHWndDelay](#cmfcautohidebar__m_nshowahwnddelay)|The time delay between the moment when the user places the mouse cursor over a [CMFCAutoHideButton Class](../../mfc/reference/cmfcautohidebutton-class.md) and the moment when the framework shows the associated window.|  
+|[CMFCAutoHideBar::m_nShowAHWndDelay](#m_nshowahwnddelay)|The time delay between the moment when the user places the mouse cursor over a [CMFCAutoHideButton Class](../../mfc/reference/cmfcautohidebutton-class.md) and the moment when the framework shows the associated window.|  
   
 ## Remarks  
  When the user switches a dock pane to auto-hide mode, the framework automatically creates a `CMFCAutoHideBar` object. It also creates the necessary [CAutoHideDockSite](../../mfc/reference/cautohidedocksite-class.md) and [CMFCAutoHideButton](../../mfc/reference/cmfcautohidebutton-class.md) objects. Each `CAutoHideDockSite` object is associated with an individual `CMFCAutoHideButton`.  
@@ -104,7 +104,7 @@ class CMFCAutoHideBar : public CPane
 ## Requirements  
  **Header:** afxautohidebar.h  
   
-##  <a name="cmfcautohidebar__addautohidewindow"></a>  CMFCAutoHideBar::AddAutoHideWindow  
+##  <a name="addautohidewindow"></a>  CMFCAutoHideBar::AddAutoHideWindow  
  Adds functionality to a `CDockablePane` window that enables it to auto-hide.  
   
 ```  
@@ -133,7 +133,7 @@ CMFCAutoHideButton* AddAutoHideWindow(
   
 - `CBRS_ALIGN_BOTTOM`  
   
-##  <a name="cmfcautohidebar__allowshowonpanemenu"></a>  CMFCAutoHideBar::AllowShowOnPaneMenu  
+##  <a name="allowshowonpanemenu"></a>  CMFCAutoHideBar::AllowShowOnPaneMenu  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -146,7 +146,7 @@ virtual BOOL AllowShowOnPaneMenu() const;
   
 ### Remarks  
   
-##  <a name="cmfcautohidebar__calcfixedlayout"></a>  CMFCAutoHideBar::CalcFixedLayout  
+##  <a name="calcfixedlayout"></a>  CMFCAutoHideBar::CalcFixedLayout  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -163,7 +163,7 @@ virtual CSize CalcFixedLayout(
   
 ### Remarks  
   
-##  <a name="cmfcautohidebar__cmfcautohidebar"></a>  CMFCAutoHideBar::CMFCAutoHideBar  
+##  <a name="cmfcautohidebar"></a>  CMFCAutoHideBar::CMFCAutoHideBar  
  Constructs a CMFCAutoHideBar object.  
   
 ```  
@@ -172,7 +172,7 @@ CMFCAutoHideBar();
   
 ### Remarks  
   
-##  <a name="cmfcautohidebar__create"></a>  CMFCAutoHideBar::Create  
+##  <a name="create"></a>  CMFCAutoHideBar::Create  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -199,7 +199,7 @@ virtual BOOL Create(
   
 ### Remarks  
   
-##  <a name="cmfcautohidebar__getfirstahwindow"></a>  CMFCAutoHideBar::GetFirstAHWindow  
+##  <a name="getfirstahwindow"></a>  CMFCAutoHideBar::GetFirstAHWindow  
  Returns a pointer to the first auto-hide window in the application.  
   
 ```  
@@ -211,7 +211,7 @@ CDockablePane* GetFirstAHWindow();
   
 ### Remarks  
   
-##  <a name="cmfcautohidebar__getvisiblecount"></a>  CMFCAutoHideBar::GetVisibleCount  
+##  <a name="getvisiblecount"></a>  CMFCAutoHideBar::GetVisibleCount  
  Gets the number of visible auto-hide buttons.  
   
 ```  
@@ -223,7 +223,7 @@ int GetVisibleCount();
   
 ### Remarks  
   
-##  <a name="cmfcautohidebar__m_nshowahwnddelay"></a>  CMFCAutoHideBar::m_nShowAHWndDelay  
+##  <a name="m_nshowahwnddelay"></a>  CMFCAutoHideBar::m_nShowAHWndDelay  
  The time delay between the moment when the user places the mouse cursor over a [CMFCAutoHideButton Class](../../mfc/reference/cmfcautohidebutton-class.md) and the moment when the framework shows the associated window.  
   
 ```  
@@ -233,7 +233,7 @@ int CMFCAutoHideBar::m_nShowAHWndDelay = 400;
 ### Remarks  
  When the user places the mouse cursor over a `CMFCAutoHideButton`, there is a slight delay before the framework displays the associated window. This parameter determines the length of that delay in milliseconds.  
   
-##  <a name="cmfcautohidebar__onshowcontrolbarmenu"></a>  CMFCAutoHideBar::OnShowControlBarMenu  
+##  <a name="onshowcontrolbarmenu"></a>  CMFCAutoHideBar::OnShowControlBarMenu  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -247,7 +247,7 @@ virtual BOOL OnShowControlBarMenu(CPoint);
   
 ### Remarks  
   
-##  <a name="cmfcautohidebar__removeautohidewindow"></a>  CMFCAutoHideBar::RemoveAutoHideWindow  
+##  <a name="removeautohidewindow"></a>  CMFCAutoHideBar::RemoveAutoHideWindow  
  Removes and destroys the auto-hide window.  
   
 ```  
@@ -264,7 +264,7 @@ virtual BOOL OnShowControlBarMenu(CPoint);
   
 ### Remarks  
   
-##  <a name="cmfcautohidebar__setactiveingroup"></a>  CMFCAutoHideBar::SetActiveInGroup  
+##  <a name="setactiveingroup"></a>  CMFCAutoHideBar::SetActiveInGroup  
  Flags an auto-hide bar as active.  
   
 ```  
@@ -279,9 +279,9 @@ virtual void SetActiveInGroup(
  TRUE to set to active; otherwise FALSE.  
   
 ### Remarks  
- See [CPane::SetActiveInGroup](../../mfc/reference/cpane-class.md#cpane__setactiveingroup).  
+ See [CPane::SetActiveInGroup](../../mfc/reference/cpane-class.md#setactiveingroup).  
   
-##  <a name="cmfcautohidebar__setrecentvisiblestate"></a>  CMFCAutoHideBar::SetRecentVisibleState  
+##  <a name="setrecentvisiblestate"></a>  CMFCAutoHideBar::SetRecentVisibleState  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -293,7 +293,7 @@ void SetRecentVisibleState(BOOL bState);
   
 ### Remarks  
   
-##  <a name="cmfcautohidebar__showautohidewindow"></a>  CMFCAutoHideBar::ShowAutoHideWindow  
+##  <a name="showautohidewindow"></a>  CMFCAutoHideBar::ShowAutoHideWindow  
  Shows the auto-hide window.  
   
 ```  
@@ -318,7 +318,7 @@ BOOL ShowAutoHideWindow(
   
 ### Remarks  
   
-##  <a name="cmfcautohidebar__stretchpane"></a>  CMFCAutoHideBar::StretchPane  
+##  <a name="stretchpane"></a>  CMFCAutoHideBar::StretchPane  
  Resizes the auto-hide bar in its collapsed state to fit the `CMFCAutoHideButton` object.  
   
 ```  
@@ -340,7 +340,7 @@ virtual CSize StretchPane(
 ### Remarks  
  Derived classes can override this method to customize the behavior.  
   
-##  <a name="cmfcautohidebar__unsetautohidemode"></a>  CMFCAutoHideBar::UnSetAutoHideMode  
+##  <a name="unsetautohidemode"></a>  CMFCAutoHideBar::UnSetAutoHideMode  
  Disables auto-hide mode for a group of auto-hide bars.  
   
 ```  
@@ -353,7 +353,7 @@ void UnSetAutoHideMode(CDockablePane* pFirstBarInGroup)
   
 ### Remarks  
   
-##  <a name="cmfcautohidebar__updatevisiblestate"></a>  CMFCAutoHideBar::UpdateVisibleState  
+##  <a name="updatevisiblestate"></a>  CMFCAutoHideBar::UpdateVisibleState  
  Called by the framework when the auto-hide bar needs to be redrawn.  
   
 ```  

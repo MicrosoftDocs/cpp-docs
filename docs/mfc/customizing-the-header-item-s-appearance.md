@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Customizing the Header Item&#39;s Appearance
-By setting the *dwStyle* parameter when you first create a header control ([CHeaderCtrl::Create](../mfc/reference/cheaderctrl-class.md#cheaderctrl__create)), you can define the appearance and behavior of header items or of the header control itself.  
+By setting the *dwStyle* parameter when you first create a header control ([CHeaderCtrl::Create](../mfc/reference/cheaderctrl-class.md#create)), you can define the appearance and behavior of header items or of the header control itself.  
   
  Here is a sampling of the styles you can set, and their purpose:  
   

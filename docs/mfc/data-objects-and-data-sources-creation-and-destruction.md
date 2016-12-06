@@ -90,7 +90,7 @@ As explained in the article [Data Objects and Data Sources (OLE)](../mfc/data-ob
  One other situation in which you might want to create a `COleDataSource` object occurs if you are modifying the default behavior of a drag-and-drop operation. For more information, see the [Drag and Drop: Customizing](../mfc/drag-and-drop-customizing.md) article.  
   
 ##  <a name="_core_destroying_data_sources"></a> Destroying Data Sources  
- Data sources must be destroyed by the application currently responsible for them. In situations where you hand the data source to OLE, such as calling [COleDataSource::DoDragDrop](../mfc/reference/coledatasource-class.md#coledatasource__dodragdrop), you need to call **pDataSrc->InternalRelease**. For example:  
+ Data sources must be destroyed by the application currently responsible for them. In situations where you hand the data source to OLE, such as calling [COleDataSource::DoDragDrop](../mfc/reference/coledatasource-class.md#dodragdrop), you need to call **pDataSrc->InternalRelease**. For example:  
   
  [!code-cpp[NVC_MFCListView#1](../atl/reference/codesnippet/cpp/data-objects-and-data-sources-creation-and-destruction_1.cpp)]  
   

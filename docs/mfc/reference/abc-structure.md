@@ -65,6 +65,6 @@ typedef struct _ABC { /* abc */
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CDC::GetCharABCWidths](../../mfc/reference/cdc-class.md#cdc__getcharabcwidths)
+ [CDC::GetCharABCWidths](../../mfc/reference/cdc-class.md#getcharabcwidths)
 
 

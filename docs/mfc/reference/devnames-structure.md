@@ -71,6 +71,6 @@ typedef struct tagDEVNAMES { /* dvnm */
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CPrintDialog::CreatePrinterDC](../../mfc/reference/cprintdialog-class.md#cprintdialog__createprinterdc)
+ [CPrintDialog::CreatePrinterDC](../../mfc/reference/cprintdialog-class.md#createprinterdc)
 
 

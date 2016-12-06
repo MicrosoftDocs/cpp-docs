@@ -58,7 +58,7 @@ This article explains how to get your application to provide data to a drag-and-
   
 ## See Also  
  [Drag and Drop (OLE)](../mfc/drag-and-drop-ole.md)   
- [COleDataSource::DoDragDrop](../mfc/reference/coledatasource-class.md#coledatasource__dodragdrop)   
- [COleClientItem::DoDragDrop](../mfc/reference/coleclientitem-class.md#coleclientitem__dodragdrop)   
- [CView::OnDragLeave](../mfc/reference/cview-class.md#cview__ondragleave)
+ [COleDataSource::DoDragDrop](../mfc/reference/coledatasource-class.md#dodragdrop)   
+ [COleClientItem::DoDragDrop](../mfc/reference/coleclientitem-class.md#dodragdrop)   
+ [CView::OnDragLeave](../mfc/reference/cview-class.md#ondragleave)
 

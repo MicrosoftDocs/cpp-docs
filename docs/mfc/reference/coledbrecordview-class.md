@@ -50,14 +50,14 @@ class COleDBRecordView : public CFormView
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleDBRecordView::COleDBRecordView](#coledbrecordview__coledbrecordview)|Constructs a `COleDBRecordView` object.|  
+|[COleDBRecordView::COleDBRecordView](#coledbrecordview)|Constructs a `COleDBRecordView` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleDBRecordView::OnGetRowset](#coledbrecordview__ongetrowset)|Returns a standard `HRESULT` value.|  
-|[COleDBRecordView::OnMove](#coledbrecordview__onmove)|Updates the current record (if dirty) on the data source and then moves to the specified record (next, previous, first, or last).|  
+|[COleDBRecordView::OnGetRowset](#ongetrowset)|Returns a standard `HRESULT` value.|  
+|[COleDBRecordView::OnMove](#onmove)|Updates the current record (if dirty) on the data source and then moves to the specified record (next, previous, first, or last).|  
   
 ## Remarks  
  The view is a form view directly connected to a `CRowset` object. The view is created from a dialog template resource and displays the fields of the `CRowset` object in the dialog template's controls. The `COleDBRecordView` object uses dialog data exchange (DDX), and the navigational functionality built into `CRowset`, to automate the movement of data between the controls on the form and the fields of the rowset. `COleDBRecordView` also supplies a default implementation for moving to the first, next, previous, or last record and an interface for updating the record currently on view.  
@@ -89,7 +89,7 @@ class COleDBRecordView : public CFormView
 ## Requirements  
  **Header:** afxoledb.h  
   
-##  <a name="coledbrecordview__coledbrecordview"></a>  COleDBRecordView::COleDBRecordView  
+##  <a name="coledbrecordview"></a>  COleDBRecordView::COleDBRecordView  
  Constructs a `COleDBRecordView` object.  
   
 ```  
@@ -112,7 +112,7 @@ COleDBRecordView(UINT nIDTemplate);
 > [!NOTE]
 >  Your derived class *must* supply its own constructor. In the constructor, invoke the constructor, `COleDBRecordView::COleDBRecordView`, with the resource name or ID as an argument.  
   
-##  <a name="coledbrecordview__ongetrowset"></a>  COleDBRecordView::OnGetRowset  
+##  <a name="ongetrowset"></a>  COleDBRecordView::OnGetRowset  
  Returns a handle for the **CRowset<>** object associated with the record view.  
   
 ```  
@@ -134,7 +134,7 @@ virtual CRowset<>* OnGetRowset(Â) = 0;
   
  For more information and examples, see the article [Record Views: Using a Record View](../../data/using-a-record-view-mfc-data-access.md).  
   
-##  <a name="coledbrecordview__onmove"></a>  COleDBRecordView::OnMove  
+##  <a name="onmove"></a>  COleDBRecordView::OnMove  
  Moves to a different record in the rowset and display its fields in the controls of the record view.  
   
 ```  

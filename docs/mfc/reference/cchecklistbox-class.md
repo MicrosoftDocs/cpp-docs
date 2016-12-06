@@ -50,22 +50,22 @@ class CCheckListBox : public CListBox
   
 |Name|Description|  
 |----------|-----------------|  
-|[CCheckListBox::CCheckListBox](#cchecklistbox__cchecklistbox)|Constructs a `CCheckListBox` object.|  
+|[CCheckListBox::CCheckListBox](#cchecklistbox)|Constructs a `CCheckListBox` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CCheckListBox::Create](#cchecklistbox__create)|Creates the Windows checklist box and attaches it to the `CCheckListBox` object.|  
-|[CCheckListBox::DrawItem](#cchecklistbox__drawitem)|Called by the framework when a visual aspect of an owner-draw list box changes.|  
-|[CCheckListBox::Enable](#cchecklistbox__enable)|Enables or disables a checklist box item.|  
-|[CCheckListBox::GetCheck](#cchecklistbox__getcheck)|Gets the state of an item's check box.|  
-|[CCheckListBox::GetCheckStyle](#cchecklistbox__getcheckstyle)|Gets the style of the control's check boxes.|  
-|[CCheckListBox::IsEnabled](#cchecklistbox__isenabled)|Determines whether an item is enabled.|  
-|[CCheckListBox::MeasureItem](#cchecklistbox__measureitem)|Called by the framework when a list box with an owner-draw style is created.|  
-|[CCheckListBox::OnGetCheckPosition](#cchecklistbox__ongetcheckposition)|Called by the framework to get the position of an item's check box.|  
-|[CCheckListBox::SetCheck](#cchecklistbox__setcheck)|Sets the state of an item's check box.|  
-|[CCheckListBox::SetCheckStyle](#cchecklistbox__setcheckstyle)|Sets the style of the control's check boxes.|  
+|[CCheckListBox::Create](#create)|Creates the Windows checklist box and attaches it to the `CCheckListBox` object.|  
+|[CCheckListBox::DrawItem](#drawitem)|Called by the framework when a visual aspect of an owner-draw list box changes.|  
+|[CCheckListBox::Enable](#enable)|Enables or disables a checklist box item.|  
+|[CCheckListBox::GetCheck](#getcheck)|Gets the state of an item's check box.|  
+|[CCheckListBox::GetCheckStyle](#getcheckstyle)|Gets the style of the control's check boxes.|  
+|[CCheckListBox::IsEnabled](#isenabled)|Determines whether an item is enabled.|  
+|[CCheckListBox::MeasureItem](#measureitem)|Called by the framework when a list box with an owner-draw style is created.|  
+|[CCheckListBox::OnGetCheckPosition](#ongetcheckposition)|Called by the framework to get the position of an item's check box.|  
+|[CCheckListBox::SetCheck](#setcheck)|Sets the state of an item's check box.|  
+|[CCheckListBox::SetCheckStyle](#setcheckstyle)|Sets the style of the control's check boxes.|  
   
 ## Remarks  
  A "checklist box" displays a list of items, such as filenames. Each item in the list has a check box next to it that the user can check or clear.  
@@ -90,7 +90,7 @@ class CCheckListBox : public CListBox
   
 - **ON_CLBN_CHKCHANGE** The user has changed the state of an item's checkbox.  
   
- If your checklist box is a default checklist box (a list of strings with the default-sized checkboxes to the left of each), you can use the default [CCheckListBox::DrawItem](#cchecklistbox__drawitem) to draw the checklist box. Otherwise, you must override the [CListBox::CompareItem](../../mfc/reference/clistbox-class.md#clistbox__compareitem) function and the [CCheckListBox::DrawItem](#cchecklistbox__drawitem) and [CCheckListBox::MeasureItem](#cchecklistbox__measureitem) functions.  
+ If your checklist box is a default checklist box (a list of strings with the default-sized checkboxes to the left of each), you can use the default [CCheckListBox::DrawItem](#drawitem) to draw the checklist box. Otherwise, you must override the [CListBox::CompareItem](../../mfc/reference/clistbox-class.md#compareitem) function and the [CCheckListBox::DrawItem](#drawitem) and [CCheckListBox::MeasureItem](#measureitem) functions.  
   
  You can create a checklist box either from a dialog template or directly in your code.  
   
@@ -108,7 +108,7 @@ class CCheckListBox : public CListBox
 ## Requirements  
  **Header:** afxwin.h  
   
-##  <a name="cchecklistbox__cchecklistbox"></a>  CCheckListBox::CCheckListBox  
+##  <a name="cchecklistbox"></a>  CCheckListBox::CCheckListBox  
  Constructs a `CCheckListBox` object.  
   
 ```  
@@ -121,7 +121,7 @@ CCheckListBox();
 ### Example  
  [!code-cpp[NVC_MFCControlLadenDialog#60](../../mfc/codesnippet/cpp/cchecklistbox-class_1.cpp)]  
   
-##  <a name="cchecklistbox__create"></a>  CCheckListBox::Create  
+##  <a name="create"></a>  CCheckListBox::Create  
  Creates the Windows checklist box and attaches it to the `CCheckListBox` object.  
   
 ```  
@@ -149,11 +149,11 @@ virtual BOOL Create(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- You construct a `CCheckListBox` object in two steps. First, define a class derived from **CcheckListBox** and then call **Create**, which initializes the Windows checklist box and attaches it to the `CCheckListBox`. See [CCheckListBox::CCheckListBox](#cchecklistbox__cchecklistbox) for a sample.  
+ You construct a `CCheckListBox` object in two steps. First, define a class derived from **CcheckListBox** and then call **Create**, which initializes the Windows checklist box and attaches it to the `CCheckListBox`. See [CCheckListBox::CCheckListBox](#cchecklistbox) for a sample.  
   
- When **Create** executes, Windows sends the [WM_NCCREATE](../../mfc/reference/cwnd-class.md#cwnd__onnccreate), [WM_CREATE](../../mfc/reference/cwnd-class.md#cwnd__oncreate), [WM_NCCALCSIZE](../../mfc/reference/cwnd-class.md#cwnd__onnccalcsize), and [WM_GETMINMAXINFO](../../mfc/reference/cwnd-class.md#cwnd__ongetminmaxinfo) messages to the checklist-box control.  
+ When **Create** executes, Windows sends the [WM_NCCREATE](../../mfc/reference/cwnd-class.md#onnccreate), [WM_CREATE](../../mfc/reference/cwnd-class.md#oncreate), [WM_NCCALCSIZE](../../mfc/reference/cwnd-class.md#onnccalcsize), and [WM_GETMINMAXINFO](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) messages to the checklist-box control.  
   
- These messages are handled by default by the [OnNcCreate](../../mfc/reference/cwnd-class.md#cwnd__onnccreate), [OnCreate](../../mfc/reference/cwnd-class.md#cwnd__oncreate), [OnNcCalcSize](../../mfc/reference/cwnd-class.md#cwnd__onnccalcsize), and [OnGetMinMaxInfo](../../mfc/reference/cwnd-class.md#cwnd__ongetminmaxinfo) member functions in the `CWnd` base class. To extend the default message handling, add a message map to the your derived class and override the preceding message-handler member functions. Override `OnCreate`, for example, to perform needed initialization for a new class.  
+ These messages are handled by default by the [OnNcCreate](../../mfc/reference/cwnd-class.md#onnccreate), [OnCreate](../../mfc/reference/cwnd-class.md#oncreate), [OnNcCalcSize](../../mfc/reference/cwnd-class.md#onnccalcsize), and [OnGetMinMaxInfo](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) member functions in the `CWnd` base class. To extend the default message handling, add a message map to the your derived class and override the preceding message-handler member functions. Override `OnCreate`, for example, to perform needed initialization for a new class.  
   
  Apply the following [window styles](../../mfc/reference/window-styles.md) to a checklist-box control:  
   
@@ -171,7 +171,7 @@ virtual BOOL Create(
   
 - **WS_TABSTOP** To allow tabbing to this control  
   
-##  <a name="cchecklistbox__drawitem"></a>  CCheckListBox::DrawItem  
+##  <a name="drawitem"></a>  CCheckListBox::DrawItem  
  Called by the framework when a visual aspect of an owner-drawn checklist box changes.  
   
 ```  
@@ -185,13 +185,13 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### Remarks  
  The **itemAction** and **itemState** members of the `DRAWITEMSTRUCT` structure define the drawing action that is to be performed.  
   
- By default, this function draws a default checkbox list, consisting of a list of strings each with a default-sized checkbox to the left. The checkbox list size is the one specified in [Create](#cchecklistbox__create).  
+ By default, this function draws a default checkbox list, consisting of a list of strings each with a default-sized checkbox to the left. The checkbox list size is the one specified in [Create](#create).  
   
  Override this member function to implement drawing of owner-draw checklist boxes that are not the default, such as checklist boxes with lists that aren't strings, with variable-height items, or with checkboxes that aren't on the left. The application should restore all graphics device interface (GDI) objects selected for the display context supplied in `lpDrawItemStruct` before the termination of this member function.  
   
- If checklist box items are not all the same height, the checklist box style (specified in **Create**) must be **LBS_OWNERVARIABLE**, and you must override the [MeasureItem](#cchecklistbox__measureitem) function.  
+ If checklist box items are not all the same height, the checklist box style (specified in **Create**) must be **LBS_OWNERVARIABLE**, and you must override the [MeasureItem](#measureitem) function.  
   
-##  <a name="cchecklistbox__enable"></a>  CCheckListBox::Enable  
+##  <a name="enable"></a>  CCheckListBox::Enable  
  Call this function to enable or disable a checklist box item.  
   
 ```  
@@ -207,7 +207,7 @@ void Enable(
  `bEnabled`  
  Specifies whether the item is enabled or disabled.  
   
-##  <a name="cchecklistbox__getcheck"></a>  CCheckListBox::GetCheck  
+##  <a name="getcheck"></a>  CCheckListBox::GetCheck  
  Retrieves the state of the specified check box.  
   
 ```  
@@ -227,7 +227,7 @@ int GetCheck(int nIndex);
 |`BST_UNCHECKED`|The check box is not checked.|  
 |`BST_INDETERMINATE`|The check box state is indeterminate.|  
   
-##  <a name="cchecklistbox__getcheckstyle"></a>  CCheckListBox::GetCheckStyle  
+##  <a name="getcheckstyle"></a>  CCheckListBox::GetCheckStyle  
  Call this function to get the checklist box's style.  
   
 ```  
@@ -238,9 +238,9 @@ UINT GetCheckStyle();
  The style of the control's check boxes.  
   
 ### Remarks  
- For information on possible styles, see [SetCheckStyle](#cchecklistbox__setcheckstyle).  
+ For information on possible styles, see [SetCheckStyle](#setcheckstyle).  
   
-##  <a name="cchecklistbox__isenabled"></a>  CCheckListBox::IsEnabled  
+##  <a name="isenabled"></a>  CCheckListBox::IsEnabled  
  Call this function to determine whether an item is enabled.  
   
 ```  
@@ -254,7 +254,7 @@ BOOL IsEnabled(int nIndex);
 ### Return Value  
  Nonzero if the item is enabled; otherwise 0.  
   
-##  <a name="cchecklistbox__measureitem"></a>  CCheckListBox::MeasureItem  
+##  <a name="measureitem"></a>  CCheckListBox::MeasureItem  
  Called by the framework when a checklist box with a nondefault style is created.  
   
 ```  
@@ -268,7 +268,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ### Remarks  
  By default, this member function does nothing. Override this member function and fill in the `MEASUREITEMSTRUCT` structure to inform Windows of the dimensions of checklist-box items. If the checklist box is created with the [LBS_OWNERDRAWVARIABLE](../../mfc/reference/list-box-styles.md) style, the framework calls this member function for each item in the list box. Otherwise, this member is called only once.  
   
-##  <a name="cchecklistbox__ongetcheckposition"></a>  CCheckListBox::OnGetCheckPosition  
+##  <a name="ongetcheckposition"></a>  CCheckListBox::OnGetCheckPosition  
  The framework calls this function to get the position and size of the check box in an item.  
   
 ```  
@@ -290,7 +290,7 @@ virtual CRect OnGetCheckPosition(
 ### Remarks  
  The default implementation only returns the default position and size of the check box ( `rectCheckBox`). By default, a check box is aligned in the upper-left corner of an item and is the standard check box size. There may be cases where you want the check boxes on the right, or want a larger or smaller check box. In these cases, override `OnGetCheckPosition` to change the check box position and size within the item.  
   
-##  <a name="cchecklistbox__setcheck"></a>  CCheckListBox::SetCheck  
+##  <a name="setcheck"></a>  CCheckListBox::SetCheck  
  Sets the state of the specified check box.  
   
 ```  
@@ -315,7 +315,7 @@ void SetCheck(
 |**BST_UNCHECKED**|Clear the specified check box.|  
 |**BST_INDETERMINATE**|Set the specified check box state to indeterminate.<br /><br /> This state is only available if the check box style is `BS_AUTO3STATE` or `BS_3STATE`. For more information, see [Button Styles](../../mfc/reference/button-styles.md).|  
   
-##  <a name="cchecklistbox__setcheckstyle"></a>  CCheckListBox::SetCheckStyle  
+##  <a name="setcheckstyle"></a>  CCheckListBox::SetCheckStyle  
  Call this function to set the style of check boxes in the checklist box.  
   
 ```  

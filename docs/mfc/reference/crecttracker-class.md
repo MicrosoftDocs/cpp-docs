@@ -51,39 +51,39 @@ class CRectTracker
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRectTracker::CRectTracker](#crecttracker__crecttracker)|Constructs a `CRectTracker` object.|  
+|[CRectTracker::CRectTracker](#crecttracker)|Constructs a `CRectTracker` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRectTracker::AdjustRect](#crecttracker__adjustrect)|Called when the rectangle is resized.|  
-|[CRectTracker::Draw](#crecttracker__draw)|Renders the rectangle.|  
-|[CRectTracker::DrawTrackerRect](#crecttracker__drawtrackerrect)|Called when drawing the border of a `CRectTracker` object.|  
-|[CRectTracker::GetHandleMask](#crecttracker__gethandlemask)|Called to get the mask of a `CRectTracker`item's resize handles.|  
-|[CRectTracker::GetTrueRect](#crecttracker__gettruerect)|Returns width and height of rectangle, including resize handles.|  
-|[CRectTracker::HitTest](#crecttracker__hittest)|Returns the current position of the cursor related to the `CRectTracker` object.|  
-|[CRectTracker::NormalizeHit](#crecttracker__normalizehit)|Normalizes a hit-test code.|  
-|[CRectTracker::OnChangedRect](#crecttracker__onchangedrect)|Called when the rectangle has been resized or moved.|  
-|[CRectTracker::SetCursor](#crecttracker__setcursor)|Sets the cursor, depending on its position over the rectangle.|  
-|[CRectTracker::Track](#crecttracker__track)|Allows the user to manipulate the rectangle.|  
-|[CRectTracker::TrackRubberBand](#crecttracker__trackrubberband)|Allows the user to "rubber-band" the selection.|  
+|[CRectTracker::AdjustRect](#adjustrect)|Called when the rectangle is resized.|  
+|[CRectTracker::Draw](#draw)|Renders the rectangle.|  
+|[CRectTracker::DrawTrackerRect](#drawtrackerrect)|Called when drawing the border of a `CRectTracker` object.|  
+|[CRectTracker::GetHandleMask](#gethandlemask)|Called to get the mask of a `CRectTracker`item's resize handles.|  
+|[CRectTracker::GetTrueRect](#gettruerect)|Returns width and height of rectangle, including resize handles.|  
+|[CRectTracker::HitTest](#hittest)|Returns the current position of the cursor related to the `CRectTracker` object.|  
+|[CRectTracker::NormalizeHit](#normalizehit)|Normalizes a hit-test code.|  
+|[CRectTracker::OnChangedRect](#onchangedrect)|Called when the rectangle has been resized or moved.|  
+|[CRectTracker::SetCursor](#setcursor)|Sets the cursor, depending on its position over the rectangle.|  
+|[CRectTracker::Track](#track)|Allows the user to manipulate the rectangle.|  
+|[CRectTracker::TrackRubberBand](#trackrubberband)|Allows the user to "rubber-band" the selection.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRectTracker::m_nHandleSize](#crecttracker__m_nhandlesize)|Determines size of resize handles.|  
-|[CRectTracker::m_nStyle](#crecttracker__m_nstyle)|Current style(s) of the tracker.|  
-|[CRectTracker::m_rect](#crecttracker__m_rect)|Current position (in pixels) of the rectangle.|  
-|[CRectTracker::m_sizeMin](#crecttracker__m_sizemin)|Determines minimum rectangle width and height.|  
+|[CRectTracker::m_nHandleSize](#m_nhandlesize)|Determines size of resize handles.|  
+|[CRectTracker::m_nStyle](#m_nstyle)|Current style(s) of the tracker.|  
+|[CRectTracker::m_rect](#m_rect)|Current position (in pixels) of the rectangle.|  
+|[CRectTracker::m_sizeMin](#m_sizemin)|Determines minimum rectangle width and height.|  
   
 ## Remarks  
  `CRectTracker` does not have a base class.  
   
  Although the `CRectTracker` class is designed to allow the user to interact with OLE items by using a graphical interface, its use is not restricted to OLE-enabled applications. It can be used anywhere such a user interface is required.  
   
- `CRectTracker` borders can be solid or dotted lines. The item can be given a hatched border or overlaid with a hatched pattern to indicate different states of the item. You can place eight resize handles on either the outside or the inside border of the item. (For an explanation of the resize handles, see [GetHandleMask](#crecttracker__gethandlemask).) Finally, a `CRectTracker` allows you to change the orientation of an item during resizing.  
+ `CRectTracker` borders can be solid or dotted lines. The item can be given a hatched border or overlaid with a hatched pattern to indicate different states of the item. You can place eight resize handles on either the outside or the inside border of the item. (For an explanation of the resize handles, see [GetHandleMask](#gethandlemask).) Finally, a `CRectTracker` allows you to change the orientation of an item during resizing.  
   
  To use `CRectTracker`, construct a `CRectTracker` object and specify which display states are initialized. You can then use this interface to give the user visual feedback on the current status of the OLE item associated with the `CRectTracker` object.  
   
@@ -95,7 +95,7 @@ class CRectTracker
 ## Requirements  
  **Header:** afxext.h  
   
-##  <a name="crecttracker__adjustrect"></a>  CRectTracker::AdjustRect  
+##  <a name="adjustrect"></a>  CRectTracker::AdjustRect  
  Called by the framework when the tracking rectangle is resized by using a resize handle.  
   
 ```  
@@ -118,7 +118,7 @@ virtual void AdjustRect(
   
  Special features that are not directly supported by `CRectTracker`, such as snap-to-grid or keep-aspect-ratio, can be implemented by overriding this function.  
   
-##  <a name="crecttracker__crecttracker"></a>  CRectTracker::CRectTracker  
+##  <a name="crecttracker"></a>  CRectTracker::CRectTracker  
  Creates and initializes a `CRectTracker` object.  
   
 ```  
@@ -152,7 +152,7 @@ CRectTracker(
 ### Remarks  
  The default constructor initializes the `CRectTracker` object with the values from `lpSrcRect` and initializes other sizes to system defaults. If the object is created with no parameters, the `m_rect` and `m_nStyle` data members are uninitialized.  
   
-##  <a name="crecttracker__draw"></a>  CRectTracker::Draw  
+##  <a name="draw"></a>  CRectTracker::Draw  
  Call this function to draw the rectangle's outer lines and inner region.  
   
 ```  
@@ -168,7 +168,7 @@ void Draw(CDC* pDC) const;
 ### Remarks  
  The style of the tracker determines how the drawing is done. See the constructor for `CRectTracker` for more information on the styles available.  
   
-##  <a name="crecttracker__drawtrackerrect"></a>  CRectTracker::DrawTrackerRect  
+##  <a name="drawtrackerrect"></a>  CRectTracker::DrawTrackerRect  
  Called by the framework whenever the position of the tracker has changed while inside the `Track` or `TrackRubberBand` member function.  
   
 ```  
@@ -197,7 +197,7 @@ virtual void DrawTrackerRect(
   
  Override this function to provide different feedback during the tracking operation.  
   
-##  <a name="crecttracker__gethandlemask"></a>  CRectTracker::GetHandleMask  
+##  <a name="gethandlemask"></a>  CRectTracker::GetHandleMask  
  The framework calls this member function to retrieve the mask for a rectangle's resize handles.  
   
 ```  
@@ -220,7 +220,7 @@ virtual UINT GetHandleMask() const;
   
  Override this member function to hide or show the indicated resize handles.  
   
-##  <a name="crecttracker__gettruerect"></a>  CRectTracker::GetTrueRect  
+##  <a name="gettruerect"></a>  CRectTracker::GetTrueRect  
  Call this function to retrieve the coordinates of the rectangle.  
   
 ```  
@@ -236,7 +236,7 @@ void GetTrueRect(LPRECT lpTrueRect) const;
 ### Remarks  
  The dimensions of the rectangle include the height and width of any resize handles located on the outer border. Upon returning, `lpTrueRect` is always a normalized rectangle in device coordinates.  
   
-##  <a name="crecttracker__hittest"></a>  CRectTracker::HitTest  
+##  <a name="hittest"></a>  CRectTracker::HitTest  
  Call this function to find out whether the user has grabbed a resize handle.  
   
 ```  
@@ -272,7 +272,7 @@ int HitTest(CPoint point) const;
   
 - **CRectTracker::hitMiddle** 8  
   
-##  <a name="crecttracker__m_nhandlesize"></a>  CRectTracker::m_nHandleSize  
+##  <a name="m_nhandlesize"></a>  CRectTracker::m_nHandleSize  
  The size, in pixels, of the `CRectTracker` resize handles.  
   
 ```  
@@ -282,14 +282,14 @@ int m_nHandleSize;
 ### Remarks  
  Initialized with the default system value.  
   
-##  <a name="crecttracker__m_rect"></a>  CRectTracker::m_rect  
+##  <a name="m_rect"></a>  CRectTracker::m_rect  
  The current position of the rectangle in client coordinates (pixels).  
   
 ```  
 CRect m_rect;  
 ```  
   
-##  <a name="crecttracker__m_sizemin"></a>  CRectTracker::m_sizeMin  
+##  <a name="m_sizemin"></a>  CRectTracker::m_sizeMin  
  The minimum size of the rectangle.  
   
 ```  
@@ -299,7 +299,7 @@ CSize m_sizeMin;
 ### Remarks  
  Both default values, **cx** and **cy**, are calculated from the default system value for the border width. This data member is used only by the `AdjustRect` member function.  
   
-##  <a name="crecttracker__m_nstyle"></a>  CRectTracker::m_nStyle  
+##  <a name="m_nstyle"></a>  CRectTracker::m_nStyle  
  Current style of the rectangle.  
   
 ```  
@@ -307,9 +307,9 @@ UINT m_nStyle;
 ```  
   
 ### Remarks  
- See [CRectTracker::CRectTracker](#crecttracker__crecttracker) for a list of possible styles.  
+ See [CRectTracker::CRectTracker](#crecttracker) for a list of possible styles.  
   
-##  <a name="crecttracker__normalizehit"></a>  CRectTracker::NormalizeHit  
+##  <a name="normalizehit"></a>  CRectTracker::NormalizeHit  
  Call this function to convert a potentially inverted handle.  
   
 ```  
@@ -328,7 +328,7 @@ int NormalizeHit(int nHandle) const;
 ### Remarks  
  When `CRectTracker::Track` or `CRectTracker::TrackRubberBand` is called with inverting allowed, it is possible for the rectangle to be inverted on the x-axis, the y-axis, or both. When this happens, `HitTest` will return handles that are also inverted with respect to the rectangle. This is inappropriate for drawing cursor feedback because the feedback depends on the screen position of the rectangle, not the portion of the rectangle data structure that will be modified.  
   
-##  <a name="crecttracker__onchangedrect"></a>  CRectTracker::OnChangedRect  
+##  <a name="onchangedrect"></a>  CRectTracker::OnChangedRect  
  Called by the framework whenever the tracker rectangle has changed during a call to `Track`.  
   
 ```  
@@ -344,7 +344,7 @@ virtual void OnChangedRect(const CRect& rectOld);
   
  Override this function when you want to perform any actions after the rectangle has been resized.  
   
-##  <a name="crecttracker__setcursor"></a>  CRectTracker::SetCursor  
+##  <a name="setcursor"></a>  CRectTracker::SetCursor  
  Call this function to change the cursor shape while it is over the `CRectTracker` object's region.  
   
 ```  
@@ -368,7 +368,7 @@ BOOL SetCursor(
 ### Remarks  
  Call this function from inside the function of your window that handles the `WM_SETCURSOR` message (typically `OnSetCursor`).  
   
-##  <a name="crecttracker__track"></a>  CRectTracker::Track  
+##  <a name="track"></a>  CRectTracker::Track  
  Call this function to display the user interface for resizing the rectangle.  
   
 ```  
@@ -402,7 +402,7 @@ BOOL Track(
   
  If `bAllowInvert` is **TRUE**, the tracking rectangle can be inverted on either the x-axis or y-axis.  
   
-##  <a name="crecttracker__trackrubberband"></a>  CRectTracker::TrackRubberBand  
+##  <a name="trackrubberband"></a>  CRectTracker::TrackRubberBand  
  Call this function to do rubber-band selection.  
   
 ```  

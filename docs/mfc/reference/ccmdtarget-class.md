@@ -53,31 +53,31 @@ class CCmdTarget : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CCmdTarget::CCmdTarget](#ccmdtarget__ccmdtarget)|Constructs a `CCmdTarget` object.|  
+|[CCmdTarget::CCmdTarget](#ccmdtarget)|Constructs a `CCmdTarget` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CCmdTarget::BeginWaitCursor](#ccmdtarget__beginwaitcursor)|Displays the cursor as an hourglass cursor.|  
-|[CCmdTarget::DoOleVerb](#ccmdtarget__dooleverb)|Causes an action specified by an OLE verb to be performed.|  
-|[CCmdTarget::EnableAutomation](#ccmdtarget__enableautomation)|Allows OLE automation for the `CCmdTarget` object.|  
-|[CCmdTarget::EnableConnections](#ccmdtarget__enableconnections)|Enables event firing over connection points.|  
-|[CCmdTarget::EnableTypeLib](#ccmdtarget__enabletypelib)|Enables an object's type library.|  
-|[CCmdTarget::EndWaitCursor](#ccmdtarget__endwaitcursor)|Returns to the previous cursor.|  
-|[CCmdTarget::EnumOleVerbs](#ccmdtarget__enumoleverbs)|Enumerates an object's OLE verbs.|  
-|[CCmdTarget::FromIDispatch](#ccmdtarget__fromidispatch)|Returns a pointer to the `CCmdTarget` object associated with the `IDispatch` pointer.|  
-|[CCmdTarget::GetDispatchIID](#ccmdtarget__getdispatchiid)|Gets the primary dispatch interface ID.|  
-|[CCmdTarget::GetIDispatch](#ccmdtarget__getidispatch)|Returns a pointer to the `IDispatch` object associated with the `CCmdTarget` object.|  
-|[CCmdTarget::GetTypeInfoCount](#ccmdtarget__gettypeinfocount)|Retrieves the number of type information interfaces that an object provides.|  
-|[CCmdTarget::GetTypeInfoOfGuid](#ccmdtarget__gettypeinfoofguid)|Retrieves the type description that corresponds to the specified GUID.|  
-|[CCmdTarget::GetTypeLib](#ccmdtarget__gettypelib)|Gets a pointer to a type library.|  
-|[CCmdTarget::GetTypeLibCache](#ccmdtarget__gettypelibcache)|Gets the type library cache.|  
-|[CCmdTarget::IsInvokeAllowed](#ccmdtarget__isinvokeallowed)|Enables automation method invocation.|  
-|[CCmdTarget::IsResultExpected](#ccmdtarget__isresultexpected)|Returns nonzero if an automation function should return a value.|  
-|[CCmdTarget::OnCmdMsg](#ccmdtarget__oncmdmsg)|Routes and dispatches command messages.|  
-|[CCmdTarget::OnFinalRelease](#ccmdtarget__onfinalrelease)|Cleans up after the last OLE reference is released.|  
-|[CCmdTarget::RestoreWaitCursor](#ccmdtarget__restorewaitcursor)|Restores the hourglass cursor.|  
+|[CCmdTarget::BeginWaitCursor](#beginwaitcursor)|Displays the cursor as an hourglass cursor.|  
+|[CCmdTarget::DoOleVerb](#dooleverb)|Causes an action specified by an OLE verb to be performed.|  
+|[CCmdTarget::EnableAutomation](#enableautomation)|Allows OLE automation for the `CCmdTarget` object.|  
+|[CCmdTarget::EnableConnections](#enableconnections)|Enables event firing over connection points.|  
+|[CCmdTarget::EnableTypeLib](#enabletypelib)|Enables an object's type library.|  
+|[CCmdTarget::EndWaitCursor](#endwaitcursor)|Returns to the previous cursor.|  
+|[CCmdTarget::EnumOleVerbs](#enumoleverbs)|Enumerates an object's OLE verbs.|  
+|[CCmdTarget::FromIDispatch](#fromidispatch)|Returns a pointer to the `CCmdTarget` object associated with the `IDispatch` pointer.|  
+|[CCmdTarget::GetDispatchIID](#getdispatchiid)|Gets the primary dispatch interface ID.|  
+|[CCmdTarget::GetIDispatch](#getidispatch)|Returns a pointer to the `IDispatch` object associated with the `CCmdTarget` object.|  
+|[CCmdTarget::GetTypeInfoCount](#gettypeinfocount)|Retrieves the number of type information interfaces that an object provides.|  
+|[CCmdTarget::GetTypeInfoOfGuid](#gettypeinfoofguid)|Retrieves the type description that corresponds to the specified GUID.|  
+|[CCmdTarget::GetTypeLib](#gettypelib)|Gets a pointer to a type library.|  
+|[CCmdTarget::GetTypeLibCache](#gettypelibcache)|Gets the type library cache.|  
+|[CCmdTarget::IsInvokeAllowed](#isinvokeallowed)|Enables automation method invocation.|  
+|[CCmdTarget::IsResultExpected](#isresultexpected)|Returns nonzero if an automation function should return a value.|  
+|[CCmdTarget::OnCmdMsg](#oncmdmsg)|Routes and dispatches command messages.|  
+|[CCmdTarget::OnFinalRelease](#onfinalrelease)|Cleans up after the last OLE reference is released.|  
+|[CCmdTarget::RestoreWaitCursor](#restorewaitcursor)|Restores the hourglass cursor.|  
   
 ## Remarks  
  A message map routes commands or messages to the member functions you write to handle them. (A command is a message from a menu item, command button, or accelerator key.)  
@@ -98,7 +98,7 @@ class CCmdTarget : public CObject
 ## Requirements  
  **Header:** afxwin.h  
   
-##  <a name="ccmdtarget__beginwaitcursor"></a>  CCmdTarget::BeginWaitCursor  
+##  <a name="beginwaitcursor"></a>  CCmdTarget::BeginWaitCursor  
  Call this function to display the cursor as an hourglass when you expect a command to take a noticeable time interval to execute.  
   
 ```  
@@ -115,14 +115,14 @@ void BeginWaitCursor();
 ### Example  
  [!code-cpp[NVC_MFCDocView#43](../../mfc/codesnippet/cpp/ccmdtarget-class_1.cpp)]  
   
-##  <a name="ccmdtarget__ccmdtarget"></a>  CCmdTarget::CCmdTarget  
+##  <a name="ccmdtarget"></a>  CCmdTarget::CCmdTarget  
  Constructs a `CCmdTarget` object.  
   
 ```  
 CCmdTarget();
 ```  
   
-##  <a name="ccmdtarget__dooleverb"></a>  CCmdTarget::DoOleVerb  
+##  <a name="dooleverb"></a>  CCmdTarget::DoOleVerb  
  Causes an action specified by an OLE verb to be performed.  
   
 ```  
@@ -150,9 +150,9 @@ BOOL DoOleVerb(
  TRUE if successful, otherwise FALSE.  
   
 ### Remarks  
- This member function is basically an implementation of [IOleObject::DoVerb](http://msdn.microsoft.com/library/windows/desktop/ms694508). The possible actions are enumerated by [CCmdTarget::EnumOleVerbs](#ccmdtarget__enumoleverbs).  
+ This member function is basically an implementation of [IOleObject::DoVerb](http://msdn.microsoft.com/library/windows/desktop/ms694508). The possible actions are enumerated by [CCmdTarget::EnumOleVerbs](#enumoleverbs).  
   
-##  <a name="ccmdtarget__enableautomation"></a>  CCmdTarget::EnableAutomation  
+##  <a name="enableautomation"></a>  CCmdTarget::EnableAutomation  
  Call this function to enable OLE automation for an object.  
   
 ```  
@@ -162,7 +162,7 @@ void EnableAutomation();
 ### Remarks  
  This function is typically called from the constructor of your object and should only be called if a dispatch map has been declared for the class. For more information on automation see the articles [Automation Clients](../../mfc/automation-clients.md) and [Automation Servers](../../mfc/automation-servers.md).  
   
-##  <a name="ccmdtarget__enableconnections"></a>  CCmdTarget::EnableConnections  
+##  <a name="enableconnections"></a>  CCmdTarget::EnableConnections  
  Enables event firing over connection points.  
   
 ```  
@@ -172,7 +172,7 @@ void EnableConnections();
 ### Remarks  
  To enable connection points, call this member function in the constructor of your derived class.  
   
-##  <a name="ccmdtarget__enabletypelib"></a>  CCmdTarget::EnableTypeLib  
+##  <a name="enabletypelib"></a>  CCmdTarget::EnableTypeLib  
  Enables an object's type library.  
   
 ```  
@@ -182,7 +182,7 @@ void EnableTypeLib();
 ### Remarks  
  Call this member function in the constructor of your `CCmdTarget`-derived object if it provides type information. For more information, see Knowledge Base article Q185720, "HOWTO: Provide Type Information From an MFC Automation Server." Knowledge Base articles are available in the MSDN Library Visual Studio documentation or at [http://support.microsoft.com](http://support.microsoft.com/).  
   
-##  <a name="ccmdtarget__endwaitcursor"></a>  CCmdTarget::EndWaitCursor  
+##  <a name="endwaitcursor"></a>  CCmdTarget::EndWaitCursor  
  Call this function after you have called the `BeginWaitCursor` member function to return from the hourglass cursor to the previous cursor.  
   
 ```  
@@ -195,7 +195,7 @@ void EndWaitCursor();
 ### Example  
  [!code-cpp[NVC_MFCDocView#43](../../mfc/codesnippet/cpp/ccmdtarget-class_1.cpp)]  
   
-##  <a name="ccmdtarget__enumoleverbs"></a>  CCmdTarget::EnumOleVerbs  
+##  <a name="enumoleverbs"></a>  CCmdTarget::EnumOleVerbs  
  Enumerates an object's OLE verbs.  
   
 ```  
@@ -212,7 +212,7 @@ BOOL EnumOleVerbs(LPENUMOLEVERB* ppenumOleVerb);
 ### Remarks  
  This member function is basically an implementation of [IOleObject::EnumVerbs](http://msdn.microsoft.com/library/windows/desktop/ms692781).  
   
-##  <a name="ccmdtarget__fromidispatch"></a>  CCmdTarget::FromIDispatch  
+##  <a name="fromidispatch"></a>  CCmdTarget::FromIDispatch  
  Call this function to map an `IDispatch` pointer, received from automation member functions of a class, into the `CCmdTarget` object that implements the interfaces of the `IDispatch` object.  
   
 ```  
@@ -229,7 +229,7 @@ static CCmdTarget* PASCAL FromIDispatch(LPDISPATCH lpDispatch);
 ### Remarks  
  The result of this function is the inverse of a call to the member function `GetIDispatch`.  
   
-##  <a name="ccmdtarget__getdispatchiid"></a>  CCmdTarget::GetDispatchIID  
+##  <a name="getdispatchiid"></a>  CCmdTarget::GetDispatchIID  
  Gets the primary dispatch interface ID.  
   
 ```  
@@ -248,7 +248,7 @@ virtual BOOL GetDispatchIID(IID* pIID);
   
  For more information, see Knowledge Base article Q185720, "HOWTO: Provide Type Information From an MFC Automation Server." Knowledge Base articles are available in the MSDN Library Visual Studio documentation or at [http://support.microsoft.com](http://support.microsoft.com/).  
   
-##  <a name="ccmdtarget__getidispatch"></a>  CCmdTarget::GetIDispatch  
+##  <a name="getidispatch"></a>  CCmdTarget::GetIDispatch  
  Call this member function to retrieve the `IDispatch` pointer from an automation method that either returns an `IDispatch` pointer or takes an `IDispatch` pointer by reference.  
   
 ```  
@@ -265,7 +265,7 @@ LPDISPATCH GetIDispatch(BOOL bAddRef);
 ### Remarks  
  For objects that call `EnableAutomation` in their constructors, making them automation enabled, this function returns a pointer to the Foundation Class implementation of `IDispatch` that is used by clients who communicate via the `IDispatch` interface. Calling this function automatically adds a reference to the pointer, so it is not necessary to make a call to [IUnknown::AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379).  
   
-##  <a name="ccmdtarget__gettypeinfocount"></a>  CCmdTarget::GetTypeInfoCount  
+##  <a name="gettypeinfocount"></a>  CCmdTarget::GetTypeInfoCount  
  Retrieves the number of type information interfaces that an object provides.  
   
 ```  
@@ -280,7 +280,7 @@ virtual UINT GetTypeInfoCount();
   
  Derived classes should override this function to return the number of type information interfaces provided (either 0 or 1). If not overridden, **GetTypeInfoCount** returns 0. To override, use the [IMPLEMENT_OLETYPELIB](../../mfc/reference/type-library-access.md#implement_oletypelib) macro, which also implements `GetTypeLib` and `GetTypeLibCache`.  
   
-##  <a name="ccmdtarget__gettypeinfoofguid"></a>  CCmdTarget::GetTypeInfoOfGuid  
+##  <a name="gettypeinfoofguid"></a>  CCmdTarget::GetTypeInfoOfGuid  
  Retrieves the type description that corresponds to the specified GUID.  
   
 ```  
@@ -303,7 +303,7 @@ HRESULT GetTypeInfoOfGuid(
 ### Return Value  
  An HRESULT indicating the success or failure of the call. If successful, * `ppTypeInfo` points to the type information interface.  
   
-##  <a name="ccmdtarget__gettypelib"></a>  CCmdTarget::GetTypeLib  
+##  <a name="gettypelib"></a>  CCmdTarget::GetTypeLib  
  Gets a pointer to a type library.  
   
 ```  
@@ -325,7 +325,7 @@ virtual HRESULT GetTypeLib(
 ### Remarks  
  Derived classes should override this member function (if not overridden, `GetTypeLib` returns TYPE_E_CANTLOADLIBRARY). Use the [IMPLEMENT_OLETYPELIB](../../mfc/reference/type-library-access.md#implement_oletypelib) macro, which also implements `GetTypeInfoCount` and `GetTypeLibCache`.  
   
-##  <a name="ccmdtarget__gettypelibcache"></a>  CCmdTarget::GetTypeLibCache  
+##  <a name="gettypelibcache"></a>  CCmdTarget::GetTypeLibCache  
  Gets the type library cache.  
   
 ```  
@@ -338,7 +338,7 @@ virtual CTypeLibCache* GetTypeLibCache();
 ### Remarks  
  Derived classes should override this member function (if not overridden, **GetTypeLibCache** returns NULL). Use the [IMPLEMENT_OLETYPELIB](../../mfc/reference/type-library-access.md#implement_oletypelib) macro, which also implements `GetTypeInfoCount` and `GetTypeLib`.  
   
-##  <a name="ccmdtarget__isinvokeallowed"></a>  CCmdTarget::IsInvokeAllowed  
+##  <a name="isinvokeallowed"></a>  CCmdTarget::IsInvokeAllowed  
  This function is called by MFC's implementation of **IDispatch::Invoke** to determine if a given automation method (identified by `dispid`) can be invoked.  
   
 ```  
@@ -355,9 +355,9 @@ virtual BOOL IsInvokeAllowed(DISPID dispid);
 ### Remarks  
  If `IsInvokeAllowed` returns TRUE, **Invoke** proceeds to call the method; otherwise, `Invoke` will fail, returning E_UNEXPECTED.  
   
- Derived classes can override this function to return appropriate values (if not overridden, `IsInvokeAllowed` returns TRUE). See in particular [COleControl::IsInvokeAllowed](../../mfc/reference/colecontrol-class.md#colecontrol__isinvokeallowed).  
+ Derived classes can override this function to return appropriate values (if not overridden, `IsInvokeAllowed` returns TRUE). See in particular [COleControl::IsInvokeAllowed](../../mfc/reference/colecontrol-class.md#isinvokeallowed).  
   
-##  <a name="ccmdtarget__isresultexpected"></a>  CCmdTarget::IsResultExpected  
+##  <a name="isresultexpected"></a>  CCmdTarget::IsResultExpected  
  Use `IsResultExpected` to ascertain whether a client expects a return value from its call to an automation function.  
   
 ```  
@@ -374,7 +374,7 @@ BOOL IsResultExpected();
   
  `IsResultExpected` returns a nonzero value if called when an automation function call is not in progress.  
   
-##  <a name="ccmdtarget__oncmdmsg"></a>  CCmdTarget::OnCmdMsg  
+##  <a name="oncmdmsg"></a>  CCmdTarget::OnCmdMsg  
  Called by the framework to route and dispatch command messages and to handle the update of command user-interface objects.  
   
 ```  
@@ -423,7 +423,7 @@ virtual BOOL OnCmdMsg(
   
  [!code-cpp[NVC_MFCDocView#45](../../mfc/codesnippet/cpp/ccmdtarget-class_3.cpp)]  
   
-##  <a name="ccmdtarget__onfinalrelease"></a>  CCmdTarget::OnFinalRelease  
+##  <a name="onfinalrelease"></a>  CCmdTarget::OnFinalRelease  
  Called by the framework when the last OLE reference to or from the object is released.  
   
 ```  
@@ -433,7 +433,7 @@ virtual void OnFinalRelease();
 ### Remarks  
  Override this function to provide special handling for this situation. The default implementation deletes the object.  
   
-##  <a name="ccmdtarget__restorewaitcursor"></a>  CCmdTarget::RestoreWaitCursor  
+##  <a name="restorewaitcursor"></a>  CCmdTarget::RestoreWaitCursor  
  Call this function to restore the appropriate hourglass cursor after the system cursor has changed (for example, after a message box has opened and then closed while in the middle of a lengthy operation).  
   
 ```  

@@ -51,25 +51,25 @@ class CMetaFileDC : public CDC
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMetaFileDC::CMetaFileDC](#cmetafiledc__cmetafiledc)|Constructs a `CMetaFileDC` object.|  
+|[CMetaFileDC::CMetaFileDC](#cmetafiledc)|Constructs a `CMetaFileDC` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMetaFileDC::Close](#cmetafiledc__close)|Closes the device context and creates a metafile handle.|  
-|[CMetaFileDC::CloseEnhanced](#cmetafiledc__closeenhanced)|Closes an enhanced-metafile device context and creates an enhanced-metafile handle.|  
-|[CMetaFileDC::Create](#cmetafiledc__create)|Creates the Windows metafile device context and attaches it to the `CMetaFileDC` object.|  
-|[CMetaFileDC::CreateEnhanced](#cmetafiledc__createenhanced)|Creates a metafile device context for an enhanced-format metafile.|  
+|[CMetaFileDC::Close](#close)|Closes the device context and creates a metafile handle.|  
+|[CMetaFileDC::CloseEnhanced](#closeenhanced)|Closes an enhanced-metafile device context and creates an enhanced-metafile handle.|  
+|[CMetaFileDC::Create](#create)|Creates the Windows metafile device context and attaches it to the `CMetaFileDC` object.|  
+|[CMetaFileDC::CreateEnhanced](#createenhanced)|Creates a metafile device context for an enhanced-format metafile.|  
   
 ## Remarks  
- To implement a Windows metafile, first create a `CMetaFileDC` object. Invoke the `CMetaFileDC` constructor, then call the [Create](#cmetafiledc__create) member function, which creates a Windows metafile device context and attaches it to the `CMetaFileDC` object.  
+ To implement a Windows metafile, first create a `CMetaFileDC` object. Invoke the `CMetaFileDC` constructor, then call the [Create](#create) member function, which creates a Windows metafile device context and attaches it to the `CMetaFileDC` object.  
   
  Next send the `CMetaFileDC` object the sequence of `CDC` GDI commands that you intend for it to replay. Only those GDI commands that create output, such as `MoveTo` and `LineTo`, can be used.  
   
  After you have sent the desired commands to the metafile, call the **Close** member function, which closes the metafile device contexts and returns a metafile handle. Then dispose of the `CMetaFileDC` object.  
   
- [CDC::PlayMetaFile](../../mfc/reference/cdc-class.md#cdc__playmetafile) can then use the metafile handle to play the metafile repeatedly. The metafile can also be manipulated by Windows functions such as [CopyMetaFile](http://msdn.microsoft.com/library/windows/desktop/dd183480), which copies a metafile to disk.  
+ [CDC::PlayMetaFile](../../mfc/reference/cdc-class.md#playmetafile) can then use the metafile handle to play the metafile repeatedly. The metafile can also be manipulated by Windows functions such as [CopyMetaFile](http://msdn.microsoft.com/library/windows/desktop/dd183480), which copies a metafile to disk.  
   
  When the metafile is no longer needed, delete it from memory with the [DeleteMetaFile](http://msdn.microsoft.com/library/windows/desktop/dd183537) Windows function.  
   
@@ -89,8 +89,8 @@ class CMetaFileDC : public CDC
 ## Requirements  
  **Header:** afxext.h  
   
-##  <a name="cmetafiledc__close"></a>  CMetaFileDC::Close  
- Closes the metafile device context and creates a Windows metafile handle that can be used to play the metafile by using the [CDC::PlayMetaFile](../../mfc/reference/cdc-class.md#cdc__playmetafile) member function.  
+##  <a name="close"></a>  CMetaFileDC::Close  
+ Closes the metafile device context and creates a Windows metafile handle that can be used to play the metafile by using the [CDC::PlayMetaFile](../../mfc/reference/cdc-class.md#playmetafile) member function.  
   
 ```  
 HMETAFILE Close();
@@ -104,7 +104,7 @@ HMETAFILE Close();
   
  Delete the metafile after use by calling the Windows [DeleteMetaFile](http://msdn.microsoft.com/library/windows/desktop/dd183537) function.  
   
-##  <a name="cmetafiledc__closeenhanced"></a>  CMetaFileDC::CloseEnhanced  
+##  <a name="closeenhanced"></a>  CMetaFileDC::CloseEnhanced  
  Closes an enhanced-metafile device context and returns a handle that identifies an enhanced-format metafile.  
   
 ```  
@@ -135,7 +135,7 @@ HENHMETAFILE CloseEnhanced();
   
  When the application no longer needs the enhanced metafile handle, it should release the handle by calling the Win32 **DeleteEnhMetaFile** function.  
   
-##  <a name="cmetafiledc__cmetafiledc"></a>  CMetaFileDC::CMetaFileDC  
+##  <a name="cmetafiledc"></a>  CMetaFileDC::CMetaFileDC  
  Construct a `CMetaFileDC` object in two steps.  
   
 ```  
@@ -145,7 +145,7 @@ CMetaFileDC();
 ### Remarks  
  First, call `CMetaFileDC`, then call **Create**, which creates the Windows metafile device context and attaches it to the `CMetaFileDC` object.  
   
-##  <a name="cmetafiledc__create"></a>  CMetaFileDC::Create  
+##  <a name="create"></a>  CMetaFileDC::Create  
  Construct a `CMetaFileDC` object in two steps.  
   
 ```  
@@ -162,7 +162,7 @@ BOOL Create(LPCTSTR lpszFilename = NULL);
 ### Remarks  
  First, call the constructor `CMetaFileDC`, then call **Create**, which creates the Windows metafile device context and attaches it to the `CMetaFileDC` object.  
   
-##  <a name="cmetafiledc__createenhanced"></a>  CMetaFileDC::CreateEnhanced  
+##  <a name="createenhanced"></a>  CMetaFileDC::CreateEnhanced  
  Creates a device context for an enhanced-format metafile.  
   
 ```  

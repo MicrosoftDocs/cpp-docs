@@ -51,13 +51,13 @@ class CDialogBar : public CControlBar
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDialogBar::CDialogBar](#cdialogbar__cdialogbar)|Constructs a `CDialogBar` object.|  
+|[CDialogBar::CDialogBar](#cdialogbar)|Constructs a `CDialogBar` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDialogBar::Create](#cdialogbar__create)|Creates a Windows dialog bar and attaches it to the `CDialogBar` object.|  
+|[CDialogBar::Create](#create)|Creates a Windows dialog bar and attaches it to the `CDialogBar` object.|  
   
 ## Remarks  
  A dialog bar resembles a dialog box in that it contains standard Windows controls that the user can tab between. Another similarity is that you create a dialog template to represent the dialog bar.  
@@ -83,14 +83,14 @@ class CDialogBar : public CControlBar
 ## Requirements  
  **Header:** afxext.h  
   
-##  <a name="cdialogbar__cdialogbar"></a>  CDialogBar::CDialogBar  
+##  <a name="cdialogbar"></a>  CDialogBar::CDialogBar  
  Constructs a `CDialogBar` object.  
   
 ```  
 CDialogBar();
 ```  
   
-##  <a name="cdialogbar__create"></a>  CDialogBar::Create  
+##  <a name="create"></a>  CDialogBar::Create  
  Loads the dialog-box resource template specified by `lpszTemplateName` or `nIDTemplate`, creates the dialog-bar window, sets its style, and associates it with the `CDialogBar` object.  
   
 ```  

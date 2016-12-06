@@ -53,14 +53,14 @@ class CArchiveException : public CException
   
 |Name|Description|  
 |----------|-----------------|  
-|[CArchiveException::CArchiveException](#carchiveexception__carchiveexception)|Constructs a `CArchiveException` object.|  
+|[CArchiveException::CArchiveException](#carchiveexception)|Constructs a `CArchiveException` object.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CArchiveException::m_cause](#carchiveexception__m_cause)|Indicates the exception cause.|  
-|[CArchiveException::m_strFileName](#carchiveexception__m_strfilename)|Specifies the name of the file for this exception condition.|  
+|[CArchiveException::m_cause](#m_cause)|Indicates the exception cause.|  
+|[CArchiveException::m_strFileName](#m_strfilename)|Specifies the name of the file for this exception condition.|  
   
 ## Remarks  
  The `CArchiveException` class includes a public data member that indicates the cause of the exception.  
@@ -77,7 +77,7 @@ class CArchiveException : public CException
 ## Requirements  
  **Header:** afx.h  
   
-##  <a name="carchiveexception__carchiveexception"></a>  CArchiveException::CArchiveException  
+##  <a name="carchiveexception"></a>  CArchiveException::CArchiveException  
  Constructs a `CArchiveException` object, storing the value of `cause` in the object.  
   
 ```  
@@ -88,7 +88,7 @@ CArchiveException(
   
 ### Parameters  
  `cause`  
- An enumerated type variable that indicates the reason for the exception. For a list of the enumerators, see the [m_cause](#carchiveexception__m_cause) data member.  
+ An enumerated type variable that indicates the reason for the exception. For a list of the enumerators, see the [m_cause](#m_cause) data member.  
   
  `lpszArchiveName`  
  Points to a string containing the name of the `CArchive` object causing the exception.  
@@ -98,7 +98,7 @@ CArchiveException(
   
  Do not use this constructor directly; instead, call the global function `AfxThrowArchiveException`.  
   
-##  <a name="carchiveexception__m_cause"></a>  CArchiveException::m_cause  
+##  <a name="m_cause"></a>  CArchiveException::m_cause  
  Specifies the cause of the exception.  
   
 ```  
@@ -130,7 +130,7 @@ int m_cause;
     > [!NOTE]
     > **CArchiveException::generic** is deprecated. Use **genericException** instead. If **generic** is used in an application and built with /clr, there will be syntax errors that are not easy to decipher.  
   
-##  <a name="carchiveexception__m_strfilename"></a>  CArchiveException::m_strFileName  
+##  <a name="m_strfilename"></a>  CArchiveException::m_strFileName  
  Specifies the name of the file for this exception condition.  
   
 ```  

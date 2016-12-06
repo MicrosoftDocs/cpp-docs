@@ -50,20 +50,20 @@ class CLinearTransition : public CBaseTransition;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CLinearTransition::CLinearTransition](#clineartransition__clineartransition)|Constructs a linear transition object and initializes it with duration and final value.|  
+|[CLinearTransition::CLinearTransition](#clineartransition)|Constructs a linear transition object and initializes it with duration and final value.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CLinearTransition::Create](#clineartransition__create)|Calls the transition library to create encapsulated transition COM object. (Overrides [CBaseTransition::Create](../../mfc/reference/cbasetransition-class.md#cbasetransition__create).)|  
+|[CLinearTransition::Create](#create)|Calls the transition library to create encapsulated transition COM object. (Overrides [CBaseTransition::Create](../../mfc/reference/cbasetransition-class.md#create).)|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CLinearTransition::m_dblFinalValue](#clineartransition__m_dblfinalvalue)|The value of the animation variable at the end of the transition.|  
-|[CLinearTransition::m_duration](#clineartransition__m_duration)|The duration of the transition.|  
+|[CLinearTransition::m_dblFinalValue](#m_dblfinalvalue)|The value of the animation variable at the end of the transition.|  
+|[CLinearTransition::m_duration](#m_duration)|The duration of the transition.|  
   
 ## Remarks  
  During a linear transition, the value of the animation variable transitions linearly from its initial value to a specified final value. Because all transitions are cleared automatically, it's recommended to allocated them using operator new. The encapsulated IUIAnimationTransition COM object is created by CAnimationController::AnimateGroup, until then it's NULL. Changing member variables after creation of this COM object has no effect.  
@@ -78,7 +78,7 @@ class CLinearTransition : public CBaseTransition;
 ## Requirements  
  **Header:** afxanimationcontroller.h  
   
-##  <a name="clineartransition__clineartransition"></a>  CLinearTransition::CLinearTransition  
+##  <a name="clineartransition"></a>  CLinearTransition::CLinearTransition  
  Constructs a linear transition object and initializes it with duration and final value.  
   
 ```  
@@ -94,7 +94,7 @@ CLinearTransition(
  `dblFinalValue`  
  The value of the animation variable at the end of the transition.  
   
-##  <a name="clineartransition__create"></a>  CLinearTransition::Create  
+##  <a name="create"></a>  CLinearTransition::Create  
  Calls the transition library to create encapsulated transition COM object.  
   
 ```  
@@ -110,14 +110,14 @@ virtual BOOL Create(
 ### Return Value  
  TRUE if transition is created successfully; otherwise FALSE.  
   
-##  <a name="clineartransition__m_dblfinalvalue"></a>  CLinearTransition::m_dblFinalValue  
+##  <a name="m_dblfinalvalue"></a>  CLinearTransition::m_dblFinalValue  
  The value of the animation variable at the end of the transition.  
   
 ```  
 DOUBLE m_dblFinalValue;  
 ```  
   
-##  <a name="clineartransition__m_duration"></a>  CLinearTransition::m_duration  
+##  <a name="m_duration"></a>  CLinearTransition::m_duration  
  The duration of the transition.  
   
 ```  

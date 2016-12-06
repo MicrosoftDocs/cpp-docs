@@ -50,7 +50,7 @@ class CD2DRoundedRect : public D2D1_ROUNDED_RECT;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CD2DRoundedRect::CD2DRoundedRect](#cd2droundedrect__cd2droundedrect)|Overloaded. Constructs a `CD2DRoundedRect` object from `D2D1_ROUNDED_RECT` object.|  
+|[CD2DRoundedRect::CD2DRoundedRect](#cd2droundedrect)|Overloaded. Constructs a `CD2DRoundedRect` object from `D2D1_ROUNDED_RECT` object.|  
   
 ## Inheritance Hierarchy  
  `D2D1_ROUNDED_RECT`  
@@ -60,7 +60,7 @@ class CD2DRoundedRect : public D2D1_ROUNDED_RECT;
 ## Requirements  
  **Header:** afxrendertarget.h  
   
-##  <a name="cd2droundedrect__cd2droundedrect"></a>  CD2DRoundedRect::CD2DRoundedRect  
+##  <a name="cd2droundedrect"></a>  CD2DRoundedRect::CD2DRoundedRect  
  Constructs a CD2DRoundedRect object from CD2DRectF object.  
   
 ```  

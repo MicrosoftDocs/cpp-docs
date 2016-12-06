@@ -52,33 +52,33 @@ class CList : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CList::CList](#clist__clist)|Constructs an empty ordered list.|  
+|[CList::CList](#clist)|Constructs an empty ordered list.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CList::AddHead](#clist__addhead)|Adds an element (or all the elements in another list) to the head of the list (makes a new head).|  
-|[CList::AddTail](#clist__addtail)|Adds an element (or all the elements in another list) to the tail of the list (makes a new tail).|  
-|[CList::Find](#clist__find)|Gets the position of an element specified by pointer value.|  
-|[CList::FindIndex](#clist__findindex)|Gets the position of an element specified by a zero-based index.|  
-|[CList::GetAt](#clist__getat)|Gets the element at a given position.|  
-|[CList::GetCount](#clist__getcount)|Returns the number of elements in this list.|  
-|[CList::GetHead](#clist__gethead)|Returns the head element of the list (cannot be empty).|  
-|[CList::GetHeadPosition](#clist__getheadposition)|Returns the position of the head element of the list.|  
-|[CList::GetNext](#clist__getnext)|Gets the next element for iterating.|  
-|[CList::GetPrev](#clist__getprev)|Gets the previous element for iterating.|  
-|[CList::GetSize](#clist__getsize)|Returns the number of elements in this list.|  
-|[CList::GetTail](#clist__gettail)|Returns the tail element of the list (cannot be empty).|  
-|[CList::GetTailPosition](#clist__gettailposition)|Returns the position of the tail element of the list.|  
-|[CList::InsertAfter](#clist__insertafter)|Inserts a new element after a given position.|  
-|[CList::InsertBefore](#clist__insertbefore)|Inserts a new element before a given position.|  
-|[CList::IsEmpty](#clist__isempty)|Tests for the empty list condition (no elements).|  
-|[CList::RemoveAll](#clist__removeall)|Removes all the elements from this list.|  
-|[CList::RemoveAt](#clist__removeat)|Removes an element from this list, specified by position.|  
-|[CList::RemoveHead](#clist__removehead)|Removes the element from the head of the list.|  
-|[CList::RemoveTail](#clist__removetail)|Removes the element from the tail of the list.|  
-|[CList::SetAt](#clist__setat)|Sets the element at a given position.|  
+|[CList::AddHead](#addhead)|Adds an element (or all the elements in another list) to the head of the list (makes a new head).|  
+|[CList::AddTail](#addtail)|Adds an element (or all the elements in another list) to the tail of the list (makes a new tail).|  
+|[CList::Find](#find)|Gets the position of an element specified by pointer value.|  
+|[CList::FindIndex](#findindex)|Gets the position of an element specified by a zero-based index.|  
+|[CList::GetAt](#getat)|Gets the element at a given position.|  
+|[CList::GetCount](#getcount)|Returns the number of elements in this list.|  
+|[CList::GetHead](#gethead)|Returns the head element of the list (cannot be empty).|  
+|[CList::GetHeadPosition](#getheadposition)|Returns the position of the head element of the list.|  
+|[CList::GetNext](#getnext)|Gets the next element for iterating.|  
+|[CList::GetPrev](#getprev)|Gets the previous element for iterating.|  
+|[CList::GetSize](#getsize)|Returns the number of elements in this list.|  
+|[CList::GetTail](#gettail)|Returns the tail element of the list (cannot be empty).|  
+|[CList::GetTailPosition](#gettailposition)|Returns the position of the tail element of the list.|  
+|[CList::InsertAfter](#insertafter)|Inserts a new element after a given position.|  
+|[CList::InsertBefore](#insertbefore)|Inserts a new element before a given position.|  
+|[CList::IsEmpty](#isempty)|Tests for the empty list condition (no elements).|  
+|[CList::RemoveAll](#removeall)|Removes all the elements from this list.|  
+|[CList::RemoveAt](#removeat)|Removes an element from this list, specified by position.|  
+|[CList::RemoveHead](#removehead)|Removes the element from the head of the list.|  
+|[CList::RemoveTail](#removetail)|Removes the element from the tail of the list.|  
+|[CList::SetAt](#setat)|Sets the element at a given position.|  
   
 #### Parameters  
  `TYPE`  
@@ -111,7 +111,7 @@ class CList : public CObject
 ## Requirements  
  **Header:** afxtempl.h  
   
-##  <a name="clist__addhead"></a>  CList::AddHead  
+##  <a name="addhead"></a>  CList::AddHead  
  Adds a new element or list of elements to the head of this list.  
   
 ```  
@@ -140,7 +140,7 @@ void AddHead(CList* pNewList);
 ### Example  
  [!code-cpp[NVC_MFCCollections#36](../../mfc/codesnippet/cpp/clist-class_2.cpp)]  
   
-##  <a name="clist__addtail"></a>  CList::AddTail  
+##  <a name="addtail"></a>  CList::AddTail  
  Adds a new element or list of elements to the tail of this list.  
   
 ```  
@@ -169,7 +169,7 @@ void AddTail(CList* pNewList);
 ### Example  
  [!code-cpp[NVC_MFCCollections#37](../../mfc/codesnippet/cpp/clist-class_3.cpp)]  
   
-##  <a name="clist__clist"></a>  CList::CList  
+##  <a name="clist"></a>  CList::CList  
  Constructs an empty ordered list.  
   
 ```  
@@ -186,7 +186,7 @@ CList(INT_PTR nBlockSize = 10);
 ### Example  
  [!code-cpp[NVC_MFCCollections#38](../../mfc/codesnippet/cpp/clist-class_4.cpp)]  
   
-##  <a name="clist__find"></a>  CList::Find  
+##  <a name="find"></a>  CList::Find  
  Searches the list sequentially to find the first element matching the specified `searchValue`.  
   
 ```  
@@ -213,7 +213,7 @@ POSITION Find(
 ### Example  
  [!code-cpp[NVC_MFCCollections#39](../../mfc/codesnippet/cpp/clist-class_5.cpp)]  
   
-##  <a name="clist__findindex"></a>  CList::FindIndex  
+##  <a name="findindex"></a>  CList::FindIndex  
  Uses the value of `nIndex` as an index into the list.  
   
 ```  
@@ -235,7 +235,7 @@ POSITION FindIndex(INT_PTR nIndex) const;
 ### Example  
  [!code-cpp[NVC_MFCCollections#40](../../mfc/codesnippet/cpp/clist-class_6.cpp)]  
   
-##  <a name="clist__getat"></a>  CList::GetAt  
+##  <a name="getat"></a>  CList::GetAt  
  Gets the list element at a given position.  
   
 ```  
@@ -263,9 +263,9 @@ const TYPE& GetAt(POSITION position) const;
  You must ensure that your **POSITION** value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
   
 ### Example  
-  See the example for [CList::GetHeadPosition](#clist__getheadposition).  
+  See the example for [CList::GetHeadPosition](#getheadposition).  
   
-##  <a name="clist__getcount"></a>  CList::GetCount  
+##  <a name="getcount"></a>  CList::GetCount  
  Gets the number of elements in this list.  
   
 ```  
@@ -278,12 +278,12 @@ INT_PTR GetCount() const;
  An integer value containing the element count.  
   
 ### Remarks  
- Calling this method will generate the same result as the [CList::GetSize](#clist__getsize) method.  
+ Calling this method will generate the same result as the [CList::GetSize](#getsize) method.  
   
 ### Example  
-  See the example for [CList::RemoveHead](#clist__removehead).  
+  See the example for [CList::RemoveHead](#removehead).  
   
-##  <a name="clist__gethead"></a>  CList::GetHead  
+##  <a name="gethead"></a>  CList::GetHead  
  Gets the head element (or a reference to the head element) of this list.  
   
 ```  
@@ -304,12 +304,12 @@ TYPE& GetHead();
  If the list is not **const**, `GetHead` returns a reference to the element at the head of the list. This allows the function to be used on either side of an assignment statement and thus allows the list entries to be modified.  
   
 ### Remarks  
- You must ensure that the list is not empty before calling `GetHead`. If the list is empty, then the Debug version of the Microsoft Foundation Class Library asserts. Use [IsEmpty](#clist__isempty) to verify that the list contains elements.  
+ You must ensure that the list is not empty before calling `GetHead`. If the list is empty, then the Debug version of the Microsoft Foundation Class Library asserts. Use [IsEmpty](#isempty) to verify that the list contains elements.  
   
 ### Example  
  [!code-cpp[NVC_MFCCollections#41](../../mfc/codesnippet/cpp/clist-class_7.cpp)]  
   
-##  <a name="clist__getheadposition"></a>  CList::GetHeadPosition  
+##  <a name="getheadposition"></a>  CList::GetHeadPosition  
  Gets the position of the head element of this list.  
   
 ```  
@@ -324,7 +324,7 @@ POSITION GetHeadPosition() const;
 ### Example  
  [!code-cpp[NVC_MFCCollections#42](../../mfc/codesnippet/cpp/clist-class_8.cpp)]  
   
-##  <a name="clist__getnext"></a>  CList::GetNext  
+##  <a name="getnext"></a>  CList::GetNext  
  Gets the list element identified by `rPosition`, then sets `rPosition` to the **POSITION** value of the next entry in the list.  
   
 ```  
@@ -341,7 +341,7 @@ const TYPE& GetNext(POSITION& rPosition) const;
  Template parameter specifying the type of the elements in the list.  
   
  `rPosition`  
- A reference to a **POSITION** value returned by a previous `GetNext`, [GetHeadPosition](#clist__getheadposition), or other member function call.  
+ A reference to a **POSITION** value returned by a previous `GetNext`, [GetHeadPosition](#getheadposition), or other member function call.  
   
 ### Return Value  
  If the list is **const**, `GetNext` returns a copy of an element of the list. This allows the function to be used only on the right side of an assignment statement and protects the list from modification.  
@@ -358,7 +358,7 @@ const TYPE& GetNext(POSITION& rPosition) const;
 ### Example  
  [!code-cpp[NVC_MFCCollections#43](../../mfc/codesnippet/cpp/clist-class_9.cpp)]  
   
-##  <a name="clist__getprev"></a>  CList::GetPrev  
+##  <a name="getprev"></a>  CList::GetPrev  
  Gets the list element identified by `rPosition`, then sets `rPosition` to the **POSITION** value of the previous entry in the list.  
   
 ```  
@@ -392,7 +392,7 @@ const TYPE& GetPrev(POSITION& rPosition) const;
 ### Example  
  [!code-cpp[NVC_MFCCollections#44](../../mfc/codesnippet/cpp/clist-class_10.cpp)]  
   
-##  <a name="clist__getsize"></a>  CList::GetSize  
+##  <a name="getsize"></a>  CList::GetSize  
  Returns the number of list elements.  
   
 ```  
@@ -405,12 +405,12 @@ INT_PTR GetSize() const;
  The number of items in the list.  
   
 ### Remarks  
- Call this method to retrieve the number of elements in the list.  Calling this method will generate the same result as the [CList::GetCount](#clist__getcount) method.  
+ Call this method to retrieve the number of elements in the list.  Calling this method will generate the same result as the [CList::GetCount](#getcount) method.  
   
 ### Example  
  [!code-cpp[NVC_MFCCollections#45](../../mfc/codesnippet/cpp/clist-class_11.cpp)]  
   
-##  <a name="clist__gettail"></a>  CList::GetTail  
+##  <a name="gettail"></a>  CList::GetTail  
  Gets the `CObject` pointer that represents the tail element of this list.  
   
 ```  
@@ -427,15 +427,15 @@ const TYPE& GetTail() const;
  Template parameter specifying the type of elements in the list.  
   
 ### Return Value  
- See the return value description for [GetHead](../../mfc/reference/coblist-class.md#coblist__gethead).  
+ See the return value description for [GetHead](../../mfc/reference/coblist-class.md#gethead).  
   
 ### Remarks  
- You must ensure that the list is not empty before calling `GetTail`. If the list is empty, then the Debug version of the Microsoft Foundation Class Library asserts. Use [IsEmpty](../../mfc/reference/coblist-class.md#coblist__isempty) to verify that the list contains elements.  
+ You must ensure that the list is not empty before calling `GetTail`. If the list is empty, then the Debug version of the Microsoft Foundation Class Library asserts. Use [IsEmpty](../../mfc/reference/coblist-class.md#isempty) to verify that the list contains elements.  
   
 ### Example  
  [!code-cpp[NVC_MFCCollections#46](../../mfc/codesnippet/cpp/clist-class_12.cpp)]  
   
-##  <a name="clist__gettailposition"></a>  CList::GetTailPosition  
+##  <a name="gettailposition"></a>  CList::GetTailPosition  
  Gets the position of the tail element of this list; **NULL** if the list is empty.  
   
 ```  
@@ -450,7 +450,7 @@ POSITION GetTailPosition() const;
 ### Example  
  [!code-cpp[NVC_MFCCollections#47](../../mfc/codesnippet/cpp/clist-class_13.cpp)]  
   
-##  <a name="clist__insertafter"></a>  CList::InsertAfter  
+##  <a name="insertafter"></a>  CList::InsertAfter  
  Adds an element to this list after the element at the specified position.  
   
 ```  
@@ -474,7 +474,7 @@ POSITION InsertAfter(
 ### Example  
  [!code-cpp[NVC_MFCCollections#48](../../mfc/codesnippet/cpp/clist-class_14.cpp)]  
   
-##  <a name="clist__insertbefore"></a>  CList::InsertBefore  
+##  <a name="insertbefore"></a>  CList::InsertBefore  
  Adds an element to this list before the element at the specified position.  
   
 ```  
@@ -501,7 +501,7 @@ POSITION InsertBefore(
 ### Example  
  [!code-cpp[NVC_MFCCollections#49](../../mfc/codesnippet/cpp/clist-class_15.cpp)]  
   
-##  <a name="clist__isempty"></a>  CList::IsEmpty  
+##  <a name="isempty"></a>  CList::IsEmpty  
  Indicates whether this list contains no elements.  
   
 ```  
@@ -516,7 +516,7 @@ BOOL IsEmpty() const;
 ### Example  
  [!code-cpp[NVC_MFCCollections#50](../../mfc/codesnippet/cpp/clist-class_16.cpp)]  
   
-##  <a name="clist__removeall"></a>  CList::RemoveAll  
+##  <a name="removeall"></a>  CList::RemoveAll  
  Removes all the elements from this list and frees the associated memory.  
   
 ```  
@@ -529,7 +529,7 @@ void RemoveAll();
 ### Example  
  [!code-cpp[NVC_MFCCollections#51](../../mfc/codesnippet/cpp/clist-class_17.cpp)]  
   
-##  <a name="clist__removeat"></a>  CList::RemoveAt  
+##  <a name="removeat"></a>  CList::RemoveAt  
  Removes the specified element from this list.  
   
 ```  
@@ -546,7 +546,7 @@ void RemoveAt(POSITION position);
 ### Example  
  [!code-cpp[NVC_MFCCollections#52](../../mfc/codesnippet/cpp/clist-class_18.cpp)]  
   
-##  <a name="clist__removehead"></a>  CList::RemoveHead  
+##  <a name="removehead"></a>  CList::RemoveHead  
  Removes the element from the head of the list and returns a pointer to it.  
   
 ```  
@@ -561,12 +561,12 @@ TYPE RemoveHead();
  The element previously at the head of the list.  
   
 ### Remarks  
- You must ensure that the list is not empty before calling `RemoveHead`. If the list is empty, then the Debug version of the Microsoft Foundation Class Library asserts. Use [IsEmpty](#clist__isempty) to verify that the list contains elements.  
+ You must ensure that the list is not empty before calling `RemoveHead`. If the list is empty, then the Debug version of the Microsoft Foundation Class Library asserts. Use [IsEmpty](#isempty) to verify that the list contains elements.  
   
 ### Example  
  [!code-cpp[NVC_MFCCollections#53](../../mfc/codesnippet/cpp/clist-class_19.cpp)]  
   
-##  <a name="clist__removetail"></a>  CList::RemoveTail  
+##  <a name="removetail"></a>  CList::RemoveTail  
  Removes the element from the tail of the list and returns a pointer to it.  
   
 ```  
@@ -581,12 +581,12 @@ TYPE RemoveTail();
  The element that was at the tail of the list.  
   
 ### Remarks  
- You must ensure that the list is not empty before calling `RemoveTail`. If the list is empty, then the Debug version of the Microsoft Foundation Class Library asserts. Use [IsEmpty](#clist__isempty) to verify that the list contains elements.  
+ You must ensure that the list is not empty before calling `RemoveTail`. If the list is empty, then the Debug version of the Microsoft Foundation Class Library asserts. Use [IsEmpty](#isempty) to verify that the list contains elements.  
   
 ### Example  
  [!code-cpp[NVC_MFCCollections#54](../../mfc/codesnippet/cpp/clist-class_20.cpp)]  
   
-##  <a name="clist__setat"></a>  CList::SetAt  
+##  <a name="setat"></a>  CList::SetAt  
  A variable of type **POSITION** is a key for the list.  
   
 ```  

@@ -579,7 +579,7 @@ The classes in the following list are included in the Microsoft Foundation Class
  Extends the functionality of [CFrameWnd Class](../../mfc/reference/cframewnd-class.md), a Windows Multiple Document Interface (MDI) frame window.  
   
  [CMDITabInfo Class](../../mfc/reference/cmditabinfo-class.md)  
- Used to pass parameters to [CMDIFrameWndEx::EnableMDITabbedGroups](../../mfc/reference/cmdiframewndex-class.md#cmdiframewndex__enablemditabbedgroups) method. Set members of this class to control the behavior of MDI tabbed groups.  
+ Used to pass parameters to [CMDIFrameWndEx::EnableMDITabbedGroups](../../mfc/reference/cmdiframewndex-class.md#enablemditabbedgroups) method. Set members of this class to control the behavior of MDI tabbed groups.  
   
  [CMemFile Class](../../mfc/reference/cmemfile-class.md)  
  The [CFile Class](../../mfc/reference/cfile-class.md)-derived class that supports memory files.  
@@ -834,7 +834,7 @@ The classes in the following list are included in the Microsoft Foundation Class
  Manages toolbar images loaded from application resources or from files.  
   
  [CMFCToolBarInfo Class](../../mfc/reference/cmfctoolbarinfo-class.md)  
- Contains the resource IDs of toolbar images in various states. `CMFCToolBarInfo` is a helper class that is used as a parameter of the [CMFCToolBar::LoadToolBarEx](../../mfc/reference/cmfctoolbar-class.md#cmfctoolbar__loadtoolbarex) method.  
+ Contains the resource IDs of toolbar images in various states. `CMFCToolBarInfo` is a helper class that is used as a parameter of the [CMFCToolBar::LoadToolBarEx](../../mfc/reference/cmfctoolbar-class.md#loadtoolbarex) method.  
   
  [CMFCToolBarMenuButton Class](../../mfc/reference/cmfctoolbarmenubutton-class.md)  
  A toolbar button that contains a pop-up menu.  

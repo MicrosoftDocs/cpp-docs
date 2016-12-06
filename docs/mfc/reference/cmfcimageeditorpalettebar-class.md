@@ -50,8 +50,8 @@ class CMFCImageEditorPaletteBar : public CMFCToolBar
 |||  
 |-|-|  
 |Name|Description|  
-|[CMFCImageEditorPaletteBar::GetRowHeight](#cmfcimageeditorpalettebar__getrowheight)|Returns the height of toolbar buttons. (Overrides [CMFCToolBar::GetRowHeight](../../mfc/reference/cmfctoolbar-class.md#cmfctoolbar__getrowheight).)|  
-|[CMFCImageEditorPaletteBar::IsButtonExtraSizeAvailable](#cmfcimageeditorpalettebar__isbuttonextrasizeavailable)|Determines whether the toolbar can display buttons that have extended borders. (Overrides [CMFCToolBar::IsButtonExtraSizeAvailable](../../mfc/reference/cmfctoolbar-class.md#cmfctoolbar__isbuttonextrasizeavailable).)|  
+|[CMFCImageEditorPaletteBar::GetRowHeight](#getrowheight)|Returns the height of toolbar buttons. (Overrides [CMFCToolBar::GetRowHeight](../../mfc/reference/cmfctoolbar-class.md#getrowheight).)|  
+|[CMFCImageEditorPaletteBar::IsButtonExtraSizeAvailable](#isbuttonextrasizeavailable)|Determines whether the toolbar can display buttons that have extended borders. (Overrides [CMFCToolBar::IsButtonExtraSizeAvailable](../../mfc/reference/cmfctoolbar-class.md#isbuttonextrasizeavailable).)|  
   
 ### Remarks  
  This class is not intended to be used directly from your code.  
@@ -78,7 +78,7 @@ class CMFCImageEditorPaletteBar : public CMFCToolBar
 ## Requirements  
  **Header:** afximageeditordialog.h  
   
-##  <a name="cmfcimageeditorpalettebar__getrowheight"></a>  CMFCImageEditorPaletteBar::GetRowHeight  
+##  <a name="getrowheight"></a>  CMFCImageEditorPaletteBar::GetRowHeight  
  Returns the height of toolbar buttons.  
   
 ```  
@@ -90,7 +90,7 @@ virtual int GetRowHeight() const;
 ### Return Value  
  The height of each button on the toolbar.  
   
-##  <a name="cmfcimageeditorpalettebar__isbuttonextrasizeavailable"></a>  CMFCImageEditorPaletteBar::IsButtonExtraSizeAvailable  
+##  <a name="isbuttonextrasizeavailable"></a>  CMFCImageEditorPaletteBar::IsButtonExtraSizeAvailable  
  Determines whether the toolbar can display buttons that have extended borders.  
   
 ```  

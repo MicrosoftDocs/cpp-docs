@@ -49,31 +49,31 @@ struct CPrintInfo
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPrintInfo::GetFromPage](#cprintinfo__getfrompage)|Returns the number of the first page being printed.|  
-|[CPrintInfo::GetMaxPage](#cprintinfo__getmaxpage)|Returns the number of the last page of the document.|  
-|[CPrintInfo::GetMinPage](#cprintinfo__getminpage)|Returns the number of the first page of the document.|  
-|[CPrintInfo::GetOffsetPage](#cprintinfo__getoffsetpage)|Returns the number of the pages preceding the first page of a DocObject item being printed in a combined DocObject print job.|  
-|[CPrintInfo::GetToPage](#cprintinfo__gettopage)|Returns the number of the last page being printed.|  
-|[CPrintInfo::SetMaxPage](#cprintinfo__setmaxpage)|Sets the number of the last page of the document.|  
-|[CPrintInfo::SetMinPage](#cprintinfo__setminpage)|Sets the number of the first page of the document.|  
+|[CPrintInfo::GetFromPage](#getfrompage)|Returns the number of the first page being printed.|  
+|[CPrintInfo::GetMaxPage](#getmaxpage)|Returns the number of the last page of the document.|  
+|[CPrintInfo::GetMinPage](#getminpage)|Returns the number of the first page of the document.|  
+|[CPrintInfo::GetOffsetPage](#getoffsetpage)|Returns the number of the pages preceding the first page of a DocObject item being printed in a combined DocObject print job.|  
+|[CPrintInfo::GetToPage](#gettopage)|Returns the number of the last page being printed.|  
+|[CPrintInfo::SetMaxPage](#setmaxpage)|Sets the number of the last page of the document.|  
+|[CPrintInfo::SetMinPage](#setminpage)|Sets the number of the first page of the document.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPrintInfo::m_bContinuePrinting](#cprintinfo__m_bcontinueprinting)|Contains a flag indicating whether the framework should continue the print loop.|  
-|[CPrintInfo::m_bDirect](#cprintinfo__m_bdirect)|Contains a flag indicating whether the document is being printed directly (without displaying the Print dialog box).|  
-|[CPrintInfo::m_bDocObject](#cprintinfo__m_bdocobject)|Contains a flag indicating whether the document being printed is a DocObject.|  
-|[CPrintInfo::m_bPreview](#cprintinfo__m_bpreview)|Contains a flag indicating whether the document is being previewed.|  
-|[CPrintInfo::m_dwFlags](#cprintinfo__m_dwflags)|Specifies DocObject printing operations.|  
-|[CPrintInfo::m_lpUserData](#cprintinfo__m_lpuserdata)|Contains a pointer to a user-created structure.|  
-|[CPrintInfo::m_nCurPage](#cprintinfo__m_ncurpage)|Identifies the number of the page currently being printed.|  
-|[CPrintInfo::m_nJobNumber](#cprintinfo__m_njobnumber)|Specifies the job number assigned by the operating system for the current print job|  
-|[CPrintInfo::m_nNumPreviewPages](#cprintinfo__m_nnumpreviewpages)|Identifies the number of pages displayed in the preview window; either 1 or 2.|  
-|[CPrintInfo::m_nOffsetPage](#cprintinfo__m_noffsetpage)|Specifies offset of a particular DocObject's first page in a combined DocObject print job.|  
-|[CPrintInfo::m_pPD](#cprintinfo__m_ppd)|Contains a pointer to the `CPrintDialog` object used for the Print dialog box.|  
-|[CPrintInfo::m_rectDraw](#cprintinfo__m_rectdraw)|Specifies a rectangle defining the current usable page area.|  
-|[CPrintInfo::m_strPageDesc](#cprintinfo__m_strpagedesc)|Contains a format string for page-number display.|  
+|[CPrintInfo::m_bContinuePrinting](#m_bcontinueprinting)|Contains a flag indicating whether the framework should continue the print loop.|  
+|[CPrintInfo::m_bDirect](#m_bdirect)|Contains a flag indicating whether the document is being printed directly (without displaying the Print dialog box).|  
+|[CPrintInfo::m_bDocObject](#m_bdocobject)|Contains a flag indicating whether the document being printed is a DocObject.|  
+|[CPrintInfo::m_bPreview](#m_bpreview)|Contains a flag indicating whether the document is being previewed.|  
+|[CPrintInfo::m_dwFlags](#m_dwflags)|Specifies DocObject printing operations.|  
+|[CPrintInfo::m_lpUserData](#m_lpuserdata)|Contains a pointer to a user-created structure.|  
+|[CPrintInfo::m_nCurPage](#m_ncurpage)|Identifies the number of the page currently being printed.|  
+|[CPrintInfo::m_nJobNumber](#m_njobnumber)|Specifies the job number assigned by the operating system for the current print job|  
+|[CPrintInfo::m_nNumPreviewPages](#m_nnumpreviewpages)|Identifies the number of pages displayed in the preview window; either 1 or 2.|  
+|[CPrintInfo::m_nOffsetPage](#m_noffsetpage)|Specifies offset of a particular DocObject's first page in a combined DocObject print job.|  
+|[CPrintInfo::m_pPD](#m_ppd)|Contains a pointer to the `CPrintDialog` object used for the Print dialog box.|  
+|[CPrintInfo::m_rectDraw](#m_rectdraw)|Specifies a rectangle defining the current usable page area.|  
+|[CPrintInfo::m_strPageDesc](#m_strpagedesc)|Contains a format string for page-number display.|  
   
 ## Remarks  
  `CPrintInfo` is a structure and does not have a base class.  
@@ -94,7 +94,7 @@ struct CPrintInfo
 ## Requirements  
  **Header:** afxext.h  
   
-##  <a name="cprintinfo__getfrompage"></a>  CPrintInfo::GetFromPage  
+##  <a name="getfrompage"></a>  CPrintInfo::GetFromPage  
  Call this function to retrieve the number of the first page to be printed.  
   
 ```  
@@ -109,7 +109,7 @@ UINT GetFromPage() const;
 ### Remarks  
  This is the value specified by the user in the Print dialog box, and it is stored in the `CPrintDialog` object referenced by the `m_pPD` member. If the user has not specified a value, the default is the first page of the document.  
   
-##  <a name="cprintinfo__getmaxpage"></a>  CPrintInfo::GetMaxPage  
+##  <a name="getmaxpage"></a>  CPrintInfo::GetMaxPage  
  Call this function to retrieve the number of the last page of the document.  
   
 ```  
@@ -124,7 +124,7 @@ UINT GetMaxPage() const;
 ### Remarks  
  This value is stored in the `CPrintDialog` object referenced by the `m_pPD` member.  
   
-##  <a name="cprintinfo__getminpage"></a>  CPrintInfo::GetMinPage  
+##  <a name="getminpage"></a>  CPrintInfo::GetMinPage  
  Call this function to retrieve the number of the first page of the document.  
   
 ```  
@@ -139,7 +139,7 @@ UINT GetMinPage() const;
 ### Remarks  
  This value is stored in the `CPrintDialog` object referenced by the `m_pPD` member.  
   
-##  <a name="cprintinfo__getoffsetpage"></a>  CPrintInfo::GetOffsetPage  
+##  <a name="getoffsetpage"></a>  CPrintInfo::GetOffsetPage  
  Call this function to retrieve the offset when printing multiple DocObject items from a DocObject client.  
   
 ```  
@@ -154,7 +154,7 @@ UINT GetOffsetPage() const;
 ### Remarks  
  This value is referenced by the **m_nOffsetPage** member. The first page of your document will be numbered the **m_nOffsetPage** value + 1 when printed as a DocObject with other active documents. The **m_nOffsetPage** member is valid only if the **m_bDocObject** value is **TRUE**.  
   
-##  <a name="cprintinfo__gettopage"></a>  CPrintInfo::GetToPage  
+##  <a name="gettopage"></a>  CPrintInfo::GetToPage  
  Call this function to retrieve the number of the last page to be printed.  
   
 ```  
@@ -169,33 +169,33 @@ UINT GetToPage() const;
 ### Remarks  
  This is the value specified by the user in the Print dialog box, and it is stored in the `CPrintDialog` object referenced by the `m_pPD` member. If the user has not specified a value, the default is the last page of the document.  
   
-##  <a name="cprintinfo__m_bcontinueprinting"></a>  CPrintInfo::m_bContinuePrinting  
+##  <a name="m_bcontinueprinting"></a>  CPrintInfo::m_bContinuePrinting  
  Contains a flag indicating whether the framework should continue the print loop.  
   
 ### Remarks  
  If you are doing print-time pagination, you can set this member to **FALSE** in your override of `CView::OnPrepareDC` once the end of the document has been reached. You do not have to modify this variable if you have specified the length of the document at the beginning of the print job using the `SetMaxPage` member function. The `m_bContinuePrinting` member is a public variable of type **BOOL**.  
   
-##  <a name="cprintinfo__m_bdirect"></a>  CPrintInfo::m_bDirect  
+##  <a name="m_bdirect"></a>  CPrintInfo::m_bDirect  
  The framework sets this member to **TRUE** if the Print dialog box will be bypassed for direct printing; **FALSE** otherwise.  
   
 ### Remarks  
  The Print dialog is normally bypassed when you print from the shell or when printing is done using the command ID **ID_FILE_PRINT_DIRECT**.  
   
- You normally don't change this member, but if you do change it, change it before you call [CView::DoPreparePrinting](../../mfc/reference/cview-class.md#cview__doprepareprinting) in your override of [CView::OnPreparePrinting](../../mfc/reference/cview-class.md#cview__onprepareprinting).  
+ You normally don't change this member, but if you do change it, change it before you call [CView::DoPreparePrinting](../../mfc/reference/cview-class.md#doprepareprinting) in your override of [CView::OnPreparePrinting](../../mfc/reference/cview-class.md#onprepareprinting).  
   
-##  <a name="cprintinfo__m_bdocobject"></a>  CPrintInfo::m_bDocObject  
+##  <a name="m_bdocobject"></a>  CPrintInfo::m_bDocObject  
  Contains a flag indicating whether the document being printed is a DocObject.  
   
 ### Remarks  
  Data members `m_dwFlags` and **m_nOffsetPage** are invalid unless this flag is **TRUE**.  
   
-##  <a name="cprintinfo__m_bpreview"></a>  CPrintInfo::m_bPreview  
+##  <a name="m_bpreview"></a>  CPrintInfo::m_bPreview  
  Contains a flag indicating whether the document is being previewed.  
   
 ### Remarks  
  This is set by the framework depending on which command the user executed. The Print dialog box is not displayed for a print-preview job. The **m_bPreview** member is a public variable of type **BOOL**.  
   
-##  <a name="cprintinfo__m_dwflags"></a>  CPrintInfo::m_dwFlags  
+##  <a name="m_dwflags"></a>  CPrintInfo::m_dwFlags  
  Contains a combination of flags specifying DocObject printing operations.  
   
 ### Remarks  
@@ -217,13 +217,13 @@ UINT GetToPage() const;
   
 - **PRINTFLAG_PRINTTOFILE**  
   
-##  <a name="cprintinfo__m_lpuserdata"></a>  CPrintInfo::m_lpUserData  
+##  <a name="m_lpuserdata"></a>  CPrintInfo::m_lpUserData  
  Contains a pointer to a user-created structure.  
   
 ### Remarks  
  You can use this to store printing-specific data that you do not want to store in your view class. The **m_lpUserData** member is a public variable of type **LPVOID**.  
   
-##  <a name="cprintinfo__m_ncurpage"></a>  CPrintInfo::m_nCurPage  
+##  <a name="m_ncurpage"></a>  CPrintInfo::m_nCurPage  
  Contains the number of the current page.  
   
 ### Remarks  
@@ -231,40 +231,40 @@ UINT GetToPage() const;
   
  When preview mode is first invoked, the framework reads the value of this member to determine which page of the document should be previewed initially. You can set the value of this member in your override of `CView::OnPreparePrinting` to maintain the user's current position in the document when entering preview mode. The `m_nCurPage` member is a public variable of type **UINT**.  
   
-##  <a name="cprintinfo__m_njobnumber"></a>  CPrintInfo::m_nJobNumber  
+##  <a name="m_njobnumber"></a>  CPrintInfo::m_nJobNumber  
  Indicates the job number assigned by the operating system for the current print job.  
   
 ### Remarks  
  This value may be **SP_ERROR** if the job hasn't yet printed (that is, if the `CPrintInfo` object is newly constructed and has not yet been used to print), or if there was an error in starting the job.  
   
-##  <a name="cprintinfo__m_nnumpreviewpages"></a>  CPrintInfo::m_nNumPreviewPages  
+##  <a name="m_nnumpreviewpages"></a>  CPrintInfo::m_nNumPreviewPages  
  Contains the number of pages displayed in preview mode; it can be either 1 or 2.  
   
 ### Remarks  
  The **m_nNumPreviewPages** member is a public variable of type **UINT**.  
   
-##  <a name="cprintinfo__m_noffsetpage"></a>  CPrintInfo::m_nOffsetPage  
+##  <a name="m_noffsetpage"></a>  CPrintInfo::m_nOffsetPage  
  Contains the number of pages preceding the first page of a particular DocObject in a combined DocObject print job.  
   
-##  <a name="cprintinfo__m_ppd"></a>  CPrintInfo::m_pPD  
+##  <a name="m_ppd"></a>  CPrintInfo::m_pPD  
  Contains a pointer to the `CPrintDialog` object used to display the Print dialog box for the print job.  
   
 ### Remarks  
  The `m_pPD` member is a public variable declared as a pointer to `CPrintDialog`.  
   
-##  <a name="cprintinfo__m_rectdraw"></a>  CPrintInfo::m_rectDraw  
+##  <a name="m_rectdraw"></a>  CPrintInfo::m_rectDraw  
  Specifies the usable drawing area of the page in logical coordinates.  
   
 ### Remarks  
  You may want to refer to this in your override of `CView::OnPrint`. You can use this member to keep track of what area remains usable after you print headers, footers, and so on. The **m_rectDraw** member is a public variable of type `CRect`.  
   
-##  <a name="cprintinfo__m_strpagedesc"></a>  CPrintInfo::m_strPageDesc  
+##  <a name="m_strpagedesc"></a>  CPrintInfo::m_strPageDesc  
  Contains a format string used to display the page numbers during print preview; this string consists of two substrings, one for single-page display and one for double-page display, each terminated by a '\n' character.  
   
 ### Remarks  
  The framework uses "Page %u\nPages %u-%u\n" as the default value. If you want a different format for the page numbers, specify a format string in your override of `CView::OnPreparePrinting`. The **m_strPageDesc** member is a public variable of type `CString`.  
   
-##  <a name="cprintinfo__setmaxpage"></a>  CPrintInfo::SetMaxPage  
+##  <a name="setmaxpage"></a>  CPrintInfo::SetMaxPage  
  Call this function to specify the number of the last page of the document.  
   
 ```  
@@ -279,9 +279,9 @@ void SetMaxPage(UINT nMaxPage);
  This value is stored in the `CPrintDialog` object referenced by the `m_pPD` member. If the length of the document is known before it is printed, call this function from your override of `CView::OnPreparePrinting`. If the length of the document depends on a setting specified by the user in the Print dialog box, call this function from your override of `CView::OnBeginPrinting`. If the length of the document is not known until it is printed, use the `m_bContinuePrinting` member to control the print loop.  
   
 ### Example  
-  See the example for [CView::OnPreparePrinting](../../mfc/reference/cview-class.md#cview__onprepareprinting).  
+  See the example for [CView::OnPreparePrinting](../../mfc/reference/cview-class.md#onprepareprinting).  
   
-##  <a name="cprintinfo__setminpage"></a>  CPrintInfo::SetMinPage  
+##  <a name="setminpage"></a>  CPrintInfo::SetMinPage  
  Call this function to specify the number of the first page of the document.  
   
 ```  
@@ -298,12 +298,12 @@ void SetMinPage(UINT nMinPage);
 ## See Also  
  [MFC Sample DIBLOOK](../../visual-cpp-samples.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
- [CView::OnBeginPrinting](../../mfc/reference/cview-class.md#cview__onbeginprinting)   
- [CView::OnEndPrinting](../../mfc/reference/cview-class.md#cview__onendprinting)   
- [CView::OnEndPrintPreview](../../mfc/reference/cview-class.md#cview__onendprintpreview)   
- [CView::OnPrepareDC](../../mfc/reference/cview-class.md#cview__onpreparedc)   
- [CView::OnPreparePrinting](../../mfc/reference/cview-class.md#cview__onprepareprinting)   
- [CView::OnPrint](../../mfc/reference/cview-class.md#cview__onprint)
+ [CView::OnBeginPrinting](../../mfc/reference/cview-class.md#onbeginprinting)   
+ [CView::OnEndPrinting](../../mfc/reference/cview-class.md#onendprinting)   
+ [CView::OnEndPrintPreview](../../mfc/reference/cview-class.md#onendprintpreview)   
+ [CView::OnPrepareDC](../../mfc/reference/cview-class.md#onpreparedc)   
+ [CView::OnPreparePrinting](../../mfc/reference/cview-class.md#onprepareprinting)   
+ [CView::OnPrint](../../mfc/reference/cview-class.md#onprint)
 
 
 

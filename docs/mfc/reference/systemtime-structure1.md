@@ -85,5 +85,5 @@ typedef struct _SYSTEMTIME {
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CTime::CTime](../../atl-mfc-shared/reference/ctime-class.md#ctime__ctime)
+ [CTime::CTime](../../atl-mfc-shared/reference/ctime-class.md#ctime)
 

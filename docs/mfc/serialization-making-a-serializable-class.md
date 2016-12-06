@@ -79,7 +79,7 @@ Five main steps are required to make a class serializable. They are listed below
   
      [!code-cpp[NVC_MFCSerialization#2](../mfc/codesnippet/cpp/serialization-making-a-serializable-class_2.cpp)]  
   
- You can also use the [CArchive::Read](../mfc/reference/carchive-class.md#carchive__read) and [CArchive::Write](../mfc/reference/carchive-class.md#carchive__write) member functions to read and write large amounts of untyped data.  
+ You can also use the [CArchive::Read](../mfc/reference/carchive-class.md#read) and [CArchive::Write](../mfc/reference/carchive-class.md#write) member functions to read and write large amounts of untyped data.  
   
 ##  <a name="_core_using_the_declare_serial_macro"></a> Using the DECLARE_SERIAL Macro  
  The `DECLARE_SERIAL` macro is required in the declaration of classes that will support serialization, as shown here:  

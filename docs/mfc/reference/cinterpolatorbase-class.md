@@ -50,21 +50,21 @@ class CInterpolatorBase : public CUIAnimationInterpolatorBase<CInterpolatorBase>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CInterpolatorBase::CInterpolatorBase](#cinterpolatorbase__cinterpolatorbase)|Constructs the `CInterpolatorBase` object.|  
+|[CInterpolatorBase::CInterpolatorBase](#cinterpolatorbase)|Constructs the `CInterpolatorBase` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CInterpolatorBase::CreateInstance](#cinterpolatorbase__createinstance)|Creates an instance of `CInterpolatorBase` and stores a pointer to custom interpolator, which will be handling events.|  
-|[CInterpolatorBase::GetDependencies](#cinterpolatorbase__getdependencies)|Gets the interpolator's dependencies. (Overrides `CUIAnimationInterpolatorBase::GetDependencies`.)|  
-|[CInterpolatorBase::GetDuration](#cinterpolatorbase__getduration)|Gets the interpolator's duration. (Overrides `CUIAnimationInterpolatorBase::GetDuration`.)|  
-|[CInterpolatorBase::GetFinalValue](#cinterpolatorbase__getfinalvalue)|Gets the final value to which the interpolator leads. (Overrides `CUIAnimationInterpolatorBase::GetFinalValue`.)|  
-|[CInterpolatorBase::InterpolateValue](#cinterpolatorbase__interpolatevalue)|Interpolates the value at a given offset (Overrides `CUIAnimationInterpolatorBase::InterpolateValue`.)|  
-|[CInterpolatorBase::InterpolateVelocity](#cinterpolatorbase__interpolatevelocity)|Interpolates the velocity at a given offset (Overrides `CUIAnimationInterpolatorBase::InterpolateVelocity`.)|  
-|[CInterpolatorBase::SetCustomInterpolator](#cinterpolatorbase__setcustominterpolator)|Stores a pointer to custom interpolator, which will be handling events.|  
-|[CInterpolatorBase::SetDuration](#cinterpolatorbase__setduration)|Sets the interpolator's duration (Overrides `CUIAnimationInterpolatorBase::SetDuration`.)|  
-|[CInterpolatorBase::SetInitialValueAndVelocity](#cinterpolatorbase__setinitialvalueandvelocity)|Sets the interpolator's initial value and velocity. (Overrides `CUIAnimationInterpolatorBase::SetInitialValueAndVelocity`.)|  
+|[CInterpolatorBase::CreateInstance](#createinstance)|Creates an instance of `CInterpolatorBase` and stores a pointer to custom interpolator, which will be handling events.|  
+|[CInterpolatorBase::GetDependencies](#getdependencies)|Gets the interpolator's dependencies. (Overrides `CUIAnimationInterpolatorBase::GetDependencies`.)|  
+|[CInterpolatorBase::GetDuration](#getduration)|Gets the interpolator's duration. (Overrides `CUIAnimationInterpolatorBase::GetDuration`.)|  
+|[CInterpolatorBase::GetFinalValue](#getfinalvalue)|Gets the final value to which the interpolator leads. (Overrides `CUIAnimationInterpolatorBase::GetFinalValue`.)|  
+|[CInterpolatorBase::InterpolateValue](#interpolatevalue)|Interpolates the value at a given offset (Overrides `CUIAnimationInterpolatorBase::InterpolateValue`.)|  
+|[CInterpolatorBase::InterpolateVelocity](#interpolatevelocity)|Interpolates the velocity at a given offset (Overrides `CUIAnimationInterpolatorBase::InterpolateVelocity`.)|  
+|[CInterpolatorBase::SetCustomInterpolator](#setcustominterpolator)|Stores a pointer to custom interpolator, which will be handling events.|  
+|[CInterpolatorBase::SetDuration](#setduration)|Sets the interpolator's duration (Overrides `CUIAnimationInterpolatorBase::SetDuration`.)|  
+|[CInterpolatorBase::SetInitialValueAndVelocity](#setinitialvalueandvelocity)|Sets the interpolator's initial value and velocity. (Overrides `CUIAnimationInterpolatorBase::SetInitialValueAndVelocity`.)|  
   
 ## Remarks  
  This handler is created and passed to `IUIAnimationTransitionFactory::CreateTransition` when a `CCustomTransition` object is being created as a part of animation initialization process (started by `CAnimationController::AnimateGroup`). Usually you don't need to use this class directly, it just routs all events to a `CCustomInterpolator`-derived class, whose pointer is passed to constructor of `CCustomTransition`.  
@@ -79,14 +79,14 @@ class CInterpolatorBase : public CUIAnimationInterpolatorBase<CInterpolatorBase>
 ## Requirements  
  **Header:** afxanimationcontroller.h  
   
-##  <a name="cinterpolatorbase__cinterpolatorbase"></a>  CInterpolatorBase::CInterpolatorBase  
+##  <a name="cinterpolatorbase"></a>  CInterpolatorBase::CInterpolatorBase  
  Constructs the CInterpolatorBase object.  
   
 ```  
 CInterpolatorBase();
 ```  
   
-##  <a name="cinterpolatorbase__createinstance"></a>  CInterpolatorBase::CreateInstance  
+##  <a name="createinstance"></a>  CInterpolatorBase::CreateInstance  
  Creates an instance of CInterpolatorBase and stores a pointer to custom interpolator, which will be handling events.  
   
 ```  
@@ -104,7 +104,7 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
   
 ### Return Value  
   
-##  <a name="cinterpolatorbase__getdependencies"></a>  CInterpolatorBase::GetDependencies  
+##  <a name="getdependencies"></a>  CInterpolatorBase::GetDependencies  
  Gets the interpolator's dependencies.  
   
 ```  
@@ -127,7 +127,7 @@ IFACEMETHOD(
 ### Return Value  
  If the method succeeds, it returns S_OK. It returns E_FAIL if CCustomInterpolator is not set, or custom implementation returns FALSE from the GetDependencies method.  
   
-##  <a name="cinterpolatorbase__getduration"></a>  CInterpolatorBase::GetDuration  
+##  <a name="getduration"></a>  CInterpolatorBase::GetDuration  
  Gets the interpolator's duration.  
   
 ```  
@@ -141,7 +141,7 @@ IFACEMETHOD(GetDuration)(__out UI_ANIMATION_SECONDS* duration);
 ### Return Value  
  If the method succeeds, it returns S_OK. It returns E_FAIL if CCustomInterpolator is not set, or custom implementation returns FALSE from the GetDuration method.  
   
-##  <a name="cinterpolatorbase__getfinalvalue"></a>  CInterpolatorBase::GetFinalValue  
+##  <a name="getfinalvalue"></a>  CInterpolatorBase::GetFinalValue  
  Gets the final value to which the interpolator leads.  
   
 ```  
@@ -155,7 +155,7 @@ IFACEMETHOD(GetFinalValue)(__out DOUBLE* value);
 ### Return Value  
  If the method succeeds, it returns S_OK. It returns E_FAIL if CCustomInterpolator is not set, or custom implementation returns FALSE from the GetFinalValue method.  
   
-##  <a name="cinterpolatorbase__interpolatevalue"></a>  CInterpolatorBase::InterpolateValue  
+##  <a name="interpolatevalue"></a>  CInterpolatorBase::InterpolateValue  
  Interpolates the value at a given offset  
   
 ```  
@@ -173,7 +173,7 @@ IFACEMETHOD(
 ### Return Value  
  If the method succeeds, it returns S_OK. It returns E_FAIL if CCustomInterpolator is not set, or custom implementation returns FALSE from the InterpolateValue method.  
   
-##  <a name="cinterpolatorbase__interpolatevelocity"></a>  CInterpolatorBase::InterpolateVelocity  
+##  <a name="interpolatevelocity"></a>  CInterpolatorBase::InterpolateVelocity  
  Interpolates the velocity at a given offset  
   
 ```  
@@ -191,7 +191,7 @@ IFACEMETHOD(
 ### Return Value  
  If the method succeeds, it returns S_OK. It returns E_FAIL if CCustomInterpolator is not set, or custom implementation returns FALSE from the InterpolateVelocity method.  
   
-##  <a name="cinterpolatorbase__setcustominterpolator"></a>  CInterpolatorBase::SetCustomInterpolator  
+##  <a name="setcustominterpolator"></a>  CInterpolatorBase::SetCustomInterpolator  
  Stores a pointer to custom interpolator, which will be handling events.  
   
 ```  
@@ -202,7 +202,7 @@ void SetCustomInterpolator(CCustomInterpolator* pInterpolator);
  `pInterpolator`  
  A pointer to custom interpolator.  
   
-##  <a name="cinterpolatorbase__setduration"></a>  CInterpolatorBase::SetDuration  
+##  <a name="setduration"></a>  CInterpolatorBase::SetDuration  
  Sets the interpolator's duration  
   
 ```  
@@ -216,7 +216,7 @@ IFACEMETHOD(SetDuration)(__in UI_ANIMATION_SECONDS duration);
 ### Return Value  
  If the method succeeds, it returns S_OK. It returns E_FAIL if CCustomInterpolator is not set, or custom implementation returns FALSE from the SetDuration method.  
   
-##  <a name="cinterpolatorbase__setinitialvalueandvelocity"></a>  CInterpolatorBase::SetInitialValueAndVelocity  
+##  <a name="setinitialvalueandvelocity"></a>  CInterpolatorBase::SetInitialValueAndVelocity  
  Sets the interpolator's initial value and velocity.  
   
 ```  

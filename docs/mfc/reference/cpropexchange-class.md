@@ -51,14 +51,14 @@ class AFX_NOVTABLE CPropExchange
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPropExchange::ExchangeBlobProp](#cpropexchange__exchangeblobprop)|Exchanges a binary large object (BLOB) property.|  
-|[CPropExchange::ExchangeFontProp](#cpropexchange__exchangefontprop)|Exchanges a font property.|  
-|[CPropExchange::ExchangePersistentProp](#cpropexchange__exchangepersistentprop)|Exchanges a property between a control and a file.|  
-|[CPropExchange::ExchangeProp](#cpropexchange__exchangeprop)|Exchanges properties of any built-in type.|  
-|[CPropExchange::ExchangeVersion](#cpropexchange__exchangeversion)|Exchanges the version number of an OLE control.|  
-|[CPropExchange::GetVersion](#cpropexchange__getversion)|Retrieves the version number of an OLE control.|  
-|[CPropExchange::IsAsynchronous](#cpropexchange__isasynchronous)|Determines if property exchanges are done asynchronously.|  
-|[CPropExchange::IsLoading](#cpropexchange__isloading)|Indicates whether properties are being loaded into the control or saved from it.|  
+|[CPropExchange::ExchangeBlobProp](#exchangeblobprop)|Exchanges a binary large object (BLOB) property.|  
+|[CPropExchange::ExchangeFontProp](#exchangefontprop)|Exchanges a font property.|  
+|[CPropExchange::ExchangePersistentProp](#exchangepersistentprop)|Exchanges a property between a control and a file.|  
+|[CPropExchange::ExchangeProp](#exchangeprop)|Exchanges properties of any built-in type.|  
+|[CPropExchange::ExchangeVersion](#exchangeversion)|Exchanges the version number of an OLE control.|  
+|[CPropExchange::GetVersion](#getversion)|Retrieves the version number of an OLE control.|  
+|[CPropExchange::IsAsynchronous](#isasynchronous)|Determines if property exchanges are done asynchronously.|  
+|[CPropExchange::IsLoading](#isloading)|Indicates whether properties are being loaded into the control or saved from it.|  
   
 ## Remarks  
  `CPropExchange` does not have a base class.  
@@ -81,7 +81,7 @@ class AFX_NOVTABLE CPropExchange
 ## Requirements  
  **Header:** afxctl.h  
   
-##  <a name="cpropexchange__exchangeblobprop"></a>  CPropExchange::ExchangeBlobProp  
+##  <a name="exchangeblobprop"></a>  CPropExchange::ExchangeBlobProp  
  Serializes a property that stores binary large object (BLOB) data.  
   
 ```  
@@ -109,7 +109,7 @@ virtual BOOL ExchangeBlobProp(
   
  The functions **CArchivePropExchange::ExchangeBlobProp**, **CResetPropExchange::ExchangeBlobProp**, and **CPropsetPropExchange::ExchangeBlobProp** override this pure virtual function.  
   
-##  <a name="cpropexchange__exchangefontprop"></a>  CPropExchange::ExchangeFontProp  
+##  <a name="exchangefontprop"></a>  CPropExchange::ExchangeFontProp  
  Exchanges a font property between a storage medium and the control.  
   
 ```  
@@ -141,7 +141,7 @@ virtual BOOL ExchangeFontProp(
   
  The functions **CArchivePropExchange::ExchangeFontProp**, **CResetPropExchange::ExchangeFontProp**, and **CPropsetPropExchange::ExchangeFontProp** override this pure virtual function.  
   
-##  <a name="cpropexchange__exchangepersistentprop"></a>  CPropExchange::ExchangePersistentProp  
+##  <a name="exchangepersistentprop"></a>  CPropExchange::ExchangePersistentProp  
  Exchanges a property between the control and a file.  
   
 ```  
@@ -173,7 +173,7 @@ virtual BOOL ExchangePersistentProp(
   
  The functions **CArchivePropExchange::ExchangePersistentProp**, **CResetPropExchange::ExchangePersistentProp**, and **CPropsetPropExchange::ExchangePersistentProp** override this pure virtual function.  
   
-##  <a name="cpropexchange__exchangeprop"></a>  CPropExchange::ExchangeProp  
+##  <a name="exchangeprop"></a>  CPropExchange::ExchangeProp  
  Exchanges a property between a storage medium and the control.  
   
 ```  
@@ -215,7 +215,7 @@ virtual BOOL ExchangeProp(
   
  The functions **CArchivePropExchange::ExchangeProp**, **CResetPropExchange::ExchangeProp**, and **CPropsetPropExchange::ExchangeProp** override this pure virtual function.  
   
-##  <a name="cpropexchange__exchangeversion"></a>  CPropExchange::ExchangeVersion  
+##  <a name="exchangeversion"></a>  CPropExchange::ExchangeVersion  
  Called by the framework to handle persistence of a version number.  
   
 ```  
@@ -238,7 +238,7 @@ virtual BOOL ExchangeVersion(
 ### Return Value  
  Nonzero if the function succeeded; 0 otherwise.  
   
-##  <a name="cpropexchange__getversion"></a>  CPropExchange::GetVersion  
+##  <a name="getversion"></a>  CPropExchange::GetVersion  
  Call this function to retrieve the version number of the control.  
   
 ```  
@@ -248,7 +248,7 @@ DWORD GetVersion();
 ### Return Value  
  The version number of the control.  
   
-##  <a name="cpropexchange__isasynchronous"></a>  CPropExchange::IsAsynchronous  
+##  <a name="isasynchronous"></a>  CPropExchange::IsAsynchronous  
  Determines if property exchanges are done asynchronously.  
   
 ```  
@@ -258,7 +258,7 @@ BOOL IsAsynchronous();
 ### Return Value  
  Returns TRUE if properties are exchanged asynchronously, otherwise FALSE.  
   
-##  <a name="cpropexchange__isloading"></a>  CPropExchange::IsLoading  
+##  <a name="isloading"></a>  CPropExchange::IsLoading  
  Call this function to determine whether properties are being loaded to the control or saved from it.  
   
 ```  
@@ -270,7 +270,7 @@ BOOL IsLoading();
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
- [COleControl::DoPropExchange](../../mfc/reference/colecontrol-class.md#colecontrol__dopropexchange)
+ [COleControl::DoPropExchange](../../mfc/reference/colecontrol-class.md#dopropexchange)
 
 
 

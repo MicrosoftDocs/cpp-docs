@@ -49,9 +49,9 @@ struct CMFCTabToolTipInfo
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCTabToolTipInfo::m_nTabIndex](#cmfctabtooltipinfo__m_ntabindex)|Specifies the index of the tab control.|  
-|[CMFCTabToolTipInfo::m_pTabWnd](#cmfctabtooltipinfo__m_ptabwnd)|A pointer to the tab control.|  
-|[CMFCTabToolTipInfo::m_strText](#cmfctabtooltipinfo__m_strtext)|The tooltip text.|  
+|[CMFCTabToolTipInfo::m_nTabIndex](#m_ntabindex)|Specifies the index of the tab control.|  
+|[CMFCTabToolTipInfo::m_pTabWnd](#m_ptabwnd)|A pointer to the tab control.|  
+|[CMFCTabToolTipInfo::m_strText](#m_strtext)|The tooltip text.|  
   
 ## Remarks  
  A pointer to a `CMFCTabToolTipInfo` structure is passed as a parameter of the `AFX_WM_ON_GET_TAB_TOOLTIP` message. This message is generated when MDI tabs are enabled and the user hovers over a tab control.  
@@ -67,7 +67,7 @@ struct CMFCTabToolTipInfo
 ## Requirements  
  **Header:** afxbasetabctrl.h  
   
-##  <a name="cmfctabtooltipinfo__m_ntabindex"></a>  CMFCTabToolTipInfo::m_nTabIndex  
+##  <a name="m_ntabindex"></a>  CMFCTabToolTipInfo::m_nTabIndex  
  Specifies the index of the tab control.  
   
 ```  
@@ -82,7 +82,7 @@ int m_nTabIndex;
   
  [!code-cpp[NVC_MFC_MDITabsDemo#2](../../mfc/reference/codesnippet/cpp/cmfctabtooltipinfo-structure_1.cpp)]  
   
-##  <a name="cmfctabtooltipinfo__m_ptabwnd"></a>  CMFCTabToolTipInfo::m_pTabWnd  
+##  <a name="m_ptabwnd"></a>  CMFCTabToolTipInfo::m_pTabWnd  
  A pointer to the tab control.  
   
 ```  
@@ -94,7 +94,7 @@ CMFCBaseTabCtrl* m_pTabWnd;
   
  [!code-cpp[NVC_MFC_MDITabsDemo#2](../../mfc/reference/codesnippet/cpp/cmfctabtooltipinfo-structure_1.cpp)]  
   
-##  <a name="cmfctabtooltipinfo__m_strtext"></a>  CMFCTabToolTipInfo::m_strText  
+##  <a name="m_strtext"></a>  CMFCTabToolTipInfo::m_strText  
  The tooltip text.  
   
 ```  
