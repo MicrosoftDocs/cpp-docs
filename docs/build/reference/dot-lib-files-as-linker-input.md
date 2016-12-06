@@ -57,7 +57,7 @@ A library is specified to LINK as either a file name argument or a default libra
   
 ## To programmatically add .lib files as linker input  
   
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalDependencies%2A>.  
+-   See [AdditionalDependencies](https://msdn.microsoft.com/library/microsoft.visualstudio.vcprojectengine.vclinkertool.additionaldependencies.aspx).  
   
 ## Example  
 The following sample shows how to build and use a .lib file. First, build a .lib file:  
