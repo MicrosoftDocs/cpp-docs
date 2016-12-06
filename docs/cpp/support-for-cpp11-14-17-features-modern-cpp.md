@@ -200,7 +200,7 @@ template <typename T> struct Identity {
 ```  
   
 > [!NOTE]
->  For other breaking changes, see [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-20151.md).  
+>  For other breaking changes, see [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md).  
   
  [[In This Article](#top)]  
   
@@ -271,4 +271,4 @@ template <typename T> struct Identity {
  [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)   
  [Visual C++ Team Blog](http://blogs.msdn.com/b/vcblog/)   
  [What's New for Visual C++](../what-s-new-for-visual-cpp-in-visual-studio.md)   
- [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-20151.md)
+ [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)
