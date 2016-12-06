@@ -51,31 +51,31 @@ class CMapStringToOb : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMapStringToOb::CMapStringToOb](#cmapstringtoob__cmapstringtoob)|Constructor.|  
+|[CMapStringToOb::CMapStringToOb](#cmapstringtoob)|Constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMapStringToOb::GetCount](#cmapstringtoob__getcount)|Returns the number of elements in this map.|  
-|[CMapStringToOb::GetHashTableSize](#cmapstringtoob__gethashtablesize)|Determines the current number of elements in the hash table.|  
-|[CMapStringToOb::GetNextAssoc](#cmapstringtoob__getnextassoc)|Gets the next element for iterating.|  
-|[CMapStringToOb::GetSize](#cmapstringtoob__getsize)|Returns the number of elements in this map.|  
-|[CMapStringToOb::GetStartPosition](#cmapstringtoob__getstartposition)|Returns the position of the first element.|  
-|[CMapStringToOb::HashKey](#cmapstringtoob__hashkey)|Calculates the hash value of a specified key.|  
-|[CMapStringToOb::InitHashTable](#cmapstringtoob__inithashtable)|Initializes the hash table.|  
-|[CMapStringToOb::IsEmpty](#cmapstringtoob__isempty)|Tests for the empty-map condition (no elements).|  
-|[CMapStringToOb::Lookup](#cmapstringtoob__lookup)|Looks up a void pointer based on the void pointer key. The pointer value, not the entity it points to, is used for the key comparison.|  
-|[CMapStringToOb::LookupKey](#cmapstringtoob__lookupkey)|Returns a reference to the key associated with the specified key value.|  
-|[CMapStringToOb::RemoveAll](#cmapstringtoob__removeall)|Removes all the elements from this map.|  
-|[CMapStringToOb::RemoveKey](#cmapstringtoob__removekey)|Removes an element specified by a key.|  
-|[CMapStringToOb::SetAt](#cmapstringtoob__setat)|Inserts an element into the map; replaces an existing element if a matching key is found.|  
+|[CMapStringToOb::GetCount](#getcount)|Returns the number of elements in this map.|  
+|[CMapStringToOb::GetHashTableSize](#gethashtablesize)|Determines the current number of elements in the hash table.|  
+|[CMapStringToOb::GetNextAssoc](#getnextassoc)|Gets the next element for iterating.|  
+|[CMapStringToOb::GetSize](#getsize)|Returns the number of elements in this map.|  
+|[CMapStringToOb::GetStartPosition](#getstartposition)|Returns the position of the first element.|  
+|[CMapStringToOb::HashKey](#hashkey)|Calculates the hash value of a specified key.|  
+|[CMapStringToOb::InitHashTable](#inithashtable)|Initializes the hash table.|  
+|[CMapStringToOb::IsEmpty](#isempty)|Tests for the empty-map condition (no elements).|  
+|[CMapStringToOb::Lookup](#lookup)|Looks up a void pointer based on the void pointer key. The pointer value, not the entity it points to, is used for the key comparison.|  
+|[CMapStringToOb::LookupKey](#lookupkey)|Returns a reference to the key associated with the specified key value.|  
+|[CMapStringToOb::RemoveAll](#removeall)|Removes all the elements from this map.|  
+|[CMapStringToOb::RemoveKey](#removekey)|Removes an element specified by a key.|  
+|[CMapStringToOb::SetAt](#setat)|Inserts an element into the map; replaces an existing element if a matching key is found.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMapStringToOb::operator [ ]](#cmapstringtoob__operator_at)|Inserts an element into the map — operator substitution for `SetAt`.|  
+|[CMapStringToOb::operator [ ]](#operator_at)|Inserts an element into the map — operator substitution for `SetAt`.|  
   
 ## Remarks  
  Once you have inserted a `CString`- `CObject*` pair (element) into the map, you can efficiently retrieve or delete the pair using a string or a `CString` value as a key. You can also iterate over all the elements in the map.  
@@ -98,7 +98,7 @@ class CMapStringToOb : public CObject
 ## Requirements  
  **Header:** afxcoll.h  
   
-##  <a name="cmapstringtoob__cmapstringtoob"></a>  CMapStringToOb::CMapStringToOb  
+##  <a name="cmapstringtoob"></a>  CMapStringToOb::CMapStringToOb  
  Constructs an empty `CString`-to- `CObject*` map.  
   
 ```  
@@ -126,9 +126,9 @@ CMapStringToOb(INT_PTR nBlockSize = 10);
 ### Example  
  [!code-cpp[NVC_MFCCollections#63](../../mfc/codesnippet/cpp/cmapstringtoob-class_1.cpp)]  
   
- See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
+ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listing of the `CAge` class used in all collection examples.  
   
-##  <a name="cmapstringtoob__getcount"></a>  CMapStringToOb::GetCount  
+##  <a name="getcount"></a>  CMapStringToOb::GetCount  
  Determines how many elements are in the map.  
   
 ```  
@@ -153,11 +153,11 @@ INT_PTR GetCount() const;
 |[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**INT_PTR GetCount( ) const;**|  
   
 ### Example  
- See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
+ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listing of the `CAge` class used in all collection examples.  
   
  [!code-cpp[NVC_MFCCollections#64](../../mfc/codesnippet/cpp/cmapstringtoob-class_2.cpp)]  
   
-##  <a name="cmapstringtoob__gethashtablesize"></a>  CMapStringToOb::GetHashTableSize  
+##  <a name="gethashtablesize"></a>  CMapStringToOb::GetHashTableSize  
  Determines the current number of elements in the hash table.  
   
 ```  
@@ -181,7 +181,7 @@ UINT GetHashTableSize() const;
 |[CMapWordToOb](../../mfc/reference/cmapwordtoob-class.md)|**UINT GetHashTableSize( ) const;**|  
 |[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**UINT GetHashTableSize( ) const;**|  
   
-##  <a name="cmapstringtoob__getnextassoc"></a>  CMapStringToOb::GetNextAssoc  
+##  <a name="getnextassoc"></a>  CMapStringToOb::GetNextAssoc  
  Retrieves the map element at *rNextPosition*, then updates *rNextPosition* to refer to the next element in the map.  
   
 ```  
@@ -226,7 +226,7 @@ void GetNextAssoc(
 |[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**void GetNextAssoc( POSITION&** *rNextPosition* **, WORD&** *rKey* **, void\*&** *rValue* **) const;**|  
   
 ### Example  
- See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
+ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listing of the `CAge` class used in all collection examples.  
   
  [!code-cpp[NVC_MFCCollections#66](../../mfc/codesnippet/cpp/cmapstringtoob-class_4.cpp)]  
   
@@ -240,7 +240,7 @@ void GetNextAssoc(
   
  `Bart : a CAge at $45D4 13`  
   
-##  <a name="cmapstringtoob__getsize"></a>  CMapStringToOb::GetSize  
+##  <a name="getsize"></a>  CMapStringToOb::GetSize  
  Returns the number of map elements.  
   
 ```  
@@ -269,7 +269,7 @@ INT_PTR GetSize() const;
 ### Example  
  [!code-cpp[NVC_MFCCollections#67](../../mfc/codesnippet/cpp/cmapstringtoob-class_5.cpp)]  
   
-##  <a name="cmapstringtoob__getstartposition"></a>  CMapStringToOb::GetStartPosition  
+##  <a name="getstartposition"></a>  CMapStringToOb::GetStartPosition  
  Starts a map iteration by returning a **POSITION** value that can be passed to a `GetNextAssoc` call.  
   
 ```  
@@ -296,9 +296,9 @@ POSITION GetStartPosition() const;
 |[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**POSITION GetStartPosition( ) const;**|  
   
 ### Example  
- See the example for [CMapStringToOb::GetNextAssoc](#cmapstringtoob__getnextassoc).  
+ See the example for [CMapStringToOb::GetNextAssoc](#getnextassoc).  
   
-##  <a name="cmapstringtoob__hashkey"></a>  CMapStringToOb::HashKey  
+##  <a name="hashkey"></a>  CMapStringToOb::HashKey  
  Calculates the hash value of a specified key.  
   
 ```  
@@ -326,7 +326,7 @@ UINT HashKey(LPCTSTR key) const;
 |[CMapWordToOb](../../mfc/reference/cmapwordtoob-class.md)|**UINT HashKey( WORD** `key` **) const;**|  
 |[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**UINT HashKey( WORD** `key` **) const;**|  
   
-##  <a name="cmapstringtoob__inithashtable"></a>  CMapStringToOb::InitHashTable  
+##  <a name="inithashtable"></a>  CMapStringToOb::InitHashTable  
  Initializes the hash table.  
   
 ```  
@@ -356,7 +356,7 @@ void InitHashTable(
 |[CMapWordToOb](../../mfc/reference/cmapwordtoob-class.md)|**void InitHashTable( UINT** `hashSize` **, BOOL** `bAllocNow` **= TRUE );**|  
 |[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**void InitHashTable( UINT** `hashSize` **, BOOL** `bAllocNow` **= TRUE );**|  
   
-##  <a name="cmapstringtoob__isempty"></a>  CMapStringToOb::IsEmpty  
+##  <a name="isempty"></a>  CMapStringToOb::IsEmpty  
  Determines whether the map is empty.  
   
 ```  
@@ -369,7 +369,7 @@ BOOL IsEmpty() const;
  Nonzero if this map contains no elements; otherwise 0.  
   
 ### Example  
- See the example for [RemoveAll](#cmapstringtoob__removeall).  
+ See the example for [RemoveAll](#removeall).  
   
 ### Remarks  
  The following table shows other member functions that are similar to **CMapStringToOb:: IsEmpty**.  
@@ -383,7 +383,7 @@ BOOL IsEmpty() const;
 |[CMapWordToOb](../../mfc/reference/cmapwordtoob-class.md)|**BOOL IsEmpty( ) const;**|  
 |[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**BOOL IsEmpty( ) const;**|  
   
-##  <a name="cmapstringtoob__lookup"></a>  CMapStringToOb::Lookup  
+##  <a name="lookup"></a>  CMapStringToOb::Lookup  
  Returns a `CObject` pointer based on a `CString` value.  
   
 ```  
@@ -419,11 +419,11 @@ BOOL Lookup(
 |[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**BOOL Lookup( WORD** `key` **, void\*&** `rValue` **) const;**|  
   
 ### Example  
- See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
+ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listing of the `CAge` class used in all collection examples.  
   
  [!code-cpp[NVC_MFCCollections#68](../../mfc/codesnippet/cpp/cmapstringtoob-class_6.cpp)]  
   
-##  <a name="cmapstringtoob__lookupkey"></a>  CMapStringToOb::LookupKey  
+##  <a name="lookupkey"></a>  CMapStringToOb::LookupKey  
  Returns a reference to the key associated with the specified key value.  
   
 ```  
@@ -454,7 +454,7 @@ BOOL LookupKey(
 |[CMapStringToPtr](../../mfc/reference/cmapstringtoptr-class.md)|**BOOL LookupKey( LPCTSTR** `key` **, LPCTSTR&** `rKey` **) const;**|  
 |[CMapStringToString](../../mfc/reference/cmapstringtostring-class.md)|**BOOL LookupKey( LPCTSTR** `key` **, LPCTSTR&** `rKey` **) const;**|  
   
-##  <a name="cmapstringtoob__operator_at"></a>  CMapStringToOb::operator [ ]  
+##  <a name="operator_at"></a>  CMapStringToOb::operator [ ]  
  A convenient substitute for the `SetAt` member function.  
   
 ```  
@@ -481,7 +481,7 @@ CObject*& operator[ ](lpctstr key);
 |[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**void\*& operator[](word** `key` **\);**|  
   
 ### Example  
- See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
+ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listing of the `CAge` class used in all collection examples.  
   
  [!code-cpp[NVC_MFCCollections#72](../../mfc/codesnippet/cpp/cmapstringtoob-class_7.cpp)]  
   
@@ -493,7 +493,7 @@ CObject*& operator[ ](lpctstr key);
   
  `[Bart] = a CAge at $497E 13`  
   
-##  <a name="cmapstringtoob__removeall"></a>  CMapStringToOb::RemoveAll  
+##  <a name="removeall"></a>  CMapStringToOb::RemoveAll  
  Removes all the elements from this map and destroys the `CString` key objects.  
   
 ```  
@@ -517,11 +517,11 @@ void RemoveAll();
 |[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**void RemoveAll( );**|  
   
 ### Example  
- See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
+ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listing of the `CAge` class used in all collection examples.  
   
  [!code-cpp[NVC_MFCCollections#69](../../mfc/codesnippet/cpp/cmapstringtoob-class_8.cpp)]  
   
-##  <a name="cmapstringtoob__removekey"></a>  CMapStringToOb::RemoveKey  
+##  <a name="removekey"></a>  CMapStringToOb::RemoveKey  
  Looks up the map entry corresponding to the supplied key; then, if the key is found, removes the entry.  
   
 ```  
@@ -550,7 +550,7 @@ BOOL RemoveKey(LPCTSTR key);
 |[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**BOOL RemoveKey( WORD** `key` **);**|  
   
 ### Example  
- See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
+ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listing of the `CAge` class used in all collection examples.  
   
  [!code-cpp[NVC_MFCCollections#70](../../mfc/codesnippet/cpp/cmapstringtoob-class_9.cpp)]  
   
@@ -564,7 +564,7 @@ BOOL RemoveKey(LPCTSTR key);
   
  `[Bart] = a CAge at $4634 13`  
   
-##  <a name="cmapstringtoob__setat"></a>  CMapStringToOb::SetAt  
+##  <a name="setat"></a>  CMapStringToOb::SetAt  
  The primary means to insert an element in a map.  
   
 ```  
@@ -595,7 +595,7 @@ void SetAt(
 |[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**void SetAt( WORD** `key` **, void\*** `newValue` **);**|  
   
 ### Example  
- See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
+ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listing of the `CAge` class used in all collection examples.  
   
  [!code-cpp[NVC_MFCCollections#71](../../mfc/codesnippet/cpp/cmapstringtoob-class_10.cpp)]  
   

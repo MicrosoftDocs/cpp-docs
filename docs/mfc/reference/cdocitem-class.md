@@ -56,8 +56,8 @@ class CDocItem : public CCmdTarget
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDocItem::GetDocument](#cdocitem__getdocument)|Returns the document that contains the item.|  
-|[CDocItem::IsBlank](#cdocitem__isblank)|Determines whether the item contains any information.|  
+|[CDocItem::GetDocument](#getdocument)|Returns the document that contains the item.|  
+|[CDocItem::IsBlank](#isblank)|Determines whether the item contains any information.|  
   
 ## Remarks  
  `CDocItem` objects are used to represent OLE items in both client and server documents.  
@@ -74,7 +74,7 @@ class CDocItem : public CCmdTarget
 ## Requirements  
  **Header:** afxole.h  
   
-##  <a name="cdocitem__getdocument"></a>  CDocItem::GetDocument  
+##  <a name="getdocument"></a>  CDocItem::GetDocument  
  Call this function to get the document that contains the item.  
   
 ```  
@@ -89,7 +89,7 @@ CDocument* GetDocument() const;
 ### Remarks  
  This function is overridden in the derived classes [COleClientItem](../../mfc/reference/coleclientitem-class.md) and [COleServerItem](../../mfc/reference/coleserveritem-class.md), returning a pointer to either a [COleDocument](../../mfc/reference/coledocument-class.md), a [COleLinkingDoc](../../mfc/reference/colelinkingdoc-class.md), or a [COleServerDoc](../../mfc/reference/coleserverdoc-class.md) object.  
   
-##  <a name="cdocitem__isblank"></a>  CDocItem::IsBlank  
+##  <a name="isblank"></a>  CDocItem::IsBlank  
  Called by the framework when default serialization occurs.  
   
 ```  

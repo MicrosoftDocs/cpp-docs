@@ -74,11 +74,11 @@ MFC supplies support for a subset of the Microsoft Messaging Application Program
   
  For more information about the **CDocument** member functions that enable MAPI, see:  
   
--   [CDocument::OnFileSendMail](../mfc/reference/cdocument-class.md#cdocument__onfilesendmail)  
+-   [CDocument::OnFileSendMail](../mfc/reference/cdocument-class.md#onfilesendmail)  
   
--   [CDocument::OnUpdateFileSendMail](../mfc/reference/cdocument-class.md#cdocument__onupdatefilesendmail)  
+-   [CDocument::OnUpdateFileSendMail](../mfc/reference/cdocument-class.md#onupdatefilesendmail)  
   
--   [COleDocument::OnFileSendMail](../mfc/reference/coledocument-class.md#coledocument__onfilesendmail)  
+-   [COleDocument::OnFileSendMail](../mfc/reference/coledocument-class.md#onfilesendmail)  
   
 ## See Also  
  [MAPI](../mfc/mapi.md)

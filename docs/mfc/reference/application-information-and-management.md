@@ -104,7 +104,7 @@ CWinThread* AfxBeginThread(
  `dwCreateFlags`  
  Specifies an additional flag that controls the creation of the thread. This flag can contain one of two values:  
   
-- **CREATE_SUSPENDED** Start the thread with a suspend count of one. Use **CREATE_SUSPENDED** if you want to initialize any member data of the `CWinThread` object, such as [m_bAutoDelete](../../mfc/reference/cwinthread-class.md#cwinthread__m_bautodelete) or any members of your derived class, before the thread starts running. Once your initialization is complete, use [CWinThread::ResumeThread](../../mfc/reference/cwinthread-class.md#cwinthread__resumethread) to start the thread running. The thread will not execute until `CWinThread::ResumeThread` is called.  
+- **CREATE_SUSPENDED** Start the thread with a suspend count of one. Use **CREATE_SUSPENDED** if you want to initialize any member data of the `CWinThread` object, such as [m_bAutoDelete](../../mfc/reference/cwinthread-class.md#m_bautodelete) or any members of your derived class, before the thread starts running. Once your initialization is complete, use [CWinThread::ResumeThread](../../mfc/reference/cwinthread-class.md#resumethread) to start the thread running. The thread will not execute until `CWinThread::ResumeThread` is called.  
   
 - **0** Start the thread immediately after creation.  
   
@@ -117,14 +117,14 @@ CWinThread* AfxBeginThread(
 ### Remarks  
  The first form of `AfxBeginThread` creates a worker thread. The second form creates a thread that may serve as a user-interface thread or as a worker thread.  
   
- `AfxBeginThread` creates a new `CWinThread` object, calls its [CreateThread](../../mfc/reference/cwinthread-class.md#cwinthread__createthread) function to start executing the thread, and returns a pointer to the thread. Checks are made throughout the procedure to make sure all objects are deallocated properly should any part of the creation fail. To end the thread, call [AfxEndThread](#afxendthread) from within the thread, or return from the controlling function of the worker thread.  
+ `AfxBeginThread` creates a new `CWinThread` object, calls its [CreateThread](../../mfc/reference/cwinthread-class.md#createthread) function to start executing the thread, and returns a pointer to the thread. Checks are made throughout the procedure to make sure all objects are deallocated properly should any part of the creation fail. To end the thread, call [AfxEndThread](#afxendthread) from within the thread, or return from the controlling function of the worker thread.  
   
  Multithreading must be enabled by the application; otherwise, this function will fail. For more information on enabling multithreading, refer to [/MD, /MT, /LD (Use Run-Time Library)](../../build/reference/md-mt-ld-use-run-time-library.md) under *Visual C++ Compiler Options*.  
   
  For more information on `AfxBeginThread`, see the articles [Multithreading: Creating Worker Threads](../../parallel/multithreading-creating-worker-threads.md) and [Multithreading: Creating User-Interface Threads](../../parallel/multithreading-creating-user-interface-threads.md).  
   
 ### Example  
- See the example for [CSocket::Attach](../../mfc/reference/csocket-class.md#csocket__attach).  
+ See the example for [CSocket::Attach](../../mfc/reference/csocket-class.md#attach).  
   
 ##  <a name="afxendthread"></a>  AfxEndThread  
  Call this function to terminate the currently executing thread.  
@@ -219,7 +219,7 @@ HINSTANCE  AFXAPI AfxGetInstanceHandle();
  [!code-cpp[NVC_MFCWindowing#128](../../mfc/reference/codesnippet/cpp/application-information-and-management_3.cpp)]  
   
 ##  <a name="afxgetmainwnd"></a>  AfxGetMainWnd  
- If your application is an OLE server, call this function to retrieve a pointer to the active main window of the application instead of directly referring to the [m_pMainWnd](../../mfc/reference/cwinthread-class.md#cwinthread__m_pmainwnd) member of the application object.  
+ If your application is an OLE server, call this function to retrieve a pointer to the active main window of the application instead of directly referring to the [m_pMainWnd](../../mfc/reference/cwinthread-class.md#m_pmainwnd) member of the application object.  
   
 ```   
 CWnd* AFXAPI AfxGetMainWnd(); 

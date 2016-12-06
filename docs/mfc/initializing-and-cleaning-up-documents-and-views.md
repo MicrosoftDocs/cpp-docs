@@ -47,17 +47,17 @@ Use the following guidelines for initializing and cleaning up after your documen
 -   The framework cleans up as documents and views close; you must deallocate any memory that you allocated on the heap from within the member functions of those documents and views.  
   
 > [!NOTE]
->  Recall that initialization for the whole application is best done in your override of the [InitInstance](../mfc/reference/cwinapp-class.md#cwinapp__initinstance) member function of class `CWinApp`, and cleanup for the whole application is best done in your override of the `CWinApp` member function [ExitInstance](../mfc/reference/cwinapp-class.md#cwinapp__exitinstance).  
+>  Recall that initialization for the whole application is best done in your override of the [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) member function of class `CWinApp`, and cleanup for the whole application is best done in your override of the `CWinApp` member function [ExitInstance](../mfc/reference/cwinapp-class.md#exitinstance).  
   
  The life cycle of a document (and its frame window and view or views) in an MDI application is as follows:  
   
 1.  During dynamic creation, the document constructor is called.  
   
-2.  For each new document, the document's [OnNewDocument](../mfc/reference/cdocument-class.md#cdocument__onnewdocument) or [OnOpenDocument](../mfc/reference/cdocument-class.md#cdocument__onopendocument) is called.  
+2.  For each new document, the document's [OnNewDocument](../mfc/reference/cdocument-class.md#onnewdocument) or [OnOpenDocument](../mfc/reference/cdocument-class.md#onopendocument) is called.  
   
 3.  The user interacts with the document throughout its lifetime. Typically this happens as the user works on document data through the view, selecting and editing the data. The view passes changes on to the document for storage and updating other views. During this time both the document and the view might handle commands.  
   
-4.  The framework calls [DeleteContents](../mfc/reference/cdocument-class.md#cdocument__deletecontents) to delete data specific to a document.  
+4.  The framework calls [DeleteContents](../mfc/reference/cdocument-class.md#deletecontents) to delete data specific to a document.  
   
 5.  The document's destructor is called.  
   

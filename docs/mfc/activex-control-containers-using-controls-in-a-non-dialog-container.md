@@ -45,7 +45,7 @@ In some applications, such as an SDI or MDI application, you will want to embed 
  A pointer to the text to be displayed in the control's Text or Caption property (if any).  
   
  `dwStyle`  
- Windows styles. For a complete list, see [CWnd::CreateControl](../mfc/reference/cwnd-class.md#cwnd__createcontrol).  
+ Windows styles. For a complete list, see [CWnd::CreateControl](../mfc/reference/cwnd-class.md#createcontrol).  
   
  `rect`  
  Specifies the control's size and position.  

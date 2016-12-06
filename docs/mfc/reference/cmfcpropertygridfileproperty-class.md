@@ -50,7 +50,7 @@ class CMFCPropertyGridFileProperty : public CMFCPropertyGridProperty
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCPropertyGridFileProperty::CMFCPropertyGridFileProperty](#cmfcpropertygridfileproperty__cmfcpropertygridfileproperty)|Constructs a `CMFCPropertyGridFileProperty` object.|  
+|[CMFCPropertyGridFileProperty::CMFCPropertyGridFileProperty](#cmfcpropertygridfileproperty)|Constructs a `CMFCPropertyGridFileProperty` object.|  
 |`CMFCPropertyGridFileProperty::~CMFCPropertyGridFileProperty`|Destructor.|  
   
 ### Public Methods  
@@ -58,7 +58,7 @@ class CMFCPropertyGridFileProperty : public CMFCPropertyGridProperty
 |Name|Description|  
 |----------|-----------------|  
 |`CMFCPropertyGridFileProperty::GetThisClass`|Used by the framework to obtain a pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|  
-|`CMFCPropertyGridFileProperty::OnClickButton`|(Overrides [CMFCPropertyGridProperty::OnClickButton](../../mfc/reference/cmfcpropertygridproperty-class.md#cmfcpropertygridproperty__onclickbutton).)|  
+|`CMFCPropertyGridFileProperty::OnClickButton`|(Overrides [CMFCPropertyGridProperty::OnClickButton](../../mfc/reference/cmfcpropertygridproperty-class.md#onclickbutton).)|  
   
 ### Remarks  
   
@@ -72,7 +72,7 @@ class CMFCPropertyGridFileProperty : public CMFCPropertyGridProperty
 ## Requirements  
  **Header:** afxpropertygridctrl.h  
   
-##  <a name="cmfcpropertygridfileproperty__cmfcpropertygridfileproperty"></a>  CMFCPropertyGridFileProperty::CMFCPropertyGridFileProperty  
+##  <a name="cmfcpropertygridfileproperty"></a>  CMFCPropertyGridFileProperty::CMFCPropertyGridFileProperty  
  Constructs a `CMFCPropertyGridFileProperty` object.  
   
 ```  

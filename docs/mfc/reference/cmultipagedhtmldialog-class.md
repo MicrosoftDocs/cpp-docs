@@ -49,14 +49,14 @@ class CMultiPageDHtmlDialog : public CDHtmlDialog
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMultiPageDHtmlDialog::CMultiPageDHtmlDialog](#cmultipagedhtmldialog__cmultipagedhtmldialog)|Constructs a multipage (wizard-style) DHTML dialog object.|  
+|[CMultiPageDHtmlDialog::CMultiPageDHtmlDialog](#cmultipagedhtmldialog)|Constructs a multipage (wizard-style) DHTML dialog object.|  
 |[CMultiPageDHtmlDialog::~CMultiPageDHtmlDialog](#cmultipagedhtmldialog__~cmultipagedhtmldialog)|Destroys a multipage DHTML dialog object.|  
   
 ## Remarks  
  The mechanism for doing this is a [DHTML and URL event map](http://msdn.microsoft.com/en-us/2a7332f0-79d7-46e4-b816-0a618c46777a), which contains [embedded event maps](http://msdn.microsoft.com/library/5346210f-f8b7-4e28-9d2c-d9d7fd42421d) for each page.  
   
 ## Example  
- This multipage dialog assumes three HTML resources that define simple wizard-like functionality. The first page has a `Next` button, the second a **Prev** and `Next` button, and the third a **Prev** button. When one of the buttons is pressed, a handler function calls [CDHtmlDialog::LoadFromResource](../../mfc/reference/cdhtmldialog-class.md#cdhtmldialog__loadfromresource) to load the appropriate new page.  
+ This multipage dialog assumes three HTML resources that define simple wizard-like functionality. The first page has a `Next` button, the second a **Prev** and `Next` button, and the third a **Prev** button. When one of the buttons is pressed, a handler function calls [CDHtmlDialog::LoadFromResource](../../mfc/reference/cdhtmldialog-class.md#loadfromresource) to load the appropriate new page.  
   
  The pertinent parts of the class declaration (in CMyMultiPageDlg.h):  
   
@@ -90,7 +90,7 @@ class CMultiPageDHtmlDialog : public CDHtmlDialog
 ## Requirements  
  **Header:** afxdhtml.h  
   
-##  <a name="cmultipagedhtmldialog__cmultipagedhtmldialog"></a>  CMultiPageDHtmlDialog::CMultiPageDHtmlDialog  
+##  <a name="cmultipagedhtmldialog"></a>  CMultiPageDHtmlDialog::CMultiPageDHtmlDialog  
  Constructs a multipage (wizard-style) DHTML dialog object.  
   
 ```  
@@ -125,7 +125,7 @@ CMultiPageDHtmlDialog();
  `nHtmlResID`  
  Contains the ID number of an HTML resource.  
   
-##  <a name="cmultipagedhtmldialog___dtorcmultipagedhtmldialog"></a>  CMultiPageDHtmlDialog::~CMultiPageDHtmlDialog  
+##  <a name="_dtorcmultipagedhtmldialog"></a>  CMultiPageDHtmlDialog::~CMultiPageDHtmlDialog  
  Destroys a multipage DHTML dialog object.  
   
 ```  

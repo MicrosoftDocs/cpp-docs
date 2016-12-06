@@ -58,7 +58,7 @@ class CMFCDisableMenuAnimation
 |||  
 |-|-|  
 |Name|Description|  
-|[CMFCDisableMenuAnimation::Restore](#cmfcdisablemenuanimation__restore)|Restores the previous animation that the framework used to display a pop-up menu.|  
+|[CMFCDisableMenuAnimation::Restore](#restore)|Restores the previous animation that the framework used to display a pop-up menu.|  
   
 ### Data Members  
   
@@ -85,7 +85,7 @@ class CMFCDisableMenuAnimation
 ## Requirements  
  **Header:** afxpopupmenu.h  
   
-##  <a name="cmfcdisablemenuanimation__restore"></a>  CMFCDisableMenuAnimation::Restore  
+##  <a name="restore"></a>  CMFCDisableMenuAnimation::Restore  
  Restores the previous animation that the framework used to display a pop-up menu.  
   
 ```  

@@ -81,5 +81,5 @@ typedef struct tagCOMPAREITEMSTRUCT {
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CWnd::OnCompareItem](../../mfc/reference/cwnd-class.md#cwnd__oncompareitem)
+ [CWnd::OnCompareItem](../../mfc/reference/cwnd-class.md#oncompareitem)
 

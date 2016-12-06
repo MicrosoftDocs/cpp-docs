@@ -53,25 +53,25 @@ class CLinkCtrl : public CWnd
   
 |Name|Description|  
 |----------|-----------------|  
-|[CLinkCtrl::CLinkCtrl](#clinkctrl__clinkctrl)|Constructs a `CLinkCtrl` object.|  
+|[CLinkCtrl::CLinkCtrl](#clinkctrl)|Constructs a `CLinkCtrl` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CLinkCtrl::Create](#clinkctrl__create)|Creates a link control and attaches it to a `CLinkCtrl` object.|  
-|[CLinkCtrl::CreateEx](#clinkctrl__createex)|Creates a link control with extended styles and attaches it to a `CLinkCtrl` object.|  
-|[CLinkCtrl::GetIdealHeight](#clinkctrl__getidealheight)|Retrieves the ideal height of the link control.|  
-|[CLinkCtrl::GetIdealSize](#clinkctrl__getidealsize)|Calculates the preferred height of the link text for the current link control, depending on the specified width of the link.|  
-|[CLinkCtrl::GetItem](#clinkctrl__getitem)|Retrieves the states and attributes of a link control item.|  
-|[CLinkCtrl::GetItemID](#clinkctrl__getitemid)|Retrieves the ID of a link control item.|  
-|[CLinkCtrl::GetItemState](#clinkctrl__getitemstate)|Retrieves the state of the link control item.|  
-|[CLinkCtrl::GetItemUrl](#clinkctrl__getitemurl)|Retrieves the URL represented by the link control item.|  
-|[CLinkCtrl::HitTest](#clinkctrl__hittest)|Determines whether the user clicked the specified link.|  
-|[CLinkCtrl::SetItem](#clinkctrl__setitem)|Sets the states and attributes of a link control item.|  
-|[CLinkCtrl::SetItemID](#clinkctrl__setitemid)|Sets the ID of a link control item.|  
-|[CLinkCtrl::SetItemState](#clinkctrl__setitemstate)|Sets the state of the link control item.|  
-|[CLinkCtrl::SetItemUrl](#clinkctrl__setitemurl)|Sets the URL represented by the link control item.|  
+|[CLinkCtrl::Create](#create)|Creates a link control and attaches it to a `CLinkCtrl` object.|  
+|[CLinkCtrl::CreateEx](#createex)|Creates a link control with extended styles and attaches it to a `CLinkCtrl` object.|  
+|[CLinkCtrl::GetIdealHeight](#getidealheight)|Retrieves the ideal height of the link control.|  
+|[CLinkCtrl::GetIdealSize](#getidealsize)|Calculates the preferred height of the link text for the current link control, depending on the specified width of the link.|  
+|[CLinkCtrl::GetItem](#getitem)|Retrieves the states and attributes of a link control item.|  
+|[CLinkCtrl::GetItemID](#getitemid)|Retrieves the ID of a link control item.|  
+|[CLinkCtrl::GetItemState](#getitemstate)|Retrieves the state of the link control item.|  
+|[CLinkCtrl::GetItemUrl](#getitemurl)|Retrieves the URL represented by the link control item.|  
+|[CLinkCtrl::HitTest](#hittest)|Determines whether the user clicked the specified link.|  
+|[CLinkCtrl::SetItem](#setitem)|Sets the states and attributes of a link control item.|  
+|[CLinkCtrl::SetItemID](#setitemid)|Sets the ID of a link control item.|  
+|[CLinkCtrl::SetItemState](#setitemstate)|Sets the state of the link control item.|  
+|[CLinkCtrl::SetItemUrl](#setitemurl)|Sets the URL represented by the link control item.|  
   
 ## Remarks  
  A "link control" provides a convenient way to embed hypertext links in a window. The actual control is a window that renders marked-up text and launches appropriate applications when the user clicks an embedded link. Multiple links are supported within one control and can be accessed by a zero-based index.  
@@ -92,14 +92,14 @@ class CLinkCtrl : public CWnd
 ## Requirements  
  **Header:** afxcmn.h  
   
-##  <a name="clinkctrl__clinkctrl"></a>  CLinkCtrl::CLinkCtrl  
+##  <a name="clinkctrl"></a>  CLinkCtrl::CLinkCtrl  
  Constructs a `CLinkCtrl` object.  
   
 ```  
 CLinkCtrl();
 ```  
   
-##  <a name="clinkctrl__create"></a>  CLinkCtrl::Create  
+##  <a name="create"></a>  CLinkCtrl::Create  
  Creates a link control and attaches it to a `CLinkCtrl` object.  
   
 ```  
@@ -137,7 +137,7 @@ virtual BOOL Create(DWORD dwStyle,
  `true` if initialization was successful; otherwise `false`.  
   
 ### Remarks  
- You construct a `CLinkCtrl` object in two steps. First, call the constructor and then call `Create`, which creates the link control and attaches it to the `CLinkCtrl` object. If you want to use extended windows styles with your control, call [CLinkCtrl::CreateEx](#clinkctrl__createex) instead of `Create`.  
+ You construct a `CLinkCtrl` object in two steps. First, call the constructor and then call `Create`, which creates the link control and attaches it to the `CLinkCtrl` object. If you want to use extended windows styles with your control, call [CLinkCtrl::CreateEx](#createex) instead of `Create`.  
   
  The second form of the `Create` method is deprecated. Use the first form that specifies the `lpszLinkMarkup` parameter.  
   
@@ -151,7 +151,7 @@ virtual BOOL Create(DWORD dwStyle,
   
  [!code-cpp[NVC_MFC_CLinkCtrl_s1#1](../../mfc/reference/codesnippet/cpp/clinkctrl-class_2.cpp)]  
   
-##  <a name="clinkctrl__createex"></a>  CLinkCtrl::CreateEx  
+##  <a name="createex"></a>  CLinkCtrl::CreateEx  
  Creates a link control with extended styles and attaches it to a `CLinkCtrl` object.  
   
 ```  
@@ -194,11 +194,11 @@ virtual BOOL CreateEx(DWORD  dwExStyle,
  `true` if initialization was successful; otherwise `false`.  
   
 ### Remarks  
- Use `CreateEx` instead of [Create](#clinkctrl__create) to apply extended Windows style constants.  
+ Use `CreateEx` instead of [Create](#create) to apply extended Windows style constants.  
   
  The second form of the `CreateEx` method is deprecated. Use the first form that specifies the `lpszLinkMarkup` parameter.  
   
-##  <a name="clinkctrl__getidealheight"></a>  CLinkCtrl::GetIdealHeight  
+##  <a name="getidealheight"></a>  CLinkCtrl::GetIdealHeight  
  Retrieves the ideal height of the link control.  
   
 ```  
@@ -213,7 +213,7 @@ int GetIdealHeight() const;
 ### Remarks  
  This member function implements the behavior of the Win32 message [LM_GETIDEALHEIGHT](http://msdn.microsoft.com/library/windows/desktop/bb760716), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="clinkctrl__getidealsize"></a>  CLinkCtrl::GetIdealSize  
+##  <a name="getidealsize"></a>  CLinkCtrl::GetIdealSize  
  Calculates the preferred height of the link text for the current link control, depending on the specified width of the link.  
   
 ```  
@@ -235,11 +235,11 @@ int GetIdealSize(
  The preferred height of the link text, in pixels. The return value is the same as the value of the `cy` member of the `SIZE` structure.  
   
 ### Remarks  
- For an example of the `GetIdealSize` method, see the example in [CLinkCtrl::Create](#clinkctrl__create).  
+ For an example of the `GetIdealSize` method, see the example in [CLinkCtrl::Create](#create).  
   
  This method sends the [LM_GETIDEALSIZE](http://msdn.microsoft.com/library/windows/desktop/bb760718) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="clinkctrl__getitem"></a>  CLinkCtrl::GetItem  
+##  <a name="getitem"></a>  CLinkCtrl::GetItem  
  Retrieves the states and attributes of a link control item.  
   
 ```  
@@ -258,7 +258,7 @@ BOOL GetItem(PLITEM pItem) const;
 ### Remarks  
  This member function implements the behavior of the Win32 message [LM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760720), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="clinkctrl__getitemid"></a>  CLinkCtrl::GetItemID  
+##  <a name="getitemid"></a>  CLinkCtrl::GetItemID  
  Retrieves the ID of a link control item.  
   
 ```  
@@ -298,7 +298,7 @@ BOOL GetItemID(
 ### Remarks  
  Retrieves the ID of a specific link control item. For more information, see the Win32 message [LM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760720) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="clinkctrl__getitemstate"></a>  CLinkCtrl::GetItemState  
+##  <a name="getitemstate"></a>  CLinkCtrl::GetItemState  
  Retrieves the state of the link control item.  
   
 ```  
@@ -326,7 +326,7 @@ BOOL GetItemState(
 ### Remarks  
  Retrieves the value of the specified state item of a specific link control item. For more information, see the Win32 message [LM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760720) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="clinkctrl__getitemurl"></a>  CLinkCtrl::GetItemUrl  
+##  <a name="getitemurl"></a>  CLinkCtrl::GetItemUrl  
  Retrieves the URL represented by the link control item.  
   
 ```  
@@ -366,7 +366,7 @@ BOOL GetItemUrl(
 ### Remarks  
  Retrieves the URL represented by the specified link control item. For more information, see the Win32 message [LM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760720) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="clinkctrl__hittest"></a>  CLinkCtrl::HitTest  
+##  <a name="hittest"></a>  CLinkCtrl::HitTest  
  Determines if the user clicked the specified link.  
   
 ```  
@@ -385,7 +385,7 @@ BOOL HitTest(PLHITTESTINFO phti) const;
 ### Remarks  
  This member function implements the behavior of the Win32 message [LM_HITTEST](http://msdn.microsoft.com/library/windows/desktop/bb760722), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="clinkctrl__setitem"></a>  CLinkCtrl::SetItem  
+##  <a name="setitem"></a>  CLinkCtrl::SetItem  
  Sets the states and attributes of a link control item.  
   
 ```  
@@ -402,7 +402,7 @@ BOOL SetItem(PLITEM pItem);
 ### Remarks  
  This member function implements the behavior of the Win32 message [LM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760724), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="clinkctrl__setitemid"></a>  CLinkCtrl::SetItemID  
+##  <a name="setitemid"></a>  CLinkCtrl::SetItemID  
  Retrieves the ID of a link control item.  
   
 ```  
@@ -424,7 +424,7 @@ BOOL SetItemID(
 ### Remarks  
  Sets the ID of a specific link control item. For more information, see the Win32 message [LM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760724) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="clinkctrl__setitemstate"></a>  CLinkCtrl::SetItemState  
+##  <a name="setitemstate"></a>  CLinkCtrl::SetItemState  
  Retrieves the state of the link control item.  
   
 ```  
@@ -450,7 +450,7 @@ BOOL SetItemState(
 ### Remarks  
  Sets the value of the specified state item of a specific link control item. For more information, see the Win32 message [LM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760724) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="clinkctrl__setitemurl"></a>  CLinkCtrl::SetItemUrl  
+##  <a name="setitemurl"></a>  CLinkCtrl::SetItemUrl  
  Sets the URL represented by the link control item.  
   
 ```  

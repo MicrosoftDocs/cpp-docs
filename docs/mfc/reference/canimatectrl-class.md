@@ -51,20 +51,20 @@ class CAnimateCtrl : public CWnd
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAnimateCtrl::CAnimateCtrl](#canimatectrl__canimatectrl)|Constructs a `CAnimateCtrl` object.|  
+|[CAnimateCtrl::CAnimateCtrl](#canimatectrl)|Constructs a `CAnimateCtrl` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAnimateCtrl::Close](#canimatectrl__close)|Closes the AVI clip.|  
-|[CAnimateCtrl::Create](#canimatectrl__create)|Creates an animation control and attaches it to a `CAnimateCtrl` object.|  
-|[CAnimateCtrl::CreateEx](#canimatectrl__createex)|Creates an animation control with the specified Windows extended styles and attaches it to a `CAnimateCtrl` object.|  
-|[CAnimateCtrl::IsPlaying](#canimatectrl__isplaying)|Indicates whether an Audio-Video Interleaved (AVI) clip is playing.|  
-|[CAnimateCtrl::Open](#canimatectrl__open)|Opens an AVI clip from a file or resource and displays the first frame.|  
-|[CAnimateCtrl::Play](#canimatectrl__play)|Plays the AVI clip without sound.|  
-|[CAnimateCtrl::Seek](#canimatectrl__seek)|Displays a selected single frame of the AVI clip.|  
-|[CAnimateCtrl::Stop](#canimatectrl__stop)|Stops playing the AVI clip.|  
+|[CAnimateCtrl::Close](#close)|Closes the AVI clip.|  
+|[CAnimateCtrl::Create](#create)|Creates an animation control and attaches it to a `CAnimateCtrl` object.|  
+|[CAnimateCtrl::CreateEx](#createex)|Creates an animation control with the specified Windows extended styles and attaches it to a `CAnimateCtrl` object.|  
+|[CAnimateCtrl::IsPlaying](#isplaying)|Indicates whether an Audio-Video Interleaved (AVI) clip is playing.|  
+|[CAnimateCtrl::Open](#open)|Opens an AVI clip from a file or resource and displays the first frame.|  
+|[CAnimateCtrl::Play](#play)|Plays the AVI clip without sound.|  
+|[CAnimateCtrl::Seek](#seek)|Displays a selected single frame of the AVI clip.|  
+|[CAnimateCtrl::Stop](#stop)|Stops playing the AVI clip.|  
   
 ## Remarks  
  This control (and therefore the `CAnimateCtrl` class) is available only to programs running under Windows 95, Windows 98, and Windows NT version 3.51 and later.  
@@ -103,7 +103,7 @@ class CAnimateCtrl : public CWnd
 ## Requirements  
  **Header:** afxcmn.h  
   
-##  <a name="canimatectrl__canimatectrl"></a>  CAnimateCtrl::CAnimateCtrl  
+##  <a name="canimatectrl"></a>  CAnimateCtrl::CAnimateCtrl  
  Constructs a `CAnimateCtrl` object.  
   
 ```  
@@ -111,12 +111,12 @@ CAnimateCtrl();
 ```  
   
 ### Remarks  
- You must call the [Create](#canimatectrl__create) member function before you can perform any other operations on the object you create.  
+ You must call the [Create](#create) member function before you can perform any other operations on the object you create.  
   
 ### Example  
  [!code-cpp[NVC_MFCControlLadenDialog#56](../../mfc/codesnippet/cpp/canimatectrl-class_1.cpp)]  
   
-##  <a name="canimatectrl__close"></a>  CAnimateCtrl::Close  
+##  <a name="close"></a>  CAnimateCtrl::Close  
  Closes the AVI clip that was previously opened in the animation control (if any) and removes it from memory.  
   
 ```  
@@ -127,9 +127,9 @@ BOOL Close();
  Nonzero if successful; otherwise zero.  
   
 ### Example  
-  See the example for [CAnimateCtrl::CAnimateCtrl](#canimatectrl__canimatectrl).  
+  See the example for [CAnimateCtrl::CAnimateCtrl](#canimatectrl).  
   
-##  <a name="canimatectrl__create"></a>  CAnimateCtrl::Create  
+##  <a name="create"></a>  CAnimateCtrl::Create  
  Creates an animation control and attaches it to a `CAnimateCtrl` object.  
   
 ```  
@@ -167,14 +167,14 @@ virtual BOOL Create(
   
 - **WS_DISABLED** Rarely  
   
- If you want to use extended windows styles with your animation control, call [CreateEx](#canimatectrl__createex) instead of **Create**.  
+ If you want to use extended windows styles with your animation control, call [CreateEx](#createex) instead of **Create**.  
   
  In addition to the window styles listed above, you may want to apply one or more of the animation control styles to an animation control. See the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information on [animation control styles](http://msdn.microsoft.com/library/windows/desktop/bb761886).  
   
 ### Example  
-  See the example for [CAnimateCtrl::CAnimateCtrl](#canimatectrl__canimatectrl).  
+  See the example for [CAnimateCtrl::CAnimateCtrl](#canimatectrl).  
   
-##  <a name="canimatectrl__createex"></a>  CAnimateCtrl::CreateEx  
+##  <a name="createex"></a>  CAnimateCtrl::CreateEx  
  Creates a control (a child window) and associates it with the `CAnimateCtrl` object.  
   
 ```  
@@ -206,9 +206,9 @@ virtual BOOL CreateEx(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- Use `CreateEx` instead of [Create](#canimatectrl__create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
+ Use `CreateEx` instead of [Create](#create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
   
-##  <a name="canimatectrl__isplaying"></a>  CAnimateCtrl::IsPlaying  
+##  <a name="isplaying"></a>  CAnimateCtrl::IsPlaying  
  Indicates whether an Audio-Video Interleaved (AVI) clip is playing.  
   
 ```  
@@ -223,7 +223,7 @@ BOOL IsPlaying() const;
 ### Remarks  
  This method sends the [ACM_ISPLAYING](http://msdn.microsoft.com/library/windows/desktop/bb761895) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="canimatectrl__open"></a>  CAnimateCtrl::Open  
+##  <a name="open"></a>  CAnimateCtrl::Open  
  Call this function to open an AVI clip and display its first frame.  
   
 ```  
@@ -255,9 +255,9 @@ BOOL Open(UINT nID);
  If the animation control has the `ACS_TRANSPARENT` style, the first frame will be drawn using a transparent background rather than the background color specified in the animation clip.  
   
 ### Example  
-  See the example for [CAnimateCtrl::CAnimateCtrl](#canimatectrl__canimatectrl).  
+  See the example for [CAnimateCtrl::CAnimateCtrl](#canimatectrl).  
   
-##  <a name="canimatectrl__play"></a>  CAnimateCtrl::Play  
+##  <a name="play"></a>  CAnimateCtrl::Play  
  Call this function to play an AVI clip in an animation control.  
   
 ```  
@@ -284,9 +284,9 @@ BOOL Play(
  The animation control will play the clip in the background while your thread continues executing. If the animation control has `ACS_TRANSPARENT` style, the AVI clip will be played using a transparent background rather than the background color specified in the animation clip.  
   
 ### Example  
-  See the example for [CAnimateCtrl::CAnimateCtrl](#canimatectrl__canimatectrl).  
+  See the example for [CAnimateCtrl::CAnimateCtrl](#canimatectrl).  
   
-##  <a name="canimatectrl__seek"></a>  CAnimateCtrl::Seek  
+##  <a name="seek"></a>  CAnimateCtrl::Seek  
  Call this function to statically display a single frame of your AVI clip.  
   
 ```  
@@ -304,9 +304,9 @@ BOOL Seek(UINT nTo);
  If the animation control has `ACS_TRANSPARENT` style, the AVI clip will be drawn using a transparent background rather than the background color specified in the animation clip.  
   
 ### Example  
-  See the example for [CAnimateCtrl::CAnimateCtrl](#canimatectrl__canimatectrl).  
+  See the example for [CAnimateCtrl::CAnimateCtrl](#canimatectrl).  
   
-##  <a name="canimatectrl__stop"></a>  CAnimateCtrl::Stop  
+##  <a name="stop"></a>  CAnimateCtrl::Stop  
  Call this function to stop playing an AVI clip in an animation control.  
   
 ```  
@@ -317,11 +317,11 @@ BOOL Stop();
  Nonzero if successful; otherwise zero.  
   
 ### Example  
-  See the example for [CAnimateCtrl::CAnimateCtrl](#canimatectrl__canimatectrl).  
+  See the example for [CAnimateCtrl::CAnimateCtrl](#canimatectrl).  
   
 ## See Also  
  [CWnd Class](../../mfc/reference/cwnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
- [CAnimateCtrl::Create](#canimatectrl__create)   
+ [CAnimateCtrl::Create](#create)   
  [ON_CONTROL](http://msdn.microsoft.com/library/2cb7ebdf-296b-4606-b191-3449835003db)
 

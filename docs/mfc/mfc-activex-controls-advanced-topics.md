@@ -114,7 +114,7 @@ This article covers advanced topics related to developing ActiveX controls. Thes
  For this property to be useful, you could declare a two-dimensional array member variable in the control class, of type **short**, to store values for the parameterized property. You could then modify the Get function to return the value stored at the proper row and column, as indicated by the parameters, and modify the Set function to update the value referenced by the row and column parameters.  
   
 ##  <a name="_core_handling_errors_in_your_activex_control"></a> Handling Errors in Your ActiveX Control  
- If error conditions occur in the control, you may need to report the error to the control container. There are two methods for reporting errors, depending on the situation in which the error occurs. If the error occurs within a property's Get or Set function, or within the implementation of an OLE Automation method, the control should call [COleControl::ThrowError](../mfc/reference/colecontrol-class.md#colecontrol__throwerror), which signals to the control user that an error has occurred. If the error occurs at any other time, the control should call [COleControl::FireError](../mfc/reference/colecontrol-class.md#colecontrol__fireerror), which fires a stock Error event.  
+ If error conditions occur in the control, you may need to report the error to the control container. There are two methods for reporting errors, depending on the situation in which the error occurs. If the error occurs within a property's Get or Set function, or within the implementation of an OLE Automation method, the control should call [COleControl::ThrowError](../mfc/reference/colecontrol-class.md#throwerror), which signals to the control user that an error has occurred. If the error occurs at any other time, the control should call [COleControl::FireError](../mfc/reference/colecontrol-class.md#fireerror), which fires a stock Error event.  
   
  To indicate the kind of error that has occurred, the control must pass an error code to `ThrowError` or `FireError`. An error code is an OLE status code, which has a 32-bit value. When possible, choose an error code from the standard set of codes defined in the OLECTL.H header file. The following table summarizes these codes.  
   
@@ -172,7 +172,7 @@ This article covers advanced topics related to developing ActiveX controls. Thes
 ##  <a name="_core_handling_special_keys_in_your_control"></a> Handling Special Keys in the Control  
  In some cases you may want to handle certain keystroke combinations in a special way; for example, insert a new line when the ENTER key is pressed in a multiline text box control or move between a group of edit controls when a directional key ID pressed.  
   
- If the base class of your ActiveX control is `COleControl`, you can override [CWnd::PreTranslateMessage](../mfc/reference/cwnd-class.md#cwnd__pretranslatemessage) to handle messages before the container processes them. When using this technique, always return **TRUE** if you handle the message in your override of `PreTranslateMessage`.  
+ If the base class of your ActiveX control is `COleControl`, you can override [CWnd::PreTranslateMessage](../mfc/reference/cwnd-class.md#pretranslatemessage) to handle messages before the container processes them. When using this technique, always return **TRUE** if you handle the message in your override of `PreTranslateMessage`.  
   
  The following code example demonstrates a possible way of handling any messages related to the directional keys.  
   
@@ -181,7 +181,7 @@ This article covers advanced topics related to developing ActiveX controls. Thes
  For more information on handling keyboard interfaces for an ActiveX control, see the ActiveX SDK documentation.  
   
 ##  <a name="_core_accessing_dialog_controls_that_are_invisible_at_run_time"></a> Accessing Dialog Controls that Are Invisible at Run Time  
- You can create dialog controls that have no user interface and are invisible at run time. If you add an invisible at run time ActiveX control to a dialog box and use [CWnd::GetDlgItem](../mfc/reference/cwnd-class.md#cwnd__getdlgitem) to access the control, the control will not work correctly. Instead, you should use one of the following techniques to obtain an object that represents the control:  
+ You can create dialog controls that have no user interface and are invisible at run time. If you add an invisible at run time ActiveX control to a dialog box and use [CWnd::GetDlgItem](../mfc/reference/cwnd-class.md#getdlgitem) to access the control, the control will not work correctly. Instead, you should use one of the following techniques to obtain an object that represents the control:  
   
 -   Using the Add Member Variable Wizard, select **Control Variable** and then select the control's ID. Enter a member variable name and select the control's wrapper class as the **Control Type**.  
   

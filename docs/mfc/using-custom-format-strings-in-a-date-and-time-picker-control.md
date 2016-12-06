@@ -43,7 +43,7 @@ By default, date and time picker controls provide three format types (each forma
   
 -   **DTS_TIMEFORMAT** Displays the time in long format, producing output like "5:31:42 PM".  
   
- However, you can customize the appearance of the date or time by using a custom format string. This custom string is made up of either existing format characters, nonformat characters, or a combination of both. Once the custom string is built, make a call to [CDateTimeCtrl::SetFormat](../mfc/reference/cdatetimectrl-class.md#cdatetimectrl__setformat) passing in your custom string. The date and time picker control will then display the current value using your custom format string.  
+ However, you can customize the appearance of the date or time by using a custom format string. This custom string is made up of either existing format characters, nonformat characters, or a combination of both. Once the custom string is built, make a call to [CDateTimeCtrl::SetFormat](../mfc/reference/cdatetimectrl-class.md#setformat) passing in your custom string. The date and time picker control will then display the current value using your custom format string.  
   
  The following example code (where `m_dtPicker` is the `CDateTimeCtrl` object) demonstrates one possible solution:  
   

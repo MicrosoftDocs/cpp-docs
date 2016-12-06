@@ -59,13 +59,13 @@ When a container launches a server so that a user can edit an embedded or linked
 4.  Implement your server-item class's `OnGetExtent` member function. The framework calls this function to retrieve the size of the item. The default implementation does nothing.  
   
 ##  <a name="_core_a_tip_for_server.2d.item_architecture"></a> A Tip for Server-Item Architecture  
- As noted in [Implementing Server Items](#_core_implementing_server_items), server applications must be able to render items both in the server's view and in a metafile used by the container application. In the Microsoft Foundation Class Library's application architecture, the view class's `OnDraw` member function renders the item when it is being edited (see [CView::OnDraw](../mfc/reference/cview-class.md#cview__ondraw) in the *Class Library Reference*). The server item's `OnDraw` renders the item into a metafile in all other cases (see [COleServerItem::OnDraw](../mfc/reference/coleserveritem-class.md#coleserveritem__ondraw)).  
+ As noted in [Implementing Server Items](#_core_implementing_server_items), server applications must be able to render items both in the server's view and in a metafile used by the container application. In the Microsoft Foundation Class Library's application architecture, the view class's `OnDraw` member function renders the item when it is being edited (see [CView::OnDraw](../mfc/reference/cview-class.md#ondraw) in the *Class Library Reference*). The server item's `OnDraw` renders the item into a metafile in all other cases (see [COleServerItem::OnDraw](../mfc/reference/coleserveritem-class.md#ondraw)).  
   
  You can avoid duplication of code by writing helper functions in your server-document class and calling them from the `OnDraw` functions in your view and server-item classes. The MFC OLE sample [HIERSVR](../visual-cpp-samples.md) uses this strategy: the functions **CServerView::OnDraw** and **CServerItem::OnDraw** both call **CServerDoc::DrawTree** to render the item.  
   
  The view and the item both have `OnDraw` member functions because they draw under different conditions. The view must take into account such factors as zooming, selection size and extent, clipping, and user-interface elements such as scroll bars. The server item, on the other hand, always draws the entire OLE object.  
   
- For more information, see [CView::OnDraw](../mfc/reference/cview-class.md#cview__ondraw), [COleServerItem](../mfc/reference/coleserveritem-class.md), [COleServerItem::OnDraw](../mfc/reference/coleserveritem-class.md#coleserveritem__ondraw), and [COleServerDoc::OnGetEmbeddedItem](../mfc/reference/coleserverdoc-class.md#coleserverdoc__ongetembeddeditem) in the *Class Library Reference*.  
+ For more information, see [CView::OnDraw](../mfc/reference/cview-class.md#ondraw), [COleServerItem](../mfc/reference/coleserveritem-class.md), [COleServerItem::OnDraw](../mfc/reference/coleserveritem-class.md#ondraw), and [COleServerDoc::OnGetEmbeddedItem](../mfc/reference/coleserverdoc-class.md#ongetembeddeditem) in the *Class Library Reference*.  
   
 ## See Also  
  [Servers](../mfc/servers.md)

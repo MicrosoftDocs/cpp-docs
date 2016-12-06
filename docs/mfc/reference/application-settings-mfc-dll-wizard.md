@@ -58,7 +58,7 @@ Use this page of the MFC DLL wizard to design and add basic features to a new MF
  **Windows sockets**  
  Select this option to indicate that your program supports Windows sockets. Windows sockets allow you to write programs that communicate over TCP/IP networks.  
   
- When your MFC DLL with Windows sockets support is created, [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#cwinapp__initinstance) initializes support for sockets and the MFC header file StdAfx.h includes AfxSock.h.  
+ When your MFC DLL with Windows sockets support is created, [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) initializes support for sockets and the MFC header file StdAfx.h includes AfxSock.h.  
   
 ## See Also  
  [MFC DLL Wizard](../../mfc/reference/mfc-dll-wizard.md)   

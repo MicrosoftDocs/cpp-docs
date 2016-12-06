@@ -53,7 +53,7 @@ In MFC, the most common way to open a file is a two-stage process.
   
      You usually create a file object by declaring a [CFile](../mfc/reference/cfile-class.md) variable on the stack frame.  
   
-2.  Call the [Open](../mfc/reference/cfile-class.md#cfile__open) member function for the file object, supplying a path and permission flags.  
+2.  Call the [Open](../mfc/reference/cfile-class.md#open) member function for the file object, supplying a path and permission flags.  
   
      The return value for `Open` will be nonzero if the file was opened successfully or 0 if the specified file could not be opened. The `Open` member function is prototyped as follows:  
   
@@ -70,6 +70,6 @@ In MFC, the most common way to open a file is a two-stage process.
   
 ## See Also  
  [CFile Class](../mfc/reference/cfile-class.md)   
- [CFile::Open](../mfc/reference/cfile-class.md#cfile__open)   
+ [CFile::Open](../mfc/reference/cfile-class.md#open)   
  [Files](../mfc/files-in-mfc.md)
 

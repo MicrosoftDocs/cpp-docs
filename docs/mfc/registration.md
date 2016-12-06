@@ -77,6 +77,6 @@ When a user wants to insert an OLE item into an application, OLE presents a list
 ## See Also  
  [OLE](../mfc/ole-in-mfc.md)   
  [Servers](../mfc/servers.md)   
- [CWinApp::RunAutomated](../mfc/reference/cwinapp-class.md#cwinapp__runautomated)   
- [CWinApp::RunEmbedded](../mfc/reference/cwinapp-class.md#cwinapp__runembedded)   
+ [CWinApp::RunAutomated](../mfc/reference/cwinapp-class.md#runautomated)   
+ [CWinApp::RunEmbedded](../mfc/reference/cwinapp-class.md#runembedded)   
  [COleTemplateServer Class](../mfc/reference/coletemplateserver-class.md)

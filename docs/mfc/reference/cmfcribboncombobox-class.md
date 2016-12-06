@@ -49,28 +49,28 @@ class CMFCRibbonComboBox : public CMFCRibbonEdit
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonComboBox::CMFCRibbonComboBox](#cmfcribboncombobox__cmfcribboncombobox)|Constructs a CMFCRibbonComboBox object.|  
+|[CMFCRibbonComboBox::CMFCRibbonComboBox](#cmfcribboncombobox)|Constructs a CMFCRibbonComboBox object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonComboBox::AddItem](#cmfcribboncombobox__additem)|Appends a unique item to the list box.|  
-|[CMFCRibbonComboBox::DeleteItem](#cmfcribboncombobox__deleteitem)|Deletes a specified item from the list box.|  
-|[CMFCRibbonComboBox::EnableDropDownListResize](#cmfcribboncombobox__enabledropdownlistresize)|Specifies whether the list box can change size when it drops down.|  
-|[CMFCRibbonComboBox::FindItem](#cmfcribboncombobox__finditem)|Returns the index of the first item in the list box that matches a specified string.|  
-|[CMFCRibbonComboBox::GetCount](#cmfcribboncombobox__getcount)|Returns the number of items in the list box.|  
-|[CMFCRibbonComboBox::GetCurSel](#cmfcribboncombobox__getcursel)|Gets the index of the currently selected item in the list box.|  
-|[CMFCRibbonComboBox::GetDropDownHeight](#cmfcribboncombobox__getdropdownheight)|Gets the height of the list box when the list box is dropped down.|  
-|[CMFCRibbonComboBox::GetIntermediateSize](#cmfcribboncombobox__getintermediatesize)|Returns the size of the combo box as displayed in intermediate mode.|  
-|[CMFCRibbonComboBox::GetItem](#cmfcribboncombobox__getitem)|Returns the string associated with an item at a specified index in the list box.|  
-|[CMFCRibbonComboBox::GetItemData](#cmfcribboncombobox__getitemdata)|Returns the data associated with an item at a specified index in the list box.|  
-|[CMFCRibbonComboBox::HasEditBox](#cmfcribboncombobox__haseditbox)|Indicates whether the control contains an edit box.|  
-|[CMFCRibbonComboBox::IsResizeDropDownList](#cmfcribboncombobox__isresizedropdownlist)|Indicates whether or not the list box can be resized.|  
-|[CMFCRibbonComboBox::OnSelectItem](#cmfcribboncombobox__onselectitem)|Called by the framework when the user selects an item in the list box.|  
-|[CMFCRibbonComboBox::RemoveAllItems](#cmfcribboncombobox__removeallitems)|Deletes all items from the list box and clears the edit box.|  
-|[CMFCRibbonComboBox::SelectItem](#cmfcribboncombobox__selectitem)|Selects an item in the list box.|  
-|[CMFCRibbonComboBox::SetDropDownHeight](#cmfcribboncombobox__setdropdownheight)|Sets the height of the list box when it is dropped down.|  
+|[CMFCRibbonComboBox::AddItem](#additem)|Appends a unique item to the list box.|  
+|[CMFCRibbonComboBox::DeleteItem](#deleteitem)|Deletes a specified item from the list box.|  
+|[CMFCRibbonComboBox::EnableDropDownListResize](#enabledropdownlistresize)|Specifies whether the list box can change size when it drops down.|  
+|[CMFCRibbonComboBox::FindItem](#finditem)|Returns the index of the first item in the list box that matches a specified string.|  
+|[CMFCRibbonComboBox::GetCount](#getcount)|Returns the number of items in the list box.|  
+|[CMFCRibbonComboBox::GetCurSel](#getcursel)|Gets the index of the currently selected item in the list box.|  
+|[CMFCRibbonComboBox::GetDropDownHeight](#getdropdownheight)|Gets the height of the list box when the list box is dropped down.|  
+|[CMFCRibbonComboBox::GetIntermediateSize](#getintermediatesize)|Returns the size of the combo box as displayed in intermediate mode.|  
+|[CMFCRibbonComboBox::GetItem](#getitem)|Returns the string associated with an item at a specified index in the list box.|  
+|[CMFCRibbonComboBox::GetItemData](#getitemdata)|Returns the data associated with an item at a specified index in the list box.|  
+|[CMFCRibbonComboBox::HasEditBox](#haseditbox)|Indicates whether the control contains an edit box.|  
+|[CMFCRibbonComboBox::IsResizeDropDownList](#isresizedropdownlist)|Indicates whether or not the list box can be resized.|  
+|[CMFCRibbonComboBox::OnSelectItem](#onselectitem)|Called by the framework when the user selects an item in the list box.|  
+|[CMFCRibbonComboBox::RemoveAllItems](#removeallitems)|Deletes all items from the list box and clears the edit box.|  
+|[CMFCRibbonComboBox::SelectItem](#selectitem)|Selects an item in the list box.|  
+|[CMFCRibbonComboBox::SetDropDownHeight](#setdropdownheight)|Sets the height of the list box when it is dropped down.|  
   
 ## Remarks  
  The ribbon combo box consists of a list box combined with either a static label or label that can be edited by the user. You must specify which type you want when you create your ribbon combo box.  
@@ -94,7 +94,7 @@ class CMFCRibbonComboBox : public CMFCRibbonEdit
 ## Requirements  
  **Header:** afxribboncombobox.h  
   
-##  <a name="cmfcribboncombobox__additem"></a>  CMFCRibbonComboBox::AddItem  
+##  <a name="additem"></a>  CMFCRibbonComboBox::AddItem  
  Appends a unique item to the list box.  
   
 ```  
@@ -113,7 +113,7 @@ virtual INT_PTR AddItem(
 ### Return Value  
  The zero-based index of the appended item.  
   
-##  <a name="cmfcribboncombobox__cmfcribboncombobox"></a>  CMFCRibbonComboBox::CMFCRibbonComboBox  
+##  <a name="cmfcribboncombobox"></a>  CMFCRibbonComboBox::CMFCRibbonComboBox  
  Constructs a `CMFCRibbonComboBox` object.  
   
 ```  
@@ -148,7 +148,7 @@ CMFCRibbonComboBox();
 ### Remarks  
  The default width is 108 pixels.  
   
-##  <a name="cmfcribboncombobox__deleteitem"></a>  CMFCRibbonComboBox::DeleteItem  
+##  <a name="deleteitem"></a>  CMFCRibbonComboBox::DeleteItem  
  Deletes a specified item from the list box.  
   
 ```  
@@ -174,7 +174,7 @@ BOOL DeleteItem(LPCTSTR lpszText);
   
 ### Remarks  
   
-##  <a name="cmfcribboncombobox__enabledropdownlistresize"></a>  CMFCRibbonComboBox::EnableDropDownListResize  
+##  <a name="enabledropdownlistresize"></a>  CMFCRibbonComboBox::EnableDropDownListResize  
  Specifies whether the list box can change size when it drops down.  
   
 ```  
@@ -188,7 +188,7 @@ void EnableDropDownListResize(BOOL bEnable=FALSE);
 ### Remarks  
  When resizing is enabled, the list box will change size to fit the items it displays.  
   
-##  <a name="cmfcribboncombobox__finditem"></a>  CMFCRibbonComboBox::FindItem  
+##  <a name="finditem"></a>  CMFCRibbonComboBox::FindItem  
  Returns the index of the first item in the list box that matches a specified string.  
   
 ```  
@@ -206,7 +206,7 @@ int FindItem(LPCTSTR lpszText) const;
   
 ### Remarks  
   
-##  <a name="cmfcribboncombobox__getcount"></a>  CMFCRibbonComboBox::GetCount  
+##  <a name="getcount"></a>  CMFCRibbonComboBox::GetCount  
  Returns the number of items in the list box.  
   
 ```  
@@ -220,7 +220,7 @@ INT_PTR GetCount() const;
   
 ### Remarks  
   
-##  <a name="cmfcribboncombobox__getcursel"></a>  CMFCRibbonComboBox::GetCurSel  
+##  <a name="getcursel"></a>  CMFCRibbonComboBox::GetCurSel  
  Gets the index of the currently selected item in the list box.  
   
 ```  
@@ -232,7 +232,7 @@ int GetCurSel() const;
 ### Return Value  
  The zero-based index of the currently selected item in the list box; or -1 if no item is selected.  
   
-##  <a name="cmfcribboncombobox__getdropdownheight"></a>  CMFCRibbonComboBox::GetDropDownHeight  
+##  <a name="getdropdownheight"></a>  CMFCRibbonComboBox::GetDropDownHeight  
  Gets the height of the list box when the list box is dropped down.  
   
 ```  
@@ -244,7 +244,7 @@ int GetDropDownHeight();
   
 ### Remarks  
   
-##  <a name="cmfcribboncombobox__getintermediatesize"></a>  CMFCRibbonComboBox::GetIntermediateSize  
+##  <a name="getintermediatesize"></a>  CMFCRibbonComboBox::GetIntermediateSize  
  Returns the size of the combo box as displayed in intermediate mode.  
   
 ```  
@@ -261,7 +261,7 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ### Remarks  
  The size returned is based on the size of the combo box when it displays small images.  
   
-##  <a name="cmfcribboncombobox__getitem"></a>  CMFCRibbonComboBox::GetItem  
+##  <a name="getitem"></a>  CMFCRibbonComboBox::GetItem  
  Returns the string associated with an item at a specified index in the list box.  
   
 ```  
@@ -279,7 +279,7 @@ LPCTSTR GetItem(int iIndex) const;
   
 ### Remarks  
   
-##  <a name="cmfcribboncombobox__getitemdata"></a>  CMFCRibbonComboBox::GetItemData  
+##  <a name="getitemdata"></a>  CMFCRibbonComboBox::GetItemData  
  Returns the data associated with an item at a specified index in the list box.  
   
 ```  
@@ -295,7 +295,7 @@ DWORD_PTR GetItemData(int iIndex) const;
 ### Return Value  
  The data associated with the item; or 0 if the item does not exist, or if the index parameter is -1 and there is no selected item in the list box.  
   
-##  <a name="cmfcribboncombobox__haseditbox"></a>  CMFCRibbonComboBox::HasEditBox  
+##  <a name="haseditbox"></a>  CMFCRibbonComboBox::HasEditBox  
  Indicates whether the control contains an edit box.  
   
 ```  
@@ -309,7 +309,7 @@ BOOL HasEditBox() const;
   
 ### Remarks  
   
-##  <a name="cmfcribboncombobox__isresizedropdownlist"></a>  CMFCRibbonComboBox::IsResizeDropDownList  
+##  <a name="isresizedropdownlist"></a>  CMFCRibbonComboBox::IsResizeDropDownList  
  Indicates whether or not the list box can be resized.  
   
 ```  
@@ -319,12 +319,12 @@ BOOL IsResizeDropDownList() const;
 ```  
   
 ### Return Value  
- `TRUE` if the list box can be resized; otherwise `FALSE`. [CMFCRibbonComboBox::EnableDropDownListResize](#cmfcribboncombobox__enabledropdownlistresize)  
+ `TRUE` if the list box can be resized; otherwise `FALSE`. [CMFCRibbonComboBox::EnableDropDownListResize](#enabledropdownlistresize)  
   
 ### Remarks  
- You can enable list box resizing by using the [CMFCRibbonComboBox::EnableDropDownListResize](#cmfcribboncombobox__enabledropdownlistresize) method.  
+ You can enable list box resizing by using the [CMFCRibbonComboBox::EnableDropDownListResize](#enabledropdownlistresize) method.  
   
-##  <a name="cmfcribboncombobox__onselectitem"></a>  CMFCRibbonComboBox::OnSelectItem  
+##  <a name="onselectitem"></a>  CMFCRibbonComboBox::OnSelectItem  
  Called by the framework when a user selects an item in the list box.  
   
 ```  
@@ -338,7 +338,7 @@ virtual void OnSelectItem(int nItem);
 ### Remarks  
  Override this method if you want to process a user input selection.  
   
-##  <a name="cmfcribboncombobox__removeallitems"></a>  CMFCRibbonComboBox::RemoveAllItems  
+##  <a name="removeallitems"></a>  CMFCRibbonComboBox::RemoveAllItems  
  Deletes all items from the list box and clears the edit box.  
   
 ```  
@@ -347,7 +347,7 @@ void RemoveAllItems();
   
 ### Remarks  
   
-##  <a name="cmfcribboncombobox__selectitem"></a>  CMFCRibbonComboBox::SelectItem  
+##  <a name="selectitem"></a>  CMFCRibbonComboBox::SelectItem  
  Selects an item in the list box.  
   
 ```  
@@ -373,7 +373,7 @@ BOOL SelectItem(LPCTSTR lpszText);
   
 ### Remarks  
   
-##  <a name="cmfcribboncombobox__setdropdownheight"></a>  CMFCRibbonComboBox::SetDropDownHeight  
+##  <a name="setdropdownheight"></a>  CMFCRibbonComboBox::SetDropDownHeight  
  Sets the height of the list box when it is dropped down.  
   
 ```  

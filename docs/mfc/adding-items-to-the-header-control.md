@@ -41,7 +41,7 @@ After creating your header control ([CHeaderCtrl](../mfc/reference/cheaderctrl-c
   
 1.  Prepare an [HD_ITEM](http://msdn.microsoft.com/library/windows/desktop/bb775247) structure.  
   
-2.  Call [CHeaderCtrl::InsertItem](../mfc/reference/cheaderctrl-class.md#cheaderctrl__insertitem), passing the structure.  
+2.  Call [CHeaderCtrl::InsertItem](../mfc/reference/cheaderctrl-class.md#insertitem), passing the structure.  
   
 3.  Repeat steps 1 and 2 for additional items.  
   

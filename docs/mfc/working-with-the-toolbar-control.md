@@ -42,7 +42,7 @@ This article explains how you can access the [CToolBarCtrl](../mfc/reference/cto
   
 #### To access the toolbar common control underlying your CToolBar object  
   
-1.  Call [CToolBar::GetToolBarCtrl](../mfc/reference/ctoolbar-class.md#ctoolbar__gettoolbarctrl).  
+1.  Call [CToolBar::GetToolBarCtrl](../mfc/reference/ctoolbar-class.md#gettoolbarctrl).  
   
  `GetToolBarCtrl` returns a reference to a [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) object. You can use the reference to call member functions of the toolbar control class.  
   

@@ -58,7 +58,7 @@ class CMFCRibbonCustomizeDialog : public CMFCPropertySheet
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonCustomizeDialog::CMFCRibbonCustomizeDialog](#cmfcribboncustomizedialog__cmfcribboncustomizedialog)|Constructs a `CMFCRibbonCustomizeDialog` object.|  
+|[CMFCRibbonCustomizeDialog::CMFCRibbonCustomizeDialog](#cmfcribboncustomizedialog)|Constructs a `CMFCRibbonCustomizeDialog` object.|  
 |`CMFCRibbonCustomizeDialog::~CMFCRibbonCustomizeDialog`|Destructor.|  
   
 ### Public Methods  
@@ -90,7 +90,7 @@ class CMFCRibbonCustomizeDialog : public CMFCPropertySheet
 ## Requirements  
  **Header:** afxribboncustomizedialog.h  
   
-##  <a name="cmfcribboncustomizedialog__cmfcribboncustomizedialog"></a>  CMFCRibbonCustomizeDialog::CMFCRibbonCustomizeDialog  
+##  <a name="cmfcribboncustomizedialog"></a>  CMFCRibbonCustomizeDialog::CMFCRibbonCustomizeDialog  
  Constructs a `CMFCRibbonCustomizeDialog` object.  
   
 ```  

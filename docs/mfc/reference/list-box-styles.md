@@ -102,6 +102,6 @@ translation.priority.ht:
   
 ## See Also  
  [Styles Used by MFC](../../mfc/reference/styles-used-by-mfc.md)   
- [CListBox::Create](../../mfc/reference/clistbox-class.md#clistbox__create)   
+ [CListBox::Create](../../mfc/reference/clistbox-class.md#create)   
  [List Box Styles](http://msdn.microsoft.com/library/windows/desktop/bb775149)
 

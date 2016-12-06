@@ -53,7 +53,7 @@ class CMemoryException : public CSimpleException
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMemoryException::CMemoryException](#cmemoryexception__cmemoryexception)|Constructs a `CMemoryException` object.|  
+|[CMemoryException::CMemoryException](#cmemoryexception)|Constructs a `CMemoryException` object.|  
   
 ## Remarks  
  No further qualification is necessary or possible. Memory exceptions are thrown automatically by **new**. If you write your own memory functions, using `malloc`, for example, then you are responsible for throwing memory exceptions.  
@@ -72,7 +72,7 @@ class CMemoryException : public CSimpleException
 ## Requirements  
  **Header:** afx.h  
   
-##  <a name="cmemoryexception__cmemoryexception"></a>  CMemoryException::CMemoryException  
+##  <a name="cmemoryexception"></a>  CMemoryException::CMemoryException  
  Constructs a `CMemoryException` object.  
   
 ```  

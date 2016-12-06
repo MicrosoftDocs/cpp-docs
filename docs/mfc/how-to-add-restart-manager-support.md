@@ -58,14 +58,14 @@ The restart manager is a feature added to [!INCLUDE[vsprvs](../assembler/masm/in
     m_dwRestartManagerSupportFlags = AFX_RESTART_MANAGER_SUPPORT_ALL_ASPECTS;  
  ```  
   
-5.  Make sure the `InitInstance` method of your application calls its parent `InitInstance` method: [CWinApp::InitInstance](../mfc/reference/cwinapp-class.md#cwinapp__initinstance) or `CWinAppEx::InitInstance`. The `InitInstance` method is responsible for checking the `m_dwRestartManagerSupportFlags` parameter.  
+5.  Make sure the `InitInstance` method of your application calls its parent `InitInstance` method: [CWinApp::InitInstance](../mfc/reference/cwinapp-class.md#initinstance) or `CWinAppEx::InitInstance`. The `InitInstance` method is responsible for checking the `m_dwRestartManagerSupportFlags` parameter.  
   
 6.  Compile and run your application.  
   
 ## See Also  
  [CDataRecoveryHandler Class](../mfc/reference/cdatarecoveryhandler-class.md)   
- [CWinApp::m_dwRestartManagerSupportFlags](../mfc/reference/cwinapp-class.md#cwinapp__m_dwrestartmanagersupportflags)   
+ [CWinApp::m_dwRestartManagerSupportFlags](../mfc/reference/cwinapp-class.md#m_dwrestartmanagersupportflags)   
  [CWinApp Class](../mfc/reference/cwinapp-class.md)   
- [CWinApp::m_nAutosaveInterval](../mfc/reference/cwinapp-class.md#cwinapp__m_nautosaveinterval)   
- [CDocument::OnDocumentEvent](../mfc/reference/cdocument-class.md#cdocument__ondocumentevent)
+ [CWinApp::m_nAutosaveInterval](../mfc/reference/cwinapp-class.md#m_nautosaveinterval)   
+ [CDocument::OnDocumentEvent](../mfc/reference/cdocument-class.md#ondocumentevent)
 

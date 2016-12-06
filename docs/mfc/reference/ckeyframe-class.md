@@ -50,26 +50,26 @@ class CKeyFrame : public CBaseKeyFrame;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CKeyFrame::CKeyFrame](#ckeyframe__ckeyframe)|Overloaded. Constructs a keyframe that depends on other keyframe.|  
+|[CKeyFrame::CKeyFrame](#ckeyframe)|Overloaded. Constructs a keyframe that depends on other keyframe.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CKeyFrame::AddToStoryboard](#ckeyframe__addtostoryboard)|Adds a keyframe to a storyboard. (Overrides [CBaseKeyFrame::AddToStoryboard](../../mfc/reference/cbasekeyframe-class.md#cbasekeyframe__addtostoryboard).)|  
-|[CKeyFrame::AddToStoryboardAfterTransition](#ckeyframe__addtostoryboardaftertransition)|Adds a keyframe to storyboard after transition.|  
-|[CKeyFrame::AddToStoryboardAtOffset](#ckeyframe__addtostoryboardatoffset)|Adds a keyframe to storyboard at offset.|  
-|[CKeyFrame::GetExistingKeyframe](#ckeyframe__getexistingkeyframe)|Returns a pointer to a keyframe this keyframe depends on.|  
-|[CKeyFrame::GetOffset](#ckeyframe__getoffset)|Returns an offset from other keyframe.|  
-|[CKeyFrame::GetTransition](#ckeyframe__gettransition)|Returns a pointer to a transition this keyframe depends on.|  
+|[CKeyFrame::AddToStoryboard](#addtostoryboard)|Adds a keyframe to a storyboard. (Overrides [CBaseKeyFrame::AddToStoryboard](../../mfc/reference/cbasekeyframe-class.md#addtostoryboard).)|  
+|[CKeyFrame::AddToStoryboardAfterTransition](#addtostoryboardaftertransition)|Adds a keyframe to storyboard after transition.|  
+|[CKeyFrame::AddToStoryboardAtOffset](#addtostoryboardatoffset)|Adds a keyframe to storyboard at offset.|  
+|[CKeyFrame::GetExistingKeyframe](#getexistingkeyframe)|Returns a pointer to a keyframe this keyframe depends on.|  
+|[CKeyFrame::GetOffset](#getoffset)|Returns an offset from other keyframe.|  
+|[CKeyFrame::GetTransition](#gettransition)|Returns a pointer to a transition this keyframe depends on.|  
   
 ### Protected Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CKeyFrame::m_offset](#ckeyframe__m_offset)|Specifies offset of this keyframe from a keyframe stored in m_pExistingKeyFrame.|  
-|[CKeyFrame::m_pExistingKeyFrame](#ckeyframe__m_pexistingkeyframe)|Stores a pointer to an existing keframe. This keyframe is added to storyboard with m_offset to the existing keyframe.|  
-|[CKeyFrame::m_pTransition](#ckeyframe__m_ptransition)|Stores a pointer to transtion that begins at this keyframe.|  
+|[CKeyFrame::m_offset](#m_offset)|Specifies offset of this keyframe from a keyframe stored in m_pExistingKeyFrame.|  
+|[CKeyFrame::m_pExistingKeyFrame](#m_pexistingkeyframe)|Stores a pointer to an existing keframe. This keyframe is added to storyboard with m_offset to the existing keyframe.|  
+|[CKeyFrame::m_pTransition](#m_ptransition)|Stores a pointer to transtion that begins at this keyframe.|  
   
 ## Remarks  
  This class implements an animation keyframe. A keyframe represents a moment in time within a storyboard and can be used to specify the start and end times of transitions. A keyframe may be based on other keyframe and have an offset (in seconds) from it, or may be based on a transition and represent a moment in time when this transition ends.  
@@ -84,7 +84,7 @@ class CKeyFrame : public CBaseKeyFrame;
 ## Requirements  
  **Header:** afxanimationcontroller.h  
   
-##  <a name="ckeyframe__addtostoryboard"></a>  CKeyFrame::AddToStoryboard  
+##  <a name="addtostoryboard"></a>  CKeyFrame::AddToStoryboard  
  Adds a keyframe to a storyboard.  
   
 ```  
@@ -106,7 +106,7 @@ virtual BOOL AddToStoryboard(
 ### Remarks  
  This method adds a keyframe to storyboard. If it depends on other keyframe or transition and bDeepAdd is TRUE, this method tries to add them recursively.  
   
-##  <a name="ckeyframe__addtostoryboardaftertransition"></a>  CKeyFrame::AddToStoryboardAfterTransition  
+##  <a name="addtostoryboardaftertransition"></a>  CKeyFrame::AddToStoryboardAfterTransition  
  Adds a keyframe to storyboard after transition.  
   
 ```  
@@ -128,7 +128,7 @@ BOOL AddToStoryboardAfterTransition(
 ### Remarks  
  This function is called by the framework to add a keyframe to storyboard after transition.  
   
-##  <a name="ckeyframe__addtostoryboardatoffset"></a>  CKeyFrame::AddToStoryboardAtOffset  
+##  <a name="addtostoryboardatoffset"></a>  CKeyFrame::AddToStoryboardAtOffset  
  Adds a keyframe to storyboard at offset.  
   
 ```  
@@ -150,7 +150,7 @@ virtual BOOL AddToStoryboardAtOffset(
 ### Remarks  
  This function is called by the framework to add a keyframe to storyboard at offset.  
   
-##  <a name="ckeyframe__ckeyframe"></a>  CKeyFrame::CKeyFrame  
+##  <a name="ckeyframe"></a>  CKeyFrame::CKeyFrame  
  Constructs a keyframe that depends on a transition.  
   
 ```  
@@ -176,7 +176,7 @@ CKeyFrame(
 ### Remarks  
  The constructed keyframe will represent a moment in time within a storyboard when the specified transition ends.  
   
-##  <a name="ckeyframe__getexistingkeyframe"></a>  CKeyFrame::GetExistingKeyframe  
+##  <a name="getexistingkeyframe"></a>  CKeyFrame::GetExistingKeyframe  
  Returns a pointer to a keyframe this keyframe depends on.  
   
 ```  
@@ -189,7 +189,7 @@ CBaseKeyFrame* GetExistingKeyframe();
 ### Remarks  
  This is an accessor to a keyframe this keyframe depends on.  
   
-##  <a name="ckeyframe__getoffset"></a>  CKeyFrame::GetOffset  
+##  <a name="getoffset"></a>  CKeyFrame::GetOffset  
  Returns an offset from other keyframe.  
   
 ```  
@@ -202,7 +202,7 @@ UI_ANIMATION_SECONDS GetOffset();
 ### Remarks  
  This method should be called to determine an offset in seconds from other keyframe.  
   
-##  <a name="ckeyframe__gettransition"></a>  CKeyFrame::GetTransition  
+##  <a name="gettransition"></a>  CKeyFrame::GetTransition  
  Returns a pointer to a transition this keyframe depends on.  
   
 ```  
@@ -215,21 +215,21 @@ CBaseTransition* GetTransition();
 ### Remarks  
  This is an accessor to a transition this keyframe depends on.  
   
-##  <a name="ckeyframe__m_offset"></a>  CKeyFrame::m_offset  
+##  <a name="m_offset"></a>  CKeyFrame::m_offset  
  Specifies offset of this keyframe from a keyframe stored in m_pExistingKeyFrame.  
   
 ```  
 UI_ANIMATION_SECONDS m_offset;  
 ```  
   
-##  <a name="ckeyframe__m_pexistingkeyframe"></a>  CKeyFrame::m_pExistingKeyFrame  
+##  <a name="m_pexistingkeyframe"></a>  CKeyFrame::m_pExistingKeyFrame  
  Stores a pointer to an existing keframe. This keyframe is added to storyboard with m_offset to the existing keyframe.  
   
 ```  
 CBaseKeyFrame* m_pExistingKeyFrame;  
 ```  
   
-##  <a name="ckeyframe__m_ptransition"></a>  CKeyFrame::m_pTransition  
+##  <a name="m_ptransition"></a>  CKeyFrame::m_pTransition  
  Stores a pointer to transtion that begins at this keyframe.  
   
 ```  

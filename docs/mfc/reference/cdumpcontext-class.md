@@ -53,23 +53,23 @@ class CDumpContext
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDumpContext::CDumpContext](#cdumpcontext__cdumpcontext)|Constructs a `CDumpContext` object.|  
+|[CDumpContext::CDumpContext](#cdumpcontext)|Constructs a `CDumpContext` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDumpContext::DumpAsHex](#cdumpcontext__dumpashex)|Dumps the indicated item in hexadecimal format.|  
-|[CDumpContext::Flush](#cdumpcontext__flush)|Flushes any data in the dump context buffer.|  
-|[CDumpContext::GetDepth](#cdumpcontext__getdepth)|Gets an integer corresponding to the depth of the dump.|  
-|[CDumpContext::HexDump](#cdumpcontext__hexdump)|Dumps bytes contained in an array in hexadecimal format.|  
-|[CDumpContext::SetDepth](#cdumpcontext__setdepth)|Sets the depth of the dump.|  
+|[CDumpContext::DumpAsHex](#dumpashex)|Dumps the indicated item in hexadecimal format.|  
+|[CDumpContext::Flush](#flush)|Flushes any data in the dump context buffer.|  
+|[CDumpContext::GetDepth](#getdepth)|Gets an integer corresponding to the depth of the dump.|  
+|[CDumpContext::HexDump](#hexdump)|Dumps bytes contained in an array in hexadecimal format.|  
+|[CDumpContext::SetDepth](#setdepth)|Sets the depth of the dump.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDumpContext::operator &lt;&lt;](#cdumpcontext__operator__lt__lt_)|Inserts variables and objects into the dump context.|  
+|[CDumpContext::operator &lt;&lt;](#operator_lt_lt)|Inserts variables and objects into the dump context.|  
   
 ## Remarks  
  `CDumpContext` does not have a base class.  
@@ -80,7 +80,7 @@ class CDumpContext
   
  Under the Windows environment, the output from the predefined `afxDump` object, conceptually similar to the `cerr` stream, is routed to the debugger via the Windows function **OutputDebugString**.  
   
- The `CDumpContext` class has an overloaded insertion ( **<<**) operator for `CObject` pointers that dumps the object's data. If you need a custom dump format for a derived object, override [CObject::Dump](../../mfc/reference/cobject-class.md#cobject__dump). Most Microsoft Foundation classes implement an overridden `Dump` member function.  
+ The `CDumpContext` class has an overloaded insertion ( **<<**) operator for `CObject` pointers that dumps the object's data. If you need a custom dump format for a derived object, override [CObject::Dump](../../mfc/reference/cobject-class.md#dump). Most Microsoft Foundation classes implement an overridden `Dump` member function.  
   
  Classes that are not derived from `CObject`, such as `CString`, `CTime`, and `CTimeSpan`, have their own overloaded `CDumpContext` insertion operators, as do often-used structures such as **CFileStatus**, `CPoint`, and `CRect`.  
   
@@ -100,7 +100,7 @@ class CDumpContext
 ## Requirements  
  **Header:** afx.h  
   
-##  <a name="cdumpcontext__cdumpcontext"></a>  CDumpContext::CDumpContext  
+##  <a name="cdumpcontext"></a>  CDumpContext::CDumpContext  
  Constructs an object of class `CDumpContext`.  
   
 ```  
@@ -119,7 +119,7 @@ CDumpContext(CFile* pFile = NULL);
 ### Example  
  [!code-cpp[NVC_MFC_Utilities#12](../../mfc/codesnippet/cpp/cdumpcontext-class_1.cpp)]  
   
-##  <a name="cdumpcontext__dumpashex"></a>  CDumpContext::DumpAsHex  
+##  <a name="dumpashex"></a>  CDumpContext::DumpAsHex  
  Dumps the specified type formatted as hexadecimal numbers.  
   
 ```  
@@ -151,12 +151,12 @@ CDumpContext& DumpAsHex(WORD w);
  A reference to a `CDumpContext` object.  
   
 ### Remarks  
- Call this member function to dump the item of the specified type as a hexadecimal number. To dump an array, call [CDumpContext::HexDump](#cdumpcontext__hexdump).  
+ Call this member function to dump the item of the specified type as a hexadecimal number. To dump an array, call [CDumpContext::HexDump](#hexdump).  
   
 ### Example  
  [!code-cpp[NVC_MFC_Utilities#13](../../mfc/codesnippet/cpp/cdumpcontext-class_2.cpp)]  
   
-##  <a name="cdumpcontext__flush"></a>  CDumpContext::Flush  
+##  <a name="flush"></a>  CDumpContext::Flush  
  Forces any data remaining in buffers to be written to the file attached to the dump context.  
   
 ```  
@@ -166,7 +166,7 @@ void Flush();
 ### Example  
  [!code-cpp[NVC_MFC_Utilities#14](../../mfc/codesnippet/cpp/cdumpcontext-class_3.cpp)]  
   
-##  <a name="cdumpcontext__getdepth"></a>  CDumpContext::GetDepth  
+##  <a name="getdepth"></a>  CDumpContext::GetDepth  
  Determines whether a deep or shallow dump is in process.  
   
 ```  
@@ -179,9 +179,9 @@ int GetDepth() const;
  The depth of the dump as set by `SetDepth`.  
   
 ### Example  
-  See the example for [SetDepth](#cdumpcontext__setdepth).  
+  See the example for [SetDepth](#setdepth).  
   
-##  <a name="cdumpcontext__hexdump"></a>  CDumpContext::HexDump  
+##  <a name="hexdump"></a>  CDumpContext::HexDump  
  Dumps an array of bytes formatted as hexadecimal numbers.  
   
 ```  
@@ -206,12 +206,12 @@ void HexDump(
  Maximum number of bytes dumped per line (not the width of the output line).  
   
 ### Remarks  
- To dump a single, specific item type as a hexadecimal number, call [CDumpContext::DumpAsHex](#cdumpcontext__dumpashex).  
+ To dump a single, specific item type as a hexadecimal number, call [CDumpContext::DumpAsHex](#dumpashex).  
   
 ### Example  
  [!code-cpp[NVC_MFC_Utilities#15](../../mfc/codesnippet/cpp/cdumpcontext-class_4.cpp)]  
   
-##  <a name="cdumpcontext__operator__lt__lt_"></a>  CDumpContext::operator &lt;&lt;  
+##  <a name="operator_lt_lt"></a>  CDumpContext::operator &lt;&lt;  
  Outputs the specified data to the dump context.  
   
 ```  
@@ -331,7 +331,7 @@ CDumpContext& operator<<(HFONT h);
 ### Example  
  [!code-cpp[NVC_MFC_Utilities#17](../../mfc/codesnippet/cpp/cdumpcontext-class_5.cpp)]  
   
-##  <a name="cdumpcontext__setdepth"></a>  CDumpContext::SetDepth  
+##  <a name="setdepth"></a>  CDumpContext::SetDepth  
  Sets the depth for the dump.  
   
 ```  

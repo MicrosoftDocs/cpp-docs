@@ -54,26 +54,26 @@ class CGopherLocator : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CGopherLocator::CGopherLocator](#cgopherlocator__cgopherlocator)|Constructs a `CGopherLocator` object.|  
+|[CGopherLocator::CGopherLocator](#cgopherlocator)|Constructs a `CGopherLocator` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CGopherLocator::GetLocatorType](#cgopherlocator__getlocatortype)|Parses a gopher locator and determines its attributes.|  
+|[CGopherLocator::GetLocatorType](#getlocatortype)|Parses a gopher locator and determines its attributes.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CGopherLocator::operator LPCTSTR](#cgopherlocator__operator_lpctstr)|Directly accesses characters stored in a `CGopherLocator` object as a C-style string.|  
+|[CGopherLocator::operator LPCTSTR](#operator_lpctstr)|Directly accesses characters stored in a `CGopherLocator` object as a C-style string.|  
   
 ## Remarks  
  An application must get a gopher server's locator before it can retrieve information from that server. Once it has the locator, it must treat the locator as an opaque token.  
   
- Each gopher locator has attributes that determine the type of file or server found. See [GetLocatorType](#cgopherlocator__getlocatortype) for a list of types of gopher locators.  
+ Each gopher locator has attributes that determine the type of file or server found. See [GetLocatorType](#getlocatortype) for a list of types of gopher locators.  
   
- An application normally uses the locator for calls to [CGopherFileFind::FindFile](../../mfc/reference/cgopherfilefind-class.md#cgopherfilefind__findfile) to retrieve a specific piece of information.  
+ An application normally uses the locator for calls to [CGopherFileFind::FindFile](../../mfc/reference/cgopherfilefind-class.md#findfile) to retrieve a specific piece of information.  
   
  To learn more about how `CGopherLocator` works with the other MFC Internet classes, see the article [Internet Programming with WinInet](../../mfc/win32-internet-extensions-wininet.md).  
   
@@ -85,7 +85,7 @@ class CGopherLocator : public CObject
 ## Requirements  
  **Header:** afxinet.h  
   
-##  <a name="cgopherlocator__cgopherlocator"></a>  CGopherLocator::CGopherLocator  
+##  <a name="cgopherlocator"></a>  CGopherLocator::CGopherLocator  
  This member function is called to create a `CGopherLocator` object.  
   
 ```  
@@ -97,9 +97,9 @@ CGopherLocator(const CGopherLocator& ref);
  A reference to a constant `CGopherLocator` object.  
   
 ### Remarks  
- You never create a `CGopherLocator` object directly. Instead, call [CGopherConnection::CreateLocator](../../mfc/reference/cgopherconnection-class.md#cgopherconnection__createlocator) to create and return a pointer to the `CGopherLocator` object.  
+ You never create a `CGopherLocator` object directly. Instead, call [CGopherConnection::CreateLocator](../../mfc/reference/cgopherconnection-class.md#createlocator) to create and return a pointer to the `CGopherLocator` object.  
   
-##  <a name="cgopherlocator__getlocatortype"></a>  CGopherLocator::GetLocatorType  
+##  <a name="getlocatortype"></a>  CGopherLocator::GetLocatorType  
  Call this member function to get the locator type.  
   
 ```  
@@ -145,7 +145,7 @@ BOOL GetLocatorType(DWORD& dwRef) const;
 |GOPHER_TYPE_ASK|An Ask+ item.|  
 |GOPHER_TYPE_GOPHER_PLUS|A Gopher+ item.|  
   
-##  <a name="cgopherlocator__operator_lpctstr"></a>  CGopherLocator::operator LPCTSTR  
+##  <a name="operator_lpctstr"></a>  CGopherLocator::operator LPCTSTR  
  This useful casting operator provides an efficient method to access the null-terminated C string contained in a `CGopherLocator` object.  
   
 ```  

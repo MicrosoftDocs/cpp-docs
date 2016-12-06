@@ -49,14 +49,14 @@ class CSettingsStoreSP
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSettingsStoreSP::CSettingsStoreSP](#csettingsstoresp__csettingsstoresp)|Constructs a `CSettingsStoreSP` object.|  
+|[CSettingsStoreSP::CSettingsStoreSP](#csettingsstoresp)|Constructs a `CSettingsStoreSP` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSettingsStoreSP::Create](#csettingsstoresp__create)|Creates an instance of a class that is derived from `CSettingsStore`.|  
-|[CSettingsStoreSP::SetRuntimeClass](#csettingsstoresp__setruntimeclass)|Sets the runtime class. The `Create` method uses the runtime class to determine what class of objects to create.|  
+|[CSettingsStoreSP::Create](#create)|Creates an instance of a class that is derived from `CSettingsStore`.|  
+|[CSettingsStoreSP::SetRuntimeClass](#setruntimeclass)|Sets the runtime class. The `Create` method uses the runtime class to determine what class of objects to create.|  
   
 ### Data Members  
   
@@ -83,7 +83,7 @@ class CSettingsStoreSP
 ## Requirements  
  **Header:** afxsettingsstore.h  
   
-##  <a name="csettingsstoresp__create"></a>  CSettingsStoreSP::Create  
+##  <a name="create"></a>  CSettingsStoreSP::Create  
  Creates a new instance of an object that is derived from the [CSettingsStore Class](../../mfc/reference/csettingsstore-class.md).  
   
 ```  
@@ -103,7 +103,7 @@ CSettingsStore& CSettingsStoreSP Create(
  A reference to the newly created `CSettingsStore` object.  
   
 ### Remarks  
- You can use the method [CSettingsStoreSP::SetRuntimeClass](#csettingsstoresp__setruntimeclass) to determine what type of object `CSettingsStoreSP::Create` will create. By default, this method creates a `CSettingsStore` object.  
+ You can use the method [CSettingsStoreSP::SetRuntimeClass](#setruntimeclass) to determine what type of object `CSettingsStoreSP::Create` will create. By default, this method creates a `CSettingsStore` object.  
   
  If you create a `CSettingsStore` object in administrator mode, the default location for all registry access is HKEY_LOCAL_MACHINE. Otherwise, the default location for all registry access is HKEY_CURRENT_USER.  
   
@@ -114,7 +114,7 @@ CSettingsStore& CSettingsStoreSP Create(
   
  [!code-cpp[NVC_MFC_RibbonApp#33](../../mfc/reference/codesnippet/cpp/csettingsstoresp-class_1.cpp)]  
   
-##  <a name="csettingsstoresp__csettingsstoresp"></a>  CSettingsStoreSP::CSettingsStoreSP  
+##  <a name="csettingsstoresp"></a>  CSettingsStoreSP::CSettingsStoreSP  
  Constructs a [CSettingsStoreSP Class](../../mfc/reference/csettingsstoresp-class.md) object.  
   
 ```  
@@ -128,8 +128,8 @@ CSettingsStoreSP::CSettingsStoreSP(DWORD dwUserData = 0);
 ### Remarks  
  The `CSettingsStoreSP` object stores the data from `dwUserData` in the protected member variable `m_dwUserData`.  
   
-##  <a name="csettingsstoresp__setruntimeclass"></a>  CSettingsStoreSP::SetRuntimeClass  
- Sets the runtime class. The method [CSettingsStoreSP::Create](#csettingsstoresp__create) uses the runtime class to determine what type of object to create.  
+##  <a name="setruntimeclass"></a>  CSettingsStoreSP::SetRuntimeClass  
+ Sets the runtime class. The method [CSettingsStoreSP::Create](#create) uses the runtime class to determine what type of object to create.  
   
 ```  
 static BOOL __stdcall CSettingsStoreSP::SetRuntimeClass(CRuntimeClass* pRTI);

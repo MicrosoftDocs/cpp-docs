@@ -52,23 +52,23 @@ class CDataPathProperty : public CAsyncMonikerFile
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDataPathProperty::CDataPathProperty](#cdatapathproperty__cdatapathproperty)|Constructs a `CDataPathProperty` object.|  
+|[CDataPathProperty::CDataPathProperty](#cdatapathproperty)|Constructs a `CDataPathProperty` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDataPathProperty::GetControl](#cdatapathproperty__getcontrol)|Retrieves the asynchronous OLE control associated with the `CDataPathProperty` object.|  
-|[CDataPathProperty::GetPath](#cdatapathproperty__getpath)|Retrieves the pathname of the property.|  
-|[CDataPathProperty::Open](#cdatapathproperty__open)|Initiates loading of the asynchronous property for the associated ActiveX (OLE) control.|  
-|[CDataPathProperty::ResetData](#cdatapathproperty__resetdata)|Calls `CAsyncMonikerFile::OnDataAvailable` to notify the container that the control properties have changed.|  
-|[CDataPathProperty::SetControl](#cdatapathproperty__setcontrol)|Sets the asynchronous ActiveX (OLE) control associated with the property.|  
-|[CDataPathProperty::SetPath](#cdatapathproperty__setpath)|Sets the pathname of the property.|  
+|[CDataPathProperty::GetControl](#getcontrol)|Retrieves the asynchronous OLE control associated with the `CDataPathProperty` object.|  
+|[CDataPathProperty::GetPath](#getpath)|Retrieves the pathname of the property.|  
+|[CDataPathProperty::Open](#open)|Initiates loading of the asynchronous property for the associated ActiveX (OLE) control.|  
+|[CDataPathProperty::ResetData](#resetdata)|Calls `CAsyncMonikerFile::OnDataAvailable` to notify the container that the control properties have changed.|  
+|[CDataPathProperty::SetControl](#setcontrol)|Sets the asynchronous ActiveX (OLE) control associated with the property.|  
+|[CDataPathProperty::SetPath](#setpath)|Sets the pathname of the property.|  
   
 ## Remarks  
  Asynchronous properties are loaded after synchronous initiation.  
   
- The class `CDataPathProperty` is derived from **CAysncMonikerFile**. To implement asynchronous properties in your OLE controls, derive a class from `CDataPathProperty`, and override [OnDataAvailable](../../mfc/reference/casyncmonikerfile-class.md#casyncmonikerfile__ondataavailable).  
+ The class `CDataPathProperty` is derived from **CAysncMonikerFile**. To implement asynchronous properties in your OLE controls, derive a class from `CDataPathProperty`, and override [OnDataAvailable](../../mfc/reference/casyncmonikerfile-class.md#ondataavailable).  
   
  For more information about how to use asynchronous monikers and ActiveX controls in Internet applications, see the following articles:  
   
@@ -92,7 +92,7 @@ class CDataPathProperty : public CAsyncMonikerFile
 ## Requirements  
  **Header:** afxctl.h  
   
-##  <a name="cdatapathproperty__cdatapathproperty"></a>  CDataPathProperty::CDataPathProperty  
+##  <a name="cdatapathproperty"></a>  CDataPathProperty::CDataPathProperty  
  Constructs a `CDataPathProperty` object.  
   
 ```  
@@ -114,7 +114,7 @@ CDataPathProperty(
 ### Remarks  
  The `COleControl` object pointed to by `pControl` is used by **Open** and retrieved by derived classes. If `pControl` is **NULL**, the control used with **Open** should be set with `SetControl`. If `lpszPath` is **NULL**, you can pass in the path through **Open** or set it with `SetPath`.  
   
-##  <a name="cdatapathproperty__getcontrol"></a>  CDataPathProperty::GetControl  
+##  <a name="getcontrol"></a>  CDataPathProperty::GetControl  
  Call this member function to retrieve the `COleControl` object associated with the `CDataPathProperty` object.  
   
 ```  
@@ -124,7 +124,7 @@ COleControl* GetControl();
 ### Return Value  
  Returns a pointer to the OLE control associated with the `CDataPathProperty` object. **NULL** if not control is associated.  
   
-##  <a name="cdatapathproperty__getpath"></a>  CDataPathProperty::GetPath  
+##  <a name="getpath"></a>  CDataPathProperty::GetPath  
  Call this member function to retrieve the path, set when the `CDataPathProperty` object was constructed, or specified in **Open**, or specified in a previous call to the `SetPath` member function.  
   
 ```  
@@ -136,7 +136,7 @@ CString GetPath() const;
 ### Return Value  
  Returns the pathname to the property itself. Can be empty if no path has been specified.  
   
-##  <a name="cdatapathproperty__open"></a>  CDataPathProperty::Open  
+##  <a name="open"></a>  CDataPathProperty::Open  
  Call this member function to initiate loading of the asynchronous property for the associated control.  
   
 ```  
@@ -180,9 +180,9 @@ virtual BOOL Open(
   
  Before calling **Open** without a control, an ActiveX control (formerly known as an OLE control) can be associated with the object. This can be done when the object is constructed, or by calling `SetControl`.  
   
- All overloads of [CAsyncMonikerFile::Open](../../mfc/reference/casyncmonikerfile-class.md#casyncmonikerfile__open) are also available from `CDataPathProperty`.  
+ All overloads of [CAsyncMonikerFile::Open](../../mfc/reference/casyncmonikerfile-class.md#open) are also available from `CDataPathProperty`.  
   
-##  <a name="cdatapathproperty__resetdata"></a>  CDataPathProperty::ResetData  
+##  <a name="resetdata"></a>  CDataPathProperty::ResetData  
  Call this function to get `CAsyncMonikerFile::OnDataAvailable` to notify the container that the control properties have changed, and all the information loaded asynchronously is no longer useful.  
   
 ```  
@@ -192,7 +192,7 @@ virtual void ResetData();
 ### Remarks  
  Opening should be restarted. Derived classes can override this function for different defaults.  
   
-##  <a name="cdatapathproperty__setcontrol"></a>  CDataPathProperty::SetControl  
+##  <a name="setcontrol"></a>  CDataPathProperty::SetControl  
  Call this member function to associate an asynchronous OLE control with the `CDataPathProperty` object.  
   
 ```  
@@ -203,7 +203,7 @@ void SetControl(COleControl* pControl);
  `pControl`  
  A pointer to the asynchronous OLE control to be associated with the property.  
   
-##  <a name="cdatapathproperty__setpath"></a>  CDataPathProperty::SetPath  
+##  <a name="setpath"></a>  CDataPathProperty::SetPath  
  Call this member function to set the pathname of the property.  
   
 ```  

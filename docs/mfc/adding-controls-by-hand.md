@@ -41,7 +41,7 @@ translation.priority.ht:
 # Adding Controls By Hand
 You can either [add controls to a dialog box with the dialog editor](../mfc/using-the-dialog-editor-to-add-controls.md) or add them yourself, with code.  
   
- To create a control object yourself, you will usually embed the C++ control object in a C++ dialog or frame-window object. Like many other objects in the framework, controls require two-stage construction. You should call the control's **Create** member function as part of creating the parent dialog box or frame window. For dialog boxes, this is usually done in [OnInitDialog](../mfc/reference/cdialog-class.md#cdialog__oninitdialog), and for frame windows, in [OnCreate](../mfc/reference/cwnd-class.md#cwnd__oncreate).  
+ To create a control object yourself, you will usually embed the C++ control object in a C++ dialog or frame-window object. Like many other objects in the framework, controls require two-stage construction. You should call the control's **Create** member function as part of creating the parent dialog box or frame window. For dialog boxes, this is usually done in [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog), and for frame windows, in [OnCreate](../mfc/reference/cwnd-class.md#oncreate).  
   
  The following example shows how you might declare a `CEdit` object in the class declaration of a derived dialog class and then call the **Create** member function in `OnInitDialog`. Because the `CEdit` object is declared as an embedded object, it is automatically constructed when the dialog object is constructed, but it must still be initialized with its own **Create** member function.  
   
@@ -56,5 +56,5 @@ You can either [add controls to a dialog box with the dialog editor](../mfc/usin
 ## See Also  
  [Making and Using Controls](../mfc/making-and-using-controls.md)   
  [Controls](../mfc/controls-mfc.md)   
- [CDialog::OnInitDialog](../mfc/reference/cdialog-class.md#cdialog__oninitdialog)
+ [CDialog::OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog)
 

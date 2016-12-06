@@ -54,20 +54,20 @@ class CIPAddressCtrl : public CWnd
   
 |Name|Description|  
 |----------|-----------------|  
-|[CIPAddressCtrl::CIPAddressCtrl](#cipaddressctrl__cipaddressctrl)|Constructs a `CIPAddressCtrl` object.|  
+|[CIPAddressCtrl::CIPAddressCtrl](#cipaddressctrl)|Constructs a `CIPAddressCtrl` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CIPAddressCtrl::ClearAddress](#cipaddressctrl__clearaddress)|Clears the contents of the IP Address Control.|  
-|[CIPAddressCtrl::Create](#cipaddressctrl__create)|Creates an IP Address Control and attaches it to a `CIPAddressCtrl` object.|  
-|[CIPAddressCtrl::CreateEx](#cipaddressctrl__createex)|Creates an IP Address control with the specified Windows extended styles and attaches it to a `CIPAddressCtrl` object.|  
-|[CIPAddressCtrl::GetAddress](#cipaddressctrl__getaddress)|Retrieves the address values for all four fields in the IP Address Control.|  
-|[CIPAddressCtrl::IsBlank](#cipaddressctrl__isblank)|Determines if all fields in the IP Address Control are empty.|  
-|[CIPAddressCtrl::SetAddress](#cipaddressctrl__setaddress)|Sets the address values for all four fields in the IP Address Control.|  
-|[CIPAddressCtrl::SetFieldFocus](#cipaddressctrl__setfieldfocus)|Sets the keyboard focus to the specified field in the IP Address Control.|  
-|[CIPAddressCtrl::SetFieldRange](#cipaddressctrl__setfieldrange)|Sets the range in the specified field in the IP Address Control.|  
+|[CIPAddressCtrl::ClearAddress](#clearaddress)|Clears the contents of the IP Address Control.|  
+|[CIPAddressCtrl::Create](#create)|Creates an IP Address Control and attaches it to a `CIPAddressCtrl` object.|  
+|[CIPAddressCtrl::CreateEx](#createex)|Creates an IP Address control with the specified Windows extended styles and attaches it to a `CIPAddressCtrl` object.|  
+|[CIPAddressCtrl::GetAddress](#getaddress)|Retrieves the address values for all four fields in the IP Address Control.|  
+|[CIPAddressCtrl::IsBlank](#isblank)|Determines if all fields in the IP Address Control are empty.|  
+|[CIPAddressCtrl::SetAddress](#setaddress)|Sets the address values for all four fields in the IP Address Control.|  
+|[CIPAddressCtrl::SetFieldFocus](#setfieldfocus)|Sets the keyboard focus to the specified field in the IP Address Control.|  
+|[CIPAddressCtrl::SetFieldRange](#setfieldrange)|Sets the range in the specified field in the IP Address Control.|  
   
 ## Remarks  
  An IP Address control, a control similar to an edit control, allows you to enter and manipulate a numerical address in Internet Protocol (IP) format.  
@@ -88,14 +88,14 @@ class CIPAddressCtrl : public CWnd
 ## Requirements  
  **Header:** afxcmn.h  
   
-##  <a name="cipaddressctrl__cipaddressctrl"></a>  CIPAddressCtrl::CIPAddressCtrl  
+##  <a name="cipaddressctrl"></a>  CIPAddressCtrl::CIPAddressCtrl  
  Creates a `CIPAddressCtrl` object.  
   
 ```  
 CIPAddressCtrl();
 ```  
   
-##  <a name="cipaddressctrl__clearaddress"></a>  CIPAddressCtrl::ClearAddress  
+##  <a name="clearaddress"></a>  CIPAddressCtrl::ClearAddress  
  Clears the contents of the IP Address Control.  
   
 ```  
@@ -105,7 +105,7 @@ void ClearAddress();
 ### Remarks  
  This member function implements the behavior of the Win32 message [IPM_CLEARADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761377), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="cipaddressctrl__create"></a>  CIPAddressCtrl::Create  
+##  <a name="create"></a>  CIPAddressCtrl::Create  
  Creates an IP Address Control and attaches it to a `CIPAddressCtrl` object.  
   
 ```  
@@ -139,9 +139,9 @@ virtual BOOL Create(
   
 2.  Call **Create**, which creates the IP Address Control.  
   
- If you want to use extended windows styles with your control, call [CreateEx](#cipaddressctrl__createex) instead of **Create**.  
+ If you want to use extended windows styles with your control, call [CreateEx](#createex) instead of **Create**.  
   
-##  <a name="cipaddressctrl__createex"></a>  CIPAddressCtrl::CreateEx  
+##  <a name="createex"></a>  CIPAddressCtrl::CreateEx  
  Call this function to create a control (a child window) and associate it with the `CIPAddressCtrl` object.  
   
 ```  
@@ -173,9 +173,9 @@ virtual BOOL CreateEx(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- Use `CreateEx` instead of [Create](#cipaddressctrl__create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
+ Use `CreateEx` instead of [Create](#create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
   
-##  <a name="cipaddressctrl__getaddress"></a>  CIPAddressCtrl::GetAddress  
+##  <a name="getaddress"></a>  CIPAddressCtrl::GetAddress  
  Retrieves the address values for all four fields in the IP Address Control.  
   
 ```  
@@ -219,7 +219,7 @@ int GetAddress(
 |2|8 through 15|  
 |3|0 through 7|  
   
-##  <a name="cipaddressctrl__isblank"></a>  CIPAddressCtrl::IsBlank  
+##  <a name="isblank"></a>  CIPAddressCtrl::IsBlank  
  Determines if all fields in the IP Address Control are empty.  
   
 ```  
@@ -234,7 +234,7 @@ BOOL IsBlank() const;
 ### Remarks  
  This member function implements the behavior of the Win32 message [IPM_ISBLANK](http://msdn.microsoft.com/library/windows/desktop/bb761379), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="cipaddressctrl__setaddress"></a>  CIPAddressCtrl::SetAddress  
+##  <a name="setaddress"></a>  CIPAddressCtrl::SetAddress  
  Sets the address values for all four fields in the IP Address Control.  
   
 ```  
@@ -275,7 +275,7 @@ void SetAddress(
 |2|8 through 15|  
 |3|0 through 7|  
   
-##  <a name="cipaddressctrl__setfieldfocus"></a>  CIPAddressCtrl::SetFieldFocus  
+##  <a name="setfieldfocus"></a>  CIPAddressCtrl::SetFieldFocus  
  Sets the keyboard focus to the specified field in the IP Address Control.  
   
 ```  
@@ -289,7 +289,7 @@ void SetFieldFocus(WORD nField);
 ### Remarks  
  This member function implements the behavior of the Win32 message [IPM_SETFOCUS](http://msdn.microsoft.com/library/windows/desktop/bb761381), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="cipaddressctrl__setfieldrange"></a>  CIPAddressCtrl::SetFieldRange  
+##  <a name="setfieldrange"></a>  CIPAddressCtrl::SetFieldRange  
  Sets the range in the specified field in the IP Address Control.  
   
 ```  

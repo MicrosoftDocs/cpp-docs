@@ -55,24 +55,24 @@ class CMFCRibbonFontComboBox : public CMFCRibbonComboBox
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonFontComboBox::CMFCRibbonFontComboBox](#cmfcribbonfontcombobox__cmfcribbonfontcombobox)|Constructs and initializes a `CMFCRibbonFontComboBox` object.|  
+|[CMFCRibbonFontComboBox::CMFCRibbonFontComboBox](#cmfcribbonfontcombobox)|Constructs and initializes a `CMFCRibbonFontComboBox` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonFontComboBox::BuildFonts](#cmfcribbonfontcombobox__buildfonts)|Populates the ribbon font combo box with fonts of the specified font type, character set, and pitch and family.|  
+|[CMFCRibbonFontComboBox::BuildFonts](#buildfonts)|Populates the ribbon font combo box with fonts of the specified font type, character set, and pitch and family.|  
 |`CMFCRibbonFontComboBox::CreateObject`|Used by the framework to create a dynamic instance of this class type.|  
-|[CMFCRibbonFontComboBox::GetCharSet](#cmfcribbonfontcombobox__getcharset)|Returns the specified character set.|  
-|[CMFCRibbonFontComboBox::GetFontDesc](#cmfcribbonfontcombobox__getfontdesc)||  
-|[CMFCRibbonFontComboBox::GetFontType](#cmfcribbonfontcombobox__getfonttype)|Returns which font types to display in the combo box. Valid options are DEVICE_FONTTYPE, RASTER_FONTTYPE, and TRUETYPE_FONTTYPE, or any bitwise combination thereof.|  
-|[CMFCRibbonFontComboBox::GetPitchAndFamily](#cmfcribbonfontcombobox__getpitchandfamily)|Returns the pitch and the family of the fonts that are displayed in the combo box.|  
+|[CMFCRibbonFontComboBox::GetCharSet](#getcharset)|Returns the specified character set.|  
+|[CMFCRibbonFontComboBox::GetFontDesc](#getfontdesc)||  
+|[CMFCRibbonFontComboBox::GetFontType](#getfonttype)|Returns which font types to display in the combo box. Valid options are DEVICE_FONTTYPE, RASTER_FONTTYPE, and TRUETYPE_FONTTYPE, or any bitwise combination thereof.|  
+|[CMFCRibbonFontComboBox::GetPitchAndFamily](#getpitchandfamily)|Returns the pitch and the family of the fonts that are displayed in the combo box.|  
 |`CMFCRibbonFontComboBox::GetThisClass`|Used by the framework to obtain a pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|  
-|[CMFCRibbonFontComboBox::RebuildFonts](#cmfcribbonfontcombobox__rebuildfonts)|Populates the ribbon font combo box with fonts of the previously specified font type, character set, and pitch and family.|  
-|[CMFCRibbonFontComboBox::SetFont](#cmfcribbonfontcombobox__setfont)|Selects the specified font in the combo box.|  
+|[CMFCRibbonFontComboBox::RebuildFonts](#rebuildfonts)|Populates the ribbon font combo box with fonts of the previously specified font type, character set, and pitch and family.|  
+|[CMFCRibbonFontComboBox::SetFont](#setfont)|Selects the specified font in the combo box.|  
   
 ## Remarks  
- After you create a `CMFCRibbonFontComboBox` object, add it to a ribbon panel by calling [CMFCRibbonPanel::Add](../../mfc/reference/cmfcribbonpanel-class.md#cmfcribbonpanel__add).  
+ After you create a `CMFCRibbonFontComboBox` object, add it to a ribbon panel by calling [CMFCRibbonPanel::Add](../../mfc/reference/cmfcribbonpanel-class.md#add).  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -90,7 +90,7 @@ class CMFCRibbonFontComboBox : public CMFCRibbonComboBox
 ## Requirements  
  **Header:** afxRibbonComboBox.h  
   
-##  <a name="cmfcribbonfontcombobox__buildfonts"></a>  CMFCRibbonFontComboBox::BuildFonts  
+##  <a name="buildfonts"></a>  CMFCRibbonFontComboBox::BuildFonts  
  Populates the combo box on the ribbon with fonts.  
   
 ```  
@@ -110,7 +110,7 @@ void BuildFonts(
  [in] `nPitchAndFamily`  
  Specifies the pitch and family of the fonts to add.  
   
-##  <a name="cmfcribbonfontcombobox__cmfcribbonfontcombobox"></a>  CMFCRibbonFontComboBox::CMFCRibbonFontComboBox  
+##  <a name="cmfcribbonfontcombobox"></a>  CMFCRibbonFontComboBox::CMFCRibbonFontComboBox  
  Constructs and initializes a [CMFCRibbonFontComboBox](../../mfc/reference/cmfcribbonfontcombobox-class.md) object.  
   
 ```  
@@ -143,7 +143,7 @@ CMFCRibbonFontComboBox(
   
  For more information about valid character sets that can be assigned to `nCharSet,` and valid values that can be assigned to `nPitchAndFamily`, see [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) in the Windows SDK documentation.  
   
-##  <a name="cmfcribbonfontcombobox__getfontdesc"></a>  CMFCRibbonFontComboBox::GetFontDesc  
+##  <a name="getfontdesc"></a>  CMFCRibbonFontComboBox::GetFontDesc  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -159,7 +159,7 @@ const CMFCFontInfo* GetFontDesc(int iIndex = -1) const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonfontcombobox__rebuildfonts"></a>  CMFCRibbonFontComboBox::RebuildFonts  
+##  <a name="rebuildfonts"></a>  CMFCRibbonFontComboBox::RebuildFonts  
  Populates the combo box on the ribbon with fonts of a previously specified font type, character set, and pitch and family.  
   
 ```  
@@ -167,9 +167,9 @@ void RebuildFonts();
 ```  
   
 ### Remarks  
- You can specify the font type, character set, and pitch and family of the fonts to include in the ribbon font combo box in the [constructor](#cmfcribbonfontcombobox__cmfcribbonfontcombobox) for this class, or by calling [CMFCRibbonFontComboBox::BuildFonts](#cmfcribbonfontcombobox__buildfonts).  
+ You can specify the font type, character set, and pitch and family of the fonts to include in the ribbon font combo box in the [constructor](#cmfcribbonfontcombobox) for this class, or by calling [CMFCRibbonFontComboBox::BuildFonts](#buildfonts).  
   
-##  <a name="cmfcribbonfontcombobox__setfont"></a>  CMFCRibbonFontComboBox::SetFont  
+##  <a name="setfont"></a>  CMFCRibbonFontComboBox::SetFont  
  Selects the specified font in the combo box.  
   
 ```  
@@ -194,7 +194,7 @@ BOOL SetFont(
   
 ### Remarks  
   
-##  <a name="cmfcribbonfontcombobox__getcharset"></a>  CMFCRibbonFontComboBox::GetCharSet  
+##  <a name="getcharset"></a>  CMFCRibbonFontComboBox::GetCharSet  
  Returns the specified character set.  
   
 ```  
@@ -208,7 +208,7 @@ BYTE GetCharSet() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonfontcombobox__getfonttype"></a>  CMFCRibbonFontComboBox::GetFontType  
+##  <a name="getfonttype"></a>  CMFCRibbonFontComboBox::GetFontType  
  Returns which font types to display in the combo box. Valid options are DEVICE_FONTTYPE, RASTER_FONTTYPE, and TRUETYPE_FONTTYPE, or any bitwise combination thereof.  
   
 ```  
@@ -222,7 +222,7 @@ int GetFontType() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonfontcombobox__getpitchandfamily"></a>  CMFCRibbonFontComboBox::GetPitchAndFamily  
+##  <a name="getpitchandfamily"></a>  CMFCRibbonFontComboBox::GetPitchAndFamily  
  Returns the pitch and the family of the fonts that are displayed in the combo box.  
   
 ```  

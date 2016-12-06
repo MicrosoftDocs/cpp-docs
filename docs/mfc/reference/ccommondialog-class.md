@@ -55,7 +55,7 @@ class CCommonDialog : public CDialog
   
 |Name|Description|  
 |----------|-----------------|  
-|[CCommonDialog::CCommonDialog](#ccommondialog__ccommondialog)|Constructs a `CCommonDialog` object.|  
+|[CCommonDialog::CCommonDialog](#ccommondialog)|Constructs a `CCommonDialog` object.|  
   
 ## Remarks  
  The following classes encapsulate the functionality of the Windows common dialogs:  
@@ -90,7 +90,7 @@ class CCommonDialog : public CDialog
 ## Requirements  
  **Header:** afxdlgs.h  
   
-##  <a name="ccommondialog__ccommondialog"></a>  CCommonDialog::CCommonDialog  
+##  <a name="ccommondialog"></a>  CCommonDialog::CCommonDialog  
  Constructs a `CCommonDialog` object.  
   
 ```  
@@ -102,7 +102,7 @@ explicit CCommonDialog(CWnd* pParentWnd);
  Points to the parent or owner window object (of type [CWnd](../../mfc/reference/cwnd-class.md)) to which the dialog object belongs. If it is **NULL**, the dialog object's parent window is set to the main application window.  
   
 ### Remarks  
- See [CDialog::CDialog](../../mfc/reference/cdialog-class.md#cdialog__cdialog) for complete information.  
+ See [CDialog::CDialog](../../mfc/reference/cdialog-class.md#cdialog) for complete information.  
   
 ## See Also  
  [CDialog Class](../../mfc/reference/cdialog-class.md)   

@@ -50,7 +50,7 @@ class CD2DEllipse : public D2D1_ELLIPSE;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CD2DEllipse::CD2DEllipse](#cd2dellipse__cd2dellipse)|Overloaded. Constructs a `CD2DEllipse` object from `D2D1_ELLIPSE` object.|  
+|[CD2DEllipse::CD2DEllipse](#cd2dellipse)|Overloaded. Constructs a `CD2DEllipse` object from `D2D1_ELLIPSE` object.|  
   
 ## Inheritance Hierarchy  
  `D2D1_ELLIPSE`  
@@ -60,7 +60,7 @@ class CD2DEllipse : public D2D1_ELLIPSE;
 ## Requirements  
  **Header:** afxrendertarget.h  
   
-##  <a name="cd2dellipse__cd2dellipse"></a>  CD2DEllipse::CD2DEllipse  
+##  <a name="cd2dellipse"></a>  CD2DEllipse::CD2DEllipse  
  Constructs a CD2DEllipse object from CD2DRectF object.  
   
 ```  

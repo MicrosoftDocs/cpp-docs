@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # LOGPEN Structure
-The `LOGPEN` structure defines the style, width, and color of a pen, a drawing object used to draw lines and borders. The [CPen::CreatePenIndirect](../../mfc/reference/cpen-class.md#cpen__createpenindirect) function uses the `LOGPEN` structure.  
+The `LOGPEN` structure defines the style, width, and color of a pen, a drawing object used to draw lines and borders. The [CPen::CreatePenIndirect](../../mfc/reference/cpen-class.md#createpenindirect) function uses the `LOGPEN` structure.  
   
 ## Syntax  
   
@@ -83,5 +83,5 @@ typedef struct tagLOGPEN {  /* lgpn */
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CPen::CreatePenIndirect](../../mfc/reference/cpen-class.md#cpen__createpenindirect)
+ [CPen::CreatePenIndirect](../../mfc/reference/cpen-class.md#createpenindirect)
 

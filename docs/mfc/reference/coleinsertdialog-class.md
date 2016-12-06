@@ -52,28 +52,28 @@ class COleInsertDialog : public COleDialog
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleInsertDialog::COleInsertDialog](#coleinsertdialog__coleinsertdialog)|Constructs a `COleInsertDialog` object.|  
+|[COleInsertDialog::COleInsertDialog](#coleinsertdialog)|Constructs a `COleInsertDialog` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleInsertDialog::CreateItem](#coleinsertdialog__createitem)|Creates the item selected in the dialog box.|  
-|[COleInsertDialog::DoModal](#coleinsertdialog__domodal)|Displays the OLE Insert Object dialog box.|  
-|[COleInsertDialog::GetClassID](#coleinsertdialog__getclassid)|Gets the **CLSID** associated with the chosen item.|  
-|[COleInsertDialog::GetDrawAspect](#coleinsertdialog__getdrawaspect)|Tells whether to draw the item as an icon.|  
-|[COleInsertDialog::GetIconicMetafile](#coleinsertdialog__geticonicmetafile)|Gets a handle to the metafile associated with the iconic form of this item.|  
-|[COleInsertDialog::GetPathName](#coleinsertdialog__getpathname)|Gets the full path to the file chosen in the dialog box.|  
-|[COleInsertDialog::GetSelectionType](#coleinsertdialog__getselectiontype)|Gets the type of object selected.|  
+|[COleInsertDialog::CreateItem](#createitem)|Creates the item selected in the dialog box.|  
+|[COleInsertDialog::DoModal](#domodal)|Displays the OLE Insert Object dialog box.|  
+|[COleInsertDialog::GetClassID](#getclassid)|Gets the **CLSID** associated with the chosen item.|  
+|[COleInsertDialog::GetDrawAspect](#getdrawaspect)|Tells whether to draw the item as an icon.|  
+|[COleInsertDialog::GetIconicMetafile](#geticonicmetafile)|Gets a handle to the metafile associated with the iconic form of this item.|  
+|[COleInsertDialog::GetPathName](#getpathname)|Gets the full path to the file chosen in the dialog box.|  
+|[COleInsertDialog::GetSelectionType](#getselectiontype)|Gets the type of object selected.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleInsertDialog::m_io](#coleinsertdialog__m_io)|A structure of type **OLEUIINSERTOBJECT** that controls the behavior of the dialog box.|  
+|[COleInsertDialog::m_io](#m_io)|A structure of type **OLEUIINSERTOBJECT** that controls the behavior of the dialog box.|  
   
 ## Remarks  
- Create an object of class `COleInsertDialog` when you want to call this dialog box. After a `COleInsertDialog` object has been constructed, you can use the [m_io](#coleinsertdialog__m_io) structure to initialize the values or states of controls in the dialog box. The `m_io` structure is of type **OLEUIINSERTOBJECT**. For more information about using this dialog class, see the [DoModal](#coleinsertdialog__domodal) member function.  
+ Create an object of class `COleInsertDialog` when you want to call this dialog box. After a `COleInsertDialog` object has been constructed, you can use the [m_io](#m_io) structure to initialize the values or states of controls in the dialog box. The `m_io` structure is of type **OLEUIINSERTOBJECT**. For more information about using this dialog class, see the [DoModal](#domodal) member function.  
   
 > [!NOTE]
 >  Application Wizard-generated container code uses this class.  
@@ -100,7 +100,7 @@ class COleInsertDialog : public COleDialog
 ## Requirements  
  **Header:** afxodlgs.h  
   
-##  <a name="coleinsertdialog__coleinsertdialog"></a>  COleInsertDialog::COleInsertDialog  
+##  <a name="coleinsertdialog"></a>  COleInsertDialog::COleInsertDialog  
  This function constructs only a `COleInsertDialog` object.  
   
 ```  
@@ -131,10 +131,10 @@ COleInsertDialog (
  Points to the parent or owner window object (of type `CWnd`) to which the dialog object belongs. If it is **NULL**, the parent window of the dialog object is set to the main application window.  
   
 ### Remarks  
- To display the dialog box, call the [DoModal](#coleinsertdialog__domodal) function.  
+ To display the dialog box, call the [DoModal](#domodal) function.  
   
-##  <a name="coleinsertdialog__createitem"></a>  COleInsertDialog::CreateItem  
- Call this function to create an object of type [COleClientItem](../../mfc/reference/coleclientitem-class.md) only if [DoModal](#coleinsertdialog__domodal) returns **IDOK**.  
+##  <a name="createitem"></a>  COleInsertDialog::CreateItem  
+ Call this function to create an object of type [COleClientItem](../../mfc/reference/coleclientitem-class.md) only if [DoModal](#domodal) returns **IDOK**.  
   
 ```  
 BOOL CreateItem(COleClientItem* pItem);
@@ -150,7 +150,7 @@ BOOL CreateItem(COleClientItem* pItem);
 ### Remarks  
  You must allocate the `COleClientItem` object before you can call this function.  
   
-##  <a name="coleinsertdialog__domodal"></a>  COleInsertDialog::DoModal  
+##  <a name="domodal"></a>  COleInsertDialog::DoModal  
  Call this function to display the OLE Insert Object dialog box.  
   
 ```  
@@ -179,15 +179,15 @@ INT_PTR
   
 -   IDCANCEL if the user canceled the dialog box.  
   
--   IDABORT if an error occurred. If IDABORT is returned, call the [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#coledialog__getlasterror) member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIInsertObject](http://msdn.microsoft.com/library/windows/desktop/ms694325) function in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+-   IDABORT if an error occurred. If IDABORT is returned, call the [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIInsertObject](http://msdn.microsoft.com/library/windows/desktop/ms694325) function in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Remarks  
- If you want to initialize the various dialog box controls by setting members of the [m_io](#coleinsertdialog__m_io) structure, you should do this before calling `DoModal`, but after the dialog object is constructed.  
+ If you want to initialize the various dialog box controls by setting members of the [m_io](#m_io) structure, you should do this before calling `DoModal`, but after the dialog object is constructed.  
   
  If `DoModal` returns IDOK, you can call other member functions to retrieve the settings or information input into the dialog box by the user.  
   
-##  <a name="coleinsertdialog__getclassid"></a>  COleInsertDialog::GetClassID  
- Call this function to get the **CLSID** associated with the selected item only if [DoModal](#coleinsertdialog__domodal) returns **IDOK** and the selection type is **COleInsertDialog::createNewItem**.  
+##  <a name="getclassid"></a>  COleInsertDialog::GetClassID  
+ Call this function to get the **CLSID** associated with the selected item only if [DoModal](#domodal) returns **IDOK** and the selection type is **COleInsertDialog::createNewItem**.  
   
 ```  
 REFCLSID GetClassID() const;
@@ -201,7 +201,7 @@ REFCLSID GetClassID() const;
 ### Remarks  
  For more information, see [CLSID Key](http://msdn.microsoft.com/library/windows/desktop/ms691424) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="coleinsertdialog__getdrawaspect"></a>  COleInsertDialog::GetDrawAspect  
+##  <a name="getdrawaspect"></a>  COleInsertDialog::GetDrawAspect  
  Call this function to determine if the user chose to display the selected item as an icon.  
   
 ```  
@@ -218,11 +218,11 @@ DVASPECT GetDrawAspect() const;
 - `DVASPECT_ICON` Returned if the Display As Icon check box was checked.  
   
 ### Remarks  
- Call this function only if [DoModal](#coleinsertdialog__domodal) returns **IDOK**.  
+ Call this function only if [DoModal](#domodal) returns **IDOK**.  
   
  For more information on drawing aspect, see [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) data structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="coleinsertdialog__geticonicmetafile"></a>  COleInsertDialog::GetIconicMetafile  
+##  <a name="geticonicmetafile"></a>  COleInsertDialog::GetIconicMetafile  
  Call this function to get a handle to the metafile that contains the iconic aspect of the selected item.  
   
 ```  
@@ -234,8 +234,8 @@ HGLOBAL GetIconicMetafile() const;
 ### Return Value  
  The handle to the metafile containing the iconic aspect of the selected item, if the Display As Icon check box was checked when the dialog was dismissed by choosing **OK**; otherwise **NULL**.  
   
-##  <a name="coleinsertdialog__getpathname"></a>  COleInsertDialog::GetPathName  
- Call this function to get the full path of the selected file only if [DoModal](#coleinsertdialog__domodal) returns **IDOK** and the selection type is not **COleInsertDialog::createNewItem**.  
+##  <a name="getpathname"></a>  COleInsertDialog::GetPathName  
+ Call this function to get the full path of the selected file only if [DoModal](#domodal) returns **IDOK** and the selection type is not **COleInsertDialog::createNewItem**.  
   
 ```  
 CString GetPathName() const;
@@ -246,7 +246,7 @@ CString GetPathName() const;
 ### Return Value  
  The full path to the file selected in the dialog box. If the selection type is `createNewItem`, this function returns a meaningless `CString` in release mode or causes an assertion in debug mode.  
   
-##  <a name="coleinsertdialog__getselectiontype"></a>  COleInsertDialog::GetSelectionType  
+##  <a name="getselectiontype"></a>  COleInsertDialog::GetSelectionType  
  Call this function to get the selection type chosen when the Insert Object dialog box was dismissed by choosing **OK**.  
   
 ```  
@@ -281,7 +281,7 @@ UINT GetSelectionType() const;
   
 - **COleInsertDialog::linkToFile** The Create From File radio button was selected and the Link check box was checked.  
   
-##  <a name="coleinsertdialog__m_io"></a>  COleInsertDialog::m_io  
+##  <a name="m_io"></a>  COleInsertDialog::m_io  
  Structure of type **OLEUIINSERTOBJECT** used to control the behavior of the Insert Object dialog box.  
   
 ```  

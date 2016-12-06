@@ -49,23 +49,23 @@ class CMFCRibbonSlider : public CMFCRibbonBaseElement
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonSlider::CMFCRibbonSlider](#cmfcribbonslider__cmfcribbonslider)|Constructs and initializes a ribbon slider control.|  
+|[CMFCRibbonSlider::CMFCRibbonSlider](#cmfcribbonslider)|Constructs and initializes a ribbon slider control.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonSlider::GetPos](#cmfcribbonslider__getpos)|Returns the current position of the slider control.|  
-|[CMFCRibbonSlider::GetRangeMax](#cmfcribbonslider__getrangemax)|Returns the maximum value of the slider.|  
-|[CMFCRibbonSlider::GetRangeMin](#cmfcribbonslider__getrangemin)|Returns the minimum value of the slider.|  
-|[CMFCRibbonSlider::GetRegularSize](#cmfcribbonslider__getregularsize)|Returns the regular size of the ribbon element. (Overrides [CMFCRibbonBaseElement::GetRegularSize](../../mfc/reference/cmfcribbonbaseelement-class.md#cmfcribbonbaseelement__getregularsize).)|  
-|[CMFCRibbonSlider::GetZoomIncrement](#cmfcribbonslider__getzoomincrement)|Returns the size of the zoom increment for the slider control.|  
-|[CMFCRibbonSlider::HasZoomButtons](#cmfcribbonslider__haszoombuttons)|Specifies whether the slider has zoom buttons.|  
-|[CMFCRibbonSlider::OnDraw](#cmfcribbonslider__ondraw)|Called by the framework to draw the ribbon element. (Overrides [CMFCRibbonBaseElement::OnDraw](../../mfc/reference/cmfcribbonbaseelement-class.md#cmfcribbonbaseelement__ondraw).)|  
-|[CMFCRibbonSlider::SetPos](#cmfcribbonslider__setpos)|Sets the current position of the slider control.|  
-|[CMFCRibbonSlider::SetRange](#cmfcribbonslider__setrange)|Specifies the range of the slider control by setting the minimum and maximum values.|  
-|[CMFCRibbonSlider::SetZoomButtons](#cmfcribbonslider__setzoombuttons)|Shows or hides the zoom buttons.|  
-|[CMFCRibbonSlider::SetZoomIncrement](#cmfcribbonslider__setzoomincrement)|Sets size of the zoom increment for the slider control.|  
+|[CMFCRibbonSlider::GetPos](#getpos)|Returns the current position of the slider control.|  
+|[CMFCRibbonSlider::GetRangeMax](#getrangemax)|Returns the maximum value of the slider.|  
+|[CMFCRibbonSlider::GetRangeMin](#getrangemin)|Returns the minimum value of the slider.|  
+|[CMFCRibbonSlider::GetRegularSize](#getregularsize)|Returns the regular size of the ribbon element. (Overrides [CMFCRibbonBaseElement::GetRegularSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getregularsize).)|  
+|[CMFCRibbonSlider::GetZoomIncrement](#getzoomincrement)|Returns the size of the zoom increment for the slider control.|  
+|[CMFCRibbonSlider::HasZoomButtons](#haszoombuttons)|Specifies whether the slider has zoom buttons.|  
+|[CMFCRibbonSlider::OnDraw](#ondraw)|Called by the framework to draw the ribbon element. (Overrides [CMFCRibbonBaseElement::OnDraw](../../mfc/reference/cmfcribbonbaseelement-class.md#ondraw).)|  
+|[CMFCRibbonSlider::SetPos](#setpos)|Sets the current position of the slider control.|  
+|[CMFCRibbonSlider::SetRange](#setrange)|Specifies the range of the slider control by setting the minimum and maximum values.|  
+|[CMFCRibbonSlider::SetZoomButtons](#setzoombuttons)|Shows or hides the zoom buttons.|  
+|[CMFCRibbonSlider::SetZoomIncrement](#setzoomincrement)|Sets size of the zoom increment for the slider control.|  
   
 ## Remarks  
  You can use the `SetRange` method to configure the range of zoom increments for the slider. You can set current position of the slider by using the `SetPos` method.  
@@ -89,7 +89,7 @@ class CMFCRibbonSlider : public CMFCRibbonBaseElement
 ## Requirements  
  **Header:** afxribbonslider.h  
   
-##  <a name="cmfcribbonslider__cmfcribbonslider"></a>  CMFCRibbonSlider::CMFCRibbonSlider  
+##  <a name="cmfcribbonslider"></a>  CMFCRibbonSlider::CMFCRibbonSlider  
  Construct a ribbon slider.  
   
 ```  
@@ -108,7 +108,7 @@ CMFCRibbonSlider(
 ### Remarks  
  Constructs a ribbon slider that is `nWidth` pixels wide in the panel category where the slider is added. By default, the slider is horizontal.  
   
-##  <a name="cmfcribbonslider__getpos"></a>  CMFCRibbonSlider::GetPos  
+##  <a name="getpos"></a>  CMFCRibbonSlider::GetPos  
  Returns the current position of the slider control.  
   
 ```  
@@ -120,7 +120,7 @@ int GetPos() const;
 ### Return Value  
  The current position of the slider control, which is a position relative to the beginning of the slider.  
   
-##  <a name="cmfcribbonslider__getrangemax"></a>  CMFCRibbonSlider::GetRangeMax  
+##  <a name="getrangemax"></a>  CMFCRibbonSlider::GetRangeMax  
  Obtains the maximum increment of the slider that the slider can travel on the slider control.  
   
 ```  
@@ -132,7 +132,7 @@ int GetRangeMax() const;
 ### Return Value  
  The maximum increment of the slider that the slider can travel on the slider control.  
   
-##  <a name="cmfcribbonslider__getrangemin"></a>  CMFCRibbonSlider::GetRangeMin  
+##  <a name="getrangemin"></a>  CMFCRibbonSlider::GetRangeMin  
  Returns the minimum increment that the slider can travel on the slider control.  
   
 ```  
@@ -144,7 +144,7 @@ int GetRangeMin() const;
 ### Return Value  
  The minimum increment that the slider can travel on the slider control.  
   
-##  <a name="cmfcribbonslider__getregularsize"></a>  CMFCRibbonSlider::GetRegularSize  
+##  <a name="getregularsize"></a>  CMFCRibbonSlider::GetRegularSize  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -158,7 +158,7 @@ virtual CSize GetRegularSize(CDC* pDC);
   
 ### Remarks  
   
-##  <a name="cmfcribbonslider__getzoomincrement"></a>  CMFCRibbonSlider::GetZoomIncrement  
+##  <a name="getzoomincrement"></a>  CMFCRibbonSlider::GetZoomIncrement  
  Obtain the zoom increment for the slider control.  
   
 ```  
@@ -170,7 +170,7 @@ int GetZoomIncrement() const;
 ### Return Value  
  The zoom increment for the slider control.  
   
-##  <a name="cmfcribbonslider__haszoombuttons"></a>  CMFCRibbonSlider::HasZoomButtons  
+##  <a name="haszoombuttons"></a>  CMFCRibbonSlider::HasZoomButtons  
  Specifies whether the slider has zoom buttons.  
   
 ```  
@@ -182,7 +182,7 @@ BOOL HasZoomButtons() const;
 ### Return Value  
  `TRUE` if the slider has zoom buttons; `FALSE` otherwise.  
   
-##  <a name="cmfcribbonslider__ondraw"></a>  CMFCRibbonSlider::OnDraw  
+##  <a name="ondraw"></a>  CMFCRibbonSlider::OnDraw  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -194,7 +194,7 @@ virtual void OnDraw(CDC* pDC);
   
 ### Remarks  
   
-##  <a name="cmfcribbonslider__setpos"></a>  CMFCRibbonSlider::SetPos  
+##  <a name="setpos"></a>  CMFCRibbonSlider::SetPos  
  Set the current position of the slider control.  
   
 ```  
@@ -210,7 +210,7 @@ void SetPos(
  [in] `bRedraw`  
  If `TRUE`, the slider will be redrawn.  
   
-##  <a name="cmfcribbonslider__setrange"></a>  CMFCRibbonSlider::SetRange  
+##  <a name="setrange"></a>  CMFCRibbonSlider::SetRange  
  Set the range of values for the slider control.  
   
 ```  
@@ -229,7 +229,7 @@ void SetRange(
 ### Remarks  
  Specifies the range of values for the slider control by setting the minimum and maximum values.  
   
-##  <a name="cmfcribbonslider__setzoombuttons"></a>  CMFCRibbonSlider::SetZoomButtons  
+##  <a name="setzoombuttons"></a>  CMFCRibbonSlider::SetZoomButtons  
  Display or hide zoom buttons.  
   
 ```  
@@ -240,7 +240,7 @@ void SetZoomButtons(BOOL bSet=TRUE);
  [in]. `bSet`  
  `TRUE` to display zoom buttons; `FALSE` to hide them.  
   
-##  <a name="cmfcribbonslider__setzoomincrement"></a>  CMFCRibbonSlider::SetZoomIncrement  
+##  <a name="setzoomincrement"></a>  CMFCRibbonSlider::SetZoomIncrement  
  Set the zoom increment for the slider control.  
   
 ```  

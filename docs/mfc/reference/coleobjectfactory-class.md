@@ -56,31 +56,31 @@ class COleObjectFactory : public CCmdTarget
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleObjectFactory::COleObjectFactory](#coleobjectfactory__coleobjectfactory)|Constructs a `COleObjectFactory` object.|  
+|[COleObjectFactory::COleObjectFactory](#coleobjectfactory)|Constructs a `COleObjectFactory` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleObjectFactory::GetClassID](#coleobjectfactory__getclassid)|Returns the OLE class ID of the objects this factory creates.|  
-|[COleObjectFactory::IsLicenseValid](#coleobjectfactory__islicensevalid)|Determines if the license of the control is valid.|  
-|[COleObjectFactory::IsRegistered](#coleobjectfactory__isregistered)|Indicates whether the object factory is registered with the OLE system DLLs.|  
-|[COleObjectFactory::Register](#coleobjectfactory__register)|Registers this object factory with the OLE system DLLs.|  
-|[COleObjectFactory::RegisterAll](#coleobjectfactory__registerall)|Registers all of the application's object factories with OLE system DLLs.|  
-|[COleObjectFactory::Revoke](#coleobjectfactory__revoke)|Revokes this object factory's registration with the OLE system DLLs.|  
-|[COleObjectFactory::RevokeAll](#coleobjectfactory__revokeall)|Revokes an application's object factories' registrations with the OLE system DLLs.|  
-|[COleObjectFactory::UnregisterAll](#coleobjectfactory__unregisterall)|Unregisters all of an application's object factories.|  
-|[COleObjectFactory::UpdateRegistry](#coleobjectfactory__updateregistry)|Registers this object factory with the OLE system registry.|  
-|[COleObjectFactory::UpdateRegistryAll](#coleobjectfactory__updateregistryall)|Registers all of the application's object factories with the OLE system registry.|  
+|[COleObjectFactory::GetClassID](#getclassid)|Returns the OLE class ID of the objects this factory creates.|  
+|[COleObjectFactory::IsLicenseValid](#islicensevalid)|Determines if the license of the control is valid.|  
+|[COleObjectFactory::IsRegistered](#isregistered)|Indicates whether the object factory is registered with the OLE system DLLs.|  
+|[COleObjectFactory::Register](#register)|Registers this object factory with the OLE system DLLs.|  
+|[COleObjectFactory::RegisterAll](#registerall)|Registers all of the application's object factories with OLE system DLLs.|  
+|[COleObjectFactory::Revoke](#revoke)|Revokes this object factory's registration with the OLE system DLLs.|  
+|[COleObjectFactory::RevokeAll](#revokeall)|Revokes an application's object factories' registrations with the OLE system DLLs.|  
+|[COleObjectFactory::UnregisterAll](#unregisterall)|Unregisters all of an application's object factories.|  
+|[COleObjectFactory::UpdateRegistry](#updateregistry)|Registers this object factory with the OLE system registry.|  
+|[COleObjectFactory::UpdateRegistryAll](#updateregistryall)|Registers all of the application's object factories with the OLE system registry.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleObjectFactory::GetLicenseKey](#coleobjectfactory__getlicensekey)|Requests a unique key from the control's DLL.|  
-|[COleObjectFactory::OnCreateObject](#coleobjectfactory__oncreateobject)|Called by the framework to create a new object of this factory's type.|  
-|[COleObjectFactory::VerifyLicenseKey](#coleobjectfactory__verifylicensekey)|Verifies that the key embedded in the control matches the key embedded in the container.|  
-|[COleObjectFactory::VerifyUserLicense](#coleobjectfactory__verifyuserlicense)|Verifies that the control is licensed for design-time use.|  
+|[COleObjectFactory::GetLicenseKey](#getlicensekey)|Requests a unique key from the control's DLL.|  
+|[COleObjectFactory::OnCreateObject](#oncreateobject)|Called by the framework to create a new object of this factory's type.|  
+|[COleObjectFactory::VerifyLicenseKey](#verifylicensekey)|Verifies that the key embedded in the control matches the key embedded in the container.|  
+|[COleObjectFactory::VerifyUserLicense](#verifyuserlicense)|Verifies that the control is licensed for design-time use.|  
   
 ## Remarks  
  The `COleObjectFactory` class has member functions for performing the following functions:  
@@ -105,7 +105,7 @@ class COleObjectFactory : public CCmdTarget
 ## Requirements  
  **Header:** afxdisp.h  
   
-##  <a name="coleobjectfactory__coleobjectfactory"></a>  COleObjectFactory::COleObjectFactory  
+##  <a name="coleobjectfactory"></a>  COleObjectFactory::COleObjectFactory  
  Constructs a `COleObjectFactory` object, initializes it as an unregistered object factory, and adds it to the list of factories.  
   
 ```  
@@ -155,7 +155,7 @@ COleObjectFactory(
   
  For more information, see [CLSID Key](http://msdn.microsoft.com/library/windows/desktop/ms691424) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="coleobjectfactory__getclassid"></a>  COleObjectFactory::GetClassID  
+##  <a name="getclassid"></a>  COleObjectFactory::GetClassID  
  Returns a reference to the OLE class ID this factory represents.  
   
 ```  
@@ -170,7 +170,7 @@ REFCLSID GetClassID() const;
 ### Remarks  
  For more information, see [CLSID Key](http://msdn.microsoft.com/library/windows/desktop/ms691424) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="coleobjectfactory__getlicensekey"></a>  COleObjectFactory::GetLicenseKey  
+##  <a name="getlicensekey"></a>  COleObjectFactory::GetLicenseKey  
  Requests a unique license key from the control's DLL and stores it in the `BSTR` pointed to by `pbstrKey`.  
   
 ```  
@@ -192,7 +192,7 @@ virtual BOOL GetLicenseKey(
 ### Remarks  
  The default implementation of this function returns 0 and stores nothing in the `BSTR`. If you use MFC ActiveX ControlWizard to create your project, ControlWizard supplies an override that retrieves the control's license key.  
   
-##  <a name="coleobjectfactory__islicensevalid"></a>  COleObjectFactory::IsLicenseValid  
+##  <a name="islicensevalid"></a>  COleObjectFactory::IsLicenseValid  
  Determines if the license of the control is valid.  
   
 ```  
@@ -202,7 +202,7 @@ BOOL IsLicenseValid();
 ### Return Value  
  TRUE if successul; otherwise false.  
   
-##  <a name="coleobjectfactory__isregistered"></a>  COleObjectFactory::IsRegistered  
+##  <a name="isregistered"></a>  COleObjectFactory::IsRegistered  
  Returns a nonzero value if the factory is registered with the OLE system DLLs.  
   
 ```  
@@ -214,7 +214,7 @@ virtual BOOL IsRegistered() const;
 ### Return Value  
  Nonzero if the factory is registered; otherwise 0.  
   
-##  <a name="coleobjectfactory__oncreateobject"></a>  COleObjectFactory::OnCreateObject  
+##  <a name="oncreateobject"></a>  COleObjectFactory::OnCreateObject  
  Called by the framework to create a new object.  
   
 ```  
@@ -227,7 +227,7 @@ virtual CCmdTarget* OnCreateObject();
 ### Remarks  
  Override this function to create the object from something other than the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) passed to the constructor.  
   
-##  <a name="coleobjectfactory__register"></a>  COleObjectFactory::Register  
+##  <a name="register"></a>  COleObjectFactory::Register  
  Registers this object factory with the OLE system DLLs.  
   
 ```  
@@ -238,9 +238,9 @@ virtual BOOL Register();
  Nonzero if the factory is successfully registered; otherwise 0.  
   
 ### Remarks  
- This function is usually called by [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#cwinapp__initinstance) when the application is launched.  
+ This function is usually called by [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) when the application is launched.  
   
-##  <a name="coleobjectfactory__registerall"></a>  COleObjectFactory::RegisterAll  
+##  <a name="registerall"></a>  COleObjectFactory::RegisterAll  
  Registers all of the application's object factories with the OLE system DLLs.  
   
 ```  
@@ -251,9 +251,9 @@ static BOOL PASCAL RegisterAll();
  Nonzero if the factories are successfully registered; otherwise 0.  
   
 ### Remarks  
- This function is usually called by [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#cwinapp__initinstance) when the application is launched.  
+ This function is usually called by [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) when the application is launched.  
   
-##  <a name="coleobjectfactory__revoke"></a>  COleObjectFactory::Revoke  
+##  <a name="revoke"></a>  COleObjectFactory::Revoke  
  Revokes this object factory's registration with the OLE system DLLs.  
   
 ```  
@@ -261,9 +261,9 @@ void Revoke();
 ```  
   
 ### Remarks  
- The framework calls this function automatically before the application terminates. If necessary, call it from an override of [CWinApp::ExitInstance](../../mfc/reference/cwinapp-class.md#cwinapp__exitinstance).  
+ The framework calls this function automatically before the application terminates. If necessary, call it from an override of [CWinApp::ExitInstance](../../mfc/reference/cwinapp-class.md#exitinstance).  
   
-##  <a name="coleobjectfactory__revokeall"></a>  COleObjectFactory::RevokeAll  
+##  <a name="revokeall"></a>  COleObjectFactory::RevokeAll  
  Revokes all of the application's object factories' registrations with the OLE system DLLs.  
   
 ```  
@@ -271,9 +271,9 @@ static void PASCAL RevokeAll();
 ```  
   
 ### Remarks  
- The framework calls this function automatically before the application terminates. If necessary, call it from an override of [CWinApp::ExitInstance](../../mfc/reference/cwinapp-class.md#cwinapp__exitinstance).  
+ The framework calls this function automatically before the application terminates. If necessary, call it from an override of [CWinApp::ExitInstance](../../mfc/reference/cwinapp-class.md#exitinstance).  
   
-##  <a name="coleobjectfactory__unregisterall"></a>  COleObjectFactory::UnregisterAll  
+##  <a name="unregisterall"></a>  COleObjectFactory::UnregisterAll  
  Unregisters all of an application's object factories.  
   
 ```  
@@ -283,7 +283,7 @@ static BOOL PASCAL UnregisterAll();
 ### Return Value  
  TRUE if successful; otherwise FALSE.  
   
-##  <a name="coleobjectfactory__updateregistry"></a>  COleObjectFactory::UpdateRegistry  
+##  <a name="updateregistry"></a>  COleObjectFactory::UpdateRegistry  
  Registers all of the application's object factories with the OLE system registry.  
   
 ```  
@@ -303,13 +303,13 @@ virtual BOOL UpdateRegistry(BOOL bRegister);
 ### Remarks  
  Brief discussions of the two forms for this function follow:  
   
-- **UpdateRegistry(** `lpszProgID` **)** Registers this object factory with the OLE system registry. This function is usually called by [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#cwinapp__initinstance) when the application is launched.  
+- **UpdateRegistry(** `lpszProgID` **)** Registers this object factory with the OLE system registry. This function is usually called by [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) when the application is launched.  
   
 - **UpdateRegistry(** `bRegister` **)** This form of the function is overridable. If `bRegister` is **TRUE**, this function registers the control class with the system registry. Otherwise, it unregisters the class.  
   
      If you use MFC ActiveX ControlWizard to create your project, ControlWizard supplies an override to this pure virtual function.  
   
-##  <a name="coleobjectfactory__updateregistryall"></a>  COleObjectFactory::UpdateRegistryAll  
+##  <a name="updateregistryall"></a>  COleObjectFactory::UpdateRegistryAll  
  Registers all of the application's object factories with the OLE system registry.  
   
 ```  
@@ -324,9 +324,9 @@ static BOOL PASCAL UpdateRegistryAll(BOOL bRegister = TRUE);
  Nonzero if the factories are successfully updated; otherwise 0.  
   
 ### Remarks  
- This function is usually called by [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#cwinapp__initinstance) when the application is launched.  
+ This function is usually called by [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) when the application is launched.  
   
-##  <a name="coleobjectfactory__verifylicensekey"></a>  COleObjectFactory::VerifyLicenseKey  
+##  <a name="verifylicensekey"></a>  COleObjectFactory::VerifyLicenseKey  
  Verifies that the container is licensed to use the OLE control.  
   
 ```  
@@ -341,13 +341,13 @@ virtual BOOL VerifyLicenseKey(BSTR bstrKey);
  Nonzero if the run-time license is valid; otherwise 0.  
   
 ### Remarks  
- The default version calls [GetLicenseKey](#coleobjectfactory__getlicensekey) to get a copy of the control's license string and compares it with the string in `bstrKey`. If the two strings match, the function returns a nonzero value; otherwise it returns 0.  
+ The default version calls [GetLicenseKey](#getlicensekey) to get a copy of the control's license string and compares it with the string in `bstrKey`. If the two strings match, the function returns a nonzero value; otherwise it returns 0.  
   
  You can override this function to provide customized verification of the license.  
   
- The function [VerifyUserLicense](#coleobjectfactory__verifyuserlicense) verifies the design-time license.  
+ The function [VerifyUserLicense](#verifyuserlicense) verifies the design-time license.  
   
-##  <a name="coleobjectfactory__verifyuserlicense"></a>  COleObjectFactory::VerifyUserLicense  
+##  <a name="verifyuserlicense"></a>  COleObjectFactory::VerifyUserLicense  
  Verifies the design-time license for the OLE control.  
   
 ```  
