@@ -40,8 +40,7 @@ Represents a vector of *N* integer values that specify the bounds of an *N*-dime
 ### Syntax  
   
 ```  
-template <
-    int _Rank>  
+template <int _Rank>  
 class extent;  
 ```  
   
@@ -74,17 +73,17 @@ class extent;
   
 |Name|Description|  
 |----------|-----------------|  
-|[extent::operator- Operator](#extent__operator_min)|Returns a new `extent` object that's created by subtracting the `index` elements from the corresponding `extent` elements.|  
-|[extent::operator-- Operator](#extent__operator_min_min)|Decrements each element of the `extent` object.|  
-|[extent::operator(mod)= Operator](#extent__operator_mod)=)|Calculates the modulus (remainder) of each element in the `extent` object when that element is divided by a number.|  
-|[extent::operator*= Operator](#extent__operator_star_eq)|Multiplies each element of the `extent` object by a number.|  
-|[extent::operator/= Operator](#extent__operator_min_eq)|Divides each element of the `extent` object by a number.|  
-|[extent::operator\[\]](#extent__operator_at)|Returns the element that's at the specified index.|  
-|[extent::operator+ Operator](#extent__operator_add)|Returns a new `extent` object that's created by adding the corresponding `index` and `extent` elements.|  
-|[extent::operator++ Operator](#extent__operator_add_add)|Increments each element of the `extent` object.|  
-|[extent::operator+= Operator](#extent__operator_add_eq)|Adds the specified number to each element of the `extent` object.|  
-|[extent::operator= Operator](#extent__operator_eq)|Copies the contents of another `extent` object into this one.|  
-|[extent::operator-= Operator](#extent__operator_min_eq)|Subtracts the specified number from each element of the `extent` object.|  
+|[extent::operator- Operator](#operator_min)|Returns a new `extent` object that's created by subtracting the `index` elements from the corresponding `extent` elements.|  
+|[extent::operator-- Operator](#operator_min_min)|Decrements each element of the `extent` object.|  
+|[extent::operator%= Operator](#operator_mod_eq)|Calculates the modulus (remainder) of each element in the `extent` object when that element is divided by a number.|  
+|[extent::operator*= Operator](#operator_star_eq)|Multiplies each element of the `extent` object by a number.|  
+|[extent::operator/= Operator](#operator_min_eq)|Divides each element of the `extent` object by a number.|  
+|[extent::operator\[\]](#operator_at)|Returns the element that's at the specified index.|  
+|[extent::operator+ Operator](#operator_add)|Returns a new `extent` object that's created by adding the corresponding `index` and `extent` elements.|  
+|[extent::operator++ Operator](#operator_add_add)|Increments each element of the `extent` object.|  
+|[extent::operator+= Operator](#operator_add_eq)|Adds the specified number to each element of the `extent` object.|  
+|[extent::operator= Operator](#operator_eq)|Copies the contents of another `extent` object into this one.|  
+|[extent::operator-= Operator](#operator_min_eq)|Subtracts the specified number from each element of the `extent` object.|  
 
   
 ### Public Constants  
@@ -97,7 +96,7 @@ class extent;
  `extent`  
 
 
-## <a name="extent__contains_method"></a> extent::contains Method 
+## <a name="contains"></a> extent::contains Method 
 Indicates whether the specified [index](index-class.md) value is contained within the `extent' object.  
   
 ### Syntax  
@@ -113,7 +112,7 @@ bool contains( const index<rank>& _Index ) const restrict(amp,cpu);
 ### Return Value  
  `true` if the specified `index` value is contained in the `extent` object; otherwise, `false`.  
   
-##  <a name="extent__ctor"></a> extent::extent Constructor  
+##  <a name="ctor"></a> extent::extent Constructor  
 Initializes a new instance of the `extent' class.  
   
 ### Syntax  
@@ -165,7 +164,7 @@ explicit extent(
   
  If an array is used to construct an `extent` object, the length of the array must match the rank of the `extent` object.  
   
-##  <a name="extent__operator_mod"></a> extent::operator(mod)= Operator 
+##  <a name="operator_mod_eq"></a> extent::operator%= Operator 
 Calculates the modulus (remainder) of each element in the `extent' when that element is divided by a number.  
   
 ### Syntax  
@@ -181,7 +180,7 @@ extent<_Rank>&  operator%= (int _Rhs ) restrict(cpu, direct3d);
 ### Return Value  
  The `extent` object.  
   
-##  <a name="extent__operator_star_eq"></a> extent::operator*= Operator  
+##  <a name="operator_star_eq"></a> extent::operator*= Operator  
 Multiplies each element in the `extent' object by the specified number.  
   
 ### Syntax  
@@ -197,7 +196,7 @@ extent<_Rank>&  operator*= ( int _Rhs ) restrict(amp,cpu);
 ### Return Value  
  The `extent` object.  
   
-## extent::operator+ Operator  
+## <a name="operator_add"></a>  extent::operator+ Operator  
 Returns a new `extent` object created by adding the corresponding `index` and `extent` elements.  
   
 ### Syntax  
@@ -214,7 +213,7 @@ extent<_Rank>  operator+(
 ### Return Value  
  The new `extent` object.  
   
-##  <a name="extent__operator_add_add"></a> extent::operator++ Operator  
+##  <a name="operator_add_add"></a> extent::operator++ Operator  
 Increments each element of the `extent' object.  
   
 ### Syntax  
@@ -230,7 +229,7 @@ extent<_Rank>  operator++(
 ### Return Value  
  For the prefix operator, the `extent` object (`*this`). For the suffix operator, a new `extent` object.  
   
-##  <a name="extent__operator_add_eq"></a> extent::operator+= Operator  
+##  <a name="operator_add_eq"></a> extent::operator+= Operator  
 Adds the specified number to each element of the `extent' object.  
   
 ### Syntax  
@@ -253,7 +252,7 @@ extent<_Rank>&  operator+= (
 ### Return Value  
  The resulting `extent` object.  
   
-##  <a name="extent__operator_min"></a> extent::operator- Operator  
+##  <a name="operator_min"></a> extent::operator- Operator  
 Creates a new `extent` object by subtracting each element in the specified `index` object from the corresponding element in this `extent` object.  
   
 ### Syntax  
@@ -270,7 +269,7 @@ extent<_Rank>  operator-(
 ### Return Value  
  The new `extent` object.  
   
-##  <a name="extent__operator_min_min"></a> extent::operator-- Operator  
+##  <a name="operator_min_min"></a> extent::operator-- Operator  
 Decrements each element in the `extent' object.  
   
 ### Syntax  
@@ -286,7 +285,7 @@ extent<_Rank>  operator--(
 ### Return Value  
  For the prefix operator, the `extent` object (`*this`). For the suffix operator, a new `extent` object.  
   
-##  <a name="extent__operator_div_eq"></a> extent::operator/= Operator  
+##  <a name="operator_div_eq"></a> extent::operator/= Operator  
 Divides each element in the `extent' object by the specified number.  
   
 ### Syntax  
@@ -303,7 +302,7 @@ extent<_Rank>&  operator/= (
 ### Return Value  
  The `extent` object.  
   
-##  <a name="extent__operator_min_eq"></a> extent::operator-= Operator  
+##  <a name="operator_min_eq"></a> extent::operator-= Operator  
 Subtracts the specified number from each element of the `extent' object.  
   
 ### Syntax  
@@ -326,7 +325,7 @@ extent<_Rank>&  operator-= (
 ### Return Value  
  The resulting `extent` object.  
   
-##  <a name="extent__operator_eq"></a> extent::operator= Operator  
+##  <a name="operator_eq"></a> extent::operator= Operator  
 Copies the contents of another `extent' object into this one.  
   
 ### Syntax  
@@ -343,7 +342,7 @@ extent<_Rank>&  operator= (
 ### Return Value  
  A reference to this `extent` object.  
   
-##  <a name="extent__operator_at"></a> extent::operator \[\] 
+##  <a name="operator_at"></a> extent::operator \[\] 
 Returns the element that's at the specified index.  
   
 ### Syntax  
@@ -361,7 +360,7 @@ int&  operator[] ( unsigned int _Index ) restrict(amp,cpu);
 ### Return Value  
  The element that's at the specified index.  
   
-##  <a name="extent__rank_constant"></a> extent::rank Constant  
+##  <a name="rank_constant"></a> extent::rank Constant  
 Stores the rank of the `extent' object.  
   
 ### Syntax  
@@ -370,7 +369,7 @@ Stores the rank of the `extent' object.
 static const int rank = _Rank;  
 ```  
   
-##  <a name="extent__size_method"></a> extent::size Method  
+##  <a name="size"></a> extent::size Method  
 Returns the total linear size of the `extent` object (in units of elements).  
   
 ### Syntax  

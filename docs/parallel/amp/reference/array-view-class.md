@@ -92,7 +92,7 @@ class array_view<const value_type, _Rank> : public _Array_view_base<_Rank, sizeo
   
 |Name|Description|  
 |----------|-----------------|  
-|[array_view::operator() Operator](#array_view__operator_call)|Returns the value of the element that is specified by the parameter or parameters.|  
+|[array_view::operator() Operator](#operator_call)|Returns the value of the element that is specified by the parameter or parameters.|  
 |[array_view::operator[] Operator](#operator_at)|Returns the element that is specified by the parameters.|  
 |[array_view::operator= Operator](#operator_eq)|Copies the contents of the specified `array_view` object into this one.|  
   
@@ -459,7 +459,7 @@ accelerator_view get_source_accelerator_view() const;
   
 ### Return Value  
   
-##  <a name="array_view__operator_call"></a>  array_view::operator() Operator  
+##  <a name="operator_call"></a>  array_view::operator() Operator  
  Returns the value of the element that is specified by the parameter or parameters.  
   
 ```  

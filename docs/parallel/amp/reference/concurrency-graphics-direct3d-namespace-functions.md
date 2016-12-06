@@ -15,10 +15,10 @@ manager: "ghogen"
 # Concurrency::graphics::direct3d namespace functions
 ||||  
 |-|-|-|  
-|[get_sampler Function](#get_sampler_function)|[get_texture Function](#get_texture_function)|[make_sampler Function](#make_sampler_function)|  
-|[make_texture Function](#make_texture_function)|[msad4 Function](#msad4_function)|  
+|[get_sampler Function](#get_sampler)|[get_texture Function](#get_texture)|[make_sampler Function](#make_sampler)|  
+|[make_texture Function](#make_texture)|[msad4 Function](#msad4)|  
   
-##  <a name="get_sampler_function"></a>  get_sampler Function  
+##  <a name="get_sampler"></a>  get_sampler Function  
  Get the D3D sampler state interface on the given accelerator view that represents the specified sampler object.  
   
 ```  
@@ -37,7 +37,7 @@ IUnknown* get_sampler(
 ### Return Value  
  The IUnknown interface pointer corresponding to the D3D sampler state that represents the given sampler.  
   
-##  <a name="get_texture_function"></a>  get_texture Function  
+##  <a name="get_texture"></a>  get_texture Function  
  Gets the Direct3D texture interface underlying the specified [texture](texture-class.md) object.  
   
 ```  
@@ -80,7 +80,7 @@ _Ret_ IUnknown *get_texture(
 ### Return Value  
  The IUnknown interface pointer corresponding to the Direct3D texture underlying the texture.  
   
-##  <a name="make_sampler_function"></a>  make_sampler Function  
+##  <a name="make_sampler"></a>  make_sampler Function  
  Create a sampler from a D3D sampler state interface pointer.  
   
 ```  
@@ -94,7 +94,7 @@ sampler make_sampler(_In_ IUnknown* _D3D_sampler) restrict(amp);
 ### Return Value  
  A sampler represents the provided D3D sampler state.  
   
-##  <a name="make_texture_function"></a>  make_texture Function  
+##  <a name="make_texture"></a>  make_texture Function  
  Creates a [texture](texture-class.md) object by using the specified parameters.  
   
 ```  
@@ -127,7 +127,7 @@ texture<value_type, _Rank> make_texture(
 ### Return Value  
  A texture using the provided D3D texture.  
   
-##  <a name="msad4_function"></a>  msad4 Function  
+##  <a name="msad4"></a>  msad4 Function  
  Compares a 4-byte reference value and an 8-byte source value and accumulates a vector of 4 sums. Each sum corresponds to the masked sum of absolute differences of different byte alignments between the reference value and the source value.  
   
 ```  

@@ -84,9 +84,9 @@ class texture;
   
 |Name|Description|  
 |----------|-----------------|  
-|[texture::operator() Operator](#texture__operator_call)|Returns the element value that is specified by the parameters.|  
-|[texture::operator[] Operator](#texture__operator_at)|Returns the element that is at the specified index.|  
-|[texture::operator= Operator](#texture__operator_eq)|Copies the specified [texture](texture-class.md) object to this one.|  
+|[texture::operator() Operator](#operator_call)|Returns the element value that is specified by the parameters.|  
+|[texture::operator[] Operator](#operator_at)|Returns the element that is at the specified index.|  
+|[texture::operator= Operator](#operator_eq)|Copies the specified [texture](texture-class.md) object to this one.|  
   
 ### Public Constants  
   
@@ -215,7 +215,7 @@ unsigned int get_row_pitch() const restrict(cpu);
 ### Return Value  
  The number of bytes between each row in a 2-dimensional staging texture, or between each row of a depth slice in 3-dimensional staging texture.  
   
-##  <a name="texture__operator_call"></a>  texture::operator() Operator  
+##  <a name="operator_call"></a>  texture::operator() Operator  
  Returns the element value that is specified by the parameters.  
   
 ```  
@@ -257,7 +257,7 @@ const value_type operator() (
 ### Return Value  
  The element value that is specified by the parameters.  
   
-##  <a name="texture__operator_at"></a>  texture::operator[] Operator  
+##  <a name="operator_at"></a>  texture::operator[] Operator  
  Returns the element that is at the specified index.  
   
 ```  
@@ -277,7 +277,7 @@ const value_type operator[] (int _I0) const restrict(amp);
 ### Return Value  
  The element that is at the specified index.  
   
-##  <a name="texture__operator_eq"></a>  texture::operator= Operator  
+##  <a name="operator_eq"></a>  texture::operator= Operator  
  Copies the specified [texture](texture-class.md) object to this one.  
   
 ```  

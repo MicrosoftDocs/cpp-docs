@@ -15,17 +15,17 @@ manager: "ghogen"
 # Concurrency::direct3d namespace functions (AMP)
 ||||  
 |-|-|-|  
-|[abs Function](#abs_function)|[clamp Function](#clamp_function)|[countbits Function](#countbits_function)|
-|[create_accelerator_view Function](#create_accelerator_view_function)|||
-|[d3d_access_lock Function](#d3d_access_lock_function)|[d3d_access_try_lock Function](#d3d_access_try_lock_function)|[d3d_access_unlock Function](#d3d_access_unlock_function)|  
-|[firstbithigh Function](#firstbithigh_function)|[firstbitlow Function](#firstbitlow_function)|[get_buffer Function](#get_buffer_function)|  
-|[imax Function](#imax_function)|[imin Function](#imin_function)|[is_timeout_disabled Function](#is_timeout_disabled_function)|  
-|[mad Function](#mad_function)|[make_array Function](#make_array_function)|[noise Function](#noise_function)|  
-|[radians Function](#radians_function)|[rcp Function](#rcp_function)|[reversebits Function](#reversebits_function)|  
-|[saturate Function](#saturate_function)|[sign Function](#sign_function)|[smoothstep Function](#smoothstep_function)|  
-|[step Function](#step_function)|[umax Function](#umax_function)|[umin Function](#umin_function)|  
+|[abs Function](#abs)|[clamp Function](#clamp)|[countbits Function](#countbits)|
+|[create_accelerator_view Function](#create_accelerator_view)|||
+|[d3d_access_lock Function](#d3d_access_lock)|[d3d_access_try_lock Function](#d3d_access_try_lock)|[d3d_access_unlock Function](#d3d_access_unlock)|  
+|[firstbithigh Function](#firstbithigh)|[firstbitlow Function](#firstbitlow)|[get_buffer Function](#get_buffer)|  
+|[imax Function](#imax)|[imin Function](#imin)|[is_timeout_disabled Function](#is_timeout_disabled)|  
+|[mad Function](#mad)|[make_array Function](#make_array)|[noise Function](#noise)|  
+|[radians Function](#radians)|[rcp Function](#rcp)|[reversebits Function](#reversebits)|  
+|[saturate Function](#saturate)|[sign Function](#sign)|[smoothstep Function](#smoothstep)|  
+|[step Function](#step)|[umax Function](#umax)|[umin Function](#umin)|  
   
-##  <a name="abs_function"></a>  abs Function  
+##  <a name="abs"></a>  abs Function  
  Returns the absolute value of the argument  
   
 ```  
@@ -39,7 +39,7 @@ inline int abs(int _X) restrict(amp);
 ### Return Value  
  Returns the absolute value of the argument.  
   
-##  <a name="clamp_function"></a>  clamp Function  
+##  <a name="clamp"></a>  clamp Function  
  Computes the value of the first specified argument clamped to a range defined by the second and third specified arguments.  
   
 ```  
@@ -68,7 +68,7 @@ inline int clamp(
 ### Return Value  
  The clamped value of `_X`.  
   
-##  <a name="countbits_function"></a>  countbits Function  
+##  <a name="countbits"></a>  countbits Function  
  Counts the number of set bits in _X  
   
 ```  
@@ -82,7 +82,7 @@ inline unsigned int countbits(unsigned int _X) restrict(amp);
 ### Return Value  
  Returns the number of set bits in _X  
 
-## <a name="create_accelerator_view_function"></a> create_accelerator_view Function
+## <a name="create_accelerator_view"></a> create_accelerator_view Function
 Creates an [accelerator_view](accelerator-view-class.md) object from a pointer to a Direct3D device interface.  
   
 ## Syntax  
@@ -122,7 +122,7 @@ accelerator_view create_accelerator_view(
  The C++ AMP runtime provides detailed error information in debug mode by using the D3D Debug layer if you use the `D3D11_CREATE_DEVICE_DEBUG` flag.  
   
   
-##  <a name="d3d_access_lock_function"></a>  d3d_access_lock Function  
+##  <a name="d3d_access_lock"></a>  d3d_access_lock Function  
  Acquire a lock on an accelerator_view for the purpose of safely performing D3D operations on resources shared with the accelerator_view. The accelerator_view and all C++ AMP resources associated with this accelerator_view internally take this lock when performing operations and will block while another thread holds the D3D access lock. This lock is non-recursive: It is undefined behavior to call this function from a thread that already holds the lock. It is undefined behavior to perform operations on the accelerator_view or any data container associated with the accelerator_view from the thread that holds the D3D access lock. See also scoped_d3d_access_lock, a RAII-style class for a scope-based D3D access lock.  
   
 ```  
@@ -133,7 +133,7 @@ void __cdecl d3d_access_lock(accelerator_view& _Av);
  `_Av`  
  The accelerator_view to lock.  
   
-##  <a name="d3d_access_try_lock_function"></a>  d3d_access_try_lock Function  
+##  <a name="d3d_access_try_lock"></a>  d3d_access_try_lock Function  
  Attempt to acquire the D3D access lock on an accelerator_view without blocking.  
   
 ```  
@@ -147,7 +147,7 @@ bool __cdecl d3d_access_try_lock(accelerator_view& _Av);
 ### Return Value  
  true if the lock was acquired, or false if it is currently held by another thread.  
   
-##  <a name="d3d_access_unlock_function"></a>  d3d_access_unlock Function  
+##  <a name="d3d_access_unlock"></a>  d3d_access_unlock Function  
  Release the D3D access lock on the given accelerator_view. If the calling thread does not hold the lock on the accelerator_view the results are undefined.  
   
 ```  
@@ -158,7 +158,7 @@ void __cdecl d3d_access_unlock(accelerator_view& _Av);
  `_Av`  
  The accelerator_view for which the lock is to be released.  
   
-##  <a name="firstbithigh_function"></a>  firstbithigh Function  
+##  <a name="firstbithigh"></a>  firstbithigh Function  
  Gets the location of the first set bit in _X, beginning with the highest-order bit and moving towards the lowest-order bit.  
   
 ```  
@@ -172,7 +172,7 @@ inline int firstbithigh(int _X) restrict(amp);
 ### Return Value  
  The location of the first set bit  
   
-##  <a name="firstbitlow_function"></a>  firstbitlow Function  
+##  <a name="firstbitlow"></a>  firstbitlow Function  
  Gets the location of the first set bit in _X, beginning with the lowest-order bit and working toward the highest-order bit.  
   
 ```  
@@ -186,7 +186,7 @@ inline int firstbitlow(int _X) restrict(amp);
 ### Return Value  
  Returns The location of the first set bit  
   
-##  <a name="get_buffer_function"></a>  get_buffer Function  
+##  <a name="get_buffer"></a>  get_buffer Function  
  Get the Direct3D buffer interface underlying the specified array.  
   
 ```  
@@ -211,7 +211,7 @@ IUnknown *get_buffer(
 ### Return Value  
  The IUnknown interface pointer corresponding to the Direct3D buffer underlying the array.  
   
-##  <a name="imax_function"></a>  imax Function  
+##  <a name="imax"></a>  imax Function  
  Determine the maximum numeric value of the arguments  
   
 ```  
@@ -230,7 +230,7 @@ inline int imax(
 ### Return Value  
  Return the maximum numeric value of the arguments  
   
-##  <a name="imin_function"></a>  imin Function  
+##  <a name="imin"></a>  imin Function  
  Determine the minimum numeric value of the arguments  
   
 ```  
@@ -249,7 +249,7 @@ inline int imin(
 ### Return Value  
  Return the minimum numeric value of the arguments  
   
-##  <a name="is_timeout_disabled_function"></a>  is_timeout_disabled Function  
+##  <a name="is_timeout_disabled"></a>  is_timeout_disabled Function  
  Returns a boolean flag indicating if timeout is disabled for the specified accelerator_view. This corresponds to the D3D11_CREATE_DEVICE_DISABLE_GPU_TIMEOUT flag for Direct3D device creation.  
   
 ```  
@@ -263,7 +263,7 @@ bool __cdecl is_timeout_disabled(const accelerator_view& _Accelerator_view);
 ### Return Value  
  A boolean flag indicating if timeout is disabled for the specified accelerator_view.  
   
-##  <a name="mad_function"></a>  mad Function  
+##  <a name="mad"></a>  mad Function  
  Computes the product of the first and second specified argument, then adds the third specified argument.  
   
 ```  
@@ -304,7 +304,7 @@ inline unsigned int mad(
 ### Return Value  
  The result of `_X` * `_Y` + `_Z`.  
   
-##  <a name="make_array_function"></a>  make_array Function  
+##  <a name="make_array"></a>  make_array Function  
  Create an array from a Direct3D buffer interface pointer.  
   
 ```  
@@ -337,7 +337,7 @@ array<value_type, _Rank> make_array(
 ### Return Value  
  An array created using the provided Direct3D buffer.  
   
-##  <a name="noise_function"></a>  noise Function  
+##  <a name="noise"></a>  noise Function  
  Generates a random value using the Perlin noise algorithm  
   
 ```  
@@ -351,7 +351,7 @@ inline float noise(float _X) restrict(amp);
 ### Return Value  
  Returns The Perlin noise value within a range between -1 and 1  
   
-##  <a name="radians_function"></a>  radians Function  
+##  <a name="radians"></a>  radians Function  
  Converts _X from degrees to radians  
   
 ```  
@@ -365,7 +365,7 @@ inline float radians(float _X) restrict(amp);
 ### Return Value  
  Returns _X converted from degrees to radians  
   
-##  <a name="rcp_function"></a>  rcp Function  
+##  <a name="rcp"></a>  rcp Function  
  Computes the reciprocal of the specified argument by using a fast approximation.  
   
 ```  
@@ -382,7 +382,7 @@ inline double rcp(double _X) restrict(amp);
 ### Return Value  
  The reciprocal of the specified argument.  
   
-##  <a name="reversebits_function"></a>  reversebits Function  
+##  <a name="reversebits"></a>  reversebits Function  
  Reverses the order of the bits in _X  
   
 ```  
@@ -396,7 +396,7 @@ inline unsigned int reversebits(unsigned int _X) restrict(amp);
 ### Return Value  
  Returns the value with the bit order reversed in _X  
   
-##  <a name="saturate_function"></a>  saturate Function  
+##  <a name="saturate"></a>  saturate Function  
  Clamps _X within the range of 0 to 1  
   
 ```  
@@ -410,7 +410,7 @@ inline float saturate(float _X) restrict(amp);
 ### Return Value  
  Returns _X clamped within the range of 0 to 1  
   
-##  <a name="sign_function"></a>  sign Function  
+##  <a name="sign"></a>  sign Function  
  Determines the sign of the specified argument.  
   
 ```  
@@ -424,7 +424,7 @@ inline int sign(int _X) restrict(amp);
 ### Return Value  
  The sign of the argument.  
   
-##  <a name="smoothstep_function"></a>  smoothstep Function  
+##  <a name="smoothstep"></a>  smoothstep Function  
  Returns a smooth Hermite interpolation between 0 and 1, if _X is in the range [_Min, _Max].  
   
 ```  
@@ -447,7 +447,7 @@ inline float smoothstep(
 ### Return Value  
  Returns 0 if _X is less than _Min; 1 if _X is greater than _Max; otherwise, a value between 0 and 1 if _X is in the range [_Min, _Max]  
   
-##  <a name="step_function"></a>  step Function  
+##  <a name="step"></a>  step Function  
  Compares two values, returning 0 or 1 based on which value is greater  
   
 ```  
@@ -466,7 +466,7 @@ inline float step(
 ### Return Value  
  Returns 1 if the _X is greater than or equal to _Y; otherwise, 0  
   
-##  <a name="umax_function"></a>  umax Function  
+##  <a name="umax"></a>  umax Function  
  Determine the maximum numeric value of the arguments  
   
 ```  
@@ -485,7 +485,7 @@ inline unsigned int umax(
 ### Return Value  
  Return the maximum numeric value of the arguments  
   
-##  <a name="umin_function"></a>  umin Function  
+##  <a name="umin"></a>  umin Function  
  Determine the minimum numeric value of the arguments  
   
 ```  

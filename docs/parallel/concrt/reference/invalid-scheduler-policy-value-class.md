@@ -61,19 +61,21 @@ class invalid_scheduler_policy_value : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="ctor"></a>  invalid_scheduler_policy_thread_specification::invalid_scheduler_policy_thread_specification Constructor  
+    
+##  <a name="ctor"></a>  invalid_scheduler_policy_value::invalid_scheduler_policy_value Constructor  
  Constructs an `invalid_scheduler_policy_value` object.  
   
 ```
-explicit _CRTIMP invalid_scheduler_policy_thread_specification(_In_z_ const char* _Message) throw();
+explicit _CRTIMP invalid_scheduler_policy_value(_In_z_ const char* _Message) throw();
 
-invalid_scheduler_policy_thread_specification() throw();
+invalid_scheduler_policy_value() throw();
 ```  
   
 ### Parameters  
  `_Message`  
  A descriptive message of the error.  
   
+
 ## See Also  
  [concurrency Namespace](concurrency-namespace.md)   
  [SchedulerPolicy Class](schedulerpolicy-class.md)
