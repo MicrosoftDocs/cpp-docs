@@ -138,7 +138,7 @@ dumpbin.exe /LINKERMEMBER somelibrary.lib
  For more information about the current API set and the minimum supported operating systems for a specific Windows API, see [Windows API Index](https://msdn.microsoft.com/en-us/library/ff818516\(v=vs.85\).aspx) and navigate to the API in question.  
   
 ### Windows version  
- When upgrading a program that uses the Windows API either directly or indirectly, you will need to decide the minimum Windows version to support. In most cases Windows 7 is a good choice. For more information see [Header file problems](porting-guide-spy-increment.md#"header_file_problems) in Porting Guide: Spy++. The WINVER macro defines the oldest version of Windows that your program is designed to run on. If your MFC program sets WINVER to 0x0501 (Windows XP) you will get a warning because MFC no longer supports XP, even though the compiler itself has an XP mode.  
+ When upgrading a program that uses the Windows API either directly or indirectly, you will need to decide the minimum Windows version to support. In most cases Windows 7 is a good choice. For more information see [Header file problems](porting-guide-spy-increment.md#header_file_problems) in Porting Guide: Spy++. The WINVER macro defines the oldest version of Windows that your program is designed to run on. If your MFC program sets WINVER to 0x0501 (Windows XP) you will get a warning because MFC no longer supports XP, even though the compiler itself has an XP mode.  
   
  For more information, see [Updating the Target Windows Version](porting-guide-spy-increment.md#updating_winver) and [More outdated header files](porting-guide-spy-increment.md#outdated_header_files) in Porting Guide: Spy++.  
   
