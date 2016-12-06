@@ -46,7 +46,7 @@ translation.priority.ht:
 2.  In the [Properties window](/visualstudio/ide/reference/properties-window), change the properties of your control.  
   
     > [!NOTE]
-    >  When you set the **Bitmap** property for a button, radio button, or check box control equal to **True**, the style BS_BITMAP is implemented for your control. For more information, see [Button Styles](../mfc/reference/button-styles.md). For an example of associating a bitmap with a control, see [CButton::SetBitmap](../mfc/reference/cbutton-class.md#cbutton__setbitmap). Bitmaps will not appear on your control while you are in the Dialog resource editor.  
+    >  When you set the **Bitmap** property for a button, radio button, or check box control equal to **True**, the style BS_BITMAP is implemented for your control. For more information, see [Button Styles](../mfc/reference/button-styles.md). For an example of associating a bitmap with a control, see [CButton::SetBitmap](../mfc/reference/cbutton-class.md#setbitmap). Bitmaps will not appear on your control while you are in the Dialog resource editor.  
   
 ### To undo changes to the properties of a control  
   

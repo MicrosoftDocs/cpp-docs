@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Call Properties and Methods of the Windows Forms Control
-Because [CWinFormsView::GetControl](../mfc/reference/cwinformsview-class.md#cwinformsview__getcontrol) returns a pointer to <xref:System.Windows.Forms.Control?displayProperty=fullName>, and not a pointer to `WindowsControlLibrary1::UserControl1`, it is advisable to add a member of the user control type and initialize it in [IView::OnInitialUpdate](.../mfc/reference/iview-interface.md#iview__oninitialupdate). Now you can call methods and properties using `m_ViewControl`.  
+Because [CWinFormsView::GetControl](../mfc/reference/cwinformsview-class.md#getcontrol) returns a pointer to <xref:System.Windows.Forms.Control?displayProperty=fullName>, and not a pointer to `WindowsControlLibrary1::UserControl1`, it is advisable to add a member of the user control type and initialize it in [IView::OnInitialUpdate](.../mfc/reference/iview-interface.md#oninitialupdate). Now you can call methods and properties using `m_ViewControl`.  
   
  This topic assumes you have previously completed [How to: Create the User Control and Host in a Dialog Box](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md) and [How to: Create the User Control and Host MDI View](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md).  
   
