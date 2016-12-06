@@ -88,7 +88,7 @@ class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_extent::operator= Operator](#tiled_extent__operator_eq)|Copies the contents of the specified `tiled_index` object into this one.|  
+|[tiled_extent::operator= Operator](#operator_eq)|Copies the contents of the specified `tiled_index` object into this one.|  
 
   
 ### Public Constants  

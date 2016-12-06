@@ -64,7 +64,7 @@ class runtime_exception : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[runtime_exception::operator= Operator](#runtime_exception__operator_eq)|Copies the contents of the specified `runtime_exception` object into this one.|  
+|[runtime_exception::operator= Operator](#operator_eq)|Copies the contents of the specified `runtime_exception` object into this one.|  
   
 ## Inheritance Hierarchy  
  `exception`  

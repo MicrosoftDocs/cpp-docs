@@ -162,7 +162,7 @@ void createTextureWithBPC() { *// Create the source data.
 |texture\<T,2>|2048|  
   
 ### Reading from Texture Objects  
- You can read from a `texture` object by using [texture::operator\[\]](reference/texture-class.md#texture__operator_at), [texture::operator() Operator](reference/texture-class.md#texture__operator_call), or [texture::get Method](reference/texture-class.md#get). The two operators return a value, not a reference. Therefore, you cannot write to a `texture` object by using `texture::operator\[\]`.  
+ You can read from a `texture` object by using [texture::operator\[\]](reference/texture-class.md#operator_at), [texture::operator() Operator](reference/texture-class.md#operator_call), or [texture::get Method](reference/texture-class.md#get). The two operators return a value, not a reference. Therefore, you cannot write to a `texture` object by using `texture::operator\[\]`.  
   
 ```cpp  
  
@@ -448,7 +448,7 @@ parallel_for_each(w_view.extent, [=](index<2> idx) restrict(amp)
   
 ## Interoperability  
 
- The C++ AMP runtime supports interoperability between `texture<T,1>` and the [ID3D11Texture1D interface](http://go.microsoft.com/fwlink/p/LinkId=248503), between `texture<T,2>` and the [ID3D11Texture2D interface](http://go.microsoft.com/fwlink/p/LinkId=255317), and between `texture<T,3>` and the [ID3D11Texture3D interface](http://go.microsoft.com/fwlink/p/LinkId=255377). The [get_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#get_texture_function) method takes a `texture` object and returns an `IUnknown` interface. The [make_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#make_texture_function) method takes an `IUnknown` interface and an `accelerator_view` object and returns a `texture` object.  
+ The C++ AMP runtime supports interoperability between `texture<T,1>` and the [ID3D11Texture1D interface](http://go.microsoft.com/fwlink/p/LinkId=248503), between `texture<T,2>` and the [ID3D11Texture2D interface](http://go.microsoft.com/fwlink/p/LinkId=255317), and between `texture<T,3>` and the [ID3D11Texture3D interface](http://go.microsoft.com/fwlink/p/LinkId=255377). The [get_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#get_texture) method takes a `texture` object and returns an `IUnknown` interface. The [make_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#make_texture) method takes an `IUnknown` interface and an `accelerator_view` object and returns a `texture` object.  
   
 ## See Also  
  [double_2 Class](../../parallel/amp/reference/double-2-class.md)   
