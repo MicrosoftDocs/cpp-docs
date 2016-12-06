@@ -50,7 +50,7 @@ class CMultiDocTemplate : public CDocTemplate
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMultiDocTemplate::CMultiDocTemplate](#cmultidoctemplate__cmultidoctemplate)|Constructs a `CMultiDocTemplate` object.|  
+|[CMultiDocTemplate::CMultiDocTemplate](#cmultidoctemplate)|Constructs a `CMultiDocTemplate` object.|  
   
 ## Remarks  
  An MDI application uses the main frame window as a workspace in which the user can open zero or more document frame windows, each of which displays a document. For a more detailed description of the MDI, see *Windows Interface Guidelines for Software Design*.  
@@ -83,7 +83,7 @@ class CMultiDocTemplate : public CDocTemplate
 ## Requirements  
  **Header:** afxwin.h  
   
-##  <a name="cmultidoctemplate__cmultidoctemplate"></a>  CMultiDocTemplate::CMultiDocTemplate  
+##  <a name="cmultidoctemplate"></a>  CMultiDocTemplate::CMultiDocTemplate  
  Constructs a `CMultiDocTemplate` object.  
   
 ```  
@@ -98,7 +98,7 @@ CMultiDocTemplate(
  `nIDResource`  
  Specifies the ID of the resources used with the document type. This may include menu, icon, accelerator table, and string resources.  
   
- The string resource consists of up to seven substrings separated by the '\n' character (the '\n' character is needed as a place holder if a substring is not included; however, trailing '\n' characters are not necessary); these substrings describe the document type. For information on the substrings, see [CDocTemplate::GetDocString](../../mfc/reference/cdoctemplate-class.md#cdoctemplate__getdocstring). This string resource is found in the application's resource file. For example:  
+ The string resource consists of up to seven substrings separated by the '\n' character (the '\n' character is needed as a place holder if a substring is not included; however, trailing '\n' characters are not necessary); these substrings describe the document type. For information on the substrings, see [CDocTemplate::GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring). This string resource is found in the application's resource file. For example:  
   
  `// MYCALC.RC`  
   

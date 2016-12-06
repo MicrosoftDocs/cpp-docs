@@ -68,7 +68,7 @@ These classes provide an interface to traditional disk files, in-memory files, A
   
 ## Related Classes  
  [CArchive](../mfc/reference/carchive-class.md)  
- Cooperates with a `CFile` object to implement persistent storage for objects through serialization (see [CObject::Serialize](../mfc/reference/cobject-class.md#cobject__serialize)).  
+ Cooperates with a `CFile` object to implement persistent storage for objects through serialization (see [CObject::Serialize](../mfc/reference/cobject-class.md#serialize)).  
   
  [CArchiveException](../mfc/reference/carchiveexception-class.md)  
  An archive exception.  

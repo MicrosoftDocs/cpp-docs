@@ -49,30 +49,30 @@ class CMFCHeaderCtrl : public CHeaderCtrl
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCHeaderCtrl::CMFCHeaderCtrl](#cmfcheaderctrl__cmfcheaderctrl)|Constructs a `CMFCHeaderCtrl` object.|  
+|[CMFCHeaderCtrl::CMFCHeaderCtrl](#cmfcheaderctrl)|Constructs a `CMFCHeaderCtrl` object.|  
 |`CMFCHeaderCtrl::~CMFCHeaderCtrl`|Destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCHeaderCtrl::EnableMultipleSort](#cmfcheaderctrl__enablemultiplesort)|Enables or disables *multiple column sort* mode for the current header control.|  
-|[CMFCHeaderCtrl::GetColumnState](#cmfcheaderctrl__getcolumnstate)|Indicates whether a column is not sorted, or is sorted in ascending or descending order.|  
-|[CMFCHeaderCtrl::GetSortColumn](#cmfcheaderctrl__getsortcolumn)|Retrieves the zero-based index of the first sorted column in the header control.|  
+|[CMFCHeaderCtrl::EnableMultipleSort](#enablemultiplesort)|Enables or disables *multiple column sort* mode for the current header control.|  
+|[CMFCHeaderCtrl::GetColumnState](#getcolumnstate)|Indicates whether a column is not sorted, or is sorted in ascending or descending order.|  
+|[CMFCHeaderCtrl::GetSortColumn](#getsortcolumn)|Retrieves the zero-based index of the first sorted column in the header control.|  
 |`CMFCHeaderCtrl::GetThisClass`|Used by the framework to obtain a pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|  
-|[CMFCHeaderCtrl::IsAscending](#cmfcheaderctrl__isascending)|Indicates whether any column in the header control is sorted in ascending order.|  
-|[CMFCHeaderCtrl::IsDialogControl](#cmfcheaderctrl__isdialogcontrol)|Indicates whether the parent window of the current header control is a dialog box.|  
-|[CMFCHeaderCtrl::IsMultipleSort](#cmfcheaderctrl__ismultiplesort)|Indicates whether the current header control is in *multiple column sort* mode.|  
-|[CMFCHeaderCtrl::RemoveSortColumn](#cmfcheaderctrl__removesortcolumn)|Removes the specified column from the list of sort columns.|  
-|[CMFCHeaderCtrl::SetSortColumn](#cmfcheaderctrl__setsortcolumn)|Sets the sort order of a specified column in a header control.|  
+|[CMFCHeaderCtrl::IsAscending](#isascending)|Indicates whether any column in the header control is sorted in ascending order.|  
+|[CMFCHeaderCtrl::IsDialogControl](#isdialogcontrol)|Indicates whether the parent window of the current header control is a dialog box.|  
+|[CMFCHeaderCtrl::IsMultipleSort](#ismultiplesort)|Indicates whether the current header control is in *multiple column sort* mode.|  
+|[CMFCHeaderCtrl::RemoveSortColumn](#removesortcolumn)|Removes the specified column from the list of sort columns.|  
+|[CMFCHeaderCtrl::SetSortColumn](#setsortcolumn)|Sets the sort order of a specified column in a header control.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCHeaderCtrl::OnDrawItem](#cmfcheaderctrl__ondrawitem)|Called by the framework to draw a header control column.|  
-|[CMFCHeaderCtrl::OnDrawSortArrow](#cmfcheaderctrl__ondrawsortarrow)|Called by the framework to draw the sort arrow.|  
-|[CMFCHeaderCtrl::OnFillBackground](#cmfcheaderctrl__onfillbackground)|Called by the framework to fill the background of a header control column.|  
+|[CMFCHeaderCtrl::OnDrawItem](#ondrawitem)|Called by the framework to draw a header control column.|  
+|[CMFCHeaderCtrl::OnDrawSortArrow](#ondrawsortarrow)|Called by the framework to draw the sort arrow.|  
+|[CMFCHeaderCtrl::OnFillBackground](#onfillbackground)|Called by the framework to fill the background of a header control column.|  
   
 ## Example  
  The following example demonstrates how to construct an object of the `CMFCHeaderCtrl` class, and how to enable *multiple column sort* mode for the current header control.  
@@ -96,7 +96,7 @@ class CMFCHeaderCtrl : public CHeaderCtrl
 ## Requirements  
  **Header:** afxheaderctrl.h  
   
-##  <a name="cmfcheaderctrl__cmfcheaderctrl"></a>  CMFCHeaderCtrl::CMFCHeaderCtrl  
+##  <a name="cmfcheaderctrl"></a>  CMFCHeaderCtrl::CMFCHeaderCtrl  
  Constructs a `CMFCHeaderCtrl` object.  
   
 ```  
@@ -116,7 +116,7 @@ CMFCHeaderCtrl::CMFCHeaderCtrl()
 |`m_bIsDlgControl`|`FALSE`|  
 |`m_hFont`|`NULL`|  
   
-##  <a name="cmfcheaderctrl__enablemultiplesort"></a>  CMFCHeaderCtrl::EnableMultipleSort  
+##  <a name="enablemultiplesort"></a>  CMFCHeaderCtrl::EnableMultipleSort  
  Enables or disables *multiple column sort* mode for the current header control.  
   
 ```  
@@ -130,7 +130,7 @@ void EnableMultipleSort(BOOL bEnable=TRUE);
 ### Remarks  
  Use this method to enable or disable multiple column sort mode. Two or more columns can participate in a sort if the header control is in multiple column sort mode.  
   
-##  <a name="cmfcheaderctrl__getcolumnstate"></a>  CMFCHeaderCtrl::GetColumnState  
+##  <a name="getcolumnstate"></a>  CMFCHeaderCtrl::GetColumnState  
  Indicates whether a column is unsorted, or is sorted in ascending or descending order.  
   
 ```  
@@ -154,7 +154,7 @@ int GetColumnState(int iColumn) const;
   
 ### Remarks  
   
-##  <a name="cmfcheaderctrl__getsortcolumn"></a>  CMFCHeaderCtrl::GetSortColumn  
+##  <a name="getsortcolumn"></a>  CMFCHeaderCtrl::GetSortColumn  
  Retrieves the zero-based index of the first sorted column in the header control.  
   
 ```  
@@ -167,9 +167,9 @@ int GetSortColumn() const;
  The index of a sorted column, or -1 if no sorted column is found.  
   
 ### Remarks  
- If the header control is in *multiple column sort* mode and you compiled the application in debug mode, this method asserts and advises you to use the [CMFCHeaderCtrl::GetColumnState](#cmfcheaderctrl__getcolumnstate) method instead. If the header control is in multiple column sort mode and you compiled the application in retail mode, this method returns -1.  
+ If the header control is in *multiple column sort* mode and you compiled the application in debug mode, this method asserts and advises you to use the [CMFCHeaderCtrl::GetColumnState](#getcolumnstate) method instead. If the header control is in multiple column sort mode and you compiled the application in retail mode, this method returns -1.  
   
-##  <a name="cmfcheaderctrl__isascending"></a>  CMFCHeaderCtrl::IsAscending  
+##  <a name="isascending"></a>  CMFCHeaderCtrl::IsAscending  
  Indicates whether any column in the header control is sorted in ascending order.  
   
 ```  
@@ -182,9 +182,9 @@ BOOL IsAscending() const;
  `TRUE` if any column in the header control is sorted in ascending order; otherwise, `FALSE`.  
   
 ### Remarks  
- The value that this method returns is used to display the appropriate sort arrow on the header control item. Use the [CMFCHeaderCtrl::SetSortColumn](#cmfcheaderctrl__setsortcolumn) method to set the sort order.  
+ The value that this method returns is used to display the appropriate sort arrow on the header control item. Use the [CMFCHeaderCtrl::SetSortColumn](#setsortcolumn) method to set the sort order.  
   
-##  <a name="cmfcheaderctrl__isdialogcontrol"></a>  CMFCHeaderCtrl::IsDialogControl  
+##  <a name="isdialogcontrol"></a>  CMFCHeaderCtrl::IsDialogControl  
  Indicates whether the parent window of the current header control is a dialog box.  
   
 ```  
@@ -196,7 +196,7 @@ BOOL IsDialogControl() const;
 ### Return Value  
  `TRUE` if the parent window of the current header control is a dialog box; otherwise, `FALSE`.  
   
-##  <a name="cmfcheaderctrl__ismultiplesort"></a>  CMFCHeaderCtrl::IsMultipleSort  
+##  <a name="ismultiplesort"></a>  CMFCHeaderCtrl::IsMultipleSort  
  Indicates whether the current header control is in *multiple column sort* mode.  
   
 ```  
@@ -209,9 +209,9 @@ BOOL IsMultipleSort() const;
  `TRUE` if multiple column sort mode is enabled; otherwise, `FALSE`.  
   
 ### Remarks  
- Use the [CMFCHeaderCtrl::EnableMultipleSort](#cmfcheaderctrl__enablemultiplesort) method to enable or disable multiple column sort mode. Two or more columns can participate in a sort if the header control is in multiple column sort mode.  
+ Use the [CMFCHeaderCtrl::EnableMultipleSort](#enablemultiplesort) method to enable or disable multiple column sort mode. Two or more columns can participate in a sort if the header control is in multiple column sort mode.  
   
-##  <a name="cmfcheaderctrl__ondrawitem"></a>  CMFCHeaderCtrl::OnDrawItem  
+##  <a name="ondrawitem"></a>  CMFCHeaderCtrl::OnDrawItem  
  Called by the framework to draw a header control column.  
   
 ```  
@@ -239,7 +239,7 @@ virtual void OnDrawItem(
  [in] `bIsHighlighted`  
  `TRUE` to draw the item in highlighted state; otherwise, `FALSE`.  
   
-##  <a name="cmfcheaderctrl__ondrawsortarrow"></a>  CMFCHeaderCtrl::OnDrawSortArrow  
+##  <a name="ondrawsortarrow"></a>  CMFCHeaderCtrl::OnDrawSortArrow  
  Called by the framework to draw the sort arrow.  
   
 ```  
@@ -255,7 +255,7 @@ virtual void OnDrawSortArrow(
  [in] `rectArrow`  
  The bounding rectangle of the sort arrow.  
   
-##  <a name="cmfcheaderctrl__onfillbackground"></a>  CMFCHeaderCtrl::OnFillBackground  
+##  <a name="onfillbackground"></a>  CMFCHeaderCtrl::OnFillBackground  
  Called by the framework to fill the background of a header control column.  
   
 ```  
@@ -268,7 +268,7 @@ virtual void OnFillBackground(CDC* pDC);
   
 ### Remarks  
   
-##  <a name="cmfcheaderctrl__removesortcolumn"></a>  CMFCHeaderCtrl::RemoveSortColumn  
+##  <a name="removesortcolumn"></a>  CMFCHeaderCtrl::RemoveSortColumn  
  Removes the specified column from the list of sort columns.  
   
 ```  
@@ -279,7 +279,7 @@ void RemoveSortColumn(int iColumn);
  [in] `iColumn`  
  The zero-based index of the column to remove.  
   
-##  <a name="cmfcheaderctrl__setsortcolumn"></a>  CMFCHeaderCtrl::SetSortColumn  
+##  <a name="setsortcolumn"></a>  CMFCHeaderCtrl::SetSortColumn  
  Sets the sort order of a specified column in a header control.  
   
 ```  
@@ -299,7 +299,7 @@ void SetSortColumn(
  [in] `bAdd`  
  `TRUE` to set the sort order of the column that the `iColumn` parameter specifies.  
   
- If the current header control is in *multiple column sort* mode, this method adds the specified column to the list of sort columns. Use [CMFCHeaderCtrl::EnableMultipleSort](#cmfcheaderctrl__enablemultiplesort) to set multiple column sort mode.  
+ If the current header control is in *multiple column sort* mode, this method adds the specified column to the list of sort columns. Use [CMFCHeaderCtrl::EnableMultipleSort](#enablemultiplesort) to set multiple column sort mode.  
   
  If multiple column sort mode is not set and this method is compiled in debug mode, this method asserts. If multiple column sort mode is not set and this method is compiled in retail mode, this method first removes all columns from the list of sort columns, and then adds the specified column to the list.  
   

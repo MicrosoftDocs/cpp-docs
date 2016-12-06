@@ -76,7 +76,7 @@ Custom events differ from stock events in that they are not automatically fired 
   
  [!code-cpp[NVC_MFC_AxUI#7](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-events_1.h)]  
   
- This code declares an inline function called `FireClickIn` that calls [COleControl::FireEvent](../mfc/reference/colecontrol-class.md#colecontrol__fireevent) with the ClickIn event and parameters you defined using the Add Event Wizard.  
+ This code declares an inline function called `FireClickIn` that calls [COleControl::FireEvent](../mfc/reference/colecontrol-class.md#fireevent) with the ClickIn event and parameters you defined using the Add Event Wizard.  
   
  In addition, the following line is added to the event map for the control, located in the implementation (.CPP) file of your control class:  
   

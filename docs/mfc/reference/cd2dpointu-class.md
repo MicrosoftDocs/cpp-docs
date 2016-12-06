@@ -50,13 +50,13 @@ class CD2DPointU : public D2D1_POINT_2U;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CD2DPointU::CD2DPointU](#cd2dpointu__cd2dpointu)|Overloaded. Constructs a `CD2DPointU` from object `D2D1_POINT_2U` object.|  
+|[CD2DPointU::CD2DPointU](#cd2dpointu)|Overloaded. Constructs a `CD2DPointU` from object `D2D1_POINT_2U` object.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CD2DPointU::operator CPoint](#cd2dpointu__operator_cpoint)|Converts `CD2DPointU` to `CPoint` object.|  
+|[CD2DPointU::operator CPoint](#operator_cpoint)|Converts `CD2DPointU` to `CPoint` object.|  
   
 ## Inheritance Hierarchy  
  `D2D1_POINT_2U`  
@@ -66,7 +66,7 @@ class CD2DPointU : public D2D1_POINT_2U;
 ## Requirements  
  **Header:** afxrendertarget.h  
   
-##  <a name="cd2dpointu__cd2dpointu"></a>  CD2DPointU::CD2DPointU  
+##  <a name="cd2dpointu"></a>  CD2DPointU::CD2DPointU  
  Constructs a CD2DPointU object from CPoint object.  
   
 ```  
@@ -97,7 +97,7 @@ CD2DPointU(
  `uY`  
  source Y  
   
-##  <a name="cd2dpointu__operator_cpoint"></a>  CD2DPointU::operator CPoint  
+##  <a name="operator_cpoint"></a>  CD2DPointU::operator CPoint  
  Converts CD2DPointU to CPoint object.  
   
 ```  

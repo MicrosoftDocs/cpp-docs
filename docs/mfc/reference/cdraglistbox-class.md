@@ -53,18 +53,18 @@ class CDragListBox : public CListBox
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDragListBox::CDragListBox](#cdraglistbox__cdraglistbox)|Constructs a `CDragListBox` object.|  
+|[CDragListBox::CDragListBox](#cdraglistbox)|Constructs a `CDragListBox` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDragListBox::BeginDrag](#cdraglistbox__begindrag)|Called by the framework when a drag operation starts.|  
-|[CDragListBox::CancelDrag](#cdraglistbox__canceldrag)|Called by the framework when a drag operation has been canceled.|  
-|[CDragListBox::Dragging](#cdraglistbox__dragging)|Called by the framework during a drag operation.|  
-|[CDragListBox::DrawInsert](#cdraglistbox__drawinsert)|Draws the insertion guide of the drag list box.|  
-|[CDragListBox::Dropped](#cdraglistbox__dropped)|Called by the framework after the item has been dropped.|  
-|[CDragListBox::ItemFromPt](#cdraglistbox__itemfrompt)|Returns the coordinates of the item being dragged.|  
+|[CDragListBox::BeginDrag](#begindrag)|Called by the framework when a drag operation starts.|  
+|[CDragListBox::CancelDrag](#canceldrag)|Called by the framework when a drag operation has been canceled.|  
+|[CDragListBox::Dragging](#dragging)|Called by the framework during a drag operation.|  
+|[CDragListBox::DrawInsert](#drawinsert)|Draws the insertion guide of the drag list box.|  
+|[CDragListBox::Dropped](#dropped)|Called by the framework after the item has been dropped.|  
+|[CDragListBox::ItemFromPt](#itemfrompt)|Returns the coordinates of the item being dragged.|  
   
 ## Remarks  
  List boxes with this capability allow users to order the items in a list in whatever manner is most useful to them. By default, the list box will move the item to the new location in the list. However, `CDragListBox` objects can be customized to copy items instead of moving them.  
@@ -89,7 +89,7 @@ class CDragListBox : public CListBox
 ## Requirements  
  **Header:** afxcmn.h  
   
-##  <a name="cdraglistbox__begindrag"></a>  CDragListBox::BeginDrag  
+##  <a name="begindrag"></a>  CDragListBox::BeginDrag  
  Called by the framework when an event occurs that could begin a drag operation, such as pressing the left mouse button.  
   
 ```  
@@ -106,7 +106,7 @@ virtual BOOL BeginDrag(CPoint pt);
 ### Remarks  
  Override this function if you want to control what happens when a drag operation begins. The default implementation captures the mouse and stays in drag mode until the user clicks the left or right mouse button or presses ESC, at which time the drag operation is canceled.  
   
-##  <a name="cdraglistbox__canceldrag"></a>  CDragListBox::CancelDrag  
+##  <a name="canceldrag"></a>  CDragListBox::CancelDrag  
  Called by the framework when a drag operation has been canceled.  
   
 ```  
@@ -120,14 +120,14 @@ virtual void CancelDrag(CPoint pt);
 ### Remarks  
  Override this function to handle any special processing for your list box control.  
   
-##  <a name="cdraglistbox__cdraglistbox"></a>  CDragListBox::CDragListBox  
+##  <a name="cdraglistbox"></a>  CDragListBox::CDragListBox  
  Constructs a `CDragListBox` object.  
   
 ```  
 CDragListBox();
 ```  
   
-##  <a name="cdraglistbox__dragging"></a>  CDragListBox::Dragging  
+##  <a name="dragging"></a>  CDragListBox::Dragging  
  Called by the framework when a list box item is being dragged within the `CDragListBox` object.  
   
 ```  
@@ -150,7 +150,7 @@ virtual UINT Dragging(CPoint pt);
 ### Remarks  
  The default behavior returns `DL_MOVECURSOR`. Override this function if you want to provide additional functionality.  
   
-##  <a name="cdraglistbox__drawinsert"></a>  CDragListBox::DrawInsert  
+##  <a name="drawinsert"></a>  CDragListBox::DrawInsert  
  Called by the framework to draw the insertion guide before the item with the indicated index.  
   
 ```  
@@ -164,7 +164,7 @@ virtual void DrawInsert(int nItem);
 ### Remarks  
  A value of - 1 clears the insertion guide. Override this function to modify the appearance or behavior of the insertion guide.  
   
-##  <a name="cdraglistbox__dropped"></a>  CDragListBox::Dropped  
+##  <a name="dropped"></a>  CDragListBox::Dropped  
  Called by the framework when an item is dropped within a `CDragListBox` object.  
   
 ```  
@@ -183,7 +183,7 @@ virtual void Dropped(
 ### Remarks  
  The default behavior copies the list box item and its data to the new location and then deletes the original item. Override this function to customize the default behavior, such as enabling copies of list box items to be dragged to other locations within the list.  
   
-##  <a name="cdraglistbox__itemfrompt"></a>  CDragListBox::ItemFromPt  
+##  <a name="itemfrompt"></a>  CDragListBox::ItemFromPt  
  Call this function to retrieve the zero-based index of the list box item located at `pt`.  
   
 ```  

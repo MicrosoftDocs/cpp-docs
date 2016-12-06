@@ -132,7 +132,7 @@ void CppAmpMethod() {
  You must define the data values and declare the shape of the data before you can run the kernel code. All data is defined to be an array (rectangular), and you can define the array to have any rank (number of dimensions). The data can be any size in any of the dimensions.  
   
 ### index Class  
- The [index Class](../../parallel/amp/reference/index-class.md) specifies a location in the `array` or `array_view` object by encapsulating the offset from the origin in each dimension into one object. When you access a location in the array, you pass an `index` object to the indexing operator, `[]`, instead of a list of integer indexes. You can access the elements in each dimension by using the [array::operator() Operator](reference/array-class.md#array__operator_call) or the [array_view::operator() Operator](reference/array-view-class.md#array_view__operator_call).  
+ The [index Class](../../parallel/amp/reference/index-class.md) specifies a location in the `array` or `array_view` object by encapsulating the offset from the origin in each dimension into one object. When you access a location in the array, you pass an `index` object to the indexing operator, `[]`, instead of a list of integer indexes. You can access the elements in each dimension by using the [array::operator() Operator](reference/array-class.md#operator_call) or the [array_view::operator() Operator](reference/array-view-class.md#operator_call).  
   
  The following example creates a one-dimensional index that specifies the third element in a one-dimensional `array_view` object. The index is used to print the third element in the `array_view` object. The output is 3.  
   

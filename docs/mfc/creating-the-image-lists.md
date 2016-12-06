@@ -42,7 +42,7 @@ Creating image lists is the same whether you use [CListView](../mfc/reference/cl
   
  Use class `CImageList` to create one or more image lists (for full-size icons, small icons, and states). See [CImageList](../mfc/reference/cimagelist-class.md), and see [List View Image Lists](http://msdn.microsoft.com/library/windows/desktop/bb774736) in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
   
- Call [CListCtrl::SetImageList](../mfc/reference/clistctrl-class.md#clistctrl__setimagelist) for each image list; pass a pointer to the appropriate `CImageList` object.  
+ Call [CListCtrl::SetImageList](../mfc/reference/clistctrl-class.md#setimagelist) for each image list; pass a pointer to the appropriate `CImageList` object.  
   
 ## See Also  
  [Using CListCtrl](../mfc/using-clistctrl.md)   

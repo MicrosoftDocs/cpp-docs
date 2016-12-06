@@ -58,13 +58,13 @@ class CMFCCmdUsageCount : public CObject
 |||  
 |-|-|  
 |Name|Description|  
-|[CMFCCmdUsageCount::AddCmd](#cmfccmdusagecount__addcmd)|Increments by one the counter that is associated with the given command.|  
-|[CMFCCmdUsageCount::GetCount](#cmfccmdusagecount__getcount)|Retrieves the usage count that is associated with the given command ID.|  
-|[CMFCCmdUsageCount::HasEnoughInformation](#cmfccmdusagecount__hasenoughinformation)|Determines whether this object has collected the minimum amount of tracking data.|  
-|[CMFCCmdUsageCount::IsFreqeuntlyUsedCmd](#cmfccmdusagecount__isfreqeuntlyusedcmd)|Determines whether the given command is frequently used.|  
-|[CMFCCmdUsageCount::Reset](#cmfccmdusagecount__reset)|Clears the usage count of all commands.|  
-|[CMFCCmdUsageCount::Serialize](#cmfccmdusagecount__serialize)|Reads this object from an archive or writes it to an archive. (Overrides [CObject::Serialize](../../mfc/reference/cobject-class.md#cobject__serialize).)|  
-|[CMFCCmdUsageCount::SetOptions](#cmfccmdusagecount__setoptions)|Sets the values of shared `CMFCCmdUsageCount` class data members.|  
+|[CMFCCmdUsageCount::AddCmd](#addcmd)|Increments by one the counter that is associated with the given command.|  
+|[CMFCCmdUsageCount::GetCount](#getcount)|Retrieves the usage count that is associated with the given command ID.|  
+|[CMFCCmdUsageCount::HasEnoughInformation](#hasenoughinformation)|Determines whether this object has collected the minimum amount of tracking data.|  
+|[CMFCCmdUsageCount::IsFreqeuntlyUsedCmd](#isfreqeuntlyusedcmd)|Determines whether the given command is frequently used.|  
+|[CMFCCmdUsageCount::Reset](#reset)|Clears the usage count of all commands.|  
+|[CMFCCmdUsageCount::Serialize](#serialize)|Reads this object from an archive or writes it to an archive. (Overrides [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize).)|  
+|[CMFCCmdUsageCount::SetOptions](#setoptions)|Sets the values of shared `CMFCCmdUsageCount` class data members.|  
   
 ### Data Members  
   
@@ -79,7 +79,7 @@ class CMFCCmdUsageCount : public CObject
 ### Remarks  
  The `CMFCCmdUsageCount` class maps each numeric Windows message identifier to a 32-bit unsigned integer counter. `CMFCToolBar` uses this class to display frequently-used toolbar items. For more information about `CMFCToolBar`, see [CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md).  
   
- You can persist `CMFCCmdUsageCount` class data between runs of your program. Use the [CMFCCmdUsageCount::Serialize](#cmfccmdusagecount__serialize) method to serialize class member data and the [CMFCCmdUsageCount::SetOptions](#cmfccmdusagecount__setoptions) method to set shared member data.  
+ You can persist `CMFCCmdUsageCount` class data between runs of your program. Use the [CMFCCmdUsageCount::Serialize](#serialize) method to serialize class member data and the [CMFCCmdUsageCount::SetOptions](#setoptions) method to set shared member data.  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -89,7 +89,7 @@ class CMFCCmdUsageCount : public CObject
 ## Requirements  
  **Header:** afxcmdusagecount.h  
   
-##  <a name="cmfccmdusagecount__addcmd"></a>  CMFCCmdUsageCount::AddCmd  
+##  <a name="addcmd"></a>  CMFCCmdUsageCount::AddCmd  
  Increments by one the counter that is associated with the given command.  
   
 ```  
@@ -108,13 +108,13 @@ void AddCmd(UINT uiCmd);
   
  This method does nothing in the following cases:  
   
--   The toolbar framework is in customization mode (the [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#cmfctoolbar__iscustomizemode) method returns a nonzero value).  
+-   The toolbar framework is in customization mode (the [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode) method returns a nonzero value).  
   
 -   The command refers to a submenu or menu separator ( `uiCmd` equals 0 or -1).  
   
 - `uiCmd` refers to a standard command (the global `IsStandardCommand` function returns a nonzero value).  
   
-##  <a name="cmfccmdusagecount__getcount"></a>  CMFCCmdUsageCount::GetCount  
+##  <a name="getcount"></a>  CMFCCmdUsageCount::GetCount  
  Retrieves the usage count that is associated with the given command ID.  
   
 ```  
@@ -133,7 +133,7 @@ UINT GetCount(UINT uiCmd) const;
 ### Return Value  
  The usage count that is associated with the given command ID.  
   
-##  <a name="cmfccmdusagecount__hasenoughinformation"></a>  CMFCCmdUsageCount::HasEnoughInformation  
+##  <a name="hasenoughinformation"></a>  CMFCCmdUsageCount::HasEnoughInformation  
  Determines whether this object has received the minimum amount of tracking data.  
   
 ```  
@@ -146,11 +146,11 @@ BOOL HasEnoughInformation() const;
  Nonzero if this object has received the minimum amount of tracking data; otherwise 0.  
   
 ### Remarks  
- This method returns a nonzero value if the total count, `m_nTotalUsage`, of all tracked commands is equal to or larger than the initial count, `m_nStartCount`. By default, the framework sets the initial count 0. You can override this value by using the [CMFCCmdUsageCount::SetOptions](#cmfccmdusagecount__setoptions) method.  
+ This method returns a nonzero value if the total count, `m_nTotalUsage`, of all tracked commands is equal to or larger than the initial count, `m_nStartCount`. By default, the framework sets the initial count 0. You can override this value by using the [CMFCCmdUsageCount::SetOptions](#setoptions) method.  
   
- This method is used by [CMFCMenuBar::IsShowAllCommands](../../mfc/reference/cmfcmenubar-class.md#cmfcmenubar__isshowallcommands) to determine whether to show all available menu commands.  
+ This method is used by [CMFCMenuBar::IsShowAllCommands](../../mfc/reference/cmfcmenubar-class.md#isshowallcommands) to determine whether to show all available menu commands.  
   
-##  <a name="cmfccmdusagecount__isfreqeuntlyusedcmd"></a>  CMFCCmdUsageCount::IsFreqeuntlyUsedCmd  
+##  <a name="isfreqeuntlyusedcmd"></a>  CMFCCmdUsageCount::IsFreqeuntlyUsedCmd  
  Determines whether the given command is frequently used.  
   
 ```  
@@ -170,11 +170,11 @@ BOOL IsFreqeuntlyUsedCmd(UINT uiCmd) const;
  Nonzero if the command is frequently used; otherwise 0.  
   
 ### Remarks  
- This method returns 0 if the total command usage, `m_nTotalUsage`, is 0. Otherwise, this method returns nonzero if the percentage of which the specified command is used is larger than the minimum percentage, `m_nMinUsagePercentage`. By default, the framework sets the minimum percentage to 5. You can override this value by using the [CMFCCmdUsageCount::SetOptions](#cmfccmdusagecount__setoptions) method. If the minimum percentage is 0, this method returns nonzero if the specified command count is larger than 0.  
+ This method returns 0 if the total command usage, `m_nTotalUsage`, is 0. Otherwise, this method returns nonzero if the percentage of which the specified command is used is larger than the minimum percentage, `m_nMinUsagePercentage`. By default, the framework sets the minimum percentage to 5. You can override this value by using the [CMFCCmdUsageCount::SetOptions](#setoptions) method. If the minimum percentage is 0, this method returns nonzero if the specified command count is larger than 0.  
   
- [CMFCToolBar::IsCommandRarelyUsed](../../mfc/reference/cmfctoolbar-class.md#cmfctoolbar__iscommandrarelyused) uses this method to determine whether a command is rarely used.  
+ [CMFCToolBar::IsCommandRarelyUsed](../../mfc/reference/cmfctoolbar-class.md#iscommandrarelyused) uses this method to determine whether a command is rarely used.  
   
-##  <a name="cmfccmdusagecount__reset"></a>  CMFCCmdUsageCount::Reset  
+##  <a name="reset"></a>  CMFCCmdUsageCount::Reset  
  Clears the usage count of all commands.  
   
 ```  
@@ -184,7 +184,7 @@ void Reset();
 ### Remarks  
  Call this method to clear all entries from the map structure of command counts, `m_CmdUsage`, and to reset the total command usage, `m_nTotalUsage`, counter to 0.  
   
-##  <a name="cmfccmdusagecount__serialize"></a>  CMFCCmdUsageCount::Serialize  
+##  <a name="serialize"></a>  CMFCCmdUsageCount::Serialize  
  Reads this object from an archive, or writes it to an archive.  
   
 ```  
@@ -203,7 +203,7 @@ virtual void Serialize(CArchive& ar);
   
  For serialization examples, see [Serialization: Serializing an Object](../../mfc/serialization-serializing-an-object.md).  
   
-##  <a name="cmfccmdusagecount__setoptions"></a>  CMFCCmdUsageCount::SetOptions  
+##  <a name="setoptions"></a>  CMFCCmdUsageCount::SetOptions  
  Sets the values of shared `CMFCCmdUsageCount` class data members.  
   
 ```  
@@ -224,7 +224,7 @@ static BOOL __stdcall SetOptions(
  `TRUE` if the method succeeds, `FALSE` if the `nMinUsagePercentage` parameter is larger than or equal to 100.  
   
 ### Remarks  
- This method sets the shared `CMFCCmdUsageCount` class data members `m_nStartCount` and `m_nMinUsagePercentage` to `nStartCount` and `nMinUsagePercentage`, respectively. `m_nStartCount` is used by the [CMFCCmdUsageCount::HasEnoughInformation](#cmfccmdusagecount__hasenoughinformation) method to determine whether this object has collected the minimum amount of tracking data. `m_nMinUsagePercentage` is used by the [CMFCCmdUsageCount::IsFreqeuntlyUsedCmd](#cmfccmdusagecount__isfreqeuntlyusedcmd) method to determine whether a given command is frequently used.  
+ This method sets the shared `CMFCCmdUsageCount` class data members `m_nStartCount` and `m_nMinUsagePercentage` to `nStartCount` and `nMinUsagePercentage`, respectively. `m_nStartCount` is used by the [CMFCCmdUsageCount::HasEnoughInformation](#hasenoughinformation) method to determine whether this object has collected the minimum amount of tracking data. `m_nMinUsagePercentage` is used by the [CMFCCmdUsageCount::IsFreqeuntlyUsedCmd](#isfreqeuntlyusedcmd) method to determine whether a given command is frequently used.  
   
  In Debug builds this method generates an assertion failure if the `nMinUsagePercentage` parameter is larger than or equal to 100.  
   

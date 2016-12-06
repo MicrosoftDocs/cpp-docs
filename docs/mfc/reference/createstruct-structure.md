@@ -98,6 +98,6 @@ typedef struct tagCREATESTRUCT {
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CWnd::OnCreate](../../mfc/reference/cwnd-class.md#cwnd__oncreate)
+ [CWnd::OnCreate](../../mfc/reference/cwnd-class.md#oncreate)
 
 

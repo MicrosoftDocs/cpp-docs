@@ -133,7 +133,7 @@ concurrency::completion_future create_marker();
 ### Return Value  
  A future to track the completion of all commands submitted so far to this `accelerator_view` object.  
   
-## <a name="accelerator_view__flush"></a> accelerator_view::flush Method
+## <a name="flush"></a> accelerator_view::flush Method
 Submits all pending commands queued to the accelerator_view object to the accelerator for execution.  
   
 ### Syntax  

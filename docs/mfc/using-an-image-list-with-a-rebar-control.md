@@ -38,7 +38,7 @@ Each rebar band can contain, among other things, an image from an associated ima
   
 ### To display images in a rebar band  
   
-1.  Attach an image list to your rebar control object by making a call to [SetImageList](../mfc/reference/crebarctrl-class.md#crebarctrl__setimagelist), passing a pointer to an existing image list.  
+1.  Attach an image list to your rebar control object by making a call to [SetImageList](../mfc/reference/crebarctrl-class.md#setimagelist), passing a pointer to an existing image list.  
   
 2.  Modify the **REBARBANDINFO** structure to assign an image to a rebar band:  
   
@@ -48,7 +48,7 @@ Each rebar band can contain, among other things, an image from an associated ima
   
 3.  Initialize any remaining data members, such as the size, text, and handle of the contained child window, with the necessary information.  
   
-4.  Insert the new band (with the image) with a call to [CReBarCtrl::InsertBand](../mfc/reference/crebarctrl-class.md#crebarctrl__insertband), passing the **REBARBANDINFO** structure.  
+4.  Insert the new band (with the image) with a call to [CReBarCtrl::InsertBand](../mfc/reference/crebarctrl-class.md#insertband), passing the **REBARBANDINFO** structure.  
   
  The following example assumes that an existing image list object with two images was attached to the rebar control object (`m_wndReBar`). A new rebar band (defined by `rbi`), containing the first image, is added with a call to `InsertBand`:  
   

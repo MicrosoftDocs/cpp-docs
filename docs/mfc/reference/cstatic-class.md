@@ -56,27 +56,27 @@ class CStatic : public CWnd
   
 |Name|Description|  
 |----------|-----------------|  
-|[CStatic::CStatic](#cstatic__cstatic)|Constructs a `CStatic` object.|  
+|[CStatic::CStatic](#cstatic)|Constructs a `CStatic` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CStatic::Create](#cstatic__create)|Creates the Windows static control and attaches it to the `CStatic` object.|  
-|[CStatic::DrawItem](#cstatic__drawitem)|Override to draw an owner-drawn static control.|  
-|[CStatic::GetBitmap](#cstatic__getbitmap)|Retrieves the handle of the bitmap previously set with [SetBitmap](#cstatic__setbitmap).|  
-|[CStatic::GetCursor](#cstatic__getcursor)|Retrieves the handle of the cursor image previously set with [SetCursor](#cstatic__setcursor).|  
-|[CStatic::GetEnhMetaFile](#cstatic__getenhmetafile)|Retrieves the handle of the enhanced metafile previously set with [SetEnhMetaFile](#cstatic__setenhmetafile).|  
-|[CStatic::GetIcon](#cstatic__geticon)|Retrieves the handle of the icon previously set with [SetIcon](#cstatic__seticon).|  
-|[CStatic::SetBitmap](#cstatic__setbitmap)|Specifies a bitmap to be displayed in the static control.|  
-|[CStatic::SetCursor](#cstatic__setcursor)|Specifies a cursor image to be displayed in the static control.|  
-|[CStatic::SetEnhMetaFile](#cstatic__setenhmetafile)|Specifies an enhanced metafile to be displayed in the static control.|  
-|[CStatic::SetIcon](#cstatic__seticon)|Specifies an icon to be displayed in the static control.|  
+|[CStatic::Create](#create)|Creates the Windows static control and attaches it to the `CStatic` object.|  
+|[CStatic::DrawItem](#drawitem)|Override to draw an owner-drawn static control.|  
+|[CStatic::GetBitmap](#getbitmap)|Retrieves the handle of the bitmap previously set with [SetBitmap](#setbitmap).|  
+|[CStatic::GetCursor](#getcursor)|Retrieves the handle of the cursor image previously set with [SetCursor](#setcursor).|  
+|[CStatic::GetEnhMetaFile](#getenhmetafile)|Retrieves the handle of the enhanced metafile previously set with [SetEnhMetaFile](#setenhmetafile).|  
+|[CStatic::GetIcon](#geticon)|Retrieves the handle of the icon previously set with [SetIcon](#seticon).|  
+|[CStatic::SetBitmap](#setbitmap)|Specifies a bitmap to be displayed in the static control.|  
+|[CStatic::SetCursor](#setcursor)|Specifies a cursor image to be displayed in the static control.|  
+|[CStatic::SetEnhMetaFile](#setenhmetafile)|Specifies an enhanced metafile to be displayed in the static control.|  
+|[CStatic::SetIcon](#seticon)|Specifies an icon to be displayed in the static control.|  
   
 ## Remarks  
  A static control displays a text string, box, rectangle, icon, cursor, bitmap, or enhanced metafile. It can be used to label, box, or separate other controls. A static control normally takes no input and provides no output; however, it can notify its parent of mouse clicks if it's created with **SS_NOTIFY** style.  
   
- Create a static control in two steps. First, call the constructor to construct the `CStatic` object, then call the [Create](#cstatic__create) member function to create the static control and attach it to the `CStatic` object.  
+ Create a static control in two steps. First, call the constructor to construct the `CStatic` object, then call the [Create](#create) member function to create the static control and attach it to the `CStatic` object.  
   
  If you create a `CStatic` object within a dialog box (through a dialog resource), the `CStatic` object is automatically destroyed when the user closes the dialog box.  
   
@@ -94,7 +94,7 @@ class CStatic : public CWnd
 ## Requirements  
  **Header:** afxwin.h  
   
-##  <a name="cstatic__create"></a>  CStatic::Create  
+##  <a name="create"></a>  CStatic::Create  
  Creates the Windows static control and attaches it to the `CStatic` object.  
   
 ```  
@@ -151,7 +151,7 @@ virtual BOOL Create(
 ### Example  
  [!code-cpp[NVC_MFC_CStatic#1](../../mfc/reference/codesnippet/cpp/cstatic-class_1.cpp)]  
   
-##  <a name="cstatic__cstatic"></a>  CStatic::CStatic  
+##  <a name="cstatic"></a>  CStatic::CStatic  
  Constructs a `CStatic` object.  
   
 ```  
@@ -161,7 +161,7 @@ CStatic();
 ### Example  
  [!code-cpp[NVC_MFC_CStatic#2](../../mfc/reference/codesnippet/cpp/cstatic-class_2.cpp)]  
   
-##  <a name="cstatic__drawitem"></a>  CStatic::DrawItem  
+##  <a name="drawitem"></a>  CStatic::DrawItem  
  Called by the framework to draw an owner-drawn static control.  
   
 ```  
@@ -175,8 +175,8 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### Remarks  
  Override this function to implement drawing for an owner-drawn **CStatic** object (the control has the style **SS_OWNERDRAW**).  
   
-##  <a name="cstatic__getbitmap"></a>  CStatic::GetBitmap  
- Gets the handle of the bitmap, previously set with [SetBitmap](#cstatic__setbitmap), that is associated with `CStatic`.  
+##  <a name="getbitmap"></a>  CStatic::GetBitmap  
+ Gets the handle of the bitmap, previously set with [SetBitmap](#setbitmap), that is associated with `CStatic`.  
   
 ```  
 HBITMAP GetBitmap() const;
@@ -190,8 +190,8 @@ HBITMAP GetBitmap() const;
 ### Example  
  [!code-cpp[NVC_MFC_CStatic#3](../../mfc/reference/codesnippet/cpp/cstatic-class_3.cpp)]  
   
-##  <a name="cstatic__getcursor"></a>  CStatic::GetCursor  
- Gets the handle of the cursor, previously set with [SetCursor](#cstatic__setcursor), that is associated with `CStatic`.  
+##  <a name="getcursor"></a>  CStatic::GetCursor  
+ Gets the handle of the cursor, previously set with [SetCursor](#setcursor), that is associated with `CStatic`.  
   
 ```  
 HCURSOR GetCursor();
@@ -203,8 +203,8 @@ HCURSOR GetCursor();
 ### Example  
  [!code-cpp[NVC_MFC_CStatic#4](../../mfc/reference/codesnippet/cpp/cstatic-class_4.cpp)]  
   
-##  <a name="cstatic__getenhmetafile"></a>  CStatic::GetEnhMetaFile  
- Gets the handle of the enhanced metafile, previously set with [SetEnhMetafile](#cstatic__setenhmetafile), that is associated with `CStatic`.  
+##  <a name="getenhmetafile"></a>  CStatic::GetEnhMetaFile  
+ Gets the handle of the enhanced metafile, previously set with [SetEnhMetafile](#setenhmetafile), that is associated with `CStatic`.  
   
 ```  
 HENHMETAFILE GetEnhMetaFile() const;
@@ -218,8 +218,8 @@ HENHMETAFILE GetEnhMetaFile() const;
 ### Example  
  [!code-cpp[NVC_MFC_CStatic#5](../../mfc/reference/codesnippet/cpp/cstatic-class_5.cpp)]  
   
-##  <a name="cstatic__geticon"></a>  CStatic::GetIcon  
- Gets the handle of the icon, previously set with [SetIcon](#cstatic__seticon), that is associated with `CStatic`.  
+##  <a name="geticon"></a>  CStatic::GetIcon  
+ Gets the handle of the icon, previously set with [SetIcon](#seticon), that is associated with `CStatic`.  
   
 ```  
 HICON GetIcon() const;
@@ -233,7 +233,7 @@ HICON GetIcon() const;
 ### Example  
  [!code-cpp[NVC_MFC_CStatic#6](../../mfc/reference/codesnippet/cpp/cstatic-class_6.cpp)]  
   
-##  <a name="cstatic__setbitmap"></a>  CStatic::SetBitmap  
+##  <a name="setbitmap"></a>  CStatic::SetBitmap  
  Associates a new bitmap with the static control.  
   
 ```  
@@ -271,7 +271,7 @@ MyStaticControl.SetBitmap(HBITMAP(MyBitmap));
 ### Example  
  [!code-cpp[NVC_MFC_CStatic#3](../../mfc/reference/codesnippet/cpp/cstatic-class_3.cpp)]  
   
-##  <a name="cstatic__setcursor"></a>  CStatic::SetCursor  
+##  <a name="setcursor"></a>  CStatic::SetCursor  
  Associates a new cursor image with the static control.  
   
 ```  
@@ -297,7 +297,7 @@ HCURSOR SetCursor(HCURSOR hCursor);
 ### Example  
  [!code-cpp[NVC_MFC_CStatic#4](../../mfc/reference/codesnippet/cpp/cstatic-class_4.cpp)]  
   
-##  <a name="cstatic__setenhmetafile"></a>  CStatic::SetEnhMetaFile  
+##  <a name="setenhmetafile"></a>  CStatic::SetEnhMetaFile  
  Associates a new enhanced metafile image with the static control.  
   
 ```  
@@ -321,7 +321,7 @@ HENHMETAFILE SetEnhMetaFile(HENHMETAFILE hMetaFile);
 ### Example  
  [!code-cpp[NVC_MFC_CStatic#5](../../mfc/reference/codesnippet/cpp/cstatic-class_5.cpp)]  
   
-##  <a name="cstatic__seticon"></a>  CStatic::SetIcon  
+##  <a name="seticon"></a>  CStatic::SetIcon  
  Associates a new icon image with the static control.  
   
 ```  

@@ -68,14 +68,14 @@ struct CODBCFieldInfo
  Whether the field accepts a Null value. This can be one of two values: **SQL_NULLABLE** if the field accepts Null values, or **SQL_NO_NULLS** if the field does not accept Null values.  
   
 ## Remarks  
- To retrieve this information, call [CRecordset::GetODBCFieldInfo](../../mfc/reference/crecordset-class.md#crecordset__getodbcfieldinfo).  
+ To retrieve this information, call [CRecordset::GetODBCFieldInfo](../../mfc/reference/crecordset-class.md#getodbcfieldinfo).  
   
 ## Requirements  
  **Header:** afxdb.h  
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CRecordset::GetODBCFieldInfo](../../mfc/reference/crecordset-class.md#crecordset__getodbcfieldinfo)   
- [CRecordset::GetFieldValue](../../mfc/reference/crecordset-class.md#crecordset__getfieldvalue)
+ [CRecordset::GetODBCFieldInfo](../../mfc/reference/crecordset-class.md#getodbcfieldinfo)   
+ [CRecordset::GetFieldValue](../../mfc/reference/crecordset-class.md#getfieldvalue)
 
 

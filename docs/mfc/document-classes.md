@@ -61,7 +61,7 @@ Document class objects, created by document-template objects, manage the applica
  Document class objects can be persistent — in other words, they can write their state to a storage medium and read it back. MFC provides the `CArchive` class to facilitate transferring the document's data to a storage medium.  
   
  [CArchive](../mfc/reference/carchive-class.md)  
- Cooperates with a [CFile](../mfc/reference/cfile-class.md) object to implement persistent storage for objects through serialization (see [CObject::Serialize](../mfc/reference/cobject-class.md#cobject__serialize)).  
+ Cooperates with a [CFile](../mfc/reference/cfile-class.md) object to implement persistent storage for objects through serialization (see [CObject::Serialize](../mfc/reference/cobject-class.md#serialize)).  
   
  Documents can also contain OLE objects. `CDocItem` is the base class of the server and client items.  
   

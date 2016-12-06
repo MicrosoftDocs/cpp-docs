@@ -55,21 +55,21 @@ class CSmartDockingInfo : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSmartDockingInfo::CopyTo](#csmartdockinginfo__copyto)|Copies the current smart docking info parameters into the provided [CSmartDockingInfo](../../mfc/reference/csmartdockinginfo-class.md) object.|  
+|[CSmartDockingInfo::CopyTo](#copyto)|Copies the current smart docking info parameters into the provided [CSmartDockingInfo](../../mfc/reference/csmartdockinginfo-class.md) object.|  
   
 ### Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSmartDockingInfo::m_bUseThemeColorInShading](#csmartdockinginfo__m_busethemecolorinshading)|Specifies whether to use the current theme color when the framework displays smart docking markers.|  
-|[CSmartDockingInfo::m_clrBaseBackground](#csmartdockinginfo__m_clrbasebackground)|Specifies the base background color of smart docking markers.|  
-|[CSmartDockingInfo::m_clrToneDest](#csmartdockinginfo__m_clrtonedest)|Specifies the color that replaces `m_clrToneSrc` in smart docking marker bitmaps.|  
-|[CSmartDockingInfo::m_clrToneSrc](#csmartdockinginfo__m_clrtonesrc)|Specifies the color of smart docking marker bitmaps.|  
-|[CSmartDockingInfo::m_clrTransparent](#csmartdockinginfo__m_clrtransparent)|Specifies the color of smart docking marker bitmaps when they are transparent.|  
-|[CSmartDockingInfo::m_nCentralGroupOffset](#csmartdockinginfo__m_ncentralgroupoffset)|Specifies the offset of the central group of smart docking markers from the boundaries of the central group rectangle.|  
-|[CSmartDockingInfo::m_sizeTotal](#csmartdockinginfo__m_sizetotal)|Specifies the total size of all smart docking markers in a group.|  
-|[CSmartDockingInfo::m_uiMarkerBmpResID](#csmartdockinginfo__m_uimarkerbmpresid)|Defines the resource IDs of the bitmaps that the framework uses for smart docking markers that are not highlighted.|  
-|[CSmartDockingInfo::m_uiMarkerLightBmpResID](#csmartdockinginfo__m_uimarkerlightbmpresid)|Defines the resource IDs of the bitmaps that the framework uses for smart docking markers that are highlighted.|  
+|[CSmartDockingInfo::m_bUseThemeColorInShading](#m_busethemecolorinshading)|Specifies whether to use the current theme color when the framework displays smart docking markers.|  
+|[CSmartDockingInfo::m_clrBaseBackground](#m_clrbasebackground)|Specifies the base background color of smart docking markers.|  
+|[CSmartDockingInfo::m_clrToneDest](#m_clrtonedest)|Specifies the color that replaces `m_clrToneSrc` in smart docking marker bitmaps.|  
+|[CSmartDockingInfo::m_clrToneSrc](#m_clrtonesrc)|Specifies the color of smart docking marker bitmaps.|  
+|[CSmartDockingInfo::m_clrTransparent](#m_clrtransparent)|Specifies the color of smart docking marker bitmaps when they are transparent.|  
+|[CSmartDockingInfo::m_nCentralGroupOffset](#m_ncentralgroupoffset)|Specifies the offset of the central group of smart docking markers from the boundaries of the central group rectangle.|  
+|[CSmartDockingInfo::m_sizeTotal](#m_sizetotal)|Specifies the total size of all smart docking markers in a group.|  
+|[CSmartDockingInfo::m_uiMarkerBmpResID](#m_uimarkerbmpresid)|Defines the resource IDs of the bitmaps that the framework uses for smart docking markers that are not highlighted.|  
+|[CSmartDockingInfo::m_uiMarkerLightBmpResID](#m_uimarkerlightbmpresid)|Defines the resource IDs of the bitmaps that the framework uses for smart docking markers that are highlighted.|  
   
 ## Remarks  
  The framework handles smart docking markers internally. The following illustration shows the standard smart docking markers:  
@@ -102,7 +102,7 @@ class CSmartDockingInfo : public CObject
 ## Requirements  
  **Header:** afxDockingManager.h  
   
-##  <a name="csmartdockinginfo__copyto"></a>  CSmartDockingInfo::CopyTo  
+##  <a name="copyto"></a>  CSmartDockingInfo::CopyTo  
  Copies the current smart docking parameters into the provided [CSmartDockingInfo](../../mfc/reference/csmartdockinginfo-class.md) object.  
   
 ```  
@@ -113,7 +113,7 @@ void CopyTo(CSmartDockingInfo& params);
  [out] `params`  
  An object of type `CSmartDockingInfo` that is populated with the current smart docking parameters.  
   
-##  <a name="csmartdockinginfo__m_busethemecolorinshading"></a>  CSmartDockingInfo::m_bUseThemeColorInShading  
+##  <a name="m_busethemecolorinshading"></a>  CSmartDockingInfo::m_bUseThemeColorInShading  
  Specifies whether to use the current theme color when the framework displays smart docking markers.  
   
 ```  
@@ -125,14 +125,14 @@ BOOL m_bUseThemeColorInShading;
   
  The default value is `FALSE`.  
   
-##  <a name="csmartdockinginfo__m_clrbasebackground"></a>  CSmartDockingInfo::m_clrBaseBackground  
+##  <a name="m_clrbasebackground"></a>  CSmartDockingInfo::m_clrBaseBackground  
  Specifies the base background color of smart docking markers.  
   
 ```  
 COLORREF m_clrBaseBackground;  
 ```  
   
-##  <a name="csmartdockinginfo__m_clrtonedest"></a>  CSmartDockingInfo::m_clrToneDest  
+##  <a name="m_clrtonedest"></a>  CSmartDockingInfo::m_clrToneDest  
  Specifies the color that will replace `m_clrToneSrc` in smart docking marker bitmaps.  
   
 ```  
@@ -140,11 +140,11 @@ COLORREF m_clrToneDest;
 ```  
   
 ### Remarks  
- Set this value to change the color of marker bitmaps programmatically. For example, if you want to change the color of the standard markers provided with the framework, set this value to the desired color. By default, [CSmartDockingInfo::m_clrToneSrc](#csmartdockinginfo__m_clrtonesrc) is set to RGB (61, 123, 241) (a bluish color).  
+ Set this value to change the color of marker bitmaps programmatically. For example, if you want to change the color of the standard markers provided with the framework, set this value to the desired color. By default, [CSmartDockingInfo::m_clrToneSrc](#m_clrtonesrc) is set to RGB (61, 123, 241) (a bluish color).  
   
  To change the color of custom markers, you must specify both `m_clrToneDest` and `m_clrToneSrc`.  
   
-##  <a name="csmartdockinginfo__m_clrtonesrc"></a>  CSmartDockingInfo::m_clrToneSrc  
+##  <a name="m_clrtonesrc"></a>  CSmartDockingInfo::m_clrToneSrc  
  Specifies the color of smart docking marker bitmaps.  
   
 ```  
@@ -156,7 +156,7 @@ COLORREF m_clrToneSrc;
   
  Use `(COLORREF)-1` to leave a member of the smart docking group empty.  
   
-##  <a name="csmartdockinginfo__m_clrtransparent"></a>  CSmartDockingInfo::m_clrTransparent  
+##  <a name="m_clrtransparent"></a>  CSmartDockingInfo::m_clrTransparent  
  Specifies the color of smart docking marker bitmaps when they are transparent.  
   
 ```  
@@ -166,7 +166,7 @@ COLORREF m_clrTransparent;
 ### Remarks  
  You must set this value when you display custom markers and custom bitmaps in the docking group.  
   
-##  <a name="csmartdockinginfo__m_ncentralgroupoffset"></a>  CSmartDockingInfo::m_nCentralGroupOffset  
+##  <a name="m_ncentralgroupoffset"></a>  CSmartDockingInfo::m_nCentralGroupOffset  
  Specifies the offset between the central group of smart docking markers and the boundaries of the central group rectangle.  
   
 ```  
@@ -176,7 +176,7 @@ int m_nCentralGroupOffset;
 ### Remarks  
  Specify this value if you want to change the default offset between custom markers and the bounds of the central group of smart docking markers. The default offset is 5 pixels.  
   
-##  <a name="csmartdockinginfo__m_sizetotal"></a>  CSmartDockingInfo::m_sizeTotal  
+##  <a name="m_sizetotal"></a>  CSmartDockingInfo::m_sizeTotal  
  Specifies the total size of a bounding rectangle that encloses all smart docking markers in the central group.  
   
 ```  
@@ -186,7 +186,7 @@ CSize m_sizeTotal;
 ### Remarks  
  Set `m_sizeTotal` to the size of the bounding rectangle of the central group marker. You are required to specify this value if you are using custom bitmaps for markers.  
   
-##  <a name="csmartdockinginfo__m_uimarkerbmpresid"></a>  CSmartDockingInfo::m_uiMarkerBmpResID  
+##  <a name="m_uimarkerbmpresid"></a>  CSmartDockingInfo::m_uiMarkerBmpResID  
  Defines the resource IDs of the bitmaps that are used for non-highlighted custom smart docking markers.  
   
 ```  
@@ -206,7 +206,7 @@ UINT m_uiMarkerBmpResID[AFX_SD_MARKERS_NUM];
   
  `params.m_uiMarkerBmpResID[4] = IDB_MARKER_CENTER;`  
   
-##  <a name="csmartdockinginfo__m_uimarkerlightbmpresid"></a>  CSmartDockingInfo::m_uiMarkerLightBmpResID  
+##  <a name="m_uimarkerlightbmpresid"></a>  CSmartDockingInfo::m_uiMarkerLightBmpResID  
  Defines the resource IDs of the bitmaps that are used for highlighted custom smart docking markers.  
   
 ```  

@@ -45,13 +45,13 @@ This note describes the MFC Support for custom and self-drawing controls. It als
   
  MFC directly supports owner-draw with the following functions:  
   
-- [CWnd::OnDrawItem](../mfc/reference/cwnd-class.md#cwnd__ondrawitem)  
+- [CWnd::OnDrawItem](../mfc/reference/cwnd-class.md#ondrawitem)  
   
-- [CWnd::OnMeasureItem](../mfc/reference/cwnd-class.md#cwnd__onmeasureitem)  
+- [CWnd::OnMeasureItem](../mfc/reference/cwnd-class.md#onmeasureitem)  
   
-- [CWnd::OnCompareItem](../mfc/reference/cwnd-class.md#cwnd__oncompareitem)  
+- [CWnd::OnCompareItem](../mfc/reference/cwnd-class.md#oncompareitem)  
   
-- [CWnd::OnDeleteItem](../mfc/reference/cwnd-class.md#cwnd__ondeleteitem)  
+- [CWnd::OnDeleteItem](../mfc/reference/cwnd-class.md#ondeleteitem)  
   
  You can override these functions in your `CWnd` derived class to implement custom draw behavior.  
   
@@ -111,7 +111,7 @@ This note describes the MFC Support for custom and self-drawing controls. It als
 ## Using self-draw controls and menus  
  For self-draw menus, you must override both the `OnMeasureItem` and `OnDrawItem` methods.  
   
- For self-draw list boxes and combo boxes, you must override `OnMeasureItem` and `OnDrawItem`. You must specify the `LBS_OWNERDRAWVARIABLE` style for list boxes or `CBS_OWNERDRAWVARIABLE` style for combo boxes in the dialog template. The `OWNERDRAWFIXED` style will not work with self-draw items because the fixed item height is determined before self-draw controls are attached to the list box. (You can use the methods [CListBox::SetItemHeight](../mfc/reference/clistbox-class.md#clistbox__setitemheight) and [CComboBox::SetItemHeight](../mfc/reference/ccombobox-class.md#ccombobox__setitemheight) to overcome this limitation.)  
+ For self-draw list boxes and combo boxes, you must override `OnMeasureItem` and `OnDrawItem`. You must specify the `LBS_OWNERDRAWVARIABLE` style for list boxes or `CBS_OWNERDRAWVARIABLE` style for combo boxes in the dialog template. The `OWNERDRAWFIXED` style will not work with self-draw items because the fixed item height is determined before self-draw controls are attached to the list box. (You can use the methods [CListBox::SetItemHeight](../mfc/reference/clistbox-class.md#setitemheight) and [CComboBox::SetItemHeight](../mfc/reference/ccombobox-class.md#setitemheight) to overcome this limitation.)  
   
  Switching to an `OWNERDRAWVARIABLE` style will force the system to apply the `NOINTEGRALHEIGHT` style to the control. Because the control cannot calculate an integral height with variable sized items, the default style of `INTEGRALHEIGHT` is ignored and the control is always `NOINTEGRALHEIGHT`. If your items are fixed height, you can prevent partial items from being drawn by specifying the control size to be an integer multiplier of the item size.  
   
@@ -135,13 +135,13 @@ This note describes the MFC Support for custom and self-drawing controls. It als
   
  There are three common ways these are related:  
   
-- `CWnd` creates the `HWND`. You can modify the behavior in a derived class by creating a class derived from `CWnd`. The `HWND` is created when your application calls [CWnd::Create](../mfc/reference/cwnd-class.md#cwnd__create).  
+- `CWnd` creates the `HWND`. You can modify the behavior in a derived class by creating a class derived from `CWnd`. The `HWND` is created when your application calls [CWnd::Create](../mfc/reference/cwnd-class.md#create).  
   
--   The application attaches a `CWnd` to an existing `HWND`. The behavior of the existing window is not modified. This is a case of delegation and is made possible by calling [CWnd::Attach](../mfc/reference/cwnd-class.md#cwnd__attach) to alias an existing `HWND` to a `CWnd` object.  
+-   The application attaches a `CWnd` to an existing `HWND`. The behavior of the existing window is not modified. This is a case of delegation and is made possible by calling [CWnd::Attach](../mfc/reference/cwnd-class.md#attach) to alias an existing `HWND` to a `CWnd` object.  
   
 - `CWnd` is attached to an existing `HWND` and you can modify the behavior in a derived class. This is called dynamic subclassing because we are changing the behavior, and therefore the class, of a Windows object at run time.  
   
- You can achieve dynamic subclassing by using the methods [CWnd::SubclassWindow](../mfc/reference/cwnd-class.md#cwnd__subclasswindow) and[CWnd::SubclassDlgItem](../mfc/reference/cwnd-class.md#cwnd__subclassdlgitem).  
+ You can achieve dynamic subclassing by using the methods [CWnd::SubclassWindow](../mfc/reference/cwnd-class.md#subclasswindow) and[CWnd::SubclassDlgItem](../mfc/reference/cwnd-class.md#subclassdlgitem).  
   
  Both routines attach a `CWnd` object to an existing `HWND`. `SubclassWindow` takes the `HWND` directly. `SubclassDlgItem` is a helper function that takes a control ID and the parent window. `SubclassDlgItem` is designed for attaching C++ objects to dialog controls created from a dialog template.  
   

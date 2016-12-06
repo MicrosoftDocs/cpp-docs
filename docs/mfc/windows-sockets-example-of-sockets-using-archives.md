@@ -75,9 +75,9 @@ This article presents an example of using class [CSocket](../mfc/reference/csock
   
 ## See Also  
  [Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)   
- [CArchive::IsStoring](../mfc/reference/carchive-class.md#carchive__isstoring)   
- [CArchive::operator <<](../mfc/reference/carchive-class.md#carchive__operator_lt_lt)   
- [CArchive::operator >>](../mfc/reference/carchive-class.md#carchive__operator_lt_lt)   
- [CArchive::Flush](../mfc/reference/carchive-class.md#carchive__flush)   
- [CObject::Serialize](../mfc/reference/cobject-class.md#cobject__serialize)
+ [CArchive::IsStoring](../mfc/reference/carchive-class.md#isstoring)   
+ [CArchive::operator <<](../mfc/reference/carchive-class.md#operator_lt_lt)   
+ [CArchive::operator >>](../mfc/reference/carchive-class.md#operator_lt_lt)   
+ [CArchive::Flush](../mfc/reference/carchive-class.md#flush)   
+ [CObject::Serialize](../mfc/reference/cobject-class.md#serialize)
 

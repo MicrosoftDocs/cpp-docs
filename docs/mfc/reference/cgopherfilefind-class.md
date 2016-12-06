@@ -53,21 +53,21 @@ class CGopherFileFind : public CFileFind
   
 |Name|Description|  
 |----------|-----------------|  
-|[CGopherFileFind::CGopherFileFind](#cgopherfilefind__cgopherfilefind)|Constructs a `CGopherFileFind` object.|  
+|[CGopherFileFind::CGopherFileFind](#cgopherfilefind)|Constructs a `CGopherFileFind` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CGopherFileFind::FindFile](#cgopherfilefind__findfile)|Finds a file on a gopher server.|  
-|[CGopherFileFind::FindNextFile](#cgopherfilefind__findnextfile)|Continues a file search from a previous call to [FindFile](#cgopherfilefind__findfile).|  
-|[CGopherFileFind::GetCreationTime](#cgopherfilefind__getcreationtime)|Gets the time the specified file was created.|  
-|[CGopherFileFind::GetLastAccessTime](#cgopherfilefind__getlastaccesstime)|Gets the time the specified file was last accessed.|  
-|[CGopherFileFind::GetLastWriteTime](#cgopherfilefind__getlastwritetime)|Gets the time the specified file was last written to.|  
-|[CGopherFileFind::GetLength](#cgopherfilefind__getlength)|Gets the length of the found file, in bytes.|  
-|[CGopherFileFind::GetLocator](#cgopherfilefind__getlocator)|Get a `CGopherLocator` object.|  
-|[CGopherFileFind::GetScreenName](#cgopherfilefind__getscreenname)|Gets the name of a gopher screen.|  
-|[CGopherFileFind::IsDots](#cgopherfilefind__isdots)|Tests for the current directory and parent directory markers while iterating through files.|  
+|[CGopherFileFind::FindFile](#findfile)|Finds a file on a gopher server.|  
+|[CGopherFileFind::FindNextFile](#findnextfile)|Continues a file search from a previous call to [FindFile](#findfile).|  
+|[CGopherFileFind::GetCreationTime](#getcreationtime)|Gets the time the specified file was created.|  
+|[CGopherFileFind::GetLastAccessTime](#getlastaccesstime)|Gets the time the specified file was last accessed.|  
+|[CGopherFileFind::GetLastWriteTime](#getlastwritetime)|Gets the time the specified file was last written to.|  
+|[CGopherFileFind::GetLength](#getlength)|Gets the length of the found file, in bytes.|  
+|[CGopherFileFind::GetLocator](#getlocator)|Get a `CGopherLocator` object.|  
+|[CGopherFileFind::GetScreenName](#getscreenname)|Gets the name of a gopher screen.|  
+|[CGopherFileFind::IsDots](#isdots)|Tests for the current directory and parent directory markers while iterating through files.|  
   
 ## Remarks  
  `CGopherFileFind` includes member functions that begin a search, locate a file, and return a file's URL.  
@@ -77,17 +77,17 @@ class CGopherFileFind : public CFileFind
 > [!NOTE]
 > `CGopherFileFind` does not support the following member functions of its base class [CFileFind](../../mfc/reference/cfilefind-class.md):  
   
-- [GetRoot](../../mfc/reference/cfilefind-class.md#cfilefind__getroot)  
+- [GetRoot](../../mfc/reference/cfilefind-class.md#getroot)  
   
-- [GetFileName](../../mfc/reference/cfilefind-class.md#cfilefind__getfilename)  
+- [GetFileName](../../mfc/reference/cfilefind-class.md#getfilename)  
   
-- [GetFilePath](../../mfc/reference/cfilefind-class.md#cfilefind__getfilepath)  
+- [GetFilePath](../../mfc/reference/cfilefind-class.md#getfilepath)  
   
-- [GetFileTitle](../../mfc/reference/cfilefind-class.md#cfilefind__getfiletitle)  
+- [GetFileTitle](../../mfc/reference/cfilefind-class.md#getfiletitle)  
   
-- [GetFileURL](../../mfc/reference/cfilefind-class.md#cfilefind__getfileurl)  
+- [GetFileURL](../../mfc/reference/cfilefind-class.md#getfileurl)  
   
- In addition, when used with `CGopherFileFind`, the `CFileFind` member function [IsDots](../../mfc/reference/cfilefind-class.md#cfilefind__isdots) is always **FALSE**.  
+ In addition, when used with `CGopherFileFind`, the `CFileFind` member function [IsDots](../../mfc/reference/cfilefind-class.md#isdots) is always **FALSE**.  
   
  For more information about how to use `CGopherFileFind` and the other WinInet classes, see the article [Internet Programming with WinInet](../../mfc/win32-internet-extensions-wininet.md).  
   
@@ -101,7 +101,7 @@ class CGopherFileFind : public CFileFind
 ## Requirements  
  **Header:** afxinet.h  
   
-##  <a name="cgopherfilefind__cgopherfilefind"></a>  CGopherFileFind::CGopherFileFind  
+##  <a name="cgopherfilefind"></a>  CGopherFileFind::CGopherFileFind  
  This member function is called to construct a `CGopherFileFind` object.  
   
 ```  
@@ -118,9 +118,9 @@ explicit CGopherFileFind(
  The context identifier for the operation. See **Remarks** for more information about `dwContext`.  
   
 ### Remarks  
- The default value for `dwContext` is sent by MFC to the `CGopherFileFind` object from the [CInternetSession](../../mfc/reference/cinternetsession-class.md) object that created the `CGopherFileFind` object. When you construct a `CGopherFileFind` object, you can override the default to set the context identifier to a value of your choosing. The context identifier is returned to [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#cinternetsession__onstatuscallback) to provide status on the object with which it is identified. See the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.  
+ The default value for `dwContext` is sent by MFC to the `CGopherFileFind` object from the [CInternetSession](../../mfc/reference/cinternetsession-class.md) object that created the `CGopherFileFind` object. When you construct a `CGopherFileFind` object, you can override the default to set the context identifier to a value of your choosing. The context identifier is returned to [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) to provide status on the object with which it is identified. See the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.  
   
-##  <a name="cgopherfilefind__findfile"></a>  CGopherFileFind::FindFile  
+##  <a name="findfile"></a>  CGopherFileFind::FindFile  
  Call this member function to find a gopher file.  
   
 ```  
@@ -157,10 +157,10 @@ virtual BOOL FindFile(
  Nonzero if successful; otherwise 0. To get extended error information, call the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### Remarks  
- After calling **FindFile** to retrieve the first gopher object, you can call [FindNextFile](#cgopherfilefind__findnextfile) to retrieve subsequent gopher files.  
+ After calling **FindFile** to retrieve the first gopher object, you can call [FindNextFile](#findnextfile) to retrieve subsequent gopher files.  
   
-##  <a name="cgopherfilefind__findnextfile"></a>  CGopherFileFind::FindNextFile  
- Call this member function to continue a file search begun with a call to [CGopherFileFind::FindFile](#cgopherfilefind__findfile).  
+##  <a name="findnextfile"></a>  CGopherFileFind::FindNextFile  
+ Call this member function to continue a file search begun with a call to [CGopherFileFind::FindFile](#findfile).  
   
 ```  
 virtual BOOL FindNextFile();
@@ -169,7 +169,7 @@ virtual BOOL FindNextFile();
 ### Return Value  
  Nonzero if there are more files; zero if the file found is the last one in the directory or if an error occurred. To get extended error information, call the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360). If the file found is the last file in the directory, or if no matching files can be found, the `GetLastError` function returns ERROR_NO_MORE_FILES.  
   
-##  <a name="cgopherfilefind__getcreationtime"></a>  CGopherFileFind::GetCreationTime  
+##  <a name="getcreationtime"></a>  CGopherFileFind::GetCreationTime  
  Gets the creation time for the current file.  
   
 ```  
@@ -190,15 +190,15 @@ virtual BOOL GetCreationTime(CTime& refTime) const;
  A reference to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object.  
   
 ### Return Value  
- Nonzero if successful; 0 if unsuccessful. `GetCreationTime` returns 0 only if [FindNextFile](#cgopherfilefind__findnextfile) has never been called on this `CGopherFileFind` object.  
+ Nonzero if successful; 0 if unsuccessful. `GetCreationTime` returns 0 only if [FindNextFile](#findnextfile) has never been called on this `CGopherFileFind` object.  
   
 ### Remarks  
- You must call [FindNextFile](#cgopherfilefind__findnextfile) at least once before calling `GetCreationTime`.  
+ You must call [FindNextFile](#findnextfile) at least once before calling `GetCreationTime`.  
   
 > [!NOTE]
 >  Not all file systems use the same semantics to implement the time stamp returned by this function. This function may return the same value returned by other time stamp functions if the underlying file system or server does not support keeping the time attribute. See the [Win32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) structure for information about time formats. On some operating systems, the returned time is in the time zone local to the machine were the file is located. See the Win32 [FileTimeToLocalFileTime](http://msdn.microsoft.com/library/windows/desktop/ms724277) API for more information.  
   
-##  <a name="cgopherfilefind__getlastaccesstime"></a>  CGopherFileFind::GetLastAccessTime  
+##  <a name="getlastaccesstime"></a>  CGopherFileFind::GetLastAccessTime  
  Gets the time the specified file was last accessed.  
   
 ```  
@@ -219,15 +219,15 @@ virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
  A pointer to a [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) structure containing the time the file was last accessed.  
   
 ### Return Value  
- Nonzero if successful; 0 if unsuccessful. `GetLastAccessTime` returns 0 only if [FindNextFile](#cgopherfilefind__findnextfile) has never been called on this `CGopherFileFind` object.  
+ Nonzero if successful; 0 if unsuccessful. `GetLastAccessTime` returns 0 only if [FindNextFile](#findnextfile) has never been called on this `CGopherFileFind` object.  
   
 ### Remarks  
- You must call [FindNextFile](#cgopherfilefind__findnextfile) at least once before calling `GetLastAccessTime`.  
+ You must call [FindNextFile](#findnextfile) at least once before calling `GetLastAccessTime`.  
   
 > [!NOTE]
 >  Not all file systems use the same semantics to implement the time stamp returned by this function. This function may return the same value returned by other time stamp functions if the underlying file system or server does not support keeping the time attribute. See the [Win32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) structure for information about time formats. On some operating systems, the returned time is in the time zone local to the machine were the file is located. See the Win32 [FileTimeToLocalFileTime](http://msdn.microsoft.com/library/windows/desktop/ms724277) API for more information.  
   
-##  <a name="cgopherfilefind__getlastwritetime"></a>  CGopherFileFind::GetLastWriteTime  
+##  <a name="getlastwritetime"></a>  CGopherFileFind::GetLastWriteTime  
  Gets the last time the file was changed.  
   
 ```  
@@ -248,15 +248,15 @@ virtual BOOL GetLastWriteTime(CTime& refTime) const;
  A reference to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object.  
   
 ### Return Value  
- Nonzero if successful; 0 if unsuccessful. `GetLastWriteTime` returns 0 only if [FindNextFile](#cgopherfilefind__findnextfile) has never been called on this `CGopherFileFind` object.  
+ Nonzero if successful; 0 if unsuccessful. `GetLastWriteTime` returns 0 only if [FindNextFile](#findnextfile) has never been called on this `CGopherFileFind` object.  
   
 ### Remarks  
- You must call [FindNextFile](#cgopherfilefind__findnextfile) at least once before calling `GetLastWriteTime`.  
+ You must call [FindNextFile](#findnextfile) at least once before calling `GetLastWriteTime`.  
   
 > [!NOTE]
 >  Not all file systems use the same semantics to implement the time stamp returned by this function. This function may return the same value returned by other time stamp functions if the underlying file system or server does not support keeping the time attribute. See the [Win32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) structure for information about time formats. On some operating systems, the returned time is in the time zone local to the machine were the file is located. See the Win32 [FileTimeToLocalFileTime](http://msdn.microsoft.com/library/windows/desktop/ms724277) API for more information.  
   
-##  <a name="cgopherfilefind__getlength"></a>  CGopherFileFind::GetLength  
+##  <a name="getlength"></a>  CGopherFileFind::GetLength  
  Call this member function to get the length, in bytes, of the found file.  
   
 ```  
@@ -275,10 +275,10 @@ virtual ULONGLONG GetLength() const;
 >  As of MFC 7.0, `GetLength` supports 64-bit integer types. Previously-existing code built with this newer version of the library may result in truncation warnings.  
   
 ### Example  
-  See the example for [CFile::GetLength](../../mfc/reference/cfile-class.md#cfile__getlength) (the base class implementation).  
+  See the example for [CFile::GetLength](../../mfc/reference/cfile-class.md#getlength) (the base class implementation).  
   
-##  <a name="cgopherfilefind__getlocator"></a>  CGopherFileFind::GetLocator  
- Call this member function to get the [CGopherLocator](../../mfc/reference/cgopherlocator-class.md) object that [FindFile](#cgopherfilefind__findfile) uses to find the gopher file.  
+##  <a name="getlocator"></a>  CGopherFileFind::GetLocator  
+ Call this member function to get the [CGopherLocator](../../mfc/reference/cgopherlocator-class.md) object that [FindFile](#findfile) uses to find the gopher file.  
   
 ```  
 CGopherLocator GetLocator() const;
@@ -289,7 +289,7 @@ CGopherLocator GetLocator() const;
 ### Return Value  
  A `CGopherLocator` object.  
   
-##  <a name="cgopherfilefind__getscreenname"></a>  CGopherFileFind::GetScreenName  
+##  <a name="getscreenname"></a>  CGopherFileFind::GetScreenName  
  Call this member function to get the name of the gopher screen.  
   
 ```  
@@ -301,7 +301,7 @@ CString GetScreenName() const;
 ### Return Value  
  The name of the gopher screen.  
   
-##  <a name="cgopherfilefind__isdots"></a>  CGopherFileFind::IsDots  
+##  <a name="isdots"></a>  CGopherFileFind::IsDots  
  Tests for the current directory and parent directory markers while iterating through files.  
   
 ```  
@@ -314,7 +314,7 @@ virtual BOOL IsDots() const;
  Nonzero if the found file has the name "." or "..", which indicates that the found file is actually a directory. Otherwise 0.  
   
 ### Remarks  
- You must call [FindNextFile](#cgopherfilefind__findnextfile) at least once before calling `IsDots`.  
+ You must call [FindNextFile](#findnextfile) at least once before calling `IsDots`.  
   
 ## See Also  
  [CFileFind Class](../../mfc/reference/cfilefind-class.md)   

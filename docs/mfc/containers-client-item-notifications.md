@@ -69,5 +69,5 @@ This article discusses the overridable functions that the MFC framework calls wh
 ## See Also  
  [Containers](../mfc/containers.md)   
  [Containers: Client-Item States](../mfc/containers-client-item-states.md)   
- [COleClientItem::OnChangeItemPosition](../mfc/reference/coleclientitem-class.md#coleclientitem__onchangeitemposition)
+ [COleClientItem::OnChangeItemPosition](../mfc/reference/coleclientitem-class.md#onchangeitemposition)
 

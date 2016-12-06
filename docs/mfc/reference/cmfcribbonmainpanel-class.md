@@ -56,22 +56,22 @@ class CMFCRibbonMainPanel : public CMFCRibbonPanel
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonMainPanel::Add](#cmfcribbonmainpanel__add)|Adds a ribbon element to the left pane of the application button panel. (Overrides [CMFCRibbonPanel::Add](../../mfc/reference/cmfcribbonpanel-class.md#cmfcribbonpanel__add).)|  
-|[CMFCRibbonMainPanel::AddRecentFilesList](#cmfcribbonmainpanel__addrecentfileslist)|Adds a text string to the recent files list menu.|  
-|[CMFCRibbonMainPanel::AddToBottom](#cmfcribbonmainpanel__addtobottom)|Adds a ribbon element to the bottom pane of the ribbon application panel.|  
-|[CMFCRibbonMainPanel::AddToRight](#cmfcribbonmainpanel__addtoright)|Adds a ribbon element to the right pane of the application button panel.|  
+|[CMFCRibbonMainPanel::Add](#add)|Adds a ribbon element to the left pane of the application button panel. (Overrides [CMFCRibbonPanel::Add](../../mfc/reference/cmfcribbonpanel-class.md#add).)|  
+|[CMFCRibbonMainPanel::AddRecentFilesList](#addrecentfileslist)|Adds a text string to the recent files list menu.|  
+|[CMFCRibbonMainPanel::AddToBottom](#addtobottom)|Adds a ribbon element to the bottom pane of the ribbon application panel.|  
+|[CMFCRibbonMainPanel::AddToRight](#addtoright)|Adds a ribbon element to the right pane of the application button panel.|  
 |`CMFCRibbonMainPanel::CreateObject`|Used by the framework to create a dynamic instance of this class type.|  
-|[CMFCRibbonMainPanel::GetCommandsFrame](#cmfcribbonmainpanel__getcommandsframe)|Returns a rectangle that represents the area of the ribbon main panel.|  
+|[CMFCRibbonMainPanel::GetCommandsFrame](#getcommandsframe)|Returns a rectangle that represents the area of the ribbon main panel.|  
 |`CMFCRibbonMainPanel::GetThisClass`|Used by the framework to obtain a pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|  
   
 ## Remarks  
  The framework displays the `CMFCRibbonMainPanel` when you open the application panel. It contains three panes:  
   
--   The left pane contains commands associated with files, such as **Open**, **Save**, **Print**, and **Close**. To add a command to this pane, call [CMFCRibbonMainPanel::Add](#cmfcribbonmainpanel__add).  
+-   The left pane contains commands associated with files, such as **Open**, **Save**, **Print**, and **Close**. To add a command to this pane, call [CMFCRibbonMainPanel::Add](#add).  
   
--   The right pane contains options that modify the command that you click in the left pane. For example, if you click **Save As** from the left pane, the right pane can display available file types. To add an item to this pane, call [CMFCRibbonMainPanel::AddToRight](#cmfcribbonmainpanel__addtoright).  
+-   The right pane contains options that modify the command that you click in the left pane. For example, if you click **Save As** from the left pane, the right pane can display available file types. To add an item to this pane, call [CMFCRibbonMainPanel::AddToRight](#addtoright).  
   
--   The bottom pane contains buttons that allow you to change the application's settings and to exit the program. To add an item to this pane, call [CMFCRibbonMainPanel::AddToBottom](#cmfcribbonmainpanel__addtobottom).  
+-   The bottom pane contains buttons that allow you to change the application's settings and to exit the program. To add an item to this pane, call [CMFCRibbonMainPanel::AddToBottom](#addtobottom).  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -83,7 +83,7 @@ class CMFCRibbonMainPanel : public CMFCRibbonPanel
 ## Requirements  
  **Header:** afxRibbonMainPanel.h  
   
-##  <a name="cmfcribbonmainpanel__add"></a>  CMFCRibbonMainPanel::Add  
+##  <a name="add"></a>  CMFCRibbonMainPanel::Add  
  Adds a ribbon element to the left pane of the application button panel.  
   
 ```  
@@ -97,7 +97,7 @@ virtual void Add(CMFCRibbonBaseElement* pElem);
 ### Remarks  
  Adds a ribbon element to the panel. Elements added using this method will be located in the left column of the main panel.  
   
-##  <a name="cmfcribbonmainpanel__addrecentfileslist"></a>  CMFCRibbonMainPanel::AddRecentFilesList  
+##  <a name="addrecentfileslist"></a>  CMFCRibbonMainPanel::AddRecentFilesList  
  Adds a text string to the recent files list menu.  
   
 ```  
@@ -115,7 +115,7 @@ void AddRecentFilesList(
   
 ### Remarks  
   
-##  <a name="cmfcribbonmainpanel__addtobottom"></a>  CMFCRibbonMainPanel::AddToBottom  
+##  <a name="addtobottom"></a>  CMFCRibbonMainPanel::AddToBottom  
  Adds a ribbon element to the bottom pane of the ribbon application panel.  
   
 ```  
@@ -128,7 +128,7 @@ void AddToBottom(CMFCRibbonMainPanelButton* pElem);
   
 ### Remarks  
   
-##  <a name="cmfcribbonmainpanel__addtoright"></a>  CMFCRibbonMainPanel::AddToRight  
+##  <a name="addtoright"></a>  CMFCRibbonMainPanel::AddToRight  
  Adds a ribbon element to the right pane of the application button panel.  
   
 ```  
@@ -147,7 +147,7 @@ void AddToRight(
 ### Remarks  
  Use this function to add a ribbon element to the right panel. The right panel typically displays the recent files list, but you can add any other ribbon element here.  
   
-##  <a name="cmfcribbonmainpanel__getcommandsframe"></a>  CMFCRibbonMainPanel::GetCommandsFrame  
+##  <a name="getcommandsframe"></a>  CMFCRibbonMainPanel::GetCommandsFrame  
  Returns a rectangle that represents the area of the ribbon main panel.  
   
 ```  

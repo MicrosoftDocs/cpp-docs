@@ -237,7 +237,7 @@ BOOL DrawTextOnGlass(
  [in] `dwFlags`  
  A bitwise combination (OR) of flags that specify how the specified text is drawn.  
   
- If the `hTheme` parameter is `NULL` or if themes are not supported and enabled, the `nFormat` parameter of the [CDC::DrawText](../../mfc/reference/cdc-class.md#cdc__drawtext) method describes the valid flags. If themes are supported, the `dwFlags` parameter of the [DrawThemeTextEx](http://msdn.microsoft.com/library/windows/desktop/bb773317) method describes the valid flags.  
+ If the `hTheme` parameter is `NULL` or if themes are not supported and enabled, the `nFormat` parameter of the [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext) method describes the valid flags. If themes are supported, the `dwFlags` parameter of the [DrawThemeTextEx](http://msdn.microsoft.com/library/windows/desktop/bb773317) method describes the valid flags.  
   
  [in] `nGlowSize`  
  The size of a glow effect that is drawn on the background before drawing the specified text. The default value is 0.  
@@ -257,7 +257,7 @@ BOOL DrawTextOnGlass(
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449)   
  [Parts and States](http://msdn.microsoft.com/library/windows/desktop/bb773210)   
- [CDC::DrawText](../../mfc/reference/cdc-class.md#cdc__drawtext)   
+ [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext)   
  [DrawThemeTextEx](http://msdn.microsoft.com/library/windows/desktop/bb773317)   
  [Desktop Window Manager](http://msdn.microsoft.com/library/windows/desktop/aa969540)   
  [Enable and Control DWM Composition](http://msdn.microsoft.com/library/windows/desktop/aa969538)
@@ -739,7 +739,7 @@ BOOL SetMenuFont(
  `TRUE` if this method succeeds; otherwise, `FALSE`. In debug mode, this method asserts if this method is unsuccessful.  
   
 ### Remarks  
- This method creates a horizontal regular font, an underlined font, and a bold font that is used in default menu items. This method optionally creates a regular vertical font. For more information about logical fonts, see [CFont::CreateFontIndirect](../../mfc/reference/cfont-class.md#cfont__createfontindirect).  
+ This method creates a horizontal regular font, an underlined font, and a bold font that is used in default menu items. This method optionally creates a regular vertical font. For more information about logical fonts, see [CFont::CreateFontIndirect](../../mfc/reference/cfont-class.md#createfontindirect).  
   
 ## <a name="afx_global_data__updatefonts"></a> AFX_GLOBAL_DATA::UpdateFonts
 Reintializes the logical fonts that are used by the framework.  

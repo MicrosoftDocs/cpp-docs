@@ -57,8 +57,8 @@ class CAnimationVariableChangeHandler : public CUIAnimationVariableChangeHandler
 |Name|Description|  
 |----------|-----------------|  
 |`CAnimationVariableChangeHandler::CreateInstance`|Creates an instance of `CAnimationVariableChangeHandler` object.|  
-|[CAnimationVariableChangeHandler::OnValueChanged](#canimationvariablechangehandler__onvaluechanged)|Called when a value of an animation variable has changed. (Overrides `CUIAnimationVariableChangeHandlerBase::OnValueChanged`.)|  
-|[CAnimationVariableChangeHandler::SetAnimationController](#canimationvariablechangehandler__setanimationcontroller)|Stores a pointer to animation controller to route events.|  
+|[CAnimationVariableChangeHandler::OnValueChanged](#onvaluechanged)|Called when a value of an animation variable has changed. (Overrides `CUIAnimationVariableChangeHandlerBase::OnValueChanged`.)|  
+|[CAnimationVariableChangeHandler::SetAnimationController](#setanimationcontroller)|Stores a pointer to animation controller to route events.|  
   
 ## Remarks  
  This event handler is created and passed to `IUIAnimationVariable::SetVariableChangeHandler` method, when you call `CAnimationVariable::EnableValueChangedEvent` or `CAnimationBaseObject::EnableValueChangedEvent` (which enables this event for all animation variables encapsulated in an animation object).  
@@ -73,7 +73,7 @@ class CAnimationVariableChangeHandler : public CUIAnimationVariableChangeHandler
 ## Requirements  
  **Header:** afxanimationcontroller.h  
   
-##  <a name="canimationvariablechangehandler__onvaluechanged"></a>  CAnimationVariableChangeHandler::OnValueChanged  
+##  <a name="onvaluechanged"></a>  CAnimationVariableChangeHandler::OnValueChanged  
  Called when a value of an animation variable has changed.  
   
 ```  
@@ -100,7 +100,7 @@ IFACEMETHOD(
 ### Return Value  
  If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.  
   
-##  <a name="canimationvariablechangehandler__setanimationcontroller"></a>  CAnimationVariableChangeHandler::SetAnimationController  
+##  <a name="setanimationcontroller"></a>  CAnimationVariableChangeHandler::SetAnimationController  
  Stores a pointer to animation controller to route events.  
   
 ```  

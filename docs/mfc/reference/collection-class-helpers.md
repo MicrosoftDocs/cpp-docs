@@ -54,7 +54,7 @@ The collection classes `CMap`, `CList`, and `CArray` use templated global helper
 |[SerializeElements](#serializeelements)|Stores or retrieves elements to or from an archive.|  
   
 ##  <a name="compareelements"></a>  CompareElements  
- Called directly by [CList::Find](clist-class.md#not_found.md#clist__find and indirectly by [cmap__lookup](cmap-class.md#cmap__lookup) and [cmap__operator &#91;&#93;](cmap-class.md#cmap__operator_at).  
+ Called directly by [CList::Find](clist-class.md#not_found.md#clist__find and indirectly by [cmap__lookup](cmap-class.md#lookup) and [cmap__operator &#91;&#93;](cmap-class.md#operator_at).  
   
 ```  
  
@@ -91,7 +91,7 @@ CompareElements(
  The C++ language defines the comparison operator ( `==`) for simple types ( `char`, `int`, **float**, and so on) but does not define a comparison operator for classes and structures. If you want to use `CompareElements` or to instantiate one of the collection classes that uses it, you must either define the comparison operator or overload `CompareElements` with a version that returns appropriate values.  
   
 ##  <a name="copyelements"></a>  CopyElements  
- This function is called directly by [CArray::Append](carray-class.md#carray__append) and [CArray::Copy](carray-class.md#carray__copy).  
+ This function is called directly by [CArray::Append](carray-class.md#append) and [CArray::Copy](carray-class.md#copy).  
   
 ```  
  
@@ -174,7 +174,7 @@ AFX_INLINE UINT AFXAPI HashKey(ARG_KEY  key);
  The key's hash value.  
   
 ### Remarks  
- This function is called directly by [CMap::RemoveKey](cmap-class.md#cmap__removekey) and indirectly by [CMap::Lookup](cmap-class.md#cmap__lookup) and [CMap::Operator &#91;&#93;](cmap-class.md#cmap__operator_at).
+ This function is called directly by [CMap::RemoveKey](cmap-class.md#removekey) and indirectly by [CMap::Lookup](cmap-class.md#lookup) and [CMap::Operator &#91;&#93;](cmap-class.md#operator_at).
   
  The default implementation creates a hash value by shifting `key` right by four positions. Override this function so that it returns hash values appropriate for your application.  
   

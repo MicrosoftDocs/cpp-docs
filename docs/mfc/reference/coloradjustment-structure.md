@@ -128,6 +128,6 @@ typedef struct  tagCOLORADJUSTMENT {    /* ca */
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CDC::GetColorAdjustment](../../mfc/reference/cdc-class.md#cdc__getcoloradjustment)
+ [CDC::GetColorAdjustment](../../mfc/reference/cdc-class.md#getcoloradjustment)
 
 

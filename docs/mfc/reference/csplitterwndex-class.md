@@ -60,12 +60,12 @@ class CSplitterWndEx : public CSplitterWnd
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSplitterWndEx::OnDrawSplitter](#csplitterwndex__ondrawsplitter)|Called by the framework to draw a splitter window. (Overrides [CSplitterWnd::OnDrawSplitter](csplitterwnd-class.md#csplitterwnd__ondrawsplitter).)|  
+|[CSplitterWndEx::OnDrawSplitter](#ondrawsplitter)|Called by the framework to draw a splitter window. (Overrides [CSplitterWnd::OnDrawSplitter](csplitterwnd-class.md#ondrawsplitter).)|  
   
 ## Remarks  
  Override the `OnDrawSplitter` method to customize the appearance of the graphical components of a splitter window.  
   
- The `CSplitterWndEx` class is used together with the [OnDrawSplitterBorder](cmfcvisualmanager-class.md#cmfcvisualmanager__ondrawsplitterborder), [OnDrawSplitterBox](cmfcvisualmanager-class.md#cmfcvisualmanager__ondrawsplitterbox), and [OnFillSplitterBackground](cmfcvisualmanager-class.md#cmfcvisualmanager__onfillsplitterbackground) methods, which are implemented by a visual manager. To cause a visual manager to draw a splitter window in your application, replace declarations of the `CSplitterWnd` class with the `CSplitterWndEx` class. For frame window applications, the splitter window class is declared in the CMainFrame class that is located in mainfrm.h. For an example, see the `OutlookDemo` sample in the Samples directory.  
+ The `CSplitterWndEx` class is used together with the [OnDrawSplitterBorder](cmfcvisualmanager-class.md#ondrawsplitterborder), [OnDrawSplitterBox](cmfcvisualmanager-class.md#ondrawsplitterbox), and [OnFillSplitterBackground](cmfcvisualmanager-class.md#onfillsplitterbackground) methods, which are implemented by a visual manager. To cause a visual manager to draw a splitter window in your application, replace declarations of the `CSplitterWnd` class with the `CSplitterWndEx` class. For frame window applications, the splitter window class is declared in the CMainFrame class that is located in mainfrm.h. For an example, see the `OutlookDemo` sample in the Samples directory.  
   
 ## Inheritance Hierarchy  
  [CObject](cobject-class.md)  
@@ -79,7 +79,7 @@ class CSplitterWndEx : public CSplitterWnd
 ## Requirements  
  **Header:** afxsplitterwndex.h  
   
-##  <a name="csplitterwndex__ondrawsplitter"></a>  CSplitterWndEx::OnDrawSplitter  
+##  <a name="ondrawsplitter"></a>  CSplitterWndEx::OnDrawSplitter  
  Called by the framework to draw a splitter window.  
   
 ```  

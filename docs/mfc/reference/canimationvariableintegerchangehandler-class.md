@@ -50,15 +50,15 @@ class CAnimationVariableIntegerChangeHandler : public CUIAnimationVariableIntege
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAnimationVariableIntegerChangeHandler::CAnimationVariableIntegerChangeHandler](#canimationvariableintegerchangehandler__canimationvariableintegerchangehandler)|Constructs a `CAnimationVariableIntegerChangeHandler` object.|  
+|[CAnimationVariableIntegerChangeHandler::CAnimationVariableIntegerChangeHandler](#canimationvariableintegerchangehandler)|Constructs a `CAnimationVariableIntegerChangeHandler` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAnimationVariableIntegerChangeHandler::CreateInstance](#canimationvariableintegerchangehandler__createinstance)|Creates an instance of `CAnimationVariableIntegerChangeHandler` callback.|  
-|[CAnimationVariableIntegerChangeHandler::OnIntegerValueChanged](#canimationvariableintegerchangehandler__onintegervaluechanged)|Called when a value of an animation variable has changed. (Overrides `CUIAnimationVariableIntegerChangeHandlerBase::OnIntegerValueChanged`.)|  
-|[CAnimationVariableIntegerChangeHandler::SetAnimationController](#canimationvariableintegerchangehandler__setanimationcontroller)|Stores a pointer to animation controller to route events.|  
+|[CAnimationVariableIntegerChangeHandler::CreateInstance](#createinstance)|Creates an instance of `CAnimationVariableIntegerChangeHandler` callback.|  
+|[CAnimationVariableIntegerChangeHandler::OnIntegerValueChanged](#onintegervaluechanged)|Called when a value of an animation variable has changed. (Overrides `CUIAnimationVariableIntegerChangeHandlerBase::OnIntegerValueChanged`.)|  
+|[CAnimationVariableIntegerChangeHandler::SetAnimationController](#setanimationcontroller)|Stores a pointer to animation controller to route events.|  
   
 ## Remarks  
  This event handler is created and passed to IUIAnimationVariable::SetVariableIntegerChangeHandler method, when you call CAnimationVariable::EnableIntegerValueChangedEvent or CAnimationBaseObject::EnableIntegerValueChangedEvent (which enables this event for all animation variables encapsulated in an animation object).  
@@ -75,14 +75,14 @@ class CAnimationVariableIntegerChangeHandler : public CUIAnimationVariableIntege
 ## Requirements  
  **Header:** afxanimationcontroller.h  
   
-##  <a name="canimationvariableintegerchangehandler__canimationvariableintegerchangehandler"></a>  CAnimationVariableIntegerChangeHandler::CAnimationVariableIntegerChangeHandler  
+##  <a name="canimationvariableintegerchangehandler"></a>  CAnimationVariableIntegerChangeHandler::CAnimationVariableIntegerChangeHandler  
  Constructs a CAnimationVariableIntegerChangeHandler object.  
   
 ```  
 CAnimationVariableIntegerChangeHandler ();
 ```  
   
-##  <a name="canimationvariableintegerchangehandler__createinstance"></a>  CAnimationVariableIntegerChangeHandler::CreateInstance  
+##  <a name="createinstance"></a>  CAnimationVariableIntegerChangeHandler::CreateInstance  
  Creates an instance of CAnimationVariableIntegerChangeHandler callback.  
   
 ```  
@@ -100,7 +100,7 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
 ### Return Value  
  If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.  
   
-##  <a name="canimationvariableintegerchangehandler__onintegervaluechanged"></a>  CAnimationVariableIntegerChangeHandler::OnIntegerValueChanged  
+##  <a name="onintegervaluechanged"></a>  CAnimationVariableIntegerChangeHandler::OnIntegerValueChanged  
  Called when a value of an animation variable has changed.  
   
 ```  
@@ -127,7 +127,7 @@ IFACEMETHOD(
 ### Return Value  
  S_OK if the method succeeds; otherwise E_FAIL.  
   
-##  <a name="canimationvariableintegerchangehandler__setanimationcontroller"></a>  CAnimationVariableIntegerChangeHandler::SetAnimationController  
+##  <a name="setanimationcontroller"></a>  CAnimationVariableIntegerChangeHandler::SetAnimationController  
  Stores a pointer to animation controller to route events.  
   
 ```  

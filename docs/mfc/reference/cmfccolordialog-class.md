@@ -62,21 +62,21 @@ class CMFCColorDialog : public CDialogEx
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCColorDialog::CMFCColorDialog](#cmfccolordialog__cmfccolordialog)|Constructs a `CMFCColorDialog` object.|  
+|[CMFCColorDialog::CMFCColorDialog](#cmfccolordialog)|Constructs a `CMFCColorDialog` object.|  
 |`CMFCColorDialog::~CMFCColorDialog`|Destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCColorDialog::GetColor](#cmfccolordialog__getcolor)|Returns the current selected color.|  
-|[CMFCColorDialog::GetPalette](#cmfccolordialog__getpalette)|Returns the color's palette.|  
-|`CMFCColorDialog::PreTranslateMessage`|Translates window messages before they are dispatched to the [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows functions. For syntax and more information, see [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#cwnd__pretranslatemessage). (Overrides `CDialogEx::PreTranslateMessage`.)|  
-|[CMFCColorDialog::RebuildPalette](#cmfccolordialog__rebuildpalette)|Derives a palette from the system palette.|  
-|[CMFCColorDialog::SetCurrentColor](#cmfccolordialog__setcurrentcolor)|Sets the current selected color.|  
-|[CMFCColorDialog::SetNewColor](#cmfccolordialog__setnewcolor)|Sets the color most equivalent to a specified RGB value.|  
-|[CMFCColorDialog::SetPageOne](#cmfccolordialog__setpageone)|Selects an RGB value for the first property page.|  
-|[CMFCColorDialog::SetPageTwo](#cmfccolordialog__setpagetwo)|Selects an RGB value for the second property page.|  
+|[CMFCColorDialog::GetColor](#getcolor)|Returns the current selected color.|  
+|[CMFCColorDialog::GetPalette](#getpalette)|Returns the color's palette.|  
+|`CMFCColorDialog::PreTranslateMessage`|Translates window messages before they are dispatched to the [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows functions. For syntax and more information, see [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage). (Overrides `CDialogEx::PreTranslateMessage`.)|  
+|[CMFCColorDialog::RebuildPalette](#rebuildpalette)|Derives a palette from the system palette.|  
+|[CMFCColorDialog::SetCurrentColor](#setcurrentcolor)|Sets the current selected color.|  
+|[CMFCColorDialog::SetNewColor](#setnewcolor)|Sets the color most equivalent to a specified RGB value.|  
+|[CMFCColorDialog::SetPageOne](#setpageone)|Selects an RGB value for the first property page.|  
+|[CMFCColorDialog::SetPageTwo](#setpagetwo)|Selects an RGB value for the second property page.|  
   
 ### Protected Data Members  
   
@@ -121,7 +121,7 @@ class CMFCColorDialog : public CDialogEx
 ## Requirements  
  **Header:** afxcolordialog.h  
   
-##  <a name="cmfccolordialog__cmfccolordialog"></a>  CMFCColorDialog::CMFCColorDialog  
+##  <a name="cmfccolordialog"></a>  CMFCColorDialog::CMFCColorDialog  
  Constructs a `CMFCColorDialog` object.  
   
 ```  
@@ -149,7 +149,7 @@ CMFCColorDialog(
   
 ### Remarks  
   
-##  <a name="cmfccolordialog__getcolor"></a>  CMFCColorDialog::GetColor  
+##  <a name="getcolor"></a>  CMFCColorDialog::GetColor  
  Retrieves the color that the user selects from the color dialog.  
   
 ```  
@@ -164,7 +164,7 @@ COLORREF GetColor() const;
 ### Remarks  
  Call this function after you call the `DoModal` method.  
   
-##  <a name="cmfccolordialog__getpalette"></a>  CMFCColorDialog::GetPalette  
+##  <a name="getpalette"></a>  CMFCColorDialog::GetPalette  
  Retrieves the color palette that is available in the current color dialog.  
   
 ```  
@@ -179,14 +179,14 @@ CPalette* GetPalette() const;
 ### Remarks  
  The color palette specifies the colors that the user can choose.  
   
-##  <a name="cmfccolordialog__rebuildpalette"></a>  CMFCColorDialog::RebuildPalette  
+##  <a name="rebuildpalette"></a>  CMFCColorDialog::RebuildPalette  
  Derives a palette from the system palette.  
   
 ```  
 void RebuildPalette();
 ```  
   
-##  <a name="cmfccolordialog__setcurrentcolor"></a>  CMFCColorDialog::SetCurrentColor  
+##  <a name="setcurrentcolor"></a>  CMFCColorDialog::SetCurrentColor  
  Sets the current color of the dialog box.  
   
 ```  
@@ -199,7 +199,7 @@ void SetCurrentColor(COLORREF rgb);
   
 ### Remarks  
   
-##  <a name="cmfccolordialog__setnewcolor"></a>  CMFCColorDialog::SetNewColor  
+##  <a name="setnewcolor"></a>  CMFCColorDialog::SetNewColor  
  Sets the current color to the color in the current palette that is most similar.  
   
 ```  
@@ -212,7 +212,7 @@ void SetNewColor(COLORREF rgb);
   
 ### Remarks  
   
-##  <a name="cmfccolordialog__setpageone"></a>  CMFCColorDialog::SetPageOne  
+##  <a name="setpageone"></a>  CMFCColorDialog::SetPageOne  
  Explicitly specifies the red, green, and blue components of a selected color on the first property page of a color dialog.  
   
 ```  
@@ -234,7 +234,7 @@ void SetPageOne(
   
 ### Remarks  
   
-##  <a name="cmfccolordialog__setpagetwo"></a>  CMFCColorDialog::SetPageTwo  
+##  <a name="setpagetwo"></a>  CMFCColorDialog::SetPageTwo  
  Explicitly specifies the red, green, and blue components of a selected color on the second property page of a color dialog.  
   
 ```  

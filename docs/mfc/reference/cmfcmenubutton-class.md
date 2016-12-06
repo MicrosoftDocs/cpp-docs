@@ -50,24 +50,24 @@ class CMFCMenuButton : public CMFCButton
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCMenuButton::CMFCMenuButton](#cmfcmenubutton__cmfcmenubutton)|Constructs a `CMFCMenuButton` object.|  
+|[CMFCMenuButton::CMFCMenuButton](#cmfcmenubutton)|Constructs a `CMFCMenuButton` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCMenuButton::PreTranslateMessage](#cmfcmenubutton__pretranslatemessage)|Called by the framework to translate window messages before they are dispatched. (Overrides `CMFCButton::PreTranslateMessage`.)|  
-|[CMFCMenuButton::SizeToContent](#cmfcmenubutton__sizetocontent)|Changes the size of the button according to its text and image size.|  
+|[CMFCMenuButton::PreTranslateMessage](#pretranslatemessage)|Called by the framework to translate window messages before they are dispatched. (Overrides `CMFCButton::PreTranslateMessage`.)|  
+|[CMFCMenuButton::SizeToContent](#sizetocontent)|Changes the size of the button according to its text and image size.|  
   
 ### Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCMenuButton::m_bOSMenu](#cmfcmenubutton__m_bosmenu)|Specifies whether to display the default system pop-up menu or to use [CContextMenuManager::TrackPopupMenu](../../mfc/reference/ccontextmenumanager-class.md#ccontextmenumanager__trackpopupmenu).|  
-|[CMFCMenuButton::m_bRightArrow](#cmfcmenubutton__m_brightarrow)|Specifies whether the pop-up menu will appear underneath or to the right of the button.|  
-|[CMFCMenuButton::m_bStayPressed](#cmfcmenubutton__m_bstaypressed)|Specifies whether the menu button changes its state after the user releases the button.|  
-|[CMFCMenuButton::m_hMenu](#cmfcmenubutton__m_hmenu)|A handle to the attached Windows menu.|  
-|[CMFCMenuButton::m_nMenuResult](#cmfcmenubutton__m_nmenuresult)|An identifier that indicates which item the user selected from the pop-up menu.|  
+|[CMFCMenuButton::m_bOSMenu](#m_bosmenu)|Specifies whether to display the default system pop-up menu or to use [CContextMenuManager::TrackPopupMenu](../../mfc/reference/ccontextmenumanager-class.md#trackpopupmenu).|  
+|[CMFCMenuButton::m_bRightArrow](#m_brightarrow)|Specifies whether the pop-up menu will appear underneath or to the right of the button.|  
+|[CMFCMenuButton::m_bStayPressed](#m_bstaypressed)|Specifies whether the menu button changes its state after the user releases the button.|  
+|[CMFCMenuButton::m_hMenu](#m_hmenu)|A handle to the attached Windows menu.|  
+|[CMFCMenuButton::m_nMenuResult](#m_nmenuresult)|An identifier that indicates which item the user selected from the pop-up menu.|  
   
 ## Remarks  
  The `CMFCMenuButton` class is derived from the [CMFCButton Class](../../mfc/reference/cmfcbutton-class.md) which is, in turn, derived from the [CButton Class](../../mfc/reference/cbutton-class.md). Therefore, you can use `CMFCMenuButton` in your code the same way you would use `CButton`.  
@@ -96,14 +96,14 @@ class CMFCMenuButton : public CMFCButton
 ## Requirements  
  **Header:** afxmenubutton.h  
   
-##  <a name="cmfcmenubutton__cmfcmenubutton"></a>  CMFCMenuButton::CMFCMenuButton  
+##  <a name="cmfcmenubutton"></a>  CMFCMenuButton::CMFCMenuButton  
  Constructs a new [CMFCMenuButton](../../mfc/reference/cmfcmenubutton-class.md) object.  
   
 ```  
 CMFCMenuButton();
 ```  
   
-##  <a name="cmfcmenubutton__m_bosmenu"></a>  CMFCMenuButton::m_bOSMenu  
+##  <a name="m_bosmenu"></a>  CMFCMenuButton::m_bOSMenu  
  A Boolean member variable that indicates which pop-up menu the framework displays.  
   
 ```  
@@ -111,9 +111,9 @@ BOOL m_bOSMenu;
 ```  
   
 ### Remarks  
- If `m_bOSMenu` is `TRUE`, the framework calls the inherited `TrackPopupMenu` method for this object. Otherwise, the framework calls [CContextMenuManager::TrackPopupMenu](../../mfc/reference/ccontextmenumanager-class.md#ccontextmenumanager__trackpopupmenu).  
+ If `m_bOSMenu` is `TRUE`, the framework calls the inherited `TrackPopupMenu` method for this object. Otherwise, the framework calls [CContextMenuManager::TrackPopupMenu](../../mfc/reference/ccontextmenumanager-class.md#trackpopupmenu).  
   
-##  <a name="cmfcmenubutton__m_brightarrow"></a>  CMFCMenuButton::m_bRightArrow  
+##  <a name="m_brightarrow"></a>  CMFCMenuButton::m_bRightArrow  
  A Boolean member variable that indicates the location of the pop-up menu.  
   
 ```  
@@ -123,7 +123,7 @@ BOOL m_bRightArrow;
 ### Remarks  
  When the user presses the menu button, the application shows a pop-up menu. The framework will display the pop-up menu either under the button or to the right of the button. The button also has a small arrow that indicates where the pop-up menu will appear. If `m_bRightArrow` is `TRUE`, the framework displays the pop-up menu to the right of the button. Otherwise, it displays the pop-up menu under the button.  
   
-##  <a name="cmfcmenubutton__m_bstaypressed"></a>  CMFCMenuButton::m_bStayPressed  
+##  <a name="m_bstaypressed"></a>  CMFCMenuButton::m_bStayPressed  
  A Boolean member variable that indicates whether the menu button appears pressed while the user makes a selection from the pop-up menu.  
   
 ```  
@@ -135,7 +135,7 @@ BOOL m_bStayPressed;
   
  If the `m_bStayPressed` member is `TRUE`, the menu button becomes pressed when the user clicks the button. It stays pressed until after the user closes the pop-up menu, either by making a selection or canceling.  
   
-##  <a name="cmfcmenubutton__m_hmenu"></a>  CMFCMenuButton::m_hMenu  
+##  <a name="m_hmenu"></a>  CMFCMenuButton::m_hMenu  
  The handle to the attached menu.  
   
 ```  
@@ -145,7 +145,7 @@ HMENU m_hMenu;
 ### Remarks  
  The framework displays the menu indicated by this member variable when the user clicks the menu button.  
   
-##  <a name="cmfcmenubutton__m_nmenuresult"></a>  CMFCMenuButton::m_nMenuResult  
+##  <a name="m_nmenuresult"></a>  CMFCMenuButton::m_nMenuResult  
  An integer that indicates which item the user selects from the pop-up menu.  
   
 ```  
@@ -155,7 +155,7 @@ int m_nMenuResult;
 ### Remarks  
  The value of this member variable is zero if the user cancels the menu without making a selection or if an error occurs.  
   
-##  <a name="cmfcmenubutton__pretranslatemessage"></a>  CMFCMenuButton::PreTranslateMessage  
+##  <a name="pretranslatemessage"></a>  CMFCMenuButton::PreTranslateMessage  
  Called by the framework to translate window messages before they are dispatched.  
   
 ```  
@@ -171,7 +171,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
   
 ### Remarks  
   
-##  <a name="cmfcmenubutton__sizetocontent"></a>  CMFCMenuButton::SizeToContent  
+##  <a name="sizetocontent"></a>  CMFCMenuButton::SizeToContent  
  Changes the size of the button according to its text size and image size.  
   
 ```  

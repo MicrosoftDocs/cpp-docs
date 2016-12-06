@@ -51,23 +51,23 @@ class COleBusyDialog : public COleDialog
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleBusyDialog::COleBusyDialog](#colebusydialog__colebusydialog)|Constructs a `COleBusyDialog` object.|  
+|[COleBusyDialog::COleBusyDialog](#colebusydialog)|Constructs a `COleBusyDialog` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleBusyDialog::DoModal](#colebusydialog__domodal)|Displays the OLE Server Busy dialog box.|  
-|[COleBusyDialog::GetSelectionType](#colebusydialog__getselectiontype)|Determines the choice made in the dialog box.|  
+|[COleBusyDialog::DoModal](#domodal)|Displays the OLE Server Busy dialog box.|  
+|[COleBusyDialog::GetSelectionType](#getselectiontype)|Determines the choice made in the dialog box.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleBusyDialog::m_bz](#colebusydialog__m_bz)|Structure of type **OLEUIBUSY** that controls the behavior of the dialog box.|  
+|[COleBusyDialog::m_bz](#m_bz)|Structure of type **OLEUIBUSY** that controls the behavior of the dialog box.|  
   
 ## Remarks  
- Create an object of class `COleBusyDialog` when you want to call these dialog boxes. After a `COleBusyDialog` object has been constructed, you can use the [m_bz](#colebusydialog__m_bz) structure to initialize the values or states of controls in the dialog box. The `m_bz` structure is of type **OLEUIBUSY**. For more information about using this dialog class, see the [DoModal](#colebusydialog__domodal) member function.  
+ Create an object of class `COleBusyDialog` when you want to call these dialog boxes. After a `COleBusyDialog` object has been constructed, you can use the [m_bz](#m_bz) structure to initialize the values or states of controls in the dialog box. The `m_bz` structure is of type **OLEUIBUSY**. For more information about using this dialog class, see the [DoModal](#domodal) member function.  
   
 > [!NOTE]
 >  Application Wizard-generated container code uses this class.  
@@ -94,7 +94,7 @@ class COleBusyDialog : public COleDialog
 ## Requirements  
  **Header:** afxodlgs.h  
   
-##  <a name="colebusydialog__colebusydialog"></a>  COleBusyDialog::COleBusyDialog  
+##  <a name="colebusydialog"></a>  COleBusyDialog::COleBusyDialog  
  This function only constructs a `COleBusyDialog` object.  
   
 ```  
@@ -125,11 +125,11 @@ explicit COleBusyDialog(
  Points to the parent or owner window object (of type `CWnd`) to which the dialog object belongs. If it is **NULL**, the parent window of the dialog object is set to the main application window.  
   
 ### Remarks  
- To display the dialog box, call [DoModal](#colebusydialog__domodal).  
+ To display the dialog box, call [DoModal](#domodal).  
   
  For more information, see the [OLEUIBUSY](http://msdn.microsoft.com/library/windows/desktop/ms682493) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="colebusydialog__domodal"></a>  COleBusyDialog::DoModal  
+##  <a name="domodal"></a>  COleBusyDialog::DoModal  
  Call this function to display the OLE Server Busy or Server Not Responding dialog box.  
   
 ```  
@@ -146,11 +146,11 @@ virtual INT_PTR DoModal();
 - **IDABORT** if an error occurred. If **IDABORT** is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIBusy](http://msdn.microsoft.com/library/windows/desktop/ms680125) function in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Remarks  
- If you want to initialize the various dialog box controls by setting members of the [m_bz](#colebusydialog__m_bz) structure, you should do this before calling `DoModal`, but after the dialog object is constructed.  
+ If you want to initialize the various dialog box controls by setting members of the [m_bz](#m_bz) structure, you should do this before calling `DoModal`, but after the dialog object is constructed.  
   
  If `DoModal` returns **IDOK**, you can call other member functions to retrieve the settings or information that was input by the user into the dialog box.  
   
-##  <a name="colebusydialog__getselectiontype"></a>  COleBusyDialog::GetSelectionType  
+##  <a name="getselectiontype"></a>  COleBusyDialog::GetSelectionType  
  Call this function to get the selection type chosen by the user in the Server Busy dialog box.  
   
 ```  
@@ -185,7 +185,7 @@ UINT GetSelectionType() const;
   
 - **COleBusyDialog::callUnblocked** Call to activate the server is now unblocked.  
   
-##  <a name="colebusydialog__m_bz"></a>  COleBusyDialog::m_bz  
+##  <a name="m_bz"></a>  COleBusyDialog::m_bz  
  Structure of type **OLEUIBUSY** used to control the behavior of the Server Busy dialog box.  
   
 ```  

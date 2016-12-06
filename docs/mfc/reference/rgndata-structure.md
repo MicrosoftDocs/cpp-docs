@@ -58,6 +58,6 @@ typedef struct _RGNDATA { /* rgnd */
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CRgn::CreateFromData](../../mfc/reference/crgn-class.md#crgn__createfromdata)   
- [CRgn::GetRegionData](../../mfc/reference/crgn-class.md#crgn__getregiondata)
+ [CRgn::CreateFromData](../../mfc/reference/crgn-class.md#createfromdata)   
+ [CRgn::GetRegionData](../../mfc/reference/crgn-class.md#getregiondata)
 

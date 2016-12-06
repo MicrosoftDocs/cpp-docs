@@ -69,9 +69,9 @@ class CMFCBaseToolBar : public CPane
 |Name|Description|  
 |----------|-----------------|  
 |`CMFCBaseToolBar::CreateObject`|Used by the framework to create a dynamic instance of this class type.|  
-|[CMFCBaseToolBar::GetDockingMode](#cmfcbasetoolbar__getdockingmode)|Returns the docking mode. (Overrides [CBasePane::GetDockingMode](../../mfc/reference/cbasepane-class.md#cbasepane__getdockingmode).)|  
-|[CMFCBaseToolBar::GetMinSize](#cmfcbasetoolbar__getminsize)|Returns the minimum size of a toolbar. (Overrides [CPane::GetMinSize](../../mfc/reference/cpane-class.md#cpane__getminsize).)|  
-|[CMFCBaseToolBar::OnAfterChangeParent](#cmfcbasetoolbar__onafterchangeparent)|Called by the framework after the pane's parent changes. (Overrides [CBasePane::OnAfterChangeParent](../../mfc/reference/cbasepane-class.md#cbasepane__onafterchangeparent).)|  
+|[CMFCBaseToolBar::GetDockingMode](#getdockingmode)|Returns the docking mode. (Overrides [CBasePane::GetDockingMode](../../mfc/reference/cbasepane-class.md#getdockingmode).)|  
+|[CMFCBaseToolBar::GetMinSize](#getminsize)|Returns the minimum size of a toolbar. (Overrides [CPane::GetMinSize](../../mfc/reference/cpane-class.md#getminsize).)|  
+|[CMFCBaseToolBar::OnAfterChangeParent](#onafterchangeparent)|Called by the framework after the pane's parent changes. (Overrides [CBasePane::OnAfterChangeParent](../../mfc/reference/cbasepane-class.md#onafterchangeparent).)|  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -89,7 +89,7 @@ class CMFCBaseToolBar : public CPane
 ## Requirements  
  **Header:** afxbasetoolbar.h  
   
-##  <a name="cmfcbasetoolbar__getdockingmode"></a>  CMFCBaseToolBar::GetDockingMode  
+##  <a name="getdockingmode"></a>  CMFCBaseToolBar::GetDockingMode  
  Returns the docking mode.  
   
 ```  
@@ -101,7 +101,7 @@ virtual AFX_DOCK_TYPE GetDockingMode() const;
 ### Return Value  
  The docking mode.  
   
-##  <a name="cmfcbasetoolbar__getminsize"></a>  CMFCBaseToolBar::GetMinSize  
+##  <a name="getminsize"></a>  CMFCBaseToolBar::GetMinSize  
  Returns the minimum size of a toolbar.  
   
 ```  
@@ -114,7 +114,7 @@ virtual void GetMinSize(CSize& size) const;
  [out] `size`  
  The minimum size of a toolbar.  
   
-##  <a name="cmfcbasetoolbar__onafterchangeparent"></a>  CMFCBaseToolBar::OnAfterChangeParent  
+##  <a name="onafterchangeparent"></a>  CMFCBaseToolBar::OnAfterChangeParent  
  Called by the framework after the pane's parent changes.  
   
 ```  

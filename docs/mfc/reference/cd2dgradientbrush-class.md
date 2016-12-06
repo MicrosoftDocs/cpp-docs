@@ -50,23 +50,23 @@ class CD2DGradientBrush : public CD2DBrush;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CD2DGradientBrush::CD2DGradientBrush](#cd2dgradientbrush__cd2dgradientbrush)|Constructs a CD2DGradientBrush object.|  
+|[CD2DGradientBrush::CD2DGradientBrush](#cd2dgradientbrush)|Constructs a CD2DGradientBrush object.|  
 |[CD2DGradientBrush::~CD2DGradientBrush](#cd2dgradientbrush__~cd2dgradientbrush)|The destructor. Called when a D2D gradient brush object is being destroyed.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CD2DGradientBrush::Destroy](#cd2dgradientbrush__destroy)|Destroys a CD2DGradientBrush object. (Overrides [CD2DBrush::Destroy](../../mfc/reference/cd2dbrush-class.md#cd2dbrush__destroy).)|  
+|[CD2DGradientBrush::Destroy](#destroy)|Destroys a CD2DGradientBrush object. (Overrides [CD2DBrush::Destroy](../../mfc/reference/cd2dbrush-class.md#destroy).)|  
   
 ### Protected Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CD2DGradientBrush::m_arGradientStops](#cd2dgradientbrush__m_argradientstops)|Array of the D2D1_GRADIENT_STOP structures.|  
-|[CD2DGradientBrush::m_colorInterpolationGamma](#cd2dgradientbrush__m_colorinterpolationgamma)|The space in which color interpolation between the gradient stops is performed.|  
-|[CD2DGradientBrush::m_extendMode](#cd2dgradientbrush__m_extendmode)|The behavior of the gradient outside the [0,1] normalized range.|  
-|[CD2DGradientBrush::m_pGradientStops](#cd2dgradientbrush__m_pgradientstops)|A pointer to an array of D2D1_GRADIENT_STOP structures.|  
+|[CD2DGradientBrush::m_arGradientStops](#m_argradientstops)|Array of the D2D1_GRADIENT_STOP structures.|  
+|[CD2DGradientBrush::m_colorInterpolationGamma](#m_colorinterpolationgamma)|The space in which color interpolation between the gradient stops is performed.|  
+|[CD2DGradientBrush::m_extendMode](#m_extendmode)|The behavior of the gradient outside the [0,1] normalized range.|  
+|[CD2DGradientBrush::m_pGradientStops](#m_pgradientstops)|A pointer to an array of D2D1_GRADIENT_STOP structures.|  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -80,14 +80,14 @@ class CD2DGradientBrush : public CD2DBrush;
 ## Requirements  
  **Header:** afxrendertarget.h  
   
-##  <a name="cd2dgradientbrush___dtorcd2dgradientbrush"></a>  CD2DGradientBrush::~CD2DGradientBrush  
+##  <a name="_dtorcd2dgradientbrush"></a>  CD2DGradientBrush::~CD2DGradientBrush  
  The destructor. Called when a D2D gradient brush object is being destroyed.  
   
 ```  
 virtual ~CD2DGradientBrush();
 ```  
   
-##  <a name="cd2dgradientbrush__cd2dgradientbrush"></a>  CD2DGradientBrush::CD2DGradientBrush  
+##  <a name="cd2dgradientbrush"></a>  CD2DGradientBrush::CD2DGradientBrush  
  Constructs a CD2DGradientBrush object.  
   
 ```  
@@ -123,35 +123,35 @@ CD2DGradientBrush(
  `bAutoDestroy`  
  Indicates that the object will be destroyed by owner (pParentTarget).  
   
-##  <a name="cd2dgradientbrush__destroy"></a>  CD2DGradientBrush::Destroy  
+##  <a name="destroy"></a>  CD2DGradientBrush::Destroy  
  Destroys a CD2DGradientBrush object.  
   
 ```  
 virtual void Destroy();
 ```  
   
-##  <a name="cd2dgradientbrush__m_argradientstops"></a>  CD2DGradientBrush::m_arGradientStops  
+##  <a name="m_argradientstops"></a>  CD2DGradientBrush::m_arGradientStops  
  Array of the D2D1_GRADIENT_STOP structures.  
   
 ```  
 CArray<D2D1_GRADIENT_STOP, D2D1_GRADIENT_STOP> m_arGradientStops;  
 ```  
   
-##  <a name="cd2dgradientbrush__m_colorinterpolationgamma"></a>  CD2DGradientBrush::m_colorInterpolationGamma  
+##  <a name="m_colorinterpolationgamma"></a>  CD2DGradientBrush::m_colorInterpolationGamma  
  The space in which color interpolation between the gradient stops is performed.  
   
 ```  
 D2D1_GAMMA m_colorInterpolationGamma;  
 ```  
   
-##  <a name="cd2dgradientbrush__m_extendmode"></a>  CD2DGradientBrush::m_extendMode  
+##  <a name="m_extendmode"></a>  CD2DGradientBrush::m_extendMode  
  The behavior of the gradient outside the [0,1] normalized range.  
   
 ```  
 D2D1_EXTEND_MODE m_extendMode;  
 ```  
   
-##  <a name="cd2dgradientbrush__m_pgradientstops"></a>  CD2DGradientBrush::m_pGradientStops  
+##  <a name="m_pgradientstops"></a>  CD2DGradientBrush::m_pGradientStops  
  A pointer to an array of D2D1_GRADIENT_STOP structures.  
   
 ```  

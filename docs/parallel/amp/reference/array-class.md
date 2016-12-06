@@ -80,8 +80,8 @@ friend class array;
   
 |Name|Description|  
 |----------|-----------------|  
-|[array::operator std::vector&lt;value_type&gt; Operator](#array__operator_vec)|Uses `copy(*this, vector)` to implicitly convert the array to a std::[vector](../../../standard-library/vector-class.md) object.|  
-|[array::operator() Operator](#array__operator_call)|Returns the element value that is specified by the parameters.|  
+|[array::operator std::vector&lt;value_type&gt; Operator](#operator_vec)|Uses `copy(*this, vector)` to implicitly convert the array to a std::[vector](../../../standard-library/vector-class.md) object.|  
+|[array::operator() Operator](#operator_call)|Returns the element value that is specified by the parameters.|  
 |[array::operator[] Operator](#operator_at)|Returns the element that is at the specified index.|  
 |[array::operator= Operator](#operator_eq)|Copies the contents of the specified `array` object into this one.|  
   
@@ -593,7 +593,7 @@ Concurrency::extent<_Rank> get_extent() const restrict(amp,cpu);
 ### Return Value  
  The `extent` object of the [array](array-class.md).  
   
-##  <a name="array__operator_vec"></a>  array::operator std::vector&lt;value_type&gt; Operator  
+##  <a name="operator_vec"></a>  array::operator std::vector&lt;value_type&gt; Operator  
  Uses `copy(*this, vector)` to implicitly convert the array to a std::vector object.  
   
 ```  operator std::vector<value_type>() const restrict(cpu);
@@ -606,7 +606,7 @@ Concurrency::extent<_Rank> get_extent() const restrict(amp,cpu);
 ### Return Value  
  An object of type `vector<T>` that contains a copy of the data that is contained in the array.  
   
-##  <a name="array__operator_call"></a>  array::operator() Operator  
+##  <a name="operator_call"></a>  array::operator() Operator  
  Returns the element value that is specified by the parameters.  
   
 ```  

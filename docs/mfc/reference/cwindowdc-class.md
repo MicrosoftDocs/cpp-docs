@@ -51,13 +51,13 @@ class CWindowDC : public CDC
   
 |Name|Description|  
 |----------|-----------------|  
-|[CWindowDC::CWindowDC](#cwindowdc__cwindowdc)|Constructs a `CWindowDC` object.|  
+|[CWindowDC::CWindowDC](#cwindowdc)|Constructs a `CWindowDC` object.|  
   
 ### Protected Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CWindowDC::m_hWnd](#cwindowdc__m_hwnd)|The `HWND` to which this `CWindowDC` is attached.|  
+|[CWindowDC::m_hWnd](#m_hwnd)|The `HWND` to which this `CWindowDC` is attached.|  
   
 ## Remarks  
  Calls the Windows function [GetWindowDC](http://msdn.microsoft.com/library/windows/desktop/dd144947\(v=vs.85\).aspx)at construction time and [ReleaseDC](http://msdn.microsoft.com/library/windows/desktop/dd162920\(v=vs.85\).aspx) at destruction time. This means that a `CWindowDC` object accesses the entire screen area of a [CWnd](../../mfc/reference/cwnd-class.md) (both client and nonclient areas).  
@@ -74,7 +74,7 @@ class CWindowDC : public CDC
 ## Requirements  
  Header: afxwin.h  
   
-##  <a name="cwindowdc__cwindowdc"></a>  CWindowDC::CWindowDC  
+##  <a name="cwindowdc"></a>  CWindowDC::CWindowDC  
  Constructs a `CWindowDC` object that accesses the entire screen area (both client and nonclient) of the `CWnd` object pointed to by `pWnd`.  
   
 ```  
@@ -93,7 +93,7 @@ explicit CWindowDC(CWnd* pWnd);
 ### Example  
  [!code-cpp[NVC_MFCDocView#188](../../mfc/codesnippet/cpp/cwindowdc-class_1.cpp)]  
   
-##  <a name="cwindowdc__m_hwnd"></a>  CWindowDC::m_hWnd  
+##  <a name="m_hwnd"></a>  CWindowDC::m_hWnd  
  The `HWND` of the `CWnd` pointer is used to construct the `CWindowDC` object.  
   
 ```  
@@ -104,7 +104,7 @@ HWND m_hWnd;
  `m_hWnd` is a protected variable of type `HWND`.  
   
 ### Example  
-  See the example for [CWindowDC::CWindowDC](#cwindowdc__cwindowdc).  
+  See the example for [CWindowDC::CWindowDC](#cwindowdc).  
   
 ## See Also  
  [CDC Class](../../mfc/reference/cdc-class.md)   

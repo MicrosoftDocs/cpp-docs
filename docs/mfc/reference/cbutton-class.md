@@ -55,50 +55,50 @@ class CButton : public CWnd
   
 |Name|Description|  
 |----------|-----------------|  
-|[CButton::CButton](#cbutton__cbutton)|Constructs a `CButton` object.|  
+|[CButton::CButton](#cbutton)|Constructs a `CButton` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CButton::Create](#cbutton__create)|Creates the Windows button control and attaches it to the `CButton` object.|  
-|[CButton::DrawItem](#cbutton__drawitem)|Override to draw an owner-drawn `CButton` object.|  
-|[CButton::GetBitmap](#cbutton__getbitmap)|Retrieves the handle of the bitmap previously set with [SetBitmap](#cbutton__setbitmap).|  
-|[CButton::GetButtonStyle](#cbutton__getbuttonstyle)|Retrieves information about the button control style.|  
-|[CButton::GetCheck](#cbutton__getcheck)|Retrieves the check state of a button control.|  
-|[CButton::GetCursor](#cbutton__getcursor)|Retrieves the handle of the cursor image previously set with [SetCursor](#cbutton__setcursor).|  
-|[CButton::GetIcon](#cbutton__geticon)|Retrieves the handle of the icon previously set with [SetIcon](#cbutton__seticon).|  
-|[CButton::GetIdealSize](#cbutton__getidealsize)|Retrieves the ideal size of the button control.|  
-|[CButton::GetImageList](#cbutton__getimagelist)|Retrieves the image list of the button control.|  
-|[CButton::GetNote](#cbutton__getnote)|Retrieves the note component of the current command link control.|  
-|[CButton::GetNoteLength](#cbutton__getnotelength)|Retrieves the length of the note text for the current command link control.|  
-|[CButton::GetSplitGlyph](#cbutton__getsplitglyph)|Retrieves the glyph associated with the current split button control.|  
-|[CButton::GetSplitImageList](#cbutton__getsplitimagelist)|Retrieves the image list for the current split button control.|  
-|[CButton::GetSplitInfo](#cbutton__getsplitinfo)|Retrieves information that defines the current split button control.|  
-|[CButton::GetSplitSize](#cbutton__getsplitsize)|Retrieves the bounding rectangle of the drop-down component of the current split button control.|  
-|[CButton::GetSplitStyle](#cbutton__getsplitstyle)|Retrieves the split button styles that define the current split button control.|  
-|[CButton::GetState](#cbutton__getstate)|Retrieves the check state, highlight state, and focus state of a button control.|  
-|[CButton::GetTextMargin](#cbutton__gettextmargin)|Retrieves the text margin of the button control.|  
-|[CButton::SetBitmap](#cbutton__setbitmap)|Specifies a bitmap to be displayed on the button.|  
-|[CButton::SetButtonStyle](#cbutton__setbuttonstyle)|Changes the style of a button.|  
-|[CButton::SetCheck](#cbutton__setcheck)|Sets the check state of a button control.|  
-|[CButton::SetCursor](#cbutton__setcursor)|Specifies a cursor image to be displayed on the button.|  
-|[CButton::SetDropDownState](#cbutton__setdropdownstate)|Sets the drop-down state of the current split button control.|  
-|[CButton::SetIcon](#cbutton__seticon)|Specifies an icon to be displayed on the button.|  
-|[CButton::SetImageList](#cbutton__setimagelist)|Sets the image list of the button control.|  
-|[CButton::SetNote](#cbutton__setnote)|Sets the note on the current command link control.|  
-|[CButton::SetSplitGlyph](#cbutton__setsplitglyph)|Associates a specified glyph with the current split button control.|  
-|[CButton::SetSplitImageList](#cbutton__setsplitimagelist)|Associates an image list with the current split button control.|  
-|[CButton::SetSplitInfo](#cbutton__setsplitinfo)|Specifies information that defines the current split button control.|  
-|[CButton::SetSplitSize](#cbutton__setsplitsize)|Sets the bounding rectangle of the drop-down component of the current split button control.|  
-|[CButton::SetSplitStyle](#cbutton__setsplitstyle)|Sets the style of the current split button control.|  
-|[CButton::SetState](#cbutton__setstate)|Sets the highlighting state of a button control.|  
-|[CButton::SetTextMargin](#cbutton__settextmargin)|Sets the text margin of the button control.|  
+|[CButton::Create](#create)|Creates the Windows button control and attaches it to the `CButton` object.|  
+|[CButton::DrawItem](#drawitem)|Override to draw an owner-drawn `CButton` object.|  
+|[CButton::GetBitmap](#getbitmap)|Retrieves the handle of the bitmap previously set with [SetBitmap](#setbitmap).|  
+|[CButton::GetButtonStyle](#getbuttonstyle)|Retrieves information about the button control style.|  
+|[CButton::GetCheck](#getcheck)|Retrieves the check state of a button control.|  
+|[CButton::GetCursor](#getcursor)|Retrieves the handle of the cursor image previously set with [SetCursor](#setcursor).|  
+|[CButton::GetIcon](#geticon)|Retrieves the handle of the icon previously set with [SetIcon](#seticon).|  
+|[CButton::GetIdealSize](#getidealsize)|Retrieves the ideal size of the button control.|  
+|[CButton::GetImageList](#getimagelist)|Retrieves the image list of the button control.|  
+|[CButton::GetNote](#getnote)|Retrieves the note component of the current command link control.|  
+|[CButton::GetNoteLength](#getnotelength)|Retrieves the length of the note text for the current command link control.|  
+|[CButton::GetSplitGlyph](#getsplitglyph)|Retrieves the glyph associated with the current split button control.|  
+|[CButton::GetSplitImageList](#getsplitimagelist)|Retrieves the image list for the current split button control.|  
+|[CButton::GetSplitInfo](#getsplitinfo)|Retrieves information that defines the current split button control.|  
+|[CButton::GetSplitSize](#getsplitsize)|Retrieves the bounding rectangle of the drop-down component of the current split button control.|  
+|[CButton::GetSplitStyle](#getsplitstyle)|Retrieves the split button styles that define the current split button control.|  
+|[CButton::GetState](#getstate)|Retrieves the check state, highlight state, and focus state of a button control.|  
+|[CButton::GetTextMargin](#gettextmargin)|Retrieves the text margin of the button control.|  
+|[CButton::SetBitmap](#setbitmap)|Specifies a bitmap to be displayed on the button.|  
+|[CButton::SetButtonStyle](#setbuttonstyle)|Changes the style of a button.|  
+|[CButton::SetCheck](#setcheck)|Sets the check state of a button control.|  
+|[CButton::SetCursor](#setcursor)|Specifies a cursor image to be displayed on the button.|  
+|[CButton::SetDropDownState](#setdropdownstate)|Sets the drop-down state of the current split button control.|  
+|[CButton::SetIcon](#seticon)|Specifies an icon to be displayed on the button.|  
+|[CButton::SetImageList](#setimagelist)|Sets the image list of the button control.|  
+|[CButton::SetNote](#setnote)|Sets the note on the current command link control.|  
+|[CButton::SetSplitGlyph](#setsplitglyph)|Associates a specified glyph with the current split button control.|  
+|[CButton::SetSplitImageList](#setsplitimagelist)|Associates an image list with the current split button control.|  
+|[CButton::SetSplitInfo](#setsplitinfo)|Specifies information that defines the current split button control.|  
+|[CButton::SetSplitSize](#setsplitsize)|Sets the bounding rectangle of the drop-down component of the current split button control.|  
+|[CButton::SetSplitStyle](#setsplitstyle)|Sets the style of the current split button control.|  
+|[CButton::SetState](#setstate)|Sets the highlighting state of a button control.|  
+|[CButton::SetTextMargin](#settextmargin)|Sets the text margin of the button control.|  
   
 ## Remarks  
  A button control is a small, rectangular child window that can be clicked on and off. Buttons can be used alone or in groups and can either be labeled or appear without text. A button typically changes appearance when the user clicks it.  
   
- Typical buttons are the check box, radio button, and pushbutton. A `CButton` object can become any of these, according to the [button style](../../mfc/reference/button-styles.md) specified at its initialization by the [Create](#cbutton__create) member function.  
+ Typical buttons are the check box, radio button, and pushbutton. A `CButton` object can become any of these, according to the [button style](../../mfc/reference/button-styles.md) specified at its initialization by the [Create](#create) member function.  
   
  In addition, the [CBitmapButton](../../mfc/reference/cbitmapbutton-class.md) class derived from `CButton` supports creation of button controls labeled with bitmap images instead of text. A `CBitmapButton` can have separate bitmaps for a button's up, down, focused, and disabled states.  
   
@@ -141,7 +141,7 @@ class CButton : public CWnd
 ## Requirements  
  **Header:** afxwin.h  
   
-##  <a name="cbutton__cbutton"></a>  CButton::CButton  
+##  <a name="cbutton"></a>  CButton::CButton  
  Constructs a `CButton` object.  
   
 ```  
@@ -151,7 +151,7 @@ CButton();
 ### Example  
  [!code-cpp[NVC_MFC_CButton#1](../../mfc/reference/codesnippet/cpp/cbutton-class_1.cpp)]  
   
-##  <a name="cbutton__create"></a>  CButton::Create  
+##  <a name="create"></a>  CButton::Create  
  Creates the Windows button control and attaches it to the `CButton` object.  
   
 ```  
@@ -202,7 +202,7 @@ virtual BOOL Create(
 ### Example  
  [!code-cpp[NVC_MFC_CButton#2](../../mfc/reference/codesnippet/cpp/cbutton-class_2.cpp)]  
   
-##  <a name="cbutton__drawitem"></a>  CButton::DrawItem  
+##  <a name="drawitem"></a>  CButton::DrawItem  
  Called by the framework when a visual aspect of an owner-drawn button has changed.  
   
 ```  
@@ -221,8 +221,8 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### Example  
  [!code-cpp[NVC_MFC_CButton#3](../../mfc/reference/codesnippet/cpp/cbutton-class_3.cpp)]  
   
-##  <a name="cbutton__getbitmap"></a>  CButton::GetBitmap  
- Call this member function to get the handle of a bitmap, previously set with [SetBitmap](#cbutton__setbitmap), that is associated with a button.  
+##  <a name="getbitmap"></a>  CButton::GetBitmap  
+ Call this member function to get the handle of a bitmap, previously set with [SetBitmap](#setbitmap), that is associated with a button.  
   
 ```  
 HBITMAP GetBitmap() const;
@@ -236,7 +236,7 @@ HBITMAP GetBitmap() const;
 ### Example  
  [!code-cpp[NVC_MFC_CButton#4](../../mfc/reference/codesnippet/cpp/cbutton-class_4.cpp)]  
   
-##  <a name="cbutton__getbuttonstyle"></a>  CButton::GetButtonStyle  
+##  <a name="getbuttonstyle"></a>  CButton::GetButtonStyle  
  Retrieves information about the button control style.  
   
 ```  
@@ -251,7 +251,7 @@ UINT GetButtonStyle() const;
 ### Example  
  [!code-cpp[NVC_MFC_CButton#5](../../mfc/reference/codesnippet/cpp/cbutton-class_5.cpp)]  
   
-##  <a name="cbutton__getcheck"></a>  CButton::GetCheck  
+##  <a name="getcheck"></a>  CButton::GetCheck  
  Retrieves the check state of a radio button or check box.  
   
 ```  
@@ -274,8 +274,8 @@ int GetCheck() const;
 ### Example  
  [!code-cpp[NVC_MFC_CButton#6](../../mfc/reference/codesnippet/cpp/cbutton-class_6.cpp)]  
   
-##  <a name="cbutton__getcursor"></a>  CButton::GetCursor  
- Call this member function to get the handle of a cursor, previously set with [SetCursor](#cbutton__setcursor), that is associated with a button.  
+##  <a name="getcursor"></a>  CButton::GetCursor  
+ Call this member function to get the handle of a cursor, previously set with [SetCursor](#setcursor), that is associated with a button.  
   
 ```  
 HCURSOR GetCursor();
@@ -289,8 +289,8 @@ HCURSOR GetCursor();
 ### Example  
  [!code-cpp[NVC_MFC_CButton#7](../../mfc/reference/codesnippet/cpp/cbutton-class_7.cpp)]  
   
-##  <a name="cbutton__geticon"></a>  CButton::GetIcon  
- Call this member function to get the handle of an icon, previously set with [SetIcon](#cbutton__seticon), that is associated with a button.  
+##  <a name="geticon"></a>  CButton::GetIcon  
+ Call this member function to get the handle of an icon, previously set with [SetIcon](#seticon), that is associated with a button.  
   
 ```  
 HICON GetIcon() const;
@@ -304,7 +304,7 @@ HICON GetIcon() const;
 ### Example  
  [!code-cpp[NVC_MFC_CButton#8](../../mfc/reference/codesnippet/cpp/cbutton-class_8.cpp)]  
   
-##  <a name="cbutton__getidealsize"></a>  CButton::GetIdealSize  
+##  <a name="getidealsize"></a>  CButton::GetIdealSize  
  Retrieves the ideal size for the button control.  
   
 ```  
@@ -321,7 +321,7 @@ BOOL GetIdealSize(SIZE* psize);
 ### Remarks  
  This member function emulates the functionality of the **BCM_GETIDEALSIZE** message, as described in the [Buttons](http://msdn.microsoft.com/library/windows/desktop/bb775943) section of the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="cbutton__getimagelist"></a>  CButton::GetImageList  
+##  <a name="getimagelist"></a>  CButton::GetImageList  
  Call this method to get the image list from the button control.  
   
 ```  
@@ -338,7 +338,7 @@ BOOL GetImageList(PBUTTON_IMAGELIST pbuttonImagelist);
 ### Remarks  
  This member function emulates the functionality of the **BCM_GETIMAGELIST** message, as described in the [Buttons](http://msdn.microsoft.com/library/windows/desktop/bb775943) section of the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="cbutton__getnote"></a>  CButton::GetNote  
+##  <a name="getnote"></a>  CButton::GetNote  
  Retrieves the note text associated with the current command link control.  
   
 ```  
@@ -371,7 +371,7 @@ BOOL GetNote(
   
  This method sends the [BCM_GETNOTE](http://msdn.microsoft.com/library/windows/desktop/bb775965) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="cbutton__getnotelength"></a>  CButton::GetNoteLength  
+##  <a name="getnotelength"></a>  CButton::GetNoteLength  
  Retrieves the length of the note text for the current command link control.  
   
 ```  
@@ -388,7 +388,7 @@ UINT GetNoteLength() const;
   
  This method sends the [BCM_GETNOTELENGTH](http://msdn.microsoft.com/library/windows/desktop/bb775967) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="cbutton__getsplitglyph"></a>  CButton::GetSplitGlyph  
+##  <a name="getsplitglyph"></a>  CButton::GetSplitGlyph  
  Retrieves the glyph associated with the current split button control.  
   
 ```  
@@ -407,7 +407,7 @@ TCHAR GetSplitGlyph() const;
   
  This method initializes the `mask` member of a [BUTTON_SPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775955) structure with the `BCSIF_GLYPH` flag, and then sends that structure in the [BCM_GETSPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775969) message that is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. When the message function returns, this method retrieves the glyph from the `himlGlyph` member of the structure.  
   
-##  <a name="cbutton__getsplitimagelist"></a>  CButton::GetSplitImageList  
+##  <a name="getsplitimagelist"></a>  CButton::GetSplitImageList  
  Retrieves the [image list](../../mfc/reference/cimagelist-class.md) for the current split button control.  
   
 ```  
@@ -424,7 +424,7 @@ CImageList* GetSplitImageList() const;
   
  This method initializes the `mask` member of a [BUTTON_SPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775955) structure with the `BCSIF_IMAGE` flag, and then sends that structure in the [BCM_GETSPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775969) message that is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. When the message function returns, this method retrieves the image list from the `himlGlyph` member of the structure.  
   
-##  <a name="cbutton__getsplitinfo"></a>  CButton::GetSplitInfo  
+##  <a name="getsplitinfo"></a>  CButton::GetSplitInfo  
  Retrieves parameters that determine how Windows draws the current split button control.  
   
 ```  
@@ -447,7 +447,7 @@ BOOL GetSplitInfo(PBUTTON_SPLITINFO pInfo) const;
   
  This method sends the [BCM_GETSPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775969) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="cbutton__getsplitsize"></a>  CButton::GetSplitSize  
+##  <a name="getsplitsize"></a>  CButton::GetSplitSize  
  Retrieves the bounding rectangle of the drop-down component of the current split button control.  
   
 ```  
@@ -472,7 +472,7 @@ BOOL GetSplitSize(LPSIZE pSize) const;
   
  This method initializes the `mask` member of a [BUTTON_SPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775955) structure with the `BCSIF_SIZE` flag, and then sends that structure in the [BCM_GETSPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775969) message that is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. When the message function returns, this method retrieves the bounding rectangle from the `size` member of the structure.  
   
-##  <a name="cbutton__getsplitstyle"></a>  CButton::GetSplitStyle  
+##  <a name="getsplitstyle"></a>  CButton::GetSplitStyle  
  Retrieves the split button styles that define the current split button control.  
   
 ```  
@@ -491,7 +491,7 @@ UINT GetSplitStyle() const;
   
  This method initializes the `mask` member of a [BUTTON_SPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775955) structure with the `BCSIF_STYLE` flag, and then sends that structure in the [BCM_GETSPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775969) message that is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. When the message function returns, this method retrieves the split button styles from the `uSplitStyle` member of the structure.  
   
-##  <a name="cbutton__getstate"></a>  CButton::GetState  
+##  <a name="getstate"></a>  CButton::GetState  
  Retrieves the state of a button control.  
   
 ```  
@@ -517,7 +517,7 @@ UINT GetState() const;
 ### Example  
  [!code-cpp[NVC_MFC_CButton#9](../../mfc/reference/codesnippet/cpp/cbutton-class_9.cpp)]  
   
-##  <a name="cbutton__gettextmargin"></a>  CButton::GetTextMargin  
+##  <a name="gettextmargin"></a>  CButton::GetTextMargin  
  Call this method to get the text margin of the `CButton` object.  
   
 ```  
@@ -537,7 +537,7 @@ BOOL GetTextMargin(RECT* pmargin);
 ### Remarks  
  This member function emulates the functionality of the **BCM_GETTEXTMARGIN** message, as described in the [Buttons](http://msdn.microsoft.com/library/windows/desktop/bb775943) section of the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="cbutton__setbitmap"></a>  CButton::SetBitmap  
+##  <a name="setbitmap"></a>  CButton::SetBitmap  
  Call this member function to associate a new bitmap with the button.  
   
 ```  
@@ -573,7 +573,7 @@ HBITMAP SetBitmap(HBITMAP hBitmap);
 ### Example  
  [!code-cpp[NVC_MFC_CButton#4](../../mfc/reference/codesnippet/cpp/cbutton-class_4.cpp)]  
   
-##  <a name="cbutton__setbuttonstyle"></a>  CButton::SetButtonStyle  
+##  <a name="setbuttonstyle"></a>  CButton::SetButtonStyle  
  Changes the style of a button.  
   
 ```  
@@ -595,7 +595,7 @@ void SetButtonStyle(
 ### Example  
  [!code-cpp[NVC_MFC_CButton#5](../../mfc/reference/codesnippet/cpp/cbutton-class_5.cpp)]  
   
-##  <a name="cbutton__setcheck"></a>  CButton::SetCheck  
+##  <a name="setcheck"></a>  CButton::SetCheck  
  Sets or resets the check state of a radio button or check box.  
   
 ```  
@@ -618,7 +618,7 @@ void SetCheck(int nCheck);
 ### Example  
  [!code-cpp[NVC_MFC_CButton#6](../../mfc/reference/codesnippet/cpp/cbutton-class_6.cpp)]  
   
-##  <a name="cbutton__setcursor"></a>  CButton::SetCursor  
+##  <a name="setcursor"></a>  CButton::SetCursor  
  Call this member function to associate a new cursor with the button.  
   
 ```  
@@ -652,7 +652,7 @@ HCURSOR SetCursor(HCURSOR hCursor);
 ### Example  
  [!code-cpp[NVC_MFC_CButton#7](../../mfc/reference/codesnippet/cpp/cbutton-class_7.cpp)]  
   
-##  <a name="cbutton__setdropdownstate"></a>  CButton::SetDropDownState  
+##  <a name="setdropdownstate"></a>  CButton::SetDropDownState  
  Sets the drop-down state of the current split button control.  
   
 ```  
@@ -683,7 +683,7 @@ BOOL SetDropDownState(BOOL fDropDown);
   
  [!code-cpp[NVC_MFC_CButton_s1#6](../../mfc/reference/codesnippet/cpp/cbutton-class_11.cpp)]  
   
-##  <a name="cbutton__setelevationrequired"></a>  CButton::SetElevationRequired  
+##  <a name="setelevationrequired"></a>  CButton::SetElevationRequired  
  Sets the state of the current button control to `elevation required`, which is necessary for the control to display an elevated security icon.  
   
 ```  
@@ -704,7 +704,7 @@ BOOL SetElevationRequired(BOOL fElevationRequired);
   
  This method sends the [BCM_SETSHIELD](http://msdn.microsoft.com/library/windows/desktop/bb775979) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="cbutton__seticon"></a>  CButton::SetIcon  
+##  <a name="seticon"></a>  CButton::SetIcon  
  Call this member function to associate a new icon with the button.  
   
 ```  
@@ -738,7 +738,7 @@ HICON SetIcon(HICON hIcon);
 ### Example  
  [!code-cpp[NVC_MFC_CButton#8](../../mfc/reference/codesnippet/cpp/cbutton-class_8.cpp)]  
   
-##  <a name="cbutton__setimagelist"></a>  CButton::SetImageList  
+##  <a name="setimagelist"></a>  CButton::SetImageList  
  Call this method to set the image list of the `CButton` object.  
   
 ```  
@@ -755,7 +755,7 @@ BOOL SetImageList(PBUTTON_IMAGELIST pbuttonImagelist);
 ### Remarks  
  This member function emulates the functionality of the **BCM_SETIMAGELIST** message, as described in the [Buttons](http://msdn.microsoft.com/library/windows/desktop/bb775943) section of the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="cbutton__setnote"></a>  CButton::SetNote  
+##  <a name="setnote"></a>  CButton::SetNote  
  Sets the note text for the current command link control.  
   
 ```  
@@ -786,7 +786,7 @@ BOOL SetNote(LPCTSTR lpszNote);
   
  [!code-cpp[NVC_MFC_CButton_s1#7](../../mfc/reference/codesnippet/cpp/cbutton-class_12.cpp)]  
   
-##  <a name="cbutton__setsplitglyph"></a>  CButton::SetSplitGlyph  
+##  <a name="setsplitglyph"></a>  CButton::SetSplitGlyph  
  Associates a specified glyph with the current split button control.  
   
 ```  
@@ -809,7 +809,7 @@ BOOL SetSplitGlyph(TCHAR chGlyph);
   
  This method initializes the `mask` member of a [BUTTON_SPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775955) structure with the `BCSIF_GLYPH` flag and the `himlGlyph` member with the `chGlyph` parameter, and then sends that structure in the [BCM_GETSPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775969) message that is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="cbutton__setsplitimagelist"></a>  CButton::SetSplitImageList  
+##  <a name="setsplitimagelist"></a>  CButton::SetSplitImageList  
  Associates an [image list](../../mfc/reference/cimagelist-class.md) with the current split button control.  
   
 ```  
@@ -830,7 +830,7 @@ BOOL SetSplitImageList(CImageList* pSplitImageList);
   
  This method initializes the `mask` member of a [BUTTON_SPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775955) structure with the `BCSIF_IMAGE` flag and the `himlGlyph` member with the `pSplitImageList` parameter, and then sends that structure in the [BCM_GETSPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775969) message that is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="cbutton__setsplitinfo"></a>  CButton::SetSplitInfo  
+##  <a name="setsplitinfo"></a>  CButton::SetSplitInfo  
  Specifies parameters that determine how Windows draws the current split button control.  
   
 ```  
@@ -857,11 +857,11 @@ BOOL SetSplitInfo(PBUTTON_SPLITINFO pInfo);
  [!code-cpp[NVC_MFC_CButton_s1#1](../../mfc/reference/codesnippet/cpp/cbutton-class_10.h)]  
   
 ### Example  
- The following code example changes the glyph that is used for the split button drop-down arrow. The example substitutes an up-pointing triangle glyph for the default down-pointing triangle glyph. The glyph that is displayed depends on the character that you specify in the `himlGlyph` member of the `BUTTON_SPLITINFO` structure. The down-pointing triangle glyph is specified by a character '6' and the up-pointing triangle glyph is specified by a character '5'. For comparison, see the convenience method, [CButton::SetSplitGlyph](#cbutton__setsplitglyph).  
+ The following code example changes the glyph that is used for the split button drop-down arrow. The example substitutes an up-pointing triangle glyph for the default down-pointing triangle glyph. The glyph that is displayed depends on the character that you specify in the `himlGlyph` member of the `BUTTON_SPLITINFO` structure. The down-pointing triangle glyph is specified by a character '6' and the up-pointing triangle glyph is specified by a character '5'. For comparison, see the convenience method, [CButton::SetSplitGlyph](#setsplitglyph).  
   
  [!code-cpp[NVC_MFC_CButton_s1#4](../../mfc/reference/codesnippet/cpp/cbutton-class_13.cpp)]  
   
-##  <a name="cbutton__setsplitsize"></a>  CButton::SetSplitSize  
+##  <a name="setsplitsize"></a>  CButton::SetSplitSize  
  Sets the bounding rectangle of the drop-down component of the current split button control.  
   
 ```  
@@ -894,7 +894,7 @@ BOOL SetSplitSize(LPSIZE pSize);
   
  [!code-cpp[NVC_MFC_CButton_s1#5](../../mfc/reference/codesnippet/cpp/cbutton-class_14.cpp)]  
   
-##  <a name="cbutton__setsplitstyle"></a>  CButton::SetSplitStyle  
+##  <a name="setsplitstyle"></a>  CButton::SetSplitStyle  
  Sets the style of the current split button control.  
   
 ```  
@@ -927,7 +927,7 @@ BOOL SetSplitStyle(UINT uSplitStyle);
   
  [!code-cpp[NVC_MFC_CButton_s1#3](../../mfc/reference/codesnippet/cpp/cbutton-class_15.cpp)]  
   
-##  <a name="cbutton__setstate"></a>  CButton::SetState  
+##  <a name="setstate"></a>  CButton::SetState  
  Sets whether a button control is highlighted or not.  
   
 ```  
@@ -946,7 +946,7 @@ void SetState(BOOL bHighlight);
 ### Example  
  [!code-cpp[NVC_MFC_CButton#9](../../mfc/reference/codesnippet/cpp/cbutton-class_9.cpp)]  
   
-##  <a name="cbutton__settextmargin"></a>  CButton::SetTextMargin  
+##  <a name="settextmargin"></a>  CButton::SetTextMargin  
  Call this method to set the text margin of the `CButton` object.  
   
 ```  

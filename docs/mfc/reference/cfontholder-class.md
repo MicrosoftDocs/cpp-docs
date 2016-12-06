@@ -51,26 +51,26 @@ class CFontHolder
   
 |Name|Description|  
 |----------|-----------------|  
-|[CFontHolder::CFontHolder](#cfontholder__cfontholder)|Constructs a `CFontHolder` object.|  
+|[CFontHolder::CFontHolder](#cfontholder)|Constructs a `CFontHolder` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CFontHolder::GetDisplayString](#cfontholder__getdisplaystring)|Retrieves the string displayed in a container's property browser.|  
-|[CFontHolder::GetFontDispatch](#cfontholder__getfontdispatch)|Returns the font's `IDispatch` interface.|  
-|[CFontHolder::GetFontHandle](#cfontholder__getfonthandle)|Returns a handle to a Windows font.|  
-|[CFontHolder::InitializeFont](#cfontholder__initializefont)|Initializes a `CFontHolder` object.|  
-|[CFontHolder::QueryTextMetrics](#cfontholder__querytextmetrics)|Retrieves information for the related font.|  
-|[CFontHolder::ReleaseFont](#cfontholder__releasefont)|Disconnects the `CFontHolder` object from the `IFont` and `IFontNotification` interfaces.|  
-|[CFontHolder::Select](#cfontholder__select)|Selects a font resource into a device context.|  
-|[CFontHolder::SetFont](#cfontholder__setfont)|Connects the `CFontHolder` object to an `IFont` interface.|  
+|[CFontHolder::GetDisplayString](#getdisplaystring)|Retrieves the string displayed in a container's property browser.|  
+|[CFontHolder::GetFontDispatch](#getfontdispatch)|Returns the font's `IDispatch` interface.|  
+|[CFontHolder::GetFontHandle](#getfonthandle)|Returns a handle to a Windows font.|  
+|[CFontHolder::InitializeFont](#initializefont)|Initializes a `CFontHolder` object.|  
+|[CFontHolder::QueryTextMetrics](#querytextmetrics)|Retrieves information for the related font.|  
+|[CFontHolder::ReleaseFont](#releasefont)|Disconnects the `CFontHolder` object from the `IFont` and `IFontNotification` interfaces.|  
+|[CFontHolder::Select](#select)|Selects a font resource into a device context.|  
+|[CFontHolder::SetFont](#setfont)|Connects the `CFontHolder` object to an `IFont` interface.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CFontHolder::m_pFont](#cfontholder__m_pfont)|A pointer to the `CFontHolder` object's `IFont` interface.|  
+|[CFontHolder::m_pFont](#m_pfont)|A pointer to the `CFontHolder` object's `IFont` interface.|  
   
 ## Remarks  
  `CFontHolder` does not have a base class.  
@@ -83,7 +83,7 @@ class CFontHolder
 ## Requirements  
  **Header:** afxctl.h  
   
-##  <a name="cfontholder__cfontholder"></a>  CFontHolder::CFontHolder  
+##  <a name="cfontholder"></a>  CFontHolder::CFontHolder  
  Constructs a `CFontHolder` object.  
   
 ```  
@@ -97,7 +97,7 @@ explicit CFontHolder(LPPROPERTYNOTIFYSINK pNotify);
 ### Remarks  
  You must call `InitializeFont` to initialize the resulting object before using it.  
   
-##  <a name="cfontholder__getdisplaystring"></a>  CFontHolder::GetDisplayString  
+##  <a name="getdisplaystring"></a>  CFontHolder::GetDisplayString  
  Retrieves a string that can be displayed in a container's property browser.  
   
 ```  
@@ -111,7 +111,7 @@ BOOL GetDisplayString(CString& strValue);
 ### Return Value  
  Nonzero if the string is successfully retrieved; otherwise 0.  
   
-##  <a name="cfontholder__getfontdispatch"></a>  CFontHolder::GetFontDispatch  
+##  <a name="getfontdispatch"></a>  CFontHolder::GetFontDispatch  
  Call this function to retrieve a pointer to the font's dispatch interface.  
   
 ```  
@@ -124,7 +124,7 @@ LPFONTDISP GetFontDispatch();
 ### Remarks  
  Call `InitializeFont` before calling `GetFontDispatch`.  
   
-##  <a name="cfontholder__getfonthandle"></a>  CFontHolder::GetFontHandle  
+##  <a name="getfonthandle"></a>  CFontHolder::GetFontHandle  
  Call this function to get a handle to a Windows font.  
   
 ```  
@@ -153,7 +153,7 @@ HFONT GetFontHandle(
   
  The version with no parameters returns a handle to a font sized correctly for the screen.  
   
-##  <a name="cfontholder__initializefont"></a>  CFontHolder::InitializeFont  
+##  <a name="initializefont"></a>  CFontHolder::InitializeFont  
  Initializes a `CFontHolder` object.  
   
 ```  
@@ -176,14 +176,14 @@ void InitializeFont(
   
  Call this function after constructing a `CFontHolder` object.  
   
-##  <a name="cfontholder__m_pfont"></a>  CFontHolder::m_pFont  
+##  <a name="m_pfont"></a>  CFontHolder::m_pFont  
  A pointer to the `CFontHolder` object's `IFont` interface.  
   
 ```  
 LPFONT m_pFont;  
 ```  
   
-##  <a name="cfontholder__querytextmetrics"></a>  CFontHolder::QueryTextMetrics  
+##  <a name="querytextmetrics"></a>  CFontHolder::QueryTextMetrics  
  Retrieves information on the physical font represented by the `CFontHolder` object.  
   
 ```  
@@ -194,14 +194,14 @@ void QueryTextMetrics(LPTEXTMETRIC lptm);
  `lptm`  
  A pointer to a [TEXTMETRIC](http://msdn.microsoft.com/library/windows/desktop/dd145132) structure that will receive the information.  
   
-##  <a name="cfontholder__releasefont"></a>  CFontHolder::ReleaseFont  
+##  <a name="releasefont"></a>  CFontHolder::ReleaseFont  
  This function disconnects the `CFontHolder` object from its `IFont` interface.  
   
 ```  
 void ReleaseFont();
 ```  
   
-##  <a name="cfontholder__select"></a>  CFontHolder::Select  
+##  <a name="select"></a>  CFontHolder::Select  
  Call this function to select your control's font into the specified device context.  
   
 ```  
@@ -225,9 +225,9 @@ CFont* Select(
  A pointer to the font that is being replaced.  
   
 ### Remarks  
- See [GetFontHandle](#cfontholder__getfonthandle) for a discussion of the `cyLogical` and `cyHimetric` parameters.  
+ See [GetFontHandle](#getfonthandle) for a discussion of the `cyLogical` and `cyHimetric` parameters.  
   
-##  <a name="cfontholder__setfont"></a>  CFontHolder::SetFont  
+##  <a name="setfont"></a>  CFontHolder::SetFont  
  Releases any existing font and connects the `CFontHolder` object to an `IFont` interface.  
   
 ```  

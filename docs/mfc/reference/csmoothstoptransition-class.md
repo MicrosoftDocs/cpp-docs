@@ -50,20 +50,20 @@ class CSmoothStopTransition : public CBaseTransition;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSmoothStopTransition::CSmoothStopTransition](#csmoothstoptransition__csmoothstoptransition)|Constructs a smooth-stop transition and initializes its maximum duration and final value.|  
+|[CSmoothStopTransition::CSmoothStopTransition](#csmoothstoptransition)|Constructs a smooth-stop transition and initializes its maximum duration and final value.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSmoothStopTransition::Create](#csmoothstoptransition__create)|Calls the transition library to create encapsulated transition COM object. (Overrides [CBaseTransition::Create](../../mfc/reference/cbasetransition-class.md#cbasetransition__create).)|  
+|[CSmoothStopTransition::Create](#create)|Calls the transition library to create encapsulated transition COM object. (Overrides [CBaseTransition::Create](../../mfc/reference/cbasetransition-class.md#create).)|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSmoothStopTransition::m_dblFinalValue](#csmoothstoptransition__m_dblfinalvalue)|The value of the animation variable at the end of the transition.|  
-|[CSmoothStopTransition::m_maximumDuration](#csmoothstoptransition__m_maximumduration)|The maximum duration of the transition.|  
+|[CSmoothStopTransition::m_dblFinalValue](#m_dblfinalvalue)|The value of the animation variable at the end of the transition.|  
+|[CSmoothStopTransition::m_maximumDuration](#m_maximumduration)|The maximum duration of the transition.|  
   
 ## Remarks  
  A smooth-stop transition slows down as it approaches a given final value, and reaches it with a velocity of zero. The duration of the transition is determined by the initial velocity, the difference between the initial and final values, and the specified maximum duration. If there is no solution consisting of a single parabolic arc, this method creates a cubic transition. Because all transitions are cleared automatically, it's recommended to allocated them using operator new. The encapsulated IUIAnimationTransition COM object is created by CAnimationController::AnimateGroup, until then it's NULL. Changing member variables after creation of this COM object has no effect.  
@@ -78,7 +78,7 @@ class CSmoothStopTransition : public CBaseTransition;
 ## Requirements  
  **Header:** afxanimationcontroller.h  
   
-##  <a name="csmoothstoptransition__create"></a>  CSmoothStopTransition::Create  
+##  <a name="create"></a>  CSmoothStopTransition::Create  
  Calls the transition library to create encapsulated transition COM object.  
   
 ```  
@@ -94,7 +94,7 @@ virtual BOOL Create(
 ### Return Value  
  TRUE if transition is created successfully; otherwise FALSE.  
   
-##  <a name="csmoothstoptransition__csmoothstoptransition"></a>  CSmoothStopTransition::CSmoothStopTransition  
+##  <a name="csmoothstoptransition"></a>  CSmoothStopTransition::CSmoothStopTransition  
  Constructs a smooth-stop transition and initializes its maximum duration and final value.  
   
 ```  
@@ -110,14 +110,14 @@ CSmoothStopTransition(
  `dblFinalValue`  
  The value of the animation variable at the end of the transition.  
   
-##  <a name="csmoothstoptransition__m_dblfinalvalue"></a>  CSmoothStopTransition::m_dblFinalValue  
+##  <a name="m_dblfinalvalue"></a>  CSmoothStopTransition::m_dblFinalValue  
  The value of the animation variable at the end of the transition.  
   
 ```  
 DOUBLE m_dblFinalValue;  
 ```  
   
-##  <a name="csmoothstoptransition__m_maximumduration"></a>  CSmoothStopTransition::m_maximumDuration  
+##  <a name="m_maximumduration"></a>  CSmoothStopTransition::m_maximumDuration  
  The maximum duration of the transition.  
   
 ```  

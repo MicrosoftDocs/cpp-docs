@@ -54,7 +54,7 @@ class CGopherFile : public CInternetFile
   
 |Name|Description|  
 |----------|-----------------|  
-|[CGopherFile::CGopherFile](#cgopherfile__cgopherfile)|Constructs a `CGopherFile` object.|  
+|[CGopherFile::CGopherFile](#cgopherfile)|Constructs a `CGopherFile` object.|  
   
 ## Remarks  
  The gopher service does not allow users to write data to a gopher file because this service functions mainly as a menu-driven interface for finding information. The `CGopherFile` member functions **Write**, `WriteString`, and `Flush` are not implemented for `CGopherFile`. Calling these functions on a `CGopherFile` object, returns a [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md).  
@@ -75,7 +75,7 @@ class CGopherFile : public CInternetFile
 ## Requirements  
  **Header:** afxinet.h  
   
-##  <a name="cgopherfile__cgopherfile"></a>  CGopherFile::CGopherFile  
+##  <a name="cgopherfile"></a>  CGopherFile::CGopherFile  
  This member function is called to construct a `CGopherFile` object.  
   
 ```  
@@ -118,7 +118,7 @@ CGopherFile(
 ### Remarks  
  You need a `CGopherFile` object to read from a file during a gopher Internet session.  
   
- You never create a `CGopherFile` object directly. Instead, call [CGopherConnection::OpenFile](../../mfc/reference/cgopherconnection-class.md#cgopherconnection__openfile) to open a file on a gopher server.  
+ You never create a `CGopherFile` object directly. Instead, call [CGopherConnection::OpenFile](../../mfc/reference/cgopherconnection-class.md#openfile) to open a file on a gopher server.  
   
 ## See Also  
  [CInternetFile Class](../../mfc/reference/cinternetfile-class.md)   

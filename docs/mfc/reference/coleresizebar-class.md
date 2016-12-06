@@ -54,13 +54,13 @@ class COleResizeBar : public CControlBar
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleResizeBar::COleResizeBar](#coleresizebar__coleresizebar)|Constructs a `COleResizeBar` object.|  
+|[COleResizeBar::COleResizeBar](#coleresizebar)|Constructs a `COleResizeBar` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleResizeBar::Create](#coleresizebar__create)|Creates and initializes a Windows child window and associates it to the `COleResizeBar` object.|  
+|[COleResizeBar::Create](#create)|Creates and initializes a Windows child window and associates it to the `COleResizeBar` object.|  
   
 ## Remarks  
  `COleResizeBar` objects appear as a [CRectTracker](../../mfc/reference/crecttracker-class.md) with a hatched border and outer resize handles.  
@@ -83,7 +83,7 @@ class COleResizeBar : public CControlBar
 ## Requirements  
  **Header:** afxole.h  
   
-##  <a name="coleresizebar__coleresizebar"></a>  COleResizeBar::COleResizeBar  
+##  <a name="coleresizebar"></a>  COleResizeBar::COleResizeBar  
  Constructs a `COleResizeBar` object.  
   
 ```  
@@ -93,7 +93,7 @@ COleResizeBar();
 ### Remarks  
  Call **Create** to create the resize bar object.  
   
-##  <a name="coleresizebar__create"></a>  COleResizeBar::Create  
+##  <a name="create"></a>  COleResizeBar::Create  
  Creates a child window and associates it with the `COleResizeBar` object.  
   
 ```  

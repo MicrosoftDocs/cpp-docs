@@ -49,7 +49,7 @@ interface class ICommandTarget
   
 |Name|Description|  
 |----------|-----------------|  
-|[ICommandTarget::Initialize](#icommandtarget__initialize)|Initializes the command target object.|  
+|[ICommandTarget::Initialize](#initialize)|Initializes the command target object.|  
   
 ## Remarks  
  When you host a user control in an MFC View, [CWinFormsView](../../mfc/reference/cwinformsview-class.md) routes commands and update command UI messages to the user control to allow it to handle MFC commands (for example, frame menu items and toolbar buttons). By implementing `ICommandTarget`, you give the user control a reference to the [ICommandSource](../../mfc/reference/icommandsource-interface.md) object.  
@@ -61,7 +61,7 @@ interface class ICommandTarget
 ## Requirements  
  **Header:** afxwinforms.h (defined in assembly atlmfc\lib\mfcmifc80.dll)  
   
-##  <a name="icommandtarget__initialize"></a> ICommandTarget::Initialize  
+##  <a name="initialize"></a> ICommandTarget::Initialize  
  Initializes the command target object.  
   
 ```  

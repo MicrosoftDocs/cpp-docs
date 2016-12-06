@@ -62,16 +62,16 @@ class CTypedPtrList : public BASE_CLASS
   
 |Name|Description|  
 |----------|-----------------|  
-|[CTypedPtrList::AddHead](#ctypedptrlist__addhead)|Adds an element (or all the elements in another list) to the head of the list (makes a new head).|  
-|[CTypedPtrList::AddTail](#ctypedptrlist__addtail)|Adds an element (or all the elements in another list) to the tail of the list (makes a new tail).|  
-|[CTypedPtrList::GetAt](#ctypedptrlist__getat)|Gets the element at a given position.|  
-|[CTypedPtrList::GetHead](#ctypedptrlist__gethead)|Returns the head element of the list (cannot be empty).|  
-|[CTypedPtrList::GetNext](#ctypedptrlist__getnext)|Gets the next element for iterating.|  
-|[CTypedPtrList::GetPrev](#ctypedptrlist__getprev)|Gets the previous element for iterating.|  
-|[CTypedPtrList::GetTail](#ctypedptrlist__gettail)|Returns the tail element of the list (cannot be empty).|  
-|[CTypedPtrList::RemoveHead](#ctypedptrlist__removehead)|Removes the element from the head of the list.|  
-|[CTypedPtrList::RemoveTail](#ctypedptrlist__removetail)|Removes the element from the tail of the list.|  
-|[CTypedPtrList::SetAt](#ctypedptrlist__setat)|Sets the element at a given position.|  
+|[CTypedPtrList::AddHead](#addhead)|Adds an element (or all the elements in another list) to the head of the list (makes a new head).|  
+|[CTypedPtrList::AddTail](#addtail)|Adds an element (or all the elements in another list) to the tail of the list (makes a new tail).|  
+|[CTypedPtrList::GetAt](#getat)|Gets the element at a given position.|  
+|[CTypedPtrList::GetHead](#gethead)|Returns the head element of the list (cannot be empty).|  
+|[CTypedPtrList::GetNext](#getnext)|Gets the next element for iterating.|  
+|[CTypedPtrList::GetPrev](#getprev)|Gets the previous element for iterating.|  
+|[CTypedPtrList::GetTail](#gettail)|Returns the tail element of the list (cannot be empty).|  
+|[CTypedPtrList::RemoveHead](#removehead)|Removes the element from the head of the list.|  
+|[CTypedPtrList::RemoveTail](#removetail)|Removes the element from the tail of the list.|  
+|[CTypedPtrList::SetAt](#setat)|Sets the element at a given position.|  
   
 ## Remarks  
  When you use `CTypedPtrList` rather than `CObList` or `CPtrList`, the C++ type-checking facility helps eliminate errors caused by mismatched pointer types.  
@@ -103,7 +103,7 @@ class CTypedPtrList : public BASE_CLASS
 ## Requirements  
  **Header:** afxtempl.h  
   
-##  <a name="ctypedptrlist__addhead"></a>  CTypedPtrList::AddHead  
+##  <a name="addhead"></a>  CTypedPtrList::AddHead  
  This member function calls `BASE_CLASS`**::AddHead**.  
   
 ```  
@@ -134,7 +134,7 @@ void AddHead(
 ### Remarks  
  The first version adds a new element before the head of the list. The second version adds another list of elements before the head.  
   
-##  <a name="ctypedptrlist__addtail"></a>  CTypedPtrList::AddTail  
+##  <a name="addtail"></a>  CTypedPtrList::AddTail  
  This member function calls `BASE_CLASS`**::AddTail**.  
   
 ```  
@@ -165,7 +165,7 @@ void AddTail(
 ### Remarks  
  The first version adds a new element after the tail of the list. The second version adds another list of elements after the tail of the list.  
   
-##  <a name="ctypedptrlist__getat"></a>  CTypedPtrList::GetAt  
+##  <a name="getat"></a>  CTypedPtrList::GetAt  
  A variable of type **POSITION** is a key for the list.  
   
 ```  
@@ -196,7 +196,7 @@ TYPE GetAt(POSITION position) const;
   
  This inline function calls `BASE_CLASS`**::GetAt**.  
   
-##  <a name="ctypedptrlist__gethead"></a>  CTypedPtrList::GetHead  
+##  <a name="gethead"></a>  CTypedPtrList::GetHead  
  Gets the pointer that represents the head element of this list.  
   
 ```  
@@ -218,9 +218,9 @@ TYPE GetHead() const;
  If the list is accessed directly or through a pointer to a `CTypedPtrList`, then `GetHead` returns a reference to a pointer of the type specified by the template parameter *TYPE*. This allows the function to be used on either side of an assignment statement and thus allows the list entries to be modified.  
   
 ### Remarks  
- You must ensure that the list is not empty before calling `GetHead`. If the list is empty, then the Debug version of the Microsoft Foundation Class Library asserts. Use [IsEmpty](../../mfc/reference/coblist-class.md#coblist__isempty) to verify that the list contains elements.  
+ You must ensure that the list is not empty before calling `GetHead`. If the list is empty, then the Debug version of the Microsoft Foundation Class Library asserts. Use [IsEmpty](../../mfc/reference/coblist-class.md#isempty) to verify that the list contains elements.  
   
-##  <a name="ctypedptrlist__getnext"></a>  CTypedPtrList::GetNext  
+##  <a name="getnext"></a>  CTypedPtrList::GetNext  
  Gets the list element identified by `rPosition`, then sets `rPosition` to the **POSITION** value of the next entry in the list.  
   
 ```  
@@ -245,15 +245,15 @@ TYPE GetNext(POSITION& rPosition) const;
  If the list is accessed directly or through a pointer to a `CTypedPtrList`, then `GetNext` returns a reference to a pointer of the type specified by the template parameter *TYPE*. This allows the function to be used on either side of an assignment statement and thus allows the list entries to be modified.  
   
 ### Remarks  
- You can use `GetNext` in a forward iteration loop if you establish the initial position with a call to `GetHeadPosition` or [CPtrList::Find](../../mfc/reference/coblist-class.md#coblist__find).  
+ You can use `GetNext` in a forward iteration loop if you establish the initial position with a call to `GetHeadPosition` or [CPtrList::Find](../../mfc/reference/coblist-class.md#find).  
   
  You must ensure that your **POSITION** value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
   
  If the retrieved element is the last in the list, then the new value of `rPosition` is set to **NULL**.  
   
- It is possible to remove an element during an iteration. See the example for [CObList::RemoveAt](../../mfc/reference/coblist-class.md#coblist__removeat).  
+ It is possible to remove an element during an iteration. See the example for [CObList::RemoveAt](../../mfc/reference/coblist-class.md#removeat).  
   
-##  <a name="ctypedptrlist__getprev"></a>  CTypedPtrList::GetPrev  
+##  <a name="getprev"></a>  CTypedPtrList::GetPrev  
  Gets the list element identified by `rPosition`, then sets `rPosition` to the **POSITION** value of the previous entry in the list.  
   
 ```  
@@ -284,7 +284,7 @@ TYPE GetPrev(POSITION& rPosition) const;
   
  If the retrieved element is the first in the list, then the new value of `rPosition` is set to **NULL**.  
   
-##  <a name="ctypedptrlist__gettail"></a>  CTypedPtrList::GetTail  
+##  <a name="gettail"></a>  CTypedPtrList::GetTail  
  Gets the pointer that represents the head element of this list.  
   
 ```  
@@ -306,9 +306,9 @@ TYPE GetTail() const;
  If the list is accessed directly or through a pointer to a `CTypedPtrList`, then `GetTail` returns a reference to a pointer of the type specified by the template parameter *TYPE*. This allows the function to be used on either side of an assignment statement and thus allows the list entries to be modified.  
   
 ### Remarks  
- You must ensure that the list is not empty before calling `GetTail`. If the list is empty, then the Debug version of the Microsoft Foundation Class Library asserts. Use [IsEmpty](../../mfc/reference/coblist-class.md#coblist__isempty) to verify that the list contains elements.  
+ You must ensure that the list is not empty before calling `GetTail`. If the list is empty, then the Debug version of the Microsoft Foundation Class Library asserts. Use [IsEmpty](../../mfc/reference/coblist-class.md#isempty) to verify that the list contains elements.  
   
-##  <a name="ctypedptrlist__removehead"></a>  CTypedPtrList::RemoveHead  
+##  <a name="removehead"></a>  CTypedPtrList::RemoveHead  
  Removes the element from the head of the list and returns it.  
   
 ```  
@@ -323,9 +323,9 @@ TYPE RemoveHead();
  The pointer previously at the head of the list. This pointer is of the type specified by the template parameter *TYPE*.  
   
 ### Remarks  
- You must ensure that the list is not empty before calling `RemoveHead`. If the list is empty, then the Debug version of the Microsoft Foundation Class Library asserts. Use [IsEmpty](../../mfc/reference/coblist-class.md#coblist__isempty) to verify that the list contains elements.  
+ You must ensure that the list is not empty before calling `RemoveHead`. If the list is empty, then the Debug version of the Microsoft Foundation Class Library asserts. Use [IsEmpty](../../mfc/reference/coblist-class.md#isempty) to verify that the list contains elements.  
   
-##  <a name="ctypedptrlist__removetail"></a>  CTypedPtrList::RemoveTail  
+##  <a name="removetail"></a>  CTypedPtrList::RemoveTail  
  Removes the element from the tail of the list and returns it.  
   
 ```  
@@ -340,9 +340,9 @@ TYPE RemoveTail();
  The pointer previously at the tail of the list. This pointer is of the type specified by the template parameter *TYPE*.  
   
 ### Remarks  
- You must ensure that the list is not empty before calling `RemoveTail`. If the list is empty, then the Debug version of the Microsoft Foundation Class Library asserts. Use [IsEmpty](../../mfc/reference/coblist-class.md#coblist__isempty) to verify that the list contains elements.  
+ You must ensure that the list is not empty before calling `RemoveTail`. If the list is empty, then the Debug version of the Microsoft Foundation Class Library asserts. Use [IsEmpty](../../mfc/reference/coblist-class.md#isempty) to verify that the list contains elements.  
   
-##  <a name="ctypedptrlist__setat"></a>  CTypedPtrList::SetAt  
+##  <a name="setat"></a>  CTypedPtrList::SetAt  
  This member function calls `BASE_CLASS`**::SetAt**.  
   
 ```  
@@ -365,7 +365,7 @@ void SetAt(
   
  You must ensure that your **POSITION** value represents a valid position in the list. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
   
- For more detailed remarks, see [CObList::SetAt](../../mfc/reference/coblist-class.md#coblist__setat).  
+ For more detailed remarks, see [CObList::SetAt](../../mfc/reference/coblist-class.md#setat).  
   
 ## See Also  
  [MFC Sample COLLECT](../../visual-cpp-samples.md)   

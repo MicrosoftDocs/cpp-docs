@@ -63,7 +63,7 @@ class CMFCRibbonCustomizePropertyPage: public CMFCPropertyPage
 |||  
 |-|-|  
 |Name|Description|  
-|[CMFCRibbonCustomizePropertyPage::CMFCRibbonCustomizePropertyPage](#cmfcribboncustomizepropertypage__cmfcribboncustomizepropertypage)|Constructs a `CMFCRibbonCustomizePropertyPage` object.|  
+|[CMFCRibbonCustomizePropertyPage::CMFCRibbonCustomizePropertyPage](#cmfcribboncustomizepropertypage)|Constructs a `CMFCRibbonCustomizePropertyPage` object.|  
 |`CMFCRibbonCustomizePropertyPage::~CMFCRibbonCustomizePropertyPage`|Destructor.|  
   
 ### Public Methods  
@@ -71,10 +71,10 @@ class CMFCRibbonCustomizePropertyPage: public CMFCPropertyPage
 |||  
 |-|-|  
 |Name|Description|  
-|[CMFCRibbonCustomizePropertyPage::AddCustomCategory](#cmfcribboncustomizepropertypage__addcustomcategory)|Adds a custom category to the **Commands** combo box.|  
+|[CMFCRibbonCustomizePropertyPage::AddCustomCategory](#addcustomcategory)|Adds a custom category to the **Commands** combo box.|  
 |`CMFCRibbonCustomizePropertyPage::CreateObject`|Used by the framework to create a dynamic instance of this class type.|  
 |`CMFCRibbonCustomizePropertyPage::GetThisClass`|Used by the framework to obtain a pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|  
-|[CMFCRibbonCustomizePropertyPage::OnOK](#cmfcribboncustomizepropertypage__onok)|Called by the system when a user clicks **OK** on the **Customize** dialog box.|  
+|[CMFCRibbonCustomizePropertyPage::OnOK](#onok)|Called by the system when a user clicks **OK** on the **Customize** dialog box.|  
   
 ## Remarks  
  If you want to add custom commands to the **Customize** dialog box, you must handle the AFX_WM_ON_RIBBON_CUSTOMIZE message. In the message handler, instantiate a `CMFCRibbonCustomizePropertyPage` object on the stack. Create a list of custom commands, and then call `AddCustomCategory` to add the new page to the **Customize** dialog box.  
@@ -102,7 +102,7 @@ class CMFCRibbonCustomizePropertyPage: public CMFCPropertyPage
 ## Requirements  
  **Header:** afxribboncustomizedialog.h  
   
-##  <a name="cmfcribboncustomizepropertypage__addcustomcategory"></a>  CMFCRibbonCustomizePropertyPage::AddCustomCategory  
+##  <a name="addcustomcategory"></a>  CMFCRibbonCustomizePropertyPage::AddCustomCategory  
  Adds a custom category to the **Commands** combo box.  
   
 ```  
@@ -122,7 +122,7 @@ void AddCustomCategory(
 ### Remarks  
  This method adds a category named `lpszName` to the **Commands** combo box. When the user selects the category, the commands specified in `lstIDS` appear in the command list.  
   
-##  <a name="cmfcribboncustomizepropertypage__cmfcribboncustomizepropertypage"></a>  CMFCRibbonCustomizePropertyPage::CMFCRibbonCustomizePropertyPage  
+##  <a name="cmfcribboncustomizepropertypage"></a>  CMFCRibbonCustomizePropertyPage::CMFCRibbonCustomizePropertyPage  
  Constructs a `CMFCRibbonCustomizePropertyPage` object.  
   
 ```  
@@ -133,7 +133,7 @@ CMFCRibbonCustomizePropertyPage(CMFCRibbonBar* pRibbonBar = NULL);
  [in] `pRibbonBar`  
  A pointer to a ribbon control for which the options to customize.  
   
-##  <a name="cmfcribboncustomizepropertypage__onok"></a>  CMFCRibbonCustomizePropertyPage::OnOK  
+##  <a name="onok"></a>  CMFCRibbonCustomizePropertyPage::OnOK  
  Calleld by the system when a user clicks **OK** on the **Customize** dialog box.  
   
 ```  

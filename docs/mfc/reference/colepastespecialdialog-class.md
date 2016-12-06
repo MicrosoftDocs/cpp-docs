@@ -52,30 +52,30 @@ class COlePasteSpecialDialog : public COleDialog
   
 |Name|Description|  
 |----------|-----------------|  
-|[COlePasteSpecialDialog::COlePasteSpecialDialog](#colepastespecialdialog__colepastespecialdialog)|Constructs a `COlePasteSpecialDialog` object.|  
+|[COlePasteSpecialDialog::COlePasteSpecialDialog](#colepastespecialdialog)|Constructs a `COlePasteSpecialDialog` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[COlePasteSpecialDialog::AddFormat](#colepastespecialdialog__addformat)|Adds custom formats to the list of formats your application can paste.|  
-|[COlePasteSpecialDialog::AddLinkEntry](#colepastespecialdialog__addlinkentry)|Adds a new entry to the list of supported Clipboard formats.|  
-|[COlePasteSpecialDialog::AddStandardFormats](#colepastespecialdialog__addstandardformats)|Adds **CF_BITMAP**, **CF_DIB**, `CF_METAFILEPICT`, and optionally `CF_LINKSOURCE` to the list of formats your application can paste.|  
-|[COlePasteSpecialDialog::CreateItem](#colepastespecialdialog__createitem)|Creates the item in the container document using the specified format.|  
-|[COlePasteSpecialDialog::DoModal](#colepastespecialdialog__domodal)|Displays the OLE Paste Special dialog box.|  
-|[COlePasteSpecialDialog::GetDrawAspect](#colepastespecialdialog__getdrawaspect)|Tells whether to draw item as an icon or not.|  
-|[COlePasteSpecialDialog::GetIconicMetafile](#colepastespecialdialog__geticonicmetafile)|Gets a handle to the metafile associated with the iconic form of this item.|  
-|[COlePasteSpecialDialog::GetPasteIndex](#colepastespecialdialog__getpasteindex)|Gets the index of available paste options that was chosen by the user.|  
-|[COlePasteSpecialDialog::GetSelectionType](#colepastespecialdialog__getselectiontype)|Gets the type of selection chosen.|  
+|[COlePasteSpecialDialog::AddFormat](#addformat)|Adds custom formats to the list of formats your application can paste.|  
+|[COlePasteSpecialDialog::AddLinkEntry](#addlinkentry)|Adds a new entry to the list of supported Clipboard formats.|  
+|[COlePasteSpecialDialog::AddStandardFormats](#addstandardformats)|Adds **CF_BITMAP**, **CF_DIB**, `CF_METAFILEPICT`, and optionally `CF_LINKSOURCE` to the list of formats your application can paste.|  
+|[COlePasteSpecialDialog::CreateItem](#createitem)|Creates the item in the container document using the specified format.|  
+|[COlePasteSpecialDialog::DoModal](#domodal)|Displays the OLE Paste Special dialog box.|  
+|[COlePasteSpecialDialog::GetDrawAspect](#getdrawaspect)|Tells whether to draw item as an icon or not.|  
+|[COlePasteSpecialDialog::GetIconicMetafile](#geticonicmetafile)|Gets a handle to the metafile associated with the iconic form of this item.|  
+|[COlePasteSpecialDialog::GetPasteIndex](#getpasteindex)|Gets the index of available paste options that was chosen by the user.|  
+|[COlePasteSpecialDialog::GetSelectionType](#getselectiontype)|Gets the type of selection chosen.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[COlePasteSpecialDialog::m_ps](#colepastespecialdialog__m_ps)|A structure of type **OLEUIPASTESPECIAL** that controls the function of the dialog box.|  
+|[COlePasteSpecialDialog::m_ps](#m_ps)|A structure of type **OLEUIPASTESPECIAL** that controls the function of the dialog box.|  
   
 ## Remarks  
- Create an object of class `COlePasteSpecialDialog` when you want to call this dialog box. After a `COlePasteSpecialDialog` object has been constructed, you can use the [AddFormat](#colepastespecialdialog__addformat) and [AddStandardFormats](#colepastespecialdialog__addstandardformats) member functions to add Clipboard formats to the dialog box. You can also use the [m_ps](#colepastespecialdialog__m_ps) structure to initialize the values or states of controls in the dialog box. The `m_ps` structure is of type **OLEUIPASTESPECIAL**.  
+ Create an object of class `COlePasteSpecialDialog` when you want to call this dialog box. After a `COlePasteSpecialDialog` object has been constructed, you can use the [AddFormat](#addformat) and [AddStandardFormats](#addstandardformats) member functions to add Clipboard formats to the dialog box. You can also use the [m_ps](#m_ps) structure to initialize the values or states of controls in the dialog box. The `m_ps` structure is of type **OLEUIPASTESPECIAL**.  
   
  For more information, see the [OLEUIPASTESPECIAL](http://msdn.microsoft.com/library/windows/desktop/ms692434) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
@@ -99,7 +99,7 @@ class COlePasteSpecialDialog : public COleDialog
 ## Requirements  
  **Header:** afxodlgs.h  
   
-##  <a name="colepastespecialdialog__addformat"></a>  COlePasteSpecialDialog::AddFormat  
+##  <a name="addformat"></a>  COlePasteSpecialDialog::AddFormat  
  Call this function to add new formats to the list of formats your application can support in a Paste Special operation.  
   
 ```  
@@ -153,7 +153,7 @@ void AddFormat(
   
  For more information, see the [OLEUIPASTEFLAG](http://msdn.microsoft.com/library/windows/desktop/ms682172) enumerated type in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="colepastespecialdialog__addlinkentry"></a>  COlePasteSpecialDialog::AddLinkEntry  
+##  <a name="addlinkentry"></a>  COlePasteSpecialDialog::AddLinkEntry  
  Adds a new entry to the list of supported Clipboard formats.  
   
 ```  
@@ -167,7 +167,7 @@ OLEUIPASTEFLAG AddLinkEntry(UINT cf);
 ### Return Value  
  An [OLEUIPASTEFLAG](http://msdn.microsoft.com/library/windows/desktop/ms682172) structure containing the information for the new link entry.  
   
-##  <a name="colepastespecialdialog__addstandardformats"></a>  COlePasteSpecialDialog::AddStandardFormats  
+##  <a name="addstandardformats"></a>  COlePasteSpecialDialog::AddStandardFormats  
  Call this function to add the following Clipboard formats to the list of formats your application can support in a Paste Special operation:  
   
 ```  
@@ -192,7 +192,7 @@ void AddStandardFormats(BOOL bEnableLink = TRUE);
   
  These formats are used to support embedding and linking.  
   
-##  <a name="colepastespecialdialog__colepastespecialdialog"></a>  COlePasteSpecialDialog::COlePasteSpecialDialog  
+##  <a name="colepastespecialdialog"></a>  COlePasteSpecialDialog::COlePasteSpecialDialog  
  Constructs a `COlePasteSpecialDialog` object.  
   
 ```  
@@ -221,11 +221,11 @@ COlePasteSpecialDialog(
  Points to the parent or owner window object (of type `CWnd`) to which the dialog object belongs. If it is **NULL**, the parent window of the dialog box is set to the main application window.  
   
 ### Remarks  
- This function only constructs a `COlePasteSpecialDialog` object. To display the dialog box, call the [DoModal](#colepastespecialdialog__domodal) function.  
+ This function only constructs a `COlePasteSpecialDialog` object. To display the dialog box, call the [DoModal](#domodal) function.  
   
  For more information, see the [OLEUIPASTEFLAG](http://msdn.microsoft.com/library/windows/desktop/ms682172) enumerated type in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="colepastespecialdialog__createitem"></a>  COlePasteSpecialDialog::CreateItem  
+##  <a name="createitem"></a>  COlePasteSpecialDialog::CreateItem  
  Creates the new item that was chosen in the Paste Special dialog box.  
   
 ```  
@@ -240,9 +240,9 @@ BOOL CreateItem(COleClientItem* pNewItem);
  Nonzero if the item was created successfully; otherwise 0.  
   
 ### Remarks  
- This function should only be called after [DoModal](#colepastespecialdialog__domodal) returns **IDOK**.  
+ This function should only be called after [DoModal](#domodal) returns **IDOK**.  
   
-##  <a name="colepastespecialdialog__domodal"></a>  COlePasteSpecialDialog::DoModal  
+##  <a name="domodal"></a>  COlePasteSpecialDialog::DoModal  
  Displays the OLE Paste Special dialog box.  
   
 ```  
@@ -259,11 +259,11 @@ virtual INT_PTR DoModal();
 - **IDABORT** if an error occurred. If **IDABORT** is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIPasteSpecial](http://msdn.microsoft.com/library/windows/desktop/ms694512) function in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Remarks  
- If you want to initialize the various dialog box controls by setting members of the [m_ps](#colepastespecialdialog__m_ps) structure, you should do this before calling `DoModal`, but after the dialog object is constructed.  
+ If you want to initialize the various dialog box controls by setting members of the [m_ps](#m_ps) structure, you should do this before calling `DoModal`, but after the dialog object is constructed.  
   
  If `DoModal` returns **IDOK**, you can call other member functions to retrieve the settings or information input by the user into the dialog box.  
   
-##  <a name="colepastespecialdialog__getdrawaspect"></a>  COlePasteSpecialDialog::GetDrawAspect  
+##  <a name="getdrawaspect"></a>  COlePasteSpecialDialog::GetDrawAspect  
  Determines if the user chose to display the selected item as an icon.  
   
 ```  
@@ -280,11 +280,11 @@ DVASPECT GetDrawAspect() const;
 - `DVASPECT_ICON` Returned if the Display As Icon check box was checked when the dialog box was dismissed.  
   
 ### Remarks  
- Only call this function after [DoModal](#colepastespecialdialog__domodal) returns **IDOK**.  
+ Only call this function after [DoModal](#domodal) returns **IDOK**.  
   
  For more information on drawing aspect, see the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="colepastespecialdialog__geticonicmetafile"></a>  COlePasteSpecialDialog::GetIconicMetafile  
+##  <a name="geticonicmetafile"></a>  COlePasteSpecialDialog::GetIconicMetafile  
  Gets the metafile associated with the item selected by the user.  
   
 ```  
@@ -296,7 +296,7 @@ HGLOBAL GetIconicMetafile() const;
 ### Return Value  
  The handle to the metafile containing the iconic aspect of the selected item, if the Display As Icon check box was selected when the dialog box was dismissed by choosing **OK**; otherwise **NULL**.  
   
-##  <a name="colepastespecialdialog__getpasteindex"></a>  COlePasteSpecialDialog::GetPasteIndex  
+##  <a name="getpasteindex"></a>  COlePasteSpecialDialog::GetPasteIndex  
  Gets the index value associated with the entry the user selected.  
   
 ```  
@@ -311,7 +311,7 @@ int GetPasteIndex() const;
 ### Remarks  
  For more information, see the [OLEUIPASTEENTRY](http://msdn.microsoft.com/library/windows/desktop/ms690165) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="colepastespecialdialog__getselectiontype"></a>  COlePasteSpecialDialog::GetSelectionType  
+##  <a name="getselectiontype"></a>  COlePasteSpecialDialog::GetSelectionType  
  Determines the type of selection the user made.  
   
 ```  
@@ -350,7 +350,7 @@ UINT GetSelectionType() const;
   
 - **COlePasteSpecialDialog::pasteStatic** The chosen format was a metafile.  
   
-##  <a name="colepastespecialdialog__m_ps"></a>  COlePasteSpecialDialog::m_ps  
+##  <a name="m_ps"></a>  COlePasteSpecialDialog::m_ps  
  Structure of type **OLEUIPASTESPECIAL** used to control the behavior of the Paste Special dialog box.  
   
 ```  

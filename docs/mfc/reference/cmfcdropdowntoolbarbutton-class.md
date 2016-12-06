@@ -50,38 +50,38 @@ class CMFCDropDownToolbarButton : public CMFCToolBarButton
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCDropDownToolbarButton::CMFCDropDownToolbarButton](#cmfcdropdowntoolbarbutton__cmfcdropdowntoolbarbutton)|Constructs a `CMFCDropDownToolbarButton` object.|  
+|[CMFCDropDownToolbarButton::CMFCDropDownToolbarButton](#cmfcdropdowntoolbarbutton)|Constructs a `CMFCDropDownToolbarButton` object.|  
 |`CMFCDropDownToolbarButton::~CMFCDropDownToolbarButton`|Destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCDropDownToolbarButton::CopyFrom](#cmfcdropdowntoolbarbutton__copyfrom)|Copies the properties of another toolbar button to the current button. (Overrides [CMFCToolBarButton::CopyFrom](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__copyfrom).)|  
+|[CMFCDropDownToolbarButton::CopyFrom](#copyfrom)|Copies the properties of another toolbar button to the current button. (Overrides [CMFCToolBarButton::CopyFrom](../../mfc/reference/cmfctoolbarbutton-class.md#copyfrom).)|  
 |`CMFCDropDownToolbarButton::CreateObject`|Used by the framework to create a dynamic instance of this class type.|  
-|[CMFCDropDownToolbarButton::DropDownToolbar](#cmfcdropdowntoolbarbutton__dropdowntoolbar)|Opens a drop-down toolbar.|  
-|[CMFCDropDownToolbarButton::ExportToMenuButton](#cmfcdropdowntoolbarbutton__exporttomenubutton)|Copies text from the toolbar button to a menu. (Overrides [CMFCToolBarButton::ExportToMenuButton](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__exporttomenubutton).)|  
-|[CMFCDropDownToolbarButton::GetDropDownToolBar](#cmfcdropdowntoolbarbutton__getdropdowntoolbar)|Retrieves the drop-down toolbar that is associated with the button.|  
+|[CMFCDropDownToolbarButton::DropDownToolbar](#dropdowntoolbar)|Opens a drop-down toolbar.|  
+|[CMFCDropDownToolbarButton::ExportToMenuButton](#exporttomenubutton)|Copies text from the toolbar button to a menu. (Overrides [CMFCToolBarButton::ExportToMenuButton](../../mfc/reference/cmfctoolbarbutton-class.md#exporttomenubutton).)|  
+|[CMFCDropDownToolbarButton::GetDropDownToolBar](#getdropdowntoolbar)|Retrieves the drop-down toolbar that is associated with the button.|  
 |`CMFCDropDownToolbarButton::GetThisClass`|Used by the framework to obtain a pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|  
-|[CMFCDropDownToolbarButton::IsDropDown](#cmfcdropdowntoolbarbutton__isdropdown)|Determines whether the drop-down toolbar is currently open.|  
-|[CMFCDropDownToolbarButton::IsExtraSize](#cmfcdropdowntoolbarbutton__isextrasize)|Determines whether the button can be displayed with an extended border. (Overrides [CMFCToolBarButton::IsExtraSize](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__isextrasize).)|  
-|[CMFCDropDownToolbarButton::OnCalculateSize](#cmfcdropdowntoolbarbutton__oncalculatesize)|Called by the framework to calculate the size of the button for the specified device context and docking state. (Overrides [CMFCToolBarButton::OnCalculateSize](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__oncalculatesize).)|  
+|[CMFCDropDownToolbarButton::IsDropDown](#isdropdown)|Determines whether the drop-down toolbar is currently open.|  
+|[CMFCDropDownToolbarButton::IsExtraSize](#isextrasize)|Determines whether the button can be displayed with an extended border. (Overrides [CMFCToolBarButton::IsExtraSize](../../mfc/reference/cmfctoolbarbutton-class.md#isextrasize).)|  
+|[CMFCDropDownToolbarButton::OnCalculateSize](#oncalculatesize)|Called by the framework to calculate the size of the button for the specified device context and docking state. (Overrides [CMFCToolBarButton::OnCalculateSize](../../mfc/reference/cmfctoolbarbutton-class.md#oncalculatesize).)|  
 |`CMFCDropDownToolbarButton::OnCancelMode`|Called by the framework to handle the [WM_CANCELMODE](http://msdn.microsoft.com/library/windows/desktop/ms632615) message. (Overrides `CMCToolBarButton::OnCancelMode`.)|  
-|[CMFCDropDownToolbarButton::OnChangeParentWnd](#cmfcdropdowntoolbarbutton__onchangeparentwnd)|Called by the framework when the button is inserted into a new toolbar. (Overrides [CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__onchangeparentwnd).)|  
-|[CMFCDropDownToolbarButton::OnClick](#cmfcdropdowntoolbarbutton__onclick)|Called by the framework when the user clicks the mouse button. (Overrides [CMFCToolBarButton::OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__onclick).)|  
-|[CMFCDropDownToolbarButton::OnClickUp](#cmfcdropdowntoolbarbutton__onclickup)|Called by the framework when the user releases the mouse button. (Overrides [CMFCToolBarButton::OnClickUp](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__onclickup).)|  
-|[CMFCDropDownToolbarButton::OnContextHelp](#cmfcdropdowntoolbarbutton__oncontexthelp)|Called by the framework when the parent toolbar handles a `WM_HELPHITTEST` message. (Overrides [CMFCToolBarButton::OnContextHelp](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__oncontexthelp).)|  
-|[CMFCDropDownToolbarButton::OnCustomizeMenu](#cmfcdropdowntoolbarbutton__oncustomizemenu)|Modifies the provided menu when the application displays a shortcut menu on the parent toolbar. (Overrides [CMFCToolBarButton::OnCustomizeMenu](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__oncustomizemenu).)|  
-|[CMFCDropDownToolbarButton::OnDraw](#cmfcdropdowntoolbarbutton__ondraw)|Called by the framework to draw the button by using the specified styles and options. (Overrides [CMFCToolBarButton::OnDraw](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__ondraw).)|  
-|[CMFCDropDownToolbarButton::OnDrawOnCustomizeList](#cmfcdropdowntoolbarbutton__ondrawoncustomizelist)|Called by the framework to draw the button in the **Commands** pane of the **Customize** dialog box. (Overrides [CMFCToolBarButton::OnDrawOnCustomizeList](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__ondrawoncustomizelist).)|  
-|[CMFCDropDownToolbarButton::Serialize](#cmfcdropdowntoolbarbutton__serialize)|Reads this object from an archive or writes it to an archive. (Overrides [CMFCToolBarButton::Serialize](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__serialize).)|  
-|[CMFCDropDownToolbarButton::SetDefaultCommand](#cmfcdropdowntoolbarbutton__setdefaultcommand)|Sets the default command that the framework uses when a user clicks the button.|  
+|[CMFCDropDownToolbarButton::OnChangeParentWnd](#onchangeparentwnd)|Called by the framework when the button is inserted into a new toolbar. (Overrides [CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd).)|  
+|[CMFCDropDownToolbarButton::OnClick](#onclick)|Called by the framework when the user clicks the mouse button. (Overrides [CMFCToolBarButton::OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick).)|  
+|[CMFCDropDownToolbarButton::OnClickUp](#onclickup)|Called by the framework when the user releases the mouse button. (Overrides [CMFCToolBarButton::OnClickUp](../../mfc/reference/cmfctoolbarbutton-class.md#onclickup).)|  
+|[CMFCDropDownToolbarButton::OnContextHelp](#oncontexthelp)|Called by the framework when the parent toolbar handles a `WM_HELPHITTEST` message. (Overrides [CMFCToolBarButton::OnContextHelp](../../mfc/reference/cmfctoolbarbutton-class.md#oncontexthelp).)|  
+|[CMFCDropDownToolbarButton::OnCustomizeMenu](#oncustomizemenu)|Modifies the provided menu when the application displays a shortcut menu on the parent toolbar. (Overrides [CMFCToolBarButton::OnCustomizeMenu](../../mfc/reference/cmfctoolbarbutton-class.md#oncustomizemenu).)|  
+|[CMFCDropDownToolbarButton::OnDraw](#ondraw)|Called by the framework to draw the button by using the specified styles and options. (Overrides [CMFCToolBarButton::OnDraw](../../mfc/reference/cmfctoolbarbutton-class.md#ondraw).)|  
+|[CMFCDropDownToolbarButton::OnDrawOnCustomizeList](#ondrawoncustomizelist)|Called by the framework to draw the button in the **Commands** pane of the **Customize** dialog box. (Overrides [CMFCToolBarButton::OnDrawOnCustomizeList](../../mfc/reference/cmfctoolbarbutton-class.md#ondrawoncustomizelist).)|  
+|[CMFCDropDownToolbarButton::Serialize](#serialize)|Reads this object from an archive or writes it to an archive. (Overrides [CMFCToolBarButton::Serialize](../../mfc/reference/cmfctoolbarbutton-class.md#serialize).)|  
+|[CMFCDropDownToolbarButton::SetDefaultCommand](#setdefaultcommand)|Sets the default command that the framework uses when a user clicks the button.|  
   
 ### Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCDropDownToolbarButton::m_uiShowBarDelay](#cmfcdropdowntoolbarbutton__m_uishowbardelay)|Specifies the length of time that a user must hold the mouse button down before the drop-down toolbar appears.|  
+|[CMFCDropDownToolbarButton::m_uiShowBarDelay](#m_uishowbardelay)|Specifies the length of time that a user must hold the mouse button down before the drop-down toolbar appears.|  
   
 ## Remarks  
  A `CMFCDropDownToolBarButton` differs from an ordinary button in that it has a small arrow in the lower-right corner of the button. After the user selects a button from the drop-down toolbar, the framework displays its icon on the top-level toolbar button (the button with the small arrow in the lower-right corner).  
@@ -100,7 +100,7 @@ class CMFCDropDownToolbarButton : public CMFCToolBarButton
 ## Requirements  
  **Header:** afxdropdowntoolbar.h  
   
-##  <a name="cmfcdropdowntoolbarbutton__copyfrom"></a>  CMFCDropDownToolbarButton::CopyFrom  
+##  <a name="copyfrom"></a>  CMFCDropDownToolbarButton::CopyFrom  
  Copies the properties of another toolbar button to the current button.  
   
 ```  
@@ -114,7 +114,7 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 ### Remarks  
  Call this method to copy another toolbar button to this toolbar button. `src` must be of type `CMFCDropDownToolbarButton`.  
   
-##  <a name="cmfcdropdowntoolbarbutton__cmfcdropdowntoolbarbutton"></a>  CMFCDropDownToolbarButton::CMFCDropDownToolbarButton  
+##  <a name="cmfcdropdowntoolbarbutton"></a>  CMFCDropDownToolbarButton::CMFCDropDownToolbarButton  
  Constructs a `CMFCDropDownToolbarButton` object.  
   
 ```  
@@ -143,7 +143,7 @@ CMFCDropDownToolbarButton(
   
  [!code-cpp[NVC_MFC_VisualStudioDemo#31](../../mfc/codesnippet/cpp/cmfcdropdowntoolbarbutton-class_1.cpp)]  
   
-##  <a name="cmfcdropdowntoolbarbutton__dropdowntoolbar"></a>  CMFCDropDownToolbarButton::DropDownToolbar  
+##  <a name="dropdowntoolbar"></a>  CMFCDropDownToolbarButton::DropDownToolbar  
  Opens a drop-down toolbar.  
   
 ```  
@@ -158,13 +158,13 @@ BOOL DropDownToolbar(CWnd* pWnd);
  Nonzero if the method is successful; otherwise 0.  
   
 ### Remarks  
- The [CMFCDropDownToolbarButton::OnClick](#cmfcdropdowntoolbarbutton__onclick) method calls this method to open the drop-down toolbar when the user presses and holds the toolbar button down.  
+ The [CMFCDropDownToolbarButton::OnClick](#onclick) method calls this method to open the drop-down toolbar when the user presses and holds the toolbar button down.  
   
- This methods creates the drop-down toolbar by using the [CMFCDropDownFrame::Create](../../mfc/reference/cmfcdropdownframe-class.md#cmfcdropdownframe__create) method. If the parent toolbar is docked vertically, this method positions the drop-down toolbar either to the left-hand or right-hand side of the parent toolbar, depending on the fit. Otherwise, this method positions the drop-down toolbar underneath the parent toolbar.  
+ This methods creates the drop-down toolbar by using the [CMFCDropDownFrame::Create](../../mfc/reference/cmfcdropdownframe-class.md#create) method. If the parent toolbar is docked vertically, this method positions the drop-down toolbar either to the left-hand or right-hand side of the parent toolbar, depending on the fit. Otherwise, this method positions the drop-down toolbar underneath the parent toolbar.  
   
  This method fails if `pWnd` is `NULL` and the drop-down toolbar button does not have a parent window.  
   
-##  <a name="cmfcdropdowntoolbarbutton__exporttomenubutton"></a>  CMFCDropDownToolbarButton::ExportToMenuButton  
+##  <a name="exporttomenubutton"></a>  CMFCDropDownToolbarButton::ExportToMenuButton  
  Copies text from the toolbar button to a menu.  
   
 ```  
@@ -181,11 +181,11 @@ virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
  Nonzero if the method succeeds; otherwise 0.  
   
 ### Remarks  
- This method calls the base class implementation ( [CMFCToolBarButton::ExportToMenuButton](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__exporttomenubutton)) and then appends to the target menu button a pop-up menu that contains each toolbar menu item in this button. This method does not append sub-menus to the pop-up menu.  
+ This method calls the base class implementation ( [CMFCToolBarButton::ExportToMenuButton](../../mfc/reference/cmfctoolbarbutton-class.md#exporttomenubutton)) and then appends to the target menu button a pop-up menu that contains each toolbar menu item in this button. This method does not append sub-menus to the pop-up menu.  
   
  This method fails if the parent toolbar, `m_pToolBar`, is `NULL` or the base class implementation returns `FALSE`.  
   
-##  <a name="cmfcdropdowntoolbarbutton__getdropdowntoolbar"></a>  CMFCDropDownToolbarButton::GetDropDownToolBar  
+##  <a name="getdropdowntoolbar"></a>  CMFCDropDownToolbarButton::GetDropDownToolBar  
  Retrieves the drop-down toolbar that is associated with the button.  
   
 ```  
@@ -200,7 +200,7 @@ CMFCToolBar* GetDropDownToolBar() const;
 ### Remarks  
  This method returns the `m_pToolBar` data member.  
   
-##  <a name="cmfcdropdowntoolbarbutton__isdropdown"></a>  CMFCDropDownToolbarButton::IsDropDown  
+##  <a name="isdropdown"></a>  CMFCDropDownToolbarButton::IsDropDown  
  Determines whether the drop-down toolbar is currently open.  
   
 ```  
@@ -213,9 +213,9 @@ BOOL IsDropDown() const;
  Nonzero if the drop-down toolbar is currently open; otherwise 0.  
   
 ### Remarks  
- The framework opens the drop-down toolbar by using the [CMFCDropDownToolbarButton::DropDownToolbar](#cmfcdropdowntoolbarbutton__dropdowntoolbar) method. The framework closes the drop-down toolbar when the user presses the left-mouse button in the non-client area of the drop-down toolbar.  
+ The framework opens the drop-down toolbar by using the [CMFCDropDownToolbarButton::DropDownToolbar](#dropdowntoolbar) method. The framework closes the drop-down toolbar when the user presses the left-mouse button in the non-client area of the drop-down toolbar.  
   
-##  <a name="cmfcdropdowntoolbarbutton__isextrasize"></a>  CMFCDropDownToolbarButton::IsExtraSize  
+##  <a name="isextrasize"></a>  CMFCDropDownToolbarButton::IsExtraSize  
  Determines whether the button can be displayed with an extended border.  
   
 ```  
@@ -228,9 +228,9 @@ virtual BOOL IsExtraSize() const;
  Nonzero if the toolbar button can be displayed with an extended border; otherwise 0.  
   
 ### Remarks  
- For more information about extended borders, see [CMFCToolBarButton::IsExtraSize](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__isextrasize).  
+ For more information about extended borders, see [CMFCToolBarButton::IsExtraSize](../../mfc/reference/cmfctoolbarbutton-class.md#isextrasize).  
   
-##  <a name="cmfcdropdowntoolbarbutton__m_uishowbardelay"></a>  CMFCDropDownToolbarButton::m_uiShowBarDelay  
+##  <a name="m_uishowbardelay"></a>  CMFCDropDownToolbarButton::m_uiShowBarDelay  
  Specifies the length of time that a user must hold the mouse button down before the drop-down toolbar appears.  
   
 ```  
@@ -240,7 +240,7 @@ static UINT m_uiShowBarDelay;
 ### Remarks  
  The delay time is measured in milliseconds. The default value is 500. You can set another delay by changing the value of this shared data member.  
   
-##  <a name="cmfcdropdowntoolbarbutton__oncalculatesize"></a>  CMFCDropDownToolbarButton::OnCalculateSize  
+##  <a name="oncalculatesize"></a>  CMFCDropDownToolbarButton::OnCalculateSize  
  Called by the framework to calculate the size of the button for the specified device context and docking state.  
   
 ```  
@@ -264,9 +264,9 @@ virtual SIZE OnCalculateSize(
  A `SIZE` structure that contains the dimensions of the button, in pixels.  
   
 ### Remarks  
- This method extends the base class implementation ( [CMFCToolBarButton::OnCalculateSize](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__oncalculatesize)) by adding the width of the drop-down arrow to the horizontal dimension of the button size.  
+ This method extends the base class implementation ( [CMFCToolBarButton::OnCalculateSize](../../mfc/reference/cmfctoolbarbutton-class.md#oncalculatesize)) by adding the width of the drop-down arrow to the horizontal dimension of the button size.  
   
-##  <a name="cmfcdropdowntoolbarbutton__onchangeparentwnd"></a>  CMFCDropDownToolbarButton::OnChangeParentWnd  
+##  <a name="onchangeparentwnd"></a>  CMFCDropDownToolbarButton::OnChangeParentWnd  
  Called by the framework when the button is inserted into a new toolbar.  
   
 ```  
@@ -278,9 +278,9 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
  The new parent window.  
   
 ### Remarks  
- This method overrides the base class implementation ( [CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__onchangeparentwnd)) by clearing the text label ( [CMFCToolBarButton::m_strText](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__m_strtext)) and setting the [CMFCToolBarButton::m_bText](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__m_btext) and [CMFCToolBarButton::m_bUserButton](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__m_buserbutton) data members to `FALSE`.  
+ This method overrides the base class implementation ( [CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd)) by clearing the text label ( [CMFCToolBarButton::m_strText](../../mfc/reference/cmfctoolbarbutton-class.md#m_strtext)) and setting the [CMFCToolBarButton::m_bText](../../mfc/reference/cmfctoolbarbutton-class.md#m_btext) and [CMFCToolBarButton::m_bUserButton](../../mfc/reference/cmfctoolbarbutton-class.md#m_buserbutton) data members to `FALSE`.  
   
-##  <a name="cmfcdropdowntoolbarbutton__onclick"></a>  CMFCDropDownToolbarButton::OnClick  
+##  <a name="onclick"></a>  CMFCDropDownToolbarButton::OnClick  
  Called by the framework when the user clicks the mouse button.  
   
 ```  
@@ -300,11 +300,11 @@ virtual BOOL OnClick(
  Nonzero if the button processes the click message; otherwise 0.  
   
 ### Remarks  
- This method extends the base class implementation, [CMFCToolBarButton::OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__onclick), by updating the state of the drop-down toolbar.  
+ This method extends the base class implementation, [CMFCToolBarButton::OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick), by updating the state of the drop-down toolbar.  
   
- When a user clicks the toolbar button, this method creates a timer that waits the length of time specified by the [CMFCDropDownToolbarButton::m_uiShowBarDelay](#cmfcdropdowntoolbarbutton__m_uishowbardelay) data member and then opens the drop-down toolbar by using the [CMFCDropDownToolbarButton::DropDownToolbar](#cmfcdropdowntoolbarbutton__dropdowntoolbar) method. This method closes the drop-down toolbar the second time the user clicks the toolbar button.  
+ When a user clicks the toolbar button, this method creates a timer that waits the length of time specified by the [CMFCDropDownToolbarButton::m_uiShowBarDelay](#m_uishowbardelay) data member and then opens the drop-down toolbar by using the [CMFCDropDownToolbarButton::DropDownToolbar](#dropdowntoolbar) method. This method closes the drop-down toolbar the second time the user clicks the toolbar button.  
   
-##  <a name="cmfcdropdowntoolbarbutton__onclickup"></a>  CMFCDropDownToolbarButton::OnClickUp  
+##  <a name="onclickup"></a>  CMFCDropDownToolbarButton::OnClickUp  
  Called by the framework when the user releases the mouse button.  
   
 ```  
@@ -315,13 +315,13 @@ virtual BOOL OnClickUp();
  Nonzero if the button processes the click message; otherwise 0.  
   
 ### Remarks  
- This method extends the base class implementation, [CMFCToolBarButton::OnClickUp](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__onclickup), by updating the state of the drop-down toolbar.  
+ This method extends the base class implementation, [CMFCToolBarButton::OnClickUp](../../mfc/reference/cmfctoolbarbutton-class.md#onclickup), by updating the state of the drop-down toolbar.  
   
  This method stops the drop-down toolbar timer if it is active. It closes the drop-down toolbar if it is open.  
   
- For more information about the drop-down toolbar and drop-down toolbar timer, see [CMFCDropDownToolbarButton::OnClick](#cmfcdropdowntoolbarbutton__onclick).  
+ For more information about the drop-down toolbar and drop-down toolbar timer, see [CMFCDropDownToolbarButton::OnClick](#onclick).  
   
-##  <a name="cmfcdropdowntoolbarbutton__oncontexthelp"></a>  CMFCDropDownToolbarButton::OnContextHelp  
+##  <a name="oncontexthelp"></a>  CMFCDropDownToolbarButton::OnContextHelp  
  Called by the framework when the parent toolbar handles a `WM_HELPHITTEST` message.  
   
 ```  
@@ -336,11 +336,11 @@ virtual BOOL OnContextHelp(CWnd* pWnd);
  Nonzero if the button processes the help message; otherwise 0.  
   
 ### Remarks  
- This method extends the base class implementation ( [CMFCToolBarButton::OnContextHelp](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__oncontexthelp)) by calling the [CMFCDropDownToolbarButton::OnClick](#cmfcdropdowntoolbarbutton__onclick) method with `bDelay` set to `FALSE`. This method returns the value that is returned by [CMFCDropDownToolbarButton::OnClick](#cmfcdropdowntoolbarbutton__onclick).  
+ This method extends the base class implementation ( [CMFCToolBarButton::OnContextHelp](../../mfc/reference/cmfctoolbarbutton-class.md#oncontexthelp)) by calling the [CMFCDropDownToolbarButton::OnClick](#onclick) method with `bDelay` set to `FALSE`. This method returns the value that is returned by [CMFCDropDownToolbarButton::OnClick](#onclick).  
   
  For more information about the `WM_HELPHITTEST message, see` [TN028: Context-Sensitive Help Support](../../mfc/tn028-context-sensitive-help-support.md).  
   
-##  <a name="cmfcdropdowntoolbarbutton__oncustomizemenu"></a>  CMFCDropDownToolbarButton::OnCustomizeMenu  
+##  <a name="oncustomizemenu"></a>  CMFCDropDownToolbarButton::OnCustomizeMenu  
  Modifies the provided menu when the application displays a shortcut menu on the parent toolbar.  
   
 ```  
@@ -355,7 +355,7 @@ virtual BOOL OnCustomizeMenu(CMenu* pMenu);
  This method returns `TRUE`.  
   
 ### Remarks  
- This method extends the base class implementation ( [CMFCToolBarButton::OnCustomizeMenu](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__oncustomizemenu)) by disabling the following menu items:  
+ This method extends the base class implementation ( [CMFCToolBarButton::OnCustomizeMenu](../../mfc/reference/cmfctoolbarbutton-class.md#oncustomizemenu)) by disabling the following menu items:  
   
 - **Copy Button Image**  
   
@@ -369,7 +369,7 @@ virtual BOOL OnCustomizeMenu(CMenu* pMenu);
   
  Override this method to modify the shortcut menu that the framework displays in customization mode.  
   
-##  <a name="cmfcdropdowntoolbarbutton__ondraw"></a>  CMFCDropDownToolbarButton::OnDraw  
+##  <a name="ondraw"></a>  CMFCDropDownToolbarButton::OnDraw  
  Called by the framework to draw the button by using the specified styles and options.  
   
 ```  
@@ -412,7 +412,7 @@ virtual void OnDraw(
 ### Remarks  
  Override this method to customize toolbar button drawing.  
   
-##  <a name="cmfcdropdowntoolbarbutton__ondrawoncustomizelist"></a>  CMFCDropDownToolbarButton::OnDrawOnCustomizeList  
+##  <a name="ondrawoncustomizelist"></a>  CMFCDropDownToolbarButton::OnDrawOnCustomizeList  
  Called by the framework to draw the button in the **Commands** pane of the **Customize** dialog box.  
   
 ```  
@@ -438,9 +438,9 @@ virtual int OnDrawOnCustomizeList(
 ### Remarks  
  This method is called by the customization dialog box ( **Commands** tab) when the button is required to display itself on the owner-draw list box.  
   
- This method extends the base class implementation ( [CMFCToolBarButton::OnDrawOnCustomizeList](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__ondrawoncustomizelist)) by changing the text label of the button to the name of the button (that is,to the value of the `lpszName` parameter that you passed to the constructor).  
+ This method extends the base class implementation ( [CMFCToolBarButton::OnDrawOnCustomizeList](../../mfc/reference/cmfctoolbarbutton-class.md#ondrawoncustomizelist)) by changing the text label of the button to the name of the button (that is,to the value of the `lpszName` parameter that you passed to the constructor).  
   
-##  <a name="cmfcdropdowntoolbarbutton__serialize"></a>  CMFCDropDownToolbarButton::Serialize  
+##  <a name="serialize"></a>  CMFCDropDownToolbarButton::Serialize  
  Reads this object from an archive or writes it to an archive.  
   
 ```  
@@ -452,9 +452,9 @@ virtual void Serialize(CArchive& ar);
  The `CArchive` object from which or to which to serialize.  
   
 ### Remarks  
- This method extends the base class implementation ( [CMFCToolBarButton::Serialize](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__serialize)) by serializing the resource ID of the parent toolbar. When the archive is loading ( [CArchive::IsLoading](../../mfc/reference/carchive-class.md#carchive__isloading) returns a nonzero value), this method sets the `m_pToolBar` data member to the toolbar that contains the serialized resource ID.  
+ This method extends the base class implementation ( [CMFCToolBarButton::Serialize](../../mfc/reference/cmfctoolbarbutton-class.md#serialize)) by serializing the resource ID of the parent toolbar. When the archive is loading ( [CArchive::IsLoading](../../mfc/reference/carchive-class.md#isloading) returns a nonzero value), this method sets the `m_pToolBar` data member to the toolbar that contains the serialized resource ID.  
   
-##  <a name="cmfcdropdowntoolbarbutton__setdefaultcommand"></a>  CMFCDropDownToolbarButton::SetDefaultCommand  
+##  <a name="setdefaultcommand"></a>  CMFCDropDownToolbarButton::SetDefaultCommand  
  Sets the default command that the framework uses when a user clicks the button.  
   
 ```  

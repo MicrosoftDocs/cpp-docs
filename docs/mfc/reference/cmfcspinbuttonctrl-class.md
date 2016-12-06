@@ -56,7 +56,7 @@ class CMFCSpinButtonCtrl : public CSpinButtonCtrl
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCSpinButtonCtrl::OnDraw](#cmfcspinbuttonctrl__ondraw)|Repaints the current spin button control.|  
+|[CMFCSpinButtonCtrl::OnDraw](#ondraw)|Repaints the current spin button control.|  
   
 ## Remarks  
  To use a visual manager to draw a spin button control in your application, replace all instances of the `CSpinButtonCtrl` class with the `CMFCSpinButtonCtrl` class.  
@@ -80,7 +80,7 @@ class CMFCSpinButtonCtrl : public CSpinButtonCtrl
 ## Requirements  
  **Header:** afxspinbuttonctrl.h  
   
-##  <a name="cmfcspinbuttonctrl__ondraw"></a>  CMFCSpinButtonCtrl::OnDraw  
+##  <a name="ondraw"></a>  CMFCSpinButtonCtrl::OnDraw  
  Repaints the current spin button control.  
   
 ```  
@@ -92,7 +92,7 @@ virtual void OnDraw(CDC* pDC);
  A pointer to a device context.  
   
 ### Remarks  
- The framework calls the `CMFCSpinButtonCtrl::OnPaint` method to handle the [CWnd::OnPaint](../../mfc/reference/cwnd-class.md#cwnd__onpaint) message, and that method in turn calls this `CMFCSpinButtonCtrl::OnDraw` method. Override this method to customize the way the framework draws the spin button control.  
+ The framework calls the `CMFCSpinButtonCtrl::OnPaint` method to handle the [CWnd::OnPaint](../../mfc/reference/cwnd-class.md#onpaint) message, and that method in turn calls this `CMFCSpinButtonCtrl::OnDraw` method. Override this method to customize the way the framework draws the spin button control.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

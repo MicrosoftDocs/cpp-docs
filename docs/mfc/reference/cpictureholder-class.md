@@ -53,27 +53,27 @@ class CPictureHolder
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPictureHolder::CPictureHolder](#cpictureholder__cpictureholder)|Constructs a `CPictureHolder` object.|  
+|[CPictureHolder::CPictureHolder](#cpictureholder)|Constructs a `CPictureHolder` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPictureHolder::CreateEmpty](#cpictureholder__createempty)|Creates an empty `CPictureHolder` object.|  
-|[CPictureHolder::CreateFromBitmap](#cpictureholder__createfrombitmap)|Creates a `CPictureHolder` object from a bitmap.|  
-|[CPictureHolder::CreateFromIcon](#cpictureholder__createfromicon)|Creates a `CPictureHolder` object from an icon.|  
-|[CPictureHolder::CreateFromMetafile](#cpictureholder__createfrommetafile)|Creates a `CPictureHolder` object from a metafile.|  
-|[CPictureHolder::GetDisplayString](#cpictureholder__getdisplaystring)|Retrieves the string displayed in a control container's property browser.|  
-|[CPictureHolder::GetPictureDispatch](#cpictureholder__getpicturedispatch)|Returns the `CPictureHolder` object's `IDispatch` interface.|  
-|[CPictureHolder::GetType](#cpictureholder__gettype)|Tells whether the `CPictureHolder` object is a bitmap, a metafile, or an icon.|  
-|[CPictureHolder::Render](#cpictureholder__render)|Renders the picture.|  
-|[CPictureHolder::SetPictureDispatch](#cpictureholder__setpicturedispatch)|Sets the `CPictureHolder` object's `IDispatch` interface.|  
+|[CPictureHolder::CreateEmpty](#createempty)|Creates an empty `CPictureHolder` object.|  
+|[CPictureHolder::CreateFromBitmap](#createfrombitmap)|Creates a `CPictureHolder` object from a bitmap.|  
+|[CPictureHolder::CreateFromIcon](#createfromicon)|Creates a `CPictureHolder` object from an icon.|  
+|[CPictureHolder::CreateFromMetafile](#createfrommetafile)|Creates a `CPictureHolder` object from a metafile.|  
+|[CPictureHolder::GetDisplayString](#getdisplaystring)|Retrieves the string displayed in a control container's property browser.|  
+|[CPictureHolder::GetPictureDispatch](#getpicturedispatch)|Returns the `CPictureHolder` object's `IDispatch` interface.|  
+|[CPictureHolder::GetType](#gettype)|Tells whether the `CPictureHolder` object is a bitmap, a metafile, or an icon.|  
+|[CPictureHolder::Render](#render)|Renders the picture.|  
+|[CPictureHolder::SetPictureDispatch](#setpicturedispatch)|Sets the `CPictureHolder` object's `IDispatch` interface.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPictureHolder::m_pPict](#cpictureholder__m_ppict)|A pointer to a picture object.|  
+|[CPictureHolder::m_pPict](#m_ppict)|A pointer to a picture object.|  
   
 ## Remarks  
  `CPictureHolder` does not have a base class.  
@@ -88,14 +88,14 @@ class CPictureHolder
 ## Requirements  
  **Header:** afxctl.h  
   
-##  <a name="cpictureholder__cpictureholder"></a>  CPictureHolder::CPictureHolder  
+##  <a name="cpictureholder"></a>  CPictureHolder::CPictureHolder  
  Constructs a `CPictureHolder` object.  
   
 ```  
 CPictureHolder();
 ```  
   
-##  <a name="cpictureholder__createempty"></a>  CPictureHolder::CreateEmpty  
+##  <a name="createempty"></a>  CPictureHolder::CreateEmpty  
  Creates an empty `CPictureHolder` object and connects it to an `IPicture` interface.  
   
 ```  
@@ -105,7 +105,7 @@ BOOL CreateEmpty();
 ### Return Value  
  Nonzero if the object is successfully created; otherwise 0.  
   
-##  <a name="cpictureholder__createfrombitmap"></a>  CPictureHolder::CreateFromBitmap  
+##  <a name="createfrombitmap"></a>  CPictureHolder::CreateFromBitmap  
  Uses a bitmap to initialize the picture object in a `CPictureHolder`.  
   
 ```  
@@ -150,7 +150,7 @@ BOOL CreateFromBitmap(
 ### Remarks  
  If `bTransferOwnership` is **TRUE**, the caller should not use the bitmap or palette object in any way after this call returns. If `bTransferOwnership` is **FALSE**, the caller is responsible for ensuring that the bitmap and palette objects remain valid for the lifetime of the picture object.  
   
-##  <a name="cpictureholder__createfromicon"></a>  CPictureHolder::CreateFromIcon  
+##  <a name="createfromicon"></a>  CPictureHolder::CreateFromIcon  
  Uses an icon to initialize the picture object in a `CPictureHolder`.  
   
 ```  
@@ -179,7 +179,7 @@ BOOL CreateFromIcon(
 ### Remarks  
  If `bTransferOwnership` is **TRUE**, the caller should not use the icon object in any way after this call returns. If `bTransferOwnership` is **FALSE**, the caller is responsible for ensuring that the icon object remains valid for the lifetime of the picture object.  
   
-##  <a name="cpictureholder__createfrommetafile"></a>  CPictureHolder::CreateFromMetafile  
+##  <a name="createfrommetafile"></a>  CPictureHolder::CreateFromMetafile  
  Uses a metafile to initialize the picture object in a `CPictureHolder`.  
   
 ```  
@@ -209,7 +209,7 @@ BOOL CreateFromMetafile(
 ### Remarks  
  If `bTransferOwnership` is **TRUE**, the caller should not use the metafile object in any way after this call returns. If `bTransferOwnership` is **FALSE**, the caller is responsible for ensuring that the metafile object remains valid for the lifetime of the picture object.  
   
-##  <a name="cpictureholder__getdisplaystring"></a>  CPictureHolder::GetDisplayString  
+##  <a name="getdisplaystring"></a>  CPictureHolder::GetDisplayString  
  Retrieves the string that is displayed in a container's property browser.  
   
 ```  
@@ -223,7 +223,7 @@ BOOL GetDisplayString(CString& strValue);
 ### Return Value  
  Nonzero if the string is successfully retrieved; otherwise 0.  
   
-##  <a name="cpictureholder__getpicturedispatch"></a>  CPictureHolder::GetPictureDispatch  
+##  <a name="getpicturedispatch"></a>  CPictureHolder::GetPictureDispatch  
  This function returns a pointer to the `CPictureHolder` object's `IPictureDisp` interface.  
   
 ```  
@@ -236,7 +236,7 @@ LPPICTUREDISP GetPictureDispatch();
 ### Remarks  
  The caller must call **Release** on this pointer when finished with it.  
   
-##  <a name="cpictureholder__gettype"></a>  CPictureHolder::GetType  
+##  <a name="gettype"></a>  CPictureHolder::GetType  
  Indicates whether the picture is a bitmap, metafile, or icon.  
   
 ```  
@@ -254,14 +254,14 @@ short GetType();
 |**PICTYPE_METAFILE**|Picture is a metafile.|  
 |**PICTYPE_ICON**|Picture is an icon.|  
   
-##  <a name="cpictureholder__m_ppict"></a>  CPictureHolder::m_pPict  
+##  <a name="m_ppict"></a>  CPictureHolder::m_pPict  
  A pointer to the `CPictureHolder` object's `IPicture` interface.  
   
 ```  
 LPPICTURE m_pPict;  
 ```  
   
-##  <a name="cpictureholder__render"></a>  CPictureHolder::Render  
+##  <a name="render"></a>  CPictureHolder::Render  
  Renders the picture in the rectangle referenced by `rcRender`.  
   
 ```  
@@ -279,9 +279,9 @@ void Render(
  Rectangle in which the picture is to be rendered.  
   
  *rcWBounds*  
- A rectangle representing the bounding rectangle of the object rendering the picture. For a control, this rectangle is the `rcBounds` parameter passed to an override of [COleControl::OnDraw](../../mfc/reference/colecontrol-class.md#colecontrol__ondraw).  
+ A rectangle representing the bounding rectangle of the object rendering the picture. For a control, this rectangle is the `rcBounds` parameter passed to an override of [COleControl::OnDraw](../../mfc/reference/colecontrol-class.md#ondraw).  
   
-##  <a name="cpictureholder__setpicturedispatch"></a>  CPictureHolder::SetPictureDispatch  
+##  <a name="setpicturedispatch"></a>  CPictureHolder::SetPictureDispatch  
  Connects the `CPictureHolder` object to a `IPictureDisp` interface.  
   
 ```  

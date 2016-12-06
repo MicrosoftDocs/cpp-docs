@@ -41,7 +41,7 @@ translation.priority.ht:
   
  MFC windows use a dynamically created class name that reflects the features of the window. MFC generates class names dynamically for frame windows, views, and popup windows produced by the application. Dialog boxes and controls produced by an MFC application have the Windows-supplied name for the class of window in question.  
   
- You can replace the dynamically provided class name by registering your own window class and using it in an override of [PreCreateWindow](../mfc/reference/cwnd-class.md#cwnd__precreatewindow). Their MFC-supplied class names fit one of the two following forms:  
+ You can replace the dynamically provided class name by registering your own window class and using it in an override of [PreCreateWindow](../mfc/reference/cwnd-class.md#precreatewindow). Their MFC-supplied class names fit one of the two following forms:  
   
 ```  
 Afx:%x:%x  
