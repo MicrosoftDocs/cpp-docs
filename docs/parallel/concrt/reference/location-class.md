@@ -49,23 +49,23 @@ class location;
   
 |Name|Description|  
 |----------|-----------------|  
-|[location::location Constructor](#location__location_constructor)|Overloaded. Constructs a `location` object.|  
-|[location::~location Destructor](#location___dtorlocation_destructor)|Destroys a `location` object.|  
+|[location::location Constructor](#ctor)|Overloaded. Constructs a `location` object.|  
+|[location::~location Destructor](#dtor)|Destroys a `location` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[location::current Method](#location__current_method)|Returns a `location` object representing the most specific place the calling thread is executing.|  
-|[location::from_numa_node Method](#location__from_numa_node_method)|Returns a `location` object which represents a given NUMA node.|  
+|[location::current Method](#current)|Returns a `location` object representing the most specific place the calling thread is executing.|  
+|[location::from_numa_node Method](#from_numa_node)|Returns a `location` object which represents a given NUMA node.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[location::operator!= Operator](#location__operator_neq_operator)|Determines whether two `location` objects represent different location.|  
-|[location::operator= Operator](#location__operator_eq_operator)|Assigns the contents of a different `location` object to this one.|  
-|[location::operator== Operator](#location__operator_eq_eq_operator)|Determines whether two `location` objects represent the same location.|  
+|[location::operator!= Operator](#operator_neq)|Determines whether two `location` objects represent different location.|  
+|[location::operator= Operator](#operator_eq)|Assigns the contents of a different `location` object to this one.|  
+|[location::operator== Operator](#operator_eq_eq)|Determines whether two `location` objects represent the same location.|  
   
 ## Inheritance Hierarchy  
  `location`  
@@ -75,14 +75,14 @@ class location;
   
  **Namespace:** concurrency  
   
-##  <a name="location___dtorlocation_destructor"></a>  location::~location Destructor  
+##  <a name="dtor"></a>  location::~location Destructor  
  Destroys a `location` object.  
   
 ```
 ~location();
 ```  
   
-##  <a name="location__current_method"></a>  location::current Method  
+##  <a name="current"></a>  location::current Method  
  Returns a `location` object representing the most specific place the calling thread is executing.  
   
 ```
@@ -92,7 +92,7 @@ static location __cdecl current();
 ### Return Value  
  A location representing the most specific place the calling thread is executing.  
   
-##  <a name="location__from_numa_node_method"></a>  location::from_numa_node Method  
+##  <a name="from_numa_node"></a>  location::from_numa_node Method  
  Returns a `location` object which represents a given NUMA node.  
   
 ```
@@ -106,7 +106,7 @@ static location __cdecl from_numa_node(unsigned short _NumaNodeNumber);
 ### Return Value  
  A location representing the NUMA node specified by the `_NumaNodeNumber` parameter.  
   
-##  <a name="location__location_constructor"></a>  location::location Constructor  
+##  <a name="ctor"></a>  location::location Constructor  
  Constructs a `location` object.  
   
 ```
@@ -132,7 +132,7 @@ location(
 ### Remarks  
  A default constructed location represents the system as a whole.  
   
-##  <a name="location__operator_neq_operator"></a>  location::operator!= Operator  
+##  <a name="operator_neq"></a>  location::operator!= Operator  
  Determines whether two `location` objects represent different location.  
   
 ```
@@ -145,7 +145,7 @@ bool operator!= (const location& _Rhs) const;
 ### Return Value  
  `true` if the two locations are different, `false` otherwise.  
   
-##  <a name="location__operator_eq_operator"></a>  location::operator= Operator  
+##  <a name="operator_eq"></a>  location::operator= Operator  
  Assigns the contents of a different `location` object to this one.  
   
 ```
@@ -158,7 +158,7 @@ location& operator= (const location& _Rhs);
   
 ### Return Value  
   
-##  <a name="location__operator_eq_eq_operator"></a>  location::operator== Operator  
+##  <a name="operator_eq_eq"></a>  location::operator== Operator  
  Determines whether two `location` objects represent the same location.  
   
 ```
@@ -172,4 +172,4 @@ bool operator== (const location& _Rhs) const;
  `true` if the two locations are identical, and `false` otherwise.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

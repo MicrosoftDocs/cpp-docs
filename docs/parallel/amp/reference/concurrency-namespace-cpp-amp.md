@@ -80,7 +80,7 @@ namespace Concurrency;
 |Name|Description|  
 |----------|-----------------|  
 |[access_type Enumeration](concurrency-namespace-enums-amp.md#access_type)|Specifies the data access type.|  
-|[queuing_mode Enumeration](oncurrency-namespace-enums-amp.md#queuing_mode_enumeration)|Specifies the queuing modes that are supported on the accelerator.|  
+|[queuing_mode Enumeration](concurrency-namespace-enums-amp.md#queuing_mode)|Specifies the queuing modes that are supported on the accelerator.|  
   
 ### Operators  
   
@@ -124,8 +124,8 @@ namespace Concurrency;
   
 |Name|Description|  
 |----------|-----------------|  
-|[HLSL_MAX_NUM_BUFFERS Constant](concurrency-namespace-constants-amp.md#hlsl_max_num_buffers_constant)|The maximum number of buffers allowed by DirectX.|  
-|[MODULENAME_MAX_LENGTH Constant](concurrency-namespace-constants-amp.md#modulename_max_length_constant)|Stores the maximum length of the module name. This value must be the same on the compiler and the runtime.|  
+|[HLSL_MAX_NUM_BUFFERS Constant](concurrency-namespace-constants-amp.md#hlsl_max_num_buffers)|The maximum number of buffers allowed by DirectX.|  
+|[MODULENAME_MAX_LENGTH Constant](concurrency-namespace-constants-amp.md#modulename_max_length)|Stores the maximum length of the module name. This value must be the same on the compiler and the runtime.|  
   
 ## Requirements  
  **Header:** amp.h  

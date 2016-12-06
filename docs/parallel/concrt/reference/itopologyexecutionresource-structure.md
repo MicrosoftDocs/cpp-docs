@@ -49,8 +49,8 @@ struct ITopologyExecutionResource;
   
 |Name|Description|  
 |----------|-----------------|  
-|[ITopologyExecutionResource::GetId Method](#itopologyexecutionresource__getid_method)|Returns the Resource Manager's unique identifier for this execution resource.|  
-|[ITopologyExecutionResource::GetNext Method](#itopologyexecutionresource__getnext_method)|Returns an interface to the next execution resource in enumeration order.|  
+|[ITopologyExecutionResource::GetId Method](#getid)|Returns the Resource Manager's unique identifier for this execution resource.|  
+|[ITopologyExecutionResource::GetNext Method](#getnext)|Returns an interface to the next execution resource in enumeration order.|  
   
 ## Remarks  
  This interface is typically utilized to walk the topology of the system as observed by the Resource Manager.  
@@ -63,7 +63,7 @@ struct ITopologyExecutionResource;
   
  **Namespace:** concurrency  
   
-##  <a name="itopologyexecutionresource__getid_method"></a>  ITopologyExecutionResource::GetId Method  
+##  <a name="getid"></a>  ITopologyExecutionResource::GetId Method  
  Returns the Resource Manager's unique identifier for this execution resource.  
   
 ```
@@ -73,7 +73,7 @@ virtual unsigned int GetId() const = 0;
 ### Return Value  
  The Resource Manager's unique identifier for this execution resource.  
   
-##  <a name="itopologyexecutionresource__getnext_method"></a>  ITopologyExecutionResource::GetNext Method  
+##  <a name="getnext"></a>  ITopologyExecutionResource::GetNext Method  
  Returns an interface to the next execution resource in enumeration order.  
   
 ```
@@ -84,4 +84,4 @@ virtual ITopologyExecutionResource *GetNext() const = 0;
  An interface to the next execution resource in enumeration order. If there are no more nodes in enumeration order of the node to which this execution resource belongs, this method will return the value `NULL`.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

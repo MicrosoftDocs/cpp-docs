@@ -61,18 +61,18 @@ class critical_section;
   
 |Name|Description|  
 |----------|-----------------|  
-|[critical_section::critical_section Constructor](#critical_section__critical_section_constructor)|Constructs a new critical section.|  
-|[critical_section::~critical_section Destructor](#critical_section___dtorcritical_section_destructor)|Destroys a critical section.|  
+|[critical_section::critical_section Constructor](#ctor)|Constructs a new critical section.|  
+|[critical_section::~critical_section Destructor](#dtor)|Destroys a critical section.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[critical_section::lock Method](#critical_section__lock_method)|Acquires this critical section.|  
-|[critical_section::native_handle Method](#critical_section__native_handle_method)|Returns a platform specific native handle, if one exists.|  
-|[critical_section::try_lock Method](#critical_section__try_lock_method)|Tries to acquire the lock without blocking.|  
-|[critical_section::try_lock_for Method](#critical_section__try_lock_for_method)|Tries to acquire the lock without blocking for a specific number of milliseconds.|  
-|[critical_section::unlock Method](#critical_section__unlock_method)|Unlocks the critical section.|  
+|[critical_section::lock Method](#lock)|Acquires this critical section.|  
+|[critical_section::native_handle Method](#native_handle)|Returns a platform specific native handle, if one exists.|  
+|[critical_section::try_lock Method](#try_lock)|Tries to acquire the lock without blocking.|  
+|[critical_section::try_lock_for Method](#try_lock_for)|Tries to acquire the lock without blocking for a specific number of milliseconds.|  
+|[critical_section::unlock Method](#unlock)|Unlocks the critical section.|  
   
 ## Remarks  
  For more information, see [Synchronization Data Structures](../../../parallel/concrt/synchronization-data-structures.md).  
@@ -85,14 +85,14 @@ class critical_section;
   
  **Namespace:** concurrency  
   
-##  <a name="critical_section__critical_section_constructor"></a>  critical_section::critical_section Constructor  
+##  <a name="ctor"></a>  critical_section::critical_section Constructor  
  Constructs a new critical section.  
   
 ```
 critical_section();
 ```  
   
-##  <a name="critical_section___dtorcritical_section_destructor"></a>  critical_section::~critical_section Destructor  
+##  <a name="dtor"></a>  critical_section::~critical_section Destructor  
  Destroys a critical section.  
   
 ```
@@ -102,7 +102,7 @@ critical_section();
 ### Remarks  
  It is expected that the lock is no longer held when the destructor runs. Allowing the critical section to destruct with the lock still held results in undefined behavior.  
   
-##  <a name="critical_section__lock_method"></a>  critical_section::lock Method  
+##  <a name="lock"></a>  critical_section::lock Method  
  Acquires this critical section.  
   
 ```
@@ -112,9 +112,9 @@ void lock();
 ### Remarks  
  It is often safer to utilize the [scoped_lock](#critical_section__scoped_lock_class) construct to acquire and release a `critical_section` object in an exception safe way.  
   
- If the lock is already held by the calling context, an [improper_lock](../../../parallel/concrt/reference/improper-lock-class.md) exception will be thrown.  
+ If the lock is already held by the calling context, an [improper_lock](improper-lock-class.md) exception will be thrown.  
   
-##  <a name="critical_section__native_handle_method"></a>  critical_section::native_handle Method  
+##  <a name="native_handle"></a>  critical_section::native_handle Method  
  Returns a platform specific native handle, if one exists.  
   
 ```
@@ -152,7 +152,7 @@ explicit _CRTIMP scoped_lock(critical_section& _Critical_section);
 ~scoped_lock();
 ```  
   
-##  <a name="critical_section__try_lock_method"></a>  critical_section::try_lock Method  
+##  <a name="try_lock"></a>  critical_section::try_lock Method  
  Tries to acquire the lock without blocking.  
   
 ```
@@ -162,7 +162,7 @@ bool try_lock();
 ### Return Value  
  If the lock was acquired, the value `true`; otherwise, the value `false`.  
   
-##  <a name="critical_section__try_lock_for_method"></a>  critical_section::try_lock_for Method  
+##  <a name="try_lock_for"></a>  critical_section::try_lock_for Method  
  Tries to acquire the lock without blocking for a specific number of milliseconds.  
   
 ```
@@ -176,7 +176,7 @@ bool try_lock_for(unsigned int _Timeout);
 ### Return Value  
  If the lock was acquired, the value `true`; otherwise, the value `false`.  
   
-##  <a name="critical_section__unlock_method"></a>  critical_section::unlock Method  
+##  <a name="unlock"></a>  critical_section::unlock Method  
  Unlocks the critical section.  
   
 ```
@@ -184,5 +184,5 @@ void unlock();
 ```  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [reader_writer_lock Class](../../../parallel/concrt/reference/reader-writer-lock-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [reader_writer_lock Class](reader-writer-lock-class.md)

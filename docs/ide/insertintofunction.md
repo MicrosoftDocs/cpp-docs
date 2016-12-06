@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # InsertIntoFunction
-Used by [AddATLSupportToProject](../ide/addatlsupporttoproject.md) to insert code into [InitInstance](../Topic/CWinApp::InitInstance.md).  
+Used by [AddATLSupportToProject](../ide/addatlsupporttoproject.md) to insert code into [InitInstance](../mfc/reference/cwinapp-class.md#initinstance).  
   
 ## Syntax  
   

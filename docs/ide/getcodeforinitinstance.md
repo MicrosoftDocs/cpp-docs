@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # GetCodeForInitInstance
-Retrieves the specified code for [InitInstance](../Topic/CWinApp::InitInstance.md).  
+Retrieves the specified code for [InitInstance](../mfc/reference/cwinapp-class.md#initinstance).  
   
 ## Syntax  
   

@@ -50,14 +50,13 @@ class accelerator_view_removed : public runtime_exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[accelerator_view_removed::accelerator_view_removed Constructor](#accelerator_view_removed_ctor)|Initializes a new instance of the `accelerator_view_removed` class.|  
-  
+|[accelerator_view_removed::accelerator_view_removed Constructor](#ctor)|Initializes a new instance of the `accelerator_view_removed` class.|  
+
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[accelerator_view_removed::get_view_removed_reason Method](reference/accelerator-view-removed-class.md#accelerator_view_removed__get_view_removed_reason_method)|Returns an HRESULT error code indicating the cause of the `accelerator_view` object's removal.|  
-
+|[accelerator_view_removed::get_view_removed_reason Method](#get_view_removed_reason)|Returns an HRESULT error code indicating the cause of the `accelerator_view` object's removal.|  
   
 ## Inheritance Hierarchy  
  `exception`  
@@ -71,7 +70,7 @@ class accelerator_view_removed : public runtime_exception;
   
  **Namespace:** Concurrency  
 
-## <a name="accelerator_view_removed_ctor"></a> accelerator_view_removed::accelerator_view_removed Constructor
+## <a name="accelerator_view_removed__ctor"></a> accelerator_view_removed::accelerator_view_removed Constructor
 Initializes a new instance of the [accelerator_view_removed](accelerator-view-removed-class.md) class.  
   
 ### Syntax  
@@ -95,7 +94,7 @@ explicit accelerator_view_removed(
 ### Return Value  
  A new instance of the accelerator_view_removed class.  
   
-## <a name="get_view_removed_reason"></a> accelerator_view_removed::get_view_removed_reason Method
+## <a name="accelerator_view_removed__get_view_removed_reason_method"></a> accelerator_view_removed::get_view_removed_reason Method
 Returns an HRESULT error code indicating the cause of the `accelerator_view` object's removal.  
   
 ### Syntax  

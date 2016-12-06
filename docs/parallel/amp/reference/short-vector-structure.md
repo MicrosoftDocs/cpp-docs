@@ -110,7 +110,7 @@ struct short_vector<double, 4>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[short_vector::short_vector Constructor](#short_vector__short_vector_constructor)||  
+|[short_vector::short_vector Constructor](#ctor)||  
   
 ## Inheritance Hierarchy  
  `short_vector`  
@@ -120,11 +120,11 @@ struct short_vector<double, 4>;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="short_vector__short_vector_constructor"></a>  short_vector::short_vector Constructor  
+##  <a name="ctor"></a>  short_vector::short_vector Constructor  
   
 ```  
 short_vector();
 ```  
   
 ## See Also  
- [Concurrency::graphics Namespace](../../../parallel/amp/reference/concurrency-graphics-namespace.md)
+ [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

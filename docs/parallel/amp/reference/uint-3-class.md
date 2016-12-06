@@ -121,7 +121,7 @@ class uint_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[uint_3::uint_3 Constructor](#uint_3__uint_3_constructor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[uint_3::uint_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -187,7 +187,7 @@ class uint_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[uint_3::size Constant](#uint_3__size_constant)||  
+|[uint_3::size Constant](#uint_3__size)||  
   
 ### Public Data Members  
   
@@ -232,7 +232,7 @@ class uint_3;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="uint_3__uint_3_constructor"></a>  uint_3::uint_3 Constructor  
+##  <a name="ctor"></a>  uint_3::uint_3 Constructor  
  Default constructor, initializes all elements with 0.  
   
 ```  
@@ -298,11 +298,11 @@ explicit inline uint_3(
  `_Other`  
  The object used to initialize.  
   
-##  <a name="uint_3__size_constant"></a>  uint_3::size Constant  
+##  <a name="uint_3__size"></a>  uint_3::size Constant  
   
 ```  
 static const int size = 3;  
 ```  
   
 ## See Also  
- [Concurrency::graphics Namespace](../../../parallel/amp/reference/concurrency-graphics-namespace.md)
+ [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

@@ -34,7 +34,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Concurrency::precise_math Namespace
-Functions in the `precise_math` namespace are C99 compliant. Both single precision and double precision versions of each function are included. For example, `acos` is the double-precision version and `acosf` is the single-precision version. These functions, including the single-precision functions, require extended double-precision support on the accelerator. You can use the [accelerator::supports_double_precision Data Member](accelerator-class.md#accelerator__supports_double_precision_data_member) to determine if you can run these functions on a specific accelerator. 
+Functions in the `precise_math` namespace are C99 compliant. Both single precision and double precision versions of each function are included. For example, `acos` is the double-precision version and `acosf` is the single-precision version. These functions, including the single-precision functions, require extended double-precision support on the accelerator. You can use the [accelerator::supports_double_precision Data Member](accelerator-class.md#supports_double_precision) to determine if you can run these functions on a specific accelerator. 
 
   
 ## Syntax  
@@ -189,4 +189,4 @@ namespace precise_math;
  **Namespace:** Concurrency  
   
 ## See Also  
- [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)
+ [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

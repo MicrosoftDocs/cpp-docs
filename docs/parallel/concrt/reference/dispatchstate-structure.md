@@ -49,15 +49,15 @@ struct DispatchState;
   
 |Name|Description|  
 |----------|-----------------|  
-|[DispatchState::DispatchState Constructor](#dispatchstate__dispatchstate_constructor)|Constructs a new `DispatchState` object.|  
+|[DispatchState::DispatchState Constructor](#ctor)|Constructs a new `DispatchState` object.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[DispatchState::m_dispatchStateSize Data Member](#dispatchstate__m_dispatchstatesize_data_member)|Size of this structure, which is used for versioning.|  
-|[DispatchState::m_fIsPreviousContextAsynchronouslyBlocked Data Member](#dispatchstate__m_fispreviouscontextasynchronouslyblocked_data_member)|Tells whether this context has entered the `Dispatch` method because the previous context asynchronously blocked. This is used only on the UMS scheduling context, and is set to the value `0` for all other execution contexts.|  
-|[DispatchState::m_reserved Data Member](#dispatchstate__m_reserved_data_member)|Bits reserved for future information passing.|  
+|[DispatchState::m_dispatchStateSize Data Member](#m_dispatchstatesize)|Size of this structure, which is used for versioning.|  
+|[DispatchState::m_fIsPreviousContextAsynchronouslyBlocked Data Member](#m_fispreviouscontextasynchronouslyblocked)|Tells whether this context has entered the `Dispatch` method because the previous context asynchronously blocked. This is used only on the UMS scheduling context, and is set to the value `0` for all other execution contexts.|  
+|[DispatchState::m_reserved Data Member](#m_reserved)|Bits reserved for future information passing.|  
   
 ## Inheritance Hierarchy  
  `DispatchState`  
@@ -67,28 +67,28 @@ struct DispatchState;
   
  **Namespace:** concurrency  
   
-##  <a name="dispatchstate__dispatchstate_constructor"></a>  DispatchState::DispatchState Constructor  
+##  <a name="ctor"></a>  DispatchState::DispatchState Constructor  
  Constructs a new `DispatchState` object.  
   
 ```
 DispatchState();
 ```  
   
-##  <a name="dispatchstate__m_dispatchstatesize_data_member"></a>  DispatchState::m_dispatchStateSize Data Member  
+##  <a name="m_dispatchstatesize"></a>  DispatchState::m_dispatchStateSize Data Member  
  Size of this structure, which is used for versioning.  
   
 ```
 unsigned long m_dispatchStateSize;
 ```  
   
-##  <a name="dispatchstate__m_fispreviouscontextasynchronouslyblocked_data_member"></a>  DispatchState::m_fIsPreviousContextAsynchronouslyBlocked Data Member  
+##  <a name="m_fispreviouscontextasynchronouslyblocked"></a>  DispatchState::m_fIsPreviousContextAsynchronouslyBlocked Data Member  
  Tells whether this context has entered the `Dispatch` method because the previous context asynchronously blocked. This is used only on the UMS scheduling context, and is set to the value `0` for all other execution contexts.  
   
 ```
 unsigned int m_fIsPreviousContextAsynchronouslyBlocked : 1;
 ```  
   
-##  <a name="dispatchstate__m_reserved_data_member"></a>  DispatchState::m_reserved Data Member  
+##  <a name="m_reserved"></a>  DispatchState::m_reserved Data Member  
  Bits reserved for future information passing.  
   
 ```
@@ -96,4 +96,4 @@ unsigned int m_reserved : 31;
 ```  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

@@ -38,7 +38,7 @@ IUnknown* get_sampler(
  The IUnknown interface pointer corresponding to the D3D sampler state that represents the given sampler.  
   
 ##  <a name="get_texture_function"></a>  get_texture Function  
- Gets the Direct3D texture interface underlying the specified [texture](../../../parallel/amp/reference/texture-class.md) object.  
+ Gets the Direct3D texture interface underlying the specified [texture](texture-class.md) object.  
   
 ```  
 template<
@@ -95,7 +95,7 @@ sampler make_sampler(_In_ IUnknown* _D3D_sampler) restrict(amp);
  A sampler represents the provided D3D sampler state.  
   
 ##  <a name="make_texture_function"></a>  make_texture Function  
- Creates a [texture](../../../parallel/amp/reference/texture-class.md) object by using the specified parameters.  
+ Creates a [texture](texture-class.md) object by using the specified parameters.  
   
 ```  
 template<
@@ -151,4 +151,4 @@ inline uint4 msad4(
  Returns a vector of 4 sums. Each sum corresponds to the masked sum of absolute differences of different byte alignments between the reference value and the source value.  
   
 ## See Also  
- [Concurrency::graphics::direct3d Namespace](../../../parallel/amp/reference/concurrency-graphics-direct3d-namespace.md)
+ [Concurrency::graphics::direct3d Namespace](concurrency-graphics-direct3d-namespace.md)

@@ -71,21 +71,21 @@ class concurrent_queue: public ::Concurrency::details::_Concurrent_queue_base_v4
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_queue::concurrent_queue Constructor](#concurrent_queue__concurrent_queue_constructor)|Overloaded. Constructs a concurrent queue.|  
-|[concurrent_queue::~concurrent_queue Destructor](#concurrent_queue___dtorconcurrent_queue_destructor)|Destroys the concurrent queue.|  
+|[concurrent_queue::concurrent_queue Constructor](#ctor)|Overloaded. Constructs a concurrent queue.|  
+|[concurrent_queue::~concurrent_queue Destructor](#dtor)|Destroys the concurrent queue.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_queue::clear Method](#concurrent_queue__clear_method)|Clears the concurrent queue, destroying any currently enqueued elements. This method is not concurrency-safe.|  
-|[concurrent_queue::empty Method](#concurrent_queue__empty_method)|Tests if the concurrent queue is empty at the moment this method is called. This method is concurrency-safe.|  
-|[concurrent_queue::get_allocator Method](#concurrent_queue__get_allocator_method)|Returns a copy of the allocator used to construct the concurrent queue. This method is concurrency-safe.|  
-|[concurrent_queue::push Method](#concurrent_queue__push_method)|Overloaded. Enqueues an item at tail end of the concurrent queue. This method is concurrency-safe.|  
-|[concurrent_queue::try_pop Method](#concurrent_queue__try_pop_method)|Dequeues an item from the queue if one is available. This method is concurrency-safe.|  
-|[concurrent_queue::unsafe_begin Method](#concurrent_queue__unsafe_begin_method)|Overloaded. Returns an iterator of type `iterator` or `const_iterator` to the beginning of the concurrent queue. This method is not concurrency-safe.|  
-|[concurrent_queue::unsafe_end Method](#concurrent_queue__unsafe_end_method)|Overloaded. Returns an iterator of type `iterator` or `const_iterator` to the end of the concurrent queue. This method is not concurrency-safe.|  
-|[concurrent_queue::unsafe_size Method](#concurrent_queue__unsafe_size_method)|Returns the number of items in the queue. This method is not concurrency-safe.|  
+|[concurrent_queue::clear Method](#clear)|Clears the concurrent queue, destroying any currently enqueued elements. This method is not concurrency-safe.|  
+|[concurrent_queue::empty Method](#empty)|Tests if the concurrent queue is empty at the moment this method is called. This method is concurrency-safe.|  
+|[concurrent_queue::get_allocator Method](#get_allocator)|Returns a copy of the allocator used to construct the concurrent queue. This method is concurrency-safe.|  
+|[concurrent_queue::push Method](#push)|Overloaded. Enqueues an item at tail end of the concurrent queue. This method is concurrency-safe.|  
+|[concurrent_queue::try_pop Method](#try_pop)|Dequeues an item from the queue if one is available. This method is concurrency-safe.|  
+|[concurrent_queue::unsafe_begin Method](#unsafe_begin)|Overloaded. Returns an iterator of type `iterator` or `const_iterator` to the beginning of the concurrent queue. This method is not concurrency-safe.|  
+|[concurrent_queue::unsafe_end Method](#unsafe_end)|Overloaded. Returns an iterator of type `iterator` or `const_iterator` to the end of the concurrent queue. This method is not concurrency-safe.|  
+|[concurrent_queue::unsafe_size Method](#unsafe_size)|Returns the number of items in the queue. This method is not concurrency-safe.|  
   
 ## Remarks  
  For more information, see [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md).  
@@ -98,14 +98,14 @@ class concurrent_queue: public ::Concurrency::details::_Concurrent_queue_base_v4
   
  **Namespace:** concurrency  
   
-##  <a name="concurrent_queue__clear_method"></a>  concurrent_queue::clear Method  
+##  <a name="clear"></a>  concurrent_queue::clear Method  
  Clears the concurrent queue, destroying any currently enqueued elements. This method is not concurrency-safe.  
   
 ```
 void clear();
 ```  
   
-##  <a name="concurrent_queue__concurrent_queue_constructor"></a>  concurrent_queue::concurrent_queue Constructor  
+##  <a name="ctor"></a>  concurrent_queue::concurrent_queue Constructor  
  Constructs a concurrent queue.  
   
 ```
@@ -152,14 +152,14 @@ concurrent_queue(_InputIterator _Begin,
   
  The fourth constructor specifies values supplied by the iterator range [ `_Begin`, `_End`).  
   
-##  <a name="concurrent_queue___dtorconcurrent_queue_destructor"></a>  concurrent_queue::~concurrent_queue Destructor  
+##  <a name="dtor"></a>  concurrent_queue::~concurrent_queue Destructor  
  Destroys the concurrent queue.  
   
 ```
 ~concurrent_queue();
 ```  
   
-##  <a name="concurrent_queue__empty_method"></a>  concurrent_queue::empty Method  
+##  <a name="empty"></a>  concurrent_queue::empty Method  
  Tests if the concurrent queue is empty at the moment this method is called. This method is concurrency-safe.  
   
 ```
@@ -172,7 +172,7 @@ bool empty() const;
 ### Remarks  
  While this method is concurrency-safe with respect to calls to the methods `push`, `try_pop`, and `empty`, the value returned might be incorrect by the time it is inspected by the calling thread.  
   
-##  <a name="concurrent_queue__get_allocator_method"></a>  concurrent_queue::get_allocator Method  
+##  <a name="get_allocator"></a>  concurrent_queue::get_allocator Method  
  Returns a copy of the allocator used to construct the concurrent queue. This method is concurrency-safe.  
   
 ```
@@ -182,7 +182,7 @@ allocator_type get_allocator() const;
 ### Return Value  
  A copy of the allocator used to construct the concurrent queue.  
   
-##  <a name="concurrent_queue__push_method"></a>  concurrent_queue::push Method  
+##  <a name="push"></a>  concurrent_queue::push Method  
  Enqueues an item at tail end of the concurrent queue. This method is concurrency-safe.  
   
 ```
@@ -198,7 +198,7 @@ void push(T&& _Src);
 ### Remarks  
  `push` is concurrency-safe with respect to calls to the methods `push`, `try_pop`, and `empty`.  
   
-##  <a name="concurrent_queue__try_pop_method"></a>  concurrent_queue::try_pop Method  
+##  <a name="try_pop"></a>  concurrent_queue::try_pop Method  
  Dequeues an item from the queue if one is available. This method is concurrency-safe.  
   
 ```
@@ -217,7 +217,7 @@ bool try_pop(T& _Dest);
   
  `try_pop` is concurrency-safe with respect to calls to the methods `push`, `try_pop`, and `empty`.  
   
-##  <a name="concurrent_queue__unsafe_begin_method"></a>  concurrent_queue::unsafe_begin Method  
+##  <a name="unsafe_begin"></a>  concurrent_queue::unsafe_begin Method  
  Returns an iterator of type `iterator` or `const_iterator` to the beginning of the concurrent queue. This method is not concurrency-safe.  
   
 ```
@@ -232,7 +232,7 @@ const_iterator unsafe_begin() const;
 ### Remarks  
  The iterators for the `concurrent_queue` class are primarily intended for debugging, as they are slow, and iteration is not concurrency-safe with respect to other queue operations.  
   
-##  <a name="concurrent_queue__unsafe_end_method"></a>  concurrent_queue::unsafe_end Method  
+##  <a name="unsafe_end"></a>  concurrent_queue::unsafe_end Method  
  Returns an iterator of type `iterator` or `const_iterator` to the end of the concurrent queue. This method is not concurrency-safe.  
   
 ```
@@ -247,7 +247,7 @@ const_iterator unsafe_end() const;
 ### Remarks  
  The iterators for the `concurrent_queue` class are primarily intended for debugging, as they are slow, and iteration is not concurrency-safe with respect to other queue operations.  
   
-##  <a name="concurrent_queue__unsafe_size_method"></a>  concurrent_queue::unsafe_size Method  
+##  <a name="unsafe_size"></a>  concurrent_queue::unsafe_size Method  
  Returns the number of items in the queue. This method is not concurrency-safe.  
   
 ```
@@ -261,4 +261,4 @@ size_type unsafe_size() const;
  `unsafe_size` is not concurrency-safe and can produce incorrect results if called concurrently with calls to the methods `push`, `try_pop`, and `empty`.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

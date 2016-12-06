@@ -49,7 +49,7 @@ class context_self_unblock : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[context_self_unblock::context_self_unblock Constructor](#context_self_unblock__context_self_unblock_constructor)|Overloaded. Constructs a `context_self_unblock` object.|  
+|[context_self_unblock::context_self_unblock Constructor](#ctor)|Overloaded. Constructs a `context_self_unblock` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  
@@ -61,7 +61,7 @@ class context_self_unblock : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="context_self_unblock__context_self_unblock_constructor"></a>  context_self_unblock::context_self_unblock Constructor  
+##  <a name="ctor"></a>  context_self_unblock::context_self_unblock Constructor  
  Constructs a `context_self_unblock` object.  
   
 ```  
@@ -76,4 +76,4 @@ context_self_unblock() throw();
  A descriptive message of the error.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

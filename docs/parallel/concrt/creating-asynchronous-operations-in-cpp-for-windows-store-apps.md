@@ -53,7 +53,7 @@ This document describes some of the key points to keep in mind when you use the 
   
 -   The behavior of the `create_async` function depends on the return type of the work function that is passed to it. A work function that returns a task (either `task<T>` or `task<void>`) runs synchronously in the context that called `create_async`. A work function that returns `T` or `void` runs in an arbitrary context.  
   
--   You can use the [concurrency::task::then](reference/task-class.md#task__then_method) method to create a chain of tasks that run one after another. In a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app, the default context for a task’s continuations depends on how that task was constructed. If the task was created by passing an asynchronous action to the task constructor, or by passing a lambda expression that returns an asynchronous action, then the default context for all continuations of that task is the current context. If the task is not constructed from an asynchronous action, then an arbitrary context is used by default for the task’s continuations. You can override the default context with the [concurrency::task_continuation_context](../../parallel/concrt/reference/task-continuation-context-class.md) class.  
+-   You can use the [concurrency::task::then](reference/task-class.md#then) method to create a chain of tasks that run one after another. In a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app, the default context for a task’s continuations depends on how that task was constructed. If the task was created by passing an asynchronous action to the task constructor, or by passing a lambda expression that returns an asynchronous action, then the default context for all continuations of that task is the current context. If the task is not constructed from an asynchronous action, then an arbitrary context is used by default for the task’s continuations. You can override the default context with the [concurrency::task_continuation_context](../../parallel/concrt/reference/task-continuation-context-class.md) class.  
 
   
 ## In this document  
@@ -157,12 +157,12 @@ This document describes some of the key points to keep in mind when you use the 
   
  A task that's created from an asynchronous operation, such as `IAsyncOperation<TResult>`, uses special semantics that can help you ignore the threading details. Although an operation might run on a background thread (or it may not be backed by a thread at all), its continuations are by default guaranteed to run on the apartment that started the continuation operations (in other words, from the apartment that called `task::then`). You can use the [concurrency::task_continuation_context](../../parallel/concrt/reference/task-continuation-context-class.md) class to control the execution context of a continuation. Use these static helper methods to create `task_continuation_context` objects:  
   
--   Use [concurrency::task_continuation_context::use_arbitrary](reference/task-continuation-context-class.md#task_continuation_context__use_arbitrary_method) to specify that the continuation runs on a background thread.  
+-   Use [concurrency::task_continuation_context::use_arbitrary](reference/task-continuation-context-class.md#use_arbitrary) to specify that the continuation runs on a background thread.  
   
--   Use [concurrency::task_continuation_context::use_current](reference/task-continuation-context-class.md#task_continuation_context__use_current_method) to specify that the continuation runs on the thread that called `task::then`.  
+-   Use [concurrency::task_continuation_context::use_current](reference/task-continuation-context-class.md#use_current) to specify that the continuation runs on the thread that called `task::then`.  
 
   
- You can pass a `task_continuation_context` object to the [task::then](reference/task-class.md#task__then_method) method to explicitly control the execution context of the continuation or you can pass the task to another apartment and then call the `task::then` method to implicitly control the execution context.  
+ You can pass a `task_continuation_context` object to the [task::then](reference/task-class.md#then) method to explicitly control the execution context of the continuation or you can pass the task to another apartment and then call the `task::then` method to implicitly control the execution context.  
   
 > [!IMPORTANT]
 >  Because the main UI thread of [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps run under STA, continuations that you create on that STA by default run on the STA. Accordingly, continuations that you create on the MTA run on the MTA.  
@@ -174,7 +174,7 @@ This document describes some of the key points to keep in mind when you use the 
   
 > [!IMPORTANT]
 
->  Do not call [concurrency::task::wait](reference/task-class.md#task__wait_method) in the body of a continuation that runs on the STA. Otherwise, the runtime throws [concurrency::invalid_operation](../../parallel/concrt/reference/invalid-operation-class.md) because this method blocks the current thread and can cause the app to become unresponsive. However, you can call the [concurrency::task::get](reference/task-class.md#task__get_method) method to receive the result of the antecedent task in a task-based continuation.  
+>  Do not call [concurrency::task::wait](reference/task-class.md#wait) in the body of a continuation that runs on the STA. Otherwise, the runtime throws [concurrency::invalid_operation](../../parallel/concrt/reference/invalid-operation-class.md) because this method blocks the current thread and can cause the app to become unresponsive. However, you can call the [concurrency::task::get](reference/task-class.md#get) method to receive the result of the antecedent task in a task-based continuation.  
   
 ##  <a name="example-app"></a> Example: Controlling Execution in a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] App with C++ and XAML  
  Consider a C++ XAML app that reads a file from disk, finds the most common words in that file, and then shows the results in the UI. To create this app, start, in Visual Studio, by creating a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)]**Blank App (XAML)** project and naming it `CommonWords`. In your app manifest, specify the **Documents Library** capability to enable the app to access the Documents folder. Also add the Text (.txt) file type to the declarations section of the app manifest. For more information about app capabilities and declarations, see [App packages and deployment](http://msdn.microsoft.com/library/windows/apps/hh464929.aspx).  

@@ -51,7 +51,7 @@ White space preceding the first token of the actual argument and following the l
   
 Further, if a character contained in the argument usually requires an escape sequence when used in a string literal (for example, the quotation mark (**"**) or backslash (**\\**) character), the necessary escape backslash is automatically inserted before the character.  
   
-The Visual C++ stringizing operator does not behave correctly when it is used with strings that include escape sequences. In this situation, the compiler generates [Compiler Error C2017](../error-messages/compiler-errs-1/compiler-error-c2017.md).  
+The Visual C++ stringizing operator does not behave correctly when it is used with strings that include escape sequences. In this situation, the compiler generates [Compiler Error C2017](../error-messages/compiler-errors-1/compiler-error-c2017.md).  
   
 ## Example  
 The following example shows a macro definition that includes the stringizing operator and a main function that invokes the macro:  

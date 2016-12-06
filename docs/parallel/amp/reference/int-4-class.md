@@ -317,7 +317,7 @@ class int_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|[int_4::int_4 Constructor](#int_4__int_4_constructor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[int_4::int_4 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -484,7 +484,7 @@ class int_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|[int_4::size Constant](#int_4__size_constant)||  
+|[int_4::size Constant](#int_4__size)||  
   
 ### Public Data Members  
   
@@ -627,7 +627,7 @@ class int_4;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="int_4__int_4_constructor"></a>  int_4::int_4 Constructor  
+##  <a name="ctor"></a>  int_4::int_4 Constructor  
  Default constructor, initializes all elements with 0.  
   
 ```  
@@ -697,11 +697,11 @@ explicit inline int_4(
  `_Other`  
  The object used to initialize.  
   
-##  <a name="int_4__size_constant"></a>  int_4::size Constant  
+##  <a name="int_4__size"></a>  int_4::size Constant  
   
 ```  
 static const int size = 4;  
 ```  
   
 ## See Also  
- [Concurrency::graphics Namespace](../../../parallel/amp/reference/concurrency-graphics-namespace.md)
+ [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

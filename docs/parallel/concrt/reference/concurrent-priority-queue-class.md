@@ -73,25 +73,25 @@ template <typename T,
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_priority_queue::concurrent_priority_queue Constructor](#concurrent_priority_queue__concurrent_priority_queue_constructor)|Overloaded. Constructs a concurrent priority queue.|  
+|[concurrent_priority_queue::concurrent_priority_queue Constructor](#ctor)|Overloaded. Constructs a concurrent priority queue.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_priority_queue::clear Method](#concurrent_priority_queue__clear_method)|Erases all elements in the concurrent priority. This method is not concurrency-safe.|  
-|[concurrent_priority_queue::empty Method](#concurrent_priority_queue__empty_method)|Tests if the concurrent priority queue is empty at the time this method is called. This method is concurrency-safe.|  
-|[concurrent_priority_queue::get_allocator Method](#concurrent_priority_queue__get_allocator_method)|Returns a copy of the allocator used to construct the concurrent priority queue. This method is concurrency-safe.|  
-|[concurrent_priority_queue::push Method](#concurrent_priority_queue__push_method)|Overloaded. Adds an element to the concurrent priority queue. This method is concurrency-safe.|  
-|[concurrent_priority_queue::size Method](#concurrent_priority_queue__size_method)|Returns the number of elements in the concurrent priority queue. This method is concurrency-safe.|  
-|[concurrent_priority_queue::swap Method](#concurrent_priority_queue__swap_method)|Swaps the contents of two concurrent priority queues. This method is not concurrency-safe.|  
-|[concurrent_priority_queue::try_pop Method](#concurrent_priority_queue__try_pop_method)|Removes and returns the highest priority element from the queue if the queue is non-empty. This method is concurrency-safe.|  
+|[concurrent_priority_queue::clear Method](#clear)|Erases all elements in the concurrent priority. This method is not concurrency-safe.|  
+|[concurrent_priority_queue::empty Method](#empty)|Tests if the concurrent priority queue is empty at the time this method is called. This method is concurrency-safe.|  
+|[concurrent_priority_queue::get_allocator Method](#get_allocator)|Returns a copy of the allocator used to construct the concurrent priority queue. This method is concurrency-safe.|  
+|[concurrent_priority_queue::push Method](#push)|Overloaded. Adds an element to the concurrent priority queue. This method is concurrency-safe.|  
+|[concurrent_priority_queue::size Method](#size)|Returns the number of elements in the concurrent priority queue. This method is concurrency-safe.|  
+|[concurrent_priority_queue::swap Method](#swap)|Swaps the contents of two concurrent priority queues. This method is not concurrency-safe.|  
+|[concurrent_priority_queue::try_pop Method](#try_pop)|Removes and returns the highest priority element from the queue if the queue is non-empty. This method is concurrency-safe.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_priority_queue::operator= Operator](#concurrent_priority_queue__operator_eq_operator)|Overloaded. Assigns the contents of another `concurrent_priority_queue` object to this one. This method is not concurrency-safe.|  
+|[concurrent_priority_queue::operator= Operator](#operator_eq)|Overloaded. Assigns the contents of another `concurrent_priority_queue` object to this one. This method is not concurrency-safe.|  
   
 ## Remarks  
  For detailed information on the `concurrent_priority_queue` class, see [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md).  
@@ -104,7 +104,7 @@ template <typename T,
   
  **Namespace:** concurrency  
   
-##  <a name="concurrent_priority_queue__clear_method"></a>  concurrent_priority_queue::clear Method  
+##  <a name="clear"></a>  concurrent_priority_queue::clear Method  
  Erases all elements in the concurrent priority. This method is not concurrency-safe.  
   
 ```
@@ -114,7 +114,7 @@ void clear();
 ### Remarks  
  `clear` is not concurrency-safe. You must ensure that no other threads are invoking methods on the concurrent priority queue when you call this method. `clear` does not free memory.  
   
-##  <a name="concurrent_priority_queue__concurrent_priority_queue_constructor"></a>  concurrent_priority_queue::concurrent_priority_queue Constructor  
+##  <a name="ctor"></a>  concurrent_priority_queue::concurrent_priority_queue Constructor  
  Constructs a concurrent priority queue.  
   
 ```
@@ -177,7 +177,7 @@ concurrent_priority_queue(
   
  The sixth and seventh constructors specify a move of the priority queue `_Src`.  
   
-##  <a name="concurrent_priority_queue__empty_method"></a>  concurrent_priority_queue::empty Method  
+##  <a name="empty"></a>  concurrent_priority_queue::empty Method  
  Tests if the concurrent priority queue is empty at the time this method is called. This method is concurrency-safe.  
   
 ```
@@ -187,7 +187,7 @@ bool empty() const;
 ### Return Value  
  `true` if the priority queue was empty at the moment the function was called, `false` otherwise.  
   
-##  <a name="concurrent_priority_queue__get_allocator_method"></a>  concurrent_priority_queue::get_allocator Method  
+##  <a name="get_allocator"></a>  concurrent_priority_queue::get_allocator Method  
  Returns a copy of the allocator used to construct the concurrent priority queue. This method is concurrency-safe.  
   
 ```
@@ -197,7 +197,7 @@ allocator_type get_allocator() const;
 ### Return Value  
  A copy of the allocator used to construct the `concurrent_priority_queue` object.  
   
-##  <a name="concurrent_priority_queue__operator_eq_operator"></a>  concurrent_priority_queue::operator= Operator  
+##  <a name="operator_eq"></a>  concurrent_priority_queue::operator= Operator  
  Assigns the contents of another `concurrent_priority_queue` object to this one. This method is not concurrency-safe.  
   
 ```
@@ -213,7 +213,7 @@ concurrent_priority_queue& operator= (concurrent_priority_queue&& _Src);
 ### Return Value  
  A reference to this `concurrent_priority_queue` object.  
   
-##  <a name="concurrent_priority_queue__push_method"></a>  concurrent_priority_queue::push Method  
+##  <a name="push"></a>  concurrent_priority_queue::push Method  
  Adds an element to the concurrent priority queue. This method is concurrency-safe.  
   
 ```
@@ -226,7 +226,7 @@ void push(value_type&& _Elem);
  `_Elem`  
  The element to be added to the concurrent priority queue.  
   
-##  <a name="concurrent_priority_queue__size_method"></a>  concurrent_priority_queue::size Method  
+##  <a name="size"></a>  concurrent_priority_queue::size Method  
  Returns the number of elements in the concurrent priority queue. This method is concurrency-safe.  
   
 ```
@@ -239,7 +239,7 @@ size_type size() const;
 ### Remarks  
  The returned size is guaranteed to include all elements added by calls to the function `push`. However, it may not reflect results of pending concurrent operations.  
   
-##  <a name="concurrent_priority_queue__swap_method"></a>  concurrent_priority_queue::swap Method  
+##  <a name="swap"></a>  concurrent_priority_queue::swap Method  
  Swaps the contents of two concurrent priority queues. This method is not concurrency-safe.  
   
 ```
@@ -250,7 +250,7 @@ void swap(concurrent_priority_queue& _Queue);
  `_Queue`  
  The `concurrent_priority_queue` object to swap contents with.  
   
-##  <a name="concurrent_priority_queue__try_pop_method"></a>  concurrent_priority_queue::try_pop Method  
+##  <a name="try_pop"></a>  concurrent_priority_queue::try_pop Method  
  Removes and returns the highest priority element from the queue if the queue is non-empty. This method is concurrency-safe.  
   
 ```
@@ -265,7 +265,7 @@ bool try_pop(reference _Elem);
  `true` if a value was popped, `false` otherwise.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
+ [concurrency Namespace](concurrency-namespace.md)   
  [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md)
 
 

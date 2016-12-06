@@ -430,7 +430,7 @@ void copy(
  The data type of the elements that are copied.  
   
 ##  <a name="copy_async"></a>  copy_async  
- Copies a C++ AMP object and returns a [completion_future](../../../parallel/amp/reference/completion-future-class.md) object that can be waited on. You can't copy data when running code on an accelerator.  The general form of this function is `copy(src, dest)`.  
+ Copies a C++ AMP object and returns a [completion_future](completion-future-class.md) object that can be waited on. You can't copy data when running code on an accelerator.  The general form of this function is `copy(src, dest)`.  
   
 ```  
 template <typename value_type, int _Rank>  
@@ -531,14 +531,14 @@ concurrency::completion_future copy_async(
  A `future<void>` that can be waited on.  
   
 ##  <a name="direct3d_abort"></a>  direct3d_abort  
- Aborts the execution of a function with the `restrict(amp)` restriction clause. When the AMP runtime detects the call, it raises a [runtime_exception](../../../parallel/amp/reference/runtime-exception-class.md) exception with the error message "Reference Rasterizer: Shader abort instruction hit".  
+ Aborts the execution of a function with the `restrict(amp)` restriction clause. When the AMP runtime detects the call, it raises a [runtime_exception](runtime-exception-class.md) exception with the error message "Reference Rasterizer: Shader abort instruction hit".  
   
 ```  
 void direct3d_abort() restrict(amp);
 ```  
   
 ##  <a name="direct3d_errorf"></a>  direct3d_errorf  
- Prints a formatted string to the Visual Studio output window. It is called from a function with the `restrict(amp)` restriction clause. When the AMP runtime detects the call, it raises a [runtime_exception](../../../parallel/amp/reference/runtime-exception-class.md) exception with the same formatting string.  
+ Prints a formatted string to the Visual Studio output window. It is called from a function with the `restrict(amp)` restriction clause. When the AMP runtime detects the call, it raises a [runtime_exception](runtime-exception-class.md) exception with the same formatting string.  
   
 ```  
 void direct3d_errorf(
@@ -659,4 +659,4 @@ inline void tile_static_memory_fence(const tile_barrier& _Barrier) restrict(amp)
  A tile_barrier object.  
   
 ## See Also  
- [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)
+ [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

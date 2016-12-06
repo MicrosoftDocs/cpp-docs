@@ -47,8 +47,8 @@ class completion_future;
   
 |Name|Description|  
 |----------|-----------------|  
-|[completion_future::completion_future Constructor](#completion_future_ctor)|Initializes a new instance of the `completion_future` class.|  
-|[completion_future::~completion_future Destructor](#~completion_future_dtor)|Destroys the `completion_future` object.|  
+|[completion_future::completion_future Constructor](#ctor)|Initializes a new instance of the `completion_future` class.|  
+|[completion_future::~completion_future Destructor](#dtor)|Destroys the `completion_future` object.|  
   
 ### Public Methods  
   
@@ -79,7 +79,7 @@ class completion_future;
  **Namespace:** concurrency  
 
 
-## <a name="completion_future_ctor"></a> completion_future::completion_future Constructor
+## <a name="ctor"></a> completion_future::completion_future Constructor
 Initializes a new instance of the `completion_future` class.  
   
 ### Syntax  
@@ -273,7 +273,7 @@ std::future_status::future_status wait_until(
   
 3.  `std::future_status::timeout` if the time period specified has elapsed.  
   
-## <a name="completion_future_dtor"></a> completion_future::~completion_future Destructor  
+## <a name="dtor"></a> completion_future::~completion_future Destructor  
 Destroys the `completion_future` object.  
   
 ### Syntax  
