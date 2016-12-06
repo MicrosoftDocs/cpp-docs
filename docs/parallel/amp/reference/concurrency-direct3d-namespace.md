@@ -68,7 +68,7 @@ namespace direct3d;
 |[abs Function](concurrency-direct3d-namespace-functions-amp.md#abs_function)|Returns the absolute value of the argument|  
 |[clamp Function](concurrency-direct3d-namespace-functions-amp.md#clamp_function)|Overloaded. Clamps _X to the specified _Min and _Max range|  
 |[countbits Function](concurrency-direct3d-namespace-functions-amp.md#countbits_function)|Counts the number of set bits in _X|  
-|[create_accelerator_view Function](concurrency-direct3d-namespace-functions-amp.md#create_accelerator_view_function)|Creates an [accelerator_view Class](../../../parallel/amp/reference/accelerator-view-class.md) from a pointer to a Direct3D device interface|  
+|[create_accelerator_view Function](concurrency-direct3d-namespace-functions-amp.md#create_accelerator_view_function)|Creates an [accelerator_view Class](accelerator-view-class.md) from a pointer to a Direct3D device interface|  
 |[d3d_access_lock Function](concurrency-direct3d-namespace-functions-amp.md#d3d_access_lock_function)|Acquires a lock on an accelerator_view for the purpose of safely performing D3D operations on resources shared with the accelerator_view|  
 |[d3d_access_try_lock Function](concurrency-direct3d-namespace-functions-amp.md#d3d_access_try_lock_function)|Attempt to acquire the D3D access lock on an accelerator_view without blocking.|  
 |[d3d_access_unlock Function](concurrency-direct3d-namespace-functions-amp.md#d3d_access_unlock_function)|Release the D3D access lock on the given accelerator_view.|  

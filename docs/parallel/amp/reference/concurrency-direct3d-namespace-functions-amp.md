@@ -505,4 +505,4 @@ inline unsigned int umin(
  Return the minimum numeric value of the arguments  
   
 ## See Also  
- [Concurrency::direct3d Namespace](../../../parallel/amp/reference/concurrency-direct3d-namespace.md)
+ [Concurrency::direct3d Namespace](concurrency-direct3d-namespace.md)

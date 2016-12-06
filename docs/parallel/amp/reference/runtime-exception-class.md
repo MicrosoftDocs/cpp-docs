@@ -50,8 +50,8 @@ class runtime_exception : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[runtime_exception::runtime_exception Constructor](#runtime_exception__ctor)|Initializes a new instance of the `runtime_exception` class.|  
-|[runtime_exception::~runtime_exception Destructor](#runtime_exception__dtor)|Destroys the `runtime_exception` object.|  
+|[runtime_exception::runtime_exception Constructor](#ctor)|Initializes a new instance of the `runtime_exception` class.|  
+|[runtime_exception::~runtime_exception Destructor](#dtor)|Destroys the `runtime_exception` object.|  
   
 ### Public Methods  
   
@@ -105,8 +105,8 @@ runtime_exception(
   
 ### Return Value  
  The `runtime_exception` object.  
-  
-## <a name="runtime_exception__dtor"></a>  ~runtime_exception Destructor  
+
+## <a name="dtor"></a>  ~runtime_exception Destructor  
 Destroys the object.  
   
 ### Syntax  
@@ -146,4 +146,4 @@ runtime_exception & operator= (    const runtime_exception & _Other ) throw();
 
   
 ## See Also  
- [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)
+ [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

@@ -84,7 +84,7 @@ This document demonstrates how to use the Concurrency Runtime in an application 
   
 ### Using COM with Asynchronous Agents  
 
- When you use COM with asynchronous agents, call `CoInitializeEx` before you use the COM library in the [concurrency::agent::run](reference/agent-class.md#agent__run_method) method for your agent. Then call `CoUninitialize` before the `run` method returns. Do not use COM management routines in the constructor or destructor of your agent, and do not override the [concurrency::agent::start](reference/agent-class.md#agent__start_method) or [concurrency::agent::done](reference/agent-class.md#agent__done_method) methods because these methods are called from a different thread than the `run` method.  
+ When you use COM with asynchronous agents, call `CoInitializeEx` before you use the COM library in the [concurrency::agent::run](reference/agent-class.md#run) method for your agent. Then call `CoUninitialize` before the `run` method returns. Do not use COM management routines in the constructor or destructor of your agent, and do not override the [concurrency::agent::start](reference/agent-class.md#start) or [concurrency::agent::done](reference/agent-class.md#done) methods because these methods are called from a different thread than the `run` method.  
 
   
  The following example shows a basic agent class, named `CCoAgent`, which manages the COM library in the `run` method.  

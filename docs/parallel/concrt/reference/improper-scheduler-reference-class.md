@@ -49,7 +49,7 @@ class improper_scheduler_reference : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[improper_scheduler_reference::improper_scheduler_reference Constructor](#improper_scheduler_reference__improper_scheduler_reference_constructor)|Overloaded. Constructs an `improper_scheduler_reference` object.|  
+|[improper_scheduler_reference::improper_scheduler_reference Constructor](#ctor)|Overloaded. Constructs an `improper_scheduler_reference` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  
@@ -61,7 +61,7 @@ class improper_scheduler_reference : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="improper_scheduler_reference__improper_scheduler_reference_constructor"></a>  improper_scheduler_reference::improper_scheduler_reference Constructor  
+##  <a name="ctor"></a>  improper_scheduler_reference::improper_scheduler_reference Constructor  
  Constructs an `improper_scheduler_reference` object.  
   
 ```
@@ -75,5 +75,5 @@ improper_scheduler_reference() throw();
  A descriptive message of the error.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [Scheduler Class](../../../parallel/concrt/reference/scheduler-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [Scheduler Class](scheduler-class.md)

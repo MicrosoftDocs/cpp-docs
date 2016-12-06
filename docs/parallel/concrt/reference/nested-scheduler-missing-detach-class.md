@@ -49,7 +49,7 @@ class nested_scheduler_missing_detach : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[nested_scheduler_missing_detach::nested_scheduler_missing_detach Constructor](#nested_scheduler_missing_detach__nested_scheduler_missing_detach_constructor)|Overloaded. Constructs a `nested_scheduler_missing_detach` object.|  
+|[nested_scheduler_missing_detach::nested_scheduler_missing_detach Constructor](#ctor)|Overloaded. Constructs a `nested_scheduler_missing_detach` object.|  
   
 ## Remarks  
  This exception is thrown only when you nest one scheduler inside another by calling the `Attach` method of a `Scheduler` object on a context that is already owned by or attached to another scheduler. The Concurrency Runtime throws this exception opportunistically when it can detect the scenario as an aid to locating the problem. Not every instance of neglecting to call the `CurrentScheduler::Detach` method is guaranteed to throw this exception.  
@@ -64,7 +64,7 @@ class nested_scheduler_missing_detach : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="nested_scheduler_missing_detach__nested_scheduler_missing_detach_constructor"></a>  nested_scheduler_missing_detach::nested_scheduler_missing_detach Constructor  
+##  <a name="ctor"></a>  nested_scheduler_missing_detach::nested_scheduler_missing_detach Constructor  
  Constructs a `nested_scheduler_missing_detach` object.  
   
 ```
@@ -78,5 +78,5 @@ nested_scheduler_missing_detach() throw();
  A descriptive message of the error.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [Scheduler Class](../../../parallel/concrt/reference/scheduler-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [Scheduler Class](scheduler-class.md)

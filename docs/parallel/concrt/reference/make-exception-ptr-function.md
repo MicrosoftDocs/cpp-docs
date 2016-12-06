@@ -52,4 +52,4 @@ exception_ptr make_exception_ptr(_E _Except);
  **Namespace:** std  
   
 ## See Also  
- [std Namespace](../../../parallel/concrt/reference/std-namespace.md)
+ [std Namespace](std-namespace.md)

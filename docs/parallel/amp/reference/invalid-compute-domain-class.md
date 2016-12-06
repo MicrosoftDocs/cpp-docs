@@ -86,4 +86,4 @@ invalid_compute_domain() throw();
  An instance of the `invalid_compute_domain` class  
     
 ## See Also  
- [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)
+ [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

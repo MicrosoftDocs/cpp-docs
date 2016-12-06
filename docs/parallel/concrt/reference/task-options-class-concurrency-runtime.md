@@ -47,19 +47,19 @@ class task_options;
   
 |Name|Description|  
 |----------|-----------------|  
-|[task_options::task_options Constructor (Concurrency Runtime)](#task_options__task_options_constructor__concurrency_runtime_)|Overloaded. Default list of task creation options|  
+|[task_options::task_options Constructor (Concurrency Runtime)](#ctor)|Overloaded. Default list of task creation options|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[task_options::get_cancellation_token Method (Concurrency Runtime)](#task_options__get_cancellation_token_method__concurrency_runtime_)|Returns the cancellation token|  
-|[task_options::get_continuation_context Method (Concurrency Runtime)](#task_options__get_continuation_context_method__concurrency_runtime_)|Returns the continuation context|  
-|[task_options::get_scheduler Method (Concurrency Runtime)](#task_options__get_scheduler_method__concurrency_runtime_)|Returns the scheduler|  
-|[task_options::has_cancellation_token Method (Concurrency Runtime)](#task_options__has_cancellation_token_method__concurrency_runtime_)|Indicates whether a cancellation token was specified by the user|  
-|[task_options::has_scheduler Method (Concurrency Runtime)](#task_options__has_scheduler_method__concurrency_runtime_)|Indicates whether a scheduler n was specified by the user|  
-|[task_options::set_cancellation_token Method (Concurrency Runtime)](#task_options__set_cancellation_token_method__concurrency_runtime_)|Sets the given token in the options|  
-|[task_options::set_continuation_context Method (Concurrency Runtime)](#task_options__set_continuation_context_method__concurrency_runtime_)|Sets the given continuation context in the options|  
+|[task_options::get_cancellation_token Method (Concurrency Runtime)](#get_cancellation_token)|Returns the cancellation token|  
+|[task_options::get_continuation_context Method (Concurrency Runtime)](#get_continuation_context)|Returns the continuation context|  
+|[task_options::get_scheduler Method (Concurrency Runtime)](#get_scheduler)|Returns the scheduler|  
+|[task_options::has_cancellation_token Method (Concurrency Runtime)](#has_cancellation_token)|Indicates whether a cancellation token was specified by the user|  
+|[task_options::has_scheduler Method (Concurrency Runtime)](#has_scheduler)|Indicates whether a scheduler n was specified by the user|  
+|[task_options::set_cancellation_token Method (Concurrency Runtime)](#set_cancellation_token)|Sets the given token in the options|  
+|[task_options::set_continuation_context Method (Concurrency Runtime)](#set_continuation_context)|Sets the given continuation context in the options|  
   
 ## Inheritance Hierarchy  
  `task_options`  
@@ -69,7 +69,7 @@ class task_options;
   
  **Namespace:** concurrency  
   
-##  <a name="task_options__get_cancellation_token_method__concurrency_runtime_"></a>  task_options::get_cancellation_token Method (Concurrency Runtime)  
+##  <a name="get_cancellation_token"></a>  task_options::get_cancellation_token Method (Concurrency Runtime)  
  Returns the cancellation token  
   
 ```
@@ -78,7 +78,7 @@ cancellation_token get_cancellation_token() const;
   
 ### Return Value  
   
-##  <a name="task_options__get_continuation_context_method__concurrency_runtime_"></a>  task_options::get_continuation_context Method (Concurrency Runtime)  
+##  <a name="get_continuation_context"></a>  task_options::get_continuation_context Method (Concurrency Runtime)  
  Returns the continuation context  
   
 ```
@@ -87,7 +87,7 @@ task_continuation_context get_continuation_context() const;
   
 ### Return Value  
   
-##  <a name="task_options__get_scheduler_method__concurrency_runtime_"></a>  task_options::get_scheduler Method (Concurrency Runtime)  
+##  <a name="get_scheduler"></a>  task_options::get_scheduler Method (Concurrency Runtime)  
  Returns the scheduler  
   
 ```
@@ -96,7 +96,7 @@ scheduler_ptr get_scheduler() const;
   
 ### Return Value  
   
-##  <a name="task_options__has_cancellation_token_method__concurrency_runtime_"></a>  task_options::has_cancellation_token Method (Concurrency Runtime)  
+##  <a name="has_cancellation_token"></a>  task_options::has_cancellation_token Method (Concurrency Runtime)  
  Indicates whether a cancellation token was specified by the user  
   
 ```
@@ -105,7 +105,7 @@ bool has_cancellation_token() const;
   
 ### Return Value  
   
-##  <a name="task_options__has_scheduler_method__concurrency_runtime_"></a>  task_options::has_scheduler Method (Concurrency Runtime)  
+##  <a name="has_scheduler"></a>  task_options::has_scheduler Method (Concurrency Runtime)  
  Indicates whether a scheduler n was specified by the user  
   
 ```
@@ -114,7 +114,7 @@ bool has_scheduler() const;
   
 ### Return Value  
   
-##  <a name="task_options__set_cancellation_token_method__concurrency_runtime_"></a>  task_options::set_cancellation_token Method (Concurrency Runtime)  
+##  <a name="set_cancellation_token"></a>  task_options::set_cancellation_token Method (Concurrency Runtime)  
  Sets the given token in the options  
   
 ```
@@ -124,7 +124,7 @@ void set_cancellation_token(cancellation_token _Token);
 ### Parameters  
  `_Token`  
   
-##  <a name="task_options__set_continuation_context_method__concurrency_runtime_"></a>  task_options::set_continuation_context Method (Concurrency Runtime)  
+##  <a name="set_continuation_context"></a>  task_options::set_continuation_context Method (Concurrency Runtime)  
  Sets the given continuation context in the options  
   
 ```
@@ -134,7 +134,7 @@ void set_continuation_context(task_continuation_context _ContinuationContext);
 ### Parameters  
  `_ContinuationContext`  
   
-##  <a name="task_options__task_options_constructor__concurrency_runtime_"></a>  task_options::task_options Constructor (Concurrency Runtime)  
+##  <a name="ctor"></a>  task_options::task_options Constructor (Concurrency Runtime)  
  Default list of task creation options  
   
 ```
@@ -172,4 +172,4 @@ task_options(
  `_TaskOptions`  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

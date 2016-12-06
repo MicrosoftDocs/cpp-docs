@@ -70,7 +70,7 @@ This document describes best practices that apply to multiple areas of the Concu
  1: 250000000 1: 500000000 1: 750000000 1: 1000000000 2: 250000000 2: 500000000 2: 750000000 2: 1000000000  
   
 
- There are several ways to enable cooperation between the two tasks. One way is to occasionally yield to the task scheduler in a long-running task. The following example modifies the `task` function to call the [concurrency::Context::Yield](reference/context-class.md#context__yield_method) method to yield execution to the task scheduler so that another task can run.  
+ There are several ways to enable cooperation between the two tasks. One way is to occasionally yield to the task scheduler in a long-running task. The following example modifies the `task` function to call the [concurrency::Context::Yield](reference/context-class.md#yield) method to yield execution to the task scheduler so that another task can run.  
 
   
  [!code-cpp[concrt-cooperative-tasks#2](../../parallel/concrt/codesnippet/cpp/general-best-practices-in-the-concurrency-runtime_2.cpp)]  
@@ -99,7 +99,7 @@ This document describes best practices that apply to multiple areas of the Concu
   
  There are cases in which you cannot use the cooperative blocking mechanism that is provided by the Concurrency Runtime. For example, an external library that you use might use a different synchronization mechanism. Another example is when you perform an operation that could have a high amount of latency, for example, when you use the Windows API `ReadFile` function to read data from a network connection. In these cases, oversubscription can enable other tasks to run when another task is idle. Oversubscription lets you create more threads than the available number of hardware threads.  
   
- Consider the following function, `download`, which downloads the file at the given URL. This example uses the [concurrency::Context::Oversubscribe](reference/context-class.md#context__oversubscribe_method) method to temporarily increase the number of active threads.  
+ Consider the following function, `download`, which downloads the file at the given URL. This example uses the [concurrency::Context::Oversubscribe](reference/context-class.md#oversubscribe) method to temporarily increase the number of active threads.  
 
  [!code-cpp[concrt-download-oversubscription#4](../../parallel/concrt/codesnippet/cpp/general-best-practices-in-the-concurrency-runtime_3.cpp)]  
   
@@ -120,7 +120,7 @@ This document describes best practices that apply to multiple areas of the Concu
   
  The *Resource Acquisition Is Initialization* (RAII) pattern is one way to safely manage the lifetime of a concurrency object under a given scope. Under the RAII pattern, a data structure is allocated on the stack. That data structure initializes or acquires a resource when it is created and destroys or releases that resource when the data structure is destroyed. The RAII pattern guarantees that the destructor is called before the enclosing scope exits. This pattern is useful when a function contains multiple `return` statements. This pattern also helps you write exception-safe code. When a `throw` statement causes the stack to unwind, the destructor for the RAII object is called; therefore, the resource is always correctly deleted or released.  
   
- The runtime defines several classes that use the RAII pattern, for example, [concurrency::critical_section::scoped_lock](../../parallel/concrt/reference/critical-section-class.md#critical_section__scoped_lock_class) and [concurrency::reader_writer_lock::scoped_lock](reference/reader-writer-lock-class.md#reader_writer_lock__scoped_lock_class). These helper classes are known as *scoped locks*. These classes provide several benefits when you work with [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md) or [concurrency::reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) objects. The constructor of these classes acquires access to the provided `critical_section` or `reader_writer_lock` object; the destructor releases access to that object. Because a scoped lock releases access to its mutual exclusion object automatically when it is destroyed, you do not manually unlock the underlying object.  
+ The runtime defines several classes that use the RAII pattern, for example, [concurrency::critical_section::scoped_lock](../../parallel/concrt/reference/critical-section-class.md#critical_section__scoped_lock_class) and [concurrency::reader_writer_lock::scoped_lock](reference/reader-writer-lock-class.md#scoped_lock_class). These helper classes are known as *scoped locks*. These classes provide several benefits when you work with [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md) or [concurrency::reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) objects. The constructor of these classes acquires access to the provided `critical_section` or `reader_writer_lock` object; the destructor releases access to that object. Because a scoped lock releases access to its mutual exclusion object automatically when it is destroyed, you do not manually unlock the underlying object.  
   
  Consider the following class, `account`, which is defined by an external library and therefore cannot be modified.  
   

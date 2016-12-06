@@ -44,19 +44,19 @@ Scheduler instances let you associate specific scheduling policies with various 
 1.  Create a [concurrency::SchedulerPolicy](../../parallel/concrt/reference/schedulerpolicy-class.md) object that contains the policy values for the scheduler to use.  
   
 
-2.  Call the [concurrency::CurrentScheduler::Create](reference/currentscheduler-class.md#currentscheduler__create_method) method or the [concurrency::Scheduler::Create](reference/scheduler-class.md#scheduler__create_method) method to create a scheduler instance.  
+2.  Call the [concurrency::CurrentScheduler::Create](reference/currentscheduler-class.md#create) method or the [concurrency::Scheduler::Create](reference/scheduler-class.md#create) method to create a scheduler instance.  
   
-     If you use the `Scheduler::Create` method, call the [concurrency::Scheduler::Attach](reference/scheduler-class.md#scheduler__attach_method) method when you need to associate the scheduler with the current context.  
+     If you use the `Scheduler::Create` method, call the [concurrency::Scheduler::Attach](reference/scheduler-class.md#attach) method when you need to associate the scheduler with the current context.  
   
 3.  Call the [CreateEvent](http://msdn.microsoft.com/library/windows/desktop/ms682396) function to create a handle to a non-signaled, auto-reset event object.  
   
-4.  Pass the handle to the event object that you just created to the [concurrency::CurrentScheduler::RegisterShutdownEvent](reference/currentscheduler-class.md#currentscheduler__registershutdownevent_method) method or the [concurrency::Scheduler::RegisterShutdownEvent](reference/scheduler-class.md#scheduler__registershutdownevent_method) method. This registers the event to be set when the scheduler is destroyed.  
+4.  Pass the handle to the event object that you just created to the [concurrency::CurrentScheduler::RegisterShutdownEvent](reference/currentscheduler-class.md#registershutdownevent) method or the [concurrency::Scheduler::RegisterShutdownEvent](reference/scheduler-class.md#registershutdownevent) method. This registers the event to be set when the scheduler is destroyed.  
   
 5.  Perform the tasks that you want the current scheduler to schedule.  
   
-6.  Call the [concurrency::CurrentScheduler::Detach](reference/currentscheduler-class.md#currentscheduler__detach_method) method to detach the current scheduler and restore the previous scheduler as the current one.  
+6.  Call the [concurrency::CurrentScheduler::Detach](reference/currentscheduler-class.md#detach) method to detach the current scheduler and restore the previous scheduler as the current one.  
   
-     If you use the `Scheduler::Create` method, call the [concurrency::Scheduler::Release](reference/scheduler-class.md#scheduler__release_method) method to decrement the reference count of the `Scheduler` object.  
+     If you use the `Scheduler::Create` method, call the [concurrency::Scheduler::Release](reference/scheduler-class.md#release) method to decrement the reference count of the `Scheduler` object.  
   
 7.  Pass the handle to the event to the [WaitForSingleObject](http://msdn.microsoft.com/library/windows/desktop/ms687032) function to wait for the scheduler to shut down.  
   

@@ -49,22 +49,22 @@ class event;
   
 |Name|Description|  
 |----------|-----------------|  
-|[event::~event Destructor](#event___dtorevent_destructor)|Destroys an event.|  
+|[event::~event Destructor](#dtor)|Destroys an event.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[event::reset Method](#event__reset_method)|Resets the event to a non-signaled state.|  
-|[event::set Method](#event__set_method)|Signals the event.|  
-|[event::wait Method](#event__wait_method)|Waits for the event to become signaled.|  
-|[event::wait_for_multiple Method](#event__wait_for_multiple_method)|Waits for multiple events to become signaled.|  
+|[event::reset Method](#reset)|Resets the event to a non-signaled state.|  
+|[event::set Method](#set)|Signals the event.|  
+|[event::wait Method](#wait)|Waits for the event to become signaled.|  
+|[event::wait_for_multiple Method](#wait_for_multiple)|Waits for multiple events to become signaled.|  
   
 ### Public Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[event::timeout_infinite Constant](#event__timeout_infinite_constant)|Value indicating that a wait should never time out.|  
+|[event::timeout_infinite Constant](#timeout_infinite)|Value indicating that a wait should never time out.|  
   
 ## Remarks  
  For more information, see [Synchronization Data Structures](../../../parallel/concrt/synchronization-data-structures.md).  
@@ -77,7 +77,7 @@ class event;
   
  **Namespace:** concurrency  
   
-##  <a name="event__event_constructor"></a>  event::event Constructor  
+##  <a name="ctor"></a>  event::event Constructor  
  Constructs a new event.  
   
 ```
@@ -86,7 +86,7 @@ _CRTIMP event();
   
 ### Remarks  
   
-##  <a name="event___dtorevent_destructor"></a>  event::~event Destructor  
+##  <a name="dtor"></a>  event::~event Destructor  
  Destroys an event.  
   
 ```
@@ -96,14 +96,14 @@ _CRTIMP event();
 ### Remarks  
  It is expected that there are no threads waiting on the event when the destructor runs. Allowing the event to destruct with threads still waiting on it results in undefined behavior.  
   
-##  <a name="event__reset_method"></a>  event::reset Method  
+##  <a name="reset"></a>  event::reset Method  
  Resets the event to a non-signaled state.  
   
 ```
 void reset();
 ```  
   
-##  <a name="event__set_method"></a>  event::set Method  
+##  <a name="set"></a>  event::set Method  
  Signals the event.  
   
 ```
@@ -113,14 +113,14 @@ void set();
 ### Remarks  
  Signaling the event can cause an arbitrary number of contexts waiting on the event to become runnable.  
   
-##  <a name="event__timeout_infinite_constant"></a>  event::timeout_infinite Constant  
+##  <a name="timeout_infinite"></a>  event::timeout_infinite Constant  
  Value indicating that a wait should never time out.  
   
 ```
 static const unsigned int timeout_infinite = COOPERATIVE_TIMEOUT_INFINITE;
 ```  
   
-##  <a name="event__wait_method"></a>  event::wait Method  
+##  <a name="wait"></a>  event::wait Method  
  Waits for the event to become signaled.  
   
 ```
@@ -137,7 +137,7 @@ size_t wait(unsigned int _Timeout = COOPERATIVE_TIMEOUT_INFINITE);
 > [!IMPORTANT]
 >  In a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app, do not call `wait` on the ASTA thread because this call can block the current thread and can cause the app to become unresponsive.  
   
-##  <a name="event__wait_for_multiple_method"></a>  event::wait_for_multiple Method  
+##  <a name="wait_for_multiple"></a>  event::wait_for_multiple Method  
  Waits for multiple events to become signaled.  
   
 ```
@@ -171,4 +171,4 @@ static size_t __cdecl wait_for_multiple(
 >  In a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app, do not call `wait_for_multiple` on the ASTA thread because this call can block the current thread and can cause the app to become unresponsive.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

@@ -49,18 +49,18 @@ struct IVirtualProcessorRoot : public IExecutionResource;
   
 |Name|Description|  
 |----------|-----------------|  
-|[IVirtualProcessorRoot::Activate Method](#ivirtualprocessorroot__activate_method)|Causes the thread proxy associated with the execution context interface `pContext` to start executing on this virtual processor root.|  
-|[IVirtualProcessorRoot::Deactivate Method](#ivirtualprocessorroot__deactivate_method)|Causes the thread proxy currently executing on this virtual processor root to stop dispatching the execution context. The thread proxy will resume executing on a call to the `Activate` method.|  
-|[IVirtualProcessorRoot::EnsureAllTasksVisible Method](#ivirtualprocessorroot__ensurealltasksvisible_method)|Causes data stored in the memory hierarchy of individual processors to become visible to all processors on the system. It ensures that a full memory fence has been executed on all processors before the method returns.|  
-|[IVirtualProcessorRoot::GetId Method](#ivirtualprocessorroot__getid_method)|Returns a unique identifier for the virtual processor root.|  
+|[IVirtualProcessorRoot::Activate Method](#activate)|Causes the thread proxy associated with the execution context interface `pContext` to start executing on this virtual processor root.|  
+|[IVirtualProcessorRoot::Deactivate Method](#deactivate)|Causes the thread proxy currently executing on this virtual processor root to stop dispatching the execution context. The thread proxy will resume executing on a call to the `Activate` method.|  
+|[IVirtualProcessorRoot::EnsureAllTasksVisible Method](#ensurealltasksvisible)|Causes data stored in the memory hierarchy of individual processors to become visible to all processors on the system. It ensures that a full memory fence has been executed on all processors before the method returns.|  
+|[IVirtualProcessorRoot::GetId Method](#getid)|Returns a unique identifier for the virtual processor root.|  
   
 ## Remarks  
- Every virtual processor root has an associated execution resource. The `IVirtualProcessorRoot` interface inherits from the [IExecutionResource](../../../parallel/concrt/reference/iexecutionresource-structure.md) interface. Multiple virtual processor roots may correspond to the same underlying hardware thread.  
+ Every virtual processor root has an associated execution resource. The `IVirtualProcessorRoot` interface inherits from the [IExecutionResource](iexecutionresource-structure.md) interface. Multiple virtual processor roots may correspond to the same underlying hardware thread.  
   
  The Resource Manager grants virtual processor roots to schedulers in response to requests for resources. A scheduler can use a virtual processor root to perform work by activating it with an execution context.  
   
 ## Inheritance Hierarchy  
- [IExecutionResource](../../../parallel/concrt/reference/iexecutionresource-structure.md)  
+ [IExecutionResource](iexecutionresource-structure.md)  
   
  `IVirtualProcessorRoot`  
   
@@ -69,7 +69,7 @@ struct IVirtualProcessorRoot : public IExecutionResource;
   
  **Namespace:** concurrency  
   
-##  <a name="ivirtualprocessorroot__activate_method"></a>  IVirtualProcessorRoot::Activate Method  
+##  <a name="activate"></a>  IVirtualProcessorRoot::Activate Method  
  Causes the thread proxy associated with the execution context interface `pContext` to start executing on this virtual processor root.  
   
 ```
@@ -83,7 +83,7 @@ virtual void Activate(_Inout_ IExecutionContext* pContext) = 0;
 ### Remarks  
  The Resource Manager will supply a thread proxy if one is not associated with the execution context interface `pContext`  
   
- The `Activate` method can be used to start executing work on a new virtual processor root returned by the Resource Manager, or to resume the thread proxy on a virtual processor root that has deactivated or is about to deactivate. See [IVirtualProcessorRoot::Deactivate](#ivirtualprocessorroot__deactivate_method) for more information on deactivation. When you are resuming a deactivated virtual processor root, the parameter `pContext` must be the same as the parameter used to deactivate the virtual processor root.  
+ The `Activate` method can be used to start executing work on a new virtual processor root returned by the Resource Manager, or to resume the thread proxy on a virtual processor root that has deactivated or is about to deactivate. See [IVirtualProcessorRoot::Deactivate](#deactivate) for more information on deactivation. When you are resuming a deactivated virtual processor root, the parameter `pContext` must be the same as the parameter used to deactivate the virtual processor root.  
   
  Once a virtual processor root has been activated for the first time, subsequent pairs of calls to `Deactivate` and `Activate` may race with each other. This means it is acceptable for the Resource Manager to receive a call to `Activate` before it receives the `Deactivate` call it was meant for.  
   
@@ -93,9 +93,9 @@ virtual void Activate(_Inout_ IExecutionContext* pContext) = 0;
   
  `invalid_operation` is thrown if the argument `pContext` does not represent the execution context that was most recently dispatched by this virtual processor root.  
   
- The act of activating a virtual processor root increases the subscription level of the underlying hardware thread by one. For more information on subscription levels, see [IExecutionResource::CurrentSubscriptionLevel](../../../parallel/concrt/reference/iexecutionresource-structure.md#iexecutionresource__currentsubscriptionlevel_method).  
+ The act of activating a virtual processor root increases the subscription level of the underlying hardware thread by one. For more information on subscription levels, see [IExecutionResource::CurrentSubscriptionLevel](iexecutionresource-structure.md#currentsubscriptionlevel).  
   
-##  <a name="ivirtualprocessorroot__deactivate_method"></a>  IVirtualProcessorRoot::Deactivate Method  
+##  <a name="deactivate"></a>  IVirtualProcessorRoot::Deactivate Method  
  Causes the thread proxy currently executing on this virtual processor root to stop dispatching the execution context. The thread proxy will resume executing on a call to the `Activate` method.  
   
 ```
@@ -120,9 +120,9 @@ virtual bool Deactivate(_Inout_ IExecutionContext* pContext) = 0;
   
  `invalid_operation` is thrown if the virtual processor root has never been activated, or the argument `pContext` does not represent the execution context that was most recently dispatched by this virtual processor root.  
   
- The act of deactivating a virtual processor root decreases the subscription level of the underlying hardware thread by one. For more information on subscription levels, see [IExecutionResource::CurrentSubscriptionLevel](../../../parallel/concrt/reference/iexecutionresource-structure.md#iexecutionresource__currentsubscriptionlevel_method).  
+ The act of deactivating a virtual processor root decreases the subscription level of the underlying hardware thread by one. For more information on subscription levels, see [IExecutionResource::CurrentSubscriptionLevel](iexecutionresource-structure.md#currentsubscriptionlevel).  
   
-##  <a name="ivirtualprocessorroot__ensurealltasksvisible_method"></a>  IVirtualProcessorRoot::EnsureAllTasksVisible Method  
+##  <a name="ensurealltasksvisible"></a>  IVirtualProcessorRoot::EnsureAllTasksVisible Method  
  Causes data stored in the memory hierarchy of individual processors to become visible to all processors on the system. It ensures that a full memory fence has been executed on all processors before the method returns.  
   
 ```
@@ -142,7 +142,7 @@ virtual void EnsureAllTasksVisible(_Inout_ IExecutionContext* pContext) = 0;
   
  `invalid_operation` is thrown if the virtual processor root has never been activated, or the argument `pContext` does not represent the execution context that was most recently dispatched by this virtual processor root.  
   
-##  <a name="ivirtualprocessorroot__getid_method"></a>  IVirtualProcessorRoot::GetId Method  
+##  <a name="getid"></a>  IVirtualProcessorRoot::GetId Method  
  Returns a unique identifier for the virtual processor root.  
   
 ```
@@ -153,4 +153,4 @@ virtual unsigned int GetId() const = 0;
  An integer identifier.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

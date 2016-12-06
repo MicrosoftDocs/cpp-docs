@@ -41,19 +41,19 @@ This section contains reference information for the C++ Accelerated Massive Para
 >  The C++ language standard reserves the use of identifiers that begin with an underscore (`_`) character for implementations such as libraries. Do not use names beginning with an underscore in your code. The behavior of code elements whose names follow this convention are not guaranteed and are subject to change in future releases. For these reasons, such code elements are omitted from this documentation.  
   
 ## In This Section  
- [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)  
+ [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)  
  Provides classes and functions that enable the acceleration of C++ code on data parallel hardware.  
   
- [Concurrency::direct3d Namespace](../../../parallel/amp/reference/concurrency-direct3d-namespace.md)  
+ [Concurrency::direct3d Namespace](concurrency-direct3d-namespace.md)  
  Provides functions that support D3D interoperability. Enables seamless use of D3D resources for compute in AMP code and the use of resources created in AMP in D3D code, without creating redundant intermediate copies. You can use C++ AMP to incrementally accelerate the compute-intensive sections of your DirectX applications and use the D3D API on data produced from AMP computations.  
   
- [Concurrency::fast_math Namespace](../../../parallel/amp/reference/concurrency-fast-math-namespace.md)  
+ [Concurrency::fast_math Namespace](concurrency-fast-math-namespace.md)  
  Functions in the `fast_math` namespace are not C99-compliant. Only single-precision versions of each function are provided. These functions use the DirectX intrinsic functions, which are faster than the corresponding functions in the `precise_math` namespace and do not require extended double-precision support on the accelerator, but they are less accurate. There are two versions of each function for source-level compatibility with C99 code; both versions take and return single-precision values.  
   
- [Concurrency::graphics Namespace](../../../parallel/amp/reference/concurrency-graphics-namespace.md)  
+ [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)  
  Provides types and functions that are designed for graphics programming.  
   
- [Concurrency::precise_math Namespace](../../../parallel/amp/reference/concurrency-precise-math-namespace.md)  
+ [Concurrency::precise_math Namespace](concurrency-precise-math-namespace.md)  
  Functions in the `precise_math` namespace are C99 compliant. Both single-precision and double-precision versions of each function are included. These functions—this includes the single-precision functions—require extended double-precision support on the accelerator.  
   
 ## Related Sections  

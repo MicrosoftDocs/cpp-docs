@@ -108,13 +108,13 @@ struct short_vector_traits<double_4>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[short_vector_traits::short_vector_traits Constructor](#short_vector_traits__short_vector_traits_constructor)||  
+|[short_vector_traits::short_vector_traits Constructor](#ctor)||  
   
 ### Public Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[short_vector_traits::size Constant](#short_vector_traits__size_constant)||  
+|[short_vector_traits::size Constant](#size)||  
   
 ## Inheritance Hierarchy  
  `short_vector_traits`  
@@ -124,17 +124,17 @@ struct short_vector_traits<double_4>;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="short_vector_traits__short_vector_traits_constructor"></a>  short_vector_traits::short_vector_traits Constructor  
+##  <a name="ctor"></a>  short_vector_traits::short_vector_traits Constructor  
   
 ```  
 short_vector_traits();
 ```  
   
-##  <a name="short_vector_traits__size_constant"></a>  short_vector_traits::size Constant  
+##  <a name="size"></a>  short_vector_traits::size Constant  
   
 ```  
 static int const size = 1;  
 ```  
   
 ## See Also  
- [Concurrency::graphics Namespace](../../../parallel/amp/reference/concurrency-graphics-namespace.md)
+ [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

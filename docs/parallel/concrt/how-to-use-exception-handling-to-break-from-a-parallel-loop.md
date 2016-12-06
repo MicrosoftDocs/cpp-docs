@@ -37,7 +37,7 @@ translation.priority.mt:
 # How to: Use Exception Handling to Break from a Parallel Loop
 This topic shows how to write a search algorithm for a basic tree structure.  
   
- The topic [Cancellation](cancellation-in-the-ppl.md) explains the role of cancellation in the Parallel Patterns Library. The use of exception handling is a less efficient way to cancel parallel work than the use of the [concurrency::task_group::cancel](reference/task-group-class.md#task_group__cancel_method) and [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#structured_task_group__cancel_method) methods. However, one scenario where the use of exception handling to cancel work is appropriate is when you call into a third-party library that uses tasks or parallel algorithms but does not provide a `task_group` or `structured_task_group` object to cancel.  
+ The topic [Cancellation](cancellation-in-the-ppl.md) explains the role of cancellation in the Parallel Patterns Library. The use of exception handling is a less efficient way to cancel parallel work than the use of the [concurrency::task_group::cancel](reference/task-group-class.md#cancel) and [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#cancel) methods. However, one scenario where the use of exception handling to cancel work is appropriate is when you call into a third-party library that uses tasks or parallel algorithms but does not provide a `task_group` or `structured_task_group` object to cancel.  
 
   
 ## Example  

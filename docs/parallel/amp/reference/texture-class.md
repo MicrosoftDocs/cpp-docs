@@ -65,20 +65,20 @@ class texture;
   
 |Name|Description|  
 |----------|-----------------|  
-|[texture::texture Constructor](#texture__texture_constructor)|Initializes a new instance of the [texture](../../../parallel/amp/reference/texture-class.md) class.|  
-|[texture::~texture Destructor](#texture___dtortexture_destructor)|Destroys the [texture](../../../parallel/amp/reference/texture-class.md) object.|  
+|[texture::texture Constructor](#ctor)|Initializes a new instance of the [texture](texture-class.md) class.|  
+|[texture::~texture Destructor](#ctor)|Destroys the [texture](texture-class.md) object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[texture::copy_to Method](#texture__copy_to_method)|Copies the [texture](../../../parallel/amp/reference/texture-class.md) object to the destination, by doing a deep copy.|  
-|[texture::data Method](#texture__data_method)|Returns a CPU pointer to the raw data of this texture.|  
-|[texture::get Method](#texture__get_method)|Returns the value of the element at the specified index.|  
-|[texture::get_associated_accelerator_view Method](#texture__get_associated_accelerator_view_method)|Returns the [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md) that is the preferred target for this texture to be copied to.|  
-|[texture::get_depth_pitch Method](#texture__get_depth_pitch_method)|Returns the number of bytes between each depth slice in a 3D staging texture on the CPU.|  
-|[texture::get_row_pitch Method](#texture__get_row_pitch_method)|Returns the number of bytes between each row in a 2D or 3D staging texture on the CPU.|  
-|[texture::set Method](#texture__set_method)|Sets the value of the element at the specified index.|  
+|[texture::copy_to Method](#copy_to)|Copies the [texture](texture-class.md) object to the destination, by doing a deep copy.|  
+|[texture::data Method](#data)|Returns a CPU pointer to the raw data of this texture.|  
+|[texture::get Method](#get)|Returns the value of the element at the specified index.|  
+|[texture::get_associated_accelerator_view Method](#get_associated_accelerator_view)|Returns the [accelerator_view](accelerator-view-class.md) that is the preferred target for this texture to be copied to.|  
+|[texture::get_depth_pitch Method](#get_depth_pitch)|Returns the number of bytes between each depth slice in a 3D staging texture on the CPU.|  
+|[texture::get_row_pitch Method](#get_row_pitch)|Returns the number of bytes between each row in a 2D or 3D staging texture on the CPU.|  
+|[texture::set Method](#set)|Sets the value of the element at the specified index.|  
   
 ### Public Operators  
   
@@ -86,21 +86,21 @@ class texture;
 |----------|-----------------|  
 |[texture::operator() Operator](#texture__operator_call)|Returns the element value that is specified by the parameters.|  
 |[texture::operator[] Operator](#texture__operator_at)|Returns the element that is at the specified index.|  
-|[texture::operator= Operator](#texture__operator_eq)|Copies the specified [texture](../../../parallel/amp/reference/texture-class.md) object to this one.|  
+|[texture::operator= Operator](#texture__operator_eq)|Copies the specified [texture](texture-class.md) object to this one.|  
   
 ### Public Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[texture::rank Constant](#texture__rank_constant)|Gets the rank of the [texture](../../../parallel/amp/reference/texture-class.md) object.|  
+|[texture::rank Constant](#rank)|Gets the rank of the [texture](texture-class.md) object.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[texture::associated_accelerator_view Data Member](#texture__associated_accelerator_view_data_member)|Gets the [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md) that is the preferred target for this texture to be copied to.|  
-|[texture::depth_pitch Data Member](#texture__depth_pitch_data_member)|Gets the number of bytes between each depth slice in a 3D staging texture on the CPU.|  
-|[texture::row_pitch Data Member](#texture__row_pitch_data_member)|Gets the number of bytes between each row in a 2D or 3D staging texture on the CPU.|  
+|[texture::associated_accelerator_view Data Member](#associated_accelerator_view)|Gets the [accelerator_view](accelerator-view-class.md) that is the preferred target for this texture to be copied to.|  
+|[texture::depth_pitch Data Member](#depth_pitch)|Gets the number of bytes between each depth slice in a 3D staging texture on the CPU.|  
+|[texture::row_pitch Data Member](#row_pitch)|Gets the number of bytes between each row in a 2D or 3D staging texture on the CPU.|  
   
 ## Inheritance Hierarchy  
  `_Texture_base`  
@@ -112,22 +112,22 @@ class texture;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="texture___dtortexture_destructor"></a>  texture::~texture Destructor  
- Destroys the [texture](../../../parallel/amp/reference/texture-class.md) object.  
+##  <a name="dtor"></a>  texture::~texture Destructor  
+ Destroys the [texture](texture-class.md) object.  
   
 ```  
 ~texture() restrict(cpu);
 ```  
   
-##  <a name="texture__associated_accelerator_view_data_member"></a>  texture::associated_accelerator_view Data Member  
- Gets the [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md) that is the preferred target for this texture to be copied to.  
+##  <a name="associated_accelerator_view"></a>  texture::associated_accelerator_view Data Member  
+ Gets the [accelerator_view](accelerator-view-class.md) that is the preferred target for this texture to be copied to.  
   
 ```  
 __declspec(property(get= get_associated_accelerator_view)) Concurrency::accelerator_view associated_accelerator_view;  
 ```  
   
-##  <a name="texture__copy_to_method"></a>  texture::copy_to Method  
- Copies the [texture](../../../parallel/amp/reference/texture-class.md) object to the destination, by doing a deep copy.  
+##  <a name="copy_to"></a>  texture::copy_to Method  
+ Copies the [texture](texture-class.md) object to the destination, by doing a deep copy.  
   
 ```  
 void copy_to(
@@ -151,7 +151,7 @@ void copy_to(
  `value_type`  
  The type of the elements in the texture.  
   
-##  <a name="texture__data_method"></a>  texture::data Method  
+##  <a name="data"></a>  texture::data Method  
  Returns a CPU pointer to the raw data of this texture.  
   
 ```  
@@ -164,14 +164,14 @@ const void* data() const restrict(cpu);
 ### Return Value  
  A pointer to the raw data of the texture.  
   
-##  <a name="texture__depth_pitch_data_member"></a>  texture::depth_pitch Data Member  
+##  <a name="depth_pitch"></a>  texture::depth_pitch Data Member  
  Gets the number of bytes between each depth slice in a 3D staging texture on the CPU.  
   
 ```  
 __declspec(property(get= get_depth_pitch)) unsigned int depth_pitch;  
 ```  
   
-##  <a name="texture__get_method"></a>  texture::get Method  
+##  <a name="get"></a>  texture::get Method  
  Returns the value of the element at the specified index.  
   
 ```  
@@ -185,7 +185,7 @@ const value_type get(const index<_Rank>& _Index) const restrict(amp);
 ### Return Value  
  The value of the element at the specified index.  
   
-##  <a name="texture__get_associated_accelerator_view_method"></a>  texture::get_associated_accelerator_view Method  
+##  <a name="get_associated_accelerator_view"></a>  texture::get_associated_accelerator_view Method  
  Returns the accelerator_view that is the preferred target for this texture to be copied to.  
   
 ```  
@@ -193,9 +193,9 @@ Concurrency::accelerator_view get_associated_accelerator_view() const restrict(c
 ```  
   
 ### Return Value  
- The [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md) that is the preferred target for this texture to be copied to.  
+ The [accelerator_view](accelerator-view-class.md) that is the preferred target for this texture to be copied to.  
   
-##  <a name="texture__get_depth_pitch_method"></a>  texture::get_depth_pitch Method  
+##  <a name="get_depth_pitch"></a>  texture::get_depth_pitch Method  
  Returns the number of bytes between each depth slice in a 3D staging texture on the CPU.  
   
 ```  
@@ -205,7 +205,7 @@ unsigned int get_depth_pitch() const restrict(cpu);
 ### Return Value  
  The number of bytes between each depth slice in a 3D staging texture on the CPU.  
   
-##  <a name="texture__get_row_pitch_method"></a>  texture::get_row_pitch Method  
+##  <a name="get_row_pitch"></a>  texture::get_row_pitch Method  
  Returns the number of bytes between each row in a 2-dimensional staging texture, or between each row of a depth slice in 3-dimensional staging texture.  
   
 ```  
@@ -278,7 +278,7 @@ const value_type operator[] (int _I0) const restrict(amp);
  The element that is at the specified index.  
   
 ##  <a name="texture__operator_eq"></a>  texture::operator= Operator  
- Copies the specified [texture](../../../parallel/amp/reference/texture-class.md) object to this one.  
+ Copies the specified [texture](texture-class.md) object to this one.  
   
 ```  
 texture& operator= (
@@ -291,26 +291,26 @@ texture& operator= (
   
 ### Parameters  
  `_Other`  
- The [texture](../../../parallel/amp/reference/texture-class.md) object to copy from.  
+ The [texture](texture-class.md) object to copy from.  
   
 ### Return Value  
- A reference to this [texture](../../../parallel/amp/reference/texture-class.md) object.  
+ A reference to this [texture](texture-class.md) object.  
   
-##  <a name="texture__rank_constant"></a>  texture::rank Constant  
- Gets the rank of the [texture](../../../parallel/amp/reference/texture-class.md) object.  
+##  <a name="rank"></a>  texture::rank Constant  
+ Gets the rank of the [texture](texture-class.md) object.  
   
 ```  
 static const int rank = _Rank;  
 ```  
   
-##  <a name="texture__row_pitch_data_member"></a>  texture::row_pitch Data Member  
+##  <a name="row_pitch"></a>  texture::row_pitch Data Member  
  Gets the number of bytes between each row in a 2D or 3D staging texture on the CPU.  
   
 ```  
 __declspec(property(get= get_row_pitch)) unsigned int row_pitch;  
 ```  
   
-##  <a name="texture__set_method"></a>  texture::set Method  
+##  <a name="set"></a>  texture::set Method  
  Sets the value of the element at the specified index.  
   
 ```  
@@ -329,8 +329,8 @@ void set(
  `value`  
  The new value of the element.  
   
-##  <a name="texture__texture_constructor"></a>  texture::texture Constructor  
- Initializes a new instance of the [texture](../../../parallel/amp/reference/texture-class.md) class.  
+##  <a name="ctor"></a>  texture::texture Constructor  
+ Initializes a new instance of the [texture](texture-class.md) class.  
   
 ```  
 texture(
@@ -570,10 +570,10 @@ texture(
   
 ### Parameters  
  `_Acc_view`  
- The [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md) that specifies the location of the texture.  
+ The [accelerator_view](accelerator-view-class.md) that specifies the location of the texture.  
   
  `_Av`  
- The [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md) that specifies the location of the texture.  
+ The [accelerator_view](accelerator-view-class.md) that specifies the location of the texture.  
   
  `_Associated_av`  
  An accelerator_view that specifies the preferred target for copies to or from this texture.  
@@ -624,4 +624,4 @@ texture(
  The rank of the section.  
   
 ## See Also  
- [Concurrency::graphics Namespace](../../../parallel/amp/reference/concurrency-graphics-namespace.md)
+ [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

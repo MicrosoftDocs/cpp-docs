@@ -49,7 +49,7 @@ class invalid_link_target : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[invalid_link_target::invalid_link_target Constructor](#invalid_link_target__invalid_link_target_constructor)|Overloaded. Constructs an `invalid_link_target` object.|  
+|[invalid_link_target::invalid_link_target Constructor](#ctor)|Overloaded. Constructs an `invalid_link_target` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  
@@ -61,7 +61,7 @@ class invalid_link_target : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="invalid_link_target__invalid_link_target_constructor"></a>  invalid_link_target::invalid_link_target Constructor  
+##  <a name="ctor"></a>  invalid_link_target::invalid_link_target Constructor  
  Constructs an `invalid_link_target` object.  
   
 ```
@@ -75,7 +75,7 @@ invalid_link_target() throw();
  A descriptive message of the error.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
+ [concurrency Namespace](concurrency-namespace.md)   
  [Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md)
 
 

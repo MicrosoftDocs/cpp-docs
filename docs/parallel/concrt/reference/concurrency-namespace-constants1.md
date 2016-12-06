@@ -176,4 +176,4 @@ const __declspec(selectany) GUID VirtualProcessorEventGuid =
 ```  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

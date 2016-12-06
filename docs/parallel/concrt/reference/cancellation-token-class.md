@@ -49,26 +49,26 @@ class cancellation_token;
   
 |Name|Description|  
 |----------|-----------------|  
-|[cancellation_token::cancellation_token Constructor](#cancellation_token__cancellation_token_constructor)||  
-|[cancellation_token::~cancellation_token Destructor](#cancellation_token___dtorcancellation_token_destructor)||  
+|[cancellation_token::cancellation_token Constructor](#ctor)||  
+|[cancellation_token::~cancellation_token Destructor](#dtor)||  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[cancellation_token::deregister_callback Method](#cancellation_token__deregister_callback_method)|Removes a callback previously registered via the `register` method based on the `cancellation_token_registration` object returned at the time of registration.|  
-|[cancellation_token::is_cancelable Method](#cancellation_token__is_cancelable_method)|Returns an indication of whether this token can be canceled or not.|  
-|[cancellation_token::is_canceled Method](#cancellation_token__is_canceled_method)|Returns `true` if the token has been canceled.|  
-|[cancellation_token::none Method](#cancellation_token__none_method)|Returns a cancellation token which can never be subject to cancellation.|  
-|[cancellation_token::register_callback Method](#cancellation_token__register_callback_method)|Registers a callback function with the token. If and when the token is canceled, the callback will be made. Note that if the token is already canceled at the point where this method is called, the callback will be made immediately and synchronously.|  
+|[cancellation_token::deregister_callback Method](#deregister_callback)|Removes a callback previously registered via the `register` method based on the `cancellation_token_registration` object returned at the time of registration.|  
+|[cancellation_token::is_cancelable Method](#is_cancelable)|Returns an indication of whether this token can be canceled or not.|  
+|[cancellation_token::is_canceled Method](#is_canceled)|Returns `true` if the token has been canceled.|  
+|[cancellation_token::none Method](#none)|Returns a cancellation token which can never be subject to cancellation.|  
+|[cancellation_token::register_callback Method](#register_callback)|Registers a callback function with the token. If and when the token is canceled, the callback will be made. Note that if the token is already canceled at the point where this method is called, the callback will be made immediately and synchronously.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[cancellation_token::operator!= Operator](#cancellation_token__operator_neq_operator)||  
-|[cancellation_token::operator= Operator](#cancellation_token__operator_eq_operator)||  
-|[cancellation_token::operator== Operator](#cancellation_token__operator_eq_eq_operator)||  
+|[cancellation_token::operator!= Operator](#operator_neq)||  
+|[cancellation_token::operator= Operator](#operator_eq)||  
+|[cancellation_token::operator== Operator](#operator_eq_eq)||  
   
 ## Inheritance Hierarchy  
  `cancellation_token`  
@@ -78,13 +78,13 @@ class cancellation_token;
   
  **Namespace:** concurrency  
   
-##  <a name="cancellation_token___dtorcancellation_token_destructor"></a>  cancellation_token::~cancellation_token Destructor  
+##  <a name="dtor"></a>  cancellation_token::~cancellation_token Destructor  
   
 ```
 ~cancellation_token();
 ```  
   
-##  <a name="cancellation_token__cancellation_token_constructor"></a>  cancellation_token::cancellation_token Constructor  
+##  <a name="ctor"></a>  cancellation_token::cancellation_token Constructor  
   
 ```
 cancellation_token(const cancellation_token& _Src);
@@ -95,7 +95,7 @@ cancellation_token(cancellation_token&& _Src);
 ### Parameters  
  `_Src`  
   
-##  <a name="cancellation_token__deregister_callback_method"></a>  cancellation_token::deregister_callback Method  
+##  <a name="deregister_callback"></a>  cancellation_token::deregister_callback Method  
  Removes a callback previously registered via the `register` method based on the `cancellation_token_registration` object returned at the time of registration.  
   
 ```
@@ -106,7 +106,7 @@ void deregister_callback(const cancellation_token_registration& _Registration) c
  `_Registration`  
  The `cancellation_token_registration` object corresponding to the callback to be deregistered. This token must have been previously returned from a call to the `register` method.  
   
-##  <a name="cancellation_token__is_cancelable_method"></a>  cancellation_token::is_cancelable Method  
+##  <a name="is_cancelable"></a>  cancellation_token::is_cancelable Method  
  Returns an indication of whether this token can be canceled or not.  
   
 ```
@@ -116,7 +116,7 @@ bool is_cancelable() const;
 ### Return Value  
  An indication of whether this token can be canceled or not.  
   
-##  <a name="cancellation_token__is_canceled_method"></a>  cancellation_token::is_canceled Method  
+##  <a name="is_canceled"></a>  cancellation_token::is_canceled Method  
  Returns `true` if the token has been canceled.  
   
 ```
@@ -126,7 +126,7 @@ bool is_canceled() const;
 ### Return Value  
  The value `true` if the token has been canceled; otherwise, the value `false`.  
   
-##  <a name="cancellation_token__none_method"></a>  cancellation_token::none Method  
+##  <a name="none"></a>  cancellation_token::none Method  
  Returns a cancellation token which can never be subject to cancellation.  
   
 ```
@@ -136,7 +136,7 @@ static cancellation_token none();
 ### Return Value  
  A cancellation token that cannot be canceled.  
   
-##  <a name="cancellation_token__operator_neq_operator"></a>  cancellation_token::operator!= Operator  
+##  <a name="operator_neq"></a>  cancellation_token::operator!= Operator  
   
 ```
 bool operator!= (const cancellation_token& _Src) const;
@@ -147,7 +147,7 @@ bool operator!= (const cancellation_token& _Src) const;
   
 ### Return Value  
   
-##  <a name="cancellation_token__operator_eq_operator"></a>  cancellation_token::operator= Operator  
+##  <a name="operator_eq"></a>  cancellation_token::operator= Operator  
   
 ```
 cancellation_token& operator= (const cancellation_token& _Src);
@@ -160,7 +160,7 @@ cancellation_token& operator= (cancellation_token&& _Src);
   
 ### Return Value  
   
-##  <a name="cancellation_token__operator_eq_eq_operator"></a>  cancellation_token::operator== Operator  
+##  <a name="operator_eq_eq"></a>  cancellation_token::operator== Operator  
   
 ```
 bool operator== (const cancellation_token& _Src) const;
@@ -171,7 +171,7 @@ bool operator== (const cancellation_token& _Src) const;
   
 ### Return Value  
   
-##  <a name="cancellation_token__register_callback_method"></a>  cancellation_token::register_callback Method  
+##  <a name="register_callback"></a>  cancellation_token::register_callback Method  
  Registers a callback function with the token. If and when the token is canceled, the callback will be made. Note that if the token is already canceled at the point where this method is called, the callback will be made immediately and synchronously.  
   
 ```
@@ -187,7 +187,7 @@ template<typename _Function>
  The function object that will be called back when this `cancellation_token` is canceled.  
   
 ### Return Value  
- A `cancellation_token_registration` object which can be utilized in the `deregister` method to deregister a previously registered callback and prevent it from being made. The method will throw an [invalid_operation](../../../parallel/concrt/reference/invalid-operation-class.md) exception if it is called on a `cancellation_token` object that was created using the [cancellation_token::none](#cancellation_token__none_method) method.  
+ A `cancellation_token_registration` object which can be utilized in the `deregister` method to deregister a previously registered callback and prevent it from being made. The method will throw an [invalid_operation](invalid-operation-class.md) exception if it is called on a `cancellation_token` object that was created using the [cancellation_token::none](#none) method.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

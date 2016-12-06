@@ -54,7 +54,7 @@ This example shows how to use the [concurrency::combinable](../../parallel/concr
 ## Example  
  The following example uses a `combinable` object to improve the performance of the previous example. This example eliminates the need for synchronization objects; it scales because the `combinable` object enables each thread to perform its task independently.  
   
- A `combinable` object is typically used in two steps. First, produce a series of fine-grained computations by performing work in parallel. Next, combine (or reduce) the computations into a final result. This example uses the [concurrency::combinable::local](reference/combinable-class.md#combinable__local_method) method to obtain a reference to the local sum. It then uses the [concurrency::combinable::combine](reference/combinable-class.md#combinable__combine_method) method and a [std::plus](../../standard-library/plus-struct.md) object to combine the local computations into the final result.  
+ A `combinable` object is typically used in two steps. First, produce a series of fine-grained computations by performing work in parallel. Next, combine (or reduce) the computations into a final result. This example uses the [concurrency::combinable::local](reference/combinable-class.md#local) method to obtain a reference to the local sum. It then uses the [concurrency::combinable::combine](reference/combinable-class.md#combine) method and a [std::plus](../../standard-library/plus-struct.md) object to combine the local computations into the final result.  
 
   
  [!code-cpp[concrt-parallel-sum-of-primes#3](../../parallel/concrt/codesnippet/cpp/how-to-use-combinable-to-improve-performance_3.cpp)]  
