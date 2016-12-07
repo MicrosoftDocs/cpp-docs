@@ -63,7 +63,7 @@ template <typename   E>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAutoPtrArray::CAutoPtrArray](#cautoptrarray__cautoptrarray)|The constructor.|  
+|[CAutoPtrArray::CAutoPtrArray](#cautoptrarray)|The constructor.|  
   
 ## Remarks  
  This class provides a constructor and derives methods from [CAtlArray](../../atl/reference/catlarray-class.md) and [CAutoPtrElementTraits](../../atl/reference/cautoptrelementtraits-class.md) to aid the creation of a collection class object storing smart pointers.  
@@ -78,7 +78,7 @@ template <typename   E>
 ## Requirements  
  **Header:** atlcoll.h  
   
-##  <a name="cautoptrarray__cautoptrarray"></a>  CAutoPtrArray::CAutoPtrArray  
+##  <a name="cautoptrarray"></a>  CAutoPtrArray::CAutoPtrArray  
  The constructor.  
   
 ```

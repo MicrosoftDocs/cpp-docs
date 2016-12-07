@@ -65,9 +65,9 @@ template <class   T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[IQuickActivateImpl::GetContentExtent](#iquickactivateimpl__getcontentextent)|Retrieves the current display size for a running control.|  
-|[IQuickActivateImpl::QuickActivate](#iquickactivateimpl__quickactivate)|Performs quick initialization of controls being loaded.|  
-|[IQuickActivateImpl::SetContentExtent](#iquickactivateimpl__setcontentextent)|Informs the control of how much display space the container has assigned to it.|  
+|[IQuickActivateImpl::GetContentExtent](#getcontentextent)|Retrieves the current display size for a running control.|  
+|[IQuickActivateImpl::QuickActivate](#quickactivate)|Performs quick initialization of controls being loaded.|  
+|[IQuickActivateImpl::SetContentExtent](#setcontentextent)|Informs the control of how much display space the container has assigned to it.|  
   
 ## Remarks  
  The [IQuickActivate](http://msdn.microsoft.com/library/windows/desktop/ms690146) interface helps containers avoid delays when loading controls by combining initialization in a single call. The `QuickActivate` method allows the container to pass a pointer to a [QACONTAINER](http://msdn.microsoft.com/library/windows/desktop/ms688630) structure that holds pointers to all the interfaces the control needs. On return, the control passes back a pointer to a [QACONTROL](http://msdn.microsoft.com/library/windows/desktop/ms693721) structure that holds pointers to its own interfaces, which are used by the container. Class `IQuickActivateImpl` provides a default implementation of **IQuickActivate** and implements **IUnknown** by sending information to the dump device in debug builds.  
@@ -82,7 +82,7 @@ template <class   T>
 ## Requirements  
  **Header:** atlctl.h  
   
-##  <a name="iquickactivateimpl__getcontentextent"></a>  IQuickActivateImpl::GetContentExtent  
+##  <a name="getcontentextent"></a>  IQuickActivateImpl::GetContentExtent  
  Retrieves the current display size for a running control.  
   
 ```
@@ -94,7 +94,7 @@ STDMETHOD(GetContentExtent)(LPSIZEL   pSize);
   
  See [IQuickActivate::GetContentExtent](http://msdn.microsoft.com/library/windows/desktop/ms693792) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="iquickactivateimpl__quickactivate"></a>  IQuickActivateImpl::QuickActivate  
+##  <a name="quickactivate"></a>  IQuickActivateImpl::QuickActivate  
  Performs quick initialization of controls being loaded.  
   
 ```
@@ -108,7 +108,7 @@ STDMETHOD(QuickActivate)(
   
  See [IQuickActivate::QuickActivate](http://msdn.microsoft.com/library/windows/desktop/ms682421) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="iquickactivateimpl__setcontentextent"></a>  IQuickActivateImpl::SetContentExtent  
+##  <a name="setcontentextent"></a>  IQuickActivateImpl::SetContentExtent  
  Informs the control of how much display space the container has assigned to it.  
   
 ```

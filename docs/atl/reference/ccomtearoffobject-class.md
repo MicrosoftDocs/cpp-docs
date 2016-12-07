@@ -63,28 +63,28 @@ class CComTearOffObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComTearOffObject::CComTearOffObject](#ccomtearoffobject__ccomtearoffobject)|The constructor.|  
-|[CComTearOffObject::~CComTearOffObject](#ccomtearoffobject___dtorccomtearoffobject)|The destructor.|  
+|[CComTearOffObject::CComTearOffObject](#ccomtearoffobject)|The constructor.|  
+|[CComTearOffObject::~CComTearOffObject](#dtor)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComTearOffObject::AddRef](#ccomtearoffobject__addref)|Increments the reference count for a `CComTearOffObject` object.|  
-|[CComTearOffObject::QueryInterface](#ccomtearoffobject__queryinterface)|Returns a pointer to the requested interface on either your tear-off class or the owner class.|  
-|[CComTearOffObject::Release](#ccomtearoffobject__release)|Decrements the reference count for a `CComTearOffObject` object and destroys it.|  
+|[CComTearOffObject::AddRef](#addref)|Increments the reference count for a `CComTearOffObject` object.|  
+|[CComTearOffObject::QueryInterface](#queryinterface)|Returns a pointer to the requested interface on either your tear-off class or the owner class.|  
+|[CComTearOffObject::Release](#release)|Decrements the reference count for a `CComTearOffObject` object and destroys it.|  
   
 ### CComTearOffObjectBase Methods  
   
 |||  
 |-|-|  
-|[CComTearOffObjectBase](#ccomtearoffobject__ccomtearoffobjectbase)|Constructor.|  
+|[CComTearOffObjectBase](#ccomtearoffobjectbase)|Constructor.|  
   
 ### CComTearOffObjectBase Data Members  
   
 |||  
 |-|-|  
-|[m_pOwner](#ccomtearoffobject__m_powner)|A pointer to a `CComObject` derived from the owner class.|  
+|[m_pOwner](#m_powner)|A pointer to a `CComObject` derived from the owner class.|  
   
 ## Remarks  
  `CComTearOffObject` implements a tear-off interface as a separate object that is instantiated only when that interface is queried for. The tear-off is deleted when its reference count becomes zero. Typically, you build a tear-off interface for an interface that is rarely used, since using a tear-off saves a vtable pointer in all the instances of your main object.  
@@ -105,7 +105,7 @@ class CComTearOffObject
 ## Requirements  
  **Header:** atlcom.h  
   
-##  <a name="ccomtearoffobject__addref"></a>  CComTearOffObject::AddRef  
+##  <a name="addref"></a>  CComTearOffObject::AddRef  
  Increments the reference count of the `CComTearOffObject` object by one.  
   
 ```
@@ -115,7 +115,7 @@ STDMETHOD_(ULONG, AddRef)();
 ### Return Value  
  A value that may be useful for diagnostics and testing.  
   
-##  <a name="ccomtearoffobject__ccomtearoffobject"></a>  CComTearOffObject::CComTearOffObject  
+##  <a name="ccomtearoffobject"></a>  CComTearOffObject::CComTearOffObject  
  The constructor.  
   
 ```
@@ -129,7 +129,7 @@ CComTearOffObject(void* pv);
 ### Remarks  
  Increments the owner's reference count by one.  
   
-##  <a name="ccomtearoffobject___dtorccomtearoffobject"></a>  CComTearOffObject::~CComTearOffObject  
+##  <a name="dtor"></a>  CComTearOffObject::~CComTearOffObject  
  The destructor.  
   
 ```
@@ -139,7 +139,7 @@ CComTearOffObject(void* pv);
 ### Remarks  
  Frees all allocated resources, calls FinalRelease, and decrements the module lock count.  
   
-##  <a name="ccomtearoffobject__ccomtearoffobjectbase"></a>  CComTearOffObject::CComTearOffObjectBase  
+##  <a name="ccomtearoffobjectbase"></a>  CComTearOffObject::CComTearOffObjectBase  
  The constructor.  
   
 ```
@@ -147,9 +147,9 @@ CComTearOffObjectBase();
 ```  
   
 ### Remarks  
- Initializes the [m_pOwner](#ccomtearoffobject__m_powner) member to **NULL**.  
+ Initializes the [m_pOwner](#m_powner) member to **NULL**.  
   
-##  <a name="ccomtearoffobject__m_powner"></a>  CComTearOffObject::m_pOwner  
+##  <a name="m_powner"></a>  CComTearOffObject::m_pOwner  
  A pointer to a [CComObject](../../atl/reference/ccomobject-class.md) object derived from *Owner*.  
   
 ```
@@ -163,7 +163,7 @@ CComObject<Owner>* m_pOwner;
 ### Remarks  
  The pointer is initialized to **NULL** during construction.  
   
-##  <a name="ccomtearoffobject__queryinterface"></a>  CComTearOffObject::QueryInterface  
+##  <a name="queryinterface"></a>  CComTearOffObject::QueryInterface  
  Retrieves a pointer to the requested interface.  
   
 ```
@@ -184,7 +184,7 @@ STDMETHOD(QueryInterface)(REFIID iid,
 ### Remarks  
  Queries first for interfaces on your tear-off class. If the interface is not there, queries for the interface on the owner object. If the requested interface is **IUnknown**, returns the **IUnknown** of the owner.  
   
-##  <a name="ccomtearoffobject__release"></a>  CComTearOffObject::Release  
+##  <a name="release"></a>  CComTearOffObject::Release  
  Decrements the reference count by one and, if the reference count is zero, deletes the `CComTearOffObject`.  
   
 ```

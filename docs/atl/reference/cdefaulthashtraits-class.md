@@ -57,7 +57,7 @@ template<typename T>  class CDefaultHashTraits
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDefaultHashTraits::Hash](#cdefaulthashtraits__hash)|(Static) Call this function to calculate a hash value for a given element.|  
+|[CDefaultHashTraits::Hash](#hash)|(Static) Call this function to calculate a hash value for a given element.|  
   
 ## Remarks  
  This class contains a single static function that returns a hash value for a given element. This class is utilized by the [CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md).  
@@ -67,7 +67,7 @@ template<typename T>  class CDefaultHashTraits
 ## Requirements  
  **Header:** atlcoll.h  
   
-##  <a name="cdefaulthashtraits__hash"></a>  CDefaultHashTraits::Hash  
+##  <a name="hash"></a>  CDefaultHashTraits::Hash  
  Call this function to calculate a hash value for a given element.  
   
 ```

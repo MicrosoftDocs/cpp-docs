@@ -57,9 +57,9 @@ Insert "Search Results" summary here.
   
     -   An HTML test page containing the composite control.  
   
-     By default, this control sets [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#ccomcontrolbase__m_bwindowonly) to true, to indicate that this is a windowed control. It implements a sink map. For more information, see [Support for DHTML Control](../../atl/atl-support-for-dhtml-controls.md).  
+     By default, this control sets [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) to true, to indicate that this is a windowed control. It implements a sink map. For more information, see [Support for DHTML Control](../../atl/atl-support-for-dhtml-controls.md).  
   
--   **DHTML control**: An ATL DHTML control specifies the user interface, using HTML. The DHTML UI class contains a COM map. By default, this control sets [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#ccomcontrolbase__m_bwindowonly) to true, to indicate that this is a windowed control.  
+-   **DHTML control**: An ATL DHTML control specifies the user interface, using HTML. The DHTML UI class contains a COM map. By default, this control sets [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) to true, to indicate that this is a windowed control.  
   
      For more information, see [Identifying the Elements of the DHTML Control Project](../../atl/identifying-the-elements-of-the-dhtml-control-project.md).  
   

@@ -54,10 +54,10 @@ class CLocalHeap : public IAtlMemMgr
   
 |Name|Description|  
 |----------|-----------------|  
-|[CLocalHeap::Allocate](#clocalheap__allocate)|Call this method to allocate a block of memory.|  
-|[CLocalHeap::Free](#clocalheap__free)|Call this method to free a block of memory allocated by this memory manager.|  
-|[CLocalHeap::GetSize](#clocalheap__getsize)|Call this method to get the allocated size of a memory block allocated by this memory manager.|  
-|[CLocalHeap::Reallocate](#clocalheap__reallocate)|Call this method to reallocate memory allocated by this memory manager.|  
+|[CLocalHeap::Allocate](#allocate)|Call this method to allocate a block of memory.|  
+|[CLocalHeap::Free](#free)|Call this method to free a block of memory allocated by this memory manager.|  
+|[CLocalHeap::GetSize](#getsize)|Call this method to get the allocated size of a memory block allocated by this memory manager.|  
+|[CLocalHeap::Reallocate](#reallocate)|Call this method to reallocate memory allocated by this memory manager.|  
   
 ## Remarks  
  `CLocalHeap` implements memory allocation functions using the Win32 local heap functions.  
@@ -76,7 +76,7 @@ class CLocalHeap : public IAtlMemMgr
 ## Requirements  
  **Header:** atlmem.h  
   
-##  <a name="clocalheap__allocate"></a>  CLocalHeap::Allocate  
+##  <a name="allocate"></a>  CLocalHeap::Allocate  
  Call this method to allocate a block of memory.  
   
 ```
@@ -91,11 +91,11 @@ virtual __declspec(allocator) void* Allocate(size_t   nBytes) throw();
  Returns a pointer to the start of the newly allocated memory block.  
   
 ### Remarks  
- Call [CLocalHeap::Free](#clocalheap__free) or [CLocalHeap::Reallocate](#clocalheap__reallocate) to free the memory allocated by this method.  
+ Call [CLocalHeap::Free](#free) or [CLocalHeap::Reallocate](#reallocate) to free the memory allocated by this method.  
   
  Implemented using [LocalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366723) with a flag parameter of **LMEM_FIXED**.  
   
-##  <a name="clocalheap__free"></a>  CLocalHeap::Free  
+##  <a name="free"></a>  CLocalHeap::Free  
  Call this method to free a block of memory allocated by this memory manager.  
   
 ```
@@ -109,7 +109,7 @@ virtual void Free(void* p) throw();
 ### Remarks  
  Implemented using [LocalFree](http://msdn.microsoft.com/library/windows/desktop/aa366730).  
   
-##  <a name="clocalheap__getsize"></a>  CLocalHeap::GetSize  
+##  <a name="getsize"></a>  CLocalHeap::GetSize  
  Call this method to get the allocated size of a memory block allocated by this memory manager.  
   
 ```
@@ -126,7 +126,7 @@ virtual size_t GetSize(void* p) throw();
 ### Remarks  
  Implemented using [LocalSize](http://msdn.microsoft.com/library/windows/desktop/aa366745).  
   
-##  <a name="clocalheap__reallocate"></a>  CLocalHeap::Reallocate  
+##  <a name="reallocate"></a>  CLocalHeap::Reallocate  
  Call this method to reallocate memory allocated by this memory manager.  
   
 ```
@@ -146,7 +146,7 @@ virtual __declspec(allocator) void* Reallocate(
  Returns a pointer to the start of the newly allocated memory block.  
   
 ### Remarks  
- Call [CLocalHeap::Free](#clocalheap__free) to free the memory allocated by this method.  
+ Call [CLocalHeap::Free](#free) to free the memory allocated by this method.  
   
  Implemented using [LocalReAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366742).  
   

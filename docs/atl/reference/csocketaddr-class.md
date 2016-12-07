@@ -51,17 +51,17 @@ class CSocketAddr
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSocketAddr::CSocketAddr](#csocketaddr__csocketaddr)|The constructor.|  
+|[CSocketAddr::CSocketAddr](#csocketaddr)|The constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSocketAddr::FindAddr](#csocketaddr__findaddr)|Call this method to convert the provided host name to the host address.|  
-|[CSocketAddr::FindINET4Addr](#csocketaddr__findinet4addr)|Call this method to convert the IPv4 host name to the host address.|  
-|[CSocketAddr::FindINET6Addr](#csocketaddr__findinet6addr)|Call this method to convert the IPv6 host name to the host address.|  
-|[CSocketAddr::GetAddrInfo](#csocketaddr__getaddrinfo)|Call this method to return a pointer to a specific element in the **addrinfo** list.|  
-|[CSocketAddr::GetAddrInfoList](#csocketaddr__getaddrinfolist)|Call this method to return a pointer to the **addrinfo** list.|  
+|[CSocketAddr::FindAddr](#findaddr)|Call this method to convert the provided host name to the host address.|  
+|[CSocketAddr::FindINET4Addr](#findinet4addr)|Call this method to convert the IPv4 host name to the host address.|  
+|[CSocketAddr::FindINET6Addr](#findinet6addr)|Call this method to convert the IPv6 host name to the host address.|  
+|[CSocketAddr::GetAddrInfo](#getaddrinfo)|Call this method to return a pointer to a specific element in the **addrinfo** list.|  
+|[CSocketAddr::GetAddrInfoList](#getaddrinfolist)|Call this method to return a pointer to the **addrinfo** list.|  
   
 ## Remarks  
  This class provides an IP version agnostic approach for looking up network addresses for use with Windows sockets API functions and socket wrappers in libraries.  
@@ -73,7 +73,7 @@ class CSocketAddr
 ## Requirements  
  **Header:** atlsocket.h  
   
-##  <a name="csocketaddr__csocketaddr"></a>  CSocketAddr::CSocketAddr  
+##  <a name="csocketaddr"></a>  CSocketAddr::CSocketAddr  
  The constructor.  
   
 ```
@@ -83,7 +83,7 @@ CSocketAddr();
 ### Remarks  
  Creates a new `CSocketAddr` object and initializes the linked list containing response information about the host.  
   
-##  <a name="csocketaddr__findaddr"></a>  CSocketAddr::FindAddr  
+##  <a name="findaddr"></a>  CSocketAddr::FindAddr  
  Call this method to convert the provided host name to the host address.  
   
 ```
@@ -130,7 +130,7 @@ int FindAddr(const char *szHost,
 ### Remarks  
  The host name parameter may be in either IPv4 or IPv6 format. This method calls the Win32 API function [getaddrinfo](http://msdn.microsoft.com/library/windows/desktop/ms738520) to perform the conversion.  
   
-##  <a name="csocketaddr__findinet4addr"></a>  CSocketAddr::FindINET4Addr  
+##  <a name="findinet4addr"></a>  CSocketAddr::FindINET4Addr  
  Call this method to convert the IPv4 host name to the host address.  
   
 ```
@@ -160,7 +160,7 @@ int FindINET4Addr(
 ### Remarks  
  This method calls the Win32 API function [getaddrinfo](http://msdn.microsoft.com/library/windows/desktop/ms738520) to perform the conversion.  
   
-##  <a name="csocketaddr__findinet6addr"></a>  CSocketAddr::FindINET6Addr  
+##  <a name="findinet6addr"></a>  CSocketAddr::FindINET6Addr  
  Call this method to convert the IPv6 host name to the host address.  
   
 ```
@@ -190,7 +190,7 @@ int FindINET6Addr(
 ### Remarks  
  This method calls the Win32 API function [getaddrinfo](http://msdn.microsoft.com/library/windows/desktop/ms738520) to perform the conversion.  
   
-##  <a name="csocketaddr__getaddrinfo"></a>  CSocketAddr::GetAddrInfo  
+##  <a name="getaddrinfo"></a>  CSocketAddr::GetAddrInfo  
  Call this method to return a pointer to a specific element in the **addrinfo** list.  
   
 ```
@@ -204,7 +204,7 @@ addrinfo* const GetAddrInfo(int   nIndex = 0) const;
 ### Return Value  
  Returns a pointer to the **addrinfo** structure referenced by `nIndex` in the linked list containing response information about the host.  
   
-##  <a name="csocketaddr__getaddrinfolist"></a>  CSocketAddr::GetAddrInfoList  
+##  <a name="getaddrinfolist"></a>  CSocketAddr::GetAddrInfoList  
  Call this method to return a pointer to the **addrinfo** list.  
   
 ```

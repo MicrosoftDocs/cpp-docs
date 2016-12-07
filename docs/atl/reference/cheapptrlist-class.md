@@ -65,7 +65,7 @@ template<typename E, class Allocator = ATL::CCRTAllocator>  class CHeapPtrList :
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHeapPtrList::CHeapPtrList](#cheapptrlist__cheapptrlist)|The constructor.|  
+|[CHeapPtrList::CHeapPtrList](#cheapptrlist)|The constructor.|  
   
 ## Remarks  
  This class provides a constructor and derives methods from [CAtlList](../../atl/reference/catllist-class.md) and [CHeapPtrElementTraits](../../atl/reference/cheapptrelementtraits-class.md) to aid the creation of a collection class object storing heap pointers.  
@@ -78,7 +78,7 @@ template<typename E, class Allocator = ATL::CCRTAllocator>  class CHeapPtrList :
 ## Requirements  
  **Header:** atlcoll.h  
   
-##  <a name="cheapptrlist__cheapptrlist"></a>  CHeapPtrList::CHeapPtrList  
+##  <a name="cheapptrlist"></a>  CHeapPtrList::CHeapPtrList  
  The constructor.  
   
 ```

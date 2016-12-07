@@ -51,8 +51,8 @@ class CComClassFactory : public IClassFactory,   public CComObjectRootEx<CComGlo
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComClassFactory::CreateInstance](#ccomclassfactory__createinstance)|Creates an object of the specified CLSID.|  
-|[CComClassFactory::LockServer](#ccomclassfactory__lockserver)|Locks the class factory in memory.|  
+|[CComClassFactory::CreateInstance](#createinstance)|Creates an object of the specified CLSID.|  
+|[CComClassFactory::LockServer](#lockserver)|Locks the class factory in memory.|  
   
 ## Remarks  
  `CComClassFactory` implements the [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) interface, which contains methods for creating an object of a particular CLSID, as well as locking the class factory in memory to allow new objects to be created more quickly. **IClassFactory** must be implemented for every class that you register in the system registry and to which you assign a CLSID.  
@@ -74,7 +74,7 @@ class CComClassFactory : public IClassFactory,   public CComObjectRootEx<CComGlo
 ## Requirements  
  **Header:** atlcom.h  
   
-##  <a name="ccomclassfactory__createinstance"></a>  CComClassFactory::CreateInstance  
+##  <a name="createinstance"></a>  CComClassFactory::CreateInstance  
  Creates an object of the specified CLSID and retrieves an interface pointer to this object.  
   
 ```
@@ -96,7 +96,7 @@ STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter,
 ### Return Value  
  A standard `HRESULT` value.  
   
-##  <a name="ccomclassfactory__lockserver"></a>  CComClassFactory::LockServer  
+##  <a name="lockserver"></a>  CComClassFactory::LockServer  
  Increments and decrements the module lock count by calling **_Module::Lock** and **_Module::Unlock**, respectively.  
   
 ```

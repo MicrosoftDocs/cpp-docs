@@ -56,7 +56,7 @@ class ATL_NO_VTABLE CMessageMap
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMessageMap::ProcessWindowMessage](#cmessagemap__processwindowmessage)|Accesses a message map in the `CMessageMap`-derived class.|  
+|[CMessageMap::ProcessWindowMessage](#processwindowmessage)|Accesses a message map in the `CMessageMap`-derived class.|  
   
 ## Remarks  
  `CMessageMap` is an abstract base class that allows an object's message maps to be accessed by another object. In order for an object to expose its message maps, its class must derive from `CMessageMap`.  
@@ -72,7 +72,7 @@ class ATL_NO_VTABLE CMessageMap
 ## Requirements  
  **Header:** atlwin.h  
   
-##  <a name="cmessagemap__processwindowmessage"></a>  CMessageMap::ProcessWindowMessage  
+##  <a name="processwindowmessage"></a>  CMessageMap::ProcessWindowMessage  
  Accesses the message map identified by `dwMsgMapID` in a `CMessageMap`-derived class.  
   
 ```

@@ -68,25 +68,25 @@ template<typename K,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRBMultiMap::CRBMultiMap](#crbmultimap__crbmultimap)|The constructor.|  
-|[CRBMultiMap::~CRBMultiMap](#crbmultimap___dtorcrbmultimap)|The destructor.|  
+|[CRBMultiMap::CRBMultiMap](#crbmultimap)|The constructor.|  
+|[CRBMultiMap::~CRBMultiMap](#dtor)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRBMultiMap::FindFirstWithKey](#crbmultimap__findfirstwithkey)|Call this method to find the position of the first element with a given key.|  
-|[CRBMultiMap::GetNextValueWithKey](#crbmultimap__getnextvaluewithkey)|Call this method to get the value associated with a given key, and update the position value.|  
-|[CRBMultiMap::GetNextWithKey](#crbmultimap__getnextwithkey)|Call this method to get the element associated with a given key, and update the position value.|  
-|[CRBMultiMap::Insert](#crbmultimap__insert)|Call this method to insert an element pair into the map.|  
-|[CRBMultiMap::RemoveKey](#crbmultimap__removekey)|Call this method to remove all of the key/value elements for a given key.|  
+|[CRBMultiMap::FindFirstWithKey](#findfirstwithkey)|Call this method to find the position of the first element with a given key.|  
+|[CRBMultiMap::GetNextValueWithKey](#getnextvaluewithkey)|Call this method to get the value associated with a given key, and update the position value.|  
+|[CRBMultiMap::GetNextWithKey](#getnextwithkey)|Call this method to get the element associated with a given key, and update the position value.|  
+|[CRBMultiMap::Insert](#insert)|Call this method to insert an element pair into the map.|  
+|[CRBMultiMap::RemoveKey](#removekey)|Call this method to remove all of the key/value elements for a given key.|  
   
 ## Remarks  
  `CRBMultiMap` provides support for a mapping array of any given type, managing an ordered array of key elements and values. Unlike the [CRBMap](../../atl/reference/crbmap-class.md) class, each key can be associated with more than one value.  
   
- Elements (consisting of a key and a value) are stored in a binary tree structure, using the [CRBMultiMap::Insert](#crbmultimap__insert) method. Elements can be removed using the [CRBMultiMap::RemoveKey](#crbmultimap__removekey) method, which deletes all elements which match the given key.  
+ Elements (consisting of a key and a value) are stored in a binary tree structure, using the [CRBMultiMap::Insert](#insert) method. Elements can be removed using the [CRBMultiMap::RemoveKey](#removekey) method, which deletes all elements which match the given key.  
   
- Traversing the tree is made possible with methods such as [CRBTree::GetHeadPosition](../../atl/reference/crbtree-class.md#crbtree__getheadposition), [CRBTree::GetNext](../../atl/reference/crbtree-class.md#crbtree__getnext), and [CRBTree::GetNextValue](../../atl/reference/crbtree-class.md#crbtree__getnextvalue). Accessing the potentially multiple values per key is possible using the [CRBMultiMap::FindFirstWithKey](#crbmultimap__findfirstwithkey), [CRBMultiMap::GetNextValueWithKey](#crbmultimap__getnextvaluewithkey), and [CRBMultiMap::GetNextWithKey](#crbmultimap__getnextwithkey) methods. See the example for [CRBMultiMap::CRBMultiMap](#crbmultimap__crbmultimap) for an illustration of this in practice.  
+ Traversing the tree is made possible with methods such as [CRBTree::GetHeadPosition](../../atl/reference/crbtree-class.md#getheadposition), [CRBTree::GetNext](../../atl/reference/crbtree-class.md#getnext), and [CRBTree::GetNextValue](../../atl/reference/crbtree-class.md#getnextvalue). Accessing the potentially multiple values per key is possible using the [CRBMultiMap::FindFirstWithKey](#findfirstwithkey), [CRBMultiMap::GetNextValueWithKey](#getnextvaluewithkey), and [CRBMultiMap::GetNextWithKey](#getnextwithkey) methods. See the example for [CRBMultiMap::CRBMultiMap](#crbmultimap) for an illustration of this in practice.  
   
  The `KTraits` and `VTraits` parameters are traits classes that contain any supplemental code needed to copy or move elements.  
   
@@ -102,7 +102,7 @@ template<typename K,
 ## Requirements  
  **Header:** atlcoll.h  
   
-##  <a name="crbmultimap__crbmultimap"></a>  CRBMultiMap::CRBMultiMap  
+##  <a name="crbmultimap"></a>  CRBMultiMap::CRBMultiMap  
  The constructor.  
   
 ```
@@ -121,7 +121,7 @@ explicit CRBMultiMap(size_t nBlockSize = 10) throw();
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#85](../../atl/codesnippet/cpp/crbmultimap-class_1.cpp)]  
   
-##  <a name="crbmultimap___dtorcrbmultimap"></a>  CRBMultiMap::~CRBMultiMap  
+##  <a name="dtor"></a>  CRBMultiMap::~CRBMultiMap  
  The destructor.  
   
 ```
@@ -133,7 +133,7 @@ explicit CRBMultiMap(size_t nBlockSize = 10) throw();
   
  See the documentation for the base class [CRBTree](../../atl/reference/crbtree-class.md) for information on the other methods available.  
   
-##  <a name="crbmultimap__findfirstwithkey"></a>  CRBMultiMap::FindFirstWithKey  
+##  <a name="findfirstwithkey"></a>  CRBMultiMap::FindFirstWithKey  
  Call this method to find the position of the first element with a given key.  
   
 ```
@@ -148,14 +148,14 @@ POSITION FindFirstWithKey(KINARGTYPE key) const throw();
  Returns the POSITION of the first key/value element if the key is found, NULL otherwise.  
   
 ### Remarks  
- A key in the `CRBMultiMap` can have one or more associated values. This method will provide the position value of the first value (which may, in fact, be the only value) associated with that particular key. The position value returned can then be used with [CRBMultiMap::GetNextValueWithKey](#crbmultimap__getnextvaluewithkey) or [CRBMultiMap::GetNextWithKey](#crbmultimap__getnextwithkey) to obtain the value and update the position.  
+ A key in the `CRBMultiMap` can have one or more associated values. This method will provide the position value of the first value (which may, in fact, be the only value) associated with that particular key. The position value returned can then be used with [CRBMultiMap::GetNextValueWithKey](#getnextvaluewithkey) or [CRBMultiMap::GetNextWithKey](#getnextwithkey) to obtain the value and update the position.  
   
  See the documentation for the base class [CRBTree](../../atl/reference/crbtree-class.md) for information on the other methods available.  
   
 ### Example  
- See the example for [CRBMultiMap::CRBMultiMap](#crbmultimap__crbmultimap).  
+ See the example for [CRBMultiMap::CRBMultiMap](#crbmultimap).  
   
-##  <a name="crbmultimap__getnextvaluewithkey"></a>  CRBMultiMap::GetNextValueWithKey  
+##  <a name="getnextvaluewithkey"></a>  CRBMultiMap::GetNextValueWithKey  
  Call this method to get the value associated with a given key and update the position value.  
   
 ```
@@ -169,7 +169,7 @@ V& GetNextValueWithKey(
   
 ### Parameters  
  `pos`  
- The position value, obtained with either a call to [CRBMultiMap::FindFirstWithKey](#crbmultimap__findfirstwithkey) or [CRBMultiMap::GetNextWithKey](#crbmultimap__getnextwithkey), or a previous call to `GetNextValueWithKey`.  
+ The position value, obtained with either a call to [CRBMultiMap::FindFirstWithKey](#findfirstwithkey) or [CRBMultiMap::GetNextWithKey](#getnextwithkey), or a previous call to `GetNextValueWithKey`.  
   
  `key`  
  Specifies the key that identifies the element to be found.  
@@ -183,9 +183,9 @@ V& GetNextValueWithKey(
  See the documentation for the base class [CRBTree](../../atl/reference/crbtree-class.md) for information on the other methods available.  
   
 ### Example  
- See the example for [CRBMultiMap::CRBMultiMap](#crbmultimap__crbmultimap).  
+ See the example for [CRBMultiMap::CRBMultiMap](#crbmultimap).  
   
-##  <a name="crbmultimap__getnextwithkey"></a>  CRBMultiMap::GetNextWithKey  
+##  <a name="getnextwithkey"></a>  CRBMultiMap::GetNextWithKey  
  Call this method to get the element associated with a given key and update the position value.  
   
 ```
@@ -199,20 +199,20 @@ CPair* GetNextWithKey(
   
 ### Parameters  
  `pos`  
- The position value, obtained with either a call to [CRBMultiMap::FindFirstWithKey](#crbmultimap__findfirstwithkey) or [CRBMultiMap::GetNextValueWithKey](#crbmultimap__getnextvaluewithkey), or a previous call to `GetNextWithKey`.  
+ The position value, obtained with either a call to [CRBMultiMap::FindFirstWithKey](#findfirstwithkey) or [CRBMultiMap::GetNextValueWithKey](#getnextvaluewithkey), or a previous call to `GetNextWithKey`.  
   
  `key`  
  Specifies the key that identifies the element to be found.  
   
 ### Return Value  
- Returns the next [CRBTree::CPair Class](crbtree-class.md#crbtree__cpair_class) element associated with the given key.  
+ Returns the next [CRBTree::CPair Class](crbtree-class.md#cpair_class) element associated with the given key.  
   
 ### Remarks  
  The position value is updated to point to the next value associated with the key. If no more values exist, the position value is set to NULL.  
   
  See the documentation for the base class [CRBTree](../../atl/reference/crbtree-class.md) for information on the other methods available.  
   
-##  <a name="crbmultimap__insert"></a>  CRBMultiMap::Insert  
+##  <a name="insert"></a>  CRBMultiMap::Insert  
  Call this method to insert an element pair into the map.  
   
 ```
@@ -233,9 +233,9 @@ POSITION Insert(KINARGTYPE key,  VINARGTYPE value) throw(...);
  See the documentation for the base class [CRBTree](../../atl/reference/crbtree-class.md) for information on the other methods available.  
   
 ### Example  
- See the example for [CRBMultiMap::CRBMultiMap](#crbmultimap__crbmultimap).  
+ See the example for [CRBMultiMap::CRBMultiMap](#crbmultimap).  
   
-##  <a name="crbmultimap__removekey"></a>  CRBMultiMap::RemoveKey  
+##  <a name="removekey"></a>  CRBMultiMap::RemoveKey  
  Call this method to remove all of the key/value elements for a given key.  
   
 ```
@@ -255,7 +255,7 @@ size_t RemoveKey(KINARGTYPE key) throw();
  See the documentation for the base class [CRBTree](../../atl/reference/crbtree-class.md) for information on the other methods available.  
   
 ### Example  
- See the example for [CRBMultiMap::CRBMultiMap](#crbmultimap__crbmultimap).  
+ See the example for [CRBMultiMap::CRBMultiMap](#crbmultimap).  
   
 ## See Also  
  [CRBTree Class](../../atl/reference/crbtree-class.md)   

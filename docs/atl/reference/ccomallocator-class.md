@@ -51,9 +51,9 @@ class CComAllocator
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComAllocator::Allocate](#ccomallocator__allocate)|Call this static method to allocate memory.|  
-|[CComAllocator::Free](#ccomallocator__free)|Call this static method to free allocated memory.|  
-|[CComAllocator::Reallocate](#ccomallocator__reallocate)|Call this static method to reallocate memory.|  
+|[CComAllocator::Allocate](#allocate)|Call this static method to allocate memory.|  
+|[CComAllocator::Free](#free)|Call this static method to free allocated memory.|  
+|[CComAllocator::Reallocate](#reallocate)|Call this static method to reallocate memory.|  
   
 ## Remarks  
  This class is used by [CComHeapPtr](../../atl/reference/ccomheapptr-class.md) to provide the COM memory allocation routines. The counterpart class, [CCRTAllocator](../../atl/reference/ccrtallocator-class.md), provides the same methods using CRT routines.  
@@ -61,7 +61,7 @@ class CComAllocator
 ## Requirements  
  **Header:** atlbase.h  
   
-##  <a name="ccomallocator__allocate"></a>  CComAllocator::Allocate  
+##  <a name="allocate"></a>  CComAllocator::Allocate  
  Call this static function to allocate memory.  
   
 ```
@@ -78,7 +78,7 @@ static void* Allocate(size_t nBytes) throw();
 ### Remarks  
  Allocates memory. See [CoTaskMemAlloc](http://msdn.microsoft.com/library/windows/desktop/ms692727) for more details.  
   
-##  <a name="ccomallocator__free"></a>  CComAllocator::Free  
+##  <a name="free"></a>  CComAllocator::Free  
  Call this static function to free allocated memory.  
   
 ```
@@ -92,7 +92,7 @@ static void Free(void* p) throw();
 ### Remarks  
  Frees the allocated memory. See [CoTaskMemFree](http://msdn.microsoft.com/library/windows/desktop/ms680722) for more details.  
   
-##  <a name="ccomallocator__reallocate"></a>  CComAllocator::Reallocate  
+##  <a name="reallocate"></a>  CComAllocator::Reallocate  
  Call this static function to reallocate memory.  
   
 ```

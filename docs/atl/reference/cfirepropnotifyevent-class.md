@@ -56,8 +56,8 @@ class CFirePropNotifyEvent
   
 |Name|Description|  
 |----------|-----------------|  
-|[CFirePropNotifyEvent::FireOnChanged](#cfirepropnotifyevent__fireonchanged)|(Static) Notifies the container's sink that a control property has changed.|  
-|[CFirePropNotifyEvent::FireOnRequestEdit](#cfirepropnotifyevent__fireonrequestedit)|(Static) Notifies the container's sink that a control property is about to change.|  
+|[CFirePropNotifyEvent::FireOnChanged](#fireonchanged)|(Static) Notifies the container's sink that a control property has changed.|  
+|[CFirePropNotifyEvent::FireOnRequestEdit](#fireonrequestedit)|(Static) Notifies the container's sink that a control property is about to change.|  
   
 ## Remarks  
  `CFirePropNotifyEvent` has two methods that notify the container's sink that a control property has changed or is about to change.  
@@ -69,7 +69,7 @@ class CFirePropNotifyEvent
 ## Requirements  
  **Header:** atlctl.h  
   
-##  <a name="cfirepropnotifyevent__fireonchanged"></a>  CFirePropNotifyEvent::FireOnChanged  
+##  <a name="fireonchanged"></a>  CFirePropNotifyEvent::FireOnChanged  
  Notifies all connected [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638) interfaces (on every connection point of the object) that the specified object property has changed.  
   
 ```
@@ -90,7 +90,7 @@ static HRESULT FireOnChanged(
 ### Remarks  
  This function is safe to call even if your control does not support connection points.  
   
-##  <a name="cfirepropnotifyevent__fireonrequestedit"></a>  CFirePropNotifyEvent::FireOnRequestEdit  
+##  <a name="fireonrequestedit"></a>  CFirePropNotifyEvent::FireOnRequestEdit  
  Notifies all connected [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638) interfaces (on every connection point of the object) that the specified object property is about to change.  
   
 ```

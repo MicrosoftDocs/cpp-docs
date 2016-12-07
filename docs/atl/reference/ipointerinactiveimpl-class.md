@@ -59,9 +59,9 @@ class IPointerInactiveImpl
   
 |Name|Description|  
 |----------|-----------------|  
-|[IPointerInactiveImpl::GetActivationPolicy](#ipointerinactiveimpl__getactivationpolicy)|Retrieves the current activation policy for the object. The ATL implementation returns **E_NOTIMPL**.|  
-|[IPointerInactiveImpl::OnInactiveMouseMove](#ipointerinactiveimpl__oninactivemousemove)|Notifies the object that the mouse pointer has moved over it, indicating the object can fire mouse events. The ATL implementation returns **E_NOTIMPL**.|  
-|[IPointerInactiveImpl::OnInactiveSetCursor](#ipointerinactiveimpl__oninactivesetcursor)|Sets the mouse pointer for the inactive object. The ATL implementation returns **E_NOTIMPL**.|  
+|[IPointerInactiveImpl::GetActivationPolicy](#getactivationpolicy)|Retrieves the current activation policy for the object. The ATL implementation returns **E_NOTIMPL**.|  
+|[IPointerInactiveImpl::OnInactiveMouseMove](#oninactivemousemove)|Notifies the object that the mouse pointer has moved over it, indicating the object can fire mouse events. The ATL implementation returns **E_NOTIMPL**.|  
+|[IPointerInactiveImpl::OnInactiveSetCursor](#oninactivesetcursor)|Sets the mouse pointer for the inactive object. The ATL implementation returns **E_NOTIMPL**.|  
   
 ## Remarks  
  An inactive object is one that is simply loaded or running. Unlike an active object, an inactive object cannot receive Windows mouse and keyboard messages. Thus, inactive objects use fewer resources and are typically more efficient.  
@@ -80,7 +80,7 @@ class IPointerInactiveImpl
 ## Requirements  
  **Header:** atlctl.h  
   
-##  <a name="ipointerinactiveimpl__getactivationpolicy"></a>  IPointerInactiveImpl::GetActivationPolicy  
+##  <a name="getactivationpolicy"></a>  IPointerInactiveImpl::GetActivationPolicy  
  Retrieves the current activation policy for the object.  
   
 ```
@@ -93,7 +93,7 @@ HRESULT GetActivationPolicy(DWORD* pdwPolicy);
 ### Remarks  
  See [IPointerInactive::GetActivationPolicy](http://msdn.microsoft.com/library/windows/desktop/ms692470) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ipointerinactiveimpl__oninactivemousemove"></a>  IPointerInactiveImpl::OnInactiveMouseMove  
+##  <a name="oninactivemousemove"></a>  IPointerInactiveImpl::OnInactiveMouseMove  
  Notifies the object that the mouse pointer has moved over it, indicating the object can fire mouse events.  
   
 ```
@@ -110,7 +110,7 @@ HRESULT OnInactiveMouseMove(
 ### Remarks  
  See [IPointerInactive::OnInactiveMouseMove](http://msdn.microsoft.com/library/windows/desktop/ms693374) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ipointerinactiveimpl__oninactivesetcursor"></a>  IPointerInactiveImpl::OnInactiveSetCursor  
+##  <a name="oninactivesetcursor"></a>  IPointerInactiveImpl::OnInactiveSetCursor  
  Sets the mouse pointer for the inactive object.  
   
 ```

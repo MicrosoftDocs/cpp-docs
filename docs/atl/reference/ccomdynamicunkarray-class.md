@@ -52,27 +52,27 @@ class CComDynamicUnkArray
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComDynamicUnkArray::CComDynamicUnkArray](#ccomdynamicunkarray__ccomdynamicunkarray)|Constructor. Initializes the collection values to **NULL** and the collection size to zero.|  
-|[CComDynamicUnkArray::~CComDynamicUnkArray](#ccomdynamicunkarray___dtorccomdynamicunkarray)|The destructor.|  
+|[CComDynamicUnkArray::CComDynamicUnkArray](#ccomdynamicunkarray)|Constructor. Initializes the collection values to **NULL** and the collection size to zero.|  
+|[CComDynamicUnkArray::~CComDynamicUnkArray](#dtor)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComDynamicUnkArray::Add](#ccomdynamicunkarray__add)|Call this method to add an `IUnknown` pointer to the array.|  
-|[CComDynamicUnkArray::begin](#ccomdynamicunkarray__begin)|Returns a pointer to the first `IUnknown` pointer in the collection.|  
-|[CComDynamicUnkArray::clear](#ccomdynamicunkarray__clear)|Empties the array.|  
-|[CComDynamicUnkArray::end](#ccomdynamicunkarray__end)|Returns a pointer to one past the last **IUnknown** pointer in the collection.|  
-|[CComDynamicUnkArray::GetAt](#ccomdynamicunkarray__getat)|Retrieves the element at the specified index.|  
-|[CComDynamicUnkArray::GetCookie](#ccomdynamicunkarray__getcookie)|Call this method to get the cookie associated with a given **IUnknown** pointer.|  
-|[CComDynamicUnkArray::GetSize](#ccomdynamicunkarray__getsize)|Returns the length of an array.|  
-|[CComDynamicUnkArray::GetUnknown](#ccomdynamicunkarray__getunknown)|Call this method to get the **IUnknown** pointer associated with a given cookie.|  
-|[CComDynamicUnkArray::Remove](#ccomdynamicunkarray__remove)|Call this method to remove an **IUnknown** pointer from the array.|  
+|[CComDynamicUnkArray::Add](#add)|Call this method to add an `IUnknown` pointer to the array.|  
+|[CComDynamicUnkArray::begin](#begin)|Returns a pointer to the first `IUnknown` pointer in the collection.|  
+|[CComDynamicUnkArray::clear](#clear)|Empties the array.|  
+|[CComDynamicUnkArray::end](#end)|Returns a pointer to one past the last **IUnknown** pointer in the collection.|  
+|[CComDynamicUnkArray::GetAt](#getat)|Retrieves the element at the specified index.|  
+|[CComDynamicUnkArray::GetCookie](#getcookie)|Call this method to get the cookie associated with a given **IUnknown** pointer.|  
+|[CComDynamicUnkArray::GetSize](#getsize)|Returns the length of an array.|  
+|[CComDynamicUnkArray::GetUnknown](#getunknown)|Call this method to get the **IUnknown** pointer associated with a given cookie.|  
+|[CComDynamicUnkArray::Remove](#remove)|Call this method to remove an **IUnknown** pointer from the array.|  
   
 ## Remarks  
  **CComDynamicUnkArray** holds a dynamically allocated array of **IUnknown** pointers, each an interface on a connection point. **CComDynamicUnkArray** can be used as a parameter to the [IConnectionPointImpl](../../atl/reference/iconnectionpointimpl-class.md) template class.  
   
- The **CComDynamicUnkArray** methods [begin](#ccomdynamicunkarray__begin) and [end](#ccomdynamicunkarray__end) can be used to loop through all connection points (for example, when an event is fired).  
+ The **CComDynamicUnkArray** methods [begin](#begin) and [end](#end) can be used to loop through all connection points (for example, when an event is fired).  
   
  See [Adding Connection Points to an Object](../../atl/adding-connection-points-to-an-object.md) for details on automating creation of connection point proxies.  
   
@@ -82,7 +82,7 @@ class CComDynamicUnkArray
 ## Requirements  
  **Header:** atlcom.h  
   
-##  <a name="ccomdynamicunkarray__add"></a>  CComDynamicUnkArray::Add  
+##  <a name="add"></a>  CComDynamicUnkArray::Add  
  Call this method to add an **IUnknown** pointer to the array.  
   
 ```
@@ -96,7 +96,7 @@ DWORD Add(IUnknown* pUnk);
 ### Return Value  
  Returns the cookie associated with the newly added pointer.  
   
-##  <a name="ccomdynamicunkarray__begin"></a>  CComDynamicUnkArray::begin  
+##  <a name="begin"></a>  CComDynamicUnkArray::begin  
  Returns a pointer to the beginning of the collection of **IUnknown** interface pointers.  
   
 ```
@@ -112,14 +112,14 @@ IUnknown**
   
  Before using the **IUnknown** interface, you should check that it is not **NULL**.  
   
-##  <a name="ccomdynamicunkarray__clear"></a>  CComDynamicUnkArray::clear  
+##  <a name="clear"></a>  CComDynamicUnkArray::clear  
  Empties the array.  
   
 ```
 void clear();
 ```  
   
-##  <a name="ccomdynamicunkarray__ccomdynamicunkarray"></a>  CComDynamicUnkArray::CComDynamicUnkArray  
+##  <a name="ccomdynamicunkarray"></a>  CComDynamicUnkArray::CComDynamicUnkArray  
  The constructor.  
   
 ```
@@ -129,7 +129,7 @@ CComDynamicUnkArray();
 ### Remarks  
  Sets the collection size to zero and initializes the values to **NULL**. The destructor frees the collection, if necessary.  
   
-##  <a name="ccomdynamicunkarray___dtorccomdynamicunkarray"></a>  CComDynamicUnkArray::~CComDynamicUnkArray  
+##  <a name="dtor"></a>  CComDynamicUnkArray::~CComDynamicUnkArray  
  The destructor.  
   
 ```
@@ -139,7 +139,7 @@ CComDynamicUnkArray();
 ### Remarks  
  Frees resources allocated by the class constructor.  
   
-##  <a name="ccomdynamicunkarray__end"></a>  CComDynamicUnkArray::end  
+##  <a name="end"></a>  CComDynamicUnkArray::end  
  Returns a pointer to one past the last **IUnknown** pointer in the collection.  
   
 ```
@@ -150,7 +150,7 @@ IUnknown**
 ### Return Value  
  A pointer to an **IUnknown** interface pointer.  
   
-##  <a name="ccomdynamicunkarray__getat"></a>  CComDynamicUnkArray::GetAt  
+##  <a name="getat"></a>  CComDynamicUnkArray::GetAt  
  Retrieves the element at the specified index.  
   
 ```
@@ -164,7 +164,7 @@ IUnknown* GetAt(int   nIndex);
 ### Return Value  
  A pointer to an [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) interface.  
   
-##  <a name="ccomdynamicunkarray__getcookie"></a>  CComDynamicUnkArray::GetCookie  
+##  <a name="getcookie"></a>  CComDynamicUnkArray::GetCookie  
  Call this method to get the cookie associated with a given **IUnknown** pointer.  
   
 ```
@@ -181,7 +181,7 @@ DWORD WINAPI GetCookie(IUnknown** ppFind);
 ### Remarks  
  If there is more than one instance of the same **IUnknown** pointer, this function returns the cookie for the first one.  
   
-##  <a name="ccomdynamicunkarray__getsize"></a>  CComDynamicUnkArray::GetSize  
+##  <a name="getsize"></a>  CComDynamicUnkArray::GetSize  
  Returns the length of an array.  
   
 ```
@@ -191,7 +191,7 @@ int GetSize() const;
 ### Return Value  
  The length of the array.  
   
-##  <a name="ccomdynamicunkarray__getunknown"></a>  CComDynamicUnkArray::GetUnknown  
+##  <a name="getunknown"></a>  CComDynamicUnkArray::GetUnknown  
  Call this method to get the **IUnknown** pointer associated with a given cookie.  
   
 ```
@@ -205,7 +205,7 @@ IUnknown* WINAPI GetUnknown(DWORD   dwCookie);
 ### Return Value  
  Returns the **IUnknown** pointer, or NULL if no matching cookie is found.  
   
-##  <a name="ccomdynamicunkarray__remove"></a>  CComDynamicUnkArray::Remove  
+##  <a name="remove"></a>  CComDynamicUnkArray::Remove  
  Call this method to remove an **IUnknown** pointer from the array.  
   
 ```
