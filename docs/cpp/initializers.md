@@ -135,7 +135,7 @@ int main() {
 }  
 ```  
   
-### Default initialization  
+### <a name="default_initialization"></a> Default initialization  
  Default initialization for classes, structs, and unions is initialization with a default constructor. The default constructor can be called with no initialization expression or with the `new` keyword:  
   
 ```cpp  
