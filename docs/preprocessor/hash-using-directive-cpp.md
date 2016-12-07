@@ -1,5 +1,5 @@
 ---
-title: "#using Directive (C++) | Microsoft Docs"
+title: "#using Directive (C++/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -41,7 +41,7 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# #using Directive (C++)
+# #using Directive (C++/CLR)
 Imports metadata into a program compiled with [/clr](../build/reference/clr-common-language-runtime-compilation.md).  
   
 ## Syntax  

@@ -1,5 +1,5 @@
 ---
-title: "C-C++ Language and Standard Libraries | Microsoft Docs"
+title: "C/C++ Language and Standard Libraries | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -30,8 +30,8 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# C/C++ Language Reference
-This section of the documentation includes guidelines and reference content for the Microsoft implementation of the ISO standard for C++.  
+# C/C++ Language and Standard Libraries
+This section of the documentation includes guidelines and reference content for the Microsoft implementation of the ISO standards for C and C++.  
   
 ## Related Articles  
   
