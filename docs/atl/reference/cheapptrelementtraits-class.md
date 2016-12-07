@@ -63,8 +63,8 @@ template<typename T, class Allocator = ATL::CCRTAllocator>  class CHeapPtrElemen
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHeapPtrElementTraits::INARGTYPE](#cheapptrelementtraits__inargtype)|The data type to use for adding elements to the collection class object.|  
-|[CHeapPtrElementTraits::OUTARGTYPE](#cheapptrelementtraits__outargtype)|The data type to use for retrieving elements from the collection class object.|  
+|[CHeapPtrElementTraits::INARGTYPE](#inargtype)|The data type to use for adding elements to the collection class object.|  
+|[CHeapPtrElementTraits::OUTARGTYPE](#outargtype)|The data type to use for retrieving elements from the collection class object.|  
   
 ## Remarks  
  This class provides methods, static functions, and typedefs for aiding the creation of collection class objects containing heap pointers. The class `CHeapPtrList` derives from `CHeapPtrElementTraits`.  
@@ -85,7 +85,7 @@ template<typename T, class Allocator = ATL::CCRTAllocator>  class CHeapPtrElemen
 ## Requirements  
  **Header:** atlcoll.h  
   
-##  <a name="cheapptrelementtraits__inargtype"></a>  CHeapPtrElementTraits::INARGTYPE  
+##  <a name="inargtype"></a>  CHeapPtrElementTraits::INARGTYPE  
  The data type to use for adding elements to the collection class object.  
   
 ```
@@ -93,7 +93,7 @@ typedef CHeapPtr<T,
     Allocator>& INARGTYPE;
 ```  
   
-##  <a name="cheapptrelementtraits__outargtype"></a>  CHeapPtrElementTraits::OUTARGTYPE  
+##  <a name="outargtype"></a>  CHeapPtrElementTraits::OUTARGTYPE  
  The data type to use for retrieving elements from the collection class object.  
   
 ```

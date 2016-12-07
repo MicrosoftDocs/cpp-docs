@@ -62,14 +62,14 @@ class IOleInPlaceObjectWindowlessImpl
   
 |Name|Description|  
 |----------|-----------------|  
-|[IOleInPlaceObjectWindowlessImpl::ContextSensitiveHelp](#ioleinplaceobjectwindowlessimpl__contextsensitivehelp)|Enables context-sensitive help. The ATL implementation returns **E_NOTIMPL**.|  
-|[IOleInPlaceObjectWindowlessImpl::GetDropTarget](#ioleinplaceobjectwindowlessimpl__getdroptarget)|Supplies the `IDropTarget` interface for an in-place active, windowless object that supports drag and drop. The ATL implementation returns **E_NOTIMPL**.|  
-|[IOleInPlaceObjectWindowlessImpl::GetWindow](#ioleinplaceobjectwindowlessimpl__getwindow)|Gets a window handle.|  
-|[IOleInPlaceObjectWindowlessImpl::InPlaceDeactivate](#ioleinplaceobjectwindowlessimpl__inplacedeactivate)|Deactivates an active in-place control.|  
-|[IOleInPlaceObjectWindowlessImpl::OnWindowMessage](#ioleinplaceobjectwindowlessimpl__onwindowmessage)|Dispatches a message from the container to a windowless control that is in-place active.|  
-|[IOleInPlaceObjectWindowlessImpl::ReactivateAndUndo](#ioleinplaceobjectwindowlessimpl__reactivateandundo)|Reactivates a previously deactivated control. The ATL implementation returns **E_NOTIMPL**.|  
-|[IOleInPlaceObjectWindowlessImpl::SetObjectRects](#ioleinplaceobjectwindowlessimpl__setobjectrects)|Indicates what part of the in-place control is visible.|  
-|[IOleInPlaceObjectWindowlessImpl::UIDeactivate](#ioleinplaceobjectwindowlessimpl__uideactivate)|Deactivates and removes the user interface that supports in-place activation.|  
+|[IOleInPlaceObjectWindowlessImpl::ContextSensitiveHelp](#contextsensitivehelp)|Enables context-sensitive help. The ATL implementation returns **E_NOTIMPL**.|  
+|[IOleInPlaceObjectWindowlessImpl::GetDropTarget](#getdroptarget)|Supplies the `IDropTarget` interface for an in-place active, windowless object that supports drag and drop. The ATL implementation returns **E_NOTIMPL**.|  
+|[IOleInPlaceObjectWindowlessImpl::GetWindow](#getwindow)|Gets a window handle.|  
+|[IOleInPlaceObjectWindowlessImpl::InPlaceDeactivate](#inplacedeactivate)|Deactivates an active in-place control.|  
+|[IOleInPlaceObjectWindowlessImpl::OnWindowMessage](#onwindowmessage)|Dispatches a message from the container to a windowless control that is in-place active.|  
+|[IOleInPlaceObjectWindowlessImpl::ReactivateAndUndo](#reactivateandundo)|Reactivates a previously deactivated control. The ATL implementation returns **E_NOTIMPL**.|  
+|[IOleInPlaceObjectWindowlessImpl::SetObjectRects](#setobjectrects)|Indicates what part of the in-place control is visible.|  
+|[IOleInPlaceObjectWindowlessImpl::UIDeactivate](#uideactivate)|Deactivates and removes the user interface that supports in-place activation.|  
   
 ## Remarks  
  The [IOleInPlaceObject](http://msdn.microsoft.com/library/windows/desktop/ms692646) interface manages the reactivation and deactivation of in-place controls and determines how much of the control should be visible. The [IOleInPlaceObjectWindowless](http://msdn.microsoft.com/library/windows/desktop/ms687304) interface enables a windowless control to receive window messages and to participate in drag-and-drop operations. Class `IOleInPlaceObjectWindowlessImpl` provides a default implementation of `IOleInPlaceObject` and `IOleInPlaceObjectWindowless` and implements **IUnknown** by sending information to the dump device in debug builds.  
@@ -84,7 +84,7 @@ class IOleInPlaceObjectWindowlessImpl
 ## Requirements  
  **Header:** atlctl.h  
   
-##  <a name="ioleinplaceobjectwindowlessimpl__contextsensitivehelp"></a>  IOleInPlaceObjectWindowlessImpl::ContextSensitiveHelp  
+##  <a name="contextsensitivehelp"></a>  IOleInPlaceObjectWindowlessImpl::ContextSensitiveHelp  
  Returns **E_NOTIMPL**.  
   
 ```
@@ -94,7 +94,7 @@ HRESULT ContextSensitiveHelp(BOOL   fEnterMode);
 ### Remarks  
  See [IOleWindow::ContextSensitiveHelp](http://msdn.microsoft.com/library/windows/desktop/ms680059) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ioleinplaceobjectwindowlessimpl__getdroptarget"></a>  IOleInPlaceObjectWindowlessImpl::GetDropTarget  
+##  <a name="getdroptarget"></a>  IOleInPlaceObjectWindowlessImpl::GetDropTarget  
  Returns **E_NOTIMPL**.  
   
 ```
@@ -104,7 +104,7 @@ HRESULT GetDropTarget(IDropTarget** ppDropTarget);
 ### Remarks  
  See [IOleInPlaceObjectWindowless::GetDropTarget](http://msdn.microsoft.com/library/windows/desktop/ms678535) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ioleinplaceobjectwindowlessimpl__getwindow"></a>  IOleInPlaceObjectWindowlessImpl::GetWindow  
+##  <a name="getwindow"></a>  IOleInPlaceObjectWindowlessImpl::GetWindow  
  The container calls this function to get the window handle of the control.  
   
 ```
@@ -116,7 +116,7 @@ HRESULT GetWindow(HWND* phwnd);
   
  See [IOleWindow::GetWindow](http://msdn.microsoft.com/library/windows/desktop/ms687282) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ioleinplaceobjectwindowlessimpl__inplacedeactivate"></a>  IOleInPlaceObjectWindowlessImpl::InPlaceDeactivate  
+##  <a name="inplacedeactivate"></a>  IOleInPlaceObjectWindowlessImpl::InPlaceDeactivate  
  Called by the container to deactivate an in-place active control.  
   
 ```
@@ -128,7 +128,7 @@ HRESULT InPlaceDeactivate(HWND* phwnd);
   
  See [IOleInPlaceObject::InPlaceDeactivate](http://msdn.microsoft.com/library/windows/desktop/ms679700) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ioleinplaceobjectwindowlessimpl__onwindowmessage"></a>  IOleInPlaceObjectWindowlessImpl::OnWindowMessage  
+##  <a name="onwindowmessage"></a>  IOleInPlaceObjectWindowlessImpl::OnWindowMessage  
  Dispatches a message from a container to a windowless control that is in-place active.  
   
 ```
@@ -142,7 +142,7 @@ HRESULT OnWindowMessage(
 ### Remarks  
  See [IOleInPlaceObjectWindowless::OnWindowMessage](http://msdn.microsoft.com/library/windows/desktop/ms693783) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ioleinplaceobjectwindowlessimpl__reactivateandundo"></a>  IOleInPlaceObjectWindowlessImpl::ReactivateAndUndo  
+##  <a name="reactivateandundo"></a>  IOleInPlaceObjectWindowlessImpl::ReactivateAndUndo  
  Returns **E_NOTIMPL**.  
   
 ```
@@ -152,7 +152,7 @@ HRESULT ReactivateAndUndo();
 ### Remarks  
  See [IOleInPlaceObject::ReactivateAndUndo](http://msdn.microsoft.com/library/windows/desktop/ms691372) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ioleinplaceobjectwindowlessimpl__setobjectrects"></a>  IOleInPlaceObjectWindowlessImpl::SetObjectRects  
+##  <a name="setobjectrects"></a>  IOleInPlaceObjectWindowlessImpl::SetObjectRects  
  Called by the container to inform the control that its size and/or position has changed.  
   
 ```
@@ -166,7 +166,7 @@ HRESULT SetObjectRects(
   
  See [IOleInPlaceObject::SetObjectRects](http://msdn.microsoft.com/library/windows/desktop/ms683767) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ioleinplaceobjectwindowlessimpl__uideactivate"></a>  IOleInPlaceObjectWindowlessImpl::UIDeactivate  
+##  <a name="uideactivate"></a>  IOleInPlaceObjectWindowlessImpl::UIDeactivate  
  Deactivates and removes the control's user interface that supports in-place activation.  
   
 ```

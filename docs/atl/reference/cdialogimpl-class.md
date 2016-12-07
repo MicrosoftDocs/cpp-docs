@@ -67,25 +67,25 @@ template <class T,
   
 |||  
 |-|-|  
-|[Create](#cdialogimpl__create)|Creates a modeless dialog box.|  
-|[DestroyWindow](#cdialogimpl__destroywindow)|Destroys a modeless dialog box.|  
-|[DoModal](#cdialogimpl__domodal)|Creates a modal dialog box.|  
-|[EndDialog](#cdialogimpl__enddialog)|Destroys a modal dialog box.|  
+|[Create](#create)|Creates a modeless dialog box.|  
+|[DestroyWindow](#destroywindow)|Destroys a modeless dialog box.|  
+|[DoModal](#domodal)|Creates a modal dialog box.|  
+|[EndDialog](#enddialog)|Destroys a modal dialog box.|  
   
 ### CDialogImplBaseT Methods  
   
 |||  
 |-|-|  
-|[GetDialogProc](#cdialogimpl__getdialogproc)|Returns the current dialog box procedure.|  
-|[MapDialogRect](#cdialogimpl__mapdialogrect)|Maps the dialog-box units of the specified rectangle to screen units (pixels).|  
-|[OnFinalMessage](#cdialogimpl__onfinalmessage)|Called after receiving the last message, typically `WM_NCDESTROY`.|  
+|[GetDialogProc](#getdialogproc)|Returns the current dialog box procedure.|  
+|[MapDialogRect](#mapdialogrect)|Maps the dialog-box units of the specified rectangle to screen units (pixels).|  
+|[OnFinalMessage](#onfinalmessage)|Called after receiving the last message, typically `WM_NCDESTROY`.|  
   
 ### Static Functions  
   
 |||  
 |-|-|  
-|[DialogProc](#cdialogimpl__dialogproc)|Processes messages sent to the dialog box.|  
-|[StartDialogProc](#cdialogimpl__startdialogproc)|Called when the first message is received to process messages sent to the dialog box.|  
+|[DialogProc](#dialogproc)|Processes messages sent to the dialog box.|  
+|[StartDialogProc](#startdialogproc)|Called when the first message is received to process messages sent to the dialog box.|  
   
 ## Remarks  
  With `CDialogImpl` you can create a modal or modeless dialog box. `CDialogImpl` provides the dialog box procedure, which uses the default message map to direct messages to the appropriate handlers.  
@@ -111,7 +111,7 @@ template <class T,
 ## Requirements  
  **Header:** atlwin.h  
   
-##  <a name="cdialogimpl__create"></a>  CDialogImpl::Create  
+##  <a name="create"></a>  CDialogImpl::Create  
  Creates a modeless dialog box.  
   
 ```  
@@ -142,9 +142,9 @@ HWND Create(
  The handle to the newly created dialog box.  
   
 ### Remarks  
- This dialog box is automatically attached to the `CDialogImpl` object. To create a modal dialog box, call [DoModal](#cdialogimpl__domodal). The second override above is used only with [CComControl](../../atl/reference/ccomcontrol-class.md).  
+ This dialog box is automatically attached to the `CDialogImpl` object. To create a modal dialog box, call [DoModal](#domodal). The second override above is used only with [CComControl](../../atl/reference/ccomcontrol-class.md).  
   
-##  <a name="cdialogimpl__destroywindow"></a>  CDialogImpl::DestroyWindow  
+##  <a name="destroywindow"></a>  CDialogImpl::DestroyWindow  
  Destroys a modeless dialog box.  
   
 ```  
@@ -160,7 +160,7 @@ BOOL DestroyWindow();
 ### Remarks  
  Returns **TRUE** if the dialog box was successfully destroyed; otherwise **FALSE**.  
   
-##  <a name="cdialogimpl__dialogproc"></a>  CDialogImpl::DialogProc  
+##  <a name="dialogproc"></a>  CDialogImpl::DialogProc  
  This static function implements the dialog box procedure.  
   
 ```  
@@ -195,7 +195,7 @@ static LRESULT CALLBACK DialogProc(
   
  You can override `DialogProc` to provide a different mechanism for handling messages.  
   
-##  <a name="cdialogimpl__domodal"></a>  CDialogImpl::DoModal  
+##  <a name="domodal"></a>  CDialogImpl::DoModal  
  Creates a modal dialog box.  
   
 ```  
@@ -215,14 +215,14 @@ INT_PTR DoModal(
  [in] Specifies the value to pass to the dialog box in the **lParam** parameter of the **WM_INITDIALOG** message.  
   
 ### Return Value  
- If successful, the value of the `nRetCode` parameter specified in the call to [EndDialog](#cdialogimpl__enddialog). Otherwise, -1.  
+ If successful, the value of the `nRetCode` parameter specified in the call to [EndDialog](#enddialog). Otherwise, -1.  
   
 ### Remarks  
  This dialog box is automatically attached to the `CDialogImpl` object.  
   
- To create a modeless dialog box, call [Create](#cdialogimpl__create).  
+ To create a modeless dialog box, call [Create](#create).  
   
-##  <a name="cdialogimpl__enddialog"></a>  CDialogImpl::EndDialog  
+##  <a name="enddialog"></a>  CDialogImpl::EndDialog  
  Destroys a modal dialog box.  
   
 ```  
@@ -234,7 +234,7 @@ BOOL EndDialog(int nRetCode);
   
 ### Parameters  
  `nRetCode`  
- [in] The value to be returned by [CDialogImpl::DoModal](#cdialogimpl__domodal).  
+ [in] The value to be returned by [CDialogImpl::DoModal](#domodal).  
   
 ### Return Value  
  **TRUE** if the dialog box is destroyed; otherwise, **FALSE**.  
@@ -243,9 +243,9 @@ BOOL EndDialog(int nRetCode);
  `EndDialog` must be called through the dialog procedure. After the dialog box is destroyed, Windows uses the value of `nRetCode` as the return value for `DoModal`, which created the dialog box.  
   
 > [!NOTE]
->  Do not call `EndDialog` to destroy a modeless dialog box. Call [CWindow::DestroyWindow](../../atl/reference/cwindow-class.md#cwindow__destroywindow) instead.  
+>  Do not call `EndDialog` to destroy a modeless dialog box. Call [CWindow::DestroyWindow](../../atl/reference/cwindow-class.md#destroywindow) instead.  
   
-##  <a name="cdialogimpl__getdialogproc"></a>  CDialogImpl::GetDialogProc  
+##  <a name="getdialogproc"></a>  CDialogImpl::GetDialogProc  
  Returns `DialogProc`, the current dialog box procedure.  
   
 ```  
@@ -261,7 +261,7 @@ virtual WNDPROC GetDialogProc();
 ### Remarks  
  Override this method to replace the dialog procedure with your own.  
   
-##  <a name="cdialogimpl__mapdialogrect"></a>  CDialogImpl::MapDialogRect  
+##  <a name="mapdialogrect"></a>  CDialogImpl::MapDialogRect  
  Converts (maps) the dialog-box units of the specified rectangle to screen units (pixels).  
   
 ```  
@@ -281,7 +281,7 @@ BOOL MapDialogRect(LPRECT lpRect);
 ### Remarks  
  The function replaces the coordinates in the specified `RECT` structure with the converted coordinates, which allows the structure to be used to create a dialog box or position a control within a dialog box.  
   
-##  <a name="cdialogimpl__onfinalmessage"></a>  CDialogImpl::OnFinalMessage  
+##  <a name="onfinalmessage"></a>  CDialogImpl::OnFinalMessage  
  Called after receiving the last message (typically `WM_NCDESTROY`).  
   
 ```  
@@ -298,7 +298,7 @@ virtual void OnFinalMessage(HWND hWnd);
 ### Remarks  
  Note that if you want to automatically delete your object upon the window destruction, you can call `delete this;` here.  
   
-##  <a name="cdialogimpl__startdialogproc"></a>  CDialogImpl::StartDialogProc  
+##  <a name="startdialogproc"></a>  CDialogImpl::StartDialogProc  
  Called only once, when the first message is received, to process messages sent to the dialog box.  
   
 ```  

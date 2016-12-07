@@ -61,20 +61,20 @@ template<int t_nBufferLength = 128>  class CA2CAEX
   
 |Name|Description|  
 |----------|-----------------|  
-|[CA2CAEX::CA2CAEX](#ca2caex__ca2caex)|The constructor.|  
-|[CA2CAEX::~CA2CAEX](#ca2caex___dtorca2caex)|The destructor.|  
+|[CA2CAEX::CA2CAEX](#ca2caex)|The constructor.|  
+|[CA2CAEX::~CA2CAEX](#dtor)|The destructor.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CA2CAEX::operator LPCSTR](#ca2caex__operator_lpcstr)|Conversion operator.|  
+|[CA2CAEX::operator LPCSTR](#operator_lpcstr)|Conversion operator.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CA2CAEX::m_psz](#ca2caex__m_psz)|The data member that stores the source string.|  
+|[CA2CAEX::m_psz](#m_psz)|The data member that stores the source string.|  
   
 ## Remarks  
  Unless extra functionality is required, use `CA2CTEX`, `CT2CAEX`, or **CA2CA** in your own code.  
@@ -99,7 +99,7 @@ template<int t_nBufferLength = 128>  class CA2CAEX
 ## Requirements  
  **Header:** atlconv.h  
   
-##  <a name="ca2caex__ca2caex"></a>  CA2CAEX::CA2CAEX  
+##  <a name="ca2caex"></a>  CA2CAEX::CA2CAEX  
  The constructor.  
   
 ```
@@ -118,7 +118,7 @@ CA2CAEX(LPCSTR psz,  UINT nCodePage) throw(...);
 ### Remarks  
  Creates the buffer required for the translation.  
   
-##  <a name="ca2caex___dtorca2caex"></a>  CA2CAEX::~CA2CAEX  
+##  <a name="dtor"></a>  CA2CAEX::~CA2CAEX  
  The destructor.  
   
 ```
@@ -128,14 +128,14 @@ CA2CAEX(LPCSTR psz,  UINT nCodePage) throw(...);
 ### Remarks  
  Frees the allocated buffer.  
   
-##  <a name="ca2caex__m_psz"></a>  CA2CAEX::m_psz  
+##  <a name="m_psz"></a>  CA2CAEX::m_psz  
  The data member that stores the source string.  
   
 ```
 LPCSTR m_psz;
 ```  
   
-##  <a name="ca2caex__operator_lpcstr"></a>  CA2CAEX::operator LPCSTR  
+##  <a name="operator_lpcstr"></a>  CA2CAEX::operator LPCSTR  
  Conversion operator.  
   
 ```operator LPCSTR() const throw();

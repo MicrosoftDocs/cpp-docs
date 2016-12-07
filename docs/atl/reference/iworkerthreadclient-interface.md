@@ -54,8 +54,8 @@ __interface IWorkerThreadClient
   
 |||  
 |-|-|  
-|[CloseHandle](#iworkerthreadclient__closehandle)|Implement this method to close the handle associated with this object.|  
-|[Execute](#iworkerthreadclient__execute)|Implement this method to execute code when the handle associated with this object becomes signaled.|  
+|[CloseHandle](#closehandle)|Implement this method to close the handle associated with this object.|  
+|[Execute](#execute)|Implement this method to execute code when the handle associated with this object becomes signaled.|  
   
 ## Remarks  
  Implement this interface when you have code that needs to execute on a worker thread in response to a handle becoming signaled.  
@@ -63,7 +63,7 @@ __interface IWorkerThreadClient
 ## Requirements  
  **Header:** atlutil.h  
   
-##  <a name="iworkerthreadclient__closehandle"></a>  IWorkerThreadClient::CloseHandle  
+##  <a name="closehandle"></a>  IWorkerThreadClient::CloseHandle  
  Implement this method to close the handle associated with this object.  
   
 ```
@@ -78,14 +78,14 @@ HRESULT CloseHandle(HANDLE    hHandle);
  Return S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- The handle passed to this method was previously associated with this object by a call to [CWorkerThread::AddHandle](../../atl/reference/cworkerthread-class.md#cworkerthread__addhandle).  
+ The handle passed to this method was previously associated with this object by a call to [CWorkerThread::AddHandle](../../atl/reference/cworkerthread-class.md#addhandle).  
   
 ### Example  
  The following code shows a simple implementation of `IWorkerThreadClient::CloseHandle`.  
   
  [!code-cpp[NVC_ATL_Utilities#135](../../atl/codesnippet/cpp/iworkerthreadclient-interface_1.cpp)]  
   
-##  <a name="iworkerthreadclient__execute"></a>  IWorkerThreadClient::Execute  
+##  <a name="execute"></a>  IWorkerThreadClient::Execute  
  Implement this method to execute code when the handle associated with this object becomes signaled.  
   
 ```
@@ -106,7 +106,7 @@ dwParam,
  Return S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- The handle and DWORD/pointer passed to this method were previously associated with this object by a call to [CWorkerThread::AddHandle](../../atl/reference/cworkerthread-class.md#cworkerthread__addhandle).  
+ The handle and DWORD/pointer passed to this method were previously associated with this object by a call to [CWorkerThread::AddHandle](../../atl/reference/cworkerthread-class.md#addhandle).  
   
 ### Example  
  The following code shows a simple implementation of `IWorkerThreadClient::Execute`.  

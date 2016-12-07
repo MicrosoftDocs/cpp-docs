@@ -54,27 +54,27 @@ class CAtlFileMappingBase
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlFileMappingBase::CAtlFileMappingBase](#catlfilemappingbase__catlfilemappingbase)|The constructor.|  
-|[CAtlFileMappingBase::~CAtlFileMappingBase](#catlfilemappingbase___dtorcatlfilemappingbase)|The destructor.|  
+|[CAtlFileMappingBase::CAtlFileMappingBase](#catlfilemappingbase)|The constructor.|  
+|[CAtlFileMappingBase::~CAtlFileMappingBase](#dtor)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlFileMappingBase::CopyFrom](#catlfilemappingbase__copyfrom)|Call this method to copy from a file-mapping object.|  
-|[CAtlFileMappingBase::GetData](#catlfilemappingbase__getdata)|Call this method to get the data from a file-mapping object.|  
-|[CAtlFileMappingBase::GetHandle](#catlfilemappingbase__gethandle)|Call this method to return the file handle.|  
-|[CAtlFileMappingBase::GetMappingSize](#catlfilemappingbase__getmappingsize)|Call this method to get the mapping size from a file-mapping object.|  
-|[CAtlFileMappingBase::MapFile](#catlfilemappingbase__mapfile)|Call this method to create a file-mapping object.|  
-|[CAtlFileMappingBase::MapSharedMem](#catlfilemappingbase__mapsharedmem)|Call this method to create a file-mapping object that permits full access to all processes.|  
-|[CAtlFileMappingBase::OpenMapping](#catlfilemappingbase__openmapping)|Call this method to return a handle to the file-mapping object.|  
-|[CAtlFileMappingBase::Unmap](#catlfilemappingbase__unmap)|Call this method to unmap a file-mapping object.|  
+|[CAtlFileMappingBase::CopyFrom](#copyfrom)|Call this method to copy from a file-mapping object.|  
+|[CAtlFileMappingBase::GetData](#getdata)|Call this method to get the data from a file-mapping object.|  
+|[CAtlFileMappingBase::GetHandle](#gethandle)|Call this method to return the file handle.|  
+|[CAtlFileMappingBase::GetMappingSize](#getmappingsize)|Call this method to get the mapping size from a file-mapping object.|  
+|[CAtlFileMappingBase::MapFile](#mapfile)|Call this method to create a file-mapping object.|  
+|[CAtlFileMappingBase::MapSharedMem](#mapsharedmem)|Call this method to create a file-mapping object that permits full access to all processes.|  
+|[CAtlFileMappingBase::OpenMapping](#openmapping)|Call this method to return a handle to the file-mapping object.|  
+|[CAtlFileMappingBase::Unmap](#unmap)|Call this method to unmap a file-mapping object.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlFileMappingBase::operator =](#catlfilemappingbase__operator_eq)|Sets the current file-mapping object to another file-mapping object.|  
+|[CAtlFileMappingBase::operator =](#operator_eq)|Sets the current file-mapping object to another file-mapping object.|  
   
 ## Remarks  
  File mapping is the association of a file's contents with a portion of the virtual address space of a process. This class provides methods for creating file-mapping objects that permit programs to easily access and share data.  
@@ -84,7 +84,7 @@ class CAtlFileMappingBase
 ## Requirements  
  **Header:** atlfile.h  
   
-##  <a name="catlfilemappingbase__catlfilemappingbase"></a>  CAtlFileMappingBase::CAtlFileMappingBase  
+##  <a name="catlfilemappingbase"></a>  CAtlFileMappingBase::CAtlFileMappingBase  
  The constructor.  
   
 ```
@@ -98,12 +98,12 @@ CAtlFileMappingBase(CAtlFileMappingBase& orig);
  The original file-mapping object to copy to create the new object.  
   
 ### Remarks  
- Creates a new file-mapping object, optionally using an existing object. It is still necessary to call [CAtlFileMappingBase::MapFile](#catlfilemappingbase__mapfile) to open or create the file-mapping object for a particular file.  
+ Creates a new file-mapping object, optionally using an existing object. It is still necessary to call [CAtlFileMappingBase::MapFile](#mapfile) to open or create the file-mapping object for a particular file.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#71](../../atl/codesnippet/cpp/catlfilemappingbase-class_1.cpp)]  
   
-##  <a name="catlfilemappingbase___dtorcatlfilemappingbase"></a>  CAtlFileMappingBase::~CAtlFileMappingBase  
+##  <a name="dtor"></a>  CAtlFileMappingBase::~CAtlFileMappingBase  
  The destructor.  
   
 ```
@@ -111,9 +111,9 @@ CAtlFileMappingBase(CAtlFileMappingBase& orig);
 ```  
   
 ### Remarks  
- Frees any resources allocated by the class and calls the [CAtlFileMappingBase::Unmap](#catlfilemappingbase__unmap) method.  
+ Frees any resources allocated by the class and calls the [CAtlFileMappingBase::Unmap](#unmap) method.  
   
-##  <a name="catlfilemappingbase__copyfrom"></a>  CAtlFileMappingBase::CopyFrom  
+##  <a name="copyfrom"></a>  CAtlFileMappingBase::CopyFrom  
  Call this method to copy from a file-mapping object.  
   
 ```
@@ -127,7 +127,7 @@ HRESULT CopyFrom(CAtlFileMappingBase& orig) throw();
 ### Return Value  
  Returns `S_OK` on success, or an error `HRESULT` on failure.  
   
-##  <a name="catlfilemappingbase__getdata"></a>  CAtlFileMappingBase::GetData  
+##  <a name="getdata"></a>  CAtlFileMappingBase::GetData  
  Call this method to get the data from a file-mapping object.  
   
 ```
@@ -137,7 +137,7 @@ void* GetData() const throw();
 ### Return Value  
  Returns a pointer to the data.  
   
-##  <a name="catlfilemappingbase__gethandle"></a>  CAtlFileMappingBase::GetHandle  
+##  <a name="gethandle"></a>  CAtlFileMappingBase::GetHandle  
  Call this method to return a handle to the file-mapping object.  
   
 ```
@@ -147,7 +147,7 @@ HANDLE GetHandle() throw ();
 ### Return Value  
  Returns a handle to the file-mapping object.  
   
-##  <a name="catlfilemappingbase__getmappingsize"></a>  CAtlFileMappingBase::GetMappingSize  
+##  <a name="getmappingsize"></a>  CAtlFileMappingBase::GetMappingSize  
  Call this method to get the mapping size from a file-mapping object.  
   
 ```
@@ -158,9 +158,9 @@ SIZE_T GetMappingSize() throw();
  Returns the mapping size.  
   
 ### Example  
- See the example for [CAtlFileMappingBase::CAtlFileMappingBase](#catlfilemappingbase__catlfilemappingbase).  
+ See the example for [CAtlFileMappingBase::CAtlFileMappingBase](#catlfilemappingbase).  
   
-##  <a name="catlfilemappingbase__mapfile"></a>  CAtlFileMappingBase::MapFile  
+##  <a name="mapfile"></a>  CAtlFileMappingBase::MapFile  
  Call this method to open or create a file-mapping object for the specified file.  
   
 ```
@@ -195,9 +195,9 @@ HRESULT MapFile(
  After a file-mapping object has been created, the size of the file must not exceed the size of the file-mapping object; if it does, not all of the file's contents will be available for sharing. For more details, see [CreateFileMapping](http://msdn.microsoft.com/library/windows/desktop/aa366537) and [MapViewOfFileEx](http://msdn.microsoft.com/library/windows/desktop/aa366763) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- See the example for [CAtlFileMappingBase::CAtlFileMappingBase](#catlfilemappingbase__catlfilemappingbase).  
+ See the example for [CAtlFileMappingBase::CAtlFileMappingBase](#catlfilemappingbase).  
   
-##  <a name="catlfilemappingbase__mapsharedmem"></a>  CAtlFileMappingBase::MapSharedMem  
+##  <a name="mapsharedmem"></a>  CAtlFileMappingBase::MapSharedMem  
  Call this method to create a file-mapping object that permits full access to all processes.  
   
 ```
@@ -235,7 +235,7 @@ HRESULT MapSharedMem(
 ### Remarks  
  **MapShareMem** allows an existing file-mapping object, created by [CreateFileMapping](http://msdn.microsoft.com/library/windows/desktop/aa366537), to be shared between processes.  
   
-##  <a name="catlfilemappingbase__openmapping"></a>  CAtlFileMappingBase::OpenMapping  
+##  <a name="openmapping"></a>  CAtlFileMappingBase::OpenMapping  
  Call this method to open a named file-mapping object for the specified file.  
   
 ```
@@ -265,7 +265,7 @@ HRESULT OpenMapping(
 ### Remarks  
  In debug builds, an assertion error will occur if the input parameters are invalid.  
   
-##  <a name="catlfilemappingbase__operator_eq"></a>  CAtlFileMappingBase::operator =  
+##  <a name="operator_eq"></a>  CAtlFileMappingBase::operator =  
  Sets the current file-mapping object to another file-mapping object.  
   
 ```
@@ -279,7 +279,7 @@ CAtlFileMappingBase& operator=(CAtlFileMappingBase& orig);
 ### Return Value  
  Returns a reference to the current object.  
   
-##  <a name="catlfilemappingbase__unmap"></a>  CAtlFileMappingBase::Unmap  
+##  <a name="unmap"></a>  CAtlFileMappingBase::Unmap  
  Call this method to unmap a file-mapping object.  
   
 ```

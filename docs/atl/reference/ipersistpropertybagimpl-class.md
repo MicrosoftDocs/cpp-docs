@@ -60,10 +60,10 @@ template <class T>  class ATL_NO_VTABLE IPersistPropertyBagImpl :  public IPersi
   
 |Name|Description|  
 |----------|-----------------|  
-|[IPersistPropertyBagImpl::GetClassID](#ipersistpropertybagimpl__getclassid)|Retrieves the object's CLSID.|  
-|[IPersistPropertyBagImpl::InitNew](#ipersistpropertybagimpl__initnew)|Initializes a newly created object. The ATL implementation returns `S_OK`.|  
-|[IPersistPropertyBagImpl::Load](#ipersistpropertybagimpl__load)|Loads the object's properties from a client-supplied property bag.|  
-|[IPersistPropertyBagImpl::Save](#ipersistpropertybagimpl__save)|Saves the object's properties into a client-supplied property bag.|  
+|[IPersistPropertyBagImpl::GetClassID](#getclassid)|Retrieves the object's CLSID.|  
+|[IPersistPropertyBagImpl::InitNew](#initnew)|Initializes a newly created object. The ATL implementation returns `S_OK`.|  
+|[IPersistPropertyBagImpl::Load](#load)|Loads the object's properties from a client-supplied property bag.|  
+|[IPersistPropertyBagImpl::Save](#save)|Saves the object's properties into a client-supplied property bag.|  
   
 ## Remarks  
  The [IPersistPropertyBag](https://msdn.microsoft.com/library/aa768205.aspx) interface allows an object to save its properties to a client-supplied property bag. Class `IPersistPropertyBagImpl` provides a default implementation of this interface and implements **IUnknown** by sending information to the dump device in debug builds.  
@@ -80,7 +80,7 @@ template <class T>  class ATL_NO_VTABLE IPersistPropertyBagImpl :  public IPersi
 ## Requirements  
  **Header:** atlcom.h  
   
-##  <a name="ipersistpropertybagimpl__getclassid"></a>  IPersistPropertyBagImpl::GetClassID  
+##  <a name="getclassid"></a>  IPersistPropertyBagImpl::GetClassID  
  Retrieves the object's CLSID.  
   
 ```
@@ -90,7 +90,7 @@ STDMETHOD(GetClassID)(CLSID* pClassID);
 ### Remarks  
  See [IPersist::GetClassID](http://msdn.microsoft.com/library/windows/desktop/ms688664) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ipersistpropertybagimpl__initnew"></a>  IPersistPropertyBagImpl::InitNew  
+##  <a name="initnew"></a>  IPersistPropertyBagImpl::InitNew  
  Initializes a newly created object.  
   
 ```
@@ -103,7 +103,7 @@ STDMETHOD(InitNew)();
 ### Remarks  
  See [IPersistPropertyBag::InitNew](https://msdn.microsoft.com/library/aa768204.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ipersistpropertybagimpl__load"></a>  IPersistPropertyBagImpl::Load  
+##  <a name="load"></a>  IPersistPropertyBagImpl::Load  
  Loads the object's properties from a client-supplied property bag.  
   
 ```
@@ -115,7 +115,7 @@ STDMETHOD(Load)(LPPROPERTYBAG pPropBag,  LPERRORLOG pErrorLog);
   
  See [IPersistPropertyBag::Load](https://msdn.microsoft.com/library/aa768206.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ipersistpropertybagimpl__save"></a>  IPersistPropertyBagImpl::Save  
+##  <a name="save"></a>  IPersistPropertyBagImpl::Save  
  Saves the object's properties into a client-supplied property bag.  
   
 ```

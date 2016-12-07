@@ -56,8 +56,8 @@ template <class TKey,  class TVal>  class CSimpleMapEqualHelper
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleMapEqualHelper::IsEqualKey](#csimplemapequalhelper__isequalkey)|(Static) Tests two keys for equality.|  
-|[CSimpleMapEqualHelper::IsEqualValue](#csimplemapequalhelper__isequalvalue)|(Static) Tests two values for equality.|  
+|[CSimpleMapEqualHelper::IsEqualKey](#isequalkey)|(Static) Tests two keys for equality.|  
+|[CSimpleMapEqualHelper::IsEqualValue](#isequalvalue)|(Static) Tests two values for equality.|  
   
 ## Remarks  
  This traits class is a supplement to the `CSimpleMap` class. It provides methods for comparing two `CSimpleMap` object elements (specifically, the key and value components) for equality. By default, the keys and values are compared using `operator==()`, but if the map contains complex data types that lack their own equality operator, this class can be overridden to provide the extra required functionality.  
@@ -65,7 +65,7 @@ template <class TKey,  class TVal>  class CSimpleMapEqualHelper
 ## Requirements  
  **Header:** atlsimpcoll.h  
   
-##  <a name="csimplemapequalhelper__isequalkey"></a>  CSimpleMapEqualHelper::IsEqualKey  
+##  <a name="isequalkey"></a>  CSimpleMapEqualHelper::IsEqualKey  
  Tests two keys for equality.  
   
 ```
@@ -82,7 +82,7 @@ static bool IsEqualKey(const TKey& k1,  const TKey& k2);
 ### Return Value  
  Returns true if the keys are equal, false otherwise.  
   
-##  <a name="csimplemapequalhelper__isequalvalue"></a>  CSimpleMapEqualHelper::IsEqualValue  
+##  <a name="isequalvalue"></a>  CSimpleMapEqualHelper::IsEqualValue  
  Tests two values for equality.  
   
 ```

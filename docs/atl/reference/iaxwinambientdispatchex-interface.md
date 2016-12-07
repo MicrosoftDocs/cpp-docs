@@ -54,7 +54,7 @@ MIDL_INTERFACE("B2D0778B - AC99 - 4c58 - A5C8 - E7724E5316B5") IAxWinAmbientDisp
   
 |||  
 |-|-|  
-|[SetAmbientDispatch](#iaxwinambientdispatchex__setambientdispatch)|This method is called to supplement the default ambient property interface with a user-defined interface.|  
+|[SetAmbientDispatch](#setambientdispatch)|This method is called to supplement the default ambient property interface with a user-defined interface.|  
   
 ## Remarks  
  Include this interface in ATL applications that are statically linked to ATL and host ActiveX Controls, especially ActiveX Controls that have Ambient Properties. Not including this interface will generate this assertion: "Did you forget to pass the LIBID to CComModule::Init"  
@@ -76,7 +76,7 @@ MIDL_INTERFACE("B2D0778B - AC99 - 4c58 - A5C8 - E7724E5316B5") IAxWinAmbientDisp
 |Type Library|ATL.dll|  
 |C++|atliface.h (also included in ATLBase.h)|  
   
-##  <a name="iaxwinambientdispatchex__setambientdispatch"></a>  IAxWinAmbientDispatchEx::SetAmbientDispatch  
+##  <a name="setambientdispatch"></a>  IAxWinAmbientDispatchEx::SetAmbientDispatch  
  This method is called to supplement the default ambient property interface with a user-defined interface.  
   
 ```

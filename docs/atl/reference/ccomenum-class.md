@@ -75,7 +75,7 @@ template <class Base,
   
 -   Create an instance of the `CComObject` specialization.  
   
--   Initialize the enumerator object by calling [CComEnumImpl::Init](../../atl/reference/ccomenumimpl-class.md#ccomenumimpl__init).  
+-   Initialize the enumerator object by calling [CComEnumImpl::Init](../../atl/reference/ccomenumimpl-class.md#init).  
   
 -   Return the enumerator interface to the client.  
   

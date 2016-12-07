@@ -54,8 +54,8 @@ class CComClassFactoryAutoThread : public IClassFactory,   public CComObjectRoot
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComClassFactoryAutoThread::CreateInstance](#ccomclassfactoryautothread__createinstance)|Creates an object of the specified CLSID.|  
-|[CComClassFactoryAutoThread::LockServer](#ccomclassfactoryautothread__lockserver)|Locks the class factory in memory.|  
+|[CComClassFactoryAutoThread::CreateInstance](#createinstance)|Creates an object of the specified CLSID.|  
+|[CComClassFactoryAutoThread::LockServer](#lockserver)|Locks the class factory in memory.|  
   
 ## Remarks  
  `CComClassFactoryAutoThread` is similar to [CComClassFactory](../../atl/reference/ccomclassfactory-class.md), but allows objects to be created in multiple apartments. To take advantage of this support, derive your EXE module from [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md).  
@@ -76,7 +76,7 @@ class CComClassFactoryAutoThread : public IClassFactory,   public CComObjectRoot
 ## Requirements  
  **Header:** atlcom.h  
   
-##  <a name="ccomclassfactoryautothread__createinstance"></a>  CComClassFactoryAutoThread::CreateInstance  
+##  <a name="createinstance"></a>  CComClassFactoryAutoThread::CreateInstance  
  Creates an object of the specified CLSID and retrieves an interface pointer to this object.  
   
 ```
@@ -101,7 +101,7 @@ STDMETHODIMP CreateInstance(LPUNKNOWN pUnkOuter,
 ### Remarks  
  If your module derives from [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md), `CreateInstance` first selects a thread to create the object in the associated apartment.  
   
-##  <a name="ccomclassfactoryautothread__lockserver"></a>  CComClassFactoryAutoThread::LockServer  
+##  <a name="lockserver"></a>  CComClassFactoryAutoThread::LockServer  
  Increments and decrements the module lock count by calling **_Module::Lock** and **_Module::Unlock**, respectively.  
   
 ```

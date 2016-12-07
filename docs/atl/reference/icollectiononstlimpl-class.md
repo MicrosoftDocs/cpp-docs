@@ -66,18 +66,18 @@ template <class T, class CollType, class ItemType, class CopyItem, class EnumTyp
   
 |Name|Description|  
 |----------|-----------------|  
-|[ICollectionOnSTLImpl::get__NewEnum](#icollectiononstlimpl__get__newenum)|Returns an enumerator object for the collection.|  
-|[ICollectionOnSTLImpl::getcount](#icollectiononstlimpl__get_count)|Returns the number of elements in the collection.|  
-|[ICollectionOnSTLImpl::get_Item](#icollectiononstlimpl__get_item)|Returns the requested item from the collection.|  
+|[ICollectionOnSTLImpl::get__NewEnum](#newenum)|Returns an enumerator object for the collection.|  
+|[ICollectionOnSTLImpl::getcount](#get_count)|Returns the number of elements in the collection.|  
+|[ICollectionOnSTLImpl::get_Item](#get_item)|Returns the requested item from the collection.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[ICollectionOnSTLImpl::m_coll](#icollectiononstlimpl__m_coll)|The collection.|  
+|[ICollectionOnSTLImpl::m_coll](#m_coll)|The collection.|  
   
 ## Remarks  
- This class provides the implementation for three methods of a collection interface: [getcount](#icollectiononstlimpl__get_count), [get_Item](#icollectiononstlimpl__get_item), and [get__NewEnum](#icollectiononstlimpl__get__newenum).  
+ This class provides the implementation for three methods of a collection interface: [getcount](#get_count), [get_Item](#get_item), and [get__NewEnum](#newenum).  
   
  To use this class:  
   
@@ -90,7 +90,7 @@ template <class T, class CollType, class ItemType, class CopyItem, class EnumTyp
 > [!NOTE]
 >  If the collection interface is a dual interface, derive your class from [IDispatchImpl](../../atl/reference/idispatchimpl-class.md), passing the `ICollectionOnSTLImpl` specialization as the first template parameter if you want ATL to provide the implementation of the `IDispatch` methods.  
   
--   Add items to the [m_coll](#icollectiononstlimpl__m_coll) member to populate the collection.  
+-   Add items to the [m_coll](#m_coll) member to populate the collection.  
   
  For more information and examples, see [ATL Collections and Enumerators](../../atl/atl-collections-and-enumerators.md).  
   
@@ -102,7 +102,7 @@ template <class T, class CollType, class ItemType, class CopyItem, class EnumTyp
 ## Requirements  
  **Header:** atlcom.h  
   
-##  <a name="icollectiononstlimpl__get_count"></a>  ICollectionOnSTLImpl::getcount  
+##  <a name="get_count"></a>  ICollectionOnSTLImpl::getcount  
  This method returns the number of items in the collection.  
   
 ```
@@ -116,7 +116,7 @@ STDMETHOD(getcount)(long* pcount);
 ### Return Value  
  A standard `HRESULT` value.  
   
-##  <a name="icollectiononstlimpl__get_item"></a>  ICollectionOnSTLImpl::get_Item  
+##  <a name="get_item"></a>  ICollectionOnSTLImpl::get_Item  
  This method returns the specified item from the collection.  
   
 ```
@@ -135,9 +135,9 @@ STDMETHOD(get_Item)(long Index,
  A standard `HRESULT` value.  
   
 ### Remarks  
- The item is obtained by copying the data at the specified position in [m_coll](#icollectiononstlimpl__m_coll) using the copy method of the [copy policy class](../../atl/atl-copy-policy-classes.md) passed as a template argument in the `ICollectionOnSTLImpl` specialization.  
+ The item is obtained by copying the data at the specified position in [m_coll](#m_coll) using the copy method of the [copy policy class](../../atl/atl-copy-policy-classes.md) passed as a template argument in the `ICollectionOnSTLImpl` specialization.  
   
-##  <a name="icollectiononstlimpl__get__newenum"></a>  ICollectionOnSTLImpl::get__NewEnum  
+##  <a name="newenum"></a>  ICollectionOnSTLImpl::get__NewEnum  
  Returns an enumerator object for the collection.  
   
 ```
@@ -154,7 +154,7 @@ STDMETHOD(get__NewEnum)(IUnknown** ppUnk);
 ### Remarks  
  The newly created enumerator maintains an iterator on the original collection, `m_coll`, (so no copy is made) and holds a COM reference on the collection object to ensure that the collection remains alive while there are outstanding enumerators.  
   
-##  <a name="icollectiononstlimpl__m_coll"></a>  ICollectionOnSTLImpl::m_coll  
+##  <a name="m_coll"></a>  ICollectionOnSTLImpl::m_coll  
  This member holds the items represented by the collection.  
   
 ```

@@ -60,11 +60,11 @@ template<class T>  class IRunnableObjectImpl
   
 |Name|Description|  
 |----------|-----------------|  
-|[IRunnableObjectImpl::GetRunningClass](#irunnableobjectimpl__getrunningclass)|Returns the CLSID of the running control. The ATL implementation sets the CLSID to `GUID_NULL` and returns **E_UNEXPECTED**.|  
-|[IRunnableObjectImpl::IsRunning](#irunnableobjectimpl__isrunning)|Determines if the control is running. The ATL implementation returns **TRUE**.|  
-|[IRunnableObjectImpl::LockRunning](#irunnableobjectimpl__lockrunning)|Locks the control into the running state. The ATL implementation returns `S_OK`.|  
-|[IRunnableObjectImpl::Run](#irunnableobjectimpl__run)|Forces the control to run. The ATL implementation returns `S_OK`.|  
-|[IRunnableObjectImpl::SetContainedObject](#irunnableobjectimpl__setcontainedobject)|Indicates that the control is embedded. The ATL implementation returns `S_OK`.|  
+|[IRunnableObjectImpl::GetRunningClass](#getrunningclass)|Returns the CLSID of the running control. The ATL implementation sets the CLSID to `GUID_NULL` and returns **E_UNEXPECTED**.|  
+|[IRunnableObjectImpl::IsRunning](#isrunning)|Determines if the control is running. The ATL implementation returns **TRUE**.|  
+|[IRunnableObjectImpl::LockRunning](#lockrunning)|Locks the control into the running state. The ATL implementation returns `S_OK`.|  
+|[IRunnableObjectImpl::Run](#run)|Forces the control to run. The ATL implementation returns `S_OK`.|  
+|[IRunnableObjectImpl::SetContainedObject](#setcontainedobject)|Indicates that the control is embedded. The ATL implementation returns `S_OK`.|  
   
 ## Remarks  
  The [IRunnableObject](http://msdn.microsoft.com/library/windows/desktop/ms692783) interface enables a container to determine if a control is running, force it to run, or lock it into the running state. Class `IRunnableObjectImpl` provides a default implementation of this interface and implements **IUnknown** by sending information to the dump device in debug builds.  
@@ -79,7 +79,7 @@ template<class T>  class IRunnableObjectImpl
 ## Requirements  
  **Header:** atlctl.h  
   
-##  <a name="irunnableobjectimpl__getrunningclass"></a>  IRunnableObjectImpl::GetRunningClass  
+##  <a name="getrunningclass"></a>  IRunnableObjectImpl::GetRunningClass  
  Returns the CLSID of the running control.  
   
 ```
@@ -92,7 +92,7 @@ HRESULT GetRunningClass(LPCLSID lpClsid);
 ### Remarks  
  See [IRunnableObject::GetRunningClass](http://msdn.microsoft.com/library/windows/desktop/ms693734) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="irunnableobjectimpl__isrunning"></a>  IRunnableObjectImpl::IsRunning  
+##  <a name="isrunning"></a>  IRunnableObjectImpl::IsRunning  
  Determines if the control is running.  
   
 ```
@@ -105,7 +105,7 @@ virtual BOOL IsRunning();
 ### Remarks  
  See [IRunnableObject::IsRunning](http://msdn.microsoft.com/library/windows/desktop/ms678496) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="irunnableobjectimpl__lockrunning"></a>  IRunnableObjectImpl::LockRunning  
+##  <a name="lockrunning"></a>  IRunnableObjectImpl::LockRunning  
  Locks the control into the running state.  
   
 ```
@@ -118,7 +118,7 @@ HRESULT LockRunning(BOOL fLock,  BOOL fLastUnlockCloses);
 ### Remarks  
  See [IRunnableObject::LockRunning](http://msdn.microsoft.com/library/windows/desktop/ms693361) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="irunnableobjectimpl__run"></a>  IRunnableObjectImpl::Run  
+##  <a name="run"></a>  IRunnableObjectImpl::Run  
  Forces the control to run.  
   
 ```
@@ -131,7 +131,7 @@ HRESULT Run(LPBINDCTX lpbc);
 ### Remarks  
  See [IRunnableObject::Run](http://msdn.microsoft.com/library/windows/desktop/ms694517) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="irunnableobjectimpl__setcontainedobject"></a>  IRunnableObjectImpl::SetContainedObject  
+##  <a name="setcontainedobject"></a>  IRunnableObjectImpl::SetContainedObject  
  Indicates that the control is embedded.  
   
 ```
