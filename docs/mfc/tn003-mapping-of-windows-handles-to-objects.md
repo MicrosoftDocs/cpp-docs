@@ -92,7 +92,7 @@ myWnd.Detach();
 ```  
   
 ## More About Temporary Objects  
- Temporary objects are created whenever `FromHandle` is given a handle that does not already have a wrapper object. These temporary objects are detached from their handle and deleted by the `DeleteTempMap` functions. By default [CWinThread::OnIdle](../mfc/reference/cwinthread-class.md#cwinthread__onidle) automatically calls `DeleteTempMap` for each class that supports temporary handle maps. This means that you cannot assume a pointer to a temporary object will be valid past the point of exit from the function where the pointer was obtained.  
+ Temporary objects are created whenever `FromHandle` is given a handle that does not already have a wrapper object. These temporary objects are detached from their handle and deleted by the `DeleteTempMap` functions. By default [CWinThread::OnIdle](../mfc/reference/cwinthread-class.md#onidle) automatically calls `DeleteTempMap` for each class that supports temporary handle maps. This means that you cannot assume a pointer to a temporary object will be valid past the point of exit from the function where the pointer was obtained.  
   
 ## Wrapper Objects and Multiple Threads  
  Both temporary and permanent objects are maintained on a per-thread basis. That is, one thread cannot access another thread's C++ wrapper objects, regardless of whether it is temporary or permanent.  

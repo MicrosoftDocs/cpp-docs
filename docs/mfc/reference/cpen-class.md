@@ -52,23 +52,23 @@ class CPen : public CGdiObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPen::CPen](#cpen__cpen)|Constructs a `CPen` object.|  
+|[CPen::CPen](#cpen)|Constructs a `CPen` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPen::CreatePen](#cpen__createpen)|Creates a logical cosmetic or geometric pen with the specified style, width, and brush attributes, and attaches it to the `CPen` object.|  
-|[CPen::CreatePenIndirect](#cpen__createpenindirect)|Creates a pen with the style, width, and color given in a [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041) structure, and attaches it to the `CPen` object.|  
-|[CPen::FromHandle](#cpen__fromhandle)|Returns a pointer to a `CPen` object when given a Windows `HPEN`.|  
-|[CPen::GetExtLogPen](#cpen__getextlogpen)|Gets an [EXTLOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd162711) underlying structure.|  
-|[CPen::GetLogPen](#cpen__getlogpen)|Gets a [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041) underlying structure.|  
+|[CPen::CreatePen](#createpen)|Creates a logical cosmetic or geometric pen with the specified style, width, and brush attributes, and attaches it to the `CPen` object.|  
+|[CPen::CreatePenIndirect](#createpenindirect)|Creates a pen with the style, width, and color given in a [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041) structure, and attaches it to the `CPen` object.|  
+|[CPen::FromHandle](#fromhandle)|Returns a pointer to a `CPen` object when given a Windows `HPEN`.|  
+|[CPen::GetExtLogPen](#getextlogpen)|Gets an [EXTLOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd162711) underlying structure.|  
+|[CPen::GetLogPen](#getlogpen)|Gets a [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041) underlying structure.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPen::operator HPEN](#cpen__operator_hpen)|Returns the Windows handle attached to the `CPen` object.|  
+|[CPen::operator HPEN](#operator_hpen)|Returns the Windows handle attached to the `CPen` object.|  
   
 ## Remarks  
  For more information on using `CPen`, see [Graphic Objects](../../mfc/graphic-objects.md).  
@@ -83,7 +83,7 @@ class CPen : public CGdiObject
 ## Requirements  
  **Header:** afxwin.h  
   
-##  <a name="cpen__cpen"></a>  CPen::CPen  
+##  <a name="cpen"></a>  CPen::CPen  
  Constructs a `CPen` object.  
   
 ```  
@@ -177,7 +177,7 @@ CPen(
 ### Example  
  [!code-cpp[NVC_MFCDocView#99](../../mfc/codesnippet/cpp/cpen-class_1.cpp)]  
   
-##  <a name="cpen__createpen"></a>  CPen::CreatePen  
+##  <a name="createpen"></a>  CPen::CreatePen  
  Creates a logical cosmetic or geometric pen with the specified style, width, and brush attributes, and attaches it to the `CPen` object.  
   
 ```  
@@ -197,7 +197,7 @@ BOOL CreatePen(
   
 ### Parameters  
  `nPenStyle`  
- Specifies the style for the pen. For a list of possible values, see the `nPenStyle` parameter in the [CPen](#cpen__cpen) constructor.  
+ Specifies the style for the pen. For a list of possible values, see the `nPenStyle` parameter in the [CPen](#cpen) constructor.  
   
  `nWidth`  
  Specifies the width of the pen.  
@@ -228,7 +228,7 @@ BOOL CreatePen(
   
  If a pen has the **PS_INSIDEFRAME** style and a color that does not match a color in the logical color table, the pen is drawn with a dithered color. The **PS_SOLID** pen style cannot be used to create a pen with a dithered color. The style **PS_INSIDEFRAME** is identical to **PS_SOLID** if the pen width is less than or equal to 1.  
   
- The second version of `CreatePen` initializes a logical cosmetic or geometric pen that has the specified style, width, and brush attributes. The width of a cosmetic pen is always 1; the width of a geometric pen is always specified in world units. After an application creates a logical pen, it can select that pen into a device context by calling the [CDC::SelectObject](../../mfc/reference/cdc-class.md#cdc__selectobject) function. After a pen is selected into a device context, it can be used to draw lines and curves.  
+ The second version of `CreatePen` initializes a logical cosmetic or geometric pen that has the specified style, width, and brush attributes. The width of a cosmetic pen is always 1; the width of a geometric pen is always specified in world units. After an application creates a logical pen, it can select that pen into a device context by calling the [CDC::SelectObject](../../mfc/reference/cdc-class.md#selectobject) function. After a pen is selected into a device context, it can be used to draw lines and curves.  
   
 -   If `nPenStyle` is **PS_COSMETIC** and **PS_USERSTYLE**, the entries in the `lpStyle` array specify lengths of dashes and spaces in style units. A style unit is defined by the device in which the pen is used to draw a line.  
   
@@ -236,12 +236,12 @@ BOOL CreatePen(
   
 -   If `nPenStyle` is **PS_ALTERNATE**, the style unit is ignored and every other pixel is set.  
   
- When an application no longer requires a given pen, it should call the [CGdiObject::DeleteObject](../../mfc/reference/cgdiobject-class.md#cgdiobject__deleteobject) member function or destroy the `CPen` object so the resource is no longer in use. An application should not delete a pen when the pen is selected in a device context.  
+ When an application no longer requires a given pen, it should call the [CGdiObject::DeleteObject](../../mfc/reference/cgdiobject-class.md#deleteobject) member function or destroy the `CPen` object so the resource is no longer in use. An application should not delete a pen when the pen is selected in a device context.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#100](../../mfc/codesnippet/cpp/cpen-class_2.cpp)]  
   
-##  <a name="cpen__createpenindirect"></a>  CPen::CreatePenIndirect  
+##  <a name="createpenindirect"></a>  CPen::CreatePenIndirect  
  Initializes a pen that has the style, width, and color given in the structure pointed to by `lpLogPen`.  
   
 ```  
@@ -263,7 +263,7 @@ BOOL CreatePenIndirect(LPLOGPEN lpLogPen);
 ### Example  
  [!code-cpp[NVC_MFCDocView#101](../../mfc/codesnippet/cpp/cpen-class_3.cpp)]  
   
-##  <a name="cpen__fromhandle"></a>  CPen::FromHandle  
+##  <a name="fromhandle"></a>  CPen::FromHandle  
  Returns a pointer to a `CPen` object given a handle to a Windows GDI pen object.  
   
 ```  
@@ -283,7 +283,7 @@ static CPen* PASCAL FromHandle(HPEN hPen);
 ### Example  
  [!code-cpp[NVC_MFCDocView#105](../../mfc/codesnippet/cpp/cpen-class_4.cpp)]  
   
-##  <a name="cpen__getextlogpen"></a>  CPen::GetExtLogPen  
+##  <a name="getextlogpen"></a>  CPen::GetExtLogPen  
  Gets an **EXTLOGPEN** underlying structure.  
   
 ```  
@@ -315,7 +315,7 @@ int GetExtLogPen(EXTLOGPEN* pLogPen);
   
  [!code-cpp[NVC_MFCDocView#102](../../mfc/codesnippet/cpp/cpen-class_5.cpp)]  
   
-##  <a name="cpen__getlogpen"></a>  CPen::GetLogPen  
+##  <a name="getlogpen"></a>  CPen::GetLogPen  
  Gets a `LOGPEN` underlying structure.  
   
 ```  
@@ -345,7 +345,7 @@ int GetLogPen(LOGPEN* pLogPen);
   
  [!code-cpp[NVC_MFCDocView#103](../../mfc/codesnippet/cpp/cpen-class_6.cpp)]  
   
-##  <a name="cpen__operator_hpen"></a>  CPen::operator HPEN  
+##  <a name="operator_hpen"></a>  CPen::operator HPEN  
  Gets the attached Windows GDI handle of the `CPen` object.  
   
 ```  

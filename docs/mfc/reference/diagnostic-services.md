@@ -64,7 +64,7 @@ The Microsoft Foundation Class Library supplies many diagnostic services that ma
   
  [!code-cpp[NVC_MFCCObjectSample#14](../../mfc/codesnippet/cpp/diagnostic-services_1.cpp)]  
   
- in your implementation file, all calls to **new** will store the filename and line number where the memory allocation took place. The function [CMemoryState::DumpAllObjectsSince](cmemorystate-structure.md#cmemorystate__dumpallobjectssince) will display this extra information, allowing you to identify memory leaks. Refer also to the class [CDumpContext](../../mfc/reference/cdumpcontext-class.md) for additional information on diagnostic output.  
+ in your implementation file, all calls to **new** will store the filename and line number where the memory allocation took place. The function [CMemoryState::DumpAllObjectsSince](cmemorystate-structure.md#dumpallobjectssince) will display this extra information, allowing you to identify memory leaks. Refer also to the class [CDumpContext](../../mfc/reference/cdumpcontext-class.md) for additional information on diagnostic output.  
   
  In addition, the C run-time library also supports a set of diagnostic functions you can use to debug your applications. For more information, see [Debug Routines](../../c-runtime-library/debug-routines.md) in the Run-Time Library Reference.  
   
@@ -88,7 +88,7 @@ The Microsoft Foundation Class Library supplies many diagnostic services that ma
 |[afxMemDF](#afxmemdf)|Global variable that controls the behavior of the debugging memory allocator.|  
 |[AfxCheckError](#afxcheckerror)|Global variable used to test the passed **SCODE** to see if it is an error and, if so, throws the appropriate error.|  
 |[AfxCheckMemory](#afxcheckmemory)|Checks the integrity of all currently allocated memory.|  
-|[AfxDump](#afxdump__cdumpcontext_in_mfc_)|If called while in the debugger, dumps the state of an object while debugging.|  
+|[AfxDump](#cdumpcontext_in_mfc_)|If called while in the debugger, dumps the state of an object while debugging.|  
 |[AfxDumpStack](#afxdumpstack)|Generate an image of the current stack. This function is always linked statically.|  
 |[AfxEnableMemoryLeakDump](#afxenablememoryleakdump)|Enables the memory leak dump.|  
 |[AfxEnableMemoryTracking](#afxenablememorytracking)|Turns memory tracking on and off.|  
@@ -194,7 +194,7 @@ ASSERT_VALID(pObject)
 ### Remarks  
  You can use `DEBUG_NEW` everywhere in your program that you would ordinarily use the **new** operator to allocate heap storage.  
   
- In debug mode (when the **_DEBUG** symbol is defined), `DEBUG_NEW` keeps track of the filename and line number for each object that it allocates. Then, when you use the [CMemoryState::DumpAllObjectsSince](cmemorystate-structure.md#cmemorystate__dumpallobjectssince) member function, each object allocated with `DEBUG_NEW` is shown with the filename and line number where it was allocated.  
+ In debug mode (when the **_DEBUG** symbol is defined), `DEBUG_NEW` keeps track of the filename and line number for each object that it allocates. Then, when you use the [CMemoryState::DumpAllObjectsSince](cmemorystate-structure.md#dumpallobjectssince) member function, each object allocated with `DEBUG_NEW` is shown with the filename and line number where it was allocated.  
   
  To use `DEBUG_NEW`, insert the following directive into your source files:  
   
@@ -261,7 +261,7 @@ VERIFY(booleanExpression)
 ### Example  
  [!code-cpp[NVC_MFCDocView#198](../../mfc/codesnippet/cpp/diagnostic-services_7.cpp)]  
   
-##  <a name="afxdump__cdumpcontext_in_mfc_"></a>  afxDump (CDumpContext in MFC)  
+##  <a name="cdumpcontext_in_mfc_"></a>  afxDump (CDumpContext in MFC)  
  Provides basic object-dumping capability in your application.  
   
 ```   
@@ -346,7 +346,7 @@ BOOL  AfxCheckMemory();
 ### Example  
  [!code-cpp[NVC_MFCCObjectSample#26](../../mfc/codesnippet/cpp/diagnostic-services_11.cpp)]  
   
-##  <a name="afxdump__mfc_"></a>  AfxDump (MFC)  
+##  <a name="mfc_"></a>  AfxDump (MFC)  
  Call this function while in the debugger to dump the state of an object while debugging.  
   
 ```   

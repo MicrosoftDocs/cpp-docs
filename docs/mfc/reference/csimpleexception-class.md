@@ -49,13 +49,13 @@ class AFX_NOVTABLE CSimpleException : public CException
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleException::CSimpleException](#csimpleexception__csimpleexception)|The constructor.|  
+|[CSimpleException::CSimpleException](#csimpleexception)|The constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleException::GetErrorMessage](#csimpleexception__geterrormessage)|Provides text about an error that has occurred.|  
+|[CSimpleException::GetErrorMessage](#geterrormessage)|Provides text about an error that has occurred.|  
   
 ## Remarks  
  `CSimpleException` is the base class for resource-critical MFC exceptions and handles the ownership and initialization of an error message. The following classes use `CSimpleException` as their base class:  
@@ -82,7 +82,7 @@ class AFX_NOVTABLE CSimpleException : public CException
 ## Requirements  
  **Header:** afx.h  
   
-##  <a name="csimpleexception__csimpleexception"></a>  CSimpleException::CSimpleException  
+##  <a name="csimpleexception"></a>  CSimpleException::CSimpleException  
  The constructor.  
   
 ```  
@@ -99,7 +99,7 @@ explicit CSimpleException(BOOL bAutoDelete);
 ### Remarks  
  You would normally never need to call this constructor directly. A function that throws an exception should create an instance of a `CException`-derived class and call its constructor, or it should use one of the MFC throw functions, such as [AfxThrowFileException]--brokenlink--(exception-processing.md#afxthrowfileexception), to throw a predefined type.  
   
-##  <a name="csimpleexception__geterrormessage"></a>  CSimpleException::GetErrorMessage  
+##  <a name="geterrormessage"></a>  CSimpleException::GetErrorMessage  
  Call this member function to provide text about an error that has occurred.  
   
 ```  
@@ -123,7 +123,7 @@ virtual BOOL GetErrorMessage(
  Nonzero if the function is successful; otherwise 0 if no error message text is available.  
   
 ### Remarks  
- For more information, see [CException::GetErrorMessage](../../mfc/reference/cfileexception-class.md#cfileexception__geterrormessage).  
+ For more information, see [CException::GetErrorMessage](../../mfc/reference/cfileexception-class.md#geterrormessage).  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

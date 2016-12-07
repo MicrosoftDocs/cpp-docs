@@ -43,7 +43,7 @@ You can develop an MFC ActiveX control as an Automation server for the purpose o
   
 2.  [Add methods](../mfc/mfc-activex-controls-methods.md).  
   
-3.  Override [IsInvokeAllowed](../mfc/reference/colecontrol-class.md#colecontrol__isinvokeallowed). For more information, see Knowledge Base article Q146120.  
+3.  Override [IsInvokeAllowed](../mfc/reference/colecontrol-class.md#isinvokeallowed). For more information, see Knowledge Base article Q146120.  
   
 4.  Build the control.  
   

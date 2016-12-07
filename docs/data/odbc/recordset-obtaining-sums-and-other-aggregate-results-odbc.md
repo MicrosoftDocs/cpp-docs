@@ -79,7 +79,7 @@ m_strFilter = "sales > 10 GROUP BY SALESPERSON_ID";
   
 1.  Create a recordset as described in [Adding an MFC ODBC Consumer](../../mfc/reference/adding-an-mfc-odbc-consumer.md) containing the columns from which you want to obtain aggregate results.  
   
-2.  Modify the [DoFieldExchange](../../mfc/reference/crecordset-class.md#crecordset__dofieldexchange) function for the recordset. Replace the string representing the column name (the second argument of the [RFX](../../data/odbc/record-field-exchange-using-rfx.md) function calls) with a string representing the aggregation function on the column. For example, replace:  
+2.  Modify the [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) function for the recordset. Replace the string representing the column name (the second argument of the [RFX](../../data/odbc/record-field-exchange-using-rfx.md) function calls) with a string representing the aggregation function on the column. For example, replace:  
   
     ```  
     RFX_Long(pFX, "Sales", m_lSales);  

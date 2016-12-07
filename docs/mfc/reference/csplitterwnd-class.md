@@ -54,49 +54,49 @@ class CSplitterWnd : public CWnd
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSplitterWnd::CSplitterWnd](#csplitterwnd__csplitterwnd)|Call to construct a `CSplitterWnd` object.|  
+|[CSplitterWnd::CSplitterWnd](#csplitterwnd)|Call to construct a `CSplitterWnd` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSplitterWnd::ActivateNext](#csplitterwnd__activatenext)|Performs the Next Pane or Previous Pane command.|  
-|[CSplitterWnd::CanActivateNext](#csplitterwnd__canactivatenext)|Checks to see if the Next Pane or Previous Pane command is currently possible.|  
-|[CSplitterWnd::Create](#csplitterwnd__create)|Call to create a dynamic splitter window and attach it to the `CSplitterWnd` object.|  
-|[CSplitterWnd::CreateScrollBarCtrl](#csplitterwnd__createscrollbarctrl)|Creates a shared scroll bar control.|  
-|[CSplitterWnd::CreateStatic](#csplitterwnd__createstatic)|Call to create a static splitter window and attach it to the `CSplitterWnd` object.|  
-|[CSplitterWnd::CreateView](#csplitterwnd__createview)|Call to create a pane in a splitter window.|  
-|[CSplitterWnd::DeleteColumn](#csplitterwnd__deletecolumn)|Deletes a column from the splitter window.|  
-|[CSplitterWnd::DeleteRow](#csplitterwnd__deleterow)|Deletes a row from the splitter window.|  
-|[CSplitterWnd::DeleteView](#csplitterwnd__deleteview)|Deletes a view from the splitter window.|  
-|[CSplitterWnd::DoKeyboardSplit](#csplitterwnd__dokeyboardsplit)|Performs the keyboard split command, usually "Window Split."|  
-|[CSplitterWnd::DoScroll](#csplitterwnd__doscroll)|Performs synchronized scrolling of split windows.|  
-|[CSplitterWnd::DoScrollBy](#csplitterwnd__doscrollby)|Scrolls split windows by a given number of pixels.|  
-|[CSplitterWnd::GetActivePane](#csplitterwnd__getactivepane)|Determines the active pane from the focus or active view in the frame.|  
-|[CSplitterWnd::GetColumnCount](#csplitterwnd__getcolumncount)|Returns the current pane column count.|  
-|[CSplitterWnd::GetColumnInfo](#csplitterwnd__getcolumninfo)|Returns information on the specified column.|  
-|[CSplitterWnd::GetPane](#csplitterwnd__getpane)|Returns the pane at the specified row and column.|  
-|[CSplitterWnd::GetRowCount](#csplitterwnd__getrowcount)|Returns the current pane row count.|  
-|[CSplitterWnd::GetRowInfo](#csplitterwnd__getrowinfo)|Returns information on the specified row.|  
-|[CSplitterWnd::GetScrollStyle](#csplitterwnd__getscrollstyle)|Returns the shared scroll-bar style.|  
-|[CSplitterWnd::IdFromRowCol](#csplitterwnd__idfromrowcol)|Returns the child window ID of the pane at the specified row and column.|  
-|[CSplitterWnd::IsChildPane](#csplitterwnd__ischildpane)|Call to determine whether the window is currently a child pane of this splitter window.|  
-|[CSplitterWnd::IsTracking](#csplitterwnd__istracking)|Determines if splitter bar is currently being moved.|  
-|[CSplitterWnd::RecalcLayout](#csplitterwnd__recalclayout)|Call to redisplay the splitter window after adjusting row or column size.|  
-|[CSplitterWnd::SetActivePane](#csplitterwnd__setactivepane)|Sets a pane to be the active one in the frame.|  
-|[CSplitterWnd::SetColumnInfo](#csplitterwnd__setcolumninfo)|Call to set the specified column information.|  
-|[CSplitterWnd::SetRowInfo](#csplitterwnd__setrowinfo)|Call to set the specified row information.|  
-|[CSplitterWnd::SetScrollStyle](#csplitterwnd__setscrollstyle)|Specifies the new scroll-bar style for the splitter window's shared scroll-bar support.|  
-|[CSplitterWnd::SplitColumn](#csplitterwnd__splitcolumn)|Indicates where a frame window splits vertically.|  
-|[CSplitterWnd::SplitRow](#csplitterwnd__splitrow)|Indicates where a frame window splits horizontally.|  
+|[CSplitterWnd::ActivateNext](#activatenext)|Performs the Next Pane or Previous Pane command.|  
+|[CSplitterWnd::CanActivateNext](#canactivatenext)|Checks to see if the Next Pane or Previous Pane command is currently possible.|  
+|[CSplitterWnd::Create](#create)|Call to create a dynamic splitter window and attach it to the `CSplitterWnd` object.|  
+|[CSplitterWnd::CreateScrollBarCtrl](#createscrollbarctrl)|Creates a shared scroll bar control.|  
+|[CSplitterWnd::CreateStatic](#createstatic)|Call to create a static splitter window and attach it to the `CSplitterWnd` object.|  
+|[CSplitterWnd::CreateView](#createview)|Call to create a pane in a splitter window.|  
+|[CSplitterWnd::DeleteColumn](#deletecolumn)|Deletes a column from the splitter window.|  
+|[CSplitterWnd::DeleteRow](#deleterow)|Deletes a row from the splitter window.|  
+|[CSplitterWnd::DeleteView](#deleteview)|Deletes a view from the splitter window.|  
+|[CSplitterWnd::DoKeyboardSplit](#dokeyboardsplit)|Performs the keyboard split command, usually "Window Split."|  
+|[CSplitterWnd::DoScroll](#doscroll)|Performs synchronized scrolling of split windows.|  
+|[CSplitterWnd::DoScrollBy](#doscrollby)|Scrolls split windows by a given number of pixels.|  
+|[CSplitterWnd::GetActivePane](#getactivepane)|Determines the active pane from the focus or active view in the frame.|  
+|[CSplitterWnd::GetColumnCount](#getcolumncount)|Returns the current pane column count.|  
+|[CSplitterWnd::GetColumnInfo](#getcolumninfo)|Returns information on the specified column.|  
+|[CSplitterWnd::GetPane](#getpane)|Returns the pane at the specified row and column.|  
+|[CSplitterWnd::GetRowCount](#getrowcount)|Returns the current pane row count.|  
+|[CSplitterWnd::GetRowInfo](#getrowinfo)|Returns information on the specified row.|  
+|[CSplitterWnd::GetScrollStyle](#getscrollstyle)|Returns the shared scroll-bar style.|  
+|[CSplitterWnd::IdFromRowCol](#idfromrowcol)|Returns the child window ID of the pane at the specified row and column.|  
+|[CSplitterWnd::IsChildPane](#ischildpane)|Call to determine whether the window is currently a child pane of this splitter window.|  
+|[CSplitterWnd::IsTracking](#istracking)|Determines if splitter bar is currently being moved.|  
+|[CSplitterWnd::RecalcLayout](#recalclayout)|Call to redisplay the splitter window after adjusting row or column size.|  
+|[CSplitterWnd::SetActivePane](#setactivepane)|Sets a pane to be the active one in the frame.|  
+|[CSplitterWnd::SetColumnInfo](#setcolumninfo)|Call to set the specified column information.|  
+|[CSplitterWnd::SetRowInfo](#setrowinfo)|Call to set the specified row information.|  
+|[CSplitterWnd::SetScrollStyle](#setscrollstyle)|Specifies the new scroll-bar style for the splitter window's shared scroll-bar support.|  
+|[CSplitterWnd::SplitColumn](#splitcolumn)|Indicates where a frame window splits vertically.|  
+|[CSplitterWnd::SplitRow](#splitrow)|Indicates where a frame window splits horizontally.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSplitterWnd::OnDraw](#csplitterwnd__ondraw)|Called by the framework to draw the splitter window.|  
-|[CSplitterWnd::OnDrawSplitter](#csplitterwnd__ondrawsplitter)|Renders an image of a split window.|  
-|[CSplitterWnd::OnInvertTracker](#csplitterwnd__oninverttracker)|Renders the image of a split window to be the same size and shape as the frame window.|  
+|[CSplitterWnd::OnDraw](#ondraw)|Called by the framework to draw the splitter window.|  
+|[CSplitterWnd::OnDrawSplitter](#ondrawsplitter)|Renders an image of a split window.|  
+|[CSplitterWnd::OnInvertTracker](#oninverttracker)|Renders the image of a split window to be the same size and shape as the frame window.|  
   
 ## Remarks  
  A pane is usually an application-specific object derived from [CView](../../mfc/reference/cview-class.md), but it can be any [CWnd](../../mfc/reference/cwnd-class.md) object that has the appropriate child window ID.  
@@ -105,13 +105,13 @@ class CSplitterWnd : public CWnd
   
 1.  Embed a `CSplitterWnd` member variable in the parent frame.  
   
-2.  Override the parent frame's [CFrameWnd::OnCreateClient](../../mfc/reference/cframewnd-class.md#cframewnd__oncreateclient) member function.  
+2.  Override the parent frame's [CFrameWnd::OnCreateClient](../../mfc/reference/cframewnd-class.md#oncreateclient) member function.  
   
-3.  From within the overridden `OnCreateClient`, call the [Create](#csplitterwnd__create) or [CreateStatic](#csplitterwnd__createstatic) member function of `CSplitterWnd`.  
+3.  From within the overridden `OnCreateClient`, call the [Create](#create) or [CreateStatic](#createstatic) member function of `CSplitterWnd`.  
   
  Call the **Create** member function to create a dynamic splitter window. A dynamic splitter window typically is used to create and scroll a number of individual panes, or views, of the same document. The framework automatically creates an initial pane for the splitter; then the framework creates, resizes, and disposes of additional panes as the user operates the splitter window's controls.  
   
- When you call **Create**, you specify a minimum row height and column width that determine when the panes are too small to be fully displayed. After you call **Create**, you can adjust these minimums by calling the [SetColumnInfo](#csplitterwnd__setcolumninfo) and [SetRowInfo](#csplitterwnd__setrowinfo) member functions.  
+ When you call **Create**, you specify a minimum row height and column width that determine when the panes are too small to be fully displayed. After you call **Create**, you can adjust these minimums by calling the [SetColumnInfo](#setcolumninfo) and [SetRowInfo](#setrowinfo) member functions.  
   
  Also use the `SetColumnInfo` and `SetRowInfo` member functions to set an "ideal" width for a column and "ideal" height for a row. When the framework displays a splitter window, it first displays the parent frame, then the splitter window. The framework then lays out the panes in columns and rows according to their ideal dimensions, working from the upper-left to the lower-right corner of the splitter window's client area.  
   
@@ -121,7 +121,7 @@ class CSplitterWnd : public CWnd
   
  You must specifically create all the static splitter's panes when you create the static splitter. Make sure you create all the panes before the parent frame's `OnCreateClient` member function returns, or the framework will not display the window correctly.  
   
- The `CreateStatic` member function automatically initializes a static splitter with a minimum row height and column width of 0. After you call **Create**, adjust these minimums by calling the [SetColumnInfo](#csplitterwnd__setcolumninfo) and [SetRowInfo](#csplitterwnd__setrowinfo) member functions. Also use `SetColumnInfo` and `SetRowInfo` after you call `CreateStatic` to indicate desired ideal pane dimensions.  
+ The `CreateStatic` member function automatically initializes a static splitter with a minimum row height and column width of 0. After you call **Create**, adjust these minimums by calling the [SetColumnInfo](#setcolumninfo) and [SetRowInfo](#setrowinfo) member functions. Also use `SetColumnInfo` and `SetRowInfo` after you call `CreateStatic` to indicate desired ideal pane dimensions.  
   
  The individual panes of a static splitter often belong to different classes. For examples of static splitter windows, see the graphics editor and the Windows File Manager.  
   
@@ -153,7 +153,7 @@ class CSplitterWnd : public CWnd
 ## Requirements  
  **Header:** afxext.h  
   
-##  <a name="csplitterwnd__activatenext"></a>  CSplitterWnd::ActivateNext  
+##  <a name="activatenext"></a>  CSplitterWnd::ActivateNext  
  Called by the framework to perform the Next Pane or Previous Pane command.  
   
 ```  
@@ -167,7 +167,7 @@ virtual void ActivateNext(BOOL bPrev = FALSE);
 ### Remarks  
  This member function is a high level command that is used by the [CView](../../mfc/reference/cview-class.md) class to delegate to the `CSplitterWnd` implementation.  
   
-##  <a name="csplitterwnd__canactivatenext"></a>  CSplitterWnd::CanActivateNext  
+##  <a name="canactivatenext"></a>  CSplitterWnd::CanActivateNext  
  Called by the framework to check to see if the Next Pane or Previous Pane command is currently possible.  
   
 ```  
@@ -184,7 +184,7 @@ virtual BOOL CanActivateNext(BOOL bPrev = FALSE);
 ### Remarks  
  This member function is a high level command that is used by the [CView](../../mfc/reference/cview-class.md) class to delegate to the `CSplitterWnd` implementation.  
   
-##  <a name="csplitterwnd__create"></a>  CSplitterWnd::Create  
+##  <a name="create"></a>  CSplitterWnd::Create  
  To create a dynamic splitter window, call the **Create** member function.  
   
 ```  
@@ -228,20 +228,20 @@ virtual BOOL Create(
   
 1.  Embed a `CSplitterWnd` member variable in the parent frame.  
   
-2.  Override the parent frame's [CFrameWnd::OnCreateClient](../../mfc/reference/cframewnd-class.md#cframewnd__oncreateclient) member function.  
+2.  Override the parent frame's [CFrameWnd::OnCreateClient](../../mfc/reference/cframewnd-class.md#oncreateclient) member function.  
   
 3.  Call the **Create** member function from within the overridden `OnCreateClient`.  
   
  When you create a splitter window from within a parent frame, pass the parent frame's `pContext` parameter to the splitter window. Otherwise, this parameter can be **NULL**.  
   
- The initial minimum row height and column width of a dynamic splitter window are set by the `sizeMin` parameter. These minimums, which determine whether a pane is too small to be shown in its entirety, can be changed with the [SetRowInfo](#csplitterwnd__setrowinfo) and [SetColumnInfo](#csplitterwnd__setcolumninfo) member functions.  
+ The initial minimum row height and column width of a dynamic splitter window are set by the `sizeMin` parameter. These minimums, which determine whether a pane is too small to be shown in its entirety, can be changed with the [SetRowInfo](#setrowinfo) and [SetColumnInfo](#setcolumninfo) member functions.  
   
  For more on dynamic splitter windows, see "Splitter Windows" in the article [Multiple Document Types, Views, and Frame Windows](../../mfc/multiple-document-types-views-and-frame-windows.md), [Technical Note 29](../../mfc/tn029-splitter-windows.md), and the [CSplitterWnd](../../mfc/reference/csplitterwnd-class.md) class overview.  
   
 ### Example  
  [!code-cpp[NVC_MFCWindowing#125](../../mfc/reference/codesnippet/cpp/csplitterwnd-class_1.cpp)]  
   
-##  <a name="csplitterwnd__createscrollbarctrl"></a>  CSplitterWnd::CreateScrollBarCtrl  
+##  <a name="createscrollbarctrl"></a>  CSplitterWnd::CreateScrollBarCtrl  
  Called by the framework to create a shared scroll bar control.  
   
 ```  
@@ -263,7 +263,7 @@ virtual BOOL CreateScrollBarCtrl(
 ### Remarks  
  Override `CreateScrollBarCtrl` to include extra controls next to a scroll bar. The default behavior is to create normal Windows scroll bar controls.  
   
-##  <a name="csplitterwnd__createstatic"></a>  CSplitterWnd::CreateStatic  
+##  <a name="createstatic"></a>  CSplitterWnd::CreateStatic  
  To create a static splitter window, call the `CreateStatic` member function.  
   
 ```  
@@ -301,19 +301,19 @@ virtual BOOL CreateStatic(
   
 2.  Override the parent frame's `OnCreateClient` member function.  
   
-3.  Call the `CreateStatic` member function from within the overridden [CFrameWnd::OnCreateClient](../../mfc/reference/cframewnd-class.md#cframewnd__oncreateclient).  
+3.  Call the `CreateStatic` member function from within the overridden [CFrameWnd::OnCreateClient](../../mfc/reference/cframewnd-class.md#oncreateclient).  
   
  A static splitter window contains a fixed number of panes, often from different classes.  
   
- When you create a static splitter window, you must at the same time create all its panes. The [CreateView](#csplitterwnd__createview) member function is usually used for this purpose, but you can create other nonview classes as well.  
+ When you create a static splitter window, you must at the same time create all its panes. The [CreateView](#createview) member function is usually used for this purpose, but you can create other nonview classes as well.  
   
- The initial minimum row height and column width for a static splitter window is 0. These minimums, which determine when a pane is too small to be shown in its entirety, can be changed with the [SetRowInfo](#csplitterwnd__setrowinfo) and [SetColumnInfo](#csplitterwnd__setcolumninfo) member functions.  
+ The initial minimum row height and column width for a static splitter window is 0. These minimums, which determine when a pane is too small to be shown in its entirety, can be changed with the [SetRowInfo](#setrowinfo) and [SetColumnInfo](#setcolumninfo) member functions.  
   
  To add scroll bars to a static splitter window, add the **WS_HSCROLL** and **WS_VSCROLL** styles to `dwStyle`.  
   
  See "Splitter Windows" in the article [Multiple Document Types, Views, and Frame Windows](../../mfc/multiple-document-types-views-and-frame-windows.md), [Technical Note 29](../../mfc/tn029-splitter-windows.md), and the [CSplitterWnd](../../mfc/reference/csplitterwnd-class.md) class overview for more on static splitter windows.  
   
-##  <a name="csplitterwnd__createview"></a>  CSplitterWnd::CreateView  
+##  <a name="createview"></a>  CSplitterWnd::CreateView  
  Creates the panes for a static splitter window.  
   
 ```  
@@ -339,7 +339,7 @@ virtual BOOL CreateView(
  Specifies the initial size of the new view.  
   
  `pContext`  
- A pointer to a creation context used to create the view (usually the `pContext` passed into the parent frame's overridden [CFrameWnd::OnCreateClient](../../mfc/reference/cframewnd-class.md#cframewnd__oncreateclient) member function in which the splitter window is being created).  
+ A pointer to a creation context used to create the view (usually the `pContext` passed into the parent frame's overridden [CFrameWnd::OnCreateClient](../../mfc/reference/cframewnd-class.md#oncreateclient) member function in which the splitter window is being created).  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -352,7 +352,7 @@ virtual BOOL CreateView(
 ### Example  
  [!code-cpp[NVC_MFCWindowing#4](../../mfc/reference/codesnippet/cpp/csplitterwnd-class_2.cpp)]  
   
-##  <a name="csplitterwnd__csplitterwnd"></a>  CSplitterWnd::CSplitterWnd  
+##  <a name="csplitterwnd"></a>  CSplitterWnd::CSplitterWnd  
  Call to construct a `CSplitterWnd` object.  
   
 ```  
@@ -360,9 +360,9 @@ CSplitterWnd();
 ```  
   
 ### Remarks  
- Construct a `CSplitterWnd` object in two steps. First, call the constructor, which creates the `CSplitterWnd` object, and then call the [Create](#csplitterwnd__create) member function, which creates the splitter window and attaches it to the `CSplitterWnd` object.  
+ Construct a `CSplitterWnd` object in two steps. First, call the constructor, which creates the `CSplitterWnd` object, and then call the [Create](#create) member function, which creates the splitter window and attaches it to the `CSplitterWnd` object.  
   
-##  <a name="csplitterwnd__deletecolumn"></a>  CSplitterWnd::DeleteColumn  
+##  <a name="deletecolumn"></a>  CSplitterWnd::DeleteColumn  
  Deletes a column from the splitter window.  
   
 ```  
@@ -374,9 +374,9 @@ virtual void DeleteColumn(int colDelete);
  Specifies the column to be deleted.  
   
 ### Remarks  
- This member function is called by the framework to implement the logic of the dynamic splitter window (that is, if the splitter window has the **SPLS_DYNAMIC_SPLIT** style). It can be customized, along with the virtual function [CreateView](#csplitterwnd__createview), to implement more advanced dynamic splitters.  
+ This member function is called by the framework to implement the logic of the dynamic splitter window (that is, if the splitter window has the **SPLS_DYNAMIC_SPLIT** style). It can be customized, along with the virtual function [CreateView](#createview), to implement more advanced dynamic splitters.  
   
-##  <a name="csplitterwnd__deleterow"></a>  CSplitterWnd::DeleteRow  
+##  <a name="deleterow"></a>  CSplitterWnd::DeleteRow  
  Deletes a row from the splitter window.  
   
 ```  
@@ -388,9 +388,9 @@ virtual void DeleteRow(int rowDelete);
  Specifies the row to be deleted.  
   
 ### Remarks  
- This member function is called by the framework to implement the logic of the dynamic splitter window (that is, if the splitter window has the **SPLS_DYNAMIC_SPLIT** style). It can be customized, along with the virtual function [CreateView](#csplitterwnd__createview), to implement more advanced dynamic splitters.  
+ This member function is called by the framework to implement the logic of the dynamic splitter window (that is, if the splitter window has the **SPLS_DYNAMIC_SPLIT** style). It can be customized, along with the virtual function [CreateView](#createview), to implement more advanced dynamic splitters.  
   
-##  <a name="csplitterwnd__deleteview"></a>  CSplitterWnd::DeleteView  
+##  <a name="deleteview"></a>  CSplitterWnd::DeleteView  
  Deletes a view from the splitter window.  
   
 ```  
@@ -407,11 +407,11 @@ virtual void DeleteView(
  Specifies the splitter window column at which to delete the view.  
   
 ### Remarks  
- If the active view is being deleted, the next view will become active. The default implementation assumes the view will auto delete in [PostNcDestroy](../../mfc/reference/cwnd-class.md#cwnd__postncdestroy).  
+ If the active view is being deleted, the next view will become active. The default implementation assumes the view will auto delete in [PostNcDestroy](../../mfc/reference/cwnd-class.md#postncdestroy).  
   
- This member function is called by the framework to implement the logic of the dynamic splitter window (that is, if the splitter window has the **SPLS_DYNAMIC_SPLIT** style). It can be customized, along with the virtual function [CreateView](#csplitterwnd__createview), to implement more advanced dynamic splitters.  
+ This member function is called by the framework to implement the logic of the dynamic splitter window (that is, if the splitter window has the **SPLS_DYNAMIC_SPLIT** style). It can be customized, along with the virtual function [CreateView](#createview), to implement more advanced dynamic splitters.  
   
-##  <a name="csplitterwnd__dokeyboardsplit"></a>  CSplitterWnd::DoKeyboardSplit  
+##  <a name="dokeyboardsplit"></a>  CSplitterWnd::DoKeyboardSplit  
  Performs the keyboard split command, usually "Window Split."  
   
 ```  
@@ -424,7 +424,7 @@ virtual BOOL DoKeyboardSplit();
 ### Remarks  
  This member function is a high level command that is used by the [CView](../../mfc/reference/cview-class.md) class to delegate to the `CSplitterWnd` implementation.  
   
-##  <a name="csplitterwnd__doscroll"></a>  CSplitterWnd::DoScroll  
+##  <a name="doscroll"></a>  CSplitterWnd::DoScroll  
  Performs synchronized scrolling of split windows.  
   
 ```  
@@ -462,7 +462,7 @@ virtual BOOL DoScroll(
 ### Remarks  
  This member function is called by the framework to perform synchronized scrolling of split windows when the view receives a scroll message. Override to require an action by the user before synchronized scrolling is allowed.  
   
-##  <a name="csplitterwnd__doscrollby"></a>  CSplitterWnd::DoScrollBy  
+##  <a name="doscrollby"></a>  CSplitterWnd::DoScrollBy  
  Scrolls split windows by a given number of pixels.  
   
 ```  
@@ -490,7 +490,7 @@ virtual BOOL DoScrollBy(
   
  Override to require an action by the user before allowing scroll.  
   
-##  <a name="csplitterwnd__getactivepane"></a>  CSplitterWnd::GetActivePane  
+##  <a name="getactivepane"></a>  CSplitterWnd::GetActivePane  
  Determines the active pane from the focus or active view in the frame.  
   
 ```  
@@ -512,7 +512,7 @@ virtual CWnd* GetActivePane(
 ### Remarks  
  This member function is called by the framework to determine the active pane in a splitter window. Override to require an action by the user before getting the active pane.  
   
-##  <a name="csplitterwnd__getcolumncount"></a>  CSplitterWnd::GetColumnCount  
+##  <a name="getcolumncount"></a>  CSplitterWnd::GetColumnCount  
  Returns the current pane column count.  
   
 ```  
@@ -524,7 +524,7 @@ int GetColumnCount() const;
 ### Return Value  
  Returns the current number of columns in the splitter. For a static splitter, this will also be the maximum number of columns.  
   
-##  <a name="csplitterwnd__getcolumninfo"></a>  CSplitterWnd::GetColumnInfo  
+##  <a name="getcolumninfo"></a>  CSplitterWnd::GetColumnInfo  
  Returns information on the specified column.  
   
 ```  
@@ -546,7 +546,7 @@ void GetColumnInfo(
  `cxMin`  
  A reference to an `int` to be set to the current minimum width of the column.  
   
-##  <a name="csplitterwnd__getpane"></a>  CSplitterWnd::GetPane  
+##  <a name="getpane"></a>  CSplitterWnd::GetPane  
  Returns the pane at the specified row and column.  
   
 ```  
@@ -567,7 +567,7 @@ CWnd* GetPane(
 ### Return Value  
  Returns the pane at the specified row and column. The returned pane is usually a [CView](../../mfc/reference/cview-class.md)-derived class.  
   
-##  <a name="csplitterwnd__getrowcount"></a>  CSplitterWnd::GetRowCount  
+##  <a name="getrowcount"></a>  CSplitterWnd::GetRowCount  
  Returns the current pane row count.  
   
 ```  
@@ -579,7 +579,7 @@ int GetRowCount() const;
 ### Return Value  
  Returns the current number of rows in the splitter window. For a static splitter window, this will also be the maximum number of rows.  
   
-##  <a name="csplitterwnd__getrowinfo"></a>  CSplitterWnd::GetRowInfo  
+##  <a name="getrowinfo"></a>  CSplitterWnd::GetRowInfo  
  Returns information on the specified row.  
   
 ```  
@@ -604,7 +604,7 @@ void GetRowInfo(
 ### Remarks  
  Call this member function to obtain information about the specified row. The `cyCur` parameter is filled with the current height of the specified row, and `cyMin` is filled with the minimum height of the row.  
   
-##  <a name="csplitterwnd__getscrollstyle"></a>  CSplitterWnd::GetScrollStyle  
+##  <a name="getscrollstyle"></a>  CSplitterWnd::GetScrollStyle  
  Returns the shared scroll-bar style for the splitter window.  
   
 ```  
@@ -622,7 +622,7 @@ DWORD GetScrollStyle() const;
   
  If zero, the splitter window does not currently manage any shared scroll bars.  
   
-##  <a name="csplitterwnd__idfromrowcol"></a>  CSplitterWnd::IdFromRowCol  
+##  <a name="idfromrowcol"></a>  CSplitterWnd::IdFromRowCol  
  Obtains the child window ID for the pane at the specified row and column.  
   
 ```  
@@ -649,7 +649,7 @@ int IdFromRowCol(
 ### Example  
  [!code-cpp[NVC_MFCWindowing#5](../../mfc/reference/codesnippet/cpp/csplitterwnd-class_3.cpp)]  
   
-##  <a name="csplitterwnd__ischildpane"></a>  CSplitterWnd::IsChildPane  
+##  <a name="ischildpane"></a>  CSplitterWnd::IsChildPane  
  Determines whether `pWnd` is currently a child pane of this splitter window.  
   
 ```  
@@ -679,7 +679,7 @@ BOOL IsChildPane(
   
  This version is now obsolete and should not be used.  
   
-##  <a name="csplitterwnd__istracking"></a>  CSplitterWnd::IsTracking  
+##  <a name="istracking"></a>  CSplitterWnd::IsTracking  
  Call this member function to determine if the splitter bar in the window is currently being moved.  
   
 ```  
@@ -689,7 +689,7 @@ BOOL IsTracking();
 ### Return Value  
  Nonzero if a splitter operation is in progress; otherwise 0.  
   
-##  <a name="csplitterwnd__ondrawsplitter"></a>  CSplitterWnd::OnDrawSplitter  
+##  <a name="ondrawsplitter"></a>  CSplitterWnd::OnDrawSplitter  
  Renders an image of a split window.  
   
 ```  
@@ -701,7 +701,7 @@ virtual void OnDrawSplitter(
   
 ### Parameters  
  `pDC`  
- A pointer to the device context in which to draw. If `pDC` is **NULL**, then [CWnd::RedrawWindow](../../mfc/reference/cwnd-class.md#cwnd__redrawwindow) is called by the framework and no split window is drawn.  
+ A pointer to the device context in which to draw. If `pDC` is **NULL**, then [CWnd::RedrawWindow](../../mfc/reference/cwnd-class.md#redrawwindow) is called by the framework and no split window is drawn.  
   
  `nType`  
  A value of the **enum ESplitType**, which can be one of the following:  
@@ -722,7 +722,7 @@ virtual void OnDrawSplitter(
   
  For more on dynamic splitter windows, see "Splitter Windows" in the article [Multiple Document Types, Views, and Frame Windows](../../mfc/multiple-document-types-views-and-frame-windows.md), [Technical Note 29](../../mfc/tn029-splitter-windows.md), and the [CSplitterWnd](../../mfc/reference/csplitterwnd-class.md) class overview.  
   
-##  <a name="csplitterwnd__oninverttracker"></a>  CSplitterWnd::OnInvertTracker  
+##  <a name="oninverttracker"></a>  CSplitterWnd::OnInvertTracker  
  Renders the image of a split window to be the same size and shape as the frame window.  
   
 ```  
@@ -738,7 +738,7 @@ virtual void OnInvertTracker(const CRect& rect);
   
  For more on dynamic splitter windows, see "Splitter Windows" in the article [Multiple Document Types, Views, and Frame Windows](../../mfc/multiple-document-types-views-and-frame-windows.md), [Technical Note 29](../../mfc/tn029-splitter-windows.md), and the [CSplitterWnd](../../mfc/reference/csplitterwnd-class.md) class overview.  
   
-##  <a name="csplitterwnd__recalclayout"></a>  CSplitterWnd::RecalcLayout  
+##  <a name="recalclayout"></a>  CSplitterWnd::RecalcLayout  
  Call to redisplay the splitter window after adjusting row or column size.  
   
 ```  
@@ -746,14 +746,14 @@ virtual void RecalcLayout();
 ```  
   
 ### Remarks  
- Call this member function to correctly redisplay the splitter window after you have adjusted row and column sizes with the [SetRowInfo](#csplitterwnd__setrowinfo) and [SetColumnInfo](#csplitterwnd__setcolumninfo) member functions. If you change row and column sizes as part of the creation process before the splitter window is visible, it is not necessary to call this member function.  
+ Call this member function to correctly redisplay the splitter window after you have adjusted row and column sizes with the [SetRowInfo](#setrowinfo) and [SetColumnInfo](#setcolumninfo) member functions. If you change row and column sizes as part of the creation process before the splitter window is visible, it is not necessary to call this member function.  
   
  The framework calls this member function whenever the user resizes the splitter window or moves a split.  
   
 ### Example  
-  See the example for [CSplitterWnd::SetColumnInfo](#csplitterwnd__setcolumninfo).  
+  See the example for [CSplitterWnd::SetColumnInfo](#setcolumninfo).  
   
-##  <a name="csplitterwnd__setactivepane"></a>  CSplitterWnd::SetActivePane  
+##  <a name="setactivepane"></a>  CSplitterWnd::SetActivePane  
  Sets a pane to be the active one in the frame.  
   
 ```  
@@ -778,7 +778,7 @@ virtual void SetActivePane(
   
  Specify pane by providing either row and column, **or** by providing `pWnd`.  
   
-##  <a name="csplitterwnd__setcolumninfo"></a>  CSplitterWnd::SetColumnInfo  
+##  <a name="setcolumninfo"></a>  CSplitterWnd::SetColumnInfo  
  Call to set the specified column information.  
   
 ```  
@@ -806,7 +806,7 @@ void SetColumnInfo(
 ### Example  
  [!code-cpp[NVC_MFCWindowing#6](../../mfc/reference/codesnippet/cpp/csplitterwnd-class_4.cpp)]  
   
-##  <a name="csplitterwnd__setrowinfo"></a>  CSplitterWnd::SetRowInfo  
+##  <a name="setrowinfo"></a>  CSplitterWnd::SetRowInfo  
  Call to set the specified row information.  
   
 ```  
@@ -831,7 +831,7 @@ void SetRowInfo(
   
  When the framework displays the splitter window, it lays out the panes in columns and rows according to their ideal dimensions, working from the upper-left to the lower-right corner of the splitter window's client area.  
   
-##  <a name="csplitterwnd__setscrollstyle"></a>  CSplitterWnd::SetScrollStyle  
+##  <a name="setscrollstyle"></a>  CSplitterWnd::SetScrollStyle  
  Specifies the new scroll style for the splitter window's shared scroll-bar support.  
   
 ```  
@@ -847,9 +847,9 @@ void SetScrollStyle(DWORD dwStyle);
 - **WS_VSCROLL** Create/show vertical shared scroll bars.  
   
 ### Remarks  
- Once a scroll bar is created it will not be destroyed even if `SetScrollStyle` is called without that style; instead those scroll bars are hidden. This allows the scroll bars to retain their state even though they are hidden. After calling `SetScrollStyle` it is necessary to call [RecalcLayout](#csplitterwnd__recalclayout) for all the changes to take effect.  
+ Once a scroll bar is created it will not be destroyed even if `SetScrollStyle` is called without that style; instead those scroll bars are hidden. This allows the scroll bars to retain their state even though they are hidden. After calling `SetScrollStyle` it is necessary to call [RecalcLayout](#recalclayout) for all the changes to take effect.  
   
-##  <a name="csplitterwnd__splitcolumn"></a>  CSplitterWnd::SplitColumn  
+##  <a name="splitcolumn"></a>  CSplitterWnd::SplitColumn  
  Indicates where a frame window splits vertically.  
   
 ```  
@@ -866,9 +866,9 @@ virtual BOOL SplitColumn(int cxBefore);
 ### Remarks  
  This member function is called when a vertical splitter window is created. `SplitColumn` indicates the default location where the split occurs.  
   
- `SplitColumn` is called by the framework to implement the logic of the dynamic splitter window (that is, if the splitter window has the **SPLS_DYNAMIC_SPLIT** style). It can be customized, along with the virtual function [CreateView](#csplitterwnd__createview), to implement more advanced dynamic splitters.  
+ `SplitColumn` is called by the framework to implement the logic of the dynamic splitter window (that is, if the splitter window has the **SPLS_DYNAMIC_SPLIT** style). It can be customized, along with the virtual function [CreateView](#createview), to implement more advanced dynamic splitters.  
   
-##  <a name="csplitterwnd__splitrow"></a>  CSplitterWnd::SplitRow  
+##  <a name="splitrow"></a>  CSplitterWnd::SplitRow  
  Indicates where a frame window splits horizontally.  
   
 ```  
@@ -885,9 +885,9 @@ virtual BOOL SplitRow(int cyBefore);
 ### Remarks  
  This member function is called when a horizontal splitter window is created. `SplitRow` indicates the default location where the split occurs.  
   
- `SplitRow` is called by the framework to implement the logic of the dynamic splitter window (that is, if the splitter window has the **SPLS_DYNAMIC_SPLIT** style). It can be customized, along with the virtual function [CreateView](#csplitterwnd__createview), to implement more advanced dynamic splitters.  
+ `SplitRow` is called by the framework to implement the logic of the dynamic splitter window (that is, if the splitter window has the **SPLS_DYNAMIC_SPLIT** style). It can be customized, along with the virtual function [CreateView](#createview), to implement more advanced dynamic splitters.  
   
-##  <a name="csplitterwnd__ondraw"></a>  CSplitterWnd::OnDraw  
+##  <a name="ondraw"></a>  CSplitterWnd::OnDraw  
  Called by the framework to draw the splitter window.  
   
 ```  

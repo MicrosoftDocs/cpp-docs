@@ -70,5 +70,5 @@ typedef struct tagMINMAXINFO {
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CWnd::OnGetMinMaxInfo](../../mfc/reference/cwnd-class.md#cwnd__ongetminmaxinfo)
+ [CWnd::OnGetMinMaxInfo](../../mfc/reference/cwnd-class.md#ongetminmaxinfo)
 

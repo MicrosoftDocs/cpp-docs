@@ -60,7 +60,7 @@ The multiple document interface (MDI) tabbed groups feature enables multiple doc
 ### Using MDI Tabbed Groups  
  The following are tasks commonly performed with MDI tabbed groups:  
   
--   To enable MDI tabbed groups for a main frame window, call [CMDIFrameWndEx::EnableMDITabbedGroups](../mfc/reference/cmdiframewndex-class.md#cmdiframewndex__enablemditabbedgroups). The second parameter of this method is an instance of the `CMDITabInfo` class. You can use the default parameters or modify them before you call `CMDIFrameWndEx::EnableMDITabbedGroups`.  
+-   To enable MDI tabbed groups for a main frame window, call [CMDIFrameWndEx::EnableMDITabbedGroups](../mfc/reference/cmdiframewndex-class.md#enablemditabbedgroups). The second parameter of this method is an instance of the `CMDITabInfo` class. You can use the default parameters or modify them before you call `CMDIFrameWndEx::EnableMDITabbedGroups`.  
   
 -   To modify the properties of an MDI tabbed group at run time, create or modify a `CMDITabInfo` object and call `CMDIFrameWndEx::EnableMDITabbedGroups` again  
   
@@ -76,7 +76,7 @@ The multiple document interface (MDI) tabbed groups feature enables multiple doc
   
 -   To display a shortcut menu when the user clicks a tab or drags it to another MDI tabbed group, override `CMDIFrameWndEx::OnShowMDITabContextMenu` in the `CMDIFrameWndEx`-derived class. If you do not implement this method, the application will not display the shortcut menu.  
   
--   To save the layout of MDI tabbed groups in an application, call `CMDIFrameWndEx::SaveMDIState`. To load a previously saved MDI tabbed group profile, call `CMDIFrameWndEx::LoadMDIState`. You can also call these methods to load or save the list of opened documents in an MDI application. For more information about saving and loading MDI state, see [CMDIFrameWndEx::LoadMDIState](../mfc/reference/cmdiframewndex-class.md#cmdiframewndex__loadmdistate).  
+-   To save the layout of MDI tabbed groups in an application, call `CMDIFrameWndEx::SaveMDIState`. To load a previously saved MDI tabbed group profile, call `CMDIFrameWndEx::LoadMDIState`. You can also call these methods to load or save the list of opened documents in an MDI application. For more information about saving and loading MDI state, see [CMDIFrameWndEx::LoadMDIState](../mfc/reference/cmdiframewndex-class.md#loadmdistate).  
   
 ## See Also  
  [User Interface Elements](../mfc/user-interface-elements-mfc.md)   

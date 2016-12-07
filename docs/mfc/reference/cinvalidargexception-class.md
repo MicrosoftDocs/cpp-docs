@@ -49,7 +49,7 @@ class CInvalidArgException : public CSimpleException
   
 |Name|Description|  
 |----------|-----------------|  
-|[CInvalidArgException::CInvalidArgException](#cinvalidargexception__cinvalidargexception)|The constructor.|  
+|[CInvalidArgException::CInvalidArgException](#cinvalidargexception)|The constructor.|  
   
 ## Remarks  
  A `CInvalidArgException` object represents an invalid argument exception condition.  
@@ -68,7 +68,7 @@ class CInvalidArgException : public CSimpleException
 ## Requirements  
  **Header:** afx.h  
   
-##  <a name="cinvalidargexception__cinvalidargexception"></a>  CInvalidArgException::CInvalidArgException  
+##  <a name="cinvalidargexception"></a>  CInvalidArgException::CInvalidArgException  
  The constructor.  
   
 ```  

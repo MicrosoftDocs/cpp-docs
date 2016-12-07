@@ -50,7 +50,7 @@ By default, persistence and initialization in a control are handled by the `DoPr
   
  [!code-cpp[NVC_MFC_AxOpt#2](../mfc/codesnippet/cpp/optimizing-persistence-and-initialization_2.cpp)]  
   
- The `dwVersion` local variable can be used to detect the version of the control's persistent state being loaded or saved. You can use this variable instead of calling [CPropExchange::GetVersion](../mfc/reference/cpropexchange-class.md#cpropexchange__getversion).  
+ The `dwVersion` local variable can be used to detect the version of the control's persistent state being loaded or saved. You can use this variable instead of calling [CPropExchange::GetVersion](../mfc/reference/cpropexchange-class.md#getversion).  
   
  To save a little space in the persistent format for a **BOOL** property (and to keep it compatible with the format produced by `PX_Bool`), you can store the property as a **BYTE**, as follows:  
   
@@ -58,7 +58,7 @@ By default, persistence and initialization in a control are handled by the `DoPr
   
  Note that in the load case, a temporary variable is used and then its value is assigned, rather than casting `m_boolProp` to a **BYTE** reference. The casting technique would result in only one byte of `m_boolProp` being modified, leaving the remaining bytes uninitialized.  
   
- For the same control, you can optimize the control's initialization by overriding [COleControl::OnResetState](../mfc/reference/colecontrol-class.md#colecontrol__onresetstate) as follows:  
+ For the same control, you can optimize the control's initialization by overriding [COleControl::OnResetState](../mfc/reference/colecontrol-class.md#onresetstate) as follows:  
   
  [!code-cpp[NVC_MFC_AxOpt#4](../mfc/codesnippet/cpp/optimizing-persistence-and-initialization_4.cpp)]  
   

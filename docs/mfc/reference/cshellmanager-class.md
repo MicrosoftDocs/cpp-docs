@@ -49,27 +49,27 @@ class CShellManager : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CShellManager::CShellManager](#cshellmanager__cshellmanager)|Constructs a `CShellManager` object.|  
+|[CShellManager::CShellManager](#cshellmanager)|Constructs a `CShellManager` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CShellManager::BrowseForFolder](#cshellmanager__browseforfolder)|Displays a dialog box that enables the user to select a shell folder.|  
-|[CShellManager::ConcatenateItem](#cshellmanager__concatenateitem)|Concatenates two PIDLs.|  
-|[CShellManager::CopyItem](#cshellmanager__copyitem)|Creates a new PIDL and copies the supplied PIDL to it.|  
-|[CShellManager::CreateItem](#cshellmanager__createitem)|Creates a new PIDL of the specified size.|  
-|[CShellManager::FreeItem](#cshellmanager__freeitem)|Deletes the supplied PIDL.|  
-|[CShellManager::GetItemCount](#cshellmanager__getitemcount)|Returns the number of items in the supplied PIDL.|  
-|[CShellManager::GetItemSize](#cshellmanager__getitemsize)|Returns the size of the supplied PIDL.|  
-|[CShellManager::GetNextItem](#cshellmanager__getnextitem)|Returns the next item from the PIDL.|  
-|[CShellManager::GetParentItem](#cshellmanager__getparentitem)|Retrieves the parent item of the supplied item.|  
-|[CShellManager::ItemFromPath](#cshellmanager__itemfrompath)|Retrieves the PIDL for the item identified by the supplied path.|  
+|[CShellManager::BrowseForFolder](#browseforfolder)|Displays a dialog box that enables the user to select a shell folder.|  
+|[CShellManager::ConcatenateItem](#concatenateitem)|Concatenates two PIDLs.|  
+|[CShellManager::CopyItem](#copyitem)|Creates a new PIDL and copies the supplied PIDL to it.|  
+|[CShellManager::CreateItem](#createitem)|Creates a new PIDL of the specified size.|  
+|[CShellManager::FreeItem](#freeitem)|Deletes the supplied PIDL.|  
+|[CShellManager::GetItemCount](#getitemcount)|Returns the number of items in the supplied PIDL.|  
+|[CShellManager::GetItemSize](#getitemsize)|Returns the size of the supplied PIDL.|  
+|[CShellManager::GetNextItem](#getnextitem)|Returns the next item from the PIDL.|  
+|[CShellManager::GetParentItem](#getparentitem)|Retrieves the parent item of the supplied item.|  
+|[CShellManager::ItemFromPath](#itemfrompath)|Retrieves the PIDL for the item identified by the supplied path.|  
   
 ## Remarks  
  The methods of the `CShellManager` class all deal with PIDLs. A PIDL is a unique identifier for a shell object.  
   
- You should not create a `CShellManager` object manually. It will be created automatically by the framework of your application. However, you should call [CWinAppEx::InitShellManager](../../mfc/reference/cwinappex-class.md#cwinappex__initshellmanager) during the initialization process of your application. To get a pointer to the shell manager for your application, call [CWinAppEx::GetShellManager](../../mfc/reference/cwinappex-class.md#cwinappex__getshellmanager).  
+ You should not create a `CShellManager` object manually. It will be created automatically by the framework of your application. However, you should call [CWinAppEx::InitShellManager](../../mfc/reference/cwinappex-class.md#initshellmanager) during the initialization process of your application. To get a pointer to the shell manager for your application, call [CWinAppEx::GetShellManager](../../mfc/reference/cwinappex-class.md#getshellmanager).  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -79,7 +79,7 @@ class CShellManager : public CObject
 ## Requirements  
  **Header:** afxshellmanager.h  
   
-##  <a name="cshellmanager__browseforfolder"></a>  CShellManager::BrowseForFolder  
+##  <a name="browseforfolder"></a>  CShellManager::BrowseForFolder  
  Displays a dialog box that enables the user to select a shell folder.  
   
 ```  
@@ -122,7 +122,7 @@ BOOL BrowseForFolder(
   
  [!code-cpp[NVC_MFC_Explorer#6](../../mfc/reference/codesnippet/cpp/cshellmanager-class_1.cpp)]  
   
-##  <a name="cshellmanager__concatenateitem"></a>  CShellManager::ConcatenateItem  
+##  <a name="concatenateitem"></a>  CShellManager::ConcatenateItem  
  Creates a new list containing two PIDLs.  
   
 ```  
@@ -144,7 +144,7 @@ LPITEMIDLIST ConcatenateItem(
 ### Remarks  
  This method creates a new [ITEMIDLIST](http://msdn.microsoft.com/library/windows/desktop/bb773321) large enough to contain both `pidl1` and `pidl2`. It then copies `pidl1` and `pidl2` to the new list.  
   
-##  <a name="cshellmanager__copyitem"></a>  CShellManager::CopyItem  
+##  <a name="copyitem"></a>  CShellManager::CopyItem  
  Copies an item list.  
   
 ```  
@@ -161,7 +161,7 @@ LPITEMIDLIST CopyItem(LPCITEMIDLIST pidlSource);
 ### Remarks  
  The newly created item list has the same size as the source item list.  
   
-##  <a name="cshellmanager__createitem"></a>  CShellManager::CreateItem  
+##  <a name="createitem"></a>  CShellManager::CreateItem  
  Creates a new PIDL.  
   
 ```  
@@ -175,7 +175,7 @@ LPITEMIDLIST CreateItem(UINT cbSize);
 ### Return Value  
  A pointer to the created item list if successful; otherwise `NULL`.  
   
-##  <a name="cshellmanager__cshellmanager"></a>  CShellManager::CShellManager  
+##  <a name="cshellmanager"></a>  CShellManager::CShellManager  
  Constructs a `CShellManager` object.  
   
 ```  
@@ -183,9 +183,9 @@ CShellManager();
 ```  
   
 ### Remarks  
- In most cases, you do not have to create a `CShellManager` directly. By default, the framework creates one for you. To get a pointer to the `CShellManager`, call [CWinAppEx::GetShellManager](../../mfc/reference/cwinappex-class.md#cwinappex__getshellmanager). If you do create a `CShellManager` manually, you must initialize it with the method [CWinAppEx::InitShellManager](../../mfc/reference/cwinappex-class.md#cwinappex__initshellmanager).  
+ In most cases, you do not have to create a `CShellManager` directly. By default, the framework creates one for you. To get a pointer to the `CShellManager`, call [CWinAppEx::GetShellManager](../../mfc/reference/cwinappex-class.md#getshellmanager). If you do create a `CShellManager` manually, you must initialize it with the method [CWinAppEx::InitShellManager](../../mfc/reference/cwinappex-class.md#initshellmanager).  
   
-##  <a name="cshellmanager__freeitem"></a>  CShellManager::FreeItem  
+##  <a name="freeitem"></a>  CShellManager::FreeItem  
  Deletes an item list.  
   
 ```  
@@ -196,7 +196,7 @@ void FreeItem(LPITEMIDLIST pidl);
  [in] `pidl`  
  An item list to delete.  
   
-##  <a name="cshellmanager__getitemcount"></a>  CShellManager::GetItemCount  
+##  <a name="getitemcount"></a>  CShellManager::GetItemCount  
  Returns the number of items in an item list.  
   
 ```  
@@ -210,7 +210,7 @@ UINT GetItemCount(LPCITEMIDLIST pidl);
 ### Return Value  
  The number of items in the item list.  
   
-##  <a name="cshellmanager__getitemsize"></a>  CShellManager::GetItemSize  
+##  <a name="getitemsize"></a>  CShellManager::GetItemSize  
  Returns the size of an item list.  
   
 ```  
@@ -224,7 +224,7 @@ UINT GetItemSize(LPCITEMIDLIST pidl);
 ### Return Value  
  The size of the item list.  
   
-##  <a name="cshellmanager__getnextitem"></a>  CShellManager::GetNextItem  
+##  <a name="getnextitem"></a>  CShellManager::GetNextItem  
  Retrieves the next item from a pointer to an item identifier list (PIDL).  
   
 ```  
@@ -241,7 +241,7 @@ LPITEMIDLIST GetNextItem(LPCITEMIDLIST pidl);
 ### Remarks  
  If there are no more items in the list, this method returns `NULL`.  
   
-##  <a name="cshellmanager__getparentitem"></a>  CShellManager::GetParentItem  
+##  <a name="getparentitem"></a>  CShellManager::GetParentItem  
  Retrieves the parent of a pointer to an item identifier list (PIDL).  
   
 ```  
@@ -263,7 +263,7 @@ int GetParentItem(
 ### Remarks  
  The level of a PIDL is relative to the desktop. The desktop PIDL is considered to have a level of 0.  
   
-##  <a name="cshellmanager__itemfrompath"></a>  CShellManager::ItemFromPath  
+##  <a name="itemfrompath"></a>  CShellManager::ItemFromPath  
  Retrieves the pointer to an item identifier list (PIDL) from the item identified by a string path.  
   
 ```  

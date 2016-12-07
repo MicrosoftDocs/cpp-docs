@@ -54,7 +54,7 @@ class CMFCDragFrameImpl
 ## Requirements  
  **Header:** afxdragframeimpl.h  
   
-##  <a name="cmfcdragframeimpl__enddrawdragframe"></a>  CMFCDragFrameImpl::EndDrawDragFrame  
+##  <a name="enddrawdragframe"></a>  CMFCDragFrameImpl::EndDrawDragFrame  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -66,7 +66,7 @@ void EndDrawDragFrame(BOOL bClearInternalRects = TRUE);
   
 ### Remarks  
   
-##  <a name="cmfcdragframeimpl__init"></a>  CMFCDragFrameImpl::Init  
+##  <a name="init"></a>  CMFCDragFrameImpl::Init  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -78,7 +78,7 @@ void Init(CWnd* pDraggedWnd);
   
 ### Remarks  
   
-##  <a name="cmfcdragframeimpl__movedragframe"></a>  CMFCDragFrameImpl::MoveDragFrame  
+##  <a name="movedragframe"></a>  CMFCDragFrameImpl::MoveDragFrame  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -90,7 +90,7 @@ void MoveDragFrame(BOOL bForceMove = FALSE);
   
 ### Remarks  
   
-##  <a name="cmfcdragframeimpl__placetabpredocking"></a>  CMFCDragFrameImpl::PlaceTabPreDocking  
+##  <a name="placetabpredocking"></a>  CMFCDragFrameImpl::PlaceTabPreDocking  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -110,7 +110,7 @@ void PlaceTabPreDocking(
   
 ### Remarks  
   
-##  <a name="cmfcdragframeimpl__removetabpredocking"></a>  CMFCDragFrameImpl::RemoveTabPreDocking  
+##  <a name="removetabpredocking"></a>  CMFCDragFrameImpl::RemoveTabPreDocking  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -122,7 +122,7 @@ void RemoveTabPreDocking(CDockablePane* pOldTargetBar = NULL);
   
 ### Remarks  
   
-##  <a name="cmfcdragframeimpl__resetstate"></a>  CMFCDragFrameImpl::ResetState  
+##  <a name="resetstate"></a>  CMFCDragFrameImpl::ResetState  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  

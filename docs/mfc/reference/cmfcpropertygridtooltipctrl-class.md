@@ -59,7 +59,7 @@ class CMFCPropertyGridToolTipCtrl : public CWnd
 |||  
 |-|-|  
 |Name|Description|  
-|[CMFCPropertyGridToolTipCtrl::CMFCPropertyGridToolTipCtrl](#cmfcpropertygridtooltipctrl__cmfcpropertygridtooltipctrl)|Constructs a `CMFCPropertyGridToolTipCtrl` object.|  
+|[CMFCPropertyGridToolTipCtrl::CMFCPropertyGridToolTipCtrl](#cmfcpropertygridtooltipctrl)|Constructs a `CMFCPropertyGridToolTipCtrl` object.|  
 |`CMFCPropertyGridToolTipCtrl::~CMFCPropertyGridToolTipCtrl`|Destructor.|  
   
 ### Public Methods  
@@ -67,13 +67,13 @@ class CMFCPropertyGridToolTipCtrl : public CWnd
 |||  
 |-|-|  
 |Name|Description|  
-|[CMFCPropertyGridToolTipCtrl::Create](#cmfcpropertygridtooltipctrl__create)|Creates a window for the tooltip control.|  
-|[CMFCPropertyGridToolTipCtrl::Deactivate](#cmfcpropertygridtooltipctrl__deactivate)|Deactivates and hides the tooltip control.|  
-|[CMFCPropertyGridToolTipCtrl::GetLastRect](#cmfcpropertygridtooltipctrl__getlastrect)|Returns the coordinates of the last position of the tooltip control.|  
-|[CMFCPropertyGridToolTipCtrl::Hide](#cmfcpropertygridtooltipctrl__hide)|Hides the tooltip control.|  
-|`CMFCPropertyGridToolTipCtrl::PreTranslateMessage`|Used by class [CWinApp](../../mfc/reference/cwinapp-class.md) to translate window messages before they are dispatched to the [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows functions. (Overrides [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#cwnd__pretranslatemessage).)|  
-|[CMFCPropertyGridToolTipCtrl::SetTextMargin](#cmfcpropertygridtooltipctrl__settextmargin)|Sets the spacing between the tooltip text and the border of the tooltip window.|  
-|[CMFCPropertyGridToolTipCtrl::Track](#cmfcpropertygridtooltipctrl__track)|Displays the tooltip control.|  
+|[CMFCPropertyGridToolTipCtrl::Create](#create)|Creates a window for the tooltip control.|  
+|[CMFCPropertyGridToolTipCtrl::Deactivate](#deactivate)|Deactivates and hides the tooltip control.|  
+|[CMFCPropertyGridToolTipCtrl::GetLastRect](#getlastrect)|Returns the coordinates of the last position of the tooltip control.|  
+|[CMFCPropertyGridToolTipCtrl::Hide](#hide)|Hides the tooltip control.|  
+|`CMFCPropertyGridToolTipCtrl::PreTranslateMessage`|Used by class [CWinApp](../../mfc/reference/cwinapp-class.md) to translate window messages before they are dispatched to the [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows functions. (Overrides [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|  
+|[CMFCPropertyGridToolTipCtrl::SetTextMargin](#settextmargin)|Sets the spacing between the tooltip text and the border of the tooltip window.|  
+|[CMFCPropertyGridToolTipCtrl::Track](#track)|Displays the tooltip control.|  
   
 ## Remarks  
  Tooltips are displayed when the pointer rests on a property name. The [CMFCPropertyGridToolTipCtrl](../../mfc/reference/cmfcpropertygridtooltipctrl-class.md) class displays a tooltip so that it is easily readable by the user. Usually, the position of a tooltip is determined by the position of the pointer. By using this class, the tooltip appears over the property name and resembles the natural property extension, so that the property name is fully visible.  
@@ -97,14 +97,14 @@ class CMFCPropertyGridToolTipCtrl : public CWnd
 ## Requirements  
  **Header:** afxpropertygridtooltipctrl.h  
   
-##  <a name="cmfcpropertygridtooltipctrl__cmfcpropertygridtooltipctrl"></a>  CMFCPropertyGridToolTipCtrl::CMFCPropertyGridToolTipCtrl  
+##  <a name="cmfcpropertygridtooltipctrl"></a>  CMFCPropertyGridToolTipCtrl::CMFCPropertyGridToolTipCtrl  
  Constructs a `CMFCPropertyGridToolTipCtrl` object.  
   
 ```  
 CMFCPropertyGridToolTipCtrl::CMFCPropertyGridToolTipCtrl();
 ```  
   
-##  <a name="cmfcpropertygridtooltipctrl__create"></a>  CMFCPropertyGridToolTipCtrl::Create  
+##  <a name="create"></a>  CMFCPropertyGridToolTipCtrl::Create  
  Creates a window for the tooltip control.  
   
 ```  
@@ -118,7 +118,7 @@ BOOL Create(CWnd* pWndParent);
 ### Return Value  
  TRUE if the window was successfully created; otherwise, FALSE.  
   
-##  <a name="cmfcpropertygridtooltipctrl__deactivate"></a>  CMFCPropertyGridToolTipCtrl::Deactivate  
+##  <a name="deactivate"></a>  CMFCPropertyGridToolTipCtrl::Deactivate  
  Deactivates and hides the tooltip control.  
   
 ```  
@@ -126,9 +126,9 @@ void Deactivate();
 ```  
   
 ### Remarks  
- This method sets the last position and text to empty values, so that future calls to [CMFCPropertyGridToolTipCtrl::Track](#cmfcpropertygridtooltipctrl__track) display the tooltip.  
+ This method sets the last position and text to empty values, so that future calls to [CMFCPropertyGridToolTipCtrl::Track](#track) display the tooltip.  
   
-##  <a name="cmfcpropertygridtooltipctrl__getlastrect"></a>  CMFCPropertyGridToolTipCtrl::GetLastRect  
+##  <a name="getlastrect"></a>  CMFCPropertyGridToolTipCtrl::GetLastRect  
  Returns the coordinates of the last position of the tooltip control.  
   
 ```  
@@ -141,14 +141,14 @@ void GetLastRect(CRect& rect) const;
  [out] `rect`  
  Contains the last position of the tooltip control.  
   
-##  <a name="cmfcpropertygridtooltipctrl__hide"></a>  CMFCPropertyGridToolTipCtrl::Hide  
+##  <a name="hide"></a>  CMFCPropertyGridToolTipCtrl::Hide  
  Hides the tooltip control.  
   
 ```  
 void Hide();
 ```  
   
-##  <a name="cmfcpropertygridtooltipctrl__settextmargin"></a>  CMFCPropertyGridToolTipCtrl::SetTextMargin  
+##  <a name="settextmargin"></a>  CMFCPropertyGridToolTipCtrl::SetTextMargin  
  Sets the spacing between the tooltip text and the border of the tooltip window.  
   
 ```  
@@ -159,7 +159,7 @@ void SetTextMargin(int nTextMargin);
  [in] `nTextMargin`  
  Specifies the spacing between the tooltip control text and the border of the tooltip window. The default value is 10 pixels.  
   
-##  <a name="cmfcpropertygridtooltipctrl__track"></a>  CMFCPropertyGridToolTipCtrl::Track  
+##  <a name="track"></a>  CMFCPropertyGridToolTipCtrl::Track  
  Displays the tooltip control.  
   
 ```  

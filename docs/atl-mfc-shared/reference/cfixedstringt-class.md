@@ -62,13 +62,13 @@ class CFixedStringT : private CFixedStringMgr,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CFixedStringT::CFixedStringT](#cfixedstringt__cfixedstringt)|The constructor for the string object.|  
+|[CFixedStringT::CFixedStringT](#cfixedstringt)|The constructor for the string object.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CFixedStringT::operator =](#cfixedstringt__operator__eq)|Assigns a new value to a `CFixedStringT` object.|  
+|[CFixedStringT::operator =](#eq)|Assigns a new value to a `CFixedStringT` object.|  
   
 ## Remarks  
  This class is an example of a custom string class based on `CStringT`. Although quite similar, the two classes differ in implementation. The major differences between `CFixedStringT` and `CStringT` are:  
@@ -93,7 +93,7 @@ class CFixedStringT : private CFixedStringMgr,
 ## Requirements  
  **Header:** cstringt.h  
   
-##  <a name="cfixedstringt__cfixedstringt"></a>  CFixedStringT::CFixedStringT  
+##  <a name="cfixedstringt"></a>  CFixedStringT::CFixedStringT  
  Constructs a `CFixedStringT` object.  
   
 ```
@@ -126,7 +126,7 @@ explicit CFixedStringT(const unsigned char* psz);
 ### Remarks  
  Because the constructors copy the input data into new allocated storage, you should be aware that memory exceptions may result. Note that some of these constructors act as conversion functions.  
   
-##  <a name="cfixedstringt__operator__eq"></a>  CFixedStringT::operator =  
+##  <a name="operator__eq"></a>  CFixedStringT::operator =  
  Reinitializes an existing `CFixedStringT` object with new data.  
   
 ```

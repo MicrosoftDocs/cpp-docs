@@ -53,33 +53,33 @@ class CPageSetupDialog : public CCommonDialog
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPageSetupDialog::CPageSetupDialog](#cpagesetupdialog__cpagesetupdialog)|Constructs a `CPageSetupDialog` object.|  
+|[CPageSetupDialog::CPageSetupDialog](#cpagesetupdialog)|Constructs a `CPageSetupDialog` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPageSetupDialog::CreatePrinterDC](#cpagesetupdialog__createprinterdc)|Creates a device context for printing.|  
-|[CPageSetupDialog::DoModal](#cpagesetupdialog__domodal)|Displays the dialog box and allows the user make a selection.|  
-|[CPageSetupDialog::GetDeviceName](#cpagesetupdialog__getdevicename)|Returns the device name of the printer.|  
-|[CPageSetupDialog::GetDevMode](#cpagesetupdialog__getdevmode)|Returns the current `DEVMODE` of the printer.|  
-|[CPageSetupDialog::GetDriverName](#cpagesetupdialog__getdrivername)|Returns the driver used by the printer.|  
-|[CPageSetupDialog::GetMargins](#cpagesetupdialog__getmargins)|Returns the current margin settings of the printer.|  
-|[CPageSetupDialog::GetPaperSize](#cpagesetupdialog__getpapersize)|Returns the paper size of the printer.|  
-|[CPageSetupDialog::GetPortName](#cpagesetupdialog__getportname)|Returns the output port name.|  
-|[CPageSetupDialog::OnDrawPage](#cpagesetupdialog__ondrawpage)|Called by the framework to render a screen image of a printed page.|  
-|[CPageSetupDialog::PreDrawPage](#cpagesetupdialog__predrawpage)|Called by the framework before rendering a screen image of a printed page.|  
+|[CPageSetupDialog::CreatePrinterDC](#createprinterdc)|Creates a device context for printing.|  
+|[CPageSetupDialog::DoModal](#domodal)|Displays the dialog box and allows the user make a selection.|  
+|[CPageSetupDialog::GetDeviceName](#getdevicename)|Returns the device name of the printer.|  
+|[CPageSetupDialog::GetDevMode](#getdevmode)|Returns the current `DEVMODE` of the printer.|  
+|[CPageSetupDialog::GetDriverName](#getdrivername)|Returns the driver used by the printer.|  
+|[CPageSetupDialog::GetMargins](#getmargins)|Returns the current margin settings of the printer.|  
+|[CPageSetupDialog::GetPaperSize](#getpapersize)|Returns the paper size of the printer.|  
+|[CPageSetupDialog::GetPortName](#getportname)|Returns the output port name.|  
+|[CPageSetupDialog::OnDrawPage](#ondrawpage)|Called by the framework to render a screen image of a printed page.|  
+|[CPageSetupDialog::PreDrawPage](#predrawpage)|Called by the framework before rendering a screen image of a printed page.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPageSetupDialog::m_psd](#cpagesetupdialog__m_psd)|A structure used to customize a `CPageSetupDialog` object.|  
+|[CPageSetupDialog::m_psd](#m_psd)|A structure used to customize a `CPageSetupDialog` object.|  
   
 ## Remarks  
  This class is designed to take the place of the Print Setup dialog box.  
   
- To use a `CPageSetupDialog` object, first create the object using the `CPageSetupDialog` constructor. Once the dialog box has been constructed, you can set or modify any values in the `m_psd` data member to initialize the values of the dialog box's controls. The [m_psd](#cpagesetupdialog__m_psd) structure is of type **PAGESETUPDLG**.  
+ To use a `CPageSetupDialog` object, first create the object using the `CPageSetupDialog` constructor. Once the dialog box has been constructed, you can set or modify any values in the `m_psd` data member to initialize the values of the dialog box's controls. The [m_psd](#m_psd) structure is of type **PAGESETUPDLG**.  
   
  After initializing the dialog box controls, call the `DoModal` member function to display the dialog box and allow the user to select print options. `DoModal` returns whether the user selected the OK ( **IDOK**) or Cancel ( **IDCANCEL**) button.  
   
@@ -104,7 +104,7 @@ class CPageSetupDialog : public CCommonDialog
 ## Requirements  
  **Header:** afxdlgs.h  
   
-##  <a name="cpagesetupdialog__cpagesetupdialog"></a>  CPageSetupDialog::CPageSetupDialog  
+##  <a name="cpagesetupdialog"></a>  CPageSetupDialog::CPageSetupDialog  
  Call this function to construct a `CPageSetupDialog` object.  
   
 ```  
@@ -157,12 +157,12 @@ CPageSetupDialog(
  Pointer to the dialog box's parent or owner.  
   
 ### Remarks  
- Use the [DoModal](../../mfc/reference/cdialog-class.md#cdialog__domodal) function to display the dialog box.  
+ Use the [DoModal](../../mfc/reference/cdialog-class.md#domodal) function to display the dialog box.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#94](../../mfc/codesnippet/cpp/cpagesetupdialog-class_1.cpp)]  
   
-##  <a name="cpagesetupdialog__createprinterdc"></a>  CPageSetupDialog::CreatePrinterDC  
+##  <a name="createprinterdc"></a>  CPageSetupDialog::CreatePrinterDC  
  Creates a printer device context from the [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) and [DEVNAMES](../../mfc/reference/devnames-structure.md) structures.  
   
 ```  
@@ -172,7 +172,7 @@ HDC CreatePrinterDC();
 ### Return Value  
  Handle to the newly created printer device context (DC).  
   
-##  <a name="cpagesetupdialog__domodal"></a>  CPageSetupDialog::DoModal  
+##  <a name="domodal"></a>  CPageSetupDialog::DoModal  
  Call this function to display the Windows common OLE Page Setup dialog box and allow the user to select various print setup options such as the printing margins, size and orientation of the paper, and destination printer.  
   
 ```  
@@ -189,14 +189,14 @@ virtual INT_PTR DoModal();
   
  If you want to initialize the various Page Setup dialog options by setting members of the `m_psd` structure, you should do so before calling `DoModal`, and after the dialog object is constructed. After calling `DoModal`, call other member functions to retrieve the settings or information input by the user into the dialog box.  
   
- If you want to propagate the current settings entered by the user, make a call to [CWinApp::SelectPrinter](../../mfc/reference/cwinapp-class.md#cwinapp__selectprinter). This function takes the information from the `CPageSetupDialog` object and initializes and selects a new printer DC with the proper attributes.  
+ If you want to propagate the current settings entered by the user, make a call to [CWinApp::SelectPrinter](../../mfc/reference/cwinapp-class.md#selectprinter). This function takes the information from the `CPageSetupDialog` object and initializes and selects a new printer DC with the proper attributes.  
   
  [!code-cpp[NVC_MFCDocView#95](../../mfc/codesnippet/cpp/cpagesetupdialog-class_2.cpp)]  
   
 ### Example  
-  See the example for [CPageSetupDialog::CPageSetupDialog](#cpagesetupdialog__cpagesetupdialog).  
+  See the example for [CPageSetupDialog::CPageSetupDialog](#cpagesetupdialog).  
   
-##  <a name="cpagesetupdialog__getdevicename"></a>  CPageSetupDialog::GetDeviceName  
+##  <a name="getdevicename"></a>  CPageSetupDialog::GetDeviceName  
  Call this function after `DoModal` to retrieve the name of the currently selected printer.  
   
 ```  
@@ -208,7 +208,7 @@ CString GetDeviceName() const;
 ### Return Value  
  The device name used by the **CPageSetupDialog** object.  
   
-##  <a name="cpagesetupdialog__getdevmode"></a>  CPageSetupDialog::GetDevMode  
+##  <a name="getdevmode"></a>  CPageSetupDialog::GetDevMode  
  Call this function after calling `DoModal` to retrieve information about the printer device context of the `CPageSetupDialog` object.  
   
 ```  
@@ -220,8 +220,8 @@ LPDEVMODE GetDevMode() const;
 ### Return Value  
  The [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) data structure, which contains information about the device initialization and environment of a print driver. You must unlock the memory taken by this structure with the Windows [GlobalUnlock](http://msdn.microsoft.com/library/windows/desktop/aa366595) function, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="cpagesetupdialog__getdrivername"></a>  CPageSetupDialog::GetDriverName  
- Call this function after calling [DoModal](../../mfc/reference/cprintdialog-class.md#cprintdialog__domodal) to retrieve the name of the system-defined printer device driver.  
+##  <a name="getdrivername"></a>  CPageSetupDialog::GetDriverName  
+ Call this function after calling [DoModal](../../mfc/reference/cprintdialog-class.md#domodal) to retrieve the name of the system-defined printer device driver.  
   
 ```  
 CString GetDriverName() const;
@@ -233,9 +233,9 @@ CString GetDriverName() const;
  A `CString` specifying the system-defined driver name.  
   
 ### Remarks  
- Use a pointer to the `CString` object returned by `GetDriverName` as the value of `lpszDriverName` in a call to [CDC::CreateDC](../../mfc/reference/cdc-class.md#cdc__createdc).  
+ Use a pointer to the `CString` object returned by `GetDriverName` as the value of `lpszDriverName` in a call to [CDC::CreateDC](../../mfc/reference/cdc-class.md#createdc).  
   
-##  <a name="cpagesetupdialog__getmargins"></a>  CPageSetupDialog::GetMargins  
+##  <a name="getmargins"></a>  CPageSetupDialog::GetMargins  
  Call this function after a call to `DoModal` to retrieve the margins of the printer device driver.  
   
 ```  
@@ -253,7 +253,7 @@ void GetMargins(
  *lpRectMinMargins*  
  Pointer to a `RECT` structure or `CRect` object that describes (in 1/1000 inches or 1/100 mm) the minimum print margins for the currently selected printer. Pass **NULL** for this parameter, if you are not interested in this rectangle.  
   
-##  <a name="cpagesetupdialog__getpapersize"></a>  CPageSetupDialog::GetPaperSize  
+##  <a name="getpapersize"></a>  CPageSetupDialog::GetPaperSize  
  Call this function to retrieve the size of the paper selected for printing.  
   
 ```  
@@ -265,7 +265,7 @@ CSize GetPaperSize() const;
 ### Return Value  
  A [CSize](../../atl-mfc-shared/reference/csize-class.md) object containing the size of the paper (in 1/1000 inches or 1/100 mm) selected for printing.  
   
-##  <a name="cpagesetupdialog__getportname"></a>  CPageSetupDialog::GetPortName  
+##  <a name="getportname"></a>  CPageSetupDialog::GetPortName  
  Call this function after calling `DoModal` to retrieve the name of the currently selected printer port.  
   
 ```  
@@ -277,7 +277,7 @@ CString GetPortName() const;
 ### Return Value  
  The name of the currently selected printer port.  
   
-##  <a name="cpagesetupdialog__m_psd"></a>  CPageSetupDialog::m_psd  
+##  <a name="m_psd"></a>  CPageSetupDialog::m_psd  
  A structure of type **PAGESETUPDLG**, whose members store the characteristics of the dialog object.  
   
 ```  
@@ -291,9 +291,9 @@ PAGESETUPDLG m_psd;
   
  For more information on the [PAGESETUPDLG](http://msdn.microsoft.com/library/windows/desktop/ms646842) structure, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
- See the example for [CPageSetupDialog::CPageSetupDialog](#cpagesetupdialog__cpagesetupdialog).  
+ See the example for [CPageSetupDialog::CPageSetupDialog](#cpagesetupdialog).  
   
-##  <a name="cpagesetupdialog__ondrawpage"></a>  CPageSetupDialog::OnDrawPage  
+##  <a name="ondrawpage"></a>  CPageSetupDialog::OnDrawPage  
  Called by the framework to draw a screen image of a printed page.  
   
 ```  
@@ -337,7 +337,7 @@ virtual UINT OnDrawPage(
   
  Note that you do not need to handle every case of `nMessage`. You can choose to handle one component of the image, several components of the image, or the whole area.  
   
-##  <a name="cpagesetupdialog__predrawpage"></a>  CPageSetupDialog::PreDrawPage  
+##  <a name="predrawpage"></a>  CPageSetupDialog::PreDrawPage  
  Called by the framework before drawing the screen image of a printed page.  
   
 ```  

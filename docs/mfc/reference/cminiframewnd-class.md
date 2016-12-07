@@ -51,19 +51,19 @@ class CMiniFrameWnd : public CFrameWnd
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMiniFrameWnd::CMiniFrameWnd](#cminiframewnd__cminiframewnd)|Constructs a `CMiniFrameWnd` object.|  
+|[CMiniFrameWnd::CMiniFrameWnd](#cminiframewnd)|Constructs a `CMiniFrameWnd` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMiniFrameWnd::Create](#cminiframewnd__create)|Creates a `CMiniFrameWnd` object after construction.|  
-|[CMiniFrameWnd::CreateEx](#cminiframewnd__createex)|Creates a `CMiniFrameWnd` object (with additional options) after construction.|  
+|[CMiniFrameWnd::Create](#create)|Creates a `CMiniFrameWnd` object after construction.|  
+|[CMiniFrameWnd::CreateEx](#createex)|Creates a `CMiniFrameWnd` object (with additional options) after construction.|  
   
 ## Remarks  
  These mini-frame windows behave like normal frame windows, except that they do not have minimize/maximize buttons or menus and you only have to single-click on the system menu to dismiss them.  
   
- To use a `CMiniFrameWnd` object, first define the object. Then call the [Create](#cminiframewnd__create) member function to display the mini-frame window.  
+ To use a `CMiniFrameWnd` object, first define the object. Then call the [Create](#create) member function to display the mini-frame window.  
   
  For more information on how to use `CMiniFrameWnd` objects, see the article [Docking and Floating Toolbars](../../mfc/docking-and-floating-toolbars.md).  
   
@@ -81,7 +81,7 @@ class CMiniFrameWnd : public CFrameWnd
 ## Requirements  
  **Header:** afxwin.h  
   
-##  <a name="cminiframewnd__cminiframewnd"></a>  CMiniFrameWnd::CMiniFrameWnd  
+##  <a name="cminiframewnd"></a>  CMiniFrameWnd::CMiniFrameWnd  
  Constructs a `CMiniFrameWnd` object, but does not create the window.  
   
 ```  
@@ -89,9 +89,9 @@ CMiniFrameWnd();
 ```  
   
 ### Remarks  
- To create the window, call [CMiniFrameWnd::Create](#cminiframewnd__create).  
+ To create the window, call [CMiniFrameWnd::Create](#create).  
   
-##  <a name="cminiframewnd__create"></a>  CMiniFrameWnd::Create  
+##  <a name="create"></a>  CMiniFrameWnd::Create  
  Creates the Windows mini-frame window and attaches it to the `CMiniFrameWnd` object.  
   
 ```  
@@ -136,7 +136,7 @@ virtual BOOL Create(
   
 - **MFS_BLOCKSYSMENU** Disables access to the system menu and the control menu, and converts them to part of the caption (title bar).  
   
- See [CWnd::Create](../../mfc/reference/cwnd-class.md#cwnd__create) for a description of possible window style values. The typical combination used for mini-frame windows is **WS_POPUP&#124;WS_CAPTION&#124;WS_SYSMENU**.  
+ See [CWnd::Create](../../mfc/reference/cwnd-class.md#create) for a description of possible window style values. The typical combination used for mini-frame windows is **WS_POPUP&#124;WS_CAPTION&#124;WS_SYSMENU**.  
   
  `rect`  
  A `RECT` structure specifying the desired dimensions of the window.  
@@ -153,7 +153,7 @@ virtual BOOL Create(
 ### Remarks  
  **Create** initializes the window's class name and window name and registers default values for its style and parent.  
   
-##  <a name="cminiframewnd__createex"></a>  CMiniFrameWnd::CreateEx  
+##  <a name="createex"></a>  CMiniFrameWnd::CreateEx  
  Creates a `CMiniFrameWnd` object.  
   
 ```  
@@ -178,7 +178,7 @@ virtual BOOL CreateEx(
  Points to a null-terminated character string that contains the window name.  
   
  `dwStyle`  
- Specifies the window style attributes. See [Window Styles](../../mfc/reference/window-styles.md) and [CWnd::Create](../../mfc/reference/cwnd-class.md#cwnd__create) for a description of the possible values.  
+ Specifies the window style attributes. See [Window Styles](../../mfc/reference/window-styles.md) and [CWnd::Create](../../mfc/reference/cwnd-class.md#create) for a description of the possible values.  
   
  `rect`  
  The size and position of the window, in client coordinates of `pParentWnd`.  
@@ -195,7 +195,7 @@ virtual BOOL CreateEx(
 ### Remarks  
  The `CreateEx` parameters specify the **WNDCLASS**, window style, and (optionally) initial position and size of the window. `CreateEx` also specifies the window's parent (if any) and ID.  
   
- When `CreateEx` executes, Windows sends the [WM_GETMINMAXINFO](../../mfc/reference/cwnd-class.md#cwnd__ongetminmaxinfo), [WM_NCCREATE](../../mfc/reference/cwnd-class.md#cwnd__onnccreate), [WM_NCCALCSIZE](../../mfc/reference/cwnd-class.md#cwnd__onnccalcsize), and [WM_CREATE](../../mfc/reference/cwnd-class.md#cwnd__oncreate) messages to the window.  
+ When `CreateEx` executes, Windows sends the [WM_GETMINMAXINFO](../../mfc/reference/cwnd-class.md#ongetminmaxinfo), [WM_NCCREATE](../../mfc/reference/cwnd-class.md#onnccreate), [WM_NCCALCSIZE](../../mfc/reference/cwnd-class.md#onnccalcsize), and [WM_CREATE](../../mfc/reference/cwnd-class.md#oncreate) messages to the window.  
   
  To extend the default message handling, derive a class from `CMiniFrameWnd`, add a message map to the new class, and provide member functions for the above messages. Override `OnCreate`, for example, to perform needed initialization for a new class.  
   

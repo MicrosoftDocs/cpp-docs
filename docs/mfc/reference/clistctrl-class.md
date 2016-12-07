@@ -56,140 +56,140 @@ class CListCtrl : public CWnd
   
 |Name|Description|  
 |----------|-----------------|  
-|[CListCtrl::CListCtrl](#clistctrl__clistctrl)|Constructs a `CListCtrl` object.|  
+|[CListCtrl::CListCtrl](#clistctrl)|Constructs a `CListCtrl` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CListCtrl::ApproximateViewRect](#clistctrl__approximateviewrect)|Determines the width and height required to display the items of a list view control.|  
-|[CListCtrl::Arrange](#clistctrl__arrange)|Aligns items on a grid.|  
-|[CListCtrl::CancelEditLabel](#clistctrl__canceleditlabel)|Cancels item text editing operation.|  
-|[CListCtrl::Create](#clistctrl__create)|Creates a list control and attaches it to a `CListCtrl` object.|  
-|[CListCtrl::CreateDragImage](#clistctrl__createdragimage)|Creates a drag image list for a specified item.|  
-|[CListCtrl::CreateEx](#clistctrl__createex)|Creates a list control with the specified Windows extended styles and attaches it to a `CListCtrl` object.|  
-|[CListCtrl::DeleteAllItems](#clistctrl__deleteallitems)|Deletes all items from the control.|  
-|[CListCtrl::DeleteColumn](#clistctrl__deletecolumn)|Deletes a column from the list view control.|  
-|[CListCtrl::DeleteItem](#clistctrl__deleteitem)|Deletes an item from the control.|  
-|[CListCtrl::DrawItem](#clistctrl__drawitem)|Called when a visual aspect of an owner-draw control changes.|  
-|[CListCtrl::EditLabel](#clistctrl__editlabel)|Begins in-place editing of an item's text.|  
-|[CListCtrl::EnableGroupView](#clistctrl__enablegroupview)|Enables or disables whether the items in a list view control display as a group.|  
-|[CListCtrl::EnsureVisible](#clistctrl__ensurevisible)|Ensures that an item is visible.|  
-|[CListCtrl::FindItem](#clistctrl__finditem)|Searches for a list view item having specified characteristics.|  
-|[CListCtrl::GetBkColor](#clistctrl__getbkcolor)|Retrieves the background color of a list view control.|  
-|[CListCtrl::GetBkImage](#clistctrl__getbkimage)|Retrieves the current background image of a list view control.|  
-|[CListCtrl::GetCallbackMask](#clistctrl__getcallbackmask)|Retrieves the callback mask for a list view control.|  
-|[CListCtrl::GetCheck](#clistctrl__getcheck)|Retrieves the current display status of the state image associated with an item.|  
-|[CListCtrl::GetColumn](#clistctrl__getcolumn)|Retrieves the attributes of a control's column.|  
-|[CListCtrl::GetColumnOrderArray](#clistctrl__getcolumnorderarray)|Retrieves the column order (left to right) of a list view control.|  
-|[CListCtrl::GetColumnWidth](#clistctrl__getcolumnwidth)|Retrieves the width of a column in report view or list view.|  
-|[CListCtrl::GetCountPerPage](#clistctrl__getcountperpage)|Calculates the number of items that can fit vertically in a list view control.|  
-|[CListCtrl::GetEditControl](#clistctrl__geteditcontrol)|Retrieves the handle of the edit control used to edit an item's text.|  
-|[CListCtrl::GetEmptyText](#clistctrl__getemptytext)|Retrieves the string to display if the current list-view control is empty.|  
-|[CListCtrl::GetExtendedStyle](#clistctrl__getextendedstyle)|Retrieves the current extended styles of a list view control.|  
-|[CListCtrl::GetFirstSelectedItemPosition](#clistctrl__getfirstselecteditemposition)|Retrieves the position of the first selected list view item in a list view control.|  
-|[CListCtrl::GetFocusedGroup](#clistctrl__getfocusedgroup)|Retrieves the group that has the keyboard focus in the current list-view control.|  
-|[CListCtrl::GetGroupCount](#clistctrl__getgroupcount)|Retrieves the number of groups in the current list-view control.|  
-|[CListCtrl::GetGroupInfo](#clistctrl__getgroupinfo)|Gets the information for a specified group of the list view control.|  
-|[CListCtrl::GetGroupInfoByIndex](#clistctrl__getgroupinfobyindex)|Retrieves information about a specified group in the current list-view control.|  
-|[CListCtrl::GetGroupMetrics](#clistctrl__getgroupmetrics)|Retrieves the metrics of a group.|  
-|[CListCtrl::GetGroupRect](#clistctrl__getgrouprect)|Retrieves the bounding rectangle for a specified group in the current list-view control.|  
-|[CListCtrl::GetGroupState](#clistctrl__getgroupstate)|Retrieves the state for a specified group in the current list-view control.|  
-|[CListCtrl::GetHeaderCtrl](#clistctrl__getheaderctrl)|Retrieves the header control of a list view control.|  
-|[CListCtrl::GetHotCursor](#clistctrl__gethotcursor)|Retrieves the cursor used when hot tracking is enabled for a list view control.|  
-|[CListCtrl::GetHotItem](#clistctrl__gethotitem)|Retrieves the list view item currently under the cursor.|  
-|[CListCtrl::GetHoverTime](#clistctrl__gethovertime)|Retrieves the current hover time of a list view control.|  
-|[CListCtrl::GetImageList](#clistctrl__getimagelist)|Retrieves the handle of an image list used for drawing list view items.|  
-|[CListCtrl::GetInsertMark](#clistctrl__getinsertmark)|Retrieves the current position of the insertion mark.|  
-|[CListCtrl::GetInsertMarkColor](#clistctrl__getinsertmarkcolor)|Retrieves the current color of the insertion mark.|  
-|[CListCtrl::GetInsertMarkRect](#clistctrl__getinsertmarkrect)|Retrieves the rectangle that bounds the insertion point.|  
-|[CListCtrl::GetItem](#clistctrl__getitem)|Retrieves a list view item's attributes.|  
-|[CListCtrl::GetItemCount](#clistctrl__getitemcount)|Retrieves the number of items in a list view control.|  
-|[CListCtrl::GetItemData](#clistctrl__getitemdata)|Retrieves the application-specific value associated with an item.|  
-|[CListCtrl::GetItemIndexRect](#clistctrl__getitemindexrect)|Retrieves the bounding rectangle for all or part of a subitem in the current list-view control.|  
-|[CListCtrl::GetItemPosition](#clistctrl__getitemposition)|Retrieves the position of a list view item.|  
-|[CListCtrl::GetItemRect](#clistctrl__getitemrect)|Retrieves the bounding rectangle for an item.|  
-|[CListCtrl::GetItemSpacing](#clistctrl__getitemspacing)|Calculates the spacing between items in the current list-view control.|  
-|[CListCtrl::GetItemState](#clistctrl__getitemstate)|Retrieves the state of a list view item.|  
-|[CListCtrl::GetItemText](#clistctrl__getitemtext)|Retrieves the text of a list view item or subitem.|  
-|[CListCtrl::GetNextItem](#clistctrl__getnextitem)|Searches for a list view item with specified properties and with specified relationship to a given item.|  
-|[CListCtrl::GetNextItemIndex](#clistctrl__getnextitemindex)|Retrieves the index of the item in the current list-view control that has a specified set of properties.|  
-|[CListCtrl::GetNextSelectedItem](#clistctrl__getnextselecteditem)|Retrieves the index of a list view item position, and the position of the next selected list view item for iterating.|  
-|[CListCtrl::GetNumberOfWorkAreas](#clistctrl__getnumberofworkareas)|Retrieves the current number of working areas for a list view control.|  
-|[CListCtrl::GetOrigin](#clistctrl__getorigin)|Retrieves the current view origin for a list view control.|  
-|[CListCtrl::GetOutlineColor](#clistctrl__getoutlinecolor)|Retrieves the color of the border of a list view control.|  
-|[CListCtrl::GetSelectedColumn](#clistctrl__getselectedcolumn)|Retrieves the index of the currently selected column in the list control.|  
-|[CListCtrl::GetSelectedCount](#clistctrl__getselectedcount)|Retrieves the number of selected items in the list view control.|  
-|[CListCtrl::GetSelectionMark](#clistctrl__getselectionmark)|Retrieves the selection mark of a list view control.|  
-|[CListCtrl::GetStringWidth](#clistctrl__getstringwidth)|Determines the minimum column width necessary to display all of a given string.|  
-|[CListCtrl::GetSubItemRect](#clistctrl__getsubitemrect)|Retrieves the bounding rectangle of an item in a list view control.|  
-|[CListCtrl::GetTextBkColor](#clistctrl__gettextbkcolor)|Retrieves the text background color of a list view control.|  
-|[CListCtrl::GetTextColor](#clistctrl__gettextcolor)|Retrieves the text color of a list view control.|  
-|[CListCtrl::GetTileInfo](#clistctrl__gettileinfo)|Retrieves information about a tile in a list view control.|  
-|[CListCtrl::GetTileViewInfo](#clistctrl__gettileviewinfo)|Retrieves information about a list view control in tile view.|  
-|[CListCtrl::GetToolTips](#clistctrl__gettooltips)|Retrieves the tooltip control that the list view control uses to display tooltips.|  
-|[CListCtrl::GetTopIndex](#clistctrl__gettopindex)|Retrieves the index of the topmost visible item.|  
-|[CListCtrl::GetView](#clistctrl__getview)|Gets the view of the list view control.|  
-|[CListCtrl::GetViewRect](#clistctrl__getviewrect)|Retrieves the bounding rectangle of all items in the list view control.|  
-|[CListCtrl::GetWorkAreas](#clistctrl__getworkareas)|Retrieves the current working areas of a list view control.|  
-|[CListCtrl::HasGroup](#clistctrl__hasgroup)|Determines if the list view control has the specified group.|  
-|[CListCtrl::HitTest](#clistctrl__hittest)|Determines which list view item is at a specified position.|  
-|[CListCtrl::InsertColumn](#clistctrl__insertcolumn)|Inserts a new column in a list view control.|  
-|[CListCtrl::InsertGroup](#clistctrl__insertgroup)|Inserts a group into the list view control.|  
-|[CListCtrl::InsertGroupSorted](#clistctrl__insertgroupsorted)|Inserts the specified group into an ordered list of groups.|  
-|[CListCtrl::InsertItem](#clistctrl__insertitem)|Inserts a new item in a list view control.|  
-|[CListCtrl::InsertMarkHitTest](#clistctrl__insertmarkhittest)|Retrieves the insertion point closest to a specified point.|  
-|[CListCtrl::IsGroupViewEnabled](#clistctrl__isgroupviewenabled)|Determines whether group view is enabled for a list view control.|  
-|[CListCtrl::IsItemVisible](#clistctrl__isitemvisible)|Indicates whether a specified item in the current list-view control is visible.|  
-|[CListCtrl::MapIDToIndex](#clistctrl__mapidtoindex)|Maps the unique ID of an item in the current list-view control to an index.|  
-|[CListCtrl::MapIndexToID](#clistctrl__mapindextoid)|Maps the index of an item in the current list-view control to a unique ID.|  
-|[CListCtrl::MoveGroup](#clistctrl__movegroup)|Moves the specified group.|  
-|[CListCtrl::MoveItemToGroup](#clistctrl__moveitemtogroup)|Moves the specified group to the specified zero based index of the list view control.|  
-|[CListCtrl::RedrawItems](#clistctrl__redrawitems)|Forces a list view control to repaint a range of items.|  
-|[CListCtrl::RemoveAllGroups](#clistctrl__removeallgroups)|Removes all groups from a list view control.|  
-|[CListCtrl::RemoveGroup](#clistctrl__removegroup)|Removes the specified group from the list view control.|  
-|[CListCtrl::Scroll](#clistctrl__scroll)|Scrolls the content of a list view control.|  
-|[CListCtrl::SetBkColor](#clistctrl__setbkcolor)|Sets the background color of the list view control.|  
-|[CListCtrl::SetBkImage](#clistctrl__setbkimage)|Sets the current background image of a list view control.|  
-|[CListCtrl::SetCallbackMask](#clistctrl__setcallbackmask)|Sets the callback mask for a list view control.|  
-|[CListCtrl::SetCheck](#clistctrl__setcheck)|Sets the current display status of the state image associated with an item.|  
-|[CListCtrl::SetColumn](#clistctrl__setcolumn)|Sets the attributes of a list view column.|  
-|[CListCtrl::SetColumnOrderArray](#clistctrl__setcolumnorderarray)|Sets the column order (left to right) of a list view control.|  
-|[CListCtrl::SetColumnWidth](#clistctrl__setcolumnwidth)|Changes the width of a column in report view or list view.|  
-|[CListCtrl::SetExtendedStyle](#clistctrl__setextendedstyle)|Sets the current extended styles of a list view control.|  
-|[CListCtrl::SetGroupInfo](#clistctrl__setgroupinfo)|Sets the information for the specified group of a list view control.|  
-|[CListCtrl::SetGroupMetrics](#clistctrl__setgroupmetrics)|Sets the group metrics of a list view control.|  
-|[CListCtrl::SetHotCursor](#clistctrl__sethotcursor)|Sets the cursor used when hot tracking is enabled for a list view control.|  
-|[CListCtrl::SetHotItem](#clistctrl__sethotitem)|Sets the current hot item of a list view control.|  
-|[CListCtrl::SetHoverTime](#clistctrl__sethovertime)|Sets the current hover time of a list view control.|  
-|[CListCtrl::SetIconSpacing](#clistctrl__seticonspacing)|Sets the spacing between icons in a list view control.|  
-|[CListCtrl::SetImageList](#clistctrl__setimagelist)|Assigns an image list to a list view control.|  
-|[CListCtrl::SetInfoTip](#clistctrl__setinfotip)|Sets the tooltip text.|  
-|[CListCtrl::SetInsertMark](#clistctrl__setinsertmark)|Sets the insertion point to the defined position.|  
-|[CListCtrl::SetInsertMarkColor](#clistctrl__setinsertmarkcolor)|Sets the color of the insertion point.|  
-|[CListCtrl::SetItem](#clistctrl__setitem)|Sets some or all of a list view item's attributes.|  
-|[CListCtrl::SetItemCount](#clistctrl__setitemcount)|Prepares a list view control for adding a large number of items.|  
-|[CListCtrl::SetItemCountEx](#clistctrl__setitemcountex)|Sets the item count for a virtual list view control.|  
-|[CListCtrl::SetItemData](#clistctrl__setitemdata)|Sets the item's application-specific value.|  
-|[CListCtrl::SetItemIndexState](#clistctrl__setitemindexstate)|Sets the state of an item in the current list-view control.|  
-|[CListCtrl::SetItemPosition](#clistctrl__setitemposition)|Moves an item to a specified position in a list view control.|  
-|[CListCtrl::SetItemState](#clistctrl__setitemstate)|Changes the state of an item in a list view control.|  
-|[CListCtrl::SetItemText](#clistctrl__setitemtext)|Changes the text of a list view item or subitem.|  
-|[CListCtrl::SetOutlineColor](#clistctrl__setoutlinecolor)|Sets the color of the border of a list view control.|  
-|[CListCtrl::SetSelectedColumn](#clistctrl__setselectedcolumn)|Sets the selected column of the list view control.|  
-|[CListCtrl::SetSelectionMark](#clistctrl__setselectionmark)|Sets the selection mark of a list view control.|  
-|[CListCtrl::SetTextBkColor](#clistctrl__settextbkcolor)|Sets the background color of text in a list view control.|  
-|[CListCtrl::SetTextColor](#clistctrl__settextcolor)|Sets the text color of a list view control.|  
-|[CListCtrl::SetTileInfo](#clistctrl__settileinfo)|Sets the information for a tile of the list view control.|  
-|[CListCtrl::SetTileViewInfo](#clistctrl__settileviewinfo)|Sets information that a list view control uses in tile view.|  
-|[CListCtrl::SetToolTips](#clistctrl__settooltips)|Sets the tooltip control that the list view control will use to display tooltips.|  
-|[CListCtrl::SetView](#clistctrl__setview)|Sets the view of the list view control.|  
-|[CListCtrl::SetWorkAreas](#clistctrl__setworkareas)|Sets the area where icons can be displayed in a list view control.|  
-|[CListCtrl::SortGroups](#clistctrl__sortgroups)|Sorts the groups of a list view control with a user-defined function.|  
-|[CListCtrl::SortItems](#clistctrl__sortitems)|Sorts list view items using an application-defined comparison function.|  
-|[CListCtrl::SortItemsEx](#clistctrl__sortitemsex)|Sorts list view items using an application-defined comparison function.|  
-|[CListCtrl::SubItemHitTest](#clistctrl__subitemhittest)|Determines which list view item, if any, is at a given position.|  
-|[CListCtrl::Update](#clistctrl__update)|Forces the control to repaint a specified item.|  
+|[CListCtrl::ApproximateViewRect](#approximateviewrect)|Determines the width and height required to display the items of a list view control.|  
+|[CListCtrl::Arrange](#arrange)|Aligns items on a grid.|  
+|[CListCtrl::CancelEditLabel](#canceleditlabel)|Cancels item text editing operation.|  
+|[CListCtrl::Create](#create)|Creates a list control and attaches it to a `CListCtrl` object.|  
+|[CListCtrl::CreateDragImage](#createdragimage)|Creates a drag image list for a specified item.|  
+|[CListCtrl::CreateEx](#createex)|Creates a list control with the specified Windows extended styles and attaches it to a `CListCtrl` object.|  
+|[CListCtrl::DeleteAllItems](#deleteallitems)|Deletes all items from the control.|  
+|[CListCtrl::DeleteColumn](#deletecolumn)|Deletes a column from the list view control.|  
+|[CListCtrl::DeleteItem](#deleteitem)|Deletes an item from the control.|  
+|[CListCtrl::DrawItem](#drawitem)|Called when a visual aspect of an owner-draw control changes.|  
+|[CListCtrl::EditLabel](#editlabel)|Begins in-place editing of an item's text.|  
+|[CListCtrl::EnableGroupView](#enablegroupview)|Enables or disables whether the items in a list view control display as a group.|  
+|[CListCtrl::EnsureVisible](#ensurevisible)|Ensures that an item is visible.|  
+|[CListCtrl::FindItem](#finditem)|Searches for a list view item having specified characteristics.|  
+|[CListCtrl::GetBkColor](#getbkcolor)|Retrieves the background color of a list view control.|  
+|[CListCtrl::GetBkImage](#getbkimage)|Retrieves the current background image of a list view control.|  
+|[CListCtrl::GetCallbackMask](#getcallbackmask)|Retrieves the callback mask for a list view control.|  
+|[CListCtrl::GetCheck](#getcheck)|Retrieves the current display status of the state image associated with an item.|  
+|[CListCtrl::GetColumn](#getcolumn)|Retrieves the attributes of a control's column.|  
+|[CListCtrl::GetColumnOrderArray](#getcolumnorderarray)|Retrieves the column order (left to right) of a list view control.|  
+|[CListCtrl::GetColumnWidth](#getcolumnwidth)|Retrieves the width of a column in report view or list view.|  
+|[CListCtrl::GetCountPerPage](#getcountperpage)|Calculates the number of items that can fit vertically in a list view control.|  
+|[CListCtrl::GetEditControl](#geteditcontrol)|Retrieves the handle of the edit control used to edit an item's text.|  
+|[CListCtrl::GetEmptyText](#getemptytext)|Retrieves the string to display if the current list-view control is empty.|  
+|[CListCtrl::GetExtendedStyle](#getextendedstyle)|Retrieves the current extended styles of a list view control.|  
+|[CListCtrl::GetFirstSelectedItemPosition](#getfirstselecteditemposition)|Retrieves the position of the first selected list view item in a list view control.|  
+|[CListCtrl::GetFocusedGroup](#getfocusedgroup)|Retrieves the group that has the keyboard focus in the current list-view control.|  
+|[CListCtrl::GetGroupCount](#getgroupcount)|Retrieves the number of groups in the current list-view control.|  
+|[CListCtrl::GetGroupInfo](#getgroupinfo)|Gets the information for a specified group of the list view control.|  
+|[CListCtrl::GetGroupInfoByIndex](#getgroupinfobyindex)|Retrieves information about a specified group in the current list-view control.|  
+|[CListCtrl::GetGroupMetrics](#getgroupmetrics)|Retrieves the metrics of a group.|  
+|[CListCtrl::GetGroupRect](#getgrouprect)|Retrieves the bounding rectangle for a specified group in the current list-view control.|  
+|[CListCtrl::GetGroupState](#getgroupstate)|Retrieves the state for a specified group in the current list-view control.|  
+|[CListCtrl::GetHeaderCtrl](#getheaderctrl)|Retrieves the header control of a list view control.|  
+|[CListCtrl::GetHotCursor](#gethotcursor)|Retrieves the cursor used when hot tracking is enabled for a list view control.|  
+|[CListCtrl::GetHotItem](#gethotitem)|Retrieves the list view item currently under the cursor.|  
+|[CListCtrl::GetHoverTime](#gethovertime)|Retrieves the current hover time of a list view control.|  
+|[CListCtrl::GetImageList](#getimagelist)|Retrieves the handle of an image list used for drawing list view items.|  
+|[CListCtrl::GetInsertMark](#getinsertmark)|Retrieves the current position of the insertion mark.|  
+|[CListCtrl::GetInsertMarkColor](#getinsertmarkcolor)|Retrieves the current color of the insertion mark.|  
+|[CListCtrl::GetInsertMarkRect](#getinsertmarkrect)|Retrieves the rectangle that bounds the insertion point.|  
+|[CListCtrl::GetItem](#getitem)|Retrieves a list view item's attributes.|  
+|[CListCtrl::GetItemCount](#getitemcount)|Retrieves the number of items in a list view control.|  
+|[CListCtrl::GetItemData](#getitemdata)|Retrieves the application-specific value associated with an item.|  
+|[CListCtrl::GetItemIndexRect](#getitemindexrect)|Retrieves the bounding rectangle for all or part of a subitem in the current list-view control.|  
+|[CListCtrl::GetItemPosition](#getitemposition)|Retrieves the position of a list view item.|  
+|[CListCtrl::GetItemRect](#getitemrect)|Retrieves the bounding rectangle for an item.|  
+|[CListCtrl::GetItemSpacing](#getitemspacing)|Calculates the spacing between items in the current list-view control.|  
+|[CListCtrl::GetItemState](#getitemstate)|Retrieves the state of a list view item.|  
+|[CListCtrl::GetItemText](#getitemtext)|Retrieves the text of a list view item or subitem.|  
+|[CListCtrl::GetNextItem](#getnextitem)|Searches for a list view item with specified properties and with specified relationship to a given item.|  
+|[CListCtrl::GetNextItemIndex](#getnextitemindex)|Retrieves the index of the item in the current list-view control that has a specified set of properties.|  
+|[CListCtrl::GetNextSelectedItem](#getnextselecteditem)|Retrieves the index of a list view item position, and the position of the next selected list view item for iterating.|  
+|[CListCtrl::GetNumberOfWorkAreas](#getnumberofworkareas)|Retrieves the current number of working areas for a list view control.|  
+|[CListCtrl::GetOrigin](#getorigin)|Retrieves the current view origin for a list view control.|  
+|[CListCtrl::GetOutlineColor](#getoutlinecolor)|Retrieves the color of the border of a list view control.|  
+|[CListCtrl::GetSelectedColumn](#getselectedcolumn)|Retrieves the index of the currently selected column in the list control.|  
+|[CListCtrl::GetSelectedCount](#getselectedcount)|Retrieves the number of selected items in the list view control.|  
+|[CListCtrl::GetSelectionMark](#getselectionmark)|Retrieves the selection mark of a list view control.|  
+|[CListCtrl::GetStringWidth](#getstringwidth)|Determines the minimum column width necessary to display all of a given string.|  
+|[CListCtrl::GetSubItemRect](#getsubitemrect)|Retrieves the bounding rectangle of an item in a list view control.|  
+|[CListCtrl::GetTextBkColor](#gettextbkcolor)|Retrieves the text background color of a list view control.|  
+|[CListCtrl::GetTextColor](#gettextcolor)|Retrieves the text color of a list view control.|  
+|[CListCtrl::GetTileInfo](#gettileinfo)|Retrieves information about a tile in a list view control.|  
+|[CListCtrl::GetTileViewInfo](#gettileviewinfo)|Retrieves information about a list view control in tile view.|  
+|[CListCtrl::GetToolTips](#gettooltips)|Retrieves the tooltip control that the list view control uses to display tooltips.|  
+|[CListCtrl::GetTopIndex](#gettopindex)|Retrieves the index of the topmost visible item.|  
+|[CListCtrl::GetView](#getview)|Gets the view of the list view control.|  
+|[CListCtrl::GetViewRect](#getviewrect)|Retrieves the bounding rectangle of all items in the list view control.|  
+|[CListCtrl::GetWorkAreas](#getworkareas)|Retrieves the current working areas of a list view control.|  
+|[CListCtrl::HasGroup](#hasgroup)|Determines if the list view control has the specified group.|  
+|[CListCtrl::HitTest](#hittest)|Determines which list view item is at a specified position.|  
+|[CListCtrl::InsertColumn](#insertcolumn)|Inserts a new column in a list view control.|  
+|[CListCtrl::InsertGroup](#insertgroup)|Inserts a group into the list view control.|  
+|[CListCtrl::InsertGroupSorted](#insertgroupsorted)|Inserts the specified group into an ordered list of groups.|  
+|[CListCtrl::InsertItem](#insertitem)|Inserts a new item in a list view control.|  
+|[CListCtrl::InsertMarkHitTest](#insertmarkhittest)|Retrieves the insertion point closest to a specified point.|  
+|[CListCtrl::IsGroupViewEnabled](#isgroupviewenabled)|Determines whether group view is enabled for a list view control.|  
+|[CListCtrl::IsItemVisible](#isitemvisible)|Indicates whether a specified item in the current list-view control is visible.|  
+|[CListCtrl::MapIDToIndex](#mapidtoindex)|Maps the unique ID of an item in the current list-view control to an index.|  
+|[CListCtrl::MapIndexToID](#mapindextoid)|Maps the index of an item in the current list-view control to a unique ID.|  
+|[CListCtrl::MoveGroup](#movegroup)|Moves the specified group.|  
+|[CListCtrl::MoveItemToGroup](#moveitemtogroup)|Moves the specified group to the specified zero based index of the list view control.|  
+|[CListCtrl::RedrawItems](#redrawitems)|Forces a list view control to repaint a range of items.|  
+|[CListCtrl::RemoveAllGroups](#removeallgroups)|Removes all groups from a list view control.|  
+|[CListCtrl::RemoveGroup](#removegroup)|Removes the specified group from the list view control.|  
+|[CListCtrl::Scroll](#scroll)|Scrolls the content of a list view control.|  
+|[CListCtrl::SetBkColor](#setbkcolor)|Sets the background color of the list view control.|  
+|[CListCtrl::SetBkImage](#setbkimage)|Sets the current background image of a list view control.|  
+|[CListCtrl::SetCallbackMask](#setcallbackmask)|Sets the callback mask for a list view control.|  
+|[CListCtrl::SetCheck](#setcheck)|Sets the current display status of the state image associated with an item.|  
+|[CListCtrl::SetColumn](#setcolumn)|Sets the attributes of a list view column.|  
+|[CListCtrl::SetColumnOrderArray](#setcolumnorderarray)|Sets the column order (left to right) of a list view control.|  
+|[CListCtrl::SetColumnWidth](#setcolumnwidth)|Changes the width of a column in report view or list view.|  
+|[CListCtrl::SetExtendedStyle](#setextendedstyle)|Sets the current extended styles of a list view control.|  
+|[CListCtrl::SetGroupInfo](#setgroupinfo)|Sets the information for the specified group of a list view control.|  
+|[CListCtrl::SetGroupMetrics](#setgroupmetrics)|Sets the group metrics of a list view control.|  
+|[CListCtrl::SetHotCursor](#sethotcursor)|Sets the cursor used when hot tracking is enabled for a list view control.|  
+|[CListCtrl::SetHotItem](#sethotitem)|Sets the current hot item of a list view control.|  
+|[CListCtrl::SetHoverTime](#sethovertime)|Sets the current hover time of a list view control.|  
+|[CListCtrl::SetIconSpacing](#seticonspacing)|Sets the spacing between icons in a list view control.|  
+|[CListCtrl::SetImageList](#setimagelist)|Assigns an image list to a list view control.|  
+|[CListCtrl::SetInfoTip](#setinfotip)|Sets the tooltip text.|  
+|[CListCtrl::SetInsertMark](#setinsertmark)|Sets the insertion point to the defined position.|  
+|[CListCtrl::SetInsertMarkColor](#setinsertmarkcolor)|Sets the color of the insertion point.|  
+|[CListCtrl::SetItem](#setitem)|Sets some or all of a list view item's attributes.|  
+|[CListCtrl::SetItemCount](#setitemcount)|Prepares a list view control for adding a large number of items.|  
+|[CListCtrl::SetItemCountEx](#setitemcountex)|Sets the item count for a virtual list view control.|  
+|[CListCtrl::SetItemData](#setitemdata)|Sets the item's application-specific value.|  
+|[CListCtrl::SetItemIndexState](#setitemindexstate)|Sets the state of an item in the current list-view control.|  
+|[CListCtrl::SetItemPosition](#setitemposition)|Moves an item to a specified position in a list view control.|  
+|[CListCtrl::SetItemState](#setitemstate)|Changes the state of an item in a list view control.|  
+|[CListCtrl::SetItemText](#setitemtext)|Changes the text of a list view item or subitem.|  
+|[CListCtrl::SetOutlineColor](#setoutlinecolor)|Sets the color of the border of a list view control.|  
+|[CListCtrl::SetSelectedColumn](#setselectedcolumn)|Sets the selected column of the list view control.|  
+|[CListCtrl::SetSelectionMark](#setselectionmark)|Sets the selection mark of a list view control.|  
+|[CListCtrl::SetTextBkColor](#settextbkcolor)|Sets the background color of text in a list view control.|  
+|[CListCtrl::SetTextColor](#settextcolor)|Sets the text color of a list view control.|  
+|[CListCtrl::SetTileInfo](#settileinfo)|Sets the information for a tile of the list view control.|  
+|[CListCtrl::SetTileViewInfo](#settileviewinfo)|Sets information that a list view control uses in tile view.|  
+|[CListCtrl::SetToolTips](#settooltips)|Sets the tooltip control that the list view control will use to display tooltips.|  
+|[CListCtrl::SetView](#setview)|Sets the view of the list view control.|  
+|[CListCtrl::SetWorkAreas](#setworkareas)|Sets the area where icons can be displayed in a list view control.|  
+|[CListCtrl::SortGroups](#sortgroups)|Sorts the groups of a list view control with a user-defined function.|  
+|[CListCtrl::SortItems](#sortitems)|Sorts list view items using an application-defined comparison function.|  
+|[CListCtrl::SortItemsEx](#sortitemsex)|Sorts list view items using an application-defined comparison function.|  
+|[CListCtrl::SubItemHitTest](#subitemhittest)|Determines which list view item, if any, is at a given position.|  
+|[CListCtrl::Update](#update)|Forces the control to repaint a specified item.|  
   
 ## Remarks  
  In addition to an icon and label, each item can have information displayed in columns to the right of the icon and label. This control (and therefore the `CListCtrl` class) is available only to programs running under Windows 95/98 and Windows NT version 3.51 and later.  
@@ -247,7 +247,7 @@ class CListCtrl : public CWnd
 ## Items and Subitems  
  Each item in a list view control consists of an icon (from an image list), a label, a current state, and an application-defined value (referred to as "item data"). One or more subitems can also be associated with each item. A "subitem" is a string that, in report view, can be displayed in a column to the right of an item's icon and label. All items in a list view control must have the same number of subitems.  
   
- Class **CListCtrl** provides several functions for inserting, deleting, finding, and modifying these items. For more information, see [CListCtrl::GetItem](#clistctrl__getitem), [CListCtrl::InsertItem](#clistctrl__insertitem), and [CListCtrl::FindItem](#clistctrl__finditem), [Adding Items to the Control](../adding-items-to-the-control.md), and [Scrolling, Arranging, Sorting, and Finding in list controls](../scrolling-arranging-sorting-and-finding-in-list-controls.md).  
+ Class **CListCtrl** provides several functions for inserting, deleting, finding, and modifying these items. For more information, see [CListCtrl::GetItem](#getitem), [CListCtrl::InsertItem](#insertitem), and [CListCtrl::FindItem](#finditem), [Adding Items to the Control](../adding-items-to-the-control.md), and [Scrolling, Arranging, Sorting, and Finding in list controls](../scrolling-arranging-sorting-and-finding-in-list-controls.md).  
   
  By default, the list view control is responsible for storing an item's icon and text attributes. However, in addition to these item types, class `CListCtrl` supports "callback items." A "callback item" is a list view item for which the application — rather than the control — stores the text, icon, or both. A callback mask is used to specify which item attributes (text and/or icon) are supplied by the application. If an application uses callback items, it must be able to supply the text and/or icon attributes on demand. Callback items are helpful when your application already maintains some of this information. For more information, see [Using CListCtrl: Callback Items and the Callback Mask](../callback-items-and-the-callback-mask.md).  
   
@@ -284,7 +284,7 @@ class CListCtrl : public CWnd
 ## Requirements  
  **Header:** afxcmn.h  
   
-##  <a name="clistctrl__approximateviewrect"></a>  CListCtrl::ApproximateViewRect  
+##  <a name="approximateviewrect"></a>  CListCtrl::ApproximateViewRect  
  Determines the width and height required to display the items of a list view control.  
   
 ```  
@@ -309,7 +309,7 @@ CSize ApproximateViewRect(
 ### Remarks  
  This member function implements the behavior of the Win32 macro, [ListView_ApproximateViewRect](http://msdn.microsoft.com/library/windows/desktop/bb761231), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__arrange"></a>  CListCtrl::Arrange  
+##  <a name="arrange"></a>  CListCtrl::Arrange  
  Repositions items in an icon view so that they align on a grid.  
   
 ```  
@@ -346,7 +346,7 @@ BOOL Arrange(UINT nCode);
 ```
 
   
-##  <a name="clistctrl__canceleditlabel"></a>  CListCtrl::CancelEditLabel  
+##  <a name="canceleditlabel"></a>  CListCtrl::CancelEditLabel  
  Cancels item text editing operation.  
   
 ```  
@@ -356,14 +356,14 @@ void CancelEditLabel();
 ### Remarks  
  This member function emulates the functionality of the [LVM_CANCELEDITLABEL](http://msdn.microsoft.com/library/windows/desktop/bb774886) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__clistctrl"></a>  CListCtrl::CListCtrl  
+##  <a name="clistctrl"></a>  CListCtrl::CListCtrl  
  Constructs a `CListCtrl` object.  
   
 ```  
 CListCtrl();
 ```  
   
-##  <a name="clistctrl__create"></a>  CListCtrl::Create  
+##  <a name="create"></a>  CListCtrl::Create  
  Creates a list control and attaches it to a `CListCtrl` object.  
   
 ```  
@@ -376,7 +376,7 @@ virtual BOOL Create(
   
 ### Parameters  
  `dwStyle`  
- Specifies the list control's style. Apply any combination of list control styles to the control. See [List view window styles](http://msdn.microsoft.com/library/windows/desktop/bb774739) in the [!INCLUDE[winSDK](./includes/winsdk_md.md)] for a complete list of these styles. Set extended styles specific to a control using [SetExtendedStyle](#clistctrl__setextendedstyle).  
+ Specifies the list control's style. Apply any combination of list control styles to the control. See [List view window styles](http://msdn.microsoft.com/library/windows/desktop/bb774739) in the [!INCLUDE[winSDK](./includes/winsdk_md.md)] for a complete list of these styles. Set extended styles specific to a control using [SetExtendedStyle](#setextendedstyle).  
   
  `rect`  
  Specifies the list control's size and position. It can be either a `CRect` object or a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure.  
@@ -393,7 +393,7 @@ virtual BOOL Create(
 ### Remarks  
  You construct a `CListCtrl` in two steps. First, call the constructor and then call **Create**, which creates the list view control and attaches it to the `CListCtrl` object.  
   
- To apply extended Windows styles to the list control object, call [CreateEx](#clistctrl__createex) instead of **Create**.  
+ To apply extended Windows styles to the list control object, call [CreateEx](#createex) instead of **Create**.  
   
 ### Example  
 
@@ -404,7 +404,7 @@ virtual BOOL Create(
 ```
 
   
-##  <a name="clistctrl__createex"></a>  CListCtrl::CreateEx  
+##  <a name="createex"></a>  CListCtrl::CreateEx  
  Creates a control (a child window) and associates it with the `CListCtrl` object.  
   
 ```  
@@ -436,11 +436,11 @@ virtual BOOL CreateEx(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- Use `CreateEx` instead of [Create](#clistctrl__create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
+ Use `CreateEx` instead of [Create](#create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
   
- `CreateEx` creates the control with the extended Windows styles specified by `dwExStyle`. To set extended styles specific to a control, call [SetExtendedStyle](#clistctrl__setextendedstyle). For example, use `CreateEx` to set such styles as **WS_EX_CONTEXTHELP**, but use `SetExtendedStyle` to set such styles as **LVS_EX_FULLROWSELECT**. For more information, see the styles described in the topic [Extended List View Styles](http://msdn.microsoft.com/library/windows/desktop/bb774732) in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
+ `CreateEx` creates the control with the extended Windows styles specified by `dwExStyle`. To set extended styles specific to a control, call [SetExtendedStyle](#setextendedstyle). For example, use `CreateEx` to set such styles as **WS_EX_CONTEXTHELP**, but use `SetExtendedStyle` to set such styles as **LVS_EX_FULLROWSELECT**. For more information, see the styles described in the topic [Extended List View Styles](http://msdn.microsoft.com/library/windows/desktop/bb774732) in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__createdragimage"></a>  CListCtrl::CreateDragImage  
+##  <a name="createdragimage"></a>  CListCtrl::CreateDragImage  
  Creates a drag image list for the item specified by `nItem`.  
   
 ```  
@@ -472,7 +472,7 @@ CImageList* CreateDragImage(
 ```
 
   
-##  <a name="clistctrl__deleteallitems"></a>  CListCtrl::DeleteAllItems  
+##  <a name="deleteallitems"></a>  CListCtrl::DeleteAllItems  
  Deletes all items from the list view control.  
   
 ```  
@@ -491,7 +491,7 @@ BOOL DeleteAllItems();
 ```
 
   
-##  <a name="clistctrl__deletecolumn"></a>  CListCtrl::DeleteColumn  
+##  <a name="deletecolumn"></a>  CListCtrl::DeleteColumn  
  Deletes a column from the list view control.  
   
 ```  
@@ -518,7 +518,7 @@ BOOL DeleteColumn(int nCol);
 ```
 
   
-##  <a name="clistctrl__deleteitem"></a>  CListCtrl::DeleteItem  
+##  <a name="deleteitem"></a>  CListCtrl::DeleteItem  
  Deletes an item from a list view control.  
   
 ```  
@@ -544,7 +544,7 @@ BOOL DeleteItem(int nItem);
 ```
 
   
-##  <a name="clistctrl__drawitem"></a>  CListCtrl::DrawItem  
+##  <a name="drawitem"></a>  CListCtrl::DrawItem  
  Called by the framework when a visual aspect of an owner-draw list view control changes.  
   
 ```  
@@ -562,7 +562,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
   
  The application should restore all graphics device interface (GDI) objects selected for the display context supplied in `lpDrawItemStruct` before this member function terminates.  
   
-##  <a name="clistctrl__editlabel"></a>  CListCtrl::EditLabel  
+##  <a name="editlabel"></a>  CListCtrl::EditLabel  
  Begins in-place editing of an item's text.  
   
 ```  
@@ -593,7 +593,7 @@ CEdit* EditLabel(int nItem);
 ```
 
   
-##  <a name="clistctrl__enablegroupview"></a>  CListCtrl::EnableGroupView  
+##  <a name="enablegroupview"></a>  CListCtrl::EnableGroupView  
  Enables or disables whether the items in a list view control display as a group.  
   
 ```  
@@ -616,7 +616,7 @@ LRESULT EnableGroupView(BOOL fEnable);
 ### Remarks  
  This member function emulates the functionality of the [LVM_ENABLEGROUPVIEW](http://msdn.microsoft.com/library/windows/desktop/bb774900) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__ensurevisible"></a>  CListCtrl::EnsureVisible  
+##  <a name="ensurevisible"></a>  CListCtrl::EnsureVisible  
  Ensures that a list view item is at least partially visible.  
   
 ```  
@@ -647,7 +647,7 @@ BOOL EnsureVisible(
 ```
 
   
-##  <a name="clistctrl__finditem"></a>  CListCtrl::FindItem  
+##  <a name="finditem"></a>  CListCtrl::FindItem  
  Searches for a list view item having specified characteristics.  
   
 ```  
@@ -688,7 +688,7 @@ int FindItem(
 ```
 
   
-##  <a name="clistctrl__getbkcolor"></a>  CListCtrl::GetBkColor  
+##  <a name="getbkcolor"></a>  CListCtrl::GetBkColor  
  Retrieves the background color of a list view control.  
   
 ```  
@@ -701,9 +701,9 @@ COLORREF GetBkColor() const;
  A 32-bit value used to specify an RGB color.  
   
 ### Example  
-  See the example for [CListCtrl::SetBkColor](#clistctrl__setbkcolor).  
+  See the example for [CListCtrl::SetBkColor](#setbkcolor).  
   
-##  <a name="clistctrl__getbkimage"></a>  CListCtrl::GetBkImage  
+##  <a name="getbkimage"></a>  CListCtrl::GetBkImage  
  Retrieves the current background image of a list view control.  
   
 ```  
@@ -738,7 +738,7 @@ BOOL GetBkImage(LVBKIMAGE* plvbkImage) const;
 ```
 
   
-##  <a name="clistctrl__getcallbackmask"></a>  CListCtrl::GetCallbackMask  
+##  <a name="getcallbackmask"></a>  CListCtrl::GetCallbackMask  
  Retrieves the callback mask for a list view control.  
   
 ```  
@@ -754,9 +754,9 @@ UINT GetCallbackMask() const;
  A "callback item" is a list view item for which the application — rather than the control — stores the text, icon, or both. Although a list view control can store these attributes for you, you may want to use callback items if your application already maintains some of this information. The callback mask specifies which item state bits are maintained by the application, and it applies to the whole control rather than to a specific item. The callback mask is zero by default, meaning that the control tracks all item states. If an application uses callback items or specifies a nonzero callback mask, it must be able to supply list view item attributes on demand.  
   
 ### Example  
-  See the example for [CListCtrl::SetCallbackMask](#clistctrl__setcallbackmask).  
+  See the example for [CListCtrl::SetCallbackMask](#setcallbackmask).  
   
-##  <a name="clistctrl__getcheck"></a>  CListCtrl::GetCheck  
+##  <a name="getcheck"></a>  CListCtrl::GetCheck  
  Retrieves the current display status of the state image that is associated with an item.  
   
 ```  
@@ -776,9 +776,9 @@ BOOL GetCheck(int nItem) const;
  This member function implements the behavior of the Win32 macro, [ListView_GetCheckState](http://msdn.microsoft.com/library/windows/desktop/bb761250), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
 ### Example  
-  See the example for [CListCtrl::SetCheck](#clistctrl__setcheck).  
+  See the example for [CListCtrl::SetCheck](#setcheck).  
   
-##  <a name="clistctrl__getcolumn"></a>  CListCtrl::GetColumn  
+##  <a name="getcolumn"></a>  CListCtrl::GetColumn  
  Retrieves the attributes of a list view control's column.  
   
 ```  
@@ -818,7 +818,7 @@ BOOL GetColumn(
 ```
 
   
-##  <a name="clistctrl__getcolumnorderarray"></a>  CListCtrl::GetColumnOrderArray  
+##  <a name="getcolumnorderarray"></a>  CListCtrl::GetColumnOrderArray  
  Retrieves the column order (left to right) of a list view control.  
   
 ```  
@@ -870,7 +870,7 @@ BOOL GetColumnOrderArray(
 ```
 
   
-##  <a name="clistctrl__getcolumnwidth"></a>  CListCtrl::GetColumnWidth  
+##  <a name="getcolumnwidth"></a>  CListCtrl::GetColumnWidth  
  Retrieves the width of a column in report view or list view.  
   
 ```  
@@ -895,7 +895,7 @@ int GetColumnWidth(int nCol) const;
 ```
 
   
-##  <a name="clistctrl__getcountperpage"></a>  CListCtrl::GetCountPerPage  
+##  <a name="getcountperpage"></a>  CListCtrl::GetCountPerPage  
  Calculates the number of items that can fit vertically in the visible area of a list view control when in list view or report view.  
   
 ```  
@@ -908,9 +908,9 @@ int GetCountPerPage() const;
  The number of items that can fit vertically in the visible area of a list view control when in list view or report view.  
   
 ### Example  
-  See the example for [CListCtrl::GetTopIndex](#clistctrl__gettopindex).  
+  See the example for [CListCtrl::GetTopIndex](#gettopindex).  
   
-##  <a name="clistctrl__geteditcontrol"></a>  CListCtrl::GetEditControl  
+##  <a name="geteditcontrol"></a>  CListCtrl::GetEditControl  
  Retrieves the handle of the edit control used to edit a list view item's text.  
   
 ```  
@@ -938,7 +938,7 @@ CEdit* GetEditControl() const;
 ```
 
   
-##  <a name="clistctrl__getemptytext"></a>  CListCtrl::GetEmptyText  
+##  <a name="getemptytext"></a>  CListCtrl::GetEmptyText  
  Retrieves the string to display if the current list-view control is empty.  
   
 ```  
@@ -953,7 +953,7 @@ CString GetEmptyText() const;
 ### Remarks  
  This method sends the [LVM_GETEMPTYTEXT](http://msdn.microsoft.com/library/windows/desktop/bb774921) message, which is described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__getextendedstyle"></a>  CListCtrl::GetExtendedStyle  
+##  <a name="getextendedstyle"></a>  CListCtrl::GetExtendedStyle  
  Retrieves the current extended styles of a list view control.  
   
 ```  
@@ -967,9 +967,9 @@ DWORD GetExtendedStyle();
  This member function implements the behavior of the Win32 macro, [ListView_GetExtendedListViewStyle](http://msdn.microsoft.com/library/windows/desktop/bb761264), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
 ### Example  
-  See the example for [CListCtrl::SetExtendedStyle](#clistctrl__setextendedstyle).  
+  See the example for [CListCtrl::SetExtendedStyle](#setextendedstyle).  
   
-##  <a name="clistctrl__getfirstselecteditemposition"></a>  CListCtrl::GetFirstSelectedItemPosition  
+##  <a name="getfirstselecteditemposition"></a>  CListCtrl::GetFirstSelectedItemPosition  
  Gets the position of the first selected item in the list view control.  
   
 ```  
@@ -1003,7 +1003,7 @@ POSITION GetFirstSelectedItemPosition() const;
 ```
 
   
-##  <a name="clistctrl__getfocusedgroup"></a>  CListCtrl::GetFocusedGroup  
+##  <a name="getfocusedgroup"></a>  CListCtrl::GetFocusedGroup  
  Retrieves the group that has the keyboard focus in the current list-view control.  
   
 ```  
@@ -1018,7 +1018,7 @@ int GetFocusedGroup() const;
 ### Remarks  
  This method sends the [LVM_GETFOCUSEDGROUP](http://msdn.microsoft.com/library/windows/desktop/bb774925) message, which is described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)]. For more information, see the `LVGS_FOCUSED` value of the `state` member of the [LVGROUP](http://msdn.microsoft.com/library/windows/desktop/bb774769) structure.  
   
-##  <a name="clistctrl__getgroupcount"></a>  CListCtrl::GetGroupCount  
+##  <a name="getgroupcount"></a>  CListCtrl::GetGroupCount  
  Retrieves the number of groups in the current list-view control.  
   
 ```  
@@ -1033,7 +1033,7 @@ int GetGroupCount()const;
 ### Remarks  
  This method sends the [LVM_GETGROUPCOUNT](http://msdn.microsoft.com/library/windows/desktop/bb774931) message, which is described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)] -->.  
   
-##  <a name="clistctrl__getgroupinfo"></a>  CListCtrl::GetGroupInfo  
+##  <a name="getgroupinfo"></a>  CListCtrl::GetGroupInfo  
  Gets the information for a specified group of the list view control.  
   
 ```  
@@ -1057,7 +1057,7 @@ int GetGroupInfo(
 ### Remarks  
  This member function emulates the functionality of the [LVM_GETGROUPINFO](http://msdn.microsoft.com/library/windows/desktop/bb774932) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__getgroupinfobyindex"></a>  CListCtrl::GetGroupInfoByIndex  
+##  <a name="getgroupinfobyindex"></a>  CListCtrl::GetGroupInfoByIndex  
  Retrieves information about a specified group in the current list-view control.  
   
 ```  
@@ -1124,7 +1124,7 @@ public:
 ```
 
   
-##  <a name="clistctrl__getgroupmetrics"></a>  CListCtrl::GetGroupMetrics  
+##  <a name="getgroupmetrics"></a>  CListCtrl::GetGroupMetrics  
  Retrieves the metrics of a group.  
   
 ```  
@@ -1140,7 +1140,7 @@ void GetGroupMetrics(PLVGROUPMETRICS pGroupMetrics) const;
 ### Remarks  
  This member function emulates the functionality of the [LVM_GETGROUPMETRICS](http://msdn.microsoft.com/library/windows/desktop/bb774934) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__getgrouprect"></a>  CListCtrl::GetGroupRect  
+##  <a name="getgrouprect"></a>  CListCtrl::GetGroupRect  
  Retrieves the bounding rectangle for a specified group in the current list-view control.  
   
 ```  
@@ -1202,7 +1202,7 @@ public:
 ```
 
   
-##  <a name="clistctrl__getgroupstate"></a>  CListCtrl::GetGroupState  
+##  <a name="getgroupstate"></a>  CListCtrl::GetGroupState  
  Retrieves the state for a specified group in the current list-view control.  
   
 ```  
@@ -1228,7 +1228,7 @@ UINT GetGroupState(
   
  This method sends the [LVM_GETGROUPSTATE](http://msdn.microsoft.com/library/windows/desktop/bb774936) message, which is described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)]. For more information, see the [ListView_GetGroupState](http://msdn.microsoft.com/library/windows/desktop/bb761288) macro.  
   
-##  <a name="clistctrl__getheaderctrl"></a>  CListCtrl::GetHeaderCtrl  
+##  <a name="getheaderctrl"></a>  CListCtrl::GetHeaderCtrl  
  Retrieves the header control of a list view control.  
   
 ```  
@@ -1242,9 +1242,9 @@ CHeaderCtrl* GetHeaderCtrl();
  This member function implements the behavior of the Win32 macro, [ListView_GetHeader](http://msdn.microsoft.com/library/windows/desktop/bb761290), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
 ### Example  
-  See the example for [CListCtrl::GetColumnOrderArray](#clistctrl__getcolumnorderarray).  
+  See the example for [CListCtrl::GetColumnOrderArray](#getcolumnorderarray).  
   
-##  <a name="clistctrl__gethotcursor"></a>  CListCtrl::GetHotCursor  
+##  <a name="gethotcursor"></a>  CListCtrl::GetHotCursor  
  Retrieves the cursor used when hot tracking is enabled for a list view control.  
   
 ```  
@@ -1269,7 +1269,7 @@ HCURSOR GetHotCursor();
 ```
 
   
-##  <a name="clistctrl__gethotitem"></a>  CListCtrl::GetHotItem  
+##  <a name="gethotitem"></a>  CListCtrl::GetHotItem  
  Retrieves the list view item currently under the cursor.  
   
 ```  
@@ -1296,7 +1296,7 @@ int GetHotItem();
 ```
 
   
-##  <a name="clistctrl__gethovertime"></a>  CListCtrl::GetHoverTime  
+##  <a name="gethovertime"></a>  CListCtrl::GetHoverTime  
  Retrieves the current hover time of a list view control.  
   
 ```  
@@ -1323,7 +1323,7 @@ DWORD GetHoverTime() const;
 ```
 
   
-##  <a name="clistctrl__getimagelist"></a>  CListCtrl::GetImageList  
+##  <a name="getimagelist"></a>  CListCtrl::GetImageList  
  Retrieves the handle of an image list used for drawing list view items.  
   
 ```  
@@ -1357,7 +1357,7 @@ CImageList* GetImageList(int nImageList) const;
 ```
 
   
-##  <a name="clistctrl__getinsertmark"></a>  CListCtrl::GetInsertMark  
+##  <a name="getinsertmark"></a>  CListCtrl::GetInsertMark  
  Retrieves the current position of the insertion mark.  
   
 ```  
@@ -1376,7 +1376,7 @@ BOOL GetInsertMark(LPLVINSERTMARK lvim) const;
 ### Remarks  
  This member function emulates the functionality of the [LVM_GETINSERTMARK](http://msdn.microsoft.com/library/windows/desktop/bb774945) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__getinsertmarkcolor"></a>  CListCtrl::GetInsertMarkColor  
+##  <a name="getinsertmarkcolor"></a>  CListCtrl::GetInsertMarkColor  
  Retrieves the current color of the insertion mark.  
   
 ```  
@@ -1391,7 +1391,7 @@ COLORREF GetInsertMarkColor() const;
 ### Remarks  
  This member function emulates the functionality of the [LVM_GETINSERTMARKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb774947) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__getinsertmarkrect"></a>  CListCtrl::GetInsertMarkRect  
+##  <a name="getinsertmarkrect"></a>  CListCtrl::GetInsertMarkRect  
  Retrieves the rectangle that bounds the insertion point.  
   
 ```  
@@ -1414,7 +1414,7 @@ int GetInsertMarkRect(LPRECT pRect) const;
 ### Remarks  
  This member function emulates the functionality of the [LVM_GETINSERTMARKRECT](http://msdn.microsoft.com/library/windows/desktop/bb774949) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__getitem"></a>  CListCtrl::GetItem  
+##  <a name="getitem"></a>  CListCtrl::GetItem  
  Retrieves some or all of a list view item's attributes.  
   
 ```  
@@ -1433,7 +1433,7 @@ BOOL GetItem(LVITEM* pItem) const;
 ### Remarks  
  The **LVITEM** structure specifies or receives the attributes of a list view item.  
   
-##  <a name="clistctrl__getitemcount"></a>  CListCtrl::GetItemCount  
+##  <a name="getitemcount"></a>  CListCtrl::GetItemCount  
  Retrieves the number of items in a list view control.  
   
 ```  
@@ -1446,9 +1446,9 @@ int GetItemCount() const;
  The number of items in the list view control.  
   
 ### Example  
-  See the example for [CListCtrl::DeleteItem](#clistctrl__deleteitem).  
+  See the example for [CListCtrl::DeleteItem](#deleteitem).  
   
-##  <a name="clistctrl__getitemdata"></a>  CListCtrl::GetItemData  
+##  <a name="getitemdata"></a>  CListCtrl::GetItemData  
  Retrieves the 32-bit application-specific value associated with the item specified by `nItem`.  
   
 ```  
@@ -1481,7 +1481,7 @@ DWORD_PTR GetItemData(int nItem) const;
 ```
 
   
-##  <a name="clistctrl__getitemindexrect"></a>  CListCtrl::GetItemIndexRect  
+##  <a name="getitemindexrect"></a>  CListCtrl::GetItemIndexRect  
  Retrieves the bounding rectangle for all or part of a subitem in the current list-view control.  
   
 ```  
@@ -1542,7 +1542,7 @@ public:
 ```
 
   
-##  <a name="clistctrl__getitemposition"></a>  CListCtrl::GetItemPosition  
+##  <a name="getitemposition"></a>  CListCtrl::GetItemPosition  
  Retrieves the position of a list view item.  
   
 ```  
@@ -1582,7 +1582,7 @@ BOOL GetItemPosition(
 ```
 
   
-##  <a name="clistctrl__getitemrect"></a>  CListCtrl::GetItemRect  
+##  <a name="getitemrect"></a>  CListCtrl::GetItemRect  
  Retrieves the bounding rectangle for all or part of an item in the current view.  
   
 ```  
@@ -1659,7 +1659,7 @@ void CListCtrlDlg::OnClick(NMHDR* pNMHDR, LRESULT* pResult)
 ```
 
   
-##  <a name="clistctrl__getitemspacing"></a>  CListCtrl::GetItemSpacing  
+##  <a name="getitemspacing"></a>  CListCtrl::GetItemSpacing  
  Calculates the spacing between items in the current list-view control.  
   
 ```  
@@ -1685,7 +1685,7 @@ BOOL GetItemSpacing(
 ### Remarks  
  This method sends the [LVM_GETITEMSPACING](http://msdn.microsoft.com/library/windows/desktop/bb761051) message, which is described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__getitemstate"></a>  CListCtrl::GetItemState  
+##  <a name="getitemstate"></a>  CListCtrl::GetItemState  
  Retrieves the state of a list view item.  
   
 ```  
@@ -1710,9 +1710,9 @@ UINT GetItemState(
  An item's state is specified by the **state** member of the [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) structure, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)]. When you specify or change an item's state, the **stateMask** member specifies which state bits you want to change.  
   
 ### Example  
-  See the example for [CListCtrl::GetTopIndex](#clistctrl__gettopindex).  
+  See the example for [CListCtrl::GetTopIndex](#gettopindex).  
   
-##  <a name="clistctrl__getitemtext"></a>  CListCtrl::GetItemText  
+##  <a name="getitemtext"></a>  CListCtrl::GetItemText  
  Retrieves the text of a list view item or subitem.  
   
 ```  
@@ -1752,7 +1752,7 @@ CString GetItemText(
 ### Remarks  
  If `nSubItem` is zero, this function retrieves the item label; if `nSubItem` is nonzero, it retrieves the text of the subitem. For more information on the subitem argument, see the discussion of the [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) structure in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__getnextitem"></a>  CListCtrl::GetNextItem  
+##  <a name="getnextitem"></a>  CListCtrl::GetNextItem  
  Searches for a list view item that has the specified properties and that bears the specified relationship to a given item.  
   
 ```  
@@ -1793,7 +1793,7 @@ int GetNextItem(
 ### Return Value  
  The index of the next item if successful, or -1 otherwise.  
   
-##  <a name="clistctrl__getnextitemindex"></a>  CListCtrl::GetNextItemIndex  
+##  <a name="getnextitemindex"></a>  CListCtrl::GetNextItemIndex  
  Retrieves the index of the item in the current list-view control that has a specified set of properties.  
   
 ```  
@@ -1819,7 +1819,7 @@ BOOL GetNextItemIndex(
   
  This method sends the [LVM_GETNEXTITEMINDEX](http://msdn.microsoft.com/library/windows/desktop/bb761059) message, which is described in the Windows SDK.  
   
-##  <a name="clistctrl__getnextselecteditem"></a>  CListCtrl::GetNextSelectedItem  
+##  <a name="getnextselecteditem"></a>  CListCtrl::GetNextSelectedItem  
  Gets the index of the list item identified by `pos`, then sets *pos* to the **POSITION** value.  
   
 ```  
@@ -1864,7 +1864,7 @@ int GetNextSelectedItem(POSITION& pos) const;
 ```
 
   
-##  <a name="clistctrl__getnumberofworkareas"></a>  CListCtrl::GetNumberOfWorkAreas  
+##  <a name="getnumberofworkareas"></a>  CListCtrl::GetNumberOfWorkAreas  
  Retrieves the current number of working areas for a list view control.  
   
 ```  
@@ -1910,7 +1910,7 @@ UINT GetNumberOfWorkAreas() const;
 ```
 
   
-##  <a name="clistctrl__getoutlinecolor"></a>  CListCtrl::GetOutlineColor  
+##  <a name="getoutlinecolor"></a>  CListCtrl::GetOutlineColor  
  Retrieves the color of the border of a list view control.  
   
 ```  
@@ -1925,7 +1925,7 @@ COLORREF GetOutlineColor() const;
 ### Remarks  
  This member function emulates the functionality of the [LVM_GETOUTLINECOLOR](http://msdn.microsoft.com/library/windows/desktop/bb761065) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__getorigin"></a>  CListCtrl::GetOrigin  
+##  <a name="getorigin"></a>  CListCtrl::GetOrigin  
  Retrieves the current view origin for a list view control.  
   
 ```  
@@ -1941,7 +1941,7 @@ BOOL GetOrigin(LPPOINT lpPoint) const;
 ### Return Value  
  Nonzero if successful; otherwise zero. However, if the control is in report view, the return value is always zero.  
   
-##  <a name="clistctrl__getselectedcolumn"></a>  CListCtrl::GetSelectedColumn  
+##  <a name="getselectedcolumn"></a>  CListCtrl::GetSelectedColumn  
  Retrieves the index of the currently-selected column in the list control.  
   
 ```  
@@ -1956,7 +1956,7 @@ UINT GetSelectedColumn() const;
 ### Remarks  
  This member function emulates the functionality of the [LVM_GETSELECTEDCOLUMN](http://msdn.microsoft.com/library/windows/desktop/bb761067) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__getselectedcount"></a>  CListCtrl::GetSelectedCount  
+##  <a name="getselectedcount"></a>  CListCtrl::GetSelectedCount  
  Retrieves the number of selected items in the list view control.  
   
 ```  
@@ -1989,7 +1989,7 @@ UINT GetSelectedCount() const;
 ```
 
   
-##  <a name="clistctrl__getselectionmark"></a>  CListCtrl::GetSelectionMark  
+##  <a name="getselectionmark"></a>  CListCtrl::GetSelectionMark  
  Retrieves the selection mark of a list view control.  
   
 ```  
@@ -2012,7 +2012,7 @@ int GetSelectionMark();
 ```
 
   
-##  <a name="clistctrl__getstringwidth"></a>  CListCtrl::GetStringWidth  
+##  <a name="getstringwidth"></a>  CListCtrl::GetStringWidth  
  Determines the minimum column width necessary to display all of a given string.  
   
 ```  
@@ -2048,7 +2048,7 @@ int GetStringWidth(LPCTSTR lpsz) const;
 ```
 
   
-##  <a name="clistctrl__getsubitemrect"></a>  CListCtrl::GetSubItemRect  
+##  <a name="getsubitemrect"></a>  CListCtrl::GetSubItemRect  
  Retrieves the bounding rectangle of an item in a list view control.  
   
 ```  
@@ -2084,7 +2084,7 @@ BOOL GetSubItemRect(
 ### Remarks  
  This member function implements the behavior of the Win32 macro, [ListView_GetSubItemRect](http://msdn.microsoft.com/library/windows/desktop/bb775004), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__gettextbkcolor"></a>  CListCtrl::GetTextBkColor  
+##  <a name="gettextbkcolor"></a>  CListCtrl::GetTextBkColor  
  Retrieves the text background color of a list view control.  
   
 ```  
@@ -2097,9 +2097,9 @@ COLORREF GetTextBkColor() const;
  A 32-bit value used to specify an RGB color.  
   
 ### Example  
-  See the example for [CListCtrl::SetTextBkColor](#clistctrl__settextbkcolor).  
+  See the example for [CListCtrl::SetTextBkColor](#settextbkcolor).  
   
-##  <a name="clistctrl__gettextcolor"></a>  CListCtrl::GetTextColor  
+##  <a name="gettextcolor"></a>  CListCtrl::GetTextColor  
  Retrieves the text color of a list view control.  
   
 ```  
@@ -2112,9 +2112,9 @@ COLORREF GetTextColor() const;
  A 32-bit value used to specify an RGB color.  
   
 ### Example  
-  See the example for [CListCtrl::SetTextColor](#clistctrl__settextcolor).  
+  See the example for [CListCtrl::SetTextColor](#settextcolor).  
   
-##  <a name="clistctrl__gettileinfo"></a>  CListCtrl::GetTileInfo  
+##  <a name="gettileinfo"></a>  CListCtrl::GetTileInfo  
  Retrieves information about a tile in a list view control.  
   
 ```  
@@ -2133,7 +2133,7 @@ BOOL GetTileInfo(PLVTILEINFO pti) const;
 ### Remarks  
  This member function emulates the functionality of the [LVM_GETTILEINFO](http://msdn.microsoft.com/library/windows/desktop/bb761081) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__gettileviewinfo"></a>  CListCtrl::GetTileViewInfo  
+##  <a name="gettileviewinfo"></a>  CListCtrl::GetTileViewInfo  
  Retrieves information about a list view control in tile view.  
   
 ```  
@@ -2152,7 +2152,7 @@ BOOL GetTileViewInfo(PLVTILEVIEWINFO ptvi) const;
 ### Remarks  
  This member function emulates the functionality of the [LVM_GETTILEVIEWINFO](http://msdn.microsoft.com/library/windows/desktop/bb761083) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__gettooltips"></a>  CListCtrl::GetToolTips  
+##  <a name="gettooltips"></a>  CListCtrl::GetToolTips  
  Retrieves the tooltip control that the list view control uses to display tooltips.  
   
 ```  
@@ -2162,7 +2162,7 @@ CToolTipCtrl* GetToolTips() const;
 ```  
   
 ### Return Value  
- A pointer to a [CToolTipCtrl](ctooltipctrl-class.md) object to be used by the list control. If the [Create](#clistctrl__create) member function uses the style **LVS_NOTOOLTIPS**, no tooltips are used, and **NULL** is returned.  
+ A pointer to a [CToolTipCtrl](ctooltipctrl-class.md) object to be used by the list control. If the [Create](#create) member function uses the style **LVS_NOTOOLTIPS**, no tooltips are used, and **NULL** is returned.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 message [LVM_GETTOOLTIPS](http://msdn.microsoft.com/library/windows/desktop/bb761085), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)]. The MFC implementation of `GetToolTips` returns a `CToolTipCtrl` object, which is used by the list control, rather than a handle to a tooltip control.  
@@ -2179,7 +2179,7 @@ CToolTipCtrl* GetToolTips() const;
 ```
 
   
-##  <a name="clistctrl__gettopindex"></a>  CListCtrl::GetTopIndex  
+##  <a name="gettopindex"></a>  CListCtrl::GetTopIndex  
  Retrieves the index of the topmost visible item when in list view or report view.  
   
 ```  
@@ -2210,7 +2210,7 @@ int GetTopIndex() const;
 ```
 
   
-##  <a name="clistctrl__getview"></a>  CListCtrl::GetView  
+##  <a name="getview"></a>  CListCtrl::GetView  
  Gets the view of the list view control.  
   
 ```  
@@ -2225,7 +2225,7 @@ DWORD GetView() const;
 ### Remarks  
  This member function emulates the functionality of the [LVM_GETVIEW](http://msdn.microsoft.com/library/windows/desktop/bb761091) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__getviewrect"></a>  CListCtrl::GetViewRect  
+##  <a name="getviewrect"></a>  CListCtrl::GetViewRect  
  Retrieves the bounding rectangle of all items in the list view control.  
   
 ```  
@@ -2244,7 +2244,7 @@ BOOL GetViewRect(LPRECT lpRect) const;
 ### Remarks  
  The list view must be in icon view or small icon view.  
   
-##  <a name="clistctrl__getworkareas"></a>  CListCtrl::GetWorkAreas  
+##  <a name="getworkareas"></a>  CListCtrl::GetWorkAreas  
  Retrieves the current working areas of a list view control.  
   
 ```  
@@ -2266,9 +2266,9 @@ void GetWorkAreas(
  This member function implements the behavior of the Win32 macro, [ListView_GetWorkAreas](http://msdn.microsoft.com/library/windows/desktop/bb775024), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
 ### Example  
-  See the example for [CListCtrl::GetNumberOfWorkAreas](#clistctrl__getnumberofworkareas).  
+  See the example for [CListCtrl::GetNumberOfWorkAreas](#getnumberofworkareas).  
   
-##  <a name="clistctrl__hasgroup"></a>  CListCtrl::HasGroup  
+##  <a name="hasgroup"></a>  CListCtrl::HasGroup  
  Determines if the list view control has the specified group.  
   
 ```  
@@ -2287,7 +2287,7 @@ BOOL HasGroup(int iGroupId) const;
 ### Remarks  
  This member function emulates the functionality of the [LVM_HASGROUP](http://msdn.microsoft.com/library/windows/desktop/bb761097) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__hittest"></a>  CListCtrl::HitTest  
+##  <a name="hittest"></a>  CListCtrl::HitTest  
  Determines which list view item, if any, is at a specified position.  
   
 ```  
@@ -2344,7 +2344,7 @@ void CListCtrlDlg::OnRClick(NMHDR* pNMHDR, LRESULT* pResult)
 ```
 
   
-##  <a name="clistctrl__insertcolumn"></a>  CListCtrl::InsertColumn  
+##  <a name="insertcolumn"></a>  CListCtrl::InsertColumn  
  Inserts a new column in a list view control.  
   
 ```  
@@ -2388,7 +2388,7 @@ int InsertColumn(
   
  The [LVCOLUMN](http://msdn.microsoft.com/library/windows/desktop/bb774743) structure contains the attributes of a column in report view. It is also used to receive information about a column. This structure is described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__insertgroup"></a>  CListCtrl::InsertGroup  
+##  <a name="insertgroup"></a>  CListCtrl::InsertGroup  
  Inserts a group into the list view control.  
   
 ```  
@@ -2410,7 +2410,7 @@ LRESULT InsertGroup(
 ### Remarks  
  This member function emulates the functionality of the [LVM_INSERTGROUP](http://msdn.microsoft.com/library/windows/desktop/bb761103) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__insertgroupsorted"></a>  CListCtrl::InsertGroupSorted  
+##  <a name="insertgroupsorted"></a>  CListCtrl::InsertGroupSorted  
  Inserts the specified group into an ordered list of groups.  
   
 ```  
@@ -2427,7 +2427,7 @@ LRESULT InsertGroupSorted(PLVINSERTGROUPSORTED pStructInsert);
 ### Remarks  
  This member function emulates the functionality of the [LVM_INSERTGROUPSORTED](http://msdn.microsoft.com/library/windows/desktop/bb761105) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__insertitem"></a>  CListCtrl::InsertItem  
+##  <a name="insertitem"></a>  CListCtrl::InsertItem  
  Inserts an item into the list view control.  
   
 ```  
@@ -2464,10 +2464,10 @@ int InsertItem(
  Index of the item to be inserted.  
   
  `lpszItem`  
- Address of a string containing the item's label, or `LPSTR_TEXTCALLBACK` if the item is a callback item. For information on callback items, see [CListCtrl::GetCallbackMask](#clistctrl__getcallbackmask).  
+ Address of a string containing the item's label, or `LPSTR_TEXTCALLBACK` if the item is a callback item. For information on callback items, see [CListCtrl::GetCallbackMask](#getcallbackmask).  
   
  `nImage`  
- Index of the item's image, or `I_IMAGECALLBACK` if the item is a callback item. For information on callback items, see [CListCtrl::GetCallbackMask](#clistctrl__getcallbackmask).  
+ Index of the item's image, or `I_IMAGECALLBACK` if the item is a callback item. For information on callback items, see [CListCtrl::GetCallbackMask](#getcallbackmask).  
   
  `nMask`  
  The `nMask` parameter specifies which item attributes passed as parameters are valid. It can be one or more of the mask values described in [LVITEM Structure](http://msdn.microsoft.com/library/windows/desktop/bb774760) in the [!INCLUDE[winSDK](./includes/winsdk_md.md)]. The valid values can be combined with the bitwise OR operator.  
@@ -2512,7 +2512,7 @@ int InsertItem(
 ```
 
   
-##  <a name="clistctrl__insertmarkhittest"></a>  CListCtrl::InsertMarkHitTest  
+##  <a name="insertmarkhittest"></a>  CListCtrl::InsertMarkHitTest  
  Retrieves the insertion point closest to a specified point.  
   
 ```  
@@ -2536,7 +2536,7 @@ int InsertMarkHitTest(
 ### Remarks  
  This member function emulates the functionality of the [LVM_INSERTMARKHITTEST](http://msdn.microsoft.com/library/windows/desktop/bb761131) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__isgroupviewenabled"></a>  CListCtrl::IsGroupViewEnabled  
+##  <a name="isgroupviewenabled"></a>  CListCtrl::IsGroupViewEnabled  
  Determines whether group view is enabled for a list view control.  
   
 ```  
@@ -2551,7 +2551,7 @@ BOOL IsGroupViewEnabled() const;
 ### Remarks  
  This member function emulates the functionality of the [LVM_ISGROUPVIEWENABLED](http://msdn.microsoft.com/library/windows/desktop/bb761133) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__isitemvisible"></a>  CListCtrl::IsItemVisible  
+##  <a name="isitemvisible"></a>  CListCtrl::IsItemVisible  
  Indicates whether a specified item in the current list-view control is visible.  
   
 ```  
@@ -2572,7 +2572,7 @@ BOOL IsItemVisible(int index) const;
 ### Remarks  
  This method sends the [LVM_ISITEMVISIBLE](http://msdn.microsoft.com/library/windows/desktop/bb761135) message, which is described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__mapidtoindex"></a>  CListCtrl::MapIDToIndex  
+##  <a name="mapidtoindex"></a>  CListCtrl::MapIDToIndex  
  Maps the unique ID of an item in the current list-view control to an index.  
   
 ```  
@@ -2597,7 +2597,7 @@ UINT MapIDToIndex(UINT id) const;
   
  This method sends the [LVM_MAPIDTOINDEX](http://msdn.microsoft.com/library/windows/desktop/bb761137) message, which is described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__mapindextoid"></a>  CListCtrl::MapIndexToID  
+##  <a name="mapindextoid"></a>  CListCtrl::MapIndexToID  
  Maps the index of an item in the current list-view control to a unique ID.  
   
 ```  
@@ -2667,7 +2667,7 @@ public:
 ```
 
   
-##  <a name="clistctrl__movegroup"></a>  CListCtrl::MoveGroup  
+##  <a name="movegroup"></a>  CListCtrl::MoveGroup  
  Moves the specified group to the specified zero based index of the list view control.  
   
 ```  
@@ -2689,7 +2689,7 @@ LRESULT MoveGroup(
 ### Remarks  
  This member function emulates the functionality of the [LVM_MOVEGROUP](http://msdn.microsoft.com/library/windows/desktop/bb761141) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__moveitemtogroup"></a>  CListCtrl::MoveItemToGroup  
+##  <a name="moveitemtogroup"></a>  CListCtrl::MoveItemToGroup  
  Moves the specified item into the specified group.  
   
 ```  
@@ -2712,7 +2712,7 @@ void MoveItemToGroup(
   
  This method emulates the functionality of the [LVM_MOVEITEMTOGROUP](http://msdn.microsoft.com/library/windows/desktop/bb761143) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__redrawitems"></a>  CListCtrl::RedrawItems  
+##  <a name="redrawitems"></a>  CListCtrl::RedrawItems  
  Forces a list view control to repaint a range of items.  
   
 ```  
@@ -2734,7 +2734,7 @@ BOOL RedrawItems(
 ### Remarks  
  The specified items are not actually repainted until the list view window receives a `WM_PAINT` message. To repaint immediately, call the Windows [UpdateWindow](http://msdn.microsoft.com/library/windows/desktop/dd145167) function after using this function.  
   
-##  <a name="clistctrl__removeallgroups"></a>  CListCtrl::RemoveAllGroups  
+##  <a name="removeallgroups"></a>  CListCtrl::RemoveAllGroups  
  Removes all groups from a list view control.  
   
 ```  
@@ -2744,7 +2744,7 @@ void RemoveAllGroups();
 ### Remarks  
  This member function emulates the functionality of the [LVM_REMOVEALLGROUPS](http://msdn.microsoft.com/library/windows/desktop/bb761147) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__removegroup"></a>  CListCtrl::RemoveGroup  
+##  <a name="removegroup"></a>  CListCtrl::RemoveGroup  
  Removes the specified group from the list view control.  
   
 ```  
@@ -2761,7 +2761,7 @@ LRESULT RemoveGroup(int iGroupId);
 ### Remarks  
  This member function emulates the functionality of the [LVM_REMOVEGROUP](http://msdn.microsoft.com/library/windows/desktop/bb761149) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__scroll"></a>  CListCtrl::Scroll  
+##  <a name="scroll"></a>  CListCtrl::Scroll  
  Scrolls the content of a list view control.  
   
 ```  
@@ -2775,7 +2775,7 @@ BOOL Scroll(CSize size);
 ### Return Value  
  Nonzero if successful; otherwise zero.  
   
-##  <a name="clistctrl__setbkcolor"></a>  CListCtrl::SetBkColor  
+##  <a name="setbkcolor"></a>  CListCtrl::SetBkColor  
  Sets the background color of the list view control.  
   
 ```  
@@ -2800,7 +2800,7 @@ BOOL SetBkColor(COLORREF cr);
 ```
 
   
-##  <a name="clistctrl__setbkimage"></a>  CListCtrl::SetBkImage  
+##  <a name="setbkimage"></a>  CListCtrl::SetBkImage  
  Sets the background image of a list view control.  
   
 ```  
@@ -2850,9 +2850,9 @@ BOOL SetBkImage(
 >  Because `CListCtrl::SetBkImage` makes use of OLE COM functionality, the OLE libraries must be initialized before using `SetBkImage`. It is best to initialize the COM libraries when the application is initialized and uninitialize the libraries when the application terminates. This is automatically done in MFC applications that make use of ActiveX technology, OLE Automation, OLE Linking/Embedding, or ODBC/DAO operations.  
   
 ### Example  
-  See the example for [CListCtrl::GetBkImage](#clistctrl__getbkimage).  
+  See the example for [CListCtrl::GetBkImage](#getbkimage).  
   
-##  <a name="clistctrl__setcallbackmask"></a>  CListCtrl::SetCallbackMask  
+##  <a name="setcallbackmask"></a>  CListCtrl::SetCallbackMask  
  Sets the callback mask for a list view control.  
   
 ```  
@@ -2878,7 +2878,7 @@ BOOL SetCallbackMask(UINT nMask);
 ```
 
 
-##  <a name="clistctrl__setcheck"></a>  CListCtrl::SetCheck  
+##  <a name="setcheck"></a>  CListCtrl::SetCheck  
  Determines if the state image of a list control item is visible.  
   
 ```  
@@ -2916,7 +2916,7 @@ BOOL SetCheck(
 ```
 
   
-##  <a name="clistctrl__setcolumn"></a>  CListCtrl::SetColumn  
+##  <a name="setcolumn"></a>  CListCtrl::SetColumn  
  Sets the attributes of a list view column.  
   
 ```  
@@ -2936,9 +2936,9 @@ BOOL SetColumn(
  Nonzero if successful; otherwise zero.  
   
 ### Example  
-  See the example for [CListCtrl::GetColumn](#clistctrl__getcolumn).  
+  See the example for [CListCtrl::GetColumn](#getcolumn).  
   
-##  <a name="clistctrl__setcolumnorderarray"></a>  CListCtrl::SetColumnOrderArray  
+##  <a name="setcolumnorderarray"></a>  CListCtrl::SetColumnOrderArray  
  Sets the column order (left to right) of a list view control.  
   
 ```  
@@ -2961,9 +2961,9 @@ BOOL SetColumnOrderArray(
  This member function implements the behavior of the Win32 macro, [ListView_SetColumnOrderArray](http://msdn.microsoft.com/library/windows/desktop/bb775072), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
 ### Example  
-  See the example for [CListCtrl::GetColumnOrderArray](#clistctrl__getcolumnorderarray).  
+  See the example for [CListCtrl::GetColumnOrderArray](#getcolumnorderarray).  
   
-##  <a name="clistctrl__setcolumnwidth"></a>  CListCtrl::SetColumnWidth  
+##  <a name="setcolumnwidth"></a>  CListCtrl::SetColumnWidth  
  Changes the width of a column in report view or list view.  
   
 ```  
@@ -2982,7 +2982,7 @@ BOOL SetColumnWidth(
 ### Return Value  
  Nonzero if successful; otherwise zero.  
   
-##  <a name="clistctrl__setextendedstyle"></a>  CListCtrl::SetExtendedStyle  
+##  <a name="setextendedstyle"></a>  CListCtrl::SetExtendedStyle  
  Sets the current extended styles of a list view control.  
   
 ```  
@@ -3009,7 +3009,7 @@ DWORD SetExtendedStyle(DWORD dwNewStyle);
 ```
 
   
-##  <a name="clistctrl__setgroupinfo"></a>  CListCtrl::SetGroupInfo  
+##  <a name="setgroupinfo"></a>  CListCtrl::SetGroupInfo  
  Sets the information that describes the specified group of the current list-view control.  
   
 ```  
@@ -3031,7 +3031,7 @@ int SetGroupInfo(
 ### Remarks  
  This method sends the [LVM_SETGROUPINFO](http://msdn.microsoft.com/library/windows/desktop/bb761167) message, which is described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__setgroupmetrics"></a>  CListCtrl::SetGroupMetrics  
+##  <a name="setgroupmetrics"></a>  CListCtrl::SetGroupMetrics  
  Sets the group metrics of a list view control.  
   
 ```  
@@ -3045,7 +3045,7 @@ void SetGroupMetrics(PLVGROUPMETRICS pGroupMetrics);
 ### Remarks  
  This member function emulates the functionality of the [LVM_SETGROUPMETRICS](http://msdn.microsoft.com/library/windows/desktop/bb761168) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__sethotcursor"></a>  CListCtrl::SetHotCursor  
+##  <a name="sethotcursor"></a>  CListCtrl::SetHotCursor  
  Sets the cursor used when hot tracking is enabled for a list view control.  
   
 ```  
@@ -3065,9 +3065,9 @@ HCURSOR SetHotCursor(HCURSOR hc);
  The hot cursor, only visible when hover selection is enabled, appears as the cursor passes over any list view item. Hover selection is enabled by setting the **LVS_EX_TRACKSELECT** extended style.  
   
 ### Example  
-  See the example for [CListCtrl::GetHotCursor](#clistctrl__gethotcursor).  
+  See the example for [CListCtrl::GetHotCursor](#gethotcursor).  
   
-##  <a name="clistctrl__sethotitem"></a>  CListCtrl::SetHotItem  
+##  <a name="sethotitem"></a>  CListCtrl::SetHotItem  
  Sets the current hot item of a list view control.  
   
 ```  
@@ -3085,9 +3085,9 @@ int SetHotItem(int iIndex);
  This member function implements the behavior of the Win32 macro, [ListView_SetHotItem](http://msdn.microsoft.com/library/windows/desktop/bb775083), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
 ### Example  
-  See the example for [CListCtrl::GetHotItem](#clistctrl__gethotitem).  
+  See the example for [CListCtrl::GetHotItem](#gethotitem).  
   
-##  <a name="clistctrl__sethovertime"></a>  CListCtrl::SetHoverTime  
+##  <a name="sethovertime"></a>  CListCtrl::SetHoverTime  
  Sets the current hover time of a list view control.  
   
 ```  
@@ -3105,9 +3105,9 @@ DWORD SetHoverTime(DWORD dwHoverTime = (DWORD)-1);
  This member function implements the behavior of the Win32 macro, [ListView_SetHoverTime](http://msdn.microsoft.com/library/windows/desktop/bb775084), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
 ### Example  
-  See the example for [CListCtrl::GetHoverTime](#clistctrl__gethovertime).  
+  See the example for [CListCtrl::GetHoverTime](#gethovertime).  
   
-##  <a name="clistctrl__seticonspacing"></a>  CListCtrl::SetIconSpacing  
+##  <a name="seticonspacing"></a>  CListCtrl::SetIconSpacing  
  Sets the spacing between icons in a list view control.  
   
 ```  
@@ -3145,7 +3145,7 @@ CSize SetIconSpacing(
 ```
 
   
-##  <a name="clistctrl__setimagelist"></a>  CListCtrl::SetImageList  
+##  <a name="setimagelist"></a>  CListCtrl::SetImageList  
  Assigns an image list to a list view control.  
   
 ```  
@@ -3171,9 +3171,9 @@ CImageList* SetImageList(
  A pointer to the previous image list.  
   
 ### Example  
-  See the example for [CListCtrl::GetImageList](#clistctrl__getimagelist).  
+  See the example for [CListCtrl::GetImageList](#getimagelist).  
   
-##  <a name="clistctrl__setinfotip"></a>  CListCtrl::SetInfoTip  
+##  <a name="setinfotip"></a>  CListCtrl::SetInfoTip  
  Sets the tooltip text.  
   
 ```  
@@ -3190,7 +3190,7 @@ BOOL SetInfoTip(PLVSETINFOTIP plvInfoTip);
 ### Remarks  
  This member function emulates the functionality of the [LVM_SETINFOTIP](http://msdn.microsoft.com/library/windows/desktop/bb761180) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__setinsertmark"></a>  CListCtrl::SetInsertMark  
+##  <a name="setinsertmark"></a>  CListCtrl::SetInsertMark  
  Sets the insertion point to the defined position.  
   
 ```  
@@ -3207,7 +3207,7 @@ BOOL SetInsertMark(LPLVINSERTMARK lvim);
 ### Remarks  
  This member function emulates the functionality of the [LVM_SETINSERTMARK](http://msdn.microsoft.com/library/windows/desktop/bb761182) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__setinsertmarkcolor"></a>  CListCtrl::SetInsertMarkColor  
+##  <a name="setinsertmarkcolor"></a>  CListCtrl::SetInsertMarkColor  
  Sets the color of the insertion point.  
   
 ```  
@@ -3224,7 +3224,7 @@ COLORREF SetInsertMarkColor(COLORREF color);
 ### Remarks  
  This member function emulates the functionality of the [LVM_SETINSERTMARKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb761184) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__setitem"></a>  CListCtrl::SetItem  
+##  <a name="setitem"></a>  CListCtrl::SetItem  
  Sets some or all of a list view item's attributes.  
   
 ```  
@@ -3299,9 +3299,9 @@ BOOL SetItem(
 - `LVIF_STATE` The **stateMask** member or `nStateMask` parameter specifies which item states to change and the **state** member or `nState` parameter contains the values for those states.  
   
 ### Example  
-  See the example for [CListCtrl::HitTest](#clistctrl__hittest).  
+  See the example for [CListCtrl::HitTest](#hittest).  
   
-##  <a name="clistctrl__setitemcount"></a>  CListCtrl::SetItemCount  
+##  <a name="setitemcount"></a>  CListCtrl::SetItemCount  
  Prepares a list view control for adding a large number of items.  
   
 ```  
@@ -3313,7 +3313,7 @@ void SetItemCount(int nItems);
  Number of items that the control will ultimately contain.  
   
 ### Remarks  
- To set the item count for a virtual list view control, see [CListCtrl::SetItemCountEx](#clistctrl__setitemcountex).  
+ To set the item count for a virtual list view control, see [CListCtrl::SetItemCountEx](#setitemcountex).  
   
 ### Remarks  
  This member function implements the behavior of the Win32 macro, [ListView_SetItemCount](http://msdn.microsoft.com/library/windows/desktop/bb775093), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
@@ -3335,7 +3335,7 @@ void SetItemCount(int nItems);
 ```
 
   
-##  <a name="clistctrl__setitemcountex"></a>  CListCtrl::SetItemCountEx  
+##  <a name="setitemcountex"></a>  CListCtrl::SetItemCountEx  
  Sets the item count for a virtual list view control.  
   
 ```  
@@ -3382,7 +3382,7 @@ BOOL SetItemCountEx(
 ```
 
   
-##  <a name="clistctrl__setitemdata"></a>  CListCtrl::SetItemData  
+##  <a name="setitemdata"></a>  CListCtrl::SetItemData  
  Sets the 32-bit application-specific value associated with the item specified by `nItem`.  
   
 ```  
@@ -3415,7 +3415,7 @@ BOOL SetItemData(
 ```
 
   
-##  <a name="clistctrl__setitemindexstate"></a>  CListCtrl::SetItemIndexState  
+##  <a name="setitemindexstate"></a>  CListCtrl::SetItemIndexState  
  Sets the state of an item in the current list-view control.  
   
 ```  
@@ -3445,7 +3445,7 @@ BOOL SetItemIndexState(
   
  This method sends the [LVM_SETITEMINDEXSTATE](http://msdn.microsoft.com/library/windows/desktop/bb761190) message, which is described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__setitemposition"></a>  CListCtrl::SetItemPosition  
+##  <a name="setitemposition"></a>  CListCtrl::SetItemPosition  
  Moves an item to a specified position in a list view control.  
   
 ```  
@@ -3470,9 +3470,9 @@ BOOL SetItemPosition(
  If the list view control has the `LVS_AUTOARRANGE` style, the list view is arranged after the position of the item is set.  
   
 ### Example  
-  See the example for [CListCtrl::GetItemPosition](#clistctrl__getitemposition).  
+  See the example for [CListCtrl::GetItemPosition](#getitemposition).  
   
-##  <a name="clistctrl__setitemstate"></a>  CListCtrl::SetItemState  
+##  <a name="setitemstate"></a>  CListCtrl::SetItemState  
  Changes the state of an item in a list view control.  
   
 ```  
@@ -3495,7 +3495,7 @@ BOOL SetItemState(
  Address of an [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) structure, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)]. The structure's **stateMask** member specifies which state bits to change, and the structure's **state** member contains the new values for those bits. The other members are ignored.  
   
  `nState`  
- New values for the state bits. For a list of possible values, see [CListCtrl::GetNextItem](#clistctrl__getnextitem) and the [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) state member.  
+ New values for the state bits. For a list of possible values, see [CListCtrl::GetNextItem](#getnextitem) and the [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) state member.  
   
  `nMask`  
  Mask specifying which state bits to change. This value corresponds to the stateMask member of  the [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) structure.  
@@ -3507,9 +3507,9 @@ BOOL SetItemState(
  An item's "state" is a value that specifies the item's availability, indicates user actions, or otherwise reflects the item's status. A list view control changes some state bits, such as when the user selects an item. An application might change other state bits to disable or hide the item, or to specify an overlay image or state image.  
   
 ### Example  
-  See the example for [CListCtrl::GetTopIndex](#clistctrl__gettopindex).  
+  See the example for [CListCtrl::GetTopIndex](#gettopindex).  
   
-##  <a name="clistctrl__setitemtext"></a>  CListCtrl::SetItemText  
+##  <a name="setitemtext"></a>  CListCtrl::SetItemText  
  Changes the text of a list view item or subitem.  
   
 ```  
@@ -3536,9 +3536,9 @@ BOOL SetItemText(
  This method is not intended for use with controls containing the LVS_OWNERDATA window style (in fact, this will cause an assertion in Debug builds). For more information about this list control style, see [List-View Controls Overview](http://msdn.microsoft.com/library/windows/desktop/bb774735).  
   
 ### Example  
-  See the example for [CListCtrl::InsertItem](#clistctrl__insertitem).  
+  See the example for [CListCtrl::InsertItem](#insertitem).  
   
-##  <a name="clistctrl__setoutlinecolor"></a>  CListCtrl::SetOutlineColor  
+##  <a name="setoutlinecolor"></a>  CListCtrl::SetOutlineColor  
  Sets the color of the border of a list-view control if the [LVS_EX_BORDERSELECT](http://msdn.microsoft.com/library/windows/desktop/bb774739) extended window style is set.  
   
 ```  
@@ -3555,7 +3555,7 @@ COLORREF SetOutlineColor(COLORREF color);
 ### Remarks  
  This member function emulates the functionality of the [LVM_SETOUTLINECOLOR](http://msdn.microsoft.com/library/windows/desktop/bb761200) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__setselectedcolumn"></a>  CListCtrl::SetSelectedColumn  
+##  <a name="setselectedcolumn"></a>  CListCtrl::SetSelectedColumn  
  Sets the selected column of the list view control.  
   
 ```  
@@ -3572,7 +3572,7 @@ LRESULT SetSelectedColumn(int iCol);
 ### Remarks  
  This member function emulates the functionality of the [LVM_SETSELECTEDCOLUMN](http://msdn.microsoft.com/library/windows/desktop/bb761202) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__setselectionmark"></a>  CListCtrl::SetSelectionMark  
+##  <a name="setselectionmark"></a>  CListCtrl::SetSelectionMark  
  Sets the selection mark of a list view control.  
   
 ```  
@@ -3590,9 +3590,9 @@ int SetSelectionMark(int iIndex);
  This member function implements the behavior of the Win32 macro, [ListView_SetSelectionMark](http://msdn.microsoft.com/library/windows/desktop/bb775112), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
 ### Example  
-  See the example for [CListCtrl::GetSelectionMark](#clistctrl__getselectionmark).  
+  See the example for [CListCtrl::GetSelectionMark](#getselectionmark).  
   
-##  <a name="clistctrl__settextbkcolor"></a>  CListCtrl::SetTextBkColor  
+##  <a name="settextbkcolor"></a>  CListCtrl::SetTextBkColor  
  Sets the background color of text in a list view control.  
   
 ```  
@@ -3617,7 +3617,7 @@ BOOL SetTextBkColor(COLORREF cr);
 ```
 
   
-##  <a name="clistctrl__settextcolor"></a>  CListCtrl::SetTextColor  
+##  <a name="settextcolor"></a>  CListCtrl::SetTextColor  
  Sets the text color of a list view control.  
   
 ```  
@@ -3643,7 +3643,7 @@ BOOL SetTextColor(COLORREF cr);
 ```
 
   
-##  <a name="clistctrl__settileinfo"></a>  CListCtrl::SetTileInfo  
+##  <a name="settileinfo"></a>  CListCtrl::SetTileInfo  
  Sets the information for a tile of the list view control.  
   
 ```  
@@ -3660,7 +3660,7 @@ BOOL SetTileInfo(PLVTILEINFO pti);
 ### Remarks  
  This member function emulates the functionality of the [LVM_SETTILEINFO](http://msdn.microsoft.com/library/windows/desktop/bb761210) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__settileviewinfo"></a>  CListCtrl::SetTileViewInfo  
+##  <a name="settileviewinfo"></a>  CListCtrl::SetTileViewInfo  
  Sets information that a list view control uses in tile view.  
   
 ```  
@@ -3677,7 +3677,7 @@ BOOL SetTileViewInfo(PLVTILEVIEWINFO ptvi);
 ### Remarks  
  This member function emulates the functionality of the [LVM_SETTILEVIEWINFO](http://msdn.microsoft.com/library/windows/desktop/bb761212) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__settooltips"></a>  CListCtrl::SetToolTips  
+##  <a name="settooltips"></a>  CListCtrl::SetToolTips  
  Sets the tooltip control that the list view control will use to display tooltips.  
   
 ```  
@@ -3696,7 +3696,7 @@ CToolTipCtrl* SetToolTips(CToolTipCtrl* pWndTip);
   
  To not use tooltips, indicate the `LVS_NOTOOLTIPS` style when you create the `CListCtrl` object.  
   
-##  <a name="clistctrl__setview"></a>  CListCtrl::SetView  
+##  <a name="setview"></a>  CListCtrl::SetView  
  Sets the view of the list view control.  
   
 ```  
@@ -3713,7 +3713,7 @@ DWORD SetView(int iView);
 ### Remarks  
  This member function emulates the functionality of the [LVM_SETVIEW](http://msdn.microsoft.com/library/windows/desktop/bb761220) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__setworkareas"></a>  CListCtrl::SetWorkAreas  
+##  <a name="setworkareas"></a>  CListCtrl::SetWorkAreas  
  Sets the area where icons can be displayed in a list view control.  
   
 ```  
@@ -3741,7 +3741,7 @@ void SetWorkAreas(
 ```
 
   
-##  <a name="clistctrl__sortgroups"></a>  CListCtrl::SortGroups  
+##  <a name="sortgroups"></a>  CListCtrl::SortGroups  
  Uses an application-defined comparison function to sort groups by ID within a list view control.  
   
 ```  
@@ -3763,7 +3763,7 @@ BOOL SortGroups(
 ### Remarks  
  This member function emulates the functionality of the [LVM_SORTGROUPS](http://msdn.microsoft.com/library/windows/desktop/bb761225) message, as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="clistctrl__sortitems"></a>  CListCtrl::SortItems  
+##  <a name="sortitems"></a>  CListCtrl::SortItems  
  Sorts list view items by using an application-defined comparison function.  
   
 ```  
@@ -3823,7 +3823,7 @@ void CListCtrlDlg::Sort()
 }
 ```
   
-##  <a name="clistctrl__sortitemsex"></a>  CListCtrl::SortItemsEx  
+##  <a name="sortitemsex"></a>  CListCtrl::SortItemsEx  
  Sorts the items of the current list-view control by using an application-defined comparison function.  
   
 ```  
@@ -3908,7 +3908,7 @@ void CCListCtrl_s2Dlg::OnBnClickedButton1()
 ```
 
   
-##  <a name="clistctrl__subitemhittest"></a>  CListCtrl::SubItemHitTest  
+##  <a name="subitemhittest"></a>  CListCtrl::SubItemHitTest  
  Determines which list view item, if any, is at a given position.  
   
 ```  
@@ -3947,7 +3947,7 @@ void CListCtrlDlg::OnDblClk(NMHDR* pNMHDR, LRESULT* pResult)
 ```
 
   
-##  <a name="clistctrl__update"></a>  CListCtrl::Update  
+##  <a name="update"></a>  CListCtrl::Update  
  Forces the list view control to repaint the item specified by `nItem`.  
   
 ```  
@@ -3965,7 +3965,7 @@ BOOL Update(int nItem);
  This function also arranges the list view control if it has the `LVS_AUTOARRANGE` style.  
   
 ### Example  
-  See the example for [CListCtrl::GetSelectedCount](#clistctrl__getselectedcount).  
+  See the example for [CListCtrl::GetSelectedCount](#getselectedcount).  
   
 ## See Also  
  [MFC Sample ROWLIST](../../visual-cpp-samples.md)   

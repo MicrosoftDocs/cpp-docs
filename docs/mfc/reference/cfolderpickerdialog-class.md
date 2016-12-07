@@ -51,7 +51,7 @@ class CFolderPickerDialog : public CFileDialog;
 |Name|Description|  
 |----------|-----------------|  
 |[CFolderPickerDialog::~CFolderPickerDialog](#cfolderpickerdialog__~cfolderpickerdialog)|Destructor.|  
-|[CFolderPickerDialog::CFolderPickerDialog](#cfolderpickerdialog__cfolderpickerdialog)|Constructor.|  
+|[CFolderPickerDialog::CFolderPickerDialog](#cfolderpickerdialog)|Constructor.|  
   
 ## Remarks  
   
@@ -73,7 +73,7 @@ class CFolderPickerDialog : public CFileDialog;
 ## Requirements  
  **Header:** afxdlgs.h  
   
-##  <a name="cfolderpickerdialog__cfolderpickerdialog"></a>  CFolderPickerDialog::CFolderPickerDialog  
+##  <a name="cfolderpickerdialog"></a>  CFolderPickerDialog::CFolderPickerDialog  
  Constructor.  
   
 ```  
@@ -99,7 +99,7 @@ explicit CFolderPickerDialog(
   
 ### Remarks  
   
-##  <a name="cfolderpickerdialog___dtorcfolderpickerdialog"></a>  CFolderPickerDialog::~CFolderPickerDialog  
+##  <a name="_dtorcfolderpickerdialog"></a>  CFolderPickerDialog::~CFolderPickerDialog  
  Destructor.  
   
 ```  

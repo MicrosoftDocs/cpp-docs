@@ -70,7 +70,7 @@ The ATL library implements one example of a custom string manager used by class 
 ## Implementation of CFixedStringMgr::GetNilString  
  The implementation of **CFixedStringMgr::GetNilString** returns the fixed buffer. Because of the one-on-one correspondence of **CFixedStringMgr** and `CStringT`, a given instance of `CStringT` never uses more than one buffer at a time. Therefore, a nil string and a real string buffer are never needed at the same time.  
   
- Whenever the fixed buffer is not in use, **CFixedStringMgr** ensures that it is initialized with a zero length. This allows it to be used as the nil string. As an added bonus, the `nAllocLength` member of the fixed buffer is always set to the full size of the fixed buffer. This means that `CStringT` can grow the string without calling [IAtlStringMgr::Reallocate](../atl-mfc-shared/reference/iatlstringmgr-class.md#iatlstringmgr__reallocate), even for the nil string.  
+ Whenever the fixed buffer is not in use, **CFixedStringMgr** ensures that it is initialized with a zero length. This allows it to be used as the nil string. As an added bonus, the `nAllocLength` member of the fixed buffer is always set to the full size of the fixed buffer. This means that `CStringT` can grow the string without calling [IAtlStringMgr::Reallocate](../atl-mfc-shared/reference/iatlstringmgr-class.md#reallocate), even for the nil string.  
   
 ## Requirements  
  **Header:** cstringt.h  

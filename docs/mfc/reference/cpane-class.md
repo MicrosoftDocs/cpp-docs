@@ -55,85 +55,85 @@ class CPane : public CBasePane
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPane::AdjustSizeImmediate](#cpane__adjustsizeimmediate)|Immediately recalculates the layout of a pane.|  
-|[CPane::AllocElements](#cpane__allocelements)|Allocates storage for internal use.|  
-|[CPane::AllowShowOnPaneMenu](#cpane__allowshowonpanemenu)|Specifies whether the pane is listed in the runtime-generated list of panes for the application.|  
-|[CPane::CalcAvailableSize](#cpane__calcavailablesize)|Calculates the difference in size between a specified rectangle and the current window rectangle.|  
-|[CPane::CalcInsideRect](#cpane__calcinsiderect)|Calculates the inside rectangle of a pane, taking into account the borders and grippers.|  
-|[CPane::CalcRecentDockedRect](#cpane__calcrecentdockedrect)|Calculates the recently docked rectangle.|  
-|[CPane::CalcSize](#cpane__calcsize)|Calculates the size of the pane.|  
-|[CPane::CanBeDocked](#cpane__canbedocked)|Determines whether the pane can be docked at the specified base pane.|  
-|[CPane::CanBeTabbedDocument](#cpane__canbetabbeddocument)|Determines whether the pane can be converted to a tabbed document.|  
-|[CPane::ConvertToTabbedDocument](#cpane__converttotabbeddocument)|Converts a dockable pane to a tabbed document.|  
-|[CPane::CopyState](#cpane__copystate)|Copies the state of a pane. (Overrides [CBasePane::CopyState](../../mfc/reference/cbasepane-class.md#cbasepane__copystate).)|  
-|[CPane::Create](#cpane__create)|Creates a control bar and attaches it to the `CPane` object.|  
-|[CPane::CreateDefaultMiniframe](#cpane__createdefaultminiframe)|Creates a mini-frame window for a floating pane.|  
-|[CPane::CreateEx](#cpane__createex)|Creates a control bar and attaches it to the `CPane` object.|  
+|[CPane::AdjustSizeImmediate](#adjustsizeimmediate)|Immediately recalculates the layout of a pane.|  
+|[CPane::AllocElements](#allocelements)|Allocates storage for internal use.|  
+|[CPane::AllowShowOnPaneMenu](#allowshowonpanemenu)|Specifies whether the pane is listed in the runtime-generated list of panes for the application.|  
+|[CPane::CalcAvailableSize](#calcavailablesize)|Calculates the difference in size between a specified rectangle and the current window rectangle.|  
+|[CPane::CalcInsideRect](#calcinsiderect)|Calculates the inside rectangle of a pane, taking into account the borders and grippers.|  
+|[CPane::CalcRecentDockedRect](#calcrecentdockedrect)|Calculates the recently docked rectangle.|  
+|[CPane::CalcSize](#calcsize)|Calculates the size of the pane.|  
+|[CPane::CanBeDocked](#canbedocked)|Determines whether the pane can be docked at the specified base pane.|  
+|[CPane::CanBeTabbedDocument](#canbetabbeddocument)|Determines whether the pane can be converted to a tabbed document.|  
+|[CPane::ConvertToTabbedDocument](#converttotabbeddocument)|Converts a dockable pane to a tabbed document.|  
+|[CPane::CopyState](#copystate)|Copies the state of a pane. (Overrides [CBasePane::CopyState](../../mfc/reference/cbasepane-class.md#copystate).)|  
+|[CPane::Create](#create)|Creates a control bar and attaches it to the `CPane` object.|  
+|[CPane::CreateDefaultMiniframe](#createdefaultminiframe)|Creates a mini-frame window for a floating pane.|  
+|[CPane::CreateEx](#createex)|Creates a control bar and attaches it to the `CPane` object.|  
 |`CPane::CreateObject`|Used by the framework to create a dynamic instance of this class type.|  
-|[CPane::DockByMouse](#cpane__dockbymouse)|Docks a pane by using the mouse docking method.|  
-|[CPane::DockPane](#cpane__dockpane)|Docks the floating pane to a base pane.|  
-|[CPane::DockPaneStandard](#cpane__dockpanestandard)|Docks a pane by using outline (standard) docking.|  
-|[CPane::DockToFrameWindow](#cpane__docktoframewindow)|Docks a dockable pane to a frame. (Overrides `CBasePane::DockToFrameWindow`.)|  
-|[CPane::DoesAllowSiblingBars](#cpane__doesallowsiblingbars)|Indicates whether you can dock another pane at the same row where the current pane is docked.|  
-|[CPane::FloatPane](#cpane__floatpane)|Floats the pane.|  
-|[CPane::GetAvailableExpandSize](#cpane__getavailableexpandsize)|Returns the amount, in pixels, that the pane can expand.|  
-|[CPane::GetAvailableStretchSize](#cpane__getavailablestretchsize)|Returns the amount, in pixels, that the pane can shrink.|  
-|[CPane::GetBorders](#cpane__getborders)|Returns the width of the borders of the pane.|  
-|[CPane::GetClientHotSpot](#cpane__getclienthotspot)|Returns the *hot spot* for the pane.|  
-|[CPane::GetDockSiteRow](#cpane__getdocksiterow)|Returns the dock row in which the pane is docked.|  
-|[CPane::GetExclusiveRowMode](#cpane__getexclusiverowmode)|Determines whether the pane is in exclusive row mode.|  
-|[CPane::GetHotSpot](#cpane__gethotspot)|Returns the hot spot that is stored in an underlying `CMFCDragFrameImpl` object.|  
-|[CPane::GetMinSize](#cpane__getminsize)|Retrieves the minimum allowed size for the pane.|  
-|[CPane::GetPaneName](#cpane__getpanename)|Retrieves the title for the pane.|  
+|[CPane::DockByMouse](#dockbymouse)|Docks a pane by using the mouse docking method.|  
+|[CPane::DockPane](#dockpane)|Docks the floating pane to a base pane.|  
+|[CPane::DockPaneStandard](#dockpanestandard)|Docks a pane by using outline (standard) docking.|  
+|[CPane::DockToFrameWindow](#docktoframewindow)|Docks a dockable pane to a frame. (Overrides `CBasePane::DockToFrameWindow`.)|  
+|[CPane::DoesAllowSiblingBars](#doesallowsiblingbars)|Indicates whether you can dock another pane at the same row where the current pane is docked.|  
+|[CPane::FloatPane](#floatpane)|Floats the pane.|  
+|[CPane::GetAvailableExpandSize](#getavailableexpandsize)|Returns the amount, in pixels, that the pane can expand.|  
+|[CPane::GetAvailableStretchSize](#getavailablestretchsize)|Returns the amount, in pixels, that the pane can shrink.|  
+|[CPane::GetBorders](#getborders)|Returns the width of the borders of the pane.|  
+|[CPane::GetClientHotSpot](#getclienthotspot)|Returns the *hot spot* for the pane.|  
+|[CPane::GetDockSiteRow](#getdocksiterow)|Returns the dock row in which the pane is docked.|  
+|[CPane::GetExclusiveRowMode](#getexclusiverowmode)|Determines whether the pane is in exclusive row mode.|  
+|[CPane::GetHotSpot](#gethotspot)|Returns the hot spot that is stored in an underlying `CMFCDragFrameImpl` object.|  
+|[CPane::GetMinSize](#getminsize)|Retrieves the minimum allowed size for the pane.|  
+|[CPane::GetPaneName](#getpanename)|Retrieves the title for the pane.|  
 |`CPane::GetResizeStep`|Used internally.|  
 |`CPane::GetThisClass`|Used by the framework to obtain a pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|  
-|[CPane::GetVirtualRect](#cpane__getvirtualrect)|Retrieves the *virtual rectangle* of the pane.|  
-|[CPane::IsChangeState](#cpane__ischangestate)|As the pane is being moved, this method analyzes the position of the pane relative to other panes, dock rows, and mini-frame windows, and returns the appropriate `AFX_CS_STATUS` value.|  
-|[CPane::IsDragMode](#cpane__isdragmode)|Specifies whether the pane is being dragged.|  
-|[CPane::IsInFloatingMultiPaneFrameWnd](#cpane__isinfloatingmultipaneframewnd)|Specifies whether the pane is in a multi-pane frame window. (Overrides `CBasePane::IsInFloatingMultiPaneFrameWnd`.)|  
-|[CPane::IsLeftOf](#cpane__isleftof)|Determines whether the pane is left of (or above) the specified rectangle.|  
-|[CPane::IsResizable](#cpane__isresizable)|Determines whether the pane can be resized. (Overrides [CBasePane::IsResizable](../../mfc/reference/cbasepane-class.md#cbasepane__isresizable).)|  
-|[CPane::IsTabbed](#cpane__istabbed)|Determines whether the pane has been inserted in the tab control of a tabbed window. (Overrides [CBasePane::IsTabbed](../../mfc/reference/cbasepane-class.md#cbasepane__istabbed).)|  
-|[CPane::LoadState](#cpane__loadstate)|Loads the state of the pane from the registry. (Overrides [CBasePane::LoadState](../../mfc/reference/cbasepane-class.md#cbasepane__loadstate).)|  
-|[CPane::MoveByAlignment](#cpane__movebyalignment)|Moves the pane and the virtual rectangle by the specified amount.|  
-|[CPane::MovePane](#cpane__movepane)|Moves the pane to the specified rectangle.|  
-|[CPane::OnAfterChangeParent](#cpane__onafterchangeparent)|Called by the framework when the parent of a pane has changed.|  
-|[CPane::OnBeforeChangeParent](#cpane__onbeforechangeparent)|Called by the framework when the parent of the pane is about to change.|  
-|[CPane::OnPressCloseButton](#cpane__onpressclosebutton)|Called by the framework when the user chooses the Close button on the caption for the pane.|  
+|[CPane::GetVirtualRect](#getvirtualrect)|Retrieves the *virtual rectangle* of the pane.|  
+|[CPane::IsChangeState](#ischangestate)|As the pane is being moved, this method analyzes the position of the pane relative to other panes, dock rows, and mini-frame windows, and returns the appropriate `AFX_CS_STATUS` value.|  
+|[CPane::IsDragMode](#isdragmode)|Specifies whether the pane is being dragged.|  
+|[CPane::IsInFloatingMultiPaneFrameWnd](#isinfloatingmultipaneframewnd)|Specifies whether the pane is in a multi-pane frame window. (Overrides `CBasePane::IsInFloatingMultiPaneFrameWnd`.)|  
+|[CPane::IsLeftOf](#isleftof)|Determines whether the pane is left of (or above) the specified rectangle.|  
+|[CPane::IsResizable](#isresizable)|Determines whether the pane can be resized. (Overrides [CBasePane::IsResizable](../../mfc/reference/cbasepane-class.md#isresizable).)|  
+|[CPane::IsTabbed](#istabbed)|Determines whether the pane has been inserted in the tab control of a tabbed window. (Overrides [CBasePane::IsTabbed](../../mfc/reference/cbasepane-class.md#istabbed).)|  
+|[CPane::LoadState](#loadstate)|Loads the state of the pane from the registry. (Overrides [CBasePane::LoadState](../../mfc/reference/cbasepane-class.md#loadstate).)|  
+|[CPane::MoveByAlignment](#movebyalignment)|Moves the pane and the virtual rectangle by the specified amount.|  
+|[CPane::MovePane](#movepane)|Moves the pane to the specified rectangle.|  
+|[CPane::OnAfterChangeParent](#onafterchangeparent)|Called by the framework when the parent of a pane has changed.|  
+|[CPane::OnBeforeChangeParent](#onbeforechangeparent)|Called by the framework when the parent of the pane is about to change.|  
+|[CPane::OnPressCloseButton](#onpressclosebutton)|Called by the framework when the user chooses the Close button on the caption for the pane.|  
 |`CPane::OnProcessDblClk`|Used internally.|  
-|[CPane::OnShowControlBarMenu](#cpane__onshowcontrolbarmenu)|Called by the framework when a special pane menu is about to be displayed.|  
-|[CPane::OnShowControlBarMenu](#cpane__onshowcontrolbarmenu)|Called by the framework when a special pane menu is about to be displayed.|  
+|[CPane::OnShowControlBarMenu](#onshowcontrolbarmenu)|Called by the framework when a special pane menu is about to be displayed.|  
+|[CPane::OnShowControlBarMenu](#onshowcontrolbarmenu)|Called by the framework when a special pane menu is about to be displayed.|  
 |`CPane::PrepareToDock`|Used internally.|  
-|[CPane::RecalcLayout](#cpane__recalclayout)|Recalculates layout information for the pane. (Overrides [CBasePane::RecalcLayout](../../mfc/reference/cbasepane-class.md#cbasepane__recalclayout).)|  
-|[CPane::SaveState](#cpane__savestate)|Saves the state of the pane to the registry. (Overrides [CBasePane::SaveState](../../mfc/reference/cbasepane-class.md#cbasepane__savestate).)|  
-|[CPane::SetActiveInGroup](#cpane__setactiveingroup)|Flags a pane as active.|  
-|[CPane::SetBorders](#cpane__setborders)|Sets the border values of the pane.|  
-|[CPane::SetClientHotSpot](#cpane__setclienthotspot)|Sets the hot spot for the pane.|  
-|[CPane::SetDockState](#cpane__setdockstate)|Restores docking state information for the pane.|  
-|[CPane::SetExclusiveRowMode](#cpane__setexclusiverowmode)|Enables or disables the exclusive row mode.|  
-|[CPane::SetMiniFrameRTC](#cpane__setminiframertc)|Sets the runtime class information for the default mini-frame window.|  
-|[CPane::SetMinSize](#cpane__setminsize)|Sets the minimum allowed size for the pane.|  
-|[CPane::SetVirtualRect](#cpane__setvirtualrect)|Sets the *virtual rectangle* of the pane.|  
-|[CPane::StretchPaneDeferWndPos](#cpane__stretchpanedeferwndpos)|Stretches the pane vertically or horizontally based on docking style.|  
-|[CPane::ToggleAutoHide](#cpane__toggleautohide)|Toggles auto-hide mode.|  
-|[CPane::UndockPane](#cpane__undockpane)|Removes the pane from the dock site, default slider, or mini-frame window where it is currently docked. (Overrides [CBasePane::UndockPane](../../mfc/reference/cbasepane-class.md#cbasepane__undockpane).)|  
-|[CPane::UpdateVirtualRect](#cpane__updatevirtualrect)|Updates the virtual rectangle.|  
+|[CPane::RecalcLayout](#recalclayout)|Recalculates layout information for the pane. (Overrides [CBasePane::RecalcLayout](../../mfc/reference/cbasepane-class.md#recalclayout).)|  
+|[CPane::SaveState](#savestate)|Saves the state of the pane to the registry. (Overrides [CBasePane::SaveState](../../mfc/reference/cbasepane-class.md#savestate).)|  
+|[CPane::SetActiveInGroup](#setactiveingroup)|Flags a pane as active.|  
+|[CPane::SetBorders](#setborders)|Sets the border values of the pane.|  
+|[CPane::SetClientHotSpot](#setclienthotspot)|Sets the hot spot for the pane.|  
+|[CPane::SetDockState](#setdockstate)|Restores docking state information for the pane.|  
+|[CPane::SetExclusiveRowMode](#setexclusiverowmode)|Enables or disables the exclusive row mode.|  
+|[CPane::SetMiniFrameRTC](#setminiframertc)|Sets the runtime class information for the default mini-frame window.|  
+|[CPane::SetMinSize](#setminsize)|Sets the minimum allowed size for the pane.|  
+|[CPane::SetVirtualRect](#setvirtualrect)|Sets the *virtual rectangle* of the pane.|  
+|[CPane::StretchPaneDeferWndPos](#stretchpanedeferwndpos)|Stretches the pane vertically or horizontally based on docking style.|  
+|[CPane::ToggleAutoHide](#toggleautohide)|Toggles auto-hide mode.|  
+|[CPane::UndockPane](#undockpane)|Removes the pane from the dock site, default slider, or mini-frame window where it is currently docked. (Overrides [CBasePane::UndockPane](../../mfc/reference/cbasepane-class.md#undockpane).)|  
+|[CPane::UpdateVirtualRect](#updatevirtualrect)|Updates the virtual rectangle.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPane::OnAfterDock](#cpane__onafterdock)|Called by the framework when a pane has been docked.|  
-|[CPane::OnAfterFloat](#cpane__onafterfloat)|Called by the framework when a pane has been floated.|  
-|[CPane::OnBeforeDock](#cpane__onbeforedock)|Called by the framework when the pane is about to be docked.|  
-|[CPane::OnBeforeFloat](#cpane__onbeforefloat)|Called by the framework when a pane is about to be floated.|  
+|[CPane::OnAfterDock](#onafterdock)|Called by the framework when a pane has been docked.|  
+|[CPane::OnAfterFloat](#onafterfloat)|Called by the framework when a pane has been floated.|  
+|[CPane::OnBeforeDock](#onbeforedock)|Called by the framework when the pane is about to be docked.|  
+|[CPane::OnBeforeFloat](#onbeforefloat)|Called by the framework when a pane is about to be floated.|  
   
 ### Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPane::m_bHandleMinSize](#cpane__m_bhandleminsize)|Enables consistent handling of the minimal size for panes.|  
-|[CPane::m_recentDockInfo](#cpane__m_recentdockinfo)|Contains recent docking information.|  
+|[CPane::m_bHandleMinSize](#m_bhandleminsize)|Enables consistent handling of the minimal size for panes.|  
+|[CPane::m_recentDockInfo](#m_recentdockinfo)|Contains recent docking information.|  
   
 ## Remarks  
  Typically, `CPane` objects are not instantiated directly. If you require a pane that has docking functionality, derive your object from [CDockablePane](../../mfc/reference/cdockablepane-class.md). If you require toolbar functionality, derive your object from [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md).  
@@ -154,7 +154,7 @@ class CPane : public CBasePane
 ## Requirements  
  **Header:** afxPane.h  
   
-##  <a name="cpane__adjustsizeimmediate"></a>  CPane::AdjustSizeImmediate  
+##  <a name="adjustsizeimmediate"></a>  CPane::AdjustSizeImmediate  
  Immediately recalculates the layout of a pane.  
   
 ```  
@@ -168,7 +168,7 @@ virtual void AdjustSizeImmediate(BOOL bRecalcLayout = TRUE);
 ### Remarks  
  Call this method when you dynamically change the layout of a pane. For example, you may want to call this method when you hide or show toolbar buttons.  
   
-##  <a name="cpane__allocelements"></a>  CPane::AllocElements  
+##  <a name="allocelements"></a>  CPane::AllocElements  
  Allocates storage for internal use.  
   
 ```  
@@ -187,7 +187,7 @@ BOOL AllocElements(
 ### Return Value  
  `FALSE` if memory allocation fails; otherwise, `TRUE`.  
   
-##  <a name="cpane__allowshowonpanemenu"></a>  CPane::AllowShowOnPaneMenu  
+##  <a name="allowshowonpanemenu"></a>  CPane::AllowShowOnPaneMenu  
  Specifies whether the pane is listed in the runtime-generated list of panes for the application.  
   
 ```  
@@ -202,7 +202,7 @@ virtual BOOL AllowShowOnPaneMenu() const;
 ### Remarks  
  The AppWizard-generated application contains a menu option that lists panes that it contains. This method determines whether the pane is displayed in the list.  
   
-##  <a name="cpane__calcavailablesize"></a>  CPane::CalcAvailableSize  
+##  <a name="calcavailablesize"></a>  CPane::CalcAvailableSize  
  Calculates the difference in size between a specified rectangle and the current window rectangle.  
   
 ```  
@@ -216,7 +216,7 @@ virtual CSize CalcAvailableSize(CRect rectRequired);
 ### Return Value  
  The difference in width and height between `rectRequired` and the current window rectangle.  
   
-##  <a name="cpane__calcinsiderect"></a>  CPane::CalcInsideRect  
+##  <a name="calcinsiderect"></a>  CPane::CalcInsideRect  
  Calculates the inside rectangle of a pane, including the borders and grippers.  
   
 ```  
@@ -237,7 +237,7 @@ void CalcInsideRect(
 ### Remarks  
  This method is called by the framework when it has to recalculate the layout for a pane. The `rect` parameter is filled with the size and offset of the client area of the pane. This includes its borders and grippers.  
   
-##  <a name="cpane__calcrecentdockedrect"></a>  CPane::CalcRecentDockedRect  
+##  <a name="calcrecentdockedrect"></a>  CPane::CalcRecentDockedRect  
  Calculates the recently docked rectangle.  
   
 ```  
@@ -245,9 +245,9 @@ void CalcRecentDockedRect();
 ```  
   
 ### Remarks  
- This method updates [CPane::m_recentDockInfo](#cpane__m_recentdockinfo).  
+ This method updates [CPane::m_recentDockInfo](#m_recentdockinfo).  
   
-##  <a name="cpane__calcsize"></a>  CPane::CalcSize  
+##  <a name="calcsize"></a>  CPane::CalcSize  
  Calculates the size of the pane.  
   
 ```  
@@ -264,7 +264,7 @@ virtual CSize CalcSize(BOOL bVertDock);
 ### Remarks  
  Derived classes should override this method.  
   
-##  <a name="cpane__canbedocked"></a>  CPane::CanBeDocked  
+##  <a name="canbedocked"></a>  CPane::CanBeDocked  
  Determines if the pane can be docked at the specified base pane.  
   
 ```  
@@ -283,9 +283,9 @@ virtual BOOL CanBeDocked(CBasePane* pDockBar) const;
 ### Remarks  
  This method is usually called by the framework to determine whether a pane can be docked at the specified docking pane. To determine whether the pane can be docked, the method evaluates the pane's currently enabled docking alignment.  
   
- You enable docking to the various sides of the frame window by calling [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#cbasepane__enabledocking).  
+ You enable docking to the various sides of the frame window by calling [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#enabledocking).  
   
-##  <a name="cpane__canbetabbeddocument"></a>  CPane::CanBeTabbedDocument  
+##  <a name="canbetabbeddocument"></a>  CPane::CanBeTabbedDocument  
  Determines if the pane can be converted to a tabbed document.  
   
 ```  
@@ -300,7 +300,7 @@ virtual BOOL CanBeTabbedDocument() const;
 ### Remarks  
  Override this method in a derived class and return `FALSE` if you want to prevent a pane from being converted to a tabbed document. A tabbed document will not be listed in the Window Position menu.  
   
-##  <a name="cpane__converttotabbeddocument"></a>  CPane::ConvertToTabbedDocument  
+##  <a name="converttotabbeddocument"></a>  CPane::ConvertToTabbedDocument  
  Converts a dockable pane to a tabbed document.  
   
 ```  
@@ -312,9 +312,9 @@ virtual void ConvertToTabbedDocument(BOOL bActiveTabOnly = TRUE);
  Not used in `CPane::ConvertToTabbedDocument`.  
   
 ### Remarks  
- Only dockable panes can be converted to tabbed documents. For information, see [CDockablePane::ConvertToTabbedDocument](../../mfc/reference/cdockablepane-class.md#cdockablepane__converttotabbeddocument).  
+ Only dockable panes can be converted to tabbed documents. For information, see [CDockablePane::ConvertToTabbedDocument](../../mfc/reference/cdockablepane-class.md#converttotabbeddocument).  
   
-##  <a name="cpane__copystate"></a>  CPane::CopyState  
+##  <a name="copystate"></a>  CPane::CopyState  
  Copies the state of a pane.  
   
 ```  
@@ -328,7 +328,7 @@ virtual void CopyState(CPane* pOrgBar);
 ### Remarks  
  This method copies the state of `pOrgBar` to the current pane.  
   
-##  <a name="cpane__create"></a>  CPane::Create  
+##  <a name="create"></a>  CPane::Create  
  Creates a control bar and attaches it to the [CPane](../../mfc/reference/cpane-class.md) object.  
   
 ```  
@@ -359,7 +359,7 @@ virtual BOOL Create(
  Specifies the ID of the pane.  
   
  [in] `dwControlBarStyle`  
- Specifies the style for the pane. For more information, see [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#cbasepane__createex).  
+ Specifies the style for the pane. For more information, see [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex).  
   
  [in] [out] `pContext`  
  Specifies the create context of the pane.  
@@ -370,9 +370,9 @@ virtual BOOL Create(
 ### Remarks  
  This method creates a Windows pane and attaches it to the `CPane` object.  
   
- If you have not explicitly initialized [CPane::m_recentDockInfo](#cpane__m_recentdockinfo) before you call `Create`, the parameter `rect` will be used as the rectangle when floating or docking the pane.  
+ If you have not explicitly initialized [CPane::m_recentDockInfo](#m_recentdockinfo) before you call `Create`, the parameter `rect` will be used as the rectangle when floating or docking the pane.  
   
-##  <a name="cpane__createdefaultminiframe"></a>  CPane::CreateDefaultMiniframe  
+##  <a name="createdefaultminiframe"></a>  CPane::CreateDefaultMiniframe  
  Creates a mini-frame window for a floating pane.  
   
 ```  
@@ -391,7 +391,7 @@ virtual CPaneFrameWnd* CreateDefaultMiniframe(CRect rectInitial);
   
  The runtime class information for the mini-frame window is stored in the `CPane::m_pMiniFrameRTC` member. You can use a derived class to set this member if you decide to create customized mini-frame windows.  
   
-##  <a name="cpane__createex"></a>  CPane::CreateEx  
+##  <a name="createex"></a>  CPane::CreateEx  
  Creates a control bar and attaches it to the [CPane](../../mfc/reference/cpane-class.md) object.  
   
 ```  
@@ -426,7 +426,7 @@ virtual BOOL CreateEx(
  Specifies the ID of the pane.  
   
  [in] `dwControlBarStyle`  
- Specifies the style for the pane. For more information, see [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#cbasepane__createex).  
+ Specifies the style for the pane. For more information, see [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex).  
   
  [in] [out] `pContext`  
  Specifies the create context for the pane.  
@@ -437,9 +437,9 @@ virtual BOOL CreateEx(
 ### Remarks  
  This method creates a Windows pane and attaches it to the `CPane` object.  
   
- If you have not explicitly initialized [CPane::m_recentDockInfo](#cpane__m_recentdockinfo) before you call `CreateEx`, the parameter `rect` will be used as the rectangle when floating or docking the pane.  
+ If you have not explicitly initialized [CPane::m_recentDockInfo](#m_recentdockinfo) before you call `CreateEx`, the parameter `rect` will be used as the rectangle when floating or docking the pane.  
   
-##  <a name="cpane__dockbymouse"></a>  CPane::DockByMouse  
+##  <a name="dockbymouse"></a>  CPane::DockByMouse  
  Docks a pane by using the mouse.  
   
 ```  
@@ -453,7 +453,7 @@ virtual BOOL DockByMouse(CBasePane* pDockBar);
 ### Return Value  
  `TRUE` if the pane was docked successfully; otherwise, `FALSE`.  
   
-##  <a name="cpane__dockpane"></a>  CPane::DockPane  
+##  <a name="dockpane"></a>  CPane::DockPane  
  Docks the floating pane to a base pane.  
   
 ```  
@@ -486,9 +486,9 @@ virtual BOOL DockPane(
  `TRUE` if the pane was docked successfully; otherwise, `FALSE`.  
   
 ### Remarks  
- This method docks the pane to the base pane that is specified by the `pDockBar` parameter. You must first enable docking by calling [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#cbasepane__enabledocking).  
+ This method docks the pane to the base pane that is specified by the `pDockBar` parameter. You must first enable docking by calling [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#enabledocking).  
   
-##  <a name="cpane__dockpanestandard"></a>  CPane::DockPaneStandard  
+##  <a name="dockpanestandard"></a>  CPane::DockPaneStandard  
  Docks a pane by using outline (standard) docking.  
   
 ```  
@@ -503,9 +503,9 @@ virtual CPane* DockPaneStandard(BOOL& bWasDocked);
  This method always returns the `this` pointer.  
   
 ### Remarks  
- This method is used only for panes that are derived from the [CDockablePane Class](../../mfc/reference/cdockablepane-class.md). For more information, see [CDockablePane::DockPaneStandard](../../mfc/reference/cdockablepane-class.md#cdockablepane__dockpanestandard).  
+ This method is used only for panes that are derived from the [CDockablePane Class](../../mfc/reference/cdockablepane-class.md). For more information, see [CDockablePane::DockPaneStandard](../../mfc/reference/cdockablepane-class.md#dockpanestandard).  
   
-##  <a name="cpane__docktoframewindow"></a>  CPane::DockToFrameWindow  
+##  <a name="docktoframewindow"></a>  CPane::DockToFrameWindow  
  Docks a dockable pane to a frame.  
   
 ```  
@@ -542,7 +542,7 @@ virtual BOOL DockToFrameWindow(
   
 ### Remarks  
   
-##  <a name="cpane__doesallowsiblingbars"></a>  CPane::DoesAllowSiblingBars  
+##  <a name="doesallowsiblingbars"></a>  CPane::DoesAllowSiblingBars  
  Indicates whether you can dock another pane at the same row where the current pane is docked.  
   
 ```  
@@ -555,11 +555,11 @@ virtual BOOL DoesAllowSiblingBars() const;
  `TRUE` if this pane can dock to another pane on the same row as itself; otherwise, `FALSE`.  
   
 ### Remarks  
- You can enable or disable this behavior by calling [CPane::SetExclusiveRowMode](#cpane__setexclusiverowmode).  
+ You can enable or disable this behavior by calling [CPane::SetExclusiveRowMode](#setexclusiverowmode).  
   
  By default, toolbars have exclusive row mode disabled and the menu bar has exclusive row mode enabled.  
   
-##  <a name="cpane__floatpane"></a>  CPane::FloatPane  
+##  <a name="floatpane"></a>  CPane::FloatPane  
  Floats the pane.  
   
 ```  
@@ -574,18 +574,18 @@ virtual BOOL FloatPane(
  Specifies the location, in screen coordinates, to position the pane when it is floated.  
   
  [in] `dockMethod`  
- Specifies the docking method to use when the pane is floated. For a list of possible values, see [CPane::DockPane](#cpane__dockpane).  
+ Specifies the docking method to use when the pane is floated. For a list of possible values, see [CPane::DockPane](#dockpane).  
   
  [in] `bShow`  
  `TRUE` to show the pane when floated; otherwise, `FALSE`.  
   
 ### Return Value  
- `TRUE` if the pane was floated successfully or if the pane cannot be floated because [CBasePane::CanFloat](../../mfc/reference/cbasepane-class.md#cbasepane__canfloat) returns `FALSE`; otherwise, `FALSE`.  
+ `TRUE` if the pane was floated successfully or if the pane cannot be floated because [CBasePane::CanFloat](../../mfc/reference/cbasepane-class.md#canfloat) returns `FALSE`; otherwise, `FALSE`.  
   
 ### Remarks  
  Call this method to float the pane at the position that is specified by the `rectFloat` parameter. This method automatically creates a parent mini-frame window for the pane.  
   
-##  <a name="cpane__getavailableexpandsize"></a>  CPane::GetAvailableExpandSize  
+##  <a name="getavailableexpandsize"></a>  CPane::GetAvailableExpandSize  
  Returns the amount, in pixels, that the pane can expand.  
   
 ```  
@@ -599,7 +599,7 @@ virtual int GetAvailableExpandSize() const;
   
 ### Remarks  
   
-##  <a name="cpane__getavailablestretchsize"></a>  CPane::GetAvailableStretchSize  
+##  <a name="getavailablestretchsize"></a>  CPane::GetAvailableStretchSize  
  Returns the amount, in pixels, that the pane can shrink.  
   
 ```  
@@ -612,9 +612,9 @@ virtual int GetAvailableStretchSize() const;
  The amount, in pixels, that the pane can shrink. If the pane is docked horizontally, this amount is the available width; otherwise, it is the available height.  
   
 ### Remarks  
- The available stretch size is calculated by subtracting the minimum allowed size for the pane ( [CPane::GetMinSize](#cpane__getminsize)) from the current size ( [CWnd::GetWindowRect](../../mfc/reference/cwnd-class.md#cwnd__getwindowrect)).  
+ The available stretch size is calculated by subtracting the minimum allowed size for the pane ( [CPane::GetMinSize](#getminsize)) from the current size ( [CWnd::GetWindowRect](../../mfc/reference/cwnd-class.md#getwindowrect)).  
   
-##  <a name="cpane__getborders"></a>  CPane::GetBorders  
+##  <a name="getborders"></a>  CPane::GetBorders  
  Returns the width of the borders of the pane.  
   
 ```  
@@ -627,9 +627,9 @@ CRect GetBorders() const;
  A [CRect](../../atl-mfc-shared/reference/crect-class.md) object that contains the current width, in pixels, of each side of the pane. For example, the value of the `left` member of the `CRect` object is the width of the left border.  
   
 ### Remarks  
- To set the size of the borders, call [CPane::SetBorders](#cpane__setborders).  
+ To set the size of the borders, call [CPane::SetBorders](#setborders).  
   
-##  <a name="cpane__getclienthotspot"></a>  CPane::GetClientHotSpot  
+##  <a name="getclienthotspot"></a>  CPane::GetClientHotSpot  
  Returns the *hot spot* for the pane.  
   
 ```  
@@ -643,7 +643,7 @@ CPoint GetClientHotSpot() const;
 ### Remarks  
  The *hot spot* is the point on the pane that the user selects and holds to move the pane. A hot spot is used for smooth animation when the pane is moved from a docked position.  
   
-##  <a name="cpane__getdocksiterow"></a>  CPane::GetDockSiteRow  
+##  <a name="getdocksiterow"></a>  CPane::GetDockSiteRow  
  Returns the dock row ( [CDockingPanesRow Class](../../mfc/reference/cdockingpanesrow-class.md)) in which the pane is docked.  
   
 ```  
@@ -655,7 +655,7 @@ CDockingPanesRow* GetDockSiteRow() const;
 ### Return Value  
  A `CDockingPanesRow`* that points to the dock row in which the pane is docked, or `NULL` if the pane is not docked.  
   
-##  <a name="cpane__getexclusiverowmode"></a>  CPane::GetExclusiveRowMode  
+##  <a name="getexclusiverowmode"></a>  CPane::GetExclusiveRowMode  
  Determines if the pane is in exclusive row mode.  
   
 ```  
@@ -668,9 +668,9 @@ virtual BOOL GetExclusiveRowMode() const;
  `TRUE` if the pane is in exclusive row mode; otherwise, `FALSE`.  
   
 ### Remarks  
- For more information about exclusive row mode, see [CPane::SetExclusiveRowMode](#cpane__setexclusiverowmode).  
+ For more information about exclusive row mode, see [CPane::SetExclusiveRowMode](#setexclusiverowmode).  
   
-##  <a name="cpane__gethotspot"></a>  CPane::GetHotSpot  
+##  <a name="gethotspot"></a>  CPane::GetHotSpot  
  Returns the hot spot that is stored in an underlying `CMFCDragFrameImpl` object.  
   
 ```  
@@ -684,7 +684,7 @@ CPoint GetHotSpot() const;
 ### Remarks  
  The `CPane` class contains a `CMFCDragFrameImpl` object, `m_dragFrameImpl`, that is responsible for drawing the rectangle that appears when the user moves a pane in the standard docking mode. The hot spot is used to draw the rectangle relative to the current mouse position as the user moves the pane.  
   
-##  <a name="cpane__getminsize"></a>  CPane::GetMinSize  
+##  <a name="getminsize"></a>  CPane::GetMinSize  
  Retrieves the minimum allowed size for the pane.  
   
 ```  
@@ -699,7 +699,7 @@ virtual void GetMinSize(CSize& size) const;
   
 ### Remarks  
   
-##  <a name="cpane__getpanename"></a>  CPane::GetPaneName  
+##  <a name="getpanename"></a>  CPane::GetPaneName  
  Retrieves the title for the pane.  
   
 ```  
@@ -715,7 +715,7 @@ virtual void GetPaneName(CString& strName) const;
 ### Remarks  
  The pane title is displayed in the caption area when the pane is docked or floating. If the pane is part of a tabbed group, the title is displayed in the tab area. If the pane is in auto-hide mode, the title is displayed on a `CMFCAutoHideButton`.  
   
-##  <a name="cpane__getvirtualrect"></a>  CPane::GetVirtualRect  
+##  <a name="getvirtualrect"></a>  CPane::GetVirtualRect  
  Retrieves the *virtual rectangle* of the pane.  
   
 ```  
@@ -733,7 +733,7 @@ void GetVirtualRect(CRect& rectVirtual) const;
   
  Do not call methods that are related to virtual rectangles unless you are moving panes programmatically.  
   
-##  <a name="cpane__ischangestate"></a>  CPane::IsChangeState  
+##  <a name="ischangestate"></a>  CPane::IsChangeState  
  As the pane is being moved, this method analyzes its position relative to other panes, dock rows, and mini-frame windows, and returns the appropriate `AFX_CS_STATUS` value.  
   
 ```  
@@ -761,7 +761,7 @@ virtual AFX_CS_STATUS IsChangeState(
 |`CS_DELAY_DOCK`|The pane is over a dock site that is either another docking pane or an edge of the main frame. The framework docks the pane when the user releases the move.|  
 |`CS_DELAY_DOCK_TO_TAB`|The pane is over a dock site that causes the pane to be docked in a tabbed window. This occurs when the pane is either over the caption of another docking pane or over the tab area of a tabbed pane. The framework docks the pane when the user releases the move.|  
   
-##  <a name="cpane__isdragmode"></a>  CPane::IsDragMode  
+##  <a name="isdragmode"></a>  CPane::IsDragMode  
  Specifies whether the pane is being moved.  
   
 ```  
@@ -775,7 +775,7 @@ virtual BOOL IsDragMode() const;
   
 ### Remarks  
   
-##  <a name="cpane__isinfloatingmultipaneframewnd"></a>  CPane::IsInFloatingMultiPaneFrameWnd  
+##  <a name="isinfloatingmultipaneframewnd"></a>  CPane::IsInFloatingMultiPaneFrameWnd  
  Specifies whether the pane is in a multi-pane frame window ( [CMultiPaneFrameWnd Class](../../mfc/reference/cmultipaneframewnd-class.md)).  
   
 ```  
@@ -790,7 +790,7 @@ virtual BOOL IsInFloatingMultiPaneFrameWnd() const;
 ### Remarks  
  Only dockable panes can float in a multi-pane frame window. Therefore, `CPane::IsInFloatingMultiPaneFrameWnd` always returns `FALSE`.  
   
-##  <a name="cpane__isleftof"></a>  CPane::IsLeftOf  
+##  <a name="isleftof"></a>  CPane::IsLeftOf  
  Determines whether the pane is left of (or above) the specified rectangle.  
   
 ```  
@@ -813,7 +813,7 @@ bool IsLeftOf(
 ### Remarks  
  If the pane is docked horizontally, this method checks whether its location is left of `rect`. Otherwise, this method checks whether the location is above `rect`.  
   
-##  <a name="cpane__isresizable"></a>  CPane::IsResizable  
+##  <a name="isresizable"></a>  CPane::IsResizable  
  Specifies whether the pane is resizable.  
   
 ```  
@@ -832,7 +832,7 @@ virtual BOOL IsResizable() const;
   
  Non-resizable panes cannot reside in docking containers.  
   
-##  <a name="cpane__istabbed"></a>  CPane::IsTabbed  
+##  <a name="istabbed"></a>  CPane::IsTabbed  
  Determines whether the pane has been inserted into the tab control of a tabbed window.  
   
 ```  
@@ -847,7 +847,7 @@ virtual BOOL IsTabbed() const;
 ### Remarks  
  The tabbed state is treated separately from the floating, docked, and auto-hide states.  
   
-##  <a name="cpane__loadstate"></a>  CPane::LoadState  
+##  <a name="loadstate"></a>  CPane::LoadState  
  Loads the state of the pane from the registry.  
   
 ```  
@@ -871,11 +871,11 @@ virtual BOOL LoadState(
  `TRUE` if the pane state was loaded successfully; otherwise, `FALSE`.  
   
 ### Remarks  
- The framework calls this method to load the pane state from the registry. Override it in a derived class to load additional information that is saved by [CPane::SaveState](#cpane__savestate).  
+ The framework calls this method to load the pane state from the registry. Override it in a derived class to load additional information that is saved by [CPane::SaveState](#savestate).  
   
  When you override this method, also call the base method, and return `FALSE` if the base method returns `FALSE`.  
   
-##  <a name="cpane__m_bhandleminsize"></a>  CPane::m_bHandleMinSize  
+##  <a name="m_bhandleminsize"></a>  CPane::m_bHandleMinSize  
  Enables consistent handling of minimum pane sizes.  
   
 ```  
@@ -887,7 +887,7 @@ AFX_IMPORT_DATA static BOOL m_bHandleMinSize;
   
  If this value is set to `TRUE`, all panes whose size should be reduced below their minimum size are clipped, not stretched. Because the framework uses window regions for pane sizing purposes, do not change the size of the window region for docking panes if this value is set to `TRUE`.  
   
-##  <a name="cpane__m_recentdockinfo"></a>  CPane::m_recentDockInfo  
+##  <a name="m_recentdockinfo"></a>  CPane::m_recentDockInfo  
  Contains recent docking information.  
   
 ```  
@@ -897,7 +897,7 @@ CRecentDockSiteInfo m_recentDockInfo;
 ### Remarks  
  The framework stores the latest docking state information for the pane in this member.  
   
-##  <a name="cpane__movebyalignment"></a>  CPane::MoveByAlignment  
+##  <a name="movebyalignment"></a>  CPane::MoveByAlignment  
  Moves the pane and the virtual rectangle by the specified amount.  
   
 ```  
@@ -928,7 +928,7 @@ BOOL MoveByAlignment(
   
  If `dwAlignment` contains the `CBRS_ALIGN_LEFT` or `CBRS_ALIGN_RIGHT` flag, the pane and virtual rectangle are moved horizontally; otherwise, if `dwAlignment` contains the `CBRS_ALIGN_TOP` or `CBRS_ALIGN_BOTTOM` flag, the pane and virtual rectangle are moved vertically.  
   
-##  <a name="cpane__movepane"></a>  CPane::MovePane  
+##  <a name="movepane"></a>  CPane::MovePane  
  Moves the pane to the specified rectangle.  
   
 ```  
@@ -943,7 +943,7 @@ virtual CSize MovePane(
  Specifies the new rectangle for the pane.  
   
  [in] `bForceMove`  
- If `TRUE`, this method ignores the minimum allowed pane size ( [CPane::GetMinSize](#cpane__getminsize)); otherwise, the pane is adjusted, if necessary, to ensure that it is at least the minimum allowed size.  
+ If `TRUE`, this method ignores the minimum allowed pane size ( [CPane::GetMinSize](#getminsize)); otherwise, the pane is adjusted, if necessary, to ensure that it is at least the minimum allowed size.  
   
  [in] `hdwp`  
  Not used.  
@@ -954,7 +954,7 @@ virtual CSize MovePane(
 ### Remarks  
  This method is used only for dockable panes.  
   
-##  <a name="cpane__onafterchangeparent"></a>  CPane::OnAfterChangeParent  
+##  <a name="onafterchangeparent"></a>  CPane::OnAfterChangeParent  
  Called by the framework when the parent of a pane has changed.  
   
 ```  
@@ -968,7 +968,7 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 ### Remarks  
  This method is called by the framework when the parent of a pane has changed because of a docking or floating operation.  
   
-##  <a name="cpane__onafterdock"></a>  CPane::OnAfterDock  
+##  <a name="onafterdock"></a>  CPane::OnAfterDock  
  Called by the framework when a pane has been docked.  
   
 ```  
@@ -988,7 +988,7 @@ virtual void OnAfterDock(
  [in] `dockMethod`  
  This parameter is not used.  
   
-##  <a name="cpane__onafterfloat"></a>  CPane::OnAfterFloat  
+##  <a name="onafterfloat"></a>  CPane::OnAfterFloat  
  Called by the framework after a pane floats.  
   
 ```  
@@ -998,7 +998,7 @@ virtual void OnAfterFloat();
 ### Remarks  
  You can override this method in a derived class if you want to perform any processing after a pane floats.  
   
-##  <a name="cpane__onbeforechangeparent"></a>  CPane::OnBeforeChangeParent  
+##  <a name="onbeforechangeparent"></a>  CPane::OnBeforeChangeParent  
  Called by the framework when the parent of the pane is about to change.  
   
 ```  
@@ -1019,7 +1019,7 @@ virtual void OnBeforeChangeParent(
   
  By default, the pane is unregistered with the docking pane by calling `CDockSite::RemovePane`.  
   
-##  <a name="cpane__onbeforedock"></a>  CPane::OnBeforeDock  
+##  <a name="onbeforedock"></a>  CPane::OnBeforeDock  
  Called by the framework when the pane is about to dock.  
   
 ```  
@@ -1045,7 +1045,7 @@ virtual BOOL OnBeforeDock(
 ### Remarks  
  This method is called by the framework when a pane is about to be docked. You can override this method in a derived class if you want to perform any processing before a pane is finally docked.  
   
-##  <a name="cpane__onbeforefloat"></a>  CPane::OnBeforeFloat  
+##  <a name="onbeforefloat"></a>  CPane::OnBeforeFloat  
  Called by the framework when a pane is about to float.  
   
 ```  
@@ -1067,7 +1067,7 @@ virtual BOOL OnBeforeFloat(
 ### Remarks  
  This method is called by the framework when a pane is about to float. You can override this method in a derived class if you want to perform any processing before the pane finally floats.  
   
-##  <a name="cpane__onpressclosebutton"></a>  CPane::OnPressCloseButton  
+##  <a name="onpressclosebutton"></a>  CPane::OnPressCloseButton  
  Called by the framework when the user presses the close button on the caption for the pane.  
   
 ```  
@@ -1077,7 +1077,7 @@ virtual void OnPressCloseButton();
 ### Remarks  
  This method is called by the framework when a user presses the **Close** button on the pane's caption. To receive notifications about the **Close** event, you can override this method in a derived class.  
   
-##  <a name="cpane__onshowcontrolbarmenu"></a>  CPane::OnShowControlBarMenu  
+##  <a name="onshowcontrolbarmenu"></a>  CPane::OnShowControlBarMenu  
  Called by the framework when a special pane menu is about to be displayed.  
   
 ```  
@@ -1092,9 +1092,9 @@ virtual BOOL OnShowControlBarMenu(CPoint point);
  `TRUE` if the menu can be displayed; otherwise, `FALSE`.  
   
 ### Remarks  
- The menu contains several items that enable you to specify the pane's behavior, namely: **Floating**, **Docking**, **AutoHide**, and **Hide**. You can enable this menu for all panes by calling [CDockingManager::EnableDockSiteMenu](../../mfc/reference/cdockingmanager-class.md#cdockingmanager__enabledocksitemenu).  
+ The menu contains several items that enable you to specify the pane's behavior, namely: **Floating**, **Docking**, **AutoHide**, and **Hide**. You can enable this menu for all panes by calling [CDockingManager::EnableDockSiteMenu](../../mfc/reference/cdockingmanager-class.md#enabledocksitemenu).  
   
-##  <a name="cpane__recalclayout"></a>  CPane::RecalcLayout  
+##  <a name="recalclayout"></a>  CPane::RecalcLayout  
  Recalculates layout information for the pane.  
   
 ```  
@@ -1104,9 +1104,9 @@ virtual void RecalcLayout();
 ### Remarks  
  If the pane is docked, this method updates the virtual rectangle for the pane by setting its size to the current size of the pane.  
   
- If the pane is floating, this method notifies the parent mini-frame to adjust the size of the pane to the size of the mini-frame. The framework ensures that the mini-frame is at least the minimum allowed size for the pane ( [CPane::GetMinSize](#cpane__getminsize)) and resizes the mini-frame if necessary.  
+ If the pane is floating, this method notifies the parent mini-frame to adjust the size of the pane to the size of the mini-frame. The framework ensures that the mini-frame is at least the minimum allowed size for the pane ( [CPane::GetMinSize](#getminsize)) and resizes the mini-frame if necessary.  
   
-##  <a name="cpane__savestate"></a>  CPane::SaveState  
+##  <a name="savestate"></a>  CPane::SaveState  
  Saves the state of the pane to the registry.  
   
 ```  
@@ -1134,7 +1134,7 @@ virtual BOOL SaveState(
   
  When you override this method, also call the base method, and return `FALSE` if the base method returns `FALSE`.  
   
-##  <a name="cpane__setactiveingroup"></a>  CPane::SetActiveInGroup  
+##  <a name="setactiveingroup"></a>  CPane::SetActiveInGroup  
  Flags a pane as active.  
   
 ```  
@@ -1152,7 +1152,7 @@ virtual void SetActiveInGroup(BOOL bActive);
   
  If `CMFCAutoHideButton::m_bOverlappingTabs` is `FALSE`, or if the pane is not located in a group, the framework displays the associated auto-hide button as an icon and a label.  
   
-##  <a name="cpane__setborders"></a>  CPane::SetBorders  
+##  <a name="setborders"></a>  CPane::SetBorders  
  Sets the border values of the pane.  
   
 ```  
@@ -1186,7 +1186,7 @@ void SetBorders(
 ### Remarks  
  Call this function to set the sizes of the pane's borders.  
   
-##  <a name="cpane__setclienthotspot"></a>  CPane::SetClientHotSpot  
+##  <a name="setclienthotspot"></a>  CPane::SetClientHotSpot  
  Sets the *hot spot* for the pane.  
   
 ```  
@@ -1200,7 +1200,7 @@ void SetClientHotSpot(const CPoint& ptNew);
 ### Remarks  
  The *hot spot* is the point on the pane that the user selects and holds to move the pane. A hot spot is used for smooth animation when the pane is dragged from a docked position.  
   
-##  <a name="cpane__setdockstate"></a>  CPane::SetDockState  
+##  <a name="setdockstate"></a>  CPane::SetDockState  
  Restores docking state information for the pane.  
   
 ```  
@@ -1212,11 +1212,11 @@ virtual void SetDockState(CDockingManager* pDockManager);
  Pointer to the docking manager for the main frame window.  
   
 ### Remarks  
- This method is called by the framework to restore recent docking state information for the pane. A pane stores recent docking state information in [CPane::m_recentDockInfo](#cpane__m_recentdockinfo). For more information, see the [CRecentDockSiteInfo Class](../../mfc/reference/crecentdocksiteinfo-class.md).  
+ This method is called by the framework to restore recent docking state information for the pane. A pane stores recent docking state information in [CPane::m_recentDockInfo](#m_recentdockinfo). For more information, see the [CRecentDockSiteInfo Class](../../mfc/reference/crecentdocksiteinfo-class.md).  
   
  You can also call this method to set the docking state when you load pane information from an external source.  
   
-##  <a name="cpane__setexclusiverowmode"></a>  CPane::SetExclusiveRowMode  
+##  <a name="setexclusiverowmode"></a>  CPane::SetExclusiveRowMode  
  Enables or disables the exclusive row mode.  
   
 ```  
@@ -1232,7 +1232,7 @@ virtual void SetExclusiveRowMode(BOOL bExclusive = TRUE);
   
  By default, all toolbars have exclusive row mode disabled and the menu bar has exclusive row mode enabled.  
   
-##  <a name="cpane__setminsize"></a>  CPane::SetMinSize  
+##  <a name="setminsize"></a>  CPane::SetMinSize  
  Sets the minimum allowed size for the pane.  
   
 ```  
@@ -1245,7 +1245,7 @@ void SetMinSize(const CSize& size);
   
 ### Remarks  
   
-##  <a name="cpane__setvirtualrect"></a>  CPane::SetVirtualRect  
+##  <a name="setvirtualrect"></a>  CPane::SetVirtualRect  
  Sets the *virtual rectangle* of the pane.  
   
 ```  
@@ -1266,7 +1266,7 @@ void SetVirtualRect(
   
  Do not call methods that are related to virtual rectangles unless you are moving panes programmatically.  
   
-##  <a name="cpane__setminiframertc"></a>  CPane::SetMiniFrameRTC  
+##  <a name="setminiframertc"></a>  CPane::SetMiniFrameRTC  
  Sets the runtime class information for the default mini-frame window.  
   
 ```  
@@ -1278,9 +1278,9 @@ void SetMiniFrameRTC(CRuntimeClass* pClass);
  Specifies the runtime class information for the mini-frame window.  
   
 ### Remarks  
- When a pane is floated, it is put on a [CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md) (mini-frame) window. You can provide a custom `CPaneFrameWnd`-derived class that will be used when [CPane::CreateDefaultMiniframe](#cpane__createdefaultminiframe) is called.  
+ When a pane is floated, it is put on a [CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md) (mini-frame) window. You can provide a custom `CPaneFrameWnd`-derived class that will be used when [CPane::CreateDefaultMiniframe](#createdefaultminiframe) is called.  
   
-##  <a name="cpane__stretchpanedeferwndpos"></a>  CPane::StretchPaneDeferWndPos  
+##  <a name="stretchpanedeferwndpos"></a>  CPane::StretchPaneDeferWndPos  
  Stretches the pane vertically or horizontally based on docking style.  
   
 ```  
@@ -1300,9 +1300,9 @@ virtual int StretchPaneDeferWndPos(
  The actual amount, in pixels, that the pane was stretched.  
   
 ### Remarks  
- If necessary, this method modifies `nStretchSize` to ensure that the pane does not exceed size limits. These limits are obtained by calling [CPane::GetAvailableStretchSize](#cpane__getavailablestretchsize) and [CPane::GetAvailableExpandSize](#cpane__getavailableexpandsize).  
+ If necessary, this method modifies `nStretchSize` to ensure that the pane does not exceed size limits. These limits are obtained by calling [CPane::GetAvailableStretchSize](#getavailablestretchsize) and [CPane::GetAvailableExpandSize](#getavailableexpandsize).  
   
-##  <a name="cpane__toggleautohide"></a>  CPane::ToggleAutoHide  
+##  <a name="toggleautohide"></a>  CPane::ToggleAutoHide  
  Toggles auto-hide mode.  
   
 ```  
@@ -1312,7 +1312,7 @@ virtual void ToggleAutoHide();
 ### Remarks  
  Call this method to toggle auto-hide mode. A pane must be docked to a main frame window in order to be switch to auto-hide mode.  
   
-##  <a name="cpane__undockpane"></a>  CPane::UndockPane  
+##  <a name="undockpane"></a>  CPane::UndockPane  
  Removes the pane from the dock site, default slider, or mini-frame window where it is currently docked.  
   
 ```  
@@ -1321,12 +1321,12 @@ virtual void UndockPane(BOOL bDelay = FALSE);
   
 ### Parameters  
  [in] `bDelay`  
- If `FALSE`, the framework calls [CBasePane::AdjustDockingLayout](../../mfc/reference/cbasepane-class.md#cbasepane__adjustdockinglayout) to adjust the docking layout.  
+ If `FALSE`, the framework calls [CBasePane::AdjustDockingLayout](../../mfc/reference/cbasepane-class.md#adjustdockinglayout) to adjust the docking layout.  
   
 ### Remarks  
  Use this method to programmatically undock a pane.  
   
-##  <a name="cpane__updatevirtualrect"></a>  CPane::UpdateVirtualRect  
+##  <a name="updatevirtualrect"></a>  CPane::UpdateVirtualRect  
  Updates the virtual rectangle.  
   
 ```  

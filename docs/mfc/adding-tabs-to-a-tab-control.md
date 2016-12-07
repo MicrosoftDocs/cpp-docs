@@ -42,7 +42,7 @@ After creating the tab control ([CTabCtrl](../mfc/reference/ctabctrl-class.md)),
   
 1.  Prepare a [TCITEM](http://msdn.microsoft.com/library/windows/desktop/bb760554) structure.  
   
-2.  Call [CTabCtrl::InsertItem](../mfc/reference/ctabctrl-class.md#ctabctrl__insertitem), passing the structure.  
+2.  Call [CTabCtrl::InsertItem](../mfc/reference/ctabctrl-class.md#insertitem), passing the structure.  
   
 3.  Repeat steps 1 and 2 for additional tab items.  
   

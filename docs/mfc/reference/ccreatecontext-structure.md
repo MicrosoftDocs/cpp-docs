@@ -82,10 +82,10 @@ struct CCreateContext
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
- [CFrameWnd::Create](../../mfc/reference/cframewnd-class.md#cframewnd__create)   
- [CFrameWnd::LoadFrame](../../mfc/reference/cframewnd-class.md#cframewnd__loadframe)   
- [CFrameWnd::OnCreateClient](../../mfc/reference/cframewnd-class.md#cframewnd__oncreateclient)   
- [CSplitterWnd::Create](../../mfc/reference/csplitterwnd-class.md#csplitterwnd__create)   
- [CSplitterWnd::CreateView](../../mfc/reference/csplitterwnd-class.md#csplitterwnd__createview)   
- [CWnd::Create](../../mfc/reference/cwnd-class.md#cwnd__create)
+ [CFrameWnd::Create](../../mfc/reference/cframewnd-class.md#create)   
+ [CFrameWnd::LoadFrame](../../mfc/reference/cframewnd-class.md#loadframe)   
+ [CFrameWnd::OnCreateClient](../../mfc/reference/cframewnd-class.md#oncreateclient)   
+ [CSplitterWnd::Create](../../mfc/reference/csplitterwnd-class.md#create)   
+ [CSplitterWnd::CreateView](../../mfc/reference/csplitterwnd-class.md#createview)   
+ [CWnd::Create](../../mfc/reference/cwnd-class.md#create)
 

@@ -56,7 +56,7 @@ The [CTime](../atl-mfc-shared/reference/ctime-class.md) class has constructors t
   
  If your code contains a `CTime` object initialized with the system time, you should use the `SYSTEMTIME` constructor in Win32.  
   
- You most likely will not use `CTime` `FILETIME` initialization directly. If you use a `CFile` object to manipulate a file, [CFile::GetStatus](../mfc/reference/cfile-class.md#cfile__getstatus) retrieves the file timestamp for you via a `CTime` object initialized with a `FILETIME` structure.  
+ You most likely will not use `CTime` `FILETIME` initialization directly. If you use a `CFile` object to manipulate a file, [CFile::GetStatus](../mfc/reference/cfile-class.md#getstatus) retrieves the file timestamp for you via a `CTime` object initialized with a `FILETIME` structure.  
   
 ## What do you want to know more about  
   

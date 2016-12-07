@@ -52,22 +52,22 @@ class CMonikerFile : public COleStreamFile
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMonikerFile::CMonikerFile](#cmonikerfile__cmonikerfile)|Constructs a `CMonikerFile` object.|  
+|[CMonikerFile::CMonikerFile](#cmonikerfile)|Constructs a `CMonikerFile` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMonikerFile::Close](#cmonikerfile__close)|Detaches and releases the stream and releases the moniker.|  
-|[CMonikerFile::Detach](#cmonikerfile__detach)|Detaches the `IMoniker` from this `CMonikerFile` object.|  
-|[CMonikerFile::GetMoniker](#cmonikerfile__getmoniker)|Returns the current moniker.|  
-|[CMonikerFile::Open](#cmonikerfile__open)|Opens the specified file to obtain a stream.|  
+|[CMonikerFile::Close](#close)|Detaches and releases the stream and releases the moniker.|  
+|[CMonikerFile::Detach](#detach)|Detaches the `IMoniker` from this `CMonikerFile` object.|  
+|[CMonikerFile::GetMoniker](#getmoniker)|Returns the current moniker.|  
+|[CMonikerFile::Open](#open)|Opens the specified file to obtain a stream.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMonikerFile::CreateBindContext](#cmonikerfile__createbindcontext)|Obtains the bind context or creates a default initialized bind context.|  
+|[CMonikerFile::CreateBindContext](#createbindcontext)|Obtains the bind context or creates a default initialized bind context.|  
   
 ## Remarks  
  A moniker contains information much like a pathname to a file. If you have a pointer to a moniker object's `IMoniker` interface, you can get access to the identified file without having any other specific information about where the file is actually located.  
@@ -90,7 +90,7 @@ class CMonikerFile : public COleStreamFile
 ## Requirements  
  **Header:** afxole.h  
   
-##  <a name="cmonikerfile__close"></a>  CMonikerFile::Close  
+##  <a name="close"></a>  CMonikerFile::Close  
  Call this function to detach and release the stream and to release the moniker.  
   
 ```  
@@ -100,14 +100,14 @@ virtual void Close();
 ### Remarks  
  Can be called on unopened or already closed streams.  
   
-##  <a name="cmonikerfile__cmonikerfile"></a>  CMonikerFile::CMonikerFile  
+##  <a name="cmonikerfile"></a>  CMonikerFile::CMonikerFile  
  Constructs a `CMonikerFile` object.  
   
 ```  
 CMonikerFile();
 ```  
   
-##  <a name="cmonikerfile__createbindcontext"></a>  CMonikerFile::CreateBindContext  
+##  <a name="createbindcontext"></a>  CMonikerFile::CreateBindContext  
  Call this function to create a default initialized bind context.  
   
 ```  
@@ -124,7 +124,7 @@ IBindCtx* CreateBindContext(CFileException* pError);
 ### Remarks  
  A bind context is an object that stores information about a particular moniker binding operation. You can override this function to provide a custom bind context.  
   
-##  <a name="cmonikerfile__detach"></a>  CMonikerFile::Detach  
+##  <a name="detach"></a>  CMonikerFile::Detach  
  Call this function to close the stream.  
   
 ```  
@@ -138,7 +138,7 @@ BOOL Detach(CFileException* pError = NULL);
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
-##  <a name="cmonikerfile__getmoniker"></a>  CMonikerFile::GetMoniker  
+##  <a name="getmoniker"></a>  CMonikerFile::GetMoniker  
  Call this function to retrieve a pointer to the current moniker.  
   
 ```  
@@ -153,7 +153,7 @@ IMoniker* GetMoniker() const;
 ### Remarks  
  Since `CMonikerFile` is not an interface, the pointer returned does not increment the reference count (through [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379)), and the moniker is released when the `CMonikerFile` object is released. If you want to hold onto the moniker or release it yourself, you must `AddRef` it.  
   
-##  <a name="cmonikerfile__open"></a>  CMonikerFile::Open  
+##  <a name="open"></a>  CMonikerFile::Open  
  Call this member function to open a file or moniker object.  
   
 ```  

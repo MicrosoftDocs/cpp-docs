@@ -50,19 +50,19 @@ class CListView : public CCtrlView
   
 |Name|Description|  
 |----------|-----------------|  
-|[CListView::CListView](#clistview__clistview)|Constructs a `CListView` object.|  
+|[CListView::CListView](#clistview)|Constructs a `CListView` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CListView::GetListCtrl](#clistview__getlistctrl)|Returns the list control associated with the view.|  
+|[CListView::GetListCtrl](#getlistctrl)|Returns the list control associated with the view.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CListView::RemoveImageList](#clistview__removeimagelist)|Removes the specified image list from the list view.|  
+|[CListView::RemoveImageList](#removeimagelist)|Removes the specified image list from the list view.|  
   
 ## Remarks  
  For more information on this architecture, see the overview for the [CView](../../mfc/reference/cview-class.md) class and the cross-references cited there.  
@@ -83,14 +83,14 @@ class CListView : public CCtrlView
 ## Requirements  
  **Header:** afxcview.h  
   
-##  <a name="clistview__clistview"></a>  CListView::CListView  
+##  <a name="clistview"></a>  CListView::CListView  
  Constructs a `CListView` object.  
   
 ```  
 CListView();
 ```  
   
-##  <a name="clistview__getlistctrl"></a>  CListView::GetListCtrl  
+##  <a name="getlistctrl"></a>  CListView::GetListCtrl  
  Call this member function to get a reference to the list control associated with the view.  
   
 ```  
@@ -105,7 +105,7 @@ CListCtrl& GetListCtrl() const;
 ### Example  
  [!code-cpp[NVC_MFCListView#7](../../atl/reference/codesnippet/cpp/clistview-class_1.cpp)]  
   
-##  <a name="clistview__removeimagelist"></a>  CListView::RemoveImageList  
+##  <a name="removeimagelist"></a>  CListView::RemoveImageList  
  Removes the specified image list from the list view.  
   
 ```  

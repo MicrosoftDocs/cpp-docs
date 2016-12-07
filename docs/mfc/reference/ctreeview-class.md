@@ -53,13 +53,13 @@ class CTreeView : public CCtrlView
   
 |Name|Description|  
 |----------|-----------------|  
-|[CTreeView::CTreeView](#ctreeview__ctreeview)|Constructs a `CTreeView` object.|  
+|[CTreeView::CTreeView](#ctreeview)|Constructs a `CTreeView` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CTreeView::GetTreeCtrl](#ctreeview__gettreectrl)|Returns the tree control associated with the view.|  
+|[CTreeView::GetTreeCtrl](#gettreectrl)|Returns the tree control associated with the view.|  
   
 ## Remarks  
  For more information on this architecture, see the overview for the [CView](../../mfc/reference/cview-class.md) class and the cross-references cited there.  
@@ -80,14 +80,14 @@ class CTreeView : public CCtrlView
 ## Requirements  
  **Header:** afxcview.h  
   
-##  <a name="ctreeview__ctreeview"></a>  CTreeView::CTreeView  
+##  <a name="ctreeview"></a>  CTreeView::CTreeView  
  Constructs a `CTreeView` object.  
   
 ```  
 CTreeView();
 ```  
   
-##  <a name="ctreeview__gettreectrl"></a>  CTreeView::GetTreeCtrl  
+##  <a name="gettreectrl"></a>  CTreeView::GetTreeCtrl  
  Returns a reference to the tree control associated with the view.  
   
 ```  

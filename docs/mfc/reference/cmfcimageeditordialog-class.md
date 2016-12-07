@@ -49,7 +49,7 @@ class CMFCImageEditorDialog : public CDialogEx
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCImageEditorDialog::CMFCImageEditorDialog](#cmfcimageeditordialog__cmfcimageeditordialog)|Constructs a `CMFCImageEditorDialog` object.|  
+|[CMFCImageEditorDialog::CMFCImageEditorDialog](#cmfcimageeditordialog)|Constructs a `CMFCImageEditorDialog` object.|  
   
 ## Remarks  
  The `CMFCImageEditorDialog` class provides a dialog box that includes:  
@@ -84,7 +84,7 @@ class CMFCImageEditorDialog : public CDialogEx
 ## Requirements  
  **Header:** afximageeditordialog.h  
   
-##  <a name="cmfcimageeditordialog__cmfcimageeditordialog"></a>  CMFCImageEditorDialog::CMFCImageEditorDialog  
+##  <a name="cmfcimageeditordialog"></a>  CMFCImageEditorDialog::CMFCImageEditorDialog  
  Constructs a `CMFCImageEditorDialog` object.  
   
 ```  

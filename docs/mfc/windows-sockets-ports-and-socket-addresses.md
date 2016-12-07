@@ -46,7 +46,7 @@ This article explains the terms "port" and "address" as used with Windows Socket
   
  Certain ports are reserved for common services, such as FTP. You should avoid using those ports unless you are providing that kind of service. The Windows Sockets specification details these reserved ports. The file WINSOCK.H also lists them.  
   
- To let the Windows Sockets DLL select a usable port for you, pass 0 as the port value. MFC selects a port value greater than 1,024 decimal. You can retrieve the port value that MFC selected by calling the [CAsyncSocket::GetSockName](../mfc/reference/casyncsocket-class.md#casyncsocket__getsockname) member function.  
+ To let the Windows Sockets DLL select a usable port for you, pass 0 as the port value. MFC selects a port value greater than 1,024 decimal. You can retrieve the port value that MFC selected by calling the [CAsyncSocket::GetSockName](../mfc/reference/casyncsocket-class.md#getsockname) member function.  
   
 ##  <a name="_core_socket_address"></a> Socket Address  
  Each socket object is associated with an Internet Protocol (IP) address on the network. Typically, the address is a machine name, such as "ftp.microsoft.com", or a dotted number, such as "128.56.22.8".  

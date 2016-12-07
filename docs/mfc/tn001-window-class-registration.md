@@ -40,7 +40,7 @@ translation.priority.ht:
 This note describes the MFC routines that register the special [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576)es needed by Microsoft Windows. Specific `WNDCLASS` attributes used by MFC and Windows are discussed.  
   
 ## The Problem  
- The attributes of a [CWnd](../mfc/reference/cwnd-class.md) object, like an `HWND` handle in Windows, are stored in two places: the window object and the `WNDCLASS`. The name of the `WNDCLASS` is passed to general window creation functions such as [CWnd::Create](../mfc/reference/cwnd-class.md#cwnd__create) and [CFrameWnd::Create](../mfc/reference/cframewnd-class.md#cframewnd__create) in the `lpszClassName` parameter.  
+ The attributes of a [CWnd](../mfc/reference/cwnd-class.md) object, like an `HWND` handle in Windows, are stored in two places: the window object and the `WNDCLASS`. The name of the `WNDCLASS` is passed to general window creation functions such as [CWnd::Create](../mfc/reference/cwnd-class.md#create) and [CFrameWnd::Create](../mfc/reference/cframewnd-class.md#create) in the `lpszClassName` parameter.  
   
  This `WNDCLASS` must be registered through one of four means:  
   
@@ -72,7 +72,7 @@ This note describes the MFC routines that register the special [WNDCLASS](http:/
   
  If the application provides a resource with the specified resource ID (for example, AFX_IDI_STD_FRAME), MFC will use that resource. Otherwise it will use the default resource. For the icon, the standard application icon is used, and for the cursor, the standard arrow cursor is used.  
   
- Two icons support MDI applications with single document types: one icon for the main application, the other icon for iconic document/MDIChild windows. For multiple document types with different icons, you must register additional `WNDCLASS`es or use the [CFrameWnd::LoadFrame](../mfc/reference/cframewnd-class.md#cframewnd__loadframe) function.  
+ Two icons support MDI applications with single document types: one icon for the main application, the other icon for iconic document/MDIChild windows. For multiple document types with different icons, you must register additional `WNDCLASS`es or use the [CFrameWnd::LoadFrame](../mfc/reference/cframewnd-class.md#loadframe) function.  
   
  `CFrameWnd::LoadFrame` will register a `WNDCLASS` using the icon ID you specify as the first parameter and the following standard attributes:  
   

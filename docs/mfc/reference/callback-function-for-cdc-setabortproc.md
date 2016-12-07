@@ -56,12 +56,12 @@ BOOL CALLBACK EXPORT AbortFunc(
  The return value of the abort-handler function is nonzero if the print job is to continue, and 0 if it is canceled.  
   
 ## Remarks  
- The actual name must be exported as described in the Remarks section of [CDC::SetAbortProc](../../mfc/reference/cdc-class.md#cdc__setabortproc).  
+ The actual name must be exported as described in the Remarks section of [CDC::SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc).  
   
 ## Requirements  
  **Header:** afxwin.h  
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CDC::SetAbortProc](../../mfc/reference/cdc-class.md#cdc__setabortproc)
+ [CDC::SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc)
 

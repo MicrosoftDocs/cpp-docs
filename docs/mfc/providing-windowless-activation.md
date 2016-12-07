@@ -44,7 +44,7 @@ Window creation code (that is, everything that happens when you call **CreateWin
   
  Because windowless controls do not have their own windows, the container (which does have a window) is responsible for providing services that would otherwise have been provided by the control's own window. For example, if your control needs to query the keyboard focus, capture the mouse, or obtain a device context, these operations are managed by the container. The container routes user input messages sent to its window to the appropriate windowless control, using the `IOleInPlaceObjectWindowless` interface. (See the *ActiveX SDK* for a description of this interface.) `COleControl` member functions invoke these services from the container.  
   
- To make your control use windowless activation, include the **windowlessActivate** flag in the set of flags returned by [COleControl::GetControlFlags](../mfc/reference/colecontrol-class.md#colecontrol__getcontrolflags). For example:  
+ To make your control use windowless activation, include the **windowlessActivate** flag in the set of flags returned by [COleControl::GetControlFlags](../mfc/reference/colecontrol-class.md#getcontrolflags). For example:  
   
  [!code-cpp[NVC_MFC_AxOpt#5](../mfc/codesnippet/cpp/providing-windowless-activation_1.cpp)]  
 [!code-cpp[NVC_MFC_AxOpt#6](../mfc/codesnippet/cpp/providing-windowless-activation_2.cpp)]  
@@ -56,21 +56,21 @@ Window creation code (that is, everything that happens when you call **CreateWin
   
  `COleControl` provides member functions that invoke mouse capture, keyboard focus, scrolling, and other window services from the container as appropriate, including:  
   
--   [GetFocus](../mfc/reference/colecontrol-class.md#colecontrol__getfocus), [SetFocus](../mfc/reference/colecontrol-class.md#colecontrol__setfocus)  
+-   [GetFocus](../mfc/reference/colecontrol-class.md#getfocus), [SetFocus](../mfc/reference/colecontrol-class.md#setfocus)  
   
--   [GetCapture](../mfc/reference/colecontrol-class.md#colecontrol__getcapture), [SetCapture](../mfc/reference/colecontrol-class.md#colecontrol__setcapture), [ReleaseCapture](../mfc/reference/colecontrol-class.md#colecontrol__releasecapture)  
+-   [GetCapture](../mfc/reference/colecontrol-class.md#getcapture), [SetCapture](../mfc/reference/colecontrol-class.md#setcapture), [ReleaseCapture](../mfc/reference/colecontrol-class.md#releasecapture)  
   
--   [GetDC](../mfc/reference/colecontrol-class.md#colecontrol__getdc), [ReleaseDC](../mfc/reference/colecontrol-class.md#colecontrol__releasedc)  
+-   [GetDC](../mfc/reference/colecontrol-class.md#getdc), [ReleaseDC](../mfc/reference/colecontrol-class.md#releasedc)  
   
--   [InvalidateRgn](../mfc/reference/colecontrol-class.md#colecontrol__invalidatergn)  
+-   [InvalidateRgn](../mfc/reference/colecontrol-class.md#invalidatergn)  
   
--   [ScrollWindow](../mfc/reference/colecontrol-class.md#colecontrol__scrollwindow)  
+-   [ScrollWindow](../mfc/reference/colecontrol-class.md#scrollwindow)  
   
--   [GetClientRect](../mfc/reference/colecontrol-class.md#colecontrol__getclientrect)  
+-   [GetClientRect](../mfc/reference/colecontrol-class.md#getclientrect)  
   
  In windowless controls, you should always use the `COleControl` member functions instead of the corresponding `CWnd` member functions or their related Win32 API functions.  
   
- You may want a windowless control to be the target of an OLE drag-and-drop operation. Normally, this would require that the control's window be registered as a drop target. Since the control has no window of its own, the container uses its own window as a drop target. The control provides an implementation of the `IDropTarget` interface to which the container can delegate calls at the appropriate time. To expose this interface to the container, override [COleControl::GetWindowlessDropTarget](../mfc/reference/colecontrol-class.md#colecontrol__getwindowlessdroptarget). For example:  
+ You may want a windowless control to be the target of an OLE drag-and-drop operation. Normally, this would require that the control's window be registered as a drop target. Since the control has no window of its own, the container uses its own window as a drop target. The control provides an implementation of the `IDropTarget` interface to which the container can delegate calls at the appropriate time. To expose this interface to the container, override [COleControl::GetWindowlessDropTarget](../mfc/reference/colecontrol-class.md#getwindowlessdroptarget). For example:  
   
  [!code-cpp[NVC_MFC_AxOpt#8](../mfc/codesnippet/cpp/providing-windowless-activation_4.cpp)]  
   

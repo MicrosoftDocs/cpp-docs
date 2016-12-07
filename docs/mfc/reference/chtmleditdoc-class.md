@@ -49,15 +49,15 @@ class AFX_NOVTABLE CHtmlEditDoc : public CDocument
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHtmlEditDoc::CHtmlEditDoc](#chtmleditdoc__chtmleditdoc)|Constructs a `CHtmlEditDoc` object.|  
+|[CHtmlEditDoc::CHtmlEditDoc](#chtmleditdoc)|Constructs a `CHtmlEditDoc` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHtmlEditDoc::GetView](#chtmleditdoc__getview)|Retrieves the `CHtmlEditView` object attached to this document.|  
-|[CHtmlEditDoc::IsModified](#chtmleditdoc__ismodified)|Returns whether the associated view's WebBrowser control contains a document that has been modified by the user.|  
-|[CHtmlEditDoc::OpenURL](#chtmleditdoc__openurl)|Opens a URL.|  
+|[CHtmlEditDoc::GetView](#getview)|Retrieves the `CHtmlEditView` object attached to this document.|  
+|[CHtmlEditDoc::IsModified](#ismodified)|Returns whether the associated view's WebBrowser control contains a document that has been modified by the user.|  
+|[CHtmlEditDoc::OpenURL](#openurl)|Opens a URL.|  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -71,14 +71,14 @@ class AFX_NOVTABLE CHtmlEditDoc : public CDocument
 ## Requirements  
  **Header:** afxhtml.h  
   
-##  <a name="chtmleditdoc__chtmleditdoc"></a>  CHtmlEditDoc::CHtmlEditDoc  
+##  <a name="chtmleditdoc"></a>  CHtmlEditDoc::CHtmlEditDoc  
  Constructs a **CHtmlEditDoc** object.  
   
 ```  
 CHtmlEditDoc();
 ```  
   
-##  <a name="chtmleditdoc__getview"></a>  CHtmlEditDoc::GetView  
+##  <a name="getview"></a>  CHtmlEditDoc::GetView  
  Retrieves the [CHtmlEditView](../../mfc/reference/chtmleditview-class.md) object attached to this document.  
   
 ```  
@@ -90,14 +90,14 @@ virtual CHtmlEditView* GetView() const;
 ### Return Value  
  Returns a pointer to the document's **CHtmlEditView** object.  
   
-##  <a name="chtmleditdoc__ismodified"></a>  CHtmlEditDoc::IsModified  
+##  <a name="ismodified"></a>  CHtmlEditDoc::IsModified  
  Returns whether the associated view's WebBrowser control contains a document that has been modified by the user.  
   
 ```  
 virtual BOOL IsModified();
 ```  
   
-##  <a name="chtmleditdoc__openurl"></a>  CHtmlEditDoc::OpenURL  
+##  <a name="openurl"></a>  CHtmlEditDoc::OpenURL  
  Opens a URL.  
   
 ```  

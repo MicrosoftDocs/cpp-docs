@@ -51,9 +51,9 @@ class CReBar : public CControlBar
   
 |Name|Description|  
 |----------|-----------------|  
-|[CReBar::AddBar](#crebar__addbar)|Adds a band to a rebar.|  
-|[CReBar::Create](#crebar__create)|Creates the rebar control and attaches it to the `CReBar` object.|  
-|[CReBar::GetReBarCtrl](#crebar__getrebarctrl)|Allows direct access to the underlying common control.|  
+|[CReBar::AddBar](#addbar)|Adds a band to a rebar.|  
+|[CReBar::Create](#create)|Creates the rebar control and attaches it to the `CReBar` object.|  
+|[CReBar::GetReBarCtrl](#getrebarctrl)|Allows direct access to the underlying common control.|  
   
 ## Remarks  
  A rebar object can contain a variety of child windows, usually other controls, including edit boxes, toolbars, and list boxes. A rebar object can display its child windows over a specified bitmap. Your application can automatically resize the rebar, or the user can manually resize the rebar by clicking or dragging its gripper bar.  
@@ -63,7 +63,7 @@ class CReBar : public CControlBar
 ## Rebar Control  
  A rebar object behaves similarly to a toolbar object. A rebar uses the click-and-drag mechanism to resize its bands. A rebar control can contain one or more bands, with each band having any combination of a gripper bar, a bitmap, a text label, and a child window. However, bands cannot contain more than one child window.  
   
- **CReBar** uses the [CReBarCtrl](../../mfc/reference/crebarctrl-class.md) class to provide its implementation. You can access the rebar control through [GetReBarCtrl](#crebar__getrebarctrl) to take advantage of the control's customization options. For more information about rebar controls, see `CReBarCtrl`. For more information about using rebar controls, see [Using CReBarCtrl](../../mfc/using-crebarctrl.md).  
+ **CReBar** uses the [CReBarCtrl](../../mfc/reference/crebarctrl-class.md) class to provide its implementation. You can access the rebar control through [GetReBarCtrl](#getrebarctrl) to take advantage of the control's customization options. For more information about rebar controls, see `CReBarCtrl`. For more information about using rebar controls, see [Using CReBarCtrl](../../mfc/using-crebarctrl.md).  
   
 > [!CAUTION]
 >  Rebar and rebar control objects do not support MFC control bar docking. If **CRebar::EnableDocking** is called, your application will assert.  
@@ -82,7 +82,7 @@ class CReBar : public CControlBar
 ## Requirements  
  **Header:** afxext.h  
   
-##  <a name="crebar__addbar"></a>  CReBar::AddBar  
+##  <a name="addbar"></a>  CReBar::AddBar  
  Call this member function to add a band to the rebar.  
   
 ```  
@@ -126,7 +126,7 @@ BOOL AddBar(
 ### Example  
  [!code-cpp[NVC_MFC_CReBarCtrl#1](../../mfc/reference/codesnippet/cpp/crebar-class_1.cpp)]  
   
-##  <a name="crebar__create"></a>  CReBar::Create  
+##  <a name="create"></a>  CReBar::Create  
  Call this member function to create a rebar.  
   
 ```  
@@ -154,9 +154,9 @@ virtual BOOL Create(
  Nonzero if successful; otherwise 0.  
   
 ### Example  
-  See the example for [CReBar::AddBar](#crebar__addbar).  
+  See the example for [CReBar::AddBar](#addbar).  
   
-##  <a name="crebar__getrebarctrl"></a>  CReBar::GetReBarCtrl  
+##  <a name="getrebarctrl"></a>  CReBar::GetReBarCtrl  
  This member function allows direct access to the underlying common control.  
   
 ```  

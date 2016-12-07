@@ -107,7 +107,7 @@ This topic lists the Record Field Exchange (RFX, Bulk RFX, and DFX) functions us
   
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)   
- [CRecordset::DoFieldExchange](../../mfc/reference/crecordset-class.md#crecordset__dofieldexchange)   
- [CRecordset::DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#crecordset__dobulkfieldexchange)   
- [CDaoRecordset::DoFieldExchange](../../mfc/reference/cdaorecordset-class.md#cdaorecordset__dofieldexchange)
+ [CRecordset::DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange)   
+ [CRecordset::DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#dobulkfieldexchange)   
+ [CDaoRecordset::DoFieldExchange](../../mfc/reference/cdaorecordset-class.md#dofieldexchange)
 

@@ -56,22 +56,22 @@ class CWinFormsControl : public CWnd
   
 |Name|Description|  
 |----------|-----------------|  
-|[CWinFormsControl::CWinFormsControl](#cwinformscontrol__cwinformscontrol)|Constructs an MFC Windows Forms control wrapper object.|  
+|[CWinFormsControl::CWinFormsControl](#cwinformscontrol)|Constructs an MFC Windows Forms control wrapper object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CWinFormsControl::CreateManagedControl](#cwinformscontrol__createmanagedcontrol)|Creates a Windows Forms control in an MFC container.|  
-|[CWinFormsControl::GetControl](#cwinformscontrol__getcontrol)|Retrieves a pointer to the Windows Forms control.|  
-|[CWinFormsControl::GetControlHandle](#cwinformscontrol__getcontrolhandle)|Retrieves a handle to the Windows Forms control.|  
+|[CWinFormsControl::CreateManagedControl](#createmanagedcontrol)|Creates a Windows Forms control in an MFC container.|  
+|[CWinFormsControl::GetControl](#getcontrol)|Retrieves a pointer to the Windows Forms control.|  
+|[CWinFormsControl::GetControlHandle](#getcontrolhandle)|Retrieves a handle to the Windows Forms control.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CWinFormsControl::operator -&gt;](#cwinformscontrol__operator_-_gt_)|Replaces [CWinFormsControl::GetControl](#cwinformscontrol__getcontrol) in expressions.|  
-|[CWinFormsControl::operator TManagedControl^](#cwinformscontrol__operator_tmanagedcontrol)|Casts a type as a pointer to a Windows Forms control.|  
+|[CWinFormsControl::operator -&gt;](#operator_-_gt)|Replaces [CWinFormsControl::GetControl](#getcontrol) in expressions.|  
+|[CWinFormsControl::operator TManagedControl^](#operator_tmanagedcontrol)|Casts a type as a pointer to a Windows Forms control.|  
   
 ## Remarks  
  The `CWinFormsControl` class provides the basic functionality for hosting of a Windows Forms control.  
@@ -86,7 +86,7 @@ class CWinFormsControl : public CWnd
 ## Requirements  
  **Header:** afxwinforms.h  
   
-##  <a name="cwinformscontrol__createmanagedcontrol"></a>  CWinFormsControl::CreateManagedControl  
+##  <a name="createmanagedcontrol"></a>  CWinFormsControl::CreateManagedControl  
  Creates a Windows Forms control in an MFC container.  
   
 ```  
@@ -155,7 +155,7 @@ inline BOOL CreateManagedControl(
   
  See [Using a Windows Form User Control in MFC](../../dotnet/using-a-windows-form-user-control-in-mfc.md) for samples on using Windows Form controls.  
   
-##  <a name="cwinformscontrol__cwinformscontrol"></a>  CWinFormsControl::CWinFormsControl  
+##  <a name="cwinformscontrol"></a>  CWinFormsControl::CWinFormsControl  
  Constructs an MFC Windows Forms control wrapper object.  
   
 ```  
@@ -163,9 +163,9 @@ CWinFormsControl();
 ```  
   
 ### Remarks  
- The Windows Forms control is instantiated when you call [CWinFormsControl::CreateManagedControl](#cwinformscontrol__createmanagedcontrol).  
+ The Windows Forms control is instantiated when you call [CWinFormsControl::CreateManagedControl](#createmanagedcontrol).  
   
-##  <a name="cwinformscontrol__getcontrol"></a>  CWinFormsControl::GetControl  
+##  <a name="getcontrol"></a>  CWinFormsControl::GetControl  
  Retrieves a pointer to the Windows Forms control.  
   
 ```  
@@ -178,9 +178,9 @@ inline TManagedControl^ GetControl() const;
  Returns a pointer to the Windows Forms control.  
   
 ### Example  
-  See [CWinFormsControl::CreateManagedControl](#cwinformscontrol__createmanagedcontrol).  
+  See [CWinFormsControl::CreateManagedControl](#createmanagedcontrol).  
   
-##  <a name="cwinformscontrol__getcontrolhandle"></a>  CWinFormsControl::GetControlHandle  
+##  <a name="getcontrolhandle"></a>  CWinFormsControl::GetControlHandle  
  Retrieves a handle to the Windows Forms control.  
   
 ```  
@@ -193,10 +193,10 @@ inline HWND GetControlHandle() const;
  Returns a handle to the Windows Forms control.  
   
 ### Remarks  
- `GetControlHandle` is a helper method that returns the window handle stored in the .NET Framework control properties. The window handle value is copied to [CWnd::m_hWnd](../../mfc/reference/cwnd-class.md#cwnd__m_hwnd) during the call to [CWnd::Attach](../../mfc/reference/cwnd-class.md#cwnd__attach).  
+ `GetControlHandle` is a helper method that returns the window handle stored in the .NET Framework control properties. The window handle value is copied to [CWnd::m_hWnd](../../mfc/reference/cwnd-class.md#m_hwnd) during the call to [CWnd::Attach](../../mfc/reference/cwnd-class.md#attach).  
   
-##  <a name="cwinformscontrol__operator_-_gt_"></a>  CWinFormsControl::operator -&gt;  
- Replaces [CWinFormsControl::GetControl](#cwinformscontrol__getcontrol) in expressions.  
+##  <a name="operator_-_gt"></a>  CWinFormsControl::operator -&gt;  
+ Replaces [CWinFormsControl::GetControl](#getcontrol) in expressions.  
   
 ```  
 inline TManagedControl^  operator->() const;
@@ -209,7 +209,7 @@ inline TManagedControl^  operator->() const;
   
  For more information on Windows Forms, see [Using a Windows Form User Control in MFC](../../dotnet/using-a-windows-form-user-control-in-mfc.md).  
   
-##  <a name="cwinformscontrol__operator_tmanagedcontrol"></a>  CWinFormsControl::operator TManagedControl^  
+##  <a name="operator_tmanagedcontrol"></a>  CWinFormsControl::operator TManagedControl^  
  Casts a type as a pointer to a Windows Forms control.  
   
 ```  

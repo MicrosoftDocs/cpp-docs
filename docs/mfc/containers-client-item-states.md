@@ -38,7 +38,7 @@ translation.priority.ht:
 # Containers: Client-Item States
 This article explains the different states a client item passes through in its lifetime.  
   
- A client item passes through several states as it is created, activated, modified, and saved. Each time the item's state changes, the framework calls [COleClientItem::OnChange](../mfc/reference/coleclientitem-class.md#coleclientitem__onchange) with the `OLE_CHANGED_STATE` notification. The second parameter is a value from the **COleClientItem::ItemState** enumeration. It can be one of the following:  
+ A client item passes through several states as it is created, activated, modified, and saved. Each time the item's state changes, the framework calls [COleClientItem::OnChange](../mfc/reference/coleclientitem-class.md#onchange) with the `OLE_CHANGED_STATE` notification. The second parameter is a value from the **COleClientItem::ItemState** enumeration. It can be one of the following:  
   
 -   **COleClientItem::emptyState**  
   

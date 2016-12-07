@@ -62,6 +62,6 @@ struct sockaddr {
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
  [SOCKADDR_IN Structure](../../mfc/reference/sockaddr-in-structure.md)   
- [CAsyncSocket::Create](../../mfc/reference/casyncsocket-class.md#casyncsocket__create)   
- [CSocket::Create](../../mfc/reference/csocket-class.md#csocket__create)
+ [CAsyncSocket::Create](../../mfc/reference/casyncsocket-class.md#create)   
+ [CSocket::Create](../../mfc/reference/csocket-class.md#create)
 

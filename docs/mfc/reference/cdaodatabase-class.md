@@ -53,45 +53,45 @@ class CDaoDatabase : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDaoDatabase::CDaoDatabase](#cdaodatabase__cdaodatabase)|Constructs a `CDaoDatabase` object. Call **Open** to connect the object to a database.|  
+|[CDaoDatabase::CDaoDatabase](#cdaodatabase)|Constructs a `CDaoDatabase` object. Call **Open** to connect the object to a database.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDaoDatabase::CanTransact](#cdaodatabase__cantransact)|Returns nonzero if the database supports transactions.|  
-|[CDaoDatabase::CanUpdate](#cdaodatabase__canupdate)|Returns nonzero if the `CDaoDatabase` object is updatable (not read-only).|  
-|[CDaoDatabase::Close](#cdaodatabase__close)|Closes the database connection.|  
-|[CDaoDatabase::Create](#cdaodatabase__create)|Creates the underlying DAO database object and initializes the `CDaoDatabase` object.|  
-|[CDaoDatabase::CreateRelation](#cdaodatabase__createrelation)|Defines a new relation among the tables in the database.|  
-|[CDaoDatabase::DeleteQueryDef](#cdaodatabase__deletequerydef)|Deletes a querydef object saved in the database's QueryDefs collection.|  
-|[CDaoDatabase::DeleteRelation](#cdaodatabase__deleterelation)|Deletes an existing relation between tables in the database.|  
-|[CDaoDatabase::DeleteTableDef](#cdaodatabase__deletetabledef)|Deletes the definition of a table in the database. This deletes the actual table and all of its data.|  
-|[CDaoDatabase::Execute](#cdaodatabase__execute)|Executes an action query. Calling **Execute** for a query that returns results throws an exception.|  
-|[CDaoDatabase::GetConnect](#cdaodatabase__getconnect)|Returns the connection string used to connect the `CDaoDatabase` object to a database. Used for ODBC.|  
-|[CDaoDatabase::GetName](#cdaodatabase__getname)|Returns the name of the database currently in use.|  
-|[CDaoDatabase::GetQueryDefCount](#cdaodatabase__getquerydefcount)|Returns the number of queries defined for the database.|  
-|[CDaoDatabase::GetQueryDefInfo](#cdaodatabase__getquerydefinfo)|Returns information about a specified query defined in the database.|  
-|[CDaoDatabase::GetQueryTimeout](#cdaodatabase__getquerytimeout)|Returns the number of seconds after which database query operations will time out. Affects all subsequent open, add new, update, and edit operations and other operations on ODBC data sources (only) such as **Execute** calls.|  
-|[CDaoDatabase::GetRecordsAffected](#cdaodatabase__getrecordsaffected)|Returns the number of records affected by the last update, edit, or add operation or by a call to **Execute**.|  
-|[CDaoDatabase::GetRelationCount](#cdaodatabase__getrelationcount)|Returns the number of relations defined between tables in the database.|  
-|[CDaoDatabase::GetRelationInfo](#cdaodatabase__getrelationinfo)|Returns information about a specified relation defined between tables in the database.|  
-|[CDaoDatabase::GetTableDefCount](#cdaodatabase__gettabledefcount)|Returns the number of tables defined in the database.|  
-|[CDaoDatabase::GetTableDefInfo](#cdaodatabase__gettabledefinfo)|Returns information about a specified table in the database.|  
-|[CDaoDatabase::GetVersion](#cdaodatabase__getversion)|Returns the version of the database engine associated with the database.|  
-|[CDaoDatabase::IsOpen](#cdaodatabase__isopen)|Returns nonzero if the `CDaoDatabase` object is currently connected to a database.|  
-|[CDaoDatabase::Open](#cdaodatabase__open)|Establishes a connection to a database.|  
-|[CDaoDatabase::SetQueryTimeout](#cdaodatabase__setquerytimeout)|Sets the number of seconds after which database query operations (on ODBC data sources only) will time out. Affects all subsequent open, add new, update, and delete operations.|  
+|[CDaoDatabase::CanTransact](#cantransact)|Returns nonzero if the database supports transactions.|  
+|[CDaoDatabase::CanUpdate](#canupdate)|Returns nonzero if the `CDaoDatabase` object is updatable (not read-only).|  
+|[CDaoDatabase::Close](#close)|Closes the database connection.|  
+|[CDaoDatabase::Create](#create)|Creates the underlying DAO database object and initializes the `CDaoDatabase` object.|  
+|[CDaoDatabase::CreateRelation](#createrelation)|Defines a new relation among the tables in the database.|  
+|[CDaoDatabase::DeleteQueryDef](#deletequerydef)|Deletes a querydef object saved in the database's QueryDefs collection.|  
+|[CDaoDatabase::DeleteRelation](#deleterelation)|Deletes an existing relation between tables in the database.|  
+|[CDaoDatabase::DeleteTableDef](#deletetabledef)|Deletes the definition of a table in the database. This deletes the actual table and all of its data.|  
+|[CDaoDatabase::Execute](#execute)|Executes an action query. Calling **Execute** for a query that returns results throws an exception.|  
+|[CDaoDatabase::GetConnect](#getconnect)|Returns the connection string used to connect the `CDaoDatabase` object to a database. Used for ODBC.|  
+|[CDaoDatabase::GetName](#getname)|Returns the name of the database currently in use.|  
+|[CDaoDatabase::GetQueryDefCount](#getquerydefcount)|Returns the number of queries defined for the database.|  
+|[CDaoDatabase::GetQueryDefInfo](#getquerydefinfo)|Returns information about a specified query defined in the database.|  
+|[CDaoDatabase::GetQueryTimeout](#getquerytimeout)|Returns the number of seconds after which database query operations will time out. Affects all subsequent open, add new, update, and edit operations and other operations on ODBC data sources (only) such as **Execute** calls.|  
+|[CDaoDatabase::GetRecordsAffected](#getrecordsaffected)|Returns the number of records affected by the last update, edit, or add operation or by a call to **Execute**.|  
+|[CDaoDatabase::GetRelationCount](#getrelationcount)|Returns the number of relations defined between tables in the database.|  
+|[CDaoDatabase::GetRelationInfo](#getrelationinfo)|Returns information about a specified relation defined between tables in the database.|  
+|[CDaoDatabase::GetTableDefCount](#gettabledefcount)|Returns the number of tables defined in the database.|  
+|[CDaoDatabase::GetTableDefInfo](#gettabledefinfo)|Returns information about a specified table in the database.|  
+|[CDaoDatabase::GetVersion](#getversion)|Returns the version of the database engine associated with the database.|  
+|[CDaoDatabase::IsOpen](#isopen)|Returns nonzero if the `CDaoDatabase` object is currently connected to a database.|  
+|[CDaoDatabase::Open](#open)|Establishes a connection to a database.|  
+|[CDaoDatabase::SetQueryTimeout](#setquerytimeout)|Sets the number of seconds after which database query operations (on ODBC data sources only) will time out. Affects all subsequent open, add new, update, and delete operations.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDaoDatabase::m_pDAODatabase](#cdaodatabase__m_pdaodatabase)|A pointer to the underlying DAO database object.|  
-|[CDaoDatabase::m_pWorkspace](#cdaodatabase__m_pworkspace)|A pointer to the [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md) object that contains the database and defines its transaction space.|  
+|[CDaoDatabase::m_pDAODatabase](#m_pdaodatabase)|A pointer to the underlying DAO database object.|  
+|[CDaoDatabase::m_pWorkspace](#m_pworkspace)|A pointer to the [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md) object that contains the database and defines its transaction space.|  
   
 ## Remarks  
- For information about the database formats supported, see the [GetName](../../mfc/reference/cdaoworkspace-class.md#cdaoworkspace__getname) member function. You can have one or more `CDaoDatabase` objects active at a time in a given "workspace," represented by a [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md) object. The workspace maintains a collection of open database objects, called the Databases collection.  
+ For information about the database formats supported, see the [GetName](../../mfc/reference/cdaoworkspace-class.md#getname) member function. You can have one or more `CDaoDatabase` objects active at a time in a given "workspace," represented by a [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md) object. The workspace maintains a collection of open database objects, called the Databases collection.  
   
 > [!NOTE]
 >  The MFC DAO database classes are distinct from the MFC database classes based on ODBC. All DAO database class names have the "CDao" prefix. Class `CDaoDatabase` supplies an interface similar to that of the ODBC class [CDatabase](../../mfc/reference/cdatabase-class.md). The main difference is that `CDatabase` accesses the DBMS through Open Database Connectivity (ODBC) and an ODBC driver for that DBMS. `CDaoDatabase` accesses data through a Data Access Object (DAO) based on the Microsoft Jet database engine. In general, the MFC classes based on DAO are more capable than the MFC classes based on ODBC; the DAO-based classes can access data, including through ODBC drivers, via their own database engine. The DAO-based classes also support Data Definition Language (DDL) operations, such as adding tables via the classes, without having to call DAO directly.  
@@ -103,14 +103,14 @@ class CDaoDatabase : public CObject
   
 -   Or construct a `CDaoDatabase` object without specifying the workspace (MFC creates a temporary workspace object).  
   
- To create a new Microsoft Jet (.MDB) database, construct a `CDaoDatabase` object and call its [Create](#cdaodatabase__create) member function. Do *not* call **Open** after **Create**.  
+ To create a new Microsoft Jet (.MDB) database, construct a `CDaoDatabase` object and call its [Create](#create) member function. Do *not* call **Open** after **Create**.  
   
- To open an existing database, construct a `CDaoDatabase` object and call its [Open](#cdaodatabase__open) member function.  
+ To open an existing database, construct a `CDaoDatabase` object and call its [Open](#open) member function.  
   
- Any of these techniques appends the DAO database object to the workspace's Databases collection and opens a connection to the data. When you then construct [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md), [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md), or [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) objects for operating on the connected database, pass the constructors for these objects a pointer to your `CDaoDatabase` object. When you finish using the connection, call the [Close](#cdaodatabase__close) member function and destroy the `CDaoDatabase` object. **Close** closes any recordsets you have not closed previously.  
+ Any of these techniques appends the DAO database object to the workspace's Databases collection and opens a connection to the data. When you then construct [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md), [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md), or [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) objects for operating on the connected database, pass the constructors for these objects a pointer to your `CDaoDatabase` object. When you finish using the connection, call the [Close](#close) member function and destroy the `CDaoDatabase` object. **Close** closes any recordsets you have not closed previously.  
   
 ## Transactions  
- Database transaction processing is supplied at the workspace level — see the [BeginTrans](../../mfc/reference/cdaoworkspace-class.md#cdaoworkspace__begintrans), [CommitTrans](../../mfc/reference/cdaoworkspace-class.md#cdaoworkspace__committrans), and [Rollback](../../mfc/reference/cdaoworkspace-class.md#cdaoworkspace__rollback) member functions of class `CDaoWorkspace`.  
+ Database transaction processing is supplied at the workspace level — see the [BeginTrans](../../mfc/reference/cdaoworkspace-class.md#begintrans), [CommitTrans](../../mfc/reference/cdaoworkspace-class.md#committrans), and [Rollback](../../mfc/reference/cdaoworkspace-class.md#rollback) member functions of class `CDaoWorkspace`.  
   
 ## ODBC Connections  
  The recommended way to work with ODBC data sources is to attach external tables to a Microsoft Jet (.MDB) database.  
@@ -129,7 +129,7 @@ class CDaoDatabase : public CObject
 ## Requirements  
  **Header:** afxdao.h  
   
-##  <a name="cdaodatabase__cantransact"></a>  CDaoDatabase::CanTransact  
+##  <a name="cantransact"></a>  CDaoDatabase::CanTransact  
  Call this member function to determine whether the database allows transactions.  
   
 ```  
@@ -142,7 +142,7 @@ BOOL CanTransact();
 ### Remarks  
  Transactions are managed in the database's workspace.  
   
-##  <a name="cdaodatabase__canupdate"></a>  CDaoDatabase::CanUpdate  
+##  <a name="canupdate"></a>  CDaoDatabase::CanUpdate  
  Call this member function to determine whether the `CDaoDatabase` object allows updates.  
   
 ```  
@@ -150,12 +150,12 @@ BOOL CanUpdate();
 ```  
   
 ### Return Value  
- Nonzero if the `CDaoDatabase` object allows updates; otherwise 0, indicating either that you passed **TRUE** in `bReadOnly` when you opened the `CDaoDatabase` object or that the database itself is read-only. See the [Open](#cdaodatabase__open) member function.  
+ Nonzero if the `CDaoDatabase` object allows updates; otherwise 0, indicating either that you passed **TRUE** in `bReadOnly` when you opened the `CDaoDatabase` object or that the database itself is read-only. See the [Open](#open) member function.  
   
 ### Remarks  
  For information about database updatability, see the topic "Updatable Property" in DAO Help.  
   
-##  <a name="cdaodatabase__cdaodatabase"></a>  CDaoDatabase::CDaoDatabase  
+##  <a name="cdaodatabase"></a>  CDaoDatabase::CDaoDatabase  
  Constructs a `CDaoDatabase` object.  
   
 ```  
@@ -164,19 +164,19 @@ CDaoDatabase(CDaoWorkspace* pWorkspace = NULL);
   
 ### Parameters  
  *pWorkspace*  
- A pointer to the `CDaoWorkspace` object that will contain the new database object. If you accept the default value of **NULL**, the constructor creates a temporary `CDaoWorkspace` object that uses the default DAO workspace. You can get a pointer to the workspace object via the [m_pWorkspace](#cdaodatabase__m_pworkspace) data member.  
+ A pointer to the `CDaoWorkspace` object that will contain the new database object. If you accept the default value of **NULL**, the constructor creates a temporary `CDaoWorkspace` object that uses the default DAO workspace. You can get a pointer to the workspace object via the [m_pWorkspace](#m_pworkspace) data member.  
   
 ### Remarks  
- After constructing the object, if you are creating a new Microsoft Jet (.MDB) database, call the object's [Create](#cdaodatabase__create) member function. If you are, instead, opening an existing database, call the object's [Open](#cdaodatabase__open) member function.  
+ After constructing the object, if you are creating a new Microsoft Jet (.MDB) database, call the object's [Create](#create) member function. If you are, instead, opening an existing database, call the object's [Open](#open) member function.  
   
- When you finish with the object, you should call its [Close](#cdaodatabase__close) member function and then destroy the `CDaoDatabase` object.  
+ When you finish with the object, you should call its [Close](#close) member function and then destroy the `CDaoDatabase` object.  
   
  You might find it convenient to embed the `CDaoDatabase` object in your document class.  
   
 > [!NOTE]
 >  A `CDaoDatabase` object is also created implicitly if you open a [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) object without passing a pointer to an existing `CDaoDatabase` object. This database object is closed when you close the recordset object.  
   
-##  <a name="cdaodatabase__close"></a>  CDaoDatabase::Close  
+##  <a name="close"></a>  CDaoDatabase::Close  
  Call this member function to disconnect from a database and close any open recordsets, tabledefs, and querydefs associated with the database.  
   
 ```  
@@ -187,14 +187,14 @@ virtual void Close();
  It is good practice to close these objects yourself before you call this member function. Closing a `CDaoDatabase` object removes it from the Databases collection in the associated [workspace](../../mfc/reference/cdaoworkspace-class.md). Because **Close** does not destroy the `CDaoDatabase` object, you can reuse the object by opening the same database or a different database.  
   
 > [!CAUTION]
->  Call the [Update](../../mfc/reference/cdaorecordset-class.md#cdaorecordset__update) member function (if there are pending edits) and the **Close** member function on all open recordset objects before you close a database. If you exit a function that declares [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) or `CDaoDatabase` objects on the stack, the database is closed, any unsaved changes are lost, all pending transactions are rolled back, and any pending edits to your data are lost.  
+>  Call the [Update](../../mfc/reference/cdaorecordset-class.md#update) member function (if there are pending edits) and the **Close** member function on all open recordset objects before you close a database. If you exit a function that declares [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) or `CDaoDatabase` objects on the stack, the database is closed, any unsaved changes are lost, all pending transactions are rolled back, and any pending edits to your data are lost.  
   
 > [!CAUTION]
 >  If you try to close a database object while any recordset objects are open, or if you try to close a workspace object while any database objects belonging to that specific workspace are open, those recordset objects will be closed and any pending updates or edits will be rolled back. If you try to close a workspace object while any database objects belonging to it are open, the operation closes all database objects belonging to that specific workspace object, which may result in unclosed recordset objects being closed. If you do not close your database object, MFC reports an assertion failure in debug builds.  
   
  If the database object is defined outside the scope of a function, and you exit the function without closing it, the database object will remain open until explicitly closed or the module in which it is defined is out of scope.  
   
-##  <a name="cdaodatabase__create"></a>  CDaoDatabase::Create  
+##  <a name="create"></a>  CDaoDatabase::Create  
  To create a new Microsoft Jet (.MDB) database, call this member function after you construct a `CDaoDatabase` object.  
   
 ```  
@@ -265,7 +265,7 @@ virtual void Create(
 > [!NOTE]
 >  With **Create**, you can create only Microsoft Jet (.MDB) databases. You cannot create ISAM databases or ODBC databases.  
   
-##  <a name="cdaodatabase__createrelation"></a>  CDaoDatabase::CreateRelation  
+##  <a name="createrelation"></a>  CDaoDatabase::CreateRelation  
  Call this member function to establish a relation between one or more fields in a primary table in the database and one or more fields in a foreign table (another table in the database).  
   
 ```  
@@ -327,7 +327,7 @@ void CreateRelation(
   
  For related information, see the topic "CreateRelation Method" in DAO Help.  
   
-##  <a name="cdaodatabase__deletequerydef"></a>  CDaoDatabase::DeleteQueryDef  
+##  <a name="deletequerydef"></a>  CDaoDatabase::DeleteQueryDef  
  Call this member function to delete the specified querydef — saved query — from the `CDaoDatabase` object's QueryDefs collection.  
   
 ```  
@@ -343,7 +343,7 @@ void DeleteQueryDef(LPCTSTR lpszName);
   
  For information about creating querydef objects, see class [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md). A querydef object becomes associated with a particular `CDaoDatabase` object when you construct the `CDaoQueryDef` object, passing it a pointer to the database object.  
   
-##  <a name="cdaodatabase__deleterelation"></a>  CDaoDatabase::DeleteRelation  
+##  <a name="deleterelation"></a>  CDaoDatabase::DeleteRelation  
  Call this member function to delete an existing relation from the database object's Relations collection.  
   
 ```  
@@ -359,7 +359,7 @@ void DeleteRelation(LPCTSTR lpszName);
   
  For related information, see the topic "Delete Method" in DAO Help.  
   
-##  <a name="cdaodatabase__deletetabledef"></a>  CDaoDatabase::DeleteTableDef  
+##  <a name="deletetabledef"></a>  CDaoDatabase::DeleteTableDef  
  Call this member function to delete the specified table and all of its data from the `CDaoDatabase` object's TableDefs collection.  
   
 ```  
@@ -380,7 +380,7 @@ void DeleteTableDef(LPCTSTR lpszName);
   
  For related information, see the topic "Delete Method" in DAO Help.  
   
-##  <a name="cdaodatabase__execute"></a>  CDaoDatabase::Execute  
+##  <a name="execute"></a>  CDaoDatabase::Execute  
  Call this member function to run an action query or execute a SQL statement on the database.  
   
 ```  
@@ -419,11 +419,11 @@ void Execute(
 > [!TIP]
 >  Given a syntactically correct SQL statement and proper permissions, the **Execute** member function will not fail even if not a single row can be modified or deleted. Therefore, always use the **dbFailOnError** option when using the **Execute** member function to run an update or delete query. This option causes MFC to throw an exception of type [CDaoException](../../mfc/reference/cdaoexception-class.md) and rolls back all successful changes if any of the records affected are locked and cannot be updated or deleted. Note that you can always call `GetRecordsAffected` to see how many records were affected.  
   
- Call the [GetRecordsAffected](#cdaodatabase__getrecordsaffected) member function of the database object to determine the number of records affected by the most recent **Execute** call. For example, `GetRecordsAffected` returns information about the number of records deleted, updated, or inserted when executing an action query. The count returned will not reflect changes in related tables when cascade updates or deletes are in effect.  
+ Call the [GetRecordsAffected](#getrecordsaffected) member function of the database object to determine the number of records affected by the most recent **Execute** call. For example, `GetRecordsAffected` returns information about the number of records deleted, updated, or inserted when executing an action query. The count returned will not reflect changes in related tables when cascade updates or deletes are in effect.  
   
  **Execute** does not return a recordset. Using **Execute** on a query that selects records causes MFC to throw an exception of type `CDaoException`. (There is no `ExecuteSQL` member function analogous to `CDatabase::ExecuteSQL`.)  
   
-##  <a name="cdaodatabase__getconnect"></a>  CDaoDatabase::GetConnect  
+##  <a name="getconnect"></a>  CDaoDatabase::GetConnect  
  Call this member function to retrieve the connection string used to connect the `CDaoDatabase` object to an ODBC or ISAM database.  
   
 ```  
@@ -431,7 +431,7 @@ CString GetConnect();
 ```  
   
 ### Return Value  
- The connection string if [Open](#cdaodatabase__open) has been called successfully on an ODBC data source; otherwise, an empty string. For a Microsoft Jet (.MDB) database, the string is always empty unless you set it for use with the **dbSQLPassThrough** option used with the [Execute](#cdaodatabase__execute) member function or used in opening a recordset.  
+ The connection string if [Open](#open) has been called successfully on an ODBC data source; otherwise, an empty string. For a Microsoft Jet (.MDB) database, the string is always empty unless you set it for use with the **dbSQLPassThrough** option used with the [Execute](#execute) member function or used in opening a recordset.  
   
 ### Remarks  
  The string provides information about the source of an open database or a database used in a pass-through query. The connection string is composed of a database type specifier and zero or more parameters separated by semicolons.  
@@ -442,9 +442,9 @@ CString GetConnect();
 > [!NOTE]
 >  The connection string is used to pass additional information to ODBC and certain ISAM drivers as needed. It is not used for .MDB databases. For Microsoft Jet database base tables, the connection string is an empty string ("") except when you use it for a SQL pass-through query as described under Return Value above.  
   
- See the [Open](#cdaodatabase__open) member function for a description of how the connection string is created. Once the connection string has been set in the **Open** call, you can later use it to check the setting to determine the type, path, user ID, Password, or ODBC data source of the database.  
+ See the [Open](#open) member function for a description of how the connection string is created. Once the connection string has been set in the **Open** call, you can later use it to check the setting to determine the type, path, user ID, Password, or ODBC data source of the database.  
   
-##  <a name="cdaodatabase__getname"></a>  CDaoDatabase::GetName  
+##  <a name="getname"></a>  CDaoDatabase::GetName  
  Call this member function to retrieve the name of the currently open database, which is the name of an existing database file or the name of a registered ODBC data source.  
   
 ```  
@@ -474,7 +474,7 @@ CString GetName();
   
  For ODBC databases such as SQL Server and Oracle, the database's connection string identifies a data source name (DSN) that's registered by ODBC.  
   
-##  <a name="cdaodatabase__getquerydefcount"></a>  CDaoDatabase::GetQueryDefCount  
+##  <a name="getquerydefcount"></a>  CDaoDatabase::GetQueryDefCount  
  Call this member function to retrieve the number of queries defined in the database's QueryDefs collection.  
   
 ```  
@@ -485,9 +485,9 @@ short GetQueryDefCount();
  The number of queries defined in the database.  
   
 ### Remarks  
- `GetQueryDefCount` is useful if you need to loop through all querydefs in the QueryDefs collection. To obtain information about a given query in the collection, see [GetQueryDefInfo](#cdaodatabase__getquerydefinfo).  
+ `GetQueryDefCount` is useful if you need to loop through all querydefs in the QueryDefs collection. To obtain information about a given query in the collection, see [GetQueryDefInfo](#getquerydefinfo).  
   
-##  <a name="cdaodatabase__getquerydefinfo"></a>  CDaoDatabase::GetQueryDefInfo  
+##  <a name="getquerydefinfo"></a>  CDaoDatabase::GetQueryDefInfo  
  Call this member function to obtain various kinds of information about a query defined in the database.  
   
 ```  
@@ -527,7 +527,7 @@ void GetQueryDefInfo(
   
  For a description of the information returned in *querydefinfo*, see the [CDaoQueryDefInfo](../../mfc/reference/cdaoquerydefinfo-structure.md) structure. This structure has members that correspond to the items of information listed above in the description of `dwInfoOptions`. If you request one level of information, you get any prior levels of information as well.  
   
-##  <a name="cdaodatabase__getquerytimeout"></a>  CDaoDatabase::GetQueryTimeout  
+##  <a name="getquerytimeout"></a>  CDaoDatabase::GetQueryTimeout  
  Call this member function to retrieve the current number of seconds to allow before subsequent operations on the connected database are timed out.  
   
 ```  
@@ -538,14 +538,14 @@ short GetQueryTimeout();
  A short integer containing the timeout value in seconds.  
   
 ### Remarks  
- An operation might time out due to network access problems, excessive query processing time, and so on. While the setting is in effect, it affects all open, add new, update, and delete operations on any recordsets associated with this `CDaoDatabase` object. You can change the current timeout setting by calling [SetQueryTimeout](#cdaodatabase__setquerytimeout). Changing the query timeout value for a recordset after opening does not change the value for the recordset. For example, subsequent [Move](../../mfc/reference/cdaorecordset-class.md#cdaorecordset__move) operations do not use the new value. The default value is initially set when the database engine is initialized.  
+ An operation might time out due to network access problems, excessive query processing time, and so on. While the setting is in effect, it affects all open, add new, update, and delete operations on any recordsets associated with this `CDaoDatabase` object. You can change the current timeout setting by calling [SetQueryTimeout](#setquerytimeout). Changing the query timeout value for a recordset after opening does not change the value for the recordset. For example, subsequent [Move](../../mfc/reference/cdaorecordset-class.md#move) operations do not use the new value. The default value is initially set when the database engine is initialized.  
   
  The default value for query timeouts is taken from the Windows registry. If there is no registry setting, the default is 60 seconds. Not all databases support the ability to set a query timeout value. If you set a query timeout value of 0, no timeout occurs; and communication with the database may stop responding. This behavior may be useful during development. If the call fails, MFC throws an exception of type [CDaoException](../../mfc/reference/cdaoexception-class.md).  
   
  For related information, see the topic "QueryTimeout Property" in DAO Help.  
   
-##  <a name="cdaodatabase__getrecordsaffected"></a>  CDaoDatabase::GetRecordsAffected  
- Call this member function to determine the number of records affected by the most recent call of the [Execute](#cdaodatabase__execute) member function.  
+##  <a name="getrecordsaffected"></a>  CDaoDatabase::GetRecordsAffected  
+ Call this member function to determine the number of records affected by the most recent call of the [Execute](#execute) member function.  
   
 ```  
 long GetRecordsAffected();
@@ -559,7 +559,7 @@ long GetRecordsAffected();
   
  For related information, see the topic "RecordsAffected Property" in DAO Help.  
   
-##  <a name="cdaodatabase__getrelationcount"></a>  CDaoDatabase::GetRelationCount  
+##  <a name="getrelationcount"></a>  CDaoDatabase::GetRelationCount  
  Call this member function to obtain the number of relations defined between tables in the database.  
   
 ```  
@@ -570,11 +570,11 @@ short GetRelationCount();
  The number of relations defined between tables in the database.  
   
 ### Remarks  
- **GetRelationCount** is useful if you need to loop through all defined relations in the database's Relations collection. To obtain information about a given relation in the collection, see [GetRelationInfo](#cdaodatabase__getrelationinfo).  
+ **GetRelationCount** is useful if you need to loop through all defined relations in the database's Relations collection. To obtain information about a given relation in the collection, see [GetRelationInfo](#getrelationinfo).  
   
  To illustrate the concept of a relation, consider a Suppliers table and a Products table, which might have a one-to-many relationship. In this relationship, one supplier can supply more than one product. Other relations are one-to-one and many-to-many.  
   
-##  <a name="cdaodatabase__getrelationinfo"></a>  CDaoDatabase::GetRelationInfo  
+##  <a name="getrelationinfo"></a>  CDaoDatabase::GetRelationInfo  
  Call this member function to obtain information about a specified relation in the database's Relations collection.  
   
 ```  
@@ -615,7 +615,7 @@ void GetRelationInfo(
 > [!NOTE]
 >  If you set the relation object's attributes to activate cascade operations ( **dbRelationUpdateCascades** or **dbRelationDeleteCascades**), the Microsoft Jet database engine automatically updates or deletes records in one or more other tables when changes are made to related primary key tables. For example, suppose you establish a cascade delete relationship between a Customers table and an Orders table. When you delete records from the Customers table, records in the Orders table related to that customer are also deleted. In addition, if you establish cascade delete relationships between the Orders table and other tables, records from those tables are automatically deleted when you delete records from the Customers table.  
   
-##  <a name="cdaodatabase__gettabledefcount"></a>  CDaoDatabase::GetTableDefCount  
+##  <a name="gettabledefcount"></a>  CDaoDatabase::GetTableDefCount  
  Call this member function to retrieve the number of tables defined in the database.  
   
 ```  
@@ -626,9 +626,9 @@ short GetTableDefCount();
  The number of tabledefs defined in the database.  
   
 ### Remarks  
- `GetTableDefCount` is useful if you need to loop through all tabledefs in the database's TableDefs collection. To obtain information about a given table in the collection, see [GetTableDefInfo](#cdaodatabase__gettabledefinfo).  
+ `GetTableDefCount` is useful if you need to loop through all tabledefs in the database's TableDefs collection. To obtain information about a given table in the collection, see [GetTableDefInfo](#gettabledefinfo).  
   
-##  <a name="cdaodatabase__gettabledefinfo"></a>  CDaoDatabase::GetTableDefInfo  
+##  <a name="gettabledefinfo"></a>  CDaoDatabase::GetTableDefInfo  
  Call this member function to obtain various kinds of information about a table defined in the database.  
   
 ```  
@@ -671,7 +671,7 @@ void GetTableDefInfo(
 > [!NOTE]
 >  The `AFX_DAO_ALL_INFO` option provides information that can be slow to obtain. In this case, counting the records in the table could be very time consuming if there are many records.  
   
-##  <a name="cdaodatabase__getversion"></a>  CDaoDatabase::GetVersion  
+##  <a name="getversion"></a>  CDaoDatabase::GetVersion  
  Call this member function to determine the version of the Microsoft Jet database file.  
   
 ```  
@@ -686,7 +686,7 @@ CString GetVersion();
   
  For related information, see the topic "Version Property" in DAO Help.  
   
-##  <a name="cdaodatabase__isopen"></a>  CDaoDatabase::IsOpen  
+##  <a name="isopen"></a>  CDaoDatabase::IsOpen  
  Call this member function to determine whether the `CDaoDatabase` object is currently open on a database.  
   
 ```  
@@ -700,7 +700,7 @@ BOOL IsOpen() const;
   
 ### Remarks  
   
-##  <a name="cdaodatabase__m_pdaodatabase"></a>  CDaoDatabase::m_pDAODatabase  
+##  <a name="m_pdaodatabase"></a>  CDaoDatabase::m_pDAODatabase  
  Contains a pointer to the OLE interface for the DAO database object underlying the `CDaoDatabase` object.  
   
 ### Remarks  
@@ -708,13 +708,13 @@ BOOL IsOpen() const;
   
  For information about calling DAO directly, see [Technical Note 54](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md).  
   
-##  <a name="cdaodatabase__m_pworkspace"></a>  CDaoDatabase::m_pWorkspace  
+##  <a name="m_pworkspace"></a>  CDaoDatabase::m_pWorkspace  
  Contains a pointer to the [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md) object that contains the database object.  
   
 ### Remarks  
  Use this pointer if you need to access the workspace directly — for example, to obtain pointers to other database objects in the workspace's Databases collection.  
   
-##  <a name="cdaodatabase__open"></a>  CDaoDatabase::Open  
+##  <a name="open"></a>  CDaoDatabase::Open  
  You must call this member function to initialize a newly constructed `CDaoDatabase` object that represents an existing database.  
   
 ```  
@@ -768,13 +768,13 @@ virtual void Open(
   
  The remaining remarks apply only to ODBC databases:  
   
- If the database is an ODBC database and the parameters in your **Open** call do not contain enough information to make the connection, the ODBC driver opens a dialog box to obtain the necessary information from the user. When you call **Open**, your connection string, `lpszConnect`, is stored privately and is available by calling the [GetConnect](#cdaodatabase__getconnect) member function.  
+ If the database is an ODBC database and the parameters in your **Open** call do not contain enough information to make the connection, the ODBC driver opens a dialog box to obtain the necessary information from the user. When you call **Open**, your connection string, `lpszConnect`, is stored privately and is available by calling the [GetConnect](#getconnect) member function.  
   
  If you wish, you can open your own dialog box before you call **Open** to get information from the user, such as a password, then add that information to the connection string you pass to **Open**. Or you might want to save the connection string you pass (perhaps in the Windows registry) so you can reuse it the next time your application calls **Open** on a `CDaoDatabase` object.  
   
  You can also use the connection string for multiple levels of login authorization (each for a different `CDaoDatabase` object) or to convey other database-specific information.  
   
-##  <a name="cdaodatabase__setquerytimeout"></a>  CDaoDatabase::SetQueryTimeout  
+##  <a name="setquerytimeout"></a>  CDaoDatabase::SetQueryTimeout  
  Call this member function to override the default number of seconds to allow before subsequent operations on the connected database time out.  
   
 ```  
@@ -786,7 +786,7 @@ void SetQueryTimeout(short nSeconds);
  The number of seconds to allow before a query attempt times out.  
   
 ### Remarks  
- An operation might time out because of network access problems, excessive query processing time, and so on. Call `SetQueryTimeout` before opening your recordset or before calling the recordset's [AddNew](../../mfc/reference/cdaorecordset-class.md#cdaorecordset__addnew), [Update](../../mfc/reference/cdaorecordset-class.md#cdaorecordset__update), or [Delete](../../mfc/reference/cdaorecordset-class.md#cdaorecordset__delete) member functions if you want to change the query timeout value. The setting affects all subsequent [Open](../../mfc/reference/cdaorecordset-class.md#cdaorecordset__open), `AddNew`, **Update**, and **Delete** calls to any recordsets associated with this `CDaoDatabase` object. Changing the query timeout value for a recordset after opening does not change the value for the recordset. For example, subsequent [Move](../../mfc/reference/cdaorecordset-class.md#cdaorecordset__move) operations do not use the new value.  
+ An operation might time out because of network access problems, excessive query processing time, and so on. Call `SetQueryTimeout` before opening your recordset or before calling the recordset's [AddNew](../../mfc/reference/cdaorecordset-class.md#addnew), [Update](../../mfc/reference/cdaorecordset-class.md#update), or [Delete](../../mfc/reference/cdaorecordset-class.md#delete) member functions if you want to change the query timeout value. The setting affects all subsequent [Open](../../mfc/reference/cdaorecordset-class.md#open), `AddNew`, **Update**, and **Delete** calls to any recordsets associated with this `CDaoDatabase` object. Changing the query timeout value for a recordset after opening does not change the value for the recordset. For example, subsequent [Move](../../mfc/reference/cdaorecordset-class.md#move) operations do not use the new value.  
   
  The default value for query timeouts is 60 seconds. Not all databases support the ability to set a query timeout value. If you set a query timeout value of 0, no timeout occurs; the communication with the database may stop responding. This behavior may be useful during development.  
   

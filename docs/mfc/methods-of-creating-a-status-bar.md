@@ -44,7 +44,7 @@ MFC provides two classes to create status bars: [CStatusBar](../mfc/reference/cs
   
  Visual C++ provides two ways to take advantage of the status bar common control.  
   
--   Create the status bar using `CStatusBar`, and then call [CStatusBar::GetStatusBarCtrl](../mfc/reference/cstatusbar-class.md#cstatusbar__getstatusbarctrl) to get access to the `CStatusBarCtrl` member functions.  
+-   Create the status bar using `CStatusBar`, and then call [CStatusBar::GetStatusBarCtrl](../mfc/reference/cstatusbar-class.md#getstatusbarctrl) to get access to the `CStatusBarCtrl` member functions.  
   
 -   Create the status bar using [CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md)'s constructor.  
   

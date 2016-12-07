@@ -47,32 +47,32 @@ class CPagerCtrl : public CWnd
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPagerCtrl::CPagerCtrl](#cpagerctrl__cpagerctrl)|Constructs a `CPagerCtrl` object.|  
+|[CPagerCtrl::CPagerCtrl](#cpagerctrl)|Constructs a `CPagerCtrl` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPagerCtrl::Create](#cpagerctrl__create)|Creates a pager control with specified styles and attaches it to the current `CPagerCtrl` object.|  
-|[CPagerCtrl::CreateEx](#cpagerctrl__createex)|Creates a pager control with specified extended styles and attaches it to the current `CPagerCtrl` object.|  
-|[CPagerCtrl::ForwardMouse](#cpagerctrl__forwardmouse)|Enables or disables forwarding [WM_MOUSEMOVE](http://msdn.microsoft.com/library/windows/desktop/ms645616) messages to the window that is contained in the current pager control.|  
-|[CPagerCtrl::GetBkColor](#cpagerctrl__getbkcolor)|Retrieves the background color of the current pager control.|  
-|[CPagerCtrl::GetBorder](#cpagerctrl__getborder)|Retrieves the border size of the current pager control.|  
-|[CPagerCtrl::GetButtonSize](#cpagerctrl__getbuttonsize)|Retrieves the button size of the current pager control.|  
-|[CPagerCtrl::GetButtonState](#cpagerctrl__getbuttonstate)|Retrieves the state of the specified button in the current pager control.|  
-|[CPagerCtrl::GetDropTarget](#cpagerctrl__getdroptarget)|Retrieves the [IDropTarget](http://msdn.microsoft.com/library/windows/desktop/ms679679) interface for the current pager control.|  
-|[CPagerCtrl::GetScrollPos](#cpagerctrl__getscrollpos)|Retrieves the scroll position of the current pager control.|  
-|[CPagerCtrl::IsButtonDepressed](#cpagerctrl__isbuttondepressed)|Indicates whether the specified button of the current pager control is in `pressed` state.|  
-|[CPagerCtrl::IsButtonGrayed](#cpagerctrl__isbuttongrayed)|Indicates whether the specified button of the current pager control is in `grayed` state.|  
-|[CPagerCtrl::IsButtonHot](#cpagerctrl__isbuttonhot)|Indicates whether the specified button of the current pager control is in `hot` state.|  
-|[CPagerCtrl::IsButtonInvisible](#cpagerctrl__isbuttoninvisible)|Indicates whether the specified button of the current pager control is in `invisible` state.|  
-|[CPagerCtrl::IsButtonNormal](#cpagerctrl__isbuttonnormal)|Indicates whether the specified button of the current pager control is in `normal` state.|  
-|[CPagerCtrl::RecalcSize](#cpagerctrl__recalcsize)|Causes the current pager control to recalculate the size of the contained window.|  
-|[CPagerCtrl::SetBkColor](#cpagerctrl__setbkcolor)|Sets the background color of the current pager control.|  
-|[CPagerCtrl::SetBorder](#cpagerctrl__setborder)|Sets the border size of the current pager control.|  
-|[CPagerCtrl::SetButtonSize](#cpagerctrl__setbuttonsize)|Sets the button size of the current pager control.|  
-|[CPagerCtrl::SetChild](#cpagerctrl__setchild)|Sets the contained window for the current pager control.|  
-|[CPagerCtrl::SetScrollPos](#cpagerctrl__setscrollpos)|Sets the scroll position of the current pager control.|  
+|[CPagerCtrl::Create](#create)|Creates a pager control with specified styles and attaches it to the current `CPagerCtrl` object.|  
+|[CPagerCtrl::CreateEx](#createex)|Creates a pager control with specified extended styles and attaches it to the current `CPagerCtrl` object.|  
+|[CPagerCtrl::ForwardMouse](#forwardmouse)|Enables or disables forwarding [WM_MOUSEMOVE](http://msdn.microsoft.com/library/windows/desktop/ms645616) messages to the window that is contained in the current pager control.|  
+|[CPagerCtrl::GetBkColor](#getbkcolor)|Retrieves the background color of the current pager control.|  
+|[CPagerCtrl::GetBorder](#getborder)|Retrieves the border size of the current pager control.|  
+|[CPagerCtrl::GetButtonSize](#getbuttonsize)|Retrieves the button size of the current pager control.|  
+|[CPagerCtrl::GetButtonState](#getbuttonstate)|Retrieves the state of the specified button in the current pager control.|  
+|[CPagerCtrl::GetDropTarget](#getdroptarget)|Retrieves the [IDropTarget](http://msdn.microsoft.com/library/windows/desktop/ms679679) interface for the current pager control.|  
+|[CPagerCtrl::GetScrollPos](#getscrollpos)|Retrieves the scroll position of the current pager control.|  
+|[CPagerCtrl::IsButtonDepressed](#isbuttondepressed)|Indicates whether the specified button of the current pager control is in `pressed` state.|  
+|[CPagerCtrl::IsButtonGrayed](#isbuttongrayed)|Indicates whether the specified button of the current pager control is in `grayed` state.|  
+|[CPagerCtrl::IsButtonHot](#isbuttonhot)|Indicates whether the specified button of the current pager control is in `hot` state.|  
+|[CPagerCtrl::IsButtonInvisible](#isbuttoninvisible)|Indicates whether the specified button of the current pager control is in `invisible` state.|  
+|[CPagerCtrl::IsButtonNormal](#isbuttonnormal)|Indicates whether the specified button of the current pager control is in `normal` state.|  
+|[CPagerCtrl::RecalcSize](#recalcsize)|Causes the current pager control to recalculate the size of the contained window.|  
+|[CPagerCtrl::SetBkColor](#setbkcolor)|Sets the background color of the current pager control.|  
+|[CPagerCtrl::SetBorder](#setborder)|Sets the border size of the current pager control.|  
+|[CPagerCtrl::SetButtonSize](#setbuttonsize)|Sets the button size of the current pager control.|  
+|[CPagerCtrl::SetChild](#setchild)|Sets the contained window for the current pager control.|  
+|[CPagerCtrl::SetScrollPos](#setscrollpos)|Sets the scroll position of the current pager control.|  
   
 ## Remarks  
  A pager control is a window that contains another window that is linear and larger than the containing window, and enables you to scroll the contained window into view. The pager control displays two scroll buttons that automatically disappear when the contained window is scrolled to its farthest extent, and reappear otherwise. You can create a pager control that scrolls either horizontally or vertically.  
@@ -93,7 +93,7 @@ class CPagerCtrl : public CWnd
 ## Requirements  
  **Header:** afxcmn.h  
   
-##  <a name="cpagerctrl__cpagerctrl"></a>  CPagerCtrl::CPagerCtrl  
+##  <a name="cpagerctrl"></a>  CPagerCtrl::CPagerCtrl  
  Constructs a `CPagerCtrl` object.  
   
 ```  
@@ -101,9 +101,9 @@ CPagerCtrl();
 ```  
   
 ### Remarks  
- Use the [CPagerCtrl::Create](#cpagerctrl__create) or [CPagerCtrl::CreateEx](#cpagerctrl__createex) method to create a pager control and attach it to the `CPagerCtrl` object.  
+ Use the [CPagerCtrl::Create](#create) or [CPagerCtrl::CreateEx](#createex) method to create a pager control and attach it to the `CPagerCtrl` object.  
   
-##  <a name="cpagerctrl__create"></a>  CPagerCtrl::Create  
+##  <a name="create"></a>  CPagerCtrl::Create  
  Creates a pager control with specified styles and attaches it to the current `CPagerCtrl` object.  
   
 ```  
@@ -127,14 +127,14 @@ virtual BOOL Create(
  `true` if this method is successful; otherwise, `false`.  
   
 ### Remarks  
- To create a pager control, declare a `CPagerCtrl` variable, then call the [CPagerCtrl::Create](#cpagerctrl__create) or [CPagerCtrl::CreateEx](#cpagerctrl__createex) method on that variable.  
+ To create a pager control, declare a `CPagerCtrl` variable, then call the [CPagerCtrl::Create](#create) or [CPagerCtrl::CreateEx](#createex) method on that variable.  
   
 ### Example  
- The following example creates a pager control, then uses the [CPagerCtrl::SetChild](#cpagerctrl__setchild) method to associate a very long button control with the pager control. The example then uses the [CPagerCtrl::SetButtonSize](#cpagerctrl__setbuttonsize) method to set the height of the pager control to 20 pixels, and the [CPagerCtrl::SetBorder](#cpagerctrl__setborder) method to set the border thickness to 1 pixel.  
+ The following example creates a pager control, then uses the [CPagerCtrl::SetChild](#setchild) method to associate a very long button control with the pager control. The example then uses the [CPagerCtrl::SetButtonSize](#setbuttonsize) method to set the height of the pager control to 20 pixels, and the [CPagerCtrl::SetBorder](#setborder) method to set the border thickness to 1 pixel.  
   
  [!code-cpp[NVC_MFC_CSplitButton_s2#1](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_1.cpp)]  
   
-##  <a name="cpagerctrl__createex"></a>  CPagerCtrl::CreateEx  
+##  <a name="createex"></a>  CPagerCtrl::CreateEx  
  Creates a pager control with specified extended styles and attaches it to the current `CPagerCtrl` object.  
   
 ```  
@@ -160,9 +160,9 @@ virtual BOOL CreateEx(
  `true` if this method is successful; otherwise, `false`.  
   
 ### Remarks  
- To create a pager control, declare a `CPagerCtrl` variable, then call the [CPagerCtrl::Create](#cpagerctrl__create) or [CPagerCtrl::CreateEx](#cpagerctrl__createex) method on that variable.  
+ To create a pager control, declare a `CPagerCtrl` variable, then call the [CPagerCtrl::Create](#create) or [CPagerCtrl::CreateEx](#createex) method on that variable.  
   
-##  <a name="cpagerctrl__forwardmouse"></a>  CPagerCtrl::ForwardMouse  
+##  <a name="forwardmouse"></a>  CPagerCtrl::ForwardMouse  
  Enables or disables forwarding [WM_MOUSEMOVE](http://msdn.microsoft.com/library/windows/desktop/ms645616) messages to the window that is contained in the current pager control.  
   
 ```  
@@ -178,7 +178,7 @@ void ForwardMouse(BOOL bForward);
 ### Remarks  
  This method sends the [PGM_FORWARDMOUSE](http://msdn.microsoft.com/library/windows/desktop/bb760867) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="cpagerctrl__getborder"></a>  CPagerCtrl::GetBorder  
+##  <a name="getborder"></a>  CPagerCtrl::GetBorder  
  Retrieves the border size of the current pager control.  
   
 ```  
@@ -194,11 +194,11 @@ int GetBorder() const;
  This method sends the [PGM_GETBORDER](http://msdn.microsoft.com/library/windows/desktop/bb760869) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- The following example uses the [CPagerCtrl::GetBorder](#cpagerctrl__getborder) method to retrieve the thickness of the pager control's border.  
+ The following example uses the [CPagerCtrl::GetBorder](#getborder) method to retrieve the thickness of the pager control's border.  
   
  [!code-cpp[NVC_MFC_CSplitButton_s2#5](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_2.cpp)]  
   
-##  <a name="cpagerctrl__getbkcolor"></a>  CPagerCtrl::GetBkColor  
+##  <a name="getbkcolor"></a>  CPagerCtrl::GetBkColor  
  Retrieves the background color of the current pager control.  
   
 ```  
@@ -214,11 +214,11 @@ COLORREF GetBkColor() const;
  This method sends the [PGM_GETBKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760868) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- The following example uses the [CPagerCtrl::SetBkColor](#cpagerctrl__setbkcolor) method to set the background color of the pager control to red, and the [CPagerCtrl::GetBkColor](#cpagerctrl__getbkcolor) method to confirm that the change was made.  
+ The following example uses the [CPagerCtrl::SetBkColor](#setbkcolor) method to set the background color of the pager control to red, and the [CPagerCtrl::GetBkColor](#getbkcolor) method to confirm that the change was made.  
   
  [!code-cpp[NVC_MFC_CSplitButton_s2#4](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_3.cpp)]  
   
-##  <a name="cpagerctrl__getbuttonsize"></a>  CPagerCtrl::GetButtonSize  
+##  <a name="getbuttonsize"></a>  CPagerCtrl::GetButtonSize  
  Retrieves the button size of the current pager control.  
   
 ```  
@@ -235,7 +235,7 @@ int GetButtonSize() const;
   
  If the pager control has the `PGS_HORZ` style, the button size determines the width of the pager buttons, and if the pager control has the `PGS_VERT` style, the button size determines the height of the pager buttons. For more information, see [Pager Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb760859).  
   
-##  <a name="cpagerctrl__getbuttonstate"></a>  CPagerCtrl::GetButtonState  
+##  <a name="getbuttonstate"></a>  CPagerCtrl::GetButtonState  
  Retrieves the state of the specified scroll button in the current pager control.  
   
 ```  
@@ -256,7 +256,7 @@ DWORD GetButtonState(int iButton) const;
 ### Remarks  
  This method sends the [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="cpagerctrl__getdroptarget"></a>  CPagerCtrl::GetDropTarget  
+##  <a name="getdroptarget"></a>  CPagerCtrl::GetDropTarget  
  Retrieves the [IDropTarget](http://msdn.microsoft.com/library/windows/desktop/ms679679) interface for the current pager control.  
   
 ```  
@@ -273,7 +273,7 @@ IDropTarget* GetDropTarget() const;
   
  This method sends the [PGM_GETDROPTARGET](http://msdn.microsoft.com/library/windows/desktop/bb760872) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. The caller of this method is responsible for calling the `Release` member of the [IDropTarget](http://msdn.microsoft.com/library/windows/desktop/ms679679) interface when the interface is no longer needed.  
   
-##  <a name="cpagerctrl__getscrollpos"></a>  CPagerCtrl::GetScrollPos  
+##  <a name="getscrollpos"></a>  CPagerCtrl::GetScrollPos  
  Retrieves the scroll position of the current pager control.  
   
 ```  
@@ -289,11 +289,11 @@ int GetScrollPos() const;
  This method sends the [PGM_GETPOS](http://msdn.microsoft.com/library/windows/desktop/bb760874) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- The following example uses the [CPagerCtrl::GetScrollPos](#cpagerctrl__getscrollpos) method to retrieve the current scroll position of the pager control. If the pager control is not already scrolled to zero, the leftmost position, the example uses the [CPagerCtrl::SetScrollPos](#cpagerctrl__setscrollpos) method to set the scroll position to zero.  
+ The following example uses the [CPagerCtrl::GetScrollPos](#getscrollpos) method to retrieve the current scroll position of the pager control. If the pager control is not already scrolled to zero, the leftmost position, the example uses the [CPagerCtrl::SetScrollPos](#setscrollpos) method to set the scroll position to zero.  
   
  [!code-cpp[NVC_MFC_CSplitButton_s2#7](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_4.cpp)]  
   
-##  <a name="cpagerctrl__isbuttondepressed"></a>  CPagerCtrl::IsButtonDepressed  
+##  <a name="isbuttondepressed"></a>  CPagerCtrl::IsButtonDepressed  
  Indicates whether the specified scroll button of the current pager control is in pressed state.  
   
 ```  
@@ -314,7 +314,7 @@ BOOL IsButtonDepressed(int iButton) const;
 ### Remarks  
  This method sends the [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. It then tests whether the state that is returned is `PGF_DEPRESSED`. For more information, see the Return Value section of the [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) message.  
   
-##  <a name="cpagerctrl__isbuttongrayed"></a>  CPagerCtrl::IsButtonGrayed  
+##  <a name="isbuttongrayed"></a>  CPagerCtrl::IsButtonGrayed  
  Indicates whether the specified scroll button of the current pager control is in grayed state.  
   
 ```  
@@ -335,7 +335,7 @@ BOOL IsButtonGrayed(int iButton) const;
 ### Remarks  
  This method sends the [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. It then tests whether the state that is returned is `PGF_GRAYED`. For more information, see the Return Value section of the [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) message.  
   
-##  <a name="cpagerctrl__isbuttonhot"></a>  CPagerCtrl::IsButtonHot  
+##  <a name="isbuttonhot"></a>  CPagerCtrl::IsButtonHot  
  Indicates whether the specified scroll button of the current pager control is in hot state.  
   
 ```  
@@ -356,7 +356,7 @@ BOOL IsButtonHot(int iButton) const;
 ### Remarks  
  This method sends the [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. It then tests whether the state that is returned is `PGF_HOT`. For more information, see the Return Value section of the [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) message.  
   
-##  <a name="cpagerctrl__isbuttoninvisible"></a>  CPagerCtrl::IsButtonInvisible  
+##  <a name="isbuttoninvisible"></a>  CPagerCtrl::IsButtonInvisible  
  Indicates whether the specified scroll button of the current pager control is in invisible state.  
   
 ```  
@@ -380,11 +380,11 @@ BOOL IsButtonInvisible(int iButton) const;
  This method sends the [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. It then tests whether the state that is returned is `PGF_INVISIBLE`. For more information, see the Return Value section of the [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) message.  
   
 ### Example  
- The following example uses the [CPagerCtrl::IsButtonInvisible](#cpagerctrl__isbuttoninvisible) method to determine whether the pager control's left and right scroll buttons are visible.  
+ The following example uses the [CPagerCtrl::IsButtonInvisible](#isbuttoninvisible) method to determine whether the pager control's left and right scroll buttons are visible.  
   
  [!code-cpp[NVC_MFC_CSplitButton_s2#6](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_5.cpp)]  
   
-##  <a name="cpagerctrl__isbuttonnormal"></a>  CPagerCtrl::IsButtonNormal  
+##  <a name="isbuttonnormal"></a>  CPagerCtrl::IsButtonNormal  
  Indicates whether the specified scroll button of the current pager control is in normal state.  
   
 ```  
@@ -405,7 +405,7 @@ BOOL IsButtonNormal(int iButton) const;
 ### Remarks  
  This method sends the [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. It then tests whether the state that is returned is `PGF_NORMAL`. For more information, see the Return Value section of the [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) message.  
   
-##  <a name="cpagerctrl__recalcsize"></a>  CPagerCtrl::RecalcSize  
+##  <a name="recalcsize"></a>  CPagerCtrl::RecalcSize  
  Causes the current pager control to recalculate the size of the contained window.  
   
 ```  
@@ -416,7 +416,7 @@ void RecalcSize();
  This method sends the [PGM_RECALCSIZE](http://msdn.microsoft.com/library/windows/desktop/bb760876) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. Consequently, the pager control sends the [PGN_CALCSIZE](http://msdn.microsoft.com/library/windows/desktop/bb760864) notification to obtain the scrollable dimensions of the contained window.  
   
 ### Example  
- The following example uses the [CPagerCtrl::RecalcSize](#cpagerctrl__recalcsize) method to request the current pager control to recalculate its size.  
+ The following example uses the [CPagerCtrl::RecalcSize](#recalcsize) method to request the current pager control to recalculate its size.  
   
  [!code-cpp[NVC_MFC_CSplitButton_s2#3](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_6.cpp)]  
   
@@ -425,7 +425,7 @@ void RecalcSize();
   
  [!code-cpp[NVC_MFC_CSplitButton_s2#8](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_7.cpp)]  
   
-##  <a name="cpagerctrl__setbkcolor"></a>  CPagerCtrl::SetBkColor  
+##  <a name="setbkcolor"></a>  CPagerCtrl::SetBkColor  
  Sets the background color of the current pager control.  
   
 ```  
@@ -445,11 +445,11 @@ COLORREF SetBkColor(COLORREF clrBk);
  This method sends the [PGM_SETBKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760878) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- The following example uses the [CPagerCtrl::SetBkColor](#cpagerctrl__setbkcolor) method to set the background color of the pager control to red, and the [CPagerCtrl::GetBkColor](#cpagerctrl__getbkcolor) method to confirm that the change was made.  
+ The following example uses the [CPagerCtrl::SetBkColor](#setbkcolor) method to set the background color of the pager control to red, and the [CPagerCtrl::GetBkColor](#getbkcolor) method to confirm that the change was made.  
   
  [!code-cpp[NVC_MFC_CSplitButton_s2#4](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_3.cpp)]  
   
-##  <a name="cpagerctrl__setborder"></a>  CPagerCtrl::SetBorder  
+##  <a name="setborder"></a>  CPagerCtrl::SetBorder  
  Sets the border size of the current pager control.  
   
 ```  
@@ -469,11 +469,11 @@ int SetBorder(int iBorder);
  This method sends the [PGM_SETBORDER](http://msdn.microsoft.com/library/windows/desktop/bb760880) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- The following example creates a pager control, then uses the [CPagerCtrl::SetChild](#cpagerctrl__setchild) method to associate a very long button control with the pager control. The example then uses the [CPagerCtrl::SetButtonSize](#cpagerctrl__setbuttonsize) method to set the height of the pager control to 20 pixels, and the [CPagerCtrl::SetBorder](#cpagerctrl__setborder) method to set the border thickness to 1 pixel.  
+ The following example creates a pager control, then uses the [CPagerCtrl::SetChild](#setchild) method to associate a very long button control with the pager control. The example then uses the [CPagerCtrl::SetButtonSize](#setbuttonsize) method to set the height of the pager control to 20 pixels, and the [CPagerCtrl::SetBorder](#setborder) method to set the border thickness to 1 pixel.  
   
  [!code-cpp[NVC_MFC_CSplitButton_s2#1](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_1.cpp)]  
   
-##  <a name="cpagerctrl__setbuttonsize"></a>  CPagerCtrl::SetButtonSize  
+##  <a name="setbuttonsize"></a>  CPagerCtrl::SetButtonSize  
  Sets the button size of the current pager control.  
   
 ```  
@@ -495,11 +495,11 @@ int SetButtonSize(int iButtonSize);
  If the pager control has the `PGS_HORZ` style, the button size determines the width of the pager buttons, and if the pager control has the `PGS_VERT` style, the button size determines the height of the pager buttons. The default button size is three-fourths of the width of the scroll bar, and the minimum button size is 12 pixels. For more information, see [Pager Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb760859).  
   
 ### Example  
- The following example creates a pager control, then uses the [CPagerCtrl::SetChild](#cpagerctrl__setchild) method to associate a very long button control with the pager control. The example then uses the [CPagerCtrl::SetButtonSize](#cpagerctrl__setbuttonsize) method to set the height of the pager control to 20 pixels, and the [CPagerCtrl::SetBorder](#cpagerctrl__setborder) method to set the border thickness to 1 pixel.  
+ The following example creates a pager control, then uses the [CPagerCtrl::SetChild](#setchild) method to associate a very long button control with the pager control. The example then uses the [CPagerCtrl::SetButtonSize](#setbuttonsize) method to set the height of the pager control to 20 pixels, and the [CPagerCtrl::SetBorder](#setborder) method to set the border thickness to 1 pixel.  
   
  [!code-cpp[NVC_MFC_CSplitButton_s2#1](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_1.cpp)]  
   
-##  <a name="cpagerctrl__setchild"></a>  CPagerCtrl::SetChild  
+##  <a name="setchild"></a>  CPagerCtrl::SetChild  
  Sets the contained window for the current pager control.  
   
 ```  
@@ -518,11 +518,11 @@ void SetChild(HWND hwndChild);
  This method does not change the parent of the contained window; it only assigns a window handle to the pager control for scrolling. In most cases, the contained window will be a child window of the pager control.  
   
 ### Example  
- The following example creates a pager control, then uses the [CPagerCtrl::SetChild](#cpagerctrl__setchild) method to associate a very long button control with the pager control. The example then uses the [CPagerCtrl::SetButtonSize](#cpagerctrl__setbuttonsize) method to set the height of the pager control to 20 pixels, and the [CPagerCtrl::SetBorder](#cpagerctrl__setborder) method to set the border thickness to 1 pixel.  
+ The following example creates a pager control, then uses the [CPagerCtrl::SetChild](#setchild) method to associate a very long button control with the pager control. The example then uses the [CPagerCtrl::SetButtonSize](#setbuttonsize) method to set the height of the pager control to 20 pixels, and the [CPagerCtrl::SetBorder](#setborder) method to set the border thickness to 1 pixel.  
   
  [!code-cpp[NVC_MFC_CSplitButton_s2#1](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_1.cpp)]  
   
-##  <a name="cpagerctrl__setscrollpos"></a>  CPagerCtrl::SetScrollPos  
+##  <a name="setscrollpos"></a>  CPagerCtrl::SetScrollPos  
  Sets the scroll position of the current pager control.  
   
 ```  

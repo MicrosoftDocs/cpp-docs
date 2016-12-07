@@ -44,7 +44,7 @@ When you add a list box with a horizontal scroll bar to a dialog box using MFC c
   
 ### To make the scroll bar appear  
   
-1.  Set a maximum width for the widest element by calling [CListBox::SetHorizontalExtent](../mfc/reference/clistbox-class.md#clistbox__sethorizontalextent) in your code.  
+1.  Set a maximum width for the widest element by calling [CListBox::SetHorizontalExtent](../mfc/reference/clistbox-class.md#sethorizontalextent) in your code.  
   
      Without this value set, the scroll bar will not appear, even when the items in the list box are wider than the box.  
   

@@ -52,7 +52,7 @@ class CMFCPropertyPage : public CPropertyPage
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCPropertyPage::CMFCPropertyPage](#cmfcpropertypage__cmfcpropertypage)|Constructs a `CMFCPropertyPage` object.|  
+|[CMFCPropertyPage::CMFCPropertyPage](#cmfcpropertypage)|Constructs a `CMFCPropertyPage` object.|  
 |`CMFCPropertyPage::~CMFCPropertyPage`|Destructor.|  
   
 ### Public Methods  
@@ -61,8 +61,8 @@ class CMFCPropertyPage : public CPropertyPage
 |----------|-----------------|  
 |`CMFCPropertyPage::CreateObject`|Used by the framework to create a dynamic instance of this class type.|  
 |`CMFCPropertyPage::GetThisClass`|Used by the framework to obtain a pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|  
-|`CMFCPropertyPage::OnSetActive`|This member function is called by the framework when the page is chosen by the user and becomes the active page. (Overrides [CPropertyPage::OnSetActive](../../mfc/reference/cpropertypage-class.md#cpropertypage__onsetactive).)|  
-|`CMFCPropertyPage::PreTranslateMessage`|Translates window messages before they are dispatched to the [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows functions. For more information and method syntax, see [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#cwnd__pretranslatemessage). (Overrides `CPropertyPage::PreTranslateMessage`.)|  
+|`CMFCPropertyPage::OnSetActive`|This member function is called by the framework when the page is chosen by the user and becomes the active page. (Overrides [CPropertyPage::OnSetActive](../../mfc/reference/cpropertypage-class.md#onsetactive).)|  
+|`CMFCPropertyPage::PreTranslateMessage`|Translates window messages before they are dispatched to the [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows functions. For more information and method syntax, see [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage). (Overrides `CPropertyPage::PreTranslateMessage`.)|  
   
 ## Remarks  
  The `CMFCPropertyPage` class represents individual pages of a property sheet, otherwise known as a tab dialog box.  
@@ -85,7 +85,7 @@ class CMFCPropertyPage : public CPropertyPage
 ## Requirements  
  **Header:** afxpropertypage.h  
   
-##  <a name="cmfcpropertypage__cmfcpropertypage"></a>  CMFCPropertyPage::CMFCPropertyPage  
+##  <a name="cmfcpropertypage"></a>  CMFCPropertyPage::CMFCPropertyPage  
  Constructs a `CMFCPropertyPage` object.  
   
 ```  
@@ -112,7 +112,7 @@ CMFCPropertyPage(
 ### Return Value  
   
 ### Remarks  
- For more information about the constructor parameters, see [CPropertyPage::CPropertyPage](../../mfc/reference/cpropertypage-class.md#cpropertypage__cpropertypage).  
+ For more information about the constructor parameters, see [CPropertyPage::CPropertyPage](../../mfc/reference/cpropertypage-class.md#cpropertypage).  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
