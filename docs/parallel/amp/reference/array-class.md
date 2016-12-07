@@ -69,11 +69,11 @@ friend class array;
 |[array::copy_to Method](#copy_to)|Copies the contents of the array to another array.|  
 |[array::data Method](#data)|Returns a pointer to the raw data of the array.|  
 |[array::get_accelerator_view Method](#get_accelerator_view)|Returns the [accelerator_view](accelerator-view-class.md) object that represents the location where the array is allocated. This property can be accessed only on the CPU.|  
-|[array::get_associated_accelerator_view Method](#get_associated_accelerator_view)|Gets the second [accelerator_view](accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the [array](array-class.md) object.|  
+|[array::get_associated_accelerator_view Method](#get_associated_accelerator_view)|Gets the second [accelerator_view](accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the `array` object.|  
 |[array::get_cpu_access_type Method](#get_cpu_access_type)|Returns the [access_type](concurrency-namespace-enums-amp.md#access_type) of the array. This method can be accessed only on the CPU.|  
 |[array::get_extent Method](#get_extent)|Returns the [extent](extent-class.md) object of the array.|  
 |[array::reinterpret_as Method](#reinterpret_as)|Returns a one-dimensional array that contains all the elements in the `array` object.|  
-|[array::section Method](#section)|Returns a subsection of the [array](array-class.md) object that is at the specified origin and, optionally, that has the specified extent.|  
+|[array::section Method](#section)|Returns a subsection of the `array` object that is at the specified origin and, optionally, that has the specified extent.|  
 |[array::view_as Method](#view_as)|Returns an [array_view](array-view-class.md) object that is constructed from the `array` object.|  
   
 ### Public Operators  
@@ -96,7 +96,7 @@ friend class array;
 |Name|Description|  
 |----------|-----------------|  
 |[array::accelerator_view Data Member](#accelerator_view)|Gets the [accelerator_view](accelerator-view-class.md) object that represents the location where the array is allocated. This property can be accessed only on the CPU.|  
-|[array::associated_accelerator_view Data Member](#associated_accelerator_view)|Gets the second [accelerator_view](accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the [array](array-class.md) object.|  
+|[array::associated_accelerator_view Data Member](#associated_accelerator_view)|Gets the second [accelerator_view](accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the `array` object.|  
 |[array::cpu_access_type Data Member](#cpu_access_type)|Gets the [access_type](concurrency-namespace-enums-amp.md#access_type) that represents how the CPU can access the storage of the array.|  
 |[array::extent Data Member](#extent)|Gets the extent that defines the shape of the array.|  
   
@@ -502,14 +502,14 @@ array(
  The data type of the elements that are copied.  
   
 ##  <a name="associated_accelerator_view"></a>  array::associated_accelerator_view Data Member  
- Gets the second [accelerator_view](accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the [array](array-class.md) object.  
+ Gets the second [accelerator_view](accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the `array` object.  
   
 ```  
 __declspec(property(get= get_associated_accelerator_view)) Concurrency::accelerator_view associated_accelerator_view;  
 ```  
   
 ##  <a name="copy_to"></a>  array::copy_to Method  
- Copies the contents of the [array](array-class.md) to another `array`.  
+ Copies the contents of the `array` to another `array`.  
   
 ```  
 void copy_to(
@@ -531,7 +531,7 @@ __declspec(property(get= get_cpu_access_type)) access_type cpu_access_type;
 ```  
   
 ##  <a name="data"></a>  array::data Method  
- Returns a pointer to the raw data of the [array](array-class.md).  
+ Returns a pointer to the raw data of the `array`.  
   
 ```  
 value_type* data() restrict(amp,
@@ -546,14 +546,14 @@ const value_type* data() const restrict(amp,
  A pointer to the raw data of the array.  
   
 ##  <a name="extent"></a>  array::extent Data Member  
- Gets the [extent](extent-class.md) object that defines the shape of the [array](array-class.md).  
+ Gets the [extent](extent-class.md) object that defines the shape of the `array`.  
   
 ```  
 __declspec(property(get= get_extent)) Concurrency::extent<_Rank> extent;  
 ```  
   
 ##  <a name="get_accelerator_view"></a>  array::get_accelerator_view Method  
- Returns the [accelerator_view](accelerator-view-class.md) object that represents the location where the [array](array-class.md) object is allocated. This property can be accessed only on the CPU.  
+ Returns the [accelerator_view](accelerator-view-class.md) object that represents the location where the `array` object is allocated. This property can be accessed only on the CPU.  
   
 ```  
 Concurrency::accelerator_view get_accelerator_view() const;
@@ -562,10 +562,10 @@ Concurrency::accelerator_view get_accelerator_view() const;
 ```  
   
 ### Return Value  
- The `accelerator_view` object that represents the location where the [array](array-class.md) object is allocated.  
+ The `accelerator_view` object that represents the location where the `array` object is allocated.  
   
 ##  <a name="get_associated_accelerator_view"></a>  array::get_associated_accelerator_view Method  
- Gets the second [accelerator_view](accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the [array](array-class.md) object.  
+ Gets the second [accelerator_view](accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the `array` object.  
   
 ```  
 Concurrency::accelerator_view get_associated_accelerator_view() const ;  
@@ -584,14 +584,14 @@ access_type get_cpu_access_type() const restrict(cpu);
 ### Return Value  
   
 ##  <a name="get_extent"></a>  array::get_extent Method  
- Returns the [extent](extent-class.md) object of the [array](array-class.md).  
+ Returns the [extent](extent-class.md) object of the `array`.  
   
 ```  
 Concurrency::extent<_Rank> get_extent() const restrict(amp,cpu);
 ```  
   
 ### Return Value  
- The `extent` object of the [array](array-class.md).  
+ The `extent` object of the `array`.  
   
 ##  <a name="operator_vec"></a>  array::operator std::vector&lt;value_type&gt; Operator  
  Uses `copy(*this, vector)` to implicitly convert the array to a std::vector object.  
@@ -686,7 +686,7 @@ typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type 
  The element that is at the specified index.  
   
 ##  <a name="operator_eq"></a>  array::operator= Operator  
- Copies the contents of the specified [array](array-class.md) object.  
+ Copies the contents of the specified `array` object.  
   
 ```  
 array& operator= (
@@ -712,7 +712,7 @@ array& operator= (
  A reference to this `array` object.  
   
 ##  <a name="rank"></a>  array::rank Constant  
- Stores the rank of the [array](array-class.md).  
+ Stores the rank of the `array`.  
   
 ```  
 static const int rank = _Rank;  
@@ -754,7 +754,7 @@ array_view<float,1> v = a.reinterpret_as<float>();
 assert(v.extent == 3*a.extent);
 ```   
 ##  <a name="section"></a>  array::section Method  
- Returns a subsection of the [array](array-class.md) object that is at the specified origin and, optionally, that has the specified extent.  
+ Returns a subsection of the `array` object that is at the specified origin and, optionally, that has the specified extent.  
   
 ```  
 array_view<value_type,_Rank> section(
@@ -891,7 +891,7 @@ array_view<const value_type,_New_rank> view_as(
  The extent that is used to construct the new [array_view](array-view-class.md) object.  
   
  `value_type`  
- The data type of the elements in both the original [array](array-class.md) object and the returned `array_view` object.  
+ The data type of the elements in both the original `array` object and the returned `array_view` object.  
   
 ### Return Value  
  The [array_view](array-view-class.md) object that is constructed.  

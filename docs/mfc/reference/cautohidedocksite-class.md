@@ -122,10 +122,10 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
  `TRUE` if `pBar` is derived from `CMFCAutoHideBar`; `FALSE` otherwise.  
   
 ### Remarks  
- If a base pane object is derived from `CMFCAutoHideBar`, it can contain a [CAutoHideDockSite](../../mfc/reference/cautohidedocksite-class.md).  
+ If a base pane object is derived from `CMFCAutoHideBar`, it can contain a `CAutoHideDockSite`.  
   
 ##  <a name="dockpane"></a>  CAutoHideDockSite::DockPane  
- Docks a pane to this [CAutoHideDockSite](../../mfc/reference/cautohidedocksite-class.md) object.  
+ Docks a pane to this `CAutoHideDockSite` object.  
   
 ```  
 virtual void DockPane(
@@ -168,7 +168,7 @@ void GetAlignRect(CRect& rect) const;
  The rectangle is adjusted for the offset margins so that they are not included.  
   
 ##  <a name="m_nextraspace"></a>  CAutoHideDockSite::m_nExtraSpace  
- The size of the space between the edges of the [CAutoHideDockSite Class](../../mfc/reference/cautohidedocksite-class.md) and the [CMFCAutoHideBar Class](../../mfc/reference/cmfcautohidebar-class.md) objects.  
+ The size of the space between the edges of the `CAutoHideDockSite Class` objects.  
   
 ```  
 static int m_nExtraSpace;  
@@ -189,7 +189,7 @@ void SetOffsetLeft(int nOffset);
  The new offset.  
   
 ### Remarks  
- [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) objects are positioned statically on the [CAutoHideDockSite](../../mfc/reference/cautohidedocksite-class.md) object. This means that the user cannot manually change the location of `CMFCAutoHideBar` objects. The `SetOffsetLeft` method controls the spacing between the left side of the left-most `CMFCAutoHideBar` and the left side of the `CAutoHideDockSite`.  
+ [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) objects are positioned statically on the `CAutoHideDockSite` object. This means that the user cannot manually change the location of `CMFCAutoHideBar` objects. The `SetOffsetLeft` method controls the spacing between the left side of the left-most `CMFCAutoHideBar` and the left side of the `CAutoHideDockSite`.  
   
 ##  <a name="setoffsetright"></a>  CAutoHideDockSite::SetOffsetRight  
  Sets the margin on the right side of the docking bar.  
@@ -203,10 +203,10 @@ void SetOffsetRight(int nOffset);
  The new offset.  
   
 ### Remarks  
- [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) objects are positioned statically on the [CAutoHideDockSite](../../mfc/reference/cautohidedocksite-class.md) object. This means that the user cannot manually change the location of the `CMFCAutoHideBar` objects. The `SetOffsetRight` method controls the spacing between the right side of the right-most `CMFCAutoHideBar` and the right side of the `CAutoHideDockSite`.  
+ [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) objects are positioned statically on the `CAutoHideDockSite` object. This means that the user cannot manually change the location of the `CMFCAutoHideBar` objects. The `SetOffsetRight` method controls the spacing between the right side of the right-most `CMFCAutoHideBar` and the right side of the `CAutoHideDockSite`.  
   
 ##  <a name="repositionpanes"></a>  CAutoHideDockSite::RepositionPanes  
- Redraws the panes on the [CAutoHideDockSite](../../mfc/reference/cautohidedocksite-class.md).  
+ Redraws the panes on the `CAutoHideDockSite`.  
   
 ```  
 virtual void RepositionPanes(CRect& rectNewClientArea);
@@ -234,7 +234,7 @@ void UnSetAutoHideMode(CMFCAutoHideBar* pAutoHideToolbar);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `pAutoHideToolbar`|A pointer to a [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) object pane located on the [CAutoHideDockSite](../../mfc/reference/cautohidedocksite-class.md).|  
+|[in] `pAutoHideToolbar`|A pointer to a [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) object pane located on the `CAutoHideDockSite`.|  
   
 ### Remarks  
  This method searches for the row that contains `pAutoHideToolbar`. It calls `CMFCAutoHideBar.UnSetAutoHideMode` for all the `CMFCAutoHideBar` objects on that row. If `pAutoHideToolbar` is not found or it is `NULL`, this method calls `CMFCAutoHideBar.UnSetAutoHideMode` for all the `CMFCAutoHideBar` objects on the `CAutoHideDockSite`.  

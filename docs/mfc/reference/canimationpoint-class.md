@@ -91,7 +91,7 @@ class CAnimationPoint : public CAnimationBaseObject;
   
  [CAnimationBaseObject](../../mfc/reference/canimationbaseobject-class.md)  
   
- [CAnimationPoint](../../mfc/reference/canimationpoint-class.md)  
+ `CAnimationPoint`  
   
 ## Requirements  
  **Header:** afxanimationcontroller.h  

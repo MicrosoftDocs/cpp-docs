@@ -65,14 +65,14 @@ class texture;
   
 |Name|Description|  
 |----------|-----------------|  
-|[texture::texture Constructor](#ctor)|Initializes a new instance of the [texture](texture-class.md) class.|  
-|[texture::~texture Destructor](#ctor)|Destroys the [texture](texture-class.md) object.|  
+|[texture::texture Constructor](#ctor)|Initializes a new instance of the `texture` class.|  
+|[texture::~texture Destructor](#ctor)|Destroys the `texture` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[texture::copy_to Method](#copy_to)|Copies the [texture](texture-class.md) object to the destination, by doing a deep copy.|  
+|[texture::copy_to Method](#copy_to)|Copies the `texture` object to the destination, by doing a deep copy.|  
 |[texture::data Method](#data)|Returns a CPU pointer to the raw data of this texture.|  
 |[texture::get Method](#get)|Returns the value of the element at the specified index.|  
 |[texture::get_associated_accelerator_view Method](#get_associated_accelerator_view)|Returns the [accelerator_view](accelerator-view-class.md) that is the preferred target for this texture to be copied to.|  
@@ -86,13 +86,13 @@ class texture;
 |----------|-----------------|  
 |[texture::operator() Operator](#operator_call)|Returns the element value that is specified by the parameters.|  
 |[texture::operator[] Operator](#operator_at)|Returns the element that is at the specified index.|  
-|[texture::operator= Operator](#operator_eq)|Copies the specified [texture](texture-class.md) object to this one.|  
+|[texture::operator= Operator](#operator_eq)|Copies the specified `texture` object to this one.|  
   
 ### Public Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[texture::rank Constant](#rank)|Gets the rank of the [texture](texture-class.md) object.|  
+|[texture::rank Constant](#rank)|Gets the rank of the `texture` object.|  
   
 ### Public Data Members  
   
@@ -113,7 +113,7 @@ class texture;
  **Namespace:** Concurrency::graphics  
   
 ##  <a name="dtor"></a>  texture::~texture Destructor  
- Destroys the [texture](texture-class.md) object.  
+ Destroys the `texture` object.  
   
 ```  
 ~texture() restrict(cpu);
@@ -127,7 +127,7 @@ __declspec(property(get= get_associated_accelerator_view)) Concurrency::accelera
 ```  
   
 ##  <a name="copy_to"></a>  texture::copy_to Method  
- Copies the [texture](texture-class.md) object to the destination, by doing a deep copy.  
+ Copies the `texture` object to the destination, by doing a deep copy.  
   
 ```  
 void copy_to(
@@ -278,7 +278,7 @@ const value_type operator[] (int _I0) const restrict(amp);
  The element that is at the specified index.  
   
 ##  <a name="operator_eq"></a>  texture::operator= Operator  
- Copies the specified [texture](texture-class.md) object to this one.  
+ Copies the specified `texture` object to this one.  
   
 ```  
 texture& operator= (
@@ -291,13 +291,13 @@ texture& operator= (
   
 ### Parameters  
  `_Other`  
- The [texture](texture-class.md) object to copy from.  
+ The `texture` object to copy from.  
   
 ### Return Value  
- A reference to this [texture](texture-class.md) object.  
+ A reference to this `texture` object.  
   
 ##  <a name="rank"></a>  texture::rank Constant  
- Gets the rank of the [texture](texture-class.md) object.  
+ Gets the rank of the `texture` object.  
   
 ```  
 static const int rank = _Rank;  
@@ -330,7 +330,7 @@ void set(
  The new value of the element.  
   
 ##  <a name="ctor"></a>  texture::texture Constructor  
- Initializes a new instance of the [texture](texture-class.md) class.  
+ Initializes a new instance of the `texture` class.  
   
 ```  
 texture(

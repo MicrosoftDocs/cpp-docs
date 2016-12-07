@@ -80,7 +80,7 @@ class CCustomInterpolator;
  Derive a class from CCustomInterpolator and override all necessary methods in order to implement a custom interpolation algorithm. A pointer to this class should be passed as a parameter to CCustomTransition.  
   
 ## Inheritance Hierarchy  
- [CCustomInterpolator](../../mfc/reference/ccustominterpolator-class.md)  
+ `CCustomInterpolator`  
   
 ## Requirements  
  **Header:** afxanimationcontroller.h  

@@ -61,7 +61,7 @@ class CD2DPointU : public D2D1_POINT_2U;
 ## Inheritance Hierarchy  
  `D2D1_POINT_2U`  
   
- [CD2DPointU](../../mfc/reference/cd2dpointu-class.md)  
+ `CD2DPointU`  
   
 ## Requirements  
  **Header:** afxrendertarget.h  

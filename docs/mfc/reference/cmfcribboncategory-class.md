@@ -149,7 +149,7 @@ class CMFCRibbonCategory : public CObject
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
   
- [CMFCRibbonCategory](../../mfc/reference/cmfcribboncategory-class.md)  
+ `CMFCRibbonCategory`  
   
 ## Requirements  
  **Header:** afxribboncategory.h  
@@ -202,7 +202,7 @@ CMFCRibbonPanel* AddPanel(
  [!code-cpp[NVC_MFC_RibbonApp#10](../../mfc/reference/codesnippet/cpp/cmfcribboncategory-class_1.cpp)]  
   
 ##  <a name="cmfcribboncategory"></a>  CMFCRibbonCategory::CMFCRibbonCategory  
- Constructs and initializes a [CMFCRibbonCategory](../../mfc/reference/cmfcribboncategory-class.md) object.  
+ Constructs and initializes a `CMFCRibbonCategory` object.  
   
 ```  
 CMFCRibbonCategory(
@@ -236,7 +236,7 @@ CMFCRibbonCategory(
  Default size of large images for ribbon elements in the ribbon category.  
   
 ##  <a name="copyfrom"></a>  CMFCRibbonCategory::CopyFrom  
- Copies the state of the specified [CMFCRibbonCategory](../../mfc/reference/cmfcribboncategory-class.md) to the current [CMFCRibbonCategory](../../mfc/reference/cmfcribboncategory-class.md) object.  
+ Copies the state of the specified `CMFCRibbonCategory` to the current `CMFCRibbonCategory` object.  
   
 ```  
 virtual void CopyFrom(CMFCRibbonCategory& src);
@@ -244,7 +244,7 @@ virtual void CopyFrom(CMFCRibbonCategory& src);
   
 ### Parameters  
  [in] `src`  
- The source [CMFCRibbonCategory](../../mfc/reference/cmfcribboncategory-class.md) object.  
+ The source `CMFCRibbonCategory` object.  
   
 ### Remarks  
   

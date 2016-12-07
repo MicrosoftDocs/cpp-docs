@@ -109,7 +109,7 @@ System::Windows::Forms::Control^ GetControl() const;
 ```  
   
 ### Return Value  
- A pointer to a <xref:System.Windows.Forms.ControlqualifyHint%3DTrue%26autoUpgrade%3DTrue> object.  
+ A pointer to a `System.Windows.Forms.Control` object.  
   
 ### Remarks  
  For an example of how to use Windows Forms, see [Using a Windows Form User Control in MFC](../../dotnet/using-a-windows-form-user-control-in-mfc.md).  

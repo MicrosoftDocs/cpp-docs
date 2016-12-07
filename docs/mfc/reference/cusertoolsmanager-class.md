@@ -95,7 +95,7 @@ class CUserToolsManager : public CObject
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
   
- [CUserToolsManager](../../mfc/reference/cusertoolsmanager-class.md)  
+ `CUserToolsManager`  
   
 ## Requirements  
  **Header:** afxusertoolsmanager.h  
@@ -269,7 +269,7 @@ const CObList& GetUserTools() const;
  A const reference to a [CObList Class](../../mfc/reference/coblist-class.md) object that contains a list of user tools.  
   
 ### Remarks  
- Call this method to retrieve a list of user tools that the [CUserToolsManager](../../mfc/reference/cusertoolsmanager-class.md) object maintains. Each user tool is represented by an object of type [CUserTool Class](../../mfc/reference/cusertool-class.md) or a type derived from `CUserTool`. The type is specified by the `pToolRTC` parameter when you call [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools) to enable user tools.  
+ Call this method to retrieve a list of user tools that the `CUserToolsManager` object maintains. Each user tool is represented by an object of type [CUserTool Class](../../mfc/reference/cusertool-class.md) or a type derived from `CUserTool`. The type is specified by the `pToolRTC` parameter when you call [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools) to enable user tools.  
   
 ##  <a name="invoketool"></a>  CUserToolsManager::InvokeTool  
  Executes an application associated with the user tool that has a specified command ID.  
@@ -322,7 +322,7 @@ BOOL LoadState(LPCTSTR lpszProfileName=NULL);
  Nonzero if the state was loaded successfully; otherwise 0.  
   
 ### Remarks  
- This method loads the state of the [CUserToolsManager](../../mfc/reference/cusertoolsmanager-class.md) object from the Windows registry.  
+ This method loads the state of the `CUserToolsManager` object from the Windows registry.  
   
  Usually, you do not call this method directly. [CWinAppEx::LoadState](../../mfc/reference/cwinappex-class.md#loadstate) calls it as part of workspace initialization process.  
   
@@ -392,7 +392,7 @@ BOOL SaveState(LPCTSTR lpszProfileName=NULL);
  Nonzero if the state was saved successfully; otherwise 0.  
   
 ### Remarks  
- The method stores the current state of the [CUserToolsManager](../../mfc/reference/cusertoolsmanager-class.md) object in the Windows registry.  
+ The method stores the current state of the `CUserToolsManager` object in the Windows registry.  
   
  Usually, you do not need to call this method directly, [CWinAppEx::SaveState](../../mfc/reference/cwinappex-class.md#savestate) calls it automatically as a part of the workspace serialization process of the application.  
   

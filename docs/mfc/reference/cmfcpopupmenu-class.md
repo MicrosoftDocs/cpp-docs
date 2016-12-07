@@ -156,7 +156,7 @@ class CMFCPopupMenu : public CMiniFrameWnd
   
  [CMiniFrameWnd](../../mfc/reference/cminiframewnd-class.md)  
   
- [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)  
+ `CMFCPopupMenu`  
   
 ## Requirements  
  **Header:** afxpopupmenu.h  
@@ -246,7 +246,7 @@ void CloseMenu(BOOL bSetFocusToBar = FALSE);
 ### Remarks  
   
 ##  <a name="cmfcpopupmenu"></a>  CMFCPopupMenu::CMFCPopupMenu  
- Constructs a [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) object.  
+ Constructs a `CMFCPopupMenu` object.  
   
 ```  
 CMFCPopupMenu(
@@ -265,7 +265,7 @@ CMFCPopupMenu(
  This method allocates the resources for a `CMFCPopupMenu`. To create the pop-up menu item, call [CMFCPopupMenu::Create](#create).  
   
 ##  <a name="create"></a>  CMFCPopupMenu::Create  
- Creates a pop-up menu and attaches it to a [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) object.  
+ Creates a pop-up menu and attaches it to a `CMFCPopupMenu` object.  
   
 ```  
 virtual BOOL Create(
@@ -613,7 +613,7 @@ CMFCToolBarMenuButton* GetParentButton() const;
  A pointer to the parent toolbar button. `NULL` if the pop-up menu has no parent toolbar button.  
   
 ### Remarks  
- A [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) can be associated with a button on the menu. In this scenario, the pop-up menu appears when a user selects the parent toolbar button.  
+ A `CMFCPopupMenu` can be associated with a button on the menu. In this scenario, the pop-up menu appears when a user selects the parent toolbar button.  
   
  If the pop-up menu is a shortcut menu, it will have no parent toolbar button.  
   
@@ -627,7 +627,7 @@ CMFCPopupMenu* GetParentPopupMenu() const;
 ```  
   
 ### Return Value  
- A pointer to the parent [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) object; `NULL` if there is no parent pop-up menu.  
+ A pointer to the parent `CMFCPopupMenu` object; `NULL` if there is no parent pop-up menu.  
   
 ### Remarks  
  A pop-up menu has a parent `CMFCPopupMenu` object only if it is a submenu.  
@@ -658,7 +658,7 @@ CMFCToolBar* GetParentToolBar() const;
  A pointer to the parent toolbar. `NULL` if the pop-up menu has no parent toolbar.  
   
 ### Remarks  
- If the [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) is a shortcut menu, then it has no parent toolbar.  
+ If the `CMFCPopupMenu` is a shortcut menu, then it has no parent toolbar.  
   
 ##  <a name="getquickcustomizetype"></a>  CMFCPopupMenu::GetQuickCustomizeType  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -801,7 +801,7 @@ BOOL IsCustomizePane();
  `TRUE` if the pop-up is a **QuckCustomizePane**; otherwise `FALSE`.  
   
 ### Remarks  
- Use the **QuickCustomizePane** to enable the user to directly customize the pop-up menu. The **QuickCustomizePane** is a [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) that appears when the user clicks on a toolbar button to edit it directly.  
+ Use the **QuickCustomizePane** to enable the user to directly customize the pop-up menu. The **QuickCustomizePane** is a `CMFCPopupMenu` that appears when the user clicks on a toolbar button to edit it directly.  
   
  Your application should call this method during [CMDIFrameWndEx::OnShowCustomizePane](../../mfc/reference/cmdiframewndex-class.md#onshowcustomizepane).  
   

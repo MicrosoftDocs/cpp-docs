@@ -78,7 +78,7 @@ class CBitmapRenderTarget : public CRenderTarget;
   
  [CRenderTarget](../../mfc/reference/crendertarget-class.md)  
   
- [CBitmapRenderTarget](../../mfc/reference/cbitmaprendertarget-class.md)  
+ `CBitmapRenderTarget` 
   
 ## Requirements  
  **Header:** afxrendertarget.h  

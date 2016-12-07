@@ -152,7 +152,7 @@ class CPaneFrameWnd : public CWnd
   
  [CWnd](../../mfc/reference/cwnd-class.md)  
   
- [CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md)  
+ `CPaneFrameWnd`   
   
 ## Requirements  
  **Header:** afxPaneFrameWnd.h  
@@ -295,7 +295,7 @@ virtual void ConvertToTabbedDocument();
 ```  
   
 ##  <a name="create"></a>  CPaneFrameWnd::Create  
- Creates a miniframe window and attaches it to the [CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md) object.  
+ Creates a miniframe window and attaches it to the `CPaneFrameWnd`  object.  
   
 ```  
 virtual BOOL Create(
@@ -326,10 +326,10 @@ virtual BOOL Create(
  `TRUE` if the window was created successfully; otherwise, `FALSE`.  
   
 ### Remarks  
- A miniframe window is created in two steps. First, the framework creates a [CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md) object. Second, it calls `Create` to create the Windows miniframe window and attach it to the `CPaneFrameWnd` object.  
+ A miniframe window is created in two steps. First, the framework creates a `CPaneFrameWnd`  object. Second, it calls `Create` to create the Windows miniframe window and attach it to the `CPaneFrameWnd` object.  
   
 ##  <a name="createex"></a>  CPaneFrameWnd::CreateEx  
- Creates a miniframe window and attaches it to the [CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md) object.  
+ Creates a miniframe window and attaches it to the `CPaneFrameWnd`  object.  
   
 ```  
 virtual BOOL CreateEx(
@@ -364,7 +364,7 @@ virtual BOOL CreateEx(
  `TRUE` if the window was created successfully; otherwise, `FALSE`.  
   
 ### Remarks  
- A miniframe window is created in two steps. First, the framework creates a [CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md) object. Second, it calls `Create` to create the Windows miniframe window and attach it to the `CPaneFrameWnd` object.  
+ A miniframe window is created in two steps. First, the framework creates a `CPaneFrameWnd`  object. Second, it calls `Create` to create the Windows miniframe window and attach it to the `CPaneFrameWnd` object.  
   
 ##  <a name="dockpane"></a>  CPaneFrameWnd::DockPane  
  Docks the pane.  

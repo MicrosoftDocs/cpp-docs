@@ -106,7 +106,7 @@ class CD2DBitmap : public CD2DResource;
   
  [CD2DResource](../../mfc/reference/cd2dresource-class.md)  
   
- [CD2DBitmap](../../mfc/reference/cd2dbitmap-class.md)  
+ `CD2DBitmap`
   
 ## Requirements  
  **Header:** afxrendertarget.h  

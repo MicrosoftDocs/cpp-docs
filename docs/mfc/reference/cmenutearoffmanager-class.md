@@ -75,7 +75,7 @@ class CMenuTearOffManager : public CObject
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
   
- [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md)  
+ `CMenuTearOffManager`   
   
 ## Requirements  
  **Header:** afxmenutearoffmanager.h  
@@ -96,7 +96,7 @@ void Build(
 ### Remarks  
   
 ##  <a name="cmenutearoffmanager"></a>  CMenuTearOffManager::CMenuTearOffManager  
- Constructs a [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) object.  
+ Constructs a `CMenuTearOffManager`  object.  
   
 ```  
 CMenuTearOffManager();
@@ -119,7 +119,7 @@ LPCTSTR GetRegPath() const;
 ### Remarks  
   
 ##  <a name="initialize"></a>  CMenuTearOffManager::Initialize  
- Initializes a [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) object.  
+ Initializes a `CMenuTearOffManager`  object.  
   
 ```  
 BOOL Initialize(

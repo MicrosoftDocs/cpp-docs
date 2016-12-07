@@ -144,7 +144,7 @@ class CMFCToolBarImages : public CObject
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
   
- [CMFCToolBarImages](../../mfc/reference/cmfctoolbarimages-class.md)  
+ `CMFCToolBarImages`   
   
 ## Requirements  
  **Header:** afxtoolbarimages.h  
@@ -201,7 +201,7 @@ int AddImage(
  The handle to the bitmap to add.  
   
  [in] `bSetBitPerPixel`  
- `TRUE` if the [CMFCToolBarImages](../../mfc/reference/cmfctoolbarimages-class.md) object uses the color depth (bits per pixel) of the new image; `FALSE` if the `CMFCToolbarImages` object keeps the current color depth.  
+ `TRUE` if the `CMFCToolBarImages`  object uses the color depth (bits per pixel) of the new image; `FALSE` if the `CMFCToolbarImages` object keeps the current color depth.  
   
  [in] `imageList`  
  A reference to a `CMFCToolbarImages` object that contains the image to add.  
@@ -210,7 +210,7 @@ int AddImage(
  The index in the source `CMFCToolbarImages` object of the image to add.  
   
 ### Return Value  
- The number of toolbar images that the [CMFCToolBarImages](../../mfc/reference/cmfctoolbarimages-class.md) object maintains after the new bitmap was added successfully; -1 if the operation failed.  
+ The number of toolbar images that the `CMFCToolBarImages`  object maintains after the new bitmap was added successfully; -1 if the operation failed.  
   
 ##  <a name="cleanup"></a>  CMFCToolBarImages::CleanUp  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -222,7 +222,7 @@ static void __stdcall CleanUp();
 ### Remarks  
   
 ##  <a name="clear"></a>  CMFCToolBarImages::Clear  
- Frees the system resources that the [CMFCToolbarImages](../../mfc/reference/cmfctoolbarimages-class.md) object allocated.  
+ Frees the system resources that the `CMFCToolBarImages`  object allocated.  
   
 ```  
 void Clear();
@@ -476,7 +476,7 @@ int GetCount() const;
 ```  
   
 ### Return Value  
- The number of images in the [CMFCToolbarImages](../../mfc/reference/cmfctoolbarimages-class.md) object.  
+ The number of images in the `CMFCToolBarImages`  object.  
   
 ##  <a name="getdisabledimagealpha"></a>  CMFCToolBarImages::GetDisabledImageAlpha  
  Returns the alpha channel (opacity) value that is used for disabled images.  
@@ -519,7 +519,7 @@ SIZE GetImageSize(BOOL bDest=FALSE) const;
  A `SIZE` structure, which specifies the size of an image in pixels.  
   
 ### Remarks  
- The size of the source image is the size of the images that are stored in the [CMFCToolbarImages](../../mfc/reference/cmfctoolbarimages-class.md) object. You can call [CMFCToolBarImages::SetImageSize](#setimagesize) to set the source size. The default value is 16x15 pixels.  
+ The size of the source image is the size of the images that are stored in the `CMFCToolBarImages`  object. You can call [CMFCToolBarImages::SetImageSize](#setimagesize) to set the source size. The default value is 16x15 pixels.  
   
  By default, the destination image size is 0x0. You specify the destination size when you call [CMFCToolBarImages::PrepareDrawImage](#preparedrawimage). The [CMFCToolBarImages::EndDrawImage](#enddrawimage) method resets the destination size to the default value.  
   
@@ -717,7 +717,7 @@ BOOL IsUserImagesList() const;
 ```  
   
 ### Return Value  
- `TRUE` if the [CMFCToolbarImages](../../mfc/reference/cmfctoolbarimages-class.md) object contains user-defined toolbar images; otherwise `FALSE`.  
+ `TRUE` if the `CMFCToolBarImages`  object contains user-defined toolbar images; otherwise `FALSE`.  
   
 ##  <a name="isvalid"></a>  CMFCToolBarImages::IsValid  
  Indicates whether this set of toolbar images contains a valid toolbar image.  
@@ -729,7 +729,7 @@ BOOL IsValid() const;
 ```  
   
 ### Return Value  
- `TRUE` if a [CMFCToolbarImages](../../mfc/reference/cmfctoolbarimages-class.md) object is valid; otherwise `FALSE`.  
+ `TRUE` if a `CMFCToolBarImages`  object is valid; otherwise `FALSE`.  
   
 ### Remarks  
  The `CMFCToolBarImages` object is not valid when its handle to a bitmap with toolbar images is `NULL`.  

@@ -94,7 +94,7 @@ class accelerator;
 |[accelerator::description Data Member](#description)|Gets a short description of the `accelerator` device.|  
 |[accelerator::device_path Data Member](#device_path)|Gets the path of the device.|  
 |[accelerator::direct3d_ref Data Member](#direct3d_ref)|Gets a string constant for a Direct3D reference `accelerator`.|  
-|[accelerator::direct3d_warp Data Member](#direct3d_warp)|Gets the string constant for an [accelerator](accelerator-class.md) object that you can use for executing C++ AMP code on multi-core CPUs that use Streaming SIMD Extensions (SSE).|  
+|[accelerator::direct3d_warp Data Member](#direct3d_warp)|Gets the string constant for an `accelerator` object that you can use for executing C++ AMP code on multi-core CPUs that use Streaming SIMD Extensions (SSE).|  
 |[accelerator::has_display Data Member](#has_display)|Gets a Boolean value that indicates whether the `accelerator` is attached to a display.|  
 |[accelerator::is_debug Data Member](#is_debug)|Indicates whether the `accelerator` has the DEBUG layer enabled for extensive error reporting.|  
 |[accelerator::is_emulated Data Member](#is_emulated)|Indicates whether the `accelerator` is emulated.|  
@@ -117,7 +117,7 @@ class accelerator;
  **Namespace:** Concurrency  
   
 ##  <a name="dtor"></a> </a>  accelerator::~accelerator Destructor  
- Destroys the [accelerator](accelerator-class.md) object.  
+ Destroys the `accelerator` object.  
   
 ```  
 ~accelerator();
@@ -167,14 +167,14 @@ accelerator_view create_view(queuing_mode qmode = queuing_mode_automatic);
  A new `accelerator_view` object on this accelerator, using the specified queuing mode.  
   
 ##  <a name="dedicated_memory"></a>  accelerator::dedicated_memory Data Member  
- Gets the dedicated memory for the [accelerator](accelerator-class.md), in kilobytes.  
+ Gets the dedicated memory for the `accelerator`, in kilobytes.  
   
 ```  
 __declspec(property(get= get_dedicated_memory)) size_t dedicated_memory;  
 ```  
   
 ##  <a name="default_accelerator"></a>  accelerator::default_accelerator Data Member  
- Gets a string constant for the default [accelerator](accelerator-class.md).  
+ Gets a string constant for the default `accelerator`.  
   
 ```  
 static const wchar_t default_accelerator[];  
@@ -188,14 +188,14 @@ __declspec(property(get= get_default_cpu_access_type)) access_type default_cpu_a
 ```  
   
 ##  <a name="default_view"></a>  accelerator::default_view Data Member  
- Gets the default accelerator view that is associated with the [accelerator](accelerator-class.md).  
+ Gets the default accelerator view that is associated with the `accelerator`.  
   
 ```  
 __declspec(property(get= get_default_view)) accelerator_view default_view;  
 ```  
   
 ##  <a name="description"></a>  accelerator::description Data Member  
- Gets a short description of the [accelerator](accelerator-class.md) device.  
+ Gets a short description of the `accelerator` device.  
   
 ```  
 __declspec(property(get= get_description)) std::wstring description;  
@@ -216,7 +216,7 @@ static const wchar_t direct3d_ref[];
 ```  
   
 ##  <a name="direct3d_warp"></a>  accelerator::direct3d_warp Data Member  
- Gets the string constant for an [accelerator](accelerator-class.md) object that you can use for executing your C++ AMP code on multi-core CPUs using Streaming SIMD Extensions (SSE).  
+ Gets the string constant for an `accelerator` object that you can use for executing your C++ AMP code on multi-core CPUs using Streaming SIMD Extensions (SSE).  
   
 ```  
 static const wchar_t direct3d_warp[];  
@@ -243,7 +243,7 @@ static accelerator_view __cdecl get_auto_selection_view();
  The auto selection accelerator_view.  
   
 ##  <a name="get_dedicated_memory"></a>  accelerator::get_dedicated_memory Method  
- Returns the dedicated memory for the [accelerator](accelerator-class.md), in kilobytes.  
+ Returns the dedicated memory for the `accelerator`, in kilobytes.  
   
 ```  
 size_t get_dedicated_memory() const;
@@ -267,7 +267,7 @@ access_type get_default_cpu_access_type() const;
  The default cpu access_type for buffers created on this accelerator.  
   
 ##  <a name="get_default_view"></a>  accelerator::get_default_view Method  
- Returns the default `accelerator_view` object that is associated with the [accelerator](accelerator-class.md).  
+ Returns the default `accelerator_view` object that is associated with the `accelerator`.  
   
 ```  
 accelerator_view get_default_view() const;
@@ -279,7 +279,7 @@ accelerator_view get_default_view() const;
  The default `accelerator_view` object that is associated with the `accelerator`.  
   
 ##  <a name="get_description"></a>  accelerator::get_description Method  
- Returns a short description of the [accelerator](accelerator-class.md) device.  
+ Returns a short description of the `accelerator` device.  
   
 ```  
 std::wstring get_description() const;
@@ -303,7 +303,7 @@ std::wstring get_device_path() const;
  The system-wide unique device instance path.  
   
 ##  <a name="get_has_display"></a>  accelerator::get_has_display Method  
- Returns a Boolean value that indicates whether the [accelerator](accelerator-class.md) can output to a display.  
+ Returns a Boolean value that indicates whether the `accelerator` can output to a display.  
   
 ```  
 bool get_has_display() const;
@@ -315,7 +315,7 @@ bool get_has_display() const;
  `true` if the `accelerator` can output to a display; otherwise, `false`.  
   
 ##  <a name="get_is_debug"></a>  accelerator::get_is_debug Method  
- Determines whether the [accelerator](accelerator-class.md) has the DEBUG layer enabled for extensive error reporting.  
+ Determines whether the `accelerator` has the DEBUG layer enabled for extensive error reporting.  
   
 ```  
 bool get_is_debug() const;
@@ -327,7 +327,7 @@ bool get_is_debug() const;
  `true` if the `accelerator` has the DEBUG layer enabled for extensive error reporting. Otherwise, `false`.  
   
 ##  <a name="get_is_emulated"></a>  accelerator::get_is_emulated Method  
- Determines whether the [accelerator](accelerator-class.md) is emulated.  
+ Determines whether the `accelerator` is emulated.  
   
 ```  
 bool get_is_emulated() const;
@@ -375,7 +375,7 @@ bool get_supports_limited_double_precision() const;
  `true` if the accelerator has limited support for double precision math; otherwise, `false`.  
   
 ##  <a name="get_version"></a>  accelerator::get_version Method  
- Returns the version of the [accelerator](accelerator-class.md).  
+ Returns the version of the `accelerator`.  
   
 ```  
 unsigned int get_version() const;
@@ -387,21 +387,21 @@ unsigned int get_version() const;
  The version of the `accelerator`.  
   
 ##  <a name="has_display"></a>  accelerator::has_display Data Member  
- Gets a Boolean value that indicates whether the [accelerator](accelerator-class.md) can output to a display.  
+ Gets a Boolean value that indicates whether the `accelerator` can output to a display.  
   
 ```  
 __declspec(property(get= get_has_display)) bool has_display;  
 ```  
   
 ##  <a name="is_debug"></a>  accelerator::is_debug Data Member  
- Gets a Boolean value that indicates whether the [accelerator](accelerator-class.md) has the DEBUG layer enabled for extensive error reporting.  
+ Gets a Boolean value that indicates whether the `accelerator` has the DEBUG layer enabled for extensive error reporting.  
   
 ```  
 __declspec(property(get= get_is_debug)) bool is_debug;  
 ```  
   
 ##  <a name="is_emulated"></a>  accelerator::is_emulated Data Member  
- Gets a Boolean value that indicates whether the [accelerator](accelerator-class.md) is emulated.  
+ Gets a Boolean value that indicates whether the `accelerator` is emulated.  
   
 ```  
 __declspec(property(get= get_is_emulated)) bool is_emulated;  
@@ -424,7 +424,7 @@ bool operator!= (const accelerator& _Other) const;
  `false` if the two `accelerator` objects are the same; otherwise, `true`.  
   
 ##  <a name="operator_eq"></a>  accelerator::operator= Operator  
- Copies the contents of the specified [accelerator](accelerator-class.md) object to this one.  
+ Copies the contents of the specified `accelerator` object to this one.  
   
 ```  
 accelerator& operator= (const accelerator& _Other);
@@ -438,7 +438,7 @@ accelerator& operator= (const accelerator& _Other);
  A reference to this `accelerator` object.  
   
 ##  <a name="operator_eq_eq"></a>  accelerator::operator== Operator  
- Compares this [accelerator](accelerator-class.md) object with another and returns `true` if they are the same; otherwise, returns `false`.  
+ Compares this `accelerator` object with another and returns `true` if they are the same; otherwise, returns `false`.  
   
 ```  
 bool operator== (const accelerator& _Other) const;
@@ -503,7 +503,7 @@ __declspec(property(get= get_supports_limited_double_precision)) bool supports_l
 ```  
   
 ##  <a name="version"></a>  accelerator::version Data Member  
- Gets the version of the [accelerator](accelerator-class.md).  
+ Gets the version of the `accelerator`.  
   
 ```  
 __declspec(property(get= get_version)) unsigned int version;  
@@ -519,7 +519,7 @@ __declspec(property(get= get_version)) unsigned int version;
 ### Return Value  
   
 ##  <a name="accelerator"></a>  accelerator_view::accelerator Data Member  
- Gets the [accelerator](accelerator-class.md) object for the [accelerator_view](accelerator-view-class.md) object.  
+ Gets the `accelerator` object for the [accelerator_view](accelerator-view-class.md) object.  
   
 ```  
 __declspec(property(get= get_accelerator)) Concurrency::accelerator accelerator;  
@@ -557,7 +557,7 @@ void flush();
  Returns `void`.  
   
 ##  <a name="get_accelerator"></a>  accelerator_view::get_accelerator Method  
- Returns the [accelerator](accelerator-class.md) object for the [accelerator_view](accelerator-view-class.md) object.  
+ Returns the `accelerator` object for the [accelerator_view](accelerator-view-class.md) object.  
   
 ```  
 accelerator get_accelerator() const;
