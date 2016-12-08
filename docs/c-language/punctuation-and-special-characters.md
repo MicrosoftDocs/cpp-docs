@@ -42,7 +42,7 @@ The punctuation and special characters in the C character set have various uses,
   
 ## Syntax  
  `punctuator`: one of  
- **[ ]   ( )   { }   \*   ,   :   =   ;   ... #**  
+ **( )   [ ]   { }   \*   ,   :   =   ;   ... #**  
   
  These characters have special meanings in C. Their uses are described throughout this book. The pound sign (**#**) can occur only in [preprocessing directives](../preprocessor/preprocessor-directives.md).  
   
