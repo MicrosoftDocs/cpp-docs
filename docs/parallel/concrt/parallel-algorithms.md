@@ -276,9 +276,8 @@ The Parallel Patterns Library (PPL) provides algorithms that concurrently perfor
  The following basic example shows how to use `parallel_sort` to sort a `vector` of `int` values. By default, `parallel_sort` uses [std::less](../../standard-library/less-struct.md) to compare values.  
   
  [!code-cpp[concrt-basic-parallel-sort#1](../../parallel/concrt/codesnippet/cpp/parallel-algorithms_10.cpp)]  
-
- This example shows how to provide a custom compare function. It uses the [std::complex::real](../../standard-library/complex-class.md#real) method to sort [std::complex\<double>](../../standard-library/complex-double.md) values in ascending order.  
-
+  
+ This example shows how to provide a custom compare function. It uses the [std::complex::real](../../standard-library/complex-class.md#complex__real) method to sort [std::complex\<double>](../../standard-library/complex-double.md) values in ascending order.  
   
  [!code-cpp[concrt-basic-parallel-sort#2](../../parallel/concrt/codesnippet/cpp/parallel-algorithms_11.cpp)]  
   

@@ -83,9 +83,7 @@ class CWinFormsView : public CView;
  Constructs a `CWinFormsView` object.  
   
 ```  
- 
-CWinFormsView(
-System::Type^ pManagedViewType);
+CWinFormsView(System::Type^ pManagedViewType);  
 ```  
   
 ### Parameters  
@@ -103,9 +101,7 @@ System::Type^ pManagedViewType);
  Retrieves a pointer to the Windows Forms control.  
   
 ```  
-System::Windows::Forms::Control^ GetControl() const;
-
- 
+System::Windows::Forms::Control^ GetControl() const;  
 ```  
   
 ### Return Value  
@@ -118,13 +114,11 @@ System::Windows::Forms::Control^ GetControl() const;
  Casts a type as a pointer to a Windows Forms control.  
   
 ```  
-operator System::Windows::Forms::Control^() const;
-
- 
+operator System::Windows::Forms::Control^() const;  
 ```  
   
 ### Remarks  
- This operator allows you to pass a `CWinFormsView` view to functions that accept a pointer to a Windows Forms control of type <xref:System.Windows.Forms.ControlqualifyHint%3DTrue%26autoUpgrade%3DTrue>.  
+ This operator allows you to pass a `CWinFormsView` view to functions that accept a pointer to a Windows Forms control of type <xref:System.Windows.Forms.Control>.  
   
 ### Example  
   See [CWinFormsView::GetControl](#getcontrol).  
