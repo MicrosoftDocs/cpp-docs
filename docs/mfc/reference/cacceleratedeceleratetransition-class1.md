@@ -75,7 +75,7 @@ class CAccelerateDecelerateTransition : public CBaseTransition;
   
  [CBaseTransition](../../mfc/reference/cbasetransition-class.md)  
   
- [CAccelerateDecelerateTransition](../../mfc/reference/cacceleratedeceleratetransition-class1.md)  
+ `CAccelerateDecelerateTransition`   
   
 ## Requirements  
  **Header:** afxanimationcontroller.h  

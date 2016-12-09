@@ -98,7 +98,7 @@ class CD2DBitmapBrush : public CD2DBrush;
   
  [CD2DBrush](../../mfc/reference/cd2dbrush-class.md)  
   
- [CD2DBitmapBrush](../../mfc/reference/cd2dbitmapbrush-class.md)  
+ `CD2DBitmapBrush`  
   
 ## Requirements  
  **Header:** afxrendertarget.h  

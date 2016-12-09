@@ -128,7 +128,7 @@ class CMFCMenuBar : public CMFCToolbar
   
  [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md)  
   
- [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md)  
+ `CMFCMenuBar`  
   
 ## Requirements  
  **Header:** afxmenubar.h  
@@ -241,7 +241,7 @@ virtual BOOL CanBeRestored() const;
 ### Remarks  
   
 ##  <a name="create"></a>  CMFCMenuBar::Create  
- Creates a menu control and attaches it to a [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) object.  
+ Creates a menu control and attaches it to a `CMFCMenuBar` object.  
   
 ```  
 virtual BOOL Create(
@@ -269,7 +269,7 @@ virtual BOOL Create(
  For more information about toolbar styles, see [CBasePane::SetPaneStyle](../../mfc/reference/cbasepane-class.md#setpanestyle).  
   
 ##  <a name="createex"></a>  CMFCMenuBar::CreateEx  
- Creates a [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) object with specified extended styles.  
+ Creates a `CMFCMenuBar` object with specified extended styles.  
   
 ```  
 virtual BOOL CreateEx(
@@ -314,7 +314,7 @@ virtual BOOL CreateEx(
 [!code-cpp[NVC_MFC_IEDemo#2](../../mfc/reference/codesnippet/cpp/cmfcmenubar-class_3.cpp)]  
   
 ##  <a name="createfrommenu"></a>  CMFCMenuBar::CreateFromMenu  
- Initializes a [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) object. This method models the `CMFCMenuBar` object after a `HMENU` parameter.  
+ Initializes a `CMFCMenuBar` object. This method models the `CMFCMenuBar` object after a `HMENU` parameter.  
   
 ```  
 virtual void CreateFromMenu(
@@ -429,7 +429,7 @@ UINT GetDefaultMenuResId() const;
  A menu resource identifier.  
   
 ### Remarks  
- The framework loads the default menu for the [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) object from the resource file.  
+ The framework loads the default menu for the `CMFCMenuBar` object from the resource file.  
   
 ##  <a name="getfloatpopupdirection"></a>  CMFCMenuBar::GetFloatPopupDirection  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -470,7 +470,7 @@ CMFCToolBarComboBoxButton* GetHelpCombobox();
  The **Help** combo box is located on the right side of the menu bar. Call the method [CMFCMenuBar::EnableHelpCombobox](#enablehelpcombobox) to enable this combo box.  
   
 ##  <a name="gethmenu"></a>  CMFCMenuBar::GetHMenu  
- Retrieves the handle to the menu attached to the [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) object.  
+ Retrieves the handle to the menu attached to the `CMFCMenuBar` object.  
   
 ```  
 HMENU GetHMenu() const;
@@ -630,7 +630,7 @@ static BOOL IsRecentlyUsedMenus();
 ```  
   
 ### Return Value  
- Nonzero if the [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) object shows recently used menu commands; otherwise 0.  
+ Nonzero if the `CMFCMenuBar` object shows recently used menu commands; otherwise 0.  
   
 ### Remarks  
  Use the function [CMFCMenuBar::SetRecentlyUsedMenus](#setrecentlyusedmenus) to control whether the menu bar shows recently used menu commands.  
@@ -643,7 +643,7 @@ static BOOL IsShowAllCommands();
 ```  
   
 ### Return Value  
- Nonzero if the [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) displays all commands; otherwise 0.  
+ Nonzero if the `CMFCMenuBar` displays all commands; otherwise 0.  
   
 ### Remarks  
  A `CMFCMenuBar` object can be configured to either show all commands or show only a subset of commands. For more information about this feature, see [CMFCMenuBar Class](../../mfc/reference/cmfcmenubar-class.md).  
@@ -651,7 +651,7 @@ static BOOL IsShowAllCommands();
  `IsShowAllCommands` will tell you how this feature is configured for the `CMFCMenuBar` object. To control which menu commands are shown, use the methods [CMFCMenuBar::SetShowAllCommands](#setshowallcommands) and [CMFCMenuBar::SetRecentlyUsedMenus](#setrecentlyusedmenus).  
   
 ##  <a name="isshowallcommandsdelay"></a>  CMFCMenuBar::IsShowAllCommandsDelay  
- Indicates whether the [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) object displays all the commands after a short delay.  
+ Indicates whether the `CMFCMenuBar` object displays all the commands after a short delay.  
   
 ```  
 static BOOL IsShowAllCommandsDelay();
@@ -718,7 +718,7 @@ virtual void OnDefaultMenuLoaded(HMENU hMenu);
   
 ### Parameters  
  [in] `hMenu`  
- The handle for the menu attached to the [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) object.  
+ The handle for the menu attached to the `CMFCMenuBar` object.  
   
 ### Remarks  
  The default implementation of this function does nothing. Override this function to execute custom code after the framework loads a menu resource from the resource file.  
@@ -803,7 +803,7 @@ virtual BOOL RestoreOriginalstate();
  Override this method if you want to do any processing when the user selects the **Reset** option.  
   
 ##  <a name="savestate"></a>  CMFCMenuBar::SaveState  
- Saves the state of the [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) object to the Windows registry.  
+ Saves the state of the `CMFCMenuBar` object to the Windows registry.  
   
 ```  
 virtual BOOL SaveState (
@@ -831,7 +831,7 @@ virtual BOOL SaveState (
  The saved information includes the menu items, the dock state, and the position of the menu bar.  
   
 ##  <a name="setdefaultmenuresid"></a>  CMFCMenuBar::SetDefaultMenuResId  
- Sets the default menu for a [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) object based on the resource ID.  
+ Sets the default menu for a `CMFCMenuBar` object based on the resource ID.  
   
 ```  
 void SetDefaultMenuResId(UINT uiResId);
@@ -915,7 +915,7 @@ static BOOL SetMenuFont(
  `TRUE` if the method was successful; otherwise `FALSE`.  
   
 ### Remarks  
- Two fonts are used for all [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) objects. These separate fonts are used for horizontal and vertical menu bars.  
+ Two fonts are used for all `CMFCMenuBar` objects. These separate fonts are used for horizontal and vertical menu bars.  
   
  The font settings are global variables and affect all `CMFCMenuBar` objects.  
   

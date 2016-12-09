@@ -197,7 +197,7 @@ class CMFCTasksPane : public CDockablePane
   
  [CBasePane](../../mfc/reference/cbasepane-class.md) [CPane](../../mfc/reference/cpane-class.md) [CDockablePane](../../mfc/reference/cdockablepane-class.md)  
   
- [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md)  
+ `CMFCTasksPane`  
   
 ## Requirements  
  **Header:** afxTasksPane.h  
@@ -232,7 +232,7 @@ int AddGroup(
  `TRUE` to create the group at the bottom of the task pane control; otherwise, `FALSE`.  
   
  [in] `bSpecial`  
- `TRUE` to mark this group as a *special* group; otherwise, `FALSE`. For more information about special groups, see the Remarks section of [CMFCTasksPane Class](../../mfc/reference/cmfctaskspane-class.md).  
+ `TRUE` to mark this group as a *special* group; otherwise, `FALSE`. For more information about special groups, see the Remarks section of `CMFCTasksPane`.  
   
  [in] `hIcon`  
  Specifies the icon to display in the group caption.  
@@ -388,7 +388,7 @@ int AddWindow(
  Call this method to add a control to a task pane. For example, you can add an edit control that functions like a search bar.  
   
 ##  <a name="cmfctaskspane"></a>  CMFCTasksPane::CMFCTasksPane  
- Constructs a [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) object.  
+ Constructs a `CMFCTasksPane` object.  
   
 ```  
 CMFCTasksPane();

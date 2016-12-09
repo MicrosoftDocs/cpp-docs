@@ -78,7 +78,7 @@ class CD2DPathGeometry : public CD2DGeometry;
   
  [CD2DGeometry](../../mfc/reference/cd2dgeometry-class.md)  
   
- [CD2DPathGeometry](../../mfc/reference/cd2dpathgeometry-class.md)  
+ `CD2DPathGeometry`  
   
 ## Requirements  
  **Header:** afxrendertarget.h  

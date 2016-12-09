@@ -80,20 +80,20 @@ class CMFCAcceleratorKeyAssignCtrl : public CEdit
   
  [CEdit](../../mfc/reference/cedit-class.md)  
   
- [CMFCAcceleratorKeyAssignCtrl](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md)  
+ `CMFCAcceleratorKeyAssignCtrl`   
   
 ## Requirements  
  **Header:** afxacceleratorkeyassignctrl.h  
   
 ##  <a name="cmfcacceleratorkeyassignctrl"></a>  CMFCAcceleratorKeyAssignCtrl::CMFCAcceleratorKeyAssignCtrl  
- Constructs a [CMFCAcceleratorKeyAssignCtrl](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md) object.  
+ Constructs a `CMFCAcceleratorKeyAssignCtrl`  object.  
   
 ```  
 CMFCAcceleratorKeyAssignCtrl();
 ```  
   
 ##  <a name="getaccel"></a>  CMFCAcceleratorKeyAssignCtrl::GetAccel  
- Retrieves the `ACCEL` structure for a shortcut key pressed in the [CMFCAcceleratorKeyAssignCtrl](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md) object.  
+ Retrieves the `ACCEL` structure for a shortcut key pressed in the `CMFCAcceleratorKeyAssignCtrl`  object.  
   
 ```  
 ACCEL const* GetAccel() const;
@@ -121,7 +121,7 @@ BOOL IsFocused() const;
 ### Remarks  
   
 ##  <a name="iskeydefined"></a>  CMFCAcceleratorKeyAssignCtrl::IsKeyDefined  
- Determines whether a shortcut key has been defined in the [CMFCAcceleratorKeyAssignCtrl](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md) object.  
+ Determines whether a shortcut key has been defined in the `CMFCAcceleratorKeyAssignCtrl`  object.  
   
 ```  
 BOOL IsKeyDefined() const;

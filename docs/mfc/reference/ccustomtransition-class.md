@@ -78,7 +78,7 @@ class CCustomTransition : public CBaseTransition;
   
  [CBaseTransition](../../mfc/reference/cbasetransition-class.md)  
   
- [CCustomTransition](../../mfc/reference/ccustomtransition-class.md)  
+ `CCustomTransition`  
   
 ## Requirements  
  **Header:** afxanimationcontroller.h  

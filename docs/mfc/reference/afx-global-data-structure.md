@@ -119,7 +119,7 @@ struct AFX_GLOBAL_DATA
  Most of the data in the `AFX_GLOBAL_DATA` structure is initialized when your application starts.  
   
 ### Inheritance Hierarchy  
- [AFX_GLOBAL_DATA](../../mfc/reference/afx-global-data-structure.md)  
+ `AFX_GLOBAL_DATA`   
   
 ### Requirements  
  **Header:** afxglobals.h  
@@ -252,8 +252,7 @@ BOOL DrawTextOnGlass(
  A theme defines the visual style of an application. A theme is not used to draw the text if the `hTheme` parameter is `NULL`, or if the [DrawThemeTextEx](http://msdn.microsoft.com/library/windows/desktop/bb773317) method is not supported, or if [Desktop Window Manager](http://msdn.microsoft.com/library/windows/desktop/aa969540) (DWM) composition is disabled.  
   
  
-## See Also  
- [AFX_GLOBAL_DATA Structure](../../mfc/reference/afx-global-data-structure.md)   
+## See Also   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449)   
  [Parts and States](http://msdn.microsoft.com/library/windows/desktop/bb773210)   

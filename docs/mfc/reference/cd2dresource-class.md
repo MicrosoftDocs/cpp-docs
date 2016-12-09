@@ -78,7 +78,7 @@ class CD2DResource : public CObject;
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
   
- [CD2DResource](../../mfc/reference/cd2dresource-class.md)  
+ `CD2DResource`  
   
 ## Requirements  
  **Header:** afxrendertarget.h  

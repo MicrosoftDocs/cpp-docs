@@ -109,7 +109,7 @@ class CMFCToolBarsCustomizeDialog : public CPropertySheet
   
  [CPropertySheet](../../mfc/reference/cpropertysheet-class.md)  
   
- [CMFCToolBarsCustomizeDialog](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)  
+ `CMFCToolBarsCustomizeDialog`   
   
 ## Requirements  
  **Header:** afxToolBarsCustomizeDialog.h  
@@ -253,7 +253,7 @@ virtual BOOL CheckToolsValidity(const CObList& lstTools);
 ### Remarks  
  The framework calls this method to verify the validity of objects that represent user-defined tools returned by [CMFCToolBarsCustomizeDialog::CheckToolsValidity](#checktoolsvalidity).  
   
- Override the `CheckToolsValidity` method in a class derived from [CMFCToolBarsCustomizeDialog](../../mfc/reference/cmfctoolbarscustomizedialog-class.md) if you want to validate the user tools before the user closes the dialog box. If this method returns `FALSE` when the user clicks either the **Close** button in the upper-right corner of the dialog box or the button labeled **Close** in the lower-right corner of the dialog box, the dialog box displays the **Tools** tab instead of closing. If this method returns `FALSE` when the user clicks a tab to navigate away from the **Tools** tab, the navigation does not occur. You should display an appropriate message box to inform the user of the problem that caused validation to fail.  
+ Override the `CheckToolsValidity` method in a class derived from `CMFCToolBarsCustomizeDialog`  if you want to validate the user tools before the user closes the dialog box. If this method returns `FALSE` when the user clicks either the **Close** button in the upper-right corner of the dialog box or the button labeled **Close** in the lower-right corner of the dialog box, the dialog box displays the **Tools** tab instead of closing. If this method returns `FALSE` when the user clicks a tab to navigate away from the **Tools** tab, the navigation does not occur. You should display an appropriate message box to inform the user of the problem that caused validation to fail.  
   
 ##  <a name="cmfctoolbarscustomizedialog"></a>  CMFCToolBarsCustomizeDialog::CMFCToolBarsCustomizeDialog  
  Constructs a `CMFCToolBarsCustomizeDialog` object.  
@@ -501,7 +501,7 @@ virtual void OnAfterChangeTool(CUserTool* pSelTool);
  A pointer to the user tool object that has been changed.  
   
 ### Remarks  
- This method is called by the framework when a user changes the properties of a user-defined tool. The default implementation does nothing. Override this method in a class derived from [CMFCToolBarsCustomizeDialog](../../mfc/reference/cmfctoolbarscustomizedialog-class.md) to perform processing after a change to a user tool occurs.  
+ This method is called by the framework when a user changes the properties of a user-defined tool. The default implementation does nothing. Override this method in a class derived from `CMFCToolBarsCustomizeDialog`  to perform processing after a change to a user tool occurs.  
   
 ##  <a name="onassignkey"></a>  CMFCToolBarsCustomizeDialog::OnAssignKey  
  Validates keyboard shortcuts as a user defines them.  
@@ -532,7 +532,7 @@ virtual void OnBeforeChangeTool(CUserTool* pSelTool);
  A pointer to the user tool object that is about to be replaced.  
   
 ### Remarks  
- This method is called by the framework when the properties of a user-defined tool is about to change. The default implementation does nothing. Override the `OnBeforeChangeTool` method in a class derived from [CMFCToolBarsCustomizeDialog](../../mfc/reference/cmfctoolbarscustomizedialog-class.md) if you want to perform processing before a change to a user tool occurs, such as releasing resources that `pSelTool` uses.  
+ This method is called by the framework when the properties of a user-defined tool is about to change. The default implementation does nothing. Override the `OnBeforeChangeTool` method in a class derived from `CMFCToolBarsCustomizeDialog`  if you want to perform processing before a change to a user tool occurs, such as releasing resources that `pSelTool` uses.  
   
 ##  <a name="onedittoolbarmenuimage"></a>  CMFCToolBarsCustomizeDialog::OnEditToolbarMenuImage  
  Starts an image editor so that a user can customize a toolbar button or menu item icon.  

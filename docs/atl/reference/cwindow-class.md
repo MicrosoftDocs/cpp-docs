@@ -1563,7 +1563,8 @@ BOOL OpenClipboard() throw();
 ##  <a name="operator_hwnd"></a>  CWindow::operator HWND  
  Converts a `CWindow` object to an `HWND`.  
   
-```operator HWND() const throw();
+```  
+operator HWND() const throw();
 ```  
   
 ##  <a name="operator_eq"></a>  CWindow::operator =  

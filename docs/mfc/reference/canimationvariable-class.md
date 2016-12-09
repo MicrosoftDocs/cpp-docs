@@ -95,7 +95,7 @@ class CAnimationVariable;
  The CAnimationVariable class encapsulates IUIAnimationVariable COM object. It also holds a list of transitions to be applied to the animation variable in a storyboard. CAnimationVariable objects are embedded to animation objects, which can represent in an application an animated value, point, size, color and rectangle.  
   
 ## Inheritance Hierarchy  
- [CAnimationVariable](../../mfc/reference/canimationvariable-class.md)  
+ `CAnimationVariable`  
   
 ## Requirements  
  **Header:** afxanimationcontroller.h  

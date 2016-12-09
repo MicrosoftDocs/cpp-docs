@@ -85,7 +85,7 @@ class CBitmapButton : public CButton
   
 2.  Construct the [CBitmapButton](#cbitmapbutton) object.  
   
-3.  Call the [Create](../../mfc/reference/cbutton-class.md#create) function to create the Windows button control and attach it to the `CBitmapButton` object.  
+3.  Call the [Create](#create) function to create the Windows button control and attach it to the `CBitmapButton` object.  
   
 4.  Call the [LoadBitmaps](#loadbitmaps) member function to load the bitmap resources after the bitmap button is constructed.  
   
@@ -143,7 +143,7 @@ BOOL AutoLoad(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- Use the `AutoLoad` function to initialize an owner-draw button in a dialog box as a bitmap button. Instructions for using this function are in the remarks for the [CBitmapButton](../../mfc/reference/cbitmapbutton-class.md) class.  
+ Use the `AutoLoad` function to initialize an owner-draw button in a dialog box as a bitmap button. Instructions for using this function are in the remarks for the `CBitmapButton` class.  
   
 ### Example  
  [!code-cpp[NVC_MFCControlLadenDialog#75](../../mfc/codesnippet/cpp/cbitmapbutton-class_1.cpp)]  

@@ -91,7 +91,7 @@ class CMFCShellListCtrl : public CMFCListCtrl
   
  [CMFCListCtrl](../../mfc/reference/cmfclistctrl-class.md)  
   
- [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md)  
+ `CMFCShellListCtrl`  
   
 ## Requirements  
  **Header:** afxshelllistCtrl.h  
@@ -116,7 +116,7 @@ virtual HRESULT DisplayFolder(LPAFX_SHELLITEMINFO lpItemInfo);
  `S_OK` if successful; `E_FAIL` otherwise.  
   
 ##  <a name="displayparentfolder"></a>  CMFCShellListCtrl::DisplayParentFolder  
- Updates the [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object to display the parent folder of the currently displayed folder.  
+ Updates the `CMFCShellListCtrl` object to display the parent folder of the currently displayed folder.  
   
 ```  
 virtual HRESULT DisplayParentFolder();
@@ -137,7 +137,7 @@ void EnableShellContextMenu(BOOL bEnable = TRUE);
  A Boolean that specifies whether the framework enables the shortcut menu.  
   
 ##  <a name="getcurrentfolder"></a>  CMFCShellListCtrl::GetCurrentFolder  
- Retrieves the path of the currently selected folder in the [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object.  
+ Retrieves the path of the currently selected folder in the `CMFCShellListCtrl` object.  
   
 ```  
 BOOL GetCurrentFolder(CString& strPath) const;
@@ -156,7 +156,7 @@ BOOL GetCurrentFolder(CString& strPath) const;
  This method fails if there is no folder selected in the `CMFCShellListCtrl`.  
   
 ##  <a name="getcurrentfoldername"></a>  CMFCShellListCtrl::GetCurrentFolderName  
- Retrieves the name of the currently selected folder in the [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object.  
+ Retrieves the name of the currently selected folder in the `CMFCShellListCtrl` object.  
   
 ```  
 BOOL GetCurrentFolderName(CString& strName) const;
@@ -187,7 +187,7 @@ LPITEMIDLIST GetCurrentItemIdList() const;
  The PIDL of the current item.  
   
 ##  <a name="getcurrentshellfolder"></a>  CMFCShellListCtrl::GetCurrentShellFolder  
- Gets a pointer to the currently selected item in the [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object.  
+ Gets a pointer to the currently selected item in the `CMFCShellListCtrl` object.  
   
 ```  
 const IShellFolder* GetCurrentShellFolder() const;
@@ -226,7 +226,7 @@ BOOL GetItemPath(
  The index supplied by `iItem` is based on the items currently displayed by the [CMFCShellListCtrl Class](../../mfc/reference/cmfcshelllistctrl-class.md) object.  
   
 ##  <a name="getitemtypes"></a>  CMFCShellListCtrl::GetItemTypes  
- Returns the type of items displayed by the [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object.  
+ Returns the type of items displayed by the `CMFCShellListCtrl` object.  
   
 ```  
 SHCONTF GetItemTypes() const;
@@ -241,7 +241,7 @@ SHCONTF GetItemTypes() const;
  To set the type of items listed in a `CMFCShellListCtrl`, call [CMFCShellListCtrl::SetItemTypes](#setitemtypes).  
   
 ##  <a name="isdesktop"></a>  CMFCShellListCtrl::IsDesktop  
- Determines if the folder that is displayed in the [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object is the desktop folder.  
+ Determines if the folder that is displayed in the `CMFCShellListCtrl` object is the desktop folder.  
   
 ```  
 BOOL IsDesktop() const;
@@ -357,7 +357,7 @@ virtual CString OnGetItemText(
  A `CString` that contains the text associated with the item.  
   
 ### Remarks  
- Each item in the [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object may have text in one or more columns. When the framework calls this method, it specifies the column that it is interested in. If you call this function manually, you must also specify the column that you are interested in.  
+ Each item in the `CMFCShellListCtrl` object may have text in one or more columns. When the framework calls this method, it specifies the column that it is interested in. If you call this function manually, you must also specify the column that you are interested in.  
   
  By default, this method relies on the `pItem` parameter to determine which item to process. The value of `iItem` is not used in the default implementation.  
   
@@ -369,10 +369,10 @@ virtual void OnSetColumns();
 ```  
   
 ### Remarks  
- By default, the framework creates four columns in a [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object. The names of these columns are `Name`, `Size`, `Type`, and `Modified`. You can override this method to customize the number of columns and their names.  
+ By default, the framework creates four columns in a `CMFCShellListCtrl` object. The names of these columns are `Name`, `Size`, `Type`, and `Modified`. You can override this method to customize the number of columns and their names.  
   
 ##  <a name="refresh"></a>  CMFCShellListCtrl::Refresh  
- Refreshes and repaints the [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object.  
+ Refreshes and repaints the `CMFCShellListCtrl` object.  
   
 ```  
 virtual HRESULT Refresh();
@@ -385,7 +385,7 @@ virtual HRESULT Refresh();
  Call this method to refresh the list of items displayed by the `CMFCShellListCtrl` object.  
   
 ##  <a name="setitemtypes"></a>  CMFCShellListCtrl::SetItemTypes  
- Sets the type of items that are listed in the [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object.  
+ Sets the type of items that are listed in the `CMFCShellListCtrl` object.  
   
 ```  
 void SetItemTypes(SHCONTF nTypes);

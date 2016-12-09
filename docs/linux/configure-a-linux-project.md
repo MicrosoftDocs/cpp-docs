@@ -42,7 +42,7 @@ To change settings pertaining to the remote Linux computer, select the **Remote 
 
 ![Remote settings](media/settings_remote.png)
 
-* To change the target Linux computer, use the **Target machine** entry.  This will allow you to select one of the connections created previously.  To create a new entry, please see the [Connecting to Your Remote Linux Computer](connect.md) section.
+* To change the target Linux computer, use the **Target machine** entry.  This will allow you to select one of the connections created previously.  To create a new entry, please see the [Connecting to Your Remote Linux Computer](connect-to-your-remote-linux-computer.md) section.
 
 * The **Remote Root Directory** determines the root location of where the project is built on the remote Linux device.  This will default to **~/projects** unless changed.
 

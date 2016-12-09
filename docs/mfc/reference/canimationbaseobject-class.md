@@ -95,7 +95,7 @@ class CAnimationBaseObject : public CObject;
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
   
- [CAnimationBaseObject](../../mfc/reference/canimationbaseobject-class.md)  
+ `CAnimationBaseObject`  
   
 ## Requirements  
  **Header:** afxanimationcontroller.h  

@@ -89,7 +89,7 @@ class CD2DLinearGradientBrush : public CD2DGradientBrush;
   
  [CD2DGradientBrush](../../mfc/reference/cd2dgradientbrush-class.md)  
   
- [CD2DLinearGradientBrush](../../mfc/reference/cd2dlineargradientbrush-class.md)  
+ `CD2DLinearGradientBrush`  
   
 ## Requirements  
  **Header:** afxrendertarget.h  

@@ -85,7 +85,7 @@ class CMFCAutoHideButton : public CObject
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
   
- [CMFCAutoHideButton](../../mfc/reference/cmfcautohidebutton-class.md)  
+ `CMFCAutoHideButton`  
   
 ## Requirements  
  **Header:** afxautohidebutton.h  
@@ -123,7 +123,7 @@ virtual BOOL Create(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- When you create a [CMFCAutoHideButton](../../mfc/reference/cmfcautohidebutton-class.md) object, you must associate the auto-hide button with a specific `CDockablePane`. The user can use the auto-hide button to hide and show the associated `CDockablePane`.  
+ When you create a `CMFCAutoHideButton` object, you must associate the auto-hide button with a specific `CDockablePane`. The user can use the auto-hide button to hide and show the associated `CDockablePane`.  
   
  The `dwAlignment` parameter indicates where the auto-hide button resides in the application. The parameter can be any one of the following values:  
   
@@ -252,7 +252,7 @@ BOOL IsHorizontal() const;
  Nonzero if the button is horizontal; 0 otherwise.  
   
 ### Remarks  
- The framework sets the orientation of a [CMFCAutoHideButton](../../mfc/reference/cmfcautohidebutton-class.md) object when you create it.  You can control the orientation by using the `dwAlignment` parameter in the [CMFCAutoHideButton::Create](#create) method.  
+ The framework sets the orientation of a `CMFCAutoHideButton` object when you create it.  You can control the orientation by using the `dwAlignment` parameter in the [CMFCAutoHideButton::Create](#create) method.  
   
 ##  <a name="istop"></a>  CMFCAutoHideButton::IsTop  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -291,7 +291,7 @@ virtual void OnDraw(CDC* pDC);
  A pointer to a device context.  
   
 ### Remarks  
- If you want to customize the appearance of auto-hide buttons in your application, create a new class derived from the [CMFCAutoHideButton Class](../../mfc/reference/cmfcautohidebutton-class.md). In your derived class, override this method.  
+ If you want to customize the appearance of auto-hide buttons in your application, create a new class derived from `CMFCAutoHideButton`. In your derived class, override this method.  
   
 ##  <a name="ondrawborder"></a>  CMFCAutoHideButton::OnDrawBorder  
  The framework calls this method when it draws the border of an auto-hide button.  
@@ -314,7 +314,7 @@ virtual void OnDrawBorder(
  The border thickness for each side of the auto-hide button.  
   
 ### Remarks  
- If you want to customize the border of each auto-hide button in your application, create a new class derived from the [CMFCAutoHideButton Class](../../mfc/reference/cmfcautohidebutton-class.md). In your derived class, override this method.  
+ If you want to customize the border of each auto-hide button in your application, create a new class derived from the `CMFCAutoHideButton`. In your derived class, override this method.  
   
 ##  <a name="onfillbackground"></a>  CMFCAutoHideButton::OnFillBackground  
  The framework calls this method when it fills the background of an auto-hide button.  
@@ -333,7 +333,7 @@ virtual void OnFillBackground(
  The bounding rectangle of the auto-hide button.  
   
 ### Remarks  
- If you want to customize the background for auto-hide buttons in your application, create a new class derived from the [CMFCAutoHideButton Class](../../mfc/reference/cmfcautohidebutton-class.md). In your derived class, override this method.  
+ If you want to customize the background for auto-hide buttons in your application, create a new class derived from the `CMFCAutoHideButton`. In your derived class, override this method.  
   
 ##  <a name="showattachedwindow"></a>  CMFCAutoHideButton::ShowAttachedWindow  
  Shows or hides the associated [CDockablePane Class](../../mfc/reference/cdockablepane-class.md).  

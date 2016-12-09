@@ -66,13 +66,13 @@ class CMouseManager : public CObject
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
   
- [CMouseManager](../../mfc/reference/cmousemanager-class.md)  
+ `CMouseManager`  
   
 ## Requirements  
  **Header:** afxmousemanager.h  
   
 ##  <a name="addview"></a>  CMouseManager::AddView  
- Registers a [CView](../../mfc/reference/cview-class.md) object with the [CMouseManager Class](../../mfc/reference/cmousemanager-class.md) to support custom mouse behavior.  
+ Registers a [CView](../../mfc/reference/cview-class.md) object with the `CMouseManager` class to support custom mouse behavior.  
   
 ```  
 BOOL AddView(
@@ -189,7 +189,7 @@ void GetViewNames(CStringList& listOfNames) const;
  This method fills the parameter `listOfNames` with the names of all the views registered by using [CMouseManager::AddView](#addview).  
   
 ##  <a name="loadstate"></a>  CMouseManager::LoadState  
- Loads the state of the [CMouseManager Class](../../mfc/reference/cmousemanager-class.md) from the registry.  
+ Loads the state of the `CMouseManager` class from the registry.  
   
 ```  
 BOOL LoadState(LPCTSTR lpszProfileName = NULL);
@@ -208,7 +208,7 @@ BOOL LoadState(LPCTSTR lpszProfileName = NULL);
  In most cases, you do not have to call this function directly. It is called as a part of the workspace initialization process. For more information about the workspace initialization process, see [CWinAppEx::LoadState](../../mfc/reference/cwinappex-class.md#loadstate).  
   
 ##  <a name="savestate"></a>  CMouseManager::SaveState  
- Writes the state of the [CMouseManager Class](../../mfc/reference/cmousemanager-class.md) to the registry.  
+ Writes the state of the `CMouseManager` class to the registry.  
   
 ```  
 BOOL SaveState(LPCTSTR lpszProfileName = NULL);

@@ -85,7 +85,7 @@ class CD2DGeometrySink;
 |[CD2DGeometrySink::m_pSink](#m_psink)|A pointer to an ID2D1GeometrySink.|  
   
 ## Inheritance Hierarchy  
- [CD2DGeometrySink](../../mfc/reference/cd2dgeometrysink-class.md)  
+ `CD2DGeometrySink`  
   
 ## Requirements  
  **Header:** afxrendertarget.h  

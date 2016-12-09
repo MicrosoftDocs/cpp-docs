@@ -238,7 +238,7 @@ class CBasePane : public CWnd
  If you want to create a pane class that supports the extended docking features available in MFC, you must derive it from `CBasePane` or from [CPane Class](../../mfc/reference/cpane-class.md).  
   
 ## Customization Tips  
- The following customization tips pertain to the [CBasePane Class](../../mfc/reference/cbasepane-class.md) and any classes that inherit from it:  
+ The following customization tips pertain to the `CBasePane Class` and any classes that inherit from it:  
   
 -   When you create a pane, you can apply several new styles:  
   

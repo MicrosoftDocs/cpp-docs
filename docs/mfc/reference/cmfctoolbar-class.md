@@ -257,7 +257,7 @@ class CMFCToolBar : public CMFCBaseToolBar
   
  [CMFCBaseToolBar](../../mfc/reference/cmfcbasetoolbar-class.md)  
   
- [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md)  
+ `CMFCToolBar`  
   
 ##  <a name="addbasiccommand"></a>  CMFCToolBar::AddBasicCommand  
  Adds a menu command to the list of commands that are always displayed when a user opens a menu.  
@@ -343,7 +343,7 @@ virtual void AdjustLayout();
   
  The framework calls this method every time that the layout of the toolbar must be changed. For example, the layout must change when the user moves another control bar, resizes an application window, or customizes the toolbar.  
   
- Override this method to provide your own dynamic layout in classes that you derive from [CMFCToolar](../../mfc/reference/cmfctoolbar-class.md).  
+ Override this method to provide your own dynamic layout in classes that you derive from `CMFCToolbar`.  
   
 ##  <a name="adjustsize"></a>  CMFCToolBar::AdjustSize  
  Recalculates the size of the toolbar.  
@@ -374,7 +374,7 @@ virtual BOOL AllowChangeTextLabels() const;
   
  The default implementation returns `TRUE`.  
   
- Override this method in an object derived from [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md) and return `FALSE` when you do not want the user to decide whether text labels are displayed on toolbar buttons under the images.  
+ Override this method in an object derived from `CMFCToolBar` and return `FALSE` when you do not want the user to decide whether text labels are displayed on toolbar buttons under the images.  
   
 ##  <a name="allowshowonlist"></a>  CMFCToolBar::AllowShowOnList  
  Determines whether the toolbar is displayed in the list of toolbars on the **Toolbars** pane of the **Customize** dialog box.  
@@ -389,7 +389,7 @@ virtual BOOL AllowShowOnList() const;
  `TRUE` if the toolbar object can be displayed in the list box on the toolbar customization page; otherwise `FALSE`.  
   
 ### Remarks  
- This method is called by the framework to determine whether the list on the toolbar customization page should include a particular object derived from [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md).  
+ This method is called by the framework to determine whether the list on the toolbar customization page should include a particular object derived from `CMFCToolBar`.  
   
  The default implementation always returns `TRUE`. Override this method when you do not want a toolbar to appear in the toolbars list in the customization dialog box.  
   
@@ -486,7 +486,7 @@ virtual int CalcMaxButtonHeight();
 ### Remarks  
  This method calculates the maximum height among all toolbar buttons on the toolbar. The height may vary depending on factors such as the current toolbar docking state.  
   
- Override this method in a class derived from [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md) to provide your own height calculation.  
+ Override this method in a class derived from `CMFCToolBar` to provide your own height calculation.  
   
 ##  <a name="calcsize"></a>  CMFCToolBar::CalcSize  
  Called by the framework as part of the layout calculation process.  
@@ -522,7 +522,7 @@ virtual BOOL CanBeClosed() const;
 ### Remarks  
  The framework calls this method to determine whether the user can close a toolbar. If the method returns `TRUE`, the framework enables the SC_CLOSE command in the system menu of the toolbar and the user can close the toolbar by using a check box in the list of toolbars in the customization dialog box.  
   
- The default implementation returns `TRUE`. Override this method in a class derived from [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md) to make toolbar objects that cannot be closed by the user.  
+ The default implementation returns `TRUE`. Override this method in a class derived from `CMFCToolBar` to make toolbar objects that cannot be closed by the user.  
   
 ##  <a name="canberestored"></a>  CMFCToolBar::CanBeRestored  
  Determines whether the system can restore a toolbar to its original state after customization.  
@@ -617,7 +617,7 @@ int CommandToIndex(
  Zero-based index of the toolbar button if the method was successful; -1 if there is no button with the specified ID.  
   
 ### Remarks  
- A [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md) object maintains an internal list of the buttons on the toolbar. Call this function to retrieve the index of a button in the list given the command ID of the button.  
+ A `CMFCToolBar` object maintains an internal list of the buttons on the toolbar. Call this function to retrieve the index of a button in the list given the command ID of the button.  
   
  If `iIndex` is greater than 0, this method ignores any button on the toolbar that has an index less than `iIndex`.  
   
@@ -716,7 +716,7 @@ virtual void DoPaint(CDC* pDC);
 ### Remarks  
  This method is called by the framework when a part of the toolbar must be repainted.  
   
- Override this method to customize the appearance of an object derived from [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md).  
+ Override this method to customize the appearance of an object derived from `CMFCToolBar`.  
   
 ##  <a name="drawbutton"></a>  CMFCToolBar::DrawButton  
  Repaints a toolbar button.  
@@ -777,7 +777,7 @@ virtual void DrawSeparator(
 ### Remarks  
  [CMFCToolBar::DoPaint](#dopaint) calls this method for each [CMFCToolBar::DrawSeparator](#drawseparator) object that has the `TBBS_SEPARATOR` style, instead of calling [CMFCToolBar::DrawButton](#drawbutton) for those buttons.  
   
- Override this method in a class derived from [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md) to customize the appearance of separators on the toolbar. The default implementation calls [CMFCVisualManager::OnDrawSeparator](../../mfc/reference/cmfcvisualmanager-class.md#ondrawseparator) to draw a separator whose appearance is determined by the current visual manager.  
+ Override this method in a class derived from `CMFCToolBar` to customize the appearance of separators on the toolbar. The default implementation calls [CMFCVisualManager::OnDrawSeparator](../../mfc/reference/cmfcvisualmanager-class.md#ondrawseparator) to draw a separator whose appearance is determined by the current visual manager.  
   
 ##  <a name="enablecustomizebutton"></a>  CMFCToolBar::EnableCustomizeButton  
  Enables or disables the Customize button that appears on the toolbar.  
@@ -887,7 +887,7 @@ void EnableTextLabels(BOOL bEnable=TRUE);
  `TRUE` if text labels appear under toolbar button images; otherwise `FALSE`.  
   
 ### Remarks  
- If text labels are enabled, all buttons on the toolbar are enlarged to provide space for the labels to be displayed under the images. The customization dialog box has a **Show text label** check-box on the **Toolbars** page. When the user selects a toolbar and checks this option, the framework calls `EnableTextLabels` for the selected toolbar. You can disable the check-box for an object derived from [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md) by returning `FALSE` from [CMFCToolBar::AllowChangeTextLabels](#allowchangetextlabels) .  
+ If text labels are enabled, all buttons on the toolbar are enlarged to provide space for the labels to be displayed under the images. The customization dialog box has a **Show text label** check-box on the **Toolbars** page. When the user selects a toolbar and checks this option, the framework calls `EnableTextLabels` for the selected toolbar. You can disable the check-box for an object derived from `CMFCToolBar` by returning `FALSE` from [CMFCToolBar::AllowChangeTextLabels](#allowchangetextlabels) .  
   
 ##  <a name="fromhandlepermanent"></a>  CMFCToolBar::FromHandlePermanent  
  Retrieves a pointer to the `CMFCToolBar` object that contains the given window handle.  
@@ -926,7 +926,7 @@ static const CObList& GetAllToolbars();
 ```  
   
 ### Return Value  
- A const reference to a [CObList Class](../../mfc/reference/coblist-class.md) object that contains a collection of [CMFCToolbar](../../mfc/reference/cmfctoolbar-class.md) objects.  
+ A const reference to a [CObList Class](../../mfc/reference/coblist-class.md) object that contains a collection of `CMFCToolBar` objects.  
   
 ##  <a name="getbasiccommands"></a>  CMFCToolBar::GetBasicCommands  
  Returns a read-only list of the basic commands defined in the application.  
@@ -1257,7 +1257,7 @@ HWND GetHwndLastFocus() const;
  A handle to window that is not derived from [CMFCBaseToolBar Class](../../mfc/reference/cmfcbasetoolbar-class.md), which previously had the input focus; or `NULL` if there is no such window.  
   
 ### Remarks  
- When a [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md) control receives the input focus, it stores a handle to the window that lost the focus so that it can restore it later.  
+ When a `CMFCToolBar` control receives the input focus, it stores a handle to the window that lost the focus so that it can restore it later.  
   
 ##  <a name="getignoresettext"></a>  CMFCToolBar::GetIgnoreSetText  
  Specifies whether calls to set button labels are ignored.  
@@ -1816,7 +1816,7 @@ virtual BOOL IsButtonExtraSizeAvailable() const;
 ### Remarks  
  The toolbar object returns `TRUE` if it can display buttons that have extended borders. A toolbar button calls this method when it handles the [CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd) notification and will set its internal extra border size flag accordingly. This internal flag may be retrieved later by calling [CMFCToolBarButton::IsExtraSize](../../mfc/reference/cmfctoolbarbutton-class.md#isextrasize).  
   
- Override this method in a class derived from [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md) and return `TRUE` if your bar can display the toolbar buttons with the extra border size and return `FALSE` otherwise. The default implementation returns `TRUE`.  
+ Override this method in a class derived from `CMFCToolBar` and return `TRUE` if your bar can display the toolbar buttons with the extra border size and return `FALSE` otherwise. The default implementation returns `TRUE`.  
   
 ##  <a name="isbuttonhighlighted"></a>  CMFCToolBar::IsButtonHighlighted  
  Determines whether the specified button is highlighted.  
@@ -2333,7 +2333,7 @@ virtual void OnReset();
 ### Remarks  
  Override this method to handle notification about a toolbar reset.  
   
- The default implementation does nothing. Override `OnReset` in a class derived from [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md) when the toolbar has dummy buttons that must be replaced when the toolbar returns to its original state.  
+ The default implementation does nothing. Override `OnReset` in a class derived from `CMFCToolBar` when the toolbar has dummy buttons that must be replaced when the toolbar returns to its original state.  
   
 ##  <a name="onsetaccdata"></a>  CMFCToolBar::OnSetAccData  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
