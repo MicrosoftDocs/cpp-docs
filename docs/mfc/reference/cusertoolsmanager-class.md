@@ -95,7 +95,7 @@ class CUserToolsManager : public CObject
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
   
- [CUserToolsManager](../../mfc/reference/cusertoolsmanager-class.md)  
+ `CUserToolsManager`  
   
 ## Requirements  
  **Header:** afxusertoolsmanager.h  
@@ -322,7 +322,7 @@ BOOL LoadState(LPCTSTR lpszProfileName=NULL);
  Nonzero if the state was loaded successfully; otherwise 0.  
   
 ### Remarks  
- This method loads the state of the [CUserToolsManager](../../mfc/reference/cusertoolsmanager-class.md) object from the Windows registry.  
+ This method loads the state of the `CUserToolsManager` object from the Windows registry.  
   
  Usually, you do not call this method directly. [CWinAppEx::LoadState](../../mfc/reference/cwinappex-class.md#loadstate) calls it as part of workspace initialization process.  
   
@@ -392,7 +392,7 @@ BOOL SaveState(LPCTSTR lpszProfileName=NULL);
  Nonzero if the state was saved successfully; otherwise 0.  
   
 ### Remarks  
- The method stores the current state of the [CUserToolsManager](../../mfc/reference/cusertoolsmanager-class.md) object in the Windows registry.  
+ The method stores the current state of the `CUserToolsManager` object in the Windows registry.  
   
  Usually, you do not need to call this method directly, [CWinAppEx::SaveState](../../mfc/reference/cwinappex-class.md#savestate) calls it automatically as a part of the workspace serialization process of the application.  
   

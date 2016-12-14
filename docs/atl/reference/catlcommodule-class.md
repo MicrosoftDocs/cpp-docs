@@ -51,17 +51,17 @@ class CAtlComModule :  public _ATL_COM_MODULE
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlComModule::CAtlComModule](#catlcommodule__catlcommodule)|The constructor.|  
-|[CAtlComModule::~CAtlComModule](#catlcommodule___dtorcatlcommodule)|The destructor.|  
+|[CAtlComModule::CAtlComModule](#catlcommodule)|The constructor.|  
+|[CAtlComModule::~CAtlComModule](#dtor)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlComModule::RegisterServer](#catlcommodule__registerserver)|Call this method to update the system registry for each object in the object map.|  
-|[CAtlComModule::RegisterTypeLib](#catlcommodule__registertypelib)|Call this method to register a type library.|  
-|[CAtlComModule::UnregisterServer](#catlcommodule__unregisterserver)|Call this method to unregister each object in the object map.|  
-|[CAtlComModule::UnRegisterTypeLib](#catlcommodule__unregistertypelib)|Call this method to unregister a type library.|  
+|[CAtlComModule::RegisterServer](#registerserver)|Call this method to update the system registry for each object in the object map.|  
+|[CAtlComModule::RegisterTypeLib](#registertypelib)|Call this method to register a type library.|  
+|[CAtlComModule::UnregisterServer](#unregisterserver)|Call this method to unregister each object in the object map.|  
+|[CAtlComModule::UnRegisterTypeLib](#unregistertypelib)|Call this method to unregister a type library.|  
   
 ## Remarks  
  `CAtlComModule` implements a COM server module, allowing a client to access the module's components.  
@@ -76,7 +76,7 @@ class CAtlComModule :  public _ATL_COM_MODULE
 ## Requirements  
  **Header:** atlbase.h  
   
-##  <a name="catlcommodule__catlcommodule"></a>  CAtlComModule::CAtlComModule  
+##  <a name="catlcommodule"></a>  CAtlComModule::CAtlComModule  
  The constructor.  
   
 ```
@@ -86,7 +86,7 @@ CAtlComModule() throw();
 ### Remarks  
  Initializes the module.  
   
-##  <a name="catlcommodule___dtorcatlcommodule"></a>  CAtlComModule::~CAtlComModule  
+##  <a name="dtor"></a>  CAtlComModule::~CAtlComModule  
  The destructor.  
   
 ```
@@ -96,7 +96,7 @@ CAtlComModule() throw();
 ### Remarks  
  Frees all class factories.  
   
-##  <a name="catlcommodule__registerserver"></a>  CAtlComModule::RegisterServer  
+##  <a name="registerserver"></a>  CAtlComModule::RegisterServer  
  Call this method to update the system registry for each object in the object map.  
   
 ```
@@ -116,7 +116,7 @@ HRESULT RegisterServer(BOOL bRegTypeLib = FALSE,  const CLSID* pCLSID = NULL);
 ### Remarks  
  Calls the global function [AtlComModuleRegisterServer](http://msdn.microsoft.com/library/d11a0c91-0c56-4b1b-a5f5-1287970f798b).  
   
-##  <a name="catlcommodule__registertypelib"></a>  CAtlComModule::RegisterTypeLib  
+##  <a name="registertypelib"></a>  CAtlComModule::RegisterTypeLib  
  Call this method to register a type library.  
   
 ```
@@ -135,7 +135,7 @@ HRESULT RegisterTypeLib(LPCTSTR lpszIndex);
 ### Remarks  
  Adds information about a type library to the system registry. If the module instance contains multiple type libraries, use the first version of this method to specify which type library should be used.  
   
-##  <a name="catlcommodule__unregisterserver"></a>  CAtlComModule::UnregisterServer  
+##  <a name="unregisterserver"></a>  CAtlComModule::UnregisterServer  
  Call this method to unregister each object in the object map.  
   
 ```
@@ -155,7 +155,7 @@ HRESULT UnregisterServer(BOOL bRegTypeLib = FALSE,  const CLSID* pCLSID = NULL);
 ### Remarks  
  Calls the global function [AtlComModuleUnregisterServer](http://msdn.microsoft.com/library/c4ef3da4-def7-4aaf-b005-573a02e389d5).  
   
-##  <a name="catlcommodule__unregistertypelib"></a>  CAtlComModule::UnRegisterTypeLib  
+##  <a name="unregistertypelib"></a>  CAtlComModule::UnRegisterTypeLib  
  Call this method to unregister a type library.  
   
 ```

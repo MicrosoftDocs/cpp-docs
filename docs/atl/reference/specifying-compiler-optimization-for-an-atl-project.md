@@ -61,7 +61,7 @@ class ATL_NO_VTABLE CProjName
   
  You must use ATL_NO_VTABLE, and consequently `declspec(novtable)`, with only base classes that are not directly creatable. You must not use `declspec(novtable)` with the most-derived class in your project, because this class (usually [CComObject](../../atl/reference/ccomobject-class.md), [CComAggObject](../../atl/reference/ccomaggobject-class.md), or [CComPolyObject](../../atl/reference/ccompolyobject-class.md)) initializes the vtable pointer for your project.  
   
- You must not call virtual functions from the constructor of any object that uses `declspec(novtable)`. You should move those calls to the [FinalConstruct](ccomobjectrootex-class.md#ccomobjectrootex__finalconstruct) method.  
+ You must not call virtual functions from the constructor of any object that uses `declspec(novtable)`. You should move those calls to the [FinalConstruct](ccomobjectrootex-class.md#finalconstruct) method.  
 
   
  If you are unsure whether you should use the `declspec(novtable)` modifier, you can remove the ATL_NO_VTABLE macro from any class definition, or you can globally disable it by specifying  

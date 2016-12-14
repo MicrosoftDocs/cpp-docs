@@ -63,8 +63,6 @@ A constructor is a kind of member function that initializes an instance of its c
   
 -   [Rules for Declaring Constructors](#rules_for_declaring_constructors)  
   
--   Default and Copy Constructors  
-  
 -   [Explicitly invoking constructors](#explicitly_invoking_constructors)  
   
 ##  <a name="order_of_construction"></a> Order of Construction  
@@ -280,10 +278,10 @@ Box boxes[3]{ { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 ```  
   
 ##  <a name="copy_and_move_constructors"></a> Copy and Move Constructors  
- A *copy constructor* is a special member function that takes as input a reference to an object of the same type, and makes a copy of it. For more information, see [Copy Constructors and Copy Assignment Operators (C++)](../cpp/copy-constructors-and-copy-assignment-operators-cpp.md). A move is also a special member function constructor moves ownership of an existing object to a new variable without copying the original data. For more information, see  [Move Constructors and Move Assignment Operators (C++)](http://msdn.microsoft.com/en-us/1442de5f-37a5-42a1-83a6-ec9cfe0414db) and  [Move Constructors and Move Assignment Operators (C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md).  
+ A *copy constructor* is a special member function that takes as input a reference to an object of the same type, and makes a copy of it. For more information, see [Copy Constructors and Copy Assignment Operators (C++)](../cpp/copy-constructors-and-copy-assignment-operators-cpp.md). A *move constructor* is also a special member function that moves ownership of an existing object's data to a new variable without copying the original data. For more information, see [Move Constructors and Move Assignment Operators (C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md).  
   
 ##  <a name="explicitly_defaulted_and_deleted_constructors"></a> Explicitly Defaulted and Deleted Constructors  
- You can explicitly default copy constructors, default constructors, move constructors, copy assignment operators, move assignment operators, and destructors. You can explicitly delete all of the special member functions. For more information, see [Explicitly Defaulted and Deleted Functions](../cpp/explicitly-defaulted-and-deleted-functions.md).  
+ You can explicitly *default* copy constructors, default constructors, move constructors, copy assignment operators, move assignment operators, and destructors. You can explicitly *delete* all of the special member functions. For more information, see [Explicitly Defaulted and Deleted Functions](../cpp/explicitly-defaulted-and-deleted-functions.md).  
   
 ##  <a name="constructors_in_derived_classes"></a> Constructors in Derived Classes  
  A derived class constructor always calls a base class constructor, so that it can rely on completely constructed base classes before any extra work is done. The base class constructors are called in order of derivation—for example, if ClassA is derived from ClassB, which is derived from ClassC, the ClassC constructor is called first, then the ClassB constructor, then the ClassA constructor.  

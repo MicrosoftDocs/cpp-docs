@@ -61,7 +61,7 @@ class CD2DBrushProperties : public D2D1_BRUSH_PROPERTIES;
 ## Inheritance Hierarchy  
  `D2D1_BRUSH_PROPERTIES`  
   
- [CD2DBrushProperties](../../mfc/reference/cd2dbrushproperties-class.md)  
+ `CD2DBrushProperties`  
   
 ## Requirements  
  **Header:** afxrendertarget.h  

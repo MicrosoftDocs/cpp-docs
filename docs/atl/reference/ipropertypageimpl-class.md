@@ -58,38 +58,38 @@ template<class T>  class IPropertyPageImpl
   
 |Name|Description|  
 |----------|-----------------|  
-|[IPropertyPageImpl::IPropertyPageImpl](#ipropertypageimpl__ipropertypageimpl)|Constructor.|  
+|[IPropertyPageImpl::IPropertyPageImpl](#ipropertypageimpl)|Constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[IPropertyPageImpl::Activate](#ipropertypageimpl__activate)|Creates the dialog box window for the property page.|  
-|[IPropertyPageImpl::Apply](#ipropertypageimpl__apply)|Applies current property page values to the underlying objects specified through `SetObjects`. The ATL implementation returns `S_OK`.|  
-|[IPropertyPageImpl::Deactivate](#ipropertypageimpl__deactivate)|Destroys the window created with **Activate**.|  
-|[IPropertyPageImpl::GetPageInfo](#ipropertypageimpl__getpageinfo)|Retrieves information about the property page.|  
-|[IPropertyPageImpl::Help](#ipropertypageimpl__help)|Invokes Windows help for the property page.|  
-|[IPropertyPageImpl::IsPageDirty](#ipropertypageimpl__ispagedirty)|Indicates whether the property page has changed since it was activated.|  
-|[IPropertyPageImpl::Move](#ipropertypageimpl__move)|Positions and resizes the property page dialog box.|  
-|[IPropertyPageImpl::SetDirty](#ipropertypageimpl__setdirty)|Flags the property page's state as changed or unchanged.|  
-|[IPropertyPageImpl::SetObjects](#ipropertypageimpl__setobjects)|Provides an array of **IUnknown** pointers for the objects associated with the property page. These objects receive the current property page values through a call to **Apply**.|  
-|[IPropertyPageImpl::SetPageSite](#ipropertypageimpl__setpagesite)|Provides the property page with an `IPropertyPageSite` pointer, through which the property page communicates with the property frame.|  
-|[IPropertyPageImpl::Show](#ipropertypageimpl__show)|Makes the property page dialog box visible or invisible.|  
-|[IPropertyPageImpl::TranslateAccelerator](#ipropertypageimpl__translateaccelerator)|Processes a specified keystroke.|  
+|[IPropertyPageImpl::Activate](#activate)|Creates the dialog box window for the property page.|  
+|[IPropertyPageImpl::Apply](#apply)|Applies current property page values to the underlying objects specified through `SetObjects`. The ATL implementation returns `S_OK`.|  
+|[IPropertyPageImpl::Deactivate](#deactivate)|Destroys the window created with **Activate**.|  
+|[IPropertyPageImpl::GetPageInfo](#getpageinfo)|Retrieves information about the property page.|  
+|[IPropertyPageImpl::Help](#help)|Invokes Windows help for the property page.|  
+|[IPropertyPageImpl::IsPageDirty](#ispagedirty)|Indicates whether the property page has changed since it was activated.|  
+|[IPropertyPageImpl::Move](#move)|Positions and resizes the property page dialog box.|  
+|[IPropertyPageImpl::SetDirty](#setdirty)|Flags the property page's state as changed or unchanged.|  
+|[IPropertyPageImpl::SetObjects](#setobjects)|Provides an array of **IUnknown** pointers for the objects associated with the property page. These objects receive the current property page values through a call to **Apply**.|  
+|[IPropertyPageImpl::SetPageSite](#setpagesite)|Provides the property page with an `IPropertyPageSite` pointer, through which the property page communicates with the property frame.|  
+|[IPropertyPageImpl::Show](#show)|Makes the property page dialog box visible or invisible.|  
+|[IPropertyPageImpl::TranslateAccelerator](#translateaccelerator)|Processes a specified keystroke.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[IPropertyPageImpl::m_bDirty](#ipropertypageimpl__m_bdirty)|Specifies whether the property page's state has changed.|  
-|[IPropertyPageImpl::m_dwDocString](#ipropertypageimpl__m_dwdocstring)|Stores the resource identifier associated with the text string describing the property page.|  
-|[IPropertyPageImpl::m_dwHelpContext](#ipropertypageimpl__m_dwhelpcontext)|Stores the context identifier for the help topic associated with the property page.|  
-|[IPropertyPageImpl::m_dwHelpFile](#ipropertypageimpl__m_dwhelpfile)|Stores the resource identifier associated with the name of the help file describing the property page.|  
-|[IPropertyPageImpl::m_dwTitle](#ipropertypageimpl__m_dwtitle)|Stores the resource identifier associated with the text string that appears in the tab for the property page.|  
-|[IPropertyPageImpl::m_nObjects](#ipropertypageimpl__m_nobjects)|Stores the number of objects associated with the property page.|  
-|[IPropertyPageImpl::m_pPageSite](#ipropertypageimpl__m_ppagesite)|Points to the `IPropertyPageSite` interface through which the property page communicates with the property frame.|  
-|[IPropertyPageImpl::m_ppUnk](#ipropertypageimpl__m_ppunk)|Points to an array of **IUnknown** pointers to the objects associated with the property page.|  
-|[IPropertyPageImpl::m_size](#ipropertypageimpl__m_size)|Stores the height and width of the property page's dialog box, in pixels.|  
+|[IPropertyPageImpl::m_bDirty](#m_bdirty)|Specifies whether the property page's state has changed.|  
+|[IPropertyPageImpl::m_dwDocString](#m_dwdocstring)|Stores the resource identifier associated with the text string describing the property page.|  
+|[IPropertyPageImpl::m_dwHelpContext](#m_dwhelpcontext)|Stores the context identifier for the help topic associated with the property page.|  
+|[IPropertyPageImpl::m_dwHelpFile](#m_dwhelpfile)|Stores the resource identifier associated with the name of the help file describing the property page.|  
+|[IPropertyPageImpl::m_dwTitle](#m_dwtitle)|Stores the resource identifier associated with the text string that appears in the tab for the property page.|  
+|[IPropertyPageImpl::m_nObjects](#m_nobjects)|Stores the number of objects associated with the property page.|  
+|[IPropertyPageImpl::m_pPageSite](#m_ppagesite)|Points to the `IPropertyPageSite` interface through which the property page communicates with the property frame.|  
+|[IPropertyPageImpl::m_ppUnk](#m_ppunk)|Points to an array of **IUnknown** pointers to the objects associated with the property page.|  
+|[IPropertyPageImpl::m_size](#m_size)|Stores the height and width of the property page's dialog box, in pixels.|  
   
 ## Remarks  
  The [IPropertyPage](http://msdn.microsoft.com/library/windows/desktop/ms691246) interface allows an object to manage a particular property page within a property sheet. Class `IPropertyPageImpl` provides a default implementation of this interface and implements **IUnknown** by sending information to the dump device in debug builds.  
@@ -104,7 +104,7 @@ template<class T>  class IPropertyPageImpl
 ## Requirements  
  **Header:** atlctl.h  
   
-##  <a name="ipropertypageimpl__activate"></a>  IPropertyPageImpl::Activate  
+##  <a name="activate"></a>  IPropertyPageImpl::Activate  
  Creates the dialog box window for the property page.  
   
 ```
@@ -118,7 +118,7 @@ HRESULT Activate(HWND hWndParent,
   
  See [IPropertyPage::Activate](http://msdn.microsoft.com/library/windows/desktop/ms682250) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ipropertypageimpl__apply"></a>  IPropertyPageImpl::Apply  
+##  <a name="apply"></a>  IPropertyPageImpl::Apply  
  Applies current property page values to the underlying objects specified through `SetObjects`.  
   
 ```
@@ -131,8 +131,8 @@ HRESULT Apply();
 ### Remarks  
  See [IPropertyPage::Apply](http://msdn.microsoft.com/library/windows/desktop/ms691284) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ipropertypageimpl__deactivate"></a>  IPropertyPageImpl::Deactivate  
- Destroys the dialog box window created with [Activate](#ipropertypageimpl__activate).  
+##  <a name="deactivate"></a>  IPropertyPageImpl::Deactivate  
+ Destroys the dialog box window created with [Activate](#activate).  
   
 ```
 HRESULT Deactivate();
@@ -141,7 +141,7 @@ HRESULT Deactivate();
 ### Remarks  
  See [IPropertyPage::Deactivate](http://msdn.microsoft.com/library/windows/desktop/ms682504) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ipropertypageimpl__getpageinfo"></a>  IPropertyPageImpl::GetPageInfo  
+##  <a name="getpageinfo"></a>  IPropertyPageImpl::GetPageInfo  
  Fills the *pPageInfo* structure with information contained in the data members.  
   
 ```
@@ -149,11 +149,11 @@ HRESULT GetPageInfo(PROPPAGEINFO* pPageInfo);
 ```  
   
 ### Remarks  
- `GetPageInfo` loads the string resources associated with [m_dwDocString](#ipropertypageimpl__m_dwdocstring), [m_dwHelpFile](#ipropertypageimpl__m_dwhelpfile), and [m_dwTitle](#ipropertypageimpl__m_dwtitle).  
+ `GetPageInfo` loads the string resources associated with [m_dwDocString](#m_dwdocstring), [m_dwHelpFile](#m_dwhelpfile), and [m_dwTitle](#m_dwtitle).  
   
  See [IPropertyPage::GetPageInfo](http://msdn.microsoft.com/library/windows/desktop/ms680714) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ipropertypageimpl__help"></a>  IPropertyPageImpl::Help  
+##  <a name="help"></a>  IPropertyPageImpl::Help  
  Invokes Windows help for the property page.  
   
 ```
@@ -163,7 +163,7 @@ HRESULT Help(PROPPAGEINFO* pPageInfo);
 ### Remarks  
  See [IPropertyPage::Help](http://msdn.microsoft.com/library/windows/desktop/ms691504) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ipropertypageimpl__ipropertypageimpl"></a>  IPropertyPageImpl::IPropertyPageImpl  
+##  <a name="ipropertypageimpl"></a>  IPropertyPageImpl::IPropertyPageImpl  
  The constructor.  
   
 ```
@@ -173,7 +173,7 @@ IPropertyPageImpl();
 ### Remarks  
  Initializes all data members.  
   
-##  <a name="ipropertypageimpl__ispagedirty"></a>  IPropertyPageImpl::IsPageDirty  
+##  <a name="ispagedirty"></a>  IPropertyPageImpl::IsPageDirty  
  Indicates whether the property page has changed since it was activated.  
   
 ```
@@ -183,70 +183,70 @@ HRESULT IsPageDirty(void);
 ### Remarks  
  `IsPageDirty` returns `S_OK` if the page has changed since it was activated.  
   
-##  <a name="ipropertypageimpl__m_bdirty"></a>  IPropertyPageImpl::m_bDirty  
+##  <a name="m_bdirty"></a>  IPropertyPageImpl::m_bDirty  
  Specifies whether the property page's state has changed.  
   
 ```
 BOOL m_bDirty;
 ```  
   
-##  <a name="ipropertypageimpl__m_nobjects"></a>  IPropertyPageImpl::m_nObjects  
+##  <a name="m_nobjects"></a>  IPropertyPageImpl::m_nObjects  
  Stores the number of objects associated with the property page.  
   
 ```
 ULONG m_nObjects;
 ```  
   
-##  <a name="ipropertypageimpl__m_dwhelpcontext"></a>  IPropertyPageImpl::m_dwHelpContext  
+##  <a name="m_dwhelpcontext"></a>  IPropertyPageImpl::m_dwHelpContext  
  Stores the context identifier for the help topic associated with the property page.  
   
 ```
 DWORD m_dwHelpContext;
 ```  
   
-##  <a name="ipropertypageimpl__m_dwdocstring"></a>  IPropertyPageImpl::m_dwDocString  
+##  <a name="m_dwdocstring"></a>  IPropertyPageImpl::m_dwDocString  
  Stores the resource identifier associated with the text string describing the property page.  
   
 ```
 UINT m_dwDocString;
 ```  
   
-##  <a name="ipropertypageimpl__m_dwhelpfile"></a>  IPropertyPageImpl::m_dwHelpFile  
+##  <a name="m_dwhelpfile"></a>  IPropertyPageImpl::m_dwHelpFile  
  Stores the resource identifier associated with the name of the help file describing the property page.  
   
 ```
 UINT m_dwHelpFile;
 ```  
   
-##  <a name="ipropertypageimpl__m_dwtitle"></a>  IPropertyPageImpl::m_dwTitle  
+##  <a name="m_dwtitle"></a>  IPropertyPageImpl::m_dwTitle  
  Stores the resource identifier associated with the text string that appears in the tab for the property page.  
   
 ```
 UINT m_dwTitle;
 ```  
   
-##  <a name="ipropertypageimpl__m_ppagesite"></a>  IPropertyPageImpl::m_pPageSite  
+##  <a name="m_ppagesite"></a>  IPropertyPageImpl::m_pPageSite  
  Points to the [IPropertyPageSite](http://msdn.microsoft.com/library/windows/desktop/ms690583) interface through which the property page communicates with the property frame.  
   
 ```
 IPropertyPageSite* m_pPageSite;
 ```  
   
-##  <a name="ipropertypageimpl__m_ppunk"></a>  IPropertyPageImpl::m_ppUnk  
+##  <a name="m_ppunk"></a>  IPropertyPageImpl::m_ppUnk  
  Points to an array of **IUnknown** pointers to the objects associated with the property page.  
   
 ```
 IUnknown** m_ppUnk;
 ```  
   
-##  <a name="ipropertypageimpl__m_size"></a>  IPropertyPageImpl::m_size  
+##  <a name="m_size"></a>  IPropertyPageImpl::m_size  
  Stores the height and width of the property page's dialog box, in pixels.  
   
 ```
 SIZE m_size;
 ```  
   
-##  <a name="ipropertypageimpl__move"></a>  IPropertyPageImpl::Move  
+##  <a name="move"></a>  IPropertyPageImpl::Move  
  Positions and resizes the property page dialog box.  
   
 ```
@@ -256,7 +256,7 @@ HRESULT Move(LPCRECT pRect);
 ### Remarks  
  See [IPropertyPage::Move](http://msdn.microsoft.com/library/windows/desktop/ms680118) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ipropertypageimpl__setdirty"></a>  IPropertyPageImpl::SetDirty  
+##  <a name="setdirty"></a>  IPropertyPageImpl::SetDirty  
  Flags the property page's state as changed or unchanged, depending on the value of `bDirty`.  
   
 ```
@@ -270,7 +270,7 @@ void SetDirty(BOOL bDirty);
 ### Remarks  
  If necessary, `SetDirty` informs the frame that the property page has changed.  
   
-##  <a name="ipropertypageimpl__setobjects"></a>  IPropertyPageImpl::SetObjects  
+##  <a name="setobjects"></a>  IPropertyPageImpl::SetObjects  
  Provides an array of **IUnknown** pointers for the objects associated with the property page.  
   
 ```
@@ -281,7 +281,7 @@ HRESULT SetObjects(ULONG nObjects,
 ### Remarks  
  See [IPropertyPage::SetObjects](http://msdn.microsoft.com/library/windows/desktop/ms678529) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ipropertypageimpl__setpagesite"></a>  IPropertyPageImpl::SetPageSite  
+##  <a name="setpagesite"></a>  IPropertyPageImpl::SetPageSite  
  Provides the property page with an [IPropertyPageSite](http://msdn.microsoft.com/library/windows/desktop/ms690583) pointer, through which the property page communicates with the property frame.  
   
 ```
@@ -291,7 +291,7 @@ HRESULT SetPageSite(IPropertyPageSite* pPageSite);
 ### Remarks  
  See [IPropertyPage::SetPageSite](http://msdn.microsoft.com/library/windows/desktop/ms690413) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ipropertypageimpl__show"></a>  IPropertyPageImpl::Show  
+##  <a name="show"></a>  IPropertyPageImpl::Show  
  Makes the property page dialog box visible or invisible.  
   
 ```
@@ -301,7 +301,7 @@ HRESULT Show(UINT nCmdShow);
 ### Remarks  
  See [IPropertyPage::Show](http://msdn.microsoft.com/library/windows/desktop/ms694467) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ipropertypageimpl__translateaccelerator"></a>  IPropertyPageImpl::TranslateAccelerator  
+##  <a name="translateaccelerator"></a>  IPropertyPageImpl::TranslateAccelerator  
  Processes the keystroke specified in `pMsg`.  
   
 ```

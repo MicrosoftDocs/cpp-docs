@@ -88,7 +88,7 @@ class CDrawingManager : public CObject
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
   
- Â Â Â [CDrawingManager](../../mfc/reference/cdrawingmanager-class.md)  
+ `CDrawingManager`  
   
 ## Requirements  
  **Header:** afxdrawmanager.h  
@@ -636,7 +636,7 @@ static BYTE __stdcall HueToRGB(
  The individual red, green, or blue component for the provided hue.  
   
 ### Remarks  
- This method is a helper method that the [CDrawingManager Class](../../mfc/reference/cdrawingmanager-class.md) uses to compute the individual red, green, and blue components of a color in a HSV or HSL representation. This method is not designed to be called directly by the programmer. The input parameters are values that depend on the conversion algorithm.  
+ This method is a helper method that the `CDrawingManager` class uses to compute the individual red, green, and blue components of a color in a HSV or HSL representation. This method is not designed to be called directly by the programmer. The input parameters are values that depend on the conversion algorithm.  
   
  To convert a HSV or HSL color to a RGB representation, call one of the following methods:  
   
@@ -663,7 +663,7 @@ void MirrorRect(
  A Boolean parameter that indicates whether the rectangle flips horizontally or vertically.  
   
 ### Remarks  
- This method can flip any area of the device context owned by the [CDrawingManager Class](../../mfc/reference/cdrawingmanager-class.md). If `bHorz` is set to `TRUE`, this method flips the area horizontally. Otherwise, it flips the area vertically.  
+ This method can flip any area of the device context owned by the `CDrawingManager` class. If `bHorz` is set to `TRUE`, this method flips the area horizontally. Otherwise, it flips the area vertically.  
   
 ##  <a name="pixelalpha"></a>  CDrawingManager::PixelAlpha  
  Calculates the final color for a semitransparent pixel.  

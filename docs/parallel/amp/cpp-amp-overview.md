@@ -84,7 +84,6 @@ void StandardMethod() {
  Using C++ AMP, you might write the following code instead.  
   
 ```cpp  
-  
 #include <amp.h>  
 #include <iostream>  
 using namespace concurrency;  
@@ -106,10 +105,9 @@ void CppAmpMethod() {
         // Define the compute domain, which is the set of threads that are created.  
         sum.extent,   
         // Define the code to run on each thread on the accelerator.  
- [=](index<1> idx) restrict(amp)  
-    {  
-        sum[idx] = a[idx] + b[idx];  
-    }  
+        [=](index<1> idx) restrict(amp) {  
+            sum[idx] = a[idx] + b[idx];  
+        }  
     );  
   
     // Print the results. The expected output is "7, 9, 11, 13, 15".  
@@ -117,7 +115,6 @@ void CppAmpMethod() {
         std::cout << sum[i] << "\n";  
     }  
 }  
-  
 ```  
   
  The same basic elements are present, but C++ AMP constructs are used:  
@@ -137,36 +134,30 @@ void CppAmpMethod() {
  The following example creates a one-dimensional index that specifies the third element in a one-dimensional `array_view` object. The index is used to print the third element in the `array_view` object. The output is 3.  
   
 ```cpp  
- 
 int aCPP[] = {1, 2, 3, 4, 5};  
 array_view<int, 1> a(5, aCPP);
 
 index<1> idx(2);
 
-std::cout <<a[idx] <<"\n";    
+std::cout << a[idx] << "\n";    
 // Output: 3  
- 
 ```  
   
  The following example creates a two-dimensional index that specifies the element where the row = 1 and the column = 2 in a two-dimensional `array_view` object. The first parameter in the `index` constructor is the row component, and the second parameter is the column component. The output is 6.  
   
 ```cpp  
- 
-int aCPP[] = {1, 2, 3,  
-    4, 5, 6};  
-array_view<int, 2> a(2, 3, aCPP);
-
-index<2> idx(1, 2);
-
-std::cout <<a[idx] <<"\n";  
+int aCPP[] = {1, 2, 3, 4, 5, 6};  
+array_view<int, 2> a(2, 3, aCPP);  
+  
+index<2> idx(1, 2);  
+  
+std::cout <<a[idx] << "\n";    
 // Output: 6  
- 
 ```  
   
- The following example creates a three-dimensional index that specifies the element  where the depth = 0, the row = 1, and the column = 3 in a three-dimensional `array_view` object. Notice that the first parameter is the depth component, the second parameter is the row component, and the third parameter is the column component. The output is 8.  
+ The following example creates a three-dimensional index that specifies the element where the depth = 0, the row = 1, and the column = 3 in a three-dimensional `array_view` object. Notice that the first parameter is the depth component, the second parameter is the row component, and the third parameter is the column component. The output is 8.  
   
 ```cpp  
- 
 int aCPP[] = {  
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,   
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};  
@@ -176,10 +167,8 @@ array_view<int, 3> a(2, 3, 4, aCPP);
 // Specifies the element at 3, 1, 0.  
 index<3> idx(0, 1, 3);
 
-std::cout <<a[idx] <<"\n";  
- 
+std::cout << a[idx] << "\n";  
 // Output: 8  
- 
 ```  
   
 ### extent Class  
@@ -193,26 +182,23 @@ int aCPP[] = {
 // There are 3 rows and 4 columns, and the depth is two.  
 array_view<int, 3> a(2, 3, 4, aCPP);
 
-std::cout <<"The number of columns is " <<a.extent[2] <<"\n";  
-std::cout <<"The number of rows is " <<a.extent[1] <<"\n";  
-std::cout <<"The depth is " <<a.extent[0]<<"\n";  
-std::cout <<"Length in most significant dimension is " <<a.extent[0] <<"\n";  
- 
+std::cout << "The number of columns is " << a.extent[2] << "\n";  
+std::cout << "The number of rows is " << a.extent[1] << "\n";  
+std::cout << "The depth is " << a.extent[0] << "\n";  
+std::cout << "Length in most significant dimension is " << a.extent[0] << "\n";  
 ```  
   
  The following example creates an `array_view` object that has the same dimensions as the object in the previous example, but this example uses an `extent` object instead of using explicit parameters in the `array_view` constructor.  
   
 ```cpp  
- 
 int aCPP[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24};  
 extent<3> e(2, 3, 4);
 
 array_view<int, 3> a(e, aCPP);
 
-std::cout <<"The number of columns is " <<a.extent[2] <<"\n";  
-std::cout <<"The number of rows is " <<a.extent[1] <<"\n";  
-std::cout <<"The depth is " <<a.extent[0] <<"\n";  
- 
+std::cout << "The number of columns is " << a.extent[2] << "\n";  
+std::cout << "The number of rows is " << a.extent[1] << "\n";  
+std::cout << "The depth is " << a.extent[0] << "\n";  
 ```  
   
 ## Moving Data to the Accelerator: array and array_view  
@@ -222,7 +208,6 @@ std::cout <<"The depth is " <<a.extent[0] <<"\n";
  When an `array` object is constructed, a deep copy of the data is created on the accelerator if you use a constructor that includes a pointer to the data set. The kernel function modifies the copy on the accelerator. When the execution of the kernel function is finished, you must copy the data back to the source data structure. The following example multiplies each element in a vector by 10. After the kernel function is finished, the `vector conversion operator` is used to copy the data back into the vector object.  
   
 ```cpp  
- 
 std::vector<int> data(5);
 
 for (int count = 0; count <5; count++)   
@@ -231,22 +216,18 @@ for (int count = 0; count <5; count++)
 }  
  
 array<int, 1> a(5, data.begin(), data.end());
-
  
 parallel_for_each(
     a.extent, 
- [=, &a](index<1> idx) restrict(amp)  
- {  
-    a[idx] = a[idx]* 10;  
- });
-
- 
+    [=, &a](index<1> idx) restrict(amp) {  
+        a[idx] = a[idx]* 10;  
+    });
+  
 data = a;  
-for (int i = 0; i <5; i++)   
+for (int i = 0; i < 5; i++)   
 {  
-    std::cout <<data[i] <<"\n";  
+    std::cout << data[i] << "\n";  
 }  
- 
 ```  
   
 ### array_view Class  
@@ -263,8 +244,6 @@ for (int i = 0; i <5; i++)
 |Data storage|Is a data container.|Is a data wrapper.|  
 |Copy|Explicit and deep copy at definition.|Implicit copy when it is accessed by the kernel function.|  
 |Data retrieval|By copying the array data back to an object on the CPU thread.|By direct access of the `array_view` object or by calling the [array_view::synchronize Method](reference/array-view-class.md#synchronize) to continue accessing the data on the original container.|  
-
-
   
 ### Shared memory with array and array_view  
  Shared memory is memory that can be accessed by both the CPU and the accelerator. The use of shared memory eliminates or significantly reduces the overhead of copying data between the CPU and the accelerator. Although the memory is shared, it cannot be accessed concurrently by both the CPU and the accelerator, and doing so causes undefined behavior.  
@@ -283,42 +262,40 @@ using namespace Concurrency;
   
 int main()  
 {  
-  accelerator acc = accelerator(accelerator::default_accelerator);  
+    accelerator acc = accelerator(accelerator::default_accelerator);  
   
-  // Early out if the default accelerator doesn’t support shared memory.  
-  if (!acc.supports_cpu_shared_memory)  
-  {  
-    std::cout << "The default accelerator does not support shared memory" << std::endl;  
-    return 1;  
-  }  
+    // Early out if the default accelerator doesn’t support shared memory.  
+    if (!acc.supports_cpu_shared_memory)  
+    {  
+        std::cout << "The default accelerator does not support shared memory" << std::endl;  
+        return 1;  
+    }  
   
-  // Override the default CPU access type.  
-  acc.default_cpu_access_type = access_type_read_write  
+    // Override the default CPU access type.  
+    acc.default_cpu_access_type = access_type_read_write  
   
-  // Create an accelerator_view from the default accelerator. The  
-  // accelerator_view inherits its default_cpu_access_type from acc.  
-  accelerator_view acc_v = acc.default_view;  
+    // Create an accelerator_view from the default accelerator. The  
+    // accelerator_view inherits its default_cpu_access_type from acc.  
+    accelerator_view acc_v = acc.default_view;  
   
-  // Create an extent object to size the arrays.  
-  extent<1> ex(10);  
+    // Create an extent object to size the arrays.  
+    extent<1> ex(10);  
   
-  // Input array that can be written on the CPU.  
-  array<int, 1> arr_w(ex, acc_v, access_type_write);  
+    // Input array that can be written on the CPU.  
+    array<int, 1> arr_w(ex, acc_v, access_type_write);  
   
-  // Output array that can be read on the CPU.  
-  array<int, 1> arr_r(ex, acc_v, access_type_read);  
+    // Output array that can be read on the CPU.  
+    array<int, 1> arr_r(ex, acc_v, access_type_read);  
   
-  // Read-write array that can be both written to and read from on the CPU.  
-  array<int, 1> arr_rw(ex, acc_v, access_type_read_write);  
+    // Read-write array that can be both written to and read from on the CPU.  
+    array<int, 1> arr_rw(ex, acc_v, access_type_read_write);  
 }  
-  
 ```  
   
 ## Executing Code over Data: parallel_for_each  
  The [parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) function defines the code that you want to run on the accelerator against the data in the `array` or `array_view` object. Consider the following code from the introduction of this topic.  
   
 ```cpp  
-  
 #include <amp.h>  
 #include <iostream>  
 using namespace concurrency;  
@@ -334,7 +311,7 @@ void AddArrays() {
   
     parallel_for_each(  
         sum.extent,   
- [=](index<1> idx) restrict(amp)  
+        [=](index<1> idx) restrict(amp)  
         {  
             sum[idx] = a[idx] + b[idx];  
         }  
@@ -344,7 +321,6 @@ void AddArrays() {
         std::cout << sum[i] << "\n";  
     }  
 }  
-  
 ```  
   
  The `parallel_for_each` method takes two arguments, a compute domain and a lambda expression.  
@@ -356,13 +332,15 @@ void AddArrays() {
  The lambda expression can include the code to execute or it can call a separate kernel function. The kernel function must include the `restrict(amp)` modifier. The following example is equivalent to the previous example, but it calls a separate kernel function.  
   
 ```cpp  
-  
 #include <amp.h>  
 #include <iostream>  
 using namespace concurrency;  
   
-void AddElements(index<1> idx, array_view<int, 1> sum, array_view<int, 1> a, array_view<int, 1> b) restrict(amp)  
-{  
+void AddElements(
+    index<1> idx,  
+    array_view<int, 1> sum,  
+    array_view<int, 1> a,  
+    array_view<int, 1> b) restrict(amp) {  
     sum[idx] = a[idx] + b[idx];  
 }  
   
@@ -378,8 +356,7 @@ void AddArraysWithFunction() {
   
     parallel_for_each(  
         sum.extent,   
- [=](index<1> idx) restrict(amp)  
-        {  
+        [=](index<1> idx) restrict(amp) {  
             AddElements(idx, sum, a, b);  
         }  
     );  
@@ -388,7 +365,6 @@ void AddArraysWithFunction() {
         std::cout << sum[i] << "\n";  
     }  
 }  
-  
 ```  
   
 ## Accelerating Code: Tiles and Barriers  
@@ -405,7 +381,6 @@ void AddArraysWithFunction() {
  The following code example uses the sampling data from the previous diagram. The code replaces each value in the tile by the average of the values in the tile.  
   
 ```cpp  
- 
 // Sample data:  
 int sampledata[] = {  
     2, 2, 9, 7, 1, 4,  
@@ -430,26 +405,31 @@ int averagedata[] = {
  
 array_view<int, 2> sample(4, 6, sampledata);
 
-array_view<int, 2> average(4, 6, averagedata);
-
- 
-parallel_for_each(*// Create threads for sample.extent and divide the extent into 2 x 2 tiles.  
+array_view<int, 2> average(4, 6, averagedata);  
+  
+parallel_for_each(  
+    // Create threads for sample.extent and divide the extent into 2 x 2 tiles.  
     sample.extent.tile<2,2>(), 
- [=](tiled_index<2,2> idx) restrict(amp)  
- { *// Create a 2 x 2 array to hold the values in this tile.  
-    tile_static int nums[2][2]; *// Copy the values for the tile into the 2 x 2 array.  
-    nums[idx.local[1]][idx.local[0]] = sample[idx.global]; *// When all the threads have executed and the 2 x 2 array is complete, find the average.  
-    idx.barrier.wait();
-int sum = nums[0][0] + nums[0][1] + nums[1][0] + nums[1][1]; *// Copy the average into the array_view.  
-    average[idx.global] = sum / 4;  
- });
+        [=](tiled_index<2,2> idx) restrict(amp) { 
+        // Create a 2 x 2 array to hold the values in this tile.  
+        tile_static int nums[2][2];  
 
- 
+        // Copy the values for the tile into the 2 x 2 array.  
+        nums[idx.local[1]][idx.local[0]] = sample[idx.global];  
+
+        // When all the threads have executed and the 2 x 2 array is complete, find the average.  
+        idx.barrier.wait();  
+        int sum = nums[0][0] + nums[0][1] + nums[1][0] + nums[1][1];
+
+        // Copy the average into the array_view.  
+        average[idx.global] = sum / 4;  
+    });
+  
 for (int i = 0; i <4; i++) {  
     for (int j = 0; j <6; j++) {  
-    std::cout <<average(i,j) <<" ";  
- }  
-    std::cout <<"\n";  
+        std::cout << average(i,j) << " ";  
+    }  
+    std::cout << "\n";  
 }  
  
 // Output:  
@@ -457,7 +437,6 @@ for (int i = 0; i <4; i++) {
 // 3 3 8 8 3 3  
 // 5 5 2 2 4 4  
 // 5 5 2 2 4 4  
- 
 ```  
   
 ## Math Libraries  

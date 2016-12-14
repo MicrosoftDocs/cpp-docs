@@ -85,7 +85,7 @@ class CD2DBrush : public CD2DResource;
   
  [CD2DResource](../../mfc/reference/cd2dresource-class.md)  
   
- [CD2DBrush](../../mfc/reference/cd2dbrush-class.md)  
+ `CD2DBrush`  
   
 ## Requirements  
  **Header:** afxrendertarget.h  

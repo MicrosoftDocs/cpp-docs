@@ -146,7 +146,7 @@ ATLTRACENOTIMPL(funcname);
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#127](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_2.cpp)]  
   
-##  <a name="atltrace__atl_"></a>  ATLTRACE (ATL)  
+##  <a name="atl_"></a>  ATLTRACE (ATL)  
  Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels. Included for backward compatibility.  
   
 ```

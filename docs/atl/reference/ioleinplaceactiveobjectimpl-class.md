@@ -59,13 +59,13 @@ class IOleInPlaceActiveObjectImpl
   
 |Name|Description|  
 |----------|-----------------|  
-|[IOleInPlaceActiveObjectImpl::ContextSensitiveHelp](#ioleinplaceactiveobjectimpl__contextsensitivehelp)|Enables context-sensitive help. The ATL implementation returns **E_NOTIMPL**.|  
-|[IOleInPlaceActiveObjectImpl::EnableModeless](#ioleinplaceactiveobjectimpl__enablemodeless)|Enables modeless dialog boxes. The ATL implementation returns `S_OK`.|  
-|[IOleInPlaceActiveObjectImpl::GetWindow](#ioleinplaceactiveobjectimpl__getwindow)|Gets a window handle.|  
-|[IOleInPlaceActiveObjectImpl::OnDocWindowActivate](#ioleinplaceactiveobjectimpl__ondocwindowactivate)|Notifies the control when the container's document window is activated or deactivated. The ATL implementation returns `S_OK`.|  
-|[IOleInPlaceActiveObjectImpl::OnFrameWindowActivate](#ioleinplaceactiveobjectimpl__onframewindowactivate)|Notifies the control when the container's top-level frame window is activated or deactivated. The ATL implementation returns|  
-|[IOleInPlaceActiveObjectImpl::ResizeBorder](#ioleinplaceactiveobjectimpl__resizeborder)|Informs the control it needs to resize its borders. The ATL implementation returns `S_OK`.|  
-|[IOleInPlaceActiveObjectImpl::TranslateAccelerator](#ioleinplaceactiveobjectimpl__translateaccelerator)|Processes menu accelerator-key messages from the container. The ATL implementation returns **E_NOTIMPL**.|  
+|[IOleInPlaceActiveObjectImpl::ContextSensitiveHelp](#contextsensitivehelp)|Enables context-sensitive help. The ATL implementation returns **E_NOTIMPL**.|  
+|[IOleInPlaceActiveObjectImpl::EnableModeless](#enablemodeless)|Enables modeless dialog boxes. The ATL implementation returns `S_OK`.|  
+|[IOleInPlaceActiveObjectImpl::GetWindow](#getwindow)|Gets a window handle.|  
+|[IOleInPlaceActiveObjectImpl::OnDocWindowActivate](#ondocwindowactivate)|Notifies the control when the container's document window is activated or deactivated. The ATL implementation returns `S_OK`.|  
+|[IOleInPlaceActiveObjectImpl::OnFrameWindowActivate](#onframewindowactivate)|Notifies the control when the container's top-level frame window is activated or deactivated. The ATL implementation returns|  
+|[IOleInPlaceActiveObjectImpl::ResizeBorder](#resizeborder)|Informs the control it needs to resize its borders. The ATL implementation returns `S_OK`.|  
+|[IOleInPlaceActiveObjectImpl::TranslateAccelerator](#translateaccelerator)|Processes menu accelerator-key messages from the container. The ATL implementation returns **E_NOTIMPL**.|  
   
   
 ## Remarks  
@@ -81,7 +81,7 @@ class IOleInPlaceActiveObjectImpl
 ## Requirements  
  **Header:** atlctl.h  
   
-##  <a name="ioleinplaceactiveobjectimpl__contextsensitivehelp"></a>  IOleInPlaceActiveObjectImpl::ContextSensitiveHelp  
+##  <a name="contextsensitivehelp"></a>  IOleInPlaceActiveObjectImpl::ContextSensitiveHelp  
  Enables context-sensitive help.  
   
 ```
@@ -94,7 +94,7 @@ HRESULT ContextSensitiveHelp(BOOL   fEnterMode);
 ### Remarks  
  See [IOleWindow::ContextSensitiveHelp](http://msdn.microsoft.com/library/windows/desktop/ms680059) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ioleinplaceactiveobjectimpl__enablemodeless"></a>  IOleInPlaceActiveObjectImpl::EnableModeless  
+##  <a name="enablemodeless"></a>  IOleInPlaceActiveObjectImpl::EnableModeless  
  Enables modeless dialog boxes.  
   
 ```
@@ -107,7 +107,7 @@ HRESULT EnableModeless(BOOL   fEnable);
 ### Remarks  
  See [IOleInPlaceActiveObject::EnableModeless](http://msdn.microsoft.com/library/windows/desktop/ms680115) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ioleinplaceactiveobjectimpl__getwindow"></a>  IOleInPlaceActiveObjectImpl::GetWindow  
+##  <a name="getwindow"></a>  IOleInPlaceActiveObjectImpl::GetWindow  
  The container calls this function to get the window handle of the control.  
   
 ```
@@ -119,7 +119,7 @@ HRESULT GetWindow(HWND* phwnd);
   
  See [IOleWindow::GetWindow](http://msdn.microsoft.com/library/windows/desktop/ms687282) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ioleinplaceactiveobjectimpl__ondocwindowactivate"></a>  IOleInPlaceActiveObjectImpl::OnDocWindowActivate  
+##  <a name="ondocwindowactivate"></a>  IOleInPlaceActiveObjectImpl::OnDocWindowActivate  
  Notifies the control when the container's document window is activated or deactivated.  
   
 ```
@@ -132,7 +132,7 @@ HRESULT OnDocWindowActivate(BOOL   fActivate);
 ### Remarks  
  See [IOleInPlaceActiveObject::OnDocWindowActivate](http://msdn.microsoft.com/library/windows/desktop/ms687281) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ioleinplaceactiveobjectimpl__onframewindowactivate"></a>  IOleInPlaceActiveObjectImpl::OnFrameWindowActivate  
+##  <a name="onframewindowactivate"></a>  IOleInPlaceActiveObjectImpl::OnFrameWindowActivate  
  Notifies the control when the container's top-level frame window is activated or deactivated.  
   
 ```
@@ -145,7 +145,7 @@ HRESULT OnFrameWindowActivate(BOOL   fActivate);
 ### Remarks  
  See [IOleInPlaceActiveObject::OnFrameWindowActivate](http://msdn.microsoft.com/library/windows/desktop/ms683969) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ioleinplaceactiveobjectimpl__resizeborder"></a>  IOleInPlaceActiveObjectImpl::ResizeBorder  
+##  <a name="resizeborder"></a>  IOleInPlaceActiveObjectImpl::ResizeBorder  
  Informs the control it needs to resize its borders.  
   
 ```
@@ -161,7 +161,7 @@ HRESULT ResizeBorder(
 ### Remarks  
  See [IOleInPlaceActiveObject::ResizeBorder](http://msdn.microsoft.com/library/windows/desktop/ms680053) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ioleinplaceactiveobjectimpl__translateaccelerator"></a>  IOleInPlaceActiveObjectImpl::TranslateAccelerator  
+##  <a name="translateaccelerator"></a>  IOleInPlaceActiveObjectImpl::TranslateAccelerator  
  Processes menu accelerator-key messages from the container.  
   
 ```

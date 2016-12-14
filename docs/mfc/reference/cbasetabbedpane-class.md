@@ -112,7 +112,7 @@ class CBaseTabbedPane : public CDockablePane
   
  [CDockablePane](../../mfc/reference/cdockablepane-class.md)  
   
- [CBaseTabbedPane](../../mfc/reference/cbasetabbedpane-class.md)  
+ `CBaseTabbedPane`  
   
 ## Requirements  
  **Header:** afxBaseTabbedPane.h  

@@ -82,7 +82,7 @@ class CD2DMesh : public CD2DResource;
   
  [CD2DResource](../../mfc/reference/cd2dresource-class.md)  
   
- [CD2DMesh](../../mfc/reference/cd2dmesh-class.md)  
+ `CD2DMesh`  
   
 ## Requirements  
  **Header:** afxrendertarget.h  

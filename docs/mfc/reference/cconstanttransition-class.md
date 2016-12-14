@@ -72,7 +72,7 @@ class CConstantTransition : public CBaseTransition;
   
  [CBaseTransition](../../mfc/reference/cbasetransition-class.md)  
   
- [CConstantTransition](../../mfc/reference/cconstanttransition-class.md)  
+ `CConstantTransition`  
   
 ## Requirements  
  **Header:** afxanimationcontroller.h  

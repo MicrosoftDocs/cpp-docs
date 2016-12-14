@@ -61,5 +61,5 @@ The members of this enumeration provide constants for the schemes understood by 
   
 ## See Also  
  [Concepts](../active-template-library-atl-concepts.md)   
- [CUrl::SetScheme](curl-class.md#curl__setscheme)   
- [CUrl::GetScheme](curl-class.md#curl__getscheme)
+ [CUrl::SetScheme](curl-class.md#setscheme)   
+ [CUrl::GetScheme](curl-class.md#getscheme)

@@ -51,23 +51,23 @@ class CPrivateObjectSecurityDesc : public CSecurityDesc
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc](#cprivateobjectsecuritydesc__cprivateobjectsecuritydesc)|The constructor.|  
-|[CPrivateObjectSecurityDesc::~CPrivateObjectSecurityDesc](#cprivateobjectsecuritydesc___dtorcprivateobjectsecuritydesc)|The destructor.|  
+|[CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc](#cprivateobjectsecuritydesc)|The constructor.|  
+|[CPrivateObjectSecurityDesc::~CPrivateObjectSecurityDesc](#dtor)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPrivateObjectSecurityDesc::ConvertToAutoInherit](#cprivateobjectsecuritydesc__converttoautoinherit)|Call this method to convert a security descriptor and its access-control lists (ACLs) to a format that supports automatic propagation of inheritable access-control entries (ACEs).|  
-|[CPrivateObjectSecurityDesc::Create](#cprivateobjectsecuritydesc__create)|Call this method to allocate and initialize a self-relative security descriptor for the private object created by the calling resource manager.|  
-|[CPrivateObjectSecurityDesc::Get](#cprivateobjectsecuritydesc__get)|Call this method to retrieve information from a private object's security descriptor.|  
-|[CPrivateObjectSecurityDesc::Set](#cprivateobjectsecuritydesc__set)|Call this method to modify a private object's security descriptor.|  
+|[CPrivateObjectSecurityDesc::ConvertToAutoInherit](#converttoautoinherit)|Call this method to convert a security descriptor and its access-control lists (ACLs) to a format that supports automatic propagation of inheritable access-control entries (ACEs).|  
+|[CPrivateObjectSecurityDesc::Create](#create)|Call this method to allocate and initialize a self-relative security descriptor for the private object created by the calling resource manager.|  
+|[CPrivateObjectSecurityDesc::Get](#get)|Call this method to retrieve information from a private object's security descriptor.|  
+|[CPrivateObjectSecurityDesc::Set](#set)|Call this method to modify a private object's security descriptor.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[operator =](#cprivateobjectsecuritydesc__operator_eq)|Assignment operator.|  
+|[operator =](#operator_eq)|Assignment operator.|  
   
 ## Remarks  
  This class, derived from [CSecurityDesc](../../atl/reference/csecuritydesc-class.md), provides methods for creating and managing the security descriptor of a private object.  
@@ -82,7 +82,7 @@ class CPrivateObjectSecurityDesc : public CSecurityDesc
 ## Requirements  
  **Header:** atlsecurity.h  
   
-##  <a name="cprivateobjectsecuritydesc__converttoautoinherit"></a>  CPrivateObjectSecurityDesc::ConvertToAutoInherit  
+##  <a name="converttoautoinherit"></a>  CPrivateObjectSecurityDesc::ConvertToAutoInherit  
  Call this method to convert a security descriptor and its access-control lists (ACLs) to a format that supports automatic propagation of inheritable access-control entries (ACEs).  
   
 ```
@@ -111,7 +111,7 @@ bool ConvertToAutoInherit(const CSecurityDesc* pParent,
 ### Remarks  
  This method attempts to determine whether the ACEs in the discretionary access-control list (DACL) and system access-control list (SACL) of the current security descriptor were inherited from the parent security descriptor. It calls the [ConvertToAutoInheritPrivateObjectSecurity](http://msdn.microsoft.com/library/windows/desktop/aa376403) function.  
   
-##  <a name="cprivateobjectsecuritydesc__cprivateobjectsecuritydesc"></a>  CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc  
+##  <a name="cprivateobjectsecuritydesc"></a>  CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc  
  The constructor.  
   
 ```
@@ -121,7 +121,7 @@ CPrivateObjectSecurityDesc() throw();
 ### Remarks  
  Initializes the `CPrivateObjectSecurityDesc` object.  
   
-##  <a name="cprivateobjectsecuritydesc___dtorcprivateobjectsecuritydesc"></a>  CPrivateObjectSecurityDesc::~CPrivateObjectSecurityDesc  
+##  <a name="dtor"></a>  CPrivateObjectSecurityDesc::~CPrivateObjectSecurityDesc  
  The destructor.  
   
 ```
@@ -131,7 +131,7 @@ CPrivateObjectSecurityDesc() throw();
 ### Remarks  
  The destructor frees all allocated resources and deletes the private object's security descriptor.  
   
-##  <a name="cprivateobjectsecuritydesc__create"></a>  CPrivateObjectSecurityDesc::Create  
+##  <a name="create"></a>  CPrivateObjectSecurityDesc::Create  
  Call this method to allocate and initialize a self-relative security descriptor for the private object created by the calling resource manager.  
   
 ```
@@ -185,7 +185,7 @@ bool Create(const CSecurityDesc* pParent,
 > [!NOTE]
 >  A self-relative security descriptor is a security descriptor that stores all of its security information in a contiguous block of memory.  
   
-##  <a name="cprivateobjectsecuritydesc__get"></a>  CPrivateObjectSecurityDesc::Get  
+##  <a name="get"></a>  CPrivateObjectSecurityDesc::Get  
  Call this method to retrieve information from a private object's security descriptor.  
   
 ```
@@ -206,7 +206,7 @@ bool Get(SECURITY_INFORMATION si,
 ### Remarks  
  The security descriptor is a structure and associated data that contains the security information for a securable object.  
   
-##  <a name="cprivateobjectsecuritydesc__operator_eq"></a>  CPrivateObjectSecurityDesc::operator =  
+##  <a name="operator_eq"></a>  CPrivateObjectSecurityDesc::operator =  
  Assignment operator.  
   
 ```
@@ -220,7 +220,7 @@ CPrivateObjectSecurityDesc& operator= (const CPrivateObjectSecurityDesc& rhs) th
 ### Return Value  
  Returns the updated `CPrivateObjectSecurityDesc` object.  
   
-##  <a name="cprivateobjectsecuritydesc__set"></a>  CPrivateObjectSecurityDesc::Set  
+##  <a name="set"></a>  CPrivateObjectSecurityDesc::Set  
  Call this method to modify a private object's security descriptor.  
   
 ```

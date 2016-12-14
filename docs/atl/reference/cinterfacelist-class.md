@@ -63,7 +63,7 @@ template<class I,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CInterfaceList::CInterfaceList](#cinterfacelist__cinterfacelist)|The constructor for the interface list.|  
+|[CInterfaceList::CInterfaceList](#cinterfacelist)|The constructor for the interface list.|  
   
 ## Remarks  
  This class provides a constructor and derived methods for creating a list of COM interface pointers. Use [CInterfaceArray](../../atl/reference/cinterfacearray-class.md) when an array is required.  
@@ -78,7 +78,7 @@ template<class I,
 ## Requirements  
  **Header:** atlcoll.h  
   
-##  <a name="cinterfacelist__cinterfacelist"></a>  CInterfaceList::CInterfaceList  
+##  <a name="cinterfacelist"></a>  CInterfaceList::CInterfaceList  
  The constructor for the interface list.  
   
 ```

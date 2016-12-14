@@ -83,14 +83,12 @@ class CWinFormsView : public CView;
  Constructs a `CWinFormsView` object.  
   
 ```  
- 
-CWinFormsView(
-System::Type^ pManagedViewType);
+CWinFormsView(System::Type^ pManagedViewType);  
 ```  
   
 ### Parameters  
  `pManagedViewType`  
- A pointer to the data type of the Windows Forms user control. For more information, see <xref:System.TypequalifyHint%3DTrue%26autoUpgrade%3DTrue>.  
+ A pointer to the data type of the Windows Forms user control.   
   
 ### Example  
  In the following example, the `CUserView` class inherits from `CWinFormsView` and passes the type of `UserControl1` to the `CWinFormsView` constructor. `UserControl1` is a custom-built control in ControlLibrary1.dll.  
@@ -103,13 +101,11 @@ System::Type^ pManagedViewType);
  Retrieves a pointer to the Windows Forms control.  
   
 ```  
-System::Windows::Forms::Control^ GetControl() const;
-
- 
+System::Windows::Forms::Control^ GetControl() const;  
 ```  
   
 ### Return Value  
- A pointer to a <xref:System.Windows.Forms.ControlqualifyHint%3DTrue%26autoUpgrade%3DTrue> object.  
+ A pointer to a `System.Windows.Forms.Control` object.  
   
 ### Remarks  
  For an example of how to use Windows Forms, see [Using a Windows Form User Control in MFC](../../dotnet/using-a-windows-form-user-control-in-mfc.md).  
@@ -118,13 +114,11 @@ System::Windows::Forms::Control^ GetControl() const;
  Casts a type as a pointer to a Windows Forms control.  
   
 ```  
-operator System::Windows::Forms::Control^() const;
-
- 
+operator System::Windows::Forms::Control^() const;  
 ```  
   
 ### Remarks  
- This operator allows you to pass a `CWinFormsView` view to functions that accept a pointer to a Windows Forms control of type <xref:System.Windows.Forms.ControlqualifyHint%3DTrue%26autoUpgrade%3DTrue>.  
+ This operator allows you to pass a `CWinFormsView` view to functions that accept a pointer to a Windows Forms control of type <xref:System.Windows.Forms.Control>.  
   
 ### Example  
   See [CWinFormsView::GetControl](#getcontrol).  

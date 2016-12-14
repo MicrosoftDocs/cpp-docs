@@ -102,7 +102,7 @@ explicit CFtpFileFind(
  The default value for `dwContext` is sent by MFC to the `CFtpFileFind` object from the [CInternetSession](../../mfc/reference/cinternetsession-class.md) object that created the `CFtpFileFind` object. You can override the default to set the context identifier to a value of your choosing. The context identifier is returned to [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) to provide status on the object with which it is identified. See the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.  
   
 ### Example  
-  See the example in the [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md) class overview.  
+  See the example in the class overview earlier in this topic.  
   
 ##  <a name="findfile"></a>  CFtpFileFind::FindFile  
  Call this member function to find an FTP file.  
@@ -137,7 +137,7 @@ virtual BOOL FindFile(
  After calling **FindFile** to retrieve the first FTP file, you can call [FindNextFile](#findnextfile) to retrieve subsequent FTP files.  
   
 ### Example  
-  See the example in the [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md) class overview.  
+  See the earlier example in this topic.  
   
 ##  <a name="findnextfile"></a>  CFtpFileFind::FindNextFile  
  Call this member function to continue a file search begun with a call to the [FindFile](#findfile) member function.  
@@ -155,7 +155,7 @@ virtual BOOL FindNextFile();
  `FindNextFile` wraps the Win32 function [FindNextFile](http://msdn.microsoft.com/library/windows/desktop/aa364428).  
   
 ### Example  
-  See the example in the [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md) class overview.  
+  See the example earlier in this topic.  
   
 ##  <a name="getfileurl"></a>  CFtpFileFind::GetFileURL  
  Call this member function to get the URL of the specified file.  

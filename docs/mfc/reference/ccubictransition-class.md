@@ -74,7 +74,7 @@ class CCubicTransition : public CBaseTransition;
   
  [CBaseTransition](../../mfc/reference/cbasetransition-class.md)  
   
- [CCubicTransition](../../mfc/reference/ccubictransition-class.md)  
+ `CCubicTransition`  
   
 ## Requirements  
  **Header:** afxanimationcontroller.h  

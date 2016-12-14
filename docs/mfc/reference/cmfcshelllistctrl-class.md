@@ -91,7 +91,7 @@ class CMFCShellListCtrl : public CMFCListCtrl
   
  [CMFCListCtrl](../../mfc/reference/cmfclistctrl-class.md)  
   
- [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md)  
+ `CMFCShellListCtrl`  
   
 ## Requirements  
  **Header:** afxshelllistCtrl.h  
@@ -357,7 +357,7 @@ virtual CString OnGetItemText(
  A `CString` that contains the text associated with the item.  
   
 ### Remarks  
- Each item in the [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object may have text in one or more columns. When the framework calls this method, it specifies the column that it is interested in. If you call this function manually, you must also specify the column that you are interested in.  
+ Each item in the `CMFCShellListCtrl` object may have text in one or more columns. When the framework calls this method, it specifies the column that it is interested in. If you call this function manually, you must also specify the column that you are interested in.  
   
  By default, this method relies on the `pItem` parameter to determine which item to process. The value of `iItem` is not used in the default implementation.  
   
@@ -369,7 +369,7 @@ virtual void OnSetColumns();
 ```  
   
 ### Remarks  
- By default, the framework creates four columns in a [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object. The names of these columns are `Name`, `Size`, `Type`, and `Modified`. You can override this method to customize the number of columns and their names.  
+ By default, the framework creates four columns in a `CMFCShellListCtrl` object. The names of these columns are `Name`, `Size`, `Type`, and `Modified`. You can override this method to customize the number of columns and their names.  
   
 ##  <a name="refresh"></a>  CMFCShellListCtrl::Refresh  
  Refreshes and repaints the [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object.  

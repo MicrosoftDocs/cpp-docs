@@ -183,7 +183,7 @@ class CMFCBaseTabCtrl : public CWnd
  Starting with [!INCLUDE[vs_dev14](../../ide/includes/vs_dev14_md.md)], this class supports Microsoft Active Accessibility.  
   
 ## Customization Tips  
- The following tips pertain to the [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md) and any classes that inherit from it:  
+ The following tips pertain to the `CMFCBaseTabCtrl Class` and any classes that inherit from it:  
   
 -   If you enable detachable tabs, do not keep pointers to the tabbed windows. These detachable tabs can be created and destroyed dynamically. Therefore, pointers can become invalid.  
   
@@ -338,7 +338,7 @@ virtual CWnd* CreateWrapper(
  A pointer to wrapper derived from the `CDockablePane` class if `CreateWrapper` successfully creates a wrapper class for `pWndToWrap`. If the method fails, it retruns `pWndToWrap`.  
   
 ### Remarks  
- A tabbed window can dock any object derived from `CWnd`. However, in order for a [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md) object to be dockable, each object on the `CMFCBaseTabCtrl` must be detachable. Therefore, `CMFCBaseTabCtrl` automatically wraps any objects that are not derived from `CDockablePane`.  
+ A tabbed window can dock any object derived from `CWnd`. However, in order for a `CMFCBaseTabCtrl Class` object to be dockable, each object on the `CMFCBaseTabCtrl` must be detachable. Therefore, `CMFCBaseTabCtrl` automatically wraps any objects that are not derived from `CDockablePane`.  
   
  By default, the `CMFCBaseTabCtrl` creates instances of the [CDockablePaneAdapter Class](../../mfc/reference/cdockablepaneadapter-class.md). To change the wrapper's default class, call [CMFCBaseTabCtrl::SetDockingBarWrapperRTC](#setdockingbarwrapperrtc).  
   
@@ -431,7 +431,7 @@ virtual void EnableInPlaceEdit(BOOL bEnable) = 0;
   
  You can enable direct editing for a subset of the tabs on the tab control. To do this, override the method `CMFCBaseTabCtrl::StartRenameTab`. `StartRenameTab` should return a nonzero value for all tabs that support direct editing of tab labels.  
   
- In the [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md), this method is a pure virtual function and has no implementation. If you derive a class from `CMFCBaseTabCtrl`, you must implement this function.  
+ In the `CMFCBaseTabCtrl Class`, this method is a pure virtual function and has no implementation. If you derive a class from `CMFCBaseTabCtrl`, you must implement this function.  
   
 ##  <a name="enabletabdetach"></a>  CMFCBaseTabCtrl::EnableTabDetach  
  Enables detachable tabs.  
@@ -483,7 +483,7 @@ virtual BOOL EnsureVisible(int iTab);
 ### Remarks  
  This method has no effect if the tab indicated by `iTab` is already visible.  
   
- By default, this method is not supported by the [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md). You should implement this function in a custom class derived from `CMFCBaseTabCtrl` if that custom tab control supports tab scrolling. This method is supported by the [CMFCTabCtrl Class](../../mfc/reference/cmfctabctrl-class.md).  
+ By default, this method is not supported by the `CMFCBaseTabCtrl Class`. You should implement this function in a custom class derived from `CMFCBaseTabCtrl` if that custom tab control supports tab scrolling. This method is supported by the [CMFCTabCtrl Class](../../mfc/reference/cmfctabctrl-class.md).  
   
 ##  <a name="enterdragmode"></a>  CMFCBaseTabCtrl::EnterDragMode  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -746,7 +746,7 @@ virtual void GetTabArea(
 ### Remarks  
  After `GetTabArea` returns, the `CRect` parameters contain the size and position of the tab area in client coordinates of the tab control. If there is no tab area at the top or bottom of the tab control, `rectTabAreaTop` or `rectTabAreaBottom` are empty.  
   
- In the [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md), this method is a pure virtual function and has no implementation. If you derive a class from `CMFCBaseTabCtrl`, you have to implement this function.  
+ In the `CMFCBaseTabCtrl Class`, this method is a pure virtual function and has no implementation. If you derive a class from `CMFCBaseTabCtrl`, you have to implement this function.  
   
 ##  <a name="gettabbkcolor"></a>  CMFCBaseTabCtrl::GetTabBkColor  
  Retrieves the background color of the specified tab.  
@@ -1360,7 +1360,7 @@ virtual BOOL IsOneNoteStyle() const;
 ### Remarks  
  Call the method [CMDIFrameWndEx::EnableMDITabs](../../mfc/reference/cmdiframewndex-class.md#enablemditabs) to enable the Microsoft OneNote style. You can also enable this style when you instantiate the [CMFCTabCtrl Class](../../mfc/reference/cmfctabctrl-class.md): simply pass the style STYLE_3D_ONENOTE to the method [CMFCTabCtrl::Create](../../mfc/reference/cmfctabctrl-class.md#create).  
   
- By default, the Microsoft OneNote style is not supported in a custom class derived from the [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md). However, it is supported in the `CMFCTabCtrl` class.  
+ By default, the Microsoft OneNote style is not supported in a custom class derived from the `CMFCBaseTabCtrl Class`. However, it is supported in the `CMFCTabCtrl` class.  
   
 ##  <a name="isptintabarea"></a>  CMFCBaseTabCtrl::IsPtInTabArea  
  Determines if a point is inside the tab area.  
@@ -1377,7 +1377,7 @@ virtual BOOL IsPtInTabArea(CPoint point) const = 0;
  Nonzero if the point is in the tab area; 0 otherwise.  
   
 ### Remarks  
- In the [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md), this method is a pure virtual function and has no implementation. If you derive a class from `CMFCBaseTabCtrl`, you have to implement this function.  
+ In the `CMFCBaseTabCtrl Class`, this method is a pure virtual function and has no implementation. If you derive a class from `CMFCBaseTabCtrl`, you have to implement this function.  
   
 ##  <a name="istabclosebuttonhighlighted"></a>  CMFCBaseTabCtrl::IsTabCloseButtonHighlighted  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -1636,7 +1636,7 @@ virtual void RecalcLayout() = 0;
 ```  
   
 ### Remarks  
- In the [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md), this method is a pure virtual function. If you derive a class from `CMFCBaseTabCtrl`, you have to implement this function.  
+ In the `CMFCBaseTabCtrl Class`, this method is a pure virtual function. If you derive a class from `CMFCBaseTabCtrl`, you have to implement this function.  
   
 ##  <a name="removealltabs"></a>  CMFCBaseTabCtrl::RemoveAllTabs  
  Removes all the tabs from the tab control.  
@@ -1715,7 +1715,7 @@ virtual BOOL SetActiveTab(int iTab) = 0;
  `TRUE` if successful; otherwise `FALSE`.  
   
 ### Remarks  
- In the [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md), this method is a pure virtual function. If you derive a class from `CMFCBaseTabCtrl`, you have to implement this function.  
+ In the `CMFCBaseTabCtrl Class`, this method is a pure virtual function. If you derive a class from `CMFCBaseTabCtrl`, you have to implement this function.  
   
 ##  <a name="setactivetabcolor"></a>  CMFCBaseTabCtrl::SetActiveTabColor  
  Sets the background color for the active tab.  

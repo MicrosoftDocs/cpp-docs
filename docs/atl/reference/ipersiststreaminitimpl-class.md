@@ -62,12 +62,12 @@ template<class T>  class ATL_NO_VTABLE IPersistStreamInitImpl :  public IPersist
   
 |Name|Description|  
 |----------|-----------------|  
-|[IPersistStreamInitImpl::GetClassID](#ipersiststreaminitimpl__getclassid)|Retrieves the object's CLSID.|  
-|[IPersistStreamInitImpl::GetSizeMax](#ipersiststreaminitimpl__getsizemax)|Retrieves the size of the stream needed to save the object's data. The ATL implementation returns **E_NOTIMPL**.|  
-|[IPersistStreamInitImpl::InitNew](#ipersiststreaminitimpl__initnew)|Initializes a newly created object.|  
-|[IPersistStreamInitImpl::IsDirty](#ipersiststreaminitimpl__isdirty)|Checks whether the object's data has changed since it was last saved.|  
-|[IPersistStreamInitImpl::Load](#ipersiststreaminitimpl__load)|Loads the object's properties from the specified stream.|  
-|[IPersistStreamInitImpl::Save](#ipersiststreaminitimpl__save)|Saves the object's properties to the specified stream.|  
+|[IPersistStreamInitImpl::GetClassID](#getclassid)|Retrieves the object's CLSID.|  
+|[IPersistStreamInitImpl::GetSizeMax](#getsizemax)|Retrieves the size of the stream needed to save the object's data. The ATL implementation returns **E_NOTIMPL**.|  
+|[IPersistStreamInitImpl::InitNew](#initnew)|Initializes a newly created object.|  
+|[IPersistStreamInitImpl::IsDirty](#isdirty)|Checks whether the object's data has changed since it was last saved.|  
+|[IPersistStreamInitImpl::Load](#load)|Loads the object's properties from the specified stream.|  
+|[IPersistStreamInitImpl::Save](#save)|Saves the object's properties to the specified stream.|  
   
 ## Remarks  
  The [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) interface allows a client to request that your object loads and saves its persistent data to a single stream. Class `IPersistStreamInitImpl` provides a default implementation of this interface and implements **IUnknown** by sending information to the dump device in debug builds.  
@@ -82,7 +82,7 @@ template<class T>  class ATL_NO_VTABLE IPersistStreamInitImpl :  public IPersist
 ## Requirements  
  **Header:** atlcom.h  
   
-##  <a name="ipersiststreaminitimpl__getclassid"></a>  IPersistStreamInitImpl::GetClassID  
+##  <a name="getclassid"></a>  IPersistStreamInitImpl::GetClassID  
  Retrieves the object's CLSID.  
   
 ```
@@ -92,7 +92,7 @@ STDMETHOD(GetClassID)(CLSID* pClassID);
 ### Remarks  
  See [IPersist::GetClassID](http://msdn.microsoft.com/library/windows/desktop/ms688664) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ipersiststreaminitimpl__getsizemax"></a>  IPersistStreamInitImpl::GetSizeMax  
+##  <a name="getsizemax"></a>  IPersistStreamInitImpl::GetSizeMax  
  Retrieves the size of the stream needed to save the object's data.  
   
 ```
@@ -105,7 +105,7 @@ STDMETHOD(GetSizeMax)(ULARGE_INTEGER FAR* pcbSize);
 ### Remarks  
  See [IPersistStreamInit::GetSizeMax](http://msdn.microsoft.com/library/windows/desktop/ms687287) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ipersiststreaminitimpl__initnew"></a>  IPersistStreamInitImpl::InitNew  
+##  <a name="initnew"></a>  IPersistStreamInitImpl::InitNew  
  Initializes a newly created object.  
   
 ```
@@ -115,7 +115,7 @@ STDMETHOD(InitNew)();
 ### Remarks  
  See [IPersistStreamInit::InitNew](http://msdn.microsoft.com/library/windows/desktop/ms690234) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ipersiststreaminitimpl__isdirty"></a>  IPersistStreamInitImpl::IsDirty  
+##  <a name="isdirty"></a>  IPersistStreamInitImpl::IsDirty  
  Checks whether the object's data has changed since it was last saved.  
   
 ```
@@ -125,7 +125,7 @@ STDMETHOD(IsDirty)();
 ### Remarks  
  See [IPersistStreamInit::IsDirty](http://msdn.microsoft.com/library/windows/desktop/ms680092) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ipersiststreaminitimpl__load"></a>  IPersistStreamInitImpl::Load  
+##  <a name="load"></a>  IPersistStreamInitImpl::Load  
  Loads the object's properties from the specified stream.  
   
 ```
@@ -137,7 +137,7 @@ STDMETHOD(Load)(LPSTREAM pStm);
   
  See [IPersistStreamInit::Load](http://msdn.microsoft.com/library/windows/desktop/ms680730) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ipersiststreaminitimpl__save"></a>  IPersistStreamInitImpl::Save  
+##  <a name="save"></a>  IPersistStreamInitImpl::Save  
  Saves the object's properties to the specified stream.  
   
 ```

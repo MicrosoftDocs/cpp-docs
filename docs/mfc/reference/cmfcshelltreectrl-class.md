@@ -73,7 +73,7 @@ class CMFCShellTreeCtrl : public CTreeCtrl
   
  [CTreeCtrl](../../mfc/reference/ctreectrl-class.md)  
   
- [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md)  
+ `CMFCShellTreeCtrl`  
   
 ## Requirements  
  **Header:** afxshelltreeCtrl.h  
@@ -246,7 +246,7 @@ void SetFlags(
  The flags to set.  
   
  [in] `bRefresh`  
- A Boolean that specifies whether the [CMFCShellTreeCtrl Class](../../mfc/reference/cmfcshelltreectrl-class.md) should be refreshed immediately.  
+ A Boolean that specifies whether the `CMFCShellTreeCtrl`  should be refreshed immediately.  
   
 ### Remarks  
  The `CMFCShellTreeCtrl` passes all set flags to [IShellFolder::EnumObjects](http://msdn.microsoft.com/library/windows/desktop/bb775066). For more information about the values of different flags, see [IShellFolder::EnumObjects](http://msdn.microsoft.com/library/windows/desktop/bb775066).  

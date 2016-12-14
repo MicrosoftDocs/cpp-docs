@@ -38,7 +38,6 @@ You can use an *alias declaration* to declare a name to use as a synonym for a p
 ## Syntax  
   
 ```  
-  
 using identifier = type;  
 ```  
   

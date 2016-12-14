@@ -58,8 +58,8 @@ template <typename   T> class CPrimitiveElementTraits :
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPrimitiveElementTraits::INARGTYPE](#cprimitiveelementtraits__inargtype)|The data type to use for adding elements to the collection class object.|  
-|[CPrimitiveElementTraits::OUTARGTYPE](#cprimitiveelementtraits__outargtype)|The data type to use for retrieving elements from the collection class object.|  
+|[CPrimitiveElementTraits::INARGTYPE](#inargtype)|The data type to use for adding elements to the collection class object.|  
+|[CPrimitiveElementTraits::OUTARGTYPE](#outargtype)|The data type to use for retrieving elements from the collection class object.|  
   
 ## Remarks  
  This class provides default static functions and methods for moving, copying, comparing, and hashing primitive data type elements stored in a collection class object.  
@@ -80,14 +80,14 @@ template <typename   T> class CPrimitiveElementTraits :
 ## Requirements  
  **Header:** atlcoll.h  
   
-##  <a name="cprimitiveelementtraits__inargtype"></a>  CPrimitiveElementTraits::INARGTYPE  
+##  <a name="inargtype"></a>  CPrimitiveElementTraits::INARGTYPE  
  The data type to use for adding elements to the collection class object.  
   
 ```
 typedef T INARGTYPE;
 ```  
   
-##  <a name="cprimitiveelementtraits__outargtype"></a>  CPrimitiveElementTraits::OUTARGTYPE  
+##  <a name="outargtype"></a>  CPrimitiveElementTraits::OUTARGTYPE  
  The data type to use for retrieving elements from the collection class object.  
   
 ```

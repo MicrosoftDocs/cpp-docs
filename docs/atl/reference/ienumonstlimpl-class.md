@@ -68,29 +68,29 @@ template <class Base,
   
 |Name|Description|  
 |----------|-----------------|  
-|[IEnumOnSTLImpl::Clone](#ienumonstlimpl__clone)|The implementation of [IEnumXXXX::Clone](https://msdn.microsoft.com/library/ms690336.aspx).|  
-|[IEnumOnSTLImpl::Init](#ienumonstlimpl__init)|Initializes the enumerator.|  
-|[IEnumOnSTLImpl::Next](#ienumonstlimpl__next)|The implementation of [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx).|  
-|[IEnumOnSTLImpl::Reset](#ienumonstlimpl__reset)|The implementation of [IEnumXXXX::Reset](https://msdn.microsoft.com/library/ms693414.aspx).|  
-|[IEnumOnSTLImpl::Skip](#ienumonstlimpl__skip)|The implementation of [IEnumXXXX::Skip](https://msdn.microsoft.com/library/ms690392.aspx).|  
+|[IEnumOnSTLImpl::Clone](#clone)|The implementation of [IEnumXXXX::Clone](https://msdn.microsoft.com/library/ms690336.aspx).|  
+|[IEnumOnSTLImpl::Init](#init)|Initializes the enumerator.|  
+|[IEnumOnSTLImpl::Next](#next)|The implementation of [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx).|  
+|[IEnumOnSTLImpl::Reset](#reset)|The implementation of [IEnumXXXX::Reset](https://msdn.microsoft.com/library/ms693414.aspx).|  
+|[IEnumOnSTLImpl::Skip](#skip)|The implementation of [IEnumXXXX::Skip](https://msdn.microsoft.com/library/ms690392.aspx).|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[IEnumOnSTLImpl::m_iter](#ienumonstlimpl__m_iter)|The iterator that represents the enumerator's current position within the collection.|  
-|[IEnumOnSTLImpl::m_pcollection](#ienumonstlimpl__m_pcollection)|A pointer to the STL container holding the items to be enumerated.|  
-|[IEnumOnSTLImpl::m_spUnk](#ienumonstlimpl__m_spunk)|The **IUnknown** pointer of the object supplying the collection.|  
+|[IEnumOnSTLImpl::m_iter](#m_iter)|The iterator that represents the enumerator's current position within the collection.|  
+|[IEnumOnSTLImpl::m_pcollection](#m_pcollection)|A pointer to the STL container holding the items to be enumerated.|  
+|[IEnumOnSTLImpl::m_spUnk](#m_spunk)|The **IUnknown** pointer of the object supplying the collection.|  
   
 ## Remarks  
  `IEnumOnSTLImpl` provides the implementation for a COM enumerator interface where the items being enumerated are stored in an STL-compatible container. This class is analogous to the [CComEnumImpl](../../atl/reference/ccomenumimpl-class.md) class, which provides an implementation for an enumerator interface based on an array.  
   
 > [!NOTE]
->  See [CComEnumImpl::Init](../../atl/reference/ccomenumimpl-class.md#ccomenumimpl__init) for details on further differences between `CComEnumImpl` and `IEnumOnSTLImpl`.  
+>  See [CComEnumImpl::Init](../../atl/reference/ccomenumimpl-class.md#init) for details on further differences between `CComEnumImpl` and `IEnumOnSTLImpl`.  
   
  Typically, you will *not* need to create your own enumerator class by deriving from this interface implementation. If you want to use an ATL-supplied enumerator based on an STL container, it is more common to create an instance of [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md), or to create a collection class that returns an enumerator by deriving from [ICollectionOnSTLImpl](../../atl/reference/icollectiononstlimpl-class.md).  
   
- However, if you do need to provide a custom enumerator (for example, one that exposes interfaces in addition to the enumerator interface), you can derive from this class. In this situation it is likely that you'll need to override the [Clone](#ienumonstlimpl__clone) method to provide your own implementation.  
+ However, if you do need to provide a custom enumerator (for example, one that exposes interfaces in addition to the enumerator interface), you can derive from this class. In this situation it is likely that you'll need to override the [Clone](#clone) method to provide your own implementation.  
   
 ## Inheritance Hierarchy  
  `Base`  
@@ -100,7 +100,7 @@ template <class Base,
 ## Requirements  
  **Header:** atlcom.h  
   
-##  <a name="ienumonstlimpl__init"></a>  IEnumOnSTLImpl::Init  
+##  <a name="init"></a>  IEnumOnSTLImpl::Init  
  Initializes the enumerator.  
   
 ```
@@ -124,7 +124,7 @@ HRESULT Init(
   
  You must call this method before passing a pointer to the enumerator interface back to any clients.  
   
-##  <a name="ienumonstlimpl__clone"></a>  IEnumOnSTLImpl::Clone  
+##  <a name="clone"></a>  IEnumOnSTLImpl::Clone  
  This method provides the implementation of the [IEnumXXXX::Clone](https://msdn.microsoft.com/library/ms690336.aspx) method by creating an object of type `CComEnumOnSTL`, initializing it with the same collection and iterator used by the current object, and returning the interface on the newly created object.  
   
 ```
@@ -138,7 +138,7 @@ STDMETHOD(Clone)(Base** ppEnum);
 ### Return Value  
  A standard `HRESULT` value.  
   
-##  <a name="ienumonstlimpl__m_spunk"></a>  IEnumOnSTLImpl::m_spUnk  
+##  <a name="m_spunk"></a>  IEnumOnSTLImpl::m_spUnk  
  The **IUnknown** pointer of the object supplying the collection.  
   
 ```
@@ -146,9 +146,9 @@ CComPtr<IUnknown> m_spUnk;
 ```  
   
 ### Remarks  
- This smart pointer maintains a reference on the object passed to [IEnumOnSTLImpl::Init](#ienumonstlimpl__init), ensuring that it remains alive during the lifetime of the enumerator.  
+ This smart pointer maintains a reference on the object passed to [IEnumOnSTLImpl::Init](#init), ensuring that it remains alive during the lifetime of the enumerator.  
   
-##  <a name="ienumonstlimpl__m_pcollection"></a>  IEnumOnSTLImpl::m_pcollection  
+##  <a name="m_pcollection"></a>  IEnumOnSTLImpl::m_pcollection  
  This member points to the collection that provides the data driving the implementation of the enumerator interface.  
   
 ```
@@ -156,16 +156,16 @@ CollType* m_pcollection;
 ```  
   
 ### Remarks  
- This member is initialized by a call to [IEnumOnSTLImpl::Init](#ienumonstlimpl__init).  
+ This member is initialized by a call to [IEnumOnSTLImpl::Init](#init).  
   
-##  <a name="ienumonstlimpl__m_iter"></a>  IEnumOnSTLImpl::m_iter  
+##  <a name="m_iter"></a>  IEnumOnSTLImpl::m_iter  
  This member holds the iterator used to mark the current position within the collection and navigate to subsequent elements.  
   
 ```
 CollType::iterator m_iter;
 ```  
   
-##  <a name="ienumonstlimpl__next"></a>  IEnumOnSTLImpl::Next  
+##  <a name="next"></a>  IEnumOnSTLImpl::Next  
  This method provides the implementation of the [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx) method.  
   
 ```
@@ -187,7 +187,7 @@ STDMETHOD(Next)(ULONG celt,
 ### Return Value  
  A standard `HRESULT` value.  
   
-##  <a name="ienumonstlimpl__reset"></a>  IEnumOnSTLImpl::Reset  
+##  <a name="reset"></a>  IEnumOnSTLImpl::Reset  
  This method provides the implementation of the [IEnumXXXX::Reset](https://msdn.microsoft.com/library/ms693414.aspx) method.  
   
 ```
@@ -197,7 +197,7 @@ STDMETHOD(Reset)(void);
 ### Return Value  
  A standard `HRESULT` value.  
   
-##  <a name="ienumonstlimpl__skip"></a>  IEnumOnSTLImpl::Skip  
+##  <a name="skip"></a>  IEnumOnSTLImpl::Skip  
  This method provides the implementation of the [IEnumXXXX::Skip](https://msdn.microsoft.com/library/ms690392.aspx) method.  
   
 ```

@@ -56,7 +56,7 @@ class Win32ThreadTraits
   
 |Name|Description|  
 |----------|-----------------|  
-|[Win32ThreadTraits::CreateThread](#win32threadtraits__createthread)|(Static) Call this function to create a thread that should not use CRT functions.|  
+|[Win32ThreadTraits::CreateThread](#createthread)|(Static) Call this function to create a thread that should not use CRT functions.|  
   
 ## Remarks  
  Thread traits are classes that provide a creation function for a particular type of thread. The creation function has the same signature and semantics as the Windows [CreateThread](http://msdn.microsoft.com/library/windows/desktop/ms682453) function.  
@@ -72,7 +72,7 @@ class Win32ThreadTraits
 ## Requirements  
  **Header:** atlbase.h  
   
-##  <a name="win32threadtraits__createthread"></a>  Win32ThreadTraits::CreateThread  
+##  <a name="createthread"></a>  Win32ThreadTraits::CreateThread  
  Call this function to create a thread that should not use CRT functions.  
   
 ```

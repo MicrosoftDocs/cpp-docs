@@ -75,7 +75,7 @@ class CBaseKeyFrame : public CObject;
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
   
- [CBaseKeyFrame](../../mfc/reference/cbasekeyframe-class.md)  
+ `CBaseKeyFrame`  
   
 ## Requirements  
  **Header:** afxanimationcontroller.h  

@@ -58,7 +58,7 @@ template<class T>  class IPropertyPage2Impl : public IPropertyPageImpl<T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[IPropertyPage2Impl::EditProperty](#ipropertypage2impl__editproperty)|Specifies which property control will receive the focus when the property page is activated. The ATL implementation returns **E_NOTIMPL**.|  
+|[IPropertyPage2Impl::EditProperty](#editproperty)|Specifies which property control will receive the focus when the property page is activated. The ATL implementation returns **E_NOTIMPL**.|  
   
 ## Remarks  
  The [IPropertyPage2](http://msdn.microsoft.com/library/windows/desktop/ms683996) interface extends [IPropertyPage](http://msdn.microsoft.com/library/windows/desktop/ms691246) by adding the `EditProperty` method. This method allows a client to select a specific property in a property page object.  
@@ -79,7 +79,7 @@ template<class T>  class IPropertyPage2Impl : public IPropertyPageImpl<T>
 ## Requirements  
  **Header:** atlctl.h  
   
-##  <a name="ipropertypage2impl__editproperty"></a>  IPropertyPage2Impl::EditProperty  
+##  <a name="editproperty"></a>  IPropertyPage2Impl::EditProperty  
  Specifies which property control will receive the focus when the property page is activated.  
   
 ```

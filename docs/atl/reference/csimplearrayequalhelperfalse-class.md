@@ -57,15 +57,15 @@ template <class T>   class CSimpleArrayEqualHelperFalse
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleArrayEqualHelperFalse::IsEqual](#csimplearrayequalhelperfalse__isequal)|(Static) Returns false.|  
+|[CSimpleArrayEqualHelperFalse::IsEqual](#isequal)|(Static) Returns false.|  
   
 ## Remarks  
- This traits class is a complement to the `CSimpleArray` class. It always returns false, and in addition, will call `ATLASSERT` with an argument of false if it is ever referenced. In situations where the equality test is not sufficiently defined, this class allows an array containing elements to operate correctly for most methods but fail in a well-defined manner for methods that depend on comparisons such as [CSimpleArray::Find](../../atl/reference/csimplearray-class.md#csimplearray__find).  
+ This traits class is a complement to the `CSimpleArray` class. It always returns false, and in addition, will call `ATLASSERT` with an argument of false if it is ever referenced. In situations where the equality test is not sufficiently defined, this class allows an array containing elements to operate correctly for most methods but fail in a well-defined manner for methods that depend on comparisons such as [CSimpleArray::Find](../../atl/reference/csimplearray-class.md#find).  
   
 ## Requirements  
  **Header:** atlsimpcoll.h  
   
-##  <a name="csimplearrayequalhelperfalse__isequal"></a>  CSimpleArrayEqualHelperFalse::IsEqual  
+##  <a name="isequal"></a>  CSimpleArrayEqualHelperFalse::IsEqual  
  Returns false.  
   
 ```

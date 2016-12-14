@@ -199,6 +199,7 @@
 #### [virtual (C++)](virtual-cpp.md)
 #### [__super](super.md)
 #### [__interface](interface.md)
+### [Special Member Functions](special-member-functions.md)
 ### [Static Members (C++)](static-members-cpp.md)
 ### [User-Defined Type Conversions (C++)](user-defined-type-conversions-cpp.md)
 ### [Mutable Data Members (C++)](mutable-data-members-cpp.md)

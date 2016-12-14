@@ -66,7 +66,7 @@ class CMouseManager : public CObject
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
   
- [CMouseManager](../../mfc/reference/cmousemanager-class.md)  
+ `CMouseManager`  
   
 ## Requirements  
  **Header:** afxmousemanager.h  

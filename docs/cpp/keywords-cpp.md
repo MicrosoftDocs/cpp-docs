@@ -134,7 +134,7 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
 |[thread](../cpp/thread.md) <sup>1</sup>|[throw](../cpp/try-throw-and-catch-statements-cpp.md)|[true](../cpp/true-cpp.md)|  
 |[try](../cpp/try-throw-and-catch-statements-cpp.md)|[typedef](aliases-and-typedefs-cpp.md)|[typeid](../cpp/typeid-operator.md)|  
 |[typeid](../windows/typeid-cpp-component-extensions.md)|[typename](../cpp/typename.md)|[union](../cpp/unions.md)|  
-|[unsigned](../cpp/fundamental-types-cpp.md)|[using](../cpp/using-declaration.md) declaration, [using](using-directive-cpp.md) directive|[uuid](../cpp/uuid-cpp.md) <sup>1</sup>|  
+|[unsigned](../cpp/fundamental-types-cpp.md)|[using](../cpp/using-declaration.md) declaration, [using](namespaces-cpp.md#using_directives) directive|[uuid](../cpp/uuid-cpp.md) <sup>1</sup>|  
 |[value class](../windows/classes-and-structs-cpp-component-extensions.md)|[value struct](../windows/classes-and-structs-cpp-component-extensions.md)|[virtual](../cpp/virtual-cpp.md)|  
 |[void](../cpp/void-cpp.md)|[volatile](../cpp/volatile-cpp.md)|[while](../cpp/while-statement-cpp.md)|  
   

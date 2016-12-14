@@ -84,7 +84,7 @@ class CContextMenuManager : public CObject
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
   
- [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md)  
+ `CContextMenuManager`  
   
 ## Requirements  
  **Header:** afxcontextmenumanager.h  
@@ -301,7 +301,7 @@ virtual CMFCPopupMenu* ShowPopupMenu(
 ### Remarks  
  This method resembles the method [CContextMenuManager::TrackPopupMenu](#trackpopupmenu) in that both methods display a shortcut menu. However, `TrackPopupMenu` returns the index of the selected menu command.  
   
- If the parameter `bAutoDestroy` is `FALSE`, you must manually call the inherited `DestroyMenu` method to release memory resources. The default implementation of `ShowPopupMenu` does not use the parameter `bAutoDestroy`. It is provided for future use or for custom classes derived from the [CContextMenuManager Class](../../mfc/reference/ccontextmenumanager-class.md).  
+ If the parameter `bAutoDestroy` is `FALSE`, you must manually call the inherited `DestroyMenu` method to release memory resources. The default implementation of `ShowPopupMenu` does not use the parameter `bAutoDestroy`. It is provided for future use or for custom classes derived from the `CContextMenuManager` class .  
   
 ##  <a name="trackpopupmenu"></a>  CContextMenuManager::TrackPopupMenu  
  Displays the specified shortcut menu and returns the index of the selected shortcut menu command.  

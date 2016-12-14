@@ -75,7 +75,7 @@ class CD2DGradientBrush : public CD2DBrush;
   
  [CD2DBrush](../../mfc/reference/cd2dbrush-class.md)  
   
- [CD2DGradientBrush](../../mfc/reference/cd2dgradientbrush-class.md)  
+ `CD2DGradientBrush`  
   
 ## Requirements  
  **Header:** afxrendertarget.h  

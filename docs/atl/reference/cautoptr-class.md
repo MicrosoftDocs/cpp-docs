@@ -57,30 +57,30 @@ template <typename   T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAutoPtr::CAutoPtr](#cautoptr__cautoptr)|The constructor.|  
-|[CAutoPtr::~CAutoPtr](#cautoptr___dtorcautoptr)|The destructor.|  
+|[CAutoPtr::CAutoPtr](#cautoptr)|The constructor.|  
+|[CAutoPtr::~CAutoPtr](#dtor)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAutoPtr::Attach](#cautoptr__attach)|Call this method to take ownership of an existing pointer.|  
-|[CAutoPtr::Detach](#cautoptr__detach)|Call this method to release ownership of a pointer.|  
-|[CAutoPtr::Free](#cautoptr__free)|Call this method to delete an object pointed to by a `CAutoPtr`.|  
+|[CAutoPtr::Attach](#attach)|Call this method to take ownership of an existing pointer.|  
+|[CAutoPtr::Detach](#detach)|Call this method to release ownership of a pointer.|  
+|[CAutoPtr::Free](#free)|Call this method to delete an object pointed to by a `CAutoPtr`.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAutoPtr::operator T*](#cautoptr__operator_t_star)|The cast operator.|  
-|[CAutoPtr::operator =](#cautoptr__operator_eq)|The assignment operator.|  
-|[CAutoPtr::operator ->](#cautoptr__operator_ptr)|The pointer-to-member operator.|  
+|[CAutoPtr::operator T*](#operator_t_star)|The cast operator.|  
+|[CAutoPtr::operator =](#operator_eq)|The assignment operator.|  
+|[CAutoPtr::operator ->](#operator_ptr)|The pointer-to-member operator.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAutoPtr::m_p](#cautoptr__m_p)|The pointer data member variable.|  
+|[CAutoPtr::m_p](#m_p)|The pointer data member variable.|  
   
 ## Remarks  
  This class provides methods for creating and managing a smart pointer, which will help protect against memory leaks by automatically freeing resources when it falls out of scope.  
@@ -99,7 +99,7 @@ template <typename   T>
 ## Example  
  [!code-cpp[NVC_ATL_Utilities#74](../../atl/codesnippet/cpp/cautoptr-class_1.cpp)]  
   
-##  <a name="cautoptr__attach"></a>  CAutoPtr::Attach  
+##  <a name="attach"></a>  CAutoPtr::Attach  
  Call this method to take ownership of an existing pointer.  
   
 ```
@@ -111,14 +111,14 @@ void Attach(T* p) throw();
  The `CAutoPtr` object will take ownership of this pointer.  
   
 ### Remarks  
- When a `CAutoPtr` object takes ownership of a pointer, it will automatically delete the pointer and any allocated data when it goes out of scope. If [CAutoPtr::Detach](#cautoptr__detach) is called, the programmer is again given responsibility for freeing any allocated resources.  
+ When a `CAutoPtr` object takes ownership of a pointer, it will automatically delete the pointer and any allocated data when it goes out of scope. If [CAutoPtr::Detach](#detach) is called, the programmer is again given responsibility for freeing any allocated resources.  
   
- In debug builds, an assertion failure will occur if the [CAutoPtr::m_p](#cautoptr__m_p) data member currently points to an existing value; that is, it is not equal to NULL.  
+ In debug builds, an assertion failure will occur if the [CAutoPtr::m_p](#m_p) data member currently points to an existing value; that is, it is not equal to NULL.  
   
 ### Example  
  See the example in the [CAutoPtr Overview](../../atl/reference/cautoptr-class.md).  
   
-##  <a name="cautoptr__cautoptr"></a>  CAutoPtr::CAutoPtr  
+##  <a name="cautoptr"></a>  CAutoPtr::CAutoPtr  
  The constructor.  
   
 ```
@@ -143,7 +143,7 @@ template<> CAutoPtr(CAutoPtr<T>& p) throw();
 ### Example  
  See the example in the [CAutoPtr Overview](../../atl/reference/cautoptr-class.md).  
   
-##  <a name="cautoptr___dtorcautoptr"></a>  CAutoPtr::~CAutoPtr  
+##  <a name="dtor"></a>  CAutoPtr::~CAutoPtr  
  The destructor.  
   
 ```
@@ -151,9 +151,9 @@ template<> CAutoPtr(CAutoPtr<T>& p) throw();
 ```  
   
 ### Remarks  
- Frees any allocated resources. Calls [CAutoPtr::Free](#cautoptr__free).  
+ Frees any allocated resources. Calls [CAutoPtr::Free](#free).  
   
-##  <a name="cautoptr__detach"></a>  CAutoPtr::Detach  
+##  <a name="detach"></a>  CAutoPtr::Detach  
  Call this method to release ownership of a pointer.  
   
 ```
@@ -164,12 +164,12 @@ T* Detach() throw();
  Returns a copy of the pointer.  
   
 ### Remarks  
- Releases ownership of a pointer, sets the [CAutoPtr::m_p](#cautoptr__m_p) data member variable to NULL, and returns a copy of the pointer. After calling **Detach**, it is up to the programmer to free any allocated resources over which the `CAutoPtr` object may have previously assumed reponsibility.  
+ Releases ownership of a pointer, sets the [CAutoPtr::m_p](#m_p) data member variable to NULL, and returns a copy of the pointer. After calling **Detach**, it is up to the programmer to free any allocated resources over which the `CAutoPtr` object may have previously assumed reponsibility.  
   
 ### Example  
  See the example in the [CAutoPtr Overview](../../atl/reference/cautoptr-class.md).  
   
-##  <a name="cautoptr__free"></a>  CAutoPtr::Free  
+##  <a name="free"></a>  CAutoPtr::Free  
  Call this method to delete an object pointed to by a `CAutoPtr`.  
   
 ```
@@ -177,9 +177,9 @@ void Free() throw();
 ```  
   
 ### Remarks  
- The object pointed to by the `CAutoPtr` is freed, and the [CAutoPtr::m_p](#cautoptr__m_p) data member variable is set to NULL.  
+ The object pointed to by the `CAutoPtr` is freed, and the [CAutoPtr::m_p](#m_p) data member variable is set to NULL.  
   
-##  <a name="cautoptr__m_p"></a>  CAutoPtr::m_p  
+##  <a name="m_p"></a>  CAutoPtr::m_p  
  The pointer data member variable.  
   
 ```
@@ -189,7 +189,7 @@ T* m_p;
 ### Remarks  
  This member variable holds the pointer information.  
   
-##  <a name="cautoptr__operator_eq"></a>  CAutoPtr::operator =  
+##  <a name="operator_eq"></a>  CAutoPtr::operator =  
  The assignment operator.  
   
 ```
@@ -216,7 +216,7 @@ CAutoPtr<T>& operator= (CAutoPtr<TSrc>& p);
 ### Example  
  See the example in the [CAutoPtr Overview](../../atl/reference/cautoptr-class.md).  
   
-##  <a name="cautoptr__operator_ptr"></a>  CAutoPtr::operator -&gt;  
+##  <a name="operator_ptr"></a>  CAutoPtr::operator -&gt;  
  The pointer-to-member operator.  
   
 ```
@@ -224,7 +224,7 @@ T* operator->() const throw();
 ```  
   
 ### Return Value  
- Returns the value of the [CAutoPtr::m_p](#cautoptr__m_p) data member variable.  
+ Returns the value of the [CAutoPtr::m_p](#m_p) data member variable.  
   
 ### Remarks  
  Use this operator to call a method in a class pointed to by the `CAutoPtr` object. In debug builds, an assertion failure will occur if the `CAutoPtr` points to NULL.  
@@ -232,7 +232,7 @@ T* operator->() const throw();
 ### Example  
  See the example in the [CAutoPtr Overview](../../atl/reference/cautoptr-class.md).  
   
-##  <a name="cautoptr__operator_t_star"></a>  CAutoPtr::operator T*  
+##  <a name="operator_t_star"></a>  CAutoPtr::operator T*  
  The cast operator.  
   
 ```operator T* () const throw();

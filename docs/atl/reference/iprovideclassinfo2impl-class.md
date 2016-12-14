@@ -79,20 +79,20 @@ template <const CLSID* pcoclsid,
   
 |Name|Description|  
 |----------|-----------------|  
-|[IProvideClassInfo2Impl::IProvideClassInfo2Impl](#iprovideclassinfo2impl__iprovideclassinfo2impl)|Constructor.|  
+|[IProvideClassInfo2Impl::IProvideClassInfo2Impl](#iprovideclassinfo2impl)|Constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[IProvideClassInfo2Impl::GetClassInfo](#iprovideclassinfo2impl__getclassinfo)|Retrieves an **ITypeInfo** pointer to the coclass' type information.|  
-|[IProvideClassInfo2Impl::GetGUID](#iprovideclassinfo2impl__getguid)|Retrieves the GUID for the object's outgoing dispinterface.|  
+|[IProvideClassInfo2Impl::GetClassInfo](#getclassinfo)|Retrieves an **ITypeInfo** pointer to the coclass' type information.|  
+|[IProvideClassInfo2Impl::GetGUID](#getguid)|Retrieves the GUID for the object's outgoing dispinterface.|  
   
 ### Protected Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[IProvideClassInfo2Impl::_tih](#iprovideclassinfo2impl___tih)|Manages the type information for the coclass.|  
+|[IProvideClassInfo2Impl::_tih](#_tih)|Manages the type information for the coclass.|  
   
 ## Remarks  
  The [IProvideClassInfo2](http://msdn.microsoft.com/library/windows/desktop/ms693764) interface extends [IProvideClassInfo](http://msdn.microsoft.com/library/windows/desktop/ms687303) by adding the `GetGUID` method. This method allows a client to retrieve an object's outgoing interface IID for its default event set. Class `IProvideClassInfo2Impl` provides a default implementation of the **IProvideClassInfo** and `IProvideClassInfo2` methods.  
@@ -107,7 +107,7 @@ template <const CLSID* pcoclsid,
 ## Requirements  
  **Header:** atlcom.h  
   
-##  <a name="iprovideclassinfo2impl__getclassinfo"></a>  IProvideClassInfo2Impl::GetClassInfo  
+##  <a name="getclassinfo"></a>  IProvideClassInfo2Impl::GetClassInfo  
  Retrieves an `ITypeInfo` pointer to the coclass' type information.  
   
 ```
@@ -117,7 +117,7 @@ STDMETHOD(GetClassInfo)(ITypeInfo** pptinfo);
 ### Remarks  
  See [IProvideClassInfo::GetClassInfo](http://msdn.microsoft.com/library/windows/desktop/ms690192) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="iprovideclassinfo2impl__getguid"></a>  IProvideClassInfo2Impl::GetGUID  
+##  <a name="getguid"></a>  IProvideClassInfo2Impl::GetGUID  
  Retrieves the GUID for the object's outgoing dispinterface.  
   
 ```
@@ -129,7 +129,7 @@ STDMETHOD(GetGUID)(
 ### Remarks  
  See [IProvideClassInfo2::GetGUID](http://msdn.microsoft.com/library/windows/desktop/ms679721) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="iprovideclassinfo2impl__iprovideclassinfo2impl"></a>  IProvideClassInfo2Impl::IProvideClassInfo2Impl  
+##  <a name="iprovideclassinfo2impl"></a>  IProvideClassInfo2Impl::IProvideClassInfo2Impl  
  The constructor.  
   
 ```
@@ -137,9 +137,9 @@ IProvideClassInfo2Impl();
 ```  
   
 ### Remarks  
- Calls `AddRef` on the [_tih](#iprovideclassinfo2impl___tih) member. The destructor calls **Release**.  
+ Calls `AddRef` on the [_tih](#_tih) member. The destructor calls **Release**.  
   
-##  <a name="iprovideclassinfo2impl___tih"></a>  IProvideClassInfo2Impl::_tih  
+##  <a name="_tih"></a>  IProvideClassInfo2Impl::_tih  
  This static data member is an instance of the class template parameter, `tihclass`, which by default is `CComTypeInfoHolder`.  
   
 ```

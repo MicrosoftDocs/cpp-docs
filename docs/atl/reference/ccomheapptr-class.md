@@ -57,7 +57,7 @@ template<typename T> class CComHeapPtr :  public CHeapPtr<T,CComAllocator>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComHeapPtr::CComHeapPtr](#ccomheapptr__ccomheapptr)|The constructor.|  
+|[CComHeapPtr::CComHeapPtr](#ccomheapptr)|The constructor.|  
   
 ## Remarks  
  `CComHeapPtr` derives from `CHeapPtr`, but uses [CComAllocator](../../atl/reference/ccomallocator-class.md) to allocate memory using COM routines. See [CHeapPtr](../../atl/reference/cheapptr-class.md) and [CHeapPtrBase](../../atl/reference/cheapptrbase-class.md) for the methods available.  
@@ -72,7 +72,7 @@ template<typename T> class CComHeapPtr :  public CHeapPtr<T,CComAllocator>
 ## Requirements  
  **Header:** atlbase.h  
   
-##  <a name="ccomheapptr__ccomheapptr"></a>  CComHeapPtr::CComHeapPtr  
+##  <a name="ccomheapptr"></a>  CComHeapPtr::CComHeapPtr  
  The constructor.  
   
 ```

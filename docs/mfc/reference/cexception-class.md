@@ -206,7 +206,7 @@ virtual int ReportError(
  An `AfxMessageBox` value; otherwise 0 if there is not enough memory to display the message box. See [AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox) for the possible return values.  
   
 ### Example  
- Here is an example of the use of `CException::ReportError`. For another example, see the example for [CATCH]--brokenlink--(exception-processing.md#catch).  
+ Here is an example of the use of `CException::ReportError`. For another example, see the example for [CATCH](exception-processing.md#catch).  
   
 ```cpp
 CFile fileInput;

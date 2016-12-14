@@ -61,21 +61,21 @@ template <int   t_nBufferLength = 128>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CW2WEX::CW2WEX](#cw2wex__cw2wex)|The constructor.|  
-|[CW2WEX::~CW2WEX](#cw2wex___dtorcw2wex)|The destructor.|  
+|[CW2WEX::CW2WEX](#cw2wex)|The constructor.|  
+|[CW2WEX::~CW2WEX](#dtor)|The destructor.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CW2WEX::operator LPWSTR](#cw2wex__operator_lpwstr)|Conversion operator.|  
+|[CW2WEX::operator LPWSTR](#operator_lpwstr)|Conversion operator.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CW2WEX::m_psz](#cw2wex__m_psz)|The data member that stores the source string.|  
-|[CW2WEX::m_szBuffer](#cw2wex__m_szbuffer)|The static buffer, used to store the converted string.|  
+|[CW2WEX::m_psz](#m_psz)|The data member that stores the source string.|  
+|[CW2WEX::m_szBuffer](#m_szbuffer)|The static buffer, used to store the converted string.|  
   
 ## Remarks  
  Unless extra functionality is required, use `CW2TEX`, `CT2WEX`, or `CW2W` in your code.  
@@ -104,7 +104,7 @@ template <int   t_nBufferLength = 128>
 ## Requirements  
  **Header:** atlconv.h  
   
-##  <a name="cw2wex__cw2wex"></a>  CW2WEX::CW2WEX  
+##  <a name="cw2wex"></a>  CW2WEX::CW2WEX  
  The constructor.  
   
 ```
@@ -126,7 +126,7 @@ CW2WEX(
 ### Remarks  
  Creates the buffer required for the translation.  
   
-##  <a name="cw2wex___dtorcw2wex"></a>  CW2WEX::~CW2WEX  
+##  <a name="dtor"></a>  CW2WEX::~CW2WEX  
  The destructor..  
   
 ```
@@ -136,14 +136,14 @@ CW2WEX(
 ### Remarks  
  Frees the allocated buffer.  
   
-##  <a name="cw2wex__m_psz"></a>  CW2WEX::m_psz  
+##  <a name="m_psz"></a>  CW2WEX::m_psz  
  The data member that stores the source string.  
   
 ```
 LPWSTR m_psz;
 ```  
   
-##  <a name="cw2wex__m_szbuffer"></a>  CW2WEX::m_szBuffer  
+##  <a name="m_szbuffer"></a>  CW2WEX::m_szBuffer  
  The static buffer, used to store the converted string.  
   
 ```
@@ -151,7 +151,7 @@ wchar_t m_szBuffer[ t_nBufferLength
  ];
 ```  
   
-##  <a name="cw2wex__operator_lpwstr"></a>  CW2WEX::operator LPWSTR  
+##  <a name="operator_lpwstr"></a>  CW2WEX::operator LPWSTR  
  Cast operator.  
   
 ```operator LPWSTR() const throw();

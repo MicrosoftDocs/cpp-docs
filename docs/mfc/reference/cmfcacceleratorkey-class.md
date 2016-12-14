@@ -71,7 +71,7 @@ class CMFCAcceleratorKey : public CObject
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
   
- [CMFCAcceleratorKey](../../mfc/reference/cmfcacceleratorkey-class.md)  
+ `CMFCAcceleratorKey`   
   
 ## Requirements  
  **Header:** afxacceleratorkey.h  

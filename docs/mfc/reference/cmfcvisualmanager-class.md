@@ -277,7 +277,7 @@ CMFCVisualManager::GetInstance ()->RedrawAll ();
   
  [CMFCBaseVisualManager](../../mfc/reference/cmfcbasevisualmanager-class.md)  
   
- [CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md)  
+ `CMFCVisualManager`   
   
 ## Requirements  
  **Header:** afxvisualmanager.h  
@@ -1495,7 +1495,7 @@ virtual void OnDrawBarGripper(
  A pointer to a control bar. The visual manager draws the gripper of this control bar.  
   
 ### Remarks  
- The default implementation of this method displays the standard gripper. To customize the appearance of the gripper, override this method in a custom class derived from the [CMFCVisualManager Class](../../mfc/reference/cmfcvisualmanager-class.md).  
+ The default implementation of this method displays the standard gripper. To customize the appearance of the gripper, override this method in a custom class derived from the `CMFCVisualManager` class.  
   
 ##  <a name="ondrawbrowsebutton"></a>  CMFCVisualManager::OnDrawBrowseButton  
  The framework calls this method when it draws the browse button for an edit control.  
@@ -4439,7 +4439,7 @@ static void SetDefaultManager(CRuntimeClass* pRTI);
  A pointer to the runtime information for a visual manager.  
   
 ### Remarks  
- Use the [CMFCVisualManager Class](../../mfc/reference/cmfcvisualmanager-class.md) and any derived visual managers to customize the appearance of your application. After you set the default visual manager, this method redraws your application by using the new visual manager. For more information about how to use visual managers, see [Visualization Manager](../../mfc/visualization-manager.md).  
+ Use the `CMFCVisualManager` class and any derived visual managers to customize the appearance of your application. After you set the default visual manager, this method redraws your application by using the new visual manager. For more information about how to use visual managers, see [Visualization Manager](../../mfc/visualization-manager.md).  
   
  Use this method to change the visual manager that your application uses.  
   
