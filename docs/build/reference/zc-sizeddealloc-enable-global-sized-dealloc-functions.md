@@ -51,7 +51,7 @@ In the C++11 standard, you may define static member functions `operator delete` 
   
 The C++14 standard changes the behavior of the compiler. When you define global `operator delete` and `operator delete[]` that take a second parameter of type `size_t`, the compiler prefers to call these functions when member scope versions are not invoked and the size of the object is available. The compiler passes the size argument implicitly. The single argument versions are called when the compiler can't determine the size of the object being deallocated. Otherwise, the usual rules for choosing the version of the deallocation function to invoke still apply. Calls to the global functions may be explicitly specified by prepending the scope resolution operator (`::`) to the deallocation function call.  
   
-By default, Visual C++ starting in Visual Studio 2015 implements this C++14 standard behavior. You may explicitly specify this by setting the **/Zc:sizedDealloc** compiler option. This represents a potentially breaking change. Use the **/Zc:sizedDealloc-** option to preserve the old behavior, for example, when your code defines placement delete operators that use a second parameter of type `size_t`. The default Visual Studio library implementations of the global deallocation functions that have the second parameter of type `size_t` invoke the single parameter versions.  
+By default, Visual C++ starting in Visual Studio 2015 implements this C++14 standard behavior. You may explicitly specify this by setting the `/Zc:sizedDealloc` compiler option. This represents a potentially breaking change. Use the `/Zc:sizedDealloc-` option to preserve the old behavior, for example, when your code defines placement delete operators that use a second parameter of type `size_t`. The default Visual Studio library implementations of the global deallocation functions that have the second parameter of type `size_t` invoke the single parameter versions. If your code supplies only single-parameter global operator delete and operator delete[], the default library implementations of the global sized deallocation functions invoke your global functions.  
   
 For more information about conformance issues in Visual C++, see [Nonstandard Behavior](../../cpp/nonstandard-behavior.md).  
   
@@ -59,9 +59,9 @@ For more information about conformance issues in Visual C++, see [Nonstandard Be
 1.	Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
 2.	From the **Configurations** drop down menu, choose **All Configurations**.  
 3.	Select the **Configuration Properties**, **C/C++**, **Command Line** property page.  
-4.	Modify the **Additional Options** property to include /Zc:sizedDealloc or /Zc:sizedDealloc- and then choose **OK**.  
+4.	Modify the **Additional Options** property to include `/Zc:sizedDealloc` or `/Zc:sizedDealloc-` and then choose **OK**.  
   
 ## See Also  
-[Compiler Options](../../build/reference/compiler-options.md)   
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)   
-[/Zc (Conformance)](../../build/reference/zc-conformance.md)
+[Compiler Options](../../build/reference/compiler-options.md)  
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)  
+[/Zc (Conformance)](../../build/reference/zc-conformance.md)  
