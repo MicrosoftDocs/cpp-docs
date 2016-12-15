@@ -77,7 +77,7 @@ class CMFCAcceleratorKey : public CObject
  **Header:** afxacceleratorkey.h  
   
 ##  <a name="cmfcacceleratorkey"></a>  CMFCAcceleratorKey::CMFCAcceleratorKey  
- Constructs a `CMFCAcceleratorKey`  object.  
+ Constructs a [CMFCAcceleratorKey](../../mfc/reference/cmfcacceleratorkey-class.md) object.  
   
 ```  
 CMFCAcceleratorKey();
@@ -107,10 +107,10 @@ void Format(CString& str) const;
  A reference to a `CString` object where the method writes the translated shortcut key.  
   
 ### Remarks  
- This method retrieves the string format of the associated shortcut key. You can set the string format of a `CMFCAcceleratorKey`  object using either the constructor or the method [CMFCAcceleratorKey::SetAccelerator](#setaccelerator).  
+ This method retrieves the string format of the associated shortcut key. You can set the string format of a [CMFCAcceleratorKey](../../mfc/reference/cmfcacceleratorkey-class.md) object using either the constructor or the method [CMFCAcceleratorKey::SetAccelerator](#setaccelerator).  
   
 ##  <a name="setaccelerator"></a>  CMFCAcceleratorKey::SetAccelerator  
- Sets the shortcut key for the `CMFCAcceleratorKey`  object.  
+ Sets the shortcut key for the [CMFCAcceleratorKey](../../mfc/reference/cmfcacceleratorkey-class.md) object.  
   
 ```  
 void SetAccelerator(LPACCEL lpAccel);

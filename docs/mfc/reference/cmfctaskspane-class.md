@@ -388,7 +388,7 @@ int AddWindow(
  Call this method to add a control to a task pane. For example, you can add an edit control that functions like a search bar.  
   
 ##  <a name="cmfctaskspane"></a>  CMFCTasksPane::CMFCTasksPane  
- Constructs a `CMFCTasksPane` object.  
+ Constructs a [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) object.  
   
 ```  
 CMFCTasksPane();

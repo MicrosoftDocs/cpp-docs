@@ -125,7 +125,7 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
  If a base pane object is derived from `CMFCAutoHideBar`, it can contain a `CAutoHideDockSite`.  
   
 ##  <a name="dockpane"></a>  CAutoHideDockSite::DockPane  
- Docks a pane to this `CAutoHideDockSite` object.  
+ Docks a pane to this [CAutoHideDockSite](../../mfc/reference/cautohidedocksite-class.md) object.  
   
 ```  
 virtual void DockPane(
@@ -168,7 +168,7 @@ void GetAlignRect(CRect& rect) const;
  The rectangle is adjusted for the offset margins so that they are not included.  
   
 ##  <a name="m_nextraspace"></a>  CAutoHideDockSite::m_nExtraSpace  
- The size of the space between the edges of the `CAutoHideDockSite Class` objects.  
+ The size of the space between the edges of the [CAutoHideDockSite Class](../../mfc/reference/cautohidedocksite-class.md) and the [CMFCAutoHideBar Class](../../mfc/reference/cmfcautohidebar-class.md) objects.  
   
 ```  
 static int m_nExtraSpace;  
@@ -206,7 +206,7 @@ void SetOffsetRight(int nOffset);
  [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) objects are positioned statically on the `CAutoHideDockSite` object. This means that the user cannot manually change the location of the `CMFCAutoHideBar` objects. The `SetOffsetRight` method controls the spacing between the right side of the right-most `CMFCAutoHideBar` and the right side of the `CAutoHideDockSite`.  
   
 ##  <a name="repositionpanes"></a>  CAutoHideDockSite::RepositionPanes  
- Redraws the panes on the `CAutoHideDockSite`.  
+ Redraws the panes on the [CAutoHideDockSite](../../mfc/reference/cautohidedocksite-class.md).  
   
 ```  
 virtual void RepositionPanes(CRect& rectNewClientArea);

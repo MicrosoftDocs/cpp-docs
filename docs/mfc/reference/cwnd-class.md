@@ -1032,7 +1032,7 @@ virtual BOOL ContinueModal();
  By default, it returns non-zero until `EndModalLoop` is called.  
   
 ##  <a name="create"></a>  CWnd::Create  
- Creates the specified child window and attaches it to the `CWnd` object.  
+ Creates the specified child window and attaches it to the [CWnd](../../mfc/reference/cwnd-class.md) object.  
   
 ```  
 virtual BOOL Create(

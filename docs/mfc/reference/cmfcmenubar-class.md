@@ -241,7 +241,7 @@ virtual BOOL CanBeRestored() const;
 ### Remarks  
   
 ##  <a name="create"></a>  CMFCMenuBar::Create  
- Creates a menu control and attaches it to a `CMFCMenuBar` object.  
+ Creates a menu control and attaches it to a [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) object.  
   
 ```  
 virtual BOOL Create(
@@ -269,7 +269,7 @@ virtual BOOL Create(
  For more information about toolbar styles, see [CBasePane::SetPaneStyle](../../mfc/reference/cbasepane-class.md#setpanestyle).  
   
 ##  <a name="createex"></a>  CMFCMenuBar::CreateEx  
- Creates a `CMFCMenuBar` object with specified extended styles.  
+ Creates a [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) object with specified extended styles.  
   
 ```  
 virtual BOOL CreateEx(
@@ -314,7 +314,7 @@ virtual BOOL CreateEx(
 [!code-cpp[NVC_MFC_IEDemo#2](../../mfc/reference/codesnippet/cpp/cmfcmenubar-class_3.cpp)]  
   
 ##  <a name="createfrommenu"></a>  CMFCMenuBar::CreateFromMenu  
- Initializes a `CMFCMenuBar` object. This method models the `CMFCMenuBar` object after a `HMENU` parameter.  
+ Initializes a [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) object. This method models the `CMFCMenuBar` object after a `HMENU` parameter.  
   
 ```  
 virtual void CreateFromMenu(
@@ -470,7 +470,7 @@ CMFCToolBarComboBoxButton* GetHelpCombobox();
  The **Help** combo box is located on the right side of the menu bar. Call the method [CMFCMenuBar::EnableHelpCombobox](#enablehelpcombobox) to enable this combo box.  
   
 ##  <a name="gethmenu"></a>  CMFCMenuBar::GetHMenu  
- Retrieves the handle to the menu attached to the `CMFCMenuBar` object.  
+ Retrieves the handle to the menu attached to the [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) object.  
   
 ```  
 HMENU GetHMenu() const;
@@ -651,7 +651,7 @@ static BOOL IsShowAllCommands();
  `IsShowAllCommands` will tell you how this feature is configured for the `CMFCMenuBar` object. To control which menu commands are shown, use the methods [CMFCMenuBar::SetShowAllCommands](#setshowallcommands) and [CMFCMenuBar::SetRecentlyUsedMenus](#setrecentlyusedmenus).  
   
 ##  <a name="isshowallcommandsdelay"></a>  CMFCMenuBar::IsShowAllCommandsDelay  
- Indicates whether the `CMFCMenuBar` object displays all the commands after a short delay.  
+ Indicates whether the [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) object displays all the commands after a short delay.  
   
 ```  
 static BOOL IsShowAllCommandsDelay();
@@ -803,7 +803,7 @@ virtual BOOL RestoreOriginalstate();
  Override this method if you want to do any processing when the user selects the **Reset** option.  
   
 ##  <a name="savestate"></a>  CMFCMenuBar::SaveState  
- Saves the state of the `CMFCMenuBar` object to the Windows registry.  
+ Saves the state of the [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) object to the Windows registry.  
   
 ```  
 virtual BOOL SaveState (
@@ -831,7 +831,7 @@ virtual BOOL SaveState (
  The saved information includes the menu items, the dock state, and the position of the menu bar.  
   
 ##  <a name="setdefaultmenuresid"></a>  CMFCMenuBar::SetDefaultMenuResId  
- Sets the default menu for a `CMFCMenuBar` object based on the resource ID.  
+ Sets the default menu for a [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) object based on the resource ID.  
   
 ```  
 void SetDefaultMenuResId(UINT uiResId);

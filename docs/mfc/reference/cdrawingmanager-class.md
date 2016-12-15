@@ -94,7 +94,7 @@ class CDrawingManager : public CObject
  **Header:** afxdrawmanager.h  
   
 ##  <a name="cdrawingmanager"></a>  CDrawingManager::CDrawingManager  
- Constructs a `CDrawingManager` object.  
+ Constructs a [CDrawingManager](../../mfc/reference/cdrawingmanager-class.md) object.  
   
 ```  
 CDrawingManager(CDC& dc);

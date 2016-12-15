@@ -246,7 +246,7 @@ void CloseMenu(BOOL bSetFocusToBar = FALSE);
 ### Remarks  
   
 ##  <a name="cmfcpopupmenu"></a>  CMFCPopupMenu::CMFCPopupMenu  
- Constructs a `CMFCPopupMenu` object.  
+ Constructs a [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) object.  
   
 ```  
 CMFCPopupMenu(
@@ -265,7 +265,7 @@ CMFCPopupMenu(
  This method allocates the resources for a `CMFCPopupMenu`. To create the pop-up menu item, call [CMFCPopupMenu::Create](#create).  
   
 ##  <a name="create"></a>  CMFCPopupMenu::Create  
- Creates a pop-up menu and attaches it to a `CMFCPopupMenu` object.  
+ Creates a pop-up menu and attaches it to a [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) object.  
   
 ```  
 virtual BOOL Create(

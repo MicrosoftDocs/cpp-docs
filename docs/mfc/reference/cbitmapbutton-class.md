@@ -85,7 +85,7 @@ class CBitmapButton : public CButton
   
 2.  Construct the [CBitmapButton](#cbitmapbutton) object.  
   
-3.  Call the [Create](#create) function to create the Windows button control and attach it to the `CBitmapButton` object.  
+3.  Call the [Create](../../mfc/reference/cbutton-class.md#create) function to create the Windows button control and attach it to the `CBitmapButton` object.  
   
 4.  Call the [LoadBitmaps](#loadbitmaps) member function to load the bitmap resources after the bitmap button is constructed.  
   

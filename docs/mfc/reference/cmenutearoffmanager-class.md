@@ -96,7 +96,7 @@ void Build(
 ### Remarks  
   
 ##  <a name="cmenutearoffmanager"></a>  CMenuTearOffManager::CMenuTearOffManager  
- Constructs a `CMenuTearOffManager`  object.  
+ Constructs a [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) object.  
   
 ```  
 CMenuTearOffManager();
@@ -119,7 +119,7 @@ LPCTSTR GetRegPath() const;
 ### Remarks  
   
 ##  <a name="initialize"></a>  CMenuTearOffManager::Initialize  
- Initializes a `CMenuTearOffManager`  object.  
+ Initializes a [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) object.  
   
 ```  
 BOOL Initialize(

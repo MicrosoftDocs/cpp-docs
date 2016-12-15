@@ -252,7 +252,7 @@ BOOL IsHorizontal() const;
  Nonzero if the button is horizontal; 0 otherwise.  
   
 ### Remarks  
- The framework sets the orientation of a `CMFCAutoHideButton` object when you create it.  You can control the orientation by using the `dwAlignment` parameter in the [CMFCAutoHideButton::Create](#create) method.  
+ The framework sets the orientation of a [CMFCAutoHideButton](../../mfc/reference/cmfcautohidebutton-class.md) object when you create it.  You can control the orientation by using the `dwAlignment` parameter in the [CMFCAutoHideButton::Create](#create) method.  
   
 ##  <a name="istop"></a>  CMFCAutoHideButton::IsTop  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  

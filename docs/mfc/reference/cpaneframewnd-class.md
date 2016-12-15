@@ -295,7 +295,7 @@ virtual void ConvertToTabbedDocument();
 ```  
   
 ##  <a name="create"></a>  CPaneFrameWnd::Create  
- Creates a miniframe window and attaches it to the `CPaneFrameWnd`  object.  
+ Creates a miniframe window and attaches it to the [CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md) object.  
   
 ```  
 virtual BOOL Create(
@@ -329,7 +329,7 @@ virtual BOOL Create(
  A miniframe window is created in two steps. First, the framework creates a `CPaneFrameWnd`  object. Second, it calls `Create` to create the Windows miniframe window and attach it to the `CPaneFrameWnd` object.  
   
 ##  <a name="createex"></a>  CPaneFrameWnd::CreateEx  
- Creates a miniframe window and attaches it to the `CPaneFrameWnd`  object.  
+ Creates a miniframe window and attaches it to the [CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md) object.  
   
 ```  
 virtual BOOL CreateEx(

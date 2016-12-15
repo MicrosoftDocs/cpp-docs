@@ -100,7 +100,7 @@ class CMFCRibbonEdit : public CMFCRibbonButton
  **Header:** afxRibbonEdit.h  
   
 ##  <a name="canbestretched"></a>  CMFCRibbonEdit::CanBeStretched  
- Indicates whether the height of the `CMFCRibbonEdit` control can increase vertically to the height of a ribbon row.  
+ Indicates whether the height of the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control can increase vertically to the height of a ribbon row.  
   
 ```  
 virtual BOOL CanBeStretched();
@@ -112,7 +112,7 @@ virtual BOOL CanBeStretched();
 ### Remarks  
   
 ##  <a name="cmfcribbonedit"></a>  CMFCRibbonEdit::CMFCRibbonEdit  
- Constructs a `CMFCRibbonEdit` object.  
+ Constructs a [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) object.  
   
 ```  
 CMFCRibbonEdit(
@@ -141,7 +141,7 @@ CMFCRibbonEdit();
  The `CMFCRibbonEdit` control does not use a large image.  
   
 ##  <a name="copyfrom"></a>  CMFCRibbonEdit::CopyFrom  
- Copies the state of the specified `CMFCRibbonEdit` object to the current `CMFCRibbonEdit` object.  
+ Copies the state of the specified [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) object to the current [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) object.  
   
 ```  
 virtual void CopyFrom(const CMFCRibbonBaseElement& src);
@@ -155,7 +155,7 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
  The `src` parameter must be of type `CMFCRibbonEdit`.  
   
 ##  <a name="createedit"></a>  CMFCRibbonEdit::CreateEdit  
- Creates a new text box for the `CMFCRibbonEdit` object.  
+ Creates a new text box for the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) object.  
   
 ```  
 virtual CMFCRibbonRichEditCtrl* CreateEdit(
@@ -189,7 +189,7 @@ virtual CMFCRibbonRichEditCtrl* CreateEdit(
 - **WS_TABSTOP**  
   
 ##  <a name="destroyctrl"></a>  CMFCRibbonEdit::DestroyCtrl  
- Destroys the `CMFCRibbonEdit` object.  
+ Destroys the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) object.  
   
 ```  
 virtual void DestroyCtrl();
@@ -227,7 +227,7 @@ void EnableSpinButtons(
  Spin buttons display an up and down arrow and enable users to move through a fixed set of values.  
   
 ##  <a name="getcompactsize"></a>  CMFCRibbonEdit::GetCompactSize  
- Retrieves the compact size of the `CMFCRibbonEdit` object.  
+ Retrieves the compact size of the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) object.  
   
 ```  
 virtual CSize GetCompactSize(CDC* pDC);
@@ -257,7 +257,7 @@ CString GetEditText() const;
 ### Remarks  
   
 ##  <a name="getintermediatesize"></a>  CMFCRibbonEdit::GetIntermediateSize  
- Retrieves the intermediate size of the `CMFCRibbonEdit` object.  
+ Retrieves the intermediate size of the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) object.  
   
 ```  
 virtual CSize GetIntermediateSize(CDC* pDC);
@@ -296,7 +296,7 @@ int GetTextAlign() const;
  For more information about these styles, see [Edit Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775464).  
   
 ##  <a name="getwidth"></a>  CMFCRibbonEdit::GetWidth  
- Retrieves the width, in pixels, of the `CMFCRibbonEdit` control.  
+ Retrieves the width, in pixels, of the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control.  
   
 ```  
 int GetWidth(BOOL bInFloatyMode = FALSE) const;
@@ -314,7 +314,7 @@ int GetWidth(BOOL bInFloatyMode = FALSE) const;
 ### Remarks  
   
 ##  <a name="hascompactmode"></a>  CMFCRibbonEdit::HasCompactMode  
- Indicates whether the display size for the `CMFCRibbonEdit` control can be compact.  
+ Indicates whether the display size for the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control can be compact.  
   
 ```  
 virtual BOOL HasCompactMode() const;
@@ -329,7 +329,7 @@ virtual BOOL HasCompactMode() const;
  By default this method always returns `TRUE`. Override this method to indicate whether the display size can be compact.  
   
 ##  <a name="hasfocus"></a>  CMFCRibbonEdit::HasFocus  
- Indicates whether the `CMFCRibbonEdit` control has the focus.  
+ Indicates whether the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control has the focus.  
   
 ```  
 virtual BOOL HasFocus() const;
@@ -343,7 +343,7 @@ virtual BOOL HasFocus() const;
 ### Remarks  
   
 ##  <a name="haslargemode"></a>  CMFCRibbonEdit::HasLargeMode  
- Indicates whether the display size for the `CMFCRibbonEdit` control can be large.  
+ Indicates whether the display size for the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control can be large.  
   
 ```  
 virtual BOOL HasLargeMode() const;
@@ -372,7 +372,7 @@ virtual BOOL HasSpinButtons() const;
 ### Remarks  
   
 ##  <a name="ishighlighted"></a>  CMFCRibbonEdit::IsHighlighted  
- Indicates whether the `CMFCRibbonEdit` control is highlighted.  
+ Indicates whether the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control is highlighted.  
   
 ```  
 virtual BOOL IsHighlighted() const;
@@ -386,7 +386,7 @@ virtual BOOL IsHighlighted() const;
 ### Remarks  
   
 ##  <a name="onafterchangerect"></a>  CMFCRibbonEdit::OnAfterChangeRect  
- Called by the framework when the dimensions of the display rectangle for the `CMFCRibbonEdit` control change.  
+ Called by the framework when the dimensions of the display rectangle for the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control change.  
   
 ```  
 virtual void OnAfterChangeRect(CDC* pDC);
@@ -399,7 +399,7 @@ virtual void OnAfterChangeRect(CDC* pDC);
 ### Remarks  
   
 ##  <a name="ondraw"></a>  CMFCRibbonEdit::OnDraw  
- Called by the framework to draw the `CMFCRibbonEdit` control.  
+ Called by the framework to draw the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control.  
   
 ```  
 virtual void OnDraw(CDC* pDC);
@@ -412,7 +412,7 @@ virtual void OnDraw(CDC* pDC);
 ### Remarks  
   
 ##  <a name="ondrawlabelandimage"></a>  CMFCRibbonEdit::OnDrawLabelAndImage  
- Called by the framework to draw the label and image for the `CMFCRibbonEdit` control.  
+ Called by the framework to draw the label and image for the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control.  
   
 ```  
 virtual void OnDrawLabelAndImage(CDC* pDC);
@@ -425,7 +425,7 @@ virtual void OnDrawLabelAndImage(CDC* pDC);
 ### Remarks  
   
 ##  <a name="ondrawonlist"></a>  CMFCRibbonEdit::OnDrawOnList  
- Called by the framework to draw the `CMFCRibbonEdit` control in a commands list box.  
+ Called by the framework to draw the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control in a commands list box.  
   
 ```  
 virtual void OnDrawOnList(
@@ -460,7 +460,7 @@ virtual void OnDrawOnList(
  The commands list box displays ribbon controls to enable users to customize the quick access toolbar.  
   
 ##  <a name="onenable"></a>  CMFCRibbonEdit::OnEnable  
- Called by the framework to enable or disable the `CMFCRibbonEdit` control.  
+ Called by the framework to enable or disable the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control.  
   
 ```  
 virtual void OnEnable(BOOL bEnable);
@@ -473,7 +473,7 @@ virtual void OnEnable(BOOL bEnable);
 ### Remarks  
   
 ##  <a name="onhighlight"></a>  CMFCRibbonEdit::OnHighlight  
- Called by the framework when the pointer enters or leaves the bounds of the `CMFCRibbonEdit` control.  
+ Called by the framework when the pointer enters or leaves the bounds of the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control.  
   
 ```  
 virtual void OnHighlight(BOOL bHighlight);
@@ -486,7 +486,7 @@ virtual void OnHighlight(BOOL bHighlight);
 ### Remarks  
   
 ##  <a name="onkey"></a>  CMFCRibbonEdit::OnKey  
- Called by the framework when the user presses a keytip and the `CMFCRibbonEdit` control has the focus.  
+ Called by the framework when the user presses a keytip and the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control has the focus.  
   
 ```  
 virtual BOOL OnKey(BOOL bIsMenuKey);
@@ -502,7 +502,7 @@ virtual BOOL OnKey(BOOL bIsMenuKey);
 ### Remarks  
   
 ##  <a name="onlbuttondown"></a>  CMFCRibbonEdit::OnLButtonDown  
- Called by the framework to update the `CMFCRibbonEdit` control when the user presses the left mouse button on the control.  
+ Called by the framework to update the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control when the user presses the left mouse button on the control.  
   
 ```  
 virtual void OnLButtonDown(CPoint point);
@@ -528,7 +528,7 @@ virtual void OnLButtonUp(CPoint point);
 ### Remarks  
   
 ##  <a name="onrtlchanged"></a>  CMFCRibbonEdit::OnRTLChanged  
- Called by the framework to update the `CMFCRibbonEdit` control when the layout changes direction.  
+ Called by the framework to update the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control when the layout changes direction.  
   
 ```  
 virtual void OnRTLChanged(BOOL bIsRTL);
@@ -541,7 +541,7 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 ### Remarks  
   
 ##  <a name="onshow"></a>  CMFCRibbonEdit::OnShow  
- Called by the framework to show or hide the `CMFCRibbonEdit` control.  
+ Called by the framework to show or hide the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control.  
   
 ```  
 virtual void OnShow(BOOL bShow);
@@ -554,7 +554,7 @@ virtual void OnShow(BOOL bShow);
 ### Remarks  
   
 ##  <a name="redraw"></a>  CMFCRibbonEdit::Redraw  
- Updates the display of the `CMFCRibbonEdit` control.  
+ Updates the display of the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control.  
   
 ```  
 virtual void Redraw();
@@ -564,7 +564,7 @@ virtual void Redraw();
  This method redraws the display rectangle for the `CMFCRibbonEdit` object by indirectly calling [CWnd::RedrawWindow](http://msdn.microsoft.com/library/windows/desktop/dd162911) with the `RDW_INVALIDATE`, `RDW_ERASE`, and `RDW_UPDATENOW` flags set.  
   
 ##  <a name="setaccdata"></a>  CMFCRibbonEdit::SetACCData  
- Sets the accessibility data for the `CMFCRibbonEdit` object.  
+ Sets the accessibility data for the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) object.  
   
 ```  
 virtual BOOL SetACCData(
@@ -618,7 +618,7 @@ void SetTextAlign(int nAlign);
  For more information about these styles, see [Edit Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775464).  
   
 ##  <a name="setwidth"></a>  CMFCRibbonEdit::SetWidth  
- Sets the width of the text box for the `CMFCRibbonEdit` control.  
+ Sets the width of the text box for the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control.  
   
 ```  
 void SetWidth(

@@ -442,7 +442,7 @@ virtual BOOL Write(
  `TRUE` if successful; otherwise `FALSE`.  
   
 ### Remarks  
- In order to write to the registry, you must set `bReadOnly` to a nonzero value when you create a `CSettingsStore` object. For more information, see [CSettingsStore::CSettingsStore](#csettingsstore).  
+ In order to write to the registry, you must set `bReadOnly` to a nonzero value when you create a [CSettingsStore](../../mfc/reference/csettingsstore-class.md) object. For more information, see [CSettingsStore::CSettingsStore](#csettingsstore).  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

@@ -96,7 +96,7 @@ void EnableShellContextMenu(BOOL bEnable = TRUE);
  A Boolean that specifies whether to enable the shortcut menu.  
   
 ##  <a name="getflags"></a>  CMFCShellTreeCtrl::GetFlags  
- Returns the flags set for the `CMFCShellTreeCtrl`  object.  
+ Returns the flags set for the [CMFCShellTreeCtrl Class](../../mfc/reference/cmfcshelltreectrl-class.md) object.  
   
 ```  
 DWORD GetFlags() const;
@@ -111,7 +111,7 @@ DWORD GetFlags() const;
  The flags set in the `CMFCShellTreeCtrl` are sent to the method [IShellFolder::EnumObjects](http://msdn.microsoft.com/library/windows/desktop/bb775066) whenever the object is refreshed. You can change the flags with the [CMFCShellTreeCtrl::SetFlags](#setflags) method.  
   
 ##  <a name="getitempath"></a>  CMFCShellTreeCtrl::GetItemPath  
- Retrieves the path of an item in the `CMFCShellTreeCtrl`  object.  
+ Retrieves the path of an item in the [CMFCShellTreeCtrl Class](../../mfc/reference/cmfcshelltreectrl-class.md) object.  
   
 ```  
 BOOL GetItemPath(
@@ -137,7 +137,7 @@ BOOL GetItemPath(
  If you do not specify `hTreeItem`, this method tries to obtain the string for the currently selected item. If no item is selected and `hTreeItem` is `NULL`, this method fails.  
   
 ##  <a name="getrelatedlist"></a>  CMFCShellTreeCtrl::GetRelatedList  
- Returns a pointer to the [CMFCShellListCtrl Class](../../mfc/reference/cmfcshelllistctrl-class.md) object that is associated with this `CMFCShellTreeCtrl` object.  
+ Returns a pointer to the [CMFCShellListCtrl Class](../../mfc/reference/cmfcshelllistctrl-class.md) object that is associated with this [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) object.  
   
 ```  
 CMFCShellListCtrl* GetRelatedList() const;
@@ -204,7 +204,7 @@ virtual CString OnGetItemText(LPAFX_SHELLITEMINFO pItem);
 ### Remarks  
   
 ##  <a name="refresh"></a>  CMFCShellTreeCtrl::Refresh  
- Refreshes and repaints the `CMFCShellTreeCtrl`.  
+ Refreshes and repaints the [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md).  
   
 ```  
 void Refresh();
@@ -214,7 +214,7 @@ void Refresh();
  Call this method to refresh the hierarchy of the items displayed in the `CMFCShellTreeCtrl`.  
   
 ##  <a name="selectpath"></a>  CMFCShellTreeCtrl::SelectPath  
- Selects an item in the `CMFCShellTreeCtrl`  based on the supplied path.  
+ Selects an item in the [CMFCShellTreeCtrl Class](../../mfc/reference/cmfcshelltreectrl-class.md) based on the supplied path.  
   
 ```  
 BOOL SelectPath(LPCTSTR lpszPath);
@@ -252,7 +252,7 @@ void SetFlags(
  The `CMFCShellTreeCtrl` passes all set flags to [IShellFolder::EnumObjects](http://msdn.microsoft.com/library/windows/desktop/bb775066). For more information about the values of different flags, see [IShellFolder::EnumObjects](http://msdn.microsoft.com/library/windows/desktop/bb775066).  
   
 ##  <a name="setrelatedlist"></a>  CMFCShellTreeCtrl::SetRelatedList  
- Associates a [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object with a `CMFCShellTreeCtrl` object.  
+ Associates a [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object with a [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) object.  
   
 ```  
 void SetRelatedList(CMFCShellListCtrl* pShellList);

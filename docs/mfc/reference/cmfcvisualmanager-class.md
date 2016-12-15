@@ -560,7 +560,7 @@ virtual COLORREF GetHighlightedMenuItemTextColor(CMFCToolBarMenuButton* pButton)
 ### Remarks  
   
 ##  <a name="getinstance"></a>  CMFCVisualManager::GetInstance  
- Returns a pointer to the current `CMFCVisualManager` class object for the application.  
+ Returns a pointer to the current [CMFCVisualManager Class](../../mfc/reference/cmfcvisualmanager-class.md) object for the application.  
   
 ```  
 static CMFCVisualManager* GetInstance();
@@ -4500,7 +4500,7 @@ void SetMenuShadowDepth(int nDepth);
  The height and width of the menu shadow must be identical. The default value is 7 pixels.  
   
 ##  <a name="setshadowhighlightedimage"></a>  CMFCVisualManager::SetShadowHighlightedImage  
- Sets a flag that indicates whether the `CMFCVisualManager`  displays shadows for highlighted images.  
+ Sets a flag that indicates whether the [CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md) displays shadows for highlighted images.  
   
 ```  
 void SetShadowHighlightedImage(BOOL bShadow = TRUE);

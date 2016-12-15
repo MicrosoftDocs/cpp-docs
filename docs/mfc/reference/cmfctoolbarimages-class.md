@@ -222,7 +222,7 @@ static void __stdcall CleanUp();
 ### Remarks  
   
 ##  <a name="clear"></a>  CMFCToolBarImages::Clear  
- Frees the system resources that the `CMFCToolBarImages`  object allocated.  
+ Frees the system resources that the [CMFCToolbarImages](../../mfc/reference/cmfctoolbarimages-class.md) object allocated.  
   
 ```  
 void Clear();
@@ -519,7 +519,7 @@ SIZE GetImageSize(BOOL bDest=FALSE) const;
  A `SIZE` structure, which specifies the size of an image in pixels.  
   
 ### Remarks  
- The size of the source image is the size of the images that are stored in the `CMFCToolBarImages`  object. You can call [CMFCToolBarImages::SetImageSize](#setimagesize) to set the source size. The default value is 16x15 pixels.  
+ The size of the source image is the size of the images that are stored in the [CMFCToolbarImages](../../mfc/reference/cmfctoolbarimages-class.md) object. You can call [CMFCToolBarImages::SetImageSize](#setimagesize) to set the source size. The default value is 16x15 pixels.  
   
  By default, the destination image size is 0x0. You specify the destination size when you call [CMFCToolBarImages::PrepareDrawImage](#preparedrawimage). The [CMFCToolBarImages::EndDrawImage](#enddrawimage) method resets the destination size to the default value.  
   

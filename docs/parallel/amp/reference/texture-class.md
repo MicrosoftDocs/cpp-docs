@@ -86,7 +86,7 @@ class texture;
 |----------|-----------------|  
 |[texture::operator() Operator](#operator_call)|Returns the element value that is specified by the parameters.|  
 |[texture::operator[] Operator](#operator_at)|Returns the element that is at the specified index.|  
-|[texture::operator= Operator](#operator_eq)|Copies the specified `texture` object to this one.|  
+|[texture::operator= Operator](#operator_eq)|Copies the specified [texture](texture-class.md) object to this one.|  
   
 ### Public Constants  
   
@@ -278,7 +278,7 @@ const value_type operator[] (int _I0) const restrict(amp);
  The element that is at the specified index.  
   
 ##  <a name="operator_eq"></a>  texture::operator= Operator  
- Copies the specified `texture` object to this one.  
+ Copies the specified [texture](texture-class.md) object to this one.  
   
 ```  
 texture& operator= (

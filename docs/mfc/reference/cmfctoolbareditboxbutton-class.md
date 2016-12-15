@@ -153,7 +153,7 @@ virtual BOOL CanBeStretched() const;
  By default, the framework does not allow the user to stretch a toolbar button during customization. This method extends the base class implementation ( [CMFCToolBarButton::CanBeStretched](../../mfc/reference/cmfctoolbarbutton-class.md#canbestretched)) by allowing the user to stretch an edit box toolbar button during customization.  
   
 ##  <a name="cmfctoolbareditboxbutton"></a>  CMFCToolBarEditBoxButton::CMFCToolBarEditBoxButton  
- Constructs a `CMFCToolBarEditBoxButton`object.  
+ Constructs a [CMFCToolBarEditBoxButton](../../mfc/reference/cmfctoolbareditboxbutton-class.md) object.  
   
 ```  
 CMFCToolBarEditBoxButton(
@@ -536,7 +536,7 @@ virtual void SetContents(const CString& sContents);
  Specifies the new text to set.  
   
 ##  <a name="setcontentsall"></a>  CMFCToolBarEditBoxButton::SetContentsAll  
- Finds a `CMFCToolBarEditBoxButton`object that has a specified command ID and sets the specified text within its text box.  
+ Finds a [CMFCToolBarEditBoxButton](../../mfc/reference/cmfctoolbareditboxbutton-class.md) object that has a specified command ID and sets the specified text within its text box.  
   
 ```  
 static BOOL SetContentsAll(

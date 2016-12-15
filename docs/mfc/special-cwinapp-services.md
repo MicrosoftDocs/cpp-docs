@@ -70,9 +70,9 @@ Besides running the message loop and giving you an opportunity to initialize the
   
  This automatic registration support in `CWinApp` eliminates the need to ship a .reg file with your application or to do special installation work.  
   
- If you want to initialize GDI+ for your application (by calling [GdiplusStartup](https://msdn.microsoft.com/en-us/library/windows/desktop/ms534077) in your [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) function), you have to suppress the GDI+ background thread.  
+ If you want to initialize GDI+ for your application (by calling [GdiplusStartup]--brokenlink--(_gdiplus_FUNC_GdiplusStartup_token_input_output_) in your [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) function), you have to suppress the GDI+ background thread.  
   
- You can do this by setting the **SuppressBackgroundThread** member of the [GdiplusStartupInput](https://msdn.microsoft.com/en-us/library/windows/desktop/ms534067) structure to **TRUE**. When suppressing the GDI+ background thread, the **NotificationHook** and **NotificationUnhook** calls (see [GdiplusStartupOutput](https://msdn.microsoft.com/en-us/library/windows/desktop/ms534068)) should be made just prior to entering and exiting the application's message loop. Therefore, a good place to call **GdiplusStartup** and the hook notification functions would be in an override of the virtual function [CWinApp::Run](../mfc/reference/cwinapp-class.md#run), as shown below:  
+ You can do this by setting the **SuppressBackgroundThread** member of the [GdiplusStartupInput]--brokenlink--(_gdiplus_STRUC_GdiplusStartupInput) structure to **TRUE**. When suppressing the GDI+ background thread, the **NotificationHook** and **NotificationUnhook** calls (see [GdiplusStartupOutput]--brokenlink--(_gdiplus_STRUC_GdiplusStartupOutput)) should be made just prior to entering and exiting the application's message loop. Therefore, a good place to call **GdiplusStartup** and the hook notification functions would be in an override of the virtual function [CWinApp::Run](../mfc/reference/cwinapp-class.md#run), as shown below:  
   
  [!code-cpp[NVC_MFCDocView#6](../mfc/codesnippet/cpp/special-cwinapp-services_1.cpp)]  
   
