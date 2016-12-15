@@ -184,7 +184,7 @@ void AddCommandControl(
  A Boolean parameter that indicates whether a command requires elevation.  
   
 ### Remarks  
- The [CTaskDialog Class](../../mfc/reference/ctaskdialog-class.md) can display an unlimited number of command button controls. However, if a `CTaskDialog` displays any command button controls, it can display a maximum of six buttons. If a `CTaskDialog` has no command button controls, it can display an unlimited number of buttons.  
+ The `CTaskDialog Class` can display an unlimited number of command button controls. However, if a `CTaskDialog` displays any command button controls, it can display a maximum of six buttons. If a `CTaskDialog` has no command button controls, it can display an unlimited number of buttons.  
   
  When the user selects a command button control, the `CTaskDialog` closes. If your application displays the dialog box by using [CTaskDialog::DoModal](#domodal), `DoModal` returns the `nCommandControlID` of the selected command button control.  
   
@@ -467,7 +467,7 @@ BOOL IsCommandControlEnabled(int nCommandControlID) const;
  `TRUE` if the control is enabled, `FALSE` if it is not.  
   
 ### Remarks  
- You can use this method to determine the availability of both command button controls and the common buttons of the [CTaskDialog Class](../../mfc/reference/ctaskdialog-class.md).  
+ You can use this method to determine the availability of both command button controls and the common buttons of the `CTaskDialog Class`.  
   
  If `nCommandControlID` is not a valid identifier for either a common `CTaskDialog` button or a command button control, this method throws an exception.  
   
@@ -507,7 +507,7 @@ static BOOL IsSupported();
  `TRUE` if the computer supports the `CTaskDialog`; `FALSE` otherwise.  
   
 ### Remarks  
- Use this function to determine at runtime if the computer that is running your application supports the [CTaskDialog Class](../../mfc/reference/ctaskdialog-class.md). If the computer does not support the `CTaskDialog`, you should provide another method of communicating information to the user. Your application will crash if it tries to use a `CTaskDialog` on a computer that does not support the `CTaskDialog` class.  
+ Use this function to determine at runtime if the computer that is running your application supports the `CTaskDialog Class`. If the computer does not support the `CTaskDialog`, you should provide another method of communicating information to the user. Your application will crash if it tries to use a `CTaskDialog` on a computer that does not support the `CTaskDialog` class.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CTaskDialog#1](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_5.cpp)]  
@@ -787,7 +787,7 @@ void SetCommandControlOptions(
  A Boolean parameter that indicates if the specified command button control requires elevation.  
   
 ### Remarks  
- Use this method to change whether a command button control is enabled or requires elevation after it has been added to the [CTaskDialog Class](../../mfc/reference/ctaskdialog-class.md).  
+ Use this method to change whether a command button control is enabled or requires elevation after it has been added to the `CTaskDialog Class`.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CTaskDialog#2](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_1.cpp)]  
@@ -839,7 +839,7 @@ void SetCommonButtons(
  A mask of the buttons that require elevation.  
   
 ### Remarks  
- You cannot call this method after the display window for this instance of the [CTaskDialog Class](../../mfc/reference/ctaskdialog-class.md) is created. If you do, this method throws an exception.  
+ You cannot call this method after the display window for this instance of the `CTaskDialog Class` is created. If you do, this method throws an exception.  
   
  The buttons indicated by `nButtonMask` override any common buttons previously added to the `CTaskDialog`. Only the buttons indicated in `nButtonMask` are available.  
   
@@ -862,7 +862,7 @@ void SetContent(const CString& strContent);
  The string to display to the user.  
   
 ### Remarks  
- The content of the [CTaskDialog Class](../../mfc/reference/ctaskdialog-class.md) is the text that is displayed to the user in the main section of the dialog box.  
+ The content of the `CTaskDialog Class` is the text that is displayed to the user in the main section of the dialog box.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CTaskDialog#7](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_3.cpp)]  
@@ -945,7 +945,7 @@ void SetExpansionArea(
  The string that the `CTaskDialog` displays next to the expansion button when the expanded area is displayed.  
   
 ### Remarks  
- The expansion area of the [CTaskDialog Class](../../mfc/reference/ctaskdialog-class.md) enables you to provide additional information to the user. The expansion area is in the main part of the `CTaskDialog`, located immediately underneath the title and content string.  
+ The expansion area of the `CTaskDialog Class` enables you to provide additional information to the user. The expansion area is in the main part of the `CTaskDialog`, located immediately underneath the title and content string.  
   
  When the `CTaskDialog` is first displayed, it does not show the expanded information and puts `strCollapsedLabel` next to the expansion button. When the user clicks the expansion button, the `CTaskDialog` displays `strExpandedInformation` and changes the label to `strExpandedLabel`.  
   
@@ -1033,7 +1033,7 @@ void SetMainInstruction(const CString& strInstructions);
  The new main instruction.  
   
 ### Remarks  
- The main instruction of the [CTaskDialog Class](../../mfc/reference/ctaskdialog-class.md) is text displayed to the user in a large bold font. It is located in the dialog box underneath the title bar.  
+ The main instruction of the `CTaskDialog Class` is text displayed to the user in a large bold font. It is located in the dialog box underneath the title bar.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CTaskDialog#7](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_3.cpp)]  
@@ -1122,7 +1122,7 @@ void SetProgressBarMarquee(
  An integer that indicates the speed of the marquee bar.  
   
 ### Remarks  
- The marquee bar appears underneath the main text of the [CTaskDialog Class](../../mfc/reference/ctaskdialog-class.md).  
+ The marquee bar appears underneath the main text of the `CTaskDialog Class`.  
   
  Use `nMarqueeSpeed` to set the speed of the marquee bar; larger values indicate a slower speed. A value of 0 for `nMarqueeSpeed` makes the marquee bar move at the default speed for [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)].  
   
@@ -1252,7 +1252,7 @@ void SetVerificationCheckboxText(CString& strVerificationText);
  The text that this method displays next to the verification check box.  
   
 ### Remarks  
- This method throws an exception with the [ENSURE](http://msdn.microsoft.com/library/738c4ccf-c29c-4c04-8d6c-f126bedf6e91) macro if this instance of the [CTaskDialog Class](../../mfc/reference/ctaskdialog-class.md) is already displayed.  
+ This method throws an exception with the [ENSURE](http://msdn.microsoft.com/library/738c4ccf-c29c-4c04-8d6c-f126bedf6e91) macro if this instance of the `CTaskDialog Class` is already displayed.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CTaskDialog#5](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_4.cpp)]  
@@ -1317,7 +1317,7 @@ static INT_PTR ShowDialog(
  An integer that corresponds to the selection made by the user.  
   
 ### Remarks  
- This static method enables you to create an instance of the [CTaskDialog Class](../../mfc/reference/ctaskdialog-class.md) without explicitly creating a `CTaskDialog` object in your code. Because there is no `CTaskDialog` object, you cannot call any other methods of the `CTaskDialog` if you use this method to show a `CTaskDialog` to the user.  
+ This static method enables you to create an instance of the `CTaskDialog Class` without explicitly creating a `CTaskDialog` object in your code. Because there is no `CTaskDialog` object, you cannot call any other methods of the `CTaskDialog` if you use this method to show a `CTaskDialog` to the user.  
   
  This method creates command button controls by using data from the resource file of your application. The string table in the resource file has several strings with associated string IDs. This method adds a command button control for each valid entry in the string table between `nIDCommandControlsFirst` and `nCommandControlsLast`, inclusive. For these command button controls, the string in the string table is the control's caption and the string ID is the control's ID.  
   

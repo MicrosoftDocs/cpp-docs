@@ -59,28 +59,28 @@ template <class T, class TEqual = CSimpleArrayEqualHelper<T>>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleArray::CSimpleArray](#csimplearray__csimplearray)|The constructor for the simple array.|  
-|[CSimpleArray::~CSimpleArray](#csimplearray___dtorcsimplearray)|The destructor for the simple array.|  
+|[CSimpleArray::CSimpleArray](#csimplearray)|The constructor for the simple array.|  
+|[CSimpleArray::~CSimpleArray](#dtor)|The destructor for the simple array.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleArray::Add](#csimplearray__add)|Adds a new element to the array.|  
-|[CSimpleArray::Find](#csimplearray__find)|Finds an element in the array.|  
-|[CSimpleArray::GetData](#csimplearray__getdata)|Returns a pointer to the data stored in the array.|  
-|[CSimpleArray::GetSize](#csimplearray__getsize)|Returns the number of elements stored in the array.|  
-|[CSimpleArray::Remove](#csimplearray__remove)|Removes a given element from the array.|  
-|[CSimpleArray::RemoveAll](#csimplearray__removeall)|Removes all elements from the array.|  
-|[CSimpleArray::RemoveAt](#csimplearray__removeat)|Removes the specified element from the array.|  
-|[CSimpleArray::SetAtIndex](#csimplearray__setatindex)|Sets the specified element in the array.|  
+|[CSimpleArray::Add](#add)|Adds a new element to the array.|  
+|[CSimpleArray::Find](#find)|Finds an element in the array.|  
+|[CSimpleArray::GetData](#getdata)|Returns a pointer to the data stored in the array.|  
+|[CSimpleArray::GetSize](#getsize)|Returns the number of elements stored in the array.|  
+|[CSimpleArray::Remove](#remove)|Removes a given element from the array.|  
+|[CSimpleArray::RemoveAll](#removeall)|Removes all elements from the array.|  
+|[CSimpleArray::RemoveAt](#removeat)|Removes the specified element from the array.|  
+|[CSimpleArray::SetAtIndex](#setatindex)|Sets the specified element in the array.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleArray::operator\[\]](#csimplearray__operator_at)|Retrieves an element from the array.|  
-|[CSimpleArray::operator =](#csimplearray__operator_eq)|Assignment operator.|  
+|[CSimpleArray::operator\[\]](#operator_at)|Retrieves an element from the array.|  
+|[CSimpleArray::operator =](#operator_eq)|Assignment operator.|  
 
   
 ## Remarks  
@@ -96,7 +96,7 @@ template <class T, class TEqual = CSimpleArrayEqualHelper<T>>
 ## Example  
  [!code-cpp[NVC_ATL_Utilities#86](../../atl/codesnippet/cpp/csimplearray-class_1.cpp)]  
   
-##  <a name="csimplearray__add"></a>  CSimpleArray::Add  
+##  <a name="add"></a>  CSimpleArray::Add  
  Adds a new element to the array.  
   
 ```
@@ -113,7 +113,7 @@ BOOL Add(const T& t);
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#87](../../atl/codesnippet/cpp/csimplearray-class_2.cpp)]  
   
-##  <a name="csimplearray__csimplearray"></a>  CSimpleArray::CSimpleArray  
+##  <a name="csimplearray"></a>  CSimpleArray::CSimpleArray  
  The constructor for the array object.  
   
 ```
@@ -130,7 +130,7 @@ CSimpleArray(
 ### Remarks  
  Initializes the data members, creating a new empty `CSimpleArray` object, or a copy of an existing `CSimpleArray` object.  
   
-##  <a name="csimplearray___dtorcsimplearray"></a>  CSimpleArray::~CSimpleArray  
+##  <a name="dtor"></a>  CSimpleArray::~CSimpleArray  
  The destructor.  
   
 ```
@@ -140,7 +140,7 @@ CSimpleArray(
 ### Remarks  
  Frees all allocated resources.  
   
-##  <a name="csimplearray__find"></a>  CSimpleArray::Find  
+##  <a name="find"></a>  CSimpleArray::Find  
  Finds an element in the array.  
   
 ```
@@ -157,7 +157,7 @@ int Find(const T& t) const;
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#88](../../atl/codesnippet/cpp/csimplearray-class_3.cpp)]  
   
-##  <a name="csimplearray__getdata"></a>  CSimpleArray::GetData  
+##  <a name="getdata"></a>  CSimpleArray::GetData  
  Returns a pointer to the data stored in the array.  
   
 ```
@@ -167,7 +167,7 @@ T* GetData() const;
 ### Return Value  
  Returns a pointer to the data in the array.  
   
-##  <a name="csimplearray__getsize"></a>  CSimpleArray::GetSize  
+##  <a name="getsize"></a>  CSimpleArray::GetSize  
  Returns the number of elements stored in the array.  
   
 ```
@@ -177,7 +177,7 @@ int GetSize() const;
 ### Return Value  
  Returns the number of elements stored in the array.  
   
-##  <a name="csimplearray__operator_at"></a>  CSimpleArray::operator \[\]  
+##  <a name="operator_at"></a>  CSimpleArray::operator \[\]  
  Retrieves an element from the array.  
   
 ```
@@ -194,7 +194,7 @@ T& operator[](int   nindex);
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#89](../../atl/codesnippet/cpp/csimplearray-class_4.cpp)]  
   
-##  <a name="csimplearray__operator_eq"></a>  CSimpleArray::operator =  
+##  <a name="operator_eq"></a>  CSimpleArray::operator =  
  Assignment operator.  
   
 ```
@@ -218,7 +218,7 @@ CSimpleArray<T,
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#90](../../atl/codesnippet/cpp/csimplearray-class_5.cpp)]  
   
-##  <a name="csimplearray__remove"></a>  CSimpleArray::Remove  
+##  <a name="remove"></a>  CSimpleArray::Remove  
  Removes a given element from the array.  
   
 ```
@@ -235,7 +235,7 @@ BOOL Remove(const T& t);
 ### Remarks  
  When an element is removed, the remaining elements in the array are renumbered to fill the empty space.  
   
-##  <a name="csimplearray__removeall"></a>  CSimpleArray::RemoveAll  
+##  <a name="removeall"></a>  CSimpleArray::RemoveAll  
  Removes all elements from the array.  
   
 ```
@@ -245,7 +245,7 @@ void RemoveAll();
 ### Remarks  
  Removes all elements currently stored in the array.  
   
-##  <a name="csimplearray__removeat"></a>  CSimpleArray::RemoveAt  
+##  <a name="removeat"></a>  CSimpleArray::RemoveAt  
  Removes the specified element from the array.  
   
 ```
@@ -262,7 +262,7 @@ BOOL RemoveAt(int   nIndex);
 ### Remarks  
  When an element is removed, the remaining elements in the array are renumbered to fill the empty space.  
   
-##  <a name="csimplearray__setatindex"></a>  CSimpleArray::SetAtIndex  
+##  <a name="setatindex"></a>  CSimpleArray::SetAtIndex  
  Set the specified element in the array.  
   
 ```

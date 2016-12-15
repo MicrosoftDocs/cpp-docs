@@ -59,18 +59,18 @@ template <class T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlModuleT::CAtlModuleT](#catlmodulet__catlmodulet)|The constructor.|  
+|[CAtlModuleT::CAtlModuleT](#catlmodulet)|The constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlModuleT::InitLibId](#catlmodulet__initlibid)|Initializes the data member containing the GUID of the current module.|  
-|[CAtlModuleT::RegisterAppId](#catlmodulet__registerappid)|Adds the EXE to the registry.|  
-|[CAtlModuleT::RegisterServer](#catlmodulet__registerserver)|Adds the service to the registry.|  
-|[CAtlModuleT::UnregisterAppId](#catlmodulet__unregisterappid)|Removes the EXE from the registry.|  
-|[CAtlModuleT::UnregisterServer](#catlmodulet__unregisterserver)|Removes the service from the registry.|  
-|[CAtlModuleT::UpdateRegistryAppId](#catlmodulet__updateregistryappid)|Updates the EXE information in the registry.|  
+|[CAtlModuleT::InitLibId](#initlibid)|Initializes the data member containing the GUID of the current module.|  
+|[CAtlModuleT::RegisterAppId](#registerappid)|Adds the EXE to the registry.|  
+|[CAtlModuleT::RegisterServer](#registerserver)|Adds the service to the registry.|  
+|[CAtlModuleT::UnregisterAppId](#unregisterappid)|Removes the EXE from the registry.|  
+|[CAtlModuleT::UnregisterServer](#unregisterserver)|Removes the service from the registry.|  
+|[CAtlModuleT::UpdateRegistryAppId](#updateregistryappid)|Updates the EXE information in the registry.|  
   
 ## Remarks  
  `CAtlModuleT`, derived from [CAtlModule](../../atl/reference/catlmodule-class.md), implements an Executable (EXE) or a Service (EXE) ATL module. An Executable module is a local, out-of-process server, whereas a Service module is a Windows application that runs in the background when Windows starts.  
@@ -88,7 +88,7 @@ template <class T>
 ## Requirements  
  **Header:** atlbase.h  
   
-##  <a name="catlmodulet__catlmodulet"></a>  CAtlModuleT::CAtlModuleT  
+##  <a name="catlmodulet"></a>  CAtlModuleT::CAtlModuleT  
  The constructor.  
   
 ```
@@ -96,9 +96,9 @@ CAtlModuleT() throw();
 ```  
   
 ### Remarks  
- Calls [CAtlModuleT::InitLibId](#catlmodulet__initlibid).  
+ Calls [CAtlModuleT::InitLibId](#initlibid).  
   
-##  <a name="catlmodulet__initlibid"></a>  CAtlModuleT::InitLibId  
+##  <a name="initlibid"></a>  CAtlModuleT::InitLibId  
  Initializes the data member containing the GUID of the current module.  
   
 ```
@@ -106,9 +106,9 @@ static void InitLibId() throw();
 ```  
   
 ### Remarks  
- Called by the constructor [CAtlModuleT::CAtlModuleT](#catlmodulet__catlmodulet).  
+ Called by the constructor [CAtlModuleT::CAtlModuleT](#catlmodulet).  
   
-##  <a name="catlmodulet__registerappid"></a>  CAtlModuleT::RegisterAppId  
+##  <a name="registerappid"></a>  CAtlModuleT::RegisterAppId  
  Adds the EXE to the registry.  
   
 ```
@@ -118,7 +118,7 @@ HRESULT RegisterAppId() throw();
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
-##  <a name="catlmodulet__registerserver"></a>  CAtlModuleT::RegisterServer  
+##  <a name="registerserver"></a>  CAtlModuleT::RegisterServer  
  Adds the service to the registry.  
   
 ```
@@ -137,7 +137,7 @@ HRESULT RegisterServer(
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
-##  <a name="catlmodulet__unregisterappid"></a>  CAtlModuleT::UnregisterAppId  
+##  <a name="unregisterappid"></a>  CAtlModuleT::UnregisterAppId  
  Removes the EXE from the registry.  
   
 ```
@@ -147,7 +147,7 @@ HRESULT UnregisterAppId() throw();
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
-##  <a name="catlmodulet__unregisterserver"></a>  CAtlModuleT::UnregisterServer  
+##  <a name="unregisterserver"></a>  CAtlModuleT::UnregisterServer  
  Removes the service from the registry.  
   
 ```
@@ -166,7 +166,7 @@ HRESULT UnregisterServer(
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
-##  <a name="catlmodulet__updateregistryappid"></a>  CAtlModuleT::UpdateRegistryAppId  
+##  <a name="updateregistryappid"></a>  CAtlModuleT::UpdateRegistryAppId  
  Updates the EXE information in the registry.  
   
 ```

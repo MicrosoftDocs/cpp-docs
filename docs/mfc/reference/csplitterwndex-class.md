@@ -104,6 +104,6 @@ virtual void OnDrawSplitter(
   
 ## See Also  
  [Hierarchy Chart](../hierarchy-chart.md)   
- [Classes](../mfc-classes.md)   
+ [Classes](mfc-classes.md)   
  [CSplitterWnd Class](csplitterwnd-class.md)   
  [CMFCVisualManager Class](cmfcvisualmanager-class.md)

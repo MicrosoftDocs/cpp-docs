@@ -143,7 +143,7 @@ BOOL AutoLoad(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- Use the `AutoLoad` function to initialize an owner-draw button in a dialog box as a bitmap button. Instructions for using this function are in the remarks for the [CBitmapButton](../../mfc/reference/cbitmapbutton-class.md) class.  
+ Use the `AutoLoad` function to initialize an owner-draw button in a dialog box as a bitmap button. Instructions for using this function are in the remarks for the `CBitmapButton` class.  
   
 ### Example  
  [!code-cpp[NVC_MFCControlLadenDialog#75](../../mfc/codesnippet/cpp/cbitmapbutton-class_1.cpp)]  

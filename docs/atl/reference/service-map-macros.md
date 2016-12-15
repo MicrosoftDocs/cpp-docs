@@ -38,7 +38,7 @@ These macros define service maps and entries.
 |[BEGIN_SERVICE_MAP](#begin_service_map)|Marks the beginning of an ATL service map.|  
 |[END_SERVICE_MAP](#end_service_map)|Marks the end of an ATL service map.|  
 |[SERVICE_ENTRY](#service_entry)|Indicates that the object supports a specific service ID.|  
-|[SERVICE_ENTRY_CHAIN](#service_entry_chain)|Instructs [IServiceProviderImpl::QueryService](#iserviceproviderimpl__queryservice) to chain to the specified object.|  
+|[SERVICE_ENTRY_CHAIN](#service_entry_chain)|Instructs [IServiceProviderImpl::QueryService](#queryservice) to chain to the specified object.|  
   
 ##  <a name="begin_service_map"></a>  BEGIN_SERVICE_MAP  
  Marks the beginning of the service map.  
@@ -56,7 +56,7 @@ BEGIN_SERVICE_MAP(theClass)
   
 - [SERVICE_ENTRY](#service_entry)   Indicates support for the specified service ID (SID).  
   
-- [SERVICE_ENTRY_CHAIN](#service_entry_chain)   Instructs [IServiceProviderImpl::QueryService](#iserviceproviderimpl__queryservice) to chain to another, specified object.  
+- [SERVICE_ENTRY_CHAIN](#service_entry_chain)   Instructs [IServiceProviderImpl::QueryService](#queryservice) to chain to another, specified object.  
   
 ### Example  
  [!code-cpp[NVC_ATL_COM#57](../../atl/codesnippet/cpp/service-map-macros_1.h)]  
@@ -86,7 +86,7 @@ SERVICE_ENTRY( SID )
  See the example for [BEGIN_SERVICE_MAP](#begin_service_map).  
   
 ##  <a name="service_entry_chain"></a>  SERVICE_ENTRY_CHAIN  
- Instructs [IServiceProviderImpl::QueryService](#iserviceproviderimpl__queryservice) to chain to the object specified by `punk`.  
+ Instructs [IServiceProviderImpl::QueryService](#queryservice) to chain to the object specified by `punk`.  
   
 ```
 SERVICE_ENTRY_CHAIN( punk )
@@ -99,7 +99,7 @@ SERVICE_ENTRY_CHAIN( punk )
 ### Example  
  See the example for [BEGIN_SERVICE_MAP](#begin_service_map).  
   
-##  <a name="iserviceproviderimpl__queryservice"></a>  IServiceProviderImpl::QueryService  
+##  <a name="queryservice"></a>  IServiceProviderImpl::QueryService  
  Creates or accesses the specified service and returns an interface pointer to the specified interface for the service.  
   
 ```

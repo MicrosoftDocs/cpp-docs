@@ -7,7 +7,7 @@
 ## [Implement Pure Virtuals](refactoring/implement-pure-virtuals.md)
 ## [Move Function Definition](refactoring/move-definition-location.md)
 ## [Rename](refactoring/rename.md)
-# [Visual C++ Tools and Templates in Visual Studio Editions](visual-cpp-tools-and-templates-in-visual-studio-editions.md)
+# [Visual C++ Tools and Features in Visual Studio Editions](visual-cpp-tools-and-features-in-visual-studio-editions.md)
 # [Creating and Managing Visual C++ Projects](creating-and-managing-visual-cpp-projects.md)
 ## [Visual C++ Project Types](visual-cpp-project-types.md)
 ## [Using Visual C++ Add New Item Templates](using-visual-cpp-add-new-item-templates.md)

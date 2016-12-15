@@ -80,7 +80,7 @@ class CMFCAcceleratorKeyAssignCtrl : public CEdit
   
  [CEdit](../../mfc/reference/cedit-class.md)  
   
- [CMFCAcceleratorKeyAssignCtrl](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md)  
+ `CMFCAcceleratorKeyAssignCtrl`   
   
 ## Requirements  
  **Header:** afxacceleratorkeyassignctrl.h  

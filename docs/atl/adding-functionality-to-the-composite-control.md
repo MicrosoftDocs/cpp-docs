@@ -48,7 +48,7 @@ Once you have inserted any necessary controls into the composite control, the ne
   
  After inserting an ActiveX control in the dialog resource, right-click the control and click **Add Event Handler**. Select the event you want to handle and click **Add and Edit**. The event handler code will be added to the control's .h file.  
   
- Connection points for ActiveX controls on the composite control are automatically connected and disconnected via calls to [CComCompositeControl::AdviseSinkMap](../atl/reference/ccomcompositecontrol-class.md#ccomcompositecontrol__advisesinkmap).  
+ Connection points for ActiveX controls on the composite control are automatically connected and disconnected via calls to [CComCompositeControl::AdviseSinkMap](../atl/reference/ccomcompositecontrol-class.md#advisesinkmap).  
   
 ## See Also  
  [Composite Control Fundamentals](../atl/atl-composite-control-fundamentals.md)

@@ -93,7 +93,7 @@ class CAnimationColor : public CAnimationBaseObject;
   
  [CAnimationBaseObject](../../mfc/reference/canimationbaseobject-class.md)  
   
- [CAnimationColor](../../mfc/reference/canimationcolor-class.md)  
+ `CAnimationColor`  
   
 ## Requirements  
  **Header:** afxanimationcontroller.h  

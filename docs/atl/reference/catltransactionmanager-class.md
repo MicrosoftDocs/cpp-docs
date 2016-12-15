@@ -53,36 +53,36 @@ class CAtlTransactionManager;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlTransactionManager::~CAtlTransactionManager](#catltransactionmanager___dtorcatltransactionmanager)|CAtlTransactionManager destructor.|  
-|[CAtlTransactionManager::CAtlTransactionManager](#catltransactionmanager__catltransactionmanager)|CAtlTransactionManager constructor.|  
+|[CAtlTransactionManager::~CAtlTransactionManager](#dtor)|CAtlTransactionManager destructor.|  
+|[CAtlTransactionManager::CAtlTransactionManager](#catltransactionmanager)|CAtlTransactionManager constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlTransactionManager::Close](#catltransactionmanager__close)|Closes one the transaction handle.|  
-|[CAtlTransactionManager::Commit](#catltransactionmanager__commit)|Requests that the transaction be committed.|  
-|[CAtlTransactionManager::Create](#catltransactionmanager__create)|Creates the transaction handle.|  
-|[CAtlTransactionManager::CreateFile](#catltransactionmanager__createfile)|Creates or opens a file, file stream, or directory as a transacted operation.|  
-|[CAtlTransactionManager::DeleteFile](#catltransactionmanager__deletefile)|Deletes an existing file as a transacted operation.|  
-|[CAtlTransactionManager::FindFirstFile](#catltransactionmanager__findfirstfile)|Searches a directory for a file or subdirectory as a transacted operation.|  
-|[CAtlTransactionManager::GetFileAttributes](#catltransactionmanager__getfileattributes)|Retrieves file system attributes for a specified file or directory as a transacted operation.|  
-|[CAtlTransactionManager::GetFileAttributesEx](#catltransactionmanager__getfileattributesex)|Retrieves file system attributes for a specified file or directory as a transacted operation.|  
-|[CAtlTransactionManager::GetHandle](#catltransactionmanager__gethandle)|Returns the transaction handle.|  
-|[CAtlTransactionManager::IsFallback](#catltransactionmanager__isfallback)|Determines whether the fallback calls are enabled.|  
-|[CAtlTransactionManager::MoveFile](#catltransactionmanager__movefile)|Moves an existing file or a directory, including its children, as a transacted operation.|  
-|[CAtlTransactionManager::RegCreateKeyEx](#catltransactionmanager__regcreatekeyex)|Creates the specified registry key and associates it with a transaction. If the key already exists, the function opens it.|  
-|[CAtlTransactionManager::RegDeleteKey](#catltransactionmanager__regdeletekey)|Deletes a subkey and its values from the specified platform-specific view of the registry as a transacted operation.|  
-|[CAtlTransactionManager::RegOpenKeyEx](#catltransactionmanager__regopenkeyex)|Opens the specified registry key and associates it with a transaction.|  
-|[CAtlTransactionManager::Rollback](#catltransactionmanager__rollback)|Requests that the transaction be rolled back.|  
-|[CAtlTransactionManager::SetFileAttributes](#catltransactionmanager__setfileattributes)|Sets the attributes for a file or directory as a transacted operation.|  
+|[CAtlTransactionManager::Close](#close)|Closes one the transaction handle.|  
+|[CAtlTransactionManager::Commit](#commit)|Requests that the transaction be committed.|  
+|[CAtlTransactionManager::Create](#create)|Creates the transaction handle.|  
+|[CAtlTransactionManager::CreateFile](#createfile)|Creates or opens a file, file stream, or directory as a transacted operation.|  
+|[CAtlTransactionManager::DeleteFile](#deletefile)|Deletes an existing file as a transacted operation.|  
+|[CAtlTransactionManager::FindFirstFile](#findfirstfile)|Searches a directory for a file or subdirectory as a transacted operation.|  
+|[CAtlTransactionManager::GetFileAttributes](#getfileattributes)|Retrieves file system attributes for a specified file or directory as a transacted operation.|  
+|[CAtlTransactionManager::GetFileAttributesEx](#getfileattributesex)|Retrieves file system attributes for a specified file or directory as a transacted operation.|  
+|[CAtlTransactionManager::GetHandle](#gethandle)|Returns the transaction handle.|  
+|[CAtlTransactionManager::IsFallback](#isfallback)|Determines whether the fallback calls are enabled.|  
+|[CAtlTransactionManager::MoveFile](#movefile)|Moves an existing file or a directory, including its children, as a transacted operation.|  
+|[CAtlTransactionManager::RegCreateKeyEx](#regcreatekeyex)|Creates the specified registry key and associates it with a transaction. If the key already exists, the function opens it.|  
+|[CAtlTransactionManager::RegDeleteKey](#regdeletekey)|Deletes a subkey and its values from the specified platform-specific view of the registry as a transacted operation.|  
+|[CAtlTransactionManager::RegOpenKeyEx](#regopenkeyex)|Opens the specified registry key and associates it with a transaction.|  
+|[CAtlTransactionManager::Rollback](#rollback)|Requests that the transaction be rolled back.|  
+|[CAtlTransactionManager::SetFileAttributes](#setfileattributes)|Sets the attributes for a file or directory as a transacted operation.|  
   
 ### Protected Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlTransactionManager::m_bFallback](#catltransactionmanager__m_bfallback)|`TRUE` if the fallback is supported; `FALSE` otherwise.|  
-|[CAtlTransactionManager::m_hTransaction](#catltransactionmanager__m_htransaction)|The transaction handle.|  
+|[CAtlTransactionManager::m_bFallback](#m_bfallback)|`TRUE` if the fallback is supported; `FALSE` otherwise.|  
+|[CAtlTransactionManager::m_hTransaction](#m_htransaction)|The transaction handle.|  
   
 ## Remarks  
   
@@ -92,7 +92,7 @@ class CAtlTransactionManager;
 ## Requirements  
  **Header:** atltransactionmanager.h  
   
-##  <a name="catltransactionmanager___dtorcatltransactionmanager"></a>  CAtlTransactionManager::~CAtlTransactionManager  
+##  <a name="dtor"></a>  CAtlTransactionManager::~CAtlTransactionManager  
  CAtlTransactionManager destructor.  
   
 ```
@@ -102,7 +102,7 @@ virtual ~CAtlTransactionManager();
 ### Remarks  
  In normal processing, the transaction is automatically committed and closed. If the destructor is called during an exception unwind, the transaction is rolled back and closed.  
   
-##  <a name="catltransactionmanager__catltransactionmanager"></a>  CAtlTransactionManager::CAtlTransactionManager  
+##  <a name="catltransactionmanager"></a>  CAtlTransactionManager::CAtlTransactionManager  
  CAtlTransactionManager constructor.  
   
 ```
@@ -118,7 +118,7 @@ CAtlTransactionManager(BOOL bFallback = TRUE,  BOOL bAutoCreateTransaction = TRU
   
 ### Remarks  
   
-##  <a name="catltransactionmanager__close"></a>  CAtlTransactionManager::Close  
+##  <a name="close"></a>  CAtlTransactionManager::Close  
  Closes the transaction handle.  
   
 ```
@@ -131,7 +131,7 @@ inline BOOL CAtlTransactionManager::Close();
 ### Remarks  
  This wrapper calls the `CloseHandle` function. The method is automatically called in the destructor.  
   
-##  <a name="catltransactionmanager__commit"></a>  CAtlTransactionManager::Commit  
+##  <a name="commit"></a>  CAtlTransactionManager::Commit  
  Requests that the transaction be committed.  
   
 ```
@@ -144,7 +144,7 @@ inline BOOL CAtlTransactionManager::Commit();
 ### Remarks  
  This wrapper calls the `CommitTransaction` function. The method is automatically called in the destructor.  
   
-##  <a name="catltransactionmanager__create"></a>  CAtlTransactionManager::Create  
+##  <a name="create"></a>  CAtlTransactionManager::Create  
  Creates the transaction handle.  
   
 ```
@@ -157,7 +157,7 @@ inline BOOL CAtlTransactionManager::Create();
 ### Remarks  
  This wrapper calls the `CreateTransaction` function. Check it for  
   
-##  <a name="catltransactionmanager__createfile"></a>  CAtlTransactionManager::CreateFile  
+##  <a name="createfile"></a>  CAtlTransactionManager::CreateFile  
  Creates or opens a file, file stream, or directory as a transacted operation.  
   
 ```
@@ -198,7 +198,7 @@ inline HANDLE CAtlTransactionManager::CreateFile(LPCTSTR lpFileName,
 ### Remarks  
  This wrapper calls the `CreateFileTransacted` function.  
   
-##  <a name="catltransactionmanager__deletefile"></a>  CAtlTransactionManager::DeleteFile  
+##  <a name="deletefile"></a>  CAtlTransactionManager::DeleteFile  
  Deletes an existing file as a transacted operation.  
   
 ```
@@ -212,7 +212,7 @@ inline BOOL CAtlTransactionManager::DeleteFile(LPCTSTR lpFileName);
 ### Remarks  
  This wrapper calls the `DeleteFileTransacted` function.  
   
-##  <a name="catltransactionmanager__findfirstfile"></a>  CAtlTransactionManager::FindFirstFile  
+##  <a name="findfirstfile"></a>  CAtlTransactionManager::FindFirstFile  
  Searches a directory for a file or subdirectory as a transacted operation.  
   
 ```
@@ -233,7 +233,7 @@ inline HANDLE CAtlTransactionManager::FindFirstFile(LPCTSTR lpFileName,
 ### Remarks  
  This wrapper calls the `FindFirstFileTransacted` function.  
   
-##  <a name="catltransactionmanager__getfileattributes"></a>  CAtlTransactionManager::GetFileAttributes  
+##  <a name="getfileattributes"></a>  CAtlTransactionManager::GetFileAttributes  
  Retrieves file system attributes for a specified file or directory as a transacted operation.  
   
 ```
@@ -247,7 +247,7 @@ inline DWORD CAtlTransactionManager::GetFileAttributes(LPCTSTR lpFileName);
 ### Remarks  
  This wrapper calls the `GetFileAttributesTransacted` function.  
   
-##  <a name="catltransactionmanager__getfileattributesex"></a>  CAtlTransactionManager::GetFileAttributesEx  
+##  <a name="getfileattributesex"></a>  CAtlTransactionManager::GetFileAttributesEx  
  Retrieves file system attributes for a specified file or directory as a transacted operation.  
   
 ```
@@ -269,7 +269,7 @@ inline BOOL CAtlTransactionManager::GetFileAttributesEx(LPCTSTR lpFileName,
 ### Remarks  
  This wrapper calls the `GetFileAttributesTransacted` function.  
   
-##  <a name="catltransactionmanager__gethandle"></a>  CAtlTransactionManager::GetHandle  
+##  <a name="gethandle"></a>  CAtlTransactionManager::GetHandle  
  Returns the transaction handle.  
   
 ```
@@ -281,7 +281,7 @@ HANDLE GetHandle() const;
   
 ### Remarks  
   
-##  <a name="catltransactionmanager__isfallback"></a>  CAtlTransactionManager::IsFallback  
+##  <a name="isfallback"></a>  CAtlTransactionManager::IsFallback  
  Determines whether the fallback calls are enabled.  
   
 ```
@@ -293,7 +293,7 @@ BOOL IsFallback() const;
   
 ### Remarks  
   
-##  <a name="catltransactionmanager__m_bfallback"></a>  CAtlTransactionManager::m_bFallback  
+##  <a name="m_bfallback"></a>  CAtlTransactionManager::m_bFallback  
  `TRUE` if the fallback is supported; `FALSE` otherwise.  
   
 ```
@@ -302,7 +302,7 @@ BOOL m_bFallback;
   
 ### Remarks  
   
-##  <a name="catltransactionmanager__m_htransaction"></a>  CAtlTransactionManager::m_hTransaction  
+##  <a name="m_htransaction"></a>  CAtlTransactionManager::m_hTransaction  
  The transaction handle.  
   
 ```
@@ -311,7 +311,7 @@ HANDLE m_hTransaction;
   
 ### Remarks  
   
-##  <a name="catltransactionmanager__movefile"></a>  CAtlTransactionManager::MoveFile  
+##  <a name="movefile"></a>  CAtlTransactionManager::MoveFile  
  Moves an existing file or a directory, including its children, as a transacted operation.  
   
 ```
@@ -328,7 +328,7 @@ inline BOOL CAtlTransactionManager::MoveFile(LPCTSTR lpOldFileName,  LPCTSTR lpN
 ### Remarks  
  This wrapper calls the `MoveFileTransacted` function.  
   
-##  <a name="catltransactionmanager__regcreatekeyex"></a>  CAtlTransactionManager::RegCreateKeyEx  
+##  <a name="regcreatekeyex"></a>  CAtlTransactionManager::RegCreateKeyEx  
  Creates the specified registry key and associates it with a transaction. If the key already exists, the function opens it.  
   
 ```
@@ -377,7 +377,7 @@ inline LSTATUS CAtlTransactionManager::RegCreateKeyEx(HKEY hKey,
 ### Remarks  
  This wrapper calls the `RegCreateKeyTransacted` function.  
   
-##  <a name="catltransactionmanager__regdeletekey"></a>  CAtlTransactionManager::RegDeleteKey  
+##  <a name="regdeletekey"></a>  CAtlTransactionManager::RegDeleteKey  
  Deletes a subkey and its values from the specified platform-specific view of the registry as a transacted operation.  
   
 ```
@@ -397,7 +397,7 @@ inline LSTATUS CAtlTransactionManager::RegDeleteKeyEx(HKEY hKey,  LPCTSTR lpSubK
 ### Remarks  
  This wrapper calls the `RegDeleteKeyTransacted` function.  
   
-##  <a name="catltransactionmanager__regopenkeyex"></a>  CAtlTransactionManager::RegOpenKeyEx  
+##  <a name="regopenkeyex"></a>  CAtlTransactionManager::RegOpenKeyEx  
  Opens the specified registry key and associates it with a transaction.  
   
 ```
@@ -430,7 +430,7 @@ inline LSTATUS CAtlTransactionManager::RegOpenKeyEx(HKEY hKey,
 ### Remarks  
  This wrapper calls the `RegOpenKeyTransacted` function.  
   
-##  <a name="catltransactionmanager__rollback"></a>  CAtlTransactionManager::Rollback  
+##  <a name="rollback"></a>  CAtlTransactionManager::Rollback  
  Requests that the transaction be rolled back.  
   
 ```
@@ -443,7 +443,7 @@ inline BOOL CAtlTransactionManager::Rollback();
 ### Remarks  
  This wrapper calls the `RollbackTransaction` function.  
   
-##  <a name="catltransactionmanager__setfileattributes"></a>  CAtlTransactionManager::SetFileAttributes  
+##  <a name="setfileattributes"></a>  CAtlTransactionManager::SetFileAttributes  
  Sets the attributes for a file or directory as a transacted operation.  
   
 ```

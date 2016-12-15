@@ -93,7 +93,7 @@ class CBaseTransition : public CObject;
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
   
- [CBaseTransition](../../mfc/reference/cbasetransition-class.md)  
+ `CBaseTransition`  
   
 ## Requirements  
  **Header:** afxanimationcontroller.h  

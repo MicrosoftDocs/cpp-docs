@@ -93,7 +93,7 @@ class CD2DGeometry : public CD2DResource;
   
  [CD2DResource](../../mfc/reference/cd2dresource-class.md)  
   
- [CD2DGeometry](../../mfc/reference/cd2dgeometry-class.md)  
+ `CD2DGeometry`  
   
 ## Requirements  
  **Header:** afxrendertarget.h  

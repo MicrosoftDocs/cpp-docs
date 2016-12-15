@@ -54,7 +54,7 @@ template <class T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleArrayEqualHelper::IsEqual](#csimplearrayequalhelper__isequal)|(Static) Tests two `CSimpleArray` object elements for equality.|  
+|[CSimpleArrayEqualHelper::IsEqual](#isequal)|(Static) Tests two `CSimpleArray` object elements for equality.|  
   
 ## Remarks  
  This traits class is a supplement to the `CSimpleArray` class. It provides a method for comparing two elements stored in a `CSimpleArray` object. By default, the elements are compared using **operator=()**, but if the array contains complex data types that lack their own equality operator, you will need to override this class.  
@@ -62,7 +62,7 @@ template <class T>
 ## Requirements  
  **Header:** atlsimpcoll.h  
   
-##  <a name="csimplearrayequalhelper__isequal"></a>  CSimpleArrayEqualHelper::IsEqual  
+##  <a name="isequal"></a>  CSimpleArrayEqualHelper::IsEqual  
  Tests two `CSimpleArray` object elements for equality.  
   
 ```

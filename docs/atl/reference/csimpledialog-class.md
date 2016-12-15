@@ -63,7 +63,7 @@ template <WORD t_wDlgTemplateID,  BOOL t_bCenter = TRUE>  class CSimpleDialog : 
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleDialog::DoModal](#csimpledialog__domodal)|Creates a modal dialog box.|  
+|[CSimpleDialog::DoModal](#domodal)|Creates a modal dialog box.|  
   
 ## Remarks  
  Implements a modal dialog box with basic functionality. `CSimpleDialog` provides support for Windows common controls only. To create and display a modal dialog box, create an instance of this class, providing the name of an existing resource template for the dialog box. The dialog box object closes when the user clicks any control with a pre-defined value (such as IDOK or IDCANCEL).  
@@ -80,7 +80,7 @@ template <WORD t_wDlgTemplateID,  BOOL t_bCenter = TRUE>  class CSimpleDialog : 
 ## Requirements  
  **Header:** atlwin.h  
   
-##  <a name="csimpledialog__domodal"></a>  CSimpleDialog::DoModal  
+##  <a name="domodal"></a>  CSimpleDialog::DoModal  
  Invokes a modal dialog box and returns the dialog-box result when done.  
   
 ```

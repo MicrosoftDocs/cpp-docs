@@ -89,7 +89,7 @@ class CAnimationValue : public CAnimationBaseObject;
   
  [CAnimationBaseObject](../../mfc/reference/canimationbaseobject-class.md)  
   
- [CAnimationValue](../../mfc/reference/canimationvalue-class.md)  
+ `CAnimationValue`
   
 ## Requirements  
  **Header:** afxanimationcontroller.h  

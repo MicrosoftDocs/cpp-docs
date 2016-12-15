@@ -128,7 +128,7 @@ class CMFCMenuBar : public CMFCToolbar
   
  [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md)  
   
- [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md)  
+ `CMFCMenuBar`  
   
 ## Requirements  
  **Header:** afxmenubar.h  
@@ -429,7 +429,7 @@ UINT GetDefaultMenuResId() const;
  A menu resource identifier.  
   
 ### Remarks  
- The framework loads the default menu for the [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) object from the resource file.  
+ The framework loads the default menu for the `CMFCMenuBar` object from the resource file.  
   
 ##  <a name="getfloatpopupdirection"></a>  CMFCMenuBar::GetFloatPopupDirection  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -630,7 +630,7 @@ static BOOL IsRecentlyUsedMenus();
 ```  
   
 ### Return Value  
- Nonzero if the [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) object shows recently used menu commands; otherwise 0.  
+ Nonzero if the `CMFCMenuBar` object shows recently used menu commands; otherwise 0.  
   
 ### Remarks  
  Use the function [CMFCMenuBar::SetRecentlyUsedMenus](#setrecentlyusedmenus) to control whether the menu bar shows recently used menu commands.  
@@ -643,7 +643,7 @@ static BOOL IsShowAllCommands();
 ```  
   
 ### Return Value  
- Nonzero if the [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) displays all commands; otherwise 0.  
+ Nonzero if the `CMFCMenuBar` displays all commands; otherwise 0.  
   
 ### Remarks  
  A `CMFCMenuBar` object can be configured to either show all commands or show only a subset of commands. For more information about this feature, see [CMFCMenuBar Class](../../mfc/reference/cmfcmenubar-class.md).  
@@ -718,7 +718,7 @@ virtual void OnDefaultMenuLoaded(HMENU hMenu);
   
 ### Parameters  
  [in] `hMenu`  
- The handle for the menu attached to the [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) object.  
+ The handle for the menu attached to the `CMFCMenuBar` object.  
   
 ### Remarks  
  The default implementation of this function does nothing. Override this function to execute custom code after the framework loads a menu resource from the resource file.  
@@ -915,7 +915,7 @@ static BOOL SetMenuFont(
  `TRUE` if the method was successful; otherwise `FALSE`.  
   
 ### Remarks  
- Two fonts are used for all [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) objects. These separate fonts are used for horizontal and vertical menu bars.  
+ Two fonts are used for all `CMFCMenuBar` objects. These separate fonts are used for horizontal and vertical menu bars.  
   
  The font settings are global variables and affect all `CMFCMenuBar` objects.  
   

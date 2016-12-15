@@ -67,7 +67,7 @@ class CD2DRectU : public D2D1_RECT_U;
 ## Inheritance Hierarchy  
  `D2D1_RECT_U`  
   
- [CD2DRectU](../../mfc/reference/cd2drectu-class.md)  
+ `CD2DRectU`  
   
 ## Requirements  
  **Header:** afxrendertarget.h  

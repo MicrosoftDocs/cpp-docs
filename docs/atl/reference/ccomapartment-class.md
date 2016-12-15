@@ -55,24 +55,24 @@ class CComApartment
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComApartment::CComApartment](#ccomapartment__ccomapartment)|The constructor.|  
+|[CComApartment::CComApartment](#ccomapartment)|The constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComApartment::Apartment](#ccomapartment__apartment)|Marks the thread's starting address.|  
-|[CComApartment::GetLockCount](#ccomapartment__getlockcount)|Returns the thread's current lock count.|  
-|[CComApartment::Lock](#ccomapartment__lock)|Increments the thread's lock count.|  
-|[CComApartment::Unlock](#ccomapartment__unlock)|Decrements the thread's lock count.|  
+|[CComApartment::Apartment](#apartment)|Marks the thread's starting address.|  
+|[CComApartment::GetLockCount](#getlockcount)|Returns the thread's current lock count.|  
+|[CComApartment::Lock](#lock)|Increments the thread's lock count.|  
+|[CComApartment::Unlock](#unlock)|Decrements the thread's lock count.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComApartment::m_dwThreadID](#ccomapartment__m_dwthreadid)|Contains the thread's identifier.|  
-|[CComApartment::m_hThread](#ccomapartment__m_hthread)|Contains the thread's handle.|  
-|[CComApartment::m_nLockCnt](#ccomapartment__m_nlockcnt)|Contains the thread's current lock count.|  
+|[CComApartment::m_dwThreadID](#m_dwthreadid)|Contains the thread's identifier.|  
+|[CComApartment::m_hThread](#m_hthread)|Contains the thread's handle.|  
+|[CComApartment::m_nLockCnt](#m_nlockcnt)|Contains the thread's current lock count.|  
   
 ## Remarks  
  `CComApartment` is used by [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md) to manage an apartment in a thread-pooled EXE module. `CComApartment` provides methods for incrementing and decrementing the lock count on a thread.  
@@ -80,7 +80,7 @@ class CComApartment
 ## Requirements  
  **Header:** atlbase.h  
   
-##  <a name="ccomapartment__apartment"></a>  CComApartment::Apartment  
+##  <a name="apartment"></a>  CComApartment::Apartment  
  Marks the thread's starting address.  
   
 ```
@@ -91,9 +91,9 @@ DWORD Apartment();
  Always 0.  
   
 ### Remarks  
- Automatically set during [CComAutoThreadModule::Init](../../atl/reference/ccomautothreadmodule-class.md#ccomautothreadmodule__init).  
+ Automatically set during [CComAutoThreadModule::Init](../../atl/reference/ccomautothreadmodule-class.md#init).  
   
-##  <a name="ccomapartment__ccomapartment"></a>  CComApartment::CComApartment  
+##  <a name="ccomapartment"></a>  CComApartment::CComApartment  
  The constructor.  
   
 ```
@@ -101,9 +101,9 @@ CComApartment();
 ```  
   
 ### Remarks  
- Initializes the `CComApartment` data members [m_nLockCnt](#ccomapartment__m_nlockcnt) and [m_hThread](#ccomapartment__m_hthread).  
+ Initializes the `CComApartment` data members [m_nLockCnt](#m_nlockcnt) and [m_hThread](#m_hthread).  
   
-##  <a name="ccomapartment__getlockcount"></a>  CComApartment::GetLockCount  
+##  <a name="getlockcount"></a>  CComApartment::GetLockCount  
  Returns the thread's current lock count.  
   
 ```
@@ -113,7 +113,7 @@ LONG GetLockCount();
 ### Return Value  
  The lock count on the thread.  
   
-##  <a name="ccomapartment__lock"></a>  CComApartment::Lock  
+##  <a name="lock"></a>  CComApartment::Lock  
  Increments the thread's lock count.  
   
 ```
@@ -124,32 +124,32 @@ LONG Lock();
  A value that may be useful for diagnostics or testing.  
   
 ### Remarks  
- Called by [CComAutoThreadModule::Lock](../../atl/reference/ccomautothreadmodule-class.md#ccomautothreadmodule__lock).  
+ Called by [CComAutoThreadModule::Lock](../../atl/reference/ccomautothreadmodule-class.md#lock).  
   
  The lock count on the thread is used for statistical purposes.  
   
-##  <a name="ccomapartment__m_dwthreadid"></a>  CComApartment::m_dwThreadID  
+##  <a name="m_dwthreadid"></a>  CComApartment::m_dwThreadID  
  Contains the thread's identifier.  
   
 ```
 DWORD m_dwThreadID;
 ```  
   
-##  <a name="ccomapartment__m_hthread"></a>  CComApartment::m_hThread  
+##  <a name="m_hthread"></a>  CComApartment::m_hThread  
  Contains the thread's handle.  
   
 ```
 HANDLE m_hThread;
 ```  
   
-##  <a name="ccomapartment__m_nlockcnt"></a>  CComApartment::m_nLockCnt  
+##  <a name="m_nlockcnt"></a>  CComApartment::m_nLockCnt  
  Contains the thread's current lock count.  
   
 ```
 LONG m_nLockCnt;
 ```  
   
-##  <a name="ccomapartment__unlock"></a>  CComApartment::Unlock  
+##  <a name="unlock"></a>  CComApartment::Unlock  
  Decrements the thread's lock count.  
   
 ```
@@ -160,7 +160,7 @@ LONG Unlock();
  A value that may be useful for diagnostics or testing.  
   
 ### Remarks  
- Called by [CComAutoThreadModule::Unlock](../../atl/reference/ccomautothreadmodule-class.md#ccomautothreadmodule__lock).  
+ Called by [CComAutoThreadModule::Unlock](../../atl/reference/ccomautothreadmodule-class.md#lock).  
   
  The lock count on the thread is used for statistical purposes.  
   

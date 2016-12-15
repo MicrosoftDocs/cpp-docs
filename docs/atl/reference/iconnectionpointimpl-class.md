@@ -63,17 +63,17 @@ template<class T,
   
 |Name|Description|  
 |----------|-----------------|  
-|[IConnectionPointImpl::Advise](#iconnectionpointimpl__advise)|Establishes a connection between the connection point and a sink.|  
-|[IConnectionPointImpl::EnumConnections](#iconnectionpointimpl__enumconnections)|Creates an enumerator to iterate through the connections for the connection point.|  
-|[IConnectionPointImpl::GetConnectionInterface](#iconnectionpointimpl__getconnectioninterface)|Retrieves the IID of the interface represented by the connection point.|  
-|[IConnectionPointImpl::GetConnectionPointContainer](#iconnectionpointimpl__getconnectionpointcontainer)|Retrieves an interface pointer to the connectable object.|  
-|[IConnectionPointImpl::Unadvise](#iconnectionpointimpl__unadvise)|Terminates a connection previously established through `Advise`.|  
+|[IConnectionPointImpl::Advise](#advise)|Establishes a connection between the connection point and a sink.|  
+|[IConnectionPointImpl::EnumConnections](#enumconnections)|Creates an enumerator to iterate through the connections for the connection point.|  
+|[IConnectionPointImpl::GetConnectionInterface](#getconnectioninterface)|Retrieves the IID of the interface represented by the connection point.|  
+|[IConnectionPointImpl::GetConnectionPointContainer](#getconnectionpointcontainer)|Retrieves an interface pointer to the connectable object.|  
+|[IConnectionPointImpl::Unadvise](#unadvise)|Terminates a connection previously established through `Advise`.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[IConnectionPointImpl::m_vec](#iconnectionpointimpl__m_vec)|Manages the connections for the connection point.|  
+|[IConnectionPointImpl::m_vec](#m_vec)|Manages the connections for the connection point.|  
   
 ## Remarks  
  `IConnectionPointImpl` implements a connection point, which allows an object to expose an outgoing interface to the client. The client implements this interface on an object called a sink.  
@@ -90,7 +90,7 @@ template<class T,
 ## Requirements  
  **Header:** atlcom.h  
   
-##  <a name="iconnectionpointimpl__advise"></a>  IConnectionPointImpl::Advise  
+##  <a name="advise"></a>  IConnectionPointImpl::Advise  
  Establishes a connection between the connection point and a sink.  
   
 ```
@@ -100,11 +100,11 @@ STDMETHOD(Advise)(
 ```  
   
 ### Remarks  
- Use [Unadvise](#iconnectionpointimpl__unadvise) to terminate the connection call.  
+ Use [Unadvise](#unadvise) to terminate the connection call.  
   
  See [IConnectionPoint::Advise](http://msdn.microsoft.com/library/windows/desktop/ms678815) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="iconnectionpointimpl__enumconnections"></a>  IConnectionPointImpl::EnumConnections  
+##  <a name="enumconnections"></a>  IConnectionPointImpl::EnumConnections  
  Creates an enumerator to iterate through the connections for the connection point.  
   
 ```
@@ -114,7 +114,7 @@ STDMETHOD(EnumConnections)(IEnumConnections** ppEnum);
 ### Remarks  
  See [IConnectionPoint::EnumConnections](http://msdn.microsoft.com/library/windows/desktop/ms680755) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="iconnectionpointimpl__getconnectioninterface"></a>  IConnectionPointImpl::GetConnectionInterface  
+##  <a name="getconnectioninterface"></a>  IConnectionPointImpl::GetConnectionInterface  
  Retrieves the IID of the interface represented by the connection point.  
   
 ```
@@ -124,7 +124,7 @@ STDMETHOD(GetConnectionInterface)(IID* piid2);
 ### Remarks  
  See [IConnectionPoint::GetConnectionInterface](http://msdn.microsoft.com/library/windows/desktop/ms693468) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="iconnectionpointimpl__getconnectionpointcontainer"></a>  IConnectionPointImpl::GetConnectionPointContainer  
+##  <a name="getconnectionpointcontainer"></a>  IConnectionPointImpl::GetConnectionPointContainer  
  Retrieves an interface pointer to the connectable object.  
   
 ```
@@ -134,7 +134,7 @@ STDMETHOD(GetConnectionPointContainer)(IConnectionPointContainer** ppCPC);
 ### Remarks  
  See [IConnectionPoint::GetConnectionPointContainer](http://msdn.microsoft.com/library/windows/desktop/ms679669) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="iconnectionpointimpl__m_vec"></a>  IConnectionPointImpl::m_vec  
+##  <a name="m_vec"></a>  IConnectionPointImpl::m_vec  
  Manages the connections between the connection point object and a sink.  
   
 ```
@@ -145,8 +145,8 @@ CDV
 ### Remarks  
  By default, `m_vec` is of type [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md).  
   
-##  <a name="iconnectionpointimpl__unadvise"></a>  IConnectionPointImpl::Unadvise  
- Terminates a connection previously established through [Advise](#iconnectionpointimpl__advise).  
+##  <a name="unadvise"></a>  IConnectionPointImpl::Unadvise  
+ Terminates a connection previously established through [Advise](#advise).  
   
 ```
 STDMETHOD(Unadvise)(DWORD dwCookie);

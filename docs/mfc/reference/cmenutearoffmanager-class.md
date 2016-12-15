@@ -75,7 +75,7 @@ class CMenuTearOffManager : public CObject
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
   
- [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md)  
+ `CMenuTearOffManager`   
   
 ## Requirements  
  **Header:** afxmenutearoffmanager.h  

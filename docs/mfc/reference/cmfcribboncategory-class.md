@@ -149,7 +149,7 @@ class CMFCRibbonCategory : public CObject
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
   
- [CMFCRibbonCategory](../../mfc/reference/cmfcribboncategory-class.md)  
+ `CMFCRibbonCategory`  
   
 ## Requirements  
  **Header:** afxribboncategory.h  
@@ -244,7 +244,7 @@ virtual void CopyFrom(CMFCRibbonCategory& src);
   
 ### Parameters  
  [in] `src`  
- The source [CMFCRibbonCategory](../../mfc/reference/cmfcribboncategory-class.md) object.  
+ The source `CMFCRibbonCategory` object.  
   
 ### Remarks  
   

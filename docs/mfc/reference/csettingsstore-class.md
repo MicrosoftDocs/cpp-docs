@@ -74,7 +74,7 @@ class CSettingsStore : public CObject
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
   
- [CSettingsStore](../../mfc/reference/csettingsstore-class.md)  
+ `CSettingsStore`  
   
 ## Requirements  
  **Header:** afxsettingsstore.h  

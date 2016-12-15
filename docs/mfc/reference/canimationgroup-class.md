@@ -96,7 +96,7 @@ class CAnimationGroup;
  Animation groups are created automatically by animation controller (CAnimationController) when you add animation objects using CAnimationController::AddAnimationObject. An animation group is identified by GroupID, which is usually taken as a parameter to manipulate animation groups. The GroupID is taken from the first animation object being added to a new animation group. An encapsulated animation storyboard is created after you call CAnimationController::AnimateGroup and can be accessed via public member m_pStoryboard.  
   
 ## Inheritance Hierarchy  
- [CAnimationGroup](../../mfc/reference/canimationgroup-class.md)  
+ `CAnimationGroup`  
   
 ## Requirements  
  **Header:** afxanimationcontroller.h  

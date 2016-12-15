@@ -41,7 +41,7 @@ A class or struct consists of its members. The work that a class does is perform
 ## Kinds of class members  
  The full list of member categories is as follows:  
   
--   Special Member functions.  
+-   [Special Member Functions](special-member-functions.md).  
   
 -   [Overview of Member Functions](overview-of-member-functions.md).  
   
@@ -128,6 +128,8 @@ int TestRun::_instances{ 0 };
 5.  **(C++11)** Move assignment operator  
   
 6.  Destructor  
+  
+For more information, see [Special Member Functions](../cpp/special-member-functions.md).
   
 ## Memberwise initialization  
  In C++11 and later, non-static member declarators can contain initializers.  

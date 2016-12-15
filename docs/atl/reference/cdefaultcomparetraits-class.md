@@ -57,8 +57,8 @@ template<typename T>  class CDefaultCompareTraits
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDefaultCompareTraits::CompareElements](#cdefaultcomparetraits__compareelements)|(Static) Call this function to compare two elements for equality.|  
-|[CDefaultCompareTraits::CompareElementsOrdered](#cdefaultcomparetraits__compareelementsordered)|(Static) Call this function to determine the greater and lesser element.|  
+|[CDefaultCompareTraits::CompareElements](#compareelements)|(Static) Call this function to compare two elements for equality.|  
+|[CDefaultCompareTraits::CompareElementsOrdered](#compareelementsordered)|(Static) Call this function to determine the greater and lesser element.|  
   
 ## Remarks  
  This class contains two static functions for comparing elements stored in a collection class object. This class is utilized by the [CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md).  
@@ -68,7 +68,7 @@ template<typename T>  class CDefaultCompareTraits
 ## Requirements  
  **Header:** atlcoll.h  
   
-##  <a name="cdefaultcomparetraits__compareelements"></a>  CDefaultCompareTraits::CompareElements  
+##  <a name="compareelements"></a>  CDefaultCompareTraits::CompareElements  
  Call this function to compare two elements for equality.  
   
 ```
@@ -88,7 +88,7 @@ static bool CompareElements(const T& element1,  const T& element2);
 ### Remarks  
  The default implementation of this function is the equality ( `==`) operator. For objects other than simple data types, this function may need to be overridden.  
   
-##  <a name="cdefaultcomparetraits__compareelementsordered"></a>  CDefaultCompareTraits::CompareElementsOrdered  
+##  <a name="compareelementsordered"></a>  CDefaultCompareTraits::CompareElementsOrdered  
  Call this function to determine the greater and lesser element.  
   
 ```

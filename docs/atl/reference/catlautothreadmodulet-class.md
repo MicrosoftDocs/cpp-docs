@@ -65,7 +65,7 @@ template <class T, class ThreadAllocator = CComSimpleThreadAllocator,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlAutoThreadModuleT::GetDefaultThreads](#catlautothreadmodulet__getdefaultthreads)|This static function dynamically calculates and returns the maximum number of threads for the EXE module, based on the number of processors.|  
+|[CAtlAutoThreadModuleT::GetDefaultThreads](#getdefaultthreads)|This static function dynamically calculates and returns the maximum number of threads for the EXE module, based on the number of processors.|  
   
 ## Remarks  
  The class [CAtlAutoThreadModule](../../atl/reference/catlautothreadmodule-class.md) derives from `CAtlAutoThreadModuleT` in order to implement a thread-pooled, apartment-model COM server. It replaces the obsolete class [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md).  
@@ -81,7 +81,7 @@ template <class T, class ThreadAllocator = CComSimpleThreadAllocator,
 ## Requirements  
  **Header:** atlbase.h  
   
-##  <a name="catlautothreadmodulet__getdefaultthreads"></a>  CAtlAutoThreadModuleT::GetDefaultThreads  
+##  <a name="getdefaultthreads"></a>  CAtlAutoThreadModuleT::GetDefaultThreads  
  This static function dynamically calculates and returns the maximum number of threads for the EXE module, based on the number of processors.  
   
 ```

@@ -44,7 +44,7 @@ The Dialog editor lets you use existing "custom" or "user" controls in a dialog 
 > [!NOTE]
 >  Custom controls in this sense are not to be confused with ActiveX controls. ActiveX controls were sometimes called OLE custom controls. Also, don't confuse these controls with the owner-drawn controls in Windows.  
   
- This functionality is intended to let you use controls other than those supplied by Windows. At run time, the control is associated with a window class (not the same as a C++ class). A more common way to accomplish the same task is to install any control, such as a static control, in your dialog box. Then at run time, in the [OnInitDialog](../mfc/reference/cdialog-class.md#cdialog__oninitdialog) function, remove that control and replace it with your own custom control.  
+ This functionality is intended to let you use controls other than those supplied by Windows. At run time, the control is associated with a window class (not the same as a C++ class). A more common way to accomplish the same task is to install any control, such as a static control, in your dialog box. Then at run time, in the [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) function, remove that control and replace it with your own custom control.  
   
  This is an old technique. Today you are advised in most cases to write an ActiveX control or subclass a Windows common control.  
   

@@ -49,9 +49,9 @@ class ATL::CCRTAllocator
   
 |Name|Description|  
 |----------|-----------------|  
-|[CCRTAllocator::Allocate](#ccrtallocator__allocate)|(Static) Call this method to allocate memory.|  
-|[CCRTAllocator::Free](#ccrtallocator__free)|(Static) Call this method to free memory.|  
-|[CCRTAllocator::Reallocate](#ccrtallocator__reallocate)|(Static) Call this method to reallocate memory.|  
+|[CCRTAllocator::Allocate](#allocate)|(Static) Call this method to allocate memory.|  
+|[CCRTAllocator::Free](#free)|(Static) Call this method to free memory.|  
+|[CCRTAllocator::Reallocate](#reallocate)|(Static) Call this method to reallocate memory.|  
   
 ## Remarks  
  This class is used by [CHeapPtr](../../atl/reference/cheapptr-class.md) to provide the CRT memory allocation routines. The counterpart class, [CComAllocator](../../atl/reference/ccomallocator-class.md), provides the same methods using COM routines.  
@@ -59,7 +59,7 @@ class ATL::CCRTAllocator
 ## Requirements  
  **Header:** atlcore.h  
   
-##  <a name="ccrtallocator__allocate"></a>  CCRTAllocator::Allocate  
+##  <a name="allocate"></a>  CCRTAllocator::Allocate  
  Call this static function to allocate memory.  
   
 ```
@@ -76,7 +76,7 @@ static __declspec(allocator) void* Allocate(size_t nBytes) throw();
 ### Remarks  
  Allocates memory. See [malloc](../../c-runtime-library/reference/malloc.md) for more details.  
   
-##  <a name="ccrtallocator__free"></a>  CCRTAllocator::Free  
+##  <a name="free"></a>  CCRTAllocator::Free  
  Call this static function to free memory.  
   
 ```
@@ -90,7 +90,7 @@ static void Free(void* p) throw();
 ### Remarks  
  Frees the allocated memory. See [free](../../c-runtime-library/reference/free.md) for more details.  
   
-##  <a name="ccrtallocator__reallocate"></a>  CCRTAllocator::Reallocate  
+##  <a name="reallocate"></a>  CCRTAllocator::Reallocate  
  Call this static function to reallocate memory.  
   
 ```

@@ -91,7 +91,7 @@ class CAnimationSize : public CAnimationBaseObject;
   
  [CAnimationBaseObject](../../mfc/reference/canimationbaseobject-class.md)  
   
- [CAnimationSize](../../mfc/reference/canimationsize-class.md)  
+ `CAnimationSize` 
   
 ## Requirements  
  **Header:** afxanimationcontroller.h  

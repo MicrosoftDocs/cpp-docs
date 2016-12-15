@@ -55,7 +55,7 @@ class CD2DEllipse : public D2D1_ELLIPSE;
 ## Inheritance Hierarchy  
  `D2D1_ELLIPSE`  
   
- [CD2DEllipse](../../mfc/reference/cd2dellipse-class.md)  
+ `CD2DEllipse`  
   
 ## Requirements  
  **Header:** afxrendertarget.h  

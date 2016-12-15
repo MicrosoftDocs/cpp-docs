@@ -102,7 +102,7 @@ class CAnimationRect : public CAnimationBaseObject;
   
  [CAnimationBaseObject](../../mfc/reference/canimationbaseobject-class.md)  
   
- [CAnimationRect](../../mfc/reference/canimationrect-class.md)  
+ `CAnimationRect`  
   
 ## Requirements  
  **Header:** afxanimationcontroller.h  

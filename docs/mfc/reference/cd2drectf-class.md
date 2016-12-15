@@ -67,7 +67,7 @@ class CD2DRectF : public D2D1_RECT_F;
 ## Inheritance Hierarchy  
  `D2D1_RECT_F`  
   
- [CD2DRectF](../../mfc/reference/cd2drectf-class.md)  
+ `CD2DRectF`  
   
 ## Requirements  
  **Header:** afxrendertarget.h  

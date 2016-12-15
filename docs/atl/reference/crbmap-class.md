@@ -68,21 +68,21 @@ template <typename   K,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRBMap::CRBMap](#crbmap__crbmap)|The constructor.|  
-|[CRBMap::~CRBMap](#crbmap___dtorcrbmap)|The destructor.|  
+|[CRBMap::CRBMap](#crbmap)|The constructor.|  
+|[CRBMap::~CRBMap](#dtor)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRBMap::Lookup](#crbmap__lookup)|Call this method to look up keys or values in the `CRBMap` object.|  
-|[CRBMap::RemoveKey](#crbmap__removekey)|Call this method to remove an element from the `CRBMap` object, given the key.|  
-|[CRBMap::SetAt](#crbmap__setat)|Call this method to insert an element pair into the map.|  
+|[CRBMap::Lookup](#lookup)|Call this method to look up keys or values in the `CRBMap` object.|  
+|[CRBMap::RemoveKey](#removekey)|Call this method to remove an element from the `CRBMap` object, given the key.|  
+|[CRBMap::SetAt](#setat)|Call this method to insert an element pair into the map.|  
   
 ## Remarks  
- `CRBMap` provides support for a mapping array of any given type, managing an ordered array of key elements and their associated values. Each key can have only one associated value. Elements (consisting of a key and a value) are stored in a binary tree structure, using the [CRBMap::SetAt](#crbmap__setat) method. Elements can be removed using the [CRBMap::RemoveKey](#crbmap__removekey) method, which deletes the element with the given key value.  
+ `CRBMap` provides support for a mapping array of any given type, managing an ordered array of key elements and their associated values. Each key can have only one associated value. Elements (consisting of a key and a value) are stored in a binary tree structure, using the [CRBMap::SetAt](#setat) method. Elements can be removed using the [CRBMap::RemoveKey](#removekey) method, which deletes the element with the given key value.  
   
- Traversing the tree is made possible with methods such as [CRBTree::GetHeadPosition](../../atl/reference/crbtree-class.md#crbtree__getheadposition), [CRBTree::GetNext](../../atl/reference/crbtree-class.md#crbtree__getnext), and [CRBTree::GetNextValue](../../atl/reference/crbtree-class.md#crbtree__getnextvalue).  
+ Traversing the tree is made possible with methods such as [CRBTree::GetHeadPosition](../../atl/reference/crbtree-class.md#getheadposition), [CRBTree::GetNext](../../atl/reference/crbtree-class.md#getnext), and [CRBTree::GetNextValue](../../atl/reference/crbtree-class.md#getnextvalue).  
   
  The `KTraits` and `VTraits` parameters are traits classes that contain any supplemental code needed to copy or move elements.  
   
@@ -100,7 +100,7 @@ template <typename   K,
 ## Requirements  
  **Header:** atlcoll.h  
   
-##  <a name="crbmap__crbmap"></a>  CRBMap::CRBMap  
+##  <a name="crbmap"></a>  CRBMap::CRBMap  
  The constructor.  
   
 ```
@@ -119,7 +119,7 @@ explicit CRBMap(size_t   nBlockSize = 10) throw();
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#81](../../atl/codesnippet/cpp/crbmap-class_1.cpp)]  
   
-##  <a name="crbmap___dtorcrbmap"></a>  CRBMap::~CRBMap  
+##  <a name="dtor"></a>  CRBMap::~CRBMap  
  The destructor.  
   
 ```
@@ -131,7 +131,7 @@ explicit CRBMap(size_t   nBlockSize = 10) throw();
   
  See the documentation for the base class [CRBTree](../../atl/reference/crbtree-class.md) for information on the other methods available.  
   
-##  <a name="crbmap__lookup"></a>  CRBMap::Lookup  
+##  <a name="lookup"></a>  CRBMap::Lookup  
  Call this method to look up keys or values in the `CRBMap` object.  
   
 ```
@@ -153,7 +153,7 @@ CPair* Lookup(
  Variable that receives the looked-up value.  
   
 ### Return Value  
- The first form of the method returns true if the key is found, otherwise false. The second and third forms return a pointer to a [CPair](crbtree-class.md#crbtree__cpair_class).  
+ The first form of the method returns true if the key is found, otherwise false. The second and third forms return a pointer to a [CPair](crbtree-class.md#cpair_class).  
   
 ### Remarks  
  See the documentation for the base class [CRBTree](../../atl/reference/crbtree-class.md) for information on the other methods available.  
@@ -161,7 +161,7 @@ CPair* Lookup(
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#82](../../atl/codesnippet/cpp/crbmap-class_2.cpp)]  
   
-##  <a name="crbmap__removekey"></a>  CRBMap::RemoveKey  
+##  <a name="removekey"></a>  CRBMap::RemoveKey  
  Call this method to remove an element from the `CRBMap` object, given the key.  
   
 ```
@@ -181,7 +181,7 @@ bool RemoveKey(KINARGTYPE   key) throw();
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#83](../../atl/codesnippet/cpp/crbmap-class_3.cpp)]  
   
-##  <a name="crbmap__setat"></a>  CRBMap::SetAt  
+##  <a name="setat"></a>  CRBMap::SetAt  
  Call this method to insert an element pair into the map.  
   
 ```

@@ -82,7 +82,7 @@ class CD2DLayer : public CD2DResource;
   
  [CD2DResource](../../mfc/reference/cd2dresource-class.md)  
   
- [CD2DLayer](../../mfc/reference/cd2dlayer-class.md)  
+ `CD2DLayer`  
   
 ## Requirements  
  **Header:** afxrendertarget.h  
