@@ -602,7 +602,7 @@ inline void parallel_buffered_sort(
  The iterator type of the input range.  
   
  `_Allocator`  
- The type of an STL compatible memory allocator.  
+ The type of a C++ Standard Library compatible memory allocator.  
   
  `_Function`  
  The type of the binary comparator.  
@@ -614,7 +614,7 @@ inline void parallel_buffered_sort(
  A random-access iterator addressing the position one past the final element in the range to be sorted.  
   
  `_Alloc`  
- An instance of an STL compatible memory allocator.  
+ An instance of a C++ Standard Library compatible memory allocator.  
   
  `_Func`  
  A user-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns `true` when satisfied and `false` when not satisfied. This comparator function must impose a strict weak ordering on pairs of elements from the sequence.  
@@ -627,7 +627,7 @@ inline void parallel_buffered_sort(
   
  If you do not supply a binary comparator `std::less` is used as the default, which requires the element type to provide the operator `operator<()`.  
   
- If you do not supply an allocator type or instance, the STL memory allocator `std::allocator<T>` is used to allocate the buffer.  
+ If you do not supply an allocator type or instance, the C++ Standard Library memory allocator `std::allocator<T>` is used to allocate the buffer.  
   
  The algorithm divides the input range into two chunks and successively divides each chunk into two sub-chunks for execution in parallel. The optional argument `_Chunk_size` can be used to indicate to the algorithm that it should handles chunks of size < `_Chunk_size` serially.  
   
@@ -999,7 +999,7 @@ inline void parallel_radixsort(
  The iterator type of the input range.  
   
  `_Allocator`  
- The type of an STL compatible memory allocator.  
+ The type of a C++ Standard Library compatible memory allocator.  
   
  `_Function`  
  The type of the projection function.  
@@ -1011,7 +1011,7 @@ inline void parallel_radixsort(
  A random-access iterator addressing the position one past the final element in the range to be sorted.  
   
  `_Alloc`  
- An instance of an STL compatible memory allocator.  
+ An instance of a C++ Standard Library compatible memory allocator.  
   
  `_Proj_func`  
  A user-defined projection function object that converts an element into an integral value.  
@@ -1024,7 +1024,7 @@ inline void parallel_radixsort(
   
  If you do not supply a projection function, a default projection function which simply returns the element is used for integral types. The function will fail to compile if the element is not an integral type in the absence of a projection function.  
   
- If you do not supply an allocator type or instance, the STL memory allocator `std::allocator<T>` is used to allocate the buffer.  
+ If you do not supply an allocator type or instance, the C++ Standard Library memory allocator `std::allocator<T>` is used to allocate the buffer.  
   
  The algorithm divides the input range into two chunks and successively divides each chunk into two sub-chunks for execution in parallel. The optional argument `_Chunk_size` can be used to indicate to the algorithm that it should handles chunks of size < `_Chunk_size` serially.  
   

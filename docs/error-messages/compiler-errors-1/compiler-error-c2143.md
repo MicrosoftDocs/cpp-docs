@@ -147,7 +147,7 @@ void func1() {
 }  
 ```  
   
- The error can occur when an unqualified call is made to a type in the Standard C++ Library:  
+ The error can occur when an unqualified call is made to a type in the C++ Standard Library:  
   
 ```cpp  
 // C2143g.cpp  

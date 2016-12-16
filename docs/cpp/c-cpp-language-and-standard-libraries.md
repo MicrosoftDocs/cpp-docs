@@ -39,7 +39,7 @@ This section of the documentation includes guidelines and reference content for 
 |-----------|-----------------|  
 |[Welcome Back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)|Describes modern C++ programming idioms and best practices.|  
 |[C++ Language Reference](../cpp/cpp-language-reference.md)|Reference content for the C++ languages.|  
-|[C++ Standard Library](../standard-library/cpp-standard-library-reference.md)|Reference content for the Microsoft implementation of the Standard Template Library (STL).|  
+|[C++ Standard Library](../standard-library/cpp-standard-library-reference.md)|Reference content for the Microsoft implementation of the C++ Standard Library.|  
 |[C Language Reference](../c-language/c-language-reference.md)|Reference content for the Microsoft implementation of the C language.|
 |[C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md)|Reference content for the Microsoft implementation of the C runtime (CRT).|
 |[SafeInt Library](../windows/safeint-library.md)|Reference content for a library of functions that handle integers without the risk of overflow.|  

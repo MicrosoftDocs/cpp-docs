@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Library Support for Mixed Assemblies
-Visual C++ supports the use of the Standard C++ Library, the Common RunTime library (CRT), ATL, and MFC for applications compiled with [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md). This allows existing applications that use these libraries to use .NET Framework features as well.  
+Visual C++ supports the use of the C++ Standard Library, the Common RunTime library (CRT), ATL, and MFC for applications compiled with [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md). This allows existing applications that use these libraries to use .NET Framework features as well.  
   
  This support introduces the following new DLL and import libraries:  
   
@@ -46,7 +46,7 @@ Visual C++ supports the use of the Standard C++ Library, the Common RunTime libr
   
  This support provides several related benefits:  
   
--   The CRT and Standard C++ Library are available to both mixed and pure code. The CRT and Standard C++ Library provided are not verifiable; ultimately, your calls are still routed to the same CRT and Standard C++ Library as you are using from native code.  
+-   The CRT and C++ Standard Library are available to both mixed and pure code. The CRT and C++ Standard Library provided are not verifiable; ultimately, your calls are still routed to the same CRT and C++ Standard Library as you are using from native code.  
   
 -   Correct unified exception handling in pure and mixed images.  
   

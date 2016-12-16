@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Multithreading and Locales
-Both the C Runtime Library and the Standard C++ Library provide support for changing the locale of your program. This topic discusses issues that arise when using the locale functionality of both libraries in a multithreaded application.  
+Both the C Runtime Library and the C++ Standard Library provide support for changing the locale of your program. This topic discusses issues that arise when using the locale functionality of both libraries in a multithreaded application.  
   
 ## Remarks  
  With the C Runtime Library, you can create multithreaded applications using the `_beginthread` and `_beginthreadex` functions. This topic only covers multithreaded applications created using these functions. For more information, see [_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md).  
@@ -46,14 +46,14 @@ Both the C Runtime Library and the Standard C++ Library provide support for chan
  To change the locale using the C++ Runtime Library, use the [locale Class](../standard-library/locale-class.md). By calling the [locale::global](http://msdn.microsoft.com/library/16e47251-a892-42d0-a6ea-ca17692e34d8) method, you change the locale in every thread that has not explicitly enabled per-thread locale. To change the locale in a single thread or portion of an application, simply create an instance of a `locale` object in that thread or portion of code.  
   
 > [!NOTE]
->  Calling [locale::global](http://msdn.microsoft.com/library/16e47251-a892-42d0-a6ea-ca17692e34d8) changes the locale for both the Standard C++ Library and the C Runtime Library. However, calling [setlocale](../preprocessor/setlocale.md) only changes the locale for the C Runtime Library; the Standard C++ Library is not affected.  
+>  Calling [locale::global](http://msdn.microsoft.com/library/16e47251-a892-42d0-a6ea-ca17692e34d8) changes the locale for both the C++ Standard Library and the C Runtime Library. However, calling [setlocale](../preprocessor/setlocale.md) only changes the locale for the C Runtime Library; the C++ Standard Library is not affected.  
   
  The following examples show how to use the [setlocale](../preprocessor/setlocale.md) function, the [locale Class](../standard-library/locale-class.md), and the [_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md) function to change the locale of an application in several different scenarios.  
   
 ## Example  
  In this example, the main thread spawns two child threads. The first thread, Thread A, enables per-thread locale by calling `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)`. The second thread, Thread B, as well as the main thread, do not enable per-thread locale. Thread A then proceeds to change the locale using the [setlocale](../preprocessor/setlocale.md) function of the C Runtime Library.  
   
- Since Thread A has per-thread locale enabled, only the C Runtime Library functions in Thread A start using the "french" locale. The C Runtime Library functions in Thread B and in the main thread continue to use the "C" locale. Also, since [setlocale](../preprocessor/setlocale.md) does not affect the Standard C++ Library locale, all Standard C++ Library objects continue to use the "C" locale.  
+ Since Thread A has per-thread locale enabled, only the C Runtime Library functions in Thread A start using the "french" locale. The C Runtime Library functions in Thread B and in the main thread continue to use the "C" locale. Also, since [setlocale](../preprocessor/setlocale.md) does not affect the C++ Standard Library locale, all C++ Standard Library objects continue to use the "C" locale.  
   
 ```  
 // multithread_locale_1.cpp  
@@ -149,9 +149,9 @@ unsigned __stdcall RunThreadB(void *params)
 ```  
   
 ## Example  
- In this example, the main thread spawns two child threads. The first thread, Thread A, enables per-thread locale by calling `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)`. The second thread, Thread B, as well as the main thread, do not enable per-thread locale. Thread A then proceeds to change the locale using the [locale::global](http://msdn.microsoft.com/library/16e47251-a892-42d0-a6ea-ca17692e34d8) method of the Standard C++ Library.  
+ In this example, the main thread spawns two child threads. The first thread, Thread A, enables per-thread locale by calling `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)`. The second thread, Thread B, as well as the main thread, do not enable per-thread locale. Thread A then proceeds to change the locale using the [locale::global](http://msdn.microsoft.com/library/16e47251-a892-42d0-a6ea-ca17692e34d8) method of the C++ Standard Library.  
   
- Since Thread A has per-thread locale enabled, only the C Runtime Library functions in Thread A start using the "french" locale. The C Runtime Library functions in Thread B and in the main thread continue to use the "C" locale. However, since the [locale::global](http://msdn.microsoft.com/library/16e47251-a892-42d0-a6ea-ca17692e34d8) method changes the locale "globally", all Standard C++ Library objects in all threads start using the "french" locale.  
+ Since Thread A has per-thread locale enabled, only the C Runtime Library functions in Thread A start using the "french" locale. The C Runtime Library functions in Thread B and in the main thread continue to use the "C" locale. However, since the [locale::global](http://msdn.microsoft.com/library/16e47251-a892-42d0-a6ea-ca17692e34d8) method changes the locale "globally", all C++ Standard Library objects in all threads start using the "french" locale.  
   
 ```  
 // multithread_locale_2.cpp  
@@ -249,7 +249,7 @@ unsigned __stdcall RunThreadB(void *params)
 ## Example  
  In this example, the main thread spawns two child threads. The first thread, Thread A, enables per-thread locale by calling `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)`. The second thread, Thread B, as well as the main thread, do not enable per-thread locale. Thread B then proceeds to change the locale using the [setlocale](../preprocessor/setlocale.md) function of the C Runtime Library.  
   
- Since Thread B does not have per-thread locale enabled, the C Runtime Library functions in Thread B and in the main thread start using the "french" locale. The C Runtime Library functions in Thread A continue to use the "C" locale because Thread A has per-thread locale enabled. Also, since [setlocale](../preprocessor/setlocale.md) does not affect the Standard C++ Library locale, all Standard C++ Library objects continue to use the "C" locale.  
+ Since Thread B does not have per-thread locale enabled, the C Runtime Library functions in Thread B and in the main thread start using the "french" locale. The C Runtime Library functions in Thread A continue to use the "C" locale because Thread A has per-thread locale enabled. Also, since [setlocale](../preprocessor/setlocale.md) does not affect the C++ Standard Library locale, all C++ Standard Library objects continue to use the "C" locale.  
   
 ```  
 // multithread_locale_3.cpp  
@@ -349,9 +349,9 @@ unsigned __stdcall RunThreadB(void *params)
 ```  
   
 ## Example  
- In this example, the main thread spawns two child threads. The first thread, Thread A, enables per-thread locale by calling `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)`. The second thread, Thread B, as well as the main thread, do not enable per-thread locale. Thread B then proceeds to change the locale using the [locale::global](http://msdn.microsoft.com/library/16e47251-a892-42d0-a6ea-ca17692e34d8) method of the Standard C++ Library.  
+ In this example, the main thread spawns two child threads. The first thread, Thread A, enables per-thread locale by calling `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)`. The second thread, Thread B, as well as the main thread, do not enable per-thread locale. Thread B then proceeds to change the locale using the [locale::global](http://msdn.microsoft.com/library/16e47251-a892-42d0-a6ea-ca17692e34d8) method of the C++ Standard Library.  
   
- Since Thread B does not have per-thread locale enabled, the C Runtime Library functions in Thread B and in the main thread start using the "french" locale. The C Runtime Library functions in Thread A continue to use the "C" locale because Thread A has per-thread locale enabled. However, since the [locale::global](http://msdn.microsoft.com/library/16e47251-a892-42d0-a6ea-ca17692e34d8) method changes the locale "globally", all Standard C++ Library objects in all threads start using the "french" locale.  
+ Since Thread B does not have per-thread locale enabled, the C Runtime Library functions in Thread B and in the main thread start using the "french" locale. The C Runtime Library functions in Thread A continue to use the "C" locale because Thread A has per-thread locale enabled. However, since the [locale::global](http://msdn.microsoft.com/library/16e47251-a892-42d0-a6ea-ca17692e34d8) method changes the locale "globally", all C++ Standard Library objects in all threads start using the "french" locale.  
   
 ```  
 // multithread_locale_4.cpp  

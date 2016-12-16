@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # CComEnumOnSTL Class
-This class defines a COM enumerator object based on an STL collection.  
+This class defines a COM enumerator object based on a C++ Standard Library collection.  
   
 ## Syntax  
   
@@ -65,10 +65,10 @@ template <class Base,
  A [copy policy](../../atl/atl-copy-policy-classes.md) class.  
   
  `CollType`  
- An STL container class.  
+ A C++ Standard Library container class.  
   
 ## Remarks  
- `CComEnumOnSTL` defines a COM enumerator object based on an STL collection. This class can be used on its own or in conjunction with [ICollectionOnSTLImpl](../../atl/reference/icollectiononstlimpl-class.md). Typical steps for using this class are outlined below. For more information, see [ATL Collections and Enumerators](../../atl/atl-collections-and-enumerators.md).  
+ `CComEnumOnSTL` defines a COM enumerator object based on a C++ Standard Library collection. This class can be used on its own or in conjunction with [ICollectionOnSTLImpl](../../atl/reference/icollectiononstlimpl-class.md). Typical steps for using this class are outlined below. For more information, see [ATL Collections and Enumerators](../../atl/atl-collections-and-enumerators.md).  
   
 ## To use this class with ICollectionOnSTLImpl:  
   

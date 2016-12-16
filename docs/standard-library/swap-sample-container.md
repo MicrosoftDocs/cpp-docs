@@ -38,15 +38,14 @@ translation.priority.ht:
 ---
 # swap (&lt;sample container&gt;)
 > [!NOTE]
->  This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the Standard C++ Library. For more information, see [STL Containers](../standard-library/stl-containers.md).  
+>  This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).  
   
  Executes ` left.`[swap](../standard-library/container-class-swap.md)(_*Right*).  
   
 ## Syntax  
   
 ```  
- 
-    template <class Ty>  
+template <class Ty>  
 void swap(
     Container <Ty>& left,  
     Container <Ty>& right);
@@ -54,4 +53,3 @@ void swap(
   
 ## See Also  
  [\<sample container>](../standard-library/sample-container.md)
-

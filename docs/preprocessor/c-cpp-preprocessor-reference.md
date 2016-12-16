@@ -61,7 +61,7 @@ The *C/C++ Preprocessor Reference* explains the preprocessor as it is implemente
  Provides links to topics discussing compiler and linker options.  
   
  [Visual C++ Libraries](http://msdn.microsoft.com/en-us/fec23c40-10c0-4857-9cdc-33a3b99b30ae)  
- Provides links to the various libraries provided with Visual C++, including ATL, MFC, OLE DB, the C run-time library, and the Standard C++ Library.  
+ Provides links to the various libraries provided with Visual C++, including ATL, MFC, OLE DB, the C run-time library, and the C++ Standard Library.  
   
  [Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md)  
  Describes the user interface in Visual Studio that enables you to specify the directories that the project system will search to locate files for your C++ project.

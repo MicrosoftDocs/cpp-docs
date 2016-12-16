@@ -90,11 +90,11 @@ Copy policy classes are [utility classes](../atl/utility-classes.md) used to ini
  VCUE_Copy.h also contains the following specializations of this class: `GenericCopy<BSTR>`, `GenericCopy<VARIANT, BSTR>`, `GenericCopy<BSTR, VARIANT>`. VCUE_CopyString.h contains specializations for copying from **std::string**s: `GenericCopy<std::string>`, `GenericCopy<VARIANT, std::string>`, and `GenericCopy<BSTR, std::string>`. You could enhance `GenericCopy` by providing further specializations of your own.  
   
 ### MapCopy  
- `MapCopy` assumes that the data being copied is stored into an STL-style map, so it allows you to specify the type of map in which the data is stored and the destination type. The implementation of the class just uses the typedefs supplied by the *MapType* class to determine the type of the source data and to call the appropriate `GenericCopy` class. No specializations of this class are needed.  
+ `MapCopy` assumes that the data being copied is stored into a C++ Standard Library-style map, so it allows you to specify the type of map in which the data is stored and the destination type. The implementation of the class just uses the typedefs supplied by the *MapType* class to determine the type of the source data and to call the appropriate `GenericCopy` class. No specializations of this class are needed.  
   
  [!code-cpp[NVC_ATL_COM#31](../atl/codesnippet/cpp/atl-copy-policy-classes_2.h)]  
   
 ## See Also  
- [Implementing an STL-Based Collection](../atl/implementing-an-stl-based-collection.md)   
+ [Implementing a C++ Standard Library-Based Collection](../atl/implementing-an-stl-based-collection.md)   
  [ATLCollections Sample](../visual-cpp-samples.md)
 

@@ -1,5 +1,5 @@
 ---
-title: "hash_multimap::hasher (STL-CLR) | Microsoft Docs"
+title: "hash_multimap::hasher (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

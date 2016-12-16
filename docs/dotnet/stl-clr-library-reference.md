@@ -1,5 +1,5 @@
 ---
-title: "STL-CLR Library Reference | Microsoft Docs"
+title: "STL/CLR Library Reference | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -35,11 +35,11 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # STL/CLR Library Reference
-The STL/CLR Library is a packaging of the Standard Template Library (STL), a subset of the Standard C++ Library, for use with C++ and the .NET Framework common language runtime (CLR). With STL/CLR, you can use all the containers, iterators, and algorithms of STL in a managed environment.  
+The STL/CLR Library is a packaging of a subset of the C++ Standard Library for use with C++ and the .NET Framework common language runtime (CLR). With STL/CLR, you can use all the containers, iterators, and algorithms of the standard library in a managed environment.  
   
  To use STL/CLR:  
   
--   Include headers from the **cliext** include subdirectory instead of the usual Standard C++ Library equivalents.  
+-   Include headers from the **cliext** include subdirectory instead of the usual C++ Standard Library equivalents.  
   
 -   Qualify library names with `cliext::` instead of `std::`.  
   
@@ -50,10 +50,10 @@ The STL/CLR Library is a packaging of the Standard Template Library (STL), a sub
  Discusses the namespace that contains all the types of the STL/CLR Library.  
   
  [STL/CLR Containers](../dotnet/stl-clr-containers.md)  
- Provides an overview of the containers that are found in the Standard C++ Library, including requirements for container elements, types of elements that can be inserted, and ownership issues.  
+ Provides an overview of the containers that are found in the C++ Standard Library, including requirements for container elements, types of elements that can be inserted, and ownership issues.  
   
  [Requirements for STL/CLR Container Elements](../dotnet/requirements-for-stl-clr-container-elements.md)  
- Describes minimum requirements for all reference types that are inserted into STL containers.  
+ Describes minimum requirements for all reference types that are inserted into C++ Standard Library containers.  
   
  [How to: Convert from a .NET Collection to a STL/CLR Container](../dotnet/how-to-convert-from-a-dotnet-collection-to-a-stl-clr-container.md)  
  Describes how to convert a .NET collection to an STL/CLR container.  

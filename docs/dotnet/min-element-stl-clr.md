@@ -1,5 +1,5 @@
 ---
-title: "min_element (STL-CLR) | Microsoft Docs"
+title: "min_element (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -47,7 +47,7 @@ template<class _FwdIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `min_element`. For more information, see [min_element](http://msdn.microsoft.com/Library/4cf188f9-59f6-4d2c-a1aa-a259c0b1ac6c).  
+ This function behaves the same as the C++ Standard Library function `min_element`. For more information, see [min_element](http://msdn.microsoft.com/Library/4cf188f9-59f6-4d2c-a1aa-a259c0b1ac6c).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

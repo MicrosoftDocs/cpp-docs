@@ -47,7 +47,7 @@ translation.priority.ht:
   
 3.  Missing closing quote after a string constant.  
   
-4.  You are compiling with a debug version of the C runtime, declaring a Standard C++ Library iterator variable in a `for` loop, and then trying to use that iterator variable outside the scope of the `for` loop. Compiling C++ Standard Library code with a debug version of the C runtime implies [/Zc:forScope](../../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md).  See [Debug Iterator Support](../../standard-library/debug-iterator-support.md) for more information.  
+4.  You are compiling with a debug version of the C runtime, declaring a C++ Standard Library iterator variable in a `for` loop, and then trying to use that iterator variable outside the scope of the `for` loop. Compiling C++ Standard Library code with a debug version of the C runtime implies [/Zc:forScope](../../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md).  See [Debug Iterator Support](../../standard-library/debug-iterator-support.md) for more information.  
   
 5.  You may be calling a function in an SDK header file that is currently not supported in your build environment.  
   

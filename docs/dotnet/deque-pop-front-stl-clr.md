@@ -1,5 +1,5 @@
 ---
-title: "deque::pop_front (STL-CLR) | Microsoft Docs"
+title: "deque::pop_front (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

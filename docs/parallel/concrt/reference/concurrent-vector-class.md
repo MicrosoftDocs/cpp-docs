@@ -220,7 +220,7 @@ size_type capacity() const;
  The maximum size to which the concurrent vector can grow without having to allocate more memory.  
   
 ### Remarks  
- Unlike an STL `vector`, a `concurrent_vector` object does not move existing elements if it allocates more memory.  
+ Unlike a C++ Standard Library `vector`, a `concurrent_vector` object does not move existing elements if it allocates more memory.  
   
 ##  <a name="cbegin"></a>  concurrent_vector::cbegin Method  
  Returns an iterator of type `const_iterator` to the beginning of the concurrent vector. This method is concurrency-safe.  

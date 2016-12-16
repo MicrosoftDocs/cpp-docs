@@ -59,7 +59,7 @@ phone_book["Alex Lifeson"] = "+1 (416) 555-1212";
   
  Don’t use C arrays. (For older APIs, use `f( vec.data(), vec.size() );` .)  
   
- For another article about containers, see [STL Containers](../standard-library/stl-containers.md).  
+ For another article about containers, see [C++ Standard Library Containers](../standard-library/stl-containers.md).  
   
 ## Container Sizes  
  The following tables show the container sizes, in bytes, for x86 and x64 platforms.  (For these purposes, 32-bit ARM is equivalent to x86.)  These tables cover release mode, because debug mode contains checking machinery that consumes space and time.  The separate columns are for [!INCLUDE[cpp_orcas_long](../cpp/includes/cpp_orcas_long_md.md)] SP1, where `_SECURE_SCL` defaulted to 1, and for [!INCLUDE[cpp_orcas_long](../cpp/includes/cpp_orcas_long_md.md)] SP1 with `_SECURE_SCL` manually set to 0 for maximum speed.  Visual C++ in Visual Studio 2010, [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)], and [!INCLUDE[cpp_dev12_long](../build/reference/includes/cpp_dev12_long_md.md)] default `_SECURE_SCL` to 0 (now known as `_ITERATOR_DEBUG_LEVEL`).  

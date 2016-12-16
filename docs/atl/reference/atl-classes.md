@@ -97,7 +97,7 @@ The Active Template Library (ATL) includes the following classes. To find a part
 |[CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md)|This class stores an array of **IUnknown** pointers.|atlcom.h|  
 |[CComEnum](../../atl/reference/ccomenum-class.md)|This class defines a COM enumerator object based on an array.|atlcom.h|  
 |[CComEnumImpl](../../atl/reference/ccomenumimpl-class.md)|This class provides the implementation for a COM enumerator interface where the items being enumerated are stored in an array.|atlcom.h|  
-|[CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md)|This class defines a COM enumerator object based on an STL collection.|atlcom.h|  
+|[CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md)|This class defines a COM enumerator object based on a C++ Standard Library collection.|atlcom.h|  
 |[CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md)|This class provides the same methods as [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md) but does not provide a critical section.|atlcore.h|  
 |[CComGITPtr](../../atl/reference/ccomgitptr-class.md)|This class provides methods for dealing with interface pointers and the global interface table (GIT).|atlbase.h|  
 |[CComHeap](../../atl/reference/ccomheap-class.md)|This class implements [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) using the COM memory allocation functions.|ATLComMem.h|  
@@ -203,7 +203,7 @@ The Active Template Library (ATL) includes the following classes. To find a part
 |[IDispEventImpl](../../atl/reference/idispeventimpl-class.md)|This class provides implementations of the `IDispatch` methods.|atlcom.h|  
 |[IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md)|This class provides implementations of the `IDispatch` methods, without getting type information from a type library.|atlcom.h|  
 |[IDocHostUIHandlerDispatch](../../atl/reference/idochostuihandlerdispatch-interface.md)|An interface to the Microsoft HTML parsing and rendering engine.|atlbase.h, ATLIFace.h|  
-|[IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md)|This class defines an enumerator interface based on an STL collection.|atlcom.h|  
+|[IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md)|This class defines an enumerator interface based on a C++ Standard Library collection.|atlcom.h|  
 |[IObjectSafetyImpl](../../atl/reference/iobjectsafetyimpl-class.md)|This class provides a default implementation of the `IObjectSafety` interface to allow a client to retrieve and set an object's safety levels.|atlctl.h|  
 |[IObjectWithSiteImpl](../../atl/reference/iobjectwithsiteimpl-class.md)|This class provides methods allowing an object to communicate with its site.|atlcom.h|  
 |[IOleControlImpl](../../atl/reference/iolecontrolimpl-class.md)|This class provides a default implementation of the **IOleControl** interface and implements **IUnknown**.|atlctl.h|  

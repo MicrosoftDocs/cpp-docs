@@ -1,5 +1,5 @@
 ---
-title: "mismatch (STL-CLR) | Microsoft Docs"
+title: "mismatch (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -50,7 +50,7 @@ template<class _InIt1, class _InIt2, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `mismatch`. For more information, see [mismatch](http://msdn.microsoft.com/Library/a9fe78f3-9a86-44dc-9400-0c2ed1083323).  
+ This function behaves the same as the C++ Standard Library function `mismatch`. For more information, see [mismatch](http://msdn.microsoft.com/Library/a9fe78f3-9a86-44dc-9400-0c2ed1083323).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

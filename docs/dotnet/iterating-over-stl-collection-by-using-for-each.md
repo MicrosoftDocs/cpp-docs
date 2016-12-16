@@ -1,5 +1,5 @@
 ---
-title: "Iterating Over STL Collection By Using for each | Microsoft Docs"
+title: "Iterating Over C++ Standard Library Collection By Using for each | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -32,13 +32,13 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Iterating Over STL Collection By Using for each
-The `for each` keyword can be used to iterate over a Standard C++ Library (STL) collection.  
+# Iterating Over C++ Standard Library Collection By Using for each
+The `for each` keyword can be used to iterate over a C++ Standard Library collection.  
   
 ## All Platforms  
  **Remarks**  
   
- An STL collection is also known as a *container*. For more information, see [STL Containers](../standard-library/stl-containers.md).  
+ A C++ Standard Library collection is also known as a *container*. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).  
   
 ## Examples  
  **Example**  
@@ -91,7 +91,7 @@ Months with 30 days = 4
   
  **Example**  
   
- The following code example uses a const reference (`const&`) for an iteration variable with STL containers. You can use a reference (`&`) as an iteration variable on any collection of a type that can be declared as a *T*`&`.  
+ The following code example uses a const reference (`const&`) for an iteration variable with C++ Standard Library containers. You can use a reference (`&`) as an iteration variable on any collection of a type that can be declared as a *T*`&`.  
   
 ```  
 // for_each_stl_2.cpp  

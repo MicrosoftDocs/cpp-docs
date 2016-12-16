@@ -143,7 +143,7 @@ void AddArraysWithFunctionObject() {
  
 ```  
 
- The function object must include a constructor and must include an overload of the function call operator. The function call operator must include one indexing parameter. An instance of the function object is passed as the second argument to the [parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) method. In this example, three [array_view](../../parallel/amp/reference/array-view-class.md) objects are passed to the function object constructor. The [array_view](../../parallel/amp/reference/array-view-class.md) object `sum` has a rank of 1. Therefore, the parameter to the function call operator is an [index](../../parallel/amp/reference/index-class.md) object that has rank 1. At runtime, the function is executed once for each element in the [array_view](../../parallel/amp/reference/array-view-class.md) object. For more information, see [Function Call](../../cpp/function-call-cpp.md) and [Function Objects in the STL](../../standard-library/function-objects-in-the-stl.md).  
+ The function object must include a constructor and must include an overload of the function call operator. The function call operator must include one indexing parameter. An instance of the function object is passed as the second argument to the [parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) method. In this example, three [array_view](../../parallel/amp/reference/array-view-class.md) objects are passed to the function object constructor. The [array_view](../../parallel/amp/reference/array-view-class.md) object `sum` has a rank of 1. Therefore, the parameter to the function call operator is an [index](../../parallel/amp/reference/index-class.md) object that has rank 1. At runtime, the function is executed once for each element in the [array_view](../../parallel/amp/reference/array-view-class.md) object. For more information, see [Function Call](../../cpp/function-call-cpp.md) and [Function Objects in the C++ Standard Library](../../standard-library/function-objects-in-the-stl.md).  
   
 ## C++ AMP-Restricted Function  
  You can further factor the accelerator code by creating a restricted function and calling it from a lambda expression or a function object. The following code example demonstrates how to call a restricted function from a lambda expression.  
@@ -192,6 +192,6 @@ void AddArraysWithFunction() {
  [C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)   
  [Lambda Expression Syntax](../../cpp/lambda-expression-syntax.md)   
  [Function Call](../../cpp/function-call-cpp.md)   
- [Function Objects in the STL](../../standard-library/function-objects-in-the-stl.md)   
+ [Function Objects in the C++ Standard Library](../../standard-library/function-objects-in-the-stl.md)   
  [restrict (C++ AMP)](../../cpp/restrict-cpp-amp.md)
 

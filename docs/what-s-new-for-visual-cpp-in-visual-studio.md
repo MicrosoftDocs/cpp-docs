@@ -73,7 +73,7 @@ This release brings several improvements in optimization, code generation, tools
 * Performance improvement: removed control coupling in basic_string which was difficult for the compiler optimizer to analyze. Resolves VSO# 262848 "<string>: reserve() does too much work". Note that for all short strings, calling reserve still has nonzero cost to do nothing.
 * We added \<any\>, \<string_view\>, apply(), make_from_tuple().
 * std::vector has been overhauled for correctness and performance: aliasing during insertion/emplacement is now correctly handled as required by the Standard, the strong exception guarantee is now provided when required by the Standard via move_if_noexcept() and other logic, and insertion/emplacement perform fewer element operations.
-* The STL now avoids dereferencing null fancy pointers.
+* The C++ Standard Library now avoids dereferencing null fancy pointers.
 * Added \<optional\>, \<variant\>, shared_ptr::weak_type, and \<cstdalign\>.
 * Enabled C++14 constexpr in min/max/minmax(initializer_list) and min_element/max_element/minmax_element().
 * Improved weak_ptr::lock() performance.
@@ -83,7 +83,7 @@ This release brings several improvements in optimization, code generation, tools
 * Fixed a missing const qualifier in move_iterator's subtraction operator.
 * Fixed silent bad codegen for stateful user-defined allocators requesting propagate_on_container_copy_assignment and propagate_on_container_move_assignment.
 * atomic\<T\> now tolerates overloaded operator&().
-* To increase compiler throughput, STL headers now avoid including declarations for unnecessary compiler intrinsics.
+* To increase compiler throughput, C++ Standard Library headers now avoid including declarations for unnecessary compiler intrinsics.
 * Slightly improved compiler diagnostics for incorrect bind() calls.
 
 ### Open source library support  

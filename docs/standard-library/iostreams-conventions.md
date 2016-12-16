@@ -12,7 +12,7 @@ dev_langs:
   - "C++"
 helpviewer_keywords: 
   - "iostream header"
-  - "Standard C++ Library, iostreams"
+  - "C++ Standard Library, iostreams"
 ms.assetid: 9fe5ded0-37a1-48d1-9671-c81ffc4760ad
 caps.latest.revision: 10
 author: "corob-msft"
@@ -51,7 +51,7 @@ The iostreams headers support conversions between text and encoded forms, and in
  The remaining headers provide support services, typically of direct interest to only the most advanced users of the iostreams classes.  
   
 ## See Also  
- [STL Overview](../standard-library/cpp-standard-library-overview.md)   
+ [C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)   
  [iostream Programming](../standard-library/iostream-programming.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 

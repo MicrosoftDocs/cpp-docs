@@ -1,5 +1,5 @@
 ---
-title: "lexicographical_compare (STL-CLR) | Microsoft Docs"
+title: "lexicographical_compare (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -49,7 +49,7 @@ template<class _InIt1, class _InIt2, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `lexicographical_compare`. For more information, see [lexicographical_compare](http://msdn.microsoft.com/Library/403f8526-50a4-4c1c-865e-391b1095fc32).  
+ This function behaves the same as the C++ Standard Library function `lexicographical_compare`. For more information, see [lexicographical_compare](http://msdn.microsoft.com/Library/403f8526-50a4-4c1c-865e-391b1095fc32).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

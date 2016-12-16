@@ -14,9 +14,9 @@ dev_langs:
   - "C++"
 helpviewer_keywords: 
   - "Safe Libraries"
-  - "Safe Libraries, Standard C++ Library"
-  - "Safe Standard C++ Library"
-  - "Standard C++ Library, debug iterator support"
+  - "Safe Libraries, C++ Standard Library"
+  - "Safe C++ Standard Library"
+  - "C++ Standard Library, debug iterator support"
   - "iterators, debug iterator support"
   - "iterators, incompatible"
   - "incompatible iterators"
@@ -207,7 +207,7 @@ int main() {
 ```  
   
 ## See Also  
- [STL Overview](../standard-library/cpp-standard-library-overview.md)
+ [C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)
 
 
 

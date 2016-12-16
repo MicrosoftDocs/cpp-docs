@@ -1,5 +1,5 @@
 ---
-title: "sort_heap (STL-CLR) | Microsoft Docs"
+title: "sort_heap (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -47,7 +47,7 @@ template<class _RanIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `sort_heap`. For more information, see [sort_heap](http://msdn.microsoft.com/Library/4a16b2ef-a1b4-4c80-823b-3e4bf06b2481).  
+ This function behaves the same as the C++ Standard Library function `sort_heap`. For more information, see [sort_heap](http://msdn.microsoft.com/Library/4a16b2ef-a1b4-4c80-823b-3e4bf06b2481).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

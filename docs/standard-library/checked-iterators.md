@@ -15,8 +15,8 @@ dev_langs:
   - "C++"
 helpviewer_keywords: 
   - "Safe Libraries"
-  - "Safe Libraries, Standard C++ Library"
-  - "Safe Standard C++ Library"
+  - "Safe Libraries, C++ Standard Library"
+  - "Safe C++ Standard Library"
   - "iterators, checked"
   - "checked iterators"
 ms.assetid: cfc87df8-e3d9-403b-ab78-e9483247d940
@@ -189,7 +189,7 @@ int main()
   
     // OK: Raw arrays are checked in debug mode  
     // (an overrun will trigger a debug assertion)  
-    // NOTE: This applies only when raw arrays are given to STL algorithms!  
+    // NOTE: This applies only when raw arrays are given to C++ Standard Library algorithms!  
     int a5[16];  
     transform(v.begin(), v.end(), a5, [](int n) { return n * 5; });  
     print("a5: ", a5);  
@@ -240,6 +240,6 @@ a8: 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
 ```  
   
 ## See Also  
- [STL Overview](../standard-library/cpp-standard-library-overview.md)   
+ [C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)   
  [Debug Iterator Support](../standard-library/debug-iterator-support.md)
 

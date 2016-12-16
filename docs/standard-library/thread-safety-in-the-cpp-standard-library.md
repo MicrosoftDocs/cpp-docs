@@ -12,8 +12,8 @@ dev_langs:
   - "C++"
 helpviewer_keywords: 
   - "thread safety"
-  - "Standard C++ Library, thread safety"
-  - "thread safety, Standard Template Library"
+  - "C++ Standard Library, thread safety"
+  - "thread safety, C++ Standard Library"
 ms.assetid: 9351c8fb-4539-4728-b0e9-226e2ac4284b
 caps.latest.revision: 21
 author: "corob-msft"
@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Thread Safety in the C++ Standard Library
-The following thread safety rules apply to all classes in the Standard C++ Library—this includes `shared_ptr`, as described below.  Stronger guarantees are sometimes provided—for example, the standard iostream objects, as described below, and types specifically intended for multithreading, like those in [\<atomic>](../standard-library/atomic.md).  
+The following thread safety rules apply to all classes in the C++ Standard Library—this includes `shared_ptr`, as described below.  Stronger guarantees are sometimes provided—for example, the standard iostream objects, as described below, and types specifically intended for multithreading, like those in [\<atomic>](../standard-library/atomic.md).  
   
  An object is thread-safe for reading from multiple threads. For example, given an object A, it is safe to read A from thread 1 and from thread 2 simultaneously.  
   
@@ -53,7 +53,7 @@ The following thread safety rules apply to all classes in the Standard C++ Libra
 >  Reading from a stream buffer is not considered to be a read operation. Instead it is considered to be a write operation because the state of the class is changed.  
   
 ## See Also  
- [STL Overview](../standard-library/cpp-standard-library-overview.md)
+ [C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)
 
 
 

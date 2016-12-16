@@ -37,7 +37,7 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # vector Class
-The STL vector class is a template class of sequence containers that arrange elements of a given type in a linear arrangement and allow fast random access to any element. They should be the preferred container for a sequence when random-access performance is at a premium.  
+The C++ Standard Library vector class is a template class of sequence containers that arrange elements of a given type in a linear arrangement and allow fast random access to any element. They should be the preferred container for a sequence when random-access performance is at a premium.  
   
 ## Syntax  
   
@@ -1078,7 +1078,7 @@ Allocator get_allocator() const;
  The allocator used by the vector.  
   
 ### Remarks  
- Allocators for the vector class specify how the class manages storage. The default allocators supplied with STL container classes are sufficient for most programming needs. Writing and using your own allocator class is an advanced C++ topic.  
+ Allocators for the vector class specify how the class manages storage. The default allocators supplied with C++ Standard Library container classes are sufficient for most programming needs. Writing and using your own allocator class is an advanced C++ topic.  
   
 ### Example  
   
@@ -1653,7 +1653,7 @@ void resize(size_type Newsize, Type Val);
 //////////////////////////////////////////////////////////////////////  
   
 // The debugger cannot handle symbols more than 255 characters long.  
-// STL often creates symbols longer than that.  
+// The C++ Standard Library often creates symbols longer than that.  
 // The warning can be disabled:  
 //#pragma warning(disable:4786)  
   

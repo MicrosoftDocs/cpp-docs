@@ -49,7 +49,7 @@ template <class T, class CollType, class ItemType, class CopyItem, class EnumTyp
  A COM collection interface.  
   
  `CollType`  
- An STL container class.  
+ A C++ Standard Library container class.  
   
  *ItemType*  
  The type of item exposed by the container interface.  

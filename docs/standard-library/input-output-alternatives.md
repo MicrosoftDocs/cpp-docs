@@ -43,7 +43,7 @@ Visual C++ provides several alternatives for I/O programming:
   
 -   Microsoft Foundation Class Library.  
   
--   Microsoft Standard C++ Library.  
+-   Microsoft C++ Standard Library.  
   
  The iostream classes are useful for buffered, formatted text I/O. They are also useful for unbuffered or binary I/O if you need a C++ programming interface and decide not to use the Microsoft Foundation Class (MFC) library. The iostream classes are an object-oriented I/O alternative to the C run-time functions.  
   

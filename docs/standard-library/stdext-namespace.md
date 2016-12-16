@@ -41,7 +41,7 @@ Members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](..
   
  When compiling with [/Ze](../build/reference/za-ze-disable-language-extensions.md), which is the default, the compiler will warn on the use of `std` for members of the <hash_map> and <hash_set> header files. To disable the warning, use the [warning](../preprocessor/warning.md) pragma.  
   
- To have the compiler generate an error for the use of `std` for members of the <hash_map> and <hash_set> header files with **/Ze**, add the following directive before #include'ing any Standard C++ Library header files.  
+ To have the compiler generate an error for the use of `std` for members of the <hash_map> and <hash_set> header files with **/Ze**, add the following directive before #include'ing any C++ Standard Library header files.  
   
 ```  
 #define _DEFINE_DEPRECATED_HASH_CLASSES 0  
@@ -50,5 +50,5 @@ Members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](..
  When compiling with **/Za**, the compiler will generate an error.  
   
 ## See Also  
- [STL Overview](../standard-library/cpp-standard-library-overview.md)
+ [C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)
 

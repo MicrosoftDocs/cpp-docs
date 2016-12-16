@@ -34,7 +34,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Parallel Algorithms
-The Parallel Patterns Library (PPL) provides algorithms that concurrently perform work on collections of data. These algorithms resemble those provided by the Standard Template Library (STL).  
+The Parallel Patterns Library (PPL) provides algorithms that concurrently perform work on collections of data. These algorithms resemble those provided by the C++ Standard Library.  
   
 
  The parallel algorithms are composed from existing functionality in the Concurrency Runtime. For example, the [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithm uses a [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) object to perform the parallel loop iterations. The `parallel_for` algorithm partitions work in an optimal way given the available number of computing resources.  
@@ -106,9 +106,9 @@ The Parallel Patterns Library (PPL) provides algorithms that concurrently perfor
   
 ##  <a name="parallel_for_each"></a> The parallel_for_each Algorithm  
 
- The [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algorithm performs tasks on an iterative container, such as those provided by the STL, in parallel. It uses the same partitioning logic that the `parallel_for` algorithm uses.  
+ The [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algorithm performs tasks on an iterative container, such as those provided by the C++ Standard Library, in parallel. It uses the same partitioning logic that the `parallel_for` algorithm uses.  
   
- The `parallel_for_each` algorithm resembles the STL [std::for_each](http://msdn.microsoft.com/library/8cb2ae72-bef6-488b-b011-0475c0787e33) algorithm, except that the `parallel_for_each` algorithm executes the tasks concurrently. Like other parallel algorithms, `parallel_for_each` does not execute the tasks in a specific order.  
+ The `parallel_for_each` algorithm resembles the C++ Standard Library [std::for_each](http://msdn.microsoft.com/library/8cb2ae72-bef6-488b-b011-0475c0787e33) algorithm, except that the `parallel_for_each` algorithm executes the tasks concurrently. Like other parallel algorithms, `parallel_for_each` does not execute the tasks in a specific order.  
   
  Although the `parallel_for_each` algorithm works on both forward iterators and random access iterators, it performs better with random access iterators.  
   
@@ -154,7 +154,7 @@ The Parallel Patterns Library (PPL) provides algorithms that concurrently perfor
   
 ##  <a name="parallel_transform_reduce"></a> The parallel_transform and parallel_reduce Algorithms  
 
- The [concurrency::parallel_transform](reference/concurrency-namespace-functions.md#parallel_transform) and [concurrency::parallel_reduce](reference/concurrency-namespace-functions.md#parallel_reduce) algorithms are parallel versions of the STL algorithms [std::transform](../../standard-library/algorithm-functions.md#transform) and [std::accumulate](../../standard-library/numeric-functions.md#accumulate), respectively. The Concurrency Runtime versions behave like the STL versions except that the operation order is not determined because they execute in parallel. Use these algorithms when you work with a set that is large enough to get performance and scalability benefits from being processed in parallel.  
+ The [concurrency::parallel_transform](reference/concurrency-namespace-functions.md#parallel_transform) and [concurrency::parallel_reduce](reference/concurrency-namespace-functions.md#parallel_reduce) algorithms are parallel versions of the C++ Standard Library algorithms [std::transform](../../standard-library/algorithm-functions.md#transform) and [std::accumulate](../../standard-library/numeric-functions.md#accumulate), respectively. The Concurrency Runtime versions behave like the C++ Standard Library versions except that the operation order is not determined because they execute in parallel. Use these algorithms when you work with a set that is large enough to get performance and scalability benefits from being processed in parallel.  
   
 > [!IMPORTANT]
 >  The `parallel_transform` and `parallel_reduce` algorithms support only random access, bi-directional, and forward iterators because these iterators produce stable memory addresses. Also, these iterators must produce non-`const` l-values.  
@@ -201,7 +201,7 @@ The Parallel Patterns Library (PPL) provides algorithms that concurrently perfor
   
 ###  <a name="map_reduce_example"></a> Example: Performing Map and Reduce in Parallel  
 
- A *map* operation applies a function to each value in a sequence. A *reduce* operation combines the elements of a sequence into one value. You can use the Standard Template Library (STL) [std::transform](../../standard-library/algorithm-functions.md#transform)[std::accumulate](../../standard-library/numeric-functions.md#accumulate) classes to perform map and reduce operations. However, for many problems, you can use the `parallel_transform` algorithm to perform the map operation in parallel and the `parallel_reduce` algorithm perform the reduce operation in parallel.  
+ A *map* operation applies a function to each value in a sequence. A *reduce* operation combines the elements of a sequence into one value. You can use the C++ Standard Library [std::transform](../../standard-library/algorithm-functions.md#transform)[std::accumulate](../../standard-library/numeric-functions.md#accumulate) classes to perform map and reduce operations. However, for many problems, you can use the `parallel_transform` algorithm to perform the map operation in parallel and the `parallel_reduce` algorithm perform the reduce operation in parallel.  
 
   
  The following example compares the time that it takes to compute the sum of prime numbers serially and in parallel. The map phase transforms non-prime values to 0 and the reduce phase sums the values.  

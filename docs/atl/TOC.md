@@ -35,7 +35,7 @@
 ## [ATL Collections and Enumerators](atl-collections-and-enumerators.md)
 ### [ATL Collection and Enumerator Classes](atl-collection-and-enumerator-classes.md)
 ### [Design Principles for Collection and Enumerator Interfaces](design-principles-for-collection-and-enumerator-interfaces.md)
-### [Implementing an STL-Based Collection](implementing-an-stl-based-collection.md)
+### [Implementing a C++ Standard Library-Based Collection](implementing-an-stl-based-collection.md)
 #### [ATL Copy Policy Classes](atl-copy-policy-classes.md)
 ## [ATL Composite Control Fundamentals](atl-composite-control-fundamentals.md)
 ### [Inserting a Composite Control](inserting-a-composite-control.md)

@@ -89,7 +89,7 @@ template <class Base,
 |[CComEnumImpl::m_spUnk](#m_spunk)|The **IUnknown** pointer of the object supplying the collection being enumerated.|  
   
 ## Remarks  
- `CComEnumImpl` provides the implementation for a COM enumerator interface where the items being enumerated are stored in an array. This class is analogous to the `IEnumOnSTLImpl` class, which provides an implementation of an enumerator interface based on an STL container.  
+ `CComEnumImpl` provides the implementation for a COM enumerator interface where the items being enumerated are stored in an array. This class is analogous to the `IEnumOnSTLImpl` class, which provides an implementation of an enumerator interface based on a C++ Standard Library container.  
   
 > [!NOTE]
 >  For details on further differences between `CComEnumImpl` and `IEnumOnSTLImpl`, see [CComEnumImpl::Init](#init).  

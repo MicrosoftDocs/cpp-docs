@@ -1,5 +1,5 @@
 ---
-title: "unique_copy (STL-CLR) | Microsoft Docs"
+title: "unique_copy (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -48,7 +48,7 @@ template<class _InIt, class _OutIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `unique_copy`. For more information, see [unique_copy](http://msdn.microsoft.com/Library/cdbc77b9-81d8-4453-88f5-e701b6dae02d).  
+ This function behaves the same as the C++ Standard Library function `unique_copy`. For more information, see [unique_copy](http://msdn.microsoft.com/Library/cdbc77b9-81d8-4453-88f5-e701b6dae02d).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

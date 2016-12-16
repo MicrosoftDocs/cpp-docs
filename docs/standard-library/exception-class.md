@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # exception Class
-The class serves as the base class for all exceptions thrown by certain expressions and by the Standard C++ Library.  
+The class serves as the base class for all exceptions thrown by certain expressions and by the C++ Standard Library.  
   
 ## Syntax  
 ```  
@@ -58,7 +58,7 @@ class exception {
  The `int` parameter allows you to specify that no memory should be allocated. The value of the `int` is ignored.  
   
 > [!NOTE]
->  The constructors `exception(const char* const &message)` and `exception(const char* const &message, int)` are Microsoft extensions to the Standard C++ Library.  
+>  The constructors `exception(const char* const &message)` and `exception(const char* const &message, int)` are Microsoft extensions to the C++ Standard Library.  
   
 ## Example  
  For examples of the use of the standard exception classes that inherit from the `exception` class, see any of the classes defined in [\<stdexcept>](../standard-library/stdexcept.md).  
