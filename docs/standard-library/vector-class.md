@@ -286,7 +286,7 @@ const_reference back() const;
 ### Remarks  
  If the return value of **back** is assigned to a `const_reference`, the vector object cannot be modified. If the return value of **back** is assigned to a **reference**, the vector object can be modified.  
   
- When compiling with _SECURE_SCL 1, a runtime error will occur if you attempt to access an element in an empty vector.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
+ When compiled by using [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) defined as 1 or 2, a runtime error occurs if you attempt to access an element in an empty vector.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
   
 ### Example  
   
@@ -862,7 +862,7 @@ void emplace_back(Types&&... _Args);
   
 ### Example  
   
-```cppcpp  
+```cpp  
   
 #include <vector>  
 struct obj  
@@ -1039,7 +1039,7 @@ const_reference front() const;
 ### Remarks  
  If the return value of `front` is assigned to a `const_reference`, the vector object cannot be modified. If the return value of `front` is assigned to a **reference**, the vector object can be modified.  
   
- When compiling with _SECURE_SCL 1, a runtime error will occur if you attempt to access an element in an empty vector.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
+ When compiled by using [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) defined as 1 or 2, a runtime error occurs if you attempt to access an element in an empty vector.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
   
 ### Example  
   
@@ -1272,11 +1272,11 @@ const_reference operator[](size_type Pos) const;
 ### Remarks  
  If the return value of `operator[]` is assigned to a `const_reference`, the vector object cannot be modified. If the return value of `operator[]` is assigned to a reference, the vector object can be modified.  
   
- When compiling with _SECURE_SCL 1 (controlled with [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)), a runtime error will occur if you attempt to access an element outside the bounds of the vector.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
+ When compiled by using [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) defined as 1 or 2, a runtime error occurs if you attempt to access an element outside the bounds of the vector.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
   
 ### Example  
   
-```cppcpp  
+```cpp  
 // vector_op_ref.cpp  
 // compile with: /EHsc  
 #include <vector>  

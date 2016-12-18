@@ -3322,10 +3322,8 @@ The string str1 reassigned with string str3c is: World.
  Provides a reference to the character with a specified index in a string.  
   
 ```  
-const_reference operator[](size_type _Off) const;
-
- 
-reference operator[](size_type _Off);
+const_reference operator[](size_type _Off) const;  
+reference operator[](size_type _Off);  
 ```  
   
 ### Parameters  
@@ -3344,7 +3342,7 @@ reference operator[](size_type _Off);
   
  The reference returned may be invalidated by string reallocations or modifications for the non- **const** strings.  
   
- When compiling with _SECURE_SCL 1, a runtime error will occur if you attempt to access an element outside the bounds of the string.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
+ When compiling with [\_ITERATOR\_DEBUG\_LEVEL](../standard-library/iterator-debug-level.md) set to 1 or 2, a runtime error will occur if you attempt to access an element outside the bounds of the string. For more information, see [Checked Iterators](../standard-library/checked-iterators.md).  
   
 ### Example  
   
