@@ -9,12 +9,14 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::add_pointer"
-  - "std.tr1.add_pointer"
   - "add_pointer"
-  - "std.add_pointer"
   - "std::add_pointer"
   - "type_traits/std::add_pointer"
+  - "std.add_pointer"
+  - "std.tr1.add_pointer"
+  - "tr1::add_pointer"
+  - "std::tr1::add_pointer"
+  - "type_traits/std::tr1::add_pointer"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -9,12 +9,14 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::add_volatile"
   - "add_volatile"
-  - "std.tr1.add_volatile"
-  - "std.add_volatile"
   - "std::add_volatile"
   - "type_traits/std::add_volatile"
+  - "std.add_volatile"
+  - "std.tr1.add_volatile"
+  - "tr1::add_volatile"
+  - "std::tr1::add_volatile"
+  - "type_traits/std::tr1::add_volatile"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -9,16 +9,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "memory/std::tr1::bad_weak_ptr"
-  - "std::tr1::bad_weak_ptr"
   - "bad_weak_ptr"
+  - "std::bad_weak_ptr"
+  - "memory/std::bad_weak_ptr"
   - "tr1::bad_weak_ptr"
-  - "tr1.bad_weak_ptr"
-  - "std.tr1.bad_weak_ptr"
+  - "std::tr1::bad_weak_ptr"
+  - "memory/std::tr1::bad_weak_ptr"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "bad_weak_ptr class [TR1]"
+  - "bad_weak_ptr"
   - "bad_weak_ptr class"
 ms.assetid: a09336d5-7237-4480-ab6b-3787e0e6025e
 caps.latest.revision: 20

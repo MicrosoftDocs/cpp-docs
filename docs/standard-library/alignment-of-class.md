@@ -9,12 +9,14 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.alignment_of"
-  - "std::tr1::alignment_of"
   - "alignment_of"
-  - "std.alignment_of"
   - "std::alignment_of"
   - "type_traits/std::alignment_of"
+  - "std.alignment_of"
+  - "std.tr1.alignment_of"
+  - "tr1::alignment_of"
+  - "std::tr1::alignment_of"
+  - "type_traits/std::tr1::alignment_of"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

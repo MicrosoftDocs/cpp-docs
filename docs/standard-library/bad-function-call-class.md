@@ -9,10 +9,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
+  - "bad_function_call"
+  - "std::bad_function_call"
+  - "functional/std::bad_function_call"
+  - "tr1::bad_function_call"
   - "std::tr1::bad_function_call"
   - "functional/std::tr1::bad_function_call"
-  - "std.tr1.bad_function_call"
-  - "bad_function_call"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

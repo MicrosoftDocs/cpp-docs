@@ -9,12 +9,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::chi_squared_distribution"
   - "chi_squared_distribution"
-  - "random/std::tr1::chi_squared_distribution"
-  - "std.tr1.chi_squared_distribution"
-  - "tr1.chi_squared_distribution"
+  - "std::chi_squared_distribution"
+  - "random/std::chi_squared_distribution"
   - "tr1::chi_squared_distribution"
+  - "std::tr1::chi_squared_distribution"
+  - "random/std::tr1::chi_squared_distribution"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

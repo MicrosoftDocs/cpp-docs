@@ -9,12 +9,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::conditional"
-  - "std.tr1.conditional"
   - "conditional"
-  - "std.conditional"
   - "std::conditional"
   - "type_traits/std::conditional"
+  - "tr1::conditional"
+  - "std::tr1::conditional"
+  - "type_traits/std::tr1::conditional"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

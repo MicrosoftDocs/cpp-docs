@@ -10,11 +10,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "cauchy_distribution"
-  - "random/std::tr1::cauchy_distribution"
-  - "std::tr1::cauchy_distribution"
-  - "std.tr1.cauchy_distribution"
+  - "std::cauchy_distribution"
+  - "random/std::cauchy_distribution"
   - "tr1::cauchy_distribution"
-  - "tr1.cauchy_distribution"
+  - "std::tr1::cauchy_distribution"
+  - "random/std::tr1::cauchy_distribution"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

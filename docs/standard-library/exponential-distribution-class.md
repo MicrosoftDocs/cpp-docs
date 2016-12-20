@@ -9,11 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::exponential_distribution"
   - "exponential_distribution"
+  - "std::exponential_distribution"
+  - "random/std::exponential_distribution"
   - "tr1::exponential_distribution"
-  - "tr1.exponential_distribution"
+  - "std::tr1::exponential_distribution"
   - "random/std::tr1::exponential_distribution"
+  - "tr1.exponential_distribution"
   - "std.tr1.exponential_distribution"
 dev_langs: 
   - "C++"

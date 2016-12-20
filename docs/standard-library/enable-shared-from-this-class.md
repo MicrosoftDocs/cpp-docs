@@ -9,14 +9,15 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "tr1.enable_shared_from_this"
   - "enable_shared_from_this"
-  - "std.tr1.enable_shared_from_this"
-  - "memory/std::tr1::enable_shared_from_this"
-  - "std::tr1::enable_shared_from_this"
-  - "tr1::enable_shared_from_this"
-  - "std.enable_shared_from_this"
+  - "std::enable_shared_from_this"
   - "memory/std::enable_shared_from_this"
+  - "std.enable_shared_from_this"
+  - "tr1.enable_shared_from_this"
+  - "std.tr1.enable_shared_from_this"
+  - "tr1::enable_shared_from_this"
+  - "std::tr1::enable_shared_from_this"
+  - "memory/std::tr1::enable_shared_from_this"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

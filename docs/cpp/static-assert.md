@@ -87,15 +87,17 @@ static_assert(sizeof(void *) == 4, "64-bit code generation is not supported.");
 namespace std {  
 template <class CharT, class Traits = std::char_traits<CharT> >  
 class basic_string {  
-    static_assert(tr1::is_pod<CharT>::value,  
+    static_assert(std::is_pod<CharT>::value,  
                   "Template argument CharT must be a POD type in class template basic_string");  
     // ...  
     };  
 }  
+  
 struct NonPOD {  
     NonPOD(const NonPOD &) {}  
     virtual ~NonPOD() {}  
 };  
+  
 int main()  
 {  
     std::basic_string<char> bs;  

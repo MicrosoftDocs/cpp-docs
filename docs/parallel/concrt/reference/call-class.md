@@ -9,6 +9,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
+  - "concurrency::call"
   - "agents/concurrency::call"
 dev_langs: 
   - "C++"
@@ -40,7 +41,7 @@ A `call` messaging block is a multi-source, ordered `target_block` that invokes 
 ## Syntax  
   
 ```
-template<class T, class _FunctorType = std::tr1::function<void(T const&)>>
+template<class T, class _FunctorType = std::function<void(T const&)>>
 class call : public target_block<multi_link_registry<ISource<T>>>;
 ```  
   

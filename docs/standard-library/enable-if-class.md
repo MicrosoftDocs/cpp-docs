@@ -10,11 +10,13 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "enable_if"
-  - "std::tr1::enable_if"
-  - "std.tr1.enable_if"
-  - "std.enable_if"
   - "std::enable_if"
   - "type_traits/std::enable_if"
+  - "std.tr1.enable_if"
+  - "std.enable_if"
+  - "tr1::enable_if"
+  - "std::tr1::enable_if"
+  - "type_traits/std::tr1::enable_if"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -9,14 +9,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "array/std::tr1::array"
-  - "std.tr1.array"
   - "array"
+  - "std::array"
+  - "array/std::array"
+  - "tr1::array"
   - "std::tr1::array"
+  - "array/std::tr1::array"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "array class [TR1]"
+  - "array class"
 ms.assetid: fdfd43a5-b2b5-4b9e-991f-93bf10fb4293
 caps.latest.revision: 22
 author: "corob-msft"

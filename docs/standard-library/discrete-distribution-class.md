@@ -9,12 +9,14 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "random/std::tr1::discrete_distribution"
-  - "std::tr1::discrete_distribution"
+  - "discrete_distribution"
+  - "std::discrete_distribution"
+  - "random/std::discrete_distribution"
   - "tr1.discrete_distribution"
   - "std.tr1.discrete_distribution"
-  - "discrete_distribution"
   - "tr1::discrete_distribution"
+  - "std::tr1::discrete_distribution"
+  - "random/std::tr1::discrete_distribution"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

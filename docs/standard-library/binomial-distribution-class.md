@@ -9,12 +9,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::binomial_distribution"
-  - "std.tr1.binomial_distribution"
-  - "tr1::binomial_distribution"
-  - "random/std::tr1::binomial_distribution"
-  - "tr1.binomial_distribution"
   - "binomial_distribution"
+  - "std::binomial_distribution"
+  - "random/std::binomial_distribution"
+  - "tr1::binomial_distribution"
+  - "std::tr1::binomial_distribution"
+  - "random/std::tr1::binomial_distribution"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

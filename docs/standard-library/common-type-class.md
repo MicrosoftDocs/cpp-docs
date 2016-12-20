@@ -9,12 +9,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.common_type"
   - "common_type"
-  - "std::tr1::common_type"
-  - "std.common_type"
   - "std::common_type"
   - "type_traits/std::common_type"
+  - "tr1::common_type"
+  - "std::tr1::common_type"
+  - "type_traits/std::tr1::common_type"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

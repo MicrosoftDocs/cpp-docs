@@ -9,9 +9,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::basic_regex"
   - "basic_regex"
-  - "std.tr1.basic_regex"
+  - "std::basic_regex"
+  - "regex/std::basic_regex"
+  - "tr1::basic_regex"
+  - "std::tr1::basic_regex"
+  - "regex/std::tr1::basic_regex"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -9,12 +9,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "tr1.bernoulli_distribution"
-  - "random/std::tr1::bernoulli_distribution"
-  - "std.tr1.bernoulli_distribution"
   - "bernoulli_distribution"
+  - "std::bernoulli_distribution"
+  - "random/std::bernoulli_distribution"
   - "tr1::bernoulli_distribution"
   - "std::tr1::bernoulli_distribution"
+  - "random/std::tr1::bernoulli_distribution"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

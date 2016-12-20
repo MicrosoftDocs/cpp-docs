@@ -9,12 +9,14 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
+  - "discard_block_engine"
+  - "std::discard_block_engine"
+  - "random/std::discard_block_engine"
   - "tr1.discard_block_engine"
   - "std.tr1.discard_block_engine"
+  - "tr1::discard_block_engine"
   - "std::tr1::discard_block_engine"
   - "random/std::tr1::discard_block_engine"
-  - "discard_block_engine"
-  - "tr1::discard_block_engine"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

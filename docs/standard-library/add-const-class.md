@@ -9,12 +9,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::add_const"
   - "add_const"
-  - "std.tr1.add_const"
-  - "std.add_const"
   - "std::add_const"
   - "type_traits/std::add_const"
+  - "tr1::add_const"
+  - "std::tr1::add_const"
+  - "type_traits/std::tr1::add_const"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

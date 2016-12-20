@@ -10,11 +10,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "decay"
-  - "std.tr1.decay"
-  - "std::tr1::decay"
-  - "std.decay"
   - "std::decay"
   - "type_traits/std::decay"
+  - "tr1::decay"
+  - "std::tr1::decay"
+  - "type_traits/std::tr1::decay"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
