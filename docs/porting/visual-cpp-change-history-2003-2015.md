@@ -2733,7 +2733,7 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
   
 -   Support for Windows 95, Windows 98, Windows Millennium Edition, and Windows NT 4.0 has been removed.  
   
--   When compiling in debug mode with _HAS_ITERATOR_DEBUGGING defined, an application will now assert when an iterator attempts to increment or decrement past the bounds of the underlying container.  
+-   When compiling in debug mode with _HAS_ITERATOR_DEBUGGING defined (superseded by [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) after Visual Studio 2010), an application will now assert when an iterator attempts to increment or decrement past the bounds of the underlying container.  
   
 -   The member variable c of the stack Class is now declared protected. Previously, this member variable was declared public.  
   
@@ -2819,7 +2819,7 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
   
 -   When calling valarray::resize(), the contents of the valarray will be lost and will be replaced by default values. The resize() method is intended to reinitialize the valarray rather than grow it dynamically like a vector.  
   
--   Debug Iterators: Applications built with a debug version of the C-Runtime Library and which use iterators incorrectly might begin to see asserts at runtime. To disable these asserts, you must define _HAS_ITERATOR_DEBUGGING to 0. For more information, see [Debug Iterator Support](../standard-library/debug-iterator-support.md)  
+-   Debug Iterators: Applications built with a debug version of the C-Runtime Library and which use iterators incorrectly might begin to see asserts at runtime. To disable these asserts, you must define _HAS_ITERATOR_DEBUGGING (superseded by [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) after Visual Studio 2010) to 0. For more information, see [Debug Iterator Support](../standard-library/debug-iterator-support.md)  
   
 ## Visual C++ .NET 2003 Breaking Changes  
   
