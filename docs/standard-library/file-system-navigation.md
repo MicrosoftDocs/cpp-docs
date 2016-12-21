@@ -32,10 +32,10 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # File System Navigation
-The \<filesystem> header implements the C++ File System Technical Specification ISO/IEC TS 18822:2015 (Final draft: [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf)) and has types and functions that enable you to write platform-independent code for navigating the file system. Because it is cross-platform, it contains APIs that are not relevant for Windows systems. For example, this means that `is_fifo(const path&)` always returns `false` on Windows. The header is based on a draft Technical Specification that was not voted into the C++17 standard as of Visual Studio 2015 RTM. Its members are found in the `std::experimental::filesystem` namespace.  
+The \<filesystem> header implements the C++ File System Technical Specification ISO/IEC TS 18822:2015 (Final draft: [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf)) and has types and functions that enable you to write platform-independent code for navigating the file system. Because it is cross-platform, it contains APIs that are not relevant for Windows systems. For example, this means that `is_fifo(const path&)` always returns `false` on Windows. The header is based on a draft Technical Specification that was not voted into the C++17 standard as of Visual Studio 2015 RTM. Its members are found in the `std::experimental::filesystem` namespace, inlined from `std::experimental::filesystem::v1`.  
   
 ## Overview  
- Use the \<filesystem> APIs for the following tasks:  
+Use the \<filesystem> APIs for the following tasks:  
   
 -   iterate over files and directories under a specified path  
   
@@ -47,41 +47,32 @@ The \<filesystem> header implements the C++ File System Technical Specification 
   
 -   copy and delete files  
   
- For more information about File IO using the Standard Library, see [iostream Programming](../standard-library/iostream-programming.md).  
+For more information about File IO using the Standard Library, see [iostream Programming](../standard-library/iostream-programming.md).  
   
 ## Paths  
   
 ### Constructing and composing paths  
- Paths in Windows (since XP) are stored natively in Unicode. The [path](../standard-library/path-class.md) class automatically performs all necessary string conversions. It accepts arguments of both wide and narrow character arrays, as well as `std::string` and `std::wstring` types formatted as UTF8 or UTF16. The `path` class also automatically normalizes path separators. You can use a single forward slash as a directory separator in constructor arguments. This enables you to use the same strings to store paths in both Windows and UNIX environments:  
+Paths in Windows (since XP) are stored natively in Unicode. The [path](../standard-library/path-class.md) class automatically performs all necessary string conversions. It accepts arguments of both wide and narrow character arrays, as well as `std::string` and `std::wstring` types formatted as UTF8 or UTF16. The `path` class also automatically normalizes path separators. You can use a single forward slash as a directory separator in constructor arguments. This enables you to use the same strings to store paths in both Windows and UNIX environments:  
   
 ```cpp  
-path pathToDisplay(L"/FileSystemTest/SubDir3");
-
-// OK!  
-path pathToDisplay2(L"\\FileSystemTest\\SubDir3");
-
-// Still OK as always  
-path pathToDisplay3(LR"(\FileSystemTest\SubDir3)");
-
-// Raw string literals are OK, too.  
+path pathToDisplay(L"/FileSystemTest/SubDir3");     // OK!  
+path pathToDisplay2(L"\\FileSystemTest\\SubDir3");  // Still OK as always  
+path pathToDisplay3(LR"(\FileSystemTest\SubDir3)"); // Raw string literals are OK, too.  
 ```  
   
- To concatenate two paths, you can use the overloaded `/` and `/=` operators, which are analogous to the `+` and `+=` operators on `std::string` and `std::wstring`. The `path` object will conveniently supply the separators if you don’t.  
+To concatenate two paths, you can use the overloaded `/` and `/=` operators, which are analogous to the `+` and `+=` operators on `std::string` and `std::wstring`. The `path` object will conveniently supply the separators if you don’t.  
   
 ```cpp  
-path myRoot("C:/FileSystemTest");
-
-// no trailing separator, no problem!  
-myRoot /= path("SubDirRoot");
-
-// C:/FileSystemTest/SubDirRoot  
+path myRoot("C:/FileSystemTest");  // no trailing separator, no problem!  
+myRoot /= path("SubDirRoot");      // C:/FileSystemTest/SubDirRoot  
 ```  
   
 ### Examining paths  
- The path class has several methods that return information about various parts of the path itself, as distinct from the file system entity it might refer to. You can get the root, the relative path, the file name, the file extension, and more. You can iterate over a path object to examine all the folders in the hierarchy. The following example shows how to iterate over a path (not the directory it refers to), and to retrieve information about its parts.  
+The path class has several methods that return information about various parts of the path itself, as distinct from the file system entity it might refer to. You can get the root, the relative path, the file name, the file extension, and more. You can iterate over a path object to examine all the folders in the hierarchy. The following example shows how to iterate over a path (not the directory it refers to), and to retrieve information about its parts.  
   
 ```cpp  
-  
+// filesystem_path_example.cpp  
+// compile by using: /EHsc  
 #include <string>  
 #include <iostream>  
 #include <sstream>  
@@ -90,7 +81,7 @@ myRoot /= path("SubDirRoot");
 using namespace std;  
 using namespace std::experimental::filesystem;  
   
-wstring  DisplayPathInfo()  
+wstring DisplayPathInfo()  
 {  
     // This path may or may not refer to an existing file. We are   
     // examining this path string, not file system objects.  
@@ -125,9 +116,9 @@ void main(int argc, char* argv[])
 }  
 ```  
   
- The code produces this output:  
+The code produces this output:  
   
-```cpp  
+```Output  
 Displaying path info for: C:\FileSystemTest\SubDir3\SubDirLevel2\File2.txt  
 path part: 0 = C:  
 path part: 1 = \  
@@ -145,68 +136,92 @@ extension() = .txt
 ```  
   
 ### Comparing paths  
- The `path` class overloads the same comparison operators as `std::string` and `std::wstring`. When you compare two paths, you are performing a string comparison after the separators have been normalized. If a trailing slash (or backslash) is missing it is not added and affects the comparison. The following example demonstrates how path values compare:  
+The `path` class overloads the same comparison operators as `std::string` and `std::wstring`. When you compare two paths, you are performing a string comparison after the separators have been normalized. If a trailing slash (or backslash) is missing it is not added and affects the comparison. The following example demonstrates how path values compare:  
   
 ```cpp  
- 
 wstring ComparePaths()  
 {  
-    path p0(L"C:/Documents");
+    path p0(L"C:/Documents");                 // no trailing separator  
+    path p1(L"C:/Documents/");                // p0 < p1  
+    path p2(L"C:/Documents/2013/");           // p1 < p2      
+    path p3(L"C:/Documents/2013/Reports/");   // p2 < p3  
+    path p4(L"C:/Documents/2014/");           // p3 < p4   
+    path p5(L"D:/Documents/2013/Reports/");   // p4 < p5  
 
-// no trailing separator  
-    path p1(L"C:/Documents/");
-
-//p0 <p1  
-    path p2(L"C:/Documents/2013/");
-
-// p1 <p2      
-    path p3(L"C:/Documents/2013/Reports/");
-
-// p2 <p3  
-    path p4(L"C:/Documents/2014/");
-// p3 <p4   
-    path p5(L"D:/Documents/2013/Reports/");
-
-// p4 <p5  
- 
     wostringstream wos;  
-    wos <<boolalpha <<
-    p0.wstring() <<L" <" <<p1.wstring() <<L": " <<(p0 <p1) <<endl <<
-    p1.wstring() <<L" <" <<p2.wstring() <<L": " <<(p1 <p2) <<endl <<
-    p2.wstring() <<L" <" <<p3.wstring() <<L": " <<(p2 <p3) <<endl <<
-    p3.wstring() <<L" <" <<p4.wstring() <<L": " <<(p3 <p4) <<endl <<
-    p4.wstring() <<L" <" <<p5.wstring() <<L": " <<(p4 <p5) <<endl;  
+    wos << boolalpha <<
+        p0.wstring() << L" < " << p1.wstring() << L": " << (p0 < p1) << endl <<
+        p1.wstring() << L" < " << p2.wstring() << L": " << (p1 < p2) << endl <<
+        p2.wstring() << L" < " << p3.wstring() << L": " << (p2 < p3) << endl <<
+        p3.wstring() << L" < " << p4.wstring() << L": " << (p3 < p4) << endl <<
+        p4.wstring() << L" < " << p5.wstring() << L": " << (p4 < p5) << endl;  
     return wos.str();
-
 }  
-/* Output:  
-C:\Documents <C:\Documents\: true  
-C:\Documents\ <C:\Documents\2013\: true  
-C:\Documents\2013\ <C:\Documents\2013\Reports\: true  
-C:\Documents\2013\Reports\ <C:\Documents\2014\: true  
-C:\Documents\2014\ <D:\Documents\2013\Reports\: true  
-*/  
 ```  
   
- To run this code, paste it into the full example above and uncomment the line that calls it in main.  
+```Output  
+C:\Documents < C:\Documents\: true  
+C:\Documents\ < C:\Documents\2013\: true  
+C:\Documents\2013\ < C:\Documents\2013\Reports\: true  
+C:\Documents\2013\Reports\ < C:\Documents\2014\: true  
+C:\Documents\2014\ < D:\Documents\2013\Reports\: true  
+```  
+  
+To run this code, paste it into the full example above before `main` and uncomment the line that calls it in main.  
   
 ### Converting between path and string types  
- A `path` object is implicitly convertible to `std::wstring` or `std::string`. This means you can pass a path to functions such as [wofstream::open](../standard-library/basic-ofstream-class.md#basic_ofstream__open), as shown in this example:  
+A `path` object is implicitly convertible to `std::wstring` or `std::string`. This means you can pass a path to functions such as [wofstream::open](../standard-library/basic-ofstream-class.md#basic_ofstream__open), as shown in this example:  
   
 ```cpp  
-wchar_t* p = L"C:/test";  
+// filesystem_path_conversion.cpp  
+// compile by using: /EHsc  
+#include <string>  
+#include <iostream>  
+#include <fstream>  
+#include <filesystem>  
+
+using namespace std;
+using namespace std::experimental::filesystem;
+
+void main(int argc, char* argv[])
+{
+    wchar_t* p = L"C:/Users/Public/Documents";
     path filePath(p);
 
-    filePath /= L"NewFile.txt";  
- // Open, write to, and close the file.  
-    wofstream myFile;  
-    myFile.open(filePath);
+    filePath /= L"NewFile.txt";
 
- myFile <<L"Lorem ipsum...";  
-    myFile.close 
+    // Open, write to, and close the file.  
+    wofstream writeFile(filePath, ios::out);  // implicit conversion
+    writeFile << L"Lorem ipsum\nDolor sit amet";
+    writeFile.close();
+
+    // Open, read, and close the file.
+    wifstream readFile;
+    wstring line;
+    readFile.open(filePath);  // implicit conversions
+    wcout << L"File " << filePath << L" contains:" << endl;
+    while (readFile.good())
+    {
+        getline(readFile, line);
+        wcout << line << endl;
+    }
+    readFile.close();
+
+    wcout << endl << L"Press Enter to exit" << endl;
+    wstring input;
+    getline(wcin, input);
+}
+```  
+  
+```Output  
+File C:\Users\Public\Documents\NewFile.txt contains:
+Lorem ipsum
+Dolor sit amet
+
+Press Enter to exit  
 ```  
   
 ## Iterating directories and files  
- The \<filesystem> header provides the [directory_iterator](../standard-library/directory-iterator-class.md) type to iterate over single directories, and the [recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md) class to iterate recursively over a directory and its subdirectories. After you construct an iterator by passing it a `path` object, the iterator points to the first directory_entry in the path. Create the end iterator by calling the default constructor.  
+The \<filesystem> header provides the [directory_iterator](../standard-library/directory-iterator-class.md) type to iterate over single directories, and the [recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md) class to iterate recursively over a directory and its subdirectories. After you construct an iterator by passing it a `path` object, the iterator points to the first directory_entry in the path. Create the end iterator by calling the default constructor.  
   
- When iterating through a directory, there are several kinds of items you might encounter, including but not limited to directories, files, symbolic links, and socket files. The `directory_iterator` returns its items as [directory_entry](../standard-library/directory-entry-class.md)
+When iterating through a directory, there are several kinds of items you might encounter, including but not limited to directories, files, symbolic links, and socket files. The `directory_iterator` returns its items as [directory_entry](../standard-library/directory-entry-class.md) objects.  

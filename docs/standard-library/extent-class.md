@@ -12,11 +12,6 @@ f1_keywords:
   - "extent"
   - "std::extent"
   - "type_traits/std::extent"
-  - "tr1::extent"
-  - "std::tr1::extent"
-  - "type_traits/std::tr1::extent"
-  - "std.extent"
-  - "std.tr1.extent"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

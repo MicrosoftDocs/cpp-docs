@@ -12,9 +12,30 @@ f1_keywords:
   - "cauchy_distribution"
   - "std::cauchy_distribution"
   - "random/std::cauchy_distribution"
-  - "tr1::cauchy_distribution"
-  - "std::tr1::cauchy_distribution"
-  - "random/std::tr1::cauchy_distribution"
+  - "std::cauchy_distribution::reset"
+  - "random/std::cauchy_distribution::reset"
+  - "std::cauchy_distribution::a"
+  - "random/std::cauchy_distribution::a"
+   - "std::cauchy_distribution::b"
+  - "random/std::cauchy_distribution::b"
+  - "std::cauchy_distribution::param"
+  - "random/std::cauchy_distribution::param"
+  - "std::cauchy_distribution::min"
+  - "random/std::cauchy_distribution::min"
+  - "std::cauchy_distribution::max"
+  - "random/std::cauchy_distribution::max"
+  - "std::cauchy_distribution::operator()"
+  - "random/std::cauchy_distribution::operator()"
+  - "std::cauchy_distribution::param_type"
+  - "random/std::cauchy_distribution::param_type"
+  - "std::cauchy_distribution::param_type::a"
+  - "random/std::cauchy_distribution::param_type::a"
+  - "std::cauchy_distribution::param_type::b"
+  - "random/std::cauchy_distribution::param_type::b"
+  - "std::cauchy_distribution::param_type::operator=="
+  - "random/std::cauchy_distribution::param_type::operator=="
+  - "std::cauchy_distribution::param_type::operator!="
+  - "random/std::cauchy_distribution::param_type::operator!="
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -43,38 +64,64 @@ translation.priority.ht:
 Generates a Cauchy distribution.  
   
 ## Syntax  
+  
 ```  
-class cauchy_distribution{public:    // types typedef RealType result_type;    struct param_type;    // constructor and reset functions explicit cauchy_distribution(RealType a = 0.0, RealType b = 1.0);
+template<class RealType = double>  
+class cauchy_distribution {  
+public:  
+   // types 
+   typedef RealType result_type;  
+   struct param_type;  
+   
+   // constructor and reset functions  
+   explicit cauchy_distribution(result_type a = 0.0, result_type b = 1.0);
    explicit cauchy_distribution(const param_type& parm);
    void reset();
-   // generating functions template <class URNG>  
+   
+   // generating functions 
+   template <class URNG>  
    result_type operator()(URNG& gen);
    template <class URNG>  
    result_type operator()(URNG& gen, const param_type& parm);
-   // property functions RealType a() const;
-   RealType b() const;
+   
+   // property functions 
+   result_type a() const;
+   result_type b() const;
    param_type param() const;
    void param(const param_type& parm);
    result_type min() const;
-   result_type max() const;};  
-```   
-#### Parameters  
- `RealType`  
- The floating-point result type, defaults to `double`. For possible types, see [\<random>](../standard-library/random.md).  
+   result_type max() const;
+   };  
+```  
   
+### Parameters  
+*RealType*  
+The floating-point result type, defaults to `double`. For possible types, see [\<random>](../standard-library/random.md).  
+  
+*URNG*
+The uniform random number generator engine. For possible types, see [\<random>](../standard-library/random.md).  
+
 ## Remarks  
- The template class describes a distribution that produces values of a user-specified integral type, or type `double` if none is provided, distributed according to the Cauchy Distribution. The following table links to articles about individual members.  
+The template class describes a distribution that produces values of a user-specified floating-point type, or type `double` if none is provided, distributed according to the Cauchy Distribution. The following table links to articles about individual members.  
   
 ||||  
 |-|-|-|  
 |[cauchy_distribution::cauchy_distribution](#cauchy_distribution__cauchy_distribution)|`cauchy_distribution::a`|`cauchy_distribution::param`|  
 |`cauchy_distribution::operator()`|`cauchy_distribution::b`|[cauchy_distribution::param_type](#cauchy_distribution__param_type)|  
   
- The property functions `a()` and `b()` return their respective values for stored distribution parameters `a` and `b`.  
+The property functions `a()` and `b()` return their respective values for stored distribution parameters `a` and `b`.  
   
- For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
+The property member `param()` sets or returns the `param_type` stored distribution parameter package.  
+
+The `min()` and `max()` member functions return the smallest possible result and largest possible result, respectively.  
   
- For detailed information about the cauchy distribution, see the Wolfram MathWorld article [Cauchy Distribution](http://go.microsoft.com/fwlink/LinkId=400523).  
+The `reset()` member function discards any cached values, so that the result of the next call to `operator()` does not depend on any values obtained from the engine before the call.  
+  
+The `operator()` member functions return the next generated value based on the URNG engine, either from the current parameter package, or the specified parameter package.
+  
+For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
+  
+For detailed information about the cauchy distribution, see the Wolfram MathWorld article [Cauchy Distribution](http://go.microsoft.com/fwlink/LinkId=400523).  
   
 ## Example  
   
@@ -134,13 +181,11 @@ int main()
   
     test(a_dist, b_dist, samples);  
 }  
-  
 ```  
   
-## Output  
- First run:  
+First run:  
   
-```  
+```Output  
 Use CTRL-Z to bypass data entry and run using default values.  
 Enter a floating point value for the 'a' distribution parameter: 0  
 Enter a floating point value for the 'b' distribution parameter (must be greater than zero): 1  
@@ -163,9 +208,9 @@ Distribution for 10 samples:
     10: 2.5253154706  
 ```  
   
- Second run:  
+Second run:  
   
-```  
+```Output  
 Use CTRL-Z to bypass data entry and run using default values.  
 Enter a floating point value for the 'a' distribution parameter: 0  
 Enter a floating point value for the 'b' distribution parameter (must be greater than zero): 10  
@@ -188,9 +233,9 @@ Distribution for 10 samples:
     10: 25.2531547063  
 ```  
   
- Third run:  
+Third run:  
   
-```  
+```Output  
 Use CTRL-Z to bypass data entry and run using default values.  
 Enter a floating point value for the 'a' distribution parameter: 10  
 Enter a floating point value for the 'b' distribution parameter (must be greater than zero): 10  
@@ -214,60 +259,67 @@ Distribution for 10 samples:
 ```  
   
 ## Requirements  
- **Header:** \<random>  
+**Header:** \<random>  
   
- **Namespace:** std  
+**Namespace:** std  
   
 ##  <a name="cauchy_distribution__cauchy_distribution"></a>  cauchy_distribution::cauchy_distribution  
- Constructs the distribution.  
+Constructs the distribution.  
   
 ```  
-explicit cauchy_distribution(RealType a = 0.0, RealType b = 1.0);
-
- 
+explicit cauchy_distribution(result_type a = 0.0, result_type b = 1.0);
 explicit cauchy_distribution(const param_type& parm);
 ```  
   
 ### Parameters  
- `a`  
- The `a` distribution parameter.  
+*a*  
+The `a` distribution parameter.  
   
- `b`  
- The `b` distribution parameter.  
+*b*  
+The `b` distribution parameter.  
   
- `parm`  
- The parameter structure used to construct the distribution.  
+*parm*  
+The `param_type` structure used to construct the distribution.  
   
 ### Remarks  
- **Precondition:** `0.0 < b`  
+**Precondition:** `0.0 < b`  
   
- The first constructor constructs an object whose stored `a` value holds the value `a` and whose stored `b` value holds the value `b`.  
+The first constructor constructs an object whose stored `a` value holds the value *a* and whose stored `b` value holds the value *b*.  
   
- The second constructor constructs an object whose stored parameters are initialized from `parm`. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
+The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
 ##  <a name="cauchy_distribution__param_type"></a>  cauchy_distribution::param_type  
- Stores all the parameters of the distribution.  
+Stores all the parameters of the distribution.  
+  
 ```cpp    
 struct param_type {  
-   typedef cauchy_distribution<RealType> distribution_type;  
-   param_type(RealType a = 0.0, RealType b = 1.0);
-   RealType a() const;
-   RealType b() const;
-   .....  
+   typedef cauchy_distribution<result_type> distribution_type;  
+   param_type(result_type a = 0.0, result_type b = 1.0);
+   result_type a() const;
+   result_type b() const;
+
    bool operator==(const param_type& right) const;
    bool operator!=(const param_type& right) const;
    };  
 ```  
+  
 ### Parameters  
- See parent topic [cauchy_distribution Class](../standard-library/cauchy-distribution-class.md).  
+*a*  
+The `a` distribution parameter.  
+  
+*b*  
+The `b` distribution parameter.  
+  
+*right*  
+The `param_type` object to compare to this.  
   
 ### Remarks  
- **Precondition:** `0.0 < b`  
+**Precondition:** `0.0 < b`  
   
- This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
+This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
   
 ## See Also  
- [\<random>](../standard-library/random.md)
+[\<random>](../standard-library/random.md)
 
 
 

@@ -12,12 +12,6 @@ f1_keywords:
   - "enable_shared_from_this"
   - "std::enable_shared_from_this"
   - "memory/std::enable_shared_from_this"
-  - "std.enable_shared_from_this"
-  - "tr1.enable_shared_from_this"
-  - "std.tr1.enable_shared_from_this"
-  - "tr1::enable_shared_from_this"
-  - "std::tr1::enable_shared_from_this"
-  - "memory/std::tr1::enable_shared_from_this"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
