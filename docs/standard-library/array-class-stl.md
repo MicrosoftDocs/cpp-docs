@@ -12,9 +12,68 @@ f1_keywords:
   - "array"
   - "std::array"
   - "array/std::array"
-  - "tr1::array"
-  - "std::tr1::array"
-  - "array/std::tr1::array"
+  - "std::array::const_iterator"
+  - "array/std::array::const_iterator"
+  - "std::array::const_pointer"
+  - "array/std::array::const_pointer"
+  - "std::array::const_reference"
+  - "array/std::array::const_reference"
+  - "std::array::const_reverse_iterator"
+  - "array/std::array::const_reverse_iterator"
+  - "std::array::difference_type"
+  - "array/std::array::difference_type"
+  - "std::array::iterator"
+  - "array/std::array::iterator"
+  - "std::array::pointer"
+  - "array/std::array::pointer"
+  - "std::array::reference"
+  - "array/std::array::reference"
+  - "std::array::reverse_iterator"
+  - "array/std::array::reverse_iterator"
+  - "std::array::size_type"
+  - "array/std::array::size_type"
+  - "std::array::value_type"
+  - "array/std::array::value_type"
+  - "std::array::assign"
+  - "array/std::array::assign"
+  - "std::array::at"
+  - "array/std::array::at"
+  - "std::array::back"
+  - "array/std::array::back"
+  - "std::array::begin"
+  - "array/std::array::begin"
+  - "std::array::cbegin"
+  - "array/std::array::cbegin"
+  - "std::array::cend"
+  - "array/std::array::cend"
+  - "std::array::crbegin"
+  - "array/std::array::crbegin"
+  - "std::array::crend"
+  - "array/std::array::crend"
+  - "std::array::data"
+  - "array/std::array::data"
+  - "std::array::empty"
+  - "array/std::array::empty"
+  - "std::array::end"
+  - "array/std::array::end"
+  - "std::array::fill"
+  - "array/std::array::fill"
+  - "std::array::front"
+  - "array/std::array::front"
+  - "std::array::max_size"
+  - "array/std::array::max_size"
+  - "std::array::rbegin"
+  - "array/std::array::rbegin"
+  - "std::array::rend"
+  - "array/std::array::rend"
+  - "std::array::size"
+  - "array/std::array::size"
+  - "std::array::swap"
+  - "array/std::array::swap"
+  - "std::array::operator="
+  - "array/std::array::operator="
+  - "std::array::operator[]"
+  - "array/std::array::operator[]"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -127,30 +186,18 @@ array(const array& right);
 ```  
   
 ### Parameters  
- `right`  
+*right*  
  Object or range to insert.  
   
 ### Remarks  
- The constructor:  
+The default constructor `array()` leaves the controlled sequence uninitialized (or default initialized). You use it to specify an uninitialized controlled sequence.  
   
-```  
-array();
-```  
-  
- leaves the controlled sequence uninitialized (or default initialized). You use it to specify an uninitialized controlled sequence.  
-  
- The constructor:  
-  
-```  
-array(const array& right);
-```  
-  
- initializes the controlled sequence with the sequence `[``right``.`[array::begin](#array__begin)`(),` `right``.`[array::end](#array__end)`())`. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the array object `right`.  
+The copy constructor `array(const array& right)` initializes the controlled sequence with the sequence [*right*`.begin()`, *right*`.end()`). You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the array object *right*.  
   
 ### Example  
   
 ```cpp  
-// std_tr1__array__array_array.cpp   
+// std__array__array_array.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   
@@ -185,7 +232,7 @@ int main()
 ```  
   
 ##  <a name="array__assign"></a>  array::assign  
- Replaces all elements.  
+Obsolete in C++11, replaced by [fill](#array__fill). Replaces all elements.  
   
 ```  
 void assign(const Ty& val);
@@ -201,7 +248,7 @@ void assign(const Ty& val);
 ### Example  
   
 ```cpp  
-// std_tr1__array__array_assign.cpp   
+// std__array__array_assign.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   
@@ -340,7 +387,7 @@ const_iterator begin() const noexcept;
 ### Example  
   
 ```cpp  
-// std_tr1__array__array_begin.cpp   
+// std__array__array_begin.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   
@@ -486,7 +533,7 @@ typedef const Ty *const_pointer;
 ### Example  
   
 ```cpp  
-// std_tr1__array__array_const_pointer.cpp   
+// std__array__array_const_pointer.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   
@@ -530,7 +577,7 @@ typedef const Ty& const_reference;
 ### Example  
   
 ```cpp  
-// std_tr1__array__array_const_reference.cpp   
+// std__array__array_const_reference.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   
@@ -574,7 +621,7 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 ### Example  
   
 ```cpp  
-// std_tr1__array__array_const_reverse_iterator.cpp   
+// std__array__array_const_reverse_iterator.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   
@@ -706,7 +753,7 @@ const Ty *data() const;
 ### Example  
   
 ```cpp  
-// std_tr1__array__array_data.cpp   
+// std__array__array_data.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   
@@ -750,7 +797,7 @@ typedef std::ptrdiff_t difference_type;
 ### Example  
   
 ```cpp  
-// std_tr1__array__array_difference_type.cpp   
+// std__array__array_difference_type.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   
@@ -794,7 +841,7 @@ constexpr bool empty() const;
 ### Example  
   
 ```cpp  
-// std_tr1__array__array_empty.cpp   
+// std__array__array_empty.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   
@@ -846,7 +893,7 @@ const_reference end() const;
 ### Example  
   
 ```cpp  
-// std_tr1__array__array_end.cpp   
+// std__array__array_end.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   
@@ -936,7 +983,7 @@ constexpr const_reference front() const;
 ### Example  
   
 ```cpp  
-// std_tr1__array__array_front.cpp   
+// std__array__array_front.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   
@@ -1065,7 +1112,6 @@ int main()
  Accesses an element at a specified position.  
   
 ```  
- 
 reference operator[](size_type off);
 
 constexpr const_reference operator[](size_type off) const;
@@ -1078,10 +1124,12 @@ constexpr const_reference operator[](size_type off) const;
 ### Remarks  
  The member functions return a reference to the element of the controlled sequence at position `off`. If that position is invalid, the behavior is undefined.  
   
+There is also a non-member [get](array-functions.md#get_function) function available to get a reference to an element of an `array`.  
+  
 ### Example  
   
 ```cpp  
-// std_tr1__array__array_operator_sub.cpp   
+// std__array__array_operator_sub.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   
@@ -1129,7 +1177,7 @@ array <Value>%  operator=(array <Value>% right);
 ### Example  
   
 ```cpp  
-// std_tr1__array__array_operator_as.cpp   
+// std__array__array_operator_as.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   
@@ -1177,7 +1225,7 @@ typedef Ty *pointer;
 ### Example  
   
 ```cpp  
-// std_tr1__array__array_pointer.cpp   
+// std__array__array_pointer.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   
@@ -1222,7 +1270,7 @@ const_reverse_iterator rbegin() const noexcept;
 ### Example  
   
 ```cpp  
-// std_tr1__array__array_rbegin.cpp   
+// std__array__array_rbegin.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   
@@ -1266,7 +1314,7 @@ typedef Ty& reference;
 ### Example  
   
 ```cpp  
-// std_tr1__array__array_reference.cpp   
+// std__array__array_reference.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   
@@ -1311,7 +1359,7 @@ const_reverse_iterator rend() const noexcept;
 ### Example  
   
 ```cpp  
-// std_tr1__array__array_rend.cpp   
+// std__array__array_rend.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   
@@ -1355,7 +1403,7 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
 ### Example  
   
 ```cpp  
-// std_tr1__array__array_reverse_iterator.cpp   
+// std__array__array_reverse_iterator.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   
@@ -1399,7 +1447,7 @@ constexpr size_type size() const;
 ### Example  
   
 ```cpp  
-// std_tr1__array__array_size.cpp   
+// std__array__array_size.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   
@@ -1474,7 +1522,7 @@ int main()
 ```  
   
 ##  <a name="array__swap"></a>  array::swap  
- Swaps the contents of two arrays.  
+Swaps the contents of this array with another array.  
   
 ```  
 void swap(array& right);
@@ -1485,12 +1533,14 @@ void swap(array& right);
  Array to swap contents with.  
   
 ### Remarks  
- The member function swaps the controlled sequences between `*this` and `right`. It performs a number of element assignments and constructor calls proportional to `N`.  
+The member function swaps the controlled sequences between `*this` and `right`. It performs a number of element assignments and constructor calls proportional to `N`.  
+
+There is also a non-member [swap](array-functions.md#swap_function) function available to swap two `array` instances.  
   
 ### Example  
   
 ```cpp  
-// std_tr1__array__array_swap.cpp   
+// std__array__array_swap.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   
@@ -1547,7 +1597,7 @@ typedef Ty value_type;
 ### Example  
   
 ```cpp  
-// std_tr1__array__array_value_type.cpp   
+// std__array__array_value_type.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   

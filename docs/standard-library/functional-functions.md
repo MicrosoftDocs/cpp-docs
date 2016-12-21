@@ -70,7 +70,7 @@ unspecified bind(Fty fn, T1 t1, T2 t2, ..., TN tN);
 ### Example  
   
 ```cpp  
-// std_tr1__functional__bind.cpp   
+// std__functional__bind.cpp   
 // compile with: /EHsc   
 #include <functional>   
 #include <algorithm>   
@@ -466,7 +466,7 @@ reference_wrapper<const Ty> cref(const reference_wrapper<Ty>& arg);
 ### Example  
   
 ```cpp  
-// std_tr1__functional__cref.cpp   
+// std__functional__cref.cpp   
 // compile with: /EHsc   
 #include <functional>   
 #include <iostream>   
@@ -521,7 +521,7 @@ unspecified mem_fn(Ret Ty::*pm);
 ### Example  
   
 ```cpp  
-// std_tr1__functional__mem_fn.cpp   
+// std__functional__mem_fn.cpp   
 // compile with: /EHsc   
 #include <functional>   
 #include <iostream>   
@@ -1022,7 +1022,7 @@ void swap(function<Fty>& f1, function<Fty>& f2);
 ### Example  
   
 ```cpp  
-// std_tr1__functional__swap.cpp   
+// std__functional__swap.cpp   
 // compile with: /EHsc   
 #include <functional>   
 #include <iostream>   

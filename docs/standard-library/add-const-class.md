@@ -12,13 +12,10 @@ f1_keywords:
   - "add_const"
   - "std::add_const"
   - "type_traits/std::add_const"
-  - "tr1::add_const"
-  - "std::tr1::add_const"
-  - "type_traits/std::tr1::add_const"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "add_const class [TR1]"
+  - "add_const class"
   - "add_const"
 ms.assetid: 1262a1eb-8c9c-4dd6-9f43-88ba280182f1
 caps.latest.revision: 19
@@ -60,13 +57,13 @@ struct add_const;
 ## Example  
   
 ```cpp  
-// std_tr1__type_traits__add_const.cpp   
+// std__type_traits__add_const.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   
   
 int main()   
-    {   
+{   
     std::add_const<int>::type *p = (const int *)0;   
   
     p = p;  // to quiet "unused" warning   
@@ -74,8 +71,7 @@ int main()
         << typeid(*p).name() << std::endl;   
   
     return (0);   
-    }  
-  
+}  
 ```  
   
 ```Output  

@@ -15,7 +15,7 @@ f1_keywords:
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "enable_if class[TR1]"
+  - "enable_if class"
   - "enable_if"
 ms.assetid: c6b8d41c-a18f-4e30-a39e-b3aa0e8fd926
 caps.latest.revision: 28

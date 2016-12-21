@@ -12,13 +12,10 @@ f1_keywords:
   - "decay"
   - "std::decay"
   - "type_traits/std::decay"
-  - "tr1::decay"
-  - "std::tr1::decay"
-  - "type_traits/std::tr1::decay"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "decay class[TR1]"
+  - "decay class"
 ms.assetid: 96baa2fd-c8e0-49af-be91-ba375ba7f9dc
 caps.latest.revision: 20
 author: "corob-msft"

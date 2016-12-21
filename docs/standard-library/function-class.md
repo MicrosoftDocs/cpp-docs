@@ -9,14 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "functional/std::tr1::function"
-  - "std.tr1.function"
-  - "std::tr1::function"
   - "function"
+  - "std::function"
+  - "functional/std::function"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "function class [TR1]"
+  - "function class"
 ms.assetid: 7b5ca76b-9ca3-4d89-8fcf-cad70a4aeae6
 caps.latest.revision: 26
 author: "corob-msft"
@@ -233,7 +232,7 @@ _Fnref,
 ### Example  
   
 ```cpp  
-// std_tr1__functional__function_function.cpp   
+// std__functional__function_function.cpp   
 // compile with: /EHsc   
 #include <functional>   
 #include <iostream>   
@@ -312,7 +311,7 @@ g is empty (correct).
 ### Example  
   
 ```cpp  
-// std_tr1__functional__function_operator_bool.cpp   
+// std__functional__function_operator_bool.cpp   
 // compile with: /EHsc   
 #include <functional>   
 #include <iostream>   
@@ -362,7 +361,7 @@ result_type operator()(T1 t1,
 ### Example  
   
 ```cpp  
-// std_tr1__functional__function_operator_call.cpp   
+// std__functional__function_operator_call.cpp   
 // compile with: /EHsc   
 #include <functional>   
 #include <iostream>   
@@ -423,7 +422,7 @@ fnref);
 ### Example  
   
 ```cpp  
-// std_tr1__functional__function_operator_as.cpp   
+// std__functional__function_operator_as.cpp   
 // compile with: /EHsc   
 #include <functional>   
 #include <iostream>   
@@ -485,7 +484,7 @@ typedef Ret result_type;
 ### Example  
   
 ```cpp  
-// std_tr1__functional__function_result_type.cpp   
+// std__functional__function_result_type.cpp   
 // compile with: /EHsc   
 #include <functional>   
 #include <iostream>   
@@ -530,7 +529,7 @@ void swap(function& right);
 ### Example  
   
 ```cpp  
-// std_tr1__functional__function_swap.cpp   
+// std__functional__function_swap.cpp   
 // compile with: /EHsc   
 #include <functional>   
 #include <iostream>   
@@ -593,7 +592,7 @@ const Fty2 *target() const;
 ### Example  
   
 ```cpp  
-// std_tr1__functional__function_target.cpp   
+// std__functional__function_target.cpp   
 // compile with: /EHsc   
 #include <functional>   
 #include <iostream>   
@@ -643,7 +642,7 @@ const std::type_info& target_type() const;
 ### Example  
   
 ```cpp  
-// std_tr1__functional__function_target_type.cpp   
+// std__functional__function_target_type.cpp   
 // compile with: /EHsc   
 #include <functional>   
 #include <iostream>   

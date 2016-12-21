@@ -11,7 +11,6 @@ ms.topic: "article"
 f1_keywords: 
   - "<functional>"
   - "functional/std::<functional>"
-  - "std.<functional>"
   - "std::<functional>"
 dev_langs: 
   - "C++"

@@ -6,11 +6,26 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+f1_keywords: 
+  - "std::array::operator!="
+  - "array/std::array::operator!="
+  - "std::array::operator<"
+  - "array/std::array::operator<"
+  - "std::array::operator<="
+  - "array/std::array::operator<="
+  - "std::array::operator>"
+  - "array/std::array::operator>"
+  - "std::array::operator>="
+  - "array/std::array::operator>="
+  - "std::array::operator=="
+  - "array/std::array::operator=="
 ms.assetid: c8f46282-f179-4909-9a01-639cb8e18c27
 caps.latest.revision: 12
 manager: "ghogen"
 ---
 # &lt;array&gt; operators
+The \<array> header includes these `array` non-member comparison template functions.  
+  
 ||||  
 |-|-|-|  
 |[operator!=](#operator_neq)|[operator&gt;](#operator_gt_)|[operator&gt;=](#operator_gt__eq)|  
@@ -40,12 +55,12 @@ bool operator!=(
  Right container to compare.  
   
 ### Remarks  
- The template function returns `!(``left` `==` `right``)`.  
+ The template function returns `!(left == right)`.  
   
 ### Example  
   
 ```cpp  
-// std_tr1__array__operator_ne.cpp   
+// std__array__operator_ne.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   
@@ -110,12 +125,12 @@ bool operator<(
  Right container to compare.  
   
 ### Remarks  
- The template function overloads `operator<` to compare two objects of template class [array Class](../standard-library/array-class-stl.md). The function returns `lexicographical_compare(``left``.begin(),` `left``.end(),` `right``.begin())`.  
+ The template function overloads `operator<` to compare two objects of template class [array Class](../standard-library/array-class-stl.md). The function returns `lexicographical_compare(left.begin(), left.end(), right.begin())`.  
   
 ### Example  
   
 ```cpp  
-// std_tr1__array__operator_lt.cpp   
+// std__array__operator_lt.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   
@@ -181,12 +196,12 @@ bool operator<=(
  Right container to compare.  
   
 ### Remarks  
- The template function returns `!(``right` `<` `left``)`.  
+ The template function returns `!(right < left)`.  
   
 ### Example  
   
 ```cpp  
-// std_tr1__array__operator_le.cpp   
+// std__array__operator_le.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   
@@ -252,12 +267,12 @@ bool operator==(
  Right container to compare.  
   
 ### Remarks  
- The template function overloads `operator==` to compare two objects of template class [array Class](../standard-library/array-class-stl.md). The function returns `equal(``left``.begin(),` `left``.end(),` `right``.begin())`.  
+ The template function overloads `operator==` to compare two objects of template class [array Class](../standard-library/array-class-stl.md). The function returns `equal(left.begin(), left.end(), right.begin())`.  
   
 ### Example  
   
 ```cpp  
-// std_tr1__array__operator_eq.cpp   
+// std__array__operator_eq.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   
@@ -323,12 +338,12 @@ bool operator>(
  Right container to compare.  
   
 ### Remarks  
- The template function returns `right` `<` `left`.  
+ The template function returns `(right < left)`.  
   
 ### Example  
   
 ```cpp  
-// std_tr1__array__operator_gt.cpp   
+// std__array__operator_gt.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   
@@ -394,12 +409,12 @@ bool operator>=(
  Right container to compare.  
   
 ### Remarks  
- The template function returns `!(``left` `<` `right``)`.  
+ The template function returns `!(left < right)`.  
   
 ### Example  
   
 ```cpp  
-// std_tr1__array__operator_ge.cpp   
+// std__array__operator_ge.cpp   
 // compile with: /EHsc   
 #include <array>   
 #include <iostream>   

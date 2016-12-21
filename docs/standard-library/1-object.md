@@ -12,8 +12,6 @@ f1_keywords:
   - "_1"
   - "std::_1"
   - "functional/std::_1"
-  - "std::tr1::_1"
-  - "functional/std::tr1::_1"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

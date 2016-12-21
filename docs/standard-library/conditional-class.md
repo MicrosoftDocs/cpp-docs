@@ -12,13 +12,10 @@ f1_keywords:
   - "conditional"
   - "std::conditional"
   - "type_traits/std::conditional"
-  - "tr1::conditional"
-  - "std::tr1::conditional"
-  - "type_traits/std::tr1::conditional"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "conditional class[TR1]"
+  - "conditional class"
   - "conditional"
 ms.assetid: ece9f539-fb28-4e26-a79f-3264bc984493
 caps.latest.revision: 22

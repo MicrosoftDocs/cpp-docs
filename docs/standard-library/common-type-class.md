@@ -12,13 +12,10 @@ f1_keywords:
   - "common_type"
   - "std::common_type"
   - "type_traits/std::common_type"
-  - "tr1::common_type"
-  - "std::tr1::common_type"
-  - "type_traits/std::tr1::common_type"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "common_type class[TR1]"
+  - "common_type class"
   - "common_type"
 ms.assetid: 02bc4e7b-c63d-49de-9f8a-511d3a5c1e7f
 caps.latest.revision: 22

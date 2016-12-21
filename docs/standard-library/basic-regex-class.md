@@ -12,13 +12,10 @@ f1_keywords:
   - "basic_regex"
   - "std::basic_regex"
   - "regex/std::basic_regex"
-  - "tr1::basic_regex"
-  - "std::tr1::basic_regex"
-  - "regex/std::tr1::basic_regex"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "basic_regex class [TR1]"
+  - "basic_regex class"
 ms.assetid: 8a18c6b4-f22a-4cfd-bc16-b4267867ebc3
 caps.latest.revision: 21
 author: "corob-msft"
@@ -199,7 +196,7 @@ basic_regex& assign(
 ### Example  
   
 ```cpp  
-// std_tr1__regex__basic_regex_assign.cpp   
+// std__regex__basic_regex_assign.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -356,7 +353,7 @@ explicit basic_regex(
 ### Example  
   
 ```cpp  
-// std_tr1__regex__basic_regex_construct.cpp   
+// std__regex__basic_regex_construct.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -448,7 +445,7 @@ typedef regex_constants::syntax_option_type flag_type;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__basic_regex_flag_type.cpp   
+// std__regex__basic_regex_flag_type.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -543,7 +540,7 @@ flag_type flags() const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__basic_regex_flags.cpp   
+// std__regex__basic_regex_flags.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -638,7 +635,7 @@ locale_type getloc() const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__basic_regex_getloc.cpp   
+// std__regex__basic_regex_getloc.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -737,7 +734,7 @@ locale_type imbue(locale_type loc);
 ### Example  
   
 ```cpp  
-// std_tr1__regex__basic_regex_imbue.cpp   
+// std__regex__basic_regex_imbue.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -832,7 +829,7 @@ typedef typename RXtraits::locale_type locale_type;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__basic_regex_locale_type.cpp   
+// std__regex__basic_regex_locale_type.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -927,7 +924,7 @@ unsigned mark_count() const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__basic_regex_mark_count.cpp   
+// std__regex__basic_regex_mark_count.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -1040,7 +1037,7 @@ basic_regex& operator=(const basic_string<Elem, STtraits, STalloc>& str);
 ### Example  
   
 ```cpp  
-// std_tr1__regex__basic_regex_operator_as.cpp   
+// std__regex__basic_regex_operator_as.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -1139,7 +1136,7 @@ void swap(basic_regex& right) throw();
 ### Example  
   
 ```cpp  
-// std_tr1__regex__basic_regex_swap.cpp   
+// std__regex__basic_regex_swap.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -1234,7 +1231,7 @@ typedef Elem value_type;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__basic_regex_value_type.cpp   
+// std__regex__basic_regex_value_type.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   

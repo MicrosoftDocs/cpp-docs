@@ -13,7 +13,7 @@ f1_keywords:
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "array header [TR1]"
+  - "array header"
 ms.assetid: 084147c1-e805-478e-8201-76846020f187
 caps.latest.revision: 21
 author: "corob-msft"

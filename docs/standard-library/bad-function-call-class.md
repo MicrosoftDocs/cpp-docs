@@ -12,13 +12,10 @@ f1_keywords:
   - "bad_function_call"
   - "std::bad_function_call"
   - "functional/std::bad_function_call"
-  - "tr1::bad_function_call"
-  - "std::tr1::bad_function_call"
-  - "functional/std::tr1::bad_function_call"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "bad_function_call class [TR1]"
+  - "bad_function_call class"
 ms.assetid: b70a0268-43ff-4f3b-a283-faf1cb172d4c
 caps.latest.revision: 20
 author: "corob-msft"
