@@ -67,11 +67,11 @@ BEGIN_COM_MAP(x)
  [in] The name of the class object you are exposing interfaces on.  
   
 ### Remarks  
- [CComObjectRootEx::InternalQueryInterface](ccomobjectrootex-class.md#ccomobjectrootex__internalqueryinterface) only returns pointers for interfaces in the COM map. Start your interface map with the `BEGIN_COM_MAP` macro, add entries for each of your interfaces with the [COM_INTERFACE_ENTRY](http://msdn.microsoft.com/library/c5363b8b-a1a2-471e-ad3a-d472f6c356c5) macro or one of its variants, and complete the map with the [END_COM_MAP](#end_com_map) macro.  
+ [CComObjectRootEx::InternalQueryInterface](ccomobjectrootex-class.md#internalqueryinterface) only returns pointers for interfaces in the COM map. Start your interface map with the `BEGIN_COM_MAP` macro, add entries for each of your interfaces with the [COM_INTERFACE_ENTRY](http://msdn.microsoft.com/library/c5363b8b-a1a2-471e-ad3a-d472f6c356c5) macro or one of its variants, and complete the map with the [END_COM_MAP](#end_com_map) macro.  
 
   
 ### Example  
- From the ATL [BEEPER](../../top/visual-cpp-samples.md) sample:  
+ From the ATL [BEEPER](../../visual-cpp-samples.md) sample:  
   
  [!code-cpp[NVC_ATL_COM#1](../../atl/codesnippet/cpp/com-map-macros_1.h)]  
   

@@ -40,7 +40,7 @@ translation.priority.ht:
 # Drag and Drop: Implementing a Drop Source
 This article explains how to get your application to provide data to a drag-and-drop operation.  
   
- Basic implementation of a drop source is relatively simple. The first step is to determine what events begin a drag operation. Recommended user interface guidelines define the beginning of a drag operation as the selection of data and a `WM_LBUTTONDOWN` event occurring on a point inside the selected data. The MFC OLE samples [OCLIENT](../top/visual-cpp-samples.md) and [HIERSVR](../top/visual-cpp-samples.md) follow these guidelines.  
+ Basic implementation of a drop source is relatively simple. The first step is to determine what events begin a drag operation. Recommended user interface guidelines define the beginning of a drag operation as the selection of data and a `WM_LBUTTONDOWN` event occurring on a point inside the selected data. The MFC OLE samples [OCLIENT](../visual-cpp-samples.md) and [HIERSVR](../visual-cpp-samples.md) follow these guidelines.  
   
  If your application is a container and the selected data is a linked or an embedded object of type `COleClientItem`, call its `DoDragDrop` member function. Otherwise, construct a `COleDataSource` object, initialize it with the selection, and call the data source object's `DoDragDrop` member function. If your application is a server, use `COleServerItem::DoDragDrop`. For information about customizing standard drag-and-drop behavior, see the article [Drag and Drop: Customizing](../mfc/drag-and-drop-customizing.md).  
   
@@ -58,7 +58,7 @@ This article explains how to get your application to provide data to a drag-and-
   
 ## See Also  
  [Drag and Drop (OLE)](../mfc/drag-and-drop-ole.md)   
- [COleDataSource::DoDragDrop](../mfc/reference/coledatasource-class.md#coledatasource__dodragdrop)   
- [COleClientItem::DoDragDrop](../mfc/reference/coleclientitem-class.md#coleclientitem__dodragdrop)   
- [CView::OnDragLeave](../mfc/reference/cview-class.md#cview__ondragleave)
+ [COleDataSource::DoDragDrop](../mfc/reference/coledatasource-class.md#dodragdrop)   
+ [COleClientItem::DoDragDrop](../mfc/reference/coleclientitem-class.md#dodragdrop)   
+ [CView::OnDragLeave](../mfc/reference/cview-class.md#ondragleave)
 

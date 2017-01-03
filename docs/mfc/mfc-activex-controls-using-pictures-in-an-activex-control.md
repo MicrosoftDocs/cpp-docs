@@ -142,7 +142,7 @@ This article describes the common Picture type and how to implement it in your A
   
  This sets the control's picture to a blank picture.  
   
- To draw the picture properly, make a call to [CPictureHolder::Render](../mfc/reference/cpictureholder-class.md#cpictureholder__render) in the control `OnDraw` function. Modify your function to resemble the following example:  
+ To draw the picture properly, make a call to [CPictureHolder::Render](../mfc/reference/cpictureholder-class.md#render) in the control `OnDraw` function. Modify your function to resemble the following example:  
   
  [!code-cpp[NVC_MFC_AxPic#8](../mfc/codesnippet/cpp/mfc-activex-controls-using-pictures-in-an-activex-control_8.cpp)]  
   

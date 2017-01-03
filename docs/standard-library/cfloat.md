@@ -48,7 +48,7 @@ Includes the Standard C library header \<float.h>.
   
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   
- [STL Overview](../standard-library/cpp-standard-library-overview.md)   
+ [C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 
 

@@ -51,28 +51,28 @@ class COleVariant : public tagVARIANT
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleVariant::COleVariant](#colevariant__colevariant)|Constructs a `COleVariant` object.|  
+|[COleVariant::COleVariant](#colevariant)|Constructs a `COleVariant` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleVariant::Attach](#colevariant__attach)|Attaches a **VARIANT** to a `COleVariant`.|  
-|[COleVariant::ChangeType](#colevariant__changetype)|Changes the variant type of this `COleVariant` object.|  
-|[COleVariant::Clear](#colevariant__clear)|Clears this `COleVariant` object.|  
-|[COleVariant::Detach](#colevariant__detach)|Detaches a **VARIANT** from a `COleVariant` and returns the **VARIANT**.|  
-|[COleVariant::GetByteArrayFromVariantArray](#colevariant__getbytearrayfromvariantarray)|Retrieves a byte array from an existing variant array.|  
-|[COleVariant::SetString](#colevariant__setstring)|Sets the string to a particular type, typically ANSI.|  
+|[COleVariant::Attach](#attach)|Attaches a **VARIANT** to a `COleVariant`.|  
+|[COleVariant::ChangeType](#changetype)|Changes the variant type of this `COleVariant` object.|  
+|[COleVariant::Clear](#clear)|Clears this `COleVariant` object.|  
+|[COleVariant::Detach](#detach)|Detaches a **VARIANT** from a `COleVariant` and returns the **VARIANT**.|  
+|[COleVariant::GetByteArrayFromVariantArray](#getbytearrayfromvariantarray)|Retrieves a byte array from an existing variant array.|  
+|[COleVariant::SetString](#setstring)|Sets the string to a particular type, typically ANSI.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleVariant::operator LPCVARIANT](#colevariant__operator_lpcvariant)|Converts a `COleVariant` value into an `LPCVARIANT`.|  
-|[COleVariant::operator LPVARIANT](#colevariant__operator_lpvariant)|Converts a `COleVariant` object into an `LPVARIANT`.|  
-|[COleVariant::operator =](#colevariant__operator__eq)|Copies a `COleVariant` value.|  
-|[COleVariant::operator ==](#colevariant__operator__eq_eq)|Compares two `COleVariant` values.|  
-|[COleVariant::operator &lt;&lt;, &gt;&gt;](#colevariant__operator__lt__lt___gt__gt_)|Outputs a `COleVariant` value to `CArchive` or `CDumpContext` and inputs a `COleVariant` object from `CArchive`.|  
+|[COleVariant::operator LPCVARIANT](#operator_lpcvariant)|Converts a `COleVariant` value into an `LPCVARIANT`.|  
+|[COleVariant::operator LPVARIANT](#operator_lpvariant)|Converts a `COleVariant` object into an `LPVARIANT`.|  
+|[COleVariant::operator =](#operator_eq)|Copies a `COleVariant` value.|  
+|[COleVariant::operator ==](#operator_eq_eq)|Compares two `COleVariant` values.|  
+|[COleVariant::operator &lt;&lt;, &gt;&gt;](#operator_lt_lt__gt_gt)|Outputs a `COleVariant` value to `CArchive` or `CDumpContext` and inputs a `COleVariant` object from `CArchive`.|  
   
 ## Remarks  
  This data type is used in OLE automation. Specifically, the [DISPPARAMS](http://msdn.microsoft.com/en-us/a16e5a21-766e-4287-b039-13429aa78f8b) structure contains a pointer to an array of **VARIANT** structures. A **DISPPARAMS** structure is used to pass parameters to [IDispatch::Invoke](http://msdn.microsoft.com/en-us/964ade8e-9d8a-4d32-bd47-aa678912a54d).  
@@ -94,7 +94,7 @@ class COleVariant : public tagVARIANT
 ## Requirements  
  **Header:** afxdisp.h  
   
-##  <a name="colevariant__attach"></a>  COleVariant::Attach  
+##  <a name="attach"></a>  COleVariant::Attach  
  Call this function to attach the given [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) object to the current `COleVariant` object.  
   
 ```  
@@ -110,7 +110,7 @@ void Attach(VARIANT& varSrc);
   
  For more information, see the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) and [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4) entries in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="colevariant__colevariant"></a>  COleVariant::COleVariant  
+##  <a name="colevariant"></a>  COleVariant::COleVariant  
  Constructs a `COleVariant` object.  
   
 ```  
@@ -259,7 +259,7 @@ COleVariant(
   
  For more information on `SCODE`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="colevariant__changetype"></a>  COleVariant::ChangeType  
+##  <a name="changetype"></a>  COleVariant::ChangeType  
  Converts the type of variant value in this `COleVariant` object.  
   
 ```  
@@ -278,7 +278,7 @@ void ChangeType(
 ### Remarks  
  For more information, see the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118), [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4), and [VariantChangeType](http://msdn.microsoft.com/en-us/48a51e32-95d7-4eeb-8106-f5043ffa2fd1) entries in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="colevariant__clear"></a>  COleVariant::Clear  
+##  <a name="clear"></a>  COleVariant::Clear  
  Clears the **VARIANT**.  
   
 ```  
@@ -290,7 +290,7 @@ void Clear();
   
  For more information, see the `VARIANT`, `VARTYPE`, and `VariantClear` entries in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="colevariant__detach"></a>  COleVariant::Detach  
+##  <a name="detach"></a>  COleVariant::Detach  
  Detaches the underlying [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) object from this `COleVariant` object.  
   
 ```  
@@ -305,7 +305,7 @@ VARIANT Detach();
   
  For more information, see the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118), [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4), and [VariantClear](http://msdn.microsoft.com/en-us/28741d81-8404-4f85-95d3-5c209ec13835) entries in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="colevariant__getbytearrayfromvariantarray"></a>  COleVariant::GetByteArrayFromVariantArray  
+##  <a name="getbytearrayfromvariantarray"></a>  COleVariant::GetByteArrayFromVariantArray  
  Retrieves a byte array from an existing variant array  
   
 ```  
@@ -316,7 +316,7 @@ void GetByteArrayFromVariantArray(CByteArray& bytes);
  `bytes`  
  A reference to an existing [CByteArray](../../mfc/reference/cbytearray-class.md) object.  
   
-##  <a name="colevariant__operator_lpcvariant"></a>  COleVariant::operator LPCVARIANT  
+##  <a name="operator_lpcvariant"></a>  COleVariant::operator LPCVARIANT  
  This casting operator returns a `VARIANT` structure whose value is copied from this `COleVariant` object.  
   
 ```  
@@ -327,7 +327,7 @@ operator LPCVARIANT() const;
   
 ### Remarks  
   
-##  <a name="colevariant__operator_lpvariant"></a>  COleVariant::operator LPVARIANT  
+##  <a name="operator_lpvariant"></a>  COleVariant::operator LPVARIANT  
  Call this casting operator to access the underlying `VARIANT` structure for this `COleVariant` object.  
   
 ```  
@@ -339,7 +339,7 @@ operator LPVARIANT();
 > [!CAUTION]
 >  Changing the value in the **VARIANT** structure accessed by the pointer returned by this function will change the value of this `COleVariant` object.  
   
-##  <a name="colevariant__operator__eq"></a>  COleVariant::operator =  
+##  <a name="operator_eq"></a>  COleVariant::operator =  
  These overloaded assignment operators copy the source value into this `COleVariant` object.  
   
 ```  
@@ -414,7 +414,7 @@ const COleVariant& operator=(const CLongBinary& lbSrc);
   
  For more information, see the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) and [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4) entries in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="colevariant__operator__eq_eq"></a>  COleVariant::operator ==  
+##  <a name="operator_eq_eq"></a>  COleVariant::operator ==  
  This operator compares two variant values and returns nonzero if they are equal; otherwise 0.  
   
 ```  
@@ -427,7 +427,7 @@ BOOL operator==(LPCVARIANT pSrc) const;
  
 ```  
   
-##  <a name="colevariant__operator__lt__lt___gt__gt_"></a>  COleVariant::operator &lt;&lt;, &gt;&gt;  
+##  <a name="operator_lt_lt__gt_gt"></a>  COleVariant::operator &lt;&lt;, &gt;&gt;  
  Outputs a `COleVariant` value to `CArchive` or **CdumpContext** and inputs a `COleVariant` object from `CArchive`.  
   
 ```  
@@ -449,7 +449,7 @@ friend CArchive& AFXAPI operator>>(
 ### Remarks  
  The `COleVariant` insertion ( **<\<**) operator supports diagnostic dumping and storing to an archive. The extraction ( **>>**) operator supports loading from an archive.  
   
-##  <a name="colevariant__setstring"></a>  COleVariant::SetString  
+##  <a name="setstring"></a>  COleVariant::SetString  
  Sets the string to a particular type.  
   
 ```  
@@ -466,9 +466,9 @@ void SetString(
  The **VARTYPE** for the new `COleVariant` object.  
   
 ### Remarks  
- The parameter `vtSrc` must be `VT_BSTR` (UNICODE) or `VT_BSTRT` (ANSI). `SetString` is typically used to set strings to ANSI, since the default for the [COleVariant::COleVariant](#colevariant__colevariant) constructor with a string or string pointer parameter and no **VARTYPE** is UNICODE.  
+ The parameter `vtSrc` must be `VT_BSTR` (UNICODE) or `VT_BSTRT` (ANSI). `SetString` is typically used to set strings to ANSI, since the default for the [COleVariant::COleVariant](#colevariant) constructor with a string or string pointer parameter and no **VARTYPE** is UNICODE.  
   
- A DAO recordset in a non-UNICODE build expects strings to be ANSI. Thus, for DAO functions that use `COleVariant` objects, if you are not creating a UNICODE recordset, you must use the **COleVariant::COleVariant(** `lpszSrc`**,** `vtSrc` **)** form of constructor with `vtSrc` set to `VT_BSTRT` (ANSI) or use `SetString` with `vtSrc` set to `VT_BSTRT` to make ANSI strings. For example, the `CDaoRecordset` functions [CDaoRecordset::Seek](../../mfc/reference/cdaorecordset-class.md#cdaorecordset__seek) and [CDaoRecordset::SetFieldValue](../../mfc/reference/cdaorecordset-class.md#cdaorecordset__setfieldvalue) use `COleVariant` objects as parameters. These objects must be ANSI if the DAO recordset is not UNICODE.  
+ A DAO recordset in a non-UNICODE build expects strings to be ANSI. Thus, for DAO functions that use `COleVariant` objects, if you are not creating a UNICODE recordset, you must use the **COleVariant::COleVariant(** `lpszSrc`**,** `vtSrc` **)** form of constructor with `vtSrc` set to `VT_BSTRT` (ANSI) or use `SetString` with `vtSrc` set to `VT_BSTRT` to make ANSI strings. For example, the `CDaoRecordset` functions [CDaoRecordset::Seek](../../mfc/reference/cdaorecordset-class.md#seek) and [CDaoRecordset::SetFieldValue](../../mfc/reference/cdaorecordset-class.md#setfieldvalue) use `COleVariant` objects as parameters. These objects must be ANSI if the DAO recordset is not UNICODE.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)

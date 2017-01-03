@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Cleaning Up Documents and Views
-When a document is closing, the framework first calls its [DeleteContents](../mfc/reference/cdocument-class.md#cdocument__deletecontents) member function. If you allocated any memory on the heap during the course of the document's operation, `DeleteContents` is the best place to deallocate it.  
+When a document is closing, the framework first calls its [DeleteContents](../mfc/reference/cdocument-class.md#deletecontents) member function. If you allocated any memory on the heap during the course of the document's operation, `DeleteContents` is the best place to deallocate it.  
   
 > [!NOTE]
 >  You should not deallocate document data in the document's destructor. In the case of an SDI application, the document object might be reused.  

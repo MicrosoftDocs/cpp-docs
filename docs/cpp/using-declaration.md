@@ -39,18 +39,28 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # using Declaration
-The `using` declaration introduces a name into the declarative region in which the `using` declaration appears.  
+The using declaration introduces a name into the declarative region in which the using declaration appears.  
   
 ## Syntax  
   
 ```  
-  
-      using [typename][::] nested-name-specifier unqualified-id  
-using :: unqualified-id  
+using [typename] nested-name-specifier unqualified-id ;  
+using declarator-list ;  
 ```  
   
+### Parameters
+  
+*nested-name-specifier*  
+    A sequence of namespace, class, or enumeration names and scope resolution operators (::), terminated by a scope resolution operator. A single scope resolution operator may be used to introduce a name from the global namespace. The keyword `typename` is optional and may be used to resolve dependent names when introduced into a class template from a base class.  
+  
+*unqualified-id*  
+    An unqualified id-expression, which may be an identifier, an overloaded operator name, a user-defined literal operator or conversion function name, a class destructor name, or a template name and argument list.  
+  
+*declarator-list*  
+    A comma-separated list of [`typename`] *nested-name-specifier* *unqualified-id* declarators, followed optionally by an ellipsis.
+    
 ## Remarks  
- The name becomes a synonym for an entity declared elsewhere. It allows an *individual* name from a specific namespace to be used without [explicit qualification](../misc/explicit-qualification.md). This is in contrast to the `using` directive, which allows *all* the names in a namespace to be used without qualification. See [using Directive](../misc/using-directive-cpp.md) for more information. This keyword is also used for [type aliases](../cpp/aliases-and-typedefs-cpp.md).  
+A using declaration introduces an unqualified name as a synonym for an entity declared elsewhere. It allows a single name from a specific namespace to be used without explicit qualification in the declaration region in which it appears. This is in contrast to the [using directive](../cpp/namespaces-cpp.md#using_directives), which allows *all* the names in a namespace to be used without qualification. The `using` keyword is also used for [type aliases](../cpp/aliases-and-typedefs-cpp.md).  
   
 ## Example  
  A using declaration can be used in a class definition.  
@@ -71,16 +81,16 @@ public:
   
 class D : B {  
 public:  
-   using B::f;  
-   using B::g;  
+   using B::f;    // B::f(char) is now visible as D::f(char)  
+   using B::g;    // B::g(char) is now visible as D::g(char)  
    void f(int) {  
       printf_s("In D::f()\n");  
-      f('c');  
+      f('c');     // Invokes B::f(char) instead of recursing  
    }  
   
    void g(int) {  
       printf_s("In D::g()\n");  
-      g('c');  
+      g('c');     // Invokes B::g(char) instead of recursing  
    }  
 };  
   
@@ -98,7 +108,7 @@ In B::g()
 ```  
   
 ## Example  
- When used to declare a member, a using declaration must refer to a member of a base class.  
+When used to declare a member, a using declaration must refer to a member of a base class.  
   
 ```cpp  
 // using_declaration2.cpp  
@@ -137,7 +147,7 @@ In B::f()
 ```  
   
 ## Example  
- Members declared with a using declaration can be referenced using explicit qualification. The `::` prefix refers to the global namespace.  
+Members declared by using a using declaration can be referenced by using explicit qualification. The `::` prefix refers to the global namespace.  
   
 ```cpp  
 // using_declaration3.cpp  
@@ -154,8 +164,8 @@ namespace A {
 }  
   
 namespace X {  
-   using ::f;   // global f  
-   using A::g;   // A's g  
+   using ::f;   // global f is also visible as X::f  
+   using A::g;   // A's g is now visible as X::g 
 }  
   
 void h() {  
@@ -176,9 +186,9 @@ In A::g
 ```  
   
 ## Example  
- When a using declaration is made, the synonym created by the declaration refers only to definitions that are valid at the point of the using declaration. Definitions added to a namespace after the using declaration are not valid synonyms.  
+When a using declaration is made, the synonym created by the declaration refers only to definitions that are valid at the point of the using declaration. Definitions added to a namespace after the using declaration are not valid synonyms.  
   
- A name defined by a using declaration is an alias for its original name. It does not affect the type, linkage or other attributes of the original declaration.  
+A name defined by a `using` declaration is an alias for its original name. It does not affect the type, linkage or other attributes of the original declaration.  
   
 ```cpp  
 // post_declaration_namespace_additions.cpp  
@@ -204,7 +214,7 @@ void b() {
 ```  
   
 ## Example  
- With respect to functions in namespaces, if a set of local declarations and using declarations for a single name are given in a declarative region, they must all refer to the same entity, or they must all refer to functions.  
+With respect to functions in namespaces, if a set of local declarations and using declarations for a single name are given in a declarative region, they must all refer to the same entity, or they must all refer to functions.  
   
 ```cpp  
 // functions_in_namespaces1.cpp  
@@ -289,9 +299,9 @@ struct D : B {
 };  
   
 void f(D* pd) {  
-   pd->f(1);   // calls D::f(int)  
+   pd->f(1);     // calls D::f(int)  
    pd->f('a');   // calls B::f(char)  
-   pd->g(1);   // calls B::g(int)  
+   pd->g(1);     // calls B::g(int)  
    pd->g('a');   // calls D::g(char)  
 }  
   
@@ -309,9 +319,9 @@ In D::g(char)
 ```  
   
 ## Example  
- All instances of a name mentioned in a using declaration must be accessible. In particular, if a derived class uses a using declaration to access a member of a base class, the member name must be accessible. If the name is that of an overloaded member function, then all functions named must be accessible.  
+All instances of a name mentioned in a using declaration must be accessible. In particular, if a derived class uses a using declaration to access a member of a base class, the member name must be accessible. If the name is that of an overloaded member function, then all functions named must be accessible.  
   
- See [Member-Access Control](../cpp/member-access-control-cpp.md), for more information on accessibility of members.  
+For more information on accessibility of members, see [Member-Access Control](../cpp/member-access-control-cpp.md).  
   
 ```cpp  
 // using_declaration_inheritance2.cpp  

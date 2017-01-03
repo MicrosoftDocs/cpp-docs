@@ -46,7 +46,7 @@ Documents contain and manage your application's data. To use the MFC Application
 -   Override **CDocument**'s `Serialize` member function in your document class. `Serialize` writes and reads the document's data to and from disk.  
   
 ## Other Document Functions Often Overridden  
- You may also want to override other **CDocument** member functions. In particular, you will often need to override [OnNewDocument](../mfc/reference/cdocument-class.md#cdocument__onnewdocument) and [OnOpenDocument](../mfc/reference/cdocument-class.md#cdocument__onopendocument) to initialize the document's data members and [DeleteContents](../mfc/reference/cdocument-class.md#cdocument__deletecontents) to destroy dynamically allocated data. For information about overridable members, see class [CDocument](../mfc/reference/cdocument-class.md) in the *MFC Reference*.  
+ You may also want to override other **CDocument** member functions. In particular, you will often need to override [OnNewDocument](../mfc/reference/cdocument-class.md#onnewdocument) and [OnOpenDocument](../mfc/reference/cdocument-class.md#onopendocument) to initialize the document's data members and [DeleteContents](../mfc/reference/cdocument-class.md#deletecontents) to destroy dynamically allocated data. For information about overridable members, see class [CDocument](../mfc/reference/cdocument-class.md) in the *MFC Reference*.  
   
 ## See Also  
  [Using Documents](../mfc/using-documents.md)

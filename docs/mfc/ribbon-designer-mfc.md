@@ -69,7 +69,7 @@ The Ribbon Designer lets you create and customize ribbons in MFC applications. A
  </ID> …  
  ```  
   
- To use the ribbon resource in your MFC application, load the resource by calling [CMFCRibbonBar::LoadFromResource](../mfc/reference/cmfcribbonbar-class.md#cmfcribbonbar__loadfromresource).  
+ To use the ribbon resource in your MFC application, load the resource by calling [CMFCRibbonBar::LoadFromResource](../mfc/reference/cmfcribbonbar-class.md#loadfromresource).  
   
 ## Creating a Ribbon By Using the Ribbon Designer  
  These are the two ways to add a ribbon resource to your MFC project:  
@@ -123,7 +123,7 @@ The Ribbon Designer lets you create and customize ribbons in MFC applications. A
   
 - **Panel:** An area of the ribbon bar that displays a group of related controls. Every ribbon category contains one or more ribbon panels.  
   
-- **Ribbon elements:** Controls in the panels, for example, buttons and combo boxes. To see the various controls that can be hosted on a ribbon, see [RibbonGadgets Sample: Ribbon Gadgets Application](../top/visual-cpp-samples.md).  
+- **Ribbon elements:** Controls in the panels, for example, buttons and combo boxes. To see the various controls that can be hosted on a ribbon, see [RibbonGadgets Sample: Ribbon Gadgets Application](../visual-cpp-samples.md).  
   
 ## See Also  
  [User Interface Elements](../mfc/user-interface-elements-mfc.md)   

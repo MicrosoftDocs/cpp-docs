@@ -49,7 +49,8 @@ class unsupported_feature : public runtime_exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[unsupported_feature::unsupported_feature Constructor] --brokenlink-- (#unsupported_feature::unsupported_feature%20Constructor.md)|Constructs a new instance of the `unsupported_feature` exception.|  
+|[unsupported_feature::unsupported_feature Constructor](#ctor)|Constructs a new instance of the `unsupported_feature` exception.|  
+
   
 ## Inheritance Hierarchy  
  `exception`  
@@ -58,10 +59,29 @@ class unsupported_feature : public runtime_exception;
   
  `unsupported_feature`  
   
+## <a name="unsupported_feature__ctor"></a> unsupported_feature::unsupported_feature Constructor
+  Constructs a new instance of the unsupported_feature exception.  
+  
+### Syntax  
+  
+```  
+explicit unsupported_feature(  
+    const char * _Message ) throw();  
+  
+unsupported_feature() throw();  
+```  
+  
+### Parameters  
+ `_Message`  
+ A description of the error.  
+  
+### Return Value  
+ The `unsupported_feature` object.  
+  
 ## Requirements  
  **Header:** amprt.h  
   
  **Namespace:** Concurrency  
   
 ## See Also  
- [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)
+ [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

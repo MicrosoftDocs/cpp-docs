@@ -59,22 +59,22 @@ class CComObjectGlobal
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComObjectGlobal::CComObjectGlobal](#ccomobjectglobal__ccomobjectglobal)|The constructor.|  
-|[CComObjectGlobal::~CComObjectGlobal](#ccomobjectglobal___dtorccomobjectglobal)|The destructor.|  
+|[CComObjectGlobal::CComObjectGlobal](#ccomobjectglobal)|The constructor.|  
+|[CComObjectGlobal::~CComObjectGlobal](#dtor)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComObjectGlobal::AddRef](#ccomobjectglobal__addref)|Implements a global `AddRef`.|  
-|[CComObjectGlobal::QueryInterface](#ccomobjectglobal__queryinterface)|Implements a global `QueryInterface`.|  
-|[CComObjectGlobal::Release](#ccomobjectglobal__release)|Implements a global **Release**.|  
+|[CComObjectGlobal::AddRef](#addref)|Implements a global `AddRef`.|  
+|[CComObjectGlobal::QueryInterface](#queryinterface)|Implements a global `QueryInterface`.|  
+|[CComObjectGlobal::Release](#release)|Implements a global **Release**.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComObjectGlobal::m_hResFinalConstruct](#ccomobjectglobal__m_hresfinalconstruct)|Contains the **HRESULT** returned during construction of the `CComObjectGlobal` object.|  
+|[CComObjectGlobal::m_hResFinalConstruct](#m_hresfinalconstruct)|Contains the **HRESULT** returned during construction of the `CComObjectGlobal` object.|  
   
 ## Remarks  
  `CComObjectGlobal` manages a reference count on the module containing your `Base` object. `CComObjectGlobal` ensures your object will not be deleted as long as the module is not released. Your object will only be removed when the reference count on the entire module goes to zero.  
@@ -89,7 +89,7 @@ class CComObjectGlobal
 ## Requirements  
  **Header:** atlcom.h  
   
-##  <a name="ccomobjectglobal__addref"></a>  CComObjectGlobal::AddRef  
+##  <a name="addref"></a>  CComObjectGlobal::AddRef  
  Increments the reference count of the object by 1.  
   
 ```
@@ -102,8 +102,8 @@ STDMETHOD_(ULONG, AddRef)();
 ### Remarks  
  By default, `AddRef` calls **_Module::Lock**, where **_Module** is the global instance of [CComModule](../../atl/reference/ccommodule-class.md) or a class derived from it.  
   
-##  <a name="ccomobjectglobal__ccomobjectglobal"></a>  CComObjectGlobal::CComObjectGlobal  
- The constructor. Calls `FinalConstruct` and then sets [m_hResFinalConstruct](#ccomobjectglobal__m_hresfinalconstruct) to the `HRESULT` returned by `FinalConstruct`.  
+##  <a name="ccomobjectglobal"></a>  CComObjectGlobal::CComObjectGlobal  
+ The constructor. Calls `FinalConstruct` and then sets [m_hResFinalConstruct](#m_hresfinalconstruct) to the `HRESULT` returned by `FinalConstruct`.  
   
 ```
 CComObjectGlobal(void* = NULL));
@@ -112,7 +112,7 @@ CComObjectGlobal(void* = NULL));
 ### Remarks  
  If you have not derived your base class from [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md), you must supply your own `FinalConstruct` method. The destructor calls `FinalRelease`.  
   
-##  <a name="ccomobjectglobal___dtorccomobjectglobal"></a>  CComObjectGlobal::~CComObjectGlobal  
+##  <a name="dtor"></a>  CComObjectGlobal::~CComObjectGlobal  
  The destructor.  
   
 ```
@@ -120,16 +120,16 @@ CComObjectGlobal();
 ```  
   
 ### Remarks  
- Frees all allocated resources and calls [FinalRelease](ccomobjectrootex-class.md#ccomobjectrootex__finalrelease).  
+ Frees all allocated resources and calls [FinalRelease](ccomobjectrootex-class.md#finalrelease).  
   
-##  <a name="ccomobjectglobal__m_hresfinalconstruct"></a>  CComObjectGlobal::m_hResFinalConstruct  
+##  <a name="m_hresfinalconstruct"></a>  CComObjectGlobal::m_hResFinalConstruct  
  Contains the `HRESULT` from calling `FinalConstruct` during construction of the `CComObjectGlobal` object.  
   
 ```
 HRESULT m_hResFinalConstruct;
 ```  
   
-##  <a name="ccomobjectglobal__queryinterface"></a>  CComObjectGlobal::QueryInterface  
+##  <a name="queryinterface"></a>  CComObjectGlobal::QueryInterface  
  Retrieves a pointer to the requested interface pointer.  
   
 ```
@@ -151,7 +151,7 @@ STDMETHOD(QueryInterface)(REFIID iid,
 ### Remarks  
  `QueryInterface` only handles interfaces in the COM map table.  
   
-##  <a name="ccomobjectglobal__release"></a>  CComObjectGlobal::Release  
+##  <a name="release"></a>  CComObjectGlobal::Release  
  Decrements the reference count of the object by 1.  
   
 ```

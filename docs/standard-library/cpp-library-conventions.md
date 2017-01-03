@@ -11,13 +11,13 @@ ms.topic: "article"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "Standard C++ Library, conventions"
+  - "C++ Standard Library, conventions"
   - "classes [C++]"
   - "functions [C++], library naming conventions"
-  - "naming conventions [C++], Standard C++ Library"
-  - "conventions [C++], Standard C++ Library"
+  - "naming conventions [C++], C++ Standard Library"
+  - "conventions [C++], C++ Standard Library"
   - "function names [C++]"
-  - "coding conventions, Standard C++ Library"
+  - "coding conventions, C++ Standard Library"
   - "naming conventions [C++], C++ library"
 ms.assetid: bf41b79a-2d53-4f46-8d05-779358335146
 caps.latest.revision: 9
@@ -69,6 +69,6 @@ The C++ library obeys much the same conventions as the Standard C Library, plus 
 -   Functions supplied by the library, including the default versions of replaceable functions, can throw *at most* those exceptions listed in any exception specification. No destructors supplied by the library throw exceptions. Functions in the Standard C Library may propagate an exception, as when `qsort` calls a comparison function that throws an exception, but they do not otherwise throw exceptions.  
   
 ## See Also  
- [STL Overview](../standard-library/cpp-standard-library-overview.md)   
+ [C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 

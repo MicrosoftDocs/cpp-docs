@@ -62,14 +62,14 @@ class AFX_NOVTABLE CException : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CException::CException](#cexception__cexception)|Constructs a `CException` object.|  
+|[CException::CException](#cexception)|Constructs a `CException` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CException::Delete](#cexception__delete)|Deletes a `CException` object.|  
-|[CException::ReportError](#cexception__reporterror)|Reports an error message in a message box to the user.|  
+|[CException::Delete](#delete)|Deletes a `CException` object.|  
+|[CException::ReportError](#reporterror)|Reports an error message in a message box to the user.|  
   
 ## Remarks  
  Because `CException` is an abstract base class you cannot create `CException` objects directly; you must create objects of derived classes. If you need to create your own `CException`-style class, use one of the derived classes listed above as a model. Make sure that your derived class also uses `IMPLEMENT_DYNAMIC`.  
@@ -94,9 +94,9 @@ class AFX_NOVTABLE CException : public CObject
   
  These exceptions are intended to be used with the [THROW](exception-processing.md#throw), [THROW_LAST](exception-processing.md#throw_last), [try](exception-processing.md#try), [catch](exception-processing.md#catch), [and_catch](exception-processing.md#and_catch), and [end_catch](exception-processing.md#end_catch) macros. For more information on exceptions, see [Exception Processing](exception-processing.md), or see the article [Exception Handling (MFC)](../exception-handling-in-mfc.md).  
   
- To catch a specific exception, use the appropriate derived class. To catch all types of exceptions, use `CException`, and then use [CObject::IsKindOf](cobject-class.md#cobject__iskindof) to differentiate among `CException`-derived classes. Note that `CObject::IsKindOf` works only for classes declared with the [IMPLEMENT_DYNAMIC](run-time-object-model-services.md#implement_dynamic) macro, in order to take advantage of dynamic type checking. Any `CException`-derived class that you create should use the `IMPLEMENT_DYNAMIC` macro, too.  
+ To catch a specific exception, use the appropriate derived class. To catch all types of exceptions, use `CException`, and then use [CObject::IsKindOf](cobject-class.md#iskindof) to differentiate among `CException`-derived classes. Note that `CObject::IsKindOf` works only for classes declared with the [IMPLEMENT_DYNAMIC](run-time-object-model-services.md#implement_dynamic) macro, in order to take advantage of dynamic type checking. Any `CException`-derived class that you create should use the `IMPLEMENT_DYNAMIC` macro, too.  
   
- You can report details about exceptions to the user by calling [GetErrorMessage](cfileexception-class.md#cfileexception__geterrormessage) or [ReportError](#cexception__reporterror), two member functions that work with any of `CException`'s derived classes.  
+ You can report details about exceptions to the user by calling [GetErrorMessage](cfileexception-class.md#geterrormessage) or [ReportError](#reporterror), two member functions that work with any of `CException`'s derived classes.  
   
  If an exception is caught by one of the macros, the `CException` object is deleted automatically; do not delete it yourself. If an exception is caught by using a **catch** keyword, it is not automatically deleted. See the article [Exception Handling (MFC)](../exception-handling-in-mfc.md) for more information about when to delete an exeption object.  
   
@@ -108,7 +108,7 @@ class AFX_NOVTABLE CException : public CObject
 ## Requirements  
  **Header:** afx.h  
   
-##  <a name="cexception__cexception"></a>  CException::CException  
+##  <a name="cexception"></a>  CException::CException  
  This member function constructs a `CException` object.  
   
 ```  
@@ -122,7 +122,7 @@ explicit CException(BOOL bAutoDelete);
 ### Remarks  
  You would normally never need to call this constructor directly. A function that throws an exception should create an instance of a `CException`-derived class and call its constructor, or it should use one of the MFC throw functions, such as [AfxThrowFileException](exception-processing.md#afxthrowfileexception), to throw a predefined type. This documentation is provided only for completeness.  
   
-##  <a name="cexception__delete"></a>  CException::Delete  
+##  <a name="delete"></a>  CException::Delete  
  This function checks to see if the **CException** object was created on the heap, and if so, it calls the **delete** operator on the object.  
   
 ```  
@@ -132,7 +132,7 @@ void Delete();
 ### Remarks  
  When deleting a **CException** object, use the **Delete** member function to delete the exception. Do not use the **delete** operator directly, because the `CException` object may be a global object or have been created on the stack.  
   
- You can specify whether the object should be deleted when the object is constructed. For more information, see [CException::CException](#cexception__cexception).  
+ You can specify whether the object should be deleted when the object is constructed. For more information, see [CException::CException](#cexception).  
   
  You only need to call **Delete** if you are using the C++ **try**- **catch** mechanism. If you are using the MFC macros **TRY** and **CATCH**, then these macros will automatically call this function.  
   
@@ -186,7 +186,7 @@ if (pFile != NULL)
 }   
  ```
   
-##  <a name="cexception__reporterror"></a>  CException::ReportError  
+##  <a name="reporterror"></a>  CException::ReportError  
  Call this member function to report error text in a message box to the user.  
   
 ```  
@@ -206,7 +206,7 @@ virtual int ReportError(
  An `AfxMessageBox` value; otherwise 0 if there is not enough memory to display the message box. See [AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox) for the possible return values.  
   
 ### Example  
- Here is an example of the use of `CException::ReportError`. For another example, see the example for [CATCH]--brokenlink--(exception-processing.md#catch).  
+ Here is an example of the use of `CException::ReportError`. For another example, see the example for [CATCH](exception-processing.md#catch).  
   
 ```cpp
 CFile fileInput;

@@ -49,17 +49,17 @@ class CMFCRibbonGalleryMenuButton : public CMFCToolBarMenuButton
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonGalleryMenuButton::CMFCRibbonGalleryMenuButton](#cmfcribbongallerymenubutton__cmfcribbongallerymenubutton)|Constructs and initializes a `CMFCRibbonGalleryMenuButton` object.|  
+|[CMFCRibbonGalleryMenuButton::CMFCRibbonGalleryMenuButton](#cmfcribbongallerymenubutton)|Constructs and initializes a `CMFCRibbonGalleryMenuButton` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonGalleryMenuButton::CopyFrom](#cmfcribbongallerymenubutton__copyfrom)|(Overrides [CMFCToolBarMenuButton::CopyFrom](../../mfc/reference/cmfctoolbarmenubutton-class.md#cmfctoolbarmenubutton__copyfrom).)|  
-|[CMFCRibbonGalleryMenuButton::CreatePopupMenu](#cmfcribbongallerymenubutton__createpopupmenu)|(Overrides [CMFCToolBarMenuButton::CreatePopupMenu](../../mfc/reference/cmfctoolbarmenubutton-class.md#cmfctoolbarmenubutton__createpopupmenu).)|  
-|[CMFCRibbonGalleryMenuButton::GetPalette](#cmfcribbongallerymenubutton__getpalette)||  
-|[CMFCRibbonGalleryMenuButton::HasButton](#cmfcribbongallerymenubutton__hasbutton)|(Overrides `CMFCToolBarMenuButton::HasButton`.)|  
-|[CMFCRibbonGalleryMenuButton::IsEmptyMenuAllowed](#cmfcribbongallerymenubutton__isemptymenuallowed)|(Overrides [CMFCToolBarMenuButton::IsEmptyMenuAllowed](../../mfc/reference/cmfctoolbarmenubutton-class.md#cmfctoolbarmenubutton__isemptymenuallowed).)|  
+|[CMFCRibbonGalleryMenuButton::CopyFrom](#copyfrom)|(Overrides [CMFCToolBarMenuButton::CopyFrom](../../mfc/reference/cmfctoolbarmenubutton-class.md#copyfrom).)|  
+|[CMFCRibbonGalleryMenuButton::CreatePopupMenu](#createpopupmenu)|(Overrides [CMFCToolBarMenuButton::CreatePopupMenu](../../mfc/reference/cmfctoolbarmenubutton-class.md#createpopupmenu).)|  
+|[CMFCRibbonGalleryMenuButton::GetPalette](#getpalette)||  
+|[CMFCRibbonGalleryMenuButton::HasButton](#hasbutton)|(Overrides `CMFCToolBarMenuButton::HasButton`.)|  
+|[CMFCRibbonGalleryMenuButton::IsEmptyMenuAllowed](#isemptymenuallowed)|(Overrides [CMFCToolBarMenuButton::IsEmptyMenuAllowed](../../mfc/reference/cmfctoolbarmenubutton-class.md#isemptymenuallowed).)|  
   
 ### Remarks  
  The gallery menu button is displayed as a pop-up menu with an arrow. When the user clicks this button, a gallery of images is displayed. When you construct a gallery menu button, you must specify an image list that contains those images.  
@@ -99,7 +99,7 @@ BOOL CMainFrame::OnShowPopupMenu (CMFCPopupMenu* pMenuPopup)
 ## Requirements  
  **Header:** afxRibbonPaletteGallery.h  
   
-##  <a name="cmfcribbongallerymenubutton__copyfrom"></a>  CMFCRibbonGalleryMenuButton::CopyFrom  
+##  <a name="copyfrom"></a>  CMFCRibbonGalleryMenuButton::CopyFrom  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -111,7 +111,7 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
   
 ### Remarks  
   
-##  <a name="cmfcribbongallerymenubutton__cmfcribbongallerymenubutton"></a>  CMFCRibbonGalleryMenuButton::CMFCRibbonGalleryMenuButton  
+##  <a name="cmfcribbongallerymenubutton"></a>  CMFCRibbonGalleryMenuButton::CMFCRibbonGalleryMenuButton  
  Constructs and initializes a [CMFCRibbonGalleryMenuButton](../../mfc/reference/cmfcribbongallerymenubutton-class.md) object.  
   
 ```  
@@ -153,11 +153,11 @@ CMFCRibbonGalleryMenuButton(
  The gallery menu button is displayed as a pop-up menu that has an arrow. When the user clicks this button, a gallery of images is displayed.  
   
 ### Example  
- The following example demonstrates how to use the constructor of the `CMFCRibbonGalleryMenuButton` class. This code snippet is part of the [MS Office 2007 Demo sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to use the constructor of the `CMFCRibbonGalleryMenuButton` class. This code snippet is part of the [MS Office 2007 Demo sample](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_MSOffice2007Demo#8](../../mfc/reference/codesnippet/cpp/cmfcribbongallerymenubutton-class_1.cpp)]  
   
-##  <a name="cmfcribbongallerymenubutton__createpopupmenu"></a>  CMFCRibbonGalleryMenuButton::CreatePopupMenu  
+##  <a name="createpopupmenu"></a>  CMFCRibbonGalleryMenuButton::CreatePopupMenu  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -168,7 +168,7 @@ virtual CMFCPopupMenu* CreatePopupMenu();
   
 ### Remarks  
   
-##  <a name="cmfcribbongallerymenubutton__getpalette"></a>  CMFCRibbonGalleryMenuButton::GetPalette  
+##  <a name="getpalette"></a>  CMFCRibbonGalleryMenuButton::GetPalette  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -179,7 +179,7 @@ CMFCRibbonGallery& GetPalette();
   
 ### Remarks  
   
-##  <a name="cmfcribbongallerymenubutton__hasbutton"></a>  CMFCRibbonGalleryMenuButton::HasButton  
+##  <a name="hasbutton"></a>  CMFCRibbonGalleryMenuButton::HasButton  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -192,7 +192,7 @@ virtual BOOL HasButton() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbongallerymenubutton__isemptymenuallowed"></a>  CMFCRibbonGalleryMenuButton::IsEmptyMenuAllowed  
+##  <a name="isemptymenuallowed"></a>  CMFCRibbonGalleryMenuButton::IsEmptyMenuAllowed  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  

@@ -125,5 +125,3 @@ int main() {
 // my_cell.character = 1  
 ```  
   
-## See Also  
- [(NOTINBUILD) Defining Class Types](http://msdn.microsoft.com/en-us/e8c65425-0f3a-4dca-afc2-418c3b1e57da)

@@ -123,7 +123,7 @@ class float_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[float_3::float_3 Constructor](#float_3__float_3_constructor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[float_3::float_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -183,7 +183,7 @@ class float_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[float_3::size Constant](#float_3__size_constant)||  
+|[float_3::size Constant](#float_3__size)||  
   
 ### Public Data Members  
   
@@ -228,7 +228,7 @@ class float_3;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="float_3__float_3_constructor"></a>  float_3::float_3 Constructor  
+##  <a name="ctor"></a>  float_3::float_3 Constructor  
  Default constructor, initializes all elements with 0.  
   
 ```  
@@ -294,11 +294,11 @@ explicit inline float_3(
  `_Other`  
  The object used to initialize.  
   
-##  <a name="float_3__size_constant"></a>  float_3::size Constant  
+##  <a name="float_3__size"></a>  float_3::size Constant  
   
 ```  
 static const int size = 3;  
 ```  
   
 ## See Also  
- [Concurrency::graphics Namespace](../../../parallel/amp/reference/concurrency-graphics-namespace.md)
+ [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

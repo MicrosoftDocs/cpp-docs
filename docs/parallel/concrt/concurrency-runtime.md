@@ -75,7 +75,7 @@ The Concurrency Runtime for C++ helps you write robust, scalable, and responsive
   
 |||  
 |-|-|  
-|[Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation)|Describes the role of cancellation in the PPL, including how to initiate and respond to cancellation requests.|  
+|[Cancellation in the PPL](cancellation-in-the-ppl.md)|Describes the role of cancellation in the PPL, including how to initiate and respond to cancellation requests.|  
 |[How to: Use Cancellation to Break from a Parallel Loop](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md)<br /><br /> [How to: Use Exception Handling to Break from a Parallel Loop](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md)|Demonstrates two ways to cancel data-parallel work.|  
   
 ## Windows Store Apps  

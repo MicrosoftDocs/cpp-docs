@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # _SCL_SECURE_NO_WARNINGS
-Calling any one of the potentially unsafe methods in the Standard C++ Library will result in [Compiler Warning (level 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). To disable this warning, define the macro **_SCL_SECURE_NO_WARNINGS** in your code:  
+Calling any one of the potentially unsafe methods in the C++ Standard Library will result in [Compiler Warning (level 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). To disable this warning, define the macro **_SCL_SECURE_NO_WARNINGS** in your code:  
   
 ```  
 #define _SCL_SECURE_NO_WARNINGS  

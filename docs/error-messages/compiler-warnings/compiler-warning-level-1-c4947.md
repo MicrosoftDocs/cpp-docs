@@ -38,11 +38,12 @@ translation.priority.mt:
 # Compiler Warning (level 1) C4947
 'type_or_member' : marked as obsolete  
   
- A member or type was marked as obsolete with the [ObsoleteAttribute](frlrfSystemObsoleteAttributeClassTopic) class.  
+A member or type was marked as obsolete with the <xref:System.ObsoleteAttribute> class.  
   
- The following sample generates C4947:  
+## Example  
+The following sample generates C4947:  
   
-```  
+```cpp  
 // C4947.cpp  
 // compile with: /clr /W1  
 // C4947 expected  

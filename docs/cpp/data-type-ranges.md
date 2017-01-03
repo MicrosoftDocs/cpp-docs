@@ -118,7 +118,7 @@ Visual C++ 32-bit and 64-bit compilers recognize the types in the table later in
 |unsigned long|4|unsigned long int|0 to 4,294,967,295|  
 |long long|8|none (but equivalent to __int64)|–9,223,372,036,854,775,808 to 9,223,372,036,854,775,807|  
 |unsigned long long|8|none (but equivalent to unsigned __int64)|0 to 18,446,744,073,709,551,615|  
-|enum|varies|none|See [Remarks](#bkmkRemarks) later in this article|  
+|enum|varies|none| |  
 |float|4|none|3.4E +/- 38 (7 digits)|  
 |double|8|none|1.7E +/- 308 (15 digits)|  
 |long double|same as double|none|Same as double|  

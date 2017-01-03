@@ -1,5 +1,5 @@
 ---
-title: "merge (STL-CLR) | Microsoft Docs"
+title: "merge (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -49,7 +49,7 @@ template<class _InIt1, class _InIt2, class _OutIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `merge`. For more information, see [merge](http://msdn.microsoft.com/Library/f5181f62-4d2f-485f-90c6-6ae92e7bf4d7).  
+ This function behaves the same as the C++ Standard Library function `merge`. For more information, see [merge](http://msdn.microsoft.com/Library/f5181f62-4d2f-485f-90c6-6ae92e7bf4d7).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

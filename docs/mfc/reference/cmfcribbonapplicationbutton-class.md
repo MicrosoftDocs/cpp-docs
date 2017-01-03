@@ -49,7 +49,7 @@ class CMFCRibbonApplicationButton : public CMFCRibbonButton
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonApplicationButton::CMFCRibbonApplicationButton](#cmfcribbonapplicationbutton__cmfcribbonapplicationbutton)|Constructs and initializes a `CMFCRibbonApplicationButton` object.|  
+|[CMFCRibbonApplicationButton::CMFCRibbonApplicationButton](#cmfcribbonapplicationbutton)|Constructs and initializes a `CMFCRibbonApplicationButton` object.|  
   
 ### Public Methods  
   
@@ -57,10 +57,10 @@ class CMFCRibbonApplicationButton : public CMFCRibbonButton
 |----------|-----------------|  
 |`CMFCRibbonApplicationButton::CreateObject`|Used by the framework to create a dynamic instance of this class type.|  
 |`CMFCRibbonApplicationButton::GetThisClass`|Used by the framework to obtain a pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|  
-|[CMFCRibbonApplicationButton::SetImage](#cmfcribbonapplicationbutton__setimage)|Assigns an image to the ribbon application button.|  
+|[CMFCRibbonApplicationButton::SetImage](#setimage)|Assigns an image to the ribbon application button.|  
   
 ## Example  
- The following example demonstrates how to use various methods in the `CMFCRibbonApplicationButton` class. The example shows how to assign an image to the application button, and how to set its tooltip. This code snippet is part of the [Draw Client sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to use various methods in the `CMFCRibbonApplicationButton` class. The example shows how to assign an image to the application button, and how to set its tooltip. This code snippet is part of the [Draw Client sample](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_DrawClient#4](../../mfc/reference/codesnippet/cpp/cmfcribbonapplicationbutton-class_1.h)]  
 [!code-cpp[NVC_MFC_DrawClient#5](../../mfc/reference/codesnippet/cpp/cmfcribbonapplicationbutton-class_2.cpp)]  
@@ -77,7 +77,7 @@ class CMFCRibbonApplicationButton : public CMFCRibbonButton
 ## Requirements  
  **Header:** afxRibbonBar.h  
   
-##  <a name="cmfcribbonapplicationbutton__cmfcribbonapplicationbutton"></a>  CMFCRibbonApplicationButton::CMFCRibbonApplicationButton  
+##  <a name="cmfcribbonapplicationbutton"></a>  CMFCRibbonApplicationButton::CMFCRibbonApplicationButton  
  Constructs and initializes a [CMFCRibbonApplicationButton](../../mfc/reference/cmfcribbonapplicationbutton-class.md) object.  
   
 ```  
@@ -100,7 +100,7 @@ CMFCRibbonApplicationButton(HBITMAP hBmp);
 ### Remarks  
  The ribbon application button is a special button that is located in the upper-left corner of the application window. When a user clicks this button, the application opens a menu that usually contains common **File** commands, such as **Open**, **Save**, and **Exit**.  
   
-##  <a name="cmfcribbonapplicationbutton__setimage"></a>  CMFCRibbonApplicationButton::SetImage  
+##  <a name="setimage"></a>  CMFCRibbonApplicationButton::SetImage  
  Assigns an image to the application button.  
   
 ```  

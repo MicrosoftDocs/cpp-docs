@@ -90,7 +90,7 @@ postfix-expression
 #include <iostream>  
 #include <string>  
   
-// STL name space  
+// C++ Standard Library name space  
 using namespace std;  
   
 int main()  

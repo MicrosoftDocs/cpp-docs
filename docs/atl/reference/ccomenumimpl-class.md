@@ -65,38 +65,38 @@ template <class Base,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComEnumImpl::CComEnumImpl](#ccomenumimpl__ccomenumimpl)|The constructor.|  
-|[CComEnumImpl::~CComEnumImpl](#ccomenumimpl___dtorccomenumimpl)|The destructor.|  
+|[CComEnumImpl::CComEnumImpl](#ccomenumimpl)|The constructor.|  
+|[CComEnumImpl::~CComEnumImpl](#dtor)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComEnumImpl::Clone](#ccomenumimpl__clone)|The implementation of [IEnumXXXX::Clone](https://msdn.microsoft.com/library/ms690336.aspx).|  
-|[CComEnumImpl::Init](#ccomenumimpl__init)|Initializes the enumerator.|  
-|[CComEnumImpl::Next](#ccomenumimpl__next)|The implementation of [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx).|  
-|[CComEnumImpl::Reset](#ccomenumimpl__reset)|The implementation of [IEnumXXXX::Reset](https://msdn.microsoft.com/library/ms693414.aspx).|  
-|[CComEnumImpl::Skip](#ccomenumimpl__skip)|The implementation of [IEnumXXXX::Skip](https://msdn.microsoft.com/library/ms690392.aspx).|  
+|[CComEnumImpl::Clone](#clone)|The implementation of [IEnumXXXX::Clone](https://msdn.microsoft.com/library/ms690336.aspx).|  
+|[CComEnumImpl::Init](#init)|Initializes the enumerator.|  
+|[CComEnumImpl::Next](#next)|The implementation of [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx).|  
+|[CComEnumImpl::Reset](#reset)|The implementation of [IEnumXXXX::Reset](https://msdn.microsoft.com/library/ms693414.aspx).|  
+|[CComEnumImpl::Skip](#skip)|The implementation of [IEnumXXXX::Skip](https://msdn.microsoft.com/library/ms690392.aspx).|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComEnumImpl::m_begin](#ccomenumimpl__m_begin)|A pointer to the first item in the array.|  
-|[CComEnumImpl::m_dwFlags](#ccomenumimpl__m_dwflags)|Copy flags passed through `Init`.|  
-|[CComEnumImpl::m_end](#ccomenumimpl__m_end)|A pointer to the location just beyond the last item in the array.|  
-|[CComEnumImpl::m_iter](#ccomenumimpl__m_iter)|A pointer to the current item in the array.|  
-|[CComEnumImpl::m_spUnk](#ccomenumimpl__m_spunk)|The **IUnknown** pointer of the object supplying the collection being enumerated.|  
+|[CComEnumImpl::m_begin](#m_begin)|A pointer to the first item in the array.|  
+|[CComEnumImpl::m_dwFlags](#m_dwflags)|Copy flags passed through `Init`.|  
+|[CComEnumImpl::m_end](#m_end)|A pointer to the location just beyond the last item in the array.|  
+|[CComEnumImpl::m_iter](#m_iter)|A pointer to the current item in the array.|  
+|[CComEnumImpl::m_spUnk](#m_spunk)|The **IUnknown** pointer of the object supplying the collection being enumerated.|  
   
 ## Remarks  
- `CComEnumImpl` provides the implementation for a COM enumerator interface where the items being enumerated are stored in an array. This class is analogous to the `IEnumOnSTLImpl` class, which provides an implementation of an enumerator interface based on an STL container.  
+ `CComEnumImpl` provides the implementation for a COM enumerator interface where the items being enumerated are stored in an array. This class is analogous to the `IEnumOnSTLImpl` class, which provides an implementation of an enumerator interface based on a C++ Standard Library container.  
   
 > [!NOTE]
->  For details on further differences between `CComEnumImpl` and `IEnumOnSTLImpl`, see [CComEnumImpl::Init](#ccomenumimpl__init).  
+>  For details on further differences between `CComEnumImpl` and `IEnumOnSTLImpl`, see [CComEnumImpl::Init](#init).  
   
  Typically, you will *not* need to create your own enumerator class by deriving from this interface implementation. If you want to use an ATL-supplied enumerator based on an array, it is more common to create an instance of [CComEnum](../../atl/reference/ccomenum-class.md).  
   
- However, if you do need to provide a custom enumerator (for example, one that exposes interfaces in addition to the enumerator interface), you can derive from this class. In this situation, it is likely that you'll need to override the [CComEnumImpl::Clone](#ccomenumimpl__clone) method to provide your own implementation.  
+ However, if you do need to provide a custom enumerator (for example, one that exposes interfaces in addition to the enumerator interface), you can derive from this class. In this situation, it is likely that you'll need to override the [CComEnumImpl::Clone](#clone) method to provide your own implementation.  
   
  For more information, see [ATL Collections and Enumerators](../../atl/atl-collections-and-enumerators.md).  
   
@@ -108,21 +108,21 @@ template <class Base,
 ## Requirements  
  **Header:** atlcom.h  
   
-##  <a name="ccomenumimpl__ccomenumimpl"></a>  CComEnumImpl::CComEnumImpl  
+##  <a name="ccomenumimpl"></a>  CComEnumImpl::CComEnumImpl  
  The constructor.  
   
 ```
 CComEnumImpl();
 ```  
   
-##  <a name="ccomenumimpl___dtorccomenumimpl"></a>  CComEnumImpl::~CComEnumImpl  
+##  <a name="dtor"></a>  CComEnumImpl::~CComEnumImpl  
  The destructor.  
   
 ```
 ~CComEnumImpl();
 ```  
   
-##  <a name="ccomenumimpl__init"></a>  CComEnumImpl::Init  
+##  <a name="init"></a>  CComEnumImpl::Init  
  You must call this method before passing a pointer to the enumerator interface back to any clients.  
   
 ```
@@ -175,9 +175,9 @@ HRESULT Init(
  **AtlFlagCopy** means that a new array is to be created by copying the array passed to `Init`. The new array's lifetime is to be controlled by the enumerator. The enumerator will delete the array in its destructor. Typically, you would pass **NULL** for *pUnk*, although you can still pass a valid pointer if you need to be notified of the destruction of the enumerator for some reason.  
   
 > [!NOTE]
->  The prototype of this method specifies the array elements as being of type **T**, where **T** was defined as a template parameter to the class. This is the same type that is exposed by means of the COM interface method [CComEnumImpl::Next](#ccomenumimpl__next). The implication of this is that, unlike [IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md), this class does not support different storage and exposed data types. The data type of elements in the array must be the same as the data type exposed by means of the COM interface.  
+>  The prototype of this method specifies the array elements as being of type **T**, where **T** was defined as a template parameter to the class. This is the same type that is exposed by means of the COM interface method [CComEnumImpl::Next](#next). The implication of this is that, unlike [IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md), this class does not support different storage and exposed data types. The data type of elements in the array must be the same as the data type exposed by means of the COM interface.  
   
-##  <a name="ccomenumimpl__clone"></a>  CComEnumImpl::Clone  
+##  <a name="clone"></a>  CComEnumImpl::Clone  
  This method provides the implementation of the [IEnumXXXX::Clone](https://msdn.microsoft.com/library/ms690336.aspx) method by creating an object of type `CComEnum`, initializing it with the same array and iterator used by the current object, and returning the interface on the newly created object.  
   
 ```
@@ -194,42 +194,42 @@ STDMETHOD(Clone)(Base** ppEnum);
 ### Remarks  
  Note that cloned enumerators never make their own copy (or take ownership) of the data used by the original enumerator. If necessary, cloned enumerators will keep the original enumerator alive (using a COM reference) to ensure that the data is available for as long as they need it.  
   
-##  <a name="ccomenumimpl__m_spunk"></a>  CComEnumImpl::m_spUnk  
- This smart pointer maintains a reference on the object passed to [CComEnumImpl::Init](#ccomenumimpl__init), ensuring that it remains alive during the lifetime of the enumerator.  
+##  <a name="m_spunk"></a>  CComEnumImpl::m_spUnk  
+ This smart pointer maintains a reference on the object passed to [CComEnumImpl::Init](#init), ensuring that it remains alive during the lifetime of the enumerator.  
   
 ```
 CComPtr<IUnknown> m_spUnk;
 ```  
   
-##  <a name="ccomenumimpl__m_begin"></a>  CComEnumImpl::m_begin  
+##  <a name="m_begin"></a>  CComEnumImpl::m_begin  
  A pointer to the location just beyond the last element of the array containing the items to be enumerated.  
   
 ```
 T* m_begin;
 ```  
   
-##  <a name="ccomenumimpl__m_end"></a>  CComEnumImpl::m_end  
+##  <a name="m_end"></a>  CComEnumImpl::m_end  
  A pointer to the first element of the array containing the items to be enumerated.  
   
 ```
 T* m_end;
 ```  
   
-##  <a name="ccomenumimpl__m_iter"></a>  CComEnumImpl::m_iter  
+##  <a name="m_iter"></a>  CComEnumImpl::m_iter  
  A pointer to the current element of the array containing the items to be enumerated.  
   
 ```
 T* m_iter;
 ```  
   
-##  <a name="ccomenumimpl__m_dwflags"></a>  CComEnumImpl::m_dwFlags  
- The flags passed to [CComEnumImpl::Init](#ccomenumimpl__init).  
+##  <a name="m_dwflags"></a>  CComEnumImpl::m_dwFlags  
+ The flags passed to [CComEnumImpl::Init](#init).  
   
 ```
 DWORD m_dwFlags;
 ```  
   
-##  <a name="ccomenumimpl__next"></a>  CComEnumImpl::Next  
+##  <a name="next"></a>  CComEnumImpl::Next  
  This method provides the implementation of the [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx) method.  
   
 ```
@@ -251,7 +251,7 @@ STDMETHOD(Next)(ULONG celt,
 ### Return Value  
  A standard `HRESULT` value.  
   
-##  <a name="ccomenumimpl__reset"></a>  CComEnumImpl::Reset  
+##  <a name="reset"></a>  CComEnumImpl::Reset  
  This method provides the implementation of the [IEnumXXXX::Reset](https://msdn.microsoft.com/library/ms693414.aspx) method.  
   
 ```
@@ -261,7 +261,7 @@ STDMETHOD(Reset)(void);
 ### Return Value  
  A standard `HRESULT` value.  
   
-##  <a name="ccomenumimpl__skip"></a>  CComEnumImpl::Skip  
+##  <a name="skip"></a>  CComEnumImpl::Skip  
  This method provides the implementation of the [IEnumXXXX::Skip](https://msdn.microsoft.com/library/ms690392.aspx) method.  
   
 ```

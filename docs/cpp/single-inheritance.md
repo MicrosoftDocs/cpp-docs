@@ -177,6 +177,3 @@ int main() {
 > [!NOTE]
 >  Forcing the base class to implement a function such as `PrintNameOf` is often not the best design. [Virtual Functions](../cpp/virtual-functions.md) offers other design alternatives.  
   
-## See Also  
- [Overview of Derived Classes](../misc/overview-of-derived-classes.md)   
- [(NOTINBUILD) Multiple Inheritance](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca)

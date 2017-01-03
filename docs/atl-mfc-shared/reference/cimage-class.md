@@ -61,82 +61,82 @@ class CImage
   
 |Name|Description|  
 |----------|-----------------|  
-|[CImage::CImage](#cimage__cimage)|The constructor.|  
+|[CImage::CImage](#cimage)|The constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CImage::AlphaBlend](#cimage__alphablend)|Displays bitmaps that have transparent or semitransparent pixels.|  
-|[CImage::Attach](#cimage__attach)|Attaches an `HBITMAP` to a `CImage` object. Can be used with either non-DIB section bitmaps or DIB section bitmaps.|  
-|[CImage::BitBlt](#cimage__bitblt)|Copies a bitmap from the source device context to this current device context.|  
-|[CImage::Create](#cimage__create)|Creates a DIB section bitmap and attaches it to the previously constructed `CImage` object.|  
-|[CImage::CreateEx](#cimage__createex)|Creates a DIB section bitmap (with additional parameters) and attaches it to the previously constructed `CImage` object.|  
-|[CImage::Destroy](#cimage__destroy)|Detaches the bitmap from the `CImage` object and destroys the bitmap.|  
-|[CImage::Detach](#cimage__detach)|Detaches the bitmap from a `CImage` object.|  
-|[CImage::Draw](#cimage__draw)|Copies a bitmap from a source rectangle into a destination rectangle. **Draw** stretches or compresses the bitmap to fit the dimensions of the destination rectangle, if necessary, and handles alpha blending and transparent colors.|  
-|[CImage::GetBits](#cimage__getbits)|Retrieves a pointer to the actual pixel values of the bitmap.|  
-|[CImage::GetBPP](#cimage__getbpp)|Retrieves the bits per pixel.|  
-|[CImage::GetColorTable](#cimage__getcolortable)|Retrieves red, green, blue (RGB) color values from a range of entries in the color table.|  
-|[CImage::GetDC](#cimage__getdc)|Retrieves the device context into which the current bitmap is selected.|  
-|[CImage::GetExporterFilterString](#cimage__getexporterfilterstring)|Finds the available image formats and their descriptions.|  
-|[CImage::GetHeight](#cimage__getheight)|Retrieves the height of the current image in pixels.|  
-|[CImage::GetImporterFilterString](#cimage__getimporterfilterstring)|Finds the available image formats and their descriptions.|  
-|[CImage::GetMaxColorTableEntries](#cimage__getmaxcolortableentries)|Retrieves the maximum number of entries in the color table.|  
-|[CImage::GetPitch](#cimage__getpitch)|Retrieves the pitch of the current image, in bytes.|  
-|[CImage::GetPixel](#cimage__getpixel)|Retrieves the color of the pixel specified by *x* and *y*.|  
-|[CImage::GetPixelAddress](#cimage__getpixeladdress)|Retrieves the address of a given pixel.|  
-|[CImage::GetTransparentColor](#cimage__gettransparentcolor)|Retrieves the position of the transparent color in the color table.|  
-|[CImage::GetWidth](#cimage__getwidth)|Retrieves the width of the current image in pixels.|  
-|[CImage::IsDIBSection](#cimage__isdibsection)|Determines if the attached bitmap is a DIB section.|  
-|[CImage::IsIndexed](#cimage__isindexed)|Indicates that a bitmap's colors are mapped to an indexed palette.|  
-|[CImage::IsNull](#cimage__isnull)|Indicates if a source bitmap is currently loaded.|  
-|[CImage::IsTransparencySupported](#cimage__istransparencysupported)|Indicates whether the application supports transparent bitmaps and was compiled for Windows 2000 or later.|  
-|[CImage::Load](#cimage__load)|Loads an image from the specified file.|  
-|[CImage::LoadFromResource](#cimage__loadfromresource)|Loads an image from the specified resource.|  
-|[CImage::MaskBlt](#cimage__maskblt)|Combines the color data for the source and destination bitmaps using the specified mask and raster operation.|  
-|[CImage::PlgBlt](#cimage__plgblt)|Performs a bit-block transfer from a rectangle in a source device context into a parallelogram in a destination device context.|  
-|[CImage::ReleaseDC](#cimage__releasedc)|Releases the device context that was retrieved with [CImage::GetDC](#cimage__getdc).|  
-|[CImage::ReleaseGDIPlus](#cimage__releasegdiplus)|Releases resources used by GDI+. Must be called to free resources created by a global `CImage` object.|  
-|[CImage::Save](#cimage__save)|Saves an image as the specified type. **Save** cannot specify image options.|  
-|[CImage::SetColorTable](#cimage__setcolortable)|Sets red, green, blue RGB) color values in a range of entries in the color table of the DIB section.|  
-|[CImage::SetPixel](#cimage__setpixel)|Sets the pixel at the specified coordinates to the specified color.|  
-|[CImage::SetPixelIndexed](#cimage__setpixelindexed)|Sets the pixel at the specified coordinates to the color at the specified index of the palette.|  
-|[CImage::SetPixelRGB](#cimage__setpixelrgb)|Sets the pixel at the specified coordinates to the specified red, green, blue (RGB) value.|  
-|[CImage::SetTransparentColor](#cimage__settransparentcolor)|Sets the index of the color to be treated as transparent. Only one color in a palette can be transparent.|  
-|[CImage::StretchBlt](#cimage__stretchblt)|Copies a bitmap from a source rectangle into a destination rectangle, stretching or compressing the bitmap to fit the dimensions of the destination rectangle, if necessary.|  
-|[CImage::TransparentBlt](#cimage__transparentblt)|Copies a bitmap with transparent color from the source device context to this current device context.|  
+|[CImage::AlphaBlend](#alphablend)|Displays bitmaps that have transparent or semitransparent pixels.|  
+|[CImage::Attach](#attach)|Attaches an `HBITMAP` to a `CImage` object. Can be used with either non-DIB section bitmaps or DIB section bitmaps.|  
+|[CImage::BitBlt](#bitblt)|Copies a bitmap from the source device context to this current device context.|  
+|[CImage::Create](#create)|Creates a DIB section bitmap and attaches it to the previously constructed `CImage` object.|  
+|[CImage::CreateEx](#createex)|Creates a DIB section bitmap (with additional parameters) and attaches it to the previously constructed `CImage` object.|  
+|[CImage::Destroy](#destroy)|Detaches the bitmap from the `CImage` object and destroys the bitmap.|  
+|[CImage::Detach](#detach)|Detaches the bitmap from a `CImage` object.|  
+|[CImage::Draw](#draw)|Copies a bitmap from a source rectangle into a destination rectangle. **Draw** stretches or compresses the bitmap to fit the dimensions of the destination rectangle, if necessary, and handles alpha blending and transparent colors.|  
+|[CImage::GetBits](#getbits)|Retrieves a pointer to the actual pixel values of the bitmap.|  
+|[CImage::GetBPP](#getbpp)|Retrieves the bits per pixel.|  
+|[CImage::GetColorTable](#getcolortable)|Retrieves red, green, blue (RGB) color values from a range of entries in the color table.|  
+|[CImage::GetDC](#getdc)|Retrieves the device context into which the current bitmap is selected.|  
+|[CImage::GetExporterFilterString](#getexporterfilterstring)|Finds the available image formats and their descriptions.|  
+|[CImage::GetHeight](#getheight)|Retrieves the height of the current image in pixels.|  
+|[CImage::GetImporterFilterString](#getimporterfilterstring)|Finds the available image formats and their descriptions.|  
+|[CImage::GetMaxColorTableEntries](#getmaxcolortableentries)|Retrieves the maximum number of entries in the color table.|  
+|[CImage::GetPitch](#getpitch)|Retrieves the pitch of the current image, in bytes.|  
+|[CImage::GetPixel](#getpixel)|Retrieves the color of the pixel specified by *x* and *y*.|  
+|[CImage::GetPixelAddress](#getpixeladdress)|Retrieves the address of a given pixel.|  
+|[CImage::GetTransparentColor](#gettransparentcolor)|Retrieves the position of the transparent color in the color table.|  
+|[CImage::GetWidth](#getwidth)|Retrieves the width of the current image in pixels.|  
+|[CImage::IsDIBSection](#isdibsection)|Determines if the attached bitmap is a DIB section.|  
+|[CImage::IsIndexed](#isindexed)|Indicates that a bitmap's colors are mapped to an indexed palette.|  
+|[CImage::IsNull](#isnull)|Indicates if a source bitmap is currently loaded.|  
+|[CImage::IsTransparencySupported](#istransparencysupported)|Indicates whether the application supports transparent bitmaps and was compiled for Windows 2000 or later.|  
+|[CImage::Load](#load)|Loads an image from the specified file.|  
+|[CImage::LoadFromResource](#loadfromresource)|Loads an image from the specified resource.|  
+|[CImage::MaskBlt](#maskblt)|Combines the color data for the source and destination bitmaps using the specified mask and raster operation.|  
+|[CImage::PlgBlt](#plgblt)|Performs a bit-block transfer from a rectangle in a source device context into a parallelogram in a destination device context.|  
+|[CImage::ReleaseDC](#releasedc)|Releases the device context that was retrieved with [CImage::GetDC](#getdc).|  
+|[CImage::ReleaseGDIPlus](#releasegdiplus)|Releases resources used by GDI+. Must be called to free resources created by a global `CImage` object.|  
+|[CImage::Save](#save)|Saves an image as the specified type. **Save** cannot specify image options.|  
+|[CImage::SetColorTable](#setcolortable)|Sets red, green, blue RGB) color values in a range of entries in the color table of the DIB section.|  
+|[CImage::SetPixel](#setpixel)|Sets the pixel at the specified coordinates to the specified color.|  
+|[CImage::SetPixelIndexed](#setpixelindexed)|Sets the pixel at the specified coordinates to the color at the specified index of the palette.|  
+|[CImage::SetPixelRGB](#setpixelrgb)|Sets the pixel at the specified coordinates to the specified red, green, blue (RGB) value.|  
+|[CImage::SetTransparentColor](#settransparentcolor)|Sets the index of the color to be treated as transparent. Only one color in a palette can be transparent.|  
+|[CImage::StretchBlt](#stretchblt)|Copies a bitmap from a source rectangle into a destination rectangle, stretching or compressing the bitmap to fit the dimensions of the destination rectangle, if necessary.|  
+|[CImage::TransparentBlt](#transparentblt)|Copies a bitmap with transparent color from the source device context to this current device context.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CImage::operator HBITMAP](#cimage__operator_hbitmap)|Returns the Windows handle attached to the `CImage` object.|  
+|[CImage::operator HBITMAP](#operator_hbitmap)|Returns the Windows handle attached to the `CImage` object.|  
   
 ## Remarks  
- `CImage` takes bitmaps that are either device-independent bitmap (DIB) sections or not; however, you can use [Create](#cimage__create) or [CImage::Load](#cimage__load) with only DIB sections. You can attach a non-DIB section bitmap to a `CImage` object using [Attach](#cimage__attach), but then you cannot use the following `CImage` methods, which support only DIB section bitmaps:  
+ `CImage` takes bitmaps that are either device-independent bitmap (DIB) sections or not; however, you can use [Create](#create) or [CImage::Load](#load) with only DIB sections. You can attach a non-DIB section bitmap to a `CImage` object using [Attach](#attach), but then you cannot use the following `CImage` methods, which support only DIB section bitmaps:  
   
-- [GetBits](#cimage__getbits)  
+- [GetBits](#getbits)  
   
-- [GetColorTable](#cimage__getcolortable)  
+- [GetColorTable](#getcolortable)  
   
-- [GetMaxColorTableEntries](#cimage__getmaxcolortableentries)  
+- [GetMaxColorTableEntries](#getmaxcolortableentries)  
   
-- [GetPitch](#cimage__getpitch)  
+- [GetPitch](#getpitch)  
   
-- [GetPixelAddress](#cimage__getpixeladdress)  
+- [GetPixelAddress](#getpixeladdress)  
   
-- [IsIndexed](#cimage__isindexed)  
+- [IsIndexed](#isindexed)  
   
-- [SetColorTable](#cimage__setcolortable)  
+- [SetColorTable](#setcolortable)  
   
- To determine if an attached bitmap is a DIB section, call [IsDibSection](#cimage__isdibsection)**.**  
+ To determine if an attached bitmap is a DIB section, call [IsDibSection](#isdibsection)**.**  
   
 > [!NOTE]
 > **Note** In Visual Studio .NET 2003, this class keeps a count of the number of `CImage` objects created. Whenever the count goes to 0, the function **GdiplusShutdown** is automatically called to release resources used by GDI+. This ensures that any `CImage` objects created directly or indirectly by DLLs are always destroyed properly and that **GdiplusShutdown** is not called from `DllMain`.  
   
 > [!NOTE]
->  Using global `CImage` objects in a DLL is not recommended. If you need to use a global `CImage` object in a DLL, call [CImage::ReleaseGDIPlus](#cimage__releasegdiplus) to explicitly release resources used by GDI+.  
+>  Using global `CImage` objects in a DLL is not recommended. If you need to use a global `CImage` object in a DLL, call [CImage::ReleaseGDIPlus](#releasegdiplus) to explicitly release resources used by GDI+.  
   
  `CImage` cannot be selected into a new [CDC](../../mfc/reference/cdc-class.md). `CImage` creates its own **HDC** for the image. Because an `HBITMAP` can only be selected into one **HDC** at a time, the `HBITMAP` associated with the `CImage` cannot be selected into another **HDC**. If you need a `CDC`, retrieve the **HDC** from the `CImage` and give it to [CDC::FromHandle](../../mfc/reference/cdc-class.md#cdc__fromhandle.  
   
@@ -151,7 +151,7 @@ pDC->Rectangle(0, 40, 100, 50);
 m_myImage.ReleaseDC();
 ```  
   
- When you use `CImage` in an MFC project, note which member functions in your project expect a pointer to a [CBitmap](../../mfc/reference/cbitmap-class.md) object. If you want to use `CImage` with such a function, like [CMenu::AppendMenu](../../mfc/reference/cmenu-class.md#cmenu__appendmenu), use [CBitmap::FromHandle](../../mfc/reference/cbitmap-class.md#cbitmap__fromhandle), pass it your `CImage` `HBITMAP`, and use the returned `CBitmap*`.  
+ When you use `CImage` in an MFC project, note which member functions in your project expect a pointer to a [CBitmap](../../mfc/reference/cbitmap-class.md) object. If you want to use `CImage` with such a function, like [CMenu::AppendMenu](../../mfc/reference/cmenu-class.md#appendmenu), use [CBitmap::FromHandle](../../mfc/reference/cbitmap-class.md#fromhandle), pass it your `CImage` `HBITMAP`, and use the returned `CBitmap*`.  
 
   
 ## Example  
@@ -176,11 +176,11 @@ void CMyDlg::OnRButtonDown(UINT nFlags, CPoint point)
   
 |Method|Limitation|  
 |------------|----------------|  
-|[PlgBlt](#cimage__plgblt)|Works with only Windows NT 4.0 or later. Will not work on applications running on Windows 95/98 or later.|  
-|[MaskBlt](#cimage__maskblt)|Works with only Windows NT 4.0 or later. Will not work on applications running on Windows 95/98 or later.|  
-|[AlphaBlend](#cimage__alphablend)|Works with only Windows 2000, Windows 98, and later systems.|  
-|[TransparentBlt](#cimage__transparentblt)|Works with only Windows 2000, Windows 98, and later systems.|  
-|[Draw](#cimage__draw)|Supports transparency with only Windows 2000, Windows 98, and later systems.|  
+|[PlgBlt](#plgblt)|Works with only Windows NT 4.0 or later. Will not work on applications running on Windows 95/98 or later.|  
+|[MaskBlt](#maskblt)|Works with only Windows NT 4.0 or later. Will not work on applications running on Windows 95/98 or later.|  
+|[AlphaBlend](#alphablend)|Works with only Windows 2000, Windows 98, and later systems.|  
+|[TransparentBlt](#transparentblt)|Works with only Windows 2000, Windows 98, and later systems.|  
+|[Draw](#draw)|Supports transparency with only Windows 2000, Windows 98, and later systems.|  
   
  You can use `CImage` from either MFC or ATL.  
   
@@ -192,7 +192,7 @@ void CMyDlg::OnRButtonDown(UINT nFlags, CPoint point)
 ## Requirements  
  **Header:** atlimage.h  
   
-##  <a name="cimage__alphablend"></a>  CImage::AlphaBlend  
+##  <a name="alphablend"></a>  CImage::AlphaBlend  
  Displays bitmaps that have transparent or semitransparent pixels.  
   
 ```
@@ -277,7 +277,7 @@ BOOL AlphaBlend(HDC hDestDC,
   
  When `bBlendOp` is set to the default of **AC_SRC_OVER**, the source bitmap is placed over the destination bitmap based on the alpha values of the source pixels.  
 
-##  <a name="cimage__attach"></a>  CImage::Attach  
+##  <a name="attach"></a>  CImage::Attach  
  Attaches `hBitmap` to a `CImage` object.  
   
 ```
@@ -293,14 +293,14 @@ void Attach(HBITMAP hBitmap,   DIBOrientation eOrientation = DIBOR_DEFAULT) thro
   
 - **DIBOR_DEFAULT** The orientation of the bitmap is determined by the operating system. However, this may not always have the intended results on all operating systems. For more information on this, see the following Knowledge Base article ( **Q186586**): PRB: GetObject() Always Returns Positive Height For DIB Sections.  
   
-- **DIBOR_BOTTOMUP** The lines of the bitmap are in reverse order. This causes [CImage::GetBits](#cimage__getbits) to return a pointer near the end of the bitmap buffer and [CImage::GetPitch](#cimage__getpitch) to return a negative number.  
+- **DIBOR_BOTTOMUP** The lines of the bitmap are in reverse order. This causes [CImage::GetBits](#getbits) to return a pointer near the end of the bitmap buffer and [CImage::GetPitch](#getpitch) to return a negative number.  
   
-- **DIBOR_TOPDOWN**  The lines of the bitmap are in top to bottom order. This causes [CImage::GetBits](#cimage__getbits) to return a pointer to the first byte of the bitmap buffer and [CImage::GetPitch](#cimage__getpitch) to return a positive number.  
+- **DIBOR_TOPDOWN**  The lines of the bitmap are in top to bottom order. This causes [CImage::GetBits](#getbits) to return a pointer to the first byte of the bitmap buffer and [CImage::GetPitch](#getpitch) to return a positive number.  
   
 ### Remarks  
- The bitmap can be either a non-DIB section bitmap or a DIB section bitmap. See [IsDIBSection](#cimage__isdibsection) for a list of methods that you can use only with DIB section bitmaps.  
+ The bitmap can be either a non-DIB section bitmap or a DIB section bitmap. See [IsDIBSection](#isdibsection) for a list of methods that you can use only with DIB section bitmaps.  
   
-##  <a name="cimage__bitblt"></a>  CImage::BitBlt  
+##  <a name="bitblt"></a>  CImage::BitBlt  
  Copies a bitmap from the source device context to this current device context.  
   
 ```
@@ -368,7 +368,7 @@ BOOL BitBlt(HDC hDestDC,
 ### Remarks  
  For more information, see [BitBlt](http://msdn.microsoft.com/library/windows/desktop/dd183370) in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="cimage__cimage"></a>  CImage::CImage  
+##  <a name="cimage"></a>  CImage::CImage  
  Constructs a `CImage` object.  
   
 ```
@@ -376,13 +376,13 @@ CImage() throw();
 ```  
   
 ### Remarks  
- Once you have constructed the object, call [Create](#cimage__create), [Load](#cimage__load), [LoadFromResource](#cimage__loadfromresource), or [Attach](#cimage__attach) to attach a bitmap to the object.  
+ Once you have constructed the object, call [Create](#create), [Load](#load), [LoadFromResource](#loadfromresource), or [Attach](#attach) to attach a bitmap to the object.  
   
  **Note** In Visual Studio, this class keeps a count of the number of `CImage` objects created. Whenever the count goes to 0, the function **GdiplusShutdown** is automatically called to release resources used by GDI+. This ensures that any `CImage` objects created directly or indirectly by DLLs are always destroyed properly and that **GdiplusShutdown** is not called from DllMain.  
   
- Using global `CImage` objects in a DLL is not recommended. If you need to use a global `CImage` object in a DLL, call [CImage::ReleaseGDIPlus](#cimage__releasegdiplus) to explicitly release resources used by GDI+.  
+ Using global `CImage` objects in a DLL is not recommended. If you need to use a global `CImage` object in a DLL, call [CImage::ReleaseGDIPlus](#releasegdiplus) to explicitly release resources used by GDI+.  
   
-##  <a name="cimage__create"></a>  CImage::Create  
+##  <a name="create"></a>  CImage::Create  
  Creates a `CImage` bitmap and attach it to the previously constructed `CImage` object.  
   
 ```
@@ -405,15 +405,15 @@ BOOL Create(int nWidth,
  `dwFlags`  
  Specifies if the bitmap object has an alpha channel. Can be a combination of zero or more of the following values:  
   
-- **createAlphaChannel** Can only be used if `nBPP` is 32, and `eCompression` is **BI_RGB**. If specified, the created image has an alpha (transparency) value for each pixel, stored in the 4th byte of each pixel (unused in a non-alpha 32-bit image). This alpha channel is automatically used when calling [CImage::AlphaBlend](#cimage__alphablend).  
+- **createAlphaChannel** Can only be used if `nBPP` is 32, and `eCompression` is **BI_RGB**. If specified, the created image has an alpha (transparency) value for each pixel, stored in the 4th byte of each pixel (unused in a non-alpha 32-bit image). This alpha channel is automatically used when calling [CImage::AlphaBlend](#alphablend).  
   
 > [!NOTE]
->  In calls to [CImage::Draw](#cimage__draw), images with an alpha channel are automatically alpha blended to the destination.  
+>  In calls to [CImage::Draw](#draw), images with an alpha channel are automatically alpha blended to the destination.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
-##  <a name="cimage__createex"></a>  CImage::CreateEx  
+##  <a name="createex"></a>  CImage::CreateEx  
  Creates a `CImage` bitmap and attach it to the previously constructed `CImage` object.  
   
 ```
@@ -448,10 +448,10 @@ BOOL CreateEx(int nWidth,
  `dwFlags`  
  Specifies if the bitmap object has an alpha channel. Can be a combination of zero or more of the following values:  
   
-- **createAlphaChannel** Can only be used if `nBPP` is 32, and `eCompression` is **BI_RGB**. If specified, the created image has an alpha (transparency) value for each pixel, stored in the 4th byte of each pixel (unused in a non-alpha 32-bit image). This alpha channel is automatically used when calling [CImage::AlphaBlend](#cimage__alphablend).  
+- **createAlphaChannel** Can only be used if `nBPP` is 32, and `eCompression` is **BI_RGB**. If specified, the created image has an alpha (transparency) value for each pixel, stored in the 4th byte of each pixel (unused in a non-alpha 32-bit image). This alpha channel is automatically used when calling [CImage::AlphaBlend](#alphablend).  
   
     > [!NOTE]
-    >  In calls to [CImage::Draw](#cimage__draw), images with an alpha channel are automatically alpha blended to the destination.  
+    >  In calls to [CImage::Draw](#draw), images with an alpha channel are automatically alpha blended to the destination.  
   
 ### Return Value  
  **TRUE** if successful. Otherwise **FALSE**.  
@@ -466,14 +466,14 @@ m_myImage.CreateEx(100, 100, 16, BI_BITFIELDS, adwBitmasks, 0);
 ```
 
 
-##  <a name="cimage__destroy"></a>  CImage::Destroy  
+##  <a name="destroy"></a>  CImage::Destroy  
  Detaches the bitmap from the `CImage` object and destroys the bitmap.  
   
 ```
 void Destroy() throw();
 ```  
   
-##  <a name="cimage__detach"></a>  CImage::Detach  
+##  <a name="detach"></a>  CImage::Detach  
  Detaches a bitmap from a `CImage` object.  
   
 ```
@@ -483,7 +483,7 @@ HBITMAP Detach() throw();
 ### Return Value  
  A handle to the bitmap detached, or **NULL** if no bitmap is attached.  
   
-##  <a name="cimage__draw"></a>  CImage::Draw  
+##  <a name="draw"></a>  CImage::Draw  
  Copies a bitmap from the source device context to the current device context.  
   
 ```
@@ -559,11 +559,11 @@ BOOL Draw(HDC hDestDC,
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- **Draw** performs the same operation as [StretchBlt](#cimage__stretchblt), unless the image contains a transparent color or alpha channel. In that case, **Draw** performs the same operation as either [TransparentBlt](#cimage__transparentblt) or [AlphaBlend](#cimage__alphablend) as required.  
+ **Draw** performs the same operation as [StretchBlt](#stretchblt), unless the image contains a transparent color or alpha channel. In that case, **Draw** performs the same operation as either [TransparentBlt](#transparentblt) or [AlphaBlend](#alphablend) as required.  
   
  For versions of **Draw** that do not specify a source rectangle, the entire source image is the default. For the version of **Draw** that does not specify a size for the destination rectangle, the size of the source image is the default and no stretching or shrinking occurs.  
   
-##  <a name="cimage__getbits"></a>  CImage::GetBits  
+##  <a name="getbits"></a>  CImage::GetBits  
  Retrieves a pointer to the actual bit values of a given pixel in a bitmap.  
   
 ```
@@ -574,12 +574,12 @@ void* GetBits() throw();
  A pointer to the bitmap buffer. If the bitmap is a bottom-up DIB, the pointer points near the end of the buffer. If the bitmap is a top-down DIB, the pointer points to the first byte of the buffer.  
   
 ### Remarks  
- Using this pointer, along with the value returned by [GetPitch](#cimage__getpitch), you can locate and change individual pixels in an image.  
+ Using this pointer, along with the value returned by [GetPitch](#getpitch), you can locate and change individual pixels in an image.  
   
 > [!NOTE]
 >  This method supports only DIB section bitmaps; consequently, you access the pixels of a `CImage` object the same way you would the pixels of a DIB section. The returned pointer points to the pixel at the location (0, 0).  
   
-##  <a name="cimage__getbpp"></a>  CImage::GetBPP  
+##  <a name="getbpp"></a>  CImage::GetBPP  
  Retrieves the bits-per-pixel value.  
   
 ```
@@ -594,7 +594,7 @@ int GetBPP() const throw();
   
  The bits per pixel is usually 1, 4, 8, 16, 24, or 32. See the **biBitCount** member of [BITMAPINFOHEADER](http://msdn.microsoft.com/library/windows/desktop/dd183376) in the [!INCLUDE[winSDK](./includes/winsdk_md.md)] for more information about this value.  
   
-##  <a name="cimage__getcolortable"></a>  CImage::GetColorTable  
+##  <a name="getcolortable"></a>  CImage::GetColorTable  
  Retrieves red, green, blue (RGB) color values from a range of entries in the palette of the DIB section.  
   
 ```
@@ -613,7 +613,7 @@ void GetColorTable(UINT iFirstColor,
  `prgbColors`  
  A pointer to the array of [RGBQUAD](http://msdn.microsoft.com/library/windows/desktop/dd162938) structures to retrieve the color table entries.  
   
-##  <a name="cimage__getdc"></a>  CImage::GetDC  
+##  <a name="getdc"></a>  CImage::GetDC  
  Retrieves the device context that currently has the image selected into it.  
   
 ```
@@ -624,9 +624,9 @@ HDC GetDC() const throw();
  A handle to a device context.  
   
 ### Remarks  
- For each call to `GetDC`, you must have a subsequent call to [ReleaseDC](#cimage__releasedc).  
+ For each call to `GetDC`, you must have a subsequent call to [ReleaseDC](#releasedc).  
   
-##  <a name="cimage__getexporterfilterstring"></a>  CImage::GetExporterFilterString  
+##  <a name="getexporterfilterstring"></a>  CImage::GetExporterFilterString  
  Finds image formats available for saving images.  
   
 ```
@@ -705,7 +705,7 @@ CImage::GetExporterFilterString( strExporters, aguidFileTypes,
   
  Use the default separator '&#124;' if you pass this string to an MFC `CFileDialog` object. Use the null separator '\0' if you pass this string to a common File Save dialog box.  
   
-##  <a name="cimage__getheight"></a>  CImage::GetHeight  
+##  <a name="getheight"></a>  CImage::GetHeight  
  Retrieves the height, in pixels, of an image.  
   
 ```
@@ -715,7 +715,7 @@ int GetHeight() const throw();
 ### Return Value  
  The height, in pixels, of an image.  
   
-##  <a name="cimage__getimporterfilterstring"></a>  CImage::GetImporterFilterString  
+##  <a name="getimporterfilterstring"></a>  CImage::GetImporterFilterString  
  Finds image formats available for loading images.  
   
 ```
@@ -791,7 +791,7 @@ CImage::GetImporterFilterString( strImporters, aguidFileTypes,
   
  Use the default separator '&#124;' if you pass this string to an MFC `CFileDialog` object. Use the null separator '\0' if you pass this string to a common **File Open** dialog box.  
   
-##  <a name="cimage__getmaxcolortableentries"></a>  CImage::GetMaxColorTableEntries  
+##  <a name="getmaxcolortableentries"></a>  CImage::GetMaxColorTableEntries  
  Retrieves the maximum number of entries in the color table.  
   
 ```
@@ -804,7 +804,7 @@ int GetMaxColorTableEntries() const throw();
 ### Remarks  
  This method supports only DIB section bitmaps.  
   
-##  <a name="cimage__getpitch"></a>  CImage::GetPitch  
+##  <a name="getpitch"></a>  CImage::GetPitch  
  Retrieves the pitch of an image.  
   
 ```
@@ -817,12 +817,12 @@ int GetPitch() const throw();
 ### Remarks  
  The pitch is the distance, in bytes, between two memory addresses that represent the beginning of one bitmap line and the beginning of the next bitmap line. Because pitch is measured in bytes, the pitch of an image helps you to determine the pixel format. The pitch can also include additional memory, reserved for the bitmap.  
   
- Use `GetPitch` with [GetBits](#cimage__getbits) to find individual pixels of an image.  
+ Use `GetPitch` with [GetBits](#getbits) to find individual pixels of an image.  
   
 > [!NOTE]
 >  This method supports only DIB section bitmaps.  
   
-##  <a name="cimage__getpixel"></a>  CImage::GetPixel  
+##  <a name="getpixel"></a>  CImage::GetPixel  
  Retrieves the color of the pixel at the location specified by *x* and *y*.  
   
 ```
@@ -839,7 +839,7 @@ COLORREF GetPixel(int x,int y) const throw();
 ### Return Value  
  The red, green, blue (RGB) value of the pixel. If the pixel is outside of the current clipping region, the return value is **CLR_INVALID**.  
   
-##  <a name="cimage__getpixeladdress"></a>  CImage::GetPixelAddress  
+##  <a name="getpixeladdress"></a>  CImage::GetPixelAddress  
  Retrieves the exact address of a pixel.  
   
 ```
@@ -861,7 +861,7 @@ void* GetPixelAddress(int x,int y) throw();
 > [!NOTE]
 >  This method supports only DIB section bitmaps.  
   
-##  <a name="cimage__gettransparentcolor"></a>  CImage::GetTransparentColor  
+##  <a name="gettransparentcolor"></a>  CImage::GetTransparentColor  
  Retrieves the indexed location of the transparent color in the color palette.  
   
 ```
@@ -871,7 +871,7 @@ LONG GetTransparentColor() const throw();
 ### Return Value  
  The index of the transparent color.  
   
-##  <a name="cimage__getwidth"></a>  CImage::GetWidth  
+##  <a name="getwidth"></a>  CImage::GetWidth  
  Retrieves the width, in pixels, of an image.  
   
 ```
@@ -881,7 +881,7 @@ int GetWidth() const throw();
 ### Return Value  
  The width of the bitmap, in pixels.  
   
-##  <a name="cimage__isdibsection"></a>  CImage::IsDIBSection  
+##  <a name="isdibsection"></a>  CImage::IsDIBSection  
  Determines if the attached bitmap is a DIB section.  
   
 ```
@@ -894,21 +894,21 @@ bool IsDIBSection() const throw();
 ### Remarks  
  If the bitmap is not a DIB section, you cannot use the following `CImage` methods, which support only DIB section bitmaps:  
   
-- [GetBits](#cimage__getbits)  
+- [GetBits](#getbits)  
   
-- [GetColorTable](#cimage__getcolortable)  
+- [GetColorTable](#getcolortable)  
   
-- [GetMaxColorTableEntries](#cimage__getmaxcolortableentries)  
+- [GetMaxColorTableEntries](#getmaxcolortableentries)  
   
-- [GetPitch](#cimage__getpitch)  
+- [GetPitch](#getpitch)  
   
-- [GetPixelAddress](#cimage__getpixeladdress)  
+- [GetPixelAddress](#getpixeladdress)  
   
-- [IsIndexed](#cimage__isindexed)  
+- [IsIndexed](#isindexed)  
   
-- [SetColorTable](#cimage__setcolortable)  
+- [SetColorTable](#setcolortable)  
   
-##  <a name="cimage__isindexed"></a>  CImage::IsIndexed  
+##  <a name="isindexed"></a>  CImage::IsIndexed  
  Determines whether a bitmap's pixels are mapped to a color palette.  
   
 ```
@@ -924,7 +924,7 @@ bool IsIndexed() const throw();
 > [!NOTE]
 >  This method supports only DIB section bitmaps.  
   
-##  <a name="cimage__isnull"></a>  CImage::IsNull  
+##  <a name="isnull"></a>  CImage::IsNull  
  Determines if a bitmap is currently loaded.  
   
 ```
@@ -934,7 +934,7 @@ bool IsNull() const throw();
 ### Remarks  
  This method returns **True** if a bitmap is not currently loaded; otherwise **False**.  
   
-##  <a name="cimage__istransparencysupported"></a>  CImage::IsTransparencySupported  
+##  <a name="istransparencysupported"></a>  CImage::IsTransparencySupported  
  Indicates whether the application supports transparent bitmaps and was compiled for Windows 2000 or later.  
   
 ```
@@ -945,12 +945,12 @@ static BOOL IsTransparencySupported() throw();
  Nonzero if the current platform supports transparency. Otherwise 0.  
   
 ### Remarks  
- If the return value is nonzero, and transparency is supported, a call to [AlphaBlend](#cimage__alphablend), [TransparentBlt](#cimage__transparentblt), or [Draw](#cimage__draw) will handle transparent colors.  
+ If the return value is nonzero, and transparency is supported, a call to [AlphaBlend](#alphablend), [TransparentBlt](#transparentblt), or [Draw](#draw) will handle transparent colors.  
   
  If the application is compiled for use with operating systems before Windows 2000 or Windows 98, this method will always return 0, even on newer operating systems.  
   
 
-##  <a name="cimage__load"></a>  CImage::Load  
+##  <a name="load"></a>  CImage::Load  
  Loads an image.  
   
 ```
@@ -974,7 +974,7 @@ HRESULT Load(IStream* pStream) throw();
   
  Valid image types are BMP, GIF, JPEG, PNG, and TIFF.  
   
-##  <a name="cimage__loadfromresource"></a>  CImage::LoadFromResource  
+##  <a name="loadfromresource"></a>  CImage::LoadFromResource  
  Loads an image from a `BITMAP` resource.  
   
 ```
@@ -998,7 +998,7 @@ void LoadFromResource(HINSTANCE hInstance,
 ### Remarks  
  The resource must be of type `BITMAP`.  
   
-##  <a name="cimage__maskblt"></a>  CImage::MaskBlt  
+##  <a name="maskblt"></a>  CImage::MaskBlt  
  Combines the color data for the source and destination bitmaps using the specified mask and raster operation.  
   
 ```
@@ -1085,10 +1085,10 @@ BOOL MaskBlt(HDC hDestDC,
 ### Remarks  
  This method applies to Windows NT, versions 4.0 and later only.  
   
-##  <a name="cimage__operator_hbitmap"></a>  CImage::operator HBITMAP  
+##  <a name="operator_hbitmap"></a>  CImage::operator HBITMAP  
  Use this operator to get the attached Windows GDI handle of the `CImage` object. This operator is a casting operator, which supports direct use of an `HBITMAP` object.  
   
-##  <a name="cimage__plgblt"></a>  CImage::PlgBlt  
+##  <a name="plgblt"></a>  CImage::PlgBlt  
  Performs a bit-block transfer from a rectangle in a source device context into a parallelogram in a destination device context.  
   
 ```
@@ -1156,7 +1156,7 @@ BOOL PlgBlt(HDC hDestDC,
   
  This method applies to Windows NT, versions 4.0 and later only. See [PlgBlt](http://msdn.microsoft.com/library/windows/desktop/dd162804) in the [!INCLUDE[winSDK](./includes/winsdk_md.md)] for more detailed information.  
   
-##  <a name="cimage__releasedc"></a>  CImage::ReleaseDC  
+##  <a name="releasedc"></a>  CImage::ReleaseDC  
  Releases the device context.  
   
 ```
@@ -1164,9 +1164,9 @@ void ReleaseDC() const throw();
 ```  
   
 ### Remarks  
- Because only one bitmap can be selected into a device context at a time, you must call `ReleaseDC` for each call to [GetDC](#cimage__getdc).  
+ Because only one bitmap can be selected into a device context at a time, you must call `ReleaseDC` for each call to [GetDC](#getdc).  
   
-##  <a name="cimage__releasegdiplus"></a>  CImage::ReleaseGDIPlus  
+##  <a name="releasegdiplus"></a>  CImage::ReleaseGDIPlus  
  Releases resources used by GDI+.  
   
 ```
@@ -1174,9 +1174,9 @@ void ReleaseGDIPlus() throw();
 ```  
   
 ### Remarks  
- This method must be called to free resources allocated by a global `CImage` object. See [CImage::CImage](#cimage__cimage).  
+ This method must be called to free resources allocated by a global `CImage` object. See [CImage::CImage](#cimage).  
   
-##  <a name="cimage__save"></a>  CImage::Save  
+##  <a name="save"></a>  CImage::Save  
  Saves an image to the specified stream or file on disk.  
   
 ```
@@ -1214,7 +1214,7 @@ HRESULT Save(LPCTSTR pszFileName,
 ### Remarks  
  Call this function to save the image using a specified name and type. If the `guidFileType` parameter is not included, the file name's file extension will be used to determine the image format. If no extension is provided, the image will be saved in BMP format.  
   
-##  <a name="cimage__setcolortable"></a>  CImage::SetColorTable  
+##  <a name="setcolortable"></a>  CImage::SetColorTable  
  Sets the red, green, blue (RGB) color values for a range of entries in the palette of the DIB section.  
   
 ```
@@ -1236,7 +1236,7 @@ void SetColorTable(UINT iFirstColor,
 ### Remarks  
  This method supports only DIB section bitmaps.  
   
-##  <a name="cimage__setpixel"></a>  CImage::SetPixel  
+##  <a name="setpixel"></a>  CImage::SetPixel  
  Sets the color of a pixel at a given location in the bitmap.  
   
 ```
@@ -1258,7 +1258,7 @@ void SetPixel(int x,
 ### Remarks  
  This method fails if the pixel coordinates lie outside of the selected clipping region.  
   
-##  <a name="cimage__setpixelindexed"></a>  CImage::SetPixelIndexed  
+##  <a name="setpixelindexed"></a>  CImage::SetPixelIndexed  
  Sets the pixel color to the color located at `iIndex` in the color palette.  
   
 ```
@@ -1277,7 +1277,7 @@ void SetPixelIndexed(int x,
  `iIndex`  
  The index of a color in the color palette.  
   
-##  <a name="cimage__setpixelrgb"></a>  CImage::SetPixelRGB  
+##  <a name="setpixelrgb"></a>  CImage::SetPixelRGB  
  Sets the pixel at the locations specified by *x* and *y* to the colors indicated by *r*, *g*, and *b*, in a red, green, blue (RGB) image.  
   
 ```
@@ -1307,7 +1307,7 @@ void SetPixelRGB(int x,
 ### Remarks  
  The red, green, and blue parameters are each represented by a number between 0 and 255. If you set all three parameters to zero, the combined resulting color is black. If you set all three parameters to 255, the combined resulting color is white.  
   
-##  <a name="cimage__settransparentcolor"></a>  CImage::SetTransparentColor  
+##  <a name="settransparentcolor"></a>  CImage::SetTransparentColor  
  Sets a color at a given indexed location as transparent.  
   
 ```
@@ -1321,7 +1321,7 @@ LONG SetTransparentColor(LONG iTransparentColor) throw();
 ### Return Value  
  The index of the color previously set as transparent.  
   
-##  <a name="cimage__stretchblt"></a>  CImage::StretchBlt  
+##  <a name="stretchblt"></a>  CImage::StretchBlt  
  Copies a bitmap from the source device context to this current device context.  
   
 ```
@@ -1396,7 +1396,7 @@ BOOL StretchBlt(HDC hDestDC,
 ### Remarks  
  For more information, see [StretchBlt](http://msdn.microsoft.com/library/windows/desktop/dd145120) in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-##  <a name="cimage__transparentblt"></a>  CImage::TransparentBlt  
+##  <a name="transparentblt"></a>  CImage::TransparentBlt  
  Copies a bitmap from the source device context to this current device context.  
   
 ```
@@ -1469,7 +1469,7 @@ BOOL TransparentBlt(HDC hDestDC,
  **TRUE** if successful, otherwise **FALSE**.  
   
 ### Remarks  
- `TransparentBlt` is supported for source bitmaps of 4 bits per pixel and 8 bits per pixel. Use [CImage::AlphaBlend](#cimage__alphablend) to specify 32 bits-per-pixel bitmaps with transparency.  
+ `TransparentBlt` is supported for source bitmaps of 4 bits per pixel and 8 bits per pixel. Use [CImage::AlphaBlend](#alphablend) to specify 32 bits-per-pixel bitmaps with transparency.  
   
   
 ### Example  
@@ -1504,8 +1504,8 @@ BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage, int xDest, int yDest,
 
   
 ## See Also  
- [MMXSwarm Sample](../../top/visual-cpp-samples.md)   
- [SimpleImage Sample](../../top/visual-cpp-samples.md)   
+ [MMXSwarm Sample](../../visual-cpp-samples.md)   
+ [SimpleImage Sample](../../visual-cpp-samples.md)   
  [Device-Independent Bitmaps](http://msdn.microsoft.com/library/windows/desktop/dd183562)   
  [CreateDIBSection](http://msdn.microsoft.com/library/windows/desktop/dd183494)   
  [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)

@@ -54,20 +54,20 @@ class COleCmdUI : public CCmdUI
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleCmdUI::COleCmdUI](#colecmdui__colecmdui)|Constructs a `COleCmdUI` object.|  
+|[COleCmdUI::COleCmdUI](#colecmdui)|Constructs a `COleCmdUI` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleCmdUI::Enable](#colecmdui__enable)|Sets or clears the enable command flag.|  
-|[COleCmdUI::SetCheck](#colecmdui__setcheck)|Sets the state of an on/off toggle command.|  
-|[COleCmdUI::SetText](#colecmdui__settext)|Returns a text name or status string for a command.|  
+|[COleCmdUI::Enable](#enable)|Sets or clears the enable command flag.|  
+|[COleCmdUI::SetCheck](#setcheck)|Sets the state of an on/off toggle command.|  
+|[COleCmdUI::SetText](#settext)|Returns a text name or status string for a command.|  
   
 ## Remarks  
  In an application that is not enabled for DocObjects, when the user views a menu in the application, MFC processes **UPDATE_COMMAND_UI** notifcations. Each notification is given a [CCmdUI](../../mfc/reference/ccmdui-class.md) object that can be manipulated to reflect the state of a particular command. However, when your application is enabled for DocObjects, MFC processes **UPDATE_OLE_COMMAND_UI** notifications and assigns `COleCmdUI` objects.  
   
- `COleCmdUI` allows a DocObject to receive commands that originate in its container's user interface (such as FileNew, Open, Print, and so on), and allows a container to receive commands that originate in the DocObject's user interface. Although `IDispatch` could be used to dispatch the same commands, `IOleCommandTarget` provides a simpler way to query and execute because it relies on a standard set of commands, usually without arguments, and no type information is involved. `COleCmdUI` can be used to enable, update, and set other properties of DocObject user interface commands. When you want to invoke the command, call [COleServerDoc::OnExecOleCmd](../../mfc/reference/coleserverdoc-class.md#coleserverdoc__onexecolecmd).  
+ `COleCmdUI` allows a DocObject to receive commands that originate in its container's user interface (such as FileNew, Open, Print, and so on), and allows a container to receive commands that originate in the DocObject's user interface. Although `IDispatch` could be used to dispatch the same commands, `IOleCommandTarget` provides a simpler way to query and execute because it relies on a standard set of commands, usually without arguments, and no type information is involved. `COleCmdUI` can be used to enable, update, and set other properties of DocObject user interface commands. When you want to invoke the command, call [COleServerDoc::OnExecOleCmd](../../mfc/reference/coleserverdoc-class.md#onexecolecmd).  
   
  For further information on DocObjects, see [CDocObjectServer](../../mfc/reference/cdocobjectserver-class.md) and [CDocObjectServerItem](../../mfc/reference/cdocobjectserveritem-class.md). Also see [Internet First Steps: Active Documents](../../mfc/active-documents-on-the-internet.md) and [Active Documents](../../mfc/active-documents-on-the-internet.md).  
   
@@ -79,7 +79,7 @@ class COleCmdUI : public CCmdUI
 ## Requirements  
  **Header:** afxdocobj.h  
   
-##  <a name="colecmdui__colecmdui"></a>  COleCmdUI::COleCmdUI  
+##  <a name="colecmdui"></a>  COleCmdUI::COleCmdUI  
  Constructs a `COleCmdUI` object associated with a particular user-interface command.  
   
 ```  
@@ -102,7 +102,7 @@ COleCmdUI(
 ### Remarks  
  The `COleCmdUI` object provides a programmatic interface for updating DocObject user-interface objects such as menu items or control-bar buttons. The user-interface objects can be enabled, disabled, checked, and/or cleared through the `COleCmdUI` object.  
   
-##  <a name="colecmdui__enable"></a>  COleCmdUI::Enable  
+##  <a name="enable"></a>  COleCmdUI::Enable  
  Call this function to set the command flag of the `COleCmdUI` object to **OLECOMDF_ENABLED**, which tells the interface the command is available and enabled, or to clear the command flag.  
   
 ```  
@@ -113,7 +113,7 @@ virtual void Enable(BOOL bOn);
  `bOn`  
  Indicates whether the command associated with the `COleCmdUI` object should be enabled or disabled. Nonzero enables the command; 0 disables the command.  
   
-##  <a name="colecmdui__setcheck"></a>  COleCmdUI::SetCheck  
+##  <a name="setcheck"></a>  COleCmdUI::SetCheck  
  Call this function to set the state of an on/off toggle command.  
   
 ```  
@@ -130,7 +130,7 @@ virtual void SetCheck(int nCheck);
 |**2**|Sets the command to indeterminate; the state cannot be determined because the attribute of this command is in both on and off states in the relevant selection.|  
 |any other value|Sets the command to off.|  
   
-##  <a name="colecmdui__settext"></a>  COleCmdUI::SetText  
+##  <a name="settext"></a>  COleCmdUI::SetText  
  Call this function to return a text name or status string for a command.  
   
 ```  

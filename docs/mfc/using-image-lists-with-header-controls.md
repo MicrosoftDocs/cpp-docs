@@ -43,7 +43,7 @@ Header items have the ability to display an image within a header item. This ima
   
 1.  Construct a new image list (or use an existing image list object) using the [CImageList](../mfc/reference/cimagelist-class.md) constructor, storing the resultant pointer.  
   
-2.  Initialize the new image list object by calling [CImageList::Create](../mfc/reference/cimagelist-class.md#cimagelist__create). The following code is one example of this call.  
+2.  Initialize the new image list object by calling [CImageList::Create](../mfc/reference/cimagelist-class.md#create). The following code is one example of this call.  
   
      [!code-cpp[NVC_MFCControlLadenDialog#15](../mfc/codesnippet/cpp/using-image-lists-with-header-controls_1.cpp)]  
   
@@ -51,7 +51,7 @@ Header items have the ability to display an image within a header item. This ima
   
      [!code-cpp[NVC_MFCControlLadenDialog#16](../mfc/codesnippet/cpp/using-image-lists-with-header-controls_2.cpp)]  
   
-4.  Associate the image list with the header control with a call to [CHeaderCtrl::SetImageList](../mfc/reference/cheaderctrl-class.md#cheaderctrl__setimagelist).  
+4.  Associate the image list with the header control with a call to [CHeaderCtrl::SetImageList](../mfc/reference/cheaderctrl-class.md#setimagelist).  
   
 5.  Modify the header item to display an image from the associated image list. The following example assigns the first image, from `m_phdrImages`, to the first header item, `m_pHdrCtrl`.  
   

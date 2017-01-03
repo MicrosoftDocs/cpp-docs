@@ -52,9 +52,9 @@ The key advantage to using the MFC document/view architecture is that the archit
   
 -   [CView](../mfc/reference/cview-class.md)  
   
--   [CDocument::UpdateAllViews](../mfc/reference/cdocument-class.md#cdocument__updateallviews)  
+-   [CDocument::UpdateAllViews](../mfc/reference/cdocument-class.md#updateallviews)  
   
--   [CView::GetDocument](../mfc/reference/cview-class.md#cview__getdocument)  
+-   [CView::GetDocument](../mfc/reference/cview-class.md#getdocument)  
   
 ## See Also  
  [Document/View Architecture](../mfc/document-view-architecture.md)

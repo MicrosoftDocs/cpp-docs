@@ -49,7 +49,7 @@ class improper_scheduler_detach : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[improper_scheduler_detach::improper_scheduler_detach Constructor](#improper_scheduler_detach__improper_scheduler_detach_constructor)|Overloaded. Constructs an `improper_scheduler_detach` object.|  
+|[improper_scheduler_detach::improper_scheduler_detach Constructor](#ctor)|Overloaded. Constructs an `improper_scheduler_detach` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  
@@ -61,7 +61,7 @@ class improper_scheduler_detach : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="improper_scheduler_detach__improper_scheduler_detach_constructor"></a>  improper_scheduler_detach::improper_scheduler_detach Constructor  
+##  <a name="ctor"></a>  improper_scheduler_detach::improper_scheduler_detach Constructor  
  Constructs an `improper_scheduler_detach` object.  
   
 ```
@@ -75,5 +75,5 @@ improper_scheduler_detach() throw();
  A descriptive message of the error.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [Scheduler Class](../../../parallel/concrt/reference/scheduler-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [Scheduler Class](scheduler-class.md)

@@ -1,5 +1,5 @@
 ---
-title: "hash Structure (STL) | Microsoft Docs"
+title: "hash Structure (C++ Standard Library)| Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -32,7 +32,7 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# hash Structure (STL)
+# hash Structure (C++ Standard Library)
 Defines a member function that returns a value that's uniquely determined by `Val`. The member function defines a [hash](../standard-library/hash-class.md) function that's suitable for mapping values of type `thread::id` to a distribution of index values.  
   
 ## Syntax  

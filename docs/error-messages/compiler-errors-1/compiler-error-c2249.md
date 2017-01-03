@@ -60,7 +60,7 @@ int main() {
 ```  
   
 ## Example  
- C2249 can also occur if you try to assign a stream from the Standard C++ Library to another stream.  The following sample generates C2249.  
+ C2249 can also occur if you try to assign a stream from the C++ Standard Library to another stream.  The following sample generates C2249.  
   
 ```  
 // C2249_2.cpp  

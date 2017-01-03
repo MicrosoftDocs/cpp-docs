@@ -181,5 +181,3 @@ pAccount->Account::PrintBalance();   //  Explicit qualification.
   
  Both calls to `PrintBalance` in the preceding example suppress the virtual function-call mechanism.  
   
-## See Also  
- [Access to Virtual Functions](../misc/access-to-virtual-functions.md)

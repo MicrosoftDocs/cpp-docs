@@ -51,15 +51,15 @@ class CBitmapButton : public CButton
   
 |Name|Description|  
 |----------|-----------------|  
-|[CBitmapButton::CBitmapButton](#cbitmapbutton__cbitmapbutton)|Constructs a `CBitmapButton` object.|  
+|[CBitmapButton::CBitmapButton](#cbitmapbutton)|Constructs a `CBitmapButton` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CBitmapButton::AutoLoad](#cbitmapbutton__autoload)|Associates a button in a dialog box with an object of the `CBitmapButton` class, loads the bitmap(s) by name, and sizes the button to fit the bitmap.|  
-|[CBitmapButton::LoadBitmaps](#cbitmapbutton__loadbitmaps)|Initializes the object by loading one or more named bitmap resources from the application's resource file and attaching the bitmaps to the object.|  
-|[CBitmapButton::SizeToContent](#cbitmapbutton__sizetocontent)|Sizes the button to accommodate the bitmap.|  
+|[CBitmapButton::AutoLoad](#autoload)|Associates a button in a dialog box with an object of the `CBitmapButton` class, loads the bitmap(s) by name, and sizes the button to fit the bitmap.|  
+|[CBitmapButton::LoadBitmaps](#loadbitmaps)|Initializes the object by loading one or more named bitmap resources from the application's resource file and attaching the bitmaps to the object.|  
+|[CBitmapButton::SizeToContent](#sizetocontent)|Sizes the button to accommodate the bitmap.|  
   
 ## Remarks  
  `CBitmapButton` objects contain up to four bitmaps, which contain images for the different states a button can assume: up (or normal), down (or selected), focused, and disabled. Only the first bitmap is required; the others are optional.  
@@ -83,11 +83,11 @@ class CBitmapButton : public CButton
   
 1.  Create one to four bitmap images for the button.  
   
-2.  Construct the [CBitmapButton](#cbitmapbutton__cbitmapbutton) object.  
+2.  Construct the [CBitmapButton](#cbitmapbutton) object.  
   
-3.  Call the [Create](../../mfc/reference/cbutton-class.md#cbutton__create) function to create the Windows button control and attach it to the `CBitmapButton` object.  
+3.  Call the [Create](../../mfc/reference/cbutton-class.md#create) function to create the Windows button control and attach it to the `CBitmapButton` object.  
   
-4.  Call the [LoadBitmaps](#cbitmapbutton__loadbitmaps) member function to load the bitmap resources after the bitmap button is constructed.  
+4.  Call the [LoadBitmaps](#loadbitmaps) member function to load the bitmap resources after the bitmap button is constructed.  
   
 ### To include a bitmap-button control in a dialog box  
   
@@ -101,7 +101,7 @@ class CBitmapButton : public CButton
   
 5.  In your application's dialog class (derived from `CDialog`), add a `CBitmapButton` member object.  
   
-6.  In the `CDialog` object's [OnInitDialog](../../mfc/reference/cdialog-class.md#cdialog__oninitdialog) routine, call the `CBitmapButton` object's [AutoLoad](#cbitmapbutton__autoload) function, using as parameters the button's control ID and the `CDialog` object's **this** pointer.  
+6.  In the `CDialog` object's [OnInitDialog](../../mfc/reference/cdialog-class.md#oninitdialog) routine, call the `CBitmapButton` object's [AutoLoad](#autoload) function, using as parameters the button's control ID and the `CDialog` object's **this** pointer.  
   
  If you want to handle Windows notification messages, such as **BN_CLICKED**, sent by a bitmap-button control to its parent (usually a class derived from **CDialog)**, add to the `CDialog`-derived object a message-map entry and message-handler member function for each message. The notifications sent by a `CBitmapButton` object are the same as those sent by a [CButton](../../mfc/reference/cbutton-class.md) object.  
   
@@ -123,7 +123,7 @@ class CBitmapButton : public CButton
 ## Requirements  
  **Header:** afxext.h  
   
-##  <a name="cbitmapbutton__autoload"></a>  CBitmapButton::AutoLoad  
+##  <a name="autoload"></a>  CBitmapButton::AutoLoad  
  Associates a button in a dialog box with an object of the `CBitmapButton` class, loads the bitmap(s) by name, and sizes the button to fit the bitmap.  
   
 ```  
@@ -143,12 +143,12 @@ BOOL AutoLoad(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- Use the `AutoLoad` function to initialize an owner-draw button in a dialog box as a bitmap button. Instructions for using this function are in the remarks for the [CBitmapButton](../../mfc/reference/cbitmapbutton-class.md) class.  
+ Use the `AutoLoad` function to initialize an owner-draw button in a dialog box as a bitmap button. Instructions for using this function are in the remarks for the `CBitmapButton` class.  
   
 ### Example  
  [!code-cpp[NVC_MFCControlLadenDialog#75](../../mfc/codesnippet/cpp/cbitmapbutton-class_1.cpp)]  
   
-##  <a name="cbitmapbutton__cbitmapbutton"></a>  CBitmapButton::CBitmapButton  
+##  <a name="cbitmapbutton"></a>  CBitmapButton::CBitmapButton  
  Creates a `CBitmapButton` object.  
   
 ```  
@@ -156,12 +156,12 @@ CBitmapButton();
 ```  
   
 ### Remarks  
- After creating the C++ `CBitmapButton` object, call [CButton::Create](../../mfc/reference/cbutton-class.md#cbutton__create) to create the Windows button control and attach it to the `CBitmapButton` object.  
+ After creating the C++ `CBitmapButton` object, call [CButton::Create](../../mfc/reference/cbutton-class.md#create) to create the Windows button control and attach it to the `CBitmapButton` object.  
   
 ### Example  
  [!code-cpp[NVC_MFCControlLadenDialog#57](../../mfc/codesnippet/cpp/cbitmapbutton-class_2.cpp)]  
   
-##  <a name="cbitmapbutton__loadbitmaps"></a>  CBitmapButton::LoadBitmaps  
+##  <a name="loadbitmaps"></a>  CBitmapButton::LoadBitmaps  
  Use this function when you want to load bitmap images identified by their resource names or ID numbers, or when you cannot use the `AutoLoad` function because, for example, you are creating a bitmap button that is not part of a dialog box.  
   
 ```  
@@ -210,7 +210,7 @@ BOOL LoadBitmaps(
 ### Example  
  [!code-cpp[NVC_MFCControlLadenDialog#58](../../mfc/codesnippet/cpp/cbitmapbutton-class_3.cpp)]  
   
-##  <a name="cbitmapbutton__sizetocontent"></a>  CBitmapButton::SizeToContent  
+##  <a name="sizetocontent"></a>  CBitmapButton::SizeToContent  
  Call this function to resize a bitmap button to the size of the bitmap.  
   
 ```  
@@ -221,7 +221,7 @@ void SizeToContent();
  [!code-cpp[NVC_MFCControlLadenDialog#59](../../mfc/codesnippet/cpp/cbitmapbutton-class_4.cpp)]  
   
 ## See Also  
- [MFC Sample CTRLTEST](../../top/visual-cpp-samples.md)   
+ [MFC Sample CTRLTEST](../../visual-cpp-samples.md)   
  [CButton Class](../../mfc/reference/cbutton-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 

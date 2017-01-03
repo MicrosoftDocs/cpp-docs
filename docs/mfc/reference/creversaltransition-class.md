@@ -50,19 +50,19 @@ class CReversalTransition : public CBaseTransition;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CReversalTransition::CReversalTransition](#creversaltransition__creversaltransition)|Constructs a reversal transition object and initializes its duration.|  
+|[CReversalTransition::CReversalTransition](#creversaltransition)|Constructs a reversal transition object and initializes its duration.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CReversalTransition::Create](#creversaltransition__create)|Calls the transition library to create encapsulated transition COM object. (Overrides [CBaseTransition::Create](../../mfc/reference/cbasetransition-class.md#cbasetransition__create).)|  
+|[CReversalTransition::Create](#create)|Calls the transition library to create encapsulated transition COM object. (Overrides [CBaseTransition::Create](../../mfc/reference/cbasetransition-class.md#create).)|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CReversalTransition::m_duration](#creversaltransition__m_duration)|The duration of the transition.|  
+|[CReversalTransition::m_duration](#m_duration)|The duration of the transition.|  
   
 ## Remarks  
  A reversal transition smoothly changes direction over a given duration. The final value will be the same as the initial value and the final velocity will be the negative of the initial velocity. Because all transitions are cleared automatically, it's recommended to allocated them using operator new. The encapsulated IUIAnimationTransition COM object is created by CAnimationController::AnimateGroup, until then it's NULL. Changing member variables after creation of this COM object has no effect.  
@@ -77,7 +77,7 @@ class CReversalTransition : public CBaseTransition;
 ## Requirements  
  **Header:** afxanimationcontroller.h  
   
-##  <a name="creversaltransition__create"></a>  CReversalTransition::Create  
+##  <a name="create"></a>  CReversalTransition::Create  
  Calls the transition library to create encapsulated transition COM object.  
   
 ```  
@@ -93,7 +93,7 @@ virtual BOOL Create(
 ### Return Value  
  TRUE if transition is created successfully; otherwise FALSE.  
   
-##  <a name="creversaltransition__creversaltransition"></a>  CReversalTransition::CReversalTransition  
+##  <a name="creversaltransition"></a>  CReversalTransition::CReversalTransition  
  Constructs a reversal transition object and initializes its duration.  
   
 ```  
@@ -104,7 +104,7 @@ CReversalTransition(UI_ANIMATION_SECONDS duration);
  `duration`  
  The duration of the transition.  
   
-##  <a name="creversaltransition__m_duration"></a>  CReversalTransition::m_duration  
+##  <a name="m_duration"></a>  CReversalTransition::m_duration  
  The duration of the transition.  
   
 ```  

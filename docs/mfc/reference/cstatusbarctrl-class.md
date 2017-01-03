@@ -51,30 +51,30 @@ class CStatusBarCtrl : public CWnd
   
 |Name|Description|  
 |----------|-----------------|  
-|[CStatusBarCtrl::CStatusBarCtrl](#cstatusbarctrl__cstatusbarctrl)|Constructs a `CStatusBarCtrl` object.|  
+|[CStatusBarCtrl::CStatusBarCtrl](#cstatusbarctrl)|Constructs a `CStatusBarCtrl` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CStatusBarCtrl::Create](#cstatusbarctrl__create)|Creates a status bar control and attaches it to a `CStatusBarCtrl` object.|  
-|[CStatusBarCtrl::CreateEx](#cstatusbarctrl__createex)|Creates a status bar control with the specified Windows extended styles and attaches it to a `CStatusBarCtrl` object.|  
-|[CStatusBarCtrl::DrawItem](#cstatusbarctrl__drawitem)|Called when a visual aspect of an owner-draw status bar control changes.|  
-|[CStatusBarCtrl::GetBorders](#cstatusbarctrl__getborders)|Retrieves the current widths of the horizontal and vertical borders of a status bar control.|  
-|[CStatusBarCtrl::GetIcon](#cstatusbarctrl__geticon)|Retrieves the icon for a part (also known as a pane) in the current status bar control.|  
-|[CStatusBarCtrl::GetParts](#cstatusbarctrl__getparts)|Retrieves a count of the parts in a status bar control.|  
-|[CStatusBarCtrl::GetRect](#cstatusbarctrl__getrect)|Retrieves the bounding rectangle of a part in a status bar control.|  
-|[CStatusBarCtrl::GetText](#cstatusbarctrl__gettext)|Retrieves the text from the given part of a status bar control.|  
-|[CStatusBarCtrl::GetTextLength](#cstatusbarctrl__gettextlength)|Retrieve the length, in characters, of the text from the given part of a status bar control.|  
-|[CStatusBarCtrl::GetTipText](#cstatusbarctrl__gettiptext)|Retrieves the tooltip text for a pane in a status bar.|  
-|[CStatusBarCtrl::IsSimple](#cstatusbarctrl__issimple)|Checks a status window control to determine if it is in simple mode.|  
-|[CStatusBarCtrl::SetBkColor](#cstatusbarctrl__setbkcolor)|Sets the background color in a status bar.|  
-|[CStatusBarCtrl::SetIcon](#cstatusbarctrl__seticon)|Sets the icon for a pane in a status bar.|  
-|[CStatusBarCtrl::SetMinHeight](#cstatusbarctrl__setminheight)|Sets the minimum height of a status bar control's drawing area.|  
-|[CStatusBarCtrl::SetParts](#cstatusbarctrl__setparts)|Sets the number of parts in a status bar control and the coordinate of the right edge of each part.|  
-|[CStatusBarCtrl::SetSimple](#cstatusbarctrl__setsimple)|Specifies whether a status bar control displays simple text or displays all control parts set by a previous call to `SetParts`.|  
-|[CStatusBarCtrl::SetText](#cstatusbarctrl__settext)|Sets the text in the given part of a status bar control.|  
-|[CStatusBarCtrl::SetTipText](#cstatusbarctrl__settiptext)|Sets the tooltip text for a pane in a status bar.|  
+|[CStatusBarCtrl::Create](#create)|Creates a status bar control and attaches it to a `CStatusBarCtrl` object.|  
+|[CStatusBarCtrl::CreateEx](#createex)|Creates a status bar control with the specified Windows extended styles and attaches it to a `CStatusBarCtrl` object.|  
+|[CStatusBarCtrl::DrawItem](#drawitem)|Called when a visual aspect of an owner-draw status bar control changes.|  
+|[CStatusBarCtrl::GetBorders](#getborders)|Retrieves the current widths of the horizontal and vertical borders of a status bar control.|  
+|[CStatusBarCtrl::GetIcon](#geticon)|Retrieves the icon for a part (also known as a pane) in the current status bar control.|  
+|[CStatusBarCtrl::GetParts](#getparts)|Retrieves a count of the parts in a status bar control.|  
+|[CStatusBarCtrl::GetRect](#getrect)|Retrieves the bounding rectangle of a part in a status bar control.|  
+|[CStatusBarCtrl::GetText](#gettext)|Retrieves the text from the given part of a status bar control.|  
+|[CStatusBarCtrl::GetTextLength](#gettextlength)|Retrieve the length, in characters, of the text from the given part of a status bar control.|  
+|[CStatusBarCtrl::GetTipText](#gettiptext)|Retrieves the tooltip text for a pane in a status bar.|  
+|[CStatusBarCtrl::IsSimple](#issimple)|Checks a status window control to determine if it is in simple mode.|  
+|[CStatusBarCtrl::SetBkColor](#setbkcolor)|Sets the background color in a status bar.|  
+|[CStatusBarCtrl::SetIcon](#seticon)|Sets the icon for a pane in a status bar.|  
+|[CStatusBarCtrl::SetMinHeight](#setminheight)|Sets the minimum height of a status bar control's drawing area.|  
+|[CStatusBarCtrl::SetParts](#setparts)|Sets the number of parts in a status bar control and the coordinate of the right edge of each part.|  
+|[CStatusBarCtrl::SetSimple](#setsimple)|Specifies whether a status bar control displays simple text or displays all control parts set by a previous call to `SetParts`.|  
+|[CStatusBarCtrl::SetText](#settext)|Sets the text in the given part of a status bar control.|  
+|[CStatusBarCtrl::SetTipText](#settiptext)|Sets the tooltip text for a pane in a status bar.|  
   
 ## Remarks  
  A "status bar control" is a horizontal window, usually displayed at the bottom of a parent window, in which an application can display various kinds of status information. The status bar control can be divided into parts to display more than one type of information.  
@@ -95,7 +95,7 @@ class CStatusBarCtrl : public CWnd
 ## Requirements  
  **Header:** afxcmn.h  
   
-##  <a name="cstatusbarctrl__create"></a>  CStatusBarCtrl::Create  
+##  <a name="create"></a>  CStatusBarCtrl::Create  
  Creates a status bar control and attaches it to a `CStatusBarCtrl` object.  
   
 ```  
@@ -127,12 +127,12 @@ virtual BOOL Create(
   
  The default position of a status window is along the bottom of the parent window, but you can specify the `CCS_TOP` style to have it appear at the top of the parent window's client area. You can specify the **SBARS_SIZEGRIP** style to include a sizing grip at the right end of the status window. Combining the `CCS_TOP` and **SBARS_SIZEGRIP** styles is not recommended, because the resulting sizing grip is not functional even though the system draws it in the status window.  
   
- To create a status bar with extended window styles, call [CStatusBarCtrl::CreateEx](#cstatusbarctrl__createex) instead of **Create**.  
+ To create a status bar with extended window styles, call [CStatusBarCtrl::CreateEx](#createex) instead of **Create**.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#1](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_1.cpp)]  
   
-##  <a name="cstatusbarctrl__createex"></a>  CStatusBarCtrl::CreateEx  
+##  <a name="createex"></a>  CStatusBarCtrl::CreateEx  
  Creates a control (a child window) and associates it with the `CStatusBarCtrl` object.  
   
 ```  
@@ -164,16 +164,16 @@ virtual BOOL CreateEx(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- Use `CreateEx` instead of [Create](#cstatusbarctrl__create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
+ Use `CreateEx` instead of [Create](#create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
   
-##  <a name="cstatusbarctrl__cstatusbarctrl"></a>  CStatusBarCtrl::CStatusBarCtrl  
+##  <a name="cstatusbarctrl"></a>  CStatusBarCtrl::CStatusBarCtrl  
  Constructs a `CStatusBarCtrl` object.  
   
 ```  
 CStatusBarCtrl();
 ```  
   
-##  <a name="cstatusbarctrl__drawitem"></a>  CStatusBarCtrl::DrawItem  
+##  <a name="drawitem"></a>  CStatusBarCtrl::DrawItem  
  Called by the framework when a visual aspect of an owner-draw status bar control changes.  
   
 ```  
@@ -191,7 +191,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
   
  The application should restore all graphics device interface (GDI) objects selected for the display context supplied in `lpDrawItemStruct` before this member function terminates.  
   
-##  <a name="cstatusbarctrl__getborders"></a>  CStatusBarCtrl::GetBorders  
+##  <a name="getborders"></a>  CStatusBarCtrl::GetBorders  
  Retrieves the status bar control's current widths of the horizontal and vertical borders and of the space between rectangles.  
   
 ```  
@@ -230,7 +230,7 @@ BOOL GetBorders(
 ### Example  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#2](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_2.cpp)]  
   
-##  <a name="cstatusbarctrl__geticon"></a>  CStatusBarCtrl::GetIcon  
+##  <a name="geticon"></a>  CStatusBarCtrl::GetIcon  
  Retrieves the icon for a part (also known as a pane) in the current status bar control.  
   
 ```  
@@ -263,7 +263,7 @@ HICON GetIcon(int iPart) const;
   
  [!code-cpp[NVC_MFC_CStatusBarCtrl_s1#2](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_4.cpp)]  
   
-##  <a name="cstatusbarctrl__getparts"></a>  CStatusBarCtrl::GetParts  
+##  <a name="getparts"></a>  CStatusBarCtrl::GetParts  
  Retrieves a count of the parts in a status bar control.  
   
 ```  
@@ -290,7 +290,7 @@ int GetParts(
 ### Example  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#3](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_5.cpp)]  
   
-##  <a name="cstatusbarctrl__getrect"></a>  CStatusBarCtrl::GetRect  
+##  <a name="getrect"></a>  CStatusBarCtrl::GetRect  
  Retrieves the bounding rectangle of a part in a status bar control.  
   
 ```  
@@ -314,7 +314,7 @@ BOOL GetRect(
 ### Example  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#4](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_6.cpp)]  
   
-##  <a name="cstatusbarctrl__gettext"></a>  CStatusBarCtrl::GetText  
+##  <a name="gettext"></a>  CStatusBarCtrl::GetText  
  Retrieves the text from the given part of a status bar control.  
   
 ```  
@@ -356,7 +356,7 @@ int GetText(
 ### Example  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#5](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_7.cpp)]  
   
-##  <a name="cstatusbarctrl__gettextlength"></a>  CStatusBarCtrl::GetTextLength  
+##  <a name="gettextlength"></a>  CStatusBarCtrl::GetTextLength  
  Retrieves the length, in characters, of the text from the given part of a status bar control.  
   
 ```  
@@ -388,7 +388,7 @@ int GetTextLength(
 ### Example  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#6](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_8.cpp)]  
   
-##  <a name="cstatusbarctrl__gettiptext"></a>  CStatusBarCtrl::GetTipText  
+##  <a name="gettiptext"></a>  CStatusBarCtrl::GetTipText  
  Retrieves the tooltip text for a pane in a status bar.  
   
 ```  
@@ -410,7 +410,7 @@ CString GetTipText(int nPane) const;
 ### Example  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#7](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_9.cpp)]  
   
-##  <a name="cstatusbarctrl__issimple"></a>  CStatusBarCtrl::IsSimple  
+##  <a name="issimple"></a>  CStatusBarCtrl::IsSimple  
  Checks a status window control to determine if it is in simple mode.  
   
 ```  
@@ -425,7 +425,7 @@ BOOL IsSimple() const;
 ### Remarks  
  This member function implements the behavior of the Win32 message [SB_ISSIMPLE](http://msdn.microsoft.com/library/windows/desktop/bb760753), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="cstatusbarctrl__setbkcolor"></a>  CStatusBarCtrl::SetBkColor  
+##  <a name="setbkcolor"></a>  CStatusBarCtrl::SetBkColor  
  Sets the background color in a status bar.  
   
 ```  
@@ -445,7 +445,7 @@ COLORREF SetBkColor(COLORREF cr);
 ### Example  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#8](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_10.cpp)]  
   
-##  <a name="cstatusbarctrl__seticon"></a>  CStatusBarCtrl::SetIcon  
+##  <a name="seticon"></a>  CStatusBarCtrl::SetIcon  
  Sets the icon for a pane in a status bar.  
   
 ```  
@@ -468,9 +468,9 @@ BOOL SetIcon(
  This member function implements the behavior of the Win32 message [SB_SETICON](http://msdn.microsoft.com/library/windows/desktop/bb760755), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
-  See the example for [CStatusBarCtrl::SetBkColor](#cstatusbarctrl__setbkcolor).  
+  See the example for [CStatusBarCtrl::SetBkColor](#setbkcolor).  
   
-##  <a name="cstatusbarctrl__setminheight"></a>  CStatusBarCtrl::SetMinHeight  
+##  <a name="setminheight"></a>  CStatusBarCtrl::SetMinHeight  
  Sets the minimum height of a status bar control's drawing area.  
   
 ```  
@@ -487,7 +487,7 @@ void SetMinHeight(int nMin);
 ### Example  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#9](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_11.cpp)]  
   
-##  <a name="cstatusbarctrl__setparts"></a>  CStatusBarCtrl::SetParts  
+##  <a name="setparts"></a>  CStatusBarCtrl::SetParts  
  Sets the number of parts in a status bar control and the coordinate of the right edge of each part.  
   
 ```  
@@ -509,8 +509,8 @@ BOOL SetParts(
 ### Example  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#10](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_12.cpp)]  
   
-##  <a name="cstatusbarctrl__setsimple"></a>  CStatusBarCtrl::SetSimple  
- Specifies whether a status bar control displays simple text or displays all control parts set by a previous call to [SetParts](#cstatusbarctrl__setparts).  
+##  <a name="setsimple"></a>  CStatusBarCtrl::SetSimple  
+ Specifies whether a status bar control displays simple text or displays all control parts set by a previous call to [SetParts](#setparts).  
   
 ```  
 BOOL SetSimple(BOOL bSimple = TRUE);
@@ -526,7 +526,7 @@ BOOL SetSimple(BOOL bSimple = TRUE);
 ### Remarks  
  If your application changes the status bar control from non-simple to simple, or vice versa, the system immediately redraws the control.  
   
-##  <a name="cstatusbarctrl__settext"></a>  CStatusBarCtrl::SetText  
+##  <a name="settext"></a>  CStatusBarCtrl::SetText  
  Sets the text in the given part of a status bar control.  
   
 ```  
@@ -555,7 +555,7 @@ BOOL SetText(
 ### Example  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#11](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_13.cpp)]  
   
-##  <a name="cstatusbarctrl__settiptext"></a>  CStatusBarCtrl::SetTipText  
+##  <a name="settiptext"></a>  CStatusBarCtrl::SetTipText  
  Sets the tooltip text for a pane in a status bar.  
   
 ```  

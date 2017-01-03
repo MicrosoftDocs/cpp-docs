@@ -52,13 +52,13 @@ class CClientDC : public CDC
   
 |Name|Description|  
 |----------|-----------------|  
-|[CClientDC::CClientDC](#cclientdc__cclientdc)|Constructs a `CClientDC` object connected to the `CWnd`.|  
+|[CClientDC::CClientDC](#cclientdc)|Constructs a `CClientDC` object connected to the `CWnd`.|  
   
 ### Protected Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CClientDC::m_hWnd](#cclientdc__m_hwnd)|The `HWND` of the window for which this `CClientDC` is valid.|  
+|[CClientDC::m_hWnd](#m_hwnd)|The `HWND` of the window for which this `CClientDC` is valid.|  
   
 ## Remarks  
  This means that the device context associated with a `CClientDC` object is the client area of a window.  
@@ -75,7 +75,7 @@ class CClientDC : public CDC
 ## Requirements  
  **Header:** afxwin.h  
   
-##  <a name="cclientdc__cclientdc"></a>  CClientDC::CClientDC  
+##  <a name="cclientdc"></a>  CClientDC::CClientDC  
  Constructs a `CClientDC` object that accesses the client area of the [CWnd](../../mfc/reference/cwnd-class.md) pointed to by `pWnd`.  
   
 ```  
@@ -94,7 +94,7 @@ explicit CClientDC(CWnd* pWnd);
 ### Example  
  [!code-cpp[NVC_MFCDocView#42](../../mfc/codesnippet/cpp/cclientdc-class_1.cpp)]  
   
-##  <a name="cclientdc__m_hwnd"></a>  CClientDC::m_hWnd  
+##  <a name="m_hwnd"></a>  CClientDC::m_hWnd  
  The `HWND` of the `CWnd` pointer used to construct the `CClientDC` object.  
   
 ```  
@@ -105,10 +105,10 @@ HWND m_hWnd;
  `m_hWnd` is a protected variable.  
   
 ### Example  
-  See the example for [CClientDC::CClientDC](#cclientdc__cclientdc).  
+  See the example for [CClientDC::CClientDC](#cclientdc).  
   
 ## See Also  
- [MFC Sample MDI](../../top/visual-cpp-samples.md)   
+ [MFC Sample MDI](../../visual-cpp-samples.md)   
  [CDC Class](../../mfc/reference/cdc-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CDC Class](../../mfc/reference/cdc-class.md)

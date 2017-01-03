@@ -52,35 +52,35 @@ class CObArray : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CObArray::CObArray](#cobarray__cobarray)|Constructs an empty array for `CObject` pointers.|  
+|[CObArray::CObArray](#cobarray)|Constructs an empty array for `CObject` pointers.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CObArray::Add](#cobarray__add)|Adds an element to the end of the array; grows the array if necessary.|  
-|[CObArray::Append](#cobarray__append)|Appends another array to the array; grows the array if necessary.|  
-|[CObArray::Copy](#cobarray__copy)|Copies another array to the array; grows the array if necessary.|  
-|[CObArray::ElementAt](#cobarray__elementat)|Returns a temporary reference to the element pointer within the array.|  
-|[CObArray::FreeExtra](#cobarray__freeextra)|Frees all unused memory above the current upper bound.|  
-|[CObArray::GetAt](#cobarray__getat)|Returns the value at a given index.|  
-|[CObArray::GetCount](#cobarray__getcount)|Gets the number of elements in this array.|  
-|[CObArray::GetData](#cobarray__getdata)|Allows access to elements in the array. Can be **NULL**.|  
-|[CObArray::GetSize](#cobarray__getsize)|Gets the number of elements in this array.|  
-|[CObArray::GetUpperBound](#cobarray__getupperbound)|Returns the largest valid index.|  
-|[CObArray::InsertAt](#cobarray__insertat)|Inserts an element (or all the elements in another array) at a specified index.|  
-|[CObArray::IsEmpty](#cobarray__isempty)|Determines if the array is empty.|  
-|[CObArray::RemoveAll](#cobarray__removeall)|Removes all the elements from this array.|  
-|[CObArray::RemoveAt](#cobarray__removeat)|Removes an element at a specific index.|  
-|[CObArray::SetAt](#cobarray__setat)|Sets the value for a given index; array not allowed to grow.|  
-|[CObArray::SetAtGrow](#cobarray__setatgrow)|Sets the value for a given index; grows the array if necessary.|  
-|[CObArray::SetSize](#cobarray__setsize)|Sets the number of elements to be contained in this array.|  
+|[CObArray::Add](#add)|Adds an element to the end of the array; grows the array if necessary.|  
+|[CObArray::Append](#append)|Appends another array to the array; grows the array if necessary.|  
+|[CObArray::Copy](#copy)|Copies another array to the array; grows the array if necessary.|  
+|[CObArray::ElementAt](#elementat)|Returns a temporary reference to the element pointer within the array.|  
+|[CObArray::FreeExtra](#freeextra)|Frees all unused memory above the current upper bound.|  
+|[CObArray::GetAt](#getat)|Returns the value at a given index.|  
+|[CObArray::GetCount](#getcount)|Gets the number of elements in this array.|  
+|[CObArray::GetData](#getdata)|Allows access to elements in the array. Can be **NULL**.|  
+|[CObArray::GetSize](#getsize)|Gets the number of elements in this array.|  
+|[CObArray::GetUpperBound](#getupperbound)|Returns the largest valid index.|  
+|[CObArray::InsertAt](#insertat)|Inserts an element (or all the elements in another array) at a specified index.|  
+|[CObArray::IsEmpty](#isempty)|Determines if the array is empty.|  
+|[CObArray::RemoveAll](#removeall)|Removes all the elements from this array.|  
+|[CObArray::RemoveAt](#removeat)|Removes an element at a specific index.|  
+|[CObArray::SetAt](#setat)|Sets the value for a given index; array not allowed to grow.|  
+|[CObArray::SetAtGrow](#setatgrow)|Sets the value for a given index; grows the array if necessary.|  
+|[CObArray::SetSize](#setsize)|Sets the number of elements to be contained in this array.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CObArray::operator [ ]](#cobarray__operator_at)|Sets or gets the element at the specified index.|  
+|[CObArray::operator [ ]](#operator_at)|Sets or gets the element at the specified index.|  
   
 ## Remarks  
  These object arrays are similar to C arrays, but they can dynamically shrink and grow as necessary.  
@@ -113,7 +113,7 @@ class CObArray : public CObject
 ## Requirements  
  **Header:** afxcoll.h  
   
-##  <a name="cobarray__add"></a>  CObArray::Add  
+##  <a name="add"></a>  CObArray::Add  
  Adds a new element to the end of an array, growing the array by 1.  
   
 ```  
@@ -128,7 +128,7 @@ INT_PTR Add(CObject* newElement);
  The index of the added element.  
   
 ### Remarks  
- If [SetSize](#cobarray__setsize) has been used with an `nGrowBy` value greater than 1, then extra memory may be allocated. However, the upper bound will increase by only 1.  
+ If [SetSize](#setsize) has been used with an `nGrowBy` value greater than 1, then extra memory may be allocated. However, the upper bound will increase by only 1.  
   
  The following table shows other member functions that are similar to `CObArray::Add`.  
   
@@ -142,7 +142,7 @@ INT_PTR Add(CObject* newElement);
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**INT_PTR Add( WORD** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|  
   
 ### Example  
-  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
+  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listing of the `CAge` class used in all collection examples.  
   
  [!code-cpp[NVC_MFCCollections#75](../../mfc/codesnippet/cpp/cobarray-class_1.cpp)]  
   
@@ -154,7 +154,7 @@ INT_PTR Add(CObject* newElement);
   
  `[1] = a CAge at $4468 40`  
   
-##  <a name="cobarray__append"></a>  CObArray::Append  
+##  <a name="append"></a>  CObArray::Append  
  Call this member function to add the contents of another array to the end of the given array.  
   
 ```  
@@ -185,11 +185,11 @@ INT_PTR Append(const CObArray& src);
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**INT_PTR Append( const CWordArray&** *src* **);**|  
   
 ### Example  
- See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
+ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listing of the `CAge` class used in all collection examples.  
   
  [!code-cpp[NVC_MFCCollections#76](../../mfc/codesnippet/cpp/cobarray-class_2.cpp)]  
   
-##  <a name="cobarray__copy"></a>  CObArray::Copy  
+##  <a name="copy"></a>  CObArray::Copy  
  Call this member function to overwrite the elements of the given array with the elements of another array of the same type.  
   
 ```  
@@ -215,11 +215,11 @@ void Copy(const CObArray& src);
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**void Copy( const CWordArray&** *src* **);**|  
   
 ### Example  
- See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
+ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listing of the `CAge` class used in all collection examples.  
   
  [!code-cpp[NVC_MFCCollections#77](../../mfc/codesnippet/cpp/cobarray-class_3.cpp)]  
   
-##  <a name="cobarray__cobarray"></a>  CObArray::CObArray  
+##  <a name="cobarray"></a>  CObArray::CObArray  
  Constructs an empty `CObject` pointer array.  
   
 ```  
@@ -243,7 +243,7 @@ CObArray();
 ### Example  
  [!code-cpp[NVC_MFCCollections#78](../../mfc/codesnippet/cpp/cobarray-class_4.cpp)]  
   
-##  <a name="cobarray__elementat"></a>  CObArray::ElementAt  
+##  <a name="elementat"></a>  CObArray::ElementAt  
  Returns a temporary reference to the element pointer within the array.  
   
 ```  
@@ -272,9 +272,9 @@ CObject*& ElementAt(INT_PTR nIndex);
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**WORD& ElementAt( INT_PTR** `nIndex` **);**|  
   
 ### Example  
-  See the example for [CObArray::GetSize](#cobarray__getsize).  
+  See the example for [CObArray::GetSize](#getsize).  
   
-##  <a name="cobarray__freeextra"></a>  CObArray::FreeExtra  
+##  <a name="freeextra"></a>  CObArray::FreeExtra  
  Frees any extra memory that was allocated while the array was grown.  
   
 ```  
@@ -296,9 +296,9 @@ void FreeExtra();
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**void FreeExtra( );**|  
   
 ### Example  
-  See the example for [CObArray::GetData](#cobarray__getdata).  
+  See the example for [CObArray::GetData](#getdata).  
   
-##  <a name="cobarray__getat"></a>  CObArray::GetAt  
+##  <a name="getat"></a>  CObArray::GetAt  
  Returns the array element at the specified index.  
   
 ```  
@@ -331,11 +331,11 @@ CObject* GetAt(INT_PTR nIndex) const;
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**WORD GetAt( INT_PTR** `nIndex` **) const;**|  
   
 ### Example  
- See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
+ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listing of the `CAge` class used in all collection examples.  
   
  [!code-cpp[NVC_MFCCollections#79](../../mfc/codesnippet/cpp/cobarray-class_5.cpp)]  
   
-##  <a name="cobarray__getcount"></a>  CObArray::GetCount  
+##  <a name="getcount"></a>  CObArray::GetCount  
  Returns the number of array elements.  
   
 ```  
@@ -362,11 +362,11 @@ INT_PTR GetCount() const;
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**INT_PTR GetCount( ) const;**|  
   
 ### Example  
- See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
+ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listing of the `CAge` class used in all collection examples.  
   
  [!code-cpp[NVC_MFCCollections#80](../../mfc/codesnippet/cpp/cobarray-class_6.cpp)]  
   
-##  <a name="cobarray__getdata"></a>  CObArray::GetData  
+##  <a name="getdata"></a>  CObArray::GetData  
  Use this member function to gain direct access to the elements in the array.  
   
 ```  
@@ -397,11 +397,11 @@ const CObject** GetData() const;
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**const WORD\* GetData( ) const;WORD\* GetData( );**|  
   
 ### Example  
- See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
+ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listing of the `CAge` class used in all collection examples.  
   
  [!code-cpp[NVC_MFCCollections#81](../../mfc/codesnippet/cpp/cobarray-class_7.cpp)]  
   
-##  <a name="cobarray__getsize"></a>  CObArray::GetSize  
+##  <a name="getsize"></a>  CObArray::GetSize  
  Returns the size of the array.  
   
 ```  
@@ -425,11 +425,11 @@ INT_PTR GetSize() const;
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**INT_PTR GetSize( ) const;**|  
   
 ### Example  
- See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
+ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listing of the `CAge` class used in all collection examples.  
   
  [!code-cpp[NVC_MFCCollections#82](../../mfc/codesnippet/cpp/cobarray-class_8.cpp)]  
   
-##  <a name="cobarray__getupperbound"></a>  CObArray::GetUpperBound  
+##  <a name="getupperbound"></a>  CObArray::GetUpperBound  
  Returns the current upper bound of this array.  
   
 ```  
@@ -458,11 +458,11 @@ INT_PTR GetUpperBound() const;
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**INT_PTR GetUpperBound( ) const;**|  
   
 ### Example  
- See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
+ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listing of the `CAge` class used in all collection examples.  
   
  [!code-cpp[NVC_MFCCollections#83](../../mfc/codesnippet/cpp/cobarray-class_9.cpp)]  
   
-##  <a name="cobarray__insertat"></a>  CObArray::InsertAt  
+##  <a name="insertat"></a>  CObArray::InsertAt  
  Inserts an element (or all the elements in another array) at a specified index.  
   
 ```  
@@ -512,7 +512,7 @@ void InsertAt(
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**void InsertAt( INT_PTR** `nIndex` **, WORD** `newElement` **, int** `nCount` **= 1 );**<br /><br /> **throw( CMemoryException\* );**<br /><br /> **void InsertAt( INT_PTR** `nStartIndex` **, CWordArray\*** `pNewArray` **);**<br /><br /> **throw( CMemoryException\* );**|  
   
 ### Example  
-  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
+  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listing of the `CAge` class used in all collection examples.  
   
  [!code-cpp[NVC_MFCCollections#84](../../mfc/codesnippet/cpp/cobarray-class_10.cpp)]  
   
@@ -526,7 +526,7 @@ void InsertAt(
   
  `[2] = a CAge at $4606 40`  
   
-##  <a name="cobarray__isempty"></a>  CObArray::IsEmpty  
+##  <a name="isempty"></a>  CObArray::IsEmpty  
  Determines if the array is empty.  
   
 ```  
@@ -538,7 +538,7 @@ BOOL IsEmpty() const;
 ### Return Value  
  Nonzero if the array is empty; otherwise 0.  
   
-##  <a name="cobarray__operator_at"></a>  CObArray::operator [ ]  
+##  <a name="operator_at"></a>  CObArray::operator [ ]  
  These subscript operators are a convenient substitute for the `SetAt` and `GetAt` functions.  
   
 ```  
@@ -567,11 +567,11 @@ CObject* operator[](int_ptr nindex) const;
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**WORD& operator [](int_ptr** `nindex` **\);**<br /><br /> **WORD operator [](int_ptr** `nindex` **\) const;**|  
   
 ### Example  
- See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
+ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listing of the `CAge` class used in all collection examples.  
   
  [!code-cpp[NVC_MFCCollections#88](../../mfc/codesnippet/cpp/cobarray-class_11.cpp)]  
   
-##  <a name="cobarray__removeall"></a>  CObArray::RemoveAll  
+##  <a name="removeall"></a>  CObArray::RemoveAll  
  Removes all the pointers from this array but does not actually delete the `CObject` objects.  
   
 ```  
@@ -595,11 +595,11 @@ void RemoveAll();
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**void RemoveAll( );**|  
   
 ### Example  
- See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
+ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listing of the `CAge` class used in all collection examples.  
   
  [!code-cpp[NVC_MFCCollections#85](../../mfc/codesnippet/cpp/cobarray-class_12.cpp)]  
   
-##  <a name="cobarray__removeat"></a>  CObArray::RemoveAt  
+##  <a name="removeat"></a>  CObArray::RemoveAt  
  Removes one or more elements starting at a specified index in an array.  
   
 ```  
@@ -634,7 +634,7 @@ void RemoveAt(
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**void RemoveAt( INT_PTR** `nIndex` **, INT_PTR** *nCount* **= 1 );**|  
   
 ### Example  
-  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
+  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listing of the `CAge` class used in all collection examples.  
   
  [!code-cpp[NVC_MFCCollections#112](../../mfc/codesnippet/cpp/cobarray-class_13.cpp)]  
   
@@ -644,7 +644,7 @@ void RemoveAt(
   
  `[0] = a CAge at $4606 40`  
   
-##  <a name="cobarray__setat"></a>  CObArray::SetAt  
+##  <a name="setat"></a>  CObArray::SetAt  
  Sets the array element at the specified index.  
   
 ```  
@@ -677,7 +677,7 @@ void SetAt(
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**void SetAt( INT_PTR** `nIndex` **, WORD** `newElement` **);**|  
   
 ### Example  
-  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
+  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listing of the `CAge` class used in all collection examples.  
   
  [!code-cpp[NVC_MFCCollections#86](../../mfc/codesnippet/cpp/cobarray-class_14.cpp)]  
   
@@ -689,7 +689,7 @@ void SetAt(
   
  `[1] = a CAge at $47A0 40`  
   
-##  <a name="cobarray__setatgrow"></a>  CObArray::SetAtGrow  
+##  <a name="setatgrow"></a>  CObArray::SetAtGrow  
  Sets the array element at the specified index.  
   
 ```  
@@ -720,7 +720,7 @@ void SetAtGrow(
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**void SetAtGrow( INT_PTR** `nIndex` **, WORD** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|  
   
 ### Example  
-  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist) for a listing of the `CAge` class used in all collection examples.  
+  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listing of the `CAge` class used in all collection examples.  
   
  [!code-cpp[NVC_MFCCollections#87](../../mfc/codesnippet/cpp/cobarray-class_15.cpp)]  
   
@@ -736,7 +736,7 @@ void SetAtGrow(
   
  `[3] = a CAge at $4840 65`  
   
-##  <a name="cobarray__setsize"></a>  CObArray::SetSize  
+##  <a name="setsize"></a>  CObArray::SetSize  
  Establishes the size of an empty or existing array; allocates memory if necessary.  
   
 ```  
@@ -771,7 +771,7 @@ void SetSize(
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**void SetSize( INT_PTR** `nNewSize` **, int** `nGrowBy` **= -1 );**<br /><br /> **throw( CMemoryException\* );**|  
   
 ### Example  
-  See the example for [CObArray::GetData](#cobarray__getdata).  
+  See the example for [CObArray::GetData](#getdata).  
   
 ## See Also  
  [CObject Class](../../mfc/reference/cobject-class.md)   

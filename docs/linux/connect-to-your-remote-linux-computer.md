@@ -30,7 +30,7 @@ translation.priority.ht:
 
 # Connect to Your Remote Linux Computer
 
-When building, Linux code is copied to your remote Linux computer and then compiled on that system according to the settings selected in Visual Studio.  To setup this remote connection, do one of the following:
+When building, Linux code is copied to your remote Linux computer and then compiled on that system according to the settings chosen in Visual Studio.  To setup this remote connection:
 
 1. Build the project for the first time or manually create a new entry by selecting **Tools > Options** and then open the **Cross Platform > Connection Manager** node and click the **Add** button.
 
@@ -44,13 +44,13 @@ When building, Linux code is copied to your remote Linux computer and then compi
 
    | Entry | Description
    | ----- | ---
-   | **Host Name**           | the name or IP address of your target device
-   | **Port**                | the port that the SSH service is running on, typically 22
-   | **User name**           | the user to authenticate as
-   | **Authentication type** | the Password or Private Key are both supported
-   | **Password**            | the password for the entered user name
-   | **Private key file**    | the private key created for ssh connection
-   | **Passphrase**          | the passphrase used with private key selected above
+   | **Host Name**           | Name or IP address of your target device
+   | **Port**                | Port that the SSH service is running on, typically 22
+   | **User name**           | User to authenticate as
+   | **Authentication type** | Password or Private Key are both supported
+   | **Password**            | Password for the entered user name
+   | **Private key file**    | Private key created for ssh connection
+   | **Passphrase**          | Passphrase used with private key selected above
 
 1. Click the **Connect** button to attempt a connection to the remote computer.  If the connection fails, the entry boxes which need to be changed will be outlined in red.
 

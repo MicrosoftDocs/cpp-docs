@@ -49,15 +49,15 @@ class CHtmlEditView : public CHtmlView, public CHtmlEditCtrlBase<CHtmlEditView>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHtmlEditView::CHtmlEditView](#chtmleditview__chtmleditview)|Constructs a `CHtmlEditView` object.|  
+|[CHtmlEditView::CHtmlEditView](#chtmleditview)|Constructs a `CHtmlEditView` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHtmlEditView::Create](#chtmleditview__create)|Creates a new window object.|  
-|[CHtmlEditView::GetDHtmlDocument](#chtmleditview__getdhtmldocument)|Returns the **IHTMLDocument2** interface on the current document.|  
-|[CHtmlEditView::GetStartDocument](#chtmleditview__getstartdocument)|Retrieves the name of the default document for this view.|  
+|[CHtmlEditView::Create](#create)|Creates a new window object.|  
+|[CHtmlEditView::GetDHtmlDocument](#getdhtmldocument)|Returns the **IHTMLDocument2** interface on the current document.|  
+|[CHtmlEditView::GetStartDocument](#getstartdocument)|Retrieves the name of the default document for this view.|  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -81,14 +81,14 @@ class CHtmlEditView : public CHtmlView, public CHtmlEditCtrlBase<CHtmlEditView>
 ## Requirements  
  **Header:** afxhtml.h  
   
-##  <a name="chtmleditview__chtmleditview"></a>  CHtmlEditView::CHtmlEditView  
+##  <a name="chtmleditview"></a>  CHtmlEditView::CHtmlEditView  
  Constructs a `CHtmlEditView` object.  
   
 ```  
 CHtmlEditView();
 ```  
   
-##  <a name="chtmleditview__create"></a>  CHtmlEditView::Create  
+##  <a name="create"></a>  CHtmlEditView::Create  
  Creates a new window object.  
   
 ```  
@@ -125,9 +125,9 @@ virtual BOOL Create(
  A pointer to a [CCreateContext](../../mfc/reference/ccreatecontext-structure.md). **NULL** by default.  
   
 ### Remarks  
- This method will also call the contained WebBrowser's **Navigate** method to load a default document (see [CHtmlEditView::GetStartDocument](#chtmleditview__getstartdocument)).  
+ This method will also call the contained WebBrowser's **Navigate** method to load a default document (see [CHtmlEditView::GetStartDocument](#getstartdocument)).  
   
-##  <a name="chtmleditview__getdhtmldocument"></a>  CHtmlEditView::GetDHtmlDocument  
+##  <a name="getdhtmldocument"></a>  CHtmlEditView::GetDHtmlDocument  
  Returns the **IHTMLDocument2** interface on the current document.  
   
 ```  
@@ -140,7 +140,7 @@ BOOL GetDHtmlDocument(IHTMLDocument2** ppDocument) const;
  `ppDocument`  
  The [IHTMLDocument2](https://msdn.microsoft.com/library/aa752574.aspx) interface.  
   
-##  <a name="chtmleditview__getstartdocument"></a>  CHtmlEditView::GetStartDocument  
+##  <a name="getstartdocument"></a>  CHtmlEditView::GetStartDocument  
  Retrieves the name of the default document for this view.  
   
 ```  
@@ -148,7 +148,7 @@ virtual LPCTSTR GetStartDocument();
 ```  
   
 ## See Also  
- [HTMLEdit Sample](../../top/visual-cpp-samples.md)   
+ [HTMLEdit Sample](../../visual-cpp-samples.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 
 

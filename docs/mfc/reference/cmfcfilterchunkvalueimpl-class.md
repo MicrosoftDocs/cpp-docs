@@ -50,37 +50,37 @@ class CMFCFilterChunkValueImpl : public ATL::IFilterChunkValue;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCFilterChunkValueImpl::~CMFCFilterChunkValueImpl](#cmfcfilterchunkvalueimpl___dtorcmfcfilterchunkvalueimpl)|Destructs the object.|  
-|[CMFCFilterChunkValueImpl::CMFCFilterChunkValueImpl](#cmfcfilterchunkvalueimpl__cmfcfilterchunkvalueimpl)|Constructs the object.|  
+|[CMFCFilterChunkValueImpl::~CMFCFilterChunkValueImpl](#_dtorcmfcfilterchunkvalueimpl)|Destructs the object.|  
+|[CMFCFilterChunkValueImpl::CMFCFilterChunkValueImpl](#cmfcfilterchunkvalueimpl)|Constructs the object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCFilterChunkValueImpl::Clear](#cmfcfilterchunkvalueimpl__clear)|Clears the ChunkValue.|  
-|[CMFCFilterChunkValueImpl::CopyChunk](#cmfcfilterchunkvalueimpl__copychunk)|Copies this chunk to a structure describing the characteristics of a chunk.|  
-|[CMFCFilterChunkValueImpl::CopyFrom](#cmfcfilterchunkvalueimpl__copyfrom)|Initializes this chunk value from the other value.|  
-|[CMFCFilterChunkValueImpl::GetChunkGUID](#cmfcfilterchunkvalueimpl__getchunkguid)|Retrieves the chunk GUID.|  
-|[CMFCFilterChunkValueImpl::GetChunkPID](#cmfcfilterchunkvalueimpl__getchunkpid)|Retrieves the chunk PID (property ID).|  
-|[CMFCFilterChunkValueImpl::GetChunkType](#cmfcfilterchunkvalueimpl__getchunktype)|Gets chunk type.|  
-|[CMFCFilterChunkValueImpl::GetString](#cmfcfilterchunkvalueimpl__getstring)|Retrieves the the string value.|  
-|[CMFCFilterChunkValueImpl::GetValue](#cmfcfilterchunkvalueimpl__getvalue)|Retrieves the value as an allocated propvariant.|  
-|[CMFCFilterChunkValueImpl::GetValueNoAlloc](#cmfcfilterchunkvalueimpl__getvaluenoalloc)|Returns non-allocated (internal value) value.|  
-|[CMFCFilterChunkValueImpl::IsValid](#cmfcfilterchunkvalueimpl__isvalid)|Checks whether this property value is valid or not.|  
-|[CMFCFilterChunkValueImpl::SetBoolValue](#cmfcfilterchunkvalueimpl__setboolvalue)|Overloaded. Sets the property by key to a Boolean.|  
-|[CMFCFilterChunkValueImpl::SetDwordValue](#cmfcfilterchunkvalueimpl__setdwordvalue)|Sets the property by key to a DWORD.|  
-|[CMFCFilterChunkValueImpl::SetFileTimeValue](#cmfcfilterchunkvalueimpl__setfiletimevalue)|Sets the property by key to a filetime.|  
-|[CMFCFilterChunkValueImpl::SetInt64Value](#cmfcfilterchunkvalueimpl__setint64value)|Sets the property by key to an int64.|  
-|[CMFCFilterChunkValueImpl::SetIntValue](#cmfcfilterchunkvalueimpl__setintvalue)|Sets the property by key to an int.|  
-|[CMFCFilterChunkValueImpl::SetLongValue](#cmfcfilterchunkvalueimpl__setlongvalue)|Sets the property by key to a LONG.|  
-|[CMFCFilterChunkValueImpl::SetSystemTimeValue](#cmfcfilterchunkvalueimpl__setsystemtimevalue)|Sets the property by key to a SystemTime.|  
-|[CMFCFilterChunkValueImpl::SetTextValue](#cmfcfilterchunkvalueimpl__settextvalue)|Sets the property by key to a Unicode string.|  
+|[CMFCFilterChunkValueImpl::Clear](#clear)|Clears the ChunkValue.|  
+|[CMFCFilterChunkValueImpl::CopyChunk](#copychunk)|Copies this chunk to a structure describing the characteristics of a chunk.|  
+|[CMFCFilterChunkValueImpl::CopyFrom](#copyfrom)|Initializes this chunk value from the other value.|  
+|[CMFCFilterChunkValueImpl::GetChunkGUID](#getchunkguid)|Retrieves the chunk GUID.|  
+|[CMFCFilterChunkValueImpl::GetChunkPID](#getchunkpid)|Retrieves the chunk PID (property ID).|  
+|[CMFCFilterChunkValueImpl::GetChunkType](#getchunktype)|Gets chunk type.|  
+|[CMFCFilterChunkValueImpl::GetString](#getstring)|Retrieves the the string value.|  
+|[CMFCFilterChunkValueImpl::GetValue](#getvalue)|Retrieves the value as an allocated propvariant.|  
+|[CMFCFilterChunkValueImpl::GetValueNoAlloc](#getvaluenoalloc)|Returns non-allocated (internal value) value.|  
+|[CMFCFilterChunkValueImpl::IsValid](#isvalid)|Checks whether this property value is valid or not.|  
+|[CMFCFilterChunkValueImpl::SetBoolValue](#setboolvalue)|Overloaded. Sets the property by key to a Boolean.|  
+|[CMFCFilterChunkValueImpl::SetDwordValue](#setdwordvalue)|Sets the property by key to a DWORD.|  
+|[CMFCFilterChunkValueImpl::SetFileTimeValue](#setfiletimevalue)|Sets the property by key to a filetime.|  
+|[CMFCFilterChunkValueImpl::SetInt64Value](#setint64value)|Sets the property by key to an int64.|  
+|[CMFCFilterChunkValueImpl::SetIntValue](#setintvalue)|Sets the property by key to an int.|  
+|[CMFCFilterChunkValueImpl::SetLongValue](#setlongvalue)|Sets the property by key to a LONG.|  
+|[CMFCFilterChunkValueImpl::SetSystemTimeValue](#setsystemtimevalue)|Sets the property by key to a SystemTime.|  
+|[CMFCFilterChunkValueImpl::SetTextValue](#settextvalue)|Sets the property by key to a Unicode string.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCFilterChunkValueImpl::SetChunk](#cmfcfilterchunkvalueimpl__setchunk)|A helper function that sets the chunk's common properties.|  
+|[CMFCFilterChunkValueImpl::SetChunk](#setchunk)|A helper function that sets the chunk's common properties.|  
   
 ## Remarks  
  To use, you simply create a CMFCFilterChunkValueImpl class of the right kind  
@@ -103,7 +103,7 @@ class CMFCFilterChunkValueImpl : public ATL::IFilterChunkValue;
 ## Requirements  
  **Header:** afxwin.h  
   
-##  <a name="cmfcfilterchunkvalueimpl__clear"></a>  CMFCFilterChunkValueImpl::Clear  
+##  <a name="clear"></a>  CMFCFilterChunkValueImpl::Clear  
  Clears the ChunkValue.  
   
 ```  
@@ -112,7 +112,7 @@ void Clear();
   
 ### Remarks  
   
-##  <a name="cmfcfilterchunkvalueimpl__cmfcfilterchunkvalueimpl"></a>  CMFCFilterChunkValueImpl::CMFCFilterChunkValueImpl  
+##  <a name="cmfcfilterchunkvalueimpl"></a>  CMFCFilterChunkValueImpl::CMFCFilterChunkValueImpl  
  Constructs the object.  
   
 ```  
@@ -121,7 +121,7 @@ CMFCFilterChunkValueImpl();
   
 ### Remarks  
   
-##  <a name="cmfcfilterchunkvalueimpl___dtorcmfcfilterchunkvalueimpl"></a>  CMFCFilterChunkValueImpl::~CMFCFilterChunkValueImpl  
+##  <a name="_dtorcmfcfilterchunkvalueimpl"></a>  CMFCFilterChunkValueImpl::~CMFCFilterChunkValueImpl  
  Destructs the object.  
   
 ```  
@@ -130,7 +130,7 @@ virtual ~CMFCFilterChunkValueImpl();
   
 ### Remarks  
   
-##  <a name="cmfcfilterchunkvalueimpl__copychunk"></a>  CMFCFilterChunkValueImpl::CopyChunk  
+##  <a name="copychunk"></a>  CMFCFilterChunkValueImpl::CopyChunk  
  Copies this chunk to a structure describing the characteristics of a chunk.  
   
 ```  
@@ -146,7 +146,7 @@ HRESULT CopyChunk(STAT_CHUNK* pStatChunk);
   
 ### Remarks  
   
-##  <a name="cmfcfilterchunkvalueimpl__copyfrom"></a>  CMFCFilterChunkValueImpl::CopyFrom  
+##  <a name="copyfrom"></a>  CMFCFilterChunkValueImpl::CopyFrom  
  Initializes this chunk value from the other value.  
   
 ```  
@@ -159,7 +159,7 @@ void CopyFrom (IFilterChunkValue* pValue);
   
 ### Remarks  
   
-##  <a name="cmfcfilterchunkvalueimpl__getchunkguid"></a>  CMFCFilterChunkValueImpl::GetChunkGUID  
+##  <a name="getchunkguid"></a>  CMFCFilterChunkValueImpl::GetChunkGUID  
  Retrieves the chunk GUID.  
   
 ```  
@@ -173,7 +173,7 @@ REFGUID GetChunkGUID() const;
   
 ### Remarks  
   
-##  <a name="cmfcfilterchunkvalueimpl__getchunkpid"></a>  CMFCFilterChunkValueImpl::GetChunkPID  
+##  <a name="getchunkpid"></a>  CMFCFilterChunkValueImpl::GetChunkPID  
  Retrieves the chunk PID (property ID).  
   
 ```  
@@ -187,7 +187,7 @@ DWORD GetChunkPID() const;
   
 ### Remarks  
   
-##  <a name="cmfcfilterchunkvalueimpl__getchunktype"></a>  CMFCFilterChunkValueImpl::GetChunkType  
+##  <a name="getchunktype"></a>  CMFCFilterChunkValueImpl::GetChunkType  
  Retrieves the chunk type.  
   
 ```  
@@ -201,7 +201,7 @@ CHUNKSTATE GetChunkType() const;
   
 ### Remarks  
   
-##  <a name="cmfcfilterchunkvalueimpl__getstring"></a>  CMFCFilterChunkValueImpl::GetString  
+##  <a name="getstring"></a>  CMFCFilterChunkValueImpl::GetString  
  Retrieves the string value.  
   
 ```  
@@ -213,7 +213,7 @@ CString &GetString();
   
 ### Remarks  
   
-##  <a name="cmfcfilterchunkvalueimpl__getvalue"></a>  CMFCFilterChunkValueImpl::GetValue  
+##  <a name="getvalue"></a>  CMFCFilterChunkValueImpl::GetValue  
  Retrieves the value as an allocated propvariant.  
   
 ```  
@@ -229,7 +229,7 @@ HRESULT GetValue(PROPVARIANT** ppPropVariant);
   
 ### Remarks  
   
-##  <a name="cmfcfilterchunkvalueimpl__getvaluenoalloc"></a>  CMFCFilterChunkValueImpl::GetValueNoAlloc  
+##  <a name="getvaluenoalloc"></a>  CMFCFilterChunkValueImpl::GetValueNoAlloc  
  Returns the non-allocated (internal value) value.  
   
 ```  
@@ -241,7 +241,7 @@ PROPVARIANT GetValueNoAlloc ();
   
 ### Remarks  
   
-##  <a name="cmfcfilterchunkvalueimpl__isvalid"></a>  CMFCFilterChunkValueImpl::IsValid  
+##  <a name="isvalid"></a>  CMFCFilterChunkValueImpl::IsValid  
  Checks whether this property value is valid or not.  
   
 ```  
@@ -255,7 +255,7 @@ BOOL IsValid() const;
   
 ### Remarks  
   
-##  <a name="cmfcfilterchunkvalueimpl__setboolvalue"></a>  CMFCFilterChunkValueImpl::SetBoolValue  
+##  <a name="setboolvalue"></a>  CMFCFilterChunkValueImpl::SetBoolValue  
  Overloaded. Sets the property by key to a Boolean.  
   
 ```  
@@ -306,7 +306,7 @@ HRESULT SetBoolValue(
   
 ### Remarks  
   
-##  <a name="cmfcfilterchunkvalueimpl__setchunk"></a>  CMFCFilterChunkValueImpl::SetChunk  
+##  <a name="setchunk"></a>  CMFCFilterChunkValueImpl::SetChunk  
  A helper function that sets the chunk's common properties.  
   
 ```  
@@ -343,7 +343,7 @@ HRESULT SetChunk(
   
 ### Remarks  
   
-##  <a name="cmfcfilterchunkvalueimpl__setdwordvalue"></a>  CMFCFilterChunkValueImpl::SetDwordValue  
+##  <a name="setdwordvalue"></a>  CMFCFilterChunkValueImpl::SetDwordValue  
  Set the property by key to a DWORD.  
   
 ```  
@@ -384,7 +384,7 @@ HRESULT SetDwordValue(
   
 ### Remarks  
   
-##  <a name="cmfcfilterchunkvalueimpl__setfiletimevalue"></a>  CMFCFilterChunkValueImpl::SetFileTimeValue  
+##  <a name="setfiletimevalue"></a>  CMFCFilterChunkValueImpl::SetFileTimeValue  
  Set the property by key to a filetime.  
   
 ```  
@@ -425,7 +425,7 @@ HRESULT SetFileTimeValue(
   
 ### Remarks  
   
-##  <a name="cmfcfilterchunkvalueimpl__setint64value"></a>  CMFCFilterChunkValueImpl::SetInt64Value  
+##  <a name="setint64value"></a>  CMFCFilterChunkValueImpl::SetInt64Value  
  Set the property by key to an int64.  
   
 ```  
@@ -466,7 +466,7 @@ HRESULT SetInt64Value(
   
 ### Remarks  
   
-##  <a name="cmfcfilterchunkvalueimpl__setintvalue"></a>  CMFCFilterChunkValueImpl::SetIntValue  
+##  <a name="setintvalue"></a>  CMFCFilterChunkValueImpl::SetIntValue  
  Set the property by key to an int.  
   
 ```  
@@ -507,7 +507,7 @@ HRESULT SetIntValue(
   
 ### Remarks  
   
-##  <a name="cmfcfilterchunkvalueimpl__setlongvalue"></a>  CMFCFilterChunkValueImpl::SetLongValue  
+##  <a name="setlongvalue"></a>  CMFCFilterChunkValueImpl::SetLongValue  
  Set the property by key to a LONG.  
   
 ```  
@@ -548,7 +548,7 @@ HRESULT SetLongValue(
   
 ### Remarks  
   
-##  <a name="cmfcfilterchunkvalueimpl__setsystemtimevalue"></a>  CMFCFilterChunkValueImpl::SetSystemTimeValue  
+##  <a name="setsystemtimevalue"></a>  CMFCFilterChunkValueImpl::SetSystemTimeValue  
  Sets the property by key to a SystemTime.  
   
 ```  
@@ -589,7 +589,7 @@ HRESULT SetSystemTimeValue(
   
 ### Remarks  
   
-##  <a name="cmfcfilterchunkvalueimpl__settextvalue"></a>  CMFCFilterChunkValueImpl::SetTextValue  
+##  <a name="settextvalue"></a>  CMFCFilterChunkValueImpl::SetTextValue  
  Sets the property by key to a Unicode string.  
   
 ```  

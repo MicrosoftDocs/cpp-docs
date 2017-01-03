@@ -55,7 +55,7 @@ Active document containment is a technology that provides a single frame in whic
   
 ## Sample Programs  
   
--   The [MFCBIND](../top/visual-cpp-samples.md) sample illustrates the implementation of an active document container application.  
+-   The [MFCBIND](../visual-cpp-samples.md) sample illustrates the implementation of an active document container application.  
   
 ## See Also  
  [MFC COM](../mfc/mfc-com.md)

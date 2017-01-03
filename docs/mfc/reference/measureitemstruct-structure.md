@@ -75,21 +75,21 @@ typedef struct tagMEASUREITEMSTRUCT {
  `itemData`  
  For a combo box or list box, this member contains the value that was passed to the list box by one of the following:  
   
-- [CComboBox::AddString](../../mfc/reference/ccombobox-class.md#ccombobox__addstring)  
+- [CComboBox::AddString](../../mfc/reference/ccombobox-class.md#addstring)  
   
-- [CComboBox::InsertString](../../mfc/reference/ccombobox-class.md#ccombobox__insertstring)  
+- [CComboBox::InsertString](../../mfc/reference/ccombobox-class.md#insertstring)  
   
-- [CListBox::AddString](../../mfc/reference/clistbox-class.md#clistbox__addstring)  
+- [CListBox::AddString](../../mfc/reference/clistbox-class.md#addstring)  
   
-- [CListBox::InsertString](../../mfc/reference/clistbox-class.md#clistbox__insertstring)  
+- [CListBox::InsertString](../../mfc/reference/clistbox-class.md#insertstring)  
   
  For a menu, this member contains the value that was passed to the menu by one of the following:  
   
-- [CMenu::AppendMenu](../../mfc/reference/cmenu-class.md#cmenu__appendmenu)  
+- [CMenu::AppendMenu](../../mfc/reference/cmenu-class.md#appendmenu)  
   
-- [CMenu::InsertMenu](../../mfc/reference/cmenu-class.md#cmenu__insertmenu)  
+- [CMenu::InsertMenu](../../mfc/reference/cmenu-class.md#insertmenu)  
   
-- [CMenu::ModifyMenu](../../mfc/reference/cmenu-class.md#cmenu__modifymenu)  
+- [CMenu::ModifyMenu](../../mfc/reference/cmenu-class.md#modifymenu)  
   
  This allows Windows to process user interaction with the control correctly. Failure to fill out the proper members in the `MEASUREITEMSTRUCT` structure will cause improper operation of the control.  
   
@@ -98,5 +98,5 @@ typedef struct tagMEASUREITEMSTRUCT {
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CWnd::OnMeasureItem](../../mfc/reference/cwnd-class.md#cwnd__onmeasureitem)
+ [CWnd::OnMeasureItem](../../mfc/reference/cwnd-class.md#onmeasureitem)
 

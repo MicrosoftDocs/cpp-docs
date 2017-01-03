@@ -20,7 +20,6 @@ f1_keywords:
   - "C4822"
   - "C4825"
   - "C4827"
-  - "C4837"
   - "C4872"
   - "C4880"
   - "C4881"
@@ -98,7 +97,6 @@ The articles in this part of the documentation contain information about a subse
 |Warning|Message|  
 |-------------|-------------|  
 |[Compiler Warning (level 3) C4800](../../error-messages/compiler-warnings/compiler-warning-level-3-c4800.md)|'type': forcing value to bool 'true' or 'false' (performance warning)|  
-|[Compiler Warning C4801](../../error-messages/compiler-warnings/compiler-warning-c4801.md)|Return by reference is not verifiable: %s|  
 |[Compiler Warning (level 1) C4803](../../error-messages/compiler-warnings/compiler-warning-level-1-c4803.md)|'method': the raise method has a different storage class from that of the event, 'event'|  
 |[Compiler Warning (level 1) C4804](../../error-messages/compiler-warnings/compiler-warning-level-1-c4804.md)|'operation': unsafe use of type 'bool' in operation|  
 |[Compiler Warning (level 1) C4805](../../error-messages/compiler-warnings/compiler-warning-level-1-c4805.md)|'operation': unsafe mix of type 'type' and type 'type' in operation|  
@@ -110,7 +108,6 @@ The articles in this part of the documentation contain information about a subse
 |Compiler warning (level 1) C4811|value of pragma conform(forScope, show) == value|  
 |Compiler warning (level 1) C4812|obsolete declaration style: please use 'new_syntax' instead|  
 |Compiler warning (level 1) C4813|'function': a friend function of a local class must have been previously declared|  
-|[Compiler Warning (level 4) C4815](../../error-messages/compiler-warnings/compiler-warning-level-4-c4815.md)|'var': zero-sized array in stack object will have no elements (unless the object is an aggregate that has been aggregate initialized)|  
 |Compiler warning (level 4) C4816|'param': parameter has a zero-sized array which will be truncated (unless the object is passed by reference)|  
 |Compiler warning (level 1) C4817|'member': illegal use of '.' to access this member; compiler replaced with '->'|  
 |[Compiler Warning (level 1) C4819](../../error-messages/compiler-warnings/compiler-warning-level-1-c4819.md)|The file contains a character that cannot be represented in the current code page (number). Save the file in Unicode format to prevent data loss|  
@@ -119,11 +116,9 @@ The articles in this part of the documentation contain information about a subse
 |Compiler warning (level 1) C4822|'member function': local class member function does not have a body|  
 |[Compiler Warning (level 3) C4823](../../error-messages/compiler-warnings/compiler-warning-level-3-c4823.md)|'function': uses pinning pointers but unwind semantics are not enabled. Consider using /EHa|  
 |Compiler warning (level 4) C4825||  
-|[Compiler Warning (level 2) C4826](../../error-messages/compiler-warnings/compiler-warning-level-2-c4826.md)|Conversion from 'type1' to 'type_2' is sign-extended. This may cause unexpected runtime behavior.|  
 |Compiler warning (level 3) C4827|A public 'ToString' method with 0 parameters should be marked as virtual and override|  
 |[Compiler Warning (level 1) C4829](../../error-messages/compiler-warnings/compiler-warning-level-1-c4829.md)|Possibly incorrect parameters to function main. Consider 'int main(Platform::Array\<Platform::String^>^ argv)'|  
 |[Compiler Warning (level 1) C4835](../../error-messages/compiler-warnings/compiler-warning-level-1-c4835.md)|'variable': the initializer for exported data will not be run until managed code is first executed in the host assembly|  
-|Compiler warning (level 4) C4837|trigraph detected: 'trigraph' replaced by 'character'|  
 |[Compiler Warning (level 1) C4838](../../error-messages/compiler-warnings/compiler-warning-level-1-c4838.md)|conversion from 'type_1' to 'type_2' requires a narrowing conversion|  
 |[Compiler Warning C4867](../../error-messages/compiler-warnings/compiler-warning-c4867.md)|'function': function call missing argument list; use 'call' to create a pointer to member|  
 |[Compiler Warning C4868](../../error-messages/compiler-warnings/compiler-warning-c4868.md)|'file(line_number)' compiler may not enforce left-to-right evaluation order in braced initialization list|  

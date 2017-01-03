@@ -54,7 +54,7 @@ This note describes how you can use the MFCxx.DLL and MFCxxD.DLL (where x is the
 ## Overview of MFCxx.DLL Support: Terminology and Files  
  **Regular DLL**: You use a regular DLL to build a stand-alone DLL using some of the MFC classes. Interfaces across the App/DLL boundary are "C" interfaces, and the client application does not have to be an MFC application.  
   
- This is the version of DLL support supported in MFC 1.0. It is described in [Technical Note 11](../mfc/tn011-using-mfc-as-part-of-a-dll.md) and the MFC Advanced Concepts sample [DLLScreenCap](../top/visual-cpp-samples.md).  
+ This is the version of DLL support supported in MFC 1.0. It is described in [Technical Note 11](../mfc/tn011-using-mfc-as-part-of-a-dll.md) and the MFC Advanced Concepts sample [DLLScreenCap](../visual-cpp-samples.md).  
   
 > [!NOTE]
 >  As of Visual C++ version 4.0, the term **USRDLL** is obsolete and has been replaced by a regular DLL that statically links to MFC. You may also build a regular DLL that dynamically links to MFC.  
@@ -115,7 +115,7 @@ This note describes how you can use the MFCxx.DLL and MFCxxD.DLL (where x is the
   
 -   An MFC Extension DLL will usually provide an initialization routine to create a **CDynLinkLibrary** if the extension DLL wishes to export `CRuntimeClass`es or resources to the application. A derived class of **CDynLinkLibrary** may be used if per-application data must be maintained by the extension DLL.  
   
- These considerations are described in more detail below. You should also refer to the MFC Advanced Concepts sample [DLLHUSK](../top/visual-cpp-samples.md) since it illustrates:  
+ These considerations are described in more detail below. You should also refer to the MFC Advanced Concepts sample [DLLHUSK](../visual-cpp-samples.md) since it illustrates:  
   
 -   Building an application using the shared libraries. (DLLHUSK.EXE is an MFC application that dynamically links to the MFC libraries as well as other DLLs.)  
   
@@ -340,7 +340,7 @@ DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID)
   
  If you want the client application to use classes in your extension DLL that are `DECLARE_SERIAL`, then you will need to export your classes to be visible to the client application. This is also done by walking the **CDynLinkLibrary** list.  
   
- In the case of the MFC Advanced Concepts sample [DLLHUSK](../top/visual-cpp-samples.md), the list looks something like:  
+ In the case of the MFC Advanced Concepts sample [DLLHUSK](../visual-cpp-samples.md), the list looks something like:  
   
 ```  
 head ->   DLLHUSK.EXE   - or -   DLLHUSK.EXE  
@@ -355,7 +355,7 @@ head ->   DLLHUSK.EXE   - or -   DLLHUSK.EXE
   
  The MFCxx.DLL is usually last on the resource and class list. MFCxx.DLL includes all of the standard MFC resources, including prompt strings for all the standard command IDs. Placing it at the tail of the list allows DLLs and the client application itself to not have a their own copy of the standard MFC resources, but to rely on the shared resources in the MFCxx.DLL instead.  
   
- Merging the resources and class names of all DLLs into the client application's name space has the disadvantage that you have to be careful what IDs or names you pick. You can of course disable this feature by not exporting either your resources or a **CDynLinkLibrary** object to the client application. The [DLLHUSK](../top/visual-cpp-samples.md) sample manages the shared resource name space by using multiple header files. See [Technical Note 35](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md) for more tips on using shared resource files.  
+ Merging the resources and class names of all DLLs into the client application's name space has the disadvantage that you have to be careful what IDs or names you pick. You can of course disable this feature by not exporting either your resources or a **CDynLinkLibrary** object to the client application. The [DLLHUSK](../visual-cpp-samples.md) sample manages the shared resource name space by using multiple header files. See [Technical Note 35](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md) for more tips on using shared resource files.  
   
 ### Initializing the DLL  
  As mentioned above, you will usually want to create a **CDynLinkLibrary** object in order to export your resources and classes to the client application. You will need to provide an exported entry point to initialize the DLL. Minimally, this is a void routine that takes no arguments and returns nothing, but it can be anything you like.  
@@ -442,7 +442,7 @@ extern "C" extern void WINAPI InitXxxDLL()
   
  To convert any of these samples to use MFCxx.DLL, you can load the .MAK file into the Visual C++ and set the Project options as described above. If you are using the NMAKE build, you can specify "AFXDLL=1" on the NMAKE command line and that will build the sample using the shared MFC libraries.  
   
- The MFC Advanced Concepts sample [DLLHUSK](../top/visual-cpp-samples.md) is built with the DLL version of MFC. This sample not only illustrates how to build an application linked with MFCxx.DLL, but it also illustrates other features of the MFC DLL packaging option such as MFC Extension DLLs described later in this technical note.  
+ The MFC Advanced Concepts sample [DLLHUSK](../visual-cpp-samples.md) is built with the DLL version of MFC. This sample not only illustrates how to build an application linked with MFCxx.DLL, but it also illustrates other features of the MFC DLL packaging option such as MFC Extension DLLs described later in this technical note.  
   
 ### Packaging Notes  
  The retail version of the DLLs (MFCxx[U].DLL) are freely redistributable. The debug version of the DLLs are not freely redistributable and should be used only during the development of your application.  

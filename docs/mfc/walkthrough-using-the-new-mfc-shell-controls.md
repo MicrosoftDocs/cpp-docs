@@ -158,7 +158,7 @@ In this walkthrough, you will create an application that resembles File Explorer
  }  
  ```  
   
-5.  The last step is to connect the `CMFCShellTreeCtrl` and `CMFCShellListCtrl` objects by using the [CMFCShellTreeCtrl::SetRelatedList](../mfc/reference/cmfcshelltreectrl-class.md#cmfcshelltreectrl__setrelatedlist) method. After you call this method, the `CMFCShellListCtrl` will automatically display the contents of the item selected in the `CMFCShellTreeCtrl`. We will do this in the `OnActivateView` method, which is overridden from [CView::OnActivateView](../mfc/reference/cview-class.md#cview__onactivateview).  
+5.  The last step is to connect the `CMFCShellTreeCtrl` and `CMFCShellListCtrl` objects by using the [CMFCShellTreeCtrl::SetRelatedList](../mfc/reference/cmfcshelltreectrl-class.md#setrelatedlist) method. After you call this method, the `CMFCShellListCtrl` will automatically display the contents of the item selected in the `CMFCShellTreeCtrl`. We will do this in the `OnActivateView` method, which is overridden from [CView::OnActivateView](../mfc/reference/cview-class.md#onactivateview).  
   
      In the MFCShellControlsView.h header file, inside the `CMFCShellControlsView` class declaration, add the following method declaration:  
   
@@ -206,7 +206,7 @@ In this walkthrough, you will create an application that resembles File Explorer
   
 -   The wizard created an Outlook bar with both a **Folders** pane and a **Calendar** pane. It probably does not make sense to have a **Calendar** pane in an Explorer window. Therefore, remove that pane now.  
   
--   The `CMFCShellListCtrl` supports viewing files in different modes, such as **Large Icons**, **Small Icons**, **List**, and **Details**. Update your application to implement this functionality. Hint: see [Visual C++ Samples](../top/visual-cpp-samples.md).  
+-   The `CMFCShellListCtrl` supports viewing files in different modes, such as **Large Icons**, **Small Icons**, **List**, and **Details**. Update your application to implement this functionality. Hint: see [Visual C++ Samples](../visual-cpp-samples.md).  
   
 ## See Also  
  [Walkthroughs](../mfc/walkthroughs-mfc.md)

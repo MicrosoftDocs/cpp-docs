@@ -78,16 +78,13 @@ For an overview of Modern C++ programming practices, see [Welcome Back to C++](w
  The portion of a declaration statement that names an object, type, or function. Abstract declarators, type names, initializers, function declarations and definitions, arrays, references.  
   
  [Classes, Structures, and Unions](../cpp/classes-and-structs-cpp.md)  
- Introduction to classes, structures, and unions. Also, member functions, data members, bit fields, this pointer, nested classes.  
+ Introduction to classes, structures, and unions. Also, member functions, special member functions, data members, bit fields, this pointer, nested classes.  
   
  [Derived Classes](../cpp/inheritance-cpp.md)  
  Single and multiple inheritance, virtual functions, multiple base classes, abstract classes, scope rules. Also, the __super and \__interface keywords.  
   
  [Member-Access Control](../cpp/member-access-control-cpp.md)  
  Controlling access to class members: public, private, and protected keywords. Friend functions and classes.  
-  
- [Special Member Functions](../misc/special-member-functions-cpp.md)  
- Special functions unique to class types: constructors, destructors, conversion functions, assignment operator, operator new and operator delete functions.  
   
  [Overloading](operator-overloading.md)  
  Overloaded operators, rules for operator overloading.  

@@ -45,13 +45,13 @@ namespace std;
   
 |Name|Description|  
 |----------|-----------------|  
-|[make_exception_ptr Function](../../../parallel/concrt/reference/make-exception-ptr-function.md)||  
+|[make_exception_ptr Function](make-exception-ptr-function.md)||  
   
 ## Requirements  
  **Header:** ppltasks.h  
   
 ## See Also  
- [Reference](../../../parallel/concrt/reference/reference-concurrency-runtime.md)
+ [Reference](reference-concurrency-runtime.md)
 
 
 

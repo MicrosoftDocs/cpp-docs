@@ -22,7 +22,7 @@
   "branches_to_filter": [],
   "skip_source_output_uploading": false,
   "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/cpp-docs",
-  "git_repository_branch_open_to_public_contributors": "master",  
+  "git_repository_branch_open_to_public_contributors": "master",
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -31,5 +31,6 @@
       "branch_mapping": {}
     }
   ],
-  "need_generate_pdf_url_template": false
+  "need_generate_pdf_url_template": false,
+  "enable_incremental_build": true
 }

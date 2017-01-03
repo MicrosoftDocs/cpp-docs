@@ -1,5 +1,5 @@
 ---
-title: "inner_product (STL-CLR) | Microsoft Docs"
+title: "inner_product (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -50,7 +50,7 @@ template<class _InIt1, class _InIt2, class _Ty, class _Fn21,
 ```  
   
 ## Remarks  
- This function behaves the same as the STL numeric function `inner_product`. For more information, see [inner_product](../Topic/inner_product.md).  
+ This function behaves the same as the C++ Standard Library numeric function `inner_product`. For more information, see [inner_product](../standard-library/numeric-functions.md#inner_product).  
   
 ## Requirements  
  **Header:** \<cliext/numeric>  

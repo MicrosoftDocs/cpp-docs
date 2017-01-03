@@ -148,7 +148,7 @@ return (is);
 ```  
   
 ## See Also  
- [path Class (C++ Standard Template Library)](../standard-library/path-class.md)   
+ [path Class (C++ Standard Library)](../standard-library/path-class.md)   
  [File System Navigation (C++)](../standard-library/file-system-navigation.md)   
  [\<filesystem>](../standard-library/filesystem.md)
 

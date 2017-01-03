@@ -67,7 +67,7 @@ This article explains what you must do to implement in-place frame windows in yo
   
  The ID for the toolbar bitmap should be the same as the other in-place resources defined in your server application. See [Menus and Resources: Server Additions](../mfc/menus-and-resources-server-additions.md) for details.  
   
- For more information, see [COleIPFrameWnd](../mfc/reference/coleipframewnd-class.md), [COleResizeBar](../mfc/reference/coleresizebar-class.md), and [CDocTemplate::SetServerInfo](../mfc/reference/cdoctemplate-class.md#cdoctemplate__setserverinfo) in the *Class Library Reference*.  
+ For more information, see [COleIPFrameWnd](../mfc/reference/coleipframewnd-class.md), [COleResizeBar](../mfc/reference/coleresizebar-class.md), and [CDocTemplate::SetServerInfo](../mfc/reference/cdoctemplate-class.md#setserverinfo) in the *Class Library Reference*.  
   
 ## See Also  
  [Servers](../mfc/servers.md)   

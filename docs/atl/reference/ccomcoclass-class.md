@@ -61,10 +61,10 @@ template <class   T,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComCoClass::CreateInstance](#ccomcoclass__createinstance)|(Static) Creates an instance of the class and queries for an interface.|  
-|[CComCoClass::Error](#ccomcoclass__error)|(Static) Returns rich error information to the client.|  
-|[CComCoClass::GetObjectCLSID](#ccomcoclass__getobjectclsid)|(Static) Returns the object's class identifier.|  
-|[CComCoClass::GetObjectDescription](#ccomcoclass__getobjectdescription)|(Static) Override to return the object's description.|  
+|[CComCoClass::CreateInstance](#createinstance)|(Static) Creates an instance of the class and queries for an interface.|  
+|[CComCoClass::Error](#error)|(Static) Returns rich error information to the client.|  
+|[CComCoClass::GetObjectCLSID](#getobjectclsid)|(Static) Returns the object's class identifier.|  
+|[CComCoClass::GetObjectDescription](#getobjectdescription)|(Static) Override to return the object's description.|  
   
 ## Remarks  
  `CComCoClass` provides methods for retrieving an object's CLSID, setting error information, and creating instances of the class. Any class registered in the [object map](http://msdn.microsoft.com/en-us/b57619cc-534f-4b8f-bfd4-0c12f937202f) should be derived from `CComCoClass`.  
@@ -82,7 +82,7 @@ template <class   T,
 ## Requirements  
  **Header:** atlcom.h  
   
-##  <a name="ccomcoclass__createinstance"></a>  CComCoClass::CreateInstance  
+##  <a name="createinstance"></a>  CComCoClass::CreateInstance  
  Use these `CreateInstance` functions to create an instance of a COM object and retrieve an interface pointer without using the COM API.  
   
 ```
@@ -123,7 +123,7 @@ template <class  Q>
   
  [!code-cpp[NVC_ATL_COM#11](../../atl/codesnippet/cpp/ccomcoclass-class_2.cpp)]  
   
-##  <a name="ccomcoclass__error"></a>  CComCoClass::Error  
+##  <a name="error"></a>  CComCoClass::Error  
  This static function sets up the `IErrorInfo` interface to provide error information to the client.  
   
 ```
@@ -196,7 +196,7 @@ static HRESULT WINAPI Error(
   
  If the `hRes` parameter is nonzero, then `Error` returns the value of `hRes`. If `hRes` is zero, then the first four versions of `Error` return `DISP_E_EXCEPTION`. The last two versions return the result of the macro **MAKE_HRESULT( 1, FACILITY_ITF,** `nID` **)**.  
   
-##  <a name="ccomcoclass__getobjectclsid"></a>  CComCoClass::GetObjectCLSID  
+##  <a name="getobjectclsid"></a>  CComCoClass::GetObjectCLSID  
  Provides a consistent way of retrieving the object's CLSID.  
   
 ```
@@ -206,7 +206,7 @@ static const CLSID& WINAPI GetObjectCLSID();
 ### Return Value  
  The object's class identifier.  
   
-##  <a name="ccomcoclass__getobjectdescription"></a>  CComCoClass::GetObjectDescription  
+##  <a name="getobjectdescription"></a>  CComCoClass::GetObjectDescription  
  This static function retrieves the text description for your class object.  
   
 ```

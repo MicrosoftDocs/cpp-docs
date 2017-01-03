@@ -74,5 +74,5 @@ typedef struct tagPAINTSTRUCT {
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CPaintDC::m_ps](../../mfc/reference/cpaintdc-class.md#cpaintdc__m_ps)
+ [CPaintDC::m_ps](../../mfc/reference/cpaintdc-class.md#m_ps)
 

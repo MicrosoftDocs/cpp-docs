@@ -60,8 +60,6 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C3533](../../error-messages/compiler-errors-2/compiler-error-c3533.md)  
   
- [Compiler Error C3534](../Topic/Compiler%20Error%20C3534.md)  
-  
  [Compiler Error C3535](../../error-messages/compiler-errors-2/compiler-error-c3535.md)  
   
  [Compiler Error C3536](../../error-messages/compiler-errors-2/compiler-error-c3536.md)  
@@ -87,8 +85,6 @@ The articles in this part of the documentation contain information about a subse
  [Compiler Error C3611](../../error-messages/compiler-errors-2/compiler-error-c3611.md)  
   
  [Compiler Error C3612](../../error-messages/compiler-errors-2/compiler-error-c3612.md)  
-  
- [Compiler Error C3616](../Topic/Compiler%20Error%20C3616.md)  
   
  [Compiler Error C3618](../../error-messages/compiler-errors-2/compiler-error-c3618.md)  
   
@@ -151,8 +147,6 @@ The articles in this part of the documentation contain information about a subse
  [Compiler Error C3656](../../error-messages/compiler-errors-2/compiler-error-c3656.md)  
   
  [Compiler Error C3657](../../error-messages/compiler-errors-2/compiler-error-c3657.md)  
-  
- [Compiler Error C3658](../Topic/Compiler%20Error%20C3658.md)  
   
  [Compiler Error C3661](../../error-messages/compiler-errors-2/compiler-error-c3661.md)  
   
@@ -230,8 +224,6 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C3728](../../error-messages/compiler-errors-2/compiler-error-c3728.md)  
   
- [Compiler Error C3730](../Topic/Compiler%20Error%20C3730.md)  
-  
  [Compiler Error C3731](../../error-messages/compiler-errors-2/compiler-error-c3731.md)  
   
  [Compiler Error C3732](../../error-messages/compiler-errors-2/compiler-error-c3732.md)  
@@ -298,8 +290,6 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C3800](../../error-messages/compiler-errors-2/compiler-error-c3800.md)  
   
- [Compiler Error C3802](../Topic/Compiler%20Error%20C3802.md)  
-  
  [Compiler Error C3803](../../error-messages/compiler-errors-2/compiler-error-c3803.md)  
   
  [Compiler Error C3804](../../error-messages/compiler-errors-2/compiler-error-c3804.md)  
@@ -312,13 +302,9 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C3809](../../error-messages/compiler-errors-2/compiler-error-c3809.md)  
   
- [Compiler Error C3811](../Topic/Compiler%20Error%20C3811.md)  
-  
  [Compiler Error C3812](../../error-messages/compiler-errors-2/compiler-error-c3812.md)  
   
  [Compiler Error C3813](../../error-messages/compiler-errors-2/compiler-error-c3813.md)  
-  
- [Compiler Error C3814](../Topic/Compiler%20Error%20C3814.md)  
   
  [Compiler Error C3815](../../error-messages/compiler-errors-2/compiler-error-c3815.md)  
   
@@ -328,19 +314,11 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C3818](../../error-messages/compiler-errors-2/compiler-error-c3818.md)  
   
- [Compiler Error C3819](../Topic/Compiler%20Error%20C3819.md)  
-  
  [Compiler Error C3821](../../error-messages/compiler-errors-2/compiler-error-c3821.md)  
-  
- [Compiler Error C3822](../Topic/Compiler%20Error%20C3822.md)  
-  
- [Compiler Error C3823](../Topic/Compiler%20Error%20C3823.md)  
   
  [Compiler Error C3824](../../error-messages/compiler-errors-2/compiler-error-c3824.md)  
   
  [Compiler Error C3825](../../error-messages/compiler-errors-2/compiler-error-c3825.md)  
-  
- [Compiler Error C3826](../Topic/Compiler%20Error%20C3826.md)  
   
  [Compiler Error C3828](../../error-messages/compiler-errors-2/compiler-error-c3828.md)  
   
@@ -359,8 +337,6 @@ The articles in this part of the documentation contain information about a subse
  [Compiler Error C3838](../../error-messages/compiler-errors-2/compiler-error-c3838.md)  
   
  [Compiler Error C3839](../../error-messages/compiler-errors-2/compiler-error-c3839.md)  
-  
- [Compiler Error C3840](../Topic/Compiler%20Error%20C3840.md)  
   
  [Compiler Error C3842](../../error-messages/compiler-errors-2/compiler-error-c3842.md)  
   
@@ -472,8 +448,4 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C3920](../../error-messages/compiler-errors-2/compiler-error-c3920.md)  
   
- [Compiler Error C3921](../Topic/Compiler%20Error%20C3921.md)  
-  
  [Compiler Error C3923](../../error-messages/compiler-errors-2/compiler-error-c3923.md)  
-  
- [Compiler Error C3996](../Topic/Compiler%20Error%20C3996.md)

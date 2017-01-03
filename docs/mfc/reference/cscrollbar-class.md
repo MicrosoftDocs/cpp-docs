@@ -53,26 +53,26 @@ class CScrollBar : public CWnd
   
 |Name|Description|  
 |----------|-----------------|  
-|[CScrollBar::CScrollBar](#cscrollbar__cscrollbar)|Constructs a `CScrollBar` object.|  
+|[CScrollBar::CScrollBar](#cscrollbar)|Constructs a `CScrollBar` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CScrollBar::Create](#cscrollbar__create)|Creates the Windows scroll bar and attaches it to the `CScrollBar` object.|  
-|[CScrollBar::EnableScrollBar](#cscrollbar__enablescrollbar)|Enables or disables one or both arrows of a scroll bar.|  
-|[CScrollBar::GetScrollBarInfo](#cscrollbar__getscrollbarinfo)|Retrieves information about the scroll bar using a `SCROLLBARINFO` structure.|  
-|[CScrollBar::GetScrollInfo](#cscrollbar__getscrollinfo)|Retrieves information about the scroll bar.|  
-|[CScrollBar::GetScrollLimit](#cscrollbar__getscrolllimit)|Retrieves the limit of the scroll bar|  
-|[CScrollBar::GetScrollPos](#cscrollbar__getscrollpos)|Retrieves the current position of a scroll box.|  
-|[CScrollBar::GetScrollRange](#cscrollbar__getscrollrange)|Retrieves the current minimum and maximum scroll-bar positions for the given scroll bar.|  
-|[CScrollBar::SetScrollInfo](#cscrollbar__setscrollinfo)|Sets information about the scroll bar.|  
-|[CScrollBar::SetScrollPos](#cscrollbar__setscrollpos)|Sets the current position of a scroll box.|  
-|[CScrollBar::SetScrollRange](#cscrollbar__setscrollrange)|Sets minimum and maximum position values for the given scroll bar.|  
-|[CScrollBar::ShowScrollBar](#cscrollbar__showscrollbar)|Shows or hides a scroll bar.|  
+|[CScrollBar::Create](#create)|Creates the Windows scroll bar and attaches it to the `CScrollBar` object.|  
+|[CScrollBar::EnableScrollBar](#enablescrollbar)|Enables or disables one or both arrows of a scroll bar.|  
+|[CScrollBar::GetScrollBarInfo](#getscrollbarinfo)|Retrieves information about the scroll bar using a `SCROLLBARINFO` structure.|  
+|[CScrollBar::GetScrollInfo](#getscrollinfo)|Retrieves information about the scroll bar.|  
+|[CScrollBar::GetScrollLimit](#getscrolllimit)|Retrieves the limit of the scroll bar|  
+|[CScrollBar::GetScrollPos](#getscrollpos)|Retrieves the current position of a scroll box.|  
+|[CScrollBar::GetScrollRange](#getscrollrange)|Retrieves the current minimum and maximum scroll-bar positions for the given scroll bar.|  
+|[CScrollBar::SetScrollInfo](#setscrollinfo)|Sets information about the scroll bar.|  
+|[CScrollBar::SetScrollPos](#setscrollpos)|Sets the current position of a scroll box.|  
+|[CScrollBar::SetScrollRange](#setscrollrange)|Sets minimum and maximum position values for the given scroll bar.|  
+|[CScrollBar::ShowScrollBar](#showscrollbar)|Shows or hides a scroll bar.|  
   
 ## Remarks  
- You create a scroll-bar control in two steps. First, call the constructor `CScrollBar` to construct the `CScrollBar` object, then call the [Create](#cscrollbar__create) member function to create the Windows scroll-bar control and attach it to the `CScrollBar` object.  
+ You create a scroll-bar control in two steps. First, call the constructor `CScrollBar` to construct the `CScrollBar` object, then call the [Create](#create) member function to create the Windows scroll-bar control and attach it to the `CScrollBar` object.  
   
  If you create a `CScrollBar` object within a dialog box (through a dialog resource), the `CScrollBar` is automatically destroyed when the user closes the dialog box.  
   
@@ -96,7 +96,7 @@ class CScrollBar : public CWnd
 ## Requirements  
  **Header:** afxwin.h  
   
-##  <a name="cscrollbar__create"></a>  CScrollBar::Create  
+##  <a name="create"></a>  CScrollBar::Create  
  Creates the Windows scroll bar and attaches it to the `CScrollBar` object.  
   
 ```  
@@ -139,7 +139,7 @@ virtual BOOL Create(
 ### Example  
  [!code-cpp[NVC_MFC_CScrollBar#1](../../mfc/reference/codesnippet/cpp/cscrollbar-class_1.cpp)]  
   
-##  <a name="cscrollbar__cscrollbar"></a>  CScrollBar::CScrollBar  
+##  <a name="cscrollbar"></a>  CScrollBar::CScrollBar  
  Constructs a `CScrollBar` object.  
   
 ```  
@@ -152,7 +152,7 @@ CScrollBar();
 ### Example  
  [!code-cpp[NVC_MFC_CScrollBar#2](../../mfc/reference/codesnippet/cpp/cscrollbar-class_2.h)]  
   
-##  <a name="cscrollbar__enablescrollbar"></a>  CScrollBar::EnableScrollBar  
+##  <a name="enablescrollbar"></a>  CScrollBar::EnableScrollBar  
  Enables or disables one or both arrows of a scroll bar.  
   
 ```  
@@ -175,9 +175,9 @@ BOOL EnableScrollBar(UINT nArrowFlags = ESB_ENABLE_BOTH);
  Nonzero if the arrows are enabled or disabled as specified; otherwise 0, which indicates that the arrows are already in the requested state or that an error occurred.  
   
 ### Example  
-  See the example for [CScrollBar::SetScrollRange](#cscrollbar__setscrollrange).  
+  See the example for [CScrollBar::SetScrollRange](#setscrollrange).  
   
-##  <a name="cscrollbar__getscrollbarinfo"></a>  CScrollBar::GetScrollBarInfo  
+##  <a name="getscrollbarinfo"></a>  CScrollBar::GetScrollBarInfo  
  Retrieves the information that the **SCROLLBARINFO** structure maintains about a scroll bar.  
   
 ```  
@@ -196,7 +196,7 @@ BOOL GetScrollBarInfo(PSCROLLBARINFO pScrollInfo) const;
 ### Remarks  
  This member function emulates the functionality of the [SBM_SCROLLBARINFO](http://msdn.microsoft.com/library/windows/desktop/bb787545) message, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="cscrollbar__getscrollinfo"></a>  CScrollBar::GetScrollInfo  
+##  <a name="getscrollinfo"></a>  CScrollBar::GetScrollInfo  
  Retrieves the information that the `SCROLLINFO` structure maintains about a scroll bar.  
   
 ```  
@@ -220,12 +220,12 @@ BOOL GetScrollInfo(
   
  The [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) structure contains information about a scroll bar, including the minimum and maximum scrolling positions, the page size, and the position of the scroll box (the thumb). See the `SCROLLINFO` structure topic in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information about changing the structure defaults.  
   
- The MFC Windows message handlers that indicate scroll bar position, [CWnd::OnHScroll](../../mfc/reference/cwnd-class.md#cwnd__onhscroll) and [CWnd::OnVScroll](../../mfc/reference/cwnd-class.md#cwnd__onvscroll), provide only 16 bits of position data. `GetScrollInfo` and `SetScrollInfo` provide 32 bits of scroll bar position data. Thus, an application can call `GetScrollInfo` while processing either `CWnd::OnHScroll` or `CWnd::OnVScroll` to obtain 32-bit scroll bar position data.  
+ The MFC Windows message handlers that indicate scroll bar position, [CWnd::OnHScroll](../../mfc/reference/cwnd-class.md#onhscroll) and [CWnd::OnVScroll](../../mfc/reference/cwnd-class.md#onvscroll), provide only 16 bits of position data. `GetScrollInfo` and `SetScrollInfo` provide 32 bits of scroll bar position data. Thus, an application can call `GetScrollInfo` while processing either `CWnd::OnHScroll` or `CWnd::OnVScroll` to obtain 32-bit scroll bar position data.  
   
 ### Example  
-  See the example for [CWnd::OnHScroll](../../mfc/reference/cwnd-class.md#cwnd__onhscroll).  
+  See the example for [CWnd::OnHScroll](../../mfc/reference/cwnd-class.md#onhscroll).  
   
-##  <a name="cscrollbar__getscrolllimit"></a>  CScrollBar::GetScrollLimit  
+##  <a name="getscrolllimit"></a>  CScrollBar::GetScrollLimit  
  Retrieves the maximum scrolling position of the scroll bar.  
   
 ```  
@@ -236,9 +236,9 @@ int GetScrollLimit();
  Specifies the maximum position of a scroll bar if successful; otherwise 0.  
   
 ### Example  
-  See the example for [CWnd::OnHScroll](../../mfc/reference/cwnd-class.md#cwnd__onhscroll).  
+  See the example for [CWnd::OnHScroll](../../mfc/reference/cwnd-class.md#onhscroll).  
   
-##  <a name="cscrollbar__getscrollpos"></a>  CScrollBar::GetScrollPos  
+##  <a name="getscrollpos"></a>  CScrollBar::GetScrollPos  
  Retrieves the current position of a scroll box.  
   
 ```  
@@ -254,9 +254,9 @@ int GetScrollPos() const;
  The current position is a relative value that depends on the current scrolling range. For example, if the scrolling range is 100 to 200 and the scroll box is in the middle of the bar, the current position is 150.  
   
 ### Example  
-  See the example for [CWnd::OnHScroll](../../mfc/reference/cwnd-class.md#cwnd__onhscroll).  
+  See the example for [CWnd::OnHScroll](../../mfc/reference/cwnd-class.md#onhscroll).  
   
-##  <a name="cscrollbar__getscrollrange"></a>  CScrollBar::GetScrollRange  
+##  <a name="getscrollrange"></a>  CScrollBar::GetScrollRange  
  Copies the current minimum and maximum scroll-bar positions for the given scroll bar to the locations specified by `lpMinPos` and `lpMaxPos`.  
   
 ```  
@@ -278,9 +278,9 @@ void GetScrollRange(
  The default range for a scroll-bar control is empty (both values are 0).  
   
 ### Example  
-  See the example for [CWnd::OnHScroll](../../mfc/reference/cwnd-class.md#cwnd__onhscroll).  
+  See the example for [CWnd::OnHScroll](../../mfc/reference/cwnd-class.md#onhscroll).  
   
-##  <a name="cscrollbar__setscrollinfo"></a>  CScrollBar::SetScrollInfo  
+##  <a name="setscrollinfo"></a>  CScrollBar::SetScrollInfo  
  Sets the information that the `SCROLLINFO` structure maintains about a scroll bar.  
   
 ```  
@@ -307,7 +307,7 @@ BOOL SetScrollInfo(
 ### Example  
  [!code-cpp[NVC_MFC_CScrollBar#3](../../mfc/reference/codesnippet/cpp/cscrollbar-class_3.cpp)]  
   
-##  <a name="cscrollbar__setscrollpos"></a>  CScrollBar::SetScrollPos  
+##  <a name="setscrollpos"></a>  CScrollBar::SetScrollPos  
  Sets the current position of a scroll box to that specified by `nPos` and, if specified, redraws the scroll bar to reflect the new position.  
   
 ```  
@@ -330,9 +330,9 @@ int SetScrollPos(
  Set `bRedraw` to **FALSE** whenever the scroll bar will be redrawn by a subsequent call to another function to avoid having the scroll bar redrawn twice within a short interval.  
   
 ### Example  
-  See the example for [CScrollBar::SetScrollRange](#cscrollbar__setscrollrange).  
+  See the example for [CScrollBar::SetScrollRange](#setscrollrange).  
   
-##  <a name="cscrollbar__setscrollrange"></a>  CScrollBar::SetScrollRange  
+##  <a name="setscrollrange"></a>  CScrollBar::SetScrollRange  
  Sets minimum and maximum position values for the given scroll bar.  
   
 ```  
@@ -364,7 +364,7 @@ void SetScrollRange(
 ### Example  
  [!code-cpp[NVC_MFC_CScrollBar#4](../../mfc/reference/codesnippet/cpp/cscrollbar-class_4.cpp)]  
   
-##  <a name="cscrollbar__showscrollbar"></a>  CScrollBar::ShowScrollBar  
+##  <a name="showscrollbar"></a>  CScrollBar::ShowScrollBar  
  Shows or hides a scroll bar.  
   
 ```  
@@ -379,7 +379,7 @@ void ShowScrollBar(BOOL bShow = TRUE);
  An application should not call this function to hide a scroll bar while processing a scroll-bar notification message.  
   
 ### Example  
-  See the example for [CScrollBar::Create](#cscrollbar__create).  
+  See the example for [CScrollBar::Create](#create).  
   
 ## See Also  
  [CWnd Class](../../mfc/reference/cwnd-class.md)   

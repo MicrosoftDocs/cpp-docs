@@ -49,37 +49,37 @@ class CSettingsStore : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSettingsStore::CSettingsStore](#csettingsstore__csettingsstore)|Constructs a `CSettingsStore` object.|  
+|[CSettingsStore::CSettingsStore](#csettingsstore)|Constructs a `CSettingsStore` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSettingsStore::Close](#csettingsstore__close)|Closes the open registry key.|  
-|[CSettingsStore::CreateKey](#csettingsstore__createkey)|Opens the specified key or creates it if it does not exist.|  
-|[CSettingsStore::DeleteKey](#csettingsstore__deletekey)|Deletes the specified key and all its children.|  
-|[CSettingsStore::DeleteValue](#csettingsstore__deletevalue)|Deletes the specified value of the open key.|  
-|[CSettingsStore::Open](#csettingsstore__open)|Opens the specified key.|  
-|[CSettingsStore::Read](#csettingsstore__read)|Retrieves the data for a specified key value.|  
-|[CSettingsStore::Write](#csettingsstore__write)|Writes a value to the registry under the open key.|  
+|[CSettingsStore::Close](#close)|Closes the open registry key.|  
+|[CSettingsStore::CreateKey](#createkey)|Opens the specified key or creates it if it does not exist.|  
+|[CSettingsStore::DeleteKey](#deletekey)|Deletes the specified key and all its children.|  
+|[CSettingsStore::DeleteValue](#deletevalue)|Deletes the specified value of the open key.|  
+|[CSettingsStore::Open](#open)|Opens the specified key.|  
+|[CSettingsStore::Read](#read)|Retrieves the data for a specified key value.|  
+|[CSettingsStore::Write](#write)|Writes a value to the registry under the open key.|  
   
 ## Remarks  
  The member functions `CreateKey` and `Open` are very similar. If the registry key already exists, `CreateKey` and `Open` function in the same way. However, if the registry key does not exist, `CreateKey` will create it whereas `Open` will return an error value.  
   
 ## Example  
- The following example demonstrates how to use the Open and Read methods of the `CSettingsStore` class. This code snippet is part of the [Tool Tip Demo sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to use the Open and Read methods of the `CSettingsStore` class. This code snippet is part of the [Tool Tip Demo sample](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_ToolTipDemo#1](../../mfc/reference/codesnippet/cpp/csettingsstore-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
   
- [CSettingsStore](../../mfc/reference/csettingsstore-class.md)  
+ `CSettingsStore`  
   
 ## Requirements  
  **Header:** afxsettingsstore.h  
   
-##  <a name="csettingsstore__close"></a>  CSettingsStore::Close  
+##  <a name="close"></a>  CSettingsStore::Close  
  Closes the open registry key.  
   
 ```  
@@ -89,7 +89,7 @@ virtual void Close();
 ### Remarks  
  By default, this method is called from the destructor of the [CSettingsStore Class](../../mfc/reference/csettingsstore-class.md).  
   
-##  <a name="csettingsstore__createkey"></a>  CSettingsStore::CreateKey  
+##  <a name="createkey"></a>  CSettingsStore::CreateKey  
  Opens a registry key or creates it if it does not exist.  
   
 ```  
@@ -106,7 +106,7 @@ virtual BOOL CreateKey(LPCTSTR pszPath);
 ### Remarks  
  `CreateKey` uses `m_hKey` as the root of registry inquiries. It searches for `pszPath` as a subkey of `m_hKey`. If the key does not exist, `CreateKey` creates it. Otherwise, it opens the key. `CreateKey` then sets `m_hKey` to the created or opened key.  
   
-##  <a name="csettingsstore__csettingsstore"></a>  CSettingsStore::CSettingsStore  
+##  <a name="csettingsstore"></a>  CSettingsStore::CSettingsStore  
  Creates a `CSettngsStore` object.  
   
 ```  
@@ -129,7 +129,7 @@ CSettingsStore(
   
  The destructor for `CSettingsStore` releases `m_hKey` automatically.  
   
-##  <a name="csettingsstore__deletekey"></a>  CSettingsStore::DeleteKey  
+##  <a name="deletekey"></a>  CSettingsStore::DeleteKey  
  Deletes a key and all its children from the registry.  
   
 ```  
@@ -153,7 +153,7 @@ virtual BOOL DeleteKey(
   
  If the parameter `bAdmin` is zero, `DeleteKey` searches for the key to delete under `HKEY_CURRENT_USER`. If `bAdmin` is nonzero, `DeleteKey` searches for the key to delete under `HKEY_LOCAL_MACHINE`.  
   
-##  <a name="csettingsstore__deletevalue"></a>  CSettingsStore::DeleteValue  
+##  <a name="deletevalue"></a>  CSettingsStore::DeleteValue  
  Deletes a value from `m_hKey`.  
   
 ```  
@@ -167,7 +167,7 @@ virtual BOOL DeleteValue(LPCTSTR pszValue);
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
-##  <a name="csettingsstore__open"></a>  CSettingsStore::Open  
+##  <a name="open"></a>  CSettingsStore::Open  
  Opens a registry key.  
   
 ```  
@@ -184,7 +184,7 @@ virtual BOOL Open(LPCTSTR pszPath);
 ### Remarks  
  After this method successfully opens the specified key, it sets `m_hKey` to the handle of this key.  
   
-##  <a name="csettingsstore__read"></a>  CSettingsStore::Read  
+##  <a name="read"></a>  CSettingsStore::Read  
  Reads a value from a key in the registry.  
   
 ```  
@@ -314,7 +314,7 @@ virtual BOOL Read(
 ### Remarks  
  `Read` checks for `pszKey` as a subkey of `m_hKey`.  
   
-##  <a name="csettingsstore__write"></a>  CSettingsStore::Write  
+##  <a name="write"></a>  CSettingsStore::Write  
  Writes a value to the registry under the open key.  
   
 ```  
@@ -442,7 +442,7 @@ virtual BOOL Write(
  `TRUE` if successful; otherwise `FALSE`.  
   
 ### Remarks  
- In order to write to the registry, you must set `bReadOnly` to a nonzero value when you create a [CSettingsStore](../../mfc/reference/csettingsstore-class.md) object. For more information, see [CSettingsStore::CSettingsStore](#csettingsstore__csettingsstore).  
+ In order to write to the registry, you must set `bReadOnly` to a nonzero value when you create a [CSettingsStore](../../mfc/reference/csettingsstore-class.md) object. For more information, see [CSettingsStore::CSettingsStore](#csettingsstore).  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

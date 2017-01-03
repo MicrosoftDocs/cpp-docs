@@ -49,7 +49,7 @@ struct IUMSCompletionList;
   
 |Name|Description|  
 |----------|-----------------|  
-|[IUMSCompletionList::GetUnblockNotifications Method](#iumscompletionlist__getunblocknotifications_method)|Retrieves a chain of `IUMSUnblockNotification` interfaces representing execution contexts whose associated thread proxies have unblocked since the last time this method was invoked.|  
+|[IUMSCompletionList::GetUnblockNotifications Method](#getunblocknotifications)|Retrieves a chain of `IUMSUnblockNotification` interfaces representing execution contexts whose associated thread proxies have unblocked since the last time this method was invoked.|  
   
 ## Remarks  
  A scheduler must be extraordinarily careful about what actions are performed after utilizing this interface to dequeue items from the completion list. The items should be placed on the scheduler's list of runnable contexts and be generally accessible as soon as possible. It is entirely possible that one of the dequeued items has been given ownership of an arbitrary lock. The scheduler can make no arbitrary function calls that may block between the call to dequeue items and the placement of those items on a list that can be generally accessed from within the scheduler.  
@@ -62,7 +62,7 @@ struct IUMSCompletionList;
   
  **Namespace:** concurrency  
   
-##  <a name="iumscompletionlist__getunblocknotifications_method"></a>  IUMSCompletionList::GetUnblockNotifications Method  
+##  <a name="getunblocknotifications"></a>  IUMSCompletionList::GetUnblockNotifications Method  
  Retrieves a chain of `IUMSUnblockNotification` interfaces representing execution contexts whose associated thread proxies have unblocked since the last time this method was invoked.  
   
 ```
@@ -76,6 +76,6 @@ virtual IUMSUnblockNotification *GetUnblockNotifications() = 0;
  The returned notifications are invalid once the execution contexts are rescheduled.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [IUMSScheduler Structure](../../../parallel/concrt/reference/iumsscheduler-structure.md)   
- [IUMSUnblockNotification Structure](../../../parallel/concrt/reference/iumsunblocknotification-structure.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [IUMSScheduler Structure](iumsscheduler-structure.md)   
+ [IUMSUnblockNotification Structure](iumsunblocknotification-structure.md)

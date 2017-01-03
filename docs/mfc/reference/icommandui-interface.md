@@ -49,13 +49,13 @@ interface class ICommandUI
   
 |Name|Description|  
 |----------|-----------------|  
-|[icommandui__Check](#icommandui__check)|Sets the user interface item for this command to the appropriate check state.|  
-|[ICommandUI::ContinueRouting](#icommandui__continuerouting)|Tells the command-routing mechanism to continue routing the current message down the chain of handlers.|  
-|[ICommandUI::Enabled](#icommandui__enabled)|Enables or disables the user interface item for this command.|  
-|[ICommandUI::ID](#icommandui__id)|Gets the ID of the user interface object represented by the `ICommandUI` object.|  
-|[ICommandUI::Index](#icommandui__index)|Gets the index of the user interface object represented by the `ICommandUI` object.|  
-|[ICommandUI::Radio](#icommandui__radio)|Sets the user interface item for this command to the appropriate check state.|  
-|[ICommandUI::Text](#icommandui__text)|Sets the text of the user interface item for this command.|  
+|[icommandui__Check](#check)|Sets the user interface item for this command to the appropriate check state.|  
+|[ICommandUI::ContinueRouting](#continuerouting)|Tells the command-routing mechanism to continue routing the current message down the chain of handlers.|  
+|[ICommandUI::Enabled](#enabled)|Enables or disables the user interface item for this command.|  
+|[ICommandUI::ID](#id)|Gets the ID of the user interface object represented by the `ICommandUI` object.|  
+|[ICommandUI::Index](#index)|Gets the index of the user interface object represented by the `ICommandUI` object.|  
+|[ICommandUI::Radio](#radio)|Sets the user interface item for this command to the appropriate check state.|  
+|[ICommandUI::Text](#text)|Sets the text of the user interface item for this command.|  
   
 ## Remarks  
  This interface provides methods and properties that manage user interface commands. `ICommandUI` is similar to [CCmdUI Class](../../mfc/reference/ccmdui-class.md), except that `ICommandUI` is used for MFC applications that interoperate with .NET components.  
@@ -68,7 +68,7 @@ interface class ICommandUI
   
  For more information on how user interface commands are managed in MFC, see [CCmdUI Class](../../mfc/reference/ccmdui-class.md).  
   
-## <a name="icommandui__check"></a> ICommandUI::Check  
+## <a name="check"></a> ICommandUI::Check  
 Sets the user interface item for this command to the appropriate check state.
 ```
 property UICheckState Check;
@@ -79,7 +79,7 @@ This property sets the user interface item for this command to the appropriate c
 - 1 Check  
 - 2 Set indeterminate  
 
-## <a name="icommandui__continuerouting"></a> ICommandUI::ContinueRouting   
+## <a name="continuerouting"></a> ICommandUI::ContinueRouting   
 Tells the command routing mechanism to continue routing the current message down the chain of handlers.
 ```
 void ContinueRouting();
@@ -87,7 +87,7 @@ void ContinueRouting();
 ## Remarks
 This is an advanced member function that should be used in conjunction with an ON_COMMAND_EX handler that returns FALSE. For more information, see Technical Note TN006: Message Maps.
 
-## <a name="icommandui__enabled"></a> ICommandUI::Enabled 
+## <a name="enabled"></a> ICommandUI::Enabled 
 Enables or disables the user interface item for this command.
 ```
 property bool Enabled;
@@ -95,7 +95,7 @@ property bool Enabled;
 ## Remarks
 This property enables or disables the user interface item for this command. Set Enabled to TRUE to enable the item, FALSE to disable it.
 
-## <a name="icommandui__id"></a> ICommandUI::ID  
+## <a name="id"></a> ICommandUI::ID  
 Gets the ID of the user interface object represented by the ICommandUI object.
 ```
 property unsigned int ID;
@@ -103,7 +103,7 @@ property unsigned int ID;
 ## Remarks
 This property gets the ID (a handle) of the menu item, toolbar button, or other user interface object represented by the ICommandUI object.
 
-## <a name="icommandui__index"></a> ICommandUI::Index   
+## <a name="index"></a> ICommandUI::Index   
 Gets the index of the user interface object represented by the ICommandUI object.
 ```
 property unsigned int Index;
@@ -111,7 +111,7 @@ property unsigned int Index;
 ## Remarks
 This property gets the index (a handle) of the menu item, toolbar button, or other user interface object represented by the ICommandUI object.
 
-## <a name="icommandui__radio"></a> ICommandUI::Radio 
+## <a name="radio"></a> ICommandUI::Radio 
 Sets the user interface item for this command to the appropriate check state.
 ```
 property bool Radio;
@@ -119,7 +119,7 @@ property bool Radio;
 ## Remarks
 This property sets the user interface item for this command to the appropriate check state. Set Radio to TRUE to enable the item; otherwise FALSE.
 
-## <a name="icommandui__text"></a> ICommandUI::Text 
+## <a name="text"></a> ICommandUI::Text 
 Sets the text of the user interface item for this command.
 ```
 property String^ Text;

@@ -43,7 +43,7 @@ ATL's control-hosting code doesn't require you to use any ATL classes; you can s
 |[CAxWindow2T](../atl/reference/caxwindow2t-class.md)|Wraps an **"AtlAxWinLic80"** window, providing methods for creating the window, creating a control and/or attaching a licensed control to the window, and retrieving interface pointers on the host object.|  
 |[CComCompositeControl](../atl/reference/ccomcompositecontrol-class.md)|Acts as a base class for ActiveX control classes based on a dialog resource. Such controls can contain other ActiveX controls.|  
 |[CAxDialogImpl](../atl/reference/caxdialogimpl-class.md)|Acts as a base class for dialog classes based on a dialog resource. Such dialogs can contain ActiveX controls.|  
-|[CWindow](../atl/reference/cwindow-class.md)|Provides a method, [GetDlgControl](../atl/reference/cwindow-class.md#cwindow__getdlgcontrol), that will return an interface pointer on a control, given the ID of its host window. In addition, the Windows API wrappers exposed by `CWindow` generally make window management easier.|  
+|[CWindow](../atl/reference/cwindow-class.md)|Provides a method, [GetDlgControl](../atl/reference/cwindow-class.md#getdlgcontrol), that will return an interface pointer on a control, given the ID of its host window. In addition, the Windows API wrappers exposed by `CWindow` generally make window management easier.|  
   
 ## See Also  
  [Control Containment FAQ](../atl/atl-control-containment-faq.md)

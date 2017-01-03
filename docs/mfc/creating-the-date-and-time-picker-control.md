@@ -46,13 +46,13 @@ How the date and time picker control is created depends on whether you are using
   
 4.  Use the Properties window to map handler functions in the dialog class for any date time picker control [notification](../mfc/processing-notification-messages-in-date-and-time-picker-controls.md) messages you need to handle (see [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md)).  
   
-5.  In [OnInitDialog](../mfc/reference/cdialog-class.md#cdialog__oninitdialog), set any additional styles for the `CDateTimeCtrl` object.  
+5.  In [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog), set any additional styles for the `CDateTimeCtrl` object.  
   
 ### To use CDateTimeCtrl in a nondialog window  
   
 1.  Declare the control in the view or window class.  
   
-2.  Call the control's [Create](../mfc/reference/ctabctrl-class.md#ctabctrl__create) member function, possibly in [OnInitialUpdate](../mfc/reference/cview-class.md#cview__oninitialupdate), possibly as early as the parent window's [OnCreate](../mfc/reference/cwnd-class.md#cwnd__oncreate) handler function (if you're subclassing the control). Set the styles for the control.  
+2.  Call the control's [Create](../mfc/reference/ctabctrl-class.md#create) member function, possibly in [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate), possibly as early as the parent window's [OnCreate](../mfc/reference/cwnd-class.md#oncreate) handler function (if you're subclassing the control). Set the styles for the control.  
   
 ## See Also  
  [Using CDateTimeCtrl](../mfc/using-cdatetimectrl.md)   

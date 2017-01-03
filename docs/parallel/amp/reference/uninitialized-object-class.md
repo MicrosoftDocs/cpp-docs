@@ -50,7 +50,7 @@ class uninitialized_object : public runtime_exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[uninitialized_object::uninitialized_object Constructor] --brokenlink-- (#uninitialized_object::uninitialized_object%20Constructor.md)|Initializes a new instance of the `uninitialized_object` class.|  
+|[uninitialized_object::uninitialized_object Constructor](#ctor)|Initializes a new instance of the `uninitialized_object` class.|  
 
   
 ## Inheritance Hierarchy  
@@ -64,6 +64,24 @@ class uninitialized_object : public runtime_exception;
  **Header:** amprt.h  
   
  **Namespace:** Concurrency  
+## <a name="uninitialized_object__ctor"></a> unsupported_feature::unsupported_feature Constructor
+Constructs a new instance of the unsupported_feature exception.  
   
+### Syntax  
+  
+```  
+explicit unsupported_feature(  
+    const char * _Message ) throw();  
+  
+unsupported_feature() throw();  
+```  
+  
+### Parameters  
+ `_Message`  
+ A description of the error.  
+  
+### Return Value  
+ The `unsupported_feature` object. 
+
 ## See Also  
- [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)
+ [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

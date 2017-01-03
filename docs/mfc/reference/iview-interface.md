@@ -51,12 +51,12 @@ interface class IView
   
 |Name|Description|  
 |----------|-----------------|  
-|[IView::OnActivateView](#iview__onactivateview)|Called by MFC when a view is activated or deactivated.|  
-|[IView::OnInitialUpdate](#iview__oninitialupdate)|Called by the framework after the view is first attached to the document, but before the view is initially displayed.|  
-|[IView::OnUpdate](#iview__onupdate)|Called by MFC after the view's document has been modified; this function allows the view to update its display to reflect modifications.|  
+|[IView::OnActivateView](#onactivateview)|Called by MFC when a view is activated or deactivated.|  
+|[IView::OnInitialUpdate](#oninitialupdate)|Called by the framework after the view is first attached to the document, but before the view is initially displayed.|  
+|[IView::OnUpdate](#onupdate)|Called by MFC after the view's document has been modified; this function allows the view to update its display to reflect modifications.|  
   
 ## Remarks  
- `IView` implements several methods that `CWinFormsView` uses to forward common view notifications to a hosted managed control. These are [OnInitialUpdate](#iview__oninitialupdate), [OnUpdate](#iview__onupdate) and [OnActivateView](#iview__onactivateview).  
+ `IView` implements several methods that `CWinFormsView` uses to forward common view notifications to a hosted managed control. These are [OnInitialUpdate](#oninitialupdate), [OnUpdate](#onupdate) and [OnActivateView](#onactivateview).  
   
  `IView` is similar to [CView](../../mfc/reference/cview-class.md), but is used only with managed views and controls.  
   
@@ -66,7 +66,7 @@ interface class IView
 ## Requirements  
  Header: afxwinforms.h (defined in assembly atlmfc\lib\mfcmifc80.dll)  
 
-## <a name="iview__onactivateview"></a> IView::OnActivateView  
+## <a name="onactivateview"></a> IView::OnActivateView  
 Called by MFC when a view is activated or deactivated.
 ```
 void OnActivateView(bool activate);
@@ -75,13 +75,13 @@ void OnActivateView(bool activate);
 `activate`  
 Indicates whether the view is being activated or deactivated.  
 
-## <a name="iview__oninitialupdate"></a> IView::OnInitialUpdate
+## <a name="oninitialupdate"></a> IView::OnInitialUpdate
 Called by the framework after the view is first attached to the document, but before the view is initially displayed.
 ```
 void OnInitialUpdate();
 ```
 
-## <a name="iview__onupdate"></a> IView::OnUpdate 
+## <a name="onupdate"></a> IView::OnUpdate 
 Called by MFC after the view's document has been modified.  
 ```
 void OnUpdate();

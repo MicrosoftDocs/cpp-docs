@@ -49,33 +49,33 @@ class CMFCRibbonStatusBar : public CMFCRibbonBar
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonStatusBar::AddDynamicElement](#cmfcribbonstatusbar__adddynamicelement)|Adds a dynamic element to the ribbon status bar.|  
-|[CMFCRibbonStatusBar::AddElement](#cmfcribbonstatusbar__addelement)|Adds a new ribbon element to the ribbon status bar.|  
-|[CMFCRibbonStatusBar::AddExtendedElement](#cmfcribbonstatusbar__addextendedelement)|Adds a ribbon element to the extended area of the ribbon status bar.|  
-|[CMFCRibbonStatusBar::AddSeparator](#cmfcribbonstatusbar__addseparator)|Adds a separator to the ribbon status bar.|  
-|[CMFCRibbonStatusBar::Create](#cmfcribbonstatusbar__create)|Creates a ribbon status bar.|  
-|[CMFCRibbonStatusBar::CreateEx](#cmfcribbonstatusbar__createex)|Creates a ribbon status bar with an extended style.|  
-|[CMFCRibbonStatusBar::FindByID](#cmfcribbonstatusbar__findbyid)||  
-|[CMFCRibbonStatusBar::FindElement](#cmfcribbonstatusbar__findelement)|Returns a pointer to the element that has the specified command ID.|  
-|[CMFCRibbonStatusBar::GetCount](#cmfcribbonstatusbar__getcount)|Returns the number of elements that are located in the main area of the ribbon status bar.|  
-|[CMFCRibbonStatusBar::GetElement](#cmfcribbonstatusbar__getelement)|Returns a pointer to the element that is located at a specified index.|  
-|[CMFCRibbonStatusBar::GetExCount](#cmfcribbonstatusbar__getexcount)|Returns the number of elements that are located in the extended area of the ribbon status bar.|  
-|[CMFCRibbonStatusBar::GetExElement](#cmfcribbonstatusbar__getexelement)|Returns a pointer to the element that is located at a specified index in the extended area of the ribbon status bar.|  
-|[CMFCRibbonStatusBar::GetExtendedArea](#cmfcribbonstatusbar__getextendedarea)||  
-|[CMFCRibbonStatusBar::GetSpace](#cmfcribbonstatusbar__getspace)||  
-|[CMFCRibbonStatusBar::IsBottomFrame](#cmfcribbonstatusbar__isbottomframe)||  
-|[CMFCRibbonStatusBar::IsExtendedElement](#cmfcribbonstatusbar__isextendedelement)||  
-|[CMFCRibbonStatusBar::IsInformationMode](#cmfcribbonstatusbar__isinformationmode)|Determines whether information mode is enabled for the ribbon status bar.|  
-|[CMFCRibbonStatusBar::RecalcLayout](#cmfcribbonstatusbar__recalclayout)|(Overrides [CMFCRibbonBar::RecalcLayout](../../mfc/reference/cmfcribbonbar-class.md#cmfcribbonbar__recalclayout).)|  
-|[CMFCRibbonStatusBar::RemoveAll](#cmfcribbonstatusbar__removeall)|Removes all elements from the ribbon status bar.|  
-|[CMFCRibbonStatusBar::RemoveElement](#cmfcribbonstatusbar__removeelement)|Removes the element that has a specified command ID from the ribbon status bar.|  
-|[CMFCRibbonStatusBar::SetInformation](#cmfcribbonstatusbar__setinformation)|Enables or disables the information mode for the ribbon status bar.|  
+|[CMFCRibbonStatusBar::AddDynamicElement](#adddynamicelement)|Adds a dynamic element to the ribbon status bar.|  
+|[CMFCRibbonStatusBar::AddElement](#addelement)|Adds a new ribbon element to the ribbon status bar.|  
+|[CMFCRibbonStatusBar::AddExtendedElement](#addextendedelement)|Adds a ribbon element to the extended area of the ribbon status bar.|  
+|[CMFCRibbonStatusBar::AddSeparator](#addseparator)|Adds a separator to the ribbon status bar.|  
+|[CMFCRibbonStatusBar::Create](#create)|Creates a ribbon status bar.|  
+|[CMFCRibbonStatusBar::CreateEx](#createex)|Creates a ribbon status bar with an extended style.|  
+|[CMFCRibbonStatusBar::FindByID](#findbyid)||  
+|[CMFCRibbonStatusBar::FindElement](#findelement)|Returns a pointer to the element that has the specified command ID.|  
+|[CMFCRibbonStatusBar::GetCount](#getcount)|Returns the number of elements that are located in the main area of the ribbon status bar.|  
+|[CMFCRibbonStatusBar::GetElement](#getelement)|Returns a pointer to the element that is located at a specified index.|  
+|[CMFCRibbonStatusBar::GetExCount](#getexcount)|Returns the number of elements that are located in the extended area of the ribbon status bar.|  
+|[CMFCRibbonStatusBar::GetExElement](#getexelement)|Returns a pointer to the element that is located at a specified index in the extended area of the ribbon status bar.|  
+|[CMFCRibbonStatusBar::GetExtendedArea](#getextendedarea)||  
+|[CMFCRibbonStatusBar::GetSpace](#getspace)||  
+|[CMFCRibbonStatusBar::IsBottomFrame](#isbottomframe)||  
+|[CMFCRibbonStatusBar::IsExtendedElement](#isextendedelement)||  
+|[CMFCRibbonStatusBar::IsInformationMode](#isinformationmode)|Determines whether information mode is enabled for the ribbon status bar.|  
+|[CMFCRibbonStatusBar::RecalcLayout](#recalclayout)|(Overrides [CMFCRibbonBar::RecalcLayout](../../mfc/reference/cmfcribbonbar-class.md#recalclayout).)|  
+|[CMFCRibbonStatusBar::RemoveAll](#removeall)|Removes all elements from the ribbon status bar.|  
+|[CMFCRibbonStatusBar::RemoveElement](#removeelement)|Removes the element that has a specified command ID from the ribbon status bar.|  
+|[CMFCRibbonStatusBar::SetInformation](#setinformation)|Enables or disables the information mode for the ribbon status bar.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonStatusBar::OnDrawInformation](#cmfcribbonstatusbar__ondrawinformation)|Displays the information string that appears on the ribbon status bar when the information mode is enabled.|  
+|[CMFCRibbonStatusBar::OnDrawInformation](#ondrawinformation)|Displays the information string that appears on the ribbon status bar when the information mode is enabled.|  
   
 ## Remarks  
  Users can change the visibility of ribbon elements on a ribbon status bar by using the built-in context menu for the ribbon status bar. You can add or remove elements dynamically.  
@@ -108,7 +108,7 @@ class CMFCRibbonStatusBar : public CMFCRibbonBar
 ## Requirements  
  **Header:** afxribbonstatusbar.h  
   
-##  <a name="cmfcribbonstatusbar__adddynamicelement"></a>  CMFCRibbonStatusBar::AddDynamicElement  
+##  <a name="adddynamicelement"></a>  CMFCRibbonStatusBar::AddDynamicElement  
  Adds a dynamic element to the ribbon status bar.  
   
 ```  
@@ -122,7 +122,7 @@ void AddDynamicElement(CMFCRibbonBaseElement* pElement);
 ### Remarks  
  Unlike regular elements, dynamic elements are not customizable and the customize menu of the status bar does not display them.  
   
-##  <a name="cmfcribbonstatusbar__addelement"></a>  CMFCRibbonStatusBar::AddElement  
+##  <a name="addelement"></a>  CMFCRibbonStatusBar::AddElement  
  Adds a new ribbon element to the ribbon status bar.  
   
 ```  
@@ -142,7 +142,7 @@ void AddElement(
  [in] `bIsVisible`  
  `TRUE` if you want to add the element as visible, `FALSE` if you want to add the element as hidden.  
   
-##  <a name="cmfcribbonstatusbar__addextendedelement"></a>  CMFCRibbonStatusBar::AddExtendedElement  
+##  <a name="addextendedelement"></a>  CMFCRibbonStatusBar::AddExtendedElement  
  Adds a ribbon element to the extended area of the ribbon status bar.  
   
 ```  
@@ -165,7 +165,7 @@ void AddExtendedElement(
 ### Remarks  
  The extended area is on the right side of the status bar control.  
   
-##  <a name="cmfcribbonstatusbar__addseparator"></a>  CMFCRibbonStatusBar::AddSeparator  
+##  <a name="addseparator"></a>  CMFCRibbonStatusBar::AddSeparator  
  Adds a separator to the ribbon status bar.  
   
 ```  
@@ -173,9 +173,9 @@ void AddSeparator();
 ```  
   
 ### Remarks  
- The framework adds a separator after the method [CMFCRibbonStatusBar::AddElement](#cmfcribbonstatusbar__addelement). inserts the last element.  
+ The framework adds a separator after the method [CMFCRibbonStatusBar::AddElement](#addelement). inserts the last element.  
   
-##  <a name="cmfcribbonstatusbar__create"></a>  CMFCRibbonStatusBar::Create  
+##  <a name="create"></a>  CMFCRibbonStatusBar::Create  
  Creates a ribbon status bar.  
   
 ```  
@@ -198,7 +198,7 @@ BOOL Create(
 ### Return Value  
  `TRUE` if the status bar is created successfully, `FALSE` otherwise.  
   
-##  <a name="cmfcribbonstatusbar__createex"></a>  CMFCRibbonStatusBar::CreateEx  
+##  <a name="createex"></a>  CMFCRibbonStatusBar::CreateEx  
  Creates a ribbon status bar that has an extended style.  
   
 ```  
@@ -225,7 +225,7 @@ BOOL CreateEx(
 ### Return Value  
  `TRUE` if the status bar is created successfully, `FALSE` otherwise.  
   
-##  <a name="cmfcribbonstatusbar__findbyid"></a>  CMFCRibbonStatusBar::FindByID  
+##  <a name="findbyid"></a>  CMFCRibbonStatusBar::FindByID  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -241,7 +241,7 @@ CMFCRibbonBaseElement* FindByID(
   
 ### Remarks  
   
-##  <a name="cmfcribbonstatusbar__findelement"></a>  CMFCRibbonStatusBar::FindElement  
+##  <a name="findelement"></a>  CMFCRibbonStatusBar::FindElement  
  Returns a pointer to the element that has the specified command ID.  
   
 ```  
@@ -255,7 +255,7 @@ CMFCRibbonBaseElement* FindElement(UINT uiID);
 ### Return Value  
  A pointer to the element that has the specified command ID. `NULL` if there is no such element.  
   
-##  <a name="cmfcribbonstatusbar__getcount"></a>  CMFCRibbonStatusBar::GetCount  
+##  <a name="getcount"></a>  CMFCRibbonStatusBar::GetCount  
  Returns the number of elements that are located in the main area of the ribbon status bar.  
   
 ```  
@@ -267,7 +267,7 @@ int GetCount() const;
 ### Return Value  
  The number of elements that are located in the main area of the ribbon status bar.  
   
-##  <a name="cmfcribbonstatusbar__getelement"></a>  CMFCRibbonStatusBar::GetElement  
+##  <a name="getelement"></a>  CMFCRibbonStatusBar::GetElement  
  Returns a pointer to the element that is located at a specified index.  
   
 ```  
@@ -283,7 +283,7 @@ CMFCRibbonBaseElement* GetElement(int nIndex);
   
 ### Remarks  
   
-##  <a name="cmfcribbonstatusbar__getexcount"></a>  CMFCRibbonStatusBar::GetExCount  
+##  <a name="getexcount"></a>  CMFCRibbonStatusBar::GetExCount  
  Returns the number of elements that are located in the extended area of the ribbon status bar.  
   
 ```  
@@ -295,7 +295,7 @@ int GetExCount() const;
 ### Return Value  
  The number of elements that are located in the extended area of the ribbon status bar.  
   
-##  <a name="cmfcribbonstatusbar__getexelement"></a>  CMFCRibbonStatusBar::GetExElement  
+##  <a name="getexelement"></a>  CMFCRibbonStatusBar::GetExElement  
  Returns a pointer to the element that is located at a specified index in the extended area of the ribbon status bar. The extended area is on the right side of the status bar control.  
   
 ```  
@@ -311,7 +311,7 @@ CMFCRibbonBaseElement* GetExElement(int nIndex);
   
 ### Remarks  
   
-##  <a name="cmfcribbonstatusbar__getextendedarea"></a>  CMFCRibbonStatusBar::GetExtendedArea  
+##  <a name="getextendedarea"></a>  CMFCRibbonStatusBar::GetExtendedArea  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -327,7 +327,7 @@ virtual BOOL GetExtendedArea(CRect& rect) const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonstatusbar__getspace"></a>  CMFCRibbonStatusBar::GetSpace  
+##  <a name="getspace"></a>  CMFCRibbonStatusBar::GetSpace  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -340,7 +340,7 @@ int GetSpace() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonstatusbar__isbottomframe"></a>  CMFCRibbonStatusBar::IsBottomFrame  
+##  <a name="isbottomframe"></a>  CMFCRibbonStatusBar::IsBottomFrame  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -353,7 +353,7 @@ BOOL IsBottomFrame() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonstatusbar__isextendedelement"></a>  CMFCRibbonStatusBar::IsExtendedElement  
+##  <a name="isextendedelement"></a>  CMFCRibbonStatusBar::IsExtendedElement  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -369,7 +369,7 @@ BOOL IsExtendedElement(CMFCRibbonBaseElement* pElement) const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonstatusbar__isinformationmode"></a>  CMFCRibbonStatusBar::IsInformationMode  
+##  <a name="isinformationmode"></a>  CMFCRibbonStatusBar::IsInformationMode  
  Determines whether information mode is enabled for the ribbon status bar.  
   
 ```  
@@ -384,7 +384,7 @@ BOOL IsInformationMode() const;
 ### Remarks  
  In information mode, the status bar hides all regular panes and displays a message string.  
   
-##  <a name="cmfcribbonstatusbar__ondrawinformation"></a>  CMFCRibbonStatusBar::OnDrawInformation  
+##  <a name="ondrawinformation"></a>  CMFCRibbonStatusBar::OnDrawInformation  
  Displays the string that appears on the ribbon status bar when the information mode is enabled.  
   
 ```  
@@ -405,9 +405,9 @@ virtual void OnDrawInformation(
  The bounding rectangle.  
   
 ### Remarks  
- Override this method in a derived class if you want to customize the appearance of the information string on the status bar. Use the [CMFCRibbonStatusBar::SetInformation](#cmfcribbonstatusbar__setinformation) method to put the status bar in information mode. In this mode, the status bar hides all panes and displays the information string specified by `strInfo`.  
+ Override this method in a derived class if you want to customize the appearance of the information string on the status bar. Use the [CMFCRibbonStatusBar::SetInformation](#setinformation) method to put the status bar in information mode. In this mode, the status bar hides all panes and displays the information string specified by `strInfo`.  
   
-##  <a name="cmfcribbonstatusbar__recalclayout"></a>  CMFCRibbonStatusBar::RecalcLayout  
+##  <a name="recalclayout"></a>  CMFCRibbonStatusBar::RecalcLayout  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -416,14 +416,14 @@ virtual void RecalcLayout();
   
 ### Remarks  
   
-##  <a name="cmfcribbonstatusbar__removeall"></a>  CMFCRibbonStatusBar::RemoveAll  
+##  <a name="removeall"></a>  CMFCRibbonStatusBar::RemoveAll  
  Removes all elements from the ribbon status bar.  
   
 ```  
 void RemoveAll();
 ```  
   
-##  <a name="cmfcribbonstatusbar__removeelement"></a>  CMFCRibbonStatusBar::RemoveElement  
+##  <a name="removeelement"></a>  CMFCRibbonStatusBar::RemoveElement  
  Removes the element that has a specified command ID from the ribbon status bar.  
   
 ```  
@@ -437,7 +437,7 @@ BOOL RemoveElement(UINT uiID);
 ### Return Value  
  `TRUE` if an element with the specified `uiID` is removed. `FALSE` otherwise.  
   
-##  <a name="cmfcribbonstatusbar__setinformation"></a>  CMFCRibbonStatusBar::SetInformation  
+##  <a name="setinformation"></a>  CMFCRibbonStatusBar::SetInformation  
  Enables or disables the information mode for the ribbon status bar.  
   
 ```  

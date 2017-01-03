@@ -1,5 +1,5 @@
 ---
-title: "array Class (STL) | Microsoft Docs"
+title: "array Class (C++ Standard Library)| Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# array Class (STL)
+# array Class (C++ Standard Library)
 Describes an object that controls a sequence of length `N` of elements of type `Ty`. The sequence is stored as an array of `Ty`, contained in the `array<Ty, N>` object.  
   
 ## Syntax  

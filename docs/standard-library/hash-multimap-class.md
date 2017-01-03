@@ -43,7 +43,7 @@ translation.priority.ht:
 > [!NOTE]
 >  This API is obsolete. The alternative is [unordered_multimap Class](../standard-library/unordered-multimap-class.md).  
   
- The container class hash_multimap is an extension of the Standard Template Library and is used for the storage and fast retrieval of data from a collection in which each element is a pair that has a sort key whose value need not be unique and an associated data value.  
+ The container class hash_multimap is an extension of the C++ Standard Library and is used for the storage and fast retrieval of data from a collection in which each element is a pair that has a sort key whose value need not be unique and an associated data value.  
   
 ## Syntax  
   
@@ -1338,7 +1338,7 @@ Allocator get_allocator() const;
  The allocator used by the hash_multimap.  
   
 ### Remarks  
- Allocators for the hash_multimap class specify how the class manages storage. The default allocators supplied with STL container classes is sufficient for most programming needs. Writing and using your own allocator class is an advanced C++ topic.  
+ Allocators for the hash_multimap class specify how the class manages storage. The default allocators supplied with C++ Standard Library container classes are sufficient for most programming needs. Writing and using your own allocator class is an advanced C++ topic.  
   
  In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
   

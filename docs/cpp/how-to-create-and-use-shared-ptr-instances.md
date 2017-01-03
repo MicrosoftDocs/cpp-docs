@@ -48,7 +48,7 @@ The `shared_ptr` type is a smart pointer in the C++ standard library that is des
  [!code-cpp[stl_smart_pointers#2](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_2.cpp)]  
   
 ## Example  
- `shared_ptr` is also helpful in Standard Template Library (STL) containers when you are using algorithms that copy elements. You can wrap elements in a `shared_ptr`, and then copy it into other containers with the understanding that the underlying memory is valid as long as you need it, and no longer. The following example shows how to use the `replace_copy_if` algorithm on `shared_ptr` instances in a vector.  
+ `shared_ptr` is also helpful in C++ Standard Library containers when you are using algorithms that copy elements. You can wrap elements in a `shared_ptr`, and then copy it into other containers with the understanding that the underlying memory is valid as long as you need it, and no longer. The following example shows how to use the `replace_copy_if` algorithm on `shared_ptr` instances in a vector.  
   
  [!code-cpp[stl_smart_pointers#4](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_3.cpp)]  
   

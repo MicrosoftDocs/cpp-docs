@@ -49,17 +49,17 @@ class CMFCToolBarFontComboBox : public CMFCToolBarComboBoxButton
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCToolBarFontComboBox::CMFCToolBarFontComboBox](#cmfctoolbarfontcombobox__cmfctoolbarfontcombobox)|Constructs a `CMFCToolBarFontComboBox` object.|  
+|[CMFCToolBarFontComboBox::CMFCToolBarFontComboBox](#cmfctoolbarfontcombobox)|Constructs a `CMFCToolBarFontComboBox` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCToolBarFontComboBox::GetFontDesc](#cmfctoolbarfontcombobox__getfontdesc)|Returns a pointer to the `CMFCFontInfo` object for a specified index in the combo box.|  
-|[CMFCToolBarFontComboBox::SetFont](#cmfctoolbarfontcombobox__setfont)|Selects a font in the font combo box according to either the name of the font, or the prefix and character set of the font.|  
+|[CMFCToolBarFontComboBox::GetFontDesc](#getfontdesc)|Returns a pointer to the `CMFCFontInfo` object for a specified index in the combo box.|  
+|[CMFCToolBarFontComboBox::SetFont](#setfont)|Selects a font in the font combo box according to either the name of the font, or the prefix and character set of the font.|  
   
 ### Data Members  
- [CMFCToolBarFontComboBox::m_nFontHeight](#cmfctoolbarfontcombobox__m_nfontheight)  
+ [CMFCToolBarFontComboBox::m_nFontHeight](#m_nfontheight)  
  The height of the characters in the font combo box.  
   
 ## Remarks  
@@ -69,11 +69,11 @@ class CMFCToolBarFontComboBox : public CMFCToolBarComboBoxButton
   
 2.  Construct a `CMFCToolBarFontComboBox` object.  
   
-3.  In the message handler that processes the `AFX_WM_RESETTOOLBAR` message, replace the original button with the new combo box button by using [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#cmfctoolbar__replacebutton).  
+3.  In the message handler that processes the `AFX_WM_RESETTOOLBAR` message, replace the original button with the new combo box button by using [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton).  
   
-4.  Synchronize the font that is selected in the combo box with the font in the document by using the [CMFCToolBarFontComboBox::SetFont](#cmfctoolbarfontcombobox__setfont) method.  
+4.  Synchronize the font that is selected in the combo box with the font in the document by using the [CMFCToolBarFontComboBox::SetFont](#setfont) method.  
   
- To synchronize the document's font with the font selected in the combo box, use the [CMFCToolBarFontComboBox::GetFontDesc](#cmfctoolbarfontcombobox__getfontdesc) method to retrieve the attributes of the selected font, and use those attributes to create a [CFont Class](../../mfc/reference/cfont-class.md) object.  
+ To synchronize the document's font with the font selected in the combo box, use the [CMFCToolBarFontComboBox::GetFontDesc](#getfontdesc) method to retrieve the attributes of the selected font, and use those attributes to create a [CFont Class](../../mfc/reference/cfont-class.md) object.  
   
  The font combo box button calls the Win32 function [EnumFontFamiliesEx](http://msdn.microsoft.com/library/windows/desktop/dd162620) to determine the screen and printer fonts available to the system.  
   
@@ -89,7 +89,7 @@ class CMFCToolBarFontComboBox : public CMFCToolBarComboBoxButton
 ## Requirements  
  **Header:** afxtoolbarfontcombobox.h  
   
-##  <a name="cmfctoolbarfontcombobox__cmfctoolbarfontcombobox"></a>  CMFCToolBarFontComboBox::CMFCToolBarFontComboBox  
+##  <a name="cmfctoolbarfontcombobox"></a>  CMFCToolBarFontComboBox::CMFCToolBarFontComboBox  
  Constructs a [CMFCToolBarFontComboBox](../../mfc/reference/cmfctoolbarfontcombobox-class.md) object.  
   
 ```  
@@ -150,11 +150,11 @@ CMFCToolBarFontComboBox();
  Usually, `CMFCToolBarFontComboBox` objects store the list of available fonts in a single shared `CObList` object. If you use the second overload of the constructor and provide a valid pointer to `pLstFontsExternal`, that `CMFCToolBarFontComboBox` object will instead fill the `CObList` that `pLstFontsExternal` points to with available fonts.  
   
 ### Example  
- The following example demonstrates how to construct a `CMFCToolBarFontComboBox` object. This code snippet is part of the [Word Pad sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to construct a `CMFCToolBarFontComboBox` object. This code snippet is part of the [Word Pad sample](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_WordPad#7](../../mfc/reference/codesnippet/cpp/cmfctoolbarfontcombobox-class_1.cpp)]  
   
-##  <a name="cmfctoolbarfontcombobox__getfontdesc"></a>  CMFCToolBarFontComboBox::GetFontDesc  
+##  <a name="getfontdesc"></a>  CMFCToolBarFontComboBox::GetFontDesc  
  Returns a pointer to the `CMFCFontInfo` object for a specified index in the combo box.  
   
 ```  
@@ -170,7 +170,7 @@ const CMFCFontInfo* GetFontDesc(int iIndex=-1) const;
 ### Return Value  
  A pointer to a `CMFCFontInfo` object. If `iIndex` does not specify a valid item index, the return value is `NULL`.  
   
-##  <a name="cmfctoolbarfontcombobox__m_nfontheight"></a>  CMFCToolBarFontComboBox::m_nFontHeight  
+##  <a name="m_nfontheight"></a>  CMFCToolBarFontComboBox::m_nFontHeight  
  Specifies the height, in pixels, of characters in the font combo box if the combo box has owner draw style.  
   
 ```  
@@ -180,7 +180,7 @@ static int m_nFontHeight
 ### Remarks  
  If the `m_nFontHeight` variable is 0, the height is calculated automatically according to the default font of the combo box. The height includes both the ascent of characters above the baseline and the descent of characters underneath the baseline.  
   
-##  <a name="cmfctoolbarfontcombobox__setfont"></a>  CMFCToolBarFontComboBox::SetFont  
+##  <a name="setfont"></a>  CMFCToolBarFontComboBox::SetFont  
  Selects the font in the font combo box according to the font name and character set that are specified in the parameters.  
   
 ```  
@@ -213,7 +213,7 @@ BOOL SetFont(
  [CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md)   
  [CMFCToolBarComboBoxButton Class](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md)   
  [CMFCFontInfo Class](../../mfc/reference/cmfcfontinfo-class.md)   
- [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#cmfctoolbar__replacebutton)   
+ [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)   
  [Walkthrough: Putting Controls On Toolbars](../../mfc/walkthrough-putting-controls-on-toolbars.md)
 
 

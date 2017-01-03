@@ -50,7 +50,7 @@ class CMFCColorPopupMenu : public CMFCPopupMenu
 |||  
 |-|-|  
 |Name|Description|  
-|[CMFCColorPopupMenu::CMFCColorPopupMenu](#cmfccolorpopupmenu__cmfccolorpopupmenu)|Constructs a `CMFCColorPopupMenu` object.|  
+|[CMFCColorPopupMenu::CMFCColorPopupMenu](#cmfccolorpopupmenu)|Constructs a `CMFCColorPopupMenu` object.|  
 |`CMFCColorPopupMenu::~CMFCColorPopupMenu`|Destructor.|  
   
 ### Public Methods  
@@ -58,10 +58,10 @@ class CMFCColorPopupMenu : public CMFCPopupMenu
 |||  
 |-|-|  
 |Name|Description|  
-|[CMFCColorPopupMenu::CreateTearOffBar](#cmfccolorpopupmenu__createtearoffbar)|Creates a dockable tear-off color bar. (Overrides [CMFCPopupMenu::CreateTearOffBar](../../mfc/reference/cmfcpopupmenu-class.md#cmfcpopupmenu__createtearoffbar).)|  
-|[CMFCColorPopupMenu::GetMenuBar](#cmfccolorpopupmenu__getmenubar)|Returns the [CMFCPopupMenuBar](../../mfc/reference/cmfcpopupmenubar-class.md) that is embedded inside the pop-up menu. (Overrides [CMFCPopupMenu::GetMenuBar](../../mfc/reference/cmfcpopupmenu-class.md#cmfcpopupmenu__getmenubar).)|  
+|[CMFCColorPopupMenu::CreateTearOffBar](#createtearoffbar)|Creates a dockable tear-off color bar. (Overrides [CMFCPopupMenu::CreateTearOffBar](../../mfc/reference/cmfcpopupmenu-class.md#createtearoffbar).)|  
+|[CMFCColorPopupMenu::GetMenuBar](#getmenubar)|Returns the [CMFCPopupMenuBar](../../mfc/reference/cmfcpopupmenubar-class.md) that is embedded inside the pop-up menu. (Overrides [CMFCPopupMenu::GetMenuBar](../../mfc/reference/cmfcpopupmenu-class.md#getmenubar).)|  
 |`CMFCColorPopupMenu::GetThisClass`|Used by the framework to obtain a pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|  
-|[CMFCColorPopupMenu::SetPropList](#cmfccolorpopupmenu__setproplist)|Sets the property grid control object of the embedded `CMFCColorBar` object.|  
+|[CMFCColorPopupMenu::SetPropList](#setproplist)|Sets the property grid control object of the embedded `CMFCColorBar` object.|  
   
 ### Data Members  
   
@@ -72,7 +72,7 @@ class CMFCColorPopupMenu : public CMFCPopupMenu
 |`m_wndColorBar`|The `CMFCColorBar` object that provides color selection.|  
   
 ### Remarks  
- This class inherits the pop-up menu functionality of the `CMFCPopupMenu` class and manages a `CMFCColorBar` object that provides color selection. When the toolbar framework is in customization mode and the `m_bEnabledInCustomizeMode` member is set to `FALSE`, the color bar object is not shown. For more information about customization mode, see [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#cmfctoolbar__iscustomizemode)  
+ This class inherits the pop-up menu functionality of the `CMFCPopupMenu` class and manages a `CMFCColorBar` object that provides color selection. When the toolbar framework is in customization mode and the `m_bEnabledInCustomizeMode` member is set to `FALSE`, the color bar object is not shown. For more information about customization mode, see [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode)  
   
  For more information about `CMFCColorBar`, see [CMFCColorBar Class](../../mfc/reference/cmfccolorbar-class.md).  
   
@@ -94,7 +94,7 @@ class CMFCColorPopupMenu : public CMFCPopupMenu
 ## Requirements  
  **Header:** afxcolorpopupmenu.h  
   
-##  <a name="cmfccolorpopupmenu__cmfccolorpopupmenu"></a>  CMFCColorPopupMenu::CMFCColorPopupMenu  
+##  <a name="cmfccolorpopupmenu"></a>  CMFCColorPopupMenu::CMFCColorPopupMenu  
  Constructs a `CMFCColorPopupMenu` object.  
   
 ```  
@@ -190,7 +190,7 @@ CMFCColorPopupMenu(
   
  [!code-cpp[NVC_MFC_RibbonApp#34](../../mfc/reference/codesnippet/cpp/cmfccolorpopupmenu-class_1.cpp)]  
   
-##  <a name="cmfccolorpopupmenu__createtearoffbar"></a>  CMFCColorPopupMenu::CreateTearOffBar  
+##  <a name="createtearoffbar"></a>  CMFCColorPopupMenu::CreateTearOffBar  
  Creates a dockable tear-off color bar.  
   
 ```  
@@ -215,7 +215,7 @@ virtual CPane* CreateTearOffBar(
 ### Remarks  
  This method creates a [CMFCColorBar Class](../../mfc/reference/cmfccolorbar-class.md) object and casts it to a [CPane Class](../../mfc/reference/cpane-class.md) pointer. You can cast this value back to a [CMFCColorBar Class](../../mfc/reference/cmfccolorbar-class.md) pointer by using one of the casting macros described in [Type Casting of MFC Class Objects](../../mfc/reference/type-casting-of-mfc-class-objects.md).  
   
-##  <a name="cmfccolorpopupmenu__getmenubar"></a>  CMFCColorPopupMenu::GetMenuBar  
+##  <a name="getmenubar"></a>  CMFCColorPopupMenu::GetMenuBar  
  Returns the [CMFCPopupMenuBar](../../mfc/reference/cmfcpopupmenubar-class.md) that is embedded inside the pop-up menu.  
   
 ```  
@@ -228,7 +228,7 @@ virtual CMFCPopupMenuBar* GetMenuBar();
 ### Remarks  
  The color pop-up menu has an embedded [CMFCPopupMenuBar Class](../../mfc/reference/cmfcpopupmenubar-class.md) object. Override this method in a derived class if your application uses a different embedded type.  
   
-##  <a name="cmfccolorpopupmenu__setproplist"></a>  CMFCColorPopupMenu::SetPropList  
+##  <a name="setproplist"></a>  CMFCColorPopupMenu::SetPropList  
  Sets the property grid control object of the embedded `CMFCColorBar` object.  
   
 ```  

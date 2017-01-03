@@ -41,7 +41,7 @@ The following code example modifies the OnPaint event handler to retrieve a poin
  The <xref:System.Drawing.Graphics> and <xref:System.Drawing.Image> classes are both in the <xref:System.Drawing?displayProperty=fullName> namespace.  
   
 > [!NOTE]
->  GDI+ is included with Windows XP and is available as a redistributable for Windows NT 4.0 SP 6, Windows 2000, Windows 98, and Windows Me. To download the latest redistributable, see [http://go.microsoft.com/fwlink/?linkid=11232](http://go.microsoft.com/fwlink/?linkid=11232). For more information, see the GDI+ SDK documentation at [GDI+](_gdiplus_GDI_start_cpp).  
+>  GDI+ is included with Windows XP and is available as a redistributable for Windows NT 4.0 SP 6, Windows 2000, Windows 98, and Windows Me. To download the latest redistributable, see [http://go.microsoft.com/fwlink/?linkid=11232](http://go.microsoft.com/fwlink/?linkid=11232).   
   
 ## Example  
   

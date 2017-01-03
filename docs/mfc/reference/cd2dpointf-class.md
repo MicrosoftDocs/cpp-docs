@@ -50,23 +50,23 @@ class CD2DPointF : public D2D1_POINT_2F;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CD2DPointF::CD2DPointF](#cd2dpointf__cd2dpointf)|Overloaded. Constructs a `CD2DPointF` object from `D2D1_POINT_2F` object.|  
+|[CD2DPointF::CD2DPointF](#cd2dpointf)|Overloaded. Constructs a `CD2DPointF` object from `D2D1_POINT_2F` object.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CD2DPointF::operator CPoint](#cd2dpointf__operator_cpoint)|Converts `CD2DPointF` to `CPoint` object.|  
+|[CD2DPointF::operator CPoint](#operator_cpoint)|Converts `CD2DPointF` to `CPoint` object.|  
   
 ## Inheritance Hierarchy  
  `D2D1_POINT_2F`  
   
- [CD2DPointF](../../mfc/reference/cd2dpointf-class.md)  
+ `CD2DPointF`  
   
 ## Requirements  
  **Header:** afxrendertarget.h  
   
-##  <a name="cd2dpointf__cd2dpointf"></a>  CD2DPointF::CD2DPointF  
+##  <a name="cd2dpointf"></a>  CD2DPointF::CD2DPointF  
  Constructs a CD2DPointF object from CPoint object.  
   
 ```  
@@ -97,7 +97,7 @@ CD2DPointF(
  `fY`  
  source Y  
   
-##  <a name="cd2dpointf__operator_cpoint"></a>  CD2DPointF::operator CPoint  
+##  <a name="operator_cpoint"></a>  CD2DPointF::operator CPoint  
  Converts CD2DPointF to CPoint object.  
   
 ```  

@@ -54,7 +54,7 @@ COM property pages provide a user interface for setting the properties (or calli
  Lists the steps for implementing property pages, including methods to override. Walks you through a complete example based on the ATLPages sample program.  
   
 ## Related Sections  
- [ATLPages Sample](../top/visual-cpp-samples.md)  
+ [ATLPages Sample](../visual-cpp-samples.md)  
  The sample abstract for the ATLPages sample, which implements a property page using `IPropertyPageImpl`.  
   
  [ATL](../atl/active-template-library-atl-concepts.md)  

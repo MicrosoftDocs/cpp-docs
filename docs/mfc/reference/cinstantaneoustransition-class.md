@@ -50,19 +50,19 @@ class CInstantaneousTransition : public CBaseTransition;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CInstantaneousTransition::CInstantaneousTransition](#cinstantaneoustransition__cinstantaneoustransition)|Constructs a transition object and initializes its final value.|  
+|[CInstantaneousTransition::CInstantaneousTransition](#cinstantaneoustransition)|Constructs a transition object and initializes its final value.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CInstantaneousTransition::Create](#cinstantaneoustransition__create)|Calls the transition library to create encapsulated transition COM object. (Overrides [CBaseTransition::Create](../../mfc/reference/cbasetransition-class.md#cbasetransition__create).)|  
+|[CInstantaneousTransition::Create](#create)|Calls the transition library to create encapsulated transition COM object. (Overrides [CBaseTransition::Create](../../mfc/reference/cbasetransition-class.md#create).)|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CInstantaneousTransition::m_dblFinalValue](#cinstantaneoustransition__m_dblfinalvalue)|The value of the animation variable at the end of the transition.|  
+|[CInstantaneousTransition::m_dblFinalValue](#m_dblfinalvalue)|The value of the animation variable at the end of the transition.|  
   
 ## Remarks  
  During an instantaneous transition, the value of the animation variable changes instantly from its current value to a specified final value. The duration of this transition is always zero. Because all transitions are cleared automatically, it's recommended to allocated them using operator new. The encapsulated IUIAnimationTransition COM object is created by CAnimationController::AnimateGroup, until then it's NULL. Changing member variables after creation of this COM object has no effect.  
@@ -77,7 +77,7 @@ class CInstantaneousTransition : public CBaseTransition;
 ## Requirements  
  **Header:** afxanimationcontroller.h  
   
-##  <a name="cinstantaneoustransition__cinstantaneoustransition"></a>  CInstantaneousTransition::CInstantaneousTransition  
+##  <a name="cinstantaneoustransition"></a>  CInstantaneousTransition::CInstantaneousTransition  
  Constructs a transition object and initializes its final value.  
   
 ```  
@@ -88,7 +88,7 @@ CInstantaneousTransition(DOUBLE dblFinalValue);
  `dblFinalValue`  
  The value of the animation variable at the end of the transition.  
   
-##  <a name="cinstantaneoustransition__create"></a>  CInstantaneousTransition::Create  
+##  <a name="create"></a>  CInstantaneousTransition::Create  
  Calls the transition library to create encapsulated transition COM object.  
   
 ```  
@@ -105,7 +105,7 @@ virtual BOOL Create(
 ### Return Value  
  TRUE if transition is created successfully; otherwise FALSE.  
   
-##  <a name="cinstantaneoustransition__m_dblfinalvalue"></a>  CInstantaneousTransition::m_dblFinalValue  
+##  <a name="m_dblfinalvalue"></a>  CInstantaneousTransition::m_dblFinalValue  
  The value of the animation variable at the end of the transition.  
   
 ```  

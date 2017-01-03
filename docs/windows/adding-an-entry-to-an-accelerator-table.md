@@ -43,7 +43,7 @@ translation.priority.ht:
   
 2.  Right-click within the accelerator table and choose **New Accelerator** from the shortcut menu, or click on the empty row entry at the bottom of the table.  
   
-3.  Select an [ID](Id%20Property.xml) from the drop-down list in the ID box or type a new ID in the **ID** box.  
+3.  Select an [ID](id-property.md) from the drop-down list in the ID box or type a new ID in the **ID** box.  
   
 4.  Type the [Key](../windows/accelerator-key-property.md) you want to use as an accelerator or right-click and choose **Next Key Typed** from the shortcut menu to set a key combination (the **Next Key Typed** command is also available from the **Edit** menu).  
   

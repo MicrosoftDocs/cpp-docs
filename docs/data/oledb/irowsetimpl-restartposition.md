@@ -54,7 +54,7 @@ Repositions the next fetch position to its initial position; that is, its positi
  See [IRowset::RestartPosition](https://msdn.microsoft.com/en-us/library/ms712877.aspx) in the *OLE DB Programmer's Reference*.  
   
 ## Remarks  
- The rowset position is undefined until **GetNextRow** is called. You can move backwards in a rowet by calling [RestartPosition](#vcrefirowsetimplrestartposition) and then fetching or scrolling backwards.  
+ The rowset position is undefined until **GetNextRow** is called. You can move backwards in a rowet by calling `RestartPosition` and then fetching or scrolling backwards.  
   
 ## Requirements  
  **Header:** atldb.h  

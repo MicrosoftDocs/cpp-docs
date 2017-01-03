@@ -145,7 +145,7 @@ IResourceManager* __cdecl CreateResourceManager();
 ### Remarks  
  Multiple subsequent calls to this method will return the same instance of the Resource Manager. Each call to the method increments a reference count on the Resource Manager, and must be matched with a call to the [IResourceManager::Release](http://msdn.microsoft.com/en-us/5d1356ec-fbd3-4284-a361-1e9e20bbb522) method when your scheduler is done communicating with the Resource Manager.  
   
- [unsupported_os](../../../parallel/concrt/reference/unsupported-os-class.md) is thrown if the operating system is not supported by the Concurrency Runtime.  
+ [unsupported_os](unsupported-os-class.md) is thrown if the operating system is not supported by the Concurrency Runtime.  
   
 ##  <a name="create_task"></a>  create_task  
  Creates a PPL [task](http://msdn.microsoft.com/en-us/5389e8a5-5038-40b6-844a-55e9b58ad35f) object. `create_task` can be used anywhere you would have used a task constructor. It is provided mainly for convenience, because it allows use of the `auto` keyword while creating tasks.  
@@ -249,7 +249,7 @@ IResourceManager::OSVersion __cdecl GetOSVersion();
  An enumerated value representing the operating system.  
   
 ### Remarks  
- [unsupported_os](../../../parallel/concrt/reference/unsupported-os-class.md) is thrown if the operating system is not supported by the Concurrency Runtime.  
+ [unsupported_os](unsupported-os-class.md) is thrown if the operating system is not supported by the Concurrency Runtime.  
   
 ##  <a name="getprocessorcount"></a>  GetProcessorCount  
  Returns the number of hardware threads on the underlying system.  
@@ -262,7 +262,7 @@ unsigned int __cdecl GetProcessorCount();
  The number of hardware threads.  
   
 ### Remarks  
- [unsupported_os](../../../parallel/concrt/reference/unsupported-os-class.md) is thrown if the operating system is not supported by the Concurrency Runtime.  
+ [unsupported_os](unsupported-os-class.md) is thrown if the operating system is not supported by the Concurrency Runtime.  
   
 ##  <a name="getprocessornodecount"></a>  GetProcessorNodeCount  
  Returns the number of NUMA nodes or processor packages on the underlying system.  
@@ -277,7 +277,7 @@ unsigned int __cdecl GetProcessorNodeCount();
 ### Remarks  
  If the system contains more NUMA nodes than processor packages, the number of NUMA nodes is returned, otherwise, the number of processor packages is returned.  
   
- [unsupported_os](../../../parallel/concrt/reference/unsupported-os-class.md) is thrown if the operating system is not supported by the Concurrency Runtime.  
+ [unsupported_os](unsupported-os-class.md) is thrown if the operating system is not supported by the Concurrency Runtime.  
   
 ##  <a name="getschedulerid"></a>  GetSchedulerId  
  Returns a unique identifier that can be assigned to a scheduler that implements the `IScheduler` interface.  
@@ -602,7 +602,7 @@ inline void parallel_buffered_sort(
  The iterator type of the input range.  
   
  `_Allocator`  
- The type of an STL compatible memory allocator.  
+ The type of a C++ Standard Library compatible memory allocator.  
   
  `_Function`  
  The type of the binary comparator.  
@@ -614,7 +614,7 @@ inline void parallel_buffered_sort(
  A random-access iterator addressing the position one past the final element in the range to be sorted.  
   
  `_Alloc`  
- An instance of an STL compatible memory allocator.  
+ An instance of a C++ Standard Library compatible memory allocator.  
   
  `_Func`  
  A user-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns `true` when satisfied and `false` when not satisfied. This comparator function must impose a strict weak ordering on pairs of elements from the sequence.  
@@ -623,11 +623,11 @@ inline void parallel_buffered_sort(
  The mimimum size of a chunk that will be split into two for parallel execution.  
   
 ### Remarks  
- All overloads require `n * sizeof(T)` additional space, where `n` is the number of elements to be sorted, and `T` is the element type. In most cases parallel_buffered_sort will show an improvement in performance over [parallel_sort](../../../parallel/concrt/reference/concurrency-namespace-functions.md), and you should use it over parallel_sort if you have the memory available.  
+ All overloads require `n * sizeof(T)` additional space, where `n` is the number of elements to be sorted, and `T` is the element type. In most cases parallel_buffered_sort will show an improvement in performance over [parallel_sort](concurrency-namespace-functions.md), and you should use it over parallel_sort if you have the memory available.  
   
  If you do not supply a binary comparator `std::less` is used as the default, which requires the element type to provide the operator `operator<()`.  
   
- If you do not supply an allocator type or instance, the STL memory allocator `std::allocator<T>` is used to allocate the buffer.  
+ If you do not supply an allocator type or instance, the C++ Standard Library memory allocator `std::allocator<T>` is used to allocate the buffer.  
   
  The algorithm divides the input range into two chunks and successively divides each chunk into two sub-chunks for execution in parallel. The optional argument `_Chunk_size` can be used to indicate to the algorithm that it should handles chunks of size < `_Chunk_size` serially.  
   
@@ -702,7 +702,7 @@ void parallel_for(
  The function to be executed at each iteration. This may be a lambda expression, a function pointer, or any object that supports a version of the function call operator with the signature `void operator()(``_Index_type``)`.  
   
  `_Part`  
- A reference to the partitioner object. The argument can be one of `const`[auto_partitioner](../../../parallel/concrt/reference/auto-partitioner-class.md)`&`, `const`[static_partitioner](../../../parallel/concrt/reference/static-partitioner-class.md)`&`, `const`[simple_partitioner](../../../parallel/concrt/reference/simple-partitioner-class.md)`&` or [affinity_partitioner](../../../parallel/concrt/reference/affinity-partitioner-class.md)`&` If an [affinity_partitioner](../../../parallel/concrt/reference/affinity-partitioner-class.md) object is used, the reference must be a non-const l-value reference, so that the algorithm can store state for future loops to re-use.  
+ A reference to the partitioner object. The argument can be one of `const`[auto_partitioner](auto-partitioner-class.md)`&`, `const`[static_partitioner](static-partitioner-class.md)`&`, `const`[simple_partitioner](simple-partitioner-class.md)`&` or [affinity_partitioner](affinity-partitioner-class.md)`&` If an [affinity_partitioner](affinity-partitioner-class.md) object is used, the reference must be a non-const l-value reference, so that the algorithm can store state for future loops to re-use.  
   
 ### Remarks  
  For more information, see [Parallel Algorithms](../../../parallel/concrt/parallel-algorithms.md).  
@@ -743,12 +743,12 @@ void parallel_for_each(
  A user-defined function object that is applied to each element in the range.  
   
  `_Part`  
- A reference to the partitioner object. The argument can be one of `const`[auto_partitioner](../../../parallel/concrt/reference/auto-partitioner-class.md)`&`, `const`[static_partitioner](../../../parallel/concrt/reference/static-partitioner-class.md)`&`, `const`[simple_partitioner](../../../parallel/concrt/reference/simple-partitioner-class.md)`&` or [affinity_partitioner](../../../parallel/concrt/reference/affinity-partitioner-class.md)`&` If an [affinity_partitioner](../../../parallel/concrt/reference/affinity-partitioner-class.md) object is used, the reference must be a non-const l-value reference, so that the algorithm can store state for future loops to re-use.  
+ A reference to the partitioner object. The argument can be one of `const`[auto_partitioner](auto-partitioner-class.md)`&`, `const`[static_partitioner](static-partitioner-class.md)`&`, `const`[simple_partitioner](simple-partitioner-class.md)`&` or [affinity_partitioner](affinity-partitioner-class.md)`&` If an [affinity_partitioner](affinity-partitioner-class.md) object is used, the reference must be a non-const l-value reference, so that the algorithm can store state for future loops to re-use.  
   
 ### Remarks  
- [auto_partitioner](../../../parallel/concrt/reference/auto-partitioner-class.md) will be used for the overload without an explicit partitioner.  
+ [auto_partitioner](auto-partitioner-class.md) will be used for the overload without an explicit partitioner.  
   
- For iterators that do not support random access, only [auto_partitioner](../../../parallel/concrt/reference/auto-partitioner-class.md) is supported.  
+ For iterators that do not support random access, only [auto_partitioner](auto-partitioner-class.md) is supported.  
   
  For more information, see [Parallel Algorithms](../../../parallel/concrt/parallel-algorithms.md).  
   
@@ -999,7 +999,7 @@ inline void parallel_radixsort(
  The iterator type of the input range.  
   
  `_Allocator`  
- The type of an STL compatible memory allocator.  
+ The type of a C++ Standard Library compatible memory allocator.  
   
  `_Function`  
  The type of the projection function.  
@@ -1011,7 +1011,7 @@ inline void parallel_radixsort(
  A random-access iterator addressing the position one past the final element in the range to be sorted.  
   
  `_Alloc`  
- An instance of an STL compatible memory allocator.  
+ An instance of a C++ Standard Library compatible memory allocator.  
   
  `_Proj_func`  
  A user-defined projection function object that converts an element into an integral value.  
@@ -1024,7 +1024,7 @@ inline void parallel_radixsort(
   
  If you do not supply a projection function, a default projection function which simply returns the element is used for integral types. The function will fail to compile if the element is not an integral type in the absence of a projection function.  
   
- If you do not supply an allocator type or instance, the STL memory allocator `std::allocator<T>` is used to allocate the buffer.  
+ If you do not supply an allocator type or instance, the C++ Standard Library memory allocator `std::allocator<T>` is used to allocate the buffer.  
   
  The algorithm divides the input range into two chunks and successively divides each chunk into two sub-chunks for execution in parallel. The optional argument `_Chunk_size` can be used to indicate to the algorithm that it should handles chunks of size < `_Chunk_size` serially.  
   
@@ -1242,7 +1242,7 @@ _Output_iterator parallel_transform(
  A user-defined unary function object that is applied to each element in the source range.  
   
  `_Part`  
- A reference to the partitioner object. The argument can be one of `const`[auto_partitioner](../../../parallel/concrt/reference/auto-partitioner-class.md)`&`, `const`[static_partitioner](../../../parallel/concrt/reference/static-partitioner-class.md)`&`, `const`[simple_partitioner](../../../parallel/concrt/reference/simple-partitioner-class.md)`&` or [affinity_partitioner](../../../parallel/concrt/reference/affinity-partitioner-class.md)`&` If an [affinity_partitioner](../../../parallel/concrt/reference/affinity-partitioner-class.md) object is used, the reference must be a non-const l-value reference, so that the algorithm can store state for future loops to re-use.  
+ A reference to the partitioner object. The argument can be one of `const`[auto_partitioner](auto-partitioner-class.md)`&`, `const`[static_partitioner](static-partitioner-class.md)`&`, `const`[simple_partitioner](simple-partitioner-class.md)`&` or [affinity_partitioner](affinity-partitioner-class.md)`&` If an [affinity_partitioner](affinity-partitioner-class.md) object is used, the reference must be a non-const l-value reference, so that the algorithm can store state for future loops to re-use.  
   
  `first2`  
  An input iterator addressing the position of the first element in the second source range to be operated on.  
@@ -1254,9 +1254,9 @@ _Output_iterator parallel_transform(
  An output iterator addressing the position one past the final element in the destination range that is receiving the output elements transformed by the function object.  
   
 ### Remarks  
- [auto_partitioner](../../../parallel/concrt/reference/auto-partitioner-class.md) will be used for the overloads without an explicit partitioner argument.  
+ [auto_partitioner](auto-partitioner-class.md) will be used for the overloads without an explicit partitioner argument.  
   
- For iterators that do not support random access, only [auto_partitioner](../../../parallel/concrt/reference/auto-partitioner-class.md) is supported.  
+ For iterators that do not support random access, only [auto_partitioner](auto-partitioner-class.md) is supported.  
   
  The overloads that take the argument `_Unary_op` transform the input range into the output range by applying the unary functor to each element in the input range. `_Unary_op` must support the function call operator with signature `operator()(T)` where `T` is the value type of the range being iterated over.  
   
@@ -1308,7 +1308,7 @@ T receive(
  A value from the source, of the payload type.  
   
 ### Remarks  
- If the parameter `_Timeout` has a value other than the constant `COOPERATIVE_TIMEOUT_INFINITE`, the exception [operation_timed_out](../../../parallel/concrt/reference/operation-timed-out-class.md) is thrown if the specified amount of time expires before a message is received. If you want a zero length timeout, you should use the [try_receive](../../../parallel/concrt/reference/concurrency-namespace-functions.md) function, as opposed to calling `receive` with a timeout of `0` (zero), as it is more efficient and does not throw exceptions on timeouts.  
+ If the parameter `_Timeout` has a value other than the constant `COOPERATIVE_TIMEOUT_INFINITE`, the exception [operation_timed_out](operation-timed-out-class.md) is thrown if the specified amount of time expires before a message is received. If you want a zero length timeout, you should use the [try_receive](concurrency-namespace-functions.md) function, as opposed to calling `receive` with a timeout of `0` (zero), as it is more efficient and does not throw exceptions on timeouts.  
   
  For more information, see [Message Passing Functions](../../../parallel/concrt/message-passing-functions.md).  
   
@@ -1402,9 +1402,9 @@ void __cdecl set_task_execution_resources(
  An array of `GROUP_AFFINITY` entries.  
   
 ### Remarks  
- The method will throw an [invalid_operation](../../../parallel/concrt/reference/invalid-operation-class.md) exception if a Resource Manager is present at the time it is invoked, and an [invalid_argument](../../../standard-library/invalid-argument-class.md) exception if the affinity specified results in an empty set of resources.  
+ The method will throw an [invalid_operation](invalid-operation-class.md) exception if a Resource Manager is present at the time it is invoked, and an [invalid_argument](../../../standard-library/invalid-argument-class.md) exception if the affinity specified results in an empty set of resources.  
   
- The version of the method that takes an array of group affinities as a parameter should only be used on operating systems with version Windows 7 or higher. Otherwise, an [invalid_operation](../../../parallel/concrt/reference/invalid-operation-class.md) exception is thrown.  
+ The version of the method that takes an array of group affinities as a parameter should only be used on operating systems with version Windows 7 or higher. Otherwise, an [invalid_operation](invalid-operation-class.md) exception is thrown.  
   
  Programatically modifying the process affinity after this method has been invoked will not cause the Resource Manager to re-evaluate the affinity it is restricted to. Therefore, all changes to process affinity should be made before calling this method.  
   
@@ -1432,7 +1432,7 @@ inline void swap(
  The concurrent vector providing the elements to be swapped, or the vector whose elements are to be exchanged with those of the concurrent vector `_A`.  
   
 ### Remarks  
- The template function is an algorithm specialized on the container class `concurrent_vector` to execute the member function `_A`. [concurrent_vector::swap](../../../parallel/concrt/reference/concurrent-vector-class.md#concurrent_vector__swap_method)( `_B`). These are instances of the partial ordering of function templates by the compiler. When template functions are overloaded in such a way that the match of the template with the function call is not unique, then the compiler will select the most specialized version of the template function. The general version of the template function, `template <class T> void swap(T&, T&)`, in the algorithm class works by assignment and is a slow operation. The specialized version in each container is much faster as it can work with the internal representation of the container class.  
+ The template function is an algorithm specialized on the container class `concurrent_vector` to execute the member function `_A`. [concurrent_vector::swap](concurrent-vector-class.md#swap)( `_B`). These are instances of the partial ordering of function templates by the compiler. When template functions are overloaded in such a way that the match of the template with the function call is not unique, then the compiler will select the most specialized version of the template function. The general version of the template function, `template <class T> void swap(T&, T&)`, in the algorithm class works by assignment and is a slow operation. The specialized version in each container is much faster as it can work with the internal representation of the container class.  
   
  This method is not concurrency-safe. You must ensure that no other threads are performing operations on either of the concurrent vectors when you call this method.  
   
@@ -1585,9 +1585,9 @@ auto when_all(
  A task that completes sucessfully when all of the input tasks have completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::vector<T>>`. If the input tasks are of type `void` the output task will also be a `task<void>`.  
   
 ### Remarks  
- `when_all` is a non-blocking function that produces a `task` as its result. Unlike [task::wait](../../../parallel/concrt/reference/task-class.md#task__wait_method), it is safe to call this function in a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app on the ASTA (Application STA) thread.  
+ `when_all` is a non-blocking function that produces a `task` as its result. Unlike [task::wait](task-class.md#wait), it is safe to call this function in a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app on the ASTA (Application STA) thread.  
   
- If one of the tasks is canceled or throws an exception, the returned task will complete early, in the canceled state, and the exception, if one is encoutered, will be thrown if you call [task::get](../../../parallel/concrt/reference/task-class.md#task__get_method) or `task::wait` on that task.  
+ If one of the tasks is canceled or throws an exception, the returned task will complete early, in the canceled state, and the exception, if one is encoutered, will be thrown if you call [task::get](task-class.md#get) or `task::wait` on that task.  
   
  For more information, see [Task Parallelism](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
   
@@ -1632,9 +1632,9 @@ auto when_any(
  A task that completes successfully when any one of the input tasks has completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::pair<T, size_t>>>`, where the first element of the pair is the result of the completing task, and the second element is the index of the task that finished. If the input tasks are of type `void` the output is a `task<size_t>`, where the result is the index of the completing task.  
   
 ### Remarks  
- `when_any` is a non-blocking function that produces a `task` as its result. Unlike [task::wait](../../../parallel/concrt/reference/task-class.md#task__wait_method), it is safe to call this function in a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app on the ASTA (Application STA) thread.  
+ `when_any` is a non-blocking function that produces a `task` as its result. Unlike [task::wait](task-class.md#wait), it is safe to call this function in a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app on the ASTA (Application STA) thread.  
   
  For more information, see [Task Parallelism](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

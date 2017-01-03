@@ -1,5 +1,5 @@
 ---
-title: "set_difference (STL-CLR) | Microsoft Docs"
+title: "set_difference (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -49,7 +49,7 @@ template<class _InIt1, class _InIt2, class _OutIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `set_difference`. For more information, see [set_difference](http://msdn.microsoft.com/Library/cd96abfe-5028-47de-ae29-cb9aa4a0acf3).  
+ This function behaves the same as the C++ Standard Library function `set_difference`. For more information, see [set_difference](http://msdn.microsoft.com/Library/cd96abfe-5028-47de-ae29-cb9aa4a0acf3).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

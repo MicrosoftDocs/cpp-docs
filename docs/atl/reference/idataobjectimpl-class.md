@@ -59,16 +59,16 @@ template<class T>  class IDataObjectImpl
   
 |Name|Description|  
 |----------|-----------------|  
-|[IDataObjectImpl::DAdvise](#idataobjectimpl__dadvise)|Establishes a connection between the data object and an advise sink. This enables the advise sink to receive notifications of changes in the object.|  
-|[IDataObjectImpl::DUnadvise](#idataobjectimpl__dunadvise)|Terminates a connection previously established through `DAdvise`.|  
-|[IDataObjectImpl::EnumDAdvise](#idataobjectimpl__enumdadvise)|Creates an enumerator to iterate through the current advisory connections.|  
-|[IDataObjectImpl::EnumFormatEtc](#idataobjectimpl__enumformatetc)|Creates an enumerator to iterate through the **FORMATETC** structures supported by the data object. The ATL implementation returns **E_NOTIMPL**.|  
-|[IDataObjectImpl::FireDataChange](#idataobjectimpl__firedatachange)|Sends a change notification back to each advise sink.|  
-|[IDataObjectImpl::GetCanonicalFormatEtc](#idataobjectimpl__getcanonicalformatetc)|Retrieves a logically equivalent **FORMATETC** structure to one that is more complex. The ATL implementation returns **E_NOTIMPL**.|  
-|[IDataObjectImpl::GetData](#idataobjectimpl__getdata)|Transfers data from the data object to the client. The data is described in a **FORMATETC** structure and is transferred through a **STGMEDIUM** structure.|  
-|[IDataObjectImpl::GetDataHere](#idataobjectimpl__getdatahere)|Similar to `GetData`, except the client must allocate the **STGMEDIUM** structure. The ATL implementation returns **E_NOTIMPL**.|  
-|[IDataObjectImpl::QueryGetData](#idataobjectimpl__querygetdata)|Determines whether the data object supports a particular **FORMATETC** structure for transferring data. The ATL implementation returns **E_NOTIMPL**.|  
-|[IDataObjectImpl::SetData](#idataobjectimpl__setdata)|Transfers data from the client to the data object. The ATL implementation returns **E_NOTIMPL**.|  
+|[IDataObjectImpl::DAdvise](#dadvise)|Establishes a connection between the data object and an advise sink. This enables the advise sink to receive notifications of changes in the object.|  
+|[IDataObjectImpl::DUnadvise](#dunadvise)|Terminates a connection previously established through `DAdvise`.|  
+|[IDataObjectImpl::EnumDAdvise](#enumdadvise)|Creates an enumerator to iterate through the current advisory connections.|  
+|[IDataObjectImpl::EnumFormatEtc](#enumformatetc)|Creates an enumerator to iterate through the **FORMATETC** structures supported by the data object. The ATL implementation returns **E_NOTIMPL**.|  
+|[IDataObjectImpl::FireDataChange](#firedatachange)|Sends a change notification back to each advise sink.|  
+|[IDataObjectImpl::GetCanonicalFormatEtc](#getcanonicalformatetc)|Retrieves a logically equivalent **FORMATETC** structure to one that is more complex. The ATL implementation returns **E_NOTIMPL**.|  
+|[IDataObjectImpl::GetData](#getdata)|Transfers data from the data object to the client. The data is described in a **FORMATETC** structure and is transferred through a **STGMEDIUM** structure.|  
+|[IDataObjectImpl::GetDataHere](#getdatahere)|Similar to `GetData`, except the client must allocate the **STGMEDIUM** structure. The ATL implementation returns **E_NOTIMPL**.|  
+|[IDataObjectImpl::QueryGetData](#querygetdata)|Determines whether the data object supports a particular **FORMATETC** structure for transferring data. The ATL implementation returns **E_NOTIMPL**.|  
+|[IDataObjectImpl::SetData](#setdata)|Transfers data from the client to the data object. The ATL implementation returns **E_NOTIMPL**.|  
   
 ## Remarks  
  The [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421) interface provides methods to support Uniform Data Transfer. `IDataObject` uses the standard format structures [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) and [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) to retrieve and store data.  
@@ -87,7 +87,7 @@ template<class T>  class IDataObjectImpl
 ## Requirements  
  **Header:** atlctl.h  
   
-##  <a name="idataobjectimpl__dadvise"></a>  IDataObjectImpl::DAdvise  
+##  <a name="dadvise"></a>  IDataObjectImpl::DAdvise  
  Establishes a connection between the data object and an advise sink.  
   
 ```
@@ -101,12 +101,12 @@ HRESULT DAdvise(
 ### Remarks  
  This enables the advise sink to receive notifications of changes in the object.  
   
- To terminate the connection, call [DUnadvise](#idataobjectimpl__dunadvise).  
+ To terminate the connection, call [DUnadvise](#dunadvise).  
   
  See [IDataObject::DAdvise](http://msdn.microsoft.com/library/windows/desktop/ms692579) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="idataobjectimpl__dunadvise"></a>  IDataObjectImpl::DUnadvise  
- Terminates a connection previously established through [DAdvise](#idataobjectimpl__dadvise).  
+##  <a name="dunadvise"></a>  IDataObjectImpl::DUnadvise  
+ Terminates a connection previously established through [DAdvise](#dadvise).  
   
 ```
 HRESULT DUnadvise(DWORD dwConnection);
@@ -115,7 +115,7 @@ HRESULT DUnadvise(DWORD dwConnection);
 ### Remarks  
  See [IDataObject::DUnadvise](http://msdn.microsoft.com/library/windows/desktop/ms692448) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="idataobjectimpl__enumdadvise"></a>  IDataObjectImpl::EnumDAdvise  
+##  <a name="enumdadvise"></a>  IDataObjectImpl::EnumDAdvise  
  Creates an enumerator to iterate through the current advisory connections.  
   
 ```
@@ -129,7 +129,7 @@ HRESULT DAdvise(
 ### Remarks  
  See [IDataObject::EnumDAdvise](http://msdn.microsoft.com/library/windows/desktop/ms680127) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="idataobjectimpl__enumformatetc"></a>  IDataObjectImpl::EnumFormatEtc  
+##  <a name="enumformatetc"></a>  IDataObjectImpl::EnumFormatEtc  
  Creates an enumerator to iterate through the **FORMATETC** structures supported by the data object.  
   
 ```
@@ -143,7 +143,7 @@ HRESULT EnumFormatEtc(DWORD dwDirection,
 ### Return Value  
  Returns **E_NOTIMPL**.  
   
-##  <a name="idataobjectimpl__firedatachange"></a>  IDataObjectImpl::FireDataChange  
+##  <a name="firedatachange"></a>  IDataObjectImpl::FireDataChange  
  Sends a change notification back to each advise sink that is currently being managed.  
   
 ```
@@ -153,7 +153,7 @@ HRESULT FireDataChange();
 ### Return Value  
  A standard `HRESULT` value.  
   
-##  <a name="idataobjectimpl__getcanonicalformatetc"></a>  IDataObjectImpl::GetCanonicalFormatEtc  
+##  <a name="getcanonicalformatetc"></a>  IDataObjectImpl::GetCanonicalFormatEtc  
  Retrieves a logically equivalent **FORMATETC** structure to one that is more complex.  
   
 ```
@@ -168,7 +168,7 @@ HRESULT GetCanonicalFormatEtc(
 ### Remarks  
  See [IDataObject::GetCanonicalFormatEtc](http://msdn.microsoft.com/library/windows/desktop/ms680685) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="idataobjectimpl__getdata"></a>  IDataObjectImpl::GetData  
+##  <a name="getdata"></a>  IDataObjectImpl::GetData  
  Transfers data from the data object to the client.  
   
 ```
@@ -182,7 +182,7 @@ HRESULT GetData(
   
  See [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="idataobjectimpl__getdatahere"></a>  IDataObjectImpl::GetDataHere  
+##  <a name="getdatahere"></a>  IDataObjectImpl::GetDataHere  
  Similar to `GetData`, except the client must allocate the **STGMEDIUM** structure.  
   
 ```
@@ -197,7 +197,7 @@ HRESULT GetDataHere(
 ### Remarks  
  See [IDataObject::GetDataHere](http://msdn.microsoft.com/library/windows/desktop/ms687266) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="idataobjectimpl__querygetdata"></a>  IDataObjectImpl::QueryGetData  
+##  <a name="querygetdata"></a>  IDataObjectImpl::QueryGetData  
  Determines whether the data object supports a particular **FORMATETC** structure for transferring data.  
   
 ```
@@ -210,7 +210,7 @@ HRESULT QueryGetData(FORMATETC* pformatetc);
 ### Remarks  
  See [IDataObject::QueryGetData](http://msdn.microsoft.com/library/windows/desktop/ms680637) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="idataobjectimpl__setdata"></a>  IDataObjectImpl::SetData  
+##  <a name="setdata"></a>  IDataObjectImpl::SetData  
  Transfers data from the client to the data object.  
   
 ```

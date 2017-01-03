@@ -37,7 +37,7 @@ translation.priority.ht:
 # Compiler Error C2815
 'operator delete' : first formal parameter must be 'void *', but 'param' was used  
   
- Any user-defined [operator delete](../standard-library/new-operators.md#operator_delete) function must take a first formal parameter of type `void *`.  
+ Any user-defined [operator delete](../../standard-library/new-operators.md#operator_delete) function must take a first formal parameter of type `void *`.  
   
  The following sample generates C2815:  
   

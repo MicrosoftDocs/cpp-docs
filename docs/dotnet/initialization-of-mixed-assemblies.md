@@ -113,7 +113,7 @@ CObject* op = new CObject(arg1, arg2);
 -   Manually clone the code that the static variable depends upon, providing both a .NET and a native version with different names. Developers can then call the native version from native static initializers and call the .NET version elsewhere.  
   
 ### User-Supplied Functions Affecting Startup  
- There are several user-supplied functions on which libraries depend for initialization during startup. For example, when globally overloading operators in C++ such as the `new` and `delete` operators, the user-provided versions are used everywhere, including in STL initialization and destruction. As a result, STL and user-provided static initializers will invoke any user-provided versions of these operators.  
+ There are several user-supplied functions on which libraries depend for initialization during startup. For example, when globally overloading operators in C++ such as the `new` and `delete` operators, the user-provided versions are used everywhere, including in C++ Standard Library initialization and destruction. As a result, C++ Standard Library and user-provided static initializers will invoke any user-provided versions of these operators.  
   
  If the user-provided versions are compiled to MSIL, then these initializers will be attempting to execute MSIL instructions while the loader lock is held. A user-supplied malloc has the same consequences. To resolve this problem, any of these overloads or user-supplied definitions must be implemented as native code using the #pragma `unmanaged` directive.  
   

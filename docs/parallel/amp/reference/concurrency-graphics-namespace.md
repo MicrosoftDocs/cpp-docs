@@ -48,56 +48,56 @@ namespace graphics;
   
 |Name|Description|  
 |----------|-----------------|  
-|[Concurrency::graphics::direct3d Namespace](../../../parallel/amp/reference/concurrency-graphics-direct3d-namespace.md)|Provides functions for Direct3D interop.|  
+|[Concurrency::graphics::direct3d Namespace](concurrency-graphics-direct3d-namespace.md)|Provides functions for Direct3D interop.|  
   
 ### Typedefs  
   
 |Name|Description|  
 |----------|-----------------|  
-|`uint`|The element type for [uint_2 Class](../../../parallel/amp/reference/uint-2-class.md), [uint_3 Class](../../../parallel/amp/reference/uint-3-class.md), and [uint_4 Class](../../../parallel/amp/reference/uint-4-class.md). Defined as `typedef unsigned int uint;`.|  
+|`uint`|The element type for [uint_2 Class](uint-2-class.md), [uint_3 Class](uint-3-class.md), and [uint_4 Class](uint-4-class.md). Defined as `typedef unsigned int uint;`.|  
   
 ### Enumerations  
   
 |Name|Description|  
 |----------|-----------------|  
-|[address_mode Enumeration](reference/concurrency-graphics-namespace-enums-amp.md#address_mode_enumeration).|Specifies address modes supported for texture sampling.|  
-|[filter_mode Enumeration](reference/concurrency-graphics-namespace-enums-amp.md#filter_mode_enumeration)|Specifies filter modes supported for texture sampling.|  
+|[address_mode Enumeration](concurrency-graphics-namespace-enums.md#address_mode).|Specifies address modes supported for texture sampling.|  
+|[filter_mode Enumeration](concurrency-graphics-namespace-enums.md#filter_mode)|Specifies filter modes supported for texture sampling.|  
   
 ### Classes  
   
 |Name|Description|  
 |----------|-----------------|  
-|[texture Class](../../../parallel/amp/reference/texture-class.md)|A texture is a data aggregate on an accelerator_view in the extent domain. It is a collection of variables, one for each element in an extent domain. Each variable holds a value corresponding to C++ primitive type (unsigned int, int, float, double), or scalar type norm, or unorm (defined in concurrency::graphics), or eligible short vector types defined in concurrency::graphics.|  
-|[writeonly_texture_view Class](../../../parallel/amp/reference/writeonly-texture-view-class.md)|A writeonly_texture_view provides writeonly access to a texture.|  
-|[double_2 Class](../../../parallel/amp/reference/double-2-class.md)|Represents a short vector of 2 `double` values.|  
-|[double_3 Class](../../../parallel/amp/reference/double-3-class.md)|Represents a short vector of 3 `double` values.|  
-|[double_4 Class](../../../parallel/amp/reference/double-4-class.md)|Represents a short vector of 4 `double` values.|  
-|[float_2 Class](../../../parallel/amp/reference/float-2-class.md)|Represents a short vector of 2 `float` values.|  
-|[float_3 Class](../../../parallel/amp/reference/float-3-class.md)|Represents a short vector of 3 `float` values.|  
-|[float_4 Class](../../../parallel/amp/reference/float-4-class.md)|Represents a short vector of 4 `float` values.|  
-|[int_2 Class](../../../parallel/amp/reference/int-2-class.md)|Represents a short vector of 2 `int` values.|  
-|[int_3 Class](../../../parallel/amp/reference/int-3-class.md)|Represents a short vector of 3 `int` values.|  
-|[int_4 Class](../../../parallel/amp/reference/int-4-class.md)|Represents a short vector of 4 `int` values.|  
-|[norm_2 Class](../../../parallel/amp/reference/norm-2-class.md)|Represents a short vector of 2 `norm` values.|  
-|[norm_3 Class](../../../parallel/amp/reference/norm-3-class.md)|Represents a short vector of 3 `norm` values.|  
-|[norm_4 Class](../../../parallel/amp/reference/norm-4-class.md)|Represents a short vector of 4 `norm` values.|  
-|[uint_2 Class](../../../parallel/amp/reference/uint-2-class.md)|Represents a short vector of 2 `uint` values.|  
-|[uint_3 Class](../../../parallel/amp/reference/uint-3-class.md)|Represents a short vector of 3 `uint` values.|  
-|[uint_4 Class](../../../parallel/amp/reference/uint-4-class.md)|Represents a short vector of 4 `uint` values.|  
-|[unorm_2 Class](../../../parallel/amp/reference/unorm-2-class.md)|Represents a short vector of 2 `unorm` values.|  
-|[unorm_3 Class](../../../parallel/amp/reference/unorm-3-class.md)|Represents a short vector of 3 `unorm` values.|  
-|[unorm_4 Class](../../../parallel/amp/reference/unorm-4-class.md)|Represents a short vector of 4 `unorm` values.|  
-|[sampler Class](../../../parallel/amp/reference/sampler-class.md)|Represents the sampler configuration used for texture sampling.|  
-|[short_vector Structure](../../../parallel/amp/reference/short-vector-structure.md)|Provides a basic implementation of a short vector of values.|  
-|[short_vector_traits Structure](../../../parallel/amp/reference/short-vector-traits-structure.md)|Provides for retrieval of the length and type of a short vector.|  
-|[texture_view Class](../../../parallel/amp/reference/texture-view-class.md)|Provides read access and write access to a texture.|  
+|[texture Class](texture-class.md)|A texture is a data aggregate on an accelerator_view in the extent domain. It is a collection of variables, one for each element in an extent domain. Each variable holds a value corresponding to C++ primitive type (unsigned int, int, float, double), or scalar type norm, or unorm (defined in concurrency::graphics), or eligible short vector types defined in concurrency::graphics.|  
+|[writeonly_texture_view Class](writeonly-texture-view-class.md)|A writeonly_texture_view provides writeonly access to a texture.|  
+|[double_2 Class](double-2-class.md)|Represents a short vector of 2 `double` values.|  
+|[double_3 Class](double-3-class.md)|Represents a short vector of 3 `double` values.|  
+|[double_4 Class](double-4-class.md)|Represents a short vector of 4 `double` values.|  
+|[float_2 Class](float-2-class.md)|Represents a short vector of 2 `float` values.|  
+|[float_3 Class](float-3-class.md)|Represents a short vector of 3 `float` values.|  
+|[float_4 Class](float-4-class.md)|Represents a short vector of 4 `float` values.|  
+|[int_2 Class](int-2-class.md)|Represents a short vector of 2 `int` values.|  
+|[int_3 Class](int-3-class.md)|Represents a short vector of 3 `int` values.|  
+|[int_4 Class](int-4-class.md)|Represents a short vector of 4 `int` values.|  
+|[norm_2 Class](norm-2-class.md)|Represents a short vector of 2 `norm` values.|  
+|[norm_3 Class](norm-3-class.md)|Represents a short vector of 3 `norm` values.|  
+|[norm_4 Class](norm-4-class.md)|Represents a short vector of 4 `norm` values.|  
+|[uint_2 Class](uint-2-class.md)|Represents a short vector of 2 `uint` values.|  
+|[uint_3 Class](uint-3-class.md)|Represents a short vector of 3 `uint` values.|  
+|[uint_4 Class](uint-4-class.md)|Represents a short vector of 4 `uint` values.|  
+|[unorm_2 Class](unorm-2-class.md)|Represents a short vector of 2 `unorm` values.|  
+|[unorm_3 Class](unorm-3-class.md)|Represents a short vector of 3 `unorm` values.|  
+|[unorm_4 Class](unorm-4-class.md)|Represents a short vector of 4 `unorm` values.|  
+|[sampler Class](sampler-class.md)|Represents the sampler configuration used for texture sampling.|  
+|[short_vector Structure](short-vector-structure.md)|Provides a basic implementation of a short vector of values.|  
+|[short_vector_traits Structure](short-vector-traits-structure.md)|Provides for retrieval of the length and type of a short vector.|  
+|[texture_view Class](texture-view-class.md)|Provides read access and write access to a texture.|  
   
 ### Functions  
   
 |Name|Description|  
 |----------|-----------------|  
-|[copy Function](concurrency-graphics-namespace-functions.md#copy_function)|Overloaded. Copies the contents of the source texture into the destination host buffer.|  
-|[copy_async Function](concurrency-graphics-namespace-functions.md#copy_async_function)|Overloaded. Asynchronously copies the contents of the source texture into the destination host buffer.|  
+|[copy Function](concurrency-graphics-namespace-functions.md#copy)|Overloaded. Copies the contents of the source texture into the destination host buffer.|  
+|[copy_async Function](concurrency-graphics-namespace-functions.md#copy_async)|Overloaded. Asynchronously copies the contents of the source texture into the destination host buffer.|  
   
 ## Requirements  
  **Header:** amp_graphics.h  
@@ -105,4 +105,4 @@ namespace graphics;
  **Namespace:** Concurrency  
   
 ## See Also  
- [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)
+ [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

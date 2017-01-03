@@ -49,13 +49,13 @@ class CMFCDropDownToolBar : public CMFCToolBar
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCDropDownToolBar::AllowShowOnPaneMenu](#cmfcdropdowntoolbar__allowshowonpanemenu)|(Overrides `CPane::AllowShowOnPaneMenu`.)|  
-|[CMFCDropDownToolBar::LoadBitmap](#cmfcdropdowntoolbar__loadbitmap)|(Overrides [CMFCToolBar::LoadBitmap](../../mfc/reference/cmfctoolbar-class.md#cmfctoolbar__loadbitmap).)|  
-|[CMFCDropDownToolBar::LoadToolBar](#cmfcdropdowntoolbar__loadtoolbar)|(Overrides [CMFCToolBar::LoadToolBar](../../mfc/reference/cmfctoolbar-class.md#cmfctoolbar__loadtoolbar).)|  
-|[CMFCDropDownToolBar::OnLButtonUp](#cmfcdropdowntoolbar__onlbuttonup)||  
-|[CMFCDropDownToolBar::OnMouseMove](#cmfcdropdowntoolbar__onmousemove)||  
-|[CMFCDropDownToolBar::OnSendCommand](#cmfcdropdowntoolbar__onsendcommand)|(Overrides `CMFCToolBar::OnSendCommand`.)|  
-|[CMFCDropDownToolBar::OnUpdateCmdUI](#cmfcdropdowntoolbar__onupdatecmdui)|(Overrides [CMFCToolBar::OnUpdateCmdUI](http://msdn.microsoft.com/en-us/571a38ab-2a56-4968-9796-273516126f80).)|  
+|[CMFCDropDownToolBar::AllowShowOnPaneMenu](#allowshowonpanemenu)|(Overrides `CPane::AllowShowOnPaneMenu`.)|  
+|[CMFCDropDownToolBar::LoadBitmap](#loadbitmap)|(Overrides [CMFCToolBar::LoadBitmap](../../mfc/reference/cmfctoolbar-class.md#loadbitmap).)|  
+|[CMFCDropDownToolBar::LoadToolBar](#loadtoolbar)|(Overrides [CMFCToolBar::LoadToolBar](../../mfc/reference/cmfctoolbar-class.md#loadtoolbar).)|  
+|[CMFCDropDownToolBar::OnLButtonUp](#onlbuttonup)||  
+|[CMFCDropDownToolBar::OnMouseMove](#onmousemove)||  
+|[CMFCDropDownToolBar::OnSendCommand](#onsendcommand)|(Overrides `CMFCToolBar::OnSendCommand`.)|  
+|[CMFCDropDownToolBar::OnUpdateCmdUI](#onupdatecmdui)|(Overrides [CMFCToolBar::OnUpdateCmdUI](http://msdn.microsoft.com/en-us/571a38ab-2a56-4968-9796-273516126f80).)|  
   
 ### Remarks  
  A `CMFCDropDownToolBar` object combines the visual appearance of a toolbar with the behavior of a popup menu. When a user presses and holds a drop-down toolbar button (see [CMFCDropDownToolbarButton Class](../../mfc/reference/cmfcdropdowntoolbarbutton-class.md)), a drop-down toolbar appears, and the user can select a button from the drop-down toolbar by scrolling to it and releasing the mouse button. After the user selects a button in the drop-down toolbar, that button is displayed as the current button on the top-level toolbar.  
@@ -72,14 +72,14 @@ class CMFCDropDownToolBar : public CMFCToolBar
   
  1. Reserve a dummy resource ID for the button in the parent toolbar resource.  
   
- 2. Create a `CMFCDropDownToolBarButton` object that contains the drop-down toolbar (for more information, see [CMFCDropDownToolbarButton::CMFCDropDownToolbarButton](../../mfc/reference/cmfcdropdowntoolbarbutton-class.md#cmfcdropdowntoolbarbutton__cmfcdropdowntoolbarbutton)).  
+ 2. Create a `CMFCDropDownToolBarButton` object that contains the drop-down toolbar (for more information, see [CMFCDropDownToolbarButton::CMFCDropDownToolbarButton](../../mfc/reference/cmfcdropdowntoolbarbutton-class.md#cmfcdropdowntoolbarbutton)).  
   
- 3. Replace the dummy button with the `CMFCDropDownToolBarButton` object by using [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#cmfctoolbar__replacebutton).  
+ 3. Replace the dummy button with the `CMFCDropDownToolBarButton` object by using [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton).  
   
  For more information about toolbar buttons, see [Walkthrough: Putting Controls On Toolbars](../../mfc/walkthrough-putting-controls-on-toolbars.md). For an example of a drop-down toolbar, see the sample project VisualStudioDemo.  
   
 ## Example  
- The following example demonstrates how to use the `Create` method in the `CMFCDropDownToolBar` class. This code snippet is part of the [Visual Studio Demo sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to use the `Create` method in the `CMFCDropDownToolBar` class. This code snippet is part of the [Visual Studio Demo sample](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_VisualStudioDemo#29](../../mfc/codesnippet/cpp/cmfcdropdowntoolbar-class_1.h)]  
 [!code-cpp[NVC_MFC_VisualStudioDemo#30](../../mfc/codesnippet/cpp/cmfcdropdowntoolbar-class_2.cpp)]  
@@ -104,7 +104,7 @@ class CMFCDropDownToolBar : public CMFCToolBar
 ## Requirements  
  **Header:** afxdropdowntoolbar.h  
   
-##  <a name="cmfcdropdowntoolbar__allowshowonpanemenu"></a>  CMFCDropDownToolBar::AllowShowOnPaneMenu  
+##  <a name="allowshowonpanemenu"></a>  CMFCDropDownToolBar::AllowShowOnPaneMenu  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -117,7 +117,7 @@ virtual BOOL AllowShowOnPaneMenu() const;
   
 ### Remarks  
   
-##  <a name="cmfcdropdowntoolbar__loadbitmap"></a>  CMFCDropDownToolBar::LoadBitmap  
+##  <a name="loadbitmap"></a>  CMFCDropDownToolBar::LoadBitmap  
  Loads toolbar images from application resources.  
   
 ```  
@@ -153,11 +153,11 @@ virtual BOOL LoadBitmap(
  Nonzero if the method succeeds; otherwise 0.  
   
 ### Remarks  
- The [CMFCToolBar::LoadToolBarEx](../../mfc/reference/cmfctoolbar-class.md#cmfctoolbar__loadtoolbarex) method calls this method to load the images that are associated with the toolbar. Override this method to perform custom loading of image resources.  
+ The [CMFCToolBar::LoadToolBarEx](../../mfc/reference/cmfctoolbar-class.md#loadtoolbarex) method calls this method to load the images that are associated with the toolbar. Override this method to perform custom loading of image resources.  
   
  Call the `LoadBitmapEx` method to load additional images after you create the toolbar.  
   
-##  <a name="cmfcdropdowntoolbar__loadtoolbar"></a>  CMFCDropDownToolBar::LoadToolBar  
+##  <a name="loadtoolbar"></a>  CMFCDropDownToolBar::LoadToolBar  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -184,7 +184,7 @@ virtual BOOL LoadToolBar(
   
 ### Remarks  
   
-##  <a name="cmfcdropdowntoolbar__onlbuttonup"></a>  CMFCDropDownToolBar::OnLButtonUp  
+##  <a name="onlbuttonup"></a>  CMFCDropDownToolBar::OnLButtonUp  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -199,7 +199,7 @@ afx_msg void OnLButtonUp(
   
 ### Remarks  
   
-##  <a name="cmfcdropdowntoolbar__onmousemove"></a>  CMFCDropDownToolBar::OnMouseMove  
+##  <a name="onmousemove"></a>  CMFCDropDownToolBar::OnMouseMove  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -214,7 +214,7 @@ afx_msg void OnMouseMove(
   
 ### Remarks  
   
-##  <a name="cmfcdropdowntoolbar__onsendcommand"></a>  CMFCDropDownToolBar::OnSendCommand  
+##  <a name="onsendcommand"></a>  CMFCDropDownToolBar::OnSendCommand  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -228,7 +228,7 @@ virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
   
 ### Remarks  
   
-##  <a name="cmfcdropdowntoolbar__onupdatecmdui"></a>  CMFCDropDownToolBar::OnUpdateCmdUI  
+##  <a name="onupdatecmdui"></a>  CMFCDropDownToolBar::OnUpdateCmdUI  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -247,8 +247,8 @@ virtual void OnUpdateCmdUI(
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [Classes](../../mfc/reference/mfc-classes.md)   
  [CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md)   
- [CMFCToolBar::Create](../../mfc/reference/cmfctoolbar-class.md#cmfctoolbar__create)   
- [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#cmfctoolbar__replacebutton)   
+ [CMFCToolBar::Create](../../mfc/reference/cmfctoolbar-class.md#create)   
+ [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)   
  [CMFCDropDownToolbarButton Class](../../mfc/reference/cmfcdropdowntoolbarbutton-class.md)   
  [Walkthrough: Putting Controls On Toolbars](../../mfc/walkthrough-putting-controls-on-toolbars.md)
 

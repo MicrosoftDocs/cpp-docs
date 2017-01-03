@@ -54,13 +54,13 @@ class CSecurityAttributes : public SECURITY_ATTRIBUTES
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSecurityAttributes::CSecurityAttributes](#csecurityattributes__csecurityattributes)|The constructor.|  
+|[CSecurityAttributes::CSecurityAttributes](#csecurityattributes)|The constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSecurityAttributes::Set](#csecurityattributes__set)|Call this method to set the attributes of the `CSecurityAttributes` object.|  
+|[CSecurityAttributes::Set](#set)|Call this method to set the attributes of the `CSecurityAttributes` object.|  
   
 ## Remarks  
  The **SECURITY_ATTRIBUTES** structure contains a [security descriptor](http://msdn.microsoft.com/library/windows/desktop/aa379561) used for the creation of an object and specifies whether the handle retrieved by specifying this structure is inheritable.  
@@ -75,7 +75,7 @@ class CSecurityAttributes : public SECURITY_ATTRIBUTES
 ## Requirements  
  **Header:** atlsecurity.h  
   
-##  <a name="csecurityattributes__csecurityattributes"></a>  CSecurityAttributes::CSecurityAttributes  
+##  <a name="csecurityattributes"></a>  CSecurityAttributes::CSecurityAttributes  
  The constructor.  
   
 ```
@@ -92,7 +92,7 @@ explicit CSecurityAttributes(
  `bInheritsHandle`  
  Specifies whether the returned handle is inherited when a new process is created. If this member is true, the new process inherits the handle.  
   
-##  <a name="csecurityattributes__set"></a>  CSecurityAttributes::Set  
+##  <a name="set"></a>  CSecurityAttributes::Set  
  Call this method to set the attributes of the `CSecurityAttributes` object.  
   
 ```
@@ -110,7 +110,7 @@ void Set(const CSecurityDesc& rSecurityDescriptor,  bool bInheritHandle = false)
  This method is used by the constructor to initialize the `CSecurityAttributes` object.  
   
 ## See Also  
- [Security Sample](../../top/visual-cpp-samples.md)   
+ [Security Sample](../../visual-cpp-samples.md)   
  [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560)   
  [security descriptor](http://msdn.microsoft.com/library/windows/desktop/aa379561)   
  [Class Overview](../../atl/atl-class-overview.md)   

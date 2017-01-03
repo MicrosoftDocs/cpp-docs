@@ -38,7 +38,7 @@ translation.priority.ht:
 # Connecting a Pop-up Menu to Your Application
 ### To connect a pop-up menu to your application  
   
-1.  Add a message handler for [WM_CONTEXTMENU](_win32_WM_CONTEXTMENU) (for example). For more information, see [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md).  
+1.  Add a message handler for WM_CONTEXTMENU (for example). For more information, see [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md).  
   
 2.  Add the following code to the message handler:  
   
@@ -62,4 +62,3 @@ translation.priority.ht:
 ## See Also  
  [Creating Pop-up Menus](../windows/creating-pop-up-menus.md)   
  [Menu Editor](../mfc/menu-editor.md)   
- [Menus](_win32_Menus)

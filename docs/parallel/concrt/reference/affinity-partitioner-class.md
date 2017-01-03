@@ -49,8 +49,8 @@ class affinity_partitioner;
   
 |Name|Description|  
 |----------|-----------------|  
-|[affinity_partitioner::affinity_partitioner Constructor](#affinity_partitioner__affinity_partitioner_constructor)|Constructs an `affinity_partitioner` object.|  
-|[affinity_partitioner::~affinity_partitioner Destructor](#affinity_partitioner___dtoraffinity_partitioner_destructor)|Destroys an `affinity_partitioner` object.|  
+|[affinity_partitioner::affinity_partitioner Constructor](#ctor)|Constructs an `affinity_partitioner` object.|  
+|[affinity_partitioner::~affinity_partitioner Destructor](#dtor)|Destroys an `affinity_partitioner` object.|  
   
 ## Inheritance Hierarchy  
  `affinity_partitioner`  
@@ -60,14 +60,14 @@ class affinity_partitioner;
   
  **Namespace:** concurrency  
   
-##  <a name="affinity_partitioner___dtoraffinity_partitioner_destructor"></a>  affinity_partitioner::~affinity_partitioner Destructor  
+##  <a name="dtor"></a>  affinity_partitioner::~affinity_partitioner Destructor  
  Destroys an `affinity_partitioner` object.  
   
 ```
 ~affinity_partitioner();
 ```  
   
-##  <a name="affinity_partitioner__affinity_partitioner_constructor"></a>  affinity_partitioner::affinity_partitioner Constructor  
+##  <a name="ctor"></a>  affinity_partitioner::affinity_partitioner Constructor  
  Constructs an `affinity_partitioner` object.  
   
 ```
@@ -75,4 +75,4 @@ affinity_partitioner();
 ```  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

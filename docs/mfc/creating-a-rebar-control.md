@@ -44,15 +44,15 @@ translation.priority.ht:
   
 1.  Construct the [CReBarCtrl](../mfc/reference/crebarctrl-class.md) object.  
   
-2.  Call [Create](../mfc/reference/crebarctrl-class.md#crebarctrl__create) to create the Windows rebar common control and attach it to the `CReBarCtrl` object, specifying any desired styles.  
+2.  Call [Create](../mfc/reference/crebarctrl-class.md#create) to create the Windows rebar common control and attach it to the `CReBarCtrl` object, specifying any desired styles.  
   
-3.  Load a bitmap, with a call to [CBitmap::LoadBitmap](../mfc/reference/cbitmap-class.md#cbitmap__loadbitmap), to be used as the background of the rebar control object.  
+3.  Load a bitmap, with a call to [CBitmap::LoadBitmap](../mfc/reference/cbitmap-class.md#loadbitmap), to be used as the background of the rebar control object.  
   
 4.  Create and initialize any child window objects (toolbars, dialog controls, and so on) that will be contained by the rebar control object.  
   
 5.  Initialize a **REBARBANDINFO** structure with the necessary information for the band about to be inserted.  
   
-6.  Call [InsertBand](../mfc/reference/crebarctrl-class.md#crebarctrl__insertband) to insert existing child windows (such as `m_wndReToolBar`) into the new rebar control. For more information on inserting bands into an existing rebar control, see [Rebar Controls and Bands](../mfc/rebar-controls-and-bands.md).  
+6.  Call [InsertBand](../mfc/reference/crebarctrl-class.md#insertband) to insert existing child windows (such as `m_wndReToolBar`) into the new rebar control. For more information on inserting bands into an existing rebar control, see [Rebar Controls and Bands](../mfc/rebar-controls-and-bands.md).  
   
 ## See Also  
  [Using CReBarCtrl](../mfc/using-crebarctrl.md)   

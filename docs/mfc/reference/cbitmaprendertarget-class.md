@@ -50,40 +50,40 @@ class CBitmapRenderTarget : public CRenderTarget;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CBitmapRenderTarget::CBitmapRenderTarget](#cbitmaprendertarget__cbitmaprendertarget)|Constructs a CBitmapRenderTarget object.|  
+|[CBitmapRenderTarget::CBitmapRenderTarget](#cbitmaprendertarget)|Constructs a CBitmapRenderTarget object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CBitmapRenderTarget::Attach](#cbitmaprendertarget__attach)|Attaches existing render target interface to the object|  
-|[CBitmapRenderTarget::Detach](#cbitmaprendertarget__detach)|Detaches render target interface from the object|  
-|[CBitmapRenderTarget::GetBitmap](#cbitmaprendertarget__getbitmap)|Retrieves the bitmap for this render target. The returned bitmap can be used for drawing operations.|  
-|[CBitmapRenderTarget::GetBitmapRenderTarget](#cbitmaprendertarget__getbitmaprendertarget)|Returns ID2D1BitmapRenderTarget interface|  
+|[CBitmapRenderTarget::Attach](#attach)|Attaches existing render target interface to the object|  
+|[CBitmapRenderTarget::Detach](#detach)|Detaches render target interface from the object|  
+|[CBitmapRenderTarget::GetBitmap](#getbitmap)|Retrieves the bitmap for this render target. The returned bitmap can be used for drawing operations.|  
+|[CBitmapRenderTarget::GetBitmapRenderTarget](#getbitmaprendertarget)|Returns ID2D1BitmapRenderTarget interface|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CBitmapRenderTarget::operator ID2D1BitmapRenderTarget*](#cbitmaprendertarget__operator_id2d1bitmaprendertarget_star)|Returns ID2D1BitmapRenderTarget interface|  
+|[CBitmapRenderTarget::operator ID2D1BitmapRenderTarget*](#operator_id2d1bitmaprendertarget_star)|Returns ID2D1BitmapRenderTarget interface|  
   
 ### Protected Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CBitmapRenderTarget::m_pBitmapRenderTarget](#cbitmaprendertarget__m_pbitmaprendertarget)|A pointer to an ID2D1BitmapRenderTarget object.|  
+|[CBitmapRenderTarget::m_pBitmapRenderTarget](#m_pbitmaprendertarget)|A pointer to an ID2D1BitmapRenderTarget object.|  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
   
  [CRenderTarget](../../mfc/reference/crendertarget-class.md)  
   
- [CBitmapRenderTarget](../../mfc/reference/cbitmaprendertarget-class.md)  
+ `CBitmapRenderTarget` 
   
 ## Requirements  
  **Header:** afxrendertarget.h  
   
-##  <a name="cbitmaprendertarget__attach"></a>  CBitmapRenderTarget::Attach  
+##  <a name="attach"></a>  CBitmapRenderTarget::Attach  
  Attaches existing render target interface to the object  
   
 ```  
@@ -94,14 +94,14 @@ void Attach(ID2D1BitmapRenderTarget* pTarget);
  `pTarget`  
  Existing render target interface. Cannot be NULL  
   
-##  <a name="cbitmaprendertarget__cbitmaprendertarget"></a>  CBitmapRenderTarget::CBitmapRenderTarget  
+##  <a name="cbitmaprendertarget"></a>  CBitmapRenderTarget::CBitmapRenderTarget  
  Constructs a CBitmapRenderTarget object.  
   
 ```  
 CBitmapRenderTarget();
 ```  
   
-##  <a name="cbitmaprendertarget__detach"></a>  CBitmapRenderTarget::Detach  
+##  <a name="detach"></a>  CBitmapRenderTarget::Detach  
  Detaches render target interface from the object  
   
 ```  
@@ -111,7 +111,7 @@ ID2D1BitmapRenderTarget* Detach();
 ### Return Value  
  Pointer to detached render target interface.  
   
-##  <a name="cbitmaprendertarget__getbitmap"></a>  CBitmapRenderTarget::GetBitmap  
+##  <a name="getbitmap"></a>  CBitmapRenderTarget::GetBitmap  
  Retrieves the bitmap for this render target. The returned bitmap can be used for drawing operations.  
   
 ```  
@@ -125,7 +125,7 @@ BOOL GetBitmap(CD2DBitmap& bitmap);
 ### Return Value  
  If the method succeeds, it returns TRUE. Otherwise, it returns FALSE.  
   
-##  <a name="cbitmaprendertarget__getbitmaprendertarget"></a>  CBitmapRenderTarget::GetBitmapRenderTarget  
+##  <a name="getbitmaprendertarget"></a>  CBitmapRenderTarget::GetBitmapRenderTarget  
  Returns ID2D1BitmapRenderTarget interface  
   
 ```  
@@ -135,14 +135,14 @@ ID2D1BitmapRenderTarget* GetBitmapRenderTarget();
 ### Return Value  
  Pointer to an ID2D1BitmapRenderTarget interface or NULL if object is not initialized yet.  
   
-##  <a name="cbitmaprendertarget__m_pbitmaprendertarget"></a>  CBitmapRenderTarget::m_pBitmapRenderTarget  
+##  <a name="m_pbitmaprendertarget"></a>  CBitmapRenderTarget::m_pBitmapRenderTarget  
  A pointer to an ID2D1BitmapRenderTarget object.  
   
 ```  
 ID2D1BitmapRenderTarget* m_pBitmapRenderTarget;  
 ```  
   
-##  <a name="cbitmaprendertarget__operator_id2d1bitmaprendertarget_star"></a>  CBitmapRenderTarget::operator ID2D1BitmapRenderTarget*  
+##  <a name="operator_id2d1bitmaprendertarget_star"></a>  CBitmapRenderTarget::operator ID2D1BitmapRenderTarget*  
  Returns ID2D1BitmapRenderTarget interface  
   
 ```  

@@ -46,7 +46,7 @@ translation.priority.ht:
   
 ### To hide the Colors window  
   
-1.  Unpin the window. This will allow the window to auto hide when it's not in use. For more information, see [Arranging Windows](../misc/how-to-arrange-and-dock-windows.md).  
+1.  Unpin the window. This will allow the window to auto hide when it's not in use.  
   
  \- or -  
   

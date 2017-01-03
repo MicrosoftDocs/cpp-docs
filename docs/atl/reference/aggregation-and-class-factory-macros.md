@@ -316,7 +316,7 @@ DECLARE_POLY_AGGREGATABLE( x )
   
 ##  <a name="declare_protect_final_construct"></a>  DECLARE_PROTECT_FINAL_CONSTRUCT  
 
- Protects your object from being deleted if (during [FinalConstruct](ccomobjectrootex-class.md#ccomobjectrootex__finalconstruct)) the internal aggregated object increments the reference count then decrements the count to 0.  
+ Protects your object from being deleted if (during [FinalConstruct](ccomobjectrootex-class.md#finalconstruct)) the internal aggregated object increments the reference count then decrements the count to 0.  
   
 ```
 DECLARE_PROTECT_FINAL_CONSTRUCT()

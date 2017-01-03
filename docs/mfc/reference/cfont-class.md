@@ -51,27 +51,27 @@ class CFont : public CGdiObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CFont::CFont](#cfont__cfont)|Constructs a `CFont` object.|  
+|[CFont::CFont](#cfont)|Constructs a `CFont` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CFont::CreateFont](#cfont__createfont)|Initializes a `CFont` with the specified characteristics.|  
-|[CFont::CreateFontIndirect](#cfont__createfontindirect)|Initializes a `CFont` object with the characteristics given in a `LOGFONT` structure.|  
-|[CFont::CreatePointFont](#cfont__createpointfont)|Initializes a `CFont` with the specified height, measured in tenths of a point, and typeface.|  
-|[CFont::CreatePointFontIndirect](#cfont__createpointfontindirect)|Same as `CreateFontIndirect` except that the font height is measured in tenths of a point rather than logical units.|  
-|[CFont::FromHandle](#cfont__fromhandle)|Returns a pointer to a `CFont` object when given a Windows **HFONT**.|  
-|[CFont::GetLogFont](#cfont__getlogfont)|Fills a `LOGFONT` with information about the logical font attached to the `CFont` object.|  
+|[CFont::CreateFont](#createfont)|Initializes a `CFont` with the specified characteristics.|  
+|[CFont::CreateFontIndirect](#createfontindirect)|Initializes a `CFont` object with the characteristics given in a `LOGFONT` structure.|  
+|[CFont::CreatePointFont](#createpointfont)|Initializes a `CFont` with the specified height, measured in tenths of a point, and typeface.|  
+|[CFont::CreatePointFontIndirect](#createpointfontindirect)|Same as `CreateFontIndirect` except that the font height is measured in tenths of a point rather than logical units.|  
+|[CFont::FromHandle](#fromhandle)|Returns a pointer to a `CFont` object when given a Windows **HFONT**.|  
+|[CFont::GetLogFont](#getlogfont)|Fills a `LOGFONT` with information about the logical font attached to the `CFont` object.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CFont::operator HFONT](#cfont__operator_hfont)|Returns the Windows GDI font handle attached to the `CFont` object.|  
+|[CFont::operator HFONT](#operator_hfont)|Returns the Windows GDI font handle attached to the `CFont` object.|  
   
 ## Remarks  
- To use a `CFont` object, construct a `CFont` object and attach a Windows font to it with [CreateFont](#cfont__createfont), [CreateFontIndirect](#cfont__createfontindirect), [CreatePointFont](#cfont__createpointfont), or [CreatePointFontIndirect](#cfont__createpointfontindirect), and then use the object's member functions to manipulate the font.  
+ To use a `CFont` object, construct a `CFont` object and attach a Windows font to it with [CreateFont](#createfont), [CreateFontIndirect](#createfontindirect), [CreatePointFont](#createpointfont), or [CreatePointFontIndirect](#createpointfontindirect), and then use the object's member functions to manipulate the font.  
   
  The `CreatePointFont` and `CreatePointFontIndirect` functions are often easier to use than `CreateFont` or `CreateFontIndirect` since they do the conversion for the height of the font from a point size to logical units automatically.  
   
@@ -87,7 +87,7 @@ class CFont : public CGdiObject
 ## Requirements  
  **Header:** afxwin.h  
   
-##  <a name="cfont__cfont"></a>  CFont::CFont  
+##  <a name="cfont"></a>  CFont::CFont  
  Constructs a `CFont` object.  
   
 ```  
@@ -100,7 +100,7 @@ CFont();
 ### Example  
  [!code-cpp[NVC_MFCDocView#70](../../mfc/codesnippet/cpp/cfont-class_1.cpp)]  
   
-##  <a name="cfont__createfont"></a>  CFont::CreateFont  
+##  <a name="createfont"></a>  CFont::CreateFont  
  Initializes a `CFont` object with the specified characteristics.  
   
 ```  
@@ -189,7 +189,7 @@ BOOL CreateFont(
 ### Example  
  [!code-cpp[NVC_MFCDocView#71](../../mfc/codesnippet/cpp/cfont-class_2.cpp)]  
   
-##  <a name="cfont__createfontindirect"></a>  CFont::CreateFontIndirect  
+##  <a name="createfontindirect"></a>  CFont::CreateFontIndirect  
  Initializes a `CFont` object with the characteristics given in a [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037)structure.  
   
 ```  
@@ -206,14 +206,14 @@ BOOL CreateFontIndirect(const LOGFONT* lpLogFont);
 ### Remarks  
  The font can subsequently be selected as the current font for any device.  
   
- This font has the characteristics specified in the [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) structure. When the font is selected by using the [CDC::SelectObject](../../mfc/reference/cdc-class.md#cdc__selectobject) member function, the GDI font mapper attempts to match the logical font with an existing physical font. If the font mapper fails to find an exact match for the logical font, it provides an alternative font whose characteristics match as many of the requested characteristics as possible.  
+ This font has the characteristics specified in the [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) structure. When the font is selected by using the [CDC::SelectObject](../../mfc/reference/cdc-class.md#selectobject) member function, the GDI font mapper attempts to match the logical font with an existing physical font. If the font mapper fails to find an exact match for the logical font, it provides an alternative font whose characteristics match as many of the requested characteristics as possible.  
   
  When you no longer need the `CFont` object created by the `CreateFontIndirect` function, use `CDC::SelectObject` to select a different font into the device context, then delete the `CFont` object that is no longer needed.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#72](../../mfc/codesnippet/cpp/cfont-class_3.cpp)]  
   
-##  <a name="cfont__createpointfont"></a>  CFont::CreatePointFont  
+##  <a name="createpointfont"></a>  CFont::CreatePointFont  
  This function provides a simple way to create a font of a specified typeface and point size.  
   
 ```  
@@ -244,8 +244,8 @@ BOOL CreatePointFont(
 ### Example  
  [!code-cpp[NVC_MFCDocView#73](../../mfc/codesnippet/cpp/cfont-class_4.cpp)]  
   
-##  <a name="cfont__createpointfontindirect"></a>  CFont::CreatePointFontIndirect  
- This function is the same as [CreateFontIndirect](#cfont__createfontindirect) except that the **lfHeight** member of the `LOGFONT` is interpreted in tenths of a point rather than device units.  
+##  <a name="createpointfontindirect"></a>  CFont::CreatePointFontIndirect  
+ This function is the same as [CreateFontIndirect](#createfontindirect) except that the **lfHeight** member of the `LOGFONT` is interpreted in tenths of a point rather than device units.  
   
 ```  
 BOOL CreatePointFontIndirect(
@@ -271,7 +271,7 @@ BOOL CreatePointFontIndirect(
 ### Example  
  [!code-cpp[NVC_MFCDocView#74](../../mfc/codesnippet/cpp/cfont-class_5.cpp)]  
   
-##  <a name="cfont__fromhandle"></a>  CFont::FromHandle  
+##  <a name="fromhandle"></a>  CFont::FromHandle  
  Returns a pointer to a `CFont` object when given an **HFONT** handle to a Windows GDI font object.  
   
 ```  
@@ -291,7 +291,7 @@ static CFont* PASCAL FromHandle(HFONT hFont);
 ### Example  
  [!code-cpp[NVC_MFCDocView#75](../../mfc/codesnippet/cpp/cfont-class_6.cpp)]  
   
-##  <a name="cfont__getlogfont"></a>  CFont::GetLogFont  
+##  <a name="getlogfont"></a>  CFont::GetLogFont  
  Call this function to retrieve a copy of the `LOGFONT` structure for `CFont`.  
   
 ```  
@@ -308,7 +308,7 @@ int GetLogFont(LOGFONT* pLogFont);
 ### Example  
  [!code-cpp[NVC_MFCDocView#76](../../mfc/codesnippet/cpp/cfont-class_7.cpp)]  
   
-##  <a name="cfont__operator_hfont"></a>  CFont::operator HFONT  
+##  <a name="operator_hfont"></a>  CFont::operator HFONT  
  Use this operator to get the Windows GDI handle of the font attached to the `CFont` object.  
   
 ```  
@@ -329,7 +329,7 @@ operator HFONT() const;
  [!code-cpp[NVC_MFCDocView#77](../../mfc/codesnippet/cpp/cfont-class_8.cpp)]  
   
 ## See Also  
- [MFC Sample HIERSVR](../../top/visual-cpp-samples.md)   
+ [MFC Sample HIERSVR](../../visual-cpp-samples.md)   
  [CGdiObject Class](../../mfc/reference/cgdiobject-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 

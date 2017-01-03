@@ -51,7 +51,7 @@ translation.priority.ht:
   
  For more information on exporting templates, see [http://support.microsoft.com/default.aspx?scid=KB;EN-US;168958](http://support.microsoft.com/default.aspx?scid=KB;EN-US;168958).  
   
- C4251 can be ignored if you are deriving from a type in the Standard C++ Library, compiling a debug release (**/MTd**) and where the compiler error message refers to _Container_base.  
+ C4251 can be ignored if you are deriving from a type in the C++ Standard Library, compiling a debug release (**/MTd**) and where the compiler error message refers to _Container_base.  
   
 ```  
 // C4251.cpp  

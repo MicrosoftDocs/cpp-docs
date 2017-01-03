@@ -77,7 +77,7 @@ public:
 ## Remarks  
  The template class describes a smart pointer, called an `auto_ptr,` to an allocated object. The pointer must be either null or designate an object allocated by `new`. The `auto_ptr` transfers ownership if its stored value is assigned to another object. (It replaces the stored value after a transfer with a null pointer.) The destructor for `auto_ptr<Type>` deletes the allocated object. The `auto_ptr<Type>` ensures that an allocated object is automatically deleted when control leaves a block, even through a thrown exception. You should not construct two `auto_ptr<Type>` objects that own the same object.  
   
- You can pass an `auto_ptr<Type>` object by value as an argument to a function call. An `auto_ptr` cannot be an element of any Standard Library container. You cannot reliably manage a sequence of `auto_ptr<Type>` objects with a Standard Template Library container.  
+ You can pass an `auto_ptr<Type>` object by value as an argument to a function call. An `auto_ptr` cannot be an element of any Standard Library container. You cannot reliably manage a sequence of `auto_ptr<Type>` objects with a C++ Standard Library container.  
   
 ## Members  
   

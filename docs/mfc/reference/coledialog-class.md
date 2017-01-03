@@ -51,7 +51,7 @@ class COleDialog : public CCommonDialog
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleDialog::GetLastError](#coledialog__getlasterror)|Gets the error code returned by the dialog box.|  
+|[COleDialog::GetLastError](#getlasterror)|Gets the error code returned by the dialog box.|  
   
 ## Remarks  
  The Microsoft Foundation Class Library provides several classes derived from `COleDialog`:  
@@ -92,7 +92,7 @@ class COleDialog : public CCommonDialog
 ## Requirements  
  **Header:** afxodlgs.h  
   
-##  <a name="coledialog__getlasterror"></a>  COleDialog::GetLastError  
+##  <a name="getlasterror"></a>  COleDialog::GetLastError  
  Call the `GetLastError` member function to get additional error information when `DoModal` returns **IDABORT**.  
   
 ```  

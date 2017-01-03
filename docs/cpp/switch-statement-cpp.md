@@ -148,4 +148,4 @@ int main(int argc, char *argv[])
 ## See Also  
  [Selection Statements](../cpp/selection-statements-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)   
- [(NOTINBUILD) Using Labels in the case Statement](http://msdn.microsoft.com/en-us/a6ff057d-1aee-42ed-a28d-ee6a565b3197)
+ 

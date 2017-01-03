@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # multimap Class
-The Standard Template Library multimap class is used for the storage and retrieval of data from a collection in which the each element is a pair that has both a data value and a sort key. The value of the key does not need to be unique and is used to order the data automatically. The value of an element in a multimap, but not its associated key value, may be changed directly. Instead, key values associated with old elements must be deleted and new key values associated with new elements inserted.  
+The C++ Standard Library multimap class is used for the storage and retrieval of data from a collection in which the each element is a pair that has both a data value and a sort key. The value of the key does not need to be unique and is used to order the data automatically. The value of an element in a multimap, but not its associated key value, may be changed directly. Instead, key values associated with old elements must be deleted and new key values associated with new elements inserted.  
   
 ## Syntax  
   
@@ -66,7 +66,7 @@ class multimap;
  The type that represents the stored allocator object that encapsulates details about the map's allocation and deallocation of memory. This argument is optional and the default value is `allocator<pair <const Key, Type> >`.  
   
 ## Remarks  
- The STL multimap class is  
+ The C++ Standard Library multimap class is  
   
 -   An associative container, which a variable size container that supports the efficient retrieval of element values based on an associated key value.  
   
@@ -1003,7 +1003,7 @@ allocator_type get_allocator() const;
  The allocator used by the multimap.  
   
 ### Remarks  
- Allocators for the multimap class specify how the class manages storage. The default allocators supplied with STL container classes is sufficient for most programming needs. Writing and using your own allocator class is an advanced C++ topic.  
+ Allocators for the multimap class specify how the class manages storage. The default allocators supplied with C++ Standard Library container classes are sufficient for most programming needs. Writing and using your own allocator class is an advanced C++ topic.  
   
 ### Example  
   

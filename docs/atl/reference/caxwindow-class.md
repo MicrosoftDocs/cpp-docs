@@ -54,21 +54,21 @@ class CAxWindow : public CWindow
   
 |||  
 |-|-|  
-|[AttachControl](#caxwindow__attachcontrol)|Attaches an existing ActiveX control to the `CAxWindow` object.|  
-|[CAxWindow](#caxwindow__caxwindow)|Constructs a `CAxWindow` object.|  
-|[CreateControl](#caxwindow__createcontrol)|Creates an ActiveX control, initializes it, and hosts it in the `CAxWindow` window.|  
-|[CreateControlEx](#caxwindow__createcontrolex)|Creates an ActiveX control and retrieves an interface pointer (or pointers) from the control.|  
-|[GetWndClassName](#caxwindow__getwndclassname)|(Static) Retrieves the predefined class name of the `CAxWindow` object.|  
-|[QueryControl](#caxwindow__querycontrol)|Retrieves the **IUnknown** of the hosted ActiveX control.|  
-|[QueryHost](#caxwindow__queryhost)|Retrieves the **IUnknown** pointer of the `CAxWindow` object.|  
-|[SetExternalDispatch](#caxwindow__setexternaldispatch)|Sets the external dispatch interface used by the `CAxWindow` object.|  
-|[SetExternalUIHandler](#caxwindow__setexternaluihandler)|Sets the external **IDocHostUIHandler** interface used by the `CAxWindow` object.|  
+|[AttachControl](#attachcontrol)|Attaches an existing ActiveX control to the `CAxWindow` object.|  
+|[CAxWindow](#caxwindow)|Constructs a `CAxWindow` object.|  
+|[CreateControl](#createcontrol)|Creates an ActiveX control, initializes it, and hosts it in the `CAxWindow` window.|  
+|[CreateControlEx](#createcontrolex)|Creates an ActiveX control and retrieves an interface pointer (or pointers) from the control.|  
+|[GetWndClassName](#getwndclassname)|(Static) Retrieves the predefined class name of the `CAxWindow` object.|  
+|[QueryControl](#querycontrol)|Retrieves the **IUnknown** of the hosted ActiveX control.|  
+|[QueryHost](#queryhost)|Retrieves the **IUnknown** pointer of the `CAxWindow` object.|  
+|[SetExternalDispatch](#setexternaldispatch)|Sets the external dispatch interface used by the `CAxWindow` object.|  
+|[SetExternalUIHandler](#setexternaluihandler)|Sets the external **IDocHostUIHandler** interface used by the `CAxWindow` object.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[operator =](#caxwindow__operator_eq)|Assigns an **HWND** to an existing **CAxWindow** object.|  
+|[operator =](#operator_eq)|Assigns an **HWND** to an existing **CAxWindow** object.|  
   
 ## Remarks  
  This class provides methods for manipulating a window that hosts an ActiveX control. The hosting is provided by " **AtlAxWin80"**, which is wrapped by `CAxWindow`.  
@@ -82,7 +82,7 @@ class CAxWindow : public CWindow
 ## Requirements  
  **Header:** atlwin.h  
   
-##  <a name="caxwindow__attachcontrol"></a>  CAxWindow::AttachControl  
+##  <a name="attachcontrol"></a>  CAxWindow::AttachControl  
  Creates a new host object if one isn't already present and attaches the specified control to the host.  
   
 ```
@@ -104,7 +104,7 @@ HRESULT AttachControl(
 ### Remarks  
  The control object being attached must be correctly initialized before calling `AttachControl`.  
   
-##  <a name="caxwindow__caxwindow"></a>  CAxWindow::CAxWindow  
+##  <a name="caxwindow"></a>  CAxWindow::CAxWindow  
  Constructs a `CAxWindow` object using an existing window object handle.  
   
 ```
@@ -115,7 +115,7 @@ CAxWindow(HWND   hWnd = NULL);
  `hWnd`  
  A handle to an existing window object.  
   
-##  <a name="caxwindow__createcontrol"></a>  CAxWindow::CreateControl  
+##  <a name="createcontrol"></a>  CAxWindow::CreateControl  
  Creates an ActiveX control, initializes it, and hosts it in the specified window.  
   
 ```
@@ -166,12 +166,12 @@ HRESULT CreateControl(
   
  [!code-cpp[NVC_ATL_Windowing#42](../../atl/codesnippet/cpp/caxwindow-class_1.cpp)]  
   
- See [CAxWindow2T::CreateControlLic](../../atl/reference/caxwindow2t-class.md#caxwindow2t__createcontrollic) to create, initialize, and host a licensed ActiveX control.  
+ See [CAxWindow2T::CreateControlLic](../../atl/reference/caxwindow2t-class.md#createcontrollic) to create, initialize, and host a licensed ActiveX control.  
   
 ### Example  
  See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample that uses `CreateControl`.  
   
-##  <a name="caxwindow__createcontrolex"></a>  CAxWindow::CreateControlEx  
+##  <a name="createcontrolex"></a>  CAxWindow::CreateControlEx  
  Creates an ActiveX control, initializes it, and hosts it in the specified window.  
   
 ```
@@ -231,14 +231,14 @@ HRESULT CreateControlEx(
  A standard `HRESULT` value.  
   
 ### Remarks  
- This method is similar to [CAxWindow::CreateControl](#caxwindow__createcontrol), but unlike that method, `CreateControlEx` also allows you to receive an interface pointer to the newly created control and set up an event sink to receive events fired by the control.  
+ This method is similar to [CAxWindow::CreateControl](#createcontrol), but unlike that method, `CreateControlEx` also allows you to receive an interface pointer to the newly created control and set up an event sink to receive events fired by the control.  
   
- See [CAxWindow2T::CreateControlLicEx](../../atl/reference/caxwindow2t-class.md#caxwindow2t__createcontrollicex) to create, initialize, and host a licensed ActiveX control.  
+ See [CAxWindow2T::CreateControlLicEx](../../atl/reference/caxwindow2t-class.md#createcontrollicex) to create, initialize, and host a licensed ActiveX control.  
   
 ### Example  
  See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample that uses `CreateControlEx`.  
   
-##  <a name="caxwindow__getwndclassname"></a>  CAxWindow::GetWndClassName  
+##  <a name="getwndclassname"></a>  CAxWindow::GetWndClassName  
  Retrieves the name of the window class.  
   
 ```
@@ -248,7 +248,7 @@ static LPCTSTR GetWndClassName();
 ### Return Value  
  A pointer to a string containing the name of the window class that can host nonlicensed ActiveX controls.  
   
-##  <a name="caxwindow__operator_eq"></a>  CAxWindow::operator =  
+##  <a name="operator_eq"></a>  CAxWindow::operator =  
  Assigns an `HWND` to an existing `CAxWindow` object.  
   
 ```
@@ -262,7 +262,7 @@ CAxWindow<TBase>& operator=(HWND   hWnd);
 ### Return Value  
  Returns a reference to the current `CAxWindow` object.  
   
-##  <a name="caxwindow__querycontrol"></a>  CAxWindow::QueryControl  
+##  <a name="querycontrol"></a>  CAxWindow::QueryControl  
  Retrieves the specified interface of the hosted control.  
   
 ```
@@ -288,7 +288,7 @@ HRESULT QueryControl(
 ### Return Value  
  A standard `HRESULT` value.  
   
-##  <a name="caxwindow__queryhost"></a>  CAxWindow::QueryHost  
+##  <a name="queryhost"></a>  CAxWindow::QueryHost  
  Returns the specified interface of the host.  
   
 ```
@@ -317,7 +317,7 @@ HRESULT QueryHost(
 ### Remarks  
  The interface of the host allows access to the underlying functionality of the window-hosting code, implemented by **AxWin**.  
   
-##  <a name="caxwindow__setexternaldispatch"></a>  CAxWindow::SetExternalDispatch  
+##  <a name="setexternaldispatch"></a>  CAxWindow::SetExternalDispatch  
  Sets the external dispatch interface for the `CAxWindow` object.  
   
 ```
@@ -331,7 +331,7 @@ HRESULT SetExternalDispatch(IDispatch* pDisp);
 ### Return Value  
  A standard `HRESULT` value.  
   
-##  <a name="caxwindow__setexternaluihandler"></a>  CAxWindow::SetExternalUIHandler  
+##  <a name="setexternaluihandler"></a>  CAxWindow::SetExternalUIHandler  
  Sets the external [IDocHostUIHandlerDispatch](../../atl/reference/idochostuihandlerdispatch-interface.md) interface for the `CAxWindow` object.  
   
 ```
@@ -349,7 +349,7 @@ HRESULT SetExternalUIHandler(IDocHostUIHandlerDispatch* pUIHandler);
  The external `IDocHostUIHandlerDispatch` interface is used by controls that query the host's site for the `IDocHostUIHandlerDispatch` interface. The WebBrowser control is one control that does this.  
   
 ## See Also  
- [ATLCON Sample](../../top/visual-cpp-samples.md)   
+ [ATLCON Sample](../../visual-cpp-samples.md)   
  [CWindow Class](../../atl/reference/cwindow-class.md)   
  [Composite Control Fundamentals](../../atl/atl-composite-control-fundamentals.md)   
  [Class Overview](../../atl/atl-class-overview.md)   

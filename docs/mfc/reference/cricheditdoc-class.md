@@ -53,15 +53,15 @@ class CRichEditDoc : public COleServerDoc
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRichEditDoc::CreateClientItem](#cricheditdoc__createclientitem)|Called to perform cleanup of the document.|  
-|[CRichEditDoc::GetStreamFormat](#cricheditdoc__getstreamformat)|Indicates whether stream input and output should include formatting information.|  
-|[CRichEditDoc::GetView](#cricheditdoc__getview)|Retrieves the asssociated [CRichEditView](../../mfc/reference/cricheditview-class.md) object.|  
+|[CRichEditDoc::CreateClientItem](#createclientitem)|Called to perform cleanup of the document.|  
+|[CRichEditDoc::GetStreamFormat](#getstreamformat)|Indicates whether stream input and output should include formatting information.|  
+|[CRichEditDoc::GetView](#getview)|Retrieves the asssociated [CRichEditView](../../mfc/reference/cricheditview-class.md) object.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRichEditDoc::m_bRTF](#cricheditdoc__m_brtf)|Indicates whether stream I/O should include formatting.|  
+|[CRichEditDoc::m_bRTF](#m_brtf)|Indicates whether stream I/O should include formatting.|  
   
 ## Remarks  
  A "rich edit control" is a window in which the user can enter and edit text. The text can be assigned character and paragraph formatting, and can include embedded OLE objects. Rich edit controls provide a programming interface for formatting text. However, an application must implement any user interface components necessary to make formatting operations available to the user.  
@@ -70,7 +70,7 @@ class CRichEditDoc : public COleServerDoc
   
  This Windows Common control (and therefore the [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) and related classes) is available only to programs running under Windows 95/98 and Windows NT versions 3.51 and later.  
   
- For an example of using a rich edit document in an MFC application, see the [WORDPAD](../../top/visual-cpp-samples.md) sample application.  
+ For an example of using a rich edit document in an MFC application, see the [WORDPAD](../../visual-cpp-samples.md) sample application.  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -90,7 +90,7 @@ class CRichEditDoc : public COleServerDoc
 ## Requirements  
  **Header:** afxrich.h  
   
-##  <a name="cricheditdoc__createclientitem"></a>  CRichEditDoc::CreateClientItem  
+##  <a name="createclientitem"></a>  CRichEditDoc::CreateClientItem  
  Call this function to create a `CRichEditCntrItem` object and add it to this document.  
   
 ```  
@@ -109,7 +109,7 @@ virtual CRichEditCntrItem* CreateClientItem(REOBJECT* preo = NULL) const = 0;
   
  For more information, see the [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="cricheditdoc__getstreamformat"></a>  CRichEditDoc::GetStreamFormat  
+##  <a name="getstreamformat"></a>  CRichEditDoc::GetStreamFormat  
  Call this function to determine the text format for streaming the contents of the rich edit.  
   
 ```  
@@ -126,9 +126,9 @@ int GetStreamFormat() const;
 - `SF_RTF` Indicates that the rich edit control does maintain formatting information.  
   
 ### Remarks  
- The return value is based on the [m_bRTF](#cricheditdoc__m_brtf) data member. This function returns `SF_RTF` if `m_bRTF` is **TRUE**; otherwise, `SF_TEXT`.  
+ The return value is based on the [m_bRTF](#m_brtf) data member. This function returns `SF_RTF` if `m_bRTF` is **TRUE**; otherwise, `SF_TEXT`.  
   
-##  <a name="cricheditdoc__getview"></a>  CRichEditDoc::GetView  
+##  <a name="getview"></a>  CRichEditDoc::GetView  
  Call this function to access the [CRichEditView](../../mfc/reference/cricheditview-class.md) object associated with this `CRichEditDoc` object.  
   
 ```  
@@ -143,15 +143,15 @@ virtual CRichEditView* GetView() const;
 ### Remarks  
  The text and formatting information are contained within the `CRichEditView` object. The `CRichEditDoc` object maintains the OLE items for serialization. There should be only one `CRichEditView` for each `CRichEditDoc`.  
   
-##  <a name="cricheditdoc__m_brtf"></a>  CRichEditDoc::m_bRTF  
- When **TRUE**, indicates that [CRichEditCtrl::StreamIn](../../mfc/reference/cricheditctrl-class.md#cricheditctrl__streamin) and [CRichEditCtrl::StreamOut](../../mfc/reference/cricheditctrl-class.md#cricheditctrl__streamout) should store paragraph and character-formatting characteristics.  
+##  <a name="m_brtf"></a>  CRichEditDoc::m_bRTF  
+ When **TRUE**, indicates that [CRichEditCtrl::StreamIn](../../mfc/reference/cricheditctrl-class.md#streamin) and [CRichEditCtrl::StreamOut](../../mfc/reference/cricheditctrl-class.md#streamout) should store paragraph and character-formatting characteristics.  
   
 ```  
 BOOL m_bRTF;  
 ```  
   
 ## See Also  
- [MFC Sample WORDPAD](../../top/visual-cpp-samples.md)   
+ [MFC Sample WORDPAD](../../visual-cpp-samples.md)   
  [COleServerDoc Class](../../mfc/reference/coleserverdoc-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CRichEditView Class](../../mfc/reference/cricheditview-class.md)   

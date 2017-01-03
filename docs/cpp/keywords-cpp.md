@@ -98,8 +98,8 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
 |[__interface](../cpp/interface.md)|[__leave](../cpp/try-finally-statement.md)|[__m128](../cpp/m128.md)|  
 |[__m128d](../cpp/m128d.md)|[__m128i](../cpp/m128i.md)|[__m64](../cpp/m64.md)|  
 |[__multiple_inheritance](../cpp/inheritance-keywords.md)|[__nogc](../dotnet/declaration-of-a-clr-reference-class-object.md) <sup>2</sup>|[__noop](../intrinsics/noop.md)|  
-|[__pin](../misc/pin.md) <sup>2</sup>|[__property](../misc/property.md) <sup>2</sup>|[__raise](../cpp/raise.md)|  
-|[__sealed](../misc/sealed.md) <sup>2</sup>|[__single_inheritance](../cpp/inheritance-keywords.md)|[__stdcall](../cpp/stdcall.md)|  
+|`__pin` <sup>2</sup>|`__property` <sup>2</sup>|[__raise](../cpp/raise.md)|  
+|`__sealed` <sup>2</sup>|[__single_inheritance](../cpp/inheritance-keywords.md)|[__stdcall](../cpp/stdcall.md)|  
 |[__super](../cpp/super.md)|[__thiscall](../cpp/thiscall.md)|[__try/\__except](../cpp/try-except-statement.md), [__try/\__finally](../cpp/try-finally-statement.md)|  
 |[__try_cast](../dotnet/cast-notation-and-introduction-of-safe-cast-angles.md) <sup>2</sup>|[__unaligned](../cpp/unaligned.md)|[__unhook](../cpp/unhook.md) <sup>3</sup>|  
 |[__uuidof](../cpp/uuidof-operator.md)|[__value](../dotnet/value-type-semantics.md) <sup>2</sup>|[__virtual_inheritance](../cpp/inheritance-keywords.md)|  
@@ -134,7 +134,7 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
 |[thread](../cpp/thread.md) <sup>1</sup>|[throw](../cpp/try-throw-and-catch-statements-cpp.md)|[true](../cpp/true-cpp.md)|  
 |[try](../cpp/try-throw-and-catch-statements-cpp.md)|[typedef](aliases-and-typedefs-cpp.md)|[typeid](../cpp/typeid-operator.md)|  
 |[typeid](../windows/typeid-cpp-component-extensions.md)|[typename](../cpp/typename.md)|[union](../cpp/unions.md)|  
-|[unsigned](../cpp/fundamental-types-cpp.md)|[using](../cpp/using-declaration.md) declaration, [using](../misc/using-directive-cpp.md) directive|[uuid](../cpp/uuid-cpp.md) <sup>1</sup>|  
+|[unsigned](../cpp/fundamental-types-cpp.md)|[using](../cpp/using-declaration.md) declaration, [using](namespaces-cpp.md#using_directives) directive|[uuid](../cpp/uuid-cpp.md) <sup>1</sup>|  
 |[value class](../windows/classes-and-structs-cpp-component-extensions.md)|[value struct](../windows/classes-and-structs-cpp-component-extensions.md)|[virtual](../cpp/virtual-cpp.md)|  
 |[void](../cpp/void-cpp.md)|[volatile](../cpp/volatile-cpp.md)|[while](../cpp/while-statement-cpp.md)|  
   

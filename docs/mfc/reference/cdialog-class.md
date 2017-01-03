@@ -53,33 +53,33 @@ class CDialog : public CWnd
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDialog::CDialog](#cdialog__cdialog)|Constructs a `CDialog` object.|  
+|[CDialog::CDialog](#cdialog)|Constructs a `CDialog` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDialog::Create](#cdialog__create)|Initializes the `CDialog` object. Creates a modeless dialog box and attaches it to the `CDialog` object.|  
-|[CDialog::CreateIndirect](#cdialog__createindirect)|Creates a modeless dialog box from a dialog-box template in memory (not resource-based).|  
-|[CDialog::DoModal](#cdialog__domodal)|Calls a modal dialog box and returns when done.|  
-|[CDialog::EndDialog](#cdialog__enddialog)|Closes a modal dialog box.|  
-|[CDialog::GetDefID](#cdialog__getdefid)|Gets the ID of the default pushbutton control for a dialog box.|  
-|[CDialog::GotoDlgCtrl](#cdialog__gotodlgctrl)|Moves the focus to a specified dialog-box control in the dialog box.|  
-|[CDialog::InitModalIndirect](#cdialog__initmodalindirect)|Creates a modal dialog box from a dialog-box template in memory (not resource-based). The parameters are stored until the function `DoModal` is called.|  
-|[CDialog::MapDialogRect](#cdialog__mapdialogrect)|Converts the dialog-box units of a rectangle to screen units.|  
-|[CDialog::NextDlgCtrl](#cdialog__nextdlgctrl)|Moves the focus to the next dialog-box control in the dialog box.|  
-|[CDialog::OnInitDialog](#cdialog__oninitdialog)|Override to augment dialog-box initialization.|  
-|[CDialog::OnSetFont](#cdialog__onsetfont)|Override to specify the font that a dialog-box control is to use when it draws text.|  
-|[CDialog::PrevDlgCtrl](#cdialog__prevdlgctrl)|Moves the focus to the previous dialog-box control in the dialog box.|  
-|[CDialog::SetDefID](#cdialog__setdefid)|Changes the default pushbutton control for a dialog box to a specified pushbutton.|  
-|[CDialog::SetHelpID](#cdialog__sethelpid)|Sets a context-sensitive help ID for the dialog box.|  
+|[CDialog::Create](#create)|Initializes the `CDialog` object. Creates a modeless dialog box and attaches it to the `CDialog` object.|  
+|[CDialog::CreateIndirect](#createindirect)|Creates a modeless dialog box from a dialog-box template in memory (not resource-based).|  
+|[CDialog::DoModal](#domodal)|Calls a modal dialog box and returns when done.|  
+|[CDialog::EndDialog](#enddialog)|Closes a modal dialog box.|  
+|[CDialog::GetDefID](#getdefid)|Gets the ID of the default pushbutton control for a dialog box.|  
+|[CDialog::GotoDlgCtrl](#gotodlgctrl)|Moves the focus to a specified dialog-box control in the dialog box.|  
+|[CDialog::InitModalIndirect](#initmodalindirect)|Creates a modal dialog box from a dialog-box template in memory (not resource-based). The parameters are stored until the function `DoModal` is called.|  
+|[CDialog::MapDialogRect](#mapdialogrect)|Converts the dialog-box units of a rectangle to screen units.|  
+|[CDialog::NextDlgCtrl](#nextdlgctrl)|Moves the focus to the next dialog-box control in the dialog box.|  
+|[CDialog::OnInitDialog](#oninitdialog)|Override to augment dialog-box initialization.|  
+|[CDialog::OnSetFont](#onsetfont)|Override to specify the font that a dialog-box control is to use when it draws text.|  
+|[CDialog::PrevDlgCtrl](#prevdlgctrl)|Moves the focus to the previous dialog-box control in the dialog box.|  
+|[CDialog::SetDefID](#setdefid)|Changes the default pushbutton control for a dialog box to a specified pushbutton.|  
+|[CDialog::SetHelpID](#sethelpid)|Sets a context-sensitive help ID for the dialog box.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDialog::OnCancel](#cdialog__oncancel)|Override to perform the Cancel button or ESC key action. The default closes the dialog box and **DoModal** returns **IDCANCEL**.|  
-|[CDialog::OnOK](#cdialog__onok)|Override to perform the OK button action in a modal dialog box. The default closes the dialog box and `DoModal` returns **IDOK**.|  
+|[CDialog::OnCancel](#oncancel)|Override to perform the Cancel button or ESC key action. The default closes the dialog box and **DoModal** returns **IDCANCEL**.|  
+|[CDialog::OnOK](#onok)|Override to perform the OK button action in a modal dialog box. The default closes the dialog box and `DoModal` returns **IDOK**.|  
   
 ## Remarks  
  Dialog boxes are of two types: modal and modeless. A modal dialog box must be closed by the user before the application continues. A modeless dialog box allows the user to display the dialog box and return to another task without canceling or removing the dialog box.  
@@ -96,13 +96,13 @@ class CDialog : public CWnd
   
  To create a modal dialog box, construct an object on the stack using the constructor for your derived dialog class and then call `DoModal` to create the dialog window and its controls. If you wish to create a modeless dialog, call **Create** in the constructor of your dialog class.  
   
- You can also create a template in memory by using a [DLGTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms645394) data structure as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. After you construct a `CDialog` object, call [CreateIndirect](#cdialog__createindirect) to create a modeless dialog box, or call [InitModalIndirect](#cdialog__initmodalindirect) and [DoModal](#cdialog__domodal) to create a modal dialog box.  
+ You can also create a template in memory by using a [DLGTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms645394) data structure as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. After you construct a `CDialog` object, call [CreateIndirect](#createindirect) to create a modeless dialog box, or call [InitModalIndirect](#initmodalindirect) and [DoModal](#domodal) to create a modal dialog box.  
   
- The exchange and validation data map is written in an override of `CWnd::DoDataExchange` that is added to your new dialog class. See the [DoDataExchange](../../mfc/reference/cwnd-class.md#cwnd__dodataexchange) member function in `CWnd` for more on the exchange and validation functionality.  
+ The exchange and validation data map is written in an override of `CWnd::DoDataExchange` that is added to your new dialog class. See the [DoDataExchange](../../mfc/reference/cwnd-class.md#dodataexchange) member function in `CWnd` for more on the exchange and validation functionality.  
   
- Both the programmer and the framework call `DoDataExchange` indirectly through a call to [CWnd::UpdateData](../../mfc/reference/cwnd-class.md#cwnd__updatedata).  
+ Both the programmer and the framework call `DoDataExchange` indirectly through a call to [CWnd::UpdateData](../../mfc/reference/cwnd-class.md#updatedata).  
   
- The framework calls `UpdateData` when the user clicks the OK button to close a modal dialog box. (The data is not retrieved if the Cancel button is clicked.) The default implementation of [OnInitDialog](#cdialog__oninitdialog) also calls `UpdateData` to set the initial values of the controls. You typically override `OnInitDialog` to further initialize controls. `OnInitDialog` is called after all the dialog controls are created and just before the dialog box is displayed.  
+ The framework calls `UpdateData` when the user clicks the OK button to close a modal dialog box. (The data is not retrieved if the Cancel button is clicked.) The default implementation of [OnInitDialog](#oninitdialog) also calls `UpdateData` to set the initial values of the controls. You typically override `OnInitDialog` to further initialize controls. `OnInitDialog` is called after all the dialog controls are created and just before the dialog box is displayed.  
   
  You can call `CWnd::UpdateData` at any time during the execution of a modal or modeless dialog box.  
   
@@ -130,7 +130,7 @@ class CDialog : public CWnd
 ## Requirements  
  **Header:** afxwin.h  
   
-##  <a name="cdialog__cdialog"></a>  CDialog::CDialog  
+##  <a name="cdialog"></a>  CDialog::CDialog  
  To construct a resource-based modal dialog box, call either public form of the constructor.  
   
 ```  
@@ -166,7 +166,7 @@ CDialog();
   
  To construct a modeless dialog box, use the protected form of the `CDialog` constructor. The constructor is protected because you must derive your own dialog-box class to implement a modeless dialog box. Construction of a modeless dialog box is a two-step process. First call the constructor; then call the **Create** member function to create a resource-based dialog box, or call `CreateIndirect` to create the dialog box from a template in memory.  
   
-##  <a name="cdialog__create"></a>  CDialog::Create  
+##  <a name="create"></a>  CDialog::Create  
  Call **Create** to create a modeless dialog box using a dialog-box template from a resource.  
   
 ```  
@@ -209,7 +209,7 @@ virtual BOOL Create(
 ### Example  
  [!code-cpp[NVC_MFCControlLadenDialog#62](../../mfc/codesnippet/cpp/cdialog-class_1.cpp)]  
   
-##  <a name="cdialog__createindirect"></a>  CDialog::CreateIndirect  
+##  <a name="createindirect"></a>  CDialog::CreateIndirect  
  Call this member function to create a modeless dialog box from a dialog-box template in memory.  
   
 ```  
@@ -249,7 +249,7 @@ virtual BOOL CreateIndirect(
   
  Dialog boxes that contain ActiveX controls require additional information provided in a **DLGINIT** resource. For more information, see Knowledge Base article Q231591, " HOWTO: Use a Dialog Template to Create a MFC Dialog with an ActiveX Control." Knowledge Base articles are available in the MSDN Library Visual Studio documentation or at [http://support.microsoft.com](http://support.microsoft.com/).  
   
-##  <a name="cdialog__domodal"></a>  CDialog::DoModal  
+##  <a name="domodal"></a>  CDialog::DoModal  
  Call this member function to invoke the modal dialog box and return the dialog-box result when done.  
   
 ```  
@@ -257,12 +257,12 @@ virtual INT_PTR DoModal();
 ```  
   
 ### Return Value  
- An `int` value that specifies the value of the `nResult` parameter that was passed to the [CDialog::EndDialog](#cdialog__enddialog) member function, which is used to close the dialog box. The return value is –1 if the function could not create the dialog box, or **IDABORT** if some other error occurred, in which case the output window will contain error information from [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
+ An `int` value that specifies the value of the `nResult` parameter that was passed to the [CDialog::EndDialog](#enddialog) member function, which is used to close the dialog box. The return value is –1 if the function could not create the dialog box, or **IDABORT** if some other error occurred, in which case the output window will contain error information from [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### Remarks  
  This member function handles all interaction with the user while the dialog box is active. This is what makes the dialog box modal; that is, the user cannot interact with other windows until the dialog box is closed.  
   
- If the user clicks one of the pushbuttons in the dialog box, such as OK or Cancel, a message-handler member function, such as [OnOK](#cdialog__onok) or [OnCancel](#cdialog__oncancel), is called to attempt to close the dialog box. The default `OnOK` member function will validate and update the dialog-box data and close the dialog box with result **IDOK**, and the default `OnCancel` member function will close the dialog box with result **IDCANCEL** without validating or updating the dialog-box data. You can override these message-handler functions to alter their behavior.  
+ If the user clicks one of the pushbuttons in the dialog box, such as OK or Cancel, a message-handler member function, such as [OnOK](#onok) or [OnCancel](#oncancel), is called to attempt to close the dialog box. The default `OnOK` member function will validate and update the dialog-box data and close the dialog box with result **IDOK**, and the default `OnCancel` member function will close the dialog box with result **IDCANCEL** without validating or updating the dialog-box data. You can override these message-handler functions to alter their behavior.  
   
 > [!NOTE]
 > `PreTranslateMessage` is now called for modal dialog box message processing.  
@@ -270,7 +270,7 @@ virtual INT_PTR DoModal();
 ### Example  
  [!code-cpp[NVC_MFCControlLadenDialog#63](../../mfc/codesnippet/cpp/cdialog-class_2.cpp)]  
   
-##  <a name="cdialog__enddialog"></a>  CDialog::EndDialog  
+##  <a name="enddialog"></a>  CDialog::EndDialog  
  Call this member function to terminate a modal dialog box.  
   
 ```  
@@ -284,7 +284,7 @@ void EndDialog(int nResult);
 ### Remarks  
  This member function returns `nResult` as the return value of `DoModal`. You must use the `EndDialog` function to complete processing whenever a modal dialog box is created.  
   
- You can call `EndDialog` at any time, even in [OnInitDialog](#cdialog__oninitdialog), in which case you should close the dialog box before it is shown or before the input focus is set.  
+ You can call `EndDialog` at any time, even in [OnInitDialog](#oninitdialog), in which case you should close the dialog box before it is shown or before the input focus is set.  
   
  `EndDialog` does not close the dialog box immediately. Instead, it sets a flag that directs the dialog box to close as soon as the current message handler returns.  
   
@@ -293,7 +293,7 @@ void EndDialog(int nResult);
   
  [!code-cpp[NVC_MFCControlLadenDialog#65](../../mfc/codesnippet/cpp/cdialog-class_4.cpp)]  
   
-##  <a name="cdialog__getdefid"></a>  CDialog::GetDefID  
+##  <a name="getdefid"></a>  CDialog::GetDefID  
  Call the `GetDefID` member function to get the ID of the default pushbutton control for a dialog box.  
   
 ```  
@@ -308,7 +308,7 @@ DWORD GetDefID() const;
 ### Remarks  
  This is usually an OK button.  
   
-##  <a name="cdialog__gotodlgctrl"></a>  CDialog::GotoDlgCtrl  
+##  <a name="gotodlgctrl"></a>  CDialog::GotoDlgCtrl  
  Moves the focus to the specified control in the dialog box.  
   
 ```  
@@ -323,9 +323,9 @@ void GotoDlgCtrl(CWnd* pWndCtrl);
  To get a pointer to the control (child window) to pass as `pWndCtrl`, call the `CWnd::GetDlgItem` member function, which returns a pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object.  
   
 ### Example  
-  See the example for [CWnd::GetDlgItem](../../mfc/reference/cwnd-class.md#cwnd__getdlgitem).  
+  See the example for [CWnd::GetDlgItem](../../mfc/reference/cwnd-class.md#getdlgitem).  
   
-##  <a name="cdialog__initmodalindirect"></a>  CDialog::InitModalIndirect  
+##  <a name="initmodalindirect"></a>  CDialog::InitModalIndirect  
  Call this member function to initialize a modal dialog object using a dialog-box template that you construct in memory.  
   
 ```  
@@ -357,11 +357,11 @@ BOOL InitModalIndirect(
  Nonzero if the dialog object was created and initialized successfully; otherwise 0.  
   
 ### Remarks  
- To create a modal dialog box indirectly, first allocate a global block of memory and fill it with the dialog box template. Then call the empty `CDialog` constructor to construct the dialog-box object. Next, call `InitModalIndirect` to store your handle to the in-memory dialog-box template. The Windows dialog box is created and displayed later, when the [DoModal](#cdialog__domodal) member function is called.  
+ To create a modal dialog box indirectly, first allocate a global block of memory and fill it with the dialog box template. Then call the empty `CDialog` constructor to construct the dialog-box object. Next, call `InitModalIndirect` to store your handle to the in-memory dialog-box template. The Windows dialog box is created and displayed later, when the [DoModal](#domodal) member function is called.  
   
  Dialog boxes that contain ActiveX controls require additional information provided in a **DLGINIT** resource. For more information, see Knowledge Base article Q231591, " HOWTO: Use a Dialog Template to Create a MFC Dialog with an ActiveX Control." Knowledge Base articles are available in the MSDN Library Visual Studio documentation or at [http://support.microsoft.com](http://support.microsoft.com/).  
   
-##  <a name="cdialog__mapdialogrect"></a>  CDialog::MapDialogRect  
+##  <a name="mapdialogrect"></a>  CDialog::MapDialogRect  
  Call to convert the dialog-box units of a rectangle to screen units.  
   
 ```  
@@ -381,7 +381,7 @@ void MapDialogRect(LPRECT lpRect) const;
   
  The `MapDialogRect` member function replaces the dialog-box units in `lpRect` with screen units (pixels) so that the rectangle can be used to create a dialog box or position a control within a box.  
   
-##  <a name="cdialog__nextdlgctrl"></a>  CDialog::NextDlgCtrl  
+##  <a name="nextdlgctrl"></a>  CDialog::NextDlgCtrl  
  Moves the focus to the next control in the dialog box.  
   
 ```  
@@ -393,7 +393,7 @@ void NextDlgCtrl() const;
 ### Remarks  
  If the focus is at the last control in the dialog box, it moves to the first control.  
   
-##  <a name="cdialog__oncancel"></a>  CDialog::OnCancel  
+##  <a name="oncancel"></a>  CDialog::OnCancel  
  The framework calls this method when the user clicks **Cancel** or presses the ESC key in a modal or modeless dialog box.  
   
 ```  
@@ -401,9 +401,9 @@ virtual void OnCancel();
 ```  
   
 ### Remarks  
- Override this method to perform actions (such as restoring old data) when a user closes the dialog box by clicking **Cancel** or hitting the ESC key. The default closes a modal dialog box by calling [EndDialog](#cdialog__enddialog) and causing [DoModal](#cdialog__domodal) to return IDCANCEL.  
+ Override this method to perform actions (such as restoring old data) when a user closes the dialog box by clicking **Cancel** or hitting the ESC key. The default closes a modal dialog box by calling [EndDialog](#enddialog) and causing [DoModal](#domodal) to return IDCANCEL.  
   
- If you implement the **Cancel** button in a modeless dialog box, you must override the `OnCancel` method and call [DestroyWindow](../../mfc/reference/cwnd-class.md#cwnd__destroywindow) inside it. Do not call the base-class method, because it calls `EndDialog`, which will make the dialog box invisible but not destroy it.  
+ If you implement the **Cancel** button in a modeless dialog box, you must override the `OnCancel` method and call [DestroyWindow](../../mfc/reference/cwnd-class.md#destroywindow) inside it. Do not call the base-class method, because it calls `EndDialog`, which will make the dialog box invisible but not destroy it.  
   
 > [!NOTE]
 >  You cannot override this method when you use a `CFileDialog` object in a program that is compiled under Windows XP. For more information about `CFileDialog`, see [CFileDialog Class](../../mfc/reference/cfiledialog-class.md).  
@@ -411,7 +411,7 @@ virtual void OnCancel();
 ### Example  
  [!code-cpp[NVC_MFCControlLadenDialog#66](../../mfc/codesnippet/cpp/cdialog-class_5.cpp)]  
   
-##  <a name="cdialog__oninitdialog"></a>  CDialog::OnInitDialog  
+##  <a name="oninitdialog"></a>  CDialog::OnInitDialog  
  This method is called in response to the `WM_INITDIALOG` message.  
   
 ```  
@@ -422,7 +422,7 @@ virtual BOOL OnInitDialog();
  Specifies whether the application has set the input focus to one of the controls in the dialog box. If `OnInitDialog` returns nonzero, Windows sets the input focus to the default location, the first control in the dialog box. The application can return 0 only if it has explicitly set the input focus to one of the controls in the dialog box.  
   
 ### Remarks  
- Windows sends the `WM_INITDIALOG` message to the dialog box during the [Create](#cdialog__create), [CreateIndirect](#cdialog__createindirect), or [DoModal](#cdialog__domodal) calls, which occur immediately before the dialog box is displayed.  
+ Windows sends the `WM_INITDIALOG` message to the dialog box during the [Create](#create), [CreateIndirect](#createindirect), or [DoModal](#domodal) calls, which occur immediately before the dialog box is displayed.  
   
  Override this method if you want to perform special processing when the dialog box is initialized. In the overridden version, first call the base class `OnInitDialog` but ignore its return value. You will typically return `TRUE` from your overridden method.  
   
@@ -434,7 +434,7 @@ virtual BOOL OnInitDialog();
 ### Example  
  [!code-cpp[NVC_MFCControlLadenDialog#67](../../mfc/codesnippet/cpp/cdialog-class_6.cpp)]  
   
-##  <a name="cdialog__onok"></a>  CDialog::OnOK  
+##  <a name="onok"></a>  CDialog::OnOK  
  Called when the user clicks the **OK** button (the button with an ID of IDOK).  
   
 ```  
@@ -444,7 +444,7 @@ virtual void OnOK();
 ### Remarks  
  Override this method to perform actions when the **OK** button is activated. If the dialog box includes automatic data validation and exchange, the default implementation of this method validates the dialog box data and updates the appropriate variables in your application.  
   
- If you implement the **OK** button in a modeless dialog box, you must override the `OnOK` method and call [DestroyWindow](../../mfc/reference/cwnd-class.md#cwnd__destroywindow) inside it. Do not call the base-class method, because it calls [EndDialog](#cdialog__enddialog) which makes the dialog box invisible but does not destroy it.  
+ If you implement the **OK** button in a modeless dialog box, you must override the `OnOK` method and call [DestroyWindow](../../mfc/reference/cwnd-class.md#destroywindow) inside it. Do not call the base-class method, because it calls [EndDialog](#enddialog) which makes the dialog box invisible but does not destroy it.  
   
 > [!NOTE]
 >  You cannot override this method when you use a `CFileDialog` object in a program that is compiled under Windows XP. For more information about `CFileDialog`, see [CFileDialog Class](../../mfc/reference/cfiledialog-class.md).  
@@ -452,7 +452,7 @@ virtual void OnOK();
 ### Example  
  [!code-cpp[NVC_MFCControlLadenDialog#68](../../mfc/codesnippet/cpp/cdialog-class_7.cpp)]  
   
-##  <a name="cdialog__onsetfont"></a>  CDialog::OnSetFont  
+##  <a name="onsetfont"></a>  CDialog::OnSetFont  
  Specifies the font a dialog-box control will use when drawing text.  
   
 ```  
@@ -471,7 +471,7 @@ Virtual void OnSetFont(CFont* pFont);
 > [!NOTE]
 >  You cannot override this method when you use a `CFileDialog` object in a program that is compiled under [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)]. For more information about changes to `CFileDialog` under [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)] see [CFileDialog Class](../../mfc/reference/cfiledialog-class.md).  
   
-##  <a name="cdialog__prevdlgctrl"></a>  CDialog::PrevDlgCtrl  
+##  <a name="prevdlgctrl"></a>  CDialog::PrevDlgCtrl  
  Sets the focus to the previous control in the dialog box.  
   
 ```  
@@ -483,7 +483,7 @@ void PrevDlgCtrl() const;
 ### Remarks  
  If the focus is at the first control in the dialog box, it moves to the last control in the box.  
   
-##  <a name="cdialog__setdefid"></a>  CDialog::SetDefID  
+##  <a name="setdefid"></a>  CDialog::SetDefID  
  Changes the default pushbutton control for a dialog box.  
   
 ```  
@@ -494,7 +494,7 @@ void SetDefID(UINT nID);
  `nID`  
  Specifies the ID of the pushbutton control that will become the default.  
   
-##  <a name="cdialog__sethelpid"></a>  CDialog::SetHelpID  
+##  <a name="sethelpid"></a>  CDialog::SetHelpID  
  Sets a context-sensitive help ID for the dialog box.  
   
 ```  
@@ -506,8 +506,8 @@ void SetHelpID(UINT nIDR);
  Specifies the context-sensitive help ID.  
   
 ## See Also  
- [MFC Sample DLGCBR32](../../top/visual-cpp-samples.md)   
- [MFC Sample DLGTEMPL](../../top/visual-cpp-samples.md)   
+ [MFC Sample DLGCBR32](../../visual-cpp-samples.md)   
+ [MFC Sample DLGTEMPL](../../visual-cpp-samples.md)   
  [CWnd Class](../../mfc/reference/cwnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 

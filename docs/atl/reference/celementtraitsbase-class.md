@@ -57,15 +57,15 @@ template<typename T>  class CElementTraitsBase
   
 |Name|Description|  
 |----------|-----------------|  
-|[CElementTraitsBase::INARGTYPE](#celementtraitsbase__inargtype)|The data type to use for adding elements to the collection class object.|  
-|[CElementTraitsBase::OUTARGTYPE](#celementtraitsbase__outargtype)|The data type to use for retrieving elements from the collection class object.|  
+|[CElementTraitsBase::INARGTYPE](#inargtype)|The data type to use for adding elements to the collection class object.|  
+|[CElementTraitsBase::OUTARGTYPE](#outargtype)|The data type to use for retrieving elements from the collection class object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CElementTraitsBase::CopyElements](#celementtraitsbase__copyelements)|Call this method to copy elements stored in a collection class object.|  
-|[CElementTraitsBase::RelocateElements](#celementtraitsbase__relocateelements)|Call this method to relocate elements stored in a collection class object.|  
+|[CElementTraitsBase::CopyElements](#copyelements)|Call this method to copy elements stored in a collection class object.|  
+|[CElementTraitsBase::RelocateElements](#relocateelements)|Call this method to relocate elements stored in a collection class object.|  
   
 ## Remarks  
  This base class defines methods for copying and relocating elements in a collection class. It is utilized by the classes [CDefaultElementTraits](../../atl/reference/cdefaultelementtraits-class.md), [CStringRefElementTraits](../../atl/reference/cstringrefelementtraits-class.md), and [CStringElementTraitsI](../../atl/reference/cstringelementtraitsi-class.md).  
@@ -75,7 +75,7 @@ template<typename T>  class CElementTraitsBase
 ## Requirements  
  **Header:** atlcoll.h  
   
-##  <a name="celementtraitsbase__copyelements"></a>  CElementTraitsBase::CopyElements  
+##  <a name="copyelements"></a>  CElementTraitsBase::CopyElements  
  Call this method to copy elements stored in a collection class object.  
   
 ```
@@ -98,21 +98,21 @@ static void CopyElements(
 ### Remarks  
  The source and destination elements should not overlap.  
   
-##  <a name="celementtraitsbase__inargtype"></a>  CElementTraitsBase::INARGTYPE  
+##  <a name="inargtype"></a>  CElementTraitsBase::INARGTYPE  
  The data type to use for adding elements to the collection.  
   
 ```
 typedef const T& INARGTYPE;
 ```  
   
-##  <a name="celementtraitsbase__outargtype"></a>  CElementTraitsBase::OUTARGTYPE  
+##  <a name="outargtype"></a>  CElementTraitsBase::OUTARGTYPE  
  The data type to use for retrieving elements from the collection.  
   
 ```
 typedef T& OUTARGTYPE;
 ```  
   
-##  <a name="celementtraitsbase__relocateelements"></a>  CElementTraitsBase::RelocateElements  
+##  <a name="relocateelements"></a>  CElementTraitsBase::RelocateElements  
  Call this method to relocate elements stored in a collection class object.  
   
 ```

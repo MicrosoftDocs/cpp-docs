@@ -66,15 +66,15 @@ class CSimpleStringT
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleStringT::PCXSTR](#csimplestringt__pcxstr)|A pointer to a constant string.|  
-|[CSimpleStringT::PXSTR](#csimplestringt__pxstr)|A pointer to a string.|  
+|[CSimpleStringT::PCXSTR](#pcxstr)|A pointer to a constant string.|  
+|[CSimpleStringT::PXSTR](#pxstr)|A pointer to a string.|  
   
 ### Public Constructors  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleStringT::CSimpleStringT](#csimplestringt__ctor)|Constructs `CSimpleStringT` objects in various ways.|  
-|[CSimpleStringT::~CSimpleStringT](#csimplestringt__dtor)|Destructor.|  
+|[CSimpleStringT::CSimpleStringT](#ctor)|Constructs `CSimpleStringT` objects in various ways.|  
+|[CSimpleStringT::~CSimpleStringT](#dtor)|Destructor.|  
 
   
 ### Public Methods  
@@ -82,55 +82,55 @@ class CSimpleStringT
 |Name|Description|  
 |----------|-----------------|  
 <<<<<<< 
-|[CSimpleStringT::Append](#csimplestringt__append)|Appends a `CSimpleStringT` object to an existing `CSimpleStringT` object.|  
-|[CSimpleStringT::AppendChar](#csimplestringt__appendchar)|Appends a character to an existing `CSimpleStringT` object.|  
-|[CSimpleStringT::CopyChars](#csimplestringt__copychars)|Copies a character or characters to another string.|  
-|[CSimpleStringT::CopyCharsOverlapped](#csimplestringt__copycharsoverlapped)|Copies a character or characters to another string in which the buffers overlap.|  
-|[CSimpleStringT::Empty](#csimplestringt__empty)|Forces a string to have a length of zero.|  
-|[CSimpleStringT::FreeExtra](#csimplestringt__freeextra)|Frees any extra memory previously allocated by the string object.|  
-|[CSimpleStringT::GetAllocLength](#csimplestringt__getalloclength)|Retrieves the allocated length of a `CSimpleStringT` object.|  
-|[CSimpleStringT::GetAt](#csimplestringt__getat)|Returns the character at a given position.|  
-|[CSimpleStringT::GetBuffer](#csimplestringt__getbuffer)|Returns a pointer to the characters in a `CSimpleStringT`.|  
-|[CSimpleStringT::GetBufferSetLength](#csimplestringt__getbuffersetlength)|Returns a pointer to the characters in a `CSimpleStringT`, truncating to the specified length.|  
-|[CSimpleStringT::GetLength](#csimplestringt__getlength)|Returns the number of characters in a `CSimpleStringT` object.|  
-|[CSimpleStringT::GetManager](#csimplestringt__getmanager)|Retrieves the memory manager of the `CSimpleStringT` object.|  
-|[CSimpleStringT::GetString](#csimplestringt__getstring)|Retrieves the character string|  
-|[CSimpleStringT::IsEmpty](#csimplestringt__isempty)|Tests whether a `CSimpleStringT` object contains no characters.|  
-|[CSimpleStringT::LockBuffer](#csimplestringt__lockbuffer)|Disables reference counting and protects the string in the buffer.|  
-|[CSimpleStringT::Preallocate](#csimplestringt__preallocate)|Allocates a specific amount of memory for the character buffer.|  
-|[CSimpleStringT::ReleaseBuffer](#csimplestringt__releasebuffer)|Releases control of the buffer returned by `GetBuffer`.|  
-|[CSimpleStringT::ReleaseBufferSetLength](#csimplestringt__releasebuffersetlength)|Releases control of the buffer returned by `GetBuffer`.|  
-|[CSimpleStringT::SetAt](#csimplestringt__setat)|Sets a character at a given position.|  
-|[CSimpleStringT::SetManager](#csimplestringt__setmanager)|Sets the memory manager of a `CSimpleStringT` object.|  
-|[CSimpleStringT::SetString](#csimplestringt__setstring)|Sets the string of a `CSimpleStringT` object.|  
-|[CSimpleStringT::StringLength](#csimplestringt__stringlength)|Returns the number of characters in the specified string.|  
-|[CSimpleStringT::Truncate](#csimplestringt__truncate)|Truncates the string to a specified length.|  
-|[CSimpleStringT::UnlockBuffer](#csimplestringt__unlockbuffer)|Enables reference counting and releases the string in the buffer.|  
+|[CSimpleStringT::Append](#append)|Appends a `CSimpleStringT` object to an existing `CSimpleStringT` object.|  
+|[CSimpleStringT::AppendChar](#appendchar)|Appends a character to an existing `CSimpleStringT` object.|  
+|[CSimpleStringT::CopyChars](#copychars)|Copies a character or characters to another string.|  
+|[CSimpleStringT::CopyCharsOverlapped](#copycharsoverlapped)|Copies a character or characters to another string in which the buffers overlap.|  
+|[CSimpleStringT::Empty](#empty)|Forces a string to have a length of zero.|  
+|[CSimpleStringT::FreeExtra](#freeextra)|Frees any extra memory previously allocated by the string object.|  
+|[CSimpleStringT::GetAllocLength](#getalloclength)|Retrieves the allocated length of a `CSimpleStringT` object.|  
+|[CSimpleStringT::GetAt](#getat)|Returns the character at a given position.|  
+|[CSimpleStringT::GetBuffer](#getbuffer)|Returns a pointer to the characters in a `CSimpleStringT`.|  
+|[CSimpleStringT::GetBufferSetLength](#getbuffersetlength)|Returns a pointer to the characters in a `CSimpleStringT`, truncating to the specified length.|  
+|[CSimpleStringT::GetLength](#getlength)|Returns the number of characters in a `CSimpleStringT` object.|  
+|[CSimpleStringT::GetManager](#getmanager)|Retrieves the memory manager of the `CSimpleStringT` object.|  
+|[CSimpleStringT::GetString](#getstring)|Retrieves the character string|  
+|[CSimpleStringT::IsEmpty](#isempty)|Tests whether a `CSimpleStringT` object contains no characters.|  
+|[CSimpleStringT::LockBuffer](#lockbuffer)|Disables reference counting and protects the string in the buffer.|  
+|[CSimpleStringT::Preallocate](#preallocate)|Allocates a specific amount of memory for the character buffer.|  
+|[CSimpleStringT::ReleaseBuffer](#releasebuffer)|Releases control of the buffer returned by `GetBuffer`.|  
+|[CSimpleStringT::ReleaseBufferSetLength](#releasebuffersetlength)|Releases control of the buffer returned by `GetBuffer`.|  
+|[CSimpleStringT::SetAt](#setat)|Sets a character at a given position.|  
+|[CSimpleStringT::SetManager](#setmanager)|Sets the memory manager of a `CSimpleStringT` object.|  
+|[CSimpleStringT::SetString](#setstring)|Sets the string of a `CSimpleStringT` object.|  
+|[CSimpleStringT::StringLength](#stringlength)|Returns the number of characters in the specified string.|  
+|[CSimpleStringT::Truncate](#truncate)|Truncates the string to a specified length.|  
+|[CSimpleStringT::UnlockBuffer](#unlockbuffer)|Enables reference counting and releases the string in the buffer.|  
 =======
-|[CSimpleStringT::Append](#csimplestringt__append)|Appends a `CSimpleStringT` object to an existing `CSimpleStringT` object.|  
-|[CSimpleStringT::AppendChar](#csimplestringt__appendchar)|Appends a character to an existing `CSimpleStringT` object.|  
-|[CSimpleStringT::CopyChars](#csimplestringt__copychars)|Copies a character or characters to another string.|  
-|[CSimpleStringT::CopyCharsOverlapped](#csimplestringt__copycharsoverlapped)|Copies a character or characters to another string in which the buffers overlap.|  
-|[CSimpleStringT::Empty](#csimplestringt__empty)|Forces a string to have a length of zero.|  
-|[CSimpleStringT::FreeExtra](#csimplestringt__freeextra)|Frees any extra memory previously allocated by the string object.|  
-|[CSimpleStringT::GetAllocLength](#csimplestringt__getalloclength)|Retrieves the allocated length of a `CSimpleStringT` object.|  
-|[CSimpleStringT::GetAt](#csimplestringt__getat)|Returns the character at a given position.|  
-|[CSimpleStringT::GetBuffer](#csimplestringt__getbuffer)|Returns a pointer to the characters in a `CSimpleStringT`.|  
-|[CSimpleStringT::GetBufferSetLength](#csimplestringt__getbuffersetlength)|Returns a pointer to the characters in a `CSimpleStringT`, truncating to the specified length.|  
-|[CSimpleStringT::GetLength](#csimplestringt__getlength)|Returns the number of characters in a `CSimpleStringT` object.|  
-|[CSimpleStringT::GetManager](#csimplestringt__getmanager)|Retrieves the memory manager of the `CSimpleStringT` object.|  
-|[CSimpleStringT::GetString](#csimplestringt__getstring)|Retrieves the character string|  
-|[CSimpleStringT::IsEmpty](#csimplestringt__isempty)|Tests whether a `CSimpleStringT` object contains no characters.|  
-|[CSimpleStringT::LockBuffer](#csimplestringt__lockbuffer)|Disables reference counting and protects the string in the buffer.|  
-|[CSimpleStringT::Preallocate](#csimplestringt__preallocate)|Allocates a specific amount of memory for the character buffer.|  
-|[CSimpleStringT::ReleaseBuffer](#csimplestringt__releasebuffer)|Releases control of the buffer returned by `GetBuffer`.|  
-|[CSimpleStringT::ReleaseBufferSetLength](#csimplestringt__releasebuffersetlength)|Releases control of the buffer returned by `GetBuffer`.|  
-|[CSimpleStringT::SetAt](#csimplestringt__setat)|Sets a character at a given position.|  
-|[CSimpleStringT::SetManager](#csimplestringt__setmanager)|Sets the memory manager of a `CSimpleStringT` object.|  
-|[CSimpleStringT::SetString](#csimplestringt__setstring)|Sets the string of a `CSimpleStringT` object.|  
-|[CSimpleStringT::StringLength](#csimplestringt__stringlength)|Returns the number of characters in the specified string.|  
-|[CSimpleStringT::Truncate](#csimplestringt__truncate)|Truncates the string to a specified length.|  
-|[CSimpleStringT::UnlockBuffer](#csimplestringt__unlockbuffer)|Enables reference counting and releases the string in the buffer.|  
+|[CSimpleStringT::Append](#append)|Appends a `CSimpleStringT` object to an existing `CSimpleStringT` object.|  
+|[CSimpleStringT::AppendChar](#appendchar)|Appends a character to an existing `CSimpleStringT` object.|  
+|[CSimpleStringT::CopyChars](#copychars)|Copies a character or characters to another string.|  
+|[CSimpleStringT::CopyCharsOverlapped](#copycharsoverlapped)|Copies a character or characters to another string in which the buffers overlap.|  
+|[CSimpleStringT::Empty](#empty)|Forces a string to have a length of zero.|  
+|[CSimpleStringT::FreeExtra](#freeextra)|Frees any extra memory previously allocated by the string object.|  
+|[CSimpleStringT::GetAllocLength](#getalloclength)|Retrieves the allocated length of a `CSimpleStringT` object.|  
+|[CSimpleStringT::GetAt](#getat)|Returns the character at a given position.|  
+|[CSimpleStringT::GetBuffer](#getbuffer)|Returns a pointer to the characters in a `CSimpleStringT`.|  
+|[CSimpleStringT::GetBufferSetLength](#getbuffersetlength)|Returns a pointer to the characters in a `CSimpleStringT`, truncating to the specified length.|  
+|[CSimpleStringT::GetLength](#getlength)|Returns the number of characters in a `CSimpleStringT` object.|  
+|[CSimpleStringT::GetManager](#getmanager)|Retrieves the memory manager of the `CSimpleStringT` object.|  
+|[CSimpleStringT::GetString](#getstring)|Retrieves the character string|  
+|[CSimpleStringT::IsEmpty](#isempty)|Tests whether a `CSimpleStringT` object contains no characters.|  
+|[CSimpleStringT::LockBuffer](#lockbuffer)|Disables reference counting and protects the string in the buffer.|  
+|[CSimpleStringT::Preallocate](#preallocate)|Allocates a specific amount of memory for the character buffer.|  
+|[CSimpleStringT::ReleaseBuffer](#releasebuffer)|Releases control of the buffer returned by `GetBuffer`.|  
+|[CSimpleStringT::ReleaseBufferSetLength](#releasebuffersetlength)|Releases control of the buffer returned by `GetBuffer`.|  
+|[CSimpleStringT::SetAt](#setat)|Sets a character at a given position.|  
+|[CSimpleStringT::SetManager](#setmanager)|Sets the memory manager of a `CSimpleStringT` object.|  
+|[CSimpleStringT::SetString](#setstring)|Sets the string of a `CSimpleStringT` object.|  
+|[CSimpleStringT::StringLength](#stringlength)|Returns the number of characters in the specified string.|  
+|[CSimpleStringT::Truncate](#truncate)|Truncates the string to a specified length.|  
+|[CSimpleStringT::UnlockBuffer](#unlockbuffer)|Enables reference counting and releases the string in the buffer.|  
 >>>>>>> master
   
 ### Public Operators  
@@ -138,10 +138,10 @@ class CSimpleStringT
 |Name|Description|  
 |----------|-----------------|  
 
-|[CSimpleStringT::operator PCXSTR](#csimplestringt__operator_pcxstr)|Directly accesses characters stored in a `CSimpleStringT` object as a C-style string.|  
-|[CSimpleStringT::operator\[\]](#csimplestringt__operator_at)|Returns the character at a given position — operator substitution for `GetAt`.|  
-|[CSimpleStringT::operator +=](#csimplestringt__operator_add_eq)|Concatenates a new string to the end of an existing string.|  
-|[CSimpleStringT::operator =](#csimplestringt__operator_eq)|Assigns a new value to a `CSimpleStringT` object.|  
+|[CSimpleStringT::operator PCXSTR](#operator_pcxstr)|Directly accesses characters stored in a `CSimpleStringT` object as a C-style string.|  
+|[CSimpleStringT::operator\[\]](#operator_at)|Returns the character at a given position — operator substitution for `GetAt`.|  
+|[CSimpleStringT::operator +=](#operator_add_eq)|Concatenates a new string to the end of an existing string.|  
+|[CSimpleStringT::operator =](#operator_eq)|Assigns a new value to a `CSimpleStringT` object.|  
   
 ### Remarks  
  `CSimpleStringT` is the base class for the various string classes supported by Visual C++. It provides minimal support for memory management of the string object and basic buffer manipulation. For more advanced string objects, see [CStringT Class](../../atl-mfc-shared/reference/cstringt-class.md).  
@@ -150,7 +150,7 @@ class CSimpleStringT
  **Header:** atlsimpstr.h  
 
 
-## <a name="csimplestringt__append"></a> CSimpleStringT::Append
+## <a name="append"></a> CSimpleStringT::Append
 Appends a `CSimpleStringT` object to an existing `CSimpleStringT` object.  
   
 ### Syntax  
@@ -189,7 +189,7 @@ ASSERT(_tcscmp(str1, _T("Soccer is an elegant game")) == 0);
 ### Requirements  
  **Header:** atlsimpstr.h  
   
-##  <a name="csimplestringt__appendchar"></a> CSimpleStringT::AppendChar
+##  <a name="appendchar"></a> CSimpleStringT::AppendChar
 Appends a character to an existing `CSimpleStringT` object.  
   
 ### Syntax  
@@ -207,7 +207,7 @@ void AppendChar(XCHAR ch);
 ### Requirements  
  **Header:** atlsimpstr.h  
 
-##  <a name="csimplestringt__copychars"></a> CSimpleStringT::CopyChars  
+##  <a name="copychars"></a> CSimpleStringT::CopyChars  
  Copies a character or characters to a `CSimpleStringT` object.  
   
 ### Syntax  
@@ -245,7 +245,7 @@ _tprintf_s(_T("%s\n"), str);
 ### Requirements  
  **Header:** atlsimpstr.h  
   
-##  <a name="csimplestringt__copycharsoverlapped"></a>  CSimpleStringT::CopyCharsOverlapped
+##  <a name="copycharsoverlapped"></a>  CSimpleStringT::CopyCharsOverlapped
 Copies a character or characters to a `CSimpleStringT` object.  
   
 ### Syntax  
@@ -268,12 +268,12 @@ static void CopyCharsOverlapped(XCHAR* pchDest, const XCHAR* pchSrc, int nChars
  Call this method to copy characters from `pchSrc` to the `pchDest` string. Unlike `CopyChars`, `CopyCharsOverlapped` provides a safe method for copying from character buffers that might be overlapped.  
   
 ## Example  
- See the example for [CSimpleStringT::CopyChars](#csimplestringt__CopyChars), or the source code for `CSimpleStringT::SetString` (located in atlsimpstr.h).  
+ See the example for [CSimpleStringT::CopyChars](#copychars), or the source code for `CSimpleStringT::SetString` (located in atlsimpstr.h).  
   
 ### Requirements  
  **Header:** atlsimpstr.h  
 
-##  <a name="csimplestringt__ctor"></a>  CSimpleStringT::CSimpleStringT  
+##  <a name="ctor"></a>  CSimpleStringT::CSimpleStringT  
  Constructs a `CSimpleStringT` object.  
   
 ### Syntax  
@@ -322,7 +322,7 @@ CSimpleString s5(_T("xxxxxx"), 6, pMgr);  // s5 = "xxxxxx"
  **Header:** atlsimpstr.h  
 
 
-##  <a name="csimplestringt__empty"></a>  CSimpleStringT::Empty
+##  <a name="empty"></a>  CSimpleStringT::Empty
 Makes this `CSimpleStringT` object an empty string and frees memory as appropriate.  
   
 ### Syntax  
@@ -347,7 +347,7 @@ ASSERT(s.IsEmpty());
   
 
 
-##  <a name="csimplestringt__freeextra"></a>  CSimpleStringT::FreeExtra
+##  <a name="freeextra"></a>  CSimpleStringT::FreeExtra
 Frees any extra memory previously allocated by the string but no longer needed.  
   
 ### Syntax  
@@ -356,7 +356,7 @@ Frees any extra memory previously allocated by the string but no longer needed.
 void FreeExtra();  
 ```  
 ### Remarks  
- This should reduce the memory overhead consumed by the string object. The method reallocates the buffer to the exact length returned by [GetLength](#csimplestringt__GetLength).  
+ This should reduce the memory overhead consumed by the string object. The method reallocates the buffer to the exact length returned by [GetLength](#getlength).  
   
 ## Example  
 ```cpp  
@@ -396,7 +396,7 @@ _tprintf_s(_T("Alloc length is %d, String length is %d\n"),
 ### Requirements  
  **Header:** atlsimpstr.h  
 
-##  <a name="csimplestringt__getalloclength"></a>  CSimpleStringT::GetAllocLength  
+##  <a name="getalloclength"></a>  CSimpleStringT::GetAllocLength  
 Retrieves the allocated length of a `CSimpleStringT` object.  
   
 ### Syntax  
@@ -409,13 +409,13 @@ int GetAllocLength() const throw();
  The number of characters allocated for this object.  
   
 ### Remarks  
- Call this method to determine the number of characters allocated for this `CSimpleStringT` object. See [FreeExtra](#csimplestringt__FreeExtra) for an example of calling this function.  
+ Call this method to determine the number of characters allocated for this `CSimpleStringT` object. See [FreeExtra](#freeextra) for an example of calling this function.  
   
 ### Requirements  
  **Header:** atlsimpstr.h  
   
 
-##  <a name="csimplestringt__getat"></a>  CSimpleStringT::GetAt  
+##  <a name="getat"></a>  CSimpleStringT::GetAt  
 Returns one character from a `CSimpleStringT` object.  
   
 ### Syntax  
@@ -426,7 +426,7 @@ XCHAR GetAt(int iChar
 ```  
 #### Parameters  
  `iChar`  
- Zero-based index of the character in the `CSimpleStringT` object. The `iChar` parameter must be greater than or equal to 0 and less than the value returned by [GetLength](#csimplestringt__GetLength). Otherwise, `GetAt` will generate an exception.  
+ Zero-based index of the character in the `CSimpleStringT` object. The `iChar` parameter must be greater than or equal to 0 and less than the value returned by [GetLength](#getlength). Otherwise, `GetAt` will generate an exception.  
   
 ### Return Value  
  An `XCHAR` that contains the character at the specified position in the string.  
@@ -445,7 +445,7 @@ ASSERT(s.GetAt(2) == _T('c'));
 ### Requirements  
  **Header:** atlsimpstr.h  
   
-##  <a name="csimplestringt__getbuffer"></a>  CSimpleStringT::GetBuffer  
+##  <a name="getbuffer"></a>  CSimpleStringT::GetBuffer  
 Returns a pointer to the internal character buffer for the `CSimpleStringT` object.  
   
 ### Syntax  
@@ -458,7 +458,7 @@ PXSTR GetBuffer();
  `nMinBufferLength`  
  The minimum number of characters that the character buffer can hold. This value does not include space for a null terminator.  
   
- If `nMinBufferLength` is larger than the length of the current buffer, `GetBuffer` destroys the current buffer, replaces it with a buffer of the requested size, and resets the object reference count to zero. If you have previously called [LockBuffer](#csimplestringt__LockBuffer) on this buffer, you lose the buffer lock.  
+ If `nMinBufferLength` is larger than the length of the current buffer, `GetBuffer` destroys the current buffer, replaces it with a buffer of the requested size, and resets the object reference count to zero. If you have previously called [LockBuffer](#lockbuffer) on this buffer, you lose the buffer lock.  
   
 ### Return Value  
  An `PXSTR` pointer to the object's (null-terminated) character buffer.  
@@ -466,7 +466,7 @@ PXSTR GetBuffer();
 ### Remarks  
  Call this method to return the buffer contents of the `CSimpleStringT` object. The returned `PXSTR` is not a constant and therefore allows direct modification of `CSimpleStringT` contents.  
   
- If you use the pointer returned by `GetBuffer` to change the string contents, you must call [ReleaseBuffer](#csimplestringt__ReleaseBuffer) before you use any other `CSimpleStringT` member methods.  
+ If you use the pointer returned by `GetBuffer` to change the string contents, you must call [ReleaseBuffer](#releasebuffer) before you use any other `CSimpleStringT` member methods.  
   
  The address returned by `GetBuffer` may not be valid after the call to `ReleaseBuffer` because additional `CSimpleStringT` operations can cause the `CSimpleStringT` buffer to be reallocated. The buffer is not reallocated if you do not change the length of the `CSimpleStringT`.  
   
@@ -493,7 +493,7 @@ s.ReleaseBuffer();
 ### Requirements  
  **Header:** atlsimpstr.h  
   
-##  <a name="csimplestringt__getbuffersetlength"></a>  CSimpleStringT::GetBufferSetLength  
+##  <a name="getbuffersetlength"></a>  CSimpleStringT::GetBufferSetLength  
 Returns a pointer to the internal character buffer for the `CSimpleStringT` object, truncating or growing its length if necessary to exactly match the length specified in `nLength`.  
   
 ### Syntax  
@@ -511,7 +511,7 @@ PXSTR GetBufferSetLength(int nLength);
 ### Remarks  
  Call this method to retrieve a specified length of the internal buffer of the `CSimpleStringT` object. The returned `PXSTR` pointer is not `const` and thus allows direct modification of `CSimpleStringT` contents.  
   
- If you use the pointer returned by [GetBufferSetLength](#vclrfcsimplestringtgetbuffersetlength) to change the string contents, call `ReleaseBuffer` to update the internal state of `CsimpleStringT` before you use any other `CSimpleStringT` methods.  
+ If you use the pointer returned by [GetBufferSetLength](#getbuffersetlength) to change the string contents, call `ReleaseBuffer` to update the internal state of `CsimpleStringT` before you use any other `CSimpleStringT` methods.  
   
  The address returned by `GetBufferSetLength` may not be valid after the call to `ReleaseBuffer` because additional `CSimpleStringT` operations can cause the `CSimpleStringT` buffer to be reallocated. The buffer is not reassigned if you do not change the length of the `CSimpleStringT`.  
   
@@ -548,7 +548,7 @@ ASSERT(_tcscmp(str, _T("Cup soccer is best!")) == 0);
  **Header:** atlsimpstr.h  
   
 
-##  <a name="csimplestringt__getlength"></a>  CSimpleStringT::GetLength  
+##  <a name="getlength"></a>  CSimpleStringT::GetLength  
 Returns the number of characters in the `CSimpleStringT` object.  
   
 ### Syntax  
@@ -563,13 +563,13 @@ int GetLength() const throw();
 ### Remarks  
  Call this method to return the number of characters in the object. The count does not include a null terminator.  
   
- For multibyte character sets (MBCS), `GetLength` counts each 8-bit character; that is, a lead and trail byte in one multibyte character are counted as two bytes. See [FreeExtra](#csimplestringt__FreeExtra) for an example of calling this function.  
+ For multibyte character sets (MBCS), `GetLength` counts each 8-bit character; that is, a lead and trail byte in one multibyte character are counted as two bytes. See [FreeExtra](#freeextra) for an example of calling this function.  
   
 ### Requirements  
  **Header:** atlsimpstr.h  
   
 
-##  <a name="csimplestringt__getmanager"></a>  CSimpleStringT::GetManager  
+##  <a name="getmanager"></a>  CSimpleStringT::GetManager  
 Retrieves the memory manager of the `CSimpleStringT` object.  
   
 ### Syntax  
@@ -588,7 +588,7 @@ IAtlStringMgr* GetManager() const throw();
  **Header:** atlsimpstr.h  
 
 
-##  <a name="csimplestringt__getstring"></a>  CSimpleStringT::GetString
+##  <a name="getstring"></a>  CSimpleStringT::GetString
 Retrieves the character string.  
   
 ### Syntax  
@@ -619,7 +619,7 @@ _tprintf_s(_T("%s"), str.GetString());
  **Header:** atlsimpstr.h  
 
 
-##  <a name="csimplestringt__isempty"></a>  CSimpleStringT::IsEmpty  
+##  <a name="isempty"></a>  CSimpleStringT::IsEmpty  
 Tests a `CSimpleStringT` object for the empty condition.  
   
 ### Syntax  
@@ -645,7 +645,7 @@ ASSERT(s.IsEmpty());
 ### Requirements  
  **Header:** atlsimpstr.h  
   
-##  <a name="csimplestringt__lockbuffer"></a>  CSimpleStringT::LockBuffer  
+##  <a name="lockbuffer"></a>  CSimpleStringT::LockBuffer  
 Disables reference counting and protects the string in the buffer.  
   
 ### Syntax  
@@ -665,10 +665,10 @@ PXSTR LockBuffer();
   
  By locking the string in the buffer, you ensure that the string's exclusive hold on the buffer will remain intact.  
   
- After you have finished with `LockBuffer`, call [UnlockBuffer](#csimplestringt__UnlockBuffer) to reset the reference count to 1.  
+ After you have finished with `LockBuffer`, call [UnlockBuffer](#unlockbuffer) to reset the reference count to 1.  
   
 > [!NOTE]
->  If you call [GetBuffer](#csimplestringt__GetBuffer) on a locked buffer and you set the `GetBuffer` parameter `nMinBufferLength` to greater than the length of the current buffer, you will lose the buffer lock. Such a call to `GetBuffer` destroys the current buffer, replaces it with a buffer of the requested size, and resets the reference count to zero.  
+>  If you call [GetBuffer](#getbuffer) on a locked buffer and you set the `GetBuffer` parameter `nMinBufferLength` to greater than the length of the current buffer, you will lose the buffer lock. Such a call to `GetBuffer` destroys the current buffer, replaces it with a buffer of the requested size, and resets the reference count to zero.  
   
  For more information about reference counting, see the following articles:  
   
@@ -694,7 +694,7 @@ str.UnlockBuffer();
 ### Requirements  
  **Header:** atlsimpstr.h  
   
-##  <a name="simplestringt__operator_at"></a>  CSimpleStringT::operator\[\]  
+##  <a name="operator_at"></a>  CSimpleStringT::operator\[\]  
 Call this function to access a single character of the character array.  
   
 ### Syntax  
@@ -708,7 +708,7 @@ XCHAR operator[](int iChar
  Zero-based index of a character in the string.  
   
 ### Remarks  
- The overloaded subscript (`[]`) operator returns a single character specified by the zero-based index in `iChar`. This operator is a convenient substitute for the [GetAt](#csimplestringt__GetAt) member function.  
+ The overloaded subscript (`[]`) operator returns a single character specified by the zero-based index in `iChar`. This operator is a convenient substitute for the [GetAt](#getat) member function.  
   
 > [!NOTE]
 >  You can use the subscript (`[]`) operator to get the value of a character in a `CSimpleStringT`, but you cannot use it to change the value of a character in a `CSimpleStringT`.  
@@ -723,8 +723,29 @@ ASSERT(s[1] == _T('b'));
   
 ### Requirements  
  **Header:** atlsimpstr.h  
+
+## <a name="operator_at"></a>  CSimpleStringT::operator \[\]
+Call this function to access a single character of the character array.  
   
-##  <a name="csimplestringt__operator_add_eq"></a>  CSimpleStringT::operator +=  
+### Syntax  
+  
+```  
+  
+XCHAR operator[]( int iChar ) const;  
+```  
+  
+### Parameters  
+ `iChar`  
+ Zero-based index of a character in the string.  
+  
+### Remarks  
+ The overloaded subscript (`[]`) operator returns a single character specified by the zero-based index in `iChar`. This operator is a convenient substitute for the [GetAt](#getat) member function.  
+  
+> [!NOTE]
+>  You can use the subscript (`[]`) operator to get the value of a character in a `CSimpleStringT`, but you cannot use it to change the value of a character in a `CSimpleStringT`.  
+  
+  
+##  <a name="operator_add_eq"></a>  CSimpleStringT::operator +=  
 Joins a new string or character to the end of an existing string.  
   
 ### Syntax  
@@ -762,7 +783,7 @@ ASSERT(_tcscmp((str += _T("def")), _T("abcdef")) == 0);
 ### Requirements  
  **Header:** atlsimpstr.h  
   
-##  <a name="csimplestringt__operator_eq"></a>  CSimpleStringT::operator =  
+##  <a name="operator_eq"></a>  CSimpleStringT::operator =  
 Assigns a new value to a `CSimpleStringT` object.  
   
 ### Syntax  
@@ -803,7 +824,7 @@ ASSERT(_tcscmp(s1, _T("x")) == 0);
 ### Requirements  
  **Header:** atlsimpstr.h  
   
-##  <a name="csimplestringt__operator_pcxstr"></a>  CSimpleStringT::operator PCXSTR  
+##  <a name="operator_pcxstr"></a>  CSimpleStringT::operator PCXSTR  
 
  Directly accesses characters stored in a `CSimpleStringT` object as a C-style string.  
   
@@ -855,7 +876,7 @@ wcout << (PCWSTR)strSports;
  **Header:** atlsimpstr.h  
   
 
-##  <a name="csimplestringt__pcxstr"></a>  CSimpleStringT::PCXSTR
+##  <a name="pcxstr"></a>  CSimpleStringT::PCXSTR
 A pointer to a constant string.  
   
 ### Syntax  
@@ -868,7 +889,7 @@ typedef ChTraitsBase< BaseType >::PCXSTR PCXSTR;
   
 
 
-##  <a name="csimplestringt__preallocate"></a>  CSimpleStringT::Preallocate  
+##  <a name="preallocate"></a>  CSimpleStringT::Preallocate  
 Allocates a specific amount of bytes for the `CSimpleStringT` object.  
   
 ### Syntax  
@@ -901,7 +922,7 @@ _tprintf_s(_T("Allocated length: %d\n"), str.GetAllocLength());
   
 
 
-##  <a name="csimplestringt__pxstr"></a>  CSimpleStringT::PXSTR  
+##  <a name="pxstr"></a>  CSimpleStringT::PXSTR  
 A pointer to a string.  
   
 ### Syntax  
@@ -915,8 +936,8 @@ typedef ChTraitsBase< BaseType >::PXSTR PXSTR;
   
 
 
-##  <a name="csimplestringt__releasebuffer"></a>  CSimpleStringT::ReleaseBuffer  
-Releases control of the buffer allocated by [GetBuffer](#csimplestringt__GetBuffer).  
+##  <a name="releasebuffer"></a>  CSimpleStringT::ReleaseBuffer  
+Releases control of the buffer allocated by [GetBuffer](#getbuffer).  
   
 ### Syntax  
   
@@ -928,7 +949,7 @@ void ReleaseBuffer(int nNewLength = -1);
  The new length of the string in characters, not counting a null terminator. If the string is null terminated, the -1 default value sets the `CSimpleStringT` size to the current length of the string.  
   
 ### Remarks  
- Call this method to reallocate or free up the buffer of the string object. If you know that the string in the buffer is null terminated, you can omit the `nNewLength` argument. If your string is not null terminated, use `nNewLength` to specify its length. The address returned by [GetBuffer](#csimplestringt__GetBuffer) is invalid after the call to `ReleaseBuffer` or any other `CSimpleStringT` operation.  
+ Call this method to reallocate or free up the buffer of the string object. If you know that the string in the buffer is null terminated, you can omit the `nNewLength` argument. If your string is not null terminated, use `nNewLength` to specify its length. The address returned by [GetBuffer](#getbuffer) is invalid after the call to `ReleaseBuffer` or any other `CSimpleStringT` operation.  
   
 ## Example  
  The following example demonstrates the use of `CSimpleStringT::ReleaseBuffer`.  
@@ -948,9 +969,9 @@ ASSERT(s.GetLength() == 3); // Length still 3
  **Header:** atlsimpstr.h  
   
 
-##  <a name="csimplestringt__releasebuffersetlength"></a>  CSimpleStringT::ReleaseBufferSetLength
+##  <a name="releasebuffersetlength"></a>  CSimpleStringT::ReleaseBufferSetLength
 
-Releases control of the buffer allocated by [GetBuffer](#csimplestringt__GetBuffer).  
+Releases control of the buffer allocated by [GetBuffer](#getbuffer).  
   
 ### Syntax  
   
@@ -962,14 +983,14 @@ void ReleaseBufferSetLength(int nNewLength);
  The length of the string being released  
   
 ### Remarks  
- This function is functionally similar to [ReleaseBuffer](#csimplestringt__ReleaseBuffer) except that a valid length for the string object must be passed.  
+ This function is functionally similar to [ReleaseBuffer](#releasebuffer) except that a valid length for the string object must be passed.  
   
 ### Requirements  
  **Header:** atlsimpstr.h  
   
 
 
-##  <a name="csimplestringt__setat"></a>  CSimpleStringT::SetAt  
+##  <a name="setat"></a>  CSimpleStringT::SetAt  
 Sets a single character from a `CSimpleStringT` object.  
   
 ### Syntax  
@@ -979,7 +1000,7 @@ void SetAt(int iChar, XCHAR ch);
 ```  
 #### Parameters  
  `iChar`  
- Zero-based index of the character in the `CSimpleStringT` object. The `iChar` parameter must be greater than or equal to 0 and less than the value returned by [GetLength](#csimplestringt__GetLength).  
+ Zero-based index of the character in the `CSimpleStringT` object. The `iChar` parameter must be greater than or equal to 0 and less than the value returned by [GetLength](#getlength).  
   
  *ch*  
  The new character.  
@@ -1002,7 +1023,7 @@ ASSERT(_tcscmp(s, _T("aacdef")) == 0);
   
 
 
-##  <a name="csimplestringt__setmanager"></a>  CSimpleStringT::SetManager  
+##  <a name="setmanager"></a>  CSimpleStringT::SetManager  
 Specifies the memory manager of the `CSimpleStringT` object.  
   
 ### Syntax  
@@ -1030,7 +1051,7 @@ s.SetManager(pCustomMgr);
   
 
 
-##  <a name="csimplestringt__setstring"></a>  CSimpleStringT::SetString  
+##  <a name="setstring"></a>  CSimpleStringT::SetString  
 Sets the string of a `CSimpleStringT` object.  
   
 ### Syntax  
@@ -1071,7 +1092,7 @@ ASSERT(_tcscmp(s, _T("Soccer")) == 0);
 ### Requirements  
  **Header:** atlsimpstr.h  
   
-##  <a name="csimplestringt__stringlength"></a>  CSimpleStringT::StringLength  
+##  <a name="stringlength"></a>  CSimpleStringT::StringLength  
 Returns the number of characters in the specified string.  
   
 ### Syntax  
@@ -1100,7 +1121,7 @@ ASSERT(CSimpleString::StringLength(_T("soccer")) == 6);
  **Header:** atlsimpstr.h  
   
 
-##  <a name="csimplestringt__truncate"></a>  CSimpleStringT::Truncate
+##  <a name="truncate"></a>  CSimpleStringT::Truncate
 Truncates the string to the new length.  
   
 ### Syntax  
@@ -1116,7 +1137,7 @@ void Truncate(int nNewLength);
  Call this method to truncate the contents of the string to the new length.  
   
 > [!NOTE]
->  This does not affect the allocated length of the buffer. To decrease or increase the current buffer, see [FreeExtra](#csimplestringt__FreeExtra) and [Preallocate](#csimplestringt__Preallocate).  
+>  This does not affect the allocated length of the buffer. To decrease or increase the current buffer, see [FreeExtra](#freeextra) and [Preallocate](#preallocate).  
   
 ## Example  
  The following example demonstrates the use of `CSimpleStringT::Truncate`.  
@@ -1135,7 +1156,7 @@ _tprintf_s(_T("Contents: %s\n"), str);
 ### Requirements  
  **Header:** atlsimpstr.h  
   
-##  <a name="csimplestringt__unlockbuffer"></a>  CSimpleStringT::UnlockBuffer
+##  <a name="unlockbuffer"></a>  CSimpleStringT::UnlockBuffer
  Unlocks the buffer of the `CSimpleStringT` object.  
   
 ### Syntax  
@@ -1146,14 +1167,14 @@ void UnlockBuffer() throw();
 ### Remarks  
  Call this method to reset the reference count of the string to 1.  
   
- The `CSimpleStringT` destructor automatically calls `UnlockBuffer` to ensure that the buffer is not locked when the destructor is called. For an example of this method, see [LockBuffer](#csimplestringt__LockBuffer).  
+ The `CSimpleStringT` destructor automatically calls `UnlockBuffer` to ensure that the buffer is not locked when the destructor is called. For an example of this method, see [LockBuffer](#lockbuffer).  
   
 ### Requirements  
  **Header:** atlsimpstr.h  
   
 
 
-##  <a name="csimplestringt__dtor"></a>  CSimpleStringT::~CSimpleStringT
+##  <a name="dtor"></a>  CSimpleStringT::~CSimpleStringT
 Destroys a `CSimpleStringT` object.  
   
 ### Syntax  

@@ -45,7 +45,7 @@ translation.priority.ht:
   
 3.  Select from the drop-down combo box or type in place to make changes.  
   
-    -   For [ID](Id%20Property.xml), select from the list or type to edit.  
+    -   For [ID](id-property.md), select from the list or type to edit.  
   
     -   For [Modifier](../windows/accelerator-modifier-property.md), select from the list.  
   

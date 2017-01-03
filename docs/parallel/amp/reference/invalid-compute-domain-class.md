@@ -51,7 +51,7 @@ class invalid_compute_domain : public runtime_exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[invalid_compute_domain::invalid_compute_domain Constructor] --brokenlink-- (#invalid_compute_domain::invalid_compute_domain%20Constructor.md)|Initializes a new instance of the `invalid_compute_domain` class.|  
+|[invalid_compute_domain::invalid_compute_domain Constructor](#ctor)|Initializes a new instance of the `invalid_compute_domain` class.|  
 
   
 ## Inheritance Hierarchy  
@@ -65,6 +65,25 @@ class invalid_compute_domain : public runtime_exception;
  **Header:** amprt.h  
   
  **Namespace:** Concurrency  
+
+## <a name="ctor"></a> invalid_compute_domain::invalid_compute_domain Constructor
+Initializes a new instance of the class.  
   
+## Syntax  
+  
+```  
+explicit invalid_compute_domain(  
+    const char * _Message ) throw();  
+  
+invalid_compute_domain() throw();  
+```  
+  
+### Parameters  
+ `_Message`  
+ A description of the error.  
+  
+### Return Value  
+ An instance of the `invalid_compute_domain` class  
+    
 ## See Also  
- [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)
+ [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

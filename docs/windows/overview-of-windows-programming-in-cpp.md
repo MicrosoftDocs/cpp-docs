@@ -67,7 +67,7 @@ You can use Visual C++ to write a wide variety of programs that run on a Windows
   
  For more information on all of these concepts, see [Guide to Windows Universal Apps](http://go.microsoft.com/fwlink/?LinkId=534605).  
   
-##  <a name="BK_Win32"></a> Desktop, Server, and Cloud Apps and Games  
+##  <a name="BK_Native"></a> Desktop, Server, and Cloud Apps and Games  
  In the cloud you can write Azure native code assemblies in C++ and call into them from Web Roles that are created in C#. For more information, see [Azure SDK](http://go.microsoft.com/fwlink/p/?LinkId=256416).  
   
  To learn the basics of writing Windows client applications for the desktop, see [Developing Windows Applications in C++](http://msdn.microsoft.com/vstudio//hh304489) and [Introduction to Windows Programming in C++](http://msdn.microsoft.com/library/windows/desktop/ff381398\(v=vs.85\).aspx).  
@@ -93,7 +93,7 @@ You can use Visual C++ to write a wide variety of programs that run on a Windows
  You can use Visual C++ to package almost any kind of custom high-performance functionality in Win32 DLLs or in COM DLLs that can be consumed by C++ apps or by apps that are written in other languages—for example, C# or Visual Basic. For more information about WIn32 DLLs, see [DLLs in Visual C++](../build/dlls-in-visual-cpp.md). For more information about COM development, see [Component Object Model (COM)](http://msdn.microsoft.com/en-us/375d29a7-a1f3-4bd8-8621-bad7a049b2aa).  
   
 ## SDKs and Header Files  
- Visual C++ includes the C and C++ standard libraries, the Standard Template Library (STL), and other Microsoft-specific libraries. The include folders that contain header files for these libraries are either located in the Visual Studio installation directory under the \VC\  folder, or in the case of the C Runtime (CRT) Library, Windows SDK installation folder, for example, Windows Kits\10 in your Program Files folder for the Windows 10 SDK.  The Microsoft  libraries include:  
+ Visual C++ includes the C Runtime Library (CRT), the C++ Standard Library, and other Microsoft-specific libraries. The include folders that contain header files for these libraries are either located in the Visual Studio installation directory under the \VC\  folder, or in the case of the CRT, Windows SDK installation folder, for example, Windows Kits\10 in your Program Files folder for the Windows 10 SDK.  The Microsoft libraries include:  
   
 -   Microsoft Foundation Classes (MFC): An object-oriented framework for creating traditional Windows programs—especially enterprise applications—that have rich user interfaces that feature buttons, list boxes, tree views, and other controls. For more information, see [MFC Desktop Applications](../mfc/mfc-desktop-applications.md).  
   
@@ -114,4 +114,4 @@ You can use Visual C++ to write a wide variety of programs that run on a Windows
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Visual C++](../top/visual-cpp-in-visual-studio.md)|Parent topic for MSDN Library content about C++.|
+|[Visual C++](../visual-cpp-in-visual-studio.md)|Parent topic for MSDN Library content about C++.|

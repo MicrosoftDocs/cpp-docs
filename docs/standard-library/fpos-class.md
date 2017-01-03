@@ -68,7 +68,7 @@ class fpos
   
 |||  
 |-|-|  
-|[seekpos](#fpos__seekpos)|Used internally by the Standard C++ Library only. Do not call this method from your code.|  
+|[seekpos](#fpos__seekpos)|Used internally by the C++ Standard Library only. Do not call this method from your code.|  
 |[state](#fpos__state)|Sets or returns the conversion state.|  
   
 ### Operators  
@@ -321,7 +321,7 @@ int main( )
 ```  
   
 ##  <a name="fpos__seekpos"></a>  fpos::seekpos  
- This method is used internally by the Standard C++ Library only. Do not call this method from your code.  
+ This method is used internally by the C++ Standard Library only. Do not call this method from your code.  
   
 ```  
 fpos_t seekpos() const;

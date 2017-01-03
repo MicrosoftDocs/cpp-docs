@@ -80,7 +80,7 @@ DDX_DHtml_Anchor_Href(
  The value being exchanged.  
   
 ## Remarks  
- This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#cdhtmldialog__ddx_dhtml_elementtext) function using the DISPID_IHTMLANCHORELEMENT_HREF dispatch ID.
+ This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) function using the DISPID_IHTMLANCHORELEMENT_HREF dispatch ID.
 
 ## <a name="ddx_dhtml_anchor_target"></a>  DDX_DHtml_Anchor_Target
  Sets or retrieves the target window or frame.  
@@ -103,7 +103,7 @@ DDX_DHtml_Anchor_Target(
  The value being exchanged.  
   
 ## Remarks  
- This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#cdhtmldialog__ddx_dhtml_elementtext) function using the DISPID_IHTMLANCHORELEMENT_TARGET dispatch ID.  
+ This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) function using the DISPID_IHTMLANCHORELEMENT_TARGET dispatch ID.  
 
 ## <a name="ddx_dhtml_elementinnerhtml"></a>  DDX_DHtml_ElementInnerHtml
  Sets or retrieves the HTML between the start and end tags of the current element.  
@@ -128,7 +128,7 @@ DDX_DHtml_ElementInnerHtml(
  The value being exchanged.  
   
 ## Remarks  
- This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#cdhtmldialog__ddx_dhtml_elementtext) function using the DISPID_IHTMLELEMENT_INNERHTML dispatch ID.  
+ This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) function using the DISPID_IHTMLELEMENT_INNERHTML dispatch ID.  
   
 
 ## <a name="ddx_dhtml_elementinnertext"></a>  DDX_DHtml_ElementInnerText
@@ -154,7 +154,7 @@ DDX_DHtml_ElementInnerText(
  The value being exchanged.  
   
 ## Remarks  
- This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#cdhtmldialog__ddx_dhtml_elementtext) function using the DISPID_IHTMLELEMENT_INNERTEXT dispatch ID. 
+ This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) function using the DISPID_IHTMLELEMENT_INNERTEXT dispatch ID. 
 
 ## <a name="ddx_dhtml_elementvalue"></a> DDX_DHtml_ElementValue  
 Sets or retrieves the Value property from the selected control.  
@@ -174,12 +174,12 @@ DDX_DHtml_ElementValue(
  The value that you specified for the HTML control's ID parameter.  
   
  `var`  
- The value being exchanged. See *value* in [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#cdhtmldialog__ddx_dhtml_elementtext).  
+ The value being exchanged. See *value* in [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext).  
   
 ## Remarks  
  This macro will only succeed when run on controls that have a Value property. Controls that have a Value property include edit boxes, list boxes, and combo boxes.  
   
- This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#cdhtmldialog__ddx_dhtml_elementtext) function using the DISPID_A_VALUE dispatch ID.  
+ This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) function using the DISPID_A_VALUE dispatch ID.  
 
 ## <a name="ddx_dhtml_frame_src"></a> DDX_DHtml_Frame_Src
 Sets or retrieves the URL of the associated frame.  
@@ -202,7 +202,7 @@ DDX_DHtml_Frame_Src(
  The value being exchanged.  
   
 ## Remarks  
- This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#cdhtmldialog__ddx_dhtml_elementtext) function using the DISPID_IHTMLFRAMEBASE_SRC dispatch ID.  
+ This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) function using the DISPID_IHTMLFRAMEBASE_SRC dispatch ID.  
 
 ## <a name="ddx_dhtml_iframe_src"></a> DDX_DHtml_IFrame_Src
 Sets or retrieves the URL of the associated frame.  
@@ -227,7 +227,7 @@ DDX_DHtml_IFrame_Src(
  The value being exchanged.  
   
 ## Remarks  
- This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#cdhtmldialog__ddx_dhtml_elementtext) function using the DISPID_IHTMLFRAMEBASE_SRC dispatch ID. 
+ This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) function using the DISPID_IHTMLFRAMEBASE_SRC dispatch ID. 
 
 ## <a name="ddx_dhtml_img_src"></a>DDX_DHtml_Img_Src
 Gets or retrieves the name of an image or a video clip in the document.  
@@ -252,7 +252,7 @@ DDX_DHtml_Img_Src(
 ## Remarks  
  When using the `DDX_DHtml_Img_Src` macro to retrieve the src property for an IMAGE element, the Internet Explorer image object will return the fully escaped URL for the image source. For example, if you use the `DDX_DHtml_Img_Src` macro to set the src property of an IMAGE element to the string "some interesting picture," when you retrieve that property, Internet Explorer will return the string "res://d:\myapplication\myapp.exe/some%20interesting%20picture."  
   
- This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#cdhtmldialog__ddx_dhtml_elementtext) function using the DISPID_IHTMLIMGELEMENT_SRC dispatch ID.  
+ This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) function using the DISPID_IHTMLIMGELEMENT_SRC dispatch ID.  
 
   
 ## See Also  

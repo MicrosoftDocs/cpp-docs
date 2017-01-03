@@ -52,53 +52,53 @@ class CRect : public tagRECT
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRect::CRect](#crect__crect)|Constructs a `CRect` object.|  
+|[CRect::CRect](#crect)|Constructs a `CRect` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRect::BottomRight](#crect__bottomright)|Returns the bottom-right point of `CRect`.|  
-|[CRect::CenterPoint](#crect__centerpoint)|Returns the centerpoint of `CRect`.|  
-|[CRect::CopyRect](#crect__copyrect)|Copies the dimensions of a source rectangle to `CRect`.|  
-|[CRect::DeflateRect](#crect__deflaterect)|Decreases the width and height of `CRect`.|  
-|[CRect::EqualRect](#crect__equalrect)|Determines whether `CRect` is equal to the given rectangle.|  
-|[CRect::Height](#crect__height)|Calculates the height of `CRect`.|  
-|[CRect::InflateRect](#crect__inflaterect)|Increases the width and height of `CRect`.|  
-|[CRect::IntersectRect](#crect__intersectrect)|Sets `CRect` equal to the intersection of two rectangles.|  
-|[CRect::IsRectEmpty](#crect__isrectempty)|Determines whether `CRect` is empty. `CRect` is empty if the width and/or height are 0.|  
-|[CRect::IsRectNull](#crect__isrectnull)|Determines whether the **top**, **bottom**, **left**, and **right** member variables are all equal to 0.|  
-|[CRect::MoveToX](#crect__movetox)|Moves `CRect` to the specified x-coordinate.|  
-|[CRect::MoveToXY](#crect__movetoxy)|Moves `CRect` to the specified x- and y-coordinates.|  
-|[CRect::MoveToY](#crect__movetoy)|Moves `CRect` to the specified y-coordinate.|  
-|[CRect::NormalizeRect](#crect__normalizerect)|Standardizes the height and width of `CRect`.|  
-|[CRect::OffsetRect](#crect__offsetrect)|Moves `CRect` by the specified offsets.|  
-|[CRect::PtInRect](#crect__ptinrect)|Determines whether the specified point lies within `CRect`.|  
-|[CRect::SetRect](#crect__setrect)|Sets the dimensions of `CRect`.|  
-|[CRect::SetRectEmpty](#crect__setrectempty)|Sets `CRect` to an empty rectangle (all coordinates equal to 0).|  
-|[CRect::Size](#crect__size)|Calculates the size of `CRect`.|  
-|[CRect::SubtractRect](#crect__subtractrect)|Subtracts one rectangle from another.|  
-|[CRect::TopLeft](#crect__topleft)|Returns the top-left point of `CRect`.|  
-|[CRect::UnionRect](#crect__unionrect)|Sets `CRect` equal to the union of two rectangles.|  
-|[CRect::Width](#crect__width)|Calculates the width of `CRect`.|  
+|[CRect::BottomRight](#bottomright)|Returns the bottom-right point of `CRect`.|  
+|[CRect::CenterPoint](#centerpoint)|Returns the centerpoint of `CRect`.|  
+|[CRect::CopyRect](#copyrect)|Copies the dimensions of a source rectangle to `CRect`.|  
+|[CRect::DeflateRect](#deflaterect)|Decreases the width and height of `CRect`.|  
+|[CRect::EqualRect](#equalrect)|Determines whether `CRect` is equal to the given rectangle.|  
+|[CRect::Height](#height)|Calculates the height of `CRect`.|  
+|[CRect::InflateRect](#inflaterect)|Increases the width and height of `CRect`.|  
+|[CRect::IntersectRect](#intersectrect)|Sets `CRect` equal to the intersection of two rectangles.|  
+|[CRect::IsRectEmpty](#isrectempty)|Determines whether `CRect` is empty. `CRect` is empty if the width and/or height are 0.|  
+|[CRect::IsRectNull](#isrectnull)|Determines whether the **top**, **bottom**, **left**, and **right** member variables are all equal to 0.|  
+|[CRect::MoveToX](#movetox)|Moves `CRect` to the specified x-coordinate.|  
+|[CRect::MoveToXY](#movetoxy)|Moves `CRect` to the specified x- and y-coordinates.|  
+|[CRect::MoveToY](#movetoy)|Moves `CRect` to the specified y-coordinate.|  
+|[CRect::NormalizeRect](#normalizerect)|Standardizes the height and width of `CRect`.|  
+|[CRect::OffsetRect](#offsetrect)|Moves `CRect` by the specified offsets.|  
+|[CRect::PtInRect](#ptinrect)|Determines whether the specified point lies within `CRect`.|  
+|[CRect::SetRect](#setrect)|Sets the dimensions of `CRect`.|  
+|[CRect::SetRectEmpty](#setrectempty)|Sets `CRect` to an empty rectangle (all coordinates equal to 0).|  
+|[CRect::Size](#size)|Calculates the size of `CRect`.|  
+|[CRect::SubtractRect](#subtractrect)|Subtracts one rectangle from another.|  
+|[CRect::TopLeft](#topleft)|Returns the top-left point of `CRect`.|  
+|[CRect::UnionRect](#unionrect)|Sets `CRect` equal to the union of two rectangles.|  
+|[CRect::Width](#width)|Calculates the width of `CRect`.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRect::operator -](#crect__operator_-)|Subtracts the given offsets from `CRect` or deflates `CRect` and returns the resulting `CRect`.|  
-|[CRect::operator LPCRECT](#crect__operator_lpcrect)|Converts a `CRect` to an **LPCRECT**.|  
-|[CRect::operator LPRECT](#crect__operator_lprect)|Converts a `CRect` to an `LPRECT`.|  
-|[CRect::operator !=](#crect__operator__neq)|Determines whether `CRect` is not equal to a rectangle.|  
-|[CRect::operator &amp;](#crect__operator__amp_)|Creates the intersection of `CRect` and a rectangle and returns the resulting `CRect`.|  
-|[CRect::operator &amp;=](#crect__operator__amp__eq)|Sets `CRect` equal to the intersection of `CRect` and a rectangle.|  
-|[CRect::operator |](#crect__operator__or)|Creates the union of `CRect` and a rectangle and returns the resulting `CRect`.|  
-|[CRect::operator |=](#crect__operator__or_eq)|Sets `CRect` equal to the union of `CRect` and a rectangle.|  
-|[CRect::operator +](#crect__operator__add)|Adds the given offsets to `CRect` or inflates `CRect` and returns the resulting `CRect`.|  
-|[CRect::operator +=](#crect__operator__add_eq)|Adds the specified offsets to `CRect` or inflates `CRect`.|  
-|[CRect::operator =](#crect__operator__eq)|Copies the dimensions of a rectangle to `CRect`.|  
-|[CRect::operator -=](#crect__operator_-_eq)|Subtracts the specified offsets from `CRect` or deflates `CRect`.|  
-|[CRect::operator ==](#crect__operator__eq_eq)|Determines whether `CRect` is equal to a rectangle.|  
+|[CRect::operator -](#operator_-)|Subtracts the given offsets from `CRect` or deflates `CRect` and returns the resulting `CRect`.|  
+|[CRect::operator LPCRECT](#operator_lpcrect)|Converts a `CRect` to an **LPCRECT**.|  
+|[CRect::operator LPRECT](#operator_lprect)|Converts a `CRect` to an `LPRECT`.|  
+|[CRect::operator !=](#operator_neq)|Determines whether `CRect` is not equal to a rectangle.|  
+|[CRect::operator &amp;](#operator_amp)|Creates the intersection of `CRect` and a rectangle and returns the resulting `CRect`.|  
+|[CRect::operator &amp;=](#operator_amp_eq)|Sets `CRect` equal to the intersection of `CRect` and a rectangle.|  
+|[CRect::operator |](#operator_or)|Creates the union of `CRect` and a rectangle and returns the resulting `CRect`.|  
+|[CRect::operator |=](#operator_or_eq)|Sets `CRect` equal to the union of `CRect` and a rectangle.|  
+|[CRect::operator +](#operator_add)|Adds the given offsets to `CRect` or inflates `CRect` and returns the resulting `CRect`.|  
+|[CRect::operator +=](#operator_add_eq)|Adds the specified offsets to `CRect` or inflates `CRect`.|  
+|[CRect::operator =](#operator_eq)|Copies the dimensions of a rectangle to `CRect`.|  
+|[CRect::operator -=](#operator_-_eq)|Subtracts the specified offsets from `CRect` or deflates `CRect`.|  
+|[CRect::operator ==](#operator_eq_eq)|Determines whether `CRect` is equal to a rectangle.|  
   
 ## Remarks  
  `CRect` also includes member functions to manipulate `CRect` objects and Windows `RECT` structures.  
@@ -110,9 +110,9 @@ class CRect : public tagRECT
   
  A `CRect` contains member variables that define the top-left and bottom-right points of a rectangle.  
   
- When specifying a `CRect`, you must be careful to construct it so that it is normalized — in other words, such that the value of the left coordinate is less than the right and the top is less than the bottom. For example, a top left of (10,10) and bottom right of (20,20) defines a normalized rectangle but a top left of (20,20) and bottom right of (10,10) defines a non-normalized rectangle. If the rectangle is not normalized, many `CRect` member functions may return incorrect results. (See [CRect::NormalizeRect](#crect__normalizerect) for a list of these functions.) Before you call a function that requires normalized rectangles, you can normalize non-normalized rectangles by calling the `NormalizeRect` function.  
+ When specifying a `CRect`, you must be careful to construct it so that it is normalized — in other words, such that the value of the left coordinate is less than the right and the top is less than the bottom. For example, a top left of (10,10) and bottom right of (20,20) defines a normalized rectangle but a top left of (20,20) and bottom right of (10,10) defines a non-normalized rectangle. If the rectangle is not normalized, many `CRect` member functions may return incorrect results. (See [CRect::NormalizeRect](#normalizerect) for a list of these functions.) Before you call a function that requires normalized rectangles, you can normalize non-normalized rectangles by calling the `NormalizeRect` function.  
   
- Use caution when manipulating a `CRect` with the [CDC::DPtoLP](../../mfc/reference/cdc-class.md#cdc__dptolp) and [CDC::LPtoDP](../../mfc/reference/cdc-class.md#cdc__lptodp) member functions. If the mapping mode of a display context is such that the y-extent is negative, as in `MM_LOENGLISH`, then `CDC::DPtoLP` will transform the `CRect` so that its top is greater than the bottom. Functions such as **Height** and **Size** will then return negative values for the height of the transformed `CRect`, and the rectangle will be non-normalized.  
+ Use caution when manipulating a `CRect` with the [CDC::DPtoLP](../../mfc/reference/cdc-class.md#dptolp) and [CDC::LPtoDP](../../mfc/reference/cdc-class.md#lptodp) member functions. If the mapping mode of a display context is such that the y-extent is negative, as in `MM_LOENGLISH`, then `CDC::DPtoLP` will transform the `CRect` so that its top is greater than the bottom. Functions such as **Height** and **Size** will then return negative values for the height of the transformed `CRect`, and the rectangle will be non-normalized.  
 
   
  When using overloaded `CRect` operators, the first operand must be a `CRect`; the second can be either a [RECT](../../mfc/reference/rect-structure1.md) structure or a `CRect` object.  
@@ -125,7 +125,7 @@ class CRect : public tagRECT
 ## Requirements  
  **Header:** atltypes.h  
   
-##  <a name="crect__bottomright"></a>  CRect::BottomRight  
+##  <a name="bottomright"></a>  CRect::BottomRight  
  The coordinates are returned as a reference to a [CPoint](cpoint-class.md) object that is contained in `CRect`.  
   
 ```  
@@ -168,7 +168,7 @@ const CPoint& BottomRight() const throw();
    ASSERT(rect2 == CRect(10, 10, 180, 180));   
 ```
   
-##  <a name="crect__centerpoint"></a>  CRect::CenterPoint  
+##  <a name="centerpoint"></a>  CRect::CenterPoint  
  Calculates the centerpoint of `CRect` by adding the left and right values and dividing by two, and adding the top and bottom values and dividing by two.  
   
 ```  
@@ -226,7 +226,7 @@ void CMyDlg::OnPaint()
 }
 ```
   
-##  <a name="crect__copyrect"></a>  CRect::CopyRect  
+##  <a name="copyrect"></a>  CRect::CopyRect  
  Copies the `lpSrcRect` rectangle into `CRect`.  
   
 ```  
@@ -265,7 +265,7 @@ lpSrcRect) throw();
 ```
 
   
-##  <a name="crect__crect"></a>  CRect::CRect  
+##  <a name="crect"></a>  CRect::CRect  
  Constructs a `CRect` object.  
   
 ```  
@@ -334,7 +334,7 @@ CRect(
 ### Remarks  
  If no arguments are given, **left**, **top**, **right**, and **bottom** members are not initialized.  
   
- The `CRect`( **const RECT&**) and `CRect`( **LPCRECT**) constructors perform a [CopyRect](#crect__copyrect). The other constructors initialize the member variables of the object directly.  
+ The `CRect`( **const RECT&**) and `CRect`( **LPCRECT**) constructors perform a [CopyRect](#copyrect). The other constructors initialize the member variables of the object directly.  
   
 ### Example  
 ```cpp
@@ -370,7 +370,7 @@ CRect(
    ASSERT(rect5 == rect4);   
 ```
   
-##  <a name="crect__deflaterect"></a>  CRect::DeflateRect  
+##  <a name="deflaterect"></a>  CRect::DeflateRect  
  `DeflateRect` deflates `CRect` by moving its sides toward its center.  
   
 ```  
@@ -446,7 +446,7 @@ void DeflateRect(
    ASSERT(rect2.top == 12 && rect2.bottom == 46);   
 ```
   
-##  <a name="crect__equalrect"></a>  CRect::EqualRect  
+##  <a name="equalrect"></a>  CRect::EqualRect  
  Determines whether `CRect` is equal to the given rectangle.  
   
 ```  
@@ -466,7 +466,7 @@ lpRect) const throw();
  Nonzero if the two rectangles have the same top, left, bottom, and right values; otherwise 0.  
   
 > [!NOTE]
->  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangles before calling this function.  
+>  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
 ```cpp
@@ -488,7 +488,7 @@ lpRect) const throw();
    ASSERT(rect1.EqualRect(&test));   
 ```
 
-##  <a name="crect__height"></a>  CRect::Height  
+##  <a name="height"></a>  CRect::Height  
  Calculates the height of `CRect` by subtracting the top value from the bottom value.  
   
 ```  
@@ -502,7 +502,7 @@ int Height() const throw();
  The resulting value can be negative.  
   
 > [!NOTE]
->  The rectangle must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangle before calling this function.  
+>  The rectangle must be normalized or this function may fail. You can call [NormalizeRect](#normalizerect) to normalize the rectangle before calling this function.  
   
 ### Example  
 
@@ -516,7 +516,7 @@ int Height() const throw();
 ```
 
   
-##  <a name="crect__inflaterect"></a>  CRect::InflateRect  
+##  <a name="inflaterect"></a>  CRect::InflateRect  
  `InflateRect` inflates `CRect` by moving its sides away from its center.  
   
 ```  
@@ -585,7 +585,7 @@ void InflateRect(
    ASSERT(rect == CRect(-50, -200, 350, 500));   
 ```
   
-##  <a name="crect__intersectrect"></a>  CRect::IntersectRect  
+##  <a name="intersectrect"></a>  CRect::IntersectRect  
  Makes a `CRect` equal to the intersection of two existing rectangles.  
   
 ```  
@@ -613,7 +613,7 @@ void InflateRect(
  The intersection is the largest rectangle contained in both existing rectangles.  
   
 > [!NOTE]
->  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangles before calling this function.  
+>  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
 
@@ -635,7 +635,7 @@ void InflateRect(
    ASSERT(rectInter2 == CRect(125, 75, 150, 95));   
 ```
   
-##  <a name="crect__isrectempty"></a>  CRect::IsRectEmpty  
+##  <a name="isrectempty"></a>  CRect::IsRectEmpty  
  Determines whether `CRect` is empty.  
   
 ```  
@@ -649,7 +649,7 @@ BOOL IsRectEmpty() const throw();
  A rectangle is empty if the width and/or height are 0 or negative. Differs from `IsRectNull`, which determines whether all coordinates of the rectangle are zero.  
   
 > [!NOTE]
->  The rectangle must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangle before calling this function.  
+>  The rectangle must be normalized or this function may fail. You can call [NormalizeRect](#normalizerect) to normalize the rectangle before calling this function.  
   
 ### Example  
 
@@ -665,7 +665,7 @@ BOOL IsRectEmpty() const throw();
 ```
 
   
-##  <a name="crect__isrectnull"></a>  CRect::IsRectNull  
+##  <a name="isrectnull"></a>  CRect::IsRectNull  
  Determines whether the top, left, bottom, and right values of `CRect` are all equal to 0.  
   
 ```  
@@ -693,7 +693,7 @@ BOOL IsRectNull() const throw();
    ASSERT(!rectNotNull.IsRectNull());   
 ```
   
-##  <a name="crect__movetox"></a>  CRect::MoveToX  
+##  <a name="movetox"></a>  CRect::MoveToX  
  Call this function to move the rectangle to the absolute x-coordinate specified by *x*.  
   
 ```  
@@ -720,7 +720,7 @@ x) throw();
    ASSERT(rect == CRect(10, 0, 110, 100));   
 ```
   
-##  <a name="crect__movetoxy"></a>  CRect::MoveToXY  
+##  <a name="movetoxy"></a>  CRect::MoveToXY  
  Call this function to move the rectangle to the absolute x- and y-coordinates specified.  
   
 ```  
@@ -759,7 +759,7 @@ void MoveToXY(
 ```
 
   
-##  <a name="crect__movetoy"></a>  CRect::MoveToY  
+##  <a name="movetoy"></a>  CRect::MoveToY  
  Call this function to move the rectangle to the absolute y-coordinate specified by *y*.  
   
 ```  
@@ -787,7 +787,7 @@ y) throw();
 ```
 
   
-##  <a name="crect__normalizerect"></a>  CRect::NormalizeRect  
+##  <a name="normalizerect"></a>  CRect::NormalizeRect  
  Normalizes `CRect` so that both the height and width are positive.  
   
 ```  
@@ -798,7 +798,7 @@ void NormalizeRect() throw();
  The rectangle is normalized for fourth-quadrant positioning, which Windows typically uses for coordinates. `NormalizeRect` compares the top and bottom values, and swaps them if the top is greater than the bottom. Similarly, it swaps the left and right values if the left is greater than the right. This function is useful when dealing with different mapping modes and inverted rectangles.  
   
 > [!NOTE]
->  The following `CRect` member functions require normalized rectangles in order to work properly: [Height](#crect__height), [Width](#crect__width), [Size](#crect__size), [IsRectEmpty](#crect__isrectempty), [PtInRect](#crect__ptinrect), [EqualRect](#crect__equalrect), [UnionRect](#crect__unionrect), [IntersectRect](#crect__intersectrect), [SubtractRect](#crect__subtractrect), [operator ==](#crect__operator__eq_eq), [operator !=](#crect__operator__neq), [operator &#124;](#crect__operator__or), [operator &#124;=](#crect__operator__or_eq), [operator &](#crect__operator__amp_), and [operator &=](#crect__operator__amp__eq).  
+>  The following `CRect` member functions require normalized rectangles in order to work properly: [Height](#height), [Width](#width), [Size](#size), [IsRectEmpty](#isrectempty), [PtInRect](#ptinrect), [EqualRect](#equalrect), [UnionRect](#unionrect), [IntersectRect](#intersectrect), [SubtractRect](#subtractrect), [operator ==](#operator_eq_eq), [operator !=](#operator_neq), [operator &#124;](#operator_or), [operator &#124;=](#operator_or_eq), [operator &](#operator_amp), and [operator &=](#operator_amp_eq).  
   
 ### Example  
 
@@ -815,7 +815,7 @@ void NormalizeRect() throw();
    ASSERT(rect1 == rect2);   
 ```
   
-##  <a name="crect__offsetrect"></a>  CRect::OffsetRect  
+##  <a name="offsetrect"></a>  CRect::OffsetRect  
  Moves `CRect` by the specified offsets.  
   
 ```  
@@ -863,7 +863,7 @@ void OffsetRect(
 ```
 
   
-##  <a name="crect__operator_lpcrect"></a>  CRect::operator LPCRECT  
+##  <a name="operator_lpcrect"></a>  CRect::operator LPCRECT  
  Converts a `CRect` to an [LPCRECT](../../mfc/reference/data-types-mfc.md).  
 
   
@@ -876,7 +876,7 @@ void OffsetRect(
 ### Example  
  [!CODE [NVC_ATLMFC_Utilities#58](../codesnippet/vs_snippets_cpp/nvc_atlmfc_utilities#58)]  
   
-##  <a name="crect__operator_lprect"></a>  CRect::operator LPRECT  
+##  <a name="operator_lprect"></a>  CRect::operator LPRECT  
  Converts a `CRect` to an [LPRECT](../../mfc/reference/data-types-mfc.md).  
 
   
@@ -887,9 +887,9 @@ void OffsetRect(
  When you use this function, you don't need the address-of ( **&**) operator. This operator will be automatically used when you pass a `CRect` object to a function that expects an `LPRECT`.  
   
 ### Example  
- See the example for [CRect::operator LPCRECT](#crect__operator_lpcrect).  
+ See the example for [CRect::operator LPCRECT](#operator_lpcrect).  
   
-##  <a name="crect__operator__eq"></a>  CRect::operator =  
+##  <a name="operator_eq"></a>  CRect::operator =  
  Assigns *srcRect* to `CRect`.  
   
 ```  
@@ -917,7 +917,7 @@ srcRect) throw();
 ```
 
   
-##  <a name="crect__operator__eq_eq"></a>  CRect::operator ==  
+##  <a name="operator_eq_eq"></a>  CRect::operator ==  
  Determines whether `rect` is equal to `CRect` by comparing the coordinates of their upper-left and lower-right corners.  
   
 ```  
@@ -939,7 +939,7 @@ rect) const throw();
 ### Remarks  
   
 > [!NOTE]
->  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangles before calling this function.  
+>  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
 
@@ -962,7 +962,7 @@ rect) const throw();
 ```
 
   
-##  <a name="crect__operator__neq"></a>  CRect::operator !=  
+##  <a name="operator_neq"></a>  CRect::operator !=  
  Determines whether `rect` is not equal to `CRect` by comparing the coordinates of their upper-left and lower-right corners.  
   
 ```  
@@ -984,7 +984,7 @@ rect) const throw();
 ### Remarks  
   
 > [!NOTE]
->  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangles before calling this function.  
+>  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
 
@@ -1006,7 +1006,7 @@ rect) const throw();
    ASSERT(rect3 != test);   
 ```
   
-##  <a name="crect__operator__add_eq"></a>  CRect::operator +=  
+##  <a name="operator_add_eq"></a>  CRect::operator +=  
  The first two overloads move `CRect` by the specified offsets.  
   
 ```  
@@ -1053,7 +1053,7 @@ lpRect) throw();
    ASSERT(rect1 == rect2);   
 ```
   
-##  <a name="crect__operator_-_eq"></a>  CRect::operator -=  
+##  <a name="operator_-_eq"></a>  CRect::operator -=  
  The first two overloads move `CRect` by the specified offsets.  
   
 ```  
@@ -1086,7 +1086,7 @@ lpRect) throw();
 ### Remarks  
  The parameter's *x* and *y* (or `cx` and `cy`) values are subtracted from `CRect`.  
   
- The third overload deflates `CRect` by the number of units specifed in each member of the parameter. Note that this overload functions like [DeflateRect](#crect__deflaterect).  
+ The third overload deflates `CRect` by the number of units specifed in each member of the parameter. Note that this overload functions like [DeflateRect](#deflaterect).  
   
 ### Example  
 
@@ -1100,7 +1100,7 @@ lpRect) throw();
    ASSERT(rect1 == rectResult);   
 ```
   
-##  <a name="crect__operator__amp__eq"></a>  CRect::operator &amp;=  
+##  <a name="operator_amp_eq"></a>  CRect::operator &amp;=  
  Sets `CRect` equal to the intersection of `CRect` and `rect`.  
   
 ```  
@@ -1120,12 +1120,12 @@ rect) throw();
  The intersection is the largest rectangle that is contained in both rectangles.  
   
 > [!NOTE]
->  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangles before calling this function.  
+>  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
- See the example for [CRect::IntersectRect](#crect__intersectrect).  
+ See the example for [CRect::IntersectRect](#intersectrect).  
   
-##  <a name="crect__operator__or_eq"></a>  CRect::operator &#124;=  
+##  <a name="operator_or_eq"></a>  CRect::operator &#124;=  
  Sets `CRect` equal to the union of `CRect` and `rect`.  
   
 ```  
@@ -1145,7 +1145,7 @@ rect) throw();
  The union is the smallest rectangle that contains both source rectangles.  
   
 > [!NOTE]
->  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangles before calling this function.  
+>  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
 
@@ -1160,7 +1160,7 @@ rect) throw();
 ```
 
   
-##  <a name="crect__operator__add"></a>  CRect::operator +  
+##  <a name="operator_add"></a>  CRect::operator +  
  The first two overloads return a `CRect` object that is equal to `CRect` displaced by the specified offsets.  
   
 ```  
@@ -1213,7 +1213,7 @@ size) const throw();
 ```
 
   
-##  <a name="crect__operator_-"></a>  CRect::operator -  
+##  <a name="operator_-"></a>  CRect::operator -  
  The first two overloads return a `CRect` object that is equal to `CRect` displaced by the specified offsets.  
   
 ```  
@@ -1249,7 +1249,7 @@ lpRect) const throw();
 ### Remarks  
  The parameter's *x* and *y* (or `cx` and `cy`) parameters are subtracted from `CRect`'s position.  
   
- The third overload returns a new `CRect` that is equal to `CRect` deflated by the number of units specifed in each member of the parameter. Note that this overload functions like [DeflateRect](#crect__deflaterect), not [SubtractRect](#crect__subtractrect).  
+ The third overload returns a new `CRect` that is equal to `CRect` deflated by the number of units specifed in each member of the parameter. Note that this overload functions like [DeflateRect](#deflaterect), not [SubtractRect](#subtractrect).  
   
 ### Example  
 
@@ -1266,7 +1266,7 @@ lpRect) const throw();
 ```
 
   
-##  <a name="crect__operator__amp_"></a>  CRect::operator &amp;  
+##  <a name="operator_amp"></a>  CRect::operator &amp;  
  Returns a `CRect` that is the intersection of `CRect` and *rect2*.  
   
 ```  
@@ -1289,7 +1289,7 @@ rect2) const throw();
  The intersection is the largest rectangle that is contained in both rectangles.  
   
 > [!NOTE]
->  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangles before calling this function.  
+>  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
 
@@ -1305,7 +1305,7 @@ rect2) const throw();
 ```
 
   
-##  <a name="crect__operator__or"></a>  CRect::operator &#124;  
+##  <a name="operator_or"></a>  CRect::operator &#124;  
  Returns a `CRect` that is the union of `CRect` and *rect2*.  
   
 ```  
@@ -1328,7 +1328,7 @@ rect2) const throw();
  The union is the smallest rectangle that contains both rectangles.  
   
 > [!NOTE]
->  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangles before calling this function.  
+>  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
 
@@ -1344,7 +1344,7 @@ rect2) const throw();
 ```
 
   
-##  <a name="crect__ptinrect"></a>  CRect::PtInRect  
+##  <a name="ptinrect"></a>  CRect::PtInRect  
  Determines whether the specified point lies within `CRect`.  
   
 ```  
@@ -1367,7 +1367,7 @@ point) const throw();
  A point is within `CRect` if it lies on the left or top side or is within all four sides. A point on the right or bottom side is outside `CRect`.  
   
 > [!NOTE]
->  The rectangle must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangle before calling this function.  
+>  The rectangle must be normalized or this function may fail. You can call [NormalizeRect](#normalizerect) to normalize the rectangle before calling this function.  
   
 ### Example  
 
@@ -1397,7 +1397,7 @@ point) const throw();
    ASSERT(rect.PtInRect(pt));   
 ```
   
-##  <a name="crect__setrect"></a>  CRect::SetRect  
+##  <a name="setrect"></a>  CRect::SetRect  
  Sets the dimensions of `CRect` to the specified coordinates.  
   
 ```  
@@ -1438,7 +1438,7 @@ point) const throw();
 ```
 
   
-##  <a name="crect__setrectempty"></a>  CRect::SetRectEmpty  
+##  <a name="setrectempty"></a>  CRect::SetRectEmpty  
  Makes `CRect` a null rectangle by setting all coordinates to zero.  
   
 ```  
@@ -1454,7 +1454,7 @@ rect.SetRectEmpty();
 ASSERT(rect.IsRectEmpty());   
 ```
   
-##  <a name="crect__size"></a>  CRect::Size  
+##  <a name="size"></a>  CRect::Size  
  The `cx` and `cy` members of the return value contain the height and width of `CRect`.  
   
 ```  
@@ -1468,7 +1468,7 @@ CSize Size() const throw();
  Either the height or width can be negative.  
   
 > [!NOTE]
->  The rectangle must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangle before calling this function.  
+>  The rectangle must be normalized or this function may fail. You can call [NormalizeRect](#normalizerect) to normalize the rectangle before calling this function.  
   
 ### Example  
 ```cpp
@@ -1478,7 +1478,7 @@ CSize Size() const throw();
 ```
 >>>>>>> master
   
-##  <a name="crect__subtractrect"></a>  CRect::SubtractRect  
+##  <a name="subtractrect"></a>  CRect::SubtractRect  
  Makes the dimensions of the **CRect** equal to the subtraction of `lpRectSrc2` from `lpRectSrc1`.  
   
 ```  
@@ -1509,10 +1509,10 @@ CSize Size() const throw();
   
  For example, if `lpRectSrc1` were (10,10, 100,100) and `lpRectSrc2` were (50,50, 150,150), the rectangle pointed to by `lpRectSrc1` would be unchanged when the function returned. If `lpRectSrc1` were (10,10, 100,100) and `lpRectSrc2` were (50,10, 150,150), however, the rectangle pointed to by `lpRectSrc1` would contain the coordinates (10,10, 50,100) when the function returned.  
   
- `SubtractRect` is not the same as [operator -](#crect__operator_-) nor [operator -=](#crect__operator_-_eq). Neither of these operators ever calls `SubtractRect`.  
+ `SubtractRect` is not the same as [operator -](#operator_-) nor [operator -=](#operator_-_eq). Neither of these operators ever calls `SubtractRect`.  
   
 > [!NOTE]
->  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangles before calling this function.  
+>  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
 ```cpp
@@ -1548,7 +1548,7 @@ CSize Size() const throw();
    ASSERT(rectResult == rectOut);   
 ```
   
-##  <a name="crect__topleft"></a>  CRect::TopLeft  
+##  <a name="topleft"></a>  CRect::TopLeft  
  The coordinates are returned as a reference to a [CPoint](cpoint-class.md) object that is contained in `CRect`.  
   
 ```  
@@ -1567,9 +1567,9 @@ const CPoint& TopLeft() const throw();
  You can use this function to either get or set the top-left corner of the rectangle. Set the corner by using this function on the left side of the assignment operator.  
   
 ### Example  
- See the example for [CRect::CenterPoint](#crect__centerpoint).  
+ See the example for [CRect::CenterPoint](#centerpoint).  
   
-##  <a name="crect__unionrect"></a>  CRect::UnionRect  
+##  <a name="unionrect"></a>  CRect::UnionRect  
  Makes the dimensions of `CRect` equal to the union of the two source rectangles.  
   
 ```  
@@ -1599,7 +1599,7 @@ const CPoint& TopLeft() const throw();
  Windows ignores the dimensions of an empty rectangle; that is, a rectangle that has no height or has no width.  
   
 > [!NOTE]
->  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangles before calling this function.  
+>  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
 ```cpp
@@ -1614,7 +1614,7 @@ const CPoint& TopLeft() const throw();
 ```
 >>>>>>> master
   
-##  <a name="crect__width"></a>  CRect::Width  
+##  <a name="width"></a>  CRect::Width  
  Calculates the width of `CRect` by subtracting the left value from the right value.  
   
 ```  
@@ -1628,7 +1628,7 @@ int Width() const throw();
  The width can be negative.  
   
 > [!NOTE]
->  The rectangle must be normalized or this function may fail. You can call [NormalizeRect](#crect__normalizerect) to normalize the rectangle before calling this function.  
+>  The rectangle must be normalized or this function may fail. You can call [NormalizeRect](#normalizerect) to normalize the rectangle before calling this function.  
   
 ### Example  
 

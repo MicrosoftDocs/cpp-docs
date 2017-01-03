@@ -43,11 +43,11 @@ translation.priority.ht:
 # Ordering Items in the Header Control
 Once you've [added items to a header control](../mfc/adding-items-to-the-header-control.md), you can manipulate or get information about their order with the following functions:  
   
--   [CHeaderCtrl::GetOrderArray](../mfc/reference/cheaderctrl-class.md#cheaderctrl__getorderarray) and [CHeaderCtrl::SetOrderArray](../mfc/reference/cheaderctrl-class.md#cheaderctrl__setorderarray)  
+-   [CHeaderCtrl::GetOrderArray](../mfc/reference/cheaderctrl-class.md#getorderarray) and [CHeaderCtrl::SetOrderArray](../mfc/reference/cheaderctrl-class.md#setorderarray)  
   
      Retrieves and sets the left-to-right order of header items.  
   
--   [CHeaderCtrl::OrderToIndex](../mfc/reference/cheaderctrl-class.md#cheaderctrl__ordertoindex).  
+-   [CHeaderCtrl::OrderToIndex](../mfc/reference/cheaderctrl-class.md#ordertoindex).  
   
      Retrieves the index value for a specific header item.  
   

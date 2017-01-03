@@ -49,26 +49,26 @@ class CMFCKeyMapDialog : public CDialogEx
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCKeyMapDialog::CMFCKeyMapDialog](#cmfckeymapdialog__cmfckeymapdialog)|Constructs a `CMFCKeyMapDialog` object.|  
+|[CMFCKeyMapDialog::CMFCKeyMapDialog](#cmfckeymapdialog)|Constructs a `CMFCKeyMapDialog` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCKeyMapDialog::DoModal](#cmfckeymapdialog__domodal)|Displays a keyboard mapping dialog box.|  
+|[CMFCKeyMapDialog::DoModal](#domodal)|Displays a keyboard mapping dialog box.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCKeyMapDialog::FormatItem](#cmfckeymapdialog__formatitem)|Called by the framework to build a string that describes a key mapping. By default, the string contains the command name, the shortcut keys used, and the shortcut key description.|  
-|[CMFCKeyMapDialog::GetCommandKeys](#cmfckeymapdialog__getcommandkeys)|Retrieves a string that contains a list of shortcut keys associated with the specified command.|  
-|[CMFCKeyMapDialog::OnInsertItem](#cmfckeymapdialog__oninsertitem)|Called by the framework before a new item is inserted into the internal list control that supports the keyboard mapping control.|  
-|[CMFCKeyMapDialog::OnPrintHeader](#cmfckeymapdialog__onprintheader)|Called by the framework to print the header for the keyboard map on a new page.|  
-|[CMFCKeyMapDialog::OnPrintItem](#cmfckeymapdialog__onprintitem)|Called by the framework to print a keyboard mapping item.|  
-|[CMFCKeyMapDialog::OnSetColumns](#cmfckeymapdialog__onsetcolumns)|Called by the framework to set captions for the columns in the internal list control that supports the keyboard mapping control.|  
-|[CMFCKeyMapDialog::PrintKeyMap](#cmfckeymapdialog__printkeymap)|Called by the framework when a user clicks the **Print** button.|  
-|[CMFCKeyMapDialog::SetColumnsWidth](#cmfckeymapdialog__setcolumnswidth)|Called by the framework to set the width of the columns in the internal list control that supports the keyboard mapping control.|  
+|[CMFCKeyMapDialog::FormatItem](#formatitem)|Called by the framework to build a string that describes a key mapping. By default, the string contains the command name, the shortcut keys used, and the shortcut key description.|  
+|[CMFCKeyMapDialog::GetCommandKeys](#getcommandkeys)|Retrieves a string that contains a list of shortcut keys associated with the specified command.|  
+|[CMFCKeyMapDialog::OnInsertItem](#oninsertitem)|Called by the framework before a new item is inserted into the internal list control that supports the keyboard mapping control.|  
+|[CMFCKeyMapDialog::OnPrintHeader](#onprintheader)|Called by the framework to print the header for the keyboard map on a new page.|  
+|[CMFCKeyMapDialog::OnPrintItem](#onprintitem)|Called by the framework to print a keyboard mapping item.|  
+|[CMFCKeyMapDialog::OnSetColumns](#onsetcolumns)|Called by the framework to set captions for the columns in the internal list control that supports the keyboard mapping control.|  
+|[CMFCKeyMapDialog::PrintKeyMap](#printkeymap)|Called by the framework when a user clicks the **Print** button.|  
+|[CMFCKeyMapDialog::SetColumnsWidth](#setcolumnswidth)|Called by the framework to set the width of the columns in the internal list control that supports the keyboard mapping control.|  
   
 ## Remarks  
  Use the `CMFCKeyMapDialog` class to implement a resizable keyboard mapping dialog box. The dialog box uses a list view control to display keyboard shortcuts and their associated commands.  
@@ -91,7 +91,7 @@ class CMFCKeyMapDialog : public CDialogEx
 ## Requirements  
  **Header:** afxkeymapdialog.h  
   
-##  <a name="cmfckeymapdialog__cmfckeymapdialog"></a>  CMFCKeyMapDialog::CMFCKeyMapDialog  
+##  <a name="cmfckeymapdialog"></a>  CMFCKeyMapDialog::CMFCKeyMapDialog  
  Constructs a `CMFCKeyMapDialog` object.  
   
 ```  
@@ -110,11 +110,11 @@ CMFCKeyMapDialog(
 ### Remarks  
   
 ### Example  
- The following example demonstrates how to construct an object of the `CMFCKeyMapDialog` class. This example is part of the [Visual Studio Demo sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to construct an object of the `CMFCKeyMapDialog` class. This example is part of the [Visual Studio Demo sample](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_VisualStudioDemo#21](../../mfc/codesnippet/cpp/cmfckeymapdialog-class_1.cpp)]  
   
-##  <a name="cmfckeymapdialog__domodal"></a>  CMFCKeyMapDialog::DoModal  
+##  <a name="domodal"></a>  CMFCKeyMapDialog::DoModal  
  Displays a keyboard mapping dialog box.  
   
 ```  
@@ -122,12 +122,12 @@ virtual INT_PTR DoModal();
 ```  
   
 ### Return Value  
- A signed integer, such as `IDOK` or `IDCANCEL`, that is passed to the [CDialog::EndDialog](../../mfc/reference/cdialog-class.md#cdialog__enddialog) method. The method, in turn, closes the dialog box. For more information, see [CDialog::DoModal](../../mfc/reference/cdialog-class.md#cdialog__domodal).  
+ A signed integer, such as `IDOK` or `IDCANCEL`, that is passed to the [CDialog::EndDialog](../../mfc/reference/cdialog-class.md#enddialog) method. The method, in turn, closes the dialog box. For more information, see [CDialog::DoModal](../../mfc/reference/cdialog-class.md#domodal).  
   
 ### Remarks  
  The keyboard mapping dialog box enables you to select and assign accelerator keys to various categories of commands. In addition, you can copy the selected accelerator keys and their description to the clipboard.  
   
-##  <a name="cmfckeymapdialog__formatitem"></a>  CMFCKeyMapDialog::FormatItem  
+##  <a name="formatitem"></a>  CMFCKeyMapDialog::FormatItem  
  Called by the framework to build a string that describes a key mapping. By default, the string contains the command name, the shortcut keys used, and the shortcut key description.  
   
 ```  
@@ -145,7 +145,7 @@ virtual CString FormatItem(int nItem) const;
   
 ### Remarks  
   
-##  <a name="cmfckeymapdialog__getcommandkeys"></a>  CMFCKeyMapDialog::GetCommandKeys  
+##  <a name="getcommandkeys"></a>  CMFCKeyMapDialog::GetCommandKeys  
  Retrieves a string value. The string contains a list of shortcut keys that are associated with a specified command.  
   
 ```  
@@ -163,7 +163,7 @@ virtual CString GetCommandKeys(UINT uiCmdID) const;
   
 ### Remarks  
   
-##  <a name="cmfckeymapdialog__oninsertitem"></a>  CMFCKeyMapDialog::OnInsertItem  
+##  <a name="oninsertitem"></a>  CMFCKeyMapDialog::OnInsertItem  
  Called by the framework before a new item is inserted into an internal list control that supports the keyboard mapping control.  
   
 ```  
@@ -181,7 +181,7 @@ virtual void OnInsertItem(
   
 ### Remarks  
   
-##  <a name="cmfckeymapdialog__onprintheader"></a>  CMFCKeyMapDialog::OnPrintHeader  
+##  <a name="onprintheader"></a>  CMFCKeyMapDialog::OnPrintHeader  
  Called by the framework to print the header for the keyboard map on a new page.  
   
 ```  
@@ -204,12 +204,12 @@ virtual int OnPrintHeader(
  The horizontal offset of the header, in pixels.  
   
 ### Return Value  
- If successful, the height of the printed text. For more information, see the Return Value section of [CDC::DrawText](../../mfc/reference/cdc-class.md#cdc__drawtext).  
+ If successful, the height of the printed text. For more information, see the Return Value section of [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext).  
   
 ### Remarks  
  The framework uses this method to print the keyboard map. By default, this method prints the page number, application name, and dialog box title.  
   
-##  <a name="cmfckeymapdialog__onprintitem"></a>  CMFCKeyMapDialog::OnPrintItem  
+##  <a name="onprintitem"></a>  CMFCKeyMapDialog::OnPrintItem  
  Called by the framework to print a keyboard mapping item.  
   
 ```  
@@ -245,7 +245,7 @@ virtual int OnPrintItem(
 ### Remarks  
  The framework calls this method to print a key map dialog box item. By default, this method prints the item's command name, shortcut keys, and command description.  
   
-##  <a name="cmfckeymapdialog__onsetcolumns"></a>  CMFCKeyMapDialog::OnSetColumns  
+##  <a name="onsetcolumns"></a>  CMFCKeyMapDialog::OnSetColumns  
  Called by the framework to set captions for the columns in the internal list control that supports the keyboard mapping control.  
   
 ```  
@@ -255,7 +255,7 @@ virtual void OnSetColumns();
 ### Remarks  
  By default, this method obtains the captions for the columns from three resources. The command column caption is from IDS_AFXBARRES_COMMAND, the key column caption is from IDS_AFXBARRES_KEYS, and the description column caption is from IDS_AFXBARRES_DESCRIPTION.  
   
-##  <a name="cmfckeymapdialog__printkeymap"></a>  CMFCKeyMapDialog::PrintKeyMap  
+##  <a name="printkeymap"></a>  CMFCKeyMapDialog::PrintKeyMap  
  Called by the framework when a user clicks the **Print** button.  
   
 ```  
@@ -263,9 +263,9 @@ virtual void PrintKeyMap();
 ```  
   
 ### Remarks  
- The `PrintKeyMap` method prints the key map. It initiates a new print job and then repeatedly calls the [CMFCKeyMapDialog::OnPrintHeader](#cmfckeymapdialog__onprintheader) and [CMFCKeyMapDialog::OnPrintItem](#cmfckeymapdialog__onprintitem) methods until all the key mappings are printed.  
+ The `PrintKeyMap` method prints the key map. It initiates a new print job and then repeatedly calls the [CMFCKeyMapDialog::OnPrintHeader](#onprintheader) and [CMFCKeyMapDialog::OnPrintItem](#onprintitem) methods until all the key mappings are printed.  
   
-##  <a name="cmfckeymapdialog__setcolumnswidth"></a>  CMFCKeyMapDialog::SetColumnsWidth  
+##  <a name="setcolumnswidth"></a>  CMFCKeyMapDialog::SetColumnsWidth  
  Called by the framework to set the width of the columns in the internal list control that supports the keyboard mapping control.  
   
 ```  

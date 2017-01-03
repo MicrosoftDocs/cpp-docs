@@ -51,7 +51,7 @@ Suppose the user clicks the mouse in the File menu, which generates a `WM_INITME
   
  If the framework does not find an `ON_UPDATE_COMMAND_UI` entry during command routing, it automatically enables the user-interface object if there is an `ON_COMMAND` entry somewhere with the same command ID. Otherwise, it disables the user-interface object. Therefore, to ensure that a user-interface object is enabled, supply a handler for the command the object generates or supply an update handler for it. See the figure in the topic [User-Interface Objects and Command IDs](../mfc/user-interface-objects-and-command-ids.md).  
   
- It is possible to disable the default disabling of user-interface objects. For more information, see the [m_bAutoMenuEnable](../mfc/reference/cframewnd-class.md#cframewnd__m_bautomenuenable) member of class `CFrameWnd` in the *MFC Reference*.  
+ It is possible to disable the default disabling of user-interface objects. For more information, see the [m_bAutoMenuEnable](../mfc/reference/cframewnd-class.md#m_bautomenuenable) member of class `CFrameWnd` in the *MFC Reference*.  
   
  Menu initialization is automatic in the framework, occurring when the application receives a `WM_INITMENUPOPUP` message. During the idle loop, the framework searches the command routing for button update handlers in much the same way as it does for menus.  
   

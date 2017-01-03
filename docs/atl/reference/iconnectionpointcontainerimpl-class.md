@@ -59,8 +59,8 @@ template<class T>  class ATL_NO_VTABLE IConnectionPointContainerImpl :   public 
   
 |Name|Description|  
 |----------|-----------------|  
-|[IConnectionPointContainerImpl::EnumConnectionPoints](#iconnectionpointcontainerimpl__enumconnectionpoints)|Creates an enumerator to iterate through the connection points supported in the connectable object.|  
-|[IConnectionPointContainerImpl::FindConnectionPoint](#iconnectionpointcontainerimpl__findconnectionpoint)|Retrieves an interface pointer to the connection point that supports the specified IID.|  
+|[IConnectionPointContainerImpl::EnumConnectionPoints](#enumconnectionpoints)|Creates an enumerator to iterate through the connection points supported in the connectable object.|  
+|[IConnectionPointContainerImpl::FindConnectionPoint](#findconnectionpoint)|Retrieves an interface pointer to the connection point that supports the specified IID.|  
   
 ## Remarks  
  `IConnectionPointContainerImpl` implements a connection point container to manage a collection of [IConnectionPointImpl](../../atl/reference/iconnectionpointimpl-class.md) objects. `IConnectionPointContainerImpl` provides two methods that a client can call to retrieve more information about a connectable object:  
@@ -79,7 +79,7 @@ template<class T>  class ATL_NO_VTABLE IConnectionPointContainerImpl :   public 
 ## Requirements  
  **Header:** atlcom.h  
   
-##  <a name="iconnectionpointcontainerimpl__enumconnectionpoints"></a>  IConnectionPointContainerImpl::EnumConnectionPoints  
+##  <a name="enumconnectionpoints"></a>  IConnectionPointContainerImpl::EnumConnectionPoints  
  Creates an enumerator to iterate through the connection points supported in the connectable object.  
   
 ```
@@ -89,7 +89,7 @@ STDMETHOD(EnumConnectionPoints)(IEnumConnectionPoints** ppEnum);
 ### Remarks  
  See [IConnectionPointContainer::EnumConnectionPoints](http://msdn.microsoft.com/library/windows/desktop/ms682460) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="iconnectionpointcontainerimpl__findconnectionpoint"></a>  IConnectionPointContainerImpl::FindConnectionPoint  
+##  <a name="findconnectionpoint"></a>  IConnectionPointContainerImpl::FindConnectionPoint  
  Retrieves an interface pointer to the connection point that supports the specified IID.  
   
 ```

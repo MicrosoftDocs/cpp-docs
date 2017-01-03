@@ -65,6 +65,6 @@ class CSession
  **Header:** atldbcli.h  
   
 ## See Also  
- [CatDB](../../top/visual-cpp-samples.md)   
+ [CatDB](../../visual-cpp-samples.md)   
  [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   
  [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

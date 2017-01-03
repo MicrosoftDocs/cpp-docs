@@ -42,7 +42,7 @@ void PrintValues( Object* myArr __gc[]);
 void PrintValues( int myArr __gc[,,]);  
 ```  
   
- This has been simplified in the new syntax, in which we use a template-like declaration similar to the STL `vector` declaration. The first parameter indicates the element type. The second parameter specifies the array dimension (with a default value of 1, so only multiple dimensions require a second argument). The array object itself is a tracking handle, and so must be given a hat. If the element type is also a reference type, it also requires a hat. For example, the above example, when expressed in the new syntax, looks as follows:  
+ This has been simplified in the new syntax, in which we use a template-like declaration similar to the C++ Standard Library `vector` declaration. The first parameter indicates the element type. The second parameter specifies the array dimension (with a default value of 1, so only multiple dimensions require a second argument). The array object itself is a tracking handle, and so must be given a hat. If the element type is also a reference type, it also requires a hat. For example, the above example, when expressed in the new syntax, looks as follows:  
   
 ```  
 void PrintValues( array<Object^>^ myArr );  

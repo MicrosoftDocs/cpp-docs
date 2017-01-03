@@ -142,7 +142,7 @@ yourfunction(args, typename enable_if<your_condition, void **>::type = nullptr) 
 -   Use `enable_if` when you have an overload set that makes otherwise good code ambiguous.  Most often, this occurs in implicitly converting constructors.  
   
 ## Example  
- This example explains how the STL template function [std::make_pair()](../standard-library/utility-functions.md#make_pair) takes advantage of `enable_if`.  
+ This example explains how the C++ Standard Library template function [std::make_pair()](../standard-library/utility-functions.md#make_pair) takes advantage of `enable_if`.  
   
 ```cpp
 void func(const pair<int, int>&);

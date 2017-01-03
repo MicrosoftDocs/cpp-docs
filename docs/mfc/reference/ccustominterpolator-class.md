@@ -50,42 +50,42 @@ class CCustomInterpolator;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CCustomInterpolator::CCustomInterpolator](#ccustominterpolator__ccustominterpolator)|Overloaded. Constructs a custom interpolator object and initializes duration and velocity to specified values.|  
+|[CCustomInterpolator::CCustomInterpolator](#ccustominterpolator)|Overloaded. Constructs a custom interpolator object and initializes duration and velocity to specified values.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CCustomInterpolator::GetDependencies](#ccustominterpolator__getdependencies)|Gets the interpolator's dependencies.|  
-|[CCustomInterpolator::GetDuration](#ccustominterpolator__getduration)|Gets the interpolator's duration.|  
-|[CCustomInterpolator::GetFinalValue](#ccustominterpolator__getfinalvalue)|Gets the final value to which the interpolator leads.|  
-|[CCustomInterpolator::Init](#ccustominterpolator__init)|Initializes duration and final value.|  
-|[CCustomInterpolator::InterpolateValue](#ccustominterpolator__interpolatevalue)|Interpolates the value at a given offset.|  
-|[CCustomInterpolator::InterpolateVelocity](#ccustominterpolator__interpolatevelocity)|Interpolates the velocity at a given offset|  
-|[CCustomInterpolator::SetDuration](#ccustominterpolator__setduration)|Sets the interpolator's duration.|  
-|[CCustomInterpolator::SetInitialValueAndVelocity](#ccustominterpolator__setinitialvalueandvelocity)|Sets the interpolator's initial value and velocity.|  
+|[CCustomInterpolator::GetDependencies](#getdependencies)|Gets the interpolator's dependencies.|  
+|[CCustomInterpolator::GetDuration](#getduration)|Gets the interpolator's duration.|  
+|[CCustomInterpolator::GetFinalValue](#getfinalvalue)|Gets the final value to which the interpolator leads.|  
+|[CCustomInterpolator::Init](#init)|Initializes duration and final value.|  
+|[CCustomInterpolator::InterpolateValue](#interpolatevalue)|Interpolates the value at a given offset.|  
+|[CCustomInterpolator::InterpolateVelocity](#interpolatevelocity)|Interpolates the velocity at a given offset|  
+|[CCustomInterpolator::SetDuration](#setduration)|Sets the interpolator's duration.|  
+|[CCustomInterpolator::SetInitialValueAndVelocity](#setinitialvalueandvelocity)|Sets the interpolator's initial value and velocity.|  
   
 ### Protected Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CCustomInterpolator::m_currentValue](#ccustominterpolator__m_currentvalue)|The interpolated value.|  
-|[CCustomInterpolator::m_currentVelocity](#ccustominterpolator__m_currentvelocity)|The interpolated velocity.|  
-|[CCustomInterpolator::m_duration](#ccustominterpolator__m_duration)|The duration of the transition.|  
-|[CCustomInterpolator::m_finalValue](#ccustominterpolator__m_finalvalue)|The final value of a variable at the end of the transition.|  
-|[CCustomInterpolator::m_initialValue](#ccustominterpolator__m_initialvalue)|The value of the variable at the start of the transition.|  
-|[CCustomInterpolator::m_initialVelocity](#ccustominterpolator__m_initialvelocity)|The velocity of the variable at the start of the transition.|  
+|[CCustomInterpolator::m_currentValue](#m_currentvalue)|The interpolated value.|  
+|[CCustomInterpolator::m_currentVelocity](#m_currentvelocity)|The interpolated velocity.|  
+|[CCustomInterpolator::m_duration](#m_duration)|The duration of the transition.|  
+|[CCustomInterpolator::m_finalValue](#m_finalvalue)|The final value of a variable at the end of the transition.|  
+|[CCustomInterpolator::m_initialValue](#m_initialvalue)|The value of the variable at the start of the transition.|  
+|[CCustomInterpolator::m_initialVelocity](#m_initialvelocity)|The velocity of the variable at the start of the transition.|  
   
 ## Remarks  
  Derive a class from CCustomInterpolator and override all necessary methods in order to implement a custom interpolation algorithm. A pointer to this class should be passed as a parameter to CCustomTransition.  
   
 ## Inheritance Hierarchy  
- [CCustomInterpolator](../../mfc/reference/ccustominterpolator-class.md)  
+ `CCustomInterpolator`  
   
 ## Requirements  
  **Header:** afxanimationcontroller.h  
   
-##  <a name="ccustominterpolator__ccustominterpolator"></a>  CCustomInterpolator::CCustomInterpolator  
+##  <a name="ccustominterpolator"></a>  CCustomInterpolator::CCustomInterpolator  
  Constructs a custom interpolator object and sets all values to default 0.  
   
 ```  
@@ -106,7 +106,7 @@ CCustomInterpolator(
 ### Remarks  
  Use CCustomInterpolator::Init to initialize duration and final value later in the code.  
   
-##  <a name="ccustominterpolator__getdependencies"></a>  CCustomInterpolator::GetDependencies  
+##  <a name="getdependencies"></a>  CCustomInterpolator::GetDependencies  
  Gets the interpolator's dependencies.  
   
 ```  
@@ -129,7 +129,7 @@ virtual BOOL GetDependencies(
 ### Return Value  
  Basic implementation always returns TRUE. Return FALSE from overridden implementation if you wish to fail the event.  
   
-##  <a name="ccustominterpolator__getduration"></a>  CCustomInterpolator::GetDuration  
+##  <a name="getduration"></a>  CCustomInterpolator::GetDuration  
  Gets the interpolator's duration.  
   
 ```  
@@ -143,7 +143,7 @@ virtual BOOL GetDuration(UI_ANIMATION_SECONDS* duration);
 ### Return Value  
  Basic implementation always returns TRUE. Return FALSE from overridden implementation if you wish to fail the event.  
   
-##  <a name="ccustominterpolator__getfinalvalue"></a>  CCustomInterpolator::GetFinalValue  
+##  <a name="getfinalvalue"></a>  CCustomInterpolator::GetFinalValue  
  Gets the final value to which the interpolator leads.  
   
 ```  
@@ -157,7 +157,7 @@ virtual BOOL GetFinalValue(DOUBLE* value);
 ### Return Value  
  Basic implementation always returns TRUE. Return FALSE from overridden implementation if you wish to fail the event.  
   
-##  <a name="ccustominterpolator__init"></a>  CCustomInterpolator::Init  
+##  <a name="init"></a>  CCustomInterpolator::Init  
  Initializes duration and final value.  
   
 ```  
@@ -173,7 +173,7 @@ void Init(
  `finalValue`  
  The final value of a variable at the end of the transition.  
   
-##  <a name="ccustominterpolator__interpolatevalue"></a>  CCustomInterpolator::InterpolateValue  
+##  <a name="interpolatevalue"></a>  CCustomInterpolator::InterpolateValue  
  Interpolates the value at a given offset.  
   
 ```  
@@ -189,7 +189,7 @@ virtual BOOL InterpolateValue(
 ### Return Value  
  Basic implementation always returns TRUE. Return FALSE from overridden implementation if you wish to fail the event.  
   
-##  <a name="ccustominterpolator__interpolatevelocity"></a>  CCustomInterpolator::InterpolateVelocity  
+##  <a name="interpolatevelocity"></a>  CCustomInterpolator::InterpolateVelocity  
  Interpolates the velocity at a given offset  
   
 ```  
@@ -205,49 +205,49 @@ virtual BOOL InterpolateVelocity(
 ### Return Value  
  Basic implementation always returns TRUE. Return FALSE from overridden implementation if you wish to fail the event.  
   
-##  <a name="ccustominterpolator__m_currentvalue"></a>  CCustomInterpolator::m_currentValue  
+##  <a name="m_currentvalue"></a>  CCustomInterpolator::m_currentValue  
  The interpolated value.  
   
 ```  
 DOUBLE m_currentValue;  
 ```  
   
-##  <a name="ccustominterpolator__m_currentvelocity"></a>  CCustomInterpolator::m_currentVelocity  
+##  <a name="m_currentvelocity"></a>  CCustomInterpolator::m_currentVelocity  
  The interpolated velocity.  
   
 ```  
 DOUBLE m_currentVelocity;  
 ```  
   
-##  <a name="ccustominterpolator__m_duration"></a>  CCustomInterpolator::m_duration  
+##  <a name="m_duration"></a>  CCustomInterpolator::m_duration  
  The duration of the transition.  
   
 ```  
 UI_ANIMATION_SECONDS m_duration;  
 ```  
   
-##  <a name="ccustominterpolator__m_finalvalue"></a>  CCustomInterpolator::m_finalValue  
+##  <a name="m_finalvalue"></a>  CCustomInterpolator::m_finalValue  
  The final value of a variable at the end of the transition.  
   
 ```  
 DOUBLE m_finalValue;  
 ```  
   
-##  <a name="ccustominterpolator__m_initialvalue"></a>  CCustomInterpolator::m_initialValue  
+##  <a name="m_initialvalue"></a>  CCustomInterpolator::m_initialValue  
  The value of the variable at the start of the transition.  
   
 ```  
 DOUBLE m_initialValue;  
 ```  
   
-##  <a name="ccustominterpolator__m_initialvelocity"></a>  CCustomInterpolator::m_initialVelocity  
+##  <a name="m_initialvelocity"></a>  CCustomInterpolator::m_initialVelocity  
  The velocity of the variable at the start of the transition.  
   
 ```  
 DOUBLE m_initialVelocity;  
 ```  
   
-##  <a name="ccustominterpolator__setduration"></a>  CCustomInterpolator::SetDuration  
+##  <a name="setduration"></a>  CCustomInterpolator::SetDuration  
  Sets the interpolator's duration.  
   
 ```  
@@ -261,7 +261,7 @@ virtual BOOL SetDuration(UI_ANIMATION_SECONDS duration);
 ### Return Value  
  Basic implementation always returns TRUE. Return FALSE from overridden implementation if you wish to fail the event.  
   
-##  <a name="ccustominterpolator__setinitialvalueandvelocity"></a>  CCustomInterpolator::SetInitialValueAndVelocity  
+##  <a name="setinitialvalueandvelocity"></a>  CCustomInterpolator::SetInitialValueAndVelocity  
  Sets the interpolator's initial value and velocity.  
   
 ```  

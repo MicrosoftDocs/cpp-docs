@@ -98,7 +98,7 @@ ATLAPI AtlRegisterTypeLib(HINSTANCE hInstTypeLib, LPCOLESTR lpszIndex);
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This helper function is utilized by [AtlComModuleUnregisterServer](server-registration-global-functions.md#atlcommoduleunregisterserver) and [CAtlComModule::RegisterTypeLib](../../atl/reference/catlcommodule-class.md#catlcommodule__registertypelib).  
+ This helper function is utilized by [AtlComModuleUnregisterServer](server-registration-global-functions.md#atlcommoduleunregisterserver) and [CAtlComModule::RegisterTypeLib](../../atl/reference/catlcommodule-class.md#registertypelib).  
   
 ## <a name="atlsetperuserregistration"></a> AtlSetPerUserRegistration
 Sets whether the application redirects registry access to the **HKEY_CURRENT_USER** (**HKCU**) node.  
@@ -144,7 +144,7 @@ ATLAPI AtlUnRegisterTypeLib(
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This helper function is utilized by [CAtlComModule::UnRegisterTypeLib](../../atl/reference/catlcommodule-class.md#catlcommodule__unregistertypelib) and [AtlComModuleUnregisterServer](#atlcommoduleunregisterserver).  
+ This helper function is utilized by [CAtlComModule::UnRegisterTypeLib](../../atl/reference/catlcommodule-class.md#unregistertypelib) and [AtlComModuleUnregisterServer](#atlcommoduleunregisterserver).  
   
 ##  <a name="atlloadtypelib"></a>  AtlLoadTypeLib  
  This function is called to load a type library.  

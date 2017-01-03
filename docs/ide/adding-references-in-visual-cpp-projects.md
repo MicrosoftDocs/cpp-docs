@@ -47,9 +47,7 @@ It is very common for programs to call into APIs in other binaries such as DLLs,
   
  ![Visual C&#43;&#43; Reference Manager &#40;ATL Projects&#41;](../ide/media/visual-c---reference-manager--atl-projects-.png "Visual C++ Reference Manager (ATL Projects)")  
   
- In a C++/CLI or Universal Windows Platform project,  the concept of references applies to more kinds of binaries in addition to other projects in the solution.  These are all exposed in **Reference Manager**:  
-  
- ![Visual C&#43;&#43; Reference Manager for C&#43;&#43;&#47;CLI projects](../Image/Visual%20C++%20Reference%20Manager%20for%20C++/CLI%20projects.png "Visual C++ Reference Manager for C++/CLI projects")  
+ In a C++/CLI or Universal Windows Platform project,  the concept of references applies to more kinds of binaries in addition to other projects in the solution.  These are all exposed in **Reference Manager**.
   
 ## Reference properties  
  Each kind of reference has properties. You can view the properties by selecting the reference in Solution Explorer and pressing **Alt + Enter**, or else right-clicking and choosing **Properties**. Some properties are read-only and some can be modified. However, typically you don't have to manually modify these properties.  

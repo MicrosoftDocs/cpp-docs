@@ -38,11 +38,12 @@ translation.priority.mt:
 # Compiler Error C3205
 argument list for template parameter 'parameter' is missing  
   
- A [template](../Topic/Template%20Specifications.md) parameter is missing.  
+A [template](../../cpp/templates-cpp.md) parameter is missing.  
   
- The following sample generates C3205:  
+## Example  
+The following sample generates C3205:  
   
-```  
+```cpp  
 // C3205.cpp  
 template<template<class> class T> struct A {  
    typedef T unparameterized_type;   // C3205  

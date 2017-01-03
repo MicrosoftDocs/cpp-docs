@@ -80,9 +80,9 @@ This wizard adds a member function declaration to the header file and a stub mem
   
 |Option|Description|  
 |------------|-----------------|  
-|[Static](../misc/static-cpp.md)|Specifies that the function acts like a global and can be called outside of the class, even with no class instantiation. The member function has no access to non-static members. A member function specified as `Static` cannot be virtual.|  
+|[Static](../cpp/storage-classes-cpp.md)|Specifies that the function acts like a global and can be called outside of the class, even with no class instantiation. The member function has no access to non-static members. A member function specified as `Static` cannot be virtual.|  
 |[Virtual](../cpp/virtual-cpp.md)|Ensures that the correct member function is called for an object, regardless of the expression used to make the member function call. A member function specified as `Virtual` cannot be static.|  
-|**Pure**|Indicates that no implementation is supplied for the virtual member function being declared; therefore, **Pure** can be specified only on virtual member functions. See [Class-Member Declaration Syntax](../misc/class-member-declaration-syntax.md) for more information.<br /><br /> A class that contains at least one pure virtual member function is considered an abstract class. Classes derived from the abstract class must implement the pure virtual member function or they, too, are abstract classes.|  
+|**Pure**|Indicates that no implementation is supplied for the virtual member function being declared; therefore, **Pure** can be specified only on virtual member functions. A class that contains at least one pure virtual member function is considered an abstract class. Classes derived from the abstract class must implement the pure virtual member function or they, too, are abstract classes.|  
 |[Inline](../cpp/inline-functions-cpp.md)|Instructs the compiler to insert a copy of the member function body into each place the member function is called. A member function specified as **Inline** cannot be pure.|  
   
  **.cpp file**  

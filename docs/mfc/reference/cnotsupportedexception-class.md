@@ -51,7 +51,7 @@ class CNotSupportedException : public CSimpleException
   
 |Name|Description|  
 |----------|-----------------|  
-|[CNotSupportedException::CNotSupportedException](#cnotsupportedexception__cnotsupportedexception)|Constructs a `CNotSupportedException` object.|  
+|[CNotSupportedException::CNotSupportedException](#cnotsupportedexception)|Constructs a `CNotSupportedException` object.|  
   
 ## Remarks  
  No further qualification is necessary or possible.  
@@ -70,7 +70,7 @@ class CNotSupportedException : public CSimpleException
 ## Requirements  
  **Header:** afx.h  
   
-##  <a name="cnotsupportedexception__cnotsupportedexception"></a>  CNotSupportedException::CNotSupportedException  
+##  <a name="cnotsupportedexception"></a>  CNotSupportedException::CNotSupportedException  
  Constructs a `CNotSupportedException` object.  
   
 ```  

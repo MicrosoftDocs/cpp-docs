@@ -40,7 +40,7 @@ This walkthrough introduces the [CTaskDialog Class](../mfc/reference/ctaskdialog
  The `CTaskDialog` is a task dialog box that replaces the Windows message box in [!INCLUDE[wiprlhext](../c-runtime-library/reference/includes/wiprlhext_md.md)]. The `CTaskDialog` improves the original message box and adds functionality. The Windows message box is still supported in [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)].  
   
 > [!NOTE]
->  Versions of Windows earlier than [!INCLUDE[wiprlhext](../c-runtime-library/reference/includes/wiprlhext_md.md)] do not support the `CTaskDialog`. You must program an alternative dialog box option if you want to show a message to a user who runs your application on an earlier version of Windows. You can use the static method [CTaskDialog::IsSupported](../mfc/reference/ctaskdialog-class.md#ctaskdialog__issupported) to determine at run time whether a user's computer can display a `CTaskDialog`. In addition, the `CTaskDialog` is only available when your application is built with the Unicode library.  
+>  Versions of Windows earlier than [!INCLUDE[wiprlhext](../c-runtime-library/reference/includes/wiprlhext_md.md)] do not support the `CTaskDialog`. You must program an alternative dialog box option if you want to show a message to a user who runs your application on an earlier version of Windows. You can use the static method [CTaskDialog::IsSupported](../mfc/reference/ctaskdialog-class.md#issupported) to determine at run time whether a user's computer can display a `CTaskDialog`. In addition, the `CTaskDialog` is only available when your application is built with the Unicode library.  
   
  The `CTaskDialog` supports several optional elements to gather and display information. For example, a `CTaskDialog` can display command links, customized buttons, customized icons, and a footer. The `CTaskDialog` also has several methods that enable you to query the state of the task dialog box to determine what optional elements the user selected.  
   
@@ -222,5 +222,5 @@ This walkthrough introduces the [CTaskDialog Class](../mfc/reference/ctaskdialog
 ## See Also  
  [Dialog Boxes](../mfc/dialog-boxes.md)   
  [CTaskDialog Class](../mfc/reference/ctaskdialog-class.md)   
- [CTaskDialog::CTaskDialog](../mfc/reference/ctaskdialog-class.md#ctaskdialog__ctaskdialog)
+ [CTaskDialog::CTaskDialog](../mfc/reference/ctaskdialog-class.md#ctaskdialog)
 

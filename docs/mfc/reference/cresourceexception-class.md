@@ -53,7 +53,7 @@ class CResourceException : public CSimpleException
   
 |Name|Description|  
 |----------|-----------------|  
-|[CResourceException::CResourceException](#cresourceexception__cresourceexception)|Constructs a `CResourceException` object.|  
+|[CResourceException::CResourceException](#cresourceexception)|Constructs a `CResourceException` object.|  
   
 ## Remarks  
  No further qualification is necessary or possible.  
@@ -72,7 +72,7 @@ class CResourceException : public CSimpleException
 ## Requirements  
  **Header:** afxwin.h  
   
-##  <a name="cresourceexception__cresourceexception"></a>  CResourceException::CResourceException  
+##  <a name="cresourceexception"></a>  CResourceException::CResourceException  
  Constructs a `CResourceException` object.  
   
 ```  

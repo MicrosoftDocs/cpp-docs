@@ -12,9 +12,9 @@ dev_langs:
   - "C++"
 helpviewer_keywords: 
   - "headers, C++ library"
-  - "Standard C++ Library"
+  - "C++ Standard Library"
   - "libraries, Standard C++"
-  - "Standard C++ Library, headers"
+  - "C++ Standard Library, headers"
 ms.assetid: 7acb83a4-da73-4ad3-bc30-a71289db7f60
 caps.latest.revision: 16
 author: "corob-msft"

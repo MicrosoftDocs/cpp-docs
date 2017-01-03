@@ -1,3 +1,3 @@
 ---
-redirect-url: /cpp/mfc/reference/mfc-classes
+redirect_url: /cpp/mfc/reference/mfc-classes 
 ---

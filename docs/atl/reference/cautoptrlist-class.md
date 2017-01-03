@@ -62,7 +62,7 @@ template<typename E>  class CAutoPtrList : public CAtlList<
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAutoPtrList::CAutoPtrList](#cautoptrlist__cautoptrlist)|The constructor.|  
+|[CAutoPtrList::CAutoPtrList](#cautoptrlist)|The constructor.|  
   
 ## Remarks  
  This class provides a constructor and derives methods from [CAtlList](../../atl/reference/catllist-class.md) and [CAutoPtrElementTraits](../../atl/reference/cautoptrelementtraits-class.md) to aid the creation of a list object storing smart pointers. The class [CAutoPtrArray](../../atl/reference/cautoptrarray-class.md) provides a similar function for an array object.  
@@ -77,7 +77,7 @@ template<typename E>  class CAutoPtrList : public CAtlList<
 ## Requirements  
  **Header:** atlcoll.h  
   
-##  <a name="cautoptrlist__cautoptrlist"></a>  CAutoPtrList::CAutoPtrList  
+##  <a name="cautoptrlist"></a>  CAutoPtrList::CAutoPtrList  
  The constructor.  
   
 ```

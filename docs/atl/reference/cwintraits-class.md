@@ -68,13 +68,13 @@ template <DWORD t_dwStyle = 0,  DWORD t_dwExStyle = 0>  class CWinTraits
   
 |Name|Description|  
 |----------|-----------------|  
-|[CWinTraits::GetWndExStyle](#cwintraits__getwndexstyle)|(Static) Retrieves the extended styles for the `CWinTraits` object.|  
-|[CWinTraits::GetWndStyle](#cwintraits__getwndstyle)|(Static) Retrieves the standard styles for the `CWinTraits` object.|  
+|[CWinTraits::GetWndExStyle](#getwndexstyle)|(Static) Retrieves the extended styles for the `CWinTraits` object.|  
+|[CWinTraits::GetWndStyle](#getwndstyle)|(Static) Retrieves the standard styles for the `CWinTraits` object.|  
   
 ## Remarks  
  This [window traits](../../atl/understanding-window-traits.md) class provides a simple method for standardizing the styles used for the creation of an ATL window object. Use a specialization of this class as a template parameter to [CWindowImpl](../../atl/reference/cwindowimpl-class.md) or another of ATL's window classes to specify the default standard and extended styles used for instances of that window class.  
   
- Use this template when you want to provide default window styles that will be used only when no other styles are specified in the call to [CWindowImpl::Create](../../atl/reference/cwindowimpl-class.md#cwindowimpl__create).  
+ Use this template when you want to provide default window styles that will be used only when no other styles are specified in the call to [CWindowImpl::Create](../../atl/reference/cwindowimpl-class.md#create).  
   
  ATL provides three predefined specializations of this template for commonly used combinations of window styles:  
   
@@ -92,7 +92,7 @@ template <DWORD t_dwStyle = 0,  DWORD t_dwExStyle = 0>  class CWinTraits
 ## Requirements  
  **Header:** atlwin.h  
   
-##  <a name="cwintraits__getwndstyle"></a>  CWinTraits::GetWndStyle  
+##  <a name="getwndstyle"></a>  CWinTraits::GetWndStyle  
  Call this function to retrieve the standard styles of the `CWinTraits` object.  
   
 ```
@@ -106,7 +106,7 @@ static DWORD GetWndStyle(DWORD dwStyle);
 ### Return Value  
  The standard window styles of the object.  
   
-##  <a name="cwintraits__getwndexstyle"></a>  CWinTraits::GetWndExStyle  
+##  <a name="getwndexstyle"></a>  CWinTraits::GetWndExStyle  
  Call this function to retrieve the extended styles of the `CWinTraits` object.  
   
 ```

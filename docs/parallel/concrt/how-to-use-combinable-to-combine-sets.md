@@ -40,7 +40,7 @@ This topic shows how to use the [concurrency::combinable](../../parallel/concrt/
 ## Example  
  The following example computes the set of prime numbers two times. Each computation stores the result in a [std::bitset](../../standard-library/bitset-class.md) object. The example first computes the set serially and then computes the set in parallel. The example also prints to the console the time that is required to perform both computations.  
   
- This example uses the [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithm and a `combinable` object to generate thread-local sets. It then uses the [concurrency::combinable::combine_each](reference/combinable-class.md#combinable__combine_each_method) method to combine the thread-local sets into the final set.  
+ This example uses the [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithm and a `combinable` object to generate thread-local sets. It then uses the [concurrency::combinable::combine_each](reference/combinable-class.md#combine_each) method to combine the thread-local sets into the final set.  
 
   
  [!code-cpp[concrt-parallel-combine-primes#1](../../parallel/concrt/codesnippet/cpp/how-to-use-combinable-to-combine-sets_1.cpp)]  
@@ -61,6 +61,6 @@ parallel time: 78 ms
 ## See Also  
  [Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md)   
  [combinable Class](../../parallel/concrt/reference/combinable-class.md)   
- [combinable::combine_each Method](reference/combinable-class.md#combinable__combine_each_method)
+ [combinable::combine_each Method](reference/combinable-class.md#combine_each)
 
 

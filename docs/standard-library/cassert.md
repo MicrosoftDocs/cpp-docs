@@ -52,7 +52,7 @@ Includes the Standard C library header \<assert.h> and adds the associated names
 ## See Also  
  [assert Macro, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md)   
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   
- [STL Overview](../standard-library/cpp-standard-library-overview.md)   
+ [C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 
 

@@ -51,29 +51,29 @@ class CProgressCtrl : public CWnd
   
 |Name|Description|  
 |----------|-----------------|  
-|[CProgressCtrl::CProgressCtrl](#cprogressctrl__cprogressctrl)|Constructs a `CProgressCtrl` object.|  
+|[CProgressCtrl::CProgressCtrl](#cprogressctrl)|Constructs a `CProgressCtrl` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CProgressCtrl::Create](#cprogressctrl__create)|Creates a progress bar control and attaches it to a `CProgressCtrl` object.|  
-|[CProgressCtrl::CreateEx](#cprogressctrl__createex)|Creates a progress control with the specified Windows extended styles and attaches it to a `CProgressCtrl` object.|  
-|[CProgressCtrl::GetBarColor](#cprogressctrl__getbarcolor)|Gets the color of the progress indicator bar for the current progress bar control.|  
-|[CProgressCtrl::GetBkColor](#cprogressctrl__getbkcolor)|Gets the background color of the current progress bar.|  
-|[CProgressCtrl::GetPos](#cprogressctrl__getpos)|Gets the current position of the progress bar.|  
-|[CProgressCtrl::GetRange](#cprogressctrl__getrange)|Gets the lower and upper limits of the range of the progress bar control.|  
-|[CProgressCtrl::GetState](#cprogressctrl__getstate)|Gets the state of the current progress bar control.|  
-|[CProgressCtrl::GetStep](#cprogressctrl__getstep)|Retrieves the step increment for the progress bar of the current progress bar control.|  
-|[CProgressCtrl::OffsetPos](#cprogressctrl__offsetpos)|Advances the current position of a progress bar control by a specified increment and redraws the bar to reflect the new position.|  
-|[CProgressCtrl::SetBarColor](#cprogressctrl__setbarcolor)|Sets the color of the progress indicator bar in the current progress bar control.|  
-|[CProgressCtrl::SetBkColor](#cprogressctrl__setbkcolor)|Sets the background color for the progress bar.|  
-|[CProgressCtrl::SetMarquee](#cprogressctrl__setmarquee)|Turns marquee mode on or off for the current progress bar control.|  
-|[CProgressCtrl::SetPos](#cprogressctrl__setpos)|Sets the current position for a progress bar control and redraws the bar to reflect the new position.|  
-|[CProgressCtrl::SetRange](#cprogressctrl__setrange)|Sets the minimum and maximum ranges for a progress bar control and redraws the bar to reflect the new ranges.|  
-|[CProgressCtrl::SetState](#cprogressctrl__setstate)|Sets the state of the current progress bar control.|  
-|[CProgressCtrl::SetStep](#cprogressctrl__setstep)|Specifies the step increment for a progress bar control.|  
-|[CProgressCtrl::StepIt](#cprogressctrl__stepit)|Advances the current position for a progress bar control by the step increment (see [SetStep](#cprogressctrl__setstep)) and redraws the bar to reflect the new position.|  
+|[CProgressCtrl::Create](#create)|Creates a progress bar control and attaches it to a `CProgressCtrl` object.|  
+|[CProgressCtrl::CreateEx](#createex)|Creates a progress control with the specified Windows extended styles and attaches it to a `CProgressCtrl` object.|  
+|[CProgressCtrl::GetBarColor](#getbarcolor)|Gets the color of the progress indicator bar for the current progress bar control.|  
+|[CProgressCtrl::GetBkColor](#getbkcolor)|Gets the background color of the current progress bar.|  
+|[CProgressCtrl::GetPos](#getpos)|Gets the current position of the progress bar.|  
+|[CProgressCtrl::GetRange](#getrange)|Gets the lower and upper limits of the range of the progress bar control.|  
+|[CProgressCtrl::GetState](#getstate)|Gets the state of the current progress bar control.|  
+|[CProgressCtrl::GetStep](#getstep)|Retrieves the step increment for the progress bar of the current progress bar control.|  
+|[CProgressCtrl::OffsetPos](#offsetpos)|Advances the current position of a progress bar control by a specified increment and redraws the bar to reflect the new position.|  
+|[CProgressCtrl::SetBarColor](#setbarcolor)|Sets the color of the progress indicator bar in the current progress bar control.|  
+|[CProgressCtrl::SetBkColor](#setbkcolor)|Sets the background color for the progress bar.|  
+|[CProgressCtrl::SetMarquee](#setmarquee)|Turns marquee mode on or off for the current progress bar control.|  
+|[CProgressCtrl::SetPos](#setpos)|Sets the current position for a progress bar control and redraws the bar to reflect the new position.|  
+|[CProgressCtrl::SetRange](#setrange)|Sets the minimum and maximum ranges for a progress bar control and redraws the bar to reflect the new ranges.|  
+|[CProgressCtrl::SetState](#setstate)|Sets the state of the current progress bar control.|  
+|[CProgressCtrl::SetStep](#setstep)|Specifies the step increment for a progress bar control.|  
+|[CProgressCtrl::StepIt](#stepit)|Advances the current position for a progress bar control by the step increment (see [SetStep](#setstep)) and redraws the bar to reflect the new position.|  
   
 ## Remarks  
  A progress bar control is a window that an application can use to indicate the progress of a lengthy operation. It consists of a rectangle that is gradually filled, from left to right, with the system highlight color as an operation progresses.  
@@ -94,7 +94,7 @@ class CProgressCtrl : public CWnd
 ## Requirements  
  **Header:** afxcmn.h  
   
-##  <a name="cprogressctrl__cprogressctrl"></a>  CProgressCtrl::CProgressCtrl  
+##  <a name="cprogressctrl"></a>  CProgressCtrl::CProgressCtrl  
  Constructs a `CProgressCtrl` object.  
   
 ```  
@@ -107,7 +107,7 @@ CProgressCtrl();
 ### Example  
  [!code-cpp[NVC_MFC_CProgressCtrl#1](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_1.cpp)]  
   
-##  <a name="cprogressctrl__create"></a>  CProgressCtrl::Create  
+##  <a name="create"></a>  CProgressCtrl::Create  
  Creates a progress bar control and attaches it to a `CProgressCtrl` object.  
   
 ```  
@@ -144,7 +144,7 @@ virtual BOOL Create(
 ### Example  
  [!code-cpp[NVC_MFC_CProgressCtrl#2](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_2.cpp)]  
   
-##  <a name="cprogressctrl__createex"></a>  CProgressCtrl::CreateEx  
+##  <a name="createex"></a>  CProgressCtrl::CreateEx  
  Creates a control (a child window) and associates it with the `CProgressCtrl` object.  
   
 ```  
@@ -176,9 +176,9 @@ virtual BOOL CreateEx(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- Use `CreateEx` instead of [Create](#cprogressctrl__create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
+ Use `CreateEx` instead of [Create](#create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
   
-##  <a name="cprogressctrl__getbarcolor"></a>  CProgressCtrl::GetBarColor  
+##  <a name="getbarcolor"></a>  CProgressCtrl::GetBarColor  
  Gets the color of the progress indicator bar for the current progress bar control.  
   
 ```  
@@ -193,7 +193,7 @@ COLORREF GetBarColor() const;
 ### Remarks  
  This method sends the [PBM_GETBARCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760826) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="cprogressctrl__getbkcolor"></a>  CProgressCtrl::GetBkColor  
+##  <a name="getbkcolor"></a>  CProgressCtrl::GetBkColor  
  Gets the background color of the current progress bar.  
   
 ```  
@@ -208,7 +208,7 @@ COLORREF GetBkColor() const;
 ### Remarks  
  This method sends the [PBM_GETBKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760828) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="cprogressctrl__getpos"></a>  CProgressCtrl::GetPos  
+##  <a name="getpos"></a>  CProgressCtrl::GetPos  
  Retrieves the current position of the progress bar.  
   
 ```  
@@ -219,12 +219,12 @@ int GetPos();
  The position of the progress bar control.  
   
 ### Remarks  
- The position of the progress bar control is not the physical location on the screen, but rather is between the upper and lower range indicated in [SetRange](#cprogressctrl__setrange).  
+ The position of the progress bar control is not the physical location on the screen, but rather is between the upper and lower range indicated in [SetRange](#setrange).  
   
 ### Example  
  [!code-cpp[NVC_MFC_CProgressCtrl#3](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_3.cpp)]  
   
-##  <a name="cprogressctrl__getrange"></a>  CProgressCtrl::GetRange  
+##  <a name="getrange"></a>  CProgressCtrl::GetRange  
  Gets the current lower and upper limits, or range, of the progress bar control.  
   
 ```  
@@ -246,7 +246,7 @@ void GetRange(
 ### Example  
  [!code-cpp[NVC_MFC_CProgressCtrl#4](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_4.cpp)]  
   
-##  <a name="cprogressctrl__getstate"></a>  CProgressCtrl::GetState  
+##  <a name="getstate"></a>  CProgressCtrl::GetState  
  Gets the state of the current progress bar control.  
   
 ```  
@@ -277,7 +277,7 @@ int GetState() const;
   
  [!code-cpp[NVC_MFC_CProgressCtrl_s1#5](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_6.cpp)]  
   
-##  <a name="cprogressctrl__getstep"></a>  CProgressCtrl::GetStep  
+##  <a name="getstep"></a>  CProgressCtrl::GetStep  
  Retrieves the step increment for the progress bar of the current progress bar control.  
   
 ```  
@@ -290,7 +290,7 @@ int GetStep() const;
  The step increment of the progress bar.  
   
 ### Remarks  
- The step increment is the amount by which a call to [CProgressCtrl::StepIt](#cprogressctrl__stepit) increases the current position of the progress bar.  
+ The step increment is the amount by which a call to [CProgressCtrl::StepIt](#stepit) increases the current position of the progress bar.  
   
  This method sends the [PBM_GETSTEP](http://msdn.microsoft.com/library/windows/desktop/bb760836) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
@@ -304,7 +304,7 @@ int GetStep() const;
   
  [!code-cpp[NVC_MFC_CProgressCtrl_s1#3](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_7.cpp)]  
   
-##  <a name="cprogressctrl__offsetpos"></a>  CProgressCtrl::OffsetPos  
+##  <a name="offsetpos"></a>  CProgressCtrl::OffsetPos  
  Advances the progress bar control's current position by the increment specified by `nPos` and redraws the bar to reflect the new position.  
   
 ```  
@@ -321,7 +321,7 @@ int OffsetPos(int nPos);
 ### Example  
  [!code-cpp[NVC_MFC_CProgressCtrl#5](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_8.cpp)]  
   
-##  <a name="cprogressctrl__setbarcolor"></a>  CProgressCtrl::SetBarColor  
+##  <a name="setbarcolor"></a>  CProgressCtrl::SetBarColor  
  Sets the color of the progress indicator bar in the current progress bar control.  
   
 ```  
@@ -352,7 +352,7 @@ COLORREF SetBarColor(COLORREF clrBar);
   
  [!code-cpp[NVC_MFC_CProgressCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_9.cpp)]  
   
-##  <a name="cprogressctrl__setbkcolor"></a>  CProgressCtrl::SetBkColor  
+##  <a name="setbkcolor"></a>  CProgressCtrl::SetBkColor  
  Sets the background color for the progress bar.  
   
 ```  
@@ -369,7 +369,7 @@ COLORREF SetBkColor(COLORREF clrNew);
 ### Example  
  [!code-cpp[NVC_MFC_CProgressCtrl#6](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_10.cpp)]  
   
-##  <a name="cprogressctrl__setmarquee"></a>  CProgressCtrl::SetMarquee  
+##  <a name="setmarquee"></a>  CProgressCtrl::SetMarquee  
  Turns marquee mode on or off for the current progress bar control.  
   
 ```  
@@ -403,7 +403,7 @@ BOOL SetMarquee(
   
  [!code-cpp[NVC_MFC_CProgressCtrl_s1#2](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_11.cpp)]  
   
-##  <a name="cprogressctrl__setpos"></a>  CProgressCtrl::SetPos  
+##  <a name="setpos"></a>  CProgressCtrl::SetPos  
  Sets the progress bar control's current position as specified by `nPos` and redraws the bar to reflect the new position.  
   
 ```  
@@ -418,12 +418,12 @@ int SetPos(int nPos);
  The previous position of the progress bar control.  
   
 ### Remarks  
- The position of the progress bar control is not the physical location on the screen, but rather is between the upper and lower range indicated in [SetRange](#cprogressctrl__setrange).  
+ The position of the progress bar control is not the physical location on the screen, but rather is between the upper and lower range indicated in [SetRange](#setrange).  
   
 ### Example  
  [!code-cpp[NVC_MFC_CProgressCtrl#7](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_12.cpp)]  
   
-##  <a name="cprogressctrl__setrange"></a>  CProgressCtrl::SetRange  
+##  <a name="setrange"></a>  CProgressCtrl::SetRange  
  Sets the upper and lower limits of the progress bar control's range and redraws the bar to reflect the new ranges.  
   
 ```  
@@ -450,7 +450,7 @@ void SetRange32(
 ### Example  
  [!code-cpp[NVC_MFC_CProgressCtrl#8](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_13.cpp)]  
   
-##  <a name="cprogressctrl__setstate"></a>  CProgressCtrl::SetState  
+##  <a name="setstate"></a>  CProgressCtrl::SetState  
  Sets the state of the current progress bar control.  
   
 ```  
@@ -479,7 +479,7 @@ int SetState(int iState);
   
  [!code-cpp[NVC_MFC_CProgressCtrl_s1#4](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_14.cpp)]  
   
-##  <a name="cprogressctrl__setstep"></a>  CProgressCtrl::SetStep  
+##  <a name="setstep"></a>  CProgressCtrl::SetStep  
  Specifies the step increment for a progress bar control.  
   
 ```  
@@ -501,7 +501,7 @@ int SetStep(int nStep);
 ### Example  
  [!code-cpp[NVC_MFC_CProgressCtrl#9](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_15.cpp)]  
   
-##  <a name="cprogressctrl__stepit"></a>  CProgressCtrl::StepIt  
+##  <a name="stepit"></a>  CProgressCtrl::StepIt  
  Advances the current position for a progress bar control by the step increment and redraws the bar to reflect the new position.  
   
 ```  
@@ -518,7 +518,7 @@ int StepIt();
  [!code-cpp[NVC_MFC_CProgressCtrl#10](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_16.cpp)]  
   
 ## See Also  
- [MFC Sample CMNCTRL2](../../top/visual-cpp-samples.md)   
+ [MFC Sample CMNCTRL2](../../visual-cpp-samples.md)   
  [CWnd Class](../../mfc/reference/cwnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 

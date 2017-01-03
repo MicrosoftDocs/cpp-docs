@@ -52,34 +52,34 @@ interface IAxWinAmbientDispatch : IDispatch
   
 |||  
 |-|-|  
-|[get_AllowContextMenu](#iaxwinambientdispatch__get_allowcontextmenu)|The **AllowContextMenu** property specifies whether the hosted control is allowed to display its own context menu.|  
-|[get_AllowShowUI](#iaxwinambientdispatch__get_allowshowui)|The **AllowShowUI** property specifies whether the hosted control is allowed to display its own user interface.|  
-|[get_AllowWindowlessActivation](#iaxwinambientdispatch__get_allowwindowlessactivation)|The **AllowWindowlessActivation** property specifies whether the container will allow windowless activation.|  
-|[get_BackColor](#iaxwinambientdispatch__get_backcolor)|The `BackColor` property specifies the ambient background color of the container.|  
-|[get_DisplayAsDefault](#iaxwinambientdispatch__get_displayasdefault)|**DisplayAsDefault** is an ambient property that allows a control to find out if it is the default control.|  
-|[get_DocHostDoubleClickFlags](#iaxwinambientdispatch__get_dochostdoubleclickflags)|The **DocHostDoubleClickFlags** property specifies the operation that should take place in response to a double-click.|  
-|[get_DocHostFlags](#iaxwinambientdispatch__get_dochostflags)|The **DocHostFlags** property specifies the user interface capabilities of the host object.|  
-|[get_Font](#iaxwinambientdispatch__get_font)|The **Font** property specifies the ambient font of the container.|  
-|[get_ForeColor](#iaxwinambientdispatch__get_forecolor)|The `ForeColor` property specifies the ambient foreground color of the container.|  
-|[get_LocaleID](#iaxwinambientdispatch__get_localeid)|The **LocaleID** property specifies the ambient locale ID of the container.|  
-|[get_MessageReflect](#iaxwinambientdispatch__get_messagereflect)|The **MessageReflect** ambient property specifies whether the container will reflect messages to the hosted control.|  
-|[get_OptionKeyPath](#iaxwinambientdispatch__get_optionkeypath)|The **OptionKeyPath** property specifies the registry key path to user settings.|  
-|[get_ShowGrabHandles](#iaxwinambientdispatch__get_showgrabhandles)|The **ShowGrabHandles** ambient property allows the control to find out if it should draw itself with grab handles.|  
-|[get_ShowHatching](#iaxwinambientdispatch__get_showhatching)|The **ShowHatching** ambient property allows the control to find out if it should draw itself hatched.|  
-|[get_UserMode](#iaxwinambientdispatch__get_usermode)|The **UserMode** property specifies the ambient user mode of the container.|  
-|[put_AllowContextMenu](#iaxwinambientdispatch__put_allowcontextmenu)|The **AllowContextMenu** property specifies whether the hosted control is allowed to display its own context menu.|  
-|[put_AllowShowUI](#iaxwinambientdispatch__put_allowshowui)|The **AllowShowUI** property specifies whether the hosted control is allowed to display its own user interface.|  
-|[put_AllowWindowlessActivation](#iaxwinambientdispatch__put_allowwindowlessactivation)|The **AllowWindowlessActivation** property specifies whether the container will allow windowless activation.|  
-|[put_BackColor](#iaxwinambientdispatch__put_backcolor)|The `BackColor` property specifies the ambient background color of the container.|  
-|[put_DisplayAsDefault](#iaxwinambientdispatch__put_displayasdefault)|**DisplayAsDefault** is an ambient property that allows a control to find out if it is the default control.|  
-|[put_DocHostDoubleClickFlags](#iaxwinambientdispatch__put_dochostdoubleclickflags)|The **DocHostDoubleClickFlags** property specifies the operation that should take place in response to a double-click.|  
-|[put_DocHostFlags](#iaxwinambientdispatch__put_dochostflags)|The **DocHostFlags** property specifies the user interface capabilities of the host object.|  
-|[put_Font](#iaxwinambientdispatch__put_font)|The **Font** property specifies the ambient font of the container.|  
-|[put_ForeColor](#iaxwinambientdispatch__put_forecolor)|The `ForeColor` property specifies the ambient foreground color of the container.|  
-|[put_LocaleID](#iaxwinambientdispatch__put_localeid)|The **LocaleID** property specifies the ambient locale ID of the container.|  
-|[put_MessageReflect](#iaxwinambientdispatch__put_messagereflect)|The **MessageReflect** ambient property specifies whether the container will reflect messages to the hosted control.|  
-|[put_OptionKeyPath](#iaxwinambientdispatch__put_optionkeypath)|The **OptionKeyPath** property specifies the registry key path to user settings.|  
-|[put_UserMode](#iaxwinambientdispatch__put_usermode)|The **UserMode** property specifies the ambient user mode of the container.|  
+|[get_AllowContextMenu](#get_allowcontextmenu)|The **AllowContextMenu** property specifies whether the hosted control is allowed to display its own context menu.|  
+|[get_AllowShowUI](#get_allowshowui)|The **AllowShowUI** property specifies whether the hosted control is allowed to display its own user interface.|  
+|[get_AllowWindowlessActivation](#get_allowwindowlessactivation)|The **AllowWindowlessActivation** property specifies whether the container will allow windowless activation.|  
+|[get_BackColor](#get_backcolor)|The `BackColor` property specifies the ambient background color of the container.|  
+|[get_DisplayAsDefault](#get_displayasdefault)|**DisplayAsDefault** is an ambient property that allows a control to find out if it is the default control.|  
+|[get_DocHostDoubleClickFlags](#get_dochostdoubleclickflags)|The **DocHostDoubleClickFlags** property specifies the operation that should take place in response to a double-click.|  
+|[get_DocHostFlags](#get_dochostflags)|The **DocHostFlags** property specifies the user interface capabilities of the host object.|  
+|[get_Font](#get_font)|The **Font** property specifies the ambient font of the container.|  
+|[get_ForeColor](#get_forecolor)|The `ForeColor` property specifies the ambient foreground color of the container.|  
+|[get_LocaleID](#get_localeid)|The **LocaleID** property specifies the ambient locale ID of the container.|  
+|[get_MessageReflect](#get_messagereflect)|The **MessageReflect** ambient property specifies whether the container will reflect messages to the hosted control.|  
+|[get_OptionKeyPath](#get_optionkeypath)|The **OptionKeyPath** property specifies the registry key path to user settings.|  
+|[get_ShowGrabHandles](#get_showgrabhandles)|The **ShowGrabHandles** ambient property allows the control to find out if it should draw itself with grab handles.|  
+|[get_ShowHatching](#get_showhatching)|The **ShowHatching** ambient property allows the control to find out if it should draw itself hatched.|  
+|[get_UserMode](#get_usermode)|The **UserMode** property specifies the ambient user mode of the container.|  
+|[put_AllowContextMenu](#put_allowcontextmenu)|The **AllowContextMenu** property specifies whether the hosted control is allowed to display its own context menu.|  
+|[put_AllowShowUI](#put_allowshowui)|The **AllowShowUI** property specifies whether the hosted control is allowed to display its own user interface.|  
+|[put_AllowWindowlessActivation](#put_allowwindowlessactivation)|The **AllowWindowlessActivation** property specifies whether the container will allow windowless activation.|  
+|[put_BackColor](#put_backcolor)|The `BackColor` property specifies the ambient background color of the container.|  
+|[put_DisplayAsDefault](#put_displayasdefault)|**DisplayAsDefault** is an ambient property that allows a control to find out if it is the default control.|  
+|[put_DocHostDoubleClickFlags](#put_dochostdoubleclickflags)|The **DocHostDoubleClickFlags** property specifies the operation that should take place in response to a double-click.|  
+|[put_DocHostFlags](#put_dochostflags)|The **DocHostFlags** property specifies the user interface capabilities of the host object.|  
+|[put_Font](#put_font)|The **Font** property specifies the ambient font of the container.|  
+|[put_ForeColor](#put_forecolor)|The `ForeColor` property specifies the ambient foreground color of the container.|  
+|[put_LocaleID](#put_localeid)|The **LocaleID** property specifies the ambient locale ID of the container.|  
+|[put_MessageReflect](#put_messagereflect)|The **MessageReflect** ambient property specifies whether the container will reflect messages to the hosted control.|  
+|[put_OptionKeyPath](#put_optionkeypath)|The **OptionKeyPath** property specifies the registry key path to user settings.|  
+|[put_UserMode](#put_usermode)|The **UserMode** property specifies the ambient user mode of the container.|  
   
 ## Remarks  
  This interface is exposed by ATL's ActiveX control hosting objects. Call the methods on this interface to set the ambient properties available to the hosted control or to specify other aspects of the container's behavior. To supplement the properties provided by `IAxWinAmbientDispatch`, use [IAxWinAmbientDispatchEx](../../atl/reference/iaxwinambientdispatchex-interface.md).  
@@ -99,7 +99,7 @@ interface IAxWinAmbientDispatch : IDispatch
 |Type Library|ATL.dll|  
 |C++|atliface.h (also included in ATLBase.h)|  
   
-##  <a name="iaxwinambientdispatch__get_allowcontextmenu"></a>  IAxWinAmbientDispatch::get_AllowContextMenu  
+##  <a name="get_allowcontextmenu"></a>  IAxWinAmbientDispatch::get_AllowContextMenu  
  The **AllowContextMenu** property specifies whether the hosted control is allowed to display its own context menu.  
   
 ```
@@ -116,7 +116,7 @@ STDMETHOD(get_AllowContextMenu)(VARIANT_BOOL* pbAllowContextMenu);
 ### Remarks  
  The ATL host object implementation uses `VARIANT_TRUE` as the default value of this property.  
   
-##  <a name="iaxwinambientdispatch__get_allowshowui"></a>  IAxWinAmbientDispatch::get_AllowShowUI  
+##  <a name="get_allowshowui"></a>  IAxWinAmbientDispatch::get_AllowShowUI  
  The **AllowShowUI** property specifies whether the hosted control is allowed to display its own user interface.  
   
 ```
@@ -133,7 +133,7 @@ STDMETHOD(get_AllowShowUI)(VARIANT_BOOL* pbAllowShowUI);
 ### Remarks  
  The ATL host object implementation uses **VARIANT_FALSE** as the default value of this property.  
   
-##  <a name="iaxwinambientdispatch__get_allowwindowlessactivation"></a>  IAxWinAmbientDispatch::get_AllowWindowlessActivation  
+##  <a name="get_allowwindowlessactivation"></a>  IAxWinAmbientDispatch::get_AllowWindowlessActivation  
  The **AllowWindowlessActivation** property specifies whether the container will allow windowless activation.  
   
 ```
@@ -150,7 +150,7 @@ STDMETHOD(get_AllowWindowlessActivation)(VARIANT_BOOL* pbAllowWindowless);
 ### Remarks  
  The ATL host object implementation uses `VARIANT_TRUE` as the default value of this property.  
   
-##  <a name="iaxwinambientdispatch__get_backcolor"></a>  IAxWinAmbientDispatch::get_BackColor  
+##  <a name="get_backcolor"></a>  IAxWinAmbientDispatch::get_BackColor  
  The `BackColor` property specifies the ambient background color of the container.  
   
 ```
@@ -167,7 +167,7 @@ STDMETHOD(get_BackColor)(OLE_COLOR* pclrBackground);
 ### Remarks  
  The ATL host object implementation uses **COLOR_BTNFACE** or **COLOR_WINDOW** as the default value of this property (depending on whether the parent of the host window is a dialog or not).  
   
-##  <a name="iaxwinambientdispatch__get_displayasdefault"></a>  IAxWinAmbientDispatch::get_DisplayAsDefault  
+##  <a name="get_displayasdefault"></a>  IAxWinAmbientDispatch::get_DisplayAsDefault  
  **DisplayAsDefault** is an ambient property that allows a control to find out if it is the default control.  
   
 ```
@@ -184,7 +184,7 @@ STDMETHOD(get_DisplayAsDefault)(VARIANT_BOOL* pbDisplayAsDefault);
 ### Remarks  
  The ATL host object implementation uses **VARIANT_FALSE** as the default value of this property.  
   
-##  <a name="iaxwinambientdispatch__get_dochostdoubleclickflags"></a>  IAxWinAmbientDispatch::get_DocHostDoubleClickFlags  
+##  <a name="get_dochostdoubleclickflags"></a>  IAxWinAmbientDispatch::get_DocHostDoubleClickFlags  
  The **DocHostDoubleClickFlags** property specifies the operation that should take place in response to a double-click.  
   
 ```
@@ -201,7 +201,7 @@ STDMETHOD(get_DocHostDoubleClickFlags)(DWORD* pdwDocHostDoubleClickFlags);
 ### Remarks  
  The ATL host object implementation uses **DOCHOSTUIDBLCLK_DEFAULT** as the default value of this property.  
   
-##  <a name="iaxwinambientdispatch__get_dochostflags"></a>  IAxWinAmbientDispatch::get_DocHostFlags  
+##  <a name="get_dochostflags"></a>  IAxWinAmbientDispatch::get_DocHostFlags  
  The **DocHostFlags** property specifies the user interface capabilities of the host object.  
   
 ```
@@ -218,7 +218,7 @@ STDMETHOD(get_DocHostFlags)(DWORD* pdwDocHostFlags);
 ### Remarks  
  The ATL host object implementation uses **DOCHOSTUIFLAG_NO3DBORDER** as the default value of this property.  
   
-##  <a name="iaxwinambientdispatch__get_font"></a>  IAxWinAmbientDispatch::get_Font  
+##  <a name="get_font"></a>  IAxWinAmbientDispatch::get_Font  
  The **Font** property specifies the ambient font of the container.  
   
 ```
@@ -235,7 +235,7 @@ STDMETHOD(get_Font)(IFontDisp** pFont);
 ### Remarks  
  The ATL host object implementation uses the default GUI font or the system font as the default value of this property.  
   
-##  <a name="iaxwinambientdispatch__get_forecolor"></a>  IAxWinAmbientDispatch::get_ForeColor  
+##  <a name="get_forecolor"></a>  IAxWinAmbientDispatch::get_ForeColor  
  The `ForeColor` property specifies the ambient foreground color of the container.  
   
 ```
@@ -252,7 +252,7 @@ STDMETHOD(get_ForeColor)(OLE_COLOR* pclrForeground);
 ### Remarks  
  The ATL host object implementation uses the system window text color as the default value of this property.  
   
-##  <a name="iaxwinambientdispatch__get_localeid"></a>  IAxWinAmbientDispatch::get_LocaleID  
+##  <a name="get_localeid"></a>  IAxWinAmbientDispatch::get_LocaleID  
  The **LocaleID** property specifies the ambient locale ID of the container.  
   
 ```
@@ -271,7 +271,7 @@ STDMETHOD(get_LocaleID)(LCID* plcidLocaleID);
   
  With this method you can discover the Ambient LocalID, that is, the LocaleID of the program your control is being used in. Once you know the LocaleID, you can call code to load locale-specific captions, error message text, and so forth from a resource file or satellite DLL.  
   
-##  <a name="iaxwinambientdispatch__get_messagereflect"></a>  IAxWinAmbientDispatch::get_MessageReflect  
+##  <a name="get_messagereflect"></a>  IAxWinAmbientDispatch::get_MessageReflect  
  The **MessageReflect** ambient property specifies whether the container will reflect messages to the hosted control.  
   
 ```
@@ -288,7 +288,7 @@ STDMETHOD(get_MessageReflect)(VARIANT_BOOL* pbMessageReflect);
 ### Remarks  
  The ATL host object implementation uses `VARIANT_TRUE` as the default value of this property.  
   
-##  <a name="iaxwinambientdispatch__get_optionkeypath"></a>  IAxWinAmbientDispatch::get_OptionKeyPath  
+##  <a name="get_optionkeypath"></a>  IAxWinAmbientDispatch::get_OptionKeyPath  
  The **OptionKeyPath** property specifies the registry key path to user settings.  
   
 ```
@@ -302,7 +302,7 @@ STDMETHOD(get_OptionKeyPath)(BSTR* pbstrOptionKeyPath);
 ### Return Value  
  A standard `HRESULT` value.  
   
-##  <a name="iaxwinambientdispatch__get_showgrabhandles"></a>  IAxWinAmbientDispatch::get_ShowGrabHandles  
+##  <a name="get_showgrabhandles"></a>  IAxWinAmbientDispatch::get_ShowGrabHandles  
  The **ShowGrabHandles** ambient property allows the control to find out if it should draw itself with grab handles.  
   
 ```
@@ -319,7 +319,7 @@ STDMETHOD(get_ShowGrabHandles)(VARIANT_BOOL* pbShowGrabHandles);
 ### Remarks  
  The ATL host object implementation always returns **VARIANT_FALSE** as the value of this property.  
   
-##  <a name="iaxwinambientdispatch__get_showhatching"></a>  IAxWinAmbientDispatch::get_ShowHatching  
+##  <a name="get_showhatching"></a>  IAxWinAmbientDispatch::get_ShowHatching  
  The **ShowHatching** ambient property allows the control to find out if it should draw itself hatched.  
   
 ```
@@ -336,7 +336,7 @@ STDMETHOD(get_ShowHatching)(VARIANT_BOOL* pbShowHatching);
 ### Remarks  
  The ATL host object implementation always returns **VARIANT_FALSE** as the value of this property.  
   
-##  <a name="iaxwinambientdispatch__get_usermode"></a>  IAxWinAmbientDispatch::get_UserMode  
+##  <a name="get_usermode"></a>  IAxWinAmbientDispatch::get_UserMode  
  The **UserMode** property specifies the ambient user mode of the container.  
   
 ```
@@ -353,7 +353,7 @@ STDMETHOD(get_UserMode)(VARIANT_BOOL* pbUserMode);
 ### Remarks  
  The ATL host object implementation uses `VARIANT_TRUE` as the default value of this property.  
   
-##  <a name="iaxwinambientdispatch__put_allowcontextmenu"></a>  IAxWinAmbientDispatch::put_AllowContextMenu  
+##  <a name="put_allowcontextmenu"></a>  IAxWinAmbientDispatch::put_AllowContextMenu  
  The **AllowContextMenu** property specifies whether the hosted control is allowed to display its own context menu.  
   
 ```
@@ -370,7 +370,7 @@ STDMETHOD(put_AllowContextMenu)(VARIANT_BOOL bAllowContextMenu);
 ### Remarks  
  The ATL host object implementation uses `VARIANT_TRUE` as the default value of this property.  
   
-##  <a name="iaxwinambientdispatch__put_allowshowui"></a>  IAxWinAmbientDispatch::put_AllowShowUI  
+##  <a name="put_allowshowui"></a>  IAxWinAmbientDispatch::put_AllowShowUI  
  The **AllowShowUI** property specifies whether the hosted control is allowed to display its own user interface.  
   
 ```
@@ -387,7 +387,7 @@ STDMETHOD(put_AllowShowUI)(VARIANT_BOOL bAllowShowUI);
 ### Remarks  
  The ATL host object implementation uses **VARIANT_FALSE** as the default value of this property.  
   
-##  <a name="iaxwinambientdispatch__put_allowwindowlessactivation"></a>  IAxWinAmbientDispatch::put_AllowWindowlessActivation  
+##  <a name="put_allowwindowlessactivation"></a>  IAxWinAmbientDispatch::put_AllowWindowlessActivation  
  The **AllowWindowlessActivation** property specifies whether the container will allow windowless activation.  
   
 ```
@@ -404,7 +404,7 @@ STDMETHOD(put_AllowWindowlessActivation)(VARIANT_BOOL bAllowWindowless);
 ### Remarks  
  The ATL host object implementation uses `VARIANT_TRUE` as the default value of this property.  
   
-##  <a name="iaxwinambientdispatch__put_backcolor"></a>  IAxWinAmbientDispatch::put_BackColor  
+##  <a name="put_backcolor"></a>  IAxWinAmbientDispatch::put_BackColor  
  The `BackColor` property specifies the ambient background color of the container.  
   
 ```
@@ -421,7 +421,7 @@ STDMETHOD(put_BackColor)(OLE_COLOR clrBackground);
 ### Remarks  
  The ATL host object implementation uses **COLOR_BTNFACE** or **COLOR_WINDOW** as the default value of this property (depending on whether the parent of the host window is a dialog or not).  
   
-##  <a name="iaxwinambientdispatch__put_displayasdefault"></a>  IAxWinAmbientDispatch::put_DisplayAsDefault  
+##  <a name="put_displayasdefault"></a>  IAxWinAmbientDispatch::put_DisplayAsDefault  
  **DisplayAsDefault** is an ambient property that allows a control to find out if it is the default control.  
   
 ```
@@ -438,7 +438,7 @@ STDMETHOD(put_DisplayAsDefault)(VARIANT_BOOL bDisplayAsDefault);
 ### Remarks  
  The ATL host object implementation uses **VARIANT_FALSE** as the default value of this property.  
   
-##  <a name="iaxwinambientdispatch__put_dochostdoubleclickflags"></a>  IAxWinAmbientDispatch::put_DocHostDoubleClickFlags  
+##  <a name="put_dochostdoubleclickflags"></a>  IAxWinAmbientDispatch::put_DocHostDoubleClickFlags  
  The **DocHostDoubleClickFlags** property specifies the operation that should take place in response to a double-click.  
   
 ```
@@ -455,7 +455,7 @@ STDMETHOD(put_DocHostDoubleClickFlags)(DWORD dwDocHostDoubleClickFlags);
 ### Remarks  
  The ATL host object implementation uses **DOCHOSTUIDBLCLK_DEFAULT** as the default value of this property.  
   
-##  <a name="iaxwinambientdispatch__put_dochostflags"></a>  IAxWinAmbientDispatch::put_DocHostFlags  
+##  <a name="put_dochostflags"></a>  IAxWinAmbientDispatch::put_DocHostFlags  
  The **DocHostFlags** property specifies the user interface capabilities of the host object.  
   
 ```
@@ -472,7 +472,7 @@ STDMETHOD(put_DocHostFlags)(DWORD dwDocHostFlags);
 ### Remarks  
  The ATL host object implementation uses **DOCHOSTUIFLAG_NO3DBORDER** as the default value of this property.  
   
-##  <a name="iaxwinambientdispatch__put_font"></a>  IAxWinAmbientDispatch::put_Font  
+##  <a name="put_font"></a>  IAxWinAmbientDispatch::put_Font  
  The **Font** property specifies the ambient font of the container.  
   
 ```
@@ -489,7 +489,7 @@ STDMETHOD(put_Font)(IFontDisp* pFont);
 ### Remarks  
  The ATL host object implementation uses the default GUI font or the system font as the default value of this property.  
   
-##  <a name="iaxwinambientdispatch__put_forecolor"></a>  IAxWinAmbientDispatch::put_ForeColor  
+##  <a name="put_forecolor"></a>  IAxWinAmbientDispatch::put_ForeColor  
  The `ForeColor` property specifies the ambient foreground color of the container.  
   
 ```
@@ -506,7 +506,7 @@ STDMETHOD(put_ForeColor)(OLE_COLOR clrForeground);
 ### Remarks  
  The ATL host object implementation uses the system window text color as the default value of this property.  
   
-##  <a name="iaxwinambientdispatch__put_localeid"></a>  IAxWinAmbientDispatch::put_LocaleID  
+##  <a name="put_localeid"></a>  IAxWinAmbientDispatch::put_LocaleID  
  The **LocaleID** property specifies the ambient locale ID of the container.  
   
 ```
@@ -523,7 +523,7 @@ STDMETHOD(put_LocaleID)(LCID lcidLocaleID);
 ### Remarks  
  The ATL host object implementation uses the user's default locale as the default value of this property.  
   
-##  <a name="iaxwinambientdispatch__put_messagereflect"></a>  IAxWinAmbientDispatch::put_MessageReflect  
+##  <a name="put_messagereflect"></a>  IAxWinAmbientDispatch::put_MessageReflect  
  The **MessageReflect** ambient property specifies whether the container will reflect messages to the hosted control.  
   
 ```
@@ -540,7 +540,7 @@ STDMETHOD(put_MessageReflect)(VARIANT_BOOL bMessageReflect);
 ### Remarks  
  The ATL host object implementation uses `VARIANT_TRUE` as the default value of this property.  
   
-##  <a name="iaxwinambientdispatch__put_optionkeypath"></a>  IAxWinAmbientDispatch::put_OptionKeyPath  
+##  <a name="put_optionkeypath"></a>  IAxWinAmbientDispatch::put_OptionKeyPath  
  The **OptionKeyPath** property specifies the registry key path to user settings.  
   
 ```
@@ -554,7 +554,7 @@ STDMETHOD(put_OptionKeyPath)(BSTR bstrOptionKeyPath);
 ### Return Value  
  A standard `HRESULT` value.  
   
-##  <a name="iaxwinambientdispatch__put_usermode"></a>  IAxWinAmbientDispatch::put_UserMode  
+##  <a name="put_usermode"></a>  IAxWinAmbientDispatch::put_UserMode  
  The **UserMode** property specifies the ambient user mode of the container.  
   
 ```
@@ -574,7 +574,7 @@ STDMETHOD(put_UserMode)(VARIANT_BOOL bUserMode);
 ## See Also  
  [IAxWinAmbientDispatchEx Interface](../../atl/reference/iaxwinambientdispatchex-interface.md)   
  [IAxWinHostWindow Interface](../../atl/reference/iaxwinhostwindow-interface.md)   
- [CAxWindow::QueryHost](../../atl/reference/caxwindow-class.md#caxwindow__queryhost)   
+ [CAxWindow::QueryHost](../../atl/reference/caxwindow-class.md#queryhost)   
  [AtlAxGetHost](http://msdn.microsoft.com/library/ad1f4f16-608d-4e96-8d30-04d4ca906a7b)
 
 

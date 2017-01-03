@@ -1,5 +1,5 @@
 ---
-title: "not_equal_to (STL-CLR) | Microsoft Docs"
+title: "not_equal_to (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

@@ -52,19 +52,19 @@ class CMDIChildWnd : public CFrameWnd
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMDIChildWnd::CMDIChildWnd](#cmdichildwnd__cmdichildwnd)|Constructs a `CMDIChildWnd` object.|  
+|[CMDIChildWnd::CMDIChildWnd](#cmdichildwnd)|Constructs a `CMDIChildWnd` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMDIChildWnd::Create](#cmdichildwnd__create)|Creates the Windows MDI child window associated with the `CMDIChildWnd` object.|  
-|[CMDIChildWnd::GetMDIFrame](#cmdichildwnd__getmdiframe)|Returns the parent MDI frame of the MDI client window.|  
-|[CMDIChildWnd::MDIActivate](#cmdichildwnd__mdiactivate)|Activates this MDI child window.|  
-|[CMDIChildWnd::MDIDestroy](#cmdichildwnd__mdidestroy)|Destroys this MDI child window.|  
-|[CMDIChildWnd::MDIMaximize](#cmdichildwnd__mdimaximize)|Maximizes this MDI child window.|  
-|[CMDIChildWnd::MDIRestore](#cmdichildwnd__mdirestore)|Restores this MDI child window from maximized or minimized size.|  
-|[CMDIChildWnd::SetHandles](#cmdichildwnd__sethandles)|Sets the handles for menu and accelerator resources.|  
+|[CMDIChildWnd::Create](#create)|Creates the Windows MDI child window associated with the `CMDIChildWnd` object.|  
+|[CMDIChildWnd::GetMDIFrame](#getmdiframe)|Returns the parent MDI frame of the MDI client window.|  
+|[CMDIChildWnd::MDIActivate](#mdiactivate)|Activates this MDI child window.|  
+|[CMDIChildWnd::MDIDestroy](#mdidestroy)|Destroys this MDI child window.|  
+|[CMDIChildWnd::MDIMaximize](#mdimaximize)|Maximizes this MDI child window.|  
+|[CMDIChildWnd::MDIRestore](#mdirestore)|Restores this MDI child window from maximized or minimized size.|  
+|[CMDIChildWnd::SetHandles](#sethandles)|Sets the handles for menu and accelerator resources.|  
   
 ## Remarks  
  An MDI child window looks much like a typical frame window, except that the MDI child window appears inside an MDI frame window rather than on the desktop. An MDI child window does not have a menu bar of its own, but instead shares the menu of the MDI frame window. The framework automatically changes the MDI frame menu to represent the currently active MDI child window.  
@@ -113,7 +113,7 @@ class CMDIChildWnd : public CFrameWnd
 ## Requirements  
  **Header:** afxwin.h  
   
-##  <a name="cmdichildwnd__cmdichildwnd"></a>  CMDIChildWnd::CMDIChildWnd  
+##  <a name="cmdichildwnd"></a>  CMDIChildWnd::CMDIChildWnd  
  Call to construct a `CMDIChildWnd` object.  
   
 ```  
@@ -124,9 +124,9 @@ CMDIChildWnd();
  Call **Create** to create the visible window.  
   
 ### Example  
-  See the example for [CMDIChildWnd::Create](#cmdichildwnd__create).  
+  See the example for [CMDIChildWnd::Create](#create).  
   
-##  <a name="cmdichildwnd__create"></a>  CMDIChildWnd::Create  
+##  <a name="create"></a>  CMDIChildWnd::Create  
  Call this member function to create a Windows MDI child window and attach it to the `CMDIChildWnd` object.  
   
 ```  
@@ -178,7 +178,7 @@ virtual BOOL Create(
   
  [!code-cpp[NVC_MFCWindowing#9](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_3.cpp)]  
   
-##  <a name="cmdichildwnd__getmdiframe"></a>  CMDIChildWnd::GetMDIFrame  
+##  <a name="getmdiframe"></a>  CMDIChildWnd::GetMDIFrame  
  Call this function to return the MDI parent frame.  
   
 ```  
@@ -189,12 +189,12 @@ CMDIFrameWnd* GetMDIFrame();
  A pointer to the MDI parent frame window.  
   
 ### Remarks  
- The frame returned is two parents removed from the `CMDIChildWnd` and is the parent of the window of type **MDICLIENT** that manages the `CMDIChildWnd` object. Call the [GetParent](../../mfc/reference/cwnd-class.md#cwnd__getparent) member function to return the `CMDIChildWnd` object's immediate **MDICLIENT** parent as a temporary `CWnd` pointer.  
+ The frame returned is two parents removed from the `CMDIChildWnd` and is the parent of the window of type **MDICLIENT** that manages the `CMDIChildWnd` object. Call the [GetParent](../../mfc/reference/cwnd-class.md#getparent) member function to return the `CMDIChildWnd` object's immediate **MDICLIENT** parent as a temporary `CWnd` pointer.  
   
 ### Example  
-  See the example for [CMDIFrameWnd::MDISetMenu](../../mfc/reference/cmdiframewnd-class.md#cmdiframewnd__mdisetmenu).  
+  See the example for [CMDIFrameWnd::MDISetMenu](../../mfc/reference/cmdiframewnd-class.md#mdisetmenu).  
   
-##  <a name="cmdichildwnd__mdiactivate"></a>  CMDIChildWnd::MDIActivate  
+##  <a name="mdiactivate"></a>  CMDIChildWnd::MDIActivate  
  Call this member function to activate an MDI child window independently of the MDI frame window.  
   
 ```  
@@ -205,9 +205,9 @@ void MDIActivate();
  When the frame becomes active, the child window that was last activated will be activated as well.  
   
 ### Example  
-  See the example for [CMDIFrameWnd::GetWindowMenuPopup](../../mfc/reference/cmdiframewnd-class.md#cmdiframewnd__getwindowmenupopup).  
+  See the example for [CMDIFrameWnd::GetWindowMenuPopup](../../mfc/reference/cmdiframewnd-class.md#getwindowmenupopup).  
   
-##  <a name="cmdichildwnd__mdidestroy"></a>  CMDIChildWnd::MDIDestroy  
+##  <a name="mdidestroy"></a>  CMDIChildWnd::MDIDestroy  
  Call this member function to destroy an MDI child window.  
   
 ```  
@@ -220,7 +220,7 @@ void MDIDestroy();
 ### Example  
  [!code-cpp[NVC_MFCWindowing#10](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_4.cpp)]  
   
-##  <a name="cmdichildwnd__mdimaximize"></a>  CMDIChildWnd::MDIMaximize  
+##  <a name="mdimaximize"></a>  CMDIChildWnd::MDIMaximize  
  Call this member function to maximize an MDI child window.  
   
 ```  
@@ -233,7 +233,7 @@ void MDIMaximize();
 ### Example  
  [!code-cpp[NVC_MFCWindowing#11](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_5.cpp)]  
   
-##  <a name="cmdichildwnd__mdirestore"></a>  CMDIChildWnd::MDIRestore  
+##  <a name="mdirestore"></a>  CMDIChildWnd::MDIRestore  
  Call this member function to restore an MDI child window from maximized or minimized size.  
   
 ```  
@@ -243,7 +243,7 @@ void MDIRestore();
 ### Example  
  [!code-cpp[NVC_MFCWindowing#12](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_6.cpp)]  
   
-##  <a name="cmdichildwnd__sethandles"></a>  CMDIChildWnd::SetHandles  
+##  <a name="sethandles"></a>  CMDIChildWnd::SetHandles  
  Sets the handles for menu and accelerator resources.  
   
 ```  
@@ -263,9 +263,9 @@ void SetHandles(
  Call this function to set the menu and accelerator resources used by the MDI child window object.  
   
 ## See Also  
- [MFC Sample MDI](../../top/visual-cpp-samples.md)   
- [MFC Sample MDIDOCVW](../../top/visual-cpp-samples.md)   
- [MFC Sample SNAPVW](../../top/visual-cpp-samples.md)   
+ [MFC Sample MDI](../../visual-cpp-samples.md)   
+ [MFC Sample MDIDOCVW](../../visual-cpp-samples.md)   
+ [MFC Sample SNAPVW](../../visual-cpp-samples.md)   
  [CFrameWnd Class](../../mfc/reference/cframewnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CWnd Class](../../mfc/reference/cwnd-class.md)   

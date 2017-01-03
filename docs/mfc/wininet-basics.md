@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # WinInet Basics
-You can use WinInet to add FTP support to download and upload files from within your application. You can override [OnStatusCallback](../mfc/reference/cinternetsession-class.md#cinternetsession__onstatuscallback) and use the `dwContext` parameter to provide progress information to users as you search for and download files.  
+You can use WinInet to add FTP support to download and upload files from within your application. You can override [OnStatusCallback](../mfc/reference/cinternetsession-class.md#onstatuscallback) and use the `dwContext` parameter to provide progress information to users as you search for and download files.  
   
  This article contains the following topics:  
   
@@ -66,7 +66,7 @@ You can use WinInet to add FTP support to download and upload files from within 
  [!code-cpp[NVC_MFCWinInet#4](../mfc/codesnippet/cpp/wininet-basics_4.cpp)]  
   
 ## Use OnStatusCallback  
- When using the WinInet classes, you can use the [OnStatusCallback](../mfc/reference/cinternetsession-class.md#cinternetsession__onstatuscallback) member of your application's [CInternetSession](../mfc/reference/cinternetsession-class.md) object to retrieve status information. If you derive your own `CInternetSession` object, override `OnStatusCallback`, and enable status callbacks, MFC will call your `OnStatusCallback` function with progress information about all the activity in that Internet session.  
+ When using the WinInet classes, you can use the [OnStatusCallback](../mfc/reference/cinternetsession-class.md#onstatuscallback) member of your application's [CInternetSession](../mfc/reference/cinternetsession-class.md) object to retrieve status information. If you derive your own `CInternetSession` object, override `OnStatusCallback`, and enable status callbacks, MFC will call your `OnStatusCallback` function with progress information about all the activity in that Internet session.  
   
  Because a single session might support several connections (which, over their lifetime, might perform many different distinct operations), `OnStatusCallback` needs a mechanism to identify each status change with a particular connection or transaction. That mechanism is provided by the context ID parameter given to many of the member functions in the WinInet support classes. This parameter is always of type `DWORD` and is always named `dwContext`.  
   

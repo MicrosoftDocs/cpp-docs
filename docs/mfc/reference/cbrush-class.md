@@ -50,26 +50,26 @@ class CBrush : public CGdiObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CBrush::CBrush](#cbrush__cbrush)|Constructs a `CBrush` object.|  
+|[CBrush::CBrush](#cbrush)|Constructs a `CBrush` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CBrush::CreateBrushIndirect](#cbrush__createbrushindirect)|Initializes a brush with the style, color, and pattern specified in a [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) structure.|  
-|[CBrush::CreateDIBPatternBrush](#cbrush__createdibpatternbrush)|Initializes a brush with a pattern specified by a device-independent bitmap (DIB).|  
-|[CBrush::CreateHatchBrush](#cbrush__createhatchbrush)|Initializes a brush with the specified hatched pattern and color.|  
-|[CBrush::CreatePatternBrush](#cbrush__createpatternbrush)|Initializes a brush with a pattern specified by a bitmap.|  
-|[CBrush::CreateSolidBrush](#cbrush__createsolidbrush)|Initializes a brush with the specified solid color.|  
-|[CBrush::CreateSysColorBrush](#cbrush__createsyscolorbrush)|Creates a brush that is the default system color.|  
-|[CBrush::FromHandle](#cbrush__fromhandle)|Returns a pointer to a `CBrush` object when given a handle to a Windows `HBRUSH` object.|  
-|[CBrush::GetLogBrush](#cbrush__getlogbrush)|Gets a [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) structure.|  
+|[CBrush::CreateBrushIndirect](#createbrushindirect)|Initializes a brush with the style, color, and pattern specified in a [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) structure.|  
+|[CBrush::CreateDIBPatternBrush](#createdibpatternbrush)|Initializes a brush with a pattern specified by a device-independent bitmap (DIB).|  
+|[CBrush::CreateHatchBrush](#createhatchbrush)|Initializes a brush with the specified hatched pattern and color.|  
+|[CBrush::CreatePatternBrush](#createpatternbrush)|Initializes a brush with a pattern specified by a bitmap.|  
+|[CBrush::CreateSolidBrush](#createsolidbrush)|Initializes a brush with the specified solid color.|  
+|[CBrush::CreateSysColorBrush](#createsyscolorbrush)|Creates a brush that is the default system color.|  
+|[CBrush::FromHandle](#fromhandle)|Returns a pointer to a `CBrush` object when given a handle to a Windows `HBRUSH` object.|  
+|[CBrush::GetLogBrush](#getlogbrush)|Gets a [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) structure.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CBrush::operator HBRUSH](#cbrush__operator_hbrush)|Returns the Windows handle attached to the `CBrush` object.|  
+|[CBrush::operator HBRUSH](#operator_hbrush)|Returns the Windows handle attached to the `CBrush` object.|  
   
 ## Remarks  
  To use a `CBrush` object, construct a `CBrush` object and pass it to any `CDC` member function that requires a brush.  
@@ -88,7 +88,7 @@ class CBrush : public CGdiObject
 ## Requirements  
  **Header:** afxwin.h  
   
-##  <a name="cbrush__cbrush"></a>  CBrush::CBrush  
+##  <a name="cbrush"></a>  CBrush::CBrush  
  Constructs a `CBrush` object.  
   
 ```  
@@ -133,18 +133,18 @@ explicit CBrush(
 ### Remarks  
  `CBrush` has four overloaded constructors.The constructor with no arguments constructs an uninitialized `CBrush` object that must be initialized before it can be used.  
   
- If you use the constructor with no arguments, you must initialize the resulting `CBrush` object with [CreateSolidBrush](#cbrush__createsolidbrush), [CreateHatchBrush](#cbrush__createhatchbrush), [CreateBrushIndirect](#cbrush__createbrushindirect), [CreatePatternBrush](#cbrush__createpatternbrush), or [CreateDIBPatternBrush](#cbrush__createdibpatternbrush). If you use one of the constructors that takes arguments, then no further initialization is necessary. The constructors with arguments can throw an exception if errors are encountered, while the constructor with no arguments will always succeed.  
+ If you use the constructor with no arguments, you must initialize the resulting `CBrush` object with [CreateSolidBrush](#createsolidbrush), [CreateHatchBrush](#createhatchbrush), [CreateBrushIndirect](#createbrushindirect), [CreatePatternBrush](#createpatternbrush), or [CreateDIBPatternBrush](#createdibpatternbrush). If you use one of the constructors that takes arguments, then no further initialization is necessary. The constructors with arguments can throw an exception if errors are encountered, while the constructor with no arguments will always succeed.  
   
  The constructor with a single [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter constructs a solid brush with the specified color. The color specifies an RGB value and can be constructed with the `RGB` macro in WINDOWS.H.  
   
  The constructor with two parameters constructs a hatch brush. The `nIndex` parameter specifies the index of a hatched pattern. The `crColor` parameter specifies the color.  
   
- The constructor with a `CBitmap` parameter constructs a patterned brush. The parameter identifies a bitmap. The bitmap is assumed to have been created by using [CBitmap::CreateBitmap](../../mfc/reference/cbitmap-class.md#cbitmap__createbitmap), [CBitmap::CreateBitmapIndirect](../../mfc/reference/cbitmap-class.md#cbitmap__createbitmapindirect), [CBitmap::LoadBitmap](../../mfc/reference/cbitmap-class.md#cbitmap__loadbitmap), or [CBitmap::CreateCompatibleBitmap](../../mfc/reference/cbitmap-class.md#cbitmap__createcompatiblebitmap). The minimum size for a bitmap to be used in a fill pattern is 8 pixels by 8 pixels.  
+ The constructor with a `CBitmap` parameter constructs a patterned brush. The parameter identifies a bitmap. The bitmap is assumed to have been created by using [CBitmap::CreateBitmap](../../mfc/reference/cbitmap-class.md#createbitmap), [CBitmap::CreateBitmapIndirect](../../mfc/reference/cbitmap-class.md#createbitmapindirect), [CBitmap::LoadBitmap](../../mfc/reference/cbitmap-class.md#loadbitmap), or [CBitmap::CreateCompatibleBitmap](../../mfc/reference/cbitmap-class.md#createcompatiblebitmap). The minimum size for a bitmap to be used in a fill pattern is 8 pixels by 8 pixels.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#21](../../mfc/codesnippet/cpp/cbrush-class_1.cpp)]  
   
-##  <a name="cbrush__createbrushindirect"></a>  CBrush::CreateBrushIndirect  
+##  <a name="createbrushindirect"></a>  CBrush::CreateBrushIndirect  
  Initializes a brush with a style, color, and pattern specified in a [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) structure.  
   
 ```  
@@ -166,7 +166,7 @@ BOOL CreateBrushIndirect(const LOGBRUSH* lpLogBrush);
 ### Example  
  [!code-cpp[NVC_MFCDocView#22](../../mfc/codesnippet/cpp/cbrush-class_2.cpp)]  
   
-##  <a name="cbrush__createdibpatternbrush"></a>  CBrush::CreateDIBPatternBrush  
+##  <a name="createdibpatternbrush"></a>  CBrush::CreateDIBPatternBrush  
  Initializes a brush with the pattern specified by a device-independent bitmap (DIB).  
   
 ```  
@@ -221,7 +221,7 @@ BOOL CreateDIBPatternBrush(
 ### Example  
  [!code-cpp[NVC_MFCDocView#23](../../mfc/codesnippet/cpp/cbrush-class_3.cpp)]  
   
-##  <a name="cbrush__createhatchbrush"></a>  CBrush::CreateHatchBrush  
+##  <a name="createhatchbrush"></a>  CBrush::CreateHatchBrush  
  Initializes a brush with the specified hatched pattern and color.  
   
 ```  
@@ -258,7 +258,7 @@ BOOL CreateHatchBrush(
 ### Example  
  [!code-cpp[NVC_MFCDocView#24](../../mfc/codesnippet/cpp/cbrush-class_4.cpp)]  
   
-##  <a name="cbrush__createpatternbrush"></a>  CBrush::CreatePatternBrush  
+##  <a name="createpatternbrush"></a>  CBrush::CreatePatternBrush  
  Initializes a brush with a pattern specified by a bitmap.  
   
 ```  
@@ -273,7 +273,7 @@ BOOL CreatePatternBrush(CBitmap* pBitmap);
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- The brush can subsequently be selected for any device context that supports raster operations. The bitmap identified by `pBitmap` is typically initialized by using the [CBitmap::CreateBitmap](../../mfc/reference/cbitmap-class.md#cbitmap__createbitmap), [CBitmap::CreateBitmapIndirect](../../mfc/reference/cbitmap-class.md#cbitmap__createbitmapindirect), [CBitmap::LoadBitmap](../../mfc/reference/cbitmap-class.md#cbitmap__loadbitmap), or [CBitmap::CreateCompatibleBitmap](../../mfc/reference/cbitmap-class.md#cbitmap__createcompatiblebitmap) function.  
+ The brush can subsequently be selected for any device context that supports raster operations. The bitmap identified by `pBitmap` is typically initialized by using the [CBitmap::CreateBitmap](../../mfc/reference/cbitmap-class.md#createbitmap), [CBitmap::CreateBitmapIndirect](../../mfc/reference/cbitmap-class.md#createbitmapindirect), [CBitmap::LoadBitmap](../../mfc/reference/cbitmap-class.md#loadbitmap), or [CBitmap::CreateCompatibleBitmap](../../mfc/reference/cbitmap-class.md#createcompatiblebitmap) function.  
   
  Bitmaps used as fill patterns should be 8 pixels by 8 pixels. If the bitmap is larger, Windows will only use the bits corresponding to the first 8 rows and columns of pixels in the upper-left corner of the bitmap.  
   
@@ -286,7 +286,7 @@ BOOL CreatePatternBrush(CBitmap* pBitmap);
 ### Example  
  [!code-cpp[NVC_MFCDocView#25](../../mfc/codesnippet/cpp/cbrush-class_5.cpp)]  
   
-##  <a name="cbrush__createsolidbrush"></a>  CBrush::CreateSolidBrush  
+##  <a name="createsolidbrush"></a>  CBrush::CreateSolidBrush  
  Initializes a brush with a specified solid color.  
   
 ```  
@@ -306,9 +306,9 @@ BOOL CreateSolidBrush(COLORREF crColor);
  When an application has finished using the brush created by `CreateSolidBrush`, it should select the brush out of the device context.  
   
 ### Example  
-  See the example for [CBrush::CBrush](#cbrush__cbrush).  
+  See the example for [CBrush::CBrush](#cbrush).  
   
-##  <a name="cbrush__createsyscolorbrush"></a>  CBrush::CreateSysColorBrush  
+##  <a name="createsyscolorbrush"></a>  CBrush::CreateSysColorBrush  
  Initializes a brush color.  
   
 ```  
@@ -330,8 +330,8 @@ BOOL CreateSysColorBrush(int nIndex);
 ### Example  
  [!code-cpp[NVC_MFCDocView#26](../../mfc/codesnippet/cpp/cbrush-class_6.cpp)]  
   
-##  <a name="cbrush__fromhandle"></a>  CBrush::FromHandle  
- Returns a pointer to a `CBrush` object when given a handle to a Windows [HBRUSH](#cbrush__operator_hbrush) object.  
+##  <a name="fromhandle"></a>  CBrush::FromHandle  
+ Returns a pointer to a `CBrush` object when given a handle to a Windows [HBRUSH](#operator_hbrush) object.  
   
 ```  
 static CBrush* PASCAL FromHandle(HBRUSH hBrush);
@@ -350,9 +350,9 @@ static CBrush* PASCAL FromHandle(HBRUSH hBrush);
  For more information about using graphic objects, see [Graphic Objects](http://msdn.microsoft.com/library/windows/desktop/dd144962) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
-  See the example for [CBrush::CBrush](#cbrush__cbrush).  
+  See the example for [CBrush::CBrush](#cbrush).  
   
-##  <a name="cbrush__getlogbrush"></a>  CBrush::GetLogBrush  
+##  <a name="getlogbrush"></a>  CBrush::GetLogBrush  
  Call this member function to retrieve the `LOGBRUSH` structure.  
   
 ```  
@@ -378,7 +378,7 @@ int GetLogBrush(LOGBRUSH* pLogBrush);
 ### Example  
  [!code-cpp[NVC_MFCDocView#27](../../mfc/codesnippet/cpp/cbrush-class_7.cpp)]  
   
-##  <a name="cbrush__operator_hbrush"></a>  CBrush::operator HBRUSH  
+##  <a name="operator_hbrush"></a>  CBrush::operator HBRUSH  
  Use this operator to get the attached Windows GDI handle of the `CBrush` object.  
   
 ```  
@@ -399,7 +399,7 @@ operator HBRUSH() const;
  [!code-cpp[NVC_MFCDocView#28](../../mfc/codesnippet/cpp/cbrush-class_8.cpp)]  
   
 ## See Also  
- [MFC Sample PROPDLG](../../top/visual-cpp-samples.md)   
+ [MFC Sample PROPDLG](../../visual-cpp-samples.md)   
  [CGdiObject Class](../../mfc/reference/cgdiobject-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CBitmap Class](../../mfc/reference/cbitmap-class.md)   

@@ -50,21 +50,21 @@ class CDiscreteTransition : public CBaseTransition;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDiscreteTransition::CDiscreteTransition](#cdiscretetransition__cdiscretetransition)|Constructs a discrete transition object and initializes its parameters.|  
+|[CDiscreteTransition::CDiscreteTransition](#cdiscretetransition)|Constructs a discrete transition object and initializes its parameters.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDiscreteTransition::Create](#cdiscretetransition__create)|Calls the transition library to create encapsulated transition COM object. (Overrides [CBaseTransition::Create](../../mfc/reference/cbasetransition-class.md#cbasetransition__create).)|  
+|[CDiscreteTransition::Create](#create)|Calls the transition library to create encapsulated transition COM object. (Overrides [CBaseTransition::Create](../../mfc/reference/cbasetransition-class.md#create).)|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDiscreteTransition::m_dblFinalValue](#cdiscretetransition__m_dblfinalvalue)|The value of the animation variable at the end of the transition.|  
-|[CDiscreteTransition::m_delay](#cdiscretetransition__m_delay)|The amount of time by which to delay the instantaneous switch to the final value.|  
-|[CDiscreteTransition::m_hold](#cdiscretetransition__m_hold)|The amount of time by which to hold the variable at its final value.|  
+|[CDiscreteTransition::m_dblFinalValue](#m_dblfinalvalue)|The value of the animation variable at the end of the transition.|  
+|[CDiscreteTransition::m_delay](#m_delay)|The amount of time by which to delay the instantaneous switch to the final value.|  
+|[CDiscreteTransition::m_hold](#m_hold)|The amount of time by which to hold the variable at its final value.|  
   
 ## Remarks  
  During a discrete transition, the animation variable remains at the initial value for a specified delay time, then switches instantaneously to a specified final value and remains at that value for a given hold time. Because all transitions are cleared automatically, it's recommended to allocated them using operator new. The encapsulated IUIAnimationTransition COM object is created by CAnimationController::AnimateGroup, until then it's NULL. Changing member variables after creation of this COM object has no effect.  
@@ -79,7 +79,7 @@ class CDiscreteTransition : public CBaseTransition;
 ## Requirements  
  **Header:** afxanimationcontroller.h  
   
-##  <a name="cdiscretetransition__cdiscretetransition"></a>  CDiscreteTransition::CDiscreteTransition  
+##  <a name="cdiscretetransition"></a>  CDiscreteTransition::CDiscreteTransition  
  Constructs a discrete transition object and initializes its parameters.  
   
 ```  
@@ -99,7 +99,7 @@ CDiscreteTransition(
  `hold`  
  The amount of time by which to hold the variable at its final value.  
   
-##  <a name="cdiscretetransition__create"></a>  CDiscreteTransition::Create  
+##  <a name="create"></a>  CDiscreteTransition::Create  
  Calls the transition library to create encapsulated transition COM object.  
   
 ```  
@@ -115,21 +115,21 @@ virtual BOOL Create(
 ### Return Value  
  TRUE if transition is created successfully; otherwise FALSE.  
   
-##  <a name="cdiscretetransition__m_dblfinalvalue"></a>  CDiscreteTransition::m_dblFinalValue  
+##  <a name="m_dblfinalvalue"></a>  CDiscreteTransition::m_dblFinalValue  
  The value of the animation variable at the end of the transition.  
   
 ```  
 DOUBLE m_dblFinalValue;  
 ```  
   
-##  <a name="cdiscretetransition__m_delay"></a>  CDiscreteTransition::m_delay  
+##  <a name="m_delay"></a>  CDiscreteTransition::m_delay  
  The amount of time by which to delay the instantaneous switch to the final value.  
   
 ```  
 UI_ANIMATION_SECONDS m_delay;  
 ```  
   
-##  <a name="cdiscretetransition__m_hold"></a>  CDiscreteTransition::m_hold  
+##  <a name="m_hold"></a>  CDiscreteTransition::m_hold  
  The amount of time by which to hold the variable at its final value.  
   
 ```  

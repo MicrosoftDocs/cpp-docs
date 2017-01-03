@@ -64,11 +64,11 @@ In its version of the `WinMain` function, MFC registers several standard window 
 ##  <a name="_core_changing_styles_in_an_existing_application"></a> Changing Styles in an Existing Application  
  If you're changing window attributes in an existing application, follow the instructions in the rest of this article instead.  
   
- To change the default window attributes used by a framework application created with the Application Wizard, override the window's [PreCreateWindow](../mfc/reference/cwnd-class.md#cwnd__precreatewindow) virtual member function. `PreCreateWindow` allows an application to access the creation process normally managed internally by the [CDocTemplate](../mfc/reference/cdoctemplate-class.md) class. The framework calls `PreCreateWindow` just prior to creating the window. By modifying the [CREATESTRUCT](../mfc/reference/createstruct-structure.md) structure passed to `PreCreateWindow`, your application can change the attributes used to create the window. For example, to ensure that a window does not use a caption, use the following bitwise operation:  
+ To change the default window attributes used by a framework application created with the Application Wizard, override the window's [PreCreateWindow](../mfc/reference/cwnd-class.md#precreatewindow) virtual member function. `PreCreateWindow` allows an application to access the creation process normally managed internally by the [CDocTemplate](../mfc/reference/cdoctemplate-class.md) class. The framework calls `PreCreateWindow` just prior to creating the window. By modifying the [CREATESTRUCT](../mfc/reference/createstruct-structure.md) structure passed to `PreCreateWindow`, your application can change the attributes used to create the window. For example, to ensure that a window does not use a caption, use the following bitwise operation:  
   
  [!code-cpp[NVC_MFCDocView#15](../mfc/codesnippet/cpp/changing-the-styles-of-a-window-created-by-mfc_1.cpp)]  
   
- The [CTRLBARS](../top/visual-cpp-samples.md) sample application demonstrates this technique for changing window attributes. Depending on what your application changes in `PreCreateWindow`, it may be necessary to call the base class implementation of the function.  
+ The [CTRLBARS](../visual-cpp-samples.md) sample application demonstrates this technique for changing window attributes. Depending on what your application changes in `PreCreateWindow`, it may be necessary to call the base class implementation of the function.  
   
  The following discussion covers the SDI case and the [MDI case](#_core_the_mdi_case).  
   
@@ -82,7 +82,7 @@ In its version of the `WinMain` function, MFC registers several standard window 
 ##  <a name="_core_the_mdi_case"></a> The MDI Case  
  A little more work is required to change the window style of a child window in a multiple document interface (MDI) application. By default, an MDI application created with the Application Wizard uses the default [CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md) class defined in MFC. To change the window style of an MDI child window, you must derive a new class from `CMDIChildWnd` and replace all references to `CMDIChildWnd` in your project with references to the new class. Most likely, the only reference to `CMDIChildWnd` in the application is located in your application's `InitInstance` member function.  
   
- The default window style used in an MDI application is a combination of the **WS_CHILD**, **WS_OVERLAPPEDWINDOW**, and **FWS_ADDTOTITLE** styles. To change the window attributes of an MDI application's child windows, override the [PreCreateWindow](../mfc/reference/cwnd-class.md#cwnd__precreatewindow) function in your class derived from `CMDIChildWnd`. For example:  
+ The default window style used in an MDI application is a combination of the **WS_CHILD**, **WS_OVERLAPPEDWINDOW**, and **FWS_ADDTOTITLE** styles. To change the window attributes of an MDI application's child windows, override the [PreCreateWindow](../mfc/reference/cwnd-class.md#precreatewindow) function in your class derived from `CMDIChildWnd`. For example:  
   
  [!code-cpp[NVC_MFCDocView#16](../mfc/codesnippet/cpp/changing-the-styles-of-a-window-created-by-mfc_3.cpp)]  
   

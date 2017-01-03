@@ -11,7 +11,7 @@ ms.topic: "get-started-article"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "Standard C++ Library, converting System::String to standard string"
+  - "C++ Standard Library, converting System::String to standard string"
   - "string conversion, System::String"
 ms.assetid: 79e2537e-d4eb-459f-9506-0e738045b59e
 caps.latest.revision: 9

@@ -51,18 +51,18 @@ class CMFCPropertyGridFontProperty : public CMFCPropertyGridProperty
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCPropertyGridFontProperty::CMFCPropertyGridFontProperty](#cmfcpropertygridfontproperty__cmfcpropertygridfontproperty)|Constructs a `CMFCPropertyGridFontProperty` object.|  
+|[CMFCPropertyGridFontProperty::CMFCPropertyGridFontProperty](#cmfcpropertygridfontproperty)|Constructs a `CMFCPropertyGridFontProperty` object.|  
 |`CMFCPropertyGridFontProperty::~CMFCPropertyGridFontProperty`|Destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|`CMFCPropertyGridFontProperty::FormatProperty`|Formats the text representation of a property value. (Overrides [CMFCPropertyGridProperty::FormatProperty](../../mfc/reference/cmfcpropertygridproperty-class.md#cmfcpropertygridproperty__formatproperty).)|  
-|[CMFCPropertyGridFontProperty::GetColor](#cmfcpropertygridfontproperty__getcolor)|Retrieves the font color that the user selects from the font dialog box.|  
-|[CMFCPropertyGridFontProperty::GetLogFont](#cmfcpropertygridfontproperty__getlogfont)|Retrieves the font that the user selects from the font dialog box.|  
+|`CMFCPropertyGridFontProperty::FormatProperty`|Formats the text representation of a property value. (Overrides [CMFCPropertyGridProperty::FormatProperty](../../mfc/reference/cmfcpropertygridproperty-class.md#formatproperty).)|  
+|[CMFCPropertyGridFontProperty::GetColor](#getcolor)|Retrieves the font color that the user selects from the font dialog box.|  
+|[CMFCPropertyGridFontProperty::GetLogFont](#getlogfont)|Retrieves the font that the user selects from the font dialog box.|  
 |`CMFCPropertyGridFontProperty::GetThisClass`|Used by the framework to obtain a pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|  
-|`CMFCPropertyGridFontProperty::OnClickButton`|Called by the framework when the user clicks a button that is contained in a property. (Overrides [CMFCPropertyGridProperty::OnClickButton](../../mfc/reference/cmfcpropertygridproperty-class.md#cmfcpropertygridproperty__onclickbutton).)|  
+|`CMFCPropertyGridFontProperty::OnClickButton`|Called by the framework when the user clicks a button that is contained in a property. (Overrides [CMFCPropertyGridProperty::OnClickButton](../../mfc/reference/cmfcpropertygridproperty-class.md#onclickbutton).)|  
   
 ## Remarks  
   
@@ -76,7 +76,7 @@ class CMFCPropertyGridFontProperty : public CMFCPropertyGridProperty
 ## Requirements  
  **Header:** afxpropertygridctrl.h  
   
-##  <a name="cmfcpropertygridfontproperty__cmfcpropertygridfontproperty"></a>  CMFCPropertyGridFontProperty::CMFCPropertyGridFontProperty  
+##  <a name="cmfcpropertygridfontproperty"></a>  CMFCPropertyGridFontProperty::CMFCPropertyGridFontProperty  
  Constructs a `CMFCPropertyGridFontProperty` object.  
   
 ```  
@@ -112,11 +112,11 @@ CMFCPropertyGridFontProperty(
  A `CMFCPropertyGridFontProperty` object represents a font property in a property grid font control.  
   
 ### Example  
- The following example demonstrates how construct an object of the `CMFCPropertyGridFontProperty` class. This example is part of the [New Controls sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how construct an object of the `CMFCPropertyGridFontProperty` class. This example is part of the [New Controls sample](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_NewControls#26](../../mfc/reference/codesnippet/cpp/cmfcpropertygridfontproperty-class_1.cpp)]  
   
-##  <a name="cmfcpropertygridfontproperty__getcolor"></a>  CMFCPropertyGridFontProperty::GetColor  
+##  <a name="getcolor"></a>  CMFCPropertyGridFontProperty::GetColor  
  Retrieves the font color that the user selects from the font dialog box.  
   
 ```  
@@ -130,7 +130,7 @@ COLORREF GetColor() const;
   
 ### Remarks  
   
-##  <a name="cmfcpropertygridfontproperty__getlogfont"></a>  CMFCPropertyGridFontProperty::GetLogFont  
+##  <a name="getlogfont"></a>  CMFCPropertyGridFontProperty::GetLogFont  
  Retrieves the font that the user selects from the font dialog box.  
   
 ```  

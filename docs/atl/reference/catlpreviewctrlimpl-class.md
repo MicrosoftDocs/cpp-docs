@@ -53,40 +53,40 @@ class CAtlPreviewCtrlImpl : public CWindowImpl<CAtlPreviewCtrlImpl>, public IPre
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlPreviewCtrlImpl::~CAtlPreviewCtrlImpl](#catlpreviewctrlimpl___dtorcatlpreviewctrlimpl)|Destructs a preview control object.|  
-|[CAtlPreviewCtrlImpl::CAtlPreviewCtrlImpl](#catlpreviewctrlimpl__catlpreviewctrlimpl)|Constructs a preview control object.|  
+|[CAtlPreviewCtrlImpl::~CAtlPreviewCtrlImpl](#dtor)|Destructs a preview control object.|  
+|[CAtlPreviewCtrlImpl::CAtlPreviewCtrlImpl](#catlpreviewctrlimpl)|Constructs a preview control object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlPreviewCtrlImpl::Create](#catlpreviewctrlimpl__create)|Called by a Rich Preview handler to create the Windows window.|  
-|[CAtlPreviewCtrlImpl::Destroy](#catlpreviewctrlimpl__destroy)|Called by a Rich Preview handler when it needs to destroy this control.|  
-|[CAtlPreviewCtrlImpl::Focus](#catlpreviewctrlimpl__focus)|Sets input focus to this control.|  
-|[CAtlPreviewCtrlImpl::OnPaint](#catlpreviewctrlimpl__onpaint)|Handles the WM_PAINT message.|  
-|[CAtlPreviewCtrlImpl::Redraw](#catlpreviewctrlimpl__redraw)|Tells this control to redraw.|  
-|[CAtlPreviewCtrlImpl::SetHost](#catlpreviewctrlimpl__sethost)|Sets a new parent for this control.|  
-|[CAtlPreviewCtrlImpl::SetPreviewVisuals](#catlpreviewctrlimpl__setpreviewvisuals)|Called by a Rich Preview handler when it needs to set visuals of rich preview content.|  
-|[CAtlPreviewCtrlImpl::SetRect](#catlpreviewctrlimpl__setrect)|Sets a new bounding rectangle for this control.|  
+|[CAtlPreviewCtrlImpl::Create](#create)|Called by a Rich Preview handler to create the Windows window.|  
+|[CAtlPreviewCtrlImpl::Destroy](#destroy)|Called by a Rich Preview handler when it needs to destroy this control.|  
+|[CAtlPreviewCtrlImpl::Focus](#focus)|Sets input focus to this control.|  
+|[CAtlPreviewCtrlImpl::OnPaint](#onpaint)|Handles the WM_PAINT message.|  
+|[CAtlPreviewCtrlImpl::Redraw](#redraw)|Tells this control to redraw.|  
+|[CAtlPreviewCtrlImpl::SetHost](#sethost)|Sets a new parent for this control.|  
+|[CAtlPreviewCtrlImpl::SetPreviewVisuals](#setpreviewvisuals)|Called by a Rich Preview handler when it needs to set visuals of rich preview content.|  
+|[CAtlPreviewCtrlImpl::SetRect](#setrect)|Sets a new bounding rectangle for this control.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlPreviewCtrlImpl::DoPaint](#catlpreviewctrlimpl__dopaint)|Called by the framework to render the preview.|  
+|[CAtlPreviewCtrlImpl::DoPaint](#dopaint)|Called by the framework to render the preview.|  
   
 ### Protected Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlPreviewCtrlImpl::m_plf](#catlpreviewctrlimpl__m_plf)|Font used to display text in the preview window.|  
+|[CAtlPreviewCtrlImpl::m_plf](#m_plf)|Font used to display text in the preview window.|  
   
 ### Protected Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlPreviewCtrlImpl::m_clrBack](#catlpreviewctrlimpl__m_clrback)|Background color of the preview window.|  
-|[CAtlPreviewCtrlImpl::m_clrText](#catlpreviewctrlimpl__m_clrtext)|Text color of preview window.|  
+|[CAtlPreviewCtrlImpl::m_clrBack](#m_clrback)|Background color of the preview window.|  
+|[CAtlPreviewCtrlImpl::m_clrText](#m_clrtext)|Text color of preview window.|  
 
   
 ## Remarks  
@@ -109,7 +109,7 @@ class CAtlPreviewCtrlImpl : public CWindowImpl<CAtlPreviewCtrlImpl>, public IPre
 ## Requirements  
  **Header:** atlpreviewctrlimpl.h  
   
-##  <a name="catlpreviewctrlimpl__catlpreviewctrlimpl"></a>  CAtlPreviewCtrlImpl::CAtlPreviewCtrlImpl  
+##  <a name="catlpreviewctrlimpl"></a>  CAtlPreviewCtrlImpl::CAtlPreviewCtrlImpl  
  Constructs a preview control object.  
   
 ```
@@ -122,7 +122,7 @@ CAtlPreviewCtrlImpl(void) : m_clrText(0),
   
 ### Remarks  
   
-##  <a name="catlpreviewctrlimpl___dtorcatlpreviewctrlimpl"></a>  CAtlPreviewCtrlImpl::~CAtlPreviewCtrlImpl  
+##  <a name="dtor"></a>  CAtlPreviewCtrlImpl::~CAtlPreviewCtrlImpl  
  Destructs a preview control object.  
   
 ```
@@ -131,7 +131,7 @@ virtual ~CAtlPreviewCtrlImpl(void);
   
 ### Remarks  
   
-##  <a name="catlpreviewctrlimpl__create"></a>  CAtlPreviewCtrlImpl::Create  
+##  <a name="create"></a>  CAtlPreviewCtrlImpl::Create  
  Called by a Rich Preview handler to create the Windows window.  
   
 ```
@@ -150,7 +150,7 @@ virtual BOOL Create(HWND hWndParent,  const RECT* prc);
   
 ### Remarks  
   
-##  <a name="catlpreviewctrlimpl__destroy"></a>  CAtlPreviewCtrlImpl::Destroy  
+##  <a name="destroy"></a>  CAtlPreviewCtrlImpl::Destroy  
  Called by a Rich Preview handler when it needs to destroy this control.  
   
 ```
@@ -159,7 +159,7 @@ virtual void Destroy();
   
 ### Remarks  
   
-##  <a name="catlpreviewctrlimpl__dopaint"></a>  CAtlPreviewCtrlImpl::DoPaint  
+##  <a name="dopaint"></a>  CAtlPreviewCtrlImpl::DoPaint  
  Called by the framework to render the preview.  
   
 ```
@@ -172,7 +172,7 @@ virtual void DoPaint(HDC hdc);
   
 ### Remarks  
   
-##  <a name="catlpreviewctrlimpl__focus"></a>  CAtlPreviewCtrlImpl::Focus  
+##  <a name="focus"></a>  CAtlPreviewCtrlImpl::Focus  
  Sets input focus to this control.  
   
 ```
@@ -181,7 +181,7 @@ virtual void Focus();
   
 ### Remarks  
   
-##  <a name="catlpreviewctrlimpl__m_clrback"></a>  CAtlPreviewCtrlImpl::m_clrBack  
+##  <a name="m_clrback"></a>  CAtlPreviewCtrlImpl::m_clrBack  
  Background color of the preview window.  
   
 ```
@@ -190,7 +190,7 @@ COLORREF m_clrBack;
   
 ### Remarks  
   
-##  <a name="catlpreviewctrlimpl__m_clrtext"></a>  CAtlPreviewCtrlImpl::m_clrText  
+##  <a name="m_clrtext"></a>  CAtlPreviewCtrlImpl::m_clrText  
  Text color of the preview window.  
   
 ```
@@ -199,7 +199,7 @@ COLORREF m_clrText;
   
 ### Remarks  
   
-##  <a name="catlpreviewctrlimpl__m_plf"></a>  CAtlPreviewCtrlImpl::m_plf  
+##  <a name="m_plf"></a>  CAtlPreviewCtrlImpl::m_plf  
  Font used to display text in the preview window.  
   
 ```
@@ -208,7 +208,7 @@ const LOGFONTW* m_plf;
   
 ### Remarks  
   
-##  <a name="catlpreviewctrlimpl__onpaint"></a>  CAtlPreviewCtrlImpl::OnPaint  
+##  <a name="onpaint"></a>  CAtlPreviewCtrlImpl::OnPaint  
  Handles the WM_PAINT message.  
   
 ```
@@ -236,7 +236,7 @@ LRESULT OnPaint(UINT nMsg,
   
 ### Remarks  
   
-##  <a name="catlpreviewctrlimpl__redraw"></a>  CAtlPreviewCtrlImpl::Redraw  
+##  <a name="redraw"></a>  CAtlPreviewCtrlImpl::Redraw  
  Tells this control to redraw.  
   
 ```
@@ -245,7 +245,7 @@ virtual void Redraw();
   
 ### Remarks  
   
-##  <a name="catlpreviewctrlimpl__sethost"></a>  CAtlPreviewCtrlImpl::SetHost  
+##  <a name="sethost"></a>  CAtlPreviewCtrlImpl::SetHost  
  Sets a new parent for this control.  
   
 ```
@@ -258,7 +258,7 @@ virtual void SetHost(HWND hWndParent);
   
 ### Remarks  
   
-##  <a name="catlpreviewctrlimpl__setpreviewvisuals"></a>  CAtlPreviewCtrlImpl::SetPreviewVisuals  
+##  <a name="setpreviewvisuals"></a>  CAtlPreviewCtrlImpl::SetPreviewVisuals  
  Called by a Rich Preview handler when it needs to set visuals of rich preview content.  
   
 ```
@@ -279,7 +279,7 @@ virtual void SetPreviewVisuals(COLORREF clrBack,
   
 ### Remarks  
   
-##  <a name="catlpreviewctrlimpl__setrect"></a>  CAtlPreviewCtrlImpl::SetRect  
+##  <a name="setrect"></a>  CAtlPreviewCtrlImpl::SetRect  
  Sets a new bounding rectangle for this control.  
   
 ```

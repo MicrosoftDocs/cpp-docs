@@ -53,24 +53,24 @@ class CSpinButtonCtrl : public CWnd
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSpinButtonCtrl::CSpinButtonCtrl](#cspinbuttonctrl__cspinbuttonctrl)|Constructs a `CSpinButtonCtrl` object.|  
+|[CSpinButtonCtrl::CSpinButtonCtrl](#cspinbuttonctrl)|Constructs a `CSpinButtonCtrl` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSpinButtonCtrl::Create](#cspinbuttonctrl__create)|Creates a spin button control and attaches it to a `CSpinButtonCtrl` object.|  
-|[CSpinButtonCtrl::CreateEx](#cspinbuttonctrl__createex)|Creates a spin button control with the specified Windows extended styles and attaches it to a `CSpinButtonCtrl` object.|  
-|[CSpinButtonCtrl::GetAccel](#cspinbuttonctrl__getaccel)|Retrieves acceleration information for a spin button control.|  
-|[CSpinButtonCtrl::GetBase](#cspinbuttonctrl__getbase)|Retrieves the current base for a spin button control.|  
-|[CSpinButtonCtrl::GetBuddy](#cspinbuttonctrl__getbuddy)|Retrieves a pointer to the current buddy window.|  
-|[CSpinButtonCtrl::GetPos](#cspinbuttonctrl__getpos)|Retrieves the current position of a spin button control.|  
-|[CSpinButtonCtrl::GetRange](#cspinbuttonctrl__getrange)|Retrieves the upper and lower limits (range) for a spin button control.|  
-|[CSpinButtonCtrl::SetAccel](#cspinbuttonctrl__setaccel)|Sets the acceleration for a spin button control.|  
-|[CSpinButtonCtrl::SetBase](#cspinbuttonctrl__setbase)|Sets the base for a spin button control.|  
-|[CSpinButtonCtrl::SetBuddy](#cspinbuttonctrl__setbuddy)|Sets the buddy window for a spin button control.|  
-|[CSpinButtonCtrl::SetPos](#cspinbuttonctrl__setpos)|Sets the current position for the control.|  
-|[CSpinButtonCtrl::SetRange](#cspinbuttonctrl__setrange)|Sets the upper and lower limits (range) for a spin button control.|  
+|[CSpinButtonCtrl::Create](#create)|Creates a spin button control and attaches it to a `CSpinButtonCtrl` object.|  
+|[CSpinButtonCtrl::CreateEx](#createex)|Creates a spin button control with the specified Windows extended styles and attaches it to a `CSpinButtonCtrl` object.|  
+|[CSpinButtonCtrl::GetAccel](#getaccel)|Retrieves acceleration information for a spin button control.|  
+|[CSpinButtonCtrl::GetBase](#getbase)|Retrieves the current base for a spin button control.|  
+|[CSpinButtonCtrl::GetBuddy](#getbuddy)|Retrieves a pointer to the current buddy window.|  
+|[CSpinButtonCtrl::GetPos](#getpos)|Retrieves the current position of a spin button control.|  
+|[CSpinButtonCtrl::GetRange](#getrange)|Retrieves the upper and lower limits (range) for a spin button control.|  
+|[CSpinButtonCtrl::SetAccel](#setaccel)|Sets the acceleration for a spin button control.|  
+|[CSpinButtonCtrl::SetBase](#setbase)|Sets the base for a spin button control.|  
+|[CSpinButtonCtrl::SetBuddy](#setbuddy)|Sets the buddy window for a spin button control.|  
+|[CSpinButtonCtrl::SetPos](#setpos)|Sets the current position for the control.|  
+|[CSpinButtonCtrl::SetRange](#setrange)|Sets the upper and lower limits (range) for a spin button control.|  
   
 ## Remarks  
  A "spin button control" (also known as an up-down control) is a pair of arrow buttons that the user can click to increment or decrement a value, such as a scroll position or a number displayed in a companion control. The value associated with a spin button control is called its current position. A spin button control is most often used with a companion control, called a "buddy window."  
@@ -97,7 +97,7 @@ class CSpinButtonCtrl : public CWnd
 ## Requirements  
  **Header:** afxcmn.h  
   
-##  <a name="cspinbuttonctrl__create"></a>  CSpinButtonCtrl::Create  
+##  <a name="create"></a>  CSpinButtonCtrl::Create  
  Creates a spin button control and attaches it to a `CSpinButtonCtrl` object..  
   
 ```  
@@ -127,9 +127,9 @@ virtual BOOL Create(
 ### Remarks  
  You construct a `CSpinButtonCtrl` object in two steps First, call the constructor, and then call **Create**, which creates the spin button control and attaches it to the `CSpinButtonCtrl` object.  
   
- To create a spin button control with extended window styles, call [CSpinButtonCtrl::CreateEx](#cspinbuttonctrl__createex) instead of **Create**.  
+ To create a spin button control with extended window styles, call [CSpinButtonCtrl::CreateEx](#createex) instead of **Create**.  
   
-##  <a name="cspinbuttonctrl__createex"></a>  CSpinButtonCtrl::CreateEx  
+##  <a name="createex"></a>  CSpinButtonCtrl::CreateEx  
  Creates a control (a child window) and associates it with the `CSpinButtonCtrl` object.  
   
 ```  
@@ -161,16 +161,16 @@ virtual BOOL CreateEx(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- Use `CreateEx` instead of [Create](#cspinbuttonctrl__create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
+ Use `CreateEx` instead of [Create](#create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
   
-##  <a name="cspinbuttonctrl__cspinbuttonctrl"></a>  CSpinButtonCtrl::CSpinButtonCtrl  
+##  <a name="cspinbuttonctrl"></a>  CSpinButtonCtrl::CSpinButtonCtrl  
  Constructs a `CSpinButtonCtrl` object.  
   
 ```  
 CSpinButtonCtrl();
 ```  
   
-##  <a name="cspinbuttonctrl__getaccel"></a>  CSpinButtonCtrl::GetAccel  
+##  <a name="getaccel"></a>  CSpinButtonCtrl::GetAccel  
  Retrieves acceleration information for a spin button control.  
   
 ```  
@@ -191,7 +191,7 @@ UINT GetAccel(
 ### Return Value  
  Number of accelerator structures retrieved.  
   
-##  <a name="cspinbuttonctrl__getbase"></a>  CSpinButtonCtrl::GetBase  
+##  <a name="getbase"></a>  CSpinButtonCtrl::GetBase  
  Retrieves the current base for a spin button control.  
   
 ```  
@@ -203,7 +203,7 @@ UINT GetBase() const;
 ### Return Value  
  The current base value.  
   
-##  <a name="cspinbuttonctrl__getbuddy"></a>  CSpinButtonCtrl::GetBuddy  
+##  <a name="getbuddy"></a>  CSpinButtonCtrl::GetBuddy  
  Retrieves a pointer to the current buddy window.  
   
 ```  
@@ -215,7 +215,7 @@ CWnd* GetBuddy() const;
 ### Return Value  
  A pointer to the current buddy window.  
   
-##  <a name="cspinbuttonctrl__getpos"></a>  CSpinButtonCtrl::GetPos  
+##  <a name="getpos"></a>  CSpinButtonCtrl::GetPos  
  Retrieves the current position of a spin button control.  
   
 ```  
@@ -240,7 +240,7 @@ int GetPos32(LPBOOL lpbError = NULL) const;
 ### Remarks  
  When it processes the value returned, the control updates its current position based on the caption of the buddy window. The control returns an error if there is no buddy window or if the caption specifies an invalid or out-of-range value.  
   
-##  <a name="cspinbuttonctrl__getrange"></a>  CSpinButtonCtrl::GetRange  
+##  <a name="getrange"></a>  CSpinButtonCtrl::GetRange  
  Retrieves the upper and lower limits (range) for a spin button control.  
   
 ```  
@@ -274,7 +274,7 @@ void GetRange32(
 ### Remarks  
  The member function `GetRange32` retrieves the spin button control's range as a 32-bit integer.  
   
-##  <a name="cspinbuttonctrl__setaccel"></a>  CSpinButtonCtrl::SetAccel  
+##  <a name="setaccel"></a>  CSpinButtonCtrl::SetAccel  
  Sets the acceleration for a spin button control.  
   
 ```  
@@ -293,7 +293,7 @@ BOOL SetAccel(
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
-##  <a name="cspinbuttonctrl__setbase"></a>  CSpinButtonCtrl::SetBase  
+##  <a name="setbase"></a>  CSpinButtonCtrl::SetBase  
  Sets the base for a spin button control.  
   
 ```  
@@ -310,7 +310,7 @@ int SetBase(int nBase);
 ### Remarks  
  The base value determines whether the buddy window displays numbers in decimal or hexadecimal digits. Hexadecimal numbers are always unsigned; decimal numbers are signed.  
   
-##  <a name="cspinbuttonctrl__setbuddy"></a>  CSpinButtonCtrl::SetBuddy  
+##  <a name="setbuddy"></a>  CSpinButtonCtrl::SetBuddy  
  Sets the buddy window for a spin button control.  
   
 ```  
@@ -327,7 +327,7 @@ CWnd* SetBuddy(CWnd* pWndBuddy);
 ### Remarks  
  A spin control is almost always associated with another window, such as an edit control, that displays some content. This other window is called the "buddy" of the spin control.  
   
-##  <a name="cspinbuttonctrl__setpos"></a>  CSpinButtonCtrl::SetPos  
+##  <a name="setpos"></a>  CSpinButtonCtrl::SetPos  
  Sets the current position for a spin button control.  
   
 ```  
@@ -347,7 +347,7 @@ int SetPos32(int nPos);
 ### Remarks  
  `SetPos32` sets the 32-bit position.  
   
-##  <a name="cspinbuttonctrl__setrange"></a>  CSpinButtonCtrl::SetRange  
+##  <a name="setrange"></a>  CSpinButtonCtrl::SetRange  
  Sets the upper and lower limits (range) for a spin button control.  
   
 ```  
@@ -372,7 +372,7 @@ void SetRange32(
 >  The default range for the spin button has the maximum set to zero (0) and the minimum set to 100. Because the maximum value is less than the minimum value, clicking the up arrow will decrease the position and clicking the down arrow will increase it. Use `CSpinButtonCtrl::SetRange` to adjust these values.  
   
 ## See Also  
- [MFC Sample CMNCTRL2](../../top/visual-cpp-samples.md)   
+ [MFC Sample CMNCTRL2](../../visual-cpp-samples.md)   
  [CWnd Class](../../mfc/reference/cwnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CSliderCtrl Class](../../mfc/reference/csliderctrl-class.md)

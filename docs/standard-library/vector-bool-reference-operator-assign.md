@@ -16,7 +16,7 @@ f1_keywords:
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "= operator, with specific standard C++ library objects"
+  - "= operator, with specific C++ Standard Library objects"
   - "reference::operator="
 ms.assetid: eed20d81-36b9-40b2-a3b6-340ed0bb4f34
 caps.latest.revision: 20

@@ -49,22 +49,22 @@ class CMFCVisualManagerVS2005 : public CMFCVisualManagerOffice2003
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCVisualManagerVS2005::GetDockingTabsBordersSize](#cmfcvisualmanagervs2005__getdockingtabsborderssize)|The framework calls this method when it draws a pane that is docked and tabbed. (Overrides [CMFCVisualManager::GetDockingTabsBordersSize](../../mfc/reference/cmfcvisualmanager-class.md#cmfcvisualmanager__getdockingtabsborderssize).)|  
-|[CMFCVisualManagerVS2005::GetMDITabsBordersSize](#cmfcvisualmanagervs2005__getmditabsborderssize)|The framework calls this method to determine the border size of a MDITabs window before it draws the window. (Overrides [CMFCVisualManager::GetMDITabsBordersSize](../../mfc/reference/cmfcvisualmanager-class.md#cmfcvisualmanager__getmditabsborderssize).)|  
-|[CMFCVisualManagerVS2005::GetPropertyGridGroupColor](#cmfcvisualmanagervs2005__getpropertygridgroupcolor)|(Overrides [CMFCVisualManagerOffice2003::GetPropertyGridGroupColor](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#cmfcvisualmanageroffice2003__getpropertygridgroupcolor).)|  
-|[CMFCVisualManagerVS2005::GetTabFrameColors](#cmfcvisualmanagervs2005__gettabframecolors)|(Overrides [CMFCVisualManagerOffice2003::GetTabFrameColors](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#cmfcvisualmanageroffice2003__gettabframecolors).)|  
-|[CMFCVisualManagerVS2005::HasOverlappedAutoHideButtons](#cmfcvisualmanagervs2005__hasoverlappedautohidebuttons)|Returns whether auto-hide buttons overlap in the current visual manager. (Overrides [CMFCVisualManager::HasOverlappedAutoHideButtons](../../mfc/reference/cmfcvisualmanager-class.md#cmfcvisualmanager__hasoverlappedautohidebuttons).)|  
-|[CMFCVisualManagerVS2005::OnDrawAutoHideButtonBorder](#cmfcvisualmanagervs2005__ondrawautohidebuttonborder)|(Overrides [CMFCVisualManagerOffice2003::OnDrawAutoHideButtonBorder](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#cmfcvisualmanageroffice2003__ondrawautohidebuttonborder).)|  
-|[CMFCVisualManagerVS2005::OnDrawCaptionButton](#cmfcvisualmanagervs2005__ondrawcaptionbutton)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawCaptionButton`.)|  
-|[CMFCVisualManagerVS2005::OnDrawPaneCaption](#cmfcvisualmanagervs2005__ondrawpanecaption)|(Overrides [CMFCVisualManagerOffice2003::OnDrawPaneCaption](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#cmfcvisualmanageroffice2003__ondrawpanecaption).)|  
-|[CMFCVisualManagerVS2005::OnDrawSeparator](#cmfcvisualmanagervs2005__ondrawseparator)|(Overrides [CMFCVisualManagerOffice2003::OnDrawSeparator](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#cmfcvisualmanageroffice2003__ondrawseparator).)|  
-|[CMFCVisualManagerVS2005::OnDrawTab](#cmfcvisualmanagervs2005__ondrawtab)|(Overrides [CMFCVisualManagerOffice2003::OnDrawTab](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#cmfcvisualmanageroffice2003__ondrawtab).)|  
-|[CMFCVisualManagerVS2005::OnDrawToolBoxFrame](#cmfcvisualmanagervs2005__ondrawtoolboxframe)|(Overrides [CMFCVisualManager::OnDrawToolBoxFrame](../../mfc/reference/cmfcvisualmanager-class.md#cmfcvisualmanager__ondrawtoolboxframe).)|  
-|[CMFCVisualManagerVS2005::OnEraseTabsArea](#cmfcvisualmanagervs2005__onerasetabsarea)|(Overrides [CMFCVisualManagerOffice2003::OnEraseTabsArea](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#cmfcvisualmanageroffice2003__onerasetabsarea).)|  
-|[CMFCVisualManagerVS2005::OnFillAutoHideButtonBackground](#cmfcvisualmanagervs2005__onfillautohidebuttonbackground)|(Overrides [CMFCVisualManagerOffice2003::OnFillAutoHideButtonBackground](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#cmfcvisualmanageroffice2003__onfillautohidebuttonbackground).)|  
-|[CMFCVisualManagerVS2005::OnFillHighlightedArea](#cmfcvisualmanagervs2005__onfillhighlightedarea)|(Overrides [CMFCVisualManagerOffice2003::OnFillHighlightedArea](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#cmfcvisualmanageroffice2003__onfillhighlightedarea).)|  
-|[CMFCVisualManagerVS2005::OnFillMiniFrameCaption](#cmfcvisualmanagervs2005__onfillminiframecaption)|(Overrides `CMFCVisualManagerOfficeXP::OnFillMiniFrameCaption`.)|  
-|[CMFCVisualManagerVS2005::OnUpdateSystemColors](#cmfcvisualmanagervs2005__onupdatesystemcolors)|(Overrides [CMFCVisualManagerOffice2003::OnUpdateSystemColors](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#cmfcvisualmanageroffice2003__onupdatesystemcolors).)|  
+|[CMFCVisualManagerVS2005::GetDockingTabsBordersSize](#getdockingtabsborderssize)|The framework calls this method when it draws a pane that is docked and tabbed. (Overrides [CMFCVisualManager::GetDockingTabsBordersSize](../../mfc/reference/cmfcvisualmanager-class.md#getdockingtabsborderssize).)|  
+|[CMFCVisualManagerVS2005::GetMDITabsBordersSize](#getmditabsborderssize)|The framework calls this method to determine the border size of a MDITabs window before it draws the window. (Overrides [CMFCVisualManager::GetMDITabsBordersSize](../../mfc/reference/cmfcvisualmanager-class.md#getmditabsborderssize).)|  
+|[CMFCVisualManagerVS2005::GetPropertyGridGroupColor](#getpropertygridgroupcolor)|(Overrides [CMFCVisualManagerOffice2003::GetPropertyGridGroupColor](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#getpropertygridgroupcolor).)|  
+|[CMFCVisualManagerVS2005::GetTabFrameColors](#gettabframecolors)|(Overrides [CMFCVisualManagerOffice2003::GetTabFrameColors](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#gettabframecolors).)|  
+|[CMFCVisualManagerVS2005::HasOverlappedAutoHideButtons](#hasoverlappedautohidebuttons)|Returns whether auto-hide buttons overlap in the current visual manager. (Overrides [CMFCVisualManager::HasOverlappedAutoHideButtons](../../mfc/reference/cmfcvisualmanager-class.md#hasoverlappedautohidebuttons).)|  
+|[CMFCVisualManagerVS2005::OnDrawAutoHideButtonBorder](#ondrawautohidebuttonborder)|(Overrides [CMFCVisualManagerOffice2003::OnDrawAutoHideButtonBorder](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#ondrawautohidebuttonborder).)|  
+|[CMFCVisualManagerVS2005::OnDrawCaptionButton](#ondrawcaptionbutton)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawCaptionButton`.)|  
+|[CMFCVisualManagerVS2005::OnDrawPaneCaption](#ondrawpanecaption)|(Overrides [CMFCVisualManagerOffice2003::OnDrawPaneCaption](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#ondrawpanecaption).)|  
+|[CMFCVisualManagerVS2005::OnDrawSeparator](#ondrawseparator)|(Overrides [CMFCVisualManagerOffice2003::OnDrawSeparator](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#ondrawseparator).)|  
+|[CMFCVisualManagerVS2005::OnDrawTab](#ondrawtab)|(Overrides [CMFCVisualManagerOffice2003::OnDrawTab](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#ondrawtab).)|  
+|[CMFCVisualManagerVS2005::OnDrawToolBoxFrame](#ondrawtoolboxframe)|(Overrides [CMFCVisualManager::OnDrawToolBoxFrame](../../mfc/reference/cmfcvisualmanager-class.md#ondrawtoolboxframe).)|  
+|[CMFCVisualManagerVS2005::OnEraseTabsArea](#onerasetabsarea)|(Overrides [CMFCVisualManagerOffice2003::OnEraseTabsArea](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#onerasetabsarea).)|  
+|[CMFCVisualManagerVS2005::OnFillAutoHideButtonBackground](#onfillautohidebuttonbackground)|(Overrides [CMFCVisualManagerOffice2003::OnFillAutoHideButtonBackground](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#onfillautohidebuttonbackground).)|  
+|[CMFCVisualManagerVS2005::OnFillHighlightedArea](#onfillhighlightedarea)|(Overrides [CMFCVisualManagerOffice2003::OnFillHighlightedArea](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#onfillhighlightedarea).)|  
+|[CMFCVisualManagerVS2005::OnFillMiniFrameCaption](#onfillminiframecaption)|(Overrides `CMFCVisualManagerOfficeXP::OnFillMiniFrameCaption`.)|  
+|[CMFCVisualManagerVS2005::OnUpdateSystemColors](#onupdatesystemcolors)|(Overrides [CMFCVisualManagerOffice2003::OnUpdateSystemColors](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#onupdatesystemcolors).)|  
   
 ## Remarks  
  You use the CMFCVisualManagerVS2005 class to change the visual appearance of your application to resemble that of the [!INCLUDE[vsprvsext](../../mfc/reference/includes/vsprvsext_md.md)].  
@@ -72,7 +72,7 @@ class CMFCVisualManagerVS2005 : public CMFCVisualManagerOffice2003
  All of the members of this class are virtual functions that are derived from the ancestor of this class, [CMFCVisualManager Class](../../mfc/reference/cmfcvisualmanager-class.md).  
   
 ## Example  
- The following example demonstrates how to use the visual manager VS 2005. This code snippet is part of the [Desktop Alert Demo sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to use the visual manager VS 2005. This code snippet is part of the [Desktop Alert Demo sample](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_DesktopAlertDemo#9](../../mfc/reference/codesnippet/cpp/cmfcvisualmanagervs2005-class_1.cpp)]  
   
@@ -92,7 +92,7 @@ class CMFCVisualManagerVS2005 : public CMFCVisualManagerOffice2003
 ## Requirements  
  **Header:** afxvisualmanagervs2005.h  
   
-##  <a name="cmfcvisualmanagervs2005__getdockingtabsborderssize"></a>  CMFCVisualManagerVS2005::GetDockingTabsBordersSize  
+##  <a name="getdockingtabsborderssize"></a>  CMFCVisualManagerVS2005::GetDockingTabsBordersSize  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -103,7 +103,7 @@ virtual int GetDockingTabsBordersSize();
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagervs2005__getmditabsborderssize"></a>  CMFCVisualManagerVS2005::GetMDITabsBordersSize  
+##  <a name="getmditabsborderssize"></a>  CMFCVisualManagerVS2005::GetMDITabsBordersSize  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -114,7 +114,7 @@ virtual int GetMDITabsBordersSize();
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagervs2005__getpropertygridgroupcolor"></a>  CMFCVisualManagerVS2005::GetPropertyGridGroupColor  
+##  <a name="getpropertygridgroupcolor"></a>  CMFCVisualManagerVS2005::GetPropertyGridGroupColor  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -128,7 +128,7 @@ virtual COLORREF GetPropertyGridGroupColor(CMFCPropertyGridCtrl* pPropList);
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagervs2005__gettabframecolors"></a>  CMFCVisualManagerVS2005::GetTabFrameColors  
+##  <a name="gettabframecolors"></a>  CMFCVisualManagerVS2005::GetTabFrameColors  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -157,7 +157,7 @@ virtual void GetTabFrameColors(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagervs2005__hasoverlappedautohidebuttons"></a>  CMFCVisualManagerVS2005::HasOverlappedAutoHideButtons  
+##  <a name="hasoverlappedautohidebuttons"></a>  CMFCVisualManagerVS2005::HasOverlappedAutoHideButtons  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -170,7 +170,7 @@ virtual BOOL HasOverlappedAutoHideButtons() const;
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagervs2005__ondrawautohidebuttonborder"></a>  CMFCVisualManagerVS2005::OnDrawAutoHideButtonBorder  
+##  <a name="ondrawautohidebuttonborder"></a>  CMFCVisualManagerVS2005::OnDrawAutoHideButtonBorder  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -189,7 +189,7 @@ virtual void OnDrawAutoHideButtonBorder(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagervs2005__ondrawcaptionbutton"></a>  CMFCVisualManagerVS2005::OnDrawCaptionButton  
+##  <a name="ondrawcaptionbutton"></a>  CMFCVisualManagerVS2005::OnDrawCaptionButton  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -214,7 +214,7 @@ virtual void OnDrawCaptionButton(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagervs2005__ondrawpanecaption"></a>  CMFCVisualManagerVS2005::OnDrawPaneCaption  
+##  <a name="ondrawpanecaption"></a>  CMFCVisualManagerVS2005::OnDrawPaneCaption  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -237,7 +237,7 @@ virtual COLORREF OnDrawPaneCaption(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagervs2005__ondrawseparator"></a>  CMFCVisualManagerVS2005::OnDrawSeparator  
+##  <a name="ondrawseparator"></a>  CMFCVisualManagerVS2005::OnDrawSeparator  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -256,7 +256,7 @@ virtual void OnDrawSeparator(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagervs2005__ondrawtab"></a>  CMFCVisualManagerVS2005::OnDrawTab  
+##  <a name="ondrawtab"></a>  CMFCVisualManagerVS2005::OnDrawTab  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -277,7 +277,7 @@ virtual void OnDrawTab(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagervs2005__ondrawtoolboxframe"></a>  CMFCVisualManagerVS2005::OnDrawToolBoxFrame  
+##  <a name="ondrawtoolboxframe"></a>  CMFCVisualManagerVS2005::OnDrawToolBoxFrame  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -292,7 +292,7 @@ virtual void OnDrawToolBoxFrame(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagervs2005__onerasetabsarea"></a>  CMFCVisualManagerVS2005::OnEraseTabsArea  
+##  <a name="onerasetabsarea"></a>  CMFCVisualManagerVS2005::OnEraseTabsArea  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -309,7 +309,7 @@ virtual void OnEraseTabsArea(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagervs2005__onfillautohidebuttonbackground"></a>  CMFCVisualManagerVS2005::OnFillAutoHideButtonBackground  
+##  <a name="onfillautohidebuttonbackground"></a>  CMFCVisualManagerVS2005::OnFillAutoHideButtonBackground  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -326,7 +326,7 @@ virtual void OnFillAutoHideButtonBackground(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagervs2005__onfillhighlightedarea"></a>  CMFCVisualManagerVS2005::OnFillHighlightedArea  
+##  <a name="onfillhighlightedarea"></a>  CMFCVisualManagerVS2005::OnFillHighlightedArea  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -345,7 +345,7 @@ virtual void OnFillHighlightedArea(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagervs2005__onfillminiframecaption"></a>  CMFCVisualManagerVS2005::OnFillMiniFrameCaption  
+##  <a name="onfillminiframecaption"></a>  CMFCVisualManagerVS2005::OnFillMiniFrameCaption  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -366,7 +366,7 @@ virtual COLORREF OnFillMiniFrameCaption(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagervs2005__onupdatesystemcolors"></a>  CMFCVisualManagerVS2005::OnUpdateSystemColors  
+##  <a name="onupdatesystemcolors"></a>  CMFCVisualManagerVS2005::OnUpdateSystemColors  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  

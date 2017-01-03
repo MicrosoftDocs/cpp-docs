@@ -48,12 +48,12 @@ ATL helps you with all three elements required for handling events: implementing
 -   Deriving from [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md) for dispinterfaces not described in a type library or when you want to improve efficiency by not loading the type information at run time.  
   
 
- If you are implementing a custom or dual interface, you should advise the event source by calling [AtlAdvise](http://msdn.microsoft.com/Library/625a2f03-6b7f-4761-be5d-d2871d1d3254) or [CComPtrBase::Advise](../atl/reference/ccomptrbase-class.md#ccomptrbase__advise). You will need to keep track of the cookie returned by the call yourself. Call [AtlUnadvise](http://msdn.microsoft.com/Library/939d2e50-e2df-4e8f-a16a-e9650b8f0340) to break the connection.  
+ If you are implementing a custom or dual interface, you should advise the event source by calling [AtlAdvise](http://msdn.microsoft.com/Library/625a2f03-6b7f-4761-be5d-d2871d1d3254) or [CComPtrBase::Advise](../atl/reference/ccomptrbase-class.md#advise). You will need to keep track of the cookie returned by the call yourself. Call [AtlUnadvise](http://msdn.microsoft.com/Library/939d2e50-e2df-4e8f-a16a-e9650b8f0340) to break the connection.  
 
   
- If you are implementing a dispinterface using `IDispEventImpl` or `IDispEventSimpleImpl`, you should advise the event source by calling [IDispEventSimpleImpl::DispEventAdvise](../atl/reference/idispeventsimpleimpl-class.md#idispeventsimpleimpl__dispeventadvise). Call [IDispEventSimpleImpl::DispEventUnadvise](../atl/reference/idispeventsimpleimpl-class.md#idispeventsimpleimpl__dispeventunadvise) to break the connection.  
+ If you are implementing a dispinterface using `IDispEventImpl` or `IDispEventSimpleImpl`, you should advise the event source by calling [IDispEventSimpleImpl::DispEventAdvise](../atl/reference/idispeventsimpleimpl-class.md#dispeventadvise). Call [IDispEventSimpleImpl::DispEventUnadvise](../atl/reference/idispeventsimpleimpl-class.md#dispeventunadvise) to break the connection.  
   
- If you are using `IDispEventImpl` as a base class of a composite control, the event sources listed in the sink map will be advised and unadvised automatically using [CComCompositeControl::AdviseSinkMap](../atl/reference/ccomcompositecontrol-class.md#ccomcompositecontrol__advisesinkmap).  
+ If you are using `IDispEventImpl` as a base class of a composite control, the event sources listed in the sink map will be advised and unadvised automatically using [CComCompositeControl::AdviseSinkMap](../atl/reference/ccomcompositecontrol-class.md#advisesinkmap).  
   
  The `IDispEventImpl` and `IDispEventSimpleImpl` classes manage the cookie for you.  
   

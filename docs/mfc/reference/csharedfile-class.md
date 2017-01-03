@@ -51,14 +51,14 @@ class CSharedFile : public CMemFile
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSharedFile::CSharedFile](#csharedfile__csharedfile)|Constructs a `CSharedFile` object.|  
+|[CSharedFile::CSharedFile](#csharedfile)|Constructs a `CSharedFile` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSharedFile::Detach](#csharedfile__detach)|Closes the shared memory file and returns the handle of its memory block.|  
-|[CSharedFile::SetHandle](#csharedfile__sethandle)|Attaches the shared memory file to a memory block.|  
+|[CSharedFile::Detach](#detach)|Closes the shared memory file and returns the handle of its memory block.|  
+|[CSharedFile::SetHandle](#sethandle)|Attaches the shared memory file to a memory block.|  
   
 ## Remarks  
  Memory files behave like disk files except that the file is stored in RAM rather than on disk. A memory file is useful for fast temporary storage or for transferring raw bytes or serialized objects between independent processes.  
@@ -69,7 +69,7 @@ class CSharedFile : public CMemFile
   
  Please note that `CSharedFile` does not use memory-mapped files, and the data cannot be directly shared between processes.  
   
- `CSharedFile` objects can automatically allocate their own memory or you can attach your own memory block to the `CSharedFile` object by calling [CSharedFile::SetHandle](#csharedfile__sethandle). In either case, memory for growing the memory file automatically is allocated in `nGrowBytes`-sized increments if `nGrowBytes` is not zero.  
+ `CSharedFile` objects can automatically allocate their own memory or you can attach your own memory block to the `CSharedFile` object by calling [CSharedFile::SetHandle](#sethandle). In either case, memory for growing the memory file automatically is allocated in `nGrowBytes`-sized increments if `nGrowBytes` is not zero.  
   
  For more information, see the article [Files in MFC](../../mfc/files-in-mfc.md) and [File Handling](../../c-runtime-library/file-handling.md) in the *Run-Time Library Reference*.  
   
@@ -85,7 +85,7 @@ class CSharedFile : public CMemFile
 ## Requirements  
  **Header:** afxadv.h  
   
-##  <a name="csharedfile__csharedfile"></a>  CSharedFile::CSharedFile  
+##  <a name="csharedfile"></a>  CSharedFile::CSharedFile  
  Constructs a `CSharedFile` object and allocates memory for it.  
   
 ```  
@@ -101,7 +101,7 @@ CSharedFile(
  `nGrowBytes`  
  The memory allocation increment in bytes.  
   
-##  <a name="csharedfile__detach"></a>  CSharedFile::Detach  
+##  <a name="detach"></a>  CSharedFile::Detach  
  Call this function to close the memory file and detach it from the memory block.  
   
 ```  
@@ -112,9 +112,9 @@ HGLOBAL Detach();
  The handle of the memory block that contains the contents of the memory file.  
   
 ### Remarks  
- You can reopen it by calling [SetHandle](#csharedfile__sethandle), using the handle returned by **Detach**.  
+ You can reopen it by calling [SetHandle](#sethandle), using the handle returned by **Detach**.  
   
-##  <a name="csharedfile__sethandle"></a>  CSharedFile::SetHandle  
+##  <a name="sethandle"></a>  CSharedFile::SetHandle  
  Call this function to attach a block of global memory to the `CSharedFile` object.  
   
 ```  

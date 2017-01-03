@@ -1,5 +1,5 @@
 ---
-title: "binary_delegate (STL-CLR) | Microsoft Docs"
+title: "binary_delegate (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

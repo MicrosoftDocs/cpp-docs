@@ -41,7 +41,7 @@ This document shows how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_
 > [!WARNING]
 >  Although you typically use the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] in a [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] app, this example uses a console app for illustration. Functions such as `wprintf_s` are not available from a [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] app. For more information about the types and functions that you can use in a [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] app, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx) and [Win32 and COM for Windows Store apps](http://msdn.microsoft.com/library/windows/apps/br205757.aspx).  
   
-1.  Include (`#include`) any required [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)], [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)], or standard C++ library headers.  
+1.  Include (`#include`) any required [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)], [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)], or C++ Standard Library headers.  
   
      [!code-cpp[wrl-consume-event#2](../windows/codesnippet/CPP/how-to-handle-events-using-wrl_1.cpp)]  
   

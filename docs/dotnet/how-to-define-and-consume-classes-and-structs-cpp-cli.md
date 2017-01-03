@@ -523,8 +523,6 @@ in static constructor
   
 -   [interior_ptr (C++/CLI)](../windows/interior-ptr-cpp-cli.md)  
   
--   [How to: Use Indexed Properties](../misc/how-to-use-indexed-properties.md)  
-  
 ```  
   
 // compile with: /clr  

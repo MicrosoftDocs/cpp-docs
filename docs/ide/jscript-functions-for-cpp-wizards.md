@@ -57,7 +57,7 @@ translation.priority.ht:
 |[GetCodeForDllRegisterServer](../ide/getcodefordllregisterserver.md)|Retrieves the code to register a server.|  
 |[GetCodeForDllUnregisterServer](../ide/getcodefordllunregisterserver.md)|Retrieves the code to unregister a server.|  
 |[GetCodeForExitInstance](../ide/getcodeforexitinstance.md)|Helper function to get the text for `ExitInstance`.|  
-|[GetCodeForInitInstance](../ide/getcodeforinitinstance.md)|Helper function to get the text for [InitInstance](../Topic/CWinApp::InitInstance.md).|  
+|[GetCodeForInitInstance](../ide/getcodeforinitinstance.md)|Helper function to get the text for [InitInstance](../mfc/reference/cwinapp-class.md#initinstance).|  
 |[GetExportPragmas](../ide/getexportpragmas.md)|Retrieves the pragmas for exporting functions.|  
 |[GetInterfaceClasses](../ide/getinterfaceclasses.md)|Returns the `VCCodeClass` object associated with an interface.|  
 |[GetInterfaceType](../ide/getinterfacetype.md)|Returns the type of interface (for example, custom, dual, dispinterface, oleautomation).|  

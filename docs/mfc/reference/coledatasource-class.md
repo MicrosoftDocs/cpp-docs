@@ -59,31 +59,31 @@ class COleDataSource : public CCmdTarget
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleDataSource::COleDataSource](#coledatasource__coledatasource)|Constructs a `COleDataSource` object.|  
+|[COleDataSource::COleDataSource](#coledatasource)|Constructs a `COleDataSource` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleDataSource::CacheData](#coledatasource__cachedata)|Offers data in a specified format using a **STGMEDIUM** structure.|  
-|[COleDataSource::CacheGlobalData](#coledatasource__cacheglobaldata)|Offers data in a specified format using an `HGLOBAL`.|  
-|[COleDataSource::DelayRenderData](#coledatasource__delayrenderdata)|Offers data in a specified format using delayed rendering.|  
-|[COleDataSource::DelayRenderFileData](#coledatasource__delayrenderfiledata)|Offers data in a specified format in a `CFile` pointer.|  
-|[COleDataSource::DelaySetData](#coledatasource__delaysetdata)|Called for every format that is supported in `OnSetData`.|  
-|[COleDataSource::DoDragDrop](#coledatasource__dodragdrop)|Performs drag-and-drop operations with a data source.|  
-|[COleDataSource::Empty](#coledatasource__empty)|Empties the `COleDataSource` object of data.|  
-|[COleDataSource::FlushClipboard](#coledatasource__flushclipboard)|Renders all data to the Clipboard.|  
-|[COleDataSource::GetClipboardOwner](#coledatasource__getclipboardowner)|Verifies that the data placed on the Clipboard is still there.|  
-|[COleDataSource::OnRenderData](#coledatasource__onrenderdata)|Retrieves data as part of delayed rendering.|  
-|[COleDataSource::OnRenderFileData](#coledatasource__onrenderfiledata)|Retrieves data into a `CFile` as part of delayed rendering.|  
-|[COleDataSource::OnRenderGlobalData](#coledatasource__onrenderglobaldata)|Retrieves data into an `HGLOBAL` as part of delayed rendering.|  
-|[COleDataSource::OnSetData](#coledatasource__onsetdata)|Called to replace the data in the `COleDataSource` object.|  
-|[COleDataSource::SetClipboard](#coledatasource__setclipboard)|Places a `COleDataSource` object on the Clipboard.|  
+|[COleDataSource::CacheData](#cachedata)|Offers data in a specified format using a **STGMEDIUM** structure.|  
+|[COleDataSource::CacheGlobalData](#cacheglobaldata)|Offers data in a specified format using an `HGLOBAL`.|  
+|[COleDataSource::DelayRenderData](#delayrenderdata)|Offers data in a specified format using delayed rendering.|  
+|[COleDataSource::DelayRenderFileData](#delayrenderfiledata)|Offers data in a specified format in a `CFile` pointer.|  
+|[COleDataSource::DelaySetData](#delaysetdata)|Called for every format that is supported in `OnSetData`.|  
+|[COleDataSource::DoDragDrop](#dodragdrop)|Performs drag-and-drop operations with a data source.|  
+|[COleDataSource::Empty](#empty)|Empties the `COleDataSource` object of data.|  
+|[COleDataSource::FlushClipboard](#flushclipboard)|Renders all data to the Clipboard.|  
+|[COleDataSource::GetClipboardOwner](#getclipboardowner)|Verifies that the data placed on the Clipboard is still there.|  
+|[COleDataSource::OnRenderData](#onrenderdata)|Retrieves data as part of delayed rendering.|  
+|[COleDataSource::OnRenderFileData](#onrenderfiledata)|Retrieves data into a `CFile` as part of delayed rendering.|  
+|[COleDataSource::OnRenderGlobalData](#onrenderglobaldata)|Retrieves data into an `HGLOBAL` as part of delayed rendering.|  
+|[COleDataSource::OnSetData](#onsetdata)|Called to replace the data in the `COleDataSource` object.|  
+|[COleDataSource::SetClipboard](#setclipboard)|Places a `COleDataSource` object on the Clipboard.|  
   
 ## Remarks  
- You can create OLE data sources directly. Alternately, the [COleClientItem](../../mfc/reference/coleclientitem-class.md) and [COleServerItem](../../mfc/reference/coleserveritem-class.md) classes create OLE data sources in response to their `CopyToClipboard` and `DoDragDrop` member functions. See [COleServerItem::CopyToClipboard](../../mfc/reference/coleserveritem-class.md#coleserveritem__copytoclipboard) for a brief description. Override the `OnGetClipboardData` member function of your client item or server item class to add additional Clipboard formats to the data in the OLE data source created for the `CopyToClipboard` or `DoDragDrop` member function.  
+ You can create OLE data sources directly. Alternately, the [COleClientItem](../../mfc/reference/coleclientitem-class.md) and [COleServerItem](../../mfc/reference/coleserveritem-class.md) classes create OLE data sources in response to their `CopyToClipboard` and `DoDragDrop` member functions. See [COleServerItem::CopyToClipboard](../../mfc/reference/coleserveritem-class.md#copytoclipboard) for a brief description. Override the `OnGetClipboardData` member function of your client item or server item class to add additional Clipboard formats to the data in the OLE data source created for the `CopyToClipboard` or `DoDragDrop` member function.  
   
- Whenever you want to prepare data for a transfer, you should create an object of this class and fill it with your data using the most appropriate method for your data. The way it is inserted into a data source is directly affected by whether the data is supplied immediately (immediate rendering) or on demand (delayed rendering). For every Clipboard format in which you are providing data by passing the Clipboard format to be used (and an optional [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure), call [DelayRenderData](#coledatasource__delayrenderdata).  
+ Whenever you want to prepare data for a transfer, you should create an object of this class and fill it with your data using the most appropriate method for your data. The way it is inserted into a data source is directly affected by whether the data is supplied immediately (immediate rendering) or on demand (delayed rendering). For every Clipboard format in which you are providing data by passing the Clipboard format to be used (and an optional [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure), call [DelayRenderData](#delayrenderdata).  
   
  For more information about data sources and data transfer, see the article [Data Objects and Data Sources (OLE)](../../mfc/data-objects-and-data-sources-ole.md). In addition, the article [Clipboard Topics](../../mfc/clipboard.md) describes the OLE Clipboard mechanism.  
   
@@ -97,7 +97,7 @@ class COleDataSource : public CCmdTarget
 ## Requirements  
  **Header:** afxole.h  
   
-##  <a name="coledatasource__cachedata"></a>  COleDataSource::CacheData  
+##  <a name="cachedata"></a>  COleDataSource::CacheData  
  Call this function to specify a format in which data is offered during data transfer operations.  
   
 ```  
@@ -124,13 +124,13 @@ void CacheData(
   
  After the call to `CacheData` the **ptd** member of `lpFormatEtc` and the contents of `lpStgMedium` are owned by the data object, not by the caller.  
   
- To use delayed rendering, call the [DelayRenderData](#coledatasource__delayrenderdata) or [DelayRenderFileData](#coledatasource__delayrenderfiledata) member function. For more information on delayed rendering as handled by MFC, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).  
+ To use delayed rendering, call the [DelayRenderData](#delayrenderdata) or [DelayRenderFileData](#delayrenderfiledata) member function. For more information on delayed rendering as handled by MFC, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).  
   
  For more information, see the [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) and [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structures in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
   
  For more information, see [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="coledatasource__cacheglobaldata"></a>  COleDataSource::CacheGlobalData  
+##  <a name="cacheglobaldata"></a>  COleDataSource::CacheGlobalData  
  Call this function to specify a format in which data is offered during data transfer operations.  
   
 ```  
@@ -153,20 +153,20 @@ void CacheGlobalData(
 ### Remarks  
  This function provides the data using immediate rendering, so you must supply the data when calling the function; the data is cached until needed. Use the `CacheData` member function if you are supplying a large amount of data or if you require a structured storage medium.  
   
- To use delayed rendering, call the [DelayRenderData](#coledatasource__delayrenderdata) or [DelayRenderFileData](#coledatasource__delayrenderfiledata) member function. For more information on delayed rendering as handled by MFC, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).  
+ To use delayed rendering, call the [DelayRenderData](#delayrenderdata) or [DelayRenderFileData](#delayrenderfiledata) member function. For more information on delayed rendering as handled by MFC, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).  
   
  For more information, see the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
   
  For more information, see [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="coledatasource__coledatasource"></a>  COleDataSource::COleDataSource  
+##  <a name="coledatasource"></a>  COleDataSource::COleDataSource  
  Constructs a `COleDataSource` object.  
   
 ```  
 COleDataSource();
 ```  
   
-##  <a name="coledatasource__delayrenderdata"></a>  COleDataSource::DelayRenderData  
+##  <a name="delayrenderdata"></a>  COleDataSource::DelayRenderData  
  Call this function to specify a format in which data is offered during data transfer operations.  
   
 ```  
@@ -183,17 +183,17 @@ void DelayRenderData(
  Points to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure describing the format in which the data is to be offered. Provide a value for this parameter if you want to specify additional format information beyond the Clipboard format specified by `cfFormat`. If it is **NULL**, default values are used for the other fields in the **FORMATETC** structure.  
   
 ### Remarks  
- This function provides the data using delayed rendering, so the data is not supplied immediately. The [OnRenderData](#coledatasource__onrenderdata) or [OnRenderGlobalData](#coledatasource__onrenderglobaldata) member function is called to request the data.  
+ This function provides the data using delayed rendering, so the data is not supplied immediately. The [OnRenderData](#onrenderdata) or [OnRenderGlobalData](#onrenderglobaldata) member function is called to request the data.  
   
- Use this function if you are not going to supply your data through a `CFile` object. If you are going to supply the data through a `CFile` object, call the [DelayRenderFileData](#coledatasource__delayrenderfiledata) member function. For more information on delayed rendering as handled by MFC, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).  
+ Use this function if you are not going to supply your data through a `CFile` object. If you are going to supply the data through a `CFile` object, call the [DelayRenderFileData](#delayrenderfiledata) member function. For more information on delayed rendering as handled by MFC, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).  
   
- To use immediate rendering, call the [CacheData](#coledatasource__cachedata) or [CacheGlobalData](#coledatasource__cacheglobaldata) member function.  
+ To use immediate rendering, call the [CacheData](#cachedata) or [CacheGlobalData](#cacheglobaldata) member function.  
   
  For more information, see the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
   
  For more information, see [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="coledatasource__delayrenderfiledata"></a>  COleDataSource::DelayRenderFileData  
+##  <a name="delayrenderfiledata"></a>  COleDataSource::DelayRenderFileData  
  Call this function to specify a format in which data is offered during data transfer operations.  
   
 ```  
@@ -210,17 +210,17 @@ void DelayRenderFileData(
  Points to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure describing the format in which the data is to be offered. Provide a value for this parameter if you want to specify additional format information beyond the Clipboard format specified by `cfFormat`. If it is **NULL**, default values are used for the other fields in the **FORMATETC** structure.  
   
 ### Remarks  
- This function provides the data using delayed rendering, so the data is not supplied immediately. The [OnRenderFileData](#coledatasource__onrenderfiledata) member function is called to request the data.  
+ This function provides the data using delayed rendering, so the data is not supplied immediately. The [OnRenderFileData](#onrenderfiledata) member function is called to request the data.  
   
- Use this function if you are going to use a `CFile` object to supply the data. If you are not going to use a `CFile` object, call the [DelayRenderData](#coledatasource__delayrenderdata) member function. For more information on delayed rendering as handled by MFC, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).  
+ Use this function if you are going to use a `CFile` object to supply the data. If you are not going to use a `CFile` object, call the [DelayRenderData](#delayrenderdata) member function. For more information on delayed rendering as handled by MFC, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).  
   
- To use immediate rendering, call the [CacheData](#coledatasource__cachedata) or [CacheGlobalData](#coledatasource__cacheglobaldata) member function.  
+ To use immediate rendering, call the [CacheData](#cachedata) or [CacheGlobalData](#cacheglobaldata) member function.  
   
  For more information, see the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
   
  For more information, see [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="coledatasource__delaysetdata"></a>  COleDataSource::DelaySetData  
+##  <a name="delaysetdata"></a>  COleDataSource::DelaySetData  
  Call this function to support changing the contents of the data source.  
   
 ```  
@@ -237,14 +237,14 @@ void DelaySetData(
  Points to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure describing the format in which the data is to be replaced. Provide a value for this parameter if you want to specify additional format information beyond the Clipboard format specified by `cfFormat`. If it is **NULL**, default values are used for the other fields in the **FORMATETC** structure.  
   
 ### Remarks  
- [OnSetData](#coledatasource__onsetdata) will be called by the framework when this happens. This is only used when the framework returns the data source from [COleServerItem::GetDataSource](../../mfc/reference/coleserveritem-class.md#coleserveritem__getdatasource). If `DelaySetData` is not called, your `OnSetData` function will never be called. `DelaySetData` should be called for each Clipboard or **FORMATETC** format you support.  
+ [OnSetData](#onsetdata) will be called by the framework when this happens. This is only used when the framework returns the data source from [COleServerItem::GetDataSource](../../mfc/reference/coleserveritem-class.md#getdatasource). If `DelaySetData` is not called, your `OnSetData` function will never be called. `DelaySetData` should be called for each Clipboard or **FORMATETC** format you support.  
   
  For more information, see the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
   
  For more information, see [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="coledatasource__dodragdrop"></a>  COleDataSource::DoDragDrop  
- Call the `DoDragDrop` member function to perform a drag-and-drop operation for this data source, typically in an [CWnd::OnLButtonDown](../../mfc/reference/cwnd-class.md#cwnd__onlbuttondown) handler.  
+##  <a name="dodragdrop"></a>  COleDataSource::DoDragDrop  
+ Call the `DoDragDrop` member function to perform a drag-and-drop operation for this data source, typically in an [CWnd::OnLButtonDown](../../mfc/reference/cwnd-class.md#onlbuttondown) handler.  
   
 ```  
 DROPEFFECT DoDragDrop(
@@ -277,7 +277,7 @@ DROPEFFECT DoDragDrop(
 ### Remarks  
  The drag-and-drop operation does not start immediately. It waits until the mouse cursor leaves the rectangle specified by `lpRectStartDrag` or until a specified number of milliseconds have passed. If `lpRectStartDrag` is **NULL**, the size of the rectangle is one pixel.  
   
- The delay time is specified by a registry key setting. You can change the delay time by calling [CWinApp::WriteProfileString](../../mfc/reference/cwinapp-class.md#cwinapp__writeprofilestring) or [CWinApp::WriteProfileInt](../../mfc/reference/cwinapp-class.md#cwinapp__writeprofileint). If you do not specify the delay time, a default value of 200 milliseconds is used. Drag delay time is stored as follows:  
+ The delay time is specified by a registry key setting. You can change the delay time by calling [CWinApp::WriteProfileString](../../mfc/reference/cwinapp-class.md#writeprofilestring) or [CWinApp::WriteProfileInt](../../mfc/reference/cwinapp-class.md#writeprofileint). If you do not specify the delay time, a default value of 200 milliseconds is used. Drag delay time is stored as follows:  
   
 -   Windows NT   Drag delay time is stored in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\NT\CurrentVersion\IniFileMapping\win.ini\Windows\DragDelay.  
   
@@ -289,7 +289,7 @@ DROPEFFECT DoDragDrop(
   
  For more information, see the article [Drag and Drop: Implementing a Drop Source](../../mfc/drag-and-drop-implementing-a-drop-source.md).  
   
-##  <a name="coledatasource__empty"></a>  COleDataSource::Empty  
+##  <a name="empty"></a>  COleDataSource::Empty  
  Call this function to empty the `COleDataSource` object of data.  
   
 ```  
@@ -301,7 +301,7 @@ void Empty();
   
  For more information, see [ReleaseStgMedium](http://msdn.microsoft.com/library/windows/desktop/ms693491) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="coledatasource__flushclipboard"></a>  COleDataSource::FlushClipboard  
+##  <a name="flushclipboard"></a>  COleDataSource::FlushClipboard  
  Renders data that is on the Clipboard, and then lets you paste data from the Clipboard after your application shuts down.  
   
 ```  
@@ -309,10 +309,10 @@ static void PASCAL FlushClipboard();
 ```  
   
 ### Remarks  
- Use [SetClipboard](#coledatasource__setclipboard) to put data on the Clipboard.  
+ Use [SetClipboard](#setclipboard) to put data on the Clipboard.  
   
-##  <a name="coledatasource__getclipboardowner"></a>  COleDataSource::GetClipboardOwner  
- Determines whether the data on the Clipboard has changed since [SetClipboard](#coledatasource__setclipboard) was last called and, if so, identifies the current owner.  
+##  <a name="getclipboardowner"></a>  COleDataSource::GetClipboardOwner  
+ Determines whether the data on the Clipboard has changed since [SetClipboard](#setclipboard) was last called and, if so, identifies the current owner.  
   
 ```  
 static COleDataSource* PASCAL GetClipboardOwner();
@@ -321,7 +321,7 @@ static COleDataSource* PASCAL GetClipboardOwner();
 ### Return Value  
  The data source currently on the Clipboard, or **NULL** if there is nothing on the Clipboard or if the Clipboard is not owned by the calling application.  
   
-##  <a name="coledatasource__onrenderdata"></a>  COleDataSource::OnRenderData  
+##  <a name="onrenderdata"></a>  COleDataSource::OnRenderData  
  Called by the framework to retrieve data in the specified format.  
   
 ```  
@@ -341,7 +341,7 @@ virtual BOOL OnRenderData(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- The specified format is one previously placed in the `COleDataSource` object using the [DelayRenderData](#coledatasource__delayrenderdata) or [DelayRenderFileData](#coledatasource__delayrenderfiledata) member function for delayed rendering. The default implementation of this function will call [OnRenderFileData](#coledatasource__onrenderfiledata) or [OnRenderGlobalData](#coledatasource__onrenderglobaldata) if the supplied storage medium is either a file or memory, respectively. If neither of these formats are supplied, then the default implementation will return 0 and do nothing. For more information on delayed rendering as handled by MFC, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).  
+ The specified format is one previously placed in the `COleDataSource` object using the [DelayRenderData](#delayrenderdata) or [DelayRenderFileData](#delayrenderfiledata) member function for delayed rendering. The default implementation of this function will call [OnRenderFileData](#onrenderfiledata) or [OnRenderGlobalData](#onrenderglobaldata) if the supplied storage medium is either a file or memory, respectively. If neither of these formats are supplied, then the default implementation will return 0 and do nothing. For more information on delayed rendering as handled by MFC, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).  
   
  If `lpStgMedium`-> *tymed* is **TYMED_NULL**, the **STGMEDIUM** should be allocated and filled as specified by *lpFormatEtc->tymed*. If it is not **TYMED_NULL**, the **STGMEDIUM** should be filled in place with the data.  
   
@@ -349,7 +349,7 @@ virtual BOOL OnRenderData(
   
  For more information, see the [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) and [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structures, the [TYMED](http://msdn.microsoft.com/library/windows/desktop/ms691227) enumeration type, and [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
   
-##  <a name="coledatasource__onrenderfiledata"></a>  COleDataSource::OnRenderFileData  
+##  <a name="onrenderfiledata"></a>  COleDataSource::OnRenderFileData  
  Called by the framework to retrieve data in the specified format when the specified storage medium is a file.  
   
 ```  
@@ -369,13 +369,13 @@ virtual BOOL OnRenderFileData(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- The specified format is one previously placed in the `COleDataSource` object using the [DelayRenderData](#coledatasource__delayrenderdata) member function for delayed rendering. The default implementation of this function simply returns **FALSE**.  
+ The specified format is one previously placed in the `COleDataSource` object using the [DelayRenderData](#delayrenderdata) member function for delayed rendering. The default implementation of this function simply returns **FALSE**.  
   
- This is an advanced overridable. Override this function to supply your data in the requested format and medium. Depending on your data, you might want to override one of the other versions of this function instead. If you want to handle multiple storage media, override [OnRenderData](#coledatasource__onrenderdata). If your data is in a file, or is of variable size, override `OnRenderFileData`. For more information on delayed rendering as handled by MFC, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).  
+ This is an advanced overridable. Override this function to supply your data in the requested format and medium. Depending on your data, you might want to override one of the other versions of this function instead. If you want to handle multiple storage media, override [OnRenderData](#onrenderdata). If your data is in a file, or is of variable size, override `OnRenderFileData`. For more information on delayed rendering as handled by MFC, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).  
   
  For more information, see the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure and [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
   
-##  <a name="coledatasource__onrenderglobaldata"></a>  COleDataSource::OnRenderGlobalData  
+##  <a name="onrenderglobaldata"></a>  COleDataSource::OnRenderGlobalData  
  Called by the framework to retrieve data in the specified format when the specified storage medium is global memory.  
   
 ```  
@@ -395,15 +395,15 @@ virtual BOOL OnRenderGlobalData(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- The specified format is one previously placed in the `COleDataSource` object using the [DelayRenderData](#coledatasource__delayrenderdata) member function for delayed rendering. The default implementation of this function simply returns **FALSE**.  
+ The specified format is one previously placed in the `COleDataSource` object using the [DelayRenderData](#delayrenderdata) member function for delayed rendering. The default implementation of this function simply returns **FALSE**.  
   
  If `phGlobal` is **NULL**, then a new `HGLOBAL` should be allocated and returned in `phGlobal`. Otherwise, the `HGLOBAL` specified by `phGlobal` should be filled with the data. The amount of data placed in the `HGLOBAL` must not exceed the current size of the memory block. Also, the block cannot be reallocated to a larger size.  
   
- This is an advanced overridable. Override this function to supply your data in the requested format and medium. Depending on your data, you may want to override one of the other versions of this function instead. If you want to handle multiple storage media, override [OnRenderData](#coledatasource__onrenderdata). If your data is in a file, or is of variable size, override [OnRenderFileData](#coledatasource__onrenderfiledata). For more information on delayed rendering as handled by MFC, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).  
+ This is an advanced overridable. Override this function to supply your data in the requested format and medium. Depending on your data, you may want to override one of the other versions of this function instead. If you want to handle multiple storage media, override [OnRenderData](#onrenderdata). If your data is in a file, or is of variable size, override [OnRenderFileData](#onrenderfiledata). For more information on delayed rendering as handled by MFC, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).  
   
  For more information, see the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure and [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
   
-##  <a name="coledatasource__onsetdata"></a>  COleDataSource::OnSetData  
+##  <a name="onsetdata"></a>  COleDataSource::OnSetData  
  Called by the framework to set or replace the data in the `COleDataSource` object in the specified format.  
   
 ```  
@@ -433,16 +433,16 @@ virtual BOOL OnSetData(
   
  For more information, see the [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) and [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structures and the [ReleaseStgMedium](http://msdn.microsoft.com/library/windows/desktop/ms693491) and [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431) functions in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
   
-##  <a name="coledatasource__setclipboard"></a>  COleDataSource::SetClipboard  
- Puts the data contained in the `COleDataSource` object on the Clipboard after calling one of the following functions: [CacheData](#coledatasource__cachedata), [CacheGlobalData](#coledatasource__cacheglobaldata), [DelayRenderData](#coledatasource__delayrenderdata), or [DelayRenderFileData](#coledatasource__delayrenderfiledata).  
+##  <a name="setclipboard"></a>  COleDataSource::SetClipboard  
+ Puts the data contained in the `COleDataSource` object on the Clipboard after calling one of the following functions: [CacheData](#cachedata), [CacheGlobalData](#cacheglobaldata), [DelayRenderData](#delayrenderdata), or [DelayRenderFileData](#delayrenderfiledata).  
   
 ```  
 void SetClipboard();
 ```  
   
 ## See Also  
- [MFC Sample HIERSVR](../../top/visual-cpp-samples.md)   
- [MFC Sample OCLIENT](../../top/visual-cpp-samples.md)   
+ [MFC Sample HIERSVR](../../visual-cpp-samples.md)   
+ [MFC Sample OCLIENT](../../visual-cpp-samples.md)   
  [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [COleDataObject Class](../../mfc/reference/coledataobject-class.md)

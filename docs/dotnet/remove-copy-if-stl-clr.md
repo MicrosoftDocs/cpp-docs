@@ -1,5 +1,5 @@
 ---
-title: "remove_copy_if (STL-CLR) | Microsoft Docs"
+title: "remove_copy_if (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -46,7 +46,7 @@ template<class _InIt, class _OutIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `remove_copy_if`. For more information, see [remove_copy_if](http://msdn.microsoft.com/Library/76b1e0d6-26a8-4adb-a55e-c179fa4e2dac).  
+ This function behaves the same as the C++ Standard Library function `remove_copy_if`. For more information, see [remove_copy_if](http://msdn.microsoft.com/Library/76b1e0d6-26a8-4adb-a55e-c179fa4e2dac).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

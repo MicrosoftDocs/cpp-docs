@@ -155,7 +155,7 @@ static const int mon = 1;
   
  In Visual C++ 2002 and Visual C++ 2003, enumerators were weakly injected (visible in the enclosing scope unless there was another identifier with the same name).  
   
- If a standard C++ enum is defined (without **class** or `struct`), compiling with **/clr** will cause the enumeration to be compiled as a managed enum.  The enumeration still has the semantics of an unmanaged enumeration.  Note, the compiler injects an attribute, [Microsoft::VisualC::NativeEnumAttribute](assetId:///Microsoft::VisualC::NativeEnumAttribute?qualifyHint=False&autoUpgrade=True), which the Visual C++ compiler recognizes, to identify a programmer's intent for the enum to be a native enum.  Other compilers will simply see the standard enum as a managed enum.  
+ If a standard C++ enum is defined (without **class** or `struct`), compiling with **/clr** will cause the enumeration to be compiled as a managed enum.  The enumeration still has the semantics of an unmanaged enumeration.  Note, the compiler injects an attribute, `Microsoft::VisualC::NativeEnumAttribute`, which the Visual C++ compiler recognizes, to identify a programmer's intent for the enum to be a native enum.  Other compilers will simply see the standard enum as a managed enum.  
   
  A named, standard enum compiled with /clr will be visible in the assembly as a managed enum, and can be consumed by any other managed compiler.   However, an unnamed standard enum will not be publicly visible from the assembly.  
   
@@ -190,10 +190,6 @@ void f(E)
  For more information on CLR enums, see:  
   
 -   [Underlying Type of an Enum](../dotnet/how-to-define-and-consume-enums-in-cpp-cli.md)  
-  
--   [Managed and Standard Enumerations](../misc/how-to-convert-between-managed-and-standard-enumerations.md)  
-  
--   [Operators and Enumerations](../misc/operators-and-enumerations.md)  
   
 ### Requirements  
  Compiler option: **/clr**  

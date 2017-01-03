@@ -60,7 +60,7 @@ This topic illustrates several ways to provide work functions to the [concurrenc
   
 ## Example  
 
- The following example resembles the previous one, except that it uses the [std::bind1st](reference/concurrency-namespace-functions.md#bind1st) and [std::mem_fun](reference/concurrency-namespace-functions.md#mem_fun) functions to bind a `call` object to a class method.  
+ The following example resembles the previous one, except that it uses the [std::bind1st](../../standard-library/functional-functions.md#bind1st_function) and [std::mem_fun](../../standard-library/functional-functions.md#mem_fun_function) functions to bind a `call` object to a class method.  
 
   
  Use this technique if you have to bind a `call` or `transformer` object to a specific class method instead of the function call operator, `operator()`.  

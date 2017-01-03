@@ -55,7 +55,7 @@ This topic applies to the MFC ODBC classes.
   
  With a small amount of extra code, you can:  
   
--   [Determine what columns are available at run time](#_core_to_determine_the_columns_in_a_table_at_run_time).  
+-   [Determine what columns are available at run time](#_core_how_to_bind_columns_dynamically).  
   
 -   [Bind additional columns to your recordset dynamically, at run time](#_core_adding_the_columns).  
   
@@ -93,7 +93,6 @@ This topic applies to the MFC ODBC classes.
 2.  Provide storage for the new field data members. Because your main recordset class does not have field data members for unknown columns, you must provide a place to store the names, result values, and possibly data type information (if the columns are different data types).  
   
      One approach is to build one or more dynamic lists, one for the new columns' names, another for their result values, and a third for their data types (if necessary). These lists, particularly the value list, provide the information and the necessary storage for binding. The following figure illustrates building the lists.  
-  
      ![Building lists of columns to bind dynamically](../../data/odbc/media/vc37w61.gif "vc37w61")  
 Building Lists of Columns to Bind Dynamically  
   
@@ -104,16 +103,16 @@ Building Lists of Columns to Bind Dynamically
 ###  <a name="_core_lists_of_columns"></a> Lists of Columns  
  The four lists you need to work with are shown in the following table.  
   
- [Current-Table-Columns (List 1 in the illustration)](#_core_illustration_dynamic)  
+ **Current-Table-Columns (List 1 in the illustration)** 
  A list of the columns currently in the table on the data source. This list might match the list of columns currently bound in your recordset.  
   
- [Bound-Recordset-Columns (List 2 in the illustration)](#_core_illustration_dynamic)  
+ **Bound-Recordset-Columns (List 2 in the illustration)**  
  A list of the columns bound in your recordset. These columns already have RFX statements in your `DoFieldExchange` function.  
   
- [Columns-To-Bind-Dynamically (List 3 in the illustration)](#_core_illustration_dynamic)  
+ **Columns-To-Bind-Dynamically (List 3 in the illustration)**  
  A list of columns in the table but not in your recordset. These are the columns you want to bind dynamically.  
   
- [Dynamic-Column-Values (List 4 in the illustration)](#_core_illustration_dynamic)  
+ **Dynamic-Column-Values (List 4 in the illustration)**  
  A list containing storage for the values retrieved from the columns you bind dynamically. Elements of this list correspond to those in Columns-to-Bind-Dynamically, one to one.  
   
 ###  <a name="_core_building_your_lists"></a> Building Your Lists  
@@ -126,7 +125,7 @@ Building Lists of Columns to Bind Dynamically
 -   [Dynamically adding RFX calls for new columns](#_core_adding_rfx_calls_to_bind_the_columns).  
   
 ###  <a name="_core_determining_which_table_columns_are_not_in_your_recordset"></a> Determining Which Table Columns Are Not in Your Recordset  
- Build a list (Bound-Recordset-Columns, as in List 2 in the [illustration](#_core_illustration_dynamic)) that contains a list of the columns already bound in your main recordset. Then build a list (Columns-to-Bind-Dynamically, derived from Current-Table-Columns and Bound-Recordset-Columns) that contains column names that are in the table on the data source but not in your main recordset.  
+ Build a list (Bound-Recordset-Columns, as in List 2 in the illustration) that contains a list of the columns already bound in your main recordset. Then build a list (Columns-to-Bind-Dynamically, derived from Current-Table-Columns and Bound-Recordset-Columns) that contains column names that are in the table on the data source but not in your main recordset.  
   
 ##### To determine the names of columns not in the recordset (Columns-to-Bind-Dynamically)  
   
@@ -134,15 +133,15 @@ Building Lists of Columns to Bind Dynamically
   
      One approach is to create Bound-Recordset-Columns at design time. You can visually examine the RFX function calls in the recordset's `DoFieldExchange` function to get these names. Then, set up your list as an array initialized with the names.  
   
-     For example, the [illustration](#_core_illustration_dynamic) shows Bound-Recordset-Columns (List 2) with three elements. Bound-Recordset-Columns is missing the Phone column shown in Current-Table-Columns (List 1).  
+     For example, the illustration shows Bound-Recordset-Columns (List 2) with three elements. Bound-Recordset-Columns is missing the Phone column shown in Current-Table-Columns (List 1).  
   
 2.  Compare Current-Table-Columns and Bound-Recordset-Columns to build a list (Columns-to-Bind-Dynamically) of the columns not already bound in your main recordset.  
   
      One approach is to loop through your list of columns in the table at run time (Current-Table-Columns) and your list of columns already bound in your recordset (Bound-Recordset-Columns) in parallel. Into Columns-to-Bind-Dynamically put any names in Current-Table-Columns that do not appear in Bound-Recordset-Columns.  
   
-     For example, the [illustration](#_core_illustration_dynamic) shows Columns-to-Bind-Dynamically (List 3) with one element: the Phone column found in Current-Table-Columns (List 1) but not in Bound-Recordset-Columns (List 2).  
+     For example, the illustration shows Columns-to-Bind-Dynamically (List 3) with one element: the Phone column found in Current-Table-Columns (List 1) but not in Bound-Recordset-Columns (List 2).  
   
-3.  Build a list of Dynamic-Column-Values (as in List 4 in the [illustration](#_core_illustration_dynamic)) in which to store the data values corresponding to each column name stored in your list of columns to bind dynamically (Columns-to-Bind-Dynamically).  
+3.  Build a list of Dynamic-Column-Values (as in List 4 in the illustration) in which to store the data values corresponding to each column name stored in your list of columns to bind dynamically (Columns-to-Bind-Dynamically).  
   
      The elements of this list play the role of new recordset field data members. They are the storage locations to which the dynamic columns are bound. For descriptions of the lists, see [Lists of Columns](#_core_lists_of_columns).  
   
@@ -153,7 +152,7 @@ Building Lists of Columns to Bind Dynamically
   
 1.  Build Dynamic-Column-Values, parallel to Columns-to-Bind-Dynamically, to contain the value of the data in each column.  
   
-     For example, the [illustration](#_core_illustration_dynamic) shows Dynamic-Column-Values (List 4) with one element: a `CString` object containing the actual phone number for the current record: "555-1212".  
+     For example, the illustration shows Dynamic-Column-Values (List 4) with one element: a `CString` object containing the actual phone number for the current record: "555-1212".  
   
      In the most common case, Dynamic-Column-Values has elements of type `CString`. If you are dealing with columns of varying data types, you need a list that can contain elements of a variety of types.  
   

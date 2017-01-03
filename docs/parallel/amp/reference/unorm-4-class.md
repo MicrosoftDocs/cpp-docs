@@ -317,7 +317,7 @@ class unorm_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|[unorm_4::unorm_4 Constructor](#unorm_4__unorm_4_constructor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[unorm_4::unorm_4 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -477,7 +477,7 @@ class unorm_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|[unorm_4::size Constant](#unorm_4__size_constant)||  
+|[unorm_4::size Constant](#unorm_4__size)||  
   
 ### Public Data Members  
   
@@ -620,7 +620,7 @@ class unorm_4;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="unorm_4__unorm_4_constructor"></a>  unorm_4::unorm_4 Constructor  
+##  <a name="ctor"></a>  unorm_4::unorm_4 Constructor  
  Default constructor, initializes all elements with 0.  
   
 ```  
@@ -703,11 +703,11 @@ explicit inline unorm_4(
  `_Other`  
  The object used to initialize.  
   
-##  <a name="unorm_4__size_constant"></a>  unorm_4::size Constant  
+##  <a name="unorm_4__size"></a>  unorm_4::size Constant  
   
 ```  
 static const int size = 4;  
 ```  
   
 ## See Also  
- [Concurrency::graphics Namespace](../../../parallel/amp/reference/concurrency-graphics-namespace.md)
+ [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

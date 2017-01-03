@@ -34,25 +34,26 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# _HAS_ITERATOR_DEBUGGING
-Defines whether the iterator debugging feature is enabled in a debug build. By default, iterator debugging is enabled. For more information, see [Debug Iterator Support](../standard-library/debug-iterator-support.md).  
+# _HAS_ITERATOR_DEBUGGING  
+  
+Superseded by [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md), this macro defines whether the iterator debugging feature is enabled in a debug build. By default, iterator debugging is enabled in Debug builds and disabled in Retail builds. For more information, see [Debug Iterator Support](../standard-library/debug-iterator-support.md).  
   
 > [!IMPORTANT]
->  Use `_ITERATOR_DEBUG_LEVEL` to control `_HAS_ITERATOR_DEBUGGING`. For more information, see [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md).  
+> Direct use of the `_HAS_ITERATOR_DEBUGGING` macro is deprecated. Instead, use `_ITERATOR_DEBUG_LEVEL` to control iterator debug settings. For more information, see [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md).  
   
 ## Remarks  
- To enable iterator debugging in debug builds, set **_HAS_ITERATOR_DEBUGGING** to 1:  
+To enable iterator debugging in debug builds, set `_ITERATOR_DEBUG_LEVEL` to 2. This is equivalent to a `_HAS_ITERATOR_DEBUGGING` setting of 1, or enabled:  
   
 ```  
-#define _HAS_ITERATOR_DEBUGGING 1  
+#define _ITERATOR_DEBUG_LEVEL 2  
 ```  
   
- **_HAS_ITERATOR_DEBUGGING** cannot be set to 1 in retail builds.  
+`_ITERATOR_DEBUG_LEVEL` cannot be set to 2 (and `_HAS_ITERATOR_DEBUGGING` cannot be set to 1) in retail builds.  
   
- To disable iterator debugging in debug builds, set **_HAS_ITERATOR_DEBUGGING** to 0:  
+To disable debug iterators in debug builds, set `_ITERATOR_DEBUG_LEVEL` to 0 or 1. This is equivalent to a `_HAS_ITERATOR_DEBUGGING` setting of 0, or disabled:  
   
 ```  
-#define _HAS_ITERATOR_DEBUGGING 0  
+#define _ITERATOR_DEBUG_LEVEL 0  
 ```  
   
 ## See Also  

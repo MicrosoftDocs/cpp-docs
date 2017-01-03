@@ -38,7 +38,7 @@ translation.priority.mt:
 # runtime_exception Class
 The base type for exceptions in the C++ Accelerated Massive Parallelism (AMP) library.  
   
-## Syntax  
+### Syntax  
   
 ```  
 class runtime_exception : public std::exception;  
@@ -50,8 +50,8 @@ class runtime_exception : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[runtime_exception::runtime_exception Constructor](#runtime_exception__ctor)|Initializes a new instance of the `runtime_exception` class.|  
-|[runtime_exception::~runtime_exception Destructor](#runtime_exception__dtor)|Destroys the `runtime_exception` object.|  
+|[runtime_exception::runtime_exception Constructor](#ctor)|Initializes a new instance of the `runtime_exception` class.|  
+|[runtime_exception::~runtime_exception Destructor](#dtor)|Destroys the `runtime_exception` object.|  
   
 ### Public Methods  
   
@@ -64,7 +64,7 @@ class runtime_exception : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[runtime_exception::operator= Operator](#runtime_exception__operator_eq)|Copies the contents of the specified `runtime_exception` object into this one.|  
+|[runtime_exception::operator= Operator](#operator_eq)|Copies the contents of the specified `runtime_exception` object into this one.|  
   
 ## Inheritance Hierarchy  
  `exception`  
@@ -77,11 +77,73 @@ class runtime_exception : public std::exception;
  **Namespace:** Concurrency  
 
 ## <a name="runtime_exception__ctor"></a>  runtime_exception Constructor  
-## <a name="runtime_exception__dtor"></a>  ~runtime_exception Destructor  
+Initializes a new instance of the class.  
+  
+### Syntax  
+  
+```  
+runtime_exception(  
+    const char * _Message,  
+    HRESULT _Hresult ) throw();  
+  
+explicit runtime_exception(  
+    HRESULT _Hresult ) throw();  
+  
+runtime_exception(  
+    const runtime_exception & _Other ) throw();  
+```  
+  
+### Parameters  
+ `_Message`  
+ A description of the error that caused the exception.  
+  
+ `_Hresult`  
+ The HRESULT of error that caused the exception.  
+  
+ `_Other`  
+ The `runtime_exception` object to copy.  
+  
+### Return Value  
+ The `runtime_exception` object.  
+
+## <a name="dtor"></a>  ~runtime_exception Destructor  
+Destroys the object.  
+  
+### Syntax  
+  
+```  
+virtual ~runtime_exception() throw();  
+```  
+  
 ## <a name="runtime_exception__get_error_code"></a>  get_error_code   
+Returns the error code that caused the exception.  
+  
+### Syntax  
+  
+```  
+HRESULT get_error_code() const throw();  
+```  
+  
+### Return Value  
+ The HRESULT of error that caused the exception.  
+  
 ## <a name="runtime_exception__operator_eq"></a>  operator=   
+  Copies the contents of the specified `runtime_exception` object into this one.  
+  
+### Syntax  
+  
+```  
+runtime_exception & operator= (    const runtime_exception & _Other ) throw();  
+```  
+  
+### Parameters  
+ `_Other`  
+ The `runtime_exception` object to copy.  
+  
+### Return Value  
+ A reference to this `runtime_exception` object.  
   
 
   
 ## See Also  
- [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)
+ [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

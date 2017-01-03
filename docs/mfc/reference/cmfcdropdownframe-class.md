@@ -58,13 +58,13 @@ class CMFCDropDownFrame : public CMiniFrameWnd
 |||  
 |-|-|  
 |Name|Description|  
-|[CMFCDropDownFrame::Create](#cmfcdropdownframe__create)|Creates a `CMFCDropDownFrame` object.|  
+|[CMFCDropDownFrame::Create](#create)|Creates a `CMFCDropDownFrame` object.|  
 |`CMFCDropDownFrame::CreateObject`|Used by the framework to create a dynamic instance of this class type.|  
-|[CMFCDropDownFrame::GetParentMenuBar](#cmfcdropdownframe__getparentmenubar)|Retrieves the parent menu bar of the drop-down frame.|  
-|[CMFCDropDownFrame::GetParentPopupMenu](#cmfcdropdownframe__getparentpopupmenu)|Retrieves the parent pop-up menu of the drop-down frame.|  
+|[CMFCDropDownFrame::GetParentMenuBar](#getparentmenubar)|Retrieves the parent menu bar of the drop-down frame.|  
+|[CMFCDropDownFrame::GetParentPopupMenu](#getparentpopupmenu)|Retrieves the parent pop-up menu of the drop-down frame.|  
 |`CMFCDropDownFrame::GetThisClass`|Used by the framework to obtain a pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|  
-|[CMFCDropDownFrame::RecalcLayout](#cmfcdropdownframe__recalclayout)|Repositions the drop-down frame.|  
-|[CMFCDropDownFrame::SetAutoDestroy](#cmfcdropdownframe__setautodestroy)|Sets whether the child drop-down toolbar window is destroyed automatically.|  
+|[CMFCDropDownFrame::RecalcLayout](#recalclayout)|Repositions the drop-down frame.|  
+|[CMFCDropDownFrame::SetAutoDestroy](#setautodestroy)|Sets whether the child drop-down toolbar window is destroyed automatically.|  
   
 ### Remarks  
  This class is not intended to be used directly from your code.  
@@ -92,7 +92,7 @@ class CMFCDropDownFrame : public CMiniFrameWnd
 ## Requirements  
  **Header:** afxdropdowntoolbar.h  
   
-##  <a name="cmfcdropdownframe__create"></a>  CMFCDropDownFrame::Create  
+##  <a name="create"></a>  CMFCDropDownFrame::Create  
  Creates a `CMFCDropDownFrame` object.  
   
 ```  
@@ -117,11 +117,11 @@ virtual BOOL Create(
  `TRUE` if the drop-down frame was successfully created; otherwise `FALSE`.  
   
 ### Remarks  
- This method calls the base [CMiniFrameWnd::CreateEx](../../mfc/reference/cminiframewnd-class.md#cminiframewnd__createex) method to create the drop-down frame window with the `WS_POPUP` style. The drop-down frame window appears at the specified screen coordinates. This method fails if the [CMiniFrameWnd::CreateEx](../../mfc/reference/cminiframewnd-class.md#cminiframewnd__createex) method returns `FALSE`.  
+ This method calls the base [CMiniFrameWnd::CreateEx](../../mfc/reference/cminiframewnd-class.md#createex) method to create the drop-down frame window with the `WS_POPUP` style. The drop-down frame window appears at the specified screen coordinates. This method fails if the [CMiniFrameWnd::CreateEx](../../mfc/reference/cminiframewnd-class.md#createex) method returns `FALSE`.  
   
  The `CMFCDropDownFrame` class creates a copy of the provided `CMFCDropDownToolBar` parameter. This method copies the button images and button states from the `pWndOriginToolbar` parameter to the `m_pWndOriginToolbar` data member.  
   
-##  <a name="cmfcdropdownframe__getparentmenubar"></a>  CMFCDropDownFrame::GetParentMenuBar  
+##  <a name="getparentmenubar"></a>  CMFCDropDownFrame::GetParentMenuBar  
  Retrieves the parent menu bar of the drop-down frame.  
   
 ```  
@@ -136,7 +136,7 @@ CMFCMenuBar* GetParentMenuBar() const;
 ### Remarks  
  This method retrieves the parent menu bar from the parent button. This method returns `NULL` if the drop-down frame has no parent button or the parent button has no parent menu bar.  
   
-##  <a name="cmfcdropdownframe__getparentpopupmenu"></a>  CMFCDropDownFrame::GetParentPopupMenu  
+##  <a name="getparentpopupmenu"></a>  CMFCDropDownFrame::GetParentPopupMenu  
  Retrieves the parent pop-up menu of the drop-down frame.  
   
 ```  
@@ -151,7 +151,7 @@ CMFCDropDownFrame* GetParentPopupMenu() const;
 ### Remarks  
  This method retrieves the parent menu from the parent button. This method returns `NULL` if the drop-down frame has no parent button or the parent button has no parent menu.  
   
-##  <a name="cmfcdropdownframe__recalclayout"></a>  CMFCDropDownFrame::RecalcLayout  
+##  <a name="recalclayout"></a>  CMFCDropDownFrame::RecalcLayout  
  Repositions the drop-down frame.  
   
 ```  
@@ -168,7 +168,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 ### Remarks  
  The framework calls this method when the drop-down frame is created or the parent window is resized. This method calculates the position and size of the drop-down frame by using the position and size of the parent window.  
   
-##  <a name="cmfcdropdownframe__setautodestroy"></a>  CMFCDropDownFrame::SetAutoDestroy  
+##  <a name="setautodestroy"></a>  CMFCDropDownFrame::SetAutoDestroy  
  Sets whether the child drop-down toolbar window is destroyed automatically.  
   
 ```  

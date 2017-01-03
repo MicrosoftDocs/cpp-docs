@@ -73,6 +73,6 @@ typedef struct tagDELETEITEMSTRUCT { /* ditms */
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CWnd::OnDeleteItem](../../mfc/reference/cwnd-class.md#cwnd__ondeleteitem)
+ [CWnd::OnDeleteItem](../../mfc/reference/cwnd-class.md#ondeleteitem)
 
 

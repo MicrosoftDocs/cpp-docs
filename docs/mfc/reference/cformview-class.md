@@ -51,13 +51,13 @@ class CFormView : public CScrollView
   
 |Name|Description|  
 |----------|-----------------|  
-|[CFormView::CFormView](#cformview__cformview)|Constructs a `CFormView` object.|  
+|[CFormView::CFormView](#cformview)|Constructs a `CFormView` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CFormView::IsInitDlgCompleted](#cformview__isinitdlgcompleted)|Used for synchronization during initialization.|  
+|[CFormView::IsInitDlgCompleted](#isinitdlgcompleted)|Used for synchronization during initialization.|  
   
 ## Remarks  
  A form view is essentially a view that contains controls. These controls are laid out based on a dialog-template resource. Use `CFormView` if you want forms in your application. These views support scrolling, as needed, using the [CScrollView](../../mfc/reference/cscrollview-class.md) functionality.  
@@ -84,7 +84,7 @@ class CFormView : public CScrollView
 ## Requirements  
  **Header:** afxext.h  
   
-##  <a name="cformview__cformview"></a>  CFormView::CFormView  
+##  <a name="cformview"></a>  CFormView::CFormView  
  Constructs a `CFormView` object.  
   
 ```  
@@ -114,7 +114,7 @@ CFormView(UINT nIDTemplate);
   
  [!code-cpp[NVC_MFCDocView#91](../../mfc/codesnippet/cpp/cformview-class_2.cpp)]  
   
-##  <a name="cformview__isinitdlgcompleted"></a>  CFormView::IsInitDlgCompleted  
+##  <a name="isinitdlgcompleted"></a>  CFormView::IsInitDlgCompleted  
  Used by MFC to ensure that initialization is completed before performing other operations.  
   
 ```  
@@ -127,8 +127,8 @@ BOOL IsInitDlgCompleted() const;
  True if the initialization function for this dialog has completed.  
   
 ## See Also  
- [MFC Sample SNAPVW](../../top/visual-cpp-samples.md)   
- [MFC Sample VIEWEX](../../top/visual-cpp-samples.md)   
+ [MFC Sample SNAPVW](../../visual-cpp-samples.md)   
+ [MFC Sample VIEWEX](../../visual-cpp-samples.md)   
  [CScrollView Class](../../mfc/reference/cscrollview-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CDialog Class](../../mfc/reference/cdialog-class.md)   

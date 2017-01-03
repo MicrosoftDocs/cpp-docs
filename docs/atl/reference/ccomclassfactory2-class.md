@@ -65,11 +65,11 @@ template <class license>  class CComClassFactory2 : public IClassFactory2,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComClassFactory2::CreateInstance](#ccomclassfactory2__createinstance)|Creates an object of the specified CLSID.|  
-|[CComClassFactory2::CreateInstanceLic](#ccomclassfactory2__createinstancelic)|Given a license key, creates an object of the specified CLSID.|  
-|[CComClassFactory2::GetLicInfo](#ccomclassfactory2__getlicinfo)|Retrieves information describing the licensing capabilities of the class factory.|  
-|[CComClassFactory2::LockServer](#ccomclassfactory2__lockserver)|Locks the class factory in memory.|  
-|[CComClassFactory2::RequestLicKey](#ccomclassfactory2__requestlickey)|Creates and returns a license key.|  
+|[CComClassFactory2::CreateInstance](#createinstance)|Creates an object of the specified CLSID.|  
+|[CComClassFactory2::CreateInstanceLic](#createinstancelic)|Given a license key, creates an object of the specified CLSID.|  
+|[CComClassFactory2::GetLicInfo](#getlicinfo)|Retrieves information describing the licensing capabilities of the class factory.|  
+|[CComClassFactory2::LockServer](#lockserver)|Locks the class factory in memory.|  
+|[CComClassFactory2::RequestLicKey](#requestlickey)|Creates and returns a license key.|  
   
 ## Remarks  
  `CComClassFactory2` implements the [IClassFactory2](http://msdn.microsoft.com/library/windows/desktop/ms692720) interface, which is an extension of [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364). **IClassFactory2** controls object creation through a license. A class factory executing on a licensed machine can provide a run-time license key. This license key allows an application to instantiate objects when a full machine license does not exist.  
@@ -98,7 +98,7 @@ template <class license>  class CComClassFactory2 : public IClassFactory2,
 ## Requirements  
  **Header:** atlcom.h  
   
-##  <a name="ccomclassfactory2__createinstance"></a>  CComClassFactory2::CreateInstance  
+##  <a name="createinstance"></a>  CComClassFactory2::CreateInstance  
  Creates an object of the specified CLSID and retrieves an interface pointer to this object.  
   
 ```
@@ -121,10 +121,10 @@ STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter,
  A standard `HRESULT` value.  
   
 ### Remarks  
- Requires the machine to be fully licensed. If a full machine license does not exist, call [CreateInstanceLic](#ccomclassfactory2__createinstancelic).  
+ Requires the machine to be fully licensed. If a full machine license does not exist, call [CreateInstanceLic](#createinstancelic).  
   
-##  <a name="ccomclassfactory2__createinstancelic"></a>  CComClassFactory2::CreateInstanceLic  
- Similar to [CreateInstance](#ccomclassfactory2__createinstance), except that `CreateInstanceLic` requires a license key.  
+##  <a name="createinstancelic"></a>  CComClassFactory2::CreateInstanceLic  
+ Similar to [CreateInstance](#createinstance), except that `CreateInstanceLic` requires a license key.  
   
 ```
 STDMETHOD(CreateInstanceLic)(
@@ -156,9 +156,9 @@ STDMETHOD(CreateInstanceLic)(
  A standard `HRESULT` value.  
   
 ### Remarks  
- You can obtain a license key using [RequestLicKey](#ccomclassfactory2__requestlickey). In order to create an object on an unlicensed machine, you must call `CreateInstanceLic`.  
+ You can obtain a license key using [RequestLicKey](#requestlickey). In order to create an object on an unlicensed machine, you must call `CreateInstanceLic`.  
   
-##  <a name="ccomclassfactory2__getlicinfo"></a>  CComClassFactory2::GetLicInfo  
+##  <a name="getlicinfo"></a>  CComClassFactory2::GetLicInfo  
  Fills a [LICINFO](http://msdn.microsoft.com/library/windows/desktop/ms690590) structure with information that describes the class factory's licensing capabilities.  
   
 ```
@@ -175,7 +175,7 @@ STDMETHOD(GetLicInfo)(LICINFO* pLicInfo);
 ### Remarks  
  The `fRuntimeKeyAvail` member of this structure indicates whether, given a license key, the class factory allows objects to be created on an unlicensed machine. The *fLicVerified* member indicates whether a full machine license exists.  
   
-##  <a name="ccomclassfactory2__lockserver"></a>  CComClassFactory2::LockServer  
+##  <a name="lockserver"></a>  CComClassFactory2::LockServer  
  Increments and decrements the module lock count by calling **_Module::Lock** and **_Module::Unlock**, respectively.  
   
 ```
@@ -194,7 +194,7 @@ STDMETHOD(LockServer)(BOOL fLock);
   
  Calling `LockServer` allows a client to hold onto a class factory so that multiple objects can be quickly created.  
   
-##  <a name="ccomclassfactory2__requestlickey"></a>  CComClassFactory2::RequestLicKey  
+##  <a name="requestlickey"></a>  CComClassFactory2::RequestLicKey  
  Creates and returns a license key, provided that the `fRuntimeKeyAvail` member of the [LICINFO](http://msdn.microsoft.com/library/windows/desktop/ms690590) structure is **TRUE**.  
   
 ```
@@ -213,9 +213,9 @@ STDMETHOD(RequestLicKey)(DWORD dwReserved,
  A standard `HRESULT` value.  
   
 ### Remarks  
- A license key is required for calling [CreateInstanceLic](#ccomclassfactory2__createinstancelic) to create an object on an unlicensed machine. If `fRuntimeKeyAvail` is **FALSE**, then objects can only be created on a fully licensed machine.  
+ A license key is required for calling [CreateInstanceLic](#createinstancelic) to create an object on an unlicensed machine. If `fRuntimeKeyAvail` is **FALSE**, then objects can only be created on a fully licensed machine.  
   
- Call [GetLicInfo](#ccomclassfactory2__getlicinfo) to retrieve the value of `fRuntimeKeyAvail`.  
+ Call [GetLicInfo](#getlicinfo) to retrieve the value of `fRuntimeKeyAvail`.  
   
 ## See Also  
  [CComClassFactoryAutoThread Class](../../atl/reference/ccomclassfactoryautothread-class.md)   

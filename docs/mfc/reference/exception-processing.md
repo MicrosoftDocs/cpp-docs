@@ -140,7 +140,7 @@ CATCH(exception_class, exception_object_pointer_name)
 ### Remarks  
  The exception-processing code can interrogate the exception object, if appropriate, to get more information about the specific cause of the exception. Invoke the `THROW_LAST` macro to shift processing to the next outer exception frame. End the **TRY** block with an `END_CATCH` macro.  
   
- If *exception_class* is the class `CException`, then all exception types will be caught. You can use the [CObject::IsKindOf](../../mfc/reference/cobject-class.md#cobject__iskindof) member function to determine which specific exception was thrown. A better way to catch several kinds of exceptions is to use sequential `AND_CATCH` statements, each with a different exception type.  
+ If *exception_class* is the class `CException`, then all exception types will be caught. You can use the [CObject::IsKindOf](../../mfc/reference/cobject-class.md#iskindof) member function to determine which specific exception was thrown. A better way to catch several kinds of exceptions is to use sequential `AND_CATCH` statements, each with a different exception type.  
   
  The exception object pointer is created by the macro. You do not need to declare it yourself.  
   
@@ -172,7 +172,7 @@ CATCH_ALL(exception_object_pointer_name)
  For more information on exceptions, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).  
   
 ### Example  
- See the example for [CFile::Abort](../../mfc/reference/cfile-class.md#cfile__abort).  
+ See the example for [CFile::Abort](../../mfc/reference/cfile-class.md#abort).  
   
 ##  <a name="and_catch"></a>  AND_CATCH  
  Defines a block of code for catching additional exception types thrown in a preceding **TRY** block.  
@@ -264,7 +264,7 @@ THROW_LAST()
  For more information, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).  
   
 ### Example  
- See the example for [CFile::Abort](../../mfc/reference/cfile-class.md#cfile__abort).  
+ See the example for [CFile::Abort](../../mfc/reference/cfile-class.md#abort).  
   
 ##  <a name="afxthrowarchiveexception"></a>  AfxThrowArchiveException  
  Throws an archive exception.  
@@ -275,7 +275,7 @@ void  AfxThrowArchiveException(int cause, LPCTSTR lpszArchiveName);
   
 ### Parameters  
  `cause`  
- Specifies an integer that indicates the reason for the exception. For a list of the possible values, see [CArchiveException::m_cause](../../mfc/reference/carchiveexception-class.md#carchiveexception__m_cause).  
+ Specifies an integer that indicates the reason for the exception. For a list of the possible values, see [CArchiveException::m_cause](../../mfc/reference/carchiveexception-class.md#m_cause).  
   
  `lpszArchiveName`  
  Points to a string containing the name of the `CArchive` object that caused the exception (if available).  
@@ -292,7 +292,7 @@ void AfxThrowFileException(
   
 ### Parameters  
  `cause`  
- Specifies an integer that indicates the reason for the exception. For a list of the possible values, see [CFileException::m_cause](../../mfc/reference/cfileexception-class.md#cfileexception__m_cause).  
+ Specifies an integer that indicates the reason for the exception. For a list of the possible values, see [CFileException::m_cause](../../mfc/reference/cfileexception-class.md#m_cause).  
   
  `lOsError`  
  Contains the operating-system error number (if available) that states the reason for the exception. See your operating-system manual for a listing of error codes.  
@@ -403,10 +403,10 @@ void AFXAPI AfxThrowDaoException(
   
 ### Parameters  
  `nAfxDaoError`  
- An integer value representing a DAO extended error code, which can be one of the values listed under [CDaoException::m_nAfxDaoError](../../mfc/reference/cdaoexception-class.md#cdaoexception__m_nafxdaoerror).  
+ An integer value representing a DAO extended error code, which can be one of the values listed under [CDaoException::m_nAfxDaoError](../../mfc/reference/cdaoexception-class.md#m_nafxdaoerror).  
   
  *scode*  
- An OLE error code from DAO, of type `SCODE`. For information, see [CDaoException::m_scode](../../mfc/reference/cdaoexception-class.md#cdaoexception__m_scode).  
+ An OLE error code from DAO, of type `SCODE`. For information, see [CDaoException::m_scode](../../mfc/reference/cdaoexception-class.md#m_scode).  
   
 ### Remarks  
  The framework also calls `AfxThrowDaoException`. In your call, you can pass one of the parameters or both. For example, if you want to raise one of the errors defined in **CDaoException::nAfxDaoError** but you do not care about the *scode* parameter, pass a valid code in the `nAfxDaoError` parameter and accept the default value for *scode*.  

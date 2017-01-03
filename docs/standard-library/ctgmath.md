@@ -31,7 +31,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # &lt;ctgmath&gt;
-In effect, includes the Standard C++ library headers \<ccomplex> and \<cmath>, which provide type-generic math macros equivalent to \<tgmath.h>.  
+In effect, includes the C++ Standard Library headers \<ccomplex> and \<cmath>, which provide type-generic math macros equivalent to \<tgmath.h>.  
   
 ## Syntax  
   
@@ -49,7 +49,7 @@ In effect, includes the Standard C++ library headers \<ccomplex> and \<cmath>, w
  [\<ccomplex>](../standard-library/ccomplex.md)   
  [\<cmath>](../standard-library/cmath.md)   
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   
- [STL Overview](../standard-library/cpp-standard-library-overview.md)   
+ [C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 
 

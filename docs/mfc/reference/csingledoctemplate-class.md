@@ -52,7 +52,7 @@ class CSingleDocTemplate : public CDocTemplate
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSingleDocTemplate::CSingleDocTemplate](#csingledoctemplate__csingledoctemplate)|Constructs a `CSingleDocTemplate` object.|  
+|[CSingleDocTemplate::CSingleDocTemplate](#csingledoctemplate)|Constructs a `CSingleDocTemplate` object.|  
   
 ## Remarks  
  An SDI application uses the main frame window to display a document; only one document can be open at a time.  
@@ -83,7 +83,7 @@ class CSingleDocTemplate : public CDocTemplate
 ## Requirements  
  **Header:** afxwin.h  
   
-##  <a name="csingledoctemplate__csingledoctemplate"></a>  CSingleDocTemplate::CSingleDocTemplate  
+##  <a name="csingledoctemplate"></a>  CSingleDocTemplate::CSingleDocTemplate  
  Constructs a `CSingleDocTemplate` object.  
   
 ```  
@@ -98,7 +98,7 @@ CSingleDocTemplate(
  `nIDResource`  
  Specifies the ID of the resources used with the document type. This may include menu, icon, accelerator table, and string resources.  
   
- The string resource consists of up to seven substrings separated by the '\n' character (the '\n' character is needed as a placeholder if a substring is not included; however, trailing '\n' characters are not necessary); these substrings describe the document type. For information about the substrings, see [CDocTemplate::GetDocString](../../mfc/reference/cdoctemplate-class.md#cdoctemplate__getdocstring). This string resource is found in the application's resource file. For example:  
+ The string resource consists of up to seven substrings separated by the '\n' character (the '\n' character is needed as a placeholder if a substring is not included; however, trailing '\n' characters are not necessary); these substrings describe the document type. For information about the substrings, see [CDocTemplate::GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring). This string resource is found in the application's resource file. For example:  
   
  `// MYCALC.RC`  
   
@@ -132,7 +132,7 @@ CSingleDocTemplate(
  [!code-cpp[NVC_MFCDocViewSDI#14](../../mfc/codesnippet/cpp/csingledoctemplate-class_2.cpp)]  
   
 ## See Also  
- [MFC Sample DOCKTOOL](../../top/visual-cpp-samples.md)   
+ [MFC Sample DOCKTOOL](../../visual-cpp-samples.md)   
  [CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)   

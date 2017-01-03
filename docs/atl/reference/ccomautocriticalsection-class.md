@@ -51,13 +51,13 @@ class CComAutoCriticalSection : public CComCriticalSection
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComAutoCriticalSection::CComAutoCriticalSection](#ccomautocriticalsection__ccomautocriticalsection)|The constructor.|  
-|[CComAutoCriticalSection::~CComAutoCriticalSection](#ccomautocriticalsection___dtorccomautocriticalsection)|The destructor.|  
+|[CComAutoCriticalSection::CComAutoCriticalSection](#ccomautocriticalsection)|The constructor.|  
+|[CComAutoCriticalSection::~CComAutoCriticalSection](#dtor)|The destructor.|  
   
 ## Remarks  
  `CComAutoCriticalSection` is similar to class [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md), except `CComAutoCriticalSection` automatically initializes the critical section object in the constructor.  
   
- Typically, you use `CComAutoCriticalSection` through the `typedef` name [AutoCriticalSection](ccommultithreadmodel-class.md#ccommultithreadmodel__autocriticalsection). This name references `CComAutoCriticalSection` when [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) is being used.  
+ Typically, you use `CComAutoCriticalSection` through the `typedef` name [AutoCriticalSection](ccommultithreadmodel-class.md#autocriticalsection). This name references `CComAutoCriticalSection` when [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) is being used.  
 
   
  The `Init` and `Term` methods from [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md) are not available when using this class.  
@@ -70,7 +70,7 @@ class CComAutoCriticalSection : public CComCriticalSection
 ## Requirements  
  **Header:** atlcore.h  
   
-##  <a name="ccomautocriticalsection__ccomautocriticalsection"></a>  CComAutoCriticalSection::CComAutoCriticalSection  
+##  <a name="ccomautocriticalsection"></a>  CComAutoCriticalSection::CComAutoCriticalSection  
  The constructor.  
   
 ```
@@ -80,7 +80,7 @@ CComAutoCriticalSection();
 ### Remarks  
  Calls the Win32 function [InitializeCriticalSection](http://msdn.microsoft.com/library/windows/desktop/ms683472), which initializes the critical section object.  
   
-##  <a name="ccomautocriticalsection___dtorccomautocriticalsection"></a>  CComAutoCriticalSection::~CComAutoCriticalSection  
+##  <a name="dtor"></a>  CComAutoCriticalSection::~CComAutoCriticalSection  
  The destructor.  
   
 ```

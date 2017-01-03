@@ -79,12 +79,12 @@ This article describes topics related to implementing advanced properties in an 
 ##  <a name="_core_returning_error_codes_from_a_property"></a> Returning Error Codes From a Property  
  To indicate that an error has occurred while attempting to get or set a property, use the `COleControl::ThrowError` function, which takes an `SCODE` (status code) as a parameter. You can use a predefined `SCODE` or define one of your own. For a list of predefined `SCODE`s and instructions for defining custom `SCODE`s, see [Handling Errors in Your ActiveX Control](../mfc/mfc-activex-controls-advanced-topics.md) in the article ActiveX controls: Advanced Topics.  
   
- Helper functions exist for the most common predefined `SCODE`s, such as [COleControl::SetNotSupported](../mfc/reference/colecontrol-class.md#colecontrol__setnotsupported), [COleControl::GetNotSupported](../mfc/reference/colecontrol-class.md#colecontrol__getnotsupported), and [COleControl::SetNotPermitted](../mfc/reference/colecontrol-class.md#colecontrol__setnotpermitted).  
+ Helper functions exist for the most common predefined `SCODE`s, such as [COleControl::SetNotSupported](../mfc/reference/colecontrol-class.md#setnotsupported), [COleControl::GetNotSupported](../mfc/reference/colecontrol-class.md#getnotsupported), and [COleControl::SetNotPermitted](../mfc/reference/colecontrol-class.md#setnotpermitted).  
   
 > [!NOTE]
 >  `ThrowError` is meant to be used only as a means of returning an error from within a property's Get or Set function or an automation method. These are the only times that the appropriate exception handler will be present on the stack.  
   
- For more information on reporting exceptions in other areas of the code, see [COleControl::FireError](../mfc/reference/colecontrol-class.md#colecontrol__fireerror) and the section [Handling Errors in Your ActiveX Control](../mfc/mfc-activex-controls-advanced-topics.md) in the article ActiveX Controls: Advanced Topics.  
+ For more information on reporting exceptions in other areas of the code, see [COleControl::FireError](../mfc/reference/colecontrol-class.md#fireerror) and the section [Handling Errors in Your ActiveX Control](../mfc/mfc-activex-controls-advanced-topics.md) in the article ActiveX Controls: Advanced Topics.  
   
 ## See Also  
  [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)   

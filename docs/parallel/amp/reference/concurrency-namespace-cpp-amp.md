@@ -80,7 +80,7 @@ namespace Concurrency;
 |Name|Description|  
 |----------|-----------------|  
 |[access_type Enumeration](concurrency-namespace-enums-amp.md#access_type)|Specifies the data access type.|  
-|[queuing_mode Enumeration](oncurrency-namespace-enums-amp.md#queuing_mode_enumeration)|Specifies the queuing modes that are supported on the accelerator.|  
+|[queuing_mode Enumeration](concurrency-namespace-enums-amp.md#queuing_mode)|Specifies the queuing modes that are supported on the accelerator.|  
   
 ### Operators  
   

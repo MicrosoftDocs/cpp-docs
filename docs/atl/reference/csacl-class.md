@@ -54,23 +54,23 @@ class CSacl : public CAcl
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSacl::CSacl](#csacl__csacl)|The constructor.|  
-|[CSacl::~CSacl](#csacl___dtorcsacl)|The destructor.|  
+|[CSacl::CSacl](#csacl)|The constructor.|  
+|[CSacl::~CSacl](#dtor)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSacl::AddAuditAce](#csacl__addauditace)|Adds an audit access-control entry (ACE) to the `CSacl` object.|  
-|[CSacl::GetAceCount](#csacl__getacecount)|Returns the number of access-control entries (ACEs) in the `CSacl` object.|  
-|[CSacl::RemoveAce](#csacl__removeace)|Removes a specific ACE (access-control entry) from the **CSacl** object.|  
-|[CSacl::RemoveAllAces](#csacl__removeallaces)|Removes all of the ACEs contained in the `CSacl` object.|  
+|[CSacl::AddAuditAce](#addauditace)|Adds an audit access-control entry (ACE) to the `CSacl` object.|  
+|[CSacl::GetAceCount](#getacecount)|Returns the number of access-control entries (ACEs) in the `CSacl` object.|  
+|[CSacl::RemoveAce](#removeace)|Removes a specific ACE (access-control entry) from the **CSacl** object.|  
+|[CSacl::RemoveAllAces](#removeallaces)|Removes all of the ACEs contained in the `CSacl` object.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSacl::operator =](#csacl__operator_eq)|Assignment operator.|  
+|[CSacl::operator =](#operator_eq)|Assignment operator.|  
   
 ## Remarks  
  A SACL contains access-control entries (ACEs) that specify the types of access attempts that generate audit records in the security event log of a domain controller. Note that a SACL generates log entries only on the domain controller where the access attempt occurred, not on every domain controller that contains a replica of the object.  
@@ -89,7 +89,7 @@ class CSacl : public CAcl
 ## Requirements  
  **Header:** atlsecurity.h  
   
-##  <a name="csacl__addauditace"></a>  CSacl::AddAuditAce  
+##  <a name="addauditace"></a>  CSacl::AddAuditAce  
  Adds an audit access-control entry (ACE) to the `CSacl` object.  
   
 ```
@@ -140,7 +140,7 @@ bool AddAuditAce(
   
  See [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) for a description of the various flags which can be set in the `AceFlags` parameter.  
   
-##  <a name="csacl__csacl"></a>  CSacl::CSacl  
+##  <a name="csacl"></a>  CSacl::CSacl  
  The constructor.  
   
 ```
@@ -155,7 +155,7 @@ CSacl(const ACL& rhs) throw(...);
 ### Remarks  
  The `CSacl` object can be optionally created using an existing **ACL** structure. Ensure that this parameter is a system access-control list (SACL) and not a discretionary access-control list (DACL). In debug builds, if a DACL is supplied an assertion will occur. In release builds any entries from a DACL are ignored.  
   
-##  <a name="csacl___dtorcsacl"></a>  CSacl::~CSacl  
+##  <a name="dtor"></a>  CSacl::~CSacl  
  The destructor.  
   
 ```
@@ -165,7 +165,7 @@ CSacl(const ACL& rhs) throw(...);
 ### Remarks  
  The destructor frees any resources acquired by the object, including all access-control entries (ACEs).  
   
-##  <a name="csacl__getacecount"></a>  CSacl::GetAceCount  
+##  <a name="getacecount"></a>  CSacl::GetAceCount  
  Returns the number of access-control entries (ACEs) in the `CSacl` object.  
   
 ```
@@ -175,7 +175,7 @@ UINT GetAceCount() const throw();
 ### Return Value  
  Returns the number of ACEs contained in the `CSacl` object.  
   
-##  <a name="csacl__operator_eq"></a>  CSacl::operator =  
+##  <a name="operator_eq"></a>  CSacl::operator =  
  Assignment operator.  
   
 ```
@@ -189,7 +189,7 @@ CSacl& operator=(const ACL& rhs) throw(...);
 ### Return Value  
  Returns a reference to the updated `CSacl` object. Ensure that the **ACL** parameter is actually a system access-control list (SACL) and not a discretionary access-control list (DACL). In debug builds an assertion will occur, and in release builds the **ACL** parameter will be ignored.  
   
-##  <a name="csacl__removeace"></a>  CSacl::RemoveAce  
+##  <a name="removeace"></a>  CSacl::RemoveAce  
  Removes a specific ACE (access-control entry) from the **CSacl** object.  
   
 ```
@@ -201,9 +201,9 @@ void RemoveAce(UINT   nIndex) throw();
  Index to the ACE entry to remove.  
   
 ### Remarks  
- This method is derived from [CAtlArray::RemoveAt](../../atl/reference/catlarray-class.md#catlarray__removeat).  
+ This method is derived from [CAtlArray::RemoveAt](../../atl/reference/catlarray-class.md#removeat).  
   
-##  <a name="csacl__removeallaces"></a>  CSacl::RemoveAllAces  
+##  <a name="removeallaces"></a>  CSacl::RemoveAllAces  
  Removes all of the access-control entries (ACEs) contained in the `CSacl` object.  
   
 ```

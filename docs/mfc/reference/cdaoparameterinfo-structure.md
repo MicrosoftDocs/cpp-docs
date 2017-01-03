@@ -60,14 +60,14 @@ struct CDaoParameterInfo
  The value of the parameter, stored in a [COleVariant](../../mfc/reference/colevariant-class.md) object.  
   
 ## Remarks  
- The references to Primary and Secondary above indicate how the information is returned by the [GetParameterInfo](../../mfc/reference/cdaoquerydef-class.md#cdaoquerydef__getparameterinfo) member function in class `CDaoQueryDef`.  
+ The references to Primary and Secondary above indicate how the information is returned by the [GetParameterInfo](../../mfc/reference/cdaoquerydef-class.md#getparameterinfo) member function in class `CDaoQueryDef`.  
   
- MFC does not encapsulate DAO parameter objects in a class. DAO querydef objects underlying MFC `CDaoQueryDef` objects store parameters in their Parameters collections. To access the parameter objects in a [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) object, call the querydef object's `GetParameterInfo` member function for a particular parameter name or an index into the Parameters collection. You can use the [CDaoQueryDef::GetParameterCount](../../mfc/reference/cdaoquerydef-class.md#cdaoquerydef__getparametercount) member function in conjunction with `GetParameterInfo` to loop through the Parameters collection.  
+ MFC does not encapsulate DAO parameter objects in a class. DAO querydef objects underlying MFC `CDaoQueryDef` objects store parameters in their Parameters collections. To access the parameter objects in a [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) object, call the querydef object's `GetParameterInfo` member function for a particular parameter name or an index into the Parameters collection. You can use the [CDaoQueryDef::GetParameterCount](../../mfc/reference/cdaoquerydef-class.md#getparametercount) member function in conjunction with `GetParameterInfo` to loop through the Parameters collection.  
   
- Information retrieved by the [CDaoQueryDef::GetParameterInfo](../../mfc/reference/cdaoquerydef-class.md#cdaoquerydef__getparameterinfo) member function is stored in a `CDaoParameterInfo` structure. Call `GetParameterInfo` for the querydef object in whose Parameters collection the parameter object is stored.  
+ Information retrieved by the [CDaoQueryDef::GetParameterInfo](../../mfc/reference/cdaoquerydef-class.md#getparameterinfo) member function is stored in a `CDaoParameterInfo` structure. Call `GetParameterInfo` for the querydef object in whose Parameters collection the parameter object is stored.  
   
 > [!NOTE]
->  If you want to get or set only the value of a parameter, use the [GetParamValue](../../mfc/reference/cdaorecordset-class.md#cdaorecordset__getparamvalue) and [SetParamValue](../../mfc/reference/cdaorecordset-class.md#cdaorecordset__setparamvalue) member functions of class `CDaoRecordset`.  
+>  If you want to get or set only the value of a parameter, use the [GetParamValue](../../mfc/reference/cdaorecordset-class.md#getparamvalue) and [SetParamValue](../../mfc/reference/cdaorecordset-class.md#setparamvalue) member functions of class `CDaoRecordset`.  
   
  `CDaoParameterInfo` also defines a `Dump` member function in debug builds. You can use `Dump` to dump the contents of a `CDaoParameterInfo` object.  
   

@@ -354,4 +354,4 @@ inline bool operator>= (
  This method is not concurrency-safe with respect to other methods that could modify either of the concurrent vectors `_A` or `_B`.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

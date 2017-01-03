@@ -57,9 +57,9 @@ A Web browser–style application can access information from the Internet (such
 > [!NOTE]
 >  The WebBrowser ActiveX control (and therefore `CHtmlView`) is available only to applications running under Windows versions in which Internet Explorer 4.0 or later has been installed.  
   
- Because `CHtmlView` simply implements the Microsoft Web browser control, its support for printing is not like other [CView](../../mfc/reference/cview-class.md)-derived classes. Rather, the WebBrowser control implements the printer user interface and printing. As a result, `CHtmlView` does not support print preview, and the framework does not provide for other printing support functions: for example, [CView::OnPreparePrinting](../../mfc/reference/cview-class.md#cview__onprepareprinting), [CView::OnBeginPrinting](../../mfc/reference/cview-class.md#cview__onbeginprinting), and [CView::OnEndPrinting](../../mfc/reference/cview-class.md#cview__onendprinting), which are available in other MFC applications.  
+ Because `CHtmlView` simply implements the Microsoft Web browser control, its support for printing is not like other [CView](../../mfc/reference/cview-class.md)-derived classes. Rather, the WebBrowser control implements the printer user interface and printing. As a result, `CHtmlView` does not support print preview, and the framework does not provide for other printing support functions: for example, [CView::OnPreparePrinting](../../mfc/reference/cview-class.md#onprepareprinting), [CView::OnBeginPrinting](../../mfc/reference/cview-class.md#onbeginprinting), and [CView::OnEndPrinting](../../mfc/reference/cview-class.md#onendprinting), which are available in other MFC applications.  
   
- `CHtmlView` acts as a wrapper for the Web browser control, which gives your application a view onto a Web or an HTML page. The wizard creates an override to the [OnInitialUpdate](../../mfc/reference/cview-class.md#cview__oninitialupdate) function in the view class, providing a navigational link to the Microsoft Visual C++ Web site:  
+ `CHtmlView` acts as a wrapper for the Web browser control, which gives your application a view onto a Web or an HTML page. The wizard creates an override to the [OnInitialUpdate](../../mfc/reference/cview-class.md#oninitialupdate) function in the view class, providing a navigational link to the Microsoft Visual C++ Web site:  
   
 ```  
 void CWebView::OnInitialUpdate()  
@@ -74,7 +74,7 @@ void CWebView::OnInitialUpdate()
 } 
 ```  
   
- You can replace this site with one of your own, or you can use the [LoadFromResource](../../mfc/reference/chtmlview-class.md#chtmlview__loadfromresource) member function to open an HTML page that resides in the project's resource script as the default content for the view. For example:  
+ You can replace this site with one of your own, or you can use the [LoadFromResource](../../mfc/reference/chtmlview-class.md#loadfromresource) member function to open an HTML page that resides in the project's resource script as the default content for the view. For example:  
   
 ```  
 void CWebView::OnInitialUpdate()  

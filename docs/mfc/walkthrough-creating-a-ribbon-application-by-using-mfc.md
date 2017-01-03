@@ -105,9 +105,9 @@ This walkthrough shows how to use the **MFC Application Wizard** to create an ap
   
  [How to: Customize the Application Button](../mfc/how-to-customize-the-application-button.md)  
   
- For end-to-end samples, see [Samples (MFC Feature Pack)](../top/visual-cpp-samples.md).  
+ For end-to-end samples, see [Samples (MFC Feature Pack)](../visual-cpp-samples.md).  
   
 ## See Also  
  [Walkthroughs](../mfc/walkthroughs-mfc.md)   
- [Samples (MFC Feature Pack)](../top/visual-cpp-samples.md)
+ [Samples (MFC Feature Pack)](../visual-cpp-samples.md)
 

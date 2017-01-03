@@ -62,8 +62,8 @@ template <typename   T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAutoVectorPtrElementTraits::INARGTYPE](#cautovectorptrelementtraits__inargtype)|The data type to use for adding elements to the collection class object.|  
-|[CAutoVectorPtrElementTraits::OUTARGTYPE](#cautovectorptrelementtraits__outargtype)|The data type to use for retrieving elements from the collection class object.|  
+|[CAutoVectorPtrElementTraits::INARGTYPE](#inargtype)|The data type to use for adding elements to the collection class object.|  
+|[CAutoVectorPtrElementTraits::OUTARGTYPE](#outargtype)|The data type to use for retrieving elements from the collection class object.|  
   
 ## Remarks  
  This class provides methods, static functions, and typedefs for aiding the creation of collection class objects containing smart pointers. Unlike [CAutoPtrElementTraits](../../atl/reference/cautoptrelementtraits-class.md), this class uses vector new and delete operators.  
@@ -82,14 +82,14 @@ template <typename   T>
 ## Requirements  
  **Header:** atlcoll.h  
   
-##  <a name="cautovectorptrelementtraits__inargtype"></a>  CAutoVectorPtrElementTraits::INARGTYPE  
+##  <a name="inargtype"></a>  CAutoVectorPtrElementTraits::INARGTYPE  
  The data type to use for adding elements to the collection class object.  
   
 ```
 typedef CAutoVectorPtr<T>& INARGTYPE;
 ```  
   
-##  <a name="cautovectorptrelementtraits__outargtype"></a>  CAutoVectorPtrElementTraits::OUTARGTYPE  
+##  <a name="outargtype"></a>  CAutoVectorPtrElementTraits::OUTARGTYPE  
  The data type to use for retrieving elements from the collection class object.  
   
 ```

@@ -44,9 +44,9 @@ The Parallel Patterns Library (PPL) provides an imperative programming model tha
 - *Parallel containers and objects*: generic container types that provide safe concurrent access to their elements  
   
 ## Example  
- The PPL provides a programming model that resembles the Standard Template Library (STL). The following example demonstrates many features of the PPL. It computes several Fibonacci numbers serially and in parallel. Both computations act on a [std::array](../../standard-library/array-class-stl.md) object. The example also prints to the console the time that is required to perform both computations.  
+ The PPL provides a programming model that resembles the C++ Standard Library. The following example demonstrates many features of the PPL. It computes several Fibonacci numbers serially and in parallel. Both computations act on a [std::array](../../standard-library/array-class-stl.md) object. The example also prints to the console the time that is required to perform both computations.  
   
- The serial version uses the STL [std::for_each](http://msdn.microsoft.com/Library/8cb2ae72-bef6-488b-b011-0475c0787e33) algorithm to traverse the array and stores the results in a [std::vector](../../standard-library/vector-class.md) object. The parallel version performs the same task, but uses the PPL [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algorithm and stores the results in a [concurrency::concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) object. The `concurrent_vector` class enables each loop iteration to concurrently add elements without the requirement to synchronize write access to the container.  
+ The serial version uses the C++ Standard Library [std::for_each](http://msdn.microsoft.com/Library/8cb2ae72-bef6-488b-b011-0475c0787e33) algorithm to traverse the array and stores the results in a [std::vector](../../standard-library/vector-class.md) object. The parallel version performs the same task, but uses the PPL [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algorithm and stores the results in a [concurrency::concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) object. The `concurrent_vector` class enables each loop iteration to concurrently add elements without the requirement to synchronize write access to the container.  
   
  Because `parallel_for_each` acts concurrently, the parallel version of this example must sort the `concurrent_vector` object to produce the same results as the serial version.  
   
@@ -75,6 +75,6 @@ fib(42): 267914296
 |[Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)|Describes the role of tasks and task groups in the PPL.|  
 |[Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)|Describes how to use parallel algorithms such as `parallel_for` and `parallel_for_each`.|  
 |[Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md)|Describes the various parallel containers and objects that are provided by the PPL.|  
-|[Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation)|Explains how to cancel the work that is being performed by a parallel algorithm.|  
+|[Cancellation in the PPL](cancellation-in-the-ppl.md)|Explains how to cancel the work that is being performed by a parallel algorithm.|  
 |[Concurrency Runtime](../../parallel/concrt/concurrency-runtime.md)|Describes the Concurrency Runtime, which simplifies parallel programming, and contains links to related topics.|
 

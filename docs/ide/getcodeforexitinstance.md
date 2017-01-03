@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # GetCodeForExitInstance
-Gets the [ExitInstance](../Topic/CWinApp::ExitInstance.md) code for terminating the wizard.  
+Gets the [ExitInstance](../mfc/reference/cwinapp-class.md#exitinstance) code for terminating the wizard.  
   
 ## Syntax  
   

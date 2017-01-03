@@ -34,7 +34,7 @@ translation.priority.ht:
 ---
 # Container Class::const_reverse_iterator
 > [!NOTE]
->  This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the Standard C++ Library. For more information, see [STL Containers](../standard-library/stl-containers.md).  
+>  This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).  
   
  Describes an object that can serve as a constant reverse iterator for the controlled sequence.  
   

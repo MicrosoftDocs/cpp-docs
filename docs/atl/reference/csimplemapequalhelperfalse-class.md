@@ -51,18 +51,18 @@ template <class TKey, class TVal> class CSimpleMapEqualHelperFalse
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleMapEqualHelperFalse::IsEqualKey](#csimplemapequalhelperfalse__isequalkey)|(Static) Tests two keys for equality.|  
-|[CSimpleMapEqualHelperFalse::IsEqualValue](#csimplemapequalhelperfalse__isequalvalue)|(Static) Returns false.|  
+|[CSimpleMapEqualHelperFalse::IsEqualKey](#isequalkey)|(Static) Tests two keys for equality.|  
+|[CSimpleMapEqualHelperFalse::IsEqualValue](#isequalvalue)|(Static) Returns false.|  
   
 ## Remarks  
  This traits class is a supplement to the `CSimpleMap` class. It provides a method for comparing two elements contained in the `CSimpleMap` object, specifically two value elements or two key elements.  
   
- The value comparison will always return false, and in addition, will call `ATLASSERT` with an argument of false if it is ever referenced. In situations where the equality test is not sufficiently defined, this class allows a map containing key/value pairs to operate correctly for most methods but fail in a well-defined manner for methods that depend on comparisons such as [CSimpleMap::FindVal](../../atl/reference/csimplemap-class.md#csimplemap__findval).  
+ The value comparison will always return false, and in addition, will call `ATLASSERT` with an argument of false if it is ever referenced. In situations where the equality test is not sufficiently defined, this class allows a map containing key/value pairs to operate correctly for most methods but fail in a well-defined manner for methods that depend on comparisons such as [CSimpleMap::FindVal](../../atl/reference/csimplemap-class.md#findval).  
   
 ## Requirements  
  **Header:** atlsimpcoll.h  
   
-##  <a name="csimplemapequalhelperfalse__isequalkey"></a>  CSimpleMapEqualHelperFalse::IsEqualKey  
+##  <a name="isequalkey"></a>  CSimpleMapEqualHelperFalse::IsEqualKey  
  Tests two keys for equality.  
   
 ```
@@ -82,7 +82,7 @@ static bool IsEqualKey(const TKey& k1,  const TKey& k2);
 ### Remarks  
  This method calls [CSimpleArrayEqualHelper](../../atl/reference/csimplearrayequalhelper-class.md).  
   
-##  <a name="csimplemapequalhelperfalse__isequalvalue"></a>  CSimpleMapEqualHelperFalse::IsEqualValue  
+##  <a name="isequalvalue"></a>  CSimpleMapEqualHelperFalse::IsEqualValue  
  Returns false.  
   
 ```

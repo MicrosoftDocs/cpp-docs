@@ -65,38 +65,39 @@ class CMap : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMap::CPair](#cmap__cpair)|A nested structure containing a key value and the value of the associated object.|  
+|[CMap::CPair](#cpair)|A nested structure containing a key value and the value of the associated object.|  
   
 ### Public Constructors  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMap::CMap](#cmap__cmap)|Constructs a collection that maps keys to values.|  
+|[CMap::CMap](#cmap)|Constructs a collection that maps keys to values.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMap::GetCount](#cmap__getcount)|Returns the number of elements in this map.|  
-|[CMap::GetHashTableSize](#cmap__gethashtablesize)|Returns the number of elements in the hash table.|  
-|[CMap::GetNextAssoc](#cmap__getnextassoc)|Gets the next element for iterating.|  
-|[CMap::GetSize](#cmap__getsize)|Returns the number of elements in this map.|  
-|[CMap::GetStartPosition](#cmap__getstartposition)|Returns the position of the first element.|  
-|[CMap::InitHashTable](#cmap__inithashtable)|Initializes the hash table and specifies its size.|  
-|[CMap::IsEmpty](#cmap__isempty)|Tests for the empty-map condition (no elements).|  
-|[CMap::Lookup](#cmap__lookup)|Looks up the value mapped to a given key.|  
-|[CMap::PGetFirstAssoc](#cmap__pgetfirstassoc)|Returns a pointer to the first element.|  
-|[CMap::PGetNextAssoc](#cmap__pgetnextassoc)|Gets a pointer to the next element for iterating.|  
-|[CMap::PLookup](#cmap__plookup)|Returns a pointer to a key whose value matches the specified value.|  
-|[CMap::RemoveAll](#cmap__removeall)|Removes all the elements from this map.|  
-|[CMap::RemoveKey](#cmap__removekey)|Removes an element specified by a key.|  
-|[CMap::SetAt](#cmap__setat)|Inserts an element into the map; replaces an existing element if a matching key is found.|  
+|[CMap::GetCount](#getcount)|Returns the number of elements in this map.|  
+|[CMap::GetHashTableSize](#gethashtablesize)|Returns the number of elements in the hash table.|  
+|[CMap::GetNextAssoc](#getnextassoc)|Gets the next element for iterating.|  
+|[CMap::GetSize](#getsize)|Returns the number of elements in this map.|  
+|[CMap::GetStartPosition](#getstartposition)|Returns the position of the first element.|  
+|[CMap::InitHashTable](#inithashtable)|Initializes the hash table and specifies its size.|  
+|[CMap::IsEmpty](#isempty)|Tests for the empty-map condition (no elements).|  
+|[CMap::Lookup](#lookup)|Looks up the value mapped to a given key.|  
+|[CMap::PGetFirstAssoc](#pgetfirstassoc)|Returns a pointer to the first element.|  
+|[CMap::PGetNextAssoc](#pgetnextassoc)|Gets a pointer to the next element for iterating.|  
+|[CMap::PLookup](#plookup)|Returns a pointer to a key whose value matches the specified value.|  
+|[CMap::RemoveAll](#removeall)|Removes all the elements from this map.|  
+|[CMap::RemoveKey](#removekey)|Removes an element specified by a key.|  
+|[CMap::SetAt](#setat)|Inserts an element into the map; replaces an existing element if a matching key is found.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMap::operator \[\]](#cmap__operator_at)|Inserts an element into the map; substitution for `SetAt`.|  
+
+|[CMap::operator [ ]](#operator_at)|Inserts an element into the map; operator substitution for `SetAt`.|  
   
 ## Remarks  
  Once you have inserted a key-value pair (element) into the map, you can efficiently retrieve or delete the pair using the key to access it. You can also iterate over all the elements in the map.  
@@ -105,7 +106,7 @@ class CMap : public CObject
   
  Certain member functions of this class call global helper functions that must be customized for most uses of the `CMap` class. See [Collection Class Helpers](../../mfc/reference/collection-class-helpers.md) in the Macros and Globals section of the `MFC``Reference`.  
   
- `CMap` overrides [CObject::Serialize](../../mfc/reference/cobject-class.md#cobject__serialize) to support serialization and dumping of its elements. If a map is stored to an archive using `Serialize`, each map element is serialized in turn. The default implementation of the `SerializeElements` helper function does a bitwise write. For information about serialization of pointer collection items derived from `CObject` or other user defined types, see [How to: Make a Type-Safe Collection](../../mfc/how-to-make-a-type-safe-collection.md).  
+ `CMap` overrides [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize) to support serialization and dumping of its elements. If a map is stored to an archive using `Serialize`, each map element is serialized in turn. The default implementation of the `SerializeElements` helper function does a bitwise write. For information about serialization of pointer collection items derived from `CObject` or other user defined types, see [How to: Make a Type-Safe Collection](../../mfc/how-to-make-a-type-safe-collection.md).  
   
  If you need a diagnostic dump of the individual elements in the map (the keys and values), you must set the depth of the dump context to 1 or greater.  
   
@@ -121,7 +122,7 @@ class CMap : public CObject
 ## Requirements  
  **Header:** afxtempl.h  
   
-##  <a name="cmap__cmap"></a>  CMap::CMap  
+##  <a name="cmap"></a>  CMap::CMap  
  Constructs an empty map.  
   
 ```  
@@ -138,7 +139,7 @@ CMap(INT_PTR nBlockSize = 10);
 ### Example  
  [!code-cpp[NVC_MFCCollections#56](../../mfc/codesnippet/cpp/cmap-class_1.cpp)]  
   
-##  <a name="cmap__cpair"></a>  CMap::CPair  
+##  <a name="cpair"></a>  CMap::CPair  
  Contains a key value and the value of the associated object.  
   
 ### Remarks  
@@ -150,12 +151,12 @@ CMap(INT_PTR nBlockSize = 10);
   
 - **value** The value of the associated object.  
   
- It is used to store the return values from [CMap::PLookup](#cmap__plookup), [CMap::PGetFirstAssoc](#cmap__pgetfirstassoc), and [CMap::PGetNextAssoc](#cmap__pgetnextassoc).  
+ It is used to store the return values from [CMap::PLookup](#plookup), [CMap::PGetFirstAssoc](#pgetfirstassoc), and [CMap::PGetNextAssoc](#pgetnextassoc).  
   
 ### Example  
- For an example of usage, see the example for [CMap::PLookup](#cmap__plookup).  
+ For an example of usage, see the example for [CMap::PLookup](#plookup).  
   
-##  <a name="cmap__getcount"></a>  CMap::GetCount  
+##  <a name="getcount"></a>  CMap::GetCount  
  Retrieves the number of elements in the map.  
   
 ```  
@@ -166,9 +167,9 @@ INT_PTR GetCount() const;
  The number of elements.  
   
 ### Example  
- See the example for [CMap::Lookup](#cmap__lookup).  
+ See the example for [CMap::Lookup](#lookup).  
   
-##  <a name="cmap__gethashtablesize"></a>  CMap::GetHashTableSize  
+##  <a name="gethashtablesize"></a>  CMap::GetHashTableSize  
  Determines the number of elements in the hash table for the map.  
   
 ```  
@@ -181,7 +182,7 @@ UINT GetHashTableSize() const;
 ### Example  
  [!code-cpp[NVC_MFCCollections#57](../../mfc/codesnippet/cpp/cmap-class_2.cpp)]  
   
-##  <a name="cmap__getnextassoc"></a>  CMap::GetNextAssoc  
+##  <a name="getnextassoc"></a>  CMap::GetNextAssoc  
  Retrieves the map element at `rNextPosition`, then updates `rNextPosition` to refer to the next element in the map.  
   
 ```  
@@ -213,9 +214,9 @@ void GetNextAssoc(
  If the retrieved element is the last in the map, then the new value of `rNextPosition` is set to **NULL**.  
   
 ### Example  
- See the example for [CMap::SetAt](#cmap__setat).  
+ See the example for [CMap::SetAt](#setat).  
   
-##  <a name="cmap__getsize"></a>  CMap::GetSize  
+##  <a name="getsize"></a>  CMap::GetSize  
  Returns the number of map elements.  
   
 ```  
@@ -231,7 +232,7 @@ INT_PTR GetSize() const;
 ### Example  
  [!code-cpp[NVC_MFCCollections#58](../../mfc/codesnippet/cpp/cmap-class_3.cpp)]  
   
-##  <a name="cmap__getstartposition"></a>  CMap::GetStartPosition  
+##  <a name="getstartposition"></a>  CMap::GetStartPosition  
  Starts a map iteration by returning a **POSITION** value that can be passed to a `GetNextAssoc` call.  
   
 ```  
@@ -245,9 +246,9 @@ POSITION GetStartPosition() const;
  The iteration sequence is not predictable; therefore, the "first element in the map" has no special significance.  
   
 ### Example  
- See the example for [CMap::SetAt](#cmap__setat).  
+ See the example for [CMap::SetAt](#setat).  
   
-##  <a name="cmap__inithashtable"></a>  CMap::InitHashTable  
+##  <a name="inithashtable"></a>  CMap::InitHashTable  
  Initializes the hash table.  
   
 ```  
@@ -265,9 +266,9 @@ void InitHashTable(UINT hashSize, BOOL  bAllocNow = TRUE);
  For best performance, the hash table size should be a prime number. To minimize collisions, the size should be roughly 20 percent larger than the largest anticipated data set.  
   
 ### Example  
- See the example for [CMap::Lookup](#cmap__lookup).  
+ See the example for [CMap::Lookup](#lookup).  
   
-##  <a name="cmap__isempty"></a>  CMap::IsEmpty  
+##  <a name="isempty"></a>  CMap::IsEmpty  
  Determines whether the map is empty.  
   
 ```  
@@ -278,9 +279,9 @@ BOOL IsEmpty() const;
  Nonzero if this map contains no elements; otherwise 0.  
   
 ### Example  
- See the example for [CMap::RemoveAll](#cmap__removeall).  
+ See the example for [CMap::RemoveAll](#removeall).  
   
-##  <a name="cmap__lookup"></a>  CMap::Lookup  
+##  <a name="lookup"></a>  CMap::Lookup  
  Looks up the value mapped to a given key.  
   
 ```  
@@ -309,7 +310,7 @@ BOOL Lookup( ARG_KEY key, VALUE& rValue) const;
 ### Example  
  [!code-cpp[NVC_MFCCollections#58](../../mfc/codesnippet/cpp/cmap-class_3.cpp)]  
   
-##  <a name="cmap__operator_at"></a>  CMap::operator []  
+##  <a name="operator_at"></a>  CMap::operator [ ]  
  A convenient substitute for the `SetAt` member function.  
   
 ```  
@@ -332,9 +333,9 @@ VALUE& operator[] (ARG_KEY key);
  There is no "right side" (r-value) equivalent to this operator because there is a possibility that a key may not be found in the map. Use the `Lookup` member function for element retrieval.  
   
 ### Example  
- See the example for [CMap::Lookup](#cmap__lookup).  
+ See the example for [CMap::Lookup](#lookup).  
   
-##  <a name="cmap__pgetfirstassoc"></a>  CMap::PGetFirstAssoc  
+##  <a name="pgetfirstassoc"></a>  CMap::PGetFirstAssoc  
  Returns the first entry of the map object.  
   
 ```  
@@ -343,7 +344,7 @@ CPair* PGetFirstAssoc();
 ```  
   
 ### Return Value  
- A pointer to the first entry in the map; see [CMap::CPair](#cmap__cpair). If the map contains no entries, the value is **NULL**.  
+ A pointer to the first entry in the map; see [CMap::CPair](#cpair). If the map contains no entries, the value is **NULL**.  
   
 ### Remarks  
  Call this function to return a pointer the first element in the map object.  
@@ -351,7 +352,7 @@ CPair* PGetFirstAssoc();
 ### Example  
  [!code-cpp[NVC_MFCCollections#59](../../mfc/codesnippet/cpp/cmap-class_4.cpp)]  
   
-##  <a name="cmap__pgetnextassoc"></a>  CMap::PGetNextAssoc  
+##  <a name="pgetnextassoc"></a>  CMap::PGetNextAssoc  
  Retrieves the map element pointed to by `pAssocRec`.  
   
 ```  
@@ -361,18 +362,18 @@ CPair *PGetNextAssoc(const CPair* pAssocRet);
   
 ### Parameters  
  *pAssocRet*  
- Points to a map entry returned by a previous [PGetNextAssoc](#cmap__pgetnextassoc) or [CMap::PGetFirstAssoc](#cmap__pgetfirstassoc) call.  
+ Points to a map entry returned by a previous [PGetNextAssoc](#pgetnextassoc) or [CMap::PGetFirstAssoc](#pgetfirstassoc) call.  
   
 ### Return Value  
- A pointer to the next entry in the map; see [CMap::CPair](#cmap__cpair). If the element is the last in the map, the value is **NULL**.  
+ A pointer to the next entry in the map; see [CMap::CPair](#cpair). If the element is the last in the map, the value is **NULL**.  
   
 ### Remarks  
  Call this method to iterate through all the elements in the map. Retrieve the first element with a call to `PGetFirstAssoc` and then iterate through the map with successive calls to `PGetNextAssoc`.  
   
 ### Example  
- See the example for [CMap::PGetFirstAssoc](#cmap__pgetfirstassoc).  
+ See the example for [CMap::PGetFirstAssoc](#pgetfirstassoc).  
   
-##  <a name="cmap__plookup"></a>  CMap::PLookup  
+##  <a name="plookup"></a>  CMap::PLookup  
  Finds the value mapped to a given key.  
   
 ```  
@@ -385,7 +386,7 @@ CPair* PLookup(ARG_KEY  key);
  Key for the element to be searched for.  
   
 ### Return Value  
- A pointer to a key structure; see [CMap::CPair](#cmap__cpair). If no match is found, `CMap::PLookup` returns `NULL`.  
+ A pointer to a key structure; see [CMap::CPair](#cpair). If no match is found, `CMap::PLookup` returns `NULL`.  
   
 ### Remarks  
  Call this method to search for a map element with a key that exactly matches the given key.  
@@ -393,7 +394,7 @@ CPair* PLookup(ARG_KEY  key);
 ### Example  
  [!code-cpp[NVC_MFCCollections#60](../../mfc/codesnippet/cpp/cmap-class_5.cpp)]  
   
-##  <a name="cmap__removeall"></a>  CMap::RemoveAll  
+##  <a name="removeall"></a>  CMap::RemoveAll  
  Removes all the values from this map by calling the global helper function **DestructElements**.  
   
 ```  
@@ -406,7 +407,7 @@ void RemoveAll();
 ### Example  
  [!code-cpp[NVC_MFCCollections#61](../../mfc/codesnippet/cpp/cmap-class_6.cpp)]  
   
-##  <a name="cmap__removekey"></a>  CMap::RemoveKey  
+##  <a name="removekey"></a>  CMap::RemoveKey  
  Looks up the map entry corresponding to the supplied key; then, if the key is found, removes the entry.  
   
 ```  
@@ -427,9 +428,9 @@ BOOL RemoveKey(ARG_KEY key);
  The **DestructElements** helper function is used to remove the entry.  
   
 ### Example  
- See the example for [CMap::SetAt](#cmap__setat).  
+ See the example for [CMap::SetAt](#setat).  
   
-##  <a name="cmap__setat"></a>  CMap::SetAt  
+##  <a name="setat"></a>  CMap::SetAt  
  The primary means to insert an element in a map.  
   
 ```  
@@ -456,7 +457,7 @@ void SetAt(ARG_KEY key, ARG_VALUE newValue);
  [!code-cpp[NVC_MFCCollections#62](../../mfc/codesnippet/cpp/cmap-class_7.cpp)]  
   
 ## See Also  
- [MFC Sample COLLECT](../../top/visual-cpp-samples.md)   
+ [MFC Sample COLLECT](../../visual-cpp-samples.md)   
  [CObject Class](../../mfc/reference/cobject-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 

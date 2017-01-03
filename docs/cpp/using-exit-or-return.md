@@ -76,7 +76,7 @@ int main() {
 }  
 ```  
   
- In the preceding example, the static objects `sd1` and `sd2` are created and initialized before entry to `main`. After this program terminates using the `return` statement, first `sd2` is destroyed and then `sd1`. The destructor for the `ShowData` class closes the files associated with these static objects. (For more information about initialization, constructors, and destructors, see [Special Member Functions](../misc/special-member-functions-cpp.md).)  
+ In the preceding example, the static objects `sd1` and `sd2` are created and initialized before entry to `main`. After this program terminates using the `return` statement, first `sd2` is destroyed and then `sd1`. The destructor for the `ShowData` class closes the files associated with these static objects.   
   
  Another way to write this code is to declare the `ShowData` objects with block scope, allowing them to be destroyed when they go out of scope:  
   

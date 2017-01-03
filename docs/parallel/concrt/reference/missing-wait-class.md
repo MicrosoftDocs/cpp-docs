@@ -49,7 +49,7 @@ class missing_wait : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[missing_wait::missing_wait Constructor](#missing_wait__missing_wait_constructor)|Overloaded. Constructs a `missing_wait` object.|  
+|[missing_wait::missing_wait Constructor](#ctor)|Overloaded. Constructs a `missing_wait` object.|  
   
 ## Remarks  
  Absent exception flow, you are responsible for calling either the `wait` or `run_and_wait` method of a `task_group` or `structured_task_group` object before allowing that object to destruct. The runtime throws this exception as an indication that you forgot to call the `wait` or `run_and_wait` method.  
@@ -64,7 +64,7 @@ class missing_wait : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="missing_wait__missing_wait_constructor"></a>  missing_wait::missing_wait Constructor  
+##  <a name="ctor"></a>  missing_wait::missing_wait Constructor  
  Constructs a `missing_wait` object.  
   
 ```
@@ -78,8 +78,8 @@ missing_wait() throw();
  A descriptive message of the error.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
+ [concurrency Namespace](concurrency-namespace.md)   
  [task_group Class](task-group-class.md)   
  [task_group::wait Method](task-group-class.md)   
  [task_group::run_and_wait Method](task-group-class.md)   
- [structured_task_group Class](../../../parallel/concrt/reference/structured-task-group-class.md)
+ [structured_task_group Class](structured-task-group-class.md)

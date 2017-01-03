@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error C3069
 'operator': not allowed for enumeration type  
   
- An operator is not supported for CLR enumerations.  For more information, see [Using Operators and Enumerations](../../misc/operators-and-enumerations.md).  
+ An operator is not supported for CLR enumerations.  For more information, see [How to: Define and consume enums in C++/CLI](../../dotnet/how-to-define-and-consume-enums-in-cpp-cli.md).  
   
 ## Example  
  The following sample generates C3069:  

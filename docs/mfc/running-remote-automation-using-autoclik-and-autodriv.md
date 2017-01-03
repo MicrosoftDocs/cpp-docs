@@ -37,7 +37,7 @@ AUTOCLIK is a simple Automation server sample application that you can use as a 
   
 #### To install AUTOCLIK.EXE on two machines and drive it using Remote Automation  
   
-1.  Install the [AUTOCLIK](../top/visual-cpp-samples.md) sample application onto your development machine.  
+1.  Install the [AUTOCLIK](../visual-cpp-samples.md) sample application onto your development machine.  
   
 2.  Build AUTOCLIK.EXE.  
   
@@ -45,7 +45,7 @@ AUTOCLIK is a simple Automation server sample application that you can use as a 
   
 4.  Copy AUTOCLIK.EXE to a remote machine, run it there, and then shut it down.  
   
-5.  Run AUTODRIV.EXE on the local machine and verify that running it starts AUTOCLIK.EXE. To find out more about AUTODRIV.EXE, see [AUTOCLIK](../top/visual-cpp-samples.md).  
+5.  Run AUTODRIV.EXE on the local machine and verify that running it starts AUTOCLIK.EXE. To find out more about AUTODRIV.EXE, see [AUTOCLIK](../visual-cpp-samples.md).  
   
 6.  On the remote machine, start AUTMGR32.EXE (Automation Manager).  
   

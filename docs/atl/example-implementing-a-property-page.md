@@ -35,7 +35,7 @@ translation.priority.ht:
 # Example: Implementing a Property Page
 This example shows how to build a property page that displays (and allows you to change) properties of the [Document Classes](../mfc/document-classes.md) interface. This interface is exposed by documents in Visual Studio's [Common Environment Object Model Examples](http://msdn.microsoft.com/library/919cdb58-9f6d-45e6-a0f1-9ca8f6e7051f) (although the property page that you'll create won't care where the objects it manipulates come from as long as they support the correct interface).  
   
- The example is based on the [ATLPages sample](../top/visual-cpp-samples.md).  
+ The example is based on the [ATLPages sample](../visual-cpp-samples.md).  
   
  To complete this example, you will:  
   
@@ -88,7 +88,7 @@ This example shows how to build a property page that displays (and allows you to
   
  [!code-cpp[NVC_ATL_Windowing#73](../atl/codesnippet/cpp/example-implementing-a-property-page_1.h)]  
   
- This code responds to changes made to the edit control or check box by calling [IPropertyPageImpl::SetDirty](../atl/reference/ipropertypageimpl-class.md#ipropertypageimpl__setdirty), which informs the page site that the page has changed. Typically the page site will respond by enabling or disabling an **Apply** button on the property page frame.  
+ This code responds to changes made to the edit control or check box by calling [IPropertyPageImpl::SetDirty](../atl/reference/ipropertypageimpl-class.md#setdirty), which informs the page site that the page has changed. Typically the page site will respond by enabling or disabling an **Apply** button on the property page frame.  
   
 > [!NOTE]
 >  In your own property pages, you might need to keep track of precisely which properties have been altered by the user so that you can avoid updating properties that haven't been changed. This example implements that code by keeping track of the original property values and comparing them with the current values from the UI when it's time to apply the changes.  
@@ -103,7 +103,7 @@ This example shows how to build a property page that displays (and allows you to
  [!code-cpp[NVC_ATL_Windowing#75](../atl/codesnippet/cpp/example-implementing-a-property-page_3.h)]  
   
 ##  <a name="vcconoverriding_ipropertypageimpl_setobjects"></a> Overriding IPropertyPageImpl::SetObjects  
- The first `IPropertyPageImpl` method that you need to override is [SetObjects](../atl/reference/ipropertypageimpl-class.md#ipropertypageimpl__setobjects). Here you'll add code to check that only a single object has been passed and that it supports the **Document** interface that you're expecting:  
+ The first `IPropertyPageImpl` method that you need to override is [SetObjects](../atl/reference/ipropertypageimpl-class.md#setobjects). Here you'll add code to check that only a single object has been passed and that it supports the **Document** interface that you're expecting:  
   
  [!code-cpp[NVC_ATL_Windowing#76](../atl/codesnippet/cpp/example-implementing-a-property-page_4.h)]  
   
@@ -117,19 +117,19 @@ This example shows how to build a property page that displays (and allows you to
   
  [!code-cpp[NVC_ATL_Windowing#77](../atl/codesnippet/cpp/example-implementing-a-property-page_5.h)]  
   
- The base class implementation of the [Activate](../atl/reference/ipropertypageimpl-class.md#ipropertypageimpl__activate) method is responsible for creating the dialog box and its controls, so you can override this method and add your own initialization after calling the base class:  
+ The base class implementation of the [Activate](../atl/reference/ipropertypageimpl-class.md#activate) method is responsible for creating the dialog box and its controls, so you can override this method and add your own initialization after calling the base class:  
   
  [!code-cpp[NVC_ATL_Windowing#78](../atl/codesnippet/cpp/example-implementing-a-property-page_6.h)]  
   
  This code uses the COM methods of the **Document** interface to get the properties that you're interested in. It then uses the Win32 API wrappers provided by [CDialogImpl](../atl/reference/cdialogimpl-class.md) and its base classes to display the property values to the user.  
   
 ##  <a name="vcconoverride_ipropertypageimpl_apply"></a> Overriding IPropertyPageImpl::Apply  
- When users want to apply their changes to the objects, the property page site will call the [Apply](../atl/reference/ipropertypageimpl-class.md#ipropertypageimpl__apply) method. This is the place to do the reverse of the code in **Activate** — whereas **Activate** took values from the object and pushed them into the controls on the property page, **Apply** takes values from the controls on the property page and pushes them into the object.  
+ When users want to apply their changes to the objects, the property page site will call the [Apply](../atl/reference/ipropertypageimpl-class.md#apply) method. This is the place to do the reverse of the code in **Activate** — whereas **Activate** took values from the object and pushed them into the controls on the property page, **Apply** takes values from the controls on the property page and pushes them into the object.  
   
  [!code-cpp[NVC_ATL_Windowing#79](../atl/codesnippet/cpp/example-implementing-a-property-page_7.h)]  
   
 > [!NOTE]
->  The check against [m_bDirty](../atl/reference/ipropertypageimpl-class.md#ipropertypageimpl__m_bdirty) at the beginning of this implementation is an initial check to avoid unnecessary updates of the objects if **Apply** is called more than once. There are also checks against each of the property values to ensure that only changes result in a method call to the **Document**.  
+>  The check against [m_bDirty](../atl/reference/ipropertypageimpl-class.md#m_bdirty) at the beginning of this implementation is an initial check to avoid unnecessary updates of the objects if **Apply** is called more than once. There are also checks against each of the property values to ensure that only changes result in a method call to the **Document**.  
   
 > [!NOTE]
 > **Document** exposes **FullName** as a read-only property. To update the file name of the document based on changes made to the property page, you have to use the **Save** method to save the file with a different name. Thus, the code in a property page doesn't have to limit itself to getting or setting properties.  
@@ -179,5 +179,5 @@ End Module
   
 ## See Also  
  [Property Pages](../atl/atl-com-property-pages.md)   
- [ATLPages Sample](../top/visual-cpp-samples.md)
+ [ATLPages Sample](../visual-cpp-samples.md)
 

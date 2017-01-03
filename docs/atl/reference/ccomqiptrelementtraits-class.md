@@ -61,7 +61,7 @@ template<typename I,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComQIPtrElementTraits::INARGTYPE](#ccomqiptrelementtraits__inargtype)|The data type to use for adding elements to the collection class object.|  
+|[CComQIPtrElementTraits::INARGTYPE](#inargtype)|The data type to use for adding elements to the collection class object.|  
   
 ## Remarks  
  This class derives methods and provides a typedef useful when creating a collection class of [CComQIPtr](../../atl/reference/ccomqiptr-class.md) COM interface pointer objects. This class is utilized by both the [CInterfaceArray](../../atl/reference/cinterfacearray-class.md) and [CInterfaceList](../../atl/reference/cinterfacelist-class.md) classes.  
@@ -82,7 +82,7 @@ template<typename I,
 ## Requirements  
  **Header:** atlcoll.h  
   
-##  <a name="ccomqiptrelementtraits__inargtype"></a>  CComQIPtrElementTraits::INARGTYPE  
+##  <a name="inargtype"></a>  CComQIPtrElementTraits::INARGTYPE  
  The data type to use for adding elements to the collection class object.  
   
 ```

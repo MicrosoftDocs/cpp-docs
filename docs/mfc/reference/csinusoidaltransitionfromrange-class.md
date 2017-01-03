@@ -50,23 +50,23 @@ class CSinusoidalTransitionFromRange : public CBaseTransition;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSinusoidalTransitionFromRange::CSinusoidalTransitionFromRange](#csinusoidaltransitionfromrange__csinusoidaltransitionfromrange)|Constructs a transition object.|  
+|[CSinusoidalTransitionFromRange::CSinusoidalTransitionFromRange](#csinusoidaltransitionfromrange)|Constructs a transition object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSinusoidalTransitionFromRange::Create](#csinusoidaltransitionfromrange__create)|Calls the transition library to create encapsulated transition COM object. (Overrides [CBaseTransition::Create](../../mfc/reference/cbasetransition-class.md#cbasetransition__create).)|  
+|[CSinusoidalTransitionFromRange::Create](#create)|Calls the transition library to create encapsulated transition COM object. (Overrides [CBaseTransition::Create](../../mfc/reference/cbasetransition-class.md#create).)|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSinusoidalTransitionFromRange::m_dblMaximumValue](#csinusoidaltransitionfromrange__m_dblmaximumvalue)|The value of the animation variable at a peak of the sinusoidal wave.|  
-|[CSinusoidalTransitionFromRange::m_dblMinimumValue](#csinusoidaltransitionfromrange__m_dblminimumvalue)|The value of the animation variable at a trough of the sinusoidal wave.|  
-|[CSinusoidalTransitionFromRange::m_duration](#csinusoidaltransitionfromrange__m_duration)|The duration of the transition.|  
-|[CSinusoidalTransitionFromRange::m_period](#csinusoidaltransitionfromrange__m_period)|The period of oscillation of the sinusoidal wave in seconds.|  
-|[CSinusoidalTransitionFromRange::m_slope](#csinusoidaltransitionfromrange__m_slope)|The slope at the start of the transition.|  
+|[CSinusoidalTransitionFromRange::m_dblMaximumValue](#m_dblmaximumvalue)|The value of the animation variable at a peak of the sinusoidal wave.|  
+|[CSinusoidalTransitionFromRange::m_dblMinimumValue](#m_dblminimumvalue)|The value of the animation variable at a trough of the sinusoidal wave.|  
+|[CSinusoidalTransitionFromRange::m_duration](#m_duration)|The duration of the transition.|  
+|[CSinusoidalTransitionFromRange::m_period](#m_period)|The period of oscillation of the sinusoidal wave in seconds.|  
+|[CSinusoidalTransitionFromRange::m_slope](#m_slope)|The slope at the start of the transition.|  
   
 ## Remarks  
  The value of the animation variable fluctuates between the specified minimum and maximum values over the entire duration of a sinusoidal-range transition. The slope parameter is used to disambiguate between the two possible sine waves specified by the other parameters. Because all transitions are cleared automatically, it's recommended to allocated them using operator new. The encapsulated IUIAnimationTransition COM object is created by CAnimationController::AnimateGroup, until then it's NULL. Changing member variables after creation of this COM object has no effect.  
@@ -81,7 +81,7 @@ class CSinusoidalTransitionFromRange : public CBaseTransition;
 ## Requirements  
  **Header:** afxanimationcontroller.h  
   
-##  <a name="csinusoidaltransitionfromrange__create"></a>  CSinusoidalTransitionFromRange::Create  
+##  <a name="create"></a>  CSinusoidalTransitionFromRange::Create  
  Calls the transition library to create encapsulated transition COM object.  
   
 ```  
@@ -97,7 +97,7 @@ virtual BOOL Create(
 ### Return Value  
  TRUE if transition is created successfully; otherwise FALSE.  
   
-##  <a name="csinusoidaltransitionfromrange__csinusoidaltransitionfromrange"></a>  CSinusoidalTransitionFromRange::CSinusoidalTransitionFromRange  
+##  <a name="csinusoidaltransitionfromrange"></a>  CSinusoidalTransitionFromRange::CSinusoidalTransitionFromRange  
  Constructs a transition object.  
   
 ```  
@@ -125,35 +125,35 @@ CSinusoidalTransitionFromRange(
  `slope`  
  The slope at the start of the transition.  
   
-##  <a name="csinusoidaltransitionfromrange__m_dblmaximumvalue"></a>  CSinusoidalTransitionFromRange::m_dblMaximumValue  
+##  <a name="m_dblmaximumvalue"></a>  CSinusoidalTransitionFromRange::m_dblMaximumValue  
  The value of the animation variable at a peak of the sinusoidal wave.  
   
 ```  
 DOUBLE m_dblMaximumValue;  
 ```  
   
-##  <a name="csinusoidaltransitionfromrange__m_dblminimumvalue"></a>  CSinusoidalTransitionFromRange::m_dblMinimumValue  
+##  <a name="m_dblminimumvalue"></a>  CSinusoidalTransitionFromRange::m_dblMinimumValue  
  The value of the animation variable at a trough of the sinusoidal wave.  
   
 ```  
 DOUBLE m_dblMinimumValue;  
 ```  
   
-##  <a name="csinusoidaltransitionfromrange__m_duration"></a>  CSinusoidalTransitionFromRange::m_duration  
+##  <a name="m_duration"></a>  CSinusoidalTransitionFromRange::m_duration  
  The duration of the transition.  
   
 ```  
 UI_ANIMATION_SECONDS m_duration;  
 ```  
   
-##  <a name="csinusoidaltransitionfromrange__m_period"></a>  CSinusoidalTransitionFromRange::m_period  
+##  <a name="m_period"></a>  CSinusoidalTransitionFromRange::m_period  
  The period of oscillation of the sinusoidal wave in seconds.  
   
 ```  
 UI_ANIMATION_SECONDS m_period;  
 ```  
   
-##  <a name="csinusoidaltransitionfromrange__m_slope"></a>  CSinusoidalTransitionFromRange::m_slope  
+##  <a name="m_slope"></a>  CSinusoidalTransitionFromRange::m_slope  
  The slope at the start of the transition.  
   
 ```  

@@ -63,5 +63,5 @@ int CALLBACK EXPORT ObjectFunc(
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CDC::EnumObjects](../../mfc/reference/cdc-class.md#cdc__enumobjects)
+ [CDC::EnumObjects](../../mfc/reference/cdc-class.md#enumobjects)
 

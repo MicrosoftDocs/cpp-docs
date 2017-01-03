@@ -49,43 +49,43 @@ class CMultiPaneFrameWnd : public CPaneFrameWnd
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMultiPaneFrameWnd::AddPane](#cmultipaneframewnd__addpane)|Adds a pane. (Overrides [CPaneFrameWnd::AddPane](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__addpane).)|  
-|[CMultiPaneFrameWnd::AddRecentPane](#cmultipaneframewnd__addrecentpane)||  
-|[CMultiPaneFrameWnd::AdjustLayout](#cmultipaneframewnd__adjustlayout)|Adjusts the layout of the mini-frame window. (Overrides [CPaneFrameWnd::AdjustLayout](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__adjustlayout).)|  
-|[CMultiPaneFrameWnd::AdjustPaneFrames](#cmultipaneframewnd__adjustpaneframes)|(Overrides [CPaneFrameWnd::AdjustPaneFrames](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__adjustpaneframes).)|  
-|[CMultiPaneFrameWnd::CalcExpectedDockedRect](#cmultipaneframewnd__calcexpecteddockedrect)|Calculates the expected rectangle of a docked window. (Overrides [CPaneFrameWnd::CalcExpectedDockedRect](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__calcexpecteddockedrect).)|  
-|[CMultiPaneFrameWnd::CanBeAttached](#cmultipaneframewnd__canbeattached)|Determines whether the current pane can dock to another pane or frame window. (Overrides [CPaneFrameWnd::CanBeAttached](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__canbeattached).)|  
-|[CMultiPaneFrameWnd::CanBeDockedToPane](#cmultipaneframewnd__canbedockedtopane)|Determines whether the mini-frame window can dock to a pane. (Overrides [CPaneFrameWnd::CanBeDockedToPane](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__canbedockedtopane).)|  
-|[CMultiPaneFrameWnd::CheckGripperVisibility](#cmultipaneframewnd__checkgrippervisibility)|(Overrides [CPaneFrameWnd::CheckGripperVisibility](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__checkgrippervisibility).)|  
-|[CMultiPaneFrameWnd::CloseMiniFrame](#cmultipaneframewnd__closeminiframe)|(Overrides `CPaneFrameWnd::CloseMiniFrame`.)|  
-|[CMultiPaneFrameWnd::ConvertToTabbedDocument](#cmultipaneframewnd__converttotabbeddocument)|Converts the pane to a tabbed document. (Overrides [CPaneFrameWnd::ConvertToTabbedDocument](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__converttotabbeddocument).)|  
-|[CMultiPaneFrameWnd::DockFrame](#cmultipaneframewnd__dockframe)||  
-|[CMultiPaneFrameWnd::DockPane](#cmultipaneframewnd__dockpane)|Docks the pane. (Overrides [CPaneFrameWnd::DockPane](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__dockpane).)|  
-|[CMultiPaneFrameWnd::DockRecentPaneToMainFrame](#cmultipaneframewnd__dockrecentpanetomainframe)||  
-|[CMultiPaneFrameWnd::GetCaptionText](#cmultipaneframewnd__getcaptiontext)|Returns the caption text. (Overrides [CPaneFrameWnd::GetCaptionText](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__getcaptiontext).)|  
-|[CMultiPaneFrameWnd::GetPaneContainerManager](#cmultipaneframewnd__getpanecontainermanager)|Returns a reference to the internal container manager object.|  
-|[CMultiPaneFrameWnd::GetFirstVisiblePane](#cmultipaneframewnd__getfirstvisiblepane)|Returns the first visible pane that is contained in a mini-frame window. (Overrides [CPaneFrameWnd::GetFirstVisiblePane](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__getfirstvisiblepane).)|  
-|[CMultiPaneFrameWnd::GetPane](#cmultipaneframewnd__getpane)|Returns a pane that is contained in the mini-frame window. (Overrides [CPaneFrameWnd::GetPane](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__getpane).)|  
-|[CMultiPaneFrameWnd::GetPaneCount](#cmultipaneframewnd__getpanecount)|Returns the number of panes that are contained in a mini-frame window. (Overrides [CPaneFrameWnd::GetPaneCount](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__getpanecount).)|  
-|[CMultiPaneFrameWnd::GetVisiblePaneCount](#cmultipaneframewnd__getvisiblepanecount)|Returns the number of visible panes that are contained in a mini-frame window. (Overrides [CPaneFrameWnd::GetVisiblePaneCount](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__getvisiblepanecount).)|  
-|[CMultiPaneFrameWnd::InsertPane](#cmultipaneframewnd__insertpane)||  
-|[CMultiPaneFrameWnd::LoadState](#cmultipaneframewnd__loadstate)|Loads the pane's state from the registry. (Overrides [CPaneFrameWnd::LoadState](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__loadstate).)|  
-|[CMultiPaneFrameWnd::OnDockToRecentPos](#cmultipaneframewnd__ondocktorecentpos)|Docks the mini-frame window at its most recent position. (Overrides [CPaneFrameWnd::OnDockToRecentPos](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__ondocktorecentpos).)|  
-|[CMultiPaneFrameWnd::OnKillRollUpTimer](#cmultipaneframewnd__onkillrolluptimer)|Stops the rollup timer. (Overrides [CPaneFrameWnd::OnKillRollUpTimer](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__onkillrolluptimer).)|  
-|[CMultiPaneFrameWnd::OnPaneRecalcLayout](#cmultipaneframewnd__onpanerecalclayout)|Adjusts the layout of a pane inside a mini-frame window. (Overrides [CPaneFrameWnd::OnPaneRecalcLayout](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__onpanerecalclayout).)|  
-|[CMultiPaneFrameWnd::OnSetRollUpTimer](#cmultipaneframewnd__onsetrolluptimer)|Sets the rollup timer. (Overrides [CPaneFrameWnd::OnSetRollUpTimer](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__onsetrolluptimer).)|  
-|[CMultiPaneFrameWnd::OnShowPane](#cmultipaneframewnd__onshowpane)|Called by the framework when a pane in the mini-frame window is hidden or displayed. (Overrides [CPaneFrameWnd::OnShowPane](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__onshowpane).)|  
-|[CMultiPaneFrameWnd::PaneFromPoint](#cmultipaneframewnd__panefrompoint)|Returns a pane if it contains a user-supplied point inside a mini-frame window. (Overrides [CPaneFrameWnd::PaneFromPoint](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__panefrompoint).)|  
-|[CMultiPaneFrameWnd::RemoveNonValidPanes](#cmultipaneframewnd__removenonvalidpanes)|Called by the framework to remove non-valid panes. (Overrides [CPaneFrameWnd::RemoveNonValidPanes](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__removenonvalidpanes).)|  
-|[CMultiPaneFrameWnd::RemovePane](#cmultipaneframewnd__removepane)|Removes a pane from the mini-frame window. (Overrides [CPaneFrameWnd::RemovePane](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__removepane).)|  
-|[CMultiPaneFrameWnd::ReplacePane](#cmultipaneframewnd__replacepane)|Replaces one pane with another. (Overrides [CPaneFrameWnd::ReplacePane](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__replacepane).)|  
-|[CMultiPaneFrameWnd::SaveState](#cmultipaneframewnd__savestate)|Saves the pane's state to the registry. (Overrides [CPaneFrameWnd::SaveState](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__savestate).)|  
-|[CMultiPaneFrameWnd::Serialize](#cmultipaneframewnd__serialize)|(Overrides `CPaneFrameWnd::Serialize`.)|  
-|[CMultiPaneFrameWnd::SetDockState](#cmultipaneframewnd__setdockstate)|Sets the docking state. (Overrides [CPaneFrameWnd::SetDockState](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__setdockstate).)|  
-|[CMultiPaneFrameWnd::SetLastFocusedPane](#cmultipaneframewnd__setlastfocusedpane)||  
-|[CMultiPaneFrameWnd::SetPreDockState](#cmultipaneframewnd__setpredockstate)|Sets the predocking state. (Overrides [CPaneFrameWnd::SetPreDockState](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__setpredockstate).)|  
-|[CMultiPaneFrameWnd::StoreRecentDockSiteInfo](#cmultipaneframewnd__storerecentdocksiteinfo)|(Overrides [CPaneFrameWnd::StoreRecentDockSiteInfo](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__storerecentdocksiteinfo).)|  
-|[CMultiPaneFrameWnd::StoreRecentTabRelatedInfo](#cmultipaneframewnd__storerecenttabrelatedinfo)|(Overrides [CPaneFrameWnd::StoreRecentTabRelatedInfo](../../mfc/reference/cpaneframewnd-class.md#cpaneframewnd__storerecenttabrelatedinfo).)|  
+|[CMultiPaneFrameWnd::AddPane](#addpane)|Adds a pane. (Overrides [CPaneFrameWnd::AddPane](../../mfc/reference/cpaneframewnd-class.md#addpane).)|  
+|[CMultiPaneFrameWnd::AddRecentPane](#addrecentpane)||  
+|[CMultiPaneFrameWnd::AdjustLayout](#adjustlayout)|Adjusts the layout of the mini-frame window. (Overrides [CPaneFrameWnd::AdjustLayout](../../mfc/reference/cpaneframewnd-class.md#adjustlayout).)|  
+|[CMultiPaneFrameWnd::AdjustPaneFrames](#adjustpaneframes)|(Overrides [CPaneFrameWnd::AdjustPaneFrames](../../mfc/reference/cpaneframewnd-class.md#adjustpaneframes).)|  
+|[CMultiPaneFrameWnd::CalcExpectedDockedRect](#calcexpecteddockedrect)|Calculates the expected rectangle of a docked window. (Overrides [CPaneFrameWnd::CalcExpectedDockedRect](../../mfc/reference/cpaneframewnd-class.md#calcexpecteddockedrect).)|  
+|[CMultiPaneFrameWnd::CanBeAttached](#canbeattached)|Determines whether the current pane can dock to another pane or frame window. (Overrides [CPaneFrameWnd::CanBeAttached](../../mfc/reference/cpaneframewnd-class.md#canbeattached).)|  
+|[CMultiPaneFrameWnd::CanBeDockedToPane](#canbedockedtopane)|Determines whether the mini-frame window can dock to a pane. (Overrides [CPaneFrameWnd::CanBeDockedToPane](../../mfc/reference/cpaneframewnd-class.md#canbedockedtopane).)|  
+|[CMultiPaneFrameWnd::CheckGripperVisibility](#checkgrippervisibility)|(Overrides [CPaneFrameWnd::CheckGripperVisibility](../../mfc/reference/cpaneframewnd-class.md#checkgrippervisibility).)|  
+|[CMultiPaneFrameWnd::CloseMiniFrame](#closeminiframe)|(Overrides `CPaneFrameWnd::CloseMiniFrame`.)|  
+|[CMultiPaneFrameWnd::ConvertToTabbedDocument](#converttotabbeddocument)|Converts the pane to a tabbed document. (Overrides [CPaneFrameWnd::ConvertToTabbedDocument](../../mfc/reference/cpaneframewnd-class.md#converttotabbeddocument).)|  
+|[CMultiPaneFrameWnd::DockFrame](#dockframe)||  
+|[CMultiPaneFrameWnd::DockPane](#dockpane)|Docks the pane. (Overrides [CPaneFrameWnd::DockPane](../../mfc/reference/cpaneframewnd-class.md#dockpane).)|  
+|[CMultiPaneFrameWnd::DockRecentPaneToMainFrame](#dockrecentpanetomainframe)||  
+|[CMultiPaneFrameWnd::GetCaptionText](#getcaptiontext)|Returns the caption text. (Overrides [CPaneFrameWnd::GetCaptionText](../../mfc/reference/cpaneframewnd-class.md#getcaptiontext).)|  
+|[CMultiPaneFrameWnd::GetPaneContainerManager](#getpanecontainermanager)|Returns a reference to the internal container manager object.|  
+|[CMultiPaneFrameWnd::GetFirstVisiblePane](#getfirstvisiblepane)|Returns the first visible pane that is contained in a mini-frame window. (Overrides [CPaneFrameWnd::GetFirstVisiblePane](../../mfc/reference/cpaneframewnd-class.md#getfirstvisiblepane).)|  
+|[CMultiPaneFrameWnd::GetPane](#getpane)|Returns a pane that is contained in the mini-frame window. (Overrides [CPaneFrameWnd::GetPane](../../mfc/reference/cpaneframewnd-class.md#getpane).)|  
+|[CMultiPaneFrameWnd::GetPaneCount](#getpanecount)|Returns the number of panes that are contained in a mini-frame window. (Overrides [CPaneFrameWnd::GetPaneCount](../../mfc/reference/cpaneframewnd-class.md#getpanecount).)|  
+|[CMultiPaneFrameWnd::GetVisiblePaneCount](#getvisiblepanecount)|Returns the number of visible panes that are contained in a mini-frame window. (Overrides [CPaneFrameWnd::GetVisiblePaneCount](../../mfc/reference/cpaneframewnd-class.md#getvisiblepanecount).)|  
+|[CMultiPaneFrameWnd::InsertPane](#insertpane)||  
+|[CMultiPaneFrameWnd::LoadState](#loadstate)|Loads the pane's state from the registry. (Overrides [CPaneFrameWnd::LoadState](../../mfc/reference/cpaneframewnd-class.md#loadstate).)|  
+|[CMultiPaneFrameWnd::OnDockToRecentPos](#ondocktorecentpos)|Docks the mini-frame window at its most recent position. (Overrides [CPaneFrameWnd::OnDockToRecentPos](../../mfc/reference/cpaneframewnd-class.md#ondocktorecentpos).)|  
+|[CMultiPaneFrameWnd::OnKillRollUpTimer](#onkillrolluptimer)|Stops the rollup timer. (Overrides [CPaneFrameWnd::OnKillRollUpTimer](../../mfc/reference/cpaneframewnd-class.md#onkillrolluptimer).)|  
+|[CMultiPaneFrameWnd::OnPaneRecalcLayout](#onpanerecalclayout)|Adjusts the layout of a pane inside a mini-frame window. (Overrides [CPaneFrameWnd::OnPaneRecalcLayout](../../mfc/reference/cpaneframewnd-class.md#onpanerecalclayout).)|  
+|[CMultiPaneFrameWnd::OnSetRollUpTimer](#onsetrolluptimer)|Sets the rollup timer. (Overrides [CPaneFrameWnd::OnSetRollUpTimer](../../mfc/reference/cpaneframewnd-class.md#onsetrolluptimer).)|  
+|[CMultiPaneFrameWnd::OnShowPane](#onshowpane)|Called by the framework when a pane in the mini-frame window is hidden or displayed. (Overrides [CPaneFrameWnd::OnShowPane](../../mfc/reference/cpaneframewnd-class.md#onshowpane).)|  
+|[CMultiPaneFrameWnd::PaneFromPoint](#panefrompoint)|Returns a pane if it contains a user-supplied point inside a mini-frame window. (Overrides [CPaneFrameWnd::PaneFromPoint](../../mfc/reference/cpaneframewnd-class.md#panefrompoint).)|  
+|[CMultiPaneFrameWnd::RemoveNonValidPanes](#removenonvalidpanes)|Called by the framework to remove non-valid panes. (Overrides [CPaneFrameWnd::RemoveNonValidPanes](../../mfc/reference/cpaneframewnd-class.md#removenonvalidpanes).)|  
+|[CMultiPaneFrameWnd::RemovePane](#removepane)|Removes a pane from the mini-frame window. (Overrides [CPaneFrameWnd::RemovePane](../../mfc/reference/cpaneframewnd-class.md#removepane).)|  
+|[CMultiPaneFrameWnd::ReplacePane](#replacepane)|Replaces one pane with another. (Overrides [CPaneFrameWnd::ReplacePane](../../mfc/reference/cpaneframewnd-class.md#replacepane).)|  
+|[CMultiPaneFrameWnd::SaveState](#savestate)|Saves the pane's state to the registry. (Overrides [CPaneFrameWnd::SaveState](../../mfc/reference/cpaneframewnd-class.md#savestate).)|  
+|[CMultiPaneFrameWnd::Serialize](#serialize)|(Overrides `CPaneFrameWnd::Serialize`.)|  
+|[CMultiPaneFrameWnd::SetDockState](#setdockstate)|Sets the docking state. (Overrides [CPaneFrameWnd::SetDockState](../../mfc/reference/cpaneframewnd-class.md#setdockstate).)|  
+|[CMultiPaneFrameWnd::SetLastFocusedPane](#setlastfocusedpane)||  
+|[CMultiPaneFrameWnd::SetPreDockState](#setpredockstate)|Sets the predocking state. (Overrides [CPaneFrameWnd::SetPreDockState](../../mfc/reference/cpaneframewnd-class.md#setpredockstate).)|  
+|[CMultiPaneFrameWnd::StoreRecentDockSiteInfo](#storerecentdocksiteinfo)|(Overrides [CPaneFrameWnd::StoreRecentDockSiteInfo](../../mfc/reference/cpaneframewnd-class.md#storerecentdocksiteinfo).)|  
+|[CMultiPaneFrameWnd::StoreRecentTabRelatedInfo](#storerecenttabrelatedinfo)|(Overrides [CPaneFrameWnd::StoreRecentTabRelatedInfo](../../mfc/reference/cpaneframewnd-class.md#storerecenttabrelatedinfo).)|  
   
 ## Remarks  
  Most of the methods in this class override methods in the [CPaneFrameWnd Class](../../mfc/reference/cpaneframewnd-class.md) class.  
@@ -97,7 +97,7 @@ class CMultiPaneFrameWnd : public CPaneFrameWnd
  For information about deriving a class from the `CPaneFrameWnd` class and creating it dynamically, see [CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md).  
   
 ## Example  
- The following example demonstrates how to retrieve a pointer to a `CMultiPaneFrameWnd` object. This code snippet is part of the [Set Pane Size sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to retrieve a pointer to a `CMultiPaneFrameWnd` object. This code snippet is part of the [Set Pane Size sample](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_SetPaneSize#4](../../mfc/reference/codesnippet/cpp/cmultipaneframewnd-class_1.cpp)]  
   
@@ -115,7 +115,7 @@ class CMultiPaneFrameWnd : public CPaneFrameWnd
 ## Requirements  
  **Header:** afxMultiPaneFrameWnd.h  
   
-##  <a name="cmultipaneframewnd__addpane"></a>  CMultiPaneFrameWnd::AddPane  
+##  <a name="addpane"></a>  CMultiPaneFrameWnd::AddPane  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -127,7 +127,7 @@ virtual void AddPane(CBasePane* pWnd);
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__addrecentpane"></a>  CMultiPaneFrameWnd::AddRecentPane  
+##  <a name="addrecentpane"></a>  CMultiPaneFrameWnd::AddRecentPane  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -141,7 +141,7 @@ virtual BOOL AddRecentPane(CDockablePane* pBar);
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__adjustlayout"></a>  CMultiPaneFrameWnd::AdjustLayout  
+##  <a name="adjustlayout"></a>  CMultiPaneFrameWnd::AdjustLayout  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -150,7 +150,7 @@ virtual void AdjustLayout();
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__adjustpaneframes"></a>  CMultiPaneFrameWnd::AdjustPaneFrames  
+##  <a name="adjustpaneframes"></a>  CMultiPaneFrameWnd::AdjustPaneFrames  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -159,7 +159,7 @@ virtual void AdjustPaneFrames();
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__calcexpecteddockedrect"></a>  CMultiPaneFrameWnd::CalcExpectedDockedRect  
+##  <a name="calcexpecteddockedrect"></a>  CMultiPaneFrameWnd::CalcExpectedDockedRect  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -180,7 +180,7 @@ virtual void CalcExpectedDockedRect(
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__canbeattached"></a>  CMultiPaneFrameWnd::CanBeAttached  
+##  <a name="canbeattached"></a>  CMultiPaneFrameWnd::CanBeAttached  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -193,7 +193,7 @@ virtual BOOL CanBeAttached() const;
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__canbedockedtopane"></a>  CMultiPaneFrameWnd::CanBeDockedToPane  
+##  <a name="canbedockedtopane"></a>  CMultiPaneFrameWnd::CanBeDockedToPane  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -209,7 +209,7 @@ virtual BOOL CanBeDockedToPane(const CDockablePane* pDockingBar) const;
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__checkgrippervisibility"></a>  CMultiPaneFrameWnd::CheckGripperVisibility  
+##  <a name="checkgrippervisibility"></a>  CMultiPaneFrameWnd::CheckGripperVisibility  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -218,7 +218,7 @@ virtual void CheckGripperVisibility();
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__closeminiframe"></a>  CMultiPaneFrameWnd::CloseMiniFrame  
+##  <a name="closeminiframe"></a>  CMultiPaneFrameWnd::CloseMiniFrame  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -227,7 +227,7 @@ virtual void CloseMiniFrame();
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__converttotabbeddocument"></a>  CMultiPaneFrameWnd::ConvertToTabbedDocument  
+##  <a name="converttotabbeddocument"></a>  CMultiPaneFrameWnd::ConvertToTabbedDocument  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -236,7 +236,7 @@ virtual void ConvertToTabbedDocument();
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__dockframe"></a>  CMultiPaneFrameWnd::DockFrame  
+##  <a name="dockframe"></a>  CMultiPaneFrameWnd::DockFrame  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -253,7 +253,7 @@ virtual BOOL DockFrame(
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__dockpane"></a>  CMultiPaneFrameWnd::DockPane  
+##  <a name="dockpane"></a>  CMultiPaneFrameWnd::DockPane  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -267,7 +267,7 @@ virtual BOOL DockPane(CDockablePane* pDockedBar);
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__dockrecentpanetomainframe"></a>  CMultiPaneFrameWnd::DockRecentPaneToMainFrame  
+##  <a name="dockrecentpanetomainframe"></a>  CMultiPaneFrameWnd::DockRecentPaneToMainFrame  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -279,7 +279,7 @@ virtual void DockRecentPaneToMainFrame(CDockablePane* pBar);
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__getcaptiontext"></a>  CMultiPaneFrameWnd::GetCaptionText  
+##  <a name="getcaptiontext"></a>  CMultiPaneFrameWnd::GetCaptionText  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -290,7 +290,7 @@ virtual CString GetCaptionText();
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__getfirstvisiblepane"></a>  CMultiPaneFrameWnd::GetFirstVisiblePane  
+##  <a name="getfirstvisiblepane"></a>  CMultiPaneFrameWnd::GetFirstVisiblePane  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -303,7 +303,7 @@ virtual CWnd* GetFirstVisiblePane() const;
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__getpane"></a>  CMultiPaneFrameWnd::GetPane  
+##  <a name="getpane"></a>  CMultiPaneFrameWnd::GetPane  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -316,7 +316,7 @@ virtual CWnd* GetPane() const;
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__getpanecontainermanager"></a>  CMultiPaneFrameWnd::GetPaneContainerManager  
+##  <a name="getpanecontainermanager"></a>  CMultiPaneFrameWnd::GetPaneContainerManager  
  Returns a reference to the internal container manager object.  
   
 ```  
@@ -329,7 +329,7 @@ CPaneContainerManager& GetPaneContainerManager();
 ### Remarks  
  This method can be used to access the internal [CPaneContainerManager Class](../../mfc/reference/cpanecontainermanager-class.md) object.  
   
-##  <a name="cmultipaneframewnd__getpanecount"></a>  CMultiPaneFrameWnd::GetPaneCount  
+##  <a name="getpanecount"></a>  CMultiPaneFrameWnd::GetPaneCount  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -342,7 +342,7 @@ virtual int GetPaneCount() const;
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__getvisiblepanecount"></a>  CMultiPaneFrameWnd::GetVisiblePaneCount  
+##  <a name="getvisiblepanecount"></a>  CMultiPaneFrameWnd::GetVisiblePaneCount  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -355,7 +355,7 @@ virtual int GetVisiblePaneCount() const;
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__insertpane"></a>  CMultiPaneFrameWnd::InsertPane  
+##  <a name="insertpane"></a>  CMultiPaneFrameWnd::InsertPane  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -374,7 +374,7 @@ virtual BOOL InsertPane(
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__loadstate"></a>  CMultiPaneFrameWnd::LoadState  
+##  <a name="loadstate"></a>  CMultiPaneFrameWnd::LoadState  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -391,7 +391,7 @@ virtual BOOL LoadState(
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__ondocktorecentpos"></a>  CMultiPaneFrameWnd::OnDockToRecentPos  
+##  <a name="ondocktorecentpos"></a>  CMultiPaneFrameWnd::OnDockToRecentPos  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -400,7 +400,7 @@ virtual void OnDockToRecentPos();
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__onkillrolluptimer"></a>  CMultiPaneFrameWnd::OnKillRollUpTimer  
+##  <a name="onkillrolluptimer"></a>  CMultiPaneFrameWnd::OnKillRollUpTimer  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -409,7 +409,7 @@ virtual void OnKillRollUpTimer();
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__onpanerecalclayout"></a>  CMultiPaneFrameWnd::OnPaneRecalcLayout  
+##  <a name="onpanerecalclayout"></a>  CMultiPaneFrameWnd::OnPaneRecalcLayout  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -418,7 +418,7 @@ virtual void OnPaneRecalcLayout();
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__onsetrolluptimer"></a>  CMultiPaneFrameWnd::OnSetRollUpTimer  
+##  <a name="onsetrolluptimer"></a>  CMultiPaneFrameWnd::OnSetRollUpTimer  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -427,7 +427,7 @@ virtual void OnSetRollUpTimer();
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__onshowpane"></a>  CMultiPaneFrameWnd::OnShowPane  
+##  <a name="onshowpane"></a>  CMultiPaneFrameWnd::OnShowPane  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -442,7 +442,7 @@ virtual void OnShowPane(
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__panefrompoint"></a>  CMultiPaneFrameWnd::PaneFromPoint  
+##  <a name="panefrompoint"></a>  CMultiPaneFrameWnd::PaneFromPoint  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -461,7 +461,7 @@ virtual CBasePane* PaneFromPoint(
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__removenonvalidpanes"></a>  CMultiPaneFrameWnd::RemoveNonValidPanes  
+##  <a name="removenonvalidpanes"></a>  CMultiPaneFrameWnd::RemoveNonValidPanes  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -470,7 +470,7 @@ virtual void RemoveNonValidPanes();
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__removepane"></a>  CMultiPaneFrameWnd::RemovePane  
+##  <a name="removepane"></a>  CMultiPaneFrameWnd::RemovePane  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -487,7 +487,7 @@ virtual void RemovePane(
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__replacepane"></a>  CMultiPaneFrameWnd::ReplacePane  
+##  <a name="replacepane"></a>  CMultiPaneFrameWnd::ReplacePane  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -502,7 +502,7 @@ virtual void ReplacePane(
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__savestate"></a>  CMultiPaneFrameWnd::SaveState  
+##  <a name="savestate"></a>  CMultiPaneFrameWnd::SaveState  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -519,7 +519,7 @@ virtual BOOL SaveState(
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__serialize"></a>  CMultiPaneFrameWnd::Serialize  
+##  <a name="serialize"></a>  CMultiPaneFrameWnd::Serialize  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -531,7 +531,7 @@ virtual void Serialize(CArchive& ar);
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__setdockstate"></a>  CMultiPaneFrameWnd::SetDockState  
+##  <a name="setdockstate"></a>  CMultiPaneFrameWnd::SetDockState  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -543,7 +543,7 @@ virtual void SetDockState(CDockingManager* pDockManager);
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__setlastfocusedpane"></a>  CMultiPaneFrameWnd::SetLastFocusedPane  
+##  <a name="setlastfocusedpane"></a>  CMultiPaneFrameWnd::SetLastFocusedPane  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -555,7 +555,7 @@ void SetLastFocusedPane(HWND hwnd);
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__setpredockstate"></a>  CMultiPaneFrameWnd::SetPreDockState  
+##  <a name="setpredockstate"></a>  CMultiPaneFrameWnd::SetPreDockState  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -574,7 +574,7 @@ virtual BOOL SetPreDockState(
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__storerecentdocksiteinfo"></a>  CMultiPaneFrameWnd::StoreRecentDockSiteInfo  
+##  <a name="storerecentdocksiteinfo"></a>  CMultiPaneFrameWnd::StoreRecentDockSiteInfo  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -586,7 +586,7 @@ virtual void StoreRecentDockSiteInfo(CPane* pBar);
   
 ### Remarks  
   
-##  <a name="cmultipaneframewnd__storerecenttabrelatedinfo"></a>  CMultiPaneFrameWnd::StoreRecentTabRelatedInfo  
+##  <a name="storerecenttabrelatedinfo"></a>  CMultiPaneFrameWnd::StoreRecentTabRelatedInfo  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  

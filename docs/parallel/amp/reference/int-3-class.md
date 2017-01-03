@@ -121,7 +121,7 @@ class int_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[int_3::int_3 Constructor] --brokenlink-- (#int_3::int_3%20Constructor.md)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[int_3::int_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -188,7 +188,7 @@ class int_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[int_3::size Constant] --brokenlink-- (#int_3::size%20Constant.md)||  
+|[int_3::size Constant](#size)||  
   
 ### Public Data Members  
   
@@ -232,6 +232,64 @@ class int_3;
  **Header:** amp_short_vectors.h  
   
  **Namespace:** Concurrency::graphics  
+
+## <a name="ctor"></a> int_3::int_3 Constructor
+Default constructor, initializes all elements with 0.  
+  
+## Syntax  
+  
+```  
+int_3() restrict(amp,cpu);  
+int_3(  
+   int _V0,  
+   int _V1,  
+   int _V2  
+) restrict(amp,cpu);  
+int_3(  
+   int _V  
+) restrict(amp,cpu);  
+int_3(  
+   const int_3& _Other  
+) restrict(amp,cpu);  
+explicit inline int_3(  
+   const uint_3& _Other  
+) restrict(amp,cpu);  
+explicit inline int_3(  
+   const float_3& _Other  
+) restrict(amp,cpu);  
+explicit inline int_3(  
+   const unorm_3& _Other  
+) restrict(amp,cpu);  
+explicit inline int_3(  
+   const norm_3& _Other  
+) restrict(amp,cpu);  
+explicit inline int_3(  
+   const double_3& _Other  
+) restrict(amp,cpu);  
+```  
+  
+### Parameters  
+ `_V0`  
+ The value to initialize element 0.  
+  
+ `_V1`  
+ The value to initialize element 1.  
+  
+ `_V2`  
+ The value to initialize element 2.  
+  
+ `_V`  
+ The value for initialization.  
+  
+ `_Other`  
+ The object used to initialize.  
+  
+## <a name="size"></a> int_3::size Constant  
+## Syntax  
+  
+```  
+static const int size = 3;  
+```  
   
 ## See Also  
- [Concurrency::graphics Namespace](../../../parallel/amp/reference/concurrency-graphics-namespace.md)
+ [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

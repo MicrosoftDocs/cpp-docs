@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # CComEnumOnSTL Class
-This class defines a COM enumerator object based on an STL collection.  
+This class defines a COM enumerator object based on a C++ Standard Library collection.  
   
 ## Syntax  
   
@@ -65,10 +65,10 @@ template <class Base,
  A [copy policy](../../atl/atl-copy-policy-classes.md) class.  
   
  `CollType`  
- An STL container class.  
+ A C++ Standard Library container class.  
   
 ## Remarks  
- `CComEnumOnSTL` defines a COM enumerator object based on an STL collection. This class can be used on its own or in conjunction with [ICollectionOnSTLImpl](../../atl/reference/icollectiononstlimpl-class.md). Typical steps for using this class are outlined below. For more information, see [ATL Collections and Enumerators](../../atl/atl-collections-and-enumerators.md).  
+ `CComEnumOnSTL` defines a COM enumerator object based on a C++ Standard Library collection. This class can be used on its own or in conjunction with [ICollectionOnSTLImpl](../../atl/reference/icollectiononstlimpl-class.md). Typical steps for using this class are outlined below. For more information, see [ATL Collections and Enumerators](../../atl/atl-collections-and-enumerators.md).  
   
 ## To use this class with ICollectionOnSTLImpl:  
   
@@ -86,7 +86,7 @@ template <class Base,
   
 -   Create an instance of the `CComObject` specialization.  
   
--   Initialize the enumerator object by calling [IEnumOnSTLImpl::Init](../../atl/reference/ienumonstlimpl-class.md#ienumonstlimpl__init).  
+-   Initialize the enumerator object by calling [IEnumOnSTLImpl::Init](../../atl/reference/ienumonstlimpl-class.md#init).  
   
 -   Return the enumerator interface to the client.  
   
@@ -117,7 +117,7 @@ template <class Base,
   
 ## See Also  
  [IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md)   
- [ATLCollections Sample: Demonstrates ICollectionOnSTLImpl, CComEnumOnSTL, and Custom Copy Policy Classes](../../top/visual-cpp-samples.md)   
+ [ATLCollections Sample: Demonstrates ICollectionOnSTLImpl, CComEnumOnSTL, and Custom Copy Policy Classes](../../visual-cpp-samples.md)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   
  [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)   

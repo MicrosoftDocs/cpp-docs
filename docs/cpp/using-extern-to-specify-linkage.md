@@ -133,7 +133,6 @@ extern "C" int CFunc2(); // Error: not the first declaration of
   
 ## See Also  
  [Keywords](../cpp/keywords-cpp.md)   
- [(NOTINBUILD)Linkage Specifications](http://msdn.microsoft.com/en-us/d2b0cff1-7798-4c38-9ac8-61c3bfe2bfb9)   
  [extern Storage-Class Specifier](../c-language/extern-storage-class-specifier.md)   
  [Behavior of Identifiers](../c-language/behavior-of-identifiers.md)   
  [Linkage](../c-language/linkage.md)

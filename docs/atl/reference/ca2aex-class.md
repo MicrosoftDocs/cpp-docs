@@ -62,21 +62,21 @@ template <int   t_nBufferLength = 128>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CA2AEX::CA2AEX](#ca2aex__ca2aex)|The constructor.|  
-|[CA2AEX::~CA2AEX](#ca2aex___dtorca2aex)|The destructor.|  
+|[CA2AEX::CA2AEX](#ca2aex)|The constructor.|  
+|[CA2AEX::~CA2AEX](#dtor)|The destructor.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CA2AEX::operator LPSTR](#ca2aex__operator_lpstr)|Conversion operator.|  
+|[CA2AEX::operator LPSTR](#operator_lpstr)|Conversion operator.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CA2AEX::m_psz](#ca2aex__m_psz)|The data member that stores the source string.|  
-|[CA2AEX::m_szBuffer](#ca2aex__m_szbuffer)|The static buffer, used to store the converted string.|  
+|[CA2AEX::m_psz](#m_psz)|The data member that stores the source string.|  
+|[CA2AEX::m_szBuffer](#m_szbuffer)|The static buffer, used to store the converted string.|  
   
 ## Remarks  
  Unless extra functionality is required, use `CA2TEX`, `CT2AEX`, or **CA2A** in your own code.  
@@ -105,7 +105,7 @@ template <int   t_nBufferLength = 128>
 ## Requirements  
  **Header:** atlconv.h  
   
-##  <a name="ca2aex__ca2aex"></a>  CA2AEX::CA2AEX  
+##  <a name="ca2aex"></a>  CA2AEX::CA2AEX  
  The constructor.  
   
 ```
@@ -127,7 +127,7 @@ CA2AEX(
 ### Remarks  
  Creates the buffer required for the translation.  
   
-##  <a name="ca2aex___dtorca2aex"></a>  CA2AEX::~CA2AEX  
+##  <a name="dtor"></a>  CA2AEX::~CA2AEX  
  The destructor.  
   
 ```
@@ -137,14 +137,14 @@ CA2AEX(
 ### Remarks  
  Frees the allocated buffer.  
   
-##  <a name="ca2aex__m_psz"></a>  CA2AEX::m_psz  
+##  <a name="m_psz"></a>  CA2AEX::m_psz  
  The data member that stores the source string.  
   
 ```
 LPSTR m_psz;
 ```  
   
-##  <a name="ca2aex__m_szbuffer"></a>  CA2AEX::m_szBuffer  
+##  <a name="m_szbuffer"></a>  CA2AEX::m_szBuffer  
  The static buffer, used to store the converted string.  
   
 ```
@@ -152,7 +152,7 @@ char m_szBuffer[ t_nBufferLength
  ];
 ```  
   
-##  <a name="ca2aex__operator_lpstr"></a>  CA2AEX::operator LPSTR  
+##  <a name="operator_lpstr"></a>  CA2AEX::operator LPSTR  
  Conversion operator.  
   
 ```operator LPSTR() const throw();

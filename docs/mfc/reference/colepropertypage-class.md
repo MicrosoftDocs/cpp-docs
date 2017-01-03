@@ -54,27 +54,27 @@ class AFX_NOVTABLE COlePropertyPage : public CDialog
   
 |Name|Description|  
 |----------|-----------------|  
-|[COlePropertyPage::COlePropertyPage](#colepropertypage__colepropertypage)|Constructs a `COlePropertyPage` object.|  
+|[COlePropertyPage::COlePropertyPage](#colepropertypage)|Constructs a `COlePropertyPage` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[COlePropertyPage::GetControlStatus](#colepropertypage__getcontrolstatus)|Indicates whether the user has modified the value in the control.|  
-|[COlePropertyPage::GetObjectArray](#colepropertypage__getobjectarray)|Returns the array of objects being edited by the property page.|  
-|[COlePropertyPage::GetPageSite](#colepropertypage__getpagesite)|Returns a pointer to the property page's `IPropertyPageSite` interface.|  
-|[COlePropertyPage::IgnoreApply](#colepropertypage__ignoreapply)|Determines which controls do not enable the Apply button.|  
-|[COlePropertyPage::IsModified](#colepropertypage__ismodified)|Indicates whether the user has modified the property page.|  
-|[COlePropertyPage::OnEditProperty](#colepropertypage__oneditproperty)|Called by the framework when the user edits a property.|  
-|[COlePropertyPage::OnHelp](#colepropertypage__onhelp)|Called by the framework when the user invokes help.|  
-|[COlePropertyPage::OnInitDialog](#colepropertypage__oninitdialog)|Called by the framework when the property page is initialized.|  
-|[COlePropertyPage::OnObjectsChanged](#colepropertypage__onobjectschanged)|Called by the framework when another OLE control, with new properties, is chosen.|  
-|[COlePropertyPage::OnSetPageSite](#colepropertypage__onsetpagesite)|Called by the framework when the property frame provides the page's site.|  
-|[COlePropertyPage::SetControlStatus](#colepropertypage__setcontrolstatus)|Sets a flag indicating whether the user has modified the value in the control.|  
-|[COlePropertyPage::SetDialogResource](#colepropertypage__setdialogresource)|Sets the property page's dialog resource.|  
-|[COlePropertyPage::SetHelpInfo](#colepropertypage__sethelpinfo)|Sets the property page's brief help text, the name of its help file, and its help context.|  
-|[COlePropertyPage::SetModifiedFlag](#colepropertypage__setmodifiedflag)|Sets a flag indicating whether the user has modified the property page.|  
-|[COlePropertyPage::SetPageName](#colepropertypage__setpagename)|Sets the property page's name (caption).|  
+|[COlePropertyPage::GetControlStatus](#getcontrolstatus)|Indicates whether the user has modified the value in the control.|  
+|[COlePropertyPage::GetObjectArray](#getobjectarray)|Returns the array of objects being edited by the property page.|  
+|[COlePropertyPage::GetPageSite](#getpagesite)|Returns a pointer to the property page's `IPropertyPageSite` interface.|  
+|[COlePropertyPage::IgnoreApply](#ignoreapply)|Determines which controls do not enable the Apply button.|  
+|[COlePropertyPage::IsModified](#ismodified)|Indicates whether the user has modified the property page.|  
+|[COlePropertyPage::OnEditProperty](#oneditproperty)|Called by the framework when the user edits a property.|  
+|[COlePropertyPage::OnHelp](#onhelp)|Called by the framework when the user invokes help.|  
+|[COlePropertyPage::OnInitDialog](#oninitdialog)|Called by the framework when the property page is initialized.|  
+|[COlePropertyPage::OnObjectsChanged](#onobjectschanged)|Called by the framework when another OLE control, with new properties, is chosen.|  
+|[COlePropertyPage::OnSetPageSite](#onsetpagesite)|Called by the framework when the property frame provides the page's site.|  
+|[COlePropertyPage::SetControlStatus](#setcontrolstatus)|Sets a flag indicating whether the user has modified the value in the control.|  
+|[COlePropertyPage::SetDialogResource](#setdialogresource)|Sets the property page's dialog resource.|  
+|[COlePropertyPage::SetHelpInfo](#sethelpinfo)|Sets the property page's brief help text, the name of its help file, and its help context.|  
+|[COlePropertyPage::SetModifiedFlag](#setmodifiedflag)|Sets a flag indicating whether the user has modified the property page.|  
+|[COlePropertyPage::SetPageName](#setpagename)|Sets the property page's name (caption).|  
   
 ## Remarks  
  For instance, a property page may include an edit control that allows the user to view and modify the control's caption property.  
@@ -97,7 +97,7 @@ class AFX_NOVTABLE COlePropertyPage : public CDialog
 ## Requirements  
  **Header:** afxctl.h  
   
-##  <a name="colepropertypage__colepropertypage"></a>  COlePropertyPage::COlePropertyPage  
+##  <a name="colepropertypage"></a>  COlePropertyPage::COlePropertyPage  
  Constructs a `COlePropertyPage` object.  
   
 ```  
@@ -116,7 +116,7 @@ COlePropertyPage(
 ### Remarks  
  When you implement a subclass of `COlePropertyPage`, your subclass's constructor should use the `COlePropertyPage` constructor to identify the dialog-template resource on which the property page is based and the string resource containing its caption.  
   
-##  <a name="colepropertypage__getcontrolstatus"></a>  COlePropertyPage::GetControlStatus  
+##  <a name="getcontrolstatus"></a>  COlePropertyPage::GetControlStatus  
  Determines whether the user has modified the value of the property page control with the specified resource ID.  
   
 ```  
@@ -130,7 +130,7 @@ BOOL GetControlStatus(UINT nID);
 ### Return Value  
  **TRUE** if the control value has been modified; otherwise **FALSE**.  
   
-##  <a name="colepropertypage__getobjectarray"></a>  COlePropertyPage::GetObjectArray  
+##  <a name="getobjectarray"></a>  COlePropertyPage::GetObjectArray  
  Returns the array of objects being edited by the property page.  
   
 ```  
@@ -147,7 +147,7 @@ LPDISPATCH* GetObjectArray(ULONG* pnObjects);
 ### Remarks  
  Each property page object maintains an array of pointers to the `IDispatch` interfaces of the objects being edited by the page. This function sets its `pnObjects` argument to the number of elements in that array and returns a pointer to the first element of the array.  
   
-##  <a name="colepropertypage__getpagesite"></a>  COlePropertyPage::GetPageSite  
+##  <a name="getpagesite"></a>  COlePropertyPage::GetPageSite  
  Gets a pointer to the property page's `IPropertyPageSite` interface.  
   
 ```  
@@ -160,7 +160,7 @@ LPPROPERTYPAGESITE GetPageSite();
 ### Remarks  
  Controls and containers cooperate so that users can browse and edit control properties. The control provides property pages, each of which is an OLE object that allows the user to edit a related set of properties. The container provides a property frame that displays the property pages. For each page, the property frame provides a page site, which supports the `IPropertyPageSite` interface.  
   
-##  <a name="colepropertypage__ignoreapply"></a>  COlePropertyPage::IgnoreApply  
+##  <a name="ignoreapply"></a>  COlePropertyPage::IgnoreApply  
  Determines which controls do not enable the Apply button.  
   
 ```  
@@ -174,7 +174,7 @@ void IgnoreApply(UINT nID);
 ### Remarks  
  The property page's Apply button is enabled only when values of property page controls have been changed. Use this function to specify controls that do not cause the Apply button to be enabled when their values change.  
   
-##  <a name="colepropertypage__ismodified"></a>  COlePropertyPage::IsModified  
+##  <a name="ismodified"></a>  COlePropertyPage::IsModified  
  Determines whether the user has changed any values on the property page.  
   
 ```  
@@ -184,7 +184,7 @@ BOOL IsModified();
 ### Return Value  
  **TRUE** if the property page has been modified.  
   
-##  <a name="colepropertypage__oneditproperty"></a>  COlePropertyPage::OnEditProperty  
+##  <a name="oneditproperty"></a>  COlePropertyPage::OnEditProperty  
  The framework calls this function when a specific property is to be edited.  
   
 ```  
@@ -201,7 +201,7 @@ virtual BOOL OnEditProperty(DISPID dispid);
 ### Remarks  
  You can override it to set the focus to the appropriate control on the page. The default implementation does nothing and returns **FALSE**.  
   
-##  <a name="colepropertypage__onhelp"></a>  COlePropertyPage::OnHelp  
+##  <a name="onhelp"></a>  COlePropertyPage::OnHelp  
  The framework calls this function when the user requests online help.  
   
 ```  
@@ -218,7 +218,7 @@ virtual BOOL OnHelp(LPCTSTR lpszHelpDir);
 ### Remarks  
  Override it if your property page must perform any special action when the user accesses help. The default implementation does nothing and returns **FALSE**, which instructs the framework to call WinHelp.  
   
-##  <a name="colepropertypage__oninitdialog"></a>  COlePropertyPage::OnInitDialog  
+##  <a name="oninitdialog"></a>  COlePropertyPage::OnInitDialog  
  The framework calls this function when the property page's dialog is initialized.  
   
 ```  
@@ -231,7 +231,7 @@ virtual BOOL OnInitDialog();
 ### Remarks  
  Override it if any special action is required when the dialog is initialized. The default implementation calls `CDialog::OnInitDialog` and returns **FALSE**.  
   
-##  <a name="colepropertypage__onobjectschanged"></a>  COlePropertyPage::OnObjectsChanged  
+##  <a name="onobjectschanged"></a>  COlePropertyPage::OnObjectsChanged  
  Called by the framework when another OLE control, with new properties, is chosen.  
   
 ```  
@@ -243,7 +243,7 @@ virtual void OnObjectsChanged();
   
  Override this function to receive notification of this action and perform any special actions.  
   
-##  <a name="colepropertypage__onsetpagesite"></a>  COlePropertyPage::OnSetPageSite  
+##  <a name="onsetpagesite"></a>  COlePropertyPage::OnSetPageSite  
  The framework calls this function when the property frame provides the property page's page site.  
   
 ```  
@@ -253,7 +253,7 @@ virtual void OnSetPageSite();
 ### Remarks  
  The default implementation loads the page's caption and attempts to determine the page's size from the dialog resource. Override this function if your property page requires any further action; your override should call the base-class implementation.  
   
-##  <a name="colepropertypage__setcontrolstatus"></a>  COlePropertyPage::SetControlStatus  
+##  <a name="setcontrolstatus"></a>  COlePropertyPage::SetControlStatus  
  Changes the status of a property page control.  
   
 ```  
@@ -275,7 +275,7 @@ BOOL SetControlStatus(
 ### Remarks  
  If the status of a property page control is dirty when the property page is closed or the Apply button is chosen, the control's property will be updated with the appropriate value.  
   
-##  <a name="colepropertypage__setdialogresource"></a>  COlePropertyPage::SetDialogResource  
+##  <a name="setdialogresource"></a>  COlePropertyPage::SetDialogResource  
  Sets the property page's dialog resource.  
   
 ```  
@@ -286,7 +286,7 @@ void SetDialogResource(HGLOBAL hDialog);
  *hDialog*  
  Handle to the property page's dialog resource.  
   
-##  <a name="colepropertypage__sethelpinfo"></a>  COlePropertyPage::SetHelpInfo  
+##  <a name="sethelpinfo"></a>  COlePropertyPage::SetHelpInfo  
  Specifies tooltip information, the help filename, and the help context for your property page.  
   
 ```  
@@ -306,7 +306,7 @@ void SetHelpInfo(
  *dwHelpContext*  
  Help context for the property page.  
   
-##  <a name="colepropertypage__setmodifiedflag"></a>  COlePropertyPage::SetModifiedFlag  
+##  <a name="setmodifiedflag"></a>  COlePropertyPage::SetModifiedFlag  
  Indicates whether the user has modified the property page.  
   
 ```  
@@ -317,7 +317,7 @@ void SetModifiedFlag(BOOL bModified = TRUE);
  `bModified`  
  Specifies the new value for the property page's modified flag.  
   
-##  <a name="colepropertypage__setpagename"></a>  COlePropertyPage::SetPageName  
+##  <a name="setpagename"></a>  COlePropertyPage::SetPageName  
  Sets the property page's name, which the property frame will typically display on the page's tab.  
   
 ```  
@@ -329,8 +329,8 @@ void SetPageName(LPCTSTR lpszPageName);
  Pointer to a string containing the property page's name.  
   
 ## See Also  
- [MFC Sample CIRC3](../../top/visual-cpp-samples.md)   
- [MFC Sample TESTHELP](../../top/visual-cpp-samples.md)   
+ [MFC Sample CIRC3](../../visual-cpp-samples.md)   
+ [MFC Sample TESTHELP](../../visual-cpp-samples.md)   
  [CDialog Class](../../mfc/reference/cdialog-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CDialog Class](../../mfc/reference/cdialog-class.md)

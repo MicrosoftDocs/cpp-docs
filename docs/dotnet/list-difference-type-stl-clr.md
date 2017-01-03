@@ -1,5 +1,5 @@
 ---
-title: "list::difference_type (STL-CLR) | Microsoft Docs"
+title: "list::difference_type (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

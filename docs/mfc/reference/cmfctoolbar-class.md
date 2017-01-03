@@ -56,187 +56,187 @@ class CMFCToolBar : public CMFCBaseToolBar
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCToolBar::AddBasicCommand](#cmfctoolbar__addbasiccommand)|Adds a menu command to the list of commands that are always displayed when a user opens a menu.|  
-|[CMFCToolBar::AddCommandUsage](#cmfctoolbar__addcommandusage)|Increments by one the counter that is associated with the given command.|  
-|[CMFCToolBar::AddToolBarForImageCollection](#cmfctoolbar__addtoolbarforimagecollection)|Adds images from the user interface resources to the collection of images in the application.|  
-|[CMFCToolBar::AdjustLayout](#cmfctoolbar__adjustlayout)|Recalculates the size and position of a toolbar. (Overrides [CBasePane::AdjustLayout](../../mfc/reference/cbasepane-class.md#cbasepane__adjustlayout)).|  
-|[CMFCToolBar::AdjustSize](#cmfctoolbar__adjustsize)|Recalculates the size of the toolbar.|  
-|[CMFCToolBar::AllowChangeTextLabels](#cmfctoolbar__allowchangetextlabels)|Specifies whether text labels can be shown under images on the toolbar buttons.|  
-|[CMFCToolBar::AreTextLabels](#cmfctoolbar__aretextlabels)|Specifies whether text labels under images are currently displayed on the toolbar buttons.|  
-|[CMFCToolBar::AutoGrayInactiveImages](#cmfctoolbar__autograyinactiveimages)|Enable or disables the automatic generation of inactive button images.|  
-|[CMFCToolBar::ButtonToIndex](#cmfctoolbar__buttontoindex)|Returns the index of a specified [CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md) object in this toolbar.|  
-|[CMFCToolBar::CalcFixedLayout](#cmfctoolbar__calcfixedlayout)|Calculates the horizontal size of the toolbar. (Overrides [CBasePane::CalcFixedLayout](../../mfc/reference/cbasepane-class.md#cbasepane__calcfixedlayout).)|  
-|[CMFCToolBar::CalcSize](#cmfctoolbar__calcsize)|Called by the framework as part of the layout calculation process. (Overrides [CPane::CalcSize](../../mfc/reference/cpane-class.md#cpane__calcsize).)|  
-|[CMFCToolBar::CanHandleSiblings](#cmfctoolbar__canhandlesiblings)|Determines whether the toolbar and its sibling are positioned on the same pane.|  
-|[CMFCToolBar::CleanUpImages](#cmfctoolbar__cleanupimages)|Frees the system resources allocated for toolbar images.|  
-|[CMFCToolBar::CleanUpLockedImages](#cmfctoolbar__cleanuplockedimages)|Frees the system resources allocated for locked toolbar images.|  
-|[CMFCToolBar::CanBeClosed](#cmfctoolbar__canbeclosed)|Specifies whether a user can close the toolbar. (Overrides [CBasePane::CanBeClosed](../../mfc/reference/cbasepane-class.md#cbasepane__canbeclosed).)|  
-|[CMFCToolBar::CanBeRestored](#cmfctoolbar__canberestored)|Determines whether the system can restore a toolbar to its original state after customization.|  
-|[CMFCToolBar::CanFocus](#cmfctoolbar__canfocus)|Specifies whether the pane can receive focus. (Overrides [CBasePane::CanFocus](../../mfc/reference/cbasepane-class.md#cbasepane__canfocus).)|  
-|[CMFCToolBar::CanHandleSiblings](#cmfctoolbar__canhandlesiblings)|Determines whether the toolbar and its sibling are positioned on the same pane.|  
-|[CMFCToolBar::CommandToIndex](#cmfctoolbar__commandtoindex)|Returns the index of the button in the toolbar with a specified command ID.|  
-|[CMFCToolBar::Create](#cmfctoolbar__create)|Creates a `CMFCToolBar` object.|  
-|[CMFCToolBar::CreateEx](#cmfctoolbar__createex)|Creates a `CMFCToolBar` object that uses additional style options, such as large icons.|  
-|[CMFCToolBar::Deactivate](#cmfctoolbar__deactivate)|Deactivates the toolbar.|  
-|[CMFCToolBar::EnableCustomizeButton](#cmfctoolbar__enablecustomizebutton)|Enables or disables the **Add or Remove Buttons** button that appears on the end of the toolbar.|  
-|[CMFCToolBar::EnableDocking](#cmfctoolbar__enabledocking)|Enables docking of the pane to the main frame. (Overrides [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#cbasepane__enabledocking).)|  
-|[CMFCToolBar::EnableLargeIcons](#cmfctoolbar__enablelargeicons)|Enables or disables large icons on toolbar buttons.|  
-|[CMFCToolBar::EnableQuickCustomization](#cmfctoolbar__enablequickcustomization)|Enables or disables the quick customization of toolbars so that the user can press the **Alt** key and drag a button to a new location.|  
-|[CMFCToolBar::EnableReflections](#cmfctoolbar__enablereflections)|Enables or disables command reflection.|  
-|[CMFCToolBar::EnableTextLabels](#cmfctoolbar__enabletextlabels)|Enables or disables text labels under toolbar button images.|  
-|[CMFCToolBar::FromHandlePermanent](#cmfctoolbar__fromhandlepermanent)|Retrieves a pointer to the `CMFCToolBar` object that contains the given window handle.|  
-|[CMFCToolBar::GetAllButtons](#cmfctoolbar__getallbuttons)|Returns a read-only list of buttons in a toolbar.|  
-|[CMFCToolBar::GetAllToolbars](#cmfctoolbar__getalltoolbars)|Returns a read-only list of all toolbars in the application.|  
-|[CMFCToolBar::GetBasicCommands](#cmfctoolbar__getbasiccommands)|Returns a read-only list of the basic commands defined in the application.|  
-|[CMFCToolBar::GetButton](#cmfctoolbar__getbutton)|Returns a pointer to the `CMFCToolBarButton` object that has a specified toolbar button index.|  
-|[CMFCToolBar::GetButtonInfo](#cmfctoolbar__getbuttoninfo)|Returns the command ID, style, and image index of the button at a specified index.|  
-|[CMFCToolBar::GetButtonSize](#cmfctoolbar__getbuttonsize)|Returns the dimensions of each button on the toolbar.|  
-|[CMFCToolBar::GetButtonStyle](#cmfctoolbar__getbuttonstyle)|Returns the current style of the toolbar button that is located at the specified index.|  
-|[CMFCToolBar::GetButtonText](#cmfctoolbar__getbuttontext)|Returns the text label of a button that has a specified index.|  
-|[CMFCToolBar::GetColdImages](#cmfctoolbar__getcoldimages)|Returns a pointer to the collection of cold toolbar button images in the application.|  
-|[CMFCToolBar::GetColumnWidth](#cmfctoolbar__getcolumnwidth)|Returns the width of the toolbar buttons.|  
-|[CMFCToolBar::GetCommandButtons](#cmfctoolbar__getcommandbuttons)|Returns a list of buttons that have a specified command ID from all toolbars in the application.|  
-|[CMFCToolBar::GetCount](#cmfctoolbar__getcount)|Returns the number of buttons and separators on the toolbar.|  
-|[CMFCToolBar::GetCustomizeButton](#cmfctoolbar__getcustomizebutton)|Retrieves a pointer to the `CMFCCustomizeButton` object that is associated with the toolbar.|  
-|[CMFCToolBar::GetDefaultImage](#cmfctoolbar__getdefaultimage)|Returns the index of the default image for a toolbar button with a specified command ID.|  
-|[CMFCToolBar::GetDisabledImages](#cmfctoolbar__getdisabledimages)|Returns a pointer to the collection of images that are used for disabled toolbar buttons in the application.|  
-|[CMFCToolBar::GetDisabledMenuImages](#cmfctoolbar__getdisabledmenuimages)|Returns a pointer to the collection of images that are used for disabled menu buttons in the application.|  
-|[CMFCToolBar::GetDroppedDownMenu](#cmfctoolbar__getdroppeddownmenu)|Retrieves a pointer to the menu button object that is currently displaying its sub-menu.|  
-|[CMFCToolBar::GetGrayDisabledButtons](#cmfctoolbar__getgraydisabledbuttons)|Specifies whether the images of disabled buttons are dimmed versions of the regular button images, or taken from the collection of disabled button images.|  
-|[CMFCToolBar::GetHighlightedButton](#cmfctoolbar__gethighlightedbutton)|Returns a pointer to the toolbar button that is currently highlighted.|  
-|[CMFCToolBar::GetHotBorder](#cmfctoolbar__gethotborder)|Determines whether the toolbar buttons are hot-tracked.|  
-|[CMFCToolBar::GetHotTextColor](#cmfctoolbar__gethottextcolor)|Returns the text color of the highlighted toolbar buttons.|  
-|[CMFCToolBar::GetHwndLastFocus](#cmfctoolbar__gethwndlastfocus)|Returns a handle to the window that had the input focus just before the toolbar did.|  
-|[CMFCToolBar::GetIgnoreSetText](#cmfctoolbar__getignoresettext)|Specifies whether calls to set button labels are ignored.|  
-|[CMFCToolBar::GetImageSize](#cmfctoolbar__getimagesize)|Returns the current size of toolbar button images.|  
-|[CMFCToolBar::GetImages](#cmfctoolbar__getimages)|Returns a pointer to the collection of default button images in the application.|  
-|[CMFCToolBar::GetImagesOffset](#cmfctoolbar__getimagesoffset)|Returns the index offset used to find the toolbar button images for this toolbar in the global list of toolbar button images.|  
-|[CMFCToolBar::GetInvalidateItemRect](#cmfctoolbar__getinvalidateitemrect)|Retrieves the region of the client area that must be redrawn for the button at the given index.|  
-|[CMFCToolBar::GetItemID](#cmfctoolbar__getitemid)|Returns the command ID of the toolbar button at a specified index.|  
-|[CMFCToolBar::GetItemRect](#cmfctoolbar__getitemrect)|Returns the bounding rectangle of the button at a specified index.|  
-|[CMFCToolBar::GetLargeColdImages](#cmfctoolbar__getlargecoldimages)|Returns a pointer to the collection of large cold toolbar button images in the application.|  
-|[CMFCToolBar::GetLargeDisabledImages](#cmfctoolbar__getlargedisabledimages)|Returns a pointer to the collection of large disabled toolbar button images in the application.|  
-|[CMFCToolBar::GetLargeImages](#cmfctoolbar__getlargeimages)|Returns a pointer to the collection of large toolbar button images in the application.|  
-|[CMFCToolBar::GetLockedColdImages](#cmfctoolbar__getlockedcoldimages)|Returns a pointer to the collection of locked cold images in the toolbar.|  
-|[CMFCToolBar::GetLockedDisabledImages](#cmfctoolbar__getlockeddisabledimages)|Returns a pointer to the collection of locked disabled images in the toolbar.|  
-|[CMFCToolBar::GetLockedImages](#cmfctoolbar__getlockedimages)|Returns a pointer to the collection of locked button images in the toolbar.|  
-|[CMFCToolBar::GetLockedImageSize](#cmfctoolbar__getlockedimagesize)|Returns the default size of locked toolbar images.|  
-|[CMFCToolBar::GetLockedMenuImages](#cmfctoolbar__getlockedmenuimages)|Returns a pointer to the collection of locked toolbar menu images in the toolbar.|  
-|[CMFCToolBar::GetMenuButtonSize](#cmfctoolbar__getmenubuttonsize)|Returns the size of menu buttons in the application.|  
-|[CMFCToolBar::GetMenuImageSize](#cmfctoolbar__getmenuimagesize)|Returns the size of menu button images in the application.|  
-|[CMFCToolBar::GetMenuImages](#cmfctoolbar__getmenuimages)|Returns a pointer to the collection of menu button images in the application.|  
-|[CMFCToolBar::GetOrigButtons](#cmfctoolbar__getorigbuttons)|Retrieves the collection of non-customized buttons of the toolbar.|  
-|[CMFCToolBar::GetOrigResetButtons](#cmfctoolbar__getorigresetbuttons)|Retrieves the collection of non-customized reset buttons of the toolbar.|  
-|[CMFCToolBar::GetResourceID](#cmfctoolbar__getresourceid)|Retrieves the resource ID of the toolbar.|  
-|[CMFCToolBar::GetRouteCommandsViaFrame](#cmfctoolbar__getroutecommandsviaframe)|Determines which object, the parent frame or the owner, sends commands to the toolbar.|  
-|[CMFCToolBar::GetRowHeight](#cmfctoolbar__getrowheight)|Returns the height of toolbar buttons.|  
-|[CMFCToolBar::GetShowTooltips](#cmfctoolbar__getshowtooltips)|Specifies whether tool tips are displayed for toolbar buttons.|  
-|[CMFCToolBar::GetSiblingToolBar](#cmfctoolbar__getsiblingtoolbar)|Retrieves the sibling of the toolbar.|  
-|[CMFCToolBar::GetUserImages](#cmfctoolbar__getuserimages)|Returns a pointer to the collection of user-defined toolbar button images in the application.|  
-|[CMFCToolBar::HitTest](#cmfctoolbar__hittest)|Returns the index of the toolbar button that is located at the specified position.|  
-|[CMFCToolBar::InsertButton](#cmfctoolbar__insertbutton)|Inserts a button into the toolbar.|  
-|[CMFCToolBar::InsertSeparator](#cmfctoolbar__insertseparator)|Inserts a separator into the toolbar.|  
-|[CMFCToolBar::InvalidateButton](#cmfctoolbar__invalidatebutton)|Invalidates the client area of the toolbar button that exists at the provided index.|  
-|[CMFCToolBar::IsAddRemoveQuickCustomize](#cmfctoolbar__isaddremovequickcustomize)|Determines whether a user can add or remove toolbar buttons by using the **Customize** menu option.|  
-|[CMFCToolBar::IsAltCustomizeMode](#cmfctoolbar__isaltcustomizemode)|Specifies whether *quick customization* is being used to drag a button.|  
-|[CMFCToolBar::IsAutoGrayInactiveImages](#cmfctoolbar__isautograyinactiveimages)|Specifies whether the automatic generation of inactive (non-highlighted) button images is enabled.|  
-|[CMFCToolBar::IsBasicCommand](#cmfctoolbar__isbasiccommand)|Determines whether a command is on the list of basic commands.|  
-|[CMFCToolBar::IsButtonExtraSizeAvailable](#cmfctoolbar__isbuttonextrasizeavailable)|Determines whether the toolbar can display buttons that have extended borders.|  
-|[CMFCToolBar::IsButtonHighlighted](#cmfctoolbar__isbuttonhighlighted)|Determines whether a button on the toolbar is highlighted.|  
-|[CMFCToolBar::IsCommandPermitted](#cmfctoolbar__iscommandpermitted)|Determines whether a command is permitted.|  
-|[CMFCToolBar::IsCommandRarelyUsed](#cmfctoolbar__iscommandrarelyused)|Determines whether a command is rarely used (see [CMFCToolBar::SetCommandUsageOptions](#cmfctoolbar__setcommandusageoptions)).|  
-|[CMFCToolBar::IsCustomizeMode](#cmfctoolbar__iscustomizemode)|Specifies whether the toolbar framework is in customization mode.|  
-|[CMFCToolBar::IsDragButton](#cmfctoolbar__isdragbutton)|Determines whether a toolbar button is being dragged.|  
-|[CMFCToolBar::IsExistCustomizeButton](#cmfctoolbar__isexistcustomizebutton)|Determines whether the toolbar contains the **Customize** button.|  
-|[CMFCToolBar::IsFloating](#cmfctoolbar__isfloating)|Determines whether the toolbar is floating.|  
-|[CMFCToolBar::IsLargeIcons](#cmfctoolbar__islargeicons)|Specifies whether toolbars in the application currently display large icons.|  
-|[CMFCToolBar::IsLastCommandFromButton](#cmfctoolbar__islastcommandfrombutton)|Determines whether the most recently executed command was sent from the specified toolbar button.|  
-|[CMFCToolBar::IsLocked](#cmfctoolbar__islocked)|Determines whether the toolbar is locked.|  
-|[CMFCToolBar::IsOneRowWithSibling](#cmfctoolbar__isonerowwithsibling)|Determines whether the toolbar and its sibling toolbar are positioned on the same row.|  
-|[CMFCToolBar::IsUserDefined](#cmfctoolbar__isuserdefined)|Specifies whether the toolbar is user-defined.|  
-|[CMFCToolBar::LoadBitmap](#cmfctoolbar__loadbitmap)|Loads toolbar images from application resources.|  
-|[CMFCToolBar::LoadBitmapEx](#cmfctoolbar__loadbitmapex)|Loads toolbar images from application resources. Includes large images.|  
-|[CMFCToolBar::LoadParameters](#cmfctoolbar__loadparameters)|Loads global toolbar options from the Windows registry.|  
-|[CMFCToolBar::LoadState](#cmfctoolbar__loadstate)|Loads the toolbar state information from the Windows registry. (Overrides [CPane::LoadState](../../mfc/reference/cpane-class.md#cpane__loadstate).)|  
-|[CMFCToolBar::LoadToolBar](#cmfctoolbar__loadtoolbar)|Loads the toolbar from application resources.|  
-|[CMFCToolBar::LoadToolBarEx](#cmfctoolbar__loadtoolbarex)|Loads the toolbar from application resources by using the `CMFCToolBarInfo` helper class to enable the application to use large images.|  
-|[CMFCToolBar::OnChangeHot](#cmfctoolbar__onchangehot)|Called by the framework when a user selects a button on the toolbar.|  
-|[CMFCToolBar::OnFillBackground](#cmfctoolbar__onfillbackground)|Called by the framework from [CBasePane::DoPaint](../../mfc/reference/cbasepane-class.md#cbasepane__dopaint) to fill the toolbar background.|  
-|[CMFCToolBar::OnReset](#cmfctoolbar__onreset)|Restores the toolbar to its original state.|  
-|[CMFCToolBar::OnSetAccData](#cmfctoolbar__onsetaccdata)|(Overrides [CBasePane::OnSetAccData](../../mfc/reference/cbasepane-class.md#cbasepane__onsetaccdata).)|  
-|[CMFCToolBar::OnSetDefaultButtonText](#cmfctoolbar__onsetdefaultbuttontext)|Restores the text of a toolbar button to its default state.|  
+|[CMFCToolBar::AddBasicCommand](#addbasiccommand)|Adds a menu command to the list of commands that are always displayed when a user opens a menu.|  
+|[CMFCToolBar::AddCommandUsage](#addcommandusage)|Increments by one the counter that is associated with the given command.|  
+|[CMFCToolBar::AddToolBarForImageCollection](#addtoolbarforimagecollection)|Adds images from the user interface resources to the collection of images in the application.|  
+|[CMFCToolBar::AdjustLayout](#adjustlayout)|Recalculates the size and position of a toolbar. (Overrides [CBasePane::AdjustLayout](../../mfc/reference/cbasepane-class.md#adjustlayout)).|  
+|[CMFCToolBar::AdjustSize](#adjustsize)|Recalculates the size of the toolbar.|  
+|[CMFCToolBar::AllowChangeTextLabels](#allowchangetextlabels)|Specifies whether text labels can be shown under images on the toolbar buttons.|  
+|[CMFCToolBar::AreTextLabels](#aretextlabels)|Specifies whether text labels under images are currently displayed on the toolbar buttons.|  
+|[CMFCToolBar::AutoGrayInactiveImages](#autograyinactiveimages)|Enable or disables the automatic generation of inactive button images.|  
+|[CMFCToolBar::ButtonToIndex](#buttontoindex)|Returns the index of a specified [CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md) object in this toolbar.|  
+|[CMFCToolBar::CalcFixedLayout](#calcfixedlayout)|Calculates the horizontal size of the toolbar. (Overrides [CBasePane::CalcFixedLayout](../../mfc/reference/cbasepane-class.md#calcfixedlayout).)|  
+|[CMFCToolBar::CalcSize](#calcsize)|Called by the framework as part of the layout calculation process. (Overrides [CPane::CalcSize](../../mfc/reference/cpane-class.md#calcsize).)|  
+|[CMFCToolBar::CanHandleSiblings](#canhandlesiblings)|Determines whether the toolbar and its sibling are positioned on the same pane.|  
+|[CMFCToolBar::CleanUpImages](#cleanupimages)|Frees the system resources allocated for toolbar images.|  
+|[CMFCToolBar::CleanUpLockedImages](#cleanuplockedimages)|Frees the system resources allocated for locked toolbar images.|  
+|[CMFCToolBar::CanBeClosed](#canbeclosed)|Specifies whether a user can close the toolbar. (Overrides [CBasePane::CanBeClosed](../../mfc/reference/cbasepane-class.md#canbeclosed).)|  
+|[CMFCToolBar::CanBeRestored](#canberestored)|Determines whether the system can restore a toolbar to its original state after customization.|  
+|[CMFCToolBar::CanFocus](#canfocus)|Specifies whether the pane can receive focus. (Overrides [CBasePane::CanFocus](../../mfc/reference/cbasepane-class.md#canfocus).)|  
+|[CMFCToolBar::CanHandleSiblings](#canhandlesiblings)|Determines whether the toolbar and its sibling are positioned on the same pane.|  
+|[CMFCToolBar::CommandToIndex](#commandtoindex)|Returns the index of the button in the toolbar with a specified command ID.|  
+|[CMFCToolBar::Create](#create)|Creates a `CMFCToolBar` object.|  
+|[CMFCToolBar::CreateEx](#createex)|Creates a `CMFCToolBar` object that uses additional style options, such as large icons.|  
+|[CMFCToolBar::Deactivate](#deactivate)|Deactivates the toolbar.|  
+|[CMFCToolBar::EnableCustomizeButton](#enablecustomizebutton)|Enables or disables the **Add or Remove Buttons** button that appears on the end of the toolbar.|  
+|[CMFCToolBar::EnableDocking](#enabledocking)|Enables docking of the pane to the main frame. (Overrides [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#enabledocking).)|  
+|[CMFCToolBar::EnableLargeIcons](#enablelargeicons)|Enables or disables large icons on toolbar buttons.|  
+|[CMFCToolBar::EnableQuickCustomization](#enablequickcustomization)|Enables or disables the quick customization of toolbars so that the user can press the **Alt** key and drag a button to a new location.|  
+|[CMFCToolBar::EnableReflections](#enablereflections)|Enables or disables command reflection.|  
+|[CMFCToolBar::EnableTextLabels](#enabletextlabels)|Enables or disables text labels under toolbar button images.|  
+|[CMFCToolBar::FromHandlePermanent](#fromhandlepermanent)|Retrieves a pointer to the `CMFCToolBar` object that contains the given window handle.|  
+|[CMFCToolBar::GetAllButtons](#getallbuttons)|Returns a read-only list of buttons in a toolbar.|  
+|[CMFCToolBar::GetAllToolbars](#getalltoolbars)|Returns a read-only list of all toolbars in the application.|  
+|[CMFCToolBar::GetBasicCommands](#getbasiccommands)|Returns a read-only list of the basic commands defined in the application.|  
+|[CMFCToolBar::GetButton](#getbutton)|Returns a pointer to the `CMFCToolBarButton` object that has a specified toolbar button index.|  
+|[CMFCToolBar::GetButtonInfo](#getbuttoninfo)|Returns the command ID, style, and image index of the button at a specified index.|  
+|[CMFCToolBar::GetButtonSize](#getbuttonsize)|Returns the dimensions of each button on the toolbar.|  
+|[CMFCToolBar::GetButtonStyle](#getbuttonstyle)|Returns the current style of the toolbar button that is located at the specified index.|  
+|[CMFCToolBar::GetButtonText](#getbuttontext)|Returns the text label of a button that has a specified index.|  
+|[CMFCToolBar::GetColdImages](#getcoldimages)|Returns a pointer to the collection of cold toolbar button images in the application.|  
+|[CMFCToolBar::GetColumnWidth](#getcolumnwidth)|Returns the width of the toolbar buttons.|  
+|[CMFCToolBar::GetCommandButtons](#getcommandbuttons)|Returns a list of buttons that have a specified command ID from all toolbars in the application.|  
+|[CMFCToolBar::GetCount](#getcount)|Returns the number of buttons and separators on the toolbar.|  
+|[CMFCToolBar::GetCustomizeButton](#getcustomizebutton)|Retrieves a pointer to the `CMFCCustomizeButton` object that is associated with the toolbar.|  
+|[CMFCToolBar::GetDefaultImage](#getdefaultimage)|Returns the index of the default image for a toolbar button with a specified command ID.|  
+|[CMFCToolBar::GetDisabledImages](#getdisabledimages)|Returns a pointer to the collection of images that are used for disabled toolbar buttons in the application.|  
+|[CMFCToolBar::GetDisabledMenuImages](#getdisabledmenuimages)|Returns a pointer to the collection of images that are used for disabled menu buttons in the application.|  
+|[CMFCToolBar::GetDroppedDownMenu](#getdroppeddownmenu)|Retrieves a pointer to the menu button object that is currently displaying its sub-menu.|  
+|[CMFCToolBar::GetGrayDisabledButtons](#getgraydisabledbuttons)|Specifies whether the images of disabled buttons are dimmed versions of the regular button images, or taken from the collection of disabled button images.|  
+|[CMFCToolBar::GetHighlightedButton](#gethighlightedbutton)|Returns a pointer to the toolbar button that is currently highlighted.|  
+|[CMFCToolBar::GetHotBorder](#gethotborder)|Determines whether the toolbar buttons are hot-tracked.|  
+|[CMFCToolBar::GetHotTextColor](#gethottextcolor)|Returns the text color of the highlighted toolbar buttons.|  
+|[CMFCToolBar::GetHwndLastFocus](#gethwndlastfocus)|Returns a handle to the window that had the input focus just before the toolbar did.|  
+|[CMFCToolBar::GetIgnoreSetText](#getignoresettext)|Specifies whether calls to set button labels are ignored.|  
+|[CMFCToolBar::GetImageSize](#getimagesize)|Returns the current size of toolbar button images.|  
+|[CMFCToolBar::GetImages](#getimages)|Returns a pointer to the collection of default button images in the application.|  
+|[CMFCToolBar::GetImagesOffset](#getimagesoffset)|Returns the index offset used to find the toolbar button images for this toolbar in the global list of toolbar button images.|  
+|[CMFCToolBar::GetInvalidateItemRect](#getinvalidateitemrect)|Retrieves the region of the client area that must be redrawn for the button at the given index.|  
+|[CMFCToolBar::GetItemID](#getitemid)|Returns the command ID of the toolbar button at a specified index.|  
+|[CMFCToolBar::GetItemRect](#getitemrect)|Returns the bounding rectangle of the button at a specified index.|  
+|[CMFCToolBar::GetLargeColdImages](#getlargecoldimages)|Returns a pointer to the collection of large cold toolbar button images in the application.|  
+|[CMFCToolBar::GetLargeDisabledImages](#getlargedisabledimages)|Returns a pointer to the collection of large disabled toolbar button images in the application.|  
+|[CMFCToolBar::GetLargeImages](#getlargeimages)|Returns a pointer to the collection of large toolbar button images in the application.|  
+|[CMFCToolBar::GetLockedColdImages](#getlockedcoldimages)|Returns a pointer to the collection of locked cold images in the toolbar.|  
+|[CMFCToolBar::GetLockedDisabledImages](#getlockeddisabledimages)|Returns a pointer to the collection of locked disabled images in the toolbar.|  
+|[CMFCToolBar::GetLockedImages](#getlockedimages)|Returns a pointer to the collection of locked button images in the toolbar.|  
+|[CMFCToolBar::GetLockedImageSize](#getlockedimagesize)|Returns the default size of locked toolbar images.|  
+|[CMFCToolBar::GetLockedMenuImages](#getlockedmenuimages)|Returns a pointer to the collection of locked toolbar menu images in the toolbar.|  
+|[CMFCToolBar::GetMenuButtonSize](#getmenubuttonsize)|Returns the size of menu buttons in the application.|  
+|[CMFCToolBar::GetMenuImageSize](#getmenuimagesize)|Returns the size of menu button images in the application.|  
+|[CMFCToolBar::GetMenuImages](#getmenuimages)|Returns a pointer to the collection of menu button images in the application.|  
+|[CMFCToolBar::GetOrigButtons](#getorigbuttons)|Retrieves the collection of non-customized buttons of the toolbar.|  
+|[CMFCToolBar::GetOrigResetButtons](#getorigresetbuttons)|Retrieves the collection of non-customized reset buttons of the toolbar.|  
+|[CMFCToolBar::GetResourceID](#getresourceid)|Retrieves the resource ID of the toolbar.|  
+|[CMFCToolBar::GetRouteCommandsViaFrame](#getroutecommandsviaframe)|Determines which object, the parent frame or the owner, sends commands to the toolbar.|  
+|[CMFCToolBar::GetRowHeight](#getrowheight)|Returns the height of toolbar buttons.|  
+|[CMFCToolBar::GetShowTooltips](#getshowtooltips)|Specifies whether tool tips are displayed for toolbar buttons.|  
+|[CMFCToolBar::GetSiblingToolBar](#getsiblingtoolbar)|Retrieves the sibling of the toolbar.|  
+|[CMFCToolBar::GetUserImages](#getuserimages)|Returns a pointer to the collection of user-defined toolbar button images in the application.|  
+|[CMFCToolBar::HitTest](#hittest)|Returns the index of the toolbar button that is located at the specified position.|  
+|[CMFCToolBar::InsertButton](#insertbutton)|Inserts a button into the toolbar.|  
+|[CMFCToolBar::InsertSeparator](#insertseparator)|Inserts a separator into the toolbar.|  
+|[CMFCToolBar::InvalidateButton](#invalidatebutton)|Invalidates the client area of the toolbar button that exists at the provided index.|  
+|[CMFCToolBar::IsAddRemoveQuickCustomize](#isaddremovequickcustomize)|Determines whether a user can add or remove toolbar buttons by using the **Customize** menu option.|  
+|[CMFCToolBar::IsAltCustomizeMode](#isaltcustomizemode)|Specifies whether *quick customization* is being used to drag a button.|  
+|[CMFCToolBar::IsAutoGrayInactiveImages](#isautograyinactiveimages)|Specifies whether the automatic generation of inactive (non-highlighted) button images is enabled.|  
+|[CMFCToolBar::IsBasicCommand](#isbasiccommand)|Determines whether a command is on the list of basic commands.|  
+|[CMFCToolBar::IsButtonExtraSizeAvailable](#isbuttonextrasizeavailable)|Determines whether the toolbar can display buttons that have extended borders.|  
+|[CMFCToolBar::IsButtonHighlighted](#isbuttonhighlighted)|Determines whether a button on the toolbar is highlighted.|  
+|[CMFCToolBar::IsCommandPermitted](#iscommandpermitted)|Determines whether a command is permitted.|  
+|[CMFCToolBar::IsCommandRarelyUsed](#iscommandrarelyused)|Determines whether a command is rarely used (see [CMFCToolBar::SetCommandUsageOptions](#setcommandusageoptions)).|  
+|[CMFCToolBar::IsCustomizeMode](#iscustomizemode)|Specifies whether the toolbar framework is in customization mode.|  
+|[CMFCToolBar::IsDragButton](#isdragbutton)|Determines whether a toolbar button is being dragged.|  
+|[CMFCToolBar::IsExistCustomizeButton](#isexistcustomizebutton)|Determines whether the toolbar contains the **Customize** button.|  
+|[CMFCToolBar::IsFloating](#isfloating)|Determines whether the toolbar is floating.|  
+|[CMFCToolBar::IsLargeIcons](#islargeicons)|Specifies whether toolbars in the application currently display large icons.|  
+|[CMFCToolBar::IsLastCommandFromButton](#islastcommandfrombutton)|Determines whether the most recently executed command was sent from the specified toolbar button.|  
+|[CMFCToolBar::IsLocked](#islocked)|Determines whether the toolbar is locked.|  
+|[CMFCToolBar::IsOneRowWithSibling](#isonerowwithsibling)|Determines whether the toolbar and its sibling toolbar are positioned on the same row.|  
+|[CMFCToolBar::IsUserDefined](#isuserdefined)|Specifies whether the toolbar is user-defined.|  
+|[CMFCToolBar::LoadBitmap](#loadbitmap)|Loads toolbar images from application resources.|  
+|[CMFCToolBar::LoadBitmapEx](#loadbitmapex)|Loads toolbar images from application resources. Includes large images.|  
+|[CMFCToolBar::LoadParameters](#loadparameters)|Loads global toolbar options from the Windows registry.|  
+|[CMFCToolBar::LoadState](#loadstate)|Loads the toolbar state information from the Windows registry. (Overrides [CPane::LoadState](../../mfc/reference/cpane-class.md#loadstate).)|  
+|[CMFCToolBar::LoadToolBar](#loadtoolbar)|Loads the toolbar from application resources.|  
+|[CMFCToolBar::LoadToolBarEx](#loadtoolbarex)|Loads the toolbar from application resources by using the `CMFCToolBarInfo` helper class to enable the application to use large images.|  
+|[CMFCToolBar::OnChangeHot](#onchangehot)|Called by the framework when a user selects a button on the toolbar.|  
+|[CMFCToolBar::OnFillBackground](#onfillbackground)|Called by the framework from [CBasePane::DoPaint](../../mfc/reference/cbasepane-class.md#dopaint) to fill the toolbar background.|  
+|[CMFCToolBar::OnReset](#onreset)|Restores the toolbar to its original state.|  
+|[CMFCToolBar::OnSetAccData](#onsetaccdata)|(Overrides [CBasePane::OnSetAccData](../../mfc/reference/cbasepane-class.md#onsetaccdata).)|  
+|[CMFCToolBar::OnSetDefaultButtonText](#onsetdefaultbuttontext)|Restores the text of a toolbar button to its default state.|  
 |`CMFCToolBar::OnUpdateCmdUI`|Used internally.|  
-|[CMFCToolBar::RemoveAllButtons](#cmfctoolbar__removeallbuttons)|Removes all buttons from the toolbar.|  
-|[CMFCToolBar::RemoveButton](#cmfctoolbar__removebutton)|Removes the button with the specified index from the toolbar.|  
-|[CMFCToolBar::RemoveStateFromRegistry](#cmfctoolbar__removestatefromregistry)|Deletes the state information for the toolbar from the Windows registry.|  
-|[CMFCToolBar::ReplaceButton](#cmfctoolbar__replacebutton)|Replaces a toolbar button with another toolbar button.|  
-|[CMFCToolBar::ResetAll](#cmfctoolbar__resetall)|Restores all toolbars to their original states.|  
-|[CMFCToolBar::ResetAllImages](#cmfctoolbar__resetallimages)|Clears all toolbar image collections in the application.|  
-|[CMFCToolBar::RestoreOriginalState](#cmfctoolbar__restoreoriginalstate)|Restores the original state of a toolbar.|  
-|[CMFCToolBar::SaveState](#cmfctoolbar__savestate)|Saves the state information for the toolbar in the Windows registry. (Overrides [CPane::SaveState](../../mfc/reference/cpane-class.md#cpane__savestate).)|  
+|[CMFCToolBar::RemoveAllButtons](#removeallbuttons)|Removes all buttons from the toolbar.|  
+|[CMFCToolBar::RemoveButton](#removebutton)|Removes the button with the specified index from the toolbar.|  
+|[CMFCToolBar::RemoveStateFromRegistry](#removestatefromregistry)|Deletes the state information for the toolbar from the Windows registry.|  
+|[CMFCToolBar::ReplaceButton](#replacebutton)|Replaces a toolbar button with another toolbar button.|  
+|[CMFCToolBar::ResetAll](#resetall)|Restores all toolbars to their original states.|  
+|[CMFCToolBar::ResetAllImages](#resetallimages)|Clears all toolbar image collections in the application.|  
+|[CMFCToolBar::RestoreOriginalState](#restoreoriginalstate)|Restores the original state of a toolbar.|  
+|[CMFCToolBar::SaveState](#savestate)|Saves the state information for the toolbar in the Windows registry. (Overrides [CPane::SaveState](../../mfc/reference/cpane-class.md#savestate).)|  
 |`CMFCToolBar::Serialize`|(Overrides `CBasePane::Serialize`.)|  
-|[CMFCToolBar::SetBasicCommands](#cmfctoolbar__setbasiccommands)|Sets the list of commands that are always displayed when a user opens a menu.|  
-|[CMFCToolBar::SetButtonInfo](#cmfctoolbar__setbuttoninfo)|Sets the command ID, style, and image ID of a toolbar button.|  
-|[CMFCToolBar::SetButtonStyle](#cmfctoolbar__setbuttonstyle)|Sets the style of the toolbar button at the given index.|  
-|[CMFCToolBar::SetButtonText](#cmfctoolbar__setbuttontext)|Sets the text label of a toolbar button.|  
-|[CMFCToolBar::SetButtons](#cmfctoolbar__setbuttons)|Sets the buttons for the toolbar.|  
-|[CMFCToolBar::SetCommandUsageOptions](#cmfctoolbar__setcommandusageoptions)|Specifies when rarely used commands do not appear in the menu of the application.|  
-|[CMFCToolBar::SetCustomizeMode](#cmfctoolbar__setcustomizemode)|Enables or disables customization mode for all toolbars in the application.|  
-|[CMFCToolBar::SetGrayDisabledButtons](#cmfctoolbar__setgraydisabledbuttons)|Specifies whether the disabled buttons on the toolbar are dimmed or if disabled images are used for the disabled buttons.|  
-|[CMFCToolBar::SetHeight](#cmfctoolbar__setheight)|Sets the height of the toolbar.|  
-|[CMFCToolBar::SetHotBorder](#cmfctoolbar__sethotborder)|Specifies whether toolbar buttons are hot-tracked.|  
-|[CMFCToolBar::SetHotTextColor](#cmfctoolbar__sethottextcolor)|Sets the text color for hot toolbar buttons.|  
-|[CMFCToolBar::SetLargeIcons](#cmfctoolbar__setlargeicons)|Specifies whether toolbar buttons display large icons.|  
-|[CMFCToolBar::SetLockedSizes](#cmfctoolbar__setlockedsizes)|Sets the sizes of locked buttons and locked images on the toolbar.|  
-|[CMFCToolBar::SetMenuSizes](#cmfctoolbar__setmenusizes)|Sets the size of toolbar menu buttons and their images.|  
-|[CMFCToolBar::SetNonPermittedCommands](#cmfctoolbar__setnonpermittedcommands)|Sets the list of commands that cannot be executed by the user.|  
-|[CMFCToolBar::SetOneRowWithSibling](#cmfctoolbar__setonerowwithsibling)|Positions the toolbar and its sibling on the same row.|  
-|[CMFCToolBar::SetPermament](#cmfctoolbar__setpermament)|Specifies whether a user can close the toolbar.|  
-|[CMFCToolBar::SetRouteCommandsViaFrame](#cmfctoolbar__setroutecommandsviaframe)|Specifies whether the parent frame or the owner sends commands to the toolbar.|  
-|[CMFCToolBar::SetShowTooltips](#cmfctoolbar__setshowtooltips)|Specifies whether the framework displays tool tips.|  
-|[CMFCToolBar::SetSiblingToolBar](#cmfctoolbar__setsiblingtoolbar)|Specifies the sibling of the toolbar.|  
-|[CMFCToolBar::SetSizes](#cmfctoolbar__setsizes)|Specifies the sizes of buttons and images on all toolbars.|  
-|[CMFCToolBar::SetToolBarBtnText](#cmfctoolbar__settoolbarbtntext)|Specifies properties of a button on the toolbar.|  
-|[CMFCToolBar::SetTwoRowsWithSibling](#cmfctoolbar__settworowswithsibling)|Positions the toolbar and its sibling on separate rows.|  
-|[CMFCToolBar::SetUserImages](#cmfctoolbar__setuserimages)|Sets the collection of user-defined images in the application.|  
-|[CMFCToolBar::StretchPane](#cmfctoolbar__stretchpane)|Stretches the toolbar vertically or horizontally. (Overrides [CBasePane::StretchPane](../../mfc/reference/cbasepane-class.md#cbasepane__stretchpane).)|  
-|[CMFCToolBar::TranslateChar](#cmfctoolbar__translatechar)|Executes a button command if the specified key code corresponds to a valid keyboard shortcut.|  
-|[CMFCToolBar::UpdateButton](#cmfctoolbar__updatebutton)|Updates the state of the specified button.|  
-|[CMFCToolBar::WrapToolBar](#cmfctoolbar__wraptoolbar)|Repositions toolbar buttons within the given dimensions.|  
+|[CMFCToolBar::SetBasicCommands](#setbasiccommands)|Sets the list of commands that are always displayed when a user opens a menu.|  
+|[CMFCToolBar::SetButtonInfo](#setbuttoninfo)|Sets the command ID, style, and image ID of a toolbar button.|  
+|[CMFCToolBar::SetButtonStyle](#setbuttonstyle)|Sets the style of the toolbar button at the given index.|  
+|[CMFCToolBar::SetButtonText](#setbuttontext)|Sets the text label of a toolbar button.|  
+|[CMFCToolBar::SetButtons](#setbuttons)|Sets the buttons for the toolbar.|  
+|[CMFCToolBar::SetCommandUsageOptions](#setcommandusageoptions)|Specifies when rarely used commands do not appear in the menu of the application.|  
+|[CMFCToolBar::SetCustomizeMode](#setcustomizemode)|Enables or disables customization mode for all toolbars in the application.|  
+|[CMFCToolBar::SetGrayDisabledButtons](#setgraydisabledbuttons)|Specifies whether the disabled buttons on the toolbar are dimmed or if disabled images are used for the disabled buttons.|  
+|[CMFCToolBar::SetHeight](#setheight)|Sets the height of the toolbar.|  
+|[CMFCToolBar::SetHotBorder](#sethotborder)|Specifies whether toolbar buttons are hot-tracked.|  
+|[CMFCToolBar::SetHotTextColor](#sethottextcolor)|Sets the text color for hot toolbar buttons.|  
+|[CMFCToolBar::SetLargeIcons](#setlargeicons)|Specifies whether toolbar buttons display large icons.|  
+|[CMFCToolBar::SetLockedSizes](#setlockedsizes)|Sets the sizes of locked buttons and locked images on the toolbar.|  
+|[CMFCToolBar::SetMenuSizes](#setmenusizes)|Sets the size of toolbar menu buttons and their images.|  
+|[CMFCToolBar::SetNonPermittedCommands](#setnonpermittedcommands)|Sets the list of commands that cannot be executed by the user.|  
+|[CMFCToolBar::SetOneRowWithSibling](#setonerowwithsibling)|Positions the toolbar and its sibling on the same row.|  
+|[CMFCToolBar::SetPermament](#setpermament)|Specifies whether a user can close the toolbar.|  
+|[CMFCToolBar::SetRouteCommandsViaFrame](#setroutecommandsviaframe)|Specifies whether the parent frame or the owner sends commands to the toolbar.|  
+|[CMFCToolBar::SetShowTooltips](#setshowtooltips)|Specifies whether the framework displays tool tips.|  
+|[CMFCToolBar::SetSiblingToolBar](#setsiblingtoolbar)|Specifies the sibling of the toolbar.|  
+|[CMFCToolBar::SetSizes](#setsizes)|Specifies the sizes of buttons and images on all toolbars.|  
+|[CMFCToolBar::SetToolBarBtnText](#settoolbarbtntext)|Specifies properties of a button on the toolbar.|  
+|[CMFCToolBar::SetTwoRowsWithSibling](#settworowswithsibling)|Positions the toolbar and its sibling on separate rows.|  
+|[CMFCToolBar::SetUserImages](#setuserimages)|Sets the collection of user-defined images in the application.|  
+|[CMFCToolBar::StretchPane](#stretchpane)|Stretches the toolbar vertically or horizontally. (Overrides [CBasePane::StretchPane](../../mfc/reference/cbasepane-class.md#stretchpane).)|  
+|[CMFCToolBar::TranslateChar](#translatechar)|Executes a button command if the specified key code corresponds to a valid keyboard shortcut.|  
+|[CMFCToolBar::UpdateButton](#updatebutton)|Updates the state of the specified button.|  
+|[CMFCToolBar::WrapToolBar](#wraptoolbar)|Repositions toolbar buttons within the given dimensions.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCToolBar::AllowShowOnList](#cmfctoolbar__allowshowonlist)|Determines whether the toolbar is displayed in the list on the **Toolbars** pane of the **Customize** dialog box.|  
-|[CMFCToolBar::CalcMaxButtonHeight](#cmfctoolbar__calcmaxbuttonheight)|Calculates the maximum height of a button in the toolbar.|  
-|[CMFCToolBar::DoPaint](#cmfctoolbar__dopaint)|Repaints a toolbar.|  
-|[CMFCToolBar::DrawButton](#cmfctoolbar__drawbutton)|Repaints a toolbar button.|  
-|[CMFCToolBar::DrawSeparator](#cmfctoolbar__drawseparator)|Repaints a separator on a toolbar.|  
-|[CMFCToolBar::OnUserToolTip](#cmfctoolbar__onusertooltip)|Called by the framework when the tooltip for a button is about to be displayed.|  
+|[CMFCToolBar::AllowShowOnList](#allowshowonlist)|Determines whether the toolbar is displayed in the list on the **Toolbars** pane of the **Customize** dialog box.|  
+|[CMFCToolBar::CalcMaxButtonHeight](#calcmaxbuttonheight)|Calculates the maximum height of a button in the toolbar.|  
+|[CMFCToolBar::DoPaint](#dopaint)|Repaints a toolbar.|  
+|[CMFCToolBar::DrawButton](#drawbutton)|Repaints a toolbar button.|  
+|[CMFCToolBar::DrawSeparator](#drawseparator)|Repaints a separator on a toolbar.|  
+|[CMFCToolBar::OnUserToolTip](#onusertooltip)|Called by the framework when the tooltip for a button is about to be displayed.|  
   
 ### Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCToolBar::m_bDontScaleImages](#cmfctoolbar__m_bdontscaleimages)|Specifies whether to scale or not toolbar images in high DPI mode.|  
-|[CMFCToolBar::m_dblLargeImageRatio](#cmfctoolbar__m_dbllargeimageratio)|Specifies the ratio between the dimension (height or width) of large images and the dimension of regular images.|  
+|[CMFCToolBar::m_bDontScaleImages](#m_bdontscaleimages)|Specifies whether to scale or not toolbar images in high DPI mode.|  
+|[CMFCToolBar::m_dblLargeImageRatio](#m_dbllargeimageratio)|Specifies the ratio between the dimension (height or width) of large images and the dimension of regular images.|  
   
 ## Remarks  
  To incorporate a `CMFCToolBar` object into your application, follow these steps:  
   
 1.  Add a `CMFCToolBar` object to the main frame window.  
   
-2.  When you process the `WM_CREATE` message for the main frame window, call either [CMFCToolBar::Create](#cmfctoolbar__create) or [CMFCToolBar::CreateEx](#cmfctoolbar__createex) to create the toolbar and specify its style.  
+2.  When you process the `WM_CREATE` message for the main frame window, call either [CMFCToolBar::Create](#create) or [CMFCToolBar::CreateEx](#createex) to create the toolbar and specify its style.  
   
-3.  Call [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#cbasepane__enabledocking) to specify the docking style.  
+3.  Call [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#enabledocking) to specify the docking style.  
   
- To insert a special button, such as a combo box or drop-down toolbar, reserve a dummy button in the parent resource, and replace the dummy button at runtime by using [CMFCToolBar::ReplaceButton](#cmfctoolbar__replacebutton). For more information, see [Walkthrough: Putting Controls On Toolbars](../walkthrough-putting-controls-on-toolbars.md).  
+ To insert a special button, such as a combo box or drop-down toolbar, reserve a dummy button in the parent resource, and replace the dummy button at runtime by using [CMFCToolBar::ReplaceButton](#replacebutton). For more information, see [Walkthrough: Putting Controls On Toolbars](../walkthrough-putting-controls-on-toolbars.md).  
   
  `CMFCToolBar` is the base class for the MFC Library classes [CMFCMenuBar Class](../../mfc/reference/cmfcmenubar-class.md), [CMFCPopupMenuBar Class](../../mfc/reference/cmfcpopupmenubar-class.md), and [CMFCDropDownToolBar Class](../../mfc/reference/cmfcdropdowntoolbar-class.md).  
   
 ## Example  
- The following example demonstrates how to use various methods in the `CMFCToolBar` class. The example shows how to set the text of the window label of the tool bar, set the borders, set the style of the pane, and enable the **Add or Remove Buttons** button that appears on the end of the toolbar. This code snippet is part of the [IE Demo sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to use various methods in the `CMFCToolBar` class. The example shows how to set the text of the window label of the tool bar, set the borders, set the style of the pane, and enable the **Add or Remove Buttons** button that appears on the end of the toolbar. This code snippet is part of the [IE Demo sample](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]  
 [!code-cpp[NVC_MFC_IEDemo#8](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_2.cpp)]  
@@ -257,9 +257,9 @@ class CMFCToolBar : public CMFCBaseToolBar
   
  [CMFCBaseToolBar](../../mfc/reference/cmfcbasetoolbar-class.md)  
   
- [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md)  
+ `CMFCToolBar`  
   
-##  <a name="cmfctoolbar__addbasiccommand"></a>  CMFCToolBar::AddBasicCommand  
+##  <a name="addbasiccommand"></a>  CMFCToolBar::AddBasicCommand  
  Adds a menu command to the list of commands that are always displayed when a user opens a menu.  
   
 ```  
@@ -273,9 +273,9 @@ static void __stdcall AddBasicCommand(UINT uiCmd);
 ### Remarks  
  A basic command is always displayed when the menu is opened. This method is meaningful when the user chooses to view recently used commands.  
   
- Use the [CMFCToolBar::SetBasicCommands](#cmfctoolbar__setbasiccommands) method to set the list of commands that are always displayed when a user opens a menu. Use the [CMFCToolBar::GetBasicCommands](#cmfctoolbar__getbasiccommands) method to retrieve the list of basic commands that is used by your application.  
+ Use the [CMFCToolBar::SetBasicCommands](#setbasiccommands) method to set the list of commands that are always displayed when a user opens a menu. Use the [CMFCToolBar::GetBasicCommands](#getbasiccommands) method to retrieve the list of basic commands that is used by your application.  
   
-##  <a name="cmfctoolbar__addcommandusage"></a>  CMFCToolBar::AddCommandUsage  
+##  <a name="addcommandusage"></a>  CMFCToolBar::AddCommandUsage  
  Increments by one the counter that is associated with the given command.  
   
 ```  
@@ -291,9 +291,9 @@ static void __stdcall AddCommandUsage(UINT uiCommand);
   
  The framework uses command counters to display recently used menu items.  
   
- This method increments the command counter by using the [CMFCCmdUsageCount::AddCmd](../../mfc/reference/cmfccmdusagecount-class.md#cmfccmdusagecount__addcmd) method.  
+ This method increments the command counter by using the [CMFCCmdUsageCount::AddCmd](../../mfc/reference/cmfccmdusagecount-class.md#addcmd) method.  
   
-##  <a name="cmfctoolbar__addtoolbarforimagecollection"></a>  CMFCToolBar::AddToolBarForImageCollection  
+##  <a name="addtoolbarforimagecollection"></a>  CMFCToolBar::AddToolBarForImageCollection  
  Adds images from the user interface resources to the collection of images in the application.  
   
 ```  
@@ -329,9 +329,9 @@ static BOOL __stdcall AddToolBarForImageCollection(
  `TRUE` if the method succeeds; `FALSE` if `uiResID` or `uiBmpResID` do not specify valid resources, or another error occurs.  
   
 ### Remarks  
- Call this method to load a bitmap with toolbar images and add it to the collection of toolbar images. This method creates a temporary toolbar object and calls [CMFCToolBar::LoadToolBar](#cmfctoolbar__loadtoolbar).  
+ Call this method to load a bitmap with toolbar images and add it to the collection of toolbar images. This method creates a temporary toolbar object and calls [CMFCToolBar::LoadToolBar](#loadtoolbar).  
   
-##  <a name="cmfctoolbar__adjustlayout"></a>  CMFCToolBar::AdjustLayout  
+##  <a name="adjustlayout"></a>  CMFCToolBar::AdjustLayout  
  Recalculates the size and position of a toolbar.  
   
 ```  
@@ -343,9 +343,9 @@ virtual void AdjustLayout();
   
  The framework calls this method every time that the layout of the toolbar must be changed. For example, the layout must change when the user moves another control bar, resizes an application window, or customizes the toolbar.  
   
- Override this method to provide your own dynamic layout in classes that you derive from [CMFCToolar](../../mfc/reference/cmfctoolbar-class.md).  
+ Override this method to provide your own dynamic layout in classes that you derive from `CMFCToolbar`.  
   
-##  <a name="cmfctoolbar__adjustsize"></a>  CMFCToolBar::AdjustSize  
+##  <a name="adjustsize"></a>  CMFCToolBar::AdjustSize  
  Recalculates the size of the toolbar.  
   
 ```  
@@ -355,9 +355,9 @@ void AdjustSize();
 ### Remarks  
  This method makes sure that the toolbar fits in the bounds of the parent frame. This method does nothing if the toolbar has no parent frame.  
   
- The [CMFCToolBar::AdjustLayout](#cmfctoolbar__adjustlayout) method calls this method to recalculate the size if the parent of the toolbar is not a `CMFCReBar` object.  
+ The [CMFCToolBar::AdjustLayout](#adjustlayout) method calls this method to recalculate the size if the parent of the toolbar is not a `CMFCReBar` object.  
   
-##  <a name="cmfctoolbar__allowchangetextlabels"></a>  CMFCToolBar::AllowChangeTextLabels  
+##  <a name="allowchangetextlabels"></a>  CMFCToolBar::AllowChangeTextLabels  
  Specifies whether text labels can be shown under images on the toolbar buttons.  
   
 ```  
@@ -374,9 +374,9 @@ virtual BOOL AllowChangeTextLabels() const;
   
  The default implementation returns `TRUE`.  
   
- Override this method in an object derived from [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md) and return `FALSE` when you do not want the user to decide whether text labels are displayed on toolbar buttons under the images.  
+ Override this method in an object derived from `CMFCToolBar` and return `FALSE` when you do not want the user to decide whether text labels are displayed on toolbar buttons under the images.  
   
-##  <a name="cmfctoolbar__allowshowonlist"></a>  CMFCToolBar::AllowShowOnList  
+##  <a name="allowshowonlist"></a>  CMFCToolBar::AllowShowOnList  
  Determines whether the toolbar is displayed in the list of toolbars on the **Toolbars** pane of the **Customize** dialog box.  
   
 ```  
@@ -389,11 +389,11 @@ virtual BOOL AllowShowOnList() const;
  `TRUE` if the toolbar object can be displayed in the list box on the toolbar customization page; otherwise `FALSE`.  
   
 ### Remarks  
- This method is called by the framework to determine whether the list on the toolbar customization page should include a particular object derived from [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md).  
+ This method is called by the framework to determine whether the list on the toolbar customization page should include a particular object derived from `CMFCToolBar`.  
   
  The default implementation always returns `TRUE`. Override this method when you do not want a toolbar to appear in the toolbars list in the customization dialog box.  
   
-##  <a name="cmfctoolbar__aretextlabels"></a>  CMFCToolBar::AreTextLabels  
+##  <a name="aretextlabels"></a>  CMFCToolBar::AreTextLabels  
  Specifies whether text labels under images are currently displayed on the toolbar buttons.  
   
 ```  
@@ -406,9 +406,9 @@ BOOL AreTextLabels() const;
  `TRUE` if the toolbar buttons display text labels below images; otherwise `FALSE`.  
   
 ### Remarks  
- Use [CMFCToolBar::EnableTextLabels](#cmfctoolbar__enabletextlabels) to specify whether the text is displayed. The default value is `FALSE`. Call [CMFCToolBar::AllowChangeTextLabels](#cmfctoolbar__allowchangetextlabels) to specify whether the user can change this setting in the customization dialog box.  
+ Use [CMFCToolBar::EnableTextLabels](#enabletextlabels) to specify whether the text is displayed. The default value is `FALSE`. Call [CMFCToolBar::AllowChangeTextLabels](#allowchangetextlabels) to specify whether the user can change this setting in the customization dialog box.  
   
-##  <a name="cmfctoolbar__autograyinactiveimages"></a>  CMFCToolBar::AutoGrayInactiveImages  
+##  <a name="autograyinactiveimages"></a>  CMFCToolBar::AutoGrayInactiveImages  
  Enable or disables the automatic generation of inactive button images.  
   
 ```  
@@ -429,11 +429,11 @@ static void AutoGrayInactiveImages(
  A Boolean value that specifies whether to redraw all toolbars in the application. If this parameter is `TRUE`, this method redraws all toolbars.  
   
 ### Remarks  
- If `bEnable` is `TRUE`, the framework uses `nGrayImagePercentage` to generate inactive images from the regular images. Otherwise, you must provide the set of inactive images by using the [CMFCToolBar::GetColdImages](#cmfctoolbar__getcoldimages) method. By default, this option is disabled.  
+ If `bEnable` is `TRUE`, the framework uses `nGrayImagePercentage` to generate inactive images from the regular images. Otherwise, you must provide the set of inactive images by using the [CMFCToolBar::GetColdImages](#getcoldimages) method. By default, this option is disabled.  
   
- For more information about the `nGrayImagePercentage` parameter, see [CMFCToolBarImages::GrayImages](../../mfc/reference/cmfctoolbarimages-class.md#cmfctoolbarimages__grayimages).  
+ For more information about the `nGrayImagePercentage` parameter, see [CMFCToolBarImages::GrayImages](../../mfc/reference/cmfctoolbarimages-class.md#grayimages).  
   
-##  <a name="cmfctoolbar__buttontoindex"></a>  CMFCToolBar::ButtonToIndex  
+##  <a name="buttontoindex"></a>  CMFCToolBar::ButtonToIndex  
  Returns the index of a specified [CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md) object in this toolbar.  
   
 ```  
@@ -449,7 +449,7 @@ int ButtonToIndex(const CMFCToolBarButton* pButton) const;
 ### Return Value  
  Index of `pButton` in the internal list of toolbar buttons; or -1 if the specified button is not on this toolbar.  
   
-##  <a name="cmfctoolbar__calcfixedlayout"></a>  CMFCToolBar::CalcFixedLayout  
+##  <a name="calcfixedlayout"></a>  CMFCToolBar::CalcFixedLayout  
  Calculates the horizontal size of the toolbar.  
   
 ```  
@@ -473,7 +473,7 @@ virtual CSize CalcFixedLayout(
   
  See the VisualStudioDemo sample for an example that uses this method.  
   
-##  <a name="cmfctoolbar__calcmaxbuttonheight"></a>  CMFCToolBar::CalcMaxButtonHeight  
+##  <a name="calcmaxbuttonheight"></a>  CMFCToolBar::CalcMaxButtonHeight  
  Calculates the maximum height of buttons in the toolbar.  
   
 ```  
@@ -486,9 +486,9 @@ virtual int CalcMaxButtonHeight();
 ### Remarks  
  This method calculates the maximum height among all toolbar buttons on the toolbar. The height may vary depending on factors such as the current toolbar docking state.  
   
- Override this method in a class derived from [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md) to provide your own height calculation.  
+ Override this method in a class derived from `CMFCToolBar` to provide your own height calculation.  
   
-##  <a name="cmfctoolbar__calcsize"></a>  CMFCToolBar::CalcSize  
+##  <a name="calcsize"></a>  CMFCToolBar::CalcSize  
  Called by the framework as part of the layout calculation process.  
   
 ```  
@@ -505,9 +505,9 @@ virtual CSize CalcSize(BOOL bVertDock);
 ### Remarks  
  This method considers the attributes that affect the size of each button, such as the area of the text label and the border size.  
   
- If the toolbar contains no buttons, this method returns the reserved size of a single button by using the [CMFCToolBar::GetButtonSize](#cmfctoolbar__getbuttonsize) method.  
+ If the toolbar contains no buttons, this method returns the reserved size of a single button by using the [CMFCToolBar::GetButtonSize](#getbuttonsize) method.  
   
-##  <a name="cmfctoolbar__canbeclosed"></a>  CMFCToolBar::CanBeClosed  
+##  <a name="canbeclosed"></a>  CMFCToolBar::CanBeClosed  
  Specifies whether a user can close the toolbar.  
   
 ```  
@@ -522,9 +522,9 @@ virtual BOOL CanBeClosed() const;
 ### Remarks  
  The framework calls this method to determine whether the user can close a toolbar. If the method returns `TRUE`, the framework enables the SC_CLOSE command in the system menu of the toolbar and the user can close the toolbar by using a check box in the list of toolbars in the customization dialog box.  
   
- The default implementation returns `TRUE`. Override this method in a class derived from [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md) to make toolbar objects that cannot be closed by the user.  
+ The default implementation returns `TRUE`. Override this method in a class derived from `CMFCToolBar` to make toolbar objects that cannot be closed by the user.  
   
-##  <a name="cmfctoolbar__canberestored"></a>  CMFCToolBar::CanBeRestored  
+##  <a name="canberestored"></a>  CMFCToolBar::CanBeRestored  
  Determines whether the system can restore a toolbar to its original state after customization.  
   
 ```  
@@ -545,7 +545,7 @@ virtual BOOL CanBeRestored() const;
   
  You can override the `CanBeRestored` method to customize this behavior in derived classes.  
   
-##  <a name="cmfctoolbar__canfocus"></a>  CMFCToolBar::CanFocus  
+##  <a name="canfocus"></a>  CMFCToolBar::CanFocus  
  Specifies whether the pane can receive focus.  
   
 ```  
@@ -558,9 +558,9 @@ virtual BOOL CanFocus() const;
  This method returns `FALSE`.  
   
 ### Remarks  
- This method overrides the base class implementation, [CBasePane::CanFocus](../../mfc/reference/cbasepane-class.md#cbasepane__canfocus), because toolbar objects cannot receive focus.  
+ This method overrides the base class implementation, [CBasePane::CanFocus](../../mfc/reference/cbasepane-class.md#canfocus), because toolbar objects cannot receive focus.  
   
-##  <a name="cmfctoolbar__canhandlesiblings"></a>  CMFCToolBar::CanHandleSiblings  
+##  <a name="canhandlesiblings"></a>  CMFCToolBar::CanHandleSiblings  
  Determines whether the toolbar and its sibling are positioned on the same pane.  
   
 ```  
@@ -573,9 +573,9 @@ BOOL CanHandleSiblings();
 ### Remarks  
  The internal CMFCCustomizeButton::CreatePopupMenu method calls this method to determine how to show the **Customize** pop-up menu. If this method returns `TRUE`, the framework displays the **Show Buttons on One Row** or **Show Buttons on Two Rows** buttons.  
   
- You typically do not have to use this method. To enable the **Customize** button that appears on the toolbar, call the [CMFCToolBar::EnableCustomizeButton](#cmfctoolbar__enablecustomizebutton) method. To enable the **Show Buttons on One Row** or **Show Buttons on Two Rows** buttons, call [CMFCToolBar::SetSiblingToolBar](#cmfctoolbar__setsiblingtoolbar).  
+ You typically do not have to use this method. To enable the **Customize** button that appears on the toolbar, call the [CMFCToolBar::EnableCustomizeButton](#enablecustomizebutton) method. To enable the **Show Buttons on One Row** or **Show Buttons on Two Rows** buttons, call [CMFCToolBar::SetSiblingToolBar](#setsiblingtoolbar).  
   
-##  <a name="cmfctoolbar__cleanupimages"></a>  CMFCToolBar::CleanUpImages  
+##  <a name="cleanupimages"></a>  CMFCToolBar::CleanUpImages  
  Frees the system resources allocated for toolbar images.  
   
 ```  
@@ -585,7 +585,7 @@ static void CMFCToolBar::CleanUpImages();
 ### Remarks  
  The framework calls this method when an application shuts down.  
   
-##  <a name="cmfctoolbar__cleanuplockedimages"></a>  CMFCToolBar::CleanUpLockedImages  
+##  <a name="cleanuplockedimages"></a>  CMFCToolBar::CleanUpLockedImages  
  Frees the system resources allocated for locked toolbar images.  
   
 ```  
@@ -595,7 +595,7 @@ void CleanUpLockedImages();
 ### Remarks  
  Call this method when the visual style of your application changes. See the VisualStudioDemo sample for an example that uses this method.  
   
-##  <a name="cmfctoolbar__commandtoindex"></a>  CMFCToolBar::CommandToIndex  
+##  <a name="commandtoindex"></a>  CMFCToolBar::CommandToIndex  
  Returns the index of the button in the toolbar with a specified command ID.  
   
 ```  
@@ -617,11 +617,11 @@ int CommandToIndex(
  Zero-based index of the toolbar button if the method was successful; -1 if there is no button with the specified ID.  
   
 ### Remarks  
- A [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md) object maintains an internal list of the buttons on the toolbar. Call this function to retrieve the index of a button in the list given the command ID of the button.  
+ A `CMFCToolBar` object maintains an internal list of the buttons on the toolbar. Call this function to retrieve the index of a button in the list given the command ID of the button.  
   
  If `iIndex` is greater than 0, this method ignores any button on the toolbar that has an index less than `iIndex`.  
   
-##  <a name="cmfctoolbar__create"></a>  CMFCToolBar::Create  
+##  <a name="create"></a>  CMFCToolBar::Create  
  Creates a `CMFCToolBar` object.  
   
 ```  
@@ -645,9 +645,9 @@ virtual BOOL Create(
  `TRUE` if this method succeeds; otherwise `FALSE`.  
   
 ### Remarks  
- This method creates a control bar and attaches it to the toolbar. It creates the control bar with the `TBSTYLE_FLAT` style. Call [CMFCToolBar::CreateEx](#cmfctoolbar__createex) if you want a different control bar style.  
+ This method creates a control bar and attaches it to the toolbar. It creates the control bar with the `TBSTYLE_FLAT` style. Call [CMFCToolBar::CreateEx](#createex) if you want a different control bar style.  
   
-##  <a name="cmfctoolbar__createex"></a>  CMFCToolBar::CreateEx  
+##  <a name="createex"></a>  CMFCToolBar::CreateEx  
  Creates a `CMFCToolBar` object that uses additional style options, such as large icons.  
   
 ```  
@@ -684,15 +684,15 @@ virtual BOOL CreateEx(
 ### Remarks  
  This method creates a control bar and attaches it to the toolbar.  
   
- Call this method instead of [CMFCToolBar::Create](#cmfctoolbar__create) when you want to provide specific styles. For example, set `dwCtrlStyle` to `TBSTYLE_FLAT | TBSTYLE_TRANSPARENT` to create a toolbar that resembles the toolbars that are used by Internet Explorer 4.  
+ Call this method instead of [CMFCToolBar::Create](#create) when you want to provide specific styles. For example, set `dwCtrlStyle` to `TBSTYLE_FLAT | TBSTYLE_TRANSPARENT` to create a toolbar that resembles the toolbars that are used by Internet Explorer 4.  
   
 ### Example  
- The following example demonstrates how to use the `CreateEx` method of the `CMFCToolBar` class. This code snippet is part of the [IE Demo sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to use the `CreateEx` method of the `CMFCToolBar` class. This code snippet is part of the [IE Demo sample](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]  
 [!code-cpp[NVC_MFC_IEDemo#7](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_3.cpp)]  
   
-##  <a name="cmfctoolbar__deactivate"></a>  CMFCToolBar::Deactivate  
+##  <a name="deactivate"></a>  CMFCToolBar::Deactivate  
  Deactivates the toolbar.  
   
 ```  
@@ -702,7 +702,7 @@ virtual void Deactivate();
 ### Remarks  
  This method deactivates the toolbar by removing the focus from the highlighted toolbar button. The framework calls this method when the toolbar loses focus or is destroyed.  
   
-##  <a name="cmfctoolbar__dopaint"></a>  CMFCToolBar::DoPaint  
+##  <a name="dopaint"></a>  CMFCToolBar::DoPaint  
  Repaints a toolbar.  
   
 ```  
@@ -716,9 +716,9 @@ virtual void DoPaint(CDC* pDC);
 ### Remarks  
  This method is called by the framework when a part of the toolbar must be repainted.  
   
- Override this method to customize the appearance of an object derived from [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md).  
+ Override this method to customize the appearance of an object derived from `CMFCToolBar`.  
   
-##  <a name="cmfctoolbar__drawbutton"></a>  CMFCToolBar::DrawButton  
+##  <a name="drawbutton"></a>  CMFCToolBar::DrawButton  
  Repaints a toolbar button.  
   
 ```  
@@ -750,11 +750,11 @@ virtual BOOL DrawButton(
  `TRUE` if the button was repainted; `FALSE` if the button is hidden.  
   
 ### Remarks  
- The [CMFCToolBar::DrawButton](#cmfctoolbar__drawbutton) method calls this method when a toolbar button must be repainted.  
+ The [CMFCToolBar::DrawButton](#drawbutton) method calls this method when a toolbar button must be repainted.  
   
  Override this method if you want to customize the appearance of buttons on your toolbar.  
   
-##  <a name="cmfctoolbar__drawseparator"></a>  CMFCToolBar::DrawSeparator  
+##  <a name="drawseparator"></a>  CMFCToolBar::DrawSeparator  
  Repaints a separator on a toolbar.  
   
 ```  
@@ -775,11 +775,11 @@ virtual void DrawSeparator(
  `TRUE` if the separator is horizontal, `FALSE` if the separator is vertical.  
   
 ### Remarks  
- [CMFCToolBar::DoPaint](#cmfctoolbar__dopaint) calls this method for each [CMFCToolBar::DrawSeparator](#cmfctoolbar__drawseparator) object that has the `TBBS_SEPARATOR` style, instead of calling [CMFCToolBar::DrawButton](#cmfctoolbar__drawbutton) for those buttons.  
+ [CMFCToolBar::DoPaint](#dopaint) calls this method for each [CMFCToolBar::DrawSeparator](#drawseparator) object that has the `TBBS_SEPARATOR` style, instead of calling [CMFCToolBar::DrawButton](#drawbutton) for those buttons.  
   
- Override this method in a class derived from [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md) to customize the appearance of separators on the toolbar. The default implementation calls [CMFCVisualManager::OnDrawSeparator](../../mfc/reference/cmfcvisualmanager-class.md#cmfcvisualmanager__ondrawseparator) to draw a separator whose appearance is determined by the current visual manager.  
+ Override this method in a class derived from [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md) to customize the appearance of separators on the toolbar. The default implementation calls [CMFCVisualManager::OnDrawSeparator](../../mfc/reference/cmfcvisualmanager-class.md#ondrawseparator) to draw a separator whose appearance is determined by the current visual manager.  
   
-##  <a name="cmfctoolbar__enablecustomizebutton"></a>  CMFCToolBar::EnableCustomizeButton  
+##  <a name="enablecustomizebutton"></a>  CMFCToolBar::EnableCustomizeButton  
  Enables or disables the Customize button that appears on the toolbar.  
   
 ```  
@@ -820,7 +820,7 @@ void EnableCustomizeButton(
   
  The framework dynamically adds to the menu any buttons that do not fit in the toolbar area before the item that is specified by `iCustomizeCmd`. The chevron is displayed next to the down arrow.  
   
-##  <a name="cmfctoolbar__enabledocking"></a>  CMFCToolBar::EnableDocking  
+##  <a name="enabledocking"></a>  CMFCToolBar::EnableDocking  
  Enables docking of the pane to the main frame.  
   
 ```  
@@ -832,9 +832,9 @@ virtual void EnableDocking(DWORD dwAlignment);
  Specifies the docking alignment to enable.  
   
 ### Remarks  
- This method extends the base class implementation, [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#cbasepane__enabledocking), by setting the `CBasePane::m_dwControlBarStyle` data member to `AFX_CBRS_FLOAT`. This method then passes `dwAlignment` to the base class implementation.  
+ This method extends the base class implementation, [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#enabledocking), by setting the `CBasePane::m_dwControlBarStyle` data member to `AFX_CBRS_FLOAT`. This method then passes `dwAlignment` to the base class implementation.  
   
-##  <a name="cmfctoolbar__enablelargeicons"></a>  CMFCToolBar::EnableLargeIcons  
+##  <a name="enablelargeicons"></a>  CMFCToolBar::EnableLargeIcons  
  Enables or disables large icons on toolbar buttons.  
   
 ```  
@@ -848,7 +848,7 @@ void EnableLargeIcons(BOOL bEnable);
 ### Remarks  
  By default, large icons are enabled.  
   
-##  <a name="cmfctoolbar__enablequickcustomization"></a>  CMFCToolBar::EnableQuickCustomization  
+##  <a name="enablequickcustomization"></a>  CMFCToolBar::EnableQuickCustomization  
  Enables or disables the quick customization of toolbars so that the user can press the **Alt** key and drag a button to a new location.  
   
 ```  
@@ -859,7 +859,7 @@ static void EnableQuickCustomization(BOOL bEnable=TRUE);
  [in] `bEnable`  
  `TRUE` to enable quick customization, `FALSE` to disable quick customization.  
   
-##  <a name="cmfctoolbar__enablereflections"></a>  CMFCToolBar::EnableReflections  
+##  <a name="enablereflections"></a>  CMFCToolBar::EnableReflections  
  Enables or disables command reflection.  
   
 ```  
@@ -875,7 +875,7 @@ void EnableReflections(BOOL bEnable = TRUE);
   
  For more information about command reflection, see [TN062: Message Reflection for Windows Controls](../../mfc/tn062-message-reflection-for-windows-controls.md).  
   
-##  <a name="cmfctoolbar__enabletextlabels"></a>  CMFCToolBar::EnableTextLabels  
+##  <a name="enabletextlabels"></a>  CMFCToolBar::EnableTextLabels  
  Enables or disables text labels under toolbar button images.  
   
 ```  
@@ -887,9 +887,9 @@ void EnableTextLabels(BOOL bEnable=TRUE);
  `TRUE` if text labels appear under toolbar button images; otherwise `FALSE`.  
   
 ### Remarks  
- If text labels are enabled, all buttons on the toolbar are enlarged to provide space for the labels to be displayed under the images. The customization dialog box has a **Show text label** check-box on the **Toolbars** page. When the user selects a toolbar and checks this option, the framework calls `EnableTextLabels` for the selected toolbar. You can disable the check-box for an object derived from [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md) by returning `FALSE` from [CMFCToolBar::AllowChangeTextLabels](#cmfctoolbar__allowchangetextlabels) .  
+ If text labels are enabled, all buttons on the toolbar are enlarged to provide space for the labels to be displayed under the images. The customization dialog box has a **Show text label** check-box on the **Toolbars** page. When the user selects a toolbar and checks this option, the framework calls `EnableTextLabels` for the selected toolbar. You can disable the check-box for an object derived from [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md) by returning `FALSE` from [CMFCToolBar::AllowChangeTextLabels](#allowchangetextlabels) .  
   
-##  <a name="cmfctoolbar__fromhandlepermanent"></a>  CMFCToolBar::FromHandlePermanent  
+##  <a name="fromhandlepermanent"></a>  CMFCToolBar::FromHandlePermanent  
  Retrieves a pointer to the `CMFCToolBar` object that contains the given window handle.  
   
 ```  
@@ -906,7 +906,7 @@ static CMFCToolBar* __stdcall FromHandlePermanent(HWND hwnd);
 ### Remarks  
  This shared method examines each toolbar in the application for the `CMFCToolBar` object that contains the given window handle.  
   
-##  <a name="cmfctoolbar__getallbuttons"></a>  CMFCToolBar::GetAllButtons  
+##  <a name="getallbuttons"></a>  CMFCToolBar::GetAllButtons  
  Returns a read-only list of buttons in a toolbar.  
   
 ```  
@@ -918,7 +918,7 @@ const CObList& GetAllButtons() const;
 ### Return Value  
  A constant reference to a [CObList Class](../../mfc/reference/coblist-class.md) object, which contains a collection of [CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md) objects.  
   
-##  <a name="cmfctoolbar__getalltoolbars"></a>  CMFCToolBar::GetAllToolbars  
+##  <a name="getalltoolbars"></a>  CMFCToolBar::GetAllToolbars  
  Returns a read-only list of all toolbars in the application.  
   
 ```  
@@ -926,9 +926,9 @@ static const CObList& GetAllToolbars();
 ```  
   
 ### Return Value  
- A const reference to a [CObList Class](../../mfc/reference/coblist-class.md) object that contains a collection of [CMFCToolbar](../../mfc/reference/cmfctoolbar-class.md) objects.  
+ A const reference to a [CObList Class](../../mfc/reference/coblist-class.md) object that contains a collection of `CMFCToolBar` objects.  
   
-##  <a name="cmfctoolbar__getbasiccommands"></a>  CMFCToolBar::GetBasicCommands  
+##  <a name="getbasiccommands"></a>  CMFCToolBar::GetBasicCommands  
  Returns a read-only list of the basic commands defined in the application.  
   
 ```  
@@ -939,9 +939,9 @@ static const CList<UINT,UINT>& GetBasicCommands();
  A const reference to a [CList Class](../../mfc/reference/clist-class.md) object that contains a collection of basic commands.  
   
 ### Remarks  
- Add basic commands by calling [CMFCToolBar::AddBasicCommand](#cmfctoolbar__addbasiccommand) or [CMFCToolBar::SetBasicCommands](#cmfctoolbar__setbasiccommands).  
+ Add basic commands by calling [CMFCToolBar::AddBasicCommand](#addbasiccommand) or [CMFCToolBar::SetBasicCommands](#setbasiccommands).  
   
-##  <a name="cmfctoolbar__getbutton"></a>  CMFCToolBar::GetButton  
+##  <a name="getbutton"></a>  CMFCToolBar::GetButton  
  Returns a pointer to the [CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md) object at a specified index.  
   
 ```  
@@ -957,7 +957,7 @@ CMFCToolBarButton* GetButton(int iIndex) const;
 ### Return Value  
  A pointer to the toolbar button if it exists; or `NULL` if there is no such button.  
   
-##  <a name="cmfctoolbar__getbuttoninfo"></a>  CMFCToolBar::GetButtonInfo  
+##  <a name="getbuttoninfo"></a>  CMFCToolBar::GetButtonInfo  
  Returns the command ID, style, and image index of the button at a specified index.  
   
 ```  
@@ -988,7 +988,7 @@ void GetButtonInfo(
   
  If the button at the specified index does not exist, the framework sets `nID` and `nStyle` to 0, and `iImage` to -1 when the method returns.  
   
-##  <a name="cmfctoolbar__getbuttonsize"></a>  CMFCToolBar::GetButtonSize  
+##  <a name="getbuttonsize"></a>  CMFCToolBar::GetButtonSize  
  Returns the dimensions of each button on the toolbar.  
   
 ```  
@@ -1001,9 +1001,9 @@ CSize GetButtonSize() const;
  A [CSize Class](../../atl-mfc-shared/reference/csize-class.md) object that specifies the dimensions of each button on the toolbar.  
   
 ### Remarks  
- Call [CMFCToolBar::SetSizes](#cmfctoolbar__setsizes) or [CMFCToolBar::SetLockedSizes](#cmfctoolbar__setlockedsizes) to set the dimensions of each button on the toolbar.  
+ Call [CMFCToolBar::SetSizes](#setsizes) or [CMFCToolBar::SetLockedSizes](#setlockedsizes) to set the dimensions of each button on the toolbar.  
   
-##  <a name="cmfctoolbar__getbuttonstyle"></a>  CMFCToolBar::GetButtonStyle  
+##  <a name="getbuttonstyle"></a>  CMFCToolBar::GetButtonStyle  
  Returns the current style of the toolbar button that is located at the specified index.  
   
 ```  
@@ -1020,9 +1020,9 @@ UINT GetButtonStyle(int nIndex) const;
  A value that specifies the style of the toolbar button. . See [ToolBar Control Styles](../../mfc/reference/toolbar-control-styles.md) for a list of possible styles.  
   
 ### Remarks  
- Call [CMFCToolBar::SetButtonStyle](#cmfctoolbar__setbuttonstyle) to set the style of a toolbar button  
+ Call [CMFCToolBar::SetButtonStyle](#setbuttonstyle) to set the style of a toolbar button  
   
-##  <a name="cmfctoolbar__getbuttontext"></a>  CMFCToolBar::GetButtonText  
+##  <a name="getbuttontext"></a>  CMFCToolBar::GetButtonText  
  Returns the text label of a button that has a specified index.  
   
 ```  
@@ -1048,9 +1048,9 @@ void GetButtonText(
  The label text of the toolbar button.  
   
 ### Remarks  
- Call [CMFCToolBar::SetButtonText](#cmfctoolbar__setbuttontext) or [CMFCToolBar::SetToolBarBtnText](#cmfctoolbar__settoolbarbtntext) to set the text label.  
+ Call [CMFCToolBar::SetButtonText](#setbuttontext) or [CMFCToolBar::SetToolBarBtnText](#settoolbarbtntext) to set the text label.  
   
-##  <a name="cmfctoolbar__getcoldimages"></a>  CMFCToolBar::GetColdImages  
+##  <a name="getcoldimages"></a>  CMFCToolBar::GetColdImages  
  Returns a pointer to the collection of cold toolbar button images in the application.  
   
 ```  
@@ -1061,9 +1061,9 @@ static CMFCToolBarImages* GetColdImages();
  A pointer to the collection of cold toolbar button images.  
   
 ### Remarks  
- Cold images are the images that are used when the user is not interacting with the toolbar buttons. Call [CMFCToolBar::LoadBitmapEx](#cmfctoolbar__loadbitmapex) or [CMFCToolBar::LoadBitmap](#cmfctoolbar__loadbitmap) to load the cold images.  
+ Cold images are the images that are used when the user is not interacting with the toolbar buttons. Call [CMFCToolBar::LoadBitmapEx](#loadbitmapex) or [CMFCToolBar::LoadBitmap](#loadbitmap) to load the cold images.  
   
-##  <a name="cmfctoolbar__getcolumnwidth"></a>  CMFCToolBar::GetColumnWidth  
+##  <a name="getcolumnwidth"></a>  CMFCToolBar::GetColumnWidth  
  Returns the width of the toolbar buttons.  
   
 ```  
@@ -1078,7 +1078,7 @@ virtual int GetColumnWidth() const;
 ### Remarks  
  The framework calls this method to calculate toolbar layout. Override this method in a derived class to specify a different column width for your toolbar.  
   
-##  <a name="cmfctoolbar__getcommandbuttons"></a>  CMFCToolBar::GetCommandButtons  
+##  <a name="getcommandbuttons"></a>  CMFCToolBar::GetCommandButtons  
  Returns a list of buttons that have a specified command ID from all toolbars in the application.  
   
 ```  
@@ -1097,7 +1097,7 @@ static int GetCommandButtons(
 ### Return Value  
  The number of buttons that have the specified command ID.  
   
-##  <a name="cmfctoolbar__getcount"></a>  CMFCToolBar::GetCount  
+##  <a name="getcount"></a>  CMFCToolBar::GetCount  
  Returns the number of buttons and separators on the toolbar.  
   
 ```  
@@ -1109,7 +1109,7 @@ int GetCount() const;
 ### Return Value  
  The number of buttons and separators on the toolbar.  
   
-##  <a name="cmfctoolbar__getcustomizebutton"></a>  CMFCToolBar::GetCustomizeButton  
+##  <a name="getcustomizebutton"></a>  CMFCToolBar::GetCustomizeButton  
  Retrieves a pointer to the `CMFCCustomizeButton` object that is associated with the toolbar.  
   
 ```  
@@ -1120,11 +1120,11 @@ CMFCCustomizeButton* GetCustomizeButton();
  A pointer to the `CMFCCustomizeButton` object that is associated with the toolbar.  
   
 ### Remarks  
- This method retrieves the **Customize** button that appears at the end of the toolbar. Use the [CMFCToolBar::EnableCustomizeButton](#cmfctoolbar__enablecustomizebutton) method to add the **Customize** button to your toolbar.  
+ This method retrieves the **Customize** button that appears at the end of the toolbar. Use the [CMFCToolBar::EnableCustomizeButton](#enablecustomizebutton) method to add the **Customize** button to your toolbar.  
   
- You can call the [CMFCToolBar::IsExistCustomizeButton](#cmfctoolbar__isexistcustomizebutton) method to determine whether the toolbar contains a valid `CMFCCustomizeButton` object.  
+ You can call the [CMFCToolBar::IsExistCustomizeButton](#isexistcustomizebutton) method to determine whether the toolbar contains a valid `CMFCCustomizeButton` object.  
   
-##  <a name="cmfctoolbar__getdefaultimage"></a>  CMFCToolBar::GetDefaultImage  
+##  <a name="getdefaultimage"></a>  CMFCToolBar::GetDefaultImage  
  Returns the index of the default image for a toolbar button with a specified command ID.  
   
 ```  
@@ -1139,9 +1139,9 @@ static int GetDefaultImage(UINT uiID);
  The index of the toolbar image in the shared list of images.  
   
 ### Remarks  
- Use this shared method to retrieve the index of the default image for a toolbar button with the specified command ID. The return value is an index into the shared collection of toolbar button images for all toolbars in the application. Call the [CMFCToolBar::GetImages](#cmfctoolbar__getimages) method to obtain a pointer to this collection.  
+ Use this shared method to retrieve the index of the default image for a toolbar button with the specified command ID. The return value is an index into the shared collection of toolbar button images for all toolbars in the application. Call the [CMFCToolBar::GetImages](#getimages) method to obtain a pointer to this collection.  
   
-##  <a name="cmfctoolbar__getdisabledimages"></a>  CMFCToolBar::GetDisabledImages  
+##  <a name="getdisabledimages"></a>  CMFCToolBar::GetDisabledImages  
  Returns a pointer to the collection of images that are used for disabled toolbar buttons in the application.  
   
 ```  
@@ -1152,9 +1152,9 @@ static CMFCToolBarImages* __stdcall GetDisabledImages();
  A pointer to the collection of disabled toolbar button images.  
   
 ### Remarks  
- Load the disabled toolbar button images by using the [CMFCToolBarEditBoxButton Class](../../mfc/reference/cmfctoolbareditboxbutton-class.md) and [CMFCToolBar::LoadBitmap](#cmfctoolbar__loadbitmap) methods.  
+ Load the disabled toolbar button images by using the [CMFCToolBarEditBoxButton Class](../../mfc/reference/cmfctoolbareditboxbutton-class.md) and [CMFCToolBar::LoadBitmap](#loadbitmap) methods.  
   
-##  <a name="cmfctoolbar__getdisabledmenuimages"></a>  CMFCToolBar::GetDisabledMenuImages  
+##  <a name="getdisabledmenuimages"></a>  CMFCToolBar::GetDisabledMenuImages  
  Returns a pointer to the collection of images that are used for disabled menu buttons in the application.  
   
 ```  
@@ -1167,7 +1167,7 @@ static CMFCToolBarImages* __stdcall GetDisabledMenuImages();
 ### Remarks  
  Load the disabled images by using the [CMFCToolBarEditBoxButton Class](../../mfc/reference/cmfctoolbareditboxbutton-class.md) method.  
   
-##  <a name="cmfctoolbar__getdroppeddownmenu"></a>  CMFCToolBar::GetDroppedDownMenu  
+##  <a name="getdroppeddownmenu"></a>  CMFCToolBar::GetDroppedDownMenu  
  Retrieves a pointer to the menu button object that is currently displaying its sub-menu.  
   
 ```  
@@ -1186,7 +1186,7 @@ CMFCToolBarMenuButton* GetDroppedDownMenu(int* pIndex = NULL) const;
 ### Remarks  
  If this method returns a non- `NULL` value and `pIndex` is not `NULL`, the value pointed to by `pIndex` is set to the index of the menu button in the collection of toolbar buttons.  
   
-##  <a name="cmfctoolbar__getgraydisabledbuttons"></a>  CMFCToolBar::GetGrayDisabledButtons  
+##  <a name="getgraydisabledbuttons"></a>  CMFCToolBar::GetGrayDisabledButtons  
  Specifies whether the images of disabled buttons are dimmed versions of the regular button images, or taken from the collection of disabled button images.  
   
 ```  
@@ -1199,9 +1199,9 @@ BOOL GetGrayDisabledButtons() const;
  `TRUE` to dim the images of disabled buttons; `FALSE`to obtain images from the collection of disabled images.  
   
 ### Remarks  
- Use [CMFCToolBar::SetGrayDisabledButtons](#cmfctoolbar__setgraydisabledbuttons) to switch between dimmed images and the images from the collection of disabled images.  
+ Use [CMFCToolBar::SetGrayDisabledButtons](#setgraydisabledbuttons) to switch between dimmed images and the images from the collection of disabled images.  
   
-##  <a name="cmfctoolbar__gethighlightedbutton"></a>  CMFCToolBar::GetHighlightedButton  
+##  <a name="gethighlightedbutton"></a>  CMFCToolBar::GetHighlightedButton  
  Returns a pointer to the toolbar button that is currently highlighted.  
   
 ```  
@@ -1214,9 +1214,9 @@ CMFCToolBarButton* GetHighlightedButton() const;
  A pointer to a toolbar button object; or `NULL` if no button is highlighted.  
   
 ### Remarks  
- A toolbar button is highlighted if it has keyboard focus. A toolbar button is also highlighted if the toolbar buttons are hot-tracked in this application (for more information, see [CMFCToolBar::GetHotBorder](#cmfctoolbar__gethotborder) and [CMFCToolBar::SetHotBorder](#cmfctoolbar__sethotborder)) and the mouse is pointing at it when no toolbar button or menu item has keyboard focus.  
+ A toolbar button is highlighted if it has keyboard focus. A toolbar button is also highlighted if the toolbar buttons are hot-tracked in this application (for more information, see [CMFCToolBar::GetHotBorder](#gethotborder) and [CMFCToolBar::SetHotBorder](#sethotborder)) and the mouse is pointing at it when no toolbar button or menu item has keyboard focus.  
   
-##  <a name="cmfctoolbar__gethotborder"></a>  CMFCToolBar::GetHotBorder  
+##  <a name="gethotborder"></a>  CMFCToolBar::GetHotBorder  
  Determines whether the toolbar buttons are *hot-tracked*. If a button is hot-tracked, it is highlighted when the mouse moves across it.  
   
 ```  
@@ -1231,7 +1231,7 @@ BOOL GetHotBorder() const;
 ### Remarks  
  By default, toolbar buttons are hot-tracked.  
   
-##  <a name="cmfctoolbar__gethottextcolor"></a>  CMFCToolBar::GetHotTextColor  
+##  <a name="gethottextcolor"></a>  CMFCToolBar::GetHotTextColor  
  Returns the text color of the highlighted toolbar buttons.  
   
 ```  
@@ -1242,9 +1242,9 @@ static COLORREF GetHotTextColor();
  A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value that represent the current highlighted text color.  
   
 ### Remarks  
- Call [CMFCToolBar::SetHotTextColor](#cmfctoolbar__sethottextcolor) to set a new text color for highlighted toolbar buttons.  
+ Call [CMFCToolBar::SetHotTextColor](#sethottextcolor) to set a new text color for highlighted toolbar buttons.  
   
-##  <a name="cmfctoolbar__gethwndlastfocus"></a>  CMFCToolBar::GetHwndLastFocus  
+##  <a name="gethwndlastfocus"></a>  CMFCToolBar::GetHwndLastFocus  
  Returns a handle to the window that had the input focus just before the toolbar did.  
   
 ```  
@@ -1257,9 +1257,9 @@ HWND GetHwndLastFocus() const;
  A handle to window that is not derived from [CMFCBaseToolBar Class](../../mfc/reference/cmfcbasetoolbar-class.md), which previously had the input focus; or `NULL` if there is no such window.  
   
 ### Remarks  
- When a [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md) control receives the input focus, it stores a handle to the window that lost the focus so that it can restore it later.  
+ When a `CMFCToolBar` control receives the input focus, it stores a handle to the window that lost the focus so that it can restore it later.  
   
-##  <a name="cmfctoolbar__getignoresettext"></a>  CMFCToolBar::GetIgnoreSetText  
+##  <a name="getignoresettext"></a>  CMFCToolBar::GetIgnoreSetText  
  Specifies whether calls to set button labels are ignored.  
   
 ```  
@@ -1273,7 +1273,7 @@ BOOL GetIgnoreSetText() const;
   
 ### Remarks  
   
-##  <a name="cmfctoolbar__getimages"></a>  CMFCToolBar::GetImages  
+##  <a name="getimages"></a>  CMFCToolBar::GetImages  
  Returns a pointer to the collection of default button images in the application.  
   
 ```  
@@ -1284,9 +1284,9 @@ static CMFCToolBarImages* GetImages();
  A pointer to the [CMFCToolBarImages Class](../../mfc/reference/cmfctoolbarimages-class.md) object that contains the collection of default images for all toolbars in the application.  
   
 ### Remarks  
- This shared method provides access to the collection of all default toolbar images for the application. Call the [CMFCToolBar::LoadBitmap](#cmfctoolbar__loadbitmap) method to add images to the collection.  
+ This shared method provides access to the collection of all default toolbar images for the application. Call the [CMFCToolBar::LoadBitmap](#loadbitmap) method to add images to the collection.  
   
-##  <a name="cmfctoolbar__getimagesize"></a>  CMFCToolBar::GetImageSize  
+##  <a name="getimagesize"></a>  CMFCToolBar::GetImageSize  
  Returns the current size of toolbar button images.  
   
 ```  
@@ -1298,7 +1298,7 @@ CSize GetImageSize() const;
 ### Return Value  
  A [CSize Class](../../atl-mfc-shared/reference/csize-class.md) object that represents the current size of toolbar button images.  
   
-##  <a name="cmfctoolbar__getimagesoffset"></a>  CMFCToolBar::GetImagesOffset  
+##  <a name="getimagesoffset"></a>  CMFCToolBar::GetImagesOffset  
  Returns the index offset used to find the toolbar button images for this toolbar in the global list of toolbar button images.  
   
 ```  
@@ -1313,11 +1313,11 @@ int GetImagesOffset() const;
 ### Remarks  
  All toolbar default images are stored in the global [CMFCToolBarImages Class](../../mfc/reference/cmfctoolbarimages-class.md) list. The images for each button in the toolbar are stored consecutively in that list. To compute the index of the image, add the index of the button in the toolbar to the offset of the beginning of the list of images for that toolbar button.  
   
- Call [CMFCToolBar::ButtonToIndex](#cmfctoolbar__buttontoindex) to obtain the index of a toolbar button given a pointer to the button.  
+ Call [CMFCToolBar::ButtonToIndex](#buttontoindex) to obtain the index of a toolbar button given a pointer to the button.  
   
- Call [CMFCToolBar::GetImages](#cmfctoolbar__getimages) to obtain a pointer to the collection of toolbar images.  
+ Call [CMFCToolBar::GetImages](#getimages) to obtain a pointer to the collection of toolbar images.  
   
-##  <a name="cmfctoolbar__getinvalidateitemrect"></a>  CMFCToolBar::GetInvalidateItemRect  
+##  <a name="getinvalidateitemrect"></a>  CMFCToolBar::GetInvalidateItemRect  
  Retrieves the region of the client area that must be redrawn for the button at the given index.  
   
 ```  
@@ -1338,7 +1338,7 @@ virtual void GetInvalidateItemRect(
 ### Remarks  
  The `lpRect` parameter must not be `NULL`. If no button exists at the provided index, `lpRect` receives a `RECT` object that is initialized to zero.  
   
-##  <a name="cmfctoolbar__getitemid"></a>  CMFCToolBar::GetItemID  
+##  <a name="getitemid"></a>  CMFCToolBar::GetItemID  
  Returns the command ID of the toolbar button at a specified index.  
   
 ```  
@@ -1354,7 +1354,7 @@ UINT GetItemID(int nIndex) const;
 ### Return Value  
  The command ID of the toolbar button; or zero if the button with the specified index does not exist.  
   
-##  <a name="cmfctoolbar__getitemrect"></a>  CMFCToolBar::GetItemRect  
+##  <a name="getitemrect"></a>  CMFCToolBar::GetItemRect  
  Returns the bounding rectangle of the button at a specified index.  
   
 ```  
@@ -1376,12 +1376,12 @@ virtual void GetItemRect(
  The `CRect` object to which `lpRect` points is set to 0 if a button at the specified index does not exist.  
   
 ### Example  
- The following example demonstrates how to use the `GetItemRect` method of the `CMFCToolBar` class. This code snippet is part of the [IE Demo sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to use the `GetItemRect` method of the `CMFCToolBar` class. This code snippet is part of the [IE Demo sample](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]  
 [!code-cpp[NVC_MFC_IEDemo#9](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_4.cpp)]  
   
-##  <a name="cmfctoolbar__getlargecoldimages"></a>  CMFCToolBar::GetLargeColdImages  
+##  <a name="getlargecoldimages"></a>  CMFCToolBar::GetLargeColdImages  
  Returns a pointer to the collection of large cold toolbar button images in the application.  
   
 ```  
@@ -1392,9 +1392,9 @@ static CMFCToolBarImages* GetLargeColdImages();
  A pointer to the collection of large cold images.  
   
 ### Remarks  
- Cold images are the images that are used when the user is not interacting with the toolbar buttons. Call [CMFCToolBar::LoadBitmapEx](#cmfctoolbar__loadbitmapex) to load the large cold images.  
+ Cold images are the images that are used when the user is not interacting with the toolbar buttons. Call [CMFCToolBar::LoadBitmapEx](#loadbitmapex) to load the large cold images.  
   
-##  <a name="cmfctoolbar__getlargedisabledimages"></a>  CMFCToolBar::GetLargeDisabledImages  
+##  <a name="getlargedisabledimages"></a>  CMFCToolBar::GetLargeDisabledImages  
  Returns a pointer to the collection of large disabled toolbar button images in the application.  
   
 ```  
@@ -1405,9 +1405,9 @@ static CMFCToolBarImages* GetLargeDisabledImages();
  A pointer to the collection of large disabled toolbar button images.  
   
 ### Remarks  
- Large images are large versions of the regular toolbar button images. Call [CMFCToolBar::LoadBitmapEx](#cmfctoolbar__loadbitmapex) or [CMFCToolBar::LoadBitmap](#cmfctoolbar__loadbitmap) to load the large images.  
+ Large images are large versions of the regular toolbar button images. Call [CMFCToolBar::LoadBitmapEx](#loadbitmapex) or [CMFCToolBar::LoadBitmap](#loadbitmap) to load the large images.  
   
-##  <a name="cmfctoolbar__getlargeimages"></a>  CMFCToolBar::GetLargeImages  
+##  <a name="getlargeimages"></a>  CMFCToolBar::GetLargeImages  
  Returns a pointer to the collection of large toolbar button images in the application.  
   
 ```  
@@ -1418,9 +1418,9 @@ static CMFCToolBarImages* GetLargeImages();
  A pointer to the collection of large toolbar button images.  
   
 ### Remarks  
- Large images are large versions of the regular toolbar button images. Call [CMFCToolBar::LoadBitmapEx](#cmfctoolbar__loadbitmapex) to load the large images.  
+ Large images are large versions of the regular toolbar button images. Call [CMFCToolBar::LoadBitmapEx](#loadbitmapex) to load the large images.  
   
-##  <a name="cmfctoolbar__getlockedcoldimages"></a>  CMFCToolBar::GetLockedColdImages  
+##  <a name="getlockedcoldimages"></a>  CMFCToolBar::GetLockedColdImages  
  Returns a pointer to the collection of locked cold images in the toolbar.  
   
 ```  
@@ -1433,11 +1433,11 @@ CMFCToolBarImages* GetLockedColdImages();
 ### Remarks  
  Locked images are versions of the regular toolbar button images that the framework uses when the user cannot customize the toolbar. Cold images are the images that are used when the user is not interacting with the toolbar buttons.  
   
- This method returns `NULL` if the toolbar is not locked. This method also generates an assertion failure in Debug builds if the toolbar is not locked. For more information about locked toolbars, see [CMFCToolBar::IsLocked](#cmfctoolbar__islocked).  
+ This method returns `NULL` if the toolbar is not locked. This method also generates an assertion failure in Debug builds if the toolbar is not locked. For more information about locked toolbars, see [CMFCToolBar::IsLocked](#islocked).  
   
- Call the [CMFCToolBar::LoadBitmapEx](#cmfctoolbar__loadbitmapex) method to load the locked cold images.  
+ Call the [CMFCToolBar::LoadBitmapEx](#loadbitmapex) method to load the locked cold images.  
   
-##  <a name="cmfctoolbar__getlockeddisabledimages"></a>  CMFCToolBar::GetLockedDisabledImages  
+##  <a name="getlockeddisabledimages"></a>  CMFCToolBar::GetLockedDisabledImages  
  Returns a pointer to the collection of locked disabled images in the toolbar.  
   
 ```  
@@ -1450,11 +1450,11 @@ CMFCToolBarImages* GetLockedDisabledImages();
 ### Remarks  
  Locked images are versions of the regular toolbar button images that the framework uses when the user cannot customize the toolbar. Disabled images are the images that the framework uses when a button has the `TBBS_DISABLED` style.  
   
- This method returns `NULL` if the toolbar is not locked. This method also generates an assertion failure in Debug builds if the toolbar is not locked. For more information about locked toolbars, see [CMFCToolBar::IsLocked](#cmfctoolbar__islocked).  
+ This method returns `NULL` if the toolbar is not locked. This method also generates an assertion failure in Debug builds if the toolbar is not locked. For more information about locked toolbars, see [CMFCToolBar::IsLocked](#islocked).  
   
- Call the [CMFCToolBar::LoadBitmapEx](#cmfctoolbar__loadbitmapex) method to load the locked disabled images.  
+ Call the [CMFCToolBar::LoadBitmapEx](#loadbitmapex) method to load the locked disabled images.  
   
-##  <a name="cmfctoolbar__getlockedimages"></a>  CMFCToolBar::GetLockedImages  
+##  <a name="getlockedimages"></a>  CMFCToolBar::GetLockedImages  
  Returns a pointer to the collection of locked button images in the toolbar.  
   
 ```  
@@ -1467,9 +1467,9 @@ CMFCToolBarImages* GetLockedImages();
 ### Remarks  
  Locked images are versions of the regular toolbar button images that the framework uses when the user cannot customize the toolbar.  
   
- This method returns `NULL` if the toolbar is not locked. This method also generates an assertion failure in Debug builds if the toolbar is not locked. For more information about locked toolbars, see [CMFCToolBar::IsLocked](#cmfctoolbar__islocked).  
+ This method returns `NULL` if the toolbar is not locked. This method also generates an assertion failure in Debug builds if the toolbar is not locked. For more information about locked toolbars, see [CMFCToolBar::IsLocked](#islocked).  
   
-##  <a name="cmfctoolbar__getlockedimagesize"></a>  CMFCToolBar::GetLockedImageSize  
+##  <a name="getlockedimagesize"></a>  CMFCToolBar::GetLockedImageSize  
  Returns the default size of locked toolbar images.  
   
 ```  
@@ -1484,11 +1484,11 @@ CSize GetLockedImageSize() const;
 ### Remarks  
  Locked images are versions of the regular toolbar button images that the framework uses when the user cannot customize the toolbar.  
   
- This method returns a `CSize` structure with zero width and zero height if the toolbar is not locked. This method also generates an assertion failure in Debug builds if the toolbar is not locked. For more information about locked toolbars, see [CMFCToolBar::IsLocked](#cmfctoolbar__islocked).  
+ This method returns a `CSize` structure with zero width and zero height if the toolbar is not locked. This method also generates an assertion failure in Debug builds if the toolbar is not locked. For more information about locked toolbars, see [CMFCToolBar::IsLocked](#islocked).  
   
- Call the [CMFCToolBar::SetLockedSizes](#cmfctoolbar__setlockedsizes) method to specify the locked image size.  
+ Call the [CMFCToolBar::SetLockedSizes](#setlockedsizes) method to specify the locked image size.  
   
-##  <a name="cmfctoolbar__getlockedmenuimages"></a>  CMFCToolBar::GetLockedMenuImages  
+##  <a name="getlockedmenuimages"></a>  CMFCToolBar::GetLockedMenuImages  
  Returns a pointer to the collection of locked toolbar menu images in the toolbar.  
   
 ```  
@@ -1501,11 +1501,11 @@ CMFCToolBarImages* GetLockedMenuImages();
 ### Remarks  
  Locked images are versions of the regular toolbar menu images that the framework uses when the user cannot customize the toolbar.  
   
- This method returns `NULL` if the toolbar is not locked. This method also generates an assertion failure in Debug builds if the toolbar is not locked. For more information about locked toolbars, see [CMFCToolBar::IsLocked](#cmfctoolbar__islocked).  
+ This method returns `NULL` if the toolbar is not locked. This method also generates an assertion failure in Debug builds if the toolbar is not locked. For more information about locked toolbars, see [CMFCToolBar::IsLocked](#islocked).  
   
- Call the [CMFCToolBar::LoadBitmapEx](#cmfctoolbar__loadbitmapex) method to load the locked menu images.  
+ Call the [CMFCToolBar::LoadBitmapEx](#loadbitmapex) method to load the locked menu images.  
   
-##  <a name="cmfctoolbar__getmenubuttonsize"></a>  CMFCToolBar::GetMenuButtonSize  
+##  <a name="getmenubuttonsize"></a>  CMFCToolBar::GetMenuButtonSize  
  Returns the size of menu buttons in the application.  
   
 ```  
@@ -1518,9 +1518,9 @@ static CSize GetMenuButtonSize();
 ### Remarks  
  The size of menu buttons on toolbars is maintained as a global variable and can be retrieved by this static method.  
   
- Call [CMFCToolBar::SetMenuSizes](#cmfctoolbar__setmenusizes) to set this global variable.  
+ Call [CMFCToolBar::SetMenuSizes](#setmenusizes) to set this global variable.  
   
-##  <a name="cmfctoolbar__getmenuimages"></a>  CMFCToolBar::GetMenuImages  
+##  <a name="getmenuimages"></a>  CMFCToolBar::GetMenuImages  
  Returns a pointer to the collection of menu button images in the application.  
   
 ```  
@@ -1531,11 +1531,11 @@ static CMFCToolBarImages* GetMenuImages();
  A pointer to the collection of menu images.  
   
 ### Remarks  
- Call the [CMFCToolBar::LoadBitmapEx](#cmfctoolbar__loadbitmapex) method to load the menu images.  
+ Call the [CMFCToolBar::LoadBitmapEx](#loadbitmapex) method to load the menu images.  
   
- Call the [CMFCToolBar::SetMenuSizes](#cmfctoolbar__setmenusizes) method to set the size of buttons and their images.  
+ Call the [CMFCToolBar::SetMenuSizes](#setmenusizes) method to set the size of buttons and their images.  
   
-##  <a name="cmfctoolbar__getmenuimagesize"></a>  CMFCToolBar::GetMenuImageSize  
+##  <a name="getmenuimagesize"></a>  CMFCToolBar::GetMenuImageSize  
  Returns the size of menu button images in the application.  
   
 ```  
@@ -1546,9 +1546,9 @@ static CSize GetMenuImageSize();
  A `CSize` object that represents the size of menu images.  
   
 ### Remarks  
- This method returns the size of images on toolbar menu buttons that is maintained as a global variable. Call [CMFCToolBar::SetMenuSizes](#cmfctoolbar__setmenusizes) to set this global variable.  
+ This method returns the size of images on toolbar menu buttons that is maintained as a global variable. Call [CMFCToolBar::SetMenuSizes](#setmenusizes) to set this global variable.  
   
-##  <a name="cmfctoolbar__getorigbuttons"></a>  CMFCToolBar::GetOrigButtons  
+##  <a name="getorigbuttons"></a>  CMFCToolBar::GetOrigButtons  
  Retrieves the collection of non-customized buttons of the toolbar.  
   
 ```  
@@ -1561,11 +1561,11 @@ const CObList& GetOrigButtons() const;
  A reference to the list of non-customized buttons of the toolbar.  
   
 ### Remarks  
- The framework creates a copy of toolbar buttons before they are customized by the user. The [CMFCToolBar::SetButtons](#cmfctoolbar__setbuttons) method adds a copy of each button in the provided array to the list of original buttons. The [CMFCToolBar::RestoreOriginalState](#cmfctoolbar__restoreoriginalstate) method restores the original state of the toolbar by loading it from the resource file.  
+ The framework creates a copy of toolbar buttons before they are customized by the user. The [CMFCToolBar::SetButtons](#setbuttons) method adds a copy of each button in the provided array to the list of original buttons. The [CMFCToolBar::RestoreOriginalState](#restoreoriginalstate) method restores the original state of the toolbar by loading it from the resource file.  
   
- To set the list of original buttons for your toolbar, call the [CMFCToolBar::SetOrigButtons](#cmfctoolbar__setorigbuttons) method.  
+ To set the list of original buttons for your toolbar, call the [CMFCToolBar::SetOrigButtons](#setorigbuttons) method.  
   
-##  <a name="cmfctoolbar__getorigresetbuttons"></a>  CMFCToolBar::GetOrigResetButtons  
+##  <a name="getorigresetbuttons"></a>  CMFCToolBar::GetOrigResetButtons  
  Retrieves the collection of non-customized reset buttons of the toolbar.  
   
 ```  
@@ -1580,9 +1580,9 @@ const CObList& GetOrigResetButtons() const;
 ### Remarks  
  When the user clicks the **Reset** button during customization mode, the framework uses this method to restore buttons that were removed from the toolbar.  
   
- The [CMFCToolBar::SetButtons](#cmfctoolbar__setbuttons) method adds a copy of each toolbar button to the list of original reset buttons after it calls the [CMFCToolBar::OnReset](#cmfctoolbar__onreset) method. You can override the [CMFCToolBar::OnReset](#cmfctoolbar__onreset) method to customize the appearance of buttons after the user presses the **Reset** button.  
+ The [CMFCToolBar::SetButtons](#setbuttons) method adds a copy of each toolbar button to the list of original reset buttons after it calls the [CMFCToolBar::OnReset](#onreset) method. You can override the [CMFCToolBar::OnReset](#onreset) method to customize the appearance of buttons after the user presses the **Reset** button.  
   
-##  <a name="cmfctoolbar__getresourceid"></a>  CMFCToolBar::GetResourceID  
+##  <a name="getresourceid"></a>  CMFCToolBar::GetResourceID  
  Retrieves the resource ID of the toolbar.  
   
 ```  
@@ -1595,9 +1595,9 @@ UINT GetResourceID() const;
  The resource ID of the toolbar.  
   
 ### Remarks  
- Call the [CMFCToolBar::LoadToolBarEx](#cmfctoolbar__loadtoolbarex) method to set the resource ID of the toolbar.  
+ Call the [CMFCToolBar::LoadToolBarEx](#loadtoolbarex) method to set the resource ID of the toolbar.  
   
-##  <a name="cmfctoolbar__getroutecommandsviaframe"></a>  CMFCToolBar::GetRouteCommandsViaFrame  
+##  <a name="getroutecommandsviaframe"></a>  CMFCToolBar::GetRouteCommandsViaFrame  
  Determines which object, the parent frame or the owner, sends commands to the toolbar.  
   
 ```  
@@ -1608,11 +1608,11 @@ BOOL GetRouteCommandsViaFrame();
  Nonzero if the parent frame sends commands to the toolbar; 0 if the owner sends commands to the toolbar.  
   
 ### Remarks  
- By default, the parent frame sends commands to the toolbar. Call [CMFCToolBar::SetRouteCommandsViaFrame](#cmfctoolbar__setroutecommandsviaframe) to change this behavior.  
+ By default, the parent frame sends commands to the toolbar. Call [CMFCToolBar::SetRouteCommandsViaFrame](#setroutecommandsviaframe) to change this behavior.  
   
  If this method returns a nonzero value, you can retrieve a pointer to the parent frame object by using the `CMFCToolBar::GetCommandTarget` method. See the VisualStudioDemo sample for an example that uses this method.  
   
-##  <a name="cmfctoolbar__getrowheight"></a>  CMFCToolBar::GetRowHeight  
+##  <a name="getrowheight"></a>  CMFCToolBar::GetRowHeight  
  Returns the height of toolbar buttons.  
   
 ```  
@@ -1627,7 +1627,7 @@ virtual int GetRowHeight() const;
 ### Remarks  
  The framework calls this method to calculate toolbar layout. Override this method in a derived class to specify a different height for your toolbar.  
   
-##  <a name="cmfctoolbar__getshowtooltips"></a>  CMFCToolBar::GetShowTooltips  
+##  <a name="getshowtooltips"></a>  CMFCToolBar::GetShowTooltips  
  Specifies whether tool tips are displayed for toolbar buttons.  
   
 ```  
@@ -1638,9 +1638,9 @@ static BOOL GetShowTooltips();
  `TRUE` if tool tips are shown for toolbar buttons; otherwise `FALSE`.  
   
 ### Remarks  
- By default tool tips are shown. You can change this static flag by calling [CMFCToolBar::SetShowTooltips](#cmfctoolbar__setshowtooltips).  
+ By default tool tips are shown. You can change this static flag by calling [CMFCToolBar::SetShowTooltips](#setshowtooltips).  
   
-##  <a name="cmfctoolbar__getsiblingtoolbar"></a>  CMFCToolBar::GetSiblingToolBar  
+##  <a name="getsiblingtoolbar"></a>  CMFCToolBar::GetSiblingToolBar  
  Retrieves the sibling of the toolbar.  
   
 ```  
@@ -1651,9 +1651,9 @@ CMFCToolBar* GetSiblingToolBar();
  A pointer to the sibling toolbar.  
   
 ### Remarks  
- For more information about how to enable the **Show Buttons on One Row** and **Show Buttons on Two Rows** buttons, see [CMFCToolBar::SetSiblingToolBar](#cmfctoolbar__setsiblingtoolbar).  
+ For more information about how to enable the **Show Buttons on One Row** and **Show Buttons on Two Rows** buttons, see [CMFCToolBar::SetSiblingToolBar](#setsiblingtoolbar).  
   
-##  <a name="cmfctoolbar__getuserimages"></a>  CMFCToolBar::GetUserImages  
+##  <a name="getuserimages"></a>  CMFCToolBar::GetUserImages  
  Returns a pointer to the collection of user-defined toolbar button images in the application.  
   
 ```  
@@ -1664,9 +1664,9 @@ static CMFCToolBarImages* GetUserImages();
  A pointer to the collection of user-defined toolbar button images for all toolbars in the application.  
   
 ### Remarks  
- Call the [CMFCToolBar::SetUserImages](#cmfctoolbar__setuserimages) method to set the collection of user-defined images in the application.  
+ Call the [CMFCToolBar::SetUserImages](#setuserimages) method to set the collection of user-defined images in the application.  
   
-##  <a name="cmfctoolbar__hittest"></a>  CMFCToolBar::HitTest  
+##  <a name="hittest"></a>  CMFCToolBar::HitTest  
  Returns the index of the toolbar button that is located at the specified position.  
   
 ```  
@@ -1680,7 +1680,7 @@ virtual int HitTest(CPoint point);
 ### Return Value  
  The index of the button that is located at the specified position, or -1 if there is no such button or the button is a separator.  
   
-##  <a name="cmfctoolbar__insertbutton"></a>  CMFCToolBar::InsertButton  
+##  <a name="insertbutton"></a>  CMFCToolBar::InsertButton  
  Inserts a button into the toolbar.  
   
 ```  
@@ -1707,9 +1707,9 @@ virtual int InsertButton(
 ### Remarks  
  If `iInsertAt` is -1, this method adds the button to the end of the list of toolbar buttons.  
   
- Call the [CMFCToolBar::InsertSeparator](#cmfctoolbar__insertseparator) method to insert a separator into the toolbar.  
+ Call the [CMFCToolBar::InsertSeparator](#insertseparator) method to insert a separator into the toolbar.  
   
-##  <a name="cmfctoolbar__insertseparator"></a>  CMFCToolBar::InsertSeparator  
+##  <a name="insertseparator"></a>  CMFCToolBar::InsertSeparator  
  Inserts a separator into the toolbar.  
   
 ```  
@@ -1728,9 +1728,9 @@ virtual int InsertSeparator(INT_PTR iInsertAt=-1);
   
  You cannot use this method to add a separator to an empty toolbar.  
   
- Call the [CMFCToolBar::InsertButton](#cmfctoolbar__insertbutton) method to insert a button into the toolbar.  
+ Call the [CMFCToolBar::InsertButton](#insertbutton) method to insert a button into the toolbar.  
   
-##  <a name="cmfctoolbar__invalidatebutton"></a>  CMFCToolBar::InvalidateButton  
+##  <a name="invalidatebutton"></a>  CMFCToolBar::InvalidateButton  
  Invalidates the client area of the toolbar button that exists at the provided index.  
   
 ```  
@@ -1745,9 +1745,9 @@ CMFCToolBarButton* InvalidateButton(int nIndex);
  A pointer to the `CMFCToolBarButton` object that exists at the provided index or `NULL` if no such object exists.  
   
 ### Remarks  
- The framework calls this method when it updates the client area that is associated with a toolbar button. It calls the [CWnd::InvalidateRect](../../mfc/reference/cwnd-class.md#cwnd__invalidaterect) method with the client rectangle of the `CMFCToolBarButton` object that exists at the provided index.  
+ The framework calls this method when it updates the client area that is associated with a toolbar button. It calls the [CWnd::InvalidateRect](../../mfc/reference/cwnd-class.md#invalidaterect) method with the client rectangle of the `CMFCToolBarButton` object that exists at the provided index.  
   
-##  <a name="cmfctoolbar__isaddremovequickcustomize"></a>  CMFCToolBar::IsAddRemoveQuickCustomize  
+##  <a name="isaddremovequickcustomize"></a>  CMFCToolBar::IsAddRemoveQuickCustomize  
  Determines whether a user can add or remove toolbar buttons by using the **Customize** menu option.  
   
 ```  
@@ -1759,7 +1759,7 @@ BOOL IsAddRemoveQuickCustomize();
   
 ### Remarks  
   
-##  <a name="cmfctoolbar__isaltcustomizemode"></a>  CMFCToolBar::IsAltCustomizeMode  
+##  <a name="isaltcustomizemode"></a>  CMFCToolBar::IsAltCustomizeMode  
  Specifies whether *quick customization* is being used to drag a button. When quick customization is enabled, a user can press and hold the Alt key and drag a button to a new location.  
   
 ```  
@@ -1771,7 +1771,7 @@ static BOOL __stdcall IsAltCustomizeMode();
   
 ### Remarks  
   
-##  <a name="cmfctoolbar__isautograyinactiveimages"></a>  CMFCToolBar::IsAutoGrayInactiveImages  
+##  <a name="isautograyinactiveimages"></a>  CMFCToolBar::IsAutoGrayInactiveImages  
  Specifies whether the automatic generation of inactive (non-highlighted) button images is enabled.  
   
 ```  
@@ -1782,9 +1782,9 @@ static BOOL IsAutoGrayInactiveImages();
  `TRUE` if the option to automatically dim inactive images is enabled; otherwise `FALSE`.  
   
 ### Remarks  
- You can enable or disable automatic dimming of inactive images by calling [CMFCToolBar::AutoGrayInactiveImages](#cmfctoolbar__autograyinactiveimages).  
+ You can enable or disable automatic dimming of inactive images by calling [CMFCToolBar::AutoGrayInactiveImages](#autograyinactiveimages).  
   
-##  <a name="cmfctoolbar__isbasiccommand"></a>  CMFCToolBar::IsBasicCommand  
+##  <a name="isbasiccommand"></a>  CMFCToolBar::IsBasicCommand  
  Determines whether a command is on the list of basic commands.  
   
 ```  
@@ -1799,9 +1799,9 @@ static BOOL IsBasicCommand(UINT uiCmd);
  `TRUE` if the specified command belongs to the list of basic commands; otherwise `FALSE`.  
   
 ### Remarks  
- This static method determines whether the command specified by `uiCmd` belongs to the global list of basic commands. You can change the list of basic commands by calling [CMFCToolBar::AddBasicCommand](#cmfctoolbar__addbasiccommand) or [CMFCToolBar::SetBasicCommands](#cmfctoolbar__setbasiccommands).  
+ This static method determines whether the command specified by `uiCmd` belongs to the global list of basic commands. You can change the list of basic commands by calling [CMFCToolBar::AddBasicCommand](#addbasiccommand) or [CMFCToolBar::SetBasicCommands](#setbasiccommands).  
   
-##  <a name="cmfctoolbar__isbuttonextrasizeavailable"></a>  CMFCToolBar::IsButtonExtraSizeAvailable  
+##  <a name="isbuttonextrasizeavailable"></a>  CMFCToolBar::IsButtonExtraSizeAvailable  
  Determines whether the toolbar can display buttons that have extended borders.  
   
 ```  
@@ -1814,11 +1814,11 @@ virtual BOOL IsButtonExtraSizeAvailable() const;
  `TRUE` if the bar can display buttons with the extra border size; otherwise `FALSE`.  
   
 ### Remarks  
- The toolbar object returns `TRUE` if it can display buttons that have extended borders. A toolbar button calls this method when it handles the [CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__onchangeparentwnd) notification and will set its internal extra border size flag accordingly. This internal flag may be retrieved later by calling [CMFCToolBarButton::IsExtraSize](../../mfc/reference/cmfctoolbarbutton-class.md#cmfctoolbarbutton__isextrasize).  
+ The toolbar object returns `TRUE` if it can display buttons that have extended borders. A toolbar button calls this method when it handles the [CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd) notification and will set its internal extra border size flag accordingly. This internal flag may be retrieved later by calling [CMFCToolBarButton::IsExtraSize](../../mfc/reference/cmfctoolbarbutton-class.md#isextrasize).  
   
- Override this method in a class derived from [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md) and return `TRUE` if your bar can display the toolbar buttons with the extra border size and return `FALSE` otherwise. The default implementation returns `TRUE`.  
+ Override this method in a class derived from `CMFCToolBar` and return `TRUE` if your bar can display the toolbar buttons with the extra border size and return `FALSE` otherwise. The default implementation returns `TRUE`.  
   
-##  <a name="cmfctoolbar__isbuttonhighlighted"></a>  CMFCToolBar::IsButtonHighlighted  
+##  <a name="isbuttonhighlighted"></a>  CMFCToolBar::IsButtonHighlighted  
  Determines whether the specified button is highlighted.  
   
 ```  
@@ -1836,7 +1836,7 @@ BOOL IsButtonHighlighted(int iButton) const;
   
 ### Remarks  
   
-##  <a name="cmfctoolbar__iscommandpermitted"></a>  CMFCToolBar::IsCommandPermitted  
+##  <a name="iscommandpermitted"></a>  CMFCToolBar::IsCommandPermitted  
  Determines whether a command is permitted.  
   
 ```  
@@ -1853,9 +1853,9 @@ static BOOL IsCommandPermitted(UINT uiCmd);
 ### Remarks  
  This static method determines whether the command specified by `uiCmd` belongs to the global list of non-permitted commands.  
   
- You can change the list of non-permitted commands by calling [CMFCToolBar::SetNonPermittedCommands](#cmfctoolbar__setnonpermittedcommands).  
+ You can change the list of non-permitted commands by calling [CMFCToolBar::SetNonPermittedCommands](#setnonpermittedcommands).  
   
-##  <a name="cmfctoolbar__iscommandrarelyused"></a>  CMFCToolBar::IsCommandRarelyUsed  
+##  <a name="iscommandrarelyused"></a>  CMFCToolBar::IsCommandRarelyUsed  
  Determines whether a command is rarely used.  
   
 ```  
@@ -1882,7 +1882,7 @@ static BOOL IsCommandRarelyUsed(UINT uiCmd);
   
 -   More than 20% of command calls are calls to the specified command.  
   
-##  <a name="cmfctoolbar__iscustomizemode"></a>  CMFCToolBar::IsCustomizeMode  
+##  <a name="iscustomizemode"></a>  CMFCToolBar::IsCustomizeMode  
  Specifies whether the toolbar framework is in customization mode.  
   
 ```  
@@ -1893,11 +1893,11 @@ static BOOL IsCustomizeMode();
  `TRUE` if the framework is in customization mode; otherwise `FALSE`.  
   
 ### Remarks  
- You can toggle customization mode by calling [CMFCToolBar::SetCustomizeMode](#cmfctoolbar__setcustomizemode).  
+ You can toggle customization mode by calling [CMFCToolBar::SetCustomizeMode](#setcustomizemode).  
   
  The framework changes the mode when the user invokes the customization dialog box ( [CMFCToolBarsCustomizeDialog Class](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)).  
   
-##  <a name="cmfctoolbar__isdragbutton"></a>  CMFCToolBar::IsDragButton  
+##  <a name="isdragbutton"></a>  CMFCToolBar::IsDragButton  
  Determines whether a toolbar button is being dragged.  
   
 ```  
@@ -1915,7 +1915,7 @@ BOOL IsDragButton(const CMFCToolBarButton* pButton) const;
   
 ### Remarks  
   
-##  <a name="cmfctoolbar__isexistcustomizebutton"></a>  CMFCToolBar::IsExistCustomizeButton  
+##  <a name="isexistcustomizebutton"></a>  CMFCToolBar::IsExistCustomizeButton  
  Determines whether the toolbar contains the **Customize** button.  
   
 ```  
@@ -1926,11 +1926,11 @@ BOOL IsExistCustomizeButton();
  `TRUE` if the toolbar contains the **Customize** button; otherwise `FALSE`.  
   
 ### Remarks  
- If this method returns `TRUE`, the [CMFCToolBar::GetCustomizeButton](#cmfctoolbar__getcustomizebutton) method returns a pointer to the **Customize** button that appears at the end of the toolbar.  
+ If this method returns `TRUE`, the [CMFCToolBar::GetCustomizeButton](#getcustomizebutton) method returns a pointer to the **Customize** button that appears at the end of the toolbar.  
   
- Use the [CMFCToolBar::EnableCustomizeButton](#cmfctoolbar__enablecustomizebutton) method to add the **Customize** button to your toolbar.  
+ Use the [CMFCToolBar::EnableCustomizeButton](#enablecustomizebutton) method to add the **Customize** button to your toolbar.  
   
-##  <a name="cmfctoolbar__isfloating"></a>  CMFCToolBar::IsFloating  
+##  <a name="isfloating"></a>  CMFCToolBar::IsFloating  
  Determines whether the toolbar is floating.  
   
 ```  
@@ -1942,7 +1942,7 @@ virtual BOOL IsFloating() const;
 ### Return Value  
  `TRUE` if the toolbar is floating; otherwise, `FALSE`.  
   
-##  <a name="cmfctoolbar__islargeicons"></a>  CMFCToolBar::IsLargeIcons  
+##  <a name="islargeicons"></a>  CMFCToolBar::IsLargeIcons  
  Specifies whether toolbars in the application currently display large icons.  
   
 ```  
@@ -1953,11 +1953,11 @@ static BOOL IsLargeIcons();
  `TRUE` if the application is using large icons; otherwise `FALSE`.  
   
 ### Remarks  
- Call [CMFCToolBar::SetLargeIcons](#cmfctoolbar__setlargeicons) to toggle between large icons and regular icons.  
+ Call [CMFCToolBar::SetLargeIcons](#setlargeicons) to toggle between large icons and regular icons.  
   
  The framework automatically changes the mode when the user toggles the **Large icons** check-box on the **Options** page of the **Customization** dialog box.  
   
-##  <a name="cmfctoolbar__islastcommandfrombutton"></a>  CMFCToolBar::IsLastCommandFromButton  
+##  <a name="islastcommandfrombutton"></a>  CMFCToolBar::IsLastCommandFromButton  
  Determines whether the most recently executed command was sent from the specified toolbar button.  
   
 ```  
@@ -1974,7 +1974,7 @@ static BOOL IsLastCommandFromButton(CMFCToolBarButton* pButton);
 ### Remarks  
  This method obtains a pointer to a [MSG Structure](../../mfc/reference/msg-structure1.md) by calling `CWnd::GetCurrentMessage`. It then compares the `HWND` of the button with the `MSG::lParam` and `MSG::hwnd` members to determine whether the button was the source of the command.  
   
-##  <a name="cmfctoolbar__islocked"></a>  CMFCToolBar::IsLocked  
+##  <a name="islocked"></a>  CMFCToolBar::IsLocked  
  Determines whether the toolbar is locked.  
   
 ```  
@@ -1989,9 +1989,9 @@ BOOL IsLocked() const;
 ### Remarks  
  This method returns `TRUE` when the user cannot perform customization tasks such as repositioning toolbar buttons.  
   
- Locked toolbars use separate image lists. For more information about these image lists, see [CMFCToolBar::LoadBitmapEx](#cmfctoolbar__loadbitmapex).  
+ Locked toolbars use separate image lists. For more information about these image lists, see [CMFCToolBar::LoadBitmapEx](#loadbitmapex).  
   
-##  <a name="cmfctoolbar__isonerowwithsibling"></a>  CMFCToolBar::IsOneRowWithSibling  
+##  <a name="isonerowwithsibling"></a>  CMFCToolBar::IsOneRowWithSibling  
  Determines whether the toolbar and its sibling toolbar are positioned on the same row.  
   
 ```  
@@ -2004,9 +2004,9 @@ BOOL IsOneRowWithSibling();
 ### Remarks  
  The [CMFCCustomizeButton::CreatePopupMenu](http://msdn.microsoft.com/en-us/e501083e-f78e-4d8d-900c-40bd6e2bb7f8) method calls this method to determine how to show the **Customize** pop-up menu. If this method returns `TRUE`, the framework displays the **Show Buttons on One Row** button. Otherwise, the framework displays the **Show Buttons on Two Rows** button.  
   
- You typically do not have to use this method. To enable the **Show Buttons on One Row** or **Show Buttons on Two Rows** buttons, call [CMFCToolBar::SetSiblingToolBar](#cmfctoolbar__setsiblingtoolbar).  
+ You typically do not have to use this method. To enable the **Show Buttons on One Row** or **Show Buttons on Two Rows** buttons, call [CMFCToolBar::SetSiblingToolBar](#setsiblingtoolbar).  
   
-##  <a name="cmfctoolbar__isresourcechanged"></a>  CMFCToolBar::IsResourceChanged  
+##  <a name="isresourcechanged"></a>  CMFCToolBar::IsResourceChanged  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -2019,7 +2019,7 @@ virtual BOOL IsResourceChanged() const;
   
 ### Remarks  
   
-##  <a name="cmfctoolbar__issibling"></a>  CMFCToolBar::IsSibling  
+##  <a name="issibling"></a>  CMFCToolBar::IsSibling  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -2030,7 +2030,7 @@ BOOL IsSibling();
   
 ### Remarks  
   
-##  <a name="cmfctoolbar__isuserdefined"></a>  CMFCToolBar::IsUserDefined  
+##  <a name="isuserdefined"></a>  CMFCToolBar::IsUserDefined  
  Specifies whether the toolbar is user-defined.  
   
 ```  
@@ -2042,7 +2042,7 @@ BOOL IsUserDefined() const;
 ### Return Value  
  `TRUE` if the toolbar was created by the user; otherwise `FALSE`.  
   
-##  <a name="cmfctoolbar__loadbitmap"></a>  CMFCToolBar::LoadBitmap  
+##  <a name="loadbitmap"></a>  CMFCToolBar::LoadBitmap  
  Loads toolbar images from application resources.  
   
 ```  
@@ -2078,11 +2078,11 @@ virtual BOOL LoadBitmap(
  Nonzero if the method succeeds; otherwise 0.  
   
 ### Remarks  
- The [CMFCToolBar::LoadToolBarEx](#cmfctoolbar__loadtoolbarex) method calls this method to load the images that are associated with the toolbar. Override this method to perform custom loading of image resources.  
+ The [CMFCToolBar::LoadToolBarEx](#loadtoolbarex) method calls this method to load the images that are associated with the toolbar. Override this method to perform custom loading of image resources.  
   
  Call the `LoadBitmapEx` method to load additional images after you create the toolbar.  
   
-##  <a name="cmfctoolbar__loadbitmapex"></a>  CMFCToolBar::LoadBitmapEx  
+##  <a name="loadbitmapex"></a>  CMFCToolBar::LoadBitmapEx  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -2099,7 +2099,7 @@ virtual BOOL LoadBitmapEx(
   
 ### Remarks  
   
-##  <a name="cmfctoolbar__loadlargeiconsstate"></a>  CMFCToolBar::LoadLargeIconsState  
+##  <a name="loadlargeiconsstate"></a>  CMFCToolBar::LoadLargeIconsState  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -2113,7 +2113,7 @@ static BOOL __stdcall LoadLargeIconsState(LPCTSTR lpszProfileName = NULL);
   
 ### Remarks  
   
-##  <a name="cmfctoolbar__loadparameters"></a>  CMFCToolBar::LoadParameters  
+##  <a name="loadparameters"></a>  CMFCToolBar::LoadParameters  
  Loads global toolbar options from the Windows registry.  
   
 ```  
@@ -2130,9 +2130,9 @@ static BOOL LoadParameters(LPCTSTR lpszProfileName=NULL);
 ### Remarks  
  This method loads global parameters such as the menu animation type, the menu shadow style, and whether to display large icons from the Windows registry.  
   
- The [CWinAppEx::LoadState](../../mfc/reference/cwinappex-class.md#cwinappex__loadstate) method calls this method as a part of the initialization process of the application.  
+ The [CWinAppEx::LoadState](../../mfc/reference/cwinappex-class.md#loadstate) method calls this method as a part of the initialization process of the application.  
   
-##  <a name="cmfctoolbar__loadstate"></a>  CMFCToolBar::LoadState  
+##  <a name="loadstate"></a>  CMFCToolBar::LoadState  
  Loads the toolbar state information from the Windows registry.  
   
 ```  
@@ -2156,9 +2156,9 @@ virtual BOOL LoadState(
  Nonzero if the method succeeds; otherwise 0.  
   
 ### Remarks  
- The framework calls this method as a part of the initialization process of the application. For more information, see [CWinAppEx::LoadState](../../mfc/reference/cwinappex-class.md#cwinappex__loadstate).  
+ The framework calls this method as a part of the initialization process of the application. For more information, see [CWinAppEx::LoadState](../../mfc/reference/cwinappex-class.md#loadstate).  
   
-##  <a name="cmfctoolbar__loadtoolbar"></a>  CMFCToolBar::LoadToolBar  
+##  <a name="loadtoolbar"></a>  CMFCToolBar::LoadToolBar  
  Loads the toolbar from application resources.  
   
 ```  
@@ -2201,12 +2201,12 @@ virtual BOOL LoadToolBar(
  The framework calls this method during initialization to load the images that are associated with the toolbar.  
   
 ### Example  
- The following example demonstrates how to use the `LoadToolBar` method in the `CMFCToolBar` class. This code snippet is part of the [IE Demo sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to use the `LoadToolBar` method in the `CMFCToolBar` class. This code snippet is part of the [IE Demo sample](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]  
 [!code-cpp[NVC_MFC_IEDemo#7](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_3.cpp)]  
   
-##  <a name="cmfctoolbar__loadtoolbarex"></a>  CMFCToolBar::LoadToolBarEx  
+##  <a name="loadtoolbarex"></a>  CMFCToolBar::LoadToolBarEx  
  Loads the toolbar from application resources by using the `CMFCToolBarInfo` helper class to enable the application to use large images.  
   
 ```  
@@ -2232,7 +2232,7 @@ virtual BOOL LoadToolBarEx(
 ### Remarks  
  Call this method to load toolbar images from the application resources.  
   
-##  <a name="cmfctoolbar__m_dbllargeimageratio"></a>  CMFCToolBar::m_dblLargeImageRatio  
+##  <a name="m_dbllargeimageratio"></a>  CMFCToolBar::m_dblLargeImageRatio  
  Specifies the ratio between the dimension (height or width) of large images and the dimension of regular images.  
   
 ```  
@@ -2244,7 +2244,7 @@ AFX_IMPORT_DATA static double m_dblLargeImageRatio;
   
  The framework uses this data member when you do not specify a set of large images. For example, if you provide only the set of small images with size 16x16 and want the large images to have the size 24x24, set this data member to 1.5.  
   
-##  <a name="cmfctoolbar__nextmenu"></a>  CMFCToolBar::NextMenu  
+##  <a name="nextmenu"></a>  CMFCToolBar::NextMenu  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -2255,7 +2255,7 @@ virtual BOOL NextMenu();
   
 ### Remarks  
   
-##  <a name="cmfctoolbar__onbeforeremovebutton"></a>  CMFCToolBar::OnBeforeRemoveButton  
+##  <a name="onbeforeremovebutton"></a>  CMFCToolBar::OnBeforeRemoveButton  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -2275,7 +2275,7 @@ virtual BOOL OnBeforeRemoveButton(
   
 ### Remarks  
   
-##  <a name="cmfctoolbar__onchangehot"></a>  CMFCToolBar::OnChangeHot  
+##  <a name="onchangehot"></a>  CMFCToolBar::OnChangeHot  
  Called by the framework when a user selects a button on the toolbar.  
   
 ```  
@@ -2289,7 +2289,7 @@ virtual void OnChangeHot(int iHot);
 ### Remarks  
  Override this method to process notifications that the user selected a button on a toolbar.  
   
-##  <a name="cmfctoolbar__onchangevisualmanager"></a>  CMFCToolBar::OnChangeVisualManager  
+##  <a name="onchangevisualmanager"></a>  CMFCToolBar::OnChangeVisualManager  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -2298,8 +2298,8 @@ virtual void OnChangeVisualManager();
   
 ### Remarks  
   
-##  <a name="cmfctoolbar__onfillbackground"></a>  CMFCToolBar::OnFillBackground  
- Called by the framework from [CBasePane::DoPaint](../../mfc/reference/cbasepane-class.md#cbasepane__dopaint) to fill the toolbar background.  
+##  <a name="onfillbackground"></a>  CMFCToolBar::OnFillBackground  
+ Called by the framework from [CBasePane::DoPaint](../../mfc/reference/cbasepane-class.md#dopaint) to fill the toolbar background.  
   
 ```  
 virtual void OnFillBackground(CDC* pDC);
@@ -2310,11 +2310,11 @@ virtual void OnFillBackground(CDC* pDC);
  A pointer to a device context.  
   
 ### Remarks  
- [CMFCToolBar::DoPaint](#cmfctoolbar__dopaint) calls this method when the background of a toolbar has been filled. The default implementation does nothing.  
+ [CMFCToolBar::DoPaint](#dopaint) calls this method when the background of a toolbar has been filled. The default implementation does nothing.  
   
  Override this method to draw custom background in derived classes.  
   
-##  <a name="cmfctoolbar__onglobalfontschanged"></a>  CMFCToolBar::OnGlobalFontsChanged  
+##  <a name="onglobalfontschanged"></a>  CMFCToolBar::OnGlobalFontsChanged  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -2323,7 +2323,7 @@ virtual void OnGlobalFontsChanged();
   
 ### Remarks  
   
-##  <a name="cmfctoolbar__onreset"></a>  CMFCToolBar::OnReset  
+##  <a name="onreset"></a>  CMFCToolBar::OnReset  
  Restores the toolbar to its original state.  
   
 ```  
@@ -2333,9 +2333,9 @@ virtual void OnReset();
 ### Remarks  
  Override this method to handle notification about a toolbar reset.  
   
- The default implementation does nothing. Override `OnReset` in a class derived from [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md) when the toolbar has dummy buttons that must be replaced when the toolbar returns to its original state.  
+ The default implementation does nothing. Override `OnReset` in a class derived from `CMFCToolBar` when the toolbar has dummy buttons that must be replaced when the toolbar returns to its original state.  
   
-##  <a name="cmfctoolbar__onsetaccdata"></a>  CMFCToolBar::OnSetAccData  
+##  <a name="onsetaccdata"></a>  CMFCToolBar::OnSetAccData  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -2349,7 +2349,7 @@ virtual BOOL OnSetAccData(long lVal);
   
 ### Remarks  
   
-##  <a name="cmfctoolbar__onsetdefaultbuttontext"></a>  CMFCToolBar::OnSetDefaultButtonText  
+##  <a name="onsetdefaultbuttontext"></a>  CMFCToolBar::OnSetDefaultButtonText  
  Restores the text of a toolbar button to its default state.  
   
 ```  
@@ -2368,7 +2368,7 @@ virtual BOOL OnSetDefaultButtonText(CMFCToolBarButton* pButton);
   
  The default implementation loads the text of a button from the application resources.  
   
-##  <a name="cmfctoolbar__onusertooltip"></a>  CMFCToolBar::OnUserToolTip  
+##  <a name="onusertooltip"></a>  CMFCToolBar::OnUserToolTip  
  Called by the framework when the tooltip for a button is about to be displayed.  
   
 ```  
@@ -2392,9 +2392,9 @@ virtual BOOL OnUserToolTip(
 ### Remarks  
  The framework calls this method when the tooltip for a toolbar button is about to be displayed. If `OnUserToolTip` returns `TRUE`, the framework displays a tooltip which contains the text returned by `OnUserToolTip` in `strTTText`. Otherwise, the tooltip contains the button text.  
   
- Override `OnUserToolTip` to customize tool tips of toolbar buttons. The default implementation calls [CMFCToolBar::OnUserToolTip](#cmfctoolbar__onusertooltip) to obtain the tooltip text.  
+ Override `OnUserToolTip` to customize tool tips of toolbar buttons. The default implementation calls [CMFCToolBar::OnUserToolTip](#onusertooltip) to obtain the tooltip text.  
   
-##  <a name="cmfctoolbar__prevmenu"></a>  CMFCToolBar::PrevMenu  
+##  <a name="prevmenu"></a>  CMFCToolBar::PrevMenu  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -2405,7 +2405,7 @@ virtual BOOL PrevMenu();
   
 ### Remarks  
   
-##  <a name="cmfctoolbar__processcommand"></a>  CMFCToolBar::ProcessCommand  
+##  <a name="processcommand"></a>  CMFCToolBar::ProcessCommand  
  Posts a `WM_COMMAND` message to the window that owns the toolbar.  
   
 ```  
@@ -2420,11 +2420,11 @@ BOOL ProcessCommand(CMFCToolBarButton* pButton);
  This method should always return `TRUE`. MFC uses `FALSE` values internally.  
   
 ### Remarks  
- This method posts a `WM_COMMAND` message to the window that owns the toolbar by calling [CWnd::PostMessage](../../mfc/reference/cwnd-class.md#cwnd__postmessage) and passing the command ID of the specified button as the `wParam` parameter.  
+ This method posts a `WM_COMMAND` message to the window that owns the toolbar by calling [CWnd::PostMessage](../../mfc/reference/cwnd-class.md#postmessage) and passing the command ID of the specified button as the `wParam` parameter.  
   
  Use the [ON_COMMAND](http://msdn.microsoft.com/library/f24f8bda-2cf4-49d5-aa3d-6f2e6bb003f2) macro to map the `WM_COMMAND` message to a member function.  
   
-##  <a name="cmfctoolbar__removeallbuttons"></a>  CMFCToolBar::RemoveAllButtons  
+##  <a name="removeallbuttons"></a>  CMFCToolBar::RemoveAllButtons  
  Removes all buttons and separators from the toolbar.  
   
 ```  
@@ -2434,7 +2434,7 @@ virtual void RemoveAllButtons();
 ### Remarks  
  The framework calls this method when it recreates or destroys a toolbar.  
   
-##  <a name="cmfctoolbar__removebutton"></a>  CMFCToolBar::RemoveButton  
+##  <a name="removebutton"></a>  CMFCToolBar::RemoveButton  
  Removes from the toolbar the button that has the specified index.  
   
 ```  
@@ -2451,9 +2451,9 @@ virtual BOOL RemoveButton(int iIndex);
 ### Remarks  
  This method updates additional toolbar attributes that are affected by the removal of the button. For example, this method removes nonessential separators from the toolbar and rebuilds the table of shortcut keys.  
   
- For more information about the **Customize** button, see [CMFCToolBar::EnableCustomizeButton](#cmfctoolbar__enablecustomizebutton).  
+ For more information about the **Customize** button, see [CMFCToolBar::EnableCustomizeButton](#enablecustomizebutton).  
   
-##  <a name="cmfctoolbar__removestatefromregistry"></a>  CMFCToolBar::RemoveStateFromRegistry  
+##  <a name="removestatefromregistry"></a>  CMFCToolBar::RemoveStateFromRegistry  
  Deletes the state information for the toolbar from the Windows registry.  
   
 ```  
@@ -2471,7 +2471,7 @@ virtual BOOL RemoveStateFromRegistry(
  The control ID of the toolbar.  
   
  [in] `uiID`  
- The resource ID of the toolbar. If this parameter is -1, this method uses the [CWnd::GetDlgCtrlID](../../mfc/reference/cwnd-class.md#cwnd__getdlgctrlid) method to retrieve the resource ID.  
+ The resource ID of the toolbar. If this parameter is -1, this method uses the [CWnd::GetDlgCtrlID](../../mfc/reference/cwnd-class.md#getdlgctrlid) method to retrieve the resource ID.  
   
 ### Return Value  
  Nonzero if the method succeeds; otherwise 0.  
@@ -2481,7 +2481,7 @@ virtual BOOL RemoveStateFromRegistry(
   
  Override this method if you store additional state information in the Windows registry.  
   
-##  <a name="cmfctoolbar__replacebutton"></a>  CMFCToolBar::ReplaceButton  
+##  <a name="replacebutton"></a>  CMFCToolBar::ReplaceButton  
  Replaces a toolbar button with another toolbar button.  
   
 ```  
@@ -2508,12 +2508,12 @@ int ReplaceButton(
  Call this method when you want to add toolbar buttons that cannot be loaded from resources. You can create a placeholder button at design-time and replace that button with a custom button when you initialize the toolbar. See the VisualStudioDemo sample for an example that uses this method.  
   
 ### Example  
- The following example demonstrates how to use the `ReplaceButton` method in the `CMFCToolBar` class. This code snippet is part of the [IE Demo sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to use the `ReplaceButton` method in the `CMFCToolBar` class. This code snippet is part of the [IE Demo sample](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]  
 [!code-cpp[NVC_MFC_IEDemo#10](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_5.cpp)]  
   
-##  <a name="cmfctoolbar__resetall"></a>  CMFCToolBar::ResetAll  
+##  <a name="resetall"></a>  CMFCToolBar::ResetAll  
  Restores all toolbars to their original states.  
   
 ```  
@@ -2521,9 +2521,9 @@ static void __stdcall ResetAll();
 ```  
   
 ### Remarks  
- This method calls the [CMFCToolBar::RestoreOriginalState](#cmfctoolbar__restoreoriginalstate) method on each toolbar in the application that can be restored. It uses the [CMFCToolBar::CanBeRestored](#cmfctoolbar__canberestored) method to determine whether a toolbar can be restored.  
+ This method calls the [CMFCToolBar::RestoreOriginalState](#restoreoriginalstate) method on each toolbar in the application that can be restored. It uses the [CMFCToolBar::CanBeRestored](#canberestored) method to determine whether a toolbar can be restored.  
   
-##  <a name="cmfctoolbar__resetallimages"></a>  CMFCToolBar::ResetAllImages  
+##  <a name="resetallimages"></a>  CMFCToolBar::ResetAllImages  
  Clears all toolbar image collections in the application.  
   
 ```  
@@ -2531,9 +2531,9 @@ static void __stdcall ResetAllImages();
 ```  
   
 ### Remarks  
- This method clears the image collections that are initialized by the [CMFCToolBar::LoadToolBar](#cmfctoolbar__loadtoolbar) and [CMFCToolBar::LoadBitmap](#cmfctoolbar__loadbitmap) methods.  
+ This method clears the image collections that are initialized by the [CMFCToolBar::LoadToolBar](#loadtoolbar) and [CMFCToolBar::LoadBitmap](#loadbitmap) methods.  
   
-##  <a name="cmfctoolbar__resetimages"></a>  CMFCToolBar::ResetImages  
+##  <a name="resetimages"></a>  CMFCToolBar::ResetImages  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -2542,7 +2542,7 @@ virtual void ResetImages();
   
 ### Remarks  
   
-##  <a name="cmfctoolbar__restorefocus"></a>  CMFCToolBar::RestoreFocus  
+##  <a name="restorefocus"></a>  CMFCToolBar::RestoreFocus  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -2551,7 +2551,7 @@ virtual void RestoreFocus();
   
 ### Remarks  
   
-##  <a name="cmfctoolbar__restoreoriginalstate"></a>  CMFCToolBar::RestoreOriginalState  
+##  <a name="restoreoriginalstate"></a>  CMFCToolBar::RestoreOriginalState  
  Restores the original state of a toolbar.  
   
 ```  
@@ -2562,11 +2562,11 @@ virtual BOOL RestoreOriginalState();
  `TRUE` if the method succeeds, or `FALSE` if the method fails or the toolbar is user-defined.  
   
 ### Remarks  
- This method loads the toolbar from the resource file by using the [CMFCToolBar::LoadToolBar](#cmfctoolbar__loadtoolbar) method.  
+ This method loads the toolbar from the resource file by using the [CMFCToolBar::LoadToolBar](#loadtoolbar) method.  
   
  The framework calls this method when the user chooses the **Reset All** button on the **Toolbars** page of a customization dialog box.  
   
-##  <a name="cmfctoolbar__saveparameters"></a>  CMFCToolBar::SaveParameters  
+##  <a name="saveparameters"></a>  CMFCToolBar::SaveParameters  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -2580,7 +2580,7 @@ static BOOL __stdcall SaveParameters(LPCTSTR lpszProfileName = NULL);
   
 ### Remarks  
   
-##  <a name="cmfctoolbar__savestate"></a>  CMFCToolBar::SaveState  
+##  <a name="savestate"></a>  CMFCToolBar::SaveState  
  Saves the state information for the toolbar in the Windows registry.  
   
 ```  
@@ -2604,9 +2604,9 @@ virtual BOOL SaveState(
  Nonzero if the method succeeds; otherwise 0.  
   
 ### Remarks  
- The framework calls this method when it saves the application state to the registry. For more information, see [CWinAppEx::SaveState](../../mfc/reference/cwinappex-class.md#cwinappex__savestate).  
+ The framework calls this method when it saves the application state to the registry. For more information, see [CWinAppEx::SaveState](../../mfc/reference/cwinappex-class.md#savestate).  
   
-##  <a name="cmfctoolbar__setbasiccommands"></a>  CMFCToolBar::SetBasicCommands  
+##  <a name="setbasiccommands"></a>  CMFCToolBar::SetBasicCommands  
  Sets the list of commands that are always displayed when a user opens a menu.  
   
 ```  
@@ -2621,11 +2621,11 @@ static void __stdcall SetBasicCommands(
 ### Remarks  
  A basic command is always displayed when the menu is opened. This method is meaningful when the user chooses to view recently used commands.  
   
- Use the [CMFCToolBar::AddBasicCommand](#cmfctoolbar__addbasiccommand) method to add a command to the list of basic commands. Use the [CMFCToolBar::GetBasicCommands](#cmfctoolbar__getbasiccommands) method to retrieve the list of basic commands that is used by your application.  
+ Use the [CMFCToolBar::AddBasicCommand](#addbasiccommand) method to add a command to the list of basic commands. Use the [CMFCToolBar::GetBasicCommands](#getbasiccommands) method to retrieve the list of basic commands that is used by your application.  
   
  See the Explorer sample for an example that uses this method.  
   
-##  <a name="cmfctoolbar__setbuttoninfo"></a>  CMFCToolBar::SetButtonInfo  
+##  <a name="setbuttoninfo"></a>  CMFCToolBar::SetButtonInfo  
  Sets the command ID, style, and image ID of a toolbar button.  
   
 ```  
@@ -2654,9 +2654,9 @@ void SetButtonInfo(
   
  In Debug builds, this method generates an assertion failure if the index that is specified by `nIndex` is invalid.  
   
- Call the [CMFCToolBar::SetButtonStyle](#cmfctoolbar__setbuttonstyle) method to set only the style of the button.  
+ Call the [CMFCToolBar::SetButtonStyle](#setbuttonstyle) method to set only the style of the button.  
   
-##  <a name="cmfctoolbar__setbuttons"></a>  CMFCToolBar::SetButtons  
+##  <a name="setbuttons"></a>  CMFCToolBar::SetButtons  
  Sets the buttons for the toolbar.  
   
 ```  
@@ -2682,9 +2682,9 @@ virtual BOOL SetButtons(
 ### Remarks  
  Call this method to remove existing buttons from a toolbar and insert a collection of new buttons.  
   
- This method adds the **Customize** button to the toolbar and sends the `AFX_WM_RESETTOOLBAR` message to the parent window of the toolbar. For more information about the **Customize** button, see [CMFCToolBar::EnableCustomizeButton](#cmfctoolbar__enablecustomizebutton).  
+ This method adds the **Customize** button to the toolbar and sends the `AFX_WM_RESETTOOLBAR` message to the parent window of the toolbar. For more information about the **Customize** button, see [CMFCToolBar::EnableCustomizeButton](#enablecustomizebutton).  
   
-##  <a name="cmfctoolbar__setbuttonstyle"></a>  CMFCToolBar::SetButtonStyle  
+##  <a name="setbuttonstyle"></a>  CMFCToolBar::SetButtonStyle  
  Sets the style of the toolbar button at the given index.  
   
 ```  
@@ -2703,7 +2703,7 @@ virtual void SetButtonStyle(
 ### Remarks  
  This method removes the `TBBS_PRESSED` style if `nStyle` is `TBBS_DISABLED` because the user cannot click a disabled button.  
   
-##  <a name="cmfctoolbar__setbuttontext"></a>  CMFCToolBar::SetButtonText  
+##  <a name="setbuttontext"></a>  CMFCToolBar::SetButtonText  
  Sets the text label of a toolbar button.  
   
 ```  
@@ -2725,7 +2725,7 @@ BOOL SetButtonText(
 ### Remarks  
  This method returns `FALSE` if the provided index does not refer to a valid toolbar button.  
   
-##  <a name="cmfctoolbar__setcommandusageoptions"></a>  CMFCToolBar::SetCommandUsageOptions  
+##  <a name="setcommandusageoptions"></a>  CMFCToolBar::SetCommandUsageOptions  
  Specifies when rarely used commands do not appear in the menu of the application.  
   
 ```  
@@ -2745,11 +2745,11 @@ static BOOL SetCommandUsageOptions(
  `FALSE` if `nMinUsagePercentage` is equal to or larger than 100; otherwise `TRUE`.  
   
 ### Remarks  
- Call this method to customize the algorithm that the framework uses to determine how basic and recently used menu items appear. For more information about basic commands, see [CMFCToolBar::AddBasicCommand](#cmfctoolbar__addbasiccommand).  
+ Call this method to customize the algorithm that the framework uses to determine how basic and recently used menu items appear. For more information about basic commands, see [CMFCToolBar::AddBasicCommand](#addbasiccommand).  
   
  This class uses the `CMFCCmdUsageCount` class to track the usage count of commands. For more information about this class, see [CMFCCmdUsageCount Class](../../mfc/reference/cmfccmdusagecount-class.md).  
   
-##  <a name="cmfctoolbar__setcustomizemode"></a>  CMFCToolBar::SetCustomizeMode  
+##  <a name="setcustomizemode"></a>  CMFCToolBar::SetCustomizeMode  
  Enables or disables customization mode for all toolbars in the application.  
   
 ```  
@@ -2764,9 +2764,9 @@ static BOOL __stdcall SetCustomizeMode(BOOL bSet=TRUE);
  `TRUE` if calling this method changes the customization mode; otherwise `FALSE`.  
   
 ### Remarks  
- This method adjusts the layout of and redraws each toolbar in the application. Call the [CMFCToolBar::IsCustomizeMode](#cmfctoolbar__iscustomizemode) method to determine whether the application is in customization mode,  
+ This method adjusts the layout of and redraws each toolbar in the application. Call the [CMFCToolBar::IsCustomizeMode](#iscustomizemode) method to determine whether the application is in customization mode,  
   
-##  <a name="cmfctoolbar__setgraydisabledbuttons"></a>  CMFCToolBar::SetGrayDisabledButtons  
+##  <a name="setgraydisabledbuttons"></a>  CMFCToolBar::SetGrayDisabledButtons  
  Specifies whether unavailable buttons on the toolbar are dimmed, or whether button-unavailable images are used.  
   
 ```  
@@ -2780,7 +2780,7 @@ void SetGrayDisabledButtons(BOOL bGrayDisabledButtons);
 ### Remarks  
  By default, unavailable buttons are dimmed.  
   
-##  <a name="cmfctoolbar__setheight"></a>  CMFCToolBar::SetHeight  
+##  <a name="setheight"></a>  CMFCToolBar::SetHeight  
  Sets the height of the toolbar.  
   
 ```  
@@ -2794,7 +2794,7 @@ void SetHeight(int cyHeight);
 ### Remarks  
  This method redraws the toolbar after it sets the height.  
   
-##  <a name="cmfctoolbar__sethelpmode"></a>  CMFCToolBar::SetHelpMode  
+##  <a name="sethelpmode"></a>  CMFCToolBar::SetHelpMode  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -2806,7 +2806,7 @@ static void __stdcall SetHelpMode(BOOL bOn = TRUE);
   
 ### Remarks  
   
-##  <a name="cmfctoolbar__sethot"></a>  CMFCToolBar::SetHot  
+##  <a name="sethot"></a>  CMFCToolBar::SetHot  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -2820,7 +2820,7 @@ BOOL SetHot(CMFCToolBarButton* pMenuButton);
   
 ### Remarks  
   
-##  <a name="cmfctoolbar__sethotborder"></a>  CMFCToolBar::SetHotBorder  
+##  <a name="sethotborder"></a>  CMFCToolBar::SetHotBorder  
  Specifies whether toolbar buttons are hot-tracked.  
   
 ```  
@@ -2834,9 +2834,9 @@ void SetHotBorder(BOOL bShowHotBorder);
 ### Remarks  
  If a button is hot-tracked, the framework highlights the button when the mouse moves across it. By default, each toolbar hot-tracks its buttons.  
   
- Call the [CMFCToolBar::GetHotBorder](#cmfctoolbar__gethotborder) method to determine whether the toolbar hot-tracks its buttons.  
+ Call the [CMFCToolBar::GetHotBorder](#gethotborder) method to determine whether the toolbar hot-tracks its buttons.  
   
-##  <a name="cmfctoolbar__sethottextcolor"></a>  CMFCToolBar::SetHotTextColor  
+##  <a name="sethottextcolor"></a>  CMFCToolBar::SetHotTextColor  
  Sets the text color for hot toolbar buttons.  
   
 ```  
@@ -2848,9 +2848,9 @@ static void SetHotTextColor(COLORREF clrText);
  Specifies the text color for toolbar buttons that are hot-tracked.  
   
 ### Remarks  
- For more information about hot-tracked toolbar buttons, see [CMFCToolBar::GetHotBorder](#cmfctoolbar__gethotborder) and [CMFCToolBar::SetHotBorder](#cmfctoolbar__sethotborder).  
+ For more information about hot-tracked toolbar buttons, see [CMFCToolBar::GetHotBorder](#gethotborder) and [CMFCToolBar::SetHotBorder](#sethotborder).  
   
-##  <a name="cmfctoolbar__setignoresettext"></a>  CMFCToolBar::SetIgnoreSetText  
+##  <a name="setignoresettext"></a>  CMFCToolBar::SetIgnoreSetText  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -2862,7 +2862,7 @@ void SetIgnoreSetText(BOOL bValue);
   
 ### Remarks  
   
-##  <a name="cmfctoolbar__setlargeicons"></a>  CMFCToolBar::SetLargeIcons  
+##  <a name="setlargeicons"></a>  CMFCToolBar::SetLargeIcons  
  Specifies whether toolbar buttons display large icons.  
   
 ```  
@@ -2880,7 +2880,7 @@ static void SetLargeIcons(BOOL bLargeIcons=TRUE);
   
  For more information about the **Customize** dialog box, see [CMFCToolBarsCustomizeDialog Class](../../mfc/reference/cmfctoolbarscustomizedialog-class.md).  
   
-##  <a name="cmfctoolbar__setlockedsizes"></a>  CMFCToolBar::SetLockedSizes  
+##  <a name="setlockedsizes"></a>  CMFCToolBar::SetLockedSizes  
  Sets the sizes of locked buttons and locked images on the toolbar.  
   
 ```  
@@ -2903,9 +2903,9 @@ void SetLockedSizes(
 ### Remarks  
  The default size of locked buttons is 23x22 pixels. The default size of locked images is 16x15 pixels.  
   
- Call the [CMFCToolBar::GetLockedImageSize](#cmfctoolbar__getlockedimagesize) method to retrieve the size of locked images. Call the [CMFCToolBar::GetButtonSize](#cmfctoolbar__getbuttonsize) method to retrieve the size of locked toolbar buttons.  
+ Call the [CMFCToolBar::GetLockedImageSize](#getlockedimagesize) method to retrieve the size of locked images. Call the [CMFCToolBar::GetButtonSize](#getbuttonsize) method to retrieve the size of locked toolbar buttons.  
   
-##  <a name="cmfctoolbar__setmaskmode"></a>  CMFCToolBar::SetMaskMode  
+##  <a name="setmaskmode"></a>  CMFCToolBar::SetMaskMode  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -2917,7 +2917,7 @@ void SetMaskMode(BOOL bMasked);
   
 ### Remarks  
   
-##  <a name="cmfctoolbar__setmenusizes"></a>  CMFCToolBar::SetMenuSizes  
+##  <a name="setmenusizes"></a>  CMFCToolBar::SetMenuSizes  
  Sets the size of toolbar menu buttons and their images.  
   
 ```  
@@ -2936,11 +2936,11 @@ static void __stdcall SetMenuSizes(
 ### Remarks  
  By default, menu buttons and their images have an undefined size.  
   
- Call the [CMFCToolBar::GetMenuButtonSize](#cmfctoolbar__getmenubuttonsize) method to determine the size of menu buttons and the [CMFCToolBar::GetMenuImageSize](#cmfctoolbar__getmenuimagesize) method to determine the size of menu button images.  
+ Call the [CMFCToolBar::GetMenuButtonSize](#getmenubuttonsize) method to determine the size of menu buttons and the [CMFCToolBar::GetMenuImageSize](#getmenuimagesize) method to determine the size of menu button images.  
   
  See the IEDemo and MSMoneyDemo samples for examples that use this method.  
   
-##  <a name="cmfctoolbar__setnonpermittedcommands"></a>  CMFCToolBar::SetNonPermittedCommands  
+##  <a name="setnonpermittedcommands"></a>  CMFCToolBar::SetNonPermittedCommands  
  Sets the list of commands that cannot be executed by the user.  
   
 ```  
@@ -2957,7 +2957,7 @@ static void SetNonPermittedCommands(
   
  This method clears the previous list of non-permitted commands. By default, the list of non-permitted commands is empty.  
   
-##  <a name="cmfctoolbar__setonerowwithsibling"></a>  CMFCToolBar::SetOneRowWithSibling  
+##  <a name="setonerowwithsibling"></a>  CMFCToolBar::SetOneRowWithSibling  
  Positions the toolbar and its sibling on the same row.  
   
 ```  
@@ -2967,11 +2967,11 @@ void SetOneRowWithSibling();
 ### Remarks  
  The framework calls this method when the user clicks the **Show Buttons on One Row** button.  
   
- Call the [CMFCToolBar::SetSiblingToolBar](#cmfctoolbar__setsiblingtoolbar) method to enable the **Show Buttons on One Row** or **Show Buttons on Two Rows** buttons. If you call [CMFCToolBar::SetSiblingToolBar](#cmfctoolbar__setsiblingtoolbar) for this toolbar, the sibling toolbar is moved to the row of this toolbar. Otherwise, this toolbar is moved to the row of the sibling.  
+ Call the [CMFCToolBar::SetSiblingToolBar](#setsiblingtoolbar) method to enable the **Show Buttons on One Row** or **Show Buttons on Two Rows** buttons. If you call [CMFCToolBar::SetSiblingToolBar](#setsiblingtoolbar) for this toolbar, the sibling toolbar is moved to the row of this toolbar. Otherwise, this toolbar is moved to the row of the sibling.  
   
- The framework calls the [CMFCToolBar::SetTwoRowsWithSibling](#cmfctoolbar__settworowswithsibling) method when the user clicks the **Show Buttons on Two Rows** button.  
+ The framework calls the [CMFCToolBar::SetTwoRowsWithSibling](#settworowswithsibling) method when the user clicks the **Show Buttons on Two Rows** button.  
   
-##  <a name="cmfctoolbar__setorigbuttons"></a>  CMFCToolBar::SetOrigButtons  
+##  <a name="setorigbuttons"></a>  CMFCToolBar::SetOrigButtons  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -2983,7 +2983,7 @@ void SetOrigButtons(const CObList& lstOrigButtons);
   
 ### Remarks  
   
-##  <a name="cmfctoolbar__setpermament"></a>  CMFCToolBar::SetPermament  
+##  <a name="setpermament"></a>  CMFCToolBar::SetPermament  
  Specifies whether a user can close the toolbar.  
   
 ```  
@@ -2997,9 +2997,9 @@ void SetPermament(BOOL bPermament=TRUE);
 ### Remarks  
  By default, a user can close each toolbar.  
   
- Call the [CMFCToolBar::CanBeClosed](#cmfctoolbar__canbeclosed) method to determine whether a user can close the toolbar.  
+ Call the [CMFCToolBar::CanBeClosed](#canbeclosed) method to determine whether a user can close the toolbar.  
   
-##  <a name="cmfctoolbar__setroutecommandsviaframe"></a>  CMFCToolBar::SetRouteCommandsViaFrame  
+##  <a name="setroutecommandsviaframe"></a>  CMFCToolBar::SetRouteCommandsViaFrame  
  Specifies whether the parent frame or the owner sends commands to the toolbar.  
   
 ```  
@@ -3011,9 +3011,9 @@ void SetRouteCommandsViaFrame(BOOL bValue);
  If this parameter is `TRUE`, the parent frame sends commands to the toolbar. Otherwise, the owner sends commands to the toolbar.  
   
 ### Remarks  
- By default, the parent frame sends commands to the toolbar. Call the [CMFCToolBar::GetRouteCommandsViaFrame](#cmfctoolbar__getroutecommandsviaframe) method to determine whether the parent frame or the owner sends commands to the toolbar.  
+ By default, the parent frame sends commands to the toolbar. Call the [CMFCToolBar::GetRouteCommandsViaFrame](#getroutecommandsviaframe) method to determine whether the parent frame or the owner sends commands to the toolbar.  
   
-##  <a name="cmfctoolbar__setshowtooltips"></a>  CMFCToolBar::SetShowTooltips  
+##  <a name="setshowtooltips"></a>  CMFCToolBar::SetShowTooltips  
  Specifies whether the framework displays tool tips.  
   
 ```  
@@ -3027,9 +3027,9 @@ static void SetShowTooltips(BOOL bValue);
 ### Remarks  
  By default, the framework shows tool tips.  
   
- Call the [CMFCToolBar::GetShowTooltips](#cmfctoolbar__getshowtooltips) method to determine whether the framework shows tool tips.  
+ Call the [CMFCToolBar::GetShowTooltips](#getshowtooltips) method to determine whether the framework shows tool tips.  
   
-##  <a name="cmfctoolbar__setsiblingtoolbar"></a>  CMFCToolBar::SetSiblingToolBar  
+##  <a name="setsiblingtoolbar"></a>  CMFCToolBar::SetSiblingToolBar  
  Specifies the sibling of the toolbar.  
   
 ```  
@@ -3043,11 +3043,11 @@ void SetSiblingToolBar(CMFCToolBar* pBrotherToolbar);
 ### Remarks  
  This method enables the **Show Buttons on One Row** or **Show Buttons on Two Rows** buttons that are shown when the user displays the **Customize** pop-up menu. Call this method when you want to enable the user to specify whether related toolbars appear on the same row or on different rows.  
   
- Call this method after you enable the **Customize** button that appears on the toolbar. To enable the **Customize** button, call the [CMFCToolBar::EnableCustomizeButton](#cmfctoolbar__enablecustomizebutton) method.  
+ Call this method after you enable the **Customize** button that appears on the toolbar. To enable the **Customize** button, call the [CMFCToolBar::EnableCustomizeButton](#enablecustomizebutton) method.  
   
- To retrieve the sibling of a toolbar, call [CMFCToolBar::GetSiblingToolBar](#cmfctoolbar__getsiblingtoolbar).  
+ To retrieve the sibling of a toolbar, call [CMFCToolBar::GetSiblingToolBar](#getsiblingtoolbar).  
   
-##  <a name="cmfctoolbar__setsizes"></a>  CMFCToolBar::SetSizes  
+##  <a name="setsizes"></a>  CMFCToolBar::SetSizes  
  Specifies the sizes of buttons and images on all toolbars.  
   
 ```  
@@ -3066,9 +3066,9 @@ static void __stdcall SetSizes(
 ### Remarks  
  The default size of toolbar buttons is 23x22 pixels. The default size of toolbar button images is 16x15 pixels.  
   
- Call the [CMFCToolBar::GetImageSize](#cmfctoolbar__getimagesize) method to retrieve the size of toolbar button images. Call the [CMFCToolBar::GetButtonSize](#cmfctoolbar__getbuttonsize) method to retrieve the size of toolbar buttons.  
+ Call the [CMFCToolBar::GetImageSize](#getimagesize) method to retrieve the size of toolbar button images. Call the [CMFCToolBar::GetButtonSize](#getbuttonsize) method to retrieve the size of toolbar buttons.  
   
-##  <a name="cmfctoolbar__settoolbarbtntext"></a>  CMFCToolBar::SetToolBarBtnText  
+##  <a name="settoolbarbtntext"></a>  CMFCToolBar::SetToolBarBtnText  
  Specifies properties of a button on the toolbar.  
   
 ```  
@@ -3097,7 +3097,7 @@ void SetToolBarBtnText(
   
  In Debug builds, this method generates an assertion failure if `nBtnIndex` does not refer to a valid toolbar button or the toolbar button is a separator.  
   
-##  <a name="cmfctoolbar__settworowswithsibling"></a>  CMFCToolBar::SetTwoRowsWithSibling  
+##  <a name="settworowswithsibling"></a>  CMFCToolBar::SetTwoRowsWithSibling  
  Positions the toolbar and its sibling on separate rows.  
   
 ```  
@@ -3107,11 +3107,11 @@ void SetTwoRowsWithSibling();
 ### Remarks  
  The framework calls this method when the user clicks the **Show Buttons on Two Rows** button.  
   
- Call the [CMFCToolBar::SetSiblingToolBar](#cmfctoolbar__setsiblingtoolbar) method to enable the **Show Buttons on One Row** or **Show Buttons on Two Rows** buttons. If you call [CMFCToolBar::SetSiblingToolBar](#cmfctoolbar__setsiblingtoolbar) for this toolbar, the sibling toolbar is moved to a separate row. Otherwise, this toolbar is moved to a separate row.  
+ Call the [CMFCToolBar::SetSiblingToolBar](#setsiblingtoolbar) method to enable the **Show Buttons on One Row** or **Show Buttons on Two Rows** buttons. If you call [CMFCToolBar::SetSiblingToolBar](#setsiblingtoolbar) for this toolbar, the sibling toolbar is moved to a separate row. Otherwise, this toolbar is moved to a separate row.  
   
- The framework calls the [CMFCToolBar::SetOneRowWithSibling](#cmfctoolbar__setonerowwithsibling) method when the user clicks the **Show Buttons on One Row** button.  
+ The framework calls the [CMFCToolBar::SetOneRowWithSibling](#setonerowwithsibling) method when the user clicks the **Show Buttons on One Row** button.  
   
-##  <a name="cmfctoolbar__setuserimages"></a>  CMFCToolBar::SetUserImages  
+##  <a name="setuserimages"></a>  CMFCToolBar::SetUserImages  
  Sets the collection of user-defined images in the application.  
   
 ```  
@@ -3132,9 +3132,9 @@ static BOOL SetUserImages(CMFCToolBarImages* pUserImages);
   
  The OutlookDemo, ToolTipDemo, and VisualStudioDemo samples use this method to set the global collection of user-defined images. They load the file that is named UserImages.bmp, which is located in the working directory of the application.  
   
- Call the [CMFCToolBar::GetUserImages](#cmfctoolbar__getuserimages) method to retrieve the collection of user-defined images in the application.  
+ Call the [CMFCToolBar::GetUserImages](#getuserimages) method to retrieve the collection of user-defined images in the application.  
   
-##  <a name="cmfctoolbar__stretchpane"></a>  CMFCToolBar::StretchPane  
+##  <a name="stretchpane"></a>  CMFCToolBar::StretchPane  
  Stretches the toolbar vertically or horizontally, and repositions the buttons if necessary.  
   
 ```  
@@ -3154,11 +3154,11 @@ virtual CSize StretchPane(
  A `CSize` object that specifies the size of the toolbar client area.  
   
 ### Remarks  
- This method calls [CMFCToolBar::WrapToolBar](#cmfctoolbar__wraptoolbar) to reposition the buttons within the stretched toolbar.  
+ This method calls [CMFCToolBar::WrapToolBar](#wraptoolbar) to reposition the buttons within the stretched toolbar.  
   
- The return value is determined by calling [CMFCToolBar::CalcSize](#cmfctoolbar__calcsize).  
+ The return value is determined by calling [CMFCToolBar::CalcSize](#calcsize).  
   
-##  <a name="cmfctoolbar__translatechar"></a>  CMFCToolBar::TranslateChar  
+##  <a name="translatechar"></a>  CMFCToolBar::TranslateChar  
  Executes a button command if the specified key code corresponds to a valid keyboard shortcut.  
   
 ```  
@@ -3170,12 +3170,12 @@ virtual BOOL TranslateChar(UINT nChar);
  Specifies a virtual key code. For a list of standard virtual key codes, see Winuser.h  
   
 ### Return Value  
- `FALSE` if the specified key code is either unprintable or does not correspond to a valid keyboard shortcut; `TRUE` if the specified key code corresponds to a drop-down menu option; otherwise, the return value from [CMFCToolBar::ProcessCommand](#cmfctoolbar__processcommand).  
+ `FALSE` if the specified key code is either unprintable or does not correspond to a valid keyboard shortcut; `TRUE` if the specified key code corresponds to a drop-down menu option; otherwise, the return value from [CMFCToolBar::ProcessCommand](#processcommand).  
   
 ### Remarks  
  The framework calls this method when a key is pressed together with the Alt key.  
   
-##  <a name="cmfctoolbar__updatebutton"></a>  CMFCToolBar::UpdateButton  
+##  <a name="updatebutton"></a>  CMFCToolBar::UpdateButton  
  Updates the state of the specified button.  
   
 ```  
@@ -3188,7 +3188,7 @@ void UpdateButton(int nIndex);
   
 ### Remarks  
   
-##  <a name="cmfctoolbar__wraptoolbar"></a>  CMFCToolBar::WrapToolBar  
+##  <a name="wraptoolbar"></a>  CMFCToolBar::WrapToolBar  
  Repositions toolbar buttons within the given dimensions.  
   
 ```  
@@ -3222,7 +3222,7 @@ int WrapToolBar(
 ### Remarks  
  This method repositions buttons within the toolbar, wrapping buttons to additional rows if necessary.  
   
-##  <a name="cmfctoolbar__m_bdontscaleimages"></a>  CMFCToolBar::m_bDontScaleImages  
+##  <a name="m_bdontscaleimages"></a>  CMFCToolBar::m_bDontScaleImages  
  Specifies whether or not to scale toolbar images in high DPI mode.  
   
 ```  

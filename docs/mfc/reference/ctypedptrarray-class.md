@@ -59,20 +59,20 @@ class CTypedPtrArray : public BASE_CLASS
   
 |Name|Description|  
 |----------|-----------------|  
-|[CTypedPtrArray::Add](#ctypedptrarray__add)|Adds a new element to the end of an array. Grows the array if necessary|  
-|[CTypedPtrArray::Append](#ctypedptrarray__append)|Adds the contents of one array to the end of another. Grows the array if necessary|  
-|[CTypedPtrArray::Copy](#ctypedptrarray__copy)|Copies another array to the array; grows the array if necessary.|  
-|[CTypedPtrArray::ElementAt](#ctypedptrarray__elementat)|Returns a temporary reference to the element pointer within the array.|  
-|[CTypedPtrArray::GetAt](#ctypedptrarray__getat)|Returns the value at a given index.|  
-|[CTypedPtrArray::InsertAt](#ctypedptrarray__insertat)|Inserts an element (or all the elements in another array) at a specified index.|  
-|[CTypedPtrArray::SetAt](#ctypedptrarray__setat)|Sets the value for a given index; array not allowed to grow.|  
-|[CTypedPtrArray::SetAtGrow](#ctypedptrarray__setatgrow)|Sets the value for a given index; grows the array if necessary.|  
+|[CTypedPtrArray::Add](#add)|Adds a new element to the end of an array. Grows the array if necessary|  
+|[CTypedPtrArray::Append](#append)|Adds the contents of one array to the end of another. Grows the array if necessary|  
+|[CTypedPtrArray::Copy](#copy)|Copies another array to the array; grows the array if necessary.|  
+|[CTypedPtrArray::ElementAt](#elementat)|Returns a temporary reference to the element pointer within the array.|  
+|[CTypedPtrArray::GetAt](#getat)|Returns the value at a given index.|  
+|[CTypedPtrArray::InsertAt](#insertat)|Inserts an element (or all the elements in another array) at a specified index.|  
+|[CTypedPtrArray::SetAt](#setat)|Sets the value for a given index; array not allowed to grow.|  
+|[CTypedPtrArray::SetAtGrow](#setatgrow)|Sets the value for a given index; grows the array if necessary.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CTypedPtrArray::operator [ ]](#ctypedptrarray__operator_at)|Sets or gets the element at the specified index.|  
+|[CTypedPtrArray::operator [ ]](#operator_at)|Sets or gets the element at the specified index.|  
   
 ## Remarks  
  When you use `CTypedPtrArray` rather than `CPtrArray` or `CObArray`, the C++ type-checking facility helps eliminate errors caused by mismatched pointer types.  
@@ -91,7 +91,7 @@ class CTypedPtrArray : public BASE_CLASS
 ## Requirements  
  **Header:** afxtempl.h  
   
-##  <a name="ctypedptrarray__add"></a>  CTypedPtrArray::Add  
+##  <a name="add"></a>  CTypedPtrArray::Add  
  This member function calls `BASE_CLASS`**::Add**.  
   
 ```  
@@ -109,9 +109,9 @@ INT_PTR Add(TYPE newElement);
  The index of the added element.  
   
 ### Remarks  
- For more detailed remarks, see [CObArray::Add](../../mfc/reference/cobarray-class.md#cobarray__add).  
+ For more detailed remarks, see [CObArray::Add](../../mfc/reference/cobarray-class.md#add).  
   
-##  <a name="ctypedptrarray__append"></a>  CTypedPtrArray::Append  
+##  <a name="append"></a>  CTypedPtrArray::Append  
  This member function calls `BASE_CLASS`**::Append**.  
   
 ```  
@@ -133,9 +133,9 @@ INT_PTR Append(
  The index of the first appended element.  
   
 ### Remarks  
- For more detailed remarks, see [CObArray::Append](../../mfc/reference/cobarray-class.md#cobarray__append).  
+ For more detailed remarks, see [CObArray::Append](../../mfc/reference/cobarray-class.md#append).  
   
-##  <a name="ctypedptrarray__copy"></a>  CTypedPtrArray::Copy  
+##  <a name="copy"></a>  CTypedPtrArray::Copy  
  This member function calls `BASE_CLASS`**::Copy**.  
   
 ```  
@@ -154,9 +154,9 @@ void Copy(
  Source of the elements to be copied to an array.  
   
 ### Remarks  
- For more detailed remarks, see [CObArray::Copy](../../mfc/reference/cobarray-class.md#cobarray__copy).  
+ For more detailed remarks, see [CObArray::Copy](../../mfc/reference/cobarray-class.md#copy).  
   
-##  <a name="ctypedptrarray__elementat"></a>  CTypedPtrArray::ElementAt  
+##  <a name="elementat"></a>  CTypedPtrArray::ElementAt  
  This inline function calls `BASE_CLASS`**::ElementAt**.  
   
 ```  
@@ -174,9 +174,9 @@ TYPE& ElementAt(INT_PTR nIndex);
  A temporary reference to the element at the location specified by `nIndex`. This element is of the type specified by the template parameter *TYPE*.  
   
 ### Remarks  
- For more detailed remarks, see [CObArray::ElementAt](../../mfc/reference/cobarray-class.md#cobarray__elementat).  
+ For more detailed remarks, see [CObArray::ElementAt](../../mfc/reference/cobarray-class.md#elementat).  
   
-##  <a name="ctypedptrarray__getat"></a>  CTypedPtrArray::GetAt  
+##  <a name="getat"></a>  CTypedPtrArray::GetAt  
  This inline function calls `BASE_CLASS`**::GetAt**.  
   
 ```  
@@ -196,9 +196,9 @@ TYPE GetAt(INT_PTR nIndex) const;
  A copy of the element at the location specified by `nIndex`. This element is of the type specified by the template parameter *TYPE*.  
   
 ### Remarks  
- For more detailed remarks, see [CObArray::GetAt](../../mfc/reference/cobarray-class.md#cobarray__getat)  
+ For more detailed remarks, see [CObArray::GetAt](../../mfc/reference/cobarray-class.md#getat)  
   
-##  <a name="ctypedptrarray__insertat"></a>  CTypedPtrArray::InsertAt  
+##  <a name="insertat"></a>  CTypedPtrArray::InsertAt  
  This member function calls `BASE_CLASS`**::InsertAt**.  
   
 ```  
@@ -215,7 +215,7 @@ void InsertAt(
   
 ### Parameters  
  `nIndex`  
- An integer index that may be greater than the value returned by [CObArray::GetUpperBound](../../mfc/reference/cobarray-class.md#cobarray__getupperbound).  
+ An integer index that may be greater than the value returned by [CObArray::GetUpperBound](../../mfc/reference/cobarray-class.md#getupperbound).  
   
  *TYPE*  
  Type of the elements stored in the base-class array.  
@@ -236,9 +236,9 @@ void InsertAt(
  Another array that contains elements to be added to this array.  
   
 ### Remarks  
- For more detailed remarks, see [CObArray::InsertAt](../../mfc/reference/cobarray-class.md#cobarray__insertat).  
+ For more detailed remarks, see [CObArray::InsertAt](../../mfc/reference/cobarray-class.md#insertat).  
   
-##  <a name="ctypedptrarray__operator_at"></a>  CTypedPtrArray::operator [ ]  
+##  <a name="operator_at"></a>  CTypedPtrArray::operator [ ]  
  These inline operators call `BASE_CLASS`**::operator [ ]**.  
   
 ```  
@@ -262,7 +262,7 @@ TYPE operator[ ](int_ptr nindex) const;
   
  The Debug version of the library asserts if the subscript (either on the left or right side of an assignment statement) is out of bounds.  
   
-##  <a name="ctypedptrarray__setat"></a>  CTypedPtrArray::SetAt  
+##  <a name="setat"></a>  CTypedPtrArray::SetAt  
  This member function calls `BASE_CLASS`**::SetAt**.  
   
 ```  
@@ -273,7 +273,7 @@ void SetAt(
   
 ### Parameters  
  `nIndex`  
- An integer index that is greater than or equal to 0 and less than or equal to the value returned by [CObArray::GetUpperBound](../../mfc/reference/cobarray-class.md#cobarray__getupperbound).  
+ An integer index that is greater than or equal to 0 and less than or equal to the value returned by [CObArray::GetUpperBound](../../mfc/reference/cobarray-class.md#getupperbound).  
   
  *TYPE*  
  Type of the elements stored in the base-class array.  
@@ -282,9 +282,9 @@ void SetAt(
  A pointer to the element to be inserted in the array at the nIndex. A NULL value is allowed.  
   
 ### Remarks  
- For more detailed remarks, see [CObArray::SetAt](../../mfc/reference/cobarray-class.md#cobarray__setat).  
+ For more detailed remarks, see [CObArray::SetAt](../../mfc/reference/cobarray-class.md#setat).  
   
-##  <a name="ctypedptrarray__setatgrow"></a>  CTypedPtrArray::SetAtGrow  
+##  <a name="setatgrow"></a>  CTypedPtrArray::SetAtGrow  
  This member function calls `BASE_CLASS`**::SetAtGrow**.  
   
 ```  
@@ -304,10 +304,10 @@ void SetAtGrow(
  The object pointer to be added to this array. A **NULL** value is allowed.  
   
 ### Remarks  
- For more detailed remarks, see [CObArray::SetAtGrow](../../mfc/reference/cobarray-class.md#cobarray__setatgrow).  
+ For more detailed remarks, see [CObArray::SetAtGrow](../../mfc/reference/cobarray-class.md#setatgrow).  
   
 ## See Also  
- [MFC Sample COLLECT](../../top/visual-cpp-samples.md)   
+ [MFC Sample COLLECT](../../visual-cpp-samples.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CPtrArray Class](../../mfc/reference/cptrarray-class.md)   
  [CObArray Class](../../mfc/reference/cobarray-class.md)

@@ -51,14 +51,14 @@ A `collection` is a COM object that provides an interface that allows access to 
  [Design Principles for Collection and Enumerator Interfaces](../atl/design-principles-for-collection-and-enumerator-interfaces.md)  
  Discusses the different design principles behind each type of interface.  
   
- [Implementing an STL-Based Collection](../atl/implementing-an-stl-based-collection.md)  
- An extended example that walks you through the implementation of a Standard Template Library (STL)-based collection.  
+ [Implementing a C++ Standard Library-Based Collection](../atl/implementing-an-stl-based-collection.md)  
+ An extended example that walks you through the implementation of a C++ Standard Library-based collection.  
   
 ## Related Sections  
  [ATL](../atl/active-template-library-atl-concepts.md)  
  Provides links to conceptual topics on how to program using the Active Template Library.  
   
- [ATLCollections Sample](../top/visual-cpp-samples.md)  
+ [ATLCollections Sample](../visual-cpp-samples.md)  
  A sample that demonstrates the use of `ICollectionOnSTLImpl` and `CComEnumOnSTL`, and the implementation of custom copy policy classes.  
   
 ## See Also  

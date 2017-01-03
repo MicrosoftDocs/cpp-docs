@@ -67,33 +67,33 @@ class CStringList : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CObList::CObList](../../mfc/reference/coblist-class.md#coblist__coblist)|Constructs an empty list.|  
+|[CObList::CObList](../../mfc/reference/coblist-class.md#coblist)|Constructs an empty list.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CObList::AddHead](../../mfc/reference/coblist-class.md#coblist__addhead)|Adds an element (or all the elements in another list) to the head of the list (makes a new head).|  
-|[CObList::AddTail](../../mfc/reference/coblist-class.md#coblist__addtail)|Adds an element (or all the elements in another list) to the tail of the list (makes a new tail).|  
-|[CObList::Find](../../mfc/reference/coblist-class.md#coblist__find)|Gets the position of an element specified by pointer value.|  
-|[CObList::FindIndex](../../mfc/reference/coblist-class.md#coblist__findindex)|Gets the position of an element specified by a zero-based index.|  
-|[CObList::GetAt](../../mfc/reference/coblist-class.md#coblist__getat)|Gets the element at a given position.|  
-|[CObList::GetCount](../../mfc/reference/coblist-class.md#coblist__getcount)|Returns the number of elements in this list.|  
-|[CObList::GetHead](../../mfc/reference/coblist-class.md#coblist__gethead)|Returns the head element of the list (cannot be empty).|  
-|[CObList::GetHeadPosition](../../mfc/reference/coblist-class.md#coblist__getheadposition)|Returns the position of the head element of the list.|  
-|[CObList::GetNext](../../mfc/reference/coblist-class.md#coblist__getnext)|Gets the next element for iterating.|  
-|[CObList::GetPrev](../../mfc/reference/coblist-class.md#coblist__getprev)|Gets the previous element for iterating.|  
-|[CObList::GetSize](../../mfc/reference/coblist-class.md#coblist__getsize)|Returns the number of elements in this list.|  
-|[CObList::GetTail](../../mfc/reference/coblist-class.md#coblist__gettail)|Returns the tail element of the list (cannot be empty).|  
-|[CObList::GetTailPosition](../../mfc/reference/coblist-class.md#coblist__gettailposition)|Returns the position of the tail element of the list.|  
-|[CObList::InsertAfter](../../mfc/reference/coblist-class.md#coblist__insertafter)|Inserts a new element after a given position.|  
-|[CObList::InsertBefore](../../mfc/reference/coblist-class.md#coblist__insertbefore)|Inserts a new element before a given position.|  
-|[CObList::IsEmpty](../../mfc/reference/coblist-class.md#coblist__isempty)|Tests for the empty list condition (no elements).|  
-|[CObList::RemoveAll](../../mfc/reference/coblist-class.md#coblist__removeall)|Removes all the elements from this list.|  
-|[CObList::RemoveAt](../../mfc/reference/coblist-class.md#coblist__removeat)|Removes an element from this list, specified by position.|  
-|[CObList::RemoveHead](../../mfc/reference/coblist-class.md#coblist__removehead)|Removes the element from the head of the list.|  
-|[CObList::RemoveTail](../../mfc/reference/coblist-class.md#coblist__removetail)|Removes the element from the tail of the list.|  
-|[CObList::SetAt](../../mfc/reference/coblist-class.md#coblist__setat)|Sets the element at a given position.|  
+|[CObList::AddHead](../../mfc/reference/coblist-class.md#addhead)|Adds an element (or all the elements in another list) to the head of the list (makes a new head).|  
+|[CObList::AddTail](../../mfc/reference/coblist-class.md#addtail)|Adds an element (or all the elements in another list) to the tail of the list (makes a new tail).|  
+|[CObList::Find](../../mfc/reference/coblist-class.md#find)|Gets the position of an element specified by pointer value.|  
+|[CObList::FindIndex](../../mfc/reference/coblist-class.md#findindex)|Gets the position of an element specified by a zero-based index.|  
+|[CObList::GetAt](../../mfc/reference/coblist-class.md#getat)|Gets the element at a given position.|  
+|[CObList::GetCount](../../mfc/reference/coblist-class.md#getcount)|Returns the number of elements in this list.|  
+|[CObList::GetHead](../../mfc/reference/coblist-class.md#gethead)|Returns the head element of the list (cannot be empty).|  
+|[CObList::GetHeadPosition](../../mfc/reference/coblist-class.md#getheadposition)|Returns the position of the head element of the list.|  
+|[CObList::GetNext](../../mfc/reference/coblist-class.md#getnext)|Gets the next element for iterating.|  
+|[CObList::GetPrev](../../mfc/reference/coblist-class.md#getprev)|Gets the previous element for iterating.|  
+|[CObList::GetSize](../../mfc/reference/coblist-class.md#getsize)|Returns the number of elements in this list.|  
+|[CObList::GetTail](../../mfc/reference/coblist-class.md#gettail)|Returns the tail element of the list (cannot be empty).|  
+|[CObList::GetTailPosition](../../mfc/reference/coblist-class.md#gettailposition)|Returns the position of the tail element of the list.|  
+|[CObList::InsertAfter](../../mfc/reference/coblist-class.md#insertafter)|Inserts a new element after a given position.|  
+|[CObList::InsertBefore](../../mfc/reference/coblist-class.md#insertbefore)|Inserts a new element before a given position.|  
+|[CObList::IsEmpty](../../mfc/reference/coblist-class.md#isempty)|Tests for the empty list condition (no elements).|  
+|[CObList::RemoveAll](../../mfc/reference/coblist-class.md#removeall)|Removes all the elements from this list.|  
+|[CObList::RemoveAt](../../mfc/reference/coblist-class.md#removeat)|Removes an element from this list, specified by position.|  
+|[CObList::RemoveHead](../../mfc/reference/coblist-class.md#removehead)|Removes the element from the head of the list.|  
+|[CObList::RemoveTail](../../mfc/reference/coblist-class.md#removetail)|Removes the element from the tail of the list.|  
+|[CObList::SetAt](../../mfc/reference/coblist-class.md#setat)|Sets the element at a given position.|  
   
 ## Remarks  
  All comparisons are done by value, meaning that the characters in the string are compared instead of the addresses of the strings.  
@@ -113,7 +113,7 @@ class CStringList : public CObject
  **Header:** afxcoll.h  
   
 ## See Also  
- [MFC Sample COLLECT](../../top/visual-cpp-samples.md)   
+ [MFC Sample COLLECT](../../visual-cpp-samples.md)   
  [CObject Class](../../mfc/reference/cobject-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 

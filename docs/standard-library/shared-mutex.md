@@ -123,7 +123,7 @@ void swap(shared_lock<Mutex>& x, shared_lock<Mutex>& y) noexcept;
  The `shared_lock` template class extends support for timed locking and transfer of ownership to a shared mutex. Ownership of the mutex may be obtained at or after construction, and may be transferred to another `shared_lock` object. Objects of type `shared_lock` can be moved, but not copied.  
   
 > [!WARNING]
->  The STL synchronization types in Visual Studio 2015 are based on Windows synchronization primitives and no longer use ConcRT (except when the target platform is Windows XP). The types defined in <shared_mutex> should not be used with any ConcRT types or functions.  
+>  The C++ Standard Library synchronization types in Visual Studio 2015 are based on Windows synchronization primitives and no longer use ConcRT (except when the target platform is Windows XP). The types defined in <shared_mutex> should not be used with any ConcRT types or functions.  
   
 ## Classes  
   

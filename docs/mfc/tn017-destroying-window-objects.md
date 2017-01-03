@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # TN017: Destroying Window Objects
-This note describes the use of the [CWnd::PostNcDestroy](../mfc/reference/cwnd-class.md#cwnd__postncdestroy) method. Use this method if you want to do customized allocation of `CWnd`-derived objects. This note also explains why you should use [CWnd::DestroyWindow](../mfc/reference/cwnd-class.md#cwnd__destroywindow) to destroy a C++ Windows object instead of the `delete` operator.  
+This note describes the use of the [CWnd::PostNcDestroy](../mfc/reference/cwnd-class.md#postncdestroy) method. Use this method if you want to do customized allocation of `CWnd`-derived objects. This note also explains why you should use [CWnd::DestroyWindow](../mfc/reference/cwnd-class.md#destroywindow) to destroy a C++ Windows object instead of the `delete` operator.  
   
  If you follow the guidelines in this topic, you will have few cleanup problems. These problems can result from issues such as forgetting to delete/free C++ memory, forgetting to free system resources like `HWND`s, or freeing objects too many times.  
   
@@ -56,14 +56,14 @@ This note describes the use of the [CWnd::PostNcDestroy](../mfc/reference/cwnd-c
  The second case, the use of the `delete` operator on Windows objects, should be rare. The following are some cases where using `delete` is the correct choice.  
   
 ## Auto Cleanup with CWnd::PostNcDestroy  
- When the system destroys a Windows window, the last Windows message sent to the window is `WM_NCDESTROY`. The default `CWnd` handler for that message is [CWnd::OnNcDestroy](../mfc/reference/cwnd-class.md#cwnd__onncdestroy). `OnNcDestroy` will detach the `HWND` from the C++ object and call the virtual function `PostNcDestroy`. Some classes override this function to delete the C++ object.  
+ When the system destroys a Windows window, the last Windows message sent to the window is `WM_NCDESTROY`. The default `CWnd` handler for that message is [CWnd::OnNcDestroy](../mfc/reference/cwnd-class.md#onncdestroy). `OnNcDestroy` will detach the `HWND` from the C++ object and call the virtual function `PostNcDestroy`. Some classes override this function to delete the C++ object.  
   
  The default implementation of `CWnd::PostNcDestroy` does nothing, which is appropriate for window objects that are allocated on the stack frame or embedded in other objects. This is not appropriate for window objects that are designed to be allocated on the heap without any other objects. In other words, it is not appropriate for window objects that are not embedded in other C++ objects.  
   
  Those classes that are designed to be allocated alone on the heap override the `PostNcDestroy` method to perform a `delete this`. This statement will free any memory associated with the C++ object. Even though the default `CWnd` destructor calls `DestroyWindow` if `m_hWnd` is non-NULL, this does not lead to infinite recursion because the handle will be detached and NULL during the cleanup phase.  
   
 > [!NOTE]
->  The system usually calls `CWnd::PostNcDestroy` after it processes the Windows `WM_NCDESTROY` message and the `HWND` and the C++ window object are no longer connected. The system will also call `CWnd::PostNcDestroy` in the implementation of most [CWnd::Create](../mfc/reference/cwnd-class.md#cwnd__create) calls if failure occurs. The auto cleanup rules are described later in this topic.  
+>  The system usually calls `CWnd::PostNcDestroy` after it processes the Windows `WM_NCDESTROY` message and the `HWND` and the C++ window object are no longer connected. The system will also call `CWnd::PostNcDestroy` in the implementation of most [CWnd::Create](../mfc/reference/cwnd-class.md#create) calls if failure occurs. The auto cleanup rules are described later in this topic.  
   
 ## Auto Cleanup Classes  
  The following classes are not designed for auto-cleanup. They are typically embedded in other C++ objects or on the stack:  

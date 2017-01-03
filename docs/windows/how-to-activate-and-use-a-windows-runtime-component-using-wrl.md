@@ -51,7 +51,7 @@ This document shows how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_
   
 #### To activate and use a Windows Runtime component  
   
-1.  Include (`#include`) any required [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)], [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)], or standard C++ library headers.  
+1.  Include (`#include`) any required [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)], [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)], or C++ Standard Library headers.  
   
      [!code-cpp[wrl-consume-component#2](../windows/codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_1.cpp)]  
   
