@@ -48,8 +48,8 @@ This class is used by the string conversion macros `CA2TEX` and `CT2AEX`, and th
 ## Syntax  
   
 ```
-template <int   t_nBufferLength = 128>
-    class CA2AEX
+template <int   t_nBufferLength = 128>  
+class CA2AEX
 ```  
   
 #### Parameters  
@@ -148,14 +148,14 @@ LPSTR m_psz;
  The static buffer, used to store the converted string.  
   
 ```
-char m_szBuffer[ t_nBufferLength
- ];
+char m_szBuffer[ t_nBufferLength];
 ```  
   
 ##  <a name="operator_lpstr"></a>  CA2AEX::operator LPSTR  
  Conversion operator.  
   
-```operator LPSTR() const throw();
+```
+operator LPSTR() const throw();
 ```  
   
 ### Return Value  

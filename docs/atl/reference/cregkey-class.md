@@ -413,7 +413,8 @@ LONG Open(HKEY hKeyParent,
 ##  <a name="operator_hkey"></a>  CRegKey::operator HKEY  
  Converts a `CRegKey` object to an HKEY.  
   
-```operator HKEY() const throw();
+```  
+operator HKEY() const throw();
 ```  
   
 ##  <a name="operator_eq"></a>  CRegKey::operator =  

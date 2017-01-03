@@ -540,7 +540,8 @@ bool operator>= (const CComCurrency& cur) const;
 ##  <a name="operator_currency"></a>  CComCurrency::operator CURRENCY  
  These operators are used to cast a `CComCurrency` object to a **CURRENCY** data type.  
   
-```operator CURRENCY&() throw();
+```  
+operator CURRENCY&() throw();
 operator const CURRENCY&() const throw();
 ```  
   

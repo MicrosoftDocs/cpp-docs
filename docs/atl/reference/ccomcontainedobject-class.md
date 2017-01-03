@@ -45,7 +45,8 @@ This class implements [IUnknown](http://msdn.microsoft.com/library/windows/deskt
 ## Syntax  
   
 ```
-template<class Base>  class CComContainedObject :  public Base
+template<class Base>  
+class CComContainedObject : public Base
 ```  
   
 #### Parameters  

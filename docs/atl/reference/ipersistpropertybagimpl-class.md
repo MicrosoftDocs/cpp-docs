@@ -47,7 +47,8 @@ This class implements **IUnknown** and allows an object to save its properties t
 ## Syntax  
   
 ```
-template <class T>  class ATL_NO_VTABLE IPersistPropertyBagImpl :  public IPersistPropertyBag
+template <class T>  
+class ATL_NO_VTABLE IPersistPropertyBagImpl : public IPersistPropertyBag
 ```  
   
 #### Parameters  

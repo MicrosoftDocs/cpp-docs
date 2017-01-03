@@ -47,7 +47,8 @@ This class implements a window contained within another object.
 ## Syntax  
   
 ```
-template <class TBase = CWindow,  class TWinTraits = CControlWinTraits>  class CContainedWindowT :  public TBase
+template <class TBase = CWindow,  class TWinTraits = CControlWinTraits>  
+class CContainedWindowT : public TBase
 ```  
   
 #### Parameters  

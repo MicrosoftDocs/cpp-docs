@@ -44,8 +44,9 @@ This class creates a temporary COM object and provides it with a skeletal implem
 ## Syntax  
   
 ```
-template <class  Base>  class CComObjectStack
- :  public Base
+template <class  Base>  
+class CComObjectStack
+ : public Base
 ```  
   
 #### Parameters  

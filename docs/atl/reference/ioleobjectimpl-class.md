@@ -49,7 +49,8 @@ This class implements **IUnknown** and is the principal interface through which 
 ## Syntax  
   
 ```
-template<class T>  class ATL_NO_VTABLE IOleObjectImpl :  public IOleObject
+template<class T>  
+class ATL_NO_VTABLE IOleObjectImpl : public IOleObject
 ```  
   
 #### Parameters  

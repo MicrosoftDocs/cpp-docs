@@ -48,7 +48,8 @@ This class provides methods for implementing a snap-in node object.
 ## Syntax  
   
 ```
-template <class T,  BOOL bIsExtension = FALSE>  class ATL_NO_VTABLE CSnapInItemImpl :  public CSnapInItem
+template <class T,  BOOL bIsExtension = FALSE>  
+class ATL_NO_VTABLE CSnapInItemImpl : public CSnapInItem
 ```  
   
 #### Parameters  

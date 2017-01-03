@@ -44,8 +44,8 @@ This class provides methods for creating instances of a class, and obtaining its
   
 ```
 template <class   T,
-    const CLSID* pclsid = &CLSID_NULL>
-    class CComCoClass
+    const CLSID* pclsid = &CLSID_NULL>  
+class CComCoClass
 ```  
   
 #### Parameters  

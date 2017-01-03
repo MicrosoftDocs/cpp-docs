@@ -48,7 +48,7 @@ This class implements a tear-off interface.
 ```
 template<class Base>
 class CComTearOffObject
- :  public Base
+ : public Base
 ```  
   
 #### Parameters  

@@ -41,7 +41,7 @@ This class is a wrapper for the **SAFEARRAY** structure.
 ## Syntax  
   
 ```
-template <typename  T,
+template <typename T,
     VARTYPE _vartype = _ATL_AutomationType<T>::type>
 class CComSafeArray
 ```  
@@ -556,7 +556,8 @@ ATL::CComSafeArray<T>& operator=(const ATL::CComSafeArray& saSrc);
 ##  <a name="operator_lpsafearray"></a>  CComSafeArray::operator LPSAFEARRAY  
  Casts a value to a **SAFEARRAY** pointer.  
   
-```operator LPSAFEARRAY() const;
+```  
+operator LPSAFEARRAY() const;
 ```  
   
 ### Return Value  

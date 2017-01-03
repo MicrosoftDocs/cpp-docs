@@ -44,8 +44,8 @@ This class provides default methods and functions for a collection class compose
 ## Syntax  
   
 ```
-template <typename   T> class CPrimitiveElementTraits :
-    public CDefaultElementTraits<T>
+template <typename T>  
+class CPrimitiveElementTraits : public CDefaultElementTraits<T>
 ```  
   
 #### Parameters  

@@ -44,7 +44,8 @@ This class implements the [IClassFactory2](http://msdn.microsoft.com/library/win
 ## Syntax  
   
 ```
-template <class license>  class CComClassFactory2 : public IClassFactory2,
+template <class license>  
+class CComClassFactory2 : public IClassFactory2,
     public CComObjectRootEx<CComGlobalsThreadModel>,
     public license
 ```  

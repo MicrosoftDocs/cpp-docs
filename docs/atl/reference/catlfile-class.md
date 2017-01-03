@@ -45,8 +45,7 @@ This class provides a thin wrapper around the Windows file-handling API.
 ## Syntax  
   
 ```
-class CAtlFile :
-    public CHandle
+class CAtlFile : public CHandle
 ```  
   
 ## Members  
@@ -266,14 +265,17 @@ CAtlTransactionManager* m_pTM;
 HRESULT Read(
     LPVOID pBuffer,
     DWORD nBufSize) throw();
+
 HRESULT Read(
     LPVOID pBuffer,
     DWORD nBufSize,
     DWORD& nBytesRead) throw();
+
 HRESULT Read(
     LPVOID pBuffer,
     DWORD nBufSize,
     LPOVERLAPPED pOverlapped) throw();
+
 HRESULT Read(
     LPVOID pBuffer,
     DWORD nBufSize,
@@ -373,10 +375,12 @@ HRESULT Write(
     DWORD nBufSize,
     LPOVERLAPPED pOverlapped,
     LPOVERLAPPED_COMPLETION_ROUTINE pfnCompletionRoutine) throw();
+
 HRESULT Write(
     LPCVOID pBuffer,
     DWORD nBufSize,
     DWORD* pnBytesWritten = NULL) throw();
+
 HRESULT Write(
     LPCVOID pBuffer,
     DWORD nBufSize,

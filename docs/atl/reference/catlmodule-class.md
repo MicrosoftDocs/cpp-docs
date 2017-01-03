@@ -42,7 +42,7 @@ This class provides methods used by several ATL module classes.
 ## Syntax  
   
 ```
-class ATL_NO_VTABLE CAtlModule :  public _ATL_MODULE
+class ATL_NO_VTABLE CAtlModule : public _ATL_MODULE
 ```  
   
 ## Members  
@@ -230,6 +230,7 @@ virtual LONG Unlock() throw();
 HRESULT WINAPI UpdateRegistryFromResourceD(UINT nResID,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
+
 HRESULT WINAPI UpdateRegistryFromResourceD(LPCTSTR lpszRes,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
@@ -290,6 +291,7 @@ inline HRESULT WINAPI UpdateRegistryFromResourceDHelper(LPCOLESTR lpszRes,
 HRESULT WINAPI UpdateRegistryFromResourceS(UINT nResID,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
+
 HRESULT WINAPI UpdateRegistryFromResourceS(LPCTSTR lpszRes,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();

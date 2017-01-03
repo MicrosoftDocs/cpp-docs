@@ -44,12 +44,10 @@ This class provides methods useful when constructing an array of COM interface p
 ```
 template <class   I,
     const IID* piid
- =& __uuidof(I)>
-    class CInterfaceArray : public CAtlArray<
-    ATL::CComQIPtr<I,
- piid>,
-    CComQIPtrElementTraits<I,
- piid>>
+ =& __uuidof(I)>  
+class CInterfaceArray : public CAtlArray<
+    ATL::CComQIPtr<I, piid>,
+    CComQIPtrElementTraits<I, piid>>
 ```  
   
 #### Parameters  

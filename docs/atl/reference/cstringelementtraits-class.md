@@ -44,8 +44,8 @@ This class provides static functions used by collection classes storing `CString
 ## Syntax  
   
 ```
-template <typename   T>
-    class CStringElementTraits
+template <typename T>  
+class CStringElementTraits
 ```  
   
 #### Parameters  

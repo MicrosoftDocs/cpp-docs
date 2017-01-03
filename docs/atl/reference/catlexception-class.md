@@ -88,7 +88,8 @@ CAtlException() throw();
 ##  <a name="operator_hresult"></a>  CAtlException::operator HRESULT  
  Casts the current object to an HRESULT value.  
   
-```operator HRESULT() const throw ();
+```  
+operator HRESULT() const throw ();
 ```  
   
 ##  <a name="m_hr"></a>  CAtlException::m_hr  

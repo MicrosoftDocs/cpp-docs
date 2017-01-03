@@ -101,7 +101,8 @@ typedef CComAutoCriticalSection AutoCriticalSection;
  The following code is modeled after [CComObjectRootEx](ccomobjectrootex-class.md), and demonstrates `AutoCriticalSection` being used in a threading environment.  
   
 
- ```cpp
+ ```  
+cpp
 template< class ThreadModel >
 class CMyAutoCritClass
 {

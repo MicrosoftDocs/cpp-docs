@@ -47,7 +47,8 @@ Receives requests from a thread pool and passes them on to a worker object that 
 ## Syntax  
   
 ```
-template <class Worker>  class CNonStatelessWorker
+template <class Worker>  
+class CNonStatelessWorker
 ```  
   
 #### Parameters  

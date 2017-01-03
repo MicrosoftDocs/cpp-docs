@@ -41,8 +41,8 @@ This class defines a COM enumerator object based on an array.
   
 ```
 template <class Base,
-    const IID* piid, class T, class Copy, class ThreadModel = CcomObjectThreadModel>  class ATL_NO_VTABLE CComEnum :  public CComEnumImpl<Base,
-    piid,
+    const IID* piid, class T, class Copy, class ThreadModel = CcomObjectThreadModel>  
+class ATL_NO_VTABLE CComEnum : public CComEnumImpl<Base, piid,
  T,
     Copy>,
  public CComObjectRootEx<ThreadModel>

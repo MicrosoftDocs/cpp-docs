@@ -49,8 +49,7 @@ This class provides methods for creating a modal or modeless dialog box.
  
 template <class T,  
     class TBase = CWindow>  
-    class ATL_NO_VTABLE CDialogImpl :  
-    public CDialogImplBaseT<TBase>  
+    class ATL_NO_VTABLE CDialogImpl : public CDialogImplBaseT<TBase>  
  
 ```  
   

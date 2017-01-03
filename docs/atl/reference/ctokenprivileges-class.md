@@ -296,7 +296,8 @@ CTokenPrivileges& operator= (const TOKEN_PRIVILEGES& rPrivileges) throw(...);
 ##  <a name="operator_const_token_privileges__star"></a>  CTokenPrivileges::operator const TOKEN_PRIVILEGES *  
  Casts a value to a pointer to the **TOKEN_PRIVILEGES** structure.  
   
-```operator const TOKEN_PRIVILEGES *() const throw(...);
+```  
+operator const TOKEN_PRIVILEGES *() const throw(...);
 ```  
   
 ### Remarks  

@@ -47,7 +47,7 @@ This class implements [IUnknown](http://msdn.microsoft.com/library/windows/deskt
 ```
 template
  <class contained>
-class CComCachedTearOffObject :             public
+class CComCachedTearOffObject : public
     IUnknown,
 public CComObjectRootEx<contained
  ::_ThreadModel::ThreadModelNoCS>

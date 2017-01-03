@@ -43,8 +43,8 @@ This class provides methods for creating and managing a map object.
   
 ```
 template <typename   K,
-    typename V, class KTraits = CElementTraits<K>, class VTraits = CElementTraits<V>>
-    class CAtlMap
+    typename V, class KTraits = CElementTraits<K>, class VTraits = CElementTraits<V>>  
+class CAtlMap
 ```  
   
 #### Parameters  

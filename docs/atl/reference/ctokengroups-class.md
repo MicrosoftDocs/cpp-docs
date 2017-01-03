@@ -246,7 +246,8 @@ CTokenGroups& operator= (const TOKEN_GROUPS& rhs) throw(...);
 ##  <a name="operator_const_token_groups__star"></a>  CTokenGroups::operator const TOKEN_GROUPS *  
  Casts a value to a pointer to the **TOKEN_GROUPS** structure.  
   
-```operator const TOKEN_GROUPS *() const throw(...);
+```  
+operator const TOKEN_GROUPS *() const throw(...);
 ```  
   
 ### Remarks  

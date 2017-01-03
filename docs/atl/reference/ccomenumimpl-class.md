@@ -43,7 +43,8 @@ This class provides the implementation for a COM enumerator interface where the 
   
 ```
 template <class Base,
-    const IID* piid, class T, class Copy>  class ATL_NO_VTABLE CComEnumImpl :   public Base
+    const IID* piid, class T, class Copy>  
+class ATL_NO_VTABLE CComEnumImpl : public Base
 ```  
   
 #### Parameters  

@@ -47,7 +47,8 @@ This class derives from [CComClassFactory](../../atl/reference/ccomclassfactory-
 ## Syntax  
   
 ```
-template<class T>  class CComClassFactorySingleton :  public CComClassFactory
+template<class T>  
+class CComClassFactorySingleton : public CComClassFactory
 ```  
   
 #### Parameters  

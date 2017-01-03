@@ -49,7 +49,8 @@ This class provides methods for creating and managing ATL controls.
 ## Syntax  
   
 ```
-template <class T, class WinBase = CWindowImpl<T>>  class ATL_NO_VTABLE CComControl :  public CComControlBase,
+template <class T, class WinBase = CWindowImpl<T>>  
+class ATL_NO_VTABLE CComControl : public CComControlBase,
     public WinBase;
 ```  
   

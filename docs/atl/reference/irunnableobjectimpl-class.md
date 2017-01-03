@@ -47,7 +47,8 @@ This class implements **IUnknown** and provides a default implementation of the 
 ## Syntax  
   
 ```
-template<class T>  class IRunnableObjectImpl
+template<class T>  
+class IRunnableObjectImpl
 ```  
   
 #### Parameters  

@@ -46,7 +46,8 @@ This class implements a dialog box (modal or modeless) that hosts ActiveX contro
 ## Syntax  
   
 ```
-template <class T,  class TBase = CWindow>  class ATL_NO_VTABLE CAxDialogImpl :  public CDialogImplBaseT<TBase>
+template <class T,  class TBase = CWindow>  
+class ATL_NO_VTABLE CAxDialogImpl : public CDialogImplBaseT<TBase>
 ```  
   
 #### Parameters  

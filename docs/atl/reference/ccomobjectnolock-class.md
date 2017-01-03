@@ -44,7 +44,8 @@ This class implements **IUnknown** for a nonaggregated object, but does not incr
 ## Syntax  
   
 ```
-template<class Base>  class CComObjectNoLock :  public Base
+template<class Base>  
+class CComObjectNoLock : public Base
 ```  
   
 #### Parameters  

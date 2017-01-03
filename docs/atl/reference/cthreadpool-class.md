@@ -42,9 +42,8 @@ This class provides a pool of worker threads that process a queue of work items.
 ## Syntax  
   
 ```
-template <class Worker, class ThreadTraits = DefaultThreadTraits>
-    class CThreadPool :
-    public IThreadPoolConfig
+template <class Worker, class ThreadTraits = DefaultThreadTraits>  
+class CThreadPool : public IThreadPoolConfig
 ```  
   
 #### Parameters  

@@ -45,7 +45,8 @@ This class represents the module for a DLL.
 ## Syntax  
   
 ```
-template <class T>  class ATL_NO_VTABLE CAtlDllModuleT :  public CAtlModuleT<T>
+template <class T>  
+class ATL_NO_VTABLE CAtlDllModuleT : public CAtlModuleT<T>
 ```  
   
 #### Parameters  

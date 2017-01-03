@@ -46,7 +46,8 @@ This class implements **IUnknown** for an aggregated or nonaggregated object.
 ## Syntax  
   
 ```
-template<class contained>  class CComPolyObject : public IUnknown, public CComObjectRootEx
+template<class contained>  
+class CComPolyObject : public IUnknown, public CComObjectRootEx
  <contained
  ::_ThreadModel::ThreadModelNoCS>
 ```  

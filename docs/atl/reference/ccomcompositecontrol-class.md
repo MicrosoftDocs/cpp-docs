@@ -48,7 +48,8 @@ This class provides the methods required to implement a composite control.
 ## Syntax  
   
 ```
-template <class T>  class CComCompositeControl :  public CComControl<T,CAxDialogImpl<T>>
+template <class T>  
+class CComCompositeControl : public CComControl<T,CAxDialogImpl<T>>
 ```  
   
 #### Parameters  

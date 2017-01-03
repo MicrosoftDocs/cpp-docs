@@ -373,6 +373,7 @@ HRESULT RegisterServer(BOOL bRegTypeLib = FALSE,  const CLSID* pCLSID = NULL) th
   
 ```
 HRESULT RegisterTypeLib() throw();
+
 HRESULT RegisterTypeLib(LPCTSTR   lpszIndex) throw();
 ```  
   

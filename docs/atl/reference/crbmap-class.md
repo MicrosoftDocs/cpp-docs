@@ -43,8 +43,8 @@ This class represents a mapping structure, using a Red-Black binary tree.
   
 ```
 template <typename   K,
-    typename V, class KTraits = CElementTraits<K>, class VTraits = CElementTraits<V>> class CRBMap : public CRBTree<K,
-    V,
+    typename V, class KTraits = CElementTraits<K>, class VTraits = CElementTraits<V>>  
+class CRBMap : public CRBTree<K, V,
  KTraits,
     VTraits>
 ```    

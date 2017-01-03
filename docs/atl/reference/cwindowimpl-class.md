@@ -46,10 +46,8 @@ Provides methods for creating or subclassing a window.
 ## Syntax  
   
 ```
-template <class   T, class TBase = CWindow, class TWinTraits = CControlWinTraits>
-    class ATL_NO_VTABLE CWindowImpl :
-    public CWindowImplBaseT<TBase,
-    TWinTraits>
+template <class   T, class TBase = CWindow, class TWinTraits = CControlWinTraits>  
+class ATL_NO_VTABLE CWindowImpl : public CWindowImplBaseT<TBase, TWinTraits>
 ```    
   
 #### Parameters  

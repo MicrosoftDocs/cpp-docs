@@ -47,7 +47,8 @@ This class represents a smart pointer object using vector new and delete operato
 ## Syntax  
   
 ```
-template<typename T> class CAutoVectorPtr
+template<typename T>  
+class CAutoVectorPtr
 ```  
   
 #### Parameters  
@@ -206,7 +207,8 @@ CAutoVectorPtr<T>& operator= (CAutoVectorPtr<T>& p) throw();
 ##  <a name="operator_t__star"></a>  CAutoVectorPtr::operator T *  
  The cast operator.  
   
-```operator T*() const throw();
+```  
+operator T*() const throw();
 ```  
   
 ### Remarks  

@@ -52,7 +52,7 @@ template<class T,
     const GUID* plibid = &CAtlModule::m_libid,
     WORD wMajor = 1,
     WORD wMinor = 0, class tihclass = CComTypeInfoHolder>
-class ATL_NO_VTABLE IDispatchImpl :  public T```  
+class ATL_NO_VTABLE IDispatchImpl : public T```  
   
 #### Parameters  
  [in] `T`  

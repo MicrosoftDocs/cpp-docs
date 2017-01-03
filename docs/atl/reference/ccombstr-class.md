@@ -120,10 +120,15 @@ class CComBSTR
   
 ```
 HRESULT Append(const CComBSTR& bstrSrc) throw();
+
 HRESULT Append(wchar_t ch) throw();
+
 HRESULT Append(char ch) throw();
+
 HRESULT Append(LPCOLESTR lpsz) throw();
+
 HRESULT Append(LPCSTR lpsz) throw();
+
 HRESULT Append(LPCOLESTR lpsz,  int nLen) throw();
 ```  
   
@@ -355,6 +360,7 @@ BSTR Copy() const throw();
   
 ```
 HRESULT CopyTo(BSTR* pbstr) throw();
+
 HRESULT CopyTo(VARIANT* pvarDest) throw();
 ```  
   
@@ -443,7 +449,8 @@ BSTR m_str;
 ##  <a name="operator_bstr"></a>  CComBSTR::operator BSTR  
  Casts a `CComBSTR` object to a `BSTR`.  
   
-```operator BSTR() const throw();
+```  
+operator BSTR() const throw();
 ```  
   
 ### Remarks  

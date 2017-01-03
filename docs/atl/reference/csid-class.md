@@ -469,7 +469,8 @@ bool operator<(
 ##  <a name="operator_const_sid__star"></a>  CSid::operator const SID *  
  Casts a `CSid` object to a pointer to a `SID` (security identifier) structure.  
   
-```operator const SID *() const throw(...);
+```  
+operator const SID *() const throw(...);
 ```  
   
 ### Remarks  

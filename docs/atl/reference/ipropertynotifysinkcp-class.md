@@ -45,7 +45,8 @@ This class exposes [IPropertyNotifySink](http://msdn.microsoft.com/library/windo
 ## Syntax  
   
 ```
-template<class T, class CDV = CComDynamicUnkArray>  class IPropertyNotifySinkCP :   public IConnectionPointImpl<T,&IID_IPropertyNotifySink,
+template<class T, class CDV = CComDynamicUnkArray>  
+class IPropertyNotifySinkCP : public IConnectionPointImpl<T,&IID_IPropertyNotifySink,
     CDV>
 ```    
   

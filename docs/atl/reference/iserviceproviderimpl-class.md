@@ -45,7 +45,8 @@ This class provides a default implementation of the `IServiceProvider` interface
 ## Syntax  
   
 ```
-template <class T>   class ATL_NO_VTABLE IServiceProviderImpl :  public IServiceProvider
+template <class T>  
+class ATL_NO_VTABLE IServiceProviderImpl : public IServiceProvider
 ```  
   
 #### Parameters  

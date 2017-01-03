@@ -44,7 +44,8 @@ This class represents the module for an application.
 ## Syntax  
   
 ```
-template <class T>  class ATL_NO_VTABLE CAtlExeModuleT :  public CAtlModuleT<T>
+template <class T>  
+class ATL_NO_VTABLE CAtlExeModuleT : public CAtlModuleT<T>
 ```  
   
 #### Parameters  

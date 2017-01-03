@@ -42,7 +42,8 @@ A smart pointer class for managing COM interface pointers.
 ## Syntax  
   
 ```
-template<class T,  const IID* piid= &__uuidof(T)>  class CComQIPtr: public CComPtr<T>
+template<class T,  const IID* piid= &__uuidof(T)>  
+class CComQIPtr: public CComPtr<T>
 ```  
   
 #### Parameters  
@@ -88,8 +89,7 @@ CComQIPtr(T* lp) throw();
 CComQIPtr(
  IUnknown* lp) throw();
 CComQIPtr(
- const CComQIPtr<T,
-    piid>& lp) throw();
+ const CComQIPtr<T, piid>& lp) throw();
 ```  
   
 ### Parameters  

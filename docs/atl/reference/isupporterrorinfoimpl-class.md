@@ -49,7 +49,8 @@ This class provides a default implementation of the [ISupportErrorInfo Interface
 ## Syntax  
   
 ```
-template<const IID* piid>  class ATL_NO_VTABLE ISupportErrorInfoImpl :  public ISupportErrorInfo
+template<const IID* piid>  
+class ATL_NO_VTABLE ISupportErrorInfoImpl : public ISupportErrorInfo
 ```  
   
 #### Parameters  

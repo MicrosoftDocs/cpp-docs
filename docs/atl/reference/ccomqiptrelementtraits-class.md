@@ -43,9 +43,9 @@ This class provides methods, static functions, and typedefs useful when creating
   
 ```
 template<typename I,
-    const IID* piid =& __uuidof(I)>   class CComQIPtrElementTraits : public CDefaultElementTraits<
-    ATL::CComQIPtr<I,
- piid>>
+    const IID* piid =& __uuidof(I)>  
+class CComQIPtrElementTraits : public CDefaultElementTraits<
+    ATL::CComQIPtr<I, piid>>
 ```  
   
 #### Parameters  

@@ -247,7 +247,8 @@ HRESULT LockRange(ULONGLONG nPos,  ULONGLONG nCount) throw();
 ##  <a name="operator_handle"></a>  CAtlTemporaryFile::operator HANDLE  
  Returns a handle to the temporary file.  
   
-```operator HANDLE() throw();
+```  
+operator HANDLE() throw();
 ```  
   
 ##  <a name="read"></a>  CAtlTemporaryFile::Read  

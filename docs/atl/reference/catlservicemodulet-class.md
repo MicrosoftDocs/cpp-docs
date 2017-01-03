@@ -45,7 +45,8 @@ This class implements a service.
 ## Syntax  
   
 ```
-template <class T,  UINT nServiceNameID>  class ATL_NO_VTABLE CAtlServiceModuleT :  public CAtlExeModuleT<T>
+template <class T,  UINT nServiceNameID>  
+class ATL_NO_VTABLE CAtlServiceModuleT : public CAtlExeModuleT<T>
 ```  
   
 #### Parameters  

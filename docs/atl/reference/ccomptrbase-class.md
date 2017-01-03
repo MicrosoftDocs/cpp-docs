@@ -44,7 +44,8 @@ This class provides a basis for smart pointer classes using COM-based memory rou
 ## Syntax  
   
 ```
-template <class T> class CComPtrBase
+template <class T>  
+class CComPtrBase
 ```  
   
 #### Parameters  
@@ -154,6 +155,7 @@ void Attach(T* p2) throw();
 HRESULT CoCreateInstance(LPCOLESTR szProgID,
     LPUNKNOWN pUnkOuter = NULL,
     DWORD dwClsContext = CLSCTX_ALL) throw();
+
 HRESULT CoCreateInstance(REFCLSID rclsid,
     LPUNKNOWN pUnkOuter = NULL,
     DWORD dwClsContext = CLSCTX_ALL) throw();
@@ -303,7 +305,8 @@ bool operator<(T* pT) const throw();
 ##  <a name="operator_t_star"></a>  CComPtrBase::operator T*  
  The cast operator.  
   
-```operator T*() const throw();
+```  
+operator T*() const throw();
 ```  
   
 ### Remarks  

@@ -461,7 +461,8 @@ CSecurityDesc& operator= (const SECURITY_DESCRIPTOR& rhs) throw(...);
 ##  <a name="operator_const_security_descriptor__star"></a>  CSecurityDesc::operator const SECURITY_DESCRIPTOR *  
  Casts a value to a pointer to the **SECURITY_DESCRIPTOR** structure.  
   
-```operator const SECURITY_DESCRIPTOR *() const throw();
+```  
+operator const SECURITY_DESCRIPTOR *() const throw();
 ```  
   
 ##  <a name="setcontrol"></a>  CSecurityDesc::SetControl  

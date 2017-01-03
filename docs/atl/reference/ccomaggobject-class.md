@@ -46,7 +46,8 @@ This class implements the [IUnknown](http://msdn.microsoft.com/library/windows/d
 ## Syntax  
   
 ```
-template<class contained>  class CComAggObject :  public IUnknown, public CComObjectRootEx
+template<class contained>  
+class CComAggObject : public IUnknown, public CComObjectRootEx
  <contained
  ::_ThreadModel::ThreadModelNoCS>
 ```  

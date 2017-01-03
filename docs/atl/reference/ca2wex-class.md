@@ -49,8 +49,8 @@ This class is used by the string conversion macros `CA2TEX`, `CA2CTEX`, `CT2WEX`
 ## Syntax  
   
 ```
-template <int   t_nBufferLength = 128>
-    class CA2WEX
+template <int   t_nBufferLength = 128>  
+class CA2WEX
 ```  
   
 #### Parameters  
@@ -153,14 +153,14 @@ LPWSTR m_psz;
  The static buffer, used to store the converted string.  
   
 ```
-wchar_t m_szBuffer[ t_nBufferLength
- ];
+wchar_t m_szBuffer[ t_nBufferLength];
 ```  
   
 ##  <a name="operator_lpwstr"></a>  CA2WEX::operator LPWSTR  
  Conversion operator.  
   
-```operator LPWSTR() const throw();
+```  
+operator LPWSTR() const throw();
 ```  
   
 ### Return Value  

@@ -44,7 +44,8 @@ This class provides two static functions for converting characters between upper
 ## Syntax  
   
 ```
-template <typename T>  class CDefaultCharTraits
+template <typename T>  
+class CDefaultCharTraits
 ```  
   
 #### Parameters  

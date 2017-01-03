@@ -46,7 +46,8 @@ This class provides a default implementation of the `IObjectSafety` interface to
 ## Syntax  
   
 ```
-template <class T,DWORD dwSupportedSafety>  class IObjectSafetyImpl
+template <class T,DWORD dwSupportedSafety>  
+class IObjectSafetyImpl
 ```  
   
 #### Parameters  

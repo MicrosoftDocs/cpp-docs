@@ -42,8 +42,8 @@ This class provides support for a simple mapping array.
 ## Syntax  
   
 ```
-template <class TKey, class TVal, class TEqual = CSimpleMapEqualHelper<TKey,
-    TVal>> class CSimpleMap
+template <class TKey, class TVal, class TEqual = CSimpleMapEqualHelper<TKey, TVal>>  
+class CSimpleMap
 ```  
   
 #### Parameters  

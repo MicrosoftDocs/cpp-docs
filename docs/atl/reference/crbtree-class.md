@@ -43,7 +43,8 @@ This class provides methods for creating and utilizing a Red-Black tree.
   
 ```
 template <typename   K,
-    typename V, class KTraits = CElementTraits<K>, class VTraits = CElementTraits<V>> class CRBTree
+    typename V, class KTraits = CElementTraits<K>, class VTraits = CElementTraits<V>>  
+class CRBTree
 ```  
   
 #### Parameters  

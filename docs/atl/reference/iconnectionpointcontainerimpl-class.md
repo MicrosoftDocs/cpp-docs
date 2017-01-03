@@ -46,7 +46,8 @@ This class implements a connection point container to manage a collection of [IC
 ## Syntax  
   
 ```
-template<class T>  class ATL_NO_VTABLE IConnectionPointContainerImpl :   public IConnectionPointContainer
+template<class T>  
+class ATL_NO_VTABLE IConnectionPointContainerImpl : public IConnectionPointContainer
 ```  
   
 #### Parameters  

@@ -43,7 +43,8 @@ This class wraps the `VARIANT` type, providing a member indicating the type of d
   
 ## Syntax  
   
-```cpp
+```  
+cpp
 class CComVariant : public tagVARIANT  
 ```  
   

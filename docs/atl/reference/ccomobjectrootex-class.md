@@ -44,7 +44,8 @@ This class provides methods to handle object reference count management for both
 ## Syntax  
   
 ```
-template<class ThreadModel>  class CComObjectRootEx : public CComObjectRootBase
+template<class ThreadModel>  
+class CComObjectRootEx : public CComObjectRootBase
 ```  
   
 #### Parameters  

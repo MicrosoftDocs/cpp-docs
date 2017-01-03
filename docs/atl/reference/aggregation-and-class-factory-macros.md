@@ -233,8 +233,7 @@ DECLARE_CLASSFACTORY_SINGLETON( obj )
   
 ```
 template<class T>
-class CComClassFactorySingleton :
-public CComClassFactory
+class CComClassFactorySingleton : public CComClassFactory
 ```  
   
 ### Parameters  

@@ -47,7 +47,8 @@ This class provides methods useful when constructing a list of smart pointers.
 ## Syntax  
   
 ```
-template<typename E>  class CAutoPtrList : public CAtlList<
+template<typename E>  
+class CAutoPtrList : public CAtlList<
     ATL::CAutoPtr<E>,
  CAutoPtrElementTraits<E>>
 ```  

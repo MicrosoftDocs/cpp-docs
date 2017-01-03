@@ -133,8 +133,7 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
  ``` *// Inject table class and table accessor class declarations  
  [  
     db_source("<initialization_string>"), 
-    db_table("dbo.Orders") 
- ]  
+    db_table("dbo.Orders")]  
  ... *// Column map  
  [ db_column(1, status=m_dwOrderIDStatus,      length=m_dwOrderIDLength) ] LONG m_OrderID;  
  [ db_column(2, status=m_dwCustomerIDStatus,      length=m_dwCustomerIDLength) ] TCHAR m_CustomerID[6];  
@@ -159,8 +158,7 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
  ```  
  [  
     db_source("<initialization_string>"), 
-    db_command("SQL_command") 
- ]  
+    db_command("SQL_command")]  
  ... *// Column map using db_column is the same as for consumer type of 'table'  
  ```  
   

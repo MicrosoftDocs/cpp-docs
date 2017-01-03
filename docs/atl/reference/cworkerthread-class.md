@@ -47,8 +47,8 @@ This class creates a worker thread or uses an existing one, waits on one or more
 ## Syntax  
   
 ```
-template <class   ThreadTraits = DefaultThreadTraits>
-    class CWorkerThread
+template <class   ThreadTraits = DefaultThreadTraits>  
+class CWorkerThread
 ```  
   
 #### Parameters  
@@ -205,6 +205,7 @@ DWORD GetThreadId() throw();
   
 ```
 HRESULT Initialize() throw();
+
 HRESULT Initialize(CWorkerThread<ThreadTraits>* pThread) throw();
 ```  
   

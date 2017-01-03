@@ -42,8 +42,8 @@ This class provides static functions related to strings stored in collection cla
 ## Syntax  
   
 ```
-template <typename   T>
-    class CStringRefElementTraits : public CElementTraitsBase<T>
+template <typename T>  
+class CStringRefElementTraits : public CElementTraitsBase<T>
 ```  
   
 #### Parameters  

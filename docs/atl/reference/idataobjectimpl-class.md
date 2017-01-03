@@ -46,7 +46,8 @@ This class provides methods for supporting Uniform Data Transfer and managing co
 ## Syntax  
   
 ```
-template<class T>  class IDataObjectImpl
+template<class T>  
+class IDataObjectImpl
 ```  
   
 #### Parameters  

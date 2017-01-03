@@ -44,7 +44,8 @@ This class implements a connection point.
   
 ```
 template<class T,
-    const IID* piid, class CDV = CComDynamicUnkArray>  class ATL_NO_VTABLE IConnectionPointImpl :  public _ICPLocator<piid>
+    const IID* piid, class CDV = CComDynamicUnkArray>  
+class ATL_NO_VTABLE IConnectionPointImpl : public _ICPLocator<piid>
 ```  
   
 #### Parameters  

@@ -42,7 +42,8 @@ This class implements an array object.
 ## Syntax  
   
 ```
-template<typename E,  class ETraits = CElementTraits<E>>  class CAtlArray
+template<typename E,  class ETraits = CElementTraits<E>>  
+class CAtlArray
 ```  
   
 #### Parameters  
@@ -285,8 +286,7 @@ typedef ETraits::INARGTYPE INARGTYPE;
   
 ```
 void InsertArrayAt(size_t iStart,
-    const CAtlArray<E,
-    ETraits>* paNew);
+    const CAtlArray<E, ETraits>* paNew);
 ```  
   
 ### Parameters  

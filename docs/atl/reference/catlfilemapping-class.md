@@ -47,9 +47,8 @@ This class represents a memory-mapped file, adding a cast operator to the method
 ## Syntax  
   
 ```
-template <typename   T = char>
-    class CAtlFileMapping :
-    public CAtlFileMappingBase
+template <typename T = char>  
+class CAtlFileMapping : public CAtlFileMappingBase
 ```  
   
 #### Parameters  
@@ -78,7 +77,8 @@ template <typename   T = char>
 ##  <a name="operator_t_star"></a>  CAtlFileMapping::operator T*  
  Allows implicit conversion of `CAtlFileMapping` objects to `T`**\***.  
   
-```operator T*() const throw();
+```  
+operator T*() const throw();
 ```  
   
 ### Return Value  

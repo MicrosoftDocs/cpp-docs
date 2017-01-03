@@ -44,9 +44,8 @@ This class implements an ATL module.
 ## Syntax  
   
 ```
-template <class T>
-    class ATL_NO_VTABLE CAtlModuleT :
-    public CAtlModule
+template <class T>  
+class ATL_NO_VTABLE CAtlModuleT : public CAtlModule
 ```  
   
 #### Parameters  

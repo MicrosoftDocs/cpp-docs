@@ -42,7 +42,8 @@ This class provides methods used by a collection class.
 ## Syntax  
   
 ```
-template <class T, class CollType, class ItemType, class CopyItem, class EnumType>  class ICollectionOnSTLImpl :  public T```  
+template <class T, class CollType, class ItemType, class CopyItem, class EnumType>  
+class ICollectionOnSTLImpl : public T```  
   
 #### Parameters  
  `T`  

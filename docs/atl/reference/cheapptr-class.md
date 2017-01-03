@@ -46,13 +46,12 @@ A smart pointer class for managing heap pointers.
   
 ```
 template<
-typename
-T,
+typename T,
 class
 Allocator
 = CCRTAllocator
-> class CHeapPtr :
-public CHeapPtrBase<
+>  
+class CHeapPtr : public CHeapPtrBase<
 T,
 Allocator>
 ```  
@@ -144,10 +143,8 @@ CHeapPtr(
  Assignment operator.  
   
 ```
-CHeapPtr<T,
-    Allocator>& operator=(
-    CHeapPtr<T,
- Allocator>& p) throw();
+CHeapPtr<T, Allocator>& operator=(
+    CHeapPtr<T, Allocator>& p) throw();
 ```  
   
 ### Parameters  

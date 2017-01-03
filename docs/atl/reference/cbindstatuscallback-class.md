@@ -47,7 +47,8 @@ This class implements the `IBindStatusCallback` interface.
   
 ```
 template <class T,
-    int nBindFlags = BINDF_ASYNCHRONOUS |   BINDF_ASYNCSTORAGE | BINDF_GETNEWESTVERSION | BINDF_NOWRITECACHE>  class ATL_NO_VTABLE CBindStatusCallback : public CComObjectRootEx
+    int nBindFlags = BINDF_ASYNCHRONOUS |   BINDF_ASYNCSTORAGE | BINDF_GETNEWESTVERSION | BINDF_NOWRITECACHE>  
+class ATL_NO_VTABLE CBindStatusCallback : public CComObjectRootEx
  <T ::_ThreadModel::ThreadModelNoCS>,
     public IBindStatusCallbackImpl<T>
 ```  

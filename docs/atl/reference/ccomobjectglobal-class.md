@@ -46,7 +46,7 @@ This class manages a reference count on the module containing your `Base` object
 ```
 template<class Base>
 class CComObjectGlobal
- :  public Base
+ : public Base
 ```  
   
 #### Parameters  
