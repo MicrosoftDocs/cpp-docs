@@ -103,8 +103,8 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
  Handles OnStoryboardStatusChanged events, which occur when a storyboard's status changes  
   
 ```  
-IFACEMETHOD(
-    OnStoryboardStatusChanged) (__in IUIAnimationStoryboard* storyboard,
+IFACEMETHOD(OnStoryboardStatusChanged) (
+    __in IUIAnimationStoryboard* storyboard,
     __in UI_ANIMATION_STORYBOARD_STATUS newStatus,
     __in UI_ANIMATION_STORYBOARD_STATUS previousStatus);
 ```  

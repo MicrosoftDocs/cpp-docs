@@ -42,7 +42,8 @@ A dictionary collection class that maps unique keys to values.
 ## Syntax  
   
 ```  
-template<class KEY, class ARG_KEY, class VALUE, class ARG_VALUE>class CMap : public CObject  
+template<class KEY, class ARG_KEY, class VALUE, class ARG_VALUE>
+class CMap : public CObject  
 ```  
   
 #### Parameters  
@@ -95,7 +96,7 @@ template<class KEY, class ARG_KEY, class VALUE, class ARG_VALUE>class CMap : pub
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMap::operator [ ]](#cmap__operator_at)|Inserts an element into the map â€” operator substitution for `SetAt`.|  
+|[CMap::operator \[\]](#cmap__operator_at)|Inserts an element into the map; substitution for `SetAt`.|  
   
 ## Remarks  
  Once you have inserted a key-value pair (element) into the map, you can efficiently retrieve or delete the pair using the key to access it. You can also iterate over all the elements in the map.  
@@ -145,9 +146,9 @@ CMap(INT_PTR nBlockSize = 10);
   
  The structure is composed of two fields:  
   
-- **keyÂ Â Â** The actual value of the key type.  
+- **key** The actual value of the key type.  
   
-- **valueÂ Â Â** The value of the associated object.  
+- **value** The value of the associated object.  
   
  It is used to store the return values from [CMap::PLookup](#cmap__plookup), [CMap::PGetFirstAssoc](#cmap__pgetfirstassoc), and [CMap::PGetNextAssoc](#cmap__pgetnextassoc).  
   
@@ -158,9 +159,7 @@ CMap(INT_PTR nBlockSize = 10);
  Retrieves the number of elements in the map.  
   
 ```  
-INT_PTR GetCount() const;
-
- 
+INT_PTR GetCount() const; 
 ```  
   
 ### Return Value  
@@ -173,9 +172,7 @@ INT_PTR GetCount() const;
  Determines the number of elements in the hash table for the map.  
   
 ```  
-UINT GetHashTableSize() const;
-
- 
+UINT GetHashTableSize() const; 
 ```  
   
 ### Return Value  
@@ -191,9 +188,7 @@ UINT GetHashTableSize() const;
 void GetNextAssoc(
     POSITION& rNextPosition,
     KEY& rKey,
-    VALUE& rValue) const;
-
- 
+    VALUE& rValue) const; 
 ```  
   
 ### Parameters  
@@ -224,9 +219,7 @@ void GetNextAssoc(
  Returns the number of map elements.  
   
 ```  
-INT_PTR GetSize() const;
-
- 
+INT_PTR GetSize() const; 
 ```  
   
 ### Return Value  
@@ -243,8 +236,6 @@ INT_PTR GetSize() const;
   
 ```  
 POSITION GetStartPosition() const;
-
- 
 ```  
   
 ### Return Value  
@@ -260,9 +251,7 @@ POSITION GetStartPosition() const;
  Initializes the hash table.  
   
 ```  
-void InitHashTable(UINT hashSize, BOOL  bAllocNow = TRUEÂ);
-
- 
+void InitHashTable(UINT hashSize, BOOL  bAllocNow = TRUE); 
 ```  
   
 ### Parameters  
@@ -283,8 +272,6 @@ void InitHashTable(UINT hashSize, BOOL  bAllocNow = TRUEÂ);
   
 ```  
 BOOL IsEmpty() const;
-
- 
 ```  
   
 ### Return Value  
@@ -297,10 +284,7 @@ BOOL IsEmpty() const;
  Looks up the value mapped to a given key.  
   
 ```  
-BOOL Lookup(
-    ARG_KEY key, VALUE& rValue) const;
-
- 
+BOOL Lookup( ARG_KEY key, VALUE& rValue) const; 
 ```  
   
 ### Parameters  
@@ -325,11 +309,11 @@ BOOL Lookup(
 ### Example  
  [!code-cpp[NVC_MFCCollections#58](../../mfc/codesnippet/cpp/cmap-class_3.cpp)]  
   
-##  <a name="cmap__operator_at"></a>  CMap::operator [ ]  
+##  <a name="cmap__operator_at"></a>  CMap::operator []  
  A convenient substitute for the `SetAt` member function.  
   
 ```  
-VALUE& operator[](arg_key key);
+VALUE& operator[] (ARG_KEY key);
 ```  
   
 ### Parameters  
@@ -354,9 +338,8 @@ VALUE& operator[](arg_key key);
  Returns the first entry of the map object.  
   
 ```  
-const CPair* PGetFirstAssoc() const;Â CPair* PGetFirstAssoc();
-
- 
+const CPair* PGetFirstAssoc() const;
+CPair* PGetFirstAssoc(); 
 ```  
   
 ### Return Value  
@@ -372,10 +355,7 @@ const CPair* PGetFirstAssoc() const;Â CPair* PGetFirstAssoc();
  Retrieves the map element pointed to by `pAssocRec`.  
   
 ```  
-const CPair *PGetNextAssoc(const CPair* pAssocRet) const;
-
- 
- 
+const CPair *PGetNextAssoc(const CPair* pAssocRet) const; 
 CPair *PGetNextAssoc(const CPair* pAssocRet);
 ```  
   
@@ -397,10 +377,7 @@ CPair *PGetNextAssoc(const CPair* pAssocRet);
   
 ```  
 const CPair* PLookup(ARG_KEY  key) const;
-
-CPair* PLookup(Â    ARG_KEY  keyÂ);
-
- 
+CPair* PLookup(ARG_KEY  key); 
 ```  
   
 ### Parameters  
@@ -456,8 +433,7 @@ BOOL RemoveKey(ARG_KEY key);
  The primary means to insert an element in a map.  
   
 ```  
-void SetAt(
-    ARG_KEY key, ARG_VALUE newValue);
+void SetAt(ARG_KEY key, ARG_VALUE newValue);
 ```  
   
 ### Parameters  

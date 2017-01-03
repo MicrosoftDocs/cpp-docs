@@ -88,7 +88,7 @@ class CDrawingManager : public CObject
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
   
- Â Â Â [CDrawingManager](../../mfc/reference/cdrawingmanager-class.md)  
+ [CDrawingManager](../../mfc/reference/cdrawingmanager-class.md)  
   
 ## Requirements  
  **Header:** afxdrawmanager.h  
@@ -111,7 +111,6 @@ CDrawingManager(CDC& dc);
 static HBITMAP __stdcall CreateBitmap_32(
     const CSize& size,  
     void** pBits);
-
  
 static HBITMAP __stdcall CreateBitmap_32(
     HBITMAP bitmap,  
@@ -236,7 +235,6 @@ void DrawLine(
     int x2,  
     int y2,  
     COLORREF clrLine);
-
  
 void DrawLineA(
     double x1,  
@@ -672,7 +670,6 @@ void MirrorRect(
 static COLORREF __stdcall PixelAlpha(
     COLORREF srcPixel,  
     int percent);
-
  
 static COLORREF __stdcall PixelAlpha(
     COLORREF srcPixel,  
@@ -680,7 +677,6 @@ static COLORREF __stdcall PixelAlpha(
     double percentG,  
     double percentB);
 
- 
 static COLORREF __stdcall PixelAlpha(
     COLORREF srcPixel,  
     COLORREF dstPixel,  

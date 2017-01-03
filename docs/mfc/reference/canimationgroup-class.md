@@ -112,9 +112,7 @@ class CAnimationGroup;
  A helper that adds keyframes to a storyboard.  
   
 ```  
-void AddKeyframes(
-    IUIAnimationStoryboard* pStoryboard,  
-    BOOL bAddDeep);
+void AddKeyframes(IUIAnimationStoryboard* pStoryboard, BOOL bAddDeep);
 ```  
   
 ### Parameters  
@@ -174,9 +172,7 @@ void ApplyTransitions();
  Constructs an animation group.  
   
 ```  
-CAnimationGroup(
-    CAnimationController* pParentController,  
-    UINT32 nGroupID);
+CAnimationGroup(CAnimationController* pParentController, UINT32 nGroupID);
 ```  
   
 ### Parameters  
@@ -214,9 +210,7 @@ CAnimationBaseObject* FindAnimationObject(IUIAnimationVariable* pVariable);
  Returns GroupID.  
   
 ```  
-UINT32 GetGroupID() const;
-
- 
+UINT32 GetGroupID() const; 
 ```  
   
 ### Return Value  
@@ -302,9 +296,7 @@ void RemoveTransitions();
  Schedules an animation at the specified time.  
   
 ```  
-BOOL Schedule(
-    IUIAnimationTimer* pTimer,  
-    UI_ANIMATION_SECONDS time);
+BOOL Schedule(IUIAnimationTimer* pTimer, UI_ANIMATION_SECONDS time);
 ```  
   
 ### Parameters  
