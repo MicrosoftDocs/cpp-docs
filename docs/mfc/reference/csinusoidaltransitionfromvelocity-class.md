@@ -84,7 +84,7 @@ class CSinusoidalTransitionFromVelocity : public CBaseTransition;
 ```  
 virtual BOOL Create(
     IUIAnimationTransitionLibrary* pLibrary,  
-    IUIAnimationTransitionFactory* */);
+    IUIAnimationTransitionFactory* \*not used*\);
 ```  
   
 ### Parameters  

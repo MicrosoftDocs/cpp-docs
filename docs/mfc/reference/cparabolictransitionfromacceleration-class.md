@@ -105,7 +105,7 @@ CParabolicTransitionFromAcceleration(
 ```  
 virtual BOOL Create(
     IUIAnimationTransitionLibrary* pLibrary,  
-    IUIAnimationTransitionFactory* */);
+    IUIAnimationTransitionFactory* /* not used */);
 ```  
   
 ### Parameters  

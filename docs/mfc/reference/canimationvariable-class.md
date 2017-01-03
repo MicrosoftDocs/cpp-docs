@@ -195,15 +195,12 @@ virtual BOOL Create(IUIAnimationManager* pManager);
 ```  
 BOOL CreateTransitions(
     IUIAnimationTransitionLibrary* pLibrary,  
-    IUIAnimationTransitionFactory* pFactory);
+    IUIAnimationTransitionFactory* \*not used*\);
 ```  
   
 ### Parameters  
- `pLibrary`  
- A pointer to transition library.  
-  
- `pFactory`  
- A pointer to transition factory.  
+`pLibrary`  
+ A pointer to an [IUIAnimationTransitionLibrary interface](https://msdn.microsoft.com/library/windows/desktop/dd371897), which defines a library of standard transitions.  
   
 ### Return Value  
  TRUE if transitions were created successfully; otherwise FALSE.  

@@ -105,13 +105,13 @@ CCubicTransition(
 ```  
 virtual BOOL Create(
     IUIAnimationTransitionLibrary* pLibrary,  
-    IUIAnimationTransitionFactory* */);
+    IUIAnimationTransitionFactory* \*not used*\);
 ```  
   
 ### Parameters  
- `pLibrary`  
- A pointer to transition library, which is responsible for creation of standard transitions.  
-  
+`pLibrary`  
+ A pointer to an [IUIAnimationTransitionLibrary interface](https://msdn.microsoft.com/library/windows/desktop/dd371897), which defines a library of standard transitions.  
+
 ### Return Value  
  TRUE if transition is created successfully; otherwise FALSE.  
   
