@@ -10,15 +10,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "is_class"
-  - "std::tr1::is_class"
-  - "std.tr1.is_class"
-  - "std.is_class"
   - "std::is_class"
   - "type_traits/std::is_class"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_class class [TR1]"
+  - "is_class class"
   - "is_class"
 ms.assetid: 96fc34a3-a81b-4ec6-b7fb-baafde1a0f4e
 caps.latest.revision: 19
@@ -50,7 +47,7 @@ template <class Ty>
 struct is_class;  
 ```  
   
-#### Parameters  
+### Parameters  
  `Ty`  
  The type to query.  
   
@@ -60,7 +57,7 @@ struct is_class;
 ## Example  
   
 ```cpp  
-// std_tr1__type_traits__is_class.cpp   
+// std__type_traits__is_class.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   

@@ -9,16 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::is_integral"
-  - "std.tr1.is_integral"
   - "is_integral"
-  - "std.is_integral"
   - "std::is_integral"
   - "type_traits/std::is_integral"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_integral class [TR1]"
+  - "is_integral class"
   - "is_integral"
 ms.assetid: fe9279d0-4495-4e88-bf23-153cc6602397
 caps.latest.revision: 19
@@ -62,7 +59,7 @@ struct is_integral;
 ## Example  
   
 ```cpp  
-// std_tr1__type_traits__is_integral.cpp   
+// std__type_traits__is_integral.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   

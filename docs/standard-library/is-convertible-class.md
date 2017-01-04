@@ -10,15 +10,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "is_convertible"
-  - "std.tr1.is_convertible"
-  - "std::tr1::is_convertible"
-  - "std.is_convertible"
   - "std::is_convertible"
   - "type_traits/std::is_convertible"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_convertible class [TR1]"
+  - "is_convertible class"
   - "is_convertible"
 ms.assetid: 75614008-1894-42ea-bd57-974399628536
 caps.latest.revision: 19
@@ -63,7 +60,7 @@ struct is_convertible;
 ## Example  
   
 ```cpp  
-// std_tr1__type_traits__is_convertible.cpp   
+// std__type_traits__is_convertible.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   

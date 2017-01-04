@@ -9,19 +9,18 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.integral_constant"
   - "integral_constant"
-  - "std::tr1::integral_constant"
-  - "std.integral_constant"
   - "std::integral_constant"
   - "type_traits/std::integral_constant"
-  - "std.bool_constant"
+  - "XTR1COMMON/std::integral_constant"
+  - "bool_constant"
   - "std::bool_constant"
   - "type_traits/std::bool_constant"
+  - "XTR1COMMON/std::bool_constant"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "integral_constant class [TR1]"
+  - "integral_constant class"
   - "integral_constant"
   - "bool_constant"
 ms.assetid: 11c002c6-4d31-4042-9341-f2543f43e108
@@ -49,28 +48,28 @@ Makes an integral constant from a type and value.
   
 ## Syntax  
   
+```
+template<class T, T v>
 struct integral_constant {  
    static constexpr T value = v;  
    typedef T value_type;  
-   typedef integral_constant\<T, v>  
-   type;  
-   constexpr operator value_type() const noexcept { return (value);
-   }  
-   constexpr value_type operator()() const noexcept { return (value);
-   }  
+   typedef integral_constant<T, v> type;  
+   constexpr operator value_type() const noexcept;  
+   constexpr value_type operator()() const noexcept;  
    };  
+```
   
-#### Parameters  
- `T`  
- The type of the constant.  
+### Parameters  
+*T*  
+The type of the constant.  
   
- `v`  
- The value of the constant.  
+*v*  
+The value of the constant.  
   
 ## Remarks  
- The `integral_constant` template class, when specialized with an integral type `T` and a value `v` of that type, represents an object that holds a constant of that integral type with the specified value. The member named `type` is an alias for the generated template specialization type, and the `value` member holds the value `v` used to create the specialization.  
+The `integral_constant` template class, when specialized with an integral type *T* and a value *v* of that type, represents an object that holds a constant of that integral type with the specified value. The member named `type` is an alias for the generated template specialization type, and the `value` member holds the value *v* used to create the specialization.  
   
- The `bool_constant` template class is an explicit partial specialization of `integral_constant` that uses `bool` as the `T` argument.  
+The `bool_constant` template class is an explicit partial specialization of `integral_constant` that uses `bool` as the *T* argument.  
   
 ## Example  
   
@@ -98,9 +97,9 @@ integral_constant<bool, false> == false
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+**Header:** <type_traits>  
   
- **Namespace:** std  
+**Namespace:** std  
   
 ## See Also  
  [<type_traits>](../standard-library/type-traits.md)   

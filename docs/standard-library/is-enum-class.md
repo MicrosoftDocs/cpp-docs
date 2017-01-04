@@ -10,15 +10,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "is_enum"
-  - "std.tr1.is_enum"
-  - "std::tr1::is_enum"
-  - "std.is_enum"
   - "std::is_enum"
   - "type_traits/std::is_enum"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_enum class [TR1]"
+  - "is_enum class"
   - "is_enum"
 ms.assetid: df3b00b7-4f98-4b3a-96ce-10ad958ee69c
 caps.latest.revision: 19
@@ -60,7 +57,7 @@ struct is_enum;
 ## Example  
   
 ```cpp  
-// std_tr1__type_traits__is_enum.cpp   
+// std__type_traits__is_enum.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   

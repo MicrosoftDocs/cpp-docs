@@ -10,15 +10,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "is_void"
-  - "std.tr1.is_void"
-  - "std::tr1::is_void"
-  - "std.is_void"
   - "std::is_void"
   - "type_traits/std::is_void"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_void class [TR1]"
+  - "is_void class"
   - "is_void"
 ms.assetid: 99b0de3b-1b38-4949-b053-080e5363174e
 caps.latest.revision: 21
@@ -91,7 +88,7 @@ is_void<void> == true
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

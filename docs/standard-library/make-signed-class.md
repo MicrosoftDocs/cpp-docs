@@ -9,16 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::make_signed"
   - "make_signed"
-  - "std.tr1.make_signed"
-  - "std.make_signed"
   - "std::make_signed"
   - "type_traits/std::make_signed"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "make_signed class[TR1]"
+  - "make_signed class"
   - "make_signed"
 ms.assetid: 686247c0-247c-496b-9b1b-ba9dcd633621
 caps.latest.revision: 18
@@ -61,7 +58,7 @@ using make_signed_t = typename make_signed<T>::type;
  An instance of the type modifier holds a modified-type that is `T` if `is_signed<T>` holds true. Otherwise it is the smallest unsigned type `UT` for which `sizeof (T) <= sizeof (UT)`.  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

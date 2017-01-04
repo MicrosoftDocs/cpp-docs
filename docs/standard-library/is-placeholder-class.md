@@ -10,13 +10,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "is_placeholder"
-  - "std.tr1.is_placeholder"
-  - "functional/std::tr1::is_placeholder"
-  - "std::tr1::is_placeholder"
+  - "std::is_placeholder"
+  - "functional/std::is_placeholder"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_placeholder class [TR1]"
+  - "is_placeholder class"
 ms.assetid: 2b21a792-96d1-4bb8-b911-0db796510835
 caps.latest.revision: 22
 author: "corob-msft"
@@ -52,7 +51,7 @@ struct is_placeholder {
 ## Example  
   
 ```cpp  
-// std_tr1__functional__is_placeholder.cpp   
+// std__functional__is_placeholder.cpp   
 // compile with: /EHsc   
 #include <functional>   
 #include <iostream>   

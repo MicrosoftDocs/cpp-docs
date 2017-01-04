@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "is_pod"
-  - "std::tr1::is_pod"
   - "std::is_pod"
   - "type_traits/std::is_pod"
 dev_langs: 
@@ -116,7 +115,7 @@ is_pod<throws> == false
 ```  
   
 ## Requirements  
-**Header:** <type_traits>  
+**Header:** \<type_traits>  
   
 **Namespace:** std  
   

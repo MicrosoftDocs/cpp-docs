@@ -9,16 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.is_rvalue_reference"
   - "is_rvalue_reference"
-  - "std::tr1::is_rvalue_reference"
-  - "std.is_rvalue_reference"
   - "std::is_rvalue_reference"
   - "type_traits/std::is_rvalue_reference"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_rvalue_reference class[TR1]"
+  - "is_rvalue_reference class"
   - "is_rvalue_reference"
 ms.assetid: 40a97072-7b5c-4274-9154-298d3dcf064a
 caps.latest.revision: 16
@@ -55,10 +52,10 @@ struct is_rvalue_reference;
  The type to query.  
   
 ## Remarks  
- An instance of this type predicate holds true if the type `Ty` is an [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md) reference.  
+ An instance of this type predicate holds true if the type `Ty` is an [rvalue reference](../cpp/rvalue-reference-declarator-amp-amp.md).  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

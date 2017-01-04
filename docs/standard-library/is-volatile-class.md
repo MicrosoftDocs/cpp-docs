@@ -9,16 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::is_volatile"
-  - "std.tr1.is_volatile"
   - "is_volatile"
-  - "std.is_volatile"
   - "std::is_volatile"
   - "type_traits/std::is_volatile"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_volatile class [TR1]"
+  - "is_volatile class"
   - "is_volatile"
 ms.assetid: 54922e8a-db4e-4cae-8931-b3352f0b8d3b
 caps.latest.revision: 19
@@ -60,7 +57,7 @@ struct is_volatile;
 ## Example  
   
 ```cpp  
-// std_tr1__type_traits__is_volatile.cpp   
+// std__type_traits__is_volatile.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   
@@ -94,7 +91,7 @@ is_volatile<volatile int> == true
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

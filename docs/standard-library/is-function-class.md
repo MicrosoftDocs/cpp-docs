@@ -9,16 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::is_function"
-  - "std.tr1.is_function"
   - "is_function"
-  - "std.is_function"
   - "std::is_function"
   - "type_traits/std::is_function"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_function class [TR1]"
+  - "is_function class"
   - "is_function"
 ms.assetid: e5c0dbcd-829b-415f-853f-8c5be47c5040
 caps.latest.revision: 19
@@ -60,7 +57,7 @@ struct is_function;
 ## Example  
   
 ```cpp  
-// std_tr1__type_traits__is_function.cpp   
+// std__type_traits__is_function.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   

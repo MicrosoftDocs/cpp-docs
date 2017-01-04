@@ -9,16 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::is_compound"
   - "is_compound"
-  - "std.tr1.is_compound"
-  - "std.is_compound"
   - "std::is_compound"
   - "type_traits/std::is_compound"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_compound class [TR1]"
+  - "is_compound class"
   - "is_compound"
 ms.assetid: bdad1167-cf3f-4f37-8321-62a5df159ead
 caps.latest.revision: 21
@@ -60,7 +57,7 @@ struct is_compound;
 ## Example  
   
 ```cpp  
-// std_tr1__type_traits__is_compound.cpp   
+// std__type_traits__is_compound.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   

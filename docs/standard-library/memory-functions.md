@@ -6,8 +6,57 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+f1_keywords: 
+  - "std::addressof"
+  - "memory/std::addressof"
+  - "std::align"
+  - "memory/std::align"
+  - "std::allocate_shared"
+  - "memory/std::allocate_shared"
+  - "std::const_pointer_cast"
+  - "memory/std::const_pointer_cast"
+  - "std::declare_no_pointers"
+  - "memory/std::declare_no_pointers"
+  - "std::declare_reachable"
+  - "memory/std::declare_reachable"
+  - "std::default_delete"
+  - "memory/std::default_delete"
+  - "std::dynamic_pointer_cast"
+  - "memory/std::dynamic_pointer_cast"
+  - "std::get_deleter_function"
+  - "memory/std::get_deleter_function"
+  - "std::get_pointer_safety"
+  - "memory/std::get_pointer_safety"
+  - "std::get_temporary_buffer"
+  - "memory/std::get_temporary_buffer"
+  - "std::make_shared"
+  - "memory/std::make_shared"
+  - "std::make_unique"
+  - "memory/std::make_unique"
+  - "std::owner_less"
+  - "memory/std::owner_less"
+  - "std::return_temporary_buffer"
+  - "memory/std::return_temporary_buffer"
+  - "std::static_pointer_cast"
+  - "memory/std::static_pointer_cast"
+  - "std::swap"
+  - "memory/std::swap"
+  - "std::undeclare_no_pointers"
+  - "memory/std::undeclare_no_pointers"
+  - "std::undeclare_reachable"
+  - "memory/std::undeclare_reachable"
+  - "std::uninitialized_copy"
+  - "memory/std::uninitialized_copy"
+  - "std::uninitialized_copy_n"
+  - "memory/std::uninitialized_copy_n"
+  - "std::uninitialized_fill"
+  - "memory/std::uninitialized_fill"
+  - "std::uninitialized_fill_n"
+  - "memory/std::uninitialized_fill_n"
 ms.assetid: 3e1898c2-44b7-4626-87ce-84962e4c6f1a
 caps.latest.revision: 12
+author: "corob-msft"
+ms.author: "corob"
 manager: "ghogen"
 ---
 # &lt;memory&gt; functions
@@ -141,7 +190,7 @@ const_pointer_cast(const shared_ptr<Other>& sp);
 ### Example  
   
 ```cpp  
-// std_tr1__memory__const_pointer_cast.cpp   
+// std__memory__const_pointer_cast.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
@@ -241,7 +290,7 @@ dynamic_pointer_cast(const shared_ptr`<`Other>& sp);
 ### Example  
   
 ```cpp  
-// std_tr1__memory__dynamic_pointer_cast.cpp   
+// std__memory__dynamic_pointer_cast.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
@@ -302,7 +351,7 @@ D *get_deleter(const shared_ptr<Ty>& sp);
 ### Example  
   
 ```cpp  
-// std_tr1__memory__get_deleter.cpp   
+// std__memory__get_deleter.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
@@ -683,7 +732,7 @@ static_pointer_cast(const shared_ptr<Other>& sp);
 ### Example  
   
 ```cpp  
-// std_tr1__memory__static_pointer_cast.cpp   
+// std__memory__static_pointer_cast.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
@@ -746,7 +795,7 @@ void swap(weak_ptr<Ty>& left, weak_ptr<Other>& right);
 ### Example  
   
 ```cpp  
-// std_tr1__memory__swap.cpp   
+// std__memory__swap.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
@@ -872,7 +921,7 @@ return first;
   
 using namespace std;  
   
- class Integer
+class Integer
 {
 public:
     Integer(int x) : val(x) {}

@@ -9,16 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.is_lvalue_reference"
-  - "std::tr1::is_lvalue_reference"
   - "is_lvalue_reference"
-  - "std.is_lvalue_reference"
   - "std::is_lvalue_reference"
   - "type_traits/std::is_lvalue_reference"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_lvalue_reference class[TR1]"
+  - "is_lvalue_reference class"
   - "is_lvalue_reference"
 ms.assetid: 7f11896b-935c-4de1-9c87-9d0127f904e2
 caps.latest.revision: 18

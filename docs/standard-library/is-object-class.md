@@ -10,15 +10,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "is_object"
-  - "std.tr1.is_object"
-  - "std::tr1::is_object"
-  - "std.is_object"
   - "std::is_object"
   - "type_traits/std::is_object"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_object class [TR1]"
+  - "is_object class"
   - "is_object"
 ms.assetid: b452ceea-5676-488f-925b-ab881126c387
 caps.latest.revision: 19
@@ -60,7 +57,7 @@ struct is_object;
 ## Example  
   
 ```cpp  
-// std_tr1__type_traits__is_object.cpp   
+// std__type_traits__is_object.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   

@@ -10,15 +10,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "is_array"
-  - "std.tr1.is_array"
-  - "std::tr1::is_array"
-  - "std.is_array"
   - "std::is_array"
   - "type_traits/std::is_array"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_array class [TR1]"
+  - "is_array class"
   - "is_array"
 ms.assetid: 61fb2201-8de3-4746-9721-617f02df170f
 caps.latest.revision: 19
@@ -60,7 +57,7 @@ struct is_array;
 ## Example  
   
 ```cpp  
-// std_tr1__type_traits__is_array.cpp   
+// std__type_traits__is_array.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   
@@ -81,7 +78,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  

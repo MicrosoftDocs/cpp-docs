@@ -9,10 +9,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::rank"
-  - "std.tr1.rank"
   - "rank"
-  - "std.rank"
   - "std::rank"
   - "type_traits/std::rank"
 dev_langs: 
@@ -60,7 +57,7 @@ struct rank;
 ## Example  
   
 ```cpp  
-// std_tr1__type_traits__rank.cpp   
+// std__type_traits__rank.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   
@@ -86,7 +83,7 @@ rank<int[5][10]> == 2
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

@@ -9,16 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.is_reference"
-  - "std::tr1::is_reference"
   - "is_reference"
-  - "std.is_reference"
   - "std::is_reference"
   - "type_traits/std::is_reference"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_reference class [TR1]"
+  - "is_reference class"
   - "is_reference"
 ms.assetid: 3d9e631f-3092-430c-843e-e914ab58c257
 caps.latest.revision: 20
@@ -94,7 +91,7 @@ is_reference<int(&)()> == true
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

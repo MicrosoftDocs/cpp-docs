@@ -10,15 +10,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "is_member_object_pointer"
-  - "std.tr1.is_member_object_pointer"
-  - "std::tr1::is_member_object_pointer"
-  - "std.is_member_object_pointer"
   - "std::is_member_object_pointer"
   - "type_traits/std::is_member_object_pointer"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_member_object_pointer class [TR1]"
+  - "is_member_object_pointer class"
   - "is_member_object_pointer"
 ms.assetid: 64f9cdf3-4621-4310-a076-a7bc986926b9
 caps.latest.revision: 19
@@ -60,7 +57,7 @@ struct is_member_object_pointer;
 ## Example  
   
 ```cpp  
-// std_tr1__type_traits__is_member_object_pointer.cpp   
+// std__type_traits__is_member_object_pointer.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   
