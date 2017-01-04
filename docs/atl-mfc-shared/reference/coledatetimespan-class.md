@@ -621,7 +621,7 @@ COleDateTimeSpan& operator-=(const COleDateTimeSpan dateSpan) throw();
  Converts this `COleDateTimeSpan` value to a **double**.  
   
 ```
-operator double() const throw();
+ operator double() const throw();
 ```  
   
 ### Remarks  

@@ -190,14 +190,14 @@ COleDateTime(const SYSTEMTIME& systimeSrc) throw();
 COleDateTime(const FILETIME& filetimeSrc) throw();
 
 COleDateTime(int nYear,
-    int nMonth,
-    int nDay,
-    int nHour,
-    int nMin,
-    int nSec) throw();
+ int nMonth,
+ int nDay,
+ int nHour,
+ int nMin,
+ int nSec) throw();
 
 COleDateTime(WORD wDosDate,
-    WORD wDosTime) throw();
+ WORD wDosTime) throw();
 
 COleDateTime(const DBTIMESTAMP& dbts) throw();
 ```  
@@ -855,7 +855,7 @@ COleDateTime& operator-=(COleDateTimeSpan dateSpan) throw();
  Converts a **ColeDateTime** value into a **DATE**.  
   
 ```
-operator DATE() const throw();
+ operator DATE() const throw();
 ```  
   
 ### Remarks  
@@ -868,8 +868,8 @@ operator DATE() const throw();
   
 ```
 bool ParseDateTime(LPCTSTR lpszDate,
-    DWORD dwFlags = 0,
-    LCID lcid = LANG_USER_DEFAULT) throw();
+ DWORD dwFlags = 0,
+ LCID lcid = LANG_USER_DEFAULT) throw();
 ```  
   
 ### Parameters  
@@ -926,8 +926,8 @@ bool ParseDateTime(LPCTSTR lpszDate,
   
 ```
 int SetDate(int nYear,
-    int nMonth,
-    int nDay) throw();
+ int nMonth,
+ int nDay) throw();
 ```  
   
 ### Parameters  
@@ -991,11 +991,11 @@ int SetDate(int nYear,
   
 ```
 int SetDateTime(int nYear,
-    int nMonth,
-    int nDay,
-    int nHour,
-    int nMin,
-    int nSec) throw();
+ int nMonth,
+ int nDay,
+ int nHour,
+ int nMin,
+ int nSec) throw();
 ```  
   
 ### Parameters  
@@ -1089,8 +1089,8 @@ void SetStatus(DateTimeStatus status) throw();
   
 ```
 int SetTime(int nHour,
-    int nMin,
-    int nSec) throw();
+ int nMin,
+ int nSec) throw();
 ```  
   
 ### Parameters  

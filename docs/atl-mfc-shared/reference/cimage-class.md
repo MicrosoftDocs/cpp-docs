@@ -158,13 +158,13 @@ m_myImage.ReleaseDC();
 ```cpp
 void CMyDlg::OnRButtonDown(UINT nFlags, CPoint point)
 {
-   UNREFERENCED_PARAMETER(nFlags);
+ UNREFERENCED_PARAMETER(nFlags);
 
-   CBitmap* pBitmap = CBitmap::FromHandle(m_myImage);
-   m_pmenuPop->AppendMenu(0, ID_BMPCOMMAND, pBitmap);
-   ClientToScreen(&point);
-   m_pmenuPop->TrackPopupMenu(TPM_RIGHTBUTTON | TPM_LEFTALIGN, point.x, 
-      point.y, this);
+ CBitmap* pBitmap = CBitmap::FromHandle(m_myImage);
+ m_pmenuPop->AppendMenu(0, ID_BMPCOMMAND, pBitmap);
+ ClientToScreen(&point);
+ m_pmenuPop->TrackPopupMenu(TPM_RIGHTBUTTON | TPM_LEFTALIGN, point.x, 
+ point.y, this);
 }
 ```  
 
@@ -197,33 +197,33 @@ void CMyDlg::OnRButtonDown(UINT nFlags, CPoint point)
   
 ```
 BOOL AlphaBlend(HDC hDestDC,
-    int xDest,
-    int yDest,
-    BYTE bSrcAlpha = 0xff,
-    BYTE bBlendOp = AC_SRC_OVER) const throw();
+ int xDest,
+ int yDest,
+ BYTE bSrcAlpha = 0xff,
+ BYTE bBlendOp = AC_SRC_OVER) const throw();
 
 BOOL AlphaBlend(HDC hDestDC,
-    const POINT& pointDest,
-    BYTE bSrcAlpha = 0xff,
-    BYTE bBlendOp = AC_SRC_OVER) const throw();
+ const POINT& pointDest,
+ BYTE bSrcAlpha = 0xff,
+ BYTE bBlendOp = AC_SRC_OVER) const throw();
 
 BOOL AlphaBlend(HDC hDestDC,
-    int xDest,
-    int yDest,
-    int nDestWidth,
-    int nDestHeight,
-    int xSrc,
-    int ySrc,
-    int nSrcWidth,
-    int nSrcHeight,
-    BYTE bSrcAlpha = 0xff,
-    BYTE bBlendOp = AC_SRC_OVER);
+ int xDest,
+ int yDest,
+ int nDestWidth,
+ int nDestHeight,
+ int xSrc,
+ int ySrc,
+ int nSrcWidth,
+ int nSrcHeight,
+ BYTE bSrcAlpha = 0xff,
+ BYTE bBlendOp = AC_SRC_OVER);
 
 BOOL AlphaBlend(HDC hDestDC,
-    const RECT& rectDest,
-    const RECT& rectSrc,
-    BYTE bSrcAlpha = 0xff,
-    BYTE bBlendOp = AC_SRC_OVER);
+ const RECT& rectDest,
+ const RECT& rectSrc,
+ BYTE bSrcAlpha = 0xff,
+ BYTE bBlendOp = AC_SRC_OVER);
 ```  
   
 ### Parameters  
@@ -305,27 +305,27 @@ void Attach(HBITMAP hBitmap,   DIBOrientation eOrientation = DIBOR_DEFAULT) thro
   
 ```
 BOOL BitBlt(HDC hDestDC,
-    int xDest,
-    int yDest,
-    DWORD dwROP = SRCCOPY) const throw();
+ int xDest,
+ int yDest,
+ DWORD dwROP = SRCCOPY) const throw();
 
 BOOL BitBlt(HDC hDestDC,
-    const POINT& pointDest,
-    DWORD dwROP = SRCCOPY) const throw();
+ const POINT& pointDest,
+ DWORD dwROP = SRCCOPY) const throw();
 
 BOOL BitBlt(HDC hDestDC,
-    int xDest,
-    int yDest,
-    int nDestWidth,
-    int nDestHeight,
-    int xSrc,
-    int ySrc,
-    DWORD dwROP = SRCCOPY) const throw();
+ int xDest,
+ int yDest,
+ int nDestWidth,
+ int nDestHeight,
+ int xSrc,
+ int ySrc,
+ DWORD dwROP = SRCCOPY) const throw();
 
 BOOL BitBlt(HDC hDestDC,
-    const RECT& rectDest,
-    const POINT& pointSrc,
-    DWORD dwROP = SRCCOPY) const throw();
+ const RECT& rectDest,
+ const POINT& pointSrc,
+ DWORD dwROP = SRCCOPY) const throw();
 ```  
   
 ### Parameters  
@@ -387,9 +387,9 @@ CImage() throw();
   
 ```
 BOOL Create(int nWidth,
-    int nHeight,
-    int nBPP,
-    DWORD dwFlags = 0) throw();
+ int nHeight,
+ int nBPP,
+ DWORD dwFlags = 0) throw();
 ```  
   
 ### Parameters  
@@ -418,11 +418,11 @@ BOOL Create(int nWidth,
   
 ```
 BOOL CreateEx(int nWidth,
-    int nHeight,
-    int nBPP,
-    DWORD eCompression,
-    const DWORD* pdwBitmasks = NULL,
-    DWORD dwFlags = 0) throw();
+ int nHeight,
+ int nBPP,
+ DWORD eCompression,
+ const DWORD* pdwBitmasks = NULL,
+ DWORD dwFlags = 0) throw();
 ```  
   
 ### Parameters  
@@ -458,7 +458,6 @@ BOOL CreateEx(int nWidth,
   
 ### Example  
  The following example creates a 100x100 pixel bitmap, using 16 bits to encode each pixel. In a given 16-bit pixel, bits 0-3 encode the red component, bits 4-7 encode green, and bits 8-11 encode blue. The remaining 4 bits are unused.  
-  
 
 ```cpp
 DWORD adwBitmasks[3] = { 0x0000000f, 0x000000f0, 0x00000f00 };
@@ -488,34 +487,34 @@ HBITMAP Detach() throw();
   
 ```
 BOOL Draw(HDC hDestDC,
-    int xDest,
-    int yDest,
-    int nDestWidth,
-    int nDestHeight,
-    int xSrc,
-    int ySrc,
-    int nSrcWidth,
-    int nSrcHeight) const throw();
+ int xDest,
+ int yDest,
+ int nDestWidth,
+ int nDestHeight,
+ int xSrc,
+ int ySrc,
+ int nSrcWidth,
+ int nSrcHeight) const throw();
 
 BOOL Draw(HDC hDestDC,
-    const RECT& rectDest,
-    const RECT& rectSrc) const throw();
+ const RECT& rectDest,
+ const RECT& rectSrc) const throw();
 
 BOOL Draw(HDC hDestDC,
-    int xDest,
-    int yDest) const throw();
+ int xDest,
+ int yDest) const throw();
 
 BOOL Draw(HDC hDestDC,
-    const POINT& pointDest) const throw();
+ const POINT& pointDest) const throw();
 
 BOOL Draw(HDC hDestDC,
-    int xDest,
-    int yDest,
-    int nDestWidth,
-    int nDestHeight) const throw();
+ int xDest,
+ int yDest,
+ int nDestWidth,
+ int nDestHeight) const throw();
 
 BOOL Draw(HDC hDestDC,
-    const RECT& rectDest) const throw();
+ const RECT& rectDest) const throw();
 ```  
   
 ### Parameters  
@@ -599,8 +598,8 @@ int GetBPP() const throw();
   
 ```
 void GetColorTable(UINT iFirstColor,
-    UINT nColors,
-    RGBQUAD* prgbColors) const throw();
+ UINT nColors,
+ RGBQUAD* prgbColors) const throw();
 ```  
   
 ### Parameters  
@@ -631,10 +630,10 @@ HDC GetDC() const throw();
   
 ```
 static HRESULT GetExporterFilterString(CSimpleString& strExporters,
-    CSimpleArray<GUID>& aguidFileTypes,
-    LPCTSTR pszAllFilesDescription = NULL,
-    DWORD dwExclude = excludeDefaultSave,
-    TCHAR chSeparator = _T('|'));
+ CSimpleArray<GUID>& aguidFileTypes,
+ LPCTSTR pszAllFilesDescription = NULL,
+ DWORD dwExclude = excludeDefaultSave,
+ TCHAR chSeparator = _T('|'));
 ```  
   
 ### Parameters  
@@ -651,13 +650,13 @@ static HRESULT GetExporterFilterString(CSimpleString& strExporters,
  If this parameter is not **NULL**, the filter string will have one additional filter at the beginning of the list. This filter will have the current value of `pszAllFilesDescription` for its description, and accepts files of any extension supported by any other exporter in the list.  
   
  For example:  
-  
 
- ```cpp
+```cpp
 //First filter in the list will be titled "All Image Files", and
 //will accept files with any extension supported by any exporter.
-CImage::GetExporterFilterString( strExporters, aguidFileTypes, 
-    _T("All Image Files"));
+CImage::GetExporterFilterString(
+    strExporters, aguidFileTypes, 
+ _T("All Image Files"));
 ```  
 
   
@@ -720,10 +719,10 @@ int GetHeight() const throw();
   
 ```
 static HRESULT GetImporterFilterString(CSimpleString& strImporters,
-    CSimpleArray<GUID>& aguidFileTypes,
-    LPCTSTR pszAllFilesDescription = NULL,
-    DWORD dwExclude = excludeDefaultLoad,
-    TCHAR chSeparator = _T('|'));
+ CSimpleArray<GUID>& aguidFileTypes,
+ LPCTSTR pszAllFilesDescription = NULL,
+ DWORD dwExclude = excludeDefaultLoad,
+ TCHAR chSeparator = _T('|'));
 ```  
   
 ### Parameters  
@@ -740,13 +739,13 @@ static HRESULT GetImporterFilterString(CSimpleString& strImporters,
  If this parameter is not **NULL**, the filter string will have one additional filter at the beginning of the list. This filter will have the current value of `pszAllFilesDescription` for its description, and accepts files of any extension supported by any other exporter in the list.  
   
  For example:  
-  
 
- ```cpp
+```cpp
 //First filter in the list will be titled "All Image Files", and
 //will accept files with any extension supported by any importer.
-CImage::GetImporterFilterString( strImporters, aguidFileTypes, 
-    _T("All Image Files"));
+CImage::GetImporterFilterString(
+    strImporters, aguidFileTypes, 
+ _T("All Image Files"));
 ```  
 
   
@@ -955,7 +954,6 @@ static BOOL IsTransparencySupported() throw();
   
 ```
 HRESULT Load(LPCTSTR pszFileName) throw();
-
 HRESULT Load(IStream* pStream) throw();
 ```  
   
@@ -979,10 +977,10 @@ HRESULT Load(IStream* pStream) throw();
   
 ```
 void LoadFromResource(HINSTANCE hInstance,
-    LPCTSTR pszResourceName) throw();
+ LPCTSTR pszResourceName) throw();
 
 void LoadFromResource(HINSTANCE hInstance,
-    UINT nIDResource) throw();
+ UINT nIDResource) throw();
 ```  
   
 ### Parameters  
@@ -1003,34 +1001,34 @@ void LoadFromResource(HINSTANCE hInstance,
   
 ```
 BOOL MaskBlt(HDC hDestDC,
-    int xDest,
-    int yDest,
-    int nDestWidth,
-    int nDestHeight,
-    int xSrc,
-    int ySrc,
-    HBITMAP hbmMask,
-    int xMask,
-    int yMask,
-    DWORD dwROP = SRCCOPY) const throw();
+ int xDest,
+ int yDest,
+ int nDestWidth,
+ int nDestHeight,
+ int xSrc,
+ int ySrc,
+ HBITMAP hbmMask,
+ int xMask,
+ int yMask,
+ DWORD dwROP = SRCCOPY) const throw();
 
 BOOL MaskBlt(HDC hDestDC,
-    const RECT& rectDest,
-    const POINT& pointSrc,
-    HBITMAP hbmMask,
-    const POINT& pointMask,
-    DWORD dwROP = SRCCOPY) const throw();
+ const RECT& rectDest,
+ const POINT& pointSrc,
+ HBITMAP hbmMask,
+ const POINT& pointMask,
+ DWORD dwROP = SRCCOPY) const throw();
 
 BOOL MaskBlt(HDC hDestDC,
-    int xDest,
-    int yDest,
-    HBITMAP hbmMask,
-    DWORD dwROP = SRCCOPY) const throw();
+ int xDest,
+ int yDest,
+ HBITMAP hbmMask,
+ DWORD dwROP = SRCCOPY) const throw();
 
 BOOL MaskBlt(HDC hDestDC,
-    const POINT& pointDest,
-    HBITMAP hbmMask,
-    DWORD dwROP = SRCCOPY) const throw();
+ const POINT& pointDest,
+ HBITMAP hbmMask,
+ DWORD dwROP = SRCCOPY) const throw();
 ```  
   
 ### Parameters  
@@ -1093,25 +1091,24 @@ BOOL MaskBlt(HDC hDestDC,
   
 ```
 BOOL PlgBlt(HDC hDestDC,
-    const POINT* pPoints,
-    HBITMAP hbmMask = NULL) const throw();
+ const POINT* pPoints,
+ HBITMAP hbmMask = NULL) const throw();
 
 BOOL PlgBlt(HDC hDestDC,
-    const POINT* pPoints,
-    int xSrc,
-    int ySrc,
-    int nSrcWidth,
-    int nSrcHeight,
-    HBITMAP hbmMask = NULL,
-    int xMask = 0,
-    int yMask = 0) const throw();
+ const POINT* pPoints,
+ int xSrc,
+ int ySrc,
+ int nSrcWidth,
+ int nSrcHeight,
+ HBITMAP hbmMask = NULL,
+ int xMask = 0,
+ int yMask = 0) const throw();
 
 BOOL PlgBlt(HDC hDestDC,
-    const POINT* pPoints,
-    const RECT& rectSrc,
-    HBITMAP hbmMask = NULL,
-    const POINT& pointMask = CPoint(0,
-    0)) const throw();
+ const POINT* pPoints,
+ const RECT& rectSrc,
+ HBITMAP hbmMask = NULL,
+ const POINT& pointMask = CPoint(0, 0)) const throw();
 ```  
   
 ### Parameters  
@@ -1181,10 +1178,10 @@ void ReleaseGDIPlus() throw();
   
 ```
 HRESULT Save(IStream* pStream,
-    REFGUID guidFileType) const throw();
+ REFGUID guidFileType) const throw();
 
 HRESULT Save(LPCTSTR pszFileName,
-    REFGUID guidFileType= GUID_NULL) const throw();
+ REFGUID guidFileType= GUID_NULL) const throw();
 ```  
   
 ### Parameters  
@@ -1219,8 +1216,8 @@ HRESULT Save(LPCTSTR pszFileName,
   
 ```
 void SetColorTable(UINT iFirstColor,
-    UINT nColors,
-    const RGBQUAD* prgbColors) throw();
+ UINT nColors,
+ const RGBQUAD* prgbColors) throw();
 ```  
   
 ### Parameters  
@@ -1240,9 +1237,7 @@ void SetColorTable(UINT iFirstColor,
  Sets the color of a pixel at a given location in the bitmap.  
   
 ```
-void SetPixel(int x,
-    int y,
-    COLORREF color) throw();
+void SetPixel(int x, int y, COLORREF color) throw();
 ```  
   
 ### Parameters  
@@ -1262,9 +1257,7 @@ void SetPixel(int x,
  Sets the pixel color to the color located at `iIndex` in the color palette.  
   
 ```
-void SetPixelIndexed(int x,
-    int y,
-    int iIndex) throw();
+void SetPixelIndexed(int x, int y, int iIndex) throw();
 ```  
   
 ### Parameters  
@@ -1282,10 +1275,10 @@ void SetPixelIndexed(int x,
   
 ```
 void SetPixelRGB(int x,
-    int y,
-    BYTE r,
-    BYTE g,
-    BYTE b) throw();
+ int y,
+ BYTE r,
+ BYTE g,
+ BYTE b) throw();
 ```  
   
 ### Parameters  
@@ -1326,31 +1319,31 @@ LONG SetTransparentColor(LONG iTransparentColor) throw();
   
 ```
 BOOL StretchBlt(HDC hDestDC,
-    int xDest,
-    int yDest,
-    int nDestWidth,
-    int nDestHeight,
-    DWORD dwROP = SRCCOPY) const throw();
+ int xDest,
+ int yDest,
+ int nDestWidth,
+ int nDestHeight,
+ DWORD dwROP = SRCCOPY) const throw();
 
 BOOL StretchBlt(HDC hDestDC,
-    const RECT& rectDest,
-    DWORD dwROP = SRCCOPY) const throw();
+ const RECT& rectDest,
+ DWORD dwROP = SRCCOPY) const throw();
 
 BOOL StretchBlt(HDC hDestDC,
-    int xDest,
-    int yDest,
-    int nDestWidth,
-    int nDestHeight,
-    int xSrc,
-    int ySrc,
-    int nSrcWidth,
-    int nSrcHeight,
-    DWORD dwROP = SRCCOPY) const throw();
+ int xDest,
+ int yDest,
+ int nDestWidth,
+ int nDestHeight,
+ int xSrc,
+ int ySrc,
+ int nSrcWidth,
+ int nSrcHeight,
+ DWORD dwROP = SRCCOPY) const throw();
 
 BOOL StretchBlt(HDC hDestDC,
-    const RECT& rectDest,
-    const RECT& rectSrc,
-    DWORD dwROP = SRCCOPY) const throw();
+ const RECT& rectDest,
+ const RECT& rectSrc,
+ DWORD dwROP = SRCCOPY) const throw();
 ```  
   
 ### Parameters  
@@ -1401,31 +1394,31 @@ BOOL StretchBlt(HDC hDestDC,
   
 ```
 BOOL TransparentBlt(HDC hDestDC,
-    int xDest,
-    int yDest,
-    int nDestWidth,
-    int nDestHeight,
-    UINT crTransparent = CLR_INVALID) const throw();
+ int xDest,
+ int yDest,
+ int nDestWidth,
+ int nDestHeight,
+ UINT crTransparent = CLR_INVALID) const throw();
 
 BOOL TransparentBlt(HDC hDestDC,
-    const RECT& rectDest,
-    UINT crTransparent = CLR_INVALID) const throw();
+ const RECT& rectDest,
+ UINT crTransparent = CLR_INVALID) const throw();
 
 BOOL TransparentBlt(HDC hDestDC,
-    int xDest,
-    int yDest,
-    int nDestWidth,
-    int nDestHeight,
-    int xSrc,
-    int ySrc,
-    int nSrcWidth,
-    int nSrcHeight,
-    UINT crTransparent = CLR_INVALID) const throw();
+ int xDest,
+ int yDest,
+ int nDestWidth,
+ int nDestHeight,
+ int xSrc,
+ int ySrc,
+ int nSrcWidth,
+ int nSrcHeight,
+ UINT crTransparent = CLR_INVALID) const throw();
 
 BOOL TransparentBlt(HDC hDestDC,
-    const RECT& rectDest,
-    const RECT& rectSrc,
-    UINT crTransparent = CLR_INVALID) const throw();
+ const RECT& rectDest,
+ const RECT& rectSrc,
+ UINT crTransparent = CLR_INVALID) const throw();
 ```  
   
 ### Parameters  
@@ -1478,27 +1471,27 @@ BOOL TransparentBlt(HDC hDestDC,
 // Performs a transparent blit from the source image to the destination 
 // image using the images' current transparency settings
 BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage, int xDest, int yDest,
-   int nDestWidth, int nDestHeight)
+ int nDestWidth, int nDestHeight)
 {
-   HDC hDstDC = NULL;
-   BOOL bResult;
+  HDC hDstDC = NULL;
+  BOOL bResult;
 
-   if(pSrcImage == NULL || pDstImage == NULL)
-   {
-      // Invalid parameter
-      return FALSE;
-   }
+  if(pSrcImage == NULL || pDstImage == NULL)
+  {
+  // Invalid parameter
+  return FALSE;
+  }
 
-   // Obtain a DC to the destination image
-   hDstDC = pDstImage->GetDC();
+  // Obtain a DC to the destination image
+  hDstDC = pDstImage->GetDC();
 
-   // Perform the blit
-   bResult = pSrcImage->TransparentBlt(hDstDC, xDest, yDest, nDestWidth, nDestHeight);
+  // Perform the blit
+  bResult = pSrcImage->TransparentBlt(hDstDC, xDest, yDest, nDestWidth, nDestHeight);
 
-   // Release the destination DC
-   pDstImage->ReleaseDC();
+  // Release the destination DC
+  pDstImage->ReleaseDC();
 
-   return bResult;
+  return bResult;
 }
 ```
 

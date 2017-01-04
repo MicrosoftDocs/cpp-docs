@@ -43,7 +43,7 @@ This class represents a string object with a fixed character buffer.
 ```
 template<class StringType, int t_nChars>
 class CFixedStringT : private CFixedStringMgr,
-                      public StringType
+ public StringType
 ```  
   
 #### Parameters  
@@ -141,7 +141,7 @@ CFixedStringT<StringType,
 t_nChars>& operator=(const unsigned char* psz);
 
 CFixedStringT<StringType,
-    t_nChars>& operator=(const StringType& str);
+ t_nChars>& operator=(const StringType& str);
 ```  
   
 ### Parameters  

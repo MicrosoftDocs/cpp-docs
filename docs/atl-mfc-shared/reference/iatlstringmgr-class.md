@@ -150,8 +150,8 @@ CStringData* GetNilString() throw();
   
 ```
 CStringData* Reallocate(CStringData* pData,
-    int nAllocLength,
-    int nCharSize) throw();
+ int nAllocLength,
+ int nCharSize) throw();
 ```  
   
 ### Parameters  

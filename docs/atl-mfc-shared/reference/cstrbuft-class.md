@@ -119,8 +119,8 @@ static const DWORD AUTO_LENGTH = 0x01;
   
 ```
 CStrBufT(StringType& str,
-    int nMinLength,
-    DWORD dwFlags = AUTO_LENGTH) throw(...);
+ int nMinLength,
+ DWORD dwFlags = AUTO_LENGTH) throw(...);
 
 explicit CStrBufT(StringType& str) throw(...);
 ```  
@@ -148,7 +148,7 @@ explicit CStrBufT(StringType& str) throw(...);
  Directly accesses characters stored in the associated string object as a C-style string.  
   
 ```
-operator PCXSTR() const throw();
+ operator PCXSTR() const throw();
 ```  
   
 ### Return Value  
@@ -161,7 +161,7 @@ operator PCXSTR() const throw();
  Directly accesses characters stored in the associated string object as a C-style string.  
   
 ```
-operator PXSTR() throw();
+ operator PXSTR() throw();
 ```  
   
 ### Return Value  
