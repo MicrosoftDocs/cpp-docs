@@ -143,7 +143,7 @@ virtual ~CAccessToken() throw();
  Call this method to determine if a specified SID is enabled in the `CAccessToken` object.  
   
 ```
-bool CheckTokenMembership(const CSid& rSid,    bool* pbIsMember) const throw(...);
+bool CheckTokenMembership(const CSid& rSid, bool* pbIsMember) const throw(...);
 ```  
   
 ### Parameters  
@@ -168,7 +168,7 @@ bool CheckTokenMembership(const CSid& rSid,    bool* pbIsMember) const throw(...
  Call this method to create an impersonation access token.  
   
 ```
-bool CreateImpersonationToken(CAccessToken* pImp,    SECURITY_IMPERSONATION_LEVEL sil = SecurityImpersonation) const throw(...);
+bool CreateImpersonationToken(CAccessToken* pImp, SECURITY_IMPERSONATION_LEVEL sil = SecurityImpersonation) const throw(...);
 ```  
   
 ### Parameters  
@@ -543,7 +543,7 @@ bool GetPrivileges(CTokenPrivileges* pPrivileges) const throw(...);
  Call this method to initialize the `CAccessToken` with the access token from the given process.  
   
 ```
-bool GetProcessToken(DWORD dwDesiredAccess,    HANDLE hProcess = NULL) throw();
+bool GetProcessToken(DWORD dwDesiredAccess, HANDLE hProcess = NULL) throw();
 ```  
   
 ### Parameters  
@@ -912,7 +912,7 @@ bool OpenThreadToken(
  Call this method to determine whether a specified set of privileges are enabled in the **CAccessToken** object.  
   
 ```
-bool PrivilegeCheck(PPRIVILEGE_SET RequiredPrivileges,    bool* pbResult) const throw();
+bool PrivilegeCheck(PPRIVILEGE_SET RequiredPrivileges, bool* pbResult) const throw();
 ```  
   
 ### Parameters  

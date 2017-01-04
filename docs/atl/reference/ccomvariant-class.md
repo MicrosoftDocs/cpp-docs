@@ -194,7 +194,7 @@ CComVariant(const CComBSTR& bstrSrc);
  Converts the `CComVariant` object to a new type.  
   
 ```
-HRESULT ChangeType(VARTYPE vtNew,    const VARIANT* pSrc = NULL);
+HRESULT ChangeType(VARTYPE vtNew, const VARIANT* pSrc = NULL);
 ```  
   
 ### Parameters  

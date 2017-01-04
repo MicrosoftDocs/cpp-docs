@@ -47,7 +47,7 @@ This class is used by the string conversion macros `CW2TEX` and `CT2WEX`, and th
 ## Syntax  
   
 ```
-template <int   t_nBufferLength = 128>  
+template <int t_nBufferLength = 128>  
 class CW2WEX
 ```  
   
@@ -108,9 +108,8 @@ class CW2WEX
  The constructor.  
   
 ```
-CW2WEX(LPCWSTR psz,    UINT nCodePage) throw(...);
-
-    CW2WEX( LPCWSTR  psz) throw(...);
+CW2WEX(LPCWSTR psz, UINT nCodePage) throw(...);
+CW2WEX( LPCWSTR  psz) throw(...);
 ```  
   
 ### Parameters  
@@ -144,7 +143,7 @@ LPWSTR m_psz;
  The static buffer, used to store the converted string.  
   
 ```
-wchar_t m_szBuffer[ t_nBufferLength];
+wchar_t m_szBuffer[t_nBufferLength];
 ```  
   
 ##  <a name="operator_lpwstr"></a>  CW2WEX::operator LPWSTR  

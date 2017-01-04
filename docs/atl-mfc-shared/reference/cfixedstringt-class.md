@@ -42,8 +42,7 @@ This class represents a string object with a fixed character buffer.
   
 ```
 template<class StringType, int t_nChars>
-class CFixedStringT : private CFixedStringMgr,
- public StringType
+class CFixedStringT : private CFixedStringMgr, public StringType
 ```  
   
 #### Parameters  
@@ -95,18 +94,11 @@ class CFixedStringT : private CFixedStringMgr,
   
 ```
 CFixedStringT() throw();
-
 explicit CFixedStringT(IAtlStringMgr* pStringMgr) throw();
-
-CFixedStringT(const CFixedStringT<StringType,
-t_nChars>& str);
-
+CFixedStringT(const CFixedStringT<StringType, t_nChars>& str);
 CFixedStringT(const StringType& str);
-
 CFixedStringT(const StringType::XCHAR* psz);
-
 explicit CFixedStringT(const StringType::YCHAR* psz);
-
 explicit CFixedStringT(const unsigned char* psz);
 ```  
   
@@ -127,21 +119,12 @@ explicit CFixedStringT(const unsigned char* psz);
  Reinitializes an existing `CFixedStringT` object with new data.  
   
 ```
-CFixedStringT<StringType,
-t_nChars>& operator=(const CFixedStringT<StringType,
-t_nChars>& str);
-
-CFixedStringT<StringType,
-t_nChars>& operator=(const char* psz);
-
-CFixedStringT<StringType,
-t_nChars>& operator=(const wchar_t* psz);
-
-CFixedStringT<StringType,
-t_nChars>& operator=(const unsigned char* psz);
-
-CFixedStringT<StringType,
- t_nChars>& operator=(const StringType& str);
+CFixedStringT<StringType, t_nChars>& operator=(
+  const CFixedStringT<StringType, t_nChars>& str);
+CFixedStringT<StringType, t_nChars>& operator=(const char* psz);
+CFixedStringT<StringType, t_nChars>& operator=(const wchar_t* psz);
+CFixedStringT<StringType, t_nChars>& operator=(const unsigned char* psz);
+CFixedStringT<StringType, t_nChars>& operator=(const StringType& str);
 ```  
   
 ### Parameters  

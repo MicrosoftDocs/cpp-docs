@@ -127,12 +127,8 @@ HRESULT AdviseSinkMap(bool bAdvise);
  Call this method to create a modeless dialog box.  
   
 ```
-HWND Create(HWND hWndParent,
-    LPARAM dwInitParam = NULL);
-
-    HWND Create(HWND hWndParent,
-    RECT&,
- LPARAM dwInitParam = NULL);
+HWND Create(HWND hWndParent, LPARAM dwInitParam = NULL);
+HWND Create(HWND hWndParent, RECT&, LPARAM dwInitParam = NULL);
 ```  
   
 ### Parameters  

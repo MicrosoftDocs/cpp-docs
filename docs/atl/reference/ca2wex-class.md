@@ -49,7 +49,7 @@ This class is used by the string conversion macros `CA2TEX`, `CA2CTEX`, `CT2WEX`
 ## Syntax  
   
 ```
-template <int   t_nBufferLength = 128>  
+template <int t_nBufferLength = 128>  
 class CA2WEX
 ```  
   
@@ -114,9 +114,8 @@ class CA2WEX
  The constructor.  
   
 ```
-CA2WEX(LPCSTR psz,    UINT nCodePage) throw(...);
-
-    CA2WEX( LPCSTR  psz) throw(...);
+CA2WEX(LPCSTR psz, UINT nCodePage) throw(...);
+CA2WEX( LPCSTR  psz) throw(...);
 ```  
   
 ### Parameters  

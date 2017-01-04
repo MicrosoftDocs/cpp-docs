@@ -136,9 +136,9 @@ CSid(
     BYTE nSubAuthorityCount,
     ...) throw(...);
 
-    explicit CSid(        LPCTSTR pszAccountName,        LPCTSTR pszSystem = NULL) throw(...);
+    explicit CSid(        LPCTSTR pszAccountName,     LPCTSTR pszSystem = NULL) throw(...);
 
-    explicit CSid(        const SID* pSid,        LPCTSTR pszSystem = NULL) throw(...);
+    explicit CSid(        const SID* pSid,     LPCTSTR pszSystem = NULL) throw(...);
 ```  
   
 ### Parameters  
@@ -309,10 +309,12 @@ bool IsValid() const throw();
  Updates the `CSid` object given the account name and domain, or an existing SID (security identifier) structure.  
   
 ```
-bool LoadAccount(LPCTSTR pszAccountName,
+bool LoadAccount(  
+    LPCTSTR pszAccountName,
     LPCTSTR pszSystem = NULL) throw(...);
 
-bool LoadAccount(const SID* pSid,
+bool LoadAccount(  
+    const SID* pSid,
     LPCTSTR pszSystem = NULL) throw(...);
 ```  
   

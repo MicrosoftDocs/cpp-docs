@@ -130,25 +130,27 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
   
 -   If you select a consumer **Type** of Table, the wizard uses the `db_source` and **db_table** attributes to create the table and table accessor class declarations, and uses **db_column** to create the column map, for example:  
   
- ``` *// Inject table class and table accessor class declarations  
- [  
-    db_source("<initialization_string>"), 
-    db_table("dbo.Orders")]  
- ... *// Column map  
- [ db_column(1, status=m_dwOrderIDStatus,      length=m_dwOrderIDLength) ] LONG m_OrderID;  
- [ db_column(2, status=m_dwCustomerIDStatus,      length=m_dwCustomerIDLength) ] TCHAR m_CustomerID[6];  
+ ``` 
+ // Inject table class and table accessor class declarations  
+ [db_source("<initialization_string>"), db_table("dbo.Orders")]  
+ ... 
+ // Column map  
+ [ db_column(1, status=m_dwOrderIDStatus, length=m_dwOrderIDLength) ] LONG m_OrderID;  
+ [ db_column(2, status=m_dwCustomerIDStatus, length=m_dwCustomerIDLength) ] TCHAR m_CustomerID[6];  
  ...  
  ```  
   
      instead of using the `CTable` template class to declare the table and table accessor class, and the BEGIN_COLUMN_MAP and END_COLUMN_MAP macros to create the column map, for example:  
   
- ``` *// Table accessor class  
+ ``` 
+ // Table accessor class  
     class COrdersAccessor; *// Table class  
     class COrders : public CTable<CAccessor<COrdersAccessor>>;  
- ... *// Column map  
+ ... 
+ // Column map  
     BEGIN_COLUMN_MAP(COrderDetailsAccessor) 
-    COLUMN_ENTRY_LENGTH_STATUS(1, m_OrderID,      m_dwOrderIDLength, m_dwOrderIDStatus)  
-    COLUMN_ENTRY_LENGTH_STATUS(2, m_CustomerID,      m_dwCustomerIDLength, m_dwCustomerIDStatus)  
+    COLUMN_ENTRY_LENGTH_STATUS(1, m_OrderID, m_dwOrderIDLength, m_dwOrderIDStatus)  
+    COLUMN_ENTRY_LENGTH_STATUS(2, m_CustomerID, m_dwCustomerIDLength, m_dwCustomerIDStatus)  
  ...  
     END_COLUMN_MAP() 
  ```  
@@ -156,10 +158,9 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
 -   If you select a consumer **Type** of Command, the wizard uses the `db_source` and **db_command** attributes, and uses **db_column** to create the column map, for example:  
   
  ```  
- [  
-    db_source("<initialization_string>"), 
-    db_command("SQL_command")]  
- ... *// Column map using db_column is the same as for consumer type of 'table'  
+ [db_source("<initialization_string>"), db_command("SQL_command")]  
+ ... 
+ // Column map using db_column is the same as for consumer type of 'table'  
  ```  
   
      instead of using the command and command accessor class declarations in the command class' .h file, for example:  
@@ -169,7 +170,9 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
     class CListOrdersAccessor;  
     Command class:  
     class CListOrders : public CCommand<CAccessor<CListOrdersAccessor>>;  
- ... *// Column map using BEGIN_COLUMN_MAP ... END_COLUMN_MAP is the same as *// for consumer type of 'table'  
+ ... 
+ // Column map using BEGIN_COLUMN_MAP ... END_COLUMN_MAP is the same as
+ // for consumer type of 'table'  
  ```  
   
  See [Basic Mechanics of Attributes](../../windows/basic-mechanics-of-attributes.md) for more information.  

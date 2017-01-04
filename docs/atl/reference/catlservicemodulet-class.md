@@ -206,8 +206,7 @@ BOOL IsInstalled() throw();
  Writes to the event log.  
   
 ```
-void __cdecl LogEvent(LPCTSTR pszFormat,
- ...) throw();
+void __cdecl LogEvent(LPCTSTR pszFormat, ...) throw();
 ```  
   
 ### Parameters  
@@ -320,8 +319,7 @@ void OnUnknownRequest(DWORD /* dwOpcode*/) throw();
  Parses the command line and performs registration if necessary.  
   
 ```
-bool ParseCommandLine(LPCTSTR lpCmdLine,
-    HRESULT* pnRetCode) throw();
+bool ParseCommandLine(LPCTSTR lpCmdLine, HRESULT* pnRetCode) throw();
 ```  
   
 ### Parameters  

@@ -115,7 +115,7 @@ template <class T,
   
 ```  
  
-HWND Create(HWND hWndParent,    LPARAM dwInitParam = NULL);
+HWND Create(HWND hWndParent, LPARAM dwInitParam = NULL);
 
     HWND Create(
     HWND hWndParent,  
@@ -195,12 +195,10 @@ static LRESULT CALLBACK DialogProc(
 ##  <a name="domodal"></a>  CDialogImpl::DoModal  
  Creates a modal dialog box.  
   
-```  
- 
-INT_PTR DoModal(HWND hWndParent = ::GetActiveWindow(),   
-    LPARAM dwInitParam = NULL);
-
- 
+```   
+INT_PTR DoModal(  
+    HWND hWndParent = ::GetActiveWindow(),   
+    LPARAM dwInitParam = NULL); 
 ```  
   
 ### Parameters  
@@ -221,11 +219,8 @@ INT_PTR DoModal(HWND hWndParent = ::GetActiveWindow(),
 ##  <a name="enddialog"></a>  CDialogImpl::EndDialog  
  Destroys a modal dialog box.  
   
-```  
- 
-BOOL EndDialog(int nRetCode);
-
- 
+```   
+BOOL EndDialog(int nRetCode); 
 ```  
   
 ### Parameters  
@@ -244,11 +239,8 @@ BOOL EndDialog(int nRetCode);
 ##  <a name="getdialogproc"></a>  CDialogImpl::GetDialogProc  
  Returns `DialogProc`, the current dialog box procedure.  
   
-```  
- 
-virtual WNDPROC GetDialogProc();
-
- 
+```   
+virtual WNDPROC GetDialogProc(); 
 ```  
   
 ### Return Value  
@@ -260,11 +252,8 @@ virtual WNDPROC GetDialogProc();
 ##  <a name="mapdialogrect"></a>  CDialogImpl::MapDialogRect  
  Converts (maps) the dialog-box units of the specified rectangle to screen units (pixels).  
   
-```  
- 
-BOOL MapDialogRect(LPRECT lpRect);
-
- 
+```   
+BOOL MapDialogRect(LPRECT lpRect); 
 ```  
   
 ### Parameters  
@@ -280,11 +269,8 @@ BOOL MapDialogRect(LPRECT lpRect);
 ##  <a name="onfinalmessage"></a>  CDialogImpl::OnFinalMessage  
  Called after receiving the last message (typically `WM_NCDESTROY`).  
   
-```  
- 
-virtual void OnFinalMessage(HWND hWnd);
-
- 
+```   
+virtual void OnFinalMessage(HWND hWnd); 
 ```  
   
 ### Parameters  
@@ -297,15 +283,12 @@ virtual void OnFinalMessage(HWND hWnd);
 ##  <a name="startdialogproc"></a>  CDialogImpl::StartDialogProc  
  Called only once, when the first message is received, to process messages sent to the dialog box.  
   
-```  
- 
+```   
 static LRESULT CALLBACK StartDialogProc(
     HWND hWnd,  
     UINT uMsg,  
     WPARAM wParam,  
-    LPARAM lParam);
-
- 
+    LPARAM lParam); 
 ```  
   
 ### Parameters  

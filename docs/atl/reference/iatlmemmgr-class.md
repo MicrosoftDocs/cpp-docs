@@ -658,7 +658,8 @@ STDMETHOD(AttachControl)(
  Creates a control, initializes it, and hosts it in the window identified by `hWnd`.  
   
 ```
-STDMETHOD(CreateControl)(LPCOLESTR lpTricsData,
+STDMETHOD(CreateControl)(
+    LPCOLESTR lpTricsData,
     HWND hWnd,
     IStream* pStream);
 ```  
@@ -687,7 +688,8 @@ STDMETHOD(CreateControl)(LPCOLESTR lpTricsData,
  Creates an ActiveX control, initializes it, and hosts it in the specified window, similar to [IAxWinHostWindow::CreateControl](#createcontrol).  
   
 ```
-STDMETHOD(CreateControlEx)(LPCOLESTR lpszTricsData,
+STDMETHOD(CreateControlEx)(
+    LPCOLESTR lpszTricsData,
     HWND hWnd,
     IStream* pStream,
     IUnknown** ppUnk,
@@ -726,8 +728,7 @@ STDMETHOD(CreateControlEx)(LPCOLESTR lpszTricsData,
  Returns the specified interface pointer provided by the hosted control.  
   
 ```
-STDMETHOD(QueryControl)(REFIID riid,
-    void** ppvObject);
+STDMETHOD(QueryControl)(REFIID riid, void** ppvObject);
 ```  
   
 ### Parameters  
@@ -775,7 +776,8 @@ STDMETHOD(SetExternalUIHandler)(IDocHostUIHandlerDispatch* pDisp);
  Creates a licensed control, initializes it, and hosts it in the window identified by `hWnd`.  
   
 ```
-STDMETHOD(CreateControlLic)(LPCOLESTR lpTricsData,
+STDMETHOD(CreateControlLic)(
+    LPCOLESTR lpTricsData,
     HWND hWnd,
     IStream* pStream,
     BSTR bstrLic);
@@ -797,7 +799,8 @@ STDMETHOD(CreateControlLic)(LPCOLESTR lpTricsData,
  Creates a licensed ActiveX control, initializes it, and hosts it in the specified window, similar to [IAxWinHostWindow::CreateControl](#createcontrol).  
   
 ```
-STDMETHOD(CreateControlLicEx)(LPCOLESTR lpszTricsData,
+STDMETHOD(CreateControlLicEx)(
+    LPCOLESTR lpszTricsData,
     HWND hWnd,
     IStream* pStream,
     IUnknown** ppUnk,

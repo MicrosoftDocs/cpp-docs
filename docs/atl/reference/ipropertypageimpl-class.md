@@ -109,7 +109,8 @@ class IPropertyPageImpl
  Creates the dialog box window for the property page.  
   
 ```
-HRESULT Activate(HWND hWndParent,
+HRESULT Activate(  
+    HWND hWndParent,
     LPCRECT pRect,
     BOOL bModal);
 ```  
@@ -275,7 +276,8 @@ void SetDirty(BOOL bDirty);
  Provides an array of **IUnknown** pointers for the objects associated with the property page.  
   
 ```
-HRESULT SetObjects(ULONG nObjects,
+HRESULT SetObjects(  
+    ULONG nObjects,
     IUnknown** ppUnk);
 ```  
   

@@ -144,7 +144,8 @@ CBindStatusCallback();
  Creates a `CBindStatusCallback` object and calls `StartAsyncDownload` to start downloading data asynchronously from the specified URL.  
   
 ```
-static HRESULT Download(T* pT,
+static HRESULT Download(  
+    T* pT,
     ATL_PDATAAVAILABLE pFunc,
     BSTR bstrURL,
     IUnknown* pUnkContainer = NULL,
@@ -313,7 +314,8 @@ CComPtr<IStream> m_spStream;
  The system-supplied asynchronous moniker calls `OnDataAvailable` to provide data to the object as it becomes available.  
   
 ```
-STDMETHOD(OnDataAvailable)(DWORD grfBSCF,
+STDMETHOD(  
+    OnDataAvailable)(DWORD grfBSCF,
     DWORD dwSize,
     FORMATETC* /* pformatetc */,
     STGMEDIUM* pstgmed);
@@ -356,8 +358,7 @@ STDMETHOD(OnLowResource)(DWORD /* dwReserved */);
  Called by the asynchronous moniker to pass an object interface pointer to your application.  
   
 ```
-STDMETHOD(OnObjectAvailable)(REFID /* riid */,
-    IUnknown* /* punk */);
+STDMETHOD(OnObjectAvailable)(REFID /* riid */, IUnknown* /* punk */);
 ```  
   
 ### Parameters  
@@ -374,7 +375,8 @@ STDMETHOD(OnObjectAvailable)(REFID /* riid */,
  Called to indicate the progress of a data downloading process.  
   
 ```
-STDMETHOD(OnProgress)(ULONG /* ulProgress */,
+STDMETHOD(OnProgress)(
+    ULONG /* ulProgress */,
     ULONG /* ulProgressMax */,
     ULONG /* ulStatusCode */,
     LPCWSTRONG /* szStatusText */);
@@ -400,8 +402,7 @@ STDMETHOD(OnProgress)(ULONG /* ulProgress */,
  Sets the data member [m_spBinding](#m_spbinding) to the `IBinding` pointer in `pBinding`.  
   
 ```
-STDMETHOD(OnStartBinding)(DWORD /* dwReserved */,
-    IBinding* pBinding);
+STDMETHOD(OnStartBinding)(DWORD /* dwReserved */, IBinding* pBinding);
 ```  
   
 ### Parameters  
@@ -432,7 +433,8 @@ STDMETHOD(OnStopBinding)(HRESULT hresult,  LPCWSTR /* szError */);
  Starts downloading data asynchronously from the specified URL.  
   
 ```
-HRESULT StartAsyncDownload(T* pT,
+HRESULT StartAsyncDownload(  
+    T* pT,
     ATL_PDATAAVAILABLE pFunc,
     BSTR bstrURL,
     IUnknown* pUnkContainer = NULL,

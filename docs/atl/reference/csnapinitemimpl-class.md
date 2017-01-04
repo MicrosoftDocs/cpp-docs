@@ -108,7 +108,8 @@ class ATL_NO_VTABLE CSnapInItemImpl : public CSnapInItem
  This method implements the Win32 function [IExtendContextMenu::AddMenuItems](http://msdn.microsoft.com/library/aa814841).  
   
 ```
-AddMenuItems(LPCONTEXTMENUCALLBACK piCallback,
+AddMenuItems(  
+    LPCONTEXTMENUCALLBACK piCallback,
     long* pInsertionAllowed,
     DATA_OBJECT_TYPES type);
 ```  
@@ -165,7 +166,8 @@ Command(long lCommandID,  DATA_OBJECT_TYPES type);
  This method implements the Win32 function [IExtendPropertySheet::CreatePropertyPages](http://msdn.microsoft.com/library/aa814846).  
   
 ```
-CreatePropertyPages(LPPROPERTYSHEETCALLBACK lpProvider,
+CreatePropertyPages(  
+    LPPROPERTYSHEETCALLBACK lpProvider,
     long handle,
     IUnknown* pUnk,
     DATA_OBJECT_TYPES type);
@@ -283,7 +285,8 @@ RESULTDATAITEM m_resultDataItem;
  Called when the snap-in object is acted upon by the user.  
   
 ```
-STDMETHOD(Notify)(MMC_NOTIFY_TYPE event,
+STDMETHOD(Notify)(
+    MMC_NOTIFY_TYPE event,
     long arg,
     long param,
     IComponentData* pComponentData,
@@ -357,7 +360,8 @@ QueryPagesFor(DATA_OBJECT_TYPES type);
  Call this function to modify the menu insertion flags, specified by `pInsertionAllowed`, for the snap-in object.  
   
 ```
-void SetMenuInsertionFlags(bool bBeforeInsertion,
+void SetMenuInsertionFlags(  
+    bool bBeforeInsertion,
     long* pInsertionAllowed);
 ```  
   
@@ -385,7 +389,8 @@ void SetMenuInsertionFlags(bool bBeforeInsertion,
  Call this function to modify any toolbar button styles, of the snap-in object, before the toolbar is created.  
   
 ```
-void SetToolbarButtonInfo(UINT id,
+void SetToolbarButtonInfo(  
+    UINT id,
     BYTE* fsState,
     BYTE* fsType);
 ```  
@@ -426,7 +431,8 @@ void SetToolbarButtonInfo(UINT id,
  Call this function to modify a menu item before it is inserted into the context menu of the snap-in object.  
   
 ```
-void UpdateMenuState(UINT id,
+void UpdateMenuState(  
+    UINT id,
     LPTSTR pBuf,
     UINT* flags);
 ```  

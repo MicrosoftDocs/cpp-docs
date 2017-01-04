@@ -146,7 +146,8 @@ CComPolyObject(void* pv);
  Allows you to create a new **CComPolyObject<**`contained` **>** object without the overhead of [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).  
   
 ```
-static HRESULT WINAPI CreateInstance(LPUNKNOWN pUnkOuter,
+static HRESULT WINAPI CreateInstance(  
+    LPUNKNOWN pUnkOuter, 
     CComPolyObject<contained>** pp);
 ```  
   
@@ -198,7 +199,6 @@ CComContainedObject<contained> m_contained;
   
 ```
 STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
-
 template <class Q>
 HRESULT QueryInterface(Q** pp);
 ```  

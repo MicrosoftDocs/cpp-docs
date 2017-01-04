@@ -94,9 +94,7 @@ class CComClassFactorySingleton : public CComClassFactory
  Calls `QueryInterface` through [m_spObj](#m_spobj) to retrieve an interface pointer.  
   
 ```
-STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter,
-    REFIID riid,
-    void** ppvObj);
+STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
 ```  
   
 ### Parameters  

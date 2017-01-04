@@ -95,8 +95,7 @@ STDMETHOD(EnumConnectionPoints)(IEnumConnectionPoints** ppEnum);
  Retrieves an interface pointer to the connection point that supports the specified IID.  
   
 ```
-STDMETHOD(FindConnectionPoint)(REFIID riid,
-    IConnectionPoint** ppCP);
+STDMETHOD(FindConnectionPoint)(REFIID riid, IConnectionPoint** ppCP);
 ```  
   
 ### Remarks  

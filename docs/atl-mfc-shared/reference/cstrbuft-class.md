@@ -118,10 +118,7 @@ static const DWORD AUTO_LENGTH = 0x01;
  Constructs a buffer object.  
   
 ```
-CStrBufT(StringType& str,
- int nMinLength,
- DWORD dwFlags = AUTO_LENGTH) throw(...);
-
+CStrBufT(StringType& str, int nMinLength, DWORD dwFlags = AUTO_LENGTH) throw(...);
 explicit CStrBufT(StringType& str) throw(...);
 ```  
   

@@ -158,11 +158,13 @@ This function is an overloaded wrapper for [PathCombine](https://msdn.microsoft.
 
 ### Syntax  
 ```
-inline char* Combine(char* pszDest,
+inline char* Combine(  
+   char* pszDest,
    const char* pszDir,
    const char* pszFile 
 );
-inline wchar_t* Combine(wchar_t* pszDest,
+inline wchar_t* Combine(  
+   wchar_t* pszDest,
    const wchar_t* pszDir,
    const wchar_t* pszFile 
 );
@@ -177,7 +179,8 @@ See PathCombine for details.
 ### Syntax  
   
 ```  
-inline int CommonPrefix(const char* pszFile1, 
+inline int CommonPrefix(  
+   const char* pszFile1, 
    const char* pszFile2,  
    char* pszDest);  
 

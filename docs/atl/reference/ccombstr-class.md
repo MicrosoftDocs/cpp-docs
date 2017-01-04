@@ -283,9 +283,9 @@ CComBSTR( const CComBSTR& src);
 
     CComBSTR( int  nSize);
 
-    CComBSTR( int  nSize,    LPCOLESTR sz);
+    CComBSTR( int  nSize, LPCOLESTR sz);
 
-    CComBSTR( int  nSize,    LPCSTR sz);
+    CComBSTR( int  nSize, LPCSTR sz);
 
     CComBSTR( LPCOLESTR  pSrc);
 

@@ -120,7 +120,8 @@ STDMETHOD(Load)(LPPROPERTYBAG pPropBag,  LPERRORLOG pErrorLog);
  Saves the object's properties into a client-supplied property bag.  
   
 ```
-STDMETHOD(Save)(LPPROPERTYBAG pPropBag,
+STDMETHOD(Save)(
+    LPPROPERTYBAG pPropBag,
     BOOL fClearDirty,
     BOOL fSaveAllProperties);
 ```  

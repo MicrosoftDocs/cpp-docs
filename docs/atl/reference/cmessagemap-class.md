@@ -76,7 +76,8 @@ class ATL_NO_VTABLE CMessageMap
  Accesses the message map identified by `dwMsgMapID` in a `CMessageMap`-derived class.  
   
 ```
-virtual BOOL ProcessWindowMessage(HWND hWnd,
+virtual BOOL ProcessWindowMessage(  
+    HWND hWnd,
     UINT uMsg,
     WPARAM wParam,
     LPARAM lParam,

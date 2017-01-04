@@ -889,9 +889,9 @@ void operator+=(LPCRECT lpRect) throw();
   
 ### Example  
 ```cpp  
- CRect   rect1(100, 235, 200, 335);
+ CRect rect1(100, 235, 200, 335);
  CPoint pt(35, 65);
- CRect   rect2(135, 300, 235, 400);
+ CRect rect2(135, 300, 235, 400);
 
  rect1 += pt;
  ASSERT(rect1 == rect2);  
@@ -923,11 +923,11 @@ void operator-=(LPCRECT lpRect) throw();
   
 ### Example  
 ```cpp  
- CRect   rect1(100, 235, 200, 335);
+ CRect rect1(100, 235, 200, 335);
  CPoint pt(35, 65);
  rect1 -= pt;
 
- CRect   rectResult(65, 170, 165, 270);
+ CRect rectResult(65, 170, 165, 270);
  ASSERT(rect1 == rectResult);  
 ```
   
@@ -970,11 +970,11 @@ void operator|=(const RECT& rect) throw();
   
 ### Example  
 ```cpp  
- CRect   rect1(100,   0, 200, 300);
- CRect   rect2( 0, 100, 300, 200);
+ CRect rect1(100,   0, 200, 300);
+ CRect rect2( 0, 100, 300, 200);
  rect1 |= rect2;
 
- CRect   rectResult(0, 0, 300, 300);
+ CRect rectResult(0, 0, 300, 300);
  ASSERT(rectResult == rect1);  
 ```
 
@@ -1008,9 +1008,9 @@ CRect operator+(SIZE size) const throw();
   
 ### Example  
 ```cpp  
- CRect   rect1(100, 235, 200, 335);
+ CRect rect1(100, 235, 200, 335);
  CPoint pt(35, 65);
- CRect   rect2;
+ CRect rect2;
 
  rect2 = rect1 + pt;
  CRect rectResult(135, 300, 235, 400);
@@ -1047,12 +1047,12 @@ CRect operator-(LPCRECT lpRect) const throw();
   
 ### Example  
 ```cpp  
- CRect   rect1(100, 235, 200, 335);
+ CRect rect1(100, 235, 200, 335);
  CPoint pt(35, 65);
- CRect   rect2;
+ CRect rect2;
 
  rect2 = rect1 - pt;
- CRect   rectResult(65, 170, 165, 270);
+ CRect rectResult(65, 170, 165, 270);
  ASSERT(rect2 == rectResult);  
 ```
 
@@ -1079,12 +1079,12 @@ CRect operator&(const RECT& rect2) const throw();
   
 ### Example  
 ```cpp  
- CRect   rect1(100,   0, 200, 300);
- CRect   rect2( 0, 100, 300, 200);
- CRect   rect3;
+ CRect rect1(100,   0, 200, 300);
+ CRect rect2( 0, 100, 300, 200);
+ CRect rect3;
 
  rect3 = rect1 & rect2;
-  CRect   rectResult(100, 100, 200, 200);
+CRect rectResult(100, 100, 200, 200);
  ASSERT(rectResult == rect3);  
 ```
 
@@ -1111,13 +1111,13 @@ CRect operator|(const RECT& rect2) const throw();
   
 ### Example  
 ```cpp  
- CRect   rect1(100,   0, 200, 300);
- CRect   rect2( 0, 100, 300, 200);
- CRect   rect3;
+ CRect rect1(100,   0, 200, 300);
+ CRect rect2( 0, 100, 300, 200);
+ CRect rect3;
 
  rect3 = rect1 | rect2;
 
- CRect   rectResult(0, 0, 300, 300);
+ CRect rectResult(0, 0, 300, 300);
  ASSERT(rectResult == rect3);  
 ```
 
@@ -1282,9 +1282,9 @@ CSize Size() const throw();
  rectTwo.bottom = 150;
  rectTwo.right = 150;
 
- CRect   rectDiff;
+ CRect rectDiff;
  rectDiff.SubtractRect(&rectOne, &rectTwo);
- CRect   rectResult(10, 10, 50, 100);
+ CRect rectResult(10, 10, 50, 100);
  ASSERT(rectDiff == rectResult);
 
  // works for CRect, too, since there is

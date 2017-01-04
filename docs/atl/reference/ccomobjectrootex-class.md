@@ -312,8 +312,7 @@ ULONG OuterAddRef();
  Retrieves an indirect pointer to the requested interface.  
   
 ```
-HRESULT OuterQueryInterface(REFIID iid,
-    void** ppvObject);
+HRESULT OuterQueryInterface(REFIID iid, void** ppvObject);
 ```  
   
 ### Parameters  

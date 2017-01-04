@@ -82,7 +82,8 @@ class ATL_NO_VTABLE IServiceProviderImpl : public IServiceProvider
  Creates or accesses the specified service and returns an interface pointer to the specified interface for the service.  
   
 ```
-STDMETHOD(QueryService)(REFGUID guidService,
+STDMETHOD(QueryService)(
+    REFGUID guidService,
     REFIID riid,
     void** ppvObject);
 ```  

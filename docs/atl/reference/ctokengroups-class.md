@@ -210,7 +210,8 @@ void GetSidsAndAttributes(
  Retrieves the attributes associated with a `CSid` object.  
   
 ```
-bool LookupSid(const CSid& rSid,
+bool LookupSid(  
+    const CSid& rSid,
     DWORD* pdwAttributes = NULL) const throw();
 ```  
   

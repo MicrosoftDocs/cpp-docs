@@ -255,7 +255,8 @@ operator HANDLE() throw();
  Call this method to read data from the temporary file starting at the position indicated by the file pointer.  
   
 ```
-HRESULT Read(LPVOID pBuffer,
+HRESULT Read(  
+    LPVOID pBuffer,
     DWORD nBufSize,
     DWORD& nBytesRead) throw();
 ```  
@@ -356,7 +357,8 @@ HRESULT UnlockRange(ULONGLONG nPos,  ULONGLONG nCount) throw();
  Call this method to write data to the temporary file starting at the position indicated by the file pointer.  
   
 ```
-HRESULT Write(LPCVOID pBuffer,
+HRESULT Write(  
+    LPCVOID pBuffer,
     DWORD nBufSize,
     DWORD* pnBytesWritten = NULL) throw();
 ```  

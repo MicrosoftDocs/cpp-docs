@@ -90,7 +90,7 @@ template <class  Q>
     static HRESULT CreateInstance(Q** pp);
 
     template <class  Q>
-    static HRESULT CreateInstance(IUnknown* punkOuter,    Q** pp);
+    static HRESULT CreateInstance(IUnknown* punkOuter, Q** pp);
 ```  
   
 ### Parameters  

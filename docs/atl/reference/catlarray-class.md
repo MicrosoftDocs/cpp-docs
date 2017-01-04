@@ -285,7 +285,8 @@ typedef ETraits::INARGTYPE INARGTYPE;
  Call this method to insert one array into another.  
   
 ```
-void InsertArrayAt(size_t iStart,
+void InsertArrayAt(  
+   size_t iStart,
     const CAtlArray<E, ETraits>* paNew);
 ```  
   
@@ -311,9 +312,10 @@ void InsertArrayAt(size_t iStart,
  Call this method to insert a new element (or multiple copies of an element) into the array object.  
   
 ```
-void InsertAt(size_t iElement,
-    INARGTYPE element,
-    size_t nCount = 1);
+void InsertAt(  
+   size_t iElement,
+   INARGTYPE element,
+   size_t nCount = 1);
 ```  
   
 ### Parameters  
@@ -355,7 +357,6 @@ bool IsEmpty() const throw();
   
 ```
 E& operator[](size_t ielement) throw();
-
 const E& operator[](size_t ielement) const throw();
 ```  
   

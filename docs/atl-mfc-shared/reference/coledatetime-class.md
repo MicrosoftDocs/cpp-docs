@@ -189,16 +189,15 @@ COleDateTime(const SYSTEMTIME& systimeSrc) throw();
 
 COleDateTime(const FILETIME& filetimeSrc) throw();
 
-COleDateTime(int nYear,
+COleDateTime(  
+ int nYear,
  int nMonth,
  int nDay,
  int nHour,
  int nMin,
  int nSec) throw();
 
-COleDateTime(WORD wDosDate,
- WORD wDosTime) throw();
-
+COleDateTime(WORD wDosDate, WORD wDosTime) throw();
 COleDateTime(const DBTIMESTAMP& dbts) throw();
 ```  
   
@@ -281,9 +280,7 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
   
 ```
 CString Format(DWORD dwFlags = 0,  LCID lcid = LANG_USER_DEFAULT) const;
-
 CString Format(LPCTSTR lpszFormat) const;
-
 CString Format(UINT nFormatID) const;
 ```  
   
@@ -867,7 +864,8 @@ COleDateTime& operator-=(COleDateTimeSpan dateSpan) throw();
  Parses a string to read a date/time value.  
   
 ```
-bool ParseDateTime(LPCTSTR lpszDate,
+bool ParseDateTime(  
+ LPCTSTR lpszDate,
  DWORD dwFlags = 0,
  LCID lcid = LANG_USER_DEFAULT) throw();
 ```  
@@ -925,7 +923,8 @@ bool ParseDateTime(LPCTSTR lpszDate,
  Sets the date of this `COleDateTime` object.  
   
 ```
-int SetDate(int nYear,
+int SetDate(  
+ int nYear,
  int nMonth,
  int nDay) throw();
 ```  
@@ -990,7 +989,8 @@ int SetDate(int nYear,
  Sets the date and time of this `COleDateTime` object.  
   
 ```
-int SetDateTime(int nYear,
+int SetDateTime(  
+ int nYear,
  int nMonth,
  int nDay,
  int nHour,
@@ -1088,7 +1088,8 @@ void SetStatus(DateTimeStatus status) throw();
  Sets the time of this `COleDateTime` object.  
   
 ```
-int SetTime(int nHour,
+int SetTime(  
+ int nHour,
  int nMin,
  int nSec) throw();
 ```  

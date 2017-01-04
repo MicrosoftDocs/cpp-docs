@@ -134,7 +134,8 @@ CTimeSpan() throw();
 
 CTimeSpan(__time64_t time) throw();
 
-CTimeSpan(LONG lDays,
+CTimeSpan(  
+ LONG lDays,
  int nHours,
  int nMins,
  int nSecs) throw();

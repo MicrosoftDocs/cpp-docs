@@ -103,9 +103,7 @@ class CComClassFactory2 : public IClassFactory2,
  Creates an object of the specified CLSID and retrieves an interface pointer to this object.  
   
 ```
-STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter,
-    REFIID riid,
-    void** ppvObj);
+STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
 ```  
   
 ### Parameters  
@@ -199,8 +197,7 @@ STDMETHOD(LockServer)(BOOL fLock);
  Creates and returns a license key, provided that the `fRuntimeKeyAvail` member of the [LICINFO](http://msdn.microsoft.com/library/windows/desktop/ms690590) structure is **TRUE**.  
   
 ```
-STDMETHOD(RequestLicKey)(DWORD dwReserved,
-    BSTR* pbstrKey);
+STDMETHOD(RequestLicKey)(DWORD dwReserved, BSTR* pbstrKey);
 ```  
   
 ### Parameters  

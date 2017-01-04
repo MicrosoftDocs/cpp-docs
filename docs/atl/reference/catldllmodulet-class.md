@@ -118,7 +118,8 @@ HRESULT DllCanUnloadNow() throw();
  Returns the class factory.  
   
 ```
-HRESULT DllGetClassObject(REFCLSID rclsid,
+HRESULT DllGetClassObject(  
+   REFCLSID rclsid,
     REFIID riid,
     LPVOID* ppv) throw();
 ```  
@@ -188,9 +189,10 @@ HRESULT DllUnregisterServer(BOOL bUnRegTypeLib = TRUE) throw();
  Creates an object of the specified CLSID.  
   
 ```
-HRESULT GetClassObject(REFCLSID rclsid,
-    REFIID riid,
-    LPVOID* ppv) throw();
+HRESULT GetClassObject(  
+   REFCLSID rclsid,
+   REFIID riid,
+   LPVOID* ppv) throw();
 ```  
   
 ### Parameters  

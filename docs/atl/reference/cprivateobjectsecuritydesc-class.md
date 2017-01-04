@@ -86,7 +86,8 @@ class CPrivateObjectSecurityDesc : public CSecurityDesc
  Call this method to convert a security descriptor and its access-control lists (ACLs) to a format that supports automatic propagation of inheritable access-control entries (ACEs).  
   
 ```
-bool ConvertToAutoInherit(const CSecurityDesc* pParent,
+bool ConvertToAutoInherit(  
+    const CSecurityDesc* pParent,
     GUID* ObjectType,
     bool bIsDirectoryObject,
     PGENERIC_MAPPING GenericMapping) throw();
@@ -135,12 +136,15 @@ CPrivateObjectSecurityDesc() throw();
  Call this method to allocate and initialize a self-relative security descriptor for the private object created by the calling resource manager.  
   
 ```
-bool Create(const CSecurityDesc* pParent,
+bool Create(  
+    const CSecurityDesc* pParent,
     const CSecurityDesc* pCreator,
     bool bIsDirectoryObject,
     const CAccessToken& Token,
     PGENERIC_MAPPING GenericMapping) throw();
-bool Create(const CSecurityDesc* pParent,
+
+bool Create(  
+    const CSecurityDesc* pParent,
     const CSecurityDesc* pCreator,
     GUID* ObjectType,
     bool bIsContainerObject,
@@ -189,7 +193,8 @@ bool Create(const CSecurityDesc* pParent,
  Call this method to retrieve information from a private object's security descriptor.  
   
 ```
-bool Get(SECURITY_INFORMATION si,
+bool Get(  
+    SECURITY_INFORMATION si,
     CSecurityDesc* pResult) const throw();
 ```  
   
@@ -224,11 +229,14 @@ CPrivateObjectSecurityDesc& operator= (const CPrivateObjectSecurityDesc& rhs) th
  Call this method to modify a private object's security descriptor.  
   
 ```
-bool Set(SECURITY_INFORMATION si,
+bool Set(  
+    SECURITY_INFORMATION si,
     const CSecurityDesc& Modification,
     PGENERIC_MAPPING GenericMapping,
     const CAccessToken& Token) throw();
-bool Set(SECURITY_INFORMATION si,
+
+bool Set(  
+    SECURITY_INFORMATION si,
     const CSecurityDesc& Modification,
     ULONG AutoInheritFlags,
     PGENERIC_MAPPING GenericMapping,

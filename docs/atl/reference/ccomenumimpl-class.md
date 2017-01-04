@@ -234,9 +234,7 @@ DWORD m_dwFlags;
  This method provides the implementation of the [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx) method.  
   
 ```
-STDMETHOD(Next)(ULONG celt,
-    T* rgelt,
-    ULONG* pceltFetched);
+STDMETHOD(Next)(ULONG celt, T* rgelt, ULONG* pceltFetched);
 ```  
   
 ### Parameters  

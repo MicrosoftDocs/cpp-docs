@@ -135,7 +135,7 @@ CComCurrency( DECIMAL  dSrc);
 
     CComCurrency( BYTE  bSrc);
 
-    CComCurrency( LONGLONG  nInteger,    SHORT nFraction);
+    CComCurrency( LONGLONG  nInteger, SHORT nFraction);
 
     explicit CComCurrency(LPDISPATCH pDispSrc);
 

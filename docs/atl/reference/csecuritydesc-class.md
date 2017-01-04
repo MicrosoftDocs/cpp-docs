@@ -489,10 +489,12 @@ bool SetControl(SECURITY_DESCRIPTOR_CONTROL ControlBitsOfInterest,  SECURITY_DES
  Sets information in a discretionary access-control list (DACL). If a DACL is already present in the security descriptor, it is replaced.  
   
 ```
-inline void SetDacl(bool bPresent = true,
+inline void SetDacl(  
+    bool bPresent = true,
     bool bDefaulted = false) throw(...);
 
-    inline void SetDacl(const CDacl& Dacl,
+    inline void SetDacl(  
+    const CDacl& Dacl,
     bool bDefaulted = false) throw(...);
 ```  
   

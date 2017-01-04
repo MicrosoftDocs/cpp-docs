@@ -318,7 +318,8 @@ BOOL SetAt(const TKey& key,  const TVal& val);
  Sets the key and value at a specified index.  
   
 ```
-BOOL SetAtIndex(int nIndex,
+BOOL SetAtIndex(  
+    int nIndex,
     const TKey& key,
     const TVal& val);
 ```  

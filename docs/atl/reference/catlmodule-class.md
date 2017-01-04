@@ -226,11 +226,13 @@ virtual LONG Unlock() throw();
  Runs the script contained in a specified resource to register or unregister an object.  
   
 ```
-HRESULT WINAPI UpdateRegistryFromResourceD(UINT nResID,
+HRESULT WINAPI UpdateRegistryFromResourceD(  
+    UINT nResID,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
 
-HRESULT WINAPI UpdateRegistryFromResourceD(LPCTSTR lpszRes,
+HRESULT WINAPI UpdateRegistryFromResourceD(  
+    LPCTSTR lpszRes,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
 ```  
@@ -262,7 +264,8 @@ HRESULT WINAPI UpdateRegistryFromResourceD(LPCTSTR lpszRes,
  This method is called by `UpdateRegistryFromResourceD` to perform the registry update.  
   
 ```
-inline HRESULT WINAPI UpdateRegistryFromResourceDHelper(LPCOLESTR lpszRes,
+inline HRESULT WINAPI UpdateRegistryFromResourceDHelper(  
+    LPCOLESTR lpszRes,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
 ```  
@@ -287,11 +290,13 @@ inline HRESULT WINAPI UpdateRegistryFromResourceDHelper(LPCOLESTR lpszRes,
  Runs the script contained in a specified resource to register or unregister an object. This method statically links to the ATL Registry Component.  
   
 ```
-HRESULT WINAPI UpdateRegistryFromResourceS(UINT nResID,
+HRESULT WINAPI UpdateRegistryFromResourceS(  
+    UINT nResID,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
 
-HRESULT WINAPI UpdateRegistryFromResourceS(LPCTSTR lpszRes,
+HRESULT WINAPI UpdateRegistryFromResourceS(  
+    LPCTSTR lpszRes,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
 ```  

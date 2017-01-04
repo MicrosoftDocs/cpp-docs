@@ -114,7 +114,8 @@ class ATL_NO_VTABLE IDispatchImpl : public T
  Maps a set of names to a corresponding set of dispatch identifiers.  
   
 ```
-STDMETHOD(GetIDsOfNames)(REFIID riid,
+STDMETHOD(GetIDsOfNames)(
+    REFIID riid,
     LPOLESTR* rgszNames,
     UINT cNames,
     LCID lcid,
@@ -128,7 +129,8 @@ STDMETHOD(GetIDsOfNames)(REFIID riid,
  Retrieves the type information for the dual interface.  
   
 ```
-STDMETHOD(GetTypeInfo)(UINT itinfo,
+STDMETHOD(GetTypeInfo)(
+    UINT itinfo,
     LCID lcid,
     ITypeInfo** pptinfo);
 ```  
@@ -157,7 +159,8 @@ IDispatchImpl();
  Provides access to the methods and properties exposed by the dual interface.  
   
 ```
-STDMETHOD(Invoke)(DISPID dispidMember,
+STDMETHOD(Invoke)(
+    DISPID dispidMember,
     REFIID riid,
     LCID lcid,
     WORD wFlags,

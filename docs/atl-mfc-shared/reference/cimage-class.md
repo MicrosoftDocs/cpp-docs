@@ -1470,8 +1470,8 @@ BOOL TransparentBlt(HDC hDestDC,
 ```cpp
 // Performs a transparent blit from the source image to the destination 
 // image using the images' current transparency settings
-BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage, int xDest, int yDest,
- int nDestWidth, int nDestHeight)
+BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage, 
+       int xDest, int yDest, int nDestWidth, int nDestHeight)
 {
   HDC hDstDC = NULL;
   BOOL bResult;

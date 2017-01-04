@@ -209,7 +209,8 @@ const LOGFONTW* m_plf;
  Handles the WM_PAINT message.  
   
 ```
-LRESULT OnPaint(UINT nMsg,
+LRESULT OnPaint(  
+    UINT nMsg,
     WPARAM wParam,
     LPARAM lParam,
     BOOL& bHandled);

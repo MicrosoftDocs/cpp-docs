@@ -342,7 +342,8 @@ BOOL CheckDlgButton(int nIDButton,  UINT nCheck) throw();
  Checks the specified radio button.  
   
 ```
-BOOL CheckRadioButton(int nIDFirstButton,
+BOOL CheckRadioButton(  
+    int nIDFirstButton,
     int nIDLastButton,
     int nIDCheckButton) throw();
 ```  
@@ -388,7 +389,8 @@ BOOL ClientToScreen(LPRECT lpRect) const throw();
  Creates a window.  
   
 ```
-HWND Create(LPCTSTR lpstrWndClass,
+HWND Create(  
+    LPCTSTR lpstrWndClass,
     HWND hWndParent,
     _U_RECT rect = NULL,
     LPCTSTR szWindowName = NULL,
@@ -488,7 +490,8 @@ CWindow(HWND hWnd = NULL) throw();
  Updates the specified multiple-window-position structure for the specified window.  
   
 ```
-HDWP DeferWindowPos(HDWP hWinPosInfo,
+HDWP DeferWindowPos(  
+    HDWP hWinPosInfo,
     HWND hWndInsertAfter,
     int x,
     int y,
@@ -532,7 +535,8 @@ HWND Detach() throw();
  Fills a list box with the names of all files matching a specified path or file name.  
   
 ```
-int DlgDirList(LPTSTR lpPathSpec,
+int DlgDirList(  
+    LPTSTR lpPathSpec,
     int nIDListBox,
     int nIDStaticPath,
     UINT nFileType) throw();
@@ -545,7 +549,8 @@ int DlgDirList(LPTSTR lpPathSpec,
  Fills a combo box with the names of all files matching a specified path or file name.  
   
 ```
-int DlgDirListComboBox(LPTSTR lpPathSpec,
+int DlgDirListComboBox(  
+    LPTSTR lpPathSpec,
     int nIDComboBox,
     int nIDStaticPath,
     UINT nFileType) throw();
@@ -558,7 +563,8 @@ int DlgDirListComboBox(LPTSTR lpPathSpec,
  Retrieves the current selection from a list box.  
   
 ```
-BOOL DlgDirSelect(LPTSTR lpString,
+BOOL DlgDirSelect(  
+    LPTSTR lpString,
     int nCount,
     int nIDListBox) throw();
 ```  
@@ -570,7 +576,8 @@ BOOL DlgDirSelect(LPTSTR lpString,
  Retrieves the current selection from a combo box.  
   
 ```
-BOOL DlgDirSelectComboBox(LPTSTR lpString,
+BOOL DlgDirSelectComboBox(  
+    LPTSTR lpString,
     int nCount,
     int nIDComboBox) throw();
 ```  
@@ -701,7 +708,8 @@ HWND GetDescendantWindow(int nID) const throw();
  Call this function to get a pointer to an interface of an ActiveX control that is hosted by a composite control or a control-hosting dialog.  
   
 ```
-HRESULT GetDlgControl(int nID,
+HRESULT GetDlgControl(  
+    int nID,
     REFIID iid,
     void** ppCtrl) throw();
 ```  
@@ -736,7 +744,8 @@ int GetDlgCtrlID() const throw();
  Retrieves a pointer to an interface to the ATL Control hosting container.  
   
 ```
-HRESULT GetDlgHost(int nID,
+HRESULT GetDlgHost(  
+    int nID,
     REFIID iid,
     void** ppHost) throw();
 ```  
@@ -771,7 +780,8 @@ HWND GetDlgItem(int nID) const throw();
  Translates a control's text to an integer.  
   
 ```
-UINT GetDlgItemInt(int nID,
+UINT GetDlgItemInt(  
+    int nID,
     BOOL* lpTrans = NULL,
     BOOL bSigned = TRUE) const throw();
 ```  
@@ -783,10 +793,12 @@ UINT GetDlgItemInt(int nID,
  Retrieves a control's text.  
   
 ```
-UINT GetDlgItemText(int nID,
+UINT GetDlgItemText(  
+    int nID,
     LPTSTR lpStr,
     int nMaxCount) const throw();
-BOOL GetDlgItemText(int nID,
+BOOL GetDlgItemText(  
+    int nID,
     BSTR& bstrText) const throw();
 ```  
   
@@ -926,7 +938,8 @@ int GetScrollPos(int nBar) const throw();
  Retrieves the scroll bar range.  
   
 ```
-BOOL GetScrollRange(int nBar,
+BOOL GetScrollRange(  
+    int nBar,
     LPINT lpMinPos,
     LPINT lpMaxPos) const throw();
 ```  
@@ -1212,7 +1225,8 @@ BOOL HideCaret() throw();
  Highlights or removes the highlight from a top-level menu item.  
   
 ```
-BOOL HiliteMenuItem(HMENU hMenu,
+BOOL HiliteMenuItem(  
+    HMENU hMenu,
     UINT uHiliteItem,
     UINT uHilite) throw();
 ```  
@@ -1411,11 +1425,13 @@ HWND m_hWnd throw() throw();
  Converts a set of points from the window's coordinate space to the coordinate space of another window.  
   
 ```
-int MapWindowPoints(HWND hWndTo,
+int MapWindowPoints(  
+    HWND hWndTo,
     LPPOINT lpPoint,
     UINT nCount) const throw();
 
-int MapWindowPoints(HWND hWndTo,
+int MapWindowPoints(  
+    HWND hWndTo,
     LPRECT lpRect) const throw();
 ```  
   
@@ -1428,7 +1444,8 @@ int MapWindowPoints(HWND hWndTo,
  Displays a message box.  
   
 ```
-int MessageBox(LPCTSTR lpszText,
+int MessageBox(  
+    LPCTSTR lpszText,
     LPCTSTR lpszCaption = NULL,
     UINT nType = MB_OK) throw();
 ```  
@@ -1443,7 +1460,8 @@ int MessageBox(LPCTSTR lpszText,
  Modifies the window styles of the `CWindow` object.  
   
 ```
-BOOL ModifyStyle(DWORD dwRemove,
+BOOL ModifyStyle(  
+    DWORD dwRemove,
     DWORD dwAdd,
     UINT nFlags = 0) throw();
 ```  
@@ -1483,7 +1501,8 @@ BOOL ModifyStyle(DWORD dwRemove,
  Modifies the extended window styles of the `CWindow` object.  
   
 ```
-BOOL ModifyStyleEx(DWORD dwRemove,
+BOOL ModifyStyleEx(  
+    DWORD dwRemove,
     DWORD dwAdd,
     UINT nFlags = 0) throw();
 ```  
@@ -1523,13 +1542,15 @@ BOOL ModifyStyleEx(DWORD dwRemove,
  Changes the window's size and position.  
   
 ```
-BOOL MoveWindow(int x,
+BOOL MoveWindow(  
+    int x,
     int y,
     int nWidth,
     int nHeight,
     BOOL bRepaint = TRUE) throw();
 
-BOOL MoveWindow(LPCRECT lpRect,
+BOOL MoveWindow(  
+    LPCRECT lpRect,
     BOOL bRepaint = TRUE) throw();
 ```  
   
@@ -1576,7 +1597,8 @@ CWindow& operator= (HWND hWnd) throw();
  Places a message in the message queue associated with the thread that created the window.  
   
 ```
-BOOL PostMessage(UINT message,
+BOOL PostMessage(  
+    UINT message,
     WPARAM wParam = 0,
     LPARAM lParam = 0) throw();
 ```  
@@ -1662,7 +1684,8 @@ static RECT rcDefault;
  Updates a specified rectangle or region in the client area.  
   
 ```
-BOOL RedrawWindow(LPCRECT lpRectUpdate = NULL,
+BOOL RedrawWindow(  
+    LPCRECT lpRectUpdate = NULL,
     HRGN hRgnUpdate = NULL,
     UINT flags = RDW_INVALIDATE | RDW_UPDATENOW | RDW_ERASE);
 
@@ -1692,7 +1715,8 @@ int ReleaseDC(HDC hDC);
  Resizes the window to the specified client area size.  
   
 ```
-BOOL ResizeClient(int nWidth,
+BOOL ResizeClient(  
+    int nWidth,
     int nHeight,
     BOOL bRedraw = FALSE) throw();
 ```  
@@ -1725,7 +1749,8 @@ BOOL ScreenToClient(LPRECT lpRect) const throw();
  Scrolls the specified client area.  
   
 ```
-BOOL ScrollWindow(int xAmount,
+BOOL ScrollWindow(  
+    int xAmount,
     int yAmount,
     LPCRECT lpRect = NULL,
     LPCRECT lpClipRect = NULL) throw();
@@ -1738,7 +1763,8 @@ BOOL ScrollWindow(int xAmount,
  Scrolls the specified client area with additional features.  
   
 ```
-int ScrollWindowEx(int dx,
+int ScrollWindowEx(  
+    int dx,
     int dy,
     LPCRECT lpRectScroll,
     LPCRECT lpRectClip,
@@ -1754,7 +1780,8 @@ int ScrollWindowEx(int dx,
  Sends a message to a control.  
   
 ```
-LRESULT SendDlgItemMessage(int nID,
+LRESULT SendDlgItemMessage(  
+    int nID,
     UINT message,
     WPARAM wParam = 0,
     LPARAM lParam = 0) throw();
@@ -1767,10 +1794,12 @@ LRESULT SendDlgItemMessage(int nID,
  Sends a message to the window and does not return until the window procedure has processed the message.  
   
 ```
-LRESULT SendMessage(UINT message,
+LRESULT SendMessage(  
+    UINT message,
     WPARAM wParam = 0,
     LPARAM lParam = 0) throw();
-static LRESULT SendMessage(HWND hWnd,
+static LRESULT SendMessage(  
+    HWND hWnd,
     UINT message,
     WPARAM wParam,
     LPARAM lParam) throw();
@@ -1786,7 +1815,8 @@ static LRESULT SendMessage(HWND hWnd,
  Sends the specified message to all immediate children of the `CWindow` object.  
   
 ```
-void SendMessageToDescendants(UINT message,
+void SendMessageToDescendants(  
+    UINT message,
     WPARAM wParam = 0,
     LPARAM lParam = 0,
     BOOL bDeep = TRUE) throw();
@@ -1812,7 +1842,8 @@ void SendMessageToDescendants(UINT message,
  Sends a message to the window.  
   
 ```
-BOOL SendNotifyMessage(UINT message,
+BOOL SendNotifyMessage(  
+    UINT message,
     WPARAM wParam = 0,
     LPARAM lParam = 0) throw();
 ```  
@@ -1873,7 +1904,8 @@ int SetDlgCtrlID(int nID) throw();
  Changes a control's text to the string representation of an integer value.  
   
 ```
-BOOL SetDlgItemInt(int nID,
+BOOL SetDlgItemInt(  
+    int nID,
     UINT nValue,
     BOOL bSigned = TRUE) throw();
 ```  
@@ -1999,7 +2031,8 @@ void SetRedraw(BOOL bRedraw = TRUE) throw();
  Sets the parameters of a scroll bar.  
   
 ```
-int SetScrollInfo(int nBar,
+int SetScrollInfo(  
+    int nBar,
     LPSCROLLINFO lpScrollInfo,
     BOOL bRedraw = TRUE) throw();
 ```  
@@ -2011,7 +2044,8 @@ int SetScrollInfo(int nBar,
  Changes the position of the scroll box.  
   
 ```
-int SetScrollPos(int nBar,
+int SetScrollPos(  
+    int nBar,
     int nPos,
     BOOL bRedraw = TRUE) throw();
 ```  
@@ -2023,7 +2057,8 @@ int SetScrollPos(int nBar,
  Changes the scroll bar range.  
   
 ```
-BOOL SetScrollRange(int nBar,
+BOOL SetScrollRange(  
+    int nBar,
     int nMinPos,
     int nMaxPos,
     BOOL bRedraw = TRUE) throw();
@@ -2036,7 +2071,8 @@ BOOL SetScrollRange(int nBar,
  Creates a timer event.  
   
 ```
-UINT SetTimer(UINT nIDEvent,
+UINT SetTimer(  
+    UINT nIDEvent,
     UINT nElapse,
     void (CALLBACK* lpfnTimer)(HWND,
     UINT,
@@ -2096,13 +2132,15 @@ BOOL SetWindowPlacement(const WINDOWPLACEMENT FAR* lpwndpl);
  Sets the size, position, and Z order.  
   
 ```
-BOOL SetWindowPos(HWND hWndInsertAfter,
+BOOL SetWindowPos(  
+    HWND hWndInsertAfter,
     int x,
     int y,
     int cx,
     int cy,
     UINT nFlags) throw();
-BOOL SetWindowPos(HWND hWndInsertAfter,
+BOOL SetWindowPos(  
+    HWND hWndInsertAfter,
     LPCRECT lpRect,
     UINT nFlags) throw();
 ```  
@@ -2238,7 +2276,8 @@ BOOL ValidateRgn(HRGN hRgn) throw();
  Starts Windows Help.  
   
 ```
-BOOL WinHelp(LPCTSTR lpszHelp,
+BOOL WinHelp(  
+    LPCTSTR lpszHelp,
     UINT nCmd = HELP_CONTEXT,
     DWORD dwData = 0) throw();
 ```  

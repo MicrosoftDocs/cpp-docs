@@ -121,8 +121,7 @@ STDMETHOD(getcount)(long* pcount);
  This method returns the specified item from the collection.  
   
 ```
-STDMETHOD(get_Item)(long Index,
-    ItemType* pvar);
+STDMETHOD(get_Item)(long Index, ItemType* pvar);
 ```  
   
 ### Parameters  
