@@ -98,8 +98,7 @@ void Execute(
  Implementation of [WorkerArchetype::Initialize](worker-archetype.md#initialize).  
   
 ```
-BOOL Initialize(void* /* pvParam
- */) throw();
+BOOL Initialize(void* /* pvParam */) throw();
 ```  
   
 ### Return Value  
@@ -122,8 +121,7 @@ typedef Worker::RequestType RequestType;
  Implementation of [WorkerArchetype::Terminate](worker-archetype.md#terminate).  
   
 ```
-void Terminate(void* /* pvParam
- */) throw();
+void Terminate(void* /* pvParam */) throw();
 ```  
   
 ### Remarks  

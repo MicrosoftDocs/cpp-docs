@@ -77,9 +77,7 @@ class CStringRefElementTraits : public CElementTraitsBase<T>
  Call this static function to compare two string elements for equality.  
   
 ```
-static bool CompareElements(
-    INARGTYPE element1,
-    INARGTYPE element2) throw();
+static bool CompareElements(INARGTYPE element1,    INARGTYPE element2) throw();
 ```  
   
 ### Parameters  
@@ -96,9 +94,7 @@ static bool CompareElements(
  Call this static function to compare two string elements.  
   
 ```
-static int CompareElementsOrdered(
-    INARGTYPE str1,
-    INARGTYPE str2) throw();
+static int CompareElementsOrdered(INARGTYPE str1,    INARGTYPE str2) throw();
 ```  
   
 ### Parameters  

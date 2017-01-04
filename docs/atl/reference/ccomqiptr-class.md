@@ -86,10 +86,8 @@ class CComQIPtr: public CComPtr<T>
 ```
 CComQIPtr() throw();
 CComQIPtr(T* lp) throw();
-CComQIPtr(
- IUnknown* lp) throw();
-CComQIPtr(
- const CComQIPtr<T, piid>& lp) throw();
+CComQIPtr( IUnknown* lp) throw();
+CComQIPtr( const CComQIPtr<T, piid>& lp) throw();
 ```  
   
 ### Parameters  

@@ -117,8 +117,7 @@ BOOL Add(const T& t);
  The constructor for the array object.  
   
 ```
-CSimpleArray(
-    const CSimpleArray<T, TEqual>& src);
+CSimpleArray(const CSimpleArray<T, TEqual>& src);
 
     CSimpleArray();
 ```     

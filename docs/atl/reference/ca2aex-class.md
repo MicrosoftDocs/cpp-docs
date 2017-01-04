@@ -109,12 +109,9 @@ class CA2AEX
  The constructor.  
   
 ```
-CA2AEX(
-    LPCSTR psz,
-    UINT nCodePage) throw(...);
+CA2AEX(LPCSTR psz,    UINT nCodePage) throw(...);
 
-    CA2AEX(
- LPCSTR  psz) throw(...);
+    CA2AEX( LPCSTR  psz) throw(...);
 ```  
   
 ### Parameters  

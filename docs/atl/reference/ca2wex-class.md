@@ -114,12 +114,9 @@ class CA2WEX
  The constructor.  
   
 ```
-CA2WEX(
-    LPCSTR psz,
-    UINT nCodePage) throw(...);
+CA2WEX(LPCSTR psz,    UINT nCodePage) throw(...);
 
-    CA2WEX(
- LPCSTR  psz) throw(...);
+    CA2WEX( LPCSTR  psz) throw(...);
 ```  
   
 ### Parameters  

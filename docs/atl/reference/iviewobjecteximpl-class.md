@@ -51,7 +51,8 @@ This class implements **IUnknown** and provides default implementations of the [
   
 ```
 template<class T>  
-class ATL_NO_VTABLE IViewObjectExImpl : public IViewObjectEx
+class ATL_NO_VTABLE IViewObjectExImpl 
+   : public IViewObjectEx
 ```  
   
 #### Parameters  

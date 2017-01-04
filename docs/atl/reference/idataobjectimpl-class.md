@@ -158,9 +158,7 @@ HRESULT FireDataChange();
  Retrieves a logically equivalent **FORMATETC** structure to one that is more complex.  
   
 ```
-HRESULT GetCanonicalFormatEtc(
-    FORMATETC* pformatetcIn,
-    FORMATETC* pformatetcOut);
+HRESULT GetCanonicalFormatEtc(FORMATETC* pformatetcIn,    FORMATETC* pformatetcOut);
 ```  
   
 ### Return Value  

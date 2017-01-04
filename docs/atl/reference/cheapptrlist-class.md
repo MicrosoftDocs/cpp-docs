@@ -46,9 +46,9 @@ This class provides methods useful when constructing a list of heap pointers.
   
 ```
 template<typename E, class Allocator = ATL::CCRTAllocator>  
-class CHeapPtrList : public CAtlList<
-    ATL::CHeapPtr<E, Allocator>,
-    CHeapPtrElementTraits<E, Allocator>>
+class CHeapPtrList 
+   : public CAtlList<ATL::CHeapPtr<E, Allocator>,
+                     CHeapPtrElementTraits<E, Allocator>>
 ```  
   
 #### Parameters  

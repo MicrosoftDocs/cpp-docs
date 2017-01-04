@@ -114,8 +114,7 @@ virtual HRESULT AddCommonRGSReplacements(IRegistrarBase* /* pRegistrar*/) throw(
  Adds a new function to be called when the module terminates.  
   
 ```
-HRESULT AddTermFunc(
-    _ATL_TERMFUNC* pFunc,  DWORD_PTR dw) throw();
+HRESULT AddTermFunc(_ATL_TERMFUNC* pFunc,  DWORD_PTR dw) throw();
 ```  
   
 ### Parameters  

@@ -219,9 +219,7 @@ HRESULT Initialize(
  Implementation of **IUnknown::QueryInterface**.  
   
 ```
-HRESULT STDMETHODCALLTYPE QueryInterface(
-    REFIID riid,
-    void** ppv) throw();
+HRESULT STDMETHODCALLTYPE QueryInterface(REFIID riid,    void** ppv) throw();
 ```  
   
 ### Remarks  

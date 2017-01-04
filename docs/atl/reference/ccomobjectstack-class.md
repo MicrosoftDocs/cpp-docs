@@ -137,9 +137,7 @@ HRESULT     m_hResFinalConstruct;
  Returns **E_NOINTERFACE**.  
   
 ```
-HRESULT     QueryInterface(
-    REFIID,
- void**)
+HRESULT     QueryInterface(REFIID, void**)
  ;
 ```  
   

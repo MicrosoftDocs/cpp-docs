@@ -48,8 +48,8 @@ This class provides methods, static functions, and typedefs useful when creating
   
 ```
 template<typename T>  
-class CAutoPtrElementTraits : public CDefaultElementTraits<
-    ATL::CAutoPtr<T>>
+class CAutoPtrElementTraits 
+    : public CDefaultElementTraits<ATL::CAutoPtr<T>>
 ```    
   
 #### Parameters  

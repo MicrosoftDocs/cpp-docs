@@ -46,13 +46,11 @@ This class represents a `CStringT` object.
   
 ```  
  
-template<typename   
-BaseType  , class   
-StringTraits>  
-class CStringT :   
-public CSimpleStringT<
-BaseType,   _CSTRING_IMPL_::_MFCDLLTraitsCheck<BaseType,   StringTraits>   ::c_bIsMFCDLLTraits>  
- 
+template<typename BaseType, class StringTraits>  
+class CStringT 
+  : public CSimpleStringT<BaseType,
+                          _CSTRING_IMPL_::_MFCDLLTraitsCheck<BaseType,
+                              StringTraits>::c_bIsMFCDLLTraits>  
 ```  
   
 #### Parameters  
@@ -1079,39 +1077,18 @@ friend CStringT operator+(
 ##  <a name="operator_add_eq"></a>  CStringT::operator +=  
  Concatenates characters to the end of the string.  
   
-```  
-CStringT& operator+=(
-    const CThisSimpleString& str);
-
-template<
-    bool bMFCDLL  
->  
-CStringT& operator+=(
-    const const CSimpleStringT<BaseType, bMFCDLL>& str);
-
-template<
-    int t_nSize  
->  
-CStringT& operator+=(
-    const CStaticString<XCHAR, t_nSize>& strSrc);
-
-CStringT& operator+=(
-    PCXSTR pszSrc);
-
-CStringT& operator+=(
-    PCYSTR pszSrc);
-
-CStringT& operator+=(
-    char ch);
-
-CStringT& operator+=(
-    unsigned char ch);
-
-CStringT& operator+=(
-    wchar_t ch);
-
-CStringT& operator+=(
-    const VARIANT& var);
+```
+CStringT& operator+=(const CThisSimpleString& str);
+template<bool bMFCDLL>  
+CStringT& operator+=(const const CSimpleStringT<BaseType, bMFCDLL>& str);
+template<int t_nSize>  
+CStringT& operator+=(const CStaticString<XCHAR, t_nSize>& strSrc);
+CStringT& operator+=(PCXSTR pszSrc);
+CStringT& operator+=(PCYSTR pszSrc);
+CStringT& operator+=(char ch);
+CStringT& operator+=(unsigned char ch);
+CStringT& operator+=(wchar_t ch);
+CStringT& operator+=(const VARIANT& var);
 ```  
   
 ### Parameters  

@@ -80,9 +80,7 @@ class CSecurityAttributes : public SECURITY_ATTRIBUTES
   
 ```
 CSecurityAttributes() throw();
-explicit CSecurityAttributes(
-    const CSecurityDesc& rSecurityDescriptor,
-    bool bInheritsHandle = false) throw(...);
+explicit CSecurityAttributes(const CSecurityDesc& rSecurityDescriptor,    bool bInheritsHandle = false) throw(...);
 ```  
   
 ### Parameters  

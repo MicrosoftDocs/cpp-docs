@@ -854,7 +854,8 @@ COleDateTime& operator-=(COleDateTimeSpan dateSpan) throw();
 ##  <a name="operator_date"></a>  COleDateTime::operator DATE  
  Converts a **ColeDateTime** value into a **DATE**.  
   
-```operator DATE() const throw();
+```
+operator DATE() const throw();
 ```  
   
 ### Remarks  

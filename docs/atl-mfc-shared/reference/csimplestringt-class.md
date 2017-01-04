@@ -753,7 +753,7 @@ Joins a new string or character to the end of an existing string.
 ```  
 CSimpleStringT& operator +=(PCXSTR pszSrc);  
 CSimpleStringT& operator +=(const CSimpleStringT& strSrc);  
-template< int t_nSize >  
+template<int t_nSize>  
 CSimpleStringT& operator+=(const CStaticString< XCHAR, t_nSize >& strSrc);  
 CSimpleStringT& operator +=(char ch);  
 CSimpleStringT& operator +=(unsigned char ch);  

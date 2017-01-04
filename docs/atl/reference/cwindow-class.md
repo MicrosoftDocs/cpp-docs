@@ -1126,8 +1126,7 @@ int GetWindowRgn(HRGN hRgn) throw();
 ```
 int GetWindowText(LPTSTR lpszStringBuf,  int nMaxCount) const throw();
 
-BOOL GetWindowText(
-    BSTR& bstrText) throw();
+BOOL GetWindowText(BSTR& bstrText) throw();
 
 int GetWindowText(CSimpleString& strText) const;
 ```  
@@ -1263,8 +1262,7 @@ void InvalidateRgn(HRGN hRgn,  BOOL bErase = TRUE) throw();
  Determines whether the specified window is a child window.  
   
 ```
-BOOL IsChild(
-const HWND hWnd) const throw();
+BOOL IsChild(const HWND hWnd) const throw();
 ```  
   
 ### Remarks  

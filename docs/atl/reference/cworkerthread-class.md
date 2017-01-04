@@ -47,7 +47,7 @@ This class creates a worker thread or uses an existing one, waits on one or more
 ## Syntax  
   
 ```
-template <class   ThreadTraits = DefaultThreadTraits>  
+template <class ThreadTraits = DefaultThreadTraits>  
 class CWorkerThread
 ```  
   

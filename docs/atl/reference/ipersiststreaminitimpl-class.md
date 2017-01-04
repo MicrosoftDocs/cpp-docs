@@ -50,7 +50,8 @@ This class implements **IUnknown** and provides a default implementation of the 
   
 ```
 template<class T>  
-class ATL_NO_VTABLE IPersistStreamInitImpl : public IPersistStreamInit
+class ATL_NO_VTABLE IPersistStreamInitImpl 
+   : public IPersistStreamInit
 ```  
   
 #### Parameters  

@@ -43,9 +43,8 @@ This class provides a default implementation of the **IOleControl** interface an
 ## Syntax  
   
 ```
-template<class  T>
-class
-    IOleControlImpl
+template<class T>
+class IOleControlImpl
 ```   
   
 #### Parameters  
@@ -80,7 +79,7 @@ class
  In ATL's implementation, `FreezeEvents` increments the control class's `m_nFreezeEvents` data member if `bFreeze` is **TRUE**, and decrements `m_nFreezeEvents` if `bFreeze` is **FALSE**.  
   
 ```
-HRESULT FreezeEvents(BOOL   bFreeze);
+HRESULT FreezeEvents(BOOL Freeze);
 ```  
   
 ### Remarks  
@@ -92,7 +91,7 @@ HRESULT FreezeEvents(BOOL   bFreeze);
  Fills in information about the control's keyboard behavior.  
   
 ```
-HRESULT GetControlInfo(LPCONTROLINFO   pCI);
+HRESULT GetControlInfo(LPCONTROLINFO pCI);
 ```  
   
 ### Remarks  
@@ -118,7 +117,7 @@ HRESULT OnAmbientPropertyChange(DISPID   dispid);
  Informs the control that a user has pressed a specified keystroke.  
   
 ```
-HRESULT OnMnemonic(LPMSG   pMsg);
+HRESULT OnMnemonic(LPMSG pMsg);
 ```  
   
 ### Return Value  

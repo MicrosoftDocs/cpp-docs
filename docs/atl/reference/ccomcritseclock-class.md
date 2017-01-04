@@ -78,8 +78,7 @@ class CComCritSecLock
  The constructor.  
   
 ```
-CComCritSecLock(
-    TLock& cs,  bool bInitialLock = true);
+CComCritSecLock(TLock& cs,  bool bInitialLock = true);
 ```  
   
 ### Parameters  

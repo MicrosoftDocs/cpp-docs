@@ -108,12 +108,9 @@ class CW2WEX
  The constructor.  
   
 ```
-CW2WEX(
-    LPCWSTR psz,
-    UINT nCodePage) throw(...);
+CW2WEX(LPCWSTR psz,    UINT nCodePage) throw(...);
 
-    CW2WEX(
- LPCWSTR  psz) throw(...);
+    CW2WEX( LPCWSTR  psz) throw(...);
 ```  
   
 ### Parameters  

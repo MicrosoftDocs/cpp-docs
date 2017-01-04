@@ -115,52 +115,35 @@ class CComCurrency
   
 ```
 CComCurrency() throw();
-CComCurrency(
- const CComCurrency& curSrc) throw();
-CComCurrency(
- CURRENCY  cySrc) throw();
-CComCurrency(
- DECIMAL  dSrc);
+CComCurrency( const CComCurrency& curSrc) throw();
+CComCurrency( CURRENCY  cySrc) throw();
+CComCurrency( DECIMAL  dSrc);
 
-    CComCurrency(
- ULONG  ulSrc);
+    CComCurrency( ULONG  ulSrc);
 
-    CComCurrency(
- USHORT  usSrc);
+    CComCurrency( USHORT  usSrc);
 
-    CComCurrency(
- CHAR  cSrc);
+    CComCurrency( CHAR  cSrc);
 
-    CComCurrency(
- DOUBLE  dSrc);
+    CComCurrency( DOUBLE  dSrc);
 
-    CComCurrency(
- FLOAT  fSrc);
+    CComCurrency( FLOAT  fSrc);
 
-    CComCurrency(
- LONG  lSrc);
+    CComCurrency( LONG  lSrc);
 
-    CComCurrency(
- SHORT  sSrc);
+    CComCurrency( SHORT  sSrc);
 
-    CComCurrency(
- BYTE  bSrc);
+    CComCurrency( BYTE  bSrc);
 
-    CComCurrency(
- LONGLONG  nInteger,
-    SHORT nFraction);
+    CComCurrency( LONGLONG  nInteger,    SHORT nFraction);
 
-    explicit CComCurrency(
-    LPDISPATCH pDispSrc);
+    explicit CComCurrency(LPDISPATCH pDispSrc);
 
-    explicit CComCurrency(
-    const VARIANT& varSrc);
+    explicit CComCurrency(const VARIANT& varSrc);
 
-    explicit CComCurrency(
-    LPCWSTR szSrc);
+    explicit CComCurrency(LPCWSTR szSrc);
 
-    explicit CComCurrency(
-    LPCSTR szSrc);
+    explicit CComCurrency(LPCSTR szSrc);
 ```  
   
 ### Parameters  

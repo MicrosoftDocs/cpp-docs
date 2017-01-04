@@ -44,7 +44,7 @@ This class provides methods allowing an object to communicate with its site.
 ## Syntax  
   
 ```
-template <class   T>  
+template <class T>  
 class ATL_NO_VTABLE IObjectWithSiteImpl : public IObjectWithSite
 ```  
   

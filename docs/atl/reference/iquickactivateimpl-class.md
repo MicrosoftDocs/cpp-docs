@@ -50,7 +50,7 @@ This class combines containers' control initialization into a single call.
 ## Syntax  
   
 ```
-template <class   T>  
+template <class T>  
 class ATL_NO_VTABLE IQuickActivateImpl : public IQuickActivate
 ```  
   

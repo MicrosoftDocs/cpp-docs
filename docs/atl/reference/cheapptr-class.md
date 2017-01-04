@@ -45,15 +45,8 @@ A smart pointer class for managing heap pointers.
 ## Syntax  
   
 ```
-template<
-typename T,
-class
-Allocator
-= CCRTAllocator
->  
-class CHeapPtr : public CHeapPtrBase<
-T,
-Allocator>
+template<typename T, class Allocator=CCRTAllocator>  
+class CHeapPtr : public CHeapPtrBase<T, Allocator>
 ```  
   
 #### Parameters  
@@ -99,8 +92,7 @@ Allocator>
  Call this method to allocate memory on the heap to store objects.  
   
 ```
-bool Allocate(size_t
-nElements = 1) throw();
+bool Allocate(size_t nElements = 1) throw();
 ```  
   
 ### Parameters  
@@ -121,12 +113,8 @@ nElements = 1) throw();
   
 ```
 CHeapPtr() throw();
-
-explicit CHeapPtr(
-    T* p) throw();
-
-CHeapPtr(
-    CHeapPtr<T, Allocator>& p) throw();
+explicit CHeapPtr(T* p) throw();
+CHeapPtr(CHeapPtr<T, Allocator>& p) throw();
 ```  
   
 ### Parameters  
@@ -161,7 +149,7 @@ CHeapPtr<T, Allocator>& operator=(
  Call this method to reallocate the memory on the heap.  
   
 ```
-bool Reallocate(size_t    nElements) throw();
+bool Reallocate(size_t nElements) throw();
 ```  
   
 ### Parameters  

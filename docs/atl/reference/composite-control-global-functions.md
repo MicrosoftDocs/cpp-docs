@@ -422,9 +422,7 @@ ATLAPI AtlAxGetHost(
  
   
 ```
-ATLAPI AtlAxGetControl(
-    HWND h,
-    IUnknown** pp);
+ATLAPI AtlAxGetControl(HWND h,    IUnknown** pp);
 ```  
   
 ### Parameters  
@@ -444,9 +442,7 @@ ATLAPI AtlAxGetControl(
  
   
 ```
-HRESULT AtlSetChildSite(
-    IUnknown* punkChild,
-    IUnknown* punkParent);
+HRESULT AtlSetChildSite(IUnknown* punkChild,    IUnknown* punkParent);
 ```  
   
 ### Parameters  

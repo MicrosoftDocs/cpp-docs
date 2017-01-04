@@ -79,9 +79,7 @@ class CAtlWinModule : public _ATL_WIN_MODULE
  This method initializes and adds an `_AtlCreateWndData` structure.  
   
 ```
-void AddCreateWndData(
-    _AtlCreateWndData* pData,
-    void* pObject);
+void AddCreateWndData(_AtlCreateWndData* pData,    void* pObject);
 ```  
   
 ### Parameters  

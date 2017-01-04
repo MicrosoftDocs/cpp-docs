@@ -51,7 +51,8 @@ This class implements **IUnknown** and provides a default implementation of the 
   
 ```
 template<class T>  
-class ATL_NO_VTABLE ISpecifyPropertyPagesImpl : public ISpecifyPropertyPages
+class ATL_NO_VTABLE ISpecifyPropertyPagesImpl 
+   : public ISpecifyPropertyPages
 ```  
   
 #### Parameters  

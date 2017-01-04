@@ -136,13 +136,9 @@ CSid(
     BYTE nSubAuthorityCount,
     ...) throw(...);
 
-    explicit CSid(
-        LPCTSTR pszAccountName,
-        LPCTSTR pszSystem = NULL) throw(...);
+    explicit CSid(        LPCTSTR pszAccountName,        LPCTSTR pszSystem = NULL) throw(...);
 
-    explicit CSid(
-        const SID* pSid,
-        LPCTSTR pszSystem = NULL) throw(...);
+    explicit CSid(        const SID* pSid,        LPCTSTR pszSystem = NULL) throw(...);
 ```  
   
 ### Parameters  

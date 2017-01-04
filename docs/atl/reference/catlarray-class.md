@@ -42,7 +42,7 @@ This class implements an array object.
 ## Syntax  
   
 ```
-template<typename E,  class ETraits = CElementTraits<E>>  
+template<typename E, class ETraits = CElementTraits<E>>  
 class CAtlArray
 ```  
   

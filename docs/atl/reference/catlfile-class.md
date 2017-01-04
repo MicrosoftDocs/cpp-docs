@@ -231,9 +231,7 @@ HRESULT GetSize(ULONGLONG& nLen) const throw();
  Call this method to lock a region in the file to prevent other processes from accessing it.  
   
 ```
-HRESULT LockRange(
-    ULONGLONG nPos,
-    ULONGLONG nCount) throw();
+HRESULT LockRange(ULONGLONG nPos,    ULONGLONG nCount) throw();
 ```  
   
 ### Parameters  
@@ -348,9 +346,7 @@ HRESULT SetSize(ULONGLONG   nNewLen) throw();
  Call this method to unlock a region of the file.  
   
 ```
-HRESULT UnlockRange(
-    ULONGLONG nPos,
-    ULONGLONG nCount) throw();
+HRESULT UnlockRange(ULONGLONG nPos,    ULONGLONG nCount) throw();
 ```  
   
 ### Parameters  

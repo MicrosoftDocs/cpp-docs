@@ -126,7 +126,7 @@ CAutoPtr() throw();
 explicit CAutoPtr(T* p) throw();
 
 template<typename TSrc>
- CAutoPtr(CAutoPtr<TSrc>& p) throw();
+CAutoPtr(CAutoPtr<TSrc>& p) throw();
 
 template<> 
 CAutoPtr(CAutoPtr<T>& p) throw();

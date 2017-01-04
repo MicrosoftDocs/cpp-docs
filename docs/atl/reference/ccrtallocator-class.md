@@ -94,8 +94,7 @@ static void Free(void* p) throw();
  Call this static function to reallocate memory.  
   
 ```
-static __declspec(allocator) void* Reallocate(
-    void* p,  size_t nBytes) throw();
+static __declspec(allocator) void* Reallocate(void* p,  size_t nBytes) throw();
 ```  
   
 ### Parameters  

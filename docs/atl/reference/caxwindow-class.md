@@ -86,9 +86,7 @@ class CAxWindow : public CWindow
  Creates a new host object if one isn't already present and attaches the specified control to the host.  
   
 ```
-HRESULT AttachControl(
-    IUnknown* pControl,
-    IUnknown** ppUnkContainer);
+HRESULT AttachControl(IUnknown* pControl,    IUnknown** ppUnkContainer);
 ```  
   
 ### Parameters  
@@ -266,13 +264,10 @@ CAxWindow<TBase>& operator=(HWND   hWnd);
  Retrieves the specified interface of the hosted control.  
   
 ```
-HRESULT QueryControl(
-    REFIID iid,
-    void** ppUnk);
+HRESULT QueryControl(REFIID iid,    void** ppUnk);
 
     template <class  Q>
-    HRESULT QueryControl(
-    Q** ppUnk);
+    HRESULT QueryControl(Q** ppUnk);
 ```  
   
 ### Parameters  
@@ -297,8 +292,7 @@ HRESULT QueryHost(
     void** ppUnk);
 
     template <class  Q>
-    HRESULT QueryHost(
-    Q** ppUnk);
+    HRESULT QueryHost(Q** ppUnk);
 ```  
   
 ### Parameters  

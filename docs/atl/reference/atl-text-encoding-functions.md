@@ -286,9 +286,7 @@ Call this function to get the size in characters of a buffer that could contain 
 ### Syntax  
   
 ```  
-inline int BEncodeGetRequiredLength(  
-   int nSrcLen,  
-   int nCharsetLen) throw();  
+inline int BEncodeGetRequiredLength(   int nSrcLen,   int nCharsetLen) throw();  
 ```  
   
 ### Parameters  
@@ -444,9 +442,7 @@ Call this function to get the size in characters of a buffer that could contain 
 ### Syntax  
   
 ```  
-inline int QEncodeGetRequiredLength(  
-   int nSrcLen,  
-   int nCharsetLen) throw();  
+inline int QEncodeGetRequiredLength(   int nSrcLen,   int nCharsetLen) throw();  
 ```  
   
 ### Parameters  

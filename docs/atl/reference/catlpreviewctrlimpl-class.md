@@ -114,10 +114,7 @@ class CAtlPreviewCtrlImpl : public CWindowImpl<CAtlPreviewCtrlImpl>, public IPre
   
 ```
 CAtlPreviewCtrlImpl(void) : m_clrText(0),
-    m_clrBack(RGB(255,
- 255,
-    255)),
- m_plf(NULL);
+   m_clrBack(RGB(255, 255, 255)), m_plf(NULL);
 ```  
   
 ### Remarks  
@@ -262,7 +259,8 @@ virtual void SetHost(HWND hWndParent);
  Called by a Rich Preview handler when it needs to set visuals of rich preview content.  
   
 ```
-virtual void SetPreviewVisuals(COLORREF clrBack,
+virtual void SetPreviewVisuals(
+    COLORREF clrBack,
     COLORREF clrText,
     const LOGFONTW* plf);
 ```  

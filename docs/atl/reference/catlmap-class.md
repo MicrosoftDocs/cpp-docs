@@ -42,8 +42,7 @@ This class provides methods for creating and managing a map object.
 ## Syntax  
   
 ```
-template <typename   K,
-    typename V, class KTraits = CElementTraits<K>, class VTraits = CElementTraits<V>>  
+template <typename K, typename V, class KTraits = CElementTraits<K>, class VTraits = CElementTraits<V>>  
 class CAtlMap
 ```  
   
@@ -255,8 +254,7 @@ void GetAt(
     KOUTARGTYPE key,
     VOUTARGTYPE value) const;
 
-    CPair* GetAt(
-    POSITION& pos) throw();
+    CPair* GetAt(POSITION& pos) throw();
 ```  
   
 ### Parameters  
@@ -302,7 +300,7 @@ UINT GetHashTableSize() const throw();
  Call this method to retrieve the key stored at the given position in the `CAtlMap` object.  
   
 ```
-const K& GetKeyAt(POSITION   pos) const throw();
+const K& GetKeyAt(POSITION pos) const throw();
 ```  
   
 ### Parameters  
@@ -376,7 +374,6 @@ const K& GetNextKey(POSITION& pos) const throw();
   
 ```
 V& GetNextValue(POSITION& pos) throw();
-
 const V& GetNextValue(POSITION& pos) const throw();
 ```  
   
@@ -416,9 +413,8 @@ POSITION GetStartPosition() const throw();
  Call this method to retrieve the value stored at a given position in the `CAtlMap` object.  
   
 ```
-V& GetValueAt(POSITION   pos) throw();
-
-const V& GetValueAt(POSITION   pos) const throw();
+V& GetValueAt(POSITION pos) throw();
+const V& GetValueAt(POSITION pos) const throw();
 ```  
   
 ### Parameters  
@@ -487,10 +483,8 @@ bool Lookup(
     KINARGTYPE key,
     VOUTARGTYPE value) const;
 
-const CPair* Lookup(
-    KINARGTYPE key) const throw();
-CPair* Lookup(
-    KINARGTYPE key) throw();
+const CPair* Lookup(KINARGTYPE key) const throw();
+CPair* Lookup(KINARGTYPE key) throw();
 ```  
   
 ### Parameters  
@@ -551,7 +545,7 @@ void RemoveAll() throw();
  Call this method to remove the element at the given position in the `CAtlMap` object.  
   
 ```
-void RemoveAtPos(POSITION   pos) throw();
+void RemoveAtPos(POSITION pos) throw();
 ```  
   
 ### Parameters  

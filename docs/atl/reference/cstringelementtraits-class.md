@@ -83,9 +83,7 @@ class CStringElementTraits
  Call this static function to compare two string elements for equality.  
   
 ```
-static bool CompareElements(
-    INARGTYPE str1,
-    INARGTYPE str2);
+static bool CompareElements(INARGTYPE str1,    INARGTYPE str2);
 ```  
   
 ### Parameters  
@@ -102,9 +100,7 @@ static bool CompareElements(
  Call this static function to compare two string elements.  
   
 ```
-static int CompareElementsOrdered(
-    INARGTYPE str1,
-    INARGTYPE str2);
+static int CompareElementsOrdered(INARGTYPE str1,    INARGTYPE str2);
 ```  
   
 ### Parameters  

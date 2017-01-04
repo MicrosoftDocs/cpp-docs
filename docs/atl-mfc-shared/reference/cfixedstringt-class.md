@@ -41,12 +41,9 @@ This class represents a string object with a fixed character buffer.
 ## Syntax  
   
 ```
-template<class
-StringType,
-    int
-t_nChars>
+template<class StringType, int t_nChars>
 class CFixedStringT : private CFixedStringMgr,
-    public StringType
+                      public StringType
 ```  
   
 #### Parameters  

@@ -47,9 +47,8 @@ This class implements **IUnknown** for an aggregated or nonaggregated object.
   
 ```
 template<class contained>  
-class CComPolyObject : public IUnknown, public CComObjectRootEx
- <contained
- ::_ThreadModel::ThreadModelNoCS>
+class CComPolyObject : public IUnknown,
+      public CComObjectRootEx<contained::_ThreadModel::ThreadModelNoCS>
 ```  
   
 #### Parameters  
@@ -198,11 +197,10 @@ CComContainedObject<contained> m_contained;
  Retrieves a pointer to the requested interface.  
   
 ```
-STDMETHOD(QueryInterface)(REFIID iid,
-    void** ppvObject);
+STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 
-    template <class Q>  HRESULT QueryInterface(Q
-** pp);
+template <class Q>
+HRESULT QueryInterface(Q** pp);
 ```  
   
 ### Parameters  

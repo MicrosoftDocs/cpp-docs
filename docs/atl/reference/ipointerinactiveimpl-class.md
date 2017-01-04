@@ -45,7 +45,7 @@ This class implements **IUnknown** and the [IPointerInactive](http://msdn.micros
 ## Syntax  
   
 ```
-template<class  T>
+template<class T>
 class IPointerInactiveImpl
 ```  
   

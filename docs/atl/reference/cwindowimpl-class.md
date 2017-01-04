@@ -46,7 +46,7 @@ Provides methods for creating or subclassing a window.
 ## Syntax  
   
 ```
-template <class   T, class TBase = CWindow, class TWinTraits = CControlWinTraits>  
+template <class T, class TBase = CWindow, class TWinTraits = CControlWinTraits>  
 class ATL_NO_VTABLE CWindowImpl : public CWindowImplBaseT<TBase, TWinTraits>
 ```    
   
@@ -192,7 +192,7 @@ LRESULT DefWindowProc(
     WPARAM wParam,
     LPARAM lParam);
 
-    LRESULT DefWindowProc();
+LRESULT DefWindowProc();
 ```  
   
 ### Parameters  

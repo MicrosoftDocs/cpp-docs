@@ -42,9 +42,7 @@ This function creates a device context for a given device.
   
 ```
 HDC
-    AtlCreateTargetDC(
- HDC hdc,
-    DVTARGETDEVICE* ptd);
+    AtlCreateTargetDC( HDC hdc,    DVTARGETDEVICE* ptd);
 ```  
   
 ### Parameters  

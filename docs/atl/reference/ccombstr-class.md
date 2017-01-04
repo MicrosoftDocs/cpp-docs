@@ -277,31 +277,21 @@ unsigned int ByteLength() const throw();
   
 ```
 CComBSTR() throw();
-CComBSTR(
- const CComBSTR& src);
+CComBSTR( const CComBSTR& src);
 
-    CComBSTR(
- REFGUID  guid);
+    CComBSTR( REFGUID  guid);
 
-    CComBSTR(
- int  nSize);
+    CComBSTR( int  nSize);
 
-    CComBSTR(
- int  nSize,
-    LPCOLESTR sz);
+    CComBSTR( int  nSize,    LPCOLESTR sz);
 
-    CComBSTR(
- int  nSize,
-    LPCSTR sz);
+    CComBSTR( int  nSize,    LPCSTR sz);
 
-    CComBSTR(
- LPCOLESTR  pSrc);
+    CComBSTR( LPCOLESTR  pSrc);
 
-    CComBSTR(
- LPCSTR  pSrc);
+    CComBSTR( LPCSTR  pSrc);
 
-    CComBSTR(
- CComBSTR&& src);
+    CComBSTR( CComBSTR&& src);
 ```  
   
 ### Parameters  

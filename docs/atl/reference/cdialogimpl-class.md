@@ -115,9 +115,7 @@ template <class T,
   
 ```  
  
-HWND Create(
-    HWND hWndParent,  
-    LPARAM dwInitParam = NULL);
+HWND Create(HWND hWndParent,    LPARAM dwInitParam = NULL);
 
     HWND Create(
     HWND hWndParent,  
@@ -199,8 +197,7 @@ static LRESULT CALLBACK DialogProc(
   
 ```  
  
-INT_PTR DoModal(
-    HWND hWndParent = ::GetActiveWindow(),   
+INT_PTR DoModal(HWND hWndParent = ::GetActiveWindow(),   
     LPARAM dwInitParam = NULL);
 
  

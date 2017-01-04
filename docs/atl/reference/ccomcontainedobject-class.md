@@ -133,11 +133,10 @@ IUnknown* GetControllingUnknown();
  Retrieves a pointer to the interface requested on the owner object.  
   
 ```
-STDMETHOD(QueryInterface)(REFIID iid,
-    void** ppvObject);
+STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 
-    template <class Q>  HRESULT STDMETHODCALLTYPE QueryInterface(
-    Q** pp);
+template <class Q>
+HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 ```  
   
 ### Parameters  

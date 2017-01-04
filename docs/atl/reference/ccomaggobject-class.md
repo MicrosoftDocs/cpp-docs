@@ -47,9 +47,8 @@ This class implements the [IUnknown](http://msdn.microsoft.com/library/windows/d
   
 ```
 template<class contained>  
-class CComAggObject : public IUnknown, public CComObjectRootEx
- <contained
- ::_ThreadModel::ThreadModelNoCS>
+class CComAggObject : public IUnknown, 
+   public CComObjectRootEx<contained::_ThreadModel::ThreadModelNoCS>
 ```  
   
 #### Parameters  
@@ -139,8 +138,9 @@ CComAggObject(void* pv);
  This static function allows you to create a new **CComAggObject<**`contained` **>** object without the overhead of [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).  
   
 ```
-static HRESULT WINAPI CreateInstance(LPUNKNOWN pUnkOuter,
-    CComAggObject<contained>** pp);
+static HRESULT WINAPI CreateInstance(
+  LPUNKNOWN pUnkOuter,
+  CComAggObject<contained>** pp);
 ```  
   
 ### Parameters  
@@ -190,11 +190,10 @@ CComContainedObject<contained> m_contained;
  Retrieves a pointer to the requested interface.  
   
 ```
-STDMETHOD(QueryInterface)(REFIID iid,
-    void** ppvObject);
+STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 
-    template <class Q>  HRESULT STDMETHODCALLTYPE QueryInterface(
-    Q** pp);
+template <class Q>
+HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 ```  
   
 ### Parameters  
