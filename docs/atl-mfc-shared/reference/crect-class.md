@@ -746,11 +746,8 @@ operator LPCRECT() const throw();
 ```  
   
 ### Remarks  
- When you use this function, you don't need the address-of ( **&**) operator. This operator will be automatically used when you pass a `CRect` object to a function that expects an **LPCRECT**.  
-  
-### Example  
- [!CODE [NVC_ATLMFC_Utilities#58](../codesnippet/vs_snippets_cpp/nvc_atlmfc_utilities#58)]  
-  
+ When you use this function, you don't need the address-of ( **&**) operator. This operator will be automatically used when you pass a `CRect` object to a function that expects an **LPCRECT**. 
+ 
 ##  <a name="operator_lprect"></a>  CRect::operator LPRECT  
  Converts a `CRect` to an [LPRECT](../../mfc/reference/data-types-mfc.md).  
 
