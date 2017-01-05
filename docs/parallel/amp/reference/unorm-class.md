@@ -72,7 +72,8 @@ class unorm;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="ctor"></a>  unorm::unorm Constructor  
+##  <a name="ctor"></a> unorm 
+
  Default constructor. Initialize to 0.0f.  
   
 ```  

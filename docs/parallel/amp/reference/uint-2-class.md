@@ -143,7 +143,8 @@ class uint_2;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="ctor"></a>  uint_2::uint_2 Constructor  
+##  <a name="ctor"></a> uint_2 
+
  Default constructor, initializes all elements with 0.  
   
 ```  
@@ -205,8 +206,8 @@ explicit inline uint_2(
  `_Other`  
  The object used to initialize.  
   
-##  <a name="uint_2__size"></a>  uint_2::size Constant  
-  
+##  <a name="uint_2__size"></a> size 
+
 ```  
 static const int size = 2;  
 ```  

@@ -99,7 +99,8 @@ class single_assignment : public propagator_block<multi_link_registry<ITarget<T>
   
  **Namespace:** concurrency  
   
-##  <a name="accept_message"></a>  single_assignment::accept_message Method  
+##  <a name="accept_message"></a> accept_message 
+
  Accepts a message that was offered by this `single_assignment` messaging block, returning a copy of the message to the caller.  
   
 ```
@@ -116,7 +117,8 @@ virtual message<T>* accept_message(runtime_object_identity _MsgId);
 ### Remarks  
  The `single_assignment` messaging block returns copies of the message to its targets, rather than transferring ownership of the currently held message.  
   
-##  <a name="consume_message"></a>  single_assignment::consume_message Method  
+##  <a name="consume_message"></a> consume_message 
+
  Consumes a message previously offered by the `single_assignment` and reserved by the target, returning a copy of the message to the caller.  
   
 ```
@@ -133,7 +135,8 @@ virtual message<T>* consume_message(runtime_object_identity _MsgId);
 ### Remarks  
  Similar to `accept`, but is always preceded by a call to `reserve`.  
   
-##  <a name="has_value"></a>  single_assignment::has_value Method  
+##  <a name="has_value"></a> has_value 
+
  Checks whether this `single_assignment` messaging block has been initialized with a value yet.  
   
 ```
@@ -143,7 +146,8 @@ bool has_value() const;
 ### Return Value  
  `true` if the block has received a value, `false` otherwise.  
   
-##  <a name="link_target_notification"></a>  single_assignment::link_target_notification Method  
+##  <a name="link_target_notification"></a> link_target_notification 
+
  A callback that notifies that a new target has been linked to this `single_assignment` messaging block.  
   
 ```
@@ -154,7 +158,8 @@ virtual void link_target_notification(_Inout_ ITarget<T>* _PTarget);
  `_PTarget`  
  A pointer to the newly linked target.  
   
-##  <a name="propagate_message"></a>  single_assignment::propagate_message Method  
+##  <a name="propagate_message"></a> propagate_message 
+
  Asynchronously passes a message from an `ISource` block to this `single_assignment` messaging block. It is invoked by the `propagate` method, when called by a source block.  
   
 ```
@@ -173,7 +178,8 @@ virtual message_status propagate_message(
 ### Return Value  
  A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
   
-##  <a name="propagate_to_any_targets"></a>  single_assignment::propagate_to_any_targets Method  
+##  <a name="propagate_to_any_targets"></a> propagate_to_any_targets 
+
  Places the `message``_PMessage` in this `single_assignment` messaging block and offers it to all of the linked targets.  
   
 ```
@@ -184,7 +190,8 @@ virtual void propagate_to_any_targets(_Inout_opt_ message<T>* _PMessage);
  `_PMessage`  
  A pointer to a `message` that this `single_assignment` messaging block has taken ownership of.  
   
-##  <a name="release_message"></a>  single_assignment::release_message Method  
+##  <a name="release_message"></a> release_message 
+
  Releases a previous message reservation.  
   
 ```
@@ -195,7 +202,8 @@ virtual void release_message(runtime_object_identity _MsgId);
  `_MsgId`  
  The `runtime_object_identity` of the `message` object being released.  
   
-##  <a name="reserve_message"></a>  single_assignment::reserve_message Method  
+##  <a name="reserve_message"></a> reserve_message 
+
  Reserves a message previously offered by this `single_assignment` messaging block.  
   
 ```
@@ -212,14 +220,16 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 ### Remarks  
  After `reserve` is called, if it returns `true`, either `consume` or `release` must be called to either take or release ownership of the message.  
   
-##  <a name="resume_propagation"></a>  single_assignment::resume_propagation Method  
+##  <a name="resume_propagation"></a> resume_propagation 
+
  Resumes propagation after a reservation has been released.  
   
 ```
 virtual void resume_propagation();
 ```  
   
-##  <a name="send_message"></a>  single_assignment::send_message Method  
+##  <a name="send_message"></a> send_message 
+
  Synchronously passes a message from an `ISource` block to this `single_assignment` messaging block. It is invoked by the `send` method, when called by a source block.  
   
 ```
@@ -238,7 +248,8 @@ virtual message_status send_message(
 ### Return Value  
  A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
   
-##  <a name="ctor"></a>  single_assignment::single_assignment Constructor  
+##  <a name="ctor"></a> single_assignment 
+
  Constructs a `single_assignment` messaging block.  
   
 ```
@@ -277,14 +288,16 @@ single_assignment(
   
  The type `filter_method` is a functor with signature `bool (T const &)` which is invoked by this `single_assignment` messaging block to determine whether or not it should accept an offered message.  
   
-##  <a name="dtor"></a>  single_assignment::~single_assignment Destructor  
+##  <a name="dtor"></a> ~single_assignment 
+
  Destroys the `single_assignment` messaging block.  
   
 ```
 ~single_assignment();
 ```  
   
-##  <a name="value"></a>  single_assignment::value Method  
+##  <a name="value"></a> value 
+
  Gets a reference to the current payload of the message being stored in the `single_assignment` messaging block.  
   
 ```

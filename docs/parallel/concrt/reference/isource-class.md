@@ -87,7 +87,8 @@ class ISource;
   
  **Namespace:** concurrency  
   
-##  <a name="accept"></a>  ISource::accept Method  
+##  <a name="accept"></a> accept 
+
  When overridden in a derived class, accepts a message that was offered by this `ISource` block, transferring ownership to the caller.  
   
 ```
@@ -109,7 +110,8 @@ virtual message<T>* accept(
 ### Remarks  
  The `accept` method is called by a target while a message is being offered by this `ISource` block. The message pointer returned may be different from the one passed into the `propagate` method of the `ITarget` block, if this source decides to make a copy of the message.  
   
-##  <a name="acquire_ref"></a>  ISource::acquire_ref Method  
+##  <a name="acquire_ref"></a> acquire_ref 
+
  When overridden in a derived class, acquires a reference count on this `ISource` block, to prevent deletion.  
   
 ```
@@ -123,7 +125,8 @@ virtual void acquire_ref(_Inout_ ITarget<T>* _PTarget) = 0;
 ### Remarks  
  This method is called by an `ITarget` object that is being linked to this source during the `link_target` method.  
   
-##  <a name="consume"></a>  ISource::consume Method  
+##  <a name="consume"></a> consume 
+
  When overridden in a derived class, consumes a message previously offered by this `ISource` block and successfully reserved by the target, transferring ownership to the caller.  
   
 ```
@@ -145,14 +148,16 @@ virtual message<T>* consume(
 ### Remarks  
  The `consume` method is similar to `accept`, but must always be preceded by a call to `reserve` that returned `true`.  
   
-##  <a name="dtor"></a>  ISource::~ISource Destructor  
+##  <a name="dtor"></a> ~ISource 
+
  Destroys the `ISource` object.  
   
 ```
 virtual ~ISource();
 ```  
   
-##  <a name="link_target"></a>  ISource::link_target Method  
+##  <a name="link_target"></a> link_target 
+
  When overridden in a derived class, links a target block to this `ISource` block.  
   
 ```
@@ -163,7 +168,8 @@ virtual void link_target(_Inout_ ITarget<T>* _PTarget) = 0;
  `_PTarget`  
  A pointer to the target block being linked to this `ISource` block.  
   
-##  <a name="release"></a>  ISource::release Method  
+##  <a name="release"></a> release 
+
  When overridden in a derived class, releases a previous successful message reservation.  
   
 ```
@@ -179,7 +185,8 @@ virtual void release(
  `_PTarget`  
  A pointer to the target block that is calling the `release` method.  
   
-##  <a name="release_ref"></a>  ISource::release_ref Method  
+##  <a name="release_ref"></a> release_ref 
+
  When overridden in a derived class, releases a reference count on this `ISource` block.  
   
 ```
@@ -193,7 +200,8 @@ virtual void release_ref(_Inout_ ITarget<T>* _PTarget) = 0;
 ### Remarks  
  This method is called by an `ITarget` object that is being unlinked from this source. The source block is allowed to release any resources reserved for the target block.  
   
-##  <a name="reserve"></a>  ISource::reserve Method  
+##  <a name="reserve"></a> reserve 
+
  When overridden in a derived class, reserves a message previously offered by this `ISource` block.  
   
 ```
@@ -215,7 +223,8 @@ virtual bool reserve(
 ### Remarks  
  After you call `reserve`, if it succeeds, you must call either `consume` or `release` in order to take or give up possession of the message, respectively.  
   
-##  <a name="unlink_target"></a>  ISource::unlink_target Method  
+##  <a name="unlink_target"></a> unlink_target 
+
  When overridden in a derived class, unlinks a target block from this `ISource` block, if found to be previously linked.  
   
 ```
@@ -226,7 +235,8 @@ virtual void unlink_target(_Inout_ ITarget<T>* _PTarget) = 0;
  `_PTarget`  
  A pointer to the target block being unlinked from this `ISource` block.  
   
-##  <a name="unlink_targets"></a>  ISource::unlink_targets Method  
+##  <a name="unlink_targets"></a> unlink_targets 
+
  When overridden in a derived class, unlinks all target blocks from this `ISource` block.  
   
 ```

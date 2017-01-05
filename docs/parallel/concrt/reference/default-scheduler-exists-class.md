@@ -61,7 +61,8 @@ class default_scheduler_exists : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="ctor"></a>  default_scheduler_exists::default_scheduler_exists Constructor  
+##  <a name="ctor"></a> default_scheduler_exists 
+
  Constructs a `default_scheduler_exists` object.  
   
 ```

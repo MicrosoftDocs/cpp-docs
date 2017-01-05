@@ -96,13 +96,14 @@ class extent;
  `extent`  
 
 
-## <a name="contains"></a> extent::contains Method 
+## <a name="contains"></a> contains 
+
 Indicates whether the specified [index](index-class.md) value is contained within the `extent' object.  
   
 ### Syntax  
   
 ```  
-bool contains( const index<rank>& _Index ) const restrict(amp,cpu);  
+bool contains(const index<rank>& _Index) const restrict(amp,cpu);  
 ```  
   
 ### Parameters  
@@ -112,32 +113,19 @@ bool contains( const index<rank>& _Index ) const restrict(amp,cpu);
 ### Return Value  
  `true` if the specified `index` value is contained in the `extent` object; otherwise, `false`.  
   
-##  <a name="ctor"></a> extent::extent Constructor  
+##  <a name="ctor"></a> extent 
+
 Initializes a new instance of the `extent' class.  
   
 ### Syntax  
   
 ```  
-extent() restrict(amp,cpu);  
-  
-extent(  
-    const extent<_Rank>& _Other ) restrict(amp,cpu);  
-  
-explicit extent(  
-    int _I ) restrict(amp,cpu);  
-  
-extent(  
-    int _I0,  
-    int _I1 ) restrict(amp,cpu);  
-  
-extent(  
-    int _I0,  
-    int _I1,  
-    int _I2 ) restrict(amp,cpu);  
-  
-explicit extent(  
-    const int _Array[_Rank]  
-) restrict(amp,cpu);  
+extent() restrict(amp,cpu);    
+extent(const extent<_Rank>& _Other) restrict(amp,cpu);    
+explicit extent(int _I) restrict(amp,cpu);    
+extent(int _I0,  int _I1) restrict(amp,cpu);    
+extent(int _I0,  int _I1, int _I2) restrict(amp,cpu);    
+explicit extent(const int _Array[_Rank])restrict(amp,cpu);  
 ```  
   
 ### Parameters  
@@ -164,13 +152,14 @@ explicit extent(
   
  If an array is used to construct an `extent` object, the length of the array must match the rank of the `extent` object.  
   
-##  <a name="operator_mod_eq"></a> extent::operator%= Operator 
+##  <a name="operator_mod_eq"></a> operator%= 
+
 Calculates the modulus (remainder) of each element in the `extent' when that element is divided by a number.  
   
 ### Syntax  
   
 ```  
-extent<_Rank>&  operator%= (int _Rhs ) restrict(cpu, direct3d);  
+extent<_Rank>& operator%=(int _Rhs) restrict(cpu, direct3d);  
 ```  
   
 ### Parameters  
@@ -180,13 +169,14 @@ extent<_Rank>&  operator%= (int _Rhs ) restrict(cpu, direct3d);
 ### Return Value  
  The `extent` object.  
   
-##  <a name="operator_star_eq"></a> extent::operator*= Operator  
+##  <a name="operator_star_eq"></a> operator*= 
+
 Multiplies each element in the `extent' object by the specified number.  
   
 ### Syntax  
   
 ```  
-extent<_Rank>&  operator*= ( int _Rhs ) restrict(amp,cpu);  
+extent<_Rank>& operator*=(int _Rhs) restrict(amp,cpu);  
 ```  
   
 ### Parameters  
@@ -196,14 +186,14 @@ extent<_Rank>&  operator*= ( int _Rhs ) restrict(amp,cpu);
 ### Return Value  
  The `extent` object.  
   
-## <a name="operator_add"></a>  extent::operator+ Operator  
+## <a name="operator_add"></a> operator+ 
+
 Returns a new `extent` object created by adding the corresponding `index` and `extent` elements.  
   
 ### Syntax  
   
 ```  
-extent<_Rank>  operator+(  
-    const index<_Rank>& _Rhs ) restrict(amp,cpu);  
+extent<_Rank> operator+(const index<_Rank>& _Rhs) restrict(amp,cpu);  
 ```  
   
 ### Parameters  
@@ -213,36 +203,30 @@ extent<_Rank>  operator+(
 ### Return Value  
  The new `extent` object.  
   
-##  <a name="operator_add_add"></a> extent::operator++ Operator  
+##  <a name="operator_add_add"></a> operator++ 
+
 Increments each element of the `extent' object.  
   
 ### Syntax  
   
 ```  
-extent<_Rank>&  operator++() restrict(amp,cpu);  
-  
-extent<_Rank>  operator++(  
-    int  
-) restrict(amp,cpu);  
+extent<_Rank>& operator++() restrict(amp,cpu);    
+extent<_Rank> operator++(int)restrict(amp,cpu);  
 ```  
   
 ### Return Value  
  For the prefix operator, the `extent` object (`*this`). For the suffix operator, a new `extent` object.  
   
-##  <a name="operator_add_eq"></a> extent::operator+= Operator  
+##  <a name="operator_add_eq"></a> operator+= 
+
 Adds the specified number to each element of the `extent' object.  
   
 ### Syntax  
   
 ```  
-extent<_Rank>&  operator+= (  
-    const extent<_Rank>& _Rhs ) restrict(amp,cpu);  
-  
-extent<_Rank>&  operator+= (  
-    const index<_Rank>& _Rhs ) restrict(amp,cpu);  
-  
-extent<_Rank>&  operator+= (  
-    int _Rhs ) restrict(amp,cpu);  
+extent<_Rank>& operator+=(const extent<_Rank>& _Rhs) restrict(amp,cpu);    
+extent<_Rank>& operator+=(const index<_Rank>& _Rhs) restrict(amp,cpu);    
+extent<_Rank>& operator+=(int _Rhs) restrict(amp,cpu);  
 ```  
   
 ### Parameters  
@@ -252,14 +236,14 @@ extent<_Rank>&  operator+= (
 ### Return Value  
  The resulting `extent` object.  
   
-##  <a name="operator_min"></a> extent::operator- Operator  
+##  <a name="operator_min"></a> operator- 
+
 Creates a new `extent` object by subtracting each element in the specified `index` object from the corresponding element in this `extent` object.  
   
 ### Syntax  
   
 ```  
-extent<_Rank>  operator-(  
-    const index<_Rank>& _Rhs ) restrict(amp,cpu);  
+extent<_Rank> operator-(const index<_Rank>& _Rhs) restrict(amp,cpu);  
 ```  
   
 ### Parameters  
@@ -269,30 +253,28 @@ extent<_Rank>  operator-(
 ### Return Value  
  The new `extent` object.  
   
-##  <a name="operator_min_min"></a> extent::operator-- Operator  
+##  <a name="operator_min_min"></a> operator-- 
+
 Decrements each element in the `extent' object.  
   
 ### Syntax  
   
 ```  
-extent<_Rank>&  operator--() restrict(amp,cpu);  
-  
-extent<_Rank>  operator--(  
-    int  
-) restrict(amp,cpu);  
+extent<_Rank>& operator--() restrict(amp,cpu);    
+extent<_Rank> operator--(int)restrict(amp,cpu);  
 ```  
   
 ### Return Value  
  For the prefix operator, the `extent` object (`*this`). For the suffix operator, a new `extent` object.  
   
-##  <a name="operator_div_eq"></a> extent::operator/= Operator  
+##  <a name="operator_div_eq"></a> operator/= 
+
 Divides each element in the `extent' object by the specified number.  
   
 ### Syntax  
   
 ```  
-extent<_Rank>&  operator/= (  
-    int _Rhs ) restrict(amp,cpu);  
+extent<_Rank>& operator/=(int _Rhs) restrict(amp,cpu);  
 ```  
   
 ### Parameters  
@@ -302,20 +284,16 @@ extent<_Rank>&  operator/= (
 ### Return Value  
  The `extent` object.  
   
-##  <a name="operator_min_eq"></a> extent::operator-= Operator  
+##  <a name="operator_min_eq"></a> operator-= 
+
 Subtracts the specified number from each element of the `extent' object.  
   
 ### Syntax  
   
 ```  
-extent<_Rank>&  operator-= (  
-    const extent<_Rank>& _Rhs ) restrict(amp,cpu);  
-  
-extent<_Rank>&  operator-= (  
-    const index<_Rank>& _Rhs ) restrict(amp,cpu);  
-  
-extent<_Rank>&  operator-= (  
-    int _Rhs ) restrict(amp,cpu);  
+extent<_Rank>& operator-=(const extent<_Rank>& _Rhs) restrict(amp,cpu);    
+extent<_Rank>& operator-=(const index<_Rank>& _Rhs) restrict(amp,cpu);    
+extent<_Rank>& operator-=(int _Rhs) restrict(amp,cpu);  
 ```  
   
 ### Parameters  
@@ -325,14 +303,14 @@ extent<_Rank>&  operator-= (
 ### Return Value  
  The resulting `extent` object.  
   
-##  <a name="operator_eq"></a> extent::operator= Operator  
+##  <a name="operator_eq"></a> operator= 
+
 Copies the contents of another `extent' object into this one.  
   
 ### Syntax  
   
 ```  
-extent<_Rank>&  operator= (  
-    const extent<_Rank>& _Other ) restrict(amp,cpu);  
+extent<_Rank>& operator=(const extent<_Rank>& _Other) restrict(amp,cpu);  
 ```  
   
 ### Parameters  
@@ -348,9 +326,8 @@ Returns the element that's at the specified index.
 ### Syntax  
   
 ```  
-int operator[] ( unsigned int _Index ) const restrict(amp,cpu);  
-  
-int&  operator[] ( unsigned int _Index ) restrict(amp,cpu);  
+int operator[](unsigned int _Index) const restrict(amp,cpu);    
+int& operator[](unsigned int _Index) restrict(amp,cpu);  
 ```  
   
 ### Parameters  
@@ -360,7 +337,8 @@ int&  operator[] ( unsigned int _Index ) restrict(amp,cpu);
 ### Return Value  
  The element that's at the specified index.  
   
-##  <a name="rank_constant"></a> extent::rank Constant  
+##  <a name="rank_constant"></a> rank 
+
 Stores the rank of the `extent' object.  
   
 ### Syntax  
@@ -369,7 +347,8 @@ Stores the rank of the `extent' object.
 static const int rank = _Rank;  
 ```  
   
-##  <a name="size"></a> extent::size Method  
+##  <a name="size"></a> size 
+
 Returns the total linear size of the `extent` object (in units of elements).  
   
 ### Syntax  
@@ -378,26 +357,18 @@ Returns the total linear size of the `extent` object (in units of elements).
 unsigned int size() const restrict(amp,cpu);  
 ```  
   
-## <a name="tile"></a> extent::tile Method
+## <a name="tile"></a> tile 
+
 Produces a tiled_extent object with the specified tile dimensions.
 
 ```
-template <
-   int _Dim0
->
+template <int _Dim0>
 tiled_extent<_Dim0> tile() const ;
 
-template <
-   int _Dim0,
-   int _Dim1
->
+template <int _Dim0, int _Dim1>
 tiled_extent<_Dim0, _Dim1> tile() const ;
 
-template <
-   int _Dim0,
-   int _Dim1,
-   int _Dim2
->
+template <int _Dim0, int _Dim1, int _Dim2>
 tiled_extent<_Dim0, _Dim1, _Dim2> tile() const ;
 ```  
 ### Parameters

@@ -64,7 +64,8 @@ class nested_scheduler_missing_detach : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="ctor"></a>  nested_scheduler_missing_detach::nested_scheduler_missing_detach Constructor  
+##  <a name="ctor"></a> nested_scheduler_missing_detach 
+
  Constructs a `nested_scheduler_missing_detach` object.  
   
 ```

@@ -225,7 +225,8 @@ class unorm_3;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="ctor"></a>  unorm_3::unorm_3 Constructor  
+##  <a name="ctor"></a> unorm_3 
+
  Default constructor, initializes all elements with 0.  
   
 ```  
@@ -303,8 +304,8 @@ explicit inline unorm_3(
  `_Other`  
  The object used to initialize.  
   
-##  <a name="unorm_3__size"></a>  unorm_3::size Constant  
-  
+##  <a name="unorm_3__size"></a> size 
+
 ```  
 static const int size = 3;  
 ```  

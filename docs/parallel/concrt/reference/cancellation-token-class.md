@@ -78,14 +78,14 @@ class cancellation_token;
   
  **Namespace:** concurrency  
   
-##  <a name="dtor"></a>  cancellation_token::~cancellation_token Destructor  
-  
+##  <a name="dtor"></a> ~cancellation_token 
+
 ```
 ~cancellation_token();
 ```  
   
-##  <a name="ctor"></a>  cancellation_token::cancellation_token Constructor  
-  
+##  <a name="ctor"></a> cancellation_token 
+
 ```
 cancellation_token(const cancellation_token& _Src);
 
@@ -95,7 +95,8 @@ cancellation_token(cancellation_token&& _Src);
 ### Parameters  
  `_Src`  
   
-##  <a name="deregister_callback"></a>  cancellation_token::deregister_callback Method  
+##  <a name="deregister_callback"></a> deregister_callback 
+
  Removes a callback previously registered via the `register` method based on the `cancellation_token_registration` object returned at the time of registration.  
   
 ```
@@ -106,7 +107,8 @@ void deregister_callback(const cancellation_token_registration& _Registration) c
  `_Registration`  
  The `cancellation_token_registration` object corresponding to the callback to be deregistered. This token must have been previously returned from a call to the `register` method.  
   
-##  <a name="is_cancelable"></a>  cancellation_token::is_cancelable Method  
+##  <a name="is_cancelable"></a> is_cancelable 
+
  Returns an indication of whether this token can be canceled or not.  
   
 ```
@@ -116,7 +118,8 @@ bool is_cancelable() const;
 ### Return Value  
  An indication of whether this token can be canceled or not.  
   
-##  <a name="is_canceled"></a>  cancellation_token::is_canceled Method  
+##  <a name="is_canceled"></a> is_canceled 
+
  Returns `true` if the token has been canceled.  
   
 ```
@@ -126,7 +129,8 @@ bool is_canceled() const;
 ### Return Value  
  The value `true` if the token has been canceled; otherwise, the value `false`.  
   
-##  <a name="none"></a>  cancellation_token::none Method  
+##  <a name="none"></a> none 
+
  Returns a cancellation token which can never be subject to cancellation.  
   
 ```
@@ -136,8 +140,8 @@ static cancellation_token none();
 ### Return Value  
  A cancellation token that cannot be canceled.  
   
-##  <a name="operator_neq"></a>  cancellation_token::operator!= Operator  
-  
+##  <a name="operator_neq"></a> operator!= 
+
 ```
 bool operator!= (const cancellation_token& _Src) const;
 ```  
@@ -147,8 +151,8 @@ bool operator!= (const cancellation_token& _Src) const;
   
 ### Return Value  
   
-##  <a name="operator_eq"></a>  cancellation_token::operator= Operator  
-  
+##  <a name="operator_eq"></a> operator= 
+
 ```
 cancellation_token& operator= (const cancellation_token& _Src);
 
@@ -160,8 +164,8 @@ cancellation_token& operator= (cancellation_token&& _Src);
   
 ### Return Value  
   
-##  <a name="operator_eq_eq"></a>  cancellation_token::operator== Operator  
-  
+##  <a name="operator_eq_eq"></a> operator== 
+
 ```
 bool operator== (const cancellation_token& _Src) const;
 ```  
@@ -171,7 +175,8 @@ bool operator== (const cancellation_token& _Src) const;
   
 ### Return Value  
   
-##  <a name="register_callback"></a>  cancellation_token::register_callback Method  
+##  <a name="register_callback"></a> register_callback 
+
  Registers a callback function with the token. If and when the token is canceled, the callback will be made. Note that if the token is already canceled at the point where this method is called, the callback will be made immediately and synchronously.  
   
 ```

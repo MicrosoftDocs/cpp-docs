@@ -97,7 +97,8 @@ class choice: public ISource<size_t>;
   
  **Namespace:** concurrency  
   
-##  <a name="accept"></a>  choice::accept Method  
+##  <a name="accept"></a> accept 
+
  Accepts a message that was offered by this `choice` block, transferring ownership to the caller.  
   
 ```  
@@ -116,7 +117,8 @@ virtual message<size_t>* accept(
 ### Return Value  
  A pointer to the message that the caller now has ownership of.  
   
-##  <a name="acquire_ref"></a>  choice::acquire_ref Method  
+##  <a name="acquire_ref"></a> acquire_ref 
+
  Acquires a reference count on this `choice` messaging block, to prevent deletion.  
   
 ```  
@@ -130,7 +132,8 @@ virtual void acquire_ref(_Inout_ ITarget<size_t>* _PTarget);
 ### Remarks  
  This method is called by an `ITarget` object that is being linked to this source during the `link_target` method.  
   
-##  <a name="ctor"></a>  choice::choice Constructor  
+##  <a name="ctor"></a> choice 
+
  Constructs a `choice` messaging block.  
   
 ```  
@@ -170,14 +173,16 @@ choice(
   
  Move construction is not performed under a lock, which means that it is up to the user to make sure that there are no light-weight tasks in flight at the time of moving. Otherwise, numerous races can occur, leading to exceptions or inconsistent state.  
   
-##  <a name="dtor"></a>  choice::~choice Destructor  
+##  <a name="dtor"></a> ~choice 
+
  Destroys the `choice` messaging block.  
   
 ```  
 ~choice();
 ```  
   
-##  <a name="consume"></a>  choice::consume Method  
+##  <a name="consume"></a> consume 
+
  Consumes a message previously offered by this `choice` messaging block and successfully reserved by the target, transferring ownership to the caller.  
   
 ```  
@@ -199,7 +204,8 @@ virtual message<size_t>* consume(
 ### Remarks  
  The `consume` method is similar to `accept`, but must always be preceded by a call to `reserve` that returned `true`.  
   
-##  <a name="has_value"></a>  choice::has_value Method  
+##  <a name="has_value"></a> has_value 
+
  Checks whether this `choice` messaging block has been initialized with a value yet.  
   
 ```  
@@ -211,7 +217,8 @@ bool has_value() const;
 ### Return Value  
  `true` if the block has received a value, `false` otherwise.  
   
-##  <a name="index"></a>  choice::index Method  
+##  <a name="index"></a> index 
+
  Returns an index into the `tuple` representing the element selected by the `choice` messaging block.  
   
 ```  
@@ -224,7 +231,8 @@ size_t index();
 ### Remarks  
  The message payload can be extracted using the `get` method.  
   
-##  <a name="link_target"></a>  choice::link_target Method  
+##  <a name="link_target"></a> link_target 
+
  Links a target block to this `choice` messaging block.  
   
 ```  
@@ -235,7 +243,8 @@ virtual void link_target(_Inout_ ITarget<size_t>* _PTarget);
  `_PTarget`  
  A pointer to an `ITarget` block to link to this `choice` messaging block.  
   
-##  <a name="release"></a>  choice::release Method  
+##  <a name="release"></a> release 
+
  Releases a previous successful message reservation.  
   
 ```  
@@ -251,7 +260,8 @@ virtual void release(
  `_PTarget`  
  A pointer to the target block that is calling the `release` method.  
   
-##  <a name="release_ref"></a>  choice::release_ref Method  
+##  <a name="release_ref"></a> release_ref 
+
  Releases a reference count on this `choice` messaging block.  
   
 ```  
@@ -265,7 +275,8 @@ virtual void release_ref(_Inout_ ITarget<size_t>* _PTarget);
 ### Remarks  
  This method is called by an `ITarget` object that is being unlinked from this source. The source block is allowed to release any resources reserved for the target block.  
   
-##  <a name="reserve"></a>  choice::reserve Method  
+##  <a name="reserve"></a> reserve 
+
  Reserves a message previously offered by this `choice` messaging block.  
   
 ```  
@@ -287,7 +298,8 @@ virtual bool reserve(
 ### Remarks  
  After you call `reserve`, if it succeeds, you must call either `consume` or `release` in order to take or give up possession of the message, respectively.  
   
-##  <a name="unlink_target"></a>  choice::unlink_target Method  
+##  <a name="unlink_target"></a> unlink_target 
+
  Unlinks a target block from this `choice` messaging block.  
   
 ```  
@@ -298,7 +310,8 @@ virtual void unlink_target(_Inout_ ITarget<size_t>* _PTarget);
  `_PTarget`  
  A pointer to an `ITarget` block to unlink from this `choice` messaging block.  
   
-##  <a name="unlink_targets"></a>  choice::unlink_targets Method  
+##  <a name="unlink_targets"></a> unlink_targets 
+
  Unlinks all targets from this `choice` messaging block.  
   
 ```  
@@ -308,7 +321,8 @@ virtual void unlink_targets();
 ### Remarks  
  This method does not need to be called from the destructor because destructor for the internal `single_assignment` block will unlink properly.  
   
-##  <a name="value"></a>  choice::value Method  
+##  <a name="value"></a> value 
+
  Gets the message whose index was selected by the `choice` messaging block.  
   
 ```  

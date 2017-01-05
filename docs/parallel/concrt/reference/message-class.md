@@ -88,7 +88,8 @@ class message : public ::Concurrency::details::_Runtime_object;
   
  **Namespace:** concurrency  
   
-##  <a name="add_ref"></a>  message::add_ref Method  
+##  <a name="add_ref"></a> add_ref 
+
  Adds to the reference count for the `message` object. Used for message blocks that need reference counting to determine message lifetimes.  
   
 ```
@@ -98,7 +99,8 @@ long add_ref();
 ### Return Value  
  The new value of the reference count.  
   
-##  <a name="ctor"></a>  message::message Constructor  
+##  <a name="ctor"></a> message 
+
  Constructs a `message` object.  
   
 ```
@@ -129,14 +131,16 @@ message(
 ### Remarks  
  The constructor that takes a pointer to a `message` object as an argument throws an [invalid_argument](../../../standard-library/invalid-argument-class.md) exception if the parameter `_Msg` is `NULL`.  
   
-##  <a name="dtor"></a>  message::~message Destructor  
+##  <a name="dtor"></a> ~message 
+
  Destroys the `message` object.  
   
 ```
 virtual ~message();
 ```  
   
-##  <a name="msg_id"></a>  message::msg_id Method  
+##  <a name="msg_id"></a> msg_id 
+
  Returns the ID of the `message` object.  
   
 ```
@@ -146,14 +150,16 @@ runtime_object_identity msg_id() const;
 ### Return Value  
  The `runtime_object_identity` of the `message` object.  
   
-##  <a name="payload"></a>  message::payload Data Member  
+##  <a name="payload"></a> payload 
+
  The payload of the `message` object.  
   
 ```
 T const payload;
 ```  
   
-##  <a name="remove_ref"></a>  message::remove_ref Method  
+##  <a name="remove_ref"></a> remove_ref 
+
  Subtracts from the reference count for the `message` object. Used for message blocks that need reference counting to determine message lifetimes.  
   
 ```

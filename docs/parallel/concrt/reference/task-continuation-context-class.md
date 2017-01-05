@@ -86,7 +86,8 @@ static task_continuation_context get_current_winrt_context();
  This method is similar to the  `use_current` method, but it is also available to native C++ code without C++/CX extension support. It is intended for use by advanced users writing C++/CX-agnostic library code for both native and Windows Runtime callers. Unless you need this functionality, we recommend the `use_current` method, which is only available to C++/CX clients.  
   
   
-##  <a name="use_arbitrary"></a>  task_continuation_context::use_arbitrary Method  
+##  <a name="use_arbitrary"></a> use_arbitrary 
+
  Creates a task continuation context which allows the Runtime to choose the execution context for a continuation.  
   
 ```
@@ -103,7 +104,8 @@ static task_continuation_context use_arbitrary();
   
  This method is only available to Windows Store apps.  
   
-##  <a name="use_current"></a>  task_continuation_context::use_current Method  
+##  <a name="use_current"></a> use_current 
+
  Returns a task continuation context object that represents the current execution context.  
   
 ```
@@ -120,7 +122,8 @@ static task_continuation_context use_current();
   
  This method is only available to Windows Store apps.  
   
-##  <a name="use_default"></a>  task_continuation_context::use_default Method  
+##  <a name="use_default"></a> use_default 
+
  Creates the default task continuation context.  
   
 ```

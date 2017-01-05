@@ -64,7 +64,8 @@ class missing_wait : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="ctor"></a>  missing_wait::missing_wait Constructor  
+##  <a name="ctor"></a> missing_wait 
+
  Constructs a `missing_wait` object.  
   
 ```

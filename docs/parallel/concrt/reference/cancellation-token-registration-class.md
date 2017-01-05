@@ -68,14 +68,14 @@ class cancellation_token_registration;
   
  **Namespace:** concurrency  
   
-##  <a name="dtor"></a>  cancellation_token_registration::~cancellation_token_registration Destructor  
-  
+##  <a name="dtor"></a> ~cancellation_token_registration 
+
 ```
 ~cancellation_token_registration();
 ```  
   
-##  <a name="ctor"></a>  cancellation_token_registration::cancellation_token_registration Constructor  
-  
+##  <a name="ctor"></a> cancellation_token_registration 
+
 ```
 cancellation_token_registration();
 
@@ -87,8 +87,8 @@ cancellation_token_registration(cancellation_token_registration&& _Src);
 ### Parameters  
  `_Src`  
   
-##  <a name="operator_neq"></a>  cancellation_token_registration::operator!= Operator  
-  
+##  <a name="operator_neq"></a> operator!= 
+
 ```
 bool operator!= (const cancellation_token_registration& _Rhs) const;
 ```  
@@ -98,8 +98,8 @@ bool operator!= (const cancellation_token_registration& _Rhs) const;
   
 ### Return Value  
   
-##  <a name="operator_eq"></a>  cancellation_token_registration::operator= Operator  
-  
+##  <a name="operator_eq"></a> operator= 
+
 ```
 cancellation_token_registration& operator= (const cancellation_token_registration& _Src);
 
@@ -111,8 +111,8 @@ cancellation_token_registration& operator= (cancellation_token_registration&& _S
   
 ### Return Value  
   
-##  <a name="operator_eq_eq"></a>  cancellation_token_registration::operator== Operator  
-  
+##  <a name="operator_eq_eq"></a> operator== 
+
 ```
 bool operator== (const cancellation_token_registration& _Rhs) const;
 ```  

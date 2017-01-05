@@ -64,7 +64,8 @@ class improper_lock : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="ctor"></a>  improper_lock::improper_lock Constructor  
+##  <a name="ctor"></a> improper_lock 
+
  Constructs an `improper_lock exception`.  
   
 ```

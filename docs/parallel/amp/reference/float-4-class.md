@@ -620,7 +620,8 @@ class float_4;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="ctor"></a>  float_4::float_4 Constructor  
+##  <a name="ctor"></a> float_4 
+
  Default constructor, initializes all elements with 0.  
   
 ```  
@@ -690,8 +691,8 @@ explicit inline float_4(
  `_Other`  
  The object used to initialize.  
   
-##  <a name="float_4__size"></a>  float_4::size Constant  
-  
+##  <a name="float_4__size"></a> size 
+
 ```  
 static const int size = 4;  
 ```  

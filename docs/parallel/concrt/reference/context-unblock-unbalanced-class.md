@@ -64,7 +64,8 @@ class context_unblock_unbalanced : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="ctor"></a>  context_unblock_unbalanced::context_unblock_unbalanced Constructor  
+##  <a name="ctor"></a> context_unblock_unbalanced 
+
  Constructs a `context_unblock_unbalanced` object.  
   
 ```  

@@ -83,7 +83,8 @@ class task_completion_event<void>;
   
  **Namespace:** concurrency  
   
-##  <a name="set"></a>  task_completion_event::set Method  
+##  <a name="set"></a> set 
+
  Sets the task completion event.  
   
 ```
@@ -102,7 +103,8 @@ bool set() const ;
 ### Remarks  
  In the presence of multiple or concurrent calls to `set`, only the first call will succeed and its result (if any) will be stored in the task completion event. The remaining sets are ignored and the method will return false. When you set a task completion event, all the tasks created from that event will immediately complete, and its continuations, if any, will be scheduled. Task completion objects that have a `_ResultType` other than `void` will pass the value                          to their continuations.  
   
-##  <a name="set_exception"></a>  task_completion_event::set_exception Method  
+##  <a name="set_exception"></a> set_exception 
+
  Propagates an exception to all tasks associated with this event.  
   
 ```
@@ -119,7 +121,8 @@ __declspec(noinline) bool set_exception(std::exception_ptr _ExceptionPtr) const 
   
 ### Return Value  
   
-##  <a name="ctor"></a>  task_completion_event::task_completion_event Constructor  
+##  <a name="ctor"></a> task_completion_event 
+
  Constructs a `task_completion_event` object.  
   
 ```

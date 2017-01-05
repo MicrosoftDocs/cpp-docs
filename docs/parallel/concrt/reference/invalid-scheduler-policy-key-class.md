@@ -61,7 +61,8 @@ class invalid_scheduler_policy_key : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="ctor"></a>  invalid_scheduler_policy_key::invalid_scheduler_policy_key Constructor  
+##  <a name="ctor"></a> invalid_scheduler_policy_key 
+
  Constructs an `invalid_scheduler_policy_key` object.  
   
 ```

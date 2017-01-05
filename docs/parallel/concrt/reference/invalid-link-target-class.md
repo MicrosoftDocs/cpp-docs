@@ -61,7 +61,8 @@ class invalid_link_target : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="ctor"></a>  invalid_link_target::invalid_link_target Constructor  
+##  <a name="ctor"></a> invalid_link_target 
+
  Constructs an `invalid_link_target` object.  
   
 ```

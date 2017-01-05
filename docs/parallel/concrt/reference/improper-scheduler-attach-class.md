@@ -61,7 +61,8 @@ class improper_scheduler_attach : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="ctor"></a>  improper_scheduler_attach::improper_scheduler_attach Constructor  
+##  <a name="ctor"></a> improper_scheduler_attach 
+
  Constructs an `improper_scheduler_attach` object.  
   
 ```

@@ -61,7 +61,8 @@ class task_canceled : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="ctor"></a>  task_canceled::task_canceled Constructor  
+##  <a name="ctor"></a> task_canceled 
+
  Constructs a `task_canceled` object.  
   
 ```

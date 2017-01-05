@@ -92,7 +92,8 @@ class timer : public Concurrency::details::_Timer, public source_block<single_li
   
  **Namespace:** concurrency  
   
-##  <a name="accept_message"></a>  timer::accept_message Method  
+##  <a name="accept_message"></a> accept_message 
+
  Accepts a message that was offered by this `timer` messaging block, transferring ownership to the caller.  
   
 ```
@@ -106,7 +107,8 @@ virtual message<T>* accept_message(runtime_object_identity _MsgId);
 ### Return Value  
  A pointer to the `message` object that the caller now has ownership of.  
   
-##  <a name="consume_message"></a>  timer::consume_message Method  
+##  <a name="consume_message"></a> consume_message 
+
  Consumes a message previously offered by the `timer` and reserved by the target, transferring ownership to the caller.  
   
 ```
@@ -123,7 +125,8 @@ virtual message<T>* consume_message(runtime_object_identity _MsgId);
 ### Remarks  
  Similar to `accept`, but is always preceded by a call to `reserve`.  
   
-##  <a name="link_target_notification"></a>  timer::link_target_notification Method  
+##  <a name="link_target_notification"></a> link_target_notification 
+
  A callback that notifies that a new target has been linked to this `timer` messaging block.  
   
 ```
@@ -134,21 +137,24 @@ virtual void link_target_notification(_Inout_ ITarget<T>* _PTarget);
  `_PTarget`  
  A pointer to the newly linked target.  
   
-##  <a name="pause"></a>  timer::pause Method  
+##  <a name="pause"></a> pause 
+
  Stops the `timer` messaging block. If it is a repeating `timer` messaging block, it can be restarted with a subsequent `start()` call. For non-repeating timers, this has the same effect as a `stop` call.  
   
 ```
 void pause();
 ```  
   
-##  <a name="propagate_to_any_targets"></a>  timer::propagate_to_any_targets Method  
+##  <a name="propagate_to_any_targets"></a> propagate_to_any_targets 
+
  Tries to offer the message produced by the `timer` block to all of the linked targets.  
   
 ```
 virtual void propagate_to_any_targets(_Inout_opt_ message<T> *);
 ```  
   
-##  <a name="release_message"></a>  timer::release_message Method  
+##  <a name="release_message"></a> release_message 
+
  Releases a previous message reservation.  
   
 ```
@@ -159,7 +165,8 @@ virtual void release_message(runtime_object_identity _MsgId);
  `_MsgId`  
  The `runtime_object_identity` of the `message` object being released.  
   
-##  <a name="reserve_message"></a>  timer::reserve_message Method  
+##  <a name="reserve_message"></a> reserve_message 
+
  Reserves a message previously offered by this `timer` messaging block.  
   
 ```
@@ -176,28 +183,32 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 ### Remarks  
  After `reserve` is called, if it returns `true`, either `consume` or `release` must be called to either take or release ownership of the message.  
   
-##  <a name="resume_propagation"></a>  timer::resume_propagation Method  
+##  <a name="resume_propagation"></a> resume_propagation 
+
  Resumes propagation after a reservation has been released.  
   
 ```
 virtual void resume_propagation();
 ```  
   
-##  <a name="start"></a>  timer::start Method  
+##  <a name="start"></a> start 
+
  Starts the `timer` messaging block. The specified number of milliseconds after this is called, the specified value will be propagated downstream as a `message`.  
   
 ```
 void start();
 ```  
   
-##  <a name="stop"></a>  timer::stop Method  
+##  <a name="stop"></a> stop 
+
  Stops the `timer` messaging block.  
   
 ```
 void stop();
 ```  
   
-##  <a name="ctor"></a>  timer::timer Constructor  
+##  <a name="ctor"></a> timer 
+
  Constructs a `timer` messaging block that will fire a given message after a specified interval.  
   
 ```
@@ -244,7 +255,8 @@ timer(
 ### Remarks  
  The runtime uses the default scheduler if you do not specify the `_Scheduler` or `_ScheduleGroup` parameters.  
   
-##  <a name="dtor"></a>  timer::~timer Destructor  
+##  <a name="dtor"></a> ~timer 
+
  Destroys a `timer` messaging block.  
   
 ```

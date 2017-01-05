@@ -66,7 +66,8 @@ class invalid_compute_domain : public runtime_exception;
   
  **Namespace:** Concurrency  
 
-## <a name="ctor"></a> invalid_compute_domain::invalid_compute_domain Constructor
+## <a name="ctor"></a> invalid_compute_domain 
+
 Initializes a new instance of the class.  
   
 ## Syntax  

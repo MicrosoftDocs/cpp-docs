@@ -110,7 +110,8 @@ class propagator_block : public source_block<_TargetLinkRegistry,
   
  **Namespace:** concurrency  
   
-##  <a name="decline_incoming_messages"></a>  propagator_block::decline_incoming_messages Method  
+##  <a name="decline_incoming_messages"></a> decline_incoming_messages 
+
  Indicates to the block that new messages should be declined.  
   
 ```
@@ -120,7 +121,8 @@ void decline_incoming_messages();
 ### Remarks  
  This method is called by the destructor to ensure that new messages are declined while destruction is in progress.  
   
-##  <a name="initialize_source_and_target"></a>  propagator_block::initialize_source_and_target Method  
+##  <a name="initialize_source_and_target"></a> initialize_source_and_target 
+
  Initializes the base object. Specifically, the `message_processor` object needs to be initialized.  
   
 ```
@@ -136,7 +138,8 @@ void initialize_source_and_target(
  `_PScheduleGroup`  
  The schedule group to be used for scheduling tasks.  
   
-##  <a name="link_source"></a>  propagator_block::link_source Method  
+##  <a name="link_source"></a> link_source 
+
  Links a specified source block to this `propagator_block` object.  
   
 ```
@@ -147,7 +150,8 @@ virtual void link_source(_Inout_ ISource<_Source_type>* _PSource);
  `_PSource`  
  A pointer to the `ISource` block that is to be linked.  
   
-##  <a name="process_input_messages"></a>  propagator_block::process_input_messages Method  
+##  <a name="process_input_messages"></a> process_input_messages 
+
  Process input messages. This is only useful for propagator blocks, which derive from source_block  
   
 ```
@@ -157,7 +161,8 @@ virtual void process_input_messages(_Inout_ message<_Target_type>* _PMessage);
 ### Parameters  
  `_PMessage`  
   
-##  <a name="propagate"></a>  propagator_block::propagate Method  
+##  <a name="propagate"></a> propagate 
+
  Asynchronously passes a message from a source block to this target block.  
   
 ```
@@ -181,7 +186,8 @@ virtual message_status propagate(
   
  The method throws an [invalid_argument](../../../standard-library/invalid-argument-class.md) exception if either the `_PMessage` or `_PSource` parameter is `NULL`.  
   
-##  <a name="propagate_message"></a>  propagator_block::propagate_message Method  
+##  <a name="propagate_message"></a> propagate_message 
+
  When overridden in a derived class, this method asynchronously passes a message from an `ISource` block to this `propagator_block` object. It is invoked by the `propagate` method, when called by a source block.  
   
 ```
@@ -200,21 +206,24 @@ virtual message_status propagate_message(
 ### Return Value  
  A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
   
-##  <a name="ctor"></a>  propagator_block::propagator_block Constructor  
+##  <a name="ctor"></a> propagator_block 
+
  Constructs a `propagator_block` object.  
   
 ```
 propagator_block();
 ```  
   
-##  <a name="dtor"></a>  propagator_block::~propagator_block Destructor  
+##  <a name="dtor"></a> ~propagator_block 
+
  Destroys a `propagator_block` object.  
   
 ```
 virtual ~propagator_block();
 ```  
   
-##  <a name="register_filter"></a>  propagator_block::register_filter Method  
+##  <a name="register_filter"></a> register_filter 
+
  Registers a filter method that will be invoked on every received message.  
   
 ```
@@ -225,14 +234,16 @@ void register_filter(filter_method const& _Filter);
  `_Filter`  
  The filter method.  
   
-##  <a name="remove_network_links"></a>  propagator_block::remove_network_links Method  
+##  <a name="remove_network_links"></a> remove_network_links 
+
  Removes all the source and target network links from this `propagator_block` object.  
   
 ```
 void remove_network_links();
 ```  
   
-##  <a name="send"></a>  propagator_block::send Method  
+##  <a name="send"></a> send 
+
  Synchronously initiates a message to this block. Called by an `ISource` block. When this function completes, the message will already have propagated into the block.  
   
 ```
@@ -254,7 +265,8 @@ virtual message_status send(
 ### Remarks  
  This method throws an [invalid_argument](../../../standard-library/invalid-argument-class.md) exception if either the `_PMessage` or `_PSource` parameter is `NULL`.  
   
-##  <a name="send_message"></a>  propagator_block::send_message Method  
+##  <a name="send_message"></a> send_message 
+
  When overridden in a derived class, this method synchronously passes a message from an `ISource` block to this `propagator_block` object. It is invoked by the `send` method, when called by a source block.  
   
 ```
@@ -269,7 +281,8 @@ virtual message_status send_message(
 ### Remarks  
  By default, this block returns `declined` unless overridden by a derived class.  
   
-##  <a name="unlink_source"></a>  propagator_block::unlink_source Method  
+##  <a name="unlink_source"></a> unlink_source 
+
  Unlinks a specified source block from this `propagator_block` object.  
   
 ```
@@ -280,7 +293,8 @@ virtual void unlink_source(_Inout_ ISource<_Source_type>* _PSource);
  `_PSource`  
  A pointer to the `ISource` block that is to be unlinked.  
   
-##  <a name="unlink_sources"></a>  propagator_block::unlink_sources Method  
+##  <a name="unlink_sources"></a> unlink_sources 
+
  Unlinks all source blocks from this `propagator_block` object.  
   
 ```

@@ -62,7 +62,8 @@ class scoped_d3d_access_lock;
   
  **Namespace:** concurrency::direct3d  
 
-##  <a name="ctor"></a> scoped_d3d_access_lock::scoped_d3d_access_lock Constructor
+##  <a name="ctor"></a> scoped_d3d_access_lock 
+
  Constructs a `scoped_d3d_access_lock` object. The lock is released when this object goes out of scope.  
  
 ```  
@@ -100,14 +101,15 @@ scoped_d3d_access_lock(// [3] move constructor
  Takes an existing D3D access lock from another `scoped_d3d_access_lock` object. Construction does not block.  
 
   
-##  <a name="dtor"></a>  scoped_d3d_access_lock::~scoped_d3d_access_lock Destructor  
+##  <a name="dtor"></a> ~scoped_d3d_access_lock 
 
  Releases the D3D access lock on the associated `accelerator_view` object.  
   
 ```  
 ~scoped_d3d_access_lock();
 ```  
-## <a name="operator_eq"></a>  scoped_d3d_access_lock::operator= Operator
+## <a name="operator_eq"></a> operator= 
+
 Takes ownership of a D3D access lock from another `scoped_d3d_access_lock` object, releasing the previous lock.  
  
 ```  

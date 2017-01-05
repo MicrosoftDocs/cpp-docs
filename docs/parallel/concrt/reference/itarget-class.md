@@ -90,14 +90,16 @@ class ITarget;
   
  **Namespace:** concurrency  
   
-##  <a name="dtor"></a>  ITarget::~ITarget Destructor  
+##  <a name="dtor"></a> ~ITarget 
+
  Destroys the `ITarget` object.  
   
 ```
 virtual ~ITarget();
 ```  
   
-##  <a name="link_source"></a>  ITarget::link_source Method  
+##  <a name="link_source"></a> link_source 
+
  When overridden in a derived class, links a specified source block to this `ITarget` block.  
   
 ```
@@ -111,7 +113,8 @@ virtual void link_source(_Inout_ ISource<T>* _PSource) = 0;
 ### Remarks  
  This function should not be called directly on an `ITarget` block. Blocks should be connected together using the `link_target` method on `ISource` blocks, which will invoke the `link_source` method on the corresponding target.  
   
-##  <a name="propagate"></a>  ITarget::propagate Method  
+##  <a name="propagate"></a> propagate 
+
  When overridden in a derived class, asynchronously passes a message from a source block to this target block.  
   
 ```
@@ -133,7 +136,8 @@ virtual message_status propagate(
 ### Remarks  
  The method throws an [invalid_argument](../../../standard-library/invalid-argument-class.md) exception if either the `_PMessage` or `_PSource` parameter is `NULL`.  
   
-##  <a name="send"></a>  ITarget::send Method  
+##  <a name="send"></a> send 
+
  When overridden in a derived class, synchronously passes a message to the target block.  
   
 ```
@@ -159,7 +163,8 @@ virtual message_status send(
   
  When `send` returns, the message has either already been accepted, and transferred into the target block, or it has been declined by the target.  
   
-##  <a name="supports_anonymous_source"></a>  ITarget::supports_anonymous_source Method  
+##  <a name="supports_anonymous_source"></a> supports_anonymous_source 
+
  When overridden in a derived class, returns true or false depending on whether the message block accepts messages offered by a source that is not linked to it. If the overridden method returns `true`, the target cannot postpone an offered message, as consumption of a postponed message at a later time requires the source to be identified in its sourse link registry.  
   
 ```
@@ -169,7 +174,8 @@ virtual bool supports_anonymous_source();
 ### Return Value  
  `true` if the block can accept message from a source that is not linked to it `false` otherwise.  
   
-##  <a name="unlink_source"></a>  ITarget::unlink_source Method  
+##  <a name="unlink_source"></a> unlink_source 
+
  When overridden in a derived class, unlinks a specified source block from this `ITarget` block.  
   
 ```
@@ -183,7 +189,8 @@ virtual void unlink_source(_Inout_ ISource<T>* _PSource) = 0;
 ### Remarks  
  This function should not be called directly on an `ITarget` block. Blocks should be disconnected using the `unlink_target` or `unlink_targets` methods on `ISource` blocks, which will invoke the `unlink_source` method on the corresponding target.  
   
-##  <a name="unlink_sources"></a>  ITarget::unlink_sources Method  
+##  <a name="unlink_sources"></a> unlink_sources 
+
  When overridden in a derived class, unlinks all source blocks from this `ITarget` block.  
   
 ```

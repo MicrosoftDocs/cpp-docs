@@ -98,7 +98,7 @@ class accelerator_view;
   
  **Namespace:** Concurrency  
 
-## <a name="accelerator"></a> accelerator_view::accelerator Data Member
+## <a name="accelerator"></a> accelerator 
 
 Gets the accelerator object for the accelerator_view object.  
   
@@ -108,7 +108,8 @@ Gets the accelerator object for the accelerator_view object.
 __declspec(property(get= get_accelerator)) Concurrency::accelerator accelerator;  
 ```  
   
-## <a name="ctor"></a> accelerator_view::accelerator_view Constructor
+## <a name="ctor"></a> accelerator_view 
+
 Initializes a new instance of the accelerator_view class by copying an existing `accelerator_view` object.  
   
 ### Syntax  
@@ -121,7 +122,8 @@ accelerator_view( const accelerator_view & _Other );
  `_Other`  
  The `accelerator_view` object to copy.  
   
-## <a name="accelerator_view__create_marker"></a> accelerator_view::create_marker Method
+## <a name="accelerator_view__create_marker"></a> create_marker 
+
 Returns a future to track the completion of all commands submitted so far to this `accelerator_view` object.  
   
 ### Syntax  
@@ -133,7 +135,8 @@ concurrency::completion_future create_marker();
 ### Return Value  
  A future to track the completion of all commands submitted so far to this `accelerator_view` object.  
   
-## <a name="flush"></a> accelerator_view::flush Method
+## <a name="flush"></a> flush 
+
 Submits all pending commands queued to the accelerator_view object to the accelerator for execution.  
   
 ### Syntax  
@@ -145,7 +148,8 @@ void flush();
 ### Return Value  
  Returns `void`.  
 
-## <a name="accelerator_view__get_accelerator"></a> accelerator_view::get_accelerator Method  
+## <a name="accelerator_view__get_accelerator"></a> get_accelerator 
+
 Returns the accelerator object for the accelerator_view object.
 ### Syntax
 ```
@@ -154,7 +158,8 @@ accelerator get_accelerator() const;
 ### Return Value
 The accelerator object for the accelerator_view object.
 
-## <a name="accelerator_view__get_is_auto_selection"></a> accelerator_view::get_is_auto_selection Method  
+## <a name="accelerator_view__get_is_auto_selection"></a> get_is_auto_selection 
+
 Returns a Boolean value that indicates whether the runtime will automatically select an appropriate accelerator when the accelerator_view is passed to a [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each).  
   
 ### Syntax  
@@ -166,7 +171,8 @@ bool get_is_auto_selection() const;
 ### Return Value  
  `true` if the runtime will automatically select an appropriate accelerator; otherwise, `false`.  
   
-## <a name="accelerator_view__get_is_debug"></a> accelerator_view::get_is_debug Method
+## <a name="accelerator_view__get_is_debug"></a> get_is_debug 
+
 Returns a Boolean value that indicates whether the accelerator_view object has the DEBUG layer enabled for extensive error reporting.  
   
 ### Syntax  
@@ -178,7 +184,8 @@ bool get_is_debug() const;
 ### Return Value  
  A Boolean value that indicates whether the `accelerator_view` object has the DEBUG layer enabled for extensive error reporting.  
 
-## <a name="accelerator_view__get_queuing_mode"></a> accelerator_view::get_queuing_mode Method
+## <a name="accelerator_view__get_queuing_mode"></a> get_queuing_mode 
+
 Returns the queuing mode for the accelerator_view object.  
   
 ### Syntax  
@@ -190,7 +197,8 @@ queuing_mode get_queuing_mode() const;
 ### Return Value  
  The queuing mode for the `accelerator_view` object.  
   
-## <a name="accelerator_view__get_version"></a> accelerator_view::get_version Method  
+## <a name="accelerator_view__get_version"></a> get_version 
+
 Returns the version of the accelerator_view.  
   
 ### Syntax  
@@ -202,7 +210,8 @@ unsigned int get_version() const;
 ### Return Value  
  The version of the `accelerator_view`.  
   
-## <a name="accelerator_view__is_auto_selection"></a> accelerator_view::is_auto_selection Data Member  
+## <a name="accelerator_view__is_auto_selection"></a> is_auto_selection 
+
 Gets a Boolean value that indicates whether the runtime will automatically select an appropriate accelerator when the accelerator_view is passed to a [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each).  
   
 ### Syntax  
@@ -211,7 +220,8 @@ Gets a Boolean value that indicates whether the runtime will automatically selec
 __declspec(property(get= get_is_auto_selection)) bool is_auto_selection;  
 ```  
   
-## <a name="accelerator_view__is_debug"></a> accelerator_view::is_debug Data Member  
+## <a name="accelerator_view__is_debug"></a> is_debug 
+
 Gets a Boolean value that indicates whether the accelerator_view object has the  DEBUG layer enabled for extensive error reporting.  
   
 ### Syntax  
@@ -220,7 +230,8 @@ Gets a Boolean value that indicates whether the accelerator_view object has the 
 __declspec(property(get= get_is_debug)) bool is_debug;  
 ```  
   
-## <a name="accelerator_view__operator_neq"></a> accelerator_view::operator!= Operator  
+## <a name="accelerator_view__operator_neq"></a> operator!= 
+
 Compares this accelerator_view object with another and returns `false` if they are the same; otherwise, returns `true`.  
   
 ### Syntax  
@@ -236,7 +247,8 @@ bool operator!= (    const accelerator_view & _Other ) const;
 ### Return Value  
  `false` if the two objects are the same; otherwise, `true`.  
   
-## <a name="accelerator_view__operator_eq"></a> accelerator_view::operator= Operator  
+## <a name="accelerator_view__operator_eq"></a> operator= 
+
 Copies the contents of the specified accelerator_view object into this one.  
   
 ### Syntax  
@@ -252,7 +264,8 @@ accelerator_view & operator= (    const accelerator_view & _Other );
 ### Return Value  
  A reference to the modified `accelerator_view` object.  
   
-## <a name="accelerator_view__operator_eq_eq"></a> accelerator_view::operator== Operator  
+## <a name="accelerator_view__operator_eq_eq"></a> operator== 
+
 Compares this accelerator_view object with another and returns `true` if they are the same; otherwise, returns `false`.  
   
 ### Syntax  
@@ -268,7 +281,8 @@ bool operator= = (    const accelerator_view & _Other ) const;
 ### Return Value  
  `true` if the two objects are the same; otherwise, `false`.  
   
-## <a name="accelerator_view__queuing_mode"></a> accelerator_view::queuing_mode Data Member  
+## <a name="accelerator_view__queuing_mode"></a> queuing_mode 
+
 Gets the queuing mode for the accelerator_view object.  
   
 ### Syntax  
@@ -277,7 +291,8 @@ Gets the queuing mode for the accelerator_view object.
 __declspec(property(get= get_queuing_mode)) Concurrency::queuing_mode queuing_mode;  
 ```  
   
-## <a name="accelerator_view__version"></a> accelerator_view::version Data Member  
+## <a name="accelerator_view__version"></a> version 
+
 Gets the version of the accelerator_view.  
   
 ### Syntax  
@@ -286,7 +301,8 @@ Gets the version of the accelerator_view.
 __declspec(property(get= get_version)) unsigned int version;  
 ```  
   
-## <a name="accelerator_view__wait"></a> accelerator_view::wait Method  
+## <a name="accelerator_view__wait"></a> wait 
+
 Waits for all commands submitted to the accelerator_view object to finish.  
   
 ### Syntax  
@@ -301,7 +317,8 @@ void wait();
 #### Remarks  
  If the [queuing_mode](concurrency-namespace-enums-amp.md#queuing_mode) is `immediate`, this method returns immediately without blocking.  
   
-##  <a name="dtor"></a> accelerator_view::~accelerator_view Destructor
+##  <a name="dtor"></a> ~accelerator_view 
+
  Destroys the accelerator_view object.  
   
 #### Syntax  

@@ -104,7 +104,8 @@ template <typename T,
   
  **Namespace:** concurrency  
   
-##  <a name="clear"></a>  concurrent_priority_queue::clear Method  
+##  <a name="clear"></a> clear 
+
  Erases all elements in the concurrent priority. This method is not concurrency-safe.  
   
 ```
@@ -114,7 +115,8 @@ void clear();
 ### Remarks  
  `clear` is not concurrency-safe. You must ensure that no other threads are invoking methods on the concurrent priority queue when you call this method. `clear` does not free memory.  
   
-##  <a name="ctor"></a>  concurrent_priority_queue::concurrent_priority_queue Constructor  
+##  <a name="ctor"></a> concurrent_priority_queue 
+
  Constructs a concurrent priority queue.  
   
 ```
@@ -177,7 +179,8 @@ concurrent_priority_queue(
   
  The sixth and seventh constructors specify a move of the priority queue `_Src`.  
   
-##  <a name="empty"></a>  concurrent_priority_queue::empty Method  
+##  <a name="empty"></a> empty 
+
  Tests if the concurrent priority queue is empty at the time this method is called. This method is concurrency-safe.  
   
 ```
@@ -187,7 +190,8 @@ bool empty() const;
 ### Return Value  
  `true` if the priority queue was empty at the moment the function was called, `false` otherwise.  
   
-##  <a name="get_allocator"></a>  concurrent_priority_queue::get_allocator Method  
+##  <a name="get_allocator"></a> get_allocator 
+
  Returns a copy of the allocator used to construct the concurrent priority queue. This method is concurrency-safe.  
   
 ```
@@ -197,7 +201,8 @@ allocator_type get_allocator() const;
 ### Return Value  
  A copy of the allocator used to construct the `concurrent_priority_queue` object.  
   
-##  <a name="operator_eq"></a>  concurrent_priority_queue::operator= Operator  
+##  <a name="operator_eq"></a> operator= 
+
  Assigns the contents of another `concurrent_priority_queue` object to this one. This method is not concurrency-safe.  
   
 ```
@@ -213,7 +218,8 @@ concurrent_priority_queue& operator= (concurrent_priority_queue&& _Src);
 ### Return Value  
  A reference to this `concurrent_priority_queue` object.  
   
-##  <a name="push"></a>  concurrent_priority_queue::push Method  
+##  <a name="push"></a> push 
+
  Adds an element to the concurrent priority queue. This method is concurrency-safe.  
   
 ```
@@ -226,7 +232,8 @@ void push(value_type&& _Elem);
  `_Elem`  
  The element to be added to the concurrent priority queue.  
   
-##  <a name="size"></a>  concurrent_priority_queue::size Method  
+##  <a name="size"></a> size 
+
  Returns the number of elements in the concurrent priority queue. This method is concurrency-safe.  
   
 ```
@@ -239,7 +246,8 @@ size_type size() const;
 ### Remarks  
  The returned size is guaranteed to include all elements added by calls to the function `push`. However, it may not reflect results of pending concurrent operations.  
   
-##  <a name="swap"></a>  concurrent_priority_queue::swap Method  
+##  <a name="swap"></a> swap 
+
  Swaps the contents of two concurrent priority queues. This method is not concurrency-safe.  
   
 ```
@@ -250,7 +258,8 @@ void swap(concurrent_priority_queue& _Queue);
  `_Queue`  
  The `concurrent_priority_queue` object to swap contents with.  
   
-##  <a name="try_pop"></a>  concurrent_priority_queue::try_pop Method  
+##  <a name="try_pop"></a> try_pop 
+
  Removes and returns the highest priority element from the queue if the queue is non-empty. This method is concurrency-safe.  
   
 ```

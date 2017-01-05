@@ -143,7 +143,8 @@ class int_2;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="ctor"></a>  int_2::int_2 Constructor  
+##  <a name="ctor"></a> int_2 
+
  Default constructor, initializes all elements with 0.  
   
 ```  
@@ -205,8 +206,8 @@ explicit inline int_2(
  `_Other`  
  The object used to initialize.  
   
-##  <a name="int_2__size"></a>  int_2::size Constant  
-  
+##  <a name="int_2__size"></a> size 
+
 ```  
 static const int size = 2;  
 ```  

@@ -61,7 +61,8 @@ class scheduler_not_attached : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="ctor"></a>  scheduler_not_attached::scheduler_not_attached Constructor  
+##  <a name="ctor"></a> scheduler_not_attached 
+
  Constructs a `scheduler_not_attached` object.  
   
 ```

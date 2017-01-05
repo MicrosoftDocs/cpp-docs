@@ -64,7 +64,8 @@ class invalid_operation : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="ctor"></a>  invalid_operation::invalid_operation Constructor  
+##  <a name="ctor"></a> invalid_operation 
+
  Constructs an `invalid_operation` object.  
   
 ```

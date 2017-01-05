@@ -72,7 +72,8 @@ class norm;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="ctor"></a>  norm::norm Constructor  
+##  <a name="ctor"></a> norm 
+
  Default constructor. Initialize to 0.0f.  
   
 ```  

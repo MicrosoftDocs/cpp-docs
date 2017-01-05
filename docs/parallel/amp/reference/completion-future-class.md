@@ -78,7 +78,8 @@ class completion_future;
  **Namespace:** concurrency  
 
 
-## <a name="ctor"></a> completion_future::completion_future Constructor
+## <a name="ctor"></a> completion_future 
+
 Initializes a new instance of the `completion_future` class.  
   
 ### Syntax  
@@ -105,7 +106,8 @@ completion_future(
 |`completion_future(const completion_future& _Other);`|Initializes a new instance of the `completion_future` class by copying a constructor.|  
 |`completion_future(completion_future&& _Other);`|Initializes a new instance of the `completion_future` class by moving a constructor.|  
   
-## <a name="get"></a> completion_future::get Method  
+## <a name="get"></a> get 
+
 Waits until the associated asynchronous operation completes. Throws the stored exception if one was encountered during the asynchronous operation.  
   
 ### Syntax  
@@ -114,7 +116,8 @@ Waits until the associated asynchronous operation completes. Throws the stored e
 void get() const;  
 ```  
   
-## <a name="operator_shared_future"></a> completion_future::operator std::shared_future<void> Operator  
+## <a name="operator_shared_future"></a> operator std::shared_future<void> 
+
 Implicitly converts the `completion_future` object to an `std::shared_future` object.  
   
 ### Syntax  
@@ -126,7 +129,8 @@ operator std::shared_future<void>() const;
 ### Return Value  
  An `std::shared_future` object.  
   
-## <a name="operator_eq"></a>completion_future::operator= Operator  
+## <a name="operator_eq"></a> operator= 
+
 Copies the contents of the specified `completion_future` object into this one.  
   
 ### Syntax  
@@ -150,7 +154,8 @@ completion_future&  operator= (completion_future&& _Other );
 |`completion_future& operator=(const completion_future& _Other);`|Copies the contents of the specified `completion_future` object into this one, using a deep copy.|  
 |`completion_future& operator=(completion_future&& _Other);`|Copies the contents of the specified `completion_future` object into this one, using a move assignment.|  
   
-## <a name="then"></a> completion_future::then Method  
+## <a name="then"></a> then 
+
 Chains a callback function object to the `completion_future` object to be executed when the associated asynchronous operation finishes execution.  
   
 ### Syntax  
@@ -167,7 +172,8 @@ void then(const _Functor & _Func ) const;
  `_Func`  
  The callback function object.  
   
-## <a name="to_task"></a> completion_future::to_task Method  
+## <a name="to_task"></a> to_task 
+
 Returns a `task` object corresponding to the associated asynchronous operation.  
   
 ### Syntax  
@@ -179,7 +185,8 @@ concurrency::task<void> to_task() const;
 ### Return Value  
  A `task` object corresponding to the associated asynchronous operation.  
   
-## <a name="valid"></a> completion_future::valid Method  
+## <a name="valid"></a> valid 
+
 Gets a Boolean value that indicates whether the  object is associated with an asynchronous operation.  
   
 ### Syntax  
@@ -191,7 +198,8 @@ bool valid() const;
 ### Return Value  
  `true` if the object is associated with an asynchronous operation; otherwise, `false`.  
   
-## <a name="wait"></a> completion_future::wait Method  
+## <a name="wait"></a> wait 
+
 Blocks until the associated asynchronous operation completes.  
   
 ### Syntax  
@@ -200,7 +208,8 @@ Blocks until the associated asynchronous operation completes.
 void wait() const;  
 ```  
   
-## <a name="wait_for"></a> completion_future::wait_for Method  
+## <a name="wait_for"></a> wait_for 
+
 Blocks until the associated asynchronous operation completes or the time that's specified by `_Rel_time` has elapsed.  
   
 ### Syntax  
@@ -233,7 +242,8 @@ std::future_status::future_status wait_for(
   
 -   `std::future_status::timeout` if the specified time period has elapsed.  
   
-## <a name="wait_until"></a> completion_future::wait_until Method  
+## <a name="wait_until"></a> wait_until 
+
 Blocks until the associated asynchronous operation completes or until the current time exceeds the value specified by `_Abs_time`.  
   
 ### Syntax  
@@ -266,7 +276,8 @@ std::future_status::future_status wait_until(
   
 3.  `std::future_status::timeout` if the time period specified has elapsed.  
   
-## <a name="dtor"></a> completion_future::~completion_future Destructor  
+## <a name="dtor"></a> ~completion_future 
+
 Destroys the `completion_future` object.  
   
 ### Syntax  

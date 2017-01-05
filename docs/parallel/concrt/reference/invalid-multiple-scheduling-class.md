@@ -61,7 +61,8 @@ class invalid_multiple_scheduling : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="ctor"></a>  invalid_multiple_scheduling::invalid_multiple_scheduling Constructor  
+##  <a name="ctor"></a> invalid_multiple_scheduling 
+
  Constructs an `invalid_multiple_scheduling` object.  
   
 ```

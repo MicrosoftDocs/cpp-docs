@@ -620,7 +620,8 @@ class double_4;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="ctor"></a>  double_4::double_4 Constructor  
+##  <a name="ctor"></a> double_4 
+
  Default constructor, initializes all elements with 0.  
   
 ```  
@@ -690,8 +691,8 @@ explicit inline double_4(
  `_Other`  
  The object used to initialize.  
   
-##  <a name="double_4__size"></a>  double_4::size Constant  
-  
+##  <a name="double_4__size"></a> size 
+
 ```  
 static const int size = 4;  
 ```  

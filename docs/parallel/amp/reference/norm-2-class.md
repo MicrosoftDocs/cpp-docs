@@ -136,7 +136,8 @@ class norm_2;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="ctor"></a>  norm_2::norm_2 Constructor  
+##  <a name="ctor"></a> norm_2 
+
  Default constructor, initializes all elements with 0.  
   
 ```  
@@ -215,8 +216,8 @@ explicit inline norm_2(
  `_Other`  
  The object used to initialize.  
   
-##  <a name="norm_2__size"></a>  norm_2::size Constant  
-  
+##  <a name="norm_2__size"></a> size 
+
 ```  
 static const int size = 2;  
 ```  

@@ -627,7 +627,8 @@ class int_4;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="ctor"></a>  int_4::int_4 Constructor  
+##  <a name="ctor"></a> int_4 
+
  Default constructor, initializes all elements with 0.  
   
 ```  
@@ -697,8 +698,8 @@ explicit inline int_4(
  `_Other`  
  The object used to initialize.  
   
-##  <a name="int_4__size"></a>  int_4::size Constant  
-  
+##  <a name="int_4__size"></a> size 
+
 ```  
 static const int size = 4;  
 ```  

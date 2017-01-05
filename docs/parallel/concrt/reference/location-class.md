@@ -75,14 +75,16 @@ class location;
   
  **Namespace:** concurrency  
   
-##  <a name="dtor"></a>  location::~location Destructor  
+##  <a name="dtor"></a> ~location 
+
  Destroys a `location` object.  
   
 ```
 ~location();
 ```  
   
-##  <a name="current"></a>  location::current Method  
+##  <a name="current"></a> current 
+
  Returns a `location` object representing the most specific place the calling thread is executing.  
   
 ```
@@ -92,7 +94,8 @@ static location __cdecl current();
 ### Return Value  
  A location representing the most specific place the calling thread is executing.  
   
-##  <a name="from_numa_node"></a>  location::from_numa_node Method  
+##  <a name="from_numa_node"></a> from_numa_node 
+
  Returns a `location` object which represents a given NUMA node.  
   
 ```
@@ -106,7 +109,8 @@ static location __cdecl from_numa_node(unsigned short _NumaNodeNumber);
 ### Return Value  
  A location representing the NUMA node specified by the `_NumaNodeNumber` parameter.  
   
-##  <a name="ctor"></a>  location::location Constructor  
+##  <a name="ctor"></a> location 
+
  Constructs a `location` object.  
   
 ```
@@ -132,7 +136,8 @@ location(
 ### Remarks  
  A default constructed location represents the system as a whole.  
   
-##  <a name="operator_neq"></a>  location::operator!= Operator  
+##  <a name="operator_neq"></a> operator!= 
+
  Determines whether two `location` objects represent different location.  
   
 ```
@@ -145,7 +150,8 @@ bool operator!= (const location& _Rhs) const;
 ### Return Value  
  `true` if the two locations are different, `false` otherwise.  
   
-##  <a name="operator_eq"></a>  location::operator= Operator  
+##  <a name="operator_eq"></a> operator= 
+
  Assigns the contents of a different `location` object to this one.  
   
 ```
@@ -158,7 +164,8 @@ location& operator= (const location& _Rhs);
   
 ### Return Value  
   
-##  <a name="operator_eq_eq"></a>  location::operator== Operator  
+##  <a name="operator_eq_eq"></a> operator== 
+
  Determines whether two `location` objects represent the same location.  
   
 ```

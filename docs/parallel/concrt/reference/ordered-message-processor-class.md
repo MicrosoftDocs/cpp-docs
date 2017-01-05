@@ -89,7 +89,8 @@ class ordered_message_processor : public message_processor<T>;
   
  **Namespace:** concurrency  
   
-##  <a name="async_send"></a>  ordered_message_processor::async_send Method  
+##  <a name="async_send"></a> async_send 
+
  Asynchronously queues up messages and starts a processing task, if this has not been done already.  
   
 ```
@@ -100,7 +101,8 @@ virtual void async_send(_Inout_opt_ message<T>* _Msg);
  `_Msg`  
  A pointer to a message.  
   
-##  <a name="initialize"></a>  ordered_message_processor::initialize Method  
+##  <a name="initialize"></a> initialize 
+
  Initializes the `ordered_message_processor` object with the appropriate callback function, scheduler and schedule group.  
   
 ```
@@ -120,7 +122,8 @@ void initialize(
  `_Handler`  
  The handler functor invoked during callback.  
   
-##  <a name="initialize_batched_processing"></a>  ordered_message_processor::initialize_batched_processing Method  
+##  <a name="initialize_batched_processing"></a> initialize_batched_processing 
+
  Initialize batched message processing  
   
 ```
@@ -136,7 +139,8 @@ virtual void initialize_batched_processing(
  `_Propagator`  
  The propagator functor invoked during callback.  
   
-##  <a name="ctor"></a>  ordered_message_processor::ordered_message_processor Constructor  
+##  <a name="ctor"></a> ordered_message_processor 
+
  Constructs an `ordered_message_processor` object.  
   
 ```
@@ -146,7 +150,8 @@ ordered_message_processor();
 ### Remarks  
  This `ordered_message_processor` will not schedule asynchronous or synchronous handlers until the `initialize` function is called.  
   
-##  <a name="dtor"></a>  ordered_message_processor::~ordered_message_processor Destructor  
+##  <a name="dtor"></a> ~ordered_message_processor 
+
  Destroys the `ordered_message_processor` object.  
   
 ```
@@ -156,14 +161,16 @@ virtual ~ordered_message_processor();
 ### Remarks  
  Waits for all outstanding asynchronous operations before destroying the processor.  
   
-##  <a name="process_incoming_message"></a>  ordered_message_processor::process_incoming_message Method  
+##  <a name="process_incoming_message"></a> process_incoming_message 
+
  The processing function that is called asynchronously. It dequeues messages and begins processing them.  
   
 ```
 virtual void process_incoming_message();
 ```  
   
-##  <a name="sync_send"></a>  ordered_message_processor::sync_send Method  
+##  <a name="sync_send"></a> sync_send 
+
  Synchronously queues up messages and starts a processing task, if this has not been done already.  
   
 ```
@@ -174,7 +181,8 @@ virtual void sync_send(_Inout_opt_ message<T>* _Msg);
  `_Msg`  
  A pointer to a message.  
   
-##  <a name="wait"></a>  ordered_message_processor::wait Method  
+##  <a name="wait"></a> wait 
+
  A processor-specific spin wait used in destructors of message blocks to make sure that all asynchronous processing tasks have time to finish before destroying the block.  
   
 ```

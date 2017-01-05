@@ -61,7 +61,8 @@ class unsupported_os : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="ctor"></a>  unsupported_os::unsupported_os Constructor  
+##  <a name="ctor"></a> unsupported_os 
+
  Constructs an `unsupported_os` object.  
   
 ```

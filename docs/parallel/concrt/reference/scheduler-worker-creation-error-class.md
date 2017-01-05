@@ -66,7 +66,8 @@ class scheduler_worker_creation_error : public scheduler_resource_allocation_err
   
  **Namespace:** concurrency  
   
-##  <a name="ctor"></a>  scheduler_worker_creation_error::scheduler_worker_creation_error Constructor  
+##  <a name="ctor"></a> scheduler_worker_creation_error 
+
  Constructs a `scheduler_worker_creation_error` object.  
   
 ```

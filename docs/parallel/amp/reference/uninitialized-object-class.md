@@ -64,7 +64,8 @@ class uninitialized_object : public runtime_exception;
  **Header:** amprt.h  
   
  **Namespace:** Concurrency  
-## <a name="uninitialized_object__ctor"></a> unsupported_feature::unsupported_feature Constructor
+## <a name="uninitialized_object__ctor"></a> unsupported_feature 
+
 Constructs a new instance of the unsupported_feature exception.  
   
 ### Syntax  

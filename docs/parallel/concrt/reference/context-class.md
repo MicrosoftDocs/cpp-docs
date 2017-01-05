@@ -84,7 +84,8 @@ class Context;
   
  **Namespace:** concurrency  
   
-##  <a name="block"></a>  Context::Block Method  
+##  <a name="block"></a> Block 
+
  Blocks the current context.  
   
 ```
@@ -100,13 +101,14 @@ static void __cdecl Block();
   
  This method can throw a variety of exceptions, including [scheduler_resource_allocation_error](scheduler-resource-allocation-error-class.md).  
   
-##  <a name="dtor"></a>  Context::~Context Destructor  
-  
+##  <a name="dtor"></a> ~Context 
+
 ```
 virtual ~Context();
 ```  
   
-##  <a name="currentcontext"></a>  Context::CurrentContext Method  
+##  <a name="currentcontext"></a> CurrentContext 
+
  Returns a pointer to the current context.  
   
 ```
@@ -119,7 +121,8 @@ static Context* __cdecl CurrentContext();
 ### Remarks  
  This method will result in the process' default scheduler being created and/or attached to the calling context if there is no scheduler currently associated with the calling context.  
   
-##  <a name="getid"></a>  Context::GetId Method  
+##  <a name="getid"></a> GetId 
+
  Returns an identifier for the context that is unique within the scheduler to which the context belongs.  
   
 ```
@@ -129,7 +132,8 @@ virtual unsigned int GetId() const = 0;
 ### Return Value  
  An identifier for the context that is unique within the scheduler to which the context belongs.  
   
-##  <a name="getschedulegroupid"></a>  Context::GetScheduleGroupId Method  
+##  <a name="getschedulegroupid"></a> GetScheduleGroupId 
+
  Returns an identifier for the schedule group that the context is currently working on.  
   
 ```
@@ -142,7 +146,8 @@ virtual unsigned int GetScheduleGroupId() const = 0;
 ### Remarks  
  The return value from this method is an instantaneous sampling of the schedule group that the context is executing on. If this method is called on a context other than the current context, the value can be stale the moment it is returned and cannot be relied upon. Typically, this method is used for debugging or tracing purposes only.  
   
-##  <a name="getvirtualprocessorid"></a>  Context::GetVirtualProcessorId Method  
+##  <a name="getvirtualprocessorid"></a> GetVirtualProcessorId 
+
  Returns an identifier for the virtual processor that the context is currently executing on.  
   
 ```
@@ -155,7 +160,8 @@ virtual unsigned int GetVirtualProcessorId() const = 0;
 ### Remarks  
  The return value from this method is an instantaneous sampling of the virtual processor that the context is executing on. This value can be stale the moment it is returned and cannot be relied upon. Typically, this method is used for debugging or tracing purposes only.  
   
-##  <a name="id"></a>  Context::Id Method  
+##  <a name="id"></a> Id 
+
  Returns an identifier for the current context that is unique within the scheduler to which the current context belongs.  
   
 ```
@@ -165,7 +171,8 @@ static unsigned int __cdecl Id();
 ### Return Value  
  If the current context is attached to a scheduler, an identifier for the current context that is unique within the scheduler to which the current context belongs; otherwise, the value `-1`.  
   
-##  <a name="iscurrenttaskcollectioncanceling"></a>  Context::IsCurrentTaskCollectionCanceling Method  
+##  <a name="iscurrenttaskcollectioncanceling"></a> IsCurrentTaskCollectionCanceling 
+
  Returns an indication of whether the task collection which is currently executing inline on the current context is in the midst of an active cancellation (or will be shortly).  
   
 ```
@@ -175,7 +182,8 @@ static bool __cdecl IsCurrentTaskCollectionCanceling();
 ### Return Value  
  If a scheduler is attached to the calling context and a task group is executing a task inline on that context, an indication of whether that task group is in the midst of an active cancellation (or will be shortly); otherwise, the value `false`.  
   
-##  <a name="issynchronouslyblocked"></a>  Context::IsSynchronouslyBlocked Method  
+##  <a name="issynchronouslyblocked"></a> IsSynchronouslyBlocked 
+
  Determines whether or not the context is synchronously blocked. A context is considered to be synchronously blocked if it explicitly performed an action which led to blocking.  
   
 ```
@@ -190,7 +198,8 @@ virtual bool IsSynchronouslyBlocked() const = 0;
   
  The return value from this method is an instantaneous sample of whether the context is synchronously blocked. This value may be stale the moment it is returned and can only be used under very specific circumstances.  
   
-##  <a name="operator_delete"></a>  Context::operator delete Operator  
+##  <a name="operator_delete"></a> operator delete 
+
  A `Context` object is destroyed internally by the runtime. It can not be explicitly deleted.  
   
 ```
@@ -201,7 +210,8 @@ void operator delete(void* _PObject);
  `_PObject`  
  A pointer to the object to be deleted.  
   
-##  <a name="oversubscribe"></a>  Context::Oversubscribe Method  
+##  <a name="oversubscribe"></a> Oversubscribe 
+
  Injects an additional virtual processor into a scheduler for the duration of a block of code when invoked on a context executing on one of the virtual processors in that scheduler.  
   
 ```
@@ -212,7 +222,8 @@ static void __cdecl Oversubscribe(bool _BeginOversubscription);
  `_BeginOversubscription`  
  If `true`, an indication that an extra virtual processor should be added for the duration of the oversubscription. If `false`, an indication that the oversubscription should end and the previously added virtual processor should be removed.  
   
-##  <a name="schedulegroupid"></a>  Context::ScheduleGroupId Method  
+##  <a name="schedulegroupid"></a> ScheduleGroupId 
+
  Returns an identifier for the schedule group that the current context is working on.  
   
 ```
@@ -222,7 +233,8 @@ static unsigned int __cdecl ScheduleGroupId();
 ### Return Value  
  If the current context is attached to a scheduler and working on a schedule group, an identifier for the scheduler group that the current context is working on; otherwise, the value `-1`.  
   
-##  <a name="unblock"></a>  Context::Unblock Method  
+##  <a name="unblock"></a> Unblock 
+
  Unblocks the context and causes it to become runnable.  
   
 ```
@@ -236,7 +248,8 @@ virtual void Unblock() = 0;
   
  Be aware that there is a critical period between the point where your code publishes its context for another thread to be able to call the `Unblock` method and the point where the actual method call to `Block` is made. During this period, you must not call any method which can in turn block and unblock for its own reasons (for example, acquiring a lock). Calls to the `Block` and `Unblock` method do not track the reason for the blocking and unblocking. Only one object should have ownership of a `Block` and `Unblock` pair.  
   
-##  <a name="virtualprocessorid"></a>  Context::VirtualProcessorId Method  
+##  <a name="virtualprocessorid"></a> VirtualProcessorId 
+
  Returns an identifier for the virtual processor that the current context is executing on.  
   
 ```
@@ -249,7 +262,8 @@ static unsigned int __cdecl VirtualProcessorId();
 ### Remarks  
  The return value from this method is an instantaneous sampling of the virtual processor that the current context is executing on. This value can be stale the moment it is returned and cannot be relied upon. Typically, this method is used for debugging or tracing purposes only.  
   
-##  <a name="yield"></a>  Context::Yield Method  
+##  <a name="yield"></a> Yield 
+
  Yields execution so that another context can execute. If no other context is available to yield to, the scheduler can yield to another operating system thread.  
   
 ```
@@ -259,7 +273,8 @@ static void __cdecl Yield();
 ### Remarks  
  This method will result in the process' default scheduler being created and/or attached to the calling context if there is no scheduler currently associated with the calling context.  
   
-##  <a name="yieldexecution"></a>  Context::YieldExecution Method  
+##  <a name="yieldexecution"></a> YieldExecution 
+
  Yields execution so that another context can execute. If no other context is available to yield to, the scheduler can yield to another operating system thread.  
   
 ```

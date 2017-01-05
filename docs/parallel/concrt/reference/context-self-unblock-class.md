@@ -61,7 +61,8 @@ class context_self_unblock : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="ctor"></a>  context_self_unblock::context_self_unblock Constructor  
+##  <a name="ctor"></a> context_self_unblock 
+
  Constructs a `context_self_unblock` object.  
   
 ```  

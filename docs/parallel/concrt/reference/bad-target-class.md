@@ -64,7 +64,8 @@ class bad_target : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="ctor"></a>  bad_target::bad_target Constructor  
+##  <a name="ctor"></a> bad_target 
+
  Constructs a `bad_target` object.  
   
 ```

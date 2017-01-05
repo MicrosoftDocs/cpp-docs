@@ -61,7 +61,8 @@ class operation_timed_out : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="ctor"></a>  operation_timed_out::operation_timed_out Constructor  
+##  <a name="ctor"></a> operation_timed_out 
+
  Constructs an `operation_timed_out` object.  
   
 ```

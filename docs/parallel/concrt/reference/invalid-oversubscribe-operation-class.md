@@ -61,7 +61,8 @@ class invalid_oversubscribe_operation : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="ctor"></a>  invalid_oversubscribe_operation::invalid_oversubscribe_operation Constructor  
+##  <a name="ctor"></a> invalid_oversubscribe_operation 
+
  Constructs an `invalid_oversubscribe_operation` object.  
   
 ```  

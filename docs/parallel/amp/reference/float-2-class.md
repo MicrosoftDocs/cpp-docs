@@ -136,7 +136,8 @@ class float_2;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="ctor"></a>  float_2::float_2 Constructor  
+##  <a name="ctor"></a> float_2 
+
  Default constructor, initializes all elements with 0.  
   
 ```  
@@ -198,8 +199,8 @@ explicit inline float_2(
  `_Other`  
  The object used to initialize.  
   
-##  <a name="float_2__size"></a>  float_2::size Constant  
-  
+##  <a name="float_2__size"></a> size 
+
 ```  
 static const int size = 2;  
 ```  

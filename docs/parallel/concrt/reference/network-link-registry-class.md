@@ -80,7 +80,8 @@ class network_link_registry;
   
  **Namespace:** concurrency  
   
-##  <a name="add"></a>  network_link_registry::add Method  
+##  <a name="add"></a> add 
+
  When overridden in a derived class, adds a link to the `network_link_registry` object.  
   
 ```
@@ -91,7 +92,8 @@ virtual void add(_EType _Link) = 0;
  `_Link`  
  A pointer to a block to be added.  
   
-##  <a name="begin"></a>  network_link_registry::begin Method  
+##  <a name="begin"></a> begin 
+
  When overridden in a derived class, returns an iterator to the first element in the `network_link_registry` object.  
   
 ```
@@ -104,7 +106,8 @@ virtual iterator begin() = 0;
 ### Remarks  
  The end state of the iterator is indicated by a `NULL` link.  
   
-##  <a name="contains"></a>  network_link_registry::contains Method  
+##  <a name="contains"></a> contains 
+
  When overridden in a derived class, searches the `network_link_registry` object for a specified block.  
   
 ```
@@ -118,7 +121,8 @@ virtual bool contains(_EType _Link) = 0;
 ### Return Value  
  `true` if the block was found, `false` otherwise.  
   
-##  <a name="count"></a>  network_link_registry::count Method  
+##  <a name="count"></a> count 
+
  When overridden in a derived class, returns the number of items in the `network_link_registry` object.  
   
 ```
@@ -128,7 +132,8 @@ virtual size_t count() = 0;
 ### Return Value  
  The number of items in the `network_link_registry` object.  
   
-##  <a name="remove"></a>  network_link_registry::remove Method  
+##  <a name="remove"></a> remove 
+
  When overridden in a derived class, removes a specified block from the `network_link_registry` object.  
   
 ```

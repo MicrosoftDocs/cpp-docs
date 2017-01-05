@@ -622,7 +622,8 @@ class uint_4;
   
  **Namespace:** Concurrency::graphics  
   
-## <a name="uint_4__ctor"></a>  uint_4::uint_4 Constructor
+## <a name="uint_4__ctor"></a> uint_4 
+
 Default constructor, initializes all elements with 0.
   
 ## Syntax  
@@ -677,7 +678,8 @@ explicit inline uint_4(
  `_Other`  
  The object used to initialize.  
   
-## <a name=""></a> uint_4::size Constant
+## <a name=""></a> size 
+
 ## Syntax  
   
 ```  

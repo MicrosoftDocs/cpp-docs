@@ -61,7 +61,8 @@ class message_not_found : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="ctor"></a>  message_not_found::message_not_found Constructor  
+##  <a name="ctor"></a> message_not_found 
+
  Constructs a `message_not_found` object.  
   
 ```
