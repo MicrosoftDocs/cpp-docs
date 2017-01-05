@@ -71,9 +71,9 @@ MFC provides the following classes and global functions for writing Internet cli
   
 -   [AfxParseURL](../mfc/reference/internet-url-parsing-globals.md#afxparseurl)  
   
--   [AfxGetInternetHandleType](../Topic/AfxGetInternetHandleType.md)  
+-   [AfxGetInternetHandleType](http://msdn.microsoft.com/library/754d6b3c-4eee-4190-8688-e4fb0381e92f)  
   
--   [AfxThrowInternetException](../Topic/AfxThrowInternetException.md)  
+-   [AfxThrowInternetException](http://msdn.microsoft.com/library/c9645b10-9541-48b2-8b0c-94ca33fed3cb)  
   
 ## See Also  
  [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)   

@@ -89,7 +89,7 @@ translation.priority.ht:
   
  If you want to install other DAO SDK components, such as the DAO SDK C++ classes, example files, or the Windows Help version of the DAO Help file, install the DAO SDK from the Visual C++ 6.0 CD-ROM.  
   
- For updates to and news about OLE DB, see the Universal Data Access Web site at [http://go.microsoft.com/fwlink/?LinkId=121548](http://go.microsoft.com/fwlink/?LinkId=121548).  
+ For updates to and news about OLE DB, see the Universal Data Access Web site at [http://go.microsoft.com/fwlink/?LinkId=121548](http://go.microsoft.com/fwlink/?linkid=121548).  
   
 ## See Also  
  [Data Access Programming (MFC/ATL)](../data/data-access-programming-mfc-atl.md)

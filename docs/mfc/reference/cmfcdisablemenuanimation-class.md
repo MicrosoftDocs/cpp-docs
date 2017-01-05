@@ -58,7 +58,7 @@ class CMFCDisableMenuAnimation
 |||  
 |-|-|  
 |Name|Description|  
-|[CMFCDisableMenuAnimation::Restore](#cmfcdisablemenuanimation__restore)|Restores the previous animation that the framework used to display a pop-up menu.|  
+|[CMFCDisableMenuAnimation::Restore](#restore)|Restores the previous animation that the framework used to display a pop-up menu.|  
   
 ### Data Members  
   
@@ -77,7 +77,7 @@ class CMFCDisableMenuAnimation
 ## Example  
  The following example shows how to use the stack to temporarily disable menu animation.  
   
- [!code-cpp[NVC_MFC_Misc#1](../../mfc/reference/codesnippet/CPP/cmfcdisablemenuanimation-class_1.h)]  
+ [!code-cpp[NVC_MFC_Misc#1](../../mfc/reference/codesnippet/cpp/cmfcdisablemenuanimation-class_1.h)]  
   
 ## Inheritance Hierarchy  
  [CMFCDisableMenuAnimation](../../mfc/reference/cmfcdisablemenuanimation-class.md)  
@@ -85,7 +85,7 @@ class CMFCDisableMenuAnimation
 ## Requirements  
  **Header:** afxpopupmenu.h  
   
-##  <a name="cmfcdisablemenuanimation__restore"></a>  CMFCDisableMenuAnimation::Restore  
+##  <a name="restore"></a>  CMFCDisableMenuAnimation::Restore  
  Restores the previous animation that the framework used to display a pop-up menu.  
   
 ```  

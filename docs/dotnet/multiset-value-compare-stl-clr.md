@@ -1,5 +1,5 @@
 ---
-title: "multiset::value_compare (STL-CLR) | Microsoft Docs"
+title: "multiset::value_compare (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

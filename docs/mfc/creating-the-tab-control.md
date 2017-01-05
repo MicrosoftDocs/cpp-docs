@@ -70,11 +70,11 @@ How the tab control is created depends on whether you are using the control in a
   
  For instance, set the **TCS_EX_FLATSEPARATORS** style with the following lines of code:  
   
- [!code-cpp[NVC_MFCControlLadenDialog#33](../mfc/codesnippet/CPP/creating-the-tab-control_1.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#33](../mfc/codesnippet/cpp/creating-the-tab-control_1.cpp)]  
   
  Clear the **TCS_EX_FLATSEPARATORS** style from a `CTabCtrl` object with the following lines of code:  
   
- [!code-cpp[NVC_MFCControlLadenDialog#34](../mfc/codesnippet/CPP/creating-the-tab-control_2.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#34](../mfc/codesnippet/cpp/creating-the-tab-control_2.cpp)]  
   
  This will remove the separators that appear between the buttons of your `CTabCtrl` object.  
   

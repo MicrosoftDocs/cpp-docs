@@ -53,15 +53,3 @@ ref class X {
   
 int X::i = 5;      // C3366  
 ```  
-  
- The following example generates C3366 and shows how to fix it:  
-  
-```  
-// C3366_b.cpp  
-// compile with: /clr:oldSyntax /c  
-__gc struct X {  
-   static int i;   // initialize i here to avoid C3366  
-};  
-  
-int X::i = 5;      // C3366  
-```

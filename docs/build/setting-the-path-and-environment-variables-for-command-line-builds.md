@@ -117,7 +117,7 @@ The [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] command-line build tools 
   
  [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] also provides vcvars32.bat to set up a command-line environment. The vcvars32.bat file is found in the bin directory under the VC installation directory. It's limited to setting the appropriate environment variables to enable 32-bit x86 command-line builds. It's the equivalent of the `vcvarsall x86` command.  
   
- If you are using [DEVENV](/visual-studio/ide/reference/devenv-command-line-switches) for command-line builds, the environment set by vcvarsall.bat or vcvars32.bat does not affect your builds, unless you also specify the **/useenv** option.  
+ If you are using [DEVENV](/visualstudio/ide/reference/devenv-command-line-switches) for command-line builds, the environment set by vcvarsall.bat or vcvars32.bat does not affect your builds, unless you also specify the **/useenv** option.  
   
 > [!CAUTION]
 >  The vcvarsall.bat file can vary from computer to computer. Do not replace a missing or damaged vcvarsall.bat file by using a file from another computer. Rerun [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] Setup to replace the missing file.  

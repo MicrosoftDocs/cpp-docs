@@ -65,7 +65,7 @@ template <class Base,
  The threading model of the class. This parameter defaults to the global object thread model used in your project.  
   
 ## Remarks  
- `CComEnum` defines a COM enumerator object based on an array. This class is analogous to [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md) which implements an enumerator based on an STL container. Typical steps for using this class are outlined below. For more information, see [ATL Collections and Enumerators](../../atl/atl-collections-and-enumerators.md).  
+ `CComEnum` defines a COM enumerator object based on an array. This class is analogous to [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md) which implements an enumerator based on a C++ Standard Library container. Typical steps for using this class are outlined below. For more information, see [ATL Collections and Enumerators](../../atl/atl-collections-and-enumerators.md).  
   
 ## To use this class:  
   
@@ -75,7 +75,7 @@ template <class Base,
   
 -   Create an instance of the `CComObject` specialization.  
   
--   Initialize the enumerator object by calling [CComEnumImpl::Init](../../atl/reference/ccomenumimpl-class.md#ccomenumimpl__init).  
+-   Initialize the enumerator object by calling [CComEnumImpl::Init](../../atl/reference/ccomenumimpl-class.md#init).  
   
 -   Return the enumerator interface to the client.  
   
@@ -96,16 +96,16 @@ template <class Base,
 ## Example  
  The code shown below provides a reusable function for creating and initializing an enumerator object.  
   
- [!code-cpp[NVC_ATL_COM#32](../../atl/codesnippet/CPP/ccomenum-class_1.h)]  
+ [!code-cpp[NVC_ATL_COM#32](../../atl/codesnippet/cpp/ccomenum-class_1.h)]  
   
  This template function can be used to implement the `_NewEnum` property of a collection interface as shown below:  
   
- [!code-cpp[NVC_ATL_COM#33](../../atl/codesnippet/CPP/ccomenum-class_2.h)]  
+ [!code-cpp[NVC_ATL_COM#33](../../atl/codesnippet/cpp/ccomenum-class_2.h)]  
   
  This code creates a `typedef` for `CComEnum` that exposes a vector of **VARIANT**s through the **IEnumVariant** interface. The **CVariantArrayCollection** class simply specializes **CreateEnumerator** to work with enumerator objects of this type and passes the necessary arguments.  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)   
- [CComObjectThreadModel](../Topic/CComObjectThreadModel.md)   
+ [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)   
  [CComEnumImpl Class](../../atl/reference/ccomenumimpl-class.md)   
  [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)

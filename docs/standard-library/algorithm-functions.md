@@ -275,7 +275,7 @@ manager: "ghogen"
 # &lt;algorithm&gt; functions
 ||||  
 |-|-|-|  
-|[&lt;alg&gt; move](#alg_move)|[adjacent_find](#adjacent_find)|[all_of](#all_of)|  
+|[move](#alg_move)|[adjacent_find](#adjacent_find)|[all_of](#all_of)|  
 |[any_of](#any_of)|[binary_search](#binary_search)|[copy](#copy)|  
 |[copy_backward](#copy_backward)|[copy_if](#copy_if)|[copy_n](#copy_n)|  
 |[count](#count)|[count_if](#count_if)|[equal](#equal)|  
@@ -667,8 +667,6 @@ int main() {
 }  
 ```  
   
-  For another sample showing how to use copy, see [accumulate, copy, and vector::push_back](../misc/accumulate-copy-and-vector-push-back.md).  
-  
 ```Output  
 v1 = ( 0 10 20 30 40 50 )  
 v2 = ( 0 3 6 9 12 15 18 21 24 27 30 )  
@@ -705,7 +703,7 @@ template<class BidirectionalIterator1, class BidirectionalIterator2>
   
  The `copy_backward` algorithm imposes more stringent requirements than that the copy algorithm. Both its input and output iterators must be bidirectional.  
   
- The `copy_backward` and [move_backward](../standard-library/algorithm-functions.md#move_backward) algorithms are the only Standard Template Library algorithms designating the output range with an iterator pointing to the end of the destination range.  
+ The `copy_backward` and [move_backward](../standard-library/algorithm-functions.md#move_backward) algorithms are the only C++ Standard Library algorithms designating the output range with an iterator pointing to the end of the destination range.  
   
  Because the algorithm copies the source elements in order beginning with the last element, the destination range can overlap with the source range provided the  `first` position of the source range is not contained in the destination range. `copy_backward` can be used to shift elements to the right but not the left, unless there is no overlap between the source and destination ranges. To shift to the left any number of positions, use the [copy](../standard-library/algorithm-functions.md#copy) algorithm.  
   
@@ -3202,7 +3200,7 @@ void make_heap(
   
 -   Elements may be added or removed in logarithmic time.  
   
- Heaps are an ideal way to implement priority queues and they are used in the implementation of the Standard Template Library container adaptor [priority_queue Class](../standard-library/priority-queue-class.md).  
+ Heaps are an ideal way to implement priority queues and they are used in the implementation of the C++ Standard Library container adaptor [priority_queue Class](../standard-library/priority-queue-class.md).  
   
  The complexity is linear, requiring 3 \* ( * last – first*) comparisons.  
   
@@ -3291,7 +3289,7 @@ template<class Type, class Pr>
  The greater of the two objects, unless neither is greater; in that case, it returns the first of the two objects. In the case of an initializer_list, it returns the greatest of the objects in the list.  
   
 ### Remarks  
- The `max` algorithm is unusual in having objects passed as parameters. Most Standard Template Library algorithms operate on a range of elements whose position is specified by iterators passed as parameters. If you need a function that operates on a range of elements, use [max_element](../standard-library/algorithm-functions.md#max_element) instead.  
+ The `max` algorithm is unusual in having objects passed as parameters. Most C++ Standard Library algorithms operate on a range of elements whose position is specified by iterators passed as parameters. If you need a function that operates on a range of elements, use [max_element](../standard-library/algorithm-functions.md#max_element) instead.  
   
 ### Example  
   
@@ -3803,7 +3801,7 @@ template<class Type, class Pr>    Type min (
  The lesser of the two objects, unless neither is lesser; in that case, it returns the first of the two objects. In the case of an initializer_list, it returns the least of the objects in the list.  
   
 ### Remarks  
- The `min` algorithm is unusual in having objects passed as parameters. Most Standard Template Library algorithms operate on a range of elements whose position is specified by iterators passed as parameters. If you need a function that uses a range of elements, use [min_element](../standard-library/algorithm-functions.md#min_element).  
+ The `min` algorithm is unusual in having objects passed as parameters. Most C++ Standard Library algorithms operate on a range of elements whose position is specified by iterators passed as parameters. If you need a function that uses a range of elements, use [min_element](../standard-library/algorithm-functions.md#min_element).  
   
 ### Example  
   
@@ -5113,7 +5111,7 @@ void pop_heap(RandomAccessIterator first, RandomAccessIterator last, BinaryPredi
   
 -   Elements may be added or removed in logarithmic time.  
   
- Heaps are an ideal way to implement priority queues and they are used in the implementation of the Standard Template Library container adaptor [priority_queue Class](../standard-library/priority-queue-class.md).  
+ Heaps are an ideal way to implement priority queues and they are used in the implementation of the C++ Standard Library container adaptor [priority_queue Class](../standard-library/priority-queue-class.md).  
   
  The range referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation.  
   
@@ -5385,7 +5383,7 @@ void push_heap( RandomAccessIterator first, RandomAccessIterator last, BinaryPre
   
 -   Elements may be added or removed in logarithmic time.  
   
- Heaps are an ideal way to implement priority queues and they are used in the implementation of the Standard Template Library container adaptor [priority_queue Class](../standard-library/priority-queue-class.md).  
+ Heaps are an ideal way to implement priority queues and they are used in the implementation of the C++ Standard Library container adaptor [priority_queue Class](../standard-library/priority-queue-class.md).  
   
  The range referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation.  
   
@@ -7601,7 +7599,7 @@ template<class RandomAccessIterator, class Predicate>
   
  This is not a stable sort because the relative order of equivalent elements is not necessarily preserved.  
   
- Heaps are an ideal way to implement priority queues and they are used in the implementation of the Standard Template Library container adaptor [priority_queue Class](../standard-library/priority-queue-class.md).  
+ Heaps are an ideal way to implement priority queues and they are used in the implementation of the C++ Standard Library container adaptor [priority_queue Class](../standard-library/priority-queue-class.md).  
   
  The range referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation.  
   
@@ -8517,6 +8515,5 @@ int main( )
 }  
   
 ```  
-  
-## See Also  
+## See Also   
  [\<algorithm>](../standard-library/algorithm.md)

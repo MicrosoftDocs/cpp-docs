@@ -52,18 +52,18 @@ class COccManager : public CNoTrackObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[COccManager::CreateContainer](#coccmanager__createcontainer)|Creates a **COleContainer** object.|  
-|[COccManager::CreateDlgControls](#coccmanager__createdlgcontrols)|Creates ActiveX controls, hosted by the associated `COleContainer` object.|  
-|[COccManager::CreateSite](#coccmanager__createsite)|Creates a `COleClientSite` object.|  
-|[COccManager::GetDefBtnCode](#coccmanager__getdefbtncode)|Retrieves the code of the default button.|  
-|[COccManager::IsDialogMessage](#coccmanager__isdialogmessage)|Determines the target of a dialog message.|  
-|[COccManager::IsLabelControl](#coccmanager__islabelcontrol)|Determines if the specified control is a label control.|  
-|[COccManager::IsMatchingMnemonic](#coccmanager__ismatchingmnemonic)|Determines if the current mnemonic matches the mnemonic of the specified control.|  
-|[COccManager::OnEvent](#coccmanager__onevent)|Attempts to handle the specified event.|  
-|[COccManager::PostCreateDialog](#coccmanager__postcreatedialog)|Frees resources allocated during dialog creation.|  
-|[COccManager::PreCreateDialog](#coccmanager__precreatedialog)|Processes a dialog template for ActiveX controls.|  
-|[COccManager::SetDefaultButton](#coccmanager__setdefaultbutton)|Toggles the default state of the specified control.|  
-|[COccManager::SplitDialogTemplate](#coccmanager__splitdialogtemplate)|Separates any existing ActiveX controls from common controls in the specified dialog template.|  
+|[COccManager::CreateContainer](#createcontainer)|Creates a **COleContainer** object.|  
+|[COccManager::CreateDlgControls](#createdlgcontrols)|Creates ActiveX controls, hosted by the associated `COleContainer` object.|  
+|[COccManager::CreateSite](#createsite)|Creates a `COleClientSite` object.|  
+|[COccManager::GetDefBtnCode](#getdefbtncode)|Retrieves the code of the default button.|  
+|[COccManager::IsDialogMessage](#isdialogmessage)|Determines the target of a dialog message.|  
+|[COccManager::IsLabelControl](#islabelcontrol)|Determines if the specified control is a label control.|  
+|[COccManager::IsMatchingMnemonic](#ismatchingmnemonic)|Determines if the current mnemonic matches the mnemonic of the specified control.|  
+|[COccManager::OnEvent](#onevent)|Attempts to handle the specified event.|  
+|[COccManager::PostCreateDialog](#postcreatedialog)|Frees resources allocated during dialog creation.|  
+|[COccManager::PreCreateDialog](#precreatedialog)|Processes a dialog template for ActiveX controls.|  
+|[COccManager::SetDefaultButton](#setdefaultbutton)|Toggles the default state of the specified control.|  
+|[COccManager::SplitDialogTemplate](#splitdialogtemplate)|Separates any existing ActiveX controls from common controls in the specified dialog template.|  
   
 ## Remarks  
  The base class, **CNoTrackObject**, is an undocumented base class (located in AFXTLS.H). Designed for use by the MFC framework, classes derived from the **CNoTrackObject** class are exempt from memory leak detection. It is not recommended that you derive directly from **CNoTrackObject**.  
@@ -76,7 +76,7 @@ class COccManager : public CNoTrackObject
 ## Requirements  
  **Header:** afxocc.h  
   
-##  <a name="coccmanager__createcontainer"></a>  COccManager::CreateContainer  
+##  <a name="createcontainer"></a>  COccManager::CreateContainer  
  Called by the framework to create a control container.  
   
 ```  
@@ -91,9 +91,9 @@ virtual COleControlContainer* CreateContainer(CWnd* pWnd);
  A pointer to the newly created container; otherwise **NULL**.  
   
 ### Remarks  
- For more information on creating custom sites, see [COleControlContainer::AttachControlSite](../../mfc/reference/colecontrolcontainer-class.md#colecontrolcontainer__attachcontrolsite).  
+ For more information on creating custom sites, see [COleControlContainer::AttachControlSite](../../mfc/reference/colecontrolcontainer-class.md#attachcontrolsite).  
   
-##  <a name="coccmanager__createdlgcontrols"></a>  COccManager::CreateDlgControls  
+##  <a name="createdlgcontrols"></a>  COccManager::CreateDlgControls  
  Call this function to create ActiveX controls specified by the `pOccDialogInfo` parameter.  
   
 ```  
@@ -125,7 +125,7 @@ virtual BOOL CreateDlgControls(
 ### Return Value  
  Nonzero if the control was created successfully; otherwise zero.  
   
-##  <a name="coccmanager__createsite"></a>  COccManager::CreateSite  
+##  <a name="createsite"></a>  COccManager::CreateSite  
  Called by the framework to create a control site, hosted by the container pointed to by `pCtrlCont`.  
   
 ```  
@@ -144,7 +144,7 @@ virtual COleControlSite* CreateSite(COleControlContainer* pCtrlCont);
   
  Each control container can host multiple sites. Create additional sites with multiple calls to `CreateSite`.  
   
-##  <a name="coccmanager__getdefbtncode"></a>  COccManager::GetDefBtnCode  
+##  <a name="getdefbtncode"></a>  COccManager::GetDefBtnCode  
  Call this function to determine if the control is a default push button.  
   
 ```  
@@ -164,7 +164,7 @@ static DWORD AFX_CDECL GetDefBtnCode(CWnd* pWnd);
   
 - **0** Control is not a button.  
   
-##  <a name="coccmanager__isdialogmessage"></a>  COccManager::IsDialogMessage  
+##  <a name="isdialogmessage"></a>  COccManager::IsDialogMessage  
  Called by the framework to determine whether a message is intended for the specified dialog box and, if it is, processes the message.  
   
 ```  
@@ -188,7 +188,7 @@ virtual BOOL IsDialogMessage(
   
  Override this function to provide custom behavior for messages sent to the specified dialog.  
   
-##  <a name="coccmanager__islabelcontrol"></a>  COccManager::IsLabelControl  
+##  <a name="islabelcontrol"></a>  COccManager::IsLabelControl  
  Call this function to determine if the specified control is a label control.  
   
 ```  
@@ -208,7 +208,7 @@ static BOOL AFX_CDECL IsLabelControl(COleControlSiteOrWnd* pWnd);
 ### Remarks  
  A label control is one that acts like a label for whatever control is next in the ordering.  
   
-##  <a name="coccmanager__ismatchingmnemonic"></a>  COccManager::IsMatchingMnemonic  
+##  <a name="ismatchingmnemonic"></a>  COccManager::IsMatchingMnemonic  
  Call this function to determine if the current mnemonic matches that represented by the control.  
   
 ```  
@@ -234,7 +234,7 @@ static BOOL AFX_CDECL IsMatchingMnemonic(
   
 ### Remarks  
   
-##  <a name="coccmanager__onevent"></a>  COccManager::OnEvent  
+##  <a name="onevent"></a>  COccManager::OnEvent  
  Called by the framework to handle the specified event.  
   
 ```  
@@ -264,7 +264,7 @@ virtual BOOL OnEvent(
 ### Remarks  
  Override this function to customize the default event-handling process.  
   
-##  <a name="coccmanager__precreatedialog"></a>  COccManager::PreCreateDialog  
+##  <a name="precreatedialog"></a>  COccManager::PreCreateDialog  
  Called by the framework to process a dialog template for ActiveX controls before creating the actual dialog box.  
   
 ```  
@@ -288,7 +288,7 @@ virtual const DLGTEMPLATE* PreCreateDialog(
   
  Override this function to customize the process of creating a dialog box hosting ActiveX controls.  
   
-##  <a name="coccmanager__postcreatedialog"></a>  COccManager::PostCreateDialog  
+##  <a name="postcreatedialog"></a>  COccManager::PostCreateDialog  
  Called by the framework to free memory allocated for the dialog template.  
   
 ```  
@@ -304,7 +304,7 @@ virtual void PostCreateDialog(_AFX_OCC_DIALOG_INFO* pOccDialogInfo);
   
  Override this function to customize the process of cleaning up any resources used by the dialog box object.  
   
-##  <a name="coccmanager__setdefaultbutton"></a>  COccManager::SetDefaultButton  
+##  <a name="setdefaultbutton"></a>  COccManager::SetDefaultButton  
  Call this function to set the control as the default button.  
   
 ```  
@@ -328,7 +328,7 @@ static void AFX_CDECL SetDefaultButton(
 > [!NOTE]
 >  The control must have the **OLEMISC_ACTSLIKEBUTTON** status bit set. For more information on **OLEMISC** flags, see the [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497) topic in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="coccmanager__splitdialogtemplate"></a>  COccManager::SplitDialogTemplate  
+##  <a name="splitdialogtemplate"></a>  COccManager::SplitDialogTemplate  
  Called by the framework to split the ActiveX controls from common dialog controls.  
   
 ```  

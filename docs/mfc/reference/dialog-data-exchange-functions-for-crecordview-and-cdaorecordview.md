@@ -57,7 +57,7 @@ This topic lists the DDX_Field functions used to exchange data between a [CRecor
 |[DDX_FieldLBString](#ddx_fieldlbstring)|Manages the transfer of [CString](../../atl-mfc-shared/reference/cstringt-class.md) data between a list-box control and the field data members of a recordset. When moving data from the recordset to the control, this function selects the item in the list box that begins with the characters in the specified string.|  
 |[DDX_FieldLBStringExact](#ddx_fieldlbstringexact)|Manages the transfer of `CString` data between a list-box control and the field data members of a recordset. When moving data from the recordset to the control, this function selects the first item that exactly matches the specified string.|  
 |[DDX_FieldRadio](#ddx_fieldradio)|Transfers integer data between a recordset field data member and a group of radio buttons in a `CRecordView` or `CDaoRecordView`.|  
-|[DDX_FieldScroll](#ddx_fieldscroll)|Sets or gets the scroll position of a scroll bar control in a `CRecordView` or `CDaoRecordView`. Call from your [DoFieldExchange](../../mfc/reference/cdaorecordset-class.md#DoFieldExchange) function.|  
+|[DDX_FieldScroll](#ddx_fieldscroll)|Sets or gets the scroll position of a scroll bar control in a `CRecordView` or `CDaoRecordView`. Call from your [DoFieldExchange](../../mfc/reference/cdaorecordset-class.md#dofieldexchange) function.|  
 |[DDX_FieldText](#ddx_fieldtext)|Overloaded versions are available for transferring `int`, **UINT**, **long**, `DWORD`, [CString](../../atl-mfc-shared/reference/cstringt-class.md), **float**, **double**, **short**, [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md), and [COleCurrency](../../mfc/reference/colecurrency-class.md) data between a recordset field data member and an edit box in a `CRecordView` or `CDaoRecordView`.|  
   
 ##  <a name="ddx_fieldcbindex"></a>  DDX_FieldCBIndex  
@@ -756,7 +756,7 @@ value  ,
 ### Example  
  The following `DoDataExchange` function for a [CRecordView](../../mfc/reference/crecordview-class.md) contains `DDX_FieldText` function calls for three data types: `IDC_COURSELIST` is a combo box; the other two controls are edit boxes. For DAO programming, the *m_pSet* parameter is a pointer to a [CRecordset](../../mfc/reference/crecordset-class.md) or [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md).  
   
- [!code-cpp[NVC_MFCDatabase#43](../../mfc/codesnippet/CPP/dialog-data-exchange-functions-for-crecordview-and-cdaorecordview_1.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#43](../../mfc/codesnippet/cpp/dialog-data-exchange-functions-for-crecordview-and-cdaorecordview_1.cpp)]  
   
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

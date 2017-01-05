@@ -58,20 +58,20 @@ This topic applies to the MFC ODBC classes.
 ##  <a name="_core_how_crecordset_supports_bulk_row_fetching"></a> How CRecordset Supports Bulk Row Fetching  
  Before opening your recordset object, you can define a rowset size with the `SetRowsetSize` member function. The rowset size specifies how many records should be retrieved during a single fetch. When bulk row fetching is implemented, the default rowset size is 25. If bulk row fetching is not implemented, the rowset size remains fixed at 1.  
   
- After you have initialized the rowset size, call the [Open](../Topic/CRecordset::Open.md) member function. Here you must specify the `CRecordset::useMultiRowFetch` option of the **dwOptions** parameter to implement bulk row fetching. You can additionally set the **CRecordset::userAllocMultiRowBuffers** option. The bulk record field exchange mechanism uses arrays to store the multiple rows of data retrieved during a fetch. These storage buffers can be allocated automatically by the framework or you can allocate them manually. Specifying the **CRecordset::userAllocMultiRowBuffers** option means that you will do the allocation.  
+ After you have initialized the rowset size, call the [Open](../../mfc/reference/crecordset-class.md#open) member function. Here you must specify the `CRecordset::useMultiRowFetch` option of the **dwOptions** parameter to implement bulk row fetching. You can additionally set the **CRecordset::userAllocMultiRowBuffers** option. The bulk record field exchange mechanism uses arrays to store the multiple rows of data retrieved during a fetch. These storage buffers can be allocated automatically by the framework or you can allocate them manually. Specifying the **CRecordset::userAllocMultiRowBuffers** option means that you will do the allocation.  
   
  The following table lists the member functions provided by `CRecordset` to support bulk row fetching.  
   
 |Member function|Description|  
 |---------------------|-----------------|  
-|[CheckRowsetError](../Topic/CRecordset::CheckRowsetError.md)|Virtual function that handles any errors that occur during fetching.|  
-|[DoBulkFieldExchange](../Topic/CRecordset::DoBulkFieldExchange.md)|Implements bulk record field exchange. Called automatically to transfers multiple rows of data from the data source to the recordset object.|  
-|[GetRowsetSize](../Topic/CRecordset::GetRowsetSize.md)|Retrieves the current setting for the rowset size.|  
-|[GetRowsFetched](../Topic/CRecordset::GetRowsFetched.md)|Tells how many rows were actually retrieved after a given fetch. In most cases, this is the rowset size, unless an incomplete rowset was fetched.|  
-|[GetRowStatus](../Topic/CRecordset::GetRowStatus.md)|Returns a fetch status for a particular row within a rowset.|  
-|[RefreshRowset](../Topic/CRecordset::RefreshRowset.md)|Refreshes the data and status of a particular row within a rowset.|  
-|[SetRowsetCursorPosition](../Topic/CRecordset::SetRowsetCursorPosition.md)|Moves the cursor to a particular row within a rowset.|  
-|[SetRowsetSize](../Topic/CRecordset::SetRowsetSize.md)|Virtual function that changes the setting for the rowset size to the specified value.|  
+|[CheckRowsetError](../../mfc/reference/crecordset-class.md#checkrowseterror)|Virtual function that handles any errors that occur during fetching.|  
+|[DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#dobulkfieldexchange)|Implements bulk record field exchange. Called automatically to transfers multiple rows of data from the data source to the recordset object.|  
+|[GetRowsetSize](../../mfc/reference/crecordset-class.md#getrowsetsize)|Retrieves the current setting for the rowset size.|  
+|[GetRowsFetched](../../mfc/reference/crecordset-class.md#getrowsfetched)|Tells how many rows were actually retrieved after a given fetch. In most cases, this is the rowset size, unless an incomplete rowset was fetched.|  
+|[GetRowStatus](../../mfc/reference/crecordset-class.md#getrowstatus)|Returns a fetch status for a particular row within a rowset.|  
+|[RefreshRowset](../../mfc/reference/crecordset-class.md#refreshrowset)|Refreshes the data and status of a particular row within a rowset.|  
+|[SetRowsetCursorPosition](../../mfc/reference/crecordset-class.md#setrowsetcursorposition)|Moves the cursor to a particular row within a rowset.|  
+|[SetRowsetSize](../../mfc/reference/crecordset-class.md#setrowsetsize)|Virtual function that changes the setting for the rowset size to the specified value.|  
   
 ##  <a name="_core_special_considerations"></a> Special Considerations  
  Although bulk row fetching is a performance gain, certain features operate differently. Before you decide to implement bulk row fetching, consider the following:  
@@ -80,7 +80,7 @@ This topic applies to the MFC ODBC classes.
   
 -   The member functions `IsDeleted`, `IsFieldDirty`, `IsFieldNull`, `IsFieldNullable`, `SetFieldDirty`, and `SetFieldNull` cannot be used on recordsets that implement bulk row fetching. However, you can call `GetRowStatus` in place of `IsDeleted`, and `GetODBCFieldInfo` in place of `IsFieldNullable`.  
   
--   The **Move** operations repositions your recordset by rowset. For example, suppose you open a recordset that has 100 records with an initial rowset size of 10. **Open** fetches rows 1 through 10, with the current record positioned on row 1. A call to `MoveNext` fetches the next rowset, not the next row. This rowset consists of rows 11 through 20, with the current record positioned on row 11. Note that `MoveNext` and **Move( 1 )** are not equivalent when bulk row fetching is implemented. **Move( 1 )** fetches the rowset that begins 1 row from the current record. In this example, calling **Move( 1 )** after calling **Open** fetches the rowset consisting of rows 2 through 11, with the current record positioned on row 2. For more information, see the [Move](../Topic/CRecordset::Move.md) member function.  
+-   The **Move** operations repositions your recordset by rowset. For example, suppose you open a recordset that has 100 records with an initial rowset size of 10. **Open** fetches rows 1 through 10, with the current record positioned on row 1. A call to `MoveNext` fetches the next rowset, not the next row. This rowset consists of rows 11 through 20, with the current record positioned on row 11. Note that `MoveNext` and **Move( 1 )** are not equivalent when bulk row fetching is implemented. **Move( 1 )** fetches the rowset that begins 1 row from the current record. In this example, calling **Move( 1 )** after calling **Open** fetches the rowset consisting of rows 2 through 11, with the current record positioned on row 2. For more information, see the [Move](../../mfc/reference/crecordset-class.md#move) member function.  
   
 -   Unlike record field exchange, the wizards do not support bulk record field exchange. This means that you must manually declare your field data members and manually override `DoBulkFieldExchange` by writing calls to the Bulk RFX functions. For more information, see [Record Field Exchange Functions](../../mfc/reference/record-field-exchange-functions.md) in the *Class Library Reference*.  
   
@@ -154,9 +154,10 @@ void MultiRowSet::DoBulkFieldExchange( CFieldExchange* pFX )
 > [!NOTE]
 >  You must call the **Close** member function before your derived `CRecordset` class goes out of scope. This ensures that any memory allocated by the framework are freed. It is good programming practice to always explicitly call **Close**, regardless of whether you have implemented bulk row fetching.  
   
- For more information about record field exchange (RFX), see [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md). For more information about using parameters, see [CFieldExchange::SetFieldType](../Topic/CFieldExchange::SetFieldType.md) and [Recordset: Parameterizing a Recordset (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).  
+ For more information about record field exchange (RFX), see [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md). For more information about using parameters, see [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype) and [Recordset: Parameterizing a Recordset (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).  
   
 ## See Also  
  [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)   
- [CRecordset::m_nFields](../Topic/CRecordset::m_nFields.md)   
- [CRecordset::m_nParams](../Topic/CRecordset::m_nParams.md)
+ [CRecordset::m_nFields](../../mfc/reference/crecordset-class.md#m_nfields)   
+ [CRecordset::m_nParams](../../mfc/reference/crecordset-class.md#m_nparams)
+

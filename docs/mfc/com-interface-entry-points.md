@@ -38,11 +38,11 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # COM Interface Entry Points
-For member functions of a COM interface, use the [METHOD_PROLOGUE](../Topic/METHOD_PROLOGUE.md) macro to maintain the proper global state when calling methods of an exported interface.  
+For member functions of a COM interface, use the [METHOD_PROLOGUE](http://msdn.microsoft.com/library/e94c4939-64ea-42de-a501-55594c952828) macro to maintain the proper global state when calling methods of an exported interface.  
   
  Typically, member functions of interfaces implemented by `CCmdTarget`-derived objects already use this macro to provide automatic initialization of the `pThis` pointer. For example:  
   
- [!code-cpp[NVC_MFCConnectionPoints#5](../mfc/codesnippet/CPP/com-interface-entry-points_1.cpp)]  
+ [!code-cpp[NVC_MFCConnectionPoints#5](../mfc/codesnippet/cpp/com-interface-entry-points_1.cpp)]  
   
  For additional information, see [Technical Note 38](../mfc/tn038-mfc-ole-iunknown-implementation.md) on MFC/OLE **IUnknown** implementation.  
   

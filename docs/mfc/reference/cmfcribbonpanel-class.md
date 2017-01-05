@@ -49,75 +49,75 @@ class CMFCRibbonPanel : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonPanel::CMFCRibbonPanel](#cmfcribbonpanel__cmfcribbonpanel)|Constructs and initializes a `CMFCRibbonPanel` object.|  
+|[CMFCRibbonPanel::CMFCRibbonPanel](#cmfcribbonpanel)|Constructs and initializes a `CMFCRibbonPanel` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonPanel::Add](#cmfcribbonpanel__add)|Adds a ribbon element to the panel.|  
-|[CMFCRibbonPanel::AddSeparator](#cmfcribbonpanel__addseparator)|Adds a separator to the ribbon panel.|  
-|[CMFCRibbonPanel::AddToolBar](#cmfcribbonpanel__addtoolbar)|Adds a toolbar to the ribbon panel.|  
-|[CMFCRibbonPanel::FindByData](#cmfcribbonpanel__findbydata)||  
-|[CMFCRibbonPanel::FindByID](#cmfcribbonpanel__findbyid)|Returns an element identified by a specified command ID.|  
-|[CMFCRibbonPanel::GetCaptionHeight](#cmfcribbonpanel__getcaptionheight)||  
-|[CMFCRibbonPanel::GetCount](#cmfcribbonpanel__getcount)|Returns the number of elements in the ribbon panel.|  
-|[CMFCRibbonPanel::GetData](#cmfcribbonpanel__getdata)|Returns the user-defined data associated with the panel.|  
-|[CMFCRibbonPanel::GetDefaultButton](#cmfcribbonpanel__getdefaultbutton)||  
-|[CMFCRibbonPanel::GetDroppedDown](#cmfcribbonpanel__getdroppeddown)||  
-|[CMFCRibbonPanel::GetElement](#cmfcribbonpanel__getelement)|Returns the ribbon element located at a specified index.|  
-|[CMFCRibbonPanel::GetElements](#cmfcribbonpanel__getelements)|Retrieves all elements that are contained in the ribbon panel.|  
-|[CMFCRibbonPanel::GetElementsByID](#cmfcribbonpanel__getelementsbyid)||  
-|[CMFCRibbonPanel::GetFocused](#cmfcribbonpanel__getfocused)|Returns a focused element.|  
-|[CMFCRibbonPanel::GetGalleryRect](#cmfcribbonpanel__getgalleryrect)|Returns a bounding rectangle of Gallery element.|  
-|[CMFCRibbonPanel::GetHighlighted](#cmfcribbonpanel__gethighlighted)||  
-|[CMFCRibbonPanel::GetIndex](#cmfcribbonpanel__getindex)||  
-|[CMFCRibbonPanel::GetItemIDsList](#cmfcribbonpanel__getitemidslist)||  
-|[CMFCRibbonPanel::GetName](#cmfcribbonpanel__getname)||  
-|[CMFCRibbonPanel::GetParentButton](#cmfcribbonpanel__getparentbutton)||  
-|[CMFCRibbonPanel::GetParentCategory](#cmfcribbonpanel__getparentcategory)|Returns the parent category of the ribbon panel.|  
-|[CMFCRibbonPanel::GetParentMenuBar](#cmfcribbonpanel__getparentmenubar)||  
-|[CMFCRibbonPanel::GetPreferedMenuLocation](#cmfcribbonpanel__getpreferedmenulocation)||  
-|[CMFCRibbonPanel::GetPressed](#cmfcribbonpanel__getpressed)||  
-|[CMFCRibbonPanel::GetRect](#cmfcribbonpanel__getrect)||  
-|[CMFCRibbonPanel::GetVisibleElements](#cmfcribbonpanel__getvisibleelements)|Obtains an array of visible elements.|  
-|[CMFCRibbonPanel::HasElement](#cmfcribbonpanel__haselement)||  
-|[CMFCRibbonPanel::HitTest](#cmfcribbonpanel__hittest)||  
-|[CMFCRibbonPanel::HitTestEx](#cmfcribbonpanel__hittestex)||  
-|[CMFCRibbonPanel::Insert](#cmfcribbonpanel__insert)|Inserts a ribbon element at the given position.|  
-|[CMFCRibbonPanel::InsertSeparator](#cmfcribbonpanel__insertseparator)|Inserts a separator at the given position.|  
-|[CMFCRibbonPanel::IsCenterColumnVert](#cmfcribbonpanel__iscentercolumnvert)|Specifies whether all panel elements should be centered (aligned) vertically, by column.|  
-|[CMFCRibbonPanel::IsCollapsed](#cmfcribbonpanel__iscollapsed)||  
-|[CMFCRibbonPanel::IsHighlighted](#cmfcribbonpanel__ishighlighted)||  
-|[CMFCRibbonPanel::IsJustifyColumns](#cmfcribbonpanel__isjustifycolumns)|Specifies whether all panel columns have the same width.|  
-|[CMFCRibbonPanel::IsMainPanel](#cmfcribbonpanel__ismainpanel)||  
-|[CMFCRibbonPanel::IsMenuMode](#cmfcribbonpanel__ismenumode)||  
-|[CMFCRibbonPanel::MakeGalleryItemVisible](#cmfcribbonpanel__makegalleryitemvisible)|Scrolls the gallery to make the specified Ribbon element visible.|  
-|[CMFCRibbonPanel::OnKey](#cmfcribbonpanel__onkey)||  
-|[CMFCRibbonPanel::RecalcWidths](#cmfcribbonpanel__recalcwidths)||  
-|[CMFCRibbonPanel::Remove](#cmfcribbonpanel__remove)|Removes and optionally deletes an element located at the specified index.|  
-|[CMFCRibbonPanel::RemoveAll](#cmfcribbonpanel__removeall)|Removes all elements from the ribbon panel.|  
-|[CMFCRibbonPanel::Replace](#cmfcribbonpanel__replace)|Replaces one element with another based on their respective index values.|  
-|[CMFCRibbonPanel::ReplaceByID](#cmfcribbonpanel__replacebyid)|Replaces one element with another based on a specified command ID.|  
-|[CMFCRibbonPanel::SetCenterColumnVert](#cmfcribbonpanel__setcentercolumnvert)|Orders the panel to align elements vertically, by column.|  
-|[CMFCRibbonPanel::SetData](#cmfcribbonpanel__setdata)|Associates user-defined data with the ribbon panel.|  
-|[CMFCRibbonPanel::SetElementMenu](#cmfcribbonpanel__setelementmenu)|Assigns a popup menu to the element that has the given command ID.|  
-|[CMFCRibbonPanel::SetElementRTC](#cmfcribbonpanel__setelementrtc)|Adds a ribbon element specified by the provided runtime class information to the ribbon panel.|  
-|[CMFCRibbonPanel::SetElementRTCByID](#cmfcribbonpanel__setelementrtcbyid)|Adds a ribbon element specified by the provided runtime class information to the ribbon panel.|  
-|[CMFCRibbonPanel::SetFocused](#cmfcribbonpanel__setfocused)|Sets focus to the specified Ribbon element.|  
-|[CMFCRibbonPanel::SetJustifyColumns](#cmfcribbonpanel__setjustifycolumns)|Enables or disables column justification.|  
-|[CMFCRibbonPanel::SetKeys](#cmfcribbonpanel__setkeys)|Sets the keyboard shortcut that displays the ribbon panel.|  
-|[CMFCRibbonPanel::ShowPopup](#cmfcribbonpanel__showpopup)||  
+|[CMFCRibbonPanel::Add](#add)|Adds a ribbon element to the panel.|  
+|[CMFCRibbonPanel::AddSeparator](#addseparator)|Adds a separator to the ribbon panel.|  
+|[CMFCRibbonPanel::AddToolBar](#addtoolbar)|Adds a toolbar to the ribbon panel.|  
+|[CMFCRibbonPanel::FindByData](#findbydata)||  
+|[CMFCRibbonPanel::FindByID](#findbyid)|Returns an element identified by a specified command ID.|  
+|[CMFCRibbonPanel::GetCaptionHeight](#getcaptionheight)||  
+|[CMFCRibbonPanel::GetCount](#getcount)|Returns the number of elements in the ribbon panel.|  
+|[CMFCRibbonPanel::GetData](#getdata)|Returns the user-defined data associated with the panel.|  
+|[CMFCRibbonPanel::GetDefaultButton](#getdefaultbutton)||  
+|[CMFCRibbonPanel::GetDroppedDown](#getdroppeddown)||  
+|[CMFCRibbonPanel::GetElement](#getelement)|Returns the ribbon element located at a specified index.|  
+|[CMFCRibbonPanel::GetElements](#getelements)|Retrieves all elements that are contained in the ribbon panel.|  
+|[CMFCRibbonPanel::GetElementsByID](#getelementsbyid)||  
+|[CMFCRibbonPanel::GetFocused](#getfocused)|Returns a focused element.|  
+|[CMFCRibbonPanel::GetGalleryRect](#getgalleryrect)|Returns a bounding rectangle of Gallery element.|  
+|[CMFCRibbonPanel::GetHighlighted](#gethighlighted)||  
+|[CMFCRibbonPanel::GetIndex](#getindex)||  
+|[CMFCRibbonPanel::GetItemIDsList](#getitemidslist)||  
+|[CMFCRibbonPanel::GetName](#getname)||  
+|[CMFCRibbonPanel::GetParentButton](#getparentbutton)||  
+|[CMFCRibbonPanel::GetParentCategory](#getparentcategory)|Returns the parent category of the ribbon panel.|  
+|[CMFCRibbonPanel::GetParentMenuBar](#getparentmenubar)||  
+|[CMFCRibbonPanel::GetPreferedMenuLocation](#getpreferedmenulocation)||  
+|[CMFCRibbonPanel::GetPressed](#getpressed)||  
+|[CMFCRibbonPanel::GetRect](#getrect)||  
+|[CMFCRibbonPanel::GetVisibleElements](#getvisibleelements)|Obtains an array of visible elements.|  
+|[CMFCRibbonPanel::HasElement](#haselement)||  
+|[CMFCRibbonPanel::HitTest](#hittest)||  
+|[CMFCRibbonPanel::HitTestEx](#hittestex)||  
+|[CMFCRibbonPanel::Insert](#insert)|Inserts a ribbon element at the given position.|  
+|[CMFCRibbonPanel::InsertSeparator](#insertseparator)|Inserts a separator at the given position.|  
+|[CMFCRibbonPanel::IsCenterColumnVert](#iscentercolumnvert)|Specifies whether all panel elements should be centered (aligned) vertically, by column.|  
+|[CMFCRibbonPanel::IsCollapsed](#iscollapsed)||  
+|[CMFCRibbonPanel::IsHighlighted](#ishighlighted)||  
+|[CMFCRibbonPanel::IsJustifyColumns](#isjustifycolumns)|Specifies whether all panel columns have the same width.|  
+|[CMFCRibbonPanel::IsMainPanel](#ismainpanel)||  
+|[CMFCRibbonPanel::IsMenuMode](#ismenumode)||  
+|[CMFCRibbonPanel::MakeGalleryItemVisible](#makegalleryitemvisible)|Scrolls the gallery to make the specified Ribbon element visible.|  
+|[CMFCRibbonPanel::OnKey](#onkey)||  
+|[CMFCRibbonPanel::RecalcWidths](#recalcwidths)||  
+|[CMFCRibbonPanel::Remove](#remove)|Removes and optionally deletes an element located at the specified index.|  
+|[CMFCRibbonPanel::RemoveAll](#removeall)|Removes all elements from the ribbon panel.|  
+|[CMFCRibbonPanel::Replace](#replace)|Replaces one element with another based on their respective index values.|  
+|[CMFCRibbonPanel::ReplaceByID](#replacebyid)|Replaces one element with another based on a specified command ID.|  
+|[CMFCRibbonPanel::SetCenterColumnVert](#setcentercolumnvert)|Orders the panel to align elements vertically, by column.|  
+|[CMFCRibbonPanel::SetData](#setdata)|Associates user-defined data with the ribbon panel.|  
+|[CMFCRibbonPanel::SetElementMenu](#setelementmenu)|Assigns a popup menu to the element that has the given command ID.|  
+|[CMFCRibbonPanel::SetElementRTC](#setelementrtc)|Adds a ribbon element specified by the provided runtime class information to the ribbon panel.|  
+|[CMFCRibbonPanel::SetElementRTCByID](#setelementrtcbyid)|Adds a ribbon element specified by the provided runtime class information to the ribbon panel.|  
+|[CMFCRibbonPanel::SetFocused](#setfocused)|Sets focus to the specified Ribbon element.|  
+|[CMFCRibbonPanel::SetJustifyColumns](#setjustifycolumns)|Enables or disables column justification.|  
+|[CMFCRibbonPanel::SetKeys](#setkeys)|Sets the keyboard shortcut that displays the ribbon panel.|  
+|[CMFCRibbonPanel::ShowPopup](#showpopup)||  
   
 ## Remarks  
  Ribbon panels are logical groupings of related tasks that you create within ribbon categories. As the size of the ribbon changes, the panel layout automatically adjusts to display as many elements as possible.  
   
- You can get a ribbon panels that is contained in a ribbon category by calling the [CMFCRibbonCategory::GetPanel](../../mfc/reference/cmfcribboncategory-class.md#cmfcribboncategory__getpanel) method.  
+ You can get a ribbon panels that is contained in a ribbon category by calling the [CMFCRibbonCategory::GetPanel](../../mfc/reference/cmfcribboncategory-class.md#getpanel) method.  
   
 ## Example  
- The following example demonstrates how to configure a `CMFCRibbonPanel` object by using various methods in the `CMFCRibbonPanel` class. The example shows how to set the keyboard shortcut that displays the ribbon panel, align elements in the panel vertically by column, and enable column justification. This code snippet is part of the [MS Office 2007 Demo sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to configure a `CMFCRibbonPanel` object by using various methods in the `CMFCRibbonPanel` class. The example shows how to set the keyboard shortcut that displays the ribbon panel, align elements in the panel vertically by column, and enable column justification. This code snippet is part of the [MS Office 2007 Demo sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_MSOffice2007Demo#10](../../mfc/reference/codesnippet/CPP/cmfcribbonpanel-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_MSOffice2007Demo#10](../../mfc/reference/codesnippet/cpp/cmfcribbonpanel-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -127,7 +127,7 @@ class CMFCRibbonPanel : public CObject
 ## Requirements  
  **Header:** afxRibbonPanel.h  
   
-##  <a name="cmfcribbonpanel__add"></a>  CMFCRibbonPanel::Add  
+##  <a name="add"></a>  CMFCRibbonPanel::Add  
  Appends the specified ribbon element to the array of ribbon elements that is contained in the ribbon panel.  
   
 ```  
@@ -142,7 +142,7 @@ CMFCRibbonBaseElement* pElem);
   
 ### Remarks  
   
-##  <a name="cmfcribbonpanel__addseparator"></a>  CMFCRibbonPanel::AddSeparator  
+##  <a name="addseparator"></a>  CMFCRibbonPanel::AddSeparator  
  Adds a separator to the ribbon panel.  
   
 ```  
@@ -150,9 +150,9 @@ virtual void AddSeparator();
 ```  
   
 ### Remarks  
- Call this method to add a separator to the ribbon panel. The separator will be added next to the ribbon element that was added by the previous call to [CMFCRibbonPanel::Add](#cmfcribbonpanel__add). To insert a separator at a given position, call [CMFCRibbonPanel::InsertSeparator](#cmfcribbonpanel__insertseparator).  
+ Call this method to add a separator to the ribbon panel. The separator will be added next to the ribbon element that was added by the previous call to [CMFCRibbonPanel::Add](#add). To insert a separator at a given position, call [CMFCRibbonPanel::InsertSeparator](#insertseparator).  
   
-##  <a name="cmfcribbonpanel__addtoolbar"></a>  CMFCRibbonPanel::AddToolBar  
+##  <a name="addtoolbar"></a>  CMFCRibbonPanel::AddToolBar  
  Adds a toolbar to the ribbon panel.  
   
 ```  
@@ -178,12 +178,12 @@ UINT uiDisabledResID = 0);
  Specifies the resource ID of the toolbar's disabled images.  
   
 ### Return Value  
- Call this method to add a toolbar to the ribbon panel. The toolbar will be added next to the ribbon element added by the previous call to [CMFCRibbonPanel::Add](#cmfcribbonpanel__add).  
+ Call this method to add a toolbar to the ribbon panel. The toolbar will be added next to the ribbon element added by the previous call to [CMFCRibbonPanel::Add](#add).  
   
 ### Remarks  
  For more information about toolbars, hot images, cold images, and disabled images, see [CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md).  
   
-##  <a name="cmfcribbonpanel__cmfcribbonpanel"></a>  CMFCRibbonPanel::CMFCRibbonPanel  
+##  <a name="cmfcribbonpanel"></a>  CMFCRibbonPanel::CMFCRibbonPanel  
  Constructs and initializes a [CMFCRibbonPanel](../../mfc/reference/cmfcribbonpanel-class.md) object.  
   
 ```  
@@ -207,7 +207,7 @@ CMFCRibbonGallery* pPaletteButton);
  [in] `pPaletteButton`  
  Pointer to a ribbon gallery for the ribbon panel.  
   
-##  <a name="cmfcribbonpanel__findbydata"></a>  CMFCRibbonPanel::FindByData  
+##  <a name="findbydata"></a>  CMFCRibbonPanel::FindByData  
  Retrieves the ribbon element that is associated with the specified data.  
   
 ```  
@@ -227,7 +227,7 @@ DWORD_PTR dwData) const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonpanel__findbyid"></a>  CMFCRibbonPanel::FindByID  
+##  <a name="findbyid"></a>  CMFCRibbonPanel::FindByID  
  Retrieves the ribbon element that is identified by the specified command ID.  
   
 ```  
@@ -245,7 +245,7 @@ UINT uiCmdID) const;
 ### Return Value  
  The ribbon element that is identified by the specified command ID; otherwise `NULL` if no ribbon element is identified with the specified command ID.  
   
-##  <a name="cmfcribbonpanel__getcaptionheight"></a>  CMFCRibbonPanel::GetCaptionHeight  
+##  <a name="getcaptionheight"></a>  CMFCRibbonPanel::GetCaptionHeight  
  Retrieves the height of a caption for the ribbon panel.  
   
 ```  
@@ -259,7 +259,7 @@ int GetCaptionHeight() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonpanel__getcount"></a>  CMFCRibbonPanel::GetCount  
+##  <a name="getcount"></a>  CMFCRibbonPanel::GetCount  
  Retrieves the number of ribbon elements that are contained in the ribbon panel.  
   
 ```  
@@ -271,7 +271,7 @@ int GetCount() const;
 ### Return Value  
  The number of ribbon elements that are contained in the ribbon panel.  
   
-##  <a name="cmfcribbonpanel__getdata"></a>  CMFCRibbonPanel::GetData  
+##  <a name="getdata"></a>  CMFCRibbonPanel::GetData  
  Returns the user-defined data associated with the panel.  
   
 ```  
@@ -283,7 +283,7 @@ DWORD_PTR GetData() const;
 ### Return Value  
  The user-defined data associated with the panel.  
   
-##  <a name="cmfcribbonpanel__getdefaultbutton"></a>  CMFCRibbonPanel::GetDefaultButton  
+##  <a name="getdefaultbutton"></a>  CMFCRibbonPanel::GetDefaultButton  
  Retrieves the default button for the ribbon panel.  
   
 ```  
@@ -296,7 +296,7 @@ CMFCRibbonButton& GetDefaultButton();
 ### Remarks  
  The default button is displayed when a ribbon panel has insufficient space to display its ribbon elements.  
   
-##  <a name="cmfcribbonpanel__getdroppeddown"></a>  CMFCRibbonPanel::GetDroppedDown  
+##  <a name="getdroppeddown"></a>  CMFCRibbonPanel::GetDroppedDown  
  Retrieves a pointer to a ribbon element if its pop-up menu is dropped down.  
   
 ```  
@@ -311,7 +311,7 @@ CMFCRibbonBaseElement* GetDroppedDown() const;
 ### Remarks  
  Only ribbon elements that are contained in the ribbon panel are tested.  
   
-##  <a name="cmfcribbonpanel__getelement"></a>  CMFCRibbonPanel::GetElement  
+##  <a name="getelement"></a>  CMFCRibbonPanel::GetElement  
  Returns the ribbon element located at a specified index.  
   
 ```  
@@ -329,7 +329,7 @@ int nIndex) const;
 ### Return Value  
  A valid pointer to the base ribbon element located at position `nIndex` in the ribbon panel, or `NULL` if there is no element at the specified index.  
   
-##  <a name="cmfcribbonpanel__getelements"></a>  CMFCRibbonPanel::GetElements  
+##  <a name="getelements"></a>  CMFCRibbonPanel::GetElements  
  Retrieves all ribbon elements that are contained in the ribbon panel.  
   
 ```  
@@ -344,7 +344,7 @@ CArray<CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& arElements);
   
 ### Remarks  
   
-##  <a name="cmfcribbonpanel__getelementsbyid"></a>  CMFCRibbonPanel::GetElementsByID  
+##  <a name="getelementsbyid"></a>  CMFCRibbonPanel::GetElementsByID  
  Adds ribbon elements that have the specified command ID to the specified array.  
   
 ```  
@@ -364,7 +364,7 @@ CArray<CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& arElements);
 ### Remarks  
  Only ribbon elements that are contained in the ribbon panel are tested.  
   
-##  <a name="cmfcribbonpanel__gethighlighted"></a>  CMFCRibbonPanel::GetHighlighted  
+##  <a name="gethighlighted"></a>  CMFCRibbonPanel::GetHighlighted  
  Retrieves the ribbon element that is highlighted on the ribbon panel.  
   
 ```  
@@ -378,7 +378,7 @@ CMFCRibbonBaseElement* GetHighlighted() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonpanel__getindex"></a>  CMFCRibbonPanel::GetIndex  
+##  <a name="getindex"></a>  CMFCRibbonPanel::GetIndex  
  Retrieves the zero-based index of the specified ribbon element from the array of ribbon elements that are contained in the ribbon panel.  
   
 ```  
@@ -398,7 +398,7 @@ CMFCRibbonBaseElement* pElem) const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonpanel__getitemidslist"></a>  CMFCRibbonPanel::GetItemIDsList  
+##  <a name="getitemidslist"></a>  CMFCRibbonPanel::GetItemIDsList  
  Retrieves the command IDs for all ribbon elements in the ribbon panel.  
   
 ```  
@@ -415,7 +415,7 @@ CList<UINT, UINT>& lstItems) const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonpanel__getname"></a>  CMFCRibbonPanel::GetName  
+##  <a name="getname"></a>  CMFCRibbonPanel::GetName  
  Retrieves the name of the ribbon panel.  
   
 ```  
@@ -429,7 +429,7 @@ LPCTSTR GetName() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonpanel__getparentbutton"></a>  CMFCRibbonPanel::GetParentButton  
+##  <a name="getparentbutton"></a>  CMFCRibbonPanel::GetParentButton  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -442,7 +442,7 @@ CMFCRibbonBaseElement* GetParentButton() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonpanel__getparentcategory"></a>  CMFCRibbonPanel::GetParentCategory  
+##  <a name="getparentcategory"></a>  CMFCRibbonPanel::GetParentCategory  
  Returns the parent category of the ribbon panel.  
   
 ```  
@@ -454,7 +454,7 @@ CMFCRibbonCategory* GetParentCategory() const;
 ### Return Value  
  A pointer to the ribbon category that contains this ribbon panel.  
   
-##  <a name="cmfcribbonpanel__getparentmenubar"></a>  CMFCRibbonPanel::GetParentMenuBar  
+##  <a name="getparentmenubar"></a>  CMFCRibbonPanel::GetParentMenuBar  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -467,7 +467,7 @@ CMFCRibbonPanelMenuBar* GetParentMenuBar() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonpanel__getpreferedmenulocation"></a>  CMFCRibbonPanel::GetPreferedMenuLocation  
+##  <a name="getpreferedmenulocation"></a>  CMFCRibbonPanel::GetPreferedMenuLocation  
  Retrieves the preferred display rectangle for the pop-up menu of the ribbon panel.  
   
 ```  
@@ -486,7 +486,7 @@ CRect& rect);
 ### Remarks  
  This method always returns `FALSE`. Override this method to retrieve the preferred display rectangle for the pop-up menu of the ribbon panel.  
   
-##  <a name="cmfcribbonpanel__getpressed"></a>  CMFCRibbonPanel::GetPressed  
+##  <a name="getpressed"></a>  CMFCRibbonPanel::GetPressed  
  Retrieves a pointer to a ribbon element on the ribbon panel if the user currently presses it.  
   
 ```  
@@ -500,7 +500,7 @@ CMFCRibbonBaseElement* GetPressed() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonpanel__getrect"></a>  CMFCRibbonPanel::GetRect  
+##  <a name="getrect"></a>  CMFCRibbonPanel::GetRect  
  Retrieves the display rectangle for the ribbon panel.  
   
 ```  
@@ -514,7 +514,7 @@ const CRect& GetRect() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonpanel__haselement"></a>  CMFCRibbonPanel::HasElement  
+##  <a name="haselement"></a>  CMFCRibbonPanel::HasElement  
  Indicates whether the ribbon panel contains the specified ribbon element.  
   
 ```  
@@ -534,7 +534,7 @@ const CMFCRibbonBaseElement* pElem) const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonpanel__highlight"></a>  CMFCRibbonPanel::Highlight  
+##  <a name="highlight"></a>  CMFCRibbonPanel::Highlight  
  Sets the highlight color for the selected ribbon panel and for the ribbon element specified by the point.  
   
 ```  
@@ -553,7 +553,7 @@ CPoint point);
   
 ### Remarks  
   
-##  <a name="cmfcribbonpanel__hittest"></a>  CMFCRibbonPanel::HitTest  
+##  <a name="hittest"></a>  CMFCRibbonPanel::HitTest  
  Retrieves a ribbon element if the specified point is located in it.  
   
 ```  
@@ -576,7 +576,7 @@ BOOL bCheckPanelCaption = FALSE);
 ### Remarks  
  Only ribbon elements that are contained in the ribbon panel are tested.  
   
-##  <a name="cmfcribbonpanel__hittestex"></a>  CMFCRibbonPanel::HitTestEx  
+##  <a name="hittestex"></a>  CMFCRibbonPanel::HitTestEx  
  Retrieves the zero-based index of the ribbon element that has the specified point located in it.  
   
 ```  
@@ -597,7 +597,7 @@ CPoint point) const;
 ### Remarks  
  Only ribbon elements that are contained in the ribbon panel are tested.  
   
-##  <a name="cmfcribbonpanel__insert"></a>  CMFCRibbonPanel::Insert  
+##  <a name="insert"></a>  CMFCRibbonPanel::Insert  
  Inserts the specified ribbon element at the specified position in the array of ribbon elements that is contained in the ribbon panel.  
   
 ```  
@@ -620,7 +620,7 @@ int nIndex);
 ### Remarks  
  If the value of `nIndex` is -1, or if `nIndex` equals the number of ribbon elements in the array, the specified ribbon element is added to the end of the array. If the value of `nIndex` is out of range, the method will fail.  
   
-##  <a name="cmfcribbonpanel__insertseparator"></a>  CMFCRibbonPanel::InsertSeparator  
+##  <a name="insertseparator"></a>  CMFCRibbonPanel::InsertSeparator  
  Inserts a separator at the given position.  
   
 ```  
@@ -637,9 +637,9 @@ int nIndex);
  `TRUE` if the separator has been inserted successfully; otherwise, `FALSE`.  
   
 ### Remarks  
- Call this method to insert a separator at the position specified by `nIndex`. To insert a separator next to the most recently added ribbon element, call [CMFCRibbonPanel::AddSeparator](#cmfcribbonpanel__addseparator).  
+ Call this method to insert a separator at the position specified by `nIndex`. To insert a separator next to the most recently added ribbon element, call [CMFCRibbonPanel::AddSeparator](#addseparator).  
   
-##  <a name="cmfcribbonpanel__iscentercolumnvert"></a>  CMFCRibbonPanel::IsCenterColumnVert  
+##  <a name="iscentercolumnvert"></a>  CMFCRibbonPanel::IsCenterColumnVert  
  Indicates whether the vertical positions of ribbon elements are centered within their display rectangle.  
   
 ```  
@@ -651,7 +651,7 @@ BOOL IsCenterColumnVert() const;
 ### Return Value  
  `TRUE` if the vertical positions of ribbon elements are centered within their display rectangle; otherwise `FALSE`.  
   
-##  <a name="cmfcribbonpanel__iscollapsed"></a>  CMFCRibbonPanel::IsCollapsed  
+##  <a name="iscollapsed"></a>  CMFCRibbonPanel::IsCollapsed  
  Indicates whether the display size of the ribbon panel is minimized in the horizontal direction.  
   
 ```  
@@ -666,7 +666,7 @@ BOOL IsCollapsed() const;
 ### Remarks  
  When a ribbon panel is collapsed, it only displays its default button, its name, and a drop-down arrow.  
   
-##  <a name="cmfcribbonpanel__ishighlighted"></a>  CMFCRibbonPanel::IsHighlighted  
+##  <a name="ishighlighted"></a>  CMFCRibbonPanel::IsHighlighted  
  Indicates whether the display of the ribbon panel is highlighted.  
   
 ```  
@@ -681,7 +681,7 @@ BOOL IsHighlighted() const;
 ### Remarks  
  The display of a ribbon panel is highlighted when the pointer is over it.  
   
-##  <a name="cmfcribbonpanel__isjustifycolumns"></a>  CMFCRibbonPanel::IsJustifyColumns  
+##  <a name="isjustifycolumns"></a>  CMFCRibbonPanel::IsJustifyColumns  
  Indicates whether the display dimensions of ribbon elements that are in the same column in the ribbon panel are set to the same width.  
   
 ```  
@@ -693,7 +693,7 @@ BOOL IsJustifyColumns() const;
 ### Return Value  
  `TRUE` if the display dimensions of ribbon elements that are in the same column in the ribbon panel are set to the same width; otherwise `FALSE`.  
   
-##  <a name="cmfcribbonpanel__ismainpanel"></a>  CMFCRibbonPanel::IsMainPanel  
+##  <a name="ismainpanel"></a>  CMFCRibbonPanel::IsMainPanel  
  Indicates whether the ribbon panel is the main ribbon panel.  
   
 ```  
@@ -710,7 +710,7 @@ virtual BOOL IsMainPanel() const;
   
  The main ribbon panel is displayed when the user selects the application button.  
   
-##  <a name="cmfcribbonpanel__ismenumode"></a>  CMFCRibbonPanel::IsMenuMode  
+##  <a name="ismenumode"></a>  CMFCRibbonPanel::IsMenuMode  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -723,7 +723,7 @@ BOOL IsMenuMode() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonpanel__onkey"></a>  CMFCRibbonPanel::OnKey  
+##  <a name="onkey"></a>  CMFCRibbonPanel::OnKey  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -739,7 +739,7 @@ UINT nChar);
   
 ### Remarks  
   
-##  <a name="cmfcribbonpanel__recalcwidths"></a>  CMFCRibbonPanel::RecalcWidths  
+##  <a name="recalcwidths"></a>  CMFCRibbonPanel::RecalcWidths  
  Recalculates the width of each display layout configuration for the ribbon panel.  
   
 ```  
@@ -759,7 +759,7 @@ int nHeight);
 ### Remarks  
  A ribbon panel changes its layout configuration as the available width changes.  
   
-##  <a name="cmfcribbonpanel__remove"></a>  CMFCRibbonPanel::Remove  
+##  <a name="remove"></a>  CMFCRibbonPanel::Remove  
  Removes and optionally deletes an element located at the specified index.  
   
 ```  
@@ -782,7 +782,7 @@ BOOL bDelete = TRUE);
 ### Remarks  
  Call this method to remove an element from the ribbon panel.  
   
-##  <a name="cmfcribbonpanel__removeall"></a>  CMFCRibbonPanel::RemoveAll  
+##  <a name="removeall"></a>  CMFCRibbonPanel::RemoveAll  
  Deletes all ribbon elements from the ribbon panel.  
   
 ```  
@@ -792,7 +792,7 @@ void RemoveAll();
 ### Remarks  
  All ribbon elements are deleted from the ribbon panel and destroyed.  
   
-##  <a name="cmfcribbonpanel__replace"></a>  CMFCRibbonPanel::Replace  
+##  <a name="replace"></a>  CMFCRibbonPanel::Replace  
  Replaces one element with another based on their index value.  
   
 ```  
@@ -813,9 +813,9 @@ CMFCRibbonBaseElement* pElem);
  `TRUE` if the original ribbon element has been replaced successfully by the new ribbon element; `FALSE` if the ribbon element was not replaced or if there is no element at the specified index.  
   
 ### Remarks  
- To replace a ribbon element by command ID, call [CMFCRibbonPanel::ReplaceByID](#cmfcribbonpanel__replacebyid).  
+ To replace a ribbon element by command ID, call [CMFCRibbonPanel::ReplaceByID](#replacebyid).  
   
-##  <a name="cmfcribbonpanel__replacebyid"></a>  CMFCRibbonPanel::ReplaceByID  
+##  <a name="replacebyid"></a>  CMFCRibbonPanel::ReplaceByID  
  Replaces one element with another based on a specified command ID.  
   
 ```  
@@ -836,9 +836,9 @@ CMFCRibbonBaseElement* pElem);
  `TRUE` if the original ribbon element has been replaced successfully by the new ribbon element; `FALSE` if the ribbon element was not replaced or if no element with the specified command ID actually exists.  
   
 ### Remarks  
- To replace a ribbon element based on position, call [CMFCRibbonPanel::Replace](#cmfcribbonpanel__replace).  
+ To replace a ribbon element based on position, call [CMFCRibbonPanel::Replace](#replace).  
   
-##  <a name="cmfcribbonpanel__setcentercolumnvert"></a>  CMFCRibbonPanel::SetCenterColumnVert  
+##  <a name="setcentercolumnvert"></a>  CMFCRibbonPanel::SetCenterColumnVert  
  Enables or disables the centering of the vertical positions of ribbon elements within their display rectangle.  
   
 ```  
@@ -853,7 +853,7 @@ BOOL bSet = TRUE);
   
 ### Remarks  
   
-##  <a name="cmfcribbonpanel__setdata"></a>  CMFCRibbonPanel::SetData  
+##  <a name="setdata"></a>  CMFCRibbonPanel::SetData  
  Associates user-defined data with the ribbon panel.  
   
 ```  
@@ -869,7 +869,7 @@ DWORD_PTR dwData);
 ### Remarks  
  Call this method to associate user-defined data with the ribbon panel.  
   
-##  <a name="cmfcribbonpanel__setelementmenu"></a>  CMFCRibbonPanel::SetElementMenu  
+##  <a name="setelementmenu"></a>  CMFCRibbonPanel::SetElementMenu  
  Assigns a popup menu to the element that has the given command ID.  
   
 ```  
@@ -910,7 +910,7 @@ BOOL bRightAlign = FALSE);
 ### Remarks  
  Call this method to assign a popup menu to the ribbon element that has the given command ID.  
   
-##  <a name="cmfcribbonpanel__setelementrtc"></a>  CMFCRibbonPanel::SetElementRTC  
+##  <a name="setelementrtc"></a>  CMFCRibbonPanel::SetElementRTC  
  Adds the ribbon element that is specified by the provided runtime class information to the ribbon panel.  
   
 ```  
@@ -933,7 +933,7 @@ CRuntimeClass* pRTC);
 ### Remarks  
  If you want to add a custom element (for example, a color button) to the ribbon panel, you must specify the custom element's runtime class information. The ribbon stores this information, creates the custom element, and replaces an existing element that is located (identified by) the specified command ID. The ribbon then returns a pointer to the newly created element.  
   
-##  <a name="cmfcribbonpanel__setelementrtcbyid"></a>  CMFCRibbonPanel::SetElementRTCByID  
+##  <a name="setelementrtcbyid"></a>  CMFCRibbonPanel::SetElementRTCByID  
  Adds a ribbon element that is specified by the provided runtime class information to the ribbon panel.  
   
 ```  
@@ -984,7 +984,7 @@ pColorButton->EnableAutomaticButton(_T("Automatic"),
  
 ```  
   
-##  <a name="cmfcribbonpanel__setjustifycolumns"></a>  CMFCRibbonPanel::SetJustifyColumns  
+##  <a name="setjustifycolumns"></a>  CMFCRibbonPanel::SetJustifyColumns  
  Enables or disables the adjustment of the width of ribbon elements in the same column.  
   
 ```  
@@ -1000,7 +1000,7 @@ BOOL bSet = TRUE);
 ### Remarks  
  When this feature is enabled in a ribbon panel, the widths of ribbon elements in the same column are adjusted to the width of the largest ribbon element in the same column.  
   
-##  <a name="cmfcribbonpanel__setkeys"></a>  CMFCRibbonPanel::SetKeys  
+##  <a name="setkeys"></a>  CMFCRibbonPanel::SetKeys  
  Sets the keytip for the default button of the ribbon panel.  
   
 ```  
@@ -1016,7 +1016,7 @@ LPCTSTR lpszKeys);
 ### Remarks  
  The default button is displayed when a ribbon panel has insufficient space to display its ribbon elements.  
   
-##  <a name="cmfcribbonpanel__showpopup"></a>  CMFCRibbonPanel::ShowPopup  
+##  <a name="showpopup"></a>  CMFCRibbonPanel::ShowPopup  
  Creates and displays a pop-up menu for the ribbon panel.  
   
 ```  
@@ -1035,7 +1035,7 @@ CMFCRibbonDefaultPanelButton* pButton = NULL);
 ### Remarks  
  The pop-up menu for the ribbon panel is only available when the display of the ribbon panel is collapsed.  
   
-##  <a name="cmfcribbonpanel__setfocused"></a>  CMFCRibbonPanel::SetFocused  
+##  <a name="setfocused"></a>  CMFCRibbonPanel::SetFocused  
  Sets focus to the specified Ribbon element.  
   
 ```  
@@ -1050,7 +1050,7 @@ CMFCRibbonBaseElement* pNewFocus);
   
 ### Remarks  
   
-##  <a name="cmfcribbonpanel__makegalleryitemvisible"></a>  CMFCRibbonPanel::MakeGalleryItemVisible  
+##  <a name="makegalleryitemvisible"></a>  CMFCRibbonPanel::MakeGalleryItemVisible  
  Scrolls the gallery to make the specified Ribbon element visible.  
   
 ```  
@@ -1065,7 +1065,7 @@ CMFCRibbonBaseElement* pItem);
   
 ### Remarks  
   
-##  <a name="cmfcribbonpanel__iswindows7look"></a>  CMFCRibbonPanel::IsWindows7Look  
+##  <a name="iswindows7look"></a>  CMFCRibbonPanel::IsWindows7Look  
  Indicates whether the parent ribbon has Windows 7 look (small rectangular application button).  
   
 ```  
@@ -1079,7 +1079,7 @@ BOOL IsWindows7Look() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonpanel__getvisibleelements"></a>  CMFCRibbonPanel::GetVisibleElements  
+##  <a name="getvisibleelements"></a>  CMFCRibbonPanel::GetVisibleElements  
  Retrieves an array of visible elements.  
   
 ```  
@@ -1095,7 +1095,7 @@ CMFCRibbonBaseElement*>& arElements);
   
 ### Remarks  
   
-##  <a name="cmfcribbonpanel__getgalleryrect"></a>  CMFCRibbonPanel::GetGalleryRect  
+##  <a name="getgalleryrect"></a>  CMFCRibbonPanel::GetGalleryRect  
  Returns a bounding rectangle of a Gallery element.  
   
 ```  
@@ -1107,7 +1107,7 @@ CRect GetGalleryRect();
   
 ### Remarks  
   
-##  <a name="cmfcribbonpanel__getfocused"></a>  CMFCRibbonPanel::GetFocused  
+##  <a name="getfocused"></a>  CMFCRibbonPanel::GetFocused  
  Returns a focused element.  
   
 ```  

@@ -49,7 +49,7 @@ class invalid_multiple_scheduling : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[invalid_multiple_scheduling::invalid_multiple_scheduling Constructor](#invalid_multiple_scheduling__invalid_multiple_scheduling_constructor)|Overloaded. Constructs an `invalid_multiple_scheduling` object.|  
+|[invalid_multiple_scheduling::invalid_multiple_scheduling Constructor](#ctor)|Overloaded. Constructs an `invalid_multiple_scheduling` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  
@@ -61,7 +61,7 @@ class invalid_multiple_scheduling : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="invalid_multiple_scheduling__invalid_multiple_scheduling_constructor"></a>  invalid_multiple_scheduling::invalid_multiple_scheduling Constructor  
+##  <a name="ctor"></a>  invalid_multiple_scheduling::invalid_multiple_scheduling Constructor  
  Constructs an `invalid_multiple_scheduling` object.  
   
 ```
@@ -75,10 +75,10 @@ invalid_multiple_scheduling() throw();
  A descriptive message of the error.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [task_handle Class](../../../parallel/concrt/reference/task-handle-class.md)   
- [task_group Class](../Topic/task_group%20Class.md)   
- [task_group::run Method](../Topic/task_group%20Class.md#task_group__run_method)   
- [task_group::wait Method](../Topic/task_group%20Class.md#task_group__wait_method)   
- [task_group::run_and_wait Method](../Topic/task_group%20Class.md#task_group__run_and_wait_method)   
- [structured_task_group Class](../../../parallel/concrt/reference/structured-task-group-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [task_handle Class](task-handle-class.md)   
+ [task_group Class](task-group-class.md)   
+ [task_group::run Method](task-group-class.md)   
+ [task_group::wait Method](task-group-class.md)   
+ [task_group::run_and_wait Method](task-group-class.md)   
+ [structured_task_group Class](structured-task-group-class.md)

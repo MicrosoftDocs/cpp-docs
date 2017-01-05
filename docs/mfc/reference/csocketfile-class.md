@@ -54,7 +54,7 @@ class CSocketFile : public CFile
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSocketFile::CSocketFile](#csocketfile__csocketfile)|Constructs a `CSocketFile` object.|  
+|[CSocketFile::CSocketFile](#csocketfile)|Constructs a `CSocketFile` object.|  
   
 ## Remarks  
  You can attach the `CSocketFile` object to a `CSocket` object for this purpose. You also can, and usually do, attach the `CSocketFile` object to a `CArchive` object to simplify sending and receiving data using MFC serialization.  
@@ -70,7 +70,7 @@ class CSocketFile : public CFile
   
  In the following example, `m_dwExpected` is the approximate number of bytes that the user expects to receive. It is assumed that you declare it elsewhere in your code.  
   
- [!code-cpp[NVC_MFCSocketThread#4](../../mfc/reference/codesnippet/CPP/csocketfile-class_1.cpp)]  
+ [!code-cpp[NVC_MFCSocketThread#4](../../mfc/reference/codesnippet/cpp/csocketfile-class_1.cpp)]  
   
  For more information, see [Windows Sockets in MFC](../../mfc/windows-sockets-in-mfc.md), [Windows Sockets: Using Sockets with Archives](../../mfc/windows-sockets-using-sockets-with-archives.md), as well as [Windows Sockets 2 API](http://msdn.microsoft.com/library/windows/desktop/ms740673).  
   
@@ -84,7 +84,7 @@ class CSocketFile : public CFile
 ## Requirements  
  **Header:** afxsock.h  
   
-##  <a name="csocketfile__csocketfile"></a>  CSocketFile::CSocketFile  
+##  <a name="csocketfile"></a>  CSocketFile::CSocketFile  
  Constructs a `CSocketFile` object.  
   
 ```  
@@ -108,7 +108,7 @@ explicit CSocketFile(
   
  In its "archive compatible" mode, a `CSocketFile` object provides better performance and reduces the danger of a "deadlock." A deadlock occurs when both the sending and receiving sockets are waiting on each other, or for a common resource. This situation might occur if the `CArchive` object worked with the `CSocketFile` the way it does with a `CFile` object. With `CFile`, the archive can assume that if it receives fewer bytes than it requested, the end of file has been reached.  
   
- With `CSocketFile`, however, data is message based; the buffer can contain multiple messages, so receiving fewer than the number of bytes requested does not imply end of file. The application does not block in this case as it might with `CFile`, and it can continue reading messages from the buffer until the buffer is empty. The [CArchive::IsBufferEmpty](../../mfc/reference/carchive-class.md#carchive__isbufferempty) function is useful for monitoring the state of the archive's buffer in such a case.  
+ With `CSocketFile`, however, data is message based; the buffer can contain multiple messages, so receiving fewer than the number of bytes requested does not imply end of file. The application does not block in this case as it might with `CFile`, and it can continue reading messages from the buffer until the buffer is empty. The [CArchive::IsBufferEmpty](../../mfc/reference/carchive-class.md#isbufferempty) function is useful for monitoring the state of the archive's buffer in such a case.  
   
  For more information on the use of `CSocketFile`, see the articles [Windows Sockets: Using Sockets with Archives](../../mfc/windows-sockets-using-sockets-with-archives.md) and [Windows Sockets: Example of Sockets Using Archives](../../mfc/windows-sockets-example-of-sockets-using-archives.md).  
   

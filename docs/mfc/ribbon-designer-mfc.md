@@ -36,9 +36,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Ribbon Designer (MFC)
-The Ribbon Designer lets you create and customize ribbons in MFC applications. A ribbon is a user interface (UI) element that organizes commands into logical groups. These groups appear on separate tabs in a strip across the top of the window. The ribbon replaces the menu bar and toolbars. A ribbon can significantly improve application usability. For more information, see [Ribbons](http://go.microsoft.com/fwlink/LinkId=129233). The following illustration shows a ribbon.  
+The Ribbon Designer lets you create and customize ribbons in MFC applications. A ribbon is a user interface (UI) element that organizes commands into logical groups. These groups appear on separate tabs in a strip across the top of the window. The ribbon replaces the menu bar and toolbars. A ribbon can significantly improve application usability. For more information, see [Ribbons](http://go.microsoft.com/fwlink/linkid=129233). The following illustration shows a ribbon.  
   
- ![MFC Ribbon Resource Control](../mfc/media/ribbon_no_callouts.png "Ribbon_No_Callouts")  
+ ![MFC Ribbon Resource Control](../mfc/media/ribbon_no_callouts.png "ribbon_no_callouts")  
   
  In earlier versions of Visual Studio, ribbons had to be created by writing code that uses the MFC ribbon classes such as [CMFCRibbonBar Class](../mfc/reference/cmfcribbonbar-class.md). In [!INCLUDE[vs_dev10_long](../build/includes/vs_dev10_long_md.md)], the ribbon designer provides an alternative method for building ribbons. First, create and customize a ribbon as a resource. Then load the ribbon resource from code in the MFC application. You can even use ribbon resources and MFC ribbon classes together. For example, you can create a ribbon resource, and then programmatically add more elements to it at runtime by using code.  
   
@@ -69,7 +69,7 @@ The Ribbon Designer lets you create and customize ribbons in MFC applications. A
  </ID> …  
  ```  
   
- To use the ribbon resource in your MFC application, load the resource by calling [CMFCRibbonBar::LoadFromResource](../mfc/reference/cmfcribbonbar-class.md#cmfcribbonbar__loadfromresource).  
+ To use the ribbon resource in your MFC application, load the resource by calling [CMFCRibbonBar::LoadFromResource](../mfc/reference/cmfcribbonbar-class.md#loadfromresource).  
   
 ## Creating a Ribbon By Using the Ribbon Designer  
  These are the two ways to add a ribbon resource to your MFC project:  
@@ -88,7 +88,7 @@ The Ribbon Designer lets you create and customize ribbons in MFC applications. A
   
  The following illustration shows the various components in the ribbon designer.  
   
- ![MFC Ribbon Designer](../mfc/media/ribbon_designer.png "Ribbon_Designer")  
+ ![MFC Ribbon Designer](../mfc/media/ribbon_designer.png "ribbon_designer")  
   
 - **Toolbox:** Contains controls that can be dragged to the designer surface.  
   
@@ -111,7 +111,7 @@ The Ribbon Designer lets you create and customize ribbons in MFC applications. A
 - [How to: Load a Ribbon Resource from an MFC Application](../mfc/how-to-load-a-ribbon-resource-from-an-mfc-application.md)  
   
 ## Definitions of Ribbon Elements  
- ![MFC Ribbon](../mfc/media/ribbon.png "Ribbon")  
+ ![MFC Ribbon](../mfc/media/ribbon.png "ribbon")  
   
 - **Application button:** The button that appears on the upper-left corner of a ribbon. The Application button replaces the File menu and is visible even when the ribbon is minimized. When the button is clicked, a menu that has a list of commands is displayed.  
   
@@ -123,7 +123,7 @@ The Ribbon Designer lets you create and customize ribbons in MFC applications. A
   
 - **Panel:** An area of the ribbon bar that displays a group of related controls. Every ribbon category contains one or more ribbon panels.  
   
-- **Ribbon elements:** Controls in the panels, for example, buttons and combo boxes. To see the various controls that can be hosted on a ribbon, see [RibbonGadgets Sample: Ribbon Gadgets Application](../top/visual-cpp-samples.md).  
+- **Ribbon elements:** Controls in the panels, for example, buttons and combo boxes. To see the various controls that can be hosted on a ribbon, see [RibbonGadgets Sample: Ribbon Gadgets Application](../visual-cpp-samples.md).  
   
 ## See Also  
  [User Interface Elements](../mfc/user-interface-elements-mfc.md)   

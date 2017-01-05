@@ -1,5 +1,5 @@
 ---
-title: "How to: Convert from a .NET Collection to a STL-CLR Container | Microsoft Docs"
+title: "How to: Convert from a .NET Collection to a STL/CLR Container | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

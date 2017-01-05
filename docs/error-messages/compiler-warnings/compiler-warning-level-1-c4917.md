@@ -37,13 +37,14 @@ translation.priority.ht:
 # Compiler Warning (level 1) C4917
 'declarator' : a GUID can only be associated with a class, interface or namespace  
   
- A user-defined structure other than [class](../../cpp/class-cpp.md), [interface](../../cpp/interface.md), or [namespace](../../misc/namespace-declaration.md) cannot have a GUID.  
+A user-defined structure other than [class](../../cpp/class-cpp.md), [interface](../../cpp/interface.md), or [namespace](../../cpp/namespaces-cpp.md) cannot have a GUID.  
   
- This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.  
+This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.  
   
- The following code sample generates C4917:  
+## Example  
+The following code sample generates C4917:  
   
-```  
+```cpp  
 // C4917.cpp  
 // compile with: /W1  
 #pragma warning(default : 4917)  

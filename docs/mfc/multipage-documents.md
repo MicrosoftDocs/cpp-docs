@@ -86,7 +86,7 @@ This article describes the Windows printing protocol and explains how to print d
   
  The following figure illustrates the steps involved in the printing process and shows where each of `CView`'s printing member functions are called. The rest of this article explains most of these steps in more detail. Additional parts of the printing process are described in the article [Allocating GDI Resources](../mfc/allocating-gdi-resources.md).  
   
- ![Printing loop process](../mfc/media/vc37c71.gif "vc37C71")  
+ ![Printing loop process](../mfc/media/vc37c71.gif "vc37c71")  
 The Printing Loop  
   
 ##  <a name="_core_pagination"></a> Pagination  
@@ -106,7 +106,7 @@ The Printing Loop
   
  At the beginning of the printing process, the framework calls the view's [OnPreparePrinting](../mfc/reference/cview-class.md#onprepareprinting) member function, passing a pointer to a `CPrintInfo` structure. The Application Wizard provides an implementation of `OnPreparePrinting` that calls [DoPreparePrinting](../mfc/reference/cview-class.md#doprepareprinting), another member function of `CView`. `DoPreparePrinting` is the function that displays the Print dialog box and creates a printer device context.  
   
- At this point the application doesn't know how many pages are in the document. It uses the default values 1 and 0xFFFF for the numbers of the first and last page of the document. If you know how many pages your document has, override `OnPreparePrinting` and call [SetMaxPage]--brokenlink--(../Topic/CPrintInfo%20Class.md#setmaxpage) for the `CPrintInfo` structure before you send it to `DoPreparePrinting`. This lets you specify the length of your document.  
+ At this point the application doesn't know how many pages are in the document. It uses the default values 1 and 0xFFFF for the numbers of the first and last page of the document. If you know how many pages your document has, override `OnPreparePrinting` and call [SetMaxPage]--brokenlink--(reference/cprintinfo-class.md#setmaxpage) for the `CPrintInfo` structure before you send it to `DoPreparePrinting`. This lets you specify the length of your document.  
   
  `DoPreparePrinting` then displays the Print dialog box. When it returns, the `CPrintInfo` structure contains the values specified by the user. If the user wishes to print only a selected range of pages, he or she can specify the starting and ending page numbers in the Print dialog box. The framework retrieves these values using the `GetFromPage` and `GetToPage` functions of [CPrintInfo](../mfc/reference/cprintinfo-structure.md). If the user doesn't specify a page range, the framework calls `GetMinPage` and `GetMaxPage` and uses the values returned to print the entire document.  
   

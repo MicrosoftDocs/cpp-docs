@@ -54,28 +54,28 @@ class CAtlWinModule : public _ATL_WIN_MODULE
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlWinModule::CAtlWinModule](#catlwinmodule__catlwinmodule)|The constructor.|  
-|[CAtlWinModule::~CAtlWinModule](#catlwinmodule___dtorcatlwinmodule)|The destructor.|  
+|[CAtlWinModule::CAtlWinModule](#catlwinmodule)|The constructor.|  
+|[CAtlWinModule::~CAtlWinModule](#dtor)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlWinModule::AddCreateWndData](#catlwinmodule__addcreatewnddata)|Adds a data object.|  
-|[CAtlWinModule::ExtractCreateWndData](#catlwinmodule__extractcreatewnddata)|Returns a pointer to the window module data object.|  
+|[CAtlWinModule::AddCreateWndData](#addcreatewnddata)|Adds a data object.|  
+|[CAtlWinModule::ExtractCreateWndData](#extractcreatewnddata)|Returns a pointer to the window module data object.|  
   
 ## Remarks  
  This class provides support for all ATL classes which require windowing features.  
   
 ## Inheritance Hierarchy  
- [_ATL_WIN_MODULE](../Topic/_ATL_WIN_MODULE.md)  
+ [_ATL_WIN_MODULE](atl-typedefs.md#_atl_win_module)  
   
  `CAtlWinModule`  
   
 ## Requirements  
  **Header:** atlbase.h  
   
-##  <a name="catlwinmodule__addcreatewnddata"></a>  CAtlWinModule::AddCreateWndData  
+##  <a name="addcreatewnddata"></a>  CAtlWinModule::AddCreateWndData  
  This method initializes and adds an `_AtlCreateWndData` structure.  
   
 ```
@@ -92,9 +92,9 @@ void AddCreateWndData(
  Pointer to an object's **this** pointer.  
   
 ### Remarks  
- This method calls [AtlWinModuleAddCreateWndData](../Topic/AtlWinModuleAddCreateWndData.md) which initializes an [_AtlCreateWndData](../../atl/reference/atlcreatewnddata-structure.md) structure. This structure will store the **this** pointer, used to obtain the class instance in window procedures.  
+ This method calls [AtlWinModuleAddCreateWndData](http://msdn.microsoft.com/library/8463a6ed-07ea-4aad-92ec-ded681601b32) which initializes an [_AtlCreateWndData](../../atl/reference/atlcreatewnddata-structure.md) structure. This structure will store the **this** pointer, used to obtain the class instance in window procedures.  
   
-##  <a name="catlwinmodule__catlwinmodule"></a>  CAtlWinModule::CAtlWinModule  
+##  <a name="catlwinmodule"></a>  CAtlWinModule::CAtlWinModule  
  The constructor.  
   
 ```
@@ -104,7 +104,7 @@ CAtlWinModule();
 ### Remarks  
  If initialization fails, an **EXCEPTION_NONCONTINUABLE** exception is raised.  
   
-##  <a name="catlwinmodule___dtorcatlwinmodule"></a>  CAtlWinModule::~CAtlWinModule  
+##  <a name="dtor"></a>  CAtlWinModule::~CAtlWinModule  
  The destructor.  
   
 ```
@@ -114,7 +114,7 @@ CAtlWinModule();
 ### Remarks  
  Frees all allocated resources.  
   
-##  <a name="catlwinmodule__extractcreatewnddata"></a>  CAtlWinModule::ExtractCreateWndData  
+##  <a name="extractcreatewnddata"></a>  CAtlWinModule::ExtractCreateWndData  
  This method returns a pointer to an `_AtlCreateWndData` structure.  
   
 ```
@@ -122,9 +122,9 @@ void* ExtractCreateWndData();
 ```  
   
 ### Return Value  
- Returns a pointer to the `_AtlCreateWndData` structure previously added with [CAtlWinModule::AddCreateWndData](#catlwinmodule__addcreatewnddata), or NULL if no object is available.  
+ Returns a pointer to the `_AtlCreateWndData` structure previously added with [CAtlWinModule::AddCreateWndData](#addcreatewnddata), or NULL if no object is available.  
   
 ## See Also  
- [_ATL_WIN_MODULE](../Topic/_ATL_WIN_MODULE.md)   
+ [_ATL_WIN_MODULE](atl-typedefs.md#_atl_win_module)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Module Classes](../../atl/atl-module-classes.md)

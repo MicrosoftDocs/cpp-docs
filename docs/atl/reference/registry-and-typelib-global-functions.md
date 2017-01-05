@@ -52,7 +52,33 @@ These functions provide support for loading and registering a type library.
 |-|-|  
 |[AtlGetPerUserRegistration](#atlgetperuserregistration)|Retrieves whether the application redirects registry access to the **HKEY_CURRENT_USER** ( **HKCU**) node.|  
 |[AtlSetPerUserRegistration](#atlsetperuserregistration)|Sets whether the application redirects registry access to the **HKEY_CURRENT_USER** ( **HKCU**) node.|  
+
+
+## <a name="atlgetperuserregistration"></a> AtlGetPerUserRegistration
+Use this function to determine whether the application redirects registry access to the **HKEY_CURRENT_USER** (**HKCU**) node.  
   
+## Syntax  
+  
+```  
+ATLINLINE ATLAPI AtlGetPerUserRegistration(  
+   bool* pEnabled  
+);  
+```  
+  
+### Parameters  
+ [out] `pEnabled`  
+ `TRUE` indicates that the registry information is directed to the **HKCU** node; `FALSE` indicates that the application writes registry information to the default node. The default node is **HKEY_CLASSES_ROOT** (**HKCR**).  
+  
+### Return Value  
+ `S_OK` if the method is successful, otherwise the `HRESULT` error code if an error occurs.  
+  
+### Remarks  
+ Registry redirection is not enabled by default. If you enable this option, registry access is redirected to **HKEY_CURRENT_USER\Software\Classes**.  
+  
+ The redirection is not global. Only the MFC and ATL frameworks are affected by this registry redirection.  
+  
+
+
 ##  <a name="atlregistertypelib"></a>  AtlRegisterTypeLib  
  This function is called to register a type library.  
   
@@ -72,8 +98,32 @@ ATLAPI AtlRegisterTypeLib(HINSTANCE hInstTypeLib, LPCOLESTR lpszIndex);
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This helper function is utilized by [AtlComModuleUnregisterServer](#atlcomunregisterserver) and [CAtlComModule::RegisterTypeLib](../../atl/reference/catlcommodule-class.md#registertypelib).  
+ This helper function is utilized by [AtlComModuleUnregisterServer](server-registration-global-functions.md#atlcommoduleunregisterserver) and [CAtlComModule::RegisterTypeLib](../../atl/reference/catlcommodule-class.md#registertypelib).  
   
+## <a name="atlsetperuserregistration"></a> AtlSetPerUserRegistration
+Sets whether the application redirects registry access to the **HKEY_CURRENT_USER** (**HKCU**) node.  
+  
+## Syntax  
+  
+```  
+ATLINLINE ATLAPI AtlSetPerUserRegistration(  
+   bool bEnable  
+);  
+```  
+  
+### Parameters  
+ [in] `bEnable`  
+ `TRUE` indicates that the registry information is directed to the **HKCU** node; `FALSE` indicates that the application writes registry information to the default node. The default node is **HKEY_CLASSES_ROOT** (**HKCR**).  
+  
+### Return Value  
+ `S_OK` if the method is successful, otherwise the `HRESULT` error code if an error occurs.  
+  
+### Remarks  
+ Registry redirection is not enabled by default. If you enable this option, registry access is redirected to **HKEY_CURRENT_USER\Software\Classes**.  
+  
+ The redirection is not global. Only the MFC and ATL frameworks are affected by this registry redirection.  
+  
+
 ##  <a name="atlunregistertypelib"></a>  AtlUnRegisterTypeLib  
  This function is called to unregister a type library.  
   
@@ -164,7 +214,7 @@ HRESULT RegistryDataExchange(
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- The macros [BEGIN_RDX_MAP](../Topic/BEGIN_RDX_MAP.md) and [END_RDX_MAP](../Topic/END_RDX_MAP.md) expand to a function that calls `RegistryDataExchange`.  
+ The macros [BEGIN_RDX_MAP](http://msdn.microsoft.com/library/95bbba6a-d550-4e36-8e6e-1c619d9e660d) and [END_RDX_MAP](http://msdn.microsoft.com/library/77efa3bd-ded7-430c-b5b4-2131a2d7e71d) expand to a function that calls `RegistryDataExchange`.  
   
  The possible enum values that indicate the operation the function should perform are shown in the following table:  
   
@@ -179,12 +229,12 @@ HRESULT RegistryDataExchange(
   
 |||  
 |-|-|  
-|[BEGIN_RDX_MAP](../Topic/BEGIN_RDX_MAP.md)|Marks the beginning of the Registry Data Exchange map.|  
-|[END_RDX_MAP](../Topic/END_RDX_MAP.md)|Marks the end of the Registry Data Exchange map.|  
-|[RDX_BINARY](../Topic/RDX_BINARY.md)|Associates the specified registry entry with a specified member variable of type BYTE.|  
-|[RDX_CSTRING_TEXT](../Topic/RDX_CSTRING_TEXT.md)|Associates the specified registry entry with a specified member variable of type CString.|  
-|[RDX_DWORD](../Topic/RDX_DWORD.md)|Associates the specified registry entry with a specified member variable of type DWORD.|  
-|[RDX_TEXT](../Topic/RDX_TEXT.md)|Associates the specified registry entry with a specified member variable of type TCHAR.|  
+|[BEGIN_RDX_MAP](http://msdn.microsoft.com/library/95bbba6a-d550-4e36-8e6e-1c619d9e660d)|Marks the beginning of the Registry Data Exchange map.|  
+|[END_RDX_MAP](http://msdn.microsoft.com/library/77efa3bd-ded7-430c-b5b4-2131a2d7e71d)|Marks the end of the Registry Data Exchange map.|  
+|[RDX_BINARY](http://msdn.microsoft.com/library/cc872cdb-fe5a-45cd-8ed8-00be54911f2a)|Associates the specified registry entry with a specified member variable of type BYTE.|  
+|[RDX_CSTRING_TEXT](http://msdn.microsoft.com/library/897ac6dc-2700-4818-8327-3a779aa7bc6c)|Associates the specified registry entry with a specified member variable of type CString.|  
+|[RDX_DWORD](http://msdn.microsoft.com/library/1e7d4888-284f-4fe7-99de-5f193af19c4d)|Associates the specified registry entry with a specified member variable of type DWORD.|  
+|[RDX_TEXT](http://msdn.microsoft.com/library/47566a2e-f293-4b67-8e1c-fa83a0a0c558)|Associates the specified registry entry with a specified member variable of type TCHAR.|  
   
 ## See Also  
  [Functions](../../atl/reference/atl-functions.md)

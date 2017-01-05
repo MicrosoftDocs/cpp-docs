@@ -50,11 +50,11 @@ By default, the control's drawing code displays a square and the text **PolyCtl*
   
 1.  Add the line `#include <math.h>` to the top of PolyCtl.h. The top of the file should look like this:  
   
-     [!code-cpp[NVC_ATL_Windowing#47](../atl/codesnippet/CPP/changing-the-drawing-code-atl-tutorial-part-4_1.cpp)]  
+     [!code-cpp[NVC_ATL_Windowing#47](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_1.cpp)]  
   
 2.  Once the polygon points are calculated, they will be stored in an array of type `POINT`, so add the array after the definition of `m_nSides` in PolyCtl.h:  
   
-     [!code-cpp[NVC_ATL_Windowing#48](../atl/codesnippet/CPP/changing-the-drawing-code-atl-tutorial-part-4_2.h)]  
+     [!code-cpp[NVC_ATL_Windowing#48](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_2.h)]  
   
 ## Modifying the OnDraw Method  
  Now you should modify the `OnDraw` method in PolyCtl.h. The code you will add creates a new pen and brush with which to draw your polygon, and then calls the `Ellipse` and `Polygon` Win32 API functions to perform the actual drawing.  
@@ -63,7 +63,7 @@ By default, the control's drawing code displays a square and the text **PolyCtl*
   
 1.  Replace the existing `OnDraw` method in PolyCtl.h with the following code:  
   
-     [!code-cpp[NVC_ATL_Windowing#49](../atl/codesnippet/CPP/changing-the-drawing-code-atl-tutorial-part-4_3.cpp)]  
+     [!code-cpp[NVC_ATL_Windowing#49](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_3.cpp)]  
   
 ## Adding a Method to Calculate the Polygon Points  
  Add a method, called `CalcPoints`, that will calculate the coordinates of the points that make up the perimeter of the polygon. These calculations will be based on the RECT variable that is passed into the function.  
@@ -72,15 +72,15 @@ By default, the control's drawing code displays a square and the text **PolyCtl*
   
 1.  Add the declaration of `CalcPoints` to the `IPolyCtl` public section of the `CPolyCtl` class in PolyCtl.h:  
   
-     [!code-cpp[NVC_ATL_Windowing#50](../atl/codesnippet/CPP/changing-the-drawing-code-atl-tutorial-part-4_4.h)]  
+     [!code-cpp[NVC_ATL_Windowing#50](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_4.h)]  
   
      The last part of the public section of the `CPolyCtl` class will look like this:  
   
-     [!code-cpp[NVC_ATL_Windowing#51](../atl/codesnippet/CPP/changing-the-drawing-code-atl-tutorial-part-4_5.h)]  
+     [!code-cpp[NVC_ATL_Windowing#51](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_5.h)]  
   
 2.  Add this implementation of the `CalcPoints` function to the end of PolyCtl.cpp:  
   
-     [!code-cpp[NVC_ATL_Windowing#52](../atl/codesnippet/CPP/changing-the-drawing-code-atl-tutorial-part-4_6.cpp)]  
+     [!code-cpp[NVC_ATL_Windowing#52](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_6.cpp)]  
   
 ## Initializing the Fill Color  
  Initialize `m_clrFillColor` with a default color.  
@@ -89,18 +89,18 @@ By default, the control's drawing code displays a square and the text **PolyCtl*
   
 1.  Use green as the default color by adding this line to the `CPolyCtl` constructor in PolyCtl.h:  
   
-     [!code-cpp[NVC_ATL_Windowing#53](../atl/codesnippet/CPP/changing-the-drawing-code-atl-tutorial-part-4_7.h)]  
+     [!code-cpp[NVC_ATL_Windowing#53](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_7.h)]  
   
  The constructor now looks like this:  
   
- [!code-cpp[NVC_ATL_Windowing#54](../atl/codesnippet/CPP/changing-the-drawing-code-atl-tutorial-part-4_8.h)]  
+ [!code-cpp[NVC_ATL_Windowing#54](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_8.h)]  
   
 ## Building and Testing the Control  
  Rebuild the control. Make sure the PolyCtl.htm file is closed if it is still open, and then click **Build Polygon** on the **Build** menu. You could view the control once again from the PolyCtl.htm page, but this time use the ActiveX Control Test Container.  
   
 #### To use the ActiveX Control Test Container  
   
-1.  Build and start the ActiveX Control Test Container. For more information, see [TSTCON Sample: ActiveX Control Test Container](../top/visual-cpp-samples.md).  
+1.  Build and start the ActiveX Control Test Container. For more information, see [TSTCON Sample: ActiveX Control Test Container](../visual-cpp-samples.md).  
   
 2.  In Test Container, on the **Edit** menu, click **Insert New Control**.  
   
@@ -126,7 +126,7 @@ By default, the control's drawing code displays a square and the text **PolyCtl*
   
 1.  Update PolyCtl.cpp by adding the call to `FireViewChange` to the `put_Sides` method. When you have finished, the `put_Sides` method should look like this:  
   
-     [!code-cpp[NVC_ATL_Windowing#55](../atl/codesnippet/CPP/changing-the-drawing-code-atl-tutorial-part-4_9.cpp)]  
+     [!code-cpp[NVC_ATL_Windowing#55](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_9.cpp)]  
   
  After adding `FireViewChange`, rebuild and try the control again in the ActiveX Control Test Container. This time when you change the number of sides and click `Invoke`, you should see the control change immediately.  
   

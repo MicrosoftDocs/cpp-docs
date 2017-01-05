@@ -78,7 +78,7 @@ In this step, you will add a `ClickIn` and a `ClickOut` event to your ATL contro
   
  The `_IPolyCtlEvents` dispinterface in your Polygon.idl file should now look like this:  
   
- [!code-cpp[NVC_ATL_Windowing#56](../atl/codesnippet/CPP/adding-an-event-atl-tutorial-part-5_1.idl)]  
+ [!code-cpp[NVC_ATL_Windowing#56](../atl/codesnippet/cpp/adding-an-event-atl-tutorial-part-5_1.idl)]  
   
  The `ClickIn` and `ClickOut` methods take the x and y coordinates of the clicked point as parameters.  
   
@@ -130,7 +130,7 @@ In this step, you will add a `ClickIn` and a `ClickOut` event to your ATL contro
   
 1.  Change the code which comprises the `OnLButtonDown` method in PolyCtl.cpp (deleting any code placed by the wizard) so that it looks like this:  
   
-     [!code-cpp[NVC_ATL_Windowing#57](../atl/codesnippet/CPP/adding-an-event-atl-tutorial-part-5_2.cpp)]  
+     [!code-cpp[NVC_ATL_Windowing#57](../atl/codesnippet/cpp/adding-an-event-atl-tutorial-part-5_2.cpp)]  
   
  This code makes use of the points calculated in the `OnDraw` function to create a region that detects the user's mouse clicks with the call to `PtInRegion`.  
   

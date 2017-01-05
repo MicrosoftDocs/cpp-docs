@@ -37,9 +37,9 @@ translation.priority.ht:
 # Compiler Error C3265
 cannot declare a managed 'managed construct' in an unmanaged 'unmanaged construct'  
   
- You cannot include a managed object in an unmanaged context.  
+You cannot include a managed object in an unmanaged context.  
   
- The following sample reproduces C3265:  
+The following sample reproduces C3265:  
   
 ```  
 // C3265_2.cpp  
@@ -58,47 +58,3 @@ class B
    // gcroot<A^> a;  
 };  
 ```  
-  
- The following sample reproduces C3265:  
-  
-```  
-// C3265.cpp  
-// compile with: /clr:oldSyntax /LD  
-#using <mscorlib.dll>  
-__gc class A { };  
-  
-__nogc class B  
-// try the following line instead  
-// __gc class B   
-{  
-   A *a;   // C3265  
-};  
-```  
-  
- C3265 can also occur if you embed a managed pointer directly inside an unmanaged class. To fix this error, use `gcroot`:  
-  
-```  
-// C3265b.cpp  
-// compile with: /clr:oldSyntax  
-#include <vcclr.h>  
-#using <mscorlib.dll>  
-  
-namespace TestNS {  
-   __gc public class Test{};  
-}  
-  
-template<class T>  
-struct Container {  
-  T* m_px;   // C3265  
-};  
-__gc public class ClassA {  
-public:  
-  ClassA (){}  
-   ~ClassA(){}  
-  
-private:  
-   Container<TestNS::Test*>  vctTest;  
-   // try the following line instead  
-   Container<gcroot<TestNS::Test* > > vctTest2;  
-};  
-```

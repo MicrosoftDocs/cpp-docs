@@ -54,7 +54,7 @@ This topic applies to the MFC ODBC classes.
  Class `CRecordset` provides the **Move** member functions for scrolling within a recordset. These functions move the current record by rowsets. If you have implemented bulk row fetching, a **Move** operation repositions the recordset by the size of the rowset. If you have not implemented bulk row fetching, a call to a **Move** function repositions the recordset by one record each time. For more information about bulk row fetching, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
   
 > [!NOTE]
->  When moving through a recordset, deleted records might not be skipped. For more information, see the [IsDeleted](../Topic/CRecordset::IsDeleted.md) member function.  
+>  When moving through a recordset, deleted records might not be skipped. For more information, see the [IsDeleted](../../mfc/reference/crecordset-class.md#isdeleted) member function.  
   
  In addition to the **Move** functions, `CRecordset` provides member functions for checking whether you have scrolled past the end or ahead of the beginning of your recordset.  
   
@@ -62,21 +62,21 @@ This topic applies to the MFC ODBC classes.
   
 #### To scroll  
   
-1.  Forward one record or one rowset: call the [MoveNext](../Topic/CRecordset::MoveNext.md) member function.  
+1.  Forward one record or one rowset: call the [MoveNext](../../mfc/reference/crecordset-class.md#movenext) member function.  
   
-2.  Backward one record or one rowset: call the [MovePrev](../Topic/CRecordset::MovePrev.md) member function.  
+2.  Backward one record or one rowset: call the [MovePrev](../../mfc/reference/crecordset-class.md#moveprev) member function.  
   
-3.  To the first record in the recordset: call the [MoveFirst](../Topic/CRecordset::MoveFirst.md) member function.  
+3.  To the first record in the recordset: call the [MoveFirst](../../mfc/reference/crecordset-class.md#movefirst) member function.  
   
-4.  To the last record in the recordset or to the last rowset: call the [MoveLast](../Topic/CRecordset::MoveLast.md) member function.  
+4.  To the last record in the recordset or to the last rowset: call the [MoveLast](../../mfc/reference/crecordset-class.md#movelast) member function.  
   
-5.  *N* records relative to the current position: call the [Move](../Topic/CRecordset::Move.md) member function.  
+5.  *N* records relative to the current position: call the [Move](../../mfc/reference/crecordset-class.md#move) member function.  
   
 #### To test for the end or the beginning of the recordset  
   
-1.  Have you scrolled past the last record? Call the [IsEOF](../Topic/CRecordset::IsEOF.md) member function.  
+1.  Have you scrolled past the last record? Call the [IsEOF](../../mfc/reference/crecordset-class.md#iseof) member function.  
   
-2.  Have you scrolled ahead of the first record (moving backward)? Call the [IsBOF](../Topic/CRecordset::IsBOF.md) member function.  
+2.  Have you scrolled ahead of the first record (moving backward)? Call the [IsBOF](../../mfc/reference/crecordset-class.md#isbof) member function.  
   
  The following code example uses `IsBOF` and `IsEOF` to detect the limits of a recordset when scrolling in either direction.  
   
@@ -114,13 +114,13 @@ rsCustSet.MoveFirst( );
  As originally designed, SQL provided only forward scrolling, but ODBC extends scrolling capabilities. The available level of support for scrolling depends on the ODBC drivers your application works with, your driver's ODBC API conformance level, and whether the ODBC Cursor Library is loaded into memory. For more information, see [ODBC](../../data/odbc/odbc-basics.md) and [ODBC: The ODBC Cursor Library](../../data/odbc/odbc-the-odbc-cursor-library.md).  
   
 > [!TIP]
->  You can control whether the cursor library is used. See the `bUseCursorLib` and `dwOptions` parameters to [CDatabase::Open](../Topic/CDatabase::Open.md).  
+>  You can control whether the cursor library is used. See the `bUseCursorLib` and `dwOptions` parameters to [CDatabase::Open](../../mfc/reference/cdatabase-class.md#open).  
   
 > [!NOTE]
 >  Unlike the MFC DAO classes, the MFC ODBC classes do not provide a set of **Find** functions for locating the next (or previous) record that meets specified criteria.  
   
 ## See Also  
  [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)   
- [CRecordset::CanScroll](../Topic/CRecordset::CanScroll.md)   
- [CRecordset::CheckRowsetError](../Topic/CRecordset::CheckRowsetError.md)   
+ [CRecordset::CanScroll](../../mfc/reference/crecordset-class.md#canscroll)   
+ [CRecordset::CheckRowsetError](../../mfc/reference/crecordset-class.md#checkrowseterror)   
  [Recordset: Filtering Records (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md)

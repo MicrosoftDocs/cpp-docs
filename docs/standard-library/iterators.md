@@ -12,7 +12,7 @@ dev_langs:
   - "C++"
 helpviewer_keywords: 
   - "iterator conventions"
-  - "Standard C++ Library, iterator conventions"
+  - "C++ Standard Library, iterator conventions"
 ms.assetid: 2f746be7-b37d-4bfc-bf05-be4336ca982f
 caps.latest.revision: 12
 author: "corob-msft"
@@ -34,11 +34,11 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Iterators
-An iterator is an object that can iterate over elements in an STL container and provide access to individual elements. The STL containers all provide iterators so that algorithms can access their elements in a standard way without having to be concerned with the type of container the elements are stored in.  
+An iterator is an object that can iterate over elements in a C++ Standard Library container and provide access to individual elements. The C++ Standard Library containers all provide iterators so that algorithms can access their elements in a standard way without having to be concerned with the type of container the elements are stored in.  
   
  You can use iterators explicitly using member and global functions such as begin() and end() and operators such as ++ and -- to move forward or backward. You can also use iterators implicitly with a range-for loop or (for some iterator types) the subscript operator [].  
   
- In the STL, the beginning of a sequence or range is the first element. The end of a sequence or range is always defined as one past the last element. The global functions begin and end return iterators to a specified container. The typical explicit iterator loop over all elements in a container looks like this:  
+ In the C++ Standard Library, the beginning of a sequence or range is the first element. The end of a sequence or range is always defined as one past the last element. The global functions begin and end return iterators to a specified container. The typical explicit iterator loop over all elements in a container looks like this:  
   
 ```  
  
@@ -110,7 +110,7 @@ forward iterator
   
  An iterator `Iterator` other than an object pointer must also define the member types required by the specialization `iterator_traits<Iterator>`. Note that these requirements can be met by deriving `Iterator` from the public base class [iterator](../standard-library/iterator-struct.md).  
   
- It is important to understand the promises and limitations of each iterator category to see how iterators are used by containers and algorithms in the STL.  
+ It is important to understand the promises and limitations of each iterator category to see how iterators are used by containers and algorithms in the C++ Standard Library.  
   
 > [!NOTE]
 >  You can avoid using iterators explicitly by using range-for loops. For more information, see [Loops (Modern C++)](http://msdn.microsoft.com/en-us/b1b2779c-750e-4576-a514-a84178eae9da).  
@@ -118,6 +118,6 @@ forward iterator
  [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] now offers checked iterators and debug iterators to ensure that you do not overwrite the bounds of your container. For more information, see [Checked Iterators](../standard-library/checked-iterators.md) and [Debug Iterator Support](../standard-library/debug-iterator-support.md).  
   
 ## See Also  
- [Standard Template Library](../misc/standard-template-library.md)   
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 

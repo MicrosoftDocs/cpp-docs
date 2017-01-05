@@ -52,7 +52,7 @@ class back_insert_iterator;
  The type of container into the back of which elements are to be inserted by a `back_insert_iterator`.  
   
 ## Remarks  
- The container must satisfy the requirements for a back insertion sequence where is it possible to insert elements at the end of the sequence in amortized constant time. STL sequence containers defined by the [deque Class](../standard-library/deque-class.md), [list Class](../standard-library/list-class.md) and [vector Class](../standard-library/vector-class.md) provide the needed `push_back` member function and satisfy these requirements. These three containers as well as strings may each be adapted to use with `back_insert_iterator`s. A `back_insert_iterator` must always be initialized with its container.  
+ The container must satisfy the requirements for a back insertion sequence where is it possible to insert elements at the end of the sequence in amortized constant time. C++ Standard Library sequence containers defined by the [deque Class](../standard-library/deque-class.md), [list Class](../standard-library/list-class.md) and [vector Class](../standard-library/vector-class.md) provide the needed `push_back` member function and satisfy these requirements. These three containers as well as strings may each be adapted to use with `back_insert_iterator`s. A `back_insert_iterator` must always be initialized with its container.  
   
 ### Constructors  
   
@@ -423,5 +423,5 @@ The last element in the vector vec is: 3.
 ## See Also  
  [\<iterator>](../standard-library/iterator.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 

@@ -55,7 +55,7 @@ To implement exception handling in C++, you use `try`, `throw`, and `catch` expr
   
  First, use a `try` block to enclose one or more statements that might throw an exception.  
   
- A `throw` expression signals that an exceptional condition—often, an error—has occurred in a `try` block. You can use an object of any type as the operand of a `throw` expression. Typically, this object is used to communicate information about the error. In most cases, we recommend that you use the [std::exception](../standard-library/exception-class1.md) class or one of the derived classes that are defined in the standard library. If one of those is not appropriate, we recommend that you derive your own exception class from  `std::exception`.  
+ A `throw` expression signals that an exceptional condition—often, an error—has occurred in a `try` block. You can use an object of any type as the operand of a `throw` expression. Typically, this object is used to communicate information about the error. In most cases, we recommend that you use the [std::exception](../standard-library/exception-class.md) class or one of the derived classes that are defined in the standard library. If one of those is not appropriate, we recommend that you derive your own exception class from  `std::exception`.  
   
  To handle exceptions that may be thrown, implement one or more `catch` blocks immediately following a `try` block. Each `catch` block specifies the type of exception it can handle.  
   

@@ -104,7 +104,7 @@ typedef Container container_type;
 ```  
   
 ### Remarks  
- The type is a synonym for the template parameter `Container`. All three STL sequence container classes — the vector class, list class, and the default class deque — meet the requirements to be used as the base container for a stack object. User-defined types satisfying these requirements may also be used.  
+ The type is a synonym for the template parameter `Container`. All three C++ Standard Library sequence container classes — the vector class, list class, and the default class deque — meet the requirements to be used as the base container for a stack object. User-defined types satisfying these requirements may also be used.  
   
  For more information on `Container`, see the Remarks section of the [stack Class](../standard-library/stack-class.md) topic.  
   
@@ -447,5 +447,5 @@ The element at the top of the stack is 69.
   
 ## See Also  
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 

@@ -68,17 +68,17 @@ To use a property sheet in your application, complete the following steps:
   
     -   Construct one object for each `CPropertyPage`-derived class that you created earlier in this process.  
   
-    -   Call [CPropertySheet::AddPage](../mfc/reference/cpropertysheet-class.md#cpropertysheet__addpage) for each page.  
+    -   Call [CPropertySheet::AddPage](../mfc/reference/cpropertysheet-class.md#addpage) for each page.  
   
      Typically, the object that creates the `CPropertySheet` also creates the `CPropertyPage` objects in this step. However, if you implement a `CPropertySheet`-derived class, you can embed the `CPropertyPage` objects in the `CPropertySheet` object and call `AddPage` for each page from the `CPropertySheet`-derived class constructor. `AddPage` adds the `CPropertyPage` object to the property sheet's list of pages but does not actually create the window for that page. Therefore, it is not necessary to wait until creation of the property sheet window to call `AddPage`; you can call `AddPage` from the property sheet's constructor.  
   
-     By default, if a property sheet has more tabs than will fit in a single row of the property sheet, the tabs will stack in multiple rows. To disable stacking, call [CPropertySheet::EnableStackedTabs](../mfc/reference/cpropertysheet-class.md#cpropertysheet__enablestackedtabs) with the parameter set to **FALSE**. You must call `EnableStackedTabs` when you create the property sheet.  
+     By default, if a property sheet has more tabs than will fit in a single row of the property sheet, the tabs will stack in multiple rows. To disable stacking, call [CPropertySheet::EnableStackedTabs](../mfc/reference/cpropertysheet-class.md#enablestackedtabs) with the parameter set to **FALSE**. You must call `EnableStackedTabs` when you create the property sheet.  
   
-6.  Call [CPropertySheet::DoModal](../mfc/reference/cpropertysheet-class.md#cpropertysheet__domodal) or [Create](../mfc/reference/cpropertysheet-class.md#create) to display the property sheet. Call `DoModal` to create a property sheet as a modal dialog box. Call **Create** to create the property sheet as a modeless dialog box.  
+6.  Call [CPropertySheet::DoModal](../mfc/reference/cpropertysheet-class.md#domodal) or [Create](../mfc/reference/cpropertysheet-class.md#create) to display the property sheet. Call `DoModal` to create a property sheet as a modal dialog box. Call **Create** to create the property sheet as a modeless dialog box.  
   
 7.  Exchange data between property pages and the owner of the property sheet. This is explained in the article [Exchanging Data](../mfc/exchanging-data.md).  
   
- For an example of how to use property sheets, see the MFC General sample [PROPDLG](../top/visual-cpp-samples.md).  
+ For an example of how to use property sheets, see the MFC General sample [PROPDLG](../visual-cpp-samples.md).  
   
 ## See Also  
  [Property Sheets](../mfc/property-sheets-mfc.md)

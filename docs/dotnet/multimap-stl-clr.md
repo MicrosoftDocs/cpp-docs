@@ -1,5 +1,5 @@
 ---
-title: "multimap (STL-CLR) | Microsoft Docs"
+title: "multimap (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -124,7 +124,7 @@ template<typename Key,
 |[operator!= (multimap) (STL/CLR)](../dotnet/operator-inequality-multimap-stl-clr.md)|Determines if a `multimap` object is not equal to another `multimap` object.|  
 |[operator< (multimap) (STL/CLR)](../dotnet/operator-less-than-multimap-stl-clr.md)|Determines if a `multimap` object is less than another `multimap` object.|  
 |[operator<= (multimap) (STL/CLR)](../dotnet/operator-less-or-equal-multimap-stl-clr.md)|Determines if a `multimap` object is less than or equal to another `multimap` object.|  
-|[operator== (multimap) (STL/CLR)](../dotnet/operator-equality-multimap-stl-lr.md)|Determines if a `multimap` object is equal to another `multimap` object.|  
+|[operator== (multimap) (STL/CLR)](../dotnet/operator-equality-multimap-stl-clr.md)|Determines if a `multimap` object is equal to another `multimap` object.|  
 |[operator> (multimap) (STL/CLR)](../dotnet/operator-greater-than-multimap-stl-clr.md)|Determines if a `multimap` object is greater than another `multimap` object.|  
 |[operator>= (multimap) (STL/CLR)](../dotnet/operator-greater-or-equal-multimap-stl-clr.md)|Determines if a `multimap` object is greater than or equal to another `multimap` object.|  
   

@@ -49,7 +49,7 @@ translation.priority.ht:
  File that contains the key. Place the string in double quotation marks (" ") if it contains a space.  
   
 ## Remarks  
- The linker inserts the public key into the assembly manifest and then signs the final assembly with the private key. To generate a key file, type [sn -k](../Topic/Sn.exe%20\(Strong%20Name%20Tool\).md) `file` at the command line. A signed assembly is said to have a strong name.  
+ The linker inserts the public key into the assembly manifest and then signs the final assembly with the private key. To generate a key file, type [sn -k](http://msdn.microsoft.com/Library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) `file` at the command line. A signed assembly is said to have a strong name.  
   
  If you compile with [/LN](../../build/reference/ln-create-msil-module.md), the name of the key file is held in the module and incorporated into the assembly that is created when you compile an assembly that includes an explicit reference to the module, via [#using](../../preprocessor/hash-using-directive-cpp.md), or when linking with [/ASSEMBLYMODULE](../../build/reference/assemblymodule-add-a-msil-module-to-the-assembly.md).  
   
@@ -59,7 +59,7 @@ translation.priority.ht:
   
  Note that a key file might contain only the public key.  
   
- See [Creating and Using Strong-Named Assemblies](../Topic/Creating%20and%20Using%20Strong-Named%20Assemblies.md) for more information on signing an assembly.  
+ See [Creating and Using Strong-Named Assemblies](http://msdn.microsoft.com/Library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9) for more information on signing an assembly.  
   
  Other linker options that affect assembly generation are:  
   

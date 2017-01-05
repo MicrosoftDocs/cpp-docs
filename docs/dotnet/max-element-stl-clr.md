@@ -1,5 +1,5 @@
 ---
-title: "max_element (STL-CLR) | Microsoft Docs"
+title: "max_element (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -47,7 +47,7 @@ template<class _FwdIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `max_element`. For more information, see [max_element](../Topic/max_element.md).  
+ This function behaves the same as the C++ Standard Library function `max_element`. For more information, see [max_element](http://msdn.microsoft.com/Library/c25c9018-3a02-45a3-a234-f6576b90cd59).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

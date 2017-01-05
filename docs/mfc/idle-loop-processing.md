@@ -64,9 +64,9 @@ Many applications perform lengthy processing "in the background." Sometimes perf
  For more information about performing idle processing, see [OnIdle](../mfc/reference/cwinthread-class.md#onidle) in the *MFC Reference*.  
   
 ##  <a name="_core_peekmessage_elsewhere_in_your_application"></a> PeekMessage Elsewhere in Your Application  
- Another method for performing idle processing in an application involves embedding a message loop in one of your functions. This message loop is very similar to MFC's main message loop, found in [CWinThread::Run](../mfc/reference/cwinthread-class.md#cwinthread__run). That means such a loop in an application developed with MFC must perform many of the same functions as the main message loop. The following code fragment demonstrates writing a message loop that is compatible with MFC:  
+ Another method for performing idle processing in an application involves embedding a message loop in one of your functions. This message loop is very similar to MFC's main message loop, found in [CWinThread::Run](../mfc/reference/cwinthread-class.md#run). That means such a loop in an application developed with MFC must perform many of the same functions as the main message loop. The following code fragment demonstrates writing a message loop that is compatible with MFC:  
   
- [!code-cpp[NVC_MFCDocView#8](../mfc/codesnippet/CPP/idle-loop-processing_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#8](../mfc/codesnippet/cpp/idle-loop-processing_1.cpp)]  
   
  This code, embedded in a function, loops as long as there is idle processing to do. Within that loop, a nested loop repeatedly calls **PeekMessage**. As long as that call returns a nonzero value, the loop calls `CWinThread::PumpMessage` to perform normal message translation and dispatching. Although `PumpMessage` is undocumented, you can examine its source code in the ThrdCore.Cpp file in the \atlmfc\src\mfc directory of your Visual C++ installation.  
   

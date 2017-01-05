@@ -50,15 +50,15 @@ class CHtmlEditCtrl: public CWnd,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHtmlEditCtrl::CHtmlEditCtrl](#chtmleditctrl__chtmleditctrl)|Constructs a `CHtmlEditCtrl` object.|  
+|[CHtmlEditCtrl::CHtmlEditCtrl](#chtmleditctrl)|Constructs a `CHtmlEditCtrl` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHtmlEditCtrl::Create](#chtmleditctrl__create)|Creates a WebBrowser ActiveX control and attaches it to the `CHtmlEditCtrl` object. This function automatically puts the WebBrowser ActiveX control into edit mode.|  
-|[CHtmlEditCtrl::GetDHtmlDocument](#chtmleditctrl__getdhtmldocument)|Retrieves the [IHTMLDocument2](https://msdn.microsoft.com/library/aa752574.aspx) interface on the document currently loaded in the contained WebBrowser control.|  
-|[CHtmlEditCtrl::GetStartDocument](#chtmleditctrl__getstartdocument)|Retrieves the URL to a default document to load in the contained WebBrowser control.|  
+|[CHtmlEditCtrl::Create](#create)|Creates a WebBrowser ActiveX control and attaches it to the `CHtmlEditCtrl` object. This function automatically puts the WebBrowser ActiveX control into edit mode.|  
+|[CHtmlEditCtrl::GetDHtmlDocument](#getdhtmldocument)|Retrieves the [IHTMLDocument2](https://msdn.microsoft.com/library/aa752574.aspx) interface on the document currently loaded in the contained WebBrowser control.|  
+|[CHtmlEditCtrl::GetStartDocument](#getstartdocument)|Retrieves the URL to a default document to load in the contained WebBrowser control.|  
   
 ## Remarks  
  The hosted WebBrowser control is automatically put into edit mode after it is created.  
@@ -77,14 +77,14 @@ class CHtmlEditCtrl: public CWnd,
 ## Requirements  
  **Header:** afxhtml.h  
   
-##  <a name="chtmleditctrl__chtmleditctrl"></a>  CHtmlEditCtrl::CHtmlEditCtrl  
+##  <a name="chtmleditctrl"></a>  CHtmlEditCtrl::CHtmlEditCtrl  
  Constructs a `CHtmlEditCtrl` object.  
   
 ```  
 CHtmlEditCtrl();
 ```  
   
-##  <a name="chtmleditctrl__create"></a>  CHtmlEditCtrl::Create  
+##  <a name="create"></a>  CHtmlEditCtrl::Create  
  Creates a WebBrowser ActiveX control and attaches it to the `CHtmlEditCtrl` object. The WebBrowser ActiveX control automatically navigates to a default document and then is placed in edit mode by this function.  
   
 ```  
@@ -119,7 +119,7 @@ virtual BOOL Create(
 ### Return Value  
  Returns **TRUE** on success, **FALSE** on failure.  
   
-##  <a name="chtmleditctrl__getdhtmldocument"></a>  CHtmlEditCtrl::GetDHtmlDocument  
+##  <a name="getdhtmldocument"></a>  CHtmlEditCtrl::GetDHtmlDocument  
  Retrieves the [IHTMLDocument2](https://msdn.microsoft.com/library/aa752574.aspx) interface on the document currently loaded in the contained WebBrowser control  
   
 ```  
@@ -132,7 +132,7 @@ BOOL GetDHtmlDocument(IHTMLDocument2** ppDocument) const;
  `ppDocument`  
  The document interface.  
   
-##  <a name="chtmleditctrl__getstartdocument"></a>  CHtmlEditCtrl::GetStartDocument  
+##  <a name="getstartdocument"></a>  CHtmlEditCtrl::GetStartDocument  
  Retrieves the URL to a default document to load in the contained WebBrowser control.  
   
 ```  

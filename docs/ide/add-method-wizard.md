@@ -57,7 +57,7 @@ Use this wizard to add a method to an interface. Depending on the project type o
 |--------------------|-----------------|  
 |ATL dual interface, custom interface, and local custom interface|Provide your own method name.|  
 |MFC dispinterface|Provide your own method name or select a suggested method name from the list. If you select a name from the list, the appropriate value appears in the **Return type** box, and it is unchangeable.|  
-|MFC ActiveX control dispinterface|Provide your own or select either of the stock methods [DoClick](../Topic/COleControl::DoClick.md) and [Refresh](../Topic/COleControl::Refresh.md). See [MFC ActiveX Controls: Adding Stock Methods](../mfc/mfc-activex-controls-adding-stock-methods.md) for more information.|  
+|MFC ActiveX control dispinterface|Provide your own or select either of the stock methods [DoClick](../mfc/reference/colecontrol-class.md#doclick) and [Refresh](../mfc/reference/colecontrol-class.md#refresh). See [MFC ActiveX Controls: Adding Stock Methods](../mfc/mfc-activex-controls-adding-stock-methods.md) for more information.|  
   
  **Method type**  
  Available only for MFC ActiveX controls. If you provide a method name in the **Method name** box, rather than selecting a method from the list, this box is unavailable.  

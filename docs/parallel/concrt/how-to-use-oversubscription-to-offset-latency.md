@@ -40,13 +40,13 @@ Oversubscription can improve the overall efficiency of some applications that co
 ## Example  
  This example uses the [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md) to download files from HTTP servers. The `http_reader` class derives from [concurrency::agent](../../parallel/concrt/reference/agent-class.md) and uses message passing to asynchronously read which URL names to download.  
   
- The `http_reader` class uses the [concurrency::task_group](../Topic/task_group%20Class.md) class to concurrently read each file. Each task calls the [concurrency::Context::Oversubscribe](../Topic/Context::Oversubscribe%20Method.md) method with the `_BeginOversubscription` parameter set to `true` to enable oversubscription in the current context. Each task then uses the Microsoft Foundation Classes (MFC) [CInternetSession](../../mfc/reference/cinternetsession-class.md) and [CHttpFile](../../mfc/reference/chttpfile-class.md) classes to download the file. Finally, each task calls `Context::Oversubscribe` with the `_BeginOversubscription` parameter set to `false` to disable oversubscription.  
+ The `http_reader` class uses the [concurrency::task_group](reference/task-group-class.md) class to concurrently read each file. Each task calls the [concurrency::Context::Oversubscribe](reference/context-class.md#oversubscribe) method with the `_BeginOversubscription` parameter set to `true` to enable oversubscription in the current context. Each task then uses the Microsoft Foundation Classes (MFC) [CInternetSession](../../mfc/reference/cinternetsession-class.md) and [CHttpFile](../../mfc/reference/chttpfile-class.md) classes to download the file. Finally, each task calls `Context::Oversubscribe` with the `_BeginOversubscription` parameter set to `false` to disable oversubscription.  
   
- When oversubscription is enabled, the runtime creates one additional thread in which to run tasks. Each of these threads can also oversubscribe the current context and thereby create additional threads. The `http_reader` class uses a [concurrency::unbounded_buffer](../Topic/unbounded_buffer%20Class.md) object to limit the number of threads that the application uses. The agent initializes the buffer with a fixed number of token values. For each download operation, the agent reads a token value from the buffer before the operation starts and then writes that value back to the buffer after the operation finishes. When the buffer is empty, the agent waits for one of the download operations to write a value back to the buffer.  
+ When oversubscription is enabled, the runtime creates one additional thread in which to run tasks. Each of these threads can also oversubscribe the current context and thereby create additional threads. The `http_reader` class uses a [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) object to limit the number of threads that the application uses. The agent initializes the buffer with a fixed number of token values. For each download operation, the agent reads a token value from the buffer before the operation starts and then writes that value back to the buffer after the operation finishes. When the buffer is empty, the agent waits for one of the download operations to write a value back to the buffer.  
   
  The following example limits the number of simultaneous tasks to two times the number of available hardware threads. This value is a good starting point to use when you experiment with oversubscription. You can use a value that fits a particular processing environment or dynamically change this value to respond to the actual workload.  
   
- [!code-cpp[concrt-download-oversubscription#1](../../parallel/concrt/codesnippet/CPP/how-to-use-oversubscription-to-offset-latency_1.cpp)]  
+ [!code-cpp[concrt-download-oversubscription#1](../../parallel/concrt/codesnippet/cpp/how-to-use-oversubscription-to-offset-latency_1.cpp)]  
   
  This example produces the following output on a computer that has four processors:  
   
@@ -90,13 +90,14 @@ Downloaded 1801040 bytes in 3276 ms.
   
  The following example defines a structure that is named `scoped_blocking_signal`. The constructor of the `scoped_blocking_signal` structure enables oversubscription and the destructor disables oversubscription.  
   
- [!code-cpp[concrt-download-oversubscription#2](../../parallel/concrt/codesnippet/CPP/how-to-use-oversubscription-to-offset-latency_2.cpp)]  
+ [!code-cpp[concrt-download-oversubscription#2](../../parallel/concrt/codesnippet/cpp/how-to-use-oversubscription-to-offset-latency_2.cpp)]  
   
  The following example modifies the body of the `download` method to use RAII to ensure that oversubscription is disabled before the function returns. This technique ensures that the `download` method is exception-safe.  
   
- [!code-cpp[concrt-download-oversubscription#3](../../parallel/concrt/codesnippet/CPP/how-to-use-oversubscription-to-offset-latency_3.cpp)]  
+ [!code-cpp[concrt-download-oversubscription#3](../../parallel/concrt/codesnippet/cpp/how-to-use-oversubscription-to-offset-latency_3.cpp)]  
   
 ## See Also  
  [Contexts](../../parallel/concrt/contexts.md)   
- [Context::Oversubscribe Method](../Topic/Context::Oversubscribe%20Method.md)
+ [Context::Oversubscribe Method](reference/context-class.md#oversubscribe)
+
 

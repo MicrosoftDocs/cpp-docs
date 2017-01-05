@@ -76,7 +76,7 @@ void _CrtDoForAllClientObjects(
   
  If the `_CRTDBG_ALLOC_MEM_DF` bit field of the [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md) flag is not turned on, `_CrtDoForAllClientObjects` immediately returns. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtDoForAllClientObjects` are removed during preprocessing.  
   
- For more information about the `_CLIENT_BLOCK` type and how it can be used by other debug functions, see [Types of blocks on the debug heap](/visual-studio/debugger/crt-debug-heap-details). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](/visual-studio/debugger/crt-debug-heap-details).  
+ For more information about the `_CLIENT_BLOCK` type and how it can be used by other debug functions, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details).  
   
  If `pfn` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) is set to `EINVAL` and the function returns.  
   
@@ -91,10 +91,10 @@ void _CrtDoForAllClientObjects(
  **Libraries:** Debug versions of  universal C run-time libraries only.  
   
 ## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  
+ Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)   
  [_CrtSetDbgFlag](../../c-runtime-library/reference/crtsetdbgflag.md)   
- [Heap State Reporting Functions](/visual-studio/debugger/crt-debug-heap-details)   
+ [Heap State Reporting Functions](/visualstudio/debugger/crt-debug-heap-details)   
  [_CrtReportBlockType](../../c-runtime-library/reference/crtreportblocktype.md)

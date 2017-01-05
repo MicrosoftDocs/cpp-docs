@@ -12,9 +12,9 @@ dev_langs:
   - "C++"
 helpviewer_keywords: 
   - "headers, C++ library"
-  - "Standard C++ Library"
+  - "C++ Standard Library"
   - "libraries, Standard C++"
-  - "Standard C++ Library, headers"
+  - "C++ Standard Library, headers"
 ms.assetid: 7acb83a4-da73-4ad3-bc30-a71289db7f60
 caps.latest.revision: 16
 author: "corob-msft"
@@ -50,7 +50,7 @@ All C++ library entities are declared or defined in one or more standard headers
   
 -   [iostreams](../standard-library/iostreams-conventions.md) conventions.  
   
--   [Standard Template Library](../misc/standard-template-library.md) conventions.  
+-   [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md) conventions.  
   
  This section contains the following sections:  
   
@@ -68,7 +68,7 @@ All C++ library entities are declared or defined in one or more standard headers
   
 -   [Debug Iterator Support](../standard-library/debug-iterator-support.md)  
   
--   [Standard Template Library](../misc/standard-template-library.md)  
+-   [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)  
   
 -   [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)  
   

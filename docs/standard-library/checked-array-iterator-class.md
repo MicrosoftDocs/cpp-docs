@@ -43,7 +43,7 @@ translation.priority.ht:
 The `checked_array_iterator` class allows you to transform an array or pointer into a checked iterator. Use this class as a wrapper (using the [make_checked_array_iterator](../standard-library/iterator-functions.md#make_checked_array_iterator) function) for raw pointers or arrays as a targeted way to provide checking and to manage unchecked pointer warnings instead of globally silencing these warnings. If necessary, you can use the unchecked version of this class, [unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md).  
   
 > [!NOTE]
->  This class is a Microsoft extension of the Standard C++ Library. Code implemented by using this function is not portable to C++ Standard build environments that do not support this Microsoft extension. For an example demonstrating how to write code that does not require the use of this class, see the second example below.  
+>  This class is a Microsoft extension of the C++ Standard Library. Code implemented by using this function is not portable to C++ Standard build environments that do not support this Microsoft extension. For an example demonstrating how to write code that does not require the use of this class, see the second example below.  
   
 ## Syntax  
   
@@ -108,7 +108,7 @@ int main() {
 ```  
   
 ## Example  
- To avoid the need for the `checked_array_iterator` class when using Standard C++ Library algorithms, consider using a `vector` instead of a dynamically allocated array. The following example demonstrates how to do this.  
+ To avoid the need for the `checked_array_iterator` class when using C++ Standard Library algorithms, consider using a `vector` instead of a dynamically allocated array. The following example demonstrates how to do this.  
   
 ```cpp  
 // compile with: /EHsc /W4 /MTd  
@@ -948,7 +948,7 @@ typedef typename iterator_traits<_Iterator>::reference reference;
   
 ## See Also  
  [\<iterator>](../standard-library/iterator.md)   
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 
 
 

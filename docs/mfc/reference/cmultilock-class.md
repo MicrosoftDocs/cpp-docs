@@ -50,22 +50,22 @@ class CMultiLock
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMultiLock::CMultiLock](#cmultilock__cmultilock)|Constructs a `CMultiLock` object.|  
+|[CMultiLock::CMultiLock](#cmultilock)|Constructs a `CMultiLock` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMultiLock::IsLocked](#cmultilock__islocked)|Determines if a specific synchronization object in the array is locked.|  
-|[CMultiLock::Lock](#cmultilock__lock)|Waits on the array of synchronization objects.|  
-|[CMultiLock::Unlock](#cmultilock__unlock)|Releases any owned synchronization objects.|  
+|[CMultiLock::IsLocked](#islocked)|Determines if a specific synchronization object in the array is locked.|  
+|[CMultiLock::Lock](#lock)|Waits on the array of synchronization objects.|  
+|[CMultiLock::Unlock](#unlock)|Releases any owned synchronization objects.|  
   
 ## Remarks  
  `CMultiLock` does not have a base class.  
   
  To use the synchronization classes [CSemaphore](../../mfc/reference/csemaphore-class.md), [CMutex](../../mfc/reference/cmutex-class.md), and [CEvent](../../mfc/reference/cevent-class.md), you can create either a **CMultiLock** or [CSingleLock](../../mfc/reference/csinglelock-class.md) object to wait on and release the synchronization object. Use **CMultiLock** when there are multiple objects that you could use at a particular time. Use `CSingleLock` when you only need to wait on one object at a time.  
   
- To use a **CMultiLock** object, first create an array of the synchronization objects that you wish to wait on. Next, call the **CMultiLock** object's constructor inside a member function in the controlled resource's class. Then call the [Lock](#cmultilock__lock) member function to determine if a resource is available (signaled). If one is, continue with the remainder of the member function. If no resource is available, either wait for a specified amount of time for a resource to be released, or return failure. After use of a resource is complete, either call the [Unlock](#cmultilock__unlock) function if the **CMultiLock** object is to be used again, or allow the **CMultiLock** object to be destroyed.  
+ To use a **CMultiLock** object, first create an array of the synchronization objects that you wish to wait on. Next, call the **CMultiLock** object's constructor inside a member function in the controlled resource's class. Then call the [Lock](#lock) member function to determine if a resource is available (signaled). If one is, continue with the remainder of the member function. If no resource is available, either wait for a specified amount of time for a resource to be released, or return failure. After use of a resource is complete, either call the [Unlock](#unlock) function if the **CMultiLock** object is to be used again, or allow the **CMultiLock** object to be destroyed.  
   
  **CMultiLock** objects are most useful when a thread has a large number of `CEvent` objects it can respond to. Create an array containing all the `CEvent` pointers, and call `Lock`. This will cause the thread to wait until one of the events is signaled.  
   
@@ -77,7 +77,7 @@ class CMultiLock
 ## Requirements  
  **Header:** afxmt.h  
   
-##  <a name="cmultilock__cmultilock"></a>  CMultiLock::CMultiLock  
+##  <a name="cmultilock"></a>  CMultiLock::CMultiLock  
  Constructs a **CMultiLock** object.  
   
 ```  
@@ -100,7 +100,7 @@ CMultiLock(
 ### Remarks  
  This function is called after creating the array of synchronization objects to be waited on. It is usually called from within the thread that must wait for one of the synchronization objects to become available.  
   
-##  <a name="cmultilock__islocked"></a>  CMultiLock::IsLocked  
+##  <a name="islocked"></a>  CMultiLock::IsLocked  
  Determines if the specified object is nonsignaled (unavailable).  
   
 ```  
@@ -114,7 +114,7 @@ BOOL IsLocked(DWORD dwItem);
 ### Return Value  
  Nonzero if the specified object is locked; otherwise 0.  
   
-##  <a name="cmultilock__lock"></a>  CMultiLock::Lock  
+##  <a name="lock"></a>  CMultiLock::Lock  
  Call this function to gain access to one or more of the resources controlled by the synchronization objects supplied to the **CMultiLock** constructor.  
   
 ```  
@@ -158,7 +158,7 @@ DWORD Lock(
   
  If `Lock` is not able to return immediately, it will wait for no more than the number of milliseconds specified in the *dwTimeOut* parameter before returning. If *dwTimeOut* is **INFINITE**, `Lock` will not return until access to an object is gained or a condition specified in `dwWakeMask` was met. Otherwise, if `Lock` was able to acquire a synchronization object, it will return successfully; if not, it will return failure.  
   
-##  <a name="cmultilock__unlock"></a>  CMultiLock::Unlock  
+##  <a name="unlock"></a>  CMultiLock::Unlock  
  Releases the synchronization object owned by `CMultiLock`.  
   
 ```  
@@ -183,7 +183,7 @@ BOOL Unlock(
 ### Remarks  
  This function is called by `CMultiLock`'s destructor.  
   
- The first form of `Unlock` tries to unlock the synchronization object managed by `CMultiLock`. The second form of `Unlock` tries to unlock the `CSemaphore` objects owned by `CMultiLock`. If `CMultiLock` does not own any locked `CSemaphore` object, the function returns **FALSE**; otherwise, it returns **TRUE**. `lCount` and `lpPrevCount` are exactly the same as the parameters of [CSingleLock::Unlock](../../mfc/reference/csinglelock-class.md#csinglelock__unlock). The second form of `Unlock` is rarely applicable to multilock situations.  
+ The first form of `Unlock` tries to unlock the synchronization object managed by `CMultiLock`. The second form of `Unlock` tries to unlock the `CSemaphore` objects owned by `CMultiLock`. If `CMultiLock` does not own any locked `CSemaphore` object, the function returns **FALSE**; otherwise, it returns **TRUE**. `lCount` and `lpPrevCount` are exactly the same as the parameters of [CSingleLock::Unlock](../../mfc/reference/csinglelock-class.md#unlock). The second form of `Unlock` is rarely applicable to multilock situations.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)

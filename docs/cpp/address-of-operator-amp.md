@@ -71,7 +71,7 @@ int main() {
   
  In this example, the expression `&PTM::fValue` yields type `float *` instead of type `float PTM::*` because `fValue` is a static member.  
   
- The address of an overloaded function can be taken only when it is clear which version of the function is being referenced. See [Address of Overloaded Functions](../misc/address-of-overloaded-functions.md) for information about how to obtain the address of a particular overloaded function.  
+ The address of an overloaded function can be taken only when it is clear which version of the function is being referenced. See [Function Overloading](function-overloading.md) for information about how to obtain the address of a particular overloaded function.  
   
  Applying the address-of operator to a reference type gives the same result as applying the operator to the object to which the reference is bound. For example:  
   
@@ -127,7 +127,6 @@ int main() {
   
 ## See Also  
  [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)   
- [C++ Operators](../misc/cpp-operators.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Lvalue Reference Declarator: &](../cpp/lvalue-reference-declarator-amp.md)   
  [Indirection and Address-of Operators](../c-language/indirection-and-address-of-operators.md)

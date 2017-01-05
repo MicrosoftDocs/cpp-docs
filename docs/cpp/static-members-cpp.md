@@ -42,7 +42,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Static Members (C++)
-Classes can contain static member data and member functions. When a data member is declared as **static**, only one copy of the data is maintained for all objects of the class. (For more information, see [Static Member Functions](../misc/static-member-functions.md).)  
+Classes can contain static member data and member functions. When a data member is declared as **static**, only one copy of the data is maintained for all objects of the class.
   
  Static data members are not part of objects of a given class type. As a result, the declaration of a static data member is not considered a definition. The data member is declared in class scope, but definition is performed at file scope. These static members have external linkage. The following example illustrates this:  
   

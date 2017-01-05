@@ -39,7 +39,7 @@ translation.priority.ht:
 # CAtlServiceModuleT::ServiceMain Function
 The service control manager (SCM) calls `ServiceMain` when you open the Services Control Panel application, select the service, and click **Start**.  
   
- After the SCM calls `ServiceMain`, a service must give the SCM a handler function. This function lets the SCM obtain the service's status and pass specific instructions (such as pausing or stopping). The SCM gets this function when the service passes **_Handler** to the Win32 API function, [RegisterServiceCtrlHandler](http://msdn.microsoft.com/library/windows/desktop/ms685054). (**_Handler** is a static member function that calls the non-static member function [Handler](../atl/reference/catlservicemodulet-class.md#handler%20function).)  
+ After the SCM calls `ServiceMain`, a service must give the SCM a handler function. This function lets the SCM obtain the service's status and pass specific instructions (such as pausing or stopping). The SCM gets this function when the service passes **_Handler** to the Win32 API function, [RegisterServiceCtrlHandler](http://msdn.microsoft.com/library/windows/desktop/ms685054). (**_Handler** is a static member function that calls the non-static member function [Handler](../atl/reference/catlservicemodulet-class.md#handler).)  
   
  At startup, a service should also inform the SCM of its current status. It does this by passing **SERVICE_START_PENDING** to the Win32 API function, [SetServiceStatus](http://msdn.microsoft.com/library/windows/desktop/ms686241).  
   

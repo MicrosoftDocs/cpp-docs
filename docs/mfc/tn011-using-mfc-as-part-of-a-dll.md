@@ -74,7 +74,7 @@ This note describes regular DLLs, which allow you to use the MFC library as part
   
  The interfaces (APIs) between the application and the DLL must be explicitly exported. We recommend that you define your interfaces to be low bandwidth, and use only C interfaces if you can. Direct C interfaces are easier to maintain than more complex C++ classes.  
   
- Place your APIs in a separate header that can be included by both C and C++ files. See the header ScreenCap.h in the MFC Advanced Concepts sample [DLLScreenCap](../top/visual-cpp-samples.md) for an example. To export your functions, enter them in the `EXPORTS` section of your module definition file (.DEF) or include `__declspec(dllexport)` on your function definitions. Use `__declspec(dllimport)` to import these functions into the client executable.  
+ Place your APIs in a separate header that can be included by both C and C++ files. See the header ScreenCap.h in the MFC Advanced Concepts sample [DLLScreenCap](../visual-cpp-samples.md) for an example. To export your functions, enter them in the `EXPORTS` section of your module definition file (.DEF) or include `__declspec(dllexport)` on your function definitions. Use `__declspec(dllimport)` to import these functions into the client executable.  
   
  You must add the `AFX_MANAGE_STATE` macro at the beginning of all the exported functions in regular DLLs that dynamically link to MFC. This macro sets the current module state to the one for the DLL. To use this macro, add the following line of code to the beginning of functions exported from the DLL:  
   
@@ -83,11 +83,11 @@ This note describes regular DLLs, which allow you to use the MFC library as part
 ## WinMain -> DllMain  
  The MFC library defines the standard Win32 `DllMain` entry point that initializes your [CWinApp](../mfc/reference/cwinapp-class.md) derived object as in a typical MFC application. Place all DLL-specific initialization in the [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) method as in a typical MFC application.  
   
- Note that the [CWinApp::Run](../mfc/reference/cwinapp-class.md#cwinapp__run) mechanism does not apply to a DLL, because the application owns the main message pump. If your DLL displays modeless dialogs or has a main frame window of its own, your application's main message pump must call a DLL-exported routine that calls [CWinApp::PreTranslateMessage](../mfc/reference/cwinapp-class.md#cwinapp__pretranslatemessage).  
+ Note that the [CWinApp::Run](../mfc/reference/cwinapp-class.md#run) mechanism does not apply to a DLL, because the application owns the main message pump. If your DLL displays modeless dialogs or has a main frame window of its own, your application's main message pump must call a DLL-exported routine that calls [CWinApp::PreTranslateMessage](../mfc/reference/cwinapp-class.md#pretranslatemessage).  
   
  See the DLLScreenCap sample for use of this function.  
   
- The `DllMain` function that MFC provides will call the [CWinApp::ExitInstance](../mfc/reference/cwinapp-class.md#cwinapp__exitinstance) method of your class that is derived from `CWinApp` before the DLL is unloaded.  
+ The `DllMain` function that MFC provides will call the [CWinApp::ExitInstance](../mfc/reference/cwinapp-class.md#exitinstance) method of your class that is derived from `CWinApp` before the DLL is unloaded.  
   
 ## Linking Your DLL  
  With regular DLLs that statically link to MFC, you must link your DLL with Nafxcwd.lib or Nafxcw.lib and with the version of the C runtimes named Libcmt.lib. These libraries are pre-built and may be installed by specifying them when you run Visual C++ setup.  

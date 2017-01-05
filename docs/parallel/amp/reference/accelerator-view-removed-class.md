@@ -50,13 +50,13 @@ class accelerator_view_removed : public runtime_exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[accelerator_view_removed::accelerator_view_removed Constructor](../Topic/accelerator_view_removed::accelerator_view_removed%20Constructor.md)|Initializes a new instance of the `accelerator_view_removed` class.|  
-  
+|[accelerator_view_removed::accelerator_view_removed Constructor](#ctor)|Initializes a new instance of the `accelerator_view_removed` class.|  
+
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[accelerator_view_removed::get_view_removed_reason Method](../Topic/accelerator_view_removed::get_view_removed_reason%20Method.md)|Returns an HRESULT error code indicating the cause of the `accelerator_view` object's removal.|  
+|[accelerator_view_removed::get_view_removed_reason Method](#get_view_removed_reason)|Returns an HRESULT error code indicating the cause of the `accelerator_view` object's removal.|  
   
 ## Inheritance Hierarchy  
  `exception`  
@@ -69,6 +69,40 @@ class accelerator_view_removed : public runtime_exception;
  **Header:** amprt.h  
   
  **Namespace:** Concurrency  
+
+## <a name="ctor"></a> accelerator_view_removed::accelerator_view_removed Constructor
+Initializes a new instance of the [accelerator_view_removed](accelerator-view-removed-class.md) class.  
   
+### Syntax  
+  
+```  
+explicit accelerator_view_removed(  
+    const char * _Message,  
+    HRESULT _View_removed_reason ) throw();  
+  
+explicit accelerator_view_removed(  
+    HRESULT _View_removed_reason ) throw();  
+```  
+  
+### Parameters  
+ `_Message`  
+ A description of the error.  
+  
+ `_View_removed_reason`  
+ An HRESULT error code indicating the cause of removal of the `accelerator_view` object.  
+  
+### Return Value  
+ A new instance of the accelerator_view_removed class.  
+  
+## <a name="get_view_removed_reason_method"></a> accelerator_view_removed::get_view_removed_reason Method
+Returns an HRESULT error code indicating the cause of the `accelerator_view` object's removal.  
+  
+### Syntax  
+  
+```  
+HRESULT get_view_removed_reason() const throw();  
+```  
+  
+ 
 ## See Also  
- [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)
+ [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

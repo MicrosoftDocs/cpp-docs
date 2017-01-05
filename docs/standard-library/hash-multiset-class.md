@@ -43,7 +43,7 @@ translation.priority.ht:
 > [!NOTE]
 >  This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).  
   
- The container class hash_multiset is an extension of the Standard Template Library and is used for the storage and fast retrieval of data from a collection in which the values of the elements contained serve as the key values and are not required to be unique.  
+ The container class hash_multiset is an extension of the C++ Standard Library and is used for the storage and fast retrieval of data from a collection in which the values of the elements contained serve as the key values and are not required to be unique.  
   
 ## Syntax  
   
@@ -1245,7 +1245,7 @@ Allocator get_allocator() const;
  For more information on `Allocator`, see the Remarks section of the [hash_multiset Class](../standard-library/hash-multiset-class.md) topic.  
   
 ### Remarks  
- Allocators for the hash_multiset class specify how the class manages storage. The default allocators supplied with STL container classes is sufficient for most programming needs. Writing and using your own allocator class is an advanced C++ topic.  
+ Allocators for the hash_multiset class specify how the class manages storage. The default allocators supplied with C++ Standard Library container classes are sufficient for most programming needs. Writing and using your own allocator class is an advanced C++ topic.  
   
  In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
   
@@ -2379,5 +2379,5 @@ The hash_multiset has elements: 10 20.
   
 ## See Also  
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 

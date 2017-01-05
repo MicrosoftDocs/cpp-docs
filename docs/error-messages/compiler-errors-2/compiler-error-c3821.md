@@ -74,25 +74,3 @@ int main() {
    }  
 } // C3821  
 ```  
-  
-## Example  
- The following sample generates C3821.  
-  
-```  
-// C3821c.cpp  
-// compile with: /clr:oldSyntax  
-// processor: /x86  
-__gc  class A {  
-   public:  
-   int i;  
-};  
-  
-int main() {  
-   // cannot use managed classes in this function  
-   A *a;     
-  
-   __asm {  
-      nop  
-   }  
-} // C3821  
-```

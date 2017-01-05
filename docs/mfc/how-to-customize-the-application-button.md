@@ -35,7 +35,7 @@ translation.priority.ht:
 # How to: Customize the Application Button
 When you click the Application button, a menu of commands is displayed. Typically, the menu contains file-related commands such as **Open**, **Save**, **Print**, and **Exit**.  
   
- ![MFC Ribbon Application Button](../mfc/media/application_button.png "Application_Button")  
+ ![MFC Ribbon Application Button](../mfc/media/application_button.png "application_button")  
   
  To customize the Application button, open it in the **Properties** window, modify its properties, and then preview the ribbon control.  
   

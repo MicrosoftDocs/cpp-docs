@@ -54,10 +54,10 @@ class CGlobalHeap : public IAtlMemMgr
   
 |Name|Description|  
 |----------|-----------------|  
-|[CGlobalHeap::Allocate](#cglobalheap__allocate)|Call this method to allocate a block of memory.|  
-|[CGlobalHeap::Free](#cglobalheap__free)|Call this method to free a block of memory allocated by this memory manager.|  
-|[CGlobalHeap::GetSize](#cglobalheap__getsize)|Call this method to get the allocated size of a memory block allocated by this memory manager.|  
-|[CGlobalHeap::Reallocate](#cglobalheap__reallocate)|Call this method to reallocate memory allocated by this memory manager.|  
+|[CGlobalHeap::Allocate](#allocate)|Call this method to allocate a block of memory.|  
+|[CGlobalHeap::Free](#free)|Call this method to free a block of memory allocated by this memory manager.|  
+|[CGlobalHeap::GetSize](#getsize)|Call this method to get the allocated size of a memory block allocated by this memory manager.|  
+|[CGlobalHeap::Reallocate](#reallocate)|Call this method to reallocate memory allocated by this memory manager.|  
   
 ## Remarks  
  `CGlobalHeap` implements memory allocation functions using the Win32 global heap functions.  
@@ -76,7 +76,7 @@ class CGlobalHeap : public IAtlMemMgr
 ## Requirements  
  **Header:** atlmem.h  
   
-##  <a name="cglobalheap__allocate"></a>  CGlobalHeap::Allocate  
+##  <a name="allocate"></a>  CGlobalHeap::Allocate  
  Call this method to allocate a block of memory.  
   
 ```
@@ -91,11 +91,11 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
  Returns a pointer to the start of the newly allocated memory block.  
   
 ### Remarks  
- Call [CGlobalHeap::Free](#cglobalheap__free) or [CGlobalHeap::Reallocate](#cglobalheap__reallocate) to free the memory allocated by this method.  
+ Call [CGlobalHeap::Free](#free) or [CGlobalHeap::Reallocate](#reallocate) to free the memory allocated by this method.  
   
  Implemented using [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574) with a flag parameter of **GMEM_FIXED**.  
   
-##  <a name="cglobalheap__free"></a>  CGlobalHeap::Free  
+##  <a name="free"></a>  CGlobalHeap::Free  
  Call this method to free a block of memory allocated by this memory manager.  
   
 ```
@@ -109,7 +109,7 @@ virtual void Free(void* p) throw();
 ### Remarks  
  Implemented using [GlobalFree](http://msdn.microsoft.com/library/windows/desktop/aa366579).  
   
-##  <a name="cglobalheap__getsize"></a>  CGlobalHeap::GetSize  
+##  <a name="getsize"></a>  CGlobalHeap::GetSize  
  Call this method to get the allocated size of a memory block allocated by this memory manager.  
   
 ```
@@ -126,7 +126,7 @@ virtual size_t GetSize(void* p) throw();
 ### Remarks  
  Implemented using [GlobalSize](http://msdn.microsoft.com/library/windows/desktop/aa366593).  
   
-##  <a name="cglobalheap__reallocate"></a>  CGlobalHeap::Reallocate  
+##  <a name="reallocate"></a>  CGlobalHeap::Reallocate  
  Call this method to reallocate memory allocated by this memory manager.  
   
 ```
@@ -145,7 +145,7 @@ virtual __declspec(allocator) void* Reallocate(
  Returns a pointer to the start of the newly allocated memory block.  
   
 ### Remarks  
- Call [CGlobalHeap::Free](#cglobalheap__free) to free the memory allocated by this method.  
+ Call [CGlobalHeap::Free](#free) to free the memory allocated by this method.  
   
  Implemented using [GlobalReAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366590).  
   

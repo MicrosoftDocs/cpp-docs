@@ -1,5 +1,5 @@
 ---
-title: "adjacent_difference (STL-CLR) | Microsoft Docs"
+title: "adjacent_difference (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -49,7 +49,7 @@ template<class _InIt, class _OutIt, class _Fn2> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL numeric function `adjacent_difference`. For more information, see [adjacent_difference](../Topic/adjacent_difference.md).  
+ This function behaves the same as the C++ Standard Library numeric function `adjacent_difference`. For more information, see [adjacent_difference](../standard-library/numeric-functions.md#adjacent_difference).  
   
 ## Requirements  
  **Header:** \<cliext/numeric>  

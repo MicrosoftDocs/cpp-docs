@@ -56,7 +56,7 @@ class CRTThreadTraits
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRTThreadTraits::CreateThread](#crtthreadtraits__createthread)|(Static) Call this function to create a thread that can use CRT functions.|  
+|[CRTThreadTraits::CreateThread](#createthread)|(Static) Call this function to create a thread that can use CRT functions.|  
   
 ## Remarks  
  Thread traits are classes that provide a creation function for a particular type of thread. The creation function has the same signature and semantics as the Windows [CreateThread](http://msdn.microsoft.com/library/windows/desktop/ms682453) function.  
@@ -72,7 +72,7 @@ class CRTThreadTraits
 ## Requirements  
  **Header:** atlbase.h  
   
-##  <a name="crtthreadtraits__createthread"></a>  CRTThreadTraits::CreateThread  
+##  <a name="createthread"></a>  CRTThreadTraits::CreateThread  
  Call this function to create a thread that can use CRT functions.  
   
 ```

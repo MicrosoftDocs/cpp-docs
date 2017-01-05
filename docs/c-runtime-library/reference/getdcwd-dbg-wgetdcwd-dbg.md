@@ -108,7 +108,7 @@ wchar_t *_wgetdcwd_dbg(
 ## Remarks  
  The `_getdcwd_dbg` and `_wgetdcwd_dbg` functions are identical to `_getdcwd` and `_wgetdcwd` except that, when `_DEBUG` is defined, these functions use the debug version of `malloc` and `_malloc_dbg` to allocate memory if `NULL` is passed as the `buffer` parameter. For more information, see [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md).  
   
- You do not need to call these functions explicitly in most cases. Instead, you can define the `_CRTDBG_MAP_ALLOC` flag. When `_CRTDBG_MAP_ALLOC` is defined, calls to `_getdcwd` and `_wgetdcwd` are remapped to `_getdcwd_dbg` and `_wgetdcwd_dbg`, respectively, with the `blockType` set to `_NORMAL_BLOCK`. Thus, you do not need to call these functions explicitly unless you want to mark the heap blocks as `_CLIENT_BLOCK`. For more information, see [Types of Blocks on the Debug Heap](/visual-studio/debugger/crt-debug-heap-details).  
+ You do not need to call these functions explicitly in most cases. Instead, you can define the `_CRTDBG_MAP_ALLOC` flag. When `_CRTDBG_MAP_ALLOC` is defined, calls to `_getdcwd` and `_wgetdcwd` are remapped to `_getdcwd_dbg` and `_wgetdcwd_dbg`, respectively, with the `blockType` set to `_NORMAL_BLOCK`. Thus, you do not need to call these functions explicitly unless you want to mark the heap blocks as `_CLIENT_BLOCK`. For more information, see [Types of Blocks on the Debug Heap](/visualstudio/debugger/crt-debug-heap-details).  
   
 ### Generic-Text Routine Mappings  
   
@@ -131,4 +131,4 @@ wchar_t *_wgetdcwd_dbg(
 ## See Also  
  [_getdcwd, _wgetdcwd](../../c-runtime-library/reference/getdcwd-wgetdcwd.md)   
  [Directory Control](../../c-runtime-library/directory-control.md)   
- [Debug Versions of Heap Allocation Functions](/visual-studio/debugger/debug-versions-of-heap-allocation-functions)
+ [Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)

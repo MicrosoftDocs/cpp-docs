@@ -49,7 +49,7 @@ class CMFCRibbonLabel : public CMFCRibbonButton
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonLabel::CMFCRibbonLabel](#cmfcribbonlabel__cmfcribbonlabel)|Constructs and initializes a `CMFCRibbonLabel` object with the specified text string.|  
+|[CMFCRibbonLabel::CMFCRibbonLabel](#cmfcribbonlabel)|Constructs and initializes a `CMFCRibbonLabel` object with the specified text string.|  
 |`CMFCRibbonLabel::~CMFCRibbonLabel`|Destructor.|  
   
 ### Public Methods  
@@ -58,10 +58,10 @@ class CMFCRibbonLabel : public CMFCRibbonButton
 |----------|-----------------|  
 |`CMFCRibbonLabel::CreateObject`|Used by the framework to create a dynamic instance of this class type.|  
 |`CMFCRibbonLabel::GetThisClass`|Used by the framework to obtain a pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|  
-|[CMFCRibbonLabel::SetACCData](#cmfcribbonlabel__setaccdata)|Determines the accessibility data for the current ribbon label element. (Overrides [CMFCRibbonButton::SetACCData](../../mfc/reference/cmfcribbonbutton-class.md#cmfcribbonbutton__setaccdata).)|  
+|[CMFCRibbonLabel::SetACCData](#setaccdata)|Determines the accessibility data for the current ribbon label element. (Overrides [CMFCRibbonButton::SetACCData](../../mfc/reference/cmfcribbonbutton-class.md#setaccdata).)|  
   
 ### Remarks  
- After you create a ribbon label, add it to a panel by calling [CMFCRibbonPanel::Add](../../mfc/reference/cmfcribbonpanel-class.md#cmfcribbonpanel__add).  
+ After you create a ribbon label, add it to a panel by calling [CMFCRibbonPanel::Add](../../mfc/reference/cmfcribbonpanel-class.md#add).  
   
  You cannot add a ribbon label to the Quick Access Toolbar.  
   
@@ -77,7 +77,7 @@ class CMFCRibbonLabel : public CMFCRibbonButton
 ## Requirements  
  **Header:** afxRibbonLabel.h  
   
-##  <a name="cmfcribbonlabel__cmfcribbonlabel"></a>  CMFCRibbonLabel::CMFCRibbonLabel  
+##  <a name="cmfcribbonlabel"></a>  CMFCRibbonLabel::CMFCRibbonLabel  
  Constructs and initializes a [CMFCRibbonLabel](../../mfc/reference/cmfcribbonlabel-class.md) object that displays the specified text string.  
   
 ```  
@@ -93,7 +93,7 @@ CMFCRibbonLabel(
  [in] `bIsMultiLine`  
  `TRUE` to specify that the label is a multi-line label; otherwise, `FALSE`.  
   
-##  <a name="cmfcribbonlabel__setaccdata"></a>  CMFCRibbonLabel::SetACCData  
+##  <a name="setaccdata"></a>  CMFCRibbonLabel::SetACCData  
  Determines the accessibility data for the current ribbon label element.  
   
 ```  

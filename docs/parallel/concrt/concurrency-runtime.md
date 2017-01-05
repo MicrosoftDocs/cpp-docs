@@ -47,7 +47,7 @@ The Concurrency Runtime for C++ helps you write robust, scalable, and responsive
   
 |||  
 |-|-|  
-|[Overview](../../parallel/concrt/asynchronous-message-blocks.md#overview_of_the_concurrency_runtime)|Teaches why the Concurrency Runtime is important and describes its key features.|  
+|[Overview](../../parallel/concrt/asynchronous-message-blocks.md#overview)|Teaches why the Concurrency Runtime is important and describes its key features.|  
 |[Comparing to Other Concurrency Models](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md)|Shows how the Concurrency Runtime compares to other concurrency models, such as the Windows thread pool and OpenMP, so that you can use the concurrency model that best fits your application requirements.|  
 |[Migrating from OpenMP to the Concurrency Runtime](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md)|Compares OpenMP to the Concurrency Runtime and provides examples about how to migrate existing OpenMP code to use the Concurrency Runtime.|  
 |[Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)|Introduces you to the PPL, which provides parallel loops, tasks, and parallel containers.|  
@@ -75,7 +75,7 @@ The Concurrency Runtime for C++ helps you write robust, scalable, and responsive
   
 |||  
 |-|-|  
-|[Cancellation](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation_in_the_ppl)|Describes the role of cancellation in the PPL, including how to initiate and respond to cancellation requests.|  
+|[Cancellation in the PPL](cancellation-in-the-ppl.md)|Describes the role of cancellation in the PPL, including how to initiate and respond to cancellation requests.|  
 |[How to: Use Cancellation to Break from a Parallel Loop](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md)<br /><br /> [How to: Use Exception Handling to Break from a Parallel Loop](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md)|Demonstrates two ways to cancel data-parallel work.|  
   
 ## Windows Store Apps  
@@ -120,10 +120,10 @@ The Concurrency Runtime for C++ helps you write robust, scalable, and responsive
 |||  
 |-|-|  
 |[Async programming patterns and tips in Hilo (Windows Store apps using C++ and XAML)](http://msdn.microsoft.com/library/windows/apps/jj160321.aspx)|Learn how we used the Concurrency Runtime to implement asynchronous operations in Hilo, a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app using C++ and XAML.|  
-|[Code samples for the Concurrency Runtime and Parallel Pattern Library in Visual Studio 2010](http://go.microsoft.com/fwlink/LinkID=183875)|Provides sample applications and utilities that demonstrate the Concurrency Runtime.|  
-|[Parallel Programming in Native Code blog](http://go.microsoft.com/fwlink/LinkID=183873)|Provides additional in-depth blog articles about parallel programming in the Concurrency Runtime.|  
-|[Parallel Computing in C++ and Native Code forum](http://go.microsoft.com/fwlink/LinkID=183874)|Enables you to participate in community discussions about the Concurrency Runtime.|  
-|[Parallel Programming](../Topic/Parallel%20Programming%20in%20the%20.NET%20Framework.md)|Teaches you about the parallel programming model that is available in the [!INCLUDE[dnprdnshort](../../error-messages/tool-errors/includes/dnprdnshort_md.md)].|  
+|[Code samples for the Concurrency Runtime and Parallel Pattern Library in Visual Studio 2010](http://go.microsoft.com/fwlink/linkid=183875)|Provides sample applications and utilities that demonstrate the Concurrency Runtime.|  
+|[Parallel Programming in Native Code blog](http://go.microsoft.com/fwlink/linkid=183873)|Provides additional in-depth blog articles about parallel programming in the Concurrency Runtime.|  
+|[Parallel Computing in C++ and Native Code forum](http://go.microsoft.com/fwlink/linkid=183874)|Enables you to participate in community discussions about the Concurrency Runtime.|  
+|[Parallel Programming](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)|Teaches you about the parallel programming model that is available in the [!INCLUDE[dnprdnshort](../../error-messages/tool-errors/includes/dnprdnshort_md.md)].|  
   
 ## See Also  
  [Reference](../../parallel/concrt/reference/reference-concurrency-runtime.md)

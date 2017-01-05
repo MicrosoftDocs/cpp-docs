@@ -38,7 +38,7 @@ translation.priority.ht:
 # Header Items in a Header Control
 You have considerable control over the appearance and behavior of the header items that make up a header control ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)). Each header item can have a string, a bitmapped image, an image from an associated image list, or an application-defined 32-bit value associated with it. The string, bitmap, or image is displayed in the header item.  
   
- You can customize the appearance and contents of new items when they are created by making a call [CHeaderCtrl::InsertItem](../mfc/reference/cheaderctrl-class.md#cheaderctrl__insertitem) or by modifying an existing item, with a call to [CHeaderCtrl::GetItem](../mfc/reference/cheaderctrl-class.md#cheaderctrl__getitem) and [CHeaderCtrl::SetItem](../mfc/reference/cheaderctrl-class.md#cheaderctrl__setitem).  
+ You can customize the appearance and contents of new items when they are created by making a call [CHeaderCtrl::InsertItem](../mfc/reference/cheaderctrl-class.md#insertitem) or by modifying an existing item, with a call to [CHeaderCtrl::GetItem](../mfc/reference/cheaderctrl-class.md#getitem) and [CHeaderCtrl::SetItem](../mfc/reference/cheaderctrl-class.md#setitem).  
   
 ## What do you want to know more about  
   

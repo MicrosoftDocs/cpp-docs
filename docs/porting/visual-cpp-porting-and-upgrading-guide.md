@@ -96,7 +96,7 @@ This topic provides a guide for upgrading Visual C++ code. This includes getting
 |Title|Description|  
 |-----------|-----------------|  
 |[Upgrading Projects from Earlier Versions of Visual C++](../porting/upgrading-projects-from-earlier-versions-of-visual-cpp.md)|Discusses how to use projects created in earlier versions of Visual C++.|  
-|[Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-20151.md)|A list of all the changes in the Visual C++ libraries and build tools since 2003 that might require changes in your code.|  
+|[Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)|A list of all the changes in the Visual C++ libraries and build tools since 2003 that might require changes in your code.|  
 |[Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md)|All the "what's new" information for Visual C++ going back to Visual Studio 2003.|  
 |[Porting and Upgrading: Examples and Case Studies](../porting/porting-and-upgrading-examples-and-case-studies.md)|For this section, we ported and upgrades several samples and applications and discussed the experiences and results. You might find that reading these gives you a sense of what is involved in the porting and upgrading process. Throughout the process, we discuss tips and tricks for upgrading and show how specific errors were fixed.|  
 |[Porting to the Universal Windows Platform](../porting/porting-to-the-universal-windows-platform-cpp.md)|Contains information about porting code to Windows 10|  
@@ -105,4 +105,4 @@ This topic provides a guide for upgrading Visual C++ code. This includes getting
 |[C++/CLI Migration Primer](../dotnet/cpp-cli-migration-primer.md)|Shows in detail how to upgrade your Managed Extensions for C++ syntax to use the new syntax. For more information, see [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md).|  
   
 ## See Also  
- [Visual C++](../top/visual-cpp-in-visual-studio.md)
+ [Visual C++](../visual-cpp-in-visual-studio.md)

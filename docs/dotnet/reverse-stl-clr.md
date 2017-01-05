@@ -1,5 +1,5 @@
 ---
-title: "reverse (STL-CLR) | Microsoft Docs"
+title: "reverse (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -45,7 +45,7 @@ template<class _BidIt> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `reverse`. For more information, see [reverse](../Topic/reverse.md).  
+ This function behaves the same as the C++ Standard Library function `reverse`. For more information, see [reverse](http://msdn.microsoft.com/Library/824d7107-6cff-40d3-8875-e07a6fc4f16e).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

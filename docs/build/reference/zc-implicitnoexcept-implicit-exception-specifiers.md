@@ -41,7 +41,7 @@ When the **/Zc:implicitNoexcept** option is specified, the compiler adds an impl
   
 ## Syntax  
   
-```vb  
+```cpp  
 /Zc:implicitNoexcept[-]  
 ```  
   
@@ -163,4 +163,4 @@ Exit returning EXIT_SUCCESS
  [/Zc (Conformance)](../../build/reference/zc-conformance.md)   
  [noexcept](../../cpp/noexcept-cpp.md)   
  [Exception Specifications (throw)](../../cpp/exception-specifications-throw-cpp.md)   
- [terminate](../Topic/terminate%20\(%3Cexception%3E\).md)
+ [terminate](../../standard-library/exception-functions.md#terminate)

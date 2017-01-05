@@ -60,7 +60,7 @@ Include the standard header \<thread> to define the class `thread` and various s
   
 |Name|Description|  
 |----------|-----------------|  
-|[hash Structure (STL)](../standard-library/hash-structure-stl.md)|Defines a member function that returns a value that is uniquely determined by a `thread::id`. The member function defines a [hash](../standard-library/hash-class.md) function that is suitable for mapping values of type `thread::id` to a distribution of index values.|  
+|[hash Structure (C++ Standard Library)](../standard-library/hash-structure-stl.md)|Defines a member function that returns a value that is uniquely determined by a `thread::id`. The member function defines a [hash](../standard-library/hash-class.md) function that is suitable for mapping values of type `thread::id` to a distribution of index values.|  
   
 ### Public Functions  
   

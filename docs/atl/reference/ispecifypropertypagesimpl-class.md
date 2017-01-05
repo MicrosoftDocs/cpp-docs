@@ -63,7 +63,7 @@ template<class T>  class ATL_NO_VTABLE ISpecifyPropertyPagesImpl :  public ISpec
   
 |Name|Description|  
 |----------|-----------------|  
-|[ISpecifyPropertyPagesImpl::GetPages](#ispecifypropertypagesimpl__getpages)|Fills a Counted Array of UUID values. Each UUID corresponds to the CLSID for one of the property pages that can be displayed in the object's property sheet.|  
+|[ISpecifyPropertyPagesImpl::GetPages](#getpages)|Fills a Counted Array of UUID values. Each UUID corresponds to the CLSID for one of the property pages that can be displayed in the object's property sheet.|  
   
 ## Remarks  
  The [ISpecifyPropertyPages](http://msdn.microsoft.com/library/windows/desktop/ms695217) interface allows a client to obtain a list of CLSIDs for the property pages supported by an object. Class `ISpecifyPropertyPagesImpl` provides a default implementation of this interface and implements **IUnknown** by sending information to the dump device in debug builds.  
@@ -81,7 +81,7 @@ template<class T>  class ATL_NO_VTABLE ISpecifyPropertyPagesImpl :  public ISpec
 ## Requirements  
  **Header:** atlcom.h  
   
-##  <a name="ispecifypropertypagesimpl__getpages"></a>  ISpecifyPropertyPagesImpl::GetPages  
+##  <a name="getpages"></a>  ISpecifyPropertyPagesImpl::GetPages  
  Fills the array in the [CAUUID](http://msdn.microsoft.com/library/windows/desktop/ms680048) structure with the CLSIDs for the property pages that can be displayed in the object's property sheet.  
   
 ```

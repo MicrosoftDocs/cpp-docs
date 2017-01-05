@@ -15,16 +15,16 @@ manager: "ghogen"
 # Concurrency::graphics namespace enums
 |||  
 |-|-|  
-|[address_mode Enumeration](#address_mode_enumeration)|[filter_mode Enumeration](#filter_mode_enumeration)|  
+|[_mode Enumeration](#address_mode)|[filter_mode Enumeration](#filter_mode)|  
   
-##  <a name="address_mode_enumeration"></a>  address_mode Enumeration  
+##  <a name="address_mode"></a>  address_mode Enumeration  
  Enumeration type use to denote address modes supported for texture sampling.  
   
 ```  
 enum address_mode;  
 ```  
   
-##  <a name="filter_mode_enumeration"></a>  filter_mode Enumeration  
+##  <a name="filter_mode"></a>  filter_mode Enumeration  
  Enumeration type use to denote filter modes supported for texture sampling.  
   
 ```  
@@ -32,4 +32,4 @@ enum filter_mode;
 ```  
   
 ## See Also  
- [Concurrency::graphics Namespace](../../../parallel/amp/reference/concurrency-graphics-namespace.md)
+ [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

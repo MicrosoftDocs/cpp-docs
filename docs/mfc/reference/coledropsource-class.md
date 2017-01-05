@@ -52,20 +52,20 @@ class COleDropSource : public CCmdTarget
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleDropSource::COleDropSource](#coledropsource__coledropsource)|Constructs a `COleDropSource` object.|  
+|[COleDropSource::COleDropSource](#coledropsource)|Constructs a `COleDropSource` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleDropSource::GiveFeedback](#coledropsource__givefeedback)|Changes the cursor during a drag-and-drop operation.|  
-|[COleDropSource::OnBeginDrag](#coledropsource__onbegindrag)|Handles mouse capture during a drag-and-drop operation.|  
-|[COleDropSource::QueryContinueDrag](#coledropsource__querycontinuedrag)|Checks to see whether dragging should continue.|  
+|[COleDropSource::GiveFeedback](#givefeedback)|Changes the cursor during a drag-and-drop operation.|  
+|[COleDropSource::OnBeginDrag](#onbegindrag)|Handles mouse capture during a drag-and-drop operation.|  
+|[COleDropSource::QueryContinueDrag](#querycontinuedrag)|Checks to see whether dragging should continue.|  
   
 ## Remarks  
  The [COleDropTarget](../../mfc/reference/coledroptarget-class.md) class handles the receiving portion of the drag-and-drop operation. The `COleDropSource` object is responsible for determining when a drag operation begins, providing feedback during the drag operation, and determining when the drag operation ends.  
   
- To use a `COleDropSource` object, just call the constructor. This simplifies the process of determining what events, such as a mouse click, begin a drag operation using [COleDataSource::DoDragDrop](../../mfc/reference/coledatasource-class.md#coledatasource__dodragdrop), [COleClientItem::DoDragDrop](../../mfc/reference/coleclientitem-class.md#coleclientitem__dodragdrop), or [COleServerItem::DoDragDrop](../../mfc/reference/coleserveritem-class.md#coleserveritem__dodragdrop) function. These functions will create a `COleDropSource` object for you. You might want to modify the default behavior of the `COleDropSource` overridable functions. These member functions will be called at the appropriate times by the framework.  
+ To use a `COleDropSource` object, just call the constructor. This simplifies the process of determining what events, such as a mouse click, begin a drag operation using [COleDataSource::DoDragDrop](../../mfc/reference/coledatasource-class.md#dodragdrop), [COleClientItem::DoDragDrop](../../mfc/reference/coleclientitem-class.md#dodragdrop), or [COleServerItem::DoDragDrop](../../mfc/reference/coleserveritem-class.md#dodragdrop) function. These functions will create a `COleDropSource` object for you. You might want to modify the default behavior of the `COleDropSource` overridable functions. These member functions will be called at the appropriate times by the framework.  
   
  For more information on drag-and-drop operations using OLE, see the article [Drag and Drop (OLE)](../../mfc/drag-and-drop-ole.md).  
   
@@ -81,15 +81,15 @@ class COleDropSource : public CCmdTarget
 ## Requirements  
  **Header:** afxole.h  
   
-##  <a name="coledropsource__coledropsource"></a>  COleDropSource::COleDropSource  
+##  <a name="coledropsource"></a>  COleDropSource::COleDropSource  
  Constructs a `COleDropSource` object.  
   
 ```  
 COleDropSource();
 ```  
   
-##  <a name="coledropsource__givefeedback"></a>  COleDropSource::GiveFeedback  
- Called by the framework after calling [COleDropTarget::OnDragOver](../../mfc/reference/coledroptarget-class.md#coledroptarget__ondragover) or [COleDropTarget::DragEnter](../../mfc/reference/coledroptarget-class.md#coledroptarget__ondragenter).  
+##  <a name="givefeedback"></a>  COleDropSource::GiveFeedback  
+ Called by the framework after calling [COleDropTarget::OnDragOver](../../mfc/reference/coledroptarget-class.md#ondragover) or [COleDropTarget::DragEnter](../../mfc/reference/coledroptarget-class.md#ondragenter).  
   
 ```  
 virtual SCODE GiveFeedback(DROPEFFECT dropEffect);
@@ -97,7 +97,7 @@ virtual SCODE GiveFeedback(DROPEFFECT dropEffect);
   
 ### Parameters  
  `dropEffect`  
- The effect you would like to display to the user, usually indicating what would happen if a drop occurred at this point with the selected data. Typically, this is the value returned by the most recent call to [CView::OnDragEnter](../../mfc/reference/cview-class.md#cview__ondragenter) or [CView::OnDragOver](../../mfc/reference/cview-class.md#cview__ondragover). It can be one or more of the following:  
+ The effect you would like to display to the user, usually indicating what would happen if a drop occurred at this point with the selected data. Typically, this is the value returned by the most recent call to [CView::OnDragEnter](../../mfc/reference/cview-class.md#ondragenter) or [CView::OnDragOver](../../mfc/reference/cview-class.md#ondragover). It can be one or more of the following:  
   
 - `DROPEFFECT_NONE` A drop would not be allowed.  
   
@@ -117,7 +117,7 @@ virtual SCODE GiveFeedback(DROPEFFECT dropEffect);
   
  For more information, see [IDropSource::GiveFeedback](http://msdn.microsoft.com/library/windows/desktop/ms693723), [IDropTarget::DragOver](http://msdn.microsoft.com/library/windows/desktop/ms680129), and [IDropTarget::DragEnter](http://msdn.microsoft.com/library/windows/desktop/ms680106) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="coledropsource__onbegindrag"></a>  COleDropSource::OnBeginDrag  
+##  <a name="onbegindrag"></a>  COleDropSource::OnBeginDrag  
  Called by the framework when an event occurs that could begin a drag operation, such as pressing the left mouse button.  
   
 ```  
@@ -134,7 +134,7 @@ virtual BOOL OnBeginDrag(CWnd* pWnd);
 ### Remarks  
  Override this function if you want to modify the way the dragging process is started. The default implementation captures the mouse and stays in drag mode until the user clicks the left or right mouse button or hits ESC, at which time it releases the mouse.  
   
-##  <a name="coledropsource__querycontinuedrag"></a>  COleDropSource::QueryContinueDrag  
+##  <a name="querycontinuedrag"></a>  COleDropSource::QueryContinueDrag  
  After dragging has begun, this function is called repeatedly by the framework until the drag operation is either canceled or completed.  
   
 ```  
@@ -160,8 +160,8 @@ virtual SCODE QueryContinueDrag(
  Because this function is called frequently, it should be optimized as much as possible.  
   
 ## See Also  
- [MFC Sample HIERSVR](../../top/visual-cpp-samples.md)   
- [MFC Sample OCLIENT](../../top/visual-cpp-samples.md)   
+ [MFC Sample HIERSVR](../../visual-cpp-samples.md)   
+ [MFC Sample OCLIENT](../../visual-cpp-samples.md)   
  [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)
 

@@ -43,9 +43,9 @@ You may want to combine the advantages of a dual interface (that is, the flexibi
  Although it is possible to expose multiple dual interfaces on a single COM object, it is not recommended. If there are multiple dual interfaces, there must be only one `IDispatch` interface exposed. The techniques available to ensure that this is the case carry penalties such as loss of function or increased code complexity. The developer considering this approach should carefully weigh the advantages and disadvantages.  
   
 ## Exposing a Single IDispatch Interface  
- It is possible to expose multiple dual interfaces on a single object by deriving from two or more specializations of `IDispatchImpl`. However, if you allow clients to query for the `IDispatch` interface, you will need to use the [COM_INTERFACE_ENTRY2](../Topic/COM_INTERFACE_ENTRY2.md) macro (or [COM_INTERFACE_ENTRY_IID](../Topic/COM_INTERFACE_ENTRY_IID.md)) to specify which base class to use for the implementation of `IDispatch`.  
+ It is possible to expose multiple dual interfaces on a single object by deriving from two or more specializations of `IDispatchImpl`. However, if you allow clients to query for the `IDispatch` interface, you will need to use the [COM_INTERFACE_ENTRY2](http://msdn.microsoft.com/library/3d48c53b-827b-42cc-9e22-594f7ea2bf0b) macro (or [COM_INTERFACE_ENTRY_IID](http://msdn.microsoft.com/library/1bb69549-2099-4e20-ad5e-4c5a32f44e4b)) to specify which base class to use for the implementation of `IDispatch`.  
   
- [!code-cpp[NVC_ATL_COM#23](../atl/codesnippet/CPP/multiple-dual-interfaces_1.h)]  
+ [!code-cpp[NVC_ATL_COM#23](../atl/codesnippet/cpp/multiple-dual-interfaces_1.h)]  
   
  Because only one `IDispatch` interface is exposed, clients that can only access your objects through the `IDispatch` interface will not be able to access the methods or properties in any other interface.  
   

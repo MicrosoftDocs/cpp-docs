@@ -54,7 +54,7 @@ Allows selection among multiple sections of code, depending on the value of an i
 ```  
   
 ## Remarks  
- The *expression* must be of an integral type or of a class type for which there is an unambiguous conversion to integral type. Integral promotion is performed as described in [Integral Promotions](../misc/integral-promotions.md).  
+ The *expression* must be of an integral type or of a class type for which there is an unambiguous conversion to integral type. Integral promotion is performed as described in [Standard Conversions](standard-conversions.md).  
   
  The `switch` statement body consists of a series of **case** labels and an optional **default** label. No two constant expressions in **case** statements can evaluate to the same value. The **default** label can appear only once. The labeled statements are not syntactic requirements, but the `switch` statement is meaningless without them.   The default statement need not come at the end; it can appear anywhere in the body of the switch statement. A case or default label can only appear inside a switch statement.  
   
@@ -148,4 +148,4 @@ int main(int argc, char *argv[])
 ## See Also  
  [Selection Statements](../cpp/selection-statements-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)   
- [(NOTINBUILD) Using Labels in the case Statement](http://msdn.microsoft.com/en-us/a6ff057d-1aee-42ed-a28d-ee6a565b3197)
+ 

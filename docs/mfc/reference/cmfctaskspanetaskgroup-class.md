@@ -49,43 +49,43 @@ class CMFCTasksPaneTaskGroup : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCTasksPaneTaskGroup::CMFCTasksPaneTaskGroup](#cmfctaskspanetaskgroup__cmfctaskspanetaskgroup)|Constructs a `CMFCTasksPaneTaskGroup` object.|  
+|[CMFCTasksPaneTaskGroup::CMFCTasksPaneTaskGroup](#cmfctaskspanetaskgroup)|Constructs a `CMFCTasksPaneTaskGroup` object.|  
 |`CMFCTasksPaneTaskGroup::~CMFCTasksPaneTaskGroup`|Destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCTasksPaneTaskGroup::SetACCData](#cmfctaskspanetaskgroup__setaccdata)|Determines the accessibility data for the current task group.|  
+|[CMFCTasksPaneTaskGroup::SetACCData](#setaccdata)|Determines the accessibility data for the current task group.|  
   
 ### Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCTasksPaneTaskGroup::m_bIsBottom](#cmfctaskspanetaskgroup__m_bisbottom)|Determines whether the task group is aligned to the bottom of the task pane control.|  
-|[CMFCTasksPaneTaskGroup::m_bIsCollapsed](#cmfctaskspanetaskgroup__m_biscollapsed)|Determines whether the task group is collapsed.|  
-|[CMFCTasksPaneTaskGroup::m_bIsSpecial](#cmfctaskspanetaskgroup__m_bisspecial)|Determines whether the task group is *special.* The framework displays special captions in a different color.|  
-|[CMFCTasksPaneTaskGroup::m_lstTasks](#cmfctaskspanetaskgroup__m_lsttasks)|Contains the internal list of tasks.|  
-|[CMFCTasksPaneTaskGroup::m_rect](#cmfctaskspanetaskgroup__m_rect)|Specifies the bounding rectangle of the group caption.|  
-|[CMFCTasksPaneTaskGroup::m_rectGroup](#cmfctaskspanetaskgroup__m_rectgroup)|Specifies the bounding rectangle of the group.|  
-|[CMFCTasksPaneTaskGroup::m_strName](#cmfctaskspanetaskgroup__m_strname)|Specifies the name of the group.|  
+|[CMFCTasksPaneTaskGroup::m_bIsBottom](#m_bisbottom)|Determines whether the task group is aligned to the bottom of the task pane control.|  
+|[CMFCTasksPaneTaskGroup::m_bIsCollapsed](#m_biscollapsed)|Determines whether the task group is collapsed.|  
+|[CMFCTasksPaneTaskGroup::m_bIsSpecial](#m_bisspecial)|Determines whether the task group is *special.* The framework displays special captions in a different color.|  
+|[CMFCTasksPaneTaskGroup::m_lstTasks](#m_lsttasks)|Contains the internal list of tasks.|  
+|[CMFCTasksPaneTaskGroup::m_rect](#m_rect)|Specifies the bounding rectangle of the group caption.|  
+|[CMFCTasksPaneTaskGroup::m_rectGroup](#m_rectgroup)|Specifies the bounding rectangle of the group.|  
+|[CMFCTasksPaneTaskGroup::m_strName](#m_strname)|Specifies the name of the group.|  
   
 ## Remarks  
  The following illustration shows an expanded task group:  
   
- ![Task group, expanded](../../mfc/reference/media/nexttaskgrpexpand.png "NextTaskGrpExpand")  
+ ![Task group, expanded](../../mfc/reference/media/nexttaskgrpexpand.png "nexttaskgrpexpand")  
   
  The following illustration shows a collapsed task group:  
   
- ![Collapsed task group](../../mfc/reference/media/nexttaskgrpcollapse.png "NextTaskGrpCollapse")  
+ ![Collapsed task group](../../mfc/reference/media/nexttaskgrpcollapse.png "nexttaskgrpcollapse")  
   
  The following illustration shows a task group without a caption:  
   
- ![Task group without a caption](../../mfc/reference/media/nexttaskgrpnocapt.png "NextTaskGrpNoCapt")  
+ ![Task group without a caption](../../mfc/reference/media/nexttaskgrpnocapt.png "nexttaskgrpnocapt")  
   
  The following illustration shows two task groups. The first task group is marked as special by setting the `m_bIsSpecial` flag to `TRUE`, while the second task group is not special. Note how the caption for the first task group is darker than the second task group:  
   
- ![Special task group](../../mfc/reference/media/nexttaskgrpspecial.png "NextTaskGrpSpecial")  
+ ![Special task group](../../mfc/reference/media/nexttaskgrpspecial.png "nexttaskgrpspecial")  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -95,7 +95,7 @@ class CMFCTasksPaneTaskGroup : public CObject
 ## Requirements  
  **Header:** afxTasksPane.h  
   
-##  <a name="cmfctaskspanetaskgroup__cmfctaskspanetaskgroup"></a>  CMFCTasksPaneTaskGroup::CMFCTasksPaneTaskGroup  
+##  <a name="cmfctaskspanetaskgroup"></a>  CMFCTasksPaneTaskGroup::CMFCTasksPaneTaskGroup  
  Constructs a `CMFCTasksPaneTaskGroup` object.  
   
 ```  
@@ -129,7 +129,7 @@ CMFCTasksPaneTaskGroup(
   
 ### Remarks  
   
-##  <a name="cmfctaskspanetaskgroup__m_bisbottom"></a>  CMFCTasksPaneTaskGroup::m_bIsBottom  
+##  <a name="m_bisbottom"></a>  CMFCTasksPaneTaskGroup::m_bIsBottom  
  Determines whether the task group is aligned to the bottom of the task pane control.  
   
 ```  
@@ -137,9 +137,9 @@ BOOL m_bIsBottom;
 ```  
   
 ### Remarks  
- Only one group can be aligned to the bottom of the task pane control. This task group must be added last. For more information, see [CMFCTasksPane::AddGroup](../../mfc/reference/cmfctaskspane-class.md#cmfctaskspane__addgroup).  
+ Only one group can be aligned to the bottom of the task pane control. This task group must be added last. For more information, see [CMFCTasksPane::AddGroup](../../mfc/reference/cmfctaskspane-class.md#addgroup).  
   
-##  <a name="cmfctaskspanetaskgroup__m_biscollapsed"></a>  CMFCTasksPaneTaskGroup::m_bIsCollapsed  
+##  <a name="m_biscollapsed"></a>  CMFCTasksPaneTaskGroup::m_bIsCollapsed  
  Determines whether the task group is collapsed.  
   
 ```  
@@ -147,9 +147,9 @@ BOOL m_bIsCollapsed;
 ```  
   
 ### Remarks  
- You can enable or disable the ability to collapse groups on the task pane by calling [CMFCTasksPane::EnableGroupCollapse](../../mfc/reference/cmfctaskspane-class.md#cmfctaskspane__enablegroupcollapse).  
+ You can enable or disable the ability to collapse groups on the task pane by calling [CMFCTasksPane::EnableGroupCollapse](../../mfc/reference/cmfctaskspane-class.md#enablegroupcollapse).  
   
-##  <a name="cmfctaskspanetaskgroup__m_bisspecial"></a>  CMFCTasksPaneTaskGroup::m_bIsSpecial  
+##  <a name="m_bisspecial"></a>  CMFCTasksPaneTaskGroup::m_bIsSpecial  
  Determines whether the task group is *special* and whether the caption for a special task group should be identified by a different color.  
   
 ```  
@@ -159,7 +159,7 @@ BOOL m_bIsSpecial;
 ### Remarks  
  If your application is using the Windows XP visual theme and `m_bIsSpecial` is `FALSE`, the framework calls `DrawThemeBackground` with the `EBP_NORMALGROUPBACKGROUND` flag. If `m_bIsSpecial` is `TRUE`, the framework calls `DrawThemeBackground` with the `EBP_SPECIALGROUPBACKGROUND` flag.  
   
-##  <a name="cmfctaskspanetaskgroup__m_lsttasks"></a>  CMFCTasksPaneTaskGroup::m_lstTasks  
+##  <a name="m_lsttasks"></a>  CMFCTasksPaneTaskGroup::m_lstTasks  
  Contains the internal list of tasks.  
   
 ```  
@@ -167,9 +167,9 @@ CObList m_lstTasks;
 ```  
   
 ### Remarks  
- To fill this list, call [CMFCTasksPane::AddTask](../../mfc/reference/cmfctaskspane-class.md#cmfctaskspane__addtask).  
+ To fill this list, call [CMFCTasksPane::AddTask](../../mfc/reference/cmfctaskspane-class.md#addtask).  
   
-##  <a name="cmfctaskspanetaskgroup__m_rect"></a>  CMFCTasksPaneTaskGroup::m_rect  
+##  <a name="m_rect"></a>  CMFCTasksPaneTaskGroup::m_rect  
  Specifies the bounding rectangle of the group caption.  
   
 ```  
@@ -179,7 +179,7 @@ CRect m_rect;
 ### Remarks  
  This value is automatically calculated by the framework.  
   
-##  <a name="cmfctaskspanetaskgroup__m_rectgroup"></a>  CMFCTasksPaneTaskGroup::m_rectGroup  
+##  <a name="m_rectgroup"></a>  CMFCTasksPaneTaskGroup::m_rectGroup  
  Specifies the bounding rectangle of the group.  
   
 ```  
@@ -189,7 +189,7 @@ CRect m_rectGroup;
 ### Remarks  
  This value is calculated automatically by the framework.  
   
-##  <a name="cmfctaskspanetaskgroup__m_strname"></a>  CMFCTasksPaneTaskGroup::m_strName  
+##  <a name="m_strname"></a>  CMFCTasksPaneTaskGroup::m_strName  
  Specifies the name of the group.  
   
 ```  
@@ -199,7 +199,7 @@ CString m_strName;
 ### Remarks  
  If this value is empty, the group caption is not displayed and the group cannot be collapsed.  
   
-##  <a name="cmfctaskspanetaskgroup__setaccdata"></a>  CMFCTasksPaneTaskGroup::SetACCData  
+##  <a name="setaccdata"></a>  CMFCTasksPaneTaskGroup::SetACCData  
  Determines the accessibility data for the current task group.  
   
 ```  

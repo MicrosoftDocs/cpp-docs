@@ -87,22 +87,22 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
   
 ||||  
 |-|-|-|  
-|[__abstract](../misc/abstract.md) <sup>2</sup>|[__alignof Operator](../cpp/alignof-operator.md)|[__asm](../assembler/inline/asm.md)|  
-|[__assume](../intrinsics/assume.md)|[__based](../cpp/based-pointers-cpp.md)|[__box](../misc/box.md) <sup>2</sup>|  
-|[__cdecl](../cpp/cdecl.md)|[__declspec](../cpp/declspec.md)|[__delegate](../misc/delegate.md) <sup>2</sup>|  
+|[__abstract](../dotnet/declaration-of-a-managed-class-type.md) <sup>2</sup>|[__alignof Operator](../cpp/alignof-operator.md)|[__asm](../assembler/inline/asm.md)|  
+|[__assume](../intrinsics/assume.md)|[__based](../cpp/based-pointers-cpp.md)|[__box](../dotnet/value-type-semantics.md) <sup>2</sup>|  
+|[__cdecl](../cpp/cdecl.md)|[__declspec](../cpp/declspec.md)|[__delegate](../dotnet/delegates-and-events.md) <sup>2</sup>|  
 |[__event](../cpp/event.md)|[__except](../cpp/try-except-statement.md)|[__fastcall](../cpp/fastcall.md)|  
-|[__finally](../cpp/try-finally-statement.md)|[__forceinline](../misc/inline-inline-forceinline.md)|[__gc](../misc/gc.md) <sup>2</sup>|  
+|[__finally](../cpp/try-finally-statement.md)|[__forceinline](../cpp/inline-functions-cpp.md)|[__gc](../dotnet/declaration-of-a-clr-reference-class-object.md) <sup>2</sup>|  
 |[__hook](../cpp/hook.md) <sup>3</sup>|[__identifier](../windows/identifier-cpp-cli.md)|[__if_exists](../cpp/if-exists-statement.md)|  
-|[__if_not_exists](../cpp/if-not-exists-statement.md)|[__inline](../misc/inline-inline-forceinline.md)|[__int16](../cpp/int8-int16-int32-int64.md)|  
+|[__if_not_exists](../cpp/if-not-exists-statement.md)|[__inline](inline-functions-cpp.md)|[__int16](../cpp/int8-int16-int32-int64.md)|  
 |[__int32](../cpp/int8-int16-int32-int64.md)|[__int64](../cpp/int8-int16-int32-int64.md)|[__int8](../cpp/int8-int16-int32-int64.md)|  
 |[__interface](../cpp/interface.md)|[__leave](../cpp/try-finally-statement.md)|[__m128](../cpp/m128.md)|  
 |[__m128d](../cpp/m128d.md)|[__m128i](../cpp/m128i.md)|[__m64](../cpp/m64.md)|  
-|[__multiple_inheritance](../cpp/inheritance-keywords.md)|[__nogc](../misc/nogc.md) <sup>2</sup>|[__noop](../intrinsics/noop.md)|  
-|[__pin](../misc/pin.md) <sup>2</sup>|[__property](../misc/property.md) <sup>2</sup>|[__raise](../cpp/raise.md)|  
-|[__sealed](../misc/sealed.md) <sup>2</sup>|[__single_inheritance](../cpp/inheritance-keywords.md)|[__stdcall](../cpp/stdcall.md)|  
+|[__multiple_inheritance](../cpp/inheritance-keywords.md)|[__nogc](../dotnet/declaration-of-a-clr-reference-class-object.md) <sup>2</sup>|[__noop](../intrinsics/noop.md)|  
+|`__pin` <sup>2</sup>|`__property` <sup>2</sup>|[__raise](../cpp/raise.md)|  
+|`__sealed` <sup>2</sup>|[__single_inheritance](../cpp/inheritance-keywords.md)|[__stdcall](../cpp/stdcall.md)|  
 |[__super](../cpp/super.md)|[__thiscall](../cpp/thiscall.md)|[__try/\__except](../cpp/try-except-statement.md), [__try/\__finally](../cpp/try-finally-statement.md)|  
-|[__try_cast](../misc/try-cast.md) <sup>2</sup>|[__unaligned](../cpp/unaligned.md)|[__unhook](../cpp/unhook.md) <sup>3</sup>|  
-|[__uuidof](../cpp/uuidof-operator.md)|[__value](../misc/value.md) <sup>2</sup>|[__virtual_inheritance](../cpp/inheritance-keywords.md)|  
+|[__try_cast](../dotnet/cast-notation-and-introduction-of-safe-cast-angles.md) <sup>2</sup>|[__unaligned](../cpp/unaligned.md)|[__unhook](../cpp/unhook.md) <sup>3</sup>|  
+|[__uuidof](../cpp/uuidof-operator.md)|[__value](../dotnet/value-type-semantics.md) <sup>2</sup>|[__virtual_inheritance](../cpp/inheritance-keywords.md)|  
 |[__w64](../cpp/w64.md)|[__wchar_t, wchar_t](../cpp/fundamental-types-cpp.md)|[abstract](../windows/abstract-cpp-component-extensions.md)|  
 |[array](../windows/arrays-cpp-component-extensions.md)|[auto](../cpp/auto-keyword.md)|[bool](../cpp/bool-cpp.md)|  
 |[break](../cpp/break-statement-cpp.md)|[case](../cpp/switch-statement-cpp.md)|[catch](../cpp/try-throw-and-catch-statements-cpp.md)|  
@@ -117,10 +117,10 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
 |[float](../cpp/fundamental-types-cpp.md)|[for](../cpp/for-statement-cpp.md)|[for each, in](../dotnet/for-each-in.md)|  
 |[friend](../cpp/friend-cpp.md)|[friend_as](../preprocessor/hash-using-directive-cpp.md)|[gcnew](../windows/ref-new-gcnew-cpp-component-extensions.md)|  
 |[generic](../windows/generics-cpp-component-extensions.md)|[goto](../cpp/goto-statement-cpp.md)|[if](../cpp/if-else-statement-cpp.md)|  
-|[initonly](../dotnet/initonly-cpp-cli.md)|[inline](../misc/inline-inline-forceinline.md)|[int](../cpp/fundamental-types-cpp.md)|  
+|[initonly](../dotnet/initonly-cpp-cli.md)|[inline](../cpp/inline-functions-cpp.md)|[int](../cpp/fundamental-types-cpp.md)|  
 |[interface class](../windows/interface-class-cpp-component-extensions.md)|[interface struct](../windows/interface-class-cpp-component-extensions.md)|[interior_ptr](../windows/interior-ptr-cpp-cli.md)|  
 |[literal](../windows/literal-cpp-component-extensions.md)|[long](../cpp/fundamental-types-cpp.md)|[mutable](../cpp/mutable-data-members-cpp.md)|  
-|[naked](../cpp/naked-cpp.md) <sup>1</sup>|[namespace](../misc/namespace-declaration.md)|[new](../windows/new-new-slot-in-vtable-cpp-component-extensions.md)|  
+|[naked](../cpp/naked-cpp.md) <sup>1</sup>|[namespace](namespaces-cpp.md)|[new](../windows/new-new-slot-in-vtable-cpp-component-extensions.md)|  
 |[new](../cpp/new-operator-cpp.md)|[noinline](../cpp/noinline.md) <sup>1</sup>|[noreturn](../cpp/noreturn.md) <sup>1</sup>|  
 |[nothrow](../cpp/nothrow-cpp.md) <sup>1</sup>|[novtable](../cpp/novtable.md) <sup>1</sup>|[nullptr](../cpp/nullptr.md)|  
 |[operator](../cpp/operator-overloading.md)|[private](../cpp/private-cpp.md)|[property](../windows/property-cpp-component-extensions.md)|  
@@ -128,13 +128,13 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
 |[ref class](../windows/classes-and-structs-cpp-component-extensions.md)|[ref struct](../windows/classes-and-structs-cpp-component-extensions.md)|[register](http://msdn.microsoft.com/en-us/5b66905a-2f7f-4918-bb55-5e66d4bc50f9)|  
 |[reinterpret_cast](../cpp/reinterpret-cast-operator.md)|[return](../cpp/return-statement-cpp.md)|[safecast](../windows/safe-cast-cpp-component-extensions.md)|  
 |[sealed](../windows/sealed-cpp-component-extensions.md)|[selectany](../cpp/selectany.md) <sup>1</sup>|[short](../cpp/fundamental-types-cpp.md)|  
-|[signed](../cpp/fundamental-types-cpp.md)|[sizeof](../cpp/sizeof-operator.md)|[static](../misc/static-cpp.md)|  
+|[signed](../cpp/fundamental-types-cpp.md)|[sizeof](../cpp/sizeof-operator.md)|[static](storage-classes-cpp.md)|  
 |[static_assert](../cpp/static-assert.md)|[static_cast](../cpp/static-cast-operator.md)|[struct](../cpp/struct-cpp.md)|  
-|[switch](../cpp/switch-statement-cpp.md)|[template](../Topic/Template%20Specifications.md)|[this](../cpp/this-pointer.md)|  
+|[switch](../cpp/switch-statement-cpp.md)|[template](templates-cpp.md)|[this](../cpp/this-pointer.md)|  
 |[thread](../cpp/thread.md) <sup>1</sup>|[throw](../cpp/try-throw-and-catch-statements-cpp.md)|[true](../cpp/true-cpp.md)|  
-|[try](../cpp/try-throw-and-catch-statements-cpp.md)|[typedef](http://msdn.microsoft.com/en-us/cc96cf26-ba93-4179-951e-695d1f5fdcf1)|[typeid](../cpp/typeid-operator.md)|  
+|[try](../cpp/try-throw-and-catch-statements-cpp.md)|[typedef](aliases-and-typedefs-cpp.md)|[typeid](../cpp/typeid-operator.md)|  
 |[typeid](../windows/typeid-cpp-component-extensions.md)|[typename](../cpp/typename.md)|[union](../cpp/unions.md)|  
-|[unsigned](../cpp/fundamental-types-cpp.md)|[using](../cpp/using-declaration.md) declaration, [using](../misc/using-directive-cpp.md) directive|[uuid](../cpp/uuid-cpp.md) <sup>1</sup>|  
+|[unsigned](../cpp/fundamental-types-cpp.md)|[using](../cpp/using-declaration.md) declaration, [using](namespaces-cpp.md#using_directives) directive|[uuid](../cpp/uuid-cpp.md) <sup>1</sup>|  
 |[value class](../windows/classes-and-structs-cpp-component-extensions.md)|[value struct](../windows/classes-and-structs-cpp-component-extensions.md)|[virtual](../cpp/virtual-cpp.md)|  
 |[void](../cpp/void-cpp.md)|[volatile](../cpp/volatile-cpp.md)|[while](../cpp/while-statement-cpp.md)|  
   
@@ -161,4 +161,4 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
   
 ## See Also  
  [Lexical Conventions](../cpp/lexical-conventions.md)   
- [C++ Operators](../misc/cpp-operators.md)
+ [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)

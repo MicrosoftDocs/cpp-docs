@@ -62,26 +62,3 @@ int main() {
    System::Delegate^ pD = gcnew D( pC, &C::mf );   // C3352  
 }  
 ```  
-  
- The following sample generates C3352:  
-  
-```  
-// C3352_2.cpp  
-// compile with: /clr:oldSyntax  
-__delegate int D(int, int);  
-  
-__gc class C {  
-public:  
-   int mf(int) {  
-      return 1;  
-   }  
-  
-   // Uncomment the following line to resolve.  
-   // int mf(int, int) { return 1; }  
-};  
-  
-int main() {  
-   C *pC = new C;  
-   System::Delegate *pD = new D(pC, &C::mf);   // C3352  
-}  
-```

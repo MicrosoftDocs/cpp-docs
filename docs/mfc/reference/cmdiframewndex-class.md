@@ -52,98 +52,98 @@ class CMDIFrameWndEx : public CMDIFrameWnd
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMDIFrameWndEx::ActiveItemRecalcLayout](#cmdiframewndex__activeitemrecalclayout)|Recalculates the layout of the active item.|  
+|[CMDIFrameWndEx::ActiveItemRecalcLayout](#activeitemrecalclayout)|Recalculates the layout of the active item.|  
 |`CMDIFrameWndEx::AddDockSite`|This method is not used.|  
-|[CMDIFrameWndEx::AddPane](#cmdiframewndex__addpane)|Registers a pane with the docking manager.|  
-|[CMDIFrameWndEx::AdjustClientArea](#cmdiframewndex__adjustclientarea)|Reduces the client area to allow for a border.|  
-|[CMDIFrameWndEx::AdjustDockingLayout](#cmdiframewndex__adjustdockinglayout)|Recalculates the layout of all docked panes.|  
-|[CMDIFrameWndEx::AreMDITabs](#cmdiframewndex__aremditabs)|Determines whether the MDI Tabs feature or the MDI Tabbed Groups feature is enabled.|  
-|[CMDIFrameWndEx::CanCovertControlBarToMDIChild](#cmdiframewndex__cancovertcontrolbartomdichild)|Called by the framework to determine whether the frame window can convert docking panes to tabbed documents.|  
-|[CMDIFrameWndEx::ControlBarToTabbedDocument](#cmdiframewndex__controlbartotabbeddocument)|Converts the specified docking pane to a tabbed document.|  
-|[CMDIFrameWndEx::CreateDocumentWindow](#cmdiframewndex__createdocumentwindow)|Creates a child document window.|  
-|[CMDIFrameWndEx::CreateNewWindow](#cmdiframewndex__createnewwindow)|Called by the framework to create a new window.|  
+|[CMDIFrameWndEx::AddPane](#addpane)|Registers a pane with the docking manager.|  
+|[CMDIFrameWndEx::AdjustClientArea](#adjustclientarea)|Reduces the client area to allow for a border.|  
+|[CMDIFrameWndEx::AdjustDockingLayout](#adjustdockinglayout)|Recalculates the layout of all docked panes.|  
+|[CMDIFrameWndEx::AreMDITabs](#aremditabs)|Determines whether the MDI Tabs feature or the MDI Tabbed Groups feature is enabled.|  
+|[CMDIFrameWndEx::CanCovertControlBarToMDIChild](#cancovertcontrolbartomdichild)|Called by the framework to determine whether the frame window can convert docking panes to tabbed documents.|  
+|[CMDIFrameWndEx::ControlBarToTabbedDocument](#controlbartotabbeddocument)|Converts the specified docking pane to a tabbed document.|  
+|[CMDIFrameWndEx::CreateDocumentWindow](#createdocumentwindow)|Creates a child document window.|  
+|[CMDIFrameWndEx::CreateNewWindow](#createnewwindow)|Called by the framework to create a new window.|  
 |`CMDIFrameWndEx::CreateObject`|Used by the framework to create a dynamic instance of this class type.|  
-|[CMDIFrameWndEx::DockPane](#cmdiframewndex__dockpane)|Docks the specified pane to the frame window.|  
-|[CMDIFrameWndEx::DockPaneLeftOf](#cmdiframewndex__dockpaneleftof)|Docks one pane to the left of another pane.|  
-|[CMDIFrameWndEx::EnableAutoHidePanes](#cmdiframewndex__enableautohidepanes)|Enables auto-hide mode for panes when they are docked at specified sides of the main frame window.|  
-|[CMDIFrameWndEx::EnableDocking](#cmdiframewndex__enabledocking)|Enables docking of the panes that belong to the MDI frame window.|  
-|[CMDIFrameWndEx::EnableFullScreenMainMenu](#cmdiframewndex__enablefullscreenmainmenu)|Shows or hides the main menu in full-screen mode.|  
-|[CMDIFrameWndEx::EnableFullScreenMode](#cmdiframewndex__enablefullscreenmode)|Enables full-screen mode for the frame window.|  
-|[CMDIFrameWndEx::EnableLoadDockState](#cmdiframewndex__enableloaddockstate)|Enables or disables the loading of the docking state.|  
-|[CMDIFrameWndEx::EnableMDITabbedGroups](#cmdiframewndex__enablemditabbedgroups)|Enables or disables the MDI Tabbed Groups feature.|  
-|[CMDIFrameWndEx::EnableMDITabs](#cmdiframewndex__enablemditabs)|Enables or disables the MDI Tabs feature. When enabled, the frame window displays a tab for each MDI child window.|  
-|[CMDIFrameWndEx::EnableMDITabsLastActiveActivation](#cmdiframewndex__enablemditabslastactiveactivation)|Specifies whether the last active tab should be activated when the user closes the current tab.|  
-|[CMDIFrameWndEx::EnablePaneMenu](#cmdiframewndex__enablepanemenu)|Enables or disables automatic creation and management of the pop-up pane menu, which displays a list of application panes.  .|  
-|[CMDIFrameWndEx::EnableWindowsDialog](#cmdiframewndex__enablewindowsdialog)|Inserts a menu item whose command ID calls a [CMFCWindowsManagerDialog](../../mfc/reference/cmfcwindowsmanagerdialog-class.md) dialog box.|  
-|[CMDIFrameWndEx::GetActivePopup](#cmdiframewndex__getactivepopup)|Returns a pointer to the currently displayed popup menu.|  
-|[CMDIFrameWndEx::GetPane](#cmdiframewndex__getpane)|Returns a pointer to the pane that has the specified control ID.|  
-|[CMDIFrameWndEx::GetDefaultResId](#cmdiframewndex__getdefaultresid)|Returns the ID of shared resources of the MDI frame window.|  
-|[CMDIFrameWndEx::GetMDITabGroups](#cmdiframewndex__getmditabgroups)|Returns a list of MDI tabbed windows.|  
-|[CMDIFrameWndEx::GetMDITabs](#cmdiframewndex__getmditabs)|Returns a reference to the underlined tabbed window.|  
-|[CMDIFrameWndEx::GetMDITabsContextMenuAllowedItems](#cmdiframewndex__getmditabscontextmenualloweditems)|Returns a combination of flags that determines what context menu items are valid when the MDI Tabbed Groups feature is enabled.|  
-|[CMDIFrameWndEx::GetMenuBar](#cmdiframewndex__getmenubar)|Returns a pointer to a menu bar object attached to the frame window.|  
-|[CMDIFrameWndEx::GetRibbonBar](#cmdiframewndex__getribbonbar)|Retrieves the ribbon bar control for the frame.|  
-|[CMDIFrameWndEx::GetTearOffBars](#cmdiframewndex__gettearoffbars)|Returns a list of [CPane](../../mfc/reference/cpane-class.md)-derived objects that are in a tear-off state.|  
+|[CMDIFrameWndEx::DockPane](#dockpane)|Docks the specified pane to the frame window.|  
+|[CMDIFrameWndEx::DockPaneLeftOf](#dockpaneleftof)|Docks one pane to the left of another pane.|  
+|[CMDIFrameWndEx::EnableAutoHidePanes](#enableautohidepanes)|Enables auto-hide mode for panes when they are docked at specified sides of the main frame window.|  
+|[CMDIFrameWndEx::EnableDocking](#enabledocking)|Enables docking of the panes that belong to the MDI frame window.|  
+|[CMDIFrameWndEx::EnableFullScreenMainMenu](#enablefullscreenmainmenu)|Shows or hides the main menu in full-screen mode.|  
+|[CMDIFrameWndEx::EnableFullScreenMode](#enablefullscreenmode)|Enables full-screen mode for the frame window.|  
+|[CMDIFrameWndEx::EnableLoadDockState](#enableloaddockstate)|Enables or disables the loading of the docking state.|  
+|[CMDIFrameWndEx::EnableMDITabbedGroups](#enablemditabbedgroups)|Enables or disables the MDI Tabbed Groups feature.|  
+|[CMDIFrameWndEx::EnableMDITabs](#enablemditabs)|Enables or disables the MDI Tabs feature. When enabled, the frame window displays a tab for each MDI child window.|  
+|[CMDIFrameWndEx::EnableMDITabsLastActiveActivation](#enablemditabslastactiveactivation)|Specifies whether the last active tab should be activated when the user closes the current tab.|  
+|[CMDIFrameWndEx::EnablePaneMenu](#enablepanemenu)|Enables or disables automatic creation and management of the pop-up pane menu, which displays a list of application panes.  .|  
+|[CMDIFrameWndEx::EnableWindowsDialog](#enablewindowsdialog)|Inserts a menu item whose command ID calls a [CMFCWindowsManagerDialog](../../mfc/reference/cmfcwindowsmanagerdialog-class.md) dialog box.|  
+|[CMDIFrameWndEx::GetActivePopup](#getactivepopup)|Returns a pointer to the currently displayed popup menu.|  
+|[CMDIFrameWndEx::GetPane](#getpane)|Returns a pointer to the pane that has the specified control ID.|  
+|[CMDIFrameWndEx::GetDefaultResId](#getdefaultresid)|Returns the ID of shared resources of the MDI frame window.|  
+|[CMDIFrameWndEx::GetMDITabGroups](#getmditabgroups)|Returns a list of MDI tabbed windows.|  
+|[CMDIFrameWndEx::GetMDITabs](#getmditabs)|Returns a reference to the underlined tabbed window.|  
+|[CMDIFrameWndEx::GetMDITabsContextMenuAllowedItems](#getmditabscontextmenualloweditems)|Returns a combination of flags that determines what context menu items are valid when the MDI Tabbed Groups feature is enabled.|  
+|[CMDIFrameWndEx::GetMenuBar](#getmenubar)|Returns a pointer to a menu bar object attached to the frame window.|  
+|[CMDIFrameWndEx::GetRibbonBar](#getribbonbar)|Retrieves the ribbon bar control for the frame.|  
+|[CMDIFrameWndEx::GetTearOffBars](#gettearoffbars)|Returns a list of [CPane](../../mfc/reference/cpane-class.md)-derived objects that are in a tear-off state.|  
 |`CMDIFrameWndEx::GetThisClass`|Called by the framework to obtain a pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|  
-|[CMDIFrameWndEx::GetToolbarButtonToolTipText](#cmdiframewndex__gettoolbarbuttontooltiptext)|Called by the framework when the application displays the tooltip for a toolbar button.|  
-|[CMDIFrameWndEx::InsertPane](#cmdiframewndex__insertpane)|Registers the specified pane with the docking manager.|  
-|[CMDIFrameWndEx::IsFullScreen](#cmdiframewndex__isfullscreen)|Determines whether the frame window is in full-screen mode.|  
-|[CMDIFrameWndEx::IsMDITabbedGroup](#cmdiframewndex__ismditabbedgroup)|Determines whether the MDI Tabbed Groups feature is enabled.|  
-|[CMDIFrameWndEx::IsMemberOfMDITabGroup](#cmdiframewndex__ismemberofmditabgroup)|Determines whether the specified tabbed window is in the list of windows that are in MDI Tabbed Groups.|  
-|[CMDIFrameWndEx::IsMenuBarAvailable](#cmdiframewndex__ismenubaravailable)|Determines whether the frame window has a menu bar.|  
-|[CMDIFrameWndEx::IsPointNearDockSite](#cmdiframewndex__ispointneardocksite)|Determines whether a specified point is near the dock site.|  
-|[CMDIFrameWndEx::IsPrintPreview](#cmdiframewndex__isprintpreview)|Determines whether the frame window is in print-preview mode.|  
-|[CMDIFrameWndEx::LoadFrame](#cmdiframewndex__loadframe)|Creates a frame window from resource information. (Overrides `CMDIFrameWnd::LoadFrame`.)|  
-|[CMDIFrameWndEx::LoadMDIState](#cmdiframewndex__loadmdistate)|Loads the specified layout of MDI Tabbed Groups and the list of previously opened documents.|  
-|[CMDIFrameWndEx::MDITabMoveToNextGroup](#cmdiframewndex__mditabmovetonextgroup)|Moves the active tab from the currently active tabbed window to the next or previous tabbed group.|  
-|[CMDIFrameWndEx::MDITabNewGroup](#cmdiframewndex__mditabnewgroup)|Creates a new tabbed group that has a single window.|  
-|[CMDIFrameWndEx::NegotiateBorderSpace](#cmdiframewndex__negotiateborderspace)|Negotiates border space in a frame window during OLE in-place activation.|  
-|[CMDIFrameWndEx::OnCloseDockingPane](#cmdiframewndex__onclosedockingpane)|Called by the framework when the user clicks the **Close** button on a dockable pane.|  
-|[CMDIFrameWndEx::OnCloseMiniFrame](#cmdiframewndex__oncloseminiframe)|Called by the framework when the user clicks the **Close** button on a floating mini frame window.|  
-|[CMDIFrameWndEx::OnClosePopupMenu](#cmdiframewndex__onclosepopupmenu)|Called by the framework when an active pop-up menu processes a `WM_DESTROY` message.|  
-|[CMDIFrameWndEx::OnCmdMsg](#cmdiframewndex__oncmdmsg)|Called by the framework to route and dispatch command messages and to update command user-interface objects.|  
-|[CMDIFrameWndEx::OnDrawMenuImage](#cmdiframewndex__ondrawmenuimage)|Called by the framework when the image associated with a menu item is drawn.|  
-|[CMDIFrameWndEx::OnDrawMenuLogo](#cmdiframewndex__ondrawmenulogo)|Called by the framework when a [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)processes a `WM_PAINT` message.|  
-|[CMDIFrameWndEx::OnEraseMDIClientBackground](#cmdiframewndex__onerasemdiclientbackground)|Called by the framework when the MDI frame window processes a `WM_ERASEBKGND` message.|  
-|[CMDIFrameWndEx::OnMenuButtonToolHitTest](#cmdiframewndex__onmenubuttontoolhittest)|Called by the framework when a [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)object processes a `WM_NCHITTEST` message.|  
-|[CMDIFrameWndEx::OnMoveMiniFrame](#cmdiframewndex__onmoveminiframe)|Called by the framework to move a mini-frame window.|  
-|[CMDIFrameWndEx::OnSetPreviewMode](#cmdiframewndex__onsetpreviewmode)|Sets the application's main frame window print-preview mode. (Overrides [CFrameWnd::OnSetPreviewMode](../../mfc/reference/cframewnd-class.md#cframewnd__onsetpreviewmode).)|  
-|[CMDIFrameWndEx::OnShowCustomizePane](#cmdiframewndex__onshowcustomizepane)|Called by the framework when a Quick Customize pane is activated.|  
-|[CMDIFrameWndEx::OnShowMDITabContextMenu](#cmdiframewndex__onshowmditabcontextmenu)|Called by the framework when a context menu should be displayed on one of the tabs. (Valid for MDI Tabbed Groups only.)|  
-|[CMDIFrameWndEx::OnShowPanes](#cmdiframewndex__onshowpanes)|Called by the framework to show or hide panes.|  
-|[CMDIFrameWndEx::OnShowPopupMenu](#cmdiframewndex__onshowpopupmenu)|Called by the framework when a pop-up menu is activated.|  
-|[CMDIFrameWndEx::OnSizeMDIClient](#cmdiframewndex__onsizemdiclient)|Called by the framework when the size of the client MDI window is changing.|  
-|[CMDIFrameWndEx::OnTearOffMenu](#cmdiframewndex__ontearoffmenu)|Called by the framework when a menu that has a tear-off bar is activated.|  
-|[CMDIFrameWndEx::OnUpdateFrameMenu](#cmdiframewndex__onupdateframemenu)|Called by the framework to update the frame menu. (Overrides `CMDIFrameWnd::OnUpdateFrameMenu`.)|  
-|[CMDIFrameWndEx::PaneFromPoint](#cmdiframewndex__panefrompoint)|Returns the docking pane that contains the specified point.|  
+|[CMDIFrameWndEx::GetToolbarButtonToolTipText](#gettoolbarbuttontooltiptext)|Called by the framework when the application displays the tooltip for a toolbar button.|  
+|[CMDIFrameWndEx::InsertPane](#insertpane)|Registers the specified pane with the docking manager.|  
+|[CMDIFrameWndEx::IsFullScreen](#isfullscreen)|Determines whether the frame window is in full-screen mode.|  
+|[CMDIFrameWndEx::IsMDITabbedGroup](#ismditabbedgroup)|Determines whether the MDI Tabbed Groups feature is enabled.|  
+|[CMDIFrameWndEx::IsMemberOfMDITabGroup](#ismemberofmditabgroup)|Determines whether the specified tabbed window is in the list of windows that are in MDI Tabbed Groups.|  
+|[CMDIFrameWndEx::IsMenuBarAvailable](#ismenubaravailable)|Determines whether the frame window has a menu bar.|  
+|[CMDIFrameWndEx::IsPointNearDockSite](#ispointneardocksite)|Determines whether a specified point is near the dock site.|  
+|[CMDIFrameWndEx::IsPrintPreview](#isprintpreview)|Determines whether the frame window is in print-preview mode.|  
+|[CMDIFrameWndEx::LoadFrame](#loadframe)|Creates a frame window from resource information. (Overrides `CMDIFrameWnd::LoadFrame`.)|  
+|[CMDIFrameWndEx::LoadMDIState](#loadmdistate)|Loads the specified layout of MDI Tabbed Groups and the list of previously opened documents.|  
+|[CMDIFrameWndEx::MDITabMoveToNextGroup](#mditabmovetonextgroup)|Moves the active tab from the currently active tabbed window to the next or previous tabbed group.|  
+|[CMDIFrameWndEx::MDITabNewGroup](#mditabnewgroup)|Creates a new tabbed group that has a single window.|  
+|[CMDIFrameWndEx::NegotiateBorderSpace](#negotiateborderspace)|Negotiates border space in a frame window during OLE in-place activation.|  
+|[CMDIFrameWndEx::OnCloseDockingPane](#onclosedockingpane)|Called by the framework when the user clicks the **Close** button on a dockable pane.|  
+|[CMDIFrameWndEx::OnCloseMiniFrame](#oncloseminiframe)|Called by the framework when the user clicks the **Close** button on a floating mini frame window.|  
+|[CMDIFrameWndEx::OnClosePopupMenu](#onclosepopupmenu)|Called by the framework when an active pop-up menu processes a `WM_DESTROY` message.|  
+|[CMDIFrameWndEx::OnCmdMsg](#oncmdmsg)|Called by the framework to route and dispatch command messages and to update command user-interface objects.|  
+|[CMDIFrameWndEx::OnDrawMenuImage](#ondrawmenuimage)|Called by the framework when the image associated with a menu item is drawn.|  
+|[CMDIFrameWndEx::OnDrawMenuLogo](#ondrawmenulogo)|Called by the framework when a [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)processes a `WM_PAINT` message.|  
+|[CMDIFrameWndEx::OnEraseMDIClientBackground](#onerasemdiclientbackground)|Called by the framework when the MDI frame window processes a `WM_ERASEBKGND` message.|  
+|[CMDIFrameWndEx::OnMenuButtonToolHitTest](#onmenubuttontoolhittest)|Called by the framework when a [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)object processes a `WM_NCHITTEST` message.|  
+|[CMDIFrameWndEx::OnMoveMiniFrame](#onmoveminiframe)|Called by the framework to move a mini-frame window.|  
+|[CMDIFrameWndEx::OnSetPreviewMode](#onsetpreviewmode)|Sets the application's main frame window print-preview mode. (Overrides [CFrameWnd::OnSetPreviewMode](../../mfc/reference/cframewnd-class.md#onsetpreviewmode).)|  
+|[CMDIFrameWndEx::OnShowCustomizePane](#onshowcustomizepane)|Called by the framework when a Quick Customize pane is activated.|  
+|[CMDIFrameWndEx::OnShowMDITabContextMenu](#onshowmditabcontextmenu)|Called by the framework when a context menu should be displayed on one of the tabs. (Valid for MDI Tabbed Groups only.)|  
+|[CMDIFrameWndEx::OnShowPanes](#onshowpanes)|Called by the framework to show or hide panes.|  
+|[CMDIFrameWndEx::OnShowPopupMenu](#onshowpopupmenu)|Called by the framework when a pop-up menu is activated.|  
+|[CMDIFrameWndEx::OnSizeMDIClient](#onsizemdiclient)|Called by the framework when the size of the client MDI window is changing.|  
+|[CMDIFrameWndEx::OnTearOffMenu](#ontearoffmenu)|Called by the framework when a menu that has a tear-off bar is activated.|  
+|[CMDIFrameWndEx::OnUpdateFrameMenu](#onupdateframemenu)|Called by the framework to update the frame menu. (Overrides `CMDIFrameWnd::OnUpdateFrameMenu`.)|  
+|[CMDIFrameWndEx::PaneFromPoint](#panefrompoint)|Returns the docking pane that contains the specified point.|  
 |`CMDIFrameWndEx::PreTranslateMessage`|Used by class [CWinApp](../../mfc/reference/cwinapp-class.md) to translate window messages before they are dispatched to the [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows functions.  (Overrides `CMDIFrameWnd::PreTranslateMessage`.)|  
-|[CMDIFrameWndEx::RecalcLayout](#cmdiframewndex__recalclayout)|Called by the framework to recalculate the layout of the frame window. (Overrides [CFrameWnd::RecalcLayout](../../mfc/reference/cframewnd-class.md#cframewnd__recalclayout).)|  
-|[CMDIFrameWndEx::RemovePaneFromDockManager](#cmdiframewndex__removepanefromdockmanager)|Unregisters a pane and removes it from the docking manager.|  
-|[CMDIFrameWndEx::SaveMDIState](#cmdiframewndex__savemdistate)|Saves the current layout of MDI Tabbed Groups and the list of previously opened documents.|  
-|[CMDIFrameWndEx::SetPrintPreviewFrame](#cmdiframewndex__setprintpreviewframe)|Sets the print preview frame window.|  
-|[CMDIFrameWndEx::SetupToolbarMenu](#cmdiframewndex__setuptoolbarmenu)|Modifies a toolbar object by searching for dummy items and replacing them with the specified user-defined items.|  
-|[CMDIFrameWndEx::ShowFullScreen](#cmdiframewndex__showfullscreen)|Switches the main frame from regular mode to full-screen mode.|  
-|[CMDIFrameWndEx::ShowPane](#cmdiframewndex__showpane)|Shows or hides the specified pane.|  
-|[CMDIFrameWndEx::ShowWindowsDialog](#cmdiframewndex__showwindowsdialog)|Creates a [CMFCWindowsManagerDialog](../../mfc/reference/cmfcwindowsmanagerdialog-class.md) box and opens it.|  
-|[CMDIFrameWndEx::TabbedDocumentToControlBar](#cmdiframewndex__tabbeddocumenttocontrolbar)|Converts the specified tabbed document to a docking pane.|  
-|[CMDIFrameWndEx::UpdateCaption](#cmdiframewndex__updatecaption)|Called by the framework to update the window frame caption.|  
-|[CMDIFrameWndEx::UpdateMDITabbedBarsIcons](#cmdiframewndex__updatemditabbedbarsicons)|Sets the icon for each MDI tabbed pane.|  
-|[CMDIFrameWndEx::WinHelp](#cmdiframewndex__winhelp)|Called by the framework to initiate the WinHelp application or context help. (Overrides [CWnd::WinHelp](../../mfc/reference/cwnd-class.md#cwnd__winhelp).)|  
+|[CMDIFrameWndEx::RecalcLayout](#recalclayout)|Called by the framework to recalculate the layout of the frame window. (Overrides [CFrameWnd::RecalcLayout](../../mfc/reference/cframewnd-class.md#recalclayout).)|  
+|[CMDIFrameWndEx::RemovePaneFromDockManager](#removepanefromdockmanager)|Unregisters a pane and removes it from the docking manager.|  
+|[CMDIFrameWndEx::SaveMDIState](#savemdistate)|Saves the current layout of MDI Tabbed Groups and the list of previously opened documents.|  
+|[CMDIFrameWndEx::SetPrintPreviewFrame](#setprintpreviewframe)|Sets the print preview frame window.|  
+|[CMDIFrameWndEx::SetupToolbarMenu](#setuptoolbarmenu)|Modifies a toolbar object by searching for dummy items and replacing them with the specified user-defined items.|  
+|[CMDIFrameWndEx::ShowFullScreen](#showfullscreen)|Switches the main frame from regular mode to full-screen mode.|  
+|[CMDIFrameWndEx::ShowPane](#showpane)|Shows or hides the specified pane.|  
+|[CMDIFrameWndEx::ShowWindowsDialog](#showwindowsdialog)|Creates a [CMFCWindowsManagerDialog](../../mfc/reference/cmfcwindowsmanagerdialog-class.md) box and opens it.|  
+|[CMDIFrameWndEx::TabbedDocumentToControlBar](#tabbeddocumenttocontrolbar)|Converts the specified tabbed document to a docking pane.|  
+|[CMDIFrameWndEx::UpdateCaption](#updatecaption)|Called by the framework to update the window frame caption.|  
+|[CMDIFrameWndEx::UpdateMDITabbedBarsIcons](#updatemditabbedbarsicons)|Sets the icon for each MDI tabbed pane.|  
+|[CMDIFrameWndEx::WinHelp](#winhelp)|Called by the framework to initiate the WinHelp application or context help. (Overrides [CWnd::WinHelp](../../mfc/reference/cwnd-class.md#winhelp).)|  
   
 ### Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMDIFrameWndEx::m_bCanCovertControlBarToMDIChild](#cmdiframewndex__m_bcancovertcontrolbartomdichild)|Determines whether docking panes can be converted to MDI child windows.|  
-|[CMDIFrameWndEx::m_bDisableSetRedraw](#cmdiframewndex__m_bdisablesetredraw)|Enables or disables redraw optimization for MDI child windows.|  
+|[CMDIFrameWndEx::m_bCanCovertControlBarToMDIChild](#m_bcancovertcontrolbartomdichild)|Determines whether docking panes can be converted to MDI child windows.|  
+|[CMDIFrameWndEx::m_bDisableSetRedraw](#m_bdisablesetredraw)|Enables or disables redraw optimization for MDI child windows.|  
   
 ## Remarks  
  To take advantage of extended customization features in your MDI application, derive the MDI frame window class of the application from `CMDIFrameWndEx` instead of `CMDIFrameWnd`.  
   
 ## Example  
- The following example derives a class from `CMDIFrameWndEx`. This code snippet comes from the [DrawClient Sample: MFC Ribbon-Based OLE Object Drawing Application](../../top/visual-cpp-samples.md).  
+ The following example derives a class from `CMDIFrameWndEx`. This code snippet comes from the [DrawClient Sample: MFC Ribbon-Based OLE Object Drawing Application](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_DrawClient#1](../../mfc/reference/codesnippet/CPP/cmdiframewndex-class_1.h)]  
+ [!code-cpp[NVC_MFC_DrawClient#1](../../mfc/reference/codesnippet/cpp/cmdiframewndex-class_1.h)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -161,14 +161,14 @@ class CMDIFrameWndEx : public CMDIFrameWnd
 ## Requirements  
  **Header:** afxMDIFrameWndEx.h  
   
-##  <a name="cmdiframewndex__activeitemrecalclayout"></a>  CMDIFrameWndEx::ActiveItemRecalcLayout  
+##  <a name="activeitemrecalclayout"></a>  CMDIFrameWndEx::ActiveItemRecalcLayout  
  Recalculates the layout of the active item.  
   
 ```  
 void ActiveItemRecalcLayout();
 ```  
   
-##  <a name="cmdiframewndex__addpane"></a>  CMDIFrameWndEx::AddPane  
+##  <a name="addpane"></a>  CMDIFrameWndEx::AddPane  
  Registers a pane with the docking manager.  
   
 ```  
@@ -190,14 +190,14 @@ BOOL AddPane(
 ### Remarks  
  Each pane must be registered with the [CDockingManager Class](../../mfc/reference/cdockingmanager-class.md) before it can take a part in the docking layout. Use this method to notify the docking manager that you want to dock a specific pane. Once that pane is registered, the docking manager aligns it based on its alignment setting and position in the list of panes maintained by the docking manager.  
   
-##  <a name="cmdiframewndex__adjustclientarea"></a>  CMDIFrameWndEx::AdjustClientArea  
+##  <a name="adjustclientarea"></a>  CMDIFrameWndEx::AdjustClientArea  
  Reduces the client area to allow for a border.  
   
 ```  
 virtual void AdjustClientArea();
 ```  
   
-##  <a name="cmdiframewndex__adjustdockinglayout"></a>  CMDIFrameWndEx::AdjustDockingLayout  
+##  <a name="adjustdockinglayout"></a>  CMDIFrameWndEx::AdjustDockingLayout  
  Recalculates the layout of all docked panes.  
   
 ```  
@@ -211,7 +211,7 @@ virtual void AdjustDockingLayout(HDWP hdwp=NULL);
 ### Remarks  
  Call this member function to recalculate the layout of all panes docked to the frame window.  
   
-##  <a name="cmdiframewndex__aremditabs"></a>  CMDIFrameWndEx::AreMDITabs  
+##  <a name="aremditabs"></a>  CMDIFrameWndEx::AreMDITabs  
  Determines whether the MDI tabs feature or the MDI tabbed groups feature is enabled.  
   
 ```  
@@ -236,11 +236,11 @@ BOOL AreMDITabs(int* pnMDITabsType=NULL) const;
  `Returns FALSE` if none of the above features is enabled.  
   
 ### Remarks  
- Use this function to determine whether MDI tabs or MDI tabbed groups is enabled for the frame window. Use [CMDIFrameWndEx::EnableMDITabs](#cmdiframewndex__enablemditabs) to enable or disable the MDI tabs feature.  
+ Use this function to determine whether MDI tabs or MDI tabbed groups is enabled for the frame window. Use [CMDIFrameWndEx::EnableMDITabs](#enablemditabs) to enable or disable the MDI tabs feature.  
   
- Use [CMDIFrameWndEx::EnableMDITabbedGroups](#cmdiframewndex__enablemditabbedgroups) to enable or disable the MDI tabbed groups feature.  
+ Use [CMDIFrameWndEx::EnableMDITabbedGroups](#enablemditabbedgroups) to enable or disable the MDI tabbed groups feature.  
   
-##  <a name="cmdiframewndex__cancovertcontrolbartomdichild"></a>  CMDIFrameWndEx::CanCovertControlBarToMDIChild  
+##  <a name="cancovertcontrolbartomdichild"></a>  CMDIFrameWndEx::CanCovertControlBarToMDIChild  
  Called by the framework to determine whether the frame window can convert docking panes to tabbed documents  
   
 ```  
@@ -251,9 +251,9 @@ virtual BOOL CanCovertControlBarToMDIChild();
  Returns `TRUE` if the frame window can convert docking panes to tabbed documents; otherwise returns `FALSE`.  
   
 ### Remarks  
- Override this method in a derived class and return `TRUE` to enable the conversion of docking panes to tabbed documents. Alternatively, you can set [CMDIFrameWndEx::m_bCanCovertControlBarToMDIChild](#cmdiframewndex__m_bcancovertcontrolbartomdichild) to `TRUE`.  
+ Override this method in a derived class and return `TRUE` to enable the conversion of docking panes to tabbed documents. Alternatively, you can set [CMDIFrameWndEx::m_bCanCovertControlBarToMDIChild](#m_bcancovertcontrolbartomdichild) to `TRUE`.  
   
-##  <a name="cmdiframewndex__controlbartotabbeddocument"></a>  CMDIFrameWndEx::ControlBarToTabbedDocument  
+##  <a name="controlbartotabbeddocument"></a>  CMDIFrameWndEx::ControlBarToTabbedDocument  
  Converts the specified docking pane to a tabbed document.  
   
 ```  
@@ -270,7 +270,7 @@ virtual CMDIChildWndEx* ControlBarToTabbedDocument(CDockablePane* pBar);
 ### Remarks  
  This method converts a docking pane to a tabbed document. When you call this method, the framework creates a [CMDIChildWndEx Class](../../mfc/reference/cmdichildwndex-class.md) object, removes the docking pane from the docking manager, and adds the docking pane to the new MDI child window. The MDI child window resizes the docking pane to cover the entire client area  
   
-##  <a name="cmdiframewndex__createdocumentwindow"></a>  CMDIFrameWndEx::CreateDocumentWindow  
+##  <a name="createdocumentwindow"></a>  CMDIFrameWndEx::CreateDocumentWindow  
  Creates a child document window.  
   
 ```  
@@ -295,13 +295,13 @@ virtual CMDIChildWndEx* CreateDocumentWindow(
  Override this method in order to create documents when they are being loaded from the registry.  
   
 ### Example  
- The following example shows how `CreateDocumentWindow` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
+ The following example shows how `CreateDocumentWindow` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../visual-cpp-samples.md).  
   
  In this example, `g_strStartViewName` could be the name of a "virtual document" (for example, "Start Page") that is not actually loaded from a disk file. Therefore we need special processing to handle that case.  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#13](../../mfc/codesnippet/CPP/cmdiframewndex-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#13](../../mfc/codesnippet/cpp/cmdiframewndex-class_2.cpp)]  
   
-##  <a name="cmdiframewndex__createnewwindow"></a>  CMDIFrameWndEx::CreateNewWindow  
+##  <a name="createnewwindow"></a>  CMDIFrameWndEx::CreateNewWindow  
  Called by the framework to create a new window.  
   
 ```  
@@ -320,7 +320,7 @@ virtual CMDIChildWndEx* CreateNewWindow(
 ### Return Value  
  A pointer to the new window.  
   
-##  <a name="cmdiframewndex__dockpane"></a>  CMDIFrameWndEx::DockPane  
+##  <a name="dockpane"></a>  CMDIFrameWndEx::DockPane  
  Docks the specified pane to the frame window.  
   
 ```  
@@ -341,14 +341,14 @@ void DockPane(
  Not used.  
   
 ### Remarks  
- This method docks the specified the pane to one of the sides of the frame window that was specified when [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#cbasepane__enabledocking) and [CMDIFrameWndEx::EnableDocking](#cmdiframewndex__enabledocking) were called.  
+ This method docks the specified the pane to one of the sides of the frame window that was specified when [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#enabledocking) and [CMDIFrameWndEx::EnableDocking](#enabledocking) were called.  
   
 ### Example  
- The following example demonstrates the use of the `DockPane` method. This code snippet comes from the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
+ The following example demonstrates the use of the `DockPane` method. This code snippet comes from the [VisualStudioDemo Sample: MFC Visual Studio Application](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#4](../../mfc/codesnippet/CPP/cmdiframewndex-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#4](../../mfc/codesnippet/cpp/cmdiframewndex-class_3.cpp)]  
   
-##  <a name="cmdiframewndex__dockpaneleftof"></a>  CMDIFrameWndEx::DockPaneLeftOf  
+##  <a name="dockpaneleftof"></a>  CMDIFrameWndEx::DockPaneLeftOf  
  Docks one pane to the left of another pane.  
   
 ```  
@@ -371,11 +371,11 @@ BOOL DockPaneLeftOf(
  Call this method to dock several pane objects in a predefined order. This method docks the pane specified by `pBar` to the left of the pane specified by `pLeftOf`.  
   
 ### Example  
- The following example shows how the `DockPaneLeftOf` method is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
+ The following example shows how the `DockPaneLeftOf` method is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#5](../../mfc/codesnippet/CPP/cmdiframewndex-class_4.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#5](../../mfc/codesnippet/cpp/cmdiframewndex-class_4.cpp)]  
   
-##  <a name="cmdiframewndex__enableautohidepanes"></a>  CMDIFrameWndEx::EnableAutoHidePanes  
+##  <a name="enableautohidepanes"></a>  CMDIFrameWndEx::EnableAutoHidePanes  
  Enables auto-hide mode for panes when they are docked at the specified sides of the main frame window.  
   
 ```  
@@ -398,13 +398,13 @@ BOOL EnableAutoHidePanes(DWORD dwDockStyle);
  Call this function to enable auto-hide mode for panes when they are docked at the specified sides of the main frame window.  
   
 ### Example  
- The following example shows how the `EnableAutoHidePanes` method is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
+ The following example shows how the `EnableAutoHidePanes` method is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#6](../../mfc/codesnippet/CPP/cmdiframewndex-class_5.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#6](../../mfc/codesnippet/cpp/cmdiframewndex-class_5.cpp)]  
   
 ### Remarks  
   
-##  <a name="cmdiframewndex__enabledocking"></a>  CMDIFrameWndEx::EnableDocking  
+##  <a name="enabledocking"></a>  CMDIFrameWndEx::EnableDocking  
  Enables docking of the panes that belong to the MDI frame window.  
   
 ```  
@@ -421,11 +421,11 @@ BOOL EnableDocking(DWORD dwDockStyle);
  Call this function to enable docking of panes that belong to the `CMDIFrameWndEx` object.  
   
 ### Example  
- The following example shows how the `EnableDocking` method is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
+ The following example shows how the `EnableDocking` method is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#7](../../mfc/codesnippet/CPP/cmdiframewndex-class_6.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#7](../../mfc/codesnippet/cpp/cmdiframewndex-class_6.cpp)]  
   
-##  <a name="cmdiframewndex__enablefullscreenmainmenu"></a>  CMDIFrameWndEx::EnableFullScreenMainMenu  
+##  <a name="enablefullscreenmainmenu"></a>  CMDIFrameWndEx::EnableFullScreenMainMenu  
  Shows or hides the main menu in full-screen mode.  
   
 ```  
@@ -438,7 +438,7 @@ void EnableFullScreenMainMenu(BOOL bEnableMenu);
   
 ### Remarks  
   
-##  <a name="cmdiframewndex__enablefullscreenmode"></a>  CMDIFrameWndEx::EnableFullScreenMode  
+##  <a name="enablefullscreenmode"></a>  CMDIFrameWndEx::EnableFullScreenMode  
  Enables full-screen mode for the frame window.  
   
 ```  
@@ -450,9 +450,9 @@ void EnableFullScreenMode(UINT uiFullScreenCmd);
  The ID of a command that enables or disables full-screen mode.  
   
 ### Remarks  
- In full-screen mode, all docking control bars, toolbars and menus are hidden and the active view is resized to occupy the full-screen.When you enable full-screen mode, you must specify an ID of the command that enables or disables it. You can call `EnableFullScreenMode` from the main frame's `OnCreate` function. When a frame window is being switched to full-screen mode, the framework creates a floating toolbar with one button that has the specified command ID.If you want to keep the main menu on the screen, call [CMDIFrameWndEx::EnableFullScreenMainMenu](#cmdiframewndex__enablefullscreenmainmenu).  
+ In full-screen mode, all docking control bars, toolbars and menus are hidden and the active view is resized to occupy the full-screen.When you enable full-screen mode, you must specify an ID of the command that enables or disables it. You can call `EnableFullScreenMode` from the main frame's `OnCreate` function. When a frame window is being switched to full-screen mode, the framework creates a floating toolbar with one button that has the specified command ID.If you want to keep the main menu on the screen, call [CMDIFrameWndEx::EnableFullScreenMainMenu](#enablefullscreenmainmenu).  
   
-##  <a name="cmdiframewndex__enableloaddockstate"></a>  CMDIFrameWndEx::EnableLoadDockState  
+##  <a name="enableloaddockstate"></a>  CMDIFrameWndEx::EnableLoadDockState  
  Enables or disables the loading of the docking state.  
   
 ```  
@@ -465,7 +465,7 @@ void EnableLoadDockState(BOOL bEnable = TRUE);
   
 ### Remarks  
   
-##  <a name="cmdiframewndex__enablemditabbedgroups"></a>  CMDIFrameWndEx::EnableMDITabbedGroups  
+##  <a name="enablemditabbedgroups"></a>  CMDIFrameWndEx::EnableMDITabbedGroups  
  Enables or disables the MDI tabbed groups feature for the frame window.  
   
 ```  
@@ -501,11 +501,11 @@ void EnableMDITabbedGroups(
  For more information about how to use MDI tabbed groups, see [MDI Tabbed Groups](../../mfc/mdi-tabbed-groups.md).  
   
 ### Example  
- The following example shows how `EnableMDITabbedGroups` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
+ The following example shows how `EnableMDITabbedGroups` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#8](../../mfc/codesnippet/CPP/cmdiframewndex-class_7.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#8](../../mfc/codesnippet/cpp/cmdiframewndex-class_7.cpp)]  
   
-##  <a name="cmdiframewndex__enablemditabs"></a>  CMDIFrameWndEx::EnableMDITabs  
+##  <a name="enablemditabs"></a>  CMDIFrameWndEx::EnableMDITabs  
  Enables or disables the MDI Tabs feature for the MDI frame window. When enabled, the frame window displays a tab for each MDI child window.  
   
 ```  
@@ -549,11 +549,11 @@ void EnableMDITabs(
  If `bTabCustomTooltips` is `TRUE`, an `AFX_WM_ON_GET_TAB_TOOLTIP` message will be sent to the main frame window. Your code can handle this message and provide the framework with custom tooltips for MDI tabs.  
   
 ### Example  
- The following example shows how `EnableMDITabs` is used in the [MDITabsDemo Sample: MFC Tabbed MDI Application](../../top/visual-cpp-samples.md).  
+ The following example shows how `EnableMDITabs` is used in the [MDITabsDemo Sample: MFC Tabbed MDI Application](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_MDITabsDemo#3](../../mfc/reference/codesnippet/CPP/cmdiframewndex-class_8.cpp)]  
+ [!code-cpp[NVC_MFC_MDITabsDemo#3](../../mfc/reference/codesnippet/cpp/cmdiframewndex-class_8.cpp)]  
   
-##  <a name="cmdiframewndex__enablemditabslastactiveactivation"></a>  CMDIFrameWndEx::EnableMDITabsLastActiveActivation  
+##  <a name="enablemditabslastactiveactivation"></a>  CMDIFrameWndEx::EnableMDITabsLastActiveActivation  
  Specifies whether the last active tab should be opened when the user closes the current tab.  
   
 ```  
@@ -575,7 +575,7 @@ void EnableMDITabsLastActiveActivation(BOOL bLastActiveTab=TRUE);
   
  Use `EnableMDITabsLastActiveActivation` to enable the second way of tab activation. It emulates the way Windows opens MDI child windows.  
   
-##  <a name="cmdiframewndex__enablepanemenu"></a>  CMDIFrameWndEx::EnablePaneMenu  
+##  <a name="enablepanemenu"></a>  CMDIFrameWndEx::EnablePaneMenu  
  Enables or disables automatic creation and management of the pop-up pane menu, which displays a list of application panes.  
   
 ```  
@@ -611,11 +611,11 @@ void EnablePaneMenu(
  The pop-up pane menu displays the list of the application's panes and lets the user show or hide individual panes.  
   
 ### Example  
- The following example shows how `EnablePaneMenu` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
+ The following example shows how `EnablePaneMenu` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#9](../../mfc/codesnippet/CPP/cmdiframewndex-class_9.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#9](../../mfc/codesnippet/cpp/cmdiframewndex-class_9.cpp)]  
   
-##  <a name="cmdiframewndex__enablewindowsdialog"></a>  CMDIFrameWndEx::EnableWindowsDialog  
+##  <a name="enablewindowsdialog"></a>  CMDIFrameWndEx::EnableWindowsDialog  
  Inserts a menu item whose command ID calls a [CMFCWindowsManagerDialog](../../mfc/reference/cmfcwindowsmanagerdialog-class.md) dialog box.  
   
 ```  
@@ -650,11 +650,11 @@ void EnableWindowsDialog(
  Use this method to insert a menu item whose command calls a MDI child window management dialog box ( [CMFCWindowsManagerDialog Class](../../mfc/reference/cmfcwindowsmanagerdialog-class.md)). The new item is inserted into the menu specified by `uiMenuId`. Call `EnableWindowsDialog` when you process the `WM_CREATE` message.  
   
 ### Example  
- The following example shows how `EnableWindowsDialog` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
+ The following example shows how `EnableWindowsDialog` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#10](../../mfc/codesnippet/CPP/cmdiframewndex-class_10.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#10](../../mfc/codesnippet/cpp/cmdiframewndex-class_10.cpp)]  
   
-##  <a name="cmdiframewndex__getactivepopup"></a>  CMDIFrameWndEx::GetActivePopup  
+##  <a name="getactivepopup"></a>  CMDIFrameWndEx::GetActivePopup  
  Returns a pointer to the currently displayed popup menu.  
   
 ```  
@@ -669,7 +669,7 @@ CMFCPopupMenu* GetActivePopup() const;
 ### Remarks  
  Use this function to obtain a pointer to the [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) object that is currently displayed.  
   
-##  <a name="cmdiframewndex__getdefaultresid"></a>  CMDIFrameWndEx::GetDefaultResId  
+##  <a name="getdefaultresid"></a>  CMDIFrameWndEx::GetDefaultResId  
  Returns the ID of shared resources of the MDI frame window.  
   
 ```  
@@ -682,9 +682,9 @@ UINT GetDefaultResId() const;
  A resource ID value. 0 if the frame window has no menu bar.  
   
 ### Remarks  
- This method returns the resource ID that was specified when the MDI frame window was loaded by [CFrameWnd::LoadFrame](../../mfc/reference/cframewnd-class.md#cframewnd__loadframe).  
+ This method returns the resource ID that was specified when the MDI frame window was loaded by [CFrameWnd::LoadFrame](../../mfc/reference/cframewnd-class.md#loadframe).  
   
-##  <a name="cmdiframewndex__getmditabgroups"></a>  CMDIFrameWndEx::GetMDITabGroups  
+##  <a name="getmditabgroups"></a>  CMDIFrameWndEx::GetMDITabGroups  
  Returns a list of MDI tabbed windows.  
   
 ```  
@@ -699,7 +699,7 @@ const CObList& GetMDITabGroups() const;
 ### Remarks  
  Use this method to access the list of tabbed windows. It can be helpful if you want to change or query some parameters of individual tabbed windows.  
   
-##  <a name="cmdiframewndex__getmditabs"></a>  CMDIFrameWndEx::GetMDITabs  
+##  <a name="getmditabs"></a>  CMDIFrameWndEx::GetMDITabs  
  Returns a reference to the underlined tabbed window.  
   
 ```  
@@ -709,7 +709,7 @@ CMFCTabCtrl& GetMDITabs();
 ### Return Value  
  A reference to the underlined tabbed window.  
   
-##  <a name="cmdiframewndex__getmditabscontextmenualloweditems"></a>  CMDIFrameWndEx::GetMDITabsContextMenuAllowedItems  
+##  <a name="getmditabscontextmenualloweditems"></a>  CMDIFrameWndEx::GetMDITabsContextMenuAllowedItems  
  Returns a combination of flags that determines what operations are valid when the MDI Tabbed Groups feature is enabled.  
   
 ```  
@@ -738,7 +738,7 @@ DWORD GetMDITabsContextMenuAllowedItems();
   
  You can move a tab to the next group only if there is more than one tab in a tabbed window.  
   
-##  <a name="cmdiframewndex__getmenubar"></a>  CMDIFrameWndEx::GetMenuBar  
+##  <a name="getmenubar"></a>  CMDIFrameWndEx::GetMenuBar  
  Returns a pointer to a menu bar object attached to the frame window.  
   
 ```  
@@ -750,7 +750,7 @@ const CMFCMenuBar* GetMenuBar() const;
 ### Return Value  
  A pointer to a menu bar object.  
   
-##  <a name="cmdiframewndex__getpane"></a>  CMDIFrameWndEx::GetPane  
+##  <a name="getpane"></a>  CMDIFrameWndEx::GetPane  
  Returns a pointer to the pane that has the specified control ID.  
   
 ```  
@@ -764,7 +764,7 @@ CBasePane* GetPane(UINT nID);
 ### Return Value  
  A pointer to the pane that has the specified control ID, if it exists. Otherwise, `NULL`.  
   
-##  <a name="cmdiframewndex__getribbonbar"></a>  CMDIFrameWndEx::GetRibbonBar  
+##  <a name="getribbonbar"></a>  CMDIFrameWndEx::GetRibbonBar  
  Retrieves the ribbon bar control for the frame.  
   
 ```  
@@ -776,7 +776,7 @@ CMFCRibbonBar* GetRibbonBar();
   
 ### Remarks  
   
-##  <a name="cmdiframewndex__gettearoffbars"></a>  CMDIFrameWndEx::GetTearOffBars  
+##  <a name="gettearoffbars"></a>  CMDIFrameWndEx::GetTearOffBars  
  Returns a list of tear-off menus.  
   
 ```  
@@ -791,7 +791,7 @@ const CObList& GetTearOffBars() const;
 ### Remarks  
  `CMDIFrameWndEx` maintains a collection of tear-off menus. Use this method to retrieve a reference to this list.  
   
-##  <a name="cmdiframewndex__gettoolbarbuttontooltiptext"></a>  CMDIFrameWndEx::GetToolbarButtonToolTipText  
+##  <a name="gettoolbarbuttontooltiptext"></a>  CMDIFrameWndEx::GetToolbarButtonToolTipText  
  Called by the framework when the application displays the tooltip for a toolbar button.  
   
 ```  
@@ -812,7 +812,7 @@ virtual BOOL GetToolbarButtonToolTipText(
   
 ### Remarks  
   
-##  <a name="cmdiframewndex__insertpane"></a>  CMDIFrameWndEx::InsertPane  
+##  <a name="insertpane"></a>  CMDIFrameWndEx::InsertPane  
  Registers the specified pane with the docking manager.  
   
 ```  
@@ -838,7 +838,7 @@ BOOL InsertPane(
 ### Remarks  
  Use this method to tell the docking manager about a pane specified by `pControlBar`. The docking manager will align this pane according to the pane's alignment and position in the docking manager's internal list.  
   
-##  <a name="cmdiframewndex__isfullscreen"></a>  CMDIFrameWndEx::IsFullScreen  
+##  <a name="isfullscreen"></a>  CMDIFrameWndEx::IsFullScreen  
  Determines whether the frame window is in full-screen mode.  
   
 ```  
@@ -851,9 +851,9 @@ BOOL IsFullScreen() const;
  `TRUE` if the frame window is in full screen mode; otherwise `FALSE`.  
   
 ### Remarks  
- You can set the full screen mode by calling the [CMDIFrameWndEx::EnableFullScreenMode](#cmdiframewndex__enablefullscreenmode) method.  
+ You can set the full screen mode by calling the [CMDIFrameWndEx::EnableFullScreenMode](#enablefullscreenmode) method.  
   
-##  <a name="cmdiframewndex__ismditabbedgroup"></a>  CMDIFrameWndEx::IsMDITabbedGroup  
+##  <a name="ismditabbedgroup"></a>  CMDIFrameWndEx::IsMDITabbedGroup  
  Specifies whether the MDI Tabbed Groups feature is enabled.  
   
 ```  
@@ -866,9 +866,9 @@ BOOL IsMDITabbedGroup() const;
  `TRUE` if the MDI Tabbed Groups feature is enabled; otherwise `FALSE`.  
   
 ### Remarks  
- To determine whether regular MDI tabs or the MDI Tabbed Groups feature is enabled, use [CMDIFrameWndEx::AreMDITabs](#cmdiframewndex__aremditabs).  
+ To determine whether regular MDI tabs or the MDI Tabbed Groups feature is enabled, use [CMDIFrameWndEx::AreMDITabs](#aremditabs).  
   
-##  <a name="cmdiframewndex__ismemberofmditabgroup"></a>  CMDIFrameWndEx::IsMemberOfMDITabGroup  
+##  <a name="ismemberofmditabgroup"></a>  CMDIFrameWndEx::IsMemberOfMDITabGroup  
  Determines whether the specified tabbed window is in the list of windows that are in MDI Tabbed Groups.  
   
 ```  
@@ -882,7 +882,7 @@ BOOL IsMemberOfMDITabGroup(CWnd* pWnd);
 ### Return Value  
  `TRUE` if the specified tabbed window is in the list of tabbed windows that form MDI Tabbed Groups. Otherwise `FALSE`.  
   
-##  <a name="cmdiframewndex__ismenubaravailable"></a>  CMDIFrameWndEx::IsMenuBarAvailable  
+##  <a name="ismenubaravailable"></a>  CMDIFrameWndEx::IsMenuBarAvailable  
  Determines whether the frame window has a menu bar.  
   
 ```  
@@ -894,7 +894,7 @@ BOOL IsMenuBarAvailable() const;
 ### Return Value  
  `TRUE` if the pointer to the menu bar object is not `NULL`; otherwise `FALSE`.  
   
-##  <a name="cmdiframewndex__ispointneardocksite"></a>  CMDIFrameWndEx::IsPointNearDockSite  
+##  <a name="ispointneardocksite"></a>  CMDIFrameWndEx::IsPointNearDockSite  
  Determines whether a specified point is near the dock site.  
   
 ```  
@@ -922,7 +922,7 @@ BOOL IsPointNearDockSite(
 ### Remarks  
  The point is near the dock site when it is within the sensitivity set in the docking manager. The default sensitivity is 15 pixels.  
   
-##  <a name="cmdiframewndex__isprintpreview"></a>  CMDIFrameWndEx::IsPrintPreview  
+##  <a name="isprintpreview"></a>  CMDIFrameWndEx::IsPrintPreview  
  Determines whether the frame window is in print-preview mode.  
   
 ```  
@@ -934,7 +934,7 @@ BOOL IsPrintPreview();
   
 ### Remarks  
   
-##  <a name="cmdiframewndex__loadframe"></a>  CMDIFrameWndEx::LoadFrame  
+##  <a name="loadframe"></a>  CMDIFrameWndEx::LoadFrame  
  Creates a frame window from resource information.  
   
 ```  
@@ -961,7 +961,7 @@ virtual BOOL LoadFrame(
 ### Return Value  
  `TRUE` if the method succeeds, otherwise `FALSE`.  
   
-##  <a name="cmdiframewndex__loadmdistate"></a>  CMDIFrameWndEx::LoadMDIState  
+##  <a name="loadmdistate"></a>  CMDIFrameWndEx::LoadMDIState  
  Loads the specified layout of MDI Tabbed Groups and the list of previously opened documents.  
   
 ```  
@@ -978,20 +978,20 @@ virtual BOOL LoadMDIState(LPCTSTR lpszProfileName);
 ### Remarks  
  To load or save the state of MDI tabs and groups and the list of opened documents, do the following:  
   
--   Call [CMDIFrameWndEx::SaveMDIState](#cmdiframewndex__savemdistate) when the main frame is being closed  
+-   Call [CMDIFrameWndEx::SaveMDIState](#savemdistate) when the main frame is being closed  
   
--   Call [CMDIFrameWndEx::LoadMDIState](#cmdiframewndex__loadmdistate) when the main frame is being created. The recommended place for this call is before the main frame is displayed for the first time. Add `CWinAppEx::EnableLoadWindowPlacement` `(FALSE);` before `pMainFrame->LoadFrame (IDR_MAINFRAME);.` Add `CBCGPWorkspace::ReloadWindowPlacement` `(pMainFrame);` after the call to `LoadMDIState` to display the main frame at the position that was stored in the registry.  
+-   Call [CMDIFrameWndEx::LoadMDIState](#loadmdistate) when the main frame is being created. The recommended place for this call is before the main frame is displayed for the first time. Add `CWinAppEx::EnableLoadWindowPlacement` `(FALSE);` before `pMainFrame->LoadFrame (IDR_MAINFRAME);.` Add `CBCGPWorkspace::ReloadWindowPlacement` `(pMainFrame);` after the call to `LoadMDIState` to display the main frame at the position that was stored in the registry.  
   
--   Override `GetDocumentName` in the `CMDIChildWndEx`- derived class if your application displays documents that are not stored as files. The returned string will be saved in the registry as the document identifier. The base implementation of [CMDIChildWndEx::GetDocumentName](../../mfc/reference/cmdichildwndex-class.md#cmdichildwndex__getdocumentname) returns a value obtained from [CDocument::GetPathName](../../mfc/reference/cdocument-class.md#cdocument__getpathname).  
+-   Override `GetDocumentName` in the `CMDIChildWndEx`- derived class if your application displays documents that are not stored as files. The returned string will be saved in the registry as the document identifier. The base implementation of [CMDIChildWndEx::GetDocumentName](../../mfc/reference/cmdichildwndex-class.md#getdocumentname) returns a value obtained from [CDocument::GetPathName](../../mfc/reference/cdocument-class.md#getpathname).  
   
--   Override [CMDIFrameWndEx::CreateDocumentWindow](#cmdiframewndex__createdocumentwindow) to correctly create documents when they are being loaded from the registry. The first parameter is the string that `GetDocumentName` returned.  
+-   Override [CMDIFrameWndEx::CreateDocumentWindow](#createdocumentwindow) to correctly create documents when they are being loaded from the registry. The first parameter is the string that `GetDocumentName` returned.  
   
 ### Example  
- The following example shows how `LoadMDIState` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
+ The following example shows how `LoadMDIState` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#11](../../mfc/codesnippet/CPP/cmdiframewndex-class_11.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#11](../../mfc/codesnippet/cpp/cmdiframewndex-class_11.cpp)]  
   
-##  <a name="cmdiframewndex__mditabmovetonextgroup"></a>  CMDIFrameWndEx::MDITabMoveToNextGroup  
+##  <a name="mditabmovetonextgroup"></a>  CMDIFrameWndEx::MDITabMoveToNextGroup  
  Moves the active tab from the currently active tabbed window to the next or previous tabbed group.  
   
 ```  
@@ -1002,7 +1002,7 @@ void MDITabMoveToNextGroup(BOOL bNext=TRUE);
  [in] `bNext`  
  If `TRUE`, move the tab to the next tabbed group. If `FALSE`, move it to the previous tabbed group.  
   
-##  <a name="cmdiframewndex__mditabnewgroup"></a>  CMDIFrameWndEx::MDITabNewGroup  
+##  <a name="mditabnewgroup"></a>  CMDIFrameWndEx::MDITabNewGroup  
  Creates a new tabbed group that has a single window.  
   
 ```  
@@ -1017,11 +1017,11 @@ void MDITabNewGroup(BOOL bVert=TRUE);
  Use this function to create a new tabbed window (new tabbed group) and add the first tab to it.  
   
 ### Example  
- The following example shows how `MDITabNewGroup` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
+ The following example shows how `MDITabNewGroup` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#12](../../mfc/codesnippet/CPP/cmdiframewndex-class_12.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#12](../../mfc/codesnippet/cpp/cmdiframewndex-class_12.cpp)]  
   
-##  <a name="cmdiframewndex__m_bcancovertcontrolbartomdichild"></a>  CMDIFrameWndEx::m_bCanCovertControlBarToMDIChild  
+##  <a name="m_bcancovertcontrolbartomdichild"></a>  CMDIFrameWndEx::m_bCanCovertControlBarToMDIChild  
  Specifies whether docking panes can be converted to MDI child windows.  
   
 ```  
@@ -1034,11 +1034,11 @@ BOOL m_bCanCovertControlBarToMDIChild;
  The default value is `FALSE`.  
   
 ### Example  
- The following example shows how `m_bCanCovertControlBarToMDIChild` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
+ The following example shows how `m_bCanCovertControlBarToMDIChild` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#13](../../mfc/codesnippet/CPP/cmdiframewndex-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#13](../../mfc/codesnippet/cpp/cmdiframewndex-class_2.cpp)]  
   
-##  <a name="cmdiframewndex__m_bdisablesetredraw"></a>  CMDIFrameWndEx::m_bDisableSetRedraw  
+##  <a name="m_bdisablesetredraw"></a>  CMDIFrameWndEx::m_bDisableSetRedraw  
  Enables or disables redraw optimization for MDI child windows.  
   
 ```  
@@ -1052,7 +1052,7 @@ AFX_IMPORT_DATA static BOOL m_bDisableSetRedraw;
   
  This flag can cause unwanted effects (such as background applications that become visible). Therefore we recommend that you change the default only if you experience noticeable flickering during MDI tab activation.  
   
-##  <a name="cmdiframewndex__negotiateborderspace"></a>  CMDIFrameWndEx::NegotiateBorderSpace  
+##  <a name="negotiateborderspace"></a>  CMDIFrameWndEx::NegotiateBorderSpace  
  Negotiates border space in a frame window during OLE in-place activation.  
   
 ```  
@@ -1080,7 +1080,7 @@ virtual BOOL NegotiateBorderSpace(
 ### Remarks  
  This method is an implementation of OLE border space negotiation.  
   
-##  <a name="cmdiframewndex__onclosedockingpane"></a>  CMDIFrameWndEx::OnCloseDockingPane  
+##  <a name="onclosedockingpane"></a>  CMDIFrameWndEx::OnCloseDockingPane  
  Called by the framework when the user clicks the **Close** button on a dockable pane.  
   
 ```  
@@ -1099,7 +1099,7 @@ virtual BOOL OnCloseDockingPane(CDockablePane* pWnd);
   
  The default implementation does nothing and returns `TRUE`.  
   
-##  <a name="cmdiframewndex__oncloseminiframe"></a>  CMDIFrameWndEx::OnCloseMiniFrame  
+##  <a name="oncloseminiframe"></a>  CMDIFrameWndEx::OnCloseMiniFrame  
  Called by the framework when the user clicks the **Close** button on a floating mini-frame window.  
   
 ```  
@@ -1118,7 +1118,7 @@ virtual BOOL OnCloseMiniFrame(CPaneFrameWnd*);
   
  The default implementation does nothing and returns `TRUE`.  
   
-##  <a name="cmdiframewndex__onclosepopupmenu"></a>  CMDIFrameWndEx::OnClosePopupMenu  
+##  <a name="onclosepopupmenu"></a>  CMDIFrameWndEx::OnClosePopupMenu  
  Called by the framework when an active pop-up menu processes a `WM_DESTROY` message.  
   
 ```  
@@ -1132,7 +1132,7 @@ virtual void OnClosePopupMenu(CMFCPopupMenu* pMenuPopup);
 ### Remarks  
  Override this method if you want to process notifications from [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) objects that belong to the MDI frame window when those objects process `WM_DESTROY` messages.  
   
-##  <a name="cmdiframewndex__oncmdmsg"></a>  CMDIFrameWndEx::OnCmdMsg  
+##  <a name="oncmdmsg"></a>  CMDIFrameWndEx::OnCmdMsg  
  Called by the framework to route and dispatch command messages and to update command user-interface objects.  
   
 ```  
@@ -1148,10 +1148,10 @@ virtual BOOL OnCmdMsg(
  The command ID.  
   
  [in] `nCode`  
- Identifies the command notification code. See [CCmdTarget::OnCmdMsg](../../mfc/reference/ccmdtarget-class.md#ccmdtarget__oncmdmsg) for more information about values for `nCode`.  
+ Identifies the command notification code. See [CCmdTarget::OnCmdMsg](../../mfc/reference/ccmdtarget-class.md#oncmdmsg) for more information about values for `nCode`.  
   
  [in] `pExtra`  
- Used according to the value of `nCode`. See [CCmdTarget::OnCmdMsg](../../mfc/reference/ccmdtarget-class.md#ccmdtarget__oncmdmsg) for more information about `pExtra`.  
+ Used according to the value of `nCode`. See [CCmdTarget::OnCmdMsg](../../mfc/reference/ccmdtarget-class.md#oncmdmsg) for more information about `pExtra`.  
   
  [in, out] `pHandlerInfo`  
  Typically, this parameter should be `NULL`.If not `NULL`, `OnCmdMsg` fills in the `pTarget` and `pmf` members of the `pHandlerInfo` structure instead of dispatching the command.  
@@ -1159,7 +1159,7 @@ virtual BOOL OnCmdMsg(
 ### Return Value  
  Nonzero if the message is handled; otherwise 0.  
   
-##  <a name="cmdiframewndex__ondrawmenuimage"></a>  CMDIFrameWndEx::OnDrawMenuImage  
+##  <a name="ondrawmenuimage"></a>  CMDIFrameWndEx::OnDrawMenuImage  
  Called by the framework when the image associated with a menu item is drawn.  
   
 ```  
@@ -1185,7 +1185,7 @@ virtual BOOL OnDrawMenuImage(
 ### Remarks  
  Override this method  if you want to customize image rendering for the menu items that belong to the menu bar owned by the `CMDIFrameWndEx`-derived object. The default implementation does nothing.  
   
-##  <a name="cmdiframewndex__ondrawmenulogo"></a>  CMDIFrameWndEx::OnDrawMenuLogo  
+##  <a name="ondrawmenulogo"></a>  CMDIFrameWndEx::OnDrawMenuLogo  
  Called by the framework when a [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)processes a `WM_PAINT` message.  
   
 ```  
@@ -1198,7 +1198,7 @@ virtual void OnDrawMenuLogo(
 ### Remarks  
  Override this function to display a logo on the pop-up menu that belongs to the menu bar owned by the `CMDIFrameWndEx`-derived object. The default implementation does nothing.  
   
-##  <a name="cmdiframewndex__onerasemdiclientbackground"></a>  CMDIFrameWndEx::OnEraseMDIClientBackground  
+##  <a name="onerasemdiclientbackground"></a>  CMDIFrameWndEx::OnEraseMDIClientBackground  
  Called by the framework when the MDI frame window processes a `WM_ERASEBKGND` message.  
   
 ```  
@@ -1211,7 +1211,7 @@ virtual BOOL OnEraseMDIClientBackground(CDC*);
 ### Remarks  
  Override this member function if you want to process the `WM_ERASEBKGND` message in a `CMDIFrameWndEx`-derived class.  
   
-##  <a name="cmdiframewndex__onmenubuttontoolhittest"></a>  CMDIFrameWndEx::OnMenuButtonToolHitTest  
+##  <a name="onmenubuttontoolhittest"></a>  CMDIFrameWndEx::OnMenuButtonToolHitTest  
  Called by the framework when a [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)object processes a `WM_NCHITTEST` message.  
   
 ```  
@@ -1233,7 +1233,7 @@ virtual BOOL OnMenuButtonToolHitTest(
 ### Remarks  
  Override this method if you want to provide information about specific menu items to a tooltip. The default implementation does nothing.  
   
-##  <a name="cmdiframewndex__onmoveminiframe"></a>  CMDIFrameWndEx::OnMoveMiniFrame  
+##  <a name="onmoveminiframe"></a>  CMDIFrameWndEx::OnMoveMiniFrame  
  Called by the framework to move a mini-frame window.  
   
 ```  
@@ -1247,7 +1247,7 @@ virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
 ### Return Value  
  `TRUE` if the method succeeds, otherwise `FALSE`.  
   
-##  <a name="cmdiframewndex__onsetpreviewmode"></a>  CMDIFrameWndEx::OnSetPreviewMode  
+##  <a name="onsetpreviewmode"></a>  CMDIFrameWndEx::OnSetPreviewMode  
  Sets the application's main frame window print-preview mode.  
   
 ```  
@@ -1264,9 +1264,9 @@ virtual void OnSetPreviewMode(
  A pointer to a `CPrintPreviewState` structure.  
   
 ### Remarks  
- This method overrides [CFrameWnd::OnSetPreviewMode](../../mfc/reference/cframewnd-class.md#cframewnd__onsetpreviewmode).  
+ This method overrides [CFrameWnd::OnSetPreviewMode](../../mfc/reference/cframewnd-class.md#onsetpreviewmode).  
   
-##  <a name="cmdiframewndex__onshowcustomizepane"></a>  CMDIFrameWndEx::OnShowCustomizePane  
+##  <a name="onshowcustomizepane"></a>  CMDIFrameWndEx::OnShowCustomizePane  
  Called by the framework when a Quick Customize pane is activated.  
   
 ```  
@@ -1290,7 +1290,7 @@ virtual BOOL OnShowCustomizePane(
   
  Override this method in a derived class to make changes in the Quick Customize pane.  
   
-##  <a name="cmdiframewndex__onshowmditabcontextmenu"></a>  CMDIFrameWndEx::OnShowMDITabContextMenu  
+##  <a name="onshowmditabcontextmenu"></a>  CMDIFrameWndEx::OnShowMDITabContextMenu  
  Called by the framework before a shortcut menu is displayed on one of the tabs. Valid for MDI Tabbed Groups only.  
   
 ```  
@@ -1327,11 +1327,11 @@ virtual BOOL OnShowMDITabContextMenu(
  If you do not process `OnShowMDITabContextMenu`, the shortcut menu will not be displayed. This function is generated by the **MFC Application Wizard** when you enable the MDI Tabbed Groups feature.  
   
 ### Example  
- The following example shows how `OnShowMDITabContextMenu` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
+ The following example shows how `OnShowMDITabContextMenu` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#14](../../mfc/codesnippet/CPP/cmdiframewndex-class_13.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#14](../../mfc/codesnippet/cpp/cmdiframewndex-class_13.cpp)]  
   
-##  <a name="cmdiframewndex__onshowpanes"></a>  CMDIFrameWndEx::OnShowPanes  
+##  <a name="onshowpanes"></a>  CMDIFrameWndEx::OnShowPanes  
  Called by the framework to show or hide panes.  
   
 ```  
@@ -1348,9 +1348,9 @@ virtual BOOL OnShowPanes(BOOL bShow);
 ### Remarks  
  The default implementation removes the toolbar from the top-level frame window.  
   
- If [CDockingManager::m_bHideDockingBarsInContainerMode](../../mfc/reference/cdockingmanager-class.md#cdockingmanager__m_bhidedockingbarsincontainermode) is `TRUE` (the default), all docking panes will be hidden.  
+ If [CDockingManager::m_bHideDockingBarsInContainerMode](../../mfc/reference/cdockingmanager-class.md#m_bhidedockingbarsincontainermode) is `TRUE` (the default), all docking panes will be hidden.  
   
-##  <a name="cmdiframewndex__onshowpopupmenu"></a>  CMDIFrameWndEx::OnShowPopupMenu  
+##  <a name="onshowpopupmenu"></a>  CMDIFrameWndEx::OnShowPopupMenu  
  Called by the framework when it opens a pop-up menu.  
   
 ```  
@@ -1365,7 +1365,7 @@ virtual BOOL OnShowPopupMenu(CMFCPopupMenu*);
   
  The default implementation does nothing.  
   
-##  <a name="cmdiframewndex__onsizemdiclient"></a>  CMDIFrameWndEx::OnSizeMDIClient  
+##  <a name="onsizemdiclient"></a>  CMDIFrameWndEx::OnSizeMDIClient  
  Called by the framework when the size of the client MDI window is changing.  
   
 ```  
@@ -1383,7 +1383,7 @@ virtual void OnSizeMDIClient(
   
 ### Remarks  
   
-##  <a name="cmdiframewndex__ontearoffmenu"></a>  CMDIFrameWndEx::OnTearOffMenu  
+##  <a name="ontearoffmenu"></a>  CMDIFrameWndEx::OnTearOffMenu  
  Called by the framework when a menu that has a tear-off bar is activated.  
   
 ```  
@@ -1405,7 +1405,7 @@ virtual BOOL OnTearOffMenu(
 ### Remarks  
  Override this function when you want to implement a special setup for the tear-off bar. The default implementation does nothing.  
   
-##  <a name="cmdiframewndex__onupdateframemenu"></a>  CMDIFrameWndEx::OnUpdateFrameMenu  
+##  <a name="onupdateframemenu"></a>  CMDIFrameWndEx::OnUpdateFrameMenu  
  Called by the framework to update the frame menu.  
   
 ```  
@@ -1416,7 +1416,7 @@ virtual void OnUpdateFrameMenu(HMENU hMenuAlt);
  [in] `hMenuAlt`  
  A handle to a menu.  
   
-##  <a name="cmdiframewndex__panefrompoint"></a>  CMDIFrameWndEx::PaneFromPoint  
+##  <a name="panefrompoint"></a>  CMDIFrameWndEx::PaneFromPoint  
  Returns the docking pane that contains the specified point.  
   
 ```  
@@ -1456,9 +1456,9 @@ CBasePane* PaneFromPoint(
  A pointer to a docking pane, or `NULL` if no control contains the point specified by `point`.  
   
 ### Remarks  
- The call is redirected to the [CDockingManager Class](../../mfc/reference/cdockingmanager-class.md). See [CDockingManager::ControlBarFromPoint](../../mfc/reference/cdockingmanager-class.md#cdockingmanager__panefrompoint) for more information.  
+ The call is redirected to the [CDockingManager Class](../../mfc/reference/cdockingmanager-class.md). See [CDockingManager::ControlBarFromPoint](../../mfc/reference/cdockingmanager-class.md#panefrompoint) for more information.  
   
-##  <a name="cmdiframewndex__recalclayout"></a>  CMDIFrameWndEx::RecalcLayout  
+##  <a name="recalclayout"></a>  CMDIFrameWndEx::RecalcLayout  
  Called by the framework to recalculate the layout of the frame window.  
   
 ```  
@@ -1470,9 +1470,9 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
  Determines whether the active in-place item for the frame window receives notification of the layout change. If `TRUE`, the item is notified; otherwise `FALSE`.  
   
 ### Remarks  
- This method overrides [CFrameWnd::RecalcLayout](../../mfc/reference/cframewnd-class.md#cframewnd__recalclayout).  
+ This method overrides [CFrameWnd::RecalcLayout](../../mfc/reference/cframewnd-class.md#recalclayout).  
   
-##  <a name="cmdiframewndex__removepanefromdockmanager"></a>  CMDIFrameWndEx::RemovePaneFromDockManager  
+##  <a name="removepanefromdockmanager"></a>  CMDIFrameWndEx::RemovePaneFromDockManager  
  Unregisters a pane and removes it from the docking manager.  
   
 ```  
@@ -1501,11 +1501,11 @@ void RemovePaneFromDockManager(
  A pointer to a pane that replaces the removed pane.  
   
 ### Remarks  
- You must register each pane with the docking manager to take part in the docking layout. Use [CMDIFrameWndEx::AddPane](#cmdiframewndex__addpane) or [CMDIFrameWndEx::InsertPane](#cmdiframewndex__insertpane) to register panes.  
+ You must register each pane with the docking manager to take part in the docking layout. Use [CMDIFrameWndEx::AddPane](#addpane) or [CMDIFrameWndEx::InsertPane](#insertpane) to register panes.  
   
  Use this method when a pane is no longer a part of the docking layout of the frame window.  
   
-##  <a name="cmdiframewndex__savemdistate"></a>  CMDIFrameWndEx::SaveMDIState  
+##  <a name="savemdistate"></a>  CMDIFrameWndEx::SaveMDIState  
  Saves the current layout of MDI Tabbed Groups and the list of previously opened documents.  
   
 ```  
@@ -1524,22 +1524,22 @@ virtual BOOL SaveMDIState(LPCTSTR lpszProfileName);
   
 -   Call `SaveMDIState` when the main frame is being closed  
   
--   Call [CMDIFrameWndEx::LoadMDIState](#cmdiframewndex__loadmdistate) when the main frame is being created. The recommended location for this call is before the main frame is displayed for the first time.  
+-   Call [CMDIFrameWndEx::LoadMDIState](#loadmdistate) when the main frame is being created. The recommended location for this call is before the main frame is displayed for the first time.  
   
 -   Call `CWinAppEx::EnableLoadWindowPlacement(FALSE);` before `pMainFrame->LoadFrame (IDR_MAINFRAME);`  
   
 -   Call `CWinAppEx::ReloadWindowPlacement``(pMainFrame)` after `LoadMDIState` to display the main frame at the position that was stored in the registry.  
   
--   Override `GetDocumentName` in the `CMDIChildWndEx`- derived class if your application displays documents that are not stored as files. The returned string will be saved in the registry as a document identifier. For more information, see [CMDIChildWndEx::GetDocumentName](../../mfc/reference/cmdichildwndex-class.md#cmdichildwndex__getdocumentname).  
+-   Override `GetDocumentName` in the `CMDIChildWndEx`- derived class if your application displays documents that are not stored as files. The returned string will be saved in the registry as a document identifier. For more information, see [CMDIChildWndEx::GetDocumentName](../../mfc/reference/cmdichildwndex-class.md#getdocumentname).  
   
--   Override [CMDIFrameWndEx::CreateDocumentWindow](#cmdiframewndex__createdocumentwindow) to correctly create documents when they are loaded from the registry. The parameter to `CreateDocumentWindow` is the string that `GetDocumentName` returned earlier.  
+-   Override [CMDIFrameWndEx::CreateDocumentWindow](#createdocumentwindow) to correctly create documents when they are loaded from the registry. The parameter to `CreateDocumentWindow` is the string that `GetDocumentName` returned earlier.  
   
 ### Example  
- The following example shows how `SaveMDIState` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
+ The following example shows how `SaveMDIState` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#15](../../mfc/codesnippet/CPP/cmdiframewndex-class_14.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#15](../../mfc/codesnippet/cpp/cmdiframewndex-class_14.cpp)]  
   
-##  <a name="cmdiframewndex__setprintpreviewframe"></a>  CMDIFrameWndEx::SetPrintPreviewFrame  
+##  <a name="setprintpreviewframe"></a>  CMDIFrameWndEx::SetPrintPreviewFrame  
  Sets the print preview frame window.  
   
 ```  
@@ -1552,7 +1552,7 @@ void SetPrintPreviewFrame(CFrameWnd* pWnd);
   
 ### Remarks  
   
-##  <a name="cmdiframewndex__setuptoolbarmenu"></a>  CMDIFrameWndEx::SetupToolbarMenu  
+##  <a name="setuptoolbarmenu"></a>  CMDIFrameWndEx::SetupToolbarMenu  
  Modifies a toolbar object by replacing dummy items with user-defined items.  
   
 ```  
@@ -1572,7 +1572,7 @@ void SetupToolbarMenu(
  [in] `uiViewUserToolbarCmdLast`  
  Specifies the last user-defined command.  
   
-##  <a name="cmdiframewndex__showfullscreen"></a>  CMDIFrameWndEx::ShowFullScreen  
+##  <a name="showfullscreen"></a>  CMDIFrameWndEx::ShowFullScreen  
  Switches the main frame from regular mode to full-screen mode.  
   
 ```  
@@ -1581,7 +1581,7 @@ void ShowFullScreen();
   
 ### Remarks  
   
-##  <a name="cmdiframewndex__showpane"></a>  CMDIFrameWndEx::ShowPane  
+##  <a name="showpane"></a>  CMDIFrameWndEx::ShowPane  
  Shows or hides the specified pane.  
   
 ```  
@@ -1609,11 +1609,11 @@ void ShowPane(
  Call this method to show or hide the pane. Do not use `ShowWindow` for docking panes.  
   
 ### Example  
- The following example shows how `ShowPane` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
+ The following example shows how `ShowPane` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#16](../../mfc/codesnippet/CPP/cmdiframewndex-class_15.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#16](../../mfc/codesnippet/cpp/cmdiframewndex-class_15.cpp)]  
   
-##  <a name="cmdiframewndex__showwindowsdialog"></a>  CMDIFrameWndEx::ShowWindowsDialog  
+##  <a name="showwindowsdialog"></a>  CMDIFrameWndEx::ShowWindowsDialog  
  Creates a [CMFCWindowsManagerDialog](../../mfc/reference/cmfcwindowsmanagerdialog-class.md) box and opens it.  
   
 ```  
@@ -1621,11 +1621,11 @@ void ShowWindowsDialog();
 ```  
   
 ### Example  
- The following example shows how `ShowWindowsDialog` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
+ The following example shows how `ShowWindowsDialog` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#18](../../mfc/codesnippet/CPP/cmdiframewndex-class_16.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#18](../../mfc/codesnippet/cpp/cmdiframewndex-class_16.cpp)]  
   
-##  <a name="cmdiframewndex__tabbeddocumenttocontrolbar"></a>  CMDIFrameWndEx::TabbedDocumentToControlBar  
+##  <a name="tabbeddocumenttocontrolbar"></a>  CMDIFrameWndEx::TabbedDocumentToControlBar  
  Converts the specified tabbed document to a docking pane.  
   
 ```  
@@ -1640,14 +1640,14 @@ virtual BOOL TabbedDocumentToControlBar(CMDIChildWndEx* pMDIChildWnd);
  `TRUE` if the method was successful, `FALSE` on failure.  
   
 ### Remarks  
- Use this method to convert a tabbed document to a docking pane. The tabbed document must have been created by using [CMDIFrameWndEx::ControlBarToTabbedDocument](#cmdiframewndex__controlbartotabbeddocument).  
+ Use this method to convert a tabbed document to a docking pane. The tabbed document must have been created by using [CMDIFrameWndEx::ControlBarToTabbedDocument](#controlbartotabbeddocument).  
   
 ### Example  
- The following example shows how `TabbedDocumentToControlBar` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../top/visual-cpp-samples.md).  
+ The following example shows how `TabbedDocumentToControlBar` is used in the [VisualStudioDemo Sample: MFC Visual Studio Application](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#19](../../mfc/codesnippet/CPP/cmdiframewndex-class_17.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#19](../../mfc/codesnippet/cpp/cmdiframewndex-class_17.cpp)]  
   
-##  <a name="cmdiframewndex__updatecaption"></a>  CMDIFrameWndEx::UpdateCaption  
+##  <a name="updatecaption"></a>  CMDIFrameWndEx::UpdateCaption  
  Called by the framework to update the window frame caption.  
   
 ```  
@@ -1656,14 +1656,14 @@ void UpdateCaption();
   
 ### Remarks  
   
-##  <a name="cmdiframewndex__updatemditabbedbarsicons"></a>  CMDIFrameWndEx::UpdateMDITabbedBarsIcons  
+##  <a name="updatemditabbedbarsicons"></a>  CMDIFrameWndEx::UpdateMDITabbedBarsIcons  
  Sets the icon for each MDI tabbed pane.  
   
 ```  
 void UpdateMDITabbedBarsIcons();
 ```  
   
-##  <a name="cmdiframewndex__winhelp"></a>  CMDIFrameWndEx::WinHelp  
+##  <a name="winhelp"></a>  CMDIFrameWndEx::WinHelp  
  Called by the framework to initiate the WinHelp application or context help.  
   
 ```  
@@ -1680,7 +1680,7 @@ virtual void WinHelp(
  Specifies the type of help requested. For a list of possible values and how they affect the `dwData` parameter, see the [WinHelp Function](http://msdn.microsoft.com/library/windows/desktop/bb762267) in the Windows SDK.  
   
 ### Remarks  
- This method overrides [CWnd::WinHelp](../../mfc/reference/cwnd-class.md#cwnd__winhelp).  
+ This method overrides [CWnd::WinHelp](../../mfc/reference/cwnd-class.md#winhelp).  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

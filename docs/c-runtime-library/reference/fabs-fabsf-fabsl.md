@@ -113,4 +113,3 @@ long double fabsl(
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [abs, labs, llabs, _abs64](../../c-runtime-library/reference/abs-labs-llabs-abs64.md)   
  [_cabs](../../c-runtime-library/reference/cabs.md)   
- [labs, llabs](../../misc/labs-llabs.md)

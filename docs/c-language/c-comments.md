@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # C Comments
-A "comment" is a sequence of characters beginning with a forward slash/asterisk combination (**/\***) that is treated as a single white-space character by the compiler and is otherwise ignored. A comment can include any combination of characters from the representable character set, including newline characters, but excluding the "end comment" delimiter (**\*/**). Comments can occupy more than one line but cannot be nested.  
+A "comment" is a sequence of characters beginning with a forward slash/asterisk combination (<b>/\*</b>) that is treated as a single white-space character by the compiler and is otherwise ignored. A comment can include any combination of characters from the representable character set, including newline characters, but excluding the "end comment" delimiter (<b>\*/</b>). Comments can occupy more than one line but cannot be nested.  
   
  Comments can appear anywhere a white-space character is allowed. Since the compiler treats a comment as a single white-space character, you cannot include comments within tokens. The compiler ignores the characters in the comment.  
   

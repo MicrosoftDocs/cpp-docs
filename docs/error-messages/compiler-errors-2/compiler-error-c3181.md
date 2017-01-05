@@ -37,11 +37,11 @@ translation.priority.ht:
 # Compiler Error C3181
 'type' : invalid operand for operator  
   
- An invalid parameter was passed to the [__typeof](../../misc/typeof.md) or [typeid](../../windows/typeid-cpp-component-extensions.md) operator. The parameter must be a managed type.  
+An invalid parameter was passed to the [typeid](../../windows/typeid-cpp-component-extensions.md) operator. The parameter must be a managed type.  
   
- Note that the compiler uses aliases for native types that map to types in the common language runtime.  
+Note that the compiler uses aliases for native types that map to types in the common language runtime.  
   
- The following sample generates C3181:  
+The following sample generates C3181:  
   
 ```  
 // C3181a.cpp  
@@ -53,17 +53,3 @@ int main() {
    Type ^pType2 = int::typeid;   // OK  
 }  
 ```  
-  
- The following sample generates C3181:  
-  
-```  
-// C3181b.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-using namespace System;  
-  
-int main() {  
-   Type *pType1 = __typeof(int __gc*);   // C3181  
-   Type *pType2 = __typeof(int*);   // OK  
-}  
-```

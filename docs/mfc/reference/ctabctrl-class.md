@@ -51,44 +51,44 @@ class CTabCtrl : public CWnd
   
 |Name|Description|  
 |----------|-----------------|  
-|[CTabCtrl::CTabCtrl](#ctabctrl__ctabctrl)|Constructs a `CTabCtrl` object.|  
+|[CTabCtrl::CTabCtrl](#ctabctrl)|Constructs a `CTabCtrl` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CTabCtrl::AdjustRect](#ctabctrl__adjustrect)|Calculates a tab control's display area given a window rectangle, or calculates the window rectangle that would correspond to a given display area.|  
-|[CTabCtrl::Create](#ctabctrl__create)|Creates a tab control and attaches it to an instance of a `CTabCtrl` object.|  
-|[CTabCtrl::CreateEx](#ctabctrl__createex)|Creates a tab control with the specified Windows extended styles and attaches it to an instance of a `CTabCtrl` object.|  
-|[CTabCtrl::DeleteAllItems](#ctabctrl__deleteallitems)|Removes all items from a tab control.|  
-|[CTabCtrl::DeleteItem](#ctabctrl__deleteitem)|Removes an item from a tab control.|  
-|[CTabCtrl::DeselectAll](#ctabctrl__deselectall)|Resets items in a tab control, clearing any that were pressed.|  
-|[CTabCtrl::DrawItem](#ctabctrl__drawitem)|Draws a specified item of a tab control.|  
-|[CTabCtrl::GetCurFocus](#ctabctrl__getcurfocus)|Retrieves the tab with the current focus of a tab control.|  
-|[CTabCtrl::GetCurSel](#ctabctrl__getcursel)|Determines the currently selected tab in a tab control.|  
-|[CTabCtrl::GetExtendedStyle](#ctabctrl__getextendedstyle)|Retrieves the extended styles that are currently in use for the tab control.|  
-|[CTabCtrl::GetImageList](#ctabctrl__getimagelist)|Retrieves the image list associated with a tab control.|  
-|[CTabCtrl::GetItem](#ctabctrl__getitem)|Retrieves information about a tab in a tab control.|  
-|[CTabCtrl::GetItemCount](#ctabctrl__getitemcount)|Retrieves the number of tabs in the tab control.|  
-|[CTabCtrl::GetItemRect](#ctabctrl__getitemrect)|Retrieves the bounding rectangle for a tab in a tab control.|  
-|[CTabCtrl::GetItemState](#ctabctrl__getitemstate)|Retrieves the state of the indicated tab control item.|  
-|[CTabCtrl::GetRowCount](#ctabctrl__getrowcount)|Retrieves the current number of rows of tabs in a tab control.|  
-|[CTabCtrl::GetToolTips](#ctabctrl__gettooltips)|Retrieves the handle of the tool tip control associated with a tab control.|  
-|[CTabCtrl::HighlightItem](#ctabctrl__highlightitem)|Sets the highlight state of a tab item.|  
-|[CTabCtrl::HitTest](#ctabctrl__hittest)|Determines which tab, if any, is at a specified screen position.|  
-|[CTabCtrl::InsertItem](#ctabctrl__insertitem)|Inserts a new tab in a tab control.|  
-|[CTabCtrl::RemoveImage](#ctabctrl__removeimage)|Removes an image from a tab control's image list.|  
-|[CTabCtrl::SetCurFocus](#ctabctrl__setcurfocus)|Sets the focus to a specified tab in a tab control.|  
-|[CTabCtrl::SetCurSel](#ctabctrl__setcursel)|Selects a tab in a tab control.|  
-|[CTabCtrl::SetExtendedStyle](#ctabctrl__setextendedstyle)|Sets the extended styles for a tab control.|  
-|[CTabCtrl::SetImageList](#ctabctrl__setimagelist)|Assigns an image list to a tab control.|  
-|[CTabCtrl::SetItem](#ctabctrl__setitem)|Sets some or all of a tab's attributes.|  
-|[CTabCtrl::SetItemExtra](#ctabctrl__setitemextra)|Sets the number of bytes per tab reserved for application-defined data in a tab control.|  
-|[CTabCtrl::SetItemSize](#ctabctrl__setitemsize)|Sets the width and height of an item.|  
-|[CTabCtrl::SetItemState](#ctabctrl__setitemstate)|Sets the state of the indicated tab control item.|  
-|[CTabCtrl::SetMinTabWidth](#ctabctrl__setmintabwidth)|Sets the minimum width of items in a tab control.|  
-|[CTabCtrl::SetPadding](#ctabctrl__setpadding)|Sets the amount of space (padding) around each tab's icon and label in a tab control.|  
-|[CTabCtrl::SetToolTips](#ctabctrl__settooltips)|Assigns a tool tip control to a tab control.|  
+|[CTabCtrl::AdjustRect](#adjustrect)|Calculates a tab control's display area given a window rectangle, or calculates the window rectangle that would correspond to a given display area.|  
+|[CTabCtrl::Create](#create)|Creates a tab control and attaches it to an instance of a `CTabCtrl` object.|  
+|[CTabCtrl::CreateEx](#createex)|Creates a tab control with the specified Windows extended styles and attaches it to an instance of a `CTabCtrl` object.|  
+|[CTabCtrl::DeleteAllItems](#deleteallitems)|Removes all items from a tab control.|  
+|[CTabCtrl::DeleteItem](#deleteitem)|Removes an item from a tab control.|  
+|[CTabCtrl::DeselectAll](#deselectall)|Resets items in a tab control, clearing any that were pressed.|  
+|[CTabCtrl::DrawItem](#drawitem)|Draws a specified item of a tab control.|  
+|[CTabCtrl::GetCurFocus](#getcurfocus)|Retrieves the tab with the current focus of a tab control.|  
+|[CTabCtrl::GetCurSel](#getcursel)|Determines the currently selected tab in a tab control.|  
+|[CTabCtrl::GetExtendedStyle](#getextendedstyle)|Retrieves the extended styles that are currently in use for the tab control.|  
+|[CTabCtrl::GetImageList](#getimagelist)|Retrieves the image list associated with a tab control.|  
+|[CTabCtrl::GetItem](#getitem)|Retrieves information about a tab in a tab control.|  
+|[CTabCtrl::GetItemCount](#getitemcount)|Retrieves the number of tabs in the tab control.|  
+|[CTabCtrl::GetItemRect](#getitemrect)|Retrieves the bounding rectangle for a tab in a tab control.|  
+|[CTabCtrl::GetItemState](#getitemstate)|Retrieves the state of the indicated tab control item.|  
+|[CTabCtrl::GetRowCount](#getrowcount)|Retrieves the current number of rows of tabs in a tab control.|  
+|[CTabCtrl::GetToolTips](#gettooltips)|Retrieves the handle of the tool tip control associated with a tab control.|  
+|[CTabCtrl::HighlightItem](#highlightitem)|Sets the highlight state of a tab item.|  
+|[CTabCtrl::HitTest](#hittest)|Determines which tab, if any, is at a specified screen position.|  
+|[CTabCtrl::InsertItem](#insertitem)|Inserts a new tab in a tab control.|  
+|[CTabCtrl::RemoveImage](#removeimage)|Removes an image from a tab control's image list.|  
+|[CTabCtrl::SetCurFocus](#setcurfocus)|Sets the focus to a specified tab in a tab control.|  
+|[CTabCtrl::SetCurSel](#setcursel)|Selects a tab in a tab control.|  
+|[CTabCtrl::SetExtendedStyle](#setextendedstyle)|Sets the extended styles for a tab control.|  
+|[CTabCtrl::SetImageList](#setimagelist)|Assigns an image list to a tab control.|  
+|[CTabCtrl::SetItem](#setitem)|Sets some or all of a tab's attributes.|  
+|[CTabCtrl::SetItemExtra](#setitemextra)|Sets the number of bytes per tab reserved for application-defined data in a tab control.|  
+|[CTabCtrl::SetItemSize](#setitemsize)|Sets the width and height of an item.|  
+|[CTabCtrl::SetItemState](#setitemstate)|Sets the state of the indicated tab control item.|  
+|[CTabCtrl::SetMinTabWidth](#setmintabwidth)|Sets the minimum width of items in a tab control.|  
+|[CTabCtrl::SetPadding](#setpadding)|Sets the amount of space (padding) around each tab's icon and label in a tab control.|  
+|[CTabCtrl::SetToolTips](#settooltips)|Assigns a tool tip control to a tab control.|  
   
 ## Remarks  
  A "tab control" is analogous to the dividers in a notebook or the labels in a file cabinet. By using a tab control, an application can define multiple pages for the same area of a window or dialog box. Each page consists of a set of information or a group of controls that the application displays when the user selects the corresponding tab. A special type of tab control displays tabs that look like buttons. Clicking a button should immediately perform a command instead of displaying a page.  
@@ -109,7 +109,7 @@ class CTabCtrl : public CWnd
 ## Requirements  
  **Header:** afxcmn.h  
   
-##  <a name="ctabctrl__adjustrect"></a>  CTabCtrl::AdjustRect  
+##  <a name="adjustrect"></a>  CTabCtrl::AdjustRect  
  Calculates a tab control's display area given a window rectangle, or calculates the window rectangle that would correspond to a given display area.  
   
 ```  
@@ -125,9 +125,9 @@ void AdjustRect(
  Pointer to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure that specifies the given rectangle and receives the calculated rectangle.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CTabCtrl#1](../../mfc/reference/codesnippet/CPP/ctabctrl-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_CTabCtrl#1](../../mfc/reference/codesnippet/cpp/ctabctrl-class_1.cpp)]  
   
-##  <a name="ctabctrl__create"></a>  CTabCtrl::Create  
+##  <a name="create"></a>  CTabCtrl::Create  
  Creates a tab control and attaches it to an instance of a `CTabCtrl` object.  
   
 ```  
@@ -169,12 +169,12 @@ virtual BOOL Create(
   
 - **WS_TABSTOP** Specifies one of any number of controls through which the user can move by using the TAB key. The TAB key moves the user to the next control specified by the **WS_TABSTOP** style.  
   
- To create a tab control with extended window styles, call [CTabCtrl::CreateEx](#ctabctrl__createex) instead of **Create**.  
+ To create a tab control with extended window styles, call [CTabCtrl::CreateEx](#createex) instead of **Create**.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CTabCtrl#2](../../mfc/reference/codesnippet/CPP/ctabctrl-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_CTabCtrl#2](../../mfc/reference/codesnippet/cpp/ctabctrl-class_2.cpp)]  
   
-##  <a name="ctabctrl__createex"></a>  CTabCtrl::CreateEx  
+##  <a name="createex"></a>  CTabCtrl::CreateEx  
  Creates a control (a child window) and associates it with the `CTabCtrl` object.  
   
 ```  
@@ -191,7 +191,7 @@ virtual BOOL CreateEx(
  Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
  `dwStyle`  
- Specifies the tab control's style. Apply any combination of [tab control styles](http://msdn.microsoft.com/library/windows/desktop/bb760549), described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. See **Remarks** in [Create](#ctabctrl__create) for a list of window styles that you can also apply to the control.  
+ Specifies the tab control's style. Apply any combination of [tab control styles](http://msdn.microsoft.com/library/windows/desktop/bb760549), described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. See **Remarks** in [Create](#create) for a list of window styles that you can also apply to the control.  
   
  `rect`  
  A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of `pParentWnd`.  
@@ -206,18 +206,18 @@ virtual BOOL CreateEx(
  Nonzero if successful otherwise 0.  
   
 ### Remarks  
- Use `CreateEx` instead of [Create](#ctabctrl__create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
+ Use `CreateEx` instead of [Create](#create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
   
- `CreateEx` creates the control with the extended Windows styles specified by `dwExStyle`. Set extended styles specific to a control using [SetExtendedStyle](#ctabctrl__setextendedstyle). For example, use `CreateEx` to set such styles as **WS_EX_CONTEXTHELP**, but use `SetExtendedStyle` to set such styles as **TCS_EX_FLATSEPARATORS**. For more information, see the styles described in [Tab Control Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb760546) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ `CreateEx` creates the control with the extended Windows styles specified by `dwExStyle`. Set extended styles specific to a control using [SetExtendedStyle](#setextendedstyle). For example, use `CreateEx` to set such styles as **WS_EX_CONTEXTHELP**, but use `SetExtendedStyle` to set such styles as **TCS_EX_FLATSEPARATORS**. For more information, see the styles described in [Tab Control Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb760546) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ctabctrl__ctabctrl"></a>  CTabCtrl::CTabCtrl  
+##  <a name="ctabctrl"></a>  CTabCtrl::CTabCtrl  
  Constructs a `CTabCtrl` object.  
   
 ```  
 CTabCtrl();
 ```  
   
-##  <a name="ctabctrl__deleteallitems"></a>  CTabCtrl::DeleteAllItems  
+##  <a name="deleteallitems"></a>  CTabCtrl::DeleteAllItems  
  Removes all items from a tab control.  
   
 ```  
@@ -227,7 +227,7 @@ BOOL DeleteAllItems();
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
-##  <a name="ctabctrl__deleteitem"></a>  CTabCtrl::DeleteItem  
+##  <a name="deleteitem"></a>  CTabCtrl::DeleteItem  
  Removes the specified item from a tab control.  
   
 ```  
@@ -242,9 +242,9 @@ BOOL DeleteItem(int nItem);
  Nonzero if successful; otherwise 0.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CTabCtrl#3](../../mfc/reference/codesnippet/CPP/ctabctrl-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_CTabCtrl#3](../../mfc/reference/codesnippet/cpp/ctabctrl-class_3.cpp)]  
   
-##  <a name="ctabctrl__deselectall"></a>  CTabCtrl::DeselectAll  
+##  <a name="deselectall"></a>  CTabCtrl::DeselectAll  
  Resets items in a tab control, clearing any that were pressed.  
   
 ```  
@@ -258,7 +258,7 @@ void DeselectAll(BOOL fExcludeFocus);
 ### Remarks  
  This member function implements the behavior of the Win32 message, [TCM_DESELECTALL](http://msdn.microsoft.com/library/windows/desktop/bb760579), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ctabctrl__drawitem"></a>  CTabCtrl::DrawItem  
+##  <a name="drawitem"></a>  CTabCtrl::DrawItem  
  Called by the framework when a visual aspect of an owner-draw tab control changes.  
   
 ```  
@@ -276,7 +276,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
   
  The application should restore all graphics device interface (GDI) objects selected for the display context supplied in `lpDrawItemStruct` before this member function terminates.  
   
-##  <a name="ctabctrl__getcurfocus"></a>  CTabCtrl::GetCurFocus  
+##  <a name="getcurfocus"></a>  CTabCtrl::GetCurFocus  
  Retrieves the index of the tab with the current focus.  
   
 ```  
@@ -288,7 +288,7 @@ int GetCurFocus() const;
 ### Return Value  
  The zero-based index of the tab with the current focus.  
   
-##  <a name="ctabctrl__getcursel"></a>  CTabCtrl::GetCurSel  
+##  <a name="getcursel"></a>  CTabCtrl::GetCurSel  
  Retrieves the currently selected tab in a tab control.  
   
 ```  
@@ -300,7 +300,7 @@ int GetCurSel() const;
 ### Return Value  
  Zero-based index of the selected tab if successful or – 1 if no tab is selected.  
   
-##  <a name="ctabctrl__getextendedstyle"></a>  CTabCtrl::GetExtendedStyle  
+##  <a name="getextendedstyle"></a>  CTabCtrl::GetExtendedStyle  
  Retrieves the extended styles that are currently in use for the tab control.  
   
 ```  
@@ -313,7 +313,7 @@ DWORD GetExtendedStyle();
 ### Remarks  
  This member function implements the behavior of the Win32 message [TCM_GETEXTENDEDSTYLE](http://msdn.microsoft.com/library/windows/desktop/bb760585), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ctabctrl__getimagelist"></a>  CTabCtrl::GetImageList  
+##  <a name="getimagelist"></a>  CTabCtrl::GetImageList  
  Retrieves the image list that's associated with a tab control.  
   
 ```  
@@ -325,7 +325,7 @@ CImageList* GetImageList() const;
 ### Return Value  
  If successful, a pointer to the image list of the tab control; otherwise, **NULL**.  
   
-##  <a name="ctabctrl__getitem"></a>  CTabCtrl::GetItem  
+##  <a name="getitem"></a>  CTabCtrl::GetItem  
  Retrieves information about a tab in a tab control.  
   
 ```  
@@ -374,9 +374,9 @@ BOOL GetItem(
  Application-defined data associated with the tab. If there are more than four bytes of application-defined data per tab, an application must define a structure and use it instead of the `TCITEM` structure. The first member of the application-defined structure must be a [TCITEMHEADER](http://msdn.microsoft.com/library/windows/desktop/bb760556)structure. The **TCITEMHEADER** structure is identical to the `TCITEM` structure, but without the **lParam** member. The difference between the size of your structure and the size of the **TCITEMHEADER** structure should equal the number of extra bytes per tab.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CTabCtrl#4](../../mfc/reference/codesnippet/CPP/ctabctrl-class_4.cpp)]  
+ [!code-cpp[NVC_MFC_CTabCtrl#4](../../mfc/reference/codesnippet/cpp/ctabctrl-class_4.cpp)]  
   
-##  <a name="ctabctrl__getitemcount"></a>  CTabCtrl::GetItemCount  
+##  <a name="getitemcount"></a>  CTabCtrl::GetItemCount  
  Retrieves the number of tabs in the tab control.  
   
 ```  
@@ -389,9 +389,9 @@ int GetItemCount() const;
  Number of items in the tab control.  
   
 ### Example  
-  See the example for [CPropertySheet::GetTabControl](../../mfc/reference/cpropertysheet-class.md#cpropertysheet__gettabcontrol).  
+  See the example for [CPropertySheet::GetTabControl](../../mfc/reference/cpropertysheet-class.md#gettabcontrol).  
   
-##  <a name="ctabctrl__getitemrect"></a>  CTabCtrl::GetItemRect  
+##  <a name="getitemrect"></a>  CTabCtrl::GetItemRect  
  Retrieves the bounding rectangle for the specified tab in a tab control.  
   
 ```  
@@ -412,9 +412,9 @@ BOOL GetItemRect(
  Nonzero if successful; otherwise 0.  
   
 ### Example  
-  See the example for [CPropertySheet::GetTabControl](../../mfc/reference/cpropertysheet-class.md#cpropertysheet__gettabcontrol).  
+  See the example for [CPropertySheet::GetTabControl](../../mfc/reference/cpropertysheet-class.md#gettabcontrol).  
   
-##  <a name="ctabctrl__getitemstate"></a>  CTabCtrl::GetItemState  
+##  <a name="getitemstate"></a>  CTabCtrl::GetItemState  
  Retrieves the state of the tab control item identified by `nItem`.  
   
 ```  
@@ -443,7 +443,7 @@ DWORD GetItemState(
 ### Remarks  
  An item's state is specified by the **dwState** member of the `TCITEM` structure.  
   
-##  <a name="ctabctrl__getrowcount"></a>  CTabCtrl::GetRowCount  
+##  <a name="getrowcount"></a>  CTabCtrl::GetRowCount  
  Retrieves the current number of rows in a tab control.  
   
 ```  
@@ -458,7 +458,7 @@ int GetRowCount() const;
 ### Remarks  
  Only tab controls that have the **TCS_MULTILINE** style can have multiple rows of tabs.  
   
-##  <a name="ctabctrl__gettooltips"></a>  CTabCtrl::GetToolTips  
+##  <a name="gettooltips"></a>  CTabCtrl::GetToolTips  
  Retrieves the handle of the tool tip control associated with a tab control.  
   
 ```  
@@ -473,7 +473,7 @@ CToolTipCtrl* GetToolTips() const;
 ### Remarks  
  A tab control creates a tool tip control if it has the **TCS_TOOLTIPS** style. You can also assign a tool tip control to a tab control by using the `SetToolTips` member function.  
   
-##  <a name="ctabctrl__highlightitem"></a>  CTabCtrl::HighlightItem  
+##  <a name="highlightitem"></a>  CTabCtrl::HighlightItem  
  Sets the highlight state of a tab item.  
   
 ```  
@@ -494,7 +494,7 @@ BOOL HighlightItem(
 ### Remarks  
  This member function implements the Win32 message [TCM_HIGHLIGHTITEM](http://msdn.microsoft.com/library/windows/desktop/bb760602), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ctabctrl__hittest"></a>  CTabCtrl::HitTest  
+##  <a name="hittest"></a>  CTabCtrl::HitTest  
  Determines which tab, if any, is at the specified screen position.  
   
 ```  
@@ -510,7 +510,7 @@ int HitTest(TCHITTESTINFO* pHitTestInfo) const;
 ### Return Value  
  Returns the zero-based index of the tab or – 1 if no tab is at the specified position.  
   
-##  <a name="ctabctrl__insertitem"></a>  CTabCtrl::InsertItem  
+##  <a name="insertitem"></a>  CTabCtrl::InsertItem  
  Inserts a new tab in an existing tab control.  
   
 ```  
@@ -587,9 +587,9 @@ LONG InsertItem(
  Zero-based index of the new tab if successful; otherwise – 1.  
   
 ### Example  
- [!code-cpp[NVC_MFC_CTabCtrl#5](../../mfc/reference/codesnippet/CPP/ctabctrl-class_5.cpp)]  
+ [!code-cpp[NVC_MFC_CTabCtrl#5](../../mfc/reference/codesnippet/cpp/ctabctrl-class_5.cpp)]  
   
-##  <a name="ctabctrl__removeimage"></a>  CTabCtrl::RemoveImage  
+##  <a name="removeimage"></a>  CTabCtrl::RemoveImage  
  Removes the specified image from a tab control's image list.  
   
 ```  
@@ -603,7 +603,7 @@ void RemoveImage(int nImage);
 ### Remarks  
  The tab control updates each tab's image index so that each tab remains associated with the same image.  
   
-##  <a name="ctabctrl__setcurfocus"></a>  CTabCtrl::SetCurFocus  
+##  <a name="setcurfocus"></a>  CTabCtrl::SetCurFocus  
  Sets the focus to a specified tab in a tab control.  
   
 ```  
@@ -617,7 +617,7 @@ void SetCurFocus(int nItem);
 ### Remarks  
  This member function implements the behavior of the Win32 message [TCM_SETCURFOCUS](http://msdn.microsoft.com/library/windows/desktop/bb760610), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ctabctrl__setcursel"></a>  CTabCtrl::SetCurSel  
+##  <a name="setcursel"></a>  CTabCtrl::SetCurSel  
  Selects a tab in a tab control.  
   
 ```  
@@ -634,7 +634,7 @@ int SetCurSel(int nItem);
 ### Remarks  
  A tab control does not send a **TCN_SELCHANGING** or **TCN_SELCHANGE** notification message when a tab is selected using this function. These notifications are sent, using **WM_NOTIFY**, when the user clicks or uses the keyboard to change tabs.  
   
-##  <a name="ctabctrl__setextendedstyle"></a>  CTabCtrl::SetExtendedStyle  
+##  <a name="setextendedstyle"></a>  CTabCtrl::SetExtendedStyle  
  Sets the extended styles for a tab control.  
   
 ```  
@@ -655,7 +655,7 @@ DWORD SetExtendedStyle(
 ### Return Value  
  This member function implements the behavior of the Win32 message [TCM_SETEXTENDEDSTYLE](http://msdn.microsoft.com/library/windows/desktop/bb760627), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ctabctrl__setimagelist"></a>  CTabCtrl::SetImageList  
+##  <a name="setimagelist"></a>  CTabCtrl::SetImageList  
  Assigns an image list to a tab control.  
   
 ```  
@@ -669,7 +669,7 @@ CImageList* SetImageList(CImageList* pImageList);
 ### Return Value  
  Returns a pointer to the previous image list or **NULL** if there is no previous image list.  
   
-##  <a name="ctabctrl__setitem"></a>  CTabCtrl::SetItem  
+##  <a name="setitem"></a>  CTabCtrl::SetItem  
  Sets some or all of a tab's attributes.  
   
 ```  
@@ -688,9 +688,9 @@ BOOL SetItem(
  Nonzero if successful; otherwise 0.  
   
 ### Example  
-  See the example for [GetItem](#ctabctrl__getitem).  
+  See the example for [GetItem](#getitem).  
   
-##  <a name="ctabctrl__setitemextra"></a>  CTabCtrl::SetItemExtra  
+##  <a name="setitemextra"></a>  CTabCtrl::SetItemExtra  
  Sets the number of bytes per tab reserved for application-defined data in a tab control.  
   
 ```  
@@ -707,7 +707,7 @@ BOOL SetItemExtra(int nBytes);
 ### Remarks  
  This member function implements the behavior of the Win32 message [TCM_SETITEMEXTRA](http://msdn.microsoft.com/library/windows/desktop/bb760633), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ctabctrl__setitemsize"></a>  CTabCtrl::SetItemSize  
+##  <a name="setitemsize"></a>  CTabCtrl::SetItemSize  
  Sets the width and height of the tab control items.  
   
 ```  
@@ -721,7 +721,7 @@ CSize SetItemSize(CSize size);
 ### Return Value  
  Returns the old width and height of the tab control items.  
   
-##  <a name="ctabctrl__setitemstate"></a>  CTabCtrl::SetItemState  
+##  <a name="setitemstate"></a>  CTabCtrl::SetItemState  
  Sets the state of the tab control item identified by `nItem`.  
   
 ```  
@@ -749,7 +749,7 @@ BOOL SetItemState(
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
-##  <a name="ctabctrl__setmintabwidth"></a>  CTabCtrl::SetMinTabWidth  
+##  <a name="setmintabwidth"></a>  CTabCtrl::SetMinTabWidth  
  Sets the minimum width of items in a tab control.  
   
 ```  
@@ -766,7 +766,7 @@ int SetMinTabWidth(int cx);
 ### Return Value  
  This member function implements the behavior of the Win32 message [TCM_SETMINTABWIDTH](http://msdn.microsoft.com/library/windows/desktop/bb760637), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ctabctrl__setpadding"></a>  CTabCtrl::SetPadding  
+##  <a name="setpadding"></a>  CTabCtrl::SetPadding  
  Sets the amount of space (padding) around each tab's icon and label in a tab control.  
   
 ```  
@@ -777,7 +777,7 @@ void SetPadding(CSize size);
  `size`  
  Sets the amount of space (padding) around each tab's icon and label in a tab control.  
   
-##  <a name="ctabctrl__settooltips"></a>  CTabCtrl::SetToolTips  
+##  <a name="settooltips"></a>  CTabCtrl::SetToolTips  
  Assigns a tool tip control to a tab control.  
   
 ```  
@@ -792,7 +792,7 @@ void SetToolTips(CToolTipCtrl* pWndTip);
  You can get the tool tip control associated with a tab control by making a call to `GetToolTips`.  
   
 ### Example  
-  See the example for [CPropertySheet::GetTabControl](../../mfc/reference/cpropertysheet-class.md#cpropertysheet__gettabcontrol).  
+  See the example for [CPropertySheet::GetTabControl](../../mfc/reference/cpropertysheet-class.md#gettabcontrol).  
   
 ## See Also  
  [CWnd Class](../../mfc/reference/cwnd-class.md)   

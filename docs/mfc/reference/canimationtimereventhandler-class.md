@@ -50,11 +50,11 @@ class CAnimationTimerEventHandler : public CUIAnimationTimerEventHandlerBase<CAn
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAnimationTimerEventHandler::CreateInstance](#canimationtimereventhandler__createinstance)|Creates an instance of `CAnimationTimerEventHandler` callback.|  
-|[CAnimationTimerEventHandler::OnPostUpdate](#canimationtimereventhandler__onpostupdate)|Handles events that occur after an animation update is finished. (Overrides `CUIAnimationTimerEventHandlerBase::OnPostUpdate`.)|  
-|[CAnimationTimerEventHandler::OnPreUpdate](#canimationtimereventhandler__onpreupdate)|Handles events that occur before an animation update begins. (Overrides `CUIAnimationTimerEventHandlerBase::OnPreUpdate`.)|  
-|[CAnimationTimerEventHandler::OnRenderingTooSlow](#canimationtimereventhandler__onrenderingtooslow)|Handles events that occur when the rendering frame rate for an animation falls below the minimum desirable frame rate. (Overrides `CUIAnimationTimerEventHandlerBase::OnRenderingTooSlow`.)|  
-|[CAnimationTimerEventHandler::SetAnimationController](#canimationtimereventhandler__setanimationcontroller)|Stores a pointer to animation controller to route events.|  
+|[CAnimationTimerEventHandler::CreateInstance](#createinstance)|Creates an instance of `CAnimationTimerEventHandler` callback.|  
+|[CAnimationTimerEventHandler::OnPostUpdate](#onpostupdate)|Handles events that occur after an animation update is finished. (Overrides `CUIAnimationTimerEventHandlerBase::OnPostUpdate`.)|  
+|[CAnimationTimerEventHandler::OnPreUpdate](#onpreupdate)|Handles events that occur before an animation update begins. (Overrides `CUIAnimationTimerEventHandlerBase::OnPreUpdate`.)|  
+|[CAnimationTimerEventHandler::OnRenderingTooSlow](#onrenderingtooslow)|Handles events that occur when the rendering frame rate for an animation falls below the minimum desirable frame rate. (Overrides `CUIAnimationTimerEventHandlerBase::OnRenderingTooSlow`.)|  
+|[CAnimationTimerEventHandler::SetAnimationController](#setanimationcontroller)|Stores a pointer to animation controller to route events.|  
   
 ## Remarks  
  This event handler is created and passed to IUIAnimationTimer::SetTimerEventHandler when you call CAnimationController::EnableAnimationTimerEventHandler.  
@@ -69,7 +69,7 @@ class CAnimationTimerEventHandler : public CUIAnimationTimerEventHandlerBase<CAn
 ## Requirements  
  **Header:** afxanimationcontroller.h  
   
-##  <a name="canimationtimereventhandler__createinstance"></a>  CAnimationTimerEventHandler::CreateInstance  
+##  <a name="createinstance"></a>  CAnimationTimerEventHandler::CreateInstance  
  Creates an instance of CAnimationTimerEventHandler callback.  
   
 ```  
@@ -87,7 +87,7 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
 ### Return Value  
  If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.  
   
-##  <a name="canimationtimereventhandler__onpostupdate"></a>  CAnimationTimerEventHandler::OnPostUpdate  
+##  <a name="onpostupdate"></a>  CAnimationTimerEventHandler::OnPostUpdate  
  Handles events that occur after an animation update is finished.  
   
 ```  
@@ -97,7 +97,7 @@ IFACEMETHOD(OnPostUpdate)();
 ### Return Value  
  S_OK if the method succeeds; otherwise E_FAIL.  
   
-##  <a name="canimationtimereventhandler__onpreupdate"></a>  CAnimationTimerEventHandler::OnPreUpdate  
+##  <a name="onpreupdate"></a>  CAnimationTimerEventHandler::OnPreUpdate  
  Handles events that occur before an animation update begins.  
   
 ```  
@@ -107,7 +107,7 @@ IFACEMETHOD(OnPreUpdate)();
 ### Return Value  
  S_OK if the method succeeds; otherwise E_FAIL.  
   
-##  <a name="canimationtimereventhandler__onrenderingtooslow"></a>  CAnimationTimerEventHandler::OnRenderingTooSlow  
+##  <a name="onrenderingtooslow"></a>  CAnimationTimerEventHandler::OnRenderingTooSlow  
  Handles events that occur when the rendering frame rate for an animation falls below the minimum desirable frame rate.  
   
 ```  
@@ -120,7 +120,7 @@ IFACEMETHOD(OnRenderingTooSlow)(UINT32 fps);
 ### Return Value  
  S_OK if the method succeeds; otherwise E_FAIL.  
   
-##  <a name="canimationtimereventhandler__setanimationcontroller"></a>  CAnimationTimerEventHandler::SetAnimationController  
+##  <a name="setanimationcontroller"></a>  CAnimationTimerEventHandler::SetAnimationController  
  Stores a pointer to animation controller to route events.  
   
 ```  

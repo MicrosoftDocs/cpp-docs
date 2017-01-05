@@ -1,5 +1,5 @@
 ---
-title: "hash_multiset::generic_reverse_iterator (STL-CLR) | Microsoft Docs"
+title: "hash_multiset::generic_reverse_iterator (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # When Do I Need to Call AtlAxWinTerm?
-[AtlAxWinTerm](../Topic/AtlAxWinTerm.md) unregisters the **"AtlAxWin80"** window class. You should call this function (if you no longer need to create host windows) after all existing host windows have been destroyed. If you don't call this function, the window class will be unregistered automatically when the process terminates.  
+[AtlAxWinTerm](http://msdn.microsoft.com/library/3aba9ffb-4f66-43b0-85eb-db219a8d4bd7) unregisters the **"AtlAxWin80"** window class. You should call this function (if you no longer need to create host windows) after all existing host windows have been destroyed. If you don't call this function, the window class will be unregistered automatically when the process terminates.  
   
 ## See Also  
  When Do I Need to Call AtlAxWinInit  

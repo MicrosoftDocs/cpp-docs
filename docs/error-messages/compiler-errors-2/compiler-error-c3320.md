@@ -38,11 +38,12 @@ translation.priority.mt:
 # Compiler Error C3320
 'type': type cannot have the same name as the module 'name' property  
   
- An exported user-defined type (UDT), which could be a struct, class, enum, union or [__value](../../misc/value.md), cannot have the same name as the parameter passed to the [module](../../windows/module-cpp.md) attribute's name property.  
+An exported user-defined type (UDT), which could be a struct, class, enum, or union, cannot have the same name as the parameter passed to the [module](../../windows/module-cpp.md) attribute's name property.  
   
- The following sample generates C3320:  
+## Example  
+The following sample generates C3320:  
   
-```  
+```cpp  
 // C3320.cpp  
 #include "unknwn.h"  
 [module(name="xx")];  

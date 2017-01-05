@@ -64,7 +64,8 @@ This topic applies to the MFC ODBC classes.
  As a supplement, you might want to read [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md), which describes the corresponding role of RFX in update operations.  
   
 ##  <a name="_core_adding_a_record"></a> Adding a Record  
- Adding a new record to a recordset involves calling the recordset's [AddNew](../Topic/CRecordset::AddNew.md) member function, setting the values of the new record's field data members, and calling the [Update](../Topic/CRecordset::Update.md) member function to write the record to the data source.  
+
+ Adding a new record to a recordset involves calling the recordset's [AddNew](../../mfc/reference/crecordset-class.md#addnew) member function, setting the values of the new record's field data members, and calling the [Update](../../mfc/reference/crecordset-class.md#update) member function to write the record to the data source.  
   
  As a precondition for calling `AddNew`, the recordset must not have been opened as read-only. The `CanUpdate` and `CanAppend` member functions let you determine these conditions.  
   
@@ -84,7 +85,7 @@ This topic applies to the MFC ODBC classes.
   
     1.  If no changes are detected, **Update** does nothing and returns 0.  
   
-    2.  If there are changes, **Update** constructs a SQL **INSERT** statement. The columns represented by all dirty field data members are listed in the **INSERT** statement. To force a column to be included, call the [SetFieldDirty](../Topic/CRecordset::SetFieldDirty.md) member function:  
+    2.  If there are changes, **Update** constructs a SQL **INSERT** statement. The columns represented by all dirty field data members are listed in the **INSERT** statement. To force a column to be included, call the [SetFieldDirty](../../mfc/reference/crecordset-class.md#setfielddirty) member function:  
   
         ```  
         SetFieldDirty( &m_dataMember, TRUE );  
@@ -110,7 +111,7 @@ This topic applies to the MFC ODBC classes.
  If your ODBC driver supports the **::SQLSetPos** ODBC API function, MFC uses the function to add records. With **::SQLSetPos**, added records are visible to any updatable MFC recordset. Without support for the function, added records are not visible and you must call **Requery** to see them. Using **::SQLSetPos** is also more efficient.  
   
 ##  <a name="_core_editing_an_existing_record"></a> Editing an Existing Record  
- Editing an existing record in a recordset involves scrolling to the record, calling the recordset's [Edit](../Topic/CRecordset::Edit.md) member function, setting the values of the new record's field data members, and calling the [Update](../Topic/CRecordset::Update.md) member function to write the changed record to the data source.  
+ Editing an existing record in a recordset involves scrolling to the record, calling the recordset's [Edit](../../mfc/reference/crecordset-class.md#edit) member function, setting the values of the new record's field data members, and calling the [Update](../../mfc/reference/crecordset-class.md#update) member function to write the changed record to the data source.  
   
  As a precondition for calling **Edit**, the recordset must be updatable and on a record. The `CanUpdate` and `IsDeleted` member functions let you determine these conditions. The current record also must not already have been deleted, and there must be records in the recordset (both `IsBOF` and `IsEOF` return 0).  
   
@@ -146,7 +147,7 @@ This topic applies to the MFC ODBC classes.
     >  If you call `AddNew` or **Edit** after having called either function previously but before you call **Update**, the edit buffer is refreshed with the stored record, replacing the new or edited record in progress. This behavior gives you a way to abort an `AddNew` or **Edit** and begin a new one: if you determine that the record-in-progress is faulty, simply call **Edit** or `AddNew` again.  
   
 ##  <a name="_core_deleting_a_record"></a> Deleting a Record  
- Deleting a record from a recordset involves scrolling to the record and calling the recordset's [Delete](../Topic/CRecordset::Delete.md) member function. Unlike `AddNew` and **Edit**, **Delete** does not require a matching call to **Update**.  
+ Deleting a record from a recordset involves scrolling to the record and calling the recordset's [Delete](../../mfc/reference/crecordset-class.md#delete) member function. Unlike `AddNew` and **Edit**, **Delete** does not require a matching call to **Update**.  
   
  As a precondition for calling **Delete**, the recordset must be updatable and it must be on a record. The `CanUpdate`, `IsBOF`, `IsEOF`, and `IsDeleted` member functions let you determine these conditions.  
   

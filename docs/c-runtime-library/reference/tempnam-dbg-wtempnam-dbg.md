@@ -106,7 +106,7 @@ wchar_t *_wtempnam_dbg(
 ## Remarks  
  The `_tempnam_dbg`and `_wtempnam_dbg`functions are identical to `_tempnam`and `_wtempnam`except that, when `_DEBUG`is defined, these functions use the debug version of `malloc` and `_malloc_dbg`, to allocate memory if `NULL` is passed as the first parameter. For more information, see [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md).  
   
- You do not need to call these functions explicitly in most cases. Instead, you can define the flag `_CRTDBG_MAP_ALLOC`. When `_CRTDBG_MAP_ALLOC` is defined, calls to `_tempnam` and `_wtempnam` are remapped to `_tempnam_dbg` and `_wtempnam_dbg`, respectively, with the `blockType` set to `_NORMAL_BLOCK`. Thus, you do not need to call these functions explicitly unless you want to mark the heap blocks as `_CLIENT_BLOCK`. For more information, see [Types of blocks on the debug heap](/visual-studio/debugger/crt-debug-heap-details).  
+ You do not need to call these functions explicitly in most cases. Instead, you can define the flag `_CRTDBG_MAP_ALLOC`. When `_CRTDBG_MAP_ALLOC` is defined, calls to `_tempnam` and `_wtempnam` are remapped to `_tempnam_dbg` and `_wtempnam_dbg`, respectively, with the `blockType` set to `_NORMAL_BLOCK`. Thus, you do not need to call these functions explicitly unless you want to mark the heap blocks as `_CLIENT_BLOCK`. For more information, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details).  
   
 ### Generic-Text Routine Mappings  
   
@@ -123,9 +123,9 @@ wchar_t *_wtempnam_dbg(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  
+ Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [_tempnam, _wtempnam, tmpnam, _wtmpnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md)   
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
- [Debug Versions of Heap Allocation Functions](/visual-studio/debugger/debug-versions-of-heap-allocation-functions)
+ [Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)

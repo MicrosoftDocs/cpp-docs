@@ -37,8 +37,9 @@ translation.priority.ht:
 # Compiler Error C3749
 'attribute': a custom attribute may not be used inside a function  
   
- A custom attribute cannot be used inside a function. (For more information on custom attributes, see the topic [attribute](../../windows/attribute.md).)  
+ A custom attribute cannot be used inside a function. For more information on custom attributes, see the topic [attribute](../../windows/attribute.md).  
   
+## Example  
  The following sample generates C3749:  
   
 ```  
@@ -53,18 +54,3 @@ public ref struct ABC : public Attribute {
   
 void f1() { [ABC]; };  // C3749  
 ```  
-  
- The following sample generates C3749:  
-  
-```  
-// C3749b.cpp  
-// compile with: /clr:oldSyntax /c  
-using namespace System;  
-  
-[attribute(All)]  
-public __gc struct ABC {  
-   ABC() {}  
-};  
-  
-void f1() { [ABC]; };  // C3749  
-```

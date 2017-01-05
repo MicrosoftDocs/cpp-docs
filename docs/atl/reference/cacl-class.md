@@ -55,39 +55,39 @@ class CAcl
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAcl::CAccessMaskArray](#cacl__caccessmaskarray)|An array of `ACCESS_MASK`s.|  
-|[CAcl::CAceFlagArray](#cacl__caceflagarray)|An array of `BYTE`s.|  
-|[CAcl::CAceTypeArray](#cacl__cacetypearray)|An array of `BYTE`s.|  
+|[CAcl::CAccessMaskArray](#caccessmaskarray)|An array of `ACCESS_MASK`s.|  
+|[CAcl::CAceFlagArray](#caceflagarray)|An array of `BYTE`s.|  
+|[CAcl::CAceTypeArray](#cacetypearray)|An array of `BYTE`s.|  
   
 ### Public Constructors  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAcl::CAcl](#cacl__cacl)|The constructor.|  
-|[CAcl::~CAcl](#cacl___dtorcacl)|The destructor.|  
+|[CAcl::CAcl](#cacl)|The constructor.|  
+|[CAcl::~CAcl](#dtor)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAcl::GetAceCount](#cacl__getacecount)|Returns the number of access-control entry (ACE) objects.|  
-|[CAcl::GetAclEntries](#cacl__getaclentries)|Retrieves the access-control list (ACL) entries from the `CAcl` object.|  
-|[CAcl::GetAclEntry](#cacl__getaclentry)|Retrieves all of the information about an entry in a `CAcl` object.|  
-|[CAcl::GetLength](#cacl__getlength)|Returns the length of the ACL.|  
-|[CAcl::GetPACL](#cacl__getpacl)|Returns a PACL (pointer to an ACL).|  
-|[CAcl::IsEmpty](#cacl__isempty)|Tests the `CAcl` object for entries.|  
-|[CAcl::IsNull](#cacl__isnull)|Returns the status of the `CAcl` object.|  
-|[CAcl::RemoveAce](#cacl__removeace)|Removes a specific ACE (access-control entry) from the `CAcl` object.|  
-|[CAcl::RemoveAces](#cacl__removeaces)|Removes all ACEs (access-control entries) from the `CAcl` that apply to the given `CSid`.|  
-|[CAcl::SetEmpty](#cacl__setempty)|Marks the `CAcl` object as empty.|  
-|[CAcl::SetNull](#cacl__setnull)|Marks the `CAcl` object as `NULL`.|  
+|[CAcl::GetAceCount](#getacecount)|Returns the number of access-control entry (ACE) objects.|  
+|[CAcl::GetAclEntries](#getaclentries)|Retrieves the access-control list (ACL) entries from the `CAcl` object.|  
+|[CAcl::GetAclEntry](#getaclentry)|Retrieves all of the information about an entry in a `CAcl` object.|  
+|[CAcl::GetLength](#getlength)|Returns the length of the ACL.|  
+|[CAcl::GetPACL](#getpacl)|Returns a PACL (pointer to an ACL).|  
+|[CAcl::IsEmpty](#isempty)|Tests the `CAcl` object for entries.|  
+|[CAcl::IsNull](#isnull)|Returns the status of the `CAcl` object.|  
+|[CAcl::RemoveAce](#removeace)|Removes a specific ACE (access-control entry) from the `CAcl` object.|  
+|[CAcl::RemoveAces](#removeaces)|Removes all ACEs (access-control entries) from the `CAcl` that apply to the given `CSid`.|  
+|[CAcl::SetEmpty](#setempty)|Marks the `CAcl` object as empty.|  
+|[CAcl::SetNull](#setnull)|Marks the `CAcl` object as `NULL`.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAcl::operator const ACL *](#cacl__operator_const_acl__star)|Casts a `CAcl` object to an `ACL` structure.|  
-|[CAcl::operator =](#cacl__operator__eq)|Assignment operator.|  
+|[CAcl::operator const ACL *](#operator_const_acl__star)|Casts a `CAcl` object to an `ACL` structure.|  
+|[CAcl::operator =](#operator_eq)|Assignment operator.|  
   
 ## Remarks  
  The **ACL** structure is the header of an ACL (access-control list). An ACL includes a sequential list of zero or more [ACEs](http://msdn.microsoft.com/library/windows/desktop/aa374868) (access-control entries). The individual ACEs in an ACL are numbered from 0 to *n-1*, where *n* is the number of ACEs in the ACL. When editing an ACL, an application refers to an access-control entry (ACE) within the ACL by its index.  
@@ -109,7 +109,7 @@ class CAcl
 ## Requirements  
  **Header:** atlsecurity.h  
   
-##  <a name="cacl__caccessmaskarray"></a>  CAcl::CAccessMaskArray  
+##  <a name="caccessmaskarray"></a>  CAcl::CAccessMaskArray  
  An array of ACCESS_MASK objects.  
   
 ```
@@ -119,7 +119,7 @@ typedef CAtlArray<ACCESS_MASK> CAccessMaskArray;
 ### Remarks  
  This typedef specifies the array type that can be used to store access rights used in access-control entries (ACEs).  
   
-##  <a name="cacl__caceflagarray"></a>  CAcl::CAceFlagArray  
+##  <a name="caceflagarray"></a>  CAcl::CAceFlagArray  
  An array of BYTEs.  
   
 ```
@@ -129,7 +129,7 @@ typedef CAtlArray<BYTE> CAceFlagArray;
 ### Remarks  
  This typedef specifies the array type used to define the access-control entry (ACE) type-specific control flags. See the [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) definition for the complete list of possible flags.  
   
-##  <a name="cacl__cacetypearray"></a>  CAcl::CAceTypeArray  
+##  <a name="cacetypearray"></a>  CAcl::CAceTypeArray  
  An array of BYTEs.  
   
 ```
@@ -139,7 +139,7 @@ typedef CAtlArray<BYTE> CAceTypeArray;
 ### Remarks  
  This typedef specifies the array type used to define the nature of the access-control entry (ACE) objects, such as ACCESS_ALLOWED_ACE_TYPE or ACCESS_DENIED_ACE_TYPE. See the [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) definition for the complete list of possible types.  
   
-##  <a name="cacl__cacl"></a>  CAcl::CAcl  
+##  <a name="cacl"></a>  CAcl::CAcl  
  The constructor.  
   
 ```
@@ -154,7 +154,7 @@ CAcl(const CAcl& rhs) throw(...);
 ### Remarks  
  The `CAcl` object can be optionally created using an existing `CAcl` object.  
   
-##  <a name="cacl___dtorcacl"></a>  CAcl::~CAcl  
+##  <a name="dtor"></a>  CAcl::~CAcl  
  The destructor.  
   
 ```
@@ -164,7 +164,7 @@ virtual ~CAcl() throw();
 ### Remarks  
  The destructor frees any resources acquired by the object.  
   
-##  <a name="cacl__getacecount"></a>  CAcl::GetAceCount  
+##  <a name="getacecount"></a>  CAcl::GetAceCount  
  Returns the number of access-control entry (ACE) objects.  
   
 ```
@@ -174,7 +174,7 @@ virtual UINT GetAceCount() const throw() = 0;
 ### Return Value  
  Returns the number of ACE entries in the `CAcl` object.  
   
-##  <a name="cacl__getaclentries"></a>  CAcl::GetAclEntries  
+##  <a name="getaclentries"></a>  CAcl::GetAclEntries  
  Retrieves the access-control list (ACL) entries from the `CAcl` object.  
   
 ```
@@ -205,7 +205,7 @@ void GetAclEntries(
   
  See [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) for more details on ACE types and flags.  
   
-##  <a name="cacl__getaclentry"></a>  CAcl::GetAclEntry  
+##  <a name="getaclentry"></a>  CAcl::GetAclEntry  
  Retrieves all of the information about an entry in an access-control list (ACL).  
   
 ```
@@ -242,11 +242,11 @@ void GetAclEntry(
  The inherited object type. This will be set to GUID_NULL if the inherited object type is not specified in the ACE, or if the ACE is not an OBJECT ACE.  
   
 ### Remarks  
- This method will retrieve all of the information about an individual ACE, providing more information than [CAcl::GetAclEntries](#cacl__getaclentries) alone makes available.  
+ This method will retrieve all of the information about an individual ACE, providing more information than [CAcl::GetAclEntries](#getaclentries) alone makes available.  
   
  See [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) for more details on ACE types and flags.  
   
-##  <a name="cacl__getlength"></a>  CAcl::GetLength  
+##  <a name="getlength"></a>  CAcl::GetLength  
  Returns the length of the access-control list (ACL).  
   
 ```
@@ -256,7 +256,7 @@ UINT GetLength() const throw();
 ### Return Value  
  Returns the required length in bytes necessary to hold the **ACL** structure.  
   
-##  <a name="cacl__getpacl"></a>  CAcl::GetPACL  
+##  <a name="getpacl"></a>  CAcl::GetPACL  
  Returns a pointer to an access-control list (ACL).  
   
 ```
@@ -266,7 +266,7 @@ const ACL* GetPACL() const throw(...);
 ### Return Value  
  Returns a pointer to the **ACL** structure.  
   
-##  <a name="cacl__isempty"></a>  CAcl::IsEmpty  
+##  <a name="isempty"></a>  CAcl::IsEmpty  
  Tests the `CAcl` object for entries.  
   
 ```
@@ -276,7 +276,7 @@ bool IsEmpty() const throw();
 ### Remarks  
  Returns **true** if the `CAcl` object is not NULL, and contains no entries. Returns **false** if the `CAcl` object is either NULL, or contains at least one entry.  
   
-##  <a name="cacl__isnull"></a>  CAcl::IsNull  
+##  <a name="isnull"></a>  CAcl::IsNull  
  Returns the status of the `CAcl` object.  
   
 ```
@@ -286,7 +286,7 @@ bool IsNull() const throw();
 ### Return Value  
  Returns **true** if the `CAcl` object is NULL, **false** otherwise.  
   
-##  <a name="cacl__operator_const_acl__star"></a>  CAcl::operator const ACL *  
+##  <a name="operator_const_acl__star"></a>  CAcl::operator const ACL *  
  Casts a `CAcl` object to an **ACL** (access-control list) structure.  
   
 ```operator const ACL *() const throw(...);
@@ -295,7 +295,7 @@ bool IsNull() const throw();
 ### Remarks  
  Returns the address of the **ACL** structure.  
   
-##  <a name="cacl__operator__eq"></a>  CAcl::operator =  
+##  <a name="operator_eq"></a>  CAcl::operator =  
  Assignment operator.  
   
 ```
@@ -309,7 +309,7 @@ CAcl& operator= (const CAcl& rhs) throw(...);
 ### Return Value  
  Returns a reference to the updated `CAcl` object.  
   
-##  <a name="cacl__removeace"></a>  CAcl::RemoveAce  
+##  <a name="removeace"></a>  CAcl::RemoveAce  
  Removes a specific ACE (access-control entry) from the **CAcl** object.  
   
 ```
@@ -321,9 +321,9 @@ void RemoveAce(UINT   nIndex) throw();
  Index to the ACE entry to remove.  
   
 ### Remarks  
- This method is derived from [CAtlArray::RemoveAt](../../atl/reference/catlarray-class.md#catlarray__removeat).  
+ This method is derived from [CAtlArray::RemoveAt](../../atl/reference/catlarray-class.md#removeat).  
   
-##  <a name="cacl__removeaces"></a>  CAcl::RemoveAces  
+##  <a name="removeaces"></a>  CAcl::RemoveAces  
  Removes alls ACEs (access-control entries) from the `CAcl` that apply to the given `CSid`.  
   
 ```
@@ -334,7 +334,7 @@ bool RemoveAces(const CSid& rSid) throw(...)
  `rSid`  
  A reference to a `CSid` object.  
   
-##  <a name="cacl__setempty"></a>  CAcl::SetEmpty  
+##  <a name="setempty"></a>  CAcl::SetEmpty  
  Marks the `CAcl` object as empty.  
   
 ```
@@ -344,7 +344,7 @@ void SetEmpty() throw();
 ### Remarks  
  The `CAcl` can be set to empty or to NULL: the two states are distinct.  
   
-##  <a name="cacl__setnull"></a>  CAcl::SetNull  
+##  <a name="setnull"></a>  CAcl::SetNull  
  Marks the `CAcl` object as NULL.  
   
 ```

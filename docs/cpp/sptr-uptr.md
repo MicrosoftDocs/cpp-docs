@@ -56,17 +56,13 @@ void MyFunction(char * __uptr __ptr32 myValue);
   
  Use the `__sptr` and `__uptr` modifiers with pointer declarations. Use the modifiers in the position of a [pointer type qualifier](../c-language/pointer-declarations.md), which means the modifier must follow the asterisk. You cannot use the modifiers with [pointers to members](../cpp/pointers-to-members.md). The modifiers do not affect non-pointer declarations.  
   
- If you do not use the `__sptr` or `__uptr` modifier, and you enable [Compiler Warning (level 2) C4826](../error-messages/compiler-warnings/compiler-warning-level-2-c4826.md), the compiler issues a warning when a 32-bit pointer is converted to 64 bits.  
-  
 ## Example  
  The following example declares 32-bit pointers that use the `__sptr` and `__uptr` modifiers, assigns each 32-bit pointer to a 64-bit pointer variable, and then displays the hexadecimal value of each 64-bit pointer. The example is compiled with the native 64-bit compiler and is executed on a 64-bit platform.  
   
-```  
+```cpp  
 // sptr_uptr.cpp  
 // processor: x64  
 #include "stdio.h"  
-  
-// Warning C4826 is off by default.  
   
 int main()  
 {  

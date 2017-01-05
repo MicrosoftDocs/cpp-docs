@@ -56,23 +56,23 @@ class CDynamicChain
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDynamicChain::CDynamicChain](#cdynamicchain__cdynamicchain)|The constructor.|  
-|[CDynamicChain::~CDynamicChain](#cdynamicchain___dtorcdynamicchain)|The destructor.|  
+|[CDynamicChain::CDynamicChain](#cdynamicchain)|The constructor.|  
+|[CDynamicChain::~CDynamicChain](#dtor)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDynamicChain::CallChain](#cdynamicchain__callchain)|Directs a Windows message to another object's message map.|  
-|[CDynamicChain::RemoveChainEntry](#cdynamicchain__removechainentry)|Removes a message map entry from the collection.|  
-|[CDynamicChain::SetChainEntry](#cdynamicchain__setchainentry)|Adds a message map entry to the collection or modifies an existing entry.|  
+|[CDynamicChain::CallChain](#callchain)|Directs a Windows message to another object's message map.|  
+|[CDynamicChain::RemoveChainEntry](#removechainentry)|Removes a message map entry from the collection.|  
+|[CDynamicChain::SetChainEntry](#setchainentry)|Adds a message map entry to the collection or modifies an existing entry.|  
   
 ## Remarks  
  `CDynamicChain` manages a collection of message maps, enabling a Windows message to be directed, at run time, to another object's message map.  
   
  To add support for dynamic chaining of message maps, do the following:  
   
--   Derive your class from `CDynamicChain`. In the message map, specify the [CHAIN_MSG_MAP_DYNAMIC](../Topic/CHAIN_MSG_MAP_DYNAMIC.md) macro to chain to another object's default message map.  
+-   Derive your class from `CDynamicChain`. In the message map, specify the [CHAIN_MSG_MAP_DYNAMIC](http://msdn.microsoft.com/library/7e5c72b7-cb31-4f3b-8a1b-6293804af220) macro to chain to another object's default message map.  
   
 -   Derive every class you want to chain to from [CMessageMap](../../atl/reference/cmessagemap-class.md). `CMessageMap` allows an object to expose its message maps to other objects.  
   
@@ -80,11 +80,11 @@ class CDynamicChain
   
  For example, suppose your class is defined as follows:  
   
- [!code-cpp[NVC_ATL_Windowing#88](../../atl/codesnippet/CPP/cdynamicchain-class_1.h)]  
+ [!code-cpp[NVC_ATL_Windowing#88](../../atl/codesnippet/cpp/cdynamicchain-class_1.h)]  
   
  The client then calls `CMyWindow::SetChainEntry`:  
   
- [!code-cpp[NVC_ATL_Windowing#89](../../atl/codesnippet/CPP/cdynamicchain-class_2.cpp)]  
+ [!code-cpp[NVC_ATL_Windowing#89](../../atl/codesnippet/cpp/cdynamicchain-class_2.cpp)]  
   
  where `chainedObj` is the chained object and is an instance of a class derived from `CMessageMap`. Now, if `myCtl` receives a message that is not handled by `OnPaint` or `OnSetFocus`, the window procedure directs the message to `chainedObj`'s default message map.  
   
@@ -93,7 +93,7 @@ class CDynamicChain
 ## Requirements  
  **Header:** atlwin.h  
   
-##  <a name="cdynamicchain__callchain"></a>  CDynamicChain::CallChain  
+##  <a name="callchain"></a>  CDynamicChain::CallChain  
  Directs the Windows message to another object's message map.  
   
 ```
@@ -128,18 +128,18 @@ BOOL CallChain(DWORD dwChainID,
  **TRUE** if the message is fully processed; otherwise, **FALSE**.  
   
 ### Remarks  
- For the window procedure to invoke `CallChain`, you must specify the [CHAIN_MSG_MAP_DYNAMIC](../Topic/CHAIN_MSG_MAP_DYNAMIC.md) macro in your message map. For an example, see the [CDynamicChain](../../atl/reference/cdynamicchain-class.md) overview.  
+ For the window procedure to invoke `CallChain`, you must specify the [CHAIN_MSG_MAP_DYNAMIC](http://msdn.microsoft.com/library/7e5c72b7-cb31-4f3b-8a1b-6293804af220) macro in your message map. For an example, see the [CDynamicChain](../../atl/reference/cdynamicchain-class.md) overview.  
   
- `CallChain` requires a previous call to [SetChainEntry](#cdynamicchain__setchainentry) to associate the `dwChainID` value with an object and its message map.  
+ `CallChain` requires a previous call to [SetChainEntry](#setchainentry) to associate the `dwChainID` value with an object and its message map.  
   
-##  <a name="cdynamicchain__cdynamicchain"></a>  CDynamicChain::CDynamicChain  
+##  <a name="cdynamicchain"></a>  CDynamicChain::CDynamicChain  
  The constructor.  
   
 ```
 CDynamicChain();
 ```  
   
-##  <a name="cdynamicchain___dtorcdynamicchain"></a>  CDynamicChain::~CDynamicChain  
+##  <a name="dtor"></a>  CDynamicChain::~CDynamicChain  
  The destructor.  
   
 ```
@@ -149,7 +149,7 @@ CDynamicChain();
 ### Remarks  
  Frees all allocated resources.  
   
-##  <a name="cdynamicchain__removechainentry"></a>  CDynamicChain::RemoveChainEntry  
+##  <a name="removechainentry"></a>  CDynamicChain::RemoveChainEntry  
  Removes the specified message map from the collection.  
   
 ```
@@ -158,12 +158,12 @@ BOOL RemoveChainEntry(DWORD dwChainID);
   
 ### Parameters  
  `dwChainID`  
- [in] The unique identifier associated with the chained object and its message map. You originally define this value through a call to [SetChainEntry](#cdynamicchain__setchainentry).  
+ [in] The unique identifier associated with the chained object and its message map. You originally define this value through a call to [SetChainEntry](#setchainentry).  
   
 ### Return Value  
  **TRUE** if the message map is successfully removed from the collection. Otherwise, **FALSE**.  
   
-##  <a name="cdynamicchain__setchainentry"></a>  CDynamicChain::SetChainEntry  
+##  <a name="setchainentry"></a>  CDynamicChain::SetChainEntry  
  Adds the specified message map to the collection.  
   
 ```
@@ -180,7 +180,7 @@ BOOL SetChainEntry(DWORD dwChainID,
  [in] A pointer to the chained object declaring the message map. This object must derive from [CMessageMap](../../atl/reference/cmessagemap-class.md).  
   
  `dwMsgMapID`  
- [in] The identifier of the message map in the chained object. The default value is 0, which identifies the default message map declared with [BEGIN_MSG_MAP](../Topic/BEGIN_MSG_MAP.md). To specify an alternate message map declared with [ALT_MSG_MAP(msgMapID)](../Topic/ALT_MSG_MAP.md), pass `msgMapID`.  
+ [in] The identifier of the message map in the chained object. The default value is 0, which identifies the default message map declared with [BEGIN_MSG_MAP](http://msdn.microsoft.com/library/8bbb5af9-18b1-48c6-880e-166f599ee554). To specify an alternate message map declared with [ALT_MSG_MAP(msgMapID)](http://msdn.microsoft.com/library/2c8871bf-abc0-4d52-bcf7-6b2ab9eb5af8), pass `msgMapID`.  
   
 ### Return Value  
  **TRUE** if the message map is successfully added to the collection. Otherwise, **FALSE**.  

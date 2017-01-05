@@ -38,7 +38,7 @@ translation.priority.ht:
 This article demonstrates the syntax and structural elements of lambda expressions. For a description of lambda expressions, see [Lambda Expressions](../cpp/lambda-expressions-in-cpp.md).  
   
 ## Function Objects vs. Lambdas  
- When you write code, you probably use function pointers and function objects to solve problems and perform calculations, especially when you use [STL algorithms](../cpp/algorithms-modern-cpp.md). Function pointers and function objects each have advantages and disadvantages—for example, function pointers have minimal syntactic overhead but do not retain state within a scope, and function objects can maintain state but require the syntactic overhead of a class definition.  
+ When you write code, you probably use function pointers and function objects to solve problems and perform calculations, especially when you use [C++ Standard Library algorithms](../cpp/algorithms-modern-cpp.md). Function pointers and function objects each have advantages and disadvantages—for example, function pointers have minimal syntactic overhead but do not retain state within a scope, and function objects can maintain state but require the syntactic overhead of a class definition.  
   
  A lambda combines the benefits of function pointers and function objects and avoids their disadvantages. Like a function objects, a lambda is flexible and can maintain state, but unlike a function object, its compact syntax doesn't require an explicit class definition. By using lambdas, you can write code that's less cumbersome and less prone to errors than the code for an equivalent function object.  
   
@@ -106,7 +106,7 @@ There are 4 even numbers in the vector.
 ## Example 2: Using a Function Object  
  Sometimes a lambda would be too unwieldy to extend much further than the previous example. The next example uses a function object instead of a lambda, together with the `for_each` function, to produce the same results as Example 1. Both examples store the count of even numbers in a `vector` object. To maintain the state of the operation, the `FunctorClass` class stores the `m_evenCount` variable by reference as a member variable. To perform the operation, `FunctorClass` implements the function-call operator, `operator()`. The Visual C++ compiler generates code that is comparable in size and performance to the lambda code in Example 1. For a basic problem like the one in this article, the simpler lambda design is probably better than the function-object design. However, if you think that the functionality might require significant expansion in the future, then use a function object design so that code maintenance will be easier.  
   
- For more information about the `operator()`, see [Function Call](../cpp/function-call-cpp.md). For more information about the `for_each` function, see [for_each](../Topic/for_each.md).  
+ For more information about the `operator()`, see [Function Call](../cpp/function-call-cpp.md). For more information about the `for_each` function, see [for_each](http://msdn.microsoft.com/Library/8cb2ae72-bef6-488b-b011-0475c0787e33).  
   
 ### Code  
   
@@ -185,9 +185,9 @@ There are 4 even numbers in the vector.
 ## See Also  
  [Lambda Expressions](../cpp/lambda-expressions-in-cpp.md)   
  [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md)   
- [generate](../Topic/generate.md)   
- [generate_n](../Topic/generate_n.md)   
- [for_each](../Topic/for_each.md)   
+ [generate](http://msdn.microsoft.com/Library/0353f358-9651-4e00-b0c9-5bca720539a3)   
+ [generate_n](http://msdn.microsoft.com/Library/377e5b0f-1bb8-4b77-9449-fbebf57f6e5e)   
+ [for_each](http://msdn.microsoft.com/Library/8cb2ae72-bef6-488b-b011-0475c0787e33)   
  [Exception Specifications (throw)](../cpp/exception-specifications-throw-cpp.md)   
  [Compiler Warning (level 1) C4297](../error-messages/compiler-warnings/compiler-warning-level-1-c4297.md)   
  [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md)

@@ -33,7 +33,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # &lt;ccomplex&gt;
-Includes the STL header [\<complex>](../standard-library/complex.md), which effectively includes the Standard C library header \<complex.h> and adds the associated names to the `std` namespace.  
+Includes the C++ Standard Library header [\<complex>](../standard-library/complex.md), which effectively includes the Standard C library header \<complex.h> and adds the associated names to the `std` namespace.  
   
 ## Syntax  
   
@@ -49,7 +49,7 @@ Includes the STL header [\<complex>](../standard-library/complex.md), which effe
   
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   
- [STL Overview](../standard-library/cpp-standard-library-overview.md)
+ [C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)
 
 
 

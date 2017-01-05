@@ -40,5 +40,5 @@ Remote Automation allows programs to invoke `IDispatch` implementations on one m
  For an application to be operable as a Remote Automation server, it must be implemented as an executable (that is, as a "local server" rather than as an "inproc server").  
   
 ## See Also  
- [Where Does Remote Automation Fit In]--brokenlink--(../Topic/Where%20Does%20Remote%20Automation%20Fit%20In.md)   
+ [Where Does Remote Automation Fit In](where-does-remote-automation-fit-in-q.md)   
  [History of DCOM](../mfc/history-of-dcom.md)

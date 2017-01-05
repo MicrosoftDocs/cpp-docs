@@ -42,7 +42,6 @@ C++ allows explicit type conversion using syntax similar to the function-call sy
 ## Syntax  
   
 ```  
-  
 simple-type-name ( expression-list )  
 ```  
   
@@ -53,7 +52,7 @@ simple-type-name ( expression-list )
 int i = int( d );  
 ```  
   
- The following example uses a modified version of the `Point` class defined in [Function-Call Results](../misc/function-call-results.md).  
+ The following example shows a `Point` class.  
   
 ## Example  
   
@@ -147,5 +146,4 @@ Point pt = Point( 3, 10 );
   
 ## See Also  
  [Postfix Expressions](../cpp/postfix-expressions.md)   
- [C++ Operators](../misc/cpp-operators.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)

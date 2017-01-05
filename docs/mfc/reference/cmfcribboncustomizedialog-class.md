@@ -58,7 +58,7 @@ class CMFCRibbonCustomizeDialog : public CMFCPropertySheet
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonCustomizeDialog::CMFCRibbonCustomizeDialog](#cmfcribboncustomizedialog__cmfcribboncustomizedialog)|Constructs a `CMFCRibbonCustomizeDialog` object.|  
+|[CMFCRibbonCustomizeDialog::CMFCRibbonCustomizeDialog](#cmfcribboncustomizedialog)|Constructs a `CMFCRibbonCustomizeDialog` object.|  
 |`CMFCRibbonCustomizeDialog::~CMFCRibbonCustomizeDialog`|Destructor.|  
   
 ### Public Methods  
@@ -90,7 +90,7 @@ class CMFCRibbonCustomizeDialog : public CMFCPropertySheet
 ## Requirements  
  **Header:** afxribboncustomizedialog.h  
   
-##  <a name="cmfcribboncustomizedialog__cmfcribboncustomizedialog"></a>  CMFCRibbonCustomizeDialog::CMFCRibbonCustomizeDialog  
+##  <a name="cmfcribboncustomizedialog"></a>  CMFCRibbonCustomizeDialog::CMFCRibbonCustomizeDialog  
  Constructs a `CMFCRibbonCustomizeDialog` object.  
   
 ```  
@@ -109,7 +109,7 @@ CMFCRibbonCustomizeDialog(
 ### Example  
  The following example demonstrates how to construct a `CMFCRibbonCustomizeDialog` object.  
   
- [!code-cpp[NVC_MFC_RibbonApp#18](../../mfc/reference/codesnippet/CPP/cmfcribboncustomizedialog-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#18](../../mfc/reference/codesnippet/cpp/cmfcribboncustomizedialog-class_1.cpp)]  
   
 ### Remarks  
  The constructor instantiates a [CMFCRibbonCustomizePropertyPage Class](../../mfc/reference/cmfcribboncustomizepropertypage-class.md) object and adds it to the collection of property sheet pages.  

@@ -34,7 +34,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Menu Command Properties
-The information below is organized according to the Menu properties that appear in the [Properties Window](/visual-studio/ide/reference/properties-window) when you select a menu command. These are listed alphabetically although the Properties window also enables you to view these properties by category.  
+The information below is organized according to the Menu properties that appear in the [Properties Window](/visualstudio/ide/reference/properties-window) when you select a menu command. These are listed alphabetically although the Properties window also enables you to view these properties by category.  
   
 |Property|Description|  
 |--------------|-----------------|  
@@ -44,14 +44,14 @@ The information below is organized according to the Menu properties that appear 
 |**Enabled**|If **False**, the menu item is disabled.|  
 |**Grayed**|If True, the menu command is initially grayed and inactive. Type: Bool. Default: False.|  
 |**Help**|Aligns menu item to the right. For example, the **Help** menu command is always on the right in all Windows applications. If you set this property on a menu item, that item will appear at the very far right and at the very end of the menu. Applies to top-level items. Default: **False**.|  
-|**ID**|A symbol defined in the header file. Type: Symbol, Integer, or Quoted String. You may use any symbol that is commonly available in any of the editors, even though the [Properties Window](/visual-studio/ide/reference/properties-window) does not provide a drop-down list for you to select from.|  
+|**ID**|A symbol defined in the header file. Type: Symbol, Integer, or Quoted String. You may use any symbol that is commonly available in any of the editors, even though the [Properties Window](/visualstudio/ide/reference/properties-window) does not provide a drop-down list for you to select from.|  
 |**Popup**|If True, the menu command is a pop-up menu. Type: Bool. Default: True for top-level menus on a menu bar; otherwise False.|  
 |**Prompt**|Contains text to appear in the status bar when this menu command is highlighted. The text is placed in the string table with the same identifier as the menu command. This property is available for any type of project, but the run-time functionality is MFC specific.|  
 |**Right to Left Justify**|Right-justifies the menu command on the menu bar at run time. Type: Bool. Default: False.|  
 |**Right to Left Order**|Allows menu commands to display right to left when the interface is localized to any language that reads right-to-left, such as Hebrew or Arabic.|  
 |**Separator**|If True, the menu command is a separator. Type: Bool. Default: False.|  
   
- For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
+ For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
 ## Requirements  
  Win32  

@@ -51,7 +51,7 @@ Specifies the required component categories of the target class.
  The ID of the required category.  
   
 ## Remarks  
- The **requires_category** C++ attribute specifies the component categories required by the target class. For more information, see [REQUIRED_CATEGORY](../Topic/REQUIRED_CATEGORY.md).  
+ The **requires_category** C++ attribute specifies the component categories required by the target class. For more information, see [REQUIRED_CATEGORY](http://msdn.microsoft.com/Library/55100145-9e6f-4824-bb1a-5df8a67f6fb8).  
   
  This attribute requires that the [coclass](../windows/coclass.md), [progid](../windows/progid.md), or [vi_progid](../windows/vi-progid.md) attribute (or another attribute that implies one of these) also be applied to the same element.  
   

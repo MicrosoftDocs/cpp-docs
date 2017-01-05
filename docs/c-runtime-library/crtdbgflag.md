@@ -45,7 +45,7 @@ translation.priority.ht:
 # _crtDbgFlag
 The **_crtDbgFlag** flag consists of five bit fields that control how memory allocations on the debug version of the heap are tracked, verified, reported, and dumped. The bit fields of the flag are set using the [_CrtSetDbgFlag](../c-runtime-library/reference/crtsetdbgflag.md) function. This flag and its bit fields are declared in Crtdbg.h. This flag is only available when the [_DEBUG](../c-runtime-library/debug.md) flag has been defined in the application.  
   
- For more information about using this flag in conjunction with other debug functions, see [Heap State Reporting Functions](/visual-studio/debugger/crt-debug-heap-details).  
+ For more information about using this flag in conjunction with other debug functions, see [Heap State Reporting Functions](/visualstudio/debugger/crt-debug-heap-details).  
   
 ## See Also  
  [Control Flags](../c-runtime-library/control-flags.md)

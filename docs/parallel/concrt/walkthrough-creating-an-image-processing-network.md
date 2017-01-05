@@ -65,23 +65,25 @@ This document demonstrates how to create a network of asynchronous message block
   
  The following functions, `GetRGB` and `MakeColor`, extract and combine the individual components of the given color, respectively.  
   
- [!code-cpp[concrt-image-processing-filter#2](../../parallel/concrt/codesnippet/CPP/walkthrough-creating-an-image-processing-network_1.cpp)]  
+ [!code-cpp[concrt-image-processing-filter#2](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_1.cpp)]  
   
- The following function, `ProcessImage`, calls the given [std::function](../../standard-library/function-class.md) object to transform the color value of each pixel in a [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)] [Bitmap](https://msdn.microsoft.com/library/ms534420.aspx) object. The `ProcessImage` function uses the [concurrency::parallel_for](../Topic/parallel_for%20Function.md) algorithm to process each row of the bitmap in parallel.  
+
+ The following function, `ProcessImage`, calls the given [std::function](../../standard-library/function-class.md) object to transform the color value of each pixel in a [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)] [Bitmap](https://msdn.microsoft.com/library/ms534420.aspx) object. The `ProcessImage` function uses the [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithm to process each row of the bitmap in parallel.  
+
   
- [!code-cpp[concrt-image-processing-filter#3](../../parallel/concrt/codesnippet/CPP/walkthrough-creating-an-image-processing-network_2.cpp)]  
+ [!code-cpp[concrt-image-processing-filter#3](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_2.cpp)]  
   
  The following functions, `Grayscale`, `Sepiatone`, `ColorMask`, and `Darken`, call the `ProcessImage` function to transform the color value of each pixel in a `Bitmap` object. Each of these functions uses a lambda expression to define the color transformation of one pixel.  
   
- [!code-cpp[concrt-image-processing-filter#4](../../parallel/concrt/codesnippet/CPP/walkthrough-creating-an-image-processing-network_3.cpp)]  
+ [!code-cpp[concrt-image-processing-filter#4](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_3.cpp)]  
   
  The following function, `GetColorDominance`, also calls the `ProcessImage` function. However, instead of changing the value of each color, this function uses [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) objects to compute whether the red, green, or blue color component dominates the image.  
   
- [!code-cpp[concrt-image-processing-filter#5](../../parallel/concrt/codesnippet/CPP/walkthrough-creating-an-image-processing-network_4.cpp)]  
+ [!code-cpp[concrt-image-processing-filter#5](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_4.cpp)]  
   
  The following function, `GetEncoderClsid`, retrieves the class identifier for the given MIME type of an encoder. The application uses this function to retrieve the encoder for a bitmap.  
   
- [!code-cpp[concrt-image-processing-filter#6](../../parallel/concrt/codesnippet/CPP/walkthrough-creating-an-image-processing-network_5.cpp)]  
+ [!code-cpp[concrt-image-processing-filter#6](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_5.cpp)]  
   
  [[Top](#top)]  
   
@@ -104,38 +106,38 @@ This document demonstrates how to create a network of asynchronous message block
   
 1.  Create a function, `ProcessImages`, that takes the name of a directory on disk.  
   
-     [!code-cpp[concrt-image-processing-filter#7](../../parallel/concrt/codesnippet/CPP/walkthrough-creating-an-image-processing-network_6.cpp)]  
+     [!code-cpp[concrt-image-processing-filter#7](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_6.cpp)]  
   
 2.  In the `ProcessImages` function, create a `countdown_event` variable. The `countdown_event` class is shown later in this walkthrough.  
   
-     [!code-cpp[concrt-image-processing-filter#8](../../parallel/concrt/codesnippet/CPP/walkthrough-creating-an-image-processing-network_7.cpp)]  
+     [!code-cpp[concrt-image-processing-filter#8](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_7.cpp)]  
   
 3.  Create a [std::map](../../standard-library/map-class.md) object that associates a `Bitmap` object with its original file name.  
   
-     [!code-cpp[concrt-image-processing-filter#9](../../parallel/concrt/codesnippet/CPP/walkthrough-creating-an-image-processing-network_8.cpp)]  
+     [!code-cpp[concrt-image-processing-filter#9](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_8.cpp)]  
   
 4.  Add the following code to define the members of the image-processing network.  
   
-     [!code-cpp[concrt-image-processing-filter#10](../../parallel/concrt/codesnippet/CPP/walkthrough-creating-an-image-processing-network_9.cpp)]  
+     [!code-cpp[concrt-image-processing-filter#10](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_9.cpp)]  
   
 5.  Add the following code to connect the network.  
   
-     [!code-cpp[concrt-image-processing-filter#11](../../parallel/concrt/codesnippet/CPP/walkthrough-creating-an-image-processing-network_10.cpp)]  
+     [!code-cpp[concrt-image-processing-filter#11](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_10.cpp)]  
   
 6.  Add the following code to send to the head of the network the full path of each [!INCLUDE[TLA#tla_jpeg](../../parallel/concrt/includes/tlasharptla_jpeg_md.md)] file in the directory.  
   
-     [!code-cpp[concrt-image-processing-filter#12](../../parallel/concrt/codesnippet/CPP/walkthrough-creating-an-image-processing-network_11.cpp)]  
+     [!code-cpp[concrt-image-processing-filter#12](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_11.cpp)]  
   
 7.  Wait for the `countdown_event` variable to reach zero.  
   
-     [!code-cpp[concrt-image-processing-filter#13](../../parallel/concrt/codesnippet/CPP/walkthrough-creating-an-image-processing-network_12.cpp)]  
+     [!code-cpp[concrt-image-processing-filter#13](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_12.cpp)]  
   
  The following table describes the members of the network.  
   
 |Member|Description|  
 |------------|-----------------|  
 |`load_bitmap`|A [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) object that loads a `Bitmap` object from disk and adds an entry to the `map` object to associate the image with its original file name.|  
-|`loaded_bitmaps`|A [concurrency::unbounded_buffer](../Topic/unbounded_buffer%20Class.md) object that sends the loaded images to the image processing filters.|  
+|`loaded_bitmaps`|A [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) object that sends the loaded images to the image processing filters.|  
 |`grayscale`|A `transformer` object that converts images that are authored by Tom to grayscale. It uses the metadata of the image to determine its author.|  
 |`colormask`|A `transformer` object that removes the green and blue color components from images that have red as the dominant color.|  
 |`darken`|A `transformer` object that darkens images that have red as the dominant color.|  
@@ -150,24 +152,24 @@ This document demonstrates how to create a network of asynchronous message block
   
  The following illustration shows the image processing network:  
   
- ![Image processing network](../../parallel/concrt/media/concrt_imageproc.png "ConcRT_ImageProc")  
+ ![Image processing network](../../parallel/concrt/media/concrt_imageproc.png "concrt_imageproc")  
   
  The `countdown_event` object in this example enables the image processing network to inform the main application when all images have been processed. The `countdown_event` class uses a [concurrency::event](../../parallel/concrt/reference/event-class.md) object to signal when a counter value reaches zero. The main application increments the counter every time that it sends a file name to the network. The terminal node of the network decrements the counter after each image has been processed. After the main application traverses the specified directory, it waits for the `countdown_event` object to signal that its counter has reached zero.  
   
  The following example shows the `countdown_event` class:  
   
- [!code-cpp[concrt-image-processing-filter#14](../../parallel/concrt/codesnippet/CPP/walkthrough-creating-an-image-processing-network_13.cpp)]  
+ [!code-cpp[concrt-image-processing-filter#14](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_13.cpp)]  
   
  [[Top](#top)]  
   
 ##  <a name="complete"></a> The Complete Example  
  The following code shows the complete example. The `wmain` function manages the [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)] library and calls the `ProcessImages` function to process the [!INCLUDE[TLA#tla_jpeg](../../parallel/concrt/includes/tlasharptla_jpeg_md.md)] files in the `Sample Pictures` directory.  
   
- [!code-cpp[concrt-image-processing-filter#15](../../parallel/concrt/codesnippet/CPP/walkthrough-creating-an-image-processing-network_14.cpp)]  
+ [!code-cpp[concrt-image-processing-filter#15](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_14.cpp)]  
   
  The following illustration shows sample output. Each source image is above its corresponding modified image.  
   
- ![Sample output for the example](../../parallel/concrt/media/concrt_imageout.png "ConcRT_ImageOut")  
+ ![Sample output for the example](../../parallel/concrt/media/concrt_imageout.png "concrt_imageout")  
   
  `Lighthouse` is authored by Tom Alphin and therefore is converted to grayscale. `Chrysanthemum`, `Desert`, `Koala`, and `Tulips` have red as the dominant color and therefore have the blue and green color components removed and are darkened. `Hydrangeas`, `Jellyfish`, and `Penguins` match the default criteria and therefore are sepia toned.  
   

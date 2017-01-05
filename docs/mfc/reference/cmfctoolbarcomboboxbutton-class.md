@@ -49,40 +49,40 @@ class CMFCToolBarComboBoxButton : public CMFCToolBarButton
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCToolBarComboBoxButton::CMFCToolBarComboBoxButton](#cmfctoolbarcomboboxbutton__cmfctoolbarcomboboxbutton)|Constructs a `CMFCToolBarComboBoxButton`.|  
+|[CMFCToolBarComboBoxButton::CMFCToolBarComboBoxButton](#cmfctoolbarcomboboxbutton)|Constructs a `CMFCToolBarComboBoxButton`.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCToolBarComboBoxButton::AddItem](#cmfctoolbarcomboboxbutton__additem)|Adds an item to the end of the combo box list.|  
-|[CMFCToolBarComboBoxButton::AddSortedItem](#cmfctoolbarcomboboxbutton__addsorteditem)|Adds an item to the combo box list. The order of items in the list is specified by `Compare`.|  
-|[CMFCToolBarComboBoxButton::Compare](#cmfctoolbarcomboboxbutton__compare)|Compares two items. Called to sort items that `AddSortedItems` adds to the combo box list.|  
-|[CMFCToolBarComboBoxButton::CreateEdit](#cmfctoolbarcomboboxbutton__createedit)|Creates a new edit control for the combo box button.|  
-|[CMFCToolBarComboBoxButton::DeleteItem](#cmfctoolbarcomboboxbutton__deleteitem)|Deletes an item from the combo box list.|  
-|[CMFCToolBarComboBoxButton::FindItem](#cmfctoolbarcomboboxbutton__finditem)|Returns the index of the item that contains a specified string.|  
-|[CMFCToolBarComboBoxButton::GetByCmd](#cmfctoolbarcomboboxbutton__getbycmd)|Returns a pointer to the combo box button with a specified command ID.|  
-|[CMFCToolBarComboBoxButton::GetComboBox](#cmfctoolbarcomboboxbutton__getcombobox)|Returns a pointer to the combo box control that is embedded in the combo box button.|  
-|[CMFCToolBarComboBoxButton::GetCount](#cmfctoolbarcomboboxbutton__getcount)|Returns the number of items in the combo box list.|  
-|[CMFCToolBarComboBoxButton::GetCountAll](#cmfctoolbarcomboboxbutton__getcountall)|Finds the combo box button that has a specified command ID. Returns the number of items in the combo box list of that button.|  
-|[CMFCToolBarComboBoxButton::GetCurSel](#cmfctoolbarcomboboxbutton__getcursel)|Returns the index of the selected item in the combo box list.|  
-|[CMFCToolBarComboBoxButton::GetCurSelAll](#cmfctoolbarcomboboxbutton__getcurselall)|Finds the combo box button that has a specified command ID, and returns the index of the selected item in the combo box list of that button.|  
-|[CMFCToolBarComboBoxButton::GetEditCtrl](#cmfctoolbarcomboboxbutton__geteditctrl)|Returns a pointer to the edit control that is embedded in the combo box button.|  
-|[CMFCToolBarComboBoxButton::GetItem](#cmfctoolbarcomboboxbutton__getitem)|Returns the string that is associated with a specified index in the combo box list.|  
-|[CMFCToolBarComboBoxButton::GetItemAll](#cmfctoolbarcomboboxbutton__getitemall)|Finds the combo box button that has a specified command ID, and returns the string that is associated with an index in the combo box list of that button.|  
-|[CMFCToolBarComboBoxButton::GetItemData](#cmfctoolbarcomboboxbutton__getitemdata)|Returns the 32-bit value that is associated with a specified index in the combo box list.|  
-|[CMFCToolBarComboBoxButton::GetItemDataAll](#cmfctoolbarcomboboxbutton__getitemdataall)|Finds the combo box button that has a specified command ID, and returns the 32-bit value that is associated with an index in the combo box list of that button.|  
-|[CMFCToolBarComboBoxButton::GetItemDataPtrAll](#cmfctoolbarcomboboxbutton__getitemdataptrall)|Finds the combo box button that has a specified command ID. Retrieves the 32-bit value that is associated an index in the combo box list of that button, and returns the 32-bit value as a pointer.|  
-|[CMFCToolBarComboBoxButton::GetText](#cmfctoolbarcomboboxbutton__gettext)|Returns the text from the edit control of the combo box.|  
-|[CMFCToolBarComboBoxButton::GetTextAll](#cmfctoolbarcomboboxbutton__gettextall)|Finds the combo box button that has a specified command ID, and returns the text from edit control of that button.|  
-|[CMFCToolBarComboBoxButton::IsCenterVert](#cmfctoolbarcomboboxbutton__iscentervert)|Determines whether combo box buttons in the application are centered or aligned with the top of the toolbar.|  
-|[CMFCToolBarComboBoxButton::IsFlatMode](#cmfctoolbarcomboboxbutton__isflatmode)|Determines whether combo box buttons in the application have a flat appearance.|  
-|[CMFCToolBarComboBoxButton::RemoveAllItems](#cmfctoolbarcomboboxbutton__removeallitems)|Removes all items from the list box and edit control of the combo box.|  
-|[CMFCToolBarComboBoxButton::SelectItem](#cmfctoolbarcomboboxbutton__selectitem)|Selects an item in the combo box according to its index, 32-bit value, or string, and notifies the combo box control about the selection.|  
-|[CMFCToolBarComboBoxButton::SelectItemAll](#cmfctoolbarcomboboxbutton__selectitemall)|Finds the combo box button that has a specified command ID. Calls `SelectItem` to select an item in the combo box of that button according to its string, index, or 32-bit value.|  
-|[CMFCToolBarComboBoxButton::SetCenterVert](#cmfctoolbarcomboboxbutton__setcentervert)|Specifies whether combo box buttons in the application are centered vertically or aligned with the top of the toolbar.|  
-|[CMFCToolBarComboBoxButton::SetDropDownHeight](#cmfctoolbarcomboboxbutton__setdropdownheight)|Sets the height of the drop-down list box.|  
-|[CMFCToolBarComboBoxButton::SetFlatMode](#cmfctoolbarcomboboxbutton__setflatmode)|Specifies whether combo box buttons in the application have a flat appearance.|  
+|[CMFCToolBarComboBoxButton::AddItem](#additem)|Adds an item to the end of the combo box list.|  
+|[CMFCToolBarComboBoxButton::AddSortedItem](#addsorteditem)|Adds an item to the combo box list. The order of items in the list is specified by `Compare`.|  
+|[CMFCToolBarComboBoxButton::Compare](#compare)|Compares two items. Called to sort items that `AddSortedItems` adds to the combo box list.|  
+|[CMFCToolBarComboBoxButton::CreateEdit](#createedit)|Creates a new edit control for the combo box button.|  
+|[CMFCToolBarComboBoxButton::DeleteItem](#deleteitem)|Deletes an item from the combo box list.|  
+|[CMFCToolBarComboBoxButton::FindItem](#finditem)|Returns the index of the item that contains a specified string.|  
+|[CMFCToolBarComboBoxButton::GetByCmd](#getbycmd)|Returns a pointer to the combo box button with a specified command ID.|  
+|[CMFCToolBarComboBoxButton::GetComboBox](#getcombobox)|Returns a pointer to the combo box control that is embedded in the combo box button.|  
+|[CMFCToolBarComboBoxButton::GetCount](#getcount)|Returns the number of items in the combo box list.|  
+|[CMFCToolBarComboBoxButton::GetCountAll](#getcountall)|Finds the combo box button that has a specified command ID. Returns the number of items in the combo box list of that button.|  
+|[CMFCToolBarComboBoxButton::GetCurSel](#getcursel)|Returns the index of the selected item in the combo box list.|  
+|[CMFCToolBarComboBoxButton::GetCurSelAll](#getcurselall)|Finds the combo box button that has a specified command ID, and returns the index of the selected item in the combo box list of that button.|  
+|[CMFCToolBarComboBoxButton::GetEditCtrl](#geteditctrl)|Returns a pointer to the edit control that is embedded in the combo box button.|  
+|[CMFCToolBarComboBoxButton::GetItem](#getitem)|Returns the string that is associated with a specified index in the combo box list.|  
+|[CMFCToolBarComboBoxButton::GetItemAll](#getitemall)|Finds the combo box button that has a specified command ID, and returns the string that is associated with an index in the combo box list of that button.|  
+|[CMFCToolBarComboBoxButton::GetItemData](#getitemdata)|Returns the 32-bit value that is associated with a specified index in the combo box list.|  
+|[CMFCToolBarComboBoxButton::GetItemDataAll](#getitemdataall)|Finds the combo box button that has a specified command ID, and returns the 32-bit value that is associated with an index in the combo box list of that button.|  
+|[CMFCToolBarComboBoxButton::GetItemDataPtrAll](#getitemdataptrall)|Finds the combo box button that has a specified command ID. Retrieves the 32-bit value that is associated an index in the combo box list of that button, and returns the 32-bit value as a pointer.|  
+|[CMFCToolBarComboBoxButton::GetText](#gettext)|Returns the text from the edit control of the combo box.|  
+|[CMFCToolBarComboBoxButton::GetTextAll](#gettextall)|Finds the combo box button that has a specified command ID, and returns the text from edit control of that button.|  
+|[CMFCToolBarComboBoxButton::IsCenterVert](#iscentervert)|Determines whether combo box buttons in the application are centered or aligned with the top of the toolbar.|  
+|[CMFCToolBarComboBoxButton::IsFlatMode](#isflatmode)|Determines whether combo box buttons in the application have a flat appearance.|  
+|[CMFCToolBarComboBoxButton::RemoveAllItems](#removeallitems)|Removes all items from the list box and edit control of the combo box.|  
+|[CMFCToolBarComboBoxButton::SelectItem](#selectitem)|Selects an item in the combo box according to its index, 32-bit value, or string, and notifies the combo box control about the selection.|  
+|[CMFCToolBarComboBoxButton::SelectItemAll](#selectitemall)|Finds the combo box button that has a specified command ID. Calls `SelectItem` to select an item in the combo box of that button according to its string, index, or 32-bit value.|  
+|[CMFCToolBarComboBoxButton::SetCenterVert](#setcentervert)|Specifies whether combo box buttons in the application are centered vertically or aligned with the top of the toolbar.|  
+|[CMFCToolBarComboBoxButton::SetDropDownHeight](#setdropdownheight)|Sets the height of the drop-down list box.|  
+|[CMFCToolBarComboBoxButton::SetFlatMode](#setflatmode)|Specifies whether combo box buttons in the application have a flat appearance.|  
   
 ## Remarks  
  To add a combo box button to a toolbar, follow these steps:  
@@ -91,15 +91,15 @@ class CMFCToolBarComboBoxButton : public CMFCToolBarButton
   
  2. Construct a `CMFCToolBarComboBoxButton` object.  
   
- 3. In the message handler that processes the `AFX_WM_RESETTOOLBAR` message, replace the dummy button with the new combo box button by using [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#cmfctoolbar__replacebutton).  
+ 3. In the message handler that processes the `AFX_WM_RESETTOOLBAR` message, replace the dummy button with the new combo box button by using [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton).  
   
  For more information, see [Walkthrough: Putting Controls On Toolbars](../../mfc/walkthrough-putting-controls-on-toolbars.md). For an example of a combo box toolbar button, see the example project VisualStudioDemo.  
   
 ## Example  
- The following example demonstrates how to use various methods in the `CMFCToolBarComboBoxButton` class. The example shows how to enable the edit and combo boxes, set the vertical position of combo box buttons in the application, set the height of the list box when it is dropped down, set the flat style appearance of combo box buttons in the application, and set the text in the edit box of the combo box button. This code snippet is part of the [Visual Studio Demo sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to use various methods in the `CMFCToolBarComboBoxButton` class. The example shows how to enable the edit and combo boxes, set the vertical position of combo box buttons in the application, set the height of the list box when it is dropped down, set the flat style appearance of combo box buttons in the application, and set the text in the edit box of the combo box button. This code snippet is part of the [Visual Studio Demo sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#36](../../mfc/codesnippet/CPP/cmfctoolbarcomboboxbutton-class_1.cpp)]  
-[!code-cpp[NVC_MFC_VisualStudioDemo#37](../../mfc/codesnippet/CPP/cmfctoolbarcomboboxbutton-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#36](../../mfc/codesnippet/cpp/cmfctoolbarcomboboxbutton-class_1.cpp)]  
+[!code-cpp[NVC_MFC_VisualStudioDemo#37](../../mfc/codesnippet/cpp/cmfctoolbarcomboboxbutton-class_2.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -111,7 +111,7 @@ class CMFCToolBarComboBoxButton : public CMFCToolBarButton
 ## Requirements  
  **Header:** afxtoolbarcomboboxbutton.h  
   
-##  <a name="cmfctoolbarcomboboxbutton__additem"></a>  CMFCToolBarComboBoxButton::AddItem  
+##  <a name="additem"></a>  CMFCToolBarComboBoxButton::AddItem  
  Appends a unique item to the list box.  
   
 ```  
@@ -135,8 +135,8 @@ virtual INT_PTR AddItem(
   
  If the item text is already in the list box, the new data is stored with the existing item. The search for the item is case sensitive.  
   
-##  <a name="cmfctoolbarcomboboxbutton__addsorteditem"></a>  CMFCToolBarComboBoxButton::AddSortedItem  
- Adds an item to the list box in the order that is defined by the [Compare](#cmfctoolbarcomboboxbutton__compare) method.  
+##  <a name="addsorteditem"></a>  CMFCToolBarComboBoxButton::AddSortedItem  
+ Adds an item to the list box in the order that is defined by the [Compare](#compare) method.  
   
 ```  
 virtual INT_PTR AddSortedItem(
@@ -157,7 +157,7 @@ virtual INT_PTR AddSortedItem(
 ### Remarks  
  Use this function to add items to the list box in a specific order.  
   
-##  <a name="cmfctoolbarcomboboxbutton__canbestretched"></a>  CMFCToolBarComboBoxButton::CanBeStretched  
+##  <a name="canbestretched"></a>  CMFCToolBarComboBoxButton::CanBeStretched  
  Indicates whether the combo box button size can change.  
   
 ```  
@@ -169,7 +169,7 @@ virtual BOOL CanBeStretched() const;
 ### Return Value  
  Returns `TRUE`.  
   
-##  <a name="cmfctoolbarcomboboxbutton__cmfctoolbarcomboboxbutton"></a>  CMFCToolBarComboBoxButton::CMFCToolBarComboBoxButton  
+##  <a name="cmfctoolbarcomboboxbutton"></a>  CMFCToolBarComboBoxButton::CMFCToolBarComboBoxButton  
  Constructs a [CMFCToolBarComboBoxButton](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md) object.  
   
 ```  
@@ -198,7 +198,7 @@ CMFCToolBarComboBoxButton(
   
  For a list of toolbar button styles see [ToolBar Control Styles](../../mfc/reference/toolbar-control-styles.md)  
   
-##  <a name="cmfctoolbarcomboboxbutton__cleardata"></a>  CMFCToolBarComboBoxButton::ClearData  
+##  <a name="cleardata"></a>  CMFCToolBarComboBoxButton::ClearData  
  Deletes user-defined data.  
   
 ```  
@@ -208,7 +208,7 @@ virtual void ClearData();
 ### Remarks  
  By default this method does nothing. Override this method in a derived class if you want to delete any user-defined data.  
   
-##  <a name="cmfctoolbarcomboboxbutton__compare"></a>  CMFCToolBarComboBoxButton::Compare  
+##  <a name="compare"></a>  CMFCToolBarComboBoxButton::Compare  
  Compares two strings.  
   
 ```  
@@ -238,9 +238,9 @@ virtual int Compare(
   
  The comparison is case-sensitive.  
   
- This method is called only from the [AddSortedItem](#cmfctoolbarcomboboxbutton__addsorteditem) method.  
+ This method is called only from the [AddSortedItem](#addsorteditem) method.  
   
-##  <a name="cmfctoolbarcomboboxbutton__copyfrom"></a>  CMFCToolBarComboBoxButton::CopyFrom  
+##  <a name="copyfrom"></a>  CMFCToolBarComboBoxButton::CopyFrom  
  Copies the state of the specified `CMFCToolBarComboBoxButton` to the current object.  
   
 ```  
@@ -251,7 +251,7 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
  [in] `src`  
  The source `CMFCToolBarComboBoxButton` object.  
   
-##  <a name="cmfctoolbarcomboboxbutton__createcombo"></a>  CMFCToolBarComboBoxButton::CreateCombo  
+##  <a name="createcombo"></a>  CMFCToolBarComboBoxButton::CreateCombo  
  Creates a new combo box for the combo box button.  
   
 ```  
@@ -270,7 +270,7 @@ virtual CComboBox* CreateCombo(
 ### Return Value  
  A pointer to the new combo box if the method was successful; otherwise, `NULL`.  
   
-##  <a name="cmfctoolbarcomboboxbutton__createedit"></a>  CMFCToolBarComboBoxButton::CreateEdit  
+##  <a name="createedit"></a>  CMFCToolBarComboBoxButton::CreateEdit  
  Creates a new edit box for the combo box button.  
   
 ```  
@@ -296,7 +296,7 @@ virtual CMFCToolBarComboBoxEdit* CreateEdit(
 ### Remarks  
  The framework calls this method when it creates a new edit box for a combo box button. Override this method to change how [CMFCToolBarComboBoxEdit](../../mfc/reference/cmfctoolbarcomboboxedit-class.md) is created.  
   
-##  <a name="cmfctoolbarcomboboxbutton__deleteitem"></a>  CMFCToolBarComboBoxButton::DeleteItem  
+##  <a name="deleteitem"></a>  CMFCToolBarComboBoxButton::DeleteItem  
  Deletes a specified item from the list box.  
   
 ```  
@@ -324,7 +324,7 @@ BOOL DeleteItem(LPCTSTR lpszText);
   
 ### Remarks  
   
-##  <a name="cmfctoolbarcomboboxbutton__duplicatedata"></a>  CMFCToolBarComboBoxButton::DuplicateData  
+##  <a name="duplicatedata"></a>  CMFCToolBarComboBoxButton::DuplicateData  
  Duplicates user-defined data.  
   
 ```  
@@ -334,7 +334,7 @@ virtual void DuplicateData();
 ### Remarks  
  By default this method does nothing. Override this method in a derived class if you want to copy any user-defined data.  
   
-##  <a name="cmfctoolbarcomboboxbutton__enablewindow"></a>  CMFCToolBarComboBoxButton::EnableWindow  
+##  <a name="enablewindow"></a>  CMFCToolBarComboBoxButton::EnableWindow  
  Enables or disables the edit and combo boxes.  
   
 ```  
@@ -348,7 +348,7 @@ virtual void EnableWindow(BOOL bEnable = TRUE);
 ### Remarks  
  When disabled, the controls cannot become active and cannot accept user input.  
   
-##  <a name="cmfctoolbarcomboboxbutton__exporttomenubutton"></a>  CMFCToolBarComboBoxButton::ExportToMenuButton  
+##  <a name="exporttomenubutton"></a>  CMFCToolBarComboBoxButton::ExportToMenuButton  
  Copies a string from the application string table to the specified menu using the combo box button command ID.  
   
 ```  
@@ -364,7 +364,7 @@ virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
 ### Return Value  
  Always `TRUE`.  
   
-##  <a name="cmfctoolbarcomboboxbutton__finditem"></a>  CMFCToolBarComboBoxButton::FindItem  
+##  <a name="finditem"></a>  CMFCToolBarComboBoxButton::FindItem  
  Returns the index of the first item in the list box that contains a specified string.  
   
 ```  
@@ -382,7 +382,7 @@ int FindItem(LPCTSTR lpszText) const;
   
 ### Remarks  
   
-##  <a name="cmfctoolbarcomboboxbutton__getbycmd"></a>  CMFCToolBarComboBoxButton::GetByCmd  
+##  <a name="getbycmd"></a>  CMFCToolBarComboBoxButton::GetByCmd  
  Gets a pointer to the combo box button that has a specified command ID.  
   
 ```  
@@ -403,7 +403,7 @@ static CMFCToolBarComboBoxButton* GetByCmd(
   
 ### Remarks  
   
-##  <a name="cmfctoolbarcomboboxbutton__getcombobox"></a>  CMFCToolBarComboBoxButton::GetComboBox  
+##  <a name="getcombobox"></a>  CMFCToolBarComboBoxButton::GetComboBox  
  Returns a pointer to the combo box in the combo box button.  
   
 ```  
@@ -417,7 +417,7 @@ CComboBox* GetComboBox() const;
   
 ### Remarks  
   
-##  <a name="cmfctoolbarcomboboxbutton__getcontextmenuid"></a>  CMFCToolBarComboBoxButton::GetContextMenuID  
+##  <a name="getcontextmenuid"></a>  CMFCToolBarComboBoxButton::GetContextMenuID  
  Gets the shortcut menu resource ID for the combo box button.  
   
 ```  
@@ -427,7 +427,7 @@ UINT GetContextMenuID();
 ### Return Value  
  The shortcut menu resource ID.  
   
-##  <a name="cmfctoolbarcomboboxbutton__getcount"></a>  CMFCToolBarComboBoxButton::GetCount  
+##  <a name="getcount"></a>  CMFCToolBarComboBoxButton::GetCount  
  Returns the number of items in the list box.  
   
 ```  
@@ -441,7 +441,7 @@ INT_PTR GetCount() const;
   
 ### Remarks  
   
-##  <a name="cmfctoolbarcomboboxbutton__getcountall"></a>  CMFCToolBarComboBoxButton::GetCountAll  
+##  <a name="getcountall"></a>  CMFCToolBarComboBoxButton::GetCountAll  
  Gets the number of items in the list box of a combo box button that has a specified command ID.  
   
 ```  
@@ -457,7 +457,7 @@ static int GetCountAll(UINT uiCmd);
   
 ### Remarks  
   
-##  <a name="cmfctoolbarcomboboxbutton__getcursel"></a>  CMFCToolBarComboBoxButton::GetCurSel  
+##  <a name="getcursel"></a>  CMFCToolBarComboBoxButton::GetCurSel  
  Gets the index of the currently selected item in the list box.  
   
 ```  
@@ -472,7 +472,7 @@ int GetCurSel() const;
 ### Remarks  
  The list box index is zero-based.  
   
-##  <a name="cmfctoolbarcomboboxbutton__getcurselall"></a>  CMFCToolBarComboBoxButton::GetCurSelAll  
+##  <a name="getcurselall"></a>  CMFCToolBarComboBoxButton::GetCurSelAll  
  Returns the index of the currently selected item in the list box of a combo box button that has a specified command ID.  
   
 ```  
@@ -489,7 +489,7 @@ static int GetCurSelAll(UINT uiCmd);
 ### Remarks  
  The list box index is zero-based.  
   
-##  <a name="cmfctoolbarcomboboxbutton__geteditctrl"></a>  CMFCToolBarComboBoxButton::GetEditCtrl  
+##  <a name="geteditctrl"></a>  CMFCToolBarComboBoxButton::GetEditCtrl  
  Returns a pointer to the edit box in the combo box button.  
   
 ```  
@@ -501,7 +501,7 @@ virtual CEdit* GetEditCtrl();
   
 ### Remarks  
   
-##  <a name="cmfctoolbarcomboboxbutton__gethwnd"></a>  CMFCToolBarComboBoxButton::GetHwnd  
+##  <a name="gethwnd"></a>  CMFCToolBarComboBoxButton::GetHwnd  
  Returns the window handle for the combo box.  
   
 ```  
@@ -511,7 +511,7 @@ virtual HWND GetHwnd();
 ### Return Value  
  The window handle, or `NULL` if the combo box is not associated with a window object.  
   
-##  <a name="cmfctoolbarcomboboxbutton__getitem"></a>  CMFCToolBarComboBoxButton::GetItem  
+##  <a name="getitem"></a>  CMFCToolBarComboBoxButton::GetItem  
  Returns the string associated with an item at a specified index in the list box.  
   
 ```  
@@ -530,7 +530,7 @@ LPCTSTR GetItem(int iIndex=-1) const;
 ### Remarks  
  An index parameter of -1 returns the string of the item that is currently selected.  
   
-##  <a name="cmfctoolbarcomboboxbutton__getitemall"></a>  CMFCToolBarComboBoxButton::GetItemAll  
+##  <a name="getitemall"></a>  CMFCToolBarComboBoxButton::GetItemAll  
  Returns the string associated with an item at a specified index in the list box of a combo box button that has a specified command ID.  
   
 ```  
@@ -552,7 +552,7 @@ static LPCTSTR GetItemAll(
 ### Remarks  
  An index value of -1 returns the string of the item that is currently selected.  
   
-##  <a name="cmfctoolbarcomboboxbutton__getitemdata"></a>  CMFCToolBarComboBoxButton::GetItemData  
+##  <a name="getitemdata"></a>  CMFCToolBarComboBoxButton::GetItemData  
  Returns the data associated with an item at a specific index in the list box.  
   
 ```  
@@ -571,7 +571,7 @@ DWORD_PTR GetItemData(int iIndex=-1) const;
 ### Remarks  
  An index parameter of -1 returns the data associated with the currently selected item.  
   
-##  <a name="cmfctoolbarcomboboxbutton__getitemdataall"></a>  CMFCToolBarComboBoxButton::GetItemDataAll  
+##  <a name="getitemdataall"></a>  CMFCToolBarComboBoxButton::GetItemDataAll  
  Returns the data associated with an item at a specific index in the list box of a combo box button that has a specific command ID.  
   
 ```  
@@ -593,7 +593,7 @@ static DWORD_PTR GetItemDataAll(
 ### Remarks  
  An index parameter of -1 returns the data associated with the currently selected item.  
   
-##  <a name="cmfctoolbarcomboboxbutton__getitemdataptrall"></a>  CMFCToolBarComboBoxButton::GetItemDataPtrAll  
+##  <a name="getitemdataptrall"></a>  CMFCToolBarComboBoxButton::GetItemDataPtrAll  
  Returns the data associated with an item at a specific index in the list box of a combo box button that has a specific command ID. This data is returned as a pointer.  
   
 ```  
@@ -614,7 +614,7 @@ static void* GetItemDataPtrAll(
   
 ### Remarks  
   
-##  <a name="cmfctoolbarcomboboxbutton__getprompt"></a>  CMFCToolBarComboBoxButton::GetPrompt  
+##  <a name="getprompt"></a>  CMFCToolBarComboBoxButton::GetPrompt  
  Returns the prompt string for the combo box button.  
   
 ```  
@@ -629,7 +629,7 @@ virtual CString GetPrompt() const;
 ### Remarks  
  This method is currently not implemented.  
   
-##  <a name="cmfctoolbarcomboboxbutton__gettext"></a>  CMFCToolBarComboBoxButton::GetText  
+##  <a name="gettext"></a>  CMFCToolBarComboBoxButton::GetText  
  Gets the text in the edit box.  
   
 ```  
@@ -643,7 +643,7 @@ LPCTSTR GetText() const;
   
 ### Remarks  
   
-##  <a name="cmfctoolbarcomboboxbutton__gettextall"></a>  CMFCToolBarComboBoxButton::GetTextAll  
+##  <a name="gettextall"></a>  CMFCToolBarComboBoxButton::GetTextAll  
  Gets the text in the edit box of a combo box button that has a specified command ID.  
   
 ```  
@@ -659,7 +659,7 @@ static LPCTSTR GetTextAll(UINT uiCmd);
   
 ### Remarks  
   
-##  <a name="cmfctoolbarcomboboxbutton__hasfocus"></a>  CMFCToolBarComboBoxButton::HasFocus  
+##  <a name="hasfocus"></a>  CMFCToolBarComboBoxButton::HasFocus  
  Indicates whether the combo box currently has the focus.  
   
 ```  
@@ -674,7 +674,7 @@ virtual BOOL HasFocus() const;
 ### Remarks  
  This method also returns `TRUE` if any child window of the combo box currently has the focus.  
   
-##  <a name="cmfctoolbarcomboboxbutton__iscentervert"></a>  CMFCToolBarComboBoxButton::IsCenterVert  
+##  <a name="iscentervert"></a>  CMFCToolBarComboBoxButton::IsCenterVert  
  Returns the vertical position of combo box buttons in the application.  
   
 ```  
@@ -686,7 +686,7 @@ static BOOL IsCenterVert();
   
 ### Remarks  
   
-##  <a name="cmfctoolbarcomboboxbutton__isflatmode"></a>  CMFCToolBarComboBoxButton::IsFlatMode  
+##  <a name="isflatmode"></a>  CMFCToolBarComboBoxButton::IsFlatMode  
  Returns the flat style appearance of combo box buttons in the application.  
   
 ```  
@@ -699,7 +699,7 @@ static BOOL IsFlatMode();
 ### Remarks  
  The default flat style for combo box buttons is `FALSE.`  
   
-##  <a name="cmfctoolbarcomboboxbutton__isownerof"></a>  CMFCToolBarComboBoxButton::IsOwnerOf  
+##  <a name="isownerof"></a>  CMFCToolBarComboBoxButton::IsOwnerOf  
  Indicates whether the specified handle is associated with the combo box button, or one of its children.  
   
 ```  
@@ -713,7 +713,7 @@ virtual BOOL IsOwnerOf(HWND hwnd);
 ### Return Value  
  `TRUE` if the handle is assocated with the combo box button, or one of its children; otherwise, `FALSE`.  
   
-##  <a name="cmfctoolbarcomboboxbutton__isribbonbutton"></a>  CMFCToolBarComboBoxButton::IsRibbonButton  
+##  <a name="isribbonbutton"></a>  CMFCToolBarComboBoxButton::IsRibbonButton  
  Indicates whether the combo box button resides on a ribbon panel.  
   
 ```  
@@ -728,7 +728,7 @@ BOOL IsRibbonButton() const;
 ### Remarks  
  By default, this method always returns `FALSE`, which means the combo box button is never displayed on a ribbon panel.  
   
-##  <a name="cmfctoolbarcomboboxbutton__iswindowvisible"></a>  CMFCToolBarComboBoxButton::IsWindowVisible  
+##  <a name="iswindowvisible"></a>  CMFCToolBarComboBoxButton::IsWindowVisible  
  Returns the visibility state of the combo box button.  
   
 ```  
@@ -738,7 +738,7 @@ virtual BOOL IsWindowVisible();
 ### Return Value  
  The visibility state of the combo box button.  
   
-##  <a name="cmfctoolbarcomboboxbutton__notifycommand"></a>  CMFCToolBarComboBoxButton::NotifyCommand  
+##  <a name="notifycommand"></a>  CMFCToolBarComboBoxButton::NotifyCommand  
  Indicates whether the combo box button processes the  message.  
   
 ```  
@@ -752,14 +752,14 @@ virtual BOOL NotifyCommand(int iNotifyCode);
 ### Return Value  
  Whether the combo box button processes the  message.  
   
-##  <a name="cmfctoolbarcomboboxbutton__onaddtocustomizepage"></a>  CMFCToolBarComboBoxButton::OnAddToCustomizePage  
+##  <a name="onaddtocustomizepage"></a>  CMFCToolBarComboBoxButton::OnAddToCustomizePage  
  Called by the framework when the button is added to the **Customize** dialog box.  
   
 ```  
 virtual void OnAddToCustomizePage();
 ```  
   
-##  <a name="cmfctoolbarcomboboxbutton__oncalculatesize"></a>  CMFCToolBarComboBoxButton::OnCalculateSize  
+##  <a name="oncalculatesize"></a>  CMFCToolBarComboBoxButton::OnCalculateSize  
  Called by the framework to calculate the size of the button.  
   
 ```  
@@ -782,7 +782,7 @@ virtual SIZE OnCalculateSize(
 ### Return Value  
  A `SIZE` structure that contains the dimensions of the combo box button, in pixels.  
   
-##  <a name="cmfctoolbarcomboboxbutton__onchangeparentwnd"></a>  CMFCToolBarComboBoxButton::OnChangeParentWnd  
+##  <a name="onchangeparentwnd"></a>  CMFCToolBarComboBoxButton::OnChangeParentWnd  
  Called by the framework when the combo box button is inserted into a new toolbar.  
   
 ```  
@@ -793,7 +793,7 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
  [in] `pWndParent`  
  Pointer to the new parent toolbar.  
   
-##  <a name="cmfctoolbarcomboboxbutton__onclick"></a>  CMFCToolBarComboBoxButton::OnClick  
+##  <a name="onclick"></a>  CMFCToolBarComboBoxButton::OnClick  
  Called by the framework when the user clicks the combo box button.  
   
 ```  
@@ -812,7 +812,7 @@ virtual BOOL OnClick(
 ### Return Value  
  `TRUE` if the method handles the event; otherwise, `FALSE`.  
   
-##  <a name="cmfctoolbarcomboboxbutton__onctlcolor"></a>  CMFCToolBarComboBoxButton::OnCtlColor  
+##  <a name="onctlcolor"></a>  CMFCToolBarComboBoxButton::OnCtlColor  
  Called by the framework when the user changes the parent toolbar color to set the combo box button color.  
   
 ```  
@@ -834,7 +834,7 @@ virtual HBRUSH OnCtlColor(
 ### Remarks  
  This method also sets the combo box button text color.  
   
-##  <a name="cmfctoolbarcomboboxbutton__ondraw"></a>  CMFCToolBarComboBoxButton::OnDraw  
+##  <a name="ondraw"></a>  CMFCToolBarComboBoxButton::OnDraw  
  Called by the framework to draw the combo box button by using the specified styles and options.  
   
 ```  
@@ -874,7 +874,7 @@ virtual void OnDraw(
  [in] `bGrayDisabledButtons`  
  `TRUE` to draw shaded disabled buttons; `FALSE` to use the disabled images collection.  
   
-##  <a name="cmfctoolbarcomboboxbutton__ondrawoncustomizelist"></a>  CMFCToolBarComboBoxButton::OnDrawOnCustomizeList  
+##  <a name="ondrawoncustomizelist"></a>  CMFCToolBarComboBoxButton::OnDrawOnCustomizeList  
  Called by the framework to draw the combo box button in the **Commands** pane of the **Customize** dialog box.  
   
 ```  
@@ -897,21 +897,21 @@ virtual int OnDrawOnCustomizeList(
 ### Return Value  
  The width, in pixels, of the combo box button.  
   
-##  <a name="cmfctoolbarcomboboxbutton__onglobalfontschanged"></a>  CMFCToolBarComboBoxButton::OnGlobalFontsChanged  
+##  <a name="onglobalfontschanged"></a>  CMFCToolBarComboBoxButton::OnGlobalFontsChanged  
  Called by the framework to set the combo box button font when the application font changes.  
   
 ```  
 virtual void OnGlobalFontsChanged();
 ```  
   
-##  <a name="cmfctoolbarcomboboxbutton__onmove"></a>  CMFCToolBarComboBoxButton::OnMove  
+##  <a name="onmove"></a>  CMFCToolBarComboBoxButton::OnMove  
  Called by the framework to change the location of the combo box button when the parent toolbar moves.  
   
 ```  
 virtual void OnMove();
 ```  
   
-##  <a name="cmfctoolbarcomboboxbutton__onshow"></a>  CMFCToolBarComboBoxButton::OnShow  
+##  <a name="onshow"></a>  CMFCToolBarComboBoxButton::OnShow  
  Called by the framework when the combo box button is hidden or displayed.  
   
 ```  
@@ -922,7 +922,7 @@ virtual void OnShow(BOOL bShow);
  [in] `bShow`  
  Whether to hide or display the combo box button.  
   
-##  <a name="cmfctoolbarcomboboxbutton__onsize"></a>  CMFCToolBarComboBoxButton::OnSize  
+##  <a name="onsize"></a>  CMFCToolBarComboBoxButton::OnSize  
  Called by the framework to change the size of the combo box button when the parent toolbar changes size.  
   
 ```  
@@ -933,7 +933,7 @@ virtual void OnSize(int iSize);
  [in] `iSize`  
  The new width of the combo box button.  
   
-##  <a name="cmfctoolbarcomboboxbutton__onupdatetooltip"></a>  CMFCToolBarComboBoxButton::OnUpdateToolTip  
+##  <a name="onupdatetooltip"></a>  CMFCToolBarComboBoxButton::OnUpdateToolTip  
  Called by the framework when the user changes the tool tip for the combo box button.  
   
 ```  
@@ -960,7 +960,7 @@ virtual BOOL OnUpdateToolTip(
 ### Return Value  
  `TRUE` if the method handles the event; otherwise, `FALSE`.  
   
-##  <a name="cmfctoolbarcomboboxbutton__removeallitems"></a>  CMFCToolBarComboBoxButton::RemoveAllItems  
+##  <a name="removeallitems"></a>  CMFCToolBarComboBoxButton::RemoveAllItems  
  Deletes all items from the list and edit boxes.  
   
 ```  
@@ -970,7 +970,7 @@ void RemoveAllItems();
 ### Remarks  
  Removes all items from the list box and edit control of a combo box.  
   
-##  <a name="cmfctoolbarcomboboxbutton__selectitem"></a>  CMFCToolBarComboBoxButton::SelectItem  
+##  <a name="selectitem"></a>  CMFCToolBarComboBoxButton::SelectItem  
  Selects an item in the list box.  
   
 ```  
@@ -1005,7 +1005,7 @@ BOOL SelectItem(
   
 ### Remarks  
   
-##  <a name="cmfctoolbarcomboboxbutton__selectitemall"></a>  CMFCToolBarComboBoxButton::SelectItemAll  
+##  <a name="selectitemall"></a>  CMFCToolBarComboBoxButton::SelectItemAll  
  Selects an item in the list box of a combo box button that has a specified command ID.  
   
 ```  
@@ -1042,7 +1042,7 @@ static BOOL SelectItemAll(
   
 ### Remarks  
   
-##  <a name="cmfctoolbarcomboboxbutton__serialize"></a>  CMFCToolBarComboBoxButton::Serialize  
+##  <a name="serialize"></a>  CMFCToolBarComboBoxButton::Serialize  
  Reads this object from an archive or writes it to an archive.  
   
 ```  
@@ -1056,7 +1056,7 @@ virtual void Serialize(CArchive& ar);
 ### Remarks  
  Settings in the `CArchive` object determine whether this method reads or writes to the archive.  
   
-##  <a name="cmfctoolbarcomboboxbutton__setaccdata"></a>  CMFCToolBarComboBoxButton::SetACCData  
+##  <a name="setaccdata"></a>  CMFCToolBarComboBoxButton::SetACCData  
  Populates the specified `CAccessibilityData` object by using accessibility data from the combo box button.  
   
 ```  
@@ -1075,7 +1075,7 @@ virtual BOOL SetACCData(
 ### Return Value  
  `TRUE` if the method was successful; otherwise `FALSE`.  
   
-##  <a name="cmfctoolbarcomboboxbutton__setcentervert"></a>  CMFCToolBarComboBoxButton::SetCenterVert  
+##  <a name="setcentervert"></a>  CMFCToolBarComboBoxButton::SetCenterVert  
  Sets the vertical position of combo box buttons in the application.  
   
 ```  
@@ -1089,7 +1089,7 @@ static void SetCenterVert(BOOL bCenterVert=TRUE);
 ### Remarks  
  By default, combo box buttons are aligned to the top.  
   
-##  <a name="cmfctoolbarcomboboxbutton__setcontextmenuid"></a>  CMFCToolBarComboBoxButton::SetContextMenuID  
+##  <a name="setcontextmenuid"></a>  CMFCToolBarComboBoxButton::SetContextMenuID  
  Sets the shortcut menu resource ID for the combo box button.  
   
 ```  
@@ -1100,7 +1100,7 @@ void SetContextMenuID(UINT uiResID);
  [in] `uiResID`  
  The shortcut menu resource ID.  
   
-##  <a name="cmfctoolbarcomboboxbutton__setdropdownheight"></a>  CMFCToolBarComboBoxButton::SetDropDownHeight  
+##  <a name="setdropdownheight"></a>  CMFCToolBarComboBoxButton::SetDropDownHeight  
  Sets the height of the list box when it is dropped down.  
   
 ```  
@@ -1114,7 +1114,7 @@ void SetDropDownHeight(int nHeight);
 ### Remarks  
  The default height is 150 pixels.  
   
-##  <a name="cmfctoolbarcomboboxbutton__setflatmode"></a>  CMFCToolBarComboBoxButton::SetFlatMode  
+##  <a name="setflatmode"></a>  CMFCToolBarComboBoxButton::SetFlatMode  
  Sets the flat style appearance of combo box buttons in the application.  
   
 ```  
@@ -1128,7 +1128,7 @@ static void SetFlatMode(BOOL bFlat=TRUE);
 ### Remarks  
  The default flat style for combo box buttons is `FALSE`.  
   
-##  <a name="cmfctoolbarcomboboxbutton__setstyle"></a>  CMFCToolBarComboBoxButton::SetStyle  
+##  <a name="setstyle"></a>  CMFCToolBarComboBoxButton::SetStyle  
  Sets the specified style for the combo box button and redraws the control if it is not disabled.  
   
 ```  
@@ -1142,7 +1142,7 @@ virtual void SetStyle(UINT nStyle);
 ### Remarks  
  For a list of toolbar button styles see [ToolBar Control Styles](../../mfc/reference/toolbar-control-styles.md)  
   
-##  <a name="cmfctoolbarcomboboxbutton__settext"></a>  CMFCToolBarComboBoxButton::SetText  
+##  <a name="settext"></a>  CMFCToolBarComboBoxButton::SetText  
  Sets the text in the edit box of the combo box button.  
   
 ```  
@@ -1158,7 +1158,7 @@ void SetText(LPCTSTR lpszText);
  [Classes](../../mfc/reference/mfc-classes.md)   
  [CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md)   
  [CComboBox Class](../../mfc/reference/ccombobox-class.md)   
- [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#cmfctoolbar__replacebutton)   
+ [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)   
  [Walkthrough: Putting Controls On Toolbars](../../mfc/walkthrough-putting-controls-on-toolbars.md)
 
 

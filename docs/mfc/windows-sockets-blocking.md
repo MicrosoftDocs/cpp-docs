@@ -71,5 +71,5 @@ This article and two companion articles explain several issues in Windows Socket
   
 ## See Also  
  [Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)   
- [CAsyncSocket::OnSend](../mfc/reference/casyncsocket-class.md#casyncsocket__onsend)
+ [CAsyncSocket::OnSend](../mfc/reference/casyncsocket-class.md#onsend)
 

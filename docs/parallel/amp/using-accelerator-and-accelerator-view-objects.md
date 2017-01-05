@@ -115,10 +115,10 @@ i++) {
 ```  
   
 > [!NOTE]
->  One of the accelerators that are returned by `accelerator::get_all` is the CPU accelerator. You cannot execute code on the CPU accelerator. To filter out the CPU accelerator, compare the value of the [device_path](../Topic/accelerator::device_path%20Data%20Member.md) property of the accelerator that's returned by `accelerator::get_all` with the value of the [accelerator::cpu_accelerator](../Topic/accelerator::cpu_accelerator%20Data%20Member.md). For more information, see the "Special Accelerators" section in this article.  
+>  One of the accelerators that are returned by `accelerator::get_all` is the CPU accelerator. You cannot execute code on the CPU accelerator. To filter out the CPU accelerator, compare the value of the [device_path](reference/accelerator-class.md#device_path) property of the accelerator that's returned by `accelerator::get_all` with the value of the [accelerator::cpu_accelerator](reference/accelerator-class.md#cpu_accelerator). For more information, see the "Special Accelerators" section in this article.  
   
 ## Shared Memory  
- Shared memory is memory that can be accessed by both the CPU and the accelerator. The use of shared memory eliminates or significantly reduces the overhead of copying data between the CPU and the accelerator. Although the memory is shared, it cannot be accessed concurrently by both the CPU and the accelerator, and doing so causes undefined behavior. The accelerator property [supports_cpu_shared_memory](../Topic/accelerator::supports_cpu_shared_memory%20Data%20Member.md) returns `true` if the accelerator supports shared memory, and the [default_cpu_access_type](../Topic/accelerator::default_cpu_access_type%20Data%20Member.md) property gets the default [access_type](../Topic/access_type%20Enumeration.md) for memory allocated on the `accelerator`—for example, `array`s associated with the `accelerator`, or `array_view` objects accessed on the `accelerator`.  
+ Shared memory is memory that can be accessed by both the CPU and the accelerator. The use of shared memory eliminates or significantly reduces the overhead of copying data between the CPU and the accelerator. Although the memory is shared, it cannot be accessed concurrently by both the CPU and the accelerator, and doing so causes undefined behavior. The accelerator property [supports_cpu_shared_memory](reference/accelerator-class.md#supports_cpu_shared_memory) returns `true` if the accelerator supports shared memory, and the [default_cpu_access_type](reference/accelerator-class.md#default_cpu_access_type) property gets the default [access_type](reference/concurrency-namespace-enums-amp.md#access_type) for memory allocated on the `accelerator`—for example, `array`s associated with the `accelerator`, or `array_view` objects accessed on the `accelerator`. 
   
  The C++ AMP runtime automatically chooses the best default `access_type` for each `accelerator`, but the performance characteristics (bandwidth and latency) of shared memory can be worse than those of dedicated (non-shared) accelerator memory when reading from the CPU, writing from the CPU, or both. If shared memory performs as well as dedicated memory for reading and writing from the CPU, the runtime defaults to `access_type_read_write`; otherwise, the runtime chooses a more conservative default `access_type`, and allows the app to override it if the memory access patterns of its computation kernels benefit from a different `access_type`.  
   
@@ -188,24 +188,24 @@ accelerator chosen_one;
   
 ## Using Multiple Accelerators  
  There are two ways to use multiple accelerators in your app:  
-  
--   You can pass `accelerator_view` objects to the calls to the [parallel_for_each](../Topic/parallel_for_each%20Function%20\(C++%20AMP\).md) method.  
+
+-   You can pass `accelerator_view` objects to the calls to the [parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) method.  
   
 -   You can construct an `array` object using a specific `accelerator_view` object. The C+AMP runtime will pick up the `accelerator_view` object from the captured `array` object in the lambda expression.  
   
 ## Special Accelerators  
  The device paths of three special accelerators are available as properties of the `accelerator` class:  
   
-- [accelerator::direct3d_ref Data Member](../Topic/accelerator::direct3d_ref%20Data%20Member.md): This single-threaded accelerator uses software on the CPU to emulate a generic graphics card. It's used by default for debugging, but it's not useful in production because it's slower than the hardware accelerators. Additionally, it's available only in the DirectX SDK and the Windows SDK, and it's unlikely to be installed on your customers' computers. For more information, see [Debugging GPU Code](/visual-studio/debugger/debugging-gpu-code).  
+- [accelerator::direct3d_ref Data Member](reference/accelerator-class.md#direct3d_ref): This single-threaded accelerator uses software on the CPU to emulate a generic graphics card. It's used by default for debugging, but it's not useful in production because it's slower than the hardware accelerators. Additionally, it's available only in the DirectX SDK and the Windows SDK, and it's unlikely to be installed on your customers' computers. For more information, see [Debugging GPU Code](/visualstudio/debugger/debugging-gpu-code).  
   
-- [accelerator::direct3d_warp Data Member](../Topic/accelerator::direct3d_warp%20Data%20Member.md): This accelerator provides a fallback solution for executing C++ AMP code on multi-core CPUs that use Streaming SIMD Extensions (SSE).  
+- [accelerator::direct3d_warp Data Member](reference/accelerator-class.md#direct3d_warp): This accelerator provides a fallback solution for executing C++ AMP code on multi-core CPUs that use Streaming SIMD Extensions (SSE).  
   
-- [accelerator::cpu_accelerator Data Member](../Topic/accelerator::cpu_accelerator%20Data%20Member.md): You can use this accelerator for setting up staging arrays. It cannot execute C++ AMP code. For more information, see the [Staging Arrays in C++ AMP](http://go.microsoft.com/fwlink/p/LinkId=248485) post on the Parallel Programming in Native Code blog.  
+- [accelerator::cpu_accelerator Data Member](reference/accelerator-class.md#cpu_accelerator): You can use this accelerator for setting up staging arrays. It cannot execute C++ AMP code. For more information, see the [Staging Arrays in C++ AMP](http://go.microsoft.com/fwlink/p/LinkId=248485) post on the Parallel Programming in Native Code blog.  
   
 ## Interoperability  
- The C++ AMP runtime supports interoperability between the `accelerator_view` class and the Direct3D [ID3D11Device interface](http://go.microsoft.com/fwlink/p/LinkId=248488). The [create_accelerator_view](../Topic/create_accelerator_view%20Function.md) method takes an `IUnknown` interface and returns an `accelerator_view` object. The [get_device](http://msdn.microsoft.com/en-us/8194125e-8396-4d62-aa8a-65831dea8439) method takes an `accelerator_view` object and returns an `IUknown` interface.  
+ The C++ AMP runtime supports interoperability between the `accelerator_view` class and the Direct3D [ID3D11Device interface](http://go.microsoft.com/fwlink/p/LinkId=248488). The [create_accelerator_view](reference/concurrency-direct3d-namespace-functions-amp.md#create_accelerator_view) method takes an `IUnknown` interface and returns an `accelerator_view` object. The [get_device](http://msdn.microsoft.com/en-us/8194125e-8396-4d62-aa8a-65831dea8439) method takes an `accelerator_view` object and returns an `IUknown` interface.  
   
 ## See Also  
  [C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)   
- [Debugging GPU Code](/visual-studio/debugger/debugging-gpu-code)   
+ [Debugging GPU Code](/visualstudio/debugger/debugging-gpu-code)   
  [accelerator_view Class](../../parallel/amp/reference/accelerator-view-class.md)

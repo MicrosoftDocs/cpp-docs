@@ -53,7 +53,7 @@ class CMemoryException : public CSimpleException
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMemoryException::CMemoryException](#cmemoryexception__cmemoryexception)|Constructs a `CMemoryException` object.|  
+|[CMemoryException::CMemoryException](#cmemoryexception)|Constructs a `CMemoryException` object.|  
   
 ## Remarks  
  No further qualification is necessary or possible. Memory exceptions are thrown automatically by **new**. If you write your own memory functions, using `malloc`, for example, then you are responsible for throwing memory exceptions.  
@@ -72,7 +72,7 @@ class CMemoryException : public CSimpleException
 ## Requirements  
  **Header:** afx.h  
   
-##  <a name="cmemoryexception__cmemoryexception"></a>  CMemoryException::CMemoryException  
+##  <a name="cmemoryexception"></a>  CMemoryException::CMemoryException  
  Constructs a `CMemoryException` object.  
   
 ```  
@@ -80,11 +80,11 @@ CMemoryException();
 ```  
   
 ### Remarks  
- Do not use this constructor directly, but rather call the global function [AfxThrowMemoryException]--brokenlink--(../Topic/not%20found.md#not) _found.md#afxthrowmemoryexception. this global function can succeed in an out-of-memory situation because it constructs the exception object in previously allocated memory. for more information about exception processing, see the article [exceptions](../topic/exception_handling_in_mfc.  
+ Do not use this constructor directly, but rather call the global function [AfxThrowMemoryException](exception-processing.md#afxthrowmemoryexception). this global function can succeed in an out-of-memory situation because it constructs the exception object in previously allocated memory. for more information about exception processing, see the article [exceptions](../exception-handling-in-mfc.md).  
   
 ## See Also  
- [CException Class](../Topic/CException%20Class.md)   
- [Hierarchy Chart](../Topic/Hierarchy%20Chart.md)
+ [CException Class](cexception-class.md)   
+ [Hierarchy Chart](../hierarchy-chart.md)
 
 
 

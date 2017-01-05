@@ -1,5 +1,5 @@
 ---
-title: "accumulate (STL-CLR) | Microsoft Docs"
+title: "accumulate (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -47,7 +47,7 @@ template<class _InIt, class _Ty, class _Fn2> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL numeric function `accumulate`. For more information, see [accumulate](../Topic/accumulate.md).  
+ This function behaves the same as the C++ Standard Library numeric function `accumulate`. For more information, see [accumulate](../standard-library/numeric-functions.md#accumulate).  
   
 ## Requirements  
  **Header:** \<cliext/numeric>  

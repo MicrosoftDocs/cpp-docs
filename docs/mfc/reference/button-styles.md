@@ -151,7 +151,7 @@ This topic describes button types and styles.
   
 ## See Also  
  [Styles Used by MFC](../../mfc/reference/styles-used-by-mfc.md)   
- [CButton::Create](../../mfc/reference/cbutton-class.md#cbutton__create)
+ [CButton::Create](../../mfc/reference/cbutton-class.md#create)
  [Button Styles](http://msdn.microsoft.com/library/windows/desktop/bb775951)   
 
 

@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Migrating from OpenMP to the Concurrency Runtime
-The Concurrency Runtime enables a variety of programming models. These models may overlap or complement the models of other libraries. The documents in this section compare [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp_in_visual_c_add_add) to the Concurrency Runtime and provide examples about how to migrate existing OpenMP code to use the Concurrency Runtime.  
+The Concurrency Runtime enables a variety of programming models. These models may overlap or complement the models of other libraries. The documents in this section compare [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp) to the Concurrency Runtime and provide examples about how to migrate existing OpenMP code to use the Concurrency Runtime.  
   
  The OpenMP programming model is defined by an open standard and has well-defined bindings to the Fortran and C/C++ programming languages. OpenMP versions 2.0 and 2.5, which are supported by the Visual C++ compiler, are well-suited for parallel algorithms that are iterative; that is, they perform parallel iteration over an array of data. OpenMP 3.0 supports non-iterative tasks in addition to iterative tasks.  
   
@@ -53,7 +53,7 @@ The Concurrency Runtime enables a variety of programming models. These models ma
 |You require exception handling support.|The PPL lets you catch exceptions both inside and outside of a parallel region or loop. In OpenMP, you must handle the exception inside of the parallel region or loop.|  
 |You require a cancellation mechanism.|The PPL enables applications to cancel both individual tasks and parallel trees of work. OpenMP requires the application to implement its own cancellation mechanism.|  
 |You require parallel code to finish in a different context from which it starts.|The Concurrency Runtime lets you start a task in one context, and then wait on or cancel that task in another context. In OpenMP, all parallel work must finish in the context from which it starts.|  
-|You require enhanced debugging support.|Visual Studio provides the **Parallel Stacks** and **Parallel Tasks** windows so that you can more easily debug multithreaded applications.<br /><br /> For more information about debugging support for the Concurrency Runtime, see [Using the Tasks Window](/visual-studio/debugger/using-the-tasks-window), [Using the Parallel Stacks Window](/visual-studio/debugger/using-the-parallel-stacks-window), and [Walkthrough: Debugging a Parallel Application](../Topic/Walkthrough:%20Debugging%20a%20Parallel%20Application.md).|  
+|You require enhanced debugging support.|Visual Studio provides the **Parallel Stacks** and **Parallel Tasks** windows so that you can more easily debug multithreaded applications.<br /><br /> For more information about debugging support for the Concurrency Runtime, see [Using the Tasks Window](/visualstudio/debugger/using-the-tasks-window), [Using the Parallel Stacks Window](/visualstudio/debugger/using-the-parallel-stacks-window), and [Walkthrough: Debugging a Parallel Application](http://msdn.microsoft.com/library/2820ac4c-c893-4d87-8c62-83981d561493).|  
   
 ## When Not to Migrate from OpenMP to the Concurrency Runtime  
  The following cases describe when it might not be appropriate to migrate existing OpenMP code to use the Concurrency Runtime.  
@@ -66,7 +66,9 @@ The Concurrency Runtime enables a variety of programming models. These models ma
   
 ## Related Topics  
  [How to: Convert an OpenMP parallel for Loop to Use the Concurrency Runtime](../../parallel/concrt/how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime.md)  
- Given a basic loop that uses the OpenMP [parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel) and [for](../../parallel/openmp/reference/for-openmp.md) directives, demonstrates how to convert it to use the Concurrency Runtime [concurrency::parallel_for](../Topic/parallel_for%20Function.md) algorithm.  
+
+ Given a basic loop that uses the OpenMP [parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel) and [for](../../parallel/openmp/reference/for-openmp.md) directives, demonstrates how to convert it to use the Concurrency Runtime [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithm.  
+
   
  [How to: Convert an OpenMP Loop that Uses Cancellation to Use the Concurrency Runtime](../../parallel/concrt/convert-an-openmp-loop-that-uses-cancellation.md)  
  Given an OpenMP [parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[for](../../parallel/openmp/reference/for-openmp.md) loop that does not require all iterations to run, demonstrates how to convert it to use the Concurrency Runtime cancellation mechanism.  
@@ -79,7 +81,7 @@ The Concurrency Runtime enables a variety of programming models. These models ma
   
 ## See Also  
  [Concurrency Runtime](../../parallel/concrt/concurrency-runtime.md)   
- [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp_in_visual_c_add_add)   
+ [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp)   
  [Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)   
  [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)
 

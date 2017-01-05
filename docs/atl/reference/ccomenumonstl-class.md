@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # CComEnumOnSTL Class
-This class defines a COM enumerator object based on an STL collection.  
+This class defines a COM enumerator object based on a C++ Standard Library collection.  
   
 ## Syntax  
   
@@ -65,10 +65,10 @@ template <class Base,
  A [copy policy](../../atl/atl-copy-policy-classes.md) class.  
   
  `CollType`  
- An STL container class.  
+ A C++ Standard Library container class.  
   
 ## Remarks  
- `CComEnumOnSTL` defines a COM enumerator object based on an STL collection. This class can be used on its own or in conjunction with [ICollectionOnSTLImpl](../../atl/reference/icollectiononstlimpl-class.md). Typical steps for using this class are outlined below. For more information, see [ATL Collections and Enumerators](../../atl/atl-collections-and-enumerators.md).  
+ `CComEnumOnSTL` defines a COM enumerator object based on a C++ Standard Library collection. This class can be used on its own or in conjunction with [ICollectionOnSTLImpl](../../atl/reference/icollectiononstlimpl-class.md). Typical steps for using this class are outlined below. For more information, see [ATL Collections and Enumerators](../../atl/atl-collections-and-enumerators.md).  
   
 ## To use this class with ICollectionOnSTLImpl:  
   
@@ -86,7 +86,7 @@ template <class Base,
   
 -   Create an instance of the `CComObject` specialization.  
   
--   Initialize the enumerator object by calling [IEnumOnSTLImpl::Init](../../atl/reference/ienumonstlimpl-class.md#ienumonstlimpl__init).  
+-   Initialize the enumerator object by calling [IEnumOnSTLImpl::Init](../../atl/reference/ienumonstlimpl-class.md#init).  
   
 -   Return the enumerator interface to the client.  
   
@@ -107,18 +107,18 @@ template <class Base,
 ## Example  
  The code shown below provides a generic function to handle the creation and initialization of an enumerator object:  
   
- [!code-cpp[NVC_ATL_COM#34](../../atl/codesnippet/CPP/ccomenumonstl-class_1.h)]  
+ [!code-cpp[NVC_ATL_COM#34](../../atl/codesnippet/cpp/ccomenumonstl-class_1.h)]  
   
  This template function can be used to implement the `_NewEnum` property of a collection interface as shown below:  
   
- [!code-cpp[NVC_ATL_COM#35](../../atl/codesnippet/CPP/ccomenumonstl-class_2.h)]  
+ [!code-cpp[NVC_ATL_COM#35](../../atl/codesnippet/cpp/ccomenumonstl-class_2.h)]  
   
  This code creates a `typedef` for `CComEnumOnSTL` that exposes a vector of `CComVariant`s by means of the **IEnumVariant** interface. The **CVariantCollection** class simply specializes **CreateSTLEnumerator** to work with enumerator objects of this type.  
   
 ## See Also  
  [IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md)   
- [ATLCollections Sample: Demonstrates ICollectionOnSTLImpl, CComEnumOnSTL, and Custom Copy Policy Classes](../../top/visual-cpp-samples.md)   
+ [ATLCollections Sample: Demonstrates ICollectionOnSTLImpl, CComEnumOnSTL, and Custom Copy Policy Classes](../../visual-cpp-samples.md)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   
- [CComObjectThreadModel](../Topic/CComObjectThreadModel.md)   
+ [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)   
  [IEnumOnSTLImpl Class](../../atl/reference/ienumonstlimpl-class.md)

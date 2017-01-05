@@ -50,20 +50,20 @@ class CDialogEx : public CDialog
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDialogEx::CDialogEx](#cdialogex__cdialogex)|Constructs a `CDialogEx` object.|  
+|[CDialogEx::CDialogEx](#cdialogex)|Constructs a `CDialogEx` object.|  
 |`CDialogEx::~CDialogEx`|Destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDialogEx::SetBackgroundColor](#cdialogex__setbackgroundcolor)|Sets the background color of the dialog box.|  
-|[CDialogEx::SetBackgroundImage](#cdialogex__setbackgroundimage)|Sets the background image of the dialog box.|  
+|[CDialogEx::SetBackgroundColor](#setbackgroundcolor)|Sets the background color of the dialog box.|  
+|[CDialogEx::SetBackgroundImage](#setbackgroundimage)|Sets the background image of the dialog box.|  
   
 ## Remarks  
  To use the `CDialogEx` class, derive your dialog box class from the `CDialogEx` class instead of the `CDialog` class.  
   
- Dialog box images are stored in a resource file. The framework automatically deletes any image that is loaded from the resource file. To programmatically delete the current background image, call the [CDialogEx::SetBackgroundImage](#cdialogex__setbackgroundimage) method or implement an `OnDestroy` event handler. When you call the [CDialogEx::SetBackgroundImage](#cdialogex__setbackgroundimage) method, pass in an `HBITMAP` parameter as the image handle. The `CDialogEx` object will take ownership of the image and delete it if the `m_bAutoDestroyBmp` flag is `TRUE`.  
+ Dialog box images are stored in a resource file. The framework automatically deletes any image that is loaded from the resource file. To programmatically delete the current background image, call the [CDialogEx::SetBackgroundImage](#setbackgroundimage) method or implement an `OnDestroy` event handler. When you call the [CDialogEx::SetBackgroundImage](#setbackgroundimage) method, pass in an `HBITMAP` parameter as the image handle. The `CDialogEx` object will take ownership of the image and delete it if the `m_bAutoDestroyBmp` flag is `TRUE`.  
   
  A `CDialogEx` object can be a parent of a [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) object. The [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) object calls the `CDialogEx::SetActiveMenu` method when the [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) object opens. Afterward, the `CDialogEx` object handles any menu event until the [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) object is closed.  
   
@@ -81,7 +81,7 @@ class CDialogEx : public CDialog
 ## Requirements  
  **Header:** afxdialogex.h  
   
-##  <a name="cdialogex__cdialogex"></a>  CDialogEx::CDialogEx  
+##  <a name="cdialogex"></a>  CDialogEx::CDialogEx  
  Constructs a `CDialogEx` object.  
   
 ```  
@@ -112,7 +112,7 @@ CDialogEx(
   
 ### Remarks  
   
-##  <a name="cdialogex__setbackgroundcolor"></a>  CDialogEx::SetBackgroundColor  
+##  <a name="setbackgroundcolor"></a>  CDialogEx::SetBackgroundColor  
  Sets the background color of the dialog box.  
   
 ```  
@@ -130,7 +130,7 @@ void SetBackgroundColor(
   
 ### Remarks  
   
-##  <a name="cdialogex__setbackgroundimage"></a>  CDialogEx::SetBackgroundImage  
+##  <a name="setbackgroundimage"></a>  CDialogEx::SetBackgroundImage  
  Sets the background image of the dialog box.  
   
 ```  

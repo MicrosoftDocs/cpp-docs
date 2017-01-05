@@ -39,7 +39,7 @@ translation.priority.ht:
 In a single-document interface (SDI) application created with the Microsoft Foundation Class (MFC) Library, each document type is associated with a single view type. In some cases, it is desirable to have the ability to switch the current view of a document with a new view.  
   
 > [!TIP]
->  For additional procedures on implementing multiple views for a single document, see [CDocument::AddView](../mfc/reference/cdocument-class.md#cdocument__addview) and the [COLLECT](../top/visual-cpp-samples.md) MFC sample.  
+>  For additional procedures on implementing multiple views for a single document, see [CDocument::AddView](../mfc/reference/cdocument-class.md#addview) and the [COLLECT](../visual-cpp-samples.md) MFC sample.  
   
  You can implement this functionality by adding a new `CView`-derived class and additional code for switching the views dynamically to an existing MFC application.  
   
@@ -66,7 +66,7 @@ In a single-document interface (SDI) application created with the Microsoft Foun
   
  Add the following code to the declaration of `CMyWinApp` in MYWINAPP.H:  
   
- [!code-cpp[NVC_MFCDocViewSDI#1](../mfc/codesnippet/CPP/adding-multiple-views-to-a-single-document_1.h)]  
+ [!code-cpp[NVC_MFCDocViewSDI#1](../mfc/codesnippet/cpp/adding-multiple-views-to-a-single-document_1.h)]  
   
  The new member variables, `m_pOldView` and `m_pNewView`, point to the current view and the newly created one. The new method (`SwitchView`) switches the views when requested by the user. The body of the method is discussed later in this topic in [Implement the Switching Function](#vcconswitchingfunctiona4).  
   
@@ -74,7 +74,7 @@ In a single-document interface (SDI) application created with the Microsoft Foun
   
  Insert the following line in the include section of MYWINAPP.CPP:  
   
- [!code-cpp[NVC_MFCDocViewSDI#2](../mfc/codesnippet/CPP/adding-multiple-views-to-a-single-document_2.cpp)]  
+ [!code-cpp[NVC_MFCDocViewSDI#2](../mfc/codesnippet/cpp/adding-multiple-views-to-a-single-document_2.cpp)]  
   
  Save your changes and continue to the next step.  
   
@@ -94,7 +94,7 @@ In a single-document interface (SDI) application created with the Microsoft Foun
   
  Insert this code after the call to `ProcessShellCommand`:  
   
- [!code-cpp[NVC_MFCDocViewSDI#3](../mfc/codesnippet/CPP/adding-multiple-views-to-a-single-document_3.cpp)]  
+ [!code-cpp[NVC_MFCDocViewSDI#3](../mfc/codesnippet/cpp/adding-multiple-views-to-a-single-document_3.cpp)]  
   
  Save your changes and continue to the next step.  
   
@@ -103,7 +103,7 @@ In a single-document interface (SDI) application created with the Microsoft Foun
   
  At the end of the implementation file for your application class (MYWINAPP.CPP), add the following method definition:  
   
- [!code-cpp[NVC_MFCDocViewSDI#4](../mfc/codesnippet/CPP/adding-multiple-views-to-a-single-document_4.cpp)]  
+ [!code-cpp[NVC_MFCDocViewSDI#4](../mfc/codesnippet/cpp/adding-multiple-views-to-a-single-document_4.cpp)]  
   
  Save your changes and continue to the next step.  
   

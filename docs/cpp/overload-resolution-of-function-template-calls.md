@@ -33,7 +33,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Overload Resolution of Function Template Calls
-A function template can overload nontemplate functions of the same name. In this scenario, function calls are resolved by first using template argument deduction to instantiate the function template with a unique specialization. If template argument deduction fails, the other function overloads are considered to resolve the call. These other overloads, also known as the candidate set, include nontemplate functions and other instantiated function templates. If template argument deduction succeeds, then the generated function is compared with the other functions to determine the best match, following the rules for overload resolution. For more information, see [Overloading](../misc/overloading-cpp.md) and [Argument Matching](../misc/argument-matching.md).  
+A function template can overload nontemplate functions of the same name. In this scenario, function calls are resolved by first using template argument deduction to instantiate the function template with a unique specialization. If template argument deduction fails, the other function overloads are considered to resolve the call. These other overloads, also known as the candidate set, include nontemplate functions and other instantiated function templates. If template argument deduction succeeds, then the generated function is compared with the other functions to determine the best match, following the rules for overload resolution. For more information, see [Function Overloading](function-overloading.md).  
   
 ## Example  
  If a nontemplate function is an equally good match to a template function, the nontemplate function is chosen (unless the template arguments were explicitly specified), as in the call `f(1, 1)` in the following example.  
@@ -101,4 +101,4 @@ void f(T1, T2)
 ## See Also  
  [Name Resolution](../cpp/templates-and-name-resolution.md)   
  [typename](../cpp/typename.md)   
- [Template Argument Deduction](../Topic/Template%20Argument%20Deduction.md)
+ 

@@ -56,7 +56,7 @@ typedef struct tagPOINT {
  Specifies the y-coordinate of a point.  
   
 ## Example  
- [!code-cpp[NVC_MFC_Utilities#37](../../mfc/codesnippet/CPP/point-structure1_1.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#37](../../mfc/codesnippet/cpp/point-structure1_1.cpp)]  
   
 ## Requirements  
  **Header:** windef.h  

@@ -1,5 +1,5 @@
 ---
-title: "bind1st (STL-CLR) | Microsoft Docs"
+title: "bind1st (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

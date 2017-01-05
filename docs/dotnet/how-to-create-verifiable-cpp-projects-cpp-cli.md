@@ -42,7 +42,7 @@ Visual C++ application wizards do not create verifiable projects, but projects c
   
 #### To change the compiler and linker settings  
   
-1.  Display the project Property Page. For more information, see [How to: Open Project Property Pages](../misc/how-to-open-project-property-pages.md).  
+1.  Display the project Property Page. For more information, see [Working with Project Properties](../ide/working-with-project-properties.md).  
   
 2.  On the **General** page under the **Configuration Properties** node, set the **Common Language Runtime Support** property to **Safe MSIL Common Language Runtime Support (/clr:safe)**.  
   
@@ -68,7 +68,7 @@ Visual C++ application wizards do not create verifiable projects, but projects c
   
 1.  Change _tmain() to Main() in the project's main .cpp file.  
   
-2.  Display the project Property Page. For more information, see [How to: Open Project Property Pages](../misc/how-to-open-project-property-pages.md).  
+2.  Display the project Property Page. For more information, see [Working with Project Properties](../ide/working-with-project-properties.md).  
   
 3.  On the **Advanced** page under the **Linker** node, enter `Main` as the **Entry Point** property value.  
   

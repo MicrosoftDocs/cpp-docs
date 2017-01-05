@@ -317,7 +317,8 @@ class uint_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|[uint_4::uint_4 Constructor](../Topic/uint_4::uint_4%20Constructor.md)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[uint_4::uint_4 Constructor](#uint_4__ctor) |Overloaded. Default constructor, initializes all elements with 0.|  
+
   
 ### Public Methods  
   
@@ -477,7 +478,8 @@ class uint_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|[uint_4::size Constant](../Topic/uint_4::size%20Constant.md)||  
+|[uint_4::size Constant](#size)||  
+
   
 ### Public Data Members  
   
@@ -620,5 +622,67 @@ class uint_4;
   
  **Namespace:** Concurrency::graphics  
   
+## <a name="uint_4__ctor"></a>  uint_4::uint_4 Constructor
+Default constructor, initializes all elements with 0.
+  
+## Syntax  
+  
+```  
+uint_4() restrict(amp,cpu);  
+uint_4(  
+   unsigned int _V0,  
+   unsigned int _V1,  
+   unsigned int _V2,  
+   unsigned int _V3  
+) restrict(amp,cpu);  
+uint_4(  
+   unsigned int _V  
+) restrict(amp,cpu);  
+uint_4(  
+   const uint_4& _Other  
+) restrict(amp,cpu);  
+explicit inline uint_4(  
+   const int_4& _Other  
+) restrict(amp,cpu);  
+explicit inline uint_4(  
+   const float_4& _Other  
+) restrict(amp,cpu);  
+explicit inline uint_4(  
+   const unorm_4& _Other  
+) restrict(amp,cpu);  
+explicit inline uint_4(  
+   const norm_4& _Other  
+) restrict(amp,cpu);  
+explicit inline uint_4(  
+   const double_4& _Other  
+) restrict(amp,cpu);  
+```  
+  
+#### Parameters  
+ `_V0`  
+ The value to initialize element 0.  
+  
+ `_V1`  
+ The value to initialize element 1.  
+  
+ `_V2`  
+ The value to initialize element 2.  
+  
+ `_V3`  
+ The value to initialize element 3.  
+  
+ `_V`  
+ The value for initialization.  
+  
+ `_Other`  
+ The object used to initialize.  
+  
+## <a name=""></a> uint_4::size Constant
+## Syntax  
+  
+```  
+static const int size = 4;  
+```  
+
 ## See Also  
- [Concurrency::graphics Namespace](../../../parallel/amp/reference/concurrency-graphics-namespace.md)
+ [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

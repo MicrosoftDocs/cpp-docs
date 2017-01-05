@@ -133,7 +133,7 @@ static locale empty();
 cout.imbue(locale::empty());
 ```  
   
- Subsequent insertions to [cout](../Topic/%3Ciostream%3E%20functions.md#cout) are mediated by the current state of the global locale. You can even write:  
+Subsequent insertions to [cout](../standard-library/iostream.md#cout) are mediated by the current state of the global locale. You can even write:  
   
 ```  
 locale loc(locale::empty(),

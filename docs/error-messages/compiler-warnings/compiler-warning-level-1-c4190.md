@@ -37,7 +37,7 @@ translation.priority.ht:
 # Compiler Warning (level 1) C4190
 'identifier1' has C-linkage specified, but returns UDT 'identifier2' which is incompatible with C  
   
- A function or pointer to function has a UDT (user-defined type, which is a class, structure, enum, union, or [__value](../../misc/value.md) type) as return type and `extern` "C" linkage. This is legal if:  
+ A function or pointer to function has a UDT (user-defined type, which is a class, structure, enum, or union) as return type and `extern` "C" linkage. This is legal if:  
   
 -   All calls to this function occur from C++.  
   
@@ -45,7 +45,7 @@ translation.priority.ht:
   
 ## Example  
   
-```  
+```cpp  
 // C4190.cpp  
 // compile with: /W1 /LD  
 struct X  

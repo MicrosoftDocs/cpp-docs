@@ -117,7 +117,7 @@ int main()
  [[In This Article](#top)]  
   
 ##  <a name="callingLambdaExpressions"></a> Calling Lambda Expressions  
- You can call a lambda expression immediately, as shown in the next code snippet. The second snippet shows how to pass a lambda as an argument to Standard Template Library (STL) algorithms such as `find_if`.  
+ You can call a lambda expression immediately, as shown in the next code snippet. The second snippet shows how to pass a lambda as an argument to C++ Standard Library algorithms such as `find_if`.  
   
 ### Example 1  
  This example declares a lambda expression that returns the sum of two integers and calls the expression immediately with the arguments `5` and `4`:  
@@ -188,7 +188,7 @@ The first even number in the list is 42.
 ```  
   
 ### Remarks  
- For more information about the `find_if` function, see [find_if](../Topic/find_if.md). For more information about the STL functions that perform common algorithms, see [\<algorithm>](../standard-library/algorithm.md).  
+ For more information about the `find_if` function, see [find_if](http://msdn.microsoft.com/Library/aa8ff698-e47e-4ff8-8c88-cbda4b102a4a). For more information about the C++ Standard Library functions that perform common algorithms, see [\<algorithm>](../standard-library/algorithm.md).  
   
  [[In This Article](#top)]  
   
@@ -524,7 +524,7 @@ Hello!
  [Lambda Expression Syntax](../cpp/lambda-expression-syntax.md)   
  [auto](../cpp/auto-cpp.md)   
  [function Class](../standard-library/function-class.md)   
- [find_if](../Topic/find_if.md)   
+ [find_if](http://msdn.microsoft.com/Library/aa8ff698-e47e-4ff8-8c88-cbda4b102a4a)   
  [\<algorithm>](../standard-library/algorithm.md)   
  [Function Call](../cpp/function-call-cpp.md)   
  [Templates](../cpp/templates-cpp.md)   

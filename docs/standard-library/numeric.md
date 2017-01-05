@@ -46,9 +46,9 @@ Defines container template functions that perform algorithms for numerical proce
 ```  
   
 ## Remarks  
- The algorithms resemble the Standard Template Library (STL) algorithms, but are part of the C++ Standard Library instead. Nevertheless, they are compatible with the STL and, like the STL algorithms, they can operate on a variety of data structures. These include STL container classes—for example, [vector](../standard-library/vector-class.md) and [list](../standard-library/list-class.md), and program-defined data structures and arrays of elements that satisfy the requirements of a particular algorithm. The algorithms achieve this level of generality by accessing and traversing the elements of a container indirectly through iterators. The algorithms process iterator ranges that are typically specified by their beginning or ending positions. The ranges referred to must be valid in the sense that all pointers in the ranges must be dereferenceable and within the sequences of each range, and the last position must be reachable from the first by means of incrementation.  
+The numeric algorithms resemble the C++ Standard Library algorithms in [\<algorithm>](algorithm.md), and can operate on a variety of data structures. These include standard library container classes—for example, [vector](../standard-library/vector-class.md) and [list](../standard-library/list-class.md), and program-defined data structures and arrays of elements that satisfy the requirements of a particular algorithm. The algorithms achieve this level of generality by accessing and traversing the elements of a container indirectly through iterators. The algorithms process iterator ranges that are typically specified by their beginning or ending positions. The ranges referred to must be valid in the sense that all pointers in the ranges must be dereferenceable and within the sequences of each range, and the last position must be reachable from the first by means of incrementation.  
   
- The algorithms extend the actions that are supported by the operations and member functions of each of the STL containers and enable interaction with different types of container objects at the same time.  
+ The algorithms extend the actions that are supported by the operations and member functions of each of the C++ Standard Library containers and enable interaction with different types of container objects at the same time.  
   
 ### Functions  
   
@@ -63,5 +63,5 @@ Defines container template functions that perform algorithms for numerical proce
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 

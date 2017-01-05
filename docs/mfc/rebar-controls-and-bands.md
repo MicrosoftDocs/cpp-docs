@@ -56,7 +56,7 @@ The main purpose of a rebar control is to act as a container for child windows, 
   
  The following example demonstrates adding a toolbar band (`m_wndToolBar`) to an existing rebar control (`m_wndReBar`). The band is described by initializing the `rbi` structure and then calling the `InsertBand` member function:  
   
- [!code-cpp[NVC_MFCControlLadenDialog#27](../mfc/codesnippet/CPP/rebar-controls-and-bands_1.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#27](../mfc/codesnippet/cpp/rebar-controls-and-bands_1.cpp)]  
   
 ## See Also  
  [Using CReBarCtrl](../mfc/using-crebarctrl.md)   

@@ -52,7 +52,7 @@ class reverse_iterator
  The type that represents the iterator to be adapted to operate in reverse.  
   
 ## Remarks  
- Existing Standard Template Library containers also define `reverse_iterator` and `const_reverse_iterator` types and have member functions `rbegin` and `rend` that return reverse iterators. These iterators have overwrite semantics. The `reverse_iterator` adaptor supplements this functionality as offers insert semantics and can also be used with streams.  
+ Existing C++ Standard Library containers also define `reverse_iterator` and `const_reverse_iterator` types and have member functions `rbegin` and `rend` that return reverse iterators. These iterators have overwrite semantics. The `reverse_iterator` adaptor supplements this functionality as offers insert semantics and can also be used with streams.  
   
  The `reverse_iterator`s that require a bidirectional iterator must not call any of the member functions `operator+=`, `operator+`, `operator-=`, `operator-`, or `operator[]`, which may only be used with random-access iterators.  
   
@@ -983,5 +983,5 @@ int main( )
 ## See Also  
  [\<iterator>](../standard-library/iterator.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 

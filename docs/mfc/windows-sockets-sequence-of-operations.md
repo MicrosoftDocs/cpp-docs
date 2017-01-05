@@ -68,7 +68,7 @@ This article illustrates, side by side, the sequence of operations for a server 
  6. The archive and the socket file are closed when they go out of scope. The socket object's destructor also calls the [Close](../mfc/reference/casyncsocket-class.md#close) member function for the socket object when the object goes out of scope or is deleted.  
   
 ## Additional Notes About the Sequence  
- The sequence of calls shown in the preceding table is for a stream socket. Datagram sockets, which are connectionless, do not require the [CAsyncSocket::Connect](../mfc/reference/casyncsocket-class.md#casyncsocket__connect), [Listen](../mfc/reference/casyncsocket-class.md#listen), and [Accept](../mfc/reference/casyncsocket-class.md#accept) calls (although you can optionally use **Connect**). Instead, if you are using class `CAsyncSocket`, datagram sockets use the `CAsyncSocket::SendTo` and `ReceiveFrom` member functions. (If you use **Connect** with a datagram socket, you use **Send** and **Receive**.) Because `CArchive` does not work with datagrams, do not use `CSocket` with an archive if the socket is a datagram.  
+ The sequence of calls shown in the preceding table is for a stream socket. Datagram sockets, which are connectionless, do not require the [CAsyncSocket::Connect](../mfc/reference/casyncsocket-class.md#connect), [Listen](../mfc/reference/casyncsocket-class.md#listen), and [Accept](../mfc/reference/casyncsocket-class.md#accept) calls (although you can optionally use **Connect**). Instead, if you are using class `CAsyncSocket`, datagram sockets use the `CAsyncSocket::SendTo` and `ReceiveFrom` member functions. (If you use **Connect** with a datagram socket, you use **Send** and **Receive**.) Because `CArchive` does not work with datagrams, do not use `CSocket` with an archive if the socket is a datagram.  
   
  [CSocketFile](../mfc/reference/csocketfile-class.md) does not support all of `CFile`'s functionality; `CFile` members such as `Seek`, which make no sense for a socket communication, are unavailable. Because of this, some default MFC `Serialize` functions are not compatible with `CSocketFile`. This is particularly true of the `CEditView` class. You should not try to serialize `CEditView` data through a `CArchive` object attached to a `CSocketFile` object using `CEditView::SerializeRaw`; use **CEditView::Serialize** instead (not documented). The [SerializeRaw](../mfc/reference/ceditview-class.md#serializeraw) function expects the file object to have functions, such as `Seek`, that `CSocketFile` does not support.  
   
@@ -87,6 +87,6 @@ This article illustrates, side by side, the sequence of operations for a server 
 ## See Also  
  [Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)   
  [CSocket Class](../mfc/reference/csocket-class.md)   
- [CAsyncSocket::Create](../mfc/reference/casyncsocket-class.md#casyncsocket__create)   
- [CAsyncSocket::Close](../mfc/reference/casyncsocket-class.md#casyncsocket__close)
+ [CAsyncSocket::Create](../mfc/reference/casyncsocket-class.md#create)   
+ [CAsyncSocket::Close](../mfc/reference/casyncsocket-class.md#close)
 

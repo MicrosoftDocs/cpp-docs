@@ -62,11 +62,11 @@ This article explains how to use class [CAsyncSocket](../mfc/reference/casyncsoc
   
      For example:  
   
-     [!code-cpp[NVC_MFCSimpleSocket#3](../mfc/codesnippet/CPP/windows-sockets-using-class-casyncsocket_1.cpp)]  
+     [!code-cpp[NVC_MFCSimpleSocket#3](../mfc/codesnippet/cpp/windows-sockets-using-class-casyncsocket_1.cpp)]  
   
      -or-  
   
-     [!code-cpp[NVC_MFCSimpleSocket#4](../mfc/codesnippet/CPP/windows-sockets-using-class-casyncsocket_2.cpp)]  
+     [!code-cpp[NVC_MFCSimpleSocket#4](../mfc/codesnippet/cpp/windows-sockets-using-class-casyncsocket_2.cpp)]  
   
      The first constructor above creates a `CAsyncSocket` object on the stack. The second constructor creates a `CAsyncSocket` on the heap. The first [Create](../mfc/reference/casyncsocket-class.md#create) call above uses the default parameters to create a stream socket. The second **Create** call creates a datagram socket with a specified port and address. (You can use either **Create** version with either construction method.)  
   
@@ -84,11 +84,11 @@ This article explains how to use class [CAsyncSocket](../mfc/reference/casyncsoc
   
      The terms "port" and "socket address" are explained in [Windows Sockets: Ports and Socket Addresses](../mfc/windows-sockets-ports-and-socket-addresses.md).  
   
-2.  If the socket is a client, connect the socket object to a server socket, using [CAsyncSocket::Connect](../mfc/reference/casyncsocket-class.md#casyncsocket__connect).  
+2.  If the socket is a client, connect the socket object to a server socket, using [CAsyncSocket::Connect](../mfc/reference/casyncsocket-class.md#connect).  
   
      -or-  
   
-     If the socket is a server, set the socket to begin listening (with [CAsyncSocket::Listen](../mfc/reference/casyncsocket-class.md#casyncsocket__listen)) for connect attempts from a client. Upon receiving a connection request, accept it with [CAsyncSocket::Accept](../mfc/reference/casyncsocket-class.md#casyncsocket__accept).  
+     If the socket is a server, set the socket to begin listening (with [CAsyncSocket::Listen](../mfc/reference/casyncsocket-class.md#listen)) for connect attempts from a client. Upon receiving a connection request, accept it with [CAsyncSocket::Accept](../mfc/reference/casyncsocket-class.md#accept).  
   
      After accepting a connection, you can perform such tasks as validating passwords.  
   

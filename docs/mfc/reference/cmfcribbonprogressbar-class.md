@@ -49,29 +49,29 @@ class CMFCRibbonProgressBar : public CMFCRibbonBaseElement
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonProgressBar::CMFCRibbonProgressBar](#cmfcribbonprogressbar__cmfcribbonprogressbar)|Constructs and initializes a `CMFCRibbonProgressBar` object.|  
+|[CMFCRibbonProgressBar::CMFCRibbonProgressBar](#cmfcribbonprogressbar)|Constructs and initializes a `CMFCRibbonProgressBar` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonProgressBar::GetPos](#cmfcribbonprogressbar__getpos)|Returns the current progress.|  
-|[CMFCRibbonProgressBar::GetRangeMax](#cmfcribbonprogressbar__getrangemax)|Returns the maximum value of the current range.|  
-|[CMFCRibbonProgressBar::GetRangeMin](#cmfcribbonprogressbar__getrangemin)|Returns the minimum value of the current range.|  
-|[CMFCRibbonProgressBar::GetRegularSize](#cmfcribbonprogressbar__getregularsize)|Returns the regular size of the ribbon element. (Overrides [CMFCRibbonBaseElement::GetRegularSize](../../mfc/reference/cmfcribbonbaseelement-class.md#cmfcribbonbaseelement__getregularsize).)|  
-|[CMFCRibbonProgressBar::IsInfiniteMode](#cmfcribbonprogressbar__isinfinitemode)|Specifies whether the progress bar is working in infinite mode.|  
-|[CMFCRibbonProgressBar::OnDraw](#cmfcribbonprogressbar__ondraw)|Called by the framework to draw the ribbon element. (Overrides [CMFCRibbonBaseElement::OnDraw](../../mfc/reference/cmfcribbonbaseelement-class.md#cmfcribbonbaseelement__ondraw).)|  
-|[CMFCRibbonProgressBar::SetInfiniteMode](#cmfcribbonprogressbar__setinfinitemode)|Sets the progress bar to work in infinite mode.|  
-|[CMFCRibbonProgressBar::SetPos](#cmfcribbonprogressbar__setpos)|Sets the current progress.|  
-|[CMFCRibbonProgressBar::SetRange](#cmfcribbonprogressbar__setrange)|Sets the minimum and maximum values.|  
+|[CMFCRibbonProgressBar::GetPos](#getpos)|Returns the current progress.|  
+|[CMFCRibbonProgressBar::GetRangeMax](#getrangemax)|Returns the maximum value of the current range.|  
+|[CMFCRibbonProgressBar::GetRangeMin](#getrangemin)|Returns the minimum value of the current range.|  
+|[CMFCRibbonProgressBar::GetRegularSize](#getregularsize)|Returns the regular size of the ribbon element. (Overrides [CMFCRibbonBaseElement::GetRegularSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getregularsize).)|  
+|[CMFCRibbonProgressBar::IsInfiniteMode](#isinfinitemode)|Specifies whether the progress bar is working in infinite mode.|  
+|[CMFCRibbonProgressBar::OnDraw](#ondraw)|Called by the framework to draw the ribbon element. (Overrides [CMFCRibbonBaseElement::OnDraw](../../mfc/reference/cmfcribbonbaseelement-class.md#ondraw).)|  
+|[CMFCRibbonProgressBar::SetInfiniteMode](#setinfinitemode)|Sets the progress bar to work in infinite mode.|  
+|[CMFCRibbonProgressBar::SetPos](#setpos)|Sets the current progress.|  
+|[CMFCRibbonProgressBar::SetRange](#setrange)|Sets the minimum and maximum values.|  
   
 ## Remarks  
  A `CMFCRibbonProgressBar` can operate in two modes: regular and infinite. In regular mode, the progress bar is filled from left to right and stops when it reaches the maximum value. In infinite mode, the progress bar is repeatedly filled from the minimum value to the maximum value. You might use infinite mode to indicate that an operation is ongoing, but that the completion time is unknown.  
   
 ## Example  
- The following example demonstrates how to use various methods in the `CMFCRibbonProgressBar` class. The example shows how to set the progress bar to work in infinite mode (where the completion time of an operation is unknown), set the minimum and maximum values for the progress bar, and set the current position of the progress bar. This code snippet is part of the [MS Office 2007 Demo sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to use various methods in the `CMFCRibbonProgressBar` class. The example shows how to set the progress bar to work in infinite mode (where the completion time of an operation is unknown), set the minimum and maximum values for the progress bar, and set the current position of the progress bar. This code snippet is part of the [MS Office 2007 Demo sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_MSOffice2007Demo#11](../../mfc/reference/codesnippet/CPP/cmfcribbonprogressbar-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_MSOffice2007Demo#11](../../mfc/reference/codesnippet/cpp/cmfcribbonprogressbar-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -83,7 +83,7 @@ class CMFCRibbonProgressBar : public CMFCRibbonBaseElement
 ## Requirements  
  **Header:** afxRibbonProgressBar.h  
   
-##  <a name="cmfcribbonprogressbar__cmfcribbonprogressbar"></a>  CMFCRibbonProgressBar::CMFCRibbonProgressBar  
+##  <a name="cmfcribbonprogressbar"></a>  CMFCRibbonProgressBar::CMFCRibbonProgressBar  
  Constructs and initializes a [CMFCRibbonProgressBar](../../mfc/reference/cmfcribbonprogressbar-class.md) object.  
   
 ```  
@@ -106,7 +106,7 @@ CMFCRibbonProgressBar(
  [in] `nHeight`  
  Specifies the height, in pixels, of the ribbon progress bar.  
   
-##  <a name="cmfcribbonprogressbar__getpos"></a>  CMFCRibbonProgressBar::GetPos  
+##  <a name="getpos"></a>  CMFCRibbonProgressBar::GetPos  
  Returns the current position of the progress bar.  
   
 ```  
@@ -119,9 +119,9 @@ int GetPos () const;
  A value representing the current position of the progress bar.  
   
 ### Remarks  
- The range being set must be within the range specified by the [CMFCRibbonProgressBar::SetRange](#cmfcribbonprogressbar__setrange) method.  
+ The range being set must be within the range specified by the [CMFCRibbonProgressBar::SetRange](#setrange) method.  
   
-##  <a name="cmfcribbonprogressbar__getrangemax"></a>  CMFCRibbonProgressBar::GetRangeMax  
+##  <a name="getrangemax"></a>  CMFCRibbonProgressBar::GetRangeMax  
  Returns the progress bar's current maximum value.  
   
 ```  
@@ -135,7 +135,7 @@ int GetRangeMax() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonprogressbar__getrangemin"></a>  CMFCRibbonProgressBar::GetRangeMin  
+##  <a name="getrangemin"></a>  CMFCRibbonProgressBar::GetRangeMin  
  Returns the progress bar's current minimum range value.  
   
 ```  
@@ -147,7 +147,7 @@ int GetRangeMin() const;
 ### Return Value  
  The minimum value of the current range.  
   
-##  <a name="cmfcribbonprogressbar__getregularsize"></a>  CMFCRibbonProgressBar::GetRegularSize  
+##  <a name="getregularsize"></a>  CMFCRibbonProgressBar::GetRegularSize  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -161,7 +161,7 @@ virtual CSize GetRegularSize(CDC* pDC);
   
 ### Remarks  
   
-##  <a name="cmfcribbonprogressbar__isinfinitemode"></a>  CMFCRibbonProgressBar::IsInfiniteMode  
+##  <a name="isinfinitemode"></a>  CMFCRibbonProgressBar::IsInfiniteMode  
  Specifies whether the progress bar is working in infinite mode.  
   
 ```  
@@ -176,7 +176,7 @@ BOOL IsInfiniteMode() const;
 ### Remarks  
  In infinite mode, the progress bar fills repeatedly from the minimum value to the maximum value. You might use infinite mode to indicate that an operation is ongoing, but that the completion time is unknown.  
   
-##  <a name="cmfcribbonprogressbar__ondraw"></a>  CMFCRibbonProgressBar::OnDraw  
+##  <a name="ondraw"></a>  CMFCRibbonProgressBar::OnDraw  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -188,7 +188,7 @@ virtual void OnDraw(CDC* pDC);
   
 ### Remarks  
   
-##  <a name="cmfcribbonprogressbar__setinfinitemode"></a>  CMFCRibbonProgressBar::SetInfiniteMode  
+##  <a name="setinfinitemode"></a>  CMFCRibbonProgressBar::SetInfiniteMode  
  Sets the progress bar to work in infinite mode.  
   
 ```  
@@ -202,7 +202,7 @@ void SetInfiniteMode(BOOL bSet = TRUE);
 ### Remarks  
  Usually, if the progress bar is in infinite mode, it is telling the user that an operation is ongoing, but that the completion time is unknown. Thus, the progress bar fills repeatedly from the minimum value to the maximum value.  
   
-##  <a name="cmfcribbonprogressbar__setpos"></a>  CMFCRibbonProgressBar::SetPos  
+##  <a name="setpos"></a>  CMFCRibbonProgressBar::SetPos  
  Sets the current position of the progress bar.  
   
 ```  
@@ -219,9 +219,9 @@ void SetPos(
  Specifies whether the progress bar should be redrawn.  
   
 ### Remarks  
- The range being set must be within the range specified by the [CMFCRibbonProgressBar::SetRange](#cmfcribbonprogressbar__setrange) method.  
+ The range being set must be within the range specified by the [CMFCRibbonProgressBar::SetRange](#setrange) method.  
   
-##  <a name="cmfcribbonprogressbar__setrange"></a>  CMFCRibbonProgressBar::SetRange  
+##  <a name="setrange"></a>  CMFCRibbonProgressBar::SetRange  
  Sets the minimum and maximum values for the progress bar.  
   
 ```  

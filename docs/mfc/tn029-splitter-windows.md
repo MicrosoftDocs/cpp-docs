@@ -64,7 +64,7 @@ This note describes the MFC [CSplitterWnd Class](../mfc/reference/csplitterwnd-c
 -   2 rows x 2 columns : for grid or table oriented data  
   
 ## Splitter Examples  
- Many of the MFC sample programs use splitter windows directly or indirectly. The MFC General sample [VIEWEX](../top/visual-cpp-samples.md) illustrates several uses of static splitters, including how to place a splitter in a splitter.  
+ Many of the MFC sample programs use splitter windows directly or indirectly. The MFC General sample [VIEWEX](../visual-cpp-samples.md) illustrates several uses of static splitters, including how to place a splitter in a splitter.  
   
  You can also use ClassWizard to create a new multiple document interface (MDI) Child frame window class that contains a splitter window. For more information on splitter windows, see [Multiple Document Types, Views, and Frame Windows](../mfc/multiple-document-types-views-and-frame-windows.md).  
   
@@ -77,7 +77,7 @@ This note describes the MFC [CSplitterWnd Class](../mfc/reference/csplitterwnd-c
  Pane:  
  An application-specific window that a `CSplitterWnd` manages. A pane is usually an object that is derived from the [CView Class](../mfc/reference/cview-class.md), but can be any [CWnd](../mfc/reference/cwnd-class.md) object that has the appropriate child window ID.  
   
- To use a `CWnd`-derived object, pass the `RUNTIME_CLASS` of the object to the `CreateView` function as you would if you were using a `CView`-derived class. Your class must use `DECLARE_DYNCREATE` and `IMPLEMENT_DYNCREATE` because the framework uses dynamic creation at runtime. Although there is a lot of code in `CSplitterWnd` that is specific to the `CView` class, [CObject::IsKindOf](../mfc/reference/cobject-class.md#cobject__iskindof) is always used before those actions are performed.  
+ To use a `CWnd`-derived object, pass the `RUNTIME_CLASS` of the object to the `CreateView` function as you would if you were using a `CView`-derived class. Your class must use `DECLARE_DYNCREATE` and `IMPLEMENT_DYNCREATE` because the framework uses dynamic creation at runtime. Although there is a lot of code in `CSplitterWnd` that is specific to the `CView` class, [CObject::IsKindOf](../mfc/reference/cobject-class.md#iskindof) is always used before those actions are performed.  
   
  Splitter Bar:  
  A control that is placed between rows and columns of panes. It may be used to adjust the sizes of rows or columns of panes.  
@@ -108,7 +108,7 @@ This note describes the MFC [CSplitterWnd Class](../mfc/reference/csplitterwnd-c
   
  For a static splitter window, the initial minimum row height and column width is 0. For a dynamic splitter window, the initial minimum row height and column width are set by the `sizeMin` parameter of the `CSplitterWnd::Create` function.  
   
- You can change these minimum sizes by using the [CSplitterWnd::SetRowInfo](../mfc/reference/csplitterwnd-class.md#csplitterwnd__setrowinfo) and [CSplitterWnd::SetColumnInfo](../mfc/reference/csplitterwnd-class.md#csplitterwnd__setcolumninfo) functions.  
+ You can change these minimum sizes by using the [CSplitterWnd::SetRowInfo](../mfc/reference/csplitterwnd-class.md#setrowinfo) and [CSplitterWnd::SetColumnInfo](../mfc/reference/csplitterwnd-class.md#setcolumninfo) functions.  
   
 ## Actual vs. Ideal Sizes  
  The layout of the panes in the splitter window depends on the size of the frame that contains them. When a user resizes the containing frame, the `CSplitterWnd` repositions and resizes the panes so that they fit as well as possible.  

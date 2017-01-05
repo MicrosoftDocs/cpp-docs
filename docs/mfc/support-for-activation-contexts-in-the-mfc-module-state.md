@@ -55,15 +55,15 @@ MFC creates an activation context using a manifest resource provided by the user
   
  Although the activation context state can be modified using the processes described under [Using the Activation Context API](http://msdn.microsoft.com/library/aa376620), using the MFC activation context mechanism can be useful when developing DLL-based plug-in architectures where it is not easy (or not possible) to manually switch activation state before and after individual calls to external plug-ins.  
   
- The activation context is created in [AfxWinInit](../mfc/reference/application-information-and-management.md#afxwininit). It is destroyed in the `AFX_MODULE_STATE` destructor. An activation context handle is kept in `AFX_MODULE_STATE`. (`AFX_MODULE_STATE` is described in [AfxGetStaticModuleState](../Topic/AfxGetStaticModuleState.md).)  
+ The activation context is created in [AfxWinInit](../mfc/reference/application-information-and-management.md#afxwininit). It is destroyed in the `AFX_MODULE_STATE` destructor. An activation context handle is kept in `AFX_MODULE_STATE`. (`AFX_MODULE_STATE` is described in [AfxGetStaticModuleState](http://msdn.microsoft.com/library/8b6c7c95-9d57-4337-9378-9b65e60d5c3b).)  
   
- The [AFX_MANAGE_STATE](../Topic/AFX_MANAGE_STATE.md) macro activates and deactivates the activation context. `AFX_MANAGE_STATE` is enabled for static MFC libraries, as well as MFC DLLs, to allow MFC code to execute in the proper activation context selected by the User DLL.  
+ The [AFX_MANAGE_STATE](http://msdn.microsoft.com/library/620cb840-4227-4a75-b36d-f7d507f44606) macro activates and deactivates the activation context. `AFX_MANAGE_STATE` is enabled for static MFC libraries, as well as MFC DLLs, to allow MFC code to execute in the proper activation context selected by the User DLL.  
   
 ## See Also  
  [Activation Contexts](http://msdn.microsoft.com/library/aa374153)   
  [Application Manifests](http://msdn.microsoft.com/library/aa374191)   
  [Assembly Manifests](http://msdn.microsoft.com/library/aa374219)   
  [AfxWinInit](../mfc/reference/application-information-and-management.md#afxwininit)   
- [AfxGetStaticModuleState](../Topic/AfxGetStaticModuleState.md)   
- [AFX_MANAGE_STATE](../Topic/AFX_MANAGE_STATE.md)
+ [AfxGetStaticModuleState](http://msdn.microsoft.com/library/8b6c7c95-9d57-4337-9378-9b65e60d5c3b)   
+ [AFX_MANAGE_STATE](http://msdn.microsoft.com/library/620cb840-4227-4a75-b36d-f7d507f44606)
 

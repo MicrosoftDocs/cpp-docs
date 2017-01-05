@@ -37,9 +37,9 @@ translation.priority.ht:
 # Compiler Error C3628
 'base class' : managed or WinRTclasses only support public inheritance  
   
- An attempt was made to use a managed or WinRT class as a [private](../../cpp/private-cpp.md) or [protected](../../cpp/protected-cpp.md) base class. A managed or WinRT class can only be used as a base class with [public](../../cpp/public-cpp.md) access.  
+An attempt was made to use a managed or WinRT class as a [private](../../cpp/private-cpp.md) or [protected](../../cpp/protected-cpp.md) base class. A managed or WinRT class can only be used as a base class with [public](../../cpp/public-cpp.md) access.  
   
- The following sample generates C3628 and shows how to fix it:  
+The following sample generates C3628 and shows how to fix it:  
   
 ```  
 // C3628a.cpp  
@@ -56,22 +56,3 @@ ref class D : private B {   // C3628
 int main() {  
 }  
 ```  
-  
- The following sample generates C3628 and shows how to fix it:  
-  
-```  
-// C3628b.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-__gc class B {  
-};  
-  
-__gc class D : B {   // C3628, private is the default access level  
-  
-// The following line resolves the error.  
-// __gc class D : public B {  
-};  
-  
-int main() {  
-}  
-```

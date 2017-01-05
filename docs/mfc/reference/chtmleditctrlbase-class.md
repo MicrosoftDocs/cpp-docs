@@ -49,120 +49,120 @@ template <class T> class CHtmlEditCtrlBase
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHtmlEditCtrlBase::AddToGlyphTable](#chtmleditctrlbase__addtoglyphtable)|Adds an entry to the glyph table, which specifies images to display for specific tags in design mode.|  
-|[CHtmlEditCtrlBase::Bold](#chtmleditctrlbase__bold)|Toggles the bold state of the selected text.|  
-|[CHtmlEditCtrlBase::Button](#chtmleditctrlbase__button)|Overwrites a button control on the current selection.|  
-|[CHtmlEditCtrlBase::CheckBox](#chtmleditctrlbase__checkbox)|Overwrites a check box control on the current selection.|  
-|[CHtmlEditCtrlBase::ClearSelection](#chtmleditctrlbase__clearselection)|Clears the current selection.|  
-|[CHtmlEditCtrlBase::Copy](#chtmleditctrlbase__copy)|Copies the current selection to the clipboard.|  
-|[CHtmlEditCtrlBase::Cut](#chtmleditctrlbase__cut)|Copies the current selection to the clipboard and then deletes it.|  
-|[CHtmlEditCtrlBase::Delete](#chtmleditctrlbase__delete)|Deletes the current selection.|  
-|[CHtmlEditCtrlBase::DropDownBox](#chtmleditctrlbase__dropdownbox)|Overwrites a drop-down selection control on the current selection.|  
-|[CHtmlEditCtrlBase::EmptyGlyphTable](#chtmleditctrlbase__emptyglyphtable)|Removes all entries from the glyph table, which hides all images displayed for tags in design mode.|  
-|[CHtmlEditCtrlBase::ExecCommand](#chtmleditctrlbase__execcommand)|Executes a command.|  
-|[CHtmlEditCtrlBase::Font](#chtmleditctrlbase__font)|Opens a font dialog box to enable the user to change the text color, font, and font size of the current selection.|  
-|[CHtmlEditCtrlBase::GetAbsolutePosition](#chtmleditctrlbase__getabsoluteposition)|Returns whether an element's position property is "absolute."|  
-|[CHtmlEditCtrlBase::GetBackColor](#chtmleditctrlbase__getbackcolor)|Retrieves the background color of the current selection.|  
-|[CHtmlEditCtrlBase::GetBlockFormat](#chtmleditctrlbase__getblockformat)|Retrieves the current block format tag.|  
-|[CHtmlEditCtrlBase::GetBlockFormatNames](#chtmleditctrlbase__getblockformatnames)|Retrieves the strings corresponding to the available block format tags.|  
-|[CHtmlEditCtrlBase::GetBookMark](#chtmleditctrlbase__getbookmark)|Retrieves the name of a bookmark anchor.|  
-|[CHtmlEditCtrlBase::GetDocument](#chtmleditctrlbase__getdocument)|Retrieves the document object.|  
-|[CHtmlEditCtrlBase::GetDocumentHTML](#chtmleditctrlbase__getdocumenthtml)|Retrieves the HTML of the current document.|  
-|[CHtmlEditCtrlBase::GetDocumentTitle](#chtmleditctrlbase__getdocumenttitle)|Retrieves the document's title.|  
-|[CHtmlEditCtrlBase::GetEvent](#chtmleditctrlbase__getevent)|Retrieves an interface pointer to the event object that contains information relevant to the most recent event.|  
-|[CHtmlEditCtrlBase::GetEventSrcElement](#chtmleditctrlbase__geteventsrcelement)|Retrieves the object that fired the event.|  
-|[CHtmlEditCtrlBase::GetFontFace](#chtmleditctrlbase__getfontface)|Retrieves the font name for the current selection.|  
-|[CHtmlEditCtrlBase::GetFontSize](#chtmleditctrlbase__getfontsize)|Retrieves the font size for the current selection.|  
-|[CHtmlEditCtrlBase::GetForeColor](#chtmleditctrlbase__getforecolor)|Retrieves the foreground (text) color of the current selection.|  
-|[CHtmlEditCtrlBase::GetFrameZone](#chtmleditctrlbase__getframezone)|Returns the security zone of the current page in the web browser.|  
-|[CHtmlEditCtrlBase::GetIsDirty](#chtmleditctrlbase__getisdirty)|Indicates whether the HTML document has changed.|  
-|[CHtmlEditCtrlBase::GetShowAlignedSiteTags](#chtmleditctrlbase__getshowalignedsitetags)|Returns whether a glyph is displayed for all elements that have a **styleFloat** property.|  
-|[CHtmlEditCtrlBase::GetShowAllTags](#chtmleditctrlbase__getshowalltags)|Returns whether the WebBrowser displays glyphs to show the location of all tags in a document.|  
-|[CHtmlEditCtrlBase::GetShowAreaTags](#chtmleditctrlbase__getshowareatags)|Retrieves whether the WebBrowser displays a glyph for area tags.|  
-|[CHtmlEditCtrlBase::GetShowBRTags](#chtmleditctrlbase__getshowbrtags)|Retrieves whether the WebBrowser displays a glyph for br tags.|  
-|[CHtmlEditCtrlBase::GetShowCommentTags](#chtmleditctrlbase__getshowcommenttags)|Retrieves whether the WebBrowser displays a glyph for comment tags.|  
-|[CHtmlEditCtrlBase::GetShowMiscTags](#chtmleditctrlbase__getshowmisctags)|Retrieves whether the WebBrowser displays all the tags shown in Microsoft Internet Explorer 4.0.|  
-|[CHtmlEditCtrlBase::GetShowScriptTags](#chtmleditctrlbase__getshowscripttags)|Retrieves whether the WebBrowser displays a glyph for all the script tags.|  
-|[CHtmlEditCtrlBase::GetShowStyleTags](#chtmleditctrlbase__getshowstyletags)|Retrieves whether the WebBrowser displays a glyph for all the style tags.|  
-|[CHtmlEditCtrlBase::GetShowUnknownTags](#chtmleditctrlbase__getshowunknowntags)|Retrieves whether the WebBrowser displays a glyph for all unknown tags.|  
-|[CHtmlEditCtrlBase::HorizontalLine](#chtmleditctrlbase__horizontalline)|Overwrites a horizontal line on the current selection.|  
-|[CHtmlEditCtrlBase::HyperLink](#chtmleditctrlbase__hyperlink)|Inserts a hyperlink on the current selection.|  
-|[CHtmlEditCtrlBase::IE50Paste](#chtmleditctrlbase__ie50paste)|Performs a paste operation compatible with Microsoft Internet Explorer 5.|  
-|[CHtmlEditCtrlBase::Iframe](#chtmleditctrlbase__iframe)|Overwrites an inline frame on the current selection.|  
-|[CHtmlEditCtrlBase::Image](#chtmleditctrlbase__image)|Overwrites an image on the current selection.|  
-|[CHtmlEditCtrlBase::Indent](#chtmleditctrlbase__indent)|Increases the indent of the selected text by one indentation increment.|  
-|[CHtmlEditCtrlBase::InsFieldSet](#chtmleditctrlbase__insfieldset)|Overwrites a box on the current selection.|  
-|[CHtmlEditCtrlBase::InsInputButton](#chtmleditctrlbase__insinputbutton)|Overwrites a button control on the current selection.|  
-|[CHtmlEditCtrlBase::InsInputHidden](#chtmleditctrlbase__insinputhidden)|Inserts a hidden control on the current selection.|  
-|[CHtmlEditCtrlBase::InsInputImage](#chtmleditctrlbase__insinputimage)|Overwrites an image control on the current selection.|  
-|[CHtmlEditCtrlBase::InsInputPassword](#chtmleditctrlbase__insinputpassword)|Overwrites a password control on the current selection.|  
-|[CHtmlEditCtrlBase::InsInputReset](#chtmleditctrlbase__insinputreset)|Overwrites a reset control on the current selection.|  
-|[CHtmlEditCtrlBase::InsInputSubmit](#chtmleditctrlbase__insinputsubmit)|Overwrites a submit control on the current selection.|  
-|[CHtmlEditCtrlBase::InsInputUpload](#chtmleditctrlbase__insinputupload)|Overwrites a file upload control on the current selection.|  
-|[CHtmlEditCtrlBase::Is1DElement](#chtmleditctrlbase__is1delement)|Determines if an element is statically positioned.|  
-|[CHtmlEditCtrlBase::Is2DElement](#chtmleditctrlbase__is2delement)|Determines if an element is absolutely positioned.|  
-|[CHtmlEditCtrlBase::Italic](#chtmleditctrlbase__italic)|Toggles the current selection between italic and nonitalic.|  
-|[CHtmlEditCtrlBase::JustifyCenter](#chtmleditctrlbase__justifycenter)|Centers the format block in which the current selection is located.|  
-|[CHtmlEditCtrlBase::JustifyLeft](#chtmleditctrlbase__justifyleft)|Left-justifies the format block in which the current selection is located.|  
-|[CHtmlEditCtrlBase::JustifyRight](#chtmleditctrlbase__justifyright)|Right-justifies the format block in which the current selection is located.|  
-|[CHtmlEditCtrlBase::ListBox](#chtmleditctrlbase__listbox)|Overwrites a list box selection control on the current selection.|  
-|[CHtmlEditCtrlBase::Marquee](#chtmleditctrlbase__marquee)|Overwrites an empty marquee on the current selection.|  
-|[CHtmlEditCtrlBase::NewDocument](#chtmleditctrlbase__newdocument)|Creates a new document.|  
-|[CHtmlEditCtrlBase::OrderList](#chtmleditctrlbase__orderlist)|Toggles the current selection between an ordered list and a normal format block.|  
-|[CHtmlEditCtrlBase::Outdent](#chtmleditctrlbase__outdent)|Decreases by one increment the indentation of the format block in which the current selection is located.|  
-|[CHtmlEditCtrlBase::Paragraph](#chtmleditctrlbase__paragraph)|Overwrites a line break on the current selection.|  
-|[CHtmlEditCtrlBase::Paste](#chtmleditctrlbase__paste)|Overwrites the contents of the clipboard on the current selection.|  
-|[CHtmlEditCtrlBase::PrintDocument](#chtmleditctrlbase__printdocument)|Prints the current document.|  
-|[CHtmlEditCtrlBase::PrintPreview](#chtmleditctrlbase__printpreview)|Opens the Print Preview window for the current document using either the default print preview template or a custom template.|  
-|[CHtmlEditCtrlBase::QueryStatus](#chtmleditctrlbase__querystatus)|Call this method to query the status of commands.|  
-|[CHtmlEditCtrlBase::RadioButton](#chtmleditctrlbase__radiobutton)|Overwrites a radio control on the current selection.|  
-|[CHtmlEditCtrlBase::RefreshDocument](#chtmleditctrlbase__refreshdocument)|Refreshes the current document.|  
-|[CHtmlEditCtrlBase::RemoveFormat](#chtmleditctrlbase__removeformat)|Removes the formatting tags from the current selection.|  
-|[CHtmlEditCtrlBase::SaveAs](#chtmleditctrlbase__saveas)|Saves the current Web page to a file.|  
-|[CHtmlEditCtrlBase::SelectAll](#chtmleditctrlbase__selectall)|Selects the entire document.|  
-|[CHtmlEditCtrlBase::Set2DPosition](#chtmleditctrlbase__set2dposition)|Allows absolutely positioned elements to be moved by dragging.|  
-|[CHtmlEditCtrlBase::SetAbsolutePosition](#chtmleditctrlbase__setabsoluteposition)|Sets an element's position property to "absolute" or "static."|  
-|[CHtmlEditCtrlBase::SetAtomicSelection](#chtmleditctrlbase__setatomicselection)|Set atomic selection mode.|  
-|[CHtmlEditCtrlBase::SetAutoURLDetectMode](#chtmleditctrlbase__setautourldetectmode)|Turns automatic URL detection on and off.|  
-|[CHtmlEditCtrlBase::SetBackColor](#chtmleditctrlbase__setbackcolor)|Sets the background color of the current selection.|  
-|[CHtmlEditCtrlBase::SetBlockFormat](#chtmleditctrlbase__setblockformat)|Sets the current block format tag.|  
-|[CHtmlEditCtrlBase::SetBookMark](#chtmleditctrlbase__setbookmark)|Creates a bookmark anchor for the current selection or insertion point.|  
-|[CHtmlEditCtrlBase::SetCSSEditingLevel](#chtmleditctrlbase__setcsseditinglevel)|Selects which CSS level (CSS1 or CSS2) the editor will support, if any.|  
-|[CHtmlEditCtrlBase::SetDefaultComposeSettings](#chtmleditctrlbase__setdefaultcomposesettings)|Call this method to set the default compose settings.|  
-|[CHtmlEditCtrlBase::SetDesignMode](#chtmleditctrlbase__setdesignmode)|Set design mode.|  
-|[CHtmlEditCtrlBase::SetDisableEditFocusUI](#chtmleditctrlbase__setdisableeditfocusui)|Disables the hatched border and handles around an element that has edit focus.|  
-|[CHtmlEditCtrlBase::SetDocumentHTML](#chtmleditctrlbase__setdocumenthtml)|Sets the HTML of the current document.|  
-|[CHtmlEditCtrlBase::SetFontFace](#chtmleditctrlbase__setfontface)|Sets the font for the current selection.|  
-|[CHtmlEditCtrlBase::SetFontSize](#chtmleditctrlbase__setfontsize)|Sets the font size for the current selection.|  
-|[CHtmlEditCtrlBase::SetForeColor](#chtmleditctrlbase__setforecolor)|Sets the foreground (text) color of the current selection.|  
-|[CHtmlEditCtrlBase::SetIE5PasteMode](#chtmleditctrlbase__setie5pastemode)|Sets the paste operation to be compatible with Microsoft Internet Explorer 5.|  
-|[CHtmlEditCtrlBase::SetLiveResize](#chtmleditctrlbase__setliveresize)|Causes the WebBrowser to update an element's appearance continuously during a resizing or moving operation.|  
-|[CHtmlEditCtrlBase::SetMultiSelect](#chtmleditctrlbase__setmultiselect)|Enables multiple selection.|  
-|[CHtmlEditCtrlBase::SetOverrideCursor](#chtmleditctrlbase__setoverridecursor)|Commands the WebBrowser never to change the mouse pointer.|  
-|[CHtmlEditCtrlBase::SetOverwriteMode](#chtmleditctrlbase__setoverwritemode)|Toggles the text-entry mode between insert and overwrite.|  
-|[CHtmlEditCtrlBase::SetRespectVisInDesign](#chtmleditctrlbase__setrespectvisindesign)|Hides invisible elements in design mode.|  
-|[CHtmlEditCtrlBase::SetShowAlignedSiteTags](#chtmleditctrlbase__setshowalignedsitetags)|Displays a glyph for all elements that have a **styleFloat** property.|  
-|[CHtmlEditCtrlBase::SetShowAllTags](#chtmleditctrlbase__setshowalltags)|Displays glyphs to show the location of all tags in a document.|  
-|[CHtmlEditCtrlBase::SetShowAreaTags](#chtmleditctrlbase__setshowareatags)|Displays a glyph for all the area tags.|  
-|[CHtmlEditCtrlBase::SetShowBRTags](#chtmleditctrlbase__setshowbrtags)|Displays a glyph for all the br tags.|  
-|[CHtmlEditCtrlBase::SetShowCommentTags](#chtmleditctrlbase__setshowcommenttags)|Displays a glyph for all the comment tags.|  
-|[CHtmlEditCtrlBase::SetShowMiscTags](#chtmleditctrlbase__setshowmisctags)|Displays all the tags shown in Microsoft Internet Explorer 4.0.|  
-|[CHtmlEditCtrlBase::SetShowScriptTags](#chtmleditctrlbase__setshowscripttags)|Displays a glyph for all the script tags.|  
-|[CHtmlEditCtrlBase::SetShowStyleTags](#chtmleditctrlbase__setshowstyletags)|Displays a glyph for all the style tags.|  
-|[CHtmlEditCtrlBase::SetShowUnknownTags](#chtmleditctrlbase__setshowunknowntags)|Displays a glyph for all the unknown tags.|  
-|[CHtmlEditCtrlBase::TextArea](#chtmleditctrlbase__textarea)|Overwrites a multiline text input control on the current selection.|  
-|[CHtmlEditCtrlBase::TextBox](#chtmleditctrlbase__textbox)|Overwrites a text control on the current selection.|  
-|[CHtmlEditCtrlBase::UnBookmark](#chtmleditctrlbase__unbookmark)|Removes any bookmark from the current selection.|  
-|[CHtmlEditCtrlBase::Underline](#chtmleditctrlbase__underline)|Toggles the current selection between underlined and not underlined.|  
-|[CHtmlEditCtrlBase::Unlink](#chtmleditctrlbase__unlink)|Removes any hyperlink from the current selection.|  
-|[CHtmlEditCtrlBase::UnorderList](#chtmleditctrlbase__unorderlist)|Toggles the current selection between an ordered list and a normal format block.|  
+|[CHtmlEditCtrlBase::AddToGlyphTable](#addtoglyphtable)|Adds an entry to the glyph table, which specifies images to display for specific tags in design mode.|  
+|[CHtmlEditCtrlBase::Bold](#bold)|Toggles the bold state of the selected text.|  
+|[CHtmlEditCtrlBase::Button](#button)|Overwrites a button control on the current selection.|  
+|[CHtmlEditCtrlBase::CheckBox](#checkbox)|Overwrites a check box control on the current selection.|  
+|[CHtmlEditCtrlBase::ClearSelection](#clearselection)|Clears the current selection.|  
+|[CHtmlEditCtrlBase::Copy](#copy)|Copies the current selection to the clipboard.|  
+|[CHtmlEditCtrlBase::Cut](#cut)|Copies the current selection to the clipboard and then deletes it.|  
+|[CHtmlEditCtrlBase::Delete](#delete)|Deletes the current selection.|  
+|[CHtmlEditCtrlBase::DropDownBox](#dropdownbox)|Overwrites a drop-down selection control on the current selection.|  
+|[CHtmlEditCtrlBase::EmptyGlyphTable](#emptyglyphtable)|Removes all entries from the glyph table, which hides all images displayed for tags in design mode.|  
+|[CHtmlEditCtrlBase::ExecCommand](#execcommand)|Executes a command.|  
+|[CHtmlEditCtrlBase::Font](#font)|Opens a font dialog box to enable the user to change the text color, font, and font size of the current selection.|  
+|[CHtmlEditCtrlBase::GetAbsolutePosition](#getabsoluteposition)|Returns whether an element's position property is "absolute."|  
+|[CHtmlEditCtrlBase::GetBackColor](#getbackcolor)|Retrieves the background color of the current selection.|  
+|[CHtmlEditCtrlBase::GetBlockFormat](#getblockformat)|Retrieves the current block format tag.|  
+|[CHtmlEditCtrlBase::GetBlockFormatNames](#getblockformatnames)|Retrieves the strings corresponding to the available block format tags.|  
+|[CHtmlEditCtrlBase::GetBookMark](#getbookmark)|Retrieves the name of a bookmark anchor.|  
+|[CHtmlEditCtrlBase::GetDocument](#getdocument)|Retrieves the document object.|  
+|[CHtmlEditCtrlBase::GetDocumentHTML](#getdocumenthtml)|Retrieves the HTML of the current document.|  
+|[CHtmlEditCtrlBase::GetDocumentTitle](#getdocumenttitle)|Retrieves the document's title.|  
+|[CHtmlEditCtrlBase::GetEvent](#getevent)|Retrieves an interface pointer to the event object that contains information relevant to the most recent event.|  
+|[CHtmlEditCtrlBase::GetEventSrcElement](#geteventsrcelement)|Retrieves the object that fired the event.|  
+|[CHtmlEditCtrlBase::GetFontFace](#getfontface)|Retrieves the font name for the current selection.|  
+|[CHtmlEditCtrlBase::GetFontSize](#getfontsize)|Retrieves the font size for the current selection.|  
+|[CHtmlEditCtrlBase::GetForeColor](#getforecolor)|Retrieves the foreground (text) color of the current selection.|  
+|[CHtmlEditCtrlBase::GetFrameZone](#getframezone)|Returns the security zone of the current page in the web browser.|  
+|[CHtmlEditCtrlBase::GetIsDirty](#getisdirty)|Indicates whether the HTML document has changed.|  
+|[CHtmlEditCtrlBase::GetShowAlignedSiteTags](#getshowalignedsitetags)|Returns whether a glyph is displayed for all elements that have a **styleFloat** property.|  
+|[CHtmlEditCtrlBase::GetShowAllTags](#getshowalltags)|Returns whether the WebBrowser displays glyphs to show the location of all tags in a document.|  
+|[CHtmlEditCtrlBase::GetShowAreaTags](#getshowareatags)|Retrieves whether the WebBrowser displays a glyph for area tags.|  
+|[CHtmlEditCtrlBase::GetShowBRTags](#getshowbrtags)|Retrieves whether the WebBrowser displays a glyph for br tags.|  
+|[CHtmlEditCtrlBase::GetShowCommentTags](#getshowcommenttags)|Retrieves whether the WebBrowser displays a glyph for comment tags.|  
+|[CHtmlEditCtrlBase::GetShowMiscTags](#getshowmisctags)|Retrieves whether the WebBrowser displays all the tags shown in Microsoft Internet Explorer 4.0.|  
+|[CHtmlEditCtrlBase::GetShowScriptTags](#getshowscripttags)|Retrieves whether the WebBrowser displays a glyph for all the script tags.|  
+|[CHtmlEditCtrlBase::GetShowStyleTags](#getshowstyletags)|Retrieves whether the WebBrowser displays a glyph for all the style tags.|  
+|[CHtmlEditCtrlBase::GetShowUnknownTags](#getshowunknowntags)|Retrieves whether the WebBrowser displays a glyph for all unknown tags.|  
+|[CHtmlEditCtrlBase::HorizontalLine](#horizontalline)|Overwrites a horizontal line on the current selection.|  
+|[CHtmlEditCtrlBase::HyperLink](#hyperlink)|Inserts a hyperlink on the current selection.|  
+|[CHtmlEditCtrlBase::IE50Paste](#ie50paste)|Performs a paste operation compatible with Microsoft Internet Explorer 5.|  
+|[CHtmlEditCtrlBase::Iframe](#iframe)|Overwrites an inline frame on the current selection.|  
+|[CHtmlEditCtrlBase::Image](#image)|Overwrites an image on the current selection.|  
+|[CHtmlEditCtrlBase::Indent](#indent)|Increases the indent of the selected text by one indentation increment.|  
+|[CHtmlEditCtrlBase::InsFieldSet](#insfieldset)|Overwrites a box on the current selection.|  
+|[CHtmlEditCtrlBase::InsInputButton](#insinputbutton)|Overwrites a button control on the current selection.|  
+|[CHtmlEditCtrlBase::InsInputHidden](#insinputhidden)|Inserts a hidden control on the current selection.|  
+|[CHtmlEditCtrlBase::InsInputImage](#insinputimage)|Overwrites an image control on the current selection.|  
+|[CHtmlEditCtrlBase::InsInputPassword](#insinputpassword)|Overwrites a password control on the current selection.|  
+|[CHtmlEditCtrlBase::InsInputReset](#insinputreset)|Overwrites a reset control on the current selection.|  
+|[CHtmlEditCtrlBase::InsInputSubmit](#insinputsubmit)|Overwrites a submit control on the current selection.|  
+|[CHtmlEditCtrlBase::InsInputUpload](#insinputupload)|Overwrites a file upload control on the current selection.|  
+|[CHtmlEditCtrlBase::Is1DElement](#is1delement)|Determines if an element is statically positioned.|  
+|[CHtmlEditCtrlBase::Is2DElement](#is2delement)|Determines if an element is absolutely positioned.|  
+|[CHtmlEditCtrlBase::Italic](#italic)|Toggles the current selection between italic and nonitalic.|  
+|[CHtmlEditCtrlBase::JustifyCenter](#justifycenter)|Centers the format block in which the current selection is located.|  
+|[CHtmlEditCtrlBase::JustifyLeft](#justifyleft)|Left-justifies the format block in which the current selection is located.|  
+|[CHtmlEditCtrlBase::JustifyRight](#justifyright)|Right-justifies the format block in which the current selection is located.|  
+|[CHtmlEditCtrlBase::ListBox](#listbox)|Overwrites a list box selection control on the current selection.|  
+|[CHtmlEditCtrlBase::Marquee](#marquee)|Overwrites an empty marquee on the current selection.|  
+|[CHtmlEditCtrlBase::NewDocument](#newdocument)|Creates a new document.|  
+|[CHtmlEditCtrlBase::OrderList](#orderlist)|Toggles the current selection between an ordered list and a normal format block.|  
+|[CHtmlEditCtrlBase::Outdent](#outdent)|Decreases by one increment the indentation of the format block in which the current selection is located.|  
+|[CHtmlEditCtrlBase::Paragraph](#paragraph)|Overwrites a line break on the current selection.|  
+|[CHtmlEditCtrlBase::Paste](#paste)|Overwrites the contents of the clipboard on the current selection.|  
+|[CHtmlEditCtrlBase::PrintDocument](#printdocument)|Prints the current document.|  
+|[CHtmlEditCtrlBase::PrintPreview](#printpreview)|Opens the Print Preview window for the current document using either the default print preview template or a custom template.|  
+|[CHtmlEditCtrlBase::QueryStatus](#querystatus)|Call this method to query the status of commands.|  
+|[CHtmlEditCtrlBase::RadioButton](#radiobutton)|Overwrites a radio control on the current selection.|  
+|[CHtmlEditCtrlBase::RefreshDocument](#refreshdocument)|Refreshes the current document.|  
+|[CHtmlEditCtrlBase::RemoveFormat](#removeformat)|Removes the formatting tags from the current selection.|  
+|[CHtmlEditCtrlBase::SaveAs](#saveas)|Saves the current Web page to a file.|  
+|[CHtmlEditCtrlBase::SelectAll](#selectall)|Selects the entire document.|  
+|[CHtmlEditCtrlBase::Set2DPosition](#set2dposition)|Allows absolutely positioned elements to be moved by dragging.|  
+|[CHtmlEditCtrlBase::SetAbsolutePosition](#setabsoluteposition)|Sets an element's position property to "absolute" or "static."|  
+|[CHtmlEditCtrlBase::SetAtomicSelection](#setatomicselection)|Set atomic selection mode.|  
+|[CHtmlEditCtrlBase::SetAutoURLDetectMode](#setautourldetectmode)|Turns automatic URL detection on and off.|  
+|[CHtmlEditCtrlBase::SetBackColor](#setbackcolor)|Sets the background color of the current selection.|  
+|[CHtmlEditCtrlBase::SetBlockFormat](#setblockformat)|Sets the current block format tag.|  
+|[CHtmlEditCtrlBase::SetBookMark](#setbookmark)|Creates a bookmark anchor for the current selection or insertion point.|  
+|[CHtmlEditCtrlBase::SetCSSEditingLevel](#setcsseditinglevel)|Selects which CSS level (CSS1 or CSS2) the editor will support, if any.|  
+|[CHtmlEditCtrlBase::SetDefaultComposeSettings](#setdefaultcomposesettings)|Call this method to set the default compose settings.|  
+|[CHtmlEditCtrlBase::SetDesignMode](#setdesignmode)|Set design mode.|  
+|[CHtmlEditCtrlBase::SetDisableEditFocusUI](#setdisableeditfocusui)|Disables the hatched border and handles around an element that has edit focus.|  
+|[CHtmlEditCtrlBase::SetDocumentHTML](#setdocumenthtml)|Sets the HTML of the current document.|  
+|[CHtmlEditCtrlBase::SetFontFace](#setfontface)|Sets the font for the current selection.|  
+|[CHtmlEditCtrlBase::SetFontSize](#setfontsize)|Sets the font size for the current selection.|  
+|[CHtmlEditCtrlBase::SetForeColor](#setforecolor)|Sets the foreground (text) color of the current selection.|  
+|[CHtmlEditCtrlBase::SetIE5PasteMode](#setie5pastemode)|Sets the paste operation to be compatible with Microsoft Internet Explorer 5.|  
+|[CHtmlEditCtrlBase::SetLiveResize](#setliveresize)|Causes the WebBrowser to update an element's appearance continuously during a resizing or moving operation.|  
+|[CHtmlEditCtrlBase::SetMultiSelect](#setmultiselect)|Enables multiple selection.|  
+|[CHtmlEditCtrlBase::SetOverrideCursor](#setoverridecursor)|Commands the WebBrowser never to change the mouse pointer.|  
+|[CHtmlEditCtrlBase::SetOverwriteMode](#setoverwritemode)|Toggles the text-entry mode between insert and overwrite.|  
+|[CHtmlEditCtrlBase::SetRespectVisInDesign](#setrespectvisindesign)|Hides invisible elements in design mode.|  
+|[CHtmlEditCtrlBase::SetShowAlignedSiteTags](#setshowalignedsitetags)|Displays a glyph for all elements that have a **styleFloat** property.|  
+|[CHtmlEditCtrlBase::SetShowAllTags](#setshowalltags)|Displays glyphs to show the location of all tags in a document.|  
+|[CHtmlEditCtrlBase::SetShowAreaTags](#setshowareatags)|Displays a glyph for all the area tags.|  
+|[CHtmlEditCtrlBase::SetShowBRTags](#setshowbrtags)|Displays a glyph for all the br tags.|  
+|[CHtmlEditCtrlBase::SetShowCommentTags](#setshowcommenttags)|Displays a glyph for all the comment tags.|  
+|[CHtmlEditCtrlBase::SetShowMiscTags](#setshowmisctags)|Displays all the tags shown in Microsoft Internet Explorer 4.0.|  
+|[CHtmlEditCtrlBase::SetShowScriptTags](#setshowscripttags)|Displays a glyph for all the script tags.|  
+|[CHtmlEditCtrlBase::SetShowStyleTags](#setshowstyletags)|Displays a glyph for all the style tags.|  
+|[CHtmlEditCtrlBase::SetShowUnknownTags](#setshowunknowntags)|Displays a glyph for all the unknown tags.|  
+|[CHtmlEditCtrlBase::TextArea](#textarea)|Overwrites a multiline text input control on the current selection.|  
+|[CHtmlEditCtrlBase::TextBox](#textbox)|Overwrites a text control on the current selection.|  
+|[CHtmlEditCtrlBase::UnBookmark](#unbookmark)|Removes any bookmark from the current selection.|  
+|[CHtmlEditCtrlBase::Underline](#underline)|Toggles the current selection between underlined and not underlined.|  
+|[CHtmlEditCtrlBase::Unlink](#unlink)|Removes any hyperlink from the current selection.|  
+|[CHtmlEditCtrlBase::UnorderList](#unorderlist)|Toggles the current selection between an ordered list and a normal format block.|  
   
 #### Parameters  
  `T`  
  The name of the derived class.  
   
 ## Remarks  
- **CHtmlEditCtrlBase** provides member functions for the WebBrowser's HTML editing commands, such as [Bold](#chtmleditctrlbase__bold). (Alternately, you can call [ExecCommand](#chtmleditctrlbase__execcommand) to execute the **IDM_BOLD** command.)  
+ **CHtmlEditCtrlBase** provides member functions for the WebBrowser's HTML editing commands, such as [Bold](#bold). (Alternately, you can call [ExecCommand](#execcommand) to execute the **IDM_BOLD** command.)  
   
  **CHtmlEditCtrlBase** is not intended to stand on its own. It is designed to be a base class for derived classes that expose the HTML editing functionality of the WebBrowser (see [CHtmlEditCtrl](../../mfc/reference/chtmleditctrl-class.md) and [CHtmlEditView](../../mfc/reference/chtmleditview-class.md)).  
   
@@ -172,7 +172,7 @@ template <class T> class CHtmlEditCtrlBase
 ## Requirements  
  **Header:** afxhtml.h  
   
-##  <a name="chtmleditctrlbase__addtoglyphtable"></a>  CHtmlEditCtrlBase::AddToGlyphTable  
+##  <a name="addtoglyphtable"></a>  CHtmlEditCtrlBase::AddToGlyphTable  
  Adds an entry to the glyph table, which specifies images to display for specific tags in design mode.  
   
 ```  
@@ -222,7 +222,7 @@ HRESULT AddToGlyphTable(
   
  This method sends the [IDM_ADDTOGLYPHTABLE command ID](https://msdn.microsoft.com/library/aa769891.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__bold"></a>  CHtmlEditCtrlBase::Bold  
+##  <a name="bold"></a>  CHtmlEditCtrlBase::Bold  
  Toggles the bold state of the selected text.  
   
 ```  
@@ -237,7 +237,7 @@ HRESULT Bold() const;
 ### Remarks  
  This method sends the [IDM_BOLD command ID](https://msdn.microsoft.com/library/aa769861.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__button"></a>  CHtmlEditCtrlBase::Button  
+##  <a name="button"></a>  CHtmlEditCtrlBase::Button  
  Overwrites a button control on the current selection.  
   
 ```  
@@ -256,7 +256,7 @@ HRESULT Button(LPCTSTR szId = NULL) const;
 ### Remarks  
  This method sends the [IDM_BUTTON command ID](https://msdn.microsoft.com/library/aa769966.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__checkbox"></a>  CHtmlEditCtrlBase::CheckBox  
+##  <a name="checkbox"></a>  CHtmlEditCtrlBase::CheckBox  
  Overwrites a check box control on the current selection.  
   
 ```  
@@ -275,7 +275,7 @@ HRESULT CheckBox(LPCTSTR szId = NULL) const;
 ### Remarks  
  This method sends the [IDM_CHECKBOX command ID](https://msdn.microsoft.com/library/aa769972.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__clearselection"></a>  CHtmlEditCtrlBase::ClearSelection  
+##  <a name="clearselection"></a>  CHtmlEditCtrlBase::ClearSelection  
  Clears the current selection.  
   
 ```  
@@ -290,7 +290,7 @@ HRESULT ClearSelection() const;
 ### Remarks  
  This method sends the [IDM_CLEARSELECTION command ID](https://msdn.microsoft.com/library/aa770038.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__copy"></a>  CHtmlEditCtrlBase::Copy  
+##  <a name="copy"></a>  CHtmlEditCtrlBase::Copy  
  Copies the current selection to the clipboard.  
   
 ```  
@@ -305,7 +305,7 @@ HRESULT Copy() const;
 ### Remarks  
  This method sends the [IDM_COPY command ID](https://msdn.microsoft.com/library/aa769872.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__cut"></a>  CHtmlEditCtrlBase::Cut  
+##  <a name="cut"></a>  CHtmlEditCtrlBase::Cut  
  Copies the current selection to the clipboard and then deletes it.  
   
 ```  
@@ -320,7 +320,7 @@ HRESULT Cut() const;
 ### Remarks  
  This method sends the [IDM_CUT command ID](https://msdn.microsoft.com/library/aa769875.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__delete"></a>  CHtmlEditCtrlBase::Delete  
+##  <a name="delete"></a>  CHtmlEditCtrlBase::Delete  
  Deletes the current selection.  
   
 ```  
@@ -335,7 +335,7 @@ HRESULT Delete() const;
 ### Remarks  
  This method sends the [IDM_DELETE command ID](https://msdn.microsoft.com/library/aa769876.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__dropdownbox"></a>  CHtmlEditCtrlBase::DropDownBox  
+##  <a name="dropdownbox"></a>  CHtmlEditCtrlBase::DropDownBox  
  Overwrites a drop-down selection control on the current selection.  
   
 ```  
@@ -354,7 +354,7 @@ HRESULT DropDownBox(LPCTSTR szId = NULL) const;
 ### Remarks  
  This method sends the [IDM_DROPDOWNBOX command ID](https://msdn.microsoft.com/library/aa769984.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__emptyglyphtable"></a>  CHtmlEditCtrlBase::EmptyGlyphTable  
+##  <a name="emptyglyphtable"></a>  CHtmlEditCtrlBase::EmptyGlyphTable  
  Removes all entries from the glyph table, which hides all images displayed for tags in design mode.  
   
 ```  
@@ -369,7 +369,7 @@ HRESULT EmptyGlyphTable() const;
 ### Remarks  
  This method sends the [IDM_EMPTYGLYPHTABLE command ID](https://msdn.microsoft.com/library/aa769907.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__execcommand"></a>  CHtmlEditCtrlBase::ExecCommand  
+##  <a name="execcommand"></a>  CHtmlEditCtrlBase::ExecCommand  
  Executes a command.  
   
 ```  
@@ -413,7 +413,7 @@ HRESULT ExecCommand(
 ### Remarks  
  This method provides the functionality of [IOleCommandTarget::Exec](http://msdn.microsoft.com/library/windows/desktop/ms690300).  
   
-##  <a name="chtmleditctrlbase__font"></a>  CHtmlEditCtrlBase::Font  
+##  <a name="font"></a>  CHtmlEditCtrlBase::Font  
  Opens a font dialog box to enable the user to change the text color, font, and font size of the current selection.  
   
 ```  
@@ -428,7 +428,7 @@ HRESULT Font() const;
 ### Remarks  
  This method sends the [IDM_FONT command ID](https://msdn.microsoft.com/library/aa769913.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__getabsoluteposition"></a>  CHtmlEditCtrlBase::GetAbsolutePosition  
+##  <a name="getabsoluteposition"></a>  CHtmlEditCtrlBase::GetAbsolutePosition  
  Returns whether an element's position property is "absolute."  
   
 ```  
@@ -447,7 +447,7 @@ HRESULT GetAbsolutePosition(bool& bCurValue) const;
 ### Remarks  
  For more information, see [IDM_ABSOLUTE_POSITION Command ID](https://msdn.microsoft.com/library/aa769889.aspx).  
   
-##  <a name="chtmleditctrlbase__getbackcolor"></a>  CHtmlEditCtrlBase::GetBackColor  
+##  <a name="getbackcolor"></a>  CHtmlEditCtrlBase::GetBackColor  
  Retrieves the background color of the current selection.  
   
 ```  
@@ -466,7 +466,7 @@ HRESULT GetBackColor(int& nColor) const;
 ### Remarks  
  This method sends the [IDM_BACKCOLOR Command ID](https://msdn.microsoft.com/library/aa769858.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__getblockformat"></a>  CHtmlEditCtrlBase::GetBlockFormat  
+##  <a name="getblockformat"></a>  CHtmlEditCtrlBase::GetBlockFormat  
  Retrieves the current block format tag.  
   
 ```  
@@ -485,7 +485,7 @@ HRESULT GetBlockFormat(CString& strFormat) const;
 ### Remarks  
  This method sends the [IDM_BLOCKFMT command ID](https://msdn.microsoft.com/library/aa769883.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__getblockformatnames"></a>  CHtmlEditCtrlBase::GetBlockFormatNames  
+##  <a name="getblockformatnames"></a>  CHtmlEditCtrlBase::GetBlockFormatNames  
  Retrieves the strings corresponding to the available block format tags.  
   
 ```  
@@ -504,7 +504,7 @@ HRESULT GetBlockFormatNames(CStringArray& sa) const;
 ### Remarks  
  This method sends the [IDM_GETBLOCKFMTS command ID](https://msdn.microsoft.com/library/aa769884.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__getbookmark"></a>  CHtmlEditCtrlBase::GetBookMark  
+##  <a name="getbookmark"></a>  CHtmlEditCtrlBase::GetBookMark  
  Retrieves the name of a bookmark anchor.  
   
 ```  
@@ -523,7 +523,7 @@ HRESULT GetBookMark(CString& strAnchor) const;
 ### Remarks  
  For more information, see [IDM_BOOKMARK Command ID](https://msdn.microsoft.com/library/aa769873.aspx).  
   
-##  <a name="chtmleditctrlbase__getdocument"></a>  CHtmlEditCtrlBase::GetDocument  
+##  <a name="getdocument"></a>  CHtmlEditCtrlBase::GetDocument  
  Retrieves the document object.  
   
 ```  
@@ -539,7 +539,7 @@ HRESULT GetDocument(IHTMLDocument2** ppDoc) const;
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
-##  <a name="chtmleditctrlbase__getdocumenthtml"></a>  CHtmlEditCtrlBase::GetDocumentHTML  
+##  <a name="getdocumenthtml"></a>  CHtmlEditCtrlBase::GetDocumentHTML  
  Retrieves the HTML of the current document.  
   
 ```  
@@ -555,7 +555,7 @@ HRESULT GetDocumentHTML(CString& szHTML) const;
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
-##  <a name="chtmleditctrlbase__getdocumenttitle"></a>  CHtmlEditCtrlBase::GetDocumentTitle  
+##  <a name="getdocumenttitle"></a>  CHtmlEditCtrlBase::GetDocumentTitle  
  Retrieves the document's title.  
   
 ```  
@@ -571,7 +571,7 @@ HRESULT GetDocumentTitle(CString& szTitle) const;
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
-##  <a name="chtmleditctrlbase__getevent"></a>  CHtmlEditCtrlBase::GetEvent  
+##  <a name="getevent"></a>  CHtmlEditCtrlBase::GetEvent  
  Retrieves an interface pointer to the event object that contains information relevant to the most recent event.  
   
 ```  
@@ -587,7 +587,7 @@ HRESULT GetEvent(IHTMLEventObj** ppEventObj) const;
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
-##  <a name="chtmleditctrlbase__geteventsrcelement"></a>  CHtmlEditCtrlBase::GetEventSrcElement  
+##  <a name="geteventsrcelement"></a>  CHtmlEditCtrlBase::GetEventSrcElement  
  Retrieves the object that fired the event.  
   
 ```  
@@ -603,7 +603,7 @@ HRESULT GetEventSrcElement(IHTMLElement** ppSrcElement) const;
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
-##  <a name="chtmleditctrlbase__getfontface"></a>  CHtmlEditCtrlBase::GetFontFace  
+##  <a name="getfontface"></a>  CHtmlEditCtrlBase::GetFontFace  
  Retrieves the font name for the current selection.  
   
 ```  
@@ -624,7 +624,7 @@ HRESULT GetFontFace(CString& strFace) const;
   
  This method sends the [IDM_FONTNAME command ID](https://msdn.microsoft.com/library/aa769880.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__getfontsize"></a>  CHtmlEditCtrlBase::GetFontSize  
+##  <a name="getfontsize"></a>  CHtmlEditCtrlBase::GetFontSize  
  Retrieves the font size for the current selection.  
   
 ```  
@@ -643,7 +643,7 @@ HRESULT GetFontSize(short& nSize) const;
 ### Remarks  
  This method sends the [IDM_FONTSIZE command ID](https://msdn.microsoft.com/library/aa769881.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__getforecolor"></a>  CHtmlEditCtrlBase::GetForeColor  
+##  <a name="getforecolor"></a>  CHtmlEditCtrlBase::GetForeColor  
  Retrieves the foreground (text) color of the current selection.  
   
 ```  
@@ -660,7 +660,7 @@ HRESULT GetForeColor(int& nColor);
 ### Remarks  
  This method sends the [IDM_FORECOLOR Command ID](https://msdn.microsoft.com/library/aa769882.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__getframezone"></a>  CHtmlEditCtrlBase::GetFrameZone  
+##  <a name="getframezone"></a>  CHtmlEditCtrlBase::GetFrameZone  
  Returns the security zone of the current page in the web browser.  
   
 ```  
@@ -679,7 +679,7 @@ HRESULT GetFrameZone(short& nZone) const;
 ### Remarks  
  This method sends the [IDM_GETFRAMEZONE command ID](https://msdn.microsoft.com/library/aa769916.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__getisdirty"></a>  CHtmlEditCtrlBase::GetIsDirty  
+##  <a name="getisdirty"></a>  CHtmlEditCtrlBase::GetIsDirty  
  Indicates whether the HTML document has changed.  
   
 ```  
@@ -691,7 +691,7 @@ HRESULT GetIsDirty() const;
 ### Remarks  
  Indicates whether the document has changed. `GetIsDirty` returns an `HRESULT` from [IPersistStorage::IsDirty](http://msdn.microsoft.com/library/windows/desktop/ms683910).  
   
-##  <a name="chtmleditctrlbase__getshowalignedsitetags"></a>  CHtmlEditCtrlBase::GetShowAlignedSiteTags  
+##  <a name="getshowalignedsitetags"></a>  CHtmlEditCtrlBase::GetShowAlignedSiteTags  
  Returns whether a glyph is displayed for all elements that have a **styleFloat** property.  
   
 ```  
@@ -710,7 +710,7 @@ HRESULT GetShowAlignedSiteTags(bool& bCurValue) const;
 ### Remarks  
  For more information, see [IDM_SHOWALIGNEDSITETAGS Command ID](https://msdn.microsoft.com/library/aa769947.aspx).  
   
-##  <a name="chtmleditctrlbase__getshowalltags"></a>  CHtmlEditCtrlBase::GetShowAllTags  
+##  <a name="getshowalltags"></a>  CHtmlEditCtrlBase::GetShowAllTags  
  Returns whether the WebBrowser displays glyphs to show the location of all tags in a document.  
   
 ```  
@@ -729,7 +729,7 @@ HRESULT GetShowAllTags(bool& bCurValue) const;
 ### Remarks  
  For more information, see [IDM_SHOWALLTAGS Command ID](https://msdn.microsoft.com/library/aa769948.aspx).  
   
-##  <a name="chtmleditctrlbase__getshowareatags"></a>  CHtmlEditCtrlBase::GetShowAreaTags  
+##  <a name="getshowareatags"></a>  CHtmlEditCtrlBase::GetShowAreaTags  
  Retrieves whether the WebBrowser displays a glyph for area tags.  
   
 ```  
@@ -748,7 +748,7 @@ HRESULT GetShowAreaTags(bool& bCurValue) const;
 ### Remarks  
  For more information, see [IDM_SHOWAREATAGS Command ID](https://msdn.microsoft.com/library/aa769949.aspx).  
   
-##  <a name="chtmleditctrlbase__getshowbrtags"></a>  CHtmlEditCtrlBase::GetShowBRTags  
+##  <a name="getshowbrtags"></a>  CHtmlEditCtrlBase::GetShowBRTags  
  Retrieves whether the WebBrowser displays a glyph for br tags.  
   
 ```  
@@ -767,7 +767,7 @@ HRESULT GetShowBRTags(bool& bCurValue) const;
 ### Remarks  
  For more information, see [IDM_SHOWWBRTAGS Command ID](https://msdn.microsoft.com/library/aa769956.aspx).  
   
-##  <a name="chtmleditctrlbase__getshowcommenttags"></a>  CHtmlEditCtrlBase::GetShowCommentTags  
+##  <a name="getshowcommenttags"></a>  CHtmlEditCtrlBase::GetShowCommentTags  
  Retrieves whether the WebBrowser displays a glyph for comment tags.  
   
 ```  
@@ -786,7 +786,7 @@ HRESULT GetShowCommentTags(bool& bCurValue) const;
 ### Remarks  
  For more information, see [IDM_SHOWCOMMENTTAGS Command ID](https://msdn.microsoft.com/library/aa769950.aspx).  
   
-##  <a name="chtmleditctrlbase__getshowmisctags"></a>  CHtmlEditCtrlBase::GetShowMiscTags  
+##  <a name="getshowmisctags"></a>  CHtmlEditCtrlBase::GetShowMiscTags  
  Retrieves whether the WebBrowser displays all the tags shown in Microsoft Internet Explorer 4.0.  
   
 ```  
@@ -805,7 +805,7 @@ HRESULT GetShowMiscTags(bool& bCurValue) const;
 ### Remarks  
  For more information, see [IDM_SHOWMISCTAGS Command ID](https://msdn.microsoft.com/library/aa769952.aspx).  
   
-##  <a name="chtmleditctrlbase__getshowscripttags"></a>  CHtmlEditCtrlBase::GetShowScriptTags  
+##  <a name="getshowscripttags"></a>  CHtmlEditCtrlBase::GetShowScriptTags  
  Retrieves whether the WebBrowser displays a glyph for all the script tags.  
   
 ```  
@@ -824,7 +824,7 @@ HRESULT GetShowScriptTags(bool& bCurValue) const;
 ### Remarks  
  For more information, see [IDM_SHOWSCRIPTTAGS Command ID](https://msdn.microsoft.com/library/aa769953.aspx).  
   
-##  <a name="chtmleditctrlbase__getshowstyletags"></a>  CHtmlEditCtrlBase::GetShowStyleTags  
+##  <a name="getshowstyletags"></a>  CHtmlEditCtrlBase::GetShowStyleTags  
  Retrieves whether the WebBrowser displays a glyph for all the style tags.  
   
 ```  
@@ -843,7 +843,7 @@ HRESULT GetShowStyleTags(bool& bCurValue) const;
 ### Remarks  
  For more information, see [IDM_SHOWSTYLETAGS Command ID](https://msdn.microsoft.com/library/aa769954.aspx).  
   
-##  <a name="chtmleditctrlbase__getshowunknowntags"></a>  CHtmlEditCtrlBase::GetShowUnknownTags  
+##  <a name="getshowunknowntags"></a>  CHtmlEditCtrlBase::GetShowUnknownTags  
  Retrieves whether the WebBrowser displays a glyph for all unknown tags.  
   
 ```  
@@ -862,7 +862,7 @@ HRESULT GetShowUnknownTags(bool& bCurValue) const;
 ### Remarks  
  For more information, see [IDM_SHOWUNKNOWNTAGS Command ID](https://msdn.microsoft.com/library/aa769955.aspx).  
   
-##  <a name="chtmleditctrlbase__horizontalline"></a>  CHtmlEditCtrlBase::HorizontalLine  
+##  <a name="horizontalline"></a>  CHtmlEditCtrlBase::HorizontalLine  
  Overwrites a horizontal line on the current selection.  
   
 ```  
@@ -881,7 +881,7 @@ HRESULT HorizontalLine(LPCTSTR szId = NULL) const;
 ### Remarks  
  This method sends the [IDM_HORIZONTALLINE command ID](https://msdn.microsoft.com/library/aa769968.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__hyperlink"></a>  CHtmlEditCtrlBase::HyperLink  
+##  <a name="hyperlink"></a>  CHtmlEditCtrlBase::HyperLink  
  Inserts a hyperlink on the current selection.  
   
 ```  
@@ -900,7 +900,7 @@ HRESULT HyperLink(LPCTSTR szUrl = NULL) const;
 ### Remarks  
  This method sends the [IDM_HYPERLINK command ID](https://msdn.microsoft.com/library/aa769874.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__ie50paste"></a>  CHtmlEditCtrlBase::IE50Paste  
+##  <a name="ie50paste"></a>  CHtmlEditCtrlBase::IE50Paste  
  Performs a paste operation that's compatible with Internet Explorer 5.  
   
 ```  
@@ -919,7 +919,7 @@ HRESULT IE50Paste(LPCTSTR szData) const;
 ### Remarks  
  This method sends the [IDM_IE50_PASTE command ID](https://msdn.microsoft.com/library/aa769922.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__iframe"></a>  CHtmlEditCtrlBase::Iframe  
+##  <a name="iframe"></a>  CHtmlEditCtrlBase::Iframe  
  Overwrites an inline frame on the current selection.  
   
 ```  
@@ -938,7 +938,7 @@ HRESULT Iframe(LPCTSTR szId = NULL) const;
 ### Remarks  
  This method sends the [IDM_IFRAME command ID](https://msdn.microsoft.com/library/aa769969.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__image"></a>  CHtmlEditCtrlBase::Image  
+##  <a name="image"></a>  CHtmlEditCtrlBase::Image  
  Overwrites an image on the current selection.  
   
 ```  
@@ -957,7 +957,7 @@ HRESULT Image(LPCTSTR szUrl = NULL) const;
 ### Remarks  
  This method sends the [IDM_IMAGE command ID](https://msdn.microsoft.com/library/aa769970.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__indent"></a>  CHtmlEditCtrlBase::Indent  
+##  <a name="indent"></a>  CHtmlEditCtrlBase::Indent  
  Increases the indent of the selected text by one indentation increment.  
   
 ```  
@@ -972,7 +972,7 @@ HRESULT Indent() const;
 ### Remarks  
  This method sends the [IDM_INDENT command ID](https://msdn.microsoft.com/library/aa769963.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__insfieldset"></a>  CHtmlEditCtrlBase::InsFieldSet  
+##  <a name="insfieldset"></a>  CHtmlEditCtrlBase::InsFieldSet  
  Overwrites a box on the current selection.  
   
 ```  
@@ -991,7 +991,7 @@ HRESULT InsFieldSet(LPCTSTR szId = NULL) const;
 ### Remarks  
  This method sends the [IDM_INSFIELDSET command ID](https://msdn.microsoft.com/library/aa769967.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__insinputbutton"></a>  CHtmlEditCtrlBase::InsInputButton  
+##  <a name="insinputbutton"></a>  CHtmlEditCtrlBase::InsInputButton  
  Overwrites a button control on the current selection.  
   
 ```  
@@ -1010,7 +1010,7 @@ HRESULT InsInputButton(LPCTSTR szId = NULL) const;
 ### Remarks  
  This method sends the [IDM_INSINPUTBUTTON command ID](https://msdn.microsoft.com/library/aa769971.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__insinputhidden"></a>  CHtmlEditCtrlBase::InsInputHidden  
+##  <a name="insinputhidden"></a>  CHtmlEditCtrlBase::InsInputHidden  
  Inserts a hidden control on the current selection.  
   
 ```  
@@ -1029,7 +1029,7 @@ HRESULT InsInputHidden(LPCTSTR szId = NULL) const;
 ### Remarks  
  This method sends the [IDM_INSINPUTHIDDEN command ID](https://msdn.microsoft.com/library/aa769974.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__insinputimage"></a>  CHtmlEditCtrlBase::InsInputImage  
+##  <a name="insinputimage"></a>  CHtmlEditCtrlBase::InsInputImage  
  Overwrites an image control on the current selection.  
   
 ```  
@@ -1048,7 +1048,7 @@ HRESULT InsInputImage(LPCTSTR szId = NULL) const;
 ### Remarks  
  This method sends the [IDM_INSINPUTIMAGE command ID](https://msdn.microsoft.com/library/aa769975.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__insinputpassword"></a>  CHtmlEditCtrlBase::InsInputPassword  
+##  <a name="insinputpassword"></a>  CHtmlEditCtrlBase::InsInputPassword  
  Overwrites a password control on the current selection.  
   
 ```  
@@ -1067,7 +1067,7 @@ HRESULT InsInputPassword(LPCTSTR szId = NULL) const;
 ### Remarks  
  This method sends the [IDM_INSINPUTPASSWORD command ID](https://msdn.microsoft.com/library/aa769976.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__insinputreset"></a>  CHtmlEditCtrlBase::InsInputReset  
+##  <a name="insinputreset"></a>  CHtmlEditCtrlBase::InsInputReset  
  Overwrites a reset control on the current selection.  
   
 ```  
@@ -1086,7 +1086,7 @@ HRESULT InsInputReset(LPCTSTR szId = NULL) const;
 ### Remarks  
  This method sends the [IDM_INSINPUTRESET command ID](https://msdn.microsoft.com/library/aa769978.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__insinputsubmit"></a>  CHtmlEditCtrlBase::InsInputSubmit  
+##  <a name="insinputsubmit"></a>  CHtmlEditCtrlBase::InsInputSubmit  
  Overwrites a submit control on the current selection.  
   
 ```  
@@ -1105,7 +1105,7 @@ HRESULT InsInputSubmit(LPCTSTR szId = NULL) const;
 ### Remarks  
  This method sends the [IDM_INSINPUTSUBMIT command ID](https://msdn.microsoft.com/library/aa769979.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__insinputupload"></a>  CHtmlEditCtrlBase::InsInputUpload  
+##  <a name="insinputupload"></a>  CHtmlEditCtrlBase::InsInputUpload  
  Overwrites a file upload control on the current selection.  
   
 ```  
@@ -1124,7 +1124,7 @@ HRESULT InsInputUpload(LPCTSTR szId = NULL) const;
 ### Remarks  
  This method sends the [IDM_INSINPUTUPLOAD command ID](https://msdn.microsoft.com/library/aa769973.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__is1delement"></a>  CHtmlEditCtrlBase::Is1DElement  
+##  <a name="is1delement"></a>  CHtmlEditCtrlBase::Is1DElement  
  Determines if an element is statically positioned.  
   
 ```  
@@ -1143,7 +1143,7 @@ HRESULT Is1DElement(bool& bValue) const;
 ### Remarks  
  This method sends the [IDM_1D_ELEMENT command ID](https://msdn.microsoft.com/library/aa769885.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__is2delement"></a>  CHtmlEditCtrlBase::Is2DElement  
+##  <a name="is2delement"></a>  CHtmlEditCtrlBase::Is2DElement  
  Determines if an element is absolutely positioned.  
   
 ```  
@@ -1162,7 +1162,7 @@ HRESULT Is2DElement(bool& bValue) const;
 ### Remarks  
  This method sends the [IDM_2D_ELEMENT command ID](https://msdn.microsoft.com/library/aa769886.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__italic"></a>  CHtmlEditCtrlBase::Italic  
+##  <a name="italic"></a>  CHtmlEditCtrlBase::Italic  
  Toggles the current selection between italic and nonitalic.  
   
 ```  
@@ -1177,7 +1177,7 @@ HRESULT Italic() const;
 ### Remarks  
  This method sends the [IDM_ITALIC command ID](https://msdn.microsoft.com/library/aa769988.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__justifycenter"></a>  CHtmlEditCtrlBase::JustifyCenter  
+##  <a name="justifycenter"></a>  CHtmlEditCtrlBase::JustifyCenter  
  Centers the format block in which the current selection is located.  
   
 ```  
@@ -1192,7 +1192,7 @@ HRESULT JustifyCenter() const;
 ### Remarks  
  This method sends the [IDM_JUSTIFYCENTER command ID](https://msdn.microsoft.com/library/aa769989.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__justifyleft"></a>  CHtmlEditCtrlBase::JustifyLeft  
+##  <a name="justifyleft"></a>  CHtmlEditCtrlBase::JustifyLeft  
  Left-justifies the format block in which the current selection is located.  
   
 ```  
@@ -1207,7 +1207,7 @@ HRESULT JustifyLeft() const;
 ### Remarks  
  This method sends the [IDM_JUSTIFYLEFT command ID](https://msdn.microsoft.com/library/aa770011.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__justifyright"></a>  CHtmlEditCtrlBase::JustifyRight  
+##  <a name="justifyright"></a>  CHtmlEditCtrlBase::JustifyRight  
  Right-justifies the format block in which the current selection is located.  
   
 ```  
@@ -1222,7 +1222,7 @@ HRESULT JustifyRight() const;
 ### Remarks  
  This method sends the [IDM_JUSTIFYRIGHT command ID](https://msdn.microsoft.com/library/aa770013.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__listbox"></a>  CHtmlEditCtrlBase::ListBox  
+##  <a name="listbox"></a>  CHtmlEditCtrlBase::ListBox  
  Overwrites a list box selection control on the current selection.  
   
 ```  
@@ -1241,7 +1241,7 @@ HRESULT ListBox(LPCTSTR szId = NULL) const;
 ### Remarks  
  This method sends the [IDM_LISTBOX command ID](https://msdn.microsoft.com/library/aa769985.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__marquee"></a>  CHtmlEditCtrlBase::Marquee  
+##  <a name="marquee"></a>  CHtmlEditCtrlBase::Marquee  
  Overwrites an empty marquee on the current selection.  
   
 ```  
@@ -1260,7 +1260,7 @@ HRESULT Marquee(LPCTSTR szId = NULL) const;
 ### Remarks  
  This method sends the [IDM_MARQUEE command ID](https://msdn.microsoft.com/library/aa769981.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__newdocument"></a>  CHtmlEditCtrlBase::NewDocument  
+##  <a name="newdocument"></a>  CHtmlEditCtrlBase::NewDocument  
  Creates a new document.  
   
 ```  
@@ -1272,7 +1272,7 @@ HRESULT NewDocument() const;
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
-##  <a name="chtmleditctrlbase__orderlist"></a>  CHtmlEditCtrlBase::OrderList  
+##  <a name="orderlist"></a>  CHtmlEditCtrlBase::OrderList  
  Toggles the current selection between an ordered list and a normal format block.  
   
 ```  
@@ -1291,7 +1291,7 @@ HRESULT OrderList(LPCTSTR szId = NULL) const;
 ### Remarks  
  This method sends the [IDM_ORDERLIST command ID](https://msdn.microsoft.com/library/aa769982.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__outdent"></a>  CHtmlEditCtrlBase::Outdent  
+##  <a name="outdent"></a>  CHtmlEditCtrlBase::Outdent  
  Decreases by one increment the indentation of the format block in which the current selection is located.  
   
 ```  
@@ -1306,7 +1306,7 @@ HRESULT Outdent() const;
 ### Remarks  
  This method sends the [IDM_OUTDENT command ID](https://msdn.microsoft.com/library/aa770015.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__paragraph"></a>  CHtmlEditCtrlBase::Paragraph  
+##  <a name="paragraph"></a>  CHtmlEditCtrlBase::Paragraph  
  Overwrites a line break on the current selection.  
   
 ```  
@@ -1325,7 +1325,7 @@ HRESULT Paragraph(LPCTSTR szId = NULL) const;
 ### Remarks  
  This method sends the [IDM_PARAGRAPH command ID](https://msdn.microsoft.com/library/aa769983.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__paste"></a>  CHtmlEditCtrlBase::Paste  
+##  <a name="paste"></a>  CHtmlEditCtrlBase::Paste  
  Overwrites the contents of the clipboard on the current selection.  
   
 ```  
@@ -1340,7 +1340,7 @@ HRESULT Paste() const;
 ### Remarks  
  This method sends the [IDM_PASTE command ID](https://msdn.microsoft.com/library/aa770017.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__printdocument"></a>  CHtmlEditCtrlBase::PrintDocument  
+##  <a name="printdocument"></a>  CHtmlEditCtrlBase::PrintDocument  
  Prints the current document.  
   
 ```  
@@ -1370,7 +1370,7 @@ HRESULT PrintDocument(bool bShowPrintDialog) const;
 ### Remarks  
  This method sends the [IDM_PRINT command ID](https://msdn.microsoft.com/library/aa769937.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__printpreview"></a>  CHtmlEditCtrlBase::PrintPreview  
+##  <a name="printpreview"></a>  CHtmlEditCtrlBase::PrintPreview  
  Opens the Print Preview window for the current document using either the default print preview template or a custom template.  
   
 ```  
@@ -1393,7 +1393,7 @@ HRESULT PrintPreview(LPCTSTR szPrintTemplate) const;
 ### Remarks  
  This method sends the [IDM_PRINTPREVIEW command ID](https://msdn.microsoft.com/library/aa769938.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__querystatus"></a>  CHtmlEditCtrlBase::QueryStatus  
+##  <a name="querystatus"></a>  CHtmlEditCtrlBase::QueryStatus  
  Call this method to query the status of commands.  
   
 ```  
@@ -1404,12 +1404,12 @@ long QueryStatus(long cmdID) const;
   
 ### Parameters  
  `cmdID`  
- The command ID. Command identifiers are taken from the `CGID_MSHTML`command group. These commands are defined in Mshtmcid.h. You can also find the list online at [MSHTML Command Identifiers](http://go.microsoft.com/fwlink/LinkId=149220).  
+ The command ID. Command identifiers are taken from the `CGID_MSHTML`command group. These commands are defined in Mshtmcid.h. You can also find the list online at [MSHTML Command Identifiers](http://go.microsoft.com/fwlink/linkid=149220).  
   
 ### Return Value  
  Returns an [OLECMDF](http://msdn.microsoft.com/library/windows/desktop/ms695237) indicating the status for `cmdID`, or 0 on failure.  
   
-##  <a name="chtmleditctrlbase__radiobutton"></a>  CHtmlEditCtrlBase::RadioButton  
+##  <a name="radiobutton"></a>  CHtmlEditCtrlBase::RadioButton  
  Overwrites a radio control on the current selection.  
   
 ```  
@@ -1428,7 +1428,7 @@ HRESULT RadioButton(LPCTSTR szId = NULL) const;
 ### Remarks  
  This method sends the [IDM_RADIOBUTTON command ID](https://msdn.microsoft.com/library/aa769977.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__refreshdocument"></a>  CHtmlEditCtrlBase::RefreshDocument  
+##  <a name="refreshdocument"></a>  CHtmlEditCtrlBase::RefreshDocument  
  Refreshes the current document.  
   
 ```  
@@ -1443,7 +1443,7 @@ HRESULT RefreshDocument() const;
 ### Remarks  
  This method sends the [IDM_REFRESH Command ID](https://msdn.microsoft.com/library/aa770020.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__removeformat"></a>  CHtmlEditCtrlBase::RemoveFormat  
+##  <a name="removeformat"></a>  CHtmlEditCtrlBase::RemoveFormat  
  Removes the formatting tags from the current selection.  
   
 ```  
@@ -1458,7 +1458,7 @@ HRESULT RemoveFormat() const;
 ### Remarks  
  This method sends the [IDM_REMOVEFORMAT command ID](https://msdn.microsoft.com/library/aa770021.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__saveas"></a>  CHtmlEditCtrlBase::SaveAs  
+##  <a name="saveas"></a>  CHtmlEditCtrlBase::SaveAs  
  Saves the current Web page to a file.  
   
 ```  
@@ -1477,7 +1477,7 @@ HRESULT SaveAs(LPCTSTR szPath = NULL) const;
 ### Remarks  
  This method sends the [IDM_SAVEAS command ID](https://msdn.microsoft.com/library/aa770024.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__selectall"></a>  CHtmlEditCtrlBase::SelectAll  
+##  <a name="selectall"></a>  CHtmlEditCtrlBase::SelectAll  
  Selects the entire document.  
   
 ```  
@@ -1492,7 +1492,7 @@ HRESULT SelectAll() const;
 ### Remarks  
  This method sends the [IDM_SELECTALL command ID](https://msdn.microsoft.com/library/aa770025.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__set2dposition"></a>  CHtmlEditCtrlBase::Set2DPosition  
+##  <a name="set2dposition"></a>  CHtmlEditCtrlBase::Set2DPosition  
  Allows absolutely positioned elements to be moved by dragging.  
   
 ```  
@@ -1511,7 +1511,7 @@ HRESULT Set2DPosition(bool bNewValue) const;
 ### Remarks  
  This method sends the [IDM_2D_POSITION command ID](https://msdn.microsoft.com/library/aa769887.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setabsoluteposition"></a>  CHtmlEditCtrlBase::SetAbsolutePosition  
+##  <a name="setabsoluteposition"></a>  CHtmlEditCtrlBase::SetAbsolutePosition  
  Sets an element's position property to "absolute" or "static."  
   
 ```  
@@ -1530,7 +1530,7 @@ HRESULT SetAbsolutePosition(bool bNewValue) const;
 ### Remarks  
  This method sends the [IDM_ABSOLUTE_POSITION command ID](https://msdn.microsoft.com/library/aa769889.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setatomicselection"></a>  CHtmlEditCtrlBase::SetAtomicSelection  
+##  <a name="setatomicselection"></a>  CHtmlEditCtrlBase::SetAtomicSelection  
  Set atomic selection mode.  
   
 ```  
@@ -1549,7 +1549,7 @@ HRESULT SetAtomicSelection(bool bNewValue) const;
 ### Remarks  
  This method sends the [IDM_ATOMICSELECTION command ID](https://msdn.microsoft.com/library/aa769892.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setautourldetectmode"></a>  CHtmlEditCtrlBase::SetAutoURLDetectMode  
+##  <a name="setautourldetectmode"></a>  CHtmlEditCtrlBase::SetAutoURLDetectMode  
  Turns automatic URL detection on and off.  
   
 ```  
@@ -1568,7 +1568,7 @@ HRESULT SetAutoURLDetectMode(bool bNewValue) const;
 ### Remarks  
  This method sends the [IDM_AUTOURLDETECT_MODE command ID](https://msdn.microsoft.com/library/aa769893.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setbackcolor"></a>  CHtmlEditCtrlBase::SetBackColor  
+##  <a name="setbackcolor"></a>  CHtmlEditCtrlBase::SetBackColor  
  Sets the background color of the current selection.  
   
 ```  
@@ -1594,7 +1594,7 @@ HRESULT SetBackColor(LPCTSTR szColor) const;
 ### Remarks  
  This method sends the [IDM_BACKCOLOR_ command ID](https://msdn.microsoft.com/library/aa769858.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setblockformat"></a>  CHtmlEditCtrlBase::SetBlockFormat  
+##  <a name="setblockformat"></a>  CHtmlEditCtrlBase::SetBlockFormat  
  Sets the current block format tag.  
   
 ```  
@@ -1613,7 +1613,7 @@ HRESULT SetBlockFormat(LPCTSTR szFormat) const;
 ### Remarks  
  This method sends the [IDM_BLOCKFMT_command ID](https://msdn.microsoft.com/library/aa769883.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setbookmark"></a>  CHtmlEditCtrlBase::SetBookMark  
+##  <a name="setbookmark"></a>  CHtmlEditCtrlBase::SetBookMark  
  Creates a bookmark anchor for the current selection or insertion point.  
   
 ```  
@@ -1632,7 +1632,7 @@ HRESULT SetBookMark(LPCTSTR szAnchorName) const;
 ### Remarks  
  This method sends the [IDM_BOOKMARK command ID](https://msdn.microsoft.com/library/aa769873.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setcsseditinglevel"></a>  CHtmlEditCtrlBase::SetCSSEditingLevel  
+##  <a name="setcsseditinglevel"></a>  CHtmlEditCtrlBase::SetCSSEditingLevel  
  Selects which CSS level (CSS1 or CSS2) the editor will support, if any.  
   
 ```  
@@ -1651,7 +1651,7 @@ HRESULT SetCSSEditingLevel(short nLevel) const;
 ### Remarks  
  This method sends the [IDM_CSSEDITING_LEVEL command ID](https://msdn.microsoft.com/library/aa769903.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setdefaultcomposesettings"></a>  CHtmlEditCtrlBase::SetDefaultComposeSettings  
+##  <a name="setdefaultcomposesettings"></a>  CHtmlEditCtrlBase::SetDefaultComposeSettings  
  Call this method to set the default compose settings.  
   
 ```  
@@ -1695,7 +1695,7 @@ HRESULT SetDefaultComposeSettings(
 ### Remarks  
  This method sends the [IDM_COMPOSESETTINGS command ID](https://msdn.microsoft.com/library/aa769901.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setdesignmode"></a>  CHtmlEditCtrlBase::SetDesignMode  
+##  <a name="setdesignmode"></a>  CHtmlEditCtrlBase::SetDesignMode  
  Set design mode.  
   
 ```  
@@ -1711,7 +1711,7 @@ BOOL SetDesignMode(BOOL bMode) const;
 ### Return Value  
  Returns TRUE on success, FALSE on failure.  
   
-##  <a name="chtmleditctrlbase__setdisableeditfocusui"></a>  CHtmlEditCtrlBase::SetDisableEditFocusUI  
+##  <a name="setdisableeditfocusui"></a>  CHtmlEditCtrlBase::SetDisableEditFocusUI  
  Disables the hatched border and handles around an element that has edit focus.  
   
 ```  
@@ -1730,7 +1730,7 @@ HRESULT SetDisableEditFocusUI(bool bNewValue) const;
 ### Remarks  
  This method sends the [IDM_DISABLE_EDITFOCUS_UI command ID](https://msdn.microsoft.com/library/aa769905.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setdocumenthtml"></a>  CHtmlEditCtrlBase::SetDocumentHTML  
+##  <a name="setdocumenthtml"></a>  CHtmlEditCtrlBase::SetDocumentHTML  
  Sets the HTML of the current document.  
   
 ```  
@@ -1746,7 +1746,7 @@ HRESULT SetDocumentHTML(LPCTSTR szHTML) const;
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
-##  <a name="chtmleditctrlbase__setfontface"></a>  CHtmlEditCtrlBase::SetFontFace  
+##  <a name="setfontface"></a>  CHtmlEditCtrlBase::SetFontFace  
  Sets the font for the current selection.  
   
 ```  
@@ -1765,7 +1765,7 @@ HRESULT SetFontFace(LPCTSTR szFace) const;
 ### Remarks  
  This method sends the [IDM FONTNAME Command ID](https://msdn.microsoft.com/library/aa769880.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setfontsize"></a>  CHtmlEditCtrlBase::SetFontSize  
+##  <a name="setfontsize"></a>  CHtmlEditCtrlBase::SetFontSize  
  Sets the font size for the current selection.  
   
 ```  
@@ -1784,7 +1784,7 @@ HRESULT SetFontSize(unsigned short size) const;
 ### Remarks  
  This method sends the [IDM FONTSIZE command ID](https://msdn.microsoft.com/library/aa769881.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setforecolor"></a>  CHtmlEditCtrlBase::SetForeColor  
+##  <a name="setforecolor"></a>  CHtmlEditCtrlBase::SetForeColor  
  Sets the foreground (text) color of the current selection.  
   
 ```  
@@ -1810,7 +1810,7 @@ HRESULT SetForeColor(int nColor) const;
 ### Remarks  
  This method sends the [IDM FORECOLOR command ID](https://msdn.microsoft.com/library/aa769882.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setie5pastemode"></a>  CHtmlEditCtrlBase::SetIE5PasteMode  
+##  <a name="setie5pastemode"></a>  CHtmlEditCtrlBase::SetIE5PasteMode  
  Sets the paste operation to be compatible with Microsoft Internet Explorer 5.  
   
 ```  
@@ -1829,7 +1829,7 @@ HRESULT SetIE5PasteMode(bool bNewValue) const;
 ### Remarks  
  This method sends the [IDM IE50_PASTE_MODE command ID](https://msdn.microsoft.com/library/aa769923.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setliveresize"></a>  CHtmlEditCtrlBase::SetLiveResize  
+##  <a name="setliveresize"></a>  CHtmlEditCtrlBase::SetLiveResize  
  Causes the WebBrowser to update an element's appearance continuously during a resizing or moving operation, rather than updating only at the completion of the move or resize.  
   
 ```  
@@ -1848,7 +1848,7 @@ HRESULT SetLiveResize(bool bNewValue) const;
 ### Remarks  
  This method sends the [IDM LIVERESIZE command ID](https://msdn.microsoft.com/library/aa769928.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setmultiselect"></a>  CHtmlEditCtrlBase::SetMultiSelect  
+##  <a name="setmultiselect"></a>  CHtmlEditCtrlBase::SetMultiSelect  
  Enables multiple selection.  
   
 ```  
@@ -1867,7 +1867,7 @@ HRESULT SetMultiSelect(bool bNewValue) const;
 ### Remarks  
  This method sends the [IDM MULTIPLESELECTION command ID](https://msdn.microsoft.com/library/aa769929.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setoverridecursor"></a>  CHtmlEditCtrlBase::SetOverrideCursor  
+##  <a name="setoverridecursor"></a>  CHtmlEditCtrlBase::SetOverrideCursor  
  Commands the WebBrowser never to change the mouse pointer.  
   
 ```  
@@ -1886,7 +1886,7 @@ HRESULT SetOverrideCursor(bool bNewValue) const;
 ### Remarks  
  This method sends the [IDM OVERRIDE_CURSOR command ID](https://msdn.microsoft.com/library/aa769932.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setoverwritemode"></a>  CHtmlEditCtrlBase::SetOverwriteMode  
+##  <a name="setoverwritemode"></a>  CHtmlEditCtrlBase::SetOverwriteMode  
  Toggles the text-entry mode between insert and overwrite.  
   
 ```  
@@ -1905,7 +1905,7 @@ HRESULT SetOverwriteMode(bool bMode) const;
 ### Remarks  
  This method sends the [IDM OVERWRITE command ID](https://msdn.microsoft.com/library/aa770016.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setrespectvisindesign"></a>  CHtmlEditCtrlBase::SetRespectVisInDesign  
+##  <a name="setrespectvisindesign"></a>  CHtmlEditCtrlBase::SetRespectVisInDesign  
  Hides invisible elements in design mode.  
   
 ```  
@@ -1924,7 +1924,7 @@ HRESULT SetRespectVisInDesign(bool bNewValue) const;
 ### Remarks  
  This method sends the [IDM RESPECTVISIBILITY_INDESIGN command ID](https://msdn.microsoft.com/library/aa770023.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setshowalignedsitetags"></a>  CHtmlEditCtrlBase::SetShowAlignedSiteTags  
+##  <a name="setshowalignedsitetags"></a>  CHtmlEditCtrlBase::SetShowAlignedSiteTags  
  Displays a glyph for all elements that have a **styleFloat** property.  
   
 ```  
@@ -1943,7 +1943,7 @@ HRESULT SetShowAlignedSiteTags(bool bNewValue) const;
 ### Remarks  
  This method sends the [IDM SHOWALIGNEDSITETAGS command ID](https://msdn.microsoft.com/library/aa769947.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setshowalltags"></a>  CHtmlEditCtrlBase::SetShowAllTags  
+##  <a name="setshowalltags"></a>  CHtmlEditCtrlBase::SetShowAllTags  
  Displays glyphs to show the location of all tags in a document.  
   
 ```  
@@ -1962,7 +1962,7 @@ HRESULT SetShowAllTags(bool bNewValue) const;
 ### Remarks  
  This method sends the [IDM SHOWALLTAGS command ID](https://msdn.microsoft.com/library/aa769948.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setshowareatags"></a>  CHtmlEditCtrlBase::SetShowAreaTags  
+##  <a name="setshowareatags"></a>  CHtmlEditCtrlBase::SetShowAreaTags  
  Displays a glyph for all the area tags.  
   
 ```  
@@ -1981,7 +1981,7 @@ HRESULT SetShowAreaTags(bool bNewValue) const;
 ### Remarks  
  This method sends the [IDM SHOWAREATAGS command ID](https://msdn.microsoft.com/library/aa769949.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setshowbrtags"></a>  CHtmlEditCtrlBase::SetShowBRTags  
+##  <a name="setshowbrtags"></a>  CHtmlEditCtrlBase::SetShowBRTags  
  Displays a glyph for all the br tags.  
   
 ```  
@@ -2000,7 +2000,7 @@ HRESULT SetShowBRTags(bool bNewValue) const;
 ### Remarks  
  This method sends the [IDM SHOWWBRTAGS command ID](https://msdn.microsoft.com/library/aa769956.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setshowcommenttags"></a>  CHtmlEditCtrlBase::SetShowCommentTags  
+##  <a name="setshowcommenttags"></a>  CHtmlEditCtrlBase::SetShowCommentTags  
  Displays a glyph for all the comment tags.  
   
 ```  
@@ -2019,7 +2019,7 @@ HRESULT SetShowCommentTags(bool bNewValue) const;
 ### Remarks  
  This method sends the [IDM SHOWCOMMENTTAGS command ID](https://msdn.microsoft.com/library/aa769950.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setshowmisctags"></a>  CHtmlEditCtrlBase::SetShowMiscTags  
+##  <a name="setshowmisctags"></a>  CHtmlEditCtrlBase::SetShowMiscTags  
  Displays all the tags shown in Microsoft Internet Explorer 4.0.  
   
 ```  
@@ -2038,7 +2038,7 @@ HRESULT SetShowMiscTags(bool bNewValue) const;
 ### Remarks  
  This method sends the [IDM SHOWMISCTAGS command ID](https://msdn.microsoft.com/library/aa769952.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setshowscripttags"></a>  CHtmlEditCtrlBase::SetShowScriptTags  
+##  <a name="setshowscripttags"></a>  CHtmlEditCtrlBase::SetShowScriptTags  
  Displays a glyph for all the script tags.  
   
 ```  
@@ -2057,7 +2057,7 @@ HRESULT SetShowScriptTags(bool bNewValue) const;
 ### Remarks  
  This method sends the [IDM SHOWSCRIPTTAGS command ID](https://msdn.microsoft.com/library/aa769953.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setshowstyletags"></a>  CHtmlEditCtrlBase::SetShowStyleTags  
+##  <a name="setshowstyletags"></a>  CHtmlEditCtrlBase::SetShowStyleTags  
  Displays a glyph for all the style tags.  
   
 ```  
@@ -2076,7 +2076,7 @@ HRESULT SetShowStyleTags(bool bNewValue) const;
 ### Remarks  
  This method sends the [IDM SHOWSTYLETAGS command ID](https://msdn.microsoft.com/library/aa769954.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__setshowunknowntags"></a>  CHtmlEditCtrlBase::SetShowUnknownTags  
+##  <a name="setshowunknowntags"></a>  CHtmlEditCtrlBase::SetShowUnknownTags  
  Displays a glyph for all the unknown tags.  
   
 ```  
@@ -2095,7 +2095,7 @@ HRESULT SetShowUnknownTags(bool bNewValue) const;
 ### Remarks  
  This method sends the [IDM SHOWUNKNOWNTAGS command ID](https://msdn.microsoft.com/library/aa769955.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__textarea"></a>  CHtmlEditCtrlBase::TextArea  
+##  <a name="textarea"></a>  CHtmlEditCtrlBase::TextArea  
  Overwrites a multiline text input control on the current selection.  
   
 ```  
@@ -2114,7 +2114,7 @@ HRESULT TextArea(LPCTSTR szId = NULL) const;
 ### Remarks  
  This method sends the [IDM TEXTAREA command ID](https://msdn.microsoft.com/library/aa769986.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__textbox"></a>  CHtmlEditCtrlBase::TextBox  
+##  <a name="textbox"></a>  CHtmlEditCtrlBase::TextBox  
  Overwrites a text control on the current selection.  
   
 ```  
@@ -2133,7 +2133,7 @@ HRESULT TextBox(LPCTSTR szId = NULL) const;
 ### Remarks  
  This method sends the [IDM TEXTBOX command ID](https://msdn.microsoft.com/library/aa769980.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__unbookmark"></a>  CHtmlEditCtrlBase::UnBookmark  
+##  <a name="unbookmark"></a>  CHtmlEditCtrlBase::UnBookmark  
  Removes any bookmark from the current selection.  
   
 ```  
@@ -2148,7 +2148,7 @@ HRESULT UnBookmark() const;
 ### Remarks  
  This method sends the [IDM UNBOOKMARK command ID](https://msdn.microsoft.com/library/aa770034.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__underline"></a>  CHtmlEditCtrlBase::Underline  
+##  <a name="underline"></a>  CHtmlEditCtrlBase::Underline  
  Toggles the current selection between underlined and not underlined.  
   
 ```  
@@ -2163,7 +2163,7 @@ HRESULT Underline() const;
 ### Remarks  
  This method sends the [IDM UNDERLINE command ID](https://msdn.microsoft.com/library/aa770035.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__unlink"></a>  CHtmlEditCtrlBase::Unlink  
+##  <a name="unlink"></a>  CHtmlEditCtrlBase::Unlink  
  Removes any hyperlink from the current selection.  
   
 ```  
@@ -2178,7 +2178,7 @@ HRESULT Unlink() const;
 ### Remarks  
  This method sends the [IDM UNLINK command ID](https://msdn.microsoft.com/library/aa770037.aspx) to the WebBrowser control.  
   
-##  <a name="chtmleditctrlbase__unorderlist"></a>  CHtmlEditCtrlBase::UnorderList  
+##  <a name="unorderlist"></a>  CHtmlEditCtrlBase::UnorderList  
  Toggles the current selection between an ordered list and a normal format block.  
   
 ```  
@@ -2199,5 +2199,5 @@ HRESULT UnorderList(LPCTSTR szId = NULL) const;
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
- [HTMLEdit Sample](../../top/visual-cpp-samples.md)
+ [HTMLEdit Sample](../../visual-cpp-samples.md)
 

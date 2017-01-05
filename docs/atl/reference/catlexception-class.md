@@ -51,19 +51,19 @@ class CAtlException
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlException::CAtlException](#catlexception__catlexception)|The constructor.|  
+|[CAtlException::CAtlException](#catlexception)|The constructor.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlException::operator HRESULT](#catlexception__operator_hresult)|Casts the current object to an HRESULT value.|  
+|[CAtlException::operator HRESULT](#operator_hresult)|Casts the current object to an HRESULT value.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlException::m_hr](#catlexception__m_hr)|The variable of type HRESULT created by the object and used to store the error condition.|  
+|[CAtlException::m_hr](#m_hr)|The variable of type HRESULT created by the object and used to store the error condition.|  
   
 ## Remarks  
  A `CAtlException` object represents an exception condition related to an ATL operation. The `CAtlException` class includes a public data member that stores the status code indicating the reason for the exception and a cast operator that allows you to treat the exception as if it were an HRESULT.  
@@ -73,7 +73,7 @@ class CAtlException
 ## Requirements  
  **Header:** atlexcept.h  
   
-##  <a name="catlexception__catlexception"></a>  CAtlException::CAtlException  
+##  <a name="catlexception"></a>  CAtlException::CAtlException  
  The constructor.  
   
 ```
@@ -85,13 +85,13 @@ CAtlException() throw();
  `hr`  
  The `HRESULT` error code.  
   
-##  <a name="catlexception__operator_hresult"></a>  CAtlException::operator HRESULT  
+##  <a name="operator_hresult"></a>  CAtlException::operator HRESULT  
  Casts the current object to an HRESULT value.  
   
 ```operator HRESULT() const throw ();
 ```  
   
-##  <a name="catlexception__m_hr"></a>  CAtlException::m_hr  
+##  <a name="m_hr"></a>  CAtlException::m_hr  
  The `HRESULT` data member.  
   
 ```
@@ -99,8 +99,8 @@ HRESULT m_hr;
 ```  
   
 ### Remarks  
- The data member that stores the error condition. The HRESULT value is set by the constructor, [CAtlException::CAtlException](#catlexception__catlexception).  
+ The data member that stores the error condition. The HRESULT value is set by the constructor, [CAtlException::CAtlException](#catlexception).  
   
 ## See Also  
- [AtlThrow](../Topic/AtlThrow.md)   
+ [AtlThrow](http://msdn.microsoft.com/library/2bd111da-8170-488d-914a-c9bf6b6765f7)   
  [Class Overview](../../atl/atl-class-overview.md)

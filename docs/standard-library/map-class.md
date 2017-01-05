@@ -68,7 +68,7 @@ class map;
  The type that represents the stored allocator object that encapsulates details about the map's allocation and deallocation of memory. This argument is optional and the default value is `allocator<pair``<const``Key`*,* `Type``> >`.  
   
 ## Remarks  
- The Standard Template Library (STL) map class is:  
+ The C++ Standard Library map class is:  
   
 -   A container of variable size that efficiently retrieves element values based on associated key values.  
   
@@ -1201,7 +1201,7 @@ allocator_type get_allocator() const;
  The allocator used by the map.  
   
 ### Remarks  
- Allocators for the map class specify how the class manages storage. The default allocators supplied with STL container classes is sufficient for most programming needs. Writing and using your own allocator class is an advanced C++ topic.  
+ Allocators for the map class specify how the class manages storage. The default allocators supplied with C++ Standard Library container classes are sufficient for most programming needs. Writing and using your own allocator class is an advanced C++ topic.  
   
 ### Example  
   
@@ -2570,5 +2570,5 @@ int main( )
  [\<map> Members](http://msdn.microsoft.com/en-us/7e8f0bc2-6034-40f6-9d14-76d4cef86308)   
  [Containers](../cpp/containers-modern-cpp.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 

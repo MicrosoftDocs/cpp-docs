@@ -39,7 +39,7 @@ translation.priority.ht:
 # Creating Database Connections
 To use databinding, you must configure a data source. When using the ADO data control, you must configure an OLE DB connection. When using the RDO RemoteData control, you must create an Open Database Connectivity (ODBC) connection. Because Visual C++ ships with an OLE DB provider for ODBC data sources, the ADO data control can also make use of ODBC connections.  
   
- ![ODBC connections](../../data/ado-rdo/media/vc55q61.gif "vc55Q61")  
+ ![ODBC connections](../../data/ado-rdo/media/vc55q61.gif "vc55q61")  
   
 ## See Also  
  [Data-Bound Controls (ADO and RDO)](../../data/ado-rdo/data-bound-controls-ado-and-rdo.md)   

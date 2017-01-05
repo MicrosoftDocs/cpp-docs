@@ -9,7 +9,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - ""myproviderds.h""
+  - "myproviderds.h"
   - "cmyprovidersource"
 dev_langs: 
   - "C++"

@@ -49,27 +49,27 @@ class CMFCRibbonLinkCtrl : public CMFCRibbonButton
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonLinkCtrl::CMFCRibbonLinkCtrl](#cmfcribbonlinkctrl__cmfcribbonlinkctrl)|Constructs and initializes a `CMFCRibbonLinkCtrl` object.|  
+|[CMFCRibbonLinkCtrl::CMFCRibbonLinkCtrl](#cmfcribbonlinkctrl)|Constructs and initializes a `CMFCRibbonLinkCtrl` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonLinkCtrl::CopyFrom](#cmfcribbonlinkctrl__copyfrom)|(Overrides `CMFCRibbonButton::CopyFrom`.)|  
-|[CMFCRibbonLinkCtrl::GetCompactSize](#cmfcribbonlinkctrl__getcompactsize)|(Overrides [CMFCRibbonButton::GetCompactSize](../../mfc/reference/cmfcribbonbutton-class.md#cmfcribbonbutton__getcompactsize).)|  
-|[CMFCRibbonLinkCtrl::GetLink](#cmfcribbonlinkctrl__getlink)|Returns the value of the hyperlink.|  
-|[CMFCRibbonLinkCtrl::GetRegularSize](#cmfcribbonlinkctrl__getregularsize)|(Overrides [CMFCRibbonButton::GetRegularSize](../../mfc/reference/cmfcribbonbutton-class.md#cmfcribbonbutton__getregularsize).)|  
-|[CMFCRibbonLinkCtrl::GetToolTipText](#cmfcribbonlinkctrl__gettooltiptext)|(Overrides [CMFCRibbonButton::GetToolTipText](../../mfc/reference/cmfcribbonbutton-class.md#cmfcribbonbutton__gettooltiptext).)|  
-|[CMFCRibbonLinkCtrl::IsDrawTooltipImage](#cmfcribbonlinkctrl__isdrawtooltipimage)|(Overrides `CMFCRibbonButton::IsDrawTooltipImage`.)|  
-|[CMFCRibbonLinkCtrl::OnDraw](#cmfcribbonlinkctrl__ondraw)|(Overrides [CMFCRibbonButton::OnDraw](../../mfc/reference/cmfcribbonbutton-class.md#cmfcribbonbutton__ondraw).)|  
-|[CMFCRibbonLinkCtrl::OnDrawMenuImage](#cmfcribbonlinkctrl__ondrawmenuimage)|(Overrides [CMFCRibbonBaseElement::OnDrawMenuImage](../../mfc/reference/cmfcribbonbaseelement-class.md#cmfcribbonbaseelement__ondrawmenuimage).)|  
-|[CMFCRibbonLinkCtrl::OnMouseMove](#cmfcribbonlinkctrl__onmousemove)|(Overrides `CMFCRibbonButton::OnMouseMove`.)|  
-|[CMFCRibbonLinkCtrl::OnSetIcon](#cmfcribbonlinkctrl__onseticon)||  
-|[CMFCRibbonLinkCtrl::OpenLink](#cmfcribbonlinkctrl__openlink)|Opens the Web page specified in the hyperlink.|  
-|[CMFCRibbonLinkCtrl::SetLink](#cmfcribbonlinkctrl__setlink)|Sets the value of the hyperlink.|  
+|[CMFCRibbonLinkCtrl::CopyFrom](#copyfrom)|(Overrides `CMFCRibbonButton::CopyFrom`.)|  
+|[CMFCRibbonLinkCtrl::GetCompactSize](#getcompactsize)|(Overrides [CMFCRibbonButton::GetCompactSize](../../mfc/reference/cmfcribbonbutton-class.md#getcompactsize).)|  
+|[CMFCRibbonLinkCtrl::GetLink](#getlink)|Returns the value of the hyperlink.|  
+|[CMFCRibbonLinkCtrl::GetRegularSize](#getregularsize)|(Overrides [CMFCRibbonButton::GetRegularSize](../../mfc/reference/cmfcribbonbutton-class.md#getregularsize).)|  
+|[CMFCRibbonLinkCtrl::GetToolTipText](#gettooltiptext)|(Overrides [CMFCRibbonButton::GetToolTipText](../../mfc/reference/cmfcribbonbutton-class.md#gettooltiptext).)|  
+|[CMFCRibbonLinkCtrl::IsDrawTooltipImage](#isdrawtooltipimage)|(Overrides `CMFCRibbonButton::IsDrawTooltipImage`.)|  
+|[CMFCRibbonLinkCtrl::OnDraw](#ondraw)|(Overrides [CMFCRibbonButton::OnDraw](../../mfc/reference/cmfcribbonbutton-class.md#ondraw).)|  
+|[CMFCRibbonLinkCtrl::OnDrawMenuImage](#ondrawmenuimage)|(Overrides [CMFCRibbonBaseElement::OnDrawMenuImage](../../mfc/reference/cmfcribbonbaseelement-class.md#ondrawmenuimage).)|  
+|[CMFCRibbonLinkCtrl::OnMouseMove](#onmousemove)|(Overrides `CMFCRibbonButton::OnMouseMove`.)|  
+|[CMFCRibbonLinkCtrl::OnSetIcon](#onseticon)||  
+|[CMFCRibbonLinkCtrl::OpenLink](#openlink)|Opens the Web page specified in the hyperlink.|  
+|[CMFCRibbonLinkCtrl::SetLink](#setlink)|Sets the value of the hyperlink.|  
   
 ## Remarks  
- After you create a hyperlink, add it to a panel by calling [CMFCRibbonPanel::Add](../../mfc/reference/cmfcribbonpanel-class.md#cmfcribbonpanel__add).  
+ After you create a hyperlink, add it to a panel by calling [CMFCRibbonPanel::Add](../../mfc/reference/cmfcribbonpanel-class.md#add).  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md) [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md)  
@@ -79,7 +79,7 @@ class CMFCRibbonLinkCtrl : public CMFCRibbonButton
 ## Requirements  
  **Header:** afxRibbonLinkCtrl.h  
   
-##  <a name="cmfcribbonlinkctrl__cmfcribbonlinkctrl"></a>  CMFCRibbonLinkCtrl::CMFCRibbonLinkCtrl  
+##  <a name="cmfcribbonlinkctrl"></a>  CMFCRibbonLinkCtrl::CMFCRibbonLinkCtrl  
  Constructs and initializes a [CMFCRibbonLinkCtrl](../../mfc/reference/cmfcribbonlinkctrl-class.md) object.  
   
 ```  
@@ -100,11 +100,11 @@ CMFCRibbonLinkCtrl(
  Specifies the hyperlink associated with the link control.  
   
 ### Example  
- The following example demonstrates how to use the constructor of the `CMFCRibbonLinkCtrl` class. This code snippet is part of the [Ribbon Gadgets sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to use the constructor of the `CMFCRibbonLinkCtrl` class. This code snippet is part of the [Ribbon Gadgets sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_RibbonGadgets#1](../../mfc/reference/codesnippet/CPP/cmfcribbonlinkctrl-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonGadgets#1](../../mfc/reference/codesnippet/cpp/cmfcribbonlinkctrl-class_1.cpp)]  
   
-##  <a name="cmfcribbonlinkctrl__copyfrom"></a>  CMFCRibbonLinkCtrl::CopyFrom  
+##  <a name="copyfrom"></a>  CMFCRibbonLinkCtrl::CopyFrom  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -116,7 +116,7 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
   
 ### Remarks  
   
-##  <a name="cmfcribbonlinkctrl__getcompactsize"></a>  CMFCRibbonLinkCtrl::GetCompactSize  
+##  <a name="getcompactsize"></a>  CMFCRibbonLinkCtrl::GetCompactSize  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -130,7 +130,7 @@ virtual CSize GetCompactSize(CDC* pDC);
   
 ### Remarks  
   
-##  <a name="cmfcribbonlinkctrl__getlink"></a>  CMFCRibbonLinkCtrl::GetLink  
+##  <a name="getlink"></a>  CMFCRibbonLinkCtrl::GetLink  
  Returns the value of the hyperlink.  
   
 ```  
@@ -144,7 +144,7 @@ LPCTSTR GetLink() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonlinkctrl__getregularsize"></a>  CMFCRibbonLinkCtrl::GetRegularSize  
+##  <a name="getregularsize"></a>  CMFCRibbonLinkCtrl::GetRegularSize  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -158,7 +158,7 @@ virtual CSize GetRegularSize(CDC* pDC);
   
 ### Remarks  
   
-##  <a name="cmfcribbonlinkctrl__gettooltiptext"></a>  CMFCRibbonLinkCtrl::GetToolTipText  
+##  <a name="gettooltiptext"></a>  CMFCRibbonLinkCtrl::GetToolTipText  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -171,7 +171,7 @@ virtual CString GetToolTipText() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonlinkctrl__ondrawmenuimage"></a>  CMFCRibbonLinkCtrl::OnDrawMenuImage  
+##  <a name="ondrawmenuimage"></a>  CMFCRibbonLinkCtrl::OnDrawMenuImage  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -186,7 +186,7 @@ virtual BOOL OnDrawMenuImage(CDC*, CRect);
   
 ### Remarks  
   
-##  <a name="cmfcribbonlinkctrl__isdrawtooltipimage"></a>  CMFCRibbonLinkCtrl::IsDrawTooltipImage  
+##  <a name="isdrawtooltipimage"></a>  CMFCRibbonLinkCtrl::IsDrawTooltipImage  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -199,7 +199,7 @@ virtual BOOL IsDrawTooltipImage() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonlinkctrl__ondraw"></a>  CMFCRibbonLinkCtrl::OnDraw  
+##  <a name="ondraw"></a>  CMFCRibbonLinkCtrl::OnDraw  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -211,7 +211,7 @@ virtual void OnDraw(CDC* pDC);
   
 ### Remarks  
   
-##  <a name="cmfcribbonlinkctrl__onmousemove"></a>  CMFCRibbonLinkCtrl::OnMouseMove  
+##  <a name="onmousemove"></a>  CMFCRibbonLinkCtrl::OnMouseMove  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -223,7 +223,7 @@ virtual void OnMouseMove(CPoint point);
   
 ### Remarks  
   
-##  <a name="cmfcribbonlinkctrl__onseticon"></a>  CMFCRibbonLinkCtrl::OnSetIcon  
+##  <a name="onseticon"></a>  CMFCRibbonLinkCtrl::OnSetIcon  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -232,7 +232,7 @@ virtual void OnSetIcon();
   
 ### Remarks  
   
-##  <a name="cmfcribbonlinkctrl__openlink"></a>  CMFCRibbonLinkCtrl::OpenLink  
+##  <a name="openlink"></a>  CMFCRibbonLinkCtrl::OpenLink  
  Opens the Web page specified in the hyperlink.  
   
 ```  
@@ -245,7 +245,7 @@ BOOL OpenLink();
 ### Remarks  
  Opens a web page using the hyperlink associated with the `CMFCRibbonLinkCtrl` object.  
   
-##  <a name="cmfcribbonlinkctrl__setlink"></a>  CMFCRibbonLinkCtrl::SetLink  
+##  <a name="setlink"></a>  CMFCRibbonLinkCtrl::SetLink  
  Sets the value of the hyperlink.  
   
 ```  

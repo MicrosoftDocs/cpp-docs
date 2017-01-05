@@ -63,7 +63,7 @@ The following tables show Visual C++ features that are available in Visual Studi
 |Library or Header|Visual Studio Express for Windows|Visual Studio Express for Windows Desktop|Visual Studio Professional / Community|Visual Studio Enterprise|  
 |-----------------------|---------------------------------------|-----------------------------------------------|---------------------------------------------|------------------------------|  
 |Windows headers and libraries and CRT library|(X)|X|X|X|  
-|STL|X|X|X|X|  
+|C++ Standard Library|X|X|X|X|  
 |ATL|||X|X|  
 |MFC|||X|X|  
 |.NET Framework class library||X|X|X|  
@@ -193,7 +193,7 @@ The following tables show Visual C++ features that are available in Visual Studi
 |Code map debugging||||X|  
   
 ## See Also  
- [Installing Visual Studio 2015](../Topic/Installing%20Visual%20Studio%202015.md)   
- [What's New in Visual Studio 2015](/visual-studio/ide/what-s-new-in-visual-studio-2015)   
+ [Install Visual Studio](/visualstudio/install/install-visual-studio)   
+ [What's New in Visual Studio](/visualstudio/ide/whats-new-in-visual-studio)   
  [Visual C++ Project Types](../ide/visual-cpp-project-types.md)   
  [Visual Database Tools Editions](http://msdn.microsoft.com/en-us/a7689adc-f16b-4cc7-b6fe-39ca0c711161)

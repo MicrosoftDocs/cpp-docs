@@ -52,7 +52,7 @@ This topic explains:
  You can use the DBMS itself to alter the schema or another tool that lets you perform DDL functions. You can also use ODBC function calls for sending SQL statements, such as calling a predefined query (stored procedure) that does not return records.  
   
 ##  <a name="_core_making_direct_sql_function_calls"></a> Making Direct SQL Function Calls  
- You can directly execute a SQL call using a [CDatabase Class](../../mfc/reference/cdatabase-class.md) object. Set up your SQL statement string (usually in a `CString`) and pass it to the [CDatabase::ExecuteSQL](../Topic/CDatabase::ExecuteSQL.md) member function of your `CDatabase` object. If you use ODBC function calls to send a SQL statement that normally returns records, the records are ignored.  
+ You can directly execute a SQL call using a [CDatabase Class](../../mfc/reference/cdatabase-class.md) object. Set up your SQL statement string (usually in a `CString`) and pass it to the [CDatabase::ExecuteSQL](../../mfc/reference/cdatabase-class.md#executesql) member function of your `CDatabase` object. If you use ODBC function calls to send a SQL statement that normally returns records, the records are ignored.  
   
 ## See Also  
  [SQL](../../data/odbc/sql.md)

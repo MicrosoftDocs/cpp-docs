@@ -62,7 +62,7 @@ Enables code analysis and control options.
  Turns off analyzer output to the **Output** window.  
   
  /analyze:stacksize `number`  
- The `number` parameter that is used with this option specifies the size, in bytes, of the stack frame for which warning [C6262](/visual-studio/code-quality/c6262) is generated. If this parameter is not specified, the stack frame size is 16KB by default.  
+ The `number` parameter that is used with this option specifies the size, in bytes, of the stack frame for which warning [C6262](/visualstudio/code-quality/c6262) is generated. If this parameter is not specified, the stack frame size is 16KB by default.  
   
  /analyze:max_paths `number`  
  The `number` parameter that is used with this option specifies the maximum number of code paths to be analyzed. If this parameter is not specified, the number is 256 by default. Larger values perform more thorough checking, but the analysis might take longer.  
@@ -71,11 +71,11 @@ Enables code analysis and control options.
  Typically, the compiler generates code and does more syntax checking after it runs the analyzer. The **/analyze:only** option turns off this code generation pass; this makes analysis faster but compile errors and warnings that might have been discovered by the code generation pass of the compiler are not emitted. If the program is not free of code-generation errors, analysis results might be unreliable; therefore, we recommend that you use this option only if the code already passes code-generation syntax checking without errors.  
   
 ## Remarks  
- For more information, see [Code Analysis for C/C++ Overview](/visual-studio/code-quality/code-analysis-for-c-cpp-overview) and [Code Analysis for C/C++ Warnings](/visual-studio/code-quality/code-analysis-for-c-cpp-warnings).  
+ For more information, see [Code Analysis for C/C++ Overview](/visualstudio/code-quality/code-analysis-for-c-cpp-overview) and [Code Analysis for C/C++ Warnings](/visualstudio/code-quality/code-analysis-for-c-cpp-warnings).  
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Property Pages** dialog box. For details, see [How to: Open Project Property Pages](../../misc/how-to-open-project-property-pages.md).  
+1.  Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
 2.  Expand the **Configuration Properties** node.  
   

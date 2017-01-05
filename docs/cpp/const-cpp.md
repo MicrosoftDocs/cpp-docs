@@ -100,7 +100,7 @@ int main() {
   
  You can use pointers to constant data as function parameters to prevent the function from modifying a parameter passed through a pointer.  
   
- For objects that are declared as **const**, you can only call [constant member functions](../misc/constant-member-functions.md). This ensures that the constant object is never modified.  
+ For objects that are declared as **const**, you can only call constant member functions. This ensures that the constant object is never modified.  
   
 ```  
 birthday.getMonth();    // Okay  
@@ -175,11 +175,7 @@ extern "C" const int x=10;
  When following a member function's parameter list, the **const** keyword specifies that the function does not modify the object for which it is invoked.  
   
  For more information on **const**, see the following topics:  
-  
--   [Constant Values](../misc/constant-values.md)  
-  
--   [Constant Member Functions](../misc/constant-member-functions.md)  
-  
+    
 -   [const and volatile Pointers](../cpp/const-and-volatile-pointers.md)  
   
 -   [Type Qualifiers (C Language Reference)](../c-language/type-qualifiers.md)  

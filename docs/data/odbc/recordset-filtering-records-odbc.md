@@ -47,7 +47,7 @@ This topic applies to the MFC ODBC classes.
   
 1.  Construct a new recordset object (or prepare to call **Requery** for an existing object).  
   
-2.  Set the value of the object's [m_strFilter](../Topic/CRecordset::m_strFilter.md) data member.  
+2.  Set the value of the object's [m_strFilter](../../mfc/reference/crecordset-class.md#m_strfilter) data member.  
   
      The filter is a null-terminated string that contains the contents of the SQL **WHERE** clause but not the keyword **WHERE**. For example, use:  
   
@@ -102,10 +102,10 @@ m_strFilter = "StudentID = '100'";   // correct
 m_strFilter = "StudentID = 100";   // incorrect for some drivers  
 ```  
   
- The quoting shown above conforms to the ODBC specification, but some DBMSs might require other quote characters. For more information, see [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordset’s-sql-statement-odbc.md).  
+ The quoting shown above conforms to the ODBC specification, but some DBMSs might require other quote characters. For more information, see [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).  
   
 > [!NOTE]
->  If you choose to override the recordset's default SQL string by passing your own SQL string to **Open**, you should not set a filter if your custom string has a **WHERE** clause. For more information about overriding the default SQL, see [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordset’s-sql-statement-odbc.md).  
+>  If you choose to override the recordset's default SQL string by passing your own SQL string to **Open**, you should not set a filter if your custom string has a **WHERE** clause. For more information about overriding the default SQL, see [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).  
   
 ## See Also  
  [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)   

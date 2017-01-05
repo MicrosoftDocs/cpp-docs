@@ -55,54 +55,54 @@ class AFX_NOVTABLE COleServerDoc : public COleLinkingDoc
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleServerDoc::COleServerDoc](#coleserverdoc__coleserverdoc)|Constructs a `COleServerDoc` object.|  
+|[COleServerDoc::COleServerDoc](#coleserverdoc)|Constructs a `COleServerDoc` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleServerDoc::ActivateDocObject](#coleserverdoc__activatedocobject)|Activates the associated DocObject document.|  
-|[COleServerDoc::ActivateInPlace](#coleserverdoc__activateinplace)|Activates the document for in-place editing.|  
-|[COleServerDoc::DeactivateAndUndo](#coleserverdoc__deactivateandundo)|Deactivates the server's user interface.|  
-|[COleServerDoc::DiscardUndoState](#coleserverdoc__discardundostate)|Discards undo-state information.|  
-|[COleServerDoc::GetClientSite](#coleserverdoc__getclientsite)|Retrieves a pointer to the underlying `IOleClientSite` interface.|  
-|[COleServerDoc::GetEmbeddedItem](#coleserverdoc__getembeddeditem)|Returns a pointer to an item representing the entire document.|  
-|[COleServerDoc::GetItemClipRect](#coleserverdoc__getitemcliprect)|Returns the current clipping rectangle for in-place editing.|  
-|[COleServerDoc::GetItemPosition](#coleserverdoc__getitemposition)|Returns the current position rectangle, relative to the container application's client area, for in-place editing.|  
-|[COleServerDoc::GetZoomFactor](#coleserverdoc__getzoomfactor)|Returns the zoom factor in pixels.|  
-|[COleServerDoc::IsDocObject](#coleserverdoc__isdocobject)|Determines if the document is a DocObject.|  
-|[COleServerDoc::IsEmbedded](#coleserverdoc__isembedded)|Indicates whether the document is embedded in a container document or running stand-alone.|  
-|[COleServerDoc::IsInPlaceActive](#coleserverdoc__isinplaceactive)|Returns `TRUE` if the item is currently activated in place.|  
-|[COleServerDoc::NotifyChanged](#coleserverdoc__notifychanged)|Notifies containers that the user has changed the document.|  
-|[COleServerDoc::NotifyClosed](#coleserverdoc__notifyclosed)|Notifies containers that the user has closed the document.|  
-|[COleServerDoc::NotifyRename](#coleserverdoc__notifyrename)|Notifies containers that the user has renamed the document.|  
-|[COleServerDoc::NotifySaved](#coleserverdoc__notifysaved)|Notifies containers that the user has saved the document.|  
-|[COleServerDoc::OnDeactivate](#coleserverdoc__ondeactivate)|Called by the framework when the user deactivates an item that was activated in place.|  
-|[COleServerDoc::OnDeactivateUI](#coleserverdoc__ondeactivateui)|Called by the framework to destroy controls and other user-interface elements created for in-place activation.|  
-|[COleServerDoc::OnDocWindowActivate](#coleserverdoc__ondocwindowactivate)|Called by the framework when the container's document frame window is activated or deactivated.|  
-|[COleServerDoc::OnResizeBorder](#coleserverdoc__onresizeborder)|Called by the framework when the container application's frame window or document window is resized.|  
-|[COleServerDoc::OnShowControlBars](#coleserverdoc__onshowcontrolbars)|Called by the framework to show or hide control bars for in-place editing.|  
-|[COleServerDoc::OnUpdateDocument](#coleserverdoc__onupdatedocument)|Called by the framework when a server document that is an embedded item is saved, updating the container's copy of the item.|  
-|[COleServerDoc::RequestPositionChange](#coleserverdoc__requestpositionchange)|Changes the position of the in-place editing frame.|  
-|[COleServerDoc::SaveEmbedding](#coleserverdoc__saveembedding)|Tells the container application to save the document.|  
-|[COleServerDoc::ScrollContainerBy](#coleserverdoc__scrollcontainerby)|Scrolls the container document.|  
-|[COleServerDoc::UpdateAllItems](#coleserverdoc__updateallitems)|Notifies containers that the user has changed the document.|  
+|[COleServerDoc::ActivateDocObject](#activatedocobject)|Activates the associated DocObject document.|  
+|[COleServerDoc::ActivateInPlace](#activateinplace)|Activates the document for in-place editing.|  
+|[COleServerDoc::DeactivateAndUndo](#deactivateandundo)|Deactivates the server's user interface.|  
+|[COleServerDoc::DiscardUndoState](#discardundostate)|Discards undo-state information.|  
+|[COleServerDoc::GetClientSite](#getclientsite)|Retrieves a pointer to the underlying `IOleClientSite` interface.|  
+|[COleServerDoc::GetEmbeddedItem](#getembeddeditem)|Returns a pointer to an item representing the entire document.|  
+|[COleServerDoc::GetItemClipRect](#getitemcliprect)|Returns the current clipping rectangle for in-place editing.|  
+|[COleServerDoc::GetItemPosition](#getitemposition)|Returns the current position rectangle, relative to the container application's client area, for in-place editing.|  
+|[COleServerDoc::GetZoomFactor](#getzoomfactor)|Returns the zoom factor in pixels.|  
+|[COleServerDoc::IsDocObject](#isdocobject)|Determines if the document is a DocObject.|  
+|[COleServerDoc::IsEmbedded](#isembedded)|Indicates whether the document is embedded in a container document or running stand-alone.|  
+|[COleServerDoc::IsInPlaceActive](#isinplaceactive)|Returns `TRUE` if the item is currently activated in place.|  
+|[COleServerDoc::NotifyChanged](#notifychanged)|Notifies containers that the user has changed the document.|  
+|[COleServerDoc::NotifyClosed](#notifyclosed)|Notifies containers that the user has closed the document.|  
+|[COleServerDoc::NotifyRename](#notifyrename)|Notifies containers that the user has renamed the document.|  
+|[COleServerDoc::NotifySaved](#notifysaved)|Notifies containers that the user has saved the document.|  
+|[COleServerDoc::OnDeactivate](#ondeactivate)|Called by the framework when the user deactivates an item that was activated in place.|  
+|[COleServerDoc::OnDeactivateUI](#ondeactivateui)|Called by the framework to destroy controls and other user-interface elements created for in-place activation.|  
+|[COleServerDoc::OnDocWindowActivate](#ondocwindowactivate)|Called by the framework when the container's document frame window is activated or deactivated.|  
+|[COleServerDoc::OnResizeBorder](#onresizeborder)|Called by the framework when the container application's frame window or document window is resized.|  
+|[COleServerDoc::OnShowControlBars](#onshowcontrolbars)|Called by the framework to show or hide control bars for in-place editing.|  
+|[COleServerDoc::OnUpdateDocument](#onupdatedocument)|Called by the framework when a server document that is an embedded item is saved, updating the container's copy of the item.|  
+|[COleServerDoc::RequestPositionChange](#requestpositionchange)|Changes the position of the in-place editing frame.|  
+|[COleServerDoc::SaveEmbedding](#saveembedding)|Tells the container application to save the document.|  
+|[COleServerDoc::ScrollContainerBy](#scrollcontainerby)|Scrolls the container document.|  
+|[COleServerDoc::UpdateAllItems](#updateallitems)|Notifies containers that the user has changed the document.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleServerDoc::CreateInPlaceFrame](#coleserverdoc__createinplaceframe)|Called by the framework to create a frame window for in-place editing.|  
-|[COleServerDoc::DestroyInPlaceFrame](#coleserverdoc__destroyinplaceframe)|Called by the framework to destroy a frame window for in-place editing.|  
-|[COleServerDoc::GetDocObjectServer](#coleserverdoc__getdocobjectserver)|Override this function to create a new `CDocObjectServer` object and indicate that this document is a DocObject container.|  
-|[COleServerDoc::OnClose](#coleserverdoc__onclose)|Called by the framework when a container requests to close the document.|  
-|[COleServerDoc::OnExecOleCmd](#coleserverdoc__onexecolecmd)|Executes a specified command or displays help for the command.|  
-|[COleServerDoc::OnFrameWindowActivate](#coleserverdoc__onframewindowactivate)|Called by the framework when the container's frame window is activated or deactivated.|  
-|[COleServerDoc::OnGetEmbeddedItem](#coleserverdoc__ongetembeddeditem)|Called to get a `COleServerItem` that represents the entire document; used to get an embedded item. Implementation required.|  
-|[COleServerDoc::OnReactivateAndUndo](#coleserverdoc__onreactivateandundo)|Called by the framework to undo changes made during in-place editing.|  
-|[COleServerDoc::OnSetHostNames](#coleserverdoc__onsethostnames)|Called by the framework when a container sets the window title for an embedded object.|  
-|[COleServerDoc::OnSetItemRects](#coleserverdoc__onsetitemrects)|Called by the framework to position the in-place editing frame window within the container application's window.|  
-|[COleServerDoc::OnShowDocument](#coleserverdoc__onshowdocument)|Called by the framework to show or hide the document.|  
+|[COleServerDoc::CreateInPlaceFrame](#createinplaceframe)|Called by the framework to create a frame window for in-place editing.|  
+|[COleServerDoc::DestroyInPlaceFrame](#destroyinplaceframe)|Called by the framework to destroy a frame window for in-place editing.|  
+|[COleServerDoc::GetDocObjectServer](#getdocobjectserver)|Override this function to create a new `CDocObjectServer` object and indicate that this document is a DocObject container.|  
+|[COleServerDoc::OnClose](#onclose)|Called by the framework when a container requests to close the document.|  
+|[COleServerDoc::OnExecOleCmd](#onexecolecmd)|Executes a specified command or displays help for the command.|  
+|[COleServerDoc::OnFrameWindowActivate](#onframewindowactivate)|Called by the framework when the container's frame window is activated or deactivated.|  
+|[COleServerDoc::OnGetEmbeddedItem](#ongetembeddeditem)|Called to get a `COleServerItem` that represents the entire document; used to get an embedded item. Implementation required.|  
+|[COleServerDoc::OnReactivateAndUndo](#onreactivateandundo)|Called by the framework to undo changes made during in-place editing.|  
+|[COleServerDoc::OnSetHostNames](#onsethostnames)|Called by the framework when a container sets the window title for an embedded object.|  
+|[COleServerDoc::OnSetItemRects](#onsetitemrects)|Called by the framework to position the in-place editing frame window within the container application's window.|  
+|[COleServerDoc::OnShowDocument](#onshowdocument)|Called by the framework to show or hide the document.|  
   
 ## Remarks  
  A server document can contain [COleServerItem](../../mfc/reference/coleserveritem-class.md) objects, which represent the server interface to embedded or linked items. When a server application is launched by a container to edit an embedded item, the item is loaded as its own server document; the `COleServerDoc` object contains just one `COleServerItem` object, consisting of the entire document. When a server application is launched by a container to edit a linked item, an existing document is loaded from disk; a portion of the document's contents is highlighted to indicate the linked item.  
@@ -111,9 +111,9 @@ class AFX_NOVTABLE COleServerDoc : public COleLinkingDoc
   
  If your server application does not support links, a server document will always contain only one server item, which represents the entire embedded object as a document. If your server application does support links, it must create a server item each time a selection is copied to the Clipboard.  
   
- To use `COleServerDoc`, derive a class from it and implement the [OnGetEmbeddedItem](#coleserverdoc__ongetembeddeditem) member function, which allows your server to support embedded items. Derive a class from `COleServerItem` to implement the items in your documents, and return objects of that class from `OnGetEmbeddedItem`.  
+ To use `COleServerDoc`, derive a class from it and implement the [OnGetEmbeddedItem](#ongetembeddeditem) member function, which allows your server to support embedded items. Derive a class from `COleServerItem` to implement the items in your documents, and return objects of that class from `OnGetEmbeddedItem`.  
   
- To support linked items, `COleServerDoc` provides the [OnGetLinkedItem](../../mfc/reference/colelinkingdoc-class.md#colelinkingdoc__ongetlinkeditem) member function. You can use the default implementation or override it if you have your own way of managing document items.  
+ To support linked items, `COleServerDoc` provides the [OnGetLinkedItem](../../mfc/reference/colelinkingdoc-class.md#ongetlinkeditem) member function. You can use the default implementation or override it if you have your own way of managing document items.  
   
  You need one `COleServerDoc`-derived class for each type of server document your application supports. For example, if your server application supports worksheets and charts, you need two `COleServerDoc`-derived classes.  
   
@@ -135,7 +135,7 @@ class AFX_NOVTABLE COleServerDoc : public COleLinkingDoc
 ## Requirements  
  **Header:** afxole.h  
   
-##  <a name="coleserverdoc__activatedocobject"></a>  COleServerDoc::ActivateDocObject  
+##  <a name="activatedocobject"></a>  COleServerDoc::ActivateDocObject  
  Activates the associated DocObject document.  
   
 ```  
@@ -143,9 +143,9 @@ void ActivateDocObject();
 ```  
   
 ### Remarks  
- By default, `COleServerDoc` does not support Active documents (also referred to as DocObjects). To enable this support, see [GetDocObjectServer](#coleserverdoc__getdocobjectserver) and class [CDocObjectServer](../../mfc/reference/cdocobjectserver-class.md).  
+ By default, `COleServerDoc` does not support Active documents (also referred to as DocObjects). To enable this support, see [GetDocObjectServer](#getdocobjectserver) and class [CDocObjectServer](../../mfc/reference/cdocobjectserver-class.md).  
   
-##  <a name="coleserverdoc__activateinplace"></a>  COleServerDoc::ActivateInPlace  
+##  <a name="activateinplace"></a>  COleServerDoc::ActivateInPlace  
  Activates the item for in-place editing.  
   
 ```  
@@ -158,9 +158,9 @@ BOOL ActivateInPlace();
 ### Remarks  
  This function performs all operations necessary for in-place activation. It creates an in-place frame window, activates it and sizes it to the item, sets up shared menus and other controls, scrolls the item into view, and sets the focus to the in-place frame window.  
   
- This function is called by the default implementation of [COleServerItem::OnShow](../../mfc/reference/coleserveritem-class.md#coleserveritem__onshow). Call this function if your application supports another verb for in-place activation (such as Play).  
+ This function is called by the default implementation of [COleServerItem::OnShow](../../mfc/reference/coleserveritem-class.md#onshow). Call this function if your application supports another verb for in-place activation (such as Play).  
   
-##  <a name="coleserverdoc__coleserverdoc"></a>  COleServerDoc::COleServerDoc  
+##  <a name="coleserverdoc"></a>  COleServerDoc::COleServerDoc  
  Constructs a `COleServerDoc` object without connecting with the OLE system DLLs.  
   
 ```  
@@ -168,9 +168,9 @@ COleServerDoc();
 ```  
   
 ### Remarks  
- You must call [COleLinkingDoc::Register](../../mfc/reference/colelinkingdoc-class.md#colelinkingdoc__register) to open communications with OLE. If you are using [COleTemplateServer](../../mfc/reference/coletemplateserver-class.md) in your application, `COleLinkingDoc::Register` is called for you by `COleLinkingDoc`'s implementation of `OnNewDocument`, `OnOpenDocument`, and `OnSaveDocument`.  
+ You must call [COleLinkingDoc::Register](../../mfc/reference/colelinkingdoc-class.md#register) to open communications with OLE. If you are using [COleTemplateServer](../../mfc/reference/coletemplateserver-class.md) in your application, `COleLinkingDoc::Register` is called for you by `COleLinkingDoc`'s implementation of `OnNewDocument`, `OnOpenDocument`, and `OnSaveDocument`.  
   
-##  <a name="coleserverdoc__createinplaceframe"></a>  COleServerDoc::CreateInPlaceFrame  
+##  <a name="createinplaceframe"></a>  COleServerDoc::CreateInPlaceFrame  
  The framework calls this function to create a frame window for in-place editing.  
   
 ```  
@@ -189,7 +189,7 @@ virtual COleIPFrameWnd* CreateInPlaceFrame(CWnd* pParentWnd);
   
  This is an advanced overridable.  
   
-##  <a name="coleserverdoc__deactivateandundo"></a>  COleServerDoc::DeactivateAndUndo  
+##  <a name="deactivateandundo"></a>  COleServerDoc::DeactivateAndUndo  
  Call this function if your application supports Undo and the user chooses Undo after activating an item but before editing it.  
   
 ```  
@@ -200,9 +200,9 @@ BOOL DeactivateAndUndo();
  Nonzero on success; otherwise 0.  
   
 ### Remarks  
- If the container application is written using the Microsoft Foundation Class Library, calling this function causes [COleClientItem::OnDeactivateAndUndo](../../mfc/reference/coleclientitem-class.md#coleclientitem__ondeactivateandundo) to be called, which deactivates the server's user interface.  
+ If the container application is written using the Microsoft Foundation Class Library, calling this function causes [COleClientItem::OnDeactivateAndUndo](../../mfc/reference/coleclientitem-class.md#ondeactivateandundo) to be called, which deactivates the server's user interface.  
   
-##  <a name="coleserverdoc__destroyinplaceframe"></a>  COleServerDoc::DestroyInPlaceFrame  
+##  <a name="destroyinplaceframe"></a>  COleServerDoc::DestroyInPlaceFrame  
  The framework calls this function to destroy an in-place frame window and return the server application's document window to its state before in-place activation.  
   
 ```  
@@ -216,7 +216,7 @@ virtual void DestroyInPlaceFrame(COleIPFrameWnd* pFrameWnd);
 ### Remarks  
  This is an advanced overridable.  
   
-##  <a name="coleserverdoc__discardundostate"></a>  COleServerDoc::DiscardUndoState  
+##  <a name="discardundostate"></a>  COleServerDoc::DiscardUndoState  
  If the user performs an editing operation that cannot be undone, call this function to force the container application to discard its undo-state information.  
   
 ```  
@@ -229,7 +229,7 @@ BOOL DiscardUndoState();
 ### Remarks  
  This function is provided so that servers that support Undo can free resources that would otherwise be consumed by undo-state information that cannot be used.  
   
-##  <a name="coleserverdoc__getclientsite"></a>  COleServerDoc::GetClientSite  
+##  <a name="getclientsite"></a>  COleServerDoc::GetClientSite  
  Retrieves a pointer to the underlying `IOleClientSite` interface.  
   
 ```  
@@ -241,7 +241,7 @@ LPOLECLIENTSITE GetClientSite() const;
 ### Return Value  
  Retrieves a pointer to the underlying [IOleClientSite](http://msdn.microsoft.com/library/windows/desktop/ms693706) interface.  
   
-##  <a name="coleserverdoc__getdocobjectserver"></a>  COleServerDoc::GetDocObjectServer  
+##  <a name="getdocobjectserver"></a>  COleServerDoc::GetDocObjectServer  
  Override this function to create a new `CDocObjectServer` item and return a pointer to it.  
   
 ```  
@@ -260,9 +260,9 @@ virtual CDocObjectServer* GetDocObjectServer(LPOLEDOCUMENTSITE pDocSite);
   
  A typical implementation for a document that supports DocObjects will simply allocate a new `CDocObjectServer` object and return it to the caller. For example:  
   
- [!code-cpp[NVC_MFCOleServer#3](../../mfc/codesnippet/CPP/coleserverdoc-class_1.cpp)]  
+ [!code-cpp[NVC_MFCOleServer#3](../../mfc/codesnippet/cpp/coleserverdoc-class_1.cpp)]  
   
-##  <a name="coleserverdoc__getembeddeditem"></a>  COleServerDoc::GetEmbeddedItem  
+##  <a name="getembeddeditem"></a>  COleServerDoc::GetEmbeddedItem  
  Call this function to get a pointer to an item representing the entire document.  
   
 ```  
@@ -273,9 +273,9 @@ COleServerItem* GetEmbeddedItem();
  A pointer to an item representing the entire document; **NULL** if the operation failed.  
   
 ### Remarks  
- It calls [COleServerDoc::OnGetEmbeddedItem](#coleserverdoc__ongetembeddeditem), a virtual function with no default implementation.  
+ It calls [COleServerDoc::OnGetEmbeddedItem](#ongetembeddeditem), a virtual function with no default implementation.  
   
-##  <a name="coleserverdoc__getitemcliprect"></a>  COleServerDoc::GetItemClipRect  
+##  <a name="getitemcliprect"></a>  COleServerDoc::GetItemClipRect  
  Call the `GetItemClipRect` member function to get the clipping-rectangle coordinates of the item that is being edited in place.  
   
 ```  
@@ -291,9 +291,9 @@ void GetItemClipRect(LPRECT lpClipRect) const;
 ### Remarks  
  Coordinates are in pixels relative to the container application window's client area.  
   
- Drawing should not occur outside the clipping rectangle. Usually, drawing is automatically restricted. Use this function to determine whether the user has scrolled outside the visible portion of the document; if so, scroll the container document as needed by means of a call to [ScrollContainerBy](#coleserverdoc__scrollcontainerby).  
+ Drawing should not occur outside the clipping rectangle. Usually, drawing is automatically restricted. Use this function to determine whether the user has scrolled outside the visible portion of the document; if so, scroll the container document as needed by means of a call to [ScrollContainerBy](#scrollcontainerby).  
   
-##  <a name="coleserverdoc__getitemposition"></a>  COleServerDoc::GetItemPosition  
+##  <a name="getitemposition"></a>  COleServerDoc::GetItemPosition  
  Call the `GetItemPosition` member function to get the coordinates of the item being edited in place.  
   
 ```  
@@ -311,7 +311,7 @@ void GetItemPosition(LPRECT lpPosRect) const;
   
  The item's position can be compared with the current clipping rectangle to determine the extent to which the item is visible (or not visible) on the screen.  
   
-##  <a name="coleserverdoc__getzoomfactor"></a>  COleServerDoc::GetZoomFactor  
+##  <a name="getzoomfactor"></a>  COleServerDoc::GetZoomFactor  
  The `GetZoomFactor` member function determines the "zoom factor" of an item that has been activated for in-place editing.  
   
 ```  
@@ -337,11 +337,11 @@ BOOL GetZoomFactor(
  Nonzero if the item is activated for in-place editing and its zoom factor is other than 100% (1:1); otherwise 0.  
   
 ### Remarks  
- The zoom factor, in pixels, is the proportion of the item's size to its current extent. If the container application has not set the item's extent, its natural extent (as determined by [COleServerItem::OnGetExtent](../../mfc/reference/coleserveritem-class.md#coleserveritem__ongetextent)) is used.  
+ The zoom factor, in pixels, is the proportion of the item's size to its current extent. If the container application has not set the item's extent, its natural extent (as determined by [COleServerItem::OnGetExtent](../../mfc/reference/coleserveritem-class.md#ongetextent)) is used.  
   
  The function sets its first two arguments to the numerator and denominator of the item's "zoom factor." If the item is not being edited in place, the function sets these arguments to a default value of 100% (or 1:1) and returns zero. For further information, see Technical Note 40, [MFC/OLE In-Place Resizing and Zooming](../../mfc/tn040-mfc-ole-in-place-resizing-and-zooming.md).  
   
-##  <a name="coleserverdoc__isdocobject"></a>  COleServerDoc::IsDocObject  
+##  <a name="isdocobject"></a>  COleServerDoc::IsDocObject  
  Determines if the document is a DocObject.  
   
 ```  
@@ -353,7 +353,7 @@ BOOL IsDocObject() const;
 ### Return Value  
  **TRUE** if the document is a DocObject; otherwise **FALSE**.  
   
-##  <a name="coleserverdoc__isembedded"></a>  COleServerDoc::IsEmbedded  
+##  <a name="isembedded"></a>  COleServerDoc::IsEmbedded  
  Call the `IsEmbedded` member function to determine whether the document represents an object embedded in a container.  
   
 ```  
@@ -368,7 +368,7 @@ BOOL IsEmbedded() const;
 ### Remarks  
  A document loaded from a file is not embedded although it may be manipulated by a container application as a link. A document that is embedded in a container document is considered to be embedded.  
   
-##  <a name="coleserverdoc__isinplaceactive"></a>  COleServerDoc::IsInPlaceActive  
+##  <a name="isinplaceactive"></a>  COleServerDoc::IsInPlaceActive  
  Call the `IsInPlaceActive` member function to determine whether the item is currently in the in-place active state.  
   
 ```  
@@ -380,7 +380,7 @@ BOOL IsInPlaceActive() const;
 ### Return Value  
  Nonzero if the `COleServerDoc` object is active in place; otherwise 0.  
   
-##  <a name="coleserverdoc__notifychanged"></a>  COleServerDoc::NotifyChanged  
+##  <a name="notifychanged"></a>  COleServerDoc::NotifyChanged  
  Call this function to notify all linked items connected to the document that the document has changed.  
   
 ```  
@@ -388,12 +388,12 @@ void NotifyChanged();
 ```  
   
 ### Remarks  
- Typically, you call this function after the user changes some global attribute such as the dimensions of the server document. If an OLE item is linked to the document with an automatic link, the item is updated to reflect the changes. In container applications written with the Microsoft Foundation Class Library, the [OnChange](../../mfc/reference/coleclientitem-class.md#coleclientitem__onchange) member function of `COleClientItem` is called.  
+ Typically, you call this function after the user changes some global attribute such as the dimensions of the server document. If an OLE item is linked to the document with an automatic link, the item is updated to reflect the changes. In container applications written with the Microsoft Foundation Class Library, the [OnChange](../../mfc/reference/coleclientitem-class.md#onchange) member function of `COleClientItem` is called.  
   
 > [!NOTE]
->  This function is included for compatibility with OLE 1. New applications should use [UpdateAllItems](#coleserverdoc__updateallitems).  
+>  This function is included for compatibility with OLE 1. New applications should use [UpdateAllItems](#updateallitems).  
   
-##  <a name="coleserverdoc__notifyclosed"></a>  COleServerDoc::NotifyClosed  
+##  <a name="notifyclosed"></a>  COleServerDoc::NotifyClosed  
  Call this function to notify the container(s) that the document has been closed.  
   
 ```  
@@ -401,9 +401,9 @@ void NotifyClosed();
 ```  
   
 ### Remarks  
- When the user chooses the Close command from the File menu, `NotifyClosed` is called by `COleServerDoc`'s implementation of the [OnCloseDocument](../../mfc/reference/cdocument-class.md#cdocument__onclosedocument) member function. In container applications written with the Microsoft Foundation Class Library, the [OnChange](../../mfc/reference/coleclientitem-class.md#coleclientitem__onchange) member function of `COleClientItem` is called.  
+ When the user chooses the Close command from the File menu, `NotifyClosed` is called by `COleServerDoc`'s implementation of the [OnCloseDocument](../../mfc/reference/cdocument-class.md#onclosedocument) member function. In container applications written with the Microsoft Foundation Class Library, the [OnChange](../../mfc/reference/coleclientitem-class.md#onchange) member function of `COleClientItem` is called.  
   
-##  <a name="coleserverdoc__notifyrename"></a>  COleServerDoc::NotifyRename  
+##  <a name="notifyrename"></a>  COleServerDoc::NotifyRename  
  Call this function after the user renames the server document.  
   
 ```  
@@ -415,9 +415,9 @@ void NotifyRename(LPCTSTR lpszNewName);
  Pointer to a string specifying the new name of the server document; this is typically a fully qualified path.  
   
 ### Remarks  
- When the user chooses the Save As command from the File menu, `NotifyRename` is called by `COleServerDoc`'s implementation of the [OnSaveDocument](../../mfc/reference/cdocument-class.md#cdocument__onsavedocument) member function. This function notifies the OLE system DLLs, which in turn notify the containers. In container applications written with the Microsoft Foundation Class Library, the [OnChange](../../mfc/reference/coleclientitem-class.md#coleclientitem__onchange) member function of `COleClientItem` is called.  
+ When the user chooses the Save As command from the File menu, `NotifyRename` is called by `COleServerDoc`'s implementation of the [OnSaveDocument](../../mfc/reference/cdocument-class.md#onsavedocument) member function. This function notifies the OLE system DLLs, which in turn notify the containers. In container applications written with the Microsoft Foundation Class Library, the [OnChange](../../mfc/reference/coleclientitem-class.md#onchange) member function of `COleClientItem` is called.  
   
-##  <a name="coleserverdoc__notifysaved"></a>  COleServerDoc::NotifySaved  
+##  <a name="notifysaved"></a>  COleServerDoc::NotifySaved  
  Call this function after the user saves the server document.  
   
 ```  
@@ -425,9 +425,9 @@ void NotifySaved();
 ```  
   
 ### Remarks  
- When the user chooses the Save command from the File menu, `NotifySaved` is called for you by `COleServerDoc`'s implementation of [OnSaveDocument](../../mfc/reference/cdocument-class.md#cdocument__onsavedocument). This function notifies the OLE system DLLs, which in turn notify the containers. In container applications written with the Microsoft Foundation Class Library, the [OnChange](../../mfc/reference/coleclientitem-class.md#coleclientitem__onchange) member function of `COleClientItem` is called.  
+ When the user chooses the Save command from the File menu, `NotifySaved` is called for you by `COleServerDoc`'s implementation of [OnSaveDocument](../../mfc/reference/cdocument-class.md#onsavedocument). This function notifies the OLE system DLLs, which in turn notify the containers. In container applications written with the Microsoft Foundation Class Library, the [OnChange](../../mfc/reference/coleclientitem-class.md#onchange) member function of `COleClientItem` is called.  
   
-##  <a name="coleserverdoc__onclose"></a>  COleServerDoc::OnClose  
+##  <a name="onclose"></a>  COleServerDoc::OnClose  
  Called by the framework when a container requests that the server document be closed.  
   
 ```  
@@ -449,7 +449,7 @@ virtual void OnClose(OLECLOSE dwCloseOption);
   
  For more information and additional values, see [OLECLOSE](http://msdn.microsoft.com/library/windows/desktop/ms680623) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="coleserverdoc__ondeactivate"></a>  COleServerDoc::OnDeactivate  
+##  <a name="ondeactivate"></a>  COleServerDoc::OnDeactivate  
  Called by the framework when the user deactivates an embedded or linked item that is currently in-place active.  
   
 ```  
@@ -463,7 +463,7 @@ virtual void OnDeactivate();
   
  For more information, see the article [Activation](../../mfc/activation-cpp.md)..  
   
-##  <a name="coleserverdoc__ondeactivateui"></a>  COleServerDoc::OnDeactivateUI  
+##  <a name="ondeactivateui"></a>  COleServerDoc::OnDeactivateUI  
  Called when the user deactivates an item that was activated in place.  
   
 ```  
@@ -479,7 +479,7 @@ virtual void OnDeactivateUI(BOOL bUndoable);
   
  The framework always sets `bUndoable` to **FALSE**. If the server supports undo and there is an operation that can be undone, call the base-class implementation with `bUndoable` set to **TRUE**.  
   
-##  <a name="coleserverdoc__ondocwindowactivate"></a>  COleServerDoc::OnDocWindowActivate  
+##  <a name="ondocwindowactivate"></a>  COleServerDoc::OnDocWindowActivate  
  The framework calls this function to activate or deactivate a document window for in-place editing.  
   
 ```  
@@ -495,7 +495,7 @@ virtual void OnDocWindowActivate(BOOL bActivate);
   
  For more information, see the article [Activation](../../mfc/activation-cpp.md)..  
   
-##  <a name="coleserverdoc__onexecolecmd"></a>  COleServerDoc::OnExecOleCmd  
+##  <a name="onexecolecmd"></a>  COleServerDoc::OnExecOleCmd  
  The framework calls this function to execute a specified command or display help for the command.  
   
 ```  
@@ -556,7 +556,7 @@ virtual HRESULT OnExecOleCmd(
   
  The base-class implementation of this function will walk the **OLE_COMMAND_MAP** structures associated with the command target and try to dispatch the command to an appropriate handler. The base-class implementation works only with commands that do not accept arguments or return values. If you need to handle commands that do accept arguments or return values, you must override this function and work with the `pvarargIn` and `pvarargOut` parameters yourself.  
   
-##  <a name="coleserverdoc__onframewindowactivate"></a>  COleServerDoc::OnFrameWindowActivate  
+##  <a name="onframewindowactivate"></a>  COleServerDoc::OnFrameWindowActivate  
  The framework calls this function when the container application's frame window is activated or deactivated.  
   
 ```  
@@ -572,7 +572,7 @@ virtual void OnFrameWindowActivate(BOOL bActivate);
   
  For more information, see the article [Activation](../../mfc/activation-cpp.md)..  
   
-##  <a name="coleserverdoc__ongetembeddeditem"></a>  COleServerDoc::OnGetEmbeddedItem  
+##  <a name="ongetembeddeditem"></a>  COleServerDoc::OnGetEmbeddedItem  
  Called by the framework when a container application calls the server application to create or edit an embedded item.  
   
 ```  
@@ -585,7 +585,7 @@ virtual COleServerItem* OnGetEmbeddedItem() = 0;
 ### Remarks  
  There is no default implementation. You must override this function to return an item that represents the entire document. This return value should be an object of a `COleServerItem`-derived class.  
   
-##  <a name="coleserverdoc__onreactivateandundo"></a>  COleServerDoc::OnReactivateAndUndo  
+##  <a name="onreactivateandundo"></a>  COleServerDoc::OnReactivateAndUndo  
  The framework calls this function when the user chooses to undo changes made to an item that has been activated in place, changed, and subsequently deactivated.  
   
 ```  
@@ -600,7 +600,7 @@ virtual BOOL OnReactivateAndUndo();
   
  Override this function if your application supports undo. Usually you would perform the undo operation, then activate the item by calling `ActivateInPlace`. If the container application is written with the Microsoft Foundation Class Library, calling `COleClientItem::ReactivateAndUndo` causes this function to be called.  
   
-##  <a name="coleserverdoc__onresizeborder"></a>  COleServerDoc::OnResizeBorder  
+##  <a name="onresizeborder"></a>  COleServerDoc::OnResizeBorder  
  The framework calls this function when the container application's frame windows change size.  
   
 ```  
@@ -627,7 +627,7 @@ virtual void OnResizeBorder(
   
  This is an advanced overridable.  
   
-##  <a name="coleserverdoc__onsethostnames"></a>  COleServerDoc::OnSetHostNames  
+##  <a name="onsethostnames"></a>  COleServerDoc::OnSetHostNames  
  Called by the framework when the container sets or changes the host names for this document.  
   
 ```  
@@ -648,7 +648,7 @@ virtual void OnSetHostNames(
   
  Override this function if your application sets the titles through a different mechanism.  
   
-##  <a name="coleserverdoc__onsetitemrects"></a>  COleServerDoc::OnSetItemRects  
+##  <a name="onsetitemrects"></a>  COleServerDoc::OnSetItemRects  
  The framework calls this function to position the in-place editing frame window within the container application's frame window.  
   
 ```  
@@ -669,7 +669,7 @@ virtual void OnSetItemRects(
   
  This function is usually called in response to a `RequestPositionChange` call, although it can be called at any time by the container to request a position change for the in-place item.  
   
-##  <a name="coleserverdoc__onshowcontrolbars"></a>  COleServerDoc::OnShowControlBars  
+##  <a name="onshowcontrolbars"></a>  COleServerDoc::OnShowControlBars  
  The framework calls this function to show or hide the server application's control bars associated with the frame window identified by `pFrameWnd`.  
   
 ```  
@@ -688,7 +688,7 @@ virtual void OnShowControlBars(
 ### Remarks  
  The default implementation enumerates all control bars owned by that frame window and hides or shows them.  
   
-##  <a name="coleserverdoc__onshowdocument"></a>  COleServerDoc::OnShowDocument  
+##  <a name="onshowdocument"></a>  COleServerDoc::OnShowDocument  
  The framework calls the `OnShowDocument` function when the server document must be hidden or shown.  
   
 ```  
@@ -702,7 +702,7 @@ virtual void OnShowDocument(BOOL bShow);
 ### Remarks  
  If `bShow` is **TRUE**, the default implementation activates the server application, if necessary, and causes the container application to scroll its window so that the item is visible. If `bShow` is **FALSE**, the default implementation deactivates the item through a call to `OnDeactivate`, then destroys or hides all frame windows that have been created for the document, except the first one. If no visible documents remain, the default implementation hides the server application.  
   
-##  <a name="coleserverdoc__onupdatedocument"></a>  COleServerDoc::OnUpdateDocument  
+##  <a name="onupdatedocument"></a>  COleServerDoc::OnUpdateDocument  
  Called by the framework when saving a document that is an embedded item in a compound document.  
   
 ```  
@@ -713,9 +713,9 @@ virtual BOOL OnUpdateDocument();
  Nonzero if the document was successfully updated; otherwise 0.  
   
 ### Remarks  
- The default implementation calls the [COleServerDoc::NotifySaved](#coleserverdoc__notifysaved) and [COleServerDoc::SaveEmbedding](#coleserverdoc__saveembedding) member functions and then marks the document as clean. Override this function if you want to perform special processing when updating an embedded item.  
+ The default implementation calls the [COleServerDoc::NotifySaved](#notifysaved) and [COleServerDoc::SaveEmbedding](#saveembedding) member functions and then marks the document as clean. Override this function if you want to perform special processing when updating an embedded item.  
   
-##  <a name="coleserverdoc__requestpositionchange"></a>  COleServerDoc::RequestPositionChange  
+##  <a name="requestpositionchange"></a>  COleServerDoc::RequestPositionChange  
  Call this member function to have the container application change the item's position.  
   
 ```  
@@ -729,7 +729,7 @@ void RequestPositionChange(LPCRECT lpPosRect);
 ### Remarks  
  This function is usually called (in conjunction with `UpdateAllItems`) when the data in an in-place active item has changed. Following this call, the container might or might not perform the change by calling `OnSetItemRects`. The resulting position might be different from the one requested.  
   
-##  <a name="coleserverdoc__saveembedding"></a>  COleServerDoc::SaveEmbedding  
+##  <a name="saveembedding"></a>  COleServerDoc::SaveEmbedding  
  Call this function to tell the container application to save the embedded object.  
   
 ```  
@@ -739,7 +739,7 @@ void SaveEmbedding();
 ### Remarks  
  This function is called automatically from `OnUpdateDocument`. Note that this function causes the item to be updated on disk, so it is usually called only as a result of a specific user action.  
   
-##  <a name="coleserverdoc__scrollcontainerby"></a>  COleServerDoc::ScrollContainerBy  
+##  <a name="scrollcontainerby"></a>  COleServerDoc::ScrollContainerBy  
  Call the `ScrollContainerBy` member function to scroll the container document by the amount, in pixels, indicated by `sizeScroll`.  
   
 ```  
@@ -756,7 +756,7 @@ BOOL ScrollContainerBy(CSize sizeScroll);
 ### Remarks  
  Positive values indicate scrolling down and to the right; negative values indicate scrolling up and to the left.  
   
-##  <a name="coleserverdoc__updateallitems"></a>  COleServerDoc::UpdateAllItems  
+##  <a name="updateallitems"></a>  COleServerDoc::UpdateAllItems  
  Call this function to notify all linked items connected to the document that the document has changed.  
   
 ```  
@@ -789,12 +789,12 @@ void UpdateAllItems(
 - `DVASPECT_DOCPRINT` Item is represented as if it were printed using the Print command from the File menu.  
   
 ### Remarks  
- You typically call this function after the user changes the server document. If an OLE item is linked to the document with an automatic link, the item is updated to reflect the changes. In container applications written with the Microsoft Foundation Class Library, the [OnChange](../../mfc/reference/coleclientitem-class.md#coleclientitem__onchange) member function of `COleClientItem` is called.  
+ You typically call this function after the user changes the server document. If an OLE item is linked to the document with an automatic link, the item is updated to reflect the changes. In container applications written with the Microsoft Foundation Class Library, the [OnChange](../../mfc/reference/coleclientitem-class.md#onchange) member function of `COleClientItem` is called.  
   
  This function calls the `OnUpdate` member function for each of the document's items except the sending item, passing `pHint`, `lHint`, and `nDrawAspect`. Use these parameters to pass information to the items about the modifications made to the document. You can encode information using `lHint` or you can define a `CObject`-derived class to store information about the modifications and pass an object of that class using `pHint`. Override the `OnUpdate` member function in your `COleServerItem`-derived class to optimize the updating of each item depending on whether its presentation has changed.  
   
 ## See Also  
- [MFC Sample HIERSVR](../../top/visual-cpp-samples.md)   
+ [MFC Sample HIERSVR](../../visual-cpp-samples.md)   
  [COleLinkingDoc Class](../../mfc/reference/colelinkingdoc-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [COleDocument Class](../../mfc/reference/coledocument-class.md)   

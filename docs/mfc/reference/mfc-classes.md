@@ -579,7 +579,7 @@ The classes in the following list are included in the Microsoft Foundation Class
  Extends the functionality of [CFrameWnd Class](../../mfc/reference/cframewnd-class.md), a Windows Multiple Document Interface (MDI) frame window.  
   
  [CMDITabInfo Class](../../mfc/reference/cmditabinfo-class.md)  
- Used to pass parameters to [CMDIFrameWndEx::EnableMDITabbedGroups](../../mfc/reference/cmdiframewndex-class.md#cmdiframewndex__enablemditabbedgroups) method. Set members of this class to control the behavior of MDI tabbed groups.  
+ Used to pass parameters to [CMDIFrameWndEx::EnableMDITabbedGroups](../../mfc/reference/cmdiframewndex-class.md#enablemditabbedgroups) method. Set members of this class to control the behavior of MDI tabbed groups.  
   
  [CMemFile Class](../../mfc/reference/cmemfile-class.md)  
  The [CFile Class](../../mfc/reference/cfile-class.md)-derived class that supports memory files.  
@@ -834,7 +834,7 @@ The classes in the following list are included in the Microsoft Foundation Class
  Manages toolbar images loaded from application resources or from files.  
   
  [CMFCToolBarInfo Class](../../mfc/reference/cmfctoolbarinfo-class.md)  
- Contains the resource IDs of toolbar images in various states. `CMFCToolBarInfo` is a helper class that is used as a parameter of the [CMFCToolBar::LoadToolBarEx](../../mfc/reference/cmfctoolbar-class.md#cmfctoolbar__loadtoolbarex) method.  
+ Contains the resource IDs of toolbar images in various states. `CMFCToolBarInfo` is a helper class that is used as a parameter of the [CMFCToolBar::LoadToolBarEx](../../mfc/reference/cmfctoolbar-class.md#loadtoolbarex) method.  
   
  [CMFCToolBarMenuButton Class](../../mfc/reference/cmfctoolbarmenubutton-class.md)  
  A toolbar button that contains a pop-up menu.  
@@ -1119,7 +1119,7 @@ The classes in the following list are included in the Microsoft Foundation Class
  A view that displays database records in controls.  
   
  [CRect Class](../../atl-mfc-shared/reference/crect-class.md)  
- Similar to a Windows [RECT structure](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/18113766-3975-4369-bc07-92e34cba712e/locales/en-US).  
+ Similar to a Windows [RECT structure](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/18113766-3975-4369-bc07-92e34cba712e/locales/en-us).  
   
  [CRectTracker Class](../../mfc/reference/crecttracker-class.md)  
  Enables an item to be displayed, moved, and resized in different fashions.  
@@ -1211,7 +1211,7 @@ The classes in the following list are included in the Microsoft Foundation Class
  [CSplitterWnd Class](../../mfc/reference/csplitterwnd-class.md)  
  Provides the functionality of a splitter window, which is a window that contains multiple panes.  
   
- [CSplitterWndEx Class](../Topic/CSplitterWndEx%20Class.md)  
+ [CSplitterWndEx Class](csplitterwndex-class.md)  
  Represents a customized splitter window.  
   
  [CStatic Class](../../mfc/reference/cstatic-class.md)  

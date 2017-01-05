@@ -49,24 +49,24 @@ class CMFCLinkCtrl : public CMFCButton
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCLinkCtrl::SetURL](#cmfclinkctrl__seturl)|Displays a specified URL as the button text.|  
-|[CMFCLinkCtrl::SetURLPrefix](#cmfclinkctrl__seturlprefix)|Sets the implicit protocol (for example, "http:") of the URL.|  
-|[CMFCLinkCtrl::SizeToContent](#cmfclinkctrl__sizetocontent)|Resizes the button to contain the button text or bitmap.|  
+|[CMFCLinkCtrl::SetURL](#seturl)|Displays a specified URL as the button text.|  
+|[CMFCLinkCtrl::SetURLPrefix](#seturlprefix)|Sets the implicit protocol (for example, "http:") of the URL.|  
+|[CMFCLinkCtrl::SizeToContent](#sizetocontent)|Resizes the button to contain the button text or bitmap.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCLinkCtrl::OnDrawFocusRect](#cmfclinkctrl__ondrawfocusrect)|Called by the framework before the focus rectangle of the button is drawn.|  
+|[CMFCLinkCtrl::OnDrawFocusRect](#ondrawfocusrect)|Called by the framework before the focus rectangle of the button is drawn.|  
   
 ## Remarks  
  When you click a button that is derived from the `CMFCLinkCtrl` class, the framework passes the URL of the button as a parameter to the `ShellExecute` method. Then the `ShellExecute` method opens the target of the URL.  
   
 ## Example  
- The following example demonstrates how to set the size of a `CMFCLinkCtrl` object, and how to set a url and a tooltip in a `CMFCLinkCtrl` object. This example is part of the [New Controls sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to set the size of a `CMFCLinkCtrl` object, and how to set a url and a tooltip in a `CMFCLinkCtrl` object. This example is part of the [New Controls sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_NewControls#9](../../mfc/reference/codesnippet/CPP/cmfclinkctrl-class_1.h)]  
-[!code-cpp[NVC_MFC_NewControls#10](../../mfc/reference/codesnippet/CPP/cmfclinkctrl-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_NewControls#9](../../mfc/reference/codesnippet/cpp/cmfclinkctrl-class_1.h)]  
+[!code-cpp[NVC_MFC_NewControls#10](../../mfc/reference/codesnippet/cpp/cmfclinkctrl-class_2.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -84,7 +84,7 @@ class CMFCLinkCtrl : public CMFCButton
 ## Requirements  
  **Header:** afxlinkctrl.h  
   
-##  <a name="cmfclinkctrl__ondrawfocusrect"></a>  CMFCLinkCtrl::OnDrawFocusRect  
+##  <a name="ondrawfocusrect"></a>  CMFCLinkCtrl::OnDrawFocusRect  
  Called by the framework before the focus rectangle of the button is drawn.  
   
 ```  
@@ -103,7 +103,7 @@ virtual void OnDrawFocusRect(
 ### Remarks  
  Override this method when you want to use your own code to draw the button's focus rectangle.  
   
-##  <a name="cmfclinkctrl__seturl"></a>  CMFCLinkCtrl::SetURL  
+##  <a name="seturl"></a>  CMFCLinkCtrl::SetURL  
  Displays a specified URL as the button text.  
   
 ```  
@@ -116,7 +116,7 @@ void SetURL(LPCTSTR lpszURL);
   
 ### Remarks  
   
-##  <a name="cmfclinkctrl__seturlprefix"></a>  CMFCLinkCtrl::SetURLPrefix  
+##  <a name="seturlprefix"></a>  CMFCLinkCtrl::SetURLPrefix  
  Sets the implicit protocol (for example, "http:") of the URL.  
   
 ```  
@@ -130,7 +130,7 @@ void SetURLPrefix(LPCTSTR lpszPrefix);
 ### Remarks  
  Use this method to set the URL prefix. The prefix is not displayed on the button's face, but you can use it to help browse to the URL's target.  
   
-##  <a name="cmfclinkctrl__sizetocontent"></a>  CMFCLinkCtrl::SizeToContent  
+##  <a name="sizetocontent"></a>  CMFCLinkCtrl::SizeToContent  
  Resizes the button to contain the button text or bitmap.  
   
 ```  

@@ -49,7 +49,8 @@ template<class ThreadModel>  class CComObjectRootEx : public CComObjectRootBase
   
 #### Parameters  
  `ThreadModel`  
- The class whose methods implement the desired threading model. You can explicitly choose the threading model by setting `ThreadModel` to [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md), [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md), or [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md). You can accept the server's default thread model by setting `ThreadModel` to [CComObjectThreadModel](../Topic/CComObjectThreadModel.md) or [CComGlobalsThreadModel](../Topic/CComGlobalsThreadModel.md).  
+ The class whose methods implement the desired threading model. You can explicitly choose the threading model by setting `ThreadModel` to [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md), [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md), or [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md). You can accept the server's default thread model by setting `ThreadModel` to [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) or [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel).  
+
   
 ## Members  
   
@@ -57,42 +58,42 @@ template<class ThreadModel>  class CComObjectRootEx : public CComObjectRootBase
   
 |||  
 |-|-|  
-|[CComObjectRootEx](#ccomobjectrootex__ccomobjectrootex)|Constructor.|  
-|[InternalAddRef](#ccomobjectrootex__internaladdref)|Increments the reference count for a nonaggregated object.|  
-|[InternalRelease](#ccomobjectrootex__internalrelease)|Decrements the reference count for a nonaggregated object.|  
-|[Lock](#ccomobjectrootex__lock)|If the thread model is multithreaded, obtains ownership of a critical section object.|  
-|[Unlock](#ccomobjectrootex__unlock)|If the thread model is multithreaded, releases ownership of a critical section object.|  
+|[CComObjectRootEx](#ccomobjectrootex)|Constructor.|  
+|[InternalAddRef](#internaladdref)|Increments the reference count for a nonaggregated object.|  
+|[InternalRelease](#internalrelease)|Decrements the reference count for a nonaggregated object.|  
+|[Lock](#lock)|If the thread model is multithreaded, obtains ownership of a critical section object.|  
+|[Unlock](#unlock)|If the thread model is multithreaded, releases ownership of a critical section object.|  
   
 ### CComObjectRootBase Methods  
   
 |||  
 |-|-|  
-|[FinalConstruct](#ccomobjectrootex__finalconstruct)|Override in your class to perform any initialization required by your object.|  
-|[FinalRelease](#ccomobjectrootex__finalrelease)|Override in your class to perform any cleanup required by your object.|  
-|[OuterAddRef](#ccomobjectrootex__outeraddref)|Increments the reference count for an aggregated object.|  
-|[OuterQueryInterface](#ccomobjectrootex__outerqueryinterface)|Delegates to the outer **IUnknown** of an aggregated object.|  
-|[OuterRelease](#ccomobjectrootex__outerrelease)|Decrements the reference count for an aggregated object.|  
+|[FinalConstruct](#finalconstruct)|Override in your class to perform any initialization required by your object.|  
+|[FinalRelease](#finalrelease)|Override in your class to perform any cleanup required by your object.|  
+|[OuterAddRef](#outeraddref)|Increments the reference count for an aggregated object.|  
+|[OuterQueryInterface](#outerqueryinterface)|Delegates to the outer **IUnknown** of an aggregated object.|  
+|[OuterRelease](#outerrelease)|Decrements the reference count for an aggregated object.|  
   
 ### Static Functions  
   
 |||  
 |-|-|  
-|[InternalQueryInterface](#ccomobjectrootex__internalqueryinterface)|Delegates to the **IUnknown** of a nonaggregated object.|  
-|[ObjectMain](#ccomobjectrootex__objectmain)|Called during module initialization and termination for derived classes listed in the object map.|  
+|[InternalQueryInterface](#internalqueryinterface)|Delegates to the **IUnknown** of a nonaggregated object.|  
+|[ObjectMain](#objectmain)|Called during module initialization and termination for derived classes listed in the object map.|  
   
 ### Data Members  
   
 |||  
 |-|-|  
-|[m_dwRef](#ccomobjectrootex__m_dwref)|With `m_pOuterUnknown`, part of a union. Used when the object is not aggregated to hold the reference count of `AddRef` and **Release**.|  
-|[m_pOuterUnknown](#ccomobjectrootex__m_pouterunknown)|With `m_dwRef`, part of a union. Used when the object is aggregated to hold a pointer to the outer unknown.|  
+|[m_dwRef](#m_dwref)|With `m_pOuterUnknown`, part of a union. Used when the object is not aggregated to hold the reference count of `AddRef` and **Release**.|  
+|[m_pOuterUnknown](#m_pouterunknown)|With `m_dwRef`, part of a union. Used when the object is aggregated to hold a pointer to the outer unknown.|  
   
 ## Remarks  
  `CComObjectRootEx` handles object reference count management for both nonaggregated and aggregated objects. It holds the object reference count if your object is not being aggregated, and holds the pointer to the outer unknown if your object is being aggregated. For aggregated objects, `CComObjectRootEx` methods can be used to handle the failure of the inner object to construct, and to protect the outer object from deletion when inner interfaces are released or the inner object is deleted.  
   
  A class that implements a COM server must inherit from `CComObjectRootEx` or [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md).  
   
- If your class definition specifies the [DECLARE_POLY_AGGREGATABLE](../Topic/DECLARE_POLY_AGGREGATABLE.md) macro, ATL creates an instance of **CComPolyObject\<CYourClass>** when **IClassFactory::CreateInstance** is called. During creation, the value of the outer unknown is checked. If it is **NULL**, **IUnknown** is implemented for a nonaggregated object. If the outer unknown is not **NULL**, **IUnknown** is implemented for an aggregated object.  
+ If your class definition specifies the [DECLARE_POLY_AGGREGATABLE](http://msdn.microsoft.com/library/7569e738-cfbc-4404-ba1d-78dcefa3bdb3) macro, ATL creates an instance of **CComPolyObject\<CYourClass>** when **IClassFactory::CreateInstance** is called. During creation, the value of the outer unknown is checked. If it is **NULL**, **IUnknown** is implemented for a nonaggregated object. If the outer unknown is not **NULL**, **IUnknown** is implemented for an aggregated object.  
   
  If your class does not specify the `DECLARE_POLY_AGGREGATABLE` macro, ATL creates an instance of **CAggComObject\<CYourClass>** for aggregated objects or an instance of **CComObject\<CYourClass>** for nonaggregated objects.  
   
@@ -105,14 +106,14 @@ template<class ThreadModel>  class CComObjectRootEx : public CComObjectRootBase
 ## Requirements  
  **Header:** atlcom.h  
   
-##  <a name="ccomobjectrootex__ccomobjectrootex"></a>  CComObjectRootEx::CComObjectRootEx  
+##  <a name="ccomobjectrootex"></a>  CComObjectRootEx::CComObjectRootEx  
  The constructor initializes the reference count to 0.  
   
 ```
 CComObjectRootEx();
 ```  
   
-##  <a name="ccomobjectrootex__finalconstruct"></a>  CComObjectRootEx::FinalConstruct  
+##  <a name="finalconstruct"></a>  CComObjectRootEx::FinalConstruct  
  You can override this method in your derived class to perform any initialization required for your object.  
   
 ```
@@ -138,9 +139,9 @@ HRESULT FinalConstruct();
 ### Example  
  Typically, override this method in the class derived from `CComObjectRootEx` to create any aggregated objects. For example:  
   
- [!code-cpp[NVC_ATL_COM#40](../../atl/codesnippet/CPP/ccomobjectrootex-class_1.h)]  
+ [!code-cpp[NVC_ATL_COM#40](../../atl/codesnippet/cpp/ccomobjectrootex-class_1.h)]  
   
- If the construction fails, you can return an error. You can also use the macro [DECLARE_PROTECT_FINAL_CONSTRUCT](../Topic/DECLARE_PROTECT_FINAL_CONSTRUCT.md) to protect your outer object from being deleted if, during creation, the internal aggregated object increments the reference count then decrements the count to 0.  
+ If the construction fails, you can return an error. You can also use the macro [DECLARE_PROTECT_FINAL_CONSTRUCT](http://msdn.microsoft.com/library/2d2e5ddc-057a-43ca-87c8-d3477a8193a0) to protect your outer object from being deleted if, during creation, the internal aggregated object increments the reference count then decrements the count to 0.  
   
  Here is a typical way to create an aggregate:  
   
@@ -148,11 +149,11 @@ HRESULT FinalConstruct();
   
 -   Override `FinalConstruct` to create the aggregate.  
   
--   Use the **IUnknown** pointer you defined as the parameter to the [COM_INTERFACE_ENTRY_AGGREGATE](../Topic/COM_INTERFACE_ENTRY_AGGREGATE.md) macro.  
+-   Use the **IUnknown** pointer you defined as the parameter to the [COM_INTERFACE_ENTRY_AGGREGATE](http://msdn.microsoft.com/library/c671fa40-a57b-4797-ae88-c9762dabd4dc) macro.  
   
 -   Override `FinalRelease` to release the **IUnknown** pointer.  
   
-##  <a name="ccomobjectrootex__finalrelease"></a>  CComObjectRootEx::FinalRelease  
+##  <a name="finalrelease"></a>  CComObjectRootEx::FinalRelease  
  You can override this method in your derived class to perform any cleanup required for your object.  
   
 ```
@@ -164,7 +165,7 @@ void FinalRelease();
   
  Performing cleanup in `FinalRelease` is preferable to adding code to the destructor of your class since the object is still fully constructed at the point at which `FinalRelease` is called. This enables you to safely access the methods provided by the most derived class. This is particularly important for freeing any aggregated objects before deletion.  
   
-##  <a name="ccomobjectrootex__internaladdref"></a>  CComObjectRootEx::InternalAddRef  
+##  <a name="internaladdref"></a>  CComObjectRootEx::InternalAddRef  
  Increments the reference count of a nonaggregated object by 1.  
   
 ```
@@ -177,7 +178,7 @@ ULONG InternalAddRef();
 ### Remarks  
  If the thread model is multithreaded, **InterlockedIncrement** is used to prevent more than one thread from changing the reference count at the same time.  
   
-##  <a name="ccomobjectrootex__internalqueryinterface"></a>  CComObjectRootEx::InternalQueryInterface  
+##  <a name="internalqueryinterface"></a>  CComObjectRootEx::InternalQueryInterface  
  Retrieves a pointer to the requested interface.  
   
 ```
@@ -205,9 +206,9 @@ static HRESULT InternalQueryInterface(
  One of the standard `HRESULT` values.  
   
 ### Remarks  
- `InternalQueryInterface` only handles interfaces in the COM map table. If your object is aggregated, `InternalQueryInterface` does not delegate to the outer unknown. You can enter interfaces into the COM map table with the macro [COM_INTERFACE_ENTRY](../Topic/COM_INTERFACE_ENTRY%20Macros.md) or one of its variants.  
+ `InternalQueryInterface` only handles interfaces in the COM map table. If your object is aggregated, `InternalQueryInterface` does not delegate to the outer unknown. You can enter interfaces into the COM map table with the macro [COM_INTERFACE_ENTRY](http://msdn.microsoft.com/library/19dcb768-2e1f-4b8d-a618-453a01a4bd00) or one of its variants.  
   
-##  <a name="ccomobjectrootex__internalrelease"></a>  CComObjectRootEx::InternalRelease  
+##  <a name="internalrelease"></a>  CComObjectRootEx::InternalRelease  
  Decrements the reference count of a nonaggregated object by 1.  
   
 ```
@@ -220,7 +221,7 @@ ULONG InternalRelease();
 ### Remarks  
  If the thread model is multithreaded, **InterlockedDecrement** is used to prevent more than one thread from changing the reference count at the same time.  
   
-##  <a name="ccomobjectrootex__lock"></a>  CComObjectRootEx::Lock  
+##  <a name="lock"></a>  CComObjectRootEx::Lock  
  If the thread model is multithreaded, this method calls the Win32 API function [EnterCriticalSection](http://msdn.microsoft.com/library/windows/desktop/ms682608), which waits until the thread can take ownership of the critical section object obtained through a private data member.  
   
 ```
@@ -232,7 +233,7 @@ void Lock();
   
  If the thread model is single-threaded, this method does nothing.  
   
-##  <a name="ccomobjectrootex__m_dwref"></a>  CComObjectRootEx::m_dwRef  
+##  <a name="m_dwref"></a>  CComObjectRootEx::m_dwRef  
  Part of a union that accesses four bytes of memory.  
   
 ```
@@ -252,9 +253,9 @@ long m_dwRef;
   
  `};`  
   
- If the object is not aggregated, the reference count accessed by `AddRef` and **Release** is stored in `m_dwRef`. If the object is aggregated, the pointer to the outer unknown is stored in [m_pOuterUnknown](#ccomobjectrootex__m_pouterunknown).  
+ If the object is not aggregated, the reference count accessed by `AddRef` and **Release** is stored in `m_dwRef`. If the object is aggregated, the pointer to the outer unknown is stored in [m_pOuterUnknown](#m_pouterunknown).  
   
-##  <a name="ccomobjectrootex__m_pouterunknown"></a>  CComObjectRootEx::m_pOuterUnknown  
+##  <a name="m_pouterunknown"></a>  CComObjectRootEx::m_pOuterUnknown  
  Part of a union that accesses four bytes of memory.  
   
 ```
@@ -275,9 +276,9 @@ IUnknown*
   
  `};`  
   
- If the object is aggregated, the pointer to the outer unknown is stored in `m_pOuterUnknown`. If the object is not aggregated, the reference count accessed by `AddRef` and **Release** is stored in [m_dwRef](#ccomobjectrootex__m_dwref).  
+ If the object is aggregated, the pointer to the outer unknown is stored in `m_pOuterUnknown`. If the object is not aggregated, the reference count accessed by `AddRef` and **Release** is stored in [m_dwRef](#m_dwref).  
   
-##  <a name="ccomobjectrootex__objectmain"></a>  CComObjectRootEx::ObjectMain  
+##  <a name="objectmain"></a>  CComObjectRootEx::ObjectMain  
  For each class listed in the [object map](http://msdn.microsoft.com/en-us/b57619cc-534f-4b8f-bfd4-0c12f937202f), this function is called once when the module is initialized, and again when it is terminated.  
   
 ```
@@ -294,9 +295,9 @@ static void WINAPI ObjectMain(bool bStarting);
  `ObjectMain` is called from the entry point of the DLL, so the type of operation that the entry-point function can perform is restricted. For more information on these restrictions, see [Run-Time Library Behavior](../../build/run-time-library-behavior.md) and [DllMain](http://msdn.microsoft.com/library/windows/desktop/ms682583).  
   
 ### Example  
- [!code-cpp[NVC_ATL_COM#41](../../atl/codesnippet/CPP/ccomobjectrootex-class_2.h)]  
+ [!code-cpp[NVC_ATL_COM#41](../../atl/codesnippet/cpp/ccomobjectrootex-class_2.h)]  
   
-##  <a name="ccomobjectrootex__outeraddref"></a>  CComObjectRootEx::OuterAddRef  
+##  <a name="outeraddref"></a>  CComObjectRootEx::OuterAddRef  
  Increments the reference count of the outer unknown of an aggregation.  
   
 ```
@@ -306,7 +307,7 @@ ULONG OuterAddRef();
 ### Return Value  
  A value that may be useful for diagnostics and testing.  
   
-##  <a name="ccomobjectrootex__outerqueryinterface"></a>  CComObjectRootEx::OuterQueryInterface  
+##  <a name="outerqueryinterface"></a>  CComObjectRootEx::OuterQueryInterface  
  Retrieves an indirect pointer to the requested interface.  
   
 ```
@@ -324,7 +325,7 @@ HRESULT OuterQueryInterface(REFIID iid,
 ### Return Value  
  One of the standard `HRESULT` values.  
   
-##  <a name="ccomobjectrootex__outerrelease"></a>  CComObjectRootEx::OuterRelease  
+##  <a name="outerrelease"></a>  CComObjectRootEx::OuterRelease  
  Decrements the reference count of the outer unknown of an aggregation.  
   
 ```
@@ -334,7 +335,7 @@ ULONG OuterRelease();
 ### Return Value  
  In non-debug builds, always returns 0. In debug builds, returns a value that may be useful for diagnostics or testing.  
   
-##  <a name="ccomobjectrootex__unlock"></a>  CComObjectRootEx::Unlock  
+##  <a name="unlock"></a>  CComObjectRootEx::Unlock  
  If the thread model is multithreaded, this method calls the Win32 API function [LeaveCriticalSection](http://msdn.microsoft.com/library/windows/desktop/ms684169), which releases ownership of the critical section object obtained through a private data member.  
   
 ```

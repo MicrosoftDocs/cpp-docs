@@ -1,5 +1,5 @@
 ---
-title: "How to: Expose an STL-CLR Container from an Assembly | Microsoft Docs"
+title: "How to: Expose an STL/CLR Container from an Assembly | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

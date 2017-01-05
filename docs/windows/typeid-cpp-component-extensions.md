@@ -65,7 +65,7 @@ Platform::Type^ type = T::typeid;
  A type name.  
   
 ### Remarks  
- In [!INCLUDE[cppwrt_short](../build/reference/includes/cppwrt_short_md.md)],  typeid returns a [Platform::Type](../Topic/Platform::Type%20Class.md) that is constructed from runtime type information.  
+ In [!INCLUDE[cppwrt_short](../build/reference/includes/cppwrt_short_md.md)],  typeid returns a [Platform::Type](http://msdn.microsoft.com/Library/d6b03f1e-b240-49b9-a08e-53a460030475) that is constructed from runtime type information.  
   
 ### Requirements  
  Compiler option: **/ZW**  
@@ -94,8 +94,6 @@ type::typeid
  `typeid` can take a native type name or common language runtime alias for the native type name; see [.NET Framework Equivalents to C++ Native Types (C++/CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md) for more information.  
   
  `typeid` also works with native types, although it will still return a System::Type.  To get a type_info structure, use [typeid Operator](../cpp/typeid-operator.md).  
-  
- `typeid` is the sucessor to [__typeof](../misc/typeof.md) in the previous **/clr** syntax.  
   
 ### Requirements  
  Compiler option: **/clr**  

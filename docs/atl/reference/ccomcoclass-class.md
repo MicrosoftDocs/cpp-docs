@@ -61,28 +61,28 @@ template <class   T,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComCoClass::CreateInstance](#ccomcoclass__createinstance)|(Static) Creates an instance of the class and queries for an interface.|  
-|[CComCoClass::Error](#ccomcoclass__error)|(Static) Returns rich error information to the client.|  
-|[CComCoClass::GetObjectCLSID](#ccomcoclass__getobjectclsid)|(Static) Returns the object's class identifier.|  
-|[CComCoClass::GetObjectDescription](#ccomcoclass__getobjectdescription)|(Static) Override to return the object's description.|  
+|[CComCoClass::CreateInstance](#createinstance)|(Static) Creates an instance of the class and queries for an interface.|  
+|[CComCoClass::Error](#error)|(Static) Returns rich error information to the client.|  
+|[CComCoClass::GetObjectCLSID](#getobjectclsid)|(Static) Returns the object's class identifier.|  
+|[CComCoClass::GetObjectDescription](#getobjectdescription)|(Static) Override to return the object's description.|  
   
 ## Remarks  
  `CComCoClass` provides methods for retrieving an object's CLSID, setting error information, and creating instances of the class. Any class registered in the [object map](http://msdn.microsoft.com/en-us/b57619cc-534f-4b8f-bfd4-0c12f937202f) should be derived from `CComCoClass`.  
   
  `CComCoClass` also defines the default class factory and aggregation model for your object. `CComCoClass` uses the following two macros:  
   
-- [DECLARE_CLASSFACTORY](../Topic/DECLARE_CLASSFACTORY.md) Declares the class factory to be [CComClassFactory](../../atl/reference/ccomclassfactory-class.md).  
+- [DECLARE_CLASSFACTORY](http://msdn.microsoft.com/library/51a6b925-07c0-4d3a-9174-0b8c808975e4) Declares the class factory to be [CComClassFactory](../../atl/reference/ccomclassfactory-class.md).  
   
-- [DECLARE_AGGREGATABLE](../Topic/DECLARE_AGGREGATABLE.md) Declares that your object can be aggregated.  
+- [DECLARE_AGGREGATABLE](http://msdn.microsoft.com/library/e7e568d7-04e0-4226-b5dc-224deed229ab) Declares that your object can be aggregated.  
   
- You can override either of these defaults by specifying another macro in your class definition. For example, to use [CComClassFactory2](../../atl/reference/ccomclassfactory2-class.md) instead of `CComClassFactory`, specify the [DECLARE_CLASSFACTORY2](../Topic/DECLARE_CLASSFACTORY2.md) macro:  
+ You can override either of these defaults by specifying another macro in your class definition. For example, to use [CComClassFactory2](../../atl/reference/ccomclassfactory2-class.md) instead of `CComClassFactory`, specify the [DECLARE_CLASSFACTORY2](http://msdn.microsoft.com/library/38a6c969-7297-4bb1-9ba6-1fe2d355b285) macro:  
   
- [!code-cpp[NVC_ATL_COM#2](../../atl/codesnippet/CPP/ccomcoclass-class_1.h)]  
+ [!code-cpp[NVC_ATL_COM#2](../../atl/codesnippet/cpp/ccomcoclass-class_1.h)]  
   
 ## Requirements  
  **Header:** atlcom.h  
   
-##  <a name="ccomcoclass__createinstance"></a>  CComCoClass::CreateInstance  
+##  <a name="createinstance"></a>  CComCoClass::CreateInstance  
  Use these `CreateInstance` functions to create an instance of a COM object and retrieve an interface pointer without using the COM API.  
   
 ```
@@ -114,16 +114,16 @@ template <class  Q>
   
  The ATL class implementing the required COM object (that is, the class used as the first template parameter to [CComCoClass](../../atl/reference/ccomcoclass-class.md)) must be in the same project as the calling code. The creation of the COM object is carried out by the class factory registered for this ATL class.  
   
- These functions are useful for creating objects that you have prevented from being externally creatable by using the [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](../Topic/OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO.md) macro. They are also useful in situations where you want to avoid the COM API for reasons of efficiency.  
+ These functions are useful for creating objects that you have prevented from being externally creatable by using the [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](http://msdn.microsoft.com/library/abdc093c-6502-42de-8419-b7ebf45299d1) macro. They are also useful in situations where you want to avoid the COM API for reasons of efficiency.  
   
  Note that the interface `Q` must have an IID associated with it that can be retrieved using the [__uuidof](../../cpp/uuidof-operator.md) operator.  
   
 ### Example  
  In the following example, `CDocument` is a wizard-generated ATL class derived from `CComCoClass` that implements the **IDocument** interface. The class is registered in the object map with the `OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO` macro so clients can't create instances of the document using [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615). `CApplication` is a CoClass that provides a method on one of its own COM interfaces to create instances of the document class. The code below shows how easy it to create instances of the document class using the `CreateInstance` member inherited from the `CComCoClass` base class.  
   
- [!code-cpp[NVC_ATL_COM#11](../../atl/codesnippet/CPP/ccomcoclass-class_2.cpp)]  
+ [!code-cpp[NVC_ATL_COM#11](../../atl/codesnippet/cpp/ccomcoclass-class_2.cpp)]  
   
-##  <a name="ccomcoclass__error"></a>  CComCoClass::Error  
+##  <a name="error"></a>  CComCoClass::Error  
  This static function sets up the `IErrorInfo` interface to provide error information to the client.  
   
 ```
@@ -196,7 +196,7 @@ static HRESULT WINAPI Error(
   
  If the `hRes` parameter is nonzero, then `Error` returns the value of `hRes`. If `hRes` is zero, then the first four versions of `Error` return `DISP_E_EXCEPTION`. The last two versions return the result of the macro **MAKE_HRESULT( 1, FACILITY_ITF,** `nID` **)**.  
   
-##  <a name="ccomcoclass__getobjectclsid"></a>  CComCoClass::GetObjectCLSID  
+##  <a name="getobjectclsid"></a>  CComCoClass::GetObjectCLSID  
  Provides a consistent way of retrieving the object's CLSID.  
   
 ```
@@ -206,7 +206,7 @@ static const CLSID& WINAPI GetObjectCLSID();
 ### Return Value  
  The object's class identifier.  
   
-##  <a name="ccomcoclass__getobjectdescription"></a>  CComCoClass::GetObjectDescription  
+##  <a name="getobjectdescription"></a>  CComCoClass::GetObjectDescription  
  This static function retrieves the text description for your class object.  
   
 ```
@@ -217,9 +217,9 @@ static LPCTSTR WINAPI GetObjectDescription();
  The class object's description.  
   
 ### Remarks  
- The default implementation returns **NULL**. You can override this method with the [DECLARE_OBJECT_DESCRIPTION](../Topic/DECLARE_OBJECT_DESCRIPTION.md) macro. For example:  
+ The default implementation returns **NULL**. You can override this method with the [DECLARE_OBJECT_DESCRIPTION](http://msdn.microsoft.com/library/32ac881c-97b1-44e2-a017-0e23eb99ac93) macro. For example:  
   
- [!code-cpp[NVC_ATL_COM#12](../../atl/codesnippet/CPP/ccomcoclass-class_3.h)]  
+ [!code-cpp[NVC_ATL_COM#12](../../atl/codesnippet/cpp/ccomcoclass-class_3.h)]  
   
  `GetObjectDescription` is called by **IComponentRegistrar::GetComponents**. **IComponentRegistrar** is an Automation interface that allows you to register and unregister individual components in a DLL. When you create a Component Registrar object with the ATL Project Wizard, the wizard will automatically implement the **IComponentRegistrar** interface. **IComponentRegistrar** is typically used by Microsoft Transaction Server.  
   

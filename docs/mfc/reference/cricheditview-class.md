@@ -52,68 +52,68 @@ class CRichEditView : public CCtrlView
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRichEditView::CRichEditView](#cricheditview__cricheditview)|Constructs a `CRichEditView` object.|  
+|[CRichEditView::CRichEditView](#cricheditview)|Constructs a `CRichEditView` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRichEditView::AdjustDialogPosition](#cricheditview__adjustdialogposition)|Moves a dialog box so that it doesn't obscure the current selection.|  
-|[CRichEditView::CanPaste](#cricheditview__canpaste)|Tells whether the Clipboard contains data that can be pasted into the rich edit view.|  
-|[CRichEditView::DoPaste](#cricheditview__dopaste)|Pastes an OLE item into this rich edit view.|  
-|[CRichEditView::FindText](#cricheditview__findtext)|Finds the specified text, invoking the wait cursor.|  
-|[CRichEditView::FindTextSimple](#cricheditview__findtextsimple)|Finds the specified text.|  
-|[CRichEditView::GetCharFormatSelection](#cricheditview__getcharformatselection)|Retrieves the character formatting attributes for the current selection.|  
-|[CRichEditView::GetDocument](#cricheditview__getdocument)|Retrieves a pointer to the related [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md).|  
-|[CRichEditView::GetInPlaceActiveItem](#cricheditview__getinplaceactiveitem)|Retrieves the OLE item that is currently in-place active in the rich edit view.|  
-|[CRichEditView::GetMargins](#cricheditview__getmargins)|Retrieves the margins for this rich edit view.|  
-|[CRichEditView::GetPageRect](#cricheditview__getpagerect)|Retrieves the page rectangle for this rich edit view.|  
-|[CRichEditView::GetPaperSize](#cricheditview__getpapersize)|Retrieves the paper size for this rich edit view.|  
-|[CRichEditView::GetParaFormatSelection](#cricheditview__getparaformatselection)|Retrieves the paragraph formatting attributes for the current selection.|  
-|[CRichEditView::GetPrintRect](#cricheditview__getprintrect)|Retrieves the print rectangle for this rich edit view.|  
-|[CRichEditView::GetPrintWidth](#cricheditview__getprintwidth)|Retrieves the print width for this rich edit view.|  
-|[CRichEditView::GetRichEditCtrl](#cricheditview__getricheditctrl)|Retrieves the rich edit control.|  
-|[CRichEditView::GetSelectedItem](#cricheditview__getselecteditem)|Retrieves the selected item from the rich edit view.|  
-|[CRichEditView::GetTextLength](#cricheditview__gettextlength)|Retrieves the length of the text in the rich edit view.|  
-|[CRichEditView::GetTextLengthEx](#cricheditview__gettextlengthex)|Retrieves the number of characters or bytes in the rich edit view. Expanded flag list for method of determining the length.|  
-|[CRichEditView::InsertFileAsObject](#cricheditview__insertfileasobject)|Inserts a file as an OLE item.|  
-|[CRichEditView::InsertItem](#cricheditview__insertitem)|Inserts a new item as an OLE item.|  
-|[CRichEditView::IsRichEditFormat](#cricheditview__isricheditformat)|Tells whether the Clipboard contains data in a rich edit or text format.|  
-|[CRichEditView::OnCharEffect](#cricheditview__onchareffect)|Toggles the character formatting for the current selection.|  
-|[CRichEditView::OnParaAlign](#cricheditview__onparaalign)|Changes the alignment of paragraphs.|  
-|[CRichEditView::OnUpdateCharEffect](#cricheditview__onupdatechareffect)|Updates the Command UI for character public member functions.|  
-|[CRichEditView::OnUpdateParaAlign](#cricheditview__onupdateparaalign)|Updates the Command UI for paragraph public member functions.|  
-|[CRichEditView::PrintInsideRect](#cricheditview__printinsiderect)|Formats the specified text within the given rectangle.|  
-|[CRichEditView::PrintPage](#cricheditview__printpage)|Formats the specified text within the given page.|  
-|[CRichEditView::SetCharFormat](#cricheditview__setcharformat)|Sets the character formatting attributes for the current selection.|  
-|[CRichEditView::SetMargins](#cricheditview__setmargins)|Sets the margins for this rich edit view.|  
-|[CRichEditView::SetPaperSize](#cricheditview__setpapersize)|Sets the paper size for this rich edit view.|  
-|[CRichEditView::SetParaFormat](#cricheditview__setparaformat)|Sets the paragraph formatting attributes for the current selection.|  
-|[CRichEditView::TextNotFound](#cricheditview__textnotfound)|Resets the internal search state of the control.|  
+|[CRichEditView::AdjustDialogPosition](#adjustdialogposition)|Moves a dialog box so that it doesn't obscure the current selection.|  
+|[CRichEditView::CanPaste](#canpaste)|Tells whether the Clipboard contains data that can be pasted into the rich edit view.|  
+|[CRichEditView::DoPaste](#dopaste)|Pastes an OLE item into this rich edit view.|  
+|[CRichEditView::FindText](#findtext)|Finds the specified text, invoking the wait cursor.|  
+|[CRichEditView::FindTextSimple](#findtextsimple)|Finds the specified text.|  
+|[CRichEditView::GetCharFormatSelection](#getcharformatselection)|Retrieves the character formatting attributes for the current selection.|  
+|[CRichEditView::GetDocument](#getdocument)|Retrieves a pointer to the related [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md).|  
+|[CRichEditView::GetInPlaceActiveItem](#getinplaceactiveitem)|Retrieves the OLE item that is currently in-place active in the rich edit view.|  
+|[CRichEditView::GetMargins](#getmargins)|Retrieves the margins for this rich edit view.|  
+|[CRichEditView::GetPageRect](#getpagerect)|Retrieves the page rectangle for this rich edit view.|  
+|[CRichEditView::GetPaperSize](#getpapersize)|Retrieves the paper size for this rich edit view.|  
+|[CRichEditView::GetParaFormatSelection](#getparaformatselection)|Retrieves the paragraph formatting attributes for the current selection.|  
+|[CRichEditView::GetPrintRect](#getprintrect)|Retrieves the print rectangle for this rich edit view.|  
+|[CRichEditView::GetPrintWidth](#getprintwidth)|Retrieves the print width for this rich edit view.|  
+|[CRichEditView::GetRichEditCtrl](#getricheditctrl)|Retrieves the rich edit control.|  
+|[CRichEditView::GetSelectedItem](#getselecteditem)|Retrieves the selected item from the rich edit view.|  
+|[CRichEditView::GetTextLength](#gettextlength)|Retrieves the length of the text in the rich edit view.|  
+|[CRichEditView::GetTextLengthEx](#gettextlengthex)|Retrieves the number of characters or bytes in the rich edit view. Expanded flag list for method of determining the length.|  
+|[CRichEditView::InsertFileAsObject](#insertfileasobject)|Inserts a file as an OLE item.|  
+|[CRichEditView::InsertItem](#insertitem)|Inserts a new item as an OLE item.|  
+|[CRichEditView::IsRichEditFormat](#isricheditformat)|Tells whether the Clipboard contains data in a rich edit or text format.|  
+|[CRichEditView::OnCharEffect](#onchareffect)|Toggles the character formatting for the current selection.|  
+|[CRichEditView::OnParaAlign](#onparaalign)|Changes the alignment of paragraphs.|  
+|[CRichEditView::OnUpdateCharEffect](#onupdatechareffect)|Updates the Command UI for character public member functions.|  
+|[CRichEditView::OnUpdateParaAlign](#onupdateparaalign)|Updates the Command UI for paragraph public member functions.|  
+|[CRichEditView::PrintInsideRect](#printinsiderect)|Formats the specified text within the given rectangle.|  
+|[CRichEditView::PrintPage](#printpage)|Formats the specified text within the given page.|  
+|[CRichEditView::SetCharFormat](#setcharformat)|Sets the character formatting attributes for the current selection.|  
+|[CRichEditView::SetMargins](#setmargins)|Sets the margins for this rich edit view.|  
+|[CRichEditView::SetPaperSize](#setpapersize)|Sets the paper size for this rich edit view.|  
+|[CRichEditView::SetParaFormat](#setparaformat)|Sets the paragraph formatting attributes for the current selection.|  
+|[CRichEditView::TextNotFound](#textnotfound)|Resets the internal search state of the control.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRichEditView::GetClipboardData](#cricheditview__getclipboarddata)|Retrieves a Clipboard object for a range in this rich edit view.|  
-|[CRichEditView::GetContextMenu](#cricheditview__getcontextmenu)|Retrieves a context menu to use on a right mouse-button down.|  
-|[CRichEditView::IsSelected](#cricheditview__isselected)|Indicates if the given OLE item is selected or not.|  
-|[CRichEditView::OnFindNext](#cricheditview__onfindnext)|Finds the next occurrence of a substring.|  
-|[CRichEditView::OnInitialUpdate](#cricheditview__oninitialupdate)|Refreshes a view when it is first attached to a document.|  
-|[CRichEditView::OnPasteNativeObject](#cricheditview__onpastenativeobject)|Retrieves native data from an OLE item.|  
-|[CRichEditView::OnPrinterChanged](#cricheditview__onprinterchanged)|Sets the print characteristics to the given device.|  
-|[CRichEditView::OnReplaceAll](#cricheditview__onreplaceall)|Replaces all occurrences of a given string with a new string.|  
-|[CRichEditView::OnReplaceSel](#cricheditview__onreplacesel)|Replaces the current selection.|  
-|[CRichEditView::OnTextNotFound](#cricheditview__ontextnotfound)|Handles user notification that the requested text was not found.|  
-|[CRichEditView::QueryAcceptData](#cricheditview__queryacceptdata)|Queries to see about the data on the `IDataObject`.|  
-|[CRichEditView::WrapChanged](#cricheditview__wrapchanged)|Adjusts the target output device for this rich edit view, based on the value of `m_nWordWrap`.|  
+|[CRichEditView::GetClipboardData](#getclipboarddata)|Retrieves a Clipboard object for a range in this rich edit view.|  
+|[CRichEditView::GetContextMenu](#getcontextmenu)|Retrieves a context menu to use on a right mouse-button down.|  
+|[CRichEditView::IsSelected](#isselected)|Indicates if the given OLE item is selected or not.|  
+|[CRichEditView::OnFindNext](#onfindnext)|Finds the next occurrence of a substring.|  
+|[CRichEditView::OnInitialUpdate](#oninitialupdate)|Refreshes a view when it is first attached to a document.|  
+|[CRichEditView::OnPasteNativeObject](#onpastenativeobject)|Retrieves native data from an OLE item.|  
+|[CRichEditView::OnPrinterChanged](#onprinterchanged)|Sets the print characteristics to the given device.|  
+|[CRichEditView::OnReplaceAll](#onreplaceall)|Replaces all occurrences of a given string with a new string.|  
+|[CRichEditView::OnReplaceSel](#onreplacesel)|Replaces the current selection.|  
+|[CRichEditView::OnTextNotFound](#ontextnotfound)|Handles user notification that the requested text was not found.|  
+|[CRichEditView::QueryAcceptData](#queryacceptdata)|Queries to see about the data on the `IDataObject`.|  
+|[CRichEditView::WrapChanged](#wrapchanged)|Adjusts the target output device for this rich edit view, based on the value of `m_nWordWrap`.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRichEditView::m_nBulletIndent](#cricheditview__m_nbulletindent)|Indicates the amount of indent for bullet lists.|  
-|[CRichEditView::m_nWordWrap](#cricheditview__m_nwordwrap)|Indicates the word wrap constraints.|  
+|[CRichEditView::m_nBulletIndent](#m_nbulletindent)|Indicates the amount of indent for bullet lists.|  
+|[CRichEditView::m_nWordWrap](#m_nwordwrap)|Indicates the word wrap constraints.|  
   
 ## Remarks  
  A "rich edit control" is a window in which the user can enter and edit text. The text can be assigned character and paragraph formatting, and can include embedded OLE objects. Rich edit controls provide a programming interface for formatting text. However, an application must implement any user interface components necessary to make formatting operations available to the user.  
@@ -122,7 +122,7 @@ class CRichEditView : public CCtrlView
   
  This Windows Common control (and therefore the [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) and related classes) is available only to programs running under Windows 95/98 and Windows NT versions 3.51 and later.  
   
- For an example of using a rich edit view in an MFC application, see the [WORDPAD](../../top/visual-cpp-samples.md) sample application.  
+ For an example of using a rich edit view in an MFC application, see the [WORDPAD](../../visual-cpp-samples.md) sample application.  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -140,7 +140,7 @@ class CRichEditView : public CCtrlView
 ## Requirements  
  **Header:** afxrich.h  
   
-##  <a name="cricheditview__adjustdialogposition"></a>  CRichEditView::AdjustDialogPosition  
+##  <a name="adjustdialogposition"></a>  CRichEditView::AdjustDialogPosition  
  Call this function to move the given dialog box so that it does not obscure the current selection.  
   
 ```  
@@ -151,7 +151,7 @@ void AdjustDialogPosition(CDialog* pDlg);
  *pDlg*  
  Pointer to a `CDialog` object.  
   
-##  <a name="cricheditview__canpaste"></a>  CRichEditView::CanPaste  
+##  <a name="canpaste"></a>  CRichEditView::CanPaste  
  Call this function to determine if the Clipboard contains information that can be pasted into this rich edit view.  
   
 ```  
@@ -163,14 +163,14 @@ BOOL CanPaste() const;
 ### Return Value  
  Nonzero if the Clipboard contains data in a format which this rich edit view can accept; otherwise, 0.  
   
-##  <a name="cricheditview__cricheditview"></a>  CRichEditView::CRichEditView  
+##  <a name="cricheditview"></a>  CRichEditView::CRichEditView  
  Call this function to create a `CRichEditView` object.  
   
 ```  
 CRichEditView();
 ```  
   
-##  <a name="cricheditview__dopaste"></a>  CRichEditView::DoPaste  
+##  <a name="dopaste"></a>  CRichEditView::DoPaste  
  Call this function to paste the OLE item in `dataobj` into this rich edit document/view.  
   
 ```  
@@ -191,11 +191,11 @@ void DoPaste(
  The metafile that represents the item to be pasted.  
   
 ### Remarks  
- The framework calls this function as part of the default implementation of [QueryAcceptData](#cricheditview__queryacceptdata).  
+ The framework calls this function as part of the default implementation of [QueryAcceptData](#queryacceptdata).  
   
  This function determines the type of paste based on the results of the handler for Paste Special. If `cf` is 0, the new item uses the current iconic representation. If `cf` is nonzero and `hMetaPict` is not **NULL**, the new item uses `hMetaPict` for its representation.  
   
-##  <a name="cricheditview__findtext"></a>  CRichEditView::FindText  
+##  <a name="findtext"></a>  CRichEditView::FindText  
  Call this function to find the specified text and set it to be the current selection.  
   
 ```  
@@ -226,9 +226,9 @@ BOOL FindText(
  This function displays the wait cursor during the find operation.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#151](../../mfc/codesnippet/CPP/cricheditview-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#151](../../mfc/codesnippet/cpp/cricheditview-class_1.cpp)]  
   
-##  <a name="cricheditview__findtextsimple"></a>  CRichEditView::FindTextSimple  
+##  <a name="findtextsimple"></a>  CRichEditView::FindTextSimple  
  Call this function to find the specified text and set it to be the current selection.  
   
 ```  
@@ -256,9 +256,9 @@ BOOL FindTextSimple(
  Nonzero if the `lpszFind` text is found; otherwise 0.  
   
 ### Example  
-  See the example for [CRichEditView::FindText](#cricheditview__findtext).  
+  See the example for [CRichEditView::FindText](#findtext).  
   
-##  <a name="cricheditview__getcharformatselection"></a>  CRichEditView::GetCharFormatSelection  
+##  <a name="getcharformatselection"></a>  CRichEditView::GetCharFormatSelection  
  Call this function to get the character formatting attributes of the current selection.  
   
 ```  
@@ -272,9 +272,9 @@ CHARFORMAT2& GetCharFormatSelection();
  For more information, see the [EM_GETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb788026) message and the [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#152](../../mfc/codesnippet/CPP/cricheditview-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#152](../../mfc/codesnippet/cpp/cricheditview-class_2.cpp)]  
   
-##  <a name="cricheditview__getclipboarddata"></a>  CRichEditView::GetClipboardData  
+##  <a name="getclipboarddata"></a>  CRichEditView::GetClipboardData  
  The framework calls this function as part of the processing of [IRichEditOleCallback::GetClipboardData](http://msdn.microsoft.com/library/windows/desktop/bb774315).  
   
 ```  
@@ -318,7 +318,7 @@ virtual HRESULT GetClipboardData(
   
  For more information, see [IRichEditOle::GetClipboardData](http://msdn.microsoft.com/library/windows/desktop/bb774341), [IRichEditOleCallback::GetClipboardData](http://msdn.microsoft.com/library/windows/desktop/bb774315), and [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] and see [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421) in the [!INCLUDE[winsdkshort](../../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
   
-##  <a name="cricheditview__getcontextmenu"></a>  CRichEditView::GetContextMenu  
+##  <a name="getcontextmenu"></a>  CRichEditView::GetContextMenu  
  The framework calls this function as part of the processing of [IRichEditOleCallback::GetContextMenu](http://msdn.microsoft.com/library/windows/desktop/bb774317).  
   
 ```  
@@ -362,7 +362,7 @@ virtual HMENU GetContextMenu(
   
  For more information on the **OLEOBJECT** type, see the OLE Data Structures and Structure Allocation article in the *OLE Knowledge Base*.  
   
-##  <a name="cricheditview__getdocument"></a>  CRichEditView::GetDocument  
+##  <a name="getdocument"></a>  CRichEditView::GetDocument  
  Call this function to get a pointer to the `CRichEditDoc` associated with this view.  
   
 ```  
@@ -374,7 +374,7 @@ CRichEditDoc* GetDocument() const;
 ### Return Value  
  Pointer to a [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md) object associated with your `CRichEditView` object.  
   
-##  <a name="cricheditview__getinplaceactiveitem"></a>  CRichEditView::GetInPlaceActiveItem  
+##  <a name="getinplaceactiveitem"></a>  CRichEditView::GetInPlaceActiveItem  
  Call this function to get the OLE item that is currently activated in place in this `CRichEditView` object.  
   
 ```  
@@ -386,7 +386,7 @@ CRichEditCntrItem* GetInPlaceActiveItem() const;
 ### Return Value  
  A pointer to the single, in-place active [CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class.md) object in this rich edit view; **NULL** if there is no OLE item currently in the in-place active state.  
   
-##  <a name="cricheditview__getmargins"></a>  CRichEditView::GetMargins  
+##  <a name="getmargins"></a>  CRichEditView::GetMargins  
  Call this function to retrieve the current margins used in printing.  
   
 ```  
@@ -398,7 +398,7 @@ CRect GetMargins() const;
 ### Return Value  
  The margins used in printing, measured in `MM_TWIPS`.  
   
-##  <a name="cricheditview__getpagerect"></a>  CRichEditView::GetPageRect  
+##  <a name="getpagerect"></a>  CRichEditView::GetPageRect  
  Call this function to get the dimensions of the page used in printing.  
   
 ```  
@@ -413,7 +413,7 @@ CRect GetPageRect() const;
 ### Remarks  
  This value is based on the paper size.  
   
-##  <a name="cricheditview__getpapersize"></a>  CRichEditView::GetPaperSize  
+##  <a name="getpapersize"></a>  CRichEditView::GetPaperSize  
  Call this function to retrieve the current paper size.  
   
 ```  
@@ -426,9 +426,9 @@ CSize GetPaperSize() const;
  The size of the paper used in printing, measured in `MM_TWIPS`.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#153](../../mfc/codesnippet/CPP/cricheditview-class_3.cpp)]  
+ [!code-cpp[NVC_MFCDocView#153](../../mfc/codesnippet/cpp/cricheditview-class_3.cpp)]  
   
-##  <a name="cricheditview__getparaformatselection"></a>  CRichEditView::GetParaFormatSelection  
+##  <a name="getparaformatselection"></a>  CRichEditView::GetParaFormatSelection  
  Call this function to get the paragraph formatting attributes of the current selection.  
   
 ```  
@@ -441,7 +441,7 @@ PARAFORMAT2& GetParaFormatSelection();
 ### Remarks  
  For more information, see [EM_GETPARAFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774182) message and [PARAFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787942) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="cricheditview__getprintrect"></a>  CRichEditView::GetPrintRect  
+##  <a name="getprintrect"></a>  CRichEditView::GetPrintRect  
  Call this function to retrieve the bounds of the printing area within the page rectangle.  
   
 ```  
@@ -454,9 +454,9 @@ CRect GetPrintRect() const;
  The bounds of the image area used in printing, measured in `MM_TWIPS`.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#154](../../mfc/codesnippet/CPP/cricheditview-class_4.cpp)]  
+ [!code-cpp[NVC_MFCDocView#154](../../mfc/codesnippet/cpp/cricheditview-class_4.cpp)]  
   
-##  <a name="cricheditview__getprintwidth"></a>  CRichEditView::GetPrintWidth  
+##  <a name="getprintwidth"></a>  CRichEditView::GetPrintWidth  
  Call this function to determine the width of the printing area.  
   
 ```  
@@ -468,7 +468,7 @@ int GetPrintWidth() const;
 ### Return Value  
  The width of the printing area, measured in `MM_TWIPS`.  
   
-##  <a name="cricheditview__getricheditctrl"></a>  CRichEditView::GetRichEditCtrl  
+##  <a name="getricheditctrl"></a>  CRichEditView::GetRichEditCtrl  
  Call this function to retrieve the [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) object associated with the `CRichEditView` object.  
   
 ```  
@@ -481,9 +481,9 @@ CRichEditCtrl& GetRichEditCtrl() const;
  The `CRichEditCtrl` object for this view.  
   
 ### Example  
-  See the example for [CRichEditView::FindText](#cricheditview__findtext).  
+  See the example for [CRichEditView::FindText](#findtext).  
   
-##  <a name="cricheditview__getselecteditem"></a>  CRichEditView::GetSelectedItem  
+##  <a name="getselecteditem"></a>  CRichEditView::GetSelectedItem  
  Call this function to retrieve the OLE item (a `CRichEditCntrItem` object) currently selected in this `CRichEditView` object.  
   
 ```  
@@ -495,7 +495,7 @@ CRichEditCntrItem* GetSelectedItem() const;
 ### Return Value  
  Pointer to a [CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class.md) object selected in the `CRichEditView` object; **NULL** if no item is selected in this view.  
   
-##  <a name="cricheditview__gettextlength"></a>  CRichEditView::GetTextLength  
+##  <a name="gettextlength"></a>  CRichEditView::GetTextLength  
  Call this function to retrieve the length of the text in this `CRichEditView` object.  
   
 ```  
@@ -507,7 +507,7 @@ long GetTextLength() const;
 ### Return Value  
  The length of the text in this `CRichEditView` object.  
   
-##  <a name="cricheditview__gettextlengthex"></a>  CRichEditView::GetTextLengthEx  
+##  <a name="gettextlengthex"></a>  CRichEditView::GetTextLengthEx  
  Call this member function to calculate the length of the text in this `CRichEditView` object.  
   
 ```  
@@ -531,7 +531,7 @@ long GetTextLengthEx(
 ### Remarks  
  `GetTextLengthEx` provides additional ways of determining the length of the text. It supports the Rich Edit 2.0 functionality. For more information, see [About Rich Edit Controls](http://msdn.microsoft.com/library/windows/desktop/bb787873) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="cricheditview__insertfileasobject"></a>  CRichEditView::InsertFileAsObject  
+##  <a name="insertfileasobject"></a>  CRichEditView::InsertFileAsObject  
  Call this function to insert the specified file (as a [CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class.md) object) into a rich edit view.  
   
 ```  
@@ -542,7 +542,7 @@ void InsertFileAsObject(LPCTSTR lpszFileName);
  `lpszFileName`  
  String containing the name of the file to be inserted.  
   
-##  <a name="cricheditview__insertitem"></a>  CRichEditView::InsertItem  
+##  <a name="insertitem"></a>  CRichEditView::InsertItem  
  Call this function to insert a [CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class.md) object into a rich edit view.  
   
 ```  
@@ -559,7 +559,7 @@ HRESULT InsertItem(CRichEditCntrItem* pItem);
 ### Remarks  
  For more information on `HRESULT`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="cricheditview__isricheditformat"></a>  CRichEditView::IsRichEditFormat  
+##  <a name="isricheditformat"></a>  CRichEditView::IsRichEditFormat  
  Call this function to determine if `cf` is a Clipboard format which is text, rich text, or rich text with OLE items.  
   
 ```  
@@ -573,7 +573,7 @@ static BOOL AFX_CDECL IsRichEditFormat(CLIPFORMAT cf);
 ### Return Value  
  Nonzero if `cf` is a rich edit or text Clipboard format.  
   
-##  <a name="cricheditview__isselected"></a>  CRichEditView::IsSelected  
+##  <a name="isselected"></a>  CRichEditView::IsSelected  
  Call this function to determine if the specified OLE item is currently selected in this view.  
   
 ```  
@@ -592,14 +592,14 @@ virtual BOOL IsSelected(const CObject* pDocItem) const;
 ### Remarks  
  Override this function if your derived view class has a different method for handling selection of OLE items.  
   
-##  <a name="cricheditview__m_nbulletindent"></a>  CRichEditView::m_nBulletIndent  
+##  <a name="m_nbulletindent"></a>  CRichEditView::m_nBulletIndent  
  The indentation for bullet items in a list; by default, 720 units, which is 1/2 inch.  
   
 ```  
 int m_nBulletIndent;  
 ```  
   
-##  <a name="cricheditview__m_nwordwrap"></a>  CRichEditView::m_nWordWrap  
+##  <a name="m_nwordwrap"></a>  CRichEditView::m_nWordWrap  
  Indicates the type of word wrap for this rich edit view.  
   
 ```  
@@ -616,9 +616,9 @@ int m_nWordWrap;
 - `WrapToTargetDevice` Indicates word wrapping based on the characteristics of the target device.  
   
 ### Example  
-  See the example for [CRichEditView::WrapChanged](#cricheditview__wrapchanged).  
+  See the example for [CRichEditView::WrapChanged](#wrapchanged).  
   
-##  <a name="cricheditview__onchareffect"></a>  CRichEditView::OnCharEffect  
+##  <a name="onchareffect"></a>  CRichEditView::OnCharEffect  
  Call this function to toggle the character formatting effects for the current selection.  
   
 ```  
@@ -640,9 +640,9 @@ void OnCharEffect(
  For more information on the `dwMask` and `dwEffect` parameters and their potential values, see the corresponding data members of [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#155](../../mfc/codesnippet/CPP/cricheditview-class_5.cpp)]  
+ [!code-cpp[NVC_MFCDocView#155](../../mfc/codesnippet/cpp/cricheditview-class_5.cpp)]  
   
-##  <a name="cricheditview__onfindnext"></a>  CRichEditView::OnFindNext  
+##  <a name="onfindnext"></a>  CRichEditView::OnFindNext  
  Called by the framework when processing commands from the Find/Replace dialog box.  
   
 ```  
@@ -669,7 +669,7 @@ virtual void OnFindNext(
 ### Remarks  
  Call this function to find text within the `CRichEditView`. Override this function to alter search characteristics for your derived view class.  
   
-##  <a name="cricheditview__oninitialupdate"></a>  CRichEditView::OnInitialUpdate  
+##  <a name="oninitialupdate"></a>  CRichEditView::OnInitialUpdate  
  Called by the framework after the view is first attached to the document, but before the view is initially displayed.  
   
 ```  
@@ -677,12 +677,12 @@ virtual void OnInitialUpdate();
 ```  
   
 ### Remarks  
- The default implementation of this function calls the [CView::OnUpdate](../../mfc/reference/cview-class.md#cview__onupdate) member function with no hint information (that is, using the default values of 0 for the `lHint` parameter and **NULL** for the `pHint` parameter). Override this function to perform any one-time initialization that requires information about the document. For example, if your application has fixed-sized documents, you can use this function to initialize a view's scrolling limits based on the document size. If your application supports variable-sized documents, use `OnUpdate` to update the scrolling limits every time the document changes.  
+ The default implementation of this function calls the [CView::OnUpdate](../../mfc/reference/cview-class.md#onupdate) member function with no hint information (that is, using the default values of 0 for the `lHint` parameter and **NULL** for the `pHint` parameter). Override this function to perform any one-time initialization that requires information about the document. For example, if your application has fixed-sized documents, you can use this function to initialize a view's scrolling limits based on the document size. If your application supports variable-sized documents, use `OnUpdate` to update the scrolling limits every time the document changes.  
   
 ### Example  
-  See the example for [CRichEditView::m_nWordWrap](#cricheditview__m_nwordwrap).  
+  See the example for [CRichEditView::m_nWordWrap](#m_nwordwrap).  
   
-##  <a name="cricheditview__onpastenativeobject"></a>  CRichEditView::OnPasteNativeObject  
+##  <a name="onpastenativeobject"></a>  CRichEditView::OnPasteNativeObject  
  Use this function to load native data from an embedded item.  
   
 ```  
@@ -697,13 +697,13 @@ virtual BOOL OnPasteNativeObject(LPSTORAGE lpStg);
  Nonzero if successful; otherwise, 0;  
   
 ### Remarks  
- Typically, you would do this by creating a [COleStreamFile](../../mfc/reference/colestreamfile-class.md) around the `IStorage`. The `COleStreamFile` can be attached to an archive and [CObject::Serialize](../../mfc/reference/cobject-class.md#cobject__serialize) called to load the data.  
+ Typically, you would do this by creating a [COleStreamFile](../../mfc/reference/colestreamfile-class.md) around the `IStorage`. The `COleStreamFile` can be attached to an archive and [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize) called to load the data.  
   
  This is an advanced overridable.  
   
  For more information, see [IStorage](http://msdn.microsoft.com/library/windows/desktop/aa380015) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="cricheditview__onparaalign"></a>  CRichEditView::OnParaAlign  
+##  <a name="onparaalign"></a>  CRichEditView::OnParaAlign  
  Call this function to change the paragraph alignment for the selected paragraphs.  
   
 ```  
@@ -721,9 +721,9 @@ void OnParaAlign(WORD wAlign);
 - `PFA_CENTER` Center the paragraphs between the margins.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#156](../../mfc/codesnippet/CPP/cricheditview-class_6.cpp)]  
+ [!code-cpp[NVC_MFCDocView#156](../../mfc/codesnippet/cpp/cricheditview-class_6.cpp)]  
   
-##  <a name="cricheditview__onprinterchanged"></a>  CRichEditView::OnPrinterChanged  
+##  <a name="onprinterchanged"></a>  CRichEditView::OnPrinterChanged  
  Override this function to change characteristics for this rich edit view when the printer changes.  
   
 ```  
@@ -737,7 +737,7 @@ virtual void OnPrinterChanged(const CDC& dcPrinter);
 ### Remarks  
  The default implementation sets the paper size to the physical height and width for the output device (printer). If there is no device context associated with `dcPrinter`, the default implementation sets the paper size to 8.5 by 11 inches.  
   
-##  <a name="cricheditview__onreplaceall"></a>  CRichEditView::OnReplaceAll  
+##  <a name="onreplaceall"></a>  CRichEditView::OnReplaceAll  
  Called by the framework when processing Replace All commands from the Replace dialog box.  
   
 ```  
@@ -765,9 +765,9 @@ virtual void OnReplaceAll(
  Call this function to replace all occurrences of some given text with another string. Override this function to alter search characteristics for this view.  
   
 ### Example  
-  See the example for [CRichEditView::FindText](#cricheditview__findtext).  
+  See the example for [CRichEditView::FindText](#findtext).  
   
-##  <a name="cricheditview__onreplacesel"></a>  CRichEditView::OnReplaceSel  
+##  <a name="onreplacesel"></a>  CRichEditView::OnReplaceSel  
  Called by the framework when processing Replace commands from the Replace dialog box.  
   
 ```  
@@ -798,7 +798,7 @@ virtual void OnReplaceSel(
 ### Remarks  
  Call this function to replace one occurrence of some given text with another string. Override this function to alter search characteristics for this view.  
   
-##  <a name="cricheditview__ontextnotfound"></a>  CRichEditView::OnTextNotFound  
+##  <a name="ontextnotfound"></a>  CRichEditView::OnTextNotFound  
  Called by the framework whenever a search fails.  
   
 ```  
@@ -815,9 +815,9 @@ virtual void OnTextNotFound(LPCTSTR lpszFind);
  For more information, see [MessageBeep](http://msdn.microsoft.com/library/windows/desktop/ms680356) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#157](../../mfc/codesnippet/CPP/cricheditview-class_7.cpp)]  
+ [!code-cpp[NVC_MFCDocView#157](../../mfc/codesnippet/cpp/cricheditview-class_7.cpp)]  
   
-##  <a name="cricheditview__onupdatechareffect"></a>  CRichEditView::OnUpdateCharEffect  
+##  <a name="onupdatechareffect"></a>  CRichEditView::OnUpdateCharEffect  
  The framework calls this function to update the command UI for character effect commands.  
   
 ```  
@@ -843,9 +843,9 @@ void OnUpdateCharEffect(
  For more information on the `dwMask` and `dwEffect` parameters and their potential values, see the corresponding data members of [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#158](../../mfc/codesnippet/CPP/cricheditview-class_8.cpp)]  
+ [!code-cpp[NVC_MFCDocView#158](../../mfc/codesnippet/cpp/cricheditview-class_8.cpp)]  
   
-##  <a name="cricheditview__onupdateparaalign"></a>  CRichEditView::OnUpdateParaAlign  
+##  <a name="onupdateparaalign"></a>  CRichEditView::OnUpdateParaAlign  
  The framework calls this function to update the command UI for paragraph effect commands.  
   
 ```  
@@ -868,9 +868,9 @@ void OnUpdateParaAlign(
 - `PFA_CENTER` Center the paragraphs between the margins.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#159](../../mfc/codesnippet/CPP/cricheditview-class_9.cpp)]  
+ [!code-cpp[NVC_MFCDocView#159](../../mfc/codesnippet/cpp/cricheditview-class_9.cpp)]  
   
-##  <a name="cricheditview__printinsiderect"></a>  CRichEditView::PrintInsideRect  
+##  <a name="printinsiderect"></a>  CRichEditView::PrintInsideRect  
  Call this function to format a range of text in a rich edit control to fit within *rectLayout* for the device specified by `pDC`.  
   
 ```  
@@ -902,12 +902,12 @@ long PrintInsideRect(
  The index of the last character that fits in the output area plus one.  
   
 ### Remarks  
- Typically, this call is followed by a call to [CRichEditCtrl::DisplayBand](../../mfc/reference/cricheditctrl-class.md#cricheditctrl__displayband) which generates the output.  
+ Typically, this call is followed by a call to [CRichEditCtrl::DisplayBand](../../mfc/reference/cricheditctrl-class.md#displayband) which generates the output.  
   
 ### Example  
-  See the example for [CRichEditView::GetPaperSize](#cricheditview__getpapersize).  
+  See the example for [CRichEditView::GetPaperSize](#getpapersize).  
   
-##  <a name="cricheditview__printpage"></a>  CRichEditView::PrintPage  
+##  <a name="printpage"></a>  CRichEditView::PrintPage  
  Call this function to format a range of text in a rich edit control for the output device specified by `pDC`.  
   
 ```  
@@ -931,11 +931,11 @@ long PrintPage(
  The index of the last character that fits on the page plus one.  
   
 ### Remarks  
- The layout of each page is controlled by [GetPageRect](#cricheditview__getpagerect) and [GetPrintRect](#cricheditview__getprintrect). Typically, this call is followed by a call to [CRichEditCtrl::DisplayBand](../../mfc/reference/cricheditctrl-class.md#cricheditctrl__displayband) which generates the output.  
+ The layout of each page is controlled by [GetPageRect](#getpagerect) and [GetPrintRect](#getprintrect). Typically, this call is followed by a call to [CRichEditCtrl::DisplayBand](../../mfc/reference/cricheditctrl-class.md#displayband) which generates the output.  
   
- Note that margins are relative to the physical page, not the logical page. Thus, margins of zero will often clip the text since many printers have unprintable areas on the page. To avoid clipping your text, you should call [SetMargins](#cricheditview__setmargins) and set reasonable margins before printing.  
+ Note that margins are relative to the physical page, not the logical page. Thus, margins of zero will often clip the text since many printers have unprintable areas on the page. To avoid clipping your text, you should call [SetMargins](#setmargins) and set reasonable margins before printing.  
   
-##  <a name="cricheditview__queryacceptdata"></a>  CRichEditView::QueryAcceptData  
+##  <a name="queryacceptdata"></a>  CRichEditView::QueryAcceptData  
  Called by the framework to paste an object into the rich edit.  
   
 ```  
@@ -972,9 +972,9 @@ virtual HRESULT QueryAcceptData(
  For more information on `HRESULT` and `IDataObject`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) and [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421), respectively, in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#160](../../mfc/codesnippet/CPP/cricheditview-class_10.cpp)]  
+ [!code-cpp[NVC_MFCDocView#160](../../mfc/codesnippet/cpp/cricheditview-class_10.cpp)]  
   
-##  <a name="cricheditview__setcharformat"></a>  CRichEditView::SetCharFormat  
+##  <a name="setcharformat"></a>  CRichEditView::SetCharFormat  
  Call this function to set the character formatting attributes for new text in this `CRichEditView` object.  
   
 ```  
@@ -991,9 +991,9 @@ void SetCharFormat(CHARFORMAT2 cf);
  For more information, see [EM_SETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774230) message and [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#152](../../mfc/codesnippet/CPP/cricheditview-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#152](../../mfc/codesnippet/cpp/cricheditview-class_2.cpp)]  
   
-##  <a name="cricheditview__setmargins"></a>  CRichEditView::SetMargins  
+##  <a name="setmargins"></a>  CRichEditView::SetMargins  
  Call this function to set the printing margins for this rich edit view.  
   
 ```  
@@ -1005,14 +1005,14 @@ void SetMargins(const CRect& rectMargin);
  The new margin values for printing, measured in `MM_TWIPS`.  
   
 ### Remarks  
- If [m_nWordWrap](#cricheditview__m_nwordwrap) is `WrapToTargetDevice`, you should call [WrapChanged](#cricheditview__wrapchanged) after using this function to adjust printing characteristics.  
+ If [m_nWordWrap](#m_nwordwrap) is `WrapToTargetDevice`, you should call [WrapChanged](#wrapchanged) after using this function to adjust printing characteristics.  
   
- Note that the margins used by [PrintPage](#cricheditview__printpage) are relative to the physical page, not the logical page. Thus, margins of zero will often clip the text since many printers have unprintable areas on the page. To avoid clipping your text, you should call use `SetMargins` to set reasonable printer margins before printing.  
+ Note that the margins used by [PrintPage](#printpage) are relative to the physical page, not the logical page. Thus, margins of zero will often clip the text since many printers have unprintable areas on the page. To avoid clipping your text, you should call use `SetMargins` to set reasonable printer margins before printing.  
   
 ### Example  
-  See the example for [CRichEditView::GetPaperSize](#cricheditview__getpapersize).  
+  See the example for [CRichEditView::GetPaperSize](#getpapersize).  
   
-##  <a name="cricheditview__setpapersize"></a>  CRichEditView::SetPaperSize  
+##  <a name="setpapersize"></a>  CRichEditView::SetPaperSize  
  Call this function to set the paper size for printing this rich edit view.  
   
 ```  
@@ -1024,12 +1024,12 @@ void SetPaperSize(CSize sizePaper);
  The new paper size values for printing, measured in `MM_TWIPS`.  
   
 ### Remarks  
- If [m_nWordWrap](#cricheditview__m_nwordwrap) is `WrapToTargetDevice`, you should call [WrapChanged](#cricheditview__wrapchanged) after using this function to adjust printing characteristics.  
+ If [m_nWordWrap](#m_nwordwrap) is `WrapToTargetDevice`, you should call [WrapChanged](#wrapchanged) after using this function to adjust printing characteristics.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#161](../../mfc/codesnippet/CPP/cricheditview-class_11.cpp)]  
+ [!code-cpp[NVC_MFCDocView#161](../../mfc/codesnippet/cpp/cricheditview-class_11.cpp)]  
   
-##  <a name="cricheditview__setparaformat"></a>  CRichEditView::SetParaFormat  
+##  <a name="setparaformat"></a>  CRichEditView::SetParaFormat  
  Call this function to set the paragraph formatting attributes for the current selection in this `CRichEditView` object.  
   
 ```  
@@ -1049,10 +1049,10 @@ BOOL SetParaFormat(PARAFORMAT2& pf);
  For more information, see [EM_SETPARAFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774276) message and [PARAFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787942) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#162](../../mfc/codesnippet/CPP/cricheditview-class_12.cpp)]  
+ [!code-cpp[NVC_MFCDocView#162](../../mfc/codesnippet/cpp/cricheditview-class_12.cpp)]  
   
-##  <a name="cricheditview__textnotfound"></a>  CRichEditView::TextNotFound  
- Call this function to reset the internal search state of the [CRichEditView](../../mfc/reference/cricheditview-class.md) control after a failed call to [FindText](#cricheditview__findtext).  
+##  <a name="textnotfound"></a>  CRichEditView::TextNotFound  
+ Call this function to reset the internal search state of the [CRichEditView](../../mfc/reference/cricheditview-class.md) control after a failed call to [FindText](#findtext).  
   
 ```  
 void TextNotFound(LPCTSTR lpszFind);
@@ -1063,28 +1063,28 @@ void TextNotFound(LPCTSTR lpszFind);
  Contains the text string that was not found.  
   
 ### Remarks  
- It is recommended that this method be called immediately after failed calls to [FindText](#cricheditview__findtext) so that the internal search state of the control is properly reset.  
+ It is recommended that this method be called immediately after failed calls to [FindText](#findtext) so that the internal search state of the control is properly reset.  
   
- The `lpszFind` parameter should include the same content as the string provided to [FindText](#cricheditview__findtext). After resetting the internal search state, this method will call the [OnTextNotFound](#cricheditview__ontextnotfound) method with the provided search string.  
+ The `lpszFind` parameter should include the same content as the string provided to [FindText](#findtext). After resetting the internal search state, this method will call the [OnTextNotFound](#ontextnotfound) method with the provided search string.  
   
 ### Example  
-  See the example for [CRichEditView::FindText](#cricheditview__findtext).  
+  See the example for [CRichEditView::FindText](#findtext).  
   
-##  <a name="cricheditview__wrapchanged"></a>  CRichEditView::WrapChanged  
- Call this function when the printing characteristics have changed ( [SetMargins](#cricheditview__setmargins) or [SetPaperSize](#cricheditview__setpapersize)).  
+##  <a name="wrapchanged"></a>  CRichEditView::WrapChanged  
+ Call this function when the printing characteristics have changed ( [SetMargins](#setmargins) or [SetPaperSize](#setpapersize)).  
   
 ```  
 virtual void WrapChanged();
 ```  
   
 ### Remarks  
- Override this function to modify the way the rich edit view responds to changes in [m_nWordWrap](#cricheditview__m_nwordwrap) or the printing characteristics ( [OnPrinterChanged](#cricheditview__onprinterchanged)).  
+ Override this function to modify the way the rich edit view responds to changes in [m_nWordWrap](#m_nwordwrap) or the printing characteristics ( [OnPrinterChanged](#onprinterchanged)).  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#163](../../mfc/codesnippet/CPP/cricheditview-class_13.cpp)]  
+ [!code-cpp[NVC_MFCDocView#163](../../mfc/codesnippet/cpp/cricheditview-class_13.cpp)]  
   
 ## See Also  
- [MFC Sample WORDPAD](../../top/visual-cpp-samples.md)   
+ [MFC Sample WORDPAD](../../visual-cpp-samples.md)   
  [CCtrlView Class](../../mfc/reference/cctrlview-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CRichEditDoc Class](../../mfc/reference/cricheditdoc-class.md)   

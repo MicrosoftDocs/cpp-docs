@@ -45,7 +45,6 @@ These topics help you design and set up your ODBC database application.
   
 -   [ODBC Basics](../../data/odbc/odbc-basics.md)  
   
--   [Design and Create an ODBC Database Application](#_core_design_and_create_an_odbc_database_application)  
   
 ## See Also  
  [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

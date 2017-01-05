@@ -1,5 +1,5 @@
 ---
-title: "STL Containers | Microsoft Docs"
+title: "C++ Standard Library Containers | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -11,8 +11,8 @@ ms.topic: "article"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "Standard C++ Library, template class containers"
-  - "containers, STL"
+  - "C++ Standard Library, template class containers"
+  - "containers, C++ Standard Library"
 ms.assetid: 8e915ca1-19ba-4f0d-93c8-e2c3bfd638eb
 caps.latest.revision: 29
 author: "corob-msft"
@@ -33,10 +33,10 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# STL Containers
+# C++ Standard Library Containers
 The Standard Library provides various type-safe containers for storing collections of related objects. The containers are class templates; when you declare a container variable, you specify the type of the elements that the container will hold. Containers can be constructed with initializer lists. They have member functions for adding and removing elements and performing other operations.  
   
- You iterate over the elements in a container, and access the individual elements by using [iterators](../standard-library/iterators.md). You can use iterators explicitly by using their member functions and operators as well as global functions. You can also use them implicitly, for example by using a range-for loop. Iterators for all STL containers have a common interface but each container defines its own specialized iterators.  
+ You iterate over the elements in a container, and access the individual elements by using [iterators](../standard-library/iterators.md). You can use iterators explicitly by using their member functions and operators as well as global functions. You can also use them implicitly, for example by using a range-for loop. Iterators for all C++ Standard Library containers have a common interface but each container defines its own specialized iterators.  
   
  Containers can be divided into three categories: sequence containers, associative containers, and container adapters.  
   
@@ -158,10 +158,10 @@ int main()
   
  A `stack` container follows LIFO (last in, first out) semantics. The last element pushed on the stack is the first element popped. For more information, see [stack Class](../standard-library/stack-class.md).  
   
- Because container adapters do not support iterators, they cannot be used with the STL algorithms. For more information, see [Algorithms](../standard-library/algorithms.md).  
+ Because container adapters do not support iterators, they cannot be used with the C++ Standard Library algorithms. For more information, see [Algorithms](../standard-library/algorithms.md).  
   
 ## Requirements for Container Elements  
- In general, elements inserted into an STL container can be of just about any object type if they are copyable. Movable-only elements—for example, those such as `vector<unique_ptr<T>>` that are created by using `unique_ptr<>` will work as long as you don't call member functions that attempt to copy them.  
+ In general, elements inserted into a C++ Standard Library container can be of just about any object type if they are copyable. Movable-only elements—for example, those such as `vector<unique_ptr<T>>` that are created by using `unique_ptr<>` will work as long as you don't call member functions that attempt to copy them.  
   
  The destructor is not permitted to throw an exception.  
   
@@ -173,17 +173,17 @@ int main()
  The elements of containers are accessed by using iterators. For more information, see [Iterators](../standard-library/iterators.md).  
   
 > [!NOTE]
->  You can also use [range-based for loops](../cpp/range-based-for-statement-cpp.md) to iterate over STL collections.  
+>  You can also use [range-based for loops](../cpp/range-based-for-statement-cpp.md) to iterate over C++ Standard Library collections.  
   
 ## Comparing containers  
- All containers overload the operator== for comparing two containers of the same type that have the same element type. You can use == to compare a vector\<string> to another vector\<string>, but you cannot use it to compare a vector\<string> to a list\<string> or a vector\<string> to a vector\<char*>.  In C++98/03 you can use [std::equal](../Topic/equal.md) or [std::mismatch](../Topic/mismatch.md) to compare dissimilar container types and/or element types. In C++11 you can also use [std::is_permutation](../Topic/is_permutation.md). But in all these cases the functions assume that the containers are the same length. If the second range is shorter than the first, then undefined behavior results. If the second range is longer, results can still be incorrect because the comparison never continues past the end of the first range.  
+ All containers overload the operator== for comparing two containers of the same type that have the same element type. You can use == to compare a vector\<string> to another vector\<string>, but you cannot use it to compare a vector\<string> to a list\<string> or a vector\<string> to a vector\<char*>.  In C++98/03 you can use [std::equal](http://msdn.microsoft.com/Library/56533afd-b696-40a0-8fa9-d366539e49ae) or [std::mismatch](http://msdn.microsoft.com/Library/a9fe78f3-9a86-44dc-9400-0c2ed1083323) to compare dissimilar container types and/or element types. In C++11 you can also use [std::is_permutation](http://msdn.microsoft.com/Library/3384e786-e210-4648-b2bc-3896b5e14f1f). But in all these cases the functions assume that the containers are the same length. If the second range is shorter than the first, then undefined behavior results. If the second range is longer, results can still be incorrect because the comparison never continues past the end of the first range.  
   
 ### Comparing dissimilar containers (C++14)  
- In C++14 and later, you can compare dissimilar containers and/or dissimilar elements types by using one of the [std::equal](../Topic/equal.md), [std::mismatch](../Topic/mismatch.md), or [std::is_permutation](../Topic/is_permutation.md) function overloads that take two complete ranges. These overloads enable you to compare containers with different lengths. These overloads are much less susceptible to user error, and are optimized to return false in constant time when containers of dissimilar lengths are compared. Therefore, we recommend you use these overloads unless (1) you have a very clear reason not to, or (2) you are using a [std::list](../standard-library/list-class.md) container, which does not benefit from the dual-range optimizations.  
+ In C++14 and later, you can compare dissimilar containers and/or dissimilar elements types by using one of the [std::equal](http://msdn.microsoft.com/Library/56533afd-b696-40a0-8fa9-d366539e49ae), [std::mismatch](http://msdn.microsoft.com/Library/a9fe78f3-9a86-44dc-9400-0c2ed1083323), or [std::is_permutation](http://msdn.microsoft.com/Library/3384e786-e210-4648-b2bc-3896b5e14f1f) function overloads that take two complete ranges. These overloads enable you to compare containers with different lengths. These overloads are much less susceptible to user error, and are optimized to return false in constant time when containers of dissimilar lengths are compared. Therefore, we recommend you use these overloads unless (1) you have a very clear reason not to, or (2) you are using a [std::list](../standard-library/list-class.md) container, which does not benefit from the dual-range optimizations.  
   
 ## See Also  
  [Containers](../cpp/containers-modern-cpp.md)   
- [Standard Template Library](../misc/standard-template-library.md)   
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)   
  [\<sample container>](../standard-library/sample-container.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 

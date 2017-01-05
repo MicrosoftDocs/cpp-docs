@@ -111,7 +111,7 @@ Defines the container template class complex and its supporting templates.
 |[sin](../standard-library/complex-functions.md#sin)|Returns the sine of a complex number.|  
 |[sinh](../standard-library/complex-functions.md#sinh)|Returns the hyperbolic sine of a complex number.|  
 |[sqrt](../standard-library/complex-functions.md#sqrt)|Returns the square root of a complex number.|  
-|[tan](../standard-library/complex-functions.md#functions_tan)|Returns the tangent of a complex number.|  
+|[tan](../standard-library/complex-functions.md#tan)|Returns the tangent of a complex number.|  
 |[tanh](../standard-library/complex-functions.md#tanh)|Returns the hyperbolic tangent of a complex number.|  
   
 ### Operators  

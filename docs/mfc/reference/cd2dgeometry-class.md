@@ -50,62 +50,62 @@ class CD2DGeometry : public CD2DResource;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CD2DGeometry::CD2DGeometry](#cd2dgeometry__cd2dgeometry)|Constructs a CD2DGeometry object.|  
-|[CD2DGeometry::~CD2DGeometry](#cd2dgeometry___dtorcd2dgeometry)|The destructor. Called when a D2D geometry object is being destroyed.|  
+|[CD2DGeometry::CD2DGeometry](#cd2dgeometry)|Constructs a CD2DGeometry object.|  
+|[CD2DGeometry::~CD2DGeometry](#_dtorcd2dgeometry)|The destructor. Called when a D2D geometry object is being destroyed.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CD2DGeometry::Attach](#cd2dgeometry__attach)|Attaches existing resource interface to the object|  
-|[CD2DGeometry::CombineWithGeometry](#cd2dgeometry__combinewithgeometry)|Combines this geometry with the specified geometry and stores the result in an ID2D1SimplifiedGeometrySink.|  
-|[CD2DGeometry::CompareWithGeometry](#cd2dgeometry__comparewithgeometry)|Describes the intersection between this geometry and the specified geometry. The comparison is performed using the specified flattening tolerance.|  
-|[CD2DGeometry::ComputeArea](#cd2dgeometry__computearea)|Computes the area of the geometry after it has been transformed by the specified matrix and flattened using the specified tolerance.|  
-|[CD2DGeometry::ComputeLength](#cd2dgeometry__computelength)|Calculates the length of the geometry as though each segment were unrolled into a line.|  
-|[CD2DGeometry::ComputePointAtLength](#cd2dgeometry__computepointatlength)|Calculates the point and tangent vector at the specified distance along the geometry after it has been transformed by the specified matrix and flattened using the specified tolerance.|  
-|[CD2DGeometry::Destroy](#cd2dgeometry__destroy)|Destroys a CD2DGeometry object. (Overrides [CD2DResource::Destroy](../../mfc/reference/cd2dresource-class.md#cd2dresource__destroy).)|  
-|[CD2DGeometry::Detach](#cd2dgeometry__detach)|Detaches resource interface from the object|  
-|[CD2DGeometry::FillContainsPoint](#cd2dgeometry__fillcontainspoint)|Indicates whether the area filled by the geometry would contain the specified point given the specified flattening tolerance.|  
-|[CD2DGeometry::Get](#cd2dgeometry__get)|Returns ID2D1Geometry interface|  
-|[CD2DGeometry::GetBounds](#cd2dgeometry__getbounds)||  
-|[CD2DGeometry::GetWidenedBounds](#cd2dgeometry__getwidenedbounds)|Gets the bounds of the geometry after it has been widened by the specified stroke width and style and transformed by the specified matrix.|  
-|[CD2DGeometry::IsValid](#cd2dgeometry__isvalid)|Checks resource validity (Overrides [CD2DResource::IsValid](../../mfc/reference/cd2dresource-class.md#cd2dresource__isvalid).)|  
-|[CD2DGeometry::Outline](#cd2dgeometry__outline)|Computes the outline of the geometry and writes the result to an ID2D1SimplifiedGeometrySink.|  
-|[CD2DGeometry::Simplify](#cd2dgeometry__simplify)|Creates a simplified version of the geometry that contains only lines and (optionally) cubic Bezier curves and writes the result to an ID2D1SimplifiedGeometrySink.|  
-|[CD2DGeometry::StrokeContainsPoint](#cd2dgeometry__strokecontainspoint)|Determines whether the geometry's stroke contains the specified point given the specified stroke thickness, style, and transform.|  
-|[CD2DGeometry::Tessellate](#cd2dgeometry__tessellate)|Creates a set of clockwise-wound triangles that cover the geometry after it has been transformed using the specified matrix and flattened using the specified tolerance.|  
-|[CD2DGeometry::Widen](#cd2dgeometry__widen)|Widens the geometry by the specified stroke and writes the result to an ID2D1SimplifiedGeometrySink after it has been transformed by the specified matrix and flattened using the specified tolerance.|  
+|[CD2DGeometry::Attach](#attach)|Attaches existing resource interface to the object|  
+|[CD2DGeometry::CombineWithGeometry](#combinewithgeometry)|Combines this geometry with the specified geometry and stores the result in an ID2D1SimplifiedGeometrySink.|  
+|[CD2DGeometry::CompareWithGeometry](#comparewithgeometry)|Describes the intersection between this geometry and the specified geometry. The comparison is performed using the specified flattening tolerance.|  
+|[CD2DGeometry::ComputeArea](#computearea)|Computes the area of the geometry after it has been transformed by the specified matrix and flattened using the specified tolerance.|  
+|[CD2DGeometry::ComputeLength](#computelength)|Calculates the length of the geometry as though each segment were unrolled into a line.|  
+|[CD2DGeometry::ComputePointAtLength](#computepointatlength)|Calculates the point and tangent vector at the specified distance along the geometry after it has been transformed by the specified matrix and flattened using the specified tolerance.|  
+|[CD2DGeometry::Destroy](#destroy)|Destroys a CD2DGeometry object. (Overrides [CD2DResource::Destroy](../../mfc/reference/cd2dresource-class.md#destroy).)|  
+|[CD2DGeometry::Detach](#detach)|Detaches resource interface from the object|  
+|[CD2DGeometry::FillContainsPoint](#fillcontainspoint)|Indicates whether the area filled by the geometry would contain the specified point given the specified flattening tolerance.|  
+|[CD2DGeometry::Get](#get)|Returns ID2D1Geometry interface|  
+|[CD2DGeometry::GetBounds](#getbounds)||  
+|[CD2DGeometry::GetWidenedBounds](#getwidenedbounds)|Gets the bounds of the geometry after it has been widened by the specified stroke width and style and transformed by the specified matrix.|  
+|[CD2DGeometry::IsValid](#isvalid)|Checks resource validity (Overrides [CD2DResource::IsValid](../../mfc/reference/cd2dresource-class.md#isvalid).)|  
+|[CD2DGeometry::Outline](#outline)|Computes the outline of the geometry and writes the result to an ID2D1SimplifiedGeometrySink.|  
+|[CD2DGeometry::Simplify](#simplify)|Creates a simplified version of the geometry that contains only lines and (optionally) cubic Bezier curves and writes the result to an ID2D1SimplifiedGeometrySink.|  
+|[CD2DGeometry::StrokeContainsPoint](#strokecontainspoint)|Determines whether the geometry's stroke contains the specified point given the specified stroke thickness, style, and transform.|  
+|[CD2DGeometry::Tessellate](#tessellate)|Creates a set of clockwise-wound triangles that cover the geometry after it has been transformed using the specified matrix and flattened using the specified tolerance.|  
+|[CD2DGeometry::Widen](#widen)|Widens the geometry by the specified stroke and writes the result to an ID2D1SimplifiedGeometrySink after it has been transformed by the specified matrix and flattened using the specified tolerance.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CD2DGeometry::operator ID2D1Geometry*](#cd2dgeometry__operator_id2d1geometry_star)|Returns ID2D1Geometry interface|  
+|[CD2DGeometry::operator ID2D1Geometry*](#operator_id2d1geometry_star)|Returns ID2D1Geometry interface|  
   
 ### Protected Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CD2DGeometry::m_pGeometry](#cd2dgeometry__m_pgeometry)|A pointer to an ID2D1Geometry.|  
+|[CD2DGeometry::m_pGeometry](#m_pgeometry)|A pointer to an ID2D1Geometry.|  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
   
  [CD2DResource](../../mfc/reference/cd2dresource-class.md)  
   
- [CD2DGeometry](../../mfc/reference/cd2dgeometry-class.md)  
+ `CD2DGeometry`  
   
 ## Requirements  
  **Header:** afxrendertarget.h  
   
-##  <a name="cd2dgeometry___dtorcd2dgeometry"></a>  CD2DGeometry::~CD2DGeometry  
+##  <a name="_dtorcd2dgeometry"></a>  CD2DGeometry::~CD2DGeometry  
  The destructor. Called when a D2D geometry object is being destroyed.  
   
 ```  
 virtual ~CD2DGeometry();
 ```  
   
-##  <a name="cd2dgeometry__attach"></a>  CD2DGeometry::Attach  
+##  <a name="attach"></a>  CD2DGeometry::Attach  
  Attaches existing resource interface to the object  
   
 ```  
@@ -116,7 +116,7 @@ void Attach(ID2D1Geometry* pResource);
  `pResource`  
  Existing resource interface. Cannot be NULL  
   
-##  <a name="cd2dgeometry__cd2dgeometry"></a>  CD2DGeometry::CD2DGeometry  
+##  <a name="cd2dgeometry"></a>  CD2DGeometry::CD2DGeometry  
  Constructs a CD2DGeometry object.  
   
 ```  
@@ -132,7 +132,7 @@ CD2DGeometry(
  `bAutoDestroy`  
  Indicates that the object will be destroyed by owner (pParentTarget).  
   
-##  <a name="cd2dgeometry__combinewithgeometry"></a>  CD2DGeometry::CombineWithGeometry  
+##  <a name="combinewithgeometry"></a>  CD2DGeometry::CombineWithGeometry  
  Combines this geometry with the specified geometry and stores the result in an ID2D1SimplifiedGeometrySink.  
   
 ```  
@@ -165,7 +165,7 @@ BOOL CombineWithGeometry(
 ### Return Value  
  If the method succeeds, it returns TRUE. Otherwise, it returns FALSE.  
   
-##  <a name="cd2dgeometry__comparewithgeometry"></a>  CD2DGeometry::CompareWithGeometry  
+##  <a name="comparewithgeometry"></a>  CD2DGeometry::CompareWithGeometry  
  Describes the intersection between this geometry and the specified geometry. The comparison is performed using the specified flattening tolerance.  
   
 ```  
@@ -190,7 +190,7 @@ D2D1_GEOMETRY_RELATION CompareWithGeometry(
 ### Return Value  
  If the method succeeds, it returns TRUE. Otherwise, it returns FALSE.  
   
-##  <a name="cd2dgeometry__computearea"></a>  CD2DGeometry::ComputeArea  
+##  <a name="computearea"></a>  CD2DGeometry::ComputeArea  
  Computes the area of the geometry after it has been transformed by the specified matrix and flattened using the specified tolerance.  
   
 ```  
@@ -215,7 +215,7 @@ BOOL ComputeArea(
 ### Return Value  
  If the method succeeds, it returns TRUE. Otherwise, it returns FALSE.  
   
-##  <a name="cd2dgeometry__computelength"></a>  CD2DGeometry::ComputeLength  
+##  <a name="computelength"></a>  CD2DGeometry::ComputeLength  
  Calculates the length of the geometry as though each segment were unrolled into a line.  
   
 ```  
@@ -240,7 +240,7 @@ BOOL ComputeLength(
 ### Return Value  
  If the method succeeds, it returns TRUE. Otherwise, it returns FALSE.  
   
-##  <a name="cd2dgeometry__computepointatlength"></a>  CD2DGeometry::ComputePointAtLength  
+##  <a name="computepointatlength"></a>  CD2DGeometry::ComputePointAtLength  
  Calculates the point and tangent vector at the specified distance along the geometry after it has been transformed by the specified matrix and flattened using the specified tolerance.  
   
 ```  
@@ -273,14 +273,14 @@ BOOL ComputePointAtLength(
 ### Return Value  
  If the method succeeds, it returns TRUE. Otherwise, it returns FALSE.  
   
-##  <a name="cd2dgeometry__destroy"></a>  CD2DGeometry::Destroy  
+##  <a name="destroy"></a>  CD2DGeometry::Destroy  
  Destroys a CD2DGeometry object.  
   
 ```  
 virtual void Destroy();
 ```  
   
-##  <a name="cd2dgeometry__detach"></a>  CD2DGeometry::Detach  
+##  <a name="detach"></a>  CD2DGeometry::Detach  
  Detaches resource interface from the object  
   
 ```  
@@ -290,7 +290,7 @@ ID2D1Geometry* Detach();
 ### Return Value  
  Pointer to detached resource interface.  
   
-##  <a name="cd2dgeometry__fillcontainspoint"></a>  CD2DGeometry::FillContainsPoint  
+##  <a name="fillcontainspoint"></a>  CD2DGeometry::FillContainsPoint  
  Indicates whether the area filled by the geometry would contain the specified point given the specified flattening tolerance.  
   
 ```  
@@ -319,7 +319,7 @@ BOOL FillContainsPoint(
 ### Return Value  
  If the method succeeds, it returns TRUE. Otherwise, it returns FALSE.  
   
-##  <a name="cd2dgeometry__get"></a>  CD2DGeometry::Get  
+##  <a name="get"></a>  CD2DGeometry::Get  
  Returns ID2D1Geometry interface  
   
 ```  
@@ -329,7 +329,7 @@ ID2D1Geometry* Get();
 ### Return Value  
  Pointer to an ID2D1Geometry interface or NULL if object is not initialized yet.  
   
-##  <a name="cd2dgeometry__getbounds"></a>  CD2DGeometry::GetBounds  
+##  <a name="getbounds"></a>  CD2DGeometry::GetBounds  
   
 ```  
  
@@ -346,7 +346,7 @@ CD2DRectF& bounds) const;
   
 ### Return Value  
   
-##  <a name="cd2dgeometry__getwidenedbounds"></a>  CD2DGeometry::GetWidenedBounds  
+##  <a name="getwidenedbounds"></a>  CD2DGeometry::GetWidenedBounds  
  Gets the bounds of the geometry after it has been widened by the specified stroke width and style and transformed by the specified matrix.  
   
 ```  
@@ -379,7 +379,7 @@ BOOL GetWidenedBounds(
 ### Return Value  
  If the method succeeds, it returns TRUE. Otherwise, it returns FALSE.  
   
-##  <a name="cd2dgeometry__isvalid"></a>  CD2DGeometry::IsValid  
+##  <a name="isvalid"></a>  CD2DGeometry::IsValid  
  Checks resource validity  
   
 ```  
@@ -391,23 +391,24 @@ virtual BOOL IsValid() const;
 ### Return Value  
  TRUE if resource is valid; otherwise FALSE.  
   
-##  <a name="cd2dgeometry__m_pgeometry"></a>  CD2DGeometry::m_pGeometry  
+##  <a name="m_pgeometry"></a>  CD2DGeometry::m_pGeometry  
  A pointer to an ID2D1Geometry.  
   
 ```  
 ID2D1Geometry* m_pGeometry;  
 ```  
   
-##  <a name="cd2dgeometry__operator_id2d1geometry_star"></a>  CD2DGeometry::operator ID2D1Geometry*  
+##  <a name="operator_id2d1geometry_star"></a>  CD2DGeometry::operator ID2D1Geometry*  
  Returns ID2D1Geometry interface  
   
-```  operator ID2D1Geometry*();
+```  
+operator ID2D1Geometry*();
 ```   
   
 ### Return Value  
  Pointer to an ID2D1Geometry interface or NULL if object is not initialized yet.  
   
-##  <a name="cd2dgeometry__outline"></a>  CD2DGeometry::Outline  
+##  <a name="outline"></a>  CD2DGeometry::Outline  
  Computes the outline of the geometry and writes the result to an ID2D1SimplifiedGeometrySink.  
   
 ```  
@@ -432,7 +433,7 @@ BOOL Outline(
 ### Return Value  
  If the method succeeds, it returns TRUE. Otherwise, it returns FALSE.  
   
-##  <a name="cd2dgeometry__simplify"></a>  CD2DGeometry::Simplify  
+##  <a name="simplify"></a>  CD2DGeometry::Simplify  
  Creates a simplified version of the geometry that contains only lines and (optionally) cubic Bezier curves and writes the result to an ID2D1SimplifiedGeometrySink.  
   
 ```  
@@ -461,7 +462,7 @@ BOOL Simplify(
 ### Return Value  
  If the method succeeds, it returns TRUE. Otherwise, it returns FALSE.  
   
-##  <a name="cd2dgeometry__strokecontainspoint"></a>  CD2DGeometry::StrokeContainsPoint  
+##  <a name="strokecontainspoint"></a>  CD2DGeometry::StrokeContainsPoint  
  Determines whether the geometry's stroke contains the specified point given the specified stroke thickness, style, and transform.  
   
 ```  
@@ -498,7 +499,7 @@ BOOL StrokeContainsPoint(
 ### Return Value  
  If the method succeeds, it returns TRUE. Otherwise, it returns FALSE.  
   
-##  <a name="cd2dgeometry__tessellate"></a>  CD2DGeometry::Tessellate  
+##  <a name="tessellate"></a>  CD2DGeometry::Tessellate  
  Creates a set of clockwise-wound triangles that cover the geometry after it has been transformed using the specified matrix and flattened using the specified tolerance.  
   
 ```  
@@ -523,7 +524,7 @@ BOOL Tessellate(
 ### Return Value  
  If the method succeeds, it returns TRUE. Otherwise, it returns FALSE.  
   
-##  <a name="cd2dgeometry__widen"></a>  CD2DGeometry::Widen  
+##  <a name="widen"></a>  CD2DGeometry::Widen  
  Widens the geometry by the specified stroke and writes the result to an ID2D1SimplifiedGeometrySink after it has been transformed by the specified matrix and flattened using the specified tolerance.  
   
 ```  

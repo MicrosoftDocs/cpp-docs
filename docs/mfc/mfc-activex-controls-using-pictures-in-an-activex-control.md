@@ -84,15 +84,15 @@ This article describes the common Picture type and how to implement it in your A
 ##  <a name="_core_additions_to_your_control_project"></a> Additions to Your Control Project  
  To add the property page ID for the standard Picture property page, insert the following line after the `BEGIN_PROPPAGEIDS` macro in the control implementation file (.CPP):  
   
- [!code-cpp[NVC_MFC_AxPic#1](../mfc/codesnippet/CPP/mfc-activex-controls-using-pictures-in-an-activex-control_1.cpp)]  
+ [!code-cpp[NVC_MFC_AxPic#1](../mfc/codesnippet/cpp/mfc-activex-controls-using-pictures-in-an-activex-control_1.cpp)]  
   
  You must also increment the count parameter of your `BEGIN_PROPPAGEIDS` macro by one. The following line illustrates this:  
   
- [!code-cpp[NVC_MFC_AxPic#2](../mfc/codesnippet/CPP/mfc-activex-controls-using-pictures-in-an-activex-control_2.cpp)]  
+ [!code-cpp[NVC_MFC_AxPic#2](../mfc/codesnippet/cpp/mfc-activex-controls-using-pictures-in-an-activex-control_2.cpp)]  
   
  To add the `CPictureHolder` data member to the control class, insert the following line under the protected section of the control class declaration in the control header file (.H):  
   
- [!code-cpp[NVC_MFC_AxPic#3](../mfc/codesnippet/CPP/mfc-activex-controls-using-pictures-in-an-activex-control_3.h)]  
+ [!code-cpp[NVC_MFC_AxPic#3](../mfc/codesnippet/cpp/mfc-activex-controls-using-pictures-in-an-activex-control_3.h)]  
   
  It is not necessary to name your data member `m_pic`; any name will suffice.  
   
@@ -120,15 +120,15 @@ This article describes the common Picture type and how to implement it in your A
   
  The Add Property Wizard adds the following code between the dispatch map comments in the control header (.H) file:  
   
- [!code-cpp[NVC_MFC_AxPic#4](../mfc/codesnippet/CPP/mfc-activex-controls-using-pictures-in-an-activex-control_4.h)]  
+ [!code-cpp[NVC_MFC_AxPic#4](../mfc/codesnippet/cpp/mfc-activex-controls-using-pictures-in-an-activex-control_4.h)]  
   
  In addition, the following code was inserted in the dispatch map of the control implementation (.CPP) file:  
   
- [!code-cpp[NVC_MFC_AxPic#5](../mfc/codesnippet/CPP/mfc-activex-controls-using-pictures-in-an-activex-control_5.cpp)]  
+ [!code-cpp[NVC_MFC_AxPic#5](../mfc/codesnippet/cpp/mfc-activex-controls-using-pictures-in-an-activex-control_5.cpp)]  
   
  The Add Property Wizard also adds the following two stub functions in the control implementation file:  
   
- [!code-cpp[NVC_MFC_AxPic#6](../mfc/codesnippet/CPP/mfc-activex-controls-using-pictures-in-an-activex-control_6.cpp)]  
+ [!code-cpp[NVC_MFC_AxPic#6](../mfc/codesnippet/cpp/mfc-activex-controls-using-pictures-in-an-activex-control_6.cpp)]  
   
 > [!NOTE]
 >  Your control class and function names might differ from the example above.  
@@ -138,25 +138,25 @@ This article describes the common Picture type and how to implement it in your A
   
  In the control `OnResetState` function, add the following optional line after the call to `COleControl::OnResetState`:  
   
- [!code-cpp[NVC_MFC_AxPic#7](../mfc/codesnippet/CPP/mfc-activex-controls-using-pictures-in-an-activex-control_7.cpp)]  
+ [!code-cpp[NVC_MFC_AxPic#7](../mfc/codesnippet/cpp/mfc-activex-controls-using-pictures-in-an-activex-control_7.cpp)]  
   
  This sets the control's picture to a blank picture.  
   
- To draw the picture properly, make a call to [CPictureHolder::Render](../mfc/reference/cpictureholder-class.md#cpictureholder__render) in the control `OnDraw` function. Modify your function to resemble the following example:  
+ To draw the picture properly, make a call to [CPictureHolder::Render](../mfc/reference/cpictureholder-class.md#render) in the control `OnDraw` function. Modify your function to resemble the following example:  
   
- [!code-cpp[NVC_MFC_AxPic#8](../mfc/codesnippet/CPP/mfc-activex-controls-using-pictures-in-an-activex-control_8.cpp)]  
+ [!code-cpp[NVC_MFC_AxPic#8](../mfc/codesnippet/cpp/mfc-activex-controls-using-pictures-in-an-activex-control_8.cpp)]  
   
  In the Get function of the control's custom picture property, add the following line:  
   
- [!code-cpp[NVC_MFC_AxPic#9](../mfc/codesnippet/CPP/mfc-activex-controls-using-pictures-in-an-activex-control_9.cpp)]  
+ [!code-cpp[NVC_MFC_AxPic#9](../mfc/codesnippet/cpp/mfc-activex-controls-using-pictures-in-an-activex-control_9.cpp)]  
   
  In the Set function of the control's custom Picture property, add the following lines:  
   
- [!code-cpp[NVC_MFC_AxPic#10](../mfc/codesnippet/CPP/mfc-activex-controls-using-pictures-in-an-activex-control_10.cpp)]  
+ [!code-cpp[NVC_MFC_AxPic#10](../mfc/codesnippet/cpp/mfc-activex-controls-using-pictures-in-an-activex-control_10.cpp)]  
   
  The picture property must be made persistent so that information added at design time will show up at run time. Add the following line to the `COleControl`-derived class's `DoPropExchange` function:  
   
- [!code-cpp[NVC_MFC_AxPic#11](../mfc/codesnippet/CPP/mfc-activex-controls-using-pictures-in-an-activex-control_11.cpp)]  
+ [!code-cpp[NVC_MFC_AxPic#11](../mfc/codesnippet/cpp/mfc-activex-controls-using-pictures-in-an-activex-control_11.cpp)]  
   
 > [!NOTE]
 >  Your class and function names might differ from the example above.  

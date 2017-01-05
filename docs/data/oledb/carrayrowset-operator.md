@@ -45,7 +45,7 @@ Provides array-like syntax for accessing a row in the rowset.
 ```  
   
       TAccessor  
-      & operator[](int nRow);  
+      & operator[](int nrow);  
 ```  
   
 #### Parameters  

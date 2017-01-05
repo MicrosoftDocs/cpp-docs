@@ -1,5 +1,5 @@
 ---
-title: "for_each (STL-CLR) | Microsoft Docs"
+title: "for_each (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -45,7 +45,7 @@ template<class _InIt, class _Fn1> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `for_each`. For more information, see [for_each](../Topic/for_each.md).  
+ This function behaves the same as the C++ Standard Library function `for_each`. For more information, see [for_each](http://msdn.microsoft.com/Library/8cb2ae72-bef6-488b-b011-0475c0787e33).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

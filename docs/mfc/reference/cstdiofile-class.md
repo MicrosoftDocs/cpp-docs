@@ -51,29 +51,29 @@ class CStdioFile : public CFile
   
 |Name|Description|  
 |----------|-----------------|  
-|[CStdioFile::CStdioFile](#cstdiofile__cstdiofile)|Constructs a `CStdioFile` object from a path or file pointer.|  
+|[CStdioFile::CStdioFile](#cstdiofile)|Constructs a `CStdioFile` object from a path or file pointer.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CStdioFile::Open](#cstdiofile__open)|Overloaded. Open is designed for use with the default `CStdioFile` constructor (Overrides [CFile::Open](../../mfc/reference/cfile-class.md#cfile__open)).|  
-|[CStdioFile::ReadString](#cstdiofile__readstring)|Reads a single line of text.|  
-|[CStdioFile::Seek](#cstdiofile__seek)|Positions the current file pointer.|  
-|[CStdioFile::WriteString](#cstdiofile__writestring)|Writes a single line of text.|  
+|[CStdioFile::Open](#open)|Overloaded. Open is designed for use with the default `CStdioFile` constructor (Overrides [CFile::Open](../../mfc/reference/cfile-class.md#open)).|  
+|[CStdioFile::ReadString](#readstring)|Reads a single line of text.|  
+|[CStdioFile::Seek](#seek)|Positions the current file pointer.|  
+|[CStdioFile::WriteString](#writestring)|Writes a single line of text.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CStdioFile::m_pStream](#cstdiofile__m_pstream)|Contains a pointer to an open file.|  
+|[CStdioFile::m_pStream](#m_pstream)|Contains a pointer to an open file.|  
   
 ## Remarks  
  Stream files are buffered and can be opened in either text mode (the default) or binary mode.  
   
  Text mode provides special processing for carriage return–linefeed pairs. When you write a newline character (0x0A) to a text-mode `CStdioFile` object, the byte pair (0x0D, 0x0A) is sent to the file. When you read, the byte pair (0x0D, 0x0A) is translated to a single 0x0A byte.  
   
- The [CFile](../../mfc/reference/cfile-class.md) functions [Duplicate](../../mfc/reference/cfile-class.md#cfile__duplicate), [LockRange](../../mfc/reference/cfile-class.md#cfile__lockrange), and [UnlockRange](../../mfc/reference/cfile-class.md#cfile__unlockrange) are not supported for `CStdioFile`.  
+ The [CFile](../../mfc/reference/cfile-class.md) functions [Duplicate](../../mfc/reference/cfile-class.md#duplicate), [LockRange](../../mfc/reference/cfile-class.md#lockrange), and [UnlockRange](../../mfc/reference/cfile-class.md#unlockrange) are not supported for `CStdioFile`.  
   
  If you call these functions on a `CStdioFile`, you will get a [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md).  
   
@@ -89,7 +89,7 @@ class CStdioFile : public CFile
 ## Requirements  
  **Header:** afx.h  
   
-##  <a name="cstdiofile__cstdiofile"></a>  CStdioFile::CStdioFile  
+##  <a name="cstdiofile"></a>  CStdioFile::CStdioFile  
  Constructs and initializes a `CStdioFile` object.  
   
 ```  
@@ -125,7 +125,7 @@ CStdioFile(
  `nOpenFlags`  
  Specifies options for file creation, file sharing, and file access modes. You can specify multiple options by using the bitwise OR ( `|`) operator.  
   
- One file access mode option is required; other modes are optional. See [CFile::CFile](../../mfc/reference/cfile-class.md#cfile__cfile) for a list of mode options and other flags. In MFC version 3.0 and later, share flags are allowed.  
+ One file access mode option is required; other modes are optional. See [CFile::CFile](../../mfc/reference/cfile-class.md#cfile) for a list of mode options and other flags. In MFC version 3.0 and later, share flags are allowed.  
   
  `pTM`  
  Pointer to CAtlTransactionManager object.  
@@ -142,9 +142,9 @@ CStdioFile(
  If the file cannot be opened or created, the constructor throws a `CFileException*`.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#37](../../atl-mfc-shared/reference/codesnippet/CPP/cstdiofile-class_1.cpp)]  
+ [!code-cpp[NVC_MFCFiles#37](../../atl-mfc-shared/reference/codesnippet/cpp/cstdiofile-class_1.cpp)]  
   
-##  <a name="cstdiofile__m_pstream"></a>  CStdioFile::m_pStream  
+##  <a name="m_pstream"></a>  CStdioFile::m_pStream  
  The `m_pStream` data member is the pointer to an open file as returned by the C run-time function `fopen`.  
   
 ```  
@@ -154,7 +154,7 @@ FILE* m_pStream;
 ### Remarks  
  It is **NULL** if the file has never been opened or has been closed.  
   
-##  <a name="cstdiofile__open"></a>  CStdioFile::Open  
+##  <a name="open"></a>  CStdioFile::Open  
  Overloaded. Open is designed for use with the default `CStdioFile` constructor.  
   
 ```  
@@ -189,7 +189,7 @@ virtual BOOL Open(
   
 ### Remarks  
   
-##  <a name="cstdiofile__readstring"></a>  CStdioFile::ReadString  
+##  <a name="readstring"></a>  CStdioFile::ReadString  
  Reads text data into a buffer, up to a limit of `nMax`–1 characters, from the file associated with the `CStdioFile` object.  
   
 ```  
@@ -218,15 +218,15 @@ virtual BOOL ReadString(
 ### Remarks  
  Reading is stopped by the first newline character. If, in that case, fewer than `nMax`–1 characters have been read, a newline character is stored in the buffer. A null character ('\0') is appended in either case.  
   
- [CFile::Read](../../mfc/reference/cfile-class.md#cfile__read) is also available for text-mode input, but it does not terminate on a carriage return–linefeed pair.  
+ [CFile::Read](../../mfc/reference/cfile-class.md#read) is also available for text-mode input, but it does not terminate on a carriage return–linefeed pair.  
   
 > [!NOTE]
 >  The `CString` version of this function removes the `'\n'` if present; the `LPTSTR` version does not.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#38](../../atl-mfc-shared/reference/codesnippet/CPP/cstdiofile-class_2.cpp)]  
+ [!code-cpp[NVC_MFCFiles#38](../../atl-mfc-shared/reference/codesnippet/cpp/cstdiofile-class_2.cpp)]  
   
-##  <a name="cstdiofile__seek"></a>  CStdioFile::Seek  
+##  <a name="seek"></a>  CStdioFile::Seek  
  Repositions the pointer in a previously opened file.  
   
 ```  
@@ -259,11 +259,11 @@ virtual ULONGLONG Seek(
  This implementation of `Seek` is based on the Run-Time Library (CRT) function `fseek`. There are several limits on the usage of `Seek` on streams opened in text mode. For more information, see [fseek, _fseeki64](../../c-runtime-library/reference/fseek-fseeki64.md).  
   
 ### Example  
- The following example shows how to use `Seek` to move the pointer 1000 bytes from the beginning of the `cfile` file. Note that `Seek` does not read data, so you must subsequently call [CStdioFile::ReadString](#cstdiofile__readstring) to read data.  
+ The following example shows how to use `Seek` to move the pointer 1000 bytes from the beginning of the `cfile` file. Note that `Seek` does not read data, so you must subsequently call [CStdioFile::ReadString](#readstring) to read data.  
   
- [!code-cpp[NVC_MFCFiles#39](../../atl-mfc-shared/reference/codesnippet/CPP/cstdiofile-class_3.cpp)]  
+ [!code-cpp[NVC_MFCFiles#39](../../atl-mfc-shared/reference/codesnippet/cpp/cstdiofile-class_3.cpp)]  
   
-##  <a name="cstdiofile__writestring"></a>  CStdioFile::WriteString  
+##  <a name="writestring"></a>  CStdioFile::WriteString  
  Writes data from a buffer to the file associated with the `CStdioFile` object.  
   
 ```  
@@ -277,20 +277,20 @@ virtual void WriteString(LPCTSTR lpsz);
 ### Remarks  
  The terminating null character ( `\0`) is not written to the file. This method writes newline characters in `lpsz` to the file as a carriage return/linefeed pair.  
   
- If you want to write data that is not null-terminated to a file, use `CStdioFile::Write` or [CFile::Write](../../mfc/reference/cfile-class.md#cfile__write).  
+ If you want to write data that is not null-terminated to a file, use `CStdioFile::Write` or [CFile::Write](../../mfc/reference/cfile-class.md#write).  
   
  This method throws a `CInvalidArgException*` if you specify `NULL` for the `lpsz` parameter.  
   
  This method throws a `CFileException*` in response to file system errors.  
   
 ### Example  
- [!code-cpp[NVC_MFCFiles#40](../../atl-mfc-shared/reference/codesnippet/CPP/cstdiofile-class_4.cpp)]  
+ [!code-cpp[NVC_MFCFiles#40](../../atl-mfc-shared/reference/codesnippet/cpp/cstdiofile-class_4.cpp)]  
   
 ## See Also  
  [CFile Class](../../mfc/reference/cfile-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CFile Class](../../mfc/reference/cfile-class.md)   
- [CFile::Duplicate](../../mfc/reference/cfile-class.md#cfile__duplicate)   
- [CFile::LockRange](../../mfc/reference/cfile-class.md#cfile__lockrange)   
- [CFile::UnlockRange](../../mfc/reference/cfile-class.md#cfile__unlockrange)   
+ [CFile::Duplicate](../../mfc/reference/cfile-class.md#duplicate)   
+ [CFile::LockRange](../../mfc/reference/cfile-class.md#lockrange)   
+ [CFile::UnlockRange](../../mfc/reference/cfile-class.md#unlockrange)   
  [CNotSupportedException Class](../../mfc/reference/cnotsupportedexception-class.md)

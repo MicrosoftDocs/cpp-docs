@@ -38,10 +38,10 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Thread Local Storage (TLS)
-Thread Local Storage (TLS) is the method by which each thread in a given multithreaded process can allocate locations in which to store thread-specific data. Dynamically bound (run-time) thread-specific data is supported by way of the TLS API ([TlsAlloc](assetId:///TlsAlloc?qualifyHint=False&autoUpgrade=True),  [TlsGetValue](assetId:///TlsGetValue?qualifyHint=False&autoUpgrade=True),  [TlsSetValue](assetId:///TlsSetValue?qualifyHint=False&autoUpgrade=True), and [TlsFree](assetId:///TlsFree?qualifyHint=False&autoUpgrade=True)). For more information about how thread local storage is implemented on Windows, see [Thread Local Storage (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686749\(v=vs.85\).aspx).  Win32 and the Visual C++ compiler now support statically bound (load-time) per-thread data in addition to the existing API implementation.  
+Thread Local Storage (TLS) is the method by which each thread in a given multithreaded process can allocate locations in which to store thread-specific data. Dynamically bound (run-time) thread-specific data is supported by way of the TLS API ([TlsAlloc](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686801),  [TlsGetValue](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686812),  [TlsSetValue](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686818), and [TlsFree](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686804)). For more information about how thread local storage is implemented on Windows, see [Thread Local Storage (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686749\(v=vs.85\).aspx).  Win32 and the Visual C++ compiler now support statically bound (load-time) per-thread data in addition to the existing API implementation.  
   
 ##  <a name="_core_compiler_implementation_for_tls"></a> Compiler Implementation for TLS  
- **C++11:**  The `thread_local` storage class specifier is the recommended way to specify thread-local storage for objects and class members. For more information, see [Storage classes (C++)](../cpp/storage-classes-cpp.md#thread_local).  
+ **C++11:**  The `thread_local` storage class specifier is the recommended way to specify thread-local storage for objects and class members. For more information, see [Storage classes (C++)](../cpp/storage-classes-cpp.md).  
   
  Visual C++ also provides a Microsoft-specific attribute,  [thread](../cpp/thread.md), as extended storage class modifier. Use the `__declspec` keyword to declare a **thread** variable. For example, the following code declares an integer thread local variable and initializes it with a value:  
   
@@ -50,7 +50,7 @@ __declspec( thread ) int tls_i = 1;
 ```  
   
 ## Rules and limitations  
- The following guidelines must be observed when declaring statically bound thread local objects and variables. These guidelines apply both to [thread](../cpp/thread.md)and for the most part also to [thread_local](../cpp/storage-classes-cpp.md#thread_local):  
+ The following guidelines must be observed when declaring statically bound thread local objects and variables. These guidelines apply both to [thread](../cpp/thread.md)and for the most part also to [thread_local](../cpp/storage-classes-cpp.md):  
   
 -   The `thread` attribute can be applied only to class and data declarations and definitions. It cannot be used on function declarations or definitions. For example, the following code generates a compiler error:  
   
@@ -130,4 +130,3 @@ __declspec( thread ) int tls_i = 1;
   
 ## See Also  
  [Multithreading with C and Win32](../parallel/multithreading-with-c-and-win32.md)   
- [Rules and Limitations for TLS](../misc/rules-and-limitations-for-tls.md)

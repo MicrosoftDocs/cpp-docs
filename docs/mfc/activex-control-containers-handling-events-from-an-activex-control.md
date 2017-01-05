@@ -52,18 +52,18 @@ This article discusses using the Properties window to install event handlers for
 ##  <a name="_core_event_handler_modifications_to_the_project"></a> Event Handler Modifications to the Project  
  When you use the Properties window to add event handlers, an event sink map is declared and defined in your project. The following statements are added to the control .CPP file the first time an event handler is added. This code declares an event sink map for the dialog box class (in this case, `CContainerDlg`):  
   
- [!code-cpp[NVC_MFC_AxCont#8](../mfc/codesnippet/CPP/activex-control-containers-handling-events-from-an-activex-control_1.cpp)]  
-[!code-cpp[NVC_MFC_AxCont#9](../mfc/codesnippet/CPP/activex-control-containers-handling-events-from-an-activex-control_2.cpp)]  
+ [!code-cpp[NVC_MFC_AxCont#8](../mfc/codesnippet/cpp/activex-control-containers-handling-events-from-an-activex-control_1.cpp)]  
+[!code-cpp[NVC_MFC_AxCont#9](../mfc/codesnippet/cpp/activex-control-containers-handling-events-from-an-activex-control_2.cpp)]  
   
  As you use the Properties window to add events, an event map entry (`ON_EVENT`) is added to the event sink map and an event handler function is added to the container's implementation (.CPP) file.  
   
  The following example declares an event handler, called `OnClickInCircCtrl`, for the Circ control's **ClickIn** event:  
   
- [!code-cpp[NVC_MFC_AxCont#10](../mfc/codesnippet/CPP/activex-control-containers-handling-events-from-an-activex-control_3.cpp)]  
+ [!code-cpp[NVC_MFC_AxCont#10](../mfc/codesnippet/cpp/activex-control-containers-handling-events-from-an-activex-control_3.cpp)]  
   
  In addition, the following template is added to the `CContainerDlg` class implementation (.CPP) file for the event handler member function:  
   
- [!code-cpp[NVC_MFC_AxCont#11](../mfc/codesnippet/CPP/activex-control-containers-handling-events-from-an-activex-control_4.cpp)]  
+ [!code-cpp[NVC_MFC_AxCont#11](../mfc/codesnippet/cpp/activex-control-containers-handling-events-from-an-activex-control_4.cpp)]  
   
  For more information on event sink macros, see [Event Sink Maps](../mfc/reference/event-sink-maps.md) in the *Class Library Reference*.  
   

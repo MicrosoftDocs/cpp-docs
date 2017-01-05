@@ -123,35 +123,7 @@ namespace NA {
 }  
 ```  
   
- C2327 can also occur when using Managed Extensions for C++:  
-  
-```  
-// C2327e.cpp  
-// compile with: /clr:oldSyntax /c  
-using namespace System;  
-namespace NA {  
-   public __value enum E : Int32 {  
-      one = 1, two = 2, three = 3  
-   };  
-  
-   public __gc class A {  
-      E m_e;  
-      public:  
-         __property E get_E() {  
-            return m_e;  
-         }  
-         // At set_E compiler doesn't know whether E is get_E or   
-         // Enum E, therefore fully qualifying Enum E is necessary  
-         __property void set_E(E e) {   // C2327  
-         // try the following line instead  
-         // __property void set_E(NA::E e) {  
-            m_e = e;  
-         }  
-   };  
-}  
-```  
-  
- The following sample shows C2327 when a property has the same name as the property type:  
+The following sample shows C2327 when a property has the same name as the property type:  
   
 ```  
 // C2327f.cpp  
@@ -176,31 +148,3 @@ private:
    // ::Address address;  
 };  
 ```  
-  
- The following sample shows C2327 when a property has the same name as the property type:  
-  
-```  
-// C2327g.cpp  
-// compile with: /clr:oldSyntax /c  
-#using <mscorlib.dll>  
-public __value struct Address {};  
-  
-public __gc class Person {  
-public:  
-   __property ::Address get_Address() {     
-      return address;  
-   }  
-  
-   __property void set_Address(Address addr)   // C2327  
-   // try the following line instead  
-   // __property void set_Address(::Address addr) {  
-      address = addr;   
-   }  
-  
-private:  
-   Address address;   // C2327  
-  
-   // try the following line instead  
-   // ::Address address;  
-};  
-```

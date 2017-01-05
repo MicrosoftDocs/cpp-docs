@@ -47,7 +47,7 @@ struct __declspec(novtable) scheduler_interface;
   
 |Name|Description|  
 |----------|-----------------|  
-|[scheduler_interface::schedule Method](#scheduler_interface__schedule_method)||  
+|[scheduler_interface::schedule Method](#schedule)||  
   
 ## Inheritance Hierarchy  
  `scheduler_interface`  
@@ -57,7 +57,7 @@ struct __declspec(novtable) scheduler_interface;
   
  **Namespace:** concurrency  
   
-##  <a name="scheduler_interface__schedule_method"></a>  scheduler_interface::schedule Method  
+##  <a name="schedule"></a>  scheduler_interface::schedule Method  
   
 ```
 virtual void schedule(
@@ -66,4 +66,4 @@ virtual void schedule(
 ```  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

@@ -48,9 +48,9 @@ This article discusses some of the design issues to consider when programming fo
   
 -   [Client or Server Application](#_core_client_or_server_application)  
   
--   [The Web Page: HTML, Active Documents, ActiveX Controls](#_core_the_web_page.3a_.html.2c_.activex_documents.2c_.activex_controls)  
+-   [](#_core_the_web_page)  
   
--   [Browser or Stand-Alone Application](#_core_browser_or_stand.2d.alone_application)  
+-   [Browser or Stand-Alone Application](#_core_browser_or_standalone)  
   
 -   [COM on the Internet](#_core_com_on_the_internet)  
   
@@ -70,14 +70,14 @@ This article discusses some of the design issues to consider when programming fo
 ##  <a name="_core_client_or_server_application"></a> Client or Server Application  
  Your application may run on a client computer or on a server computer. Your application may also be stored on a server, and then downloaded across the Internet and run on a client computer. MFC WinInet classes are used for client applications to download files. MFC and asynchronous moniker classes are used to download files and control properties. Classes for ActiveX controls and Active documents are used for client applications and for applications that are downloaded from the server to run on a client.  
   
-##  <a name="_core_the_web_page.3a_.html.2c_.activex_documents.2c_.activex_controls"></a> The Web Page: HTML, Active Documents, ActiveX Controls  
+##  <a name="_core_the_web_page"></a> The Web Page: HTML, Active Documents, ActiveX Controls  
  Microsoft offers several ways of providing content on a Web page. Web pages can use standard HTML or HTML extensions, such as the object tag, to provide dynamic content such as ActiveX controls.  
   
  Web browsers typically display HTML pages. Active documents can also display your application's data in the simple point-and-click interface of a COM-enabled browser. Your Active document server can display your document, full frame in the entire client area, with its own menus and toolbars.  
   
  ActiveX controls you write can be downloaded asynchronously from the server and displayed on a Web page. You can use a scripting language such as VBScript to perform client-side validation before sending information to the server.  
   
-##  <a name="_core_browser_or_stand.2d.alone_application"></a> Browser or Stand-Alone Application  
+##  <a name="_core_browser_or_standalone"></a> Browser or Stand-Alone Application  
  You can write ActiveX controls that are embedded in an HTML page and Active document servers that are viewed in a browser. You can write HTML pages that contain a button to submit a request to run your ISAPI application on a Web server. You can write a stand-alone application that uses Internet protocols to download files and display the information to your user, without ever using a browser application.  
   
 ##  <a name="_core_com_on_the_internet"></a> COM on the Internet  

@@ -37,8 +37,6 @@ translation.priority.ht:
 # How to: Define an Interface Static Constructor (C++/CLI)
 An interface can have a static constructor, which can be used to initialize static data members.  A static constructor will be called at most once, and will be called before the first time a static interface member is accessed.  
   
- For more information on static constructors, see [How to: Define Static Constructors in a Class or Struct](../misc/how-to-define-static-constructors-in-a-class-or-struct.md).  
-  
 ## Example  
   
 ```  

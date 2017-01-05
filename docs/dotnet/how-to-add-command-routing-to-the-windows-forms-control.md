@@ -36,9 +36,9 @@ translation.priority.ht:
 # How to: Add Command Routing to the Windows Forms Control
 [CWinFormsView](../mfc/reference/cwinformsview-class.md) routes commands and update-command UI messages to the user control to allow it to handle MFC commands (for example, frame menu items and toolbar buttons).  
   
- The user control uses [ICommandTarget::Initialize](../Topic/ICommandTarget::Initialize.md) to store a reference to the command source object in `m_CmdSrc`, as shown in the following example. To use `ICommandTarget` you must add a reference to mfcmifc80.dll.  
+ The user control uses [ICommandTarget::Initialize](../mfc/reference/icommandtarget-interface.md#initialize) to store a reference to the command source object in `m_CmdSrc`, as shown in the following example. To use `ICommandTarget` you must add a reference to mfcmifc80.dll.  
   
- `CWinFormsView` handles several of the common MFC view notifications by forwarding them to the managed user control. These notifications include the [OnInitialUpdate](../Topic/IView::OnInitialUpdate.md), [OnUpdate](../Topic/IView::OnUpdate.md) and [OnActivateView](../Topic/IView::OnActivateView.md) methods of the [IView Interface](../mfc/reference/iview-interface.md).  
+ `CWinFormsView` handles several of the common MFC view notifications by forwarding them to the managed user control. These notifications include the [OnInitialUpdate](../mfc/reference/iview-interface.md#oninitialupdate), [OnUpdate](../mfc/reference/iview-interface.md#onupdate) and [OnActivateView](../mfc/reference/iview-interface.md#onactivateview) methods.  
   
  This topic assumes you have previously completed [How to: Create the User Control and Host in a Dialog Box](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md) and [How to: Create the User Control and Host MDI View](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md).  
   
@@ -111,4 +111,4 @@ translation.priority.ht:
  [Hosting a Windows Forms User Control as an MFC View](../dotnet/hosting-a-windows-forms-user-control-as-an-mfc-view.md)   
  [ICommandSource Interface](../mfc/reference/icommandsource-interface.md)   
  [ICommandTarget Interface](../mfc/reference/icommandtarget-interface.md)   
- [CommandHandler](../Topic/CommandHandler%20Delegate.md)
+ [CommandHandler](http://msdn.microsoft.com/Library/22096734-e074-4aca-8523-4b15590109f9)

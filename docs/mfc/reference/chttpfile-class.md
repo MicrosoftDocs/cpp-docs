@@ -51,21 +51,21 @@ class CHttpFile : public CInternetFile
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHttpFile::CHttpFile](#chttpfile__chttpfile)|Creates a `CHttpFile` object.|  
+|[CHttpFile::CHttpFile](#chttpfile)|Creates a `CHttpFile` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHttpFile::AddRequestHeaders](#chttpfile__addrequestheaders)|Adds headers to the request sent to an HTTP server.|  
-|[CHttpFile::EndRequest](#chttpfile__endrequest)|Ends a request sent to an HTTP server with the [SendRequestEx](#chttpfile__sendrequestex) member function.|  
-|[CHttpFile::GetFileURL](#chttpfile__getfileurl)|Gets the URL for the specified file.|  
-|[CHttpFile::GetObject](#chttpfile__getobject)|Gets the target object of the verb in a request to an HTTP server.|  
-|[CHttpFile::GetVerb](#chttpfile__getverb)|Gets the verb that was used in a request to an HTTP server.|  
-|[CHttpFile::QueryInfo](#chttpfile__queryinfo)|Returns the response or request headers from the HTTP server.|  
-|[CHttpFile::QueryInfoStatusCode](#chttpfile__queryinfostatuscode)|Retrieves the status code associated with an HTTP request and places it in the supplied `dwStatusCode` parameter.|  
-|[CHttpFile::SendRequest](#chttpfile__sendrequest)|Sends a request to an HTTP server.|  
-|[CHttpFile::SendRequestEx](#chttpfile__sendrequestex)|Sends a request to an HTTP server using the [Write](../../mfc/reference/cinternetfile-class.md#cinternetfile__write) or [WriteString](../../mfc/reference/cinternetfile-class.md#cinternetfile__writestring) methods of `CInternetFile`.|  
+|[CHttpFile::AddRequestHeaders](#addrequestheaders)|Adds headers to the request sent to an HTTP server.|  
+|[CHttpFile::EndRequest](#endrequest)|Ends a request sent to an HTTP server with the [SendRequestEx](#sendrequestex) member function.|  
+|[CHttpFile::GetFileURL](#getfileurl)|Gets the URL for the specified file.|  
+|[CHttpFile::GetObject](#getobject)|Gets the target object of the verb in a request to an HTTP server.|  
+|[CHttpFile::GetVerb](#getverb)|Gets the verb that was used in a request to an HTTP server.|  
+|[CHttpFile::QueryInfo](#queryinfo)|Returns the response or request headers from the HTTP server.|  
+|[CHttpFile::QueryInfoStatusCode](#queryinfostatuscode)|Retrieves the status code associated with an HTTP request and places it in the supplied `dwStatusCode` parameter.|  
+|[CHttpFile::SendRequest](#sendrequest)|Sends a request to an HTTP server.|  
+|[CHttpFile::SendRequestEx](#sendrequestex)|Sends a request to an HTTP server using the [Write](../../mfc/reference/cinternetfile-class.md#write) or [WriteString](../../mfc/reference/cinternetfile-class.md#writestring) methods of `CInternetFile`.|  
   
 ## Remarks  
  If your Internet session reads data from an HTTP server, you must create an instance of `CHttpFile`.  
@@ -86,7 +86,7 @@ class CHttpFile : public CInternetFile
 ## Requirements  
  **Header:** afxinet.h  
   
-##  <a name="chttpfile__addrequestheaders"></a>  CHttpFile::AddRequestHeaders  
+##  <a name="addrequestheaders"></a>  CHttpFile::AddRequestHeaders  
  Call this member function to add one or more HTTP request headers to the HTTP request handle.  
   
 ```  
@@ -131,7 +131,7 @@ BOOL AddRequestHeaders(
 > [!NOTE]
 >  The application can pass multiple headers in `pstrHeaders` or `str` for an `AddRequestHeaders` call using `HTTP_ADDREQ_FLAG_ADD` or `HTTP_ADDREQ_FLAG_ADD_IF_NEW`. If the application tries to remove or replace a header using **HTTP_ADDREQ_FLAG_REMOVE** or `HTTP_ADDREQ_FLAG_REPLACE`, only one header can be supplied in `lpszHeaders`.  
   
-##  <a name="chttpfile__chttpfile"></a>  CHttpFile::CHttpFile  
+##  <a name="chttpfile"></a>  CHttpFile::CHttpFile  
  This member function is called to construct a `CHttpFile` object.  
   
 ```  
@@ -174,12 +174,12 @@ CHttpFile(
  A pointer to a [CHttpConnection](../../mfc/reference/chttpconnection-class.md) object.  
   
 ### Remarks  
- You never construct a `CHttpFile` object directly; rather call [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#cinternetsession__openurl) or [CHttpConnection::OpenRequest](../../mfc/reference/chttpconnection-class.md#chttpconnection__openrequest) instead.  
+ You never construct a `CHttpFile` object directly; rather call [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl) or [CHttpConnection::OpenRequest](../../mfc/reference/chttpconnection-class.md#openrequest) instead.  
   
- The default value for `dwContext` is sent by MFC to the `CHttpFile` object from the [CInternetSession](../../mfc/reference/cinternetsession-class.md) object that created the `CHttpFile` object. When you call `CInternetSession::OpenURL` or `CHttpConnection` to construct a `CHttpFile` object, you can override the default to set the context identifier to a value of your choosing. The context identifier is returned to [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#cinternetsession__onstatuscallback) to provide status on the object with which it is identified. See the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.  
+ The default value for `dwContext` is sent by MFC to the `CHttpFile` object from the [CInternetSession](../../mfc/reference/cinternetsession-class.md) object that created the `CHttpFile` object. When you call `CInternetSession::OpenURL` or `CHttpConnection` to construct a `CHttpFile` object, you can override the default to set the context identifier to a value of your choosing. The context identifier is returned to [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) to provide status on the object with which it is identified. See the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.  
   
-##  <a name="chttpfile__endrequest"></a>  CHttpFile::EndRequest  
- Call this member function to end a request sent to an HTTP server with the [SendRequestEx](#chttpfile__sendrequestex) member function.  
+##  <a name="endrequest"></a>  CHttpFile::EndRequest  
+ Call this member function to end a request sent to an HTTP server with the [SendRequestEx](#sendrequestex) member function.  
   
 ```  
 BOOL EndRequest(
@@ -202,9 +202,9 @@ BOOL EndRequest(
  Nonzero if successful; otherwise 0. If the call fails, determine the cause of the failure by examining the thrown [CInternetException](../../mfc/reference/cinternetexception-class.md) object.  
   
 ### Remarks  
- The default value for `dwContext` is sent by MFC to the `CHttpFile` object from the [CInternetSession](../../mfc/reference/cinternetsession-class.md) object that created the `CHttpFile` object. When you call [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#cinternetsession__openurl) or [CHttpConnection](../../mfc/reference/chttpconnection-class.md) to construct a `CHttpFile` object, you can override the default to set the context identifier to a value of your choosing. The context identifier is returned to [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#cinternetsession__onstatuscallback) to provide status on the object with which it is identified. See article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.  
+ The default value for `dwContext` is sent by MFC to the `CHttpFile` object from the [CInternetSession](../../mfc/reference/cinternetsession-class.md) object that created the `CHttpFile` object. When you call [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl) or [CHttpConnection](../../mfc/reference/chttpconnection-class.md) to construct a `CHttpFile` object, you can override the default to set the context identifier to a value of your choosing. The context identifier is returned to [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) to provide status on the object with which it is identified. See article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.  
   
-##  <a name="chttpfile__getfileurl"></a>  CHttpFile::GetFileURL  
+##  <a name="getfileurl"></a>  CHttpFile::GetFileURL  
  Call this member function to get the name of the HTTP file as a URL.  
   
 ```  
@@ -217,9 +217,9 @@ virtual CString GetFileURL() const;
  A [CString](../../atl-mfc-shared/reference/cstringt-class.md) object containing a URL referencing the resource associated with this file.  
   
 ### Remarks  
- Use this member function only after a successful call to [SendRequest](#chttpfile__sendrequest) or on a `CHttpFile` object successfully created by [OpenURL](../../mfc/reference/cinternetsession-class.md#cinternetsession__openurl).  
+ Use this member function only after a successful call to [SendRequest](#sendrequest) or on a `CHttpFile` object successfully created by [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).  
   
-##  <a name="chttpfile__getobject"></a>  CHttpFile::GetObject  
+##  <a name="getobject"></a>  CHttpFile::GetObject  
  Call this member function to get the name of the object associated with this `CHttpFile`.  
   
 ```  
@@ -232,9 +232,9 @@ CString GetObject() const;
  A [CString](../../atl-mfc-shared/reference/cstringt-class.md) object containing the name of the object.  
   
 ### Remarks  
- Use this member function only after a successful call to [SendRequest](#chttpfile__sendrequest) or on a `CHttpFile` object successfully created by [OpenURL](../../mfc/reference/cinternetsession-class.md#cinternetsession__openurl).  
+ Use this member function only after a successful call to [SendRequest](#sendrequest) or on a `CHttpFile` object successfully created by [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).  
   
-##  <a name="chttpfile__getverb"></a>  CHttpFile::GetVerb  
+##  <a name="getverb"></a>  CHttpFile::GetVerb  
  Call this member function to get the HTTP verb (or method) associated with this `CHttpFile`.  
   
 ```  
@@ -247,9 +247,9 @@ CString GetVerb() const;
  A [CString](../../atl-mfc-shared/reference/cstringt-class.md) object containing the name of the HTTP verb (or method).  
   
 ### Remarks  
- Use this member function only after a successful call to [SendRequest](#chttpfile__sendrequest) or on a `CHttpFile` object successfully created by [OpenURL](../../mfc/reference/cinternetsession-class.md#cinternetsession__openurl).  
+ Use this member function only after a successful call to [SendRequest](#sendrequest) or on a `CHttpFile` object successfully created by [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).  
   
-##  <a name="chttpfile__queryinfo"></a>  CHttpFile::QueryInfo  
+##  <a name="queryinfo"></a>  CHttpFile::QueryInfo  
  Call this member function to return response or request headers from an HTTP request.  
   
 ```  
@@ -312,7 +312,7 @@ BOOL QueryInfo(
  Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
   
 ### Remarks  
- Use this member function only after a successful call to [SendRequest](#chttpfile__sendrequest) or on a `CHttpFile` object successfully created by [OpenURL](../../mfc/reference/cinternetsession-class.md#cinternetsession__openurl).  
+ Use this member function only after a successful call to [SendRequest](#sendrequest) or on a `CHttpFile` object successfully created by [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).  
   
  You can retrieve the following types of data from `QueryInfo`:  
   
@@ -372,7 +372,7 @@ BOOL QueryInfo(
   
 - **HTTP_QUERY_RAW_HEADERS_CRLF**  
   
-##  <a name="chttpfile__queryinfostatuscode"></a>  CHttpFile::QueryInfoStatusCode  
+##  <a name="queryinfostatuscode"></a>  CHttpFile::QueryInfoStatusCode  
  Call this member function to get the status code associated with an HTTP request and place it in the supplied `dwStatusCode` parameter.  
   
 ```  
@@ -389,7 +389,7 @@ BOOL QueryInfoStatusCode(DWORD& dwStatusCode) const;
  Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
   
 ### Remarks  
- Use this member function only after a successful call to [SendRequest](#chttpfile__sendrequest) or on a `CHttpFile` object successfully created by [OpenURL](../../mfc/reference/cinternetsession-class.md#cinternetsession__openurl).  
+ Use this member function only after a successful call to [SendRequest](#sendrequest) or on a `CHttpFile` object successfully created by [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).  
   
  HTTP status codes fall into groups indicating the success or failure of the request. The following tables outline the status code groups and the most common HTTP status codes.  
   
@@ -411,7 +411,7 @@ BOOL QueryInfoStatusCode(DWORD& dwStatusCode) const;
 |500|Unknown server error|  
 |503|Server capacity reached|  
   
-##  <a name="chttpfile__sendrequest"></a>  CHttpFile::SendRequest  
+##  <a name="sendrequest"></a>  CHttpFile::SendRequest  
  Call this member function to send a request to an HTTP server.  
   
 ```  
@@ -447,7 +447,7 @@ BOOL SendRequest(
 ### Return Value  
  Nonzero if successful; otherwise 0. If the call fails, determine the cause of the failure by examining the thrown [CInternetException](../../mfc/reference/cinternetexception-class.md) object.  
   
-##  <a name="chttpfile__sendrequestex"></a>  CHttpFile::SendRequestEx  
+##  <a name="sendrequestex"></a>  CHttpFile::SendRequestEx  
  Call this member function to send a request to an HTTP server.  
   
 ```  
@@ -484,16 +484,16 @@ BOOL SendRequestEx(
  Nonzero if successful. If the call fails, determine the cause of the failure by examining the thrown [CInternetException](../../mfc/reference/cinternetexception-class.md) object.  
   
 ### Remarks  
- This function allows your application to send data using the [Write](../../mfc/reference/cinternetfile-class.md#cinternetfile__write) and [WriteString](../../mfc/reference/cinternetfile-class.md#cinternetfile__writestring) methods of `CInternetFile`. You must know the length of the data to send before calling either override of this function. The first override allows you to specify the length of data you'd like to send. The second override accepts pointers to **INTERNET_BUFFERS** structures, which can be used to describe the buffer in great detail.  
+ This function allows your application to send data using the [Write](../../mfc/reference/cinternetfile-class.md#write) and [WriteString](../../mfc/reference/cinternetfile-class.md#writestring) methods of `CInternetFile`. You must know the length of the data to send before calling either override of this function. The first override allows you to specify the length of data you'd like to send. The second override accepts pointers to **INTERNET_BUFFERS** structures, which can be used to describe the buffer in great detail.  
   
- After content is written to the file, call [EndRequest](#chttpfile__endrequest) to end the operation.  
+ After content is written to the file, call [EndRequest](#endrequest) to end the operation.  
   
- The default value for `dwContext` is sent by MFC to the `CHttpFile` object from the [CInternetSession](../../mfc/reference/cinternetsession-class.md) object that created the `CHttpFile` object. When you call [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#cinternetsession__openurl) or [CHttpConnection](../../mfc/reference/chttpconnection-class.md) to construct a `CHttpFile` object, you can override the default to set the context identifier to a value of your choosing. The context identifier is returned to [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#cinternetsession__onstatuscallback) to provide status on the object with which it is identified. See the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.  
+ The default value for `dwContext` is sent by MFC to the `CHttpFile` object from the [CInternetSession](../../mfc/reference/cinternetsession-class.md) object that created the `CHttpFile` object. When you call [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl) or [CHttpConnection](../../mfc/reference/chttpconnection-class.md) to construct a `CHttpFile` object, you can override the default to set the context identifier to a value of your choosing. The context identifier is returned to [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) to provide status on the object with which it is identified. See the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.  
   
 ### Example  
  This code fragment sends the content of a string to a DLL named MFCISAPI.DLL on the LOCALHOST server. While this example uses only one call to `WriteString`, using multiple calls to send data in blocks is acceptable.  
   
- [!code-cpp[NVC_MFCWinInet#9](../../mfc/codesnippet/CPP/chttpfile-class_1.cpp)]  
+ [!code-cpp[NVC_MFCWinInet#9](../../mfc/codesnippet/cpp/chttpfile-class_1.cpp)]  
   
 ## See Also  
  [CInternetFile Class](../../mfc/reference/cinternetfile-class.md)   

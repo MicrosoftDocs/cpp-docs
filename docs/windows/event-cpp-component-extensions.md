@@ -140,7 +140,7 @@ modifiereventdelegate^ event_name
   
  An event is an association between a delegate and a member function (event handler) that responds to the triggering of the event and allows clients from any class to register methods that comply with the signature and return type of the underlying delegate.  
   
- The delegate can have one or more associated methods that will be called when your code indicates that the event has occurred. An event in one program can be made available to other programs that target the .NET Framework common language runtime. See [Raising an Event Defined in a Different Assembly](../misc/how-to-raise-events-defined-in-a-different-assembly.md) for a sample.  
+ The delegate can have one or more associated methods that will be called when your code indicates that the event has occurred. An event in one program can be made available to other programs that target the .NET Framework common language runtime.  
   
  There are two kinds of events declarations:  
   
@@ -148,7 +148,7 @@ modifiereventdelegate^ event_name
  Storage for the event, in the form of a member of the delegate type, is created by the compiler for data member events.  An event data member must be declared inside a class. This is also known as a trivial event (see code sample below.)  
   
  *event blocks*  
- Event blocks let you customize the behavior of the add, remove, and raise methods, by implementing add, remove, and raise methods. The signature of the add, remove, and raise methods must match the signature of the delegate.  Event block events are not data members and any use as a data member will generate a compiler error. See [Defining Event Accessor Methods](../misc/how-to-define-event-accessor-methods.md) for a sample.  
+ Event blocks let you customize the behavior of the add, remove, and raise methods, by implementing add, remove, and raise methods. The signature of the add, remove, and raise methods must match the signature of the delegate.  Event block events are not data members and any use as a data member will generate a compiler error. 
   
  The return type of the event handler must match the return type of the delegate.  
   
@@ -181,20 +181,6 @@ modifiereventdelegate^ event_name
  For more information on [!INCLUDE[cppcli](../build/reference/includes/cppcli_md.md)] events, see  
   
 -   [Events in an Interface](../dotnet/how-to-use-events-in-cpp-cli.md)  
-  
--   [Overriding the Default Access of add, remove, and raise Methods](../misc/how-to-override-default-access-of-add-remove-and-raise-methods.md)  
-  
--   [Multiple Handlers to an Event](../misc/how-to-add-multiple-handlers-to-events.md)  
-  
--   [Managed Virtual Events](../misc/how-to-implement-managed-virtual-events.md)  
-  
--   [Event Accessor Methods](../misc/how-to-define-event-accessor-methods.md)  
-  
--   [Static Events](../misc/how-to-define-and-use-static-events.md)  
-  
--   [Raising an Event Defined in a Different Assembly](../misc/how-to-raise-events-defined-in-a-different-assembly.md)  
-  
--   [Abstract Events](../misc/how-to-implement-abstract-events.md)  
   
 ### Requirements  
  Compiler option: **/clr**  

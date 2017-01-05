@@ -52,10 +52,10 @@ public base-class
   
  Default access of a base class is private for classes and public for structures. Unions cannot have base classes.  
   
- For more information, see [private](../cpp/private-cpp.md), [protected](../cpp/protected-cpp.md), [friend](../cpp/friend-cpp.md), and the member-access table in [Controlling Access to Class Members](../misc/controlling-access-to-class-members.md).  
+ For more information, see [private](../cpp/private-cpp.md), [protected](../cpp/protected-cpp.md), [friend](../cpp/friend-cpp.md), and the member-access table in [Controlling Access to Class Members](member-access-control-cpp.md).  
   
 ## /clr Specific  
- In CLR types, the C++ access specifier keywords (**public**, `private`, and `protected`) can affect the visibility of types and methods with regard to assemblies. For more information, see [Type and Member Visibility](../misc/type-and-member-visibility.md).  
+ In CLR types, the C++ access specifier keywords (**public**, `private`, and `protected`) can affect the visibility of types and methods with regard to assemblies. For more information, see [Member Access Control](member-access-control-cpp.md).  
   
 > [!NOTE]
 >  Files compiled with [/LN](../build/reference/ln-create-msil-module.md) are not affected by this behavior. In this case, all managed classes (either public or private) will be visible.  
@@ -84,5 +84,5 @@ int main() {
 ```  
   
 ## See Also  
- [Controlling Access to Class Members](../misc/controlling-access-to-class-members.md)   
+ [Controlling Access to Class Members](member-access-control-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)

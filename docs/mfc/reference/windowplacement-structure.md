@@ -98,5 +98,5 @@ typedef struct tagWINDOWPLACEMENT {     /* wndpl */
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CWnd::SetWindowPlacement](../../mfc/reference/cwnd-class.md#cwnd__setwindowplacement)
+ [CWnd::SetWindowPlacement](../../mfc/reference/cwnd-class.md#setwindowplacement)
 

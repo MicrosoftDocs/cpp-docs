@@ -1,5 +1,5 @@
 ---
-title: "search_n (STL-CLR) | Microsoft Docs"
+title: "search_n (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -49,7 +49,7 @@ template<class _FwdIt1, class _Diff2, class _Ty, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `search_n`. For more information, see [search_n](../Topic/search_n.md).  
+ This function behaves the same as the C++ Standard Library function `search_n`. For more information, see [search_n](http://msdn.microsoft.com/Library/8daa0c12-bac4-4cef-9213-45ef9a8d86af).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

@@ -55,78 +55,78 @@ class CMFCVisualManagerWindows : public CMFCVisualManagerOfficeXP
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCVisualManagerWindows::AlwaysHighlight3DTabs](#cmfcvisualmanagerwindows__alwayshighlight3dtabs)|The framework calls this method to determine whether 3D tabs should always be highlighted in the application. (Overrides [CMFCVisualManager::AlwaysHighlight3DTabs](../../mfc/reference/cmfcvisualmanager-class.md#cmfcvisualmanager__alwayshighlight3dtabs).)|  
-|[CMFCVisualManagerWindows::DrawComboBorderWinXP](#cmfcvisualmanagerwindows__drawcomboborderwinxp)|(Overrides `CMFCVisualManager::DrawComboBorderWinXP`.)|  
-|[CMFCVisualManagerWindows::DrawComboDropButtonWinXP](#cmfcvisualmanagerwindows__drawcombodropbuttonwinxp)|(Overrides [CMFCVisualManager::DrawComboDropButtonWinXP](../../mfc/reference/cmfcvisualmanager-class.md#cmfcvisualmanager__drawcombodropbuttonwinxp).)|  
-|[CMFCVisualManagerWindows::DrawPushButtonWinXP](#cmfcvisualmanagerwindows__drawpushbuttonwinxp)|(Overrides [CMFCVisualManager::DrawPushButtonWinXP](../../mfc/reference/cmfcvisualmanager-class.md#cmfcvisualmanager__drawpushbuttonwinxp).)|  
-|[CMFCVisualManagerWindows::GetButtonExtraBorder](#cmfcvisualmanagerwindows__getbuttonextraborder)|The framework calls this method when it draws a toolbar button. (Overrides [CMFCVisualManager::GetButtonExtraBorder](../../mfc/reference/cmfcvisualmanager-class.md#cmfcvisualmanager__getbuttonextraborder).)|  
-|[CMFCVisualManagerWindows::GetCaptionButtonExtraBorder](#cmfcvisualmanagerwindows__getcaptionbuttonextraborder)|(Overrides [CMFCVisualManager::GetCaptionButtonExtraBorder](../../mfc/reference/cmfcvisualmanager-class.md#cmfcvisualmanager__getcaptionbuttonextraborder).)|  
-|[CMFCVisualManagerWindows::GetDockingPaneCaptionExtraHeight](#cmfcvisualmanagerwindows__getdockingpanecaptionextraheight)|(Overrides `CMFCVisualManager::GetDockingPaneCaptionExtraHeight`.)|  
-|[CMFCVisualManagerWindows::GetHighlightedMenuItemTextColor](#cmfcvisualmanagerwindows__gethighlightedmenuitemtextcolor)|(Overrides `CMFCVisualManagerOfficeXP::GetHighlightedMenuItemTextColor`.)|  
-|[CMFCVisualManagerWindows::GetPopupMenuGap](#cmfcvisualmanagerwindows__getpopupmenugap)|(Overrides `CMFCVisualManagerOfficeXP::GetPopupMenuGap`.)|  
-|[CMFCVisualManagerWindows::GetToolbarButtonTextColor](#cmfcvisualmanagerwindows__gettoolbarbuttontextcolor)|(Overrides `CMFCVisualManagerOfficeXP::GetToolbarButtonTextColor`.)|  
-|[CMFCVisualManagerWindows::IsDefaultWinXPPopupButton](#cmfcvisualmanagerwindows__isdefaultwinxppopupbutton)|(Overrides [CMFCVisualManager::IsDefaultWinXPPopupButton](../../mfc/reference/cmfcvisualmanager-class.md#cmfcvisualmanager__isdefaultwinxppopupbutton).)|  
-|[CMFCVisualManagerWindows::IsHighlightWholeMenuItem](#cmfcvisualmanagerwindows__ishighlightwholemenuitem)|(Overrides `CMFCVisualManagerOfficeXP::IsHighlightWholeMenuItem`.)|  
-|[CMFCVisualManagerWindows::IsOfficeStyleMenus](#cmfcvisualmanagerwindows__isofficestylemenus)||  
-|[CMFCVisualManagerWindows::IsOfficeXPStyleMenus](#cmfcvisualmanagerwindows__isofficexpstylemenus)|Indicates whether the visual manager implements Office XP-style menus. (Overrides [CMFCVisualManager::IsOfficeXPStyleMenus](../../mfc/reference/cmfcvisualmanager-class.md#cmfcvisualmanager__isofficexpstylemenus).)|  
-|[CMFCVisualManagerWindows::IsWindowsThemingSupported](#cmfcvisualmanagerwindows__iswindowsthemingsupported)|(Overrides `CMFCVisualManager::IsWindowsThemingSupported`.)|  
-|[CMFCVisualManagerWindows::IsWinXPThemeAvailable](#cmfcvisualmanagerwindows__iswinxpthemeavailable)|Indicates whether a Windows theme is available. A theme can be either a Windows XP theme or a [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)] theme.|  
-|[CMFCVisualManagerWindows::OnDrawBarGripper](#cmfcvisualmanagerwindows__ondrawbargripper)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawBarGripper`.)|  
-|[CMFCVisualManagerWindows::OnDrawBrowseButton](#cmfcvisualmanagerwindows__ondrawbrowsebutton)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawBrowseButton`.)|  
-|[CMFCVisualManagerWindows::OnDrawButtonBorder](#cmfcvisualmanagerwindows__ondrawbuttonborder)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawButtonBorder`.)|  
-|[CMFCVisualManagerWindows::OnDrawButtonSeparator](#cmfcvisualmanagerwindows__ondrawbuttonseparator)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawButtonSeparator`.)|  
-|[CMFCVisualManagerWindows::OnDrawCaptionButton](#cmfcvisualmanagerwindows__ondrawcaptionbutton)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawCaptionButton`.)|  
-|[CMFCVisualManagerWindows::OnDrawCaptionButtonIcon](#cmfcvisualmanagerwindows__ondrawcaptionbuttonicon)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawCaptionButtonIcon`.)|  
-|[CMFCVisualManagerWindows::OnDrawCheckBoxEx](#cmfcvisualmanagerwindows__ondrawcheckboxex)|(Overrides [CMFCVisualManager::OnDrawCheckBoxEx](../../mfc/reference/cmfcvisualmanager-class.md#cmfcvisualmanager__ondrawcheckboxex).)|  
-|[CMFCVisualManagerWindows::OnDrawComboBorder](#cmfcvisualmanagerwindows__ondrawcomboborder)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawComboBorder`.)|  
-|[CMFCVisualManagerWindows::OnDrawComboDropButton](#cmfcvisualmanagerwindows__ondrawcombodropbutton)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawComboDropButton`.)|  
-|[CMFCVisualManagerWindows::OnDrawControlBorder](#cmfcvisualmanagerwindows__ondrawcontrolborder)|(Overrides [CMFCVisualManager::OnDrawControlBorder](../../mfc/reference/cmfcvisualmanager-class.md#cmfcvisualmanager__ondrawcontrolborder).)|  
-|[CMFCVisualManagerWindows::OnDrawEditBorder](#cmfcvisualmanagerwindows__ondraweditborder)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawEditBorder`.)|  
-|[CMFCVisualManagerWindows::OnDrawExpandingBox](#cmfcvisualmanagerwindows__ondrawexpandingbox)|(Overrides [CMFCVisualManager::OnDrawExpandingBox](../../mfc/reference/cmfcvisualmanager-class.md#cmfcvisualmanager__ondrawexpandingbox).)|  
-|[CMFCVisualManagerWindows::OnDrawFloatingToolbarBorder](#cmfcvisualmanagerwindows__ondrawfloatingtoolbarborder)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawFloatingToolbarBorder`.)|  
-|[CMFCVisualManagerWindows::OnDrawHeaderCtrlBorder](#cmfcvisualmanagerwindows__ondrawheaderctrlborder)|The framework calls this method when it draws the border around an instance of the [CMFCHeaderCtrl Class](../../mfc/reference/cmfcheaderctrl-class.md). (Overrides [CMFCVisualManager::OnDrawHeaderCtrlBorder](../../mfc/reference/cmfcvisualmanager-class.md#cmfcvisualmanager__ondrawheaderctrlborder).)|  
-|[CMFCVisualManagerWindows::OnDrawHeaderCtrlSortArrow](#cmfcvisualmanagerwindows__ondrawheaderctrlsortarrow)|The framework calls this function when it draws the sort arrow of a header control. (Overrides [CMFCVisualManager::OnDrawHeaderCtrlSortArrow](../../mfc/reference/cmfcvisualmanager-class.md#cmfcvisualmanager__ondrawheaderctrlsortarrow).)|  
-|[CMFCVisualManagerWindows::OnDrawMenuBorder](#cmfcvisualmanagerwindows__ondrawmenuborder)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawMenuBorder`.)|  
-|[CMFCVisualManagerWindows::OnDrawMenuSystemButton](#cmfcvisualmanagerwindows__ondrawmenusystembutton)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawMenuSystemButton`.)|  
-|[CMFCVisualManagerWindows::OnDrawMiniFrameBorder](#cmfcvisualmanagerwindows__ondrawminiframeborder)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawMiniFrameBorder`.)|  
-|[CMFCVisualManagerWindows::OnDrawOutlookPageButtonBorder](#cmfcvisualmanagerwindows__ondrawoutlookpagebuttonborder)|Called by the framework when it draws the border of an Outlook page button. (Overrides [CMFCVisualManager::OnDrawOutlookPageButtonBorder](../../mfc/reference/cmfcvisualmanager-class.md#cmfcvisualmanager__ondrawoutlookpagebuttonborder).)|  
-|[CMFCVisualManagerWindows::OnDrawPaneBorder](#cmfcvisualmanagerwindows__ondrawpaneborder)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawPaneBorder`.)|  
-|[CMFCVisualManagerWindows::OnDrawPaneCaption](#cmfcvisualmanagerwindows__ondrawpanecaption)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawPaneCaption`.)|  
-|[CMFCVisualManagerWindows::OnDrawPopupWindowButtonBorder](#cmfcvisualmanagerwindows__ondrawpopupwindowbuttonborder)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawPopupWindowButtonBorder`.)|  
-|[CMFCVisualManagerWindows::OnDrawScrollButtons](#cmfcvisualmanagerwindows__ondrawscrollbuttons)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawScrollButtons`.)|  
-|[CMFCVisualManagerWindows::OnDrawSeparator](#cmfcvisualmanagerwindows__ondrawseparator)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawSeparator`.)|  
-|[CMFCVisualManagerWindows::OnDrawSpinButtons](#cmfcvisualmanagerwindows__ondrawspinbuttons)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawSpinButtons`.)|  
-|[CMFCVisualManagerWindows::OnDrawStatusBarPaneBorder](#cmfcvisualmanagerwindows__ondrawstatusbarpaneborder)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawStatusBarPaneBorder`.)|  
-|[CMFCVisualManagerWindows::OnDrawStatusBarProgress](#cmfcvisualmanagerwindows__ondrawstatusbarprogress)|The framework calls this method when it draws the progress indicator on the [CMFCStatusBar](../../mfc/reference/cmfcstatusbar-class.md) object. (Overrides [CMFCVisualManager::OnDrawStatusBarProgress](../../mfc/reference/cmfcvisualmanager-class.md#cmfcvisualmanager__ondrawstatusbarprogress).)|  
-|[CMFCVisualManagerWindows::OnDrawStatusBarSizeBox](#cmfcvisualmanagerwindows__ondrawstatusbarsizebox)|The framework calls this method when it draws the size box for a [CMFCStatusBar](../../mfc/reference/cmfcstatusbar-class.md). (Overrides [CMFCVisualManager::OnDrawStatusBarSizeBox](../../mfc/reference/cmfcvisualmanager-class.md#cmfcvisualmanager__ondrawstatusbarsizebox).)|  
-|[CMFCVisualManagerWindows::OnDrawTab](#cmfcvisualmanagerwindows__ondrawtab)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawTab`.)|  
-|[CMFCVisualManagerWindows::OnDrawTabCloseButton](#cmfcvisualmanagerwindows__ondrawtabclosebutton)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawTabCloseButton`.)|  
-|[CMFCVisualManagerWindows::OnDrawTabsButtonBorder](#cmfcvisualmanagerwindows__ondrawtabsbuttonborder)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawTabsButtonBorder`.)|  
-|[CMFCVisualManagerWindows::OnDrawTask](#cmfcvisualmanagerwindows__ondrawtask)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawTask`.)|  
-|[CMFCVisualManagerWindows::OnDrawTasksGroupAreaBorder](#cmfcvisualmanagerwindows__ondrawtasksgroupareaborder)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawTasksGroupAreaBorder`.)|  
-|[CMFCVisualManagerWindows::OnDrawTasksGroupCaption](#cmfcvisualmanagerwindows__ondrawtasksgroupcaption)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawTasksGroupCaption`.)|  
-|[CMFCVisualManagerWindows::OnDrawTearOffCaption](#cmfcvisualmanagerwindows__ondrawtearoffcaption)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawTearOffCaption`.)|  
-|[CMFCVisualManagerWindows::OnErasePopupWindowButton](#cmfcvisualmanagerwindows__onerasepopupwindowbutton)|(Overrides `CMFCVisualManagerOfficeXP::OnErasePopupWindowButton`.)|  
-|[CMFCVisualManagerWindows::OnEraseTabsArea](#cmfcvisualmanagerwindows__onerasetabsarea)|(Overrides `CMFCVisualManagerOfficeXP::OnEraseTabsArea`.)|  
-|[CMFCVisualManagerWindows::OnEraseTabsButton](#cmfcvisualmanagerwindows__onerasetabsbutton)|(Overrides `CMFCVisualManagerOfficeXP::OnEraseTabsButton`.)|  
-|[CMFCVisualManagerWindows::OnEraseTabsFrame](#cmfcvisualmanagerwindows__onerasetabsframe)|The framework calls this method when it erases a frame on a [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md). (Overrides [CMFCVisualManager::OnEraseTabsFrame](../../mfc/reference/cmfcvisualmanager-class.md#cmfcvisualmanager__onerasetabsframe).)|  
-|[CMFCVisualManagerWindows::OnFillBarBackground](#cmfcvisualmanagerwindows__onfillbarbackground)|(Overrides `CMFCVisualManagerOfficeXP::OnFillBarBackground`.)|  
-|[CMFCVisualManagerWindows::OnFillButtonInterior](#cmfcvisualmanagerwindows__onfillbuttoninterior)|(Overrides `CMFCVisualManagerOfficeXP::OnFillButtonInterior`.)|  
-|[CMFCVisualManagerWindows::OnFillCommandsListBackground](#cmfcvisualmanagerwindows__onfillcommandslistbackground)|(Overrides `CMFCVisualManagerOfficeXP::OnFillCommandsListBackground`.)|  
-|[CMFCVisualManagerWindows::OnFillMiniFrameCaption](#cmfcvisualmanagerwindows__onfillminiframecaption)|(Overrides `CMFCVisualManagerOfficeXP::OnFillMiniFrameCaption`.)|  
-|[CMFCVisualManagerWindows::OnFillOutlookPageButton](#cmfcvisualmanagerwindows__onfilloutlookpagebutton)|The framework calls this method when it fills the interior of an Outlook page button. (Overrides [CMFCVisualManager::OnFillOutlookPageButton](../../mfc/reference/cmfcvisualmanager-class.md#cmfcvisualmanager__onfilloutlookpagebutton).)|  
-|[CMFCVisualManagerWindows::OnFillTasksGroupInterior](#cmfcvisualmanagerwindows__onfilltasksgroupinterior)|(Overrides `CMFCVisualManagerOfficeXP::OnFillTasksGroupInterior`.)|  
-|[CMFCVisualManagerWindows::OnFillTasksPaneBackground](#cmfcvisualmanagerwindows__onfilltaskspanebackground)|The framework calls this method when it fills the background of a [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) control. (Overrides [CMFCVisualManager::OnFillTasksPaneBackground](../../mfc/reference/cmfcvisualmanager-class.md#cmfcvisualmanager__onfilltaskspanebackground).)|  
-|[CMFCVisualManagerWindows::OnHighlightMenuItem](#cmfcvisualmanagerwindows__onhighlightmenuitem)|(Overrides `CMFCVisualManagerOfficeXP::OnHighlightMenuItem`.)|  
-|[CMFCVisualManagerWindows::OnHighlightRarelyUsedMenuItems](#cmfcvisualmanagerwindows__onhighlightrarelyusedmenuitems)|(Overrides `CMFCVisualManagerOfficeXP::OnHighlightRarelyUsedMenuItems`.)|  
-|[CMFCVisualManagerWindows::OnUpdateSystemColors](#cmfcvisualmanagerwindows__onupdatesystemcolors)|(Overrides `CMFCVisualManagerOfficeXP::OnUpdateSystemColors`.)|  
-|[CMFCVisualManagerWindows::SetOfficeStyleMenus](#cmfcvisualmanagerwindows__setofficestylemenus)||  
+|[CMFCVisualManagerWindows::AlwaysHighlight3DTabs](#alwayshighlight3dtabs)|The framework calls this method to determine whether 3D tabs should always be highlighted in the application. (Overrides [CMFCVisualManager::AlwaysHighlight3DTabs](../../mfc/reference/cmfcvisualmanager-class.md#alwayshighlight3dtabs).)|  
+|[CMFCVisualManagerWindows::DrawComboBorderWinXP](#drawcomboborderwinxp)|(Overrides `CMFCVisualManager::DrawComboBorderWinXP`.)|  
+|[CMFCVisualManagerWindows::DrawComboDropButtonWinXP](#drawcombodropbuttonwinxp)|(Overrides [CMFCVisualManager::DrawComboDropButtonWinXP](../../mfc/reference/cmfcvisualmanager-class.md#drawcombodropbuttonwinxp).)|  
+|[CMFCVisualManagerWindows::DrawPushButtonWinXP](#drawpushbuttonwinxp)|(Overrides [CMFCVisualManager::DrawPushButtonWinXP](../../mfc/reference/cmfcvisualmanager-class.md#drawpushbuttonwinxp).)|  
+|[CMFCVisualManagerWindows::GetButtonExtraBorder](#getbuttonextraborder)|The framework calls this method when it draws a toolbar button. (Overrides [CMFCVisualManager::GetButtonExtraBorder](../../mfc/reference/cmfcvisualmanager-class.md#getbuttonextraborder).)|  
+|[CMFCVisualManagerWindows::GetCaptionButtonExtraBorder](#getcaptionbuttonextraborder)|(Overrides [CMFCVisualManager::GetCaptionButtonExtraBorder](../../mfc/reference/cmfcvisualmanager-class.md#getcaptionbuttonextraborder).)|  
+|[CMFCVisualManagerWindows::GetDockingPaneCaptionExtraHeight](#getdockingpanecaptionextraheight)|(Overrides `CMFCVisualManager::GetDockingPaneCaptionExtraHeight`.)|  
+|[CMFCVisualManagerWindows::GetHighlightedMenuItemTextColor](#gethighlightedmenuitemtextcolor)|(Overrides `CMFCVisualManagerOfficeXP::GetHighlightedMenuItemTextColor`.)|  
+|[CMFCVisualManagerWindows::GetPopupMenuGap](#getpopupmenugap)|(Overrides `CMFCVisualManagerOfficeXP::GetPopupMenuGap`.)|  
+|[CMFCVisualManagerWindows::GetToolbarButtonTextColor](#gettoolbarbuttontextcolor)|(Overrides `CMFCVisualManagerOfficeXP::GetToolbarButtonTextColor`.)|  
+|[CMFCVisualManagerWindows::IsDefaultWinXPPopupButton](#isdefaultwinxppopupbutton)|(Overrides [CMFCVisualManager::IsDefaultWinXPPopupButton](../../mfc/reference/cmfcvisualmanager-class.md#isdefaultwinxppopupbutton).)|  
+|[CMFCVisualManagerWindows::IsHighlightWholeMenuItem](#ishighlightwholemenuitem)|(Overrides `CMFCVisualManagerOfficeXP::IsHighlightWholeMenuItem`.)|  
+|[CMFCVisualManagerWindows::IsOfficeStyleMenus](#isofficestylemenus)||  
+|[CMFCVisualManagerWindows::IsOfficeXPStyleMenus](#isofficexpstylemenus)|Indicates whether the visual manager implements Office XP-style menus. (Overrides [CMFCVisualManager::IsOfficeXPStyleMenus](../../mfc/reference/cmfcvisualmanager-class.md#isofficexpstylemenus).)|  
+|[CMFCVisualManagerWindows::IsWindowsThemingSupported](#iswindowsthemingsupported)|(Overrides `CMFCVisualManager::IsWindowsThemingSupported`.)|  
+|[CMFCVisualManagerWindows::IsWinXPThemeAvailable](#iswinxpthemeavailable)|Indicates whether a Windows theme is available. A theme can be either a Windows XP theme or a [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)] theme.|  
+|[CMFCVisualManagerWindows::OnDrawBarGripper](#ondrawbargripper)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawBarGripper`.)|  
+|[CMFCVisualManagerWindows::OnDrawBrowseButton](#ondrawbrowsebutton)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawBrowseButton`.)|  
+|[CMFCVisualManagerWindows::OnDrawButtonBorder](#ondrawbuttonborder)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawButtonBorder`.)|  
+|[CMFCVisualManagerWindows::OnDrawButtonSeparator](#ondrawbuttonseparator)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawButtonSeparator`.)|  
+|[CMFCVisualManagerWindows::OnDrawCaptionButton](#ondrawcaptionbutton)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawCaptionButton`.)|  
+|[CMFCVisualManagerWindows::OnDrawCaptionButtonIcon](#ondrawcaptionbuttonicon)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawCaptionButtonIcon`.)|  
+|[CMFCVisualManagerWindows::OnDrawCheckBoxEx](#ondrawcheckboxex)|(Overrides [CMFCVisualManager::OnDrawCheckBoxEx](../../mfc/reference/cmfcvisualmanager-class.md#ondrawcheckboxex).)|  
+|[CMFCVisualManagerWindows::OnDrawComboBorder](#ondrawcomboborder)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawComboBorder`.)|  
+|[CMFCVisualManagerWindows::OnDrawComboDropButton](#ondrawcombodropbutton)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawComboDropButton`.)|  
+|[CMFCVisualManagerWindows::OnDrawControlBorder](#ondrawcontrolborder)|(Overrides [CMFCVisualManager::OnDrawControlBorder](../../mfc/reference/cmfcvisualmanager-class.md#ondrawcontrolborder).)|  
+|[CMFCVisualManagerWindows::OnDrawEditBorder](#ondraweditborder)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawEditBorder`.)|  
+|[CMFCVisualManagerWindows::OnDrawExpandingBox](#ondrawexpandingbox)|(Overrides [CMFCVisualManager::OnDrawExpandingBox](../../mfc/reference/cmfcvisualmanager-class.md#ondrawexpandingbox).)|  
+|[CMFCVisualManagerWindows::OnDrawFloatingToolbarBorder](#ondrawfloatingtoolbarborder)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawFloatingToolbarBorder`.)|  
+|[CMFCVisualManagerWindows::OnDrawHeaderCtrlBorder](#ondrawheaderctrlborder)|The framework calls this method when it draws the border around an instance of the [CMFCHeaderCtrl Class](../../mfc/reference/cmfcheaderctrl-class.md). (Overrides [CMFCVisualManager::OnDrawHeaderCtrlBorder](../../mfc/reference/cmfcvisualmanager-class.md#ondrawheaderctrlborder).)|  
+|[CMFCVisualManagerWindows::OnDrawHeaderCtrlSortArrow](#ondrawheaderctrlsortarrow)|The framework calls this function when it draws the sort arrow of a header control. (Overrides [CMFCVisualManager::OnDrawHeaderCtrlSortArrow](../../mfc/reference/cmfcvisualmanager-class.md#ondrawheaderctrlsortarrow).)|  
+|[CMFCVisualManagerWindows::OnDrawMenuBorder](#ondrawmenuborder)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawMenuBorder`.)|  
+|[CMFCVisualManagerWindows::OnDrawMenuSystemButton](#ondrawmenusystembutton)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawMenuSystemButton`.)|  
+|[CMFCVisualManagerWindows::OnDrawMiniFrameBorder](#ondrawminiframeborder)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawMiniFrameBorder`.)|  
+|[CMFCVisualManagerWindows::OnDrawOutlookPageButtonBorder](#ondrawoutlookpagebuttonborder)|Called by the framework when it draws the border of an Outlook page button. (Overrides [CMFCVisualManager::OnDrawOutlookPageButtonBorder](../../mfc/reference/cmfcvisualmanager-class.md#ondrawoutlookpagebuttonborder).)|  
+|[CMFCVisualManagerWindows::OnDrawPaneBorder](#ondrawpaneborder)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawPaneBorder`.)|  
+|[CMFCVisualManagerWindows::OnDrawPaneCaption](#ondrawpanecaption)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawPaneCaption`.)|  
+|[CMFCVisualManagerWindows::OnDrawPopupWindowButtonBorder](#ondrawpopupwindowbuttonborder)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawPopupWindowButtonBorder`.)|  
+|[CMFCVisualManagerWindows::OnDrawScrollButtons](#ondrawscrollbuttons)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawScrollButtons`.)|  
+|[CMFCVisualManagerWindows::OnDrawSeparator](#ondrawseparator)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawSeparator`.)|  
+|[CMFCVisualManagerWindows::OnDrawSpinButtons](#ondrawspinbuttons)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawSpinButtons`.)|  
+|[CMFCVisualManagerWindows::OnDrawStatusBarPaneBorder](#ondrawstatusbarpaneborder)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawStatusBarPaneBorder`.)|  
+|[CMFCVisualManagerWindows::OnDrawStatusBarProgress](#ondrawstatusbarprogress)|The framework calls this method when it draws the progress indicator on the [CMFCStatusBar](../../mfc/reference/cmfcstatusbar-class.md) object. (Overrides [CMFCVisualManager::OnDrawStatusBarProgress](../../mfc/reference/cmfcvisualmanager-class.md#ondrawstatusbarprogress).)|  
+|[CMFCVisualManagerWindows::OnDrawStatusBarSizeBox](#ondrawstatusbarsizebox)|The framework calls this method when it draws the size box for a [CMFCStatusBar](../../mfc/reference/cmfcstatusbar-class.md). (Overrides [CMFCVisualManager::OnDrawStatusBarSizeBox](../../mfc/reference/cmfcvisualmanager-class.md#ondrawstatusbarsizebox).)|  
+|[CMFCVisualManagerWindows::OnDrawTab](#ondrawtab)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawTab`.)|  
+|[CMFCVisualManagerWindows::OnDrawTabCloseButton](#ondrawtabclosebutton)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawTabCloseButton`.)|  
+|[CMFCVisualManagerWindows::OnDrawTabsButtonBorder](#ondrawtabsbuttonborder)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawTabsButtonBorder`.)|  
+|[CMFCVisualManagerWindows::OnDrawTask](#ondrawtask)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawTask`.)|  
+|[CMFCVisualManagerWindows::OnDrawTasksGroupAreaBorder](#ondrawtasksgroupareaborder)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawTasksGroupAreaBorder`.)|  
+|[CMFCVisualManagerWindows::OnDrawTasksGroupCaption](#ondrawtasksgroupcaption)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawTasksGroupCaption`.)|  
+|[CMFCVisualManagerWindows::OnDrawTearOffCaption](#ondrawtearoffcaption)|(Overrides `CMFCVisualManagerOfficeXP::OnDrawTearOffCaption`.)|  
+|[CMFCVisualManagerWindows::OnErasePopupWindowButton](#onerasepopupwindowbutton)|(Overrides `CMFCVisualManagerOfficeXP::OnErasePopupWindowButton`.)|  
+|[CMFCVisualManagerWindows::OnEraseTabsArea](#onerasetabsarea)|(Overrides `CMFCVisualManagerOfficeXP::OnEraseTabsArea`.)|  
+|[CMFCVisualManagerWindows::OnEraseTabsButton](#onerasetabsbutton)|(Overrides `CMFCVisualManagerOfficeXP::OnEraseTabsButton`.)|  
+|[CMFCVisualManagerWindows::OnEraseTabsFrame](#onerasetabsframe)|The framework calls this method when it erases a frame on a [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md). (Overrides [CMFCVisualManager::OnEraseTabsFrame](../../mfc/reference/cmfcvisualmanager-class.md#onerasetabsframe).)|  
+|[CMFCVisualManagerWindows::OnFillBarBackground](#onfillbarbackground)|(Overrides `CMFCVisualManagerOfficeXP::OnFillBarBackground`.)|  
+|[CMFCVisualManagerWindows::OnFillButtonInterior](#onfillbuttoninterior)|(Overrides `CMFCVisualManagerOfficeXP::OnFillButtonInterior`.)|  
+|[CMFCVisualManagerWindows::OnFillCommandsListBackground](#onfillcommandslistbackground)|(Overrides `CMFCVisualManagerOfficeXP::OnFillCommandsListBackground`.)|  
+|[CMFCVisualManagerWindows::OnFillMiniFrameCaption](#onfillminiframecaption)|(Overrides `CMFCVisualManagerOfficeXP::OnFillMiniFrameCaption`.)|  
+|[CMFCVisualManagerWindows::OnFillOutlookPageButton](#onfilloutlookpagebutton)|The framework calls this method when it fills the interior of an Outlook page button. (Overrides [CMFCVisualManager::OnFillOutlookPageButton](../../mfc/reference/cmfcvisualmanager-class.md#onfilloutlookpagebutton).)|  
+|[CMFCVisualManagerWindows::OnFillTasksGroupInterior](#onfilltasksgroupinterior)|(Overrides `CMFCVisualManagerOfficeXP::OnFillTasksGroupInterior`.)|  
+|[CMFCVisualManagerWindows::OnFillTasksPaneBackground](#onfilltaskspanebackground)|The framework calls this method when it fills the background of a [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) control. (Overrides [CMFCVisualManager::OnFillTasksPaneBackground](../../mfc/reference/cmfcvisualmanager-class.md#onfilltaskspanebackground).)|  
+|[CMFCVisualManagerWindows::OnHighlightMenuItem](#onhighlightmenuitem)|(Overrides `CMFCVisualManagerOfficeXP::OnHighlightMenuItem`.)|  
+|[CMFCVisualManagerWindows::OnHighlightRarelyUsedMenuItems](#onhighlightrarelyusedmenuitems)|(Overrides `CMFCVisualManagerOfficeXP::OnHighlightRarelyUsedMenuItems`.)|  
+|[CMFCVisualManagerWindows::OnUpdateSystemColors](#onupdatesystemcolors)|(Overrides `CMFCVisualManagerOfficeXP::OnUpdateSystemColors`.)|  
+|[CMFCVisualManagerWindows::SetOfficeStyleMenus](#setofficestylemenus)||  
   
 ### Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCVisualManagerWindows::m_b3DTabsXPTheme](#cmfcvisualmanagerwindows__m_b3dtabsxptheme)|Specifies whether the Windows XP theme displays 3D tabs.|  
+|[CMFCVisualManagerWindows::m_b3DTabsXPTheme](#m_b3dtabsxptheme)|Specifies whether the Windows XP theme displays 3D tabs.|  
   
 ## Remarks  
  Use the `CMFCVisualManagerWindows` class to change the appearance of your application to mimic the current Windows XP or [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)] theme on the computer where the application runs.  
@@ -134,9 +134,9 @@ class CMFCVisualManagerWindows : public CMFCVisualManagerOfficeXP
  However, a Windows theme might be unavailable if your application is running on a version of Windows earlier than Windows XP or if themes are disabled because the user is using the **Classic** view. If no theme is available, the application uses the default visual manager defined in [CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md).  
   
 ## Example  
- The following example demonstrates how to use `CMFCVisualManagerWindows`. This code snippet is part of the [Desktop Alert Demo sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to use `CMFCVisualManagerWindows`. This code snippet is part of the [Desktop Alert Demo sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_DesktopAlertDemo#10](../../mfc/reference/codesnippet/CPP/cmfcvisualmanagerwindows-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_DesktopAlertDemo#10](../../mfc/reference/codesnippet/cpp/cmfcvisualmanagerwindows-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -152,7 +152,7 @@ class CMFCVisualManagerWindows : public CMFCVisualManagerOfficeXP
 ## Requirements  
  **Header:** afxvisualmanagerwindows.h  
   
-##  <a name="cmfcvisualmanagerwindows__alwayshighlight3dtabs"></a>  CMFCVisualManagerWindows::AlwaysHighlight3DTabs  
+##  <a name="alwayshighlight3dtabs"></a>  CMFCVisualManagerWindows::AlwaysHighlight3DTabs  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -165,7 +165,7 @@ virtual BOOL AlwaysHighlight3DTabs() const;
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__cmfcvisualmanagerwindows"></a>  CMFCVisualManagerWindows::CMFCVisualManagerWindows  
+##  <a name="cmfcvisualmanagerwindows"></a>  CMFCVisualManagerWindows::CMFCVisualManagerWindows  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -177,7 +177,7 @@ CMFCVisualManagerWindows(BOOL bIsTemporary = FALSE);
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__drawcomboborderwinxp"></a>  CMFCVisualManagerWindows::DrawComboBorderWinXP  
+##  <a name="drawcomboborderwinxp"></a>  CMFCVisualManagerWindows::DrawComboBorderWinXP  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -200,7 +200,7 @@ virtual BOOL DrawComboBorderWinXP(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__drawcombodropbuttonwinxp"></a>  CMFCVisualManagerWindows::DrawComboDropButtonWinXP  
+##  <a name="drawcombodropbuttonwinxp"></a>  CMFCVisualManagerWindows::DrawComboDropButtonWinXP  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -223,7 +223,7 @@ virtual BOOL DrawComboDropButtonWinXP(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__drawpushbuttonwinxp"></a>  CMFCVisualManagerWindows::DrawPushButtonWinXP  
+##  <a name="drawpushbuttonwinxp"></a>  CMFCVisualManagerWindows::DrawPushButtonWinXP  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -244,7 +244,7 @@ virtual BOOL DrawPushButtonWinXP(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__getbuttonextraborder"></a>  CMFCVisualManagerWindows::GetButtonExtraBorder  
+##  <a name="getbuttonextraborder"></a>  CMFCVisualManagerWindows::GetButtonExtraBorder  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -257,7 +257,7 @@ virtual CSize GetButtonExtraBorder() const;
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__getcaptionbuttonextraborder"></a>  CMFCVisualManagerWindows::GetCaptionButtonExtraBorder  
+##  <a name="getcaptionbuttonextraborder"></a>  CMFCVisualManagerWindows::GetCaptionButtonExtraBorder  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -270,7 +270,7 @@ virtual CSize GetCaptionButtonExtraBorder() const;
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__getdockingpanecaptionextraheight"></a>  CMFCVisualManagerWindows::GetDockingPaneCaptionExtraHeight  
+##  <a name="getdockingpanecaptionextraheight"></a>  CMFCVisualManagerWindows::GetDockingPaneCaptionExtraHeight  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -283,7 +283,7 @@ virtual int GetDockingPaneCaptionExtraHeight() const;
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__gethighlightedmenuitemtextcolor"></a>  CMFCVisualManagerWindows::GetHighlightedMenuItemTextColor  
+##  <a name="gethighlightedmenuitemtextcolor"></a>  CMFCVisualManagerWindows::GetHighlightedMenuItemTextColor  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -297,7 +297,7 @@ virtual COLORREF GetHighlightedMenuItemTextColor(CMFCToolBarMenuButton* pButton)
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__getpopupmenugap"></a>  CMFCVisualManagerWindows::GetPopupMenuGap  
+##  <a name="getpopupmenugap"></a>  CMFCVisualManagerWindows::GetPopupMenuGap  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -310,7 +310,7 @@ virtual int GetPopupMenuGap() const;
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__gettoolbarbuttontextcolor"></a>  CMFCVisualManagerWindows::GetToolbarButtonTextColor  
+##  <a name="gettoolbarbuttontextcolor"></a>  CMFCVisualManagerWindows::GetToolbarButtonTextColor  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -327,7 +327,7 @@ virtual COLORREF GetToolbarButtonTextColor(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__isdefaultwinxppopupbutton"></a>  CMFCVisualManagerWindows::IsDefaultWinXPPopupButton  
+##  <a name="isdefaultwinxppopupbutton"></a>  CMFCVisualManagerWindows::IsDefaultWinXPPopupButton  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -343,7 +343,7 @@ virtual BOOL IsDefaultWinXPPopupButton(CMFCDesktopAlertWndButton* pButton) const
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ishighlightwholemenuitem"></a>  CMFCVisualManagerWindows::IsHighlightWholeMenuItem  
+##  <a name="ishighlightwholemenuitem"></a>  CMFCVisualManagerWindows::IsHighlightWholeMenuItem  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -354,7 +354,7 @@ virtual BOOL IsHighlightWholeMenuItem();
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__isofficestylemenus"></a>  CMFCVisualManagerWindows::IsOfficeStyleMenus  
+##  <a name="isofficestylemenus"></a>  CMFCVisualManagerWindows::IsOfficeStyleMenus  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -367,7 +367,7 @@ BOOL IsOfficeStyleMenus() const;
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__isofficexpstylemenus"></a>  CMFCVisualManagerWindows::IsOfficeXPStyleMenus  
+##  <a name="isofficexpstylemenus"></a>  CMFCVisualManagerWindows::IsOfficeXPStyleMenus  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -380,7 +380,7 @@ virtual BOOL IsOfficeXPStyleMenus() const;
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__iswindowsthemingsupported"></a>  CMFCVisualManagerWindows::IsWindowsThemingSupported  
+##  <a name="iswindowsthemingsupported"></a>  CMFCVisualManagerWindows::IsWindowsThemingSupported  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -393,7 +393,7 @@ virtual BOOL IsWindowsThemingSupported() const;
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__iswinxpthemeavailable"></a>  CMFCVisualManagerWindows::IsWinXPThemeAvailable  
+##  <a name="iswinxpthemeavailable"></a>  CMFCVisualManagerWindows::IsWinXPThemeAvailable  
  Determines whether a Windows XP or [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)] theme is available.  
   
 ```  
@@ -410,14 +410,14 @@ static BOOL IsWinXPThemeAvailible();
   
  `IsWinXPThemeAvailable` always return 0s for versions of Windows earlier than Windows XP.  
   
-##  <a name="cmfcvisualmanagerwindows__m_b3dtabsxptheme"></a>  CMFCVisualManagerWindows::m_b3DTabsXPTheme  
+##  <a name="m_b3dtabsxptheme"></a>  CMFCVisualManagerWindows::m_b3DTabsXPTheme  
  A Boolean parameter that determines whether the visual manager displays 3D tabs.  
   
 ```  
 AFX_IMPORT_DATA static BOOL m_b3DTabsXPTheme;  
 ```  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawbargripper"></a>  CMFCVisualManagerWindows::OnDrawBarGripper  
+##  <a name="ondrawbargripper"></a>  CMFCVisualManagerWindows::OnDrawBarGripper  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -436,7 +436,7 @@ virtual void OnDrawBarGripper(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawbrowsebutton"></a>  CMFCVisualManagerWindows::OnDrawBrowseButton  
+##  <a name="ondrawbrowsebutton"></a>  CMFCVisualManagerWindows::OnDrawBrowseButton  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -459,7 +459,7 @@ virtual BOOL OnDrawBrowseButton(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawbuttonborder"></a>  CMFCVisualManagerWindows::OnDrawButtonBorder  
+##  <a name="ondrawbuttonborder"></a>  CMFCVisualManagerWindows::OnDrawButtonBorder  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -478,7 +478,7 @@ virtual void OnDrawButtonBorder(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawbuttonseparator"></a>  CMFCVisualManagerWindows::OnDrawButtonSeparator  
+##  <a name="ondrawbuttonseparator"></a>  CMFCVisualManagerWindows::OnDrawButtonSeparator  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -499,7 +499,7 @@ virtual void OnDrawButtonSeparator(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawcaptionbutton"></a>  CMFCVisualManagerWindows::OnDrawCaptionButton  
+##  <a name="ondrawcaptionbutton"></a>  CMFCVisualManagerWindows::OnDrawCaptionButton  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -524,7 +524,7 @@ virtual void OnDrawCaptionButton(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawcaptionbuttonicon"></a>  CMFCVisualManagerWindows::OnDrawCaptionButtonIcon  
+##  <a name="ondrawcaptionbuttonicon"></a>  CMFCVisualManagerWindows::OnDrawCaptionButtonIcon  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -547,7 +547,7 @@ virtual void OnDrawCaptionButtonIcon(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawcheckboxex"></a>  CMFCVisualManagerWindows::OnDrawCheckBoxEx  
+##  <a name="ondrawcheckboxex"></a>  CMFCVisualManagerWindows::OnDrawCheckBoxEx  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -570,7 +570,7 @@ virtual void OnDrawCheckBoxEx(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawcomboborder"></a>  CMFCVisualManagerWindows::OnDrawComboBorder  
+##  <a name="ondrawcomboborder"></a>  CMFCVisualManagerWindows::OnDrawComboBorder  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -593,7 +593,7 @@ virtual void OnDrawComboBorder(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawcombodropbutton"></a>  CMFCVisualManagerWindows::OnDrawComboDropButton  
+##  <a name="ondrawcombodropbutton"></a>  CMFCVisualManagerWindows::OnDrawComboDropButton  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -616,7 +616,7 @@ virtual void OnDrawComboDropButton(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawcontrolborder"></a>  CMFCVisualManagerWindows::OnDrawControlBorder  
+##  <a name="ondrawcontrolborder"></a>  CMFCVisualManagerWindows::OnDrawControlBorder  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -628,7 +628,7 @@ virtual void OnDrawControlBorder(CWnd* pWndCtrl);
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondraweditborder"></a>  CMFCVisualManagerWindows::OnDrawEditBorder  
+##  <a name="ondraweditborder"></a>  CMFCVisualManagerWindows::OnDrawEditBorder  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -649,7 +649,7 @@ virtual void OnDrawEditBorder(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawexpandingbox"></a>  CMFCVisualManagerWindows::OnDrawExpandingBox  
+##  <a name="ondrawexpandingbox"></a>  CMFCVisualManagerWindows::OnDrawExpandingBox  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -668,7 +668,7 @@ virtual void OnDrawExpandingBox(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawfloatingtoolbarborder"></a>  CMFCVisualManagerWindows::OnDrawFloatingToolbarBorder  
+##  <a name="ondrawfloatingtoolbarborder"></a>  CMFCVisualManagerWindows::OnDrawFloatingToolbarBorder  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -687,7 +687,7 @@ virtual void OnDrawFloatingToolbarBorder(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawheaderctrlborder"></a>  CMFCVisualManagerWindows::OnDrawHeaderCtrlBorder  
+##  <a name="ondrawheaderctrlborder"></a>  CMFCVisualManagerWindows::OnDrawHeaderCtrlBorder  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -708,7 +708,7 @@ virtual void OnDrawHeaderCtrlBorder(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawheaderctrlsortarrow"></a>  CMFCVisualManagerWindows::OnDrawHeaderCtrlSortArrow  
+##  <a name="ondrawheaderctrlsortarrow"></a>  CMFCVisualManagerWindows::OnDrawHeaderCtrlSortArrow  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -727,7 +727,7 @@ virtual void OnDrawHeaderCtrlSortArrow(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawmenuborder"></a>  CMFCVisualManagerWindows::OnDrawMenuBorder  
+##  <a name="ondrawmenuborder"></a>  CMFCVisualManagerWindows::OnDrawMenuBorder  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -744,7 +744,7 @@ virtual void OnDrawMenuBorder(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawmenusystembutton"></a>  CMFCVisualManagerWindows::OnDrawMenuSystemButton  
+##  <a name="ondrawmenusystembutton"></a>  CMFCVisualManagerWindows::OnDrawMenuSystemButton  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -765,7 +765,7 @@ virtual void OnDrawMenuSystemButton(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawminiframeborder"></a>  CMFCVisualManagerWindows::OnDrawMiniFrameBorder  
+##  <a name="ondrawminiframeborder"></a>  CMFCVisualManagerWindows::OnDrawMiniFrameBorder  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -784,7 +784,7 @@ virtual void OnDrawMiniFrameBorder(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawoutlookpagebuttonborder"></a>  CMFCVisualManagerWindows::OnDrawOutlookPageButtonBorder  
+##  <a name="ondrawoutlookpagebuttonborder"></a>  CMFCVisualManagerWindows::OnDrawOutlookPageButtonBorder  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -803,7 +803,7 @@ virtual void OnDrawOutlookPageButtonBorder(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawpaneborder"></a>  CMFCVisualManagerWindows::OnDrawPaneBorder  
+##  <a name="ondrawpaneborder"></a>  CMFCVisualManagerWindows::OnDrawPaneBorder  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -820,7 +820,7 @@ virtual void OnDrawPaneBorder(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawpanecaption"></a>  CMFCVisualManagerWindows::OnDrawPaneCaption  
+##  <a name="ondrawpanecaption"></a>  CMFCVisualManagerWindows::OnDrawPaneCaption  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -843,7 +843,7 @@ virtual COLORREF OnDrawPaneCaption(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawpopupwindowbuttonborder"></a>  CMFCVisualManagerWindows::OnDrawPopupWindowButtonBorder  
+##  <a name="ondrawpopupwindowbuttonborder"></a>  CMFCVisualManagerWindows::OnDrawPopupWindowButtonBorder  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -860,7 +860,7 @@ virtual void OnDrawPopupWindowButtonBorder(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawscrollbuttons"></a>  CMFCVisualManagerWindows::OnDrawScrollButtons  
+##  <a name="ondrawscrollbuttons"></a>  CMFCVisualManagerWindows::OnDrawScrollButtons  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -881,7 +881,7 @@ virtual void OnDrawScrollButtons(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawseparator"></a>  CMFCVisualManagerWindows::OnDrawSeparator  
+##  <a name="ondrawseparator"></a>  CMFCVisualManagerWindows::OnDrawSeparator  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -900,7 +900,7 @@ virtual void OnDrawSeparator(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawspinbuttons"></a>  CMFCVisualManagerWindows::OnDrawSpinButtons  
+##  <a name="ondrawspinbuttons"></a>  CMFCVisualManagerWindows::OnDrawSpinButtons  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -921,7 +921,7 @@ virtual void OnDrawSpinButtons(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawstatusbarpaneborder"></a>  CMFCVisualManagerWindows::OnDrawStatusBarPaneBorder  
+##  <a name="ondrawstatusbarpaneborder"></a>  CMFCVisualManagerWindows::OnDrawStatusBarPaneBorder  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -942,7 +942,7 @@ virtual void OnDrawStatusBarPaneBorder(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawstatusbarprogress"></a>  CMFCVisualManagerWindows::OnDrawStatusBarProgress  
+##  <a name="ondrawstatusbarprogress"></a>  CMFCVisualManagerWindows::OnDrawStatusBarProgress  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -971,7 +971,7 @@ virtual void OnDrawStatusBarProgress(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawstatusbarsizebox"></a>  CMFCVisualManagerWindows::OnDrawStatusBarSizeBox  
+##  <a name="ondrawstatusbarsizebox"></a>  CMFCVisualManagerWindows::OnDrawStatusBarSizeBox  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -988,7 +988,7 @@ virtual void OnDrawStatusBarSizeBox(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawtab"></a>  CMFCVisualManagerWindows::OnDrawTab  
+##  <a name="ondrawtab"></a>  CMFCVisualManagerWindows::OnDrawTab  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -1009,7 +1009,7 @@ virtual void OnDrawTab(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawtabclosebutton"></a>  CMFCVisualManagerWindows::OnDrawTabCloseButton  
+##  <a name="ondrawtabclosebutton"></a>  CMFCVisualManagerWindows::OnDrawTabCloseButton  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -1032,7 +1032,7 @@ virtual void OnDrawTabCloseButton(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawtabsbuttonborder"></a>  CMFCVisualManagerWindows::OnDrawTabsButtonBorder  
+##  <a name="ondrawtabsbuttonborder"></a>  CMFCVisualManagerWindows::OnDrawTabsButtonBorder  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -1053,7 +1053,7 @@ virtual void OnDrawTabsButtonBorder(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawtask"></a>  CMFCVisualManagerWindows::OnDrawTask  
+##  <a name="ondrawtask"></a>  CMFCVisualManagerWindows::OnDrawTask  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -1074,7 +1074,7 @@ virtual void OnDrawTask(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawtasksgroupareaborder"></a>  CMFCVisualManagerWindows::OnDrawTasksGroupAreaBorder  
+##  <a name="ondrawtasksgroupareaborder"></a>  CMFCVisualManagerWindows::OnDrawTasksGroupAreaBorder  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -1093,7 +1093,7 @@ virtual void OnDrawTasksGroupAreaBorder(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawtasksgroupcaption"></a>  CMFCVisualManagerWindows::OnDrawTasksGroupCaption  
+##  <a name="ondrawtasksgroupcaption"></a>  CMFCVisualManagerWindows::OnDrawTasksGroupCaption  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -1114,7 +1114,7 @@ virtual void OnDrawTasksGroupCaption(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__ondrawtearoffcaption"></a>  CMFCVisualManagerWindows::OnDrawTearOffCaption  
+##  <a name="ondrawtearoffcaption"></a>  CMFCVisualManagerWindows::OnDrawTearOffCaption  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -1131,7 +1131,7 @@ virtual void OnDrawTearOffCaption(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__onerasepopupwindowbutton"></a>  CMFCVisualManagerWindows::OnErasePopupWindowButton  
+##  <a name="onerasepopupwindowbutton"></a>  CMFCVisualManagerWindows::OnErasePopupWindowButton  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -1148,7 +1148,7 @@ virtual void OnErasePopupWindowButton(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__onerasetabsarea"></a>  CMFCVisualManagerWindows::OnEraseTabsArea  
+##  <a name="onerasetabsarea"></a>  CMFCVisualManagerWindows::OnEraseTabsArea  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -1165,7 +1165,7 @@ virtual void OnEraseTabsArea(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__onerasetabsbutton"></a>  CMFCVisualManagerWindows::OnEraseTabsButton  
+##  <a name="onerasetabsbutton"></a>  CMFCVisualManagerWindows::OnEraseTabsButton  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -1184,7 +1184,7 @@ virtual void OnEraseTabsButton(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__onerasetabsframe"></a>  CMFCVisualManagerWindows::OnEraseTabsFrame  
+##  <a name="onerasetabsframe"></a>  CMFCVisualManagerWindows::OnEraseTabsFrame  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -1203,7 +1203,7 @@ virtual BOOL OnEraseTabsFrame(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__onfillbarbackground"></a>  CMFCVisualManagerWindows::OnFillBarBackground  
+##  <a name="onfillbarbackground"></a>  CMFCVisualManagerWindows::OnFillBarBackground  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -1224,7 +1224,7 @@ virtual void OnFillBarBackground(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__onfillbuttoninterior"></a>  CMFCVisualManagerWindows::OnFillButtonInterior  
+##  <a name="onfillbuttoninterior"></a>  CMFCVisualManagerWindows::OnFillButtonInterior  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -1243,7 +1243,7 @@ virtual void OnFillButtonInterior(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__onfillcommandslistbackground"></a>  CMFCVisualManagerWindows::OnFillCommandsListBackground  
+##  <a name="onfillcommandslistbackground"></a>  CMFCVisualManagerWindows::OnFillCommandsListBackground  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -1262,7 +1262,7 @@ virtual COLORREF OnFillCommandsListBackground(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__onfillminiframecaption"></a>  CMFCVisualManagerWindows::OnFillMiniFrameCaption  
+##  <a name="onfillminiframecaption"></a>  CMFCVisualManagerWindows::OnFillMiniFrameCaption  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -1283,7 +1283,7 @@ virtual COLORREF OnFillMiniFrameCaption(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__onfilloutlookpagebutton"></a>  CMFCVisualManagerWindows::OnFillOutlookPageButton  
+##  <a name="onfilloutlookpagebutton"></a>  CMFCVisualManagerWindows::OnFillOutlookPageButton  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -1304,7 +1304,7 @@ virtual void OnFillOutlookPageButton(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__onfilltasksgroupinterior"></a>  CMFCVisualManagerWindows::OnFillTasksGroupInterior  
+##  <a name="onfilltasksgroupinterior"></a>  CMFCVisualManagerWindows::OnFillTasksGroupInterior  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -1321,7 +1321,7 @@ virtual void OnFillTasksGroupInterior(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__onfilltaskspanebackground"></a>  CMFCVisualManagerWindows::OnFillTasksPaneBackground  
+##  <a name="onfilltaskspanebackground"></a>  CMFCVisualManagerWindows::OnFillTasksPaneBackground  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -1336,7 +1336,7 @@ virtual void OnFillTasksPaneBackground(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__onhighlightmenuitem"></a>  CMFCVisualManagerWindows::OnHighlightMenuItem  
+##  <a name="onhighlightmenuitem"></a>  CMFCVisualManagerWindows::OnHighlightMenuItem  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -1355,7 +1355,7 @@ virtual void OnHighlightMenuItem(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__onhighlightrarelyusedmenuitems"></a>  CMFCVisualManagerWindows::OnHighlightRarelyUsedMenuItems  
+##  <a name="onhighlightrarelyusedmenuitems"></a>  CMFCVisualManagerWindows::OnHighlightRarelyUsedMenuItems  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -1370,7 +1370,7 @@ virtual void OnHighlightRarelyUsedMenuItems(
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__onupdatesystemcolors"></a>  CMFCVisualManagerWindows::OnUpdateSystemColors  
+##  <a name="onupdatesystemcolors"></a>  CMFCVisualManagerWindows::OnUpdateSystemColors  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -1379,7 +1379,7 @@ virtual void OnUpdateSystemColors();
   
 ### Remarks  
   
-##  <a name="cmfcvisualmanagerwindows__setofficestylemenus"></a>  CMFCVisualManagerWindows::SetOfficeStyleMenus  
+##  <a name="setofficestylemenus"></a>  CMFCVisualManagerWindows::SetOfficeStyleMenus  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  

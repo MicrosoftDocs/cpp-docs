@@ -55,7 +55,7 @@ BEGIN_SINK_MAP(_class)
  [in] Specifies the control.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#104](../../atl/codesnippet/CPP/composite-control-macros_1.h)]  
+ [!code-cpp[NVC_ATL_Windowing#104](../../atl/codesnippet/cpp/composite-control-macros_1.h)]  
   
 ### Remarks  
  CE ATL implementation of ActiveX event sinks only supports return values of type HRESULT or void from your event handler methods; any other return value is unsupported and its behavior is undefined.  
@@ -68,7 +68,7 @@ END_SINK_MAP()
 ```  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#104](../../atl/codesnippet/CPP/composite-control-macros_1.h)]  
+ [!code-cpp[NVC_ATL_Windowing#104](../../atl/codesnippet/cpp/composite-control-macros_1.h)]  
   
 ### Remarks  
  CE ATL implementation of ActiveX event sinks only supports return values of type HRESULT or void from your event handler methods; any other return value is unsupported and its behavior is undefined.  
@@ -94,7 +94,7 @@ SINK_ENTRY(
  [in] Name of the event handler function. This function must use the **_stdcall** calling convention and have the appropriate dispinterface-style signature.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#104](../../atl/codesnippet/CPP/composite-control-macros_1.h)]  
+ [!code-cpp[NVC_ATL_Windowing#104](../../atl/codesnippet/cpp/composite-control-macros_1.h)]  
   
 ### Remarks  
  CE ATL implementation of ActiveX event sinks only supports return values of type HRESULT or void from your event handler methods; any other return value is unsupported and its behavior is undefined.  
@@ -124,7 +124,7 @@ SINK_ENTRY_EX(
  [in] Name of the event handler function. This function must use the **_stdcall** calling convention and have the appropriate dispinterface-style signature.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#136](../../atl/codesnippet/CPP/composite-control-macros_2.h)]  
+ [!code-cpp[NVC_ATL_Windowing#136](../../atl/codesnippet/cpp/composite-control-macros_2.h)]  
   
 ### Remarks  
  CE ATL implementation of ActiveX event sinks only supports return values of type HRESULT or void from your event handler methods; any other return value is unsupported and its behavior is undefined.  
@@ -191,9 +191,10 @@ public _IDispEventLocator<nID, pdiid>
   
 -   Supply type information for each event by passing a pointer to an [_ATL_FUNC_INFO](../../atl/reference/atl-func-info-structure.md) structure as a parameter to each entry. On the x86 platform, the `_ATL_FUNC_INFO.cc` value must be CC_CDECL with the callback function calling method of __stdcall.  
   
--   Call [DispEventAdvise](../Topic/IDispEventSimpleImpl::DispEventAdvise.md) to establish the connection between the source object and the base class.  
+-   Call [DispEventAdvise](idispeventsimpleimpl-class.md#dispeventadvise) to establish the connection between the source object and the base class.  
   
--   Call [DispEventUnadvise](../Topic/IDispEventSimpleImpl::DispEventUnadvise.md) to break the connection.  
+-   Call [DispEventUnadvise](idispeventsimpleimpl-class.md#dispeventunadvise) to break the connection.  
+
   
  You must derive from `IDispEventSimpleImpl` (using a unique value for `nID`) for each object for which you need to handle events. You can reuse the base class by unadvising against one source object then advising against a different source object, but the maximum number of source objects that can be handled by a single object at one time is limited by the number of `IDispEventSimpleImpl` base classes.  
   

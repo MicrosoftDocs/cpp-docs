@@ -44,9 +44,9 @@ This note describes the MFC routines that support persistent C++ objects and the
 ## The Problem  
  The MFC implementation for persistent data stores data for many objects in a single contiguous part of a file. The object's `Serialize` method translates the object's data into a compact binary format.  
   
- The implementation guarantees that all data is saved in the same format by using the [CArchive Class](../mfc/reference/carchive-class.md). It uses a `CArchive` object as a translator. This object persists from the time it is created until you call [CArchive::Close](../mfc/reference/carchive-class.md#carchive__close). This method can be called either explicitly by the programmer or implicitly by the destructor when the program exits the scope that contains the `CArchive`.  
+ The implementation guarantees that all data is saved in the same format by using the [CArchive Class](../mfc/reference/carchive-class.md). It uses a `CArchive` object as a translator. This object persists from the time it is created until you call [CArchive::Close](../mfc/reference/carchive-class.md#close). This method can be called either explicitly by the programmer or implicitly by the destructor when the program exits the scope that contains the `CArchive`.  
   
- This note describes the implementation of the `CArchive` members [CArchive::ReadObject](../mfc/reference/carchive-class.md#carchive__readobject) and [CArchive::WriteObject](../mfc/reference/carchive-class.md#carchive__writeobject). You will find the code for these functions in Arcobj.cpp, and the main implementation for `CArchive` in Arccore.cpp. User code does not call `ReadObject` and `WriteObject` directly. Instead, these objects are used by class-specific type-safe insertion and extraction operators that are generated automatically by the `DECLARE_SERIAL` and `IMPLEMENT_SERIAL` macros. The following code shows how `WriteObject` and `ReadObject` are implicitly called:  
+ This note describes the implementation of the `CArchive` members [CArchive::ReadObject](../mfc/reference/carchive-class.md#readobject) and [CArchive::WriteObject](../mfc/reference/carchive-class.md#writeobject). You will find the code for these functions in Arcobj.cpp, and the main implementation for `CArchive` in Arccore.cpp. User code does not call `ReadObject` and `WriteObject` directly. Instead, these objects are used by class-specific type-safe insertion and extraction operators that are generated automatically by the `DECLARE_SERIAL` and `IMPLEMENT_SERIAL` macros. The following code shows how `WriteObject` and `ReadObject` are implicitly called:  
   
 ```  
 class CMyObject : public CObject  
@@ -86,7 +86,7 @@ ar>> pObj;        // calls ar.ReadObject(RUNTIME_CLASS(CObj))
   
  The descriptor for this class is then inserted into the archive using the `CRuntimeClass::Store` method. `CRuntimeClass::Store` inserts the schema number of the class (see below) and the ASCII text name of the class. Note that the use of the ASCII text name does not guarantee uniqueness of the archive across applications. Therefore, you should tag your data files to prevent corruption. Following the insertion of the class information, the archive puts the object into the `m_pStoreMap` and then calls the `Serialize` method to insert class-specific data. Placing the object into the `m_pStoreMap` before calling `Serialize` prevents multiple copies of the object from being saved to the store.  
   
- When returning to the initial caller (usually the root of the network of objects), you must call [CArchive::Close](../mfc/reference/carchive-class.md#carchive__close). If you plan to perform other [CFile](../mfc/reference/cfile-class.md)operations, you must call the `CArchive` method [Flush](../mfc/reference/carchive-class.md#flush) to prevent corruption of the archive.  
+ When returning to the initial caller (usually the root of the network of objects), you must call [CArchive::Close](../mfc/reference/carchive-class.md#close). If you plan to perform other [CFile](../mfc/reference/cfile-class.md)operations, you must call the `CArchive` method [Flush](../mfc/reference/carchive-class.md#flush) to prevent corruption of the archive.  
   
 > [!NOTE]
 >  This implementation imposes a hard limit of 0x3FFFFFFE indices per archive context. This number represents the maximum number of unique objects and classes that can be saved in a single archive, but a single disk file can have an unlimited number of archive contexts.  
@@ -103,7 +103,7 @@ ar>> pObj;        // calls ar.ReadObject(RUNTIME_CLASS(CObj))
   
  The `CArchive::ReadObject` method will throw a [CArchiveException](../mfc/reference/carchiveexception-class.md) when it encounters a schema number in the persistent store that differs from the schema number of the class description in memory. It is not easy to recover from this exception.  
   
- You can use `VERSIONABLE_SCHEMA` combined with (bitwise `OR`) your schema version to keep this exception from being thrown. By using `VERSIONABLE_SCHEMA`, your code can take the appropriate action in its `Serialize` function by checking the return value from [CArchive::GetObjectSchema](../mfc/reference/carchive-class.md#carchive__getobjectschema).  
+ You can use `VERSIONABLE_SCHEMA` combined with (bitwise `OR`) your schema version to keep this exception from being thrown. By using `VERSIONABLE_SCHEMA`, your code can take the appropriate action in its `Serialize` function by checking the return value from [CArchive::GetObjectSchema](../mfc/reference/carchive-class.md#getobjectschema).  
   
 ## Calling Serialize Directly  
  In many cases the overhead of the general object archive scheme of `WriteObject` and `ReadObject` is not necessary. This is the common case of serializing the data into a [CDocument](../mfc/reference/cdocument-class.md). In this case, the `Serialize` method of the `CDocument` is called directly, not with the extract or insert operators. The contents of the document may in turn use the more general object archive scheme.  
@@ -118,7 +118,7 @@ ar>> pObj;        // calls ar.ReadObject(RUNTIME_CLASS(CObj))
   
 -   Any object that is serialized with a direct call to `Serialize` must not use `CArchive::GetObjectSchema` or must handle a return value of (UINT)-1 indicating that the version was unknown.  
   
- Because `Serialize` is called directly on your document, it is not usually possible for the sub-objects of the document to archive references to their parent document. These objects must be given a pointer to their container document explicitly or you must use [CArchive::MapObject](../mfc/reference/carchive-class.md#carchive__mapobject) function to map the `CDocument` pointer to a PID before these back pointers are archived.  
+ Because `Serialize` is called directly on your document, it is not usually possible for the sub-objects of the document to archive references to their parent document. These objects must be given a pointer to their container document explicitly or you must use [CArchive::MapObject](../mfc/reference/carchive-class.md#mapobject) function to map the `CDocument` pointer to a PID before these back pointers are archived.  
   
  As noted earlier, you should encode the version and class information yourself when you call `Serialize` directly, enabling you to change the format later while still maintaining backward compatibility with older files. The `CArchive::SerializeClass` function can be called explicitly before directly serializing an object or before calling a base class.  
   

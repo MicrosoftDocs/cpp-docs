@@ -1,5 +1,5 @@
 ---
-title: "find_if (STL-CLR) | Microsoft Docs"
+title: "find_if (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -45,7 +45,7 @@ template<class _InIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `find_if`. For more information, see [find_if](../Topic/find_if.md).  
+ This function behaves the same as the C++ Standard Library function `find_if`. For more information, see [find_if](http://msdn.microsoft.com/Library/aa8ff698-e47e-4ff8-8c88-cbda4b102a4a).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

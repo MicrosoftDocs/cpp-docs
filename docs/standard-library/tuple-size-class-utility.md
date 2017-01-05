@@ -108,5 +108,5 @@ Output:
   
 ## See Also  
  [\<utility>](../standard-library/utility.md)   
- [get](../standard-library/utility-functions.md#get_function__lt_utility_gt_)   
+ [get](../standard-library/utility-functions.md#get)   
  [tuple_element Class](../standard-library/tuple-element-class-utility.md)

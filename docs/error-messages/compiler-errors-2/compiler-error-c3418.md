@@ -38,12 +38,12 @@ translation.priority.mt:
 # Compiler Error C3418
 access specifier 'specifier' is not supported  
   
- A CLR access specifier was specified incorrectly.  For more information, see [Type and Member Visibility](../../misc/type-and-member-visibility.md).  
+A CLR access specifier was specified incorrectly.  For more information, see Type visibility and Member visibility in [How to: Define and Consume Classes and Structs (C++/CLI)](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md).  
   
 ## Example  
- The following sample generates C3418.  
+The following sample generates C3418.  
   
-```  
+```cpp  
 // C3418.cpp  
 // compile with: /clr /c  
 ref struct m {  

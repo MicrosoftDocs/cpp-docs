@@ -49,8 +49,8 @@ class auto_partitioner;
   
 |Name|Description|  
 |----------|-----------------|  
-|[auto_partitioner::auto_partitioner Constructor](#auto_partitioner__auto_partitioner_constructor)|Constructs a `auto_partitioner` object.|  
-|[auto_partitioner::~auto_partitioner Destructor](#auto_partitioner___dtorauto_partitioner_destructor)|Destroys a `auto_partitioner` object.|  
+|[auto_partitioner::auto_partitioner Constructor](#ctor)|Constructs a `auto_partitioner` object.|  
+|[auto_partitioner::~auto_partitioner Destructor](#dtor)|Destroys a `auto_partitioner` object.|  
   
 ## Inheritance Hierarchy  
  `auto_partitioner`  
@@ -60,14 +60,14 @@ class auto_partitioner;
   
  **Namespace:** concurrency  
   
-##  <a name="auto_partitioner___dtorauto_partitioner_destructor"></a>  auto_partitioner::~auto_partitioner Destructor  
+##  <a name="dtor"></a>  auto_partitioner::~auto_partitioner Destructor  
  Destroys a `auto_partitioner` object.  
   
 ```
 ~auto_partitioner();
 ```  
   
-##  <a name="auto_partitioner__auto_partitioner_constructor"></a>  auto_partitioner::auto_partitioner Constructor  
+##  <a name="ctor"></a>  auto_partitioner::auto_partitioner Constructor  
  Constructs a `auto_partitioner` object.  
   
 ```
@@ -75,4 +75,4 @@ auto_partitioner();
 ```  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

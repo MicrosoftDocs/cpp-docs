@@ -51,44 +51,44 @@ class CToolTipCtrl : public CWnd
   
 |Name|Description|  
 |----------|-----------------|  
-|[CToolTipCtrl::CToolTipCtrl](#ctooltipctrl__ctooltipctrl)|Constructs a `CToolTipCtrl` object.|  
+|[CToolTipCtrl::CToolTipCtrl](#ctooltipctrl)|Constructs a `CToolTipCtrl` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CToolTipCtrl::Activate](#ctooltipctrl__activate)|Activates and deactivates the tool tip control.|  
-|[CToolTipCtrl::AddTool](#ctooltipctrl__addtool)|Registers a tool with the tool tip control.|  
-|[CToolTipCtrl::AdjustRect](#ctooltipctrl__adjustrect)|Converts between a tool tip control's text display rectangle and its window rectangle.|  
-|[CToolTipCtrl::Create](#ctooltipctrl__create)|Creates a tool tip control and attaches it to a `CToolTipCtrl` object.|  
-|[CToolTipCtrl::CreateEx](#ctooltipctrl__createex)|Creates a tool tip control with the specified Windows extended styles and attaches it to a `CToolTipCtrl` object.|  
-|[CToolTipCtrl::DelTool](#ctooltipctrl__deltool)|Removes a tool from the tool tip control.|  
-|[CToolTipCtrl::GetBubbleSize](#ctooltipctrl__getbubblesize)|Retrieves the size of the tool tip.|  
-|[CToolTipCtrl::GetCurrentTool](#ctooltipctrl__getcurrenttool)|Retrieves information, such as the size, position, and text, of the tooltip window that the current tooltip control displays.|  
-|[CToolTipCtrl::GetDelayTime](#ctooltipctrl__getdelaytime)|Retrieves the initial, pop-up, and reshow durations that are currently set for a tool tip control.|  
-|[CToolTipCtrl::GetMargin](#ctooltipctrl__getmargin)|Retrieves the top, left, bottom, and right margins that are set for a tool tip window.|  
-|[CToolTipCtrl::GetMaxTipWidth](#ctooltipctrl__getmaxtipwidth)|Retrieves the maximum width for a tool tip window.|  
-|[CToolTipCtrl::GetText](#ctooltipctrl__gettext)|Retrieves the text that a tool tip control maintains for a tool.|  
-|[CToolTipCtrl::GetTipBkColor](#ctooltipctrl__gettipbkcolor)|Retrieves the background color in a tool tip window.|  
-|[CToolTipCtrl::GetTipTextColor](#ctooltipctrl__gettiptextcolor)|Retrieves the text color in a tool tip window.|  
-|[CToolTipCtrl::GetTitle](#ctooltipctrl__gettitle)|Retrieves the title of the current tooltip control.|  
-|[CToolTipCtrl::GetToolCount](#ctooltipctrl__gettoolcount)|Retrieves a count of the tools maintained by a tool tip control.|  
-|[CToolTipCtrl::GetToolInfo](#ctooltipctrl__gettoolinfo)|Retrieves the information that a tool tip control maintains about a tool.|  
-|[CToolTipCtrl::HitTest](#ctooltipctrl__hittest)|Tests a point to determine whether it is within the bounding rectangle of the given tool. If so, retrieves information about the tool.|  
-|[CToolTipCtrl::Pop](#ctooltipctrl__pop)|Removes a displayed tool tip window from view.|  
-|[CToolTipCtrl::Popup](#ctooltipctrl__popup)|Causes the current ToolTip control to display at the coordinates of the last mouse message.|  
-|[CToolTipCtrl::RelayEvent](#ctooltipctrl__relayevent)|Passes a mouse message to a tool tip control for processing.|  
-|[CToolTipCtrl::SetDelayTime](#ctooltipctrl__setdelaytime)|Sets the initial, pop-up, and reshow durations for a tool tip control.|  
-|[CToolTipCtrl::SetMargin](#ctooltipctrl__setmargin)|Sets the top, left, bottom, and right margins for a tool tip window.|  
-|[CToolTipCtrl::SetMaxTipWidth](#ctooltipctrl__setmaxtipwidth)|Sets the maximum width for a tool tip window.|  
-|[CToolTipCtrl::SetTipBkColor](#ctooltipctrl__settipbkcolor)|Sets the background color in a tool tip window.|  
-|[CToolTipCtrl::SetTipTextColor](#ctooltipctrl__settiptextcolor)|Sets the text color in a tool tip window.|  
-|[CToolTipCtrl::SetTitle](#ctooltipctrl__settitle)|Adds a standard icon and title string to a tool tip.|  
-|[CToolTipCtrl::SetToolInfo](#ctooltipctrl__settoolinfo)|Sets the information that a tool tip maintains for a tool.|  
-|[CToolTipCtrl::SetToolRect](#ctooltipctrl__settoolrect)|Sets a new bounding rectangle for a tool.|  
-|[CToolTipCtrl::SetWindowTheme](#ctooltipctrl__setwindowtheme)|Sets the visual style of the tool tip window.|  
-|[CToolTipCtrl::Update](#ctooltipctrl__update)|Forces the current tool to be redrawn.|  
-|[CToolTipCtrl::UpdateTipText](#ctooltipctrl__updatetiptext)|Sets the tool tip text for a tool.|  
+|[CToolTipCtrl::Activate](#activate)|Activates and deactivates the tool tip control.|  
+|[CToolTipCtrl::AddTool](#addtool)|Registers a tool with the tool tip control.|  
+|[CToolTipCtrl::AdjustRect](#adjustrect)|Converts between a tool tip control's text display rectangle and its window rectangle.|  
+|[CToolTipCtrl::Create](#create)|Creates a tool tip control and attaches it to a `CToolTipCtrl` object.|  
+|[CToolTipCtrl::CreateEx](#createex)|Creates a tool tip control with the specified Windows extended styles and attaches it to a `CToolTipCtrl` object.|  
+|[CToolTipCtrl::DelTool](#deltool)|Removes a tool from the tool tip control.|  
+|[CToolTipCtrl::GetBubbleSize](#getbubblesize)|Retrieves the size of the tool tip.|  
+|[CToolTipCtrl::GetCurrentTool](#getcurrenttool)|Retrieves information, such as the size, position, and text, of the tooltip window that the current tooltip control displays.|  
+|[CToolTipCtrl::GetDelayTime](#getdelaytime)|Retrieves the initial, pop-up, and reshow durations that are currently set for a tool tip control.|  
+|[CToolTipCtrl::GetMargin](#getmargin)|Retrieves the top, left, bottom, and right margins that are set for a tool tip window.|  
+|[CToolTipCtrl::GetMaxTipWidth](#getmaxtipwidth)|Retrieves the maximum width for a tool tip window.|  
+|[CToolTipCtrl::GetText](#gettext)|Retrieves the text that a tool tip control maintains for a tool.|  
+|[CToolTipCtrl::GetTipBkColor](#gettipbkcolor)|Retrieves the background color in a tool tip window.|  
+|[CToolTipCtrl::GetTipTextColor](#gettiptextcolor)|Retrieves the text color in a tool tip window.|  
+|[CToolTipCtrl::GetTitle](#gettitle)|Retrieves the title of the current tooltip control.|  
+|[CToolTipCtrl::GetToolCount](#gettoolcount)|Retrieves a count of the tools maintained by a tool tip control.|  
+|[CToolTipCtrl::GetToolInfo](#gettoolinfo)|Retrieves the information that a tool tip control maintains about a tool.|  
+|[CToolTipCtrl::HitTest](#hittest)|Tests a point to determine whether it is within the bounding rectangle of the given tool. If so, retrieves information about the tool.|  
+|[CToolTipCtrl::Pop](#pop)|Removes a displayed tool tip window from view.|  
+|[CToolTipCtrl::Popup](#popup)|Causes the current ToolTip control to display at the coordinates of the last mouse message.|  
+|[CToolTipCtrl::RelayEvent](#relayevent)|Passes a mouse message to a tool tip control for processing.|  
+|[CToolTipCtrl::SetDelayTime](#setdelaytime)|Sets the initial, pop-up, and reshow durations for a tool tip control.|  
+|[CToolTipCtrl::SetMargin](#setmargin)|Sets the top, left, bottom, and right margins for a tool tip window.|  
+|[CToolTipCtrl::SetMaxTipWidth](#setmaxtipwidth)|Sets the maximum width for a tool tip window.|  
+|[CToolTipCtrl::SetTipBkColor](#settipbkcolor)|Sets the background color in a tool tip window.|  
+|[CToolTipCtrl::SetTipTextColor](#settiptextcolor)|Sets the text color in a tool tip window.|  
+|[CToolTipCtrl::SetTitle](#settitle)|Adds a standard icon and title string to a tool tip.|  
+|[CToolTipCtrl::SetToolInfo](#settoolinfo)|Sets the information that a tool tip maintains for a tool.|  
+|[CToolTipCtrl::SetToolRect](#settoolrect)|Sets a new bounding rectangle for a tool.|  
+|[CToolTipCtrl::SetWindowTheme](#setwindowtheme)|Sets the visual style of the tool tip window.|  
+|[CToolTipCtrl::Update](#update)|Forces the current tool to be redrawn.|  
+|[CToolTipCtrl::UpdateTipText](#updatetiptext)|Sets the tool tip text for a tool.|  
   
 ## Remarks  
  A "tool" is either a window, such as a child window or control, or an application-defined rectangular area within a window's client area. A tool tip is hidden most of the time, appearing only when the user puts the cursor on a tool and leaves it there for approximately one-half second. The tool tip appears near the cursor and disappears when the user clicks a mouse button or moves the cursor off the tool.  
@@ -113,7 +113,7 @@ class CToolTipCtrl : public CWnd
 ## Requirements  
  **Header:** afxcmn.h  
   
-##  <a name="ctooltipctrl__activate"></a>  CToolTipCtrl::Activate  
+##  <a name="activate"></a>  CToolTipCtrl::Activate  
  Call this function to activate or deactivate a tool tip control.  
   
 ```  
@@ -130,9 +130,9 @@ void Activate(BOOL bActivate);
  When a tool tip control is active, the tool tip information appears when the cursor is on a tool that is registered with the control; when it is inactive, the tool tip information does not appear, even when the cursor is on a tool.  
   
 ### Example  
-  See the example for [CPropertySheet::GetTabControl](../../mfc/reference/cpropertysheet-class.md#cpropertysheet__gettabcontrol).  
+  See the example for [CPropertySheet::GetTabControl](../../mfc/reference/cpropertysheet-class.md#gettabcontrol).  
   
-##  <a name="ctooltipctrl__addtool"></a>  CToolTipCtrl::AddTool  
+##  <a name="addtool"></a>  CToolTipCtrl::AddTool  
  Registers a tool with the tool tip control.  
   
 ```  
@@ -178,9 +178,9 @@ BOOL AddTool(
 >  You cannot set a tool tip to a static control using `AddTool`.  
   
 ### Example  
-  See the example for [CPropertySheet::GetTabControl](../../mfc/reference/cpropertysheet-class.md#cpropertysheet__gettabcontrol).  
+  See the example for [CPropertySheet::GetTabControl](../../mfc/reference/cpropertysheet-class.md#gettabcontrol).  
   
-##  <a name="ctooltipctrl__adjustrect"></a>  CToolTipCtrl::AdjustRect  
+##  <a name="adjustrect"></a>  CToolTipCtrl::AdjustRect  
  Converts between a tooltip control's text display rectangle and its window rectangle.  
   
 ```  
@@ -204,7 +204,7 @@ BOOL AdjustRect(
   
  This member function implements the behavior of the Win32 message [TTM_ADJUSTRECT](http://msdn.microsoft.com/library/windows/desktop/bb760352), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ctooltipctrl__create"></a>  CToolTipCtrl::Create  
+##  <a name="create"></a>  CToolTipCtrl::Create  
  Creates a tool tip control and attaches it to a `CToolTipCtrl` object.  
   
 ```  
@@ -234,12 +234,12 @@ virtual BOOL Create(
   
  A tool tip control has the `WS_POPUP` and **WS_EX_TOOLWINDOW** window styles, regardless of whether you specify them when creating the control.  
   
- To create a tool tip control with extended windows styles, call [CToolTipCtrl::CreateEx](#ctooltipctrl__createex) instead of **Create**.  
+ To create a tool tip control with extended windows styles, call [CToolTipCtrl::CreateEx](#createex) instead of **Create**.  
   
 ### Example  
-  See the example for [CPropertySheet::GetTabControl](../../mfc/reference/cpropertysheet-class.md#cpropertysheet__gettabcontrol).  
+  See the example for [CPropertySheet::GetTabControl](../../mfc/reference/cpropertysheet-class.md#gettabcontrol).  
   
-##  <a name="ctooltipctrl__createex"></a>  CToolTipCtrl::CreateEx  
+##  <a name="createex"></a>  CToolTipCtrl::CreateEx  
  Creates a control (a child window) and associate it with the `CToolTipCtrl` object.  
   
 ```  
@@ -254,7 +254,7 @@ virtual BOOL CreateEx(
  A pointer to the window that is the control's parent.  
   
  `dwStyle`  
- Specifies the tool tip control's style. See the **Remarks** section of [Create](#ctooltipctrl__create) for more information.  
+ Specifies the tool tip control's style. See the **Remarks** section of [Create](#create) for more information.  
   
  *dwStyleEx*  
  Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
@@ -265,7 +265,7 @@ virtual BOOL CreateEx(
 ### Remarks  
  Use `CreateEx` instead of **Create** to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
   
-##  <a name="ctooltipctrl__ctooltipctrl"></a>  CToolTipCtrl::CToolTipCtrl  
+##  <a name="ctooltipctrl"></a>  CToolTipCtrl::CToolTipCtrl  
  Constructs a `CToolTipCtrl` object.  
   
 ```  
@@ -276,9 +276,9 @@ CToolTipCtrl();
  You must call **Create** after constructing the object.  
   
 ### Example  
- [!code-cpp[NVC_MFCControlLadenDialog#74](../../mfc/codesnippet/CPP/ctooltipctrl-class_1.h)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#74](../../mfc/codesnippet/cpp/ctooltipctrl-class_1.h)]  
   
-##  <a name="ctooltipctrl__deltool"></a>  CToolTipCtrl::DelTool  
+##  <a name="deltool"></a>  CToolTipCtrl::DelTool  
  Removes the tool specified by `pWnd` and `nIDTool` from the collection of tools supported by a tool tip control.  
   
 ```  
@@ -294,7 +294,7 @@ void DelTool(
  `nIDTool`  
  ID of the tool.  
   
-##  <a name="ctooltipctrl__getbubblesize"></a>  CToolTipCtrl::GetBubbleSize  
+##  <a name="getbubblesize"></a>  CToolTipCtrl::GetBubbleSize  
  Retrieves the size of the tool tip.  
   
 ```  
@@ -313,7 +313,7 @@ CSize GetBubbleSize(LPTOOLINFO lpToolInfo) const;
 ### Remarks  
  This member function implements the behavior of the Win32 message [TTM_GETBUBBLESIZE](http://msdn.microsoft.com/library/windows/desktop/bb760387), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ctooltipctrl__getcurrenttool"></a>  CToolTipCtrl::GetCurrentTool  
+##  <a name="getcurrenttool"></a>  CToolTipCtrl::GetCurrentTool  
  Retrieves information, such as the size, position, and text, of the tooltip window displayed by the current tooltip control.  
   
 ```  
@@ -337,9 +337,9 @@ BOOL GetCurrentTool(LPTOOLINFO lpToolInfo) const;
 ### Example  
  The following code example retrieves information about the current tooltip window.  
   
- [!code-cpp[NVC_MFC_CToolBarCtrl_s1#6](../../mfc/reference/codesnippet/CPP/ctooltipctrl-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_CToolBarCtrl_s1#6](../../mfc/reference/codesnippet/cpp/ctooltipctrl-class_2.cpp)]  
   
-##  <a name="ctooltipctrl__getdelaytime"></a>  CToolTipCtrl::GetDelayTime  
+##  <a name="getdelaytime"></a>  CToolTipCtrl::GetDelayTime  
  Retrieves the initial, pop-up, and reshow durations currently set for a tool tip control.  
   
 ```  
@@ -364,7 +364,7 @@ int GetDelayTime(DWORD dwDuration) const;
 ### Remarks  
  This member function implements the behavior of the Win32 message [TTM_GETDELAYTIME](http://msdn.microsoft.com/library/windows/desktop/bb760390), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ctooltipctrl__getmargin"></a>  CToolTipCtrl::GetMargin  
+##  <a name="getmargin"></a>  CToolTipCtrl::GetMargin  
  Retrieves the top, left, bottom, and right margins set for a tool tip window.  
   
 ```  
@@ -387,7 +387,7 @@ void GetMargin(LPRECT lprc) const;
 ### Remarks  
  This member function implements the behavior of the Win32 message [TTM_GETMARGIN](http://msdn.microsoft.com/library/windows/desktop/bb760391), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ctooltipctrl__getmaxtipwidth"></a>  CToolTipCtrl::GetMaxTipWidth  
+##  <a name="getmaxtipwidth"></a>  CToolTipCtrl::GetMaxTipWidth  
  Retrieves the maximum width for a tool tip window.  
   
 ```  
@@ -402,7 +402,7 @@ int GetMaxTipWidth() const;
 ### Remarks  
  This member function implements the behavior of the Win32 message [TTM_GETMAXTIPWIDTH](http://msdn.microsoft.com/library/windows/desktop/bb760392), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ctooltipctrl__gettext"></a>  CToolTipCtrl::GetText  
+##  <a name="gettext"></a>  CToolTipCtrl::GetText  
  Retrieves the text that a tool tip control maintains for a tool.  
   
 ```  
@@ -427,7 +427,7 @@ void GetText(
 ### Remarks  
  The `pWnd` and `nIDTool` parameters identify the tool. If that tool has been previously registered with the tool tip control through a previous call to **CToolTipCtrl::AddTool**, the object referenced by the `str` parameter is assigned the tool's text.  
   
-##  <a name="ctooltipctrl__gettipbkcolor"></a>  CToolTipCtrl::GetTipBkColor  
+##  <a name="gettipbkcolor"></a>  CToolTipCtrl::GetTipBkColor  
  Retrieves the background color in a tool tip window.  
   
 ```  
@@ -442,7 +442,7 @@ COLORREF GetTipBkColor() const;
 ### Remarks  
  This member function implements the behavior of the Win32 message [TTM_GETTIPBKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760394), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ctooltipctrl__gettiptextcolor"></a>  CToolTipCtrl::GetTipTextColor  
+##  <a name="gettiptextcolor"></a>  CToolTipCtrl::GetTipTextColor  
  Retrieves the text color in a tool tip window.  
   
 ```  
@@ -457,7 +457,7 @@ COLORREF GetTipTextColor() const;
 ### Remarks  
  This member function implements the behavior of the Win32 message [TTM_GETTIPTEXTCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760395), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ctooltipctrl__gettitle"></a>  CToolTipCtrl::GetTitle  
+##  <a name="gettitle"></a>  CToolTipCtrl::GetTitle  
  Retrieves the title of the current tooltip control.  
   
 ```  
@@ -475,7 +475,7 @@ void GetTitle(PTTGETTITLE pttgt) const;
 ### Remarks  
  This method sends the [TTM_GETTITLE](http://msdn.microsoft.com/library/windows/desktop/bb760396) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ctooltipctrl__gettoolcount"></a>  CToolTipCtrl::GetToolCount  
+##  <a name="gettoolcount"></a>  CToolTipCtrl::GetToolCount  
  Retrieves a count of the tools registered with the tool tip control.  
   
 ```  
@@ -487,7 +487,7 @@ int GetToolCount() const;
 ### Return Value  
  A count of tools registered with the tool tip control.  
   
-##  <a name="ctooltipctrl__gettoolinfo"></a>  CToolTipCtrl::GetToolInfo  
+##  <a name="gettoolinfo"></a>  CToolTipCtrl::GetToolInfo  
  Retrieves the information that a tool tip control maintains about a tool.  
   
 ```  
@@ -515,7 +515,7 @@ BOOL GetToolInfo(
 ### Remarks  
  The **hwnd** and **uId** members of the [TOOLINFO](http://msdn.microsoft.com/library/windows/desktop/bb760256) structure referenced by *CToolInfo* identify the tool. If that tool has been registered with the tool tip control through a previous call to `AddTool`, the `TOOLINFO` structure is filled with information about the tool.  
   
-##  <a name="ctooltipctrl__hittest"></a>  CToolTipCtrl::HitTest  
+##  <a name="hittest"></a>  CToolTipCtrl::HitTest  
  Tests a point to determine whether it is within the bounding rectangle of the given tool and, if so, retrieve information about the tool.  
   
 ```  
@@ -562,9 +562,9 @@ BOOL HitTest(
  Specifies the coordinates of a point if the point is in the tool's bounding rectangle.  
   
  **ti**  
- Information about the tool. For more information about the `TOOLINFO` structure, see [CToolTipCtrl::GetToolInfo](#ctooltipctrl__gettoolinfo).  
+ Information about the tool. For more information about the `TOOLINFO` structure, see [CToolTipCtrl::GetToolInfo](#gettoolinfo).  
   
-##  <a name="ctooltipctrl__pop"></a>  CToolTipCtrl::Pop  
+##  <a name="pop"></a>  CToolTipCtrl::Pop  
  Removes a displayed tool tip window from the view.  
   
 ```  
@@ -574,7 +574,7 @@ void Pop();
 ### Remarks  
  This member function implements the behavior of the Win32 message [TTM_POP](http://msdn.microsoft.com/library/windows/desktop/bb760401), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ctooltipctrl__popup"></a>  CToolTipCtrl::Popup  
+##  <a name="popup"></a>  CToolTipCtrl::Popup  
  Causes the current tooltip control to display at the coordinates of the last mouse message.  
   
 ```  
@@ -587,9 +587,9 @@ void Popup();
 ### Example  
  The following code example displays a tooltip window.  
   
- [!code-cpp[NVC_MFC_CToolBarCtrl_s1#7](../../mfc/reference/codesnippet/CPP/ctooltipctrl-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_CToolBarCtrl_s1#7](../../mfc/reference/codesnippet/cpp/ctooltipctrl-class_3.cpp)]  
   
-##  <a name="ctooltipctrl__relayevent"></a>  CToolTipCtrl::RelayEvent  
+##  <a name="relayevent"></a>  CToolTipCtrl::RelayEvent  
  Passes a mouse message to a tool tip control for processing.  
   
 ```  
@@ -610,9 +610,9 @@ void RelayEvent(LPMSG lpMsg);
 |`WM_MBUTTONUP`||  
   
 ### Example  
-  See the example for [CPropertySheet::GetTabControl](../../mfc/reference/cpropertysheet-class.md#cpropertysheet__gettabcontrol).  
+  See the example for [CPropertySheet::GetTabControl](../../mfc/reference/cpropertysheet-class.md#gettabcontrol).  
   
-##  <a name="ctooltipctrl__setdelaytime"></a>  CToolTipCtrl::SetDelayTime  
+##  <a name="setdelaytime"></a>  CToolTipCtrl::SetDelayTime  
  Sets the delay time for a tool tip control.  
   
 ```  
@@ -630,7 +630,7 @@ void SetDelayTime(
  Specifies the new delay time, in milliseconds.  
   
  `dwDuration`  
- Flag that specifies which duration value will be retrieved. See [CToolTipCtrl::GetDelayTime](#ctooltipctrl__getdelaytime) for a description of the valid values.  
+ Flag that specifies which duration value will be retrieved. See [CToolTipCtrl::GetDelayTime](#getdelaytime) for a description of the valid values.  
   
  *iTime*  
  The specified delay time, in milliseconds.  
@@ -638,7 +638,7 @@ void SetDelayTime(
 ### Remarks  
  The delay time is the length of time the cursor must remain on a tool before the tool tip window appears. The default delay time is 500 milliseconds.  
   
-##  <a name="ctooltipctrl__setmargin"></a>  CToolTipCtrl::SetMargin  
+##  <a name="setmargin"></a>  CToolTipCtrl::SetMargin  
  Sets the top, left, bottom, and right margins for a tool tip window.  
   
 ```  
@@ -647,12 +647,12 @@ void SetMargin(LPRECT lprc);
   
 ### Parameters  
  `lprc`  
- Address of a `RECT` structure that contains the margin information to be set. The members of the `RECT` structure do not define a bounding rectangle. See [CToolTipCtrl::GetMargin](#ctooltipctrl__getmargin) for a description of the margin information.  
+ Address of a `RECT` structure that contains the margin information to be set. The members of the `RECT` structure do not define a bounding rectangle. See [CToolTipCtrl::GetMargin](#getmargin) for a description of the margin information.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 message [TTM_SETMARGIN](http://msdn.microsoft.com/library/windows/desktop/bb760406), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ctooltipctrl__setmaxtipwidth"></a>  CToolTipCtrl::SetMaxTipWidth  
+##  <a name="setmaxtipwidth"></a>  CToolTipCtrl::SetMaxTipWidth  
  Sets the maximum width for a tool tip window.  
   
 ```  
@@ -669,7 +669,7 @@ int SetMaxTipWidth(int iWidth);
 ### Remarks  
  This member function implements the behavior of the Win32 message [TTM_SETMAXTIPWIDTH](http://msdn.microsoft.com/library/windows/desktop/bb760408), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ctooltipctrl__settipbkcolor"></a>  CToolTipCtrl::SetTipBkColor  
+##  <a name="settipbkcolor"></a>  CToolTipCtrl::SetTipBkColor  
  Sets the background color in a tool tip window.  
   
 ```  
@@ -683,7 +683,7 @@ void SetTipBkColor(COLORREF clr);
 ### Remarks  
  This member function implements the behavior of the Win32 message [TTM_SETTIPBKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760411), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ctooltipctrl__settiptextcolor"></a>  CToolTipCtrl::SetTipTextColor  
+##  <a name="settiptextcolor"></a>  CToolTipCtrl::SetTipTextColor  
  Sets the text color in a tool tip window.  
   
 ```  
@@ -697,7 +697,7 @@ void SetTipTextColor(COLORREF clr);
 ### Remarks  
  This member function implements the behavior of the Win32 message [TTM_SETTIPTEXTCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760413), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ctooltipctrl__settitle"></a>  CToolTipCtrl::SetTitle  
+##  <a name="settitle"></a>  CToolTipCtrl::SetTitle  
  Adds a standard icon and title string to a tool tip.  
   
 ```  
@@ -719,7 +719,7 @@ BOOL SetTitle(
 ### Remarks  
  This member function implements the behavior of the Win32 message [TTM_SETTITLE](http://msdn.microsoft.com/library/windows/desktop/bb760414), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ctooltipctrl__settoolinfo"></a>  CToolTipCtrl::SetToolInfo  
+##  <a name="settoolinfo"></a>  CToolTipCtrl::SetToolInfo  
  Sets the information that a tool tip maintains for a tool.  
   
 ```  
@@ -730,7 +730,7 @@ void SetToolInfo(LPTOOLINFO lpToolInfo);
  `lpToolInfo`  
  A pointer to a [TOOLINFO](http://msdn.microsoft.com/library/windows/desktop/bb760256) structure that specifies the information to set.  
   
-##  <a name="ctooltipctrl__settoolrect"></a>  CToolTipCtrl::SetToolRect  
+##  <a name="settoolrect"></a>  CToolTipCtrl::SetToolRect  
  Sets a new bounding rectangle for a tool.  
   
 ```  
@@ -750,7 +750,7 @@ void SetToolRect(
  `lpRect`  
  Pointer to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the new bounding rectangle.  
   
-##  <a name="ctooltipctrl__setwindowtheme"></a>  CToolTipCtrl::SetWindowTheme  
+##  <a name="setwindowtheme"></a>  CToolTipCtrl::SetWindowTheme  
  Sets the visual style of the tool tip window.  
   
 ```  
@@ -767,14 +767,14 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
 ### Remarks  
  This member function emulates the functionality of the [TTM_SETWINDOWTHEME](http://msdn.microsoft.com/library/windows/desktop/bb760418) message, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ctooltipctrl__update"></a>  CToolTipCtrl::Update  
+##  <a name="update"></a>  CToolTipCtrl::Update  
  Forces the current tool to be redrawn.  
   
 ```  
 void Update();
 ```  
   
-##  <a name="ctooltipctrl__updatetiptext"></a>  CToolTipCtrl::UpdateTipText  
+##  <a name="updatetiptext"></a>  CToolTipCtrl::UpdateTipText  
  Updates the tool tip text for this control's tools.  
   
 ```  

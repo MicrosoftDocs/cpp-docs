@@ -85,7 +85,7 @@ int YourReportHook( int reportType, char *message, int *returnValue );
   
  If the client-defined reporting function completely handles the debug message such that no further reporting is required, then the function should return `TRUE`. When the function returns `FALSE`, `_CrtDbgReport` is called to generate the debug report using the current settings for the report type, mode, and file. In addition, by specifying the `_CrtDbgReport` return value in `returnValue`, the application can also control whether a debug break occurs. For a complete description of how the debug report is configured and generated, see `_CrtSetReportMode`, [_CrtSetReportFile](../../c-runtime-library/reference/crtsetreportfile.md), and `_CrtDbgReport`.  
   
- For more information about using other hook-capable run-time functions and writing your own client-defined hook functions, see [Debug Hook Function Writing](/visual-studio/debugger/debug-hook-function-writing).  
+ For more information about using other hook-capable run-time functions and writing your own client-defined hook functions, see [Debug Hook Function Writing](/visualstudio/debugger/debug-hook-function-writing).  
   
 > [!NOTE]
 >  If your application is compiled with `/clr` and the reporting function is called after the application has exited main, the CLR will throw an exception if the reporting function calls any CRT functions.  
@@ -102,7 +102,7 @@ int YourReportHook( int reportType, char *message, int *returnValue );
  Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
   
 ## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  
+ Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)   

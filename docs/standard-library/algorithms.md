@@ -13,7 +13,7 @@ dev_langs:
 helpviewer_keywords: 
   - "libraries [C++], C++ algorithm conventions"
   - "algorithms [C++], C++"
-  - "Standard C++ Library, algorithms"
+  - "C++ Standard Library, algorithms"
   - "algorithm template function C++ library conventions"
   - "conventions [C++], C++ algorithm"
 ms.assetid: dec9b373-7d5c-46cc-b7d2-21a938ecd0a6
@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Algorithms
-Algorithms are a fundamental part of the Standard Template Library. Algorithms do not work with containers themselves but rather with iterators. Therefore, the same algorithm can be used by most if not all of the STL containers. This section discusses the conventions and terminology of the STL algorithms.  
+Algorithms are a fundamental part of the C++ Standard Library. Algorithms do not work with containers themselves but rather with iterators. Therefore, the same algorithm can be used by most if not all of the C++ Standard Library containers. This section discusses the conventions and terminology of the C++ Standard Library algorithms.  
   
 ## Remarks  
  The descriptions of the algorithm template functions employ several shorthand phrases:  
@@ -66,11 +66,11 @@ Algorithms are a fundamental part of the Standard Template Library. Algorithms d
   
  A sequence of elements designated by iterators in the range [`First`, `Last`) is a sequence ordered by operator**<** if, for each *N* in the range [0, `Last` - `First`) and for each *M* in the range (N, `Last` - `First`) the predicate !(\*(`First` + *M*) < \*(*First* + *N*)) is true. (Note that the elements are sorted in ascending order.) The predicate function **operator<**, or any replacement for it, must not alter either of its operands. It must yield the same `bool` result every time it is evaluated, and it must yield the same result if a copy of either operand is substituted for the operand. Moreover, it must impose a strict weak ordering on the operands it compares.  
   
- A sequence of elements designated by iterators in the range [`First`, `Last`) is a heap ordered by **operator<** if, for each *N* in the range [1, `Last` - `First`) the predicate !(\*`First` < \*(`First` + *N*)) is true. (The first element is the largest.) Its internal structure is otherwise known only to the template functions [make_heap](../Topic/make_heap.md), [pop_heap]--brokenlink--(../Topic/not%20found:c10b0c65-410c-4c83-abf8-8b7f61bba8d0.md#pop_heap), and [push_heap]-brokenlink--(../Topic/not%20found:c10b0c65-410c-4c83-abf8-8b7f61bba8d0.md#push_heap). As with an ordered sequence, the predicate function **operator<**, or any replacement for it, must not alter either of its operands, and it must impose a strict weak ordering on the operands it compares. It must yield the same `bool` result every time it is evaluated, and it must yield the same result if a copy of either operand is substituted for the operand.  
+ A sequence of elements designated by iterators in the range [`First`, `Last`) is a heap ordered by **operator<** if, for each *N* in the range [1, `Last` - `First`) the predicate !(\*`First` < \*(`First` + *N*)) is true. (The first element is the largest.) Its internal structure is otherwise known only to the template functions [make_heap](http://msdn.microsoft.com/Library/b09f795c-f368-4aa8-b57e-61ee6100ddc2), [pop_heap]--brokenlink--(../Topic/not%20found:c10b0c65-410c-4c83-abf8-8b7f61bba8d0.md#pop_heap), and [push_heap]-brokenlink--(../Topic/not%20found:c10b0c65-410c-4c83-abf8-8b7f61bba8d0.md#push_heap). As with an ordered sequence, the predicate function **operator<**, or any replacement for it, must not alter either of its operands, and it must impose a strict weak ordering on the operands it compares. It must yield the same `bool` result every time it is evaluated, and it must yield the same result if a copy of either operand is substituted for the operand.  
   
- The STL algorithms are located in the [\<algorithm>](../standard-library/algorithm.md) and [\<numeric>](../standard-library/numeric.md) header files.  
+ The C++ Standard Library algorithms are located in the [\<algorithm>](../standard-library/algorithm.md) and [\<numeric>](../standard-library/numeric.md) header files.  
   
 ## See Also  
- [Standard Template Library](../misc/standard-template-library.md)   
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 

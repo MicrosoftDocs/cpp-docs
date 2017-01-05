@@ -74,7 +74,7 @@ There are two ways to create a `CArchive` object:
   
 2.  Pass the `CFile` object to the constructor for `CArchive`, as shown in the following example:  
   
-     [!code-cpp[NVC_MFCSerialization#5](../mfc/codesnippet/CPP/two-ways-to-create-a-carchive-object_1.cpp)]  
+     [!code-cpp[NVC_MFCSerialization#5](../mfc/codesnippet/cpp/two-ways-to-create-a-carchive-object_1.cpp)]  
   
      The second argument to the `CArchive` constructor is an enumerated value that specifies whether the archive will be used for storing or loading data to or from the file. The `Serialize` function of an object checks this state by calling the `IsStoring` function for the archive object.  
   
@@ -84,7 +84,7 @@ There are two ways to create a `CArchive` object:
   
 1.  The following example illustrates how to close the `CArchive` object:  
   
-     [!code-cpp[NVC_MFCSerialization#6](../mfc/codesnippet/CPP/two-ways-to-create-a-carchive-object_2.cpp)]  
+     [!code-cpp[NVC_MFCSerialization#6](../mfc/codesnippet/cpp/two-ways-to-create-a-carchive-object_2.cpp)]  
   
 ## See Also  
  [Serialization: Serializing an Object](../mfc/serialization-serializing-an-object.md)

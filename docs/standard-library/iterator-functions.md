@@ -106,7 +106,7 @@ back_insert_iterator<Container> back_inserter(Container& _Cont);
  A `back_insert_iterator` associated with the container object `_Cont`.  
   
 ### Remarks  
- Within the Standard Template Library, the argument must refer to one of the three sequence containers that have the member function `push_back`: [deque Class](../standard-library/deque-class.md), [list Class](../standard-library/list-class.md), or [vector Class](../standard-library/vector-class.md).  
+ Within the C++ Standard Library, the argument must refer to one of the three sequence containers that have the member function `push_back`: [deque Class](../standard-library/deque-class.md), [list Class](../standard-library/list-class.md), or [vector Class](../standard-library/vector-class.md).  
   
 ### Example  
   
@@ -274,7 +274,7 @@ auto cbegin(const Container& cont)   `
  A constant `cont.begin()`.  
   
 ### Remarks  
- This function works with all STL containers and with [initializer_list](../standard-library/initializer-list-class.md).  
+ This function works with all C++ Standard Library containers and with [initializer_list](../standard-library/initializer-list-class.md).  
   
  You can use this member function in place of the `begin()` template function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- `const`) container or `initializer_list` of any kind that supports `begin()` and `cbegin()`.  
   
@@ -304,7 +304,7 @@ auto cend(const Container& cont)   `
  A constant `cont.end()`.  
   
 ### Remarks  
- This function works with all STL containers and with [initializer_list](../standard-library/initializer-list-class.md).  
+ This function works with all C++ Standard Library containers and with [initializer_list](../standard-library/initializer-list-class.md).  
   
  You can use this member function in place of the [end()](../standard-library/iterator-functions.md#end) template function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- `const`) container or `initializer_list` of any kind that supports `end()` and `cend()`.  
   
@@ -435,7 +435,7 @@ front_insert_iterator<Container> front_inserter(Container& _Cont);
 ### Remarks  
  The member function [front_insert_iterator](../standard-library/front-insert-iterator-class.md#front_insert_iterator__front_insert_iterator) of the front_insert_iterator class may also be used.  
   
- Within the Standard Template Library, the argument must refer to one of the two sequence containers that have the member function `push_back`: [deque Class](../standard-library/deque-class.md) or "list Class".  
+ Within the C++ Standard Library, the argument must refer to one of the two sequence containers that have the member function `push_back`: [deque Class](../standard-library/deque-class.md) or "list Class".  
   
 ### Example  
   
@@ -556,7 +556,7 @@ After the insertions, the list L is:
  Creates a [checked_array_iterator](../standard-library/checked-array-iterator-class.md) that can be used by other algorithms.  
   
 > [!NOTE]
->  This function is a Microsoft extension of the Standard C++ Library. Code implemented by using this function is not portable to C++ Standard build environments that do not support this Microsoft extension.  
+>  This function is a Microsoft extension of the C++ Standard Library. Code implemented by using this function is not portable to C++ Standard build environments that do not support this Microsoft extension.  
   
 ```  
 template <class Iter>  
@@ -583,7 +583,7 @@ checked_array_iterator<Iter>
 ### Remarks  
  The `make_checked_array_iterator` function is defined in the `stdext` namespace.  
   
- This function takes a raw pointer—which would ordinarily cause concern about bounds overrun—and wraps it in a [checked_array_iterator](../standard-library/checked-array-iterator-class.md) class that does checking. Because that class is marked as checked, the STL doesn't warn about it. For more information and code examples, see [Checked Iterators](../standard-library/checked-iterators.md).  
+ This function takes a raw pointer—which would ordinarily cause concern about bounds overrun—and wraps it in a [checked_array_iterator](../standard-library/checked-array-iterator-class.md) class that does checking. Because that class is marked as checked, the C++ Standard Library doesn't warn about it. For more information and code examples, see [Checked Iterators](../standard-library/checked-iterators.md).  
   
 ### Example  
   In the following example, a [vector](../standard-library/vector-class.md) is created and populated with 10 items. The contents of the vector are copied into an array by using the copy algorithm, and then `make_checked_array_iterator` is used to specify the destination. This is followed by an intentional violation of the bounds checking so that a debug assertion failure is triggered.  
@@ -662,7 +662,7 @@ make_move_iterator(const Iterator& _It);
  Creates an [unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md) that can be used by other algorithms.  
   
 > [!NOTE]
->  This function is a Microsoft extension of the Standard C++ Library. Code implemented by using this function is not portable to C++ Standard build environments that do not support this Microsoft extension.  
+>  This function is a Microsoft extension of the C++ Standard Library. Code implemented by using this function is not portable to C++ Standard build environments that do not support this Microsoft extension.  
   
 ```  
 template <class Iter>  

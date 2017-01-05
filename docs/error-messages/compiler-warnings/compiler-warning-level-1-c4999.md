@@ -38,4 +38,4 @@ translation.priority.mt:
 # Compiler Warning (level 1) C4999
 UNKNOWN WARNING From the Help menu choose the Technical Support command or open the Technical Support help file for more information  
   
- Note the circumstances of the error, try to isolate the problem and create a reproducible test case, then contact [Microsoft Product Support Services](/visual-studio/ide/talk-to-us).
+ Note the circumstances of the error, try to isolate the problem and create a reproducible test case, then contact [Microsoft Product Support Services](/visualstudio/ide/talk-to-us).

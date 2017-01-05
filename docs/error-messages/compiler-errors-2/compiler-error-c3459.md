@@ -38,12 +38,12 @@ translation.priority.mt:
 # Compiler Error C3459
 'attribute': attribute allowed only on class indexer (default indexed property)  
   
- An attribute that is designed to be applied to a class indexer property was used incorrectly.  
+An attribute that is designed to be applied to a class indexer property was used incorrectly.  
   
- For more information, see [How to: Use Indexed Properties](../../misc/how-to-use-indexed-properties.md).  
+For more information, see [How to: Use Properties in C++/CLI](../../dotnet/how-to-use-properties-in-cpp-cli.md).  
   
 ## Example  
- The following sample generates C3459.  
+The following sample generates C3459.  
   
 ```  
 // C3459.cpp  

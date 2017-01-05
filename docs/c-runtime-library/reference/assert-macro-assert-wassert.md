@@ -102,7 +102,7 @@ void _wassert(
   
  When the application is linked with a debug version of the run-time libraries, `assert` creates a message box with three buttons: **Abort**, **Retry**, and **Ignore**. If the user clicks **Abort**, the program aborts immediately. If the user clicks **Retry**, the debugger is called and the user can debug the program if just-in-time (JIT) debugging is enabled. If the user clicks **Ignore**, `assert` continues with its normal execution: creating the message box with the **OK** button. Note that clicking **Ignore** when an error condition exists can result in undefined behavior.  
   
- For more information about CRT debugging, see [CRT Debugging Techniques](/visual-studio/debugger/crt-debugging-techniques).  
+ For more information about CRT debugging, see [CRT Debugging Techniques](/visualstudio/debugger/crt-debugging-techniques).  
   
  The `_assert` and `_wassert` functions are internal CRT functions. They help minimize the code required in your object files to support assertions. We do not recommend that you call these functions directly.  
   

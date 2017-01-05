@@ -38,14 +38,14 @@ translation.priority.mt:
 # Compiler Error C3392
 'type_arg' : invalid type argument for generic parameter 'param' of generic 'generic_type', must have a public parameterless constructor  
   
- A generic type was instantiated incorrectly.  Check the type definition.  For more information [Generics](../../windows/generics-cpp-component-extensions.md).  
+ A generic type was instantiated incorrectly. Check the type definition. For more information, see  [Generics](../../windows/generics-cpp-component-extensions.md).  
   
 ## Example  
- The following sample, using C#, creates a component that contains a generic type, with certain constraints that are not supported when authoring generic types in [!INCLUDE[vcprvclong](../../error-messages/compiler-errors-2/includes/vcprvclong_md.md)]. For more information, see .[Constraints on Type Parameters](/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters).  
+The following sample uses C# to create a component that contains a generic type that has certain constraints that are not supported when authoring generic types in C++/CLI. For more information, see [Constraints on Type Parameters](/dotnet/articles/csharp/programming-guide/generics/constraints-on-type-parameters).  
   
-```  
+```cs  
 // C3392.cs  
-// compile with: /target:library  
+// Compile by using: csc /target:library C3392.cs  
 // a C# program  
 public class GR<C, V, N>  
 where C : class  
@@ -53,12 +53,11 @@ where V : struct
 where N : new() {}  
 ```  
   
-## Example  
- The following sample generates C3392.  
+When the C3392.dll component is available, the following sample generates C3392.  
   
-```  
+```cpp  
 // C3392_b.cpp  
-// compile with: /clr  
+// Compile by using: cl /clr C3392_b.cpp  
 #using <C3392.dll>  
   
 ref class R { R(int) {} };  
@@ -71,12 +70,12 @@ ref class R2 { public: R2() {} };
   
 int main () {  
    GR<R^, V, N^>^ gr1;   // C3392  
-   GR<R^, V, N2^>^ gr1a;   // OK  
+   GR<R^, V, N2^>^ gr1a; // OK  
   
-   GR<R^, N^, N^>^ gr3;   // C3392  
-   GR<R^, V, N2^>^ gr3a;   // OK  
+   GR<R^, N^, N^>^ gr3;  // C3392  
+   GR<R^, V, N2^>^ gr3a; // OK  
   
    GR<R^, V, R^>^ gr4;   // C3392  
-   GR<R^, V, R2^>^ gr4a;   // OK  
+   GR<R^, V, R2^>^ gr4a; // OK  
 }  
 ```

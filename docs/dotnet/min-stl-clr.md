@@ -1,5 +1,5 @@
 ---
-title: "min (STL-CLR) | Microsoft Docs"
+title: "min (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -47,7 +47,7 @@ template<class _Ty, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `min`. For more information, see [min](../Topic/min.md).  
+ This function behaves the same as the C++ Standard Library function `min`. For more information, see [min](http://msdn.microsoft.com/Library/636d6d14-3957-43c0-a197-653afa45e2d7).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

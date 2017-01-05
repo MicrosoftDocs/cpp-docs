@@ -1,5 +1,5 @@
 ---
-title: "partial_sum (STL-CLR) | Microsoft Docs"
+title: "partial_sum (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -48,7 +48,7 @@ template<class _InIt, class _OutIt, class _Fn2> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL numeric function `partial_sum`. For more information, see [partial_sum](../Topic/partial_sum.md).  
+ This function behaves the same as the C++ Standard Library numeric function `partial_sum`. For more information, see [partial_sum](../standard-library/numeric-functions.md#partial_sum).  
   
 ## Requirements  
  **Header:** \<cliext/numeric>  

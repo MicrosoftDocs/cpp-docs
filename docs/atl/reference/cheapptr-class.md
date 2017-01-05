@@ -70,20 +70,20 @@ Allocator>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHeapPtr::CHeapPtr](#cheapptr__cheapptr)|The constructor.|  
+|[CHeapPtr::CHeapPtr](#cheapptr)|The constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHeapPtr::Allocate](#cheapptr__allocate)|Call this method to allocate memory on the heap to store objects.|  
-|[CHeapPtr::Reallocate](#cheapptr__reallocate)|Call this method to reallocate the memory on the heap.|  
+|[CHeapPtr::Allocate](#allocate)|Call this method to allocate memory on the heap to store objects.|  
+|[CHeapPtr::Reallocate](#reallocate)|Call this method to reallocate the memory on the heap.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHeapPtr::operator =](#cheapptr__operator__eq)|The assignment operator.|  
+|[CHeapPtr::operator =](#operator_eq)|The assignment operator.|  
   
 ## Remarks  
  `CHeapPtr` is derived from [CHeapPtrBase](../../atl/reference/cheapptrbase-class.md) and by default uses the CRT routines (in [CCRTAllocator](../../atl/reference/ccrtallocator-class.md)) to allocate and free memory. The class [CHeapPtrList](../../atl/reference/cheapptrlist-class.md) may be used to construct a list of heap pointers. See also [CComHeapPtr](../../atl/reference/ccomheapptr-class.md), which uses COM memory allocation routines.  
@@ -96,7 +96,7 @@ Allocator>
 ## Requirements  
  **Header:** atlcore.h  
   
-##  <a name="cheapptr__allocate"></a>  CHeapPtr::Allocate  
+##  <a name="allocate"></a>  CHeapPtr::Allocate  
  Call this method to allocate memory on the heap to store objects.  
   
 ```
@@ -115,9 +115,9 @@ nElements = 1) throw();
  The allocator routines are used to reserve enough memory on the heap to store *nElement* objects of a type defined in the constructor.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#77](../../atl/codesnippet/CPP/cheapptr-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#77](../../atl/codesnippet/cpp/cheapptr-class_1.cpp)]  
   
-##  <a name="cheapptr__cheapptr"></a>  CHeapPtr::CHeapPtr  
+##  <a name="cheapptr"></a>  CHeapPtr::CHeapPtr  
  The constructor.  
   
 ```
@@ -138,9 +138,9 @@ CHeapPtr(
  The heap pointer can optionally be created using an existing pointer, or a `CHeapPtr` object. If so, the new `CHeapPtr` object assumes responsibility for managing the new pointer and resources.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#78](../../atl/codesnippet/CPP/cheapptr-class_2.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#78](../../atl/codesnippet/cpp/cheapptr-class_2.cpp)]  
   
-##  <a name="cheapptr__operator__eq"></a>  CHeapPtr::operator =  
+##  <a name="operator_eq"></a>  CHeapPtr::operator =  
  Assignment operator.  
   
 ```
@@ -158,9 +158,9 @@ CHeapPtr<T,
  Returns a reference to the updated `CHeapPtr`.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#80](../../atl/codesnippet/CPP/cheapptr-class_3.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#80](../../atl/codesnippet/cpp/cheapptr-class_3.cpp)]  
   
-##  <a name="cheapptr__reallocate"></a>  CHeapPtr::Reallocate  
+##  <a name="reallocate"></a>  CHeapPtr::Reallocate  
  Call this method to reallocate the memory on the heap.  
   
 ```
@@ -175,7 +175,7 @@ bool Reallocate(size_t    nElements) throw();
  Returns true if the memory was successfully allocated, false on failure.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Utilities#79](../../atl/codesnippet/CPP/cheapptr-class_4.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#79](../../atl/codesnippet/cpp/cheapptr-class_4.cpp)]  
   
 ## See Also  
  [CHeapPtrBase Class](../../atl/reference/cheapptrbase-class.md)   

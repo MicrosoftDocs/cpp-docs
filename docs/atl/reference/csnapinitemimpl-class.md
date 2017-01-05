@@ -64,33 +64,33 @@ template <class T,  BOOL bIsExtension = FALSE>  class ATL_NO_VTABLE CSnapInItemI
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSnapInItemImpl::CSnapInItemImpl](#csnapinitemimpl__csnapinitemimpl)|Constructor.|  
+|[CSnapInItemImpl::CSnapInItemImpl](#csnapinitemimpl)|Constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSnapInItemImpl::AddMenuItems](#csnapinitemimpl__addmenuitems)|Adds menu items to a context menu.|  
-|[CSnapInItemImpl::Command](#csnapinitemimpl__command)|Called by the console when a custom menu item is selected.|  
-|[CSnapInItemImpl::CreatePropertyPages](#csnapinitemimpl__createpropertypages)|Adds pages to the property sheet of the snap-in.|  
-|[CSnapInItemImpl::FillData](#csnapinitemimpl__filldata)|Copies information on the snap-in object into a specified stream.|  
-|[CSnapInItemImpl::GetResultPaneInfo](#csnapinitemimpl__getresultpaneinfo)|Retrieves the **RESULTDATAITEM** structure of the snap-in.|  
-|[CSnapInItemImpl::GetResultViewType](#csnapinitemimpl__getresultviewtype)|Determines the type of view used by the result pane.|  
-|[CSnapInItemImpl::GetScopePaneInfo](#csnapinitemimpl__getscopepaneinfo)|Retrieves the **SCOPEDATAITEM** structure of the snap-in.|  
-|[CSnapInItemImpl::Notify](#csnapinitemimpl__notify)|Called by the console to notify the snap-in of actions taken by the user.|  
-|[CSnapInItemImpl::QueryPagesFor](#csnapinitemimpl__querypagesfor)|Called to see if the snap-in node supports property pages.|  
-|[CSnapInItemImpl::SetMenuInsertionFlags](#csnapinitemimpl__setmenuinsertionflags)|Modifies the menu insertion flags for a snap-in object.|  
-|[CSnapInItemImpl::SetToolbarButtonInfo](#csnapinitemimpl__settoolbarbuttoninfo)|Sets the information of the specified toolbar button.|  
-|[CSnapInItemImpl::UpdateMenuState](#csnapinitemimpl__updatemenustate)|Updates the state of a context menu item.|  
-|[CSnapInItemImpl::UpdateToolbarButton](#csnapinitemimpl__updatetoolbarbutton)|Updates the state of the specified toolbar button.|  
+|[CSnapInItemImpl::AddMenuItems](#addmenuitems)|Adds menu items to a context menu.|  
+|[CSnapInItemImpl::Command](#command)|Called by the console when a custom menu item is selected.|  
+|[CSnapInItemImpl::CreatePropertyPages](#createpropertypages)|Adds pages to the property sheet of the snap-in.|  
+|[CSnapInItemImpl::FillData](#filldata)|Copies information on the snap-in object into a specified stream.|  
+|[CSnapInItemImpl::GetResultPaneInfo](#getresultpaneinfo)|Retrieves the **RESULTDATAITEM** structure of the snap-in.|  
+|[CSnapInItemImpl::GetResultViewType](#getresultviewtype)|Determines the type of view used by the result pane.|  
+|[CSnapInItemImpl::GetScopePaneInfo](#getscopepaneinfo)|Retrieves the **SCOPEDATAITEM** structure of the snap-in.|  
+|[CSnapInItemImpl::Notify](#notify)|Called by the console to notify the snap-in of actions taken by the user.|  
+|[CSnapInItemImpl::QueryPagesFor](#querypagesfor)|Called to see if the snap-in node supports property pages.|  
+|[CSnapInItemImpl::SetMenuInsertionFlags](#setmenuinsertionflags)|Modifies the menu insertion flags for a snap-in object.|  
+|[CSnapInItemImpl::SetToolbarButtonInfo](#settoolbarbuttoninfo)|Sets the information of the specified toolbar button.|  
+|[CSnapInItemImpl::UpdateMenuState](#updatemenustate)|Updates the state of a context menu item.|  
+|[CSnapInItemImpl::UpdateToolbarButton](#updatetoolbarbutton)|Updates the state of the specified toolbar button.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSnapInItemImpl::m_bstrDisplayName](#csnapinitemimpl__m_bstrdisplayname)|The name of the snap-in object.|  
-|[CSnapInItemImpl::m_resultDataItem](#csnapinitemimpl__m_resultdataitem)|The Windows **RESULTDATAITEM** structure used by the `CSnapInItemImpl` object.|  
-|[CSnapInItemImpl::m_scopeDataItem](#csnapinitemimpl__m_scopedataitem)|The Windows **SCOPEDATAITEM** structure used by the `CSnapInItemImpl` object.|  
+|[CSnapInItemImpl::m_bstrDisplayName](#m_bstrdisplayname)|The name of the snap-in object.|  
+|[CSnapInItemImpl::m_resultDataItem](#m_resultdataitem)|The Windows **RESULTDATAITEM** structure used by the `CSnapInItemImpl` object.|  
+|[CSnapInItemImpl::m_scopeDataItem](#m_scopedataitem)|The Windows **SCOPEDATAITEM** structure used by the `CSnapInItemImpl` object.|  
   
 ## Remarks  
  `CSnapInItemImpl` provides a basic implementation for a snap-in node object, such as adding menu items and toolbars, and forwarding commands for the snap-in node to the appropriate handler function. These features are implemented using several different interfaces and map types. The default implementation handles notifications sent to the node object by determining the correct instance of the derived class and then forwarding the message to the correct instance.  
@@ -103,7 +103,7 @@ template <class T,  BOOL bIsExtension = FALSE>  class ATL_NO_VTABLE CSnapInItemI
 ## Requirements  
  **Header:** atlsnap.h  
   
-##  <a name="csnapinitemimpl__addmenuitems"></a>  CSnapInItemImpl::AddMenuItems  
+##  <a name="addmenuitems"></a>  CSnapInItemImpl::AddMenuItems  
  This method implements the Win32 function [IExtendContextMenu::AddMenuItems](http://msdn.microsoft.com/library/aa814841).  
   
 ```
@@ -138,7 +138,7 @@ AddMenuItems(LPCONTEXTMENUCALLBACK piCallback,
   
 - **CCT_UNINITIALIZED** Data object has an invalid type.  
   
-##  <a name="csnapinitemimpl__command"></a>  CSnapInItemImpl::Command  
+##  <a name="command"></a>  CSnapInItemImpl::Command  
  This method implements the Win32 function [IExtendContextMenu::Command](http://msdn.microsoft.com/library/aa814842).  
   
 ```
@@ -160,7 +160,7 @@ Command(long lCommandID,  DATA_OBJECT_TYPES type);
   
 - **CCT_UNINITIALIZED** Data object has an invalid type.  
   
-##  <a name="csnapinitemimpl__createpropertypages"></a>  CSnapInItemImpl::CreatePropertyPages  
+##  <a name="createpropertypages"></a>  CSnapInItemImpl::CreatePropertyPages  
  This method implements the Win32 function [IExtendPropertySheet::CreatePropertyPages](http://msdn.microsoft.com/library/aa814846).  
   
 ```
@@ -191,14 +191,14 @@ CreatePropertyPages(LPPROPERTYSHEETCALLBACK lpProvider,
   
 - **CCT_UNINITIALIZED** Data object has an invalid type.  
   
-##  <a name="csnapinitemimpl__csnapinitemimpl"></a>  CSnapInItemImpl::CSnapInItemImpl  
+##  <a name="csnapinitemimpl"></a>  CSnapInItemImpl::CSnapInItemImpl  
  Constructs a `CSnapInItemImpl` object.  
   
 ```
 CSnapInItemImpl();
 ```  
   
-##  <a name="csnapinitemimpl__filldata"></a>  CSnapInItemImpl::FillData  
+##  <a name="filldata"></a>  CSnapInItemImpl::FillData  
  This function is called to retrieve information about the item.  
   
 ```
@@ -215,7 +215,7 @@ FillData(CLIPFORMAT cf,  LPSTREAM pStream);
 ### Remarks  
  To properly implement this function, copy the correct information into the stream ( `pStream`), depending on the Clipboard format indicated by `cf`.  
   
-##  <a name="csnapinitemimpl__getresultviewtype"></a>  CSnapInItemImpl::GetResultViewType  
+##  <a name="getresultviewtype"></a>  CSnapInItemImpl::GetResultViewType  
  Call this function to retrieve the type of view for the result pane of the snap-in object.  
   
 ```
@@ -235,7 +235,7 @@ GetResultViewType(
   
 - **MMC_VIEW_OPTIONS_NONE** = 0   Allows the default view options.  
   
-##  <a name="csnapinitemimpl__getscopepaneinfo"></a>  CSnapInItemImpl::GetScopePaneInfo  
+##  <a name="getscopepaneinfo"></a>  CSnapInItemImpl::GetScopePaneInfo  
  Call this function to retrieve the **SCOPEDATAITEM** structure of the snap-in.  
   
 ```
@@ -246,7 +246,7 @@ GetScopePaneInfo (SCOPEDATAITEM* pScopeDataItem);
  *pScopeDataItem*  
  [out] A pointer to the **SCOPEDATAITEM** structure of the `CSnapInItemImpl` object.  
   
-##  <a name="csnapinitemimpl__getresultpaneinfo"></a>  CSnapInItemImpl::GetResultPaneInfo  
+##  <a name="getresultpaneinfo"></a>  CSnapInItemImpl::GetResultPaneInfo  
  Call this function to retrieve the **RESULTDATAITEM** structure of the snap-in.  
   
 ```
@@ -257,28 +257,28 @@ GetResultPaneInfo (RESULTDATAITEM* pResultDataItem);
  *pResultDataItem*  
  [out] A pointer to the **RESULTDATAITEM** structure of the `CSnapInItemImpl` object.  
   
-##  <a name="csnapinitemimpl__m_bstrdisplayname"></a>  CSnapInItemImpl::m_bstrDisplayName  
+##  <a name="m_bstrdisplayname"></a>  CSnapInItemImpl::m_bstrDisplayName  
  Contains the string displayed for the node item.  
   
 ```
 CComBSTR m_bstrDisplayName;
 ```  
   
-##  <a name="csnapinitemimpl__m_scopedataitem"></a>  CSnapInItemImpl::m_scopeDataItem  
- The <xref:Microsoft.CLRAdmin.SCOPEDATAITEMqualifyHint%3DFalse%26autoUpgrade%3DTrue> structure of the snap-in data object.  
+##  <a name="m_scopedataitem"></a>  CSnapInItemImpl::m_scopeDataItem  
+ The `SCOPEDATAITEM` structure of the snap-in data object.  
   
 ```
 SCOPEDATAITEM m_scopeDataItem;
 ```  
   
-##  <a name="csnapinitemimpl__m_resultdataitem"></a>  CSnapInItemImpl::m_resultDataItem  
+##  <a name="m_resultdataitem"></a>  CSnapInItemImpl::m_resultDataItem  
  The [RESULTDATAITEM](http://msdn.microsoft.com/library/aa815165) structure of the snap-in data object.  
   
 ```
 RESULTDATAITEM m_resultDataItem;
 ```  
   
-##  <a name="csnapinitemimpl__notify"></a>  CSnapInItemImpl::Notify  
+##  <a name="notify"></a>  CSnapInItemImpl::Notify  
  Called when the snap-in object is acted upon by the user.  
   
 ```
@@ -345,14 +345,14 @@ STDMETHOD(Notify)(MMC_NOTIFY_TYPE event,
   
 - **CCT_UNINITIALIZED** Data object has an invalid type.  
   
-##  <a name="csnapinitemimpl__querypagesfor"></a>  CSnapInItemImpl::QueryPagesFor  
+##  <a name="querypagesfor"></a>  CSnapInItemImpl::QueryPagesFor  
  Called to see if the snap-in node supports property pages.  
   
 ```
 QueryPagesFor(DATA_OBJECT_TYPES type);
 ```  
   
-##  <a name="csnapinitemimpl__setmenuinsertionflags"></a>  CSnapInItemImpl::SetMenuInsertionFlags  
+##  <a name="setmenuinsertionflags"></a>  CSnapInItemImpl::SetMenuInsertionFlags  
  Call this function to modify the menu insertion flags, specified by `pInsertionAllowed`, for the snap-in object.  
   
 ```
@@ -380,7 +380,7 @@ void SetMenuInsertionFlags(bool bBeforeInsertion,
   
  You should not attempt to set bits in `pInsertionAllowed` that were originally cleared. Future versions of MMC may use bits not currently defined so you should not change bits that are currently not defined.  
   
-##  <a name="csnapinitemimpl__settoolbarbuttoninfo"></a>  CSnapInItemImpl::SetToolbarButtonInfo  
+##  <a name="settoolbarbuttoninfo"></a>  CSnapInItemImpl::SetToolbarButtonInfo  
  Call this function to modify any toolbar button styles, of the snap-in object, before the toolbar is created.  
   
 ```
@@ -421,7 +421,7 @@ void SetToolbarButtonInfo(UINT id,
   
 - `TBSTYLE_SEP` Creates a separator, providing a small gap between button groups. A button that has this style does not receive user input.  
   
-##  <a name="csnapinitemimpl__updatemenustate"></a>  CSnapInItemImpl::UpdateMenuState  
+##  <a name="updatemenustate"></a>  CSnapInItemImpl::UpdateMenuState  
  Call this function to modify a menu item before it is inserted into the context menu of the snap-in object.  
   
 ```
@@ -468,7 +468,7 @@ void UpdateMenuState(UINT id,
   
 - **MF_CHECKED** and **MF_UNCHECKED**.  
   
-##  <a name="csnapinitemimpl__updatetoolbarbutton"></a>  CSnapInItemImpl::UpdateToolbarButton  
+##  <a name="updatetoolbarbutton"></a>  CSnapInItemImpl::UpdateToolbarButton  
  Call this function to modify a toolbar button, of the snap-in object, before it is displayed.  
   
 ```

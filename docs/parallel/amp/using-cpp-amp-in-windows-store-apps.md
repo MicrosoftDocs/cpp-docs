@@ -147,8 +147,8 @@ concurrency::parallel_for_each(av_red.extent, [=](index<1> idx) restrict(amp)
 ```  
   
 ## See Also  
- [Create your first Windows Store app using C++](http://go.microsoft.com/fwlink/p/LinkId=249073)   
- [Creating Windows Runtime Components in C++](http://go.microsoft.com/fwlink/p/LinkId=249076)
+ [Create your first Windows Store app using C++](http://go.microsoft.com/fwlink/p/linkid=249073)   
+ [Creating Windows Runtime Components in C++](http://go.microsoft.com/fwlink/p/linkid=249076)
 
 
 

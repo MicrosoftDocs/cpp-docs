@@ -80,7 +80,7 @@ protected:
 ## Remarks  
  The template class stores a copy of a binary function object `Func` in **op**, and a copy of `left` in **value**. It defines its member function `operator()` as returning **op**( **value**, `right`).  
   
- If `Func` is an object of type **Operation** and `c` is a constant , then [bind1st](../standard-library/functional-functions.md#bind1stFunction) ( `Func`, `c` ) is equivalent to the `binder1st` class constructor `binder1st`\< **Operation**> ( `Func`, `c` ) and more convenient.  
+ If `Func` is an object of type **Operation** and `c` is a constant , then [bind1st](../standard-library/functional-functions.md#bind1st_function) ( `Func`, `c` ) is equivalent to the `binder1st` class constructor `binder1st`\< **Operation**> ( `Func`, `c` ) and more convenient.  
   
 ## Example  
   
@@ -139,7 +139,7 @@ The number of elements in v1 less than 10 is: 2.
   
 ## See Also  
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 
 
 

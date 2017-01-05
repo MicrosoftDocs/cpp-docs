@@ -49,7 +49,7 @@ MFC supports printing and print preview for your program's documents via class [
   
 -   [Print preview architecture](../mfc/print-preview-architecture.md)  
   
--   [Sample](../top/visual-cpp-samples.md)  
+-   [Sample](../visual-cpp-samples.md)  
   
 ## See Also  
  [User Interface Elements](../mfc/user-interface-elements-mfc.md)

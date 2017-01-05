@@ -55,97 +55,97 @@ class CMFCRibbonBar : public CPane
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonBar::ActivateContextCategory](#cmfcribbonbar__activatecontextcategory)|Activates a context category that is already visible.|  
-|[CMFCRibbonBar::AddCategory](#cmfcribbonbar__addcategory)|Adds a new ribbon category to the ribbon.|  
-|[CMFCRibbonBar::AddContextCategory](#cmfcribbonbar__addcontextcategory)|Adds a context category.|  
-|[CMFCRibbonBar::AddMainCategory](#cmfcribbonbar__addmaincategory)|Adds a new main ribbon category.|  
-|[CMFCRibbonBar::AddPrintPreviewCategory](#cmfcribbonbar__addprintpreviewcategory)||  
-|[CMFCRibbonBar::AddQATOnlyCategory](#cmfcribbonbar__addqatonlycategory)||  
-|[CMFCRibbonBar::AddToTabs](#cmfcribbonbar__addtotabs)|Add a ribbon element to the right side of a ribbon bar.|  
-|[CMFCRibbonBar::CreateEx](#cmfcribbonbar__createex)|Creates a control bar and attaches it to the [CPane](../../mfc/reference/cpane-class.md) object. (Overrides [CPane::CreateEx](../../mfc/reference/cpane-class.md#cpane__createex).)|  
-|[CMFCRibbonBar::Create](#cmfcribbonbar__create)|Creates a ribbon bar control and attaches it to a ribbon bar.|  
-|[CMFCRibbonBar::DeactivateKeyboardFocus](#cmfcribbonbar__deactivatekeyboardfocus)||  
-|[CMFCRibbonBar::DrawMenuImage](#cmfcribbonbar__drawmenuimage)||  
-|[CMFCRibbonBar::DWMCompositionChanged](#cmfcribbonbar__dwmcompositionchanged)||  
-|[CMFCRibbonBar::EnableKeyTips](#cmfcribbonbar__enablekeytips)|Enable or disable key tips for the ribbon control.|  
-|[CMFCRibbonBar::EnablePrintPreview](#cmfcribbonbar__enableprintpreview)|Enable the **Print Preview** tab.|  
-|[CMFCRibbonBar::EnableToolTips](#cmfcribbonbar__enabletooltips)|Enables or disables tooltips and tooltip descriptions on the ribbon bar.|  
-|[CMFCRibbonBar::FindByData](#cmfcribbonbar__findbydata)|Find a ribbon element by using data that a user specifies.|  
-|[CMFCRibbonBar::FindByID](#cmfcribbonbar__findbyid)|Finds a ribbon element that has the specified command id.|  
-|[CMFCRibbonBar::FindCategoryIndexByData](#cmfcribbonbar__findcategoryindexbydata)|Finds the index of the ribbon category that contains the user-defined data.|  
-|[CMFCRibbonBar::ForceRecalcLayout](#cmfcribbonbar__forcerecalclayout)||  
-|[CMFCRibbonBar::GetActiveCategory](#cmfcribbonbar__getactivecategory)|Gets a pointer to an active category.|  
-|[CMFCRibbonBar::GetCaptionHeight](#cmfcribbonbar__getcaptionheight)|Returns the caption height. (Overrides [CBasePane::GetCaptionHeight](../../mfc/reference/cbasepane-class.md#cbasepane__getcaptionheight).)|  
-|[CMFCRibbonBar::GetCategory](#cmfcribbonbar__getcategory)|Gets the pointer to a category located at a specified index.|  
-|[CMFCRibbonBar::GetCategoryCount](#cmfcribbonbar__getcategorycount)|Gets the number of the ribbon categories in the ribbon bar.|  
-|[CMFCRibbonBar::GetCategoryHeight](#cmfcribbonbar__getcategoryheight)||  
-|[CMFCRibbonBar::GetCategoryIndex](#cmfcribbonbar__getcategoryindex)|Returns the index of a ribbon category.|  
-|[CMFCRibbonBar::GetContextName](#cmfcribbonbar__getcontextname)|Retrieves the name of the context category caption that you specify by using an ID.|  
-|[CMFCRibbonBar::GetDroppedDown](#cmfcribbonbar__getdroppeddown)||  
-|[CMFCRibbonBar::GetElementsByID](#cmfcribbonbar__getelementsbyid)|Gets an array that contains the pointers to all the ribbon elements that have the specified ID.|  
-|[CMFCRibbonBar::GetApplicationButton](#cmfcribbonbar__getapplicationbutton)|Gets a pointer to a ribbon button.|  
-|[CMFCRibbonBar::GetFocused](#cmfcribbonbar__getfocused)|Returns a focused element.|  
-|[CMFCRibbonBar::GetHideFlags](#cmfcribbonbar__gethideflags)||  
-|[CMFCRibbonBar::GetItemIDsList](#cmfcribbonbar__getitemidslist)||  
-|[CMFCRibbonBar::GetKeyboardNavigationLevel](#cmfcribbonbar__getkeyboardnavigationlevel)||  
-|[CMFCRibbonBar::GetKeyboardNavLevelCurrent](#cmfcribbonbar__getkeyboardnavlevelcurrent)||  
-|[CMFCRibbonBar::GetKeyboardNavLevelParent](#cmfcribbonbar__getkeyboardnavlevelparent)||  
-|[CMFCRibbonBar::GetMainCategory](#cmfcribbonbar__getmaincategory)|Returns a pointer to the ribbon category that is currently selected.|  
-|[CMFCRibbonBar::GetQATCommandsLocation](#cmfcribbonbar__getqatcommandslocation)||  
-|[CMFCRibbonBar::GetQATDroppedDown](#cmfcribbonbar__getqatdroppeddown)||  
-|[CMFCRibbonBar::GetQuickAccessCommands](#cmfcribbonbar__getquickaccesscommands)|Fills a list that contains the command IDs of all the elements that appear on the Quick Access Toolbar.|  
-|[CMFCRibbonBar::GetQuickAccessToolbarLocation](#cmfcribbonbar__getquickaccesstoolbarlocation)||  
-|[CMFCRibbonBar::GetTabTrancateRatio](#cmfcribbonbar__gettabtrancateratio)||  
-|[CMFCRibbonBar::GetTooltipFixedWidthLargeImage](#cmfcribbonbar__gettooltipfixedwidthlargeimage)||  
-|[CMFCRibbonBar::GetTooltipFixedWidthRegular](#cmfcribbonbar__gettooltipfixedwidthregular)||  
-|[CMFCRibbonBar::GetVisibleCategoryCount](#cmfcribbonbar__getvisiblecategorycount)||  
-|[CMFCRibbonBar::HideAllContextCategories](#cmfcribbonbar__hideallcontextcategories)|Hides all the categories that are active and visible.|  
-|[CMFCRibbonBar::HideKeyTips](#cmfcribbonbar__hidekeytips)||  
-|[CMFCRibbonBar::HitTest](#cmfcribbonbar__hittest)|Finds a pointer to the ribbon element that is located at the specified point in the ribbon bar's client coordinates.|  
-|[CMFCRibbonBar::IsKeyTipEnabled](#cmfcribbonbar__iskeytipenabled)|Determines whether keytips are enabled.|  
-|[CMFCRibbonBar::IsMainRibbonBar](#cmfcribbonbar__ismainribbonbar)||  
-|[CMFCRibbonBar::IsPrintPreviewEnabled](#cmfcribbonbar__isprintpreviewenabled)|Determines whether the **Print Preview** tab is enabled.|  
-|[CMFCRibbonBar::IsQATEmpty](#cmfcribbonbar__isqatempty)||  
-|[CMFCRibbonBar::IsQuickAccessToolbarOnTop](#cmfcribbonbar__isquickaccesstoolbarontop)|Specifies whether the Quick Access Toolbar is located above the ribbon bar.|  
-|[CMFCRibbonBar::IsReplaceFrameCaption](#cmfcribbonbar__isreplaceframecaption)|Determines whether the ribbon bar replaces the main frame caption, or is added below the frame caption.|  
-|[CMFCRibbonBar::IsShowGroupBorder](#cmfcribbonbar__isshowgroupborder)||  
-|[CMFCRibbonBar::IsToolTipDescrEnabled](#cmfcribbonbar__istooltipdescrenabled)|Determines whether the tooltip descriptions are enabled.|  
-|[CMFCRibbonBar::IsToolTipEnabled](#cmfcribbonbar__istooltipenabled)|Determines whether the tooltips for the ribbon bar are enabled.|  
-|[CMFCRibbonBar::IsTransparentCaption](#cmfcribbonbar__istransparentcaption)||  
-|[CMFCRibbonBar::IsWindows7Look](#cmfcribbonbar__iswindows7look)|Indicates whether the ribbon has Windows 7-style look (small rectangular application button).|  
-|[CMFCRibbonBar::LoadFromResource](#cmfcribbonbar__loadfromresource)|Overloaded. Loads a Ribbon Bar from application resources.|  
-|[CMFCRibbonBar::OnClickButton](#cmfcribbonbar__onclickbutton)||  
-|[CMFCRibbonBar::OnEditContextMenu](#cmfcribbonbar__oneditcontextmenu)||  
-|[CMFCRibbonBar::OnRTLChanged](#cmfcribbonbar__onrtlchanged)|(Overrides `CPane::OnRTLChanged`.)|  
-|[CMFCRibbonBar::OnSetAccData](#cmfcribbonbar__onsetaccdata)|(Overrides [CBasePane::OnSetAccData](../../mfc/reference/cbasepane-class.md#cbasepane__onsetaccdata).)|  
-|[CMFCRibbonBar::OnShowRibbonContextMenu](#cmfcribbonbar__onshowribboncontextmenu)||  
-|[CMFCRibbonBar::OnShowRibbonQATMenu](#cmfcribbonbar__onshowribbonqatmenu)||  
-|[CMFCRibbonBar::OnSysKeyDown](#cmfcribbonbar__onsyskeydown)||  
-|[CMFCRibbonBar::OnSysKeyUp](#cmfcribbonbar__onsyskeyup)||  
-|[CMFCRibbonBar::PopTooltip](#cmfcribbonbar__poptooltip)||  
-|[CMFCRibbonBar::PreTranslateMessage](#cmfcribbonbar__pretranslatemessage)|(Overrides `CBasePane::PreTranslateMessage`.)|  
-|[CMFCRibbonBar::RecalcLayout](#cmfcribbonbar__recalclayout)|(Overrides [CPane::RecalcLayout](../../mfc/reference/cpane-class.md#cpane__recalclayout).)|  
-|[CMFCRibbonBar::RemoveAllCategories](#cmfcribbonbar__removeallcategories)|Removes all the ribbon categories from the ribbon bar.|  
-|[CMFCRibbonBar::RemoveAllFromTabs](#cmfcribbonbar__removeallfromtabs)|Removes all ribbon elements from the tab area.|  
-|[CMFCRibbonBar::RemoveCategory](#cmfcribbonbar__removecategory)|Removes the ribbon category that is located at the specified index.|  
-|[CMFCRibbonBar::SaveToXMLBuffer](#cmfcribbonbar__savetoxmlbuffer)|Saves the Ribbon Bar to a buffer.|  
-|[CMFCRibbonBar::SaveToXMLFile](#cmfcribbonbar__savetoxmlfile)|Saves the Ribbon Bar to XML file.|  
-|[CMFCRibbonBar::SetActiveCategory](#cmfcribbonbar__setactivecategory)|Sets a specified ribbon category to active.|  
-|[CMFCRibbonBar::SetActiveMDIChild](#cmfcribbonbar__setactivemdichild)||  
-|[CMFCRibbonBar::SetElementKeys](#cmfcribbonbar__setelementkeys)|Sets the specified keytips for all ribbon elements that have the specified command ID.|  
-|[CMFCRibbonBar::SetApplicationButton](#cmfcribbonbar__setapplicationbutton)|Assigns an application ribbon button to the ribbon bar.|  
-|[CMFCRibbonBar::SetKeyboardNavigationLevel](#cmfcribbonbar__setkeyboardnavigationlevel)||  
-|[CMFCRibbonBar::SetMaximizeMode](#cmfcribbonbar__setmaximizemode)||  
-|[CMFCRibbonBar::SetQuickAccessCommands](#cmfcribbonbar__setquickaccesscommands)|Adds one or more ribbon elements to the Quick Access Toolbar.|  
-|[CMFCRibbonBar::SetQuickAccessDefaultState](#cmfcribbonbar__setquickaccessdefaultstate)|Specifies the default state for the Quick Access Toolbar.|  
-|[CMFCRibbonBar::SetQuickAccessToolbarOnTop](#cmfcribbonbar__setquickaccesstoolbarontop)|Positions the Quick Access Toolbar (QAT) above or below the ribbon bar.|  
-|[CMFCRibbonBar::SetTooltipFixedWidth](#cmfcribbonbar__settooltipfixedwidth)||  
-|[CMFCRibbonBar::SetWindows7Look](#cmfcribbonbar__setwindows7look)|Enable/disable ribbon Windows 7-style look (small rectangular application button)|  
-|[CMFCRibbonBar::ShowCategory](#cmfcribbonbar__showcategory)|Shows or hides the specified ribbon category.|  
-|[CMFCRibbonBar::ShowContextCategories](#cmfcribbonbar__showcontextcategories)|Shows or hides the context categories that have the specified ID.|  
-|[CMFCRibbonBar::ShowKeyTips](#cmfcribbonbar__showkeytips)||  
-|[CMFCRibbonBar::ToggleMimimizeState](#cmfcribbonbar__togglemimimizestate)|Toggles the ribbon bar between the minimized and maximized states..|  
-|[CMFCRibbonBar::TranslateChar](#cmfcribbonbar__translatechar)||  
+|[CMFCRibbonBar::ActivateContextCategory](#activatecontextcategory)|Activates a context category that is already visible.|  
+|[CMFCRibbonBar::AddCategory](#addcategory)|Adds a new ribbon category to the ribbon.|  
+|[CMFCRibbonBar::AddContextCategory](#addcontextcategory)|Adds a context category.|  
+|[CMFCRibbonBar::AddMainCategory](#addmaincategory)|Adds a new main ribbon category.|  
+|[CMFCRibbonBar::AddPrintPreviewCategory](#addprintpreviewcategory)||  
+|[CMFCRibbonBar::AddQATOnlyCategory](#addqatonlycategory)||  
+|[CMFCRibbonBar::AddToTabs](#addtotabs)|Add a ribbon element to the right side of a ribbon bar.|  
+|[CMFCRibbonBar::CreateEx](#createex)|Creates a control bar and attaches it to the [CPane](../../mfc/reference/cpane-class.md) object. (Overrides [CPane::CreateEx](../../mfc/reference/cpane-class.md#createex).)|  
+|[CMFCRibbonBar::Create](#create)|Creates a ribbon bar control and attaches it to a ribbon bar.|  
+|[CMFCRibbonBar::DeactivateKeyboardFocus](#deactivatekeyboardfocus)||  
+|[CMFCRibbonBar::DrawMenuImage](#drawmenuimage)||  
+|[CMFCRibbonBar::DWMCompositionChanged](#dwmcompositionchanged)||  
+|[CMFCRibbonBar::EnableKeyTips](#enablekeytips)|Enable or disable key tips for the ribbon control.|  
+|[CMFCRibbonBar::EnablePrintPreview](#enableprintpreview)|Enable the **Print Preview** tab.|  
+|[CMFCRibbonBar::EnableToolTips](#enabletooltips)|Enables or disables tooltips and tooltip descriptions on the ribbon bar.|  
+|[CMFCRibbonBar::FindByData](#findbydata)|Find a ribbon element by using data that a user specifies.|  
+|[CMFCRibbonBar::FindByID](#findbyid)|Finds a ribbon element that has the specified command id.|  
+|[CMFCRibbonBar::FindCategoryIndexByData](#findcategoryindexbydata)|Finds the index of the ribbon category that contains the user-defined data.|  
+|[CMFCRibbonBar::ForceRecalcLayout](#forcerecalclayout)||  
+|[CMFCRibbonBar::GetActiveCategory](#getactivecategory)|Gets a pointer to an active category.|  
+|[CMFCRibbonBar::GetCaptionHeight](#getcaptionheight)|Returns the caption height. (Overrides [CBasePane::GetCaptionHeight](../../mfc/reference/cbasepane-class.md#getcaptionheight).)|  
+|[CMFCRibbonBar::GetCategory](#getcategory)|Gets the pointer to a category located at a specified index.|  
+|[CMFCRibbonBar::GetCategoryCount](#getcategorycount)|Gets the number of the ribbon categories in the ribbon bar.|  
+|[CMFCRibbonBar::GetCategoryHeight](#getcategoryheight)||  
+|[CMFCRibbonBar::GetCategoryIndex](#getcategoryindex)|Returns the index of a ribbon category.|  
+|[CMFCRibbonBar::GetContextName](#getcontextname)|Retrieves the name of the context category caption that you specify by using an ID.|  
+|[CMFCRibbonBar::GetDroppedDown](#getdroppeddown)||  
+|[CMFCRibbonBar::GetElementsByID](#getelementsbyid)|Gets an array that contains the pointers to all the ribbon elements that have the specified ID.|  
+|[CMFCRibbonBar::GetApplicationButton](#getapplicationbutton)|Gets a pointer to a ribbon button.|  
+|[CMFCRibbonBar::GetFocused](#getfocused)|Returns a focused element.|  
+|[CMFCRibbonBar::GetHideFlags](#gethideflags)||  
+|[CMFCRibbonBar::GetItemIDsList](#getitemidslist)||  
+|[CMFCRibbonBar::GetKeyboardNavigationLevel](#getkeyboardnavigationlevel)||  
+|[CMFCRibbonBar::GetKeyboardNavLevelCurrent](#getkeyboardnavlevelcurrent)||  
+|[CMFCRibbonBar::GetKeyboardNavLevelParent](#getkeyboardnavlevelparent)||  
+|[CMFCRibbonBar::GetMainCategory](#getmaincategory)|Returns a pointer to the ribbon category that is currently selected.|  
+|[CMFCRibbonBar::GetQATCommandsLocation](#getqatcommandslocation)||  
+|[CMFCRibbonBar::GetQATDroppedDown](#getqatdroppeddown)||  
+|[CMFCRibbonBar::GetQuickAccessCommands](#getquickaccesscommands)|Fills a list that contains the command IDs of all the elements that appear on the Quick Access Toolbar.|  
+|[CMFCRibbonBar::GetQuickAccessToolbarLocation](#getquickaccesstoolbarlocation)||  
+|[CMFCRibbonBar::GetTabTrancateRatio](#gettabtrancateratio)||  
+|[CMFCRibbonBar::GetTooltipFixedWidthLargeImage](#gettooltipfixedwidthlargeimage)||  
+|[CMFCRibbonBar::GetTooltipFixedWidthRegular](#gettooltipfixedwidthregular)||  
+|[CMFCRibbonBar::GetVisibleCategoryCount](#getvisiblecategorycount)||  
+|[CMFCRibbonBar::HideAllContextCategories](#hideallcontextcategories)|Hides all the categories that are active and visible.|  
+|[CMFCRibbonBar::HideKeyTips](#hidekeytips)||  
+|[CMFCRibbonBar::HitTest](#hittest)|Finds a pointer to the ribbon element that is located at the specified point in the ribbon bar's client coordinates.|  
+|[CMFCRibbonBar::IsKeyTipEnabled](#iskeytipenabled)|Determines whether keytips are enabled.|  
+|[CMFCRibbonBar::IsMainRibbonBar](#ismainribbonbar)||  
+|[CMFCRibbonBar::IsPrintPreviewEnabled](#isprintpreviewenabled)|Determines whether the **Print Preview** tab is enabled.|  
+|[CMFCRibbonBar::IsQATEmpty](#isqatempty)||  
+|[CMFCRibbonBar::IsQuickAccessToolbarOnTop](#isquickaccesstoolbarontop)|Specifies whether the Quick Access Toolbar is located above the ribbon bar.|  
+|[CMFCRibbonBar::IsReplaceFrameCaption](#isreplaceframecaption)|Determines whether the ribbon bar replaces the main frame caption, or is added below the frame caption.|  
+|[CMFCRibbonBar::IsShowGroupBorder](#isshowgroupborder)||  
+|[CMFCRibbonBar::IsToolTipDescrEnabled](#istooltipdescrenabled)|Determines whether the tooltip descriptions are enabled.|  
+|[CMFCRibbonBar::IsToolTipEnabled](#istooltipenabled)|Determines whether the tooltips for the ribbon bar are enabled.|  
+|[CMFCRibbonBar::IsTransparentCaption](#istransparentcaption)||  
+|[CMFCRibbonBar::IsWindows7Look](#iswindows7look)|Indicates whether the ribbon has Windows 7-style look (small rectangular application button).|  
+|[CMFCRibbonBar::LoadFromResource](#loadfromresource)|Overloaded. Loads a Ribbon Bar from application resources.|  
+|[CMFCRibbonBar::OnClickButton](#onclickbutton)||  
+|[CMFCRibbonBar::OnEditContextMenu](#oneditcontextmenu)||  
+|[CMFCRibbonBar::OnRTLChanged](#onrtlchanged)|(Overrides `CPane::OnRTLChanged`.)|  
+|[CMFCRibbonBar::OnSetAccData](#onsetaccdata)|(Overrides [CBasePane::OnSetAccData](../../mfc/reference/cbasepane-class.md#onsetaccdata).)|  
+|[CMFCRibbonBar::OnShowRibbonContextMenu](#onshowribboncontextmenu)||  
+|[CMFCRibbonBar::OnShowRibbonQATMenu](#onshowribbonqatmenu)||  
+|[CMFCRibbonBar::OnSysKeyDown](#onsyskeydown)||  
+|[CMFCRibbonBar::OnSysKeyUp](#onsyskeyup)||  
+|[CMFCRibbonBar::PopTooltip](#poptooltip)||  
+|[CMFCRibbonBar::PreTranslateMessage](#pretranslatemessage)|(Overrides `CBasePane::PreTranslateMessage`.)|  
+|[CMFCRibbonBar::RecalcLayout](#recalclayout)|(Overrides [CPane::RecalcLayout](../../mfc/reference/cpane-class.md#recalclayout).)|  
+|[CMFCRibbonBar::RemoveAllCategories](#removeallcategories)|Removes all the ribbon categories from the ribbon bar.|  
+|[CMFCRibbonBar::RemoveAllFromTabs](#removeallfromtabs)|Removes all ribbon elements from the tab area.|  
+|[CMFCRibbonBar::RemoveCategory](#removecategory)|Removes the ribbon category that is located at the specified index.|  
+|[CMFCRibbonBar::SaveToXMLBuffer](#savetoxmlbuffer)|Saves the Ribbon Bar to a buffer.|  
+|[CMFCRibbonBar::SaveToXMLFile](#savetoxmlfile)|Saves the Ribbon Bar to XML file.|  
+|[CMFCRibbonBar::SetActiveCategory](#setactivecategory)|Sets a specified ribbon category to active.|  
+|[CMFCRibbonBar::SetActiveMDIChild](#setactivemdichild)||  
+|[CMFCRibbonBar::SetElementKeys](#setelementkeys)|Sets the specified keytips for all ribbon elements that have the specified command ID.|  
+|[CMFCRibbonBar::SetApplicationButton](#setapplicationbutton)|Assigns an application ribbon button to the ribbon bar.|  
+|[CMFCRibbonBar::SetKeyboardNavigationLevel](#setkeyboardnavigationlevel)||  
+|[CMFCRibbonBar::SetMaximizeMode](#setmaximizemode)||  
+|[CMFCRibbonBar::SetQuickAccessCommands](#setquickaccesscommands)|Adds one or more ribbon elements to the Quick Access Toolbar.|  
+|[CMFCRibbonBar::SetQuickAccessDefaultState](#setquickaccessdefaultstate)|Specifies the default state for the Quick Access Toolbar.|  
+|[CMFCRibbonBar::SetQuickAccessToolbarOnTop](#setquickaccesstoolbarontop)|Positions the Quick Access Toolbar (QAT) above or below the ribbon bar.|  
+|[CMFCRibbonBar::SetTooltipFixedWidth](#settooltipfixedwidth)||  
+|[CMFCRibbonBar::SetWindows7Look](#setwindows7look)|Enable/disable ribbon Windows 7-style look (small rectangular application button)|  
+|[CMFCRibbonBar::ShowCategory](#showcategory)|Shows or hides the specified ribbon category.|  
+|[CMFCRibbonBar::ShowContextCategories](#showcontextcategories)|Shows or hides the context categories that have the specified ID.|  
+|[CMFCRibbonBar::ShowKeyTips](#showkeytips)||  
+|[CMFCRibbonBar::ToggleMimimizeState](#togglemimimizestate)|Toggles the ribbon bar between the minimized and maximized states..|  
+|[CMFCRibbonBar::TranslateChar](#translatechar)||  
   
 ## Remarks  
  Microsoft introduced the Office Fluent Ribbon when it simultaneously released Microsoft Office 2007. This ribbon bar is not just a new control. It represents a new user-interface paradigm. The ribbon is a pane that contains a set of tabs called categories. Each category is logically split into ribbon panels and each panel can contain various controls and command buttons.  
@@ -172,7 +172,7 @@ class CMFCRibbonBar : public CPane
 ## Requirements  
  **Header:** afxribbonbar.h  
   
-##  <a name="cmfcribbonbar__activatecontextcategory"></a>  CMFCRibbonBar::ActivateContextCategory  
+##  <a name="activatecontextcategory"></a>  CMFCRibbonBar::ActivateContextCategory  
  Activates a context category that is already visible.  
   
 ```  
@@ -186,7 +186,7 @@ BOOL ActivateContextCategory(UINT uiContextID);
 ### Return Value  
  `TRUE` if a context category with `uiContextID` is found and activated; otherwise `FALSE`.  
   
-##  <a name="cmfcribbonbar__addcategory"></a>  CMFCRibbonBar::AddCategory  
+##  <a name="addcategory"></a>  CMFCRibbonBar::AddCategory  
  Creates and initializes a new ribbon category for the ribbon bar.  
   
 ```  
@@ -233,9 +233,9 @@ CMFCRibbonCategory* AddCategory(
 ### Example  
  The following example demonstrates how to use the `AddCategory` method in the `CMFCRibbonBar` class.  
   
- [!code-cpp[NVC_MFC_RibbonApp#5](../../mfc/reference/codesnippet/CPP/cmfcribbonbar-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#5](../../mfc/reference/codesnippet/cpp/cmfcribbonbar-class_1.cpp)]  
   
-##  <a name="cmfcribbonbar__addcontextcategory"></a>  CMFCRibbonBar::AddContextCategory  
+##  <a name="addcontextcategory"></a>  CMFCRibbonBar::AddContextCategory  
  Creates and initializes a new context category for the ribbon bar.  
   
 ```  
@@ -305,7 +305,7 @@ CMFCRibbonCategory* AddContextCategory(
   
 -   AFX_CategoryColor_Violet  
   
-##  <a name="cmfcribbonbar__addmaincategory"></a>  CMFCRibbonBar::AddMainCategory  
+##  <a name="addmaincategory"></a>  CMFCRibbonBar::AddMainCategory  
  Creates a new main ribbon category for the ribbon bar.  
   
 ```  
@@ -344,9 +344,9 @@ CMFCRibbonMainPanel* AddMainCategory(
 ### Example  
  The following example demonstrates how to use the `AddMainCategory` method in the `CMFCRibbonBar` class.  
   
- [!code-cpp[NVC_MFC_RibbonApp#4](../../mfc/reference/codesnippet/CPP/cmfcribbonbar-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#4](../../mfc/reference/codesnippet/cpp/cmfcribbonbar-class_2.cpp)]  
   
-##  <a name="cmfcribbonbar__addprintpreviewcategory"></a>  CMFCRibbonBar::AddPrintPreviewCategory  
+##  <a name="addprintpreviewcategory"></a>  CMFCRibbonBar::AddPrintPreviewCategory  
  Creates a print preview category on the ribbon bar.  
   
 ```  
@@ -359,7 +359,7 @@ CMFCRibbonCategory* AddPrintPreviewCategory();
 ### Remarks  
  This method creates a ribbon category and the controls that it needs in order to provide a print preview.  
   
-##  <a name="cmfcribbonbar__addqatonlycategory"></a>  CMFCRibbonBar::AddQATOnlyCategory  
+##  <a name="addqatonlycategory"></a>  CMFCRibbonBar::AddQATOnlyCategory  
  Creates a quick access toolbar ribbon category.  
   
 ```  
@@ -386,7 +386,7 @@ CMFCRibbonCategory* AddQATOnlyCategory(
 ### Remarks  
  The quick access toolbar ribbon category is only used on the quick access toolbar customization dialog box.  
   
-##  <a name="cmfcribbonbar__addtotabs"></a>  CMFCRibbonBar::AddToTabs  
+##  <a name="addtotabs"></a>  CMFCRibbonBar::AddToTabs  
  Adds the specified ribbon element to the tabs row of the ribbon bar.  
   
 ```  
@@ -400,7 +400,7 @@ void AddToTabs(CMFCRibbonBaseElement* pElement);
 ### Remarks  
  The ribbon element is positioned before any system buttons.  
   
-##  <a name="cmfcribbonbar__cmfcribbonbar"></a>  CMFCRibbonBar::CMFCRibbonBar  
+##  <a name="cmfcribbonbar"></a>  CMFCRibbonBar::CMFCRibbonBar  
  Constructs and initializes a [CMFCRibbonBar](../../mfc/reference/cmfcribbonbar-class.md) object.  
   
 ```  
@@ -413,7 +413,7 @@ CMFCRibbonBar(BOOL bReplaceFrameCaption = TRUE);
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__create"></a>  CMFCRibbonBar::Create  
+##  <a name="create"></a>  CMFCRibbonBar::Create  
  Creates a window for the ribbon bar.  
   
 ```  
@@ -441,9 +441,9 @@ BOOL Create(
 ### Example  
  The following example demonstrates how to use the `Create` method of the `CMFCRibbonBar` class.  
   
- [!code-cpp[NVC_MFC_RibbonApp#1](../../mfc/reference/codesnippet/CPP/cmfcribbonbar-class_3.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#1](../../mfc/reference/codesnippet/cpp/cmfcribbonbar-class_3.cpp)]  
   
-##  <a name="cmfcribbonbar__createex"></a>  CMFCRibbonBar::CreateEx  
+##  <a name="createex"></a>  CMFCRibbonBar::CreateEx  
  Creates a window for the ribbon bar.  
   
 ```  
@@ -472,7 +472,7 @@ BOOL CreateEx(
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__deactivatekeyboardfocus"></a>  CMFCRibbonBar::DeactivateKeyboardFocus  
+##  <a name="deactivatekeyboardfocus"></a>  CMFCRibbonBar::DeactivateKeyboardFocus  
  Closes all keytip controls on the ribbon bar.  
   
 ```  
@@ -485,7 +485,7 @@ void DeactivateKeyboardFocus(BOOL bSetFocus = TRUE);
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__drawmenuimage"></a>  CMFCRibbonBar::DrawMenuImage  
+##  <a name="drawmenuimage"></a>  CMFCRibbonBar::DrawMenuImage  
  Draws the image for a menu button.  
   
 ```  
@@ -510,7 +510,7 @@ BOOL DrawMenuImage(
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__dwmcompositionchanged"></a>  CMFCRibbonBar::DWMCompositionChanged  
+##  <a name="dwmcompositionchanged"></a>  CMFCRibbonBar::DWMCompositionChanged  
  Adjusts the display of the ribbon bar when Desktop Window Manager (DWM) composition is enabled or disabled.  
   
 ```  
@@ -519,7 +519,7 @@ virtual void DWMCompositionChanged();
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__enablekeytips"></a>  CMFCRibbonBar::EnableKeyTips  
+##  <a name="enablekeytips"></a>  CMFCRibbonBar::EnableKeyTips  
  Enables or disables the keytip feature for the ribbon bar.  
   
 ```  
@@ -533,7 +533,7 @@ void EnableKeyTips(BOOL bEnable = TRUE);
 ### Remarks  
  When you enable this feature, key tips are displayed when the user presses the ALT or F10 button. When the user presses ALT key, key tips are displayed with a 200 millisecond delay. This delay allows for shortcuts to be executed so that the pressed ALT key does not interfere with other combinations that include the ALT key.  
   
-##  <a name="cmfcribbonbar__enableprintpreview"></a>  CMFCRibbonBar::EnablePrintPreview  
+##  <a name="enableprintpreview"></a>  CMFCRibbonBar::EnablePrintPreview  
  Enables or disables the **Print Preview** feature.  
   
 ```  
@@ -549,7 +549,7 @@ void EnablePrintPreview(BOOL bEnable = TRUE);
   
  By default the **Print Preview** feature is enabled.  
   
-##  <a name="cmfcribbonbar__enabletooltips"></a>  CMFCRibbonBar::EnableToolTips  
+##  <a name="enabletooltips"></a>  CMFCRibbonBar::EnableToolTips  
  Enables or disables tooltips and optional tooltip descriptions on the ribbon bar.  
   
 ```  
@@ -568,7 +568,7 @@ void EnableToolTips(
 ### Remarks  
  The `bEnable` parameter determines whether tooltips are displayed when the mouse hovers over a ribbon element. The `bEnableDescr` parameter determines whether additional descriptive text appears with the tooltip text.  
   
-##  <a name="cmfcribbonbar__findbydata"></a>  CMFCRibbonBar::FindByData  
+##  <a name="findbydata"></a>  CMFCRibbonBar::FindByData  
  Retrieves a pointer to a ribbon element if it has the specified data and visibility.  
   
 ```  
@@ -592,7 +592,7 @@ CMFCRibbonBaseElement* FindByData(
 ### Remarks  
  A ribbon element is any control that you can add to the ribbon, such as a ribbon button, or a ribbon category, or a ribbon slider.  
   
-##  <a name="cmfcribbonbar__findbyid"></a>  CMFCRibbonBar::FindByID  
+##  <a name="findbyid"></a>  CMFCRibbonBar::FindByID  
  Retrieves a pointer to the ribbon element that has the specified command ID and search values.  
   
 ```  
@@ -620,9 +620,9 @@ CMFCRibbonBaseElement* FindByID(
 ### Remarks  
  A ribbon element is any ribbon control that can be added to the ribbon, such as a ribbon button, or a ribbon category, or a ribbon slider.  
   
- In general, there can be more than one ribbon element that has the same command ID. If you want to obtain pointers to all ribbon elements that use a specified command ID, use the [CMFCRibbonBar::GetElementsByID](#cmfcribbonbar__getelementsbyid) method.  
+ In general, there can be more than one ribbon element that has the same command ID. If you want to obtain pointers to all ribbon elements that use a specified command ID, use the [CMFCRibbonBar::GetElementsByID](#getelementsbyid) method.  
   
-##  <a name="cmfcribbonbar__findcategoryindexbydata"></a>  CMFCRibbonBar::FindCategoryIndexByData  
+##  <a name="findcategoryindexbydata"></a>  CMFCRibbonBar::FindCategoryIndexByData  
  Retrieves the index of the ribbon category that contains the specified data.  
   
 ```  
@@ -638,7 +638,7 @@ int FindCategoryIndexByData(DWORD dwData) const;
 ### Return Value  
  The zero-based index of a ribbon category if the method was successful; otherwise -1.  
   
-##  <a name="cmfcribbonbar__forcerecalclayout"></a>  CMFCRibbonBar::ForceRecalcLayout  
+##  <a name="forcerecalclayout"></a>  CMFCRibbonBar::ForceRecalcLayout  
  Adjusts the layout of all items in the ribbon bar and parent window and redraws the whole window.  
   
 ```  
@@ -647,7 +647,7 @@ void ForceRecalcLayout();
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__getactivecategory"></a>  CMFCRibbonBar::GetActiveCategory  
+##  <a name="getactivecategory"></a>  CMFCRibbonBar::GetActiveCategory  
  Retrieves a pointer to the active ribbon category.  
   
 ```  
@@ -664,7 +664,7 @@ CMFCRibbonCategory* GetActiveCategory() const;
   
  The main category is displayed when the user presses the application button and it cannot be the active category.  
   
-##  <a name="cmfcribbonbar__getapplicationbutton"></a>  CMFCRibbonBar::GetApplicationButton  
+##  <a name="getapplicationbutton"></a>  CMFCRibbonBar::GetApplicationButton  
  Retrieves a pointer to the application button.  
   
 ```  
@@ -676,7 +676,7 @@ CMFCRibbonApplicationButton* GetApplicationButton() const;
 ### Return Value  
  A pointer to the application button; or `NULL` if the button has not been set.  
   
-##  <a name="cmfcribbonbar__getcaptionheight"></a>  CMFCRibbonBar::GetCaptionHeight  
+##  <a name="getcaptionheight"></a>  CMFCRibbonBar::GetCaptionHeight  
  Retrieves the height of the caption area for the ribbon bar.  
   
 ```  
@@ -690,7 +690,7 @@ int GetCaptionHeight() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__getcategory"></a>  CMFCRibbonBar::GetCategory  
+##  <a name="getcategory"></a>  CMFCRibbonBar::GetCategory  
  Retrieves a pointer to the ribbon category at the specified index.  
   
 ```  
@@ -706,7 +706,7 @@ CMFCRibbonCategory* GetCategory(int nIndex) const;
 ### Return Value  
  A pointer to the ribbon category at the specified index; otherwise, `NULL` if `nIndex` was out of range.  
   
-##  <a name="cmfcribbonbar__getcategorycount"></a>  CMFCRibbonBar::GetCategoryCount  
+##  <a name="getcategorycount"></a>  CMFCRibbonBar::GetCategoryCount  
  Retrieves the number of ribbon categories in the ribbon bar.  
   
 ```  
@@ -718,7 +718,7 @@ int GetCategoryCount() const;
 ### Return Value  
  The number of the ribbon categories in the ribbon bar.  
   
-##  <a name="cmfcribbonbar__getcategoryheight"></a>  CMFCRibbonBar::GetCategoryHeight  
+##  <a name="getcategoryheight"></a>  CMFCRibbonBar::GetCategoryHeight  
  Retrieves the height of the category.  
   
 ```  
@@ -733,7 +733,7 @@ int GetCategoryHeight() const;
 ### Remarks  
  The category height includes the height of the category tab.  
   
-##  <a name="cmfcribbonbar__getcategoryindex"></a>  CMFCRibbonBar::GetCategoryIndex  
+##  <a name="getcategoryindex"></a>  CMFCRibbonBar::GetCategoryIndex  
  Retrieves the index of the specified ribbon category.  
   
 ```  
@@ -749,7 +749,7 @@ int GetCategoryIndex(CMFCRibbonCategory* pCategory) const;
 ### Return Value  
  The zero-based index of a ribbon category specified by `pCategory`; or -1 if the ribbon category is not found.  
   
-##  <a name="cmfcribbonbar__getcontextname"></a>  CMFCRibbonBar::GetContextName  
+##  <a name="getcontextname"></a>  CMFCRibbonBar::GetContextName  
  Retrieves the name of the context category caption specified by a context ID.  
   
 ```  
@@ -770,7 +770,7 @@ BOOL GetContextName(
 ### Return Value  
  `TRUE` if the method was successful; otherwise, `FALSE` if `uiContextID` was zero or the context category caption was not found.  
   
-##  <a name="cmfcribbonbar__getdroppeddown"></a>  CMFCRibbonBar::GetDroppedDown  
+##  <a name="getdroppeddown"></a>  CMFCRibbonBar::GetDroppedDown  
  Retrieves the ribbon element that is currently dropped down.  
   
 ```  
@@ -782,7 +782,7 @@ virtual CMFCRibbonBaseElement* GetDroppedDown();
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__getelementsbyid"></a>  CMFCRibbonBar::GetElementsByID  
+##  <a name="getelementsbyid"></a>  CMFCRibbonBar::GetElementsByID  
  Retrieves an array of pointers to all ribbon elements that have a specific command ID.  
   
 ```  
@@ -801,7 +801,7 @@ void GetElementsByID(
 ### Remarks  
  Multiple ribbon elements can have the same command ID because some ribbon elements can be copied to the quick access toolbar.  
   
-##  <a name="cmfcribbonbar__gethideflags"></a>  CMFCRibbonBar::GetHideFlags  
+##  <a name="gethideflags"></a>  CMFCRibbonBar::GetHideFlags  
  Retrieves the flags that indicate how much of the ribbon bar is visible.  
   
 ```  
@@ -822,7 +822,7 @@ DWORD GetHideFlags() const;
  `AFX_RIBBONBAR_HIDE_ALL`  
  The width of the ribbon bar is less than the minimum width and is completely hidden.  
   
-##  <a name="cmfcribbonbar__getitemidslist"></a>  CMFCRibbonBar::GetItemIDsList  
+##  <a name="getitemidslist"></a>  CMFCRibbonBar::GetItemIDsList  
  Retrieves the command IDs for the specified collection of ribbon elements on the ribbon bar.  
   
 ```  
@@ -841,7 +841,7 @@ void GetItemIDsList(CList<UINT, UINT>& lstItems,
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__getkeyboardnavigationlevel"></a>  CMFCRibbonBar::GetKeyboardNavigationLevel  
+##  <a name="getkeyboardnavigationlevel"></a>  CMFCRibbonBar::GetKeyboardNavigationLevel  
  Retrieves the current navigation level as the user presses the keytips that are contained on the ribbon bar.  
   
 ```  
@@ -864,7 +864,7 @@ int GetKeyboardNavigationLevel() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__getkeyboardnavlevelcurrent"></a>  CMFCRibbonBar::GetKeyboardNavLevelCurrent  
+##  <a name="getkeyboardnavlevelcurrent"></a>  CMFCRibbonBar::GetKeyboardNavLevelCurrent  
  Retrieves the current keyboard navigation object on the ribbon bar.  
   
 ```  
@@ -879,7 +879,7 @@ CObject* GetKeyboardNavLevelCurrent() const;
 ### Remarks  
  The object that is currently displaying keytips is the current keyboard navigation object.  
   
-##  <a name="cmfcribbonbar__getkeyboardnavlevelparent"></a>  CMFCRibbonBar::GetKeyboardNavLevelParent  
+##  <a name="getkeyboardnavlevelparent"></a>  CMFCRibbonBar::GetKeyboardNavLevelParent  
  Retrieves the parent keyboard navigation object on the ribbon bar.  
   
 ```  
@@ -894,7 +894,7 @@ CObject* GetKeyboardNavLevelParent() const;
 ### Remarks  
  When the user presses a keytip on the ribbon bar, the current keyboard navigation object becomes the parent keyboard navigation object.  
   
-##  <a name="cmfcribbonbar__getmaincategory"></a>  CMFCRibbonBar::GetMainCategory  
+##  <a name="getmaincategory"></a>  CMFCRibbonBar::GetMainCategory  
  Retrieves a pointer to the main ribbon category.  
   
 ```  
@@ -909,7 +909,7 @@ CMFCRibbonCategory* GetMainCategory() const;
 ### Remarks  
  The main ribbon category contains the main ribbon panel.  
   
-##  <a name="cmfcribbonbar__getqatcommandslocation"></a>  CMFCRibbonBar::GetQATCommandsLocation  
+##  <a name="getqatcommandslocation"></a>  CMFCRibbonBar::GetQATCommandsLocation  
  Retrieves the display rectangle for the commands section of the quick access toolbar.  
   
 ```  
@@ -924,7 +924,7 @@ CRect GetQATCommandsLocation() const;
 ### Remarks  
  The commands section of the display rectangle does not include the customization button.  
   
-##  <a name="cmfcribbonbar__getqatdroppeddown"></a>  CMFCRibbonBar::GetQATDroppedDown  
+##  <a name="getqatdroppeddown"></a>  CMFCRibbonBar::GetQATDroppedDown  
  Retrieves a pointer to the ribbon element on the quick access toolbar that has its pop-up menu dropped down.  
   
 ```  
@@ -936,7 +936,7 @@ CMFCRibbonBaseElement* GetQATDroppedDown();
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__getquickaccesscommands"></a>  CMFCRibbonBar::GetQuickAccessCommands  
+##  <a name="getquickaccesscommands"></a>  CMFCRibbonBar::GetQuickAccessCommands  
  Retrieves a list of command IDs for the ribbon elements on the quick access toolbar.  
   
 ```  
@@ -951,7 +951,7 @@ void GetQuickAccessCommands(
 ### Remarks  
  The list does not contain ribbon elements that are control separators.  
   
-##  <a name="cmfcribbonbar__getquickaccesstoolbarlocation"></a>  CMFCRibbonBar::GetQuickAccessToolbarLocation  
+##  <a name="getquickaccesstoolbarlocation"></a>  CMFCRibbonBar::GetQuickAccessToolbarLocation  
  Retrieves the display rectangle for the quick access toolbar.  
   
 ```  
@@ -965,7 +965,7 @@ CRect GetQuickAccessToolbarLocation() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__gettabtrancateratio"></a>  CMFCRibbonBar::GetTabTrancateRatio  
+##  <a name="gettabtrancateratio"></a>  CMFCRibbonBar::GetTabTrancateRatio  
  Retrieves the percent size reduction in the display width of the category tabs.  
   
 ```  
@@ -980,7 +980,7 @@ int GetTabTrancateRatio() const;
 ### Remarks  
  Category tabs are reduced in width when there is not enough width on the ribbon bar.  
   
-##  <a name="cmfcribbonbar__gettooltipfixedwidthlargeimage"></a>  CMFCRibbonBar::GetTooltipFixedWidthLargeImage  
+##  <a name="gettooltipfixedwidthlargeimage"></a>  CMFCRibbonBar::GetTooltipFixedWidthLargeImage  
  Retrieves the large size of tooltip width for the ribbon bar.  
   
 ```  
@@ -995,7 +995,7 @@ int GetTooltipFixedWidthLargeImage() const;
 ### Remarks  
  If the large size of tooltip width is 0, the width varies.  
   
-##  <a name="cmfcribbonbar__gettooltipfixedwidthregular"></a>  CMFCRibbonBar::GetTooltipFixedWidthRegular  
+##  <a name="gettooltipfixedwidthregular"></a>  CMFCRibbonBar::GetTooltipFixedWidthRegular  
  Retrieves the regular size of tooltip width for the ribbon bar.  
   
 ```  
@@ -1010,7 +1010,7 @@ int GetTooltipFixedWidthRegular() const;
 ### Remarks  
  If the regular size of tooltip width is 0, the width varies.  
   
-##  <a name="cmfcribbonbar__getvisiblecategorycount"></a>  CMFCRibbonBar::GetVisibleCategoryCount  
+##  <a name="getvisiblecategorycount"></a>  CMFCRibbonBar::GetVisibleCategoryCount  
  Retrieves the number of visible categories on the ribbon bar.  
   
 ```  
@@ -1024,7 +1024,7 @@ int GetVisibleCategoryCount() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__hideallcontextcategories"></a>  CMFCRibbonBar::HideAllContextCategories  
+##  <a name="hideallcontextcategories"></a>  CMFCRibbonBar::HideAllContextCategories  
  Hides all the context categories on the ribbon bar.  
   
 ```  
@@ -1037,7 +1037,7 @@ BOOL HideAllContextCategories();
 ### Remarks  
  If a context category is active, the active category is reset to the first visible category in the category list.  
   
-##  <a name="cmfcribbonbar__hidekeytips"></a>  CMFCRibbonBar::HideKeyTips  
+##  <a name="hidekeytips"></a>  CMFCRibbonBar::HideKeyTips  
  Hides all keytips on the ribbon bar.  
   
 ```  
@@ -1046,7 +1046,7 @@ void HideKeyTips();
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__hittest"></a>  CMFCRibbonBar::HitTest  
+##  <a name="hittest"></a>  CMFCRibbonBar::HitTest  
  Retrieves a pointer to the ribbon element specified by the location of the point.  
   
 ```  
@@ -1072,7 +1072,7 @@ virtual CMFCRibbonBaseElement* HitTest(
 ### Remarks  
  The caption of the ribbon panel with the point located in it is not tested unless the `bCheckActiveCategory` parameter is `TRUE`.  
   
-##  <a name="cmfcribbonbar__iskeytipenabled"></a>  CMFCRibbonBar::IsKeyTipEnabled  
+##  <a name="iskeytipenabled"></a>  CMFCRibbonBar::IsKeyTipEnabled  
  Indicates whether the keytips feature is enabled.  
   
 ```  
@@ -1084,7 +1084,7 @@ BOOL IsKeyTipEnabled() const;
 ### Return Value  
  `TRUE` if the keytips feature is enabled; otherwise `FALSE`.  
   
-##  <a name="cmfcribbonbar__ismainribbonbar"></a>  CMFCRibbonBar::IsMainRibbonBar  
+##  <a name="ismainribbonbar"></a>  CMFCRibbonBar::IsMainRibbonBar  
  Indicates whether the ribbon bar is the primary ribbon bar.  
   
 ```  
@@ -1099,7 +1099,7 @@ virtual BOOL IsMainRibbonBar() const;
 ### Remarks  
  By default this method always returns `TRUE`. Override this method to indicate whether the ribbon bar is the primary ribbon bar.  
   
-##  <a name="cmfcribbonbar__isprintpreviewenabled"></a>  CMFCRibbonBar::IsPrintPreviewEnabled  
+##  <a name="isprintpreviewenabled"></a>  CMFCRibbonBar::IsPrintPreviewEnabled  
  Indicates whether the **Print Preview** feature is enabled.  
   
 ```  
@@ -1111,7 +1111,7 @@ BOOL IsPrintPreviewEnabled() const;
 ### Return Value  
  `TRUE` if the **Print Preview** feature is enabled; otherwise `FALSE`.  
   
-##  <a name="cmfcribbonbar__isqatempty"></a>  CMFCRibbonBar::IsQATEmpty  
+##  <a name="isqatempty"></a>  CMFCRibbonBar::IsQATEmpty  
  Indicates whether the quick access toolbar contains command buttons.  
   
 ```  
@@ -1125,7 +1125,7 @@ BOOL IsQATEmpty() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__isquickaccesstoolbarontop"></a>  CMFCRibbonBar::IsQuickAccessToolbarOnTop  
+##  <a name="isquickaccesstoolbarontop"></a>  CMFCRibbonBar::IsQuickAccessToolbarOnTop  
  Indicates whether the quick access toolbar is located over or under the ribbon bar.  
   
 ```  
@@ -1137,7 +1137,7 @@ BOOL IsQuickAccessToolbarOnTop() const;
 ### Return Value  
  `TRUE` if the quick access toolbar is located over the ribbon bar; `FALSE` if the quick access toolbar is located under the ribbon bar.  
   
-##  <a name="cmfcribbonbar__isreplaceframecaption"></a>  CMFCRibbonBar::IsReplaceFrameCaption  
+##  <a name="isreplaceframecaption"></a>  CMFCRibbonBar::IsReplaceFrameCaption  
  Indicates whether the ribbon bar replaces or is under the caption of the main frame window.  
   
 ```  
@@ -1149,7 +1149,7 @@ BOOL IsReplaceFrameCaption() const;
 ### Return Value  
  `TRUE` if the ribbon bar replaces the caption of the main frame window; `FALSE` if ribbon bar is under the caption of the main frame window.  
   
-##  <a name="cmfcribbonbar__isshowgroupborder"></a>  CMFCRibbonBar::IsShowGroupBorder  
+##  <a name="isshowgroupborder"></a>  CMFCRibbonBar::IsShowGroupBorder  
  Indicates whether button groups located on the ribbon bar display a group border.  
   
 ```  
@@ -1168,7 +1168,7 @@ virtual BOOL IsShowGroupBorder(CMFCRibbonButtonsGroup* pGroup) const;
 ### Remarks  
  By default this method always returns `FALSE`. Override this method to indicate whether button groups located on the ribbon bar display a group border.  
   
-##  <a name="cmfcribbonbar__istooltipdescrenabled"></a>  CMFCRibbonBar::IsToolTipDescrEnabled  
+##  <a name="istooltipdescrenabled"></a>  CMFCRibbonBar::IsToolTipDescrEnabled  
  Indicates whether tooltip descriptions are enabled.  
   
 ```  
@@ -1183,7 +1183,7 @@ BOOL IsToolTipDescrEnabled() const;
 ### Remarks  
  Tooltip descriptions are additional descriptive text displayed with the tooltip text.  
   
-##  <a name="cmfcribbonbar__istooltipenabled"></a>  CMFCRibbonBar::IsToolTipEnabled  
+##  <a name="istooltipenabled"></a>  CMFCRibbonBar::IsToolTipEnabled  
  Indicates whether tooltips are enabled or disabled for the ribbon bar.  
   
 ```  
@@ -1195,7 +1195,7 @@ BOOL IsToolTipEnabled() const;
 ### Return Value  
  `TRUE` if tooltips are enabled; `FALSE` if tooltips are disabled.  
   
-##  <a name="cmfcribbonbar__istransparentcaption"></a>  CMFCRibbonBar::IsTransparentCaption  
+##  <a name="istransparentcaption"></a>  CMFCRibbonBar::IsTransparentCaption  
  Indicates whether the display is set for Windows Aero color scheme.  
   
 ```  
@@ -1209,7 +1209,7 @@ BOOL IsTransparentCaption() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__onclickbutton"></a>  CMFCRibbonBar::OnClickButton  
+##  <a name="onclickbutton"></a>  CMFCRibbonBar::OnClickButton  
  This method is retained for backward compatibility with existing applications and should not be used for new development.  
   
 ```  
@@ -1227,7 +1227,7 @@ virtual void OnClickButton(
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__oneditcontextmenu"></a>  CMFCRibbonBar::OnEditContextMenu  
+##  <a name="oneditcontextmenu"></a>  CMFCRibbonBar::OnEditContextMenu  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -1242,7 +1242,7 @@ virtual void OnEditContextMenu(
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__onrtlchanged"></a>  CMFCRibbonBar::OnRTLChanged  
+##  <a name="onrtlchanged"></a>  CMFCRibbonBar::OnRTLChanged  
  Called by the framework when the layout changes direction.  
   
 ```  
@@ -1256,7 +1256,7 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 ### Remarks  
  This method adjusts the layout of all controls on the ribbon bar for the new layout direction.  
   
-##  <a name="cmfcribbonbar__onsetaccdata"></a>  CMFCRibbonBar::OnSetAccData  
+##  <a name="onsetaccdata"></a>  CMFCRibbonBar::OnSetAccData  
  This method is internal to the Framework and is not intended to be called from user code.  
   
 ```  
@@ -1272,7 +1272,7 @@ BOOL OnSetAccData(long lVal);
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__onshowribboncontextmenu"></a>  CMFCRibbonBar::OnShowRibbonContextMenu  
+##  <a name="onshowribboncontextmenu"></a>  CMFCRibbonBar::OnShowRibbonContextMenu  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -1293,7 +1293,7 @@ virtual BOOL OnShowRibbonContextMenu(
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__onshowribbonqatmenu"></a>  CMFCRibbonBar::OnShowRibbonQATMenu  
+##  <a name="onshowribbonqatmenu"></a>  CMFCRibbonBar::OnShowRibbonQATMenu  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -1314,7 +1314,7 @@ virtual BOOL OnShowRibbonQATMenu(
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__onsyskeydown"></a>  CMFCRibbonBar::OnSysKeyDown  
+##  <a name="onsyskeydown"></a>  CMFCRibbonBar::OnSysKeyDown  
  Called by the framework when the user presses the F10 key or holds down the ALT key and then presses another key.  
   
 ```  
@@ -1339,7 +1339,7 @@ BOOL OnSysKeyDown(
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__onsyskeyup"></a>  CMFCRibbonBar::OnSysKeyUp  
+##  <a name="onsyskeyup"></a>  CMFCRibbonBar::OnSysKeyUp  
  Called by the framework when the user releases the F10 key, the ALT key, or a key that was pressed when the ALT key was held down.  
   
 ```  
@@ -1364,7 +1364,7 @@ BOOL OnSysKeyUp(
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__poptooltip"></a>  CMFCRibbonBar::PopTooltip  
+##  <a name="poptooltip"></a>  CMFCRibbonBar::PopTooltip  
  Removes a tooltip from view.  
   
 ```  
@@ -1373,7 +1373,7 @@ void PopTooltip();
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__pretranslatemessage"></a>  CMFCRibbonBar::PreTranslateMessage  
+##  <a name="pretranslatemessage"></a>  CMFCRibbonBar::PreTranslateMessage  
  Determines if the specified message is processed by the ribbon bar.  
   
 ```  
@@ -1389,7 +1389,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__recalclayout"></a>  CMFCRibbonBar::RecalcLayout  
+##  <a name="recalclayout"></a>  CMFCRibbonBar::RecalcLayout  
  Adjusts the layout of all controls on the ribbon bar.  
   
 ```  
@@ -1399,7 +1399,7 @@ virtual void RecalcLayout();
 ### Remarks  
  After layout adjustment, the display of the ribbon bar is updated.  
   
-##  <a name="cmfcribbonbar__removeallcategories"></a>  CMFCRibbonBar::RemoveAllCategories  
+##  <a name="removeallcategories"></a>  CMFCRibbonBar::RemoveAllCategories  
  Deletes all ribbon categories from the ribbon bar.  
   
 ```  
@@ -1409,7 +1409,7 @@ void RemoveAllCategories();
 ### Remarks  
  This method deletes all ribbon categories from memory and from the category list.  
   
-##  <a name="cmfcribbonbar__removeallfromtabs"></a>  CMFCRibbonBar::RemoveAllFromTabs  
+##  <a name="removeallfromtabs"></a>  CMFCRibbonBar::RemoveAllFromTabs  
  Removes all ribbon elements from the tab area.  
   
 ```  
@@ -1417,9 +1417,9 @@ void RemoveAllFromTabs();
 ```  
   
 ### Remarks  
- Use this function if you want to remove all the elements that you added to the tab area by using [CMFCRibbonBar::AddToTabs](#cmfcribbonbar__addtotabs) method.  
+ Use this function if you want to remove all the elements that you added to the tab area by using [CMFCRibbonBar::AddToTabs](#addtotabs) method.  
   
-##  <a name="cmfcribbonbar__removecategory"></a>  CMFCRibbonBar::RemoveCategory  
+##  <a name="removecategory"></a>  CMFCRibbonBar::RemoveCategory  
  Deletes the specified ribbon category from the ribbon bar.  
   
 ```  
@@ -1436,7 +1436,7 @@ BOOL RemoveCategory(int nIndex);
 ### Remarks  
  The specified ribbon category is deleted from memory and from the category list.  
   
-##  <a name="cmfcribbonbar__setactivecategory"></a>  CMFCRibbonBar::SetActiveCategory  
+##  <a name="setactivecategory"></a>  CMFCRibbonBar::SetActiveCategory  
  Sets the specified ribbon category as the active category.  
   
 ```  
@@ -1460,7 +1460,7 @@ BOOL SetActiveCategory(
   
  If the category specified by `pCategory` is not displayed, it cannot be set as the active category.  
   
-##  <a name="cmfcribbonbar__setactivemdichild"></a>  CMFCRibbonBar::SetActiveMDIChild  
+##  <a name="setactivemdichild"></a>  CMFCRibbonBar::SetActiveMDIChild  
  Associates the system buttons on the ribbon bar that belong to a multiple-document interface (MDI) child window to the specified MDI child window.  
   
 ```  
@@ -1473,7 +1473,7 @@ void SetActiveMDIChild(CWnd* pWnd);
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__setapplicationbutton"></a>  CMFCRibbonBar::SetApplicationButton  
+##  <a name="setapplicationbutton"></a>  CMFCRibbonBar::SetApplicationButton  
  Assigns an application ribbon button to the ribbon bar.  
   
 ```  
@@ -1495,9 +1495,9 @@ void SetApplicationButton(
 ### Example  
  The following example demonstrates how to use the `SetApplicationButton` method in the `CMFCRibbonBar` class.  
   
- [!code-cpp[NVC_MFC_RibbonApp#3](../../mfc/reference/codesnippet/CPP/cmfcribbonbar-class_4.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#3](../../mfc/reference/codesnippet/cpp/cmfcribbonbar-class_4.cpp)]  
   
-##  <a name="cmfcribbonbar__setelementkeys"></a>  CMFCRibbonBar::SetElementKeys  
+##  <a name="setelementkeys"></a>  CMFCRibbonBar::SetElementKeys  
  Sets the keytips for all ribbon elements that have the specified command ID.  
   
 ```  
@@ -1523,7 +1523,7 @@ BOOL SetElementKeys(
 ### Remarks  
  The optional menu keytip is for ribbon elements with a split button that opens a popup menu.  
   
-##  <a name="cmfcribbonbar__setkeyboardnavigationlevel"></a>  CMFCRibbonBar::SetKeyboardNavigationLevel  
+##  <a name="setkeyboardnavigationlevel"></a>  CMFCRibbonBar::SetKeyboardNavigationLevel  
  Sets the keyboard navigation level as the user presses the keytips that are contained on the ribbon bar.  
   
 ```  
@@ -1542,7 +1542,7 @@ void SetKeyboardNavigationLevel(
 ### Remarks  
  Keyboard navigation of the ribbon bar starts when the user presses the ALT or F10 key. The user selects the next navigation level by pressing a keytip on the ribbon bar. The user can return to the previous navigation level by pressing the escape key.  
   
-##  <a name="cmfcribbonbar__setmaximizemode"></a>  CMFCRibbonBar::SetMaximizeMode  
+##  <a name="setmaximizemode"></a>  CMFCRibbonBar::SetMaximizeMode  
  Adjusts the ribbon bar when the window size of a multiple-document interface (MDI) child window enters or leaves the maximized state.  
   
 ```  
@@ -1561,7 +1561,7 @@ void SetMaximizeMode(
 ### Remarks  
  The ribbon bar displays system buttons for an MDI child window in the tab row when an MDI child window is maximized.  
   
-##  <a name="cmfcribbonbar__setquickaccesscommands"></a>  CMFCRibbonBar::SetQuickAccessCommands  
+##  <a name="setquickaccesscommands"></a>  CMFCRibbonBar::SetQuickAccessCommands  
  Adds one or more ribbon elements to the Quick Access Toolbar.  
   
 ```  
@@ -1580,9 +1580,9 @@ void SetQuickAccessCommands(
 ### Example  
  The following example demonstrates how to use the `SetQuickAccessCommands` method in the `CMFCRibbonBar` class.  
   
- [!code-cpp[NVC_MFC_RibbonApp#8](../../mfc/reference/codesnippet/CPP/cmfcribbonbar-class_5.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#8](../../mfc/reference/codesnippet/cpp/cmfcribbonbar-class_5.cpp)]  
   
-##  <a name="cmfcribbonbar__setquickaccessdefaultstate"></a>  CMFCRibbonBar::SetQuickAccessDefaultState  
+##  <a name="setquickaccessdefaultstate"></a>  CMFCRibbonBar::SetQuickAccessDefaultState  
  Sets the quick access toolbar to the default state.  
   
 ```  
@@ -1599,9 +1599,9 @@ void SetQuickAccessDefaultState(const CMFCRibbonQuickAccessToolBarDefaultState& 
 ### Example  
  The following example demonstrates how to use the `SetQuickAccessDefaultState` method in the `CMFCRibbonBar` class.  
   
- [!code-cpp[NVC_MFC_RibbonApp#9](../../mfc/reference/codesnippet/CPP/cmfcribbonbar-class_6.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#9](../../mfc/reference/codesnippet/cpp/cmfcribbonbar-class_6.cpp)]  
   
-##  <a name="cmfcribbonbar__setquickaccesstoolbarontop"></a>  CMFCRibbonBar::SetQuickAccessToolbarOnTop  
+##  <a name="setquickaccesstoolbarontop"></a>  CMFCRibbonBar::SetQuickAccessToolbarOnTop  
  Positions the quick access toolbar above or below the ribbon bar.  
   
 ```  
@@ -1612,7 +1612,7 @@ void SetQuickAccessToolbarOnTop(BOOL bOnTop);
  [in] `bOnTop`  
  `TRUE` to position the quick access toolbar above the ribbon bar; `FALSE` to position the quick access toolbar below the ribbon bar.  
   
-##  <a name="cmfcribbonbar__settooltipfixedwidth"></a>  CMFCRibbonBar::SetTooltipFixedWidth  
+##  <a name="settooltipfixedwidth"></a>  CMFCRibbonBar::SetTooltipFixedWidth  
  Sets the regular and large sizes of tooltip fixed widths for the ribbon bar.  
   
 ```  
@@ -1631,7 +1631,7 @@ void SetTooltipFixedWidth(
 ### Remarks  
  Setting a parameter to 0 causes the corresponding width to vary.  
   
-##  <a name="cmfcribbonbar__showcategory"></a>  CMFCRibbonBar::ShowCategory  
+##  <a name="showcategory"></a>  CMFCRibbonBar::ShowCategory  
  Shows or hides the specified ribbon category.  
   
 ```  
@@ -1647,7 +1647,7 @@ void ShowCategory(
  [in] `bShow`  
  If `TRUE`, show the ribbon category; otherwise, hide the ribbon category.  
   
-##  <a name="cmfcribbonbar__showcontextcategories"></a>  CMFCRibbonBar::ShowContextCategories  
+##  <a name="showcontextcategories"></a>  CMFCRibbonBar::ShowContextCategories  
  Shows or hides the context categories that have the specified ID.  
   
 ```  
@@ -1663,7 +1663,7 @@ void ShowContextCategories(
  [in] `bShow`  
  If `TRUE`, show the categories that have the specified ID; otherwise, hide the categories that have the specified ID.  
   
-##  <a name="cmfcribbonbar__showkeytips"></a>  CMFCRibbonBar::ShowKeyTips  
+##  <a name="showkeytips"></a>  CMFCRibbonBar::ShowKeyTips  
  Shows the keytips for each ribbon element on the ribbon bar.  
   
 ```  
@@ -1672,7 +1672,7 @@ void ShowKeyTips();
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__togglemimimizestate"></a>  CMFCRibbonBar::ToggleMimimizeState  
+##  <a name="togglemimimizestate"></a>  CMFCRibbonBar::ToggleMimimizeState  
  Toggles the ribbon bar between the minimized and maximized states.  
   
 ```  
@@ -1684,7 +1684,7 @@ void ToggleMimimizeState();
   
  In the minimized state, the ribbon control is hidden and only the tabs are displayed. When the user clicks a tab, the ribbon control is displayed as a popup window. The window closes when the user clicks away or executes a command.  
   
-##  <a name="cmfcribbonbar__translatechar"></a>  CMFCRibbonBar::TranslateChar  
+##  <a name="translatechar"></a>  CMFCRibbonBar::TranslateChar  
  Determines whether the specified keystroke character code is processed by the ribbon bar.  
   
 ```  
@@ -1701,7 +1701,7 @@ virtual BOOL TranslateChar(UINT nChar);
 ### Remarks  
  The keytips feature enables users to navigate the ribbon bar by using the keyboard.  
   
-##  <a name="cmfcribbonbar__getfocused"></a>  CMFCRibbonBar::GetFocused  
+##  <a name="getfocused"></a>  CMFCRibbonBar::GetFocused  
  Returns a focused element.  
   
 ```  
@@ -1713,7 +1713,7 @@ virtual CMFCRibbonBaseElement* GetFocused();
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__iswindows7look"></a>  CMFCRibbonBar::IsWindows7Look  
+##  <a name="iswindows7look"></a>  CMFCRibbonBar::IsWindows7Look  
  Indicates whether the ribbon has Windows 7 look (small rectangular application button).  
   
 ```  
@@ -1727,7 +1727,7 @@ BOOL IsWindows7Look() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__loadfromresource"></a>  CMFCRibbonBar::LoadFromResource  
+##  <a name="loadfromresource"></a>  CMFCRibbonBar::LoadFromResource  
  Overloaded. Loads a Ribbon Bar from application resources.  
   
 ```  
@@ -1761,7 +1761,7 @@ virtual BOOL LoadFromResource(
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__savetoxmlbuffer"></a>  CMFCRibbonBar::SaveToXMLBuffer  
+##  <a name="savetoxmlbuffer"></a>  CMFCRibbonBar::SaveToXMLBuffer  
  Saves the Ribbon Bar to a buffer.  
   
 ```  
@@ -1779,7 +1779,7 @@ UINT SaveToXMLBuffer(LPBYTE* ppBuffer) const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__savetoxmlfile"></a>  CMFCRibbonBar::SaveToXMLFile  
+##  <a name="savetoxmlfile"></a>  CMFCRibbonBar::SaveToXMLFile  
  Saves the Ribbon Bar to an XML file.  
   
 ```  
@@ -1797,7 +1797,7 @@ BOOL SaveToXMLFile(LPCTSTR lpszFilePath) const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonbar__setwindows7look"></a>  CMFCRibbonBar::SetWindows7Look  
+##  <a name="setwindows7look"></a>  CMFCRibbonBar::SetWindows7Look  
  Enables or disables Windows 7 look (small rectangular application button) for the Ribbon.  
   
 ```  

@@ -75,4 +75,4 @@ Changes the default `char` type from `signed char` to `unsigned char`, and the `
 ## See Also  
  [Compiler Options](../../build/reference/compiler-options.md)   
  [Setting Compiler Options](../../build/reference/setting-compiler-options.md)   
- [How to: Open Project Property Pages](../../misc/how-to-open-project-property-pages.md)
+ [Working with Project Properties](../../ide/working-with-project-properties.md)

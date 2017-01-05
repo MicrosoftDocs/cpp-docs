@@ -51,19 +51,19 @@ class CHotKeyCtrl : public CWnd
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHotKeyCtrl::CHotKeyCtrl](#chotkeyctrl__chotkeyctrl)|Constructs a `CHotKeyCtrl` object.|  
+|[CHotKeyCtrl::CHotKeyCtrl](#chotkeyctrl)|Constructs a `CHotKeyCtrl` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHotKeyCtrl::Create](#chotkeyctrl__create)|Creates a hot key control and attaches it to a `CHotKeyCtrl` object.|  
-|[CHotKeyCtrl::CreateEx](#chotkeyctrl__createex)|Creates a hot key control with the specified Windows extended styles and attaches it to a `CHotKeyCtrl` object.|  
-|[CHotKeyCtrl::GetHotKey](#chotkeyctrl__gethotkey)|Retrieves the virtual key code and modifier flags of a hot key from a hot key control.|  
-|[CHotKeyCtrl::GetHotKeyName](#chotkeyctrl__gethotkeyname)|Retrieves the key name, in the local character set, assigned to a hot key.|  
-|[CHotKeyCtrl::GetKeyName](#chotkeyctrl__getkeyname)|Retrieves the key name, in the local character set, assigned to the specified virtual key code.|  
-|[CHotKeyCtrl::SetHotKey](#chotkeyctrl__sethotkey)|Sets the hot key combination for a hot key control.|  
-|[CHotKeyCtrl::SetRules](#chotkeyctrl__setrules)|Defines the invalid combinations and the default modifier combination for a hot key control.|  
+|[CHotKeyCtrl::Create](#create)|Creates a hot key control and attaches it to a `CHotKeyCtrl` object.|  
+|[CHotKeyCtrl::CreateEx](#createex)|Creates a hot key control with the specified Windows extended styles and attaches it to a `CHotKeyCtrl` object.|  
+|[CHotKeyCtrl::GetHotKey](#gethotkey)|Retrieves the virtual key code and modifier flags of a hot key from a hot key control.|  
+|[CHotKeyCtrl::GetHotKeyName](#gethotkeyname)|Retrieves the key name, in the local character set, assigned to a hot key.|  
+|[CHotKeyCtrl::GetKeyName](#getkeyname)|Retrieves the key name, in the local character set, assigned to the specified virtual key code.|  
+|[CHotKeyCtrl::SetHotKey](#sethotkey)|Sets the hot key combination for a hot key control.|  
+|[CHotKeyCtrl::SetRules](#setrules)|Defines the invalid combinations and the default modifier combination for a hot key control.|  
   
 ## Remarks  
  A "hot key control" is a window that enables the user to create a hot key. A "hot key" is a key combination that the user can press to perform an action quickly. (For example, a user can create a hot key that activates a given window and brings it to the top of the Z order.) The hot key control displays the user's choices and ensures that the user selects a valid key combination.  
@@ -88,14 +88,14 @@ class CHotKeyCtrl : public CWnd
 ## Requirements  
  **Header:** afxcmn.h  
   
-##  <a name="chotkeyctrl__chotkeyctrl"></a>  CHotKeyCtrl::CHotKeyCtrl  
+##  <a name="chotkeyctrl"></a>  CHotKeyCtrl::CHotKeyCtrl  
  Constructs a `CHotKeyCtrl` object.  
   
 ```  
 CHotKeyCtrl();
 ```  
   
-##  <a name="chotkeyctrl__create"></a>  CHotKeyCtrl::Create  
+##  <a name="create"></a>  CHotKeyCtrl::Create  
  Creates a hot key control and attaches it to a `CHotKeyCtrl` object.  
   
 ```  
@@ -125,9 +125,9 @@ virtual BOOL Create(
 ### Remarks  
  You construct a `CHotKeyCtrl` object in two steps. First, call the constructor and then call **Create**, which creates the hot key control and attaches it to the `CHotKeyCtrl` object.  
   
- If you want to use extended windows styles with your control, call [CreateEx](#chotkeyctrl__createex) instead of **Create**.  
+ If you want to use extended windows styles with your control, call [CreateEx](#createex) instead of **Create**.  
   
-##  <a name="chotkeyctrl__createex"></a>  CHotKeyCtrl::CreateEx  
+##  <a name="createex"></a>  CHotKeyCtrl::CreateEx  
  Call this function to create a control (a child window) and associate it with the `CHotKeyCtrl` object.  
   
 ```  
@@ -159,9 +159,9 @@ virtual BOOL CreateEx(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- Use `CreateEx` instead of [Create](#chotkeyctrl__create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
+ Use `CreateEx` instead of [Create](#create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
   
-##  <a name="chotkeyctrl__gethotkey"></a>  CHotKeyCtrl::GetHotKey  
+##  <a name="gethotkey"></a>  CHotKeyCtrl::GetHotKey  
  Retrieves the virtual key code and modifier flags of a keyboard shortcut from a hot key control.  
   
 ```  
@@ -197,7 +197,7 @@ void GetHotKey(
 ### Remarks  
  The virtual key code and the modifier keys together define the keyboard shortcut.  
   
-##  <a name="chotkeyctrl__gethotkeyname"></a>  CHotKeyCtrl::GetHotKeyName  
+##  <a name="gethotkeyname"></a>  CHotKeyCtrl::GetHotKeyName  
  Call this member function to get the localized name of the hot key.  
   
 ```  
@@ -212,7 +212,7 @@ CString GetHotKeyName() const;
 ### Remarks  
  The name that this member function returns comes from the keyboard driver. You can install a non-localized keyboard driver in a localized version of Windows, and vice versa.  
   
-##  <a name="chotkeyctrl__getkeyname"></a>  CHotKeyCtrl::GetKeyName  
+##  <a name="getkeyname"></a>  CHotKeyCtrl::GetKeyName  
  Call this member function to get the localized name of the key assigned to a specified virtual key code.  
   
 ```  
@@ -235,9 +235,9 @@ static CString GetKeyName(
  The key name that this function returns comes from the keyboard driver, so you can install a non-localized keyboard driver in a localized version of Windows, and vice versa.  
   
 ### Example  
- [!code-cpp[NVC_MFCControlLadenDialog#69](../../mfc/codesnippet/CPP/chotkeyctrl-class_1.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#69](../../mfc/codesnippet/cpp/chotkeyctrl-class_1.cpp)]  
   
-##  <a name="chotkeyctrl__sethotkey"></a>  CHotKeyCtrl::SetHotKey  
+##  <a name="sethotkey"></a>  CHotKeyCtrl::SetHotKey  
  Sets the keyboard shortcut for a hot key control.  
   
 ```  
@@ -265,7 +265,7 @@ void SetHotKey(
 ### Remarks  
  The virtual key code and the modifier keys together define the keyboard shortcut.  
   
-##  <a name="chotkeyctrl__setrules"></a>  CHotKeyCtrl::SetRules  
+##  <a name="setrules"></a>  CHotKeyCtrl::SetRules  
  Call this function to define the invalid combinations and the default modifier combination for a hot key control.  
   
 ```  
@@ -295,7 +295,7 @@ void SetRules(
 - `HKCOMB_SCA` SHIFT+CTRL+ALT  
   
  `wModifiers`  
- Array of flags that specifies the key combination to use when the user enters an invalid combination. For more information on the modifier flags, see [GetHotKey](#chotkeyctrl__gethotkey).  
+ Array of flags that specifies the key combination to use when the user enters an invalid combination. For more information on the modifier flags, see [GetHotKey](#gethotkey).  
   
 ### Remarks  
  When a user enters an invalid key combination, as defined by flags specified in `wInvalidComb`, the system uses the OR operator to combine the keys entered by the user with the flags specified in `wModifiers`. The resulting key combination is converted into a string and then displayed in the hot key control.  

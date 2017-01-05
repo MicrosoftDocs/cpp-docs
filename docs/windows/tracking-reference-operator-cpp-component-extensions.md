@@ -92,13 +92,7 @@ ref class Foo sealed {};
   
  For more information about tracking references in C++/CLI, see:  
   
--   [How to: Use Tracking References in C++/CLI](../dotnet/how-to-use-tracking-references-in-cpp-cli.md)  
-  
--   [How to: Use Tracking References and Value Types](../misc/how-to-use-tracking-references-and-value-types.md)  
-  
--   [How to: Use Tracking References and Interior Pointers](../misc/how-to-use-tracking-references-and-interior-pointers.md)  
-  
--   [How to: Write Template Functions that Take Native, Value, or Reference Parameters](../misc/how-to-write-template-functions-that-take-native-value-or-reference-parameters.md)  
+-   [How to: Use Tracking References in C++/CLI](../dotnet/how-to-use-tracking-references-in-cpp-cli.md)
   
 ### Examples  
  **Example**  

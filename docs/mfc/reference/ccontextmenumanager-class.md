@@ -49,47 +49,47 @@ class CContextMenuManager : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CContextMenuManager::CContextMenuManager](#ccontextmenumanager__ccontextmenumanager)|Constructs a `CContextMenuManager` object.|  
+|[CContextMenuManager::CContextMenuManager](#ccontextmenumanager)|Constructs a `CContextMenuManager` object.|  
 |`CContextMenuManager::~CContextMenuManager`|Destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CContextMenuManager::AddMenu](#ccontextmenumanager__addmenu)|Adds a new shortcut menu.|  
-|[CContextMenuManager::GetMenuById](#ccontextmenumanager__getmenubyid)|Returns a handle to the menu associated with the provided resource ID.|  
-|[CContextMenuManager::GetMenuByName](#ccontextmenumanager__getmenubyname)|Returns a handle to the menu that matches the provided menu name.|  
-|[CContextMenuManager::GetMenuNames](#ccontextmenumanager__getmenunames)|Returns a list of menu names.|  
-|[CContextMenuManager::LoadState](#ccontextmenumanager__loadstate)|Loads shortcut menus stored in the Windows registry.|  
-|[CContextMenuManager::ResetState](#ccontextmenumanager__resetstate)|Clears the shortcut menus from the context menu manager.|  
-|[CContextMenuManager::SaveState](#ccontextmenumanager__savestate)|Saves shortcut menus to the Windows registry.|  
-|[CContextMenuManager::SetDontCloseActiveMenu](#ccontextmenumanager__setdontcloseactivemenu)|Controls whether the `CContextMenuManager` closes the active shortcut menu when it shows a new shortcut menu.|  
-|[CContextMenuManager::ShowPopupMenu](#ccontextmenumanager__showpopupmenu)|Displays the specified shortcut menu.|  
-|[CContextMenuManager::TrackPopupMenu](#ccontextmenumanager__trackpopupmenu)|Displays the specified shortcut menu. Returns the index of the selected menu command.|  
+|[CContextMenuManager::AddMenu](#addmenu)|Adds a new shortcut menu.|  
+|[CContextMenuManager::GetMenuById](#getmenubyid)|Returns a handle to the menu associated with the provided resource ID.|  
+|[CContextMenuManager::GetMenuByName](#getmenubyname)|Returns a handle to the menu that matches the provided menu name.|  
+|[CContextMenuManager::GetMenuNames](#getmenunames)|Returns a list of menu names.|  
+|[CContextMenuManager::LoadState](#loadstate)|Loads shortcut menus stored in the Windows registry.|  
+|[CContextMenuManager::ResetState](#resetstate)|Clears the shortcut menus from the context menu manager.|  
+|[CContextMenuManager::SaveState](#savestate)|Saves shortcut menus to the Windows registry.|  
+|[CContextMenuManager::SetDontCloseActiveMenu](#setdontcloseactivemenu)|Controls whether the `CContextMenuManager` closes the active shortcut menu when it shows a new shortcut menu.|  
+|[CContextMenuManager::ShowPopupMenu](#showpopupmenu)|Displays the specified shortcut menu.|  
+|[CContextMenuManager::TrackPopupMenu](#trackpopupmenu)|Displays the specified shortcut menu. Returns the index of the selected menu command.|  
   
 ## Remarks  
  `CContextMenuManager` manages shortcut menus and makes sure that they have a consistent appearance.  
   
- You should not create a `CContextMenuManager` object manually. The framework of your application creates the `CContextMenuManager` object. However, you should call [CWinAppEx::InitContextMenuManager](../../mfc/reference/cwinappex-class.md#cwinappex__initcontextmenumanager) when your application is initialized. After initializing the context manager, use the method [CWinAppEx::GetContextMenuManager](../../mfc/reference/cwinappex-class.md#cwinappex__getcontextmenumanager) to obtain a pointer to the context manager for your application.  
+ You should not create a `CContextMenuManager` object manually. The framework of your application creates the `CContextMenuManager` object. However, you should call [CWinAppEx::InitContextMenuManager](../../mfc/reference/cwinappex-class.md#initcontextmenumanager) when your application is initialized. After initializing the context manager, use the method [CWinAppEx::GetContextMenuManager](../../mfc/reference/cwinappex-class.md#getcontextmenumanager) to obtain a pointer to the context manager for your application.  
   
  You can create shortcut menus at runtime by calling `AddMenu`. If you want to show the menu without first receiving user input, call `ShowPopupMenu`. `TrackPopupMenu` is used when you want to create a menu and wait for user input. `TrackPopupMenu` returns the index of the selected command or 0 if the user exited without selecting anything.  
   
  The `CContextMenuManager` can also save and load its state to the Windows registry.  
   
 ## Example  
- The following example demonstrates how to add a menu to a `CContextMenuManager` object, and how not to close the active pop-up menu when the `CContextMenuManager` object displays a new pop-up menu. This code snippet is part of the [Custom Pages sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to add a menu to a `CContextMenuManager` object, and how not to close the active pop-up menu when the `CContextMenuManager` object displays a new pop-up menu. This code snippet is part of the [Custom Pages sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_CustomPages#4](../../mfc/reference/codesnippet/CPP/ccontextmenumanager-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_CustomPages#4](../../mfc/reference/codesnippet/cpp/ccontextmenumanager-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
   
- [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md)  
+ `CContextMenuManager`  
   
 ## Requirements  
  **Header:** afxcontextmenumanager.h  
   
-##  <a name="ccontextmenumanager__addmenu"></a>  CContextMenuManager::AddMenu  
+##  <a name="addmenu"></a>  CContextMenuManager::AddMenu  
  Adds a new shortcut menu to the [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md).  
   
 ```  
@@ -119,7 +119,7 @@ BOOL AddMenu(
 ### Remarks  
  This method fails if `uiMenuResId` is invalid or if another menu with the same name already is in the `CContextMenuManager`.  
   
-##  <a name="ccontextmenumanager__ccontextmenumanager"></a>  CContextMenuManager::CContextMenuManager  
+##  <a name="ccontextmenumanager"></a>  CContextMenuManager::CContextMenuManager  
  Constructs a [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md) object.  
   
 ```  
@@ -127,9 +127,9 @@ CContextMenuManager();
 ```  
   
 ### Remarks  
- In most cases, you should not create a `CContextMenuManager` manually. The framework of your application creates the `CContextMenuManager` object. You should call [CWinAppEx::InitContextMenuManager](../../mfc/reference/cwinappex-class.md#cwinappex__initcontextmenumanager) during the initialization of your application. To get a pointer to the context manager, call [CWinAppEx::GetContextMenuManager](../../mfc/reference/cwinappex-class.md#cwinappex__getcontextmenumanager).  
+ In most cases, you should not create a `CContextMenuManager` manually. The framework of your application creates the `CContextMenuManager` object. You should call [CWinAppEx::InitContextMenuManager](../../mfc/reference/cwinappex-class.md#initcontextmenumanager) during the initialization of your application. To get a pointer to the context manager, call [CWinAppEx::GetContextMenuManager](../../mfc/reference/cwinappex-class.md#getcontextmenumanager).  
   
-##  <a name="ccontextmenumanager__getmenubyid"></a>  CContextMenuManager::GetMenuById  
+##  <a name="getmenubyid"></a>  CContextMenuManager::GetMenuById  
  Returns a handle to the menu associated with a given resource ID.  
   
 ```  
@@ -145,7 +145,7 @@ HMENU GetMenuById(UINT nMenuResId) const;
 ### Return Value  
  A handle to the associated menu or `NULL` if the menu is not found.  
   
-##  <a name="ccontextmenumanager__getmenubyname"></a>  CContextMenuManager::GetMenuByName  
+##  <a name="getmenubyname"></a>  CContextMenuManager::GetMenuByName  
  Returns a handle to a specific menu.  
   
 ```  
@@ -169,7 +169,7 @@ HMENU GetMenuByName(
 ### Remarks  
  If this method finds a menu that matches `lpszName`, `GetMenuByName` stores the menu resource ID in the parameter `puiOrigResID`.  
   
-##  <a name="ccontextmenumanager__getmenunames"></a>  CContextMenuManager::GetMenuNames  
+##  <a name="getmenunames"></a>  CContextMenuManager::GetMenuNames  
  Returns the list of menu names added to the [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md).  
   
 ```  
@@ -182,7 +182,7 @@ void GetMenuNames(CStringList& listOfNames) const;
  [out] `listOfNames`  
  A reference to a [CStringList](../../mfc/reference/cstringlist-class.md) parameter. This method writes the list of menu names to this parameter.  
   
-##  <a name="ccontextmenumanager__loadstate"></a>  CContextMenuManager::LoadState  
+##  <a name="loadstate"></a>  CContextMenuManager::LoadState  
  Loads information associated with the [CContextMenuManager Class](../../mfc/reference/ccontextmenumanager-class.md) from the Windows registry.  
   
 ```  
@@ -197,11 +197,11 @@ virtual BOOL LoadState(LPCTSTR lpszProfileName = NULL);
  Nonzero if the method is successful; otherwise 0.  
   
 ### Remarks  
- The `lpszProfileName` parameter is not the absolute path for a registry entry. It is a relative path that is added to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](../../mfc/reference/cwinappex-class.md#cwinappex__getregistrybase) and [CWinAppEx::SetRegistryBase](../../mfc/reference/cwinappex-class.md#cwinappex__setregistrybase) respectively.  
+ The `lpszProfileName` parameter is not the absolute path for a registry entry. It is a relative path that is added to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](../../mfc/reference/cwinappex-class.md#getregistrybase) and [CWinAppEx::SetRegistryBase](../../mfc/reference/cwinappex-class.md#setregistrybase) respectively.  
   
- Use the method [CContextMenuManager::SaveState](#ccontextmenumanager__savestate) to save the shortcut menus to the registry.  
+ Use the method [CContextMenuManager::SaveState](#savestate) to save the shortcut menus to the registry.  
   
-##  <a name="ccontextmenumanager__resetstate"></a>  CContextMenuManager::ResetState  
+##  <a name="resetstate"></a>  CContextMenuManager::ResetState  
  Clears all items from the shortcut menus associated with the [CContextMenuManager Class](../../mfc/reference/ccontextmenumanager-class.md).  
   
 ```  
@@ -214,7 +214,7 @@ virtual BOOL ResetState();
 ### Remarks  
  This method clears the pop-up menus and removes them from the `CContextMenuManager`.  
   
-##  <a name="ccontextmenumanager__savestate"></a>  CContextMenuManager::SaveState  
+##  <a name="savestate"></a>  CContextMenuManager::SaveState  
  Saves information associated with the [CContextMenuManager Class](../../mfc/reference/ccontextmenumanager-class.md) to the Windows registry.  
   
 ```  
@@ -229,11 +229,11 @@ virtual BOOL SaveState(LPCTSTR lpszProfileName = NULL);
  Nonzero if the method is successful; otherwise 0.  
   
 ### Remarks  
- The `lpszProfileName` parameter is not the absolute path for a registry entry. It is a relative path that is added to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](../../mfc/reference/cwinappex-class.md#cwinappex__getregistrybase) and [CWinAppEx::SetRegistryBase](../../mfc/reference/cwinappex-class.md#cwinappex__setregistrybase) respectively.  
+ The `lpszProfileName` parameter is not the absolute path for a registry entry. It is a relative path that is added to the end of the default registry key for your application. To get or set the default registry key, use the methods [CWinAppEx::GetRegistryBase](../../mfc/reference/cwinappex-class.md#getregistrybase) and [CWinAppEx::SetRegistryBase](../../mfc/reference/cwinappex-class.md#setregistrybase) respectively.  
   
- Use the method [CContextMenuManager::LoadState](#ccontextmenumanager__loadstate) to load the shortcut menus from the registry.  
+ Use the method [CContextMenuManager::LoadState](#loadstate) to load the shortcut menus from the registry.  
   
-##  <a name="ccontextmenumanager__setdontcloseactivemenu"></a>  CContextMenuManager::SetDontCloseActiveMenu  
+##  <a name="setdontcloseactivemenu"></a>  CContextMenuManager::SetDontCloseActiveMenu  
  Controls whether the [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md) closes the active pop-up menu when it displays a new pop-up menu.  
   
 ```  
@@ -247,7 +247,7 @@ void SetDontCloseActiveMenu (BOOL bSet = TRUE);
 ### Remarks  
  By default, the `CContextMenuManager` closes the active pop-up menu.  
   
-##  <a name="ccontextmenumanager__showpopupmenu"></a>  CContextMenuManager::ShowPopupMenu  
+##  <a name="showpopupmenu"></a>  CContextMenuManager::ShowPopupMenu  
  Displays the specified shortcut menu.  
   
 ```  
@@ -299,11 +299,11 @@ virtual CMFCPopupMenu* ShowPopupMenu(
  The first method overload returns nonzero if the method shows the menu successfully; otherwise 0. The second method overload returns a pointer to [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) if the shortcut menu displays correctly; otherwise `NULL`.  
   
 ### Remarks  
- This method resembles the method [CContextMenuManager::TrackPopupMenu](#ccontextmenumanager__trackpopupmenu) in that both methods display a shortcut menu. However, `TrackPopupMenu` returns the index of the selected menu command.  
+ This method resembles the method [CContextMenuManager::TrackPopupMenu](#trackpopupmenu) in that both methods display a shortcut menu. However, `TrackPopupMenu` returns the index of the selected menu command.  
   
- If the parameter `bAutoDestroy` is `FALSE`, you must manually call the inherited `DestroyMenu` method to release memory resources. The default implementation of `ShowPopupMenu` does not use the parameter `bAutoDestroy`. It is provided for future use or for custom classes derived from the [CContextMenuManager Class](../../mfc/reference/ccontextmenumanager-class.md).  
+ If the parameter `bAutoDestroy` is `FALSE`, you must manually call the inherited `DestroyMenu` method to release memory resources. The default implementation of `ShowPopupMenu` does not use the parameter `bAutoDestroy`. It is provided for future use or for custom classes derived from the `CContextMenuManager` class .  
   
-##  <a name="ccontextmenumanager__trackpopupmenu"></a>  CContextMenuManager::TrackPopupMenu  
+##  <a name="trackpopupmenu"></a>  CContextMenuManager::TrackPopupMenu  
  Displays the specified shortcut menu and returns the index of the selected shortcut menu command.  
   
 ```  
@@ -335,7 +335,7 @@ virtual UINT TrackPopupMenu(
  The menu command ID of the command that the user chooses; 0 if the user closes the shortcut menu without selecting a menu command.  
   
 ### Remarks  
- This method functions as a modal call to display a shortcut menu. The application will not continue to the following line in code until the user either closes the shortcut menu or selects a command. An alternative method that you can use to display a shortcut menu is [CContextMenuManager::ShowPopupMenu](#ccontextmenumanager__showpopupmenu). That method is not a modal call and will not return the ID of the selected command.  
+ This method functions as a modal call to display a shortcut menu. The application will not continue to the following line in code until the user either closes the shortcut menu or selects a command. An alternative method that you can use to display a shortcut menu is [CContextMenuManager::ShowPopupMenu](#showpopupmenu). That method is not a modal call and will not return the ID of the selected command.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

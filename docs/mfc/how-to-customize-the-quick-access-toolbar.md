@@ -35,7 +35,7 @@ translation.priority.ht:
 # How to: Customize the Quick Access Toolbar
 The Quick Access Toolbar (QAT) is a customizable toolbar that contains a set of commands that are either displayed next to the Application button or under the category tabs. The following illustration shows a typical Quick Access Toolbar.  
   
- ![MFC Ribbon Quick Access Toolbar](../mfc/media/quick_access_toolbar.png "Quick_Access_Toolbar")  
+ ![MFC Ribbon Quick Access Toolbar](../mfc/media/quick_access_toolbar.png "quick_access_toolbar")  
   
  To customize the Quick Access Toolbar, open it in the **Properties** window, modify its commands, and then preview the ribbon control.  
   

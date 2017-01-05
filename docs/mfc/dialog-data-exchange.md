@@ -54,7 +54,7 @@ If you use the DDX mechanism, you set the initial values of the dialog object's 
   
  The following figure illustrates dialog data exchange.  
   
- ![Dialog box data exchange](../mfc/media/vc379d1.gif "vc379D1")  
+ ![Dialog box data exchange](../mfc/media/vc379d1.gif "vc379d1")  
 Dialog Data Exchange  
   
  `UpdateData` works in both directions, as specified by the **BOOL** parameter passed to it. To carry out the exchange, `UpdateData` sets up a `CDataExchange` object and calls your dialog class's override of `CDialog`'s `DoDataExchange` member function. `DoDataExchange` takes an argument of type `CDataExchange`. The `CDataExchange` object passed to `UpdateData` represents the context of the exchange, defining such information as the direction of the exchange.  
@@ -63,7 +63,7 @@ Dialog Data Exchange
   
  MFC provides many DDX functions for different kinds of exchange. The following example shows a `DoDataExchange` override in which two DDX functions and one DDV function are called:  
   
- [!code-cpp[NVC_MFCControlLadenDialog#49](../mfc/codesnippet/CPP/dialog-data-exchange_1.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#49](../mfc/codesnippet/cpp/dialog-data-exchange_1.cpp)]  
   
  The `DDX_` and `DDV_` lines are a data map. The sample DDX and DDV functions shown are for a check-box control and an edit-box control, respectively.  
   

@@ -49,7 +49,7 @@ Microsoft provides several implementations of OLE DB, a set of COM interfaces th
   
  Note that the MFC library contains one class, [COleDBRecordView](../mfc/reference/coledbrecordview-class.md), that displays database records in controls. The view is a form view directly connected to a `CRowset` object, and displays the fields of the `CRowset` object in the dialog template's controls.  
   
- For more information, see [OLE DB Programming](../data/oledb/ole-db-programming.md) and [OLE DB Programmer's Guide](http://go.microsoft.com/fwlink/?LinkId=121548).  
+ For more information, see [OLE DB Programming](../data/oledb/ole-db-programming.md) and [OLE DB Programmer's Guide](http://go.microsoft.com/fwlink/?linkid=121548).  
   
 ## See Also  
  [Creating an OLE DB Consumer](../data/oledb/creating-an-ole-db-consumer.md)   

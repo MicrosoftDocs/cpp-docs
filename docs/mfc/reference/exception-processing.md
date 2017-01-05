@@ -48,11 +48,11 @@ When a program executes, a number of abnormal conditions and errors called "exce
   
  Several macros included with the Microsoft Foundation Class Library will set up exception handlers. A number of other global functions help to throw specialized exceptions and terminate programs, if necessary. These macros and global functions fall into the following categories:  
   
-- [Exception macros](#_mfc_exception_macros), which structure your exception handler.  
+- Exception macros, which structure your exception handler.  
   
-- [Exception-throwing functions](#_mfc_exception.2d.throwing_functions), which generate exceptions of specific types.  
+- Exception-throwing functions), which generate exceptions of specific types.  
   
-- [Termination functions](#_mfc_termination_functions), which cause program termination.  
+- Termination functions, which cause program termination.  
   
  For examples and more details, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).  
   
@@ -67,7 +67,7 @@ When a program executes, a number of abnormal conditions and errors called "exce
 |[AND_CATCH_ALL](#and_catch_all)|Designates a block of code for catching all other additional exception types thrown in a preceding **TRY** block.|  
 |[END_CATCH](#end_catch)|Ends the last **CATCH** or `AND_CATCH` code block.|  
 |[END_CATCH_ALL](#end_catch_all)|Ends the last `CATCH_ALL` code block.|  
-|[THROW](#throw_mfc_)|Throws a specified exception.|  
+|[THROW](#throw)|Throws a specified exception.|  
 |[THROW_LAST](#throw_last)|Throws the currently handled exception to the next outer handler.|  
   
 ### Exception-Throwing Functions  
@@ -140,7 +140,7 @@ CATCH(exception_class, exception_object_pointer_name)
 ### Remarks  
  The exception-processing code can interrogate the exception object, if appropriate, to get more information about the specific cause of the exception. Invoke the `THROW_LAST` macro to shift processing to the next outer exception frame. End the **TRY** block with an `END_CATCH` macro.  
   
- If *exception_class* is the class `CException`, then all exception types will be caught. You can use the [CObject::IsKindOf](../../mfc/reference/cobject-class.md#cobject__iskindof) member function to determine which specific exception was thrown. A better way to catch several kinds of exceptions is to use sequential `AND_CATCH` statements, each with a different exception type.  
+ If *exception_class* is the class `CException`, then all exception types will be caught. You can use the [CObject::IsKindOf](../../mfc/reference/cobject-class.md#iskindof) member function to determine which specific exception was thrown. A better way to catch several kinds of exceptions is to use sequential `AND_CATCH` statements, each with a different exception type.  
   
  The exception object pointer is created by the macro. You do not need to declare it yourself.  
   
@@ -150,7 +150,7 @@ CATCH(exception_class, exception_object_pointer_name)
  For more information on exceptions and the **CATCH** macro, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCExceptions#26](../../mfc/codesnippet/CPP/exception-processing_1.cpp)]  
+ [!code-cpp[NVC_MFCExceptions#26](../../mfc/codesnippet/cpp/exception-processing_1.cpp)]  
   
 ##  <a name="catch_all"></a>  CATCH_ALL  
  Defines a block of code that catches all exception types thrown in the preceding **TRY** block.  
@@ -172,7 +172,7 @@ CATCH_ALL(exception_object_pointer_name)
  For more information on exceptions, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).  
   
 ### Example  
- See the example for [CFile::Abort](../../mfc/reference/cfile-class.md#cfile__abort).  
+ See the example for [CFile::Abort](../../mfc/reference/cfile-class.md#abort).  
   
 ##  <a name="and_catch"></a>  AND_CATCH  
  Defines a block of code for catching additional exception types thrown in a preceding **TRY** block.  
@@ -235,7 +235,7 @@ END_CATCH
 END_CATCH_ALL  
 ```  
   
-##  <a name="throw__mfc_"></a>  THROW (MFC)  
+##  <a name="throw"></a>  THROW (MFC)  
  Throws the specified exception.  
   
 ```   
@@ -264,7 +264,7 @@ THROW_LAST()
  For more information, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).  
   
 ### Example  
- See the example for [CFile::Abort](../../mfc/reference/cfile-class.md#cfile__abort).  
+ See the example for [CFile::Abort](../../mfc/reference/cfile-class.md#abort).  
   
 ##  <a name="afxthrowarchiveexception"></a>  AfxThrowArchiveException  
  Throws an archive exception.  
@@ -275,7 +275,7 @@ void  AfxThrowArchiveException(int cause, LPCTSTR lpszArchiveName);
   
 ### Parameters  
  `cause`  
- Specifies an integer that indicates the reason for the exception. For a list of the possible values, see [CArchiveException::m_cause](../../mfc/reference/carchiveexception-class.md#carchiveexception__m_cause).  
+ Specifies an integer that indicates the reason for the exception. For a list of the possible values, see [CArchiveException::m_cause](../../mfc/reference/carchiveexception-class.md#m_cause).  
   
  `lpszArchiveName`  
  Points to a string containing the name of the `CArchive` object that caused the exception (if available).  
@@ -292,7 +292,7 @@ void AfxThrowFileException(
   
 ### Parameters  
  `cause`  
- Specifies an integer that indicates the reason for the exception. For a list of the possible values, see [CFileException::m_cause](../../mfc/reference/cfileexception-class.md#cfileexception__m_cause).  
+ Specifies an integer that indicates the reason for the exception. For a list of the possible values, see [CFileException::m_cause](../../mfc/reference/cfileexception-class.md#m_cause).  
   
  `lOsError`  
  Contains the operating-system error number (if available) that states the reason for the exception. See your operating-system manual for a listing of error codes.  
@@ -372,7 +372,7 @@ void AFXAPI AfxThrowOleDispatchException(
  The information provided to this function can be displayed by the driving application (Microsoft Visual Basic or another OLE automation client application).  
   
 ### Example  
- [!code-cpp[NVC_MFCExceptions#25](../../mfc/codesnippet/CPP/exception-processing_2.cpp)]  
+ [!code-cpp[NVC_MFCExceptions#25](../../mfc/codesnippet/cpp/exception-processing_2.cpp)]  
   
 ##  <a name="afxthrowoleexception"></a>  AfxThrowOleException  
  Creates an object of type `COleException` and throws an exception.  
@@ -403,10 +403,10 @@ void AFXAPI AfxThrowDaoException(
   
 ### Parameters  
  `nAfxDaoError`  
- An integer value representing a DAO extended error code, which can be one of the values listed under [CDaoException::m_nAfxDaoError](../../mfc/reference/cdaoexception-class.md#cdaoexception__m_nafxdaoerror).  
+ An integer value representing a DAO extended error code, which can be one of the values listed under [CDaoException::m_nAfxDaoError](../../mfc/reference/cdaoexception-class.md#m_nafxdaoerror).  
   
  *scode*  
- An OLE error code from DAO, of type `SCODE`. For information, see [CDaoException::m_scode](../../mfc/reference/cdaoexception-class.md#cdaoexception__m_scode).  
+ An OLE error code from DAO, of type `SCODE`. For information, see [CDaoException::m_scode](../../mfc/reference/cdaoexception-class.md#m_scode).  
   
 ### Remarks  
  The framework also calls `AfxThrowDaoException`. In your call, you can pass one of the parameters or both. For example, if you want to raise one of the errors defined in **CDaoException::nAfxDaoError** but you do not care about the *scode* parameter, pass a valid code in the `nAfxDaoError` parameter and accept the default value for *scode*.  

@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # basic_string Class
-The sequences controlled by an object of template class `basic_string` are the Standard C++ string class and are usually referred to as strings, but they should not be confused with the null-terminated C-style strings used throughout the Standard C++ Library. The Standard C++ string is a container that enables the use of strings as normal types, such as comparison and concatenation operations, iterators, STL algorithms, and copying and assigning with class allocator managed memory. If you need to convert a Standard C++ string to a null-terminated C-style string, use the [basic_string::c_str](#basic_string__c_str) member.  
+The sequences controlled by an object of template class `basic_string` are the Standard C++ string class and are usually referred to as strings, but they should not be confused with the null-terminated C-style strings used throughout the C++ Standard Library. The Standard C++ string is a container that enables the use of strings as normal types, such as comparison and concatenation operations, iterators, C++ Standard Library algorithms, and copying and assigning with class allocator managed memory. If you need to convert a Standard C++ string to a null-terminated C-style string, use the [basic_string::c_str](#basic_string__c_str) member.  
   
 ## Syntax  
   
@@ -49,7 +49,7 @@ class basic_string;
   
 #### Parameters  
  `CharType`  
- The data type of a single character to be stored in the string. The Standard C++ Library provides specializations of this template class, with the type definitions [string](../standard-library/string-typedefs.md#string) for elements of type `char`, [wstring](../standard-library/string-typedefs.md#wstring), for `wchar_t`, [u16string](../standard-library/string-typedefs.md#u16string) for `char16_t`, and [u32string](../standard-library/string-typedefs.md#u32string) for `char32_t`.  
+ The data type of a single character to be stored in the string. The C++ Standard Library provides specializations of this template class, with the type definitions [string](../standard-library/string-typedefs.md#string) for elements of type `char`, [wstring](../standard-library/string-typedefs.md#wstring), for `wchar_t`, [u16string](../standard-library/string-typedefs.md#u16string) for `char16_t`, and [u32string](../standard-library/string-typedefs.md#u32string) for `char32_t`.  
   
  `Traits`  
  Various important properties of the **CharType** elements in a basic_string specialization are described by the class **Traits**. The default value is `char_traits`< `CharType`>.  
@@ -3322,10 +3322,8 @@ The string str1 reassigned with string str3c is: World.
  Provides a reference to the character with a specified index in a string.  
   
 ```  
-const_reference operator[](size_type _Off) const;
-
- 
-reference operator[](size_type _Off);
+const_reference operator[](size_type _Off) const;  
+reference operator[](size_type _Off);  
 ```  
   
 ### Parameters  
@@ -3344,7 +3342,7 @@ reference operator[](size_type _Off);
   
  The reference returned may be invalidated by string reallocations or modifications for the non- **const** strings.  
   
- When compiling with _SECURE_SCL 1, a runtime error will occur if you attempt to access an element outside the bounds of the string.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
+ When compiling with [\_ITERATOR\_DEBUG\_LEVEL](../standard-library/iterator-debug-level.md) set to 1 or 2, a runtime error will occur if you attempt to access an element outside the bounds of the string. For more information, see [Checked Iterators](../standard-library/checked-iterators.md).  
   
 ### Example  
   

@@ -53,20 +53,3 @@ ref class Test
    };  
 };  
 ```  
-  
- The following sample generates C3126:  
-  
-```  
-// C3126.cpp  
-// compile with: /clr:oldSyntax /c  
-#using <mscorlib.dll>  
-  
-__gc class Test  
-{  
-   union x  
-   {   // C3126  
-      int a;  
-      int b;  
-   };  
-};  
-```

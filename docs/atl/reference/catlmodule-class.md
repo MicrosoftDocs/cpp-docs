@@ -51,30 +51,30 @@ class ATL_NO_VTABLE CAtlModule :  public _ATL_MODULE
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlModule::CAtlModule](#catlmodule__catlmodule)|The constructor.|  
-|[CAtlModule::~CAtlModule](#catlmodule___dtorcatlmodule)|The destructor.|  
+|[CAtlModule::CAtlModule](#catlmodule)|The constructor.|  
+|[CAtlModule::~CAtlModule](#dtor)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlModule::AddCommonRGSReplacements](#catlmodule__addcommonrgsreplacements)|Override this method to add parameters to the ATL Registry Component (Registrar) replacement map.|  
-|[CAtlModule::AddTermFunc](#catlmodule__addtermfunc)|Adds a new function to be called when the module terminates.|  
-|[CAtlModule::GetGITPtr](#catlmodule__getgitptr)|Returns the Global Interface Pointer.|  
-|[CAtlModule::GetLockCount](#catlmodule__getlockcount)|Returns the lock count.|  
-|[CAtlModule::Lock](#catlmodule__lock)|Increments the lock count.|  
-|[CAtlModule::Term](#catlmodule__term)|Releases all data members.|  
-|[CAtlModule::Unlock](#catlmodule__unlock)|Decrements the lock count.|  
-|[CAtlModule::UpdateRegistryFromResourceD](#catlmodule__updateregistryfromresourced)|Runs the script contained in a specified resource to register or unregister an object.|  
-|[CAtlModule::UpdateRegistryFromResourceDHelper](#catlmodule__updateregistryfromresourcedhelper)|This method is called by `UpdateRegistryFromResourceD` to perform the registry update.|  
-|[CAtlModule::UpdateRegistryFromResourceS](#catlmodule__updateregistryfromresources)|Runs the script contained in a specified resource to register or unregister an object. This method statically links to the ATL Registry Component.|  
+|[CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements)|Override this method to add parameters to the ATL Registry Component (Registrar) replacement map.|  
+|[CAtlModule::AddTermFunc](#addtermfunc)|Adds a new function to be called when the module terminates.|  
+|[CAtlModule::GetGITPtr](#getgitptr)|Returns the Global Interface Pointer.|  
+|[CAtlModule::GetLockCount](#getlockcount)|Returns the lock count.|  
+|[CAtlModule::Lock](#lock)|Increments the lock count.|  
+|[CAtlModule::Term](#term)|Releases all data members.|  
+|[CAtlModule::Unlock](#unlock)|Decrements the lock count.|  
+|[CAtlModule::UpdateRegistryFromResourceD](#updateregistryfromresourced)|Runs the script contained in a specified resource to register or unregister an object.|  
+|[CAtlModule::UpdateRegistryFromResourceDHelper](#updateregistryfromresourcedhelper)|This method is called by `UpdateRegistryFromResourceD` to perform the registry update.|  
+|[CAtlModule::UpdateRegistryFromResourceS](#updateregistryfromresources)|Runs the script contained in a specified resource to register or unregister an object. This method statically links to the ATL Registry Component.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlModule::m_libid](#catlmodule__m_libid)|Contains the GUID of the current module.|  
-|[CAtlModule::m_pGIT](#catlmodule__m_pgit)|Pointer to the Global Interface Table.|  
+|[CAtlModule::m_libid](#m_libid)|Contains the GUID of the current module.|  
+|[CAtlModule::m_pGIT](#m_pgit)|Pointer to the Global Interface Table.|  
   
 ## Remarks  
  This class is used by [CAtlDllModuleT Class](../../atl/reference/catldllmodulet-class.md), [CAtlExeModuleT Class](../../atl/reference/catlexemodulet-class.md), and [CAtlServiceModuleT Class](../../atl/reference/catlservicemodulet-class.md) to provide support for DLL applications, EXE applications, and Windows services, respectively.  
@@ -84,14 +84,14 @@ class ATL_NO_VTABLE CAtlModule :  public _ATL_MODULE
  This class replaces the obsolete [CComModule Class](../../atl/reference/ccommodule-class.md) used in earlier versions of ATL.  
   
 ## Inheritance Hierarchy  
- [_ATL_MODULE](../Topic/_ATL_MODULE.md)  
+ [_ATL_MODULE](atl-typedefs.md#_atl_module)  
   
  `CAtlModule`  
   
 ## Requirements  
  **Header:** atlbase.h  
   
-##  <a name="catlmodule__addcommonrgsreplacements"></a>  CAtlModule::AddCommonRGSReplacements  
+##  <a name="addcommonrgsreplacements"></a>  CAtlModule::AddCommonRGSReplacements  
  Override this method to add parameters to the ATL Registry Component (Registrar) replacement map.  
   
 ```
@@ -110,7 +110,7 @@ virtual HRESULT AddCommonRGSReplacements(IRegistrarBase* /* pRegistrar*/) throw(
   
  See the topic [Using Replaceable Parameters (The Registrar's Preprocessor)](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md) for more details.  
   
-##  <a name="catlmodule__addtermfunc"></a>  CAtlModule::AddTermFunc  
+##  <a name="addtermfunc"></a>  CAtlModule::AddTermFunc  
  Adds a new function to be called when the module terminates.  
   
 ```
@@ -128,7 +128,7 @@ HRESULT AddTermFunc(
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
-##  <a name="catlmodule__catlmodule"></a>  CAtlModule::CAtlModule  
+##  <a name="catlmodule"></a>  CAtlModule::CAtlModule  
  The constructor.  
   
 ```
@@ -138,7 +138,7 @@ CAtlModule() throw();
 ### Remarks  
  Initializes data members and initiates a critical section around the module's thread.  
   
-##  <a name="catlmodule___dtorcatlmodule"></a>  CAtlModule::~CAtlModule  
+##  <a name="dtor"></a>  CAtlModule::~CAtlModule  
  The destructor.  
   
 ```
@@ -148,7 +148,7 @@ CAtlModule() throw();
 ### Remarks  
  Releases all data members.  
   
-##  <a name="catlmodule__getgitptr"></a>  CAtlModule::GetGITPtr  
+##  <a name="getgitptr"></a>  CAtlModule::GetGITPtr  
  Retrieves a pointer to the Global Interface Table.  
   
 ```
@@ -163,13 +163,13 @@ virtual HRESULT GetGITPtr(IGlobalInterfaceTable** ppGIT) throw();
  Returns S_OK on success, or an error code on failure. E_POINTER is returned if `ppGIT` is equal to NULL.  
   
 ### Remarks  
- If the Global Interface Table object does not exist, it is created, and its address is stored in the member variable [CAtlModule::m_pGIT](#catlmodule__m_pgit).  
+ If the Global Interface Table object does not exist, it is created, and its address is stored in the member variable [CAtlModule::m_pGIT](#m_pgit).  
   
  In debug builds, an assertion error will occur if `ppGIT` is equal to NULL, or if the Global Interface Table pointer cannot be obtained.  
   
  See [IGlobalInterfaceTable](http://msdn.microsoft.com/library/windows/desktop/ms678517) for information on the Global Interface Table.  
   
-##  <a name="catlmodule__getlockcount"></a>  CAtlModule::GetLockCount  
+##  <a name="getlockcount"></a>  CAtlModule::GetLockCount  
  Returns the lock count.  
   
 ```
@@ -179,7 +179,7 @@ virtual LONG GetLockCount() throw();
 ### Return Value  
  Returns the lock count. This value may be useful for diagnostics and debugging.  
   
-##  <a name="catlmodule__lock"></a>  CAtlModule::Lock  
+##  <a name="lock"></a>  CAtlModule::Lock  
  Increments the lock count.  
   
 ```
@@ -189,21 +189,21 @@ virtual LONG Lock() throw();
 ### Return Value  
  Increments the lock count and returns the updated value. This value may be useful for diagnostics and debugging.  
   
-##  <a name="catlmodule__m_libid"></a>  CAtlModule::m_libid  
+##  <a name="m_libid"></a>  CAtlModule::m_libid  
  Contains the GUID of the current module.  
   
 ```
 static GUID m_libid;
 ```  
   
-##  <a name="catlmodule__m_pgit"></a>  CAtlModule::m_pGIT  
+##  <a name="m_pgit"></a>  CAtlModule::m_pGIT  
  Pointer to the Global Interface Table.  
   
 ```
 IGlobalInterfaceTable* m_pGIT;
 ```  
   
-##  <a name="catlmodule__term"></a>  CAtlModule::Term  
+##  <a name="term"></a>  CAtlModule::Term  
  Releases all data members.  
   
 ```
@@ -213,7 +213,7 @@ void Term() throw();
 ### Remarks  
  Releases all data members. This method is called by the destructor.  
   
-##  <a name="catlmodule__unlock"></a>  CAtlModule::Unlock  
+##  <a name="unlock"></a>  CAtlModule::Unlock  
  Decrements the lock count.  
   
 ```
@@ -223,7 +223,7 @@ virtual LONG Unlock() throw();
 ### Return Value  
  Decrements the lock count and returns the updated value. This value may be useful for diagnostics and debugging.  
   
-##  <a name="catlmodule__updateregistryfromresourced"></a>  CAtlModule::UpdateRegistryFromResourceD  
+##  <a name="updateregistryfromresourced"></a>  CAtlModule::UpdateRegistryFromResourceD  
  Runs the script contained in a specified resource to register or unregister an object.  
   
 ```
@@ -246,7 +246,7 @@ HRESULT WINAPI UpdateRegistryFromResourceD(LPCTSTR lpszRes,
  **TRUE** if the object should be registered; **FALSE** otherwise.  
   
  `pMapEntries`  
- A pointer to the replacement map storing values associated with the script's replaceable parameters. ATL automatically uses %MODULE%. To use additional replaceable parameters, see [CAtlModule::AddCommonRGSReplacements](#catlmodule__addcommonrgsreplacements). Otherwise, use the **NULL** default value.  
+ A pointer to the replacement map storing values associated with the script's replaceable parameters. ATL automatically uses %MODULE%. To use additional replaceable parameters, see [CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements). Otherwise, use the **NULL** default value.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -254,11 +254,11 @@ HRESULT WINAPI UpdateRegistryFromResourceD(LPCTSTR lpszRes,
 ### Remarks  
  Runs the script contained in the resource specified by *lpszRes or nResID*. If `bRegister` is **TRUE**, this method registers the object in the system registry; otherwise it removes the object from the registry.  
   
- To statically link to the ATL Registry Component (Registrar), see [CAtlModule::UpdateRegistryFromResourceS](#catlmodule__updateregistryfromresources).  
+ To statically link to the ATL Registry Component (Registrar), see [CAtlModule::UpdateRegistryFromResourceS](#updateregistryfromresources).  
   
- This method calls [CAtlModule::UpdateRegistryFromResourceDHelper](#catlmodule__updateregistryfromresourcedhelper).  
+ This method calls [CAtlModule::UpdateRegistryFromResourceDHelper](#updateregistryfromresourcedhelper).  
   
-##  <a name="catlmodule__updateregistryfromresourcedhelper"></a>  CAtlModule::UpdateRegistryFromResourceDHelper  
+##  <a name="updateregistryfromresourcedhelper"></a>  CAtlModule::UpdateRegistryFromResourceDHelper  
  This method is called by `UpdateRegistryFromResourceD` to perform the registry update.  
   
 ```
@@ -275,15 +275,15 @@ inline HRESULT WINAPI UpdateRegistryFromResourceDHelper(LPCOLESTR lpszRes,
  Indicates whether the object should be registered.  
   
  `pMapEntries`  
- A pointer to the replacement map storing values associated with the script's replaceable parameters. ATL automatically uses %MODULE%. To use additional replaceable parameters, see [CAtlModule::AddCommonRGSReplacements](#catlmodule__addcommonrgsreplacements). Otherwise, use the **NULL** default value.  
+ A pointer to the replacement map storing values associated with the script's replaceable parameters. ATL automatically uses %MODULE%. To use additional replaceable parameters, see [CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements). Otherwise, use the **NULL** default value.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This method provides the implementation of [CAtlModule::UpdateRegistryFromResourceD](#catlmodule__updateregistryfromresourced).  
+ This method provides the implementation of [CAtlModule::UpdateRegistryFromResourceD](#updateregistryfromresourced).  
   
-##  <a name="catlmodule__updateregistryfromresources"></a>  CAtlModule::UpdateRegistryFromResourceS  
+##  <a name="updateregistryfromresources"></a>  CAtlModule::UpdateRegistryFromResourceS  
  Runs the script contained in a specified resource to register or unregister an object. This method statically links to the ATL Registry Component.  
   
 ```
@@ -306,16 +306,16 @@ HRESULT WINAPI UpdateRegistryFromResourceS(LPCTSTR lpszRes,
  Indicates whether the resource script should be registered.  
   
  `pMapEntries`  
- A pointer to the replacement map storing values associated with the script's replaceable parameters. ATL automatically uses %MODULE%. To use additional replaceable parameters, see [CAtlModule::AddCommonRGSReplacements](#catlmodule__addcommonrgsreplacements). Otherwise, use the **NULL** default value.  
+ A pointer to the replacement map storing values associated with the script's replaceable parameters. ATL automatically uses %MODULE%. To use additional replaceable parameters, see [CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements). Otherwise, use the **NULL** default value.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- Similar to [CAtlModule::UpdateRegistryFromResourceD](#catlmodule__updateregistryfromresourced) except `CAtlModule::UpdateRegistryFromResourceS` creates a static link to the ATL Registry Component (Registrar).  
+ Similar to [CAtlModule::UpdateRegistryFromResourceD](#updateregistryfromresourced) except `CAtlModule::UpdateRegistryFromResourceS` creates a static link to the ATL Registry Component (Registrar).  
   
 ## See Also  
- [_ATL_MODULE](../Topic/_ATL_MODULE.md)   
+ [_ATL_MODULE](atl-typedefs.md#_atl_module)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Module Classes](../../atl/atl-module-classes.md)   
  [Registry Component (Registrar)](../../atl/atl-registry-component-registrar.md)

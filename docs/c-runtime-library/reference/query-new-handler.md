@@ -60,8 +60,7 @@ Returns the address of the current new handler routine.
 ## Syntax  
   
 ```  
-  
-      _PNH _query_new_handler(  
+_PNH _query_new_handler(  
    void   
 );  
 ```  
@@ -70,7 +69,7 @@ Returns the address of the current new handler routine.
  Returns the address of the current new handler routine as set by `_set_new_handler`.  
   
 ## Remarks  
- The C++ `_query_new_handler` function returns the address of the current exception-handling function set by the C++ [_set_new_handler](../../c-runtime-library/reference/set-new-handler.md) function. `_set_new_handler` is used to specify an exception-handling function that is to gain control if the **new** operator fails to allocate memory. For more information, see the discussions of the [operator new](../../misc/operator-new-function.md) and [operator delete](../../misc/operator-delete-function.md) functions in *C++ Language Reference*.  
+ The C++ `_query_new_handler` function returns the address of the current exception-handling function set by the C++ [_set_new_handler](../../c-runtime-library/reference/set-new-handler.md) function. `_set_new_handler` is used to specify an exception-handling function that is to gain control if the **new** operator fails to allocate memory. For more information, see the discussion of the [new and delete operators](../../cpp/new-and-delete-operators.md) in the C++ Language Reference.  
   
 ## Requirements  
   
@@ -84,7 +83,7 @@ Returns the address of the current new handler routine.
  All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  
+ Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Memory Allocation](../../c-runtime-library/memory-allocation.md)   

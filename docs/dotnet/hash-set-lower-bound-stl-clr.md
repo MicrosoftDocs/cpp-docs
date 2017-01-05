@@ -1,5 +1,5 @@
 ---
-title: "hash_set::lower_bound (STL-CLR) | Microsoft Docs"
+title: "hash_set::lower_bound (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

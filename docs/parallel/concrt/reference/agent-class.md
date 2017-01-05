@@ -50,27 +50,27 @@ class agent;
   
 |Name|Description|  
 |----------|-----------------|  
-|[agent::agent Constructor](#agent__agent_constructor)|Overloaded. Constructs an agent.|  
-|[agent::~agent Destructor](#agent___dtoragent_destructor)|Destroys the agent.|  
+|[agent::agent Constructor](#ctor)|Overloaded. Constructs an agent.|  
+|[agent::~agent Destructor](#dtor)|Destroys the agent.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[agent::cancel Method](#agent__cancel_method)|Moves an agent from either the `agent_created` or `agent_runnable` states to the `agent_canceled` state.|  
-|[agent::start Method](#agent__start_method)|Moves an agent from the `agent_created` state to the `agent_runnable` state, and schedules it for execution.|  
-|[agent::status Method](#agent__status_method)|A synchronous source of status information from the agent.|  
-|[agent::status_port Method](#agent__status_port_method)|An asynchronous source of status information from the agent.|  
-|[agent::wait Method](#agent__wait_method)|Waits for an agent to complete its task.|  
-|[agent::wait_for_all Method](#agent__wait_for_all_method)|Waits for all of the specified agents to complete their tasks.|  
-|[agent::wait_for_one Method](#agent__wait_for_one_method)|Waits for any one of the specified agents to complete its task.|  
+|[agent::cancel Method](#cancel)|Moves an agent from either the `agent_created` or `agent_runnable` states to the `agent_canceled` state.|  
+|[agent::start Method](#start)|Moves an agent from the `agent_created` state to the `agent_runnable` state, and schedules it for execution.|  
+|[agent::status Method](#status)|A synchronous source of status information from the agent.|  
+|[agent::status_port Method](#status_port)|An asynchronous source of status information from the agent.|  
+|[agent::wait Method](#wait)|Waits for an agent to complete its task.|  
+|[agent::wait_for_all Method](#wait_for_all)|Waits for all of the specified agents to complete their tasks.|  
+|[agent::wait_for_one Method](#wait_for_one)|Waits for any one of the specified agents to complete its task.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[agent::done Method](#agent__done_method)|Moves an agent into the `agent_done` state, indicating that the agent has completed.|  
-|[agent::run Method](#agent__run_method)|Represents the main task of an agent. `run` should be overridden in a derived class, and specifies what the agent should do after it has been started.|  
+|[agent::done Method](#done)|Moves an agent into the `agent_done` state, indicating that the agent has completed.|  
+|[agent::run Method](#run)|Represents the main task of an agent. `run` should be overridden in a derived class, and specifies what the agent should do after it has been started.|  
   
 ## Remarks  
  For more information, see [Asynchronous Agents](../../../parallel/concrt/asynchronous-agents.md).  
@@ -83,7 +83,7 @@ class agent;
   
  **Namespace:** concurrency  
   
-##  <a name="agent__agent_constructor"></a>  agent::agent Constructor  
+##  <a name="ctor"></a>  agent::agent Constructor  
  Constructs an agent.  
   
 ```
@@ -104,7 +104,7 @@ agent(ScheduleGroup& _PGroup);
 ### Remarks  
  The runtime uses the default scheduler if you do not specify the `_PScheduler` or `_PGroup` parameters.  
   
-##  <a name="agent___dtoragent_destructor"></a>  agent::~agent Destructor  
+##  <a name="dtor"></a>  agent::~agent Destructor  
  Destroys the agent.  
   
 ```
@@ -114,7 +114,7 @@ virtual ~agent();
 ### Remarks  
  It is an error to destroy an agent that is not in a terminal state (either `agent_done` or `agent_canceled`). This can be avoided by waiting for the agent to reach a terminal state in the destructor of a class that inherits from the `agent` class.  
   
-##  <a name="agent__cancel_method"></a>  agent::cancel Method  
+##  <a name="cancel"></a>  agent::cancel Method  
  Moves an agent from either the `agent_created` or `agent_runnable` states to the `agent_canceled` state.  
   
 ```
@@ -124,7 +124,7 @@ bool cancel();
 ### Return Value  
  `true` if the agent was canceled, `false` otherwise. An agent cannot be canceled if it has already started running or has already completed.  
   
-##  <a name="agent__done_method"></a>  agent::done Method  
+##  <a name="done"></a>  agent::done Method  
  Moves an agent into the `agent_done` state, indicating that the agent has completed.  
   
 ```
@@ -137,7 +137,7 @@ bool done();
 ### Remarks  
  This method should be called at the end of the `run` method, when you know the execution of your agent has completed.  
   
-##  <a name="agent__run_method"></a>  agent::run Method  
+##  <a name="run"></a>  agent::run Method  
  Represents the main task of an agent. `run` should be overridden in a derived class, and specifies what the agent should do after it has been started.  
   
 ```
@@ -147,7 +147,7 @@ virtual void run() = 0;
 ### Remarks  
  The agent status is changed to `agent_started` right before this method is invoked. The method should invoke `done` on the agent with an appropriate status before returning, and may not throw any exceptions.  
   
-##  <a name="agent__start_method"></a>  agent::start Method  
+##  <a name="start"></a>  agent::start Method  
  Moves an agent from the `agent_created` state to the `agent_runnable` state, and schedules it for execution.  
   
 ```
@@ -157,7 +157,7 @@ bool start();
 ### Return Value  
  `true` if the agent started correctly, `false` otherwise. An agent that has been canceled cannot be started.  
   
-##  <a name="agent__status_method"></a>  agent::status Method  
+##  <a name="status"></a>  agent::status Method  
  A synchronous source of status information from the agent.  
   
 ```
@@ -167,7 +167,7 @@ agent_status status();
 ### Return Value  
  Returns the current state of the agent. Note that this returned state could change immediately after being returned.  
   
-##  <a name="agent__status_port_method"></a>  agent::status_port Method  
+##  <a name="status_port"></a>  agent::status_port Method  
  An asynchronous source of status information from the agent.  
   
 ```
@@ -177,7 +177,7 @@ ISource<agent_status>* status_port();
 ### Return Value  
  Returns a message source that can send messages about the current state of the agent.  
   
-##  <a name="agent__wait_method"></a>  agent::wait Method  
+##  <a name="wait"></a>  agent::wait Method  
  Waits for an agent to complete its task.  
   
 ```
@@ -199,9 +199,9 @@ static agent_status __cdecl wait(
 ### Remarks  
  An agent task is completed when the agent enters the `agent_canceled` or `agent_done` states.  
   
- If the parameter `_Timeout` has a value other than the constant `COOPERATIVE_TIMEOUT_INFINITE`, the exception [operation_timed_out](../../../parallel/concrt/reference/operation-timed-out-class.md) is thrown if the specified amount of time expires before the agent has completed its task.  
+ If the parameter `_Timeout` has a value other than the constant `COOPERATIVE_TIMEOUT_INFINITE`, the exception [operation_timed_out](operation-timed-out-class.md) is thrown if the specified amount of time expires before the agent has completed its task.  
   
-##  <a name="agent__wait_for_all_method"></a>  agent::wait_for_all Method  
+##  <a name="wait_for_all"></a>  agent::wait_for_all Method  
  Waits for all of the specified agents to complete their tasks.  
   
 ```
@@ -228,9 +228,9 @@ static void __cdecl wait_for_all(
 ### Remarks  
  An agent task is completed when the agent enters the `agent_canceled` or `agent_done` states.  
   
- If the parameter `_Timeout` has a value other than the constant `COOPERATIVE_TIMEOUT_INFINITE`, the exception [operation_timed_out](../../../parallel/concrt/reference/operation-timed-out-class.md) is thrown if the specified amount of time expires before the agent has completed its task.  
+ If the parameter `_Timeout` has a value other than the constant `COOPERATIVE_TIMEOUT_INFINITE`, the exception [operation_timed_out](operation-timed-out-class.md) is thrown if the specified amount of time expires before the agent has completed its task.  
   
-##  <a name="agent__wait_for_one_method"></a>  agent::wait_for_one Method  
+##  <a name="wait_for_one"></a>  agent::wait_for_one Method  
  Waits for any one of the specified agents to complete its task.  
   
 ```
@@ -261,7 +261,7 @@ static void __cdecl wait_for_one(
 ### Remarks  
  An agent task is completed when the agent enters the `agent_canceled` or `agent_done` states.  
   
- If the parameter `_Timeout` has a value other than the constant `COOPERATIVE_TIMEOUT_INFINITE`, the exception [operation_timed_out](../../../parallel/concrt/reference/operation-timed-out-class.md) is thrown if the specified amount of time expires before the agent has completed its task.  
+ If the parameter `_Timeout` has a value other than the constant `COOPERATIVE_TIMEOUT_INFINITE`, the exception [operation_timed_out](operation-timed-out-class.md) is thrown if the specified amount of time expires before the agent has completed its task.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

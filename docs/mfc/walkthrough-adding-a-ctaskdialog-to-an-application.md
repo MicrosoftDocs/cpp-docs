@@ -222,5 +222,5 @@ This walkthrough introduces the [CTaskDialog Class](../mfc/reference/ctaskdialog
 ## See Also  
  [Dialog Boxes](../mfc/dialog-boxes.md)   
  [CTaskDialog Class](../mfc/reference/ctaskdialog-class.md)   
- [CTaskDialog::CTaskDialog](../mfc/reference/ctaskdialog-class.md#ctaskdialog__ctaskdialog)
+ [CTaskDialog::CTaskDialog](../mfc/reference/ctaskdialog-class.md#ctaskdialog)
 

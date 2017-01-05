@@ -58,13 +58,13 @@ template<class T,  const IID* piid= &__uuidof(T)>  class CComQIPtr: public CComP
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComQIPtr::CComQIPtr](#ccomqiptr__ccomqiptr)|Constructor.|  
+|[CComQIPtr::CComQIPtr](#ccomqiptr)|Constructor.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComQIPtr::operator =](#ccomqiptr__operator__eq)|Assigns a pointer to the member pointer.|  
+|[CComQIPtr::operator =](#operator_eq)|Assigns a pointer to the member pointer.|  
   
 ## Remarks  
  ATL uses `CComQIPtr` and [CComPtr](../../atl/reference/ccomptr-class.md) to manage COM interface pointers, both of which derive from [CComPtrBase](../../atl/reference/ccomptrbase-class.md). Both classes perform automatic reference counting through calls to `AddRef` and **Release**. Overloaded operators handle pointer operations.  
@@ -79,7 +79,7 @@ template<class T,  const IID* piid= &__uuidof(T)>  class CComQIPtr: public CComP
 ## Requirements  
  **Header:** atlcomcli.h  
   
-##  <a name="ccomqiptr__ccomqiptr"></a>  CComQIPtr::CComQIPtr  
+##  <a name="ccomqiptr"></a>  CComQIPtr::CComQIPtr  
  The constructor.  
   
 ```
@@ -102,7 +102,7 @@ CComQIPtr(
  `piid`  
  A pointer to the IID of `T`.  
   
-##  <a name="ccomqiptr__operator__eq"></a>  CComQIPtr::operator =  
+##  <a name="operator_eq"></a>  CComQIPtr::operator =  
  The assignment operator.  
   
 ```
@@ -128,8 +128,8 @@ T* operator= (
  Returns a pointer to the updated `CComQIPtr` object.  
   
 ## See Also  
- [CComPtr::CComPtr](../../atl/reference/ccomptr-class.md#ccomptr__ccomptr)   
- [CComQIPtr::CComQIPtr](#ccomqiptr__ccomqiptr)   
+ [CComPtr::CComPtr](../../atl/reference/ccomptr-class.md#ccomptr)   
+ [CComQIPtr::CComQIPtr](#ccomqiptr)   
  [CComPtrBase Class](../../atl/reference/ccomptrbase-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [CComQIPtrElementTraits Class](../../atl/reference/ccomqiptrelementtraits-class.md)

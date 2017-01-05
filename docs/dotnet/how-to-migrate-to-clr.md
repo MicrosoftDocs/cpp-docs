@@ -43,7 +43,7 @@ This topic discusses issues that arise when compiling native code with **/clr** 
 ## Known Issues Compiling Library Projects with /clr  
  Visual Studio contains some known issues when compiling library projects with **/clr**:  
   
--   Your code may query types at runtime with [CRuntimeClass::FromName](../Topic/CRuntimeClass::FromName.md). However, if a type is in an MSIL .dll (compiled with **/clr**), the call to [CRuntimeClass::FromName](../Topic/CRuntimeClass::FromName.md) may fail if it occurs before the static constructors run in the managed .dll (you will not see this problem if the FromName call happens after code has executed in the managed .dll). To work around this problem, you can force the construction of the managed static constructor by defining a function in the managed .dll, exporting it, and invoking it from the native MFC application. For example:  
+-   Your code may query types at runtime with [CRuntimeClass::FromName](../mfc/reference/cruntimeclass-structure.md#fromname). However, if a type is in an MSIL .dll (compiled with **/clr**), the call to `FromName` may fail if it occurs before the static constructors run in the managed .dll (you will not see this problem if the FromName call happens after code has executed in the managed .dll). To work around this problem, you can force the construction of the managed static constructor by defining a function in the managed .dll, exporting it, and invoking it from the native MFC application. For example:  
   
     ```  
     // Extension DLL Header file:  
@@ -65,7 +65,7 @@ This topic discusses issues that arise when compiling native code with **/clr** 
  Projects previous built with Visual C++ 2003 should also first be compiled without **/clr** as Visual Studio now has increased ANSI/ISO compliance and some breaking changes. The change that is likely to require the most attention is [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md). Code that uses the CRT is very likely to produce deprecation warnings. These warnings can be suppressed, but migrating to the new [Security-Enhanced Versions of CRT Functions](../c-runtime-library/security-enhanced-versions-of-crt-functions.md) is preferred, as they provide better security and may reveal security issues in your code.  
   
 ### Upgrading from Managed Extensions for C++  
- Projects built with Visual C++ .NET or Visual C++ 2003 that used Managed Extensions for C++ will require at least one change to project settings, as these extensions are now deprecated. As a result, code written with Managed Extensions for C++ won't compile under **/clr**. Use **/clr:oldSyntax** instead.  
+ Projects built with Visual C++ .NET or Visual C++ 2003 that used Managed Extensions for C++ must be rewritten to use the new syntax, as these extensions are no longer supported. Code written with Managed Extensions for C++ won't compile under **/clr**.  
   
 ## Convert C Code to C++  
  Although Visual Studio will compile C files, it is necessary to convert them to C++ for a **/clr** compilation. The actual filename doesn't have to be changed; you can use **/Tp** (see [/Tc, /Tp, /TC, /TP (Specify Source File Type)](../build/reference/tc-tp-tc-tp-specify-source-file-type.md).) Note that although C++ source code files are required for **/clr**, it is not necessary to re-factor your code to use object-oriented paradigms.  
@@ -110,7 +110,7 @@ COMObj2->Method(args);  // C++ equivalent
  **/clr** can be selected in the development environment by following the instructions in [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md). As mentioned previously, this step will automatically disable conflicting project settings.  
   
 > [!NOTE]
->  When upgrading a managed library or web service project from Visual C++ 2003, the **/Zl** compiler option will added to the **Command Line** property page. This will cause LNK2001. Remove **/Zl** from the **Command Line** property page to resolve. See [/Zl (Omit Default Library Name)](../build/reference/zl-omit-default-library-name.md) and [How to: Open Project Property Pages](../misc/how-to-open-project-property-pages.md) for more information. Or, add msvcrt.lib and msvcmrt.lib to the linker's **Additional Dependencies** property.  
+>  When upgrading a managed library or web service project from Visual C++ 2003, the **/Zl** compiler option will added to the **Command Line** property page. This will cause LNK2001. Remove **/Zl** from the **Command Line** property page to resolve. See [/Zl (Omit Default Library Name)](../build/reference/zl-omit-default-library-name.md) and [Working with Project Properties](../ide/working-with-project-properties.md) for more information. Or, add msvcrt.lib and msvcmrt.lib to the linker's **Additional Dependencies** property.  
   
  For projects built with makefiles, incompatible compiler options must be disabled manually once **/clr** is added. See /[/clr Restrictions](../build/reference/clr-restrictions.md) for information on compiler options that are not compatible with **/clr**.  
   
@@ -134,7 +134,7 @@ COMObj2->Method(args);  // C++ equivalent
  Exporting DLL data is error-prone, and not recommended. This is because the data section of a DLL is not guaranteed to be initialized until some managed portion of the DLL has been executed. Reference metadata with [#using Directive](../preprocessor/hash-using-directive-cpp.md).  
   
 ### Type Visibility  
- Native types are now private by default. In Visual C++ .NET 2002 and Visual C++ 2003, native types were public by default. This can result in a native type not being visible outside the DLL. Resolve this error by adding `public` to these types. See [Type and Member Visibility](../misc/type-and-member-visibility.md) for more information.  
+ Native types are now private by default. In Visual C++ .NET 2002 and Visual C++ 2003, native types were public by default. This can result in a native type not being visible outside the DLL. Resolve this error by adding `public` to these types.  
   
 ### Floating Point and Alignment Issues  
  `__controlfp` is not supported on the common language runtime (see [_control87, _controlfp, \__control87_2](../c-runtime-library/reference/control87-controlfp-control87-2.md) for more information). The CLR will also not respect [align](../cpp/align-cpp.md).  
@@ -150,7 +150,7 @@ COMObj2->Method(args);  // C++ equivalent
  When moving from native to MSIL, you will notice an increase in the size of your working set. This is because the common language runtime provides many features to ensure that programs run correctly. If your **/clr** application is not running correctly, you may want to enable C4793 (off by default), see [Compiler Warning (level 1 and 3) C4793](../error-messages/compiler-warnings/compiler-warning-level-1-and-3-c4793.md) for more information.  
   
 ### Program Crashes on Shutdown  
- In some cases, the CLR can shutdown before your managed code is finished running. Using `std::set_terminate` and `SIGTERM` can cause this. See [signal Constants](../c-runtime-library/signal-constants.md) and [set_terminate](../Topic/set_terminate%20\(%3Cexception%3E\).md) for more information.  
+ In some cases, the CLR can shutdown before your managed code is finished running. Using `std::set_terminate` and `SIGTERM` can cause this. See [signal Constants](../c-runtime-library/signal-constants.md) and [set_terminate](../c-runtime-library/abnormal-termination.md) for more information.  
   
 ## Using New Visual C++ Features  
  After your application compiles, links, and runs, you can begin using .NET features in any module compiled with **/clr**. For more information, see [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md).  

@@ -111,13 +111,13 @@ Stock events differ from custom events in that they are automatically fired by c
 ##  <a name="_core_classwizard_changes_for_stock_events"></a> Add Event Wizard Changes for Stock Events  
  Because stock events are handled by the control's base class, the Add Event Wizard does not change your class declaration in any way. It adds the event to the control's event map and makes an entry in its .IDL file. The following line is added to the control's event map, located in the control class implementation (.CPP) file:  
   
- [!code-cpp[NVC_MFC_AxUI#5](../mfc/codesnippet/CPP/mfc-activex-controls-adding-stock-events-to-an-activex-control_1.cpp)]  
+ [!code-cpp[NVC_MFC_AxUI#5](../mfc/codesnippet/cpp/mfc-activex-controls-adding-stock-events-to-an-activex-control_1.cpp)]  
   
  Adding this code fires a KeyPress event when a `WM_CHAR` message is received and the control is active. The KeyPress event can be fired at other times by calling its firing function (for example, `FireKeyPress`) from within the control code.  
   
  The Add Event Wizard adds the following line of code to the control's .IDL file:  
   
- [!code-cpp[NVC_MFC_AxUI#6](../mfc/codesnippet/CPP/mfc-activex-controls-adding-stock-events-to-an-activex-control_2.idl)]  
+ [!code-cpp[NVC_MFC_AxUI#6](../mfc/codesnippet/cpp/mfc-activex-controls-adding-stock-events-to-an-activex-control_2.idl)]  
   
  This line associates the KeyPress event with its standard dispatch ID and allows the container to anticipate the KeyPress event.  
   

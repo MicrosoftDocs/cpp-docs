@@ -45,13 +45,13 @@ namespace stdx;
   
 |Name|Description|  
 |----------|-----------------|  
-|[declval Function](../../../parallel/concrt/reference/declval-function.md)||  
+|[declval Function](declval-function.md)||  
   
 ## Requirements  
  **Header:** ppltasks.h  
   
 ## See Also  
- [Reference](../../../parallel/concrt/reference/reference-concurrency-runtime.md)
+ [Reference](reference-concurrency-runtime.md)
 
 
 

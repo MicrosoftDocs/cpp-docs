@@ -50,7 +50,7 @@ class CMFCImagePaintArea : public CButton
 |||  
 |-|-|  
 |Name|Description|  
-|[CMFCImagePaintArea::CMFCImagePaintArea](#cmfcimagepaintarea__cmfcimagepaintarea)|Constructs a `CMFCImagePaintArea` object.|  
+|[CMFCImagePaintArea::CMFCImagePaintArea](#cmfcimagepaintarea)|Constructs a `CMFCImagePaintArea` object.|  
 |`CMFCImagePaintArea::~CMFCImagePaintArea`|Destructor.|  
   
 ### Public Methods  
@@ -58,10 +58,10 @@ class CMFCImagePaintArea : public CButton
 |||  
 |-|-|  
 |Name|Description|  
-|[CMFCImagePaintArea::GetMode](#cmfcimagepaintarea__getmode)|Retrieves the current drawing mode.|  
-|[CMFCImagePaintArea::SetBitmap](#cmfcimagepaintarea__setbitmap)|Sets the bitmap image for the picture area.|  
-|[CMFCImagePaintArea::SetColor](#cmfcimagepaintarea__setcolor)|Sets the current drawing color.|  
-|[CMFCImagePaintArea::SetMode](#cmfcimagepaintarea__setmode)|Sets the current drawing mode.|  
+|[CMFCImagePaintArea::GetMode](#getmode)|Retrieves the current drawing mode.|  
+|[CMFCImagePaintArea::SetBitmap](#setbitmap)|Sets the bitmap image for the picture area.|  
+|[CMFCImagePaintArea::SetColor](#setcolor)|Sets the current drawing color.|  
+|[CMFCImagePaintArea::SetMode](#setmode)|Sets the current drawing mode.|  
   
 ### Remarks  
  This class is not intended to be used directly from your code.  
@@ -71,7 +71,7 @@ class CMFCImagePaintArea : public CButton
 ## Example  
  The following example demonstrates how to construct an object of the `CMFCImagePaintArea` class, set the current drawing color, set the current drawing mode, and set the bitmap image for the picture area.  
   
- [!code-cpp[NVC_MFC_RibbonApp#37](../../mfc/reference/codesnippet/CPP/cmfcimagepaintarea-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#37](../../mfc/reference/codesnippet/cpp/cmfcimagepaintarea-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -87,7 +87,7 @@ class CMFCImagePaintArea : public CButton
 ## Requirements  
  **Header:** afximagepaintarea.h  
   
-##  <a name="cmfcimagepaintarea__cmfcimagepaintarea"></a>  CMFCImagePaintArea::CMFCImagePaintArea  
+##  <a name="cmfcimagepaintarea"></a>  CMFCImagePaintArea::CMFCImagePaintArea  
  Constructs a `CMFCImagePaintArea` object.  
   
 ```  
@@ -101,7 +101,7 @@ CMFCImagePaintArea(CMFCImageEditorDialog* pParentDlg);
 |Parameter|Description|  
 |[in] `pParentDlg`|A pointer to the dialog box that is the parent of the image editor.|  
   
-##  <a name="cmfcimagepaintarea__getmode"></a>  CMFCImagePaintArea::GetMode  
+##  <a name="getmode"></a>  CMFCImagePaintArea::GetMode  
  Retrieves the current drawing mode.  
   
 ```  
@@ -111,9 +111,9 @@ IMAGE_EDIT_MODE GetMode() const;
 ```  
   
 ### Return Value  
- An `IMAGE_EDIT_MODE` value that specifies the current drawing mode.  
+ An [IMAGE_EDIT_MODE](cmfcimagepaintarea-image-edit-mode-enumeration.md) value that specifies the current drawing mode.  
   
-##  <a name="cmfcimagepaintarea__setbitmap"></a>  CMFCImagePaintArea::SetBitmap  
+##  <a name="setbitmap"></a>  CMFCImagePaintArea::SetBitmap  
  Sets the bitmap image for the picture area.  
   
 ```  
@@ -130,7 +130,7 @@ void SetBitmap(CBitmap* pBitmap);
 ### Remarks  
  If `pBitmap` is `NULL`, this method sets the size of the modifiable paint area to zero. Otherwise, it sets the size of the modifiable paint area to the size of the provided bitmap image.  
   
-##  <a name="cmfcimagepaintarea__setcolor"></a>  CMFCImagePaintArea::SetColor  
+##  <a name="setcolor"></a>  CMFCImagePaintArea::SetColor  
  Sets the current drawing color.  
   
 ```  
@@ -147,9 +147,9 @@ void SetColor(COLORREF color);
 ### Remarks  
  When you select a color from the image editor palette bar or color picker, the framework calls this method to update the current drawing color. The initial drawing color is black (a `COLORREF` value of 0).  
   
- The drawing color is used by the image editor dialog box for all drawing modes except for `IMAGE_EDIT_MODE_COLOR`. For more information about drawing modes, see [CMFCImagePaintArea::IMAGE_EDIT_MODE Enumeration](../../mfc/reference/cmfcimagepaintarea-class.md#image_edit_mode%20enumeration).  
+ The drawing color is used by the image editor dialog box for all drawing modes except for `IMAGE_EDIT_MODE_COLOR`. For more information about drawing modes, see [CMFCImagePaintArea::IMAGE_EDIT_MODE Enumeration](cmfcimagepaintarea-image-edit-mode-enumeration.md).  
   
-##  <a name="cmfcimagepaintarea__setmode"></a>  CMFCImagePaintArea::SetMode  
+##  <a name="setmode"></a>  CMFCImagePaintArea::SetMode  
  Sets the current drawing mode.  
   
 ```  
@@ -161,7 +161,7 @@ void SetMode(IMAGE_EDIT_MODE mode);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `mode`|An `IMAGE_EDIT_MODE` value that specifies the current drawing mode.|  
+|[in] `mode`|An [IMAGE_EDIT_MODE](cmfcimagepaintarea-image-edit-mode-enumeration.md) value that specifies the current drawing mode.|  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

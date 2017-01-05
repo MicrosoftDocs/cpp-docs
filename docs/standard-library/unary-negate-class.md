@@ -66,7 +66,7 @@ public:
 ## Remarks  
  The template class stores a copy of a unary function object _ *Func.* It defines its member function `operator()` as returning **!**\_ *Func(left).*  
   
- The constructor of `unary_negate` is rarely used directly. The helper function [not1](../standard-library/functional-functions.md#not1Function) provides an easier way to declare and use the **unary_negator** adaptor predicate.  
+ The constructor of `unary_negate` is rarely used directly. The helper function [not1](../standard-library/functional-functions.md#not1_function) provides an easier way to declare and use the **unary_negator** adaptor predicate.  
   
 ## Example  
   
@@ -127,7 +127,7 @@ The number of elements in v1 not greater than 10 is: 3.
   
 ## See Also  
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 
 
 

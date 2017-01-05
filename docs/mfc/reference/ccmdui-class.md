@@ -57,21 +57,21 @@ class CCmdUI
   
 |Name|Description|  
 |----------|-----------------|  
-|[CCmdUI::ContinueRouting](#ccmdui__continuerouting)|Tells the command-routing mechanism to continue routing the current message down the chain of handlers.|  
-|[CCmdUI::Enable](#ccmdui__enable)|Enables or disables the user-interface item for this command.|  
-|[CCmdUI::SetCheck](#ccmdui__setcheck)|Sets the check state of the user-interface item for this command.|  
-|[CCmdUI::SetRadio](#ccmdui__setradio)|Like the `SetCheck` member function, but operates on radio groups.|  
-|[CCmdUI::SetText](#ccmdui__settext)|Sets the text for the user-interface item for this command.|  
+|[CCmdUI::ContinueRouting](#continuerouting)|Tells the command-routing mechanism to continue routing the current message down the chain of handlers.|  
+|[CCmdUI::Enable](#enable)|Enables or disables the user-interface item for this command.|  
+|[CCmdUI::SetCheck](#setcheck)|Sets the check state of the user-interface item for this command.|  
+|[CCmdUI::SetRadio](#setradio)|Like the `SetCheck` member function, but operates on radio groups.|  
+|[CCmdUI::SetText](#settext)|Sets the text for the user-interface item for this command.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CCmdUI::m_nID](#ccmdui__m_nid)|The ID of the user-interface object.|  
-|[CCmdUI::m_nIndex](#ccmdui__m_nindex)|The index of the user-interface object.|  
-|[CCmdUI::m_pMenu](#ccmdui__m_pmenu)|Points to the menu represented by the `CCmdUI` object.|  
-|[CCmdUI::m_pOther](#ccmdui__m_pother)|Points to the window object that sent the notification.|  
-|[CCmdUI::m_pSubMenu](#ccmdui__m_psubmenu)|Points to the contained sub-menu represented by the `CCmdUI` object.|  
+|[CCmdUI::m_nID](#m_nid)|The ID of the user-interface object.|  
+|[CCmdUI::m_nIndex](#m_nindex)|The index of the user-interface object.|  
+|[CCmdUI::m_pMenu](#m_pmenu)|Points to the menu represented by the `CCmdUI` object.|  
+|[CCmdUI::m_pOther](#m_pother)|Points to the window object that sent the notification.|  
+|[CCmdUI::m_pSubMenu](#m_psubmenu)|Points to the contained sub-menu represented by the `CCmdUI` object.|  
   
 ## Remarks  
  `CCmdUI` does not have a base class.  
@@ -100,7 +100,7 @@ class CCmdUI
 ## Requirements  
  **Header:** afxwin.h  
   
-##  <a name="ccmdui__continuerouting"></a>  CCmdUI::ContinueRouting  
+##  <a name="continuerouting"></a>  CCmdUI::ContinueRouting  
  Call this member function to tell the command-routing mechanism to continue routing the current message down the chain of handlers.  
   
 ```  
@@ -110,7 +110,7 @@ void ContinueRouting();
 ### Remarks  
  This is an advanced member function that should be used in conjunction with an `ON_COMMAND_EX` handler that returns **FALSE**. For more information, see [Technical Note 6](../../mfc/tn006-message-maps.md).  
   
-##  <a name="ccmdui__enable"></a>  CCmdUI::Enable  
+##  <a name="enable"></a>  CCmdUI::Enable  
  Call this member function to enable or disable the user-interface item for this command.  
   
 ```  
@@ -122,25 +122,25 @@ virtual void Enable(BOOL bOn = TRUE);
  **TRUE** to enable the item, **FALSE** to disable it.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#46](../../mfc/codesnippet/CPP/ccmdui-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#46](../../mfc/codesnippet/cpp/ccmdui-class_1.cpp)]  
   
- [!code-cpp[NVC_MFCDocView#47](../../mfc/codesnippet/CPP/ccmdui-class_2.cpp)]  
+ [!code-cpp[NVC_MFCDocView#47](../../mfc/codesnippet/cpp/ccmdui-class_2.cpp)]  
   
-##  <a name="ccmdui__m_nid"></a>  CCmdUI::m_nID  
+##  <a name="m_nid"></a>  CCmdUI::m_nID  
  The ID of the menu item, toolbar button, or other user-interface object represented by the `CCmdUI` object.  
   
 ```  
 UINT m_nID;  
 ```  
   
-##  <a name="ccmdui__m_nindex"></a>  CCmdUI::m_nIndex  
+##  <a name="m_nindex"></a>  CCmdUI::m_nIndex  
  The index of the menu item, toolbar button, or other user-interface object represented by the `CCmdUI` object.  
   
 ```  
 UINT m_nIndex;  
 ```  
   
-##  <a name="ccmdui__m_pmenu"></a>  CCmdUI::m_pMenu  
+##  <a name="m_pmenu"></a>  CCmdUI::m_pMenu  
  Pointer (of `CMenu` type) to the menu represented by the `CCmdUI` object.  
   
 ```  
@@ -150,7 +150,7 @@ CMenu* m_pMenu;
 ### Remarks  
  **NULL** if the item is not a menu.  
   
-##  <a name="ccmdui__m_psubmenu"></a>  CCmdUI::m_pSubMenu  
+##  <a name="m_psubmenu"></a>  CCmdUI::m_pSubMenu  
  Pointer (of `CMenu` type) to the contained sub-menu represented by the `CCmdUI` object.  
   
 ```  
@@ -160,7 +160,7 @@ CMenu* m_pSubMenu;
 ### Remarks  
  **NULL** if the item is not a menu. If the sub menu is a pop-up, `m_nID` contains the ID of the first item in the pop-up menu. For more information, see [Technical Note 21](../../mfc/tn021-command-and-message-routing.md).  
   
-##  <a name="ccmdui__m_pother"></a>  CCmdUI::m_pOther  
+##  <a name="m_pother"></a>  CCmdUI::m_pOther  
  Pointer (of type `CWnd`) to the window object, such as a tool or status bar, that sent the notification.  
   
 ```  
@@ -170,7 +170,7 @@ CWnd* m_pOther;
 ### Remarks  
  **NULL** if the item is a menu or a non- `CWnd` object.  
   
-##  <a name="ccmdui__setcheck"></a>  CCmdUI::SetCheck  
+##  <a name="setcheck"></a>  CCmdUI::SetCheck  
  Call this member function to set the user-interface item for this command to the appropriate check state.  
   
 ```  
@@ -184,7 +184,7 @@ virtual void SetCheck(int nCheck = 1);
 ### Remarks  
  This member function works for menu items and toolbar buttons. The indeterminate state applies only to toolbar buttons.  
   
-##  <a name="ccmdui__setradio"></a>  CCmdUI::SetRadio  
+##  <a name="setradio"></a>  CCmdUI::SetRadio  
  Call this member function to set the user-interface item for this command to the appropriate check state.  
   
 ```  
@@ -198,7 +198,7 @@ virtual void SetRadio(BOOL bOn = TRUE);
 ### Remarks  
  This member function operates like `SetCheck`, except that it operates on user-interface items acting as part of a radio group. Unchecking the other items in the group is not automatic unless the items themselves maintain the radio-group behavior.  
   
-##  <a name="ccmdui__settext"></a>  CCmdUI::SetText  
+##  <a name="settext"></a>  CCmdUI::SetText  
  Call this member function to set the text of the user-interface item for this command.  
   
 ```  
@@ -210,9 +210,9 @@ virtual void SetText(LPCTSTR lpszText);
  A pointer to a text string.  
   
 ### Example  
- [!code-cpp[NVC_MFCDocView#48](../../mfc/codesnippet/CPP/ccmdui-class_3.cpp)]  
+ [!code-cpp[NVC_MFCDocView#48](../../mfc/codesnippet/cpp/ccmdui-class_3.cpp)]  
   
 ## See Also  
- [MFC Sample MDI](../../top/visual-cpp-samples.md)   
+ [MFC Sample MDI](../../visual-cpp-samples.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)

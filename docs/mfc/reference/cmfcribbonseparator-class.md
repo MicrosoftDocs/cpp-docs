@@ -58,14 +58,14 @@ class CMFCRibbonSeparator : public CMFCRibbonBaseElement
 |||  
 |-|-|  
 |Name|Description|  
-|[CMFCRibbonSeparator::CMFCRibbonSeparator](#cmfcribbonseparator__cmfcribbonseparator)|Constructs a `CMFCRibbonSeparator` object.|  
+|[CMFCRibbonSeparator::CMFCRibbonSeparator](#cmfcribbonseparator)|Constructs a `CMFCRibbonSeparator` object.|  
   
 ### Public Methods  
   
 |||  
 |-|-|  
 |Name|Description|  
-|[CMFCRibbonSeparator::AddToListBox](#cmfcribbonseparator__addtolistbox)|Adds a separator to the **Commands** list in the **Customize** dialog box. (Overrides [CMFCRibbonBaseElement::AddToListBox](../../mfc/reference/cmfcribbonbaseelement-class.md#cmfcribbonbaseelement__addtolistbox).)|  
+|[CMFCRibbonSeparator::AddToListBox](#addtolistbox)|Adds a separator to the **Commands** list in the **Customize** dialog box. (Overrides [CMFCRibbonBaseElement::AddToListBox](../../mfc/reference/cmfcribbonbaseelement-class.md#addtolistbox).)|  
 |`CMFCRibbonSeparator::CreateObject`|Used by the framework to create a dynamic instance of this class type.|  
 |`CMFCRibbonSeparator::GetThisClass`|Used by the framework to obtain a pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|  
   
@@ -74,12 +74,12 @@ class CMFCRibbonSeparator : public CMFCRibbonBaseElement
 |||  
 |-|-|  
 |Name|Description|  
-|[CMFCRibbonSeparator::CopyFrom](#cmfcribbonseparator__copyfrom)|A copy method that sets a separator's member variables from another object.|  
-|[CMFCRibbonSeparator::GetRegularSize](#cmfcribbonseparator__getregularsize)|Returns the size of a separator.|  
-|[CMFCRibbonSeparator::IsSeparator](#cmfcribbonseparator__isseparator)|Indicates whether this is a separator.|  
-|[CMFCRibbonSeparator::IsTabStop](#cmfcribbonseparator__istabstop)|Indicates whether this is a tab stop.|  
-|[CMFCRibbonSeparator::OnDraw](#cmfcribbonseparator__ondraw)|Called by the system to draw the separator on either the ribbon or the Quick Access Toolbar.|  
-|[CMFCRibbonSeparator::OnDrawOnList](#cmfcribbonseparator__ondrawonlist)|Called by the system to draw the separator on the **Commands** list.|  
+|[CMFCRibbonSeparator::CopyFrom](#copyfrom)|A copy method that sets a separator's member variables from another object.|  
+|[CMFCRibbonSeparator::GetRegularSize](#getregularsize)|Returns the size of a separator.|  
+|[CMFCRibbonSeparator::IsSeparator](#isseparator)|Indicates whether this is a separator.|  
+|[CMFCRibbonSeparator::IsTabStop](#istabstop)|Indicates whether this is a tab stop.|  
+|[CMFCRibbonSeparator::OnDraw](#ondraw)|Called by the system to draw the separator on either the ribbon or the Quick Access Toolbar.|  
+|[CMFCRibbonSeparator::OnDrawOnList](#ondrawonlist)|Called by the system to draw the separator on the **Commands** list.|  
   
 ## Remarks  
  A ribbon separator is a vertical or horizontal line that logically separates ribbon elements. A separator can be drawn on the ribbon control, the main application menu, the ribbon status bar, and the Quick Access Toolbar.  
@@ -95,7 +95,7 @@ CMFCRibbonMainPanel* pMainPanel = m_wndRibbonBar.AddMainCategory(_T("Main Menu")
 pMainPanel->Add(new CMFCRibbonSeparator(TRUE));
 ```  
   
- Call [CMFCRibbonPanel::AddSeparator](../../mfc/reference/cmfcribbonpanel-class.md#cmfcribbonpanel__addseparator) to add separators to ribbon panels. The separators are allocated and added internally by the `AddSeparator` method.  
+ Call [CMFCRibbonPanel::AddSeparator](../../mfc/reference/cmfcribbonpanel-class.md#addseparator) to add separators to ribbon panels. The separators are allocated and added internally by the `AddSeparator` method.  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -107,7 +107,7 @@ pMainPanel->Add(new CMFCRibbonSeparator(TRUE));
 ## Requirements  
  **Header:** afxbaseribbonelement.h  
   
-##  <a name="cmfcribbonseparator__addtolistbox"></a>  CMFCRibbonSeparator::AddToListBox  
+##  <a name="addtolistbox"></a>  CMFCRibbonSeparator::AddToListBox  
  Adds a separator to the **Commands** list in the **Customize** dialog box.  
   
 ```  
@@ -126,7 +126,7 @@ virtual int AddToListBox(
 ### Return Value  
  Zero-based index to the string in the list box specified by `pWndListBox`.  
   
-##  <a name="cmfcribbonseparator__cmfcribbonseparator"></a>  CMFCRibbonSeparator::CMFCRibbonSeparator  
+##  <a name="cmfcribbonseparator"></a>  CMFCRibbonSeparator::CMFCRibbonSeparator  
  Constructs a `CMFCRibbonSeparator` object.  
   
 ```  
@@ -143,9 +143,9 @@ CMFCRibbonSeparator(BOOL bIsHoriz = FALSE);
 ### Example  
  The following example demonstrates how to construct an object of the `CMFCRibbonSeparator` class.  
   
- [!code-cpp[NVC_MFC_RibbonApp#19](../../mfc/reference/codesnippet/CPP/cmfcribbonseparator-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#19](../../mfc/reference/codesnippet/cpp/cmfcribbonseparator-class_1.cpp)]  
   
-##  <a name="cmfcribbonseparator__copyfrom"></a>  CMFCRibbonSeparator::CopyFrom  
+##  <a name="copyfrom"></a>  CMFCRibbonSeparator::CopyFrom  
  A copy method that sets a separator's member variables from another object.  
   
 ```  
@@ -156,7 +156,7 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
  [in] `Src`  
  The source ribbon element to copy from.  
   
-##  <a name="cmfcribbonseparator__getregularsize"></a>  CMFCRibbonSeparator::GetRegularSize  
+##  <a name="getregularsize"></a>  CMFCRibbonSeparator::GetRegularSize  
  Returns the size of a separator.  
   
 ```  
@@ -170,7 +170,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 ### Return Value  
  The size of the separator on the given device context.  
   
-##  <a name="cmfcribbonseparator__isseparator"></a>  CMFCRibbonSeparator::IsSeparator  
+##  <a name="isseparator"></a>  CMFCRibbonSeparator::IsSeparator  
  Indicates whether this is a separator.  
   
 ```  
@@ -182,7 +182,7 @@ virtual BOOL IsSeparator() const;
 ### Return Value  
  Always `TRUE` for this class.  
   
-##  <a name="cmfcribbonseparator__istabstop"></a>  CMFCRibbonSeparator::IsTabStop  
+##  <a name="istabstop"></a>  CMFCRibbonSeparator::IsTabStop  
  Indicates whether this is a tab stop.  
   
 ```  
@@ -197,7 +197,7 @@ virtual BOOL IsTabStop() const;
 ### Remarks  
  A ribbon separator is not a tab stop.  
   
-##  <a name="cmfcribbonseparator__ondraw"></a>  CMFCRibbonSeparator::OnDraw  
+##  <a name="ondraw"></a>  CMFCRibbonSeparator::OnDraw  
  Called by the system to draw the separator on either the ribbon or the Quick Access Toolbar.  
   
 ```  
@@ -208,7 +208,7 @@ virtual void OnDraw(CDC* pDC);
  [in] `pDC`  
  A pointer to a device context.  
   
-##  <a name="cmfcribbonseparator__ondrawonlist"></a>  CMFCRibbonSeparator::OnDrawOnList  
+##  <a name="ondrawonlist"></a>  CMFCRibbonSeparator::OnDrawOnList  
  Called by the system to draw the separator on the **Commands** list.  
   
 ```  

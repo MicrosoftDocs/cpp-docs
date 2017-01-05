@@ -37,38 +37,6 @@ translation.priority.ht:
 # Compiler Error C3166
 'pointer' : cannot declare a pointer to an interior __gc pointer as a member of 'type'  
   
- The compiler found an invalid pointer declaration (a [__nogc](../../misc/nogc.md) pointer to a [__gc](../../misc/gc.md) pointer.). This syntax may be supported in a future release.  
+The compiler found an invalid pointer declaration (a `__nogc` pointer to a `__gc` pointer.). 
   
- C3166 is only reachable using **/clr:oldSyntax**.  
-  
- The following sample generates C3166:  
-  
-```  
-// C3166.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-using namespace System;  
-  
-__gc struct G {  
-   int __gc* __nogc* p;   // C3166  
-};  
-  
-public __gc class H {  
-public:  
-   Int32 __gc* __nogc* p;   // C3166  
-};  
-  
-public __value struct I {  
-   int __gc* __nogc* p;   // C3166  
-};  
-  
-public __value class J {  
-public:  
-   int __gc* __nogc* p;   // C3166  
-};  
-  
-int main() {  
-   G* pG = new G;  
-   H* pH = new H;  
-}  
-```
+C3166 is only reachable using the obsolete compiler option **/clr:oldSyntax**.  

@@ -67,7 +67,7 @@ By default, the MFC Application Wizard creates an application skeleton with a do
   
  The following figure shows the relationship between a document and its view.  
   
- ![View is the part of the document that's displayed](../mfc/media/vc379n1.gif "vc379N1")  
+ ![View is the part of the document that's displayed](../mfc/media/vc379n1.gif "vc379n1")  
 Document and View  
   
  The document/view implementation in the class library separates the data itself from its display and from user operations on the data. All changes to the data are managed through the document class. The view calls this interface to access and update the data.  
@@ -100,7 +100,7 @@ Document and View
   
 -   [Using database classes without documents and views](../data/mfc-using-database-classes-without-documents-and-views.md)  
   
--   [Samples](../top/visual-cpp-samples.md)  
+-   [Samples](../visual-cpp-samples.md)  
   
 ## See Also  
  [User Interface Elements](../mfc/user-interface-elements-mfc.md)   

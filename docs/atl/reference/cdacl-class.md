@@ -54,31 +54,31 @@ class CDacl : public CAcl
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDacl::CDacl](#cdacl__cdacl)|The constructor.|  
-|[CDacl::~CDacl](#cdacl___dtorcdacl)|The destructor.|  
+|[CDacl::CDacl](#cdacl)|The constructor.|  
+|[CDacl::~CDacl](#dtor)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDacl::AddAllowedAce](#cdacl__addallowedace)|Adds an allowed ACE (access-control entry) to the `CDacl` object.|  
-|[CDacl::AddDeniedAce](#cdacl__adddeniedace)|Adds a denied ACE to the `CDacl` object.|  
-|[CDacl::GetAceCount](#cdacl__getacecount)|Returns the number of ACEs (access-control entries) in the `CDacl` object.|  
-|[CDacl::RemoveAce](#cdacl__removeace)|Removes a specific ACE (access-control entry) from the `CDacl` object.|  
-|[CDacl::RemoveAllAces](#cdacl__removeallaces)|Removes all of the ACEs contained in the `CDacl` object.|  
+|[CDacl::AddAllowedAce](#addallowedace)|Adds an allowed ACE (access-control entry) to the `CDacl` object.|  
+|[CDacl::AddDeniedAce](#adddeniedace)|Adds a denied ACE to the `CDacl` object.|  
+|[CDacl::GetAceCount](#getacecount)|Returns the number of ACEs (access-control entries) in the `CDacl` object.|  
+|[CDacl::RemoveAce](#removeace)|Removes a specific ACE (access-control entry) from the `CDacl` object.|  
+|[CDacl::RemoveAllAces](#removeallaces)|Removes all of the ACEs contained in the `CDacl` object.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDacl::operator =](#cdacl__operator__eq)|Assignment operator.|  
+|[CDacl::operator =](#operator_eq)|Assignment operator.|  
   
 ## Remarks  
  An object's security descriptor can contain a DACL. A DACL contains zero or more ACEs (access-control entries) that identify the users and groups who can access the object. If a DACL is empty (that is, it contains zero ACEs), no access is explicitly granted, so access is implicitly denied. However, if an object's security descriptor does not have a DACL, the object is unprotected and everyone has complete access.  
   
  To retrieve an object's DACL, you must be the object's owner or have READ_CONTROL access to the object. To change an object's DACL, you must have WRITE_DAC access to the object.  
   
- Use the class methods provided to create, add, remove, and delete ACEs from the `CDacl` object. See also [AtlGetDacl](../Topic/AtlGetDacl.md) and [AtlSetDacl](../Topic/AtlSetDacl.md).  
+ Use the class methods provided to create, add, remove, and delete ACEs from the `CDacl` object. See also [AtlGetDacl](http://msdn.microsoft.com/library/a0973648-0d46-4c1a-914f-bda861fe5d19) and [AtlSetDacl](http://msdn.microsoft.com/library/eb88ccb6-1f1b-444d-b0c9-8d5cd0dd6c0b).  
   
  For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
@@ -90,7 +90,7 @@ class CDacl : public CAcl
 ## Requirements  
  **Header:** atlsecurity.h  
   
-##  <a name="cdacl__addallowedace"></a>  CDacl::AddAllowedAce  
+##  <a name="addallowedace"></a>  CDacl::AddAllowedAce  
  Adds an allowed ACE (access-control entry) to the `CDacl` object.  
   
 ```
@@ -132,7 +132,7 @@ bool AddAllowedAce(const CSid& rSid,
   
  See [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) for a description of the various flags which can be set in the `AceFlags` parameter.  
   
-##  <a name="cdacl__adddeniedace"></a>  CDacl::AddDeniedAce  
+##  <a name="adddeniedace"></a>  CDacl::AddDeniedAce  
  Adds a denied ACE (access-control entry) to the `CDacl` object.  
   
 ```
@@ -174,7 +174,7 @@ bool AddDeniedAce(const CSid& rSid,
   
  See [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) for a description of the various flags which can be set in the `AceFlags` parameter.  
   
-##  <a name="cdacl__cdacl"></a>  CDacl::CDacl  
+##  <a name="cdacl"></a>  CDacl::CDacl  
  The constructor.  
   
 ```
@@ -190,7 +190,7 @@ CDacl (const ACL& rhs) throw(...);
 ### Remarks  
  The `CDacl` object can be optionally created using an existing **ACL** structure. It is important to note that only a DACL (discretionary access-control list), and not a SACL (system access-control list), should be passed as this parameter. In debug builds, passing a SACL will cause an ASSERT. In release builds, passing a SACL will cause the ACEs (access-control entries) in the ACL to be ignored, and no error will occur.  
   
-##  <a name="cdacl___dtorcdacl"></a>  CDacl::~CDacl  
+##  <a name="dtor"></a>  CDacl::~CDacl  
  The destructor.  
   
 ```
@@ -198,9 +198,9 @@ CDacl (const ACL& rhs) throw(...);
 ```  
   
 ### Remarks  
- The destructor frees any resources acquired by the object, including all ACEs (access-control entries) using [CDacl::RemoveAllAces](#cdacl__removeallaces).  
+ The destructor frees any resources acquired by the object, including all ACEs (access-control entries) using [CDacl::RemoveAllAces](#removeallaces).  
   
-##  <a name="cdacl__getacecount"></a>  CDacl::GetAceCount  
+##  <a name="getacecount"></a>  CDacl::GetAceCount  
  Returns the number of ACEs (access-control entries) in the `CDacl` object.  
   
 ```
@@ -210,7 +210,7 @@ UINT GetAceCount() const throw();
 ### Return Value  
  Returns the number of ACEs contained in the `CDacl` object.  
   
-##  <a name="cdacl__operator__eq"></a>  CDacl::operator =  
+##  <a name="operator_eq"></a>  CDacl::operator =  
  Assignment operator.  
   
 ```
@@ -227,7 +227,7 @@ CDacl& operator= (const ACL& rhs) throw(...);
 ### Remarks  
  You should ensure that you only pass a DACL (discretionary access-control list) to this function. Passing a SACL (system access-control list) to this function will cause an ASSERT in debug builds but will cause no error in release builds.  
   
-##  <a name="cdacl__removeace"></a>  CDacl::RemoveAce  
+##  <a name="removeace"></a>  CDacl::RemoveAce  
  Removes a specific ACE (access-control entry) from the `CDacl` object.  
   
 ```
@@ -239,9 +239,9 @@ void RemoveAce(UINT   nIndex) throw();
  Index to the ACE entry to remove.  
   
 ### Remarks  
- This method is derived from [CAtlArray::RemoveAt](../../atl/reference/catlarray-class.md#catlarray__removeat).  
+ This method is derived from [CAtlArray::RemoveAt](../../atl/reference/catlarray-class.md#removeat).  
   
-##  <a name="cdacl__removeallaces"></a>  CDacl::RemoveAllAces  
+##  <a name="removeallaces"></a>  CDacl::RemoveAllAces  
  Removes all of the ACEs (access-control entries) contained in the `CDacl` object.  
   
 ```
@@ -252,7 +252,7 @@ void RemoveAllAces() throw();
  Removes every **ACE** (access-control entry) structure (if any) in the `CDacl` object.  
   
 ## See Also  
- [Security Sample](../../top/visual-cpp-samples.md)   
+ [Security Sample](../../visual-cpp-samples.md)   
  [CAcl Class](../../atl/reference/cacl-class.md)   
  [ACLs](http://msdn.microsoft.com/library/windows/desktop/aa374872)   
  [ACEs](http://msdn.microsoft.com/library/windows/desktop/aa374868)   

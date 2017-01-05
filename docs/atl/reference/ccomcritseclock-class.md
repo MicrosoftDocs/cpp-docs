@@ -57,15 +57,15 @@ template<class TLock> class CComCritSecLock
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComCritSecLock::CComCritSecLock](../Topic/CComCritSecLock::CComCritSecLock.md)|The constructor.|  
-|[CComCritSecLock::~CComCritSecLock](../Topic/CComCritSecLock::~CComCritSecLock.md)|The destructor.|  
+|[CComCritSecLock::CComCritSecLock](#ctor)|The constructor.|  
+|[CComCritSecLock::~CComCritSecLock](#dtor)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComCritSecLock::Lock](../Topic/CComCritSecLock::Lock.md)|Call this method to lock the critical section object.|  
-|[CComCritSecLock::Unlock](../Topic/CComCritSecLock::Unlock.md)|Call this method to unlock the critical section object.|  
+|[CComCritSecLock::Lock](#lock)|Call this method to lock the critical section object.|  
+|[CComCritSecLock::Unlock](#unlock)|Call this method to unlock the critical section object.|  
   
 ## Remarks  
  Use this class to lock and unlock objects in a safer way than with the [CComCriticalSection Class](../../atl/reference/ccomcriticalsection-class.md) or [CComAutoCriticalSection Class](../../atl/reference/ccomautocriticalsection-class.md).  
@@ -73,7 +73,7 @@ template<class TLock> class CComCritSecLock
 ## Requirements  
  **Header:** atlbase.h  
   
-##  <a name="ccomcritseclock__ccomcritseclock"></a>  CComCritSecLock::CComCritSecLock  
+##  <a name="ctor"></a>  CComCritSecLock::CComCritSecLock  
  The constructor.  
   
 ```
@@ -91,7 +91,7 @@ CComCritSecLock(
 ### Remarks  
  Initializes the critical section object.  
   
-##  <a name="ccomcritseclock___dtorccomcritseclock"></a>  CComCritSecLock::~CComCritSecLock  
+##  <a name="dtor"></a>  CComCritSecLock::~CComCritSecLock  
  The destructor.  
   
 ```
@@ -101,7 +101,7 @@ CComCritSecLock(
 ### Remarks  
  Unlocks the critical section object.  
   
-##  <a name="ccomcritseclock__lock"></a>  CComCritSecLock::Lock  
+##  <a name="lock"></a>  CComCritSecLock::Lock  
  Call this method to lock the critical section object.  
   
 ```
@@ -114,7 +114,7 @@ HRESULT Lock() throw();
 ### Remarks  
  If the object is already locked, an ASSERT error will occur in debug builds.  
   
-##  <a name="ccomcritseclock__unlock"></a>  CComCritSecLock::Unlock  
+##  <a name="unlock"></a>  CComCritSecLock::Unlock  
  Call this method to unlock the critical section object.  
   
 ```

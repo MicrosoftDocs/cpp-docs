@@ -88,11 +88,11 @@ struct CDaoRelationInfo
  The number of `CDaoRelationFieldInfo` objects in the `m_pFieldInfos` data member.  
   
 ## Remarks  
- The references to Primary and Secondary above indicate how the information is returned by the [GetRelationInfo](../../mfc/reference/cdaodatabase-class.md#GetRelationInfo) member function in class `CDaoDatabase`.  
+ The references to Primary and Secondary above indicate how the information is returned by the [GetRelationInfo](../../mfc/reference/cdaodatabase-class.md#getrelationinfo) member function in class `CDaoDatabase`.  
   
  Relation objects are not represented by an MFC class. Instead, the DAO object underlying an MFC object of the `CDaoDatabase` class maintains a collection of relation objects: `CDaoDatabase` supplies member functions to access some individual items of relation information, or you can access them all at once with a `CDaoRelationInfo` object by calling the `GetRelationInfo` member function of the containing database object.  
   
- Information retrieved by the [CDaoDatabase::GetRelationInfo](../../mfc/reference/cdaodatabase-class.md#GetRelationInfo) member function is stored in a `CDaoRelationInfo` structure. `CDaoRelationInfo` also defines a `Dump` member function in debug builds. You can use `Dump` to dump the contents of a `CDaoRelationInfo` object.  
+ Information retrieved by the [CDaoDatabase::GetRelationInfo](../../mfc/reference/cdaodatabase-class.md#getrelationinfo) member function is stored in a `CDaoRelationInfo` structure. `CDaoRelationInfo` also defines a `Dump` member function in debug builds. You can use `Dump` to dump the contents of a `CDaoRelationInfo` object.  
   
 ## Requirements  
  **Header:** afxdao.h  

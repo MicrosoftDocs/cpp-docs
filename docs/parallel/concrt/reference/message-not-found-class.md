@@ -49,7 +49,7 @@ class message_not_found : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[message_not_found::message_not_found Constructor](#message_not_found__message_not_found_constructor)|Overloaded. Constructs a `message_not_found` object.|  
+|[message_not_found::message_not_found Constructor](#ctor)|Overloaded. Constructs a `message_not_found` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  
@@ -61,7 +61,7 @@ class message_not_found : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="message_not_found__message_not_found_constructor"></a>  message_not_found::message_not_found Constructor  
+##  <a name="ctor"></a>  message_not_found::message_not_found Constructor  
  Constructs a `message_not_found` object.  
   
 ```
@@ -75,7 +75,7 @@ message_not_found() throw();
  A descriptive message of the error.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
+ [concurrency Namespace](concurrency-namespace.md)   
  [Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md)
 
 

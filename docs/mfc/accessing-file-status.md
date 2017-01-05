@@ -45,7 +45,7 @@ translation.priority.ht:
   
  Thus, you could use the result of **GetStatus** to determine whether to use the **CFile::modeCreate** flag when opening a file, as shown by the following example:  
   
- [!code-cpp[NVC_MFCFiles#3](../atl-mfc-shared/reference/codesnippet/CPP/accessing-file-status_1.cpp)]  
+ [!code-cpp[NVC_MFCFiles#3](../atl-mfc-shared/reference/codesnippet/cpp/accessing-file-status_1.cpp)]  
   
  For related information, see [Serialization](../mfc/serialization-in-mfc.md).  
   

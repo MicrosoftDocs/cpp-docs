@@ -64,7 +64,7 @@ This topic compares the behavior of the synchronization data structures that are
  To better understand the difference between the `event` class and Windows events, consider the following example. This example enables the scheduler to create at most two simultaneous tasks and then calls two similar functions that use the `event` class and a Windows manual-reset event. Each function first creates several tasks that wait for a shared event to become signaled. Each function then yields to the running tasks and then signals the event. Each function then waits for the signaled event.  
   
 ### Code  
- [!code-cpp[concrt-event-comparison#1](../../parallel/concrt/codesnippet/CPP/comparing-synchronization-data-structures-to-the-windows-api_1.cpp)]  
+ [!code-cpp[concrt-event-comparison#1](../../parallel/concrt/codesnippet/cpp/comparing-synchronization-data-structures-to-the-windows-api_1.cpp)]  
   
 ### Comments  
  This example produces the following sample output:  

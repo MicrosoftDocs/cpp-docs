@@ -50,23 +50,23 @@ class CD2DBrushProperties : public D2D1_BRUSH_PROPERTIES;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CD2DBrushProperties::CD2DBrushProperties](#cd2dbrushproperties__cd2dbrushproperties)|Overloaded. Creates a `CD2D_BRUSH_PROPERTIES` structure|  
+|[CD2DBrushProperties::CD2DBrushProperties](#cd2dbrushproperties)|Overloaded. Creates a `CD2D_BRUSH_PROPERTIES` structure|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CD2DBrushProperties::CommonInit](#cd2dbrushproperties__commoninit)|Initializes the object|  
+|[CD2DBrushProperties::CommonInit](#commoninit)|Initializes the object|  
   
 ## Inheritance Hierarchy  
  `D2D1_BRUSH_PROPERTIES`  
   
- [CD2DBrushProperties](../../mfc/reference/cd2dbrushproperties-class.md)  
+ `CD2DBrushProperties`  
   
 ## Requirements  
  **Header:** afxrendertarget.h  
   
-##  <a name="cd2dbrushproperties__cd2dbrushproperties"></a>  CD2DBrushProperties::CD2DBrushProperties  
+##  <a name="cd2dbrushproperties"></a>  CD2DBrushProperties::CD2DBrushProperties  
  Creates a CD2D_BRUSH_PROPERTIES structure  
   
 ```  
@@ -89,7 +89,7 @@ CD2DBrushProperties(
  `_transform`  
  The transformation to apply to the brush  
   
-##  <a name="cd2dbrushproperties__commoninit"></a>  CD2DBrushProperties::CommonInit  
+##  <a name="commoninit"></a>  CD2DBrushProperties::CommonInit  
  Initializes the object  
   
 ```  

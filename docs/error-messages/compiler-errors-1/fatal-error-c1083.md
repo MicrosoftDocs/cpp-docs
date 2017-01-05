@@ -47,7 +47,7 @@ Cannot open filetype file: 'file': message
 #include <algorithms.h>  
 ```  
   
- might not find the file you intend. There is a Standard C++ Library header file named algorithms that does not have a .h file name extension. It would not be found by this `include` directive. To fix this issue, verify that the correct file name is entered.  
+ might not find the file you intend. There is a C++ Standard Library header file named algorithms that does not have a .h file name extension. It would not be found by this `include` directive. To fix this issue, verify that the correct file name is entered.  
   
  Certain C Runtime Library headers are located in a subdirectory of the standard include directory. For example, to include sys\types.h, you must include the sys subdirectory name in the include directive:  
   
@@ -67,7 +67,7 @@ Cannot open filetype file: 'file': message
   
  Even when header files are listed in **Solution Explorer** as part of a project, the files are only found by the compiler when they are referred to by an `include` or `import` directive and are located on a directory search path. Different kinds of builds might use different search paths. The **/X** compiler option can be used to exclude directories from the include file search path. This enables different builds to use different include files that have the same name, but are kept in different directories. This is an alternative to conditional compilation by using preprocessor commands. For more information about the **/X** compiler option, see [/X (Ignore Standard Include Paths)](../../build/reference/x-ignore-standard-include-paths.md).  
   
- When the compiler is invoked on the command line, environment variables are often used to specify search paths. If the search path described by the **INCLUDE** environment variable is not set correctly, a C1083 error is generated. For more information about how to use environment variables, see [How to: Use Environment Variables in a Build](../Topic/How%20to:%20Use%20Environment%20Variables%20in%20a%20Build.md).  
+ When the compiler is invoked on the command line, environment variables are often used to specify search paths. If the search path described by the **INCLUDE** environment variable is not set correctly, a C1083 error is generated. For more information about how to use environment variables, see [How to: Use Environment Variables in a Build](http://msdn.microsoft.com/Library/7f9e4469-8865-4b59-aab3-3ff26bd36e77).  
   
  To fix this issue, correct the path that the compiler uses to search for the included or imported file. A new project uses default search paths. You may have to modify the path to add a directory for your project. If you are compiling on the command line, set the **INCLUDE** environment variable or the **/I** compiler option to specify the path of the file. To set the include directory path in Visual Studio, open the project’s **Property Pages** dialog box, expand **Configuration Properties** and **VC++ Directories**, and then edit the **Include Directories** value. For more information about the per-user and per-project directories searched by the compiler in Visual Studio, see [VC++ Directories Property Page](../../ide/vcpp-directories-property-page.md). For more information about the **/I** compiler option, see [/I (Additional Include Directories)](../../build/reference/i-additional-include-directories.md).  
   
@@ -103,4 +103,4 @@ Cannot open filetype file: 'file': message
  For information about how to build C/C++ projects in the IDE or on the command line, and information about setting environment variables, see [Building C/C++ Programs](../../build/building-c-cpp-programs.md).
  
  ## See Also
- [MSBuild Properties](/visual-studio/msbuild/msbuild-properties)
+ [MSBuild Properties](/visualstudio/msbuild/msbuild-properties)

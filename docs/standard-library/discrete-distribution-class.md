@@ -270,7 +270,7 @@ struct param_type {
  See parent topic [discrete_distribution Class](../standard-library/discrete-distribution-class.md).  
   
 ### Remarks  
- This parameter package can be passed to [operator()](../misc/discrete-distribution-operator-call.md) to generate the return value.  
+ This parameter package can be passed to `operator()` to generate the return value.  
   
 ## See Also  
  [\<random>](../standard-library/random.md)

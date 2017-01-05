@@ -81,7 +81,6 @@ Use this dialog box to specify input and output options for [Mt.exe](http://msdn
  Specifies whether the application is DPI-aware. By default, the setting is **Yes** for MFC projects and **No** otherwise because only MFC projects have built in DPI awareness. You can override the setting to **Yes** if you add code to handle different DPI settings. Your application might appear fuzzy or small if you set it as DPI-aware when it is not.  
   
 ## See Also  
- [ClickOnce Application Manifest](/visual-studio/deployment/clickonce-application-manifest)   
+ [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)   
  [Manifest Tool Property Pages](../ide/manifest-tool-property-pages.md)   
- [How to: Open Project Property Pages](../misc/how-to-open-project-property-pages.md)   
- [How to: Edit Project Property Sheets](../misc/how-to-edit-project-property-sheets.md)
+ [Working with Project Properties](../ide/working-with-project-properties.md)   

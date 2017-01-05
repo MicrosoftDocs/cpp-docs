@@ -1182,7 +1182,7 @@ valarray<Type> operator[](const valarray<size_t>& _Indarray) const;
 ### Remarks  
  The member operator is overloaded to provide several ways to select sequences of elements from among those controlled by *\****this**. The first group of five member operators work in conjunction with various overloads of [operator=](#valarray__operator_eq) (and other assigning operators) to allow selective replacement (slicing) of the controlled sequence. The selected elements must exist.  
   
- When compiling with _SECURE_SCL 1, a runtime error will occur if you attempt to access an element outside the bounds of the valarray.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
+ When compiled by using [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) defined as 1 or 2, a runtime error occurs if you attempt to access an element outside the bounds of the valarray.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
   
 ### Example  
   See the examples for [slice::slice](../standard-library/slice-class.md#slice__slice) and [gslice::gslice](../standard-library/gslice-class.md#gslice__gslice) for an example of how to declare and use the operator.  

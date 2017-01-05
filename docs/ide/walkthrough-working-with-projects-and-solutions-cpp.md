@@ -38,7 +38,7 @@ translation.priority.ht:
 # Walkthrough: Working with Projects and Solutions (C++)
 Here's how to create a C++ project in Visual Studio, add code, and then build and run the project. The project in this walkthrough is a program that tracks how many players are playing different card games.  
   
- In [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)], work is organized in projects and solutions. A solution can contain more than one project—for example, a DLL and an executable that references that DLL. For more information, see [Solutions and Projects](/visual-studio/ide/solutions-and-projects-in-visual-studio).  
+ In [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)], work is organized in projects and solutions. A solution can contain more than one project—for example, a DLL and an executable that references that DLL. For more information, see [Solutions and Projects](/visualstudio/ide/solutions-and-projects-in-visual-studio).  
   
 ## Prerequisites  
   
@@ -108,7 +108,7 @@ Here's how to create a C++ project in Visual Studio, add code, and then build an
   
      The line `#pragma once` tells the compiler to include the file only one time. For more information, see [once](../preprocessor/once.md).  
   
-     For information about other C++ keywords in this header file, see [class](../cpp/class-cpp.md), [int](../cpp/fundamental-types-cpp.md), [static](../misc/static-cpp.md), and [public](../cpp/public-cpp.md).  
+     For information about other C++ keywords in this header file, see [class](../cpp/class-cpp.md), [int](../cpp/fundamental-types-cpp.md), [static](../cpp/storage-classes-cpp.md), and [public](../cpp/public-cpp.md).  
   
 6.  Choose the **Cardgame.cpp** tab in the editing pane to open it for editing.  
   

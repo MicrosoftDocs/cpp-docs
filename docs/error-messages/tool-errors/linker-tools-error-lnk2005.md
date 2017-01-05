@@ -37,19 +37,17 @@ translation.priority.ht:
 # Linker Tools Error LNK2005
 symbol already defined in object  
   
- The given `symbol`, displayed in its decorated form, was multiply defined.  
+The given `symbol`, displayed in its decorated form, was multiply defined.  
   
- For more information, see the Knowledge Base articles:  
+For more information, see the Knowledge Base articles:  
   
--   "LNK2005 Errors When Link C Run-Time Libraries Are Linked Before MFC Libraries" (Q148652)  
+-   [A LNK2005 error occurs when the CRT library and MFC libraries are linked in the wrong order in Visual C++](https://support.microsoft.com/kb/148652)  
   
--   "Global Overloaded Delete Operator Causes LNK2005" (Q140440)  
+-   [FIX: Global Overloaded Delete Operator Causes LNK2005](https://support.microsoft.com/kb/140440)  
   
--   "LNK2005 Errors on New and Delete When Defining _ATL_MIN_CRT" (Q184235).  
+-   [You receive LNK2005 errors when you compile an ATL executable (.exe) project in Visual C++](https://support.microsoft.com/kb/184235).  
   
- You can find Knowledge Base articles on the MSDN Library CD-ROM or at [http://support.microsoft.com/search](http://support.microsoft.com/search).  
-  
- This error is followed by fatal error [LNK1169](../../error-messages/tool-errors/linker-tools-error-lnk1169.md).  
+This error is followed by fatal error [LNK1169](../../error-messages/tool-errors/linker-tools-error-lnk1169.md).  
   
 ### To fix by checking the following possible causes  
   
@@ -65,7 +63,7 @@ symbol already defined in object
   
     -   Declare the variable in .h: `extern BOOL MyBool;` and then assign to it in a .c or .cpp file: `BOOL MyBool = FALSE;`.  
   
-    -   Declare the variable [static](../../misc/static-cpp.md).  
+    -   Declare the variable [static](../../cpp/storage-classes-cpp.md#static).  
   
     -   Declare the variable [selectany](../../cpp/selectany.md).  
   

@@ -52,7 +52,52 @@ variable
  [in] The variable to be bound to the bookmark column.  
   
 ## Example  
- <!-- FIXME [!CODE [NVC_OLEDB_Consumer#17](../CodeSnippet/VS_Snippets_Cpp/NVC_OLEDB_Consumer#17)]  -->
+
+```cpp
+class CArtistsBookmark
+{
+public:
+// Data Elements
+   CBookmark<4> m_bookmark;
+   short m_nAge;
+   TCHAR m_szFirstName[21];
+   TCHAR m_szLastName[31];
+
+// Output binding map
+BEGIN_COLUMN_MAP(CArtistsBookmark)
+   BOOKMARK_ENTRY(m_bookmark)
+   COLUMN_ENTRY(1, m_nAge)
+   COLUMN_ENTRY(2, m_szFirstName)
+   COLUMN_ENTRY(3, m_szLastName)
+END_COLUMN_MAP()
+
+   void GetRowsetProperties(CDBPropSet* pPropSet)
+   {
+      pPropSet->AddProperty(DBPROP_BOOKMARKS, true);
+   }
+
+   HRESULT OpenDataSource()
+   {
+      CDataSource _db;
+      _db.Open();
+      return m_session.Open(_db);
+   }
+
+   void CloseDataSource()
+   {
+      m_session.Close();
+   }
+
+   CSession m_session;
+
+   DEFINE_COMMAND_EX(CArtistsBookmark, L" \
+   SELECT \
+      Age, \
+      FirstName, \
+      LastName \
+      FROM Artists")
+};
+```
   
 ## Requirements  
  **Header:** atldbcli.h  

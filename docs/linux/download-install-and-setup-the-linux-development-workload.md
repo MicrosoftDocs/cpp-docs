@@ -38,7 +38,7 @@ translation.priority.ht:
 2. Click **Install** to continue with the installation.
 
 ## Linux Setup
-The target Linux computer must have *openssh-server*, *g++*, *gdb*, and *gdbserver* installed.  These can be installed as follows:
+The target Linux computer must have **openssh-server**, **g++**, **gdb**, and **gdbserver** installed, and the ssh daemon must be running.  If these are not already present, you can install them as follows:
  
 1. At a shell prompt on your Linux computer, run:
 
@@ -46,7 +46,7 @@ The target Linux computer must have *openssh-server*, *g++*, *gdb*, and *gdbserv
 
    You may be prompted for your root password due to the sudo command.  If so, enter it and continue.  Once complete, these services and tools will be installed.
 
-1. Ensure the ssh service is running on your computer by running
+1. Ensure the ssh service is running on your Linux computer by running:
 
    `sudo service ssh start`
    

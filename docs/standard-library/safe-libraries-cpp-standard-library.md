@@ -14,8 +14,8 @@ dev_langs:
   - "C++"
 helpviewer_keywords: 
   - "Safe Libraries"
-  - "Safe Libraries, Standard C++ Library"
-  - "Safe Standard C++ Library"
+  - "Safe Libraries, C++ Standard Library"
+  - "Safe C++ Standard Library"
 ms.assetid: 3993340f-1f29-4d81-b3f5-52a52bc8e148
 caps.latest.revision: 10
 author: "corob-msft"
@@ -38,14 +38,14 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Safe Libraries: C++ Standard Library
-Several enhancements have been made to the libraries that ship with Visual C++, including the Standard C++ Library, to make them more secure.  
+Several enhancements have been made to the libraries that ship with Visual C++, including the C++ Standard Library, to make them more secure.  
   
- Several methods in the Standard C++ Library have been identified as potentially unsafe because they could lead to a buffer overrun or other code defect. The use of these methods is discouraged, and new, more secure methods have been created to replace them. These new methods all end in `_s`.  
+ Several methods in the C++ Standard Library have been identified as potentially unsafe because they could lead to a buffer overrun or other code defect. The use of these methods is discouraged, and new, more secure methods have been created to replace them. These new methods all end in `_s`.  
   
  Several enhancements have also been made to make iterators and algorithms more secure. For more information, see [Checked Iterators](../standard-library/checked-iterators.md), [Debug Iterator Support](../standard-library/debug-iterator-support.md) and [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md).  
   
 ## Remarks  
- The following table lists the Standard C++ Library methods that are potentially unsafe, as well as their safer equivalent:  
+ The following table lists the C++ Standard Library methods that are potentially unsafe, as well as their safer equivalent:  
   
 |Potentially unsafe method|Safer equivalent|  
 |-------------------------------|----------------------|  
@@ -64,5 +64,5 @@ Several enhancements have been made to the libraries that ship with Visual C++, 
  [Debug Iterator Support](../standard-library/debug-iterator-support.md)  
   
 ## See Also  
- [STL Overview](../standard-library/cpp-standard-library-overview.md)
+ [C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)
 

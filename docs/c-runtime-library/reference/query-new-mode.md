@@ -69,7 +69,7 @@ Returns an integer indicating the new handler mode set by `_set_new_mode` for `m
  Returns the current new handler mode, namely 0 or 1, for `malloc`. A return value of 1 indicates that, on failure to allocate memory, `malloc` calls the new handler routine; a return value of 0 indicates that it does not.  
   
 ## Remarks  
- The C++ `_query_new_mode` function returns an integer that indicates the new handler mode that is set by the C++ [_set_new_mode](../../c-runtime-library/reference/set-new-mode.md) function for [malloc](../../c-runtime-library/reference/malloc.md). The new handler mode indicates whether, on failure to allocate memory, `malloc` is to call the new handler routine as set by [_set_new_handler](../../c-runtime-library/reference/set-new-handler.md). By default, `malloc` does not call the new handler routine on failure. You can use `_set_new_mode` to override this behavior so that on failure `malloc` calls the new handler routine in the same way that the **new** operator does when it fails to allocate memory. For more information, see the [operator delete](../../misc/operator-delete-function.md) and [operator new](../../misc/operator-new-function.md) functions in *C++ Language Reference*.  
+ The C++ `_query_new_mode` function returns an integer that indicates the new handler mode that is set by the C++ [_set_new_mode](../../c-runtime-library/reference/set-new-mode.md) function for [malloc](../../c-runtime-library/reference/malloc.md). The new handler mode indicates whether, on failure to allocate memory, `malloc` is to call the new handler routine as set by [_set_new_handler](../../c-runtime-library/reference/set-new-handler.md). By default, `malloc` does not call the new handler routine on failure. You can use `_set_new_mode` to override this behavior so that on failure `malloc` calls the new handler routine in the same way that the **new** operator does when it fails to allocate memory. For more information, see the discussion of the [new and delete operators](../../cpp/new-and-delete-operators.md) in the C++ Language Reference.  
   
 ## Requirements  
   
@@ -83,7 +83,7 @@ Returns an integer indicating the new handler mode set by `_set_new_mode` for `m
  All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  
+ Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Memory Allocation](../../c-runtime-library/memory-allocation.md)   

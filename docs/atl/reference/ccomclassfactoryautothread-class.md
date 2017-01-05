@@ -54,15 +54,15 @@ class CComClassFactoryAutoThread : public IClassFactory,   public CComObjectRoot
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComClassFactoryAutoThread::CreateInstance](#ccomclassfactoryautothread__createinstance)|Creates an object of the specified CLSID.|  
-|[CComClassFactoryAutoThread::LockServer](#ccomclassfactoryautothread__lockserver)|Locks the class factory in memory.|  
+|[CComClassFactoryAutoThread::CreateInstance](#createinstance)|Creates an object of the specified CLSID.|  
+|[CComClassFactoryAutoThread::LockServer](#lockserver)|Locks the class factory in memory.|  
   
 ## Remarks  
  `CComClassFactoryAutoThread` is similar to [CComClassFactory](../../atl/reference/ccomclassfactory-class.md), but allows objects to be created in multiple apartments. To take advantage of this support, derive your EXE module from [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md).  
   
- ATL objects normally acquire a class factory by deriving from [CComCoClass](../../atl/reference/ccomcoclass-class.md). This class includes the macro [DECLARE_CLASSFACTORY](../Topic/DECLARE_CLASSFACTORY.md), which declares [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) as the default class factory. To use `CComClassFactoryAutoThread`, specify the [DECLARE_CLASSFACTORY_AUTO_THREAD](../Topic/DECLARE_CLASSFACTORY_AUTO_THREAD.md) macro in your object's class definition. For example:  
+ ATL objects normally acquire a class factory by deriving from [CComCoClass](../../atl/reference/ccomcoclass-class.md). This class includes the macro [DECLARE_CLASSFACTORY](http://msdn.microsoft.com/library/51a6b925-07c0-4d3a-9174-0b8c808975e4), which declares [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) as the default class factory. To use `CComClassFactoryAutoThread`, specify the [DECLARE_CLASSFACTORY_AUTO_THREAD](http://msdn.microsoft.com/library/19d7105e-03e8-4412-9f5e-5384c8a5e18f) macro in your object's class definition. For example:  
   
- [!code-cpp[NVC_ATL_COM#9](../../atl/codesnippet/CPP/ccomclassfactoryautothread-class_1.h)]  
+ [!code-cpp[NVC_ATL_COM#9](../../atl/codesnippet/cpp/ccomclassfactoryautothread-class_1.h)]  
   
 ## Inheritance Hierarchy  
  `CComObjectRootBase`  
@@ -76,7 +76,7 @@ class CComClassFactoryAutoThread : public IClassFactory,   public CComObjectRoot
 ## Requirements  
  **Header:** atlcom.h  
   
-##  <a name="ccomclassfactoryautothread__createinstance"></a>  CComClassFactoryAutoThread::CreateInstance  
+##  <a name="createinstance"></a>  CComClassFactoryAutoThread::CreateInstance  
  Creates an object of the specified CLSID and retrieves an interface pointer to this object.  
   
 ```
@@ -101,7 +101,7 @@ STDMETHODIMP CreateInstance(LPUNKNOWN pUnkOuter,
 ### Remarks  
  If your module derives from [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md), `CreateInstance` first selects a thread to create the object in the associated apartment.  
   
-##  <a name="ccomclassfactoryautothread__lockserver"></a>  CComClassFactoryAutoThread::LockServer  
+##  <a name="lockserver"></a>  CComClassFactoryAutoThread::LockServer  
  Increments and decrements the module lock count by calling **_Module::Lock** and **_Module::Unlock**, respectively.  
   
 ```
@@ -125,5 +125,5 @@ STDMETHODIMP LockServer(BOOL fLock);
  [CComClassFactory2 Class](../../atl/reference/ccomclassfactory2-class.md)   
  [CComClassFactorySingleton Class](../../atl/reference/ccomclassfactorysingleton-class.md)   
  [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   
- [CComGlobalsThreadModel](../Topic/CComGlobalsThreadModel.md)   
+ [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)   
  [Class Overview](../../atl/atl-class-overview.md)

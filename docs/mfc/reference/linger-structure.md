@@ -54,6 +54,6 @@ struct linger {
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CAsyncSocket::GetSockOpt](../../mfc/reference/casyncsocket-class.md#GetSockOpt)   
- [CAsyncSocket::SetSockOpt](../../mfc/reference/casyncsocket-class.md#SetSockOpt)
+ [CAsyncSocket::GetSockOpt](../../mfc/reference/casyncsocket-class.md#getsockopt)   
+ [CAsyncSocket::SetSockOpt](../../mfc/reference/casyncsocket-class.md#setsockopt)
 

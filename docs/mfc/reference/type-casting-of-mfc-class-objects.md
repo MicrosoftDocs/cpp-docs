@@ -84,13 +84,13 @@ STATIC_DOWNCAST(class_name, pobject)
  The pointer to be cast to a pointer to a *class_name* object.  
   
 ### Remarks  
- *pobject* must either be **NULL**, or point to an object of a class which is derived directly, or indirectly, from *class_name*. In builds of your application with the **_DEBUG** preprocessor symbol defined, the macro will **ASSERT** if *pobject* is not **NULL**, or if it points to an object that is not a "kind of" the class specified in the *class_name* parameter (see [CObject::IsKindOf](../../mfc/reference/cobject-class.md#cobject__iskindof)). In non- **_DEBUG** builds, the macro performs the cast without any type checking.  
+ *pobject* must either be **NULL**, or point to an object of a class which is derived directly, or indirectly, from *class_name*. In builds of your application with the **_DEBUG** preprocessor symbol defined, the macro will **ASSERT** if *pobject* is not **NULL**, or if it points to an object that is not a "kind of" the class specified in the *class_name* parameter (see [CObject::IsKindOf](../../mfc/reference/cobject-class.md#iskindof)). In non- **_DEBUG** builds, the macro performs the cast without any type checking.  
   
  The class specified in the *class_name* parameter must be derived from `CObject` and must use the `DECLARE_DYNAMIC` and `IMPLEMENT_DYNAMIC`, the `DECLARE_DYNCREATE` and `IMPLEMENT_DYNCREATE`, or the `DECLARE_SERIAL` and `IMPLEMENT_SERIAL` macros as explained in the article [CObject Class: Deriving a Class from CObject](../../mfc/deriving-a-class-from-cobject.md).  
   
  For example, you might cast a pointer to `CMyDoc`, called `pMyDoc`, to a pointer to **CDocument** using this expression:  
   
- [!code-cpp[NVC_MFCDocView#197](../../mfc/codesnippet/CPP/type-casting-of-mfc-class-objects_1.cpp)]  
+ [!code-cpp[NVC_MFCDocView#197](../../mfc/codesnippet/cpp/type-casting-of-mfc-class-objects_1.cpp)]  
   
  If `pMyDoc` does not point to an object derived directly or indirectly from **CDocument**, the macro will **ASSERT**.  
   

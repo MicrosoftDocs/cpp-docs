@@ -39,7 +39,7 @@ For information about Internet-related classes and functions, see:
   
 -   [AfxParseURL](../mfc/reference/internet-url-parsing-globals.md#afxparseurl)  
   
--   [AfxGetInternetHandleType](../Topic/AfxGetInternetHandleType.md)  
+-   [AfxGetInternetHandleType](http://msdn.microsoft.com/library/754d6b3c-4eee-4190-8688-e4fb0381e92f)  
   
 ## ActiveX control classes  
   

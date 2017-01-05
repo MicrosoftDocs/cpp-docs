@@ -17,7 +17,7 @@ dev_langs:
   - "C++"
 helpviewer_keywords: 
   - "algorithm header [C++]"
-  - "Standard C++ Library, algorithms"
+  - "C++ Standard Library, algorithms"
   - "<algorithm> header"
 ms.assetid: 19f97711-7a67-4a65-8fd1-9a2bd3ca327d
 caps.latest.revision: 23
@@ -40,7 +40,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # &lt;algorithm&gt;
-Defines Standard Template Library (STL) container template functions that perform algorithms.  
+Defines C++ Standard Library container template functions that perform algorithms.  
   
 ## Syntax  
   
@@ -49,19 +49,19 @@ Defines Standard Template Library (STL) container template functions that perfor
 ```  
   
 ## Remarks  
- The STL algorithms are generic because they can operate on a variety of data structures. The data structures that they can operate on include not only the STL container classes such as `vector` and `list`, but also program-defined data structures and arrays of elements that satisfy the requirements of a particular algorithm. STL algorithms achieve this level of generality by accessing and traversing the elements of a container indirectly through iterators.  
+ The C++ Standard Library algorithms are generic because they can operate on a variety of data structures. The data structures that they can operate on include not only the C++ Standard Library container classes such as `vector` and `list`, but also program-defined data structures and arrays of elements that satisfy the requirements of a particular algorithm. C++ Standard Library algorithms achieve this level of generality by accessing and traversing the elements of a container indirectly through iterators.  
   
- STL algorithms process iterator ranges that are typically specified by their beginning or ending positions. The ranges referred to must be valid in the sense that all pointers in the ranges must be dereferenceable and, within the sequences of each range, the last position must be reachable from the first by incrementation.  
+ C++ Standard Library algorithms process iterator ranges that are typically specified by their beginning or ending positions. The ranges referred to must be valid in the sense that all pointers in the ranges must be dereferenceable and, within the sequences of each range, the last position must be reachable from the first by incrementation.  
   
- The STL algorithms extend the actions supported by the operations and member functions of each STL container and allow working, for example, with different types of container objects at the same time. Two suffixes have been used to convey information about the purpose of the algorithms.  
+ The C++ Standard Library algorithms extend the actions supported by the operations and member functions of each C++ Standard Library container and allow working, for example, with different types of container objects at the same time. Two suffixes have been used to convey information about the purpose of the algorithms.  
   
 -   The `_if` suffix indicates that the algorithm is used with function objects operating on the values of the elements rather than on the values of the elements themselves. The `find_if` algorithm looks for elements whose values satisfy the criterion specified by a function object, and the `find` algorithm searches for a particular value.  
   
 -   The _copy suffix indicates that the algorithm not only manipulates the values of the elements but also copies the modified values into a destination range. The `reverse` algorithm reverses the order of the elements within a range, and the `reverse_copy` algorithm also copies the result into a destination range.  
   
- STL algorithms are often classified into groups that indicate something about their purpose or requirements. These include modifying algorithms that change the value of elements as compared with non-modifying algorithms that do not. Mutating algorithms change the order of elements, but not the values of their elements. Removing algorithms can eliminate elements from a range or a copy of a range. Sorting algorithms reorder the elements in a range in various ways and sorted range algorithms only act on algorithms whose elements have been sorted in a particular way.  
+ C++ Standard Library algorithms are often classified into groups that indicate something about their purpose or requirements. These include modifying algorithms that change the value of elements as compared with non-modifying algorithms that do not. Mutating algorithms change the order of elements, but not the values of their elements. Removing algorithms can eliminate elements from a range or a copy of a range. Sorting algorithms reorder the elements in a range in various ways and sorted range algorithms only act on algorithms whose elements have been sorted in a particular way.  
   
- The STL numeric algorithms that are provided for numerical processing have their own header file [\<numeric>](../standard-library/numeric.md), and function objects and adaptors are defined in the header [\<functional>](../standard-library/functional.md) Function objects that return Boolean values are known as predicates. The default binary predicate is the comparison `operator<`. In general, the elements being ordered need to be less than comparable so that, given any two elements, it can be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering among the nonequivalent elements.  
+ The C++ Standard Library numeric algorithms that are provided for numerical processing have their own header file [\<numeric>](../standard-library/numeric.md), and function objects and adaptors are defined in the header [\<functional>](../standard-library/functional.md) Function objects that return Boolean values are known as predicates. The default binary predicate is the comparison `operator<`. In general, the elements being ordered need to be less than comparable so that, given any two elements, it can be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering among the nonequivalent elements.  
   
 ### Functions  
   
@@ -156,7 +156,7 @@ Defines Standard Template Library (STL) container template functions that perfor
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 
 
 

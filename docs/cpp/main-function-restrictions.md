@@ -37,7 +37,7 @@ translation.priority.ht:
 # main Function Restrictions
 Several restrictions apply to the **main** function that do not apply to any other C++ functions. The **main** function:  
   
--   Cannot be overloaded (see [Overloading](../misc/overloading-cpp.md)).  
+-   Cannot be overloaded (see [Function Overloading](function-overloading.md)).  
   
 -   Cannot be declared as **inline**.  
   

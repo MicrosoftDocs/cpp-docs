@@ -35,13 +35,6 @@ translation.priority.ht:
 # Consuming Generics (C++/CLI)
 Generics authored in one .NET language may be used in other .NET languages. Unlike templates, a generic in a compiled assembly still remains generic. Thus, one may instantiate the generic type in a different assembly and even in a different language than the assembly in which the generic type was defined.  
   
-## Remarks  
- For more information, see:  
-  
--   [Introduction to Generics](/dotnet/csharp/programming-guide/generics/introduction-to-generics)  
-  
--   [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)  
-  
 ## Example  
   
 ### Description  

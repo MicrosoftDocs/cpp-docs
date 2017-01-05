@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # multiset Class
-The Standard Template Library multiset class is used for the storage and retrieval of data from a collection in which the values of the elements contained need not be unique and in which they serve as the key values according to which the data is automatically ordered. The key value of an element in a multiset may not be changed directly. Instead, old values must be deleted and elements with new values inserted.  
+The C++ Standard Library multiset class is used for the storage and retrieval of data from a collection in which the values of the elements contained need not be unique and in which they serve as the key values according to which the data is automatically ordered. The key value of an element in a multiset may not be changed directly. Instead, old values must be deleted and elements with new values inserted.  
   
 ## Syntax  
   
@@ -60,7 +60,7 @@ class multiset
  The type that represents the stored allocator object that encapsulates details about the multiset's allocation and deallocation of memory. The default value is **allocator***\<Key>.*  
   
 ## Remarks  
- The STL multiset class is:  
+ The C++ Standard Library multiset class is:  
   
 -   An associative container, which is a variable size container that supports the efficient retrieval of element values based on an associated key value.  
   
@@ -961,7 +961,7 @@ allocator_type get_allocator() const;
  The allocator used by the multiset.  
   
 ### Remarks  
- Allocators for the multiset class specify how the class manages storage. The default allocators supplied with STL container classes is sufficient for most programming needs. Writing and using your own allocator class is an advanced C++ topic.  
+ Allocators for the multiset class specify how the class manages storage. The default allocators supplied with C++ Standard Library container classes are sufficient for most programming needs. Writing and using your own allocator class is an advanced C++ topic.  
   
 ### Example  
   
@@ -2149,5 +2149,5 @@ The multiset has elements: 10 20.
  [\<set> Members](http://msdn.microsoft.com/en-us/0c2d57c0-173f-4204-b579-c5f06aad8b95)   
  [Containers](../cpp/containers-modern-cpp.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 

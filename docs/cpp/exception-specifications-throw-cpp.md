@@ -51,9 +51,9 @@ void MyFunction(int i) throw();
   
 |Exception specification|Meaning|  
 |-----------------------------|-------------|  
-|throw()|The function does not throw an exception. However, if an exception is thrown out of a function marked throw(), the Visual C++ compiler will not call unexpected (see [unexpected](../c-runtime-library/reference/unexpected-crt.md) and [unexpected](../Topic/unexpected%20\(%3Cexception%3E\).md) for more information). If a function is marked with throw(), the Visual C++ compiler will assume that the function does not throw C++ exceptions and generate code accordingly. Due to code optimizations that might be performed by the C++ compiler (based on the assumption that the function does not throw any C++ exceptions) if a function does throw an exception, the program may not execute correctly.|  
+|throw()|The function does not throw an exception. However, if an exception is thrown out of a function marked throw(), the Visual C++ compiler will not call unexpected (see [unexpected](../c-runtime-library/reference/unexpected-crt.md) for more information). If a function is marked with throw(), the Visual C++ compiler will assume that the function does not throw C++ exceptions and generate code accordingly. Due to code optimizations that might be performed by the C++ compiler (based on the assumption that the function does not throw any C++ exceptions) if a function does throw an exception, the program may not execute correctly.|  
 |throw(...)|The function can throw an exception.|  
-|throw(`type`)|The function can throw an exception of type `type`. However, in Visual C++ .NET, this is interpreted as throw(...).  See [Function Exception Specifiers](../misc/15-4-function-exception-specifiers.md).|  
+|throw(`type`)|The function can throw an exception of type `type`. However, in Visual C++ .NET, this is interpreted as throw(...).|  
   
  If exception handling is used in an application, there must be one or more functions that handle thrown exceptions. Any functions called between the one that throws an exception and the one that handles the exception must be capable of throwing the exception.  
   

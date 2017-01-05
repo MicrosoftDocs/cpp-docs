@@ -62,33 +62,33 @@ template <class TKey, class TVal, class TEqual = CSimpleMapEqualHelper<TKey,
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleMap::_ArrayElementType](#csimplemap___arrayelementtype)|Typedef for the value type.|  
-|[CSimpleMap::_ArrayKeyType](#csimplemap___arraykeytype)|Typedef for the key type.|  
+|[CSimpleMap::_ArrayElementType](#_arrayelementtype)|Typedef for the value type.|  
+|[CSimpleMap::_ArrayKeyType](#_arraykeytype)|Typedef for the key type.|  
   
 ### Public Constructors  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleMap::CSimpleMap](#csimplemap__csimplemap)|The constructor.|  
-|[CSimpleMap::~CSimpleMap](#csimplemap___dtorcsimplemap)|The destructor.|  
+|[CSimpleMap::CSimpleMap](#csimplemap)|The constructor.|  
+|[CSimpleMap::~CSimpleMap](#dtor)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSimpleMap::Add](#csimplemap__add)|Adds a key and associated value to the map array.|  
-|[CSimpleMap::FindKey](#csimplemap__findkey)|Finds a specific key.|  
-|[CSimpleMap::FindVal](#csimplemap__findval)|Finds a specific value.|  
-|[CSimpleMap::GetKeyAt](#csimplemap__getkeyat)|Retrieves the specified key.|  
-|[CSimpleMap::GetSize](#csimplemap__getsize)|Returns the number of entries in the mapping array.|  
-|[CSimpleMap::GetValueAt](#csimplemap__getvalueat)|Retrieves the specified value.|  
-|[CSimpleMap::Lookup](#csimplemap__lookup)|Returns the value associated with the given key.|  
-|[CSimpleMap::Remove](#csimplemap__remove)|Removes a key and matching value.|  
-|[CSimpleMap::RemoveAll](#csimplemap__removeall)|Removes all keys and values.|  
-|[CSimpleMap::RemoveAt](#csimplemap__removeat)|Removes a specific key and matching value.|  
-|[CSimpleMap::ReverseLookup](#csimplemap__reverselookup)|Returns the key associated with the given value.|  
-|[CSimpleMap::SetAt](#csimplemap__setat)|Sets the value associated with the given key.|  
-|[CSimpleMap::SetAtIndex](#csimplemap__setatindex)|Sets the specific key and value.|  
+|[CSimpleMap::Add](#add)|Adds a key and associated value to the map array.|  
+|[CSimpleMap::FindKey](#findkey)|Finds a specific key.|  
+|[CSimpleMap::FindVal](#findval)|Finds a specific value.|  
+|[CSimpleMap::GetKeyAt](#getkeyat)|Retrieves the specified key.|  
+|[CSimpleMap::GetSize](#getsize)|Returns the number of entries in the mapping array.|  
+|[CSimpleMap::GetValueAt](#getvalueat)|Retrieves the specified value.|  
+|[CSimpleMap::Lookup](#lookup)|Returns the value associated with the given key.|  
+|[CSimpleMap::Remove](#remove)|Removes a key and matching value.|  
+|[CSimpleMap::RemoveAll](#removeall)|Removes all keys and values.|  
+|[CSimpleMap::RemoveAt](#removeat)|Removes a specific key and matching value.|  
+|[CSimpleMap::ReverseLookup](#reverselookup)|Returns the key associated with the given value.|  
+|[CSimpleMap::SetAt](#setat)|Sets the value associated with the given key.|  
+|[CSimpleMap::SetAtIndex](#setatindex)|Sets the specific key and value.|  
   
 ## Remarks  
  `CSimpleMap` provides support for a simple mapping array of any given type `T`, managing an unordered array of key elements and their associated values.  
@@ -103,9 +103,9 @@ template <class TKey, class TVal, class TEqual = CSimpleMapEqualHelper<TKey,
  **Header:** atlsimpcoll.h  
   
 ## Example  
- [!code-cpp[NVC_ATL_Utilities#91](../../atl/codesnippet/CPP/csimplemap-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#91](../../atl/codesnippet/cpp/csimplemap-class_1.cpp)]  
   
-##  <a name="csimplemap__add"></a>  CSimpleMap::Add  
+##  <a name="add"></a>  CSimpleMap::Add  
  Adds a key and associated value to the map array.  
   
 ```
@@ -125,21 +125,21 @@ BOOL Add(const TKey& key,  const TVal& val);
 ### Remarks  
  Each key and value pair added causes the mapping array memory to be freed and reallocated, in order to ensure the data for each is always stored contiguously. That is, the second key element always directly follows the first key element in memory and so on.  
   
-##  <a name="csimplemap___arrayelementtype"></a>  CSimpleMap::_ArrayElementType  
+##  <a name="_arrayelementtype"></a>  CSimpleMap::_ArrayElementType  
  A typedef for the key type.  
   
 ```
 typedef TVal _ArrayElementType;
 ```  
   
-##  <a name="csimplemap___arraykeytype"></a>  CSimpleMap::_ArrayKeyType  
+##  <a name="_arraykeytype"></a>  CSimpleMap::_ArrayKeyType  
  A typedef for the value type.  
   
 ```
 typedef TKey _ArrayKeyType;
 ```  
   
-##  <a name="csimplemap__csimplemap"></a>  CSimpleMap::CSimpleMap  
+##  <a name="csimplemap"></a>  CSimpleMap::CSimpleMap  
  The constructor.  
   
 ```
@@ -149,7 +149,7 @@ CSimpleMap();
 ### Remarks  
  Initializes the data members.  
   
-##  <a name="csimplemap___dtorcsimplemap"></a>  CSimpleMap::~CSimpleMap  
+##  <a name="dtor"></a>  CSimpleMap::~CSimpleMap  
  The destructor.  
   
 ```
@@ -159,7 +159,7 @@ CSimpleMap();
 ### Remarks  
  Frees all allocated resources.  
   
-##  <a name="csimplemap__findkey"></a>  CSimpleMap::FindKey  
+##  <a name="findkey"></a>  CSimpleMap::FindKey  
  Finds a specific key.  
   
 ```
@@ -173,7 +173,7 @@ int FindKey(const TKey& key) const;
 ### Return Value  
  Returns the index of the key if found, otherwise returns -1.  
   
-##  <a name="csimplemap__findval"></a>  CSimpleMap::FindVal  
+##  <a name="findval"></a>  CSimpleMap::FindVal  
  Finds a specific value.  
   
 ```
@@ -187,7 +187,7 @@ int FindVal(const TVal& val) const;
 ### Return Value  
  Returns the index of the value if it is found, otherwise returns -1.  
   
-##  <a name="csimplemap__getkeyat"></a>  CSimpleMap::GetKeyAt  
+##  <a name="getkeyat"></a>  CSimpleMap::GetKeyAt  
  Retrieves the key at the specified index.  
   
 ```
@@ -204,7 +204,7 @@ TKey& GetKeyAt(int nIndex) const;
 ### Remarks  
  The index passed by `nIndex` must be valid for the return value to be meaningful.  
   
-##  <a name="csimplemap__getsize"></a>  CSimpleMap::GetSize  
+##  <a name="getsize"></a>  CSimpleMap::GetSize  
  Returns the number of entries in the mapping array.  
   
 ```
@@ -214,7 +214,7 @@ int GetSize() const;
 ### Return Value  
  Returns the number of entries (a key and value is one entry) in the mapping array.  
   
-##  <a name="csimplemap__getvalueat"></a>  CSimpleMap::GetValueAt  
+##  <a name="getvalueat"></a>  CSimpleMap::GetValueAt  
  Retrieves the value at the specific index.  
   
 ```
@@ -231,7 +231,7 @@ TVal& GetValueAt(int nIndex) const;
 ### Remarks  
  The index passed by `nIndex` must be valid for the return value to be meaningful.  
   
-##  <a name="csimplemap__lookup"></a>  CSimpleMap::Lookup  
+##  <a name="lookup"></a>  CSimpleMap::Lookup  
  Returns the value associated with the given key.  
   
 ```
@@ -245,7 +245,7 @@ TVal Lookup(const TKey& key) const;
 ### Return Value  
  Returns the associated value. If no matching key is found, NULL is returned.  
   
-##  <a name="csimplemap__remove"></a>  CSimpleMap::Remove  
+##  <a name="remove"></a>  CSimpleMap::Remove  
  Removes a key and matching value.  
   
 ```
@@ -259,7 +259,7 @@ BOOL Remove(const TKey& key);
 ### Return Value  
  Returns TRUE if the key, and matching value, were successfully removed, FALSE otherwise.  
   
-##  <a name="csimplemap__removeall"></a>  CSimpleMap::RemoveAll  
+##  <a name="removeall"></a>  CSimpleMap::RemoveAll  
  Removes all keys and values.  
   
 ```
@@ -269,7 +269,7 @@ void RemoveAll();
 ### Remarks  
  Removes all keys and values from the mapping array object.  
   
-##  <a name="csimplemap__removeat"></a>  CSimpleMap::RemoveAt  
+##  <a name="removeat"></a>  CSimpleMap::RemoveAt  
  Removes a key and associated value at the specified index.  
   
 ```
@@ -283,7 +283,7 @@ BOOL RemoveAt(int nIndex);
 ### Return Value  
  Returns TRUE on success, FALSE if the index specified is an invalid index.  
   
-##  <a name="csimplemap__reverselookup"></a>  CSimpleMap::ReverseLookup  
+##  <a name="reverselookup"></a>  CSimpleMap::ReverseLookup  
  Returns the key associated with the given value.  
   
 ```
@@ -297,7 +297,7 @@ TKey ReverseLookup(const TVal& val) const;
 ### Return Value  
  Returns the associated key. If no matching key is found, NULL is returned.  
   
-##  <a name="csimplemap__setat"></a>  CSimpleMap::SetAt  
+##  <a name="setat"></a>  CSimpleMap::SetAt  
  Sets the value associated with the given key.  
   
 ```
@@ -314,7 +314,7 @@ BOOL SetAt(const TKey& key,  const TVal& val);
 ### Return Value  
  Returns TRUE if the key was found, and the value was successfully changed, FALSE otherwise.  
   
-##  <a name="csimplemap__setatindex"></a>  CSimpleMap::SetAtIndex  
+##  <a name="setatindex"></a>  CSimpleMap::SetAtIndex  
  Sets the key and value at a specified index.  
   
 ```

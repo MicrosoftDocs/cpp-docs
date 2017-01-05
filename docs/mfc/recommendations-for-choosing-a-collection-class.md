@@ -68,7 +68,7 @@ This article contains detailed information designed to help you choose a collect
   
 -   Column 6 describes whether each shape allows duplicate elements.  
   
-### Collection Shape Features  
+### <a name="_core_collection_shape_features"></a>  Collection Shape Features  
   
 |Shape|Ordered|Indexed|Insert an element|Search for specified element|Duplicate elements|  
 |-----------|--------------|--------------|-----------------------|----------------------------------|-------------------------|  
@@ -78,7 +78,7 @@ This article contains detailed information designed to help you choose a collect
   
  The following table, [Characteristics of MFC Collection Classes](#_core_characteristics_of_mfc_collection_classes), summarizes other important characteristics of specific MFC collection classes as a guide to selection. Your choice may depend on whether the class is based on C++ templates, whether its elements can be serialized via MFC's document [serialization](../mfc/serialization-in-mfc.md) mechanism, whether its elements can be dumped via MFC's diagnostic dumping mechanism, or whether the class is type-safe — that is, whether you can guarantee the type of elements stored in and retrieved from a collection based on the class.  
   
-### Characteristics of MFC Collection Classes  
+### <a name="_core_characteristics_of_mfc_collection_classes"></a>  Characteristics of MFC Collection Classes  
   
 |Class|Uses C++<br /><br /> templates|Can be<br /><br /> serialized|Can be<br /><br /> dumped|Is<br /><br /> type-safe|  
 |-----------|------------------------------|---------------------------|-----------------------|-----------------------|  

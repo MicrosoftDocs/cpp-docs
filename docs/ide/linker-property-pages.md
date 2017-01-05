@@ -66,7 +66,7 @@ This topic discusses the following properties on the **General** linker property
  **Use Library Dependency Inputs**  
  In a large project, when a dependent project produces a .lib file, incremental linking is disabled. If there are many dependent projects that produce .lib files, building the application can take a long time. When this property is set to `Yes`, the project system links in the .obj files for .libs produced by dependent projects, thus enabling incremental linking.  
   
- For information about how to access the **General** linker property page, see [How To: Specify Project Properties with Property Pages](../misc/how-to-specify-project-properties-with-property-pages.md).  
+ For information about how to access the **General** linker property page, see [Working with Project Properties](../ide/working-with-project-properties.md).  
   
 ## See Also  
  [VC++ Directories, Projects and Solutions, Options Dialog Box](http://msdn.microsoft.com/en-us/e027448b-c811-4c3d-8531-4325ad3f6e02)   

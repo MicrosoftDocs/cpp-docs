@@ -1,5 +1,5 @@
 ---
-title: "unique (STL-CLR) | Microsoft Docs"
+title: "unique (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -47,7 +47,7 @@ template<class _FwdIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `unique`. For more information, see [unique](../Topic/unique%20\(%3Calgorithm%3E\).md).  
+ This function behaves the same as the C++ Standard Library function `unique`. For more information, see [unique](http://msdn.microsoft.com/Library/a9615038-2b77-43bf-876b-9f79be88eff0).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

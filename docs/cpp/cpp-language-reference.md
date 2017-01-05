@@ -39,6 +39,8 @@ translation.priority.ht:
 ---
 # C++ Language Reference
 This reference explains the C++ programming language as implemented in Microsoft Visual C++. The organization is based on *The Annotated C++ Reference Manual* by Margaret Ellis and Bjarne Stroustrup and on the ANSI/ISO C++ International Standard (ISO/IEC FDIS 14882). Microsoft-specific implementations of C++ language features are included.  
+
+For an overview of Modern C++ programming practices, see [Welcome Back to C++](welcome-back-to-cpp-modern-cpp.md).
   
  See the following tables to quickly find a keyword or operator:  
   
@@ -47,6 +49,7 @@ This reference explains the C++ programming language as implemented in Microsoft
 -   [C++ Operators](../cpp/cpp-built-in-operators-precedence-and-associativity.md)  
   
 ## In This Section  
+
  [Lexical Conventions](../cpp/lexical-conventions.md)  
  Fundamental lexical elements of a C++ program: tokens, comments, operators, keywords, punctuators, literals. Also, file translation, operator precedence/associativity.  
   
@@ -68,14 +71,14 @@ This reference explains the C++ programming language as implemented in Microsoft
  [Statements](../cpp/statements-cpp.md)  
  Expression, null, compound, selection, iteration, jump, and declaration statements.  
   
- [Declarations](../misc/declarations.md)  
+ [Declarations and Definitions](declarations-and-definitions-cpp.md)  
  Storage-class specifiers, function definitions, initializations, enumerations, class, struct, and union declarations, and typedef declarations. Also, inline functions, const keyword, namespaces.  
   
  [Declarators](http://msdn.microsoft.com/en-us/8a7b9b51-92bd-4ac0-b3fe-0c4abe771838)  
  The portion of a declaration statement that names an object, type, or function. Abstract declarators, type names, initializers, function declarations and definitions, arrays, references.  
   
  [Classes, Structures, and Unions](../cpp/classes-and-structs-cpp.md)  
- Introduction to classes, structures, and unions. Also, member functions, data members, bit fields, this pointer, nested classes.  
+ Introduction to classes, structures, and unions. Also, member functions, special member functions, data members, bit fields, this pointer, nested classes.  
   
  [Derived Classes](../cpp/inheritance-cpp.md)  
  Single and multiple inheritance, virtual functions, multiple base classes, abstract classes, scope rules. Also, the __super and \__interface keywords.  
@@ -83,11 +86,8 @@ This reference explains the C++ programming language as implemented in Microsoft
  [Member-Access Control](../cpp/member-access-control-cpp.md)  
  Controlling access to class members: public, private, and protected keywords. Friend functions and classes.  
   
- [Special Member Functions](../misc/special-member-functions-cpp.md)  
- Special functions unique to class types: constructors, destructors, conversion functions, assignment operator, operator new and operator delete functions.  
-  
- [Overloading](../misc/overloading-cpp.md)  
- Overloaded functions, declaration matching, argument matching. Also, overloaded operators, rules for operator overloading.  
+ [Overloading](operator-overloading.md)  
+ Overloaded operators, rules for operator overloading.  
   
  [Exception Handling](../cpp/exception-handling-in-visual-cpp.md)  
  C++ exception handling, structured exception handling (SEH), keywords used in writing exception handling statements.  
@@ -115,6 +115,9 @@ This reference explains the C++ programming language as implemented in Microsoft
   
  [Nonstandard Behavior](../cpp/nonstandard-behavior.md)  
  Information about nonstandard behavior of the Visual C++ compiler.  
+
+ [Welcome Back to C++](welcome-back-to-cpp-modern-cpp.md)
+ An overview of modern C++ programming practices for writing safe, correct and efficient programs.
   
 ## Related Sections  
  [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)  
@@ -126,7 +129,7 @@ This reference explains the C++ programming language as implemented in Microsoft
  [C/C++ Preprocessor Reference](../preprocessor/c-cpp-preprocessor-reference.md)  
  Reference material on pragmas, preprocessor directives, predefined macros, and the preprocessor.  
   
- [Visual C++ Libraries](http://msdn.microsoft.com/en-us/fec23c40-10c0-4857-9cdc-33a3b99b30ae)  
+ [Visual C++ Libraries](../standard-library/cpp-standard-library-reference.md)  
  A list of links to the reference start pages for the various Visual C++ libraries.  
   
 ## See Also  

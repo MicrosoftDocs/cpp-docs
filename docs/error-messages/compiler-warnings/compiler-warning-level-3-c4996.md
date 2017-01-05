@@ -48,7 +48,7 @@ The compiler encountered a deprecated declaration.
   
  **This function or variable may be unsafe. Consider using**  safe_version **instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS.  See online help for details.**  
   
- Some CRT and Standard C++ Library functions and globals have been deprecated in favor of new, more secure functions. The compiler issues a deprecation warning for these functions, and suggests the preferred function. To turn off deprecation warnings for these functions in the CRT, define **_CRT_SECURE_NO_WARNINGS**. To turn off warnings about deprecated global variables, define **_CRT_SECURE_NO_WARNINGS_GLOBALS**. For more information about these deprecated functions and globals, see [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md) and [Safe Libraries: C++ Standard Library](../../standard-library/safe-libraries-cpp-standard-library.md).  
+ Some CRT and C++ Standard Library functions and globals have been deprecated in favor of new, more secure functions. The compiler issues a deprecation warning for these functions, and suggests the preferred function. To turn off deprecation warnings for these functions in the CRT, define **_CRT_SECURE_NO_WARNINGS**. To turn off warnings about deprecated global variables, define **_CRT_SECURE_NO_WARNINGS_GLOBALS**. For more information about these deprecated functions and globals, see [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md) and [Safe Libraries: C++ Standard Library](../../standard-library/safe-libraries-cpp-standard-library.md).  
   
  **Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'**  
   
@@ -60,7 +60,7 @@ The compiler encountered a deprecated declaration.
   
  **Various messages in MFC or ATL code**  
   
- `C4996` can also occur if you use MFC or ATL functions that were deprecated for security reasons. To suppress these warnings, see [_AFX_SECURE_NO_WARNINGS](../Topic/_AFX_SECURE_NO_WARNINGS.md) and [_ATL_SECURE_NO_WARNINGS](../Topic/_ATL_SECURE_NO_WARNINGS.md).  
+ `C4996` can also occur if you use MFC or ATL functions that were deprecated for security reasons. To suppress these warnings, see [_AFX_SECURE_NO_WARNINGS](http://msdn.microsoft.com/Library/97dcfd41-1e56-41d5-bf7e-d240b950134b) and [_ATL_SECURE_NO_WARNINGS](http://msdn.microsoft.com/Library/587d29d8-a75a-44a3-bec8-f724087e5e73).  
   
  **Marshalling errors in CLR code**  
   
@@ -97,7 +97,7 @@ int main() {
 ## Example  
  C4996 can also occur if you do not use a checked iterator when compiling with `_ITERATOR_DEBUG_LEVEL` defined (set to 1 by default for debug mode builds).  See [Checked Iterators](../../standard-library/checked-iterators.md) for more information.  
   
- The following STL code example generates C4996.  
+ The following C++ Standard Library code example generates C4996.  
   
 ```cpp  
 // C4996_b.cpp  
@@ -122,7 +122,7 @@ int main() {
 ```  
   
 ## Example  
- The following STL code example generates C4996 as a warning. Comments are inline.  
+ The following C++ Standard Library code example generates C4996 as a warning. Comments are inline.  
   
 ```cpp  
 #include <algorithm>  
@@ -171,7 +171,7 @@ int main()
   
     // OK: Raw arrays are checked in debug mode  
     // (i.e. an overrun will trigger a debug assertion)  
-    // NOTE: This applies only when raw arrays are given to STL algorithms!  
+    // NOTE: This applies only when raw arrays are given to C++ Standard Library algorithms!  
     int a5[16];  
     transform(v.begin(), v.end(), a5, [](int n) { return n * 5; });  
     print("a5: ", a5);  

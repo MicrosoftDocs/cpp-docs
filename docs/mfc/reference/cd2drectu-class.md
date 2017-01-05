@@ -50,29 +50,29 @@ class CD2DRectU : public D2D1_RECT_U;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CD2DRectU::CD2DRectU](#cd2drectu__cd2drectu)|Overloaded. Constructs a `CD2DRectU` object from `D2D1_RECT_U` object.|  
+|[CD2DRectU::CD2DRectU](#cd2drectu)|Overloaded. Constructs a `CD2DRectU` object from `D2D1_RECT_U` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CD2DRectU::IsNull](#cd2drectu__isnull)|Returns a `boolean` value that indicates whether an expression contains no valid data ( `null`).|  
+|[CD2DRectU::IsNull](#isnull)|Returns a `boolean` value that indicates whether an expression contains no valid data ( `null`).|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CD2DRectU::operator CRect](#cd2drectu__operator_crect)|Converts `CD2DRectU` to `CRect` object.|  
+|[CD2DRectU::operator CRect](#operator_crect)|Converts `CD2DRectU` to `CRect` object.|  
   
 ## Inheritance Hierarchy  
  `D2D1_RECT_U`  
   
- [CD2DRectU](../../mfc/reference/cd2drectu-class.md)  
+ `CD2DRectU`  
   
 ## Requirements  
  **Header:** afxrendertarget.h  
   
-##  <a name="cd2drectu__cd2drectu"></a>  CD2DRectU::CD2DRectU  
+##  <a name="cd2drectu"></a>  CD2DRectU::CD2DRectU  
  Constructs a CD2DRectU object from CRect object.  
   
 ```  
@@ -111,7 +111,7 @@ CD2DRectU(
  `uBottom`  
  source bottom coordinate  
   
-##  <a name="cd2drectu__isnull"></a>  CD2DRectU::IsNull  
+##  <a name="isnull"></a>  CD2DRectU::IsNull  
  Returns a Boolean value that indicates whether an expression contains no valid data (Null).  
   
 ```  
@@ -123,10 +123,11 @@ BOOL IsNull() const;
 ### Return Value  
  TRUE if rectangle's top, left, bottom, and right values are all equal to 0; otherwise FALSE.  
   
-##  <a name="cd2drectu__operator_crect"></a>  CD2DRectU::operator CRect  
+##  <a name="operator_crect"></a>  CD2DRectU::operator CRect  
  Converts CD2DRectU to CRect object.  
   
-```  operator CRect();
+```  
+operator CRect();
 ```   
   
 ### Return Value  

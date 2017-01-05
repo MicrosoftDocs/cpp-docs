@@ -15,11 +15,11 @@ manager: "ghogen"
 # concurrency namespace Operators
 ||||  
 |-|-|-|  
-|[operator!= Operator](#operator_neq_operator)|[operator&amp;&amp; Operator](#operator_amp__amp__operator)|[operator&gt; Operator](#operator_gt__operator)|  
-|[operator&gt;= Operator](#operator_gt__eq_operator)|[operator&lt; Operator](#operator_lt__operator)|[operator&lt;= Operator](#operator_lt__eq_operator)|  
-|[operator== Operator](#operator_eq_eq_operator)|[operator|| Operator](#operator_lor_operator)|  
+|[operator!= Operator](#operator_neq)|[operator&amp;&amp; Operator](#operator_amp_amp)|[operator&gt; Operator](#operator_gt)|  
+|[operator&gt;= Operator](#operator_gt_eq)|[operator&lt; Operator](#operator_lt)|[operator&lt;= Operator](#operator_lt_eq)|  
+|[operator== Operator](#operator_eq_eq)|[operator|| Operator](#operator_lor)|  
   
-##  <a name="operator_lor_operator"></a>  operator&#124;&#124; Operator  
+##  <a name="operator_lor"></a>  operator&#124;&#124; Operator  
  Creates a task that will complete successfully when either of the tasks supplied as arguments completes successfully.  
   
 ```  
@@ -68,7 +68,7 @@ inline task<void>   operator||(
 ### Remarks  
  If both of the tasks are canceled or throw exceptions, the returned task will complete in the canceled state, and one of the exceptions, if any are encountered, will be thrown when you call `get()` or `wait()` on that task.  
   
-##  <a name="operator_amp__amp__operator"></a>  operator&amp;&amp; Operator  
+##  <a name="operator_amp_amp"></a>  operator&amp;&amp; Operator  
  Creates a task that will complete succesfully when both of the tasks supplied as arguments complete successfully.  
   
 ```  
@@ -125,7 +125,7 @@ inline task<void>    operator&&(
 ### Remarks  
  If one of the tasks is canceled or throws an exception, the returned task will complete early, in the canceled state, and the exception, if one is encoutered, will be thrown if you call `get()` or `wait()` on that task.  
   
-##  <a name="operator_eq_eq_operator"></a>  operator== Operator  
+##  <a name="operator_eq_eq"></a>  operator== Operator  
  Tests if the `concurrent_vector` object on the left side of the operator is equal to the `concurrent_vector` object on the right side.  
   
 ```  
@@ -163,7 +163,7 @@ inline bool operator== (
   
  This method is not concurrency-safe with respect to other methods that could modify either of the concurrent vectors `_A` or `_B`.  
   
-##  <a name="operator_neq_operator"></a>  operator!= Operator  
+##  <a name="operator_neq"></a>  operator!= Operator  
  Tests if the `concurrent_vector` object on the left side of the operator is not equal to the `concurrent_vector` object on the right side.  
   
 ```  
@@ -201,7 +201,7 @@ inline bool operator!= (
   
  This method is not concurrency-safe with respect to other methods that could modify either of the concurrent vectors `_A` or `_B`.  
   
-##  <a name="operator_lt__operator"></a>  operator&lt; Operator  
+##  <a name="operator_lt"></a>  operator&lt; Operator  
  Tests if the `concurrent_vector` object on the left side of the operator is less than the `concurrent_vector` object on the right side.  
   
 ```  
@@ -239,7 +239,7 @@ inline bool operator<(
   
  This method is not concurrency-safe with respect to other methods that could modify either of the concurrent vectors `_A` or `_B`.  
   
-##  <a name="operator_lt__eq_operator"></a>  operator&lt;= Operator  
+##  <a name="operator_lt_eq"></a>  operator&lt;= Operator  
  Tests if the `concurrent_vector` object on the left side of the operator is less than or equal to the `concurrent_vector` object on the right side.  
   
 ```  
@@ -277,7 +277,7 @@ inline bool operator<= (
   
  This method is not concurrency-safe with respect to other methods that could modify either of the concurrent vectors `_A` or `_B`.  
   
-##  <a name="operator_gt__operator"></a>  operator&gt; Operator  
+##  <a name="operator_gt"></a>  operator&gt; Operator  
  Tests if the `concurrent_vector` object on the left side of the operator is greater than the `concurrent_vector` object on the right side.  
   
 ```  
@@ -315,7 +315,7 @@ inline bool operator>(
   
  This method is not concurrency-safe with respect to other methods that could modify either of the concurrent vectors `_A` or `_B`.  
   
-##  <a name="operator_gt__eq_operator"></a>  operator&gt;= Operator  
+##  <a name="operator_gt_eq"></a>  operator&gt;= Operator  
  Tests if the `concurrent_vector` object on the left side of the operator is greater than or equal to the `concurrent_vector` object on the right side.  
   
 ```  
@@ -354,4 +354,4 @@ inline bool operator>= (
  This method is not concurrency-safe with respect to other methods that could modify either of the concurrent vectors `_A` or `_B`.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

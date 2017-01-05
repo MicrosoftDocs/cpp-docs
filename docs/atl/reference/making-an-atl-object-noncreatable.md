@@ -40,7 +40,7 @@ You can change the attributes of an ATL-based COM object so that a client cannot
   
 ### To make an object noncreatable  
   
-1.  Remove the [OBJECT_ENTRY_AUTO](../Topic/OBJECT_ENTRY_AUTO.md) for the object. If you want the object to be noncreatable but the control to be registered, replace OBJECT_ENTRY_AUTO with [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](../Topic/OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO.md).  
+1.  Remove the [OBJECT_ENTRY_AUTO](http://msdn.microsoft.com/library/5a0f4fa5-0905-43d2-b337-e22f979c9e4c) for the object. If you want the object to be noncreatable but the control to be registered, replace OBJECT_ENTRY_AUTO with [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](http://msdn.microsoft.com/library/abdc093c-6502-42de-8419-b7ebf45299d1).  
   
 2.  Add the [noncreatable](../../windows/noncreatable.md) attribute to the coclass in the .idl file. For example:  
   

@@ -56,7 +56,7 @@ template <class T,DWORD dwSupportedSafety>  class IObjectSafetyImpl
  *dwSupportedSafety*  
  Specifies the supported safety options for the control. Can be one of the following values:  
   
-- **INTERFACESAFE_FOR_UNTRUSTED_CALLER** The interface identified by the [SetInterfaceSafetyOptions](#iobjectsafetyimpl__setinterfacesafetyoptions) parameter `riid` should be made safe for scripting.  
+- **INTERFACESAFE_FOR_UNTRUSTED_CALLER** The interface identified by the [SetInterfaceSafetyOptions](#setinterfacesafetyoptions) parameter `riid` should be made safe for scripting.  
   
 - **INTERFACESAFE_FOR_UNTRUSTED_DATA** The interface identified by the `SetInterfaceSafetyOptions` parameter `riid` should be made safe for untrusted data during initialization.  
   
@@ -66,19 +66,19 @@ template <class T,DWORD dwSupportedSafety>  class IObjectSafetyImpl
   
 |Name|Description|  
 |----------|-----------------|  
-|[IObjectSafetyImpl::GetInterfaceSafetyOptions](#iobjectsafetyimpl__getinterfacesafetyoptions)|Retrieves the safety options supported by the object, as well as the safety options currently set for the object.|  
-|[IObjectSafetyImpl::SetInterfaceSafetyOptions](#iobjectsafetyimpl__setinterfacesafetyoptions)|Makes the object safe for initialization or scripting.|  
+|[IObjectSafetyImpl::GetInterfaceSafetyOptions](#getinterfacesafetyoptions)|Retrieves the safety options supported by the object, as well as the safety options currently set for the object.|  
+|[IObjectSafetyImpl::SetInterfaceSafetyOptions](#setinterfacesafetyoptions)|Makes the object safe for initialization or scripting.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[IObjectSafetyImpl::m_dwCurrentSafety](#iobjectsafetyimpl__m_dwcurrentsafety)|Stores the object's current safety level.|  
+|[IObjectSafetyImpl::m_dwCurrentSafety](#m_dwcurrentsafety)|Stores the object's current safety level.|  
   
 ## Remarks  
  Class `IObjectSafetyImpl` provides a default implementation of `IObjectSafety`. The `IObjectSafety` interface allows a client to retrieve and set an object's safety levels. For example, a web browser can call **IObjectSafety::SetInterfaceSafetyOptions** to make a control safe for initialization or safe for scripting.  
   
- Note that using the [IMPLEMENTED_CATEGORY](../Topic/IMPLEMENTED_CATEGORY.md) macro with the **CATID_SafeForScripting** and **CATID_SafeForInitializing** component categories provides an alternative way of specifying that a component is safe.  
+ Note that using the [IMPLEMENTED_CATEGORY](http://msdn.microsoft.com/library/d898ef34-5684-4709-beb9-7114ddd96674) macro with the **CATID_SafeForScripting** and **CATID_SafeForInitializing** component categories provides an alternative way of specifying that a component is safe.  
   
  **Related Articles** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)  
   
@@ -90,7 +90,7 @@ template <class T,DWORD dwSupportedSafety>  class IObjectSafetyImpl
 ## Requirements  
  **Header:** atlctl.h  
   
-##  <a name="iobjectsafetyimpl__getinterfacesafetyoptions"></a>  IObjectSafetyImpl::GetInterfaceSafetyOptions  
+##  <a name="getinterfacesafetyoptions"></a>  IObjectSafetyImpl::GetInterfaceSafetyOptions  
  Retrieves the safety options supported by the object, as well as the safety options currently set for the object.  
   
 ```
@@ -107,15 +107,15 @@ HRESULT GetInterfaceSafetyOptions(REFIID riid,
   
  See [IObjectSafety::GetInterfaceSafetyOptions](https://msdn.microsoft.com/library/aa768223.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="iobjectsafetyimpl__m_dwcurrentsafety"></a>  IObjectSafetyImpl::m_dwCurrentSafety  
+##  <a name="m_dwcurrentsafety"></a>  IObjectSafetyImpl::m_dwCurrentSafety  
  Stores the object's current safety level.  
   
 ```
 DWORD m_dwCurrentSafety;
 ```  
   
-##  <a name="iobjectsafetyimpl__setinterfacesafetyoptions"></a>  IObjectSafetyImpl::SetInterfaceSafetyOptions  
- Makes the object safe for initialization or scripting by setting the [m_dwCurrentSafety](#iobjectsafetyimpl__m_dwcurrentsafety) member to the appropriate value.  
+##  <a name="setinterfacesafetyoptions"></a>  IObjectSafetyImpl::SetInterfaceSafetyOptions  
+ Makes the object safe for initialization or scripting by setting the [m_dwCurrentSafety](#m_dwcurrentsafety) member to the appropriate value.  
   
 ```
 HRESULT SetInterfaceSafetyOptions(REFIID riid,

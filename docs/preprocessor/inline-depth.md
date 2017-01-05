@@ -48,7 +48,7 @@ Specifies the inline heuristic search depth, such that, no function will be inli
 ```  
   
 ## Remarks  
- This pragma controls the inlining of functions marked [inline](../misc/inline-inline-forceinline.md) and [__inline](../misc/inline-inline-forceinline.md) or inlined automatically under the /Ob2 option.  
+ This pragma controls the inlining of functions marked [inline](../cpp/inline-functions-cpp.md) and [__inline](../cpp/inline-functions-cpp.md) or inlined automatically under the /Ob2 option.  
   
  `n` can be a value between 0 and 255, where 255 means unlimited depth in the call graph, and zero inhibits inline expansion.  When `n` is not specified, the default (254) is used.  
   

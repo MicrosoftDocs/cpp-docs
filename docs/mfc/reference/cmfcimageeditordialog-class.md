@@ -49,7 +49,7 @@ class CMFCImageEditorDialog : public CDialogEx
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCImageEditorDialog::CMFCImageEditorDialog](#cmfcimageeditordialog__cmfcimageeditordialog)|Constructs a `CMFCImageEditorDialog` object.|  
+|[CMFCImageEditorDialog::CMFCImageEditorDialog](#cmfcimageeditordialog)|Constructs a `CMFCImageEditorDialog` object.|  
   
 ## Remarks  
  The `CMFCImageEditorDialog` class provides a dialog box that includes:  
@@ -64,7 +64,7 @@ class CMFCImageEditorDialog : public CDialogEx
   
  The following illustration shows an image editor dialog box.  
   
- ![CMFCImageEditorDialog dialog box](../../mfc/reference/media/imageedit.png "ImageEdit")  
+ ![CMFCImageEditorDialog dialog box](../../mfc/reference/media/imageedit.png "imageedit")  
   
  One way to use a `CMFCImageEditorDialog` object is to pass it a `CBitmap` image to be edited. Do not create a large image because the image editing area has a limited size and the logical pixel size is adjusted to fit the area. Call the `DoModal` method to start a modal dialog box.  
   
@@ -84,7 +84,7 @@ class CMFCImageEditorDialog : public CDialogEx
 ## Requirements  
  **Header:** afximageeditordialog.h  
   
-##  <a name="cmfcimageeditordialog__cmfcimageeditordialog"></a>  CMFCImageEditorDialog::CMFCImageEditorDialog  
+##  <a name="cmfcimageeditordialog"></a>  CMFCImageEditorDialog::CMFCImageEditorDialog  
  Constructs a `CMFCImageEditorDialog` object.  
   
 ```  
@@ -110,10 +110,10 @@ CMFCImageEditorDialog(
 ### Remarks  
   
 ### Example  
- The following example demonstrates how to construct an object of the `CMFCImageEditorDialog` class. This example is part of the [New Controls sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to construct an object of the `CMFCImageEditorDialog` class. This example is part of the [New Controls sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_NewControls#8](../../mfc/reference/codesnippet/CPP/cmfcimageeditordialog-class_1.cpp)]  
-[!code-cpp[NVC_MFC_NewControls#40](../../mfc/reference/codesnippet/CPP/cmfcimageeditordialog-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_NewControls#8](../../mfc/reference/codesnippet/cpp/cmfcimageeditordialog-class_1.cpp)]  
+[!code-cpp[NVC_MFC_NewControls#40](../../mfc/reference/codesnippet/cpp/cmfcimageeditordialog-class_2.cpp)]  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

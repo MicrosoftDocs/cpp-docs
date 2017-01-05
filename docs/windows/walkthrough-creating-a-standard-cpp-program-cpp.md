@@ -39,7 +39,7 @@ translation.priority.ht:
 # Walkthrough: Creating a Standard C++ Program (C++)
 You can use Visual C++ in the Visual Studio integrated development environment (IDE) to create Standard C++ programs. By following the steps in this walkthrough, you can create a project, add a new file to the project, modify the file to add C++ code, and then compile and run the program by using [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)].  
   
- You can type your own C++ program or use one of the sample programs. The sample program in this walkthrough is a console application. This application uses the `set` container in the Standard Template Library (STL).  
+ You can type your own C++ program or use one of the sample programs. The sample program in this walkthrough is a console application. This application uses the `set` container in the C++ Standard Library.  
   
  [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] complies with the 2003 C++ Standard, with these major exceptions: two-stage name lookup, exception specifications, and export. Additionally, [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] supports several C++0x features, for example, lambdas, auto, static_assert, rvalue references, and extern templates.  
   
@@ -73,11 +73,7 @@ You can use Visual C++ in the Visual Studio integrated development environment (
   
      The .cpp file appears in the Source Files folder in **Solution Explorer**, and the file is opened in the Visual Studio editor.  
   
-7.  In the file in the editor, type a valid C++ program that uses the Standard C++ Library, or copy one of the sample programs and paste it in the file.  
-  
-     For example, you can use the [set::find](../misc/set-find-stl-samples.md) sample program, which is one of the the Standard Template Library samples that are included in Help.  
-  
-     If you use the sample program, notice the `using namespace std;` directive. This directive enables the program to use `cout` and `endl` without requiring fully qualified names (`std::cout` and `std::endl`).  
+7.  In the file in the editor, type a valid C++ program that uses the C++ Standard Library, or copy one of the sample programs and paste it in the file.  
   
 8.  Save the file.  
   

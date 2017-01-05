@@ -53,7 +53,7 @@ This topic discusses how you can sign your assembly, often referred to as giving
   
  If you build at the command line, use linker options to sign your assembly, and then run a post-processing tool (like mt.exe), you will need to re-sign the assembly with sn.exe. Alternatively, you can build and delay sign the assembly and after running post-processing tools, complete the signing.  
   
- If you use the signing attributes when building in the development environment, you can successfully sign the assembly by explicitly calling sn.exe ([Sn.exe (Strong Name Tool)](../Topic/Sn.exe%20\(Strong%20Name%20Tool\).md)) in a post-build event. For more information, see [Specifying Build Events](../ide/specifying-build-events.md). Build times may be less if you use attributes and a post-build event, compared to using a linker options.  
+ If you use the signing attributes when building in the development environment, you can successfully sign the assembly by explicitly calling sn.exe ([Sn.exe (Strong Name Tool)](http://msdn.microsoft.com/Library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)) in a post-build event. For more information, see [Specifying Build Events](../ide/specifying-build-events.md). Build times may be less if you use attributes and a post-build event, compared to using a linker options.  
   
  The following linker options support assembly signing:  
   
@@ -63,7 +63,7 @@ This topic discusses how you can sign your assembly, often referred to as giving
   
 -   [/KEYCONTAINER (Specify a Key Container to Sign an Assembly)](../build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly.md)  
   
- For more information on strong assemblies, see [Creating and Using Strong-Named Assemblies](../Topic/Creating%20and%20Using%20Strong-Named%20Assemblies.md).  
+ For more information on strong assemblies, see [Creating and Using Strong-Named Assemblies](http://msdn.microsoft.com/Library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
   
 ## See Also  
  [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

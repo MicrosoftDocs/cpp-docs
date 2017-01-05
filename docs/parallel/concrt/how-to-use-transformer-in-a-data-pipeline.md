@@ -55,7 +55,7 @@ This topic contains a basic example that shows how to use the [concurrency::tran
   
  Finally, the example prints the result of the pipeline to the console.  
   
- [!code-cpp[concrt-data-pipeline#1](../../parallel/concrt/codesnippet/CPP/how-to-use-transformer-in-a-data-pipeline_1.cpp)]  
+ [!code-cpp[concrt-data-pipeline#1](../../parallel/concrt/codesnippet/cpp/how-to-use-transformer-in-a-data-pipeline_1.cpp)]  
   
  This example produces the following output:  
   

@@ -54,7 +54,7 @@ type-id && cast-expression
   
  To implement move semantics, you typically provide a *move constructor,* and optionally a move assignment operator (`operator=`), to your class. Copy and assignment operations whose sources are rvalues then automatically take advantage of move semantics. Unlike the default copy constructor, the compiler does not provide a default move constructor. For more information about how to write a move constructor and how to use it in your application, see [Move Constructors and Move Assignment Operators (C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md).  
   
- You can also overload ordinary functions and operators to take advantage of move semantics. [!INCLUDE[cpp_dev10_long](../build/includes/cpp_dev10_long_md.md)] introduces move semantics into the Standard Template Library (STL). For example, the `string` class implements operations that perform move semantics. Consider the following example that concatenates several strings and prints the result:  
+ You can also overload ordinary functions and operators to take advantage of move semantics. [!INCLUDE[cpp_dev10_long](../build/includes/cpp_dev10_long_md.md)] introduces move semantics into the C++ Standard Library. For example, the `string` class implements operations that perform move semantics. Consider the following example that concatenates several strings and prints the result:  
   
 ```  
 // string_concatenation.cpp  
@@ -78,7 +78,7 @@ int main()
   
  To take advantage of move semantics in the `vector` example, you can write a move constructor to move data from one object to another.  
   
- For more information about the introduction of move semantics into the STL in [!INCLUDE[cpp_dev10_long](../build/includes/cpp_dev10_long_md.md)], see [C++ Standard Library](../standard-library/cpp-standard-library-reference.md).  
+ For more information about the introduction of move semantics into the C++ Standard Library in [!INCLUDE[cpp_dev10_long](../build/includes/cpp_dev10_long_md.md)], see [C++ Standard Library](../standard-library/cpp-standard-library-reference.md).  
   
 ## Perfect Forwarding  
  Perfect forwarding reduces the need for overloaded functions and helps avoid the forwarding problem. The *forwarding problem* can occur when you write a generic function that takes references as its parameters and it passes (or *forwards*) these parameters to another function. For example, if the generic function takes a parameter of type `const T&`, then the called function cannot modify the value of that parameter. If the generic function takes a parameter of type `T&`, then the function cannot be called by using an rvalue (such as a temporary object or integer literal).  
@@ -142,7 +142,7 @@ T* factory(A1&& a1, A2&& a2)
 }  
 ```  
   
- This example uses rvalue references as the parameters to the `factory` function. The purpose of the [std::forward](../Topic/forward.md) function is to forward the parameters of the factory function to the constructor of the template class.  
+ This example uses rvalue references as the parameters to the `factory` function. The purpose of the [std::forward](../standard-library/utility-functions.md#forward) function is to forward the parameters of the factory function to the constructor of the template class.  
   
  The following example shows the `main` function that uses the revised `factory` function to create instances of the `W`, `X`, `Y`, and `Z` classes. The revised `factory` function forwards its parameters (either lvalues or rvalues) to the appropriate class constructor.  
   
@@ -257,7 +257,7 @@ In g(MemoryBlock&&).
   
 -   **You can cast an lvalue to an rvalue reference.**  
   
- The STL [std::move](../Topic/move.md) function enables you to convert an object to an rvalue reference to that object. Alternatively, you can use the `static_cast` keyword to cast an lvalue to an rvalue reference, as shown in the following example:  
+ The C++ Standard Library [std::move](../standard-library/utility-functions.md#move) function enables you to convert an object to an rvalue reference to that object. Alternatively, you can use the `static_cast` keyword to cast an lvalue to an rvalue reference, as shown in the following example:  
   
 ```  
 // cast-reference.cpp  
@@ -427,5 +427,3 @@ print_type_and_value<string&>(string& t)
  [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md)   
  [Move Constructors and Move Assignment Operators (C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md)   
  [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)   
- [move](../Topic/move.md)   
- [forward](../Topic/forward.md)

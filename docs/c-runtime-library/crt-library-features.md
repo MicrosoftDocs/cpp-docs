@@ -103,20 +103,20 @@ This topic discusses the various .lib files that comprise the C run-time librari
   
  For more information on using the CRT with **/clr**, see [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md); for **/clr:pure**, see [Pure and Verifiable Code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md).  
   
- To build a debug version of your application, the [_DEBUG](../c-runtime-library/debug.md) flag must be defined and the application must be linked with a debug version of one of these libraries. For more information about using the debug versions of the library files, see [CRT Debugging Techniques](/visual-studio/debugger/crt-debugging-techniques).  
+ To build a debug version of your application, the [_DEBUG](../c-runtime-library/debug.md) flag must be defined and the application must be linked with a debug version of one of these libraries. For more information about using the debug versions of the library files, see [CRT Debugging Techniques](/visualstudio/debugger/crt-debugging-techniques).  
   
  This version of the CRT is not fully conformant with the C99 standard. In particular, the \<tgmath.h> header and the CX_LIMITED_RANGE/FP_CONTRACT pragma macros are not supported. Certain elements such as the meaning of parameter specifiers in standard IO functions use legacy interpretations by default. You can use /Zc compiler conformance options and specify linker options to control some aspects of library conformance,  
   
-## Standard C++ Library  
+## C++ Standard Library  
   
-|Standard C++ Library|Characteristics|Option|Preprocessor directives|  
+|C++ Standard Library|Characteristics|Option|Preprocessor directives|  
 |----------------------------|---------------------|------------|-----------------------------|  
 |LIBCPMT.LIB|Multithreaded, static link|**/MT**|_MT|  
 |MSVCPRT.LIB|Multithreaded, dynamic link (import library for MSVCP\<version>.dll)|**/MD**|_MT, _DLL|  
 |LIBCPMTD.LIB|Multithreaded, static link|**/MTd**|_DEBUG, _MT|  
 |MSVCPRTD.LIB|Multithreaded, dynamic link (import library for MSVCP\<version>D.DLL)|**/MDd**|_DEBUG, _MT, _DLL|  
   
- When you build a release version of your project, one of the basic C run-time libraries (LIBCMT.LIB, MSVCMRT.LIB, MSVCRT.LIB) is linked by default, depending on the compiler option you choose (multithreaded, DLL, /clr). If you include one of the [Header Files Reference](../standard-library/cpp-standard-library-header-files.md) in your code, a Standard C++ Library will be linked in automatically by [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] at compile time. For example:  
+ When you build a release version of your project, one of the basic C run-time libraries (LIBCMT.LIB, MSVCMRT.LIB, MSVCRT.LIB) is linked by default, depending on the compiler option you choose (multithreaded, DLL, /clr). If you include one of the [C++ Standard Library header files](../standard-library/cpp-standard-library-header-files.md) in your code, a C++ Standard Library will be linked in automatically by [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] at compile time. For example:  
   
 ```  
 #include <ios>   

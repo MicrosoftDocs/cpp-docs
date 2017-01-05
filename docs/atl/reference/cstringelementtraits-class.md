@@ -58,18 +58,18 @@ template <typename   T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CStringElementTraits::INARGTYPE](#cstringelementtraits__inargtype)|The data type to use for adding elements to the collection class object.|  
-|[CStringElementTraits::OUTARGTYPE](#cstringelementtraits__outargtype)|The data type to use for retrieving elements from the collection class object.|  
+|[CStringElementTraits::INARGTYPE](#inargtype)|The data type to use for adding elements to the collection class object.|  
+|[CStringElementTraits::OUTARGTYPE](#outargtype)|The data type to use for retrieving elements from the collection class object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CStringElementTraits::CompareElements](#cstringelementtraits__compareelements)|(Static) Call this function to compare two string elements for equality.|  
-|[CStringElementTraits::CompareElementsOrdered](#cstringelementtraits__compareelementsordered)|(Static) Call this function to compare two string elements.|  
-|[CStringElementTraits::CopyElements](#cstringelementtraits__copyelements)|(Static) Call this function to copy `CString` elements stored in a collection class object.|  
-|[CStringElementTraits::Hash](#cstringelementtraits__hash)|(Static) Call this function to calculate a hash value for the given string element.|  
-|[CStringElementTraits::RelocateElements](#cstringelementtraits__relocateelements)|(Static) Call this function to relocate `CString` elements stored in a collection class object.|  
+|[CStringElementTraits::CompareElements](#compareelements)|(Static) Call this function to compare two string elements for equality.|  
+|[CStringElementTraits::CompareElementsOrdered](#compareelementsordered)|(Static) Call this function to compare two string elements.|  
+|[CStringElementTraits::CopyElements](#copyelements)|(Static) Call this function to copy `CString` elements stored in a collection class object.|  
+|[CStringElementTraits::Hash](#hash)|(Static) Call this function to calculate a hash value for the given string element.|  
+|[CStringElementTraits::RelocateElements](#relocateelements)|(Static) Call this function to relocate `CString` elements stored in a collection class object.|  
   
 ## Remarks  
  This class provides static functions for copying, moving, and comparing strings and for creating a hash value. These functions are useful when using a collection class to store string-based data. Use [CStringElementTraitsI](../../atl/reference/cstringelementtraitsi-class.md) when case-insensitive comparisons are required. Use [CStringRefElementTraits](../../atl/reference/cstringrefelementtraits-class.md) when the string objects are to be dealt with as references.  
@@ -79,7 +79,7 @@ template <typename   T>
 ## Requirements  
  **Header:** cstringt.h  
   
-##  <a name="cstringelementtraits__compareelements"></a>  CStringElementTraits::CompareElements  
+##  <a name="compareelements"></a>  CStringElementTraits::CompareElements  
  Call this static function to compare two string elements for equality.  
   
 ```
@@ -98,7 +98,7 @@ static bool CompareElements(
 ### Return Value  
  Returns true if the elements are equal, false otherwise.  
   
-##  <a name="cstringelementtraits__compareelementsordered"></a>  CStringElementTraits::CompareElementsOrdered  
+##  <a name="compareelementsordered"></a>  CStringElementTraits::CompareElementsOrdered  
  Call this static function to compare two string elements.  
   
 ```
@@ -115,9 +115,10 @@ static int CompareElementsOrdered(
  The second string element.  
   
 ### Return Value  
- Zero if the strings are identical, < 0 if `str1` is less than `str2`, or > 0 if `str1` is greater than `str2`. The [CStringT::Compare](../Topic/CStringT::Compare.md) method is used to perform the comparisons.  
+ Zero if the strings are identical, < 0 if `str1` is less than `str2`, or > 0 if `str1` is greater than `str2`. The [CStringT::Compare](../../atl-mfc-shared/reference/cstringt-class.md#compare) method is used to perform the comparisons.  
+
   
-##  <a name="cstringelementtraits__copyelements"></a>  CStringElementTraits::CopyElements  
+##  <a name="copyelements"></a>  CStringElementTraits::CopyElements  
  Call this static function to copy `CString` elements stored in a collection class object.  
   
 ```
@@ -140,7 +141,7 @@ static void CopyElements(
 ### Remarks  
  The source and destination elements should not overlap.  
   
-##  <a name="cstringelementtraits__hash"></a>  CStringElementTraits::Hash  
+##  <a name="hash"></a>  CStringElementTraits::Hash  
  Call this static function to calculate a hash value for the given string element.  
   
 ```
@@ -154,21 +155,21 @@ static ULONG Hash(INARGTYPE   str);
 ### Return Value  
  Returns a hash value, calculated using the string's contents.  
   
-##  <a name="cstringelementtraits__inargtype"></a>  CStringElementTraits::INARGTYPE  
+##  <a name="inargtype"></a>  CStringElementTraits::INARGTYPE  
  The data type to use for adding elements to the collection class object.  
   
 ```
 typedef T::PCXSTR INARGTYPE;
 ```  
   
-##  <a name="cstringelementtraits__outargtype"></a>  CStringElementTraits::OUTARGTYPE  
+##  <a name="outargtype"></a>  CStringElementTraits::OUTARGTYPE  
  The data type to use for retrieving elements from the collection class object.  
   
 ```
 typedef T& OUTARGTYPE;
 ```  
   
-##  <a name="cstringelementtraits__relocateelements"></a>  CStringElementTraits::RelocateElements  
+##  <a name="relocateelements"></a>  CStringElementTraits::RelocateElements  
  Call this static function to relocate `CString` elements stored in a collection class object.  
   
 ```

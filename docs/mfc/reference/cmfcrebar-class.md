@@ -49,17 +49,17 @@ class CMFCReBar : public CPane
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCReBar::AddBar](#cmfcrebar__addbar)|Adds a band to a rebar.|  
-|[CMFCReBar::CalcFixedLayout](#cmfcrebar__calcfixedlayout)|(Overrides [CBasePane::CalcFixedLayout](../../mfc/reference/cbasepane-class.md#cbasepane__calcfixedlayout).)|  
-|[CMFCReBar::CanFloat](#cmfcrebar__canfloat)|(Overrides [CBasePane::CanFloat](../../mfc/reference/cbasepane-class.md#cbasepane__canfloat).)|  
-|[CMFCReBar::Create](#cmfcrebar__create)|Creates the rebar control and attaches it to the `CMFCReBar` object.|  
-|[CMFCReBar::EnableDocking](#cmfcrebar__enabledocking)|(Overrides [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#cbasepane__enabledocking).)|  
-|[CMFCReBar::GetReBarBandInfoSize](#cmfcrebar__getrebarbandinfosize)||  
-|[CMFCReBar::GetReBarCtrl](#cmfcrebar__getrebarctrl)|Provides direct access to the underlying [CReBarCtrl](../../mfc/reference/crebarctrl-class.md) common control.|  
-|[CMFCReBar::OnShowControlBarMenu](#cmfcrebar__onshowcontrolbarmenu)|(Overrides [CPane::OnShowControlBarMenu](../../mfc/reference/cpane-class.md#cpane__onshowcontrolbarmenu).)|  
-|[CMFCReBar::OnToolHitTest](#cmfcrebar__ontoolhittest)|(Overrides [CWnd::OnToolHitTest](../../mfc/reference/cwnd-class.md#cwnd__ontoolhittest).)|  
-|[CMFCReBar::OnUpdateCmdUI](#cmfcrebar__onupdatecmdui)|(Overrides [CBasePane::OnUpdateCmdUI](http://msdn.microsoft.com/en-us/e139f06a-9793-4ee2-bc3d-517389368c77).)|  
-|[CMFCReBar::SetPaneAlignment](#cmfcrebar__setpanealignment)|(Overrides [CBasePane::SetPaneAlignment](../../mfc/reference/cbasepane-class.md#cbasepane__setpanealignment).)|  
+|[CMFCReBar::AddBar](#addbar)|Adds a band to a rebar.|  
+|[CMFCReBar::CalcFixedLayout](#calcfixedlayout)|(Overrides [CBasePane::CalcFixedLayout](../../mfc/reference/cbasepane-class.md#calcfixedlayout).)|  
+|[CMFCReBar::CanFloat](#canfloat)|(Overrides [CBasePane::CanFloat](../../mfc/reference/cbasepane-class.md#canfloat).)|  
+|[CMFCReBar::Create](#create)|Creates the rebar control and attaches it to the `CMFCReBar` object.|  
+|[CMFCReBar::EnableDocking](#enabledocking)|(Overrides [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#enabledocking).)|  
+|[CMFCReBar::GetReBarBandInfoSize](#getrebarbandinfosize)||  
+|[CMFCReBar::GetReBarCtrl](#getrebarctrl)|Provides direct access to the underlying [CReBarCtrl](../../mfc/reference/crebarctrl-class.md) common control.|  
+|[CMFCReBar::OnShowControlBarMenu](#onshowcontrolbarmenu)|(Overrides [CPane::OnShowControlBarMenu](../../mfc/reference/cpane-class.md#onshowcontrolbarmenu).)|  
+|[CMFCReBar::OnToolHitTest](#ontoolhittest)|(Overrides [CWnd::OnToolHitTest](../../mfc/reference/cwnd-class.md#ontoolhittest).)|  
+|[CMFCReBar::OnUpdateCmdUI](#onupdatecmdui)|(Overrides [CBasePane::OnUpdateCmdUI](http://msdn.microsoft.com/en-us/e139f06a-9793-4ee2-bc3d-517389368c77).)|  
+|[CMFCReBar::SetPaneAlignment](#setpanealignment)|(Overrides [CBasePane::SetPaneAlignment](../../mfc/reference/cbasepane-class.md#setpanealignment).)|  
   
 ## Remarks  
  A `CMFCReBar` object can contain a variety of child windows. This includes edit boxes, toolbars, and list boxes. You can resize the rebar programmatically, or the user can manually resize the rebar by dragging its gripper bar. You can also set the background of a rebar object to a bitmap of your choice.  
@@ -67,10 +67,10 @@ class CMFCReBar : public CPane
  A rebar object behaves similarly to a toolbar object. A rebar control can contain one or more bands, and each band can contain a gripper bar, a bitmap, a text label, and a child window.  
   
 ## Example  
- The following example demonstrates how to use various methods in the `CMFCReBar` class. The example shows how to create a rebar control and add a band to it. The band functions as an internal toolbar. This code snippet is part of the [Rebar Test sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to use various methods in the `CMFCReBar` class. The example shows how to create a rebar control and add a band to it. The band functions as an internal toolbar. This code snippet is part of the [Rebar Test sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_RebarTest#1](../../mfc/reference/codesnippet/CPP/cmfcrebar-class_1.h)]  
-[!code-cpp[NVC_MFC_RebarTest#2](../../mfc/reference/codesnippet/CPP/cmfcrebar-class_2.cpp)]  
+ [!code-cpp[NVC_MFC_RebarTest#1](../../mfc/reference/codesnippet/cpp/cmfcrebar-class_1.h)]  
+[!code-cpp[NVC_MFC_RebarTest#2](../../mfc/reference/codesnippet/cpp/cmfcrebar-class_2.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md) [CCmdTarget](../../mfc/reference/ccmdtarget-class.md) [CWnd](../../mfc/reference/cwnd-class.md)  
@@ -80,7 +80,7 @@ class CMFCReBar : public CPane
 ## Requirements  
  **Header:** afxRebar.h  
   
-##  <a name="cmfcrebar__addbar"></a>  CMFCReBar::AddBar  
+##  <a name="addbar"></a>  CMFCReBar::AddBar  
  Adds a band to a rebar.  
   
 ```  
@@ -120,7 +120,7 @@ BOOL AddBar(
 ### Return Value  
  `TRUE` if the band was successfully added to the rebar; otherwise, `FALSE`.  
   
-##  <a name="cmfcrebar__create"></a>  CMFCReBar::Create  
+##  <a name="create"></a>  CMFCReBar::Create  
  Creates the rebar control and attaches it to the [CMFCReBar](../../mfc/reference/cmfcrebar-class.md) object.  
   
 ```  
@@ -149,7 +149,7 @@ BOOL Create(
   
 ### Remarks  
   
-##  <a name="cmfcrebar__getrebarctrl"></a>  CMFCReBar::GetReBarCtrl  
+##  <a name="getrebarctrl"></a>  CMFCReBar::GetReBarCtrl  
  Provides direct access to `CReBarCtrl` the underlying common control for `CMFCReBar` objects.  
   
 ```  
@@ -164,7 +164,7 @@ CReBarCtrl& GetReBarCtrl() const;
 ### Remarks  
  Call this method to take advantage of the Windows rebar common control functionality when customizing your rebar.  
   
-##  <a name="cmfcrebar__calcfixedlayout"></a>  CMFCReBar::CalcFixedLayout  
+##  <a name="calcfixedlayout"></a>  CMFCReBar::CalcFixedLayout  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -181,7 +181,7 @@ virtual CSize CalcFixedLayout(
   
 ### Remarks  
   
-##  <a name="cmfcrebar__canfloat"></a>  CMFCReBar::CanFloat  
+##  <a name="canfloat"></a>  CMFCReBar::CanFloat  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -194,7 +194,7 @@ virtual BOOL CanFloat() const;
   
 ### Remarks  
   
-##  <a name="cmfcrebar__enabledocking"></a>  CMFCReBar::EnableDocking  
+##  <a name="enabledocking"></a>  CMFCReBar::EnableDocking  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -206,7 +206,7 @@ void EnableDocking(DWORD dwDockStyle);
   
 ### Remarks  
   
-##  <a name="cmfcrebar__getrebarbandinfosize"></a>  CMFCReBar::GetReBarBandInfoSize  
+##  <a name="getrebarbandinfosize"></a>  CMFCReBar::GetReBarBandInfoSize  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -219,7 +219,7 @@ UINT GetReBarBandInfoSize() const;
   
 ### Remarks  
   
-##  <a name="cmfcrebar__onshowcontrolbarmenu"></a>  CMFCReBar::OnShowControlBarMenu  
+##  <a name="onshowcontrolbarmenu"></a>  CMFCReBar::OnShowControlBarMenu  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -233,7 +233,7 @@ virtual BOOL OnShowControlBarMenu(CPoint);
   
 ### Remarks  
   
-##  <a name="cmfcrebar__ontoolhittest"></a>  CMFCReBar::OnToolHitTest  
+##  <a name="ontoolhittest"></a>  CMFCReBar::OnToolHitTest  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -252,7 +252,7 @@ virtual INT_PTR OnToolHitTest(
   
 ### Remarks  
   
-##  <a name="cmfcrebar__onupdatecmdui"></a>  CMFCReBar::OnUpdateCmdUI  
+##  <a name="onupdatecmdui"></a>  CMFCReBar::OnUpdateCmdUI  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -267,7 +267,7 @@ virtual void OnUpdateCmdUI(
   
 ### Remarks  
   
-##  <a name="cmfcrebar__setpanealignment"></a>  CMFCReBar::SetPaneAlignment  
+##  <a name="setpanealignment"></a>  CMFCReBar::SetPaneAlignment  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  

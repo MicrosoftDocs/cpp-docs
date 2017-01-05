@@ -52,22 +52,22 @@ class AFX_NOVTABLE CRecordView : public CFormView
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRecordView::CRecordView](#crecordview__crecordview)|Constructs a `CRecordView` object.|  
+|[CRecordView::CRecordView](#crecordview)|Constructs a `CRecordView` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRecordView::IsOnFirstRecord](#crecordview__isonfirstrecord)|Returns nonzero if the current record is the first record in the associated recordset.|  
-|[CRecordView::IsOnLastRecord](#crecordview__isonlastrecord)|Returns nonzero if the current record is the last record in the associated recordset.|  
-|[CRecordView::OnGetRecordset](#crecordview__ongetrecordset)|Returns a pointer to an object of a class derived from `CRecordset`. ClassWizard overrides this function for you and creates the recordset if necessary.|  
-|[CRecordView::OnMove](#crecordview__onmove)||  
+|[CRecordView::IsOnFirstRecord](#isonfirstrecord)|Returns nonzero if the current record is the first record in the associated recordset.|  
+|[CRecordView::IsOnLastRecord](#isonlastrecord)|Returns nonzero if the current record is the last record in the associated recordset.|  
+|[CRecordView::OnGetRecordset](#ongetrecordset)|Returns a pointer to an object of a class derived from `CRecordset`. ClassWizard overrides this function for you and creates the recordset if necessary.|  
+|[CRecordView::OnMove](#onmove)||  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRecordView::OnMove](#crecordview__onmove)|If the current record has changed, updates it on the data source, then moves to the specified record (next, previous, first, or last).|  
+|[CRecordView::OnMove](#onmove)|If the current record has changed, updates it on the data source, then moves to the specified record (next, previous, first, or last).|  
   
 ## Remarks  
  The view is a form view directly connected to a `CRecordset` object. The view is created from a dialog template resource and displays the fields of the `CRecordset` object in the dialog template's controls. The `CRecordView` object uses dialog data exchange (DDX) and record field exchange (RFX) to automate the movement of data between the controls on the form and the fields of the recordset. `CRecordView` also supplies a default implementation for moving to the first, next, previous, or last record and an interface for updating the record currently on view.  
@@ -103,7 +103,7 @@ class AFX_NOVTABLE CRecordView : public CFormView
 ## Requirements  
  **Header:** afxdb.h  
   
-##  <a name="crecordview__crecordview"></a>  CRecordView::CRecordView  
+##  <a name="crecordview"></a>  CRecordView::CRecordView  
  When you create an object of a type derived from `CRecordView`, call either form of the constructor to initialize the view object and identify the dialog resource on which the view is based.  
   
 ```  
@@ -132,9 +132,9 @@ explicit CRecordView(UINT nIDTemplate);
 >  If you use ClassWizard, the wizard defines an `enum` value `CRecordView::IDD`, specifies it in the class declaration, and uses it in the member initialization list for the constructor.  
   
 ### Example  
- [!code-cpp[NVC_MFCDatabase#32](../../mfc/codesnippet/CPP/crecordview-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#32](../../mfc/codesnippet/cpp/crecordview-class_1.cpp)]  
   
-##  <a name="crecordview__isonfirstrecord"></a>  CRecordView::IsOnFirstRecord  
+##  <a name="isonfirstrecord"></a>  CRecordView::IsOnFirstRecord  
  Call this member function to determine whether the current record is the first record in the recordset object associated with this record view.  
   
 ```  
@@ -149,7 +149,7 @@ BOOL IsOnFirstRecord();
   
  If the user moves to the first record, the framework disables any user interface objects you have for moving to the first or the previous record.  
   
-##  <a name="crecordview__isonlastrecord"></a>  CRecordView::IsOnLastRecord  
+##  <a name="isonlastrecord"></a>  CRecordView::IsOnLastRecord  
  Call this member function to determine whether the current record is the last record in the recordset object associated with this record view.  
   
 ```  
@@ -165,7 +165,7 @@ BOOL IsOnLastRecord();
 > [!CAUTION]
 >  The result of this function is reliable except that the view cannot detect the end of the recordset until the user has moved past it. The user must move beyond the last record before the record view can tell that it must disable any user interface objects for moving to the next or last record. If the user moves past the last record and then moves back to the last record (or before it), the record view can track the user's position in the recordset and disable user interface objects correctly. `IsOnLastRecord` is also unreliable after a call to the implementation function **OnRecordLast**, which handles the `ID_RECORD_LAST` command, or `CRecordset::MoveLast`.  
   
-##  <a name="crecordview__ongetrecordset"></a>  CRecordView::OnGetRecordset  
+##  <a name="ongetrecordset"></a>  CRecordView::OnGetRecordset  
  Returns a pointer to the `CRecordset`-derived object associated with the record view.  
   
 ```  
@@ -180,7 +180,7 @@ virtual CRecordset* OnGetRecordset() = 0;
   
  For more information and examples, see the article [Record Views: Using a Record View](../../data/using-a-record-view-mfc-data-access.md).  
   
-##  <a name="crecordview__onmove"></a>  CRecordView::OnMove  
+##  <a name="onmove"></a>  CRecordView::OnMove  
  Call this member function to move to a different record in the recordset and display its fields in the controls of the record view.  
   
 ```  

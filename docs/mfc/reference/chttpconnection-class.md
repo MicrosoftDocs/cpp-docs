@@ -60,20 +60,20 @@ class CHttpConnection : public CInternetConnection
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHttpConnection::CHttpConnection](#chttpconnection__chttpconnection)|Creates a `CHttpConnection` object.|  
+|[CHttpConnection::CHttpConnection](#chttpconnection)|Creates a `CHttpConnection` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CHttpConnection::OpenRequest](#chttpconnection__openrequest)|Opens an HTTP request.|  
+|[CHttpConnection::OpenRequest](#openrequest)|Opens an HTTP request.|  
   
 ## Remarks  
  HTTP is one of three Internet server protocols implemented by the MFC WinInet classes.  
   
- The class `CHttpConnection` contains a constructor and one member function, [OpenRequest](#chttpconnection__openrequest), that manages connections to a server with an HTTP protocol.  
+ The class `CHttpConnection` contains a constructor and one member function, [OpenRequest](#openrequest), that manages connections to a server with an HTTP protocol.  
   
- To communicate with an HTTP server, you must first create an instance of [CInternetSession](../../mfc/reference/cinternetsession-class.md), and then create a [CHttpConnection](#_mfc_chttpconnection) object. You never create a `CHttpConnection` object directly; rather, call [CInternetSession::GetHttpConnection](../../mfc/reference/cinternetsession-class.md#cinternetsession__gethttpconnection), which creates the `CHttpConnection` object and returns a pointer to it.  
+ To communicate with an HTTP server, you must first create an instance of [CInternetSession](../../mfc/reference/cinternetsession-class.md), and then create a [CHttpConnection](#_mfc_chttpconnection) object. You never create a `CHttpConnection` object directly; rather, call [CInternetSession::GetHttpConnection](../../mfc/reference/cinternetsession-class.md#gethttpconnection), which creates the `CHttpConnection` object and returns a pointer to it.  
   
  To learn more about how `CHttpConnection` works with the other MFC Internet classes, see the article [Internet Programming with WinInet](../../mfc/win32-internet-extensions-wininet.md). For more information about connecting to servers using the other two supported Internet protocols, gopher and FTP, see the classes [CGopherConnection](../../mfc/reference/cgopherconnection-class.md) and [CFtpConnection](../../mfc/reference/cftpconnection-class.md).  
   
@@ -87,7 +87,7 @@ class CHttpConnection : public CInternetConnection
 ## Requirements  
  **Header:** afxinet.h  
   
-##  <a name="chttpconnection__chttpconnection"></a>  CHttpConnection::CHttpConnection  
+##  <a name="chttpconnection"></a>  CHttpConnection::CHttpConnection  
  This member function is called to construct a `CHttpConnection` object.  
   
 ```  
@@ -147,12 +147,12 @@ CHttpConnection(
 |Non- **NULL** String|Non- **NULL** String|`pstrUserName`|`pstrPassword`|  
   
  `dwFlags`  
- Any combination of the **INTERNET_ FLAG_\*** flags. See the table in the **Remarks** section of [CHttpConnection::OpenRequest](#chttpconnection__openrequest) for a description of `dwFlags` values.  
+ Any combination of the **INTERNET_ FLAG_\*** flags. See the table in the **Remarks** section of [CHttpConnection::OpenRequest](#openrequest) for a description of `dwFlags` values.  
   
 ### Remarks  
- You never create a `CHttpConnection` directly. Rather, you create an object by calling [CInternetSession::GetHttpConnection](../../mfc/reference/cinternetsession-class.md#cinternetsession__gethttpconnection).  
+ You never create a `CHttpConnection` directly. Rather, you create an object by calling [CInternetSession::GetHttpConnection](../../mfc/reference/cinternetsession-class.md#gethttpconnection).  
   
-##  <a name="chttpconnection__openrequest"></a>  CHttpConnection::OpenRequest  
+##  <a name="openrequest"></a>  CHttpConnection::OpenRequest  
  Call this member function to open an HTTP connection.  
   
 ```  
@@ -223,9 +223,9 @@ CHttpFile* OpenRequest(
 |`INTERNET_FLAG_DONT_CACHE`|Does not add the returned entity to the cache.|  
 |`INTERNET_FLAG_MAKE_PERSISTENT`|Adds the returned entity to the cache as a persistent entity. This means that standard cache cleanup, consistency checking, or garbage collection cannot remove this item from the cache.|  
 |`INTERNET_FLAG_SECURE`|Uses secure transaction semantics. This translates to using SSL/PCT and is only meaningful in HTTP requests|  
-|`INTERNET_FLAG_NO_AUTO_REDIRECT`|Used only with HTTP, specifies that redirections should not be automatically handled in [CHttpFile::SendRequest](../../mfc/reference/chttpfile-class.md#chttpfile__sendrequest).|  
+|`INTERNET_FLAG_NO_AUTO_REDIRECT`|Used only with HTTP, specifies that redirections should not be automatically handled in [CHttpFile::SendRequest](../../mfc/reference/chttpfile-class.md#sendrequest).|  
   
- Override the `dwContext` default to set the context identifier to a value of your choosing. The context identifier is associated with this specific operation of the `CHttpConnection` object created by its [CInternetSession](../../mfc/reference/cinternetsession-class.md) object. The value is returned to [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#cinternetsession__onstatuscallback) to provide status on the operation with which it is identified. See the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.  
+ Override the `dwContext` default to set the context identifier to a value of your choosing. The context identifier is associated with this specific operation of the `CHttpConnection` object created by its [CInternetSession](../../mfc/reference/cinternetsession-class.md) object. The value is returned to [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) to provide status on the operation with which it is identified. See the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.  
   
  Exceptions may be thrown with this function.  
   

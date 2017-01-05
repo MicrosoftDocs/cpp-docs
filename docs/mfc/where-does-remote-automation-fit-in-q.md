@@ -46,5 +46,5 @@ DCOM was released in 1996 and is available with 32-bit and 64-bit platforms only
  There need be no difference between programs created to use Remote Automation and those created to use Automation over DCOM, and the configuration utilities make it very simple to switch operation between Remote Automation and DCOM. Consequently, it is not difficult to upgrade an application from Remote Automation to DCOM once the infrastructure is in place.  
   
 ## See Also  
- [What Does Remote Automation Provide]--brokenlink--(../Topic/What%20Does%20Remote%20Automation%20Provide.md)   
+ [What Does Remote Automation Provide](what-does-remote-automation-provide-q.md)   
  [History of DCOM](../mfc/history-of-dcom.md)

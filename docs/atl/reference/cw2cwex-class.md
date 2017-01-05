@@ -60,20 +60,20 @@ template<int t_nBufferLength = 128>  class CW2CWEX
   
 |Name|Description|  
 |----------|-----------------|  
-|[CW2CWEX::CW2CWEX](#cw2cwex__cw2cwex)|The constructor.|  
-|[CW2CWEX::~CW2CWEX](#cw2cwex___dtorcw2cwex)|The destructor.|  
+|[CW2CWEX::CW2CWEX](#cw2cwex)|The constructor.|  
+|[CW2CWEX::~CW2CWEX](#dtor)|The destructor.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CW2CWEX::operator LPCWSTR](#cw2cwex__operator_lpcwstr)|Conversion operator.|  
+|[CW2CWEX::operator LPCWSTR](#operator_lpcwstr)|Conversion operator.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CW2CWEX::m_psz](#cw2cwex__m_psz)|The data member that stores the source string.|  
+|[CW2CWEX::m_psz](#m_psz)|The data member that stores the source string.|  
   
 ## Remarks  
  Unless extra functionality is required, use `CW2CTEX`, `CT2CWEX`, or `CW2W` in your code.  
@@ -90,15 +90,15 @@ template<int t_nBufferLength = 128>  class CW2CWEX
   
 - `CW2W`  
   
- For a discussion of these text conversion macros, see [ATL and MFC String Conversion Macros](../Topic/ATL%20and%20MFC%20String%20Conversion%20Macros.md).  
+ For a discussion of these text conversion macros, see [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/library/8f53659e-0464-4424-97db-6b8453c49863).  
   
 ## Example  
- See [ATL and MFC String Conversion Macros](../Topic/ATL%20and%20MFC%20String%20Conversion%20Macros.md) for an example of using these string conversion macros.  
+ See [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/library/8f53659e-0464-4424-97db-6b8453c49863) for an example of using these string conversion macros.  
   
 ## Requirements  
  **Header:** atlconv.h  
   
-##  <a name="cw2cwex__cw2cwex"></a>  CW2CWEX::CW2CWEX  
+##  <a name="cw2cwex"></a>  CW2CWEX::CW2CWEX  
  The constructor.  
   
 ```
@@ -117,7 +117,7 @@ CW2CWEX(LPCWSTR psz,  UINT nCodePage) throw(...);
 ### Remarks  
  Allocates the buffer used in the translation process.  
   
-##  <a name="cw2cwex___dtorcw2cwex"></a>  CW2CWEX::~CW2CWEX  
+##  <a name="dtor"></a>  CW2CWEX::~CW2CWEX  
  The destructor.  
   
 ```
@@ -127,14 +127,14 @@ CW2CWEX(LPCWSTR psz,  UINT nCodePage) throw(...);
 ### Remarks  
  Frees the allocated buffer.  
   
-##  <a name="cw2cwex__m_psz"></a>  CW2CWEX::m_psz  
+##  <a name="m_psz"></a>  CW2CWEX::m_psz  
  The data member that stores the source string.  
   
 ```
 LPCWSTR m_psz;
 ```  
   
-##  <a name="cw2cwex__operator_lpcwstr"></a>  CW2CWEX::operator LPCWSTR  
+##  <a name="operator_lpcwstr"></a>  CW2CWEX::operator LPCWSTR  
  Conversion operator.  
   
 ```operator LPCWSTR() const throw();

@@ -37,7 +37,7 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # vector Class
-The STL vector class is a template class of sequence containers that arrange elements of a given type in a linear arrangement and allow fast random access to any element. They should be the preferred container for a sequence when random-access performance is at a premium.  
+The C++ Standard Library vector class is a template class of sequence containers that arrange elements of a given type in a linear arrangement and allow fast random access to any element. They should be the preferred container for a sequence when random-access performance is at a premium.  
   
 ## Syntax  
   
@@ -286,7 +286,7 @@ const_reference back() const;
 ### Remarks  
  If the return value of **back** is assigned to a `const_reference`, the vector object cannot be modified. If the return value of **back** is assigned to a **reference**, the vector object can be modified.  
   
- When compiling with _SECURE_SCL 1, a runtime error will occur if you attempt to access an element in an empty vector.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
+ When compiled by using [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) defined as 1 or 2, a runtime error occurs if you attempt to access an element in an empty vector.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
   
 ### Example  
   
@@ -862,7 +862,7 @@ void emplace_back(Types&&... _Args);
   
 ### Example  
   
-```cppcpp  
+```cpp  
   
 #include <vector>  
 struct obj  
@@ -1039,7 +1039,7 @@ const_reference front() const;
 ### Remarks  
  If the return value of `front` is assigned to a `const_reference`, the vector object cannot be modified. If the return value of `front` is assigned to a **reference**, the vector object can be modified.  
   
- When compiling with _SECURE_SCL 1, a runtime error will occur if you attempt to access an element in an empty vector.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
+ When compiled by using [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) defined as 1 or 2, a runtime error occurs if you attempt to access an element in an empty vector.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
   
 ### Example  
   
@@ -1078,7 +1078,7 @@ Allocator get_allocator() const;
  The allocator used by the vector.  
   
 ### Remarks  
- Allocators for the vector class specify how the class manages storage. The default allocators supplied with STL container classes are sufficient for most programming needs. Writing and using your own allocator class is an advanced C++ topic.  
+ Allocators for the vector class specify how the class manages storage. The default allocators supplied with C++ Standard Library container classes are sufficient for most programming needs. Writing and using your own allocator class is an advanced C++ topic.  
   
 ### Example  
   
@@ -1272,11 +1272,11 @@ const_reference operator[](size_type Pos) const;
 ### Remarks  
  If the return value of `operator[]` is assigned to a `const_reference`, the vector object cannot be modified. If the return value of `operator[]` is assigned to a reference, the vector object can be modified.  
   
- When compiling with _SECURE_SCL 1 (controlled with [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)), a runtime error will occur if you attempt to access an element outside the bounds of the vector.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
+ When compiled by using [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) defined as 1 or 2, a runtime error occurs if you attempt to access an element outside the bounds of the vector.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
   
 ### Example  
   
-```cppcpp  
+```cpp  
 // vector_op_ref.cpp  
 // compile with: /EHsc  
 #include <vector>  
@@ -1653,7 +1653,7 @@ void resize(size_type Newsize, Type Val);
 //////////////////////////////////////////////////////////////////////  
   
 // The debugger cannot handle symbols more than 255 characters long.  
-// STL often creates symbols longer than that.  
+// The C++ Standard Library often creates symbols longer than that.  
 // The warning can be disabled:  
 //#pragma warning(disable:4786)  
   
@@ -2066,5 +2066,5 @@ v1 = 0 0 0v2 = 2 2 2 2 2v3 = 1 1 1v4 = 2 2 2 2 2v5 = 0 1 2 3 4v6 = 1 2v7 = 2 2 2
   
 ## See Also  
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 

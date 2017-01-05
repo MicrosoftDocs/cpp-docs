@@ -49,7 +49,7 @@ Visual C++ allows you to have multiple concurrent threads of execution running s
  Describes what processes and threads are and what the MFC approach to multithreading is.  
   
  [Multithreading and Locales](../parallel/multithreading-and-locales.md)  
- Discusses issues that arise when using the locale functionality of both the C Runtime Library and the Standard C++ Library in a multithreaded application.  
+ Discusses issues that arise when using the locale functionality of both the C Runtime Library and the C++ Standard Library in a multithreaded application.  
   
 ## Related Sections  
  [CWinThread](../mfc/reference/cwinthread-class.md)  

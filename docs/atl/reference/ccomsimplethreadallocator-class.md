@@ -54,7 +54,7 @@ class CComSimpleThreadAllocator
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComSimpleThreadAllocator::GetThread](#ccomsimplethreadallocator__getthread)|Selects a thread.|  
+|[CComSimpleThreadAllocator::GetThread](#getthread)|Selects a thread.|  
   
 ## Remarks  
  `CComSimpleThreadAllocator` manages thread selection for [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md). `CComSimpleThreadAllocator::GetThread` simply cycles through each thread and returns the next one in the sequence.  
@@ -62,7 +62,7 @@ class CComSimpleThreadAllocator
 ## Requirements  
  **Header:** atlbase.h  
   
-##  <a name="ccomsimplethreadallocator__getthread"></a>  CComSimpleThreadAllocator::GetThread  
+##  <a name="getthread"></a>  CComSimpleThreadAllocator::GetThread  
  Selects a thread by specifying the next thread in the sequence.  
   
 ```
@@ -83,7 +83,7 @@ int GetThread(
 ### Remarks  
  You can override `GetThread` to provide a different method of selection or to make use of the `pApt` parameter.  
   
- `GetThread` is called by [CComAutoThreadModule::CreateInstance](../../atl/reference/ccomautothreadmodule-class.md#ccomautothreadmodule__createinstance).  
+ `GetThread` is called by [CComAutoThreadModule::CreateInstance](../../atl/reference/ccomautothreadmodule-class.md#createinstance).  
   
 ## See Also  
  [CComApartment Class](../../atl/reference/ccomapartment-class.md)   

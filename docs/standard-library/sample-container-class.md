@@ -34,7 +34,7 @@ translation.priority.ht:
 ---
 # Sample Container Class
 > [!NOTE]
->  This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the Standard C++ Library. For more information, see [STL Containers](../standard-library/stl-containers.md).  
+>  This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).  
   
  Describes an object that controls a varying-length sequence of elements, typically of type **Ty**. The sequence is stored in different ways, depending on the actual container.  
   
@@ -48,11 +48,11 @@ translation.priority.ht:
   
 -   If the container stores a function object *comp*, to determine how to order the controlled sequence, and *comp* throws an exception of any kind, the resulting state of the container object is undefined.  
   
- The container classes defined by STL satisfy several additional requirements, as described in the following paragraphs.  
+ The container classes defined by C++ Standard Library satisfy several additional requirements, as described in the following paragraphs.  
   
  Container template class [list](../standard-library/list-class.md) provides deterministic, and useful, behavior even in the presence of the exceptions described above. For example, if an exception is thrown during the insertion of one or more elements, the container is left unaltered and the exception is rethrown.  
   
- For *all* the container classes defined by STL, if an exception is thrown during calls to the following member functions:  
+ For *all* the container classes defined by C++ Standard Library, if an exception is thrown during calls to the following member functions:  
   
 ```  
 <A NAME="vclrfcontainerinsert"></A>insert // single element inserted  
@@ -62,7 +62,7 @@ translation.priority.ht:
   
  the container is left unaltered and the exception is rethrown.  
   
- For *all* the container classes defined by STL, no exception is thrown during calls to the following member functions:  
+ For *all* the container classes defined by C++ Standard Library, no exception is thrown during calls to the following member functions:  
   
 ```  
 <A NAME="vclrfcontainerpopback"></A>pop_back  
@@ -73,17 +73,17 @@ translation.priority.ht:
   
  Moreover, no exception is thrown while copying an iterator returned by a member function.  
   
- The member function [swap](../standard-library/container-class-swap.md) makes additional promises for *all* container classes defined by STL:  
+ The member function [swap](../standard-library/container-class-swap.md) makes additional promises for *all* container classes defined by C++ Standard Library:  
   
 -   The member function throws an exception only if the container stores an allocator object al, and `al` throws an exception when copied.  
   
 -   References, pointers, and iterators that designate elements of the controlled sequences being swapped remain valid.  
   
- An object of a container class defined by STL allocates and frees storage for the sequence it controls through a stored object of type `Alloc`, which is typically a template parameter. Such an allocator object must have the same external interface as an object of class **allocator\<Ty>**. In particular, `Alloc` must be the same type as **Alloc::rebind<value_type>::other**  
+ An object of a container class defined by C++ Standard Library allocates and frees storage for the sequence it controls through a stored object of type `Alloc`, which is typically a template parameter. Such an allocator object must have the same external interface as an object of class **allocator\<Ty>**. In particular, `Alloc` must be the same type as **Alloc::rebind<value_type>::other**  
   
- For *all* container classes defined by STL, the member function **Alloc get_allocator const;** returns a copy of the stored allocator object. Note that the stored allocator object is *not* copied when the container object is assigned. All constructors initialize the value stored in **allocator**, to `Alloc` if the constructor contains no allocator parameter.  
+ For *all* container classes defined by C++ Standard Library, the member function **Alloc get_allocator const;** returns a copy of the stored allocator object. Note that the stored allocator object is *not* copied when the container object is assigned. All constructors initialize the value stored in **allocator**, to `Alloc` if the constructor contains no allocator parameter.  
   
- According to the C++ Standard, a container class defined by STL can assume that:  
+ According to the C++ Standard, a container class defined by the C++ Standard Library can assume that:  
   
 -   All objects of class `Alloc` compare equal.  
   

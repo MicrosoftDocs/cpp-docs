@@ -47,9 +47,7 @@ It is very common for programs to call into APIs in other binaries such as DLLs,
   
  ![Visual C&#43;&#43; Reference Manager &#40;ATL Projects&#41;](../ide/media/visual-c---reference-manager--atl-projects-.png "Visual C++ Reference Manager (ATL Projects)")  
   
- In a C++/CLI or Universal Windows Platform project,  the concept of references applies to more kinds of binaries in addition to other projects in the solution.  These are all exposed in **Reference Manager**:  
-  
- ![Visual C&#43;&#43; Reference Manager for C&#43;&#43;&#47;CLI projects](../Image/Visual%20C++%20Reference%20Manager%20for%20C++/CLI%20projects.png "Visual C++ Reference Manager for C++/CLI projects")  
+ In a C++/CLI or Universal Windows Platform project,  the concept of references applies to more kinds of binaries in addition to other projects in the solution.  These are all exposed in **Reference Manager**.
   
 ## Reference properties  
  Each kind of reference has properties. You can view the properties by selecting the reference in Solution Explorer and pressing **Alt + Enter**, or else right-clicking and choosing **Properties**. Some properties are read-only and some can be modified. However, typically you don't have to manually modify these properties.  
@@ -91,7 +89,7 @@ It is very common for programs to call into APIs in other binaries such as DLLs,
  Specifies that this assembly is used in the build process. If `true`, the assembly is used on the compiler command line during the build.  
   
 ### Project-to-project reference properties  
- The following properties define a *project-to-project reference* from the project that is selected in the **References** pane to another project  in the same solution. For more information, see [Managing references in a project](/visual-studio/ide/managing-references-in-a-project).  
+ The following properties define a *project-to-project reference* from the project that is selected in the **References** pane to another project  in the same solution. For more information, see [Managing references in a project](/visualstudio/ide/managing-references-in-a-project).  
   
  **Link Library Dependencies**  
  When this property is **True**, the project system links into the dependent project the .lib files that are produced by the independent project. Typically, you will specify **True**.  
@@ -137,4 +135,4 @@ It is very common for programs to call into APIs in other binaries such as DLLs,
   
 ## See Also  
  [Property Pages](../ide/property-pages-visual-cpp.md)   
- [How to: Open Project Property Pages](../misc/how-to-open-project-property-pages.md)
+ [Working with Project Properties](../ide/working-with-project-properties.md)

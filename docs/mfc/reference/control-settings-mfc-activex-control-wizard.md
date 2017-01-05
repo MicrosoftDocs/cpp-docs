@@ -72,7 +72,7 @@ Use this page of the wizard to specify how you want the control to behave. For e
  Specifies that the control has the standard Windows **About** dialog box, which displays version number and copyright information.  
   
 > [!NOTE]
->  How the user accesses help for the control depends on how you have implemented the help and whether you have integrated the control help with the container help. For more information about how to integrate help, on the [MSDN Library](http://go.microsoft.com/fwlink/linkID=150542) website, search for "Adding Context-Sensitive Help to an MFC ActiveX Control".  
+>  How the user accesses help for the control depends on how you have implemented the help and whether you have integrated the control help with the container help. For more information about how to integrate help, on the [MSDN Library](http://go.microsoft.com/fwlink/linkid=150542) website, search for "Adding Context-Sensitive Help to an MFC ActiveX Control".  
   
  When you select this option, it inserts the `AboutBox` control method in the project control class (C*ProjName*Ctrl.cpp) and adds AboutBox to the project dispatch map. By default, this option is selected.  
   
@@ -83,19 +83,19 @@ Use this page of the wizard to specify how you want the control to behave. For e
  Specifies that the control does not produce a window when it is activated. Windowless activation allows for nonrectangular or transparent controls, and a windowless control requires less system overhead than a control that has a window requires. A windowless control does not allow for an unclipped device context or flicker-free activation. Containers that were created before 1996 do not support windowless activation. For more information about how to use this option, see [Providing Windowless Activation](../../mfc/providing-windowless-activation.md).  
   
  **Unclipped device context**  
- Overrides [COleControl::GetControlFlags](../../mfc/reference/colecontrol-class.md#colecontrol__getcontrolflags) in the control header (*projname*ctrl.h) to disable the call to `IntersectClipRect` made by `COleControl`. When you select this option, it provides a small speed advantage. If you select **Windowless activation**, this feature is not available. For more information, see [Using an Unclipped Device Context](../../mfc/using-an-unclipped-device-context.md).  
+ Overrides [COleControl::GetControlFlags](../../mfc/reference/colecontrol-class.md#getcontrolflags) in the control header (*projname*ctrl.h) to disable the call to `IntersectClipRect` made by `COleControl`. When you select this option, it provides a small speed advantage. If you select **Windowless activation**, this feature is not available. For more information, see [Using an Unclipped Device Context](../../mfc/using-an-unclipped-device-context.md).  
   
  **Flicker-free activation**  
- Eliminates the drawing operations and the accompanying visual flicker that occur between the active and inactive states of the control. If you select **Windowless activation**, this feature is not available. When you set this option, the `noFlickerActivate` flag is one of the flags that are returned by [COleControl::GetControlFlags](../../mfc/reference/colecontrol-class.md#colecontrol__getcontrolflags). For more information, see [Providing Flicker-Free Activation](../../mfc/providing-flicker-free-activation.md).  
+ Eliminates the drawing operations and the accompanying visual flicker that occur between the active and inactive states of the control. If you select **Windowless activation**, this feature is not available. When you set this option, the `noFlickerActivate` flag is one of the flags that are returned by [COleControl::GetControlFlags](../../mfc/reference/colecontrol-class.md#getcontrolflags). For more information, see [Providing Flicker-Free Activation](../../mfc/providing-flicker-free-activation.md).  
   
  **Available in Insert Object dialog**  
  Specifies that the control will be available in the **Insert Object** dialog box for enabled containers. When you select this option, the `afxRegInsertable` flag is one of the flags that are returned by `AfxOleRegisterControlClass`. By using the **Insert Object** dialog box, a user can insert newly created or existing objects into a compound document.  
   
  **Mouse pointer notifications when inactive**  
- Enables the control to process mouse pointer notifications, whether control is active or not. When you select this option, the `pointerInactive` flag is one of the flags that are returned by [COleControl::GetControlFlags](../../mfc/reference/colecontrol-class.md#colecontrol__getcontrolflags). For more information about how to use this option, see [Providing Mouse Interaction While Inactive](../../mfc/providing-mouse-interaction-while-inactive.md).  
+ Enables the control to process mouse pointer notifications, whether control is active or not. When you select this option, the `pointerInactive` flag is one of the flags that are returned by [COleControl::GetControlFlags](../../mfc/reference/colecontrol-class.md#getcontrolflags). For more information about how to use this option, see [Providing Mouse Interaction While Inactive](../../mfc/providing-mouse-interaction-while-inactive.md).  
   
  **Acts as a simple frame control**  
- Specifies that the control is a container for other controls by setting the `OLEMISC_SIMPLEFRAME` bit for the control. For more information, on the [MSDN Library](http://go.microsoft.com/fwlink/linkID=150542) website, search for "Simple Frame Site Containment".  
+ Specifies that the control is a container for other controls by setting the `OLEMISC_SIMPLEFRAME` bit for the control. For more information, on the [MSDN Library](http://go.microsoft.com/fwlink/linkid=150542) website, search for "Simple Frame Site Containment".  
   
  **Loads properties asynchronously**  
  Enables a reset of any previous asynchronous data and initiates a new load of the asynchronous property of the control.  

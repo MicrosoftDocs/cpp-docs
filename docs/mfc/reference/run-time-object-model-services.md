@@ -141,12 +141,12 @@ DECLARE_SERIAL(class_name)
   
  You can use the **AFX_API** macro to automatically export the `CArchive` extraction operator for classes that use the `DECLARE_SERIAL` and `IMPLEMENT_SERIAL` macros. Bracket the class declarations (located in the .h file) with the following code:  
   
- [!code-cpp[NVC_MFCCObjectSample#20](../../mfc/codesnippet/CPP/run-time-object-model-services_1.h)]  
+ [!code-cpp[NVC_MFCCObjectSample#20](../../mfc/codesnippet/cpp/run-time-object-model-services_1.h)]  
   
  For more information on the `DECLARE_SERIAL` macro, see [CObject Class Topics](../../mfc/using-cobject.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCCObjectSample#21](../../mfc/codesnippet/CPP/run-time-object-model-services_2.h)]  
+ [!code-cpp[NVC_MFCCObjectSample#21](../../mfc/codesnippet/cpp/run-time-object-model-services_2.h)]  
   
 ##  <a name="implement_dynamic"></a>  IMPLEMENT_DYNAMIC  
  Generates the C++ code necessary for a dynamic `CObject`-derived class with run-time access to the class name and position within the hierarchy.  
@@ -168,9 +168,9 @@ IMPLEMENT_DYNAMIC(class_name, base_class_name)
  For more information, see [CObject Class Topics](../../mfc/using-cobject.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCCObjectSample#2](../../mfc/codesnippet/CPP/run-time-object-model-services_3.h)]  
+ [!code-cpp[NVC_MFCCObjectSample#2](../../mfc/codesnippet/cpp/run-time-object-model-services_3.h)]  
   
- [!code-cpp[NVC_MFCCObjectSample#3](../../mfc/codesnippet/CPP/run-time-object-model-services_4.cpp)]  
+ [!code-cpp[NVC_MFCCObjectSample#3](../../mfc/codesnippet/cpp/run-time-object-model-services_4.cpp)]  
   
 ##  <a name="implement_dyncreate"></a>  IMPLEMENT_DYNCREATE  
  Enables objects of `CObject`-derived classes to be created dynamically at run time when used with the `DECLARE_DYNCREATE` macro.  
@@ -196,9 +196,9 @@ IMPLEMENT_DYNCREATE(class_name, base_class_name)
  Note that this macro definition will invoke the default constructor for your class. If a non-trivial constructor is explicitly implemented by the class, it must also explicitly implement the default constructor as well. The default constructor can be added to the class's **private** or **protected** member sections to prevent it from being called from outside the class implementation.  
   
 ### Example  
- [!code-cpp[NVC_MFCCObjectSample#22](../../mfc/codesnippet/CPP/run-time-object-model-services_5.h)]  
+ [!code-cpp[NVC_MFCCObjectSample#22](../../mfc/codesnippet/cpp/run-time-object-model-services_5.h)]  
   
- [!code-cpp[NVC_MFCCObjectSample#23](../../mfc/codesnippet/CPP/run-time-object-model-services_6.cpp)]  
+ [!code-cpp[NVC_MFCCObjectSample#23](../../mfc/codesnippet/cpp/run-time-object-model-services_6.cpp)]  
   
 ##  <a name="implement_serial"></a>  IMPLEMENT_SERIAL  
  Generates the C++ code necessary for a dynamic `CObject`-derived class with run-time access to the class name and position within the hierarchy.  
@@ -222,12 +222,12 @@ IMPLEMENT_SERIAL(class_name, base_class_name, wSchema)
   
  You can use the **AFX_API** macro to automatically export the `CArchive` extraction operator for classes that use the `DECLARE_SERIAL` and `IMPLEMENT_SERIAL` macros. Bracket the class declarations (located in the .h file) with the following code:  
   
- [!code-cpp[NVC_MFCCObjectSample#20](../../mfc/codesnippet/CPP/run-time-object-model-services_1.h)]  
+ [!code-cpp[NVC_MFCCObjectSample#20](../../mfc/codesnippet/cpp/run-time-object-model-services_1.h)]  
   
  For more information, see the [CObject Class Topics](../../mfc/using-cobject.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCCObjectSample#24](../../mfc/codesnippet/CPP/run-time-object-model-services_7.cpp)]  
+ [!code-cpp[NVC_MFCCObjectSample#24](../../mfc/codesnippet/cpp/run-time-object-model-services_7.cpp)]  
   
 ##  <a name="runtime_class"></a>  RUNTIME_CLASS  
  Gets the run-time class structure from the name of a C++ class.  
@@ -246,7 +246,7 @@ RUNTIME_CLASS(class_name)
  For more information, see [CObject Class Topics](../../mfc/using-cobject.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCCObjectSample#25](../../mfc/codesnippet/CPP/run-time-object-model-services_8.cpp)]  
+ [!code-cpp[NVC_MFCCObjectSample#25](../../mfc/codesnippet/cpp/run-time-object-model-services_8.cpp)]  
   
 ##  <a name="declare_olecreate"></a>  DECLARE_OLECREATE  
  Enables objects of `CCmdTarget`-derived classes to be created through OLE automation.  
@@ -267,7 +267,7 @@ DECLARE_OLECREATE(class_name)
  If `DECLARE_OLECREATE` is included in the class declaration, then `IMPLEMENT_OLECREATE` must be included in the class implementation. A class declaration using `DECLARE_OLECREATE` must also use `DECLARE_DYNCREATE` or `DECLARE_SERIAL`.  
   
 ##  <a name="implement_olecreate"></a>  IMPLEMENT_OLECREATE  
- Either this macro or [IMPLEMENT_OLECREATE_FLAGS](../Topic/IMPLEMENT_OLECREATE_FLAGS.md) must appear in the implementation file for any class that uses `DECLARE_OLECREATE`.  
+ Either this macro or [IMPLEMENT_OLECREATE_FLAGS](http://msdn.microsoft.com/library/d1589f6a-5a69-4742-b07c-4c621cfd040d) must appear in the implementation file for any class that uses `DECLARE_OLECREATE`.  
   
 ```
 IMPLEMENT_OLECREATE(class_name, external_name, l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8)  

@@ -55,7 +55,7 @@ class ctype : public ctype_base;
 ## Remarks  
  As with any locale facet, the static object ID has an initial stored value of zero. The first attempt to access its stored value stores a unique positive value in **id.** Classification criteria are provided a nested bitmask type in the base class ctype_base.  
   
- The Standard C++ Library defines two explicit specializations of this template class:  
+ The C++ Standard Library defines two explicit specializations of this template class:  
   
 - [ctype](../standard-library/ctype-char-class.md)< `char`>, an explicit specialization whose differences are described separately.  
   

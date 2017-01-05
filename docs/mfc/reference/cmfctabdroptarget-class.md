@@ -57,21 +57,21 @@ class CMFCTabDropTarget : public COleDropTarget
 |||  
 |-|-|  
 |Name|Description|  
-|[CMFCTabDropTarget::OnDragEnter](#cmfctabdroptarget__ondragenter)|Called by the framework when the user drags an object into a tab window. (Overrides [COleDropTarget::OnDragEnter](../../mfc/reference/coledroptarget-class.md#coledroptarget__ondragenter).)|  
-|[CMFCTabDropTarget::OnDragLeave](#cmfctabdroptarget__ondragleave)|Called by the framework when the user drags an object outside of the tab window that has focus. (Overrides [COleDropTarget::OnDragLeave](../../mfc/reference/coledroptarget-class.md#coledroptarget__ondragleave).)|  
-|[CMFCTabDropTarget::OnDragOver](#cmfctabdroptarget__ondragover)|Called by the framework when the user drags an object onto the tab window that has focus. (Overrides [COleDropTarget::OnDragOver](../../mfc/reference/coledroptarget-class.md#coledroptarget__ondragover).)|  
-|[CMFCTabDropTarget::OnDropEx](#cmfctabdroptarget__ondropex)|Called by the framework when the user releases the mouse button at the end of a drag operation. (Overrides [COleDropTarget::OnDropEx](../../mfc/reference/coledroptarget-class.md#coledroptarget__ondropex).)|  
-|[CMFCTabDropTarget::Register](#cmfctabdroptarget__register)|Registers the control as one that can be the target of an OLE drag-and-drop operation.|  
+|[CMFCTabDropTarget::OnDragEnter](#ondragenter)|Called by the framework when the user drags an object into a tab window. (Overrides [COleDropTarget::OnDragEnter](../../mfc/reference/coledroptarget-class.md#ondragenter).)|  
+|[CMFCTabDropTarget::OnDragLeave](#ondragleave)|Called by the framework when the user drags an object outside of the tab window that has focus. (Overrides [COleDropTarget::OnDragLeave](../../mfc/reference/coledroptarget-class.md#ondragleave).)|  
+|[CMFCTabDropTarget::OnDragOver](#ondragover)|Called by the framework when the user drags an object onto the tab window that has focus. (Overrides [COleDropTarget::OnDragOver](../../mfc/reference/coledroptarget-class.md#ondragover).)|  
+|[CMFCTabDropTarget::OnDropEx](#ondropex)|Called by the framework when the user releases the mouse button at the end of a drag operation. (Overrides [COleDropTarget::OnDropEx](../../mfc/reference/coledroptarget-class.md#ondropex).)|  
+|[CMFCTabDropTarget::Register](#register)|Registers the control as one that can be the target of an OLE drag-and-drop operation.|  
   
 ### Remarks  
- This class provides drag-and-drop support to the `CMFCBaseTabCtrl` class. If your application initializes the OLE libraries by using the [AfxOleInit]--brokenlink--(../Topic/not%20found.md#afxoleinit) function, `CMFCBaseTabCtrl` objects register themselves for drag-and-drop operations.  
+ This class provides drag-and-drop support to the `CMFCBaseTabCtrl` class. If your application initializes the OLE libraries by using the [AfxOleInit](ole-initialization.md#afxoleinit) function, `CMFCBaseTabCtrl` objects register themselves for drag-and-drop operations.  
   
  The `CMFCTabDropTarget` class extends its base class by making the tab that is under the cursor when a drag operation occurs active. For more information about drag-and-drop operations, see [Drag and Drop (OLE)](../../mfc/drag-and-drop-ole.md).  
   
 ## Example  
  The following example demonstrates how to construct a `CMFCTabDropTarget` object and use its `Register` method.  
   
- [!code-cpp[NVC_MFC_RibbonApp#39](../../mfc/reference/codesnippet/CPP/cmfctabdroptarget-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#39](../../mfc/reference/codesnippet/cpp/cmfctabdroptarget-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -85,7 +85,7 @@ class CMFCTabDropTarget : public COleDropTarget
 ## Requirements  
  **Header:** afxbasetabctrl.h  
   
-##  <a name="cmfctabdroptarget__ondragenter"></a>  CMFCTabDropTarget::OnDragEnter  
+##  <a name="ondragenter"></a>  CMFCTabDropTarget::OnDragEnter  
  Called by the framework when the user drags an object into a tab window.  
   
 ```  
@@ -122,9 +122,9 @@ virtual DROPEFFECT OnDragEnter(
 ### Remarks  
  This method returns `DROPEFFECT_NONE` if the toolbar framework is not in customization mode or the Clipboard data format is unavailable. Otherwise, it returns the result of calling `CMFCBaseTabCtrl::OnDragEnter` with the provided parameters.  
   
- For more information about customization mode, see [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#cmfctoolbar__iscustomizemode). For more information about Clipboard data formats, see [COleDataObject::IsDataAvailable](../../mfc/reference/coledataobject-class.md#coledataobject__isdataavailable).  
+ For more information about customization mode, see [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode). For more information about Clipboard data formats, see [COleDataObject::IsDataAvailable](../../mfc/reference/coledataobject-class.md#isdataavailable).  
   
-##  <a name="cmfctabdroptarget__ondragleave"></a>  CMFCTabDropTarget::OnDragLeave  
+##  <a name="ondragleave"></a>  CMFCTabDropTarget::OnDragLeave  
  Called by the framework when the user drags an object outside of the tab window that has focus.  
   
 ```  
@@ -141,7 +141,7 @@ virtual void OnDragLeave(CWnd* pWnd);
 ### Remarks  
  This method calls the `CMFCBaseTabCtrl::OnDragLeave` method to perform the drag operation.  
   
-##  <a name="cmfctabdroptarget__ondragover"></a>  CMFCTabDropTarget::OnDragOver  
+##  <a name="ondragover"></a>  CMFCTabDropTarget::OnDragOver  
  Called by the framework when the user drags an object onto the tab window that has focus.  
   
 ```  
@@ -178,9 +178,9 @@ virtual DROPEFFECT OnDragOver(
 ### Remarks  
  This method makes the tab that is under the cursor when a drag operation occurs active. It returns `DROPEFFECT_NONE` if the toolbar framework is not in customization mode or the Clipboard data format is unavailable. Otherwise, it returns the result of calling `CMFCBaseTabCtrl::OnDragOver` with the provided parameters.  
   
- For more information about customization mode, see [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#cmfctoolbar__iscustomizemode). For more information about Clipboard data formats, see [COleDataObject::IsDataAvailable](../../mfc/reference/coledataobject-class.md#coledataobject__isdataavailable).  
+ For more information about customization mode, see [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode). For more information about Clipboard data formats, see [COleDataObject::IsDataAvailable](../../mfc/reference/coledataobject-class.md#isdataavailable).  
   
-##  <a name="cmfctabdroptarget__ondropex"></a>  CMFCTabDropTarget::OnDropEx  
+##  <a name="ondropex"></a>  CMFCTabDropTarget::OnDropEx  
  Called by the framework when the user releases the mouse button at the end of a drag operation.  
   
 ```  
@@ -217,11 +217,11 @@ virtual DROPEFFECT OnDropEx(
 - `DROPEFFECT_SCROLL`  
   
 ### Remarks  
- This method calls `CMFCBaseTabCtrl::OnDrop` if the toolbar framework is in customization mode and the Clipboard data format is available. If the call to `CMFCBaseTabCtrl::OnDrop` returns a nonzero value, this method returns the default drop effect specified by `dropEffect`. Otherwise, this method returns `DROPEFFECT_NONE`. For more information about drop effects, see [COleDropTarget::OnDropEx](../../mfc/reference/coledroptarget-class.md#coledroptarget__ondropex).  
+ This method calls `CMFCBaseTabCtrl::OnDrop` if the toolbar framework is in customization mode and the Clipboard data format is available. If the call to `CMFCBaseTabCtrl::OnDrop` returns a nonzero value, this method returns the default drop effect specified by `dropEffect`. Otherwise, this method returns `DROPEFFECT_NONE`. For more information about drop effects, see [COleDropTarget::OnDropEx](../../mfc/reference/coledroptarget-class.md#ondropex).  
   
- For more information about customization mode, see [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#cmfctoolbar__iscustomizemode). For more information about Clipboard data formats, see [COleDataObject::IsDataAvailable](../../mfc/reference/coledataobject-class.md#coledataobject__isdataavailable).  
+ For more information about customization mode, see [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode). For more information about Clipboard data formats, see [COleDataObject::IsDataAvailable](../../mfc/reference/coledataobject-class.md#isdataavailable).  
   
-##  <a name="cmfctabdroptarget__register"></a>  CMFCTabDropTarget::Register  
+##  <a name="register"></a>  CMFCTabDropTarget::Register  
  Registers the control as one that can be the target of an OLE drag-and-drop operation.  
   
 ```  
@@ -239,7 +239,7 @@ BOOL Register(CMFCBaseTabCtrl *pOwner);
  Nonzero if registration was successful; otherwise 0.  
   
 ### Remarks  
- This method calls [COleDropTarget::Register](../../mfc/reference/coledroptarget-class.md#coledroptarget__register) to register the control for drag-and-drop operations.  
+ This method calls [COleDropTarget::Register](../../mfc/reference/coledroptarget-class.md#register) to register the control for drag-and-drop operations.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

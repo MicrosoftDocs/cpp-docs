@@ -52,7 +52,7 @@ class front_insert_iterator;
  The type of container into the front of which elements are to be inserted by a `front_insert_iterator`.  
   
 ## Remarks  
- The container must satisfy the requirements for a front insertion sequence where is it possible to insert elements at the beginning of the sequence in amortized constant time. The Standard Template Library sequence containers defined by the [deque Class](../standard-library/deque-class.md) and [list Class](../standard-library/list-class.md) provide the needed `push_front` member function and satisfy these requirements. By contrast, sequence containers defined by the [vector Class](../standard-library/vector-class.md) do not satisfy these requirements and cannot be adapted to use with `front_insert_iterator`s. A `front_insert_iterator` must always be initialized with its container.  
+ The container must satisfy the requirements for a front insertion sequence where is it possible to insert elements at the beginning of the sequence in amortized constant time. The C++ Standard Library sequence containers defined by the [deque Class](../standard-library/deque-class.md) and [list Class](../standard-library/list-class.md) provide the needed `push_front` member function and satisfy these requirements. By contrast, sequence containers defined by the [vector Class](../standard-library/vector-class.md) do not satisfy these requirements and cannot be adapted to use with `front_insert_iterator`s. A `front_insert_iterator` must always be initialized with its container.  
   
 ### Constructors  
   
@@ -390,5 +390,5 @@ The first element in the list L is: 30.
 ## See Also  
  [\<iterator>](../standard-library/iterator.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 

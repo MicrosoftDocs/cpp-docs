@@ -90,5 +90,5 @@ Param="WIZARD_NAME = My AppWizard"
  [Custom Wizard](../ide/custom-wizard.md)   
  [Creating a Custom Wizard](../ide/creating-a-custom-wizard.md)   
  [Visual C++ Wizard Model](http://msdn.microsoft.com/en-us/159395ac-33c7-47bf-ad42-4e1435ddc758)   
- [Adding Wizards to the Add Item and New Project Dialog Boxes by Using .Vsdir Files](../Topic/Adding%20Wizards%20to%20the%20Add%20Item%20and%20New%20Project%20Dialog%20Boxes%20by%20Using%20.Vsdir%20Files.md)   
+ [Adding Wizards to the Add Item and New Project Dialog Boxes by Using .Vsdir Files](http://msdn.microsoft.com/Library/e0a20da0-3680-4084-997e-dbe02db51da9)   
  [Designing a Wizard](../ide/designing-a-wizard.md)

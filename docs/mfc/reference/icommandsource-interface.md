@@ -49,16 +49,16 @@ interface class ICommandSource
   
 |Name|Description|  
 |----------|-----------------|  
-|[ICommandSource::AddCommandHandler](#icommandcource__addcommandhandler)|Adds a command handler to a command source object.|  
-|[ICommandSource::AddCommandRangeHandler](#icommandcource__addcommandrangehandler)|Adds a group of command handlers to a command source object.|  
-|[ICommandSource::AddCommandRangeUIHandler](#icommandsource__addcommandrangecommandrangeuihandler)|Adds a group of user interface command message handlers to a command source object.|  
-|[ICommandSource::AddCommandUIHandler](#icommandsource__addcommandcommandrangeuihandler)|Adds a user interface command message handler to a command source object.|  
-|[ICommandSource::PostCommand](#icommandsource__postcommand)|Posts a message without waiting for it to be processed.|  
-|[ICommandSource::RemoveCommandHandler](#icommandsource__removecommandhandler)|Removes a command handler from a command source object.|  
-|[ICommandSource::RemoveCommandRangeHandler](#icommandsource__removecommandrangehandler)|Removes a group of command handlers from a command source object.|  
-|[ICommandSource::RemoveCommandRangeUIHandler](#icommandsource__removecommandrangecommandrangeuihandler)|Removes a group of user interface command message handlers from a command source object.|  
-|[ICommandSource::RemoveCommandUIHandler](#icommandsource__removecommandcommandrangeuihandler)|Removes a user interface command message handler from a command source object.|  
-|[ICommandSource::SendCommand](#icommandsource__sendcommand)|Sends a message and waits for it to be processed before returning.|  
+|[ICommandSource::AddCommandHandler](#addcommandhandler)|Adds a command handler to a command source object.|  
+|[ICommandSource::AddCommandRangeHandler](#addcommandrangehandler)|Adds a group of command handlers to a command source object.|  
+|[ICommandSource::AddCommandRangeUIHandler](#addcommandrangeuihandler)|Adds a group of user interface command message handlers to a command source object.|  
+|[ICommandSource::AddCommandUIHandler](#addcommandrangeuihandler)|Adds a user interface command message handler to a command source object.|  
+|[ICommandSource::PostCommand](#postcommand)|Posts a message without waiting for it to be processed.|  
+|[ICommandSource::RemoveCommandHandler](#removecommandhandler)|Removes a command handler from a command source object.|  
+|[ICommandSource::RemoveCommandRangeHandler](#removecommandrangehandler)|Removes a group of command handlers from a command source object.|  
+|[ICommandSource::RemoveCommandRangeUIHandler](#removecommandrangeuihandler)|Removes a group of user interface command message handlers from a command source object.|  
+|[ICommandSource::RemoveCommandUIHandler](#removecommandrangeuihandler)|Removes a user interface command message handler from a command source object.|  
+|[ICommandSource::SendCommand](#sendcommand)|Sends a message and waits for it to be processed before returning.|  
   
 ### Remarks  
  When you host a user control in an MFC View, [CWinFormsView Class](../../mfc/reference/cwinformsview-class.md) routes commands and update command UI messages to the user control to allow it to handle MFC commands (for example, frame menu items and toolbar buttons). By implementing [ICommandTarget Interface](../../mfc/reference/icommandtarget-interface.md), you give the user control a reference to the `ICommandSource` object.  
@@ -70,7 +70,7 @@ interface class ICommandSource
 ### Requirements  
  **Header:** afxwinforms.h (defined in assembly atlmfc\lib\mfcmifc80.dll)  
   
-## <a name="icommandcource__addcommandhandler"></a>  ICommandSource::AddCommandHandler
+## <a name="addcommandhandler"></a>  ICommandSource::AddCommandHandler
 Adds a command handler to a command source object.
 ```
 void AddCommandHandler(
@@ -88,7 +88,7 @@ A handle to the command handler method.
 This method adds the command handler cmdHandler to the command source object and maps the handler to cmdID.
 See [How to: Add Command Routing to the Windows Forms Control](https://msdn.microsoft.com/library/y33d8624.aspx) for an example of how to use AddCommandHandler.
 
-## <a name="icommandcource__addcommandrangehandler"></a> ICommandSource::AddCommandRangeHandler
+## <a name="addcommandrangehandler"></a> ICommandSource::AddCommandRangeHandler
 
 Adds a group of command handlers to a command source object.
 ```
@@ -107,7 +107,7 @@ A handle to the message handler method to which the commands are mapped.
 ### Remarks
 This method maps a contiguous range of command IDs to a single message handler and adds it to the command source object. This is used for handling a group of related buttons with one method.
 
-## <a name="icommandcource__addcommandrangeuihandler"></a> ICommandSource::AddCommandRangeUIHandler
+## <a name="addcommandrangeuihandler"></a> ICommandSource::AddCommandRangeUIHandler
 Adds a group of user interface command message handlers to a command source object.
 ```
 void AddCommandRangeUIHandler(
@@ -126,7 +126,7 @@ A handle to the message handler method to which the commands are mapped.
 ### Remarks
 This method maps a contiguous range of command IDs to a single user interface command message handler and adds it to the command source object. This is used for handling a group of related buttons with one method.
 
-## <a name="icommandcource__addcommanduihandler"></a> ICommandSource::AddCommandUIHandler
+## <a name="addcommanduihandler"></a> ICommandSource::AddCommandUIHandler
 Adds a user interface command message handler to a command source object.
 ```
 void AddCommandUIHandler(
@@ -142,7 +142,7 @@ A handle to the user interface command message handler method.
 ### Remarks
 This method adds the user interface command message handler cmdHandler to the command source object and maps the handler to cmdID.
 
-## <a name="icommandcource__postcommand"></a> ICommandSource::PostCommand
+## <a name="postcommand"></a> ICommandSource::PostCommand
 Posts a message without waiting for it to be processed.
 ```
 void PostCommand(unsigned int command);
@@ -154,7 +154,7 @@ The command ID of the message to be posted.
 This method asynchronously posts the message mapped to the ID specified by command. It calls CWnd::PostMessage to place the message in the window's message queue and then returns without waiting for the corresponding window to process the message.
 
 
-## <a name="icommandcource__removecommandhandler"></a> ICommandSource::RemoveCommandHandler
+## <a name="removecommandhandler"></a> ICommandSource::RemoveCommandHandler
 Removes a command handler from a command source object.
 ```
 void RemoveCommandHandler(unsigned int cmdID);
@@ -166,7 +166,7 @@ The command ID.
 This method removes the command handler mapped to cmdID from the command source object.
 
 
-## <a name="icommandcource__removecommandrangecommandhandler"></a> ICommandSource::RemoveCommandRangeHandler 
+## <a name="removecommandrangecommandhandler"></a> ICommandSource::RemoveCommandRangeHandler 
 Removes a group of command handlers from a command source object.
 ```
 void RemoveCommandRangeUIHandler(
@@ -181,7 +181,7 @@ The ending index of the command ID range.
 ### Remarks
 This method removes a group of message handlers, mapped to the command IDs specifed by cmdIDMin and cmdIDMax, from the command source object.
 
-## <a name="icommandcource__removecommandrangeuihandler"></a> ICommandSource::RemoveCommandRangeUIHandler 
+## <a name="removecommandrangeuihandler"></a> ICommandSource::RemoveCommandRangeUIHandler 
 Removes a group of user interface command message handlers from a command source object.
 ```
 void RemoveCommandRangeUIHandler(
@@ -196,7 +196,7 @@ The ending index of the command ID range.
 ### Remarks
 This method removes a group of user interface command message handlers, mapped to the command IDs specifed by cmdIDMin and cmdIDMax, from the command source object.
 
-## <a name="icommandcource__removecommanduihandler"></a> ICommandSource::RemoveCommandUIHandler 
+## <a name="removecommanduihandler"></a> ICommandSource::RemoveCommandUIHandler 
 Removes a user interface command message handler from a command source object.
 ```
 void RemoveCommandUIHandler(unsigned int cmdID);
@@ -207,7 +207,7 @@ The command ID.
 ### Remarks
 This method removes the user interface command message handler mapped to cmdID from the command source object.
 
-## <a name="icommandcource__sendcommand"></a> ICommandSource::SendCommand 
+## <a name="sendcommand"></a> ICommandSource::SendCommand 
 Sends a message and waits for it to be processed before returning.
 ```
 void SendCommand(unsigned int command);

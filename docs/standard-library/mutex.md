@@ -36,7 +36,7 @@ translation.priority.ht:
 Include the standard header \<mutex> to define the classes `mutex`, `recursive_mutex`, `timed_mutex`, and `recursive_timed_mutex`; the templates `lock_guard` and `unique_lock`; and supporting types and functions that define mutual-exclusion code regions.  
   
 > [!WARNING]
->  The STL synchronization types in Visual Studio 2015 are based on Windows synchronization primitives and no longer use ConcRT (except when the target platform is Windows XP). The types defined in \<mutex> should not be used with any ConcRT types or functions.  
+>  The C++ Standard Library synchronization types in Visual Studio 2015 are based on Windows synchronization primitives and no longer use ConcRT (except when the target platform is Windows XP). The types defined in \<mutex> should not be used with any ConcRT types or functions.  
   
 ## Syntax  
   
@@ -72,7 +72,7 @@ Include the standard header \<mutex> to define the classes `mutex`, `recursive_m
 |Name|Description|  
 |----------|-----------------|  
 |[lock_guard Class](../standard-library/lock-guard-class.md)|Represents a template that can be instantiated to create an object whose destructor unlocks a `mutex`.|  
-|[mutex Class (STL)](../standard-library/mutex-class-stl.md)|Represents a mutex type. Use objects of this type to enforce mutual exclusion within a program.|  
+|[mutex Class (C++ Standard Library)](../standard-library/mutex-class-stl.md)|Represents a mutex type. Use objects of this type to enforce mutual exclusion within a program.|  
 |[recursive_mutex Class](../standard-library/recursive-mutex-class.md)|Represents a mutex type. In constrast to the `mutex` class, the behavior of calling locking methods for objects that are already locked is well-defined.|  
 |[recursive_timed_mutex Class](../standard-library/recursive-timed-mutex-class.md)|Represents a timed mutex type. Use objects of this type to enforce mutual exclusion that has time-limited blocking within a program. Unlike objects of type `timed_mutex`, the effect of calling locking methods for `recursive_timed_mutex` objects is well-defined.|  
 |[timed_mutex Class](../standard-library/timed-mutex-class.md)|Represents a timed mutex type. Use objects of this type to enforce mutual exclusion that has time-limited blocking within a program.|  

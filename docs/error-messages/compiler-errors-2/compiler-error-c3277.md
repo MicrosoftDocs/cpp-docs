@@ -55,21 +55,3 @@ int main()
 {  
 }  
 ```  
-  
- The following sample generates C3277:  
-  
-```  
-// C3277b.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-__gc class A  
-{  
-   enum E {e1,e2};   // C3277  
-   // try the following line instead  
-   // __value enum E {e1,e2};  
-};  
-  
-int main()  
-{  
-}  
-```

@@ -49,7 +49,7 @@ class invalid_scheduler_policy_key : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[invalid_scheduler_policy_key::invalid_scheduler_policy_key Constructor](#invalid_scheduler_policy_key__invalid_scheduler_policy_key_constructor)|Overloaded. Constructs an `invalid_scheduler_policy_key` object.|  
+|[invalid_scheduler_policy_key::invalid_scheduler_policy_key Constructor](#ctor)|Overloaded. Constructs an `invalid_scheduler_policy_key` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  
@@ -61,7 +61,7 @@ class invalid_scheduler_policy_key : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="invalid_scheduler_policy_key__invalid_scheduler_policy_key_constructor"></a>  invalid_scheduler_policy_key::invalid_scheduler_policy_key Constructor  
+##  <a name="ctor"></a>  invalid_scheduler_policy_key::invalid_scheduler_policy_key Constructor  
  Constructs an `invalid_scheduler_policy_key` object.  
   
 ```
@@ -75,5 +75,5 @@ invalid_scheduler_policy_key() throw();
  A descriptive message of the error.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)   
- [SchedulerPolicy Class](../../../parallel/concrt/reference/schedulerpolicy-class.md)
+ [concurrency Namespace](concurrency-namespace.md)   
+ [SchedulerPolicy Class](schedulerpolicy-class.md)

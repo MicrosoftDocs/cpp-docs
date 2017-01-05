@@ -47,27 +47,27 @@ class CSplitButton : public CButton
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSplitButton::CSplitButton](#csplitbutton__csplitbutton)|Constructs a `CSplitButton` object.|  
+|[CSplitButton::CSplitButton](#csplitbutton)|Constructs a `CSplitButton` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSplitButton::Create](#csplitbutton__create)|Creates a split button control with specified styles and attaches it to the current `CSplitButton` object.|  
-|[CSplitButton::SetDropDownMenu](#csplitbutton__setdropdownmenu)|Sets the drop-down menu that is displayed when a user clicks the drop-down arrow of the current split button control.|  
+|[CSplitButton::Create](#create)|Creates a split button control with specified styles and attaches it to the current `CSplitButton` object.|  
+|[CSplitButton::SetDropDownMenu](#setdropdownmenu)|Sets the drop-down menu that is displayed when a user clicks the drop-down arrow of the current split button control.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSplitButton::OnDropDown](#csplitbutton__ondropdown)|Handles the `BCN_DROPDOWN` notification that the system sends when a user clicks the drop-down arrow of the current split button control.|  
+|[CSplitButton::OnDropDown](#ondropdown)|Handles the `BCN_DROPDOWN` notification that the system sends when a user clicks the drop-down arrow of the current split button control.|  
   
 ## Remarks  
  The `CSplitButton` class is derived from the [CButton](../../mfc/reference/cbutton-class.md) class. The split button control is a button control whose style is `BS_SPLITBUTTON`. It displays a custom menu when a user clicks the drop-down arrow. For more information, see the `BS_SPLITBUTTON` and `BS_DEFSPLITBUTTON` styles in [Button Styles](http://msdn.microsoft.com/library/windows/desktop/bb775951).  
   
  The following figure depicts a dialog box that contains a pager control and a (1) split button control. The (2) drop-down arrow has already been clicked and the (3) submenu is displayed.  
   
- ![Dialog with a splitbutton and pager control.](../../mfc/reference/media/splitbutton_pager.png "SplitButton_Pager")  
+ ![Dialog with a splitbutton and pager control.](../../mfc/reference/media/splitbutton_pager.png "splitbutton_pager")  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -87,7 +87,7 @@ class CSplitButton : public CButton
   
  Additional requirements for this class are described in [Build Requirements for Windows Vista Common Controls](../../mfc/build-requirements-for-windows-vista-common-controls.md).  
   
-##  <a name="csplitbutton__create"></a>  CSplitButton::Create  
+##  <a name="create"></a>  CSplitButton::Create  
  Creates a split button control with specified styles and attaches it to the current `CSplitButton` object.  
   
 ```  
@@ -110,7 +110,7 @@ virtual BOOL Create(
 ### Return Value  
  `true` if this method is successful; otherwise, `false`.  
   
-##  <a name="csplitbutton__csplitbutton"></a>  CSplitButton::CSplitButton  
+##  <a name="csplitbutton"></a>  CSplitButton::CSplitButton  
  Constructs a `CSplitButton` object. The constructor's parameters specify a submenu that is displayed when a user clicks the drop-down arrow of the split button control.  
   
 ```  
@@ -133,9 +133,9 @@ CSplitButton(
 |[in] `pMenu`|A pointer to a [CMenu](../../mfc/reference/cmenu-class.md) object that specifies a submenu. The `CSplitButton` object deletes the `CMenu` object and its associated `HMENU` when the `CSplitButton` object goes out of scope.|  
   
 ### Remarks  
- Use the [CSplitButton::Create](#csplitbutton__create) method to create a split button control and attach it to the `CSplitButton` object.  
+ Use the [CSplitButton::Create](#create) method to create a split button control and attach it to the `CSplitButton` object.  
   
-##  <a name="csplitbutton__ondropdown"></a>  CSplitButton::OnDropDown  
+##  <a name="ondropdown"></a>  CSplitButton::OnDropDown  
  Handles the `BCN_DROPDOWN` notification that the system sends when a user clicks the drop-down arrow of the current split button control.  
   
 ```  
@@ -165,7 +165,7 @@ BEGIN_MESSAGE_MAP(CMySplitButton,
 END_MESSAGE_MAP()  
 ```  
   
-##  <a name="csplitbutton__setdropdownmenu"></a>  CSplitButton::SetDropDownMenu  
+##  <a name="setdropdownmenu"></a>  CSplitButton::SetDropDownMenu  
  Sets the drop-down menu that is displayed when a user clicks the drop-down arrow of the current split button control.  
   
 ```  
@@ -191,12 +191,12 @@ void SetDropDownMenu(
   
  The following figure depicts a dialog box that contains a pager control and a (1) split button control. The (2) drop-down arrow has already been clicked and the (3) submenu is displayed.  
   
- ![Dialog with a splitbutton and pager control.](../../mfc/reference/media/splitbutton_pager.png "SplitButton_Pager")  
+ ![Dialog with a splitbutton and pager control.](../../mfc/reference/media/splitbutton_pager.png "splitbutton_pager")  
   
 ### Example  
- The first statement in the following code example demonstrates the [CSplitButton::SetDropDownMenu](#csplitbutton__setdropdownmenu) method. We created the menu with the Visual Studio resource editor, which automatically named the menu bar ID, `IDR_MENU1`. The `nSubMenuId` parameter, which is zero, refers to the only submenu of the menu bar.  
+ The first statement in the following code example demonstrates the [CSplitButton::SetDropDownMenu](#setdropdownmenu) method. We created the menu with the Visual Studio resource editor, which automatically named the menu bar ID, `IDR_MENU1`. The `nSubMenuId` parameter, which is zero, refers to the only submenu of the menu bar.  
   
- [!code-cpp[NVC_MFC_CSplitButton_s2#1](../../mfc/reference/codesnippet/CPP/csplitbutton-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_CSplitButton_s2#1](../../mfc/reference/codesnippet/cpp/csplitbutton-class_1.cpp)]  
   
 ## See Also  
  [CSplitButton Class](../../mfc/reference/csplitbutton-class.md)   

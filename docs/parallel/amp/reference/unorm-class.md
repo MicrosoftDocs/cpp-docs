@@ -49,7 +49,7 @@ class unorm;
   
 |Name|Description|  
 |----------|-----------------|  
-|[unorm::unorm Constructor](#unorm__unorm_constructor)|Overloaded. Default constructor. Initialize to 0.0f.|  
+|[unorm::unorm Constructor](#ctor)|Overloaded. Default constructor. Initialize to 0.0f.|  
   
 ### Public Operators  
   
@@ -72,7 +72,7 @@ class unorm;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="unorm__unorm_constructor"></a>  unorm::unorm Constructor  
+##  <a name="ctor"></a>  unorm::unorm Constructor  
  Default constructor. Initialize to 0.0f.  
   
 ```  
@@ -119,4 +119,4 @@ inline explicit unorm(
  The norm object used to initialize.  
   
 ## See Also  
- [Concurrency::graphics Namespace](../../../parallel/amp/reference/concurrency-graphics-namespace.md)
+ [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

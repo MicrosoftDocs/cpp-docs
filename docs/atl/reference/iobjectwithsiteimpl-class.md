@@ -59,15 +59,15 @@ template <class   T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[IObjectWithSiteImpl::GetSite](#iobjectwithsiteimpl__getsite)|Queries the site for an interface pointer.|  
-|[IObjectWithSiteImpl::SetChildSite](#iobjectwithsiteimpl__setchildsite)|Provides the object with the site's **IUnknown** pointer.|  
-|[IObjectWithSiteImpl::SetSite](#iobjectwithsiteimpl__setsite)|Provides the object with the site's **IUnknown** pointer.|  
+|[IObjectWithSiteImpl::GetSite](#getsite)|Queries the site for an interface pointer.|  
+|[IObjectWithSiteImpl::SetChildSite](#setchildsite)|Provides the object with the site's **IUnknown** pointer.|  
+|[IObjectWithSiteImpl::SetSite](#setsite)|Provides the object with the site's **IUnknown** pointer.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[IObjectWithSiteImpl::m_spUnkSite](#iobjectwithsiteimpl__m_spunksite)|Manages the site's **IUnknown** pointer.|  
+|[IObjectWithSiteImpl::m_spUnkSite](#m_spunksite)|Manages the site's **IUnknown** pointer.|  
   
 ## Remarks  
  The [IObjectWithSite](http://msdn.microsoft.com/library/windows/desktop/ms693765) interface allows an object to communicate with its site. Class `IObjectWithSiteImpl` provides a default implementation of this interface and implements **IUnknown** by sending information to the dump device in debug builds.  
@@ -84,7 +84,7 @@ template <class   T>
 ## Requirements  
  **Header:** atlcom.h  
   
-##  <a name="iobjectwithsiteimpl__getsite"></a>  IObjectWithSiteImpl::GetSite  
+##  <a name="getsite"></a>  IObjectWithSiteImpl::GetSite  
  Queries the site for a pointer to the interface identified by `riid`.  
   
 ```
@@ -98,7 +98,7 @@ STDMETHOD(GetSite)(
   
  See [IObjectWithSite::GetSite](http://msdn.microsoft.com/library/windows/desktop/ms694452) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="iobjectwithsiteimpl__m_spunksite"></a>  IObjectWithSiteImpl::m_spUnkSite  
+##  <a name="m_spunksite"></a>  IObjectWithSiteImpl::m_spUnkSite  
  Manages the site's **IUnknown** pointer.  
   
 ```
@@ -106,9 +106,9 @@ CComPtr<IUnknown> m_spUnkSite;
 ```  
   
 ### Remarks  
- `m_spUnkSite` initially receives this pointer through a call to [SetSite](#iobjectwithsiteimpl__setsite).  
+ `m_spUnkSite` initially receives this pointer through a call to [SetSite](#setsite).  
   
-##  <a name="iobjectwithsiteimpl__setchildsite"></a>  IObjectWithSiteImpl::SetChildSite  
+##  <a name="setchildsite"></a>  IObjectWithSiteImpl::SetChildSite  
  Provides the object with the site's **IUnknown** pointer.  
   
 ```
@@ -122,7 +122,7 @@ HRESULT SetChildSite(IUnknown* pUnkSite);
 ### Return Value  
  Returns `S_OK`.  
   
-##  <a name="iobjectwithsiteimpl__setsite"></a>  IObjectWithSiteImpl::SetSite  
+##  <a name="setsite"></a>  IObjectWithSiteImpl::SetSite  
  Provides the object with the site's **IUnknown** pointer.  
   
 ```

@@ -35,18 +35,19 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Use Schedule Groups to Influence Order of Execution
-In the Concurrency Runtime, the order in which tasks are scheduled is non-deterministic. However, you can use scheduling policies to influence the order in which tasks run. This topic shows how to use schedule groups together with the [concurrency::SchedulingProtocol](../Topic/PolicyElementKey%20Enumeration.md) scheduler policy to influence the order in which tasks run.  
+In the Concurrency Runtime, the order in which tasks are scheduled is non-deterministic. However, you can use scheduling policies to influence the order in which tasks run. This topic shows how to use schedule groups together with the [concurrency::SchedulingProtocol](reference/concurrency-namespace-enums.md#policyelementkey) scheduler policy to influence the order in which tasks run.  
+
   
  The example runs a set of tasks two times, each with a different scheduling policy. Both policies limit the maximum number of processing resources to two. The first run uses the `EnhanceScheduleGroupLocality` policy, which is the default, and the second run uses the `EnhanceForwardProgress` policy. Under the `EnhanceScheduleGroupLocality` policy, the scheduler runs all tasks in one schedule group until each task finishes or yields. Under the `EnhanceForwardProgress` policy, the scheduler moves to the next schedule group in a round-robin manner after just one task finishes or yields.  
   
  When each schedule group contains related tasks, the `EnhanceScheduleGroupLocality` policy typically results in improved performance because cache locality is preserved between tasks. The `EnhanceForwardProgress` policy enables tasks to make forward progress and is useful when you require scheduling fairness across schedule groups.  
   
 ## Example  
- This example defines the `work_yield_agent` class, which derives from [concurrency::agent](../../parallel/concrt/reference/agent-class.md). The `work_yield_agent` class performs a unit of work, yields the current context, and then performs another unit of work. The agent uses the [concurrency::wait](../Topic/wait%20Function.md) function to cooperatively yield the current context so that other contexts can run.  
+ This example defines the `work_yield_agent` class, which derives from [concurrency::agent](../../parallel/concrt/reference/agent-class.md). The `work_yield_agent` class performs a unit of work, yields the current context, and then performs another unit of work. The agent uses the [concurrency::wait](reference/concurrency-namespace-functions.md#wait) function to cooperatively yield the current context so that other contexts can run.  
   
- This example creates four `work_yield_agent` objects. To illustrate how to set scheduler policies to affect the order in which the agents run, the example associates the first two agents with one schedule group and the other two agents with another schedule group. The example uses the [concurrency::CurrentScheduler::CreateScheduleGroup](../Topic/CurrentScheduler::CreateScheduleGroup%20Method.md) method to create the [concurrency::ScheduleGroup](../../parallel/concrt/reference/schedulegroup-class.md) objects. The example runs all four agents two times, each time with a different scheduling policy.  
+ This example creates four `work_yield_agent` objects. To illustrate how to set scheduler policies to affect the order in which the agents run, the example associates the first two agents with one schedule group and the other two agents with another schedule group. The example uses the [concurrency::CurrentScheduler::CreateScheduleGroup](reference/currentscheduler-class.md#createschedulegroup) method to create the [concurrency::ScheduleGroup](../../parallel/concrt/reference/schedulegroup-class.md) objects. The example runs all four agents two times, each time with a different scheduling policy.  
   
- [!code-cpp[concrt-scheduling-protocol#1](../../parallel/concrt/codesnippet/CPP/how-to-use-schedule-groups-to-influence-order-of-execution_1.cpp)]  
+ [!code-cpp[concrt-scheduling-protocol#1](../../parallel/concrt/codesnippet/cpp/how-to-use-schedule-groups-to-influence-order-of-execution_1.cpp)]  
   
  This example produces the following output.  
   

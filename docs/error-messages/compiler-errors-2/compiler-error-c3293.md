@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error C3293
 'accessor': use 'default' to access the default property (indexer) for class 'type'  
   
- An indexed property was accessed incorrectly.  See [How to: Use Indexed Properties](../../misc/how-to-use-indexed-properties.md) for more information.  
+ An indexed property was accessed incorrectly.  See [How to: Use Properties in C++/CLI](../../dotnet/how-to-use-properties-in-cpp-cli.md) for more information.  
   
 ## Example  
  The following sample generates C3293.  

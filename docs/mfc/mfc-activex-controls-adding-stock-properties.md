@@ -77,11 +77,11 @@ Stock properties differ from custom properties in that they are already implemen
 ##  <a name="_core_classwizard_changes_for_stock_properties"></a> Add Property Wizard Changes for Stock Properties  
  Because `COleControl` supports stock properties, the Add Property Wizard does not change the class declaration in any way; it adds the property to the dispatch map. The Add Property Wizard adds the following line to the dispatch map of the control, which is located in the implementation (.CPP) file:  
   
- [!code-cpp[NVC_MFC_AxUI#22](../mfc/codesnippet/CPP/mfc-activex-controls-adding-stock-properties_1.cpp)]  
+ [!code-cpp[NVC_MFC_AxUI#22](../mfc/codesnippet/cpp/mfc-activex-controls-adding-stock-properties_1.cpp)]  
   
  The following line is added to your control's interface description (.IDL) file:  
   
- [!code-cpp[NVC_MFC_AxUI#23](../mfc/codesnippet/CPP/mfc-activex-controls-adding-stock-properties_2.idl)]  
+ [!code-cpp[NVC_MFC_AxUI#23](../mfc/codesnippet/cpp/mfc-activex-controls-adding-stock-properties_2.idl)]  
   
  This line assigns the Caption property a specific ID. Notice that the property is bindable and will request permission from the database before modifying the value.  
   
@@ -107,13 +107,13 @@ Stock properties differ from custom properties in that they are already implemen
  Most stock properties have notification functions that can be overridden. For example, whenever the `BackColor` property is changed, the `OnBackColorChanged` function (a member function of the control class) is called. The default implementation (in `COleControl`) calls `InvalidateControl`. Override this function if you want to take additional actions in response to this situation.  
   
 ##  <a name="_core_color_properties"></a> Color Properties  
- You can use the stock `ForeColor` and `BackColor` properties, or your own custom color properties, when painting the control. To use a color property, call the [COleControl::TranslateColor](../mfc/reference/colecontrol-class.md#colecontrol__translatecolor) member function. The parameters of this function are the value of the color property and an optional palette handle. The return value is a **COLORREF** value that can be passed to GDI functions, such as `SetTextColor` and `CreateSolidBrush`.  
+ You can use the stock `ForeColor` and `BackColor` properties, or your own custom color properties, when painting the control. To use a color property, call the [COleControl::TranslateColor](../mfc/reference/colecontrol-class.md#translatecolor) member function. The parameters of this function are the value of the color property and an optional palette handle. The return value is a **COLORREF** value that can be passed to GDI functions, such as `SetTextColor` and `CreateSolidBrush`.  
   
  The color values for the stock `ForeColor` and `BackColor` properties are accessed by calling either the `GetForeColor` or the `GetBackColor` function, respectively.  
   
  The following example demonstrates using these two color properties when painting a control. It initializes a temporary **COLORREF** variable and a `CBrush` object with calls to `TranslateColor`: one using the `ForeColor` property and the other using the `BackColor` property. A temporary `CBrush` object is then used to paint the control's rectangle, and the text color is set using the `ForeColor` property.  
   
- [!code-cpp[NVC_MFC_AxUI#24](../mfc/codesnippet/CPP/mfc-activex-controls-adding-stock-properties_3.cpp)]  
+ [!code-cpp[NVC_MFC_AxUI#24](../mfc/codesnippet/cpp/mfc-activex-controls-adding-stock-properties_3.cpp)]  
   
 ## See Also  
  [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)   

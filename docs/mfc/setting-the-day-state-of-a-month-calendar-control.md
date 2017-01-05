@@ -44,7 +44,7 @@ One of the attributes of a month calendar control is the ability to store inform
   
  Day state information is expressed as a 32-bit data type, **MONTHDAYSTATE**. Each bit in a **MONTHDAYSTATE** bit field (1 through 31) represents the state of a day in a month. If a bit is on, the corresponding day will be displayed in bold; otherwise it will be displayed with no emphasis.  
   
- There are two methods for setting the day state of the month calendar control: explicitly with a call to [CMonthCalCtrl::SetDayState](../mfc/reference/cmonthcalctrl-class.md#cmonthcalctrl__setdaystate) or by handling the **MCN_GETDAYSTATE** notification message.  
+ There are two methods for setting the day state of the month calendar control: explicitly with a call to [CMonthCalCtrl::SetDayState](../mfc/reference/cmonthcalctrl-class.md#setdaystate) or by handling the **MCN_GETDAYSTATE** notification message.  
   
 ## Handling the MCN_GETDAYSTATE Notification Message  
  The **MCN_GETDAYSTATE** message is sent by the control to determine how the days within the visible months should be displayed.  
@@ -60,7 +60,7 @@ One of the attributes of a month calendar control is the ability to store inform
   
 2.  In the body of the handler, add the following code:  
   
-     [!code-cpp[NVC_MFCControlLadenDialog#26](../mfc/codesnippet/CPP/setting-the-day-state-of-a-month-calendar-control_1.cpp)]  
+     [!code-cpp[NVC_MFCControlLadenDialog#26](../mfc/codesnippet/cpp/setting-the-day-state-of-a-month-calendar-control_1.cpp)]  
   
      The example converts the `pNMHDR` pointer to the proper type, then determines how many months of information are being requested (`pDayState->cDayState`). For each month, the current bitfield (`pDayState->prgDayState[i]`) is initialized to zero and then the needed dates are set (in this case, the 15th of each month).  
   

@@ -49,20 +49,20 @@ class CMFCCaptionButton : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCCaptionButton::CMFCCaptionButton](#cmfccaptionbutton__cmfccaptionbutton)|Constructs a CMFCCaptionButton object.|  
+|[CMFCCaptionButton::CMFCCaptionButton](#cmfccaptionbutton)|Constructs a CMFCCaptionButton object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCCaptionButton::GetHit](#cmfccaptionbutton__gethit)|Returns the command represented by the button.|  
-|[CMFCCaptionButton::GetIconID](#cmfccaptionbutton__geticonid)|Returns the image ID associated with the button.|  
-|[CMFCCaptionButton::GetRect](#cmfccaptionbutton__getrect)|Returns the rectangle occupied by the button.|  
-|[CMFCCaptionButton::GetSize](#cmfccaptionbutton__getsize)|Returns the width and height of the button.|  
-|[CMFCCaptionButton::IsMiniFrameButton](#cmfccaptionbutton__isminiframebutton)|Indicates whether the title bar height is set to mini size.|  
-|[CMFCCaptionButton::Move](#cmfccaptionbutton__move)|Sets the button draw location and window show state.|  
-|[CMFCCaptionButton::OnDraw](#cmfccaptionbutton__ondraw)|Draws the caption button.|  
-|[CMFCCaptionButton::SetMiniFrameButton](#cmfccaptionbutton__setminiframebutton)|Sets the mini size of the title bar.|  
+|[CMFCCaptionButton::GetHit](#gethit)|Returns the command represented by the button.|  
+|[CMFCCaptionButton::GetIconID](#geticonid)|Returns the image ID associated with the button.|  
+|[CMFCCaptionButton::GetRect](#getrect)|Returns the rectangle occupied by the button.|  
+|[CMFCCaptionButton::GetSize](#getsize)|Returns the width and height of the button.|  
+|[CMFCCaptionButton::IsMiniFrameButton](#isminiframebutton)|Indicates whether the title bar height is set to mini size.|  
+|[CMFCCaptionButton::Move](#move)|Sets the button draw location and window show state.|  
+|[CMFCCaptionButton::OnDraw](#ondraw)|Draws the caption button.|  
+|[CMFCCaptionButton::SetMiniFrameButton](#setminiframebutton)|Sets the mini size of the title bar.|  
   
 ## Remarks  
  You can derive a class from [CPaneFrameWnd Class](../../mfc/reference/cpaneframewnd-class.md) and use the protected method, `AddButton`, to add caption buttons to a mini frame window.  
@@ -76,7 +76,7 @@ class CMFCCaptionButton : public CObject
 ## Example  
  The following example demonstrates how to construct a `CMFCCaptionButton` object and set the mini size of the title bar.  
   
- [!code-cpp[NVC_MFC_RibbonApp#43](../../mfc/reference/codesnippet/CPP/cmfccaptionbutton-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#43](../../mfc/reference/codesnippet/cpp/cmfccaptionbutton-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -86,7 +86,7 @@ class CMFCCaptionButton : public CObject
 ## Requirements  
  **Header:** afxcaptionbutton.h  
   
-##  <a name="cmfccaptionbutton__cmfccaptionbutton"></a>  CMFCCaptionButton::CMFCCaptionButton  
+##  <a name="cmfccaptionbutton"></a>  CMFCCaptionButton::CMFCCaptionButton  
  Constructs a `CMFCCaptionButton` object.  
   
 ```  
@@ -122,7 +122,7 @@ CMFCCaptionButton(
   
  Caption buttons are aligned either on the right or left.  
   
-##  <a name="cmfccaptionbutton__gethit"></a>  CMFCCaptionButton::GetHit  
+##  <a name="gethit"></a>  CMFCCaptionButton::GetHit  
  Returns the command represented by the button.  
   
 ```  
@@ -146,7 +146,7 @@ UINT GetHit() const;
 |`AFX_HTMENU`|Down arrow menu button.|  
 |`HTNOWHERE`|The default value; represents no command.|  
   
-##  <a name="cmfccaptionbutton__geticonid"></a>  CMFCCaptionButton::GetIconID  
+##  <a name="geticonid"></a>  CMFCCaptionButton::GetIconID  
  Returns the image ID associated with the button.  
   
 ```  
@@ -170,7 +170,7 @@ virtual CMenuImages::IMAGES_IDS GetIconID(
 ### Remarks  
  The parameters specify image IDs for minimize or maximize caption buttons.  
   
-##  <a name="cmfccaptionbutton__getrect"></a>  CMFCCaptionButton::GetRect  
+##  <a name="getrect"></a>  CMFCCaptionButton::GetRect  
  Returns the rectangle occupied by the button.  
   
 ```  
@@ -185,7 +185,7 @@ virtual CRect GetRect() const;
 ### Remarks  
  If you cannot see the button, the size returned is 0.  
   
-##  <a name="cmfccaptionbutton__getsize"></a>  CMFCCaptionButton::GetSize  
+##  <a name="getsize"></a>  CMFCCaptionButton::GetSize  
  Returns the width and height of the button.  
   
 ```  
@@ -198,7 +198,7 @@ static CSize GetSize();
 ### Remarks  
  The size returned includes button margin and border.  
   
-##  <a name="cmfccaptionbutton__isminiframebutton"></a>  CMFCCaptionButton::IsMiniFrameButton  
+##  <a name="isminiframebutton"></a>  CMFCCaptionButton::IsMiniFrameButton  
  Indicates whether the title bar height is set to mini size.  
   
 ```  
@@ -212,7 +212,7 @@ BOOL IsMiniFrameButton() const;
   
 ### Remarks  
   
-##  <a name="cmfccaptionbutton__move"></a>  CMFCCaptionButton::Move  
+##  <a name="move"></a>  CMFCCaptionButton::Move  
  Sets the button draw location and window show state.  
   
 ```  
@@ -228,7 +228,7 @@ void Move(
  [in] `bHide`  
  Whether to show the button.  
   
-##  <a name="cmfccaptionbutton__ondraw"></a>  CMFCCaptionButton::OnDraw  
+##  <a name="ondraw"></a>  CMFCCaptionButton::OnDraw  
  Draws the caption button.  
   
 ```  
@@ -259,7 +259,7 @@ virtual void OnDraw(
 ### Remarks  
  The `bMaximized` parameter is used when the button is a maximize or minimize button.  
   
-##  <a name="cmfccaptionbutton__setminiframebutton"></a>  CMFCCaptionButton::SetMiniFrameButton  
+##  <a name="setminiframebutton"></a>  CMFCCaptionButton::SetMiniFrameButton  
  Sets the mini size of the title bar.  
   
 ```  

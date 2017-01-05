@@ -130,7 +130,7 @@ A Windows toolbar common control has built-in customization features, including 
  `} NMHDR;`  
   
  **hwndFrom**  
- Window handle of the control that is sending the notification. To convert this handle to a `CWnd` pointer, use [CWnd::FromHandle](../mfc/reference/cwnd-class.md#cwnd__fromhandle).  
+ Window handle of the control that is sending the notification. To convert this handle to a `CWnd` pointer, use [CWnd::FromHandle](../mfc/reference/cwnd-class.md#fromhandle).  
   
  **idFrom**  
  Identifier of the control sending the notification.  

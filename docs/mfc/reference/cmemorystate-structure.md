@@ -51,16 +51,16 @@ struct CMemoryState
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMemoryState::CMemoryState](#cmemorystate__cmemorystate)|Constructs a class-like structure that controls memory checkpoints.|  
+|[CMemoryState::CMemoryState](#cmemorystate)|Constructs a class-like structure that controls memory checkpoints.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMemoryState::Checkpoint](#cmemorystate__checkpoint)|Obtains a snapshot (checkpoint) of the current memory state.|  
-|[CMemoryState::Difference](#cmemorystate__difference)|Computes the difference between two objects of type `CMemoryState`.|  
-|[CMemoryState::DumpAllObjectsSince](#cmemorystate__dumpallobjectssince)|Dumps a summary of all currently allocated objects since a previous checkpoint.|  
-|[CMemoryState::DumpStatistics](#cmemorystate__dumpstatistics)|Prints memory allocation statistics for a `CMemoryState` object.|  
+|[CMemoryState::Checkpoint](#checkpoint)|Obtains a snapshot (checkpoint) of the current memory state.|  
+|[CMemoryState::Difference](#difference)|Computes the difference between two objects of type `CMemoryState`.|  
+|[CMemoryState::DumpAllObjectsSince](#dumpallobjectssince)|Dumps a summary of all currently allocated objects since a previous checkpoint.|  
+|[CMemoryState::DumpStatistics](#dumpstatistics)|Prints memory allocation statistics for a `CMemoryState` object.|  
   
 ## Remarks  
  `CMemoryState` is a structure and does not have a base class.  
@@ -81,7 +81,7 @@ struct CMemoryState
   
  If simply knowing where the imbalance in allocation and deallocation occurs does not provide enough information, you can use the `DumpAllObjectsSince` function to dump all objects allocated since the previous call to `Checkpoint`. This dump shows the order of allocation, the source file and line where the object was allocated (if you are using `DEBUG_NEW` for allocation), and the derivation of the object, its address, and its size. `DumpAllObjectsSince` also calls each object's `Dump` function to provide information about its current state.  
   
- For more information about how to use `CMemoryState` and other diagnostics, see [Debugging MFC Applications](/visual-studio/debugger/mfc-debugging-techniques).  
+ For more information about how to use `CMemoryState` and other diagnostics, see [Debugging MFC Applications](/visualstudio/debugger/mfc-debugging-techniques).  
   
 > [!NOTE]
 >  Declarations of objects of type `CMemoryState` and calls to member functions should be bracketed by `#if defined(_DEBUG)/#endif` directives. This causes memory diagnostics to be included only in debugging builds of your program.  
@@ -92,7 +92,7 @@ struct CMemoryState
 ## Requirements  
  **Header:** afx.h  
   
-##  <a name="cmemorystate__checkpoint"></a>  CMemoryState::Checkpoint  
+##  <a name="checkpoint"></a>  CMemoryState::Checkpoint  
  Takes a snapshot summary of memory and stores it in this `CMemoryState` object.  
   
 ```  
@@ -100,22 +100,22 @@ void Checkpoint();
 ```  
   
 ### Remarks  
- The `CMemoryState` member functions [Difference](#cmemorystate__difference) and [DumpAllObjectsSince](#cmemorystate__dumpallobjectssince) use this snapshot data.  
+ The `CMemoryState` member functions [Difference](#difference) and [DumpAllObjectsSince](#dumpallobjectssince) use this snapshot data.  
   
 ### Example  
-  See the example for the [CMemoryState](#cmemorystate__cmemorystate) constructor.  
+  See the example for the [CMemoryState](#cmemorystate) constructor.  
   
-##  <a name="cmemorystate__cmemorystate"></a>  CMemoryState::CMemoryState  
- Constructs an empty `CMemoryState` object that must be filled in by the [Checkpoint](#cmemorystate__checkpoint) or [Difference](#cmemorystate__difference) member function.  
+##  <a name="cmemorystate"></a>  CMemoryState::CMemoryState  
+ Constructs an empty `CMemoryState` object that must be filled in by the [Checkpoint](#checkpoint) or [Difference](#difference) member function.  
   
 ```  
 CMemoryState();
 ```  
   
 ### Example  
- [!code-cpp[NVC_MFC_Utilities#18](../../mfc/codesnippet/CPP/cmemorystate-structure_1.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#18](../../mfc/codesnippet/cpp/cmemorystate-structure_1.cpp)]  
   
-##  <a name="cmemorystate__difference"></a>  CMemoryState::Difference  
+##  <a name="difference"></a>  CMemoryState::Difference  
  Compares two `CMemoryState` objects, then stores the difference into this `CMemoryState` object.  
   
 ```  
@@ -134,13 +134,13 @@ BOOL Difference(
  Nonzero if the two memory states are different; otherwise 0.  
   
 ### Remarks  
- [Checkpoint](#cmemorystate__checkpoint) must have been called for each of the two memory-state parameters.  
+ [Checkpoint](#checkpoint) must have been called for each of the two memory-state parameters.  
   
 ### Example  
-  See the example for the [CMemoryState](#cmemorystate__cmemorystate) constructor.  
+  See the example for the [CMemoryState](#cmemorystate) constructor.  
   
-##  <a name="cmemorystate__dumpallobjectssince"></a>  CMemoryState::DumpAllObjectsSince  
- Calls the `Dump` function for all objects of a type derived from class `CObject` that were allocated (and are still allocated) since the last [Checkpoint](#cmemorystate__checkpoint) call for this `CMemoryState` object.  
+##  <a name="dumpallobjectssince"></a>  CMemoryState::DumpAllObjectsSince  
+ Calls the `Dump` function for all objects of a type derived from class `CObject` that were allocated (and are still allocated) since the last [Checkpoint](#checkpoint) call for this `CMemoryState` object.  
   
 ```  
 void DumpAllObjectsSince() const;
@@ -152,10 +152,10 @@ void DumpAllObjectsSince() const;
  Calling `DumpAllObjectsSince` with an uninitialized `CMemoryState` object will dump out all objects currently in memory.  
   
 ### Example  
-  See the example for the [CMemoryState](#cmemorystate__cmemorystate) constructor.  
+  See the example for the [CMemoryState](#cmemorystate) constructor.  
   
-##  <a name="cmemorystate__dumpstatistics"></a>  CMemoryState::DumpStatistics  
- Prints a concise memory statistics report from a `CMemoryState` object that is filled by the [Difference](#cmemorystate__difference) member function.  
+##  <a name="dumpstatistics"></a>  CMemoryState::DumpStatistics  
+ Prints a concise memory statistics report from a `CMemoryState` object that is filled by the [Difference](#difference) member function.  
   
 ```  
 void DumpStatistics() const;
@@ -164,7 +164,7 @@ void DumpStatistics() const;
 ```  
   
 ### Remarks  
- The report, which is printed on the [afxDump](../Topic/afxDump%20\(CDumpContext%20in%20MFC\).md) device, shows the following:  
+ The report, which is printed on the [afxDump](http://msdn.microsoft.com/library/4b3cfa3f-fb75-456a-9d99-a5601acbcb11) device, shows the following:  
   
  A sample report gives information on the number (or amount) of:  
   
@@ -182,20 +182,20 @@ void DumpStatistics() const;
   
 -   total memory currently used by the program (in bytes)  
   
- Free blocks are the number of blocks whose deallocation was delayed if `afxMemDF` was set to **delayFreeMemDF**. For more information, see [afxMemDF]--brokenlink--(../Topic/not%20found.md#afxmemdf), in the "MFC Macros and Globals" section. See [Types of Blocks on the Debug Heap](http://msdn.microsoft.com/en-us/db2e7f62-0679-4b39-a23f-26f2c2f407c5) for more information on these block types.  
+ Free blocks are the number of blocks whose deallocation was delayed if `afxMemDF` was set to **delayFreeMemDF**. For more information, see [afxMemDF](diagnostic-services.md#afxmemdf), in the "MFC Macros and Globals" section. See [Types of Blocks on the Debug Heap](http://msdn.microsoft.com/en-us/db2e7f62-0679-4b39-a23f-26f2c2f407c5) for more information on these block types.  
   
 ### Example  
   The following code should be placed in *projname*App.cpp. Define the following global variables:  
   
- [!code-cpp[NVC_MFC_Utilities#40](../../mfc/codesnippet/CPP/cmemorystate-structure_2.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#40](../../mfc/codesnippet/cpp/cmemorystate-structure_2.cpp)]  
   
  In the `InitInstance` function, add the line:  
   
- [!code-cpp[NVC_MFC_Utilities#41](../../mfc/codesnippet/CPP/cmemorystate-structure_3.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#41](../../mfc/codesnippet/cpp/cmemorystate-structure_3.cpp)]  
   
  Add a handler for the `ExitInstance` function and use the following code:  
   
- [!code-cpp[NVC_MFC_Utilities#42](../../mfc/codesnippet/CPP/cmemorystate-structure_4.cpp)]  
+ [!code-cpp[NVC_MFC_Utilities#42](../../mfc/codesnippet/cpp/cmemorystate-structure_4.cpp)]  
   
  You can now run the program in Debug mode to see the output of the `DumpStatistics` function.  
   

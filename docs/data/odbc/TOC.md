@@ -60,7 +60,7 @@
 ### [Recordset: How AddNew, Edit, and Delete Work (ODBC)](recordset-how-addnew-edit-and-delete-work-odbc.md)
 ### [Recordset: More About Updates (ODBC)](recordset-more-about-updates-odbc.md)
 ## [SQL](sql.md)
-### [SQL: Customizing Your Recordset’s SQL Statement (ODBC)](sql-customizing-your-recordset’s-sql-statement-odbc.md)
+### [SQL: Customizing Your Recordset’s SQL Statement (ODBC)](sql-customizing-your-recordsets-sql-statement-odbc.md)
 ### [SQL: SQL and C++ Data Types (ODBC)](sql-sql-and-cpp-data-types-odbc.md)
 ### [SQL: Making Direct SQL Calls (ODBC)](sql-making-direct-sql-calls-odbc.md)
 ## [Transaction (ODBC)](transaction-odbc.md)

@@ -273,7 +273,7 @@ int main()
  C++ does not supply a standard conversion from a **const** or `volatile` type to a type that is not **const** or `volatile`. However, any sort of conversion can be specified using explicit type casts (including conversions that are unsafe).  
   
 > [!NOTE]
->  C++ pointers to members, except pointers to static members, are different from normal pointers and do not have the same standard conversions. Pointers to static members are normal pointers and have the same conversions as normal pointers. (See [(NOTINBUILD) Directly Derived Types](http://msdn.microsoft.com/en-us/d2d611d1-dbff-4fb4-9858-e1572544f5c3) for more information.)  
+>  C++ pointers to members, except pointers to static members, are different from normal pointers and do not have the same standard conversions. Pointers to static members are normal pointers and have the same conversions as normal pointers.   
   
 ### null pointer conversions  
  An integral constant expression that evaluates to zero, or such an expression cast to a pointer type, is converted to a pointer called the "null pointer." This pointer is guaranteed to compare unequal to a pointer to any valid object or function (except for pointers to based objects, which can have the same offset and still point to different objects).  
@@ -297,7 +297,7 @@ char *pszPath = szPath; // Equals &szPath[0].
 ## Reference conversions  
  A reference to a class can be converted to a reference to a base class in the following cases:  
   
--   The specified base class is accessible (as defined in [Pointers to Classes](../misc/pointers-to-classes.md)).  
+-   The specified base class is accessible.  
   
 -   The conversion is unambiguous. (See [Multiple Base Classes](../cpp/multiple-base-classes.md) for more information about ambiguous base-class references.)  
   

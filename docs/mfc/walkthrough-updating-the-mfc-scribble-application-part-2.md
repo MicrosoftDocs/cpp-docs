@@ -36,24 +36,24 @@ translation.priority.ht:
 [Part 1](../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md) of this walkthrough showed how to add an Office Fluent Ribbon to the classic Scribble application. This part shows how to add ribbon panels and controls that users can use instead of menus and commands.  
   
 ## Prerequisites  
- [Visual C++ Samples](../top/visual-cpp-samples.md)  
+ [Visual C++ Samples](../visual-cpp-samples.md)  
   
 ##  <a name="top"></a> Sections  
  This part of the walkthrough has the following sections:  
   
-- [Adding New Panels to the Ribbon](#addNewPanel)  
+- [Adding New Panels to the Ribbon](#addnewpanel)  
   
-- [Adding a Help Panel to the Ribbon](#addHelpPanel)  
+- [Adding a Help Panel to the Ribbon](#addhelppanel)  
   
-- [Adding a Pen Panel to the Ribbon](#addPenPanel)  
+- [Adding a Pen Panel to the Ribbon](#addpenpanel)  
   
-- [Adding a Color Button to the Ribbon](#addColorButton)  
+- [Adding a Color Button to the Ribbon](#addcolorbutton)  
   
-- [Adding a Color Member to the Document Class](#addColorMember)  
+- [Adding a Color Member to the Document Class](#addcolormember)  
   
-- [Initializing Pens and Saving Preferences](#initPenSave)  
+- [Initializing Pens and Saving Preferences](#initpensave)  
   
-##  <a name="addNewPanel"></a> Adding New Panels to the Ribbon  
+##  <a name="addnewpanel"></a> Adding New Panels to the Ribbon  
  These steps show how to add a **View** panel that contains two check boxes that control the visibility of the toolbar and the status bar, and also a **Window** panel that contains a vertically oriented split button that controls the creation and arrangement of multiple-document interface (MDI) windows.  
   
 #### To add a View panel and Window panel to the ribbon bar  
@@ -88,7 +88,7 @@ translation.priority.ht:
   
  [[Sections](#top)]  
   
-##  <a name="addHelpPanel"></a> Adding a Help Panel to the Ribbon  
+##  <a name="addhelppanel"></a> Adding a Help Panel to the Ribbon  
  Now, you can assign two menu items that are defined in the Scribble application to ribbon buttons that are named **Help Topics** and **About Scribble**. The buttons are added to a new panel named **Help**.  
   
 #### To add a Help panel  
@@ -108,7 +108,7 @@ translation.priority.ht:
   
  [[Sections](#top)]  
   
-##  <a name="addPenPanel"></a> Adding a Pen Panel to the Ribbon  
+##  <a name="addpenpanel"></a> Adding a Pen Panel to the Ribbon  
  Now, add a panel to display buttons that control the thickness and the color of the pen. This panel contains a check box that toggles between thick and thin pens. Its functionality resembles that of the **Thick Line** menu item in the Scribble application.  
   
  The original Scribble application lets the user select pen widths from a dialog box that appears when the user clicks **Pen Widths** on the menu. Because the ribbon bar has ample room for new controls, you can replace the dialog box by using two combo boxes on the ribbon. One combo box adjusts the width of the thin pen and the other combo box adjusts the width of the thick pen.  
@@ -191,7 +191,7 @@ if (nCurSel>= 0)
   
  [[Sections](#top)]  
   
-##  <a name="addColorButton"></a> Adding a Color Button to the Pen Panel  
+##  <a name="addcolorbutton"></a> Adding a Color Button to the Pen Panel  
  Next, add a [CMFCRibbonColorButton](../mfc/reference/cmfcribboncolorbutton-class.md) object that lets the user scribble in color.  
   
 #### To add a color button to the Pen panel  
@@ -206,7 +206,7 @@ if (nCurSel>= 0)
   
  [[Sections](#top)]  
   
-##  <a name="addColorMember"></a> Adding a Color Member to the Document Class  
+##  <a name="addcolormember"></a> Adding a Color Member to the Document Class  
  Because the original Scribble application does not have color pens, you must write an implementation for them. To store the pen color of the document, add a new member to the document class, `CscribbleDoc.`  
   
 #### To add a color member to the document class  
@@ -305,7 +305,7 @@ ASSERT_VALID(pRibbon);
   
  [[Sections](#top)]  
   
-##  <a name="initPenSave"></a> Initializing Pens and Saving Preferences  
+##  <a name="initpensave"></a> Initializing Pens and Saving Preferences  
  Next, initialize the color and width of the pens. Finally, save and load a color drawing from a file.  
   
 #### To initialize controls on the ribbon bar  

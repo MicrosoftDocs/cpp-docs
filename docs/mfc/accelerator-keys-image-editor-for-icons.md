@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Accelerator Keys (Image Editor for Icons)
-Below are the accelerator keys for the Image editor commands that are bound to keys by default. To change accelerator keys, click **Options** on the **Tools** menu, and then choose **Keyboard** under the **Environment** folder. For more information, see [Identifying and Customizing Keyboard Shortcuts](/visual-studio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).  
+Below are the accelerator keys for the Image editor commands that are bound to keys by default. To change accelerator keys, click **Options** on the **Tools** menu, and then choose **Keyboard** under the **Environment** folder. For more information, see [Identifying and Customizing Keyboard Shortcuts](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).  
   
 > [!NOTE]
 >  The options available in dialog boxes, and the names and locations of menu commands you see, might differ from what is described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -82,7 +82,7 @@ Below are the accelerator keys for the Image editor commands that are bound to k
 |Image.ZoomIn|CTRL + SHIFT + . (period)<br /><br /> - or -<br /><br /> CTRL + UP ARROW|Increases the magnification for the current view.|  
 |Image.ZoomOut|CTRL + , (comma)<br /><br /> - or -<br /><br /> CTRL + DOWN ARROW|Reduces the magnification of the current view.|  
   
- For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
+ For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
 ## Requirements  
  None  

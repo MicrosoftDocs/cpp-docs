@@ -58,29 +58,29 @@ template <class  Base>  class CComObjectStack
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComObjectStack::CComObjectStack](#ccomobjectstack__ccomobjectstack)|The constructor.|  
-|[CComObjectStack::~CComObjectStack](#ccomobjectstack___dtorccomobjectstack)|The destructor.|  
+|[CComObjectStack::CComObjectStack](#ccomobjectstack)|The constructor.|  
+|[CComObjectStack::~CComObjectStack](#dtor)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComObjectStack::AddRef](#ccomobjectstack__addref)|Returns zero. In debug mode, calls `_ASSERTE`.|  
-|[CComObjectStack::QueryInterface](#ccomobjectstack__queryinterface)|Returns **E_NOINTERFACE**. In debug mode, calls `_ASSERTE`.|  
-|[CComObjectStack::Release](#ccomobjectstack__release)|Returns zero. In debug mode, calls `_ASSERTE`. ~|  
+|[CComObjectStack::AddRef](#addref)|Returns zero. In debug mode, calls `_ASSERTE`.|  
+|[CComObjectStack::QueryInterface](#queryinterface)|Returns **E_NOINTERFACE**. In debug mode, calls `_ASSERTE`.|  
+|[CComObjectStack::Release](#release)|Returns zero. In debug mode, calls `_ASSERTE`. ~|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComObjectStack::m_hResFinalConstruct](#ccomobjectstack__m_hresfinalconstruct)|Contains the **HRESULT** returned during construction of the `CComObjectStack` object.|  
+|[CComObjectStack::m_hResFinalConstruct](#m_hresfinalconstruct)|Contains the **HRESULT** returned during construction of the `CComObjectStack` object.|  
   
 ## Remarks  
  `CComObjectStack` is used to create a temporary COM object and provide the object a skeletal implementation of **IUnknown**. Typically, the object is used as a local variable within one function (that is, pushed onto the stack). Since the object is destroyed when the function finishes, reference counting is not performed to increase efficiency.  
   
  The following example shows how to create a COM object used inside a function:  
   
- [!code-cpp[NVC_ATL_COM#42](../../atl/codesnippet/CPP/ccomobjectstack-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_COM#42](../../atl/codesnippet/cpp/ccomobjectstack-class_1.cpp)]  
   
  The temporary object `Tempobj` is pushed onto the stack and automatically disappears when the function finishes.  
   
@@ -92,7 +92,7 @@ template <class  Base>  class CComObjectStack
 ## Requirements  
  **Header:** atlcom.h  
   
-##  <a name="ccomobjectstack__addref"></a>  CComObjectStack::AddRef  
+##  <a name="addref"></a>  CComObjectStack::AddRef  
  Returns zero.  
   
 ```
@@ -105,7 +105,7 @@ STDMETHOD_(ULONG, AddRef)();
 ### Remarks  
  In debug mode, calls `_ASSERTE`.  
   
-##  <a name="ccomobjectstack__ccomobjectstack"></a>  CComObjectStack::CComObjectStack  
+##  <a name="ccomobjectstack"></a>  CComObjectStack::CComObjectStack  
  The constructor.  
   
 ```
@@ -113,9 +113,9 @@ CComObjectStack(void* = NULL);
 ```  
   
 ### Remarks  
- Calls `FinalConstruct` and then sets [m_hResFinalConstruct](#ccomobjectstack__m_hresfinalconstruct) to the `HRESULT` returned by `FinalConstruct`. If you have not derived your base class from [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md), you must supply your own `FinalConstruct` method. The destructor calls `FinalRelease`.  
+ Calls `FinalConstruct` and then sets [m_hResFinalConstruct](#m_hresfinalconstruct) to the `HRESULT` returned by `FinalConstruct`. If you have not derived your base class from [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md), you must supply your own `FinalConstruct` method. The destructor calls `FinalRelease`.  
   
-##  <a name="ccomobjectstack___dtorccomobjectstack"></a>  CComObjectStack::~CComObjectStack  
+##  <a name="dtor"></a>  CComObjectStack::~CComObjectStack  
  The destructor.  
   
 ```
@@ -123,16 +123,16 @@ CComObjectStack();
 ```  
   
 ### Remarks  
- Frees all allocated resources and calls [FinalRelease](../Topic/CComObjectRootEx::FinalRelease.md).  
+ Frees all allocated resources and calls [FinalRelease](ccomobjectrootex-class.md#finalrelease).  
   
-##  <a name="ccomobjectstack__m_hresfinalconstruct"></a>  CComObjectStack::m_hResFinalConstruct  
+##  <a name="m_hresfinalconstruct"></a>  CComObjectStack::m_hResFinalConstruct  
  Contains the `HRESULT` returned from calling `FinalConstruct` during construction of the `CComObjectStack` object.  
   
 ```
 HRESULT     m_hResFinalConstruct;
 ```  
   
-##  <a name="ccomobjectstack__queryinterface"></a>  CComObjectStack::QueryInterface  
+##  <a name="queryinterface"></a>  CComObjectStack::QueryInterface  
  Returns **E_NOINTERFACE**.  
   
 ```
@@ -148,7 +148,7 @@ HRESULT     QueryInterface(
 ### Remarks  
  In debug mode, calls `_ASSERTE`.  
   
-##  <a name="ccomobjectstack__release"></a>  CComObjectStack::Release  
+##  <a name="release"></a>  CComObjectStack::Release  
  Returns zero.  
   
 ```

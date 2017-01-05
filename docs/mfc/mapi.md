@@ -51,7 +51,7 @@ This article describes the Microsoft Messaging Application Programming Interface
  [MAPI Support in MFC](../mfc/mapi-support-in-mfc.md)  
   
 ## See Also  
- [CDocument::OnFileSendMail](../mfc/reference/cdocument-class.md#cdocument__onfilesendmail)   
- [CDocument::OnUpdateFileSendMail](../mfc/reference/cdocument-class.md#cdocument__onupdatefilesendmail)   
- [COleDocument::OnFileSendMail](../mfc/reference/coledocument-class.md#coledocument__onfilesendmail)
+ [CDocument::OnFileSendMail](../mfc/reference/cdocument-class.md#onfilesendmail)   
+ [CDocument::OnUpdateFileSendMail](../mfc/reference/cdocument-class.md#onupdatefilesendmail)   
+ [COleDocument::OnFileSendMail](../mfc/reference/coledocument-class.md#onfilesendmail)
 

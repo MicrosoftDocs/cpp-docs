@@ -71,17 +71,5 @@ Generics are parameterized types and methods. In this section, find out which ge
  [How to: Iterate Over a Generic Collection with for each](../dotnet/how-to-iterate-over-a-generic-collection-with-for-each.md)  
  Using the [for each, in](../dotnet/for-each-in.md) keyword on a generic collection.  
   
- [Generics in the .NET Framework Class Library](/dotnet/csharp/programming-guide/generics/generics-in-the-net-framework-class-library)  
- Discusses .NET Framework class library's `System.Collections.Generic`, namespace, which includes several ready-to-use generic collection classes and associated interfaces.  
-  
- [Introduction to Generics](/dotnet/csharp/programming-guide/generics/introduction-to-generics)  
- The generics section in the C# documentation.  
-  
- [Generic Types in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/data-types/generic-types)  
- The generics section in the Visual Basic documentation.  
-  
- [Templates Overview](../Topic/Templates%20Overview.md)  
- Information on templates in C++.  
-  
 ## See Also  
  [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)

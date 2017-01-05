@@ -50,7 +50,7 @@ class CMFCPropertyGridFileProperty : public CMFCPropertyGridProperty
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCPropertyGridFileProperty::CMFCPropertyGridFileProperty](#cmfcpropertygridfileproperty__cmfcpropertygridfileproperty)|Constructs a `CMFCPropertyGridFileProperty` object.|  
+|[CMFCPropertyGridFileProperty::CMFCPropertyGridFileProperty](#cmfcpropertygridfileproperty)|Constructs a `CMFCPropertyGridFileProperty` object.|  
 |`CMFCPropertyGridFileProperty::~CMFCPropertyGridFileProperty`|Destructor.|  
   
 ### Public Methods  
@@ -58,7 +58,7 @@ class CMFCPropertyGridFileProperty : public CMFCPropertyGridProperty
 |Name|Description|  
 |----------|-----------------|  
 |`CMFCPropertyGridFileProperty::GetThisClass`|Used by the framework to obtain a pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|  
-|`CMFCPropertyGridFileProperty::OnClickButton`|(Overrides [CMFCPropertyGridProperty::OnClickButton](../../mfc/reference/cmfcpropertygridproperty-class.md#cmfcpropertygridproperty__onclickbutton).)|  
+|`CMFCPropertyGridFileProperty::OnClickButton`|(Overrides [CMFCPropertyGridProperty::OnClickButton](../../mfc/reference/cmfcpropertygridproperty-class.md#onclickbutton).)|  
   
 ### Remarks  
   
@@ -72,7 +72,7 @@ class CMFCPropertyGridFileProperty : public CMFCPropertyGridProperty
 ## Requirements  
  **Header:** afxpropertygridctrl.h  
   
-##  <a name="cmfcpropertygridfileproperty__cmfcpropertygridfileproperty"></a>  CMFCPropertyGridFileProperty::CMFCPropertyGridFileProperty  
+##  <a name="cmfcpropertygridfileproperty"></a>  CMFCPropertyGridFileProperty::CMFCPropertyGridFileProperty  
  Constructs a `CMFCPropertyGridFileProperty` object.  
   
 ```  
@@ -118,9 +118,9 @@ CMFCPropertyGridFileProperty(
  For a full list of available flags, see [OPENFILENAME structure](https://msdn.microsoft.com/library/ms646839.aspx).  
   
 ### Example  
- The following example demonstrates how to create an object using the constructor of the `CMFCPropertyGridFileProperty` class. This example is part of the [Visual Studio Demo sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to create an object using the constructor of the `CMFCPropertyGridFileProperty` class. This example is part of the [Visual Studio Demo sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_VisualStudioDemo#22](../../mfc/codesnippet/CPP/cmfcpropertygridfileproperty-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_VisualStudioDemo#22](../../mfc/codesnippet/cpp/cmfcpropertygridfileproperty-class_1.cpp)]  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

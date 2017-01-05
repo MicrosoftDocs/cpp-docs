@@ -37,7 +37,7 @@ translation.priority.ht:
 # Compiler Error C2879
 'symbol' : only an existing namespace can be given an alternative name by a namespace alias definition  
   
- You cannot create a [namespace alias](../../misc/namespace-alias.md) to a symbol other than a namespace.  
+ You cannot create a [namespace alias](../../cpp/namespaces-cpp.md#namespace_aliases) to a symbol other than a namespace.  
   
  The following sample generates C2879:  
   

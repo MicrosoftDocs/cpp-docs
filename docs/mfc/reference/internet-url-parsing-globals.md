@@ -46,7 +46,7 @@ When a client sends a query to the Internet server, you can use one of the URL p
 |[AfxParseURLEx](#afxparseurlex)|Parses a URL string and returns the type of service and its components, as well as providing the user name and password.|  
   
 ##  <a name="afxparseurl"></a>  AfxParseURL  
- This global is used in [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#OpenURL).  
+ This global is used in [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).  
   
 ```   
 BOOL AFXAPI AfxParseURL(
@@ -123,7 +123,7 @@ BOOL AFXAPI AfxParseURL(
 >  To call this function, your project must include AFXINET.H.  
   
 ##  <a name="afxparseurlex"></a>  AfxParseURLEx  
- This global function is the extended version of [AfxParseURL](#afxparseurl) and is used in [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#OpenURL).  
+ This global function is the extended version of [AfxParseURL](#afxparseurl) and is used in [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).  
   
 ```   
 BOOL AFXAPI AfxParseURLEx(

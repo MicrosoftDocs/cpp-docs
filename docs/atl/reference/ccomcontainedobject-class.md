@@ -58,17 +58,17 @@ template<class Base>  class CComContainedObject :  public Base
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComContainedObject::CComContainedObject](#ccomcontainedobject__ccomcontainedobject)|The constructor. Initializes the member pointer to the owner object's `IUnknown`.|  
-|[CComContainedObject::~CComContainedObject](#ccomcontainedobject___dtorccomcontainedobject)|The destructor.|  
+|[CComContainedObject::CComContainedObject](#ccomcontainedobject)|The constructor. Initializes the member pointer to the owner object's `IUnknown`.|  
+|[CComContainedObject::~CComContainedObject](#dtor)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComContainedObject::AddRef](#ccomcontainedobject__addref)|Increments the reference count on the owner object.|  
-|[CComContainedObject::GetControllingUnknown](#ccomcontainedobject__getcontrollingunknown)|Retrieves the owner object's `IUnknown`.|  
-|[CComContainedObject::QueryInterface](#ccomcontainedobject__queryinterface)|Retrieves a pointer to the interface requested on the owner object.|  
-|[CComContainedObject::Release](#ccomcontainedobject__release)|Decrements the reference count on the owner object.|  
+|[CComContainedObject::AddRef](#addref)|Increments the reference count on the owner object.|  
+|[CComContainedObject::GetControllingUnknown](#getcontrollingunknown)|Retrieves the owner object's `IUnknown`.|  
+|[CComContainedObject::QueryInterface](#queryinterface)|Retrieves a pointer to the interface requested on the owner object.|  
+|[CComContainedObject::Release](#release)|Decrements the reference count on the owner object.|  
   
 ## Remarks  
  ATL uses `CComContainedObject` in classes [CComAggObject](../../atl/reference/ccomaggobject-class.md), [CComPolyObject](../../atl/reference/ccompolyobject-class.md), and [CComCachedTearOffObject](../../atl/reference/ccomcachedtearoffobject-class.md). `CComContainedObject` implements [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) by delegating to the owner object's **IUnknown**. (The owner is either the outer object of an aggregation, or the object for which a tear-off interface is being created.) `CComContainedObject` calls `CComObjectRootEx`'s `OuterQueryInterface`, `OuterAddRef`, and `OuterRelease`, all inherited through `Base`.  
@@ -81,7 +81,7 @@ template<class Base>  class CComContainedObject :  public Base
 ## Requirements  
  **Header:** atlcom.h  
   
-##  <a name="ccomcontainedobject__addref"></a>  CComContainedObject::AddRef  
+##  <a name="addref"></a>  CComContainedObject::AddRef  
  Increments the reference count on the owner object.  
   
 ```
@@ -91,7 +91,7 @@ STDMETHOD_(ULONG, AddRef)();
 ### Return Value  
  A value that may be useful for diagnostics or testing.  
   
-##  <a name="ccomcontainedobject__ccomcontainedobject"></a>  CComContainedObject::CComContainedObject  
+##  <a name="ccomcontainedobject"></a>  CComContainedObject::CComContainedObject  
  The constructor.  
   
 ```
@@ -105,7 +105,7 @@ CComContainedObject(void* pv);
 ### Remarks  
  Sets the `m_pOuterUnknown` member pointer (inherited through the `Base` class) to `pv`.  
   
-##  <a name="ccomcontainedobject___dtorccomcontainedobject"></a>  CComContainedObject::~CComContainedObject  
+##  <a name="dtor"></a>  CComContainedObject::~CComContainedObject  
  The destructor.  
   
 ```
@@ -115,7 +115,7 @@ CComContainedObject(void* pv);
 ### Remarks  
  Frees all allocated resources.  
   
-##  <a name="ccomcontainedobject__getcontrollingunknown"></a>  CComContainedObject::GetControllingUnknown  
+##  <a name="getcontrollingunknown"></a>  CComContainedObject::GetControllingUnknown  
  Returns the `m_pOuterUnknown` member pointer (inherited through the *Base* class) that holds the owner object's **IUnknown**.  
   
 ```
@@ -126,9 +126,9 @@ IUnknown* GetControllingUnknown();
  The owner object's **IUnknown**.  
   
 ### Remarks  
- This method may be virtual if `Base` has declared the [DECLARE_GET_CONTROLLING_UNKNOWN](../Topic/DECLARE_GET_CONTROLLING_UNKNOWN.md) macro.  
+ This method may be virtual if `Base` has declared the [DECLARE_GET_CONTROLLING_UNKNOWN](http://msdn.microsoft.com/library/82b0199a-a9d5-4f95-a711-fa1ae18e1f77) macro.  
   
-##  <a name="ccomcontainedobject__queryinterface"></a>  CComContainedObject::QueryInterface  
+##  <a name="queryinterface"></a>  CComContainedObject::QueryInterface  
  Retrieves a pointer to the interface requested on the owner object.  
   
 ```
@@ -152,7 +152,7 @@ STDMETHOD(QueryInterface)(REFIID iid,
 ### Return Value  
  A standard `HRESULT` value.  
   
-##  <a name="ccomcontainedobject__release"></a>  CComContainedObject::Release  
+##  <a name="release"></a>  CComContainedObject::Release  
  Decrements the reference count on the owner object.  
   
 ```

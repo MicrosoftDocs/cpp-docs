@@ -52,7 +52,7 @@ translation.priority.ht:
 |-|-|-|  
 |[__asm](../assembler/inline/asm.md)|[__clrcall](../cpp/clrcall.md)|[__stdcall](../cpp/stdcall.md)|  
 |[__based](../cpp/based-grammar.md)|[__fastcall](../cpp/fastcall.md)|[__thiscall](../cpp/thiscall.md)|  
-|[__cdecl](../cpp/cdecl.md)|[__inline](../misc/inline-inline-forceinline.md)|[__vectorcall](../cpp/vectorcall.md)|  
+|[__cdecl](../cpp/cdecl.md)|[__inline](../cpp/inline-functions-cpp.md)|[__vectorcall](../cpp/vectorcall.md)|  
   
  *init-declarator-list*:  
  *init-declarator*  

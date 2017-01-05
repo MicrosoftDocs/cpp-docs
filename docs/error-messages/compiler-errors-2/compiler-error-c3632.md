@@ -39,29 +39,4 @@ translation.priority.ht:
   
  [__event](../../cpp/event.md) declarations are not valid in all constructs.  
   
- C3632 is only reachable using **/clr:oldSyntax**.  
-  
- The following sample generates C3632:  
-  
-```  
-// C3632.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-using namespace System;  
-  
-public __gc __interface I  
-{  
-   __event void sna();   // C3632  
-};  
-  
-// use the following as an example  
-__delegate void MyDel();  
-public __gc __interface I2  
-{  
-   __event MyDel* sna;  
-};  
-  
-int main()  
-{  
-}  
-```
+ C3632 is only reachable using the obsolete compiler option **/clr:oldSyntax**.  

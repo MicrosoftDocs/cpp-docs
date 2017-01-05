@@ -1,5 +1,5 @@
 ---
-title: "includes (STL-CLR) | Microsoft Docs"
+title: "includes (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -49,7 +49,7 @@ template<class _InIt1, class _InIt2, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `includes`. For more information, see [includes](../Topic/includes.md).  
+ This function behaves the same as the C++ Standard Library function `includes`. For more information, see [includes](http://msdn.microsoft.com/Library/7038e179-3813-46f3-9b6f-85d8214e9768).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

@@ -66,7 +66,7 @@ class codecvt : public locale::facet, codecvt_base;
   
  The template versions of [do_in](#codecvt__do_in) and [do_out](#codecvt__do_out) always return `codecvt_base::noconv`.  
   
- The Standard C++ Library defines several explicit specializations:  
+ The C++ Standard Library defines several explicit specializations:  
   
  `template<>`  
   

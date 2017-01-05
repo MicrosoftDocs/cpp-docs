@@ -37,28 +37,4 @@ translation.priority.ht:
 # Compiler Error C3627
 Only a value type can be boxed  
   
- Only value classes can be boxed.  
-  
- The following sample generates C3627:  
-  
-```  
-// C3627.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-  
-__value class vA {  
-};  
-  
-__gc class A {  
-};  
-  
-int main()  
-{  
-   A* a;  
-   __box(a);   // C3627  
-  
-   // box a value type  
-   vA va;  
-   __box(va);  
-}  
-```
+Only value classes can be boxed.  

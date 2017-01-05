@@ -52,20 +52,20 @@ struct CRuntimeClass
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRuntimeClass::CreateObject](#cruntimeclass__createobject)|Creates an object during run time.|  
-|[CRuntimeClass::FromName](#cruntimeclass__fromname)|Creates an object during run time using the familiar class name.|  
-|[CRuntimeClass::IsDerivedFrom](#cruntimeclass__isderivedfrom)|Determines if the class is derived from the specified class.|  
+|[CRuntimeClass::CreateObject](#createobject)|Creates an object during run time.|  
+|[CRuntimeClass::FromName](#fromname)|Creates an object during run time using the familiar class name.|  
+|[CRuntimeClass::IsDerivedFrom](#isderivedfrom)|Determines if the class is derived from the specified class.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CRuntimeClass::m_lpszClassName](#cruntimeclass__m_lpszclassname)|The name of the class.|  
-|[CRuntimeClass::m_nObjectSize](#cruntimeclass__m_nobjectsize)|The size of the object in bytes.|  
-|[CRuntimeClass::m_pBaseClass](#cruntimeclass__m_pbaseclass)|A pointer to the `CRuntimeClass` structure of the base class.|  
-|[CRuntimeClass::m_pfnCreateObject](#cruntimeclass__m_pfncreateobject)|A pointer to the function that dynamically creates the object.|  
-|[CRuntimeClass::m_pfnGetBaseClass](#cruntimeclass__m_pfngetbaseclass)|Returns the `CRuntimeClass` structure (only available when dynamically linked).|  
-|[CRuntimeClass::m_wSchema](#cruntimeclass__m_wschema)|The schema number of the class.|  
+|[CRuntimeClass::m_lpszClassName](#m_lpszclassname)|The name of the class.|  
+|[CRuntimeClass::m_nObjectSize](#m_nobjectsize)|The size of the object in bytes.|  
+|[CRuntimeClass::m_pBaseClass](#m_pbaseclass)|A pointer to the `CRuntimeClass` structure of the base class.|  
+|[CRuntimeClass::m_pfnCreateObject](#m_pfncreateobject)|A pointer to the function that dynamically creates the object.|  
+|[CRuntimeClass::m_pfnGetBaseClass](#m_pfngetbaseclass)|Returns the `CRuntimeClass` structure (only available when dynamically linked).|  
+|[CRuntimeClass::m_wSchema](#m_wschema)|The schema number of the class.|  
   
 ## Remarks  
  `CRuntimeClass` is a structure and therefore does not have a base class.  
@@ -82,7 +82,7 @@ struct CRuntimeClass
 ## Requirements  
  **Header:** afx.h  
   
-##  <a name="cruntimeclass__createobject"></a>  CRuntimeClass::CreateObject  
+##  <a name="createobject"></a>  CRuntimeClass::CreateObject  
  Call this function to dynamically create the specified class during run time.  
   
 ```  
@@ -106,9 +106,9 @@ static CObject* PASCAL CreateObject(LPCWSTR lpszClassName);
  Classes derived from `CObject` can support dynamic creation, which is the ability to create an object of a specified class at run time. Document, view, and frame classes, for example, should support dynamic creation. For more information on dynamic creation and the `CreateObject` member, see [CObject Class](../../mfc/using-cobject.md) and [CObject Class: Specifying Levels of Functionality](../../mfc/specifying-levels-of-functionality.md).  
   
 ### Example  
-  See the example for [IsDerivedFrom](#cruntimeclass__isderivedfrom).  
+  See the example for [IsDerivedFrom](#isderivedfrom).  
   
-##  <a name="cruntimeclass__fromname"></a>  CRuntimeClass::FromName  
+##  <a name="fromname"></a>  CRuntimeClass::FromName  
  Call this function to retrieve the `CRuntimeClass` structure associated with the familiar name.  
   
 ```  
@@ -126,9 +126,9 @@ static CRuntimeClass* PASCAL FromName(LPCWSTR lpszClassName);
  A pointer to a `CRuntimeClass` object, corresponding to the name as passed in `lpszClassName`. The function returns **NULL** if no matching class name was found.  
   
 ### Example  
- [!code-cpp[NVC_MFCCObjectSample#17](../../mfc/codesnippet/CPP/cruntimeclass-structure_1.cpp)]  
+ [!code-cpp[NVC_MFCCObjectSample#17](../../mfc/codesnippet/cpp/cruntimeclass-structure_1.cpp)]  
   
-##  <a name="cruntimeclass__isderivedfrom"></a>  CRuntimeClass::IsDerivedFrom  
+##  <a name="isderivedfrom"></a>  CRuntimeClass::IsDerivedFrom  
  Call this function to determine if the calling class is derived from the class specified in the *pBaseClass* parameter.  
   
 ```  
@@ -153,67 +153,67 @@ BOOL IsDerivedFrom(const CRuntimeClass* pBaseClass) const;
  For more information on using `CRuntimeClass`, see the article [CObject Class: Accessing Run-Time Class Information](../../mfc/accessing-run-time-class-information.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCCObjectSample#18](../../mfc/codesnippet/CPP/cruntimeclass-structure_2.cpp)]  
+ [!code-cpp[NVC_MFCCObjectSample#18](../../mfc/codesnippet/cpp/cruntimeclass-structure_2.cpp)]  
   
-##  <a name="cruntimeclass__m_lpszclassname"></a>  CRuntimeClass::m_lpszClassName  
+##  <a name="m_lpszclassname"></a>  CRuntimeClass::m_lpszClassName  
  A null-terminated string containing the ASCII class name.  
   
 ### Remarks  
  This name can be used to create an instance of the class using the `FromName` member function.  
   
 ### Example  
-  See the example for [IsDerivedFrom](#cruntimeclass__isderivedfrom).  
+  See the example for [IsDerivedFrom](#isderivedfrom).  
   
-##  <a name="cruntimeclass__m_nobjectsize"></a>  CRuntimeClass::m_nObjectSize  
+##  <a name="m_nobjectsize"></a>  CRuntimeClass::m_nObjectSize  
  The size of the object, in bytes.  
   
 ### Remarks  
  If the object has data members that point to allocated memory, the size of that memory is not included.  
   
 ### Example  
-  See the example for [IsDerivedFrom](#cruntimeclass__isderivedfrom).  
+  See the example for [IsDerivedFrom](#isderivedfrom).  
   
-##  <a name="cruntimeclass__m_pbaseclass"></a>  CRuntimeClass::m_pBaseClass  
+##  <a name="m_pbaseclass"></a>  CRuntimeClass::m_pBaseClass  
  If your application statically links to MFC, this data member contains a pointer to the `CRuntimeClass` structure of the base class.  
   
 ### Remarks  
- If your application dynamically links to the MFC library, see [m_pfnGetBaseClass](#cruntimeclass__m_pfngetbaseclass).  
+ If your application dynamically links to the MFC library, see [m_pfnGetBaseClass](#m_pfngetbaseclass).  
   
 ### Example  
-  See the example for [IsDerivedFrom](#cruntimeclass__isderivedfrom).  
+  See the example for [IsDerivedFrom](#isderivedfrom).  
   
-##  <a name="cruntimeclass__m_pfncreateobject"></a>  CRuntimeClass::m_pfnCreateObject  
+##  <a name="m_pfncreateobject"></a>  CRuntimeClass::m_pfnCreateObject  
  A function pointer to the default constructor that creates an object of your class.  
   
 ### Remarks  
  This pointer is only valid if the class supports dynamic creation; otherwise, the function returns **NULL**.  
   
-##  <a name="cruntimeclass__m_pfngetbaseclass"></a>  CRuntimeClass::m_pfnGetBaseClass  
+##  <a name="m_pfngetbaseclass"></a>  CRuntimeClass::m_pfnGetBaseClass  
  If your application uses the MFC library as a shared DLL, this data member points to a function that returns the `CRuntimeClass` structure of the base class.  
   
 ### Remarks  
- If your application statically links to the MFC library, see [m_pBaseClass](#cruntimeclass__m_pbaseclass).  
+ If your application statically links to the MFC library, see [m_pBaseClass](#m_pbaseclass).  
   
 ### Example  
-  See the example for [IsDerivedFrom](#cruntimeclass__isderivedfrom).  
+  See the example for [IsDerivedFrom](#isderivedfrom).  
   
-##  <a name="cruntimeclass__m_wschema"></a>  CRuntimeClass::m_wSchema  
+##  <a name="m_wschema"></a>  CRuntimeClass::m_wSchema  
  The schema number ( -1 for nonserializable classes).  
   
 ### Remarks  
- For more information on schema numbers, see the [IMPLEMENT_SERIAL]--brokenlink--(../Topic/not%20found.md#implement_serial) macro.  
+ For more information on schema numbers, see the [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) macro.  
   
 ### Example  
-  See the example for [IsDerivedFrom](#cruntimeclass__isderivedfrom).  
+  See the example for [IsDerivedFrom](#isderivedfrom).  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
- [CObject::GetRuntimeClass](../../mfc/reference/cobject-class.md#cobject__getruntimeclass)   
- [CObject::IsKindOf](../../mfc/reference/cobject-class.md#cobject__iskindof)   
- [RUNTIME_CLASS]--brokenlink--(../Topic/not%20found.md#runtime_class)   
- [IMPLEMENT_DYNAMIC]--brokenlink--(../Topic/not%20found.md#implement_dynamic)   
- [IMPLEMENT_DYNCREATE]--brokenlink--(../Topic/not%20found.md#implement_dyncreate)   
- [IMPLEMENT_SERIAL]--brokenlink--(../Topic/not%20found.md#implement_serial)
+ [CObject::GetRuntimeClass](../../mfc/reference/cobject-class.md#getruntimeclass)   
+ [CObject::IsKindOf](../../mfc/reference/cobject-class.md#iskindof)   
+ [RUNTIME_CLASS](run-time-object-model-services.md#runtime_class)   
+ [IMPLEMENT_DYNAMIC](run-time-object-model-services.md#implement_dynamic)   
+ [IMPLEMENT_DYNCREATE](run-time-object-model-services.md#implement_dyncreate)   
+ [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial)
 
 
 

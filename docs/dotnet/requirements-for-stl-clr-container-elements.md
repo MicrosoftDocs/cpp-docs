@@ -1,5 +1,5 @@
 ---
-title: "Requirements for STL-CLR Container Elements | Microsoft Docs"
+title: "Requirements for STL/CLR Container Elements | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -11,10 +11,10 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "Standard C++ Library, template class containers"
+  - "C++ Standard Library, template class containers"
   - "STL/CLR, containers"
   - "containers, STL/CLR"
-  - "containers, STL"
+  - "containers, C++ Standard Library"
 ms.assetid: 59ab240c-15bf-4701-a9f9-e7c56e5ab53f
 caps.latest.revision: 8
 author: "mikeblome"
@@ -49,4 +49,4 @@ All reference types that are inserted into STL/CLR containers must have, at a mi
  Like reference types, value types and handles to reference types that are to be inserted into an associative container must have a comparison operator such as `operator<` defined. The requirements for a public copy constructor, public assignment operator, and a public destructor do not exist for value types or handles to reference types.  
   
 ## See Also  
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

@@ -39,26 +39,4 @@ translation.priority.ht:
   
  A managed or WinRT event cannot be overloaded.  
   
-## Example  
- C3631 is only reachable using **/clr:oldSyntax**.  
-  
- The following sample generates C3631.  
-  
-```  
-// C3631.cpp  
-// compile with: /clr:oldSyntax /c  
-  
-public __gc struct S2 {  
-   __event void func1();     
-   __event void func1(int);   // C3631 delete second declaration of func1  
-};  
-  
-public __gc struct S1 {  
-   __delegate void del1();  
-   __delegate void del2();  
-   __event int add_myE(del1*) { return 0; }     
-   __event int remove_myE(del1*) { return 0; }     
-   __event int add_myE(del2*) { return 0; }   // C3631  
-   __event int remove_myE(del2*) { return 0; }   // C3631  
-};  
-```
+ C3631 is only reachable using the obsolete compiler option **/clr:oldSyntax**.  

@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Error C3271
 'member': invalid value 'value' for the FieldOffset attribute  
   
- A negative number was passed to the [FieldOffset](frlrfSystemRuntimeInteropServicesFieldOffsetAttributeClassTopic) attribute.  
+ A negative number was passed to the **FieldOffset** attribute.  
   
  The following sample generates C3271:  
   
@@ -54,22 +54,3 @@ value class MyStruct1 {
    public: [FieldOffset(-1)] long b;   // C3271  
 };  
 ```  
-  
- The following sample generates C3271:  
-  
-```  
-// C3271_2.cpp  
-// compile with: /clr:oldSyntax  
-using namespace System;  
-using namespace System::Runtime::InteropServices;  
-  
-[StructLayout(LayoutKind::Explicit)]  
-__value class MyStruct1 {  
-   public: [FieldOffset(0)] int a;  
-   public: [FieldOffset(-1)] long b;   // C3271  
-};  
-  
-static int main() {  
-   MyStruct1* a = __nogc new MyStruct1();  
-};  
-```

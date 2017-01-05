@@ -66,52 +66,52 @@ class array_view<const value_type, _Rank> : public _Array_view_base<_Rank, sizeo
   
 |Name|Description|  
 |----------|-----------------|  
-|[array_view::array_view Constructor](#array_view__array_view_constructor)|Initializes a new instance of the `array_view` class. There is no default constructor for `array<T,N>`. All constructors are restricted to run on the CPU only and cannot be executed on a Direct3D target.|  
-|[array_view::~array_view Destructor](#array_view___dtorarray_view_destructor)|Destroys the `array_view` object.|  
+|[array_view::array_view Constructor](#ctor)|Initializes a new instance of the `array_view` class. There is no default constructor for `array<T,N>`. All constructors are restricted to run on the CPU only and cannot be executed on a Direct3D target.|  
+|[array_view::~array_view Destructor](#ctor)|Destroys the `array_view` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[array_view::copy_to Method](#array_view__copy_to_method)|Copies the contents of the `array_view` object to the specified destination by calling `copy(*this, dest)`.|  
-|[array_view::data Method](#array_view__data_method)|Returns a pointer to the raw data of the `array_view`.|  
-|[array_view::discard_data Method](#array_view__discard_data_method)|Discards the current data underlying this view.|  
-|[array_view::get_extent Method](#array_view__get_extent_method)|Returns the extent object of the array_view object.|  
-|[array_view::get_ref Method](#array_view__get_ref_method)|Returns a reference to the indexed element.|  
-|[array_view::get_source_accelerator_view Method](#array_view__get_source_accelerator_view_method)|Returns the [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md) where the data source of the `array_view` is located.|  
-|[array_view::refresh Method](#array_view__refresh_method)|Notifies the `array_view` object that its bound memory has been modified outside the `array_view` interface. A call to this method renders all cached information stale.|  
-|[array_view::reinterpret_as Method](#array_view__reinterpret_as_method)|Returns a one-dimensional array that contains all the elements in the `array_view` object.|  
-|[array_view::section Method](#array_view__section_method)|Returns a subsection of the `array_view` object that's at the specified origin and, optionally, that has the specified extent.|  
-|[array_view::synchronize Method](#array_view__synchronize_method)|Synchronizes any modifications made to the `array_view` object back to its source data.|  
-|[array_view::synchronize_async Method](#array_view__synchronize_async_method)|Asynchronously synchronizes any modifications made to the [array_view](../../../parallel/amp/reference/array-view-class.md) object back to its source data.|  
-|[array_view::synchronize_to Method](#array_view__synchronize_to_method)|Synchronizes any modifications made to the `array_view` object to the specified [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md).|  
-|[array_view::synchronize_to_async Method](#array_view__synchronize_to_async_method)|Asynchronously synchronizes any modifications made to the `array_view` object to the specified [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md).|  
-|[array_view::view_as Method](#array_view__view_as_method)|Produces an `array_view` object of a different rank using this `array_view` object’s data.|  
+|[array_view::copy_to Method](#copy_to)|Copies the contents of the `array_view` object to the specified destination by calling `copy(*this, dest)`.|  
+|[array_view::data Method](#data)|Returns a pointer to the raw data of the `array_view`.|  
+|[array_view::discard_data Method](#discard_data)|Discards the current data underlying this view.|  
+|[array_view::get_extent Method](#get_extent)|Returns the extent object of the array_view object.|  
+|[array_view::get_ref Method](#get_ref)|Returns a reference to the indexed element.|  
+|[array_view::get_source_accelerator_view Method](#get_source_accelerator_view)|Returns the [accelerator_view](accelerator-view-class.md) where the data source of the `array_view` is located.|  
+|[array_view::refresh Method](#refresh)|Notifies the `array_view` object that its bound memory has been modified outside the `array_view` interface. A call to this method renders all cached information stale.|  
+|[array_view::reinterpret_as Method](#reinterpret_as)|Returns a one-dimensional array that contains all the elements in the `array_view` object.|  
+|[array_view::section Method](#section)|Returns a subsection of the `array_view` object that's at the specified origin and, optionally, that has the specified extent.|  
+|[array_view::synchronize Method](#synchronize)|Synchronizes any modifications made to the `array_view` object back to its source data.|  
+|[array_view::synchronize_async Method](#synchronize_async)|Asynchronously synchronizes any modifications made to the `array_view` object back to its source data.|  
+|[array_view::synchronize_to Method](#synchronize_to)|Synchronizes any modifications made to the `array_view` object to the specified [accelerator_view](accelerator-view-class.md).|  
+|[array_view::synchronize_to_async Method](#synchronize_to_async)|Asynchronously synchronizes any modifications made to the `array_view` object to the specified [accelerator_view](accelerator-view-class.md).|  
+|[array_view::view_as Method](#view_as)|Produces an `array_view` object of a different rank using this `array_view` object’s data.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[array_view::operator() Operator](#array_view__operator___operator)|Returns the value of the element that is specified by the parameter or parameters.|  
-|[array_view::operator[] Operator](#array_view__operator_at_operator)|Returns the element that is specified by the parameters.|  
-|[array_view::operator= Operator](#array_view__operator_eq_operator)|Copies the contents of the specified `array_view` object into this one.|  
+|[array_view::operator() Operator](#operator_call)|Returns the value of the element that is specified by the parameter or parameters.|  
+|[array_view::operator[] Operator](#operator_at)|Returns the element that is specified by the parameters.|  
+|[array_view::operator= Operator](#operator_eq)|Copies the contents of the specified `array_view` object into this one.|  
   
 ### Public Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[array_view::rank Constant](#array_view__rank_constant)|Stores the rank of the `array_view` object.|  
+|[array_view::rank Constant](#rank)|Stores the rank of the `array_view` object.|  
   
 ### Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[array_view::extent Data Member](#array_view__extent_data_member)|Gets the `extent` object that defines the shape of the `array_view` object.|  
-|[array_view::source_accelerator_view Data Member](#array_view__source_accelerator_view_data_member)|Gets the [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md) where the data source of the `array_view` is located|  
-|[array_view::value_type Data Member](#array_view__value_type_data_member)|The value type of the `array_view` and the bound array.|  
+|[array_view::extent Data Member](#extent)|Gets the `extent` object that defines the shape of the `array_view` object.|  
+|[array_view::source_accelerator_view Data Member](#source_accelerator_view)|Gets the [accelerator_view](accelerator-view-class.md) where the data source of the `array_view` is located|  
+|[array_view::value_type Data Member](#value_type)|The value type of the `array_view` and the bound array.|  
   
 ## Remarks  
- The `array_view` class represents a view into the data that is contained in an [array](../../../parallel/amp/reference/array-class.md) object or a subsection of an `array` object.  
+ The `array_view` class represents a view into the data that is contained in an [array](array-class.md) object or a subsection of an `array` object.  
   
  You can access the `array_view` object where the source data is located (locally) or on a different accelerator or a coherence domain (remotely). When you access the object remotely, views are copied and cached as necessary. Except for the effects of automatic caching, `array_view` objects have a performance profile similar to that of `array` objects. There is a small performance penalty when you access the data through views.  
   
@@ -149,15 +149,15 @@ class array_view<const value_type, _Rank> : public _Array_view_base<_Rank, sizeo
   
  **Namespace:** Concurrency  
   
-##  <a name="array_view___dtorarray_view_destructor"></a>  array_view::~array_view Destructor  
- Destroys the [array_view](../../../parallel/amp/reference/array-view-class.md) object.  
+##  <a name="dtor"></a>  array_view::~array_view Destructor  
+ Destroys the `array_view` object.  
   
 ```  
 ~array_view()restrict(amp,cpu);
 ```  
   
-##  <a name="array_view__array_view_constructor"></a>  array_view::array_view Constructor  
- Initializes a new instance of the [array_view](../../../parallel/amp/reference/array-view-class.md) class.  
+##  <a name="ctor"></a>  array_view::array_view Constructor  
+ Initializes a new instance of the `array_view` class.  
   
 ```  
 array_view(
@@ -375,8 +375,8 @@ array_view(
  `_Src`  
  A pointer to the source data that will be copied into the new array.  
   
-##  <a name="array_view__copy_to_method"></a>  array_view::copy_to Method  
- Copies the contents of the [array_view](../../../parallel/amp/reference/array-view-class.md) object to the specified destination object by calling `copy(*this, dest)`.  
+##  <a name="copy_to"></a>  array_view::copy_to Method  
+ Copies the contents of the `array_view` object to the specified destination object by calling `copy(*this, dest)`.  
   
 ```  
 void copy_to(
@@ -394,8 +394,8 @@ void copy_to(
  `_Dest`  
  The object to copy to.  
   
-##  <a name="array_view__data_method"></a>  array_view::data Method  
- Returns a pointer to the raw data of the [array_view](../../../parallel/amp/reference/array-view-class.md).  
+##  <a name="data"></a>  array_view::data Method  
+ Returns a pointer to the raw data of the `array_view`.  
   
 ```  
 value_type* data() const restrict(amp,
@@ -409,22 +409,22 @@ const value_type* data() const restrict(amp,
 ### Return Value  
  A pointer to the raw data of the `array_view`.  
   
-##  <a name="array_view__discard_data_method"></a>  array_view::discard_data Method  
+##  <a name="discard_data"></a>  array_view::discard_data Method  
  Discards the current data underlying this view. This is an optimization hint to the runtime used to avoid copying the current contents of the view to a target `accelerator_view` that it is accessed on, and its use is recommended if the existing content is not needed. This method is a no-op when used in a restrict(amp) context  
   
 ```  
 void discard_data() const restrict(cpu);
 ```  
   
-##  <a name="array_view__extent_data_member"></a>  array_view::extent Data Member  
+##  <a name="extent"></a>  array_view::extent Data Member  
  Gets the `extent` object that defines the shape of the `array_view` object.  
   
 ```  
 __declspec(property(get= get_extent)) Concurrency::extent<_Rank> extent;  
 ```  
   
-##  <a name="array_view__get_extent_method"></a>  array_view::get_extent Method  
- Returns the [extent](../../../parallel/amp/reference/extent-class-cpp-amp.md) object of the [array_view](../../../parallel/amp/reference/array-view-class.md) object.  
+##  <a name="get_extent"></a>  array_view::get_extent Method  
+ Returns the [extent](extent-class.md) object of the `array_view` object.  
   
 ```  
 Concurrency::extent<_Rank> get_extent() const restrict(cpu, amp);
@@ -433,7 +433,7 @@ Concurrency::extent<_Rank> get_extent() const restrict(cpu, amp);
 ### Return Value  
  The `extent` object of the `array_view` object  
   
-##  <a name="array_view__get_ref_method"></a>  array_view::get_ref Method  
+##  <a name="get_ref"></a>  array_view::get_ref Method  
  Get a reference to the element indexed by _Index. Unlike the other indexing operators for accessing the array_view on the CPU, this method does not implicitly synchronize this array_view's contents to the CPU. After accessing the array_view on a remote location or performing a copy operation involving this array_view users are responsible to explicitly synchronize the array_view to the CPU before calling this method. Failure to do so results in undefined behavior.  
   
 ```  
@@ -448,7 +448,7 @@ value_type& get_ref(
 ### Return Value  
  Reference to the element indexed by _Index  
   
-##  <a name="array_view__get_source_accelerator_view_method"></a>  array_view::get_source_accelerator_view Method  
+##  <a name="get_source_accelerator_view"></a>  array_view::get_source_accelerator_view Method  
  Returns the accelerator_view where the data source of the array_view is located. If the array_view does not have a data source, this API throws a runtime_exception  
   
 ```  
@@ -459,7 +459,7 @@ accelerator_view get_source_accelerator_view() const;
   
 ### Return Value  
   
-##  <a name="array_view__operator___operator"></a>  array_view::operator() Operator  
+##  <a name="operator_call"></a>  array_view::operator() Operator  
  Returns the value of the element that is specified by the parameter or parameters.  
   
 ```  
@@ -505,7 +505,7 @@ typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type 
 ### Return Value  
  The value of the element that is specified by the parameter or parameters.  
   
-##  <a name="array_view__operator_at_operator"></a>  array_view::operator[] Operator  
+##  <a name="operator_at"></a>  array_view::operator[] Operator  
  Returns the element that is specified by the parameters.  
   
 ```  
@@ -527,8 +527,8 @@ value_type& operator[] (
 ### Return Value  
  The value of the element at the index, or an `array_view` projected on the most-significant dimension.  
   
-##  <a name="array_view__operator_eq_operator"></a>  array_view::operator= Operator  
- Copies the contents of the specified [array_view](../../../parallel/amp/reference/array-view-class.md) object to this one.  
+##  <a name="operator_eq"></a>  array_view::operator= Operator  
+ Copies the contents of the specified `array_view` object to this one.  
   
 ```  
 array_view& operator= (
@@ -546,22 +546,61 @@ array_view& operator= (
 ### Return Value  
  A reference to this `array_view` object.  
   
-##  <a name="array_view__rank_constant"></a>  array_view::rank Constant  
- Stores the rank of the [array_view](../../../parallel/amp/reference/array-view-class.md) object.  
+##  <a name="rank"></a>  array_view::rank Constant  
+ Stores the rank of the `array_view` object.  
   
 ```  
 static const int rank = _Rank;  
 ```  
   
-##  <a name="array_view__refresh_method"></a>  array_view::refresh Method  
- Notifies the [array_view](../../../parallel/amp/reference/array-view-class.md) object that its bound memory has been modified outside the `array_view` interface. A call to this method renders all cached information stale.  
+##  <a name="refresh"></a>  array_view::refresh Method  
+ Notifies the `array_view` object that its bound memory has been modified outside the `array_view` interface. A call to this method renders all cached information stale.  
   
 ```  
 void refresh() const restrict(cpu);
 ```  
+## <a name="reinterpret_as"></a> array_view::reinterpret_as Method
+Reinterprets the array_view through a one-dimensional array_view, which as an option can have a different value type than the source array_view.  
   
-##  <a name="array_view__section_method"></a>  array_view::section Method  
- Returns a subsection of the [array_view](../../../parallel/amp/reference/array-view-class.md) object that's at the specified origin and, optionally, that has the specified extent.  
+### Syntax  
+  
+```  
+template <  
+    typename _Value_type2  
+>  
+array_view< _Value_type2, _Rank> reinterpret_as() const restrict(amp,cpu);  
+  
+template <  
+    typename _Value_type2  
+>  
+array_view<const _Value_type2, _Rank> reinterpret_as() const restrict(amp,cpu);  
+```  
+  
+### Parameters  
+ `_Value_type2`  
+ The data type of the new `array_view` object.  
+  
+### Return Value  
+ An `array_view` object or a const `array_view` object that is based on this `array_view`, with the element type converted from `T` to `_Value_type2`, and the rank reduced from *N* to 1.  
+  
+### Remarks  
+ Sometimes it is convenient to view a multi-dimensional array as a linear, one-dimensional array, which may have a different value type than the source array. You can achieve this on an `array_view` by using this method.  
+  
+**Warning** Reinterpeting an array_view object by using a different value type is a potentially unsafe operation. This functionality should be used with care.  
+  
+ Here's an example:  
+  
+```cpp  
+struct RGB { float r; float g; float b; };  
+  
+array<RGB,3>  a = ...;   
+array_view<float,1> v = a.reinterpret_as<float>();   
+  
+assert(v.extent == 3*a.extent);  
+```  
+    
+##  <a name="section"></a>  array_view::section Method  
+ Returns a subsection of the `array_view` object that's at the specified origin and, optionally, that has the specified extent.  
   
 ```  
 array_view section(
@@ -609,10 +648,10 @@ array_view section(
  The least significant component of the extent of this section.  
   
  `_Ext`  
- The [extent](../../../parallel/amp/reference/extent-class-cpp-amp.md) object that specifies the extent of the section. The origin is 0.  
+ The [extent](extent-class.md) object that specifies the extent of the section. The origin is 0.  
   
  `_Idx`  
- The [index](../../../parallel/amp/reference/index-class.md) object that specifies the location of the origin. The subsection is the rest of the extent.  
+ The [index](index-class.md) object that specifies the location of the origin. The subsection is the rest of the extent.  
   
  `_I0`  
  The most significant component of the origin of this section.  
@@ -627,22 +666,22 @@ array_view section(
  The rank of the section.  
   
  `_Section_extent`  
- The [extent](../../../parallel/amp/reference/extent-class-cpp-amp.md) object that specifies the extent of the section.  
+ The [extent](extent-class.md) object that specifies the extent of the section.  
   
  `_Section_origin`  
- The [index](../../../parallel/amp/reference/index-class.md) object that specifies the location of the origin.  
+ The [index](index-class.md) object that specifies the location of the origin.  
   
 ### Return Value  
  A subsection of the `array_view` object that's at the specified origin and, optionally, that has the specified extent. When only the `index` object is specified, the subsection contains all elements in the associated extent that have indexes that are larger than the indexes of the elements in the `index` object.  
   
-##  <a name="array_view__source_accelerator_view_data_member"></a>  array_view::source_accelerator_view Data Member  
+##  <a name="source_accelerator_view"></a>  array_view::source_accelerator_view Data Member  
  Gets the source accelerator_view that this array_view is associated with.  
   
 ```  
 __declspec(property(get= get_source_accelerator_view)) accelerator_view source_accelerator_view;  
 ```  
   
-##  <a name="array_view__synchronize_method"></a>  array_view::synchronize Method  
+##  <a name="synchronize"></a>  array_view::synchronize Method  
  Synchronizes any modifications made to the `array_view` object back to its source data.  
   
 ```  
@@ -654,10 +693,10 @@ void synchronize() const restrict(cpu);
   
 ### Parameters  
  `_Access_type`  
- The intended [access_type](../../../parallel/concrt/reference/concurrency-namespace-enums.md#access_type) on the target [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md). This parameter has a default value of `access_type_read`.  
+ The intended [access_type](concurrency-namespace-enums-amp.md#access_type) on the target [accelerator_view](accelerator-view-class.md). This parameter has a default value of `access_type_read`.  
   
-##  <a name="array_view__synchronize_async_method"></a>  array_view::synchronize_async Method  
- Asynchronously synchronizes any modifications made to the [array_view](../../../parallel/amp/reference/array-view-class.md) object back to its source data.  
+##  <a name="synchronize_async"></a>  array_view::synchronize_async Method  
+ Asynchronously synchronizes any modifications made to the `array_view` object back to its source data.  
   
 ```  
 concurrency::completion_future synchronize_async(access_type _Access_type = access_type_read) const restrict(cpu);
@@ -668,12 +707,12 @@ concurrency::completion_future synchronize_async() const restrict(cpu);
   
 ### Parameters  
  `_Access_type`  
- The intended [access_type](../../../parallel/concrt/reference/concurrency-namespace-enums.md#access_type) on the target [accelerator_view](../../../parallel/amp/reference/accelerator-view-class.md). This parameter has a default value of `access_type_read`.  
+ The intended [access_type](concurrency-namespace-enums-amp.md#access_type) on the target [accelerator_view](accelerator-view-class.md). This parameter has a default value of `access_type_read`.  
   
 ### Return Value  
  A future upon which to wait for the operation to complete.  
   
-##  <a name="array_view__synchronize_to_method"></a>  array_view::synchronize_to Method  
+##  <a name="synchronize_to"></a>  array_view::synchronize_to Method  
  Synchronizes any modifications made to this array_view to the specified accelerator_view.  
   
 ```  
@@ -693,7 +732,7 @@ void synchronize_to(
  `_Access_type`  
  The desired access_type on the target accelerator_view. This parameter has a default value of access_type_read.  
   
-##  <a name="array_view__synchronize_to_async_method"></a>  array_view::synchronize_to_async Method  
+##  <a name="synchronize_to_async"></a>  array_view::synchronize_to_async Method  
  Asynchronously synchronizes any modifications made to this array_view to the specified accelerator_view.  
   
 ```  
@@ -716,14 +755,14 @@ concurrency::completion_future synchronize_to_async(
 ### Return Value  
  A future upon which to wait for the operation to complete.  
   
-##  <a name="array_view__value_type_data_member"></a>  array_view::value_type Data Member  
+##  <a name="value_type"></a>  array_view::value_type Data Member  
  The value type of the array_view and the bound array.  
   
 ```  
 typedef typenamevalue_type value_type;  
 ```  
   
-##  <a name="array_view__view_as_method"></a>  array_view::view_as Method  
+##  <a name="view_as"></a>  array_view::view_as Method  
  Reinterprets this `array_view` as an `array_view` of a different rank.  
   
 ```  
@@ -749,10 +788,10 @@ array_view<const value_type,_New_rank> view_as(
  The reshaping `extent`.  
   
  `value_type`  
- The data type of the elements in both the original [array](../../../parallel/amp/reference/array-class.md) object and the returned `array_view` object.  
+ The data type of the elements in both the original [array](array-class.md) object and the returned `array_view` object.  
   
 ### Return Value  
- The [array_view](../../../parallel/amp/reference/array-view-class.md) object that is constructed.  
+ The `array_view` object that is constructed.  
   
 ## See Also  
- [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)
+ [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Specifiers
-This topic describes the *decl-specifiers* (declaration specifiers) component of a [declaration](../misc/declarations.md).  
+This topic describes the *decl-specifiers* (declaration specifiers) component of a [declaration](declarations-and-definitions-cpp.md).  
   
  The following placeholders and language keywords are declaration specifiers:  
   
@@ -69,4 +69,4 @@ This topic describes the *decl-specifiers* (declaration specifiers) component of
 >  Because a name can be redeclared, its interpretation is subject to the most recent declaration in the current scope. Redeclaration can affect how names are interpreted by the compiler, especially `typedef` names.  
   
 ## See Also  
- [Declarations](../misc/declarations.md)
+ [Declarations and Definitions](declarations-and-definitions-cpp.md)

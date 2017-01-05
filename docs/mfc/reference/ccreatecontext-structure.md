@@ -75,17 +75,17 @@ struct CCreateContext
   
  In general, if you use the framework defaults, you can ignore `CCreateContext`. If you attempt more advanced modifications, the Microsoft Foundation Class Library source code or the sample programs, such as VIEWEX, will guide you. If you do forget a required parameter, a framework assertion will tell you what you forgot.  
   
- For more information on `CCreateContext`, see the MFC sample [VIEWEX](../../top/visual-cpp-samples.md).  
+ For more information on `CCreateContext`, see the MFC sample [VIEWEX](../../visual-cpp-samples.md).  
   
 ## Requirements  
  **Header:** afxext.h  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
- [CFrameWnd::Create](../../mfc/reference/cframewnd-class.md#cframewnd__create)   
- [CFrameWnd::LoadFrame](../../mfc/reference/cframewnd-class.md#cframewnd__loadframe)   
- [CFrameWnd::OnCreateClient](../../mfc/reference/cframewnd-class.md#cframewnd__oncreateclient)   
- [CSplitterWnd::Create](../../mfc/reference/csplitterwnd-class.md#csplitterwnd__create)   
- [CSplitterWnd::CreateView](../../mfc/reference/csplitterwnd-class.md#csplitterwnd__createview)   
- [CWnd::Create](../../mfc/reference/cwnd-class.md#cwnd__create)
+ [CFrameWnd::Create](../../mfc/reference/cframewnd-class.md#create)   
+ [CFrameWnd::LoadFrame](../../mfc/reference/cframewnd-class.md#loadframe)   
+ [CFrameWnd::OnCreateClient](../../mfc/reference/cframewnd-class.md#oncreateclient)   
+ [CSplitterWnd::Create](../../mfc/reference/csplitterwnd-class.md#create)   
+ [CSplitterWnd::CreateView](../../mfc/reference/csplitterwnd-class.md#createview)   
+ [CWnd::Create](../../mfc/reference/cwnd-class.md#create)
 

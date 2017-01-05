@@ -59,18 +59,18 @@ This document describes how to make effective use of the Asynchronous Agents Lib
   
  You typically isolate state in an agent by holding data members in the `private` or `protected` sections of the agent class and by using message buffers to communicate state changes. The following example shows the `basic_agent` class, which derives from [concurrency::agent](../../parallel/concrt/reference/agent-class.md). The `basic_agent` class uses two message buffers to communicate with external components. One message buffer holds incoming messages; the other message buffer holds outgoing messages.  
   
- [!code-cpp[concrt-simple-agent#1](../../parallel/concrt/codesnippet/CPP/best-practices-in-the-asynchronous-agents-library_1.cpp)]  
+ [!code-cpp[concrt-simple-agent#1](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-asynchronous-agents-library_1.cpp)]  
   
  For complete examples about how to define and use agents, see [Walkthrough: Creating an Agent-Based Application](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md) and [Walkthrough: Creating a Dataflow Agent](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md).  
   
  [[Top](#top)]  
   
 ##  <a name="throttling"></a> Use a Throttling Mechanism to Limit the Number of Messages in a Data Pipeline  
- Many message-buffer types, such as [concurrency::unbounded_buffer](../Topic/unbounded_buffer%20Class.md), can hold an unlimited number of messages. When a message producer sends messages to a data pipeline faster than the consumer can process these messages, the application can enter a low-memory or out-of-memory state. You can use a throttling mechanism, for example, a semaphore, to limit the number of messages that are concurrently active in a data pipeline.  
+ Many message-buffer types, such as [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md), can hold an unlimited number of messages. When a message producer sends messages to a data pipeline faster than the consumer can process these messages, the application can enter a low-memory or out-of-memory state. You can use a throttling mechanism, for example, a semaphore, to limit the number of messages that are concurrently active in a data pipeline.  
   
- The following basic example demonstrates how to use a semaphore to limit the number of messages in a data pipeline. The data pipeline uses the [concurrency::wait](../Topic/wait%20Function.md) function to simulate an operation that takes at least 100 milliseconds. Because the sender produces messages faster than the consumer can process those messages, this example defines the `semaphore` class to enable the application to limit the number of active messages.  
+ The following basic example demonstrates how to use a semaphore to limit the number of messages in a data pipeline. The data pipeline uses the [concurrency::wait](reference/concurrency-namespace-functions.md#wait) function to simulate an operation that takes at least 100 milliseconds. Because the sender produces messages faster than the consumer can process those messages, this example defines the `semaphore` class to enable the application to limit the number of active messages.  
   
- [!code-cpp[concrt-message-throttling#1](../../parallel/concrt/codesnippet/CPP/best-practices-in-the-asynchronous-agents-library_2.cpp)]  
+ [!code-cpp[concrt-message-throttling#1](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-asynchronous-agents-library_2.cpp)]  
   
  The `semaphore` object limits the pipeline to process at most two messages at the same time.  
   
@@ -88,11 +88,12 @@ This document describes how to make effective use of the Asynchronous Agents Lib
  [[Top](#top)]  
   
 ##  <a name="large-payloads"></a> Do Not Pass Large Message Payloads by Value  
- In some cases, the runtime creates a copy of every message that it passes from one message buffer to another message buffer. For example, the [concurrency::overwrite_buffer](../../parallel/concrt/reference/overwrite-buffer-class.md) class offers a copy of every message that it receives to each of its targets. The runtime also creates a copy of the message data when you use message-passing functions such as [concurrency::send](../Topic/send%20Function.md) and [concurrency::receive](../Topic/receive%20Function.md) to write messages to and read messages from a message buffer. Although this mechanism helps eliminate the risk of concurrently writing to shared data, it could lead to poor memory performance when the message payload is relatively large.  
+
+ In some cases, the runtime creates a copy of every message that it passes from one message buffer to another message buffer. For example, the [concurrency::overwrite_buffer](../../parallel/concrt/reference/overwrite-buffer-class.md) class offers a copy of every message that it receives to each of its targets. The runtime also creates a copy of the message data when you use message-passing functions such as [concurrency::send](reference/concurrency-namespace-functions.md#send) and [concurrency::receive](reference/concurrency-namespace-functions.md#receive) to write messages to and read messages from a message buffer. Although this mechanism helps eliminate the risk of concurrently writing to shared data, it could lead to poor memory performance when the message payload is relatively large.  
   
  You can use pointers or references to improve memory performance when you pass messages that have a large payload. The following example compares passing large messages by value to passing pointers to the same message type. The example defines two agent types, `producer` and `consumer`, that act on `message_data` objects. The example compares the time that is required for the producer to send several `message_data` objects to the consumer to the time that is required for the producer agent to send several pointers to `message_data` objects to the consumer.  
   
- [!code-cpp[concrt-message-payloads#1](../../parallel/concrt/codesnippet/CPP/best-practices-in-the-asynchronous-agents-library_3.cpp)]  
+ [!code-cpp[concrt-message-payloads#1](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-asynchronous-agents-library_3.cpp)]  
   
  This example produces the following sample output:  
   
@@ -114,7 +115,7 @@ took 47ms.
   
  The following example demonstrates how to use `shared_ptr` to share pointer values among multiple message buffers. The example connects a [concurrency::overwrite_buffer](../../parallel/concrt/reference/overwrite-buffer-class.md) object to three [concurrency::call](../../parallel/concrt/reference/call-class.md) objects. The `overwrite_buffer` class offers messages to each of its targets. Because there are multiple owners of the data at the end of the data network, this example uses `shared_ptr` to enable each `call` object to share ownership of the messages.  
   
- [!code-cpp[concrt-message-sharing#1](../../parallel/concrt/codesnippet/CPP/best-practices-in-the-asynchronous-agents-library_4.cpp)]  
+ [!code-cpp[concrt-message-sharing#1](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-asynchronous-agents-library_4.cpp)]  
   
  This example produces the following sample output:  
   

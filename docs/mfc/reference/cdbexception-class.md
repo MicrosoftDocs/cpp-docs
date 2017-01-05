@@ -53,9 +53,9 @@ class CDBException : public CException
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDBException::m_nRetCode](#cdbexception__m_nretcode)|Contains an Open Database Connectivity (ODBC) return code, of type **RETCODE**.|  
-|[CDBException::m_strError](#cdbexception__m_strerror)|Contains a string that describes the error in alphanumeric terms.|  
-|[CDBException::m_strStateNativeOrigin](#cdbexception__m_strstatenativeorigin)|Contains a string describing the error in terms of the error codes returned by ODBC.|  
+|[CDBException::m_nRetCode](#m_nretcode)|Contains an Open Database Connectivity (ODBC) return code, of type **RETCODE**.|  
+|[CDBException::m_strError](#m_strerror)|Contains a string that describes the error in alphanumeric terms.|  
+|[CDBException::m_strStateNativeOrigin](#m_strstatenativeorigin)|Contains a string describing the error in terms of the error codes returned by ODBC.|  
   
 ## Remarks  
  The class includes two public data members you can use to determine the cause of the exception or to display a text message describing the exception. `CDBException` objects are constructed and thrown by member functions of the database classes.  
@@ -79,7 +79,7 @@ class CDBException : public CException
 ## Requirements  
  **Header:** afxdb.h  
   
-##  <a name="cdbexception__m_nretcode"></a>  CDBException::m_nRetCode  
+##  <a name="m_nretcode"></a>  CDBException::m_nRetCode  
  Contains an ODBC error code of type **RETCODE** returned by an ODBC application programming interface (API) function.  
   
 ### Remarks  
@@ -89,7 +89,7 @@ class CDBException : public CException
   
 - **AFX_SQL_ERROR_CONNECT_FAIL** Connection to the data source failed. You passed a **NULL**`CDatabase` pointer to your recordset constructor and the subsequent attempt to create a connection based on `GetDefaultConnect` failed.  
   
-- **AFX_SQL_ERROR_DATA_TRUNCATED** You requested more data than you have provided storage for. For information on increasing the provided data storage for `CString` or `CByteArray` data types, see the `nMaxLength` argument for [RFX_Text](../Topic/RFX_Text.md) and [RFX_Binary](../Topic/RFX_Binary.md) under "Macros and Globals."  
+- **AFX_SQL_ERROR_DATA_TRUNCATED** You requested more data than you have provided storage for. For information on increasing the provided data storage for `CString` or `CByteArray` data types, see the `nMaxLength` argument for [RFX_Text](http://msdn.microsoft.com/library/de3c7581-d26c-40cb-81f3-c492ef4809f6) and [RFX_Binary](http://msdn.microsoft.com/library/908ff945-3ad0-43a1-9932-cdcdc8b14915) under "Macros and Globals."  
   
 - **AFX_SQL_ERROR_DYNASET_NOT_SUPPORTED** A call to `CRecordset::Open` requesting a dynaset failed. Dynasets are not supported by the driver.  
   
@@ -129,13 +129,13 @@ class CDBException : public CException
   
  The SQL-prefixed codes are defined by ODBC. The AFX-prefixed codes are defined in AFXDB.H, found in MFC\INCLUDE.  
   
-##  <a name="cdbexception__m_strerror"></a>  CDBException::m_strError  
+##  <a name="m_strerror"></a>  CDBException::m_strError  
  Contains a string describing the error that caused the exception.  
   
 ### Remarks  
  The string describes the error in alphanumeric terms. For more detailed information and an example, see **m_strStateNativeOrigin**.  
   
-##  <a name="cdbexception__m_strstatenativeorigin"></a>  CDBException::m_strStateNativeOrigin  
+##  <a name="m_strstatenativeorigin"></a>  CDBException::m_strStateNativeOrigin  
  Contains a string describing the error that caused the exception.  
   
 ### Remarks  
@@ -164,7 +164,6 @@ class CDBException : public CException
  [CDatabase Class](../../mfc/reference/cdatabase-class.md)   
  [CRecordset Class](../../mfc/reference/crecordset-class.md)   
  [CFieldExchange Class](../../mfc/reference/cfieldexchange-class.md)   
- [AfxThrowDBException]--brokenlink--(../Topic/not%20found.md#afxthrowdbexception)   
- [CRecordset::Update](../../mfc/reference/crecordset-class.md#crecordset__update)   
- [CRecordset::Delete](../../mfc/reference/crecordset-class.md#crecordset__delete)   
+ [CRecordset::Update](../../mfc/reference/crecordset-class.md#update)   
+ [CRecordset::Delete](../../mfc/reference/crecordset-class.md#delete)   
  [CException Class](../../mfc/reference/cexception-class.md)

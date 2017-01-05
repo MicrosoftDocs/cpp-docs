@@ -47,7 +47,8 @@ The Asynchronous Agents Library provides several functions that let you pass mes
 -   [Examples](#examples)  
   
 ##  <a name="send"></a> send and asend  
- The [concurrency::send](../Topic/send%20Function.md) function sends a message to the specified target synchronously and the [concurrency::asend](../Topic/asend%20Function.md) function sends a message to the specified target asynchronously. Both the `send` and `asend` functions wait until the target indicates that it will eventually accept or decline the message.  
+
+ The [concurrency::send](reference/concurrency-namespace-functions.md#send) function sends a message to the specified target synchronously and the [concurrency::asend](reference/concurrency-namespace-functions.md#asend) function sends a message to the specified target asynchronously. Both the `send` and `asend` functions wait until the target indicates that it will eventually accept or decline the message.  
   
  The `send` function waits until the target accepts or declines the message before it returns. The `send` function returns `true` if the message was delivered and `false` otherwise. Because the `send` function works synchronously, the `send` function waits for the target to receive the message before it returns.  
   
@@ -56,7 +57,8 @@ The Asynchronous Agents Library provides several functions that let you pass mes
  [[Top](#top)]  
   
 ##  <a name="receive"></a> receive and try_receive  
- The [concurrency::receive](../Topic/receive%20Function.md) and [concurrency::try_receive](../Topic/try_receive%20Function.md) functions read data from a given source. The `receive` function waits for data to become available, whereas the `try_receive` function returns immediately.  
+
+ The [concurrency::receive](reference/concurrency-namespace-functions.md#receive) and [concurrency::try_receive](reference/concurrency-namespace-functions.md#try_receive) functions read data from a given source. The `receive` function waits for data to become available, whereas the `try_receive` function returns immediately.  
   
  Use the `receive` function when you must have the data to continue. Use the `try_receive` function if you must not block the current context or you do not have to have the data to continue.  
   
@@ -84,8 +86,9 @@ The Asynchronous Agents Library provides several functions that let you pass mes
 ## See Also  
  [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)   
  [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)   
- [send Function](../Topic/send%20Function.md)   
- [asend Function](../Topic/asend%20Function.md)   
- [receive Function](../Topic/receive%20Function.md)   
- [try_receive Function](../Topic/try_receive%20Function.md)
+ [send Function](reference/concurrency-namespace-functions.md#send)   
+ [asend Function](reference/concurrency-namespace-functions.md#asend)   
+ [receive Function](reference/concurrency-namespace-functions.md#receive)   
+ [try_receive Function](reference/concurrency-namespace-functions.md#try_receive)
+
 

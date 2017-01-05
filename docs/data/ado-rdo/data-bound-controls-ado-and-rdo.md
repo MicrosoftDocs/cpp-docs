@@ -61,7 +61,7 @@ Databinding is a mechanism that allows users to work with data retrieved from a 
 |Data access programming overview (Visual C++)|[Data Access Programming](../../data/data-access-programming-mfc-atl.md)|  
 |OLE DB programming (conceptual topics)|[OLE DB Programming Overview](../../data/oledb/ole-db-programming-overview.md)|  
 |Open Database Connectivity (ODBC)|[ODBC and MFC](../../data/odbc/odbc-and-mfc.md)|  
-|Microsoft Universal Data Access Web site|[OLE DB Programmer's Guide](http://go.microsoft.com/fwlink/?LinkId=121548)|  
+|Microsoft Universal Data Access Web site|[OLE DB Programmer's Guide](http://go.microsoft.com/fwlink/?linkid=121548)|  
   
 ## See Also  
  [Data Access Programming (MFC/ATL)](../../data/data-access-programming-mfc-atl.md)

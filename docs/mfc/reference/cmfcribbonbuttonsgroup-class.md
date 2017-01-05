@@ -50,31 +50,31 @@ class CMFCRibbonButtonsGroup : public CMFCRibbonBaseElement
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonButtonsGroup::CMFCRibbonButtonsGroup](#cmfcribbonbuttonsgroup__cmfcribbonbuttonsgroup)|Constructs a `CMFCRibbonButtonsGroup` object.|  
+|[CMFCRibbonButtonsGroup::CMFCRibbonButtonsGroup](#cmfcribbonbuttonsgroup)|Constructs a `CMFCRibbonButtonsGroup` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonButtonsGroup::AddButton](#cmfcribbonbuttonsgroup__addbutton)|Adds a button to a group.|  
-|[CMFCRibbonButtonsGroup::AddButtons](#cmfcribbonbuttonsgroup__addbuttons)|Adds a list of buttons to a group.|  
-|[CMFCRibbonButtonsGroup::GetButton](#cmfcribbonbuttonsgroup__getbutton)|Returns a pointer to the button that is located at a specified index.|  
-|[CMFCRibbonButtonsGroup::GetCount](#cmfcribbonbuttonsgroup__getcount)|Returns the number of buttons in the group.|  
-|[CMFCRibbonButtonsGroup::GetImageSize](#cmfcribbonbuttonsgroup__getimagesize)|Returns the image size of the normal images in the ribbon group (overrides [CMFCRibbonBaseElement::GetImageSize](../../mfc/reference/cmfcribbonbaseelement-class.md#cmfcribbonbaseelement__getimagesize).)|  
-|[CMFCRibbonButtonsGroup::GetRegularSize](#cmfcribbonbuttonsgroup__getregularsize)|Returns the regular size of the ribbon element (overrides [CMFCRibbonBaseElement::GetRegularSize](../../mfc/reference/cmfcribbonbaseelement-class.md#cmfcribbonbaseelement__getregularsize).)|  
-|[CMFCRibbonButtonsGroup::HasImages](#cmfcribbonbuttonsgroup__hasimages)|Reports whether the `CMFCRibbonButtonsGroup` object contains toolbar images.|  
-|[CMFCRibbonButtonsGroup::OnDrawImage](#cmfcribbonbuttonsgroup__ondrawimage)|Draws the appropriate image for a specified button, depending on whether the button is normal, highlighted or disabled.|  
-|[CMFCRibbonButtonsGroup::RemoveAll](#cmfcribbonbuttonsgroup__removeall)|Removes all buttons from the `CMFCRibbonButtonsGroup` object.|  
-|[CMFCRibbonButtonsGroup::SetImages](#cmfcribbonbuttonsgroup__setimages)|Assigns images to the group.|  
-|[CMFCRibbonButtonsGroup::SetParentCategory](#cmfcribbonbuttonsgroup__setparentcategory)|Sets the parent `CMFCRibbonCategory` of the `CMFCRibbonButtonsGroup` object and all the buttons within it (overrides [CMFCRibbonBaseElement::SetParentCategory](../../mfc/reference/cmfcribbonbaseelement-class.md#cmfcribbonbaseelement__setparentcategory).)|  
+|[CMFCRibbonButtonsGroup::AddButton](#addbutton)|Adds a button to a group.|  
+|[CMFCRibbonButtonsGroup::AddButtons](#addbuttons)|Adds a list of buttons to a group.|  
+|[CMFCRibbonButtonsGroup::GetButton](#getbutton)|Returns a pointer to the button that is located at a specified index.|  
+|[CMFCRibbonButtonsGroup::GetCount](#getcount)|Returns the number of buttons in the group.|  
+|[CMFCRibbonButtonsGroup::GetImageSize](#getimagesize)|Returns the image size of the normal images in the ribbon group (overrides [CMFCRibbonBaseElement::GetImageSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getimagesize).)|  
+|[CMFCRibbonButtonsGroup::GetRegularSize](#getregularsize)|Returns the regular size of the ribbon element (overrides [CMFCRibbonBaseElement::GetRegularSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getregularsize).)|  
+|[CMFCRibbonButtonsGroup::HasImages](#hasimages)|Reports whether the `CMFCRibbonButtonsGroup` object contains toolbar images.|  
+|[CMFCRibbonButtonsGroup::OnDrawImage](#ondrawimage)|Draws the appropriate image for a specified button, depending on whether the button is normal, highlighted or disabled.|  
+|[CMFCRibbonButtonsGroup::RemoveAll](#removeall)|Removes all buttons from the `CMFCRibbonButtonsGroup` object.|  
+|[CMFCRibbonButtonsGroup::SetImages](#setimages)|Assigns images to the group.|  
+|[CMFCRibbonButtonsGroup::SetParentCategory](#setparentcategory)|Sets the parent `CMFCRibbonCategory` of the `CMFCRibbonButtonsGroup` object and all the buttons within it (overrides [CMFCRibbonBaseElement::SetParentCategory](../../mfc/reference/cmfcribbonbaseelement-class.md#setparentcategory).)|  
   
 ## Remarks  
  The group is derived from [CMFCBaseRibbonElement](../../mfc/reference/cmfcribbonbaseelement-class.md) and can be manipulated as a single entity. You can position the group on any panel or popup menu.  
   
 ## Example  
- The following example demonstrates how to use various methods in the `CMFCRibbonButtonsGroup` class. The example shows how to construct a `CMFCRibbonButtonsGroup` object, assign images to the group of ribbon buttons, and add a button to the group of ribbon buttons. This code snippet is part of the [Draw Client sample](../../top/visual-cpp-samples.md).  
+ The following example demonstrates how to use various methods in the `CMFCRibbonButtonsGroup` class. The example shows how to construct a `CMFCRibbonButtonsGroup` object, assign images to the group of ribbon buttons, and add a button to the group of ribbon buttons. This code snippet is part of the [Draw Client sample](../../visual-cpp-samples.md).  
   
- [!code-cpp[NVC_MFC_DrawClient#2](../../mfc/reference/codesnippet/CPP/cmfcribbonbuttonsgroup-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_DrawClient#2](../../mfc/reference/codesnippet/cpp/cmfcribbonbuttonsgroup-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -86,7 +86,7 @@ class CMFCRibbonButtonsGroup : public CMFCRibbonBaseElement
 ## Requirements  
  **Header:** afxribbonbuttonsgroup.h  
   
-##  <a name="cmfcribbonbuttonsgroup__addbutton"></a>  CMFCRibbonButtonsGroup::AddButton  
+##  <a name="addbutton"></a>  CMFCRibbonButtonsGroup::AddButton  
  Adds a button to a group.  
   
 ```  
@@ -97,7 +97,7 @@ void AddButton(CMFCRibbonBaseElement* pButton);
  [in] `pButton`  
  A pointer to a button to add.  
   
-##  <a name="cmfcribbonbuttonsgroup__addbuttons"></a>  CMFCRibbonButtonsGroup::AddButtons  
+##  <a name="addbuttons"></a>  CMFCRibbonButtonsGroup::AddButtons  
  Adds a list of buttons to a group.  
   
 ```  
@@ -109,7 +109,7 @@ void AddButtons(
  [in] `lstButtons`  
  A list of pointers to the buttons that you want to add.  
   
-##  <a name="cmfcribbonbuttonsgroup__cmfcribbonbuttonsgroup"></a>  CMFCRibbonButtonsGroup::CMFCRibbonButtonsGroup  
+##  <a name="cmfcribbonbuttonsgroup"></a>  CMFCRibbonButtonsGroup::CMFCRibbonButtonsGroup  
  Constructs a `CMFCRibbonButtonsGroup` object.  
   
 ```  
@@ -126,7 +126,7 @@ CMFCRibbonButtonsGroup(CMFCRibbonBaseElement* pButton);
   
 ### Remarks  
   
-##  <a name="cmfcribbonbuttonsgroup__getbutton"></a>  CMFCRibbonButtonsGroup::GetButton  
+##  <a name="getbutton"></a>  CMFCRibbonButtonsGroup::GetButton  
  Returns a pointer to the button that is located at a specified index.  
   
 ```  
@@ -144,7 +144,7 @@ CMFCRibbonBaseElement* GetButton(int i) const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonbuttonsgroup__getcount"></a>  CMFCRibbonButtonsGroup::GetCount  
+##  <a name="getcount"></a>  CMFCRibbonButtonsGroup::GetCount  
  Returns the number of buttons in the group.  
   
 ```  
@@ -156,7 +156,7 @@ int GetCount() const;
 ### Return Value  
  The number of buttons in the group.  
   
-##  <a name="cmfcribbonbuttonsgroup__getimagesize"></a>  CMFCRibbonButtonsGroup::GetImageSize  
+##  <a name="getimagesize"></a>  CMFCRibbonButtonsGroup::GetImageSize  
  Retrieves the source image size of the protected `CMFCToolBarImages` member `m_Images`.  
   
 ```  
@@ -170,7 +170,7 @@ const CSize GetImageSize() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonbuttonsgroup__getregularsize"></a>  CMFCRibbonButtonsGroup::GetRegularSize  
+##  <a name="getregularsize"></a>  CMFCRibbonButtonsGroup::GetRegularSize  
  Retrieves the maximum possible size of the ribbon group element.  
   
 ```  
@@ -185,7 +185,7 @@ virtual CSize GetRegularSize(CDC* pDC);
   
 ### Remarks  
   
-##  <a name="cmfcribbonbuttonsgroup__hasimages"></a>  CMFCRibbonButtonsGroup::HasImages  
+##  <a name="hasimages"></a>  CMFCRibbonButtonsGroup::HasImages  
  Reports whether the `CMFCRibbonButtonsGroup` object contains toolbar images.  
   
 ```  
@@ -199,7 +199,7 @@ BOOL HasImages() const;
   
 ### Remarks  
   
-##  <a name="cmfcribbonbuttonsgroup__ondrawimage"></a>  CMFCRibbonButtonsGroup::OnDrawImage  
+##  <a name="ondrawimage"></a>  CMFCRibbonButtonsGroup::OnDrawImage  
  Draws the appropriate image for a specified button, depending on whether the button is normal, highlighted or disabled.  
   
 ```  
@@ -225,7 +225,7 @@ virtual void OnDrawImage(
   
 ### Remarks  
   
-##  <a name="cmfcribbonbuttonsgroup__removeall"></a>  CMFCRibbonButtonsGroup::RemoveAll  
+##  <a name="removeall"></a>  CMFCRibbonButtonsGroup::RemoveAll  
  Removes all buttons from the `CMFCRibbonButtonsGroup` object.  
   
 ```  
@@ -234,7 +234,7 @@ void RemoveAll();
   
 ### Remarks  
   
-##  <a name="cmfcribbonbuttonsgroup__setimages"></a>  CMFCRibbonButtonsGroup::SetImages  
+##  <a name="setimages"></a>  CMFCRibbonButtonsGroup::SetImages  
  Assigns images to the group of ribbon buttons.  
   
 ```  
@@ -260,7 +260,7 @@ void SetImages(
 > [!NOTE]
 >  Hot images are images that are displayed when the user hovers over the button. Disabled images are images that are displayed when the button is disabled.  
   
-##  <a name="cmfcribbonbuttonsgroup__setparentcategory"></a>  CMFCRibbonButtonsGroup::SetParentCategory  
+##  <a name="setparentcategory"></a>  CMFCRibbonButtonsGroup::SetParentCategory  
  Sets the parent `CMFCRibbonCategory` of the `CMFCRibbonButtonsGroup` object and all the buttons within it.  
   
 ```  

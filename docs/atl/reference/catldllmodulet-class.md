@@ -58,19 +58,19 @@ template <class T>  class ATL_NO_VTABLE CAtlDllModuleT :  public CAtlModuleT<T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlDllModuleT::CAtlDllModuleT](#catldllmodulet__catldllmodulet)|The constructor.|  
-|[CAtlDllModuleT::~CAtlDllModuleT](#catldllmodulet___dtorcatldllmodulet)|The destructor.|  
+|[CAtlDllModuleT::CAtlDllModuleT](#catldllmodulet)|The constructor.|  
+|[CAtlDllModuleT::~CAtlDllModuleT](#dtor)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlDllModuleT::DllCanUnloadNow](#catldllmodulet__dllcanunloadnow)|Tests if the DLL can be unloaded.|  
-|[CAtlDllModuleT::DllGetClassObject](#catldllmodulet__dllgetclassobject)|Returns a class factory.|  
-|[CAtlDllModuleT::DllMain](#catldllmodulet__dllmain)|The optional entry point into a dynamic-link library (DLL).|  
-|[CAtlDllModuleT::DllRegisterServer](#catldllmodulet__dllregisterserver)|Adds entries to the system registry for objects in the DLL.|  
-|[CAtlDllModuleT::DllUnregisterServer](#catldllmodulet__dllunregisterserver)|Removes entries in the system registry for objects in the DLL.|  
-|[CAtlDllModuleT::GetClassObject](#catldllmodulet__getclassobject)|Returns a class factory. Invoked by [DllGetClassObject](#catldllmodulet__dllgetclassobject).|  
+|[CAtlDllModuleT::DllCanUnloadNow](#dllcanunloadnow)|Tests if the DLL can be unloaded.|  
+|[CAtlDllModuleT::DllGetClassObject](#dllgetclassobject)|Returns a class factory.|  
+|[CAtlDllModuleT::DllMain](#dllmain)|The optional entry point into a dynamic-link library (DLL).|  
+|[CAtlDllModuleT::DllRegisterServer](#dllregisterserver)|Adds entries to the system registry for objects in the DLL.|  
+|[CAtlDllModuleT::DllUnregisterServer](#dllunregisterserver)|Removes entries in the system registry for objects in the DLL.|  
+|[CAtlDllModuleT::GetClassObject](#getclassobject)|Returns a class factory. Invoked by [DllGetClassObject](#dllgetclassobject).|  
   
 ## Remarks  
  `CAtlDllModuleT` represents the module for a dynamic-link library (DLL) and provides functions used by all DLL projects. This specialization of [CAtlModuleT](../../atl/reference/catlmodulet-class.md) class includes support for registration.  
@@ -78,7 +78,7 @@ template <class T>  class ATL_NO_VTABLE CAtlDllModuleT :  public CAtlModuleT<T>
  For more information on modules in ATL, see [ATL Module Classes](../../atl/atl-module-classes.md).  
   
 ## Inheritance Hierarchy  
- [_ATL_MODULE](../Topic/_ATL_MODULE.md)  
+ [_ATL_MODULE](atl-typedefs.md#_atl_module)  
   
  [CAtlModule](../../atl/reference/catlmodule-class.md)  
   
@@ -89,21 +89,21 @@ template <class T>  class ATL_NO_VTABLE CAtlDllModuleT :  public CAtlModuleT<T>
 ## Requirements  
  **Header:** atlbase.h  
   
-##  <a name="catldllmodulet__catldllmodulet"></a>  CAtlDllModuleT::CAtlDllModuleT  
+##  <a name="catldllmodulet"></a>  CAtlDllModuleT::CAtlDllModuleT  
  The constructor.  
   
 ```
 CAtlDllModuleT() throw();
 ```  
   
-##  <a name="catldllmodulet___dtorcatldllmodulet"></a>  CAtlDllModuleT::~CAtlDllModuleT  
+##  <a name="dtor"></a>  CAtlDllModuleT::~CAtlDllModuleT  
  The destructor.  
   
 ```
 ~CAtlDllModuleT() throw();
 ```  
   
-##  <a name="catldllmodulet__dllcanunloadnow"></a>  CAtlDllModuleT::DllCanUnloadNow  
+##  <a name="dllcanunloadnow"></a>  CAtlDllModuleT::DllCanUnloadNow  
  Tests if the DLL can be unloaded.  
   
 ```
@@ -113,7 +113,7 @@ HRESULT DllCanUnloadNow() throw();
 ### Return Value  
  Returns S_OK if the DLL can be unloaded, or S_FALSE if it cannot.  
   
-##  <a name="catldllmodulet__dllgetclassobject"></a>  CAtlDllModuleT::DllGetClassObject  
+##  <a name="dllgetclassobject"></a>  CAtlDllModuleT::DllGetClassObject  
  Returns the class factory.  
   
 ```
@@ -135,7 +135,7 @@ HRESULT DllGetClassObject(REFCLSID rclsid,
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
-##  <a name="catldllmodulet__dllmain"></a>  CAtlDllModuleT::DllMain  
+##  <a name="dllmain"></a>  CAtlDllModuleT::DllMain  
  The optional entry point into a dynamic-link library (DLL).  
   
 ```
@@ -155,7 +155,7 @@ BOOL WINAPI DllMain(DWORD dwReason,  LPVOID /* lpReserved*/) throw();
 ### Remarks  
  Disabling the DLL_THREAD_ATTACH and DLL_THREAD_DETACH notification calls can be a useful optimization for multithreaded applications that have many DLLs, that frequently create and delete threads, and whose DLLs do not need these thread-level notifications of attachment/detachment.  
   
-##  <a name="catldllmodulet__dllregisterserver"></a>  CAtlDllModuleT::DllRegisterServer  
+##  <a name="dllregisterserver"></a>  CAtlDllModuleT::DllRegisterServer  
  Adds entries to the system registry for objects in the DLL.  
   
 ```
@@ -169,7 +169,7 @@ HRESULT DllRegisterServer(BOOL bRegTypeLib = TRUE) throw();
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
-##  <a name="catldllmodulet__dllunregisterserver"></a>  CAtlDllModuleT::DllUnregisterServer  
+##  <a name="dllunregisterserver"></a>  CAtlDllModuleT::DllUnregisterServer  
  Removes entries in the system registry for objects in the DLL.  
   
 ```
@@ -183,7 +183,7 @@ HRESULT DllUnregisterServer(BOOL bUnRegTypeLib = TRUE) throw();
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
-##  <a name="catldllmodulet__getclassobject"></a>  CAtlDllModuleT::GetClassObject  
+##  <a name="getclassobject"></a>  CAtlDllModuleT::GetClassObject  
  Creates an object of the specified CLSID.  
   
 ```
@@ -206,7 +206,7 @@ HRESULT GetClassObject(REFCLSID rclsid,
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This method is called by [CAtlDllModuleT::DllGetClassObject](#catldllmodulet__dllgetclassobject) and is included for backward compatibility.  
+ This method is called by [CAtlDllModuleT::DllGetClassObject](#dllgetclassobject) and is included for backward compatibility.  
   
 ## See Also  
  [CAtlModuleT Class](../../atl/reference/catlmodulet-class.md)   

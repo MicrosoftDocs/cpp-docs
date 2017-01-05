@@ -61,18 +61,18 @@ template <class T>  class ATL_NO_VTABLE IPersistStorageImpl :  public IPersistSt
   
 |Name|Description|  
 |----------|-----------------|  
-|[IPersistStorageImpl::GetClassID](#ipersiststorageimpl__getclassid)|Retrieves the object's CLSID.|  
-|[IPersistStorageImpl::HandsOffStorage](#ipersiststorageimpl__handsoffstorage)|Instructs the object to release all storage objects and enter HandsOff mode. The ATL implementation returns `S_OK`.|  
-|[IPersistStorageImpl::InitNew](#ipersiststorageimpl__initnew)|Initializes a new storage.|  
-|[IPersistStorageImpl::IsDirty](#ipersiststorageimpl__isdirty)|Checks whether the object's data has changed since it was last saved.|  
-|[IPersistStorageImpl::Load](#ipersiststorageimpl__load)|Loads the object's properties from the specified storage.|  
-|[IPersistStorageImpl::Save](#ipersiststorageimpl__save)|Saves the object's properties to the specified storage.|  
-|[IPersistStorageImpl::SaveCompleted](#ipersiststorageimpl__savecompleted)|Notifies an object that it can return to Normal mode to write to its storage object. The ATL implementation returns `S_OK`.|  
+|[IPersistStorageImpl::GetClassID](#getclassid)|Retrieves the object's CLSID.|  
+|[IPersistStorageImpl::HandsOffStorage](#handsoffstorage)|Instructs the object to release all storage objects and enter HandsOff mode. The ATL implementation returns `S_OK`.|  
+|[IPersistStorageImpl::InitNew](#initnew)|Initializes a new storage.|  
+|[IPersistStorageImpl::IsDirty](#isdirty)|Checks whether the object's data has changed since it was last saved.|  
+|[IPersistStorageImpl::Load](#load)|Loads the object's properties from the specified storage.|  
+|[IPersistStorageImpl::Save](#save)|Saves the object's properties to the specified storage.|  
+|[IPersistStorageImpl::SaveCompleted](#savecompleted)|Notifies an object that it can return to Normal mode to write to its storage object. The ATL implementation returns `S_OK`.|  
   
 ## Remarks  
  `IPersistStorageImpl` implements the [IPersistStorage](http://msdn.microsoft.com/library/windows/desktop/ms679731) interface, which allows a client to request that your object load and save its persistent data using a storage.  
   
- The implementation of this class requires class `T` to make an implementation of the `IPersistStreamInit` interface available via `QueryInterface`. Typically this means that class `T` should derive from [IPersistStreamInitImpl](../../atl/reference/ipersiststreaminitimpl-class.md), provide an entry for `IPersistStreamInit` in the [COM map](../Topic/BEGIN_COM_MAP.md), and use a [property map](../Topic/BEGIN_PROP_MAP.md) to describe the class's persistent data.  
+ The implementation of this class requires class `T` to make an implementation of the `IPersistStreamInit` interface available via `QueryInterface`. Typically this means that class `T` should derive from [IPersistStreamInitImpl](../../atl/reference/ipersiststreaminitimpl-class.md), provide an entry for `IPersistStreamInit` in the [COM map](http://msdn.microsoft.com/library/ead2a1e3-334d-44ad-bb1f-b94bb14c2333), and use a [property map](http://msdn.microsoft.com/library/bfe30be6-62c3-4dc2-bd49-21ef96f15427) to describe the class's persistent data.  
   
  **Related Articles** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)  
   
@@ -84,7 +84,7 @@ template <class T>  class ATL_NO_VTABLE IPersistStorageImpl :  public IPersistSt
 ## Requirements  
  **Header:** atlcom.h  
   
-##  <a name="ipersiststorageimpl__getclassid"></a>  IPersistStorageImpl::GetClassID  
+##  <a name="getclassid"></a>  IPersistStorageImpl::GetClassID  
  Retrieves the object's CLSID.  
   
 ```
@@ -94,7 +94,7 @@ STDMETHOD(GetClassID)(CLSID* pClassID);
 ### Remarks  
  See [IPersist::GetClassID](http://msdn.microsoft.com/library/windows/desktop/ms688664) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ipersiststorageimpl__handsoffstorage"></a>  IPersistStorageImpl::HandsOffStorage  
+##  <a name="handsoffstorage"></a>  IPersistStorageImpl::HandsOffStorage  
  Instructs the object to release all storage objects and enter HandsOff mode.  
   
 ```
@@ -107,7 +107,7 @@ STDMETHOD(HandsOffStorage)(void);
 ### Remarks  
  See [IPersistStorage::HandsOffStorage](http://msdn.microsoft.com/library/windows/desktop/ms679742) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ipersiststorageimpl__initnew"></a>  IPersistStorageImpl::InitNew  
+##  <a name="initnew"></a>  IPersistStorageImpl::InitNew  
  Initializes a new storage.  
   
 ```
@@ -119,7 +119,7 @@ STDMETHOD(InitNew)(IStorage*);
   
  See [IPersistStorage:InitNew](http://msdn.microsoft.com/library/windows/desktop/ms687194) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ipersiststorageimpl__isdirty"></a>  IPersistStorageImpl::IsDirty  
+##  <a name="isdirty"></a>  IPersistStorageImpl::IsDirty  
  Checks whether the object's data has changed since it was last saved.  
   
 ```
@@ -131,7 +131,7 @@ STDMETHOD(IsDirty)(void);
   
  See [IPersistStorage:IsDirty](http://msdn.microsoft.com/library/windows/desktop/ms683910) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ipersiststorageimpl__load"></a>  IPersistStorageImpl::Load  
+##  <a name="load"></a>  IPersistStorageImpl::Load  
  Loads the object's properties from the specified storage.  
   
 ```
@@ -139,11 +139,11 @@ STDMETHOD(Load)(IStorage* pStorage);
 ```  
   
 ### Remarks  
- The ATL implementation delegates to the [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) interface. **Load** uses a stream named "Contents" to retrieve the object's data. The [Save](#ipersiststorageimpl__save) method originally creates this stream.  
+ The ATL implementation delegates to the [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) interface. **Load** uses a stream named "Contents" to retrieve the object's data. The [Save](#save) method originally creates this stream.  
   
  See [IPersistStorage:Load](http://msdn.microsoft.com/library/windows/desktop/ms680557) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ipersiststorageimpl__save"></a>  IPersistStorageImpl::Save  
+##  <a name="save"></a>  IPersistStorageImpl::Save  
  Saves the object's properties to the specified storage.  
   
 ```
@@ -152,11 +152,11 @@ STDMETHOD(Save)(
 ```  
   
 ### Remarks  
- The ATL implementation delegates to the [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) interface. When **Save** is first called, it creates a stream named "Contents" on the specified storage. This stream is then used in later calls to **Save** and in calls to [Load](#ipersiststorageimpl__load).  
+ The ATL implementation delegates to the [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) interface. When **Save** is first called, it creates a stream named "Contents" on the specified storage. This stream is then used in later calls to **Save** and in calls to [Load](#load).  
   
  See [IPersistStorage:Save](http://msdn.microsoft.com/library/windows/desktop/ms680680) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
-##  <a name="ipersiststorageimpl__savecompleted"></a>  IPersistStorageImpl::SaveCompleted  
+##  <a name="savecompleted"></a>  IPersistStorageImpl::SaveCompleted  
  Notifies an object that it can return to Normal mode to write to its storage object.  
   
 ```

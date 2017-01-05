@@ -47,7 +47,7 @@ References to pointers can be declared in much the same way as references to obj
 #include <iostream>  
 #include <string>  
   
-// STL namespace  
+// C++ Standard Library namespace  
 using namespace std;  
   
 enum {  

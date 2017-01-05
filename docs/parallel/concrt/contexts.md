@@ -33,13 +33,15 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Contexts
-This document describes the role of contexts in the Concurrency Runtime. A thread that is attached to a scheduler is known as an *execution context*, or just *context*. The [concurrency::wait](../Topic/wait%20Function.md) function and the concurrency::[Context class](../../parallel/concrt/reference/context-class.md) enable you to control the behavior of contexts. Use the `wait` function to suspend the current context for a specified time. Use the `Context` class when you need more control over when contexts block, unblock, and yield, or when you want to oversubscribe the current context.  
+
+This document describes the role of contexts in the Concurrency Runtime. A thread that is attached to a scheduler is known as an *execution context*, or just *context*. The [concurrency::wait](reference/concurrency-namespace-functions.md#wait) function and the concurrency::[Context class](../../parallel/concrt/reference/context-class.md) enable you to control the behavior of contexts. Use the `wait` function to suspend the current context for a specified time. Use the `Context` class when you need more control over when contexts block, unblock, and yield, or when you want to oversubscribe the current context.  
   
 > [!TIP]
 >  The Concurrency Runtime provides a default scheduler, and therefore you are not required to create one in your application. Because the Task Scheduler helps you fine-tune the performance of your applications, we recommend that you start with the [Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) or the [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md) if you are new to the Concurrency Runtime.  
   
 ## The wait Function  
- The [concurrency::wait](../Topic/wait%20Function.md) function cooperatively yields the execution of the current context for a specified number of milliseconds. The runtime uses the yield time to perform other tasks. After the specified time has elapsed, the runtime reschedules the context for execution. Therefore, the `wait` function might suspend the current context longer than the value provided for the `milliseconds` parameter.  
+
+ The [concurrency::wait](reference/concurrency-namespace-functions.md#wait) function cooperatively yields the execution of the current context for a specified number of milliseconds. The runtime uses the yield time to perform other tasks. After the specified time has elapsed, the runtime reschedules the context for execution. Therefore, the `wait` function might suspend the current context longer than the value provided for the `milliseconds` parameter.  
   
  Passing 0 (zero) for the `milliseconds` parameter causes the runtime to suspend the current context until all other active contexts are given the opportunity to perform work. This lets you yield a task to all other active tasks.  
   
@@ -52,13 +54,15 @@ This document describes the role of contexts in the Concurrency Runtime. A threa
 ### Cooperative Blocking  
  The `Context` class lets you block or yield the current execution context. Blocking or yielding is useful when the current context cannot continue because a resource is not available.  
   
- The [concurrency::Context::Block](../Topic/Context::Block%20Method.md) method blocks the current context. A context that is blocked yields its processing resources so that the runtime can perform other tasks. The [concurrency::Context::Unblock](../Topic/Context::Unblock%20Method.md) method unblocks a blocked context. The `Context::Unblock` method must be called from a different context than the one that called `Context::Block`. The runtime throws [concurrency::context_self_unblock](../../parallel/concrt/reference/context-self-unblock-class.md) if a context attempts to unblock itself.  
+
+ The [concurrency::Context::Block](reference/context-class.md#block) method blocks the current context. A context that is blocked yields its processing resources so that the runtime can perform other tasks. The [concurrency::Context::Unblock](reference/context-class.md#unblock) method unblocks a blocked context. The `Context::Unblock` method must be called from a different context than the one that called `Context::Block`. The runtime throws [concurrency::context_self_unblock](../../parallel/concrt/reference/context-self-unblock-class.md) if a context attempts to unblock itself.  
   
- To cooperatively block and unblock a context, you typically call [concurrency::Context::CurrentContext](../Topic/Context::CurrentContext%20Method.md) to retrieve a pointer to the `Context` object that is associated with the current thread and save the result. You then call the `Context::Block` method to block the current context. Later, call `Context::Unblock` from a separate context to unblock the blocked context.  
+ To cooperatively block and unblock a context, you typically call [concurrency::Context::CurrentContext](reference/context-class.md#currentcontext) to retrieve a pointer to the `Context` object that is associated with the current thread and save the result. You then call the `Context::Block` method to block the current context. Later, call `Context::Unblock` from a separate context to unblock the blocked context.  
   
  You must match each pair of calls to `Context::Block` and `Context::Unblock`. The runtime throws [concurrency::context_unblock_unbalanced](../../parallel/concrt/reference/context-unblock-unbalanced-class.md) when the `Context::Block` or `Context::Unblock` method is called consecutively without a matching call to the other method. However, you do not have to call `Context::Block` before you call `Context::Unblock`. For example, if one context calls `Context::Unblock` before another context calls `Context::Block` for the same context, that context remains unblocked.  
   
- The [concurrency::Context::Yield](../Topic/Context::Yield%20Method.md) method yields execution so that the runtime can perform other tasks and then reschedule the context for execution. When you call the `Context::Block` method, the runtime does not reschedule the context.  
+ The [concurrency::Context::Yield](reference/context-class.md#yield) method yields execution so that the runtime can perform other tasks and then reschedule the context for execution. When you call the `Context::Block` method, the runtime does not reschedule the context.  
+
   
 #### Example  
  For an example that uses the `Context::Block`, `Context::Unblock`, and `Context::Yield` methods to implement a cooperative semaphore class, see [How to: Use the Context Class to Implement a Cooperative Semaphore](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md).  
@@ -71,7 +75,8 @@ This document describes the role of contexts in the Concurrency Runtime. A threa
 > [!NOTE]
 >  Enable oversubscription only from a thread that was created by the Concurrency Runtime. Oversubscription has no effect when it is called from a thread that was not created by the runtime (including the main thread).  
   
- To enable oversubscription in the current context, call the [concurrency::Context::Oversubscribe](../Topic/Context::Oversubscribe%20Method.md) method with the `_BeginOversubscription` parameter set to `true`. When you enable oversubscription on a thread that was created by the Concurrency Runtime, it causes the runtime to create one additional thread. After all tasks that require oversubscription finish, call `Context::Oversubscribe` with the `_BeginOversubscription` parameter set to `false`.  
+ To enable oversubscription in the current context, call the [concurrency::Context::Oversubscribe](reference/context-class.md#oversubscribe) method with the `_BeginOversubscription` parameter set to `true`. When you enable oversubscription on a thread that was created by the Concurrency Runtime, it causes the runtime to create one additional thread. After all tasks that require oversubscription finish, call `Context::Oversubscribe` with the `_BeginOversubscription` parameter set to `false`.  
+
   
  You can enable oversubscription multiple times from the current context, but you must disable it the same number of times that you enable it. Oversubscription can also be nested; that is, a task that is created by another task that uses oversubscription can also oversubscribe its context. However, if both a nested task and its parent belong to the same context, only the outermost call to `Context::Oversubscribe` causes the creation of an additional thread.  
   

@@ -49,20 +49,20 @@ class CMFCRibbonCheckBox : public CMFCRibbonButton
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonCheckBox::CMFCRibbonCheckBox](#cmfcribboncheckbox__cmfcribboncheckbox)|The constructor.|  
+|[CMFCRibbonCheckBox::CMFCRibbonCheckBox](#cmfcribboncheckbox)|The constructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCRibbonCheckBox::GetCompactSize](#cmfcribboncheckbox__getcompactsize)|(Overrides [CMFCRibbonButton::GetCompactSize](../../mfc/reference/cmfcribbonbutton-class.md#cmfcribbonbutton__getcompactsize).)|  
-|[CMFCRibbonCheckBox::GetIntermediateSize](#cmfcribboncheckbox__getintermediatesize)|(Overrides [CMFCRibbonButton::GetIntermediateSize](../../mfc/reference/cmfcribbonbutton-class.md#cmfcribbonbutton__getintermediatesize).)|  
-|[CMFCRibbonCheckBox::GetRegularSize](#cmfcribboncheckbox__getregularsize)|(Overrides [CMFCRibbonButton::GetRegularSize](../../mfc/reference/cmfcribbonbutton-class.md#cmfcribbonbutton__getregularsize).)|  
-|[CMFCRibbonCheckBox::IsDrawTooltipImage](#cmfcribboncheckbox__isdrawtooltipimage)|(Overrides `CMFCRibbonButton::IsDrawTooltipImage`.)|  
-|[CMFCRibbonCheckBox::OnDraw](#cmfcribboncheckbox__ondraw)|(Overrides [CMFCRibbonButton::OnDraw](../../mfc/reference/cmfcribbonbutton-class.md#cmfcribbonbutton__ondraw).)|  
-|[CMFCRibbonCheckBox::OnDrawMenuImage](#cmfcribboncheckbox__ondrawmenuimage)|(Overrides [CMFCRibbonBaseElement::OnDrawMenuImage](../../mfc/reference/cmfcribbonbaseelement-class.md#cmfcribbonbaseelement__ondrawmenuimage).)|  
-|[CMFCRibbonCheckBox::OnDrawOnList](#cmfcribboncheckbox__ondrawonlist)|(Overrides `CMFCRibbonButton::OnDrawOnList`.)|  
-|[CMFCRibbonCheckBox::SetACCData](#cmfcribboncheckbox__setaccdata)|(Overrides [CMFCRibbonButton::SetACCData](../../mfc/reference/cmfcribbonbutton-class.md#cmfcribbonbutton__setaccdata).)|  
+|[CMFCRibbonCheckBox::GetCompactSize](#getcompactsize)|(Overrides [CMFCRibbonButton::GetCompactSize](../../mfc/reference/cmfcribbonbutton-class.md#getcompactsize).)|  
+|[CMFCRibbonCheckBox::GetIntermediateSize](#getintermediatesize)|(Overrides [CMFCRibbonButton::GetIntermediateSize](../../mfc/reference/cmfcribbonbutton-class.md#getintermediatesize).)|  
+|[CMFCRibbonCheckBox::GetRegularSize](#getregularsize)|(Overrides [CMFCRibbonButton::GetRegularSize](../../mfc/reference/cmfcribbonbutton-class.md#getregularsize).)|  
+|[CMFCRibbonCheckBox::IsDrawTooltipImage](#isdrawtooltipimage)|(Overrides `CMFCRibbonButton::IsDrawTooltipImage`.)|  
+|[CMFCRibbonCheckBox::OnDraw](#ondraw)|(Overrides [CMFCRibbonButton::OnDraw](../../mfc/reference/cmfcribbonbutton-class.md#ondraw).)|  
+|[CMFCRibbonCheckBox::OnDrawMenuImage](#ondrawmenuimage)|(Overrides [CMFCRibbonBaseElement::OnDrawMenuImage](../../mfc/reference/cmfcribbonbaseelement-class.md#ondrawmenuimage).)|  
+|[CMFCRibbonCheckBox::OnDrawOnList](#ondrawonlist)|(Overrides `CMFCRibbonButton::OnDrawOnList`.)|  
+|[CMFCRibbonCheckBox::SetACCData](#setaccdata)|(Overrides [CMFCRibbonButton::SetACCData](../../mfc/reference/cmfcribbonbutton-class.md#setaccdata).)|  
   
 ## Remarks  
  To use a `CMFCRibbonCheckBox` in your application, add the following constructor to your code:  
@@ -73,7 +73,7 @@ CMFCRibbonCheckBox (UINT nID, LPCTSTR lpszText)
   
  where `nID` is the check box command ID and `lpszText` is the text label of the check box.  
   
- You can add a check box to a ribbon panel by using [CMFCRibbonPanel::Add](../../mfc/reference/cmfcribbonpanel-class.md#cmfcribbonpanel__add).  
+ You can add a check box to a ribbon panel by using [CMFCRibbonPanel::Add](../../mfc/reference/cmfcribbonpanel-class.md#add).  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -87,7 +87,7 @@ CMFCRibbonCheckBox (UINT nID, LPCTSTR lpszText)
 ## Requirements  
  **Header:** afxribboncheckbox.h  
   
-##  <a name="cmfcribboncheckbox__cmfcribboncheckbox"></a>  CMFCRibbonCheckBox::CMFCRibbonCheckBox  
+##  <a name="cmfcribboncheckbox"></a>  CMFCRibbonCheckBox::CMFCRibbonCheckBox  
  Constructor of a ribbon check box object  
   
 ```  
@@ -109,9 +109,9 @@ CMFCRibbonCheckBox(
 ### Example  
  The following example demonstrates how to construct an object of the `CMFCRibbonCheckBox` class.  
   
- [!code-cpp[NVC_MFC_RibbonApp#17](../../mfc/reference/codesnippet/CPP/cmfcribboncheckbox-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#17](../../mfc/reference/codesnippet/cpp/cmfcribboncheckbox-class_1.cpp)]  
   
-##  <a name="cmfcribboncheckbox__getcompactsize"></a>  CMFCRibbonCheckBox::GetCompactSize  
+##  <a name="getcompactsize"></a>  CMFCRibbonCheckBox::GetCompactSize  
  When overridden, gets the compact size of the checkbox.  
   
 ```  
@@ -128,7 +128,7 @@ virtual CSize GetCompactSize(CDC* pDC);
 ### Remarks  
  If not overridden, returns the intermediate size of the checkbox.  
   
-##  <a name="cmfcribboncheckbox__getintermediatesize"></a>  CMFCRibbonCheckBox::GetIntermediateSize  
+##  <a name="getintermediatesize"></a>  CMFCRibbonCheckBox::GetIntermediateSize  
  Gets the intermediate size of the checkbox.  
   
 ```  
@@ -145,7 +145,7 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ### Remarks  
  If not overridden, calculates the intermediate size as the default checkbox size ( `AFX_CHECK_BOX_DEFAULT_SIZE`) plus the text size, plus margins.  
   
-##  <a name="cmfcribboncheckbox__getregularsize"></a>  CMFCRibbonCheckBox::GetRegularSize  
+##  <a name="getregularsize"></a>  CMFCRibbonCheckBox::GetRegularSize  
  Gets the regular size of the checkbox.  
   
 ```  
@@ -162,7 +162,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 ### Remarks  
  If not overridden, returns the intermediate size of the checkbox.  
   
-##  <a name="cmfcribboncheckbox__isdrawtooltipimage"></a>  CMFCRibbonCheckBox::IsDrawTooltipImage  
+##  <a name="isdrawtooltipimage"></a>  CMFCRibbonCheckBox::IsDrawTooltipImage  
  Indicates whether there is a tooltip image associated with the checkbox.  
   
 ```  
@@ -176,7 +176,7 @@ virtual BOOL IsDrawTooltipImage() const;
   
 ### Remarks  
   
-##  <a name="cmfcribboncheckbox__ondraw"></a>  CMFCRibbonCheckBox::OnDraw  
+##  <a name="ondraw"></a>  CMFCRibbonCheckBox::OnDraw  
  Called by the framework to draw the checkbox using a specified device context.  
   
 ```  
@@ -189,7 +189,7 @@ virtual void OnDraw(CDC* pDC);
   
 ### Remarks  
   
-##  <a name="cmfcribboncheckbox__ondrawmenuimage"></a>  CMFCRibbonCheckBox::OnDrawMenuImage  
+##  <a name="ondrawmenuimage"></a>  CMFCRibbonCheckBox::OnDrawMenuImage  
  Called by the framework to draw a menu image for the checkbox.  
   
 ```  
@@ -210,7 +210,7 @@ virtual BOOL OnDrawMenuImage(
 ### Remarks  
  If not overridden, returns `FALSE`.  
   
-##  <a name="cmfcribboncheckbox__ondrawonlist"></a>  CMFCRibbonCheckBox::OnDrawOnList  
+##  <a name="ondrawonlist"></a>  CMFCRibbonCheckBox::OnDrawOnList  
  Called by the framework to draw the checkbox in a commands list box.  
   
 ```  
@@ -244,7 +244,7 @@ virtual void OnDrawOnList(
   
 ### Remarks  
   
-##  <a name="cmfcribboncheckbox__setaccdata"></a>  CMFCRibbonCheckBox::SetACCData  
+##  <a name="setaccdata"></a>  CMFCRibbonCheckBox::SetACCData  
  Sets the accessibility data for the checkbox.  
   
 ```  

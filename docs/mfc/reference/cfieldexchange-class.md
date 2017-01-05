@@ -55,8 +55,8 @@ class CFieldExchange
   
 |Name|Description|  
 |----------|-----------------|  
-|[CFieldExchange::IsFieldType](#cfieldexchange__isfieldtype)|Returns nonzero if the current operation is appropriate for the type of field being updated.|  
-|[CFieldExchange::SetFieldType](#cfieldexchange__setfieldtype)|Specifies the type of recordset data member — column or parameter — represented by all following calls to RFX functions until the next call to `SetFieldType`.|  
+|[CFieldExchange::IsFieldType](#isfieldtype)|Returns nonzero if the current operation is appropriate for the type of field being updated.|  
+|[CFieldExchange::SetFieldType](#setfieldtype)|Specifies the type of recordset data member — column or parameter — represented by all following calls to RFX functions until the next call to `SetFieldType`.|  
   
 ## Remarks  
  `CFieldExchange` does not have a base class.  
@@ -84,7 +84,7 @@ class CFieldExchange
 ## Requirements  
  **Header:** afxdb.h  
   
-##  <a name="cfieldexchange__isfieldtype"></a>  CFieldExchange::IsFieldType  
+##  <a name="isfieldtype"></a>  CFieldExchange::IsFieldType  
  If you write your own RFX function, call `IsFieldType` at the beginning of your function to determine whether the current operation can be performed on a particular field or parameter data member type (a **CFieldExchange::outputColumn**, **CFieldExchange::inputParam**, **CFieldExchange::param**, **CFieldExchange::outputParam**, or **CFieldExchange::inoutParam**).  
   
 ```  
@@ -93,7 +93,7 @@ BOOL IsFieldType(UINT* pnField);
   
 ### Parameters  
  *pnField*  
- The sequential number of the field or parameter data member is returned in this parameter. This number corresponds to the data member's order in the [CRecordset::DoFieldExchange](../../mfc/reference/crecordset-class.md#crecordset__dofieldexchange) or [CRecordset::DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#crecordset__dobulkfieldexchange) function.  
+ The sequential number of the field or parameter data member is returned in this parameter. This number corresponds to the data member's order in the [CRecordset::DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) or [CRecordset::DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#dobulkfieldexchange) function.  
   
 ### Return Value  
  Nonzero if the current operation can be performed on the current field or parameter type.  
@@ -101,8 +101,8 @@ BOOL IsFieldType(UINT* pnField);
 ### Remarks  
  Follow the model of the existing RFX functions.  
   
-##  <a name="cfieldexchange__setfieldtype"></a>  CFieldExchange::SetFieldType  
- You need a call to `SetFieldType` in your recordset class's [DoFieldExchange](../../mfc/reference/crecordset-class.md#crecordset__dofieldexchange) or [DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#crecordset__dobulkfieldexchange) override.  
+##  <a name="setfieldtype"></a>  CFieldExchange::SetFieldType  
+ You need a call to `SetFieldType` in your recordset class's [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) or [DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#dobulkfieldexchange) override.  
   
 ```  
 void SetFieldType(UINT nFieldType);
@@ -136,12 +136,12 @@ void SetFieldType(UINT nFieldType);
   
  In general, each group of RFX function calls associated with field data members or parameter data members must be preceded by a call to `SetFieldType`. The `nFieldType` parameter of each `SetFieldType` call identifies the type of the data members represented by the RFX function calls that follow the `SetFieldType` call.  
   
- For more information about handling output and input/output parameters, see the `CRecordset` member function [FlushResultSet](../../mfc/reference/crecordset-class.md#crecordset__flushresultset). For more information about the RFX and Bulk RFX functions, see the topic [Record Field Exchange Functions](../../mfc/reference/record-field-exchange-functions.md). For related information about bulk row fetching, see the article [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
+ For more information about handling output and input/output parameters, see the `CRecordset` member function [FlushResultSet](../../mfc/reference/crecordset-class.md#flushresultset). For more information about the RFX and Bulk RFX functions, see the topic [Record Field Exchange Functions](../../mfc/reference/record-field-exchange-functions.md). For related information about bulk row fetching, see the article [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
   
 ### Example  
  This example shows several calls to RFX functions with accompanying calls to `SetFieldType`. Note that `SetFieldType` is called through the `pFX` pointer to a `CFieldExchange` object.  
   
- [!code-cpp[NVC_MFCDatabase#33](../../mfc/codesnippet/CPP/cfieldexchange-class_1.cpp)]  
+ [!code-cpp[NVC_MFCDatabase#33](../../mfc/codesnippet/cpp/cfieldexchange-class_1.cpp)]  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

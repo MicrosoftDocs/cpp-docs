@@ -15,11 +15,11 @@ manager: "ghogen"
 # Concurrency namespace operators (AMP)
 ||||  
 |-|-|-|  
-|[operator!= Operator (C++ AMP)](#operator_neq_operator__c_add_add_amp_)|[operator% Operator (C++ AMP)](#operator_mod_operator__c_add_add_amp_)|[operator* Operator (C++ AMP)](#operator_star_operator__c_add_add_amp_)|  
-|[operator+ Operator (C++ AMP)](#operator_add_operator__c_add_add_amp_)|[operator- Operator (C++ AMP)](#operator-_operator__c_add_add_amp_)|[operator/ Operator (C++ AMP)](#operator__operator__c_add_add_amp_)|  
-|[operator== Operator (C++ AMP)](#operator_eq_eq_operator__c_add_add_amp_)|  
+|[operator!=](#operator_neq)|[operator%](#operator_mod)|[operator*](#operator_star)|  
+|[operator+](#operator_add)|[operator-](#operator-)|[operator/](#operator_div)|  
+|[operator==](#operator_eq_eq)|  
   
-##  <a name="operator_eq_eq_operator__c_add_add_amp_"></a>  operator== Operator (C++ AMP)  
+##  <a name="operator_eq_eq"></a>  operator==   
  Determines whether the specified arguments are equal.  
   
 ```  
@@ -45,7 +45,7 @@ bool operator== (
 ### Return Value  
  `true` if the tuples are equal; otherwise, `false`.  
   
-##  <a name="operator_neq_operator__c_add_add_amp_"></a>  operator!= Operator (C++ AMP)  
+##  <a name="operator_neq"></a>  operator!=   
  Determines whether the specified arguments are not equal.  
   
 ```  
@@ -71,7 +71,8 @@ bool operator!= (
 ### Return Value  
  `true` if the tuples are not equal; otherwise, `false`.  
   
-##  <a name="operator_add_operator__c_add_add_amp_"></a>  operator+ Operator (C++ AMP)  
+##  <a name="operator_add"></a>  operator+   
+
  Computes the component-wise sum of the specified arguments.  
   
 ```  
@@ -115,7 +116,8 @@ class _Tuple_type> _Tuple_type<_Rank>   operator+(
 ### Return Value  
  The component-wise sum of the specified arguments.  
   
-##  <a name="operator-_operator__c_add_add_amp_"></a>  operator- Operator (C++ AMP)  
+##  <a name="operator-"></a>  operator-   
+
  Computes the component-wise difference between the specified arguments.  
   
 ```  
@@ -159,7 +161,8 @@ _Tuple_type<_Rank>   operator-(
 ### Return Value  
  The component-wise difference between the specified arguments.  
   
-##  <a name="operator_star_operator__c_add_add_amp_"></a>  operator* Operator (C++ AMP)  
+##  <a name="operator_star"></a>  operator*   
+
  Computes the component-wise product of the specified arguments.  
   
 ```  
@@ -194,7 +197,8 @@ _Tuple_type<_Rank>   operator*(
 ### Return Value  
  The component-wise product of the specified arguments.  
   
-##  <a name="operator__operator__c_add_add_amp_"></a>  operator/ Operator (C++ AMP)  
+
+##  <a name="operator_div"></a>  operator/   
  Computes the component-wise quotient of the specified arguments.  
   
 ```  
@@ -229,7 +233,8 @@ _Tuple_type<_Rank>   operator/(
 ### Return Value  
  The component-wise quotient of the specified arguments.  
   
-##  <a name="operator_mod_operator__c_add_add_amp_"></a>  operator% Operator (C++ AMP)  
+##  <a name="operator_mod"></a>  operator%   
+
  Computes the modulus of the first specified argument by the second specified argument.  
   
 ```  
@@ -265,4 +270,4 @@ _Tuple_type<_Rank>   operator%(
  The result of the first specified argument modulus the second specified argument.  
   
 ## See Also  
- [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)
+ [Concurrency Namespace ](concurrency-namespace-cpp-amp.md)

@@ -51,28 +51,28 @@ class CComSafeArrayBound : public SAFEARRAYBOUND
   
 |||  
 |-|-|  
-|[CComSafeArrayBound](#ccomsafearraybound__ccomsafearraybound)|The constructor.|  
-|[GetCount](#ccomsafearraybound__getcount)|Call this method to return the number of elements.|  
-|[GetLowerBound](#ccomsafearraybound__getlowerbound)|Call this method to return the lower bound.|  
-|[GetUpperBound](#ccomsafearraybound__getupperbound)|Call this method to return the upper bound.|  
-|[SetCount](#ccomsafearraybound__setcount)|Call this method to set the number of elements.|  
-|[SetLowerBound](#ccomsafearraybound__setlowerbound)|Call this method to set the lower bound.|  
+|[CComSafeArrayBound](#ccomsafearraybound)|The constructor.|  
+|[GetCount](#getcount)|Call this method to return the number of elements.|  
+|[GetLowerBound](#getlowerbound)|Call this method to return the lower bound.|  
+|[GetUpperBound](#getupperbound)|Call this method to return the upper bound.|  
+|[SetCount](#setcount)|Call this method to set the number of elements.|  
+|[SetLowerBound](#setlowerbound)|Call this method to set the lower bound.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[operator =](#ccomsafearraybound__operator__eq)|Sets the `CComSafeArrayBound` to a new value.|  
+|[operator =](#operator_eq)|Sets the `CComSafeArrayBound` to a new value.|  
   
 ## Remarks  
- This class is a wrapper for the **SAFEARRAYBOUND** structure used by [CComSafeArray](../../atl/reference/ccomsafearray-class.md). It provides methods for querying and setting the upper and lower bounds of a single dimension of a `CComSafeArray` object and the number of elements it contains. A multidimensional `CComSafeArray` object uses an array of `CComSafeArrayBound` objects, one for each dimension. Therefore, when using methods such as [GetCount](#ccomsafearraybound__getcount), be aware that this method will not return the total number of elements in a multidimensional array.  
+ This class is a wrapper for the **SAFEARRAYBOUND** structure used by [CComSafeArray](../../atl/reference/ccomsafearray-class.md). It provides methods for querying and setting the upper and lower bounds of a single dimension of a `CComSafeArray` object and the number of elements it contains. A multidimensional `CComSafeArray` object uses an array of `CComSafeArrayBound` objects, one for each dimension. Therefore, when using methods such as [GetCount](#getcount), be aware that this method will not return the total number of elements in a multidimensional array.  
   
  **Header:** atlsafe.h  
   
 ## Requirements  
  **Header:** atlsafe.h  
   
-##  <a name="ccomsafearraybound__ccomsafearraybound"></a>  CComSafeArrayBound::CComSafeArrayBound  
+##  <a name="ccomsafearraybound"></a>  CComSafeArrayBound::CComSafeArrayBound  
  The constructor.  
   
 ```
@@ -89,7 +89,7 @@ CComSafeArrayBound(ULONG ulCount = 0,  LONG lLowerBound = 0) throw();
 ### Remarks  
  If the array is to be accessed from a Visual C++ program, it is recommended that the lower bound be defined as 0. It may be preferable to use a different lower bound value if the array is to be used with other languages, such as Visual Basic.  
   
-##  <a name="ccomsafearraybound__getcount"></a>  CComSafeArrayBound::GetCount  
+##  <a name="getcount"></a>  CComSafeArrayBound::GetCount  
  Call this method to return the number of elements.  
   
 ```
@@ -100,9 +100,9 @@ ULONG GetCount() const throw();
  Returns the number of elements.  
   
 ### Remarks  
- If the associated `CComSafeArray` object represents a multidimensional array, this method will only return the total number of elements in the rightmost dimension. Use [CComSafeArray::GetCount](../../atl/reference/ccomsafearray-class.md#ccomsafearray__getcount) to obtain the total number of elements.  
+ If the associated `CComSafeArray` object represents a multidimensional array, this method will only return the total number of elements in the rightmost dimension. Use [CComSafeArray::GetCount](../../atl/reference/ccomsafearray-class.md#getcount) to obtain the total number of elements.  
   
-##  <a name="ccomsafearraybound__getlowerbound"></a>  CComSafeArrayBound::GetLowerBound  
+##  <a name="getlowerbound"></a>  CComSafeArrayBound::GetLowerBound  
  Call this method to return the lower bound.  
   
 ```
@@ -112,7 +112,7 @@ LONG GetLowerBound() const throw();
 ### Return Value  
  Returns the lower bound of the `CComSafeArrayBound` object.  
   
-##  <a name="ccomsafearraybound__getupperbound"></a>  CComSafeArrayBound::GetUpperBound  
+##  <a name="getupperbound"></a>  CComSafeArrayBound::GetUpperBound  
  Call this method to return the upper bound.  
   
 ```
@@ -125,7 +125,7 @@ LONG GetUpperBound() const throw();
 ### Remarks  
  The upper bound depends on the number of elements and the lower bound value. For example, if the lower bound is 0 and the number of elements is 10, the upper bound will automatically be set to 9.  
   
-##  <a name="ccomsafearraybound__operator__eq"></a>  CComSafeArrayBound::operator =  
+##  <a name="operator_eq"></a>  CComSafeArrayBound::operator =  
  Sets the `CComSafeArrayBound` to a new value.  
   
 ```
@@ -146,7 +146,7 @@ CComSafeArrayBound& operator= (ULONG ulCount) throw();
 ### Remarks  
  The `CComSafeArrayBound` object can be assigned using an existing `CComSafeArrayBound`, or by supplying the number of elements, in which case the lower bound is set to 0 by default.  
   
-##  <a name="ccomsafearraybound__setcount"></a>  CComSafeArrayBound::SetCount  
+##  <a name="setcount"></a>  CComSafeArrayBound::SetCount  
  Call this method to set the number of elements.  
   
 ```
@@ -160,7 +160,7 @@ ULONG SetCount(ULONG ulCount) throw();
 ### Return Value  
  Returns the number of elements in the `CComSafeArrayBound` object.  
   
-##  <a name="ccomsafearraybound__setlowerbound"></a>  CComSafeArrayBound::SetLowerBound  
+##  <a name="setlowerbound"></a>  CComSafeArrayBound::SetLowerBound  
  Call this method to set the lower bound.  
   
 ```

@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # task_canceled Class
-This class describes an exception thrown by the PPL tasks layer in order to force the current task to cancel. It is also thrown by the `get()` method on [task](/visual-studio/extensibility/debugger/task-class-internal-members), for a canceled task.  
+This class describes an exception thrown by the PPL tasks layer in order to force the current task to cancel. It is also thrown by the `get()` method on [task](/visualstudio/extensibility/debugger/task-class-internal-members), for a canceled task.  
   
 ## Syntax  
   
@@ -49,7 +49,7 @@ class task_canceled : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[task_canceled::task_canceled Constructor](#task_canceled__task_canceled_constructor)|Overloaded. Constructs a `task_canceled` object.|  
+|[task_canceled::task_canceled Constructor](#ctor)|Overloaded. Constructs a `task_canceled` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  
@@ -61,7 +61,7 @@ class task_canceled : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="task_canceled__task_canceled_constructor"></a>  task_canceled::task_canceled Constructor  
+##  <a name="ctor"></a>  task_canceled::task_canceled Constructor  
  Constructs a `task_canceled` object.  
   
 ```
@@ -75,4 +75,4 @@ task_canceled() throw();
  A descriptive message of the error.  
   
 ## See Also  
- [concurrency Namespace](../../../parallel/concrt/reference/concurrency-namespace.md)
+ [concurrency Namespace](concurrency-namespace.md)

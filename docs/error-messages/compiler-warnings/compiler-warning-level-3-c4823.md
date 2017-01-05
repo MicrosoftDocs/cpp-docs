@@ -37,12 +37,12 @@ translation.priority.ht:
 # Compiler Warning (level 3) C4823
 'function' : uses pinning pointers but unwind semantics are not enabled. Consider using /EHa  
   
- To unpin an object on the managed heap pointed to by a pinning pointer declared in a block scope, the compiler simulates the behavior of destructors of local classes, "pretending" the pinning pointer has a destructor that nullifies the pointer. To enable a call to a destructor after throwing an exception, you must enable object unwinding, which you can do by using [/EHsc](../../build/reference/eh-exception-handling-model.md).  
+To unpin an object on the managed heap pointed to by a pinning pointer declared in a block scope, the compiler simulates the behavior of destructors of local classes, "pretending" the pinning pointer has a destructor that nullifies the pointer. To enable a call to a destructor after throwing an exception, you must enable object unwinding, which you can do by using [/EHsc](../../build/reference/eh-exception-handling-model.md).  
   
- You can also manually unpin the object and ignore the warning.  
+You can also manually unpin the object and ignore the warning.  
   
 ## Example  
- The following sample generates C4823.  
+The following sample generates C4823.  
   
 ```  
 // C4823.cpp  
@@ -67,30 +67,3 @@ int main() {
    f( gcnew G );  
 }  
 ```  
-  
-## Example  
- C4823 can also be generated using **/clr:oldSyntax**. The following sample generates C4823.  
-  
-```  
-// C4823_b.cpp  
-// compile with: /clr:oldSyntax /W3 /EHa-  
-using namespace System;  
-  
-__gc struct G {  
-   int m;  
-};  
-  
-void f(G* pG) {  
-   try {  
-      int __pin* p = &pG->m;  
-      // manually unpin, ignore warning  
-      // p = 0;  
-      throw new Exception;  
-   }  
-   catch(Exception*) {}  
-}   // C4823  
-  
-int main() {  
-   f( new G );  
-}  
-```

@@ -67,7 +67,7 @@ Five main steps are required to make a class serializable. They are listed below
   
  Consider a class that is derived from `CObject` and has two new member variables, of types `CString` and **WORD**. The following class declaration fragment shows the new member variables and the declaration for the overridden `Serialize` member function:  
   
- [!code-cpp[NVC_MFCSerialization#1](../mfc/codesnippet/CPP/serialization-making-a-serializable-class_1.h)]  
+ [!code-cpp[NVC_MFCSerialization#1](../mfc/codesnippet/cpp/serialization-making-a-serializable-class_1.h)]  
   
 #### To override the Serialize member function  
   
@@ -77,14 +77,14 @@ Five main steps are required to make a class serializable. They are listed below
   
      The insertion and extraction operators interact with the archive class to read and write the data. The following example shows how to implement `Serialize` for the `CPerson` class declared above:  
   
-     [!code-cpp[NVC_MFCSerialization#2](../mfc/codesnippet/CPP/serialization-making-a-serializable-class_2.cpp)]  
+     [!code-cpp[NVC_MFCSerialization#2](../mfc/codesnippet/cpp/serialization-making-a-serializable-class_2.cpp)]  
   
- You can also use the [CArchive::Read](../mfc/reference/carchive-class.md#carchive__read) and [CArchive::Write](../mfc/reference/carchive-class.md#carchive__write) member functions to read and write large amounts of untyped data.  
+ You can also use the [CArchive::Read](../mfc/reference/carchive-class.md#read) and [CArchive::Write](../mfc/reference/carchive-class.md#write) member functions to read and write large amounts of untyped data.  
   
 ##  <a name="_core_using_the_declare_serial_macro"></a> Using the DECLARE_SERIAL Macro  
  The `DECLARE_SERIAL` macro is required in the declaration of classes that will support serialization, as shown here:  
   
- [!code-cpp[NVC_MFCSerialization#3](../mfc/codesnippet/CPP/serialization-making-a-serializable-class_3.h)]  
+ [!code-cpp[NVC_MFCSerialization#3](../mfc/codesnippet/cpp/serialization-making-a-serializable-class_3.h)]  
   
 ##  <a name="_core_defining_a_constructor_with_no_arguments"></a> Defining a Constructor with No Arguments  
  MFC requires a default constructor when it re-creates your objects as they are deserialized (loaded from disk). The deserialization process will fill in all member variables with the values required to re-create the object.  
@@ -105,7 +105,7 @@ Five main steps are required to make a class serializable. They are listed below
   
  The following example shows how to use `IMPLEMENT_SERIAL` for a class, `CPerson`, that is derived from `CObject`:  
   
- [!code-cpp[NVC_MFCSerialization#4](../mfc/codesnippet/CPP/serialization-making-a-serializable-class_4.cpp)]  
+ [!code-cpp[NVC_MFCSerialization#4](../mfc/codesnippet/cpp/serialization-making-a-serializable-class_4.cpp)]  
   
  Once you have a serializable class, you can serialize objects of the class, as discussed in the article [Serialization: Serializing an Object](../mfc/serialization-serializing-an-object.md).  
   

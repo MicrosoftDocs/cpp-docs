@@ -48,7 +48,7 @@ This note describes how to use multiple inheritance (MI) with the Microsoft Foun
   
  The current implementation of `CRuntimeClass` does not support MI runtime type information. This does not mean you cannot use MI in your MFC application. However, you will have certain responsibilities when you work with objects that have more than one base class.  
   
- The [CObject::IsKindOf](../mfc/reference/cobject-class.md#cobject__iskindof) method will not correctly determine the type of an object if it has multiple base classes. Therefore, you cannot use [CObject](../mfc/reference/cobject-class.md) as a virtual base class, and all calls to `CObject` member functions such as [CObject::Serialize](../mfc/reference/cobject-class.md#cobject__serialize) and [CObject::operator new](../mfc/reference/cobject-class.md#operator%20new) must have scope qualifiers so that C++ can disambiguate the appropriate function call. When a program uses MI within MFC, the class that contains the `CObject` base class needs to be the left-most class in the list of base classes.  
+ The [CObject::IsKindOf](../mfc/reference/cobject-class.md#iskindof) method will not correctly determine the type of an object if it has multiple base classes. Therefore, you cannot use [CObject](../mfc/reference/cobject-class.md) as a virtual base class, and all calls to `CObject` member functions such as [CObject::Serialize](../mfc/reference/cobject-class.md#serialize) and [CObject::operator new](../mfc/reference/cobject-class.md#operator_new) must have scope qualifiers so that C++ can disambiguate the appropriate function call. When a program uses MI within MFC, the class that contains the `CObject` base class needs to be the left-most class in the list of base classes.  
   
  An alternative is to use the `dynamic_cast` operator. Casting an object with MI to one of its base classes will force the compiler to use the functions in the supplied base class. For more information, see [dynamic_cast Operator](../cpp/dynamic-cast-operator.md).  
   
@@ -63,7 +63,7 @@ class CListWnd : public CFrameWnd, public CObList
 CListWnd myListWnd;  
 ```  
   
- In this case `CObject` is included two times. This means that you need a way to disambiguate any reference to `CObject` methods or operators. The `operator new` and [operator delete](../mfc/reference/cobject-class.md#operator%20delete) are two operators that must be disambiguated. As another example, the following code causes an error at compile time:  
+ In this case `CObject` is included two times. This means that you need a way to disambiguate any reference to `CObject` methods or operators. The `operator new` and [operator delete](../mfc/reference/cobject-class.md#operator_delete) are two operators that must be disambiguated. As another example, the following code causes an error at compile time:  
   
 ```  
 myListWnd.Dump(afxDump);

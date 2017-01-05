@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Defining a Message Handler for a Reflected Message
-Once you have created a new MFC control class, you can define message handlers for it. Reflected message handlers allow your control class to handle its own messages before the message is received by the parent. You can use the MFC [CWnd::SendMessage](../../mfc/reference/cwnd-class.md#cwnd__sendmessage) function to send messages from your control to a parent window.  
+Once you have created a new MFC control class, you can define message handlers for it. Reflected message handlers allow your control class to handle its own messages before the message is received by the parent. You can use the MFC [CWnd::SendMessage](../../mfc/reference/cwnd-class.md#sendmessage) function to send messages from your control to a parent window.  
   
  With this functionality you could, for example, create a list box that will redraw itself rather than relying on the parent window to do so (owner drawn). For more information on reflected messages, see [Handling Reflected Messages](../../mfc/handling-reflected-messages.md).  
   
@@ -51,7 +51,7 @@ Once you have created a new MFC control class, you can define message handlers f
   
 2.  In Class View, click the name of your control class.  
   
-3.  In the [Properties window](/visual-studio/ide/reference/properties-window), the control class name appears in the **Class Name** list.  
+3.  In the [Properties window](/visualstudio/ide/reference/properties-window), the control class name appears in the **Class Name** list.  
   
 4.  Click the **Messages** button to display the Windows messages available to add to the control.  
   

@@ -64,7 +64,45 @@ type
 -   **DBPARAMIO_INPUT &#124; DBPARAMIO_OUTPUT** The parameter is both an input and an output parameter.  
   
 ## Example  
- <!--FIXME[!CODE [NVC_OLEDB_Consumer#18](../CodeSnippet/VS_Snippets_Cpp/NVC_OLEDB_Consumer#18)]-->  
+```cpp
+class CArtistsProperty
+{
+public:
+   short m_nReturn;
+   short m_nAge;
+   TCHAR m_szFirstName[21];
+   TCHAR m_szLastName[31];
+
+BEGIN_PARAM_MAP(CArtistsProperty)
+   SET_PARAM_TYPE(DBPARAMIO_OUTPUT)
+   COLUMN_ENTRY(1, m_nReturn)
+   SET_PARAM_TYPE(DBPARAMIO_INPUT)
+   COLUMN_ENTRY(2, m_nAge)
+END_PARAM_MAP()
+
+BEGIN_COLUMN_MAP(CArtistsProperty)
+   COLUMN_ENTRY(1, m_szFirstName)
+   COLUMN_ENTRY(2, m_szLastName)
+END_COLUMN_MAP()
+
+   HRESULT OpenDataSource()
+   {
+      CDataSource _db;
+      _db.Open();
+      return m_session.Open(_db);
+   }
+
+   void CloseDataSource()
+   {
+      m_session.Close();
+   }
+
+   CSession m_session;
+
+   DEFINE_COMMAND_EX(CArtistsProperty, L" \
+      { ? = SELECT Age FROM Artists WHERE Age < ? }")
+};
+``` 
   
 ## Requirements  
  **Header:** atldbcli.h  

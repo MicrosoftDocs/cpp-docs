@@ -53,7 +53,7 @@ DECLARE_OLEMISC_STATUS(Â
  This macro is used to set the OLEMISC flags for an ActiveX control. Refer to [IOleObject::GetMiscStatus](http://msdn.microsoft.com/library/windows/desktop/ms678521) for more details.  
   
 ### Example  
- [!code-cpp[NVC_ATL_Windowing#124](../../atl/codesnippet/CPP/object-status-macros_1.h)]  
+ [!code-cpp[NVC_ATL_Windowing#124](../../atl/codesnippet/cpp/object-status-macros_1.h)]  
   
 ## See Also  
  [Macros](../../atl/reference/atl-macros.md)

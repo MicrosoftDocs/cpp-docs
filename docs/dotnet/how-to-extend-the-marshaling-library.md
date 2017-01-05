@@ -49,7 +49,7 @@ This topic explains how to extend the marshaling library to provide more convers
   
     -   marshal_windows.h for windows data types.  
   
-    -   marshal_cppstd.h for STL data types.  
+    -   marshal_cppstd.h for C++ Standard Library data types.  
   
     -   marshal_atl.h for ATL data types.  
   
@@ -78,7 +78,7 @@ namespace msclr {
   
     -   marshal_windows.h for windows data types.  
   
-    -   marshal_cppstd.h for STL data types.  
+    -   marshal_cppstd.h for C++ Standard Library data types.  
   
     -   marshal_atl.h for ATL data types.  
   

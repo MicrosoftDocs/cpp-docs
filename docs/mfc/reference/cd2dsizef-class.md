@@ -50,19 +50,19 @@ class CD2DSizeF : public D2D1_SIZE_F;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CD2DSizeF::CD2DSizeF](#cd2dsizef__cd2dsizef)|Overloaded. Constructs a `CD2DSizeF` object from `D2D1_SIZE_F` object.|  
+|[CD2DSizeF::CD2DSizeF](#cd2dsizef)|Overloaded. Constructs a `CD2DSizeF` object from `D2D1_SIZE_F` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CD2DSizeF::IsNull](#cd2dsizef__isnull)|Returns a `boolean` value that indicates whether an expression contains no valid data ( `null`).|  
+|[CD2DSizeF::IsNull](#isnull)|Returns a `boolean` value that indicates whether an expression contains no valid data ( `null`).|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CD2DSizeF::operator CSize](#cd2dsizef__operator_csize)|Converts `CD2DSizeF` to `CSize` object.|  
+|[CD2DSizeF::operator CSize](#operator_csize)|Converts `CD2DSizeF` to `CSize` object.|  
   
 ## Inheritance Hierarchy  
  `D2D1_SIZE_F`  
@@ -72,7 +72,7 @@ class CD2DSizeF : public D2D1_SIZE_F;
 ## Requirements  
  **Header:** afxrendertarget.h  
   
-##  <a name="cd2dsizef__cd2dsizef"></a>  CD2DSizeF::CD2DSizeF  
+##  <a name="cd2dsizef"></a>  CD2DSizeF::CD2DSizeF  
  Constructs a CD2DSizeF object from CSize object.  
   
 ```  
@@ -103,7 +103,7 @@ CD2DSizeF(
  `cy`  
  source height  
   
-##  <a name="cd2dsizef__isnull"></a>  CD2DSizeF::IsNull  
+##  <a name="isnull"></a>  CD2DSizeF::IsNull  
  Returns a Boolean value that indicates whether an expression contains no valid data (Null).  
   
 ```  
@@ -115,10 +115,11 @@ BOOL IsNull() const;
 ### Return Value  
  TRUE if width and height are empty; otherwise FALSE.  
   
-##  <a name="cd2dsizef__operator_csize"></a>  CD2DSizeF::operator CSize  
+##  <a name="operator_csize"></a>  CD2DSizeF::operator CSize  
  Converts CD2DSizeF to CSize object.  
   
-```  operator CSize();
+```  
+operator CSize();
 ```   
   
 ### Return Value  

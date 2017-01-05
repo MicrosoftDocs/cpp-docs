@@ -15,9 +15,9 @@ helpviewer_keywords:
   - "standard header in C++"
   - "headers"
   - "INCLUDE directive"
-  - "headers, Standard C++ Library"
+  - "headers, C++ Standard Library"
   - "library headers"
-  - "Standard C++ Library, headers"
+  - "C++ Standard Library, headers"
 ms.assetid: a36e889e-1af2-4cd9-a211-bfc7a3fd8e85
 caps.latest.revision: 10
 author: "corob-msft"
@@ -74,6 +74,6 @@ using namespace std;
  Unless specifically indicated otherwise, you may not define names in the `std` namespace, or in a namespace nested within the `std` namespace, within your program.  
   
 ## See Also  
- [STL Overview](../standard-library/cpp-standard-library-overview.md)   
+ [C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 

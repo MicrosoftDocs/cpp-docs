@@ -39,7 +39,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # HLSL Property Pages: General
-To configure the following properties of the HLSL compiler (fxc.exe), use its **General** property page. For information about how to access the **General** property page in the HLSL folder, see [How to: Specify Project Properties with Property Pages](../misc/how-to-specify-project-properties-with-property-pages.md).  
+To configure the following properties of the HLSL compiler (fxc.exe), use its **General** property page. For information about how to access the **General** property page in the HLSL folder, see [Working with Project Properties](../ide/working-with-project-properties.md).  
   
 ## UIElement List  
  **Additional Include Directories**  

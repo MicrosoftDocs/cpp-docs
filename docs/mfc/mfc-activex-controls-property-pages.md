@@ -49,7 +49,7 @@ Property pages allow an ActiveX control user to view and change ActiveX control 
   
  The properties dialog box (illustrated in the following figure) consists of an area for displaying the current property page, tabs for switching between property pages, and a collection of buttons that perform common tasks such as closing the property page dialog, canceling any changes made, or immediately applying any changes to the ActiveX control.  
   
- ![Properties dialog box for Circ3](../mfc/media/vc373i1.gif "vc373I1")  
+ ![Properties dialog box for Circ3](../mfc/media/vc373i1.gif "vc373i1")  
 Properties Dialog Box  
   
  This article covers topics related to using property pages in an ActiveX control. These include:  
@@ -104,11 +104,11 @@ Properties Dialog Box
  Now that the user interface has been modified, you need to link the edit box with the Caption property. This is done in the following section by editing the `CSamplePropPage::DoDataExchange` function.  
   
 ##  <a name="_core_customizing_the_dodataexchange_function"></a> Customizing the DoDataExchange Function  
- Your property page [CWnd::DoDataExchange](../mfc/reference/cwnd-class.md#cwnd__dodataexchange) function allows you to link property page values with the actual values of properties in the control. To establish links, you must map the appropriate property page fields to their respective control properties.  
+ Your property page [CWnd::DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange) function allows you to link property page values with the actual values of properties in the control. To establish links, you must map the appropriate property page fields to their respective control properties.  
   
  These mappings are implemented using the property page **DDP_** functions. The **DDP_** functions work like the **DDX_** functions used in standard MFC dialogs, with one exception. In addition to the reference to a member variable, **DDP_** functions take the name of the control property. The following is a typical entry in the `DoDataExchange` function for a property page.  
   
- [!code-cpp[NVC_MFC_AxUI#31](../mfc/codesnippet/CPP/mfc-activex-controls-property-pages_1.cpp)]  
+ [!code-cpp[NVC_MFC_AxUI#31](../mfc/codesnippet/cpp/mfc-activex-controls-property-pages_1.cpp)]  
   
  This function associates the property page's `m_caption` member variable with the Caption, using the `DDP_TEXT` function.  
   

@@ -48,15 +48,15 @@ The [ATL Tutorial](../atl/active-template-library-atl-tutorial.md) demonstrates 
   
 1.  Define a dispinterface in the library block of the .idl file. If you enabled support for connection points when you created the control with the ATL Control Wizard, the dispinterface will already be created. If you did not enable support for connection points when you created the control, you must manually add a dispinterface to the .idl file. The following is an example of a dispinterface. Outgoing interfaces are not required to be dispatch interfaces but many scripting languages such as VBScript and JScript require this, so this example uses two dispinterfaces:  
   
-     [!code-cpp[NVC_ATL_Windowing#81](../atl/codesnippet/CPP/adding-connection-points-to-an-object_1.idl)]  
+     [!code-cpp[NVC_ATL_Windowing#81](../atl/codesnippet/cpp/adding-connection-points-to-an-object_1.idl)]  
   
      Use either the uuidgen.exe or guidgen.exe utility to generate a GUID.  
   
 2.  Add the dispinterface as the `[default,source]` interface in the coclass for the object in the project's .idl file. Again, if you enabled support for connection points when you created the control, the ATL Control Wizard will create the `[default,source`] entry. To manually add this entry, add the line in bold:  
   
-     [!code-cpp[NVC_ATL_Windowing#82](../atl/codesnippet/CPP/adding-connection-points-to-an-object_2.idl)]  
+     [!code-cpp[NVC_ATL_Windowing#82](../atl/codesnippet/cpp/adding-connection-points-to-an-object_2.idl)]  
   
-     See the .idl file in the [Circ](../top/visual-cpp-samples.md) ATL sample for an example.  
+     See the .idl file in the [Circ](../visual-cpp-samples.md) ATL sample for an example.  
   
 3.  Use Class View to add methods and properties to the event interface. Right-click the class in Class View, point to **Add** on the shortcut menu, and click **Add Connection Point**.  
   

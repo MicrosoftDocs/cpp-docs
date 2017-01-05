@@ -127,7 +127,7 @@ Life is good.
   
  For a complete description of tags, attributes, and extensions, see the Hypertext Markup Language (HTML) specification:  
   
- [http://www.w3.org/pub/WWW/MarkUp/](http://www.w3.org/pub/WWW/MarkUp/)  
+ [http://www.w3.org/pub/WWW/MarkUp/](http://www.w3.org/pub/www/markup/)  
   
 ## See Also  
  [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)

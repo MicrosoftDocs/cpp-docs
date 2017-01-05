@@ -50,7 +50,7 @@ The **XML Data Generator Tool** property page becomes available when you add a d
  **Generated Proxy Language**  
  Determines whether or not to emit managed code.  
   
- For information on how to access the **XML Data Generator Tool** property page, see [How To: Specify Project Properties with Property Pages](../misc/how-to-specify-project-properties-with-property-pages.md).  
+ For information on how to access the **XML Data Generator Tool** property page, see [Working with Project Properties](../ide/working-with-project-properties.md).  
   
  For information on how to programmatically access members of this object, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCXMLDataGeneratorTool>  
   

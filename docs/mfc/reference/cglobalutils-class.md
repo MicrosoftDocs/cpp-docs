@@ -49,22 +49,22 @@ class CGlobalUtils
   
 |Name|Description|  
 |----------|-----------------|  
-|[CGlobalUtils::AdjustRectToWorkArea](#cglobalutils__adjustrecttoworkarea)||  
-|[CGlobalUtils::CalcExpectedDockedRect](#cglobalutils__calcexpecteddockedrect)||  
-|[CGlobalUtils::CanBeAttached](#cglobalutils__canbeattached)||  
-|[CGlobalUtils::CanPaneBeInFloatingMultiPaneFrameWnd](#cglobalutils__canpanebeinfloatingmultipaneframewnd)||  
-|[CGlobalUtils::CheckAlignment](#cglobalutils__checkalignment)||  
-|[CGlobalUtils::CyFromString](#cglobalutils__cyfromstring)||  
-|[CGlobalUtils::DecimalFromString](#cglobalutils__decimalfromstring)||  
-|[CGlobalUtils::FlipRect](#cglobalutils__fliprect)||  
-|[CGlobalUtils::ForceAdjustLayout](#cglobalutils__forceadjustlayout)||  
-|[CGlobalUtils::GetDockingManager](#cglobalutils__getdockingmanager)||  
-|[CGlobalUtils::GetOppositeAlignment](#cglobalutils__getoppositealignment)||  
-|[CGlobalUtils::GetPaneAndAlignFromPoint](#cglobalutils__getpaneandalignfrompoint)||  
-|[CGlobalUtils::GetWndIcon](#cglobalutils__getwndicon)||  
-|[CGlobalUtils::SetNewParent](#cglobalutils__setnewparent)||  
-|[CGlobalUtils::StringFromCy](#cglobalutils__stringfromcy)||  
-|[CGlobalUtils::StringFromDecimal](#cglobalutils__stringfromdecimal)||  
+|[CGlobalUtils::AdjustRectToWorkArea](#adjustrecttoworkarea)||  
+|[CGlobalUtils::CalcExpectedDockedRect](#calcexpecteddockedrect)||  
+|[CGlobalUtils::CanBeAttached](#canbeattached)||  
+|[CGlobalUtils::CanPaneBeInFloatingMultiPaneFrameWnd](#canpanebeinfloatingmultipaneframewnd)||  
+|[CGlobalUtils::CheckAlignment](#checkalignment)||  
+|[CGlobalUtils::CyFromString](#cyfromstring)||  
+|[CGlobalUtils::DecimalFromString](#decimalfromstring)||  
+|[CGlobalUtils::FlipRect](#fliprect)||  
+|[CGlobalUtils::ForceAdjustLayout](#forceadjustlayout)||  
+|[CGlobalUtils::GetDockingManager](#getdockingmanager)||  
+|[CGlobalUtils::GetOppositeAlignment](#getoppositealignment)||  
+|[CGlobalUtils::GetPaneAndAlignFromPoint](#getpaneandalignfrompoint)||  
+|[CGlobalUtils::GetWndIcon](#getwndicon)||  
+|[CGlobalUtils::SetNewParent](#setnewparent)||  
+|[CGlobalUtils::StringFromCy](#stringfromcy)||  
+|[CGlobalUtils::StringFromDecimal](#stringfromdecimal)||  
   
 ## Remarks  
   
@@ -74,7 +74,7 @@ class CGlobalUtils
 ## Requirements  
  **Header:** afxglobalutils.h  
   
-##  <a name="cglobalutils__adjustrecttoworkarea"></a>  CGlobalUtils::AdjustRectToWorkArea  
+##  <a name="adjustrecttoworkarea"></a>  CGlobalUtils::AdjustRectToWorkArea  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -89,7 +89,7 @@ void AdjustRectToworkArea(
   
 ### Remarks  
   
-##  <a name="cglobalutils__calcexpecteddockedrect"></a>  CGlobalUtils::CalcExpectedDockedRect  
+##  <a name="calcexpecteddockedrect"></a>  CGlobalUtils::CalcExpectedDockedRect  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -112,7 +112,7 @@ void CalcExpectedDockedRect(
   
 ### Remarks  
   
-##  <a name="cglobalutils__canbeattached"></a>  CGlobalUtils::CanBeAttached  
+##  <a name="canbeattached"></a>  CGlobalUtils::CanBeAttached  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -128,7 +128,7 @@ BOOL CanBeAttached(CWnd* pWnd) const;
   
 ### Remarks  
   
-##  <a name="cglobalutils__canpanebeinfloatingmultipaneframewnd"></a>  CGlobalUtils::CanPaneBeInFloatingMultiPaneFrameWnd  
+##  <a name="canpanebeinfloatingmultipaneframewnd"></a>  CGlobalUtils::CanPaneBeInFloatingMultiPaneFrameWnd  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -144,7 +144,7 @@ BOOL CanPaneBeInFloatingMultiPaneFrameWnd(CWnd* pWnd) const;
   
 ### Remarks  
   
-##  <a name="cglobalutils__checkalignment"></a>  CGlobalUtils::CheckAlignment  
+##  <a name="checkalignment"></a>  CGlobalUtils::CheckAlignment  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -175,7 +175,7 @@ BOOL CheckAlignment(
   
 ### Remarks  
   
-##  <a name="cglobalutils__cyfromstring"></a>  CGlobalUtils::CyFromString  
+##  <a name="cyfromstring"></a>  CGlobalUtils::CyFromString  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -192,7 +192,7 @@ BOOL CyFromString(
   
 ### Remarks  
   
-##  <a name="cglobalutils__decimalfromstring"></a>  CGlobalUtils::DecimalFromString  
+##  <a name="decimalfromstring"></a>  CGlobalUtils::DecimalFromString  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -209,7 +209,7 @@ BOOL DecimalFromString(
   
 ### Remarks  
   
-##  <a name="cglobalutils__fliprect"></a>  CGlobalUtils::FlipRect  
+##  <a name="fliprect"></a>  CGlobalUtils::FlipRect  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -224,7 +224,7 @@ void FlipRect(
   
 ### Remarks  
   
-##  <a name="cglobalutils__forceadjustlayout"></a>  CGlobalUtils::ForceAdjustLayout  
+##  <a name="forceadjustlayout"></a>  CGlobalUtils::ForceAdjustLayout  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -241,7 +241,7 @@ void ForceAdjustLayout(
   
 ### Remarks  
   
-##  <a name="cglobalutils__getdockingmanager"></a>  CGlobalUtils::GetDockingManager  
+##  <a name="getdockingmanager"></a>  CGlobalUtils::GetDockingManager  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -255,7 +255,7 @@ CDockingManager* GetDockingManager(CWnd* pWnd);
   
 ### Remarks  
   
-##  <a name="cglobalutils__getoppositealignment"></a>  CGlobalUtils::GetOppositeAlignment  
+##  <a name="getoppositealignment"></a>  CGlobalUtils::GetOppositeAlignment  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -269,7 +269,7 @@ DWORD GetOppositeAlignment(DWORD dwAlign);
   
 ### Remarks  
   
-##  <a name="cglobalutils__getpaneandalignfrompoint"></a>  CGlobalUtils::GetPaneAndAlignFromPoint  
+##  <a name="getpaneandalignfrompoint"></a>  CGlobalUtils::GetPaneAndAlignFromPoint  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -294,7 +294,7 @@ BOOL GetPaneAndAlignFromPoint(
   
 ### Remarks  
   
-##  <a name="cglobalutils__getwndicon"></a>  CGlobalUtils::GetWndIcon  
+##  <a name="getwndicon"></a>  CGlobalUtils::GetWndIcon  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -308,7 +308,7 @@ HICON GetWndIcon(CWnd* pWnd);
   
 ### Remarks  
   
-##  <a name="cglobalutils__setnewparent"></a>  CGlobalUtils::SetNewParent  
+##  <a name="setnewparent"></a>  CGlobalUtils::SetNewParent  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -325,7 +325,7 @@ void SetNewParent(
   
 ### Remarks  
   
-##  <a name="cglobalutils__stringfromcy"></a>  CGlobalUtils::StringFromCy  
+##  <a name="stringfromcy"></a>  CGlobalUtils::StringFromCy  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -342,7 +342,7 @@ BOOL StringFromCy(
   
 ### Remarks  
   
-##  <a name="cglobalutils__stringfromdecimal"></a>  CGlobalUtils::StringFromDecimal  
+##  <a name="stringfromdecimal"></a>  CGlobalUtils::StringFromDecimal  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  

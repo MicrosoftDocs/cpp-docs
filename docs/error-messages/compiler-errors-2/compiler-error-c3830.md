@@ -39,6 +39,7 @@ translation.priority.ht:
   
  A value type cannot inherit a base class.  For more information, see [Classes and Structs](../../windows/classes-and-structs-cpp-component-extensions.md).  
   
+## Example  
  The following sample generates C3830:  
   
 ```  
@@ -60,17 +61,3 @@ public:
    virtual void i(){}  
 };  
 ```  
-  
- **Managed Extensions for C++**  
-  
- A `__value` type cannot inherit a base class.  
-  
- The following sample generates C3830:  
-  
-```  
-// C3830b.cpp  
-// compile with: /clr:oldSyntax /c  
-#using <mscorlib.dll>  
-__value struct v : public System::Object {};   // C3830  
-__value struct w {};   // OK  
-```

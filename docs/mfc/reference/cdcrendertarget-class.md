@@ -50,29 +50,29 @@ class CDCRenderTarget : public CRenderTarget;
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDCRenderTarget::CDCRenderTarget](#cdcrendertarget__cdcrendertarget)|Constructs a CDCRenderTarget object.|  
+|[CDCRenderTarget::CDCRenderTarget](#cdcrendertarget)|Constructs a CDCRenderTarget object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDCRenderTarget::Attach](#cdcrendertarget__attach)|Attaches existing render target interface to the object|  
-|[CDCRenderTarget::BindDC](#cdcrendertarget__binddc)|Binds the render target to the device context to which it issues drawing commands|  
-|[CDCRenderTarget::Create](#cdcrendertarget__create)|Creates a CDCRenderTarget.|  
-|[CDCRenderTarget::Detach](#cdcrendertarget__detach)|Detaches render target interface from the object|  
-|[CDCRenderTarget::GetDCRenderTarget](#cdcrendertarget__getdcrendertarget)|Returns ID2D1DCRenderTarget interface|  
+|[CDCRenderTarget::Attach](#attach)|Attaches existing render target interface to the object|  
+|[CDCRenderTarget::BindDC](#binddc)|Binds the render target to the device context to which it issues drawing commands|  
+|[CDCRenderTarget::Create](#create)|Creates a CDCRenderTarget.|  
+|[CDCRenderTarget::Detach](#detach)|Detaches render target interface from the object|  
+|[CDCRenderTarget::GetDCRenderTarget](#getdcrendertarget)|Returns ID2D1DCRenderTarget interface|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDCRenderTarget::operator ID2D1DCRenderTarget*](#cdcrendertarget__operator_id2d1dcrendertarget_star)|Returns ID2D1DCRenderTarget interface|  
+|[CDCRenderTarget::operator ID2D1DCRenderTarget*](#operator_id2d1dcrendertarget_star)|Returns ID2D1DCRenderTarget interface|  
   
 ### Protected Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDCRenderTarget::m_pDCRenderTarget](#cdcrendertarget__m_pdcrendertarget)|A pointer to an ID2D1DCRenderTarget object.|  
+|[CDCRenderTarget::m_pDCRenderTarget](#m_pdcrendertarget)|A pointer to an ID2D1DCRenderTarget object.|  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -84,7 +84,7 @@ class CDCRenderTarget : public CRenderTarget;
 ## Requirements  
  **Header:** afxrendertarget.h  
   
-##  <a name="cdcrendertarget__attach"></a>  CDCRenderTarget::Attach  
+##  <a name="attach"></a>  CDCRenderTarget::Attach  
  Attaches existing render target interface to the object  
   
 ```  
@@ -95,7 +95,7 @@ void Attach(ID2D1DCRenderTarget* pTarget);
  `pTarget`  
  Existing render target interface. Cannot be NULL  
   
-##  <a name="cdcrendertarget__binddc"></a>  CDCRenderTarget::BindDC  
+##  <a name="binddc"></a>  CDCRenderTarget::BindDC  
  Binds the render target to the device context to which it issues drawing commands  
   
 ```  
@@ -114,14 +114,14 @@ BOOL BindDC(
 ### Return Value  
  If the method succeeds, it returns TRUE. Otherwise, it returns FALSE.  
   
-##  <a name="cdcrendertarget__cdcrendertarget"></a>  CDCRenderTarget::CDCRenderTarget  
+##  <a name="cdcrendertarget"></a>  CDCRenderTarget::CDCRenderTarget  
  Constructs a CDCRenderTarget object.  
   
 ```  
 CDCRenderTarget();
 ```  
   
-##  <a name="cdcrendertarget__create"></a>  CDCRenderTarget::Create  
+##  <a name="create"></a>  CDCRenderTarget::Create  
  Creates a CDCRenderTarget.  
   
 ```  
@@ -135,7 +135,7 @@ BOOL Create(const D2D1_RENDER_TARGET_PROPERTIES& props);
 ### Return Value  
  If the method succeeds, it returns TRUE. Otherwise, it returns FALSE.  
   
-##  <a name="cdcrendertarget__detach"></a>  CDCRenderTarget::Detach  
+##  <a name="detach"></a>  CDCRenderTarget::Detach  
  Detaches render target interface from the object  
   
 ```  
@@ -145,7 +145,7 @@ ID2D1DCRenderTarget* Detach();
 ### Return Value  
  Pointer to detached render target interface.  
   
-##  <a name="cdcrendertarget__getdcrendertarget"></a>  CDCRenderTarget::GetDCRenderTarget  
+##  <a name="getdcrendertarget"></a>  CDCRenderTarget::GetDCRenderTarget  
  Returns ID2D1DCRenderTarget interface  
   
 ```  
@@ -155,17 +155,18 @@ ID2D1DCRenderTarget* GetDCRenderTarget();
 ### Return Value  
  Pointer to an ID2D1DCRenderTarget interface or NULL if object is not initialized yet.  
   
-##  <a name="cdcrendertarget__m_pdcrendertarget"></a>  CDCRenderTarget::m_pDCRenderTarget  
+##  <a name="m_pdcrendertarget"></a>  CDCRenderTarget::m_pDCRenderTarget  
  A pointer to an ID2D1DCRenderTarget object.  
   
 ```  
 ID2D1DCRenderTarget* m_pDCRenderTarget;  
 ```  
   
-##  <a name="cdcrendertarget__operator_id2d1dcrendertarget_star"></a>  CDCRenderTarget::operator ID2D1DCRenderTarget*  
+##  <a name="operator_id2d1dcrendertarget_star"></a>  CDCRenderTarget::operator ID2D1DCRenderTarget*  
  Returns ID2D1DCRenderTarget interface  
   
-```  operator ID2D1DCRenderTarget*();
+```  
+operator ID2D1DCRenderTarget*();
 ```   
   
 ### Return Value  

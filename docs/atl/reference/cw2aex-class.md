@@ -60,21 +60,21 @@ template<int t_nBufferLength = 128>  class CW2AEX
   
 |Name|Description|  
 |----------|-----------------|  
-|[CW2AEX::CW2AEX](#cw2aex__cw2aex)|The constructor.|  
-|[CW2AEX::~CW2AEX](#cw2aex___dtorcw2aex)|The destructor.|  
+|[CW2AEX::CW2AEX](#cw2aex)|The constructor.|  
+|[CW2AEX::~CW2AEX](#dtor)|The destructor.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CW2AEX::operator LPSTR](#cw2aex__operator_lpstr)|Conversion operator.|  
+|[CW2AEX::operator LPSTR](#operator_lpstr)|Conversion operator.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CW2AEX::m_psz](#cw2aex__m_psz)|The data member that stores the source string.|  
-|[CW2AEX::m_szBuffer](#cw2aex__m_szbuffer)|The static buffer, used to store the converted string.|  
+|[CW2AEX::m_psz](#m_psz)|The data member that stores the source string.|  
+|[CW2AEX::m_szBuffer](#m_szbuffer)|The static buffer, used to store the converted string.|  
   
 ## Remarks  
  Unless extra functionality is required, use `CT2AEX`, `CW2TEX`, `CW2CTEX`, `CT2CAEX`, or **CW2A** in your code.  
@@ -99,15 +99,15 @@ template<int t_nBufferLength = 128>  class CW2AEX
   
 - **CW2A**  
   
- For a discussion of these text conversion macros, see [ATL and MFC String Conversion Macros](../Topic/ATL%20and%20MFC%20String%20Conversion%20Macros.md).  
+ For a discussion of these text conversion macros, see [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/library/8f53659e-0464-4424-97db-6b8453c49863).  
   
 ## Example  
- See [ATL and MFC String Conversion Macros](../Topic/ATL%20and%20MFC%20String%20Conversion%20Macros.md) for an example of using these string conversion macros.  
+ See [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/library/8f53659e-0464-4424-97db-6b8453c49863) for an example of using these string conversion macros.  
   
 ## Requirements  
  **Header:** atlconv.h  
   
-##  <a name="cw2aex__cw2aex"></a>  CW2AEX::CW2AEX  
+##  <a name="cw2aex"></a>  CW2AEX::CW2AEX  
  The constructor.  
   
 ```
@@ -126,7 +126,7 @@ CW2AEX(LPCWSTR psz,  UINT nCodePage) throw(...);
 ### Remarks  
  Allocates the buffer used in the translation process.  
   
-##  <a name="cw2aex___dtorcw2aex"></a>  CW2AEX::~CW2AEX  
+##  <a name="dtor"></a>  CW2AEX::~CW2AEX  
  The destructor.  
   
 ```
@@ -136,14 +136,14 @@ CW2AEX(LPCWSTR psz,  UINT nCodePage) throw(...);
 ### Remarks  
  Frees the allocated buffer.  
   
-##  <a name="cw2aex__m_psz"></a>  CW2AEX::m_psz  
+##  <a name="m_psz"></a>  CW2AEX::m_psz  
  The data member that stores the source string.  
   
 ```
 LPSTR m_psz;
 ```  
   
-##  <a name="cw2aex__m_szbuffer"></a>  CW2AEX::m_szBuffer  
+##  <a name="m_szbuffer"></a>  CW2AEX::m_szBuffer  
  The static buffer, used to store the converted string.  
   
 ```
@@ -151,7 +151,7 @@ char m_szBuffer[ t_nBufferLength
  ];
 ```  
   
-##  <a name="cw2aex__operator_lpstr"></a>  CW2AEX::operator LPSTR  
+##  <a name="operator_lpstr"></a>  CW2AEX::operator LPSTR  
  Conversion operator.  
   
 ```operator LPSTR() const throw();

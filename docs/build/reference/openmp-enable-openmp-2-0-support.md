@@ -58,7 +58,7 @@ Causes the compiler to process `#pragma`[omp](../../preprocessor/omp.md).
   
 -   If your application compiled with **/clr**, but not with **/openmp**, is loaded into a non-default application domain but where the process includes an application that was compiled with **/openmp**.  
   
--   If you pass your **/clr** application to a utility, such as regasm.exe ([Regasm.exe (Assembly Registration Tool)](../Topic/Regasm.exe%20\(Assembly%20Registration%20Tool\).md)), which loads its target assemblies into a non-default application domain.  
+-   If you pass your **/clr** application to a utility, such as regasm.exe ([Regasm.exe (Assembly Registration Tool)](http://msdn.microsoft.com/Library/e190e342-36ef-4651-a0b4-0e8c2c0281cb)), which loads its target assemblies into a non-default application domain.  
   
  The common language runtime's code access security doesn’t work in OpenMP regions. If you apply a CLR code access security attribute outside a parallel region, it won't be in effect in the parallel region.  
   
@@ -66,7 +66,7 @@ Causes the compiler to process `#pragma`[omp](../../preprocessor/omp.md).
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Property Pages** dialog box. For details, see [How to: Open Project Property Pages](../../misc/how-to-open-project-property-pages.md).  
+1.  Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
 2.  Expand the **Configuration Properties** node.  
   

@@ -41,17 +41,17 @@ Classes that conform to the *worker* archetype provide the code to process work 
   
 |Method|Description|  
 |------------|-----------------|  
-|[Initialize](#workerarchetype__initialize)|Called to initialize the worker object before any requests are passed to [Execute](#workerarchetype_execute).|  
-|[Execute](#workerarchetype__execute)|Called to process a work item.|  
-|[Terminate](#workerarchetype__terminate)|Called to uninitialize the worker object after all requests have been passed to [Execute](#workerarchetype_execute).|  
+|[Initialize](#initialize)|Called to initialize the worker object before any requests are passed to [Execute](#execute).|  
+|[Execute](#execute)|Called to process a work item.|  
+|[Terminate](#terminate)|Called to uninitialize the worker object after all requests have been passed to [Execute](#execute).|  
   
 |Typedef|Description|  
 |-------------|-----------------|  
-|[RequestType](#workerarchetype__requesttype)|A typedef for the type of work item that can be processed by the worker class.|  
+|[RequestType](#requesttype)|A typedef for the type of work item that can be processed by the worker class.|  
   
  A typical *worker* class looks like this:  
   
- [!code-cpp[NVC_ATL_Utilities#137](../../atl/codesnippet/CPP/worker-archetype_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#137](../../atl/codesnippet/cpp/worker-archetype_1.cpp)]  
   
  **Existing Implementations**  
   
@@ -73,7 +73,7 @@ Classes that conform to the *worker* archetype provide the code to process work 
 ### Requirements  
  **Header:** atlutil.h  
   
-## <a name="workerarchetype__execute"></a>WorkerArchetype::Execute
+## <a name="execute"></a>WorkerArchetype::Execute
 Called to process a work item.  
   
   
@@ -95,7 +95,7 @@ void Execute(
  `pOverlapped`  
  A pointer to the [OVERLAPPED](http://msdn.microsoft.com/library/windows/desktop/ms684342) structure used to create the queue on which work items were queued.  
   
-## <a name="workerarchetype__initialize"></a> WorkerArchetype::Initialize
+## <a name="initialize"></a> WorkerArchetype::Initialize
 Called to initialize the worker object before any requests are passed to `WorkerArchetype::Execute`.  
 ```
 BOOL Initialize(void* pvParam) throw();
@@ -108,7 +108,7 @@ BOOL Initialize(void* pvParam) throw();
 ### Return Value  
  Return **TRUE** on success, **FALSE** on failure.  
   
-## <a name="workerarchetype__requesttype"></a> WorkerArchetype::RequestType
+## <a name="requesttype"></a> WorkerArchetype::RequestType
 A typedef for the type of work item that can be processed by the worker class.  
   
 ```  
@@ -118,7 +118,7 @@ typedef   MyRequestType RequestType;
 ### Remarks  
  This type must be used as the first parameter of `WorkerArchetype::Execute` and must be capable of being cast to and from a ULONG_PTR.  
   
-## <a name="workerarchetype__terminate"></a> WorkerArchetype::Terminate
+## <a name="terminate"></a> WorkerArchetype::Terminate
 Called to uninitialize the worker object after all requests have been passed to `WorkerArchetype::Execute`).  
     
 ``` 

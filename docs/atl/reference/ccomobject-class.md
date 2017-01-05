@@ -57,17 +57,17 @@ template<class Base>  class CComObject :  public Base
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComObject::CComObject](#ccomobject__ccomobject)|The constructor.|  
-|[CComObject::~CComObject](#ccomobject___dtorccomobject)|The destructor.|  
+|[CComObject::CComObject](#ccomobject)|The constructor.|  
+|[CComObject::~CComObject](#dtor)|The destructor.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComObject::AddRef](#ccomobject__addref)|Increments the reference count on the object.|  
-|[CComObject::CreateInstance](#ccomobject__createinstance)|(Static) Creates a new `CComObject` object.|  
-|[CComObject::QueryInterface](#ccomobject__queryinterface)|Retrieves a pointer to the requested interface.|  
-|[CComObject::Release](#ccomobject__release)|Decrements the reference count on the object.|  
+|[CComObject::AddRef](#addref)|Increments the reference count on the object.|  
+|[CComObject::CreateInstance](#createinstance)|(Static) Creates a new `CComObject` object.|  
+|[CComObject::QueryInterface](#queryinterface)|Retrieves a pointer to the requested interface.|  
+|[CComObject::Release](#release)|Decrements the reference count on the object.|  
   
 ## Remarks  
  `CComObject` implements [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) for a nonaggregated object. However, calls to `QueryInterface`, `AddRef`, and **Release** are delegated to `CComObjectRootEx`.  
@@ -82,7 +82,7 @@ template<class Base>  class CComObject :  public Base
 ## Requirements  
  **Header:** atlcom.h  
   
-##  <a name="ccomobject__addref"></a>  CComObject::AddRef  
+##  <a name="addref"></a>  CComObject::AddRef  
  Increments the reference count on the object.  
   
 ```
@@ -92,7 +92,7 @@ STDMETHOD_(ULONG, AddRef)();
 ### Return Value  
  This function returns the new incremented reference count on the object. This value may be useful for diagnostics or testing.  
   
-##  <a name="ccomobject__ccomobject"></a>  CComObject::CComObject  
+##  <a name="ccomobject"></a>  CComObject::CComObject  
  The constructor increments the module lock count.  
   
 ```
@@ -106,9 +106,9 @@ CComObject(void* = NULL);
 ### Remarks  
  The destructor decrements it.  
   
- If a `CComObject`-derived object is successfully constructed using the **new** operator, the initial reference count is 0. To set the reference count to the proper value (1), make a call to the [AddRef](#ccomobject__addref) function.  
+ If a `CComObject`-derived object is successfully constructed using the **new** operator, the initial reference count is 0. To set the reference count to the proper value (1), make a call to the [AddRef](#addref) function.  
   
-##  <a name="ccomobject___dtorccomobject"></a>  CComObject::~CComObject  
+##  <a name="dtor"></a>  CComObject::~CComObject  
  The destructor.  
   
 ```
@@ -116,9 +116,10 @@ CComObject();
 ```  
   
 ### Remarks  
- Frees all allocated resources, calls [FinalRelease](../Topic/CComObjectRootEx::FinalRelease.md), and decrements the module lock count.  
+ Frees all allocated resources, calls [FinalRelease](ccomobjectrootex-class.md#finalrelease), and decrements the module lock count.  
+
   
-##  <a name="ccomobject__createinstance"></a>  CComObject::CreateInstance  
+##  <a name="createinstance"></a>  CComObject::CreateInstance  
  This static function allows you to create a new **CComObject<**`Base`**>** object, without the overhead of [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).  
   
 ```
@@ -135,14 +136,14 @@ static HRESULT WINAPI CreateInstance(CComObject<Base>** pp);
 ### Remarks  
  The object returned has a reference count of zero, so call `AddRef` immediately, then use **Release** to free the reference on the object pointer when you're done.  
   
- If you do not need direct access to the object, but still want to create a new object without the overhead of `CoCreateInstance`, use [CComCoClass::CreateInstance](../../atl/reference/ccomcoclass-class.md#ccomcoclass__createinstance) instead.  
+ If you do not need direct access to the object, but still want to create a new object without the overhead of `CoCreateInstance`, use [CComCoClass::CreateInstance](../../atl/reference/ccomcoclass-class.md#createinstance) instead.  
   
 ### Example  
- [!code-cpp[NVC_ATL_COM#38](../../atl/codesnippet/CPP/ccomobject-class_1.h)]  
+ [!code-cpp[NVC_ATL_COM#38](../../atl/codesnippet/cpp/ccomobject-class_1.h)]  
   
- [!code-cpp[NVC_ATL_COM#39](../../atl/codesnippet/CPP/ccomobject-class_2.cpp)]  
+ [!code-cpp[NVC_ATL_COM#39](../../atl/codesnippet/cpp/ccomobject-class_2.cpp)]  
   
-##  <a name="ccomobject__queryinterface"></a>  CComObject::QueryInterface  
+##  <a name="queryinterface"></a>  CComObject::QueryInterface  
  Retrieves a pointer to the requested interface.  
   
 ```
@@ -166,7 +167,7 @@ STDMETHOD(QueryInterface)(REFIID iid,
 ### Return Value  
  A standard `HRESULT` value.  
   
-##  <a name="ccomobject__release"></a>  CComObject::Release  
+##  <a name="release"></a>  CComObject::Release  
  Decrements the reference count on the object.  
   
 ```
@@ -179,6 +180,6 @@ STDMETHOD_(ULONG, Release)();
 ## See Also  
  [CComAggObject Class](../../atl/reference/ccomaggobject-class.md)   
  [CComPolyObject Class](../../atl/reference/ccompolyobject-class.md)   
- [DECLARE_AGGREGATABLE](../Topic/DECLARE_AGGREGATABLE.md)   
- [DECLARE_NOT_AGGREGATABLE](../Topic/DECLARE_NOT_AGGREGATABLE.md)   
+ [DECLARE_AGGREGATABLE](http://msdn.microsoft.com/library/e7e568d7-04e0-4226-b5dc-224deed229ab)   
+ [DECLARE_NOT_AGGREGATABLE](http://msdn.microsoft.com/library/2a116c7c-bab8-4f2a-a9ad-03d7aba0f762)   
  [Class Overview](../../atl/atl-class-overview.md)

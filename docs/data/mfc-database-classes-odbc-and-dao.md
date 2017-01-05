@@ -51,7 +51,7 @@ translation.priority.ht:
   
 -   [Using Database Classes Without Documents and Views](../data/mfc-using-database-classes-without-documents-and-views.md)  
   
--   Check the Microsoft Universal Data Access Web site at [http://go.microsoft.com/fwlink/?LinkId=121548](http://go.microsoft.com/fwlink/?LinkId=121548) for updates to and news about ODBC and DAO.  
+-   Check the Microsoft Universal Data Access Web site at [http://go.microsoft.com/fwlink/?LinkId=121548](http://go.microsoft.com/fwlink/?linkid=121548) for updates to and news about ODBC and DAO.  
   
 ## See Also  
  [Data Access Programming (MFC/ATL)](../data/data-access-programming-mfc-atl.md)

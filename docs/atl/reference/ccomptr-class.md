@@ -53,22 +53,22 @@ template<class T>  class CComPtr
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComPtr::CComPtr](#ccomptr__ccomptr)|The constructor.|  
+|[CComPtr::CComPtr](#ccomptr)|The constructor.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComPtr::operator =](#ccomptr__operator__eq)|Assigns a pointer to the member pointer.|  
+|[CComPtr::operator =](#operator_eq)|Assigns a pointer to the member pointer.|  
   
 ## Remarks  
  ATL uses `CComPtr` and [CComQIPtr](../../atl/reference/ccomqiptr-class.md) to manage COM interface pointers. Both are derived from [CComPtrBase](../../atl/reference/ccomptrbase-class.md), and both perform automatic reference counting.  
   
  The **CComPtr** and [CComQIPtr](../../atl/reference/ccomqiptr-class.md) classes can help eliminate memory leaks by performing automatic reference counting.  The following functions both perform the same logical operations; however, note how the second version may be less error-prone by using the **CComPtr** class:  
   
- [!code-cpp[NVC_ATL_Utilities#130](../../atl/codesnippet/CPP/ccomptr-class_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#130](../../atl/codesnippet/cpp/ccomptr-class_1.cpp)]  
   
- [!code-cpp[NVC_ATL_Utilities#131](../../atl/codesnippet/CPP/ccomptr-class_2.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#131](../../atl/codesnippet/cpp/ccomptr-class_2.cpp)]  
   
  In Debug builds, link atlsd.lib for code tracing.  
   
@@ -80,7 +80,7 @@ template<class T>  class CComPtr
 ## Requirements  
  **Header:** atlbase.h  
   
-##  <a name="ccomptr__ccomptr"></a>  CComPtr::CComPtr  
+##  <a name="ccomptr"></a>  CComPtr::CComPtr  
  The constructor.  
   
 ```
@@ -96,7 +96,7 @@ CComPtr (const CComPtr<T>& lp) throw ();
  `T`  
  A COM interface.  
   
-##  <a name="ccomptr__operator__eq"></a>  CComPtr::operator =  
+##  <a name="operator_eq"></a>  CComPtr::operator =  
  Assignment operator.  
   
 ```
@@ -112,6 +112,6 @@ T* operator= (const CComPtr<T>& lp) throw ();
  This operation AddRefs the new object and releases the existing object, if one exists.  
   
 ## See Also  
- [CComPtr::CComPtr](#ccomptr__ccomptr)   
- [CComQIPtr::CComQIPtr](../../atl/reference/ccomqiptr-class.md#ccomqiptr__ccomqiptr)   
+ [CComPtr::CComPtr](#ccomptr)   
+ [CComQIPtr::CComQIPtr](../../atl/reference/ccomqiptr-class.md#ccomqiptr)   
  [Class Overview](../../atl/atl-class-overview.md)

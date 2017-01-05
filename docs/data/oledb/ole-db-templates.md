@@ -51,7 +51,7 @@ The OLE DB templates make OLE DB data access easier. Visual C++ provides templat
  [OLE DB Programmer's Reference](https://msdn.microsoft.com/en-us/library/ms713643.aspx)  
  Provides links to the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] documentation on OLE DB.  
   
- [OLE DB Templates Samples](../../top/visual-cpp-samples.md)  
+ [OLE DB Templates Samples](../../visual-cpp-samples.md)  
  Provides links to the OLE DB Templates samples that show how to use OLE DB in your projects.  
   
  [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)  
@@ -76,7 +76,7 @@ The OLE DB templates make OLE DB data access easier. Visual C++ provides templat
  Provides reference material for the ATL Library, a set of template-based C++ classes that simplify the programming of COM objects.  
   
  [Visual C++ Libraries](http://msdn.microsoft.com/en-us/fec23c40-10c0-4857-9cdc-33a3b99b30ae)  
- Provides links to the various libraries provided with Visual C++, including ATL, MFC, OLE DB Templates, the C run-time library, and the Standard C++ Library.  
+ Provides links to the various libraries provided with Visual C++, including ATL, MFC, OLE DB Templates, the C run-time library, and the C++ Standard Library.  
   
- [Debugging](/visual-studio/debugger/debugging-in-visual-studio)  
+ [Debugging](/visualstudio/debugger/debugging-in-visual-studio)  
  Provides links to using the Visual Studio debugger to correct logic errors in your application or stored procedures.

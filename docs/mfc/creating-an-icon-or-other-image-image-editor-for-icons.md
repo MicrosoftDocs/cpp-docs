@@ -65,12 +65,12 @@ You can create a new image (bitmap, icon, cursor, or toolbar), then use the Imag
   
 4.  In the **Templates** pane, choose the resource type you'd like to add to your project.  
   
-     The resource is added to your project in Solution Explorer and the resource opens in the [Image editor](../mfc/image-editor-for-icons.md). You can now use all the tools available in the Image editor to modify your image. For more information on adding images to a managed project, see [Loading a Picture at Design Time](../Topic/How%20to:%20Load%20a%20Picture%20Using%20the%20Designer%20\(Windows%20Forms\).md).  
+     The resource is added to your project in Solution Explorer and the resource opens in the [Image editor](../mfc/image-editor-for-icons.md). You can now use all the tools available in the Image editor to modify your image. For more information on adding images to a managed project, see [Loading a Picture at Design Time](http://msdn.microsoft.com/library/4dc7b973-afb1-4276-8322-20825af96655).  
   
     > [!NOTE]
-    >  Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources. For more information, see [Creating Resource Files](../Topic/Creating%20Resource%20Files%20for%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide*.  
+    >  Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources. For more information, see [Creating Resource Files](http://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d) in the *.NET Framework Developer's Guide*.  
   
- For information on adding resources to managed projects, please see [Resources in Applications](../Topic/Resources%20in%20Desktop%20Apps.md) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](../Topic/Walkthrough:%20Using%20Resources%20for%20Localization%20with%20ASP.NET.md).  
+ For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
  Requirements  
   

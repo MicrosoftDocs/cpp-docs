@@ -304,7 +304,7 @@ const_reference back() const;
 ### Remarks  
  If the return value of **back** is assigned to a `const_reference`, the deque object cannot be modified. If the return value of **back** is assigned to a **reference**, the deque object can be modified.  
   
- When compiling with _SECURE_SCL 1, a runtime error will occur if you attempt to access an element in an empty deque.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
+ When compiled by using [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) defined as 1 or 2, a runtime error will occur if you attempt to access an element in an empty deque.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
   
 ### Example  
   
@@ -1238,8 +1238,6 @@ iterator erase(iterator first, iterator last);
  A random-access iterator that designates the first element remaining beyond any elements removed, or a pointer to the end of the deque if no such element exists.  
   
 ### Remarks  
- For more information on **erase**, see [deque::erase and deque::clear](../misc/deque-erase-and-deque-clear.md).  
-  
  **erase** never throws an exception.  
   
 ### Example  
@@ -1301,7 +1299,7 @@ const_reference front() const;
 ### Remarks  
  If the return value of `front` is assigned to a `const_reference`, the deque object cannot be modified. If the return value of `front` is assigned to a **reference**, the deque object can be modified.  
   
- When compiling with _SECURE_SCL 1, a runtime error will occur if you attempt to access an element in an empty deque.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
+ When compiled by using [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) defined as 1 or 2, a runtime error will occur if you attempt to access an element in an empty deque.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
   
 ### Example  
   
@@ -1344,7 +1342,7 @@ Allocator get_allocator() const;
  The allocator used by the deque.  
   
 ### Remarks  
- Allocators for the deque class specify how the class manages storage. The default allocators supplied with STL container classes are sufficient for most programming needs. Writing and using your own allocator class is an advanced C++ topic.  
+ Allocators for the deque class specify how the class manages storage. The default allocators supplied with C++ Standard Library container classes are sufficient for most programming needs. Writing and using your own allocator class is an advanced C++ topic.  
   
 ### Example  
   
@@ -1476,7 +1474,7 @@ const_reference operator[](size_type pos) const;
 ### Remarks  
  If the return value of `operator[]` is assigned to a `const_reference`, the deque object cannot be modified. If the return value of `operator[]` is assigned to a **reference**, the deque object can be modified.  
   
- When compiling with _SECURE_SCL 1, a runtime error will occur if you attempt to access an element outside the bounds of the deque.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
+ When compiled by using [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) defined as 1 or 2, a runtime error will occur if you attempt to access an element outside the bounds of the deque.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
   
 ### Example  
   
@@ -2204,5 +2202,5 @@ int main( )
   
 ## See Also  
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 

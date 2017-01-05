@@ -45,7 +45,7 @@ This topic illustrates several ways to provide work functions to the [concurrenc
 ## Example  
  The following example shows a common way to use the `call` class. This example passes a lambda function to the `call` constructor.  
   
- [!code-cpp[concrt-call-lambda#1](../../parallel/concrt/codesnippet/CPP/how-to-provide-work-functions-to-the-call-and-transformer-classes_1.cpp)]  
+ [!code-cpp[concrt-call-lambda#1](../../parallel/concrt/codesnippet/cpp/how-to-provide-work-functions-to-the-call-and-transformer-classes_1.cpp)]  
   
  This example produces the following output.  
   
@@ -56,18 +56,20 @@ This topic illustrates several ways to provide work functions to the [concurrenc
 ## Example  
  The following example resembles the previous one, except that it uses the `call` class together with a function object (functor).  
   
- [!code-cpp[concrt-call-functor#1](../../parallel/concrt/codesnippet/CPP/how-to-provide-work-functions-to-the-call-and-transformer-classes_2.cpp)]  
+ [!code-cpp[concrt-call-functor#1](../../parallel/concrt/codesnippet/cpp/how-to-provide-work-functions-to-the-call-and-transformer-classes_2.cpp)]  
   
 ## Example  
- The following example resembles the previous one, except that it uses the [std::bind1st](../Topic/bind1st%20Function.md) and [std::mem_fun](../Topic/mem_fun%20Function.md) functions to bind a `call` object to a class method.  
+
+ The following example resembles the previous one, except that it uses the [std::bind1st](../../standard-library/functional-functions.md#bind1st_function) and [std::mem_fun](../../standard-library/functional-functions.md#mem_fun_function) functions to bind a `call` object to a class method.  
+
   
  Use this technique if you have to bind a `call` or `transformer` object to a specific class method instead of the function call operator, `operator()`.  
   
- [!code-cpp[concrt-call-method#1](../../parallel/concrt/codesnippet/CPP/how-to-provide-work-functions-to-the-call-and-transformer-classes_3.cpp)]  
+ [!code-cpp[concrt-call-method#1](../../parallel/concrt/codesnippet/cpp/how-to-provide-work-functions-to-the-call-and-transformer-classes_3.cpp)]  
   
  You can also assign the result of the `bind1st` function to a [std::function](../../standard-library/function-class.md) object or use the `auto` keyword, as shown in the following example.  
   
- [!code-cpp[concrt-call-method#2](../../parallel/concrt/codesnippet/CPP/how-to-provide-work-functions-to-the-call-and-transformer-classes_4.cpp)]  
+ [!code-cpp[concrt-call-method#2](../../parallel/concrt/codesnippet/cpp/how-to-provide-work-functions-to-the-call-and-transformer-classes_4.cpp)]  
   
 ## Compiling the Code  
  Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `call.cpp` and then run the following command in a Visual Studio Command Prompt window.  

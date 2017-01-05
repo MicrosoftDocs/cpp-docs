@@ -56,7 +56,7 @@ Use this page of the wizard to set options for the Win32 project.
 |**Empty project**|Specifies that the project files are blank. If you have a set of source code files (such as .cpp files, header files, icons, toolbars, dialog boxes, and so on) and want to create a project in the Visual C++ development environment, you must first create a blank project, then add the files to the project.<br /><br /> This selection is unavailable for static library projects.|  
 |**Export symbols**|Specifies that the DLL project exports symbols.|  
 |**Precompiled header**|Specifies that the static library project uses a pre-compiled header.|  
-|Security Development Lifecycle (SDL) checks|For more information about SDL, see [Microsoft Security Development Lifecycle (SDL)  Process Guidance](84aed186-1d75-4366-8e61-8d258746bopq)|  
+|Security Development Lifecycle (SDL) checks|For more information about SDL, see [Microsoft Security Development Lifecycle (SDL)  Process Guidance](../build/reference/sdl-enable-additional-security-checks.md)|  
   
  **Add support for**  
  Add support for one of the libraries supplied in Visual C++.  
@@ -68,4 +68,3 @@ Use this page of the wizard to set options for the Win32 project.
   
 ## See Also  
  [Win32 Application Wizard](../windows/win32-application-wizard.md)   
- [How to: Create a Windows Desktop Application](../Topic/How%20to:%20Create%20a%20Windows%20Desktop%20Application.md)

@@ -66,7 +66,7 @@ Retrieves column information for a particular client request.
   
  The following example demonstrates **GetColumnInfo's** usage. In this example, **CMyRowset** is a `CRowsetImpl`-derived class. In order to override `GetColumnInfo` for all instances of this class, place the following method in the **CMyRowset** class definition:  
   
- [!code-cpp[NVC_OLEDB_Provider#1](../../data/oledb/codesnippet/CPP/crowsetimpl-getcolumninfo_1.h)]  
+ [!code-cpp[NVC_OLEDB_Provider#1](../../data/oledb/codesnippet/cpp/crowsetimpl-getcolumninfo_1.h)]  
   
 ## Requirements  
  **Header:** atldb.h  

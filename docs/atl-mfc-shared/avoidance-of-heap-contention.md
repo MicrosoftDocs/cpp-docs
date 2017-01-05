@@ -42,7 +42,7 @@ The default string managers provided by MFC and ATL are simple wrappers on top o
 ## Example  
  The example below illustrates a thread procedure that allocates its own private non-thread-safe heap to use for strings on that thread:  
   
- [!code-cpp[NVC_ATLMFC_Utilities#182](../atl-mfc-shared/codesnippet/CPP/avoidance-of-heap-contention_1.cpp)]  
+ [!code-cpp[NVC_ATLMFC_Utilities#182](../atl-mfc-shared/codesnippet/cpp/avoidance-of-heap-contention_1.cpp)]  
   
 ## Comments  
  Multiple threads could be running using this same thread procedure but since each thread has its own heap there is no contention between threads. In addition, the fact that each heap is not thread-safe gives a measurable increase in performance even if just one copy of the thread is running. This is the result of the heap not using expensive interlocked operations to protect against concurrent access.  

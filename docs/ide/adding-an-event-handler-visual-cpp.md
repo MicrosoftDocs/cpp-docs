@@ -39,7 +39,7 @@ translation.priority.ht:
 # Adding an Event Handler (Visual C++)
 From the resource editor, you can add a new event handler, or edit an existing event handler, for a dialog box control using the [Event Handler Wizard](../ide/event-handler-wizard.md).  
   
- You can add an event to the class implementing the dialog box using the [Properties window](/visual-studio/ide/reference/properties-window). If you want to add the event to a class other than the dialog box class, use the Event Handler Wizard.  
+ You can add an event to the class implementing the dialog box using the [Properties window](/visualstudio/ide/reference/properties-window). If you want to add the event to a class other than the dialog box class, use the Event Handler Wizard.  
   
 ### To add an event handler to a dialog box control  
   
@@ -57,7 +57,7 @@ From the resource editor, you can add a new event handler, or edit an existing e
   
      If the selected message type already has an event handler for the selected class, **Add and edit** is unavailable, and **Edit code** is available. Click **Edit code** to open the text editor at the existing function.  
   
- Alternately, you can add event handlers from the [Properties window](/visual-studio/ide/reference/properties-window). See [Adding Event Handlers for Dialog Box Controls](../mfc/adding-event-handlers-for-dialog-box-controls.md) for more information.  
+ Alternately, you can add event handlers from the [Properties window](/visualstudio/ide/reference/properties-window). See [Adding Event Handlers for Dialog Box Controls](../mfc/adding-event-handlers-for-dialog-box-controls.md) for more information.  
   
 ## See Also  
  [Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards-cpp.md)   

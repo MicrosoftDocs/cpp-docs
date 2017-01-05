@@ -102,7 +102,7 @@ Include the standard header \<chrono> to define classes and functions that repre
 |`typedef duration<int, ratio<3600> > hours;`|Synonym for a `duration` type that has a tick period of one hour.|  
   
 ### Literals  
- **(C++11)**The \<chrono> header defines the following [user-defined literals](../cpp/user-defined-literals-cpp.md) that you can use for greater convenience, type-safety and maintainability of your code. These literals are defined in the `literals::chrono_literals` inline namespace and are in scope when std::chrono is in scope. For more information, see [chrono literals](../standard-library/chrono-functions.md#chrono_literals).  
+ **(C++11)**The \<chrono> header defines the following [user-defined literals](../cpp/user-defined-literals-cpp.md) that you can use for greater convenience, type-safety and maintainability of your code. These literals are defined in the `literals::chrono_literals` inline namespace and are in scope when std::chrono is in scope.  
   
 |Literal|Description|  
 |-------------|-----------------|  

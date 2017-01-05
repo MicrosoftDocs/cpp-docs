@@ -43,9 +43,8 @@ A `union` is a user-defined type in which all members share the same memory loca
   
 ## Syntax  
   
-```  
+```cpp  
 union [name]  { member-list };  
-  
 ```  
   
 #### Parameters  
@@ -60,7 +59,7 @@ union [name]  { member-list };
 ## Declaring a Union  
  Begin the declaration of a union with the `union` keyword, and enclose the member list in curly braces:  
   
-```  
+```cpp  
 // declaring_a_union.cpp  
 union RecordType    // Declare a simple union type  
 {  
@@ -82,7 +81,7 @@ int main()
 ## Using unions  
  In the previous example, any code that accesses the union needs to know which member is holding the data. The most common solution to this problem is to enclose the union in a struct along with an additional enum member that indicates the type of the data currently being stored in the union. This is called a *discriminated union* and the following example shows the basic pattern.  
   
-```  
+```cpp  
   
 #include "stdafx.h"  
 #include <queue>  
@@ -175,7 +174,7 @@ void Initialize()
 ## Unrestricted Unions (C++11)  
  In C++03 and earlier a union can contain non-static data members with class type as long as the type has no user provided constructors, destructors or assignment operators. In C++11, these restrictions are removed. If you include such a member in your union then the compiler will automatically mark any special member functions that are not user provided as deleted. If the union is an anonymous union inside a class or struct, then any special member functions of the class or struct that are not user provided are marked as deleted. The following example shows how to handle the case where one of the members of the union has a member that requires this special treatment:  
   
-```  
+```cpp  
 // for MyVariant  
 #include <crtdbg.h>  
 #include <new>  
@@ -625,7 +624,7 @@ private:
 ## Initializing unions  
  You can declare and initialize a union in the same statement by assigning an expression enclosed in braces. The expression is evaluated and assigned to the first field of the union.  
   
-```  
+```cpp  
 #include <iostream>  
 using namespace std;  
   
@@ -655,17 +654,16 @@ int main()
  ![Storage of data in a numeric type union](../cpp/media/vc38ul1.png "vc38UL1")  
 Storage of Data in NumericType Union  
   
-## Anonymous unions  
+## <a name="anonymous_unions"></a> Anonymous unions  
  Anonymous unions are unions that are declared without a *class-name* or *declarator-list*.  
   
-```  
-  
+```cpp  
 union  {  member-list  }    
 ```  
   
- Names declared in an anonymous union are used directly, like nonmember variables. Therefore, the names declared in an anonymous union must be unique in the surrounding scope.  
+Names declared in an anonymous union are used directly, like nonmember variables. Therefore, the names declared in an anonymous union must be unique in the surrounding scope.  
   
- In addition to the restrictions listed in [Union Member Data](../misc/union-member-data.md), anonymous unions are subject to additional restrictions:  
+In addition to the restrictions for named unions, anonymous unions are subject to these additional restrictions:  
   
 -   They must also be declared as **static** if declared in file or namespace scope.  
   
@@ -676,6 +674,5 @@ union  {  member-list  }
 ## See Also  
  [Classes and Structs](../cpp/classes-and-structs-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)   
- [Anonymous Unions](../misc/anonymous-unions.md)   
  [class](../cpp/class-cpp.md)   
  [struct](../cpp/struct-cpp.md)

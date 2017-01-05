@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Drawing Images from an Image List
-To draw an image, use the [CImageList::Draw](../mfc/reference/cimagelist-class.md#cimagelist__draw) member function. You'll specify a pointer to a device context object, the index of the image to draw, the location in the device context at which to draw the image, and a set of flags to indicate the drawing style.  
+To draw an image, use the [CImageList::Draw](../mfc/reference/cimagelist-class.md#draw) member function. You'll specify a pointer to a device context object, the index of the image to draw, the location in the device context at which to draw the image, and a set of flags to indicate the drawing style.  
   
  When you specify the `ILD_TRANSPARENT` style, **Draw** uses a two-step process to draw a masked image. First, it performs a logical-AND operation on the bits of the image and the bits of the mask. Then it performs a logical-XOR operation on the results of the first operation and the background bits of the destination device context. This process creates transparent areas in the resulting image; that is, each white bit in the mask causes the corresponding bit in the resulting image to be transparent.  
   

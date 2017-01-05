@@ -88,25 +88,3 @@ public:
    S test;  
 };  
 ```  
-  
-## Example  
- The following sample generates C2678 and shows how to fix it.  
-  
-```  
-// C2678_2.cpp  
-// compile with: /clr:oldSyntax /c  
-struct S { int _a; };  
-  
-__gc class C {  
-public:  
-   void M(S param) {  
-      test = param;   // C2678  
-  
-      // OK  
-      S __pin* ptest = &test;  
-      *ptest = param;  
-   }  
-  
-   S test;  
-};  
-```

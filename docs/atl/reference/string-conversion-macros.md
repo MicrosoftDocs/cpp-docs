@@ -35,15 +35,11 @@ These macros provide string conversion features.
   
 |||  
 |-|-|  
-|[ATL and MFC String Conversion Macros](../Topic/ATL%20and%20MFC%20String%20Conversion%20Macros.md)|Set of macros that convert between string types.|  
-|[DEVMODE and TEXTMETRIC String Conversion Macros](../Topic/DEVMODE%20and%20TEXTMETRIC%20String%20Conversion%20Macros.md)|Set of macros that convert the strings within `DEVMODE` and `TEXTMETRIC` structures.|  
+|[ATL and MFC String Conversion Macros](http://msdn.microsoft.com/library/8f53659e-0464-4424-97db-6b8453c49863)|Set of macros that convert between string types.|  
+|[DEVMODE and TEXTMETRIC String Conversion Macros](http://msdn.microsoft.com/library/85cebec0-2a18-48e5-9c1c-99d5b7f15425)|Set of macros that convert the strings within `DEVMODE` and `TEXTMETRIC` structures.|  
   
 ##  <a name="atl_and_mfc_string_conversion_macros"></a>  ATL and MFC String Conversion Macros  
  The string conversion macros discussed here are valid for both ATL and MFC. For more information on MFC string conversion, see [TN059: Using MFC MBCS/Unicode Conversion Macros](../../mfc/tn059-using-mfc-mbcs-unicode-conversion-macros.md) and [MFC Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md).  
-  
-- [ATL 7.0 String Conversion Classes and Macros](#atl70stringconversionclassesmacros)  
-  
-- [ATL 3.0 String Conversion Macros](#atl30stringconversionmacros)  
   
 ##  <a name="devmode_and_textmetric_string_conversion_macros"></a>  DEVMODE and TEXTMETRIC String Conversion Macros  
  These macros create a copy of a [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) or [TEXTMETRIC](http://msdn.microsoft.com/library/windows/desktop/dd145132) structure and convert the strings within the new structure to a new string type. The macros allocate memory on the stack for the new structure and return a pointer to the new structure.  
@@ -55,11 +51,11 @@ MACRONAME( address_of_structure )
 ### Remarks  
  For example:  
   
- [!code-cpp[NVC_ATL_Utilities#128](../../atl/codesnippet/CPP/string-conversion-macros_1.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#128](../../atl/codesnippet/cpp/string-conversion-macros_1.cpp)]  
   
  and:  
   
- [!code-cpp[NVC_ATL_Utilities#129](../../atl/codesnippet/CPP/string-conversion-macros_2.cpp)]  
+ [!code-cpp[NVC_ATL_Utilities#129](../../atl/codesnippet/cpp/string-conversion-macros_2.cpp)]  
   
  In the macro names, the string type in the source structure is on the left (for example, **A**) and the string type in the destination structure is on the right (for example, **W**). **A** stands for **LPSTR**, **OLE** stands for `LPOLESTR`, **T** stands for `LPTSTR`, and **W** stands for `LPWSTR`.  
   

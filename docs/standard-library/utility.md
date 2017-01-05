@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # &lt;utility&gt;
-Defines Standard Template Library (STL) types, functions, and operators that help to construct and manage pairs of objects, which are useful whenever two objects need to be treated as if they were one.  
+Defines C++ Standard Library types, functions, and operators that help to construct and manage pairs of objects, which are useful whenever two objects need to be treated as if they were one.  
   
 ## Syntax  
   
@@ -48,7 +48,7 @@ Defines Standard Template Library (STL) types, functions, and operators that hel
 ```  
   
 ## Remarks  
- Pairs are widely used in the Standard C++ Library. They are required both as the arguments and return values for various functions and as element types for containers such as [map class](../standard-library/map-class.md) and [multimap class](../standard-library/multimap-class.md). The \<utility> header is automatically included by \<map> to assist in managing their key/value pair type elements.  
+ Pairs are widely used in the C++ Standard Library. They are required both as the arguments and return values for various functions and as element types for containers such as [map class](../standard-library/map-class.md) and [multimap class](../standard-library/multimap-class.md). The \<utility> header is automatically included by \<map> to assist in managing their key/value pair type elements.  
   
 ### Classes  
   
@@ -62,7 +62,7 @@ Defines Standard Template Library (STL) types, functions, and operators that hel
 |||  
 |-|-|  
 |[forward](../standard-library/utility-functions.md#forward)|Preserves the reference type (either `lvalue` or `rvalue`) of the argument from being obscured by perfect forwarding.|  
-|[get](../standard-library/utility-functions.md#get_function__lt_utility_gt_)|A function that gets an element from a `pair` object.|  
+|[get](../standard-library/utility-functions.md#get)|A function that gets an element from a `pair` object.|  
 |[make_pair](../standard-library/utility-functions.md#make_pair)|A template helper function used to construct objects of type `pair`, where the component types are based on the data types passed as parameters.|  
 |[move](../standard-library/utility-functions.md#move)|Returns the passed in argument as an `rvalue` reference.|  
 |[swap](../standard-library/utility-functions.md#swap)|Exchanges the elements of two `pair` objects.|  

@@ -55,4 +55,4 @@ Edit and Continue does not support changes to data types; build required
   
 2.  From the **Build** menu, choose **Build**.  
   
- For further information, see the [Supported Code Changes](/visual-studio/debugger/supported-code-changes-cpp).
+ For further information, see the [Supported Code Changes](/visualstudio/debugger/supported-code-changes-cpp).

@@ -16,7 +16,7 @@ f1_keywords:
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "= operator, with specific standard C++ library objects"
+  - "= operator, with specific C++ Standard Library objects"
   - "reference::operator="
 ms.assetid: eed20d81-36b9-40b2-a3b6-340ed0bb4f34
 caps.latest.revision: 20
@@ -137,5 +137,5 @@ The original value of the 3rd element still stored in a bool: false
   
 ## See Also  
  [vector\<bool>::reference Class](../standard-library/vector-bool-reference-class.md)   
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 

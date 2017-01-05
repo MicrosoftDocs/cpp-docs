@@ -34,7 +34,8 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Concurrency::precise_math Namespace
-Functions in the `precise_math` namespace are C99 compliant. Both single precision and double precision versions of each function are included. For example, `acos` is the double-precision version and `acosf` is the single-precision version. These functions, including the single-precision functions, require extended double-precision support on the accelerator. You can use the [accelerator::supports_double_precision Data Member](../Topic/accelerator::supports_double_precision%20Data%20Member.md) to determine if you can run these functions on a specific accelerator.  
+Functions in the `precise_math` namespace are C99 compliant. Both single precision and double precision versions of each function are included. For example, `acos` is the double-precision version and `acosf` is the single-precision version. These functions, including the single-precision functions, require extended double-precision support on the accelerator. You can use the [accelerator::supports_double_precision Data Member](accelerator-class.md#supports_double_precision) to determine if you can run these functions on a specific accelerator. 
+
   
 ## Syntax  
   
@@ -50,137 +51,137 @@ namespace precise_math;
   
 |Name|Description|  
 |----------|-----------------|  
-|[acos Function](../Topic/acos%20Function.md)|Overloaded. Calculates the arccosine of the argument|  
-|[acosf Function](../Topic/acosf%20Function.md)|Calculates the arccosine of the argument|  
-|[acosh Function](../Topic/acosh%20Function.md)|Overloaded. Calculates the inverse hyperbolic cosine of the argument|  
-|[acoshf Function](../Topic/acoshf%20Function.md)|Calculates the inverse hyperbolic cosine of the argument|  
-|[asin Function](../Topic/asin%20Function.md)|Overloaded. Calculates the arcsine of the argument|  
-|[asinf Function](../Topic/asinf%20Function.md)|Calculates the arcsine of the argument|  
-|[asinh Function](../Topic/asinh%20Function.md)|Overloaded. Calculates the inverse hyperbolic sine of the argument|  
-|[asinhf Function](../Topic/asinhf%20Function.md)|Calculates the inverse hyperbolic sine of the argument|  
-|[atan Function](../Topic/atan%20Function.md)|Overloaded. Calculates the arctangent of the argument|  
-|[atan2 Function](../Topic/atan2%20Function.md)|Overloaded. Calculates the arctangent of _Y/_X|  
-|[atan2f Function](../Topic/atan2f%20Function.md)|Calculates the arctangent of _Y/_X|  
-|[atanf Function](../Topic/atanf%20Function.md)|Calculates the arctangent of the argument|  
-|[atanh Function](../Topic/atanh%20Function.md)|Overloaded. Calculates the inverse hyperbolic tangent of the argument|  
-|[atanhf Function](../Topic/atanhf%20Function.md)|Calculates the inverse hyperbolic tangent of the argument|  
-|[cbrt Function](../Topic/cbrt%20Function.md)|Overloaded. Computes the real cube root of the argument|  
-|[cbrtf Function](../Topic/cbrtf%20Function.md)|Computes the real cube root of the argument|  
-|[ceil Function](../Topic/ceil%20Function.md)|Overloaded. Calculates the ceiling of the argument|  
-|[ceilf Function](../Topic/ceilf%20Function.md)|Calculates the ceiling of the argument|  
-|[copysign Function](../Topic/copysign%20Function.md)|Overloaded. Produces a value with the magnitude of _X and the sign of _Y|  
-|[copysignf Function](../Topic/copysignf%20Function.md)|Produces a value with the magnitude of _X and the sign of _Y|  
-|[cos Function](../Topic/cos%20Function.md)|Overloaded. Calculates the cosine of the argument|  
-|[cosf Function](../Topic/cosf%20Function.md)|Calculates the cosine of the argument|  
-|[cosh Function](../Topic/cosh%20Function.md)|Overloaded. Calculates the hyperbolic cosine value of the argument|  
-|[coshf Function](../Topic/coshf%20Function.md)|Calculates the hyperbolic cosine value of the argument|  
-|[cospi Function](../Topic/cospi%20Function.md)|Overloaded. Calculates the cosine value of pi * _X|  
-|[cospif Function](../Topic/cospif%20Function.md)|Calculates the cosine value of pi * _X|  
-|[erf Function](../Topic/erf%20Function.md)|Overloaded. Computes the error function of _X|  
-|[erfc Function](../Topic/erfc%20Function.md)|Overloaded. Computes the complementary error function of _X|  
-|[erfcf Function](../Topic/erfcf%20Function.md)|Computes the complementary error function of _X|  
-|[erfcinv Function](../Topic/erfcinv%20Function.md)|Overloaded. Computes the inverse complementary error function of _X|  
-|[erfcinvf Function](../Topic/erfcinvf%20Function.md)|Computes the inverse complementary error function of _X|  
-|[erff Function](../Topic/erff%20Function.md)|Computes the error function of _X|  
-|[erfinv Function](../Topic/erfinv%20Function.md)|Overloaded. Computes the inverse error function of _X|  
-|[erfinvf Function](../Topic/erfinvf%20Function.md)|Computes the inverse error function of _X|  
-|[exp Function](../Topic/exp%20Function.md)|Overloaded. Calculates the base-e exponential of the argument|  
-|[exp10 Function](../Topic/exp10%20Function.md)|Overloaded. Calculates the base-10 exponential of the argument|  
-|[exp10f Function](../Topic/exp10f%20Function.md)|Calculates the base-10 exponential of the argument|  
-|[exp2 Function](../Topic/exp2%20Function.md)|Overloaded. Calculates the base-2 exponential of the argument|  
-|[exp2f Function](../Topic/exp2f%20Function.md)|Calculates the base-2 exponential of the argument|  
-|[expf Function](../Topic/expf%20Function.md)|Calculates the base-e exponential of the argument|  
-|[expm1 Function](../Topic/expm1%20Function.md)|Overloaded. Calculates the base-e exponential of the argument, minus 1|  
-|[expm1f Function](../Topic/expm1f%20Function.md)|Calculates the base-e exponential of the argument, minus 1|  
-|[fabs Function](../Topic/fabs%20Function.md)|Overloaded. Returns the absolute value of the argument|  
-|[fabsf Function](../Topic/fabsf%20Function.md)|Returns the absolute value of the argument|  
-|[fdim Function](../Topic/fdim%20Function.md)|Overloaded. Determines the positive difference between the arguments|  
-|[fdimf Function](../Topic/fdimf%20Function.md)|Determines the positive difference between the arguments|  
-|[floor Function](../Topic/floor%20Function.md)|Overloaded. Calculates the floor of the argument|  
-|[floorf Function](../Topic/floorf%20Function.md)|Calculates the floor of the argument|  
-|[fma Function](../Topic/fma%20Function.md)|Overloaded. Compute (_X * _Y) + _Z, rounded as one ternary operation|  
-|[fmaf Function](../Topic/fmaf%20Function.md)|Compute (_X * _Y) + _Z, rounded as one ternary operation|  
-|[fmax Function](../Topic/fmax%20Function.md)|Overloaded. Determine the maximum numeric value of the arguments|  
-|[fmaxf Function](../Topic/fmaxf%20Function.md)|Determine the maximum numeric value of the arguments|  
-|[fmin Function](../Topic/fmin%20Function.md)|Overloaded. Determine the minimum numeric value of the arguments|  
-|[fminf Function](../Topic/fminf%20Function.md)|Determine the minimum numeric value of the arguments|  
-|[fmod Function (C++ AMP)](../Topic/fmod%20Function%20\(C++%20AMP\).md)|Overloaded. Calculates the floating-point remainder of _X/_Y|  
-|[fmodf Function](../Topic/fmodf%20Function.md)|Calculates the floating-point remainder of _X/_Y|  
-|[fpclassify Function](../Topic/fpclassify%20Function.md)|Overloaded. Classifies the argument value as NaN, infinite, normal, subnormal, zero|  
-|[frexp Function](../Topic/frexp%20Function.md)|Overloaded. Gets the mantissa and exponent of _X|  
-|[frexpf Function](../Topic/frexpf%20Function.md)|Gets the mantissa and exponent of _X|  
-|[hypot Function](../Topic/hypot%20Function.md)|Overloaded. Computes the square root of the sum of the squares of _X and _Y|  
-|[hypotf Function](../Topic/hypotf%20Function.md)|Computes the square root of the sum of the squares of _X and _Y|  
-|[ilogb Function](../Topic/ilogb%20Function.md)|Overloaded. Extract the exponent of _X as a signed int value|  
-|[ilogbf Function](../Topic/ilogbf%20Function.md)|Extract the exponent of _X as a signed int value|  
-|[isfinite Function](../Topic/isfinite%20Function.md)|Overloaded. Determines whether the argument has a finite value|  
-|[isinf Function](../Topic/isinf%20Function.md)|Overloaded. Determines whether the argument is an infinity|  
-|[isnan Function](../Topic/isnan%20Function.md)|Overloaded. Determines whether the argument is a NaN|  
-|[isnormal Function](../Topic/isnormal%20Function.md)|Overloaded. Determines whether the argument is a normal|  
-|[ldexp Function](../Topic/ldexp%20Function.md)|Overloaded. Computes a real number from the mantissa and exponent|  
-|[ldexpf Function](../Topic/ldexpf%20Function.md)|Computes a real number from the mantissa and exponent|  
-|[lgamma Function](../Topic/lgamma%20Function.md)|Overloaded. Computes the natural logarithm of the absolute value of gamma of the argument|  
-|[lgammaf Function](../Topic/lgammaf%20Function.md)|Computes the natural logarithm of the absolute value of gamma of the argument|  
-|[log Function](../Topic/log%20Function.md)|Overloaded. Calculates the base-e logarithm of the argument|  
-|[log10 Function](../Topic/log10%20Function.md)|Overloaded. Calculates the base-10 logarithm of the argument|  
-|[log10f Function](../Topic/log10f%20Function.md)|Calculates the base-10 logarithm of the argument|  
-|[log1p Function](../Topic/log1p%20Function.md)|Overloaded. Calculates the base-e logarithm of 1 plus the argument|  
-|[log1pf Function](../Topic/log1pf%20Function.md)|Calculates the base-e logarithm of 1 plus the argument|  
-|[log2 Function](../Topic/log2%20Function.md)|Overloaded. Calculates the base-2 logarithm of the argument|  
-|[log2f Function](../Topic/log2f%20Function.md)|Calculates the base-2 logarithm of the argument|  
-|[logb Function](../Topic/logb%20Function.md)|Overloaded. Extracts the exponent of _X, as a signed integer value in floating-point format|  
-|[logbf Function](../Topic/logbf%20Function.md)|Extracts the exponent of _X, as a signed integer value in floating-point format|  
-|[logf Function](../Topic/logf%20Function.md)|Calculates the base-e logarithm of the argument|  
-|[modf Function](../Topic/modf%20Function.md)|Overloaded. Splits _X into fractional and integer parts.|  
-|[modff Function](../Topic/modff%20Function.md)|Splits _X into fractional and integer parts.|  
-|[nan Function](../Topic/nan%20Function.md)|Returns a quiet NaN|  
-|[nanf Function](../Topic/nanf%20Function.md)|Returns a quiet NaN|  
-|[nearbyint Function](../Topic/nearbyint%20Function.md)|Overloaded. Rounds the argument to an integer value in floating-point format, using the current rounding direction.|  
-|[nearbyintf Function](../Topic/nearbyintf%20Function.md)|Rounds the argument to an integer value in floating-point format, using the current rounding direction.|  
-|[nextafter Function](../Topic/nextafter%20Function.md)|Overloaded. Determine the next representable value, in the type of the function, after _X in the direction of _Y|  
-|[nextafterf Function](../Topic/nextafterf%20Function.md)|Determine the next representable value, in the type of the function, after _X in the direction of _Y|  
-|[phi Function](../Topic/phi%20Function.md)|Overloaded. Returns the cumulative distribution function of the argument|  
-|[phif Function](../Topic/phif%20Function.md)|Returns the cumulative distribution function of the argument|  
-|[pow Function](../Topic/pow%20Function.md)|Overloaded. Calculates _X raised to the power of _Y|  
-|[powf Function](../Topic/powf%20Function.md)|Calculates _X raised to the power of _Y|  
-|[probit Function](../Topic/probit%20Function.md)|Overloaded. Returns the inverse cumulative distribution function of the argument|  
-|[probitf Function](../Topic/probitf%20Function.md)|Returns the inverse cumulative distribution function of the argument|  
-|[rcbrt Function](../Topic/rcbrt%20Function.md)|Overloaded. Returns the reciprocal of the cube root of the argument|  
-|[rcbrtf Function](../Topic/rcbrtf%20Function.md)|Returns the reciprocal of the cube root of the argument|  
-|[remainder Function](../Topic/remainder%20Function.md)|Overloaded. Computes the remainder: _X REM _Y|  
-|[remainderf Function](../Topic/remainderf%20Function.md)|Computes the remainder: _X REM _Y|  
-|[remquo Function](../Topic/remquo%20Function.md)|Overloaded. Computes the same remainder as _X REM _Y. Also calculates the lower 23 bits of the integral quotient _X/_Y, and gives that value the same sign as _X/_Y. It stores this signed value in the integer pointed to by _Quo.|  
-|[remquof Function](../Topic/remquof%20Function.md)|Computes the same remainder as _X REM _Y. Also calculates the lower 23 bits of the integral quotient _X/_Y, and gives that value the same sign as _X/_Y. It stores this signed value in the integer pointed to by _Quo.|  
-|[round Function](../Topic/round%20Function.md)|Overloaded. Rounds _X to the nearest integer|  
-|[roundf Function](../Topic/roundf%20Function.md)|Rounds _X to the nearest integer|  
-|[rsqrt Function](../Topic/rsqrt%20Function.md)|Overloaded. Returns the reciprocal of the square root of the argument|  
-|[rsqrtf Function](../Topic/rsqrtf%20Function.md)|Returns the reciprocal of the square root of the argument|  
-|[scalb Function](../Topic/scalb%20Function.md)|Overloaded. Multiplies _X by FLT_RADIX to the power _Y|  
-|[scalbf Function](../Topic/scalbf%20Function.md)|Multiplies _X by FLT_RADIX to the power _Y|  
-|[scalbn Function](../Topic/scalbn%20Function.md)|Overloaded. Multiplies _X by FLT_RADIX to the power _Y|  
-|[scalbnf Function](../Topic/scalbnf%20Function.md)|Multiplies _X by FLT_RADIX to the power _Y|  
-|[signbit Function](../Topic/signbit%20Function.md)|Overloaded. Determines whether the sign of _X is negative|  
-|[signbitf Function](../Topic/signbitf%20Function.md)|Determines whether the sign of _X is negative|  
-|[sin Function](../Topic/sin%20Function.md)|Overloaded. Calculates the sine value of the argument|  
-|[sincos Function](../Topic/sincos%20Function.md)|Overloaded. Calculates sine and cosine value of _X|  
-|[sincosf Function](../Topic/sincosf%20Function.md)|Calculates sine and cosine value of _X|  
-|[sinf Function](../Topic/sinf%20Function.md)|Calculates the sine value of the argument|  
-|[sinh Function](../Topic/sinh%20Function.md)|Overloaded. Calculates the hyperbolic sine value of the argument|  
-|[sinhf Function](../Topic/sinhf%20Function.md)|Calculates the hyperbolic sine value of the argument|  
-|[sinpi Function](../Topic/sinpi%20Function.md)|Overloaded. Calculates the sine value of pi * _X|  
-|[sinpif Function](../Topic/sinpif%20Function.md)|Calculates the sine value of pi * _X|  
-|[sqrt Function](../Topic/sqrt%20Function.md)|Overloaded. Calculates the squre root of the argument|  
-|[sqrtf Function](../Topic/sqrtf%20Function.md)|Calculates the squre root of the argument|  
-|[tan Function](../Topic/tan%20Function.md)|Overloaded. Calculates the tangent value of the argument|  
-|[tanf Function](../Topic/tanf%20Function.md)|Calculates the tangent value of the argument|  
-|[tanh Function](../Topic/tanh%20Function.md)|Overloaded. Calculates the hyperbolic tangent value of the argument|  
-|[tanhf Function](../Topic/tanhf%20Function.md)|Calculates the hyperbolic tangent value of the argument|  
-|[tanpi Function](../Topic/tanpi%20Function.md)|Overloaded. Calculates the tangent value of pi * _X|  
-|[tanpif Function](../Topic/tanpif%20Function.md)|Calculates the tangent value of pi * _X|  
-|[tgamma Function](../Topic/tgamma%20Function.md)|Overloaded. Computes the gamma function of _X|  
-|[tgammaf Function](../Topic/tgammaf%20Function.md)|Computes the gamma function of _X|  
-|[trunc Function](../Topic/trunc%20Function.md)|Overloaded. Truncates the argument to the integer component|  
-|[truncf Function](../Topic/truncf%20Function.md)|Truncates the argument to the integer component|  
+|[acos Function](concurrency-precise-math-namespace-functions.md#acos)|Overloaded. Calculates the arccosine of the argument|  
+|[acosf Function](concurrency-precise-math-namespace-functions.md#acosf)|Calculates the arccosine of the argument|  
+|[acosh Function](concurrency-precise-math-namespace-functions.md#acosh)|Overloaded. Calculates the inverse hyperbolic cosine of the argument|  
+|[acoshf Function](concurrency-precise-math-namespace-functions.md#acoshf)|Calculates the inverse hyperbolic cosine of the argument|  
+|[asin Function](concurrency-precise-math-namespace-functions.md#asin)|Overloaded. Calculates the arcsine of the argument|  
+|[asinf Function](concurrency-precise-math-namespace-functions.md#asinf)|Calculates the arcsine of the argument|  
+|[asinh Function](concurrency-precise-math-namespace-functions.md#asinh)|Overloaded. Calculates the inverse hyperbolic sine of the argument|  
+|[asinhf Function](concurrency-precise-math-namespace-functions.md#asinhf)|Calculates the inverse hyperbolic sine of the argument|  
+|[atan Function](concurrency-precise-math-namespace-functions.md#atan)|Overloaded. Calculates the arctangent of the argument|  
+|[atan2 Function](concurrency-precise-math-namespace-functions.md#atan2)|Overloaded. Calculates the arctangent of _Y/_X|  
+|[atan2f Function](concurrency-precise-math-namespace-functions.md#atan2f)|Calculates the arctangent of _Y/_X|  
+|[atanf Function](concurrency-precise-math-namespace-functions.md#atanf)|Calculates the arctangent of the argument|  
+|[atanh Function](concurrency-precise-math-namespace-functions.md#atanh)|Overloaded. Calculates the inverse hyperbolic tangent of the argument|  
+|[atanhf Function](concurrency-precise-math-namespace-functions.md#atanhf)|Calculates the inverse hyperbolic tangent of the argument|  
+|[cbrt Function](concurrency-precise-math-namespace-functions.md#cbrt)|Overloaded. Computes the real cube root of the argument|  
+|[cbrtf Function](concurrency-precise-math-namespace-functions.md#cbrtf)|Computes the real cube root of the argument|  
+|[ceil Function](concurrency-precise-math-namespace-functions.md#ceil)|Overloaded. Calculates the ceiling of the argument|  
+|[ceilf Function](concurrency-precise-math-namespace-functions.md#ceilf)|Calculates the ceiling of the argument|  
+|[copysign Function](concurrency-precise-math-namespace-functions.md#copysign)|Overloaded. Produces a value with the magnitude of _X and the sign of _Y|  
+|[copysignf Function](concurrency-precise-math-namespace-functions.md#copysignf)|Produces a value with the magnitude of _X and the sign of _Y|  
+|[cos Function](concurrency-precise-math-namespace-functions.md#cos)|Overloaded. Calculates the cosine of the argument|  
+|[cosf Function](concurrency-precise-math-namespace-functions.md#cosf)|Calculates the cosine of the argument|  
+|[cosh Function](concurrency-precise-math-namespace-functions.md#cosh)|Overloaded. Calculates the hyperbolic cosine value of the argument|  
+|[coshf Function](concurrency-precise-math-namespace-functions.md#coshf)|Calculates the hyperbolic cosine value of the argument|  
+|[cospi Function](concurrency-precise-math-namespace-functions.md#cospi)|Overloaded. Calculates the cosine value of pi * _X|  
+|[cospif Function](concurrency-precise-math-namespace-functions.md#cospif)|Calculates the cosine value of pi * _X|  
+|[erf Function](concurrency-precise-math-namespace-functions.md#erf)|Overloaded. Computes the error function of _X|  
+|[erfc Function](concurrency-precise-math-namespace-functions.md#erfc)|Overloaded. Computes the complementary error function of _X|  
+|[erfcf Function](concurrency-precise-math-namespace-functions.md#erfcf)|Computes the complementary error function of _X|  
+|[erfcinv Function](concurrency-precise-math-namespace-functions.md#erfcinv)|Overloaded. Computes the inverse complementary error function of _X|  
+|[erfcinvf Function](concurrency-precise-math-namespace-functions.md#erfcinvf)|Computes the inverse complementary error function of _X|  
+|[erff Function](concurrency-precise-math-namespace-functions.md#erff)|Computes the error function of _X|  
+|[erfinv Function](concurrency-precise-math-namespace-functions.md#erfinv)|Overloaded. Computes the inverse error function of _X|  
+|[erfinvf Function](concurrency-precise-math-namespace-functions.md#erfinvf)|Computes the inverse error function of _X|  
+|[exp Function](concurrency-precise-math-namespace-functions.md#exp)|Overloaded. Calculates the base-e exponential of the argument|  
+|[exp10 Function](concurrency-precise-math-namespace-functions.md#exp10)|Overloaded. Calculates the base-10 exponential of the argument|  
+|[exp10f Function](concurrency-precise-math-namespace-functions.md#exp10f)|Calculates the base-10 exponential of the argument|  
+|[exp2 Function](concurrency-precise-math-namespace-functions.md#exp2)|Overloaded. Calculates the base-2 exponential of the argument|  
+|[exp2f Function](concurrency-precise-math-namespace-functions.md#exp2f)|Calculates the base-2 exponential of the argument|  
+|[expf Function](concurrency-precise-math-namespace-functions.md#expf)|Calculates the base-e exponential of the argument|  
+|[expm1 Function](concurrency-precise-math-namespace-functions.md#expm1)|Overloaded. Calculates the base-e exponential of the argument, minus 1|  
+|[expm1f Function](concurrency-precise-math-namespace-functions.md#expm1f)|Calculates the base-e exponential of the argument, minus 1|  
+|[fabs Function](concurrency-precise-math-namespace-functions.md#fabs)|Overloaded. Returns the absolute value of the argument|  
+|[fabsf Function](concurrency-precise-math-namespace-functions.md#fabsf)|Returns the absolute value of the argument|  
+|[fdim Function](concurrency-precise-math-namespace-functions.md#fdim)|Overloaded. Determines the positive difference between the arguments|  
+|[fdimf Function](concurrency-precise-math-namespace-functions.md#fdimf)|Determines the positive difference between the arguments|  
+|[floor Function](concurrency-precise-math-namespace-functions.md#floor)|Overloaded. Calculates the floor of the argument|  
+|[floorf Function](concurrency-precise-math-namespace-functions.md#floorf)|Calculates the floor of the argument|  
+|[fma Function](concurrency-precise-math-namespace-functions.md#fma)|Overloaded. Compute (_X * _Y) + _Z, rounded as one ternary operation|  
+|[fmaf Function](concurrency-precise-math-namespace-functions.md#fmaf)|Compute (_X * _Y) + _Z, rounded as one ternary operation|  
+|[fmax Function](concurrency-precise-math-namespace-functions.md#fmax)|Overloaded. Determine the maximum numeric value of the arguments|  
+|[fmaxf Function](concurrency-precise-math-namespace-functions.md#fmaxf)|Determine the maximum numeric value of the arguments|  
+|[fmin Function](concurrency-precise-math-namespace-functions.md#fmin)|Overloaded. Determine the minimum numeric value of the arguments|  
+|[fminf Function](concurrency-precise-math-namespace-functions.md#fminf)|Determine the minimum numeric value of the arguments|  
+|[fmod Function (C++ AMP)](concurrency-precise-math-namespace-functions.md#fmod)|Overloaded. Calculates the floating-point remainder of _X/_Y|  
+|[fmodf Function](concurrency-precise-math-namespace-functions.md#fmodf)|Calculates the floating-point remainder of _X/_Y|  
+|[fpclassify Function](concurrency-precise-math-namespace-functions.md#fpclassify)|Overloaded. Classifies the argument value as NaN, infinite, normal, subnormal, zero|  
+|[frexp Function](concurrency-precise-math-namespace-functions.md#frexp)|Overloaded. Gets the mantissa and exponent of _X|  
+|[frexpf Function](concurrency-precise-math-namespace-functions.md#frexpf)|Gets the mantissa and exponent of _X|  
+|[hypot Function](concurrency-precise-math-namespace-functions.md#hypot)|Overloaded. Computes the square root of the sum of the squares of _X and _Y|  
+|[hypotf Function](concurrency-precise-math-namespace-functions.md#hypotf)|Computes the square root of the sum of the squares of _X and _Y|  
+|[ilogb Function](concurrency-precise-math-namespace-functions.md#ilogb)|Overloaded. Extract the exponent of _X as a signed int value|  
+|[ilogbf Function](concurrency-precise-math-namespace-functions.md#ilogbf)|Extract the exponent of _X as a signed int value|  
+|[isfinite Function](concurrency-precise-math-namespace-functions.md#isfinite)|Overloaded. Determines whether the argument has a finite value|  
+|[isinf Function](concurrency-precise-math-namespace-functions.md#isinf)|Overloaded. Determines whether the argument is an infinity|  
+|[isnan Function](concurrency-precise-math-namespace-functions.md#isnan)|Overloaded. Determines whether the argument is a NaN|  
+|[isnormal Function](concurrency-precise-math-namespace-functions.md#isnormal)|Overloaded. Determines whether the argument is a normal|  
+|[ldexp Function](concurrency-precise-math-namespace-functions.md#ldexp)|Overloaded. Computes a real number from the mantissa and exponent|  
+|[ldexpf Function](concurrency-precise-math-namespace-functions.md#ldexpf)|Computes a real number from the mantissa and exponent|  
+|[lgamma Function](concurrency-precise-math-namespace-functions.md#lgamma)|Overloaded. Computes the natural logarithm of the absolute value of gamma of the argument|  
+|[lgammaf Function](concurrency-precise-math-namespace-functions.md#lgammaf)|Computes the natural logarithm of the absolute value of gamma of the argument|  
+|[log Function](concurrency-precise-math-namespace-functions.md#log)|Overloaded. Calculates the base-e logarithm of the argument|  
+|[log10 Function](concurrency-precise-math-namespace-functions.md#log10)|Overloaded. Calculates the base-10 logarithm of the argument|  
+|[log10f Function](concurrency-precise-math-namespace-functions.md#log10f)|Calculates the base-10 logarithm of the argument|  
+|[log1p Function](concurrency-precise-math-namespace-functions.md#log1p)|Overloaded. Calculates the base-e logarithm of 1 plus the argument|  
+|[log1pf Function](concurrency-precise-math-namespace-functions.md#log1pf)|Calculates the base-e logarithm of 1 plus the argument|  
+|[log2 Function](concurrency-precise-math-namespace-functions.md#log2)|Overloaded. Calculates the base-2 logarithm of the argument|  
+|[log2f Function](concurrency-precise-math-namespace-functions.md#log2f)|Calculates the base-2 logarithm of the argument|  
+|[logb Function](concurrency-precise-math-namespace-functions.md#logb)|Overloaded. Extracts the exponent of _X, as a signed integer value in floating-point format|  
+|[logbf Function](concurrency-precise-math-namespace-functions.md#logbf)|Extracts the exponent of _X, as a signed integer value in floating-point format|  
+|[logf Function](concurrency-precise-math-namespace-functions.md#logf)|Calculates the base-e logarithm of the argument|  
+|[modf Function](concurrency-precise-math-namespace-functions.md#modf)|Overloaded. Splits _X into fractional and integer parts.|  
+|[modff Function](concurrency-precise-math-namespace-functions.md#modff)|Splits _X into fractional and integer parts.|  
+|[nan Function](concurrency-precise-math-namespace-functions.md#nan)|Returns a quiet NaN|  
+|[nanf Function](concurrency-precise-math-namespace-functions.md#nanf)|Returns a quiet NaN|  
+|[nearbyint Function](concurrency-precise-math-namespace-functions.md#nearbyint)|Overloaded. Rounds the argument to an integer value in floating-point format, using the current rounding direction.|  
+|[nearbyintf Function](concurrency-precise-math-namespace-functions.md#nearbyintf)|Rounds the argument to an integer value in floating-point format, using the current rounding direction.|  
+|[nextafter Function](concurrency-precise-math-namespace-functions.md#nextafter)|Overloaded. Determine the next representable value, in the type of the function, after _X in the direction of _Y|  
+|[nextafterf Function](concurrency-precise-math-namespace-functions.md#nextafterf)|Determine the next representable value, in the type of the function, after _X in the direction of _Y|  
+|[phi Function](concurrency-precise-math-namespace-functions.md#phi)|Overloaded. Returns the cumulative distribution function of the argument|  
+|[phif Function](concurrency-precise-math-namespace-functions.md#phif)|Returns the cumulative distribution function of the argument|  
+|[pow Function](concurrency-precise-math-namespace-functions.md#pow)|Overloaded. Calculates _X raised to the power of _Y|  
+|[powf Function](concurrency-precise-math-namespace-functions.md#powf)|Calculates _X raised to the power of _Y|  
+|[probit Function](concurrency-precise-math-namespace-functions.md#probit)|Overloaded. Returns the inverse cumulative distribution function of the argument|  
+|[probitf Function](concurrency-precise-math-namespace-functions.md#probitf)|Returns the inverse cumulative distribution function of the argument|  
+|[rcbrt Function](concurrency-precise-math-namespace-functions.md#rcbrt)|Overloaded. Returns the reciprocal of the cube root of the argument|  
+|[rcbrtf Function](concurrency-precise-math-namespace-functions.md#rcbrtf)|Returns the reciprocal of the cube root of the argument|  
+|[remainder Function](concurrency-precise-math-namespace-functions.md#remainder)|Overloaded. Computes the remainder: _X REM _Y|  
+|[remainderf Function](concurrency-precise-math-namespace-functions.md#remainderf)|Computes the remainder: _X REM _Y|  
+|[remquo Function](concurrency-precise-math-namespace-functions.md#remquo)|Overloaded. Computes the same remainder as _X REM _Y. Also calculates the lower 23 bits of the integral quotient _X/_Y, and gives that value the same sign as _X/_Y. It stores this signed value in the integer pointed to by _Quo.|  
+|[remquof Function](concurrency-precise-math-namespace-functions.md#remquof)|Computes the same remainder as _X REM _Y. Also calculates the lower 23 bits of the integral quotient _X/_Y, and gives that value the same sign as _X/_Y. It stores this signed value in the integer pointed to by _Quo.|  
+|[round Function](concurrency-precise-math-namespace-functions.md#round)|Overloaded. Rounds _X to the nearest integer|  
+|[roundf Function](concurrency-precise-math-namespace-functions.md#roundf)|Rounds _X to the nearest integer|  
+|[rsqrt Function](concurrency-precise-math-namespace-functions.md#rsqrt)|Overloaded. Returns the reciprocal of the square root of the argument|  
+|[rsqrtf Function](concurrency-precise-math-namespace-functions.md#rsqrtf)|Returns the reciprocal of the square root of the argument|  
+|[scalb Function](concurrency-precise-math-namespace-functions.md#scalb)|Overloaded. Multiplies _X by FLT_RADIX to the power _Y|  
+|[scalbf Function](concurrency-precise-math-namespace-functions.md#scalbf)|Multiplies _X by FLT_RADIX to the power _Y|  
+|[scalbn Function](concurrency-precise-math-namespace-functions.md#scalbn)|Overloaded. Multiplies _X by FLT_RADIX to the power _Y|  
+|[scalbnf Function](concurrency-precise-math-namespace-functions.md#scalbnf)|Multiplies _X by FLT_RADIX to the power _Y|  
+|[signbit Function](concurrency-precise-math-namespace-functions.md#signbit)|Overloaded. Determines whether the sign of _X is negative|  
+|[signbitf Function](concurrency-precise-math-namespace-functions.md#signbitf)|Determines whether the sign of _X is negative|  
+|[sin Function](concurrency-precise-math-namespace-functions.md#sin)|Overloaded. Calculates the sine value of the argument|  
+|[sincos Function](concurrency-precise-math-namespace-functions.md#sincos)|Overloaded. Calculates sine and cosine value of _X|  
+|[sincosf Function](concurrency-precise-math-namespace-functions.md#sincosf)|Calculates sine and cosine value of _X|  
+|[sinf Function](concurrency-precise-math-namespace-functions.md#sinf)|Calculates the sine value of the argument|  
+|[sinh Function](concurrency-precise-math-namespace-functions.md#sinh)|Overloaded. Calculates the hyperbolic sine value of the argument|  
+|[sinhf Function](concurrency-precise-math-namespace-functions.md#sinhf)|Calculates the hyperbolic sine value of the argument|  
+|[sinpi Function](concurrency-precise-math-namespace-functions.md#sinpi)|Overloaded. Calculates the sine value of pi * _X|  
+|[sinpif Function](concurrency-precise-math-namespace-functions.md#sinpif)|Calculates the sine value of pi * _X|  
+|[sqrt Function](concurrency-precise-math-namespace-functions.md#sqrt)|Overloaded. Calculates the squre root of the argument|  
+|[sqrtf Function](concurrency-precise-math-namespace-functions.md#sqrtf)|Calculates the squre root of the argument|  
+|[tan Function](concurrency-precise-math-namespace-functions.md#tan)|Overloaded. Calculates the tangent value of the argument|  
+|[tanf Function](concurrency-precise-math-namespace-functions.md#tanf)|Calculates the tangent value of the argument|  
+|[tanh Function](concurrency-precise-math-namespace-functions.md#tanh)|Overloaded. Calculates the hyperbolic tangent value of the argument|  
+|[tanhf Function](concurrency-precise-math-namespace-functions.md#tanhf)|Calculates the hyperbolic tangent value of the argument|  
+|[tanpi Function](concurrency-precise-math-namespace-functions.md#tanpi)|Overloaded. Calculates the tangent value of pi * _X|  
+|[tanpif Function](concurrency-precise-math-namespace-functions.md#tanpif)|Calculates the tangent value of pi * _X|  
+|[tgamma Function](concurrency-precise-math-namespace-functions.md#tgamma)|Overloaded. Computes the gamma function of _X|  
+|[tgammaf Function](concurrency-precise-math-namespace-functions.md#tgammaf)|Computes the gamma function of _X|  
+|[trunc Function](concurrency-precise-math-namespace-functions.md#trunc)|Overloaded. Truncates the argument to the integer component|  
+|[truncf Function](concurrency-precise-math-namespace-functions.md#truncf)|Truncates the argument to the integer component|  
   
 ## Requirements  
  **Header:** amp_math.h  
@@ -188,4 +189,4 @@ namespace precise_math;
  **Namespace:** Concurrency  
   
 ## See Also  
- [Concurrency Namespace (C++ AMP)](../../../parallel/amp/reference/concurrency-namespace-cpp-amp.md)
+ [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

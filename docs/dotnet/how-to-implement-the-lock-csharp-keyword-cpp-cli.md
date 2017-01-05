@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Implement the lock C# Keyword (C++/CLI)
-This topic shows how to implement the C# `lock` keyword in Visual C++. For more information, see [lock Statement](/dotnet/csharp/language-reference/keywords/lock-statement).  
+This topic shows how to implement the C# `lock` keyword in Visual C++. 
   
  You can also use the `lock` class in the C++ Support Library. See [Synchronization (lock Class)](../dotnet/synchronization-lock-class.md) for more information.  
   

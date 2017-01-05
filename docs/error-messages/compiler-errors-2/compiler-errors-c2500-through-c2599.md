@@ -87,8 +87,6 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C2535](../../error-messages/compiler-errors-2/compiler-error-c2535.md)  
   
- [Compiler Error C2536](../Topic/Compiler%20Error%20C2536.md)  
-  
  [Compiler Error C2537](../../error-messages/compiler-errors-2/compiler-error-c2537.md)  
   
  [Compiler Error C2540](../../error-messages/compiler-errors-2/compiler-error-c2540.md)  
@@ -124,8 +122,6 @@ The articles in this part of the documentation contain information about a subse
  [Compiler Error C2562](../../error-messages/compiler-errors-2/compiler-error-c2562.md)  
   
  [Compiler Error C2563](../../error-messages/compiler-errors-2/compiler-error-c2563.md)  
-  
- [Compiler Error C2564](../Topic/Compiler%20Error%20C2564.md)  
   
  [Compiler Error C2566](../../error-messages/compiler-errors-2/compiler-error-c2566.md)  
   

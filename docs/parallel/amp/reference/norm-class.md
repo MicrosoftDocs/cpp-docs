@@ -48,7 +48,7 @@ class norm;
   
 |Name|Description|  
 |----------|-----------------|  
-|[norm::norm Constructor](#norm__norm_constructor)|Overloaded. Default constructor. Initialize to 0.0f.|  
+|[norm::norm Constructor](#ctor)|Overloaded. Default constructor. Initialize to 0.0f.|  
   
 ### Public Operators  
   
@@ -72,7 +72,7 @@ class norm;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="norm__norm_constructor"></a>  norm::norm Constructor  
+##  <a name="ctor"></a>  norm::norm Constructor  
  Default constructor. Initialize to 0.0f.  
   
 ```  
@@ -119,4 +119,4 @@ norm(
  The object used to initialize.  
   
 ## See Also  
- [Concurrency::graphics Namespace](../../../parallel/amp/reference/concurrency-graphics-namespace.md)
+ [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

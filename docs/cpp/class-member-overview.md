@@ -41,17 +41,17 @@ A class or struct consists of its members. The work that a class does is perform
 ## Kinds of class members  
  The full list of member categories is as follows:  
   
--   Special Member functions.  
+-   [Special Member Functions](special-member-functions.md).  
   
--   [Member functions](../misc/member-functions-cpp.md).  
+-   [Overview of Member Functions](overview-of-member-functions.md).  
   
--   [Data members](../cpp/static-members-cpp.md) including built-in types and other user defined types.  
+-   [Data members](static-members-cpp.md) including built-in types and other user defined types.  
   
 -   Operators  
   
--   [Nested Class Declarations](../cpp/nested-class-declarations.md) and.)  
+-   [Nested Class Declarations](nested-class-declarations.md) and.)  
   
--   [Unions](../cpp/unions.md)  
+-   [Unions](unions.md)  
   
 -   [Enumerations](../cpp/enumerations-cpp.md).  
   
@@ -128,6 +128,8 @@ int TestRun::_instances{ 0 };
 5.  **(C++11)** Move assignment operator  
   
 6.  Destructor  
+  
+For more information, see [Special Member Functions](../cpp/special-member-functions.md).
   
 ## Memberwise initialization  
  In C++11 and later, non-static member declarators can contain initializers.  

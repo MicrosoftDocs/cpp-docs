@@ -90,15 +90,15 @@ int main()
   
 -   Use asserts to check for errors that should never occur. Use exceptions to check for errors that might occur, for example, errors in input validation on parameters of public functions. For more information, see the section titled **Exceptions vs. Assertions**.  
   
--   Use exceptions when the code that handles the error might be separated from the code that detects the error by one or more intervening function calls. Consider whether to use error codes instead in performance-critical loops when code that handles the error is tightly-coupled to the code that detects it. For more information about when not to use exceptions, see [(NOTINBUILD)When Not to Use Exceptions](http://msdn.microsoft.com/en-us/e810df8b-2217-4e81-bae5-02f0a69f1346).  
+-   Use exceptions when the code that handles the error might be separated from the code that detects the error by one or more intervening function calls. Consider whether to use error codes instead in performance-critical loops when code that handles the error is tightly-coupled to the code that detects it. 
   
 -   For every function that might throw or propagate an exception, provide one of the three exception guarantees: the strong guarantee, the basic guarantee, or the nothrow (noexcept) guarantee. For more information, see [How to: Design for Exception Safety](../cpp/how-to-design-for-exception-safety.md).  
   
--   Throw exceptions by value, catch them by reference. Don’t catch what you can't handle. For more information, see [(NOTINBUILD)Guidelines for Throwing and Catching Exceptions (C++)](http://msdn.microsoft.com/en-us/0a9b0a3a-64c5-43f5-a080-fca69b89e839).  
+-   Throw exceptions by value, catch them by reference. Don’t catch what you can't handle. 
   
 -   Don't use exception specifications, which are deprecated in C++11. For more information, see the section titled **Exception specifications and noexcept**.  
   
--   Use standard library exception types when they apply. Derive custom exception types from the [exception Class](../standard-library/exception-class1.md) hierarchy. For more information, see [(NOTINBUILD)How to: Use the Standard Library Exception Objects](http://msdn.microsoft.com/en-us/ad1fb785-ed4e-4d94-8e84-964353aed7b6).  
+-   Use standard library exception types when they apply. Derive custom exception types from the [exception Class](../standard-library/exception-class.md) hierarchy.  
   
 -   Don't allow exceptions to escape from destructors or memory-deallocation functions.  
   

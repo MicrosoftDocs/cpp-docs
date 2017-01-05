@@ -50,14 +50,13 @@ Use this dialog box to specify general options for [Mt.exe](http://msdn.microsof
  **Yes (/verbose)** specifies that additional build information will be displayed during manifest generation.  
   
  **Assembly Identity**  
- Uses the /identity option to specify an identity string, which comprises the attributes for the [\<assemblyIdentity> Element](../Topic/%3CassemblyIdentity%3E%20Element%20\(ClickOnce%20Application\).md). An identity string begins with the value for the `name` attribute, and is followed by *attribute* = *value* pairs. The attributes in an identity string are delimited by a comma.  
+ Uses the /identity option to specify an identity string, which comprises the attributes for the [\<assemblyIdentity> Element](http://msdn.microsoft.com/Library/f48e9531-efac-4d11-8166-f63a5ece1ac5). An identity string begins with the value for the `name` attribute, and is followed by *attribute* = *value* pairs. The attributes in an identity string are delimited by a comma.  
   
  The following is an example identity string:  
   
  `Microsoft.Windows.Common-Controls, processorArchitecture=x86, version=6.0.0.0, type=win32, publicKeyToken=6595b64144ccf1df`  
   
 ## See Also  
- [ClickOnce Application Manifest](/visual-studio/deployment/clickonce-application-manifest)   
+ [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)   
  [Manifest Tool Property Pages](../ide/manifest-tool-property-pages.md)   
- [How to: Open Project Property Pages](../misc/how-to-open-project-property-pages.md)   
- [How to: Edit Project Property Sheets](../misc/how-to-edit-project-property-sheets.md)
+ [Working with Project Properties](../ide/working-with-project-properties.md)   

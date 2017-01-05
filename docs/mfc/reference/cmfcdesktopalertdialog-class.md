@@ -49,10 +49,10 @@ class CMFCDesktopAlertDialog : public CDialogEx
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCDesktopAlertDialog::CreateFromParams](#cmfcdesktopalertdialog__createfromparams)||  
-|[CMFCDesktopAlertDialog::GetDlgSize](#cmfcdesktopalertdialog__getdlgsize)||  
-|[CMFCDesktopAlertDialog::HasFocus](#cmfcdesktopalertdialog__hasfocus)||  
-|[CMFCDesktopAlertDialog::PreTranslateMessage](#cmfcdesktopalertdialog__pretranslatemessage)|(Overrides `CDialogEx::PreTranslateMessage`.)|  
+|[CMFCDesktopAlertDialog::CreateFromParams](#createfromparams)||  
+|[CMFCDesktopAlertDialog::GetDlgSize](#getdlgsize)||  
+|[CMFCDesktopAlertDialog::HasFocus](#hasfocus)||  
+|[CMFCDesktopAlertDialog::PreTranslateMessage](#pretranslatemessage)|(Overrides `CDialogEx::PreTranslateMessage`.)|  
   
 ### Remarks  
  Perform the following steps to display a custom dialog in a popup window:  
@@ -61,7 +61,7 @@ class CMFCDesktopAlertDialog : public CDialogEx
   
 2.  Create a child dialog template in the resources of the project.  
   
-3.  Call [CMFCDesktopAlertWnd::Create](../../mfc/reference/cmfcdesktopalertwnd-class.md#cmfcdesktopalertwnd__create) with the resource ID of the dialog template and a pointer to the runtime class information of the derived class as parameters.  
+3.  Call [CMFCDesktopAlertWnd::Create](../../mfc/reference/cmfcdesktopalertwnd-class.md#create) with the resource ID of the dialog template and a pointer to the runtime class information of the derived class as parameters.  
   
 4.  Program the custom dialog to handle all notifications that are coming from the hosted controls, or program the hosted controls to handle these notifications directly.  
   
@@ -81,7 +81,7 @@ class CMFCDesktopAlertDialog : public CDialogEx
 ## Requirements  
  **Header:** afxDesktopAlertDialog.h  
   
-##  <a name="cmfcdesktopalertdialog__createfromparams"></a>  CMFCDesktopAlertDialog::CreateFromParams  
+##  <a name="createfromparams"></a>  CMFCDesktopAlertDialog::CreateFromParams  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -98,7 +98,7 @@ BOOL CreateFromParams(
   
 ### Remarks  
   
-##  <a name="cmfcdesktopalertdialog__getdlgsize"></a>  CMFCDesktopAlertDialog::GetDlgSize  
+##  <a name="getdlgsize"></a>  CMFCDesktopAlertDialog::GetDlgSize  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -109,7 +109,7 @@ CSize GetDlgSize();
   
 ### Remarks  
   
-##  <a name="cmfcdesktopalertdialog__hasfocus"></a>  CMFCDesktopAlertDialog::HasFocus  
+##  <a name="hasfocus"></a>  CMFCDesktopAlertDialog::HasFocus  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
@@ -122,7 +122,7 @@ BOOL HasFocus() const;
   
 ### Remarks  
   
-##  <a name="cmfcdesktopalertdialog__pretranslatemessage"></a>  CMFCDesktopAlertDialog::PreTranslateMessage  
+##  <a name="pretranslatemessage"></a>  CMFCDesktopAlertDialog::PreTranslateMessage  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  

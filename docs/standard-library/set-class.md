@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # set Class
-The STL container class set is used for the storage and retrieval of data from a collection in which the values of the elements contained are unique and serve as the key values according to which the data is automatically ordered. The value of an element in a set may not be changed directly. Instead, you must delete old values and insert elements with new values.  
+The C++ Standard Library container class set is used for the storage and retrieval of data from a collection in which the values of the elements contained are unique and serve as the key values according to which the data is automatically ordered. The value of an element in a set may not be changed directly. Instead, you must delete old values and insert elements with new values.  
   
 ## Syntax  
   
@@ -62,7 +62,7 @@ class set
  The type that represents the stored allocator object that encapsulates details about the set's allocation and deallocation of memory. This argument is optional, and the default value is **allocator***\<Key>.*  
   
 ## Remarks  
- An STL set is:  
+ A C++ Standard Library set is:  
   
 -   An associative container, which a variable size container that supports the efficient retrieval of element values based on an associated key value. Further, it is a simple associative container because its element values are its key values.  
   
@@ -1099,7 +1099,7 @@ allocator_type get_allocator() const;
  For more information on `Allocator`, see the Remarks section of the [set Class](../standard-library/set-class.md) topic.  
   
 ### Remarks  
- Allocators for the set class specify how the class manages storage. The default allocators supplied with STL container classes is sufficient for most programming needs. Writing and using your own allocator class is an advanced C++ topic.  
+ Allocators for the set class specify how the class manages storage. The default allocators supplied with C++ Standard Library container classes is sufficient for most programming needs. Writing and using your own allocator class is an advanced C++ topic.  
   
 ### Example  
   
@@ -2318,5 +2318,5 @@ The set has elements: 10 20.
  [\<set>](../standard-library/set.md)   
  [Containers](../cpp/containers-modern-cpp.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 

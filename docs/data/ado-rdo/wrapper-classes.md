@@ -41,7 +41,7 @@ When you [insert a control](../../data/ado-rdo/inserting-the-control-into-a-visu
   
  For more information about the functionality of the wrapper classes, see the object model for the control's base technology.  
   
- Using [CWnd::GetDlgItem](../Topic/CWnd::GetDlgItem.md) also requires wrapper classes because the return value must be cast to the control class. For example:  
+ Using [CWnd::GetDlgItem](../../mfc/reference/cwnd-class.md#getdlgitem) also requires wrapper classes because the return value must be cast to the control class. For example:  
   
 ```  
 CDBList* pDBList = 0;  

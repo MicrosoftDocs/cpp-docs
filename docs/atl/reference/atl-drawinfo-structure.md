@@ -100,7 +100,7 @@ struct ATL_DRAWINFO {
  The actual width and height of the target.  
   
 ## Remarks  
- Typical usage of this structure would be the retrieval of information during the rendering of the target object. For example, you could retrieve values from `ATL_DRAWINFO` inside your overload of [CComControlBase::OnDrawAdvanced](../Topic/CComControlBase::OnDrawAdvanced.md).  
+ Typical usage of this structure would be the retrieval of information during the rendering of the target object. For example, you could retrieve values from `ATL_DRAWINFO` inside your overload of [CComControlBase::OnDrawAdvanced](ccomcontrolbase-class.md#ondrawadvanced).  
   
  This structure stores pertinent information used to render the appearance of an object for the target device. The information provided can be used in drawing to the screen, a printer, or even a metafile.  
   
@@ -110,7 +110,7 @@ struct ATL_DRAWINFO {
 ## See Also  
  [Structures](../../atl/reference/atl-structures.md)   
  [IViewObject::Draw](http://msdn.microsoft.com/library/windows/desktop/ms688655)   
- [CComControlBase::OnDrawAdvanced](../Topic/CComControlBase::OnDrawAdvanced.md)
+ [CComControlBase::OnDrawAdvanced](../../atl/reference/ccomcontrolbase-class.md#ondrawadvanced)
 
 
 

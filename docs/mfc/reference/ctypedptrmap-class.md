@@ -64,16 +64,16 @@ class CTypedPtrMap : public BASE_CLASS
   
 |Name|Description|  
 |----------|-----------------|  
-|[CTypedPtrMap::GetNextAssoc](#ctypedptrmap__getnextassoc)|Gets the next element for iterating.|  
-|[CTypedPtrMap::Lookup](#ctypedptrmap__lookup)|Returns a `KEY` based on a `VALUE`.|  
-|[CTypedPtrMap::RemoveKey](#ctypedptrmap__removekey)|Removes an element specified by a key.|  
-|[CTypedPtrMap::SetAt](#ctypedptrmap__setat)|Inserts an element into the map; replaces an existing element if a matching key is found.|  
+|[CTypedPtrMap::GetNextAssoc](#getnextassoc)|Gets the next element for iterating.|  
+|[CTypedPtrMap::Lookup](#lookup)|Returns a `KEY` based on a `VALUE`.|  
+|[CTypedPtrMap::RemoveKey](#removekey)|Removes an element specified by a key.|  
+|[CTypedPtrMap::SetAt](#setat)|Inserts an element into the map; replaces an existing element if a matching key is found.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CTypedPtrMap::operator [ ]](#ctypedptrmap__operator_at)|Inserts an element into the map.|  
+|[CTypedPtrMap::operator [ ]](#operator_at)|Inserts an element into the map.|  
   
 ## Remarks  
  When you use `CTypedPtrMap`, the C++ type-checking facility helps eliminate errors caused by mismatched pointer types.  
@@ -90,7 +90,7 @@ class CTypedPtrMap : public BASE_CLASS
 ## Requirements  
  **Header:** afxtempl.h  
   
-##  <a name="ctypedptrmap__getnextassoc"></a>  CTypedPtrMap::GetNextAssoc  
+##  <a name="getnextassoc"></a>  CTypedPtrMap::GetNextAssoc  
  Retrieves the map element at `rNextPosition`, then updates `rNextPosition` to refer to the next element in the map.  
   
 ```  
@@ -125,7 +125,7 @@ void GetNextAssoc(
   
  This inline function calls `BASE_CLASS`**::GetNextAssoc**.  
   
-##  <a name="ctypedptrmap__lookup"></a>  CTypedPtrMap::Lookup  
+##  <a name="lookup"></a>  CTypedPtrMap::Lookup  
  `Lookup` uses a hashing algorithm to quickly find the map element with a key that matches exactly.  
   
 ```  
@@ -154,11 +154,11 @@ BOOL Lookup(
 ### Remarks  
  This inline function calls `BASE_CLASS`**::Lookup**.  
   
-##  <a name="ctypedptrmap__operator_at"></a>  CTypedPtrMap::operator [ ]  
+##  <a name="operator_at"></a>  CTypedPtrMap::operator [ ]  
  This operator can be used only on the left side of an assignment statement (an l-value).  
   
 ```  
-VALUE& operator[ ](BASE_CLASS ::BASE_ARG_KEY key);
+VALUE& operator[ ](base_class ::base_arg_key key);
 ```  
   
 ### Parameters  
@@ -174,7 +174,7 @@ VALUE& operator[ ](BASE_CLASS ::BASE_ARG_KEY key);
 ### Remarks  
  If there is no map element with the specified key, then a new element is created. There is no "right side" (r-value) equivalent to this operator because there is a possibility that a key may not be found in the map. Use the `Lookup` member function for element retrieval.  
   
-##  <a name="ctypedptrmap__removekey"></a>  CTypedPtrMap::RemoveKey  
+##  <a name="removekey"></a>  CTypedPtrMap::RemoveKey  
  This member function calls `BASE_CLASS`**::RemoveKey**.  
   
 ```  
@@ -192,9 +192,9 @@ BOOL RemoveKey(KEY key);
  Nonzero if the entry was found and successfully removed; otherwise 0.  
   
 ### Remarks  
- For more detailed remarks, see [CMapStringToOb::RemoveKey](../../mfc/reference/cmapstringtoob-class.md#cmapstringtoob__removekey).  
+ For more detailed remarks, see [CMapStringToOb::RemoveKey](../../mfc/reference/cmapstringtoob-class.md#removekey).  
   
-##  <a name="ctypedptrmap__setat"></a>  CTypedPtrMap::SetAt  
+##  <a name="setat"></a>  CTypedPtrMap::SetAt  
  This member function calls `BASE_CLASS`**::SetAt**.  
   
 ```  
@@ -213,10 +213,10 @@ void SetAt(
  Specifies the object pointer that is the value of the new element.  
   
 ### Remarks  
- For more detailed remarks, see [CMapStringToOb::SetAt](../../mfc/reference/cmapstringtoob-class.md#cmapstringtoob__setat).  
+ For more detailed remarks, see [CMapStringToOb::SetAt](../../mfc/reference/cmapstringtoob-class.md#setat).  
   
 ## See Also  
- [MFC Sample COLLECT](../../top/visual-cpp-samples.md)   
+ [MFC Sample COLLECT](../../visual-cpp-samples.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CMapPtrToPtr Class](../../mfc/reference/cmapptrtoptr-class.md)   
  [CMapPtrToWord Class](../../mfc/reference/cmapptrtoword-class.md)   

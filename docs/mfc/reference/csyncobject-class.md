@@ -50,26 +50,26 @@ class CSyncObject : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSyncObject::CSyncObject](#csyncobject__csyncobject)|Constructs a `CSyncObject` object.|  
+|[CSyncObject::CSyncObject](#csyncobject)|Constructs a `CSyncObject` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSyncObject::Lock](#csyncobject__lock)|Gains access to the synchronization object.|  
-|[CSyncObject::Unlock](#csyncobject__unlock)|Gains access to the synchronization object.|  
+|[CSyncObject::Lock](#lock)|Gains access to the synchronization object.|  
+|[CSyncObject::Unlock](#unlock)|Gains access to the synchronization object.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSyncObject::operator HANDLE](#csyncobject__operator_handle)|Provides access to the synchronization object.|  
+|[CSyncObject::operator HANDLE](#operator_handle)|Provides access to the synchronization object.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSyncObject::m_hObject](#csyncobject__m_hobject)|The handle to the underlying synchronization object.|  
+|[CSyncObject::m_hObject](#m_hobject)|The handle to the underlying synchronization object.|  
   
 ## Remarks  
  The Microsoft Foundation Class Library provides several classes derived from `CSyncObject`. These are [CEvent](../../mfc/reference/cevent-class.md), [CMutex](../../mfc/reference/cmutex-class.md), [CCriticalSection](../../mfc/reference/ccriticalsection-class.md), and [CSemaphore](../../mfc/reference/csemaphore-class.md).  
@@ -84,7 +84,7 @@ class CSyncObject : public CObject
 ## Requirements  
  **Header:** afxmt.h  
   
-##  <a name="csyncobject__csyncobject"></a>  CSyncObject::CSyncObject  
+##  <a name="csyncobject"></a>  CSyncObject::CSyncObject  
  Constructs a synchronization object with the supplied name.  
   
 ```  
@@ -98,7 +98,7 @@ virtual ~CSyncObject();
  `pstrName`  
  The name of the object. If **NULL**, *pstrName* will be null.  
   
-##  <a name="csyncobject__lock"></a>  CSyncObject::Lock  
+##  <a name="lock"></a>  CSyncObject::Lock  
  Call this function to gain access to the resource controlled by the synchronization object.  
   
 ```  
@@ -115,17 +115,18 @@ virtual BOOL Lock(DWORD dwTimeout = INFINITE);
 ### Remarks  
  If the synchronization object is signaled, `Lock` will return successfully and the thread now owns the object. If the synchronization object is nonsignaled (unavailable), `Lock` will wait for the synchronization object to become signaled up to the number of milliseconds specified in the *dwTimeOut* parameter. If the synchronization object did not become signaled in the specified amount of time, `Lock` returns failure.  
   
-##  <a name="csyncobject__m_hobject"></a>  CSyncObject::m_hObject  
+##  <a name="m_hobject"></a>  CSyncObject::m_hObject  
  The handle to the underlying synchronization object.  
   
 ```  
 HANDLE m_hObject;  
 ```  
   
-##  <a name="csyncobject__operator_handle"></a>  CSyncObject::operator HANDLE  
+##  <a name="operator_handle"></a>  CSyncObject::operator HANDLE  
  Use this operator to get the handle of the `CSyncObject` object.  
   
-```  operator HANDLE() const;
+```  
+operator HANDLE() const;
 
  
 ```  
@@ -136,7 +137,7 @@ HANDLE m_hObject;
 ### Remarks  
  You can use the handle to call Windows APIs directly.  
   
-##  <a name="csyncobject__unlock"></a>  CSyncObject::Unlock  
+##  <a name="unlock"></a>  CSyncObject::Unlock  
  The declaration of `Unlock` with no parameters is a pure virtual function, and must be overridden by all classes deriving from `CSyncObject`.  
   
 ```  

@@ -73,4 +73,4 @@ Allocates memory for the column bind structures and initializes the column data 
   
 ## See Also  
  [CManualAccessor Class](../../data/oledb/cmanualaccessor-class.md)   
- [DBViewer sample](../../top/visual-cpp-samples.md)
+ [DBViewer sample](../../visual-cpp-samples.md)

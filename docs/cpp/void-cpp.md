@@ -62,5 +62,4 @@ int main() {
   
 ## See Also  
  [Keywords](../cpp/keywords-cpp.md)   
- [Pointers to Type void](../misc/pointers-to-type-void.md)   
  [Fundamental Types](../cpp/fundamental-types-cpp.md)

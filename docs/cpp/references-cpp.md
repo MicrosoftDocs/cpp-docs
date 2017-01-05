@@ -134,5 +134,3 @@ int main() {
   
 -   [References to Pointers](../cpp/references-to-pointers.md)  
   
-## See Also  
- [Initializing References](../misc/initializing-references.md)

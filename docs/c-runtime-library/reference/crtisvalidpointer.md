@@ -86,7 +86,7 @@ int _CrtIsValidPointer(
 _ASSERTE( _CrtIsValidPointer( address, size, TRUE ) );  
 ```  
   
- For more information about how `_CrtIsValidPointer` can be used with other debug functions and macros, see [Macros for Reporting](/visual-studio/debugger/macros-for-reporting). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](/visual-studio/debugger/crt-debug-heap-details).  
+ For more information about how `_CrtIsValidPointer` can be used with other debug functions and macros, see [Macros for Reporting](/visualstudio/debugger/macros-for-reporting). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details).  
   
 ## Requirements  
   
@@ -103,7 +103,7 @@ _ASSERTE( _CrtIsValidPointer( address, size, TRUE ) );
  See the example for the [_CrtIsValidHeapPointer](../../c-runtime-library/reference/crtisvalidheappointer.md) topic.  
   
 ## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](../Topic/Platform%20Invoke%20Examples.md).  
+ Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)

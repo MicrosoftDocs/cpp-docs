@@ -39,20 +39,4 @@ translation.priority.ht:
   
  An array of pointers to a value type cannot be declared.  
   
- C3159 is only reachable using **/clr:oldSyntax**.  
-  
- The following sample generates C3159:  
-  
-```  
-// C3159.cpp  
-// compile with: /clr:oldSyntax  
-#using <mscorlib.dll>  
-  
-__value struct B {  
-};  
-  
-void f( B*[] );   // C3159  
-  
-int main() {  
-}  
-```
+ C3159 is only reachable using the obsolete compiler option **/clr:oldSyntax**.  

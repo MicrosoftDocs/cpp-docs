@@ -114,4 +114,3 @@ The absolute value of -9223372036854775806 is 9223372036854775806
  [abs, labs, llabs, _abs64](../../c-runtime-library/reference/abs-labs-llabs-abs64.md)   
  [_cabs](../../c-runtime-library/reference/cabs.md)   
  [fabs, fabsf, fabsl](../../c-runtime-library/reference/fabs-fabsf-fabsl.md)   
- [labs, llabs](../../misc/labs-llabs.md)

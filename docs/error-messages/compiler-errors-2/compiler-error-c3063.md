@@ -37,9 +37,10 @@ translation.priority.ht:
 # Compiler Error C3063
 operator 'operator': all operands must have the same enumeration type  
   
- When using operators on enumerators, both operands must be of the enumeration type. For more information, see [Using Operators and Enumerations](../../misc/operators-and-enumerations.md).  
+When using operators on enumerators, both operands must be of the enumeration type. For more information, see [How to: Define and consume enums in C++/CLI](../../dotnet/how-to-define-and-consume-enums-in-cpp-cli.md).  
   
- The following sample generates C3063:  
+## Example  
+The following sample generates C3063 and shows how to fix it:  
   
 ```  
 // C3063.cpp  

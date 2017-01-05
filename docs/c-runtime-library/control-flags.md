@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Control Flags
-The debug version of the Microsoft C run-time library uses the following flags to control the heap allocation and reporting process. For more information, see [CRT Debugging Techniques](/visual-studio/debugger/crt-debugging-techniques).  
+The debug version of the Microsoft C run-time library uses the following flags to control the heap allocation and reporting process. For more information, see [CRT Debugging Techniques](/visualstudio/debugger/crt-debugging-techniques).  
   
 |Flag|Description|  
 |----------|-----------------|  

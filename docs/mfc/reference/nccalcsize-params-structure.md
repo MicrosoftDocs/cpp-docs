@@ -58,5 +58,5 @@ typedef struct tagNCCALCSIZE_PARAMS {
   
 ## See Also  
  [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CWnd::OnNcCalcSize](../../mfc/reference/cwnd-class.md#OnNcCalcSize)
+ [CWnd::OnNcCalcSize](../../mfc/reference/cwnd-class.md#onnccalcsize)
 

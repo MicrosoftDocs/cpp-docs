@@ -36,7 +36,7 @@ translation.priority.ht:
 ---
 # When Do I Need to Call AtlAxWinInit?
 
-[AtlAxWinInit](../Topic/AtlAxWinInit.md) registers the **"AtlAxWin80"** window class (plus a couple of custom window messages) so this function must be called before you try to create a host window. However, you don't always need to call this function explicitly, since the hosting APIs (and the classes that use them) often call this function for you. There is no harm in calling this function more than once. .  
+[AtlAxWinInit](http://msdn.microsoft.com/library/fe1b3bd1-3fc9-42e5-ba03-66cae7dd5b7e) registers the **"AtlAxWin80"** window class (plus a couple of custom window messages) so this function must be called before you try to create a host window. However, you don't always need to call this function explicitly, since the hosting APIs (and the classes that use them) often call this function for you. There is no harm in calling this function more than once. .  
   
 ## See Also  
  When Do I Need to Call AtlAxWinTerm     

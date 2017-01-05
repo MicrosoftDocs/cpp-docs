@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # list Class
-The STL list class is a template class of sequence containers that maintain their elements in a linear arrangement and allow efficient insertions and deletions at any location within the sequence. The sequence is stored as a bidirectional linked list of elements, each containing a member of some type *Type*.  
+The C++ Standard Library list class is a template class of sequence containers that maintain their elements in a linear arrangement and allow efficient insertions and deletions at any location within the sequence. The sequence is stored as a bidirectional linked list of elements, each containing a member of some type *Type*.  
   
 ## Syntax  
   
@@ -61,7 +61,7 @@ class list
   
  List reallocation occurs when a member function must insert or erase elements of the list. In all such cases, only iterators or references that point at erased portions of the controlled sequence become invalid.  
   
- Include the STL standard header \<list> to define the [container](../standard-library/stl-containers.md) template class list and several supporting templates.  
+ Include the C++ Standard Library standard header \<list> to define the [container](../standard-library/stl-containers.md) template class list and several supporting templates.  
   
 ### Constructors  
   
@@ -248,7 +248,7 @@ const_reference back() const;
 ### Remarks  
  If the return value of **back** is assigned to a `const_reference`, the list object cannot be modified. If the return value of **back** is assigned to a **reference**, the list object can be modified.  
   
- When compiling with _SECURE_SCL 1, a runtime error will occur if you attempt to access an element in an empty list.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
+ When compiled by using [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) defined as 1 or 2, a runtime error will occur if you attempt to access an element in an empty list.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
   
 ### Example  
   
@@ -939,7 +939,7 @@ const_reference front() const;
 ### Remarks  
  If the return value of `front` is assigned to a `const_reference`, the list object cannot be modified. If the return value of `front` is assigned to a **reference**, the list object can be modified.  
   
- When compiling with _SECURE_SCL 1, a runtime error will occur if you attempt to access an element in an empty list.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
+ When compiled by using [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) defined as 1 or 2, a runtime error will occur if you attempt to access an element in an empty list.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
   
 ### Example  
   
@@ -980,7 +980,7 @@ Allocator get_allocator() const;
  The allocator used by the list.  
   
 ### Remarks  
- Allocators for the list class specify how the class manages storage. The default allocators supplied with STL container classes are sufficient for most programming needs. Writing and using your own allocator class is an advanced C++ topic.  
+ Allocators for the list class specify how the class manages storage. The default allocators supplied with C++ Standard Library container classes are sufficient for most programming needs. Writing and using your own allocator class is an advanced C++ topic.  
   
 ### Example  
   
@@ -2455,5 +2455,5 @@ int main( )
 ## See Also  
  [\<list>](../standard-library/list.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [Standard Template Library](../misc/standard-template-library.md)
+ [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
 

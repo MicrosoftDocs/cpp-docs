@@ -59,7 +59,7 @@ class CMFCCustomColorsPropertyPage : public CPropertyPage
 |Name|Description|  
 |`CMFCCustomColorsPropertyPage::CreateObject`|Used by the framework to create a dynamic instance of this class type.|  
 |`CMFCCustomColorsPropertyPage::GetThisClass`|Used by the framework to obtain a pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|  
-|[CMFCCustomColorsPropertyPage::Setup](#cmfccustomcolorspropertypage__setup)|Sets the color components of the property page.|  
+|[CMFCCustomColorsPropertyPage::Setup](#setup)|Sets the color components of the property page.|  
   
 ### Remarks  
  The `CMFCColorDialog` class uses this class to display the custom color property page. For more information about `CMFCColorDialog`, see [CMFCColorDialog Class](../../mfc/reference/cmfccolordialog-class.md).  
@@ -67,7 +67,7 @@ class CMFCCustomColorsPropertyPage : public CPropertyPage
 ## Example  
  The following example demonstrates how to construct a `CMFCCustomColorsPropertyPage` object and set the color components of the property page.  
   
- [!code-cpp[NVC_MFC_RibbonApp#35](../../mfc/reference/codesnippet/CPP/cmfccustomcolorspropertypage-class_1.cpp)]  
+ [!code-cpp[NVC_MFC_RibbonApp#35](../../mfc/reference/codesnippet/cpp/cmfccustomcolorspropertypage-class_1.cpp)]  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -85,7 +85,7 @@ class CMFCCustomColorsPropertyPage : public CPropertyPage
 ## Requirements  
  **Header:** afxcustomcolorspropertypage.h  
   
-##  <a name="cmfccustomcolorspropertypage__setup"></a>  CMFCCustomColorsPropertyPage::Setup  
+##  <a name="setup"></a>  CMFCCustomColorsPropertyPage::Setup  
  Sets the color components of the property page.  
   
 ```  
@@ -105,7 +105,7 @@ void Setup(
 |[in] `B`|The blue component of the RGB value.|  
   
 ### Remarks  
- This method updates the current RGB and the associated HLS (hue, lightness, and saturation) color values of the property page. The [CMFCColorDialog::SetPageTwo](../../mfc/reference/cmfccolordialog-class.md#cmfccolordialog__setpagetwo) method calls this method when the framework initializes the color dialog box or the user presses the left mouse button. For more information about `CMFCColorDialog`, see [CMFCColorDialog Class](../../mfc/reference/cmfccolordialog-class.md).  
+ This method updates the current RGB and the associated HLS (hue, lightness, and saturation) color values of the property page. The [CMFCColorDialog::SetPageTwo](../../mfc/reference/cmfccolordialog-class.md#setpagetwo) method calls this method when the framework initializes the color dialog box or the user presses the left mouse button. For more information about `CMFCColorDialog`, see [CMFCColorDialog Class](../../mfc/reference/cmfccolordialog-class.md).  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

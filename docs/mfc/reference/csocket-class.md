@@ -52,23 +52,23 @@ class CSocket : public CAsyncSocket
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSocket::CSocket](#csocket__csocket)|Constructs a `CSocket` object.|  
+|[CSocket::CSocket](#csocket)|Constructs a `CSocket` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSocket::Attach](#csocket__attach)|Attaches a **SOCKET** handle to a `CSocket` object.|  
-|[CSocket::CancelBlockingCall](#csocket__cancelblockingcall)|Cancels a blocking call that is currently in progress.|  
-|[CSocket::Create](#csocket__create)|Creates a socket.|  
-|[CSocket::FromHandle](#csocket__fromhandle)|Returns a pointer to a `CSocket` object, given a **SOCKET** handle.|  
-|[CSocket::IsBlocking](#csocket__isblocking)|Determines whether a blocking call is in progress.|  
+|[CSocket::Attach](#attach)|Attaches a **SOCKET** handle to a `CSocket` object.|  
+|[CSocket::CancelBlockingCall](#cancelblockingcall)|Cancels a blocking call that is currently in progress.|  
+|[CSocket::Create](#create)|Creates a socket.|  
+|[CSocket::FromHandle](#fromhandle)|Returns a pointer to a `CSocket` object, given a **SOCKET** handle.|  
+|[CSocket::IsBlocking](#isblocking)|Determines whether a blocking call is in progress.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CSocket::OnMessagePending](#csocket__onmessagepending)|Called to process pending messages while waiting for a blocking call to complete.|  
+|[CSocket::OnMessagePending](#onmessagepending)|Called to process pending messages while waiting for a blocking call to complete.|  
   
 ## Remarks  
  `CSocket` works with classes `CSocketFile` and `CArchive` to manage the sending and receiving of data.  
@@ -83,7 +83,7 @@ class CSocket : public CAsyncSocket
   
  In the following example, `m_dwExpected` is the approximate number of bytes that the user expects to receive. It is assumed that you declare it elsewhere in your code.  
   
- [!code-cpp[NVC_MFCSocketThread#4](../../mfc/reference/codesnippet/CPP/csocket-class_1.cpp)]  
+ [!code-cpp[NVC_MFCSocketThread#4](../../mfc/reference/codesnippet/cpp/csocket-class_1.cpp)]  
   
 > [!NOTE]
 >  When using MFC sockets in secondary threads in a statically linked MFC application, you must call `AfxSocketInit` in each thread that uses sockets to initialize the socket libraries. By default, `AfxSocketInit` is called only in the primary thread.  
@@ -100,7 +100,7 @@ class CSocket : public CAsyncSocket
 ## Requirements  
  **Header:** afxsock.h  
   
-##  <a name="csocket__attach"></a>  CSocket::Attach  
+##  <a name="attach"></a>  CSocket::Attach  
  Call this member function to attach the `hSocket` handle to a `CSocket` object.  
   
 ```  
@@ -115,18 +115,18 @@ BOOL Attach(SOCKET hSocket);
  Nonzero if the function is successful.  
   
 ### Remarks  
- The **SOCKET** handle is stored in the object's [m_hSocket](../../mfc/reference/casyncsocket-class.md#casyncsocket__m_hsocket) data member.  
+ The **SOCKET** handle is stored in the object's [m_hSocket](../../mfc/reference/casyncsocket-class.md#m_hsocket) data member.  
   
  For more information, see [Windows Sockets: Using Sockets with Archives](../../mfc/windows-sockets-using-sockets-with-archives.md).  
   
 ### Example  
- [!code-cpp[NVC_MFCSocketThread#1](../../mfc/reference/codesnippet/CPP/csocket-class_2.h)]  
+ [!code-cpp[NVC_MFCSocketThread#1](../../mfc/reference/codesnippet/cpp/csocket-class_2.h)]  
   
- [!code-cpp[NVC_MFCSocketThread#2](../../mfc/reference/codesnippet/CPP/csocket-class_3.cpp)]  
+ [!code-cpp[NVC_MFCSocketThread#2](../../mfc/reference/codesnippet/cpp/csocket-class_3.cpp)]  
   
- [!code-cpp[NVC_MFCSocketThread#3](../../mfc/reference/codesnippet/CPP/csocket-class_4.cpp)]  
+ [!code-cpp[NVC_MFCSocketThread#3](../../mfc/reference/codesnippet/cpp/csocket-class_4.cpp)]  
   
-##  <a name="csocket__cancelblockingcall"></a>  CSocket::CancelBlockingCall  
+##  <a name="cancelblockingcall"></a>  CSocket::CancelBlockingCall  
  Call this member function to cancel a blocking call currently in progress.  
   
 ```  
@@ -142,7 +142,7 @@ void CancelBlockingCall();
   
  For more information, see [Windows Sockets: Using Sockets with Archives](../../mfc/windows-sockets-using-sockets-with-archives.md).  
   
-##  <a name="csocket__create"></a>  CSocket::Create  
+##  <a name="create"></a>  CSocket::Create  
  Call the **Create** member function after constructing a socket object to create the Windows socket and attach it.  
   
 ```  
@@ -177,7 +177,7 @@ BOOL Create(
   
  For more information about stream and datagram sockets, see the articles [Windows Sockets: Background](../../mfc/windows-sockets-background.md), [Windows Sockets: Ports and Socket Addresses](../../mfc/windows-sockets-ports-and-socket-addresses.md), and [Windows Sockets: Using Sockets with Archives](../../mfc/windows-sockets-using-sockets-with-archives.md).  
   
-##  <a name="csocket__csocket"></a>  CSocket::CSocket  
+##  <a name="csocket"></a>  CSocket::CSocket  
  Constructs a `CSocket` object.  
   
 ```  
@@ -189,7 +189,7 @@ CSocket();
   
  For more information, see [Windows Sockets: Using Sockets with Archives](../../mfc/windows-sockets-using-sockets-with-archives.md).  
   
-##  <a name="csocket__fromhandle"></a>  CSocket::FromHandle  
+##  <a name="fromhandle"></a>  CSocket::FromHandle  
  Returns a pointer to a `CSocket` object.  
   
 ```  
@@ -208,7 +208,7 @@ static CSocket* PASCAL FromHandle(SOCKET hSocket);
   
  For more information, see [Windows Sockets: Using Sockets with Archives](../../mfc/windows-sockets-using-sockets-with-archives.md).  
   
-##  <a name="csocket__isblocking"></a>  CSocket::IsBlocking  
+##  <a name="isblocking"></a>  CSocket::IsBlocking  
  Call this member function to determine if a blocking call is in progress.  
   
 ```  
@@ -221,7 +221,7 @@ BOOL IsBlocking();
 ### Remarks  
  For more information, see [Windows Sockets: Using Sockets with Archives](../../mfc/windows-sockets-using-sockets-with-archives.md).  
   
-##  <a name="csocket__onmessagepending"></a>  CSocket::OnMessagePending  
+##  <a name="onmessagepending"></a>  CSocket::OnMessagePending  
  Override this member function to look for particular messages from Windows and respond to them in your socket.  
   
 ```  

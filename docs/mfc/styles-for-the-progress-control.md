@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Styles for the Progress Control
-When you initially create the progress control ([CProgressCtrl::Create](../mfc/reference/cprogressctrl-class.md#cprogressctrl__create)), use the `dwStyle` parameter to specify the desired window styles for your progress control. The following list details the applicable window styles. The control ignores any window style other than the ones listed here. You should always create the control as a child window, usually of a dialog box parent.  
+When you initially create the progress control ([CProgressCtrl::Create](../mfc/reference/cprogressctrl-class.md#create)), use the `dwStyle` parameter to specify the desired window styles for your progress control. The following list details the applicable window styles. The control ignores any window style other than the ones listed here. You should always create the control as a child window, usually of a dialog box parent.  
   
 |Window style|Effect|  
 |------------------|------------|  
@@ -54,11 +54,11 @@ When you initially create the progress control ([CProgressCtrl::Create](../mfc/r
   
  Without `PBS_SMOOTH` style:  
   
- ![Standard progress bar style](../mfc/media/vc4ruw1.gif "vc4RUW1")  
+ ![Standard progress bar style](../mfc/media/vc4ruw1.gif "vc4ruw1")  
   
  With `PBS_SMOOTH` and `PBS_VERTICAL` styles:  
   
- ![Progress bar style, smooth and vertical](../mfc/media/vc4ruw2.gif "vc4RUW2")  
+ ![Progress bar style, smooth and vertical](../mfc/media/vc4ruw2.gif "vc4ruw2")  
   
  For more information, see [Window Styles](../mfc/reference/frame-window-styles-mfc.md) in the *MFC Reference*.  
   

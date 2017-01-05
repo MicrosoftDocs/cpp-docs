@@ -37,11 +37,9 @@ translation.priority.ht:
 # Compiler Error C3917
 'property': obsolete construct declaration style  
   
- A property or event definition used syntax from a previous version.  
+A property or event definition used syntax from a previous version.  
   
- If you want to use syntax from a previous version, use [/clr:oldSyntax](../../build/reference/clr-common-language-runtime-compilation.md).  
-  
- For more information, see [property](../../windows/property-cpp-component-extensions.md).  
+For more information, see [property](../../windows/property-cpp-component-extensions.md).  
   
 ## Example  
   

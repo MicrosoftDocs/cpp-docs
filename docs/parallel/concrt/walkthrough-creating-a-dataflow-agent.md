@@ -62,7 +62,7 @@ This document demonstrates how to create agent-based applications that are based
 ##  <a name="control-flow"></a> Creating a Basic Control-Flow Agent  
  Consider the following example that defines the `control_flow_agent` class. The `control_flow_agent` class acts on three message buffers: one input buffer and two output buffers. The `run` method reads from the source message buffer in a loop and uses a conditional statement to direct the flow of program execution. The agent increments one counter for non-zero, negative values and increments another counter for non-zero, positive values. After the agent receives the sentinel value of zero, it sends the values of the counters to the output message buffers. The `negatives` and `positives` methods enable the application to read the counts of negative and positive values from the agent.  
   
- [!code-cpp[concrt-dataflow-agent#1](../../parallel/concrt/codesnippet/CPP/walkthrough-creating-a-dataflow-agent_1.cpp)]  
+ [!code-cpp[concrt-dataflow-agent#1](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-dataflow-agent_1.cpp)]  
   
  Although this example makes basic use of control flow in an agent, it demonstrates the serial nature of control-flow-based programming. Each message must be processed sequentially, even though multiple messages might be available in the input message buffer. The dataflow model enables both branches of the conditional statement to evaluate concurrently. The dataflow model also enables you to create more complex messaging networks that act on data as it becomes available.  
   
@@ -79,29 +79,29 @@ This document demonstrates how to create agent-based applications that are based
   
 2.  Remove the body of the loop that calls `receive` from the `run` method.  
   
- [!code-cpp[concrt-dataflow-agent#2](../../parallel/concrt/codesnippet/CPP/walkthrough-creating-a-dataflow-agent_2.cpp)]  
+ [!code-cpp[concrt-dataflow-agent#2](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-dataflow-agent_2.cpp)]  
   
 3.  In the `run` method, after the initialization of the variables `negative_count` and `positive_count`, add a `countdown_event` object that tracks the count of active operations.  
   
- [!code-cpp[concrt-dataflow-agent#6](../../parallel/concrt/codesnippet/CPP/walkthrough-creating-a-dataflow-agent_3.cpp)]  
+ [!code-cpp[concrt-dataflow-agent#6](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-dataflow-agent_3.cpp)]  
   
      The `countdown_event` class is shown later in this topic.  
   
 4.  Create the message buffer objects that will participate in the dataflow network.  
   
- [!code-cpp[concrt-dataflow-agent#3](../../parallel/concrt/codesnippet/CPP/walkthrough-creating-a-dataflow-agent_4.cpp)]  
+ [!code-cpp[concrt-dataflow-agent#3](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-dataflow-agent_4.cpp)]  
   
 5.  Connect the message buffers to form a network.  
   
- [!code-cpp[concrt-dataflow-agent#4](../../parallel/concrt/codesnippet/CPP/walkthrough-creating-a-dataflow-agent_5.cpp)]  
+ [!code-cpp[concrt-dataflow-agent#4](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-dataflow-agent_5.cpp)]  
   
 6.  Wait for the `event` and `countdown event` objects to be set. These events signal that that the agent has received the sentinel value and that all operations have finished.  
   
- [!code-cpp[concrt-dataflow-agent#5](../../parallel/concrt/codesnippet/CPP/walkthrough-creating-a-dataflow-agent_6.cpp)]  
+ [!code-cpp[concrt-dataflow-agent#5](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-dataflow-agent_6.cpp)]  
   
  The following diagram shows the complete dataflow network for the `dataflow_agent` class:  
   
- ![The dataflow network](../../parallel/concrt/media/concrt_dataflow.png "ConcRT_Dataflow")  
+ ![The dataflow network](../../parallel/concrt/media/concrt_dataflow.png "concrt_dataflow")  
   
  The following table describes the members of the network.  
   
@@ -110,7 +110,7 @@ This document demonstrates how to create agent-based applications that are based
 |`increment_active`|A [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) object that increments the active event counter and passes the input value to the rest of the network.|  
 |`negatives`, `positives`|[concurrency::call](../../parallel/concrt/reference/call-class.md) objects that increment the count of numbers and decrements the active event counter. The objects each use a filter to accept either negative numbers or positive numbers.|  
 |`sentinel`|A [concurrency::call](../../parallel/concrt/reference/call-class.md) object that accepts only the sentinel value of zero and decrements the active event counter.|  
-|`connector`|A [concurrency::unbounded_buffer](../Topic/unbounded_buffer%20Class.md) object that connects the source message buffer to the internal network.|  
+|`connector`|A [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) object that connects the source message buffer to the internal network.|  
   
  Because the `run` method is called on a separate thread, other threads can send messages to the network before the network is fully connected. The `_source` data member is an `unbounded_buffer` object that buffers all input that is sent from the application to the agent. To make sure that the network processes all input messages, the agent first links the internal nodes of the network and then links the start of that network, `connector`, to the `_source` data member. This guarantees that messages do not get processed as the network is being formed.  
   
@@ -118,7 +118,7 @@ This document demonstrates how to create agent-based applications that are based
   
  The following example shows the `control_flow_agent`, `dataflow_agent`, and `countdown_event` classes. The `wmain` function creates a `control_flow_agent` and a `dataflow_agent` object and uses the `send_values` function to send a series of random values to the agents.  
   
- [!code-cpp[concrt-dataflow-agent#7](../../parallel/concrt/codesnippet/CPP/walkthrough-creating-a-dataflow-agent_7.cpp)]  
+ [!code-cpp[concrt-dataflow-agent#7](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-dataflow-agent_7.cpp)]  
   
  This example produces the following sample output:  
   
@@ -141,7 +141,7 @@ There are 499477 positive numbers.
 ##  <a name="logging"></a> Creating a Message-Logging Agent  
  The following example shows the `log_agent` class, which resembles the `dataflow_agent` class. The `log_agent` class implements an asynchronous logging agent that writes log messages to a file and to the console. The `log_agent` class enables the application to categorize messages as informational, warning, or error. It also enables the application to specify whether each log category is written to a file, the console, or both. This example writes all log messages to a file and only error messages to the console.  
   
- [!code-cpp[concrt-log-filter#1](../../parallel/concrt/codesnippet/CPP/walkthrough-creating-a-dataflow-agent_8.cpp)]  
+ [!code-cpp[concrt-log-filter#1](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-dataflow-agent_8.cpp)]  
   
  This example writes the following output to the console.  
   

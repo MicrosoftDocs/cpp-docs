@@ -39,7 +39,7 @@ translation.priority.ht:
 # Handling TTN_NEEDTEXT Notification for Tool Tips
 As part of [enabling tool tips](../mfc/enabling-tool-tips.md), you handle the **TTN_NEEDTEXT** message by adding the following entry to your owner window's message map:  
   
- [!code-cpp[NVC_MFCControlLadenDialog#40](../mfc/codesnippet/CPP/handling-ttn-needtext-notification-for-tool-tips_1.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#40](../mfc/codesnippet/cpp/handling-ttn-needtext-notification-for-tool-tips_1.cpp)]  
   
  `memberFxn`  
  The member function to be called when text is needed for this button.  
@@ -48,7 +48,7 @@ As part of [enabling tool tips](../mfc/enabling-tool-tips.md), you handle the **
   
  Declare your handler function in the class definition as follows:  
   
- [!code-cpp[NVC_MFCControlLadenDialog#53](../mfc/codesnippet/CPP/handling-ttn-needtext-notification-for-tool-tips_2.h)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#53](../mfc/codesnippet/cpp/handling-ttn-needtext-notification-for-tool-tips_2.h)]  
   
  where the italicized parameters are:  
   
@@ -63,11 +63,11 @@ As part of [enabling tool tips](../mfc/enabling-tool-tips.md), you handle the **
   
  As an example of a form-view notification handler:  
   
- [!code-cpp[NVC_MFCControlLadenDialog#54](../mfc/codesnippet/CPP/handling-ttn-needtext-notification-for-tool-tips_3.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#54](../mfc/codesnippet/cpp/handling-ttn-needtext-notification-for-tool-tips_3.cpp)]  
   
  Call `EnableToolTips` (this fragment taken from `OnInitDialog`):  
   
- [!code-cpp[NVC_MFCControlLadenDialog#55](../mfc/codesnippet/CPP/handling-ttn-needtext-notification-for-tool-tips_4.cpp)]  
+ [!code-cpp[NVC_MFCControlLadenDialog#55](../mfc/codesnippet/cpp/handling-ttn-needtext-notification-for-tool-tips_4.cpp)]  
   
 ## See Also  
  [Tool Tips in Windows Not Derived from CFrameWnd](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)
