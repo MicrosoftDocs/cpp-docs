@@ -122,9 +122,7 @@ class CFileTime :  public FILETIME
   
 ```
 CFileTime() throw();
-
 CFileTime(const FILETIME& ft) throw();
-
 CFileTime(ULONGLONG nTime) throw();
 ```  
   

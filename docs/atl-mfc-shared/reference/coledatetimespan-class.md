@@ -143,19 +143,8 @@ bool operator>=(const COleDateTimeSpan& dateSpan) const throw();
   
 ```
 COleDateTimeSpan() throw();
-
-COleDateTimeSpan(
-    double dblSpanSrc) throw();
-
-COleDateTimeSpan(
-    LONG
-lDays,
- int
-nHours,
-    int
-nMins,
- int
-nSecs) throw();
+COleDateTimeSpan(double dblSpanSrc) throw();
+COleDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 ```  
   
 ### Parameters  
@@ -185,9 +174,8 @@ nSecs) throw();
  Generates a formatted string representation of a `COleDateTimeSpan` object.  
   
 ```
-CString Format(LPCTSTR    pFormat) const;
-
-CString Format(UINT    nID) const;
+CString Format(LPCTSTR pFormat) const;
+CString Format(UINT nID) const;
 ```  
   
 ### Parameters  
@@ -583,8 +571,7 @@ DateTimeSpanStatus m_status;
  Copies a `COleDateTimeSpan` value.  
   
 ```
-COleDateTimeSpan& operator=(double
-dblSpanSrc) throw();
+COleDateTimeSpan& operator=(double dblSpanSrc) throw();
 ```  
   
 ### Remarks  
@@ -594,12 +581,8 @@ dblSpanSrc) throw();
  Add, subtract, and change sign for `COleDateTimeSpan` values.  
   
 ```
-COleDateTimeSpan operator+(const COleDateTimeSpan&
-dateSpan) const throw();
-
-COleDateTimeSpan operator-(const COleDateTimeSpan&
-dateSpan) const throw();
-
+COleDateTimeSpan operator+(const COleDateTimeSpan& dateSpan) const throw();
+COleDateTimeSpan operator-(const COleDateTimeSpan& dateSpan) const throw();
 COleDateTimeSpan operator-() const throw();
 ```  
   
@@ -619,11 +602,9 @@ COleDateTimeSpan operator-() const throw();
  Add and subtract a `COleDateTimeSpan` value from this `COleDateTimeSpan` value.  
   
 ```
-COleDateTimeSpan& operator+=(const COleDateTimeSpan
-dateSpan) throw();
+COleDateTimeSpan& operator+=(const COleDateTimeSpan dateSpan) throw();
 
-COleDateTimeSpan& operator-=(const COleDateTimeSpan
-dateSpan) throw();
+COleDateTimeSpan& operator-=(const COleDateTimeSpan dateSpan) throw();
 ```  
   
 ### Remarks  
@@ -639,7 +620,8 @@ dateSpan) throw();
 ##  <a name="operator_double"></a>  COleDateTimeSpan::operator double  
  Converts this `COleDateTimeSpan` value to a **double**.  
   
-```operator double() const throw();
+```
+ operator double() const throw();
 ```  
   
 ### Remarks  
@@ -649,15 +631,7 @@ dateSpan) throw();
  Sets the value of this date/time-span value.  
   
 ```
-void SetDateTimeSpan(
-    LONG
-lDays,
- int
-nHours,
-    int
-nMins,
- int
-nSecs) throw();
+void SetDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 ```  
   
 ### Parameters  
@@ -690,7 +664,7 @@ nSecs) throw();
  Sets the status (validity) of this `COleDateTimeSpan` object.  
   
 ```
-void SetStatus(DateTimeSpanStatus    status) throw();
+void SetStatus(DateTimeSpanStatus status) throw();
 ```  
   
 ### Parameters  

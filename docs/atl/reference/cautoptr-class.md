@@ -43,8 +43,8 @@ This class represents a smart pointer object.
 ## Syntax  
   
 ```
-template <typename   T>
-    class CAutoPtr
+template <typename T>  
+class CAutoPtr
 ```  
   
 #### Parameters  
@@ -125,9 +125,11 @@ void Attach(T* p) throw();
 CAutoPtr() throw();
 explicit CAutoPtr(T* p) throw();
 
-template<typename TSrc> CAutoPtr(CAutoPtr<TSrc>& p) throw();
+template<typename TSrc>
+CAutoPtr(CAutoPtr<TSrc>& p) throw();
 
-template<> CAutoPtr(CAutoPtr<T>& p) throw();
+template<> 
+CAutoPtr(CAutoPtr<T>& p) throw();
 ```  
   
 ### Parameters  
@@ -235,7 +237,8 @@ T* operator->() const throw();
 ##  <a name="operator_t_star"></a>  CAutoPtr::operator T*  
  The cast operator.  
   
-```operator T* () const throw();
+```  
+operator T* () const throw();
 ```  
   
 ### Return Value  

@@ -139,15 +139,15 @@ COleCurrency(
 ### Remarks  
  All of these constructors create new **COleCurrency** objects initialized to the specified value. A brief description of each of these constructors follows. Unless otherwise noted, the status of the new **COleCurrency** item is set to valid.  
   
-- `COleCurrency(`Â **)**Â Â Â Constructs a **COleCurrency** object initialized to 0 (zero).  
+- COleCurrency() Constructs a **COleCurrency** object initialized to 0 (zero).  
   
-- `COleCurrency(`Â `cySrc`Â **)**Â Â Â Constructs a **COleCurrency** object from a [CURRENCY](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e) value.  
+- COleCurrency(`cySrc`) Constructs a **COleCurrency** object from a [CURRENCY](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e) value.  
   
-- `COleCurrency(`Â `curSrc`Â **)**Â Â Â Constructs a **COleCurrency** object from an existing **COleCurrency** object. The new object has the same status as the source object.  
+- COleCurrency(`curSrc`) Constructs a **COleCurrency** object from an existing **COleCurrency** object. The new object has the same status as the source object.  
   
-- `COleCurrency(`Â *varSrc*Â **)**Â Â Â Constructs a **COleCurrency** object. Attempts to convert a [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) structure or `COleVariant` object to a currency ( `VT_CY`) value. If this conversion is successful, the converted value is copied into the new **COleCurrency** object. If it is not, the value of the **COleCurrency** object is set to zero (0) and its status to invalid.  
+- COleCurrency(`varSrc`) Constructs a **COleCurrency** object. Attempts to convert a [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) structure or `COleVariant` object to a currency ( `VT_CY`) value. If this conversion is successful, the converted value is copied into the new **COleCurrency** object. If it is not, the value of the **COleCurrency** object is set to zero (0) and its status to invalid.  
   
-- `COleCurrency(`Â `nUnits`**,** `nFractionalUnits`Â **)**Â Â Â Constructs a **COleCurrency** object from the specified numerical components. If the absolute value of the fractional part is greater than 10,000, the appropriate adjustment is made to the units. Note that the units and fractional part are specified by signed long values.  
+- `COleCurrency(`nUnits`, `nFractionalUnits`) Constructs a **COleCurrency** object from the specified numerical components. If the absolute value of the fractional part is greater than 10,000, the appropriate adjustment is made to the units. Note that the units and fractional part are specified by signed long values.  
   
  For more information, see the [CURRENCY](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e) and [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) entries in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
@@ -160,17 +160,14 @@ COleCurrency(
  Call this member function to create a formatted representation of the currency value.  
   
 ```  
-CString Format(Â    DWORD  dwFlags = 0,Â    LCID  lcid = LANG_USER_DEFAULT Â) const;
-
- 
- 
+CString Format(DWORD  dwFlags = 0, LCID  lcid = LANG_USER_DEFAULT) const; 
 ```  
   
 ### Parameters  
  `dwFlags`  
  Indicates flags for locale settings. Only the following flag is relevant to currency:  
   
-- **LOCALE_NOUSEROVERRIDE**Â Â Â Use the system default locale settings, rather than custom user settings.  
+- **LOCALE_NOUSEROVERRIDE** Use the system default locale settings, rather than custom user settings.  
   
  `lcid`  
  Indicates locale ID to use for the conversion.  
@@ -211,11 +208,11 @@ CurrencyStatus GetStatus() const;
   
  For a brief description of these status values, see the following list:  
   
-- **COleCurrency::valid**Â Â Â Indicates that this **COleCurrency** object is valid.  
+- **COleCurrency::valid** Indicates that this **COleCurrency** object is valid.  
   
-- **COleCurrency::invalid**Â Â Â Indicates that this **COleCurrency** object is invalid; that is, its value may be incorrect.  
+- **COleCurrency::invalid** Indicates that this **COleCurrency** object is invalid; that is, its value may be incorrect.  
   
-- **COleCurrency::null**Â Â Â Indicates that this **COleCurrency** object is null, that is, that no value has been supplied for this object. (This is "null" in the database sense of "having no value," as opposed to the C++ **NULL**.)  
+- **COleCurrency::null** Indicates that this **COleCurrency** object is null, that is, that no value has been supplied for this object. (This is "null" in the database sense of "having no value," as opposed to the C++ **NULL**.)  
   
  The status of a **COleCurrency** object is invalid in the following cases:  
   
@@ -268,11 +265,11 @@ enum CurrencyStatus{
 ### Remarks  
  For a brief description of these status values, see the following list:  
   
-- **COleCurrency::valid**Â Â Â Indicates that this **COleCurrency** object is valid.  
+- **COleCurrency::valid** Indicates that this **COleCurrency** object is valid.  
   
-- **COleCurrency::invalid**Â Â Â Indicates that this **COleCurrency** object is invalid; that is, its value may be incorrect.  
+- **COleCurrency::invalid** Indicates that this **COleCurrency** object is invalid; that is, its value may be incorrect.  
   
-- **COleCurrency::null**Â Â Â Indicates that this **COleCurrency** object is null, that is, that no value has been supplied for this object. (This is "null" in the database sense of "having no value," as opposed to the C++ **NULL**.)  
+- **COleCurrency::null** Indicates that this **COleCurrency** object is null, that is, that no value has been supplied for this object. (This is "null" in the database sense of "having no value," as opposed to the C++ **NULL**.)  
   
  The status of a **COleCurrency** object is invalid in the following cases:  
   
@@ -317,11 +314,11 @@ const COleCurrency& operator=(const VARIANT& varSrc);
 ### Remarks  
  A brief description of each operator follows:  
   
-- **operator =(** `cySrc` **)**Â Â Â The `CURRENCY` value is copied into the **COleCurrency** object and its status is set to valid.  
+- **operator =(** `cySrc` **)** The `CURRENCY` value is copied into the **COleCurrency** object and its status is set to valid.  
   
-- **operator =(** `curSrc` **)**Â Â Â The value and status of the operand, an existing **COleCurrency** object are copied into this **COleCurrency** object.  
+- **operator =(** `curSrc` **)** The value and status of the operand, an existing **COleCurrency** object are copied into this **COleCurrency** object.  
   
-- **operator =(** *varSrc* **)**Â Â Â If the conversion of the `VARIANT` value (or [COleVariant](../../mfc/reference/colevariant-class.md) object) to a currency ( `VT_CY`) is successful, the converted value is copied into this **COleCurrency** object and its status is set to valid. If the conversion is not successful, the value of the **COleCurrency** object is set to 0 and its status to invalid.  
+- **operator =(** *varSrc* **)** If the conversion of the `VARIANT` value (or [COleVariant](../../mfc/reference/colevariant-class.md) object) to a currency ( `VT_CY`) is successful, the converted value is copied into this **COleCurrency** object and its status is set to valid. If the conversion is not successful, the value of the **COleCurrency** object is set to 0 and its status to invalid.  
   
  For more information, see the [CURRENCY](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e) and [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) entries in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
@@ -484,7 +481,7 @@ throw(
  `dwFlags`  
  Indicates flags for locale settings, possibly the following flag:  
   
-- **LOCALE_NOUSEROVERRIDE**Â Â Â Use the system default locale settings, rather than custom user settings.  
+- **LOCALE_NOUSEROVERRIDE** Use the system default locale settings, rather than custom user settings.  
   
  `lcid`  
  Indicates locale ID to use for the conversion.  
@@ -568,7 +565,7 @@ void SetCurrency(
  Call this member function to set the status (validity) of this **COleCurrency** object.  
   
 ```  
-void SetStatus(Â    CurrencyStatus  status Â);
+void SetStatus(     CurrencyStatus  status  );
 
  
 ```  
@@ -592,11 +589,11 @@ void SetStatus(Â    CurrencyStatus  status Â);
   
  For a brief description of these status values, see the following list:  
   
-- **COleCurrency::valid**Â Â Â Indicates that this **COleCurrency** object is valid.  
+- **COleCurrency::valid** Indicates that this **COleCurrency** object is valid.  
   
-- **COleCurrency::invalid**Â Â Â Indicates that this **COleCurrency** object is invalid; that is, its value may be incorrect.  
+- **COleCurrency::invalid** Indicates that this **COleCurrency** object is invalid; that is, its value may be incorrect.  
   
-- **COleCurrency::null**Â Â Â Indicates that this **COleCurrency** object is null, that is, that no value has been supplied for this object. (This is "null" in the database sense of "having no value," as opposed to the C++ **NULL**.)  
+- **COleCurrency::null** Indicates that this **COleCurrency** object is null, that is, that no value has been supplied for this object. (This is "null" in the database sense of "having no value," as opposed to the C++ **NULL**.)  
   
     > [!CAUTION]
     >  This function is for advanced programming situations. This function does not alter the data in this object. It will most often be used to set the status to null or invalid. Note that the assignment operator ( [operator =](#operator_eq)) and [SetCurrency](#setcurrency) do set the status to of the object based on the source value(s).  

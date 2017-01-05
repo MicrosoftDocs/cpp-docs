@@ -40,7 +40,8 @@ A smart pointer class for managing COM interface pointers.
 ## Syntax  
   
 ```
-template<class T>  class CComPtr
+template<class T>  
+class CComPtr
 ```  
   
 #### Parameters  

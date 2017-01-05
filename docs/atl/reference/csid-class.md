@@ -136,13 +136,9 @@ CSid(
     BYTE nSubAuthorityCount,
     ...) throw(...);
 
-    explicit CSid(
-        LPCTSTR pszAccountName,
-        LPCTSTR pszSystem = NULL) throw(...);
+    explicit CSid(        LPCTSTR pszAccountName,     LPCTSTR pszSystem = NULL) throw(...);
 
-    explicit CSid(
-        const SID* pSid,
-        LPCTSTR pszSystem = NULL) throw(...);
+    explicit CSid(        const SID* pSid,     LPCTSTR pszSystem = NULL) throw(...);
 ```  
   
 ### Parameters  
@@ -313,10 +309,12 @@ bool IsValid() const throw();
  Updates the `CSid` object given the account name and domain, or an existing SID (security identifier) structure.  
   
 ```
-bool LoadAccount(LPCTSTR pszAccountName,
+bool LoadAccount(  
+    LPCTSTR pszAccountName,
     LPCTSTR pszSystem = NULL) throw(...);
 
-bool LoadAccount(const SID* pSid,
+bool LoadAccount(  
+    const SID* pSid,
     LPCTSTR pszSystem = NULL) throw(...);
 ```  
   
@@ -469,7 +467,8 @@ bool operator<(
 ##  <a name="operator_const_sid__star"></a>  CSid::operator const SID *  
  Casts a `CSid` object to a pointer to a `SID` (security identifier) structure.  
   
-```operator const SID *() const throw(...);
+```  
+operator const SID *() const throw(...);
 ```  
   
 ### Remarks  

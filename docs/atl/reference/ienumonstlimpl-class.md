@@ -43,7 +43,8 @@ This class defines an enumerator interface based on a C++ Standard Library colle
   
 ```
 template <class Base,
-    const IID* piid, class T, class Copy, class CollType>  class ATL_NO_VTABLE IEnumOnSTLImpl :  public Base
+    const IID* piid, class T, class Copy, class CollType>  
+class ATL_NO_VTABLE IEnumOnSTLImpl : public Base
 ```  
   
 #### Parameters  
@@ -169,7 +170,8 @@ CollType::iterator m_iter;
  This method provides the implementation of the [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx) method.  
   
 ```
-STDMETHOD(Next)(ULONG celt,
+STDMETHOD(Next)(
+    ULONG celt,
     T* rgelt,
     ULONG* pceltFetched);
 ```  

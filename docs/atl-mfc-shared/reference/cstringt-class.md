@@ -46,13 +46,11 @@ This class represents a `CStringT` object.
   
 ```  
  
-template<typename   
-BaseType  , class   
-StringTraits>  
-class CStringT :   
-public CSimpleStringT<
-BaseType,   _CSTRING_IMPL_::_MFCDLLTraitsCheck<BaseType,   StringTraits>   ::c_bIsMFCDLLTraits>  
- 
+template<typename BaseType, class StringTraits>  
+class CStringT 
+ : public CSimpleStringT<BaseType,
+ _CSTRING_IMPL_::_MFCDLLTraitsCheck<BaseType,
+ StringTraits>::c_bIsMFCDLLTraits>  
 ```  
   
 #### Parameters  
@@ -269,14 +267,14 @@ void AnsiToOem();
   
 ```  
 void __cdecl AppendFormat(
-    PCXSTR pszFormat,  
+ PCXSTR pszFormat,  
  [,
-    argument]                ...);
+ argument]                ...);
 
 void __cdecl AppendFormat(
-    UINT nFormatID,  
+ UINT nFormatID,  
  [,
-    argument]                ...);
+ argument]                ...);
 ```  
   
 ### Parameters  
@@ -383,159 +381,159 @@ int CompareNoCase(PCXSTR psz) const throw();
   
 ```  
 CStringT() throw() :   
-    CThisSimpleString(
+ CThisSimpleString(
  StringTraits::GetDefaultManager());
 
  
 explicit CStringT(
-    IAtlStringMgr* pStringMgr) throw() :   
-    CThisSimpleString(
+ IAtlStringMgr* pStringMgr) throw() :   
+ CThisSimpleString(
  pStringMgr);
 
  
 CStringT(
-    const VARIANT& varSrc);
+ const VARIANT& varSrc);
 
  
 CStringT(
-    const VARIANT& varSrc,  
-    IAtlStringMgr* pStringMgr);
+ const VARIANT& varSrc,  
+ IAtlStringMgr* pStringMgr);
 
  
 CStringT(
-    const CStringT& strSrc) :   
-    CThisSimpleString(
+ const CStringT& strSrc) :   
+ CThisSimpleString(
  strSrc);
 
  operator CSimpleStringT<
  BaseType,   
  !_CSTRING_IMPL_::_MFCDLLTraitsCheck<
-    BaseType, 
-    StringTraits>:: c_bIsMFCDLLTraits   
+ BaseType, 
+ StringTraits>:: c_bIsMFCDLLTraits   
 > &()  
  
 template <
-    bool bMFCDLL  
+ bool bMFCDLL  
 >  
 CStringT(
-    const CSimpleStringT<
-    BaseType, 
-    bMFCDLL>& strSrc) :   
-    CThisSimpleString(
+ const CSimpleStringT<
+ BaseType, 
+ bMFCDLL>& strSrc) :   
+ CThisSimpleString(
  strSrc);
 
  
 template <
-    class SystemString  
+ class SystemString  
 >  
 CStringT(
-    SystemString^ pString) :   
-    CThisSimpleString(
+ SystemString^ pString) :   
+ CThisSimpleString(
  StringTraits::GetDefaultManager());
 
  
 CStringT(
-    const XCHAR* pszSrc) :   
-    CThisSimpleString(
+ const XCHAR* pszSrc) :   
+ CThisSimpleString(
  StringTraits::GetDefaultManager());
 
  
 CSTRING_EXPLICIT CStringT(
-    const YCHAR* pszSrc) :   
-    CThisSimpleString(
+ const YCHAR* pszSrc) :   
+ CThisSimpleString(
  StringTraits::GetDefaultManager());
 
  
 CStringT(
-    LPCSTR pszSrc,  
-    IAtlStringMgr* pStringMgr) :   
-    CThisSimpleString(
+ LPCSTR pszSrc,  
+ IAtlStringMgr* pStringMgr) :   
+ CThisSimpleString(
  pStringMgr);
 
  
 CStringT(
-    LPCWSTR pszSrc,  
-    IAtlStringMgr* pStringMgr) :   
-    CThisSimpleString(
+ LPCWSTR pszSrc,  
+ IAtlStringMgr* pStringMgr) :   
+ CThisSimpleString(
  pStringMgr);
 
  
 CSTRING_EXPLICIT CStringT(
-    const unsigned char* pszSrc) :   
-    CThisSimpleString(
+ const unsigned char* pszSrc) :   
+ CThisSimpleString(
  StringTraits::GetDefaultManager());
 
  
 /*CSTRING_EXPLICIT*/ CStringT(
-    char* pszSrc) :   
-    CThisSimpleString(
+ char* pszSrc) :   
+ CThisSimpleString(
  StringTraits::GetDefaultManager());
 
  
 CSTRING_EXPLICIT CStringT(
-    unsigned char* pszSrc) :   
-    CThisSimpleString(
+ unsigned char* pszSrc) :   
+ CThisSimpleString(
  StringTraits::GetDefaultManager());
 
  
 CSTRING_EXPLICIT CStringT(
-    wchar_t* pszSrc) :   
-    CThisSimpleString(
+ wchar_t* pszSrc) :   
+ CThisSimpleString(
  StringTraits::GetDefaultManager());
 
  
 CStringT(
-    const unsigned char* pszSrc,  
-    IAtlStringMgr* pStringMgr) :   
-    CThisSimpleString(
+ const unsigned char* pszSrc,  
+ IAtlStringMgr* pStringMgr) :   
+ CThisSimpleString(
  pStringMgr);
 
  
 CSTRING_EXPLICIT CStringT(
-    char ch,  
-    int nLength = 1) :   
-    CThisSimpleString(
+ char ch,  
+ int nLength = 1) :   
+ CThisSimpleString(
  StringTraits::GetDefaultManager());
 
  
 CSTRING_EXPLICIT CStringT(
-    wchar_t ch,  
-    int nLength = 1) :   
-    CThisSimpleString(
+ wchar_t ch,  
+ int nLength = 1) :   
+ CThisSimpleString(
  StringTraits::GetDefaultManager());
 
  
 CStringT(
-    const XCHAR* pch,  
-    int nLength) :   
-    CThisSimpleString(
+ const XCHAR* pch,  
+ int nLength) :   
+ CThisSimpleString(
  pch,   
-    nLength, 
-    StringTraits::GetDefaultManager());
-
- 
-CStringT(
-    const YCHAR* pch,  
-    int nLength) :   
-    CThisSimpleString(
+ nLength, 
  StringTraits::GetDefaultManager());
 
  
 CStringT(
-    const XCHAR* pch,  
-    int nLength,  
-    IAtlStringMgr* pStringMgr) :   
-    CThisSimpleString(
- pch,   
-    nLength, 
-    pStringMgr);
+ const YCHAR* pch,  
+ int nLength) :   
+ CThisSimpleString(
+ StringTraits::GetDefaultManager());
 
  
 CStringT(
-    const YCHAR* pch,  
-    int nLength,  
-    IAtlStringMgr* pStringMgr) :   
-    CThisSimpleString(
+ const XCHAR* pch,  
+ int nLength,  
+ IAtlStringMgr* pStringMgr) :   
+ CThisSimpleString(
+ pch,   
+ nLength, 
+ pStringMgr);
+
+ 
+CStringT(
+ const YCHAR* pch,  
+ int nLength,  
+ IAtlStringMgr* pStringMgr) :   
+ CThisSimpleString(
  pStringMgr);
 ```  
   
@@ -616,8 +614,8 @@ CStringT(
   
 ```  
 int Delete(
-    int iIndex,  
-    int nCount = 1);
+ int iIndex,  
+ int nCount = 1);
 ```  
   
 ### Parameters  
@@ -648,12 +646,12 @@ After: Soccer best,
   
 ```  
 int Find(
-    PCXSTR pszSub,  
-    int iStart=0) const throw();
+ PCXSTR pszSub,  
+ int iStart=0) const throw();
 
 int Find(
-    XCHAR ch,  
-    int iStart=0) const throw();
+ XCHAR ch,  
+ int iStart=0) const throw();
 ```  
   
 ### Parameters  
@@ -700,14 +698,14 @@ int FindOneOf(PCXSTR pszCharSet) const throw();
   
 ```  
 void __cdecl Format(
-    UINT nFormatID,  
+ UINT nFormatID,  
  [,
-    argument]                ...);
+ argument]                ...);
 
 void __cdecl Format(
-    PCXSTR pszFormat,  
+ PCXSTR pszFormat,  
  [,
-    argument]                ...);
+ argument]                ...);
 ```  
   
 ### Parameters  
@@ -737,14 +735,14 @@ void __cdecl Format(
   
 ```  
 void __cdecl FormatMessage(
-    UINT nFormatID,  
+ UINT nFormatID,  
  [,
-    argument]                ...);
+ argument]                ...);
 
 void __cdecl FormatMessage(
-    PCXSTR pszFormat,  
+ PCXSTR pszFormat,  
  [,
-    argument]                ...);
+ argument]                ...);
 ```  
   
 ### Parameters  
@@ -773,8 +771,8 @@ void __cdecl FormatMessage(
   
 ```  
 void FormatMessageV(
-    PCXSTR pszFormat,  
-    va_list* pArgList);
+ PCXSTR pszFormat,  
+ va_list* pArgList);
 ```  
   
 ### Parameters  
@@ -797,8 +795,8 @@ void FormatMessageV(
   
 ```  
 void FormatV(
-    PCXSTR pszFormat,  
-    va_list args);
+ PCXSTR pszFormat,  
+ va_list args);
 ```  
   
 ### Parameters  
@@ -841,12 +839,12 @@ BOOL GetEnvironmentVariable(PCXSTR pszVar);
   
 ```  
 int Insert(
-    int iIndex,  
-    PCXSTR psz);
+ int iIndex,  
+ PCXSTR psz);
 
 int Insert(
-    int iIndex,  
-    XCHAR ch);
+ int iIndex,  
+ XCHAR ch);
 ```  
   
 ### Parameters  
@@ -897,16 +895,16 @@ CStringT Left(int nCount) const;
   
 ```  
 BOOL LoadString(
-    HINSTANCE hInstance,  
-    UINT nID,  
-    WORD wLanguageID);
+ HINSTANCE hInstance,  
+ UINT nID,  
+ WORD wLanguageID);
 
 BOOL LoadString(
-    HINSTANCE hInstance,  
-    UINT nID);
+ HINSTANCE hInstance,  
+ UINT nID);
 
 BOOL LoadString(
-    UINT nID);
+ UINT nID);
 ```  
   
 ### Parameters  
@@ -974,12 +972,12 @@ CStringT& MakeUpper();
   
 ```  
 CStringT Mid(
-    int iFirst,  
-    int nCount) const;
+ int iFirst,  
+ int nCount) const;
 
  
 CStringT Mid(
-    int iFirst) const;
+ int iFirst) const;
 
  
 ```  
@@ -1020,32 +1018,32 @@ void OemToAnsi();
   
 ```  
 friend CStringT operator+(
-    const CStringT& str1,  
-    const CStringT& str2);
+ const CStringT& str1,  
+ const CStringT& str2);
 
 friend CStringT operator+(
-    const CStringT& str1,  
-    PCXSTR psz2);
+ const CStringT& str1,  
+ PCXSTR psz2);
 
 friend CStringT operator+(
-    PCXSTR psz1  
-    const CStringT& str2,);
+ PCXSTR psz1  
+ const CStringT& str2,);
 
 friend CStringT operator+(
-    char ch1  
-    const CStringT& str2,);
+ char ch1  
+ const CStringT& str2,);
 
 friend CStringT operator+(
-    const CStringT& str1,  
-    char ch2);
+ const CStringT& str1,  
+ char ch2);
 
 friend CStringT operator+(
-    const CStringT& str1,  
-    wchar_t ch2);
+ const CStringT& str1,  
+ wchar_t ch2);
 
 friend CStringT operator+(
-    wchar_t ch1  
-    const CStringT& str2,);
+ wchar_t ch1  
+ const CStringT& str2,);
 ```  
   
 ### Parameters  
@@ -1079,39 +1077,18 @@ friend CStringT operator+(
 ##  <a name="operator_add_eq"></a>  CStringT::operator +=  
  Concatenates characters to the end of the string.  
   
-```  
-CStringT& operator+=(
-    const CThisSimpleString& str);
-
-template<
-    bool bMFCDLL  
->  
-CStringT& operator+=(
-    const const CSimpleStringT<BaseType, bMFCDLL>& str);
-
-template<
-    int t_nSize  
->  
-CStringT& operator+=(
-    const CStaticString<XCHAR, t_nSize>& strSrc);
-
-CStringT& operator+=(
-    PCXSTR pszSrc);
-
-CStringT& operator+=(
-    PCYSTR pszSrc);
-
-CStringT& operator+=(
-    char ch);
-
-CStringT& operator+=(
-    unsigned char ch);
-
-CStringT& operator+=(
-    wchar_t ch);
-
-CStringT& operator+=(
-    const VARIANT& var);
+```
+CStringT& operator+=(const CThisSimpleString& str);
+template<bool bMFCDLL>  
+CStringT& operator+=(const const CSimpleStringT<BaseType, bMFCDLL>& str);
+template<int t_nSize>  
+CStringT& operator+=(const CStaticString<XCHAR, t_nSize>& strSrc);
+CStringT& operator+=(PCXSTR pszSrc);
+CStringT& operator+=(PCYSTR pszSrc);
+CStringT& operator+=(char ch);
+CStringT& operator+=(unsigned char ch);
+CStringT& operator+=(wchar_t ch);
+CStringT& operator+=(const VARIANT& var);
 ```  
   
 ### Parameters  
@@ -1152,32 +1129,32 @@ CStringT& operator+=(
   
 ```  
 friend bool operator==(
-    const CStringT& str1,  
-    const CStringT& str2) throw();
+ const CStringT& str1,  
+ const CStringT& str2) throw();
 
 friend bool operator==(
-    const CStringT& str1  
-    PCXSTR psz2) throw();
+ const CStringT& str1  
+ PCXSTR psz2) throw();
 
 friend bool operator==(
-    const CStringT& str1,  
-    PCYSTR psz2) throw();
+ const CStringT& str1,  
+ PCYSTR psz2) throw();
 
 friend bool operator==(
-    const CStringT& str1,  
-    XCHAR ch2) throw();
+ const CStringT& str1,  
+ XCHAR ch2) throw();
 
 friend bool operator==(
-    PCXSTR psz1  
-    const CStringT& str2) throw();
+ PCXSTR psz1  
+ const CStringT& str2) throw();
 
 friend bool operator==(
-    PCYSTR psz1  
-    const CStringT& str2,) throw();
+ PCYSTR psz1  
+ const CStringT& str2,) throw();
 
 friend bool operator==(
-    XCHAR ch1  
-    const CStringT& str2,) throw();
+ XCHAR ch1  
+ const CStringT& str2,) throw();
 ```  
   
 ### Parameters  
@@ -1210,32 +1187,32 @@ friend bool operator==(
   
 ```  
 friend bool operator!=(
-    const CStringT& str1,  
-    const CStringT& str2) throw();
+ const CStringT& str1,  
+ const CStringT& str2) throw();
 
 friend bool operator!=(
-    const CStringT& str1  
-    PCXSTR psz2) throw();
+ const CStringT& str1  
+ PCXSTR psz2) throw();
 
 friend bool operator!=(
-    const CStringT& str1,  
-    PCYSTR psz2) throw();
+ const CStringT& str1,  
+ PCYSTR psz2) throw();
 
 friend bool operator!=(
-    const CStringT& str1,  
-    XCHAR ch2) throw();
+ const CStringT& str1,  
+ XCHAR ch2) throw();
 
 friend bool operator!=(
-    PCXSTR psz1  
-    const CStringT& str2) throw();
+ PCXSTR psz1  
+ const CStringT& str2) throw();
 
 friend bool operator!=(
-    PCYSTR psz1  
-    const CStringT& str2,) throw();
+ PCYSTR psz1  
+ const CStringT& str2,) throw();
 
 friend bool operator!=(
-    XCHAR ch1  
-    const CStringT& str2,) throw();
+ XCHAR ch1  
+ const CStringT& str2,) throw();
 ```  
   
 ### Parameters  
@@ -1268,16 +1245,16 @@ friend bool operator!=(
   
 ```  
 friend bool operator<(
-    const CStringT& str1,  
-    const CStringT& str2) throw();
+ const CStringT& str1,  
+ const CStringT& str2) throw();
 
 friend bool operator<(
-    const CStringT& str1  
-    PCXSTR psz2) throw();
+ const CStringT& str1  
+ PCXSTR psz2) throw();
 
 friend bool operator<(
-    PCXSTR psz1  
-    const CStringT& str2) throw();
+ PCXSTR psz1  
+ const CStringT& str2) throw();
 ```  
   
 ### Parameters  
@@ -1310,16 +1287,16 @@ friend bool operator<(
   
 ```  
 friend bool operator>(
-    const CStringT& str1,  
-    const CStringT& str2) throw();
+ const CStringT& str1,  
+ const CStringT& str2) throw();
 
 friend bool operator>(
-    const CStringT& str1  
-    PCXSTR psz2) throw();
+ const CStringT& str1  
+ PCXSTR psz2) throw();
 
 friend bool operator>(
-    PCXSTR psz1  
-    const CStringT& str2) throw();
+ PCXSTR psz1  
+ const CStringT& str2) throw();
 ```  
   
 ### Parameters  
@@ -1352,16 +1329,16 @@ friend bool operator>(
   
 ```  
 friend bool operator<=(
-    const CStringT& str1,  
-    const CStringT& str2) throw();
+ const CStringT& str1,  
+ const CStringT& str2) throw();
 
 friend bool operator<=(
-    const CStringT& str1  
-    PCXSTR psz2) throw();
+ const CStringT& str1  
+ PCXSTR psz2) throw();
 
 friend bool operator<=(
-    PCXSTR psz1  
-    const CStringT& str2) throw();
+ PCXSTR psz1  
+ const CStringT& str2) throw();
 ```  
   
 ### Parameters  
@@ -1394,16 +1371,16 @@ friend bool operator<=(
   
 ```  
 friend bool operator>=(
-    const CStringT& str1,  
-    const CStringT& str2) throw();
+ const CStringT& str1,  
+ const CStringT& str2) throw();
 
 friend bool operator>=(
-    const CStringT& str1  
-    PCXSTR psz2) throw();
+ const CStringT& str1  
+ PCXSTR psz2) throw();
 
 friend bool operator>=(
-    PCXSTR psz1  
-    const CStringT& str2) throw();
+ PCXSTR psz1  
+ const CStringT& str2) throw();
 ```  
   
 ### Parameters  
@@ -1456,12 +1433,12 @@ int Remove(XCHAR chRemove);
   
 ```  
 int Replace(
-    PCXSTR pszOld,  
-    PCXSTR pszNew);
+ PCXSTR pszOld,  
+ PCXSTR pszNew);
 
 int Replace(
-    XCHAR chOld,  
-    XCHAR chNew);
+ XCHAR chOld,  
+ XCHAR chNew);
 ```  
   
 ### Parameters  
@@ -1616,8 +1593,8 @@ CStringT SpanIncluding(PCXSTR pszCharSet) const;
   
 ```  
 CStringT Tokenize(
-    PCXSTR pszTokens,  
-    int& iStart) const;
+ PCXSTR pszTokens,  
+ int& iStart) const;
 
  
 ```  

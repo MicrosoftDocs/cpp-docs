@@ -149,9 +149,7 @@ CAnimationPoint(
  Puts the encapsulated animation variables into a list.  
   
 ```  
-virtual void GetAnimationVariableList(
-    CList<CAnimationVariable*, 
-    CAnimationVariable*>& lst);
+virtual void GetAnimationVariableList(CList<CAnimationVariable*, CAnimationVariable*>& lst);
 ```  
   
 ### Parameters  

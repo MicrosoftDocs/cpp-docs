@@ -42,8 +42,11 @@ This class provides methods for creating and utilizing a Red-Black tree.
 ## Syntax  
   
 ```
-template <typename   K,
-    typename V, class KTraits = CElementTraits<K>, class VTraits = CElementTraits<V>> class CRBTree
+template <typename K, 
+          typename V,
+          class KTraits = CElementTraits<K>,
+          class VTraits = CElementTraits<V>>  
+class CRBTree
 ```  
   
 #### Parameters  
@@ -144,7 +147,7 @@ class CPair : public __POSITION
  Call this method to find the position of the element that uses the next available key.  
   
 ```
-POSITION FindFirstKeyAfter(KINARGTYPE   key) const throw();
+POSITION FindFirstKeyAfter(KINARGTYPE key) const throw();
 ```  
   
 ### Parameters  
@@ -161,11 +164,9 @@ POSITION FindFirstKeyAfter(KINARGTYPE   key) const throw();
  Call this method to get the element at a given position in the tree.  
   
 ```
-CPair* GetAt(
-    POSITION pos) throw();
+CPair* GetAt(POSITION pos) throw();
 
-const CPair* GetAt(
-    POSITION pos) const throw();
+const CPair* GetAt(POSITION pos) const throw();
 void GetAt(
     POSITION pos,
     KOUTARGTYPE key,
@@ -217,7 +218,7 @@ POSITION GetHeadPosition() const throw();
  Call this method to get the key from a given position in the tree.  
   
 ```
-const K& GetKeyAt(POSITION   pos) const throw();
+const K& GetKeyAt(POSITION pos) const throw();
 ```  
   
 ### Parameters  
@@ -341,8 +342,8 @@ POSITION GetTailPosition() const throw();
  Call this method to retrieve the value stored at a given position in the `CRBTree` object.  
   
 ```
-const V& GetValueAt(POSITION   pos) const throw();
-V& GetValueAt(POSITION   pos) throw();
+const V& GetValueAt(POSITION pos) const throw();
+V& GetValueAt(POSITION pos) throw();
 ```  
   
 ### Parameters  
@@ -390,7 +391,7 @@ void RemoveAll() throw();
  Call this method to remove the element at the given position in the **CRBTree** object.  
   
 ```
-void RemoveAt(POSITION   pos) throw();
+void RemoveAt(POSITION pos) throw();
 ```  
   
 ### Parameters  

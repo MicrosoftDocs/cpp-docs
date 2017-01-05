@@ -97,7 +97,8 @@ class CDynamicChain
  Directs the Windows message to another object's message map.  
   
 ```
-BOOL CallChain(DWORD dwChainID,
+BOOL CallChain(  
+    DWORD dwChainID,
     HWND hWnd,
     UINT uMsg,
     WPARAM wParam,
@@ -167,7 +168,8 @@ BOOL RemoveChainEntry(DWORD dwChainID);
  Adds the specified message map to the collection.  
   
 ```
-BOOL SetChainEntry(DWORD dwChainID,
+BOOL SetChainEntry(  
+    DWORD dwChainID,
     CMessageMap* pObject,
     DWORD dwMsgMapID = 0);
 ```  

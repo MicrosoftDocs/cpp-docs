@@ -42,12 +42,10 @@ This class provides methods useful when constructing a list of COM interface poi
 ## Syntax  
   
 ```
-template<class I,
-    const IID* piid =& __uuidof(I)>   class CInterfaceList : public CAtlList<
-    ATL::CComQIPtr<I,
- piid>,
-    CComQIPtrElementTraits<I,
- piid>>
+template<class I, const IID* piid =& __uuidof(I)>  
+class CInterfaceList 
+   : public CAtlList<ATL::CComQIPtr<I, piid>,
+                     CComQIPtrElementTraits<I, piid>>
 ```  
   
 #### Parameters  

@@ -48,9 +48,8 @@ This class provides methods for manipulating a window that hosts an ActiveX cont
 ## Syntax  
   
 ```
-template <class   TBase = CWindow>
-    class CAxWindow2T :
-    public CAxWindowT<TBase>
+template <class TBase = CWindow>  
+class CAxWindow2T : public CAxWindowT<TBase>
 ```  
   
 #### Parameters  

@@ -44,7 +44,8 @@ This class implements **IUnknown** for a nonaggregated object.
 ## Syntax  
   
 ```
-template<class Base>  class CComObject :  public Base
+template<class Base>  
+class CComObject : public Base
 ```  
   
 #### Parameters  
@@ -147,11 +148,10 @@ static HRESULT WINAPI CreateInstance(CComObject<Base>** pp);
  Retrieves a pointer to the requested interface.  
   
 ```
-STDMETHOD(QueryInterface)(REFIID iid,
-    void** ppvObject);
+STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 
-    template <class Q>  HRESULT STDMETHODCALLTYPE QueryInterface(
-    Q** pp);
+template <class Q>  
+HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 ```  
   
 ### Parameters  

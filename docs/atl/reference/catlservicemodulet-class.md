@@ -45,7 +45,8 @@ This class implements a service.
 ## Syntax  
   
 ```
-template <class T,  UINT nServiceNameID>  class ATL_NO_VTABLE CAtlServiceModuleT :  public CAtlExeModuleT<T>
+template <class T,  UINT nServiceNameID>  
+class ATL_NO_VTABLE CAtlServiceModuleT : public CAtlExeModuleT<T>
 ```  
   
 #### Parameters  
@@ -205,8 +206,7 @@ BOOL IsInstalled() throw();
  Writes to the event log.  
   
 ```
-void __cdecl LogEvent(LPCTSTR pszFormat,
- ...) throw();
+void __cdecl LogEvent(LPCTSTR pszFormat, ...) throw();
 ```  
   
 ### Parameters  
@@ -319,8 +319,7 @@ void OnUnknownRequest(DWORD /* dwOpcode*/) throw();
  Parses the command line and performs registration if necessary.  
   
 ```
-bool ParseCommandLine(LPCTSTR lpCmdLine,
-    HRESULT* pnRetCode) throw();
+bool ParseCommandLine(LPCTSTR lpCmdLine, HRESULT* pnRetCode) throw();
 ```  
   
 ### Parameters  

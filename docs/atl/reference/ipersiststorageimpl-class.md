@@ -48,7 +48,8 @@ This class implements the [IPersistStorage](http://msdn.microsoft.com/library/wi
 ## Syntax  
   
 ```
-template <class T>  class ATL_NO_VTABLE IPersistStorageImpl :  public IPersistStorage
+template <class T>  
+class ATL_NO_VTABLE IPersistStorageImpl : public IPersistStorage
 ```  
   
 #### Parameters  

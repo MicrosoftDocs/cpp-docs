@@ -42,7 +42,7 @@ This class implements a COM server module.
 ## Syntax  
   
 ```
-class CAtlComModule :  public _ATL_COM_MODULE
+class CAtlComModule : public _ATL_COM_MODULE
 ```  
   
 ## Members  

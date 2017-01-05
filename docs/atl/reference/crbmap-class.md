@@ -42,9 +42,9 @@ This class represents a mapping structure, using a Red-Black binary tree.
 ## Syntax  
   
 ```
-template <typename   K,
-    typename V, class KTraits = CElementTraits<K>, class VTraits = CElementTraits<V>> class CRBMap : public CRBTree<K,
-    V,
+template <typename K,
+    typename V, class KTraits = CElementTraits<K>, class VTraits = CElementTraits<V>>  
+class CRBMap : public CRBTree<K, V,
  KTraits,
     VTraits>
 ```    
@@ -139,10 +139,8 @@ bool Lookup(
     KINARGTYPE key,
     VOUTARGTYPE value) const throw(...);
 
-const CPair* Lookup(
-    KINARGTYPE key) const throw();
-CPair* Lookup(
-    KINARGTYPE key) throw();
+const CPair* Lookup(KINARGTYPE key) const throw();
+CPair* Lookup(KINARGTYPE key) throw();
 ```  
   
 ### Parameters  

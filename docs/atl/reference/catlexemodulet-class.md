@@ -44,7 +44,8 @@ This class represents the module for an application.
 ## Syntax  
   
 ```
-template <class T>  class ATL_NO_VTABLE CAtlExeModuleT :  public CAtlModuleT<T>
+template <class T>  
+class ATL_NO_VTABLE CAtlExeModuleT : public CAtlModuleT<T>
 ```  
   
 #### Parameters  
@@ -175,8 +176,9 @@ DWORD m_dwTimeOut;
  Parses the command line and performs registration if necessary.  
   
 ```
-bool ParseCommandLine(LPCTSTR lpCmdLine,
-    HRESULT* pnRetCode) throw();
+bool ParseCommandLine(  
+   LPCTSTR lpCmdLine,
+   HRESULT* pnRetCode) throw();
 ```  
   
 ### Parameters  

@@ -43,7 +43,8 @@ This class wraps the `VARIANT` type, providing a member indicating the type of d
   
 ## Syntax  
   
-```cpp
+```  
+cpp
 class CComVariant : public tagVARIANT  
 ```  
   
@@ -193,9 +194,7 @@ CComVariant(const CComBSTR& bstrSrc);
  Converts the `CComVariant` object to a new type.  
   
 ```
-HRESULT ChangeType(
-    VARTYPE vtNew,
-    const VARIANT* pSrc = NULL);
+HRESULT ChangeType(VARTYPE vtNew, const VARIANT* pSrc = NULL);
 ```  
   
 ### Parameters  

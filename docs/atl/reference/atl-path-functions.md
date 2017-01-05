@@ -158,12 +158,12 @@ This function is an overloaded wrapper for [PathCombine](https://msdn.microsoft.
 
 ### Syntax  
 ```
-inline char* Combine(
+inline char* Combine(  
    char* pszDest,
    const char* pszDir,
    const char* pszFile 
 );
-inline wchar_t* Combine(
+inline wchar_t* Combine(  
    wchar_t* pszDest,
    const wchar_t* pszDir,
    const wchar_t* pszFile 
@@ -179,7 +179,7 @@ See PathCombine for details.
 ### Syntax  
   
 ```  
-inline int CommonPrefix(
+inline int CommonPrefix(  
    const char* pszFile1, 
    const char* pszFile2,  
    char* pszDest);  
@@ -312,11 +312,9 @@ inline int GetDriveNumber(const wchar_t* pszPath);
 This function is an overloaded wrapper for [PathIsDirectory](https://msdn.microsoft.com/en-us/library/windows/desktop/bb773621).
 
 ```  
-inline BOOL IsDirectory(
-   const char* pszPath 
+inline BOOL IsDirectory(const char* pszPath 
 );
-inline BOOL IsDirectory(
-   const wchar_t* pszPath 
+inline BOOL IsDirectory(const wchar_t* pszPath 
 );
 ```  
 ### Remarks

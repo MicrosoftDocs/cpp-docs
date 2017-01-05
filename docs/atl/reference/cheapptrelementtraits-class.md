@@ -45,9 +45,9 @@ This class provides methods, static functions, and typedefs useful when creating
 ## Syntax  
   
 ```
-template<typename T, class Allocator = ATL::CCRTAllocator>  class CHeapPtrElementTraits : public CDefaultElementTraits<
-    ATL::CHeapPtr<T,
- Allocator>>
+template<typename T, class Allocator = ATL::CCRTAllocator>  
+class CHeapPtrElementTraits : 
+   public CDefaultElementTraits<ATL::CHeapPtr<T, Allocator>>
 ```  
   
 #### Parameters  
@@ -89,8 +89,7 @@ template<typename T, class Allocator = ATL::CCRTAllocator>  class CHeapPtrElemen
  The data type to use for adding elements to the collection class object.  
   
 ```
-typedef CHeapPtr<T,
-    Allocator>& INARGTYPE;
+typedef CHeapPtr<T, Allocator>& INARGTYPE;
 ```  
   
 ##  <a name="outargtype"></a>  CHeapPtrElementTraits::OUTARGTYPE  

@@ -189,16 +189,15 @@ COleDateTime(const SYSTEMTIME& systimeSrc) throw();
 
 COleDateTime(const FILETIME& filetimeSrc) throw();
 
-COleDateTime(int nYear,
-    int nMonth,
-    int nDay,
-    int nHour,
-    int nMin,
-    int nSec) throw();
+COleDateTime(  
+ int nYear,
+ int nMonth,
+ int nDay,
+ int nHour,
+ int nMin,
+ int nSec) throw();
 
-COleDateTime(WORD wDosDate,
-    WORD wDosTime) throw();
-
+COleDateTime(WORD wDosDate, WORD wDosTime) throw();
 COleDateTime(const DBTIMESTAMP& dbts) throw();
 ```  
   
@@ -281,9 +280,7 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
   
 ```
 CString Format(DWORD dwFlags = 0,  LCID lcid = LANG_USER_DEFAULT) const;
-
 CString Format(LPCTSTR lpszFormat) const;
-
 CString Format(UINT nFormatID) const;
 ```  
   
@@ -854,7 +851,8 @@ COleDateTime& operator-=(COleDateTimeSpan dateSpan) throw();
 ##  <a name="operator_date"></a>  COleDateTime::operator DATE  
  Converts a **ColeDateTime** value into a **DATE**.  
   
-```operator DATE() const throw();
+```
+ operator DATE() const throw();
 ```  
   
 ### Remarks  
@@ -866,9 +864,10 @@ COleDateTime& operator-=(COleDateTimeSpan dateSpan) throw();
  Parses a string to read a date/time value.  
   
 ```
-bool ParseDateTime(LPCTSTR lpszDate,
-    DWORD dwFlags = 0,
-    LCID lcid = LANG_USER_DEFAULT) throw();
+bool ParseDateTime(  
+ LPCTSTR lpszDate,
+ DWORD dwFlags = 0,
+ LCID lcid = LANG_USER_DEFAULT) throw();
 ```  
   
 ### Parameters  
@@ -924,9 +923,10 @@ bool ParseDateTime(LPCTSTR lpszDate,
  Sets the date of this `COleDateTime` object.  
   
 ```
-int SetDate(int nYear,
-    int nMonth,
-    int nDay) throw();
+int SetDate(  
+ int nYear,
+ int nMonth,
+ int nDay) throw();
 ```  
   
 ### Parameters  
@@ -989,12 +989,13 @@ int SetDate(int nYear,
  Sets the date and time of this `COleDateTime` object.  
   
 ```
-int SetDateTime(int nYear,
-    int nMonth,
-    int nDay,
-    int nHour,
-    int nMin,
-    int nSec) throw();
+int SetDateTime(  
+ int nYear,
+ int nMonth,
+ int nDay,
+ int nHour,
+ int nMin,
+ int nSec) throw();
 ```  
   
 ### Parameters  
@@ -1087,9 +1088,10 @@ void SetStatus(DateTimeStatus status) throw();
  Sets the time of this `COleDateTime` object.  
   
 ```
-int SetTime(int nHour,
-    int nMin,
-    int nSec) throw();
+int SetTime(  
+ int nHour,
+ int nMin,
+ int nSec) throw();
 ```  
   
 ### Parameters  

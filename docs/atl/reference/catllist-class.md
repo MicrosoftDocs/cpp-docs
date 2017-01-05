@@ -42,7 +42,8 @@ This class provides methods for creating and managing a list object.
 ## Syntax  
   
 ```
-template<typename E,  class ETraits = CElementTraits<E>>  class CAtlList
+template<typename E, class ETraits = CElementTraits<E>>  
+class CAtlList
 ```  
   
 #### Parameters  

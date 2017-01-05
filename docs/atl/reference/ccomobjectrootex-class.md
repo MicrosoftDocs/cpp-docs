@@ -44,7 +44,8 @@ This class provides methods to handle object reference count management for both
 ## Syntax  
   
 ```
-template<class ThreadModel>  class CComObjectRootEx : public CComObjectRootBase
+template<class ThreadModel>  
+class CComObjectRootEx : public CComObjectRootBase
 ```  
   
 #### Parameters  
@@ -311,8 +312,7 @@ ULONG OuterAddRef();
  Retrieves an indirect pointer to the requested interface.  
   
 ```
-HRESULT OuterQueryInterface(REFIID iid,
-    void** ppvObject);
+HRESULT OuterQueryInterface(REFIID iid, void** ppvObject);
 ```  
   
 ### Parameters  

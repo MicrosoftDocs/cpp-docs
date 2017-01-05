@@ -44,7 +44,8 @@ This class provides default element comparison functions.
 ## Syntax  
   
 ```
-template<typename T>  class CDefaultCompareTraits
+template<typename T>  
+class CDefaultCompareTraits
 ```  
   
 #### Parameters  

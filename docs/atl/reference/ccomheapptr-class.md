@@ -44,7 +44,8 @@ A smart pointer class for managing heap pointers.
 ## Syntax  
   
 ```
-template<typename T> class CComHeapPtr :  public CHeapPtr<T,CComAllocator>
+template<typename T>  
+class CComHeapPtr : public CHeapPtr<T, CComAllocator>
 ```  
   
 #### Parameters  

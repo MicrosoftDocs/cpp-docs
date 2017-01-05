@@ -45,7 +45,8 @@ This class represents the module for a DLL.
 ## Syntax  
   
 ```
-template <class T>  class ATL_NO_VTABLE CAtlDllModuleT :  public CAtlModuleT<T>
+template <class T>  
+class ATL_NO_VTABLE CAtlDllModuleT : public CAtlModuleT<T>
 ```  
   
 #### Parameters  
@@ -117,7 +118,8 @@ HRESULT DllCanUnloadNow() throw();
  Returns the class factory.  
   
 ```
-HRESULT DllGetClassObject(REFCLSID rclsid,
+HRESULT DllGetClassObject(  
+   REFCLSID rclsid,
     REFIID riid,
     LPVOID* ppv) throw();
 ```  
@@ -187,9 +189,10 @@ HRESULT DllUnregisterServer(BOOL bUnRegTypeLib = TRUE) throw();
  Creates an object of the specified CLSID.  
   
 ```
-HRESULT GetClassObject(REFCLSID rclsid,
-    REFIID riid,
-    LPVOID* ppv) throw();
+HRESULT GetClassObject(  
+   REFCLSID rclsid,
+   REFIID riid,
+   LPVOID* ppv) throw();
 ```  
   
 ### Parameters  

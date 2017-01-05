@@ -49,9 +49,8 @@ template <const CLSID* pcoclsid,
     const IID* psrcid,
     const GUID* plibid = &CAtlModule::m_libid,
     WORD wMajor = 1,
-    WORD wMinor = 0, class tihclass = CComTypeInfoHolder>
-    class ATL_NO_VTABLE IProvideClassInfo2Impl :
-    public IProvideClassInfo2
+    WORD wMinor = 0, class tihclass = CComTypeInfoHolder>  
+class ATL_NO_VTABLE IProvideClassInfo2Impl : public IProvideClassInfo2
 ```  
   
 #### Parameters  

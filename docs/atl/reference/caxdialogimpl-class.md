@@ -46,7 +46,8 @@ This class implements a dialog box (modal or modeless) that hosts ActiveX contro
 ## Syntax  
   
 ```
-template <class T,  class TBase = CWindow>  class ATL_NO_VTABLE CAxDialogImpl :  public CDialogImplBaseT<TBase>
+template <class T,  class TBase = CWindow>  
+class ATL_NO_VTABLE CAxDialogImpl : public CDialogImplBaseT<TBase>
 ```  
   
 #### Parameters  
@@ -126,12 +127,8 @@ HRESULT AdviseSinkMap(bool bAdvise);
  Call this method to create a modeless dialog box.  
   
 ```
-HWND Create(HWND hWndParent,
-    LPARAM dwInitParam = NULL);
-
-    HWND Create(HWND hWndParent,
-    RECT&,
- LPARAM dwInitParam = NULL);
+HWND Create(HWND hWndParent, LPARAM dwInitParam = NULL);
+HWND Create(HWND hWndParent, RECT&, LPARAM dwInitParam = NULL);
 ```  
   
 ### Parameters  

@@ -114,10 +114,7 @@ class CAtlPreviewCtrlImpl : public CWindowImpl<CAtlPreviewCtrlImpl>, public IPre
   
 ```
 CAtlPreviewCtrlImpl(void) : m_clrText(0),
-    m_clrBack(RGB(255,
- 255,
-    255)),
- m_plf(NULL);
+   m_clrBack(RGB(255, 255, 255)), m_plf(NULL);
 ```  
   
 ### Remarks  
@@ -212,7 +209,8 @@ const LOGFONTW* m_plf;
  Handles the WM_PAINT message.  
   
 ```
-LRESULT OnPaint(UINT nMsg,
+LRESULT OnPaint(  
+    UINT nMsg,
     WPARAM wParam,
     LPARAM lParam,
     BOOL& bHandled);
@@ -262,7 +260,8 @@ virtual void SetHost(HWND hWndParent);
  Called by a Rich Preview handler when it needs to set visuals of rich preview content.  
   
 ```
-virtual void SetPreviewVisuals(COLORREF clrBack,
+virtual void SetPreviewVisuals(
+    COLORREF clrBack,
     COLORREF clrText,
     const LOGFONTW* plf);
 ```  

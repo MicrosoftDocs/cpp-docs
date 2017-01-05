@@ -161,7 +161,8 @@ inline BOOL CAtlTransactionManager::Create();
  Creates or opens a file, file stream, or directory as a transacted operation.  
   
 ```
-inline HANDLE CAtlTransactionManager::CreateFile(LPCTSTR lpFileName,
+inline HANDLE CAtlTransactionManager::CreateFile(  
+    LPCTSTR lpFileName,
     DWORD dwDesiredAccess,
     DWORD dwShareMode,
     LPSECURITY_ATTRIBUTES lpSecurityAttributes,
@@ -216,7 +217,8 @@ inline BOOL CAtlTransactionManager::DeleteFile(LPCTSTR lpFileName);
  Searches a directory for a file or subdirectory as a transacted operation.  
   
 ```
-inline HANDLE CAtlTransactionManager::FindFirstFile(LPCTSTR lpFileName,
+inline HANDLE CAtlTransactionManager::FindFirstFile(  
+    LPCTSTR lpFileName,
     WIN32_FIND_DATA* pNextInfo);
 ```  
   
@@ -251,7 +253,8 @@ inline DWORD CAtlTransactionManager::GetFileAttributes(LPCTSTR lpFileName);
  Retrieves file system attributes for a specified file or directory as a transacted operation.  
   
 ```
-inline BOOL CAtlTransactionManager::GetFileAttributesEx(LPCTSTR lpFileName,
+inline BOOL CAtlTransactionManager::GetFileAttributesEx(  
+    LPCTSTR lpFileName,
     GET_FILEEX_INFO_LEVELS fInfoLevelId,
     LPVOID lpFileInformation);
 ```  
@@ -332,7 +335,8 @@ inline BOOL CAtlTransactionManager::MoveFile(LPCTSTR lpOldFileName,  LPCTSTR lpN
  Creates the specified registry key and associates it with a transaction. If the key already exists, the function opens it.  
   
 ```
-inline LSTATUS CAtlTransactionManager::RegCreateKeyEx(HKEY hKey,
+inline LSTATUS CAtlTransactionManager::RegCreateKeyEx(  
+    HKEY hKey,
     LPCTSTR lpSubKey,
     DWORD dwReserved,
     LPTSTR lpClass,
@@ -401,7 +405,8 @@ inline LSTATUS CAtlTransactionManager::RegDeleteKeyEx(HKEY hKey,  LPCTSTR lpSubK
  Opens the specified registry key and associates it with a transaction.  
   
 ```
-inline LSTATUS CAtlTransactionManager::RegOpenKeyEx(HKEY hKey,
+inline LSTATUS CAtlTransactionManager::RegOpenKeyEx(  
+    HKEY hKey,
     LPCTSTR lpSubKey,
     DWORD ulOptions,
     REGSAM samDesired,

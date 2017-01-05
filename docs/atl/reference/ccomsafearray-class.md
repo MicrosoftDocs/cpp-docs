@@ -41,8 +41,7 @@ This class is a wrapper for the **SAFEARRAY** structure.
 ## Syntax  
   
 ```
-template <typename  T,
-    VARTYPE _vartype = _ATL_AutomationType<T>::type>
+template <typename T, VARTYPE _vartype = _ATL_AutomationType<T>::type>
 class CComSafeArray
 ```  
   
@@ -137,17 +136,9 @@ class CComSafeArray
  Adds one or more elements, or a **SAFEARRAY** structure, to a `CComSafeArray`.  
   
 ```
-HRESULT Add(
-    const SAFEARRAY* psaSrc);
-
-    HRESULT Add(
-    ULONG ulCount,
-    const T* pT,
-    BOOL bCopy = TRUE);
-
-    HRESULT Add(
-    const T& t,
-    BOOL bCopy = TRUE);
+HRESULT Add(const SAFEARRAY* psaSrc);
+HRESULT Add(ULONG ulCount, const T* pT, BOOL bCopy = TRUE);
+HRESULT Add(const T& t, BOOL bCopy = TRUE);
 ```  
   
 ### Parameters  
@@ -196,25 +187,12 @@ HRESULT Attach(const SAFEARRAY* psaSrc);
   
 ```
 CComSafeArray();
-CComSafeArray(
- const SAFEARRAYBOUND& bound);
-
-    CComSafeArray(
- ULONG  ulCount,
-    LONG lLBound = 0);
-
-    CComSafeArray(
- const SAFEARRAYBOUND* pBound,
-    UINT uDims = 1);
-
-    CComSafeArray(
- const CComSafeArray& saSrc);
-
-    CComSafeArray(
- const SAFEARRAY& saSrc);
-
-    CComSafeArray(
- const SAFEARRAY* psaSrc);
+CComSafeArray(const SAFEARRAYBOUND& bound);
+CComSafeArray(ULONG  ulCount, LONG lLBound = 0);
+CComSafeArray(const SAFEARRAYBOUND* pBound, UINT uDims = 1);
+CComSafeArray(const CComSafeArray& saSrc);
+CComSafeArray(const SAFEARRAY& saSrc);
+CComSafeArray(const SAFEARRAY* psaSrc);
 ```  
   
 ### Parameters  
@@ -290,13 +268,8 @@ HRESULT CopyTo(LPSAFEARRAY* ppArray);
  Creates a `CComSafeArray`.  
   
 ```
-HRESULT Create(
-    const SAFEARRAYBOUND* pBound,
-    UINT uDims = 1);
-
-    HRESULT Create(
-    ULONG ulCount = 0,
-    LONG lLBound = 0);
+HRESULT Create(const SAFEARRAYBOUND* pBound, UINT uDims = 1);
+HRESULT Create(ULONG ulCount = 0, LONG lLBound = 0);
 ```  
   
 ### Parameters  
@@ -478,9 +451,7 @@ LPSAFEARRAY m_psa;
  Retrieves a single element from a multidimensional array.  
   
 ```
-HRESULT MultiDimGetAt(
-    const LONG* alIndex,
-    T& t);
+HRESULT MultiDimGetAt(const LONG* alIndex, T& t);
 ```  
   
 ### Parameters  
@@ -497,9 +468,7 @@ HRESULT MultiDimGetAt(
  Sets the value of an element in a multidimensional array.  
   
 ```
-HRESULT MultiDimSetAt(
-    const LONG* alIndex,
-    const T& t);
+HRESULT MultiDimSetAt(const LONG* alIndex, const T& t);
 ```  
   
 ### Parameters  
@@ -519,9 +488,8 @@ HRESULT MultiDimSetAt(
  Retrieves an element from the array.  
   
 ```
-T& operator[](long   lindex) const;
-
-    T& operator[](int   nindex) const;
+T& operator[](long lindex) const;
+T& operator[](int nindex) const;
 ```  
   
 ### Parameters  
@@ -539,8 +507,7 @@ T& operator[](long   lindex) const;
   
 ```
 ATL::CComSafeArray<T>& operator=(const ATL::CComSafeArray& saSrc);
-
-    ATL::CComSafeArray<T>& operator=(const SAFEARRAY* psaSrc);
+ATL::CComSafeArray<T>& operator=(const SAFEARRAY* psaSrc);
 ```  
   
 ### Parameters  
@@ -556,7 +523,8 @@ ATL::CComSafeArray<T>& operator=(const ATL::CComSafeArray& saSrc);
 ##  <a name="operator_lpsafearray"></a>  CComSafeArray::operator LPSAFEARRAY  
  Casts a value to a **SAFEARRAY** pointer.  
   
-```operator LPSAFEARRAY() const;
+```  
+operator LPSAFEARRAY() const;
 ```  
   
 ### Return Value  
@@ -566,12 +534,8 @@ ATL::CComSafeArray<T>& operator=(const ATL::CComSafeArray& saSrc);
  Resizes a `CComSafeArray` object.  
   
 ```
-HRESULT Resize(
-    const SAFEARRAYBOUND* pBound);
-
-    HRESULT Resize(
-    ULONG ulCount,
-    LONG lLBound = 0);
+HRESULT Resize(const SAFEARRAYBOUND* pBound);
+HRESULT Resize(ULONG ulCount, LONG lLBound = 0);
 ```  
   
 ### Parameters  
@@ -594,10 +558,7 @@ HRESULT Resize(
  Sets the value of an element in a single-dimensional array.  
   
 ```
-HRESULT SetAt(
-    LONG lIndex,
-    const T& t,
-    BOOL bCopy = TRUE);
+HRESULT SetAt(LONG lIndex, const T& t, BOOL bCopy = TRUE);
 ```  
   
 ### Parameters  

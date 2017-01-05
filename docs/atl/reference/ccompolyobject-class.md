@@ -46,9 +46,9 @@ This class implements **IUnknown** for an aggregated or nonaggregated object.
 ## Syntax  
   
 ```
-template<class contained>  class CComPolyObject : public IUnknown, public CComObjectRootEx
- <contained
- ::_ThreadModel::ThreadModelNoCS>
+template<class contained>  
+class CComPolyObject : public IUnknown,
+      public CComObjectRootEx<contained::_ThreadModel::ThreadModelNoCS>
 ```  
   
 #### Parameters  
@@ -146,7 +146,8 @@ CComPolyObject(void* pv);
  Allows you to create a new **CComPolyObject<**`contained` **>** object without the overhead of [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).  
   
 ```
-static HRESULT WINAPI CreateInstance(LPUNKNOWN pUnkOuter,
+static HRESULT WINAPI CreateInstance(  
+    LPUNKNOWN pUnkOuter, 
     CComPolyObject<contained>** pp);
 ```  
   
@@ -197,11 +198,9 @@ CComContainedObject<contained> m_contained;
  Retrieves a pointer to the requested interface.  
   
 ```
-STDMETHOD(QueryInterface)(REFIID iid,
-    void** ppvObject);
-
-    template <class Q>  HRESULT QueryInterface(Q
-** pp);
+STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
+template <class Q>
+HRESULT QueryInterface(Q** pp);
 ```  
   
 ### Parameters  

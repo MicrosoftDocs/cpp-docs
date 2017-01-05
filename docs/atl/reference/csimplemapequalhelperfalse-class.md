@@ -42,7 +42,8 @@ This class is a helper for the [CSimpleMap](../../atl/reference/csimplemap-class
 ## Syntax  
   
 ```
-template <class TKey, class TVal> class CSimpleMapEqualHelperFalse
+template <class TKey, class TVal>  
+class CSimpleMapEqualHelperFalse
 ```  
   
 ## Members  

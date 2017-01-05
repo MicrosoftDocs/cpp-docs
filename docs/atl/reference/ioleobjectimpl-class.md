@@ -49,7 +49,8 @@ This class implements **IUnknown** and is the principal interface through which 
 ## Syntax  
   
 ```
-template<class T>  class ATL_NO_VTABLE IOleObjectImpl :  public IOleObject
+template<class T>  
+class ATL_NO_VTABLE IOleObjectImpl : public IOleObject
 ```  
   
 #### Parameters  
@@ -146,7 +147,8 @@ STDMETHOD(Close)(DWORD dwSaveOption);
  Tells the control to perform one of its enumerated actions.  
   
 ```
-STDMETHOD(DoVerb)(LONG iVerb,
+STDMETHOD(DoVerb)(
+    LONG iVerb,
     LPMSG /* pMsg */,
     IOleClientSite* pActiveSite,
     LONG /* lindex */,
@@ -331,7 +333,8 @@ STDMETHOD(GetClientSite)(IOleClientSite** ppClientSite);
  Retrieves data from the Clipboard.  
   
 ```
-STDMETHOD(GetClipboardData)(DWORD /* dwReserved */,
+STDMETHOD(GetClipboardData)(    
+    DWORD /* dwReserved */,
     IDataObject** /* ppDataObject */);
 ```  
   
@@ -345,7 +348,8 @@ STDMETHOD(GetClipboardData)(DWORD /* dwReserved */,
  Retrieves a running control's display size in HIMETRIC units (0.01 millimeter per unit).  
   
 ```
-STDMETHOD(GetExtent)(DWORD dwDrawAspect,
+STDMETHOD(GetExtent)(
+    DWORD dwDrawAspect,
     SIZEL* psizel);
 ```  
   
@@ -358,7 +362,8 @@ STDMETHOD(GetExtent)(DWORD dwDrawAspect,
  Returns a pointer to registered status information for the control by calling **OleRegGetMiscStatus**.  
   
 ```
-STDMETHOD(GetMiscStatus)(DWORD dwAspect,
+STDMETHOD(GetMiscStatus)(
+    DWORD dwAspect,
     DWORD* pdwStatus);
 ```  
   
@@ -371,7 +376,8 @@ STDMETHOD(GetMiscStatus)(DWORD dwAspect,
  Retrieves the control's moniker.  
   
 ```
-STDMETHOD(GetMoniker)(DWORD /* dwAssign */,
+STDMETHOD(GetMoniker)(
+    DWORD /* dwAssign */,
     DWORD /* dwWhichMoniker */,
     IMoniker** /* ppmk */);
 ```  
@@ -396,7 +402,8 @@ STDMETHOD(GetUserClassID)(CLSID* pClsid);
  Returns the control's user-type name by calling **OleRegGetUserType**.  
   
 ```
-STDMETHOD(GetUserType)(DWORD dwFormOfType,
+STDMETHOD(GetUserType)(
+    DWORD dwFormOfType,
     LPOLESTR* pszUserType);
 ```  
   
@@ -619,7 +626,8 @@ STDMETHOD(SetColorScheme)(LOGPALETTE* /* pLogPal */);
  Sets the extent of the control's display area.  
   
 ```
-STDMETHOD(SetExtent)(DWORD dwDrawAspect,
+STDMETHOD(SetExtent)(
+    DWORD dwDrawAspect,
     SIZEL* psizel);
 ```  
   
@@ -649,7 +657,8 @@ STDMETHOD(SetHostNames)(LPCOLESTR /* szContainerApp */,  LPCOLESTR /* szContaine
  Tells the control what its moniker is.  
   
 ```
-STDMETHOD(SetMoniker)(DWORD /* dwWhichMoniker */,
+STDMETHOD(SetMoniker)(
+    DWORD /* dwWhichMoniker */,
     IMoniker** /* pmk */);
 ```  
   

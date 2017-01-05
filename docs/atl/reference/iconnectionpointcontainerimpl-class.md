@@ -46,7 +46,9 @@ This class implements a connection point container to manage a collection of [IC
 ## Syntax  
   
 ```
-template<class T>  class ATL_NO_VTABLE IConnectionPointContainerImpl :   public IConnectionPointContainer
+template<class T>  
+class ATL_NO_VTABLE IConnectionPointContainerImpl 
+   : public IConnectionPointContainer
 ```  
   
 #### Parameters  
@@ -93,8 +95,7 @@ STDMETHOD(EnumConnectionPoints)(IEnumConnectionPoints** ppEnum);
  Retrieves an interface pointer to the connection point that supports the specified IID.  
   
 ```
-STDMETHOD(FindConnectionPoint)(REFIID riid,
-    IConnectionPoint** ppCP);
+STDMETHOD(FindConnectionPoint)(REFIID riid, IConnectionPoint** ppCP);
 ```  
   
 ### Remarks  

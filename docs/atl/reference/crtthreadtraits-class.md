@@ -76,7 +76,8 @@ class CRTThreadTraits
  Call this function to create a thread that can use CRT functions.  
   
 ```
-static HANDLE CreateThread(LPSECURITY_ATTRIBUTES lpsa,
+static HANDLE CreateThread(  
+    LPSECURITY_ATTRIBUTES lpsa,
     DWORD dwStackSize,
     LPTHREAD_START_ROUTINE pfnThreadProc,
     void* pvParam,

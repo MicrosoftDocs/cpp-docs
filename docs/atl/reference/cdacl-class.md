@@ -94,11 +94,13 @@ class CDacl : public CAcl
  Adds an allowed ACE (access-control entry) to the `CDacl` object.  
   
 ```
-bool AddAllowedAce(const CSid& rSid,
+bool AddAllowedAce(  
+    const CSid& rSid,
     ACCESS_MASK AccessMask,
     BYTE AceFlags = 0) throw(...);
 
-    bool AddAllowedAce(const CSid& rSid,
+    bool AddAllowedAce(  
+    const CSid& rSid,
     ACCESS_MASK AccessMask,
     BYTE AceFlags,
     const GUID* pObjectType,
@@ -136,11 +138,13 @@ bool AddAllowedAce(const CSid& rSid,
  Adds a denied ACE (access-control entry) to the `CDacl` object.  
   
 ```
-bool AddDeniedAce(const CSid& rSid,
+bool AddDeniedAce(  
+    const CSid& rSid,
     ACCESS_MASK AccessMask,
     BYTE AceFlags = 0) throw(...);
 
-    bool AddDeniedAce(const CSid& rSid,
+    bool AddDeniedAce(  
+    const CSid& rSid,
     ACCESS_MASK AccessMask,
     BYTE AceFlags,
     const GUID* pObjectType,

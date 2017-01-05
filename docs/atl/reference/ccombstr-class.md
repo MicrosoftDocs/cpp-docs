@@ -120,10 +120,15 @@ class CComBSTR
   
 ```
 HRESULT Append(const CComBSTR& bstrSrc) throw();
+
 HRESULT Append(wchar_t ch) throw();
+
 HRESULT Append(char ch) throw();
+
 HRESULT Append(LPCOLESTR lpsz) throw();
+
 HRESULT Append(LPCSTR lpsz) throw();
+
 HRESULT Append(LPCOLESTR lpsz,  int nLen) throw();
 ```  
   
@@ -272,31 +277,21 @@ unsigned int ByteLength() const throw();
   
 ```
 CComBSTR() throw();
-CComBSTR(
- const CComBSTR& src);
+CComBSTR( const CComBSTR& src);
 
-    CComBSTR(
- REFGUID  guid);
+    CComBSTR( REFGUID  guid);
 
-    CComBSTR(
- int  nSize);
+    CComBSTR( int  nSize);
 
-    CComBSTR(
- int  nSize,
-    LPCOLESTR sz);
+    CComBSTR( int  nSize, LPCOLESTR sz);
 
-    CComBSTR(
- int  nSize,
-    LPCSTR sz);
+    CComBSTR( int  nSize, LPCSTR sz);
 
-    CComBSTR(
- LPCOLESTR  pSrc);
+    CComBSTR( LPCOLESTR  pSrc);
 
-    CComBSTR(
- LPCSTR  pSrc);
+    CComBSTR( LPCSTR  pSrc);
 
-    CComBSTR(
- CComBSTR&& src);
+    CComBSTR( CComBSTR&& src);
 ```  
   
 ### Parameters  
@@ -355,6 +350,7 @@ BSTR Copy() const throw();
   
 ```
 HRESULT CopyTo(BSTR* pbstr) throw();
+
 HRESULT CopyTo(VARIANT* pvarDest) throw();
 ```  
   
@@ -443,7 +439,8 @@ BSTR m_str;
 ##  <a name="operator_bstr"></a>  CComBSTR::operator BSTR  
  Casts a `CComBSTR` object to a `BSTR`.  
   
-```operator BSTR() const throw();
+```  
+operator BSTR() const throw();
 ```  
   
 ### Remarks  

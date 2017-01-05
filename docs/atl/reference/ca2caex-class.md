@@ -48,7 +48,8 @@ This class is used by string conversion macros `CA2CTEX` and `CT2CAEX`, and the 
 ## Syntax  
   
 ```
-template<int t_nBufferLength = 128>  class CA2CAEX
+template<int t_nBufferLength = 128>  
+class CA2CAEX
 ```  
   
 #### Parameters  
@@ -138,7 +139,8 @@ LPCSTR m_psz;
 ##  <a name="operator_lpcstr"></a>  CA2CAEX::operator LPCSTR  
  Conversion operator.  
   
-```operator LPCSTR() const throw();
+```
+operator LPCSTR() const throw();
 ```  
   
 ### Return Value  

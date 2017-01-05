@@ -47,10 +47,8 @@ template <UINT   nID, class T,
     const IID* pdiid = &IID_NULL,
     const GUID* plibid = &GUID_NULL,
     WORD wMajor = 0,
-    WORD wMinor = 0, class tihclass = CcomTypeInfoHolder>
-    class ATL_NO_VTABLE IDispEventImpl :
-    public IDispEventSimpleImpl<nID,
-    T,
+    WORD wMinor = 0, class tihclass = CcomTypeInfoHolder>  
+class ATL_NO_VTABLE IDispEventImpl : public IDispEventSimpleImpl<nID, T,
  pdiid>
 ```  
   

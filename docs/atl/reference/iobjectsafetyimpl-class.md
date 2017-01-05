@@ -46,7 +46,8 @@ This class provides a default implementation of the `IObjectSafety` interface to
 ## Syntax  
   
 ```
-template <class T,DWORD dwSupportedSafety>  class IObjectSafetyImpl
+template <class T,DWORD dwSupportedSafety>  
+class IObjectSafetyImpl
 ```  
   
 #### Parameters  
@@ -94,7 +95,8 @@ template <class T,DWORD dwSupportedSafety>  class IObjectSafetyImpl
  Retrieves the safety options supported by the object, as well as the safety options currently set for the object.  
   
 ```
-HRESULT GetInterfaceSafetyOptions(REFIID riid,
+HRESULT GetInterfaceSafetyOptions(  
+    REFIID riid,
     DWORD* pdwSupportedOptions,
     DWORD* pdwEnabledOptions);
 ```  
@@ -118,7 +120,8 @@ DWORD m_dwCurrentSafety;
  Makes the object safe for initialization or scripting by setting the [m_dwCurrentSafety](#m_dwcurrentsafety) member to the appropriate value.  
   
 ```
-HRESULT SetInterfaceSafetyOptions(REFIID riid,
+HRESULT SetInterfaceSafetyOptions(  
+    REFIID riid,
     DWORD dwOptionsSetMask,
     DWORD dwEnabledOptions);
 ```  

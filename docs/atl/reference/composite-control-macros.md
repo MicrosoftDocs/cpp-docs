@@ -168,8 +168,7 @@ SINK_ENTRY_INFO(
   
 ```
 template <UINT nID, classT, const IID* pdiid>
-class ATL_NO_VTABLE IDispEventSimpleImpl :
-public _IDispEventLocator<nID, pdiid>
+class ATL_NO_VTABLE IDispEventSimpleImpl : public _IDispEventLocator<nID, pdiid>
 ```  
   
 ### Parameters  
