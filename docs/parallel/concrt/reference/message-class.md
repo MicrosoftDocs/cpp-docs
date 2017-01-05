@@ -60,22 +60,22 @@ class message : public ::Concurrency::details::_Runtime_object;
   
 |Name|Description|  
 |----------|-----------------|  
-|[message::message Constructor](#ctor)|Overloaded. Constructs a `message` object.|  
-|[message::~message Destructor](#dtor)|Destroys the `message` object.|  
+|[message Constructor](#ctor)|Overloaded. Constructs a `message` object.|  
+|[~message Destructor](#dtor)|Destroys the `message` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[message::add_ref Method](#add_ref)|Adds to the reference count for the `message` object. Used for message blocks that need reference counting to determine message lifetimes.|  
-|[message::msg_id Method](#msg_id)|Returns the ID of the `message` object.|  
-|[message::remove_ref Method](#remove_ref)|Subtracts from the reference count for the `message` object. Used for message blocks that need reference counting to determine message lifetimes.|  
+|[add_ref Method](#add_ref)|Adds to the reference count for the `message` object. Used for message blocks that need reference counting to determine message lifetimes.|  
+|[msg_id Method](#msg_id)|Returns the ID of the `message` object.|  
+|[remove_ref Method](#remove_ref)|Subtracts from the reference count for the `message` object. Used for message blocks that need reference counting to determine message lifetimes.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[message::payload Data Member](#payload)|The payload of the `message` object.|  
+|[payload Data Member](#payload)|The payload of the `message` object.|  
   
 ## Remarks  
  For more information, see [Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md).  

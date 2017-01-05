@@ -77,45 +77,45 @@ class concurrent_vector: protected details::_Allocator_base<T,
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_vector::concurrent_vector Constructor](#ctor)|Overloaded. Constructs a concurrent vector.|  
-|[concurrent_vector::~concurrent_vector Destructor](#dtor)|Erases all elements and destroys this concurrent vector.|  
+|[concurrent_vector Constructor](#ctor)|Overloaded. Constructs a concurrent vector.|  
+|[~concurrent_vector Destructor](#dtor)|Erases all elements and destroys this concurrent vector.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_vector::assign Method](#assign)|Overloaded. Erases the elements of the concurrent vector and assigns to it either `_N` copies of `_Item`, or values specified by the iterator range [ `_Begin`, `_End`). This method is not concurrency-safe.|  
-|[concurrent_vector::at Method](#at)|Overloaded. Provides access to the element at the given index in the concurrent vector. This method is concurrency-safe for read operations, and also while growing the vector, as long as you have ensured that the value `_Index` is less than the size of the concurrent vector.|  
-|[concurrent_vector::back Method](#back)|Overloaded. Returns a reference or a `const` reference to the last element in the concurrent vector. If the concurrent vector is empty, the return value is undefined. This method is concurrency-safe.|  
-|[concurrent_vector::begin Method](#begin)|Overloaded. Returns an iterator of type `iterator` or `const_iterator` to the beginning of the concurrent vector. This method is concurrency-safe.|  
-|[concurrent_vector::capacity Method](#capacity)|Returns the maximum size to which the concurrent vector can grow without having to allocate more memory. This method is concurrency-safe.|  
-|[concurrent_vector::cbegin Method](#cbegin)|Returns an iterator of type `const_iterator` to the beginning of the concurrent vector. This method is concurrency-safe.|  
-|[concurrent_vector::cend Method](#cend)|Returns an iterator of type `const_iterator` to the end of the concurrent vector. This method is concurrency-safe.|  
-|[concurrent_vector::clear Method](#clear)|Erases all elements in the concurrent vector. This method is not concurrency-safe.|  
-|[concurrent_vector::crbegin Method](#crbegin)|Returns an iterator of type `const_reverse_iterator` to the beginning of the concurrent vector. This method is concurrency-safe.|  
-|[concurrent_vector::crend Method](#crend)|Returns an iterator of type `const_reverse_iterator` to the end of the concurrent vector. This method is concurrency-safe.|  
-|[concurrent_vector::empty Method](#empty)|Tests if the concurrent vector is empty at the time this method is called. This method is concurrency-safe.|  
-|[concurrent_vector::end Method](#end)|Overloaded. Returns an iterator of type `iterator` or `const_iterator` to the end of the concurrent vector. This method is concurrency-safe.|  
-|[concurrent_vector::front Method](#front)|Overloaded. Returns a reference or a `const` reference to the first element in the concurrent vector. If the concurrent vector is empty, the return value is undefined. This method is concurrency-safe.|  
-|[concurrent_vector::get_allocator Method](#get_allocator)|Returns a copy of the allocator used to construct the concurrent vector. This method is concurrency-safe.|  
-|[concurrent_vector::grow_by Method](#grow_by)|Overloaded. Grows this concurrent vector by `_Delta` elements. This method is concurrency-safe.|  
-|[concurrent_vector::grow_to_at_least Method](#grow_to_at_least)|Grows this concurrent vector until it has at least `_N` elements. This method is concurrency-safe.|  
-|[concurrent_vector::max_size Method](#max_size)|Returns the maximum number of elements the concurrent vector can hold. This method is concurrency-safe.|  
-|[concurrent_vector::push_back Method](#push_back)|Overloaded. Appends the given item to the end of the concurrent vector. This method is concurrency-safe.|  
-|[concurrent_vector::rbegin Method](#rbegin)|Overloaded. Returns an iterator of type `reverse_iterator` or `const_reverse_iterator` to the beginning of the concurrent vector. This method is concurrency-safe.|  
-|[concurrent_vector::rend Method](#rend)|Overloaded. Returns an iterator of type `reverse_iterator` or `const_reverse_iterator` to the end of the concurrent vector. This method is concurrency-safe.|  
-|[concurrent_vector::reserve Method](#reserve)|Allocates enough space to grow the concurrent vector to size `_N` without having to allocate more memory later. This method is not concurrency-safe.|  
-|[concurrent_vector::resize Method](#resize)|Overloaded. Changes the size of the concurrent vector to the requested size, deleting or adding elements as necessary. This method is not concurrency-safe.|  
-|[concurrent_vector::shrink_to_fit Method](#shrink_to_fit)|Compacts the internal representation of the concurrent vector to reduce fragmentation and optimize memory usage. This method is not concurrency-safe.|  
-|[concurrent_vector::size Method](#size)|Returns the number of elements in the concurrent vector. This method is concurrency-safe.|  
-|[concurrent_vector::swap Method](#swap)|Swaps the contents of two concurrent vectors. This method is not concurrency-safe.|  
+|[assign Method](#assign)|Overloaded. Erases the elements of the concurrent vector and assigns to it either `_N` copies of `_Item`, or values specified by the iterator range [ `_Begin`, `_End`). This method is not concurrency-safe.|  
+|[at Method](#at)|Overloaded. Provides access to the element at the given index in the concurrent vector. This method is concurrency-safe for read operations, and also while growing the vector, as long as you have ensured that the value `_Index` is less than the size of the concurrent vector.|  
+|[back Method](#back)|Overloaded. Returns a reference or a `const` reference to the last element in the concurrent vector. If the concurrent vector is empty, the return value is undefined. This method is concurrency-safe.|  
+|[begin Method](#begin)|Overloaded. Returns an iterator of type `iterator` or `const_iterator` to the beginning of the concurrent vector. This method is concurrency-safe.|  
+|[capacity Method](#capacity)|Returns the maximum size to which the concurrent vector can grow without having to allocate more memory. This method is concurrency-safe.|  
+|[cbegin Method](#cbegin)|Returns an iterator of type `const_iterator` to the beginning of the concurrent vector. This method is concurrency-safe.|  
+|[cend Method](#cend)|Returns an iterator of type `const_iterator` to the end of the concurrent vector. This method is concurrency-safe.|  
+|[clear Method](#clear)|Erases all elements in the concurrent vector. This method is not concurrency-safe.|  
+|[crbegin Method](#crbegin)|Returns an iterator of type `const_reverse_iterator` to the beginning of the concurrent vector. This method is concurrency-safe.|  
+|[crend Method](#crend)|Returns an iterator of type `const_reverse_iterator` to the end of the concurrent vector. This method is concurrency-safe.|  
+|[empty Method](#empty)|Tests if the concurrent vector is empty at the time this method is called. This method is concurrency-safe.|  
+|[end Method](#end)|Overloaded. Returns an iterator of type `iterator` or `const_iterator` to the end of the concurrent vector. This method is concurrency-safe.|  
+|[front Method](#front)|Overloaded. Returns a reference or a `const` reference to the first element in the concurrent vector. If the concurrent vector is empty, the return value is undefined. This method is concurrency-safe.|  
+|[get_allocator Method](#get_allocator)|Returns a copy of the allocator used to construct the concurrent vector. This method is concurrency-safe.|  
+|[grow_by Method](#grow_by)|Overloaded. Grows this concurrent vector by `_Delta` elements. This method is concurrency-safe.|  
+|[grow_to_at_least Method](#grow_to_at_least)|Grows this concurrent vector until it has at least `_N` elements. This method is concurrency-safe.|  
+|[max_size Method](#max_size)|Returns the maximum number of elements the concurrent vector can hold. This method is concurrency-safe.|  
+|[push_back Method](#push_back)|Overloaded. Appends the given item to the end of the concurrent vector. This method is concurrency-safe.|  
+|[rbegin Method](#rbegin)|Overloaded. Returns an iterator of type `reverse_iterator` or `const_reverse_iterator` to the beginning of the concurrent vector. This method is concurrency-safe.|  
+|[rend Method](#rend)|Overloaded. Returns an iterator of type `reverse_iterator` or `const_reverse_iterator` to the end of the concurrent vector. This method is concurrency-safe.|  
+|[reserve Method](#reserve)|Allocates enough space to grow the concurrent vector to size `_N` without having to allocate more memory later. This method is not concurrency-safe.|  
+|[resize Method](#resize)|Overloaded. Changes the size of the concurrent vector to the requested size, deleting or adding elements as necessary. This method is not concurrency-safe.|  
+|[shrink_to_fit Method](#shrink_to_fit)|Compacts the internal representation of the concurrent vector to reduce fragmentation and optimize memory usage. This method is not concurrency-safe.|  
+|[size Method](#size)|Returns the number of elements in the concurrent vector. This method is concurrency-safe.|  
+|[swap Method](#swap)|Swaps the contents of two concurrent vectors. This method is not concurrency-safe.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_vector::operator[] Operator](#operator_at)|Overloaded. Provides access to the element at the given index in the concurrent vector. This method is concurrency-safe for read operations, and also while growing the vector, as long as the you have ensured that the value `_Index` is less than the size of the concurrent vector.|  
-|[concurrent_vector::operator= Operator](#operator_eq)|Overloaded. Assigns the contents of another `concurrent_vector` object to this one. This method is not concurrency-safe.|  
+|[operator[] Operator](#operator_at)|Overloaded. Provides access to the element at the given index in the concurrent vector. This method is concurrency-safe for read operations, and also while growing the vector, as long as the you have ensured that the value `_Index` is less than the size of the concurrent vector.|  
+|[operator= Operator](#operator_eq)|Overloaded. Assigns the contents of another `concurrent_vector` object to this one. This method is not concurrency-safe.|  
   
 ## Remarks  
  For detailed information on the `concurrent_vector` class, see [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md).  

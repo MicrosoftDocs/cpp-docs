@@ -71,26 +71,26 @@ class writeonly_texture_view<value_type, _Rank> : public details::_Texture_base<
   
 |Name|Description|  
 |----------|-----------------|  
-|[writeonly_texture_view::writeonly_texture_view Constructor](#ctor)|Initializes a new instance of the `writeonly_texture_view` class.|  
-|[writeonly_texture_view::~writeonly_texture_view Destructor](#ctor)|Destroys the `writeonly_texture_view` object.|  
+|[writeonly_texture_view Constructor](#ctor)|Initializes a new instance of the `writeonly_texture_view` class.|  
+|[~writeonly_texture_view Destructor](#ctor)|Destroys the `writeonly_texture_view` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[writeonly_texture_view::set Method](#set)|Sets the value of the element at the specified index.|  
+|[set Method](#set)|Sets the value of the element at the specified index.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[writeonly_texture_view::operator= Operator](#operator_eq)|Copies the specified `writeonly_texture_view` object to this one.|  
+|[operator= Operator](#operator_eq)|Copies the specified `writeonly_texture_view` object to this one.|  
   
 ### Public Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[writeonly_texture_view::rank Constant](#rank)|Gets the rank of the `writeonly_texture_view` object.|  
+|[rank Constant](#rank)|Gets the rank of the `writeonly_texture_view` object.|  
   
 ## Inheritance Hierarchy  
  `_Texture_base`  

@@ -317,7 +317,7 @@ class unorm_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|[unorm_4::unorm_4 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[unorm_4 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -477,7 +477,7 @@ class unorm_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|[unorm_4::size Constant](#unorm_4__size)||  
+|[size Constant](#unorm_4__size)||  
   
 ### Public Data Members  
   

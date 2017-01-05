@@ -49,7 +49,7 @@ class improper_scheduler_reference : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[improper_scheduler_reference::improper_scheduler_reference Constructor](#ctor)|Overloaded. Constructs an `improper_scheduler_reference` object.|  
+|[improper_scheduler_reference Constructor](#ctor)|Overloaded. Constructs an `improper_scheduler_reference` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  

@@ -50,7 +50,7 @@ class out_of_memory : public runtime_exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[out_of_memory::out_of_memory Constructor](#ctor)|Initializes a new instance of the `out_of_memory` class.|  
+|[out_of_memory Constructor](#ctor)|Initializes a new instance of the `out_of_memory` class.|  
   
 ## Inheritance Hierarchy  
  `exception`  

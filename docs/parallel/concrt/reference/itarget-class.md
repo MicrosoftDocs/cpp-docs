@@ -61,23 +61,23 @@ class ITarget;
   
 |Name|Description|  
 |----------|-----------------|  
-|[ITarget::~ITarget Destructor](#dtor)|Destroys the `ITarget` object.|  
+|[~ITarget Destructor](#dtor)|Destroys the `ITarget` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[ITarget::propagate Method](#propagate)|When overridden in a derived class, asynchronously passes a message from a source block to this target block.|  
-|[ITarget::send Method](#send)|When overridden in a derived class, synchronously passes a message to the target block.|  
-|[ITarget::supports_anonymous_source Method](#supports_anonymous_source)|When overridden in a derived class, returns true or false depending on whether the message block accepts messages offered by a source that is not linked to it. If the overridden method returns `true`, the target cannot postpone an offered message, as consumption of a postponed message at a later time requires the source to be identified in its sourse link registry.|  
+|[propagate Method](#propagate)|When overridden in a derived class, asynchronously passes a message from a source block to this target block.|  
+|[send Method](#send)|When overridden in a derived class, synchronously passes a message to the target block.|  
+|[supports_anonymous_source Method](#supports_anonymous_source)|When overridden in a derived class, returns true or false depending on whether the message block accepts messages offered by a source that is not linked to it. If the overridden method returns `true`, the target cannot postpone an offered message, as consumption of a postponed message at a later time requires the source to be identified in its sourse link registry.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[ITarget::link_source Method](#link_source)|When overridden in a derived class, links a specified source block to this `ITarget` block.|  
-|[ITarget::unlink_source Method](#unlink_source)|When overridden in a derived class, unlinks a specified source block from this `ITarget` block.|  
-|[ITarget::unlink_sources Method](#unlink_sources)|When overridden in a derived class, unlinks all source blocks from this `ITarget` block.|  
+|[link_source Method](#link_source)|When overridden in a derived class, links a specified source block to this `ITarget` block.|  
+|[unlink_source Method](#unlink_source)|When overridden in a derived class, unlinks a specified source block from this `ITarget` block.|  
+|[unlink_sources Method](#unlink_sources)|When overridden in a derived class, unlinks all source blocks from this `ITarget` block.|  
   
 ## Remarks  
  For more information, see [Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md).  

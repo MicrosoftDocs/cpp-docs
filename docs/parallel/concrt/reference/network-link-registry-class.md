@@ -63,11 +63,11 @@ class network_link_registry;
   
 |Name|Description|  
 |----------|-----------------|  
-|[network_link_registry::add Method](#add)|When overridden in a derived class, adds a link to the `network_link_registry` object.|  
-|[network_link_registry::begin Method](#begin)|When overridden in a derived class, returns an iterator to the first element in the `network_link_registry` object.|  
-|[network_link_registry::contains Method](#contains)|When overridden in a derived class, searches the `network_link_registry` object for a specified block.|  
-|[network_link_registry::count Method](#count)|When overridden in a derived class, returns the number of items in the `network_link_registry` object.|  
-|[network_link_registry::remove Method](#remove)|When overridden in a derived class, removes a specified block from the `network_link_registry` object.|  
+|[add Method](#add)|When overridden in a derived class, adds a link to the `network_link_registry` object.|  
+|[begin Method](#begin)|When overridden in a derived class, returns an iterator to the first element in the `network_link_registry` object.|  
+|[contains Method](#contains)|When overridden in a derived class, searches the `network_link_registry` object for a specified block.|  
+|[count Method](#count)|When overridden in a derived class, returns the number of items in the `network_link_registry` object.|  
+|[remove Method](#remove)|When overridden in a derived class, removes a specified block from the `network_link_registry` object.|  
   
 ## Remarks  
  The `network link registry` is not safe for concurrent access.  

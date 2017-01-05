@@ -78,7 +78,7 @@ class uint_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|[uint_2::uint_2 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[uint_2 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -120,7 +120,7 @@ class uint_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|[uint_2::size Constant](#uint_2__size)||  
+|[size Constant](#uint_2__size)||  
   
 ### Public Data Members  
   

@@ -54,30 +54,30 @@ class overwrite_buffer : public propagator_block<multi_link_registry<ITarget<T>>
   
 |Name|Description|  
 |----------|-----------------|  
-|[overwrite_buffer::overwrite_buffer Constructor](#ctor)|Overloaded. Constructs an `overwrite_buffer` messaging block.|  
-|[overwrite_buffer::~overwrite_buffer Destructor](#dtor)|Destroys the `overwrite_buffer` messaging block.|  
+|[overwrite_buffer Constructor](#ctor)|Overloaded. Constructs an `overwrite_buffer` messaging block.|  
+|[~overwrite_buffer Destructor](#dtor)|Destroys the `overwrite_buffer` messaging block.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[overwrite_buffer::has_value Method](#has_value)|Checks whether this `overwrite_buffer` messaging block has a value yet.|  
-|[overwrite_buffer::value Method](#value)|Gets a reference to the current payload of the message being stored in the `overwrite_buffer` messaging block.|  
+|[has_value Method](#has_value)|Checks whether this `overwrite_buffer` messaging block has a value yet.|  
+|[value Method](#value)|Gets a reference to the current payload of the message being stored in the `overwrite_buffer` messaging block.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[overwrite_buffer::accept_message Method](#accept_message)|Accepts a message that was offered by this `overwrite_buffer` messaging block, returning a copy of the message to the caller.|  
-|[overwrite_buffer::consume_message Method](#consume_message)|Consumes a message previously offered by the `overwrite_buffer` messaging block and reserved by the target, returning a copy of the message to the caller.|  
-|[overwrite_buffer::link_target_notification Method](#link_target_notification)|A callback that notifies that a new target has been linked to this `overwrite_buffer` messaging block.|  
-|[overwrite_buffer::propagate_message Method](#propagate_message)|Asynchronously passes a message from an `ISource` block to this `overwrite_buffer` messaging block. It is invoked by the `propagate` method, when called by a source block.|  
-|[overwrite_buffer::propagate_to_any_targets Method](#propagate_to_any_targets)|Places the `message``_PMessage` in this `overwrite_buffer` messaging block and offers it to all of the linked targets.|  
-|[overwrite_buffer::release_message Method](#release_message)|Releases a previous message reservation. (Overrides [source_block::release_message](source-block-class.md#release_message).)|  
-|[overwrite_buffer::reserve_message Method](#reserve_message)|Reserves a message previously offered by this `overwrite_buffer` messaging block. (Overrides [source_block::reserve_message](source-block-class.md#reserve_message).)|  
-|[overwrite_buffer::resume_propagation Method](#resume_propagation)|Resumes propagation after a reservation has been released. (Overrides [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
-|[overwrite_buffer::send_message Method](#send_message)|Synchronously passes a message from an `ISource` block to this `overwrite_buffer` messaging block. It is invoked by the `send` method, when called by a source block.|  
-|[overwrite_buffer::supports_anonymous_source Method](#supports_anonymous_source)|Overrides the `supports_anonymous_source` method to indicate that this block can accept messages offered to it by a source that is not linked. (Overrides [ITarget::supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|  
+|[accept_message Method](#accept_message)|Accepts a message that was offered by this `overwrite_buffer` messaging block, returning a copy of the message to the caller.|  
+|[consume_message Method](#consume_message)|Consumes a message previously offered by the `overwrite_buffer` messaging block and reserved by the target, returning a copy of the message to the caller.|  
+|[link_target_notification Method](#link_target_notification)|A callback that notifies that a new target has been linked to this `overwrite_buffer` messaging block.|  
+|[propagate_message Method](#propagate_message)|Asynchronously passes a message from an `ISource` block to this `overwrite_buffer` messaging block. It is invoked by the `propagate` method, when called by a source block.|  
+|[propagate_to_any_targets Method](#propagate_to_any_targets)|Places the `message``_PMessage` in this `overwrite_buffer` messaging block and offers it to all of the linked targets.|  
+|[release_message Method](#release_message)|Releases a previous message reservation. (Overrides [source_block::release_message](source-block-class.md#release_message).)|  
+|[reserve_message Method](#reserve_message)|Reserves a message previously offered by this `overwrite_buffer` messaging block. (Overrides [source_block::reserve_message](source-block-class.md#reserve_message).)|  
+|[resume_propagation Method](#resume_propagation)|Resumes propagation after a reservation has been released. (Overrides [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
+|[send_message Method](#send_message)|Synchronously passes a message from an `ISource` block to this `overwrite_buffer` messaging block. It is invoked by the `send` method, when called by a source block.|  
+|[supports_anonymous_source Method](#supports_anonymous_source)|Overrides the `supports_anonymous_source` method to indicate that this block can accept messages offered to it by a source that is not linked. (Overrides [ITarget::supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|  
   
 ## Remarks  
  An `overwrite_buffer` messaging block propagates out copies of its stored message to each of its targets.  

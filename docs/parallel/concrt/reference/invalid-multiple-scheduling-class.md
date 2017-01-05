@@ -49,7 +49,7 @@ class invalid_multiple_scheduling : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[invalid_multiple_scheduling::invalid_multiple_scheduling Constructor](#ctor)|Overloaded. Constructs an `invalid_multiple_scheduling` object.|  
+|[invalid_multiple_scheduling Constructor](#ctor)|Overloaded. Constructs an `invalid_multiple_scheduling` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  
@@ -79,7 +79,7 @@ invalid_multiple_scheduling() throw();
  [concurrency Namespace](concurrency-namespace.md)   
  [task_handle Class](task-handle-class.md)   
  [task_group Class](task-group-class.md)   
- [task_group::run Method](task-group-class.md)   
- [task_group::wait Method](task-group-class.md)   
- [task_group::run_and_wait Method](task-group-class.md)   
+ [run Method](task-group-class.md)   
+ [wait Method](task-group-class.md)   
+ [run_and_wait Method](task-group-class.md)   
  [structured_task_group Class](structured-task-group-class.md)

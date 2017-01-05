@@ -49,7 +49,7 @@ class invalid_scheduler_policy_key : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[invalid_scheduler_policy_key::invalid_scheduler_policy_key Constructor](#ctor)|Overloaded. Constructs an `invalid_scheduler_policy_key` object.|  
+|[invalid_scheduler_policy_key Constructor](#ctor)|Overloaded. Constructs an `invalid_scheduler_policy_key` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  

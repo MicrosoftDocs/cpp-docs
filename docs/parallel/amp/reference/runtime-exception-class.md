@@ -50,21 +50,21 @@ class runtime_exception : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[runtime_exception::runtime_exception Constructor](#ctor)|Initializes a new instance of the `runtime_exception` class.|  
-|[runtime_exception::~runtime_exception Destructor](#dtor)|Destroys the `runtime_exception` object.|  
+|[runtime_exception Constructor](#ctor)|Initializes a new instance of the `runtime_exception` class.|  
+|[~runtime_exception Destructor](#dtor)|Destroys the `runtime_exception` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[runtime_exception::get_error_code Method](#runtime_exception__get_error_code)|Returns the error code that caused the exception.|  
+|[get_error_code Method](#runtime_exception__get_error_code)|Returns the error code that caused the exception.|  
 
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[runtime_exception::operator= Operator](#operator_eq)|Copies the contents of the specified `runtime_exception` object into this one.|  
+|[operator= Operator](#operator_eq)|Copies the contents of the specified `runtime_exception` object into this one.|  
   
 ## Inheritance Hierarchy  
  `exception`  

@@ -47,27 +47,27 @@ class completion_future;
   
 |Name|Description|  
 |----------|-----------------|  
-|[completion_future::completion_future Constructor](#ctor)|Initializes a new instance of the `completion_future` class.|  
-|[completion_future::~completion_future Destructor](#dtor)|Destroys the `completion_future` object.|  
+|[completion_future Constructor](#ctor)|Initializes a new instance of the `completion_future` class.|  
+|[~completion_future Destructor](#dtor)|Destroys the `completion_future` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[completion_future::get Method](#get)|Waits until the associated asynchronous operation completes.|  
-|[completion_future::then Method](#then)|Chains a callback function object to the `completion_future` object to be executed when the associated asynchronous operation finishes execution.|  
-|[completion_future::to_task Method](#to_task)|Returns a `task` object corresponding to the associated asynchronous operation.|  
-|[completion_future::valid Method](#valid)|Gets a Boolean value that indicates whether the object is associated with an asynchronous operation.|  
-|[completion_future::wait Method](#wait)|Blocks until the associated asynchronous operation completes.|  
-|[completion_future::wait_for Method](#wait_for)|Blocks until the associated asynchronous operation completes or the time specified by `_Rel_time` has elapsed.|  
-|[completion_future::wait_until Method](#wait_until)|Blocks until the associated asynchronous operation completes or until the current time exceeds the value specified by `_Abs_time`.|  
+|[get Method](#get)|Waits until the associated asynchronous operation completes.|  
+|[then Method](#then)|Chains a callback function object to the `completion_future` object to be executed when the associated asynchronous operation finishes execution.|  
+|[to_task Method](#to_task)|Returns a `task` object corresponding to the associated asynchronous operation.|  
+|[valid Method](#valid)|Gets a Boolean value that indicates whether the object is associated with an asynchronous operation.|  
+|[wait Method](#wait)|Blocks until the associated asynchronous operation completes.|  
+|[wait_for Method](#wait_for)|Blocks until the associated asynchronous operation completes or the time specified by `_Rel_time` has elapsed.|  
+|[wait_until Method](#wait_until)|Blocks until the associated asynchronous operation completes or until the current time exceeds the value specified by `_Abs_time`.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[completion_future::operator std::shared_future\<void> Operator](#operator_shared_future)|Implicitly converts the `completion_future` object to an `std::shared_future` object.|  
-|[completion_future::operator= Operator](#operator_eq)|Copies the contents of the specified `completion_future` object into this one.|  
+|[operator std::shared_future\<void> Operator](#operator_shared_future)|Implicitly converts the `completion_future` object to an `std::shared_future` object.|  
+|[operator= Operator](#operator_eq)|Copies the contents of the specified `completion_future` object into this one.|  
   
 ## Inheritance Hierarchy  
  `completion_future`  

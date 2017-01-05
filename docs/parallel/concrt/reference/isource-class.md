@@ -60,21 +60,21 @@ class ISource;
   
 |Name|Description|  
 |----------|-----------------|  
-|[ISource::~ISource Destructor](#dtor)|Destroys the `ISource` object.|  
+|[~ISource Destructor](#dtor)|Destroys the `ISource` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[ISource::accept Method](#accept)|When overridden in a derived class, accepts a message that was offered by this `ISource` block, transferring ownership to the caller.|  
-|[ISource::acquire_ref Method](#acquire_ref)|When overridden in a derived class, acquires a reference count on this `ISource` block, to prevent deletion.|  
-|[ISource::consume Method](#consume)|When overridden in a derived class, consumes a message previously offered by this `ISource` block and successfully reserved by the target, transferring ownership to the caller.|  
-|[ISource::link_target Method](#link_target)|When overridden in a derived class, links a target block to this `ISource` block.|  
-|[ISource::release Method](#release)|When overridden in a derived class, releases a previous successful message reservation.|  
-|[ISource::release_ref Method](#release_ref)|When overridden in a derived class, releases a reference count on this `ISource` block.|  
-|[ISource::reserve Method](#reserve)|When overridden in a derived class, reserves a message previously offered by this `ISource` block.|  
-|[ISource::unlink_target Method](#unlink_target)|When overridden in a derived class, unlinks a target block from this `ISource` block, if found to be previously linked.|  
-|[ISource::unlink_targets Method](#unlink_targets)|When overridden in a derived class, unlinks all target blocks from this `ISource` block.|  
+|[accept Method](#accept)|When overridden in a derived class, accepts a message that was offered by this `ISource` block, transferring ownership to the caller.|  
+|[acquire_ref Method](#acquire_ref)|When overridden in a derived class, acquires a reference count on this `ISource` block, to prevent deletion.|  
+|[consume Method](#consume)|When overridden in a derived class, consumes a message previously offered by this `ISource` block and successfully reserved by the target, transferring ownership to the caller.|  
+|[link_target Method](#link_target)|When overridden in a derived class, links a target block to this `ISource` block.|  
+|[release Method](#release)|When overridden in a derived class, releases a previous successful message reservation.|  
+|[release_ref Method](#release_ref)|When overridden in a derived class, releases a reference count on this `ISource` block.|  
+|[reserve Method](#reserve)|When overridden in a derived class, reserves a message previously offered by this `ISource` block.|  
+|[unlink_target Method](#unlink_target)|When overridden in a derived class, unlinks a target block from this `ISource` block, if found to be previously linked.|  
+|[unlink_targets Method](#unlink_targets)|When overridden in a derived class, unlinks all target blocks from this `ISource` block.|  
   
 ## Remarks  
  For more information, see [Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md).  

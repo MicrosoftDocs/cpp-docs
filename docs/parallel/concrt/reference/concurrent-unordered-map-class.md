@@ -101,25 +101,25 @@ template <typename K,
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_unordered_map::concurrent_unordered_map Constructor](#ctor)|Overloaded. Constructs a concurrent unordered map.|  
+|[concurrent_unordered_map Constructor](#ctor)|Overloaded. Constructs a concurrent unordered map.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_unordered_map::at Method](#at)|Overloaded. Finds an element in a `concurrent_unordered_map` with a specified key value.. This method is concurrency-safe.|  
-|[concurrent_unordered_map::hash_function Method](#hash_function)|Gets the stored hash function object.|  
-|[concurrent_unordered_map::insert Method](#insert)|Overloaded. Adds elements to the `concurrent_unordered_map` object.|  
-|[concurrent_unordered_map::key_eq Method](#key_eq)|Gets the stored equality comparison function object.|  
-|[concurrent_unordered_map::swap Method](#swap)|Swaps the contents of two `concurrent_unordered_map` objects. This method is not concurrency-safe.|  
-|[concurrent_unordered_map::unsafe_erase Method](#unsafe_erase)|Overloaded. Removes elements from the `concurrent_unordered_map` at specified positions. This method is not concurrency-safe.|  
+|[at Method](#at)|Overloaded. Finds an element in a `concurrent_unordered_map` with a specified key value.. This method is concurrency-safe.|  
+|[hash_function Method](#hash_function)|Gets the stored hash function object.|  
+|[insert Method](#insert)|Overloaded. Adds elements to the `concurrent_unordered_map` object.|  
+|[key_eq Method](#key_eq)|Gets the stored equality comparison function object.|  
+|[swap Method](#swap)|Swaps the contents of two `concurrent_unordered_map` objects. This method is not concurrency-safe.|  
+|[unsafe_erase Method](#unsafe_erase)|Overloaded. Removes elements from the `concurrent_unordered_map` at specified positions. This method is not concurrency-safe.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_unordered_map::operator[] Operator](#operator_at)|Overloaded. Finds or inserts an element with the specified key. This method is concurrency-safe.|  
-|[concurrent_unordered_map::operator= Operator](#operator_eq)|Overloaded. Assigns the contents of another `concurrent_unordered_map` object to this one. This method is not concurrency-safe.|  
+|[operator[] Operator](#operator_at)|Overloaded. Finds or inserts an element with the specified key. This method is concurrency-safe.|  
+|[operator= Operator](#operator_eq)|Overloaded. Assigns the contents of another `concurrent_unordered_map` object to this one. This method is not concurrency-safe.|  
   
 ## Remarks  
  For detailed information on the `concurrent_unordered_map` class, see [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md).  

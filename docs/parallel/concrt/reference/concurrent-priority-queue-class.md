@@ -73,25 +73,25 @@ template <typename T,
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_priority_queue::concurrent_priority_queue Constructor](#ctor)|Overloaded. Constructs a concurrent priority queue.|  
+|[concurrent_priority_queue Constructor](#ctor)|Overloaded. Constructs a concurrent priority queue.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_priority_queue::clear Method](#clear)|Erases all elements in the concurrent priority. This method is not concurrency-safe.|  
-|[concurrent_priority_queue::empty Method](#empty)|Tests if the concurrent priority queue is empty at the time this method is called. This method is concurrency-safe.|  
-|[concurrent_priority_queue::get_allocator Method](#get_allocator)|Returns a copy of the allocator used to construct the concurrent priority queue. This method is concurrency-safe.|  
-|[concurrent_priority_queue::push Method](#push)|Overloaded. Adds an element to the concurrent priority queue. This method is concurrency-safe.|  
-|[concurrent_priority_queue::size Method](#size)|Returns the number of elements in the concurrent priority queue. This method is concurrency-safe.|  
-|[concurrent_priority_queue::swap Method](#swap)|Swaps the contents of two concurrent priority queues. This method is not concurrency-safe.|  
-|[concurrent_priority_queue::try_pop Method](#try_pop)|Removes and returns the highest priority element from the queue if the queue is non-empty. This method is concurrency-safe.|  
+|[clear Method](#clear)|Erases all elements in the concurrent priority. This method is not concurrency-safe.|  
+|[empty Method](#empty)|Tests if the concurrent priority queue is empty at the time this method is called. This method is concurrency-safe.|  
+|[get_allocator Method](#get_allocator)|Returns a copy of the allocator used to construct the concurrent priority queue. This method is concurrency-safe.|  
+|[push Method](#push)|Overloaded. Adds an element to the concurrent priority queue. This method is concurrency-safe.|  
+|[size Method](#size)|Returns the number of elements in the concurrent priority queue. This method is concurrency-safe.|  
+|[swap Method](#swap)|Swaps the contents of two concurrent priority queues. This method is not concurrency-safe.|  
+|[try_pop Method](#try_pop)|Removes and returns the highest priority element from the queue if the queue is non-empty. This method is concurrency-safe.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_priority_queue::operator= Operator](#operator_eq)|Overloaded. Assigns the contents of another `concurrent_priority_queue` object to this one. This method is not concurrency-safe.|  
+|[operator= Operator](#operator_eq)|Overloaded. Assigns the contents of another `concurrent_priority_queue` object to this one. This method is not concurrency-safe.|  
   
 ## Remarks  
  For detailed information on the `concurrent_priority_queue` class, see [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md).  

@@ -49,7 +49,7 @@ class task_canceled : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[task_canceled::task_canceled Constructor](#ctor)|Overloaded. Constructs a `task_canceled` object.|  
+|[task_canceled Constructor](#ctor)|Overloaded. Constructs a `task_canceled` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  

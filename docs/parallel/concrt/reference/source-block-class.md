@@ -63,43 +63,43 @@ class source_block : public ISource<typename _TargetLinkRegistry::type::type>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[source_block::source_block Constructor](#ctor)|Constructs a `source_block` object.|  
-|[source_block::~source_block Destructor](#dtor)|Destroys the `source_block` object.|  
+|[source_block Constructor](#ctor)|Constructs a `source_block` object.|  
+|[~source_block Destructor](#dtor)|Destroys the `source_block` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[source_block::accept Method](#accept)|Accepts a message that was offered by this `source_block` object, transferring ownership to the caller.|  
-|[source_block::acquire_ref Method](#acquire_ref)|Acquires a reference count on this `source_block` object, to prevent deletion.|  
-|[source_block::consume Method](#consume)|Consumes a message previously offered by this `source_block` object and successfully reserved by the target, transferring ownership to the caller.|  
-|[source_block::link_target Method](#link_target)|Links a target block to this `source_block` object.|  
-|[source_block::release Method](#release)|Releases a previous successful message reservation.|  
-|[source_block::release_ref Method](#release_ref)|Releases a reference count on this `source_block` object.|  
-|[source_block::reserve Method](#reserve)|Reserves a message previously offered by this `source_block` object.|  
-|[source_block::unlink_target Method](#unlink_target)|Unlinks a target block from this `source_block` object.|  
-|[source_block::unlink_targets Method](#unlink_targets)|Unlinks all target blocks from this `source_block` object. (Overrides [ISource::unlink_targets](isource-class.md#unlink_targets).)|  
+|[accept Method](#accept)|Accepts a message that was offered by this `source_block` object, transferring ownership to the caller.|  
+|[acquire_ref Method](#acquire_ref)|Acquires a reference count on this `source_block` object, to prevent deletion.|  
+|[consume Method](#consume)|Consumes a message previously offered by this `source_block` object and successfully reserved by the target, transferring ownership to the caller.|  
+|[link_target Method](#link_target)|Links a target block to this `source_block` object.|  
+|[release Method](#release)|Releases a previous successful message reservation.|  
+|[release_ref Method](#release_ref)|Releases a reference count on this `source_block` object.|  
+|[reserve Method](#reserve)|Reserves a message previously offered by this `source_block` object.|  
+|[unlink_target Method](#unlink_target)|Unlinks a target block from this `source_block` object.|  
+|[unlink_targets Method](#unlink_targets)|Unlinks all target blocks from this `source_block` object. (Overrides [ISource::unlink_targets](isource-class.md#unlink_targets).)|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[source_block::accept_message Method](#accept_message)|When overridden in a derived class, accepts an offered message by the source. Message blocks should override this method to validate the `_MsgId` and return a message.|  
-|[source_block::async_send Method](#async_send)|Asynchronously queues up messages and starts a propagation task, if this has not been done already|  
-|[source_block::consume_message Method](#consume_message)|When overridden in a derived class, consumes a message that was previously reserved.|  
-|[source_block::enable_batched_processing Method](#enable_batched_processing)|Enables batched processing for this block.|  
-|[source_block::initialize_source Method](#initialize_source)|Initializes the `message_propagator` within this `source_block`.|  
-|[source_block::link_target_notification Method](#link_target_notification)|A callback that notifies that a new target has been linked to this `source_block` object.|  
-|[source_block::process_input_messages Method](#process_input_messages)|Process input messages. This is only useful for propagator blocks, which derive from source_block|  
-|[source_block::propagate_output_messages Method](#propagate_output_messages)|Propagate messages to targets.|  
-|[source_block::propagate_to_any_targets Method](#propagate_to_any_targets)|When overridden in a derived class, propagates the given message to any or all of the linked targets. This is the main propagation routine for message blocks.|  
-|[source_block::release_message Method](#release_message)|When overridden in a derived class, releases a previous message reservation.|  
-|[source_block::remove_targets Method](#remove_targets)|Removes all target links for this source block. This should be called from the destructor.|  
-|[source_block::reserve_message Method](#reserve_message)|When overridden in a derived class, reserves a message previously offered by this `source_block` object.|  
-|[source_block::resume_propagation Method](#resume_propagation)|When overridden in a derived class, resumes propagation after a reservation has been released.|  
-|[source_block::sync_send Method](#sync_send)|Synchronously queues up messages and starts a propagation task, if this has not been done already.|  
-|[source_block::unlink_target_notification Method](#unlink_target_notification)|A callback that notifies that a target has been unlinked from this `source_block` object.|  
-|[source_block::wait_for_outstanding_async_sends Method](#wait_for_outstanding_async_sends)|Waits for all asynchronous propagations to complete. This propagator-specific spin wait is used in destructors of message blocks to make sure that all asynchronous propagations have time to finish before destroying the block.|  
+|[accept_message Method](#accept_message)|When overridden in a derived class, accepts an offered message by the source. Message blocks should override this method to validate the `_MsgId` and return a message.|  
+|[async_send Method](#async_send)|Asynchronously queues up messages and starts a propagation task, if this has not been done already|  
+|[consume_message Method](#consume_message)|When overridden in a derived class, consumes a message that was previously reserved.|  
+|[enable_batched_processing Method](#enable_batched_processing)|Enables batched processing for this block.|  
+|[initialize_source Method](#initialize_source)|Initializes the `message_propagator` within this `source_block`.|  
+|[link_target_notification Method](#link_target_notification)|A callback that notifies that a new target has been linked to this `source_block` object.|  
+|[process_input_messages Method](#process_input_messages)|Process input messages. This is only useful for propagator blocks, which derive from source_block|  
+|[propagate_output_messages Method](#propagate_output_messages)|Propagate messages to targets.|  
+|[propagate_to_any_targets Method](#propagate_to_any_targets)|When overridden in a derived class, propagates the given message to any or all of the linked targets. This is the main propagation routine for message blocks.|  
+|[release_message Method](#release_message)|When overridden in a derived class, releases a previous message reservation.|  
+|[remove_targets Method](#remove_targets)|Removes all target links for this source block. This should be called from the destructor.|  
+|[reserve_message Method](#reserve_message)|When overridden in a derived class, reserves a message previously offered by this `source_block` object.|  
+|[resume_propagation Method](#resume_propagation)|When overridden in a derived class, resumes propagation after a reservation has been released.|  
+|[sync_send Method](#sync_send)|Synchronously queues up messages and starts a propagation task, if this has not been done already.|  
+|[unlink_target_notification Method](#unlink_target_notification)|A callback that notifies that a target has been unlinked from this `source_block` object.|  
+|[wait_for_outstanding_async_sends Method](#wait_for_outstanding_async_sends)|Waits for all asynchronous propagations to complete. This propagator-specific spin wait is used in destructors of message blocks to make sure that all asynchronous propagations have time to finish before destroying the block.|  
   
 ## Remarks  
  Message blocks should derive from this block to take advantage of link management and synchronization provided by this class.  

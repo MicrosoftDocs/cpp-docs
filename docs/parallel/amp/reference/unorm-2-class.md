@@ -77,7 +77,7 @@ class unorm_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|[unorm_2::unorm_2 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[unorm_2 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   

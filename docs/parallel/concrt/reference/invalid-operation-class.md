@@ -49,7 +49,7 @@ class invalid_operation : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[invalid_operation::invalid_operation Constructor](#ctor)|Overloaded. Constructs an `invalid_operation` object.|  
+|[invalid_operation Constructor](#ctor)|Overloaded. Constructs an `invalid_operation` object.|  
   
 ## Remarks  
  The various methods which throw this exception will generally document under what circumstances they will throw it.  

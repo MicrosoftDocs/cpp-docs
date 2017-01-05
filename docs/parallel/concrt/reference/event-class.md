@@ -49,22 +49,22 @@ class event;
   
 |Name|Description|  
 |----------|-----------------|  
-|[event::~event Destructor](#dtor)|Destroys an event.|  
+|[~event Destructor](#dtor)|Destroys an event.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[event::reset Method](#reset)|Resets the event to a non-signaled state.|  
-|[event::set Method](#set)|Signals the event.|  
-|[event::wait Method](#wait)|Waits for the event to become signaled.|  
-|[event::wait_for_multiple Method](#wait_for_multiple)|Waits for multiple events to become signaled.|  
+|[reset Method](#reset)|Resets the event to a non-signaled state.|  
+|[set Method](#set)|Signals the event.|  
+|[wait Method](#wait)|Waits for the event to become signaled.|  
+|[wait_for_multiple Method](#wait_for_multiple)|Waits for multiple events to become signaled.|  
   
 ### Public Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[event::timeout_infinite Constant](#timeout_infinite)|Value indicating that a wait should never time out.|  
+|[timeout_infinite Constant](#timeout_infinite)|Value indicating that a wait should never time out.|  
   
 ## Remarks  
  For more information, see [Synchronization Data Structures](../../../parallel/concrt/synchronization-data-structures.md).  

@@ -49,16 +49,16 @@ class ScheduleGroup;
   
 |Name|Description|  
 |----------|-----------------|  
-|[ScheduleGroup::~ScheduleGroup Destructor](#dtor)||  
+|[~ScheduleGroup Destructor](#dtor)||  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[ScheduleGroup::Id Method](#id)|Returns an identifier for the schedule group that is unique within the scheduler to which the group belongs.|  
-|[ScheduleGroup::Reference Method](#reference)|Increments the schedule group reference count.|  
-|[ScheduleGroup::Release Method](#release)|Decrements the scheduler group reference count.|  
-|[ScheduleGroup::ScheduleTask Method](#scheduletask)|Schedules a light-weight task within the schedule group.|  
+|[Id Method](#id)|Returns an identifier for the schedule group that is unique within the scheduler to which the group belongs.|  
+|[Reference Method](#reference)|Increments the schedule group reference count.|  
+|[Release Method](#release)|Decrements the scheduler group reference count.|  
+|[ScheduleTask Method](#scheduletask)|Schedules a light-weight task within the schedule group.|  
   
 ## Inheritance Hierarchy  
  `ScheduleGroup`  

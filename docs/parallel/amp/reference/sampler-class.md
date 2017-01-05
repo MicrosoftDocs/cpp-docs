@@ -45,29 +45,29 @@ class sampler;
   
 |Name|Description|  
 |----------|-----------------|  
-|[sampler::sampler Constructor](#ctor)|Overloaded. Constructs a sampler instance.|  
+|[sampler Constructor](#ctor)|Overloaded. Constructs a sampler instance.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[sampler::get_address_mode Method](#get_address_mode)|Returns the `address_mode` that’s associated with the sampler object.|  
-|[sampler::get_border_color Method](#get_border_color)|Returns the border color that’s associated with the sampler object.|  
-|[sampler::get_filter_mode Method](#get_filter_mode)|Returns the `filter_mode` that’s associated with the sampler object.|  
+|[get_address_mode Method](#get_address_mode)|Returns the `address_mode` that’s associated with the sampler object.|  
+|[get_border_color Method](#get_border_color)|Returns the border color that’s associated with the sampler object.|  
+|[get_filter_mode Method](#get_filter_mode)|Returns the `filter_mode` that’s associated with the sampler object.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[sampler::operator= Operator](#operator_eq)|Overloaded. Assignment operator.|  
+|[operator= Operator](#operator_eq)|Overloaded. Assignment operator.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[sampler::address_mode Data Member](#address_mode)|Gets the address mode of the `sampler` object.|  
-|[sampler::border_color Data Member](#border_color)|Gets the border color of the `sampler` object.|  
-|[sampler::filter_mode Data Member](#filter_mode)|Gets the filter mode of the `sampler` object.|  
+|[address_mode Data Member](#address_mode)|Gets the address mode of the `sampler` object.|  
+|[border_color Data Member](#border_color)|Gets the border color of the `sampler` object.|  
+|[filter_mode Data Member](#filter_mode)|Gets the filter mode of the `sampler` object.|  
   
 ## Inheritance Hierarchy  
  `sampler`  

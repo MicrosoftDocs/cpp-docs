@@ -49,7 +49,7 @@ class message_not_found : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[message_not_found::message_not_found Constructor](#ctor)|Overloaded. Constructs a `message_not_found` object.|  
+|[message_not_found Constructor](#ctor)|Overloaded. Constructs a `message_not_found` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  

@@ -60,15 +60,15 @@ class message_processor;
   
 |Name|Description|  
 |----------|-----------------|  
-|[message_processor::async_send Method](#async_send)|When overridden in a derived class, places messages into the block asynchronously.|  
-|[message_processor::sync_send Method](#sync_send)|When overridden in a derived class, places messages into the block synchronously.|  
-|[message_processor::wait Method](#wait)|When overridden in a derived class, waits for all asynchronous operations to complete.|  
+|[async_send Method](#async_send)|When overridden in a derived class, places messages into the block asynchronously.|  
+|[sync_send Method](#sync_send)|When overridden in a derived class, places messages into the block synchronously.|  
+|[wait Method](#wait)|When overridden in a derived class, waits for all asynchronous operations to complete.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[message_processor::process_incoming_message Method](#process_incoming_message)|When overridden in a derived class, performs the forward processing of messages into the block. Called once every time a new message is added and the queue is found to be empty.|  
+|[process_incoming_message Method](#process_incoming_message)|When overridden in a derived class, performs the forward processing of messages into the block. Called once every time a new message is added and the queue is found to be empty.|  
   
 ## Inheritance Hierarchy  
  `message_processor`  

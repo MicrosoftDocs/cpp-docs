@@ -49,8 +49,8 @@ class simple_partitioner;
   
 |Name|Description|  
 |----------|-----------------|  
-|[simple_partitioner::simple_partitioner Constructor](#ctor)|Constructs a `simple_partitioner` object.|  
-|[simple_partitioner::~simple_partitioner Destructor](#dtor)|Destroys a `simple_partitioner` object.|  
+|[simple_partitioner Constructor](#ctor)|Constructs a `simple_partitioner` object.|  
+|[~simple_partitioner Destructor](#dtor)|Destroys a `simple_partitioner` object.|  
   
 ## Inheritance Hierarchy  
  `simple_partitioner`  

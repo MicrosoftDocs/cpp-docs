@@ -49,7 +49,7 @@ class invalid_link_target : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[invalid_link_target::invalid_link_target Constructor](#ctor)|Overloaded. Constructs an `invalid_link_target` object.|  
+|[invalid_link_target Constructor](#ctor)|Overloaded. Constructs an `invalid_link_target` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  

@@ -50,22 +50,22 @@ class SchedulerPolicy;
   
 |Name|Description|  
 |----------|-----------------|  
-|[SchedulerPolicy::SchedulerPolicy Constructor](#ctor)|Overloaded. Constructs a new scheduler policy and populates it with values for [policy keys](concurrency-namespace-enums.md) supported by Concurrency Runtime schedulers and the Resource Manager.|  
-|[SchedulerPolicy::~SchedulerPolicy Destructor](#dtor)|Destroys a scheduler policy.|  
+|[SchedulerPolicy Constructor](#ctor)|Overloaded. Constructs a new scheduler policy and populates it with values for [policy keys](concurrency-namespace-enums.md) supported by Concurrency Runtime schedulers and the Resource Manager.|  
+|[~SchedulerPolicy Destructor](#dtor)|Destroys a scheduler policy.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[SchedulerPolicy::GetPolicyValue Method](#getpolicyvalue)|Retrieves the value of the policy key supplied as the `key` parameter.|  
-|[SchedulerPolicy::SetConcurrencyLimits Method](#setconcurrencylimits)|Simultaneously sets the `MinConcurrency` and `MaxConcurrency` policies on the `SchedulerPolicy` object.|  
-|[SchedulerPolicy::SetPolicyValue Method](#setpolicyvalue)|Sets the value of the policy key supplied as the `key` parameter and returns the old value.|  
+|[GetPolicyValue Method](#getpolicyvalue)|Retrieves the value of the policy key supplied as the `key` parameter.|  
+|[SetConcurrencyLimits Method](#setconcurrencylimits)|Simultaneously sets the `MinConcurrency` and `MaxConcurrency` policies on the `SchedulerPolicy` object.|  
+|[SetPolicyValue Method](#setpolicyvalue)|Sets the value of the policy key supplied as the `key` parameter and returns the old value.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[SchedulerPolicy::operator= Operator](#operator_eq)|Assigns the scheduler policy from another scheduler policy.|  
+|[operator= Operator](#operator_eq)|Assigns the scheduler policy from another scheduler policy.|  
   
 ## Remarks  
  For more information about the policies which can be controlled using the `SchedulerPolicy` class, see [PolicyElementKey Enumeration](concurrency-namespace-enums.md).  

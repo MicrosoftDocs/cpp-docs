@@ -51,7 +51,7 @@ class invalid_compute_domain : public runtime_exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[invalid_compute_domain::invalid_compute_domain Constructor](#ctor)|Initializes a new instance of the `invalid_compute_domain` class.|  
+|[invalid_compute_domain Constructor](#ctor)|Initializes a new instance of the `invalid_compute_domain` class.|  
 
   
 ## Inheritance Hierarchy  

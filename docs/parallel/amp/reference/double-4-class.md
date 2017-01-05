@@ -317,7 +317,7 @@ class double_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|[double_4::double_4 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[double_4 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -477,7 +477,7 @@ class double_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|[double_4::size Constant](#double_4__size)||  
+|[size Constant](#double_4__size)||  
   
 ### Public Data Members  
   

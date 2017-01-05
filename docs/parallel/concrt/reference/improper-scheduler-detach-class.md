@@ -49,7 +49,7 @@ class improper_scheduler_detach : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[improper_scheduler_detach::improper_scheduler_detach Constructor](#ctor)|Overloaded. Constructs an `improper_scheduler_detach` object.|  
+|[improper_scheduler_detach Constructor](#ctor)|Overloaded. Constructs an `improper_scheduler_detach` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  

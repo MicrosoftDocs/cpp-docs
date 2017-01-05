@@ -121,7 +121,7 @@ class unorm_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[unorm_3::unorm_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[unorm_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -180,7 +180,7 @@ class unorm_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[unorm_3::size Constant](#unorm_3__size)||  
+|[size Constant](#unorm_3__size)||  
   
 ### Public Data Members  
   

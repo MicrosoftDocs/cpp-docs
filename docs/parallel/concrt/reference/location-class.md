@@ -49,23 +49,23 @@ class location;
   
 |Name|Description|  
 |----------|-----------------|  
-|[location::location Constructor](#ctor)|Overloaded. Constructs a `location` object.|  
-|[location::~location Destructor](#dtor)|Destroys a `location` object.|  
+|[location Constructor](#ctor)|Overloaded. Constructs a `location` object.|  
+|[~location Destructor](#dtor)|Destroys a `location` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[location::current Method](#current)|Returns a `location` object representing the most specific place the calling thread is executing.|  
-|[location::from_numa_node Method](#from_numa_node)|Returns a `location` object which represents a given NUMA node.|  
+|[current Method](#current)|Returns a `location` object representing the most specific place the calling thread is executing.|  
+|[from_numa_node Method](#from_numa_node)|Returns a `location` object which represents a given NUMA node.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[location::operator!= Operator](#operator_neq)|Determines whether two `location` objects represent different location.|  
-|[location::operator= Operator](#operator_eq)|Assigns the contents of a different `location` object to this one.|  
-|[location::operator== Operator](#operator_eq_eq)|Determines whether two `location` objects represent the same location.|  
+|[operator!= Operator](#operator_neq)|Determines whether two `location` objects represent different location.|  
+|[operator= Operator](#operator_eq)|Assigns the contents of a different `location` object to this one.|  
+|[operator== Operator](#operator_eq_eq)|Determines whether two `location` objects represent the same location.|  
   
 ## Inheritance Hierarchy  
  `location`  

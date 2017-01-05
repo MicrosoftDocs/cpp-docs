@@ -66,49 +66,49 @@ class array_view<const value_type, _Rank> : public _Array_view_base<_Rank, sizeo
   
 |Name|Description|  
 |----------|-----------------|  
-|[array_view::array_view Constructor](#ctor)|Initializes a new instance of the `array_view` class. There is no default constructor for `array<T,N>`. All constructors are restricted to run on the CPU only and cannot be executed on a Direct3D target.|  
-|[array_view::~array_view Destructor](#ctor)|Destroys the `array_view` object.|  
+|[array_view Constructor](#ctor)|Initializes a new instance of the `array_view` class. There is no default constructor for `array<T,N>`. All constructors are restricted to run on the CPU only and cannot be executed on a Direct3D target.|  
+|[~array_view Destructor](#ctor)|Destroys the `array_view` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[array_view::copy_to Method](#copy_to)|Copies the contents of the `array_view` object to the specified destination by calling `copy(*this, dest)`.|  
-|[array_view::data Method](#data)|Returns a pointer to the raw data of the `array_view`.|  
-|[array_view::discard_data Method](#discard_data)|Discards the current data underlying this view.|  
-|[array_view::get_extent Method](#get_extent)|Returns the extent object of the array_view object.|  
-|[array_view::get_ref Method](#get_ref)|Returns a reference to the indexed element.|  
-|[array_view::get_source_accelerator_view Method](#get_source_accelerator_view)|Returns the [accelerator_view](accelerator-view-class.md) where the data source of the `array_view` is located.|  
-|[array_view::refresh Method](#refresh)|Notifies the `array_view` object that its bound memory has been modified outside the `array_view` interface. A call to this method renders all cached information stale.|  
-|[array_view::reinterpret_as Method](#reinterpret_as)|Returns a one-dimensional array that contains all the elements in the `array_view` object.|  
-|[array_view::section Method](#section)|Returns a subsection of the `array_view` object that's at the specified origin and, optionally, that has the specified extent.|  
-|[array_view::synchronize Method](#synchronize)|Synchronizes any modifications made to the `array_view` object back to its source data.|  
-|[array_view::synchronize_async Method](#synchronize_async)|Asynchronously synchronizes any modifications made to the `array_view` object back to its source data.|  
-|[array_view::synchronize_to Method](#synchronize_to)|Synchronizes any modifications made to the `array_view` object to the specified [accelerator_view](accelerator-view-class.md).|  
-|[array_view::synchronize_to_async Method](#synchronize_to_async)|Asynchronously synchronizes any modifications made to the `array_view` object to the specified [accelerator_view](accelerator-view-class.md).|  
-|[array_view::view_as Method](#view_as)|Produces an `array_view` object of a different rank using this `array_view` object’s data.|  
+|[copy_to Method](#copy_to)|Copies the contents of the `array_view` object to the specified destination by calling `copy(*this, dest)`.|  
+|[data Method](#data)|Returns a pointer to the raw data of the `array_view`.|  
+|[discard_data Method](#discard_data)|Discards the current data underlying this view.|  
+|[get_extent Method](#get_extent)|Returns the extent object of the array_view object.|  
+|[get_ref Method](#get_ref)|Returns a reference to the indexed element.|  
+|[get_source_accelerator_view Method](#get_source_accelerator_view)|Returns the [accelerator_view](accelerator-view-class.md) where the data source of the `array_view` is located.|  
+|[refresh Method](#refresh)|Notifies the `array_view` object that its bound memory has been modified outside the `array_view` interface. A call to this method renders all cached information stale.|  
+|[reinterpret_as Method](#reinterpret_as)|Returns a one-dimensional array that contains all the elements in the `array_view` object.|  
+|[section Method](#section)|Returns a subsection of the `array_view` object that's at the specified origin and, optionally, that has the specified extent.|  
+|[synchronize Method](#synchronize)|Synchronizes any modifications made to the `array_view` object back to its source data.|  
+|[synchronize_async Method](#synchronize_async)|Asynchronously synchronizes any modifications made to the `array_view` object back to its source data.|  
+|[synchronize_to Method](#synchronize_to)|Synchronizes any modifications made to the `array_view` object to the specified [accelerator_view](accelerator-view-class.md).|  
+|[synchronize_to_async Method](#synchronize_to_async)|Asynchronously synchronizes any modifications made to the `array_view` object to the specified [accelerator_view](accelerator-view-class.md).|  
+|[view_as Method](#view_as)|Produces an `array_view` object of a different rank using this `array_view` object’s data.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[array_view::operator() Operator](#operator_call)|Returns the value of the element that is specified by the parameter or parameters.|  
-|[array_view::operator[] Operator](#operator_at)|Returns the element that is specified by the parameters.|  
-|[array_view::operator= Operator](#operator_eq)|Copies the contents of the specified `array_view` object into this one.|  
+|[operator() Operator](#operator_call)|Returns the value of the element that is specified by the parameter or parameters.|  
+|[operator[] Operator](#operator_at)|Returns the element that is specified by the parameters.|  
+|[operator= Operator](#operator_eq)|Copies the contents of the specified `array_view` object into this one.|  
   
 ### Public Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[array_view::rank Constant](#rank)|Stores the rank of the `array_view` object.|  
+|[rank Constant](#rank)|Stores the rank of the `array_view` object.|  
   
 ### Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[array_view::extent Data Member](#extent)|Gets the `extent` object that defines the shape of the `array_view` object.|  
-|[array_view::source_accelerator_view Data Member](#source_accelerator_view)|Gets the [accelerator_view](accelerator-view-class.md) where the data source of the `array_view` is located|  
-|[array_view::value_type Data Member](#value_type)|The value type of the `array_view` and the bound array.|  
+|[extent Data Member](#extent)|Gets the `extent` object that defines the shape of the `array_view` object.|  
+|[source_accelerator_view Data Member](#source_accelerator_view)|Gets the [accelerator_view](accelerator-view-class.md) where the data source of the `array_view` is located|  
+|[value_type Data Member](#value_type)|The value type of the `array_view` and the bound array.|  
   
 ## Remarks  
  The `array_view` class represents a view into the data that is contained in an [array](array-class.md) object or a subsection of an `array` object.  

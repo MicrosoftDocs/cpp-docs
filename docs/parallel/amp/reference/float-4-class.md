@@ -317,7 +317,7 @@ class float_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|[float_4::float_4 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[float_4 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -477,7 +477,7 @@ class float_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|[float_4::size Constant](#float_4__size)||  
+|[size Constant](#float_4__size)||  
   
 ### Public Data Members  
   

@@ -123,7 +123,7 @@ class float_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[float_3::float_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[float_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -183,7 +183,7 @@ class float_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[float_3::size Constant](#float_3__size)||  
+|[size Constant](#float_3__size)||  
   
 ### Public Data Members  
   

@@ -77,7 +77,7 @@ class float_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|[float_2::float_2 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[float_2 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -113,7 +113,7 @@ class float_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|[float_2::size Constant](#float_2__size)||  
+|[size Constant](#float_2__size)||  
   
 ### Public Data Members  
   

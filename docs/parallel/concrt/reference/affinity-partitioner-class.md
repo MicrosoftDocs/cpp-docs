@@ -49,8 +49,8 @@ class affinity_partitioner;
   
 |Name|Description|  
 |----------|-----------------|  
-|[affinity_partitioner::affinity_partitioner Constructor](#ctor)|Constructs an `affinity_partitioner` object.|  
-|[affinity_partitioner::~affinity_partitioner Destructor](#dtor)|Destroys an `affinity_partitioner` object.|  
+|[affinity_partitioner Constructor](#ctor)|Constructs an `affinity_partitioner` object.|  
+|[~affinity_partitioner Destructor](#dtor)|Destroys an `affinity_partitioner` object.|  
   
 ## Inheritance Hierarchy  
  `affinity_partitioner`  

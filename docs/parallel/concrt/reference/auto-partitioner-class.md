@@ -49,8 +49,8 @@ class auto_partitioner;
   
 |Name|Description|  
 |----------|-----------------|  
-|[auto_partitioner::auto_partitioner Constructor](#ctor)|Constructs a `auto_partitioner` object.|  
-|[auto_partitioner::~auto_partitioner Destructor](#dtor)|Destroys a `auto_partitioner` object.|  
+|[auto_partitioner Constructor](#ctor)|Constructs a `auto_partitioner` object.|  
+|[~auto_partitioner Destructor](#dtor)|Destroys a `auto_partitioner` object.|  
   
 ## Inheritance Hierarchy  
  `auto_partitioner`  

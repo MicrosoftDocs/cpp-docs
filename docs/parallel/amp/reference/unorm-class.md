@@ -49,7 +49,7 @@ class unorm;
   
 |Name|Description|  
 |----------|-----------------|  
-|[unorm::unorm Constructor](#ctor)|Overloaded. Default constructor. Initialize to 0.0f.|  
+|[unorm Constructor](#ctor)|Overloaded. Default constructor. Initialize to 0.0f.|  
   
 ### Public Operators  
   

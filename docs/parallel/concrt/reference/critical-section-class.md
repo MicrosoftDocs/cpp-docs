@@ -61,18 +61,18 @@ class critical_section;
   
 |Name|Description|  
 |----------|-----------------|  
-|[critical_section::critical_section Constructor](#ctor)|Constructs a new critical section.|  
-|[critical_section::~critical_section Destructor](#dtor)|Destroys a critical section.|  
+|[critical_section Constructor](#ctor)|Constructs a new critical section.|  
+|[~critical_section Destructor](#dtor)|Destroys a critical section.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[critical_section::lock Method](#lock)|Acquires this critical section.|  
-|[critical_section::native_handle Method](#native_handle)|Returns a platform specific native handle, if one exists.|  
-|[critical_section::try_lock Method](#try_lock)|Tries to acquire the lock without blocking.|  
-|[critical_section::try_lock_for Method](#try_lock_for)|Tries to acquire the lock without blocking for a specific number of milliseconds.|  
-|[critical_section::unlock Method](#unlock)|Unlocks the critical section.|  
+|[lock Method](#lock)|Acquires this critical section.|  
+|[native_handle Method](#native_handle)|Returns a platform specific native handle, if one exists.|  
+|[try_lock Method](#try_lock)|Tries to acquire the lock without blocking.|  
+|[try_lock_for Method](#try_lock_for)|Tries to acquire the lock without blocking for a specific number of milliseconds.|  
+|[unlock Method](#unlock)|Unlocks the critical section.|  
   
 ## Remarks  
  For more information, see [Synchronization Data Structures](../../../parallel/concrt/synchronization-data-structures.md).  

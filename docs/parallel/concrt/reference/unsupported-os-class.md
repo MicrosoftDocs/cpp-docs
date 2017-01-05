@@ -49,7 +49,7 @@ class unsupported_os : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[unsupported_os::unsupported_os Constructor](#ctor)|Overloaded. Constructs an `unsupported_os` object.|  
+|[unsupported_os Constructor](#ctor)|Overloaded. Constructs an `unsupported_os` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  

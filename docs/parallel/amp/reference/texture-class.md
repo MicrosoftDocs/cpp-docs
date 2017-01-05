@@ -65,42 +65,42 @@ class texture;
   
 |Name|Description|  
 |----------|-----------------|  
-|[texture::texture Constructor](#ctor)|Initializes a new instance of the `texture` class.|  
-|[texture::~texture Destructor](#ctor)|Destroys the `texture` object.|  
+|[texture Constructor](#ctor)|Initializes a new instance of the `texture` class.|  
+|[~texture Destructor](#ctor)|Destroys the `texture` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[texture::copy_to Method](#copy_to)|Copies the `texture` object to the destination, by doing a deep copy.|  
-|[texture::data Method](#data)|Returns a CPU pointer to the raw data of this texture.|  
-|[texture::get Method](#get)|Returns the value of the element at the specified index.|  
-|[texture::get_associated_accelerator_view Method](#get_associated_accelerator_view)|Returns the [accelerator_view](accelerator-view-class.md) that is the preferred target for this texture to be copied to.|  
-|[texture::get_depth_pitch Method](#get_depth_pitch)|Returns the number of bytes between each depth slice in a 3D staging texture on the CPU.|  
-|[texture::get_row_pitch Method](#get_row_pitch)|Returns the number of bytes between each row in a 2D or 3D staging texture on the CPU.|  
-|[texture::set Method](#set)|Sets the value of the element at the specified index.|  
+|[copy_to Method](#copy_to)|Copies the `texture` object to the destination, by doing a deep copy.|  
+|[data Method](#data)|Returns a CPU pointer to the raw data of this texture.|  
+|[get Method](#get)|Returns the value of the element at the specified index.|  
+|[get_associated_accelerator_view Method](#get_associated_accelerator_view)|Returns the [accelerator_view](accelerator-view-class.md) that is the preferred target for this texture to be copied to.|  
+|[get_depth_pitch Method](#get_depth_pitch)|Returns the number of bytes between each depth slice in a 3D staging texture on the CPU.|  
+|[get_row_pitch Method](#get_row_pitch)|Returns the number of bytes between each row in a 2D or 3D staging texture on the CPU.|  
+|[set Method](#set)|Sets the value of the element at the specified index.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[texture::operator() Operator](#operator_call)|Returns the element value that is specified by the parameters.|  
-|[texture::operator[] Operator](#operator_at)|Returns the element that is at the specified index.|  
-|[texture::operator= Operator](#operator_eq)|Copies the specified [texture](texture-class.md) object to this one.|  
+|[operator() Operator](#operator_call)|Returns the element value that is specified by the parameters.|  
+|[operator[] Operator](#operator_at)|Returns the element that is at the specified index.|  
+|[operator= Operator](#operator_eq)|Copies the specified [texture](texture-class.md) object to this one.|  
   
 ### Public Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[texture::rank Constant](#rank)|Gets the rank of the `texture` object.|  
+|[rank Constant](#rank)|Gets the rank of the `texture` object.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[texture::associated_accelerator_view Data Member](#associated_accelerator_view)|Gets the [accelerator_view](accelerator-view-class.md) that is the preferred target for this texture to be copied to.|  
-|[texture::depth_pitch Data Member](#depth_pitch)|Gets the number of bytes between each depth slice in a 3D staging texture on the CPU.|  
-|[texture::row_pitch Data Member](#row_pitch)|Gets the number of bytes between each row in a 2D or 3D staging texture on the CPU.|  
+|[associated_accelerator_view Data Member](#associated_accelerator_view)|Gets the [accelerator_view](accelerator-view-class.md) that is the preferred target for this texture to be copied to.|  
+|[depth_pitch Data Member](#depth_pitch)|Gets the number of bytes between each depth slice in a 3D staging texture on the CPU.|  
+|[row_pitch Data Member](#row_pitch)|Gets the number of bytes between each row in a 2D or 3D staging texture on the CPU.|  
   
 ## Inheritance Hierarchy  
  `_Texture_base`  

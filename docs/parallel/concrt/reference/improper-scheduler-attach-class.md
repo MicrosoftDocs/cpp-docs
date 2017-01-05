@@ -49,7 +49,7 @@ class improper_scheduler_attach : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[improper_scheduler_attach::improper_scheduler_attach Constructor](#ctor)|Overloaded. Constructs an `improper_scheduler_attach` object.|  
+|[improper_scheduler_attach Constructor](#ctor)|Overloaded. Constructs an `improper_scheduler_attach` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  

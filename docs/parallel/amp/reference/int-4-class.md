@@ -317,7 +317,7 @@ class int_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|[int_4::int_4 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[int_4 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -484,7 +484,7 @@ class int_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|[int_4::size Constant](#int_4__size)||  
+|[size Constant](#int_4__size)||  
   
 ### Public Data Members  
   

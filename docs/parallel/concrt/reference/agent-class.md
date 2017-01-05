@@ -50,27 +50,27 @@ class agent;
   
 |Name|Description|  
 |----------|-----------------|  
-|[agent::agent Constructor](#ctor)|Overloaded. Constructs an agent.|  
-|[agent::~agent Destructor](#dtor)|Destroys the agent.|  
+|[agent Constructor](#ctor)|Overloaded. Constructs an agent.|  
+|[~agent Destructor](#dtor)|Destroys the agent.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[agent::cancel Method](#cancel)|Moves an agent from either the `agent_created` or `agent_runnable` states to the `agent_canceled` state.|  
-|[agent::start Method](#start)|Moves an agent from the `agent_created` state to the `agent_runnable` state, and schedules it for execution.|  
-|[agent::status Method](#status)|A synchronous source of status information from the agent.|  
-|[agent::status_port Method](#status_port)|An asynchronous source of status information from the agent.|  
-|[agent::wait Method](#wait)|Waits for an agent to complete its task.|  
-|[agent::wait_for_all Method](#wait_for_all)|Waits for all of the specified agents to complete their tasks.|  
-|[agent::wait_for_one Method](#wait_for_one)|Waits for any one of the specified agents to complete its task.|  
+|[cancel Method](#cancel)|Moves an agent from either the `agent_created` or `agent_runnable` states to the `agent_canceled` state.|  
+|[start Method](#start)|Moves an agent from the `agent_created` state to the `agent_runnable` state, and schedules it for execution.|  
+|[status Method](#status)|A synchronous source of status information from the agent.|  
+|[status_port Method](#status_port)|An asynchronous source of status information from the agent.|  
+|[wait Method](#wait)|Waits for an agent to complete its task.|  
+|[wait_for_all Method](#wait_for_all)|Waits for all of the specified agents to complete their tasks.|  
+|[wait_for_one Method](#wait_for_one)|Waits for any one of the specified agents to complete its task.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[agent::done Method](#done)|Moves an agent into the `agent_done` state, indicating that the agent has completed.|  
-|[agent::run Method](#run)|Represents the main task of an agent. `run` should be overridden in a derived class, and specifies what the agent should do after it has been started.|  
+|[done Method](#done)|Moves an agent into the `agent_done` state, indicating that the agent has completed.|  
+|[run Method](#run)|Represents the main task of an agent. `run` should be overridden in a derived class, and specifies what the agent should do after it has been started.|  
   
 ## Remarks  
  For more information, see [Asynchronous Agents](../../../parallel/concrt/asynchronous-agents.md).  

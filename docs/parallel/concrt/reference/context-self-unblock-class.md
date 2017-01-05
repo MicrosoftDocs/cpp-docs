@@ -49,7 +49,7 @@ class context_self_unblock : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[context_self_unblock::context_self_unblock Constructor](#ctor)|Overloaded. Constructs a `context_self_unblock` object.|  
+|[context_self_unblock Constructor](#ctor)|Overloaded. Constructs a `context_self_unblock` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  

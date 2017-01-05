@@ -49,7 +49,7 @@ class bad_target : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[bad_target::bad_target Constructor](#ctor)|Overloaded. Constructs a `bad_target` object.|  
+|[bad_target Constructor](#ctor)|Overloaded. Constructs a `bad_target` object.|  
   
 ## Remarks  
  This exception is typically thrown for reasons such as a target attempting to consume a message which is reserved for a different target or releasing a reservation that it does not hold.  

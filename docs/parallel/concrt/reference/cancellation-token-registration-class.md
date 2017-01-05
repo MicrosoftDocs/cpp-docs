@@ -49,16 +49,16 @@ class cancellation_token_registration;
   
 |Name|Description|  
 |----------|-----------------|  
-|[cancellation_token_registration::cancellation_token_registration Constructor](#ctor)||  
-|[cancellation_token_registration::~cancellation_token_registration Destructor](#dtor)||  
+|[cancellation_token_registration Constructor](#ctor)||  
+|[~cancellation_token_registration Destructor](#dtor)||  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[cancellation_token_registration::operator!= Operator](#operator_neq)||  
-|[cancellation_token_registration::operator= Operator](#operator_eq)||  
-|[cancellation_token_registration::operator== Operator](#operator_eq_eq)||  
+|[operator!= Operator](#operator_neq)||  
+|[operator= Operator](#operator_eq)||  
+|[operator== Operator](#operator_eq_eq)||  
   
 ## Inheritance Hierarchy  
  `cancellation_token_registration`  

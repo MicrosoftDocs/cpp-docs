@@ -121,7 +121,7 @@ class uint_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[uint_3::uint_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[uint_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -187,7 +187,7 @@ class uint_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[uint_3::size Constant](#uint_3__size)||  
+|[size Constant](#uint_3__size)||  
   
 ### Public Data Members  
   

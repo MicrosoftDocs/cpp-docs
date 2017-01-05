@@ -77,7 +77,7 @@ class int_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|[int_2::int_2 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[int_2 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -120,7 +120,7 @@ class int_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|[int_2::size Constant](#int_2__size)||  
+|[size Constant](#int_2__size)||  
   
 ### Public Data Members  
   

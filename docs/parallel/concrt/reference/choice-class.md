@@ -62,25 +62,25 @@ class choice: public ISource<size_t>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[choice::choice Constructor](#ctor)|Overloaded. Constructs a `choice` messaging block.|  
-|[choice::~choice Destructor](#dtor)|Destroys the `choice` messaging block.|  
+|[choice Constructor](#ctor)|Overloaded. Constructs a `choice` messaging block.|  
+|[~choice Destructor](#dtor)|Destroys the `choice` messaging block.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[choice::accept Method](#accept)|Accepts a message that was offered by this `choice` block, transferring ownership to the caller.|  
-|[choice::acquire_ref Method](#acquire_ref)|Acquires a reference count on this `choice` messaging block, to prevent deletion.|  
-|[choice::consume Method](#consume)|Consumes a message previously offered by this `choice` messaging block and successfully reserved by the target, transferring ownership to the caller.|  
-|[choice::has_value Method](#has_value)|Checks whether this `choice` messaging block has been initialized with a value yet.|  
-|[choice::index Method](#index)|Returns an index into the `tuple` representing the element selected by the `choice` messaging block.|  
-|[choice::link_target Method](#link_target)|Links a target block to this `choice` messaging block.|  
-|[choice::release Method](#release)|Releases a previous successful message reservation.|  
-|[choice::release_ref Method](#release_ref)|Releases a reference count on this `choice` messaging block.|  
-|[choice::reserve Method](#reserve)|Reserves a message previously offered by this `choice` messaging block.|  
-|[choice::unlink_target Method](#unlink_target)|Unlinks a target block from this `choice` messaging block.|  
-|[choice::unlink_targets Method](#unlink_targets)|Unlinks all targets from this `choice` messaging block. (Overrides [ISource::unlink_targets](isource-class.md#unlink_targets).)|  
-|[choice::value Method](#value)|Gets the message whose index was selected by the `choice` messaging block.|  
+|[accept Method](#accept)|Accepts a message that was offered by this `choice` block, transferring ownership to the caller.|  
+|[acquire_ref Method](#acquire_ref)|Acquires a reference count on this `choice` messaging block, to prevent deletion.|  
+|[consume Method](#consume)|Consumes a message previously offered by this `choice` messaging block and successfully reserved by the target, transferring ownership to the caller.|  
+|[has_value Method](#has_value)|Checks whether this `choice` messaging block has been initialized with a value yet.|  
+|[index Method](#index)|Returns an index into the `tuple` representing the element selected by the `choice` messaging block.|  
+|[link_target Method](#link_target)|Links a target block to this `choice` messaging block.|  
+|[release Method](#release)|Releases a previous successful message reservation.|  
+|[release_ref Method](#release_ref)|Releases a reference count on this `choice` messaging block.|  
+|[reserve Method](#reserve)|Reserves a message previously offered by this `choice` messaging block.|  
+|[unlink_target Method](#unlink_target)|Unlinks a target block from this `choice` messaging block.|  
+|[unlink_targets Method](#unlink_targets)|Unlinks all targets from this `choice` messaging block. (Overrides [ISource::unlink_targets](isource-class.md#unlink_targets).)|  
+|[value Method](#value)|Gets the message whose index was selected by the `choice` messaging block.|  
   
 ## Remarks  
  The choice block ensures that only one of the incoming messages is consumed.  

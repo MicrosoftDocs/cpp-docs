@@ -121,7 +121,7 @@ class double_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[double_3::double_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[double_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -181,7 +181,7 @@ class double_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[double_3::size Constant](#double_3__size)||  
+|[size Constant](#double_3__size)||  
   
 ### Public Data Members  
   
