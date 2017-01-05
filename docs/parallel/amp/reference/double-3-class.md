@@ -121,7 +121,7 @@ class double_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[double_3::double_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[double_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -181,7 +181,7 @@ class double_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[double_3::size Constant](#double_3__size)||  
+|[size Constant](#double_3__size)||  
   
 ### Public Data Members  
   
@@ -226,7 +226,8 @@ class double_3;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="ctor"></a>  double_3::double_3 Constructor  
+##  <a name="ctor"></a> double_3 
+
  Default constructor, initializes all elements with 0.  
   
 ```  
@@ -292,8 +293,8 @@ explicit inline double_3(
  `_Other`  
  The object used to initialize.  
   
-##  <a name="double_3__size"></a>  double_3::size Constant  
-  
+##  <a name="double_3__size"></a> size 
+
 ```  
 static const int size = 3;  
 ```  

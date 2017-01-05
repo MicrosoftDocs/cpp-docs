@@ -49,26 +49,26 @@ class Scheduler;
   
 |Name|Description|  
 |----------|-----------------|  
-|[Scheduler::Scheduler Constructor](#ctor)|An object of the `Scheduler` class can only created using factory methods, or implicitly.|  
-|[Scheduler::~Scheduler Destructor](#dtor)|An object of the `Scheduler` class is implicitly destroyed when all external references to it cease to exist.|  
+|[Scheduler Constructor](#ctor)|An object of the `Scheduler` class can only created using factory methods, or implicitly.|  
+|[~Scheduler Destructor](#dtor)|An object of the `Scheduler` class is implicitly destroyed when all external references to it cease to exist.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[Scheduler::Attach Method](#attach)|Attaches the scheduler to the calling context. After this method returns, the calling context is managed by the scheduler and the scheduler becomes the current scheduler.|  
-|[Scheduler::Create Method](#create)|Creates a new scheduler whose behavior is described by the `_Policy` parameter, places an initial reference on the scheduler, and returns a pointer to it.|  
-|[Scheduler::CreateScheduleGroup Method](#createschedulegroup)|Overloaded. Creates a new schedule group within the scheduler. The version that takes the parameter `_Placement` causes tasks within the newly created schedule group to be biased towards executing at the location specified by that parameter.|  
-|[Scheduler::GetNumberOfVirtualProcessors Method](#getnumberofvirtualprocessors)|Returns the current number of virtual processors for the scheduler.|  
-|[Scheduler::GetPolicy Method](#getpolicy)|Returns a copy of the policy that the scheduler was created with.|  
-|[Scheduler::Id Method](#id)|Returns a unique identifier for the scheduler.|  
-|[Scheduler::IsAvailableLocation Method](#isavailablelocation)|Determines whether a given location is available on the scheduler.|  
-|[Scheduler::Reference Method](#reference)|Increments the scheduler reference count.|  
-|[Scheduler::RegisterShutdownEvent Method](#registershutdownevent)|Causes the Windows event handle passed in the `_Event` parameter to be signaled when the scheduler shuts down and destroys itself. At the time the event is signaled, all work that had been scheduled to the scheduler is complete. Multiple shutdown events can be registered through this method.|  
-|[Scheduler::Release Method](#release)|Decrements the scheduler reference count.|  
-|[Scheduler::ResetDefaultSchedulerPolicy Method](#resetdefaultschedulerpolicy)|Resets the default scheduler policy to the runtime default. The next time a default scheduler is created, it will use the runtime default policy settings.|  
-|[Scheduler::ScheduleTask Method](#scheduletask)|Overloaded. Schedules a light-weight task within the scheduler. The light-weight task will be placed in a schedule group determined by the runtime. The version that takes the parameter `_Placement` causes the task to be biased towards executing at the specified location.|  
-|[Scheduler::SetDefaultSchedulerPolicy Method](#setdefaultschedulerpolicy)|Allows a user defined policy to be used to create the default scheduler. This method can be called only when no default scheduler exists within the process. After a default policy has been set, it remains in effect until the next valid call to either the `SetDefaultSchedulerPolicy` or the [ResetDefaultSchedulerPolicy](#resetdefaultschedulerpolicy) method.|  
+|[Attach Method](#attach)|Attaches the scheduler to the calling context. After this method returns, the calling context is managed by the scheduler and the scheduler becomes the current scheduler.|  
+|[Create Method](#create)|Creates a new scheduler whose behavior is described by the `_Policy` parameter, places an initial reference on the scheduler, and returns a pointer to it.|  
+|[CreateScheduleGroup Method](#createschedulegroup)|Overloaded. Creates a new schedule group within the scheduler. The version that takes the parameter `_Placement` causes tasks within the newly created schedule group to be biased towards executing at the location specified by that parameter.|  
+|[GetNumberOfVirtualProcessors Method](#getnumberofvirtualprocessors)|Returns the current number of virtual processors for the scheduler.|  
+|[GetPolicy Method](#getpolicy)|Returns a copy of the policy that the scheduler was created with.|  
+|[Id Method](#id)|Returns a unique identifier for the scheduler.|  
+|[IsAvailableLocation Method](#isavailablelocation)|Determines whether a given location is available on the scheduler.|  
+|[Reference Method](#reference)|Increments the scheduler reference count.|  
+|[RegisterShutdownEvent Method](#registershutdownevent)|Causes the Windows event handle passed in the `_Event` parameter to be signaled when the scheduler shuts down and destroys itself. At the time the event is signaled, all work that had been scheduled to the scheduler is complete. Multiple shutdown events can be registered through this method.|  
+|[Release Method](#release)|Decrements the scheduler reference count.|  
+|[ResetDefaultSchedulerPolicy Method](#resetdefaultschedulerpolicy)|Resets the default scheduler policy to the runtime default. The next time a default scheduler is created, it will use the runtime default policy settings.|  
+|[ScheduleTask Method](#scheduletask)|Overloaded. Schedules a light-weight task within the scheduler. The light-weight task will be placed in a schedule group determined by the runtime. The version that takes the parameter `_Placement` causes the task to be biased towards executing at the specified location.|  
+|[SetDefaultSchedulerPolicy Method](#setdefaultschedulerpolicy)|Allows a user defined policy to be used to create the default scheduler. This method can be called only when no default scheduler exists within the process. After a default policy has been set, it remains in effect until the next valid call to either the `SetDefaultSchedulerPolicy` or the [ResetDefaultSchedulerPolicy](#resetdefaultschedulerpolicy) method.|  
   
 ## Remarks  
  The Concurrency Runtime scheduler uses execution contexts, which map to the operating system execution contexts, such as a thread, to execute the work queued to it by your application. At any time, the concurrency level of a scheduler is equal to the number of virtual processor granted to it by the Resource Manager. A virtual processor is an abstraction for a processing resource and maps to a hardware thread on the underlying system. Only a single scheduler context can execute on a virtual processor at a given time.  
@@ -83,7 +83,8 @@ class Scheduler;
   
  **Namespace:** concurrency  
   
-##  <a name="attach"></a>  Scheduler::Attach Method  
+##  <a name="attach"></a> Attach 
+
  Attaches the scheduler to the calling context. After this method returns, the calling context is managed by the scheduler and the scheduler becomes the current scheduler.  
   
 ```
@@ -99,7 +100,8 @@ virtual void Attach() = 0;
   
  This method will throw an [improper_scheduler_attach](improper-scheduler-attach-class.md) exception if this scheduler is the current scheduler of the calling context.  
   
-##  <a name="create"></a>  Scheduler::Create Method  
+##  <a name="create"></a> Create 
+
  Creates a new scheduler whose behavior is described by the `_Policy` parameter, places an initial reference on the scheduler, and returns a pointer to it.  
   
 ```
@@ -120,7 +122,8 @@ static Scheduler* __cdecl Create(const SchedulerPolicy& _Policy);
   
  This method can throw a variety of exceptions, including [scheduler_resource_allocation_error](scheduler-resource-allocation-error-class.md) and [invalid_scheduler_policy_value](invalid-scheduler-policy-value-class.md).  
   
-##  <a name="createschedulegroup"></a>  Scheduler::CreateScheduleGroup Method  
+##  <a name="createschedulegroup"></a> CreateScheduleGroup 
+
  Creates a new schedule group within the scheduler. The version that takes the parameter `_Placement` causes tasks within the newly created schedule group to be biased towards executing at the location specified by that parameter.  
   
 ```
@@ -141,7 +144,8 @@ virtual ScheduleGroup* CreateScheduleGroup(location& _Placement) = 0;
   
  Note that if you explicitly created this scheduler, you must release all references to schedule groups within it, before you release your references on the scheduler.  
   
-##  <a name="getnumberofvirtualprocessors"></a>  Scheduler::GetNumberOfVirtualProcessors Method  
+##  <a name="getnumberofvirtualprocessors"></a> GetNumberOfVirtualProcessors 
+
  Returns the current number of virtual processors for the scheduler.  
   
 ```
@@ -151,7 +155,8 @@ virtual unsigned int GetNumberOfVirtualProcessors() const = 0;
 ### Return Value  
  The current number of virtual processors for the scheduler.  
   
-##  <a name="getpolicy"></a>  Scheduler::GetPolicy Method  
+##  <a name="getpolicy"></a> GetPolicy 
+
  Returns a copy of the policy that the scheduler was created with.  
   
 ```
@@ -161,7 +166,8 @@ virtual SchedulerPolicy GetPolicy() const = 0;
 ### Return Value  
  A copy of the policy that the scheduler was created with.  
   
-##  <a name="id"></a>  Scheduler::Id Method  
+##  <a name="id"></a> Id 
+
  Returns a unique identifier for the scheduler.  
   
 ```
@@ -171,7 +177,8 @@ virtual unsigned int Id() const = 0;
 ### Return Value  
  A unique identifier for the scheduler.  
   
-##  <a name="isavailablelocation"></a>  Scheduler::IsAvailableLocation Method  
+##  <a name="isavailablelocation"></a> IsAvailableLocation 
+
  Determines whether a given location is available on the scheduler.  
   
 ```
@@ -188,7 +195,8 @@ virtual bool IsAvailableLocation(const location& _Placement) const = 0;
 ### Remarks  
  Note that the return value is an instantaneous sampling of whether the given location is available. In the presence of multiple schedulers, dynamic resource management can add or take away resources from schedulers at any point. Should this happen, the given location can change availability.  
   
-##  <a name="reference"></a>  Scheduler::Reference Method  
+##  <a name="reference"></a> Reference 
+
  Increments the scheduler reference count.  
   
 ```
@@ -203,7 +211,8 @@ virtual unsigned int Reference() = 0 ;
   
  The method will throw an [improper_scheduler_reference](improper-scheduler-reference-class.md) exception if the reference count prior to calling the `Reference` method was zero and the call is made from a context that is not owned by the scheduler.  
   
-##  <a name="registershutdownevent"></a>  Scheduler::RegisterShutdownEvent Method  
+##  <a name="registershutdownevent"></a> RegisterShutdownEvent 
+
  Causes the Windows event handle passed in the `_Event` parameter to be signaled when the scheduler shuts down and destroys itself. At the time the event is signaled, all work that had been scheduled to the scheduler is complete. Multiple shutdown events can be registered through this method.  
   
 ```
@@ -214,7 +223,8 @@ virtual void RegisterShutdownEvent(HANDLE _Event) = 0;
  `_Event`  
  A handle to a Windows event object which will be signaled by the runtime when the scheduler shuts down and destroys itself.  
   
-##  <a name="release"></a>  Scheduler::Release Method  
+##  <a name="release"></a> Release 
+
  Decrements the scheduler reference count.  
   
 ```
@@ -227,7 +237,8 @@ virtual unsigned int Release() = 0;
 ### Remarks  
  This is typically used to manage the lifetime of the scheduler for composition. When the reference count of a scheduler falls to zero, the scheduler will shut down and destruct itself after all work on the scheduler has completed.  
   
-##  <a name="resetdefaultschedulerpolicy"></a>  Scheduler::ResetDefaultSchedulerPolicy Method  
+##  <a name="resetdefaultschedulerpolicy"></a> ResetDefaultSchedulerPolicy 
+
  Resets the default scheduler policy to the runtime default. The next time a default scheduler is created, it will use the runtime default policy settings.  
   
 ```
@@ -237,7 +248,8 @@ static void __cdecl ResetDefaultSchedulerPolicy();
 ### Remarks  
  This method can be called while a default scheduler exists within the process. It will not affect the policy of the existing default scheduler. However, if the default scheduler were to shutdown, and a new default were to be created at a later point, the new scheduler would use the runtime default policy settings.  
   
-##  <a name="ctor"></a>  Scheduler::Scheduler Constructor  
+##  <a name="ctor"></a> Scheduler 
+
  An object of the `Scheduler` class can only created using factory methods, or implicitly.  
   
 ```
@@ -249,14 +261,16 @@ Scheduler();
   
  You can also create a scheduler explicitly through either the `CurrentScheduler::Create` method or the `Scheduler::Create` method.  
   
-##  <a name="dtor"></a>  Scheduler::~Scheduler Destructor  
+##  <a name="dtor"></a> ~Scheduler 
+
  An object of the `Scheduler` class is implicitly destroyed when all external references to it cease to exist.  
   
 ```
 virtual ~Scheduler();
 ```  
   
-##  <a name="scheduletask"></a>  Scheduler::ScheduleTask Method  
+##  <a name="scheduletask"></a> ScheduleTask 
+
  Schedules a light-weight task within the scheduler. The light-weight task will be placed in a schedule group determined by the runtime. The version that takes the parameter `_Placement` causes the task to be biased towards executing at the specified location.  
   
 ```
@@ -280,7 +294,8 @@ virtual void ScheduleTask(
  `_Placement`  
  A reference to a location where the light-weight task will be biased towards executing at.  
   
-##  <a name="setdefaultschedulerpolicy"></a>  Scheduler::SetDefaultSchedulerPolicy Method  
+##  <a name="setdefaultschedulerpolicy"></a> SetDefaultSchedulerPolicy 
+
  Allows a user defined policy to be used to create the default scheduler. This method can be called only when no default scheduler exists within the process. After a default policy has been set, it remains in effect until the next valid call to either the `SetDefaultSchedulerPolicy` or the [ResetDefaultSchedulerPolicy](#resetdefaultschedulerpolicy) method.  
   
 ```

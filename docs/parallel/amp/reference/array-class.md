@@ -57,45 +57,45 @@ friend class array;
   
 |Name|Description|  
 |----------|-----------------|  
-|[array::array Constructor](#ctor)|Initializes a new instance of the `array` class.|  
-|[array::~array Destructor](#dtor)|Destroys the `array` object.|  
+|[array Constructor](#ctor)|Initializes a new instance of the `array` class.|  
+|[~array Destructor](#dtor)|Destroys the `array` object.|  
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[array::copy_to Method](#copy_to)|Copies the contents of the array to another array.|  
-|[array::data Method](#data)|Returns a pointer to the raw data of the array.|  
-|[array::get_accelerator_view Method](#get_accelerator_view)|Returns the [accelerator_view](accelerator-view-class.md) object that represents the location where the array is allocated. This property can be accessed only on the CPU.|  
-|[array::get_associated_accelerator_view Method](#get_associated_accelerator_view)|Gets the second [accelerator_view](accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the `array` object.|  
-|[array::get_cpu_access_type Method](#get_cpu_access_type)|Returns the [access_type](concurrency-namespace-enums-amp.md#access_type) of the array. This method can be accessed only on the CPU.|  
-|[array::get_extent Method](#get_extent)|Returns the [extent](extent-class.md) object of the array.|  
-|[array::reinterpret_as Method](#reinterpret_as)|Returns a one-dimensional array that contains all the elements in the `array` object.|  
-|[array::section Method](#section)|Returns a subsection of the `array` object that is at the specified origin and, optionally, that has the specified extent.|  
-|[array::view_as Method](#view_as)|Returns an [array_view](array-view-class.md) object that is constructed from the `array` object.|  
+|[copy_to Method](#copy_to)|Copies the contents of the array to another array.|  
+|[data Method](#data)|Returns a pointer to the raw data of the array.|  
+|[get_accelerator_view Method](#get_accelerator_view)|Returns the [accelerator_view](accelerator-view-class.md) object that represents the location where the array is allocated. This property can be accessed only on the CPU.|  
+|[get_associated_accelerator_view Method](#get_associated_accelerator_view)|Gets the second [accelerator_view](accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the `array` object.|  
+|[get_cpu_access_type Method](#get_cpu_access_type)|Returns the [access_type](concurrency-namespace-enums-amp.md#access_type) of the array. This method can be accessed only on the CPU.|  
+|[get_extent Method](#get_extent)|Returns the [extent](extent-class.md) object of the array.|  
+|[reinterpret_as Method](#reinterpret_as)|Returns a one-dimensional array that contains all the elements in the `array` object.|  
+|[section Method](#section)|Returns a subsection of the `array` object that is at the specified origin and, optionally, that has the specified extent.|  
+|[view_as Method](#view_as)|Returns an [array_view](array-view-class.md) object that is constructed from the `array` object.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[array::operator std::vector&lt;value_type&gt; Operator](#operator_vec)|Uses `copy(*this, vector)` to implicitly convert the array to a std::[vector](../../../standard-library/vector-class.md) object.|  
-|[array::operator() Operator](#operator_call)|Returns the element value that is specified by the parameters.|  
-|[array::operator[] Operator](#operator_at)|Returns the element that is at the specified index.|  
-|[array::operator= Operator](#operator_eq)|Copies the contents of the specified `array` object into this one.|  
+|[operator std::vector&lt;value_type&gt; Operator](#operator_vec)|Uses `copy(*this, vector)` to implicitly convert the array to a std::[vector](../../../standard-library/vector-class.md) object.|  
+|[operator() Operator](#operator_call)|Returns the element value that is specified by the parameters.|  
+|[operator[] Operator](#operator_at)|Returns the element that is at the specified index.|  
+|[operator= Operator](#operator_eq)|Copies the contents of the specified `array` object into this one.|  
   
 ### Public Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[array::rank Constant](#rank)|Stores the rank of the array.|  
+|[rank Constant](#rank)|Stores the rank of the array.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[array::accelerator_view Data Member](#accelerator_view)|Gets the [accelerator_view](accelerator-view-class.md) object that represents the location where the array is allocated. This property can be accessed only on the CPU.|  
-|[array::associated_accelerator_view Data Member](#associated_accelerator_view)|Gets the second [accelerator_view](accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the `array` object.|  
-|[array::cpu_access_type Data Member](#cpu_access_type)|Gets the [access_type](concurrency-namespace-enums-amp.md#access_type) that represents how the CPU can access the storage of the array.|  
-|[array::extent Data Member](#extent)|Gets the extent that defines the shape of the array.|  
+|[accelerator_view Data Member](#accelerator_view)|Gets the [accelerator_view](accelerator-view-class.md) object that represents the location where the array is allocated. This property can be accessed only on the CPU.|  
+|[associated_accelerator_view Data Member](#associated_accelerator_view)|Gets the second [accelerator_view](accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the `array` object.|  
+|[cpu_access_type Data Member](#cpu_access_type)|Gets the [access_type](concurrency-namespace-enums-amp.md#access_type) that represents how the CPU can access the storage of the array.|  
+|[extent Data Member](#extent)|Gets the extent that defines the shape of the array.|  
   
 ## Remarks  
  The type `array<T,N>` represents a dense and regular (not jagged) *N*-dimensional array that is located in a specific location, such as an accelerator or the CPU. The data type of the elements in the array is `T`, which must be of a type that is compatible with the target accelerator. Although the rank, `N`, (of the array is determined statically and is part of the type, the extent of the array is determined by the runtime and is expressed by using class `extent<N>`.  
@@ -122,21 +122,24 @@ friend class array;
   
  **Namespace:** Concurrency  
   
-##  <a name="dtor"></a>  array::~array Destructor  
+##  <a name="dtor"></a> ~array 
+
  Destroys the `array` object.  
   
 ```  
 ~array() restrict(cpu);
 ```  
   
-##  <a name="accelerator_view"></a>  array::accelerator_view Data Member  
+##  <a name="accelerator_view"></a> accelerator_view 
+
  Gets the [accelerator_view](accelerator-view-class.md) object that represents the location where the array is allocated. This property can be accessed only on the CPU.  
   
 ```  
 __declspec(property(get= get_accelerator_view)) Concurrency::accelerator_view accelerator_view;  
 ```  
   
-##  <a name="ctor"></a>  array::array Constructor  
+##  <a name="ctor"></a> array 
+
  Initializes a new instance of the [array class](array-class.md). There is no default constructor for `array<T,N>`. All constructors are run on the CPU only. They cannot be executed on a Direct3D target.  
   
 ```  
@@ -438,14 +441,16 @@ array(array&& _Other) restrict(cpu);
  `value_type`  
  The data type of the elements that are copied.  
   
-##  <a name="associated_accelerator_view"></a>  array::associated_accelerator_view Data Member  
+##  <a name="associated_accelerator_view"></a> associated_accelerator_view 
+
  Gets the second [accelerator_view](accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the `array` object.  
   
 ```  
 __declspec(property(get= get_associated_accelerator_view)) Concurrency::accelerator_view associated_accelerator_view;  
 ```  
   
-##  <a name="copy_to"></a>  array::copy_to Method  
+##  <a name="copy_to"></a> copy_to 
+
  Copies the contents of the `array` to another `array`.  
   
 ```  
@@ -460,14 +465,16 @@ void copy_to(
  `_Dest`  
  The [array_view](array-view-class.md) object to copy to.  
   
-##  <a name="cpu_access_type"></a>  array::cpu_access_type Data Member  
+##  <a name="cpu_access_type"></a> cpu_access_type 
+
  Gets the CPU access_type allowed for this array.  
   
 ```  
 __declspec(property(get= get_cpu_access_type)) access_type cpu_access_type;  
 ```  
   
-##  <a name="data"></a>  array::data Method  
+##  <a name="data"></a> data 
+
  Returns a pointer to the raw data of the `array`.  
   
 ```  
@@ -479,14 +486,16 @@ const value_type* data() const restrict(amp, cpu);
 ### Return Value  
  A pointer to the raw data of the array.  
   
-##  <a name="extent"></a>  array::extent Data Member  
+##  <a name="extent"></a> extent 
+
  Gets the [extent](extent-class.md) object that defines the shape of the `array`.  
   
 ```  
 __declspec(property(get= get_extent)) Concurrency::extent<_Rank> extent;  
 ```  
   
-##  <a name="get_accelerator_view"></a>  array::get_accelerator_view Method  
+##  <a name="get_accelerator_view"></a> get_accelerator_view 
+
  Returns the [accelerator_view](accelerator-view-class.md) object that represents the location where the `array` object is allocated. This property can be accessed only on the CPU.  
   
 ```  
@@ -496,7 +505,8 @@ Concurrency::accelerator_view get_accelerator_view() const;
 ### Return Value  
  The `accelerator_view` object that represents the location where the `array` object is allocated.  
   
-##  <a name="get_associated_accelerator_view"></a>  array::get_associated_accelerator_view Method  
+##  <a name="get_associated_accelerator_view"></a> get_associated_accelerator_view 
+
  Gets the second [accelerator_view](accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the `array` object.  
   
 ```  
@@ -506,7 +516,8 @@ Concurrency::accelerator_view get_associated_accelerator_view() const ;
 ### Return Value  
  The second [accelerator_view](accelerator-view-class.md) object passed to the staging constructor.  
   
-##  <a name="get_cpu_access_type"></a>  array::get_cpu_access_type Method  
+##  <a name="get_cpu_access_type"></a> get_cpu_access_type 
+
  Returns the CPU access_type that's allowed for this array.  
   
 ```  
@@ -515,7 +526,8 @@ access_type get_cpu_access_type() const restrict(cpu);
   
 ### Return Value  
   
-##  <a name="get_extent"></a>  array::get_extent Method  
+##  <a name="get_extent"></a> get_extent 
+
  Returns the [extent](extent-class.md) object of the `array`.  
   
 ```  
@@ -525,7 +537,8 @@ Concurrency::extent<_Rank> get_extent() const restrict(amp,cpu);
 ### Return Value  
  The `extent` object of the `array`.  
   
-##  <a name="operator_vec"></a>  array::operator std::vector&lt;value_type&gt; Operator  
+##  <a name="operator_vec"></a> operator std::vector&lt;value_type&gt; 
+
  Uses `copy(*this, vector)` to implicitly convert the array to a std::vector object.  
   
 ```  
@@ -539,7 +552,8 @@ operator std::vector<value_type>() const restrict(cpu);
 ### Return Value  
  An object of type `vector<T>` that contains a copy of the data that is contained in the array.  
   
-##  <a name="operator_call"></a>  array::operator() Operator  
+##  <a name="operator_call"></a> operator() 
+
  Returns the element value that is specified by the parameters.  
   
 ```  
@@ -579,7 +593,8 @@ typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type 
 ### Return Value  
  The element value specified by the parameters.  
   
-##  <a name="operator_at"></a>  array::operator[] Operator  
+##  <a name="operator_at"></a> operator[] 
+
  Returns the element that is at the specified index.  
   
 ```  
@@ -603,7 +618,8 @@ typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type 
 ### Return Value  
  The element that is at the specified index.  
   
-##  <a name="operator_eq"></a>  array::operator= Operator  
+##  <a name="operator_eq"></a> operator= 
+
  Copies the contents of the specified `array` object.  
   
 ```  
@@ -625,13 +641,15 @@ array& operator= (
 ### Return Value  
  A reference to this `array` object.  
   
-##  <a name="rank"></a>  array::rank Constant  
+##  <a name="rank"></a> rank 
+
  Stores the rank of the `array`.  
   
 ```  
 static const int rank = _Rank;  
 ```  
-## <a name="reinterpret_as"></a> array::reinterpret_as Method
+## <a name="reinterpret_as"></a> reinterpret_as 
+
 Reinterprets the array through a one-dimensional array_view, which optionally may have a different value type than the source array.
 
 ### Syntax
@@ -665,7 +683,8 @@ array_view<float,1> v = a.reinterpret_as<float>();
 assert(v.extent == 3*a.extent);
 ```  
   
-##  <a name="section"></a>  array::section Method  
+##  <a name="section"></a> section 
+
  Returns a subsection of the `array` object that is at the specified origin and, optionally, that has the specified extent.  
   
 ```  
@@ -766,7 +785,8 @@ array_view<const value_type,3> section(
 ### Return Value  
  Returns a subsection of the `array` object that is at the specified origin and, optionally, that has the specified extent. When only the `index` object is specified, the subsection contains all elements in the associated grid that have indexes that are larger than the indexes of the elements in the `index` object.  
   
-##  <a name="view_as"></a>  array::view_as Method  
+##  <a name="view_as"></a> view_as 
+
  Reinterprets this array as an [array_view](array-view-class.md) of a different rank.  
   
 ```  

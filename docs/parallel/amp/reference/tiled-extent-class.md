@@ -73,38 +73,38 @@ class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_extent::tiled_extent Constructor](#ctor)|Initializes a new instance of the `tiled_extent` class.|  
+|[tiled_extent Constructor](#ctor)|Initializes a new instance of the `tiled_extent` class.|  
 
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_extent::get_tile_extent Method](#tiled_extent__get_tile_extent)|Returns an `extent` object  that captures the values of the `tiled_extent` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
-|[tiled_extent::pad Method](#tiled_extent__pad)|Returns a new `tiled_extent` object with extents adjusted up to be evenly divisible by the tile dimensions.|  
-|[tiled_extent::truncate Method](#tiled_extent__truncate)|Returns a new `tiled_extent` object with extents adjusted down to be evenly divisible by the tile dimensions.|  
+|[get_tile_extent Method](#tiled_extent__get_tile_extent)|Returns an `extent` object  that captures the values of the `tiled_extent` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
+|[pad Method](#tiled_extent__pad)|Returns a new `tiled_extent` object with extents adjusted up to be evenly divisible by the tile dimensions.|  
+|[truncate Method](#tiled_extent__truncate)|Returns a new `tiled_extent` object with extents adjusted down to be evenly divisible by the tile dimensions.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_extent::operator= Operator](#operator_eq)|Copies the contents of the specified `tiled_index` object into this one.|  
+|[operator= Operator](#operator_eq)|Copies the contents of the specified `tiled_index` object into this one.|  
 
   
 ### Public Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_extent::tile_dim0 Constant](#tiled_extent__tile_dim0)|Stores the length of the most significant dimension.|  
-|[tiled_extent::tile_dim1 Constant](#tiled_extent__tile_dim1)|Stores the length of the next-to-most significant dimension.|  
-|[tiled_extent::tile_dim2 Constant](#tiled_extent__tile_dim2)|Stores the length of the least significant dimension.|  
+|[tile_dim0 Constant](#tiled_extent__tile_dim0)|Stores the length of the most significant dimension.|  
+|[tile_dim1 Constant](#tiled_extent__tile_dim1)|Stores the length of the next-to-most significant dimension.|  
+|[tile_dim2 Constant](#tiled_extent__tile_dim2)|Stores the length of the least significant dimension.|  
 
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_extent::tile_extent Data Member](#tiled_extent__tile_extent)|Gets an `extent` object  that captures the values of the `tiled_extent` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
+|[tile_extent Data Member](#tiled_extent__tile_extent)|Gets an `extent` object  that captures the values of the `tiled_extent` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
   
 ## Inheritance Hierarchy  
  `extent`  

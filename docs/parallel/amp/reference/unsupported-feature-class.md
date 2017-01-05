@@ -49,7 +49,7 @@ class unsupported_feature : public runtime_exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[unsupported_feature::unsupported_feature Constructor](#ctor)|Constructs a new instance of the `unsupported_feature` exception.|  
+|[unsupported_feature Constructor](#ctor)|Constructs a new instance of the `unsupported_feature` exception.|  
 
   
 ## Inheritance Hierarchy  
@@ -59,7 +59,8 @@ class unsupported_feature : public runtime_exception;
   
  `unsupported_feature`  
   
-## <a name="unsupported_feature__ctor"></a> unsupported_feature::unsupported_feature Constructor
+## <a name="unsupported_feature__ctor"></a> unsupported_feature 
+
   Constructs a new instance of the unsupported_feature exception.  
   
 ### Syntax  

@@ -49,8 +49,8 @@ class affinity_partitioner;
   
 |Name|Description|  
 |----------|-----------------|  
-|[affinity_partitioner::affinity_partitioner Constructor](#ctor)|Constructs an `affinity_partitioner` object.|  
-|[affinity_partitioner::~affinity_partitioner Destructor](#dtor)|Destroys an `affinity_partitioner` object.|  
+|[affinity_partitioner Constructor](#ctor)|Constructs an `affinity_partitioner` object.|  
+|[~affinity_partitioner Destructor](#dtor)|Destroys an `affinity_partitioner` object.|  
   
 ## Inheritance Hierarchy  
  `affinity_partitioner`  
@@ -60,14 +60,16 @@ class affinity_partitioner;
   
  **Namespace:** concurrency  
   
-##  <a name="dtor"></a>  affinity_partitioner::~affinity_partitioner Destructor  
+##  <a name="dtor"></a> ~affinity_partitioner 
+
  Destroys an `affinity_partitioner` object.  
   
 ```
 ~affinity_partitioner();
 ```  
   
-##  <a name="ctor"></a>  affinity_partitioner::affinity_partitioner Constructor  
+##  <a name="ctor"></a> affinity_partitioner 
+
  Constructs an `affinity_partitioner` object.  
   
 ```

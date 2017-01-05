@@ -54,34 +54,34 @@ class index;
   
 |Name|Description|  
 |----------|-----------------|  
-|[index::index Constructor](#ctor)|Initializes a new instance of the `index` class.|  
+|[index Constructor](#ctor)|Initializes a new instance of the `index` class.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[index::operator-- Operator](#operator--)|Decrements each element of the `index` object.|  
-|[index::operator(mod)= Operator](#operator_mod_eq)|Calculates the modulus (remainder) of each element in the `index` object when that element is divided by a number.|  
-|[index::operator*= Operator](#operator_star_eq)|Multiplies each element of the `index` object by a number.|  
-|[index::operator/= Operator](#operator_div_eq)|Divides each element of the `index` object by a number.|  
+|[operator-- Operator](#operator--)|Decrements each element of the `index` object.|  
+|[operator(mod)= Operator](#operator_mod_eq)|Calculates the modulus (remainder) of each element in the `index` object when that element is divided by a number.|  
+|[operator*= Operator](#operator_star_eq)|Multiplies each element of the `index` object by a number.|  
+|[operator/= Operator](#operator_div_eq)|Divides each element of the `index` object by a number.|  
 |[index::operator\[\]](#operator_at)|Returns the element that's at the specified index.|  
-|[index::operator++ Operator](#operator_add_add)|Increments each element of the `index` object.|  
-|[index::operator+= Operator](#operator_add_eq)|Adds the specified number to each element of the `index` object.|  
-|[index::operator= Operator](#operator_eq)|Copies the contents of the specified `index` object into this one.|  
-|[index::operator-= Operator](#operator_-_eq)|Subtracts the specified number from each element of the `index` object.|  
+|[operator++ Operator](#operator_add_add)|Increments each element of the `index` object.|  
+|[operator+= Operator](#operator_add_eq)|Adds the specified number to each element of the `index` object.|  
+|[operator= Operator](#operator_eq)|Copies the contents of the specified `index` object into this one.|  
+|[operator-= Operator](#operator_-_eq)|Subtracts the specified number from each element of the `index` object.|  
 
   
 ### Public Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[index::rank Constant](#rank)|Stores the rank of the `index` object.|  
+|[rank Constant](#rank)|Stores the rank of the `index` object.|  
   
 ## Inheritance Hierarchy  
  `index`  
   
 ## Remarks  
- The `index` structure represents a coordinate vector of *N* integers that specifies a unique position in an *N*-dimensional space. The values in the vector are ordered from most significant to least significant. You can retrieve the values of the components using [index::operator= Operator](#operator_eq).  
+ The `index` structure represents a coordinate vector of *N* integers that specifies a unique position in an *N*-dimensional space. The values in the vector are ordered from most significant to least significant. You can retrieve the values of the components using [operator= Operator](#operator_eq).  
   
 ## Requirements  
  **Header:** amp.h  
