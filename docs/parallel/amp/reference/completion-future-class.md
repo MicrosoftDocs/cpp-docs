@@ -54,7 +54,6 @@ class completion_future;
   
 |Name|Description|  
 |----------|-----------------|  
-
 |[completion_future::get Method](#get)|Waits until the associated asynchronous operation completes.|  
 |[completion_future::then Method](#then)|Chains a callback function object to the `completion_future` object to be executed when the associated asynchronous operation finishes execution.|  
 |[completion_future::to_task Method](#to_task)|Returns a `task` object corresponding to the associated asynchronous operation.|  
@@ -133,11 +132,8 @@ Copies the contents of the specified `completion_future` object into this one.
 ### Syntax  
   
 ```  
-completion_future&  operator= (  
-    const completion_future& _Other );  
-  
-completion_future&  operator= (  
-    completion_future&& _Other );  
+completion_future&  operator= (const completion_future& _Other );    
+completion_future&  operator= (completion_future&& _Other );  
 ```  
   
 ### Parameters  
@@ -160,11 +156,8 @@ Chains a callback function object to the `completion_future` object to be execut
 ### Syntax  
   
 ```  
-template <  
-    typename _Functor  
->  
-void then(  
-    const _Functor & _Func ) const;  
+template <typename _Functor>  
+void then(const _Functor & _Func ) const;  
 ```  
   
 ### Parameters  
