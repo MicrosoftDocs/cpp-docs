@@ -149,7 +149,7 @@ STDMETHOD(Load)(IStorage* pStorage);
   
 ```
 STDMETHOD(Save)(
-    IStorage* pStorage,  BOOL fSameAsLoad);
+    IStorage* pStorage, BOOL fSameAsLoad);
 ```  
   
 ### Remarks  

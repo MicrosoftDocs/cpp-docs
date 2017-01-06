@@ -106,7 +106,9 @@ virtual ~CAtlTransactionManager();
  CAtlTransactionManager constructor.  
   
 ```
-CAtlTransactionManager(BOOL bFallback = TRUE,  BOOL bAutoCreateTransaction = TRUE);
+CAtlTransactionManager(
+  BOOL bFallback = TRUE, 
+  BOOL bAutoCreateTransaction = TRUE);
 ```  
   
 ### Parameters  
@@ -318,7 +320,9 @@ HANDLE m_hTransaction;
  Moves an existing file or a directory, including its children, as a transacted operation.  
   
 ```
-inline BOOL CAtlTransactionManager::MoveFile(LPCTSTR lpOldFileName,  LPCTSTR lpNewFileName);
+inline BOOL CAtlTransactionManager::MoveFile(
+  LPCTSTR lpOldFileName, 
+  LPCTSTR lpNewFileName);
 ```  
   
 ### Parameters  
@@ -385,7 +389,9 @@ inline LSTATUS CAtlTransactionManager::RegCreateKeyEx(
  Deletes a subkey and its values from the specified platform-specific view of the registry as a transacted operation.  
   
 ```
-inline LSTATUS CAtlTransactionManager::RegDeleteKeyEx(HKEY hKey,  LPCTSTR lpSubKey);
+inline LSTATUS CAtlTransactionManager::RegDeleteKeyEx(
+  HKEY hKey, 
+  LPCTSTR lpSubKey);
 ```  
   
 ### Parameters  
@@ -452,7 +458,9 @@ inline BOOL CAtlTransactionManager::Rollback();
  Sets the attributes for a file or directory as a transacted operation.  
   
 ```
-inline BOOL CAtlTransactionManager::SetFileAttributes(LPCTSTR lpFileName,  DWORD dwAttributes);
+inline BOOL CAtlTransactionManager::SetFileAttributes(
+  LPCTSTR lpFileName, 
+  DWORD dwAttributes);
 ```  
   
 ### Parameters  

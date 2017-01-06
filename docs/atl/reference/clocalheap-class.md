@@ -80,7 +80,7 @@ class CLocalHeap : public IAtlMemMgr
  Call this method to allocate a block of memory.  
   
 ```
-virtual __declspec(allocator) void* Allocate(size_t   nBytes) throw();
+virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 ```  
   
 ### Parameters  

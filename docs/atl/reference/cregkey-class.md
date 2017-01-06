@@ -703,7 +703,7 @@ LONG SetBinaryValue(
  Call this method to set the DWORD value of the registry key.  
   
 ```
-LONG SetDWORDValue(LPCTSTR pszValueName,  DWORD dwValue) throw();
+LONG SetDWORDValue(LPCTSTR pszValueName, DWORD dwValue) throw();
 ```  
   
 ### Parameters  
@@ -723,7 +723,7 @@ LONG SetDWORDValue(LPCTSTR pszValueName,  DWORD dwValue) throw();
  Call this method to set the GUID value of the registry key.  
   
 ```
-LONG SetGUIDValue(LPCTSTR pszValueName,  REFGUID guidValue) throw();
+LONG SetGUIDValue(LPCTSTR pszValueName, REFGUID guidValue) throw();
 ```  
   
 ### Parameters  
@@ -769,7 +769,7 @@ LONG SetKeyValue(
  Call this method to set the security of the registry key.  
   
 ```
-LONG SetKeySecurity(SECURITY_INFORMATION si,  PSECURITY_DESCRIPTOR psd) throw();
+LONG SetKeySecurity(SECURITY_INFORMATION si, PSECURITY_DESCRIPTOR psd) throw();
 ```  
   
 ### Parameters  
@@ -796,7 +796,7 @@ LONG SetKeySecurity(SECURITY_INFORMATION si,  PSECURITY_DESCRIPTOR psd) throw();
  Call this method to set the multistring value of the registry key.  
   
 ```
-LONG SetMultiStringValue(LPCTSTR pszValueName,  LPCTSTR pszValue) throw();
+LONG SetMultiStringValue(LPCTSTR pszValueName, LPCTSTR pszValue) throw();
 ```  
   
 ### Parameters  
@@ -816,7 +816,7 @@ LONG SetMultiStringValue(LPCTSTR pszValueName,  LPCTSTR pszValue) throw();
  Call this method to set the QWORD value of the registry key.  
   
 ```
-LONG SetQWORDValue(LPCTSTR pszValueName,  ULONGLONG qwValue) throw();
+LONG SetQWORDValue(LPCTSTR pszValueName, ULONGLONG qwValue) throw();
 ```  
   
 ### Parameters  

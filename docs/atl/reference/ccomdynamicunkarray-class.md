@@ -154,7 +154,7 @@ IUnknown**
  Retrieves the element at the specified index.  
   
 ```
-IUnknown* GetAt(int   nIndex);
+IUnknown* GetAtint nIndex);
 ```  
   
 ### Parameters  

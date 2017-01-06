@@ -66,7 +66,7 @@ class CComSimpleThreadAllocator
  Selects a thread by specifying the next thread in the sequence.  
   
 ```
-int GetThread(CComApartment* /* pApt */,  int nThreads);
+int GetThread(CComApartment* /* pApt */, int nThreads);
 ```  
   
 ### Parameters  

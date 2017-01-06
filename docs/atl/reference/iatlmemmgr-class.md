@@ -126,7 +126,7 @@ size_t GetSize(void* p) throw();
  Call this method to reallocate memory allocated by this memory manager.  
   
 ```
-void* Reallocate(void* p,  size_t nBytes) throw();
+void* Reallocate(void* p, size_t nBytes) throw();
 ```  
   
 ### Parameters  
@@ -641,7 +641,7 @@ virtual HRESULT STDMETHODCALLTYPE SetAmbientDispatch(IDispatch* pDispatch) = 0;
   
 ```
 STDMETHOD(AttachControl)(
-    IUnknown* pUnkControl,  HWND hWnd);
+    IUnknown* pUnkControl, HWND hWnd);
 ```  
   
 ### Parameters  

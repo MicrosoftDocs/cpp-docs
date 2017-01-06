@@ -125,7 +125,7 @@ static int CompareElementsOrdered(INARGTYPE str1, INARGTYPE str2) throw();
  Call this static function to calculate a hash value for the given string element.  
   
 ```
-static ULONG Hash(INARGTYPE   str) throw();
+static ULONG Hash(INARGTYPE str) throw();
 ```  
   
 ### Parameters  

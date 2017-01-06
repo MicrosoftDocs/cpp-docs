@@ -43,10 +43,10 @@ This class represents a mapping structure, using a Red-Black binary tree.
   
 ```
 template <typename K,
-    typename V, class KTraits = CElementTraits<K>, class VTraits = CElementTraits<V>>  
-class CRBMap : public CRBTree<K, V,
- KTraits,
-    VTraits>
+          typename V, 
+          class KTraits = CElementTraits<K>, 
+          class VTraits = CElementTraits<V>>  
+class CRBMap : public CRBTree<K, V, KTraits, VTraits>
 ```    
   
 #### Parameters  
@@ -104,7 +104,7 @@ class CRBMap : public CRBTree<K, V,
  The constructor.  
   
 ```
-explicit CRBMap(size_t   nBlockSize = 10) throw();
+explicit CRBMap(size_t nBlockSize = 10) throw();
 ```  
   
 ### Parameters  
@@ -163,7 +163,7 @@ CPair* Lookup(KINARGTYPE key) throw();
  Call this method to remove an element from the `CRBMap` object, given the key.  
   
 ```
-bool RemoveKey(KINARGTYPE   key) throw();
+bool RemoveKey(KINARGTYPE key) throw();
 ```  
   
 ### Parameters  

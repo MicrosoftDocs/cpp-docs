@@ -85,7 +85,7 @@ CAtlException() throw();
  `hr`  
  The `HRESULT` error code.  
   
-##  <a name="operator_hresult"></a>  CAtlException::operator HRESULT  
+##  <a name="operator_hresult"></a>  CAtlException::operator HRESULT 
  Casts the current object to an HRESULT value.  
   
 ```  

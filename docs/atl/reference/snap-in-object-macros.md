@@ -43,7 +43,10 @@ These macros provide support for snap-in extensions.
 |[EXTENSION_SNAPIN_NODEINFO_ENTRY](#extension_snapin_nodeinfo_entry)|Enters a snap-in extension data class into the snap-in extension data class map of the Snap-In object.|  
 |[SNAPINMENUID](#snapinmenuid)|Declares the ID of the context menu used by the Snap-In object.|  
 |[SNAPINTOOLBARID_ENTRY](#snapintoolbarid_entry)|Enters a toolbar into the toolbar map of the Snap-In object.|  
-  
+
+## Requirements  
+ **Header:** atlsnap.h 
+   
 ##  <a name="begin_extension_snapin_nodeinfo_map"></a>  BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP  
  Marks the beginning of the snap-in extension data class map.  
   

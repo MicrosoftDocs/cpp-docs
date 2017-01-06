@@ -332,7 +332,7 @@ BOOL ChangeClipboardChain(HWND hWndNewNext) throw();
  Changes the check state of the specified button.  
   
 ```
-BOOL CheckDlgButton(int nIDButton,  UINT nCheck) throw();
+BOOL CheckDlgButton(int nIDButton, UINT nCheck) throw();
 ```  
   
 ### Remarks  
@@ -365,7 +365,7 @@ HWND ChildWindowFromPoint(POINT point) const throw();
  Retrieves a particular type of child window containing the specified point.  
   
 ```
-HWND ChildWindowFromPoint(POINT point,  UINT uFlags) const throw();
+HWND ChildWindowFromPoint(POINT point, UINT uFlags) const throw();
 ```  
   
 ### Remarks  
@@ -449,7 +449,7 @@ BOOL CreateCaret(HBITMAP pBitmap) throw();
  Creates a gray rectangle for the system caret.  
   
 ```
-BOOL CreateGrayCaret(int nWidth,  int nHeight) throw();
+BOOL CreateGrayCaret(int nWidth, int nHeight) throw();
 ```  
   
 ### Remarks  
@@ -461,7 +461,7 @@ BOOL CreateGrayCaret(int nWidth,  int nHeight) throw();
  Creates a solid rectangle for the system caret.  
   
 ```
-BOOL CreateSolidCaret(int nWidth,  int nHeight) throw();
+BOOL CreateSolidCaret(int nWidth, int nHeight) throw();
 ```  
   
 ### Remarks  
@@ -609,7 +609,7 @@ BOOL DrawMenuBar() throw();
  Enables or disables the scroll bar arrows.  
   
 ```
-BOOL EnableScrollBar(UINT uSBFlags,  UINT uArrowFlags = ESB_ENABLE_BOTH) throw();
+BOOL EnableScrollBar(UINT uSBFlags, UINT uArrowFlags = ESB_ENABLE_BOTH) throw();
 ```  
   
 ### Remarks  
@@ -681,7 +681,7 @@ HDC GetDC() throw();
  Retrieves a device context for the client area and allows clipping options.  
   
 ```
-HDC GetDCEx(HRGN hRgnClip,  DWORD flags) throw();
+HDC GetDCEx(HRGN hRgnClip, DWORD flags) throw();
 ```  
   
 ### Remarks  
@@ -885,7 +885,7 @@ HMENU GetMenu() const throw();
  Retrieves the previous or next control within a group of controls.  
   
 ```
-HWND GetNextDlgGroupItem(HWND hWndCtl,  BOOL bPrevious = FALSE) const throw();
+HWND GetNextDlgGroupItem(HWND hWndCtl, BOOL bPrevious = FALSE) const throw();
 ```  
   
 ### Remarks  
@@ -895,7 +895,7 @@ HWND GetNextDlgGroupItem(HWND hWndCtl,  BOOL bPrevious = FALSE) const throw();
  Retrieves the previous or next control having the **WS_TABSTOP** style.  
   
 ```
-HWND GetNextDlgTabItem(HWND hWndCtl,  BOOL bPrevious = FALSE) const throw();
+HWND GetNextDlgTabItem(HWND hWndCtl, BOOL bPrevious = FALSE) const throw();
 ```  
   
 ### Remarks  
@@ -918,7 +918,7 @@ HWND GetParent() const throw();
  Retrieves the parameters of a scroll bar.  
   
 ```
-BOOL GetScrollInfo(int nBar,  LPSCROLLINFO lpScrollInfo) throw();
+BOOL GetScrollInfo(int nBar, LPSCROLLINFO lpScrollInfo) throw();
 ```  
   
 ### Remarks  
@@ -1010,7 +1010,7 @@ HWND GetTopWindow() const throw();
  Retrieves the coordinates of the smallest rectangle that completely encloses the update region.  
   
 ```
-BOOL GetUpdateRect(LPRECT lpRect,  BOOL bErase = FALSE) throw();
+BOOL GetUpdateRect(LPRECT lpRect, BOOL bErase = FALSE) throw();
 ```  
   
 ### Remarks  
@@ -1020,7 +1020,7 @@ BOOL GetUpdateRect(LPRECT lpRect,  BOOL bErase = FALSE) throw();
  Retrieves the update region and copies it into a specified region.  
   
 ```
-int GetUpdateRgn(HRGN hRgn,  BOOL bErase = FALSE) throw();
+int GetUpdateRgn(HRGN hRgn, BOOL bErase = FALSE) throw();
 ```  
   
 ### Remarks  
@@ -1137,7 +1137,7 @@ int GetWindowRgn(HRGN hRgn) throw();
  Retrieves the window's text.  
   
 ```
-int GetWindowText(LPTSTR lpszStringBuf,  int nMaxCount) const throw();
+int GetWindowText(LPTSTR lpszStringBuf, int nMaxCount) const throw();
 
 BOOL GetWindowText(BSTR& bstrText) throw();
 
@@ -1253,7 +1253,7 @@ BOOL Invalidate(BOOL bErase = TRUE) throw();
  Invalidates the client area within the specified rectangle.  
   
 ```
-BOOL InvalidateRect(LPCRECT lpRect,  BOOL bErase = TRUE) throw();
+BOOL InvalidateRect(LPCRECT lpRect, BOOL bErase = TRUE) throw();
 ```  
   
 ### Remarks  
@@ -1263,7 +1263,7 @@ BOOL InvalidateRect(LPCRECT lpRect,  BOOL bErase = TRUE) throw();
  Invalidates the client area within the specified region.  
   
 ```
-void InvalidateRgn(HRGN hRgn,  BOOL bErase = TRUE) throw();
+void InvalidateRgn(HRGN hRgn, BOOL bErase = TRUE) throw();
 ```  
   
 ### Remarks  
@@ -1625,7 +1625,7 @@ void PrevDlgCtrl() const throw();
  Sends a [WM_PRINT](http://msdn.microsoft.com/library/windows/desktop/dd145216) message to the window to request that it draw itself in the specified device context.  
   
 ```
-void Print(HDC hDC,  DWORD dwFlags) const throw();
+void Print(HDC hDC, DWORD dwFlags) const throw();
 ```  
   
 ### Parameters  
@@ -1651,7 +1651,7 @@ void Print(HDC hDC,  DWORD dwFlags) const throw();
  Sends a [WM_PRINTCLIENT](http://msdn.microsoft.com/library/windows/desktop/dd145217) message to the window to request that it draw its client area in the specified device context.  
   
 ```
-void PrintClient(HDC hDC,  DWORD dwFlags) const throw();
+void PrintClient(HDC hDC, DWORD dwFlags) const throw();
 ```  
   
 ### Parameters  
@@ -1917,7 +1917,7 @@ BOOL SetDlgItemInt(
  Changes a control's text.  
   
 ```
-BOOL SetDlgItemText(int nID,  LPCTSTR lpszString) throw();
+BOOL SetDlgItemText(int nID, LPCTSTR lpszString) throw();
 ```  
   
 ### Remarks  
@@ -1940,7 +1940,7 @@ HWND SetFocus() throw();
  Changes the window's current font by sending a [WM_SETFONT](http://msdn.microsoft.com/library/windows/desktop/ms632642) message to the window.  
   
 ```
-void SetFont(HFONT hFont,  BOOL bRedraw = TRUE) throw();
+void SetFont(HFONT hFont, BOOL bRedraw = TRUE) throw();
 ```  
   
 ### Parameters  
@@ -1954,7 +1954,7 @@ void SetFont(HFONT hFont,  BOOL bRedraw = TRUE) throw();
  Associates a hot key with the window by sending a **WM_SETHOTKEY** message.  
   
 ```
-int SetHotKey(WORD wVirtualKeyCode,  WORD wModifiers) throw();
+int SetHotKey(WORD wVirtualKeyCode, WORD wModifiers) throw();
 ```  
   
 ### Parameters  
@@ -1971,7 +1971,7 @@ int SetHotKey(WORD wVirtualKeyCode,  WORD wModifiers) throw();
  Sets the window's large or small icon to the icon identified by `hIcon`.  
   
 ```
-HICON SetIcon(HICON hIcon,  BOOL bBigIcon = TRUE) throw();
+HICON SetIcon(HICON hIcon, BOOL bBigIcon = TRUE) throw();
 ```  
   
 ### Parameters  
@@ -2097,7 +2097,7 @@ BOOL SetWindowContextHelpId(DWORD dwContextHelpId) throw();
  Sets a 32-bit value at a specified offset into the extra window memory.  
   
 ```
-LONG SetWindowLong(int nIndex,  LONG dwNewLong) throw();
+LONG SetWindowLong(int nIndex, LONG dwNewLong) throw();
 ```  
   
 ### Remarks  
@@ -2110,7 +2110,7 @@ LONG SetWindowLong(int nIndex,  LONG dwNewLong) throw();
  Changes an attribute of the specified window, and also sets a value at the specified offset in the extra window memory.  
   
 ```
-LONG_PTR SetWindowLongPtr(int nIndex,  LONG_PTR dwNewLong) throw();
+LONG_PTR SetWindowLongPtr(int nIndex, LONG_PTR dwNewLong) throw();
 ```  
   
 ### Remarks  
@@ -2154,7 +2154,7 @@ BOOL SetWindowPos(
  Sets the window region of a window.  
   
 ```
-int SetWindowRgn(HRGN hRgn,  BOOL bRedraw = FALSE) throw();
+int SetWindowRgn(HRGN hRgn, BOOL bRedraw = FALSE) throw();
 ```  
   
 ### Remarks  
@@ -2177,7 +2177,7 @@ BOOL SetWindowText(LPCTSTR lpszString) throw();
  Sets a 16-bit value at a specified offset into the extra window memory.  
   
 ```
-WORD SetWindowWord(int nIndex,  WORD wNewWord) throw();
+WORD SetWindowWord(int nIndex, WORD wNewWord) throw();
 ```  
   
 ### Remarks  
@@ -2210,7 +2210,7 @@ BOOL ShowOwnedPopups(BOOL bShow = TRUE) throw();
  Shows or hides a scroll bar.  
   
 ```
-BOOL ShowScrollBar(UINT nBar,  BOOL bShow = TRUE) throw();
+BOOL ShowScrollBar(UINT nBar, BOOL bShow = TRUE) throw();
 ```  
   
 ### Remarks  

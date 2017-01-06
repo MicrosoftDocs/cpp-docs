@@ -335,7 +335,7 @@ T& GetAt(LONG   lIndex) const;
  Returns the number of elements in the array.  
   
 ```
-ULONG GetCount(UINT   uDim = 0) const;
+ULONG GetCount(UINT uDim = 0) const;
 ```  
   
 ### Parameters  
@@ -362,7 +362,7 @@ UINT GetDimensions() const;
  Returns the lower bound for a given dimension of the array.  
   
 ```
-LONG GetLowerBound(UINT   uDim = 0) const;
+LONG GetLowerBound(UINT uDim = 0) const;
 ```  
   
 ### Parameters  
@@ -417,7 +417,7 @@ VARTYPE GetType() const;
  Returns the upper bound for any dimension of the array.  
   
 ```
-LONG GetUpperBound(UINT   uDim = 0) const;
+LONG GetUpperBound(UINT uDim = 0) const;
 ```  
   
 ### Parameters  
@@ -489,7 +489,7 @@ HRESULT MultiDimSetAt(const LONG* alIndex, const T& t);
   
 ```
 T& operator[](long lindex) const;
-T& operator[](int nindex) const;
+T& operator[]int nindex) const;
 ```  
   
 ### Parameters  

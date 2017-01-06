@@ -216,7 +216,7 @@ CPair* GetNextWithKey(
  Call this method to insert an element pair into the map.  
   
 ```
-POSITION Insert(KINARGTYPE key,  VINARGTYPE value) throw(...);
+POSITION Insert(KINARGTYPE key, VINARGTYPE value) throw(...);
 ```  
   
 ### Parameters  

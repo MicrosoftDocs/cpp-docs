@@ -104,9 +104,8 @@ class CA2CAEX
  The constructor.  
   
 ```
-CA2CAEX(LPCSTR psz,  UINT nCodePage) throw(...);
-
-    CA2CAEX(LPCSTR psz) throw(...);
+CA2CAEX(LPCSTR psz, UINT nCodePage) throw(...);
+CA2CAEX(LPCSTR psz) throw(...);
 ```  
   
 ### Parameters  

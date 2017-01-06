@@ -104,7 +104,7 @@ HRESULT GetControlInfo(LPCONTROLINFO pCI);
  Informs a control that one or more of the container's ambient properties has changed.  
   
 ```
-HRESULT OnAmbientPropertyChange(DISPID   dispid);
+HRESULT OnAmbientPropertyChange(DISPID dispid);
 ```  
   
 ### Return Value  

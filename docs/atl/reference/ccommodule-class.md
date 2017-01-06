@@ -328,7 +328,7 @@ ATL_DEPRECATED HRESULT RegisterClassHelper(
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
   
 ```
-HRESULT RegisterClassObjects(DWORD dwClsContext,  DWORD dwFlags) throw();
+HRESULT RegisterClassObjects(DWORD dwClsContext, DWORD dwFlags) throw();
 ```  
   
 ### Parameters  
@@ -448,7 +448,7 @@ ATL_DEPRECATED HRESULT UnregisterClassHelper(
   
 ```
 HRESULT UnregisterServer(const CLSID* pCLSID = NULL) throw ();
-inline HRESULT UnregisterServer(BOOL bUnRegTypeLib,  const CLSID* pCLSID = NULL) throw ();
+inline HRESULT UnregisterServer(BOOL bUnRegTypeLib, const CLSID* pCLSID = NULL) throw ();
 ```  
   
 ### Parameters  

@@ -69,7 +69,10 @@ These macros define message maps and entries.
 |[REFLECTED_NOTIFY_ID_HANDLER](#reflected_notify_id_handler)|Maps a reflected **WM_NOTIFY** message to a handler function, based on the control identifier.|  
 |[REFLECTED_NOTIFY_RANGE_CODE_HANDLER](#reflected_notify_range_code_handler)|Maps a reflected **WM_NOTIFY** message to a handler function, based on the notification code and a contiguous range of control identifiers.|  
 |[REFLECTED_NOTIFY_RANGE_HANDLER](#reflected_notify_range_handler)|Maps a reflected **WM_NOTIFY** message to a handler function, based on a contiguous range of control identifiers.|  
-  
+
+## Requirements  
+ **Header:** atlwin.h  
+
 ##  <a name="alt_msg_map"></a>  ALT_MSG_MAP  
  Marks the beginning of an alternate message map.  
   
@@ -101,6 +104,9 @@ ALT_MSG_MAP(msgMapID)
   
  [!code-cpp[NVC_ATL_Windowing#99](../../atl/codesnippet/cpp/message-map-macros-atl_2.h)]  
   
+### Requirements  
+ **Header:** atlwin.h   
+
 ##  <a name="begin_msg_map"></a>  BEGIN_MSG_MAP  
  Marks the beginning of the default message map.  
   
@@ -173,12 +179,14 @@ BEGIN_MSG_MAP(theClass)
   
  For more information about using message maps in ATL, see [Message Maps](../../atl/message-maps-atl.md).  
   
+### Requirements  
+ **Header:** atlwin.h   
+  
 ##  <a name="chain_msg_map_alt"></a>  CHAIN_MSG_MAP_ALT  
  Defines an entry in a message map.  
   
 ```
-CHAIN_MSG_MAP_ALT(
-theChainClass,   msgMapID)
+CHAIN_MSG_MAP_ALT(theChainClass, msgMapID)
 ```  
   
 ### Parameters  
@@ -196,12 +204,14 @@ theChainClass,   msgMapID)
   
  For more information about using message maps in ATL, see [Message Maps](../../atl/message-maps-atl.md).  
   
+### Requirements  
+ **Header:** atlwin.h   
+  
 ##  <a name="chain_msg_map_alt_member"></a>  CHAIN_MSG_MAP_ALT_MEMBER  
  Defines an entry in a message map.  
   
 ```
-CHAIN_MSG_MAP_ALT_MEMBER(
-theChainMember,   msgMapID)
+CHAIN_MSG_MAP_ALT_MEMBER(theChainMember, msgMapID)
 ```  
   
 ### Parameters  
@@ -218,6 +228,9 @@ theChainMember,   msgMapID)
 >  Always begin a message map with `BEGIN_MSG_MAP`. You can then declare subsequent alternate message maps with `ALT_MSG_MAP`. The [END_MSG_MAP](#end_msg_map) macro marks the end of the message map. Every message map must have exactly one instance of `BEGIN_MSG_MAP` and `END_MSG_MAP`.  
   
  For more information about using message maps in ATL, see [Message Maps](../../atl/message-maps-atl.md).  
+  
+### Requirements  
+ **Header:** atlwin.h   
   
 ##  <a name="chain_msg_map"></a>  CHAIN_MSG_MAP  
  Defines an entry in a message map.  
@@ -249,6 +262,9 @@ CHAIN_MSG_MAP(theChainClass)
   
 -   If a window procedure is using `CMyClass`'s second alternate message map and `OnChar` does not handle a message, the message is directed to the specified alternate message map in `CMyBaseClass`. `CMyBaseClass` must have declared this message map with `ALT_MSG_MAP(1)`.  
   
+### Requirements  
+ **Header:** atlwin.h   
+  
 ##  <a name="chain_msg_map_dynamic"></a>  CHAIN_MSG_MAP_DYNAMIC  
  Defines an entry in a message map.  
   
@@ -268,6 +284,9 @@ CHAIN_MSG_MAP_DYNAMIC(dynaChainID)
 >  Always begin a message map with [BEGIN_MSG_MAP](#begin_msg_map). You can then declare subsequent alternate message maps with `ALT_MSG_MAP`. The [END_MSG_MAP](#end_msg_map) macro marks the end of the message map. Every message map must have exactly one instance of `BEGIN_MSG_MAP` and `END_MSG_MAP`.  
   
  For more information about using message maps in ATL, see [Message Maps](../../atl/message-maps-atl.md).  
+  
+### Requirements  
+ **Header:** atlwin.h   
   
 ##  <a name="chain_msg_map_member"></a>  CHAIN_MSG_MAP_MEMBER  
  Defines an entry in a message map.  
@@ -299,12 +318,14 @@ CHAIN_MSG_MAP_MEMBER(theChainMember)
   
 -   If a window procedure is using `CMyClass`'s second alternate message map and `OnChar` does not handle a message, the message is directed to the specified alternate message map of `m_obj`. Class `CMyContainedClass` must have declared this message map with `ALT_MSG_MAP(1)`.  
   
+### Requirements  
+ **Header:** atlwin.h   
+  
 ##  <a name="command_code_handler"></a>  COMMAND_CODE_HANDLER  
  Similar to [COMMAND_HANDLER](#command_handler), but maps a [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) message based only on the notification code.  
   
 ```
-COMMAND_CODE_HANDLER(
-code,   func)
+COMMAND_CODE_HANDLER(code, func)
 ```  
   
 ### Parameters  
@@ -314,14 +335,14 @@ code,   func)
  `func`  
  [in] The name of the message-handler function.  
   
+### Requirements  
+ **Header:** atlwin.h   
+  
 ##  <a name="command_handler"></a>  COMMAND_HANDLER  
  Defines an entry in a message map.  
   
 ```
-COMMAND_HANDLER(
-id,
-code,
-    func)
+COMMAND_HANDLER(id, code, func)
 ```    
   
 ### Parameters  
@@ -352,12 +373,14 @@ code,
   
  For more information about using message maps in ATL, see [Message Maps](../../atl/message-maps-atl.md).  
   
+### Requirements  
+ **Header:** atlwin.h   
+  
 ##  <a name="command_id_handler"></a>  COMMAND_ID_HANDLER  
  Similar to [COMMAND_HANDLER](#command_handler), but maps a [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) message based only on the identifier of the menu item, control, or accelerator.  
   
 ```
-COMMAND_ID_HANDLER(
-id,   func)
+COMMAND_ID_HANDLER(id, func)
 ```  
   
 ### Parameters  
@@ -367,15 +390,14 @@ id,   func)
  `func`  
  [in] The name of the message-handler function.  
   
+### Requirements  
+ **Header:** atlwin.h   
+  
 ##  <a name="command_range_code_handler"></a>  COMMAND_RANGE_CODE_HANDLER  
  Similar to [COMMAND_RANGE_HANDLER](#command_range_handler), but maps [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) messages with a specific notification code from a range of controls to a single handler function.  
   
 ```
-COMMAND_RANGE_CODE_HANDLER(
-idFirst,
-idLast,
-code,
-    func)
+COMMAND_RANGE_CODE_HANDLER(idFirst, idLast, code, func)
 ```    
   
 ### Parameters  
@@ -394,14 +416,14 @@ code,
 ### Remarks  
  This range is based on the identifier of the menu item, control, or accelerator sending the message.  
   
+### Requirements  
+ **Header:** atlwin.h   
+  
 ##  <a name="command_range_handler"></a>  COMMAND_RANGE_HANDLER  
  Similar to [COMMAND_HANDLER](#command_handler), but maps [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) messages from a range of controls to a single handler function.  
   
 ```
-COMMAND_RANGE_HANDLER(
-idFirst,
-idLast,
-    func)
+COMMAND_RANGE_HANDLER( idFirst, idLast, func)
 ```    
   
 ### Parameters  
@@ -416,6 +438,9 @@ idLast,
   
 ### Remarks  
  This range is based on the identifier of the menu item, control, or accelerator sending the message.  
+  
+### Requirements  
+ **Header:** atlwin.h   
   
 ##  <a name="declare_empty_msg_map"></a>  DECLARE_EMPTY_MSG_MAP  
  Declares an empty message map.  
@@ -435,6 +460,9 @@ DECLARE_EMPTY_MSG_MAP()
 ```
 DEFAULT_REFLECTION_HANDLER()
 ```  
+  
+### Requirements  
+ **Header:** atlwin.h   
   
 ##  <a name="end_msg_map"></a>  END_MSG_MAP  
  Marks the end of a message map.  
@@ -459,6 +487,9 @@ END_MSG_MAP()
   
  [!code-cpp[NVC_ATL_Windowing#99](../../atl/codesnippet/cpp/message-map-macros-atl_2.h)]  
   
+### Requirements  
+ **Header:** atlwin.h   
+  
 ##  <a name="forward_notifications"></a>  FORWARD_NOTIFICATIONS  
  Forwards notification messages to the parent window.  
   
@@ -469,13 +500,14 @@ FORWARD_NOTIFICATIONS()
 ### Remarks  
  Specify this macro as part of your message map.  
   
+### Requirements  
+ **Header:** atlwin.h   
+  
 ##  <a name="message_handler"></a>  MESSAGE_HANDLER  
  Defines an entry in a message map.  
   
 ```
-MESSAGE_HANDLER(Â
-    msg, Â
-    func Â)
+MESSAGE_HANDLER( msg, func )
 ```  
   
 ### Parameters  
@@ -504,14 +536,14 @@ MESSAGE_HANDLER(Â
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#129](../../atl/codesnippet/cpp/message-map-macros-atl_8.h)]  
   
+### Requirements  
+ **Header:** atlwin.h   
+  
 ##  <a name="message_range_handler"></a>  MESSAGE_RANGE_HANDLER  
  Similar to [MESSAGE_HANDLER](#message_handler), but maps a range of Windows messages to a single handler function.  
   
 ```
-MESSAGE_RANGE_HANDLER(Â
-    msgFirst, Â
-    msgLast, Â
-    func Â)
+MESSAGE_RANGE_HANDLER( msgFirst, msgLast, func )
 ```  
   
 ### Parameters  
@@ -524,13 +556,14 @@ MESSAGE_RANGE_HANDLER(Â
  `func`  
  [in] The name of the message-handler function.  
   
+### Requirements  
+ **Header:** atlwin.h   
+  
 ##  <a name="notify_code_handler"></a>  NOTIFY_CODE_HANDLER  
  Similar to [NOTIFY_HANDLER](#notify_handler), but maps a [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583) message based only on the notification code.  
   
 ```
-NOTIFY_CODE_HANDLER(Â
-    cd, Â
-    func Â)
+NOTIFY_CODE_HANDLER(cd, func)
 ```  
   
 ### Parameters  
@@ -540,14 +573,14 @@ NOTIFY_CODE_HANDLER(Â
  `func`  
  [in] The name of the message-handler function.  
   
+### Requirements  
+ **Header:** atlwin.h   
+  
 ##  <a name="notify_handler"></a>  NOTIFY_HANDLER  
  Defines an entry in a message map.  
   
 ```
-NOTIFY_HANDLER(Â
-    id, Â
-    cd, Â
-    func Â)
+NOTIFY_HANDLER( id, cd, func )
 ```  
   
 ### Parameters  
@@ -579,13 +612,14 @@ NOTIFY_HANDLER(Â
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#130](../../atl/codesnippet/cpp/message-map-macros-atl_9.h)]  
   
+### Requirements  
+ **Header:** atlwin.h   
+  
 ##  <a name="notify_id_handler"></a>  NOTIFY_ID_HANDLER  
  Similar to [NOTIFY_HANDLER](#notify_handler), but maps a [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583) message based only on the control identifier.  
   
 ```
-NOTIFY_ID_HANDLER(Â
-    id, Â
-    func Â)
+NOTIFY_ID_HANDLER( id, func )
 ```  
   
 ### Parameters  
@@ -595,15 +629,14 @@ NOTIFY_ID_HANDLER(Â
  `func`  
  [in] The name of the message-handler function.  
   
+### Requirements  
+ **Header:** atlwin.h   
+  
 ##  <a name="notify_range_code_handler"></a>  NOTIFY_RANGE_CODE_HANDLER  
  Similar to [NOTIFY_RANGE_HANDLER](#notify_range_handler), but maps [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583) messages with a specific notification code from a range of controls to a single handler function.  
   
 ```
-NOTIFY_RANGE_CODE_HANDLER(Â
-    idFirst, Â
-    idLast, Â
-    cd, Â
-    func Â)
+NOTIFY_RANGE_CODE_HANDLER( idFirst, idLast, cd, func )
 ```  
   
 ### Parameters  
@@ -622,14 +655,14 @@ NOTIFY_RANGE_CODE_HANDLER(Â
 ### Remarks  
  This range is based on the identifier of the control sending the message.  
   
+### Requirements  
+ **Header:** atlwin.h   
+  
 ##  <a name="notify_range_handler"></a>  NOTIFY_RANGE_HANDLER  
  Similar to [NOTIFY_HANDLER](#notify_handler), but maps [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583) messages from a range of controls to a single handler function.  
   
 ```
-NOTIFY_RANGE_HANDLER(Â
-    idFirst, Â
-    idLast, Â
-    func Â)
+NOTIFY_RANGE_HANDLER( idFirst, idLast, func )
 ```  
   
 ### Parameters  
@@ -644,6 +677,9 @@ NOTIFY_RANGE_HANDLER(Â
   
 ### Remarks  
  This range is based on the identifier of the control sending the message.  
+  
+### Requirements  
+ **Header:** atlwin.h   
   
 ##  <a name="reflect_notifications"></a>  REFLECT_NOTIFICATIONS  
  Reflects notification messages back to the child window (control) that sent them.  
@@ -655,13 +691,14 @@ REFLECT_NOTIFICATIONS()
 ### Remarks  
  Specify this macro as part of the parent window's message map.  
   
+### Requirements  
+ **Header:** atlwin.h   
+  
 ##  <a name="reflected_command_code_handler"></a>  REFLECTED_COMMAND_CODE_HANDLER  
  Similar to [COMMAND_CODE_HANDLER](#command_code_handler), but maps commands reflected from the parent window.  
   
 ```
-REFLECTED_COMMAND_CODE_HANDLER(Â
-    code, Â
-    func Â)
+REFLECTED_COMMAND_CODE_HANDLER( code, func )
 ```  
   
 ### Parameters  
@@ -670,15 +707,15 @@ REFLECTED_COMMAND_CODE_HANDLER(Â
   
  `func`  
  [in] The name of the message-handler function.  
-  
+
+### Requirements  
+ **Header:** atlwin.h  
+   
 ##  <a name="reflected_command_handler"></a>  REFLECTED_COMMAND_HANDLER  
  Similar to [COMMAND_HANDLER](#command_handler), but maps commands reflected from the parent window.  
   
 ```
-REFLECTED_COMMAND_HANDLER(Â
-    id, Â
-    code, Â
-    func Â)
+REFLECTED_COMMAND_HANDLER( id, code, func )
 ```  
   
 ### Parameters  
@@ -690,14 +727,15 @@ REFLECTED_COMMAND_HANDLER(Â
   
  `func`  
  [in] The name of the message-handler function.  
-  
+
+### Requirements  
+ **Header:** atlwin.h  
+
 ##  <a name="reflected_command_id_handler"></a>  REFLECTED_COMMAND_ID_HANDLER  
  Similar to [COMMAND_ID_HANDLER](#command_id_handler), but maps commands reflected from the parent window.  
   
 ```
-REFLECTED_COMMAND_ID_HANDLER(Â
-    id, Â
-    func Â)
+REFLECTED_COMMAND_ID_HANDLER( id, func )
 ```  
   
 ### Parameters  
@@ -706,16 +744,15 @@ REFLECTED_COMMAND_ID_HANDLER(Â
   
  `func`  
  [in] The name of the message-handler function.  
-  
+
+### Requirements  
+ **Header:** atlwin.h  
+
 ##  <a name="reflected_command_range_code_handler"></a>  REFLECTED_COMMAND_RANGE_CODE_HANDLER  
  Similar to [COMMAND_RANGE_CODE_HANDLER](#command_range_code_handler), but maps commands reflected from the parent window.  
   
 ```
-REFLECTED_COMMAND_RANGE_CODE_HANDLER(Â
-    idFirst, Â
-    idLast, Â
-    code, Â
-    func Â)
+REFLECTED_COMMAND_RANGE_CODE_HANDLER( idFirst, idLast, code, func )
 ```  
   
 ### Parameters  
@@ -730,15 +767,15 @@ REFLECTED_COMMAND_RANGE_CODE_HANDLER(Â
   
  `func`  
  [in] The name of the message-handler function.  
-  
+
+### Requirements  
+ **Header:** atlwin.h  
+
 ##  <a name="reflected_command_range_handler"></a>  REFLECTED_COMMAND_RANGE_HANDLER  
  Similar to [COMMAND_RANGE_HANDLER](#command_range_handler), but maps commands reflected from the parent window.  
   
 ```
-REFLECTED_COMMAND_RANGE_HANDLER(Â
-    idFirst, Â
-    idLast, Â
-    func Â)
+REFLECTED_COMMAND_RANGE_HANDLER( idFirst, idLast, func )
 ```  
   
 ### Parameters  
@@ -750,14 +787,15 @@ REFLECTED_COMMAND_RANGE_HANDLER(Â
   
  `func`  
  [in] The name of the message-handler function.  
-  
+
+### Requirements  
+ **Header:** atlwin.h  
+
 ##  <a name="reflected_notify_code_handler"></a>  REFLECTED_NOTIFY_CODE_HANDLER  
  Similar to [NOTIFY_CODE_HANDLER](#notify_code_handler), but maps notifications reflected from the parent window.  
   
 ```
-REFLECTED_NOTIFY_CODE_HANDLER_EX(Â
-    cd, Â
-    func Â)
+REFLECTED_NOTIFY_CODE_HANDLER_EX( cd, func )
 ```  
   
 ### Parameters  
@@ -766,15 +804,15 @@ REFLECTED_NOTIFY_CODE_HANDLER_EX(Â
   
  `func`  
  [in] The name of the message-handler function.  
-  
+
+### Requirements  
+ **Header:** atlwin.h  
+
 ##  <a name="reflected_notify_handler"></a>  REFLECTED_NOTIFY_HANDLER  
  Similar to [NOTIFY_HANDLER](#notify_handler), but maps notifications reflected from the parent window.  
   
 ```
-REFLECTED_NOTIFY_HANDLER(Â
-    id, Â
-    cd, Â
-    func Â)
+REFLECTED_NOTIFY_HANDLER( id, cd, func )
 ```  
   
 ### Parameters  
@@ -786,14 +824,15 @@ REFLECTED_NOTIFY_HANDLER(Â
   
  `func`  
  [in] The name of the message-handler function.  
-  
+
+### Requirements  
+ **Header:** atlwin.h  
+
 ##  <a name="reflected_notify_id_handler"></a>  REFLECTED_NOTIFY_ID_HANDLER  
  Similar to [NOTIFY_ID_HANDLER](#notify_id_handler), but maps notifications reflected from the parent window.  
   
 ```
-REFLECTED_NOTIFY_ID_HANDLER(Â
-    id, Â
-    func Â)
+REFLECTED_NOTIFY_ID_HANDLER( id, func )
 ```  
   
 ### Parameters  
@@ -802,16 +841,15 @@ REFLECTED_NOTIFY_ID_HANDLER(Â
   
  `func`  
  [in] The name of the message-handler function.  
-  
+
+### Requirements  
+ **Header:** atlwin.h  
+
 ##  <a name="reflected_notify_range_code_handler"></a>  REFLECTED_NOTIFY_RANGE_CODE_HANDLER  
  Similar to [NOTIFY_RANGE_CODE_HANDLER](#notify_range_code_handler), but maps notifications reflected from the parent window.  
   
 ```
-REFLECTED_NOTIFY_RANGE_CODE_HANDLER(
-idFirst,Â
-    idLast, Â
-    cd, Â
-    func)
+REFLECTED_NOTIFY_RANGE_CODE_HANDLER( idFirst, idLast, cd, func )
 ```    
   
 ### Parameters  
@@ -827,14 +865,14 @@ idFirst,Â
  `func`  
  [in] The name of the message-handler function.  
   
+### Requirements  
+ **Header:** atlwin.h   
+  
 ##  <a name="reflected_notify_range_handler"></a>  REFLECTED_NOTIFY_RANGE_HANDLER  
  Similar to [NOTIFY_RANGE_HANDLER](#notify_range_handler), but maps notifications reflected from the parent window.  
   
 ```
-REFLECTED_NOTIFY_RANGE_HANDLER(Â
-    idFirst, Â
-    idLast, Â
-    func Â)
+REFLECTED_NOTIFY_RANGE_HANDLER( idFirst, idLast, func )
 ```  
   
 ### Parameters  

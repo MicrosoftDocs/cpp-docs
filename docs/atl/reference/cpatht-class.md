@@ -252,7 +252,7 @@ CPathT<StringType> CommonPrefix(PCXSTR    pszOther);
 BOOL CompactPath(
     HDC
 hDC,
- UINT   nWidth);
+ UINT nWidth);
 ```  
   
 ### Parameters  

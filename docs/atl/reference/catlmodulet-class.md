@@ -169,7 +169,7 @@ HRESULT UnregisterServer(
  Updates the EXE information in the registry.  
   
 ```
-static HRESULT WINAPI UpdateRegistryAppId(BOOL  /* bRegister*/) throw();
+static HRESULT WINAPI UpdateRegistryAppId(BOOL /* bRegister*/) throw();
 ```  
   
 ### Parameters  

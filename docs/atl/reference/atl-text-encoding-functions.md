@@ -38,11 +38,11 @@ These functions support text encoding and decoding.
 |[UUEncode](#uuencode)|Call this function to uuencode some data. |
 |[UUEncodeGetRequiredLength](#uuencodegetrequiredlength)|Call this function to get the size in characters of a buffer that could contain a string encoded from data of the specified size.|
 
-
+## Requirements  
+ **Header:** atlenc.h  
+ 
 ## <a name="atlgethexvalue"></a> AtlGetHexValue
 Call this function to get the numeric value of a hexadecimal digit.  
-  
-### Syntax  
   
 ```    
 inline char AtlGetHexValue(char chIn) throw();  
@@ -55,13 +55,8 @@ inline char AtlGetHexValue(char chIn) throw();
 ### Return Value  
  The numeric value of the input character interpreted as a hexadecimal digit. For example, an input of '0' returns a value of 0 and an input of 'A' returns a value of 10. If the input character is not a hexadecimal digit, this function returns -1.  
   
-### Requirements  
- **Header:** atlenc.h  
- 
 ## <a name="atlgetversion"></a> AtlGetVersion
 Call this function to get the version of the ATL library that you are using.  
-  
-### Syntax  
   
 ```  
 ATLAPI_(DWORD) AtlGetVersion(void* pReserved);  
@@ -84,8 +79,6 @@ ATLAPI_(DWORD) AtlGetVersion(void* pReserved);
 
 ## <a name="atlhexdecode"></a> AtlHexDecode
 Decodes a string of data that has been encoded as hexadecimal text such as by a previous call to [AtlHexEncode](#atlhexencode).  
-  
-### Syntax  
   
 ```    
 inline BOOL AtlHexDecode(  
@@ -111,13 +104,8 @@ inline BOOL AtlHexDecode(
 ### Return Value  
  Returns **TRUE** on success, **FALSE** on failure.  
   
-### Requirements  
- **Header:** atlenc.h  
-
 ## <a name="atlhexdecodegetrequiredlength"></a> AtlHexDecodeGetRequiredLength
 Call this function to get the size in bytes of a buffer that could contain data decoded from a hex-encoded string of the specified length.  
-  
-### Syntax  
   
 ```  
 inline int AtlHexDecodeGetRequiredLength(int nSrcLen) throw();  
@@ -130,13 +118,8 @@ inline int AtlHexDecodeGetRequiredLength(int nSrcLen) throw();
 ### Return Value  
  The number of bytes required for a buffer that could hold a decoded string of `nSrcLen` characters.  
   
-### Requirements  
- **Header:** atlenc.h 
-
 ## <a name="atlhexencode"></a> AtlHexEncode
 Call this function to encode some data as a string of hexadecimal text.  
-  
-### Syntax  
   
 ```  
 inline BOOL AtlHexEncode(  
@@ -165,13 +148,8 @@ int * pnDestLen) throw();
 ### Remarks  
  Each byte of source data is encoded as 2 hexadecimal characters.  
   
-### Requirements  
- **Header:** atlenc.h  
-  
 ## <a name="atlhexencodegetrequiredlength"></a> AtlHexEncodeGetRequiredLength
 Call this function to get the size in characters of a buffer that could contain a string encoded from data of the specified size.  
-  
-### Syntax  
   
 ```  
 inline int AtlHexEncodeGetRequiredLength(int nSrcLen) throw();  
@@ -184,32 +162,8 @@ inline int AtlHexEncodeGetRequiredLength(int nSrcLen) throw();
 ### Return Value  
  The number of characters required for a buffer that could hold encoded data of `nSrcLen` bytes.  
   
-### Requirements  
- **Header:** atlenc.h  
-
-## <a name="atlhexvalue"></a> AtlHexValue
-Call this function to get the numeric value of a hexadecimal digit.  
-  
-### Syntax  
-  
-```  
-inline short AtlHexValue(char chIn) throw();  
-```  
-  
-### Parameters  
- `chIn`  
- The hexadecimal character '0'-'9', 'A'-'F', or 'a'-'f'.  
-  
-### Return Value  
- The numeric value of the input character interpreted as a hexadecimal digit. For example, an input of '0' returns a value of 0 and an input of 'A' returns a value of 10. If the input character is not a hexadecimal digit, this function returns -1.  
-  
-### Requirements  
- **Header:** atlutil.h  
-
 ## <a name="atlunicodetoutf8"></a> AtlUnicodeToUTF8
 Call this function to convert a Unicode string to UTF-8.  
-  
-### Syntax  
   
 ```  
 ATL_NOINLINE inline int AtlUnicodeToUTF8(  
@@ -238,13 +192,8 @@ ATL_NOINLINE inline int AtlUnicodeToUTF8(
 ### Remarks  
  To determine the size of the buffer required for the converted string, call this function passing 0 for `szDest` and `nDest`.  
   
-### Requirements  
- **Header:** atlenc.h  
-
 ## <a name="bencode"></a> BEncode  
 Call this function to convert some data using the "B" encoding.  
-  
-### Syntax  
   
 ```  
 inline BOOL BEncode(  
@@ -277,13 +226,8 @@ inline BOOL BEncode(
 ### Remarks  
  The "B" encoding scheme is described in RFC 2047 ([http://www.ietf.org/rfc/rfc2047.txt](http://www.ietf.org/rfc/rfc2047.txt)).  
   
-### Requirements  
- **Header:** atlenc.h  
-
 ## <a name="beencodegetrequiredlength"></a> BEncodeGetRequiredLength 
 Call this function to get the size in characters of a buffer that could contain a string encoded from data of the specified size.  
-  
-### Syntax  
   
 ```  
 inline int BEncodeGetRequiredLength(int nSrcLen, int nCharsetLen) throw();  
@@ -302,13 +246,8 @@ inline int BEncodeGetRequiredLength(int nSrcLen, int nCharsetLen) throw();
 ### Remarks  
  The "B" encoding scheme is described in RFC 2047 ([http://www.ietf.org/rfc/rfc2047.txt](http://www.ietf.org/rfc/rfc2047.txt)).  
   
-### Requirements  
- **Header:** atlenc.h 
-
 ## <a name="escapexml"></a> EscapeXML
 Call this function to convert characters that are unsafe for use in XML to their safe equivalents.  
-  
-### Syntax  
   
 ```  
 inline int EscapeXML(  
@@ -349,13 +288,8 @@ inline int EscapeXML(
 |'|&apos;|  
 |"|&quot;|  
   
-### Requirements  
- **Header:** atlenc.h  
-
 ## <a name="getextendedchars"></a> GetExtendedChars
 Call this function to get the number of extended characters in a string.  
-  
-### Syntax  
   
 ```  
 inline int GetExtendedChars(LPCSTR szSrc, int nSrcLen) throw();  
@@ -371,13 +305,8 @@ inline int GetExtendedChars(LPCSTR szSrc, int nSrcLen) throw();
 ### Return Value  
  Returns the number of extended characters found within the string as determined by [IsExtendedChar](#isextendedchar).  
   
-### Requirements  
- **Header:** atlenc.h 
-
 ## <a name="isextendedchar"></a> IsExtendedChar
 Call this function to find out if a given character is an extended character (less than 32, greater than 126, and not a tab, linefeed or carriage return)  
-  
-### Syntax  
   
 ```  
 inline int IsExtendedChar(char ch) throw();  
@@ -390,13 +319,8 @@ inline int IsExtendedChar(char ch) throw();
 ### Return Value  
  **TRUE** if the character is extended, **FALSE** otherwise.  
   
-### Requirements  
- **Header:** atlenc.h  
-
 ## <a name="qencode"></a> QEncode
 Call this function to convert some data using the "Q" encoding.  
-  
-### Syntax  
   
 ```  
 inline BOOL QEncode(  
@@ -433,13 +357,8 @@ inline BOOL QEncode(
 ### Remarks  
  The "Q" encoding scheme is described in RFC 2047 ([http://www.ietf.org/rfc/rfc2047.txt](http://www.ietf.org/rfc/rfc2047.txt)).  
   
-### Requirements  
- **Header:** atlenc.h  
-
 ## <a name="qencodegetrequiredlength"></a> QEncodeGetRequiredLength 
 Call this function to get the size in characters of a buffer that could contain a string encoded from data of the specified size.  
-  
-### Syntax  
   
 ```  
 inline int QEncodeGetRequiredLength(int nSrcLen, int nCharsetLen) throw();  
@@ -458,13 +377,8 @@ inline int QEncodeGetRequiredLength(int nSrcLen, int nCharsetLen) throw();
 ### Remarks  
  The "Q" encoding scheme is described in RFC 2047 ([http://www.ietf.org/rfc/rfc2047.txt](http://www.ietf.org/rfc/rfc2047.txt)).  
   
-### Requirements  
- **Header:** atlenc.h 
-
 ## <a name="qpdecode"></a> QPDecode
 Decodes a string of data that has been encoded in quoted-printable format such as by a previous call to [QPEncode](#qpencode).  
-  
-### Syntax  
   
 ```  
 inline BOOL QPDecode(  
@@ -497,13 +411,8 @@ inline BOOL QPDecode(
 ### Remarks  
  The quoted-printable encoding scheme is described in RFC 2045 ([http://www.ietf.org/rfc/rfc2045.txt](http://www.ietf.org/rfc/rfc2045.txt)).  
   
-### Requirements  
- **Header:** atlenc.h  
-
 ## <a name="qpdecodegetrequiredlength"></a> QPDecodeGetRequiredLength
 Call this function to get the size in bytes of a buffer that could contain data decoded from quoted-printable-encoded string of the specified length.  
-  
-### Syntax  
   
 ```  
 inline int QPDecodeGetRequiredLength(int nSrcLen) throw();  
@@ -519,13 +428,8 @@ inline int QPDecodeGetRequiredLength(int nSrcLen) throw();
 ### Remarks  
  The quoted-printable encoding scheme is described in RFC 2045 ([http://www.ietf.org/rfc/rfc2045.txt](http://www.ietf.org/rfc/rfc2045.txt)).  
   
-### Requirements  
- **Header:** atlenc.h  
-
 ## <a name="qpencode"></a> QPEncode
 Call this function to encode some data in quoted-printable format.  
-  
-### Syntax  
   
 ```  
 inline BOOL QPEncode(  
@@ -558,13 +462,8 @@ inline BOOL QPEncode(
 ### Remarks  
  The quoted-printable encoding scheme is described in RFC 2045 ([http://www.ietf.org/rfc/rfc2045.txt](http://www.ietf.org/rfc/rfc2045.txt)).  
   
-### Requirements  
- **Header:** atlenc.h 
-
 ## <a name="qpencodegetrequiredlength"></a> QPEncodeGetRequiredLength
 Call this function to get the size in characters of a buffer that could contain a string encoded from data of the specified size.  
-  
-### Syntax  
   
 ```  
 inline int QPEncodeGetRequiredLength(int nSrcLen) throw ();  
@@ -580,13 +479,8 @@ inline int QPEncodeGetRequiredLength(int nSrcLen) throw ();
 ### Remarks  
  The quoted-printable encoding scheme is described in RFC 2045 ([http://www.ietf.org/rfc/rfc2045.txt](http://www.ietf.org/rfc/rfc2045.txt)).  
   
-### Requirements  
- **Header:** atlenc.h 
-
 ## <a name="uudecode"></a> UUDecode
 Decodes a string of data that has been uuencoded such as by a previous call to [UUEncode](#uuencode).  
-  
-### Syntax  
   
 ```  
 inline BOOL UUDecode(  
@@ -615,13 +509,8 @@ inline BOOL UUDecode(
 ### Remarks  
  This uuencoding implementation follows the POSIX P1003.2b/D11 specification.  
   
-### Requirements  
- **Header:** atlenc.h  
-
 ## <a name="uudecodegetrequiredlength"></a> UUDecodeGetRequiredLength
 Call this function to get the size in bytes of a buffer that could contain data decoded from a uuencoded string of the specified length.  
-  
-### Syntax  
   
 ```  
 inline int UUDecodeGetRequiredLength(int nSrcLen) throw ();  
@@ -637,14 +526,8 @@ inline int UUDecodeGetRequiredLength(int nSrcLen) throw ();
 ### Remarks  
  This uuencoding implementation follows the POSIX P1003.2b/D11 specification.  
   
-### Requirements  
- **Header:** atlenc.h  
-  
-
 ## <a name="uuencode"></a> UUEncode
 Call this function to uuencode some data.  
-  
-### Syntax  
   
 ```  
 inline BOOL UUEncode(  
@@ -681,13 +564,8 @@ inline BOOL UUEncode(
 ### Remarks  
  This uuencoding implementation follows the POSIX P1003.2b/D11 specification.  
   
-### Requirements  
- **Header:** atlenc.h  
-
 ## <a name="uuencodegetrequiredlength"></a> UUEncodeGetRequiredLength
 Call this function to get the size in characters of a buffer that could contain a string encoded from data of the specified size.  
-  
-### Syntax  
   
 ```  
 inline int UUEncodeGetRequiredLength(int nSrcLen) throw ();  
@@ -703,9 +581,6 @@ inline int UUEncodeGetRequiredLength(int nSrcLen) throw ();
 ### Remarks  
  This uuencoding implementation follows the POSIX P1003.2b/D11 specification.  
   
-### Requirements  
- **Header:** atlenc.h  
-
 ### See Also  
  [Concepts](../../atl/active-template-library-atl-concepts.md)   
  [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)   

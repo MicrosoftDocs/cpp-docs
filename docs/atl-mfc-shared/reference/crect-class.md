@@ -164,7 +164,8 @@ const CPoint& BottomRight() const throw();
  ASSERT(rect2 == CRect(10, 10, 180, 180));  
 ```
   
-##  <a name="centerpoint"></a>  CRect::CenterPOINT Calculates the centerpoint of `CRect` by adding the left and right values and dividing by two, and adding the top and bottom values and dividing by two.  
+##  <a name="centerpoint"></a>  CRect::CenterPOINT 
+ Calculates the centerpoint of `CRect` by adding the left and right values and dividing by two, and adding the top and bottom values and dividing by two.  
   
 ```  
 CPoint CenterPoint() const throw();

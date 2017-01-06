@@ -109,8 +109,7 @@ class CAtlArray
   
 ```
 size_t Add(INARGTYPE element);
-
-    size_t Add();
+size_t Add();
 ```  
   
 ### Parameters  
@@ -264,7 +263,6 @@ size_t GetCount() const throw();
   
 ```
 E* GetData() throw();
-
 const E* GetData() const throw();
 ```  
   
@@ -287,7 +285,7 @@ typedef ETraits::INARGTYPE INARGTYPE;
 ```
 void InsertArrayAt(  
    size_t iStart,
-    const CAtlArray<E, ETraits>* paNew);
+  const CAtlArray<E, ETraits>* paNew);
 ```  
   
 ### Parameters  
@@ -398,7 +396,7 @@ void RemoveAll() throw();
  Call this method to remove one or more elements from the array.  
   
 ```
-void RemoveAt(size_t iElement,  size_t nCount = 1);
+void RemoveAt(size_t iElement, size_t nCount = 1);
 ```  
   
 ### Parameters  
@@ -420,7 +418,7 @@ void RemoveAt(size_t iElement,  size_t nCount = 1);
  Call this method to set the value of an element in the array object.  
   
 ```
-void SetAt(size_t iElement,  INARGTYPE element);
+void SetAt(size_t iElement, INARGTYPE element);
 ```  
   
 ### Parameters  
@@ -440,7 +438,7 @@ void SetAt(size_t iElement,  INARGTYPE element);
  Call this method to set the size of the array object.  
   
 ```
-bool SetCount(size_t nNewSize,  int nGrowBy = - 1);
+bool SetCount(size_t nNewSize, int nGrowBy = - 1);
 ```  
   
 ### Parameters  
@@ -465,7 +463,7 @@ bool SetCount(size_t nNewSize,  int nGrowBy = - 1);
  Call this method to set the value of an element in the array object, expanding the array as required.  
   
 ```
-void SetAtGrow(size_t iElement,  INARGTYPE element);
+void SetAtGrow(size_t iElement, INARGTYPE element);
 ```  
   
 ### Parameters  

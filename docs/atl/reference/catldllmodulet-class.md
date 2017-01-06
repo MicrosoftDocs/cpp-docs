@@ -141,7 +141,7 @@ HRESULT DllGetClassObject(
  The optional entry point into a dynamic-link library (DLL).  
   
 ```
-BOOL WINAPI DllMain(DWORD dwReason,  LPVOID /* lpReserved*/) throw();
+BOOL WINAPI DllMain(DWORD dwReason, LPVOID /* lpReserved*/) throw();
 ```  
   
 ### Parameters  

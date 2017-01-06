@@ -49,8 +49,9 @@ This class represents a `CStringT` object.
 template<typename BaseType, class StringTraits>  
 class CStringT 
  : public CSimpleStringT<BaseType,
- _CSTRING_IMPL_::_MFCDLLTraitsCheck<BaseType,
- StringTraits>::c_bIsMFCDLLTraits>  
+                         _CSTRING_IMPL_::_MFCDLLTraitsCheck<
+                                       BaseType, StringTraits>
+                                       ::c_bIsMFCDLLTraits>  
 ```  
   
 #### Parameters  
@@ -268,13 +269,11 @@ void AnsiToOem();
 ```  
 void __cdecl AppendFormat(
  PCXSTR pszFormat,  
- [,
- argument]                ...);
+ [, argument] ...);
 
 void __cdecl AppendFormat(
  UINT nFormatID,  
- [,
- argument]                ...);
+ [, argument] ...);
 ```  
   
 ### Parameters  
@@ -381,160 +380,76 @@ int CompareNoCase(PCXSTR psz) const throw();
   
 ```  
 CStringT() throw() :   
- CThisSimpleString(
- StringTraits::GetDefaultManager());
+ CThisSimpleString(StringTraits::GetDefaultManager());
 
+explicit CStringT(IAtlStringMgr* pStringMgr) throw() :   
+ CThisSimpleString(pStringMgr);
  
-explicit CStringT(
- IAtlStringMgr* pStringMgr) throw() :   
- CThisSimpleString(
- pStringMgr);
+CStringT( const VARIANT& varSrc);
+ 
+CStringT(const VARIANT& varSrc, IAtlStringMgr* pStringMgr);
+ 
+CStringT(const CStringT& strSrc) :   
+ CThisSimpleString(strSrc);
 
+operator CSimpleStringT<BaseType,   
+                        !_CSTRING_IMPL_::_MFCDLLTraitsCheck<
+                        BaseType, StringTraits>
+                        ::c_bIsMFCDLLTraits> &()  
  
-CStringT(
- const VARIANT& varSrc);
-
+template <bool bMFCDLL>  
+CStringT(const CSimpleStringT<
+                BaseType, bMFCDLL>& strSrc) :   
+                  CThisSimpleString(strSrc);
  
-CStringT(
- const VARIANT& varSrc,  
- IAtlStringMgr* pStringMgr);
-
+template <class SystemString>  
+CStringT(SystemString^ pString) :   
+ CThisSimpleString(StringTraits::GetDefaultManager());
  
-CStringT(
- const CStringT& strSrc) :   
- CThisSimpleString(
- strSrc);
-
- operator CSimpleStringT<
- BaseType,   
- !_CSTRING_IMPL_::_MFCDLLTraitsCheck<
- BaseType, 
- StringTraits>:: c_bIsMFCDLLTraits   
-> &()  
+CStringT(const XCHAR* pszSrc) :   
+ CThisSimpleString(StringTraits::GetDefaultManager());
  
-template <
- bool bMFCDLL  
->  
-CStringT(
- const CSimpleStringT<
- BaseType, 
- bMFCDLL>& strSrc) :   
- CThisSimpleString(
- strSrc);
-
+CSTRING_EXPLICIT CStringT(const YCHAR* pszSrc) :   
+ CThisSimpleString(StringTraits::GetDefaultManager());
  
-template <
- class SystemString  
->  
-CStringT(
- SystemString^ pString) :   
- CThisSimpleString(
- StringTraits::GetDefaultManager());
-
+CStringT(LPCSTR pszSrc, IAtlStringMgr* pStringMgr) :   
+ CThisSimpleString(pStringMgr);
  
-CStringT(
- const XCHAR* pszSrc) :   
- CThisSimpleString(
- StringTraits::GetDefaultManager());
-
+CStringT(LPCWSTR pszSrc, IAtlStringMgr* pStringMgr) :   
+ CThisSimpleString(pStringMgr);
  
-CSTRING_EXPLICIT CStringT(
- const YCHAR* pszSrc) :   
- CThisSimpleString(
- StringTraits::GetDefaultManager());
-
+CSTRING_EXPLICIT CStringT(const unsigned char* pszSrc) :   
+ CThisSimpleString(StringTraits::GetDefaultManager());
  
-CStringT(
- LPCSTR pszSrc,  
- IAtlStringMgr* pStringMgr) :   
- CThisSimpleString(
- pStringMgr);
-
+/*CSTRING_EXPLICIT*/ CStringT(char* pszSrc) :   
+  CThisSimpleString(StringTraits::GetDefaultManager());
  
-CStringT(
- LPCWSTR pszSrc,  
- IAtlStringMgr* pStringMgr) :   
- CThisSimpleString(
- pStringMgr);
-
+CSTRING_EXPLICIT CStringT(unsigned char* pszSrc) :   
+ CThisSimpleString(StringTraits::GetDefaultManager());
  
-CSTRING_EXPLICIT CStringT(
- const unsigned char* pszSrc) :   
- CThisSimpleString(
- StringTraits::GetDefaultManager());
-
+CSTRING_EXPLICIT CStringT(wchar_t* pszSrc) :   
+ CThisSimpleString(StringTraits::GetDefaultManager());
  
-/*CSTRING_EXPLICIT*/ CStringT(
- char* pszSrc) :   
- CThisSimpleString(
- StringTraits::GetDefaultManager());
-
+CStringT(const unsigned char* pszSrc, IAtlStringMgr* pStringMgr) :   
+ CThisSimpleString(pStringMgr);
  
-CSTRING_EXPLICIT CStringT(
- unsigned char* pszSrc) :   
- CThisSimpleString(
- StringTraits::GetDefaultManager());
-
+CSTRING_EXPLICIT CStringT(char ch, int nLength = 1) :   
+ CThisSimpleString(StringTraits::GetDefaultManager());
  
-CSTRING_EXPLICIT CStringT(
- wchar_t* pszSrc) :   
- CThisSimpleString(
- StringTraits::GetDefaultManager());
-
+CSTRING_EXPLICIT CStringT(wchar_t ch, int nLength = 1) :   
+ CThisSimpleString(StringTraits::GetDefaultManager());
  
-CStringT(
- const unsigned char* pszSrc,  
- IAtlStringMgr* pStringMgr) :   
- CThisSimpleString(
- pStringMgr);
-
+CStringT(const XCHAR* pch, int nLength) :   
+ CThisSimpleString(pch, nLength, StringTraits::GetDefaultManager());
  
-CSTRING_EXPLICIT CStringT(
- char ch,  
- int nLength = 1) :   
- CThisSimpleString(
- StringTraits::GetDefaultManager());
-
+CStringT(const YCHAR* pch, int nLength) :   
+ CThisSimpleString(StringTraits::GetDefaultManager());
  
-CSTRING_EXPLICIT CStringT(
- wchar_t ch,  
- int nLength = 1) :   
- CThisSimpleString(
- StringTraits::GetDefaultManager());
-
+CStringT(const XCHAR* pch, int nLength, IAtlStringMgr* pStringMgr) :   
+ CThisSimpleString(pch, nLength, pStringMgr);
  
-CStringT(
- const XCHAR* pch,  
- int nLength) :   
- CThisSimpleString(
- pch,   
- nLength, 
- StringTraits::GetDefaultManager());
-
- 
-CStringT(
- const YCHAR* pch,  
- int nLength) :   
- CThisSimpleString(
- StringTraits::GetDefaultManager());
-
- 
-CStringT(
- const XCHAR* pch,  
- int nLength,  
- IAtlStringMgr* pStringMgr) :   
- CThisSimpleString(
- pch,   
- nLength, 
- pStringMgr);
-
- 
-CStringT(
- const YCHAR* pch,  
- int nLength,  
- IAtlStringMgr* pStringMgr) :   
- CThisSimpleString(
- pStringMgr);
+CStringT(const YCHAR* pch, int nLength, IAtlStringMgr* pStringMgr) :   
+ CThisSimpleString(pStringMgr);
 ```  
   
 ### Parameters  
@@ -613,9 +528,7 @@ CStringT(
  Deletes a character or characters from a string starting with the character at the given index.  
   
 ```  
-int Delete(
- int iIndex,  
- int nCount = 1);
+int Delete(int iIndex, int nCount = 1);
 ```  
   
 ### Parameters  
@@ -645,13 +558,8 @@ After: Soccer best,
  Searches this string for the first match of a character or substring.  
   
 ```  
-int Find(
- PCXSTR pszSub,  
- int iStart=0) const throw();
-
-int Find(
- XCHAR ch,  
- int iStart=0) const throw();
+int Find(PCXSTR pszSub, int iStart=0) const throw();
+int Find(XCHAR ch, int iStart=0) const throw();
 ```  
   
 ### Parameters  
@@ -697,15 +605,8 @@ int FindOneOf(PCXSTR pszCharSet) const throw();
  Writes formatted data to a `CStringT` in the same way that [sprintf_s](../../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md) formats data into a C-style character array.  
   
 ```  
-void __cdecl Format(
- UINT nFormatID,  
- [,
- argument]                ...);
-
-void __cdecl Format(
- PCXSTR pszFormat,  
- [,
- argument]                ...);
+void __cdecl Format(UINT nFormatID, [, argument]...);
+void __cdecl Format(PCXSTR pszFormat, [, argument]...);
 ```  
   
 ### Parameters  
@@ -734,15 +635,8 @@ void __cdecl Format(
  Formats a message string.  
   
 ```  
-void __cdecl FormatMessage(
- UINT nFormatID,  
- [,
- argument]                ...);
-
-void __cdecl FormatMessage(
- PCXSTR pszFormat,  
- [,
- argument]                ...);
+void __cdecl FormatMessage(UINT nFormatID, [, argument]...);
+void __cdecl FormatMessage(PCXSTR pszFormat, [, argument]...);
 ```  
   
 ### Parameters  
@@ -770,9 +664,7 @@ void __cdecl FormatMessage(
  Formats a message string using a variable argument list.  
   
 ```  
-void FormatMessageV(
- PCXSTR pszFormat,  
- va_list* pArgList);
+void FormatMessageV(PCXSTR pszFormat, va_list* pArgList);
 ```  
   
 ### Parameters  
@@ -794,9 +686,7 @@ void FormatMessageV(
  Formats a message string using a variable argument list.  
   
 ```  
-void FormatV(
- PCXSTR pszFormat,  
- va_list args);
+void FormatV(PCXSTR pszFormat, va_list args);
 ```  
   
 ### Parameters  
@@ -838,13 +728,8 @@ BOOL GetEnvironmentVariable(PCXSTR pszVar);
  Inserts a single character or a substring at the given index within the string.  
   
 ```  
-int Insert(
- int iIndex,  
- PCXSTR psz);
-
-int Insert(
- int iIndex,  
- XCHAR ch);
+int Insert(int iIndex, PCXSTR psz);
+int Insert(int iIndex, XCHAR ch);
 ```  
   
 ### Parameters  
@@ -871,8 +756,6 @@ int Insert(
   
 ```  
 CStringT Left(int nCount) const;
-
- 
 ```  
   
 ### Parameters  
@@ -899,12 +782,8 @@ BOOL LoadString(
  UINT nID,  
  WORD wLanguageID);
 
-BOOL LoadString(
- HINSTANCE hInstance,  
- UINT nID);
-
-BOOL LoadString(
- UINT nID);
+BOOL LoadString(HINSTANCE hInstance, UINT nID);
+BOOL LoadString(UINT nID);
 ```  
   
 ### Parameters  
@@ -971,15 +850,8 @@ CStringT& MakeUpper();
  Extracts a substring of length `nCount` characters from this `CStringT` object, starting at position `iFirst` (zero-based).  
   
 ```  
-CStringT Mid(
- int iFirst,  
- int nCount) const;
-
- 
-CStringT Mid(
- int iFirst) const;
-
- 
+CStringT Mid(int iFirst, int nCount) const;
+CStringT Mid(int iFirst) const;
 ```  
   
 ### Parameters  
@@ -1043,7 +915,7 @@ friend CStringT operator+(
 
 friend CStringT operator+(
  wchar_t ch1  
- const CStringT& str2,);
+ const CStringT& str2);
 ```  
   
 ### Parameters  
@@ -1079,10 +951,13 @@ friend CStringT operator+(
   
 ```
 CStringT& operator+=(const CThisSimpleString& str);
+
 template<bool bMFCDLL>  
 CStringT& operator+=(const const CSimpleStringT<BaseType, bMFCDLL>& str);
+
 template<int t_nSize>  
 CStringT& operator+=(const CStaticString<XCHAR, t_nSize>& strSrc);
+
 CStringT& operator+=(PCXSTR pszSrc);
 CStringT& operator+=(PCYSTR pszSrc);
 CStringT& operator+=(char ch);
@@ -1432,13 +1307,8 @@ int Remove(XCHAR chRemove);
  There are two versions of `Replace`.The first version replaces one or more copies of a substring by using another substring. Both substrings are null-terminated. The second version replaces one or more copies of a character by using another character. Both versions operate on the character data stored in `CStringT`.  
   
 ```  
-int Replace(
- PCXSTR pszOld,  
- PCXSTR pszNew);
-
-int Replace(
- XCHAR chOld,  
- XCHAR chNew);
+int Replace(PCXSTR pszOld, PCXSTR pszNew);
+int Replace(XCHAR chOld, XCHAR chNew);
 ```  
   
 ### Parameters  
@@ -1500,9 +1370,7 @@ int ReverseFind(XCHAR ch) const throw();
  Extracts the last (that is, rightmost) `nCount` characters from this `CStringT` object and returns a copy of the extracted substring.  
   
 ```  
-CStringT Right(int nCount) const;
-
- 
+CStringT Right(int nCount) const; 
 ```  
   
 ### Parameters  
@@ -1524,9 +1392,7 @@ CStringT Right(int nCount) const;
  Reallocates the `BSTR` pointed to by `pbstr` and copies the contents of the `CStringT` object into it, including the `NULL` character.  
   
 ```  
-BSTR SetSysString(BSTR* pbstr) const;
-
- 
+BSTR SetSysString(BSTR* pbstr) const; 
 ```  
   
 ### Parameters  
@@ -1548,9 +1414,7 @@ BSTR SetSysString(BSTR* pbstr) const;
  Extracts characters from the string, starting with the first character, that are not in the set of characters identified by `pszCharSet`.  
   
 ```  
-CStringT SpanExcluding(PCXSTR pszCharSet) const;
-
- 
+CStringT SpanExcluding(PCXSTR pszCharSet) const; 
 ```  
   
 ### Parameters  
@@ -1570,9 +1434,7 @@ CStringT SpanExcluding(PCXSTR pszCharSet) const;
  Extracts characters from the string, starting with the first character, that are in the set of characters identified by `pszCharSet`.  
   
 ```  
-CStringT SpanIncluding(PCXSTR pszCharSet) const;
-
- 
+CStringT SpanIncluding(PCXSTR pszCharSet) const; 
 ```  
   
 ### Parameters  
@@ -1592,11 +1454,7 @@ CStringT SpanIncluding(PCXSTR pszCharSet) const;
  Finds the next token in a target string  
   
 ```  
-CStringT Tokenize(
- PCXSTR pszTokens,  
- int& iStart) const;
-
- 
+CStringT Tokenize(PCXSTR pszTokens, int& iStart) const;
 ```  
   
 ### Parameters  
@@ -1631,9 +1489,7 @@ CStringT Tokenize(
   
 ```  
 CStringT& Trim(XCHAR chTarget);
-
 CStringT& Trim(PCXSTR pszTargets);
-
 CStringT& Trim();
 ```  
   
@@ -1671,9 +1527,7 @@ CStringT& Trim();
   
 ```  
 CStringT& TrimLeft(XCHAR chTarget);
-
 CStringT& TrimLeft(PCXSTR pszTargets);
-
 CStringT& TrimLeft();
 ```  
   
@@ -1704,9 +1558,7 @@ CStringT& TrimLeft();
   
 ```  
 CStringT& TrimRight(XCHAR chTarget);
-
 CStringT& TrimRight(PCXSTR pszTargets);
-
 CStringT& TrimRight();
 ```  
   

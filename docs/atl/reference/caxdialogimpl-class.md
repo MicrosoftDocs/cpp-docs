@@ -46,7 +46,7 @@ This class implements a dialog box (modal or modeless) that hosts ActiveX contro
 ## Syntax  
   
 ```
-template <class T,  class TBase = CWindow>  
+template <class T, class TBase = CWindow>  
 class ATL_NO_VTABLE CAxDialogImpl : public CDialogImplBaseT<TBase>
 ```  
   
@@ -166,7 +166,9 @@ BOOL DestroyWindow();
  Call this method to create a modal dialog box.  
   
 ```
-INT_PTR DoModal(HWND hWndParent = ::GetActiveWindow(),  LPARAM dwInitParam = NULL);
+INT_PTR DoModal(
+  HWND hWndParent = ::GetActiveWindow(), 
+  LPARAM dwInitParam = NULL);
 ```  
   
 ### Parameters  

@@ -38,7 +38,10 @@ These macros define object maps and entries.
 |[DECLARE_OBJECT_DESCRIPTION](#declare_object_description)|Allows you to specify a class object's text description, which will be entered into the object map.|  
 |[OBJECT_ENTRY_AUTO](#object_entry_auto)|Enters an ATL object into the object map, updates the registry, and creates an instance of the object.|  
 |[OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](#object_entry_non_createable_ex_auto)|Allows you to specify that the object should be registered and initialized, but it should not be externally creatable via `CoCreateInstance`.|  
-  
+
+## Requirements  
+ **Header:** atlcom.h  
+   
 ##  <a name="declare_object_description"></a>  DECLARE_OBJECT_DESCRIPTION  
  Allows you to specify a text description for your class object.  
   

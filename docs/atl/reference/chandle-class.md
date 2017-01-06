@@ -104,7 +104,7 @@ void Attach(HANDLE h) throw();
 ```
 CHandle() throw();
 CHandle(CHandle& h) throw();
-explicit CHandle(HANDLE   h) throw();
+explicit CHandle(HANDLE h) throw();
 ```  
   
 ### Parameters  

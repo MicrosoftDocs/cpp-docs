@@ -416,7 +416,7 @@ STDMETHOD(OnStartBinding)(DWORD /* dwReserved */, IBinding* pBinding);
  Releases the `IBinding` pointer in the data member [m_spBinding](#m_spbinding).  
   
 ```
-STDMETHOD(OnStopBinding)(HRESULT hresult,  LPCWSTR /* szError */);
+STDMETHOD(OnStopBinding)(HRESULT hresult, LPCWSTR /* szError */);
 ```  
   
 ### Parameters  

@@ -156,8 +156,7 @@ void FinalRelease();
  A [CComContainedObject](../../atl/reference/ccomcontainedobject-class.md) object derived from your tear-off class.  
   
 ```
-CcomContainedObject <contained>
-    m_contained;
+CcomContainedObject <contained> m_contained;
 ```     
   
 ### Parameters  

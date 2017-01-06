@@ -119,7 +119,7 @@ class CAccessToken
  Call this method to take ownership of the given access token handle.  
   
 ```
-void Attach(HANDLE   hToken) throw();
+void Attach(HANDLE hToken) throw();
 ```  
   
 ### Parameters  
@@ -143,7 +143,9 @@ virtual ~CAccessToken() throw();
  Call this method to determine if a specified SID is enabled in the `CAccessToken` object.  
   
 ```
-bool CheckTokenMembership(const CSid& rSid, bool* pbIsMember) const throw(...);
+bool CheckTokenMembership(
+    const CSid& rSid, 
+    bool* pbIsMember) const throw(...);
 ```  
   
 ### Parameters  
@@ -168,7 +170,9 @@ bool CheckTokenMembership(const CSid& rSid, bool* pbIsMember) const throw(...);
  Call this method to create an impersonation access token.  
   
 ```
-bool CreateImpersonationToken(CAccessToken* pImp, SECURITY_IMPERSONATION_LEVEL sil = SecurityImpersonation) const throw(...);
+bool CreateImpersonationToken(
+    CAccessToken* pImp, 
+    SECURITY_IMPERSONATION_LEVEL sil = SecurityImpersonation) const throw(...);
 ```  
   
 ### Parameters  
@@ -409,7 +413,7 @@ bool GetDefaultDacl(CDacl* pDacl) const throw(...);
  Call this method to get the `CAccessToken` object equal to the access token in effect for the current thread.  
   
 ```
-bool GetEffectiveToken(DWORD   dwDesiredAccess) throw();
+bool GetEffectiveToken(DWORD dwDesiredAccess) throw();
 ```  
   
 ### Parameters  
@@ -447,7 +451,8 @@ HANDLE GetHandle() const throw();
  Call this method to get the impersonation level from the access token.  
   
 ```
-bool GetImpersonationLevel(SECURITY_IMPERSONATION_LEVEL* pImpersonationLevel) const throw(...);
+bool GetImpersonationLevel(
+    SECURITY_IMPERSONATION_LEVEL* pImpersonationLevel) const throw(...);
 ```  
   
 ### Parameters  
@@ -695,7 +700,7 @@ HKEY HKeyCurrentUser() const throw();
  Call this method to assign an impersonation `CAccessToken` to a thread.  
   
 ```
-bool Impersonate(HANDLE   hThread = NULL) const throw(...);
+bool Impersonate(HANDLE hThread = NULL) const throw(...);
 ```  
   
 ### Parameters  
@@ -912,7 +917,9 @@ bool OpenThreadToken(
  Call this method to determine whether a specified set of privileges are enabled in the **CAccessToken** object.  
   
 ```
-bool PrivilegeCheck(PPRIVILEGE_SET RequiredPrivileges, bool* pbResult) const throw();
+bool PrivilegeCheck(
+    PPRIVILEGE_SET RequiredPrivileges,
+     bool* pbResult) const throw();
 ```  
   
 ### Parameters  
@@ -932,7 +939,7 @@ bool PrivilegeCheck(PPRIVILEGE_SET RequiredPrivileges, bool* pbResult) const thr
  Call this method to stop a thread from using an impersonation token.  
   
 ```
-bool Revert(HANDLE   hThread = NULL) const throw();
+bool Revert(HANDLE hThread = NULL) const throw();
 ```  
   
 ### Parameters  

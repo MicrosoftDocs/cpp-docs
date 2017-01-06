@@ -108,7 +108,7 @@ STDMETHOD(InitNew)();
  Loads the object's properties from a client-supplied property bag.  
   
 ```
-STDMETHOD(Load)(LPPROPERTYBAG pPropBag,  LPERRORLOG pErrorLog);
+STDMETHOD(Load)(LPPROPERTYBAG pPropBag, LPERRORLOG pErrorLog);
 ```  
   
 ### Remarks  

@@ -129,7 +129,7 @@ STDMETHOD(GetTimeout)(DWORD* pdwMaxWait);
  Call this method to set the number of threads in the pool.  
   
 ```
-STDMETHOD(SetSize)(int nNumThreads);
+STDMETHOD(SetSize)int nNumThreads);
 ```  
   
 ### Parameters  

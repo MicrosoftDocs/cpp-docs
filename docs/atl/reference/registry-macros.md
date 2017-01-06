@@ -44,7 +44,11 @@ These macros define useful type library and registry facilities.
 |[DECLARE_REGISTRY_APPID_RESOURCEID](#declare_registry_appid_resourceid)|Specifies the information required to automatically register the *appid*.|  
 |[DECLARE_REGISTRY_RESOURCE](#declare_registry_resource)|Finds the named resource and runs the registry script within it.|  
 |[DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid)|Finds the resource identified by an ID number and runs the registry script within it.|  
+
+## Requirements  
+ **Header:** atlcom.h  
   
+    
 ##  <a name="_atl_static_registry"></a>  _ATL_STATIC_REGISTRY  
  A symbol that indicates you want the registration code for your object to be in the object to avoid a dependency on ATL.DLL.  
   
@@ -61,8 +65,8 @@ These macros define useful type library and registry facilities.
  Provides a way for ATL to obtain the *libid* of the type library.  
   
 ```
-DECLARE_LIBID(Â
-    libid Â)
+DECLARE_LIBID(
+    libid )
 ```  
   
 ### Parameters  
@@ -86,12 +90,12 @@ DECLARE_NO_REGISTRY()
  Enters the standard class registration into the system registry or removes it from the system registry.  
   
 ```
-DECLARE_REGISTRY(Â
-    class, Â
-    pid, Â
-    vpid, Â
-    nid, Â
-    flags Â)
+DECLARE_REGISTRY(
+    class, 
+    pid, 
+    vpid, 
+    nid, 
+    flags )
 ```  
   
 ### Parameters  
@@ -119,9 +123,9 @@ DECLARE_REGISTRY(Â
  Specifies the information required to automatically register the *appid*.  
   
 ```
-DECLARE_REGISTRY_APPID_RESOURCEID(Â
-    resid, Â
-    appid Â)
+DECLARE_REGISTRY_APPID_RESOURCEID(
+    resid, 
+    appid )
 ```  
   
 ### Parameters  
@@ -141,8 +145,8 @@ DECLARE_REGISTRY_APPID_RESOURCEID(Â
  Gets the named resource containing the registry file and runs the script to either enter objects into the system registry or remove them from the system registry.  
   
 ```
-DECLARE_REGISTRY_RESOURCE(Â
-    x Â)
+DECLARE_REGISTRY_RESOURCE(
+    x )
 ```  
   
 ### Parameters  
@@ -165,8 +169,8 @@ DECLARE_REGISTRY_RESOURCE(Â
  Same as [DECLARE_REGISTRY_RESOURCE](#declare_registry_resource) except that it uses a wizard-generated **UINT** to identify the resource, rather than a string name.  
   
 ```
-DECLARE_REGISTRY_RESOURCEID(Â
-    x Â)
+DECLARE_REGISTRY_RESOURCEID(
+    x )
 ```  
   
 ### Parameters  

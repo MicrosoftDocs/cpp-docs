@@ -38,7 +38,10 @@ These macros define window class utilities.
 |[DECLARE_WND_CLASS](http://msdn.microsoft.com/library/55247a72-fb9e-4bde-87f3-747c08076971)|Allows you to specify the name of a new window class.|  
 |[DECLARE_WND_SUPERCLASS](http://msdn.microsoft.com/library/650337b6-4973-41e5-8c36-55f90327bdcd)|Allows you to specify the name of an existing window class on which a new window class will be based.|  
 |[DECLARE_WND_CLASS_EX](http://msdn.microsoft.com/library/0672c144-f2aa-4f6a-ae16-566e3a1f5411)|Allows you to specify the parameters of a class.|  
-  
+
+## Requirements  
+ **Header:** atlwin.h  
+   
 ##  <a name="declare_wnd_class"></a>  DECLARE_WND_CLASS  
  Allows you to specify the name of a new window class. Place this macro in an ATL ActiveX control's control class.  
   

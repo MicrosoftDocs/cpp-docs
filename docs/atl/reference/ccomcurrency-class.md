@@ -538,7 +538,7 @@ operator const CURRENCY&() const throw();
  Call this method to round the currency to a specified number of decimal places.  
   
 ```
-HRESULT Round(int nDecimals);
+HRESULT Roundint nDecimals);
 ```  
   
 ### Parameters  

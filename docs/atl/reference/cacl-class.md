@@ -181,8 +181,8 @@ virtual UINT GetAceCount() const throw() = 0;
 void GetAclEntries(
     CSid::CSidArray* pSids,
     CAccessMaskArray* pAccessMasks = NULL,
- CAceTypeArray* pAceTypes = NULL,
- CAceFlagArray* pAceFlags = NULL) const throw(...);
+    CAceTypeArray* pAceTypes = NULL,
+    CAceFlagArray* pAceFlags = NULL) const throw(...);
 ```  
   
 ### Parameters  
@@ -213,7 +213,7 @@ void GetAclEntry(
     UINT nIndex,
     CSid* pSid,
     ACCESS_MASK* pMask = NULL,
- BYTE* pType = NULL,
+    BYTE* pType = NULL,
     BYTE* pFlags = NULL,
     GUID* pObjectType = NULL,
     GUID* pInheritedObjectType = NULL) const throw(...);
@@ -314,7 +314,7 @@ CAcl& operator= (const CAcl& rhs) throw(...);
  Removes a specific ACE (access-control entry) from the **CAcl** object.  
   
 ```
-void RemoveAce(UINT   nIndex) throw();
+void RemoveAce(UINT nIndex) throw();
 ```  
   
 ### Parameters  

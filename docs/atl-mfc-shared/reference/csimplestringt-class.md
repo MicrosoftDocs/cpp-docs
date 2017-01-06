@@ -81,7 +81,6 @@ class CSimpleStringT
   
 |Name|Description|  
 |----------|-----------------|  
-<<<<<<< 
 |[CSimpleStringT::Append](#append)|Appends a `CSimpleStringT` object to an existing `CSimpleStringT` object.|  
 |[CSimpleStringT::AppendChar](#appendchar)|Appends a character to an existing `CSimpleStringT` object.|  
 |[CSimpleStringT::CopyChars](#copychars)|Copies a character or characters to another string.|  
@@ -106,38 +105,11 @@ class CSimpleStringT
 |[CSimpleStringT::StringLength](#stringlength)|Returns the number of characters in the specified string.|  
 |[CSimpleStringT::Truncate](#truncate)|Truncates the string to a specified length.|  
 |[CSimpleStringT::UnlockBuffer](#unlockbuffer)|Enables reference counting and releases the string in the buffer.|  
-=======
-|[CSimpleStringT::Append](#append)|Appends a `CSimpleStringT` object to an existing `CSimpleStringT` object.|  
-|[CSimpleStringT::AppendChar](#appendchar)|Appends a character to an existing `CSimpleStringT` object.|  
-|[CSimpleStringT::CopyChars](#copychars)|Copies a character or characters to another string.|  
-|[CSimpleStringT::CopyCharsOverlapped](#copycharsoverlapped)|Copies a character or characters to another string in which the buffers overlap.|  
-|[CSimpleStringT::Empty](#empty)|Forces a string to have a length of zero.|  
-|[CSimpleStringT::FreeExtra](#freeextra)|Frees any extra memory previously allocated by the string object.|  
-|[CSimpleStringT::GetAllocLength](#getalloclength)|Retrieves the allocated length of a `CSimpleStringT` object.|  
-|[CSimpleStringT::GetAt](#getat)|Returns the character at a given position.|  
-|[CSimpleStringT::GetBuffer](#getbuffer)|Returns a pointer to the characters in a `CSimpleStringT`.|  
-|[CSimpleStringT::GetBufferSetLength](#getbuffersetlength)|Returns a pointer to the characters in a `CSimpleStringT`, truncating to the specified length.|  
-|[CSimpleStringT::GetLength](#getlength)|Returns the number of characters in a `CSimpleStringT` object.|  
-|[CSimpleStringT::GetManager](#getmanager)|Retrieves the memory manager of the `CSimpleStringT` object.|  
-|[CSimpleStringT::GetString](#getstring)|Retrieves the character string|  
-|[CSimpleStringT::IsEmpty](#isempty)|Tests whether a `CSimpleStringT` object contains no characters.|  
-|[CSimpleStringT::LockBuffer](#lockbuffer)|Disables reference counting and protects the string in the buffer.|  
-|[CSimpleStringT::Preallocate](#preallocate)|Allocates a specific amount of memory for the character buffer.|  
-|[CSimpleStringT::ReleaseBuffer](#releasebuffer)|Releases control of the buffer returned by `GetBuffer`.|  
-|[CSimpleStringT::ReleaseBufferSetLength](#releasebuffersetlength)|Releases control of the buffer returned by `GetBuffer`.|  
-|[CSimpleStringT::SetAt](#setat)|Sets a character at a given position.|  
-|[CSimpleStringT::SetManager](#setmanager)|Sets the memory manager of a `CSimpleStringT` object.|  
-|[CSimpleStringT::SetString](#setstring)|Sets the string of a `CSimpleStringT` object.|  
-|[CSimpleStringT::StringLength](#stringlength)|Returns the number of characters in the specified string.|  
-|[CSimpleStringT::Truncate](#truncate)|Truncates the string to a specified length.|  
-|[CSimpleStringT::UnlockBuffer](#unlockbuffer)|Enables reference counting and releases the string in the buffer.|  
->>>>>>> master
-  
+
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-
 |[CSimpleStringT::operator PCXSTR](#operator_pcxstr)|Directly accesses characters stored in a `CSimpleStringT` object as a C-style string.|  
 |[CSimpleStringT::operator\[\]](#operator_at)|Returns the character at a given position — operator substitution for `GetAt`.|  
 |[CSimpleStringT::operator +=](#operator_add_eq)|Concatenates a new string to the end of an existing string.|  
@@ -173,7 +145,7 @@ void Append(PCXSTR pszSrc);
 ### Remarks  
  Call this method to append an existing `CSimpleStringT` object to another `CSimpleStringT` object.  
   
-## Example  
+### Example  
  The following example demonstrates the use of `CSimpleStringT::Append`.  
   
 ```cpp
@@ -225,7 +197,7 @@ static void CopyChars(
 ### Remarks  
  Call this method to copy characters from `pchSrc` to the `pchDest` string.  
   
-## Example  
+### Example  
  The following example demonstrates the use of `CSimpleStringT::CopyChars`.  
   
 ```cpp
@@ -261,7 +233,7 @@ static void CopyCharsOverlapped(
 ### Remarks  
  Call this method to copy characters from `pchSrc` to the `pchDest` string. Unlike `CopyChars`, `CopyCharsOverlapped` provides a safe method for copying from character buffers that might be overlapped.  
   
-## Example  
+### Example  
  See the example for [CSimpleStringT::CopyChars](#copychars), or the source code for `CSimpleStringT::SetString` (located in atlsimpstr.h).  
   
 ##  <a name="ctor"></a>  CSimpleStringT::CSimpleStringT  
@@ -294,7 +266,7 @@ explicit CSimpleStringT(IAtlStringMgr* pStringMgr) throw();
 ### Remarks  
  Construct a new `CSimpleStringT` object. Because the constructors copy the input data into new allocated storage, memory exceptions may result.  
   
-## Example  
+### Example  
  The following example demonstrates the use of `CSimpleStringT::CSimpleStringT` by using the ATL `typedef``CSimpleString`. `CSimpleString` is a commonly used specialization of the class template `CSimpleStringT`.  
   
 ```cpp
@@ -324,7 +296,7 @@ void Empty() throw();
 ### Remarks  
  For more information, see [Strings: CString Exception Cleanup](../cstring-exception-cleanup.md).  
   
-## Example  
+### Example  
  The following example demonstrates the use of `CSimpleStringT::Empty`.  
   
 ```cpp  
@@ -343,7 +315,7 @@ void FreeExtra();
 ### Remarks  
  This should reduce the memory overhead consumed by the string object. The method reallocates the buffer to the exact length returned by [GetLength](#getlength).  
   
-## Example  
+### Example  
 ```cpp  
 CAtlString basestr;
 IAtlStringMgr* pMgr;
@@ -410,7 +382,7 @@ XCHAR GetAt(int iChar) const;
 ### Remarks  
  Call this method to return the one character specified by `iChar`. The overloaded subscript (`[]`) operator is a convenient alias for `GetAt`. The null terminator is addressable without generating an exception by using `GetAt`. However, it is not counted by `GetLength`, and the value returned is 0.  
   
-## Example  
+### Example  
  The following example demonstrates how to use `CSimpleStringT::GetAt`.  
   
 ```cpp  
@@ -449,7 +421,7 @@ PXSTR GetBuffer();
   
  If there is insufficient memory to satisfy the `GetBuffer` request, this method throws a CMemoryException*.  
   
-## Example  
+### Example  
 ```cpp  
 CSimpleString s(_T("abcd"), pMgr);
 
@@ -496,7 +468,7 @@ PXSTR GetBufferSetLength(int nLength);
   
 - [Rules for Managing Reference Counts](http://msdn.microsoft.com/library/windows/desktop/ms692481) in the Windows SDK.  
   
-## Example  
+### Example  
  The following example demonstrates the use of `CSimpleStringT::GetBufferSetLength`.  
   
 ```cpp  
@@ -560,7 +532,7 @@ PCXSTR GetString() const throw();
 > [!NOTE]
 >  The returned `PCXSTR` pointer is `const` and does not allow direct modification of `CSimpleStringT` contents.  
   
-## Example  
+### Example  
  The following example demonstrates the use of `CSimpleStringT::GetString`.  
   
 ```cpp  
@@ -583,7 +555,7 @@ bool IsEmpty() const throw();
 ### Remarks  
  Call this method to determine if the object contains an empty string.  
   
-## Example  
+### Example  
  The following example demonstrates the use of `CSimpleStringT::IsEmpty`.  
   
 ```cpp  
@@ -624,7 +596,7 @@ PXSTR LockBuffer();
   
 - [Rules for Managing Reference Counts](http://msdn.microsoft.com/library/windows/desktop/ms692481) in the Windows SDK  
   
-## Example  
+### Example  
  The following example demonstrates the use of `CSimpleStringT::LockBuffer`.  
   
 ```cpp  
@@ -655,7 +627,7 @@ XCHAR operator[](int iChar) const;
 > [!NOTE]
 >  You can use the subscript (`[]`) operator to get the value of a character in a `CSimpleStringT`, but you cannot use it to change the value of a character in a `CSimpleStringT`.  
   
-## Example  
+### Example  
  The following example demonstrates the use of **CSimpleStringT::operator []**.  
   
 ```cpp  
@@ -710,7 +682,7 @@ CSimpleStringT& operator +=(wchar_t ch);
 ### Remarks  
  The operator accepts another `CSimpleStringT` object or a character. Note that memory exceptions may occur whenever you use this concatenation operator because new storage may be allocated for characters added to this `CSimpleStringT` object.  
   
-## Example  
+### Example  
  The following example demonstrates the use of **CSimpleStringT::operator +=**.  
   
 ```cpp  
@@ -737,7 +709,7 @@ CSimpleStringT& operator =(const CSimpleStringT& strSrc);
 ### Remarks  
  If the destination string (the left side) is already large enough to store the new data, no new memory allocation is performed. Note that memory exceptions may occur whenever you use the assignment operator because new storage is often allocated to hold the resulting `CSimpleStringT` object.  
   
-## Example  
+### Example  
  The following example demonstrates the use of **CSimpleStringT::operator =**.  
   
 ```cpp  
@@ -775,7 +747,7 @@ operator PCXSTR() const throw();
 ### Remarks  
  No characters are copied; only a pointer is returned. Be careful with this operator. If you change a `CString` object after you have obtained the character pointer, you may cause a reallocation of memory that invalidates the pointer.  
   
-## Example  
+### Example  
  The following example demonstrates the use of **CSimpleStringT::operator PCXSTR**.  
   
 ```cpp  
@@ -833,7 +805,7 @@ void Preallocate( int nLength);
   
  `CSimpleStringT` generates a `STATUS_NO_MEMORY` exception if it is unable to allocate space for the character buffer. By default, memory allocation is performed by WIN32 API functions `HeapAlloc` or `HeapReAlloc`.  
   
-## Example  
+### Example  
  The following example demonstrates the use of `CSimpleStringT::Preallocate`.  
   
 ```cpp  
@@ -867,7 +839,7 @@ void ReleaseBuffer(int nNewLength = -1);
 ### Remarks  
  Call this method to reallocate or free up the buffer of the string object. If you know that the string in the buffer is null terminated, you can omit the `nNewLength` argument. If your string is not null terminated, use `nNewLength` to specify its length. The address returned by [GetBuffer](#getbuffer) is invalid after the call to `ReleaseBuffer` or any other `CSimpleStringT` operation.  
   
-## Example  
+### Example  
  The following example demonstrates the use of `CSimpleStringT::ReleaseBuffer`.  
   
 ```cpp  
@@ -923,7 +895,7 @@ void SetAt(int iChar, XCHAR ch);
 ### Remarks  
  Call this method to overwrite the character located at `iChar`. This method will not enlarge the string if `iChar` exceeds the bounds of the existing string.  
   
-## Example  
+### Example  
  The following example demonstrates the use of `CSimpleStringT::SetAt`.  
   
 ```cpp  
@@ -948,7 +920,7 @@ void SetManager(IAtlStringMgr* pStringMgr);
 ### Remarks  
  Call this method to specify a new memory manager used by the `CSimpleStringT` object. For more information on memory managers and string objects, see [Memory Management and CStringT](../memory-management-with-cstringt.md).  
   
-## Example  
+### Example  
  The following example demonstrates the use of `CSimpleStringT::SetManager`.  
   
 ```cpp  
@@ -983,7 +955,7 @@ void SetString(PCXSTR pszSrc);
   
  The two-parameter version of `SetString` also checks whether `pszSrc` points to a location in the current buffer in `CSimpleStringT`. In this special case, `SetString` uses a memory copy function that does not overwrite the string data as it copies the string data back to its buffer.  
   
-## Example  
+### Example  
  The following example demonstrates the use of `CSimpleStringT::SetString`.  
   
 ```cpp  
@@ -1012,7 +984,7 @@ ATL_NOINLINE static int StringLength(PCXSTR psz) throw();
 ### Remarks  
  Call this method to retrieve the number of characters in the string pointed to by `psz`.  
   
-## Example  
+### Example  
  The following example demonstrates the use of `CSimpleStringT::StringLength`.  
   
 ```cpp  
@@ -1037,7 +1009,7 @@ void Truncate(int nNewLength);
 > [!NOTE]
 >  This does not affect the allocated length of the buffer. To decrease or increase the current buffer, see [FreeExtra](#freeextra) and [Preallocate](#preallocate).  
   
-## Example  
+### Example  
  The following example demonstrates the use of `CSimpleStringT::Truncate`.  
   
 ```cpp  

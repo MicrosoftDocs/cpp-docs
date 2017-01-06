@@ -96,7 +96,7 @@ class CAtlFile : public CHandle
 CAtlFile() throw();
 CAtlFile(CAtlTransactionManager* pTM = NULL) throw();
 CAtlFile(CAtlFile& file) throw();
-explicit CAtlFile(HANDLE   hFile) throw();
+explicit CAtlFile(HANDLE hFile) throw();
 ```  
   
 ### Parameters  
