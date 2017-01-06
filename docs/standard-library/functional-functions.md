@@ -25,6 +25,7 @@ f1_keywords:
   - "functional/std::bit_xor"
   - "std::cref"
   - "functional/std::cref"
+  - "type_traits/std::cref"
   - "std::mem_fn"
   - "functional/std::mem_fn"
   - "std::mem_fun"
@@ -39,8 +40,10 @@ f1_keywords:
   - "functional/std::ptr_fun"
   - "std::ref"
   - "functional/std::ref"
+  - "type_traits/std::ref"
   - "std::swap"
   - "functional/std::swap"
+  - "type_traits/std::swap"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

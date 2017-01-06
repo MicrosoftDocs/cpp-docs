@@ -15,7 +15,7 @@ f1_keywords:
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "rank class [TR1]"
+  - "rank class"
   - "rank"
 ms.assetid: bc9f1b8f-800f-46ca-b6f4-d8579ed5406a
 caps.latest.revision: 19

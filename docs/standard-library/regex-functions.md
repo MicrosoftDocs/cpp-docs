@@ -243,7 +243,7 @@ basic_string<Elem> regex_replace(
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_replace.cpp   
+// std__regex__regex_replace.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -378,7 +378,7 @@ bool regex_search(
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_search.cpp   
+// std__regex__regex_search.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -460,7 +460,7 @@ void swap(
 ### Example  
   
 ```cpp  
-// std_tr1__regex__swap.cpp   
+// std__regex__swap.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
