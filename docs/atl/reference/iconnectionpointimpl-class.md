@@ -43,8 +43,8 @@ This class implements a connection point.
 ## Syntax  
   
 ```
-template<class T,
-    const IID* piid, class CDV = CComDynamicUnkArray>  class ATL_NO_VTABLE IConnectionPointImpl :  public _ICPLocator<piid>
+template<class T, const IID* piid, class CDV = CComDynamicUnkArray>  
+class ATL_NO_VTABLE IConnectionPointImpl : public _ICPLocator<piid>
 ```  
   
 #### Parameters  

@@ -49,7 +49,7 @@ class task_canceled : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[task_canceled::task_canceled Constructor](#ctor)|Overloaded. Constructs a `task_canceled` object.|  
+|[task_canceled Constructor](#ctor)|Overloaded. Constructs a `task_canceled` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  
@@ -61,7 +61,8 @@ class task_canceled : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="ctor"></a>  task_canceled::task_canceled Constructor  
+##  <a name="ctor"></a> task_canceled 
+
  Constructs a `task_canceled` object.  
   
 ```

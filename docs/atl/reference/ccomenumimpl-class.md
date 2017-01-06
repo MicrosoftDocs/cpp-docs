@@ -43,7 +43,8 @@ This class provides the implementation for a COM enumerator interface where the 
   
 ```
 template <class Base,
-    const IID* piid, class T, class Copy>  class ATL_NO_VTABLE CComEnumImpl :   public Base
+    const IID* piid, class T, class Copy>  
+class ATL_NO_VTABLE CComEnumImpl : public Base
 ```  
   
 #### Parameters  
@@ -233,9 +234,7 @@ DWORD m_dwFlags;
  This method provides the implementation of the [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx) method.  
   
 ```
-STDMETHOD(Next)(ULONG celt,
-    T* rgelt,
-    ULONG* pceltFetched);
+STDMETHOD(Next)(ULONG celt, T* rgelt, ULONG* pceltFetched);
 ```  
   
 ### Parameters  

@@ -50,7 +50,9 @@ This class implements **IUnknown** and provides a default implementation of the 
 ## Syntax  
   
 ```
-template<class T>  class ATL_NO_VTABLE ISpecifyPropertyPagesImpl :  public ISpecifyPropertyPages
+template<class T>  
+class ATL_NO_VTABLE ISpecifyPropertyPagesImpl 
+   : public ISpecifyPropertyPages
 ```  
   
 #### Parameters  

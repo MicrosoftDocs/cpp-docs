@@ -42,7 +42,8 @@ This class provides methods used by a collection class.
 ## Syntax  
   
 ```
-template <class T, class CollType, class ItemType, class CopyItem, class EnumType>  class ICollectionOnSTLImpl :  public T```  
+template <class T, class CollType, class ItemType, class CopyItem, class EnumType>  
+class ICollectionOnSTLImpl : public T```  
   
 #### Parameters  
  `T`  
@@ -120,8 +121,7 @@ STDMETHOD(getcount)(long* pcount);
  This method returns the specified item from the collection.  
   
 ```
-STDMETHOD(get_Item)(long Index,
-    ItemType* pvar);
+STDMETHOD(get_Item)(long Index, ItemType* pvar);
 ```  
   
 ### Parameters  

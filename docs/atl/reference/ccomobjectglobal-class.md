@@ -45,8 +45,7 @@ This class manages a reference count on the module containing your `Base` object
   
 ```
 template<class Base>
-class CComObjectGlobal
- :  public Base
+class CComObjectGlobal : public Base
 ```  
   
 #### Parameters  
@@ -133,9 +132,7 @@ HRESULT m_hResFinalConstruct;
  Retrieves a pointer to the requested interface pointer.  
   
 ```
-STDMETHOD(QueryInterface)(REFIID iid,
-    void** ppvObject)
- ;
+STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 ```  
   
 ### Parameters  

@@ -48,11 +48,12 @@ Provides a default implementation for the `IDispatch` part of a dual interface.
   
 ```
 template<class T,
-    const IID* piid= &__uuidof(T),
-    const GUID* plibid = &CAtlModule::m_libid,
-    WORD wMajor = 1,
-    WORD wMinor = 0, class tihclass = CComTypeInfoHolder>
-class ATL_NO_VTABLE IDispatchImpl :  public T```  
+        const IID* piid= &__uuidof(T),
+        const GUID* plibid = &CAtlModule::m_libid,
+        WORD wMajor = 1,
+        WORD wMinor = 0, class tihclass = CComTypeInfoHolder>
+class ATL_NO_VTABLE IDispatchImpl : public T
+```  
   
 #### Parameters  
  [in] `T`  
@@ -113,7 +114,8 @@ class ATL_NO_VTABLE IDispatchImpl :  public T```
  Maps a set of names to a corresponding set of dispatch identifiers.  
   
 ```
-STDMETHOD(GetIDsOfNames)(REFIID riid,
+STDMETHOD(GetIDsOfNames)(
+    REFIID riid,
     LPOLESTR* rgszNames,
     UINT cNames,
     LCID lcid,
@@ -127,7 +129,8 @@ STDMETHOD(GetIDsOfNames)(REFIID riid,
  Retrieves the type information for the dual interface.  
   
 ```
-STDMETHOD(GetTypeInfo)(UINT itinfo,
+STDMETHOD(GetTypeInfo)(
+    UINT itinfo,
     LCID lcid,
     ITypeInfo** pptinfo);
 ```  
@@ -156,7 +159,8 @@ IDispatchImpl();
  Provides access to the methods and properties exposed by the dual interface.  
   
 ```
-STDMETHOD(Invoke)(DISPID dispidMember,
+STDMETHOD(Invoke)(
+    DISPID dispidMember,
     REFIID riid,
     LCID lcid,
     WORD wFlags,

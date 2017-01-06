@@ -45,7 +45,7 @@ This class implements a thread-pooled, apartment-model COM server.
 ## Syntax  
   
 ```
-class CAtlAutoThreadModule :  public CAtlAutoThreadModuleT<CAtlAutoThreadModule>
+class CAtlAutoThreadModule : public CAtlAutoThreadModuleT<CAtlAutoThreadModule>
 ```  
   
 ## Remarks  

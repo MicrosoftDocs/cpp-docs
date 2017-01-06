@@ -44,7 +44,8 @@ This class provides default methods and functions for a collection class.
 ## Syntax  
   
 ```
-template<typename T>  class CDefaultElementTraits : public CElementTraitsBase<T>,
+template<typename T>  
+class CDefaultElementTraits : public CElementTraitsBase<T>,
     public CDefaultHashTraits<T>,
     public CDefaultCompareTraits<T>
 ```  

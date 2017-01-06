@@ -44,7 +44,8 @@ This class provides default copy and move methods for a collection class.
 ## Syntax  
   
 ```
-template<typename T>  class CElementTraitsBase
+template<typename T>  
+class CElementTraitsBase
 ```  
   
 #### Parameters  

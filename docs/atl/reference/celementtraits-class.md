@@ -44,7 +44,8 @@ This class is used by collection classes to provide methods and functions for mo
 ## Syntax  
   
 ```
-template<typename T>  class CElementTraits : public CDefaultElementTraits<T>
+template<typename T>  
+class CElementTraits : public CDefaultElementTraits<T>
 ```  
   
 #### Parameters  

@@ -40,8 +40,8 @@ This class is a helper for the [CSimpleArray](../../atl/reference/csimplearray-c
 ## Syntax  
   
 ```
-template <class T>
-    class CSimpleArrayEqualHelper
+template <class T>  
+class CSimpleArrayEqualHelper
 ```  
   
 #### Parameters  

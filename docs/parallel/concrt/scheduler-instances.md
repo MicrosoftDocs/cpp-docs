@@ -114,7 +114,6 @@ This document describes the role of scheduler instances in the Concurrency Runti
   
 |Method|Description|  
 |------------|-----------------|  
-
 |[Create](reference/currentscheduler-class.md#create)|Creates a `Scheduler` object that uses the specified policy and associates it with the current context.|  
 |[Get](reference/currentscheduler-class.md#get)|Retrieves a pointer to the `Scheduler` object that is associated with the current context. This method does not increment the reference count of the `Scheduler` object.|  
 |[Detach](reference/currentscheduler-class.md#detach)|Detaches the current scheduler from the current context and sets the previous one as the current scheduler.|  
@@ -127,7 +126,6 @@ This document describes the role of scheduler instances in the Concurrency Runti
   
 |Method|Description|  
 |------------|-----------------|  
-
 |[Create](reference/scheduler-class.md#create)|Creates a `Scheduler` object that uses the specified policy.|  
 |[Attach](reference/scheduler-class.md#attach)|Associates the `Scheduler` object together with the current context.|  
 |[Reference](reference/scheduler-class.md#reference)|Increments the reference counter of the `Scheduler` object.|  

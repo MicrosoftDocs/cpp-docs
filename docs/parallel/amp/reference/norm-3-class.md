@@ -121,7 +121,7 @@ class norm_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[norm_3::norm_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[norm_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -181,7 +181,7 @@ class norm_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[norm_3::size Constant](#size)||  
+|[size Constant](#size)||  
   
 ### Public Data Members  
   

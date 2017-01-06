@@ -101,25 +101,25 @@ template <typename K,
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_unordered_map::concurrent_unordered_map Constructor](#ctor)|Overloaded. Constructs a concurrent unordered map.|  
+|[concurrent_unordered_map Constructor](#ctor)|Overloaded. Constructs a concurrent unordered map.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_unordered_map::at Method](#at)|Overloaded. Finds an element in a `concurrent_unordered_map` with a specified key value.. This method is concurrency-safe.|  
-|[concurrent_unordered_map::hash_function Method](#hash_function)|Gets the stored hash function object.|  
-|[concurrent_unordered_map::insert Method](#insert)|Overloaded. Adds elements to the `concurrent_unordered_map` object.|  
-|[concurrent_unordered_map::key_eq Method](#key_eq)|Gets the stored equality comparison function object.|  
-|[concurrent_unordered_map::swap Method](#swap)|Swaps the contents of two `concurrent_unordered_map` objects. This method is not concurrency-safe.|  
-|[concurrent_unordered_map::unsafe_erase Method](#unsafe_erase)|Overloaded. Removes elements from the `concurrent_unordered_map` at specified positions. This method is not concurrency-safe.|  
+|[at Method](#at)|Overloaded. Finds an element in a `concurrent_unordered_map` with a specified key value.. This method is concurrency-safe.|  
+|[hash_function Method](#hash_function)|Gets the stored hash function object.|  
+|[insert Method](#insert)|Overloaded. Adds elements to the `concurrent_unordered_map` object.|  
+|[key_eq Method](#key_eq)|Gets the stored equality comparison function object.|  
+|[swap Method](#swap)|Swaps the contents of two `concurrent_unordered_map` objects. This method is not concurrency-safe.|  
+|[unsafe_erase Method](#unsafe_erase)|Overloaded. Removes elements from the `concurrent_unordered_map` at specified positions. This method is not concurrency-safe.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_unordered_map::operator[] Operator](#operator_at)|Overloaded. Finds or inserts an element with the specified key. This method is concurrency-safe.|  
-|[concurrent_unordered_map::operator= Operator](#operator_eq)|Overloaded. Assigns the contents of another `concurrent_unordered_map` object to this one. This method is not concurrency-safe.|  
+|[operator[] Operator](#operator_at)|Overloaded. Finds or inserts an element with the specified key. This method is concurrency-safe.|  
+|[operator= Operator](#operator_eq)|Overloaded. Assigns the contents of another `concurrent_unordered_map` object to this one. This method is not concurrency-safe.|  
   
 ## Remarks  
  For detailed information on the `concurrent_unordered_map` class, see [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md).  
@@ -136,7 +136,8 @@ template <typename K,
   
  **Namespace:** concurrency  
   
-##  <a name="at"></a>  concurrent_unordered_map::at Method  
+##  <a name="at"></a> at 
+
  Finds an element in a `concurrent_unordered_map` with a specified key value.. This method is concurrency-safe.  
   
 ```
@@ -155,7 +156,8 @@ const mapped_type& at(const key_type& KVal) const;
 ### Remarks  
  If the argument key value is not found, the function throws an object of class `out_of_range`.  
   
-##  <a name="begin"></a>  concurrent_unordered_map::begin Method  
+##  <a name="begin"></a> begin 
+
  Returns an iterator pointing to the first element in the concurrent container. This method is concurrency safe.  
   
 ```
@@ -167,7 +169,8 @@ const_iterator begin() const;
 ### Return Value  
  An iterator to the first element in the concurrent container.  
   
-##  <a name="cbegin"></a>  concurrent_unordered_map::cbegin Method  
+##  <a name="cbegin"></a> cbegin 
+
  Returns a const iterator pointing to the first element in the concurrent container. This method is concurrency safe.  
   
 ```
@@ -177,7 +180,8 @@ const_iterator cbegin() const;
 ### Return Value  
  A const iterator to the first element in the concurrent container.  
   
-##  <a name="cend"></a>  concurrent_unordered_map::cend Method  
+##  <a name="cend"></a> cend 
+
  Returns a const iterator pointing to the location succeeding the last element in the concurrent container. This method is concurrency safe.  
   
 ```
@@ -187,14 +191,16 @@ const_iterator cend() const;
 ### Return Value  
  A const iterator to the location succeeding the last element in the concurrent container.  
   
-##  <a name="clear"></a>  concurrent_unordered_map::clear Method  
+##  <a name="clear"></a> clear 
+
  Erases all the elements in the concurrent container. This function is not concurrency safe.  
   
 ```
 void clear();
 ```  
   
-##  <a name="ctor"></a>  concurrent_unordered_map::concurrent_unordered_map Constructor  
+##  <a name="ctor"></a> concurrent_unordered_map 
+
  Constructs a concurrent unordered map.  
   
 ```
@@ -264,7 +270,8 @@ concurrent_unordered_map(
   
  The last constructor specifies a move of the concurrent unordered map `_Umap`.  
   
-##  <a name="count"></a>  concurrent_unordered_map::count Method  
+##  <a name="count"></a> count 
+
  Counts the number of elements matching a specified key. This function is concurrency safe.  
   
 ```
@@ -278,7 +285,8 @@ size_type count(const key_type& KVal) const;
 ### Return Value  
  The number of times number of times the key appears in the container.  
   
-##  <a name="empty"></a>  concurrent_unordered_map::empty Method  
+##  <a name="empty"></a> empty 
+
  Tests whether no elements are present. This method is concurrency safe.  
   
 ```
@@ -291,7 +299,8 @@ bool empty() const;
 ### Remarks  
  In the presence of concurrent inserts, whether or not the concurrent container is empty may change immediately after calling this function, before the return value is even read.  
   
-##  <a name="end"></a>  concurrent_unordered_map::end Method  
+##  <a name="end"></a> end 
+
  Returns an iterator pointing to the location succeeding the last element in the concurrent container. This method is concurrency safe.  
   
 ```
@@ -303,7 +312,8 @@ const_iterator end() const;
 ### Return Value  
  An iterator to the location succeeding the last element in the concurrent container.  
   
-##  <a name="equal_range"></a>  concurrent_unordered_map::equal_range Method  
+##  <a name="equal_range"></a> equal_range 
+
  Finds a range that matches a specified key. This function is concurrency safe.  
   
 ```
@@ -326,7 +336,8 @@ std::pair<const_iterator,
 ### Remarks  
  It is possible for concurrent inserts to cause additional keys to be inserted after the begin iterator and before the end iterator.  
   
-##  <a name="find"></a>  concurrent_unordered_map::find Method  
+##  <a name="find"></a> find 
+
  Finds an element that matches a specified key. This function is concurrency safe.  
   
 ```
@@ -342,7 +353,8 @@ const_iterator find(const key_type& KVal) const;
 ### Return Value  
  An iterator pointing to the location of the the first element that matched the key provided, or the iterator `end()` if no such element exists.  
   
-##  <a name="get_allocator"></a>  concurrent_unordered_map::get_allocator Method  
+##  <a name="get_allocator"></a> get_allocator 
+
  Returns the stored allocator object for this concurrent container. This method is concurrency safe.  
   
 ```
@@ -352,7 +364,8 @@ allocator_type get_allocator() const;
 ### Return Value  
  The stored allocator object for this concurrent container.  
   
-##  <a name="hash_function"></a>  concurrent_unordered_map::hash_function Method  
+##  <a name="hash_function"></a> hash_function 
+
  Gets the stored hash function object.  
   
 ```
@@ -362,7 +375,8 @@ hasher hash_function() const;
 ### Return Value  
  The stored hash function object.  
   
-##  <a name="insert"></a>  concurrent_unordered_map::insert Method  
+##  <a name="insert"></a> insert 
+
  Adds elements to the `concurrent_unordered_map` object.  
   
 ```
@@ -422,7 +436,8 @@ typename std::enable_if<!std::is_same<const_iterator,
   
  The last two member functions behave the same as the first two, except that `value` is used to construct the inserted value.  
   
-##  <a name="key_eq"></a>  concurrent_unordered_map::key_eq Method  
+##  <a name="key_eq"></a> key_eq 
+
  Gets the stored equality comparison function object.  
   
 ```
@@ -432,7 +447,8 @@ key_equal key_eq() const;
 ### Return Value  
  The stored equality comparison function object.  
   
-##  <a name="load_factor"></a>  concurrent_unordered_map::load_factor Method  
+##  <a name="load_factor"></a> load_factor 
+
  Computes and returns the current load factor of the container. The load factor is the number of elements in the container divided by the number of buckets.  
   
 ```
@@ -442,7 +458,8 @@ float load_factor() const;
 ### Return Value  
  The load factor for the container.  
   
-##  <a name="max_load_factor"></a>  concurrent_unordered_map::max_load_factor Method  
+##  <a name="max_load_factor"></a> max_load_factor 
+
  Gets or sets the maximum load factor of the container. The maximum load factor is the largest number of elements than can be in any bucket before the container grows its internal table.  
   
 ```
@@ -457,7 +474,8 @@ void max_load_factor(float _Newmax);
 ### Return Value  
  The first member function returns the stored maximum load factor. The second member function does not return a value but throws an [out_of_range](../../../standard-library/out-of-range-class.md) exception if the supplied load factor is invalid..  
   
-##  <a name="max_size"></a>  concurrent_unordered_map::max_size Method  
+##  <a name="max_size"></a> max_size 
+
  Returns the maximum size of the concurrent container, determined by the allocator. This method is concurrency safe.  
   
 ```
@@ -470,7 +488,8 @@ size_type max_size() const;
 ### Remarks  
  This upper bound value may actually be higher than what the container can actually hold.  
   
-##  <a name="operator_at"></a>  concurrent_unordered_map::operator[] Operator  
+##  <a name="operator_at"></a> operator[] 
+
  Finds or inserts an element with the specified key. This method is concurrency-safe.  
   
 ```
@@ -495,7 +514,8 @@ mapped_type& operator[](key_type&& kval);
   
  When using `operator[]` to insert elements, the returned reference does not indicate whether an insertion is changing a pre-existing element or creating a new one. The member functions `find` and [insert](#insert) can be used to determine whether an element with a specified key is already present before an insertion.  
   
-##  <a name="operator_eq"></a>  concurrent_unordered_map::operator= Operator  
+##  <a name="operator_eq"></a> operator= 
+
  Assigns the contents of another `concurrent_unordered_map` object to this one. This method is not concurrency-safe.  
   
 ```
@@ -514,7 +534,8 @@ concurrent_unordered_map& operator= (concurrent_unordered_map&& _Umap);
 ### Remarks  
  After erasing any existing elements a concurrent vector, `operator=` either copies or moves the contents of `_Umap` into the concurrent vector.  
   
-##  <a name="rehash"></a>  concurrent_unordered_map::rehash Method  
+##  <a name="rehash"></a> rehash 
+
  Rebuilds the hash table.  
   
 ```
@@ -530,7 +551,8 @@ void rehash(size_type _Buckets);
   
  It throws an [out_of_range](../../../standard-library/out-of-range-class.md) exception if the number of buckets is invalid (either 0 or greater than the maximum number of buckets).  
   
-##  <a name="size"></a>  concurrent_unordered_map::size Method  
+##  <a name="size"></a> size 
+
  Returns the number of elements in this concurrent container. This method is concurrency safe.  
   
 ```
@@ -543,7 +565,8 @@ size_type size() const;
 ### Remarks  
  In the presence of concurrent inserts, the number of elements in the concurrent container may change immediately after calling this function, before the return value is even read.  
   
-##  <a name="swap"></a>  concurrent_unordered_map::swap Method  
+##  <a name="swap"></a> swap 
+
  Swaps the contents of two `concurrent_unordered_map` objects. This method is not concurrency-safe.  
   
 ```
@@ -554,7 +577,8 @@ void swap(concurrent_unordered_map& _Umap);
  `_Umap`  
  The `concurrent_unordered_map` object to swap with.  
   
-##  <a name="unsafe_begin"></a>  concurrent_unordered_map::unsafe_begin Method  
+##  <a name="unsafe_begin"></a> unsafe_begin 
+
  Returns an iterator to the first element in this container for a specific bucket.  
   
 ```
@@ -570,7 +594,8 @@ const_local_iterator unsafe_begin(size_type _Bucket) const;
 ### Return Value  
  An iterator pointing to the beginning of the bucket.  
   
-##  <a name="unsafe_bucket"></a>  concurrent_unordered_map::unsafe_bucket Method  
+##  <a name="unsafe_bucket"></a> unsafe_bucket 
+
  Returns the bucket index that a specific key maps to in this container.  
   
 ```
@@ -584,7 +609,8 @@ size_type unsafe_bucket(const key_type& KVal) const;
 ### Return Value  
  The bucket index for the key in this container.  
   
-##  <a name="unsafe_bucket_count"></a>  concurrent_unordered_map::unsafe_bucket_count Method  
+##  <a name="unsafe_bucket_count"></a> unsafe_bucket_count 
+
  Returns the current number of buckets in this container.  
   
 ```
@@ -594,7 +620,8 @@ size_type unsafe_bucket_count() const;
 ### Return Value  
  The current number of buckets in this container.  
   
-##  <a name="unsafe_bucket_size"></a>  concurrent_unordered_map::unsafe_bucket_size Method  
+##  <a name="unsafe_bucket_size"></a> unsafe_bucket_size 
+
  Returns the number of items in a specific bucket of this container.  
   
 ```
@@ -608,7 +635,8 @@ size_type unsafe_bucket_size(size_type _Bucket);
 ### Return Value  
  The current number of buckets in this container.  
   
-##  <a name="unsafe_cbegin"></a>  concurrent_unordered_map::unsafe_cbegin Method  
+##  <a name="unsafe_cbegin"></a> unsafe_cbegin 
+
  Returns an iterator to the first element in this container for a specific bucket.  
   
 ```
@@ -622,7 +650,8 @@ const_local_iterator unsafe_cbegin(size_type _Bucket) const;
 ### Return Value  
  An iterator pointing to the beginning of the bucket.  
   
-##  <a name="unsafe_cend"></a>  concurrent_unordered_map::unsafe_cend Method  
+##  <a name="unsafe_cend"></a> unsafe_cend 
+
  Returns an iterator to the location succeeding the last element in a specific bucket.  
   
 ```
@@ -636,7 +665,8 @@ const_local_iterator unsafe_cend(size_type _Bucket) const;
 ### Return Value  
  An iterator pointing to the beginning of the bucket.  
   
-##  <a name="unsafe_end"></a>  concurrent_unordered_map::unsafe_end Method  
+##  <a name="unsafe_end"></a> unsafe_end 
+
  Returns an iterator to the last element in this container for a specific bucket.  
   
 ```
@@ -652,7 +682,8 @@ const_local_iterator unsafe_end(size_type _Bucket) const;
 ### Return Value  
  An iterator pointing to the end of the bucket.  
   
-##  <a name="unsafe_erase"></a>  concurrent_unordered_map::unsafe_erase Method  
+##  <a name="unsafe_erase"></a> unsafe_erase 
+
  Removes elements from the `concurrent_unordered_map` at specified positions. This method is not concurrency-safe.  
   
 ```
@@ -688,7 +719,8 @@ size_type unsafe_erase(
   
  The third member function removes the elements in the range delimited by `concurrent_unordered_map::equal_range`(KVal).  
   
-##  <a name="unsafe_max_bucket_count"></a>  concurrent_unordered_map::unsafe_max_bucket_count Method  
+##  <a name="unsafe_max_bucket_count"></a> unsafe_max_bucket_count 
+
  Returns the maximum number of buckets in this container.  
   
 ```

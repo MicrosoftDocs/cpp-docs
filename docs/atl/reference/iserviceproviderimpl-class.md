@@ -45,7 +45,8 @@ This class provides a default implementation of the `IServiceProvider` interface
 ## Syntax  
   
 ```
-template <class T>   class ATL_NO_VTABLE IServiceProviderImpl :  public IServiceProvider
+template <class T>  
+class ATL_NO_VTABLE IServiceProviderImpl : public IServiceProvider
 ```  
   
 #### Parameters  
@@ -81,7 +82,8 @@ template <class T>   class ATL_NO_VTABLE IServiceProviderImpl :  public IService
  Creates or accesses the specified service and returns an interface pointer to the specified interface for the service.  
   
 ```
-STDMETHOD(QueryService)(REFGUID guidService,
+STDMETHOD(QueryService)(
+    REFGUID guidService,
     REFIID riid,
     void** ppvObject);
 ```  

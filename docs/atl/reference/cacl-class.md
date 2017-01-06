@@ -289,7 +289,8 @@ bool IsNull() const throw();
 ##  <a name="operator_const_acl__star"></a>  CAcl::operator const ACL *  
  Casts a `CAcl` object to an **ACL** (access-control list) structure.  
   
-```operator const ACL *() const throw(...);
+```
+operator const ACL *() const throw(...);
 ```  
   
 ### Remarks  

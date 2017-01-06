@@ -121,7 +121,7 @@ class int_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[int_3::int_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[int_3 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -188,7 +188,7 @@ class int_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|[int_3::size Constant](#size)||  
+|[size Constant](#size)||  
   
 ### Public Data Members  
   
@@ -233,7 +233,8 @@ class int_3;
   
  **Namespace:** Concurrency::graphics  
 
-## <a name="ctor"></a> int_3::int_3 Constructor
+## <a name="ctor"></a> int_3 
+
 Default constructor, initializes all elements with 0.  
   
 ## Syntax  
@@ -284,7 +285,8 @@ explicit inline int_3(
  `_Other`  
  The object used to initialize.  
   
-## <a name="size"></a> int_3::size Constant  
+## <a name="size"></a> size 
+
 ## Syntax  
   
 ```  

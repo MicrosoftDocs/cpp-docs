@@ -44,8 +44,7 @@ Supports arrays that are like C arrays, but can dynamically reduce and grow as n
   
 ```  
 template <class TYPE, class ARG_TYPE = const TYPE&>  
-class CArray :  
-    public CObject  
+class CArray : public CObject  
 ```  
   
 #### Parameters  
@@ -199,12 +198,8 @@ void Copy(const CArray& src);
  Returns a temporary reference to the specified element within the array.  
   
 ```  
-TYPE& ElementAt(INT_PTR nIndex);
-
- 
-const TYPE& ElementAt(INT_PTR nIndex) const;
-
- 
+TYPE& ElementAt(INT_PTR nIndex); 
+const TYPE& ElementAt(INT_PTR nIndex) const; 
 ```  
   
 ### Parameters  
@@ -237,12 +232,8 @@ void FreeExtra();
  Returns the array element at the specified index.  
   
 ```  
-TYPE& GetAt(INT_PTR nIndex);
-
- 
-const TYPE& GetAt(INT_PTR nIndex) const;
-
- 
+TYPE& GetAt(INT_PTR nIndex); 
+const TYPE& GetAt(INT_PTR nIndex) const;  
 ```  
   
 ### Parameters  
@@ -265,9 +256,7 @@ const TYPE& GetAt(INT_PTR nIndex) const;
  Returns the number of array elements.  
   
 ```  
-INT_PTR GetCount() const;
-
- 
+INT_PTR GetCount() const;  
 ```  
   
 ### Return Value  
@@ -283,10 +272,7 @@ INT_PTR GetCount() const;
  Use this member function to gain direct access to the elements in an array.  
   
 ```  
-const TYPE* GetData() const;
-
- 
- 
+const TYPE* GetData() const; 
 TYPE* GetData();
 ```  
   
@@ -309,9 +295,7 @@ TYPE* GetData();
  Returns the size of the array.  
   
 ```  
-INT_PTR GetSize() const;
-
- 
+INT_PTR GetSize() const;  
 ```  
   
 ### Remarks  
@@ -324,9 +308,7 @@ INT_PTR GetSize() const;
  Returns the current upper bound of this array.  
   
 ```  
-INT_PTR GetUpperBound() const;
-
- 
+INT_PTR GetUpperBound() const;  
 ```  
   
 ### Remarks  
@@ -345,7 +327,6 @@ void InsertAt(
     INT_PTR nIndex,
     ARG_TYPE newElement,  
     INT_PTR nCount = 1);
-
  
 void InsertAt(
     INT_PTR nStartIndex,  
@@ -385,9 +366,7 @@ void InsertAt(
  Determines whether the array is empty.  
   
 ```  
-BOOL IsEmpty() const;
-
- 
+BOOL IsEmpty() const;  
 ```  
   
 ### Return Value  
@@ -397,12 +376,8 @@ BOOL IsEmpty() const;
  These subscript operators are a convenient substitute for the [SetAt](#setat) and [GetAt](#getat) functions.  
   
 ```  
-TYPE& operator[](int_ptr nindex);
-
- 
-const TYPE& operator[](int_ptr nindex) const;
-
- 
+TYPE& operator[](int_ptr nindex); 
+const TYPE& operator[](int_ptr nindex) const;  
 ```  
   
 ### Parameters  

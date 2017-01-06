@@ -45,7 +45,8 @@ This class implements **IUnknown** and provides a default implementation of the 
 ## Syntax  
   
 ```
-template<class T>  class IPropertyPageImpl
+template<class T>  
+class IPropertyPageImpl
 ```  
   
 #### Parameters  
@@ -108,7 +109,8 @@ template<class T>  class IPropertyPageImpl
  Creates the dialog box window for the property page.  
   
 ```
-HRESULT Activate(HWND hWndParent,
+HRESULT Activate(  
+    HWND hWndParent,
     LPCRECT pRect,
     BOOL bModal);
 ```  
@@ -274,7 +276,8 @@ void SetDirty(BOOL bDirty);
  Provides an array of **IUnknown** pointers for the objects associated with the property page.  
   
 ```
-HRESULT SetObjects(ULONG nObjects,
+HRESULT SetObjects(  
+    ULONG nObjects,
     IUnknown** ppUnk);
 ```  
   

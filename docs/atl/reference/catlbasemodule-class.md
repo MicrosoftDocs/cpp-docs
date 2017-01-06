@@ -42,8 +42,7 @@ This class is instantiated in every ATL project.
 ## Syntax  
   
 ```
-class CAtlBaseModule :
-    public _ATL_BASE_MODULE
+class CAtlBaseModule : public _ATL_BASE_MODULE
 ```  
   
 ## Members  

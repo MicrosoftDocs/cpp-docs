@@ -116,8 +116,7 @@ HRESULT     AtlUnadvise(
 >  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
   
 ```
-HRESULT AtlAdviseSinkMap(
-    T* pT,  bool bAdvise);
+HRESULT AtlAdviseSinkMap(T* pT,  bool bAdvise);
 ```  
   
 ### Parameters  

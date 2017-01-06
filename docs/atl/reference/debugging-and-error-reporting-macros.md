@@ -152,10 +152,10 @@ ATLTRACENOTIMPL(funcname);
 ```
 ATLTRACE(exp);
 
-ATLTRACE(
-  DWORD category,
-  UINT  level,
-  LPCSTR lpszFormat, ...);
+ATLTRACE(  
+    DWORD category,
+    UINT  level,
+    LPCSTR lpszFormat, ...);
 ```  
   
 ### Parameters  

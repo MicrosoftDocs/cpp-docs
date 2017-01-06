@@ -8,8 +8,7 @@ void CMyListView::OnLvnBegindrag(NMHDR *pNMHDR, LRESULT *pResult)
    if (NULL != pDataSrc)
    {
       pDataSrc->Initialize(pNMLV, this);
-      pDataSrc->DelayRenderData(
-         (CLIPFORMAT)RegisterClipboardFormat(_T("TIGroupFiles")));
+      pDataSrc->DelayRenderData((CLIPFORMAT)RegisterClipboardFormat(_T("TIGroupFiles")));
       pDataSrc->DoDragDrop();
       pDataSrc->InternalRelease();
    }

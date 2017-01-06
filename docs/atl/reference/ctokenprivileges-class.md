@@ -260,7 +260,8 @@ const TOKEN_PRIVILEGES* GetPTOKEN_PRIVILEGES() const throw(...);
  Retrieves the attribute associated with a given privilege name.  
   
 ```
-bool LookupPrivilege(LPCTSTR pszPrivilege,
+bool LookupPrivilege(  
+    LPCTSTR pszPrivilege,
     DWORD* pdwAttributes = NULL) const throw(...);
 ```  
   
@@ -296,7 +297,8 @@ CTokenPrivileges& operator= (const TOKEN_PRIVILEGES& rPrivileges) throw(...);
 ##  <a name="operator_const_token_privileges__star"></a>  CTokenPrivileges::operator const TOKEN_PRIVILEGES *  
  Casts a value to a pointer to the **TOKEN_PRIVILEGES** structure.  
   
-```operator const TOKEN_PRIVILEGES *() const throw(...);
+```  
+operator const TOKEN_PRIVILEGES *() const throw(...);
 ```  
   
 ### Remarks  

@@ -45,7 +45,8 @@ This class implements [IUnknown](http://msdn.microsoft.com/library/windows/deskt
 ## Syntax  
   
 ```
-template<class Base>  class CComContainedObject :  public Base
+template<class Base>  
+class CComContainedObject : public Base
 ```  
   
 #### Parameters  
@@ -132,11 +133,10 @@ IUnknown* GetControllingUnknown();
  Retrieves a pointer to the interface requested on the owner object.  
   
 ```
-STDMETHOD(QueryInterface)(REFIID iid,
-    void** ppvObject);
+STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 
-    template <class Q>  HRESULT STDMETHODCALLTYPE QueryInterface(
-    Q** pp);
+template <class Q>
+HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 ```  
   
 ### Parameters  

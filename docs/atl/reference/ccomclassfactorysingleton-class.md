@@ -47,7 +47,8 @@ This class derives from [CComClassFactory](../../atl/reference/ccomclassfactory-
 ## Syntax  
   
 ```
-template<class T>  class CComClassFactorySingleton :  public CComClassFactory
+template<class T>  
+class CComClassFactorySingleton : public CComClassFactory
 ```  
   
 #### Parameters  
@@ -93,9 +94,7 @@ template<class T>  class CComClassFactorySingleton :  public CComClassFactory
  Calls `QueryInterface` through [m_spObj](#m_spobj) to retrieve an interface pointer.  
   
 ```
-STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter,
-    REFIID riid,
-    void** ppvObj);
+STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
 ```  
   
 ### Parameters  

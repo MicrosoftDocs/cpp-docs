@@ -119,7 +119,8 @@ class CComModule : public _ATL_MODULE
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
   
 ```
-HRESULT GetClassObject(REFCLSID rclsid,
+HRESULT GetClassObject(  
+    REFCLSID rclsid,
     REFIID riid,
     LPVOID* ppv) throw();
 ```  
@@ -291,7 +292,8 @@ _ATL_OBJMAP_ENTRY* m_pObjMap;
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
   
 ```
-ATL_DEPRECATED HRESULT RegisterClassHelper(const CLSID& clsid,
+ATL_DEPRECATED HRESULT RegisterClassHelper(  
+    const CLSID& clsid,
     LPCTSTR lpszProgID,
     LPCTSTR lpszVerIndProgID,
     UINT nDescID,
@@ -346,7 +348,9 @@ HRESULT RegisterClassObjects(DWORD dwClsContext,  DWORD dwFlags) throw();
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
   
 ```
-HRESULT RegisterServer(BOOL bRegTypeLib = FALSE,  const CLSID* pCLSID = NULL) throw();
+HRESULT RegisterServer(
+    BOOL bRegTypeLib = FALSE,  
+    const CLSID* pCLSID = NULL) throw();
 ```  
   
 ### Parameters  
@@ -415,7 +419,8 @@ void Term() throw();
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
   
 ```
-ATL_DEPRECATED HRESULT UnregisterClassHelper(const CLSID& clsid,
+ATL_DEPRECATED HRESULT UnregisterClassHelper(  
+    const CLSID& clsid,
     LPCTSTR lpszProgID,
     LPCTSTR lpszVerIndProgID);
 ```  
@@ -467,14 +472,16 @@ inline HRESULT UnregisterServer(BOOL bUnRegTypeLib,  const CLSID* pCLSID = NULL)
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
   
 ```
-ATL_DEPRECATED HRESULT UpdateRegistryClass(const CLSID& clsid,
+ATL_DEPRECATED HRESULT UpdateRegistryClass(  
+    const CLSID& clsid,
     LPCTSTR lpszProgID,
     LPCTSTR lpszVerIndProgID,
     UINT nDescID,
     DWORD dwFlags,
     BOOL bRegister);
 
-    ATL_DEPRECATED HRESULT UpdateRegistryClass(const CLSID& clsid,
+    ATL_DEPRECATED HRESULT UpdateRegistryClass(  
+    const CLSID& clsid,
     LPCTSTR lpszProgID,
     LPCTSTR lpszVerIndProgID,
     LPCTSTR szDesc,
@@ -520,10 +527,13 @@ ATL_DEPRECATED HRESULT UpdateRegistryClass(const CLSID& clsid,
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
   
 ```
-virtual HRESULT UpdateRegistryFromResourceD(LPCTSTR lpszRes,
+virtual HRESULT UpdateRegistryFromResourceD(  
+    LPCTSTR lpszRes,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
-virtual HRESULT UpdateRegistryFromResourceD(UINT nResID,
+
+virtual HRESULT UpdateRegistryFromResourceD(  
+    UINT nResID,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw ();
 ```  
@@ -563,10 +573,13 @@ virtual HRESULT UpdateRegistryFromResourceD(UINT nResID,
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
   
 ```
-virtual HRESULT UpdateRegistryFromResourceS(LPCTSTR lpszRes,
+virtual HRESULT UpdateRegistryFromResourceS(  
+    LPCTSTR lpszRes,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
-virtual HRESULT UpdateRegistryFromResourceS(UINT nResID,
+
+virtual HRESULT UpdateRegistryFromResourceS(  
+    UINT nResID,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
 ```  

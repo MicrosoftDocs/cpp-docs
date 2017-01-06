@@ -44,7 +44,8 @@ This class provides a static function for calculating hash values.
 ## Syntax  
   
 ```
-template<typename T>  class CDefaultHashTraits
+template<typename T>  
+class CDefaultHashTraits
 ```  
   
 #### Parameters  

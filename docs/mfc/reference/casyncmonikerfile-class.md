@@ -152,9 +152,7 @@ virtual IUnknown* CreateBindStatusCallback(IUnknown* pUnkControlling);
  Called from the client of an asynchronous moniker to tell the asynchronous moniker how it wants to bind.  
   
 ```  
-virtual DWORD GetBindInfo() const;
-
- 
+virtual DWORD GetBindInfo() const;  
 ```  
   
 ### Return Value  
@@ -169,9 +167,7 @@ virtual DWORD GetBindInfo() const;
  Call this function to retrieve a pointer to the asynchronous transfer binding.  
   
 ```  
-IBinding* GetBinding() const;
-
- 
+IBinding* GetBinding() const; 
 ```  
   
 ### Return Value  
@@ -186,9 +182,7 @@ IBinding* GetBinding() const;
  Call this function to retrieve the format of the data in the stream.  
   
 ```  
-FORMATETC* GetFormatEtc() const;
-
- 
+FORMATETC* GetFormatEtc() const; 
 ```  
   
 ### Return Value  
@@ -213,9 +207,7 @@ virtual LONG GetPriority() const;
  An asynchronous moniker calls `OnDataAvailable` to provide data to the client as it becomes available, during asynchronous bind operations.  
   
 ```  
-virtual void OnDataAvailable(
-    DWORD dwSize,  
-    DWORD bscfFlag);
+virtual void OnDataAvailable(DWORD dwSize, DWORD bscfFlag);
 ```  
   
 ### Parameters  
@@ -315,8 +307,7 @@ virtual void OnStartBinding();
  Called by the moniker at the end of the bind operation.  
   
 ```  
-virtual void OnStopBinding(
-    HRESULT hresult, LPCTSTR szError);
+virtual void OnStopBinding(HRESULT hresult, LPCTSTR szError);
 ```  
   
 ### Parameters  
@@ -338,42 +329,35 @@ virtual void OnStopBinding(
 virtual BOOL Open(
     LPCTSTR lpszURL,
     CFileException* pError = NULL);
-
  
 virtual BOOL Open(
     IMoniker* pMoniker,
     CFileException* pError = NULL);
-
  
 virtual BOOL Open(
     LPCTSTR lpszURL,
     IBindHost* pBindHost,
     CFileException* pError = NULL);
-
  
 virtual BOOL Open(
     IMoniker* pMoniker,
     IBindHost* pBindHost,
     CFileException* pError = NULL);
-
  
 virtual BOOL Open(
     LPCTSTR lpszURL,
     IServiceProvider* pServiceProvider,
     CFileException* pError = NULL);
-
  
 virtual BOOL Open(
     IMoniker* pMoniker,
     IServiceProvider* pServiceProvider,
     CFileException* pError = NULL);
-
  
 virtual BOOL Open(
     LPCTSTR lpszURL,
     IUnknown* pUnknown,
     CFileException* pError = NULL);
-
  
 virtual BOOL Open(
     IMoniker* pMoniker,

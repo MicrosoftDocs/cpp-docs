@@ -80,9 +80,7 @@ class CComClassFactoryAutoThread : public IClassFactory,   public CComObjectRoot
  Creates an object of the specified CLSID and retrieves an interface pointer to this object.  
   
 ```
-STDMETHODIMP CreateInstance(LPUNKNOWN pUnkOuter,
-    REFIID riid,
-    void** ppvObj);
+STDMETHODIMP CreateInstance(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
 ```  
   
 ### Parameters  

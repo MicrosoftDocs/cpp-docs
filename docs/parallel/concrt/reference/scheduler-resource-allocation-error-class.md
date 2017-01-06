@@ -49,13 +49,13 @@ class scheduler_resource_allocation_error : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[scheduler_resource_allocation_error::scheduler_resource_allocation_error Constructor](#ctor)|Overloaded. Constructs a `scheduler_resource_allocation_error` object.|  
+|[scheduler_resource_allocation_error Constructor](#ctor)|Overloaded. Constructs a `scheduler_resource_allocation_error` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[scheduler_resource_allocation_error::get_error_code Method](#get_error_code)|Returns the error code that caused the exception.|  
+|[get_error_code Method](#get_error_code)|Returns the error code that caused the exception.|  
   
 ## Remarks  
  This exception is typically thrown when a call to the operating system from within the Concurrency Runtime fails. The error code which would normally be returned from a call to the Win32 method `GetLastError` is converted to a value of type `HRESULT` and can be retrieved using the `get_error_code` method.  
@@ -70,7 +70,8 @@ class scheduler_resource_allocation_error : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="get_error_code"></a>  scheduler_resource_allocation_error::get_error_code Method  
+##  <a name="get_error_code"></a> get_error_code 
+
  Returns the error code that caused the exception.  
   
 ```
@@ -80,7 +81,8 @@ HRESULT get_error_code() const throw();
 ### Return Value  
  The `HRESULT` value of the error that caused the exception.  
   
-##  <a name="ctor"></a>  scheduler_resource_allocation_error::scheduler_resource_allocation_error Constructor  
+##  <a name="ctor"></a> scheduler_resource_allocation_error 
+
  Constructs a `scheduler_resource_allocation_error` object.  
   
 ```

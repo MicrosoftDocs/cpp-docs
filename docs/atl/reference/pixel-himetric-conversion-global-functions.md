@@ -46,8 +46,7 @@ These functions provide support for converting to and from pixel and HIMETRIC un
   
  
 ```
-extern void           AtlHiMetricToPixel(
-    const SIZEL* lpSizeInHiMetric,  LPSIZEL lpSizeInPix);
+extern void           AtlHiMetricToPixel(const SIZEL* lpSizeInHiMetric,  LPSIZEL lpSizeInPix);
 ```  
   
 ### Parameters  
@@ -64,8 +63,7 @@ extern void           AtlHiMetricToPixel(
  Converts an object's size in pixels on the screen device to a size in HIMETRIC units (each unit is 0.01 millimeter).  
   
 ```
-extern void           AtlPixelToHiMetric(
-    const SIZEL* lpSizeInPix,  LPSIZEL lpSizeInHiMetric);
+extern void           AtlPixelToHiMetric(const SIZEL* lpSizeInPix,  LPSIZEL lpSizeInHiMetric);
 ```  
   
 ### Parameters  

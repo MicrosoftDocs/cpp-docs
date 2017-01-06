@@ -48,7 +48,7 @@ class norm;
   
 |Name|Description|  
 |----------|-----------------|  
-|[norm::norm Constructor](#ctor)|Overloaded. Default constructor. Initialize to 0.0f.|  
+|[norm Constructor](#ctor)|Overloaded. Default constructor. Initialize to 0.0f.|  
   
 ### Public Operators  
   
@@ -72,7 +72,8 @@ class norm;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="ctor"></a>  norm::norm Constructor  
+##  <a name="ctor"></a> norm 
+
  Default constructor. Initialize to 0.0f.  
   
 ```  

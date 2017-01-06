@@ -110,24 +110,12 @@ class CTime
  Comparison operators.  
   
 ```  
-bool operator==(CTime time) const throw();
-
- 
-    bool operator!=(CTime time) const throw();
-
- 
-    bool operator<(CTime time) const throw();
-
- 
-    bool operator>(CTime time) const throw();
-
- 
-    bool operator<=(CTime time) const throw();
-
- 
-    bool operator>=(CTime time) const throw();
-
- 
+bool operator==(CTime time) const throw(); 
+bool operator!=(CTime time) const throw();
+bool operator<(CTime time) const throw();
+bool operator>(CTime time) const throw();
+bool operator<=(CTime time) const throw();
+bool operator>=(CTime time) const throw(); 
 ```  
   
 ### Parameters  
@@ -144,42 +132,14 @@ bool operator==(CTime time) const throw();
  Creates a new `CTime` object initialized with the specified time.  
   
 ```  
-CTime() throw();
-
- 
-    CTime(
- __time64_t  time) throw();
-
- 
-    CTime(
- int  nYear,  
-    int nMonth,  
-    int nDay,  
-    int nHour,  
-    int nMin,  
-    int nSec,  
-    int nDST = -1);
-
- 
-    CTime(
- WORD  wDosDate,  
-    WORD wDosTime,  
-    int nDST = -1);
-
- 
-    CTime(
- const SYSTEMTIME& st,  
-    int nDST = - 1) throw();
-
- 
-    CTime(
- const FILETIME& ft,  
-    int nDST = - 1);
-
- 
-    CTime(
- const DBTIMESTAMP& dbts,  
-    int nDST = -1) throw();
+CTime() throw(); 
+CTime(__time64_t time) throw();
+CTime(int  nYear, int nMonth, int nDay,
+      int nHour, int nMin, int nSec, int nDST = -1);
+CTime(WORD wDosDate, WORD wDosTime, int nDST = -1);
+CTime(const SYSTEMTIME& st, int nDST = - 1) throw();
+CTime(const FILETIME& ft, int nDST = - 1);
+CTime(const DBTIMESTAMP& dbts,int nDST = -1) throw();
 ```  
   
 ### Parameters  
@@ -255,12 +215,8 @@ CTime() throw();
  Call this member function to create a formatted representation of the date-time value.  
   
 ```  
-CString Format(LPCTSTR pszFormat) const;
-
- 
-CString Format(UINT nFormatID) const;
-
- 
+CString Format(LPCTSTR pszFormat) const; 
+CString Format(UINT nFormatID) const; 
 ```  
   
 ### Parameters  
@@ -285,12 +241,8 @@ CString Format(UINT nFormatID) const;
  Generates a formatted string that corresponds to this `CTime` object.  
   
 ```  
-CString FormatGmt(LPCTSTR pszFormat) const;
-
- 
-CString FormatGmt(UINT nFormatID) const;
-
- 
+CString FormatGmt(LPCTSTR pszFormat) const; 
+CString FormatGmt(UINT nFormatID) const; 
 ```  
   
 ### Parameters  
@@ -355,10 +307,7 @@ bool GetAsSystemTime(SYSTEMTIME& st) const throw();
  Returns a `CTime` object that represents the current time.  
   
 ```  
-static  
-    CTime 
-    WINAPI 
-    GetCurrentTime() throw();
+static CTime WINAPI GetCurrentTime() throw();
 ```  
   
 ### Remarks  
@@ -371,10 +320,7 @@ static
  Returns the day represent by the `CTime` object.  
   
 ```  
-int  
-    GetDay() const throw();
-
- 
+int  GetDay() const throw(); 
 ```  
   
 ### Return Value  
@@ -390,10 +336,7 @@ int
  Returns the day of the week represented by the `CTime` object.  
   
 ```  
-int  
-    GetDayOfWeek() const throw();
-
- 
+int  GetDayOfWeek() const throw(); 
 ```  
   
 ### Return Value  
@@ -409,13 +352,7 @@ int
  Gets a **struct tm** that contains a decomposition of the time contained in this `CTime` object.  
   
 ```  
-struct  
-    tm* 
-    GetGmtTm(struct   
-    tm* ptm)  
-    const;
-
- 
+struct tm* GetGmtTm(struct tm* ptm) const; 
 ```  
   
 ### Parameters  
@@ -437,10 +374,7 @@ struct
  Returns the hour represented by the `CTime` object.  
   
 ```  
-int  
-    GetHour() const throw();
-
- 
+int  GetHour() const throw(); 
 ```  
   
 ### Return Value  
@@ -456,13 +390,7 @@ int
  Gets a **struct tm** containing a decomposition of the time contained in this `CTime` object.  
   
 ```  
-struct  
-    tm* 
-    GetLocalTm(struct   
-    tm* ptm)  
-    const;
-
- 
+struct tm* GetLocalTm(struct tm* ptm) const; 
 ```  
   
 ### Parameters  
@@ -484,10 +412,7 @@ struct
  Returns the minute represented by the `CTime` object.  
   
 ```  
-int  
-    GetMinute() const throw();
-
- 
+int  GetMinute() const throw(); 
 ```  
   
 ### Return Value  
@@ -503,10 +428,7 @@ int
  Returns the month represented by the `CTime` object.  
   
 ```  
-int  
-    GetMonth() const throw();
-
- 
+int  GetMonth() const throw(); 
 ```  
   
 ### Return Value  
@@ -522,10 +444,7 @@ int
  Returns the second represented by the `CTime` object.  
   
 ```  
-int  
-    GetSecond() const throw();
-
- 
+int  GetSecond() const throw(); 
 ```  
   
 ### Return Value  
@@ -541,10 +460,7 @@ int
  Returns a **__time64_t** value for the given `CTime` object.  
   
 ```  
-__time64_t  
-    GetTime() const throw();
-
- 
+__time64_t GetTime() const throw(); 
 ```  
   
 ### Return Value  
@@ -590,15 +506,9 @@ CTime& operator=(__time64_t time) throw();
  These operators add and subtract `CTimeSpan` and `CTime` objects.  
   
 ```  
-CTime operator+(CTimeSpan timeSpan) const throw();
-
- 
-    CTime operator-(CTimeSpan timeSpan) const throw();
-
- 
-    CTimeSpan operator-(CTime time) const throw();
-
- 
+CTime operator+(CTimeSpan timeSpan) const throw(); 
+CTime operator-(CTimeSpan timeSpan) const throw(); 
+CTimeSpan operator-(CTime time) const throw(); 
 ```  
   
 ### Parameters  
@@ -622,9 +532,7 @@ CTime operator+(CTimeSpan timeSpan) const throw();
   
 ```  
 CTime& operator+=(CTimeSpan span) throw();
-
- 
-    CTime& operator-=(CTimeSpan span) throw();
+CTime& operator-=(CTimeSpan span) throw();
 ```  
   
 ### Parameters  

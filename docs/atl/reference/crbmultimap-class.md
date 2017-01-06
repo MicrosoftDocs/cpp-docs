@@ -43,10 +43,10 @@ This class represents a mapping structure that allows each key can be associated
   
 ```
 template<typename K,
-    typename V, class KTraits = CElementTraits<K>, class VTraits = CElementTraits<V>> class CRBMultiMap : public CRBTree<K,
-    V,
- KTraits,
-    VTraits>
+         typename V, 
+         class KTraits = CElementTraits<K>, 
+         class VTraits = CElementTraits<V>>  
+class CRBMultiMap : public CRBTree<K, V, KTraits, VTraits>
 ```    
   
 #### Parameters  

@@ -41,10 +41,8 @@ This class defines a COM enumerator object based on a C++ Standard Library colle
   
 ```
 template <class Base,
-    const IID* piid, class T, class Copy, class CollType, class ThreadModel = CComObjectThreadModel>
-    class ATL_NO_VTABLE CComEnumOnSTL :
-    public IEnumOnSTLImpl<Base,
-    piid,
+    const IID* piid, class T, class Copy, class CollType, class ThreadModel = CComObjectThreadModel>  
+class ATL_NO_VTABLE CComEnumOnSTL : public IEnumOnSTLImpl<Base, piid,
  T,
     Copy,
  CollType>,

@@ -45,7 +45,8 @@ This class implements **IUnknown** and inherits the default implementation of [I
 ## Syntax  
   
 ```
-template<class T>  class IPropertyPage2Impl : public IPropertyPageImpl<T>
+template<class T>  
+class IPropertyPage2Impl : public IPropertyPageImpl<T>
 ```  
   
 #### Parameters  

@@ -43,7 +43,7 @@ Similar to the Windows [SIZE](http://msdn.microsoft.com/library/windows/desktop/
 ## Syntax  
   
 ```  
-class CSize : public tagSIZE  
+class CSize : public tagSIZE 
 ```  
   
 ## Members  
@@ -84,25 +84,12 @@ class CSize : public tagSIZE
 ##  <a name="csize"></a>  CSize::CSize  
  Constructs a `CSize` object.  
   
-```  
- 
-    CSize() throw();
-CSize(
- int    
-    initCX ,  
-    int 
-    initCY) throw();
-CSize(
- SIZE    
-    initSize) throw();
-CSize(
- POINT    
-    initPt) throw();
-CSize(
- DWORD    
-    dwSize) throw();
-
- 
+```   
+ CSize() throw();
+CSize(int initCX, int initCY) throw();
+CSize(SIZE initSize) throw();
+CSize(POINT initPt) throw();
+CSize(DWORD dwSize) throw(); 
 ```  
   
 ### Parameters  
@@ -130,13 +117,8 @@ CSize(
 ##  <a name="operator_eq_eq"></a>  CSize::operator ==  
  Checks for equality between two sizes.  
   
-```  
- 
-BOOL operator==(
-SIZE   
-size) const throw();
-
- 
+```   
+BOOL operator==(SIZE size) const throw(); 
 ```  
   
 ### Remarks  
@@ -148,13 +130,8 @@ size) const throw();
 ##  <a name="operator_neq"></a>  CSize::operator !=  
  Checks for inequality between two sizes.  
   
-```  
- 
-BOOL operator!=(
-SIZE   
-size) const throw();
-
- 
+```   
+BOOL operator!=(SIZE size) const throw(); 
 ```  
   
 ### Remarks  
@@ -166,13 +143,8 @@ size) const throw();
 ##  <a name="operator_add_eq"></a>  CSize::operator +=  
  Adds a size to this `CSize`.  
   
-```  
- 
-void operator+=(
-SIZE   
-size) throw();
-
- 
+```   
+void operator+=(SIZE size) throw(); 
 ```  
   
 ### Example  
@@ -181,13 +153,8 @@ size) throw();
 ##  <a name="operator_-_eq"></a>  CSize::operator -=  
  Subtracts a size from this `CSize`.  
   
-```  
- 
-void operator-=(
-SIZE   
-size) throw();
-
- 
+```   
+void operator-=(SIZE size) throw(); 
 ```  
   
 ### Example  
@@ -196,21 +163,10 @@ size) throw();
 ##  <a name="operator_add"></a>  CSize::operator +  
  These operators add this `CSize` value to the value of parameter.  
   
-```  
- 
-CSize operator+(
-SIZE   
-size) const throw();
-
-CPoint operator+(
-POINT   
-point) const throw();
-
-CRect operator+(
-const RECT* 
-lpRect) const throw();
-
- 
+```   
+CSize operator+(SIZE size) const throw();
+CPoint operator+(POINT point) const throw();
+CRect operator+(const RECT* lpRect) const throw(); 
 ```  
   
 ### Remarks  
@@ -228,23 +184,11 @@ lpRect) const throw();
 ##  <a name="operator_-"></a>  CSize::operator -  
  The first three of these operators subtract this `CSize` value to the value of parameter.  
   
-```  
- 
-CSize operator-(
-SIZE   
-size) const throw();
-
-CPoint operator-(
-POINT   
-point) const throw();
-
-CRect operator-(
-const RECT* 
-lpRect) const throw();
-
-CSize operator-() const throw();
-
- 
+```   
+CSize operator-(SIZE size) const throw();
+CPoint operator-(POINT point) const throw();
+CRect operator-(const RECT* lpRect) const throw();
+CSize operator-() const throw(); 
 ```  
   
 ### Remarks  

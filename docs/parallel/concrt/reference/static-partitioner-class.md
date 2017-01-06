@@ -49,8 +49,8 @@ class static_partitioner;
   
 |Name|Description|  
 |----------|-----------------|  
-|[static_partitioner::static_partitioner Constructor](#ctor)|Constructs a `static_partitioner` object.|  
-|[static_partitioner::~static_partitioner Destructor](#dtor)|Destroys a `static_partitioner` object.|  
+|[static_partitioner Constructor](#ctor)|Constructs a `static_partitioner` object.|  
+|[~static_partitioner Destructor](#dtor)|Destroys a `static_partitioner` object.|  
   
 ## Inheritance Hierarchy  
  `static_partitioner`  
@@ -60,14 +60,16 @@ class static_partitioner;
   
  **Namespace:** concurrency  
   
-##  <a name="dtor"></a>  static_partitioner::~static_partitioner Destructor  
+##  <a name="dtor"></a> ~static_partitioner 
+
  Destroys a `static_partitioner` object.  
   
 ```
 ~static_partitioner();
 ```  
   
-##  <a name="ctor"></a>  static_partitioner::static_partitioner Constructor  
+##  <a name="ctor"></a> static_partitioner 
+
  Constructs a `static_partitioner` object.  
   
 ```

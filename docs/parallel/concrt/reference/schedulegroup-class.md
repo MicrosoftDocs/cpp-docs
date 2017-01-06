@@ -49,16 +49,16 @@ class ScheduleGroup;
   
 |Name|Description|  
 |----------|-----------------|  
-|[ScheduleGroup::~ScheduleGroup Destructor](#dtor)||  
+|[~ScheduleGroup Destructor](#dtor)||  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[ScheduleGroup::Id Method](#id)|Returns an identifier for the schedule group that is unique within the scheduler to which the group belongs.|  
-|[ScheduleGroup::Reference Method](#reference)|Increments the schedule group reference count.|  
-|[ScheduleGroup::Release Method](#release)|Decrements the scheduler group reference count.|  
-|[ScheduleGroup::ScheduleTask Method](#scheduletask)|Schedules a light-weight task within the schedule group.|  
+|[Id Method](#id)|Returns an identifier for the schedule group that is unique within the scheduler to which the group belongs.|  
+|[Reference Method](#reference)|Increments the schedule group reference count.|  
+|[Release Method](#release)|Decrements the scheduler group reference count.|  
+|[ScheduleTask Method](#scheduletask)|Schedules a light-weight task within the schedule group.|  
   
 ## Inheritance Hierarchy  
  `ScheduleGroup`  
@@ -68,7 +68,8 @@ class ScheduleGroup;
   
  **Namespace:** concurrency  
   
-##  <a name="id"></a>  ScheduleGroup::Id Method  
+##  <a name="id"></a> Id 
+
  Returns an identifier for the schedule group that is unique within the scheduler to which the group belongs.  
   
 ```
@@ -78,7 +79,8 @@ virtual unsigned int Id() const = 0;
 ### Return Value  
  An identifier for the schedule group that is unique within the scheduler to which the group belongs.  
   
-##  <a name="operator_delete"></a>  ScheduleGroup::operator delete Operator  
+##  <a name="operator_delete"></a> operator delete 
+
  A `ScheduleGroup` object is destroyed internally by the runtime when all external references to it are released. It cannot be explicitly deleted.  
   
 ```
@@ -96,7 +98,8 @@ void operator delete(
  `_PObject`  
  A pointer to the object to be deleted.  
   
-##  <a name="reference"></a>  ScheduleGroup::Reference Method  
+##  <a name="reference"></a> Reference 
+
  Increments the schedule group reference count.  
   
 ```
@@ -109,7 +112,8 @@ virtual unsigned int Reference() = 0;
 ### Remarks  
  This is typically used to manage the lifetime of the schedule group for composition. When the reference count of a schedule group falls to zero, the schedule group is deleted by the runtime. A schedule group created using either the [CurrentScheduler::CreateScheduleGroup](currentscheduler-class.md#createschedulegroup) method, or the [Scheduler::CreateScheduleGroup](scheduler-class.md#createschedulegroup) method starts out with a reference count of one.  
   
-##  <a name="release"></a>  ScheduleGroup::Release Method  
+##  <a name="release"></a> Release 
+
  Decrements the scheduler group reference count.  
   
 ```
@@ -124,13 +128,14 @@ virtual unsigned int Release() = 0;
   
  A schedule group is associated with a particular scheduler instance. You must ensure that all references to the schedule group are released before all references to the scheduler are released, because the latter could result in the scheduler being destroyed. Doing otherwise results in undefined behavior.  
   
-##  <a name="dtor"></a>  ScheduleGroup::~ScheduleGroup Destructor  
-  
+##  <a name="dtor"></a> ~ScheduleGroup 
+
 ```
 virtual ~ScheduleGroup();
 ```  
   
-##  <a name="scheduletask"></a>  ScheduleGroup::ScheduleTask Method  
+##  <a name="scheduletask"></a> ScheduleTask 
+
  Schedules a light-weight task within the schedule group.  
   
 ```

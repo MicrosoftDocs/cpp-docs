@@ -44,7 +44,8 @@ This class implements **IUnknown** for a nonaggregated object, but does not incr
 ## Syntax  
   
 ```
-template<class Base>  class CComObjectNoLock :  public Base
+template<class Base>  
+class CComObjectNoLock : public Base
 ```  
   
 #### Parameters  
@@ -117,8 +118,7 @@ CComObjectNoLock(void* = NULL);
  Retrieves a pointer to the requested interface.  
   
 ```
-STDMETHOD(QueryInterface)(REFIID iid,
-    void** ppvObject);
+STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 ```  
   
 ### Parameters  

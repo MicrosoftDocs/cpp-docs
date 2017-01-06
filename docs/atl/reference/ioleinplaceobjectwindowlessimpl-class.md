@@ -48,7 +48,7 @@ This class implements **IUnknown** and provides methods that enable a windowless
 ## Syntax  
   
 ```
-template<class  T>
+template<class T>
 class IOleInPlaceObjectWindowlessImpl
 ```  
   
@@ -156,9 +156,7 @@ HRESULT ReactivateAndUndo();
  Called by the container to inform the control that its size and/or position has changed.  
   
 ```
-HRESULT SetObjectRects(
-    LPCRECT prcPos,
-    LPCRECT prcClip);
+HRESULT SetObjectRects(LPCRECT prcPos, LPCRECT prcClip);
 ```  
   
 ### Remarks  

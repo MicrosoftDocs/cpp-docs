@@ -77,7 +77,7 @@ class unorm_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|[unorm_2::unorm_2 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[unorm_2 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -135,7 +135,8 @@ class unorm_2;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="ctor"></a>  unorm_2::unorm_2 Constructor  
+##  <a name="ctor"></a> unorm_2 
+
  Default constructor, initializes all elements with 0.  
   
 ```  
@@ -208,8 +209,8 @@ explicit inline unorm_2(
  `_Other`  
  The object used to initialize.  
   
-##  <a name="unorm_2__size"></a>  unorm_2::size Constant  
-  
+##  <a name="unorm_2__size"></a> size 
+
 ```  
 static const int size = 2;  
 ```  

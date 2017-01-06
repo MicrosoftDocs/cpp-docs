@@ -129,8 +129,7 @@ ATLINLINE ATLAPI AtlSetPerUserRegistration(
   
 
 ```
-ATLAPI AtlUnRegisterTypeLib(
-    HINSTANCE hInstTypeLib,  LPCOLESTR lpszIndex);
+ATLAPI AtlUnRegisterTypeLib(HINSTANCE hInstTypeLib,  LPCOLESTR lpszIndex);
 ```  
   
 ### Parameters  

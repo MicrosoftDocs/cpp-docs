@@ -46,7 +46,8 @@ This class provides methods for supporting Uniform Data Transfer and managing co
 ## Syntax  
   
 ```
-template<class T>  class IDataObjectImpl
+template<class T>  
+class IDataObjectImpl
 ```  
   
 #### Parameters  
@@ -133,7 +134,8 @@ HRESULT DAdvise(
  Creates an enumerator to iterate through the **FORMATETC** structures supported by the data object.  
   
 ```
-HRESULT EnumFormatEtc(DWORD dwDirection,
+HRESULT EnumFormatEtc(  
+    DWORD dwDirection,
     IEnumFORMATETC** ppenumFormatEtc);
 ```  
   
@@ -157,9 +159,7 @@ HRESULT FireDataChange();
  Retrieves a logically equivalent **FORMATETC** structure to one that is more complex.  
   
 ```
-HRESULT GetCanonicalFormatEtc(
-    FORMATETC* pformatetcIn,
-    FORMATETC* pformatetcOut);
+HRESULT GetCanonicalFormatEtc(FORMATETC* pformatetcIn, FORMATETC* pformatetcOut);
 ```  
   
 ### Return Value  

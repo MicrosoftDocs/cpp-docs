@@ -42,8 +42,8 @@ This class provides static functions related to strings stored in collection cla
 ## Syntax  
   
 ```
-template <typename   T, class CharTraits = CDefaultCharTraits<T ::XCHAR>>
-    class CStringElementTraitsI : public CElementTraitsBase<T>
+template <typename T, class CharTraits = CDefaultCharTraits<T ::XCHAR>>  
+class CStringElementTraitsI : public CElementTraitsBase<T>
 ```  
   
 #### Parameters  
@@ -84,9 +84,7 @@ template <typename   T, class CharTraits = CDefaultCharTraits<T ::XCHAR>>
  Call this static function to compare two string elements for equality, ignoring differences in case.  
   
 ```
-static bool CompareElements(
-    INARGTYPE str1,
-    INARGTYPE str2) throw();
+static bool CompareElements(INARGTYPE str1, INARGTYPE str2) throw();
 ```  
   
 ### Parameters  
@@ -106,9 +104,7 @@ static bool CompareElements(
  Call this static function to compare two string elements, ignoring differences in case.  
   
 ```
-static int CompareElementsOrdered(
-    INARGTYPE str1,
-    INARGTYPE str2) throw();
+static int CompareElementsOrdered(INARGTYPE str1, INARGTYPE str2) throw();
 ```  
   
 ### Parameters  
