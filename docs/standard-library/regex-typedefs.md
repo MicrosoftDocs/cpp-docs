@@ -6,6 +6,61 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+f1_keywords: 
+  - "cmatch"
+  - "std::cmatch"
+  - "regex/std::cmatch"
+  - "cregex_iterator"
+  - "std::cregex_iterator"
+  - "regex/std::cregex_iterator"
+  - "cregex_token_iterator"
+  - "std::cregex_token_iterator"
+  - "regex/std::cregex_token_iterator"
+  - "csub_match"
+  - "std::csub_match"
+  - "regex/std::csub_match"
+  - "regex"
+  - "std::regex"
+  - "regex/std::regex"
+  - "smatch"
+  - "std::smatch"
+  - "regex/std::smatch"
+  - "sregex_iterator"
+  - "std::sregex_iterator"
+  - "regex/std::sregex_iterator"
+  - "sregex_token_iterator"
+  - "std::sregex_token_iterator"
+  - "regex/std::sregex_token_iterator"
+  - "ssub_match"
+  - "std::ssub_match"
+  - "regex/std::ssub_match"
+  - "wcmatch"
+  - "std::wcmatch"
+  - "regex/std::wcmatch"
+  - "wcregex_iterator"
+  - "std::wcregex_iterator"
+  - "regex/std::wcregex_iterator"
+  - "wcregex_token_iterator"
+  - "std::wcregex_token_iterator"
+  - "regex/std::wcregex_token_iterator"
+  - "wcsub_match"
+  - "std::wcsub_match"
+  - "regex/std::wcsub_match"
+  - "wregex"
+  - "std::wregex"
+  - "regex/std::wregex"
+  - "wsmatch"
+  - "std::wsmatch"
+  - "regex/std::wsmatch"
+  - "wsregex_iterator"
+  - "std::wsregex_iterator"
+  - "regex/std::wsregex_iterator"
+  - "wsregex_token_iterator"
+  - "std::wsregex_token_iterator"
+  - "regex/std::wsregex_token_iterator"
+  - "wssub_match"
+  - "std::wssub_match"
+  - "regex/std::wssub_match"
 ms.assetid: e6a69067-106c-4a24-9e08-7c867a3a2260
 caps.latest.revision: 10
 manager: "ghogen"
@@ -204,5 +259,11 @@ typedef sub_match<wstring::const_iterator> wssub_match;
  The type describes a specialization of template class [sub_match Class](../standard-library/sub-match-class.md) for iterators of type `wstring::const_iterator`.  
   
 ## See Also  
- [\<regex>](../standard-library/regex.md)
-
+[\<regex>](../standard-library/regex.md)  
+[regex_constants Class](../standard-library/regex-constants-class.md)  
+[regex_error Class](../standard-library/regex-error-class.md)  
+[\<regex> functions](../standard-library/regex-functions.md)  
+[regex_iterator Class](../standard-library/regex-iterator-class.md)  
+[\<regex> operators](../standard-library/regex-operators.md)  
+[regex_token_iterator Class](../standard-library/regex-token-iterator-class.md)  
+[regex_traits Class](../standard-library/regex-traits-class.md)  

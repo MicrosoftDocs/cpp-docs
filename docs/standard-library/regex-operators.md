@@ -77,7 +77,7 @@ bool operator!=(const match_results<BidIt, Alloc>& left,
 ### Example  
   
 ```cpp  
-// std_tr1__regex__operator_ne.cpp   
+// std__regex__operator_ne.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -190,7 +190,7 @@ bool operator<(const sub_match<BidIt>& left,
 ### Example  
   
 ```cpp  
-// std_tr1__regex__operator_lt.cpp   
+// std__regex__operator_lt.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -276,7 +276,7 @@ basic_ostream<Elem, IOtraits>& operator<<(basic_ostream<Elem, IOtraits>& os,
 ### Example  
   
 ```cpp  
-// std_tr1__regex__operator_ins.cpp   
+// std__regex__operator_ins.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -356,7 +356,7 @@ bool operator<=(const sub_match<BidIt>& left,
 ### Example  
   
 ```cpp  
-// std_tr1__regex__operator_le.cpp   
+// std__regex__operator_le.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -476,7 +476,7 @@ bool operator==(const match_results<BidIt, Alloc>& left,
 ### Example  
   
 ```cpp  
-// std_tr1__regex__operator_eq.cpp   
+// std__regex__operator_eq.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -589,7 +589,7 @@ bool operator>(const sub_match<BidIt>& left,
 ### Example  
   
 ```cpp  
-// std_tr1__regex__operator_gt.cpp   
+// std__regex__operator_gt.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -697,7 +697,7 @@ bool operator>=(const sub_match<BidIt>& left,
 ### Example  
   
 ```cpp  
-// std_tr1__regex__operator_ge.cpp   
+// std__regex__operator_ge.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -750,5 +750,13 @@ sub >= 'a' == true
 ```  
   
 ## See Also  
- [\<regex>](../standard-library/regex.md)
+[\<regex>](../standard-library/regex.md)  
+[regex_constants Class](../standard-library/regex-constants-class.md)  
+[regex_error Class](../standard-library/regex-error-class.md)  
+[\<regex> functions](../standard-library/regex-functions.md)  
+[regex_iterator Class](../standard-library/regex-iterator-class.md)  
+[regex_token_iterator Class](../standard-library/regex-token-iterator-class.md)  
+[regex_traits Class](../standard-library/regex-traits-class.md)  
+[\<regex> typedefs](../standard-library/regex-typedefs.md)  
+
 

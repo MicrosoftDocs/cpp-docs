@@ -12,10 +12,20 @@ f1_keywords:
   - "regex_iterator"
   - "std::regex_iterator"
   - "regex/std::regex_iterator"
+  - "std::regex_iterator::operator=="
+  - "regex/std::regex_iterator::operator=="
+  - "std::regex_iterator::operator!="
+  - "regex/std::regex_iterator::operator!="
+  - "std::regex_iterator::operator*"
+  - "regex/std::regex_iterator::operator*"
+  - "std::regex_iterator::operator->"
+  - "regex/std::regex_iterator::operator->"
+  - "std::regex_iterator::operator++"
+  - "regex/std::regex_iterator::operator++"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "regex_iterator class [TR1]"
+  - "regex_iterator class"
 ms.assetid: 0cfd8fd0-5a95-4f3c-bf8e-6ef028c423d3
 caps.latest.revision: 16
 author: "corob-msft"
@@ -41,6 +51,9 @@ Iterator class for matches.
   
 ## Syntax  
 ```
+template<class BidIt,
+   class Elem = typename std::iterator_traits<BidIt>::value_type,
+   class RxTraits = regex_traits<Elem> >
 class regex_iterator {  
 public:  
    typedef basic_regex<Elem, RXtraits> regex_type;  
@@ -49,16 +62,20 @@ public:
    typedef std::ptrdiff_t difference_type;  
    typedef const match_results<BidIt>* pointer;  
    typedef const match_results<BidIt>& reference;  
+
    regex_iterator();
    regex_iterator(
       BidIt first, BidIt last, const regex_type& re,  
       regex_constants::match_flag_type f = regex_constants::match_default);
+
    bool operator==(const regex_iterator& right);
    bool operator!=(const regex_iterator& right);
    const match_results<BidIt>& operator*();
    const match_results<BidIt> * operator->();
    regex_iterator& operator++();
    regex_iterator& operator++(int);
+
+private:
    BidIt begin; // exposition only  
    BidIt end; // exposition only  
    regex_type *pregex;     // exposition only  
@@ -66,7 +83,8 @@ public:
    match_results<BidIt> match; // exposition only  
    };  
 ```  
-#### Parameters  
+  
+### Parameters  
  `BidIt`  
  The iterator type for submatches.  
   
@@ -140,7 +158,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -194,7 +211,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -252,7 +268,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -306,7 +321,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -320,7 +334,6 @@ match == a
   
 ```  
 regex_iterator& operator++();
-
 regex_iterator& operator++(int);
 ```  
   
@@ -364,7 +377,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -422,7 +434,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -476,7 +487,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -530,7 +540,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -774,6 +783,14 @@ match == a
 ```  
   
 ## See Also  
- [\<regex>](../standard-library/regex.md)   
- [regex_iterator](../standard-library/regex-iterator-class.md)
+[\<regex>](../standard-library/regex.md)  
+[regex_constants Class](../standard-library/regex-constants-class.md)  
+[regex_error Class](../standard-library/regex-error-class.md)  
+[\<regex> functions](../standard-library/regex-functions.md)  
+[regex_iterator Class](../standard-library/regex-iterator-class.md)  
+[\<regex> operators](../standard-library/regex-operators.md)  
+[regex_token_iterator Class](../standard-library/regex-token-iterator-class.md)  
+[regex_traits Class](../standard-library/regex-traits-class.md)  
+[\<regex> typedefs](../standard-library/regex-typedefs.md)  
 
+  

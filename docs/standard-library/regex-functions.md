@@ -6,6 +6,17 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+f1_keywords: 
+  - "regex_match"
+  - "std::regex_match"
+  - "regex/std::regex_match"
+  - "regex_replace"
+  - "std::regex_replace"
+  - "regex/std::regex_replace"
+  - "regex_search"
+  - "std::regex_search"
+  - "regex/std::regex_search"
+  - "regex/std::swap"
 ms.assetid: 91a8314b-6f7c-4e33-b7d6-d8583dd75585
 caps.latest.revision: 12
 manager: "ghogen"
@@ -494,5 +505,12 @@ string == aaa
 ```  
   
 ## See Also  
- [\<regex>](../standard-library/regex.md)
+[\<regex>](../standard-library/regex.md)  
+[regex_constants Class](../standard-library/regex-constants-class.md)  
+[regex_error Class](../standard-library/regex-error-class.md)  
+[regex_iterator Class](../standard-library/regex-iterator-class.md)  
+[\<regex> operators](../standard-library/regex-operators.md)  
+[regex_token_iterator Class](../standard-library/regex-token-iterator-class.md)  
+[regex_traits Class](../standard-library/regex-traits-class.md)  
+[\<regex> typedefs](../standard-library/regex-typedefs.md)  
 
