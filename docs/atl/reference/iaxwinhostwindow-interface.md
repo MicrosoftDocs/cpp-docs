@@ -75,7 +75,7 @@ interface IAxWinHostWindow : IUnknown
   
 ```
 STDMETHOD(AttachControl)(
-    IUnknown* pUnkControl,  HWND hWnd);
+    IUnknown* pUnkControl, HWND hWnd);
 ```  
   
 ### Parameters  

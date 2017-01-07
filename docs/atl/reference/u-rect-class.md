@@ -79,9 +79,8 @@ LPRECT m_lpRect;
  The address of the reference argument is stored in the class's single data member, [m_lpRect](#_u_rect__m_lprect).  
   
 ```
-_U_RECT(RECT& rc);
-
-    _U_RECT(LPRECT lpRect);
+_U_RECT(RECT& rc);  
+_U_RECT(LPRECT lpRect);
 ```  
   
 ### Parameters  

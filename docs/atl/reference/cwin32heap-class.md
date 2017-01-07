@@ -93,7 +93,7 @@ class CWin32Heap : public IAtlMemMgr
  Allocates a block of memory from the heap object.  
   
 ```
-virtual __declspec(allocator) void* Allocate(size_t   nBytes) throw();
+virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 ```  
   
 ### Parameters  

@@ -40,7 +40,10 @@ These functions provide support for `_AtlCreateWndData` structure operations.
 |-|-|  
 |[AtlWinModuleAddCreateWndData](#atlwinmoduleaddcreatewnddata)|This function is used to initialize and add an `_AtlCreateWndData` structure.|  
 |[AtlWinModuleExtractCreateWndData](#atlwinmoduleextractcreatewnddata)|Call this function to extract an existing `_AtlCreateWndData` structure.|  
-  
+
+## Requirements  
+ **Header:** atlbase.h  
+  `            
 ##  <a name="atlwinmoduleaddcreatewnddata"></a>  AtlWinModuleAddCreateWndData  
  This function is used to initialize and add an `_AtlCreateWndData` structure.  
    

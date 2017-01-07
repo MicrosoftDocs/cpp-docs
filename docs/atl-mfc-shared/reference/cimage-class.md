@@ -196,18 +196,21 @@ void CMyDlg::OnRButtonDown(UINT nFlags, CPoint point)
  Displays bitmaps that have transparent or semitransparent pixels.  
   
 ```
-BOOL AlphaBlend(HDC hDestDC,
+BOOL AlphaBlend(
+ HDC hDestDC,
  int xDest,
  int yDest,
  BYTE bSrcAlpha = 0xff,
  BYTE bBlendOp = AC_SRC_OVER) const throw();
 
-BOOL AlphaBlend(HDC hDestDC,
+BOOL AlphaBlend(
+ HDC hDestDC,
  const POINT& pointDest,
  BYTE bSrcAlpha = 0xff,
  BYTE bBlendOp = AC_SRC_OVER) const throw();
 
-BOOL AlphaBlend(HDC hDestDC,
+BOOL AlphaBlend(
+ HDC hDestDC,
  int xDest,
  int yDest,
  int nDestWidth,
@@ -219,7 +222,8 @@ BOOL AlphaBlend(HDC hDestDC,
  BYTE bSrcAlpha = 0xff,
  BYTE bBlendOp = AC_SRC_OVER);
 
-BOOL AlphaBlend(HDC hDestDC,
+BOOL AlphaBlend(
+ HDC hDestDC,
  const RECT& rectDest,
  const RECT& rectSrc,
  BYTE bSrcAlpha = 0xff,
@@ -304,16 +308,19 @@ void Attach(HBITMAP hBitmap,   DIBOrientation eOrientation = DIBOR_DEFAULT) thro
  Copies a bitmap from the source device context to this current device context.  
   
 ```
-BOOL BitBlt(HDC hDestDC,
+BOOL BitBlt(
+ HDC hDestDC,
  int xDest,
  int yDest,
  DWORD dwROP = SRCCOPY) const throw();
 
-BOOL BitBlt(HDC hDestDC,
+BOOL BitBlt(
+ HDC hDestDC,
  const POINT& pointDest,
  DWORD dwROP = SRCCOPY) const throw();
 
-BOOL BitBlt(HDC hDestDC,
+BOOL BitBlt(
+ HDC hDestDC,
  int xDest,
  int yDest,
  int nDestWidth,
@@ -322,7 +329,8 @@ BOOL BitBlt(HDC hDestDC,
  int ySrc,
  DWORD dwROP = SRCCOPY) const throw();
 
-BOOL BitBlt(HDC hDestDC,
+BOOL BitBlt(
+ HDC hDestDC,
  const RECT& rectDest,
  const POINT& pointSrc,
  DWORD dwROP = SRCCOPY) const throw();
@@ -386,7 +394,8 @@ CImage() throw();
  Creates a `CImage` bitmap and attach it to the previously constructed `CImage` object.  
   
 ```
-BOOL Create(int nWidth,
+BOOL Create(
+ int nWidth,
  int nHeight,
  int nBPP,
  DWORD dwFlags = 0) throw();
@@ -417,7 +426,8 @@ BOOL Create(int nWidth,
  Creates a `CImage` bitmap and attach it to the previously constructed `CImage` object.  
   
 ```
-BOOL CreateEx(int nWidth,
+BOOL CreateEx(
+ int nWidth,
  int nHeight,
  int nBPP,
  DWORD eCompression,
@@ -486,7 +496,8 @@ HBITMAP Detach() throw();
  Copies a bitmap from the source device context to the current device context.  
   
 ```
-BOOL Draw(HDC hDestDC,
+BOOL Draw(
+ HDC hDestDC,
  int xDest,
  int yDest,
  int nDestWidth,
@@ -496,24 +507,29 @@ BOOL Draw(HDC hDestDC,
  int nSrcWidth,
  int nSrcHeight) const throw();
 
-BOOL Draw(HDC hDestDC,
+BOOL Draw(
+ HDC hDestDC,
  const RECT& rectDest,
  const RECT& rectSrc) const throw();
 
-BOOL Draw(HDC hDestDC,
+BOOL Draw(
+ HDC hDestDC,
  int xDest,
  int yDest) const throw();
 
-BOOL Draw(HDC hDestDC,
+BOOL Draw(
+ HDC hDestDC,
  const POINT& pointDest) const throw();
 
-BOOL Draw(HDC hDestDC,
+BOOL Draw(
+ HDC hDestDC,
  int xDest,
  int yDest,
  int nDestWidth,
  int nDestHeight) const throw();
 
-BOOL Draw(HDC hDestDC,
+BOOL Draw(
+ HDC hDestDC,
  const RECT& rectDest) const throw();
 ```  
   
@@ -976,10 +992,12 @@ HRESULT Load(IStream* pStream) throw();
  Loads an image from a `BITMAP` resource.  
   
 ```
-void LoadFromResource(HINSTANCE hInstance,
+void LoadFromResource(
+ HINSTANCE hInstance,
  LPCTSTR pszResourceName) throw();
 
-void LoadFromResource(HINSTANCE hInstance,
+void LoadFromResource(
+ HINSTANCE hInstance,
  UINT nIDResource) throw();
 ```  
   
@@ -1000,7 +1018,8 @@ void LoadFromResource(HINSTANCE hInstance,
  Combines the color data for the source and destination bitmaps using the specified mask and raster operation.  
   
 ```
-BOOL MaskBlt(HDC hDestDC,
+BOOL MaskBlt(
+ HDC hDestDC,
  int xDest,
  int yDest,
  int nDestWidth,
@@ -1012,20 +1031,23 @@ BOOL MaskBlt(HDC hDestDC,
  int yMask,
  DWORD dwROP = SRCCOPY) const throw();
 
-BOOL MaskBlt(HDC hDestDC,
+BOOL MaskBlt(
+ HDC hDestDC,
  const RECT& rectDest,
  const POINT& pointSrc,
  HBITMAP hbmMask,
  const POINT& pointMask,
  DWORD dwROP = SRCCOPY) const throw();
 
-BOOL MaskBlt(HDC hDestDC,
+BOOL MaskBlt(
+ HDC hDestDC,
  int xDest,
  int yDest,
  HBITMAP hbmMask,
  DWORD dwROP = SRCCOPY) const throw();
 
-BOOL MaskBlt(HDC hDestDC,
+BOOL MaskBlt(
+ HDC hDestDC,
  const POINT& pointDest,
  HBITMAP hbmMask,
  DWORD dwROP = SRCCOPY) const throw();
@@ -1090,11 +1112,13 @@ BOOL MaskBlt(HDC hDestDC,
  Performs a bit-block transfer from a rectangle in a source device context into a parallelogram in a destination device context.  
   
 ```
-BOOL PlgBlt(HDC hDestDC,
+BOOL PlgBlt(
+ HDC hDestDC,
  const POINT* pPoints,
  HBITMAP hbmMask = NULL) const throw();
 
-BOOL PlgBlt(HDC hDestDC,
+BOOL PlgBlt(
+ HDC hDestDC,
  const POINT* pPoints,
  int xSrc,
  int ySrc,
@@ -1104,7 +1128,8 @@ BOOL PlgBlt(HDC hDestDC,
  int xMask = 0,
  int yMask = 0) const throw();
 
-BOOL PlgBlt(HDC hDestDC,
+BOOL PlgBlt(
+ HDC hDestDC,
  const POINT* pPoints,
  const RECT& rectSrc,
  HBITMAP hbmMask = NULL,
@@ -1215,9 +1240,10 @@ HRESULT Save(LPCTSTR pszFileName,
  Sets the red, green, blue (RGB) color values for a range of entries in the palette of the DIB section.  
   
 ```
-void SetColorTable(UINT iFirstColor,
- UINT nColors,
- const RGBQUAD* prgbColors) throw();
+void SetColorTable(
+  UINT iFirstColor, 
+  UINT nColors,
+  const RGBQUAD* prgbColors) throw();
 ```  
   
 ### Parameters  
@@ -1274,7 +1300,8 @@ void SetPixelIndexed(int x, int y, int iIndex) throw();
  Sets the pixel at the locations specified by *x* and *y* to the colors indicated by *r*, *g*, and *b*, in a red, green, blue (RGB) image.  
   
 ```
-void SetPixelRGB(int x,
+void SetPixelRGB(  
+ int x,
  int y,
  BYTE r,
  BYTE g,
@@ -1318,18 +1345,21 @@ LONG SetTransparentColor(LONG iTransparentColor) throw();
  Copies a bitmap from the source device context to this current device context.  
   
 ```
-BOOL StretchBlt(HDC hDestDC,
+BOOL StretchBlt(
+ HDC hDestDC,
  int xDest,
  int yDest,
  int nDestWidth,
  int nDestHeight,
  DWORD dwROP = SRCCOPY) const throw();
 
-BOOL StretchBlt(HDC hDestDC,
+BOOL StretchBlt(
+ HDC hDestDC,
  const RECT& rectDest,
  DWORD dwROP = SRCCOPY) const throw();
 
-BOOL StretchBlt(HDC hDestDC,
+BOOL StretchBlt(
+ HDC hDestDC,
  int xDest,
  int yDest,
  int nDestWidth,
@@ -1340,7 +1370,8 @@ BOOL StretchBlt(HDC hDestDC,
  int nSrcHeight,
  DWORD dwROP = SRCCOPY) const throw();
 
-BOOL StretchBlt(HDC hDestDC,
+BOOL StretchBlt(
+ HDC hDestDC,
  const RECT& rectDest,
  const RECT& rectSrc,
  DWORD dwROP = SRCCOPY) const throw();
@@ -1393,18 +1424,21 @@ BOOL StretchBlt(HDC hDestDC,
  Copies a bitmap from the source device context to this current device context.  
   
 ```
-BOOL TransparentBlt(HDC hDestDC,
+BOOL TransparentBlt(
+ HDC hDestDC,
  int xDest,
  int yDest,
  int nDestWidth,
  int nDestHeight,
  UINT crTransparent = CLR_INVALID) const throw();
 
-BOOL TransparentBlt(HDC hDestDC,
+BOOL TransparentBlt(
+ HDC hDestDC,
  const RECT& rectDest,
  UINT crTransparent = CLR_INVALID) const throw();
 
-BOOL TransparentBlt(HDC hDestDC,
+BOOL TransparentBlt(
+ HDC hDestDC,
  int xDest,
  int yDest,
  int nDestWidth,
@@ -1415,7 +1449,8 @@ BOOL TransparentBlt(HDC hDestDC,
  int nSrcHeight,
  UINT crTransparent = CLR_INVALID) const throw();
 
-BOOL TransparentBlt(HDC hDestDC,
+BOOL TransparentBlt(
+ HDC hDestDC,
  const RECT& rectDest,
  const RECT& rectSrc,
  UINT crTransparent = CLR_INVALID) const throw();

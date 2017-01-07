@@ -338,9 +338,8 @@ bool LoadAccount(
  Assignment operator.  
   
 ```
-CSid& operator= (const CSid& rhs) throw(...);
-
-    CSid& operator= (const SID& rhs) throw(...);
+CSid& operator= (const CSid& rhs) throw(...);  
+CSid& operator= (const SID& rhs) throw(...);
 ```  
   
 ### Parameters  

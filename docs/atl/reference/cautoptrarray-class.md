@@ -48,9 +48,8 @@ This class provides methods useful when constructing an array of smart pointers.
   
 ```
 template <typename E>  
-class CAutoPtrArray : public CAtlArray<
-    ATL::CAutoPtr<E>,
- CAutoPtrElementTraits<E>>
+class CAutoPtrArray : 
+   public CAtlArray<ATL::CAutoPtr<E>, CAutoPtrElementTraits<E>>
 ```  
   
 #### Parameters  

@@ -39,12 +39,16 @@ These functions provide support for COM Map **IUnknown** implementations.
 |-|-|  
 |[AtlInternalQueryInterface](#atlinternalqueryinterface)|Delegates to the **IUnknown** of a nonaggregated object.|  
 |[InlineIsEqualIUnknown](#inlineisequaliunknown)|Generates efficient code for comparing interfaces against **IUnknown**.|  
+
   
+## Requirements  
+ **Header:** atlbase.h  
+
 ##  <a name="atlinternalqueryinterface"></a>  AtlInternalQueryInterface  
  Retrieves a pointer to the requested interface.  
   
 ```
-HRESULT     AtlInternalQueryInterface(
+HRESULT AtlInternalQueryInterface(
     void* pThis,
     const _ATL_INTMAP_ENTRY* pEntries,
     REFIID iid,

@@ -42,7 +42,7 @@ A smart pointer class for managing COM interface pointers.
 ## Syntax  
   
 ```
-template<class T,  const IID* piid= &__uuidof(T)>  
+template<class T, const IID* piid= &__uuidof(T)>  
 class CComQIPtr: public CComPtr<T>
 ```  
   

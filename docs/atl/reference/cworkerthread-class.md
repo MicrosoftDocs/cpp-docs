@@ -227,7 +227,7 @@ HRESULT Initialize(CWorkerThread<ThreadTraits>* pThread) throw();
  Call this method to remove a handle from the list of waitable objects.  
   
 ```
-HRESULT RemoveHandle(HANDLE   hObject) throw();
+HRESULT RemoveHandle(HANDLE hObject) throw();
 ```  
   
 ### Parameters  

@@ -109,7 +109,7 @@ class CSimpleMap
  Adds a key and associated value to the map array.  
   
 ```
-BOOL Add(const TKey& key,  const TVal& val);
+BOOL Add(const TKey& key, const TVal& val);
 ```  
   
 ### Parameters  
@@ -301,7 +301,7 @@ TKey ReverseLookup(const TVal& val) const;
  Sets the value associated with the given key.  
   
 ```
-BOOL SetAt(const TKey& key,  const TVal& val);
+BOOL SetAt(const TKey& key, const TVal& val);
 ```  
   
 ### Parameters  

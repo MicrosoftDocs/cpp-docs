@@ -48,7 +48,7 @@ This class provides methods for implementing a snap-in node object.
 ## Syntax  
   
 ```
-template <class T,  BOOL bIsExtension = FALSE>  
+template <class T, BOOL bIsExtension = FALSE>  
 class ATL_NO_VTABLE CSnapInItemImpl : public CSnapInItem
 ```  
   
@@ -144,7 +144,7 @@ AddMenuItems(
  This method implements the Win32 function [IExtendContextMenu::Command](http://msdn.microsoft.com/library/aa814842).  
   
 ```
-Command(long lCommandID,  DATA_OBJECT_TYPES type);
+Command(long lCommandID, DATA_OBJECT_TYPES type);
 ```  
   
 ### Parameters  
@@ -205,7 +205,7 @@ CSnapInItemImpl();
  This function is called to retrieve information about the item.  
   
 ```
-FillData(CLIPFORMAT cf,  LPSTREAM pStream);
+FillData(CLIPFORMAT cf, LPSTREAM pStream);
 ```  
   
 ### Parameters  
@@ -479,7 +479,7 @@ void UpdateMenuState(
  Call this function to modify a toolbar button, of the snap-in object, before it is displayed.  
   
 ```
-BOOL UpdateToolbarButton(UINT id,  BYTE fsState);
+BOOL UpdateToolbarButton(UINT id, BYTE fsState);
 ```  
   
 ### Parameters  

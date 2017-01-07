@@ -274,7 +274,7 @@ WNDPROC m_pfnSuperWindowProc;
  Called after receiving the last message (typically `WM_NCDESTROY`).  
   
 ```
-virtual void OnFinalMessage(HWND   hWnd);
+virtual void OnFinalMessage(HWND hWnd);
 ```  
   
 ### Parameters  
@@ -288,7 +288,7 @@ virtual void OnFinalMessage(HWND   hWnd);
  Subclasses the window identified by `hWnd` and attaches it to the `CWindowImpl` object.  
   
 ```
-BOOL SubclassWindow(HWND   hWnd);
+BOOL SubclassWindow(HWND hWnd);
 ```  
   
 ### Parameters  

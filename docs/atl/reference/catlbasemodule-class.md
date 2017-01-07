@@ -87,7 +87,7 @@ class CAtlBaseModule : public _ATL_BASE_MODULE
  Adds a resource instance to the list of stored handles.  
   
 ```
-bool AddResourceInstance(HINSTANCE   hInst) throw();
+bool AddResourceInstance(HINSTANCE hInst) throw();
 ```  
   
 ### Parameters  
@@ -111,7 +111,7 @@ CAtlBaseModule() throw();
  Returns a handle to a specified resource instance.  
   
 ```
-HINSTANCE GetHInstanceAt(int   i) throw();
+HINSTANCE GetHInstanceAtint i) throw();
 ```  
   
 ### Parameters  
@@ -155,7 +155,7 @@ static bool m_bInitFailed;
  Removes a resource instance from the list of stored handles.  
   
 ```
-bool RemoveResourceInstance(HINSTANCE   hInst) throw();
+bool RemoveResourceInstance(HINSTANCE hInst) throw();
 ```  
   
 ### Parameters  
@@ -169,7 +169,7 @@ bool RemoveResourceInstance(HINSTANCE   hInst) throw();
  Sets the resource instance of a `CAtlBaseModule` object.  
   
 ```
-HINSTANCE SetResourceInstance(HINSTANCE   hInst) throw();
+HINSTANCE SetResourceInstance(HINSTANCE hInst) throw();
 ```  
   
 ### Parameters  

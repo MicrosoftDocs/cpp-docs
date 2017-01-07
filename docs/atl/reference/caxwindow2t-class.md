@@ -144,9 +144,9 @@ HRESULT CreateControlLic(
     DWORD dwResID,
     IStream* pStream = NULL,
     IUnknown** ppUnkContainer = NULL,
-    BSTR bstrLicKey = NULL);
-
-    HRESULT CreateControlLic(
+    BSTR bstrLicKey = NULL);  
+  
+HRESULT CreateControlLic(
     LPCOLESTR lpszName,
     IStream* pStream = NULL,
     IUnknown** ppUnkContainer = NULL,
@@ -174,9 +174,9 @@ HRESULT CreateControlLicEx(
     IUnknown** ppUnkControl = NULL,
     REFIID iidSink = IID_NULL,
     IUnknown* punkSink = NULL,
-    BSTR bstrLicKey = NULL);
-
-    HRESULT CreateControlLicEx(
+    BSTR bstrLicKey = NULL);  
+  
+HRESULT CreateControlLicEx(
     DWORD dwResID,
     IStream* pStream = NULL,
     IUnknown** ppUnkContainer = NULL,
@@ -210,7 +210,7 @@ static LPCTSTR GetWndClassName();
  Assigns an `HWND` to an existing `CAxWindow2T` object.  
   
 ```
-CAxWindow2T<TBase>& operator= (HWND   hWnd);
+CAxWindow2T<TBase>& operator= (HWND hWnd);
 ```  
   
 ### Parameters  

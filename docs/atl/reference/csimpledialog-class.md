@@ -46,7 +46,7 @@ This class implements a basic modal dialog box.
 ## Syntax  
   
 ```
-template <WORD t_wDlgTemplateID,  BOOL t_bCenter = TRUE>  
+template <WORD t_wDlgTemplateID, BOOL t_bCenter = TRUE>  
 class CSimpleDialog : public CDialogImplBase
 ```  
   

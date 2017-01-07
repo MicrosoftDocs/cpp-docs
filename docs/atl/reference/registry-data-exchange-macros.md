@@ -43,7 +43,10 @@ These macros perform Registry Data Exchange operations.
 |[RDX_CSTRING_TEXT](#rdx_cstring_text)|Associates the specified registry entry with a specified member variable of type CString.|  
 |[RDX_DWORD](#rdx_dword)|Associates the specified registry entry with a specified member variable of type DWORD.|  
 |[RDX_TEXT](#rdx_text)|Associates the specified registry entry with a specified member variable of type TCHAR.|  
-  
+
+## Requirements  
+ **Header:** atlplus.h  
+   
 ##  <a name="begin_rdx_map"></a>  BEGIN_RDX_MAP  
  Marks the beginning of the Registry Data Exchange map.  
   

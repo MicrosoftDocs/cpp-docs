@@ -176,7 +176,7 @@ STDMETHOD(DoVerb)(
  Tells the control to discard any undo state it is maintaining.  
   
 ```
-HRESULT DoVerbDiscardUndo(LPCRECT /* prcPosRect */,  HWND /* hwndParent */);
+HRESULT DoVerbDiscardUndo(LPCRECT /* prcPosRect */, HWND /* hwndParent */);
 ```  
   
 ### Parameters  
@@ -193,7 +193,7 @@ HRESULT DoVerbDiscardUndo(LPCRECT /* prcPosRect */,  HWND /* hwndParent */);
  Deactivates and removes the control's user interface, and hides the control.  
   
 ```
-HRESULT DoVerbHide(LPCRECT /* prcPosRect */,  HWND /* hwndParent */);
+HRESULT DoVerbHide(LPCRECT /* prcPosRect */, HWND /* hwndParent */);
 ```  
   
 ### Parameters  
@@ -210,7 +210,7 @@ HRESULT DoVerbHide(LPCRECT /* prcPosRect */,  HWND /* hwndParent */);
  Runs the control and installs its window, but does not install the control's user interface.  
   
 ```
-HRESULT DoVerbInPlaceActivate(LPCRECT prcPosRect,  HWND /* hwndParent */);
+HRESULT DoVerbInPlaceActivate(LPCRECT prcPosRect, HWND /* hwndParent */);
 ```  
   
 ### Parameters  
@@ -230,7 +230,7 @@ HRESULT DoVerbInPlaceActivate(LPCRECT prcPosRect,  HWND /* hwndParent */);
  Causes the control to be open-edited in a separate window.  
   
 ```
-HRESULT DoVerbOpen(LPCRECT /* prcPosRect */,  HWND /* hwndParent */);
+HRESULT DoVerbOpen(LPCRECT /* prcPosRect */, HWND /* hwndParent */);
 ```  
   
 ### Parameters  
@@ -247,7 +247,7 @@ HRESULT DoVerbOpen(LPCRECT /* prcPosRect */,  HWND /* hwndParent */);
  Defines the action taken when the user double-clicks the control.  
   
 ```
-HRESULT DoVerbPrimary(LPCRECT prcPosRect,  HWND hwndParent);
+HRESULT DoVerbPrimary(LPCRECT prcPosRect, HWND hwndParent);
 ```  
   
 ### Parameters  
@@ -267,7 +267,7 @@ HRESULT DoVerbPrimary(LPCRECT prcPosRect,  HWND hwndParent);
  Tells the container to make the control visible.  
   
 ```
-HRESULT DoVerbShow(LPCRECT prcPosRect,  HWND /* hwndParent */);
+HRESULT DoVerbShow(LPCRECT prcPosRect, HWND /* hwndParent */);
 ```  
   
 ### Parameters  
@@ -284,7 +284,7 @@ HRESULT DoVerbShow(LPCRECT prcPosRect,  HWND /* hwndParent */);
  Activates the control's user interface and notifies the container that its menus are being replaced by composite menus.  
   
 ```
-HRESULT DoVerbUIActivate(LPCRECT prcPosRect,  HWND /* hwndParent */);
+HRESULT DoVerbUIActivate(LPCRECT prcPosRect, HWND /* hwndParent */);
 ```  
   
 ### Parameters  
@@ -644,7 +644,7 @@ STDMETHOD(SetExtent)(
  Tells the control the names of the container application and container document.  
   
 ```
-STDMETHOD(SetHostNames)(LPCOLESTR /* szContainerApp */,  LPCOLESTR /* szContainerObj */);
+STDMETHOD(SetHostNames)(LPCOLESTR /* szContainerApp */, LPCOLESTR /* szContainerObj */);
 ```  
   
 ### Return Value  

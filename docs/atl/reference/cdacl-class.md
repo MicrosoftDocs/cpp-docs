@@ -182,9 +182,8 @@ bool AddDeniedAce(
  The constructor.  
   
 ```
-CDacl (const ACL& rhs) throw(...);
-
-    CDacl () throw();
+CDacl (const ACL& rhs) throw(...);  
+CDacl () throw();
 ```  
   
 ### Parameters  
@@ -235,7 +234,7 @@ CDacl& operator= (const ACL& rhs) throw(...);
  Removes a specific ACE (access-control entry) from the `CDacl` object.  
   
 ```
-void RemoveAce(UINT   nIndex) throw();
+void RemoveAce(UINT nIndex) throw();
 ```  
   
 ### Parameters  

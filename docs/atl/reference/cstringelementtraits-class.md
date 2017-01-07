@@ -141,7 +141,7 @@ static void CopyElements(
  Call this static function to calculate a hash value for the given string element.  
   
 ```
-static ULONG Hash(INARGTYPE   str);
+static ULONG Hash(INARGTYPE str);
 ```  
   
 ### Parameters  

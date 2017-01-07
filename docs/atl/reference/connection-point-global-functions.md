@@ -43,7 +43,10 @@ These functions provide support for connection points and sink maps.
 |[AtlAdvise](#atladvise)|Creates a connection between an object's connection point and a client's sink.|  
 |[AtlUnadvise](#atlunadvise)|Terminates the connection established through `AtlAdvise`.|  
 |[AtlAdviseSinkMap](#atladvisesinkmap)|Advises or unadvises entries in an event sink map.|  
-  
+
+## Requirements  
+ **Header:** atlbase.h  
+   
 ##  <a name="atladvise"></a>  AtlAdvise  
  Creates a connection between an object's connection point and a client's sink.  
   
@@ -51,7 +54,7 @@ These functions provide support for connection points and sink maps.
 >  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
   
 ```
-HRESULT     AtlAdvise(
+HRESULT    AtlAdvise(
     IUnknown* pUnkCP,
     IUnknown* pUnk,
     const IID& iid,
@@ -87,7 +90,7 @@ HRESULT     AtlAdvise(
 >  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
   
 ```
-HRESULT     AtlUnadvise(
+HRESULT    AtlUnadvise(
     IUnknown* pUnkCP,
     const IID& iid,
     DWORD dw);
@@ -116,7 +119,7 @@ HRESULT     AtlUnadvise(
 >  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
   
 ```
-HRESULT AtlAdviseSinkMap(T* pT,  bool bAdvise);
+HRESULT AtlAdviseSinkMap(T* pT, bool bAdvise);
 ```  
   
 ### Parameters  

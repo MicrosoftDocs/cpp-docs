@@ -117,9 +117,8 @@ BOOL Add(const T& t);
  The constructor for the array object.  
   
 ```
-CSimpleArray(const CSimpleArray<T, TEqual>& src);
-
-    CSimpleArray();
+CSimpleArray(const CSimpleArray<T, TEqual>& src);  
+CSimpleArray();
 ```     
   
 ### Parameters  
@@ -180,7 +179,7 @@ int GetSize() const;
  Retrieves an element from the array.  
   
 ```
-T& operator[](int   nindex);
+T& operator[]int nindex);
 ```  
   
 ### Parameters  
@@ -246,7 +245,7 @@ void RemoveAll();
  Removes the specified element from the array.  
   
 ```
-BOOL RemoveAt(int   nIndex);
+BOOL RemoveAtint nIndex);
 ```  
   
 ### Parameters  

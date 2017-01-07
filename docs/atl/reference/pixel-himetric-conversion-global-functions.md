@@ -46,7 +46,9 @@ These functions provide support for converting to and from pixel and HIMETRIC un
   
  
 ```
-extern void           AtlHiMetricToPixel(const SIZEL* lpSizeInHiMetric,  LPSIZEL lpSizeInPix);
+extern void AtlHiMetricToPixel(
+  const SIZEL* lpSizeInHiMetric, 
+  LPSIZEL lpSizeInPix);
 ```  
   
 ### Parameters  
@@ -58,12 +60,17 @@ extern void           AtlHiMetricToPixel(const SIZEL* lpSizeInHiMetric,  LPSIZEL
   
 ### Example  
  [!code-cpp[NVC_ATL_COM#49](../../atl/codesnippet/cpp/pixel-himetric-conversion-global-functions_1.cpp)]  
+
+### Requirements  
+ **Header:** atlwin.h  
   
 ##  <a name="atlpixeltohimetric"></a>  AtlPixelToHiMetric  
  Converts an object's size in pixels on the screen device to a size in HIMETRIC units (each unit is 0.01 millimeter).  
   
 ```
-extern void           AtlPixelToHiMetric(const SIZEL* lpSizeInPix,  LPSIZEL lpSizeInHiMetric);
+extern void AtlPixelToHiMetric(
+  const SIZEL* lpSizeInPix,  
+  LPSIZEL lpSizeInHiMetric);
 ```  
   
 ### Parameters  
@@ -75,6 +82,9 @@ extern void           AtlPixelToHiMetric(const SIZEL* lpSizeInPix,  LPSIZEL lpSi
   
 ### Example  
  [!code-cpp[NVC_ATL_COM#51](../../atl/codesnippet/cpp/pixel-himetric-conversion-global-functions_2.cpp)]  
-  
+
+### Requirements  
+ **Header:** atlwin.h  
+
 ## See Also  
  [Functions](../../atl/reference/atl-functions.md)

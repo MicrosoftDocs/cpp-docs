@@ -40,7 +40,10 @@ These macros define connection point maps and entries.
 |[BEGIN_CONNECTION_POINT_MAP](#begin_connection_point_map)|Marks the beginning of the connection point map entries.|  
 |[CONNECTION_POINT_ENTRY](#connection_point_entry)|Enters connection points into the map.|  
 |[END_CONNECTION_POINT_MAP](#end_connection_point_map)|Marks the end of the connection point map entries.|  
-  
+
+## Requirements  
+ **Header:** atlcom.h 
+   
 ##  <a name="begin_connection_point_map"></a>  BEGIN_CONNECTION_POINT_MAP  
  Marks the beginning of the connection point map entries.  
   

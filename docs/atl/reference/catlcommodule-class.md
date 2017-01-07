@@ -100,7 +100,7 @@ CAtlComModule() throw();
  Call this method to update the system registry for each object in the object map.  
   
 ```
-HRESULT RegisterServer(BOOL bRegTypeLib = FALSE,  const CLSID* pCLSID = NULL);
+HRESULT RegisterServer(BOOL bRegTypeLib = FALSE, const CLSID* pCLSID = NULL);
 ```  
   
 ### Parameters  
@@ -121,8 +121,7 @@ HRESULT RegisterServer(BOOL bRegTypeLib = FALSE,  const CLSID* pCLSID = NULL);
   
 ```
 HRESULT RegisterTypeLib(LPCTSTR lpszIndex);
-
-    HRESULT RegisterTypeLib();
+HRESULT RegisterTypeLib();
 ```  
   
 ### Parameters  
@@ -139,7 +138,9 @@ HRESULT RegisterTypeLib(LPCTSTR lpszIndex);
  Call this method to unregister each object in the object map.  
   
 ```
-HRESULT UnregisterServer(BOOL bRegTypeLib = FALSE,  const CLSID* pCLSID = NULL);
+HRESULT UnregisterServer(
+  BOOL bRegTypeLib = FALSE,  
+  const CLSID* pCLSID = NULL);
 ```  
   
 ### Parameters  
@@ -160,8 +161,7 @@ HRESULT UnregisterServer(BOOL bRegTypeLib = FALSE,  const CLSID* pCLSID = NULL);
   
 ```
 HRESULT UnRegisterTypeLib(LPCTSTR lpszIndex);
-
-    HRESULT UnRegisterTypeLib();
+HRESULT UnRegisterTypeLib();
 ```  
   
 ### Parameters  

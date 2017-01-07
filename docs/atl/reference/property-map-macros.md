@@ -43,7 +43,10 @@ These macros define property maps and entries.
 |[PROP_ENTRY_TYPE_EX](#prop_entry_type_ex)|Enters a property description, property DISPID, property page CLSID, and `IDispatch` IID into the property map.|  
 |[PROP_PAGE](#prop_page)|Enters a property page CLSID into the property map.|  
 |[END_PROP_MAP](#end_prop_map)|Marks the end of the ATL property map.|  
-  
+
+## Requirements  
+ **Header:** atlcom.h  
+   
 ##  <a name="begin_prop_map"></a>  BEGIN_PROP_MAP  
  Marks the beginning of the object's property map.  
   

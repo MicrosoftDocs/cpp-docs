@@ -110,7 +110,7 @@ virtual BOOL IsRunning();
  Locks the control into the running state.  
   
 ```
-HRESULT LockRunning(BOOL fLock,  BOOL fLastUnlockCloses);
+HRESULT LockRunning(BOOL fLock, BOOL fLastUnlockCloses);
 ```  
   
 ### Return Value  

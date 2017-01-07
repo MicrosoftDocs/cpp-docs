@@ -88,7 +88,7 @@ class IOleInPlaceObjectWindowlessImpl
  Returns **E_NOTIMPL**.  
   
 ```
-HRESULT ContextSensitiveHelp(BOOL   fEnterMode);
+HRESULT ContextSensitiveHelp(BOOL  fEnterMode);
 ```  
   
 ### Remarks  

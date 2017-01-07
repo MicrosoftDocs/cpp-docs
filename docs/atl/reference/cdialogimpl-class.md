@@ -115,14 +115,11 @@ template <class T,
   
 ```  
  
-HWND Create(HWND hWndParent, LPARAM dwInitParam = NULL);
-
-    HWND Create(
+HWND Create(HWND hWndParent, LPARAM dwInitParam = NULL);  
+HWND Create(
     HWND hWndParent,  
     RECT&, 
-    LPARAM dwInitParam = NULL);
-
- 
+    LPARAM dwInitParam = NULL); 
 ```  
   
 ### Parameters  

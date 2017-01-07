@@ -129,7 +129,7 @@ HRESULT Append(LPCOLESTR lpsz) throw();
 
 HRESULT Append(LPCSTR lpsz) throw();
 
-HRESULT Append(LPCOLESTR lpsz,  int nLen) throw();
+HRESULT Append(LPCOLESTR lpsz, int nLen) throw();
 ```  
   
 ### Parameters  
@@ -178,7 +178,7 @@ HRESULT AppendBSTR(BSTR p) throw();
  Appends the specified number of bytes to [m_str](#m_str) without conversion.  
   
 ```
-HRESULT AppendBytes(const char* lpsz,  int nLen) throw();
+HRESULT AppendBytes(const char* lpsz, int nLen) throw();
 ```  
   
 ### Parameters  
@@ -410,7 +410,7 @@ unsigned int Length() const throw();
  Loads a string resource specified by `nID` and stores it in this object.  
   
 ```
-bool LoadString(HINSTANCE hInst,  UINT nID) throw();
+bool LoadString(HINSTANCE hInst, UINT nID) throw();
 bool LoadString(UINT nID) throw();
 ```  
   
@@ -474,7 +474,7 @@ bool operator!= (LPCOLESTR pszSrc) const;
 
     bool operator!= (LPCSTR pszSrc) const;
 
-    bool operator!= (int nNull) const throw();
+    bool operator!= int nNull) const throw();
 ```  
   
 ### Parameters  
@@ -514,9 +514,8 @@ BSTR* operator&() throw();
  Appends a string to the `CComBSTR` object.  
   
 ```
-CComBSTR& operator+= (const CComBSTR& bstrSrc);
-
-    CComBSTR& operator+= (const LPCOLESTR pszSrc);
+CComBSTR& operator+= (const CComBSTR& bstrSrc);  
+CComBSTR& operator+= (const LPCOLESTR pszSrc);
 ```  
   
 ### Parameters  
@@ -551,9 +550,8 @@ bool operator<(LPCSTR pszSrc) const throw();
  Sets the [m_str](#m_str) member to a copy of `pSrc` or to a copy of the `BSTR` member of *src*.  
   
 ```
-CComBSTR& operator= (const CComBSTR& src);
-
-    CComBSTR& operator= (LPCOLESTR pSrc);
+CComBSTR& operator= (const CComBSTR& src);  
+CComBSTR& operator= (LPCOLESTR pSrc);
 
     CComBSTR& operator= (LPCSTR pSrc);
 ```  
@@ -573,7 +571,7 @@ bool operator== (LPCOLESTR pszSrc) const;
 
     bool operator== (LPCSTR pszSrc) const;
 
-    bool operator== (int nNull) const throw();
+    bool operator== int nNull) const throw();
 ```  
   
 ### Parameters  

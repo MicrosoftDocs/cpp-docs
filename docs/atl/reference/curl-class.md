@@ -165,7 +165,7 @@ inline void Clear() throw();
  Call this method to decode and parse the URL.  
   
 ```
-BOOL CrackUrl(LPCTSTR lpszUrl,  DWORD dwFlags = 0) throw();
+BOOL CrackUrl(LPCTSTR lpszUrl, DWORD dwFlags = 0) throw();
 ```  
   
 ### Parameters  

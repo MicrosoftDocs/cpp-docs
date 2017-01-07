@@ -89,7 +89,8 @@ class CPoint : public tagPOINT
 ## Requirements  
  **Header:** atltypes.h  
   
-##  <a name="cpoint"></a>  CPoint::CPoint  Constructs a `CPoint` object.  
+##  <a name="cpoint"></a>  CPoint::CPoint
+ Constructs a `CPoint` object.  
   
 ```  
 CPoint() throw();
@@ -140,7 +141,6 @@ CPoint ptMFCBig(sHowBig);
  
 DWORD   dwSize;  
 dwSize = MAKELONG(35, 95);
-
  
 CPoint ptFromDouble(dwSize);
 ASSERT(ptFromDouble == ptMFCHere);

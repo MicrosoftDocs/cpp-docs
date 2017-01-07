@@ -116,7 +116,7 @@ class CAtlList
   
 ```
 POSITION AddHead();
-POSITION AddHead(INARGTYPE   element);
+POSITION AddHead(INARGTYPE element);
 ```  
   
 ### Parameters  
@@ -154,7 +154,7 @@ void AddHeadList(const CAtlList<E, ETraits>* plNew);
   
 ```
 POSITION AddTail();
-POSITION AddTail(INARGTYPE   element);
+POSITION AddTail(INARGTYPE element);
 ```  
   
 ### Parameters  
@@ -233,7 +233,7 @@ CAtlList(UINT nBlockSize = 10) throw();
  Call this method to search the list for the specified element.  
   
 ```
-POSITION Find(INARGTYPE element,  POSITION posStartAfter = NULL) const throw();
+POSITION Find(INARGTYPE element, POSITION posStartAfter = NULL) const throw();
 ```  
   
 ### Parameters  
@@ -448,7 +448,7 @@ typedef ETraits::INARGTYPE INARGTYPE;
  Call this method to insert a new element into the list after the specified position.  
   
 ```
-POSITION InsertAfter(POSITION pos,  INARGTYPE element);
+POSITION InsertAfter(POSITION pos, INARGTYPE element);
 ```  
   
 ### Parameters  
@@ -471,7 +471,7 @@ POSITION InsertAfter(POSITION pos,  INARGTYPE element);
  Call this method to insert a new element into the list before the specified position.  
   
 ```
-POSITION InsertBefore(POSITION pos,  INARGTYPE element);
+POSITION InsertBefore(POSITION pos, INARGTYPE element);
 ```  
   
 ### Parameters  
@@ -631,7 +631,7 @@ void RemoveTailNoReturn() throw();
  Call this method to set the value of the element at a given position in the list.  
   
 ```
-void SetAt(POSITION pos,  INARGTYPE element);
+void SetAt(POSITION pos, INARGTYPE element);
 ```  
   
 ### Parameters  
@@ -651,7 +651,7 @@ void SetAt(POSITION pos,  INARGTYPE element);
  Call this method to swap elements in the list.  
   
 ```
-void SwapElements(POSITION pos1,  POSITION pos2) throw();
+void SwapElements(POSITION pos1, POSITION pos2) throw();
 ```  
   
 ### Parameters  

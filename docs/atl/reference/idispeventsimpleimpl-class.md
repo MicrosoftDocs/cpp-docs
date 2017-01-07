@@ -45,8 +45,7 @@ This class provides implementations of the `IDispatch` methods, without getting 
 ## Syntax  
   
 ```
-template <UINT nID, class T,
-    const IID* pdiid>  
+template <UINT nID, class T, const IID* pdiid>  
 class ATL_NO_VTABLE IDispEventSimpleImpl : public _IDispEventLocator<nID, pdiid>
 ```    
   

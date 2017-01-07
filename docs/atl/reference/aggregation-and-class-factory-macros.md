@@ -50,7 +50,10 @@ These macros provide ways of controlling aggregation and of declaring class fact
 |[DECLARE_POLY_AGGREGATABLE](#declare_poly_aggregatable)|Checks the value of the outer unknown and declares your object aggregatable or not aggregatable, as appropriate.|  
 |[DECLARE_PROTECT_FINAL_CONSTRUCT](#declare_protect_final_construct)|Protects the outer object from deletion during construction of an inner object.|  
 |[DECLARE_VIEW_STATUS](#declare_view_status)|Specifies the **VIEWSTATUS** flags to the container.|  
-  
+
+## Requirements  
+ **Header:** atlcom.h  
+   
 ##  <a name="declare_aggregatable"></a>  DECLARE_AGGREGATABLE  
  Specifies that your object can be aggregated.  
   
@@ -100,11 +103,11 @@ public CComObjectRootEx<CComGlobalsThreadModel>
   
  ATL provides three other macros that declare a class factory:  
   
-- [DECLARE_CLASSFACTORY2](#declare_classfactory2)Ã‚ Ã‚ Ã‚ Uses [CComClassFactory2](../../atl/reference/ccomclassfactory2-class.md), which controls creation through a license.  
+- [DECLARE_CLASSFACTORY2](#declare_classfactory2) Uses [CComClassFactory2](../../atl/reference/ccomclassfactory2-class.md), which controls creation through a license.  
   
-- [DECLARE_CLASSFACTORY_AUTO_THREAD](#declare_classfactory_auto_thread)Ã‚ Ã‚ Ã‚ Uses [CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md), which creates objects in multiple apartments.  
+- [DECLARE_CLASSFACTORY_AUTO_THREAD](#declare_classfactory_auto_thread) Uses [CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md), which creates objects in multiple apartments.  
   
-- [DECLARE_CLASSFACTORY_SINGLETON](#declare_classfactory_singleton)Ã‚ Ã‚ Ã‚ Uses [CComClassFactorySingleton](../../atl/reference/ccomclassfactorysingleton-class.md), which constructs a single [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) object.  
+- [DECLARE_CLASSFACTORY_SINGLETON](#declare_classfactory_singleton) Uses [CComClassFactorySingleton](../../atl/reference/ccomclassfactorysingleton-class.md), which constructs a single [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) object.  
   
 ##  <a name="declare_classfactory_ex"></a>  DECLARE_CLASSFACTORY_EX  
  Declares `cf` to be the class factory.  

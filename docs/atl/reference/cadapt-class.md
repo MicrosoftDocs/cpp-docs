@@ -98,8 +98,7 @@ class CAdapt
 ```
 CAdapt();
 CAdapt(const T& rSrc);
-
-    CAdapt(const CAdapt& rSrCA);
+CAdapt(const CAdapt& rSrCA);
 ```  
   
 ### Parameters  

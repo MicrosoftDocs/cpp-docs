@@ -67,7 +67,7 @@ __interface IWorkerThreadClient
  Implement this method to close the handle associated with this object.  
   
 ```
-HRESULT CloseHandle(HANDLE    hHandle);
+HRESULT CloseHandle(HANDLE  hHandle);
 ```  
   
 ### Parameters  
@@ -91,8 +91,8 @@ HRESULT CloseHandle(HANDLE    hHandle);
 ```
 HRESULT Execute(
     DWORD_PTR
-dwParam,
- HANDLE   hObject);
+    dwParam,
+    HANDLE hObject);
 ```  
   
 ### Parameters  

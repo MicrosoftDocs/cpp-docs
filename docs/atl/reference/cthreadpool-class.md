@@ -259,7 +259,7 @@ ULONG STDMETHODCALLTYPE Release() throw();
  Call this method to set the number of threads in the pool.  
   
 ```
-HRESULT STDMETHODCALLTYPE SetSize(int   nNumThreads) throw();
+HRESULT STDMETHODCALLTYPE SetSizeint nNumThreads) throw();
 ```  
   
 ### Parameters  

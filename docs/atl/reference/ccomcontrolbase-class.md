@@ -242,7 +242,7 @@ BOOL DoesVerbUIActivate(LONG iVerb);
  Displays the control's property pages.  
   
 ```
-HRESULT DoVerbProperties(LPCRECT /* prcPosRect */,  HWND hwndParent);
+HRESULT DoVerbProperties(LPCRECT /* prcPosRect */, HWND hwndParent);
 ```  
   
 ### Parameters  
@@ -651,7 +651,7 @@ void GetZoomInfo(ATL_DRAWINFO& di);
  Causes the control to transition from the inactive state to whatever state the verb in `iVerb` indicates.  
   
 ```
-HRESULT InPlaceActivate(LONG iVerb,  const RECT* prcPosRect = NULL);
+HRESULT InPlaceActivate(LONG iVerb, const RECT* prcPosRect = NULL);
 ```  
   
 ### Parameters  
@@ -1271,7 +1271,7 @@ HRESULT SendOnSave();
  Notifies all registered advisory sinks that the control's view has changed.  
   
 ```
-HRESULT SendOnViewChange(DWORD dwAspect,  LONG lindex = -1);
+HRESULT SendOnViewChange(DWORD dwAspect, LONG lindex = -1);
 ```  
   
 ### Parameters  

@@ -228,7 +228,7 @@ HRESULT PreMessageLoop(int nShowCmd) throw();
  Registers the class object with OLE so other applications can connect to it.  
   
 ```
-HRESULT RegisterClassObjects(DWORD dwClsContext,  DWORD dwFlags) throw();
+HRESULT RegisterClassObjects(DWORD dwClsContext, DWORD dwFlags) throw();
 ```  
   
 ### Parameters  

@@ -42,7 +42,10 @@ This class provides methods for creating and managing a map object.
 ## Syntax  
   
 ```
-template <typename K, typename V, class KTraits = CElementTraits<K>, class VTraits = CElementTraits<V>>  
+template <typename K, 
+          typename V, 
+          class KTraits = CElementTraits<K>,
+          class VTraits = CElementTraits<V>>  
 class CAtlMap
 ```  
   
@@ -559,7 +562,7 @@ void RemoveAtPos(POSITION pos) throw();
  Call this method to remove an element from the `CAtlMap` object, given the key.  
   
 ```
-bool RemoveKey(KINARGTYPE   key) throw();
+bool RemoveKey(KINARGTYPE key) throw();
 ```  
   
 ### Parameters  
@@ -658,8 +661,7 @@ typedef VTraits::OUTARGTYPE VOUTARGTYPE;
  The data member storing the key element.  
   
 ```
-const K
-    m_key;
+const K m_key;
 ```    
   
 ### Parameters  
@@ -670,8 +672,7 @@ const K
  The data member storing the value element.  
   
 ```
-V
-    m_value;
+V  m_value;
 ```    
   
 ### Parameters  

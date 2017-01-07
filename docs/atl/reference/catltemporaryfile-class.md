@@ -135,7 +135,7 @@ HRESULT Close(LPCTSTR szNewName = NULL) throw();
  Call this method to create a temporary file.  
   
 ```
-HRESULT Create(LPCTSTR pszDir = NULL,  DWORD dwDesiredAccess = GENERIC_WRITE) throw();
+HRESULT Create(LPCTSTR pszDir = NULL, DWORD dwDesiredAccess = GENERIC_WRITE) throw();
 ```  
   
 ### Parameters  
@@ -228,7 +228,7 @@ HRESULT HandsOn() throw();
  Call this method to lock a region in the temporary file to prevent other processes from accessing it.  
   
 ```
-HRESULT LockRange(ULONGLONG nPos,  ULONGLONG nCount) throw();
+HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 ```  
   
 ### Parameters  
@@ -284,7 +284,7 @@ HRESULT Read(
  Call this method to move the file pointer of the temporary file.  
   
 ```
-HRESULT Seek(LONGLONG nOffset,  DWORD dwFrom = FILE_CURRENT) throw();
+HRESULT Seek(LONGLONG nOffset, DWORD dwFrom = FILE_CURRENT) throw();
 ```  
   
 ### Parameters  
@@ -337,7 +337,7 @@ LPCTSTR TempFileName() throw();
  Call this method to unlock a region of the temporary file.  
   
 ```
-HRESULT UnlockRange(ULONGLONG nPos,  ULONGLONG nCount) throw();
+HRESULT UnlockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 ```  
   
 ### Parameters  

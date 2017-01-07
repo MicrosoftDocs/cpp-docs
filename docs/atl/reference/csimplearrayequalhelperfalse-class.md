@@ -70,7 +70,7 @@ class CSimpleArrayEqualHelperFalse
  Returns false.  
   
 ```
-static bool IsEqual(const T&,  const T&);
+static bool IsEqual(const T&, const T&);
 ```  
   
 ### Return Value  

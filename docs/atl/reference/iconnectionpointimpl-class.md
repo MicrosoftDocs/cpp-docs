@@ -138,8 +138,7 @@ STDMETHOD(GetConnectionPointContainer)(IConnectionPointContainer** ppCPC);
  Manages the connections between the connection point object and a sink.  
   
 ```
-CDV
-    m_vec;
+CDV m_vec;
 ```     
   
 ### Remarks  

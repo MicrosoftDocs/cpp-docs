@@ -112,9 +112,8 @@ class CW2AEX
  The constructor.  
   
 ```
-CW2AEX(LPCWSTR psz,  UINT nCodePage) throw(...);
-
-    CW2AEX(LPCWSTR psz) throw(...);
+CW2AEX(LPCWSTR psz, UINT nCodePage) throw(...);  
+CW2AEX(LPCWSTR psz) throw(...);
 ```  
   
 ### Parameters  

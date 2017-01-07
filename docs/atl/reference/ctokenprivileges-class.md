@@ -95,9 +95,8 @@ class CTokenPrivileges
  Adds one or more privileges to the `CTokenPrivileges` access token object.  
   
 ```
-bool Add(LPCTSTR pszPrivilege,  bool bEnable) throw(...);
-
-    void Add(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
+bool Add(LPCTSTR pszPrivilege, bool bEnable) throw(...);  
+void Add(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
 ```  
   
 ### Parameters  
@@ -279,9 +278,8 @@ bool LookupPrivilege(
  Assignment operator.  
   
 ```
-CTokenPrivileges& operator= (const TOKEN_PRIVILEGES& rPrivileges) throw(...);
-
-    CTokenPrivileges& operator= (const CTokenPrivileges& rhs) throw(...);
+CTokenPrivileges& operator= (const TOKEN_PRIVILEGES& rPrivileges) throw(...);  
+CTokenPrivileges& operator= (const CTokenPrivileges& rhs) throw(...);
 ```  
   
 ### Parameters  

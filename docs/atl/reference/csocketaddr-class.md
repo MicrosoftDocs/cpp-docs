@@ -196,7 +196,7 @@ int FindINET6Addr(
  Call this method to return a pointer to a specific element in the **addrinfo** list.  
   
 ```
-addrinfo* const GetAddrInfo(int   nIndex = 0) const;
+addrinfo* const GetAddrInfoint nIndex = 0) const;
 ```  
   
 ### Parameters  

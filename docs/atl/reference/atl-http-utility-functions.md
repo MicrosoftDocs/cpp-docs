@@ -26,11 +26,11 @@ These functions support manipulation of URLs.
 |[RGBToHtml](#rgbtohtml)|Converts a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value to the HTML text corresponding to that color value.|
 |[SystemTimeToHttpDate](#systemtimetohttpdate)|Call this function to convert a system time to a string in a format suitable for using in HTTP headers.|
 
+## Requirements  
+ **Header:** atlutil.h  
 
 ## <a name="atlcanonicalizeurl"></a> AtlCanonicalizeUrl
 Call this function to canonicalize a URL, which includes converting unsafe characters and spaces into escape sequences.  
-  
-### Syntax  
   
 ```    
 inline BOOL AtlCanonicalizeUrl(  
@@ -59,16 +59,11 @@ inline BOOL AtlCanonicalizeUrl(
 ### Remarks  
  Behaves like the current version of [InternetCanonicalizeUrl](http://msdn.microsoft.com/library/windows/desktop/aa384342) but does not require WinInet or Internet Explorer to be installed.  
   
-### Requirements  
- **Header:** atlutil.h  
-  
 ### See Also  
  [InternetCanonicalizeUrl](http://msdn.microsoft.com/library/windows/desktop/aa384342)
 
  ## <a name="atlcombineurl"></a> AtlCombineUrl
  Call this function to combine a base URL and a relative URL into a single, canonical URL.  
-  
-### Syntax  
   
 ```    
 inline BOOL AtlCombineUrl(  
@@ -101,13 +96,8 @@ inline BOOL AtlCombineUrl(
 ### Remarks  
  Behaves like the current version of [InternetCombineUrl](http://msdn.microsoft.com/library/windows/desktop/aa384355) but does not require WinInet or Internet Explorer to be installed.  
   
-### Requirements  
- **Header:** atlutil.h  
-
- ## <a name="atlescapeurl"></a> AtlEscapeUrl
+## <a name="atlescapeurl"></a> AtlEscapeUrl
  Call this function to convert all unsafe characters to escape sequences.  
-  
-### Syntax  
   
 ```    
 inline BOOL AtlEscapeUrl(  
@@ -144,13 +134,8 @@ inline BOOL AtlEscapeUrl(
 ### Return Value  
  Returns **TRUE** on success, **FALSE** on failure.  
   
-### Requirements  
- **Header:** atlutil.h  
-
- ## <a name="atlgetdefaulturlport"></a> 
+## <a name="atlgetdefaulturlport"></a> 
  Call this function to get the default port number associated with a particular Internet protocol or scheme.  
-  
-### Syntax  
   
 ```  
 inline ATL_URL_PORT AtlGetDefaultUrlPort(ATL_URL_SCHEME m_nScheme) throw();  
@@ -162,14 +147,23 @@ inline ATL_URL_PORT AtlGetDefaultUrlPort(ATL_URL_SCHEME m_nScheme) throw();
   
 ### Return Value  
  The [ATL_URL_PORT](atl-typedefs.md#atl_url_port) associated with the specified scheme or ATL_URL_INVALID_PORT_NUMBER if the scheme is not recognized.  
+
+## <a name="atlhexvalue"></a> AtlHexValue
+Call this function to get the numeric value of a hexadecimal digit.  
   
-### Requirements  
- **Header:** atlutil.h  
- 
- ## <a name="atlisunsafeurlchar"></a> AtlIsUnsafeUrlChar
+```  
+inline short AtlHexValue(char chIn) throw();  
+```  
+  
+### Parameters  
+ `chIn`  
+ The hexadecimal character '0'-'9', 'A'-'F', or 'a'-'f'.  
+  
+### Return Value  
+ The numeric value of the input character interpreted as a hexadecimal digit. For example, an input of '0' returns a value of 0 and an input of 'A' returns a value of 10. If the input character is not a hexadecimal digit, this function returns -1.  
+  
+## <a name="atlisunsafeurlchar"></a> AtlIsUnsafeUrlChar
  Call this function to find out whether a character is safe for use in a URL.  
-  
-## Syntax  
   
 ```  
 inline BOOL AtlIsUnsafeUrlChar(char chIn) throw();  
@@ -185,13 +179,8 @@ inline BOOL AtlIsUnsafeUrlChar(char chIn) throw();
 ### Remarks  
  Characters that should not be used in URLs can be tested using this function and converted using [AtlCanonicalizeUrl](#atlcanonicalizeurl).  
   
-### Requirements  
- **Header:** atlutil.h  
-
- ## <a name="atlunescapeurl"></a> AtlUnescapeUrl
+## <a name="atlunescapeurl"></a> AtlUnescapeUrl
  Call this function to convert escaped characters back to their original values.  
-  
-### Syntax  
   
 ```    
 inline BOOL AtlUnescapeUrl(  
@@ -226,13 +215,8 @@ inline BOOL AtlUnescapeUrl(
 ### Remarks  
  Reverses the conversion process applied by [AtlEscapeUrl](#atlescapeurl).  
   
-### Requirements  
- **Header:** atlutil.h  
- 
- ## <a name="rgbtohtml"></a> RGBToHtml
+## <a name="rgbtohtml"></a> RGBToHtml
 Converts a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value to the HTML text corresponding to that color value.  
-  
-### Syntax  
   
 ```  
 bool inline RGBToHtml(  
@@ -257,18 +241,13 @@ bool inline RGBToHtml(
 ### Remarks  
  An HTML color value is a pound sign followed by a 6-digit hexadecimal value using 2 digits for each of the red, green, and blue components of the color (for example, #FFFFFF is white).  
   
-### Requirements  
- **Header:** atlutil.h
-
 ## <a name="systemtimetohttpdate"></a> SystemTimeToHttpDate
 Call this function to convert a system time to a string in a format suitable for using in HTTP headers.  
-  
-### Syntax  
   
 ```  
 inline void SystemTimeToHttpDate( 
    const SYSTEMTIME& st,  
-   CStringA & strTime);  
+   CStringA& strTime);  
 ```  
   
 ### Parameters  
@@ -277,9 +256,6 @@ inline void SystemTimeToHttpDate(
   
  *strTime*  
  A reference to a string variable to receive the HTTP date time as defined in RFC 2616 ([http://www.ietf.org/rfc/rfc2616.txt](http://www.ietf.org/rfc/rfc2616.txt)) and RFC 1123 ([http://www.ietf.org/rfc/rfc1123.txt](http://www.ietf.org/rfc/rfc1123.txt)).  
-  
-### Requirements  
- **Header:** atlutil.h
   
 ## See Also  
  [Concepts](../../atl/active-template-library-atl-concepts.md)   

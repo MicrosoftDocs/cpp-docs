@@ -132,7 +132,7 @@ virtual ~CAtlPreviewCtrlImpl(void);
  Called by a Rich Preview handler to create the Windows window.  
   
 ```
-virtual BOOL Create(HWND hWndParent,  const RECT* prc);
+virtual BOOL Create(HWND hWndParent, const RECT* prc);
 ```  
   
 ### Parameters  
@@ -282,7 +282,7 @@ virtual void SetPreviewVisuals(
  Sets a new bounding rectangle for this control.  
   
 ```
-virtual void SetRect(const RECT* prc,  BOOL bRedraw);
+virtual void SetRect(const RECT* prc, BOOL bRedraw);
 ```  
   
 ### Parameters  

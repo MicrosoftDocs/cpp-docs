@@ -88,9 +88,8 @@ class CAtlFileMappingBase
  The constructor.  
   
 ```
-CAtlFileMappingBase(CAtlFileMappingBase& orig);
-
-    CAtlFileMappingBase() throw();
+CAtlFileMappingBase(CAtlFileMappingBase& orig);  
+CAtlFileMappingBase() throw();
 ```  
   
 ### Parameters  

@@ -45,7 +45,7 @@ This class forms the basis for several smart heap pointer classes.
 ## Syntax  
   
 ```
-template <class T,  class Allocator = CCRTAllocator>  
+template <class T, class Allocator = CCRTAllocator>  
 class CHeapPtrBase
 ```  
   

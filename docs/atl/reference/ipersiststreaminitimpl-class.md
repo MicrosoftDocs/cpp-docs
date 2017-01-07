@@ -143,7 +143,7 @@ STDMETHOD(Load)(LPSTREAM pStm);
  Saves the object's properties to the specified stream.  
   
 ```
-STDMETHOD(Save)(LPSTREAM pStm,  BOOL fClearDirty);
+STDMETHOD(Save)(LPSTREAM pStm, BOOL fClearDirty);
 ```  
   
 ### Remarks  

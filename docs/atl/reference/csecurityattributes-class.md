@@ -94,7 +94,7 @@ explicit CSecurityAttributes(const CSecurityDesc& rSecurityDescriptor, bool bInh
  Call this method to set the attributes of the `CSecurityAttributes` object.  
   
 ```
-void Set(const CSecurityDesc& rSecurityDescriptor,  bool bInheritHandle = false) throw(...);
+void Set(const CSecurityDesc& rSecurityDescriptor, bool bInheritHandle = false) throw(...);
 ```  
   
 ### Parameters  
