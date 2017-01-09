@@ -62,6 +62,9 @@ throw(CDaoException*);
   
  For related information, and for an example of calling `AfxDaoInit`, see [Technical Note 54](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md).  
   
+### Requirements  
+  **Header** afxdao.h  
+  
 ##  <a name="afxdaoterm"></a>  AfxDaoTerm  
  This function terminates the DAO database engine.  
   
@@ -78,6 +81,9 @@ void AfxDaoTerm();
  In regular DLLs, call `AfxDaoTerm` before the `ExitInstance` function, but after all MFC DAO objects have been destroyed.  
   
  For related information, see [Technical Note 54](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md).  
-  
+
+### Requirements  
+  **Header** afxdao.h  
+
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

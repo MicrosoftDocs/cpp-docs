@@ -74,12 +74,16 @@ AFX_ODBC_CALL(SQLFunc)
  Before invoking `AFX_ODBC_CALL`, you must declare a variable, `nRetCode`, of type **RETCODE**.  
   
  Note that the MFC ODBC classes now use only synchronous processing. In order to perform an asynchronous operation, you must call the ODBC API function **SQLSetConnectOption**. For more information, see the topic "Executing Functions Asynchronously" in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+
   
 ### Example  
  This example uses `AFX_ODBC_CALL` to call the **SQLColumns** ODBC API function, which returns a list of the columns in the table named by `strTableName`. Note the declaration of `nRetCode` and the use of recordset data members to pass parameters to the function. The example also illustrates checking the results of the call with **Check**, a member function of class `CRecordset`. The variable `prs` is a pointer to a `CRecordset` object, declared elsewhere.  
   
  [!code-cpp[NVC_MFCDatabase#39](../../mfc/codesnippet/cpp/database-macros-and-globals_1.cpp)]  
-  
+
+### Requirements  
+ **Header:** afxdb.h  
+
 ##  <a name="afx_sql_async"></a>  AFX_SQL_ASYNC  
  The implementation of this macro changed in MFC 4.2.  
   
@@ -99,6 +103,9 @@ AFX_SQL_ASYNC(prs, SQLFunc)
   
 > [!NOTE]
 >  The MFC ODBC classes now use only synchronous processing. In order to perform an asynchronous operation, you must call the ODBC API function **SQLSetConnectOption**. For more information, see the topic "Executing Functions Asynchronously" in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+  
+### Requirements  
+  **Header** afxdb.h  
   
 ##  <a name="afx_sql_sync"></a>  AFX_SQL_SYNC  
  The `AFX_SQL_SYNC` macro simply calls the function `SQLFunc`.  
@@ -124,6 +131,9 @@ AFX_SQL_SYNC(SQLFunc)
   
  [!code-cpp[NVC_MFCDatabase#41](../../mfc/codesnippet/cpp/database-macros-and-globals_3.cpp)]  
   
+### Requirements  
+  **Header** afxdb.h  
+  
 ##  <a name="afxgethenv"></a>  AfxGetHENV  
  You can use the returned handle in direct ODBC calls, but you must not close the handle or assume that the handle is still valid and available after any existing `CDatabase`- or `CRecordset`-derived objects have been destroyed.  
   
@@ -134,5 +144,8 @@ HENV AFXAPI AfxGetHENV();
 ### Return Value  
  The handle to the ODBC environment currently in use by MFC. Can be `SQL_HENV_NULL` if there are no [CDatabase](../../mfc/reference/cdatabase-class.md) objects and no [CRecordset](../../mfc/reference/crecordset-class.md) objects in use.  
   
+### Requirements  
+  **Header** afxdb.h  
+    
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

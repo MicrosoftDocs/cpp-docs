@@ -70,6 +70,9 @@ BEGIN_EVENTSINK_MAP(theClass, baseClass)
   
  For more information on event sink maps and OLE control containers, see the article [ActiveX Control Containers](../../mfc/activex-control-containers.md).  
   
+### Requirements  
+  **Header** afxdisp.h  
+  
 ##  <a name="declare_eventsink_map"></a>  DECLARE_EVENTSINK_MAP  
  An OLE container can provide an event sink map to specify the events your container will be notified of.  
   
@@ -82,12 +85,18 @@ DECLARE_EVENTSINK_MAP()
   
  For more information on event sink maps, see the article [ActiveX Control Containers](../../mfc/activex-control-containers.md).  
   
+### Requirements  
+  **Header** afxwin.h  
+  
 ##  <a name="end_eventsink_map"></a>  END_EVENTSINK_MAP  
  Ends the definition of your event sink map.  
   
 ```   
 END_EVENTSINK_MAP()   
 ```  
+  
+### Requirements  
+  **Header** afxdisp.h  
   
 ##  <a name="on_event"></a>  ON_EVENT  
  Use the `ON_EVENT` macro to define an event handler function for an event fired by an OLE control.  
@@ -120,6 +129,9 @@ ON_EVENT(theClass, id, dispid, pfnHandler,  vtsParams)
  specifies a list containing a short integer followed by a **BOOL**.  
   
  For a list of the **VTS_** constants, see [EVENT_CUSTOM](event-maps.md#event_custom).  
+  
+### Requirements  
+  **Header** afxdisp.h  
   
 ##  <a name="on_event_range"></a>  ON_EVENT_RANGE  
  Use the `ON_EVENT_RANGE` macro to define an event handler function for an event fired by any OLE control having a control ID within a contiguous range of IDs.  
@@ -165,6 +177,9 @@ ON_EVENT_RANGE(theClass, idFirst, idLast, dispid, pfnHandler,  vtsParams)
   
  [!code-cpp[NVC_MFCAutomation#13](../../mfc/codesnippet/cpp/event-sink-maps_3.cpp)]  
   
+### Requirements  
+  **Header** afxdisp.h  
+  
 ##  <a name="on_event_reflect"></a>  ON_EVENT_REFLECT  
  The `ON_EVENT_REFLECT` macro, when used in the event sink map of an OLE control's wrapper class, receives events fired by the control before they are handled by the control's container.  
   
@@ -195,6 +210,9 @@ ON_EVENT_REFLECT(theClass,  dispid, pfnHandler,  vtsParams)
  specifies a list containing a short integer followed by a **BOOL**.  
   
  For a list of the **VTS_** constants, see [EVENT_CUSTOM](event-maps.md#event_custom).  
+  
+### Requirements  
+  **Header** afxdisp.h  
   
 ##  <a name="on_propnotify"></a>  ON_PROPNOTIFY  
  Use the `ON_PROPNOTIFY` macro to define an event sink map entry for handling property notifications from an OLE control.  
@@ -257,6 +275,9 @@ ON_PROPNOTIFY_RANGE(theClass, idFirst, idLast, dispid, pfnRequest, pfnChanged)
  `pfnChanged`  
  Pointer to a member function that handles the **OnChanged** notification for this property. The function should have a **BOOL** return type and a **UINT** parameter. The function should return **TRUE** to indicate that notification was handled; otherwise **FALSE**.  
   
+### Requirements  
+  **Header** afxdisp.h  
+  
 ##  <a name="on_propnotify_reflect"></a>  ON_PROPNOTIFY_REFLECT  
  The `ON_PROPNOTIFY_REFLECT` macro, when used in the event sink map of an OLE control's wrapper class, receives property notifications sent by the control before they are handled by the control's container.  
   
@@ -279,5 +300,8 @@ ON_PROPNOTIFY_REFLECT(theClass, dispid, pfnRequest, pfnChanged)
  `pfnChanged`  
  Pointer to a member function that handles the **OnChanged** notification for this property. The function should have a **BOOL** return type and no parameters. The function should return **TRUE** to indicate the notification was handled; otherwise **FALSE**.  
   
+### Requirements  
+  **Header** afxdisp.h  
+    
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

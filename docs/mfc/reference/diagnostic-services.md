@@ -72,7 +72,7 @@ The Microsoft Foundation Class Library supplies many diagnostic services that ma
   
 |||  
 |-|-|  
-|[ASSERT](#assert))|Prints a message and then aborts the program if the specified expression evaluates to **FALSE** in the Debug version of the library.|  
+|[ASSERT](#assert)|Prints a message and then aborts the program if the specified expression evaluates to **FALSE** in the Debug version of the library.|  
 |[ASSERT_KINDOF](#assert_kindof)|Tests that an object is an object of the specified class or of a class derived from the specified class.|  
 |[ASSERT_VALID](#assert_valid)|Tests the internal validity of an object by calling its `AssertValid` member function; typically overridden from `CObject`.|  
 |[DEBUG_NEW](#debug_new)|Supplies a filename and line number for all object allocations in Debug mode to help find memory leaks.|  
@@ -131,7 +131,10 @@ ASSERT(booleanExpression)
   
 ### Example  
  [!code-cpp[NVC_MFC_Utilities#44](../../mfc/codesnippet/cpp/diagnostic-services_2.cpp)]  
-  
+
+### Requirements  
+ **Header:** afx.h 
+
 ##  <a name="assert_kindof"></a>  ASSERT_KINDOF  
  This macro asserts that the object pointed to is an object of the specified class, or is an object of a class derived from the specified class.  
   
@@ -159,7 +162,10 @@ ASSERT_KINDOF(classname, pobject)
   
 > [!NOTE]
 >  This function is available only in the Debug version of MFC.  
-  
+
+### Requirements  
+ **Header:** afx.h 
+
 ##  <a name="assert_valid"></a>  ASSERT_VALID  
  Use to test your assumptions about the validity of an object's internal state.  
   
@@ -183,7 +189,10 @@ ASSERT_VALID(pObject)
   
 ### Example  
  [!code-cpp[NVC_MFCCObjectSample#19](../../mfc/codesnippet/cpp/diagnostic-services_5.cpp)]  
-  
+
+### Requirements  
+ **Header:** afx.h
+
 ##  <a name="debug_new"></a>  DEBUG_NEW  
  Assists in finding memory leaks.  
   
@@ -204,7 +213,10 @@ ASSERT_VALID(pObject)
   
 > [!NOTE]
 >  In previous versions of MFC (4.1 and earlier) you needed to put the `#define` statement after all statements that called the `IMPLEMENT_DYNCREATE` or `IMPLEMENT_SERIAL` macros. This is no longer necessary.  
-  
+
+### Requirements  
+ **Header:** afx.h
+
 ##  <a name="debug_only"></a>  DEBUG_ONLY  
  In debug mode (when the **_DEBUG** symbol is defined), `DEBUG_ONLY` evaluates its argument.  
   
@@ -219,14 +231,16 @@ DEBUG_ONLY(expression)
   
 ### Example  
  [!code-cpp[NVC_MFC_Utilities#32](../../mfc/codesnippet/cpp/diagnostic-services_6.cpp)]  
-  
+
+### Requirements  
+ **Header:** afx.h
+
 ##  <a name="trace"></a>  TRACE  
  Sends the specified string to the debugger of the current application.  
   
 ```   
 TRACE(exp)  
-TRACE(DWORD  category,  UINT  level, LPCSTR lpszFormat, ...)  
- 
+TRACE(DWORD  category,  UINT  level, LPCSTR lpszFormat, ...)   
 ```  
   
 ### Remarks  
@@ -235,7 +249,10 @@ TRACE(DWORD  category,  UINT  level, LPCSTR lpszFormat, ...)
  In the debug version of MFC, this macro sends the specified string to the debugger of the current application. In a release build, this macro compiles to nothing (no code is generated at all).  
   
  For more information, see [Debugging MFC Applications](/visualstudio/debugger/mfc-debugging-techniques).  
-  
+
+### Requirements  
+ **Header:** afx.h
+
 ##  <a name="verify"></a>  VERIFY  
  In the Debug version of MFC, evaluates its argument.  
   
@@ -260,7 +277,10 @@ VERIFY(booleanExpression)
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#198](../../mfc/codesnippet/cpp/diagnostic-services_7.cpp)]  
-  
+
+### Requirements  
+ **Header:** afx.h
+
 ##  <a name="cdumpcontext_in_mfc_"></a>  afxDump (CDumpContext in MFC)  
  Provides basic object-dumping capability in your application.  
   
@@ -277,7 +297,10 @@ CDumpContext  afxDump;
   
 ### Example  
  [!code-cpp[NVC_MFC_Utilities#23](../../mfc/codesnippet/cpp/diagnostic-services_8.cpp)]  
-  
+
+### Requirements  
+ **Header:** afx.h
+
 ##  <a name="afxmemdf"></a>  afxMemDF  
  This variable is accessible from a debugger or your program and allows you to tune allocation diagnostics.  
   
@@ -296,7 +319,10 @@ int  afxMemDF;
   
 ### Example  
  [!code-cpp[NVC_MFC_Utilities#30](../../mfc/codesnippet/cpp/diagnostic-services_9.cpp)]  
-  
+
+### Requirements  
+ **Header:** afx.h
+
 ##  <a name="afxcheckerror"></a>  AfxCheckError  
  This function tests the passed **SCODE** to see if it is an error.  
   
@@ -316,7 +342,10 @@ throw COleException*
   
 ### Example  
  [!code-cpp[NVC_MFCOleContainer#33](../../mfc/codesnippet/cpp/diagnostic-services_10.cpp)]  
-  
+
+### Requirements  
+ **Header:** afx.h
+
 ##  <a name="afxcheckmemory"></a>  AfxCheckMemory  
  This function validates the free memory pool and prints error messages as required.  
   
@@ -345,7 +374,10 @@ BOOL  AfxCheckMemory();
   
 ### Example  
  [!code-cpp[NVC_MFCCObjectSample#26](../../mfc/codesnippet/cpp/diagnostic-services_11.cpp)]  
-  
+
+### Requirements  
+ **Header:** afx.h  
+ 
 ##  <a name="mfc_"></a>  AfxDump (MFC)  
  Call this function while in the debugger to dump the state of an object while debugging.  
   
@@ -448,7 +480,9 @@ void AFXAPI AfxDumpStack(DWORD dwTarget = AFX_STACK_DUMP_TARGET_DEFAULT);
 -   The file IMAGEHLP.DLL must be on your path. If you do not have this DLL, the function will display an error message. See [Image Help Library](http://msdn.microsoft.com/library/windows/desktop/ms680321) for information on the function set provided by IMAGEHLP.  
   
 -   The modules that have frames on the stack must include debugging information. If they do not contain debugging information, the function will still generate a stack trace, but the trace will be less detailed.  
-  
+### Requirements  
+ **Header:** afx.h 
+
 ##  <a name="afxenablememoryleakdump"></a>  AfxEnableMemoryLeakDump  
  Enables and disables the memory leak dump in the `AFX_DEBUG_STATE` destructor.  
   
@@ -470,7 +504,10 @@ BOOL AFXAPI AfxEnableMemoryLeakDump(BOOL bDump);
   
 > [!NOTE]
 >  If you use this method to turn off the memory leak dump, you will not receive reports of valid memory leaks in your application. You should only use this method if you are confident that the memory leak report contains false memory leaks.  
-  
+
+### Requirements  
+ **Header:** afx.h 
+
 ##  <a name="afxenablememorytracking"></a>  AfxEnableMemoryTracking  
  Diagnostic memory tracking is normally enabled in the Debug version of MFC.  
   
@@ -496,6 +533,9 @@ BOOL AfxEnableMemoryTracking(BOOL bTrack);
 ### Example  
  [!code-cpp[NVC_MFC_Utilities#24](../../mfc/codesnippet/cpp/diagnostic-services_12.cpp)]  
   
+### Requirements  
+ **Header:** afx.h 
+
 ##  <a name="afxismemoryblock"></a>  AfxIsMemoryBlock  
  Tests a memory address to make sure it represents a currently active memory block that was allocated by the diagnostic version of **new**.  
   
@@ -525,6 +565,9 @@ BOOL AfxIsMemoryBlock(
 ### Example  
  [!code-cpp[NVC_MFC_Utilities#27](../../mfc/codesnippet/cpp/diagnostic-services_13.cpp)]  
   
+### Requirements  
+ **Header:** afx.h 
+
 ##  <a name="afxisvalidaddress"></a>  AfxIsValidAddress  
  Tests any memory address to ensure that it is contained entirely within the program's memory space.  
   
@@ -556,6 +599,9 @@ BOOL AfxIsValidAddress(
 ### Example  
  [!code-cpp[NVC_MFC_Utilities#28](../../mfc/codesnippet/cpp/diagnostic-services_14.cpp)]  
   
+### Requirements  
+ **Header:** afx.h 
+
 ##  <a name="afxisvalidstring"></a>  AfxIsValidString  
  Use this function to determine whether a pointer to a string is valid.  
   
@@ -579,7 +625,10 @@ BOOL  AfxIsValidString(
   
 ### Example  
  [!code-cpp[NVC_MFC_Utilities#29](../../mfc/codesnippet/cpp/diagnostic-services_15.cpp)]  
-  
+
+### Requirements  
+ **Header:** afx.h 
+
 ##  <a name="afxsetallochook"></a>  AfxSetAllocHook  
  Sets a hook that enables calling of the specified function before each memory block is allocated.  
   
@@ -609,7 +658,10 @@ AFX_ALLOC_HOOK AfxSetAllocHook(AFX_ALLOC_HOOK pfnAllocHook);
  The memory allocation's sequence number.  
   
  Note that the **AFXAPI** calling convention implies that the callee must remove the parameters from the stack.  
-  
+
+### Requirements  
+ **Header:** afx.h 
+
 ##  <a name="afxdoforallclasses"></a>  AfxDoForAllClasses  
  Calls the specified iteration function for all serializable `CObject`-derived classes in the application's memory space.  
   
@@ -638,6 +690,9 @@ AFXAPI AfxDoForAllClasses(
   
  [!code-cpp[NVC_MFCCollections#114](../../mfc/codesnippet/cpp/diagnostic-services_17.cpp)]  
   
+### Requirements  
+ **Header:** afx.h 
+
 ##  <a name="afxdoforallobjects"></a>  AfxDoForAllObjects  
  Executes the specified iteration function for all objects derived from `CObject` that have been allocated with **new**.  
   

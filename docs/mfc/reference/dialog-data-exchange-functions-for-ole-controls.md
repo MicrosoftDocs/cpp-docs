@@ -82,6 +82,9 @@ void AFXAPI DDX_OCBool(
 ### Remarks  
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdisp.h  
+  
 ##  <a name="ddx_ocboolro"></a>  DDX_OCBoolRO  
  The `DDX_OCBoolRO` function manages the transfer of **BOOL** data between a read-only property of an OLE control in a dialog box, form view, or control view object and a **BOOL** data member of the dialog box, form view, or control view object.  
   
@@ -108,6 +111,9 @@ void AFXAPI DDX_OCBoolRO(
   
 ### Remarks  
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
+  
+### Requirements  
+  **Header** afxdisp.h  
   
 ##  <a name="ddx_occolor"></a>  DDX_OCColor  
  The `DDX_OCColor` function manages the transfer of **OLE_COLOR** data between a property of an OLE control in a dialog box, form view, or control view object and a **OLE_COLOR** data member of the dialog box, form view, or control view object.  
@@ -136,6 +142,9 @@ void AFXAPI DDX_OCColor(
 ### Remarks  
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdisp.h  
+  
 ##  <a name="ddx_occolorro"></a>  DDX_OCColorRO  
  The `DDX_OCColorRO` function manages the transfer of **OLE_COLOR** data between a read-only property of an OLE control in a dialog box, form view, or control view object and a **OLE_COLOR** data member of the dialog box, form view, or control view object.  
   
@@ -162,6 +171,9 @@ void AFXAPI DDX_OCColorRO(
   
 ### Remarks  
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
+  
+### Requirements  
+  **Header** afxdisp.h  
   
 ##  <a name="ddx_ocfloat"></a>  DDX_OCFloat  
  The `DDX_OCFloat` function manages the transfer of **float** (or **double**) data between a property of an OLE control in a dialog box, form view, or control view object and a **float** (or **double**) data member of the dialog box, form view, or control view object.  
@@ -196,6 +208,9 @@ void AFXAPI DDX_OCFloat(
 ### Remarks  
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdisp.h  
+  
 ##  <a name="ddx_ocfloatro"></a>  DDX_OCFloatRO  
  The `DDX_OCFloatRO` function manages the transfer of **float** (or **double**) data between a read-only property of an OLE control in a dialog box, form view, or control view object and a **float** (or **double**) data member of the dialog box, form view, or control view object.  
   
@@ -228,6 +243,9 @@ void AFXAPI DDX_OCFloatRO(
   
 ### Remarks  
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
+  
+### Requirements  
+  **Header** afxdisp.h  
   
 ##  <a name="ddx_ocint"></a>  DDX_OCInt  
  The `DDX_OCInt` function manages the transfer of `int` (or **long**) data between a property of an OLE control in a dialog box, form view, or control view object and a `int` (or **long**) data member of the dialog box, form view, or control view object.  
@@ -262,6 +280,9 @@ void AFXAPI DDX_OCInt(
 ### Remarks  
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdisp.h  
+  
 ##  <a name="ddx_ocintro"></a>  DDX_OCIntRO  
  The `DDX_OCIntRO` function manages the transfer of `int` (or **long**) data between a read-only property of an OLE control in a dialog box, form view, or control view object and a `int` (or **long**) data member of the dialog box, form view, or control view object.  
   
@@ -295,6 +316,9 @@ void AFXAPI DDX_OCIntRO(
 ### Remarks  
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdisp.h  
+  
 ##  <a name="ddx_ocshort"></a>  DDX_OCShort  
  The `DDX_OCShort` function manages the transfer of short data between a property of an OLE control in a dialog box, form view, or control view object and a short data member of the dialog box, form view, or control view object.  
   
@@ -321,6 +345,9 @@ void AFXAPI DDX_OCShort(
   
 ### Remarks  
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
+  
+### Requirements  
+  **Header** afxdisp.h  
   
 ##  <a name="ddx_ocshortro"></a>  DDX_OCShortRO  
  The `DDX_OCShortRO` function manages the transfer of short data between a read-only property of an OLE control in a dialog box, form view, or control view object and a short data member of the dialog box, form view, or control view object.  
@@ -349,6 +376,9 @@ void AFXAPI DDX_OCShortRO(
 ### Remarks  
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdisp.h  
+  
 ##  <a name="ddx_octext"></a>  DDX_OCText  
  The **DDX_OCText** function manages the transfer of **CString** data between a property of an OLE control in a dialog box, form view, or control view object and a **CString** data member of the dialog box, form view, or control view object.  
   
@@ -376,6 +406,9 @@ void AFXAPI DDX_OCText(
 ### Remarks  
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdisp.h  
+  
 ##  <a name="ddx_octextro"></a>  DDX_OCTextRO  
  The `DDX_OCTextRO` function manages the transfer of `CString` data between a read-only property of an OLE control in a dialog box, form view, or control view object and a `CString` data member of the dialog box, form view, or control view object.  
   
@@ -402,6 +435,9 @@ void AFXAPI DDX_OCTextRO(
   
 ### Remarks  
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
-  
+
+### Requirements  
+  **Header** afxdisp.h
+    
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
