@@ -6,6 +6,15 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+f1_keywords: 
+  - "false_type"
+  - "std::false_type"
+  - "type_traits/std::false_type"
+  - "xtr1common/std::false_type"
+  - "true_type"
+  - "std::true_type"
+  - "type_traits/std::true_type"
+  - "xtr1common/std::true_type"
 ms.assetid: 8ac040ca-ed2d-4570-adc9-cb5626530053
 caps.latest.revision: 13
 manager: "ghogen"
@@ -31,16 +40,14 @@ typedef integral_constant<bool, false> false_type;
 #include <type_traits>   
 #include <iostream>   
   
-int main()   
-    {   
+int main() {   
     std::cout << "false_type == " << std::boolalpha   
         << std::false_type::value << std::endl;   
     std::cout << "true_type == " << std::boolalpha   
         << std::true_type::value << std::endl;   
   
     return (0);   
-    }  
-  
+}  
 ```  
   
 ```Output  
@@ -61,21 +68,19 @@ typedef integral_constant<bool, true> true_type;
 ### Example  
   
 ```cpp  
-// std_tr1__type_traits__true_type.cpp   
+// std__type_traits__true_type.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   
   
-int main()   
-    {   
+int main() {   
     std::cout << "false_type == " << std::boolalpha   
         << std::false_type::value << std::endl;   
     std::cout << "true_type == " << std::boolalpha   
         << std::true_type::value << std::endl;   
   
     return (0);   
-    }  
-  
+}  
 ```  
   
 ```Output  

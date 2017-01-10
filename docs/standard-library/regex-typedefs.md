@@ -63,6 +63,8 @@ f1_keywords:
   - "regex/std::wssub_match"
 ms.assetid: e6a69067-106c-4a24-9e08-7c867a3a2260
 caps.latest.revision: 10
+author: "corob-msft"
+ms.author: "corob"
 manager: "ghogen"
 ---
 # &lt;regex&gt; typedefs

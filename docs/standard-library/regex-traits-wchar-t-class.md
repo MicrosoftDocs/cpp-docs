@@ -9,13 +9,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::regex_traits<wchar_t>"
-  - "regex_traits<wchar_t>"
-  - "std.tr1.regex_traits<wchar_t>"
+  - "std::regex_traits<wchar_t>"
+  - "regex/std::regex_traits<wchar_t>"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "regex_traits<wchar_t> class [TR1]"
+  - "regex_traits<wchar_t> class"
 ms.assetid: 288d6fdb-fb8e-4a4d-904a-53916be7f95b
 caps.latest.revision: 17
 author: "corob-msft"
@@ -47,7 +46,7 @@ class regex_traits<wchar_t>
 ```  
   
 ## Remarks  
- The class is an explicit specialization of template class [regex_traits Class](../standard-library/regex-traits-class.md) for elements of type `wchar_t` (so that it can take advantage of library functions that manipulate objects of this type).  
+ The class is an explicit specialization of template class [regex_traits](../standard-library/regex-traits-class.md) for elements of type `wchar_t` (so that it can take advantage of library functions that manipulate objects of this type).  
   
 ## Requirements  
  **Header:** \<regex>  

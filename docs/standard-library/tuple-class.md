@@ -9,17 +9,14 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "tr1::tuple"
-  - "std.tr1.tuple"
   - "tuple"
-  - "tr1.tuple"
-  - "std::tr1::tuple"
-  - "tuple/std::tr1::tuple"
+  - "std::tuple"
+  - "tuple/std::tuple"
+  - "tuple/std::tuple::operator="
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "tuple class"
-  - "tuple class [TR1]"
 ms.assetid: c38749be-ae4d-41f3-98ea-6aa3250de9a3
 caps.latest.revision: 19
 author: "corob-msft"
@@ -44,25 +41,23 @@ translation.priority.ht:
 Wraps a fixed-length sequence of elements.  
   
 ## Syntax  
-  
+```  
 class tuple {  
-   public:  
+public:  
    tuple();
-   explicit tuple(P1, P2, ..., PN);
-   // 0 <N  
+   explicit tuple(P1, P2, ..., PN); // 0 < N  
    tuple(const tuple&);
-   template \<class U1, class U2, ..., class UN>  
-   tuple(const tuple\<U1, U2, ..., UN>&);
-   template \<class U1, class U2>  
-   tuple(const pair\<U1, U2>&);
-   // N == 2  
+   template <class U1, class U2, ..., class UN>  
+      tuple(const tuple<U1, U2, ..., UN>&);
+   template <class U1, class U2>  
+      tuple(const pair<U1, U2>&); // N == 2  
+
    void swap(tuple& right);
    tuple& operator=(const tuple&);
-   template \<class U1, class U2, ..., class UN>  
-   tuple& operator=(const tuple\<U1, U2, ..., UN>&);
-   template \<class U1, class U2>  
-   tuple& operator=(const pair\<U1, U2>&);
-   // N == 2  
+   template <class U1, class U2, ..., class UN>  
+      tuple& operator=(const tuple<U1, U2, ..., UN>&);
+   template <class U1, class U2>  
+      tuple& operator=(const pair<U1, U2>&); // N == 2  
    };  
   
 #### Parameters  
@@ -128,7 +123,9 @@ int main( )
       print_ids(*i);  
    }  
 }  
-\* Output:   
+```  
+  
+```Output  
 The tuple p1 is: ( 10, 0.011, one ).  
 The tuple p2 is: ( 10, 0.222, two ).  
 The tuple p3 is: ( 10, 0.011, one ).  
@@ -136,7 +133,6 @@ The tuples in the vector are
 ( 10, 0.011, one ).  
 ( 10, 0.222, two ).  
 ( 3, 0.033, three ).  
-*\  
 ```  
   
 ## Requirements  
@@ -151,15 +147,15 @@ The tuples in the vector are
 tuple& operator=(const tuple& right);
 
 template <class U1, class U2, ..., class UN>  
-tuple& operator=(const tuple<U1, U2, ..., UN>& right);
+   tuple& operator=(const tuple<U1, U2, ..., UN>& right);
 
 template <class U1, class U2>  
-tuple& operator=(const pair<U1, U2>& right);
-// N == 2  
+   tuple& operator=(const pair<U1, U2>& right); // N == 2  
+
 tuple& operator=(tuple&& right);
-
+   
 template <class U1, class U2>  
-tuple& operator=(pair<U1, U2>&& right);
+   tuple& operator=(pair<U1, U2>&& right);
 ```  
   
 ### Parameters  
@@ -177,7 +173,7 @@ tuple& operator=(pair<U1, U2>&& right);
 ### Example  
   
 ```cpp  
-// std_tr1__tuple__tuple_operator_as.cpp   
+// std__tuple__tuple_operator_as.cpp   
 // compile with: /EHsc   
 #include <tuple>   
 #include <iostream>   
@@ -229,9 +225,7 @@ x 4
   
 ```  
 template <class... Types>  
-void swap(tuple<Types...&>  
-left,  
-    tuple<Types...&> right);
+   void swap(tuple<Types...&> left, tuple<Types...&> right);
 ```  
   
 ### Parameters  
@@ -249,35 +243,23 @@ left,
   
 ```  
 constexpr tuple();
-
- 
-    explicit constexpr tuple(const Types&...);
-
- 
-    template <class... UTypes>   
-explicit constexpr tuple(UTypes&&...);
-
- 
+explicit constexpr tuple(const Types&...); 
+template <class... UTypes>   
+   explicit constexpr tuple(UTypes&&...);
+  
 tuple(const tuple&) = default;  
-    tuple(tuple&&) = default;  
- 
+tuple(tuple&&) = default;  
+  
 template <class... UTypes>  
-constexpr tuple(const tuple<UTypes...>&);
-
- 
-    template <class... UTypes>  
-constexpr tuple(tuple<UTypes...>&&);
-
- 
-template <class U1, class U2>   
-constexpr tuple(const pair<U1, U2>&);
-
-// only if sizeof...(Types) == 2   
- 
-template <class U1, class U2>  
-constexpr tuple(pair<U1, U2>&&);
-
+   constexpr tuple(const tuple<UTypes...>&);
+template <class... UTypes>  
+   constexpr tuple(tuple<UTypes...>&&);
+  
 // only if sizeof...(Types) == 2  
+template <class U1, class U2>   
+   constexpr tuple(const pair<U1, U2>&);
+template <class U1, class U2>  
+   constexpr tuple(pair<U1, U2>&&);
 ```  
   
 ### Parameters  
@@ -301,7 +283,7 @@ constexpr tuple(pair<U1, U2>&&);
 ### Example  
   
 ```cpp  
-// std_tr1__tuple__tuple_tuple.cpp   
+// std__tuple__tuple_tuple.cpp   
 // compile with: /EHsc   
 #include <tuple>   
 #include <iostream>   
@@ -357,15 +339,14 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
-0 1 2 3  
-0 1 2 3  
-x 4  
-0 1 2 3  
-4 5 6 7  
+ 0 1 2 3  
+ 0 1 2 3  
+ x 4  
+ 0 1 2 3  
+ 4 5 6 7  
 ```  
   
 ## See Also  

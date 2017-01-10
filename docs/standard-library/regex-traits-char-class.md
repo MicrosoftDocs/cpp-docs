@@ -9,13 +9,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::regex_traits<char>"
-  - "regex_traits<char>"
-  - "std.tr1.regex_traits<char>"
+  - "std::regex_traits<char>"
+  - "regex/std::regex_traits<char>"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "regex_traits<char> class [TR1]"
+  - "regex_traits<char> class"
 ms.assetid: ce95ebcd-3687-4ad5-bf1d-b89fdc633675
 caps.latest.revision: 17
 author: "corob-msft"
@@ -47,7 +46,7 @@ class regex_traits<char>
 ```  
   
 ## Remarks  
- The class is an explicit specialization of template class [regex_traits Class](../standard-library/regex-traits-class.md) for elements of type `char` (so that it can take advantage of library functions that manipulate objects of this type).  
+ The class is an explicit specialization of template class [regex_traits](../standard-library/regex-traits-class.md) for elements of type `char` (so that it can take advantage of library functions that manipulate objects of this type).  
   
 ## Requirements  
  **Header:** \<regex>  

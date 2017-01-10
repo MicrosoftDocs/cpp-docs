@@ -12,10 +12,34 @@ f1_keywords:
   - "regex_token_iterator"
   - "std::regex_token_iterator"
   - "regex/std::regex_token_iterator"
+  - "std::regex_token_iterator::regex_type"
+  - "regex/std::regex_token_iterator::regex_type"
+  - "std::regex_token_iterator::value_type"
+  - "regex/std::regex_token_iterator::value_type"
+  - "std::regex_token_iterator::iterator_category"
+  - "regex/std::regex_token_iterator::iterator_category"
+  - "std::regex_token_iterator::difference_type"
+  - "regex/std::regex_token_iterator::difference_type"
+  - "std::regex_token_iterator::pointer"
+  - "regex/std::regex_token_iterator::pointer"
+  - "std::regex_token_iterator::reference"
+  - "regex/std::regex_token_iterator::reference"
+  - "std::regex_token_iterator::operator=="
+  - "regex/std::regex_token_iterator::operator=="
+  - "std::regex_token_iterator::operator!="
+  - "regex/std::regex_token_iterator::operator!="
+  - "std::regex_token_iterator::operator*"
+  - "regex/std::regex_token_iterator::operator*"
+  - "std::regex_token_iterator::operator->"
+  - "regex/std::regex_token_iterator::operator->"
+  - "std::regex_token_iterator::operator++"
+  - "regex/std::regex_token_iterator::operator++"
+  - "std::regex_token_iterator::operator!="
+  - "regex/std::regex_token_iterator::operator!="
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "regex_token_iterator class [TR1]"
+  - "regex_token_iterator class"
 ms.assetid: a213ba48-8e4e-4b6b-871a-2637acf05f15
 caps.latest.revision: 15
 author: "corob-msft"
@@ -46,8 +70,7 @@ template<class BidIt,
    class RxTraits = regex_traits<Elem> >
 class regex_token_iterator {  
 public:  
-   typedef basic_regex<Elem, RXtraits>  
-   regex_type;  
+   typedef basic_regex<Elem, RXtraits> regex_type;  
    typedef sub_match<BidIt> value_type;  
    typedef std::forward_iterator_tag iterator_category;  
    typedef std::ptrdiff_t difference_type;  
@@ -111,8 +134,7 @@ typedef std::ptrdiff_t difference_type;
   
 ### Example  
   
-```cpp  
-  
+```cpp    
 #include <regex>   
 #include <iostream>   
   
@@ -173,7 +195,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -205,7 +226,6 @@ match == aa
 match == y  
 match == aa  
 match == z  
-  
 ```  
   
 ##  <a name="regex_token_iterator__iterator_category"></a>  regex_token_iterator::iterator_category  

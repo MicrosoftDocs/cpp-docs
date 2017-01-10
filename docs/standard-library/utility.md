@@ -54,8 +54,8 @@ Defines C++ Standard Library types, functions, and operators that help to constr
   
 |||  
 |-|-|  
-|[tuple_element](../standard-library/tuple-element-class-utility.md)|A class that wraps the type of a `pair` element.|  
-|[tuple_size](../standard-library/tuple-size-class-utility.md)|A class that wraps `pair` element count.|  
+|[tuple_element](../standard-library/tuple-element-class-tuple.md)|A class that wraps the type of a `pair` element.|  
+|[tuple_size](../standard-library/tuple-size-class-tuple.md)|A class that wraps `pair` element count.|  
   
 ### Functions  
   

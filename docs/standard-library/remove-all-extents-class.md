@@ -9,16 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.remove_all_extents"
-  - "std::tr1::remove_all_extents"
   - "remove_all_extents"
-  - "std.remove_all_extents"
   - "std::remove_all_extents"
   - "type_traits/std::remove_all_extents"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "remove_all_extents class [TR1]"
+  - "remove_all_extents class"
   - "remove_all_extents"
 ms.assetid: 548dc536-82e7-423a-b8c1-443d66d9632e
 caps.latest.revision: 16
@@ -80,11 +77,10 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

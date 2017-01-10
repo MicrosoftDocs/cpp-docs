@@ -48,8 +48,8 @@ Defines the container template class `array` and several supporting templates.
 |||  
 |-|-|  
 |[array](../standard-library/array-class-stl.md)|Stores a fixed-length sequence of elements.|  
-|[tuple_element](../standard-library/tuple-element-class-array.md)|Wraps the type of an array element.|  
-|[tuple_size](../standard-library/tuple-size-class-array.md)|Wraps the size of an array element.|  
+|[tuple_element](../standard-library/tuple-element-class-tuple.md)|Wraps the type of an array element.|  
+|[tuple_size](../standard-library/tuple-size-class-tuple.md)|Wraps the size of an array element.|  
   
 ### Operators  
   

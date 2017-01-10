@@ -10,8 +10,40 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "regex_traits"
-  - "std::tr1::regex_traits"
-  - "std.tr1.regex_traits"
+  - "std::regex_traits"
+  - "regex/std::regex_traits"
+  - "std::regex_traits::char_type"
+  - "regex/std::regex_traits::char_type"
+  - "std::regex_traits::size_type"
+  - "regex/std::regex_traits::size_type"
+  - "std::regex_traits::string_type"
+  - "regex/std::regex_traits::string_type"
+  - "std::regex_traits::locale_type"
+  - "regex/std::regex_traits::locale_type"
+  - "std::regex_traits::char_class_type"
+  - "regex/std::regex_traits::char_class_type"
+  - "std::regex_traits::length"
+  - "regex/std::regex_traits::length"
+  - "std::regex_traits::translate"
+  - "regex/std::regex_traits::translate"
+  - "std::regex_traits::translate_nocase"
+  - "regex/std::regex_traits::translate_nocase"
+  - "std::regex_traits::transform"
+  - "regex/std::regex_traits::transform"
+  - "std::regex_traits::transform_primary"
+  - "regex/std::regex_traits::transform_primary"
+  - "std::regex_traits::lookup_classname"
+  - "regex/std::regex_traits::lookup_classname"
+  - "std::regex_traits::lookup_collatename"
+  - "regex/std::regex_traits::lookup_collatename"
+  - "std::regex_traits::isctype"
+  - "regex/std::regex_traits::isctype"
+  - "std::regex_traits::value"
+  - "regex/std::regex_traits::value"
+  - "std::regex_traits::imbue"
+  - "regex/std::regex_traits::imbue"
+  - "std::regex_traits::getloc"
+  - "regex/std::regex_traits::getloc"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -41,7 +73,15 @@ Describes characteristics of elements for matching.
   
 ## Syntax  
 ```  
-struct regex_traits {  
+template<class Elem>
+class regex_traits {  
+public:  
+   typedef Elem char_type;  
+   typedef size_t size_type;  
+   typedef basic_string<Elem> string_type;  
+   typedef locale locale_type;  
+   typedef ctype_base::mask char_class_type;  
+
    regex_traits();
    static size_type length(const char_type *str);
    char_type translate(char_type ch) const;
@@ -55,20 +95,14 @@ struct regex_traits {
    template <class FwdIt>  
    string_type lookup_collatename(FwdIt first, FwdIt last) const;
    bool isctype(char_type ch, char_class_type cls) const;
-   int value(Elem ch, int base) const;
+   int value(char_type ch, int base) const;
    locale_type imbue(locale_type loc);
    locale_type getloc() const;
-   typedef Elem char_type;  
-   typedef T6 size_type;  
-   typedef basic_string<Elem>  
-   string_type;  
-   typedef T7 locale_type;  
-   typedef T8 char_class_type;  
-   };  
+};  
  ``` 
 #### Parameters  
  `Elem`  
- The element type to describe.  
+ The character element type to describe.  
   
 ## Remarks  
  The template class describes various regular expression traits for type `Elem`. The template class [basic_regex Class](../standard-library/basic-regex-class.md) uses this information to manipulate elements of type `Elem`.  

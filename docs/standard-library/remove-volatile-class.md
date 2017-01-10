@@ -9,16 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::remove_volatile"
-  - "std.tr1.remove_volatile"
   - "remove_volatile"
-  - "std.remove_volatile"
   - "std::remove_volatile"
   - "type_traits/std::remove_volatile"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "remove_volatile class [TR1]"
+  - "remove_volatile class"
   - "remove_volatile"
 ms.assetid: 8b87e2c2-a581-4eb3-8691-c5603910d61d
 caps.latest.revision: 20
@@ -76,7 +73,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -84,7 +80,7 @@ remove_volatile_t<volatile int> == int
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

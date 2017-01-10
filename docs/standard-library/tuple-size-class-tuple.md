@@ -1,5 +1,5 @@
 ---
-title: "tuple_size Class &lt;tuple&gt; | Microsoft Docs"
+title: "tuple_size Class; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -10,12 +10,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "tuple_size"
-  - "std::tr1::tuple_size"
-  - "std.tr1.tuple_size"
+  - "std::tuple_size"
+  - "utility/std::tuple_size"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "tuple_size Class <tuple> (TR1)"
+  - "tuple_size Class"
 ms.assetid: 73852fc5-eb68-41f1-8379-465cedc2314a
 caps.latest.revision: 23
 author: "corob-msft"
@@ -36,7 +36,7 @@ translation.priority.mt:
   - "zh-cn"
   - "zh-tw"
 ---
-# tuple_size Class &lt;tuple&gt;
+# tuple_size Class;
 Reports the number of elements that a `tuple` contains.  
   
 ## Syntax  
@@ -44,32 +44,62 @@ Reports the number of elements that a `tuple` contains.
 ```  
 // TEMPLATE STRUCT tuple_size  
 template <class Tuple>  
-struct tuple_size;  
- 
+   struct tuple_size;  
+  
+// number of elements in array  
+template <class Elem, size_t Size>  
+   struct tuple_size<array<Elem, Size>>  
+      : integral_constant<size_t, Size>; 
+  
+// size of pair
+template <class T1, class T2>
+   struct tuple_size<pair<T1, T2>> 
+      : integral_constant<size_t, 2>
+
 // size of tuple  
 template <class... Types>  
-struct tuple_size<tuple<Types...>>  
-: integral_constant<size_t, sizeof...(Types)>;  
- 
+   struct tuple_size<tuple<Types...>>  
+      : integral_constant<size_t, sizeof...(Types)>;  
+  
 // size of const tuple  
 template <class Tuple>  
-struct tuple_size<const Tuple>;  
- 
+   struct tuple_size<const Tuple>;  
+  
 // size of volatile tuple  
 template <class Tuple>  
-struct tuple_size<volatile Tuple>;  
- 
+   struct tuple_size<volatile Tuple>;  
+  
 // size of const volatile tuple  
 template <class Tuple>  
-struct tuple_size<const volatile Tuple>;   
+   struct tuple_size<const volatile Tuple>;   
 ```  
   
 #### Parameters  
- `Tuple`  
- The type of the tuple.  
+*Tuple*  
+The type of the tuple. 
+  
+*Elem*  
+The type of the array elements. 
+  
+*Size*  
+The size of the array. 
+  
+*T1*  
+The type of the first member of the pair. 
+  
+*T2*  
+The type of the second member of the pair. 
+  
+*Types*  
+The types of the tuple elements. 
+  
   
 ## Remarks  
- The template class has a member `value` that is an integral constant expression whose value is the extent of the tuple type `Tuple`.  
+The template class has a member `value` that is an integral constant expression whose value is the extent of the tuple type `Tuple`.  
+  
+The template specialization for arrays has a member `value` that is an integral constant expression whose value is `Size`, which is the size of the array.  
+  
+The template specialization for pair has a member `value` that is an integral constant expression whose value is 2.  
   
 ## Example  
   
@@ -93,16 +123,16 @@ int main()
     // display size " 4"   
     cout << " " << tuple_size<MyTuple>::value << endl;  
 }  
+```  
   
-/*  
-Output:  
-0 1.5 2 3.7  
-4  
-*/  
+```Output  
+ 0 1.5 2 3.7  
 ```  
   
 ## Requirements  
  **Header:** \<tuple>  
+ **Header:** \<array> (for array specialization)  
+ **Header:** \<utility> (for pair specialization)  
   
  **Namespace:** std  
   

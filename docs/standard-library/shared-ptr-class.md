@@ -10,15 +10,33 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "shared_ptr"
-  - "tr1::shared_ptr"
-  - "memory/std::tr1::shared_ptr"
-  - "std::tr1::shared_ptr"
-  - "std.tr1.shared_ptr"
-  - "tr1.shared_ptr"
+  - "std::shared_ptr"
+  - "memory/std::shared_ptr"
+  - "std::shared_ptr::element_type"
+  - "memory/std::shared_ptr::element_type"
+  - "std::shared_ptr::get"
+  - "memory/std::shared_ptr::get"
+  - "std::shared_ptr::owner_before"
+  - "memory/std::shared_ptr::owner_before"
+  - "std::shared_ptr::reset"
+  - "memory/std::shared_ptr::reset"
+  - "std::shared_ptr::swap"
+  - "memory/std::shared_ptr::swap"
+  - "std::shared_ptr::unique"
+  - "memory/std::shared_ptr::unique"
+  - "std::shared_ptr::use_count"
+  - "memory/std::shared_ptr::use_count"
+  - "std::shared_ptr::operator boolean-type"
+  - "memory/std::shared_ptr::operator boolean-type"
+  - "std::shared_ptr::operator*"
+  - "memory/std::shared_ptr::operator*"
+  - "std::shared_ptr::operator="
+  - "memory/std::shared_ptr::operator="
+  - "std::shared_ptr::operator->"
+  - "memory/std::shared_ptr::operator->"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "shared_ptr class [TR1]"
   - "shared_ptr class"
 ms.assetid: 1469fc51-c658-43f1-886c-f4530dd84860
 caps.latest.revision: 28
@@ -58,13 +76,12 @@ class shared_ptr;
   
  When a `shared_ptr<T>` object is constructed from a resource pointer of type `G*` or from a `shared_ptr<G>`, the pointer type `G*` must be convertible to `T*`. If it is not, the code will not compile. For example:  
   
-class F {};  
-  
 ```cpp  
-  
 #include <memory>  
-  
 using namespace std;  
+  
+class F {};  
+class G : public F {};  
   
 shared_ptr<G> sp0(new G);   // okay, template parameter G and argument G*  
 shared_ptr<G> sp1(sp0);     // okay, template parameter G and argument shared_ptr<G>  
@@ -155,7 +172,7 @@ shared_ptr<int> sp6(sp2);   // error, template parameter int and argument shared
 |[shared_ptr::operator-&gt;](#shared_ptr__operator-_gt_)|Gets a pointer to the designated value.|  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
@@ -172,7 +189,7 @@ typedef T element_type;
 ### Example  
   
 ```cpp  
-// std_tr1__memory__shared_ptr_element_type.cpp   
+// std__memory__shared_ptr_element_type.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
@@ -206,7 +223,7 @@ T *get() const;
 ### Example  
   
 ```cpp  
-// std_tr1__memory__shared_ptr_get.cpp   
+// std__memory__shared_ptr_get.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
@@ -243,7 +260,7 @@ operator boolean-type() const;
 ### Example  
   
 ```cpp  
-// std_tr1__memory__shared_ptr_operator_bool.cpp   
+// std__memory__shared_ptr_operator_bool.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
@@ -281,7 +298,7 @@ T& operator*() const;
 ### Example  
   
 ```cpp  
-// std_tr1__memory__shared_ptr_operator_st.cpp   
+// std__memory__shared_ptr_operator_st.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
@@ -336,7 +353,7 @@ shared_ptr& operator=(unique_ptr<Other, Deletor>&& ap);
 ### Example  
   
 ```cpp  
-// std_tr1__memory__shared_ptr_operator_as.cpp   
+// std__memory__shared_ptr_operator_as.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
@@ -376,7 +393,7 @@ T * operator->() const;
 ### Example  
   
 ```cpp  
-// std_tr1__memory__shared_ptr_operator_ar.cpp   
+// std__memory__shared_ptr_operator_ar.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
@@ -458,7 +475,7 @@ void reset(Other *ptr, D dtor, A alloc);
 ### Example  
   
 ```cpp  
-// std_tr1__memory__shared_ptr_reset.cpp   
+// std__memory__shared_ptr_reset.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
@@ -585,7 +602,7 @@ shared_ptr(const unique_ptr<Other, D>& up) = delete;
 ### Example  
   
 ```cpp  
-// std_tr1__memory__shared_ptr_construct.cpp   
+// std__memory__shared_ptr_construct.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
@@ -648,7 +665,7 @@ int main()
 ### Example  
   
 ```cpp  
-// std_tr1__memory__shared_ptr_destroy.cpp   
+// std__memory__shared_ptr_destroy.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
@@ -706,7 +723,7 @@ void swap(shared_ptr& sp);
 ### Example  
   
 ```cpp  
-// std_tr1__memory__shared_ptr_swap.cpp   
+// std__memory__shared_ptr_swap.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
@@ -770,7 +787,7 @@ bool unique() const;
 ### Example  
   
 ```cpp  
-// std_tr1__memory__shared_ptr_unique.cpp   
+// std__memory__shared_ptr_unique.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
@@ -816,7 +833,7 @@ long use_count() const;
 ### Example  
   
 ```cpp  
-// std_tr1__memory__shared_ptr_use_count.cpp   
+// std__memory__shared_ptr_use_count.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   

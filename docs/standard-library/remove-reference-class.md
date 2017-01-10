@@ -9,16 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.remove_reference"
-  - "std::tr1::remove_reference"
   - "remove_reference"
-  - "std.remove_reference"
   - "std::remove_reference"
   - "type_traits/std::remove_reference"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "remove_reference class [TR1]"
+  - "remove_reference class"
   - "remove_reference"
 ms.assetid: 294e1965-3ae3-46ee-bc42-4fdf60c24717
 caps.latest.revision: 20
@@ -76,7 +73,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -84,7 +80,7 @@ remove_reference_t<int&> == int
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   
