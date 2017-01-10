@@ -42,14 +42,15 @@ This class provides methods used by a collection class.
 ## Syntax  
   
 ```
-template <class T, class CollType, class ItemType, class CopyItem, class EnumType>  class ICollectionOnSTLImpl :  public T```  
+template <class T, class CollType, class ItemType, class CopyItem, class EnumType>  
+class ICollectionOnSTLImpl : public T```  
   
 #### Parameters  
  `T`  
  A COM collection interface.  
   
  `CollType`  
- An STL container class.  
+ A C++ Standard Library container class.  
   
  *ItemType*  
  The type of item exposed by the container interface.  
@@ -120,8 +121,7 @@ STDMETHOD(getcount)(long* pcount);
  This method returns the specified item from the collection.  
   
 ```
-STDMETHOD(get_Item)(long Index,
-    ItemType* pvar);
+STDMETHOD(get_Item)(long Index, ItemType* pvar);
 ```  
   
 ### Parameters  

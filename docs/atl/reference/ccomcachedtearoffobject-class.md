@@ -47,7 +47,7 @@ This class implements [IUnknown](http://msdn.microsoft.com/library/windows/deskt
 ```
 template
  <class contained>
-class CComCachedTearOffObject :             public
+class CComCachedTearOffObject : public
     IUnknown,
 public CComObjectRootEx<contained
  ::_ThreadModel::ThreadModelNoCS>
@@ -156,8 +156,7 @@ void FinalRelease();
  A [CComContainedObject](../../atl/reference/ccomcontainedobject-class.md) object derived from your tear-off class.  
   
 ```
-CcomContainedObject <contained>
-    m_contained;
+CcomContainedObject <contained> m_contained;
 ```     
   
 ### Parameters  
@@ -171,8 +170,7 @@ CcomContainedObject <contained>
  Retrieves a pointer to the requested interface.  
   
 ```
-STDMETHOD(QueryInterface)(REFIID iid,
-    void** ppvObject);
+STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 ```  
   
 ### Parameters  

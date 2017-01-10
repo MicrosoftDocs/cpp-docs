@@ -43,7 +43,8 @@ This class wraps the `VARIANT` type, providing a member indicating the type of d
   
 ## Syntax  
   
-```cpp
+```  
+cpp
 class CComVariant : public tagVARIANT  
 ```  
   
@@ -193,9 +194,7 @@ CComVariant(const CComBSTR& bstrSrc);
  Converts the `CComVariant` object to a new type.  
   
 ```
-HRESULT ChangeType(
-    VARTYPE vtNew,
-    const VARIANT* pSrc = NULL);
+HRESULT ChangeType(VARTYPE vtNew, const VARIANT* pSrc = NULL);
 ```  
   
 ### Parameters  
@@ -293,35 +292,28 @@ ULONG GetSize() const;
  Assigns a value and corresponding type to the `CComVariant` object.  
   
 ```
-CComVariant& operator=(const CComVariant& varSrc);
-
-    CComVariant& operator=(const VARIANT& varSrc);
-
-    CComVariant& operator=(const CComBSTR& bstrSrc);
-
-    CComVariant& operator=(LPCOLESTR   lpszSrc);
-
-    CComVariant& operator=(LPCSTR   lpszSrc);
-
-    CComVariant& operator=(bool   bSrc);
-
-    CComVariant& operator=(BYTE   nSrc) throw();
-CComVariant& operator=(int   nSrc) throw();
-CComVariant& operator=(unsigned  int  nSrc) throw();
-CComVariant& operator=(short   nSrc) throw();
-CComVariant& operator=(unsigned  short  nSrc) throw();
-CComVariant& operator=(long   nSrc) throw();
-CComVariant& operator=(unsigned  long  nSrc) throw();
-CComVariant& operator=(LONGLONG   nSrc) throw();
-CComVariant& operator=(ULONGLONG   nSrc) throw();
-CComVariant& operator=(float   fltSrc) throw();
-CComVariant& operator=(double   dblSrc) throw();
-CComVariant& operator=(CY   cySrc) throw();
+CComVariant& operator=(const CComVariant& varSrc);  
+CComVariant& operator=(const VARIANT& varSrc);
+CComVariant& operator=(const CComBSTR& bstrSrc);
+CComVariant& operator=(LPCOLESTR lpszSrc);
+CComVariant& operator=(LPCSTR lpszSrc);
+CComVariant& operator=(bool bSrc);
+CComVariant& operator=(BYTE nSrc) throw();
+CComVariant& operator=int nSrc) throw();
+CComVariant& operator=(unsigned int nSrc) throw();
+CComVariant& operator=(short nSrc) throw();
+CComVariant& operator=(unsigned short nSrc) throw();
+CComVariant& operator=(long nSrc) throw();
+CComVariant& operator=(unsigned long nSrc) throw();
+CComVariant& operator=(LONGLONG nSrc) throw();
+CComVariant& operator=(ULONGLONG nSrc) throw();
+CComVariant& operator=(float fltSrc) throw();
+CComVariant& operator=(double dblSrc) throw();
+CComVariant& operator=(CY cySrc) throw();
 CComVariant& operator=(IDispatch* pSrc) throw();
 CComVariant& operator=(IUnknown* pSrc) throw();
 CComVariant& operator=(const SAFEARRAY* pSrc);
-
-    CComVariant& operator=(char   cSrc) throw();
+CComVariant& operator=(char cSrc) throw();
 ```  
   
 ### Parameters  

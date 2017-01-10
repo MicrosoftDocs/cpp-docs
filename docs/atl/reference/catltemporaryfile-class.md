@@ -135,7 +135,7 @@ HRESULT Close(LPCTSTR szNewName = NULL) throw();
  Call this method to create a temporary file.  
   
 ```
-HRESULT Create(LPCTSTR pszDir = NULL,  DWORD dwDesiredAccess = GENERIC_WRITE) throw();
+HRESULT Create(LPCTSTR pszDir = NULL, DWORD dwDesiredAccess = GENERIC_WRITE) throw();
 ```  
   
 ### Parameters  
@@ -228,7 +228,7 @@ HRESULT HandsOn() throw();
  Call this method to lock a region in the temporary file to prevent other processes from accessing it.  
   
 ```
-HRESULT LockRange(ULONGLONG nPos,  ULONGLONG nCount) throw();
+HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 ```  
   
 ### Parameters  
@@ -247,14 +247,16 @@ HRESULT LockRange(ULONGLONG nPos,  ULONGLONG nCount) throw();
 ##  <a name="operator_handle"></a>  CAtlTemporaryFile::operator HANDLE  
  Returns a handle to the temporary file.  
   
-```operator HANDLE() throw();
+```  
+operator HANDLE() throw();
 ```  
   
 ##  <a name="read"></a>  CAtlTemporaryFile::Read  
  Call this method to read data from the temporary file starting at the position indicated by the file pointer.  
   
 ```
-HRESULT Read(LPVOID pBuffer,
+HRESULT Read(  
+    LPVOID pBuffer,
     DWORD nBufSize,
     DWORD& nBytesRead) throw();
 ```  
@@ -282,7 +284,7 @@ HRESULT Read(LPVOID pBuffer,
  Call this method to move the file pointer of the temporary file.  
   
 ```
-HRESULT Seek(LONGLONG nOffset,  DWORD dwFrom = FILE_CURRENT) throw();
+HRESULT Seek(LONGLONG nOffset, DWORD dwFrom = FILE_CURRENT) throw();
 ```  
   
 ### Parameters  
@@ -335,7 +337,7 @@ LPCTSTR TempFileName() throw();
  Call this method to unlock a region of the temporary file.  
   
 ```
-HRESULT UnlockRange(ULONGLONG nPos,  ULONGLONG nCount) throw();
+HRESULT UnlockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 ```  
   
 ### Parameters  
@@ -355,7 +357,8 @@ HRESULT UnlockRange(ULONGLONG nPos,  ULONGLONG nCount) throw();
  Call this method to write data to the temporary file starting at the position indicated by the file pointer.  
   
 ```
-HRESULT Write(LPCVOID pBuffer,
+HRESULT Write(  
+    LPCVOID pBuffer,
     DWORD nBufSize,
     DWORD* pnBytesWritten = NULL) throw();
 ```  

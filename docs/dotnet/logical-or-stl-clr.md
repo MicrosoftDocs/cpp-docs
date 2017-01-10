@@ -1,5 +1,5 @@
 ---
-title: "logical_or (STL-CLR) | Microsoft Docs"
+title: "logical_or (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

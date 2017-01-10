@@ -114,10 +114,7 @@ class CAtlPreviewCtrlImpl : public CWindowImpl<CAtlPreviewCtrlImpl>, public IPre
   
 ```
 CAtlPreviewCtrlImpl(void) : m_clrText(0),
-    m_clrBack(RGB(255,
- 255,
-    255)),
- m_plf(NULL);
+   m_clrBack(RGB(255, 255, 255)), m_plf(NULL);
 ```  
   
 ### Remarks  
@@ -135,7 +132,7 @@ virtual ~CAtlPreviewCtrlImpl(void);
  Called by a Rich Preview handler to create the Windows window.  
   
 ```
-virtual BOOL Create(HWND hWndParent,  const RECT* prc);
+virtual BOOL Create(HWND hWndParent, const RECT* prc);
 ```  
   
 ### Parameters  
@@ -212,7 +209,8 @@ const LOGFONTW* m_plf;
  Handles the WM_PAINT message.  
   
 ```
-LRESULT OnPaint(UINT nMsg,
+LRESULT OnPaint(  
+    UINT nMsg,
     WPARAM wParam,
     LPARAM lParam,
     BOOL& bHandled);
@@ -262,7 +260,8 @@ virtual void SetHost(HWND hWndParent);
  Called by a Rich Preview handler when it needs to set visuals of rich preview content.  
   
 ```
-virtual void SetPreviewVisuals(COLORREF clrBack,
+virtual void SetPreviewVisuals(
+    COLORREF clrBack,
     COLORREF clrText,
     const LOGFONTW* plf);
 ```  
@@ -283,7 +282,7 @@ virtual void SetPreviewVisuals(COLORREF clrBack,
  Sets a new bounding rectangle for this control.  
   
 ```
-virtual void SetRect(const RECT* prc,  BOOL bRedraw);
+virtual void SetRect(const RECT* prc, BOOL bRedraw);
 ```  
   
 ### Parameters  

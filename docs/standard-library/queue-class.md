@@ -60,7 +60,7 @@ class queue
   
  The queue objects are equality comparable if and only if the elements of class **Type** are equality comparable, and are less-than comparable if and only if the elements of class **Type** are less-than comparable.  
   
- There are three types of container adaptors defined by the STL: stack, queue, and priority_queue. Each restricts the functionality of some underlying container class to provide a precisely controlled interface to a standard data structure.  
+ There are three types of container adaptors defined by the C++ Standard Library: stack, queue, and priority_queue. Each restricts the functionality of some underlying container class to provide a precisely controlled interface to a standard data structure.  
   
 -   The [stack class](../standard-library/stack-class.md) supports a last-in, first-out (LIFO) data structure. A good analogue to keep in mind would be a stack of plates. Elements (plates) may be inserted, inspected, or removed only from the top of the stack, which is the last element at the end of the base container. The restriction to accessing only the top element is the reason for using the stack class.  
   
@@ -113,7 +113,7 @@ const_reference back() const;
 ### Remarks  
  If the return value of **back** is assigned to a `const_reference`, the queue object cannot be modified. If the return value of **back** is assigned to a **reference**, the queue object can be modified.  
   
- When compiling with _SECURE_SCL 1, a runtime error will occur if you attempt to access an element in an empty queue.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
+ When compiled by using [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) defined as 1 or 2, a runtime error will occur if you attempt to access an element in an empty queue.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
   
 ### Example  
   
@@ -149,7 +149,7 @@ typedef Container container_type;
 ```  
   
 ### Remarks  
- The type is a synonym for the template parameter `Container`. Two STL sequence container classes — the list class and the default deque class — meet the requirements to be used as the base container for a queue object. User-defined types satisfying the requirements may also be used.  
+ The type is a synonym for the template parameter `Container`. Two C++ Standard Library sequence container classes — the list class and the default deque class — meet the requirements to be used as the base container for a queue object. User-defined types satisfying the requirements may also be used.  
   
  For more information on `Container`, see the Remarks section of the [queue Class](../standard-library/queue-class.md) topic.  
   
@@ -217,7 +217,7 @@ const_reference front() const;
   
  The member function returns a **reference** to the first element of the controlled sequence, which must be nonempty.  
   
- When compiling with _SECURE_SCL 1, a runtime error will occur if you attempt to access an element in an empty queue.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
+ When compiled by using [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) defined as 1 or 2, a runtime error will occur if you attempt to access an element in an empty queue.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.  
   
 ### Example  
   

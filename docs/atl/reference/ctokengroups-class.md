@@ -91,9 +91,8 @@ class CTokenGroups
  Adds a `CSid` or existing **TOKEN_GROUPS** structure to the `CTokenGroups` object.  
   
 ```
-void Add(const CSid& rSid,  DWORD dwAttributes) throw(...);
-
-    void Add(const TOKEN_GROUPS& rTokenGroups) throw(...);
+void Add(const CSid& rSid, DWORD dwAttributes) throw(...);  
+void Add(const TOKEN_GROUPS& rTokenGroups) throw(...);
 ```  
   
 ### Parameters  
@@ -210,7 +209,8 @@ void GetSidsAndAttributes(
  Retrieves the attributes associated with a `CSid` object.  
   
 ```
-bool LookupSid(const CSid& rSid,
+bool LookupSid(  
+    const CSid& rSid,
     DWORD* pdwAttributes = NULL) const throw();
 ```  
   
@@ -231,9 +231,8 @@ bool LookupSid(const CSid& rSid,
  Assignment operator.  
   
 ```
-CTokenGroups& operator= (const TOKEN_GROUPS& rhs) throw(...);
-
-    CTokenGroups& operator= (const CTokenGroups& rhs) throw(...);
+CTokenGroups& operator= (const TOKEN_GROUPS& rhs) throw(...);  
+CTokenGroups& operator= (const CTokenGroups& rhs) throw(...);
 ```  
   
 ### Parameters  
@@ -246,7 +245,8 @@ CTokenGroups& operator= (const TOKEN_GROUPS& rhs) throw(...);
 ##  <a name="operator_const_token_groups__star"></a>  CTokenGroups::operator const TOKEN_GROUPS *  
  Casts a value to a pointer to the **TOKEN_GROUPS** structure.  
   
-```operator const TOKEN_GROUPS *() const throw(...);
+```  
+operator const TOKEN_GROUPS *() const throw(...);
 ```  
   
 ### Remarks  

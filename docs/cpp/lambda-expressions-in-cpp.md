@@ -249,7 +249,7 @@ void fillVector(vector<int>& v)
   
  For more information, see [generate](http://msdn.microsoft.com/Library/0353f358-9651-4e00-b0c9-5bca720539a3).  
   
- The following code example uses the function from the previous example, and adds an example of a lambda expression that uses the STL algorithm `generate_n`. This lambda expression assigns an element of a `vector` object to the sum of the previous two elements. The `mutable` keyword is used so that the body of the lambda expression can modify its copies of the external variables `x` and `y`, which the lambda expression captures by value. Because the lambda expression captures the original variables `x` and `y` by value, their values remain `1` after the lambda executes.  
+ The following code example uses the function from the previous example, and adds an example of a lambda expression that uses the C++ Standard Library algorithm `generate_n`. This lambda expression assigns an element of a `vector` object to the sum of the previous two elements. The `mutable` keyword is used so that the body of the lambda expression can modify its copies of the external variables `x` and `y`, which the lambda expression captures by value. Because the lambda expression captures the original variables `x` and `y` by value, their values remain `1` after the lambda executes.  
   
 ```cpp  
 // compile with: /W4 /EHsc  
@@ -361,6 +361,6 @@ auto Sqr = [](int t) __declspec(code_seg("PagedMem")) -> int { return t*t; };
   
 ## See Also  
  [C++ Language Reference](../cpp/cpp-language-reference.md)   
- [Function Objects in the STL](../standard-library/function-objects-in-the-stl.md)   
+ [Function Objects in the C++ Standard Library](../standard-library/function-objects-in-the-stl.md)   
  [Function Call](../cpp/function-call-cpp.md)   
  [for_each](http://msdn.microsoft.com/Library/8cb2ae72-bef6-488b-b011-0475c0787e33)

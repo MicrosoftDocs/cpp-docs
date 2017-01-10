@@ -317,7 +317,7 @@ class double_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|[double_4::double_4 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[double_4 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -477,7 +477,7 @@ class double_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|[double_4::size Constant](#double_4__size)||  
+|[size Constant](#double_4__size)||  
   
 ### Public Data Members  
   
@@ -620,7 +620,8 @@ class double_4;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="ctor"></a>  double_4::double_4 Constructor  
+##  <a name="ctor"></a> double_4 
+
  Default constructor, initializes all elements with 0.  
   
 ```  
@@ -690,8 +691,8 @@ explicit inline double_4(
  `_Other`  
  The object used to initialize.  
   
-##  <a name="double_4__size"></a>  double_4::size Constant  
-  
+##  <a name="double_4__size"></a> size 
+
 ```  
 static const int size = 4;  
 ```  

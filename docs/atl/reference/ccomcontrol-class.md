@@ -49,7 +49,8 @@ This class provides methods for creating and managing ATL controls.
 ## Syntax  
   
 ```
-template <class T, class WinBase = CWindowImpl<T>>  class ATL_NO_VTABLE CComControl :  public CComControlBase,
+template <class T, class WinBase = CWindowImpl<T>>  
+class ATL_NO_VTABLE CComControl : public CComControlBase,
     public WinBase;
 ```  
   
@@ -109,8 +110,7 @@ CComControl();
  Retrieves a pointer to the requested interface.  
   
 ```
-virtual HRESULT ControlQueryInterface(const IID& iid,
-    void** ppv);
+virtual HRESULT ControlQueryInterface(const IID& iid, void** ppv);
 ```  
   
 ### Parameters  
@@ -130,8 +130,7 @@ virtual HRESULT ControlQueryInterface(const IID& iid,
  By default, creates a window for the control by calling `CWindowImpl::Create`.  
   
 ```
-virtual HWND CreateControlWindow(HWND hWndParent,
-    RECT& rcPos);
+virtual HWND CreateControlWindow(HWND hWndParent, RECT& rcPos);
 ```  
   
 ### Parameters  
@@ -196,9 +195,10 @@ HRESULT FireOnRequestEdit(DISPID dispID);
  Call this method to create, display, and operate a message box.  
   
 ```
-int MessageBox(LPCTSTR lpszText,
-    LPCTSTR lpszCaption = _T(""),
-    UINT nType = MB_OK);
+int MessageBox(
+  LPCTSTR lpszText, 
+  LPCTSTR lpszCaption = _T(""), 
+  UINT nType = MB_OK);
 ```  
   
 ### Parameters  

@@ -71,26 +71,26 @@ class writeonly_texture_view<value_type, _Rank> : public details::_Texture_base<
   
 |Name|Description|  
 |----------|-----------------|  
-|[writeonly_texture_view::writeonly_texture_view Constructor](#ctor)|Initializes a new instance of the `writeonly_texture_view` class.|  
-|[writeonly_texture_view::~writeonly_texture_view Destructor](#ctor)|Destroys the `writeonly_texture_view` object.|  
+|[writeonly_texture_view Constructor](#ctor)|Initializes a new instance of the `writeonly_texture_view` class.|  
+|[~writeonly_texture_view Destructor](#ctor)|Destroys the `writeonly_texture_view` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[writeonly_texture_view::set Method](#set)|Sets the value of the element at the specified index.|  
+|[set Method](#set)|Sets the value of the element at the specified index.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[writeonly_texture_view::operator= Operator](#operator_eq)|Copies the specified `writeonly_texture_view` object to this one.|  
+|[operator= Operator](#operator_eq)|Copies the specified `writeonly_texture_view` object to this one.|  
   
 ### Public Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[writeonly_texture_view::rank Constant](#rank)|Gets the rank of the `writeonly_texture_view` object.|  
+|[rank Constant](#rank)|Gets the rank of the `writeonly_texture_view` object.|  
   
 ## Inheritance Hierarchy  
  `_Texture_base`  
@@ -102,14 +102,16 @@ class writeonly_texture_view<value_type, _Rank> : public details::_Texture_base<
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="dtor"></a>  writeonly_texture_view::~writeonly_texture_view Destructor  
+##  <a name="dtor"></a> ~writeonly_texture_view 
+
  Destroys the `writeonly_texture_view` object.  
   
 ```  
 ~writeonly_texture_view() restrict(amp,cpu);
 ```  
   
-##  <a name="operator_eq"></a>  writeonly_texture_view::operator= Operator  
+##  <a name="operator_eq"></a> operator= 
+
  Copies the specified `writeonly_texture_view` object to this one.  
   
 ```  
@@ -124,14 +126,16 @@ writeonly_texture_view<value_type, _Rank>& operator= (
 ### Return Value  
  A reference to this `writeonly_texture_view` object.  
   
-##  <a name="rank"></a>  writeonly_texture_view::rank Constant  
+##  <a name="rank"></a> rank 
+
  Gets the rank of the `writeonly_texture_view` object.  
   
 ```  
 static const int rank = _Rank;  
 ```  
   
-##  <a name="set"></a>  writeonly_texture_view::set Method  
+##  <a name="set"></a> set 
+
  Sets the value of the element at the specified index.  
   
 ```  
@@ -147,7 +151,8 @@ void set(
  `value`  
  The new value of the element.  
   
-##  <a name="ctor"></a>  writeonly_texture_view::writeonly_texture_view Constructor  
+##  <a name="ctor"></a> writeonly_texture_view 
+
  Initializes a new instance of the `writeonly_texture_view` class.  
   
 ```  

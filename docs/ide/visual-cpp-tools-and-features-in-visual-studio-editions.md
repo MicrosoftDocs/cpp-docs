@@ -63,7 +63,7 @@ The following tables show Visual C++ features that are available in Visual Studi
 |Library or Header|Visual Studio Express for Windows|Visual Studio Express for Windows Desktop|Visual Studio Professional / Community|Visual Studio Enterprise|  
 |-----------------------|---------------------------------------|-----------------------------------------------|---------------------------------------------|------------------------------|  
 |Windows headers and libraries and CRT library|(X)|X|X|X|  
-|STL|X|X|X|X|  
+|C++ Standard Library|X|X|X|X|  
 |ATL|||X|X|  
 |MFC|||X|X|  
 |.NET Framework class library||X|X|X|  

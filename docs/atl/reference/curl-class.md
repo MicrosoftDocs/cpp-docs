@@ -165,7 +165,7 @@ inline void Clear() throw();
  Call this method to decode and parse the URL.  
   
 ```
-BOOL CrackUrl(LPCTSTR lpszUrl,  DWORD dwFlags = 0) throw();
+BOOL CrackUrl(LPCTSTR lpszUrl, DWORD dwFlags = 0) throw();
 ```  
   
 ### Parameters  
@@ -182,7 +182,8 @@ BOOL CrackUrl(LPCTSTR lpszUrl,  DWORD dwFlags = 0) throw();
  This method constructs a URL string from a CUrl object's component fields.  
   
 ```
-inline BOOL CreateUrl(LPTSTR lpszUrl,
+inline BOOL CreateUrl(  
+    LPTSTR lpszUrl,
     DWORD* pdwMaxLength,
     DWORD dwFlags = 0) const throw();
 ```  

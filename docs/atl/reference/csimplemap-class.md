@@ -42,8 +42,8 @@ This class provides support for a simple mapping array.
 ## Syntax  
   
 ```
-template <class TKey, class TVal, class TEqual = CSimpleMapEqualHelper<TKey,
-    TVal>> class CSimpleMap
+template <class TKey, class TVal, class TEqual = CSimpleMapEqualHelper<TKey, TVal>>  
+class CSimpleMap
 ```  
   
 #### Parameters  
@@ -109,7 +109,7 @@ template <class TKey, class TVal, class TEqual = CSimpleMapEqualHelper<TKey,
  Adds a key and associated value to the map array.  
   
 ```
-BOOL Add(const TKey& key,  const TVal& val);
+BOOL Add(const TKey& key, const TVal& val);
 ```  
   
 ### Parameters  
@@ -301,7 +301,7 @@ TKey ReverseLookup(const TVal& val) const;
  Sets the value associated with the given key.  
   
 ```
-BOOL SetAt(const TKey& key,  const TVal& val);
+BOOL SetAt(const TKey& key, const TVal& val);
 ```  
   
 ### Parameters  
@@ -318,7 +318,8 @@ BOOL SetAt(const TKey& key,  const TVal& val);
  Sets the key and value at a specified index.  
   
 ```
-BOOL SetAtIndex(int nIndex,
+BOOL SetAtIndex(  
+    int nIndex,
     const TKey& key,
     const TVal& val);
 ```  

@@ -1,5 +1,5 @@
 ---
-title: "copy_backward (STL-CLR) | Microsoft Docs"
+title: "copy_backward (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -46,7 +46,7 @@ template<class _BidIt1, class _BidIt2> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `copy_backward`. For more information, see [copy_backward](http://msdn.microsoft.com/Library/ddfab855-25a3-44db-a3cd-2b05ae97ea20).  
+ This function behaves the same as the C++ Standard Library function `copy_backward`. For more information, see [copy_backward](http://msdn.microsoft.com/Library/ddfab855-25a3-44db-a3cd-2b05ae97ea20).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

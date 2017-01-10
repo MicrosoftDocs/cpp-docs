@@ -35,42 +35,55 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # _ITERATOR_DEBUG_LEVEL
-The `_ITERATOR_DEBUG_LEVEL` (IDL) macro supersedes and combines the functionality of the [_SECURE_SCL](../standard-library/secure-scl.md) (SCL) and [_HAS_ITERATOR_DEBUGGING](../standard-library/has-iterator-debugging.md) (HID) macros.  
+The `_ITERATOR_DEBUG_LEVEL` macro controls whether [checked iterators](../standard-library/checked-iterators.md) and [debug iterator support](../standard-library/debug-iterator-support.md) are enabled. This macro supersedes and combines the functionality of the older `_SECURE_SCL` and `_HAS_ITERATOR_DEBUGGING` macros.  
   
 ## Macro Values  
- The following tables summarize the values for the `_SECURE_SCL` and `_HAS_ITERATOR_DEBUGGING` macros, and finally how those values are superseded by the `_ITERATOR_DEBUG_LEVEL` macro.  
+The following table summarizes the possible values for the `_ITERATOR_DEBUG_LEVEL` macro.  
   
- The following section describes the possible values of the SCL and HID macros.  
+|Compilation mode|Macro value|Description|  
+|----------------------|----------------|-----------------|  
+|**Debug**|||  
+||0|Disables checked iterators and disables iterator debugging.|  
+||1|Enables checked iterators and disables iterator debugging.|  
+||2 (Default)|Enables iterator debugging; checked iterators are not relevant.|  
+|**Release**|||  
+||0 (Default)|Disables checked iterators.|  
+||1|Enables checked iterators; iterator debugging is not relevant.|  
   
- SCL=0  
- Disables checked iterators.  
-  
- SCL=1  
- Enables checked iterators.  
-  
- HID=0  
- Disables iterator debugging in debug builds.  
-  
- HID=1  
- Enables iterator debugging in debug builds. HID cannot be enabled in release builds.  
-  
- The following table describes how the IDL macro values supersede the SCL and HID macro values.  
-  
-|Compilation mode|New macro|Old macros|Description|  
-|----------------------|---------------|----------------|-----------------|  
-|**Debug**||||  
-||IDL=0|SCL=0, HID=0|Disables checked iterators and disables iterator debugging.|  
-||IDL=1|SCL=1, HID=0|Enables checked iterators and disables iterator debugging.|  
-||IDL=2 (Default)|SCL=(does not apply), HID=1|By default, enables iterator debugging; checked iterators are not relevant.|  
-|**Release**||||  
-||IDL=0 (Default)|SCL=0|By default, disables checked iterators.|  
-||IDL=1|SCL=1|Enables checked iterators; iterator debugging is not relevant.|  
+In release mode, the compiler generates an error if you specify `_ITERATOR_DEBUG_LEVEL` as 2.  
   
 ## Remarks  
- In release mode, an error is emitted if you specify IDL=2.  
+The `_ITERATOR_DEBUG_LEVEL` macro controls whether [checked iterators](../standard-library/checked-iterators.md) are enabled, and in Debug mode, whether [debug iterator support](../standard-library/debug-iterator-support.md) is enabled. If `_ITERATOR_DEBUG_LEVEL` is defined as 1 or 2, checked iterators ensure that the bounds of your containers are not overwritten. If `_ITERATOR_DEBUG_LEVEL` is 0, iterators are not checked. When `_ITERATOR_DEBUG_LEVEL` is defined as 1, any unsafe iterator use causes a runtime error and the program is terminated. When `_ITERATOR_DEBUG_LEVEL` is defined as 2, unsafe iterator use causes an assert and a runtime error dialog that lets you break into the debugger. 
+
+Because the `_ITERATOR_DEBUG_LEVEL` macro supports similar functionality to the `_SECURE_SCL` and `_HAS_ITERATOR_DEBUGGING` macros, you may be uncertain which macro and macro value to use in a particular situation. To prevent confusion, we recommend that you use only the `_ITERATOR_DEBUG_LEVEL` macro. This table describes the equivalent `_ITERATOR_DEBUG_LEVEL` macro value to use for various values of `_SECURE_SCL` and `_HAS_ITERATOR_DEBUGGING` in existing code.  
   
- Because the `_SECURE_SCL` and `_HAS_ITERATOR_DEBUGGING` macros support similar functionality, users are often uncertain which macro and macro value to use in a particular situation. To resolve this issue, we recommend that you use only the `_ITERATOR_DEBUG_LEVEL` macro.  
+|**_ITERATOR_DEBUG_LEVEL** |**_SECURE_SCL** |**_HAS_ITERATOR_DEBUGGING**|
+|---|---|---|
+|0 (Release default)|0 (disabled)|0 (disabled)|
+|1|1 (enabled)|0 (disabled)|
+|2 (Debug default)|(not relevant)|1 (enabled in Debug mode)|
+  
+For information on how to disable warnings about checked iterators, see [_SCL_SECURE_NO_WARNINGS](../standard-library/scl-secure-no-warnings.md).  
+  
+### Example  
+  
+To specify a value for the `_ITERATOR_DEBUG_LEVEL` macro, use a [/D](../build/reference/d-preprocessor-definitions.md) compiler option to define it on the command line, or use `#define` before the C++ Standard Library headers are included in your source files. For example, on the command line, to compile *sample.cpp* in debug mode and to use debug iterator support, you can specify the `_ITERATOR_DEBUG_LEVEL` macro definition:  
+  
+`cl /EHsc /Zi /MDd /D_ITERATOR_DEBUG_LEVEL=1 sample.cpp`  
+  
+In a source file, specify the macro before any standard library headers that define iterators.  
+  
+```cpp  
+// sample.cpp  
+  
+#define _ITERATOR_DEBUG_LEVEL 1  
+  
+#include <vector>  
+  
+// ...
+```  
   
 ## See Also  
- [Safe Libraries: C++ Standard Library](../standard-library/safe-libraries-cpp-standard-library.md)
-
+[Checked Iterators](../standard-library/checked-iterators.md)   
+[Debug Iterator Support](../standard-library/debug-iterator-support.md)   
+[Safe Libraries: C++ Standard Library](../standard-library/safe-libraries-cpp-standard-library.md)

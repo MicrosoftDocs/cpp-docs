@@ -80,9 +80,7 @@ class CSecurityAttributes : public SECURITY_ATTRIBUTES
   
 ```
 CSecurityAttributes() throw();
-explicit CSecurityAttributes(
-    const CSecurityDesc& rSecurityDescriptor,
-    bool bInheritsHandle = false) throw(...);
+explicit CSecurityAttributes(const CSecurityDesc& rSecurityDescriptor, bool bInheritsHandle = false) throw(...);
 ```  
   
 ### Parameters  
@@ -96,7 +94,7 @@ explicit CSecurityAttributes(
  Call this method to set the attributes of the `CSecurityAttributes` object.  
   
 ```
-void Set(const CSecurityDesc& rSecurityDescriptor,  bool bInheritHandle = false) throw(...);
+void Set(const CSecurityDesc& rSecurityDescriptor, bool bInheritHandle = false) throw(...);
 ```  
   
 ### Parameters  

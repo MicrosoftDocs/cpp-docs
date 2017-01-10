@@ -48,6 +48,9 @@ A number of functions are provided to format and parse `CString` objects. You ca
 |[AfxFormatString2](#afxformatstring2)|Substitutes two strings for the format characters "%1" and "%2" in a string contained in the string table.|  
 |[AfxMessageBox](#afxmessagebox)|Displays a message box.|  
   
+### Requirements  
+  **Header** afxwin.h  
+  
 ##  <a name="afxextractsubstring"></a>  AfxExtractSubString  
  This global function can be used to extract a substring from a given source string.  
   
@@ -83,6 +86,9 @@ BOOL AFXAPI AfxExtractSubString (
 ### Example  
  [!code-cpp[NVC_MFC_Utilities#48](../../mfc/codesnippet/cpp/cstring-formatting-and-message-box-display_1.cpp)]  
   
+### Requirements  
+  **Header** afxwin.h  
+  
 ##  <a name="afxformatstring1"></a>  AfxFormatString1  
  Substitutes the string pointed to by `lpsz1` for any instances of the characters "%1" in the template string resource identified by `nIDS`.  
   
@@ -110,6 +116,9 @@ void  AfxFormatString1(
   
 ### Example  
  [!code-cpp[NVC_MFC_Utilities#25](../../mfc/codesnippet/cpp/cstring-formatting-and-message-box-display_2.cpp)]  
+  
+### Requirements  
+  **Header** afxwin.h  
   
 ##  <a name="afxformatstring2"></a>  AfxFormatString2  
  Substitutes the string pointed to by `lpsz1` for any instances of the characters "%1", and the string pointed to by `lpsz2` for any instances of the characters "%2", in the template string resource identified by `nIDS`.  
@@ -142,6 +151,9 @@ void AfxFormatString2(
   
 ### Example  
  [!code-cpp[NVC_MFC_Utilities#26](../../mfc/codesnippet/cpp/cstring-formatting-and-message-box-display_3.cpp)]  
+  
+### Requirements  
+  **Header** afxwin.h  
   
 ##  <a name="afxmessagebox"></a>  AfxMessageBox  
  Displays a message box on the screen.  

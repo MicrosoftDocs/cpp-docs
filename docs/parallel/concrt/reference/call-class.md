@@ -57,18 +57,18 @@ class call : public target_block<multi_link_registry<ISource<T>>>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[call::call Constructor](#ctor)|Overloaded. Constructs a `call` messaging block.|  
-|[call::~call Destructor](#dtor)|Destroys the `call` messaging block.|  
+|[call Constructor](#ctor)|Overloaded. Constructs a `call` messaging block.|  
+|[~call Destructor](#dtor)|Destroys the `call` messaging block.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[call::process_input_messages Method](#process_input_messages)|Executes the call function on the input messages.|  
-|[call::process_message Method](#process_message)|Processes a message that was accepted by this `call` messaging block.|  
-|[call::propagate_message Method](#propagate_message)|Asynchronously passes a message from an `ISource` block to this `call` messaging block. It is invoked by the `propagate` method, when called by a source block.|  
-|[call::send_message Method](#send_message)|Synchronously passes a message from an `ISource` block to this `call` messaging block. It is invoked by the `send` method, when called by a source block.|  
-|[call::supports_anonymous_source Method](#supports_anonymous_source)|Overrides the `supports_anonymous_source` method to indicate that this block can accept messages offered to it by a source that is not linked. (Overrides [ITarget::supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|  
+|[process_input_messages Method](#process_input_messages)|Executes the call function on the input messages.|  
+|[process_message Method](#process_message)|Processes a message that was accepted by this `call` messaging block.|  
+|[propagate_message Method](#propagate_message)|Asynchronously passes a message from an `ISource` block to this `call` messaging block. It is invoked by the `propagate` method, when called by a source block.|  
+|[send_message Method](#send_message)|Synchronously passes a message from an `ISource` block to this `call` messaging block. It is invoked by the `send` method, when called by a source block.|  
+|[supports_anonymous_source Method](#supports_anonymous_source)|Overrides the `supports_anonymous_source` method to indicate that this block can accept messages offered to it by a source that is not linked. (Overrides [ITarget::supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|  
   
 ## Remarks  
  For more information, see [Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md).  
@@ -85,7 +85,8 @@ class call : public target_block<multi_link_registry<ISource<T>>>;
   
  **Namespace:** concurrency  
   
-##  <a name="ctor"></a>  call::call Constructor  
+##  <a name="ctor"></a> call 
+
  Constructs a `call` messaging block.  
   
 ```
@@ -135,14 +136,16 @@ call(
   
  The type `filter_method` is a functor with signature `bool (T const &)` which is invoked by this `call` messaging block to determine whether or not it should accept an offered message.  
   
-##  <a name="dtor"></a>  call::~call Destructor  
+##  <a name="dtor"></a> ~call 
+
  Destroys the `call` messaging block.  
   
 ```
 ~call();
 ```  
   
-##  <a name="process_input_messages"></a>  call::process_input_messages Method  
+##  <a name="process_input_messages"></a> process_input_messages 
+
  Executes the call function on the input messages.  
   
 ```
@@ -152,7 +155,8 @@ virtual void process_input_messages(_Inout_ message<T>* _PMessage);
 ### Parameters  
  `_PMessage`  
   
-##  <a name="process_message"></a>  call::process_message Method  
+##  <a name="process_message"></a> process_message 
+
  Processes a message that was accepted by this `call` messaging block.  
   
 ```
@@ -163,7 +167,8 @@ virtual void process_message(_Inout_ message<T>* _PMessage);
  `_PMessage`  
  A pointer to the message that is to be handled.  
   
-##  <a name="propagate_message"></a>  call::propagate_message Method  
+##  <a name="propagate_message"></a> propagate_message 
+
  Asynchronously passes a message from an `ISource` block to this `call` messaging block. It is invoked by the `propagate` method, when called by a source block.  
   
 ```
@@ -182,7 +187,8 @@ virtual message_status propagate_message(
 ### Return Value  
  A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
   
-##  <a name="send_message"></a>  call::send_message Method  
+##  <a name="send_message"></a> send_message 
+
  Synchronously passes a message from an `ISource` block to this `call` messaging block. It is invoked by the `send` method, when called by a source block.  
   
 ```
@@ -201,7 +207,8 @@ virtual message_status send_message(
 ### Return Value  
  A [message_status](concurrency-namespace-enums.md) indication of what the target decided to do with the message.  
   
-##  <a name="supports_anonymous_source"></a>  call::supports_anonymous_source Method  
+##  <a name="supports_anonymous_source"></a> supports_anonymous_source 
+
  Overrides the `supports_anonymous_source` method to indicate that this block can accept messages offered to it by a source that is not linked.  
   
 ```

@@ -42,7 +42,8 @@ This class is a helper for the [CSimpleMap](../../atl/reference/csimplemap-class
 ## Syntax  
   
 ```
-template <class TKey, class TVal> class CSimpleMapEqualHelperFalse
+template <class TKey, class TVal>  
+class CSimpleMapEqualHelperFalse
 ```  
   
 ## Members  
@@ -66,7 +67,7 @@ template <class TKey, class TVal> class CSimpleMapEqualHelperFalse
  Tests two keys for equality.  
   
 ```
-static bool IsEqualKey(const TKey& k1,  const TKey& k2);
+static bool IsEqualKey(const TKey& k1, const TKey& k2);
 ```  
   
 ### Parameters  
@@ -86,7 +87,7 @@ static bool IsEqualKey(const TKey& k1,  const TKey& k2);
  Returns false.  
   
 ```
-static bool IsEqualValue(const TVal&,  const TVal&);
+static bool IsEqualValue(const TVal&, const TVal&);
 ```  
   
 ### Return Value  

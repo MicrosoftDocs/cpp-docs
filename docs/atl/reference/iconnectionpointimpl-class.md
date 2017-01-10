@@ -43,8 +43,8 @@ This class implements a connection point.
 ## Syntax  
   
 ```
-template<class T,
-    const IID* piid, class CDV = CComDynamicUnkArray>  class ATL_NO_VTABLE IConnectionPointImpl :  public _ICPLocator<piid>
+template<class T, const IID* piid, class CDV = CComDynamicUnkArray>  
+class ATL_NO_VTABLE IConnectionPointImpl : public _ICPLocator<piid>
 ```  
   
 #### Parameters  
@@ -138,8 +138,7 @@ STDMETHOD(GetConnectionPointContainer)(IConnectionPointContainer** ppCPC);
  Manages the connections between the connection point object and a sink.  
   
 ```
-CDV
-    m_vec;
+CDV m_vec;
 ```     
   
 ### Remarks  

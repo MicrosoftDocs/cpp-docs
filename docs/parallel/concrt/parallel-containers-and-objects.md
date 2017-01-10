@@ -37,7 +37,7 @@ translation.priority.ht:
 # Parallel Containers and Objects
 The Parallel Patterns Library (PPL) includes several containers and objects that provide thread-safe access to their elements.  
   
- A *concurrent container* provides concurrency-safe access to the most important operations. The functionality of these containers resembles those that are provided by the Standard Template Library (STL). For example, the [concurrency::concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) class resembles the [std::vector](../../standard-library/vector-class.md) class, except that the `concurrent_vector` class lets you append elements in parallel. Use concurrent containers when you have parallel code that requires both read and write access to the same container.  
+ A *concurrent container* provides concurrency-safe access to the most important operations. The functionality of these containers resembles those that are provided by the C++ Standard Library. For example, the [concurrency::concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) class resembles the [std::vector](../../standard-library/vector-class.md) class, except that the `concurrent_vector` class lets you append elements in parallel. Use concurrent containers when you have parallel code that requires both read and write access to the same container.  
   
  A *concurrent object* is shared concurrently among components. A process that computes the state of a concurrent object in parallel produces the same result as another process that computes the same state serially. The [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) class is one example of a concurrent object type. The `combinable` class lets you perform computations in parallel, and then combine those computations into a final result. Use concurrent objects when you would otherwise use a synchronization mechanism, for example, a mutex, to synchronize access to a shared variable or resource.  
   
@@ -120,7 +120,7 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
 |[empty](reference/concurrent-vector-class.md#empty)|[max_size](reference/concurrent-vector-class.md#max_size)|[size](reference/concurrent-vector-class.md#size)|  
 
   
- Operations that the runtime provides for compatibility with the STL, for example, `reserve`, are not concurrency-safe. The following table shows the common methods and operators that are not concurrency-safe.  
+ Operations that the runtime provides for compatibility with the C++ Standard Library, for example, `reserve`, are not concurrency-safe. The following table shows the common methods and operators that are not concurrency-safe.  
   
 |||  
 |-|-|  

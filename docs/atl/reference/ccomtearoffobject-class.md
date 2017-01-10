@@ -47,8 +47,7 @@ This class implements a tear-off interface.
   
 ```
 template<class Base>
-class CComTearOffObject
- :  public Base
+class CComTearOffObject : public Base
 ```  
   
 #### Parameters  
@@ -167,8 +166,7 @@ CComObject<Owner>* m_pOwner;
  Retrieves a pointer to the requested interface.  
   
 ```
-STDMETHOD(QueryInterface)(REFIID iid,
-    void** ppvObject);
+STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 ```  
   
 ### Parameters  

@@ -53,16 +53,16 @@ These functions provide support for loading and registering a type library.
 |[AtlGetPerUserRegistration](#atlgetperuserregistration)|Retrieves whether the application redirects registry access to the **HKEY_CURRENT_USER** ( **HKCU**) node.|  
 |[AtlSetPerUserRegistration](#atlsetperuserregistration)|Sets whether the application redirects registry access to the **HKEY_CURRENT_USER** ( **HKCU**) node.|  
 
+### Requirements  
+ **Header:** atlbase.h
 
 ## <a name="atlgetperuserregistration"></a> AtlGetPerUserRegistration
 Use this function to determine whether the application redirects registry access to the **HKEY_CURRENT_USER** (**HKCU**) node.  
   
-## Syntax  
+### Syntax  
   
 ```  
-ATLINLINE ATLAPI AtlGetPerUserRegistration(  
-   bool* pEnabled  
-);  
+ATLINLINE ATLAPI AtlGetPerUserRegistration(bool* pEnabled);  
 ```  
   
 ### Parameters  
@@ -77,7 +77,8 @@ ATLINLINE ATLAPI AtlGetPerUserRegistration(
   
  The redirection is not global. Only the MFC and ATL frameworks are affected by this registry redirection.  
   
-
+### Requirements  
+ **Header:** atlbase.h  
 
 ##  <a name="atlregistertypelib"></a>  AtlRegisterTypeLib  
  This function is called to register a type library.  
@@ -99,16 +100,16 @@ ATLAPI AtlRegisterTypeLib(HINSTANCE hInstTypeLib, LPCOLESTR lpszIndex);
   
 ### Remarks  
  This helper function is utilized by [AtlComModuleUnregisterServer](server-registration-global-functions.md#atlcommoduleunregisterserver) and [CAtlComModule::RegisterTypeLib](../../atl/reference/catlcommodule-class.md#registertypelib).  
-  
+### Requirements  
+ **Header:** atlbase.h
+
 ## <a name="atlsetperuserregistration"></a> AtlSetPerUserRegistration
 Sets whether the application redirects registry access to the **HKEY_CURRENT_USER** (**HKCU**) node.  
   
-## Syntax  
+### Syntax  
   
 ```  
-ATLINLINE ATLAPI AtlSetPerUserRegistration(  
-   bool bEnable  
-);  
+ATLINLINE ATLAPI AtlSetPerUserRegistration(bool bEnable);  
 ```  
   
 ### Parameters  
@@ -122,15 +123,15 @@ ATLINLINE ATLAPI AtlSetPerUserRegistration(
  Registry redirection is not enabled by default. If you enable this option, registry access is redirected to **HKEY_CURRENT_USER\Software\Classes**.  
   
  The redirection is not global. Only the MFC and ATL frameworks are affected by this registry redirection.  
-  
+### Requirements  
+ **Header:** atlbase.h  
 
 ##  <a name="atlunregistertypelib"></a>  AtlUnRegisterTypeLib  
  This function is called to unregister a type library.  
   
-
+### Syntax  
 ```
-ATLAPI AtlUnRegisterTypeLib(
-    HINSTANCE hInstTypeLib,  LPCOLESTR lpszIndex);
+ATLAPI AtlUnRegisterTypeLib(HINSTANCE hInstTypeLib, LPCOLESTR lpszIndex);
 ```  
   
 ### Parameters  
@@ -145,11 +146,13 @@ ATLAPI AtlUnRegisterTypeLib(
   
 ### Remarks  
  This helper function is utilized by [CAtlComModule::UnRegisterTypeLib](../../atl/reference/catlcommodule-class.md#unregistertypelib) and [AtlComModuleUnregisterServer](#atlcommoduleunregisterserver).  
-  
+### Requirements  
+ **Header:** atlbase.h
+
 ##  <a name="atlloadtypelib"></a>  AtlLoadTypeLib  
  This function is called to load a type library.  
   
-
+### Syntax  
 ```
 ATLINLINE ATLAPI AtlLoadTypeLib(
     HINSTANCE hInstTypeLib,
@@ -192,7 +195,8 @@ ATLINLINE ATLAPI AtlLoadTypeLib(
   
 ##  <a name="registrydataexchange"></a>  RegistryDataExchange  
  This function is called to read from, or write to, the system registry.  
- 
+
+### Syntax  
 ```
 HRESULT RegistryDataExchange(
     T* pT,
@@ -214,7 +218,7 @@ HRESULT RegistryDataExchange(
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- The macros [BEGIN_RDX_MAP](http://msdn.microsoft.com/library/95bbba6a-d550-4e36-8e6e-1c619d9e660d) and [END_RDX_MAP](http://msdn.microsoft.com/library/77efa3bd-ded7-430c-b5b4-2131a2d7e71d) expand to a function that calls `RegistryDataExchange`.  
+ The macros [BEGIN_RDX_MAP](registry-data-exchange-macros.md#begin_rdx_map) and [END_RDX_MAP](registry-data-exchange-macros.md#end_rdx_map) expand to a function that calls `RegistryDataExchange`.  
   
  The possible enum values that indicate the operation the function should perform are shown in the following table:  
   
@@ -224,20 +228,12 @@ HRESULT RegistryDataExchange(
 |eWriteToReg|Write data to the registry.|  
 |eDeleteFromReg|Delete the key from the registry.|  
   
-##  <a name="registry_data_exchange_macros"></a>  Registry Data Exchange Macros  
- These macros perform Registry Data Exchange operations.  
-  
-|||  
-|-|-|  
-|[BEGIN_RDX_MAP](http://msdn.microsoft.com/library/95bbba6a-d550-4e36-8e6e-1c619d9e660d)|Marks the beginning of the Registry Data Exchange map.|  
-|[END_RDX_MAP](http://msdn.microsoft.com/library/77efa3bd-ded7-430c-b5b4-2131a2d7e71d)|Marks the end of the Registry Data Exchange map.|  
-|[RDX_BINARY](http://msdn.microsoft.com/library/cc872cdb-fe5a-45cd-8ed8-00be54911f2a)|Associates the specified registry entry with a specified member variable of type BYTE.|  
-|[RDX_CSTRING_TEXT](http://msdn.microsoft.com/library/897ac6dc-2700-4818-8327-3a779aa7bc6c)|Associates the specified registry entry with a specified member variable of type CString.|  
-|[RDX_DWORD](http://msdn.microsoft.com/library/1e7d4888-284f-4fe7-99de-5f193af19c4d)|Associates the specified registry entry with a specified member variable of type DWORD.|  
-|[RDX_TEXT](http://msdn.microsoft.com/library/47566a2e-f293-4b67-8e1c-fa83a0a0c558)|Associates the specified registry entry with a specified member variable of type TCHAR.|  
-  
+### Requirements  
+ **Header:** atlbase.h
+
 ## See Also  
- [Functions](../../atl/reference/atl-functions.md)
+ [Functions](atl-functions.md)
+ [Registry Data Exchange Macros](registry-data-exchange-macros.md)
 
 
 

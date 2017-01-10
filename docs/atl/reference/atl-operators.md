@@ -39,10 +39,10 @@ This section contains the reference topics for the ATL global operators.
 |--------------|-----------------|  
 |[operator ==](#operator_eq_eq)|Compares two `CSid` objects or `SID` structures for equality.|  
 |[operator !=](#operator_neq)|Compares two `CSid` objects or `SID` structures for inequality.|  
-|[operator <](#operator_lt)|Tests if the `CSid` object or `SID` structure on the left side of the operator is less than the `CSid` object or `SID` structure on the right side (for STL compatibility).|  
-|[operator >](#operator_gt)|Tests if the `CSid` object or `SID` structure on the left side of the operator is greater than the `CSid` object or `SID` structure on the right side (for STL compatibility).|  
-|[operator <=](#operator_lt__eq)|Tests if the `CSid` object or `SID` structure on the left side of the operator is less than or equal to the `CSid` object or `SID` structure on the right side (for STL compatibility).|  
-|[operator >=](#operator_gt__eq)|Tests if the `CSid` object or `SID` structure on the left side of the operator is greater than or equal to the `CSid` object or `SID` structure on the right side (for STL compatibility).|  
+|[operator <](#operator_lt)|Tests if the `CSid` object or `SID` structure on the left side of the operator is less than the `CSid` object or `SID` structure on the right side (for C++ Standard Library compatibility).|  
+|[operator >](#operator_gt)|Tests if the `CSid` object or `SID` structure on the left side of the operator is greater than the `CSid` object or `SID` structure on the right side (for C++ Standard Library compatibility).|  
+|[operator <=](#operator_lt__eq)|Tests if the `CSid` object or `SID` structure on the left side of the operator is less than or equal to the `CSid` object or `SID` structure on the right side (for C++ Standard Library compatibility).|  
+|[operator >=](#operator_gt__eq)|Tests if the `CSid` object or `SID` structure on the left side of the operator is greater than or equal to the `CSid` object or `SID` structure on the right side (for C++ Standard Library compatibility).|  
   
  These operators are all defined in the file atlsecurity.h.  
   
@@ -81,7 +81,7 @@ bool operator==(const CSid& lhs, const CSid& rhs) throw();
  Returns **true** if the objects are not equal, **false** if they are equal.  
   
 ##  <a name="operator_lt"></a>  operator <  
- Tests if the `CSid` object or `SID` structure on the left side of the operator is less than the `CSid` object or `SID` structure on the right side (for STL compatibility).  
+ Tests if the `CSid` object or `SID` structure on the left side of the operator is less than the `CSid` object or `SID` structure on the right side (for C++ Standard Library compatibility).  
   
 ```   
 bool operator<(const CSid& lhs, const CSid& rhs) throw(); 
@@ -98,10 +98,10 @@ bool operator<(const CSid& lhs, const CSid& rhs) throw();
  Returns **true** if the address of the `lhs` object is less than the address of the `rhs` object, **false** otherwise.  
   
 ### Remarks  
- This operator acts on the address of the `CSid` object or `SID` structure, and is implemented to provide compatibility with STL collection classes.  
+ This operator acts on the address of the `CSid` object or `SID` structure, and is implemented to provide compatibility with C++ Standard Library collection classes.  
   
 ##  <a name="operator_gt"></a>  operator >  
- Tests if the `CSid` object or `SID` structure on the left side of the operator is greater than the `CSid` object or `SID` structure on the right side (for STL compatibility).  
+ Tests if the `CSid` object or `SID` structure on the left side of the operator is greater than the `CSid` object or `SID` structure on the right side (for C++ Standard Library compatibility).  
   
 ```   
 bool operator<(const CSid& lhs, const CSid& rhs) throw(); 
@@ -118,10 +118,10 @@ bool operator<(const CSid& lhs, const CSid& rhs) throw();
  Returns **true** if the address of the `lhs` is greater than the address of the `rhs`, **false** otherwise.  
   
 ### Remarks  
- This operator acts on the address of the `CSid` object or `SID` structure, and is implemented to provide compatibility with STL collection classes.  
+ This operator acts on the address of the `CSid` object or `SID` structure, and is implemented to provide compatibility with C++ Standard Library collection classes.  
   
 ##  <a name="operator_lt__eq"></a>  operator <=  
- Tests if the `CSid` object or `SID` structure on the left side of the operator is less than or equal to the `CSid` object or `SID` structure on the right side (for STL compatibility).  
+ Tests if the `CSid` object or `SID` structure on the left side of the operator is less than or equal to the `CSid` object or `SID` structure on the right side (for C++ Standard Library compatibility).  
   
 ```   
 bool operator<(const CSid& lhs, const CSid& rhs) throw(); 
@@ -138,10 +138,10 @@ bool operator<(const CSid& lhs, const CSid& rhs) throw();
  Returns **true** if the address of the `lhs` is less than or equal to the address of the `rhs`, **false** otherwise.  
   
 ### Remarks  
- This operator acts on the address of the `CSid` object or `SID` structure, and is implemented to provide compatibility with STL collection classes.  
+ This operator acts on the address of the `CSid` object or `SID` structure, and is implemented to provide compatibility with C++ Standard Library collection classes.  
   
 ##  <a name="operator_gt__eq"></a>  operator >=  
- Tests if the `CSid` object or `SID` structure on the left side of the operator is greater than or equal to the `CSid` object or `SID` structure on the right side (for STL compatibility).  
+ Tests if the `CSid` object or `SID` structure on the left side of the operator is greater than or equal to the `CSid` object or `SID` structure on the right side (for C++ Standard Library compatibility).  
   
 ```   
 bool operator<(const CSid& lhs, const CSid& rhs) throw(); 
@@ -158,7 +158,7 @@ bool operator<(const CSid& lhs, const CSid& rhs) throw();
  Returns **true** if the address of the `lhs` is greater than or equal to the address of the `rhs`, **false** otherwise.  
   
 ### Remarks  
- This operator acts on the address of the `CSid` object or `SID` structure, and is implemented to provide compatibility with STL collection classes.
+ This operator acts on the address of the `CSid` object or `SID` structure, and is implemented to provide compatibility with C++ Standard Library collection classes.
 
 
 

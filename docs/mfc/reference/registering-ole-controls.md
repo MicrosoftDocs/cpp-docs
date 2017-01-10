@@ -164,6 +164,9 @@ BOOL AFXAPI AfxOleRegisterControlClass(
   
  The control will show up in the Insert Object dialog box for enabled containers, and it will be apartment model-aware. Apartment model-aware controls must ensure that static class data is protected by locks, so that while a control in one apartment is accessing the static data, it isn't disabled by the scheduler before it is finished, and another instance of the same class starts using the same static data. Any accesses to the static data will be surrounded by critical section code.  
   
+### Requirements  
+  **Header** afxctl.h  
+  
 ##  <a name="afxoleregisterpropertypageclass"></a>  AfxOleRegisterPropertyPageClass  
  Registers the property page class with the Windows registration database.  
   
@@ -198,6 +201,9 @@ BOOL AFXAPI AfxOleRegisterPropertyPageClass(
   
 ### Remarks  
  This allows the property page to be used by containers that are OLE-control aware. `AfxOleRegisterPropertyPageClass` updates the registry with the property page name and its location on the system and also sets the threading model that the control supports in the registry. For more information, see [Technical Note 64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "Apartment-Model Threading in OLE Controls," and [About Processes and Threads](http://msdn.microsoft.com/library/windows/desktop/ms681917) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+  
+### Requirements  
+  **Header** afxctl.h  
   
 ##  <a name="afxoleregistertypelib"></a>  AfxOleRegisterTypeLib  
  Registers the type library with the Windows registration database and allows the type library to be used by other containers that are OLE-control aware.  
@@ -234,6 +240,9 @@ BOOL AfxOleRegisterTypeLib(
   
  [!code-cpp[NVC_MFCAutomation#8](../../mfc/codesnippet/cpp/registering-ole-controls_4.cpp)]  
   
+### Requirements  
+  **Header** afxdisp.h  
+  
 ##  <a name="afxoleunregisterclass"></a>  AfxOleUnregisterClass  
  Removes the control or property page class entry from the Windows registration database.  
   
@@ -251,6 +260,9 @@ BOOL AFXAPI AfxOleUnregisterClass(REFCLSID clsID, LPCSTR pszProgID);
 ### Return Value  
  Nonzero if the control or property page class was successfully unregistered; otherwise 0.  
   
+### Requirements  
+  **Header** afxctl.h  
+  
 ##  <a name="afxoleunregistertypelib"></a>  AfxOleUnregisterTypeLib  
  Call this function to remove the type library entry from the Windows registration database.  
   
@@ -267,6 +279,9 @@ BOOL AFXAPI AfxOleUnregisterTypeLib(REFGUID tlID);
   
 ### Example  
  [!code-cpp[NVC_MFCAxCtl#13](../../mfc/reference/codesnippet/cpp/registering-ole-controls_5.cpp)]  
-  
+
+### Requirements  
+  **Header** afxdisp.h  
+
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

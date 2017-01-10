@@ -47,8 +47,9 @@ This class provides methods, static functions, and typedefs useful when creating
 ## Syntax  
   
 ```
-template<typename T>  class CAutoPtrElementTraits : public CDefaultElementTraits<
-    ATL::CAutoPtr<T>>
+template<typename T>  
+class CAutoPtrElementTraits 
+    : public CDefaultElementTraits<ATL::CAutoPtr<T>>
 ```    
   
 #### Parameters  

@@ -54,13 +54,13 @@ class progress_reporter;
   
 |Name|Description|  
 |----------|-----------------|  
-|[progress_reporter::progress_reporter Constructor](#ctor)||  
+|[progress_reporter Constructor](#ctor)||  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[progress_reporter::report Method](#report)|Sends a progress report to the asynchronous action or operation to which this progress reporter is bound.|  
+|[report Method](#report)|Sends a progress report to the asynchronous action or operation to which this progress reporter is bound.|  
   
 ## Remarks  
  This type is only available to Windows Store apps.  
@@ -73,13 +73,14 @@ class progress_reporter;
   
  **Namespace:** concurrency  
   
-##  <a name="ctor"></a>  progress_reporter::progress_reporter Constructor  
-  
+##  <a name="ctor"></a> progress_reporter 
+
 ```
 progress_reporter();
 ```  
   
-##  <a name="report"></a>  progress_reporter::report Method  
+##  <a name="report"></a> report 
+
  Sends a progress report to the asynchronous action or operation to which this progress reporter is bound.  
   
 ```

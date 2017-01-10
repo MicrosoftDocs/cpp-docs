@@ -446,9 +446,8 @@ bool MakeSelfRelative() throw(...);
  Assignment operator.  
   
 ```
-CSecurityDesc& operator= (const SECURITY_DESCRIPTOR& rhs) throw(...);
-
-    CSecurityDesc& operator= (const CSecurityDesc& rhs) throw(...);
+CSecurityDesc& operator= (const SECURITY_DESCRIPTOR& rhs) throw(...);  
+CSecurityDesc& operator= (const CSecurityDesc& rhs) throw(...);
 ```  
   
 ### Parameters  
@@ -461,14 +460,15 @@ CSecurityDesc& operator= (const SECURITY_DESCRIPTOR& rhs) throw(...);
 ##  <a name="operator_const_security_descriptor__star"></a>  CSecurityDesc::operator const SECURITY_DESCRIPTOR *  
  Casts a value to a pointer to the **SECURITY_DESCRIPTOR** structure.  
   
-```operator const SECURITY_DESCRIPTOR *() const throw();
+```  
+operator const SECURITY_DESCRIPTOR *() const throw();
 ```  
   
 ##  <a name="setcontrol"></a>  CSecurityDesc::SetControl  
  Sets the control bits of a security descriptor.  
   
 ```
-bool SetControl(SECURITY_DESCRIPTOR_CONTROL ControlBitsOfInterest,  SECURITY_DESCRIPTOR_CONTROL ControlBitsToSet) throw();
+bool SetControl(SECURITY_DESCRIPTOR_CONTROL ControlBitsOfInterest, SECURITY_DESCRIPTOR_CONTROL ControlBitsToSet) throw();
 ```  
   
 ### Parameters  
@@ -488,10 +488,12 @@ bool SetControl(SECURITY_DESCRIPTOR_CONTROL ControlBitsOfInterest,  SECURITY_DES
  Sets information in a discretionary access-control list (DACL). If a DACL is already present in the security descriptor, it is replaced.  
   
 ```
-inline void SetDacl(bool bPresent = true,
+inline void SetDacl(  
+    bool bPresent = true,
     bool bDefaulted = false) throw(...);
 
-    inline void SetDacl(const CDacl& Dacl,
+    inline void SetDacl(  
+    const CDacl& Dacl,
     bool bDefaulted = false) throw(...);
 ```  
   
@@ -515,7 +517,7 @@ inline void SetDacl(bool bPresent = true,
  Sets the primary group information of an absolute format security descriptor, replacing any primary group information already present.  
   
 ```
-bool SetGroup(const CSid& Sid,  bool bDefaulted = false) throw(...);
+bool SetGroup(const CSid& Sid, bool bDefaulted = false) throw(...);
 ```  
   
 ### Parameters  
@@ -532,7 +534,7 @@ bool SetGroup(const CSid& Sid,  bool bDefaulted = false) throw(...);
  Sets the owner information of an absolute format security descriptor. It replaces any owner information already present.  
   
 ```
-bool SetOwner(const CSid& Sid,  bool bDefaulted = false) throw(...);
+bool SetOwner(const CSid& Sid, bool bDefaulted = false) throw(...);
 ```  
   
 ### Parameters  
@@ -549,7 +551,7 @@ bool SetOwner(const CSid& Sid,  bool bDefaulted = false) throw(...);
  Sets information in a system access-control list (SACL). If a SACL is already present in the security descriptor, it is replaced.  
   
 ```
-bool SetSacl(const CSacl& Sacl,  bool bDefaulted = false) throw(...);
+bool SetSacl(const CSacl& Sacl, bool bDefaulted = false) throw(...);
 ```  
   
 ### Parameters  
@@ -567,7 +569,7 @@ bool SetSacl(const CSacl& Sacl,  bool bDefaulted = false) throw(...);
   
 ```
 bool ToString(
-    CString* pstr,  SECURITY_INFORMATION si = OWNER_SECURITY_INFORMATION |
+    CString* pstr, SECURITY_INFORMATION si = OWNER_SECURITY_INFORMATION |
     GROUP_SECURITY_INFORMATION | DACL_SECURITY_INFORMATION |
     SACL_SECURITY_INFORMATION) const throw(...);
 ```  

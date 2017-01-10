@@ -75,14 +75,14 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_index::tiled_index Constructor](#ctor)|Initializes a new instance of the `tile_index` class.|  
+|[tiled_index Constructor](#ctor)|Initializes a new instance of the `tile_index` class.|  
 
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_index::get_tile_extent Method](#tiled_index__get_tile_extent)|Returns an [extent](extent-class.md) object that has the values of the `tiled_index` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
+|[get_tile_extent Method](#tiled_index__get_tile_extent)|Returns an [extent](extent-class.md) object that has the values of the `tiled_index` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
 
 
   
@@ -90,23 +90,23 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_index::barrier Constant](#tiled_index__barrier)|Stores a [tile_barrier](tile-barrier-class.md) object that represents a barrier in the current tile of threads.|  
+|[barrier Constant](#tiled_index__barrier)|Stores a [tile_barrier](tile-barrier-class.md) object that represents a barrier in the current tile of threads.|  
 |||  
-|[tiled_index::global Constant](#tiled_index__global)|Stores an [index](index-class.md) object of rank 1, 2, or 3 that represents the global index in a [grid](http://msdn.microsoft.com/en-us/f7d1b6a6-586c-4345-b09a-bfc26c492cb0) object.|  
-|[tiled_index::local Constant](#tiled_index__local)|Stores an `index` object of rank 1, 2, or 3 that represents the relative index in the current tile of a [tiled_extent](tiled-extent-class.md) object.|  
-|[tiled_index::rank Constant](#tiled_index__rank)|Stores the rank of the `tiled_index` object.|  
-|[tiled_index::tile Constant](#tiled_index__tile)|Stores an `index` object of rank 1, 2, or 3 that represents the coordinates of the current tile of a `tiled_extent` object.|  
-|[tiled_index::tile_dim0 Constant](#tiled_index__tile_dim0)|Stores the length of the most significant dimension.|  
-|[tiled_index::tile_dim1 Constant](#tiled_index__tile_dim1)|Stores the length of the next-to-most significant dimension.|  
-|[tiled_index::tile_dim2 Constant](#tiled_index__tile_dim2)|Stores the length of the least significant dimension.|  
-|[tiled_index::tile_origin Constant](#tiled_index__tile_origin)|Stores an `index` object of rank 1, 2, or 3 that represents the global coordinates of the origin of the current tile in a `tiled_extent` object.|  
+|[global Constant](#tiled_index__global)|Stores an [index](index-class.md) object of rank 1, 2, or 3 that represents the global index in a [grid](http://msdn.microsoft.com/en-us/f7d1b6a6-586c-4345-b09a-bfc26c492cb0) object.|  
+|[local Constant](#tiled_index__local)|Stores an `index` object of rank 1, 2, or 3 that represents the relative index in the current tile of a [tiled_extent](tiled-extent-class.md) object.|  
+|[rank Constant](#tiled_index__rank)|Stores the rank of the `tiled_index` object.|  
+|[tile Constant](#tiled_index__tile)|Stores an `index` object of rank 1, 2, or 3 that represents the coordinates of the current tile of a `tiled_extent` object.|  
+|[tile_dim0 Constant](#tiled_index__tile_dim0)|Stores the length of the most significant dimension.|  
+|[tile_dim1 Constant](#tiled_index__tile_dim1)|Stores the length of the next-to-most significant dimension.|  
+|[tile_dim2 Constant](#tiled_index__tile_dim2)|Stores the length of the least significant dimension.|  
+|[tile_origin Constant](#tiled_index__tile_origin)|Stores an `index` object of rank 1, 2, or 3 that represents the global coordinates of the origin of the current tile in a `tiled_extent` object.|  
 
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[tiled_index::tile_extent Data Member](#tile_extent)|Gets an [extent](extent-class.md) object that has the values of the `tiled_index` template arguments `tiled_index` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
+|[tile_extent Data Member](#tile_extent)|Gets an [extent](extent-class.md) object that has the values of the `tiled_index` template arguments `tiled_index` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
 
   
 ## Inheritance Hierarchy  

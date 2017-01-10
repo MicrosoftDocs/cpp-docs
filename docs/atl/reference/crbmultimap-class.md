@@ -43,10 +43,10 @@ This class represents a mapping structure that allows each key can be associated
   
 ```
 template<typename K,
-    typename V, class KTraits = CElementTraits<K>, class VTraits = CElementTraits<V>> class CRBMultiMap : public CRBTree<K,
-    V,
- KTraits,
-    VTraits>
+         typename V, 
+         class KTraits = CElementTraits<K>, 
+         class VTraits = CElementTraits<V>>  
+class CRBMultiMap : public CRBTree<K, V, KTraits, VTraits>
 ```    
   
 #### Parameters  
@@ -216,7 +216,7 @@ CPair* GetNextWithKey(
  Call this method to insert an element pair into the map.  
   
 ```
-POSITION Insert(KINARGTYPE key,  VINARGTYPE value) throw(...);
+POSITION Insert(KINARGTYPE key, VINARGTYPE value) throw(...);
 ```  
   
 ### Parameters  

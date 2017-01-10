@@ -122,6 +122,9 @@ BOOL AFXAPI AfxParseURL(
 > [!NOTE]
 >  To call this function, your project must include AFXINET.H.  
   
+### Requirements  
+  **Header** afxinet.h  
+  
 ##  <a name="afxparseurlex"></a>  AfxParseURLEx  
  This global function is the extended version of [AfxParseURL](#afxparseurl) and is used in [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).  
   
@@ -210,6 +213,9 @@ BOOL AFXAPI AfxParseURLEx(
   
 > [!NOTE]
 >  To call this function, your project must include AFXINET.H.  
-  
+
+### Requirements  
+  **Header** afxinet.h  
+    
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

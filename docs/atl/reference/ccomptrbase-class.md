@@ -44,7 +44,8 @@ This class provides a basis for smart pointer classes using COM-based memory rou
 ## Syntax  
   
 ```
-template <class T> class CComPtrBase
+template <class T>  
+class CComPtrBase
 ```  
   
 #### Parameters  
@@ -151,10 +152,13 @@ void Attach(T* p2) throw();
  Call this method to create an object of the class associated with a specified Class ID or Program ID.  
   
 ```
-HRESULT CoCreateInstance(LPCOLESTR szProgID,
+HRESULT CoCreateInstance(  
+    LPCOLESTR szProgID,
     LPUNKNOWN pUnkOuter = NULL,
     DWORD dwClsContext = CLSCTX_ALL) throw();
-HRESULT CoCreateInstance(REFCLSID rclsid,
+
+HRESULT CoCreateInstance(  
+    REFCLSID rclsid,
     LPUNKNOWN pUnkOuter = NULL,
     DWORD dwClsContext = CLSCTX_ALL) throw();
 ```  
@@ -303,7 +307,8 @@ bool operator<(T* pT) const throw();
 ##  <a name="operator_t_star"></a>  CComPtrBase::operator T*  
  The cast operator.  
   
-```operator T*() const throw();
+```  
+operator T*() const throw();
 ```  
   
 ### Remarks  

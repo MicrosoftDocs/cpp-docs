@@ -42,7 +42,10 @@ This function provides an event handler.
 |||  
 |-|-|  
 |[AtlWaitWithMessageLoop](#atlwaitwithmessageloop)|Waits for an object to be signaled, meanwhile dispatching window messages as needed.|  
-  
+
+## Requirements  
+ **Header:** atlbase.h  
+
 ##  <a name="atlwaitwithmessageloop"></a>  AtlWaitWithMessageLoop  
  Waits for the object to be signaled, meanwhile dispatching window messages as needed.  
   
@@ -50,8 +53,7 @@ This function provides an event handler.
 >  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
   
 ```
-BOOL
-    AtlWaitWithMessageLoop(HANDLE hEvent);
+BOOL AtlWaitWithMessageLoop(HANDLE hEvent);
 ```  
   
 ### Parameters  

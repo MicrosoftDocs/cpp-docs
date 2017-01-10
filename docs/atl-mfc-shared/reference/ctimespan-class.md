@@ -134,10 +134,11 @@ CTimeSpan() throw();
 
 CTimeSpan(__time64_t time) throw();
 
-CTimeSpan(LONG lDays,
-    int nHours,
-    int nMins,
-    int nSecs) throw();
+CTimeSpan(  
+ LONG lDays,
+ int nHours,
+ int nMins,
+ int nSecs) throw();
 ```  
   
 ### Parameters  
@@ -214,8 +215,7 @@ CString Format(UINT nID) const;
  Returns a value that represents the number of complete days in this `CTimeSpan`.  
   
 ```
-LONGLONG
-GetDays() const throw();
+LONGLONG GetDays() const throw();
 ```  
   
 ### Return Value  
@@ -231,8 +231,7 @@ GetDays() const throw();
  Returns a value that represents the number of hours in the current day (–23 through 23).  
   
 ```
-LONG
-GetHours() const throw();
+LONG GetHours() const throw();
 ```  
   
 ### Return Value  
@@ -245,8 +244,7 @@ GetHours() const throw();
  Returns a value that represents the number of minutes in the current hour (–59 through 59).  
   
 ```
-LONG
-GetMinutes() const throw();
+LONG GetMinutes() const throw();
 ```  
   
 ### Return Value  
@@ -259,8 +257,7 @@ GetMinutes() const throw();
  Returns a value that represents the number of seconds in the current minute (–59 through 59).  
   
 ```
-LONG
-GetSeconds() const throw();
+LONG GetSeconds() const throw();
 ```  
   
 ### Return Value  
@@ -272,8 +269,7 @@ GetSeconds() const throw();
 ##  <a name="gettimespan"></a>  CTimeSpan::GetTimeSpan  
  Returns the value of the `CTimeSpan` object.  
   
-```
-_                _time64_t GetTimeSpan() const throw();
+```__time64_t GetTimeSpan() const throw();
 ```  
   
 ### Return Value  
@@ -283,8 +279,7 @@ _                _time64_t GetTimeSpan() const throw();
  Returns a value that represents the total number of complete hours in this `CTimeSpan`.  
   
 ```
-LONGLONG
-GetTotalHours() const throw();
+LONGLONG GetTotalHours() const throw();
 ```  
   
 ### Return Value  
@@ -297,8 +292,7 @@ GetTotalHours() const throw();
  Returns a value that represents the total number of complete minutes in this `CTimeSpan`.  
   
 ```
-LONGLONG
-GetTotalMinutes() const throw();
+LONGLONG GetTotalMinutes() const throw();
 ```  
   
 ### Return Value  
@@ -311,8 +305,7 @@ GetTotalMinutes() const throw();
  Returns a value that represents the total number of complete seconds in this `CTimeSpan`.  
   
 ```
-LONGLONG
-GetTotalSeconds() const throw();
+LONGLONG GetTotalSeconds() const throw();
 ```  
   
 ### Return Value  

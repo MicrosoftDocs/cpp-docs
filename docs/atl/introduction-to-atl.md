@@ -40,7 +40,7 @@ ATL is the Active Template Library, a set of template-based C++ classes with whi
   
  Topics covered in this section include:  
   
--   How a [template library](../atl/using-a-template-library.md) differs from a standard C++ library.  
+-   How a [template library](../atl/using-a-template-library.md) differs from a standard library.  
   
 -   What you [can and cannot do with ATL](../atl/scope-of-atl.md).  
   

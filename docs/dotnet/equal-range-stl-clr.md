@@ -1,5 +1,5 @@
 ---
-title: "equal_range (STL-CLR) | Microsoft Docs"
+title: "equal_range (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -49,7 +49,7 @@ template<class _FwdIt, class _Ty, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `equal_range`. For more information, see [equal_range](http://msdn.microsoft.com/Library/f508fa87-41c6-4799-90dc-4ebf17d2126a).  
+ This function behaves the same as the C++ Standard Library function `equal_range`. For more information, see [equal_range](http://msdn.microsoft.com/Library/f508fa87-41c6-4799-90dc-4ebf17d2126a).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

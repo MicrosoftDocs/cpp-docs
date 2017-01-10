@@ -47,7 +47,8 @@ This class is used by the string conversion macros `CT2AEX`, `CW2TEX`, `CW2CTEX`
 ## Syntax  
   
 ```
-template<int t_nBufferLength = 128>  class CW2AEX
+template<int t_nBufferLength = 128>  
+class CW2AEX
 ```  
   
 #### Parameters  
@@ -111,9 +112,8 @@ template<int t_nBufferLength = 128>  class CW2AEX
  The constructor.  
   
 ```
-CW2AEX(LPCWSTR psz,  UINT nCodePage) throw(...);
-
-    CW2AEX(LPCWSTR psz) throw(...);
+CW2AEX(LPCWSTR psz, UINT nCodePage) throw(...);  
+CW2AEX(LPCWSTR psz) throw(...);
 ```  
   
 ### Parameters  
@@ -147,14 +147,14 @@ LPSTR m_psz;
  The static buffer, used to store the converted string.  
   
 ```
-char m_szBuffer[ t_nBufferLength
- ];
+char m_szBuffer[ t_nBufferLength];
 ```  
   
 ##  <a name="operator_lpstr"></a>  CW2AEX::operator LPSTR  
  Conversion operator.  
   
-```operator LPSTR() const throw();
+```  
+operator LPSTR() const throw();
 ```  
   
 ### Return Value  

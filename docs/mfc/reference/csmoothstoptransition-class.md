@@ -84,7 +84,7 @@ class CSmoothStopTransition : public CBaseTransition;
 ```  
 virtual BOOL Create(
     IUIAnimationTransitionLibrary* pLibrary,  
-    IUIAnimationTransitionFactory* */);
+    IUIAnimationTransitionFactory* \*not used*\);
 ```  
   
 ### Parameters  

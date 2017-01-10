@@ -1,5 +1,5 @@
 ---
-title: "mutex Class (STL) | Microsoft Docs"
+title: "mutex Class (C++ Standard Library)| Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -32,7 +32,7 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# mutex Class (STL)
+# mutex Class (C++ Standard Library)
 Represents a *mutex type*. Objects of this type can be used to enforce mutual exclusion within a program.  
   
 ## Syntax  

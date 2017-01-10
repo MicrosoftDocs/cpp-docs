@@ -72,6 +72,9 @@ ATL provides the ATLPath class for manipulating paths in the form of [CPathT](cp
 |[ATLPath::StripToRoot](#striptoroot)|This function is an overloaded wrapper for [PathStripToRoot](http://msdn.microsoft.com/library/windows/desktop/bb773757).|  
 |[ATLPath::UnquoteSpaces](#unquotespaces)|This function is an overloaded wrapper for [PathUnquoteSpaces](http://msdn.microsoft.com/library/windows/desktop/bb773763).|  
   
+## Requirements  
+ **Header:** atlpath.h  
+
 ## <a name="addbackslash"></a> ATLPath::AddBackSlash
 
 This function is an overloaded wrapper for [PathAddBackslash](http://msdn.microsoft.com/library/windows/desktop/bb773561).  
@@ -86,8 +89,8 @@ inline wchar_t* AddBackslash(wchar_t* pszPath);
 ### Remarks  
  See [PathAddBackslash](http://msdn.microsoft.com/library/windows/desktop/bb773561) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="addextension"></a> ATLPath::AddExtension
  This function is an overloaded wrapper for [PathAddExtension](http://msdn.microsoft.com/library/windows/desktop/bb773563).  
@@ -100,10 +103,7 @@ inline BOOL AddExtension(wchar_t* pszPath, const wchar_t* pszExtension);
 ```  
   
 ### Remarks  
- See [PathAddExtension](http://msdn.microsoft.com/library/windows/desktop/bb773563) for details.  
-  
-### Requirements  
- **Header:** atlpath.h  
+ See [PathAddExtension](http://msdn.microsoft.com/library/windows/desktop/bb773563) for details. 
   
 ## <a name="append"></a> ATLPath::Append
  This function is an overloaded wrapper for [PathAppend](http://msdn.microsoft.com/library/windows/desktop/bb773565).  
@@ -118,8 +118,8 @@ inline BOOL Append(wchar_t* pszPath, const wchar_t* pszMore);
 ### Remarks  
  See [PathAppend](http://msdn.microsoft.com/library/windows/desktop/bb773565) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="buildroot"></a> ATLPath::BuildRoot
  This function is an overloaded wrapper for [PathBuildRoot](http://msdn.microsoft.com/library/windows/desktop/bb773567).  
@@ -134,8 +134,8 @@ inline wchar_t* BuildRoot(wchar_t* pszPath, int iDrive);
 ### Remarks  
  See [PathBuildRoot](http://msdn.microsoft.com/library/windows/desktop/bb773567) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="canonicalize"></a> ATLPath::Canonicalize
  This function is an overloaded wrapper for [PathCanonicalize](http://msdn.microsoft.com/library/windows/desktop/bb773569).  
@@ -150,20 +150,20 @@ inline BOOL Canonicalize(wchar_t* pszDest, const wchar_t* pszSrc);
 ### Remarks  
  See [PathCanonicalize](http://msdn.microsoft.com/library/windows/desktop/bb773569) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="combine"></a> ATLPath::Combine 
 This function is an overloaded wrapper for [PathCombine](https://msdn.microsoft.com/en-us/library/windows/desktop/bb773571).  
 
 ### Syntax  
 ```
-inline char* Combine(
+inline char* Combine(  
    char* pszDest,
    const char* pszDir,
    const char* pszFile 
 );
-inline wchar_t* Combine(
+inline wchar_t* Combine(  
    wchar_t* pszDest,
    const wchar_t* pszDir,
    const wchar_t* pszFile 
@@ -179,7 +179,7 @@ See PathCombine for details.
 ### Syntax  
   
 ```  
-inline int CommonPrefix(
+inline int CommonPrefix(  
    const char* pszFile1, 
    const char* pszFile2,  
    char* pszDest);  
@@ -193,8 +193,8 @@ inline int CommonPrefix(
 ### Remarks  
  See [PathCommonPrefix](http://msdn.microsoft.com/library/windows/desktop/bb773574) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="compactpath"></a> ATLPath::CompactPath
  This function is an overloaded wrapper for [PathCompactPath](http://msdn.microsoft.com/library/windows/desktop/bb773575).  
@@ -216,8 +216,8 @@ inline BOOL CompactPath(
 ### Remarks  
  See [PathCompactPath](http://msdn.microsoft.com/library/windows/desktop/bb773575) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="compactpathex"></a> ATLPath::CompactPathEx
  This function is an overloaded wrapper for [PathCompactPathEx](http://msdn.microsoft.com/library/windows/desktop/bb773578).  
@@ -241,8 +241,8 @@ inline BOOL CompactPathEx(
 ### Remarks  
  See [PathCompactPathEx](http://msdn.microsoft.com/library/windows/desktop/bb773578) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="fileexists"></a> ATLPath::FileExists
  This function is an overloaded wrapper for [PathFileExists](http://msdn.microsoft.com/library/windows/desktop/bb773584).  
@@ -257,8 +257,8 @@ inline BOOL FileExists(const wchar_t* pszPath);
 ### Remarks  
  See [PathFileExists](http://msdn.microsoft.com/library/windows/desktop/bb773584) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="findextension"></a> ATLPath::FindExtension
  This function is an overloaded wrapper for [PathFindExtension](http://msdn.microsoft.com/library/windows/desktop/bb773587).  
@@ -273,8 +273,8 @@ inline wchar_t* FindExtension(const wchar_t* pszPath);
 ### Remarks  
  See [PathFindExtension](http://msdn.microsoft.com/library/windows/desktop/bb773587) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="findfilename"></a> ATLPath::FindFileName
  This function is an overloaded wrapper for [PathFindFileName](http://msdn.microsoft.com/library/windows/desktop/bb773589).  
@@ -289,8 +289,8 @@ inline wchar_t* FindFileName(const wchar_t* pszPath);
 ### Remarks  
  See [PathFindFileName](http://msdn.microsoft.com/library/windows/desktop/bb773589) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="getdrivenumber"></a> ATLPath::GetDriveNumber  
  This function is an overloaded wrapper for [PathGetDriveNumber](http://msdn.microsoft.com/library/windows/desktop/bb773612).  
@@ -305,18 +305,16 @@ inline int GetDriveNumber(const wchar_t* pszPath);
 ### Remarks  
  See [PathGetDriveNumber](http://msdn.microsoft.com/library/windows/desktop/bb773612) for details.  
   
-### Requirements  
- **Header:** atlpath.h
+ 
+
 
 ## <a name="isdirectory"></a>  ATLPath::IsDirectory 
 This function is an overloaded wrapper for [PathIsDirectory](https://msdn.microsoft.com/en-us/library/windows/desktop/bb773621).
 
 ```  
-inline BOOL IsDirectory(
-   const char* pszPath 
+inline BOOL IsDirectory(const char* pszPath 
 );
-inline BOOL IsDirectory(
-   const wchar_t* pszPath 
+inline BOOL IsDirectory(const wchar_t* pszPath 
 );
 ```  
 ### Remarks
@@ -335,8 +333,8 @@ inline BOOL IsFileSpec(const wchar_t* pszPath);
 ### Remarks  
  See [PathIsFileSpec](http://msdn.microsoft.com/library/windows/desktop/bb773627) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="isprefix"></a> ATLPath::IsPrefix
  This function is an overloaded wrapper for [PathIsPrefix](http://msdn.microsoft.com/library/windows/desktop/bb773650).  
@@ -351,8 +349,8 @@ inline BOOL IsPrefix(const wchar_t* pszPrefix, const wchar_t* pszPath);
 ### Remarks  
  See [PathIsPrefix](http://msdn.microsoft.com/library/windows/desktop/bb773650) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="isrelative"></a> ATLPath::IsRelative
  This function is an overloaded wrapper for [PathIsRelative](http://msdn.microsoft.com/library/windows/desktop/bb773660).  
@@ -367,8 +365,8 @@ inline BOOL IsRelative(const wchar_t* pszPath);
 ### Remarks  
  See [PathIsRelative](http://msdn.microsoft.com/library/windows/desktop/bb773660) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="isroot"></a> ATLPath::IsRoot
  This function is an overloaded wrapper for [PathIsRoot](http://msdn.microsoft.com/library/windows/desktop/bb773674).  
@@ -383,8 +381,8 @@ inline BOOL IsRoot(const wchar_t* pszPath);
 ### Remarks  
  See [PathIsRoot](http://msdn.microsoft.com/library/windows/desktop/bb773674) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="issameroot"></a> ATLPath::IsSameRoot
  This function is an overloaded wrapper for [PathIsSameRoot](http://msdn.microsoft.com/library/windows/desktop/bb773687).  
@@ -399,8 +397,8 @@ inline BOOL IsSameRoot(const wchar_t* pszPath1, const wchar_t* pszPath2);
 ### Remarks  
  See [PathIsSameRoot](http://msdn.microsoft.com/library/windows/desktop/bb773687) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="isunc"></a> ATLPath::IsUNC
  This function is an overloaded wrapper for [PathIsUNC](http://msdn.microsoft.com/library/windows/desktop/bb773712).  
@@ -415,8 +413,8 @@ inline BOOL IsUNC(const wchar_t* pszPath);
 ### Remarks  
  See [PathIsUNC](http://msdn.microsoft.com/library/windows/desktop/bb773712) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="isuncserver"></a> ATLPath::IsUNCServer
  This function is an overloaded wrapper for [PathIsUNCServer](http://msdn.microsoft.com/library/windows/desktop/bb773722).  
@@ -431,8 +429,8 @@ inline BOOL IsUNCServer(const wchar_t* pszPath);
 ### Remarks  
  See [PathIsUNCServer](http://msdn.microsoft.com/library/windows/desktop/bb773722) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="isuncservershare"></a> ATLPath::IsUNCServerShare
  This function is an overloaded wrapper for [PathIsUNCServerShare](http://msdn.microsoft.com/library/windows/desktop/bb773723).  
@@ -447,8 +445,8 @@ inline BOOL IsUNCServerShare(const wchar_t* pszPath);
 ### Remarks  
  See [PathIsUNCServerShare](http://msdn.microsoft.com/library/windows/desktop/bb773723) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="makepretty"></a> ATLPath::MakePretty
  This function is an overloaded wrapper for [PathMakePretty](http://msdn.microsoft.com/library/windows/desktop/bb773725).  
@@ -463,8 +461,8 @@ inline BOOL MakePretty(wchar_t* pszPath);
 ### Remarks  
  See [PathMakePretty](http://msdn.microsoft.com/library/windows/desktop/bb773725) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="matchspec"></a> ATLPath::MatchSpec  
  This function is an overloaded wrapper for [PathMatchSpec](http://msdn.microsoft.com/library/windows/desktop/bb773727).  
@@ -479,8 +477,8 @@ inline BOOL MatchSpec(const wchar_t* pszPath, const wchar_t* pszSpec);
 ### Remarks  
  See [PathMatchSpec](http://msdn.microsoft.com/library/windows/desktop/bb773727) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="quotespaces"></a> ATLPath::QuoteSpaces  
  This function is an overloaded wrapper for [PathQuoteSpaces](http://msdn.microsoft.com/library/windows/desktop/bb773739).  
@@ -495,8 +493,8 @@ inline void QuoteSpaces(wchar_t* pszPath);
 ### Remarks  
  See [PathQuoteSpaces](http://msdn.microsoft.com/library/windows/desktop/bb773739) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="relativepathto"></a> ATLPath::RelativePathTo
  This function is an overloaded wrapper for [PathRelativePathTo](http://msdn.microsoft.com/library/windows/desktop/bb773740).  
@@ -522,8 +520,8 @@ inline BOOL RelativePathTo(
 ### Remarks  
  See [PathRelativePathTo](http://msdn.microsoft.com/library/windows/desktop/bb773740) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="removeargs"></a> ATLPath::RemoveArgs  
  This function is an overloaded wrapper for [PathRemoveArgs](http://msdn.microsoft.com/library/windows/desktop/bb773742).  
@@ -538,8 +536,8 @@ inline void RemoveArgs(wchar_t* pszPath);
 ### Remarks  
  See [PathRemoveArgs](http://msdn.microsoft.com/library/windows/desktop/bb773742) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="removebackslash"></a> ATLPath::RemoveBackslash
  This function is an overloaded wrapper for [PathRemoveBackslash](http://msdn.microsoft.com/library/windows/desktop/bb773743).  
@@ -554,8 +552,8 @@ inline wchar_t* RemoveBackslash(wchar_t* pszPath);
 ### Remarks  
  See [PathRemoveBackslash](http://msdn.microsoft.com/library/windows/desktop/bb773743) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="removeblanks"></a> ATLPath::RemoveBlanks
  This function is an overloaded wrapper for [PathRemoveBlanks](http://msdn.microsoft.com/library/windows/desktop/bb773745).  
@@ -570,8 +568,8 @@ inline void RemoveBlanks(wchar_t* pszPath);
 ### Remarks  
  See [PathRemoveBlanks](http://msdn.microsoft.com/library/windows/desktop/bb773745) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="removeextension"></a> ATLPath::RemoveExtension
  This function is an overloaded wrapper for [PathRemoveExtension](http://msdn.microsoft.com/library/windows/desktop/bb773746).  
@@ -586,8 +584,8 @@ inline void RemoveExtension(wchar_t* pszPath);
 ### Remarks  
  See [PathRemoveExtension](http://msdn.microsoft.com/library/windows/desktop/bb773746) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="removefilespec"></a> ATLPath::RemoveFileSpec
  This function is an overloaded wrapper for [PathRemoveFileSpec](http://msdn.microsoft.com/library/windows/desktop/bb773748).  
@@ -602,8 +600,8 @@ inline BOOL RemoveFileSpec(wchar_t* pszPath);
 ### Remarks  
  See [PathRemoveFileSpec](http://msdn.microsoft.com/library/windows/desktop/bb773748) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="renameextension"></a> ATLPath::RenameExtension
  This function is an overloaded wrapper for [PathRenameExtension](http://msdn.microsoft.com/library/windows/desktop/bb773749).  
@@ -618,8 +616,8 @@ inline BOOL RenameExtension(wchar_t* pszPath, const wchar_t* pszExt);
 ### Remarks  
  See [PathRenameExtension](http://msdn.microsoft.com/library/windows/desktop/bb773749) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="skiproot"></a> ATLPath::SkipRoot
  This function is an overloaded wrapper for [PathSkipRoot](http://msdn.microsoft.com/library/windows/desktop/bb773754).  
@@ -634,8 +632,8 @@ inline wchar_t* SkipRoot(const wchar_t* pszPath);
 ### Remarks  
  See [PathSkipRoot](http://msdn.microsoft.com/library/windows/desktop/bb773754) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="strippath"></a> ATLPath::StripPath
  This function is an overloaded wrapper for [PathStripPath](http://msdn.microsoft.com/library/windows/desktop/bb773756).  
@@ -650,8 +648,8 @@ inline void StripPath(wchar_t* pszPath);
 ### Remarks  
  See [PathStripPath](http://msdn.microsoft.com/library/windows/desktop/bb773756) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 
 ## <a name="striptoroot"></a> ATLPath::StripToRoot
@@ -667,8 +665,8 @@ inline BOOL StripToRoot(wchar_t* pszPath);
 ### Remarks  
  See [PathStripToRoot](http://msdn.microsoft.com/library/windows/desktop/bb773757) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
 
 ## <a name="unquotespaces"></a> ATLPath::UnquoteSpaces
  This function is an overloaded wrapper for [PathUnquoteSpaces](http://msdn.microsoft.com/library/windows/desktop/bb773763).  
@@ -683,6 +681,6 @@ inline void UnquoteSpaces(wchar_t* pszPath);
 ### Remarks  
  See [PathUnquoteSpaces](http://msdn.microsoft.com/library/windows/desktop/bb773763) for details.  
   
-### Requirements  
- **Header:** atlpath.h  
+ 
+  
  

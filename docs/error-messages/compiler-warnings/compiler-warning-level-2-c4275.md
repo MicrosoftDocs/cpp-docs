@@ -55,7 +55,7 @@ non – DLL-interface classkey 'identifier' used as base for DLL-interface class
   
  For more information on exporting templates, see [http://support.microsoft.com/default.aspx?scid=KB;EN-US;168958](http://support.microsoft.com/default.aspx?scid=KB;EN-US;168958).  
   
- C4275 can be ignored in Visual C++ if you are deriving from a type in the Standard C++ Library, compiling a debug release (**/MTd**) and where the compiler error message refers to _Container_base.  
+ C4275 can be ignored in Visual C++ if you are deriving from a type in the C++ Standard Library, compiling a debug release (**/MTd**) and where the compiler error message refers to _Container_base.  
   
 ```  
 // C4275.cpp  

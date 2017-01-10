@@ -47,7 +47,7 @@ Cannot open filetype file: 'file': message
 #include <algorithms.h>  
 ```  
   
- might not find the file you intend. There is a Standard C++ Library header file named algorithms that does not have a .h file name extension. It would not be found by this `include` directive. To fix this issue, verify that the correct file name is entered.  
+ might not find the file you intend. There is a C++ Standard Library header file named algorithms that does not have a .h file name extension. It would not be found by this `include` directive. To fix this issue, verify that the correct file name is entered.  
   
  Certain C Runtime Library headers are located in a subdirectory of the standard include directory. For example, to include sys\types.h, you must include the sys subdirectory name in the include directive:  
   

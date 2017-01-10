@@ -99,7 +99,10 @@ ATLASSERT(booleanExpression);
   
 ### Remarks  
  In debug builds, `ATLASSERT` evaluates `booleanExpression` and generates a debug report when the result is false.  
-  
+
+## Requirements  
+ **Header:** atldef.h  
+    
 ##  <a name="atlensure"></a>  ATLENSURE  
  This macro is used to validate parameters passed to a function.  
   
@@ -128,7 +131,10 @@ ATLENSURE_THROW(booleanExpression, hr);
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#108](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_1.cpp)]  
-  
+
+## Requirements  
+ **Header:** afx.h  
+
 ##  <a name="atltracenotimpl"></a>  ATLTRACENOTIMPL  
  In debug builds of ATL, sends the string " `funcname` is not implemented" to the dump device and returns **E_NOTIMPL**.  
   
@@ -146,16 +152,19 @@ ATLTRACENOTIMPL(funcname);
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#127](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_2.cpp)]  
   
-##  <a name="atl_"></a>  ATLTRACE (ATL)  
+## Requirements  
+ **Header:** atltrace.h 
+
+##  <a name="atl_"></a>  ATLTRACE
  Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels. Included for backward compatibility.  
   
 ```
 ATLTRACE(exp);
 
-ATLTRACE(
-  DWORD category,
-  UINT  level,
-  LPCSTR lpszFormat, ...);
+ATLTRACE(  
+    DWORD category,
+    UINT  level,
+    LPCSTR lpszFormat, ...);
 ```  
   
 ### Parameters  

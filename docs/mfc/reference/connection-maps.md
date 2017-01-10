@@ -79,6 +79,9 @@ BEGIN_CONNECTION_PART(theClass, localClass)
 ### Remarks  
  In the declaration (.h) file that defines the member functions for your class, start the connection point with the `BEGIN_CONNECTION_PART` macro, then add the `CONNECTION_IID` macro and any other member functions you wish to implement, and complete the connection point map with the `END_CONNECTION_PART` macro.  
   
+### Requirements  
+  **Header** afxdisp.h  
+  
 ##  <a name="end_connection_part"></a>  END_CONNECTION_PART  
  Ends the declaration of your connection point.  
   
@@ -89,6 +92,9 @@ END_CONNECTION_PART(localClass)
 ### Parameters  
  *localClass*  
  Specifies the name of the local class that implements the connection point.  
+  
+### Requirements  
+  **Header** afxdisp.h  
   
 ##  <a name="connection_iid"></a>  CONNECTION_IID  
  Use between the `BEGIN_CONNECTION_PART` and `END_CONNECTION_PART` macros to define an interface ID for a connection point supported by your OLE control.  
@@ -108,6 +114,9 @@ CONNECTION_IID(iid)
   
  specifies a connection point that calls the `ISinkInterface` interface.  
   
+### Requirements  
+  **Header** afxdisp.h  
+  
 ##  <a name="declare_connection_map"></a>  DECLARE_CONNECTION_MAP  
  Each `COleControl`-derived class in your program can provide a connection map to specify additional connection points that your control supports.  
   
@@ -117,6 +126,9 @@ DECLARE_CONNECTION_MAP()
   
 ### Remarks  
  If your control supports additional points, use the `DECLARE_CONNECTION_MAP` macro at the end of your class declaration. Then, in the .cpp file that defines the member functions for the class, use the `BEGIN_CONNECTION_MAP` macro, `CONNECTION_PART` macros for each of the control's connection points, and the `END_CONNECTION_MAP` macro to declare the end of the connection map.  
+  
+### Requirements  
+  **Header** afxdisp.h  
   
 ##  <a name="begin_connection_map"></a>  BEGIN_CONNECTION_MAP  
  Each `COleControl`-derived class in your program can provide a connection map to specify connection points that your control will support.  
@@ -135,12 +147,18 @@ BEGIN_CONNECTION_MAP(theClass, theBase)
 ### Remarks  
  In the implementation (.CPP) file that defines the member functions for your class, start the connection map with the `BEGIN_CONNECTION_MAP` macro, then add macro entries for each of your connection points using the [CONNECTION_PART](#connection_part) macro. Finally, complete the connection map with the [END_CONNECTION_MAP](#end_connection_map) macro.  
   
+### Requirements  
+  **Header** afxdisp.h  
+  
 ##  <a name="end_connection_map"></a>  END_CONNECTION_MAP  
  Ends the definition of your connection map.  
   
 ```   
 END_CONNECTION_MAP()  
 ```  
+  
+### Requirements  
+  **Header** afxdisp.h  
   
 ##  <a name="connection_part"></a>  CONNECTION_PART  
  Maps a connection point for your OLE control to a specific interface ID.  
@@ -165,6 +183,9 @@ CONNECTION_PART(theClass, iid, localClass)
  [!code-cpp[NVC_MFCConnectionPoints#2](../../mfc/codesnippet/cpp/connection-maps_2.cpp)]  
   
  implements a connection map, with a connection point, that calls the `IID_ISinkInterface` interface .  
+  
+### Requirements  
+  **Header** afxdisp.h  
   
 ##  <a name="afxconnectionadvise"></a>  AfxConnectionAdvise  
  Call this function to establish a connection between a source, specified by `pUnkSrc`, and a sink, specified by `pUnkSink`.  
@@ -199,7 +220,10 @@ BOOL AFXAPI AfxConnectionAdvise(
   
 ### Example  
  [!code-cpp[NVC_MFCConnectionPoints#8](../../mfc/codesnippet/cpp/connection-maps_3.cpp)]  
-  
+
+### Requirements  
+ **Header:** afxctl.h 
+
 ##  <a name="afxconnectionunadvise"></a>  AfxConnectionUnadvise  
  Call this function to disconnect a connection between a source, specified by `pUnkSrc`, and a sink, specified by `pUnkSink`.  
   
@@ -233,6 +257,9 @@ BOOL AFXAPI AfxConnectionUnadvise(
   
 ### Example  
  [!code-cpp[NVC_MFCConnectionPoints#9](../../mfc/codesnippet/cpp/connection-maps_4.cpp)]  
-  
+
+### Requirements  
+ **Header:** afxctl.h 
+
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

@@ -75,7 +75,7 @@ Iterates through an array or collection. This non-standard keyword is available 
   
  For more information:  
   
--   [Iterating Over STL Collection By Using for each](../dotnet/iterating-over-stl-collection-by-using-for-each.md)  
+-   [Iterating Over C++ Standard Library Collection By Using for each](../dotnet/iterating-over-stl-collection-by-using-for-each.md)  
   
 -   [How to: Iterate Over Arrays with for each](../dotnet/how-to-iterate-over-arrays-with-for-each.md)  
   

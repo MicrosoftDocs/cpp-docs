@@ -193,7 +193,7 @@ CSacl& operator=(const ACL& rhs) throw(...);
  Removes a specific ACE (access-control entry) from the **CSacl** object.  
   
 ```
-void RemoveAce(UINT   nIndex) throw();
+void RemoveAce(UINT nIndex) throw();
 ```  
   
 ### Parameters  

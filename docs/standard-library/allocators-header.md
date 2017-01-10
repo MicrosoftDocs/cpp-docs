@@ -51,11 +51,11 @@ Defines several templates that help allocate and free memory blocks for node-bas
   
  The allocator templates are implemented with reusable components that can be customized or replaced to provide additional memory-management strategies.  
   
- The node-based containers in the Standard C++ library (std::list, std::set, std::multiset, std::map and std::multimap) store their elements in individual nodes. All the nodes for a particular container type are the same size, so the flexibility of a general-purpose memory manager is not needed. Because the size of each memory block is known at compile time, the memory manager can be much simpler and faster.  
+ The node-based containers in the C++ Standard Library (std::list, std::set, std::multiset, std::map and std::multimap) store their elements in individual nodes. All the nodes for a particular container type are the same size, so the flexibility of a general-purpose memory manager is not needed. Because the size of each memory block is known at compile time, the memory manager can be much simpler and faster.  
   
- When used with containers that are not node-based (such as the Standard C++ library containers std::vector std::deque, and std::basic_string), the alllocator templates will work correctly, but are not likely to provide any performance improvement over the default allocator.  
+ When used with containers that are not node-based (such as the C++ Standard Library containers std::vector std::deque, and std::basic_string), the alllocator templates will work correctly, but are not likely to provide any performance improvement over the default allocator.  
   
- An allocator is a template class that describes an object that manages storage allocation and freeing for objects and arrays of objects of a designated type. Allocator objects are used by several container template classes in the Standard C++ library.  
+ An allocator is a template class that describes an object that manages storage allocation and freeing for objects and arrays of objects of a designated type. Allocator objects are used by several container template classes in the C++ Standard Library.  
   
  The allocators are all templates of this type:  
   
@@ -63,7 +63,7 @@ Defines several templates that help allocate and free memory blocks for node-bas
   
  `class allocator;`  
   
- where the template argument `Type` is the type managed by the allocator instance. The Standard C++ library provides a default allocator, template class [allocator](../standard-library/allocator-class.md), which is defined in [\<memory>](../standard-library/memory.md). The \<allocators> header provides the following allocators:  
+ where the template argument `Type` is the type managed by the allocator instance. The C++ Standard Library provides a default allocator, template class [allocator](../standard-library/allocator-class.md), which is defined in [\<memory>](../standard-library/memory.md). The \<allocators> header provides the following allocators:  
   
 - [allocator_newdel](../standard-library/allocator-newdel-class.md)  
   

@@ -46,14 +46,14 @@ Because Visual Studio supports multiple platform toolsets, you can target operat
 2.  In the **Property Pages** dialog box for the project, under **Configuration Properties**, **General**, set the **Platform Toolset** property to the desired Windows XP toolset. For example, choose **Visual Studio 2015 – Windows XP (v140_xp)** to create code for [!INCLUDE[winxp](../build/includes/winxp_md.md)] and [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)] by using the Microsoft Visual C++ 2015 compiler.  
   
 ### C++ runtime support  
- Along with the Windows XP platform toolset, the C Runtime Library (CRT), Standard Template Library (STL), Active Template Library (ATL), Concurrency Runtime Library (ConCRT), Parallel Patterns Library (PPL), Microsoft Foundation Class Library (MFC), and C++ AMP (C++ Accelerated Massive Programming) library include runtime support for [!INCLUDE[winxp](../build/includes/winxp_md.md)] and [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)]. For these operating systems, the minimum supported versions are [!INCLUDE[winxp](../build/includes/winxp_md.md)] Service Pack 3 (SP3) for x86, [!INCLUDE[winxp](../build/includes/winxp_md.md)] Service Pack 2 (SP2) for x64, and [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)] Service Pack 2 (SP2) for both x86 and x64.  
+ Along with the Windows XP platform toolset, the C Runtime Library (CRT), C++ Standard Library, Active Template Library (ATL), Concurrency Runtime Library (ConCRT), Parallel Patterns Library (PPL), Microsoft Foundation Class Library (MFC), and C++ AMP (C++ Accelerated Massive Programming) library include runtime support for [!INCLUDE[winxp](../build/includes/winxp_md.md)] and [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)]. For these operating systems, the minimum supported versions are [!INCLUDE[winxp](../build/includes/winxp_md.md)] Service Pack 3 (SP3) for x86, [!INCLUDE[winxp](../build/includes/winxp_md.md)] Service Pack 2 (SP2) for x64, and [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)] Service Pack 2 (SP2) for both x86 and x64.  
   
  These libraries are supported by the platform toolsets installed by Visual Studio, depending on the target:  
   
 |Library|Default platform toolset targeting Windows desktop apps|Default platform toolset targeting [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] apps|Windows XP platform toolset targeting [!INCLUDE[winxp](../build/includes/winxp_md.md)], [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)]|  
 |-------------|-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|  
 |CRT|X|X|X|  
-|STL|X|X|X|  
+|C++ Standard Library|X|X|X|  
 |ATL|X|X|X|  
 |ConCRT/PPL|X|X|X|  
 |MFC|X||X|  

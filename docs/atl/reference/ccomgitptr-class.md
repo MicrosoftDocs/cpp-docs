@@ -44,7 +44,8 @@ This class provides methods for dealing with interface pointers and the global i
 ## Syntax  
   
 ```
-template <class T>  class CComGITPtr
+template <class T>  
+class CComGITPtr
 ```  
   
 #### Parameters  
@@ -97,6 +98,7 @@ template <class T>  class CComGITPtr
   
 ```
 HRESULT Attach(T* p) throw();
+
 HRESULT Attach(DWORD dwCookie) throw();
 ```  
   
@@ -244,7 +246,8 @@ CComGITPtr& operator= (CComGITPtr&& rv);
 ##  <a name="operator_dword"></a>  CComGITPtr::operator DWORD  
  Returns the cookie associated with the `CComGITPtr` object.  
   
-```operator DWORD() const;
+```  
+operator DWORD() const;
 ```  
   
 ### Remarks  

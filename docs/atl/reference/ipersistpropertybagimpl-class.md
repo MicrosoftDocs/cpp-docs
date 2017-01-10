@@ -47,7 +47,8 @@ This class implements **IUnknown** and allows an object to save its properties t
 ## Syntax  
   
 ```
-template <class T>  class ATL_NO_VTABLE IPersistPropertyBagImpl :  public IPersistPropertyBag
+template <class T>  
+class ATL_NO_VTABLE IPersistPropertyBagImpl : public IPersistPropertyBag
 ```  
   
 #### Parameters  
@@ -107,7 +108,7 @@ STDMETHOD(InitNew)();
  Loads the object's properties from a client-supplied property bag.  
   
 ```
-STDMETHOD(Load)(LPPROPERTYBAG pPropBag,  LPERRORLOG pErrorLog);
+STDMETHOD(Load)(LPPROPERTYBAG pPropBag, LPERRORLOG pErrorLog);
 ```  
   
 ### Remarks  
@@ -119,7 +120,8 @@ STDMETHOD(Load)(LPPROPERTYBAG pPropBag,  LPERRORLOG pErrorLog);
  Saves the object's properties into a client-supplied property bag.  
   
 ```
-STDMETHOD(Save)(LPPROPERTYBAG pPropBag,
+STDMETHOD(Save)(
+    LPPROPERTYBAG pPropBag,
     BOOL fClearDirty,
     BOOL fSaveAllProperties);
 ```  

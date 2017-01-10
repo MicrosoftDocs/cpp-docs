@@ -36,7 +36,10 @@ This macro forwards window messages.
 |||  
 |-|-|  
 |[WM_FORWARDMSG](#wm_forwardmsg)|Use to forward a message received by a window to another window for processing.|  
-  
+
+## Requirements  
+ **Header:** atlbase.h 
+   
 ##  <a name="wm_forwardmsg"></a>  WM_FORWARDMSG  
  This macro forwards a message received by a window to another window for processing.  
   

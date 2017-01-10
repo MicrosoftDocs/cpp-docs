@@ -50,7 +50,9 @@ This class implements **IUnknown** and provides default implementations of the [
 ## Syntax  
   
 ```
-template<class T>  class ATL_NO_VTABLE IViewObjectExImpl :  public IViewObjectEx
+template<class T>  
+class ATL_NO_VTABLE IViewObjectExImpl 
+   : public IViewObjectEx
 ```  
   
 #### Parameters  
@@ -91,7 +93,8 @@ template<class T>  class ATL_NO_VTABLE IViewObjectExImpl :  public IViewObjectEx
  Draws a representation of the control onto a device context.  
   
 ```
-STDMETHOD(Draw)(DWORD dwDrawAspect,
+STDMETHOD(Draw)(
+    DWORD dwDrawAspect,
     LONG lindex,
     void* pvAspect,
     DVTARGETDEVICE* ptd,
@@ -111,7 +114,8 @@ STDMETHOD(Draw)(DWORD dwDrawAspect,
  Freezes the drawn representation of a control so it won't change until an `Unfreeze`. The ATL implementation returns **E_NOTIMPL**.  
   
 ```
-STDMETHOD(Freeze)(DWORD /* dwAspect */,
+STDMETHOD(Freeze)(
+    DWORD /* dwAspect */,
     LONG /* lindex */,
     void* /* pvAspect */,
     DWORD* /* pdwFreeze */);
@@ -139,7 +143,8 @@ STDMETHOD(GetAdvise)(
  Returns the logical palette used by the control for drawing. The ATL implementation returns **E_NOTIMPL**.  
   
 ```
-STDMETHOD(GetColorSet)(DWORD /* dwAspect */,
+STDMETHOD(GetColorSet)(
+    DWORD /* dwAspect */,
     LONG /* lindex */,
     void* /* pvAspect */,
     DVTARGETDEVICE* /* ptd */,
@@ -154,7 +159,8 @@ STDMETHOD(GetColorSet)(DWORD /* dwAspect */,
  Retrieves the control's display size in HIMETRIC units (0.01 millimeter per unit) from the control class data member [CComControlBase::m_sizeExtent](../../atl/reference/ccomcontrolbase-class.md#m_sizeextent).  
   
 ```
-STDMETHOD(GetExtent)(DWORD /* dwDrawAspect */,
+STDMETHOD(GetExtent)(
+    DWORD /* dwDrawAspect */,
     LONG /* lindex */,
     DVTARGETDEVICE* /* ptd */,
     LPSIZEL* lpsizel);
@@ -167,7 +173,8 @@ STDMETHOD(GetExtent)(DWORD /* dwDrawAspect */,
  Provides sizing hints from the container for the object to use as the user resizes it.  
   
 ```
-STDMETHOD(GetNaturalExtent)(DWORD dwAspect,
+STDMETHOD(GetNaturalExtent)(
+    DWORD dwAspect,
     LONG /* lindex */,
     DVTARGETDEVICE* /* ptd */,
     HDC /* hicTargetDevice */,
@@ -184,7 +191,7 @@ STDMETHOD(GetNaturalExtent)(DWORD dwAspect,
  Returns a rectangle describing a requested drawing aspect. The ATL implementation returns **E_NOTIMPL**.  
   
 ```
-STDMETHOD(GetRect)(DWORD /* dwAspect */,  LPRECTL /* pRect */);
+STDMETHOD(GetRect)(DWORD /* dwAspect */, LPRECTL /* pRect */);
 ```  
   
 ### Remarks  
@@ -206,7 +213,8 @@ STDMETHOD(GetViewStatus)(DWORD* pdwStatus);
  Checks if the specified point is in the specified rectangle and returns a [HITRESULT](http://msdn.microsoft.com/library/windows/desktop/ms682187) value in `pHitResult`.  
   
 ```
-STDMETHOD(QueryHitPoint)(DWORD dwAspect,
+STDMETHOD(QueryHitPoint)(
+    DWORD dwAspect,
     LPCRECT pRectBounds,
     POINT ptlLoc,
     LONG /* lCloseHit */,
@@ -224,7 +232,8 @@ STDMETHOD(QueryHitPoint)(DWORD dwAspect,
  Checks whether the control's display rectangle overlaps any point in the specified location rectangle and returns a [HITRESULT](http://msdn.microsoft.com/library/windows/desktop/ms682187) value in `pHitResult`.  
   
 ```
-STDMETHOD(QueryHitRect)(DWORD dwAspect,
+STDMETHOD(QueryHitRect)(
+    DWORD dwAspect,
     LPCRECT pRectBounds,
     LPRECT prcLoc,
     LONG /* lCloseHit */,
@@ -242,7 +251,8 @@ STDMETHOD(QueryHitRect)(DWORD dwAspect,
  Sets up a connection between the control and an advise sink so the sink can be notified about changes in the control's view.  
   
 ```
-STDMETHOD(SetAdvise)(DWORD /* aspects */,
+STDMETHOD(SetAdvise)(
+    DWORD /* aspects */,
     DWORD /* advf */,
     IAdviseSink* pAdvSink);
 ```  
@@ -290,7 +300,7 @@ HRESULT CloseHandle(HANDLE hHandle);
  Implement this method to execute code when the handle associated with this object becomes signaled.  
   
 ```
-HRESULT Execute(DWORD_PTR dwParam,  HANDLE hObject);
+HRESULT Execute(DWORD_PTR dwParam, HANDLE hObject);
 ```  
   
 ### Parameters  

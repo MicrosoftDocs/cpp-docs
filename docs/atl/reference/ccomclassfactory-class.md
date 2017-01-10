@@ -78,9 +78,7 @@ class CComClassFactory : public IClassFactory,   public CComObjectRootEx<CComGlo
  Creates an object of the specified CLSID and retrieves an interface pointer to this object.  
   
 ```
-STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter,
-    REFIID riid,
-    void** ppvObj);
+STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
 ```  
   
 ### Parameters  

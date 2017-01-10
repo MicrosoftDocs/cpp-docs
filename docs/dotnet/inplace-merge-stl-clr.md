@@ -1,5 +1,5 @@
 ---
-title: "inplace_merge (STL-CLR) | Microsoft Docs"
+title: "inplace_merge (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -48,7 +48,7 @@ template<class _BidIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `inplace_merge` For more information, see [inplace_merge](http://msdn.microsoft.com/Library/a3a7d861-2b47-4b0c-a2ac-df805c813437).  
+ This function behaves the same as the C++ Standard Library function `inplace_merge` For more information, see [inplace_merge](http://msdn.microsoft.com/Library/a3a7d861-2b47-4b0c-a2ac-df805c813437).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

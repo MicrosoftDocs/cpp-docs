@@ -65,7 +65,7 @@ public:
  The template class stores a copy of **pfunc**. It defines its member function `operator()` as returning (\* **pfunc**)(_ *Left*).  
   
 ## Remarks  
- A unary function pointer is a function object and may be passed to any Standard Template Library algorithm that is expecting a unary function as a parameter, but it is not adaptable. To use it with an adaptor, such as binding a value to it or using it with a negator, it must be supplied with the nested types **argument_type** and **result_type** that make such an adaptation possible. The conversion by `pointer_to_unary_function` allows the function adaptors to work with binary function pointers.  
+ A unary function pointer is a function object and may be passed to any C++ Standard Library algorithm that is expecting a unary function as a parameter, but it is not adaptable. To use it with an adaptor, such as binding a value to it or using it with a negator, it must be supplied with the nested types **argument_type** and **result_type** that make such an adaptation possible. The conversion by `pointer_to_unary_function` allows the function adaptors to work with binary function pointers.  
   
 ## Example  
  The constructor of `pointer_to_unary_function` is rarely used directly. See the helper function [ptr_fun](../standard-library/functional-functions.md#ptr_fun_function) for an example of how to declare and use the `pointer_to_unary_function` adaptor predicate.  

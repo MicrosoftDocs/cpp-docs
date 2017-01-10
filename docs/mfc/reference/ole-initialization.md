@@ -65,6 +65,9 @@ BOOL AFXAPI AfxOleInit();
   
 > [!NOTE]
 >  MFC applications must be initialized as single threaded apartment (STA). If you call [CoInitializeEx](http://msdn.microsoft.com/library/windows/desktop/ms695279) in your `InitInstance` override, specify `COINIT_APARTMENTTHREADED` (rather than `COINIT_MULTITHREADED`). For more information, see PRB: MFC Application Stops Responding When You Initialize the Application as a Multithreaded Apartment (828643) at [http://support.microsoft.com/default.aspxscid=kb;en-us;828643](http://support.microsoft.com/default.aspxscid=kb;en-us;828643).  
-  
+
+### Requirements  
+ **Header:** afxdisp.h
+
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

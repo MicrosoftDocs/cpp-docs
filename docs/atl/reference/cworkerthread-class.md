@@ -47,8 +47,8 @@ This class creates a worker thread or uses an existing one, waits on one or more
 ## Syntax  
   
 ```
-template <class   ThreadTraits = DefaultThreadTraits>
-    class CWorkerThread
+template <class ThreadTraits = DefaultThreadTraits>  
+class CWorkerThread
 ```  
   
 #### Parameters  
@@ -205,6 +205,7 @@ DWORD GetThreadId() throw();
   
 ```
 HRESULT Initialize() throw();
+
 HRESULT Initialize(CWorkerThread<ThreadTraits>* pThread) throw();
 ```  
   
@@ -226,7 +227,7 @@ HRESULT Initialize(CWorkerThread<ThreadTraits>* pThread) throw();
  Call this method to remove a handle from the list of waitable objects.  
   
 ```
-HRESULT RemoveHandle(HANDLE   hObject) throw();
+HRESULT RemoveHandle(HANDLE hObject) throw();
 ```  
   
 ### Parameters  

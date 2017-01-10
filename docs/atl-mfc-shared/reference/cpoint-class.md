@@ -42,7 +42,7 @@ Similar to the Windows `POINT` structure.
 ## Syntax  
   
 ```  
-class CPoint : public tagPOINT  
+class CPoint : public tagPOINT 
 ```  
   
 ## Members  
@@ -89,24 +89,15 @@ class CPoint : public tagPOINT
 ## Requirements  
  **Header:** atltypes.h  
   
-##  <a name="cpoint"></a>  CPoint::CPoint  
+##  <a name="cpoint"></a>  CPoint::CPoint
  Constructs a `CPoint` object.  
   
 ```  
 CPoint() throw();
-
-CPoint(
-    int initX,  
-    int initY) throw();
-
-CPoint(
-    POINT initPt) throw();
-
-CPoint(
-    SIZE initSize) throw();
-
-CPoint(
-    LPARAM dwPoint) throw();
+CPoint(int initX, int initY) throw();
+CPoint(POINT initPt) throw();
+CPoint(SIZE initSize) throw();
+CPoint(LPARAM dwPoint) throw();
 ```  
   
 ### Parameters  
@@ -130,40 +121,28 @@ CPoint(
   
 ### Example  
   
-```  
- 
-CPoint   ptTopLeft(0,
-    0);
-
- 
-// works from a POINT,
-    too  
+```cpp   
+CPoint   ptTopLeft(0, 0); 
+// works from a POINT, too  
  
 POINT   ptHere;  
 ptHere.x = 35;  
 ptHere.y = 95;  
  
 CPoint   ptMFCHere(ptHere);
-
  
-// works from A SIZE  
- 
+// works from a SIZE 
 SIZE   sHowBig;  
 sHowBig.cx = 300;  
 sHowBig.cy = 10;  
  
-CPoint ptMFCBig(sHowBig);
-
- 
+CPoint ptMFCBig(sHowBig); 
 // or from a DWORD  
  
 DWORD   dwSize;  
-dwSize = MAKELONG(35,
-    95);
-
+dwSize = MAKELONG(35, 95);
  
 CPoint ptFromDouble(dwSize);
-
 ASSERT(ptFromDouble == ptMFCHere);
 ```  
   
@@ -171,17 +150,9 @@ ASSERT(ptFromDouble == ptMFCHere);
  Adds values to the **x** and **y** members of the `CPoint`.  
   
 ```  
-void Offset(
-    int xOffset,  
-    int yOffset) throw();
-
- 
-    void Offset(
-    POINT point) throw();
-
- 
-    void Offset(
-    SIZE size) throw();
+void Offset(int xOffset, int yOffset) throw();
+void Offset(POINT point) throw();
+void Offset(SIZE size) throw();
 ```  
   
 ### Parameters  
@@ -238,10 +209,8 @@ BOOL operator!=(POINT point) const throw();
  The first overload adds a size to the `CPoint`.  
   
 ```  
-void operator+=(SIZE size) throw();
-
- 
-    void operator+=(POINT point) throw();
+void operator+=(SIZE size) throw(); 
+void operator+=(POINT point) throw();
 ```  
   
 ### Parameters  
@@ -265,10 +234,8 @@ void operator+=(SIZE size) throw();
  The first overload subtracts a size from the `CPoint`.  
   
 ```  
-void operator-=(SIZE size) throw();
-
- 
-    void operator-=(POINT point) throw();
+void operator-=(SIZE size) throw(); 
+void operator-=(POINT point) throw();
 ```  
   
 ### Parameters  
@@ -293,12 +260,8 @@ void operator-=(SIZE size) throw();
   
 ```  
 CPoint operator+(SIZE size) const throw();
-
- 
-    CPoint operator+(POINT point) const throw();
-
- 
-    CRect operator+(const RECT* lpRect) const throw();
+CPoint operator+(POINT point) const throw();
+CRect operator+(const RECT* lpRect) const throw();
 ```  
   
 ### Parameters  
@@ -327,15 +290,9 @@ CPoint operator+(SIZE size) const throw();
   
 ```  
 CSize operator-(POINT point) const throw();
-
- 
-    CPoint operator-(SIZE size) const throw();
-
- 
-    CRect operator-(const RECT* lpRect) const throw();
-
- 
-    CPoint operator-() const throw();
+CPoint operator-(SIZE size) const throw();
+CRect operator-(const RECT* lpRect) const throw();
+CPoint operator-() const throw();
 ```  
   
 ### Parameters  

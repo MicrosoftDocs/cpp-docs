@@ -149,9 +149,10 @@ CStringData* GetNilString() throw();
  Reallocates a string data structure.  
   
 ```
-CStringData* Reallocate(CStringData* pData,
-    int nAllocLength,
-    int nCharSize) throw();
+CStringData* Reallocate(  
+ CStringData* pData,
+ int nAllocLength,
+ int nCharSize) throw();
 ```  
   
 ### Parameters  

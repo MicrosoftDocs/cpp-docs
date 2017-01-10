@@ -42,7 +42,7 @@ This class provides methods used by several ATL module classes.
 ## Syntax  
   
 ```
-class ATL_NO_VTABLE CAtlModule :  public _ATL_MODULE
+class ATL_NO_VTABLE CAtlModule : public _ATL_MODULE
 ```  
   
 ## Members  
@@ -114,8 +114,7 @@ virtual HRESULT AddCommonRGSReplacements(IRegistrarBase* /* pRegistrar*/) throw(
  Adds a new function to be called when the module terminates.  
   
 ```
-HRESULT AddTermFunc(
-    _ATL_TERMFUNC* pFunc,  DWORD_PTR dw) throw();
+HRESULT AddTermFunc(_ATL_TERMFUNC* pFunc, DWORD_PTR dw) throw();
 ```  
   
 ### Parameters  
@@ -227,10 +226,13 @@ virtual LONG Unlock() throw();
  Runs the script contained in a specified resource to register or unregister an object.  
   
 ```
-HRESULT WINAPI UpdateRegistryFromResourceD(UINT nResID,
+HRESULT WINAPI UpdateRegistryFromResourceD(  
+    UINT nResID,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
-HRESULT WINAPI UpdateRegistryFromResourceD(LPCTSTR lpszRes,
+
+HRESULT WINAPI UpdateRegistryFromResourceD(  
+    LPCTSTR lpszRes,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
 ```  
@@ -262,7 +264,8 @@ HRESULT WINAPI UpdateRegistryFromResourceD(LPCTSTR lpszRes,
  This method is called by `UpdateRegistryFromResourceD` to perform the registry update.  
   
 ```
-inline HRESULT WINAPI UpdateRegistryFromResourceDHelper(LPCOLESTR lpszRes,
+inline HRESULT WINAPI UpdateRegistryFromResourceDHelper(  
+    LPCOLESTR lpszRes,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
 ```  
@@ -287,10 +290,13 @@ inline HRESULT WINAPI UpdateRegistryFromResourceDHelper(LPCOLESTR lpszRes,
  Runs the script contained in a specified resource to register or unregister an object. This method statically links to the ATL Registry Component.  
   
 ```
-HRESULT WINAPI UpdateRegistryFromResourceS(UINT nResID,
+HRESULT WINAPI UpdateRegistryFromResourceS(  
+    UINT nResID,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
-HRESULT WINAPI UpdateRegistryFromResourceS(LPCTSTR lpszRes,
+
+HRESULT WINAPI UpdateRegistryFromResourceS(  
+    LPCTSTR lpszRes,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
 ```  

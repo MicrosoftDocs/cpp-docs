@@ -45,7 +45,7 @@ This class provides methods for assisting communication between an in-place cont
 ## Syntax  
   
 ```
-template<class  T>
+template<class T>
 class IOleInPlaceActiveObjectImpl
 ```  
   
@@ -85,7 +85,7 @@ class IOleInPlaceActiveObjectImpl
  Enables context-sensitive help.  
   
 ```
-HRESULT ContextSensitiveHelp(BOOL   fEnterMode);
+HRESULT ContextSensitiveHelp(BOOL fEnterMode);
 ```  
   
 ### Return Value  
@@ -98,7 +98,7 @@ HRESULT ContextSensitiveHelp(BOOL   fEnterMode);
  Enables modeless dialog boxes.  
   
 ```
-HRESULT EnableModeless(BOOL   fEnable);
+HRESULT EnableModeless(BOOL fEnable);
 ```  
   
 ### Return Value  
@@ -123,7 +123,7 @@ HRESULT GetWindow(HWND* phwnd);
  Notifies the control when the container's document window is activated or deactivated.  
   
 ```
-HRESULT OnDocWindowActivate(BOOL   fActivate);
+HRESULT OnDocWindowActivate(BOOL fActivate);
 ```  
   
 ### Return Value  
@@ -136,7 +136,7 @@ HRESULT OnDocWindowActivate(BOOL   fActivate);
  Notifies the control when the container's top-level frame window is activated or deactivated.  
   
 ```
-HRESULT OnFrameWindowActivate(BOOL   fActivate);
+HRESULT OnFrameWindowActivate(BOOL fActivate);
 ```  
   
 ### Return Value  
@@ -165,7 +165,7 @@ HRESULT ResizeBorder(
  Processes menu accelerator-key messages from the container.  
   
 ```
-HRESULT TranslateAccelerator(LPMSG   lpmsg);
+HRESULT TranslateAccelerator(LPMSG lpmsg);
 ```  
   
 ### Return Value  

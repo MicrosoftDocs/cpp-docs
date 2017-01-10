@@ -11,7 +11,7 @@ ms.topic: "article"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "Standard C++ Library, program startup and termination"
+  - "C++ Standard Library, program startup and termination"
   - "terminating execution"
   - "Function Main procedures"
   - "control text streams"
@@ -55,7 +55,7 @@ A C++ program performs the same operations as a C program does at program startu
  As with C, returning from `main` or calling `exit` calls all functions registered with `atexit` in reverse order of registry. An exception thrown from such a registered function calls `terminate`.  
   
 ## See Also  
- [STL Overview](../standard-library/cpp-standard-library-overview.md)   
+ [C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)   
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 
 

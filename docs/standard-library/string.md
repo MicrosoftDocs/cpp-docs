@@ -49,7 +49,7 @@ Defines the container template class `basic_string` and various supporting templ
 ```  
   
 ## Remarks  
- The C++ language and the Standard C++ Library support two types of strings:  
+ The C++ language and the C++ Standard Library support two types of strings:  
   
 -   Null-terminated character arrays often referred to as C strings.  
   

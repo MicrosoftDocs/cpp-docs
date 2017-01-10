@@ -77,7 +77,7 @@ class double_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|[double_2::double_2 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
+|[double_2 Constructor](#ctor)|Overloaded. Default constructor, initializes all elements with 0.|  
   
 ### Public Methods  
   
@@ -136,7 +136,8 @@ class double_2;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="ctor"></a>  double_2::double_2 Constructor  
+##  <a name="ctor"></a> double_2 
+
  Default constructor, initializes all elements with 0.  
   
 ```  
@@ -198,8 +199,8 @@ explicit inline double_2(
  `_Other`  
  The object used to initialize.  
   
-##  <a name="double_2__size"></a>  double_2::size Constant  
-  
+##  <a name="double_2__size"></a> size 
+
 ```  
 static const int size = 2;  
 ```  

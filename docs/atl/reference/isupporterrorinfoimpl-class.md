@@ -49,7 +49,9 @@ This class provides a default implementation of the [ISupportErrorInfo Interface
 ## Syntax  
   
 ```
-template<const IID* piid>  class ATL_NO_VTABLE ISupportErrorInfoImpl :  public ISupportErrorInfo
+template<const IID* piid>  
+class ATL_NO_VTABLE ISupportErrorInfoImpl 
+   : public ISupportErrorInfo
 ```  
   
 #### Parameters  
@@ -127,7 +129,7 @@ STDMETHOD(GetTimeout)(DWORD* pdwMaxWait);
  Call this method to set the number of threads in the pool.  
   
 ```
-STDMETHOD(SetSize)(int nNumThreads);
+STDMETHOD(SetSize)int nNumThreads);
 ```  
   
 ### Parameters  

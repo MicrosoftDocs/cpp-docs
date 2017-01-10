@@ -41,8 +41,8 @@ This class defines a COM enumerator object based on an array.
   
 ```
 template <class Base,
-    const IID* piid, class T, class Copy, class ThreadModel = CcomObjectThreadModel>  class ATL_NO_VTABLE CComEnum :  public CComEnumImpl<Base,
-    piid,
+    const IID* piid, class T, class Copy, class ThreadModel = CcomObjectThreadModel>  
+class ATL_NO_VTABLE CComEnum : public CComEnumImpl<Base, piid,
  T,
     Copy>,
  public CComObjectRootEx<ThreadModel>
@@ -65,7 +65,7 @@ template <class Base,
  The threading model of the class. This parameter defaults to the global object thread model used in your project.  
   
 ## Remarks  
- `CComEnum` defines a COM enumerator object based on an array. This class is analogous to [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md) which implements an enumerator based on an STL container. Typical steps for using this class are outlined below. For more information, see [ATL Collections and Enumerators](../../atl/atl-collections-and-enumerators.md).  
+ `CComEnum` defines a COM enumerator object based on an array. This class is analogous to [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md) which implements an enumerator based on a C++ Standard Library container. Typical steps for using this class are outlined below. For more information, see [ATL Collections and Enumerators](../../atl/atl-collections-and-enumerators.md).  
   
 ## To use this class:  
   

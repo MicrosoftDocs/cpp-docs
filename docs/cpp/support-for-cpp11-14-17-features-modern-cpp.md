@@ -169,7 +169,7 @@ This article describes C++11/14/17 features in Visual C++.
  [[In This Article](#top)]  
   
 ###  <a name="decltype"></a> decltype  
- After decltype was voted into the Working Paper ([version 1.0](http://go.microsoft.com/fwlink/p/?LinkID=235101)), it received a small but important fix at the last minute ([version 1.1](http://go.microsoft.com/fwlink/p/?LinkID=235102)).  This is of great interest to programmers who work on the STL and Boost.  
+ After decltype was voted into the Working Paper ([version 1.0](http://go.microsoft.com/fwlink/p/?LinkID=235101)), it received a small but important fix at the last minute ([version 1.1](http://go.microsoft.com/fwlink/p/?LinkID=235102)).  This is of great interest to programmers who work on the C++ Standard Library and Boost.  
   
  [[In This Article](#top)]  
   
@@ -184,9 +184,9 @@ This article describes C++11/14/17 features in Visual C++.
  [[In This Article](#top)]  
   
 ###  <a name="standardlayout"></a> Standard-Layout and Trivial Types  
- The exposed changes from [N2342 "POD's Revisited; Resolving Core Issue 568 (Revision 5)"](http://go.microsoft.com/fwlink/p/?LinkID=235106) are the additions of `is_trivial` and `is_standard_layout` to the Standard Template Library's `<type_traits>`.  (N2342 reworked a lot of the Core Language wording, but no compiler changes were required.)  These type traits were available in Visual C++ in Visual Studio 2010, but they just duplicated `is_pod`. Therefore, the table earlier in this document said "No" support.  They are now powered by compiler hooks that are designed to give accurate answers.  
+ The exposed changes from [N2342 "POD's Revisited; Resolving Core Issue 568 (Revision 5)"](http://go.microsoft.com/fwlink/p/?LinkID=235106) are the additions of `is_trivial` and `is_standard_layout` to the C++ Standard Library's `<type_traits>`.  (N2342 reworked a lot of the Core Language wording, but no compiler changes were required.)  These type traits were available in Visual C++ in Visual Studio 2010, but they just duplicated `is_pod`. Therefore, the table earlier in this document said "No" support.  They are now powered by compiler hooks that are designed to give accurate answers.  
   
- The STL's [common_type<>](../standard-library/common-type-class.md) received a much-needed fix in [!INCLUDE[cpp_dev12_long](../build/reference/includes/cpp_dev12_long_md.md)].  The C++11 specification for `common_type<>` had unexpected and undesired consequences; in particular, it makes `common_type<int, int>::type` return `int&&`. Therefore, [!INCLUDE[cpp_dev12_long](../build/reference/includes/cpp_dev12_long_md.md)] implements the [Proposed Resolution for Library Working Group issue 2141](http://go.microsoft.com/fwlink/p/?LinkId=320075), which makes `common_type<int, int>::type` return `int`.  
+ The C++ Standard Library's [common_type<>](../standard-library/common-type-class.md) received a much-needed fix in [!INCLUDE[cpp_dev12_long](../build/reference/includes/cpp_dev12_long_md.md)].  The C++11 specification for `common_type<>` had unexpected and undesired consequences; in particular, it makes `common_type<int, int>::type` return `int&&`. Therefore, [!INCLUDE[cpp_dev12_long](../build/reference/includes/cpp_dev12_long_md.md)] implements the [Proposed Resolution for Library Working Group issue 2141](http://go.microsoft.com/fwlink/p/?LinkId=320075), which makes `common_type<int, int>::type` return `int`.  
   
  As a side-effect of this change, the identity case no longer works (`common_type<T>` does not always result in type `T`). This complies with the Proposed Resolution, but it breaks any code that relied on the previous behavior.  
   
@@ -219,7 +219,7 @@ template <typename T> struct Identity {
 ###  <a name="atomics"></a> Atomics, and More  
  [Atomics](http://go.microsoft.com/fwlink/p/?LinkID=235111), [strong compare and exchange](http://go.microsoft.com/fwlink/p/?LinkID=235112), [bidirectional fences](http://go.microsoft.com/fwlink/p/?LinkID=235113), and [data-dependency ordering](http://go.microsoft.com/fwlink/p/?LinkID=235114) specify Standard Library machinery, which are now implemented.  
   
- **Related STL headers:** [\<atomic>](../standard-library/atomic.md), [\<chrono>](../standard-library/chrono.md), [<condition_variable>](../standard-library/condition-variable.md), [\<future>](../standard-library/future.md), [\<mutex>](../standard-library/mutex.md), [\<ratio>](../standard-library/ratio.md), [<scoped_allocator>](../standard-library/scoped-allocator.md), and [\<thread>](../standard-library/thread.md).  
+ **Related C++ Standard Library headers:** [\<atomic>](../standard-library/atomic.md), [\<chrono>](../standard-library/chrono.md), [<condition_variable>](../standard-library/condition-variable.md), [\<future>](../standard-library/future.md), [\<mutex>](../standard-library/mutex.md), [\<ratio>](../standard-library/ratio.md), [<scoped_allocator>](../standard-library/scoped-allocator.md), and [\<thread>](../standard-library/thread.md).  
   
  [[In This Article](#top)]  
   
@@ -241,7 +241,7 @@ template <typename T> struct Identity {
   
  **Randomness:** `uniform_int_distribution` is now perfectly unbiased, and `shuffle()` is implemented in `<algorithm>`, which directly accepts Uniform Random Number Generators like `mersenne_twister`.  
   
- **Resistance to overloaded address-of operators:** C++98/03 prohibited an element of an STL container from overloading its address-of operator.  This is what classes like `CComPtr` do, so that helper classes like `CAdapt` were required to shield the STL from such overloads.  During the development of Visual C++ in Visual Studio 2010, STL changes made it reject overloaded address-of operators in even more situations. C++11 changed the requirements to make overloaded address-of operators acceptable. C++11, and Visual C++ in Visual Studio 2010, provide the helper function `std::addressof()`, which can get the true address of an object regardless of operator overloading.  Before Visual C++ in Visual Studio 2010 was released, we attempted to replace occurrences of "`&elem`" with "`std::addressof(elem)`", which is appropriately resistant.  [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)] went further, so that classes that overload their address-of operator should be usable throughout the STL.  
+ **Resistance to overloaded address-of operators:** C++98/03 prohibited an element of a C++ Standard Library container from overloading its address-of operator.  This is what classes like `CComPtr` do, so that helper classes like `CAdapt` were required to shield the C++ Standard Library from such overloads.  During the development of Visual C++ in Visual Studio 2010, C++ Standard Library changes made it reject overloaded address-of operators in even more situations. C++11 changed the requirements to make overloaded address-of operators acceptable. C++11, and Visual C++ in Visual Studio 2010, provide the helper function `std::addressof()`, which can get the true address of an object regardless of operator overloading.  Before Visual C++ in Visual Studio 2010 was released, we attempted to replace occurrences of "`&elem`" with "`std::addressof(elem)`", which is appropriately resistant.  [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)] went further, so that classes that overload their address-of operator should be usable throughout the C++ Standard Library.  
   
  **[!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)] went beyond C++11 in several ways:**  
   

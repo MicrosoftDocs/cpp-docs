@@ -1,5 +1,5 @@
 ---
-title: "random_shuffle (STL-CLR) | Microsoft Docs"
+title: "random_shuffle (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -47,7 +47,7 @@ template<class _RanIt, class _Fn1> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `random_shuffle`. For more information, see [random_shuffle](http://msdn.microsoft.com/Library/066a5fb1-9568-4e96-8ab9-854041d7f9d8).  
+ This function behaves the same as the C++ Standard Library function `random_shuffle`. For more information, see [random_shuffle](http://msdn.microsoft.com/Library/066a5fb1-9568-4e96-8ab9-854041d7f9d8).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

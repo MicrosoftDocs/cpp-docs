@@ -86,9 +86,7 @@ class CAxWindow : public CWindow
  Creates a new host object if one isn't already present and attaches the specified control to the host.  
   
 ```
-HRESULT AttachControl(
-    IUnknown* pControl,
-    IUnknown** ppUnkContainer);
+HRESULT AttachControl(IUnknown* pControl, IUnknown** ppUnkContainer);
 ```  
   
 ### Parameters  
@@ -108,7 +106,7 @@ HRESULT AttachControl(
  Constructs a `CAxWindow` object using an existing window object handle.  
   
 ```
-CAxWindow(HWND   hWnd = NULL);
+CAxWindow(HWND hWnd = NULL);
 ```  
   
 ### Parameters  
@@ -122,9 +120,9 @@ CAxWindow(HWND   hWnd = NULL);
 HRESULT CreateControl(
     LPCOLESTR lpszName,
     IStream* pStream = NULL,
-    IUnknown** ppUnkContainer = NULL);
-
-    HRESULT CreateControl(
+    IUnknown** ppUnkContainer = NULL);  
+  
+HRESULT CreateControl(
     DWORD dwResID,
     IStream* pStream = NULL,
     IUnknown** ppUnkContainer = NULL);
@@ -183,7 +181,7 @@ HRESULT CreateControlEx(
     REFIID iidSink = IID_NULL,
     IUnknown* punkSink = NULL);
 
-    HRESULT CreateControlEx(
+HRESULT CreateControlEx(
     DWORD dwResID,
     IStream* pStream = NULL,
     IUnknown** ppUnkContainer = NULL,
@@ -266,13 +264,10 @@ CAxWindow<TBase>& operator=(HWND   hWnd);
  Retrieves the specified interface of the hosted control.  
   
 ```
-HRESULT QueryControl(
-    REFIID iid,
-    void** ppUnk);
+HRESULT QueryControl(REFIID iid, void** ppUnk);
 
-    template <class  Q>
-    HRESULT QueryControl(
-    Q** ppUnk);
+template <class Q>
+HRESULT QueryControl(Q** ppUnk);
 ```  
   
 ### Parameters  
@@ -292,13 +287,10 @@ HRESULT QueryControl(
  Returns the specified interface of the host.  
   
 ```
-HRESULT QueryHost(
-    REFIID iid,
-    void** ppUnk);
+HRESULT QueryHost(REFIID iid,void** ppUnk);
 
-    template <class  Q>
-    HRESULT QueryHost(
-    Q** ppUnk);
+template <class  Q>
+HRESULT QueryHost(Q** ppUnk);
 ```  
   
 ### Parameters  

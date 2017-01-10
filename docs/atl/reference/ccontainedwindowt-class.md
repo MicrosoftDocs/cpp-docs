@@ -47,7 +47,8 @@ This class implements a window contained within another object.
 ## Syntax  
   
 ```
-template <class TBase = CWindow,  class TWinTraits = CControlWinTraits>  class CContainedWindowT :  public TBase
+template <class TBase = CWindow, class TWinTraits = CControlWinTraits>  
+class CContainedWindowT : public TBase
 ```  
   
 #### Parameters  
@@ -127,11 +128,13 @@ template <class TBase = CWindow,  class TWinTraits = CControlWinTraits>  class C
  The constructor initializes data members.  
   
 ```
-CContainedWindowT(LPTSTR lpszClassName,
+CContainedWindowT(  
+    LPTSTR lpszClassName,
     CMessageMap* pObject,
     DWORD dwMsgMapID = 0);
 
-    CContainedWindowT(CMessageMap* pObject,
+    CContainedWindowT(  
+    CMessageMap* pObject,
     DWORD dwMsgMapID = 0)
     CContainedWindowT();
 ```     
@@ -163,7 +166,8 @@ CContainedWindowT(LPTSTR lpszClassName,
  Calls [RegisterWndSuperclass](#registerwndsuperclass) to register a window class that is based on an existing class but uses [CContainedWindowT::WindowProc](#windowproc).  
   
 ```
-HWND Create(HWND hWndParent,
+HWND Create(  
+    HWND hWndParent,
     _U_RECT rect,
     LPCTSTR szWindowName = NULL,
     DWORD dwStyle = 0,
@@ -182,7 +186,8 @@ HWND Create(HWND hWndParent,
     _U_MENUorID MenuOrID = 0U,
     LPVOID lpCreateParam = NULL);
 
-    HWND Create(LPCTSTR lpszClassName,
+    HWND Create(  
+    LPCTSTR lpszClassName,
     CMessageMap* pObject,
     DWORD dwMsgMapID,
     HWND hWndParent,
@@ -394,7 +399,8 @@ HWND UnsubclassWindow(BOOL bForce = FALSE);
  This static method implements the window procedure.  
   
 ```
-static LRESULT CALLBACK WindowProc(HWND hWnd,
+static LRESULT CALLBACK WindowProc(  
+    HWND hWnd,
     UINT uMsg,
     WPARAM wParam,
     LPARAM lParam);

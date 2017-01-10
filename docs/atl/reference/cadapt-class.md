@@ -48,7 +48,8 @@ This template is used to wrap classes that redefine the address-of operator to r
 ## Syntax  
   
 ```
-template <class T>  class CAdapt
+template <class T>  
+class CAdapt
 ```  
   
 #### Parameters  
@@ -97,8 +98,7 @@ template <class T>  class CAdapt
 ```
 CAdapt();
 CAdapt(const T& rSrc);
-
-    CAdapt(const CAdapt& rSrCA);
+CAdapt(const CAdapt& rSrCA);
 ```  
   
 ### Parameters  
@@ -121,7 +121,8 @@ T m_T;
 ##  <a name="operator_const_t_amp"></a>  CAdapt::operator const T&amp;  
  Returns a **const** reference to the [m_T](#m_t) member, allowing the adapter object to be treated as if it were an object of type `T`.  
   
-```operator const T&() const;
+```  
+operator const T&() const;
 ```  
   
 ### Return Value  
@@ -130,7 +131,8 @@ T m_T;
 ##  <a name="operator_t_amp"></a>  CAdapt::operator T&amp;  
  Returns a reference to the [m_T](#m_t) member, allowing the adapter object to be treated as if it were an object of type `T`.  
   
-```operator T&();
+```  
+operator T&();
 ```     
   
 ### Return Value  

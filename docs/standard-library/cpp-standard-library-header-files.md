@@ -11,11 +11,11 @@ ms.topic: "article"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "header files, Standard C++ Library"
+  - "header files, C++ Standard Library"
   - "wrappers"
-  - "headers, Standard C++ Library"
+  - "headers, C++ Standard Library"
   - "libraries, C++ header files"
-  - "Standard C++ Library, header files"
+  - "C++ Standard Library, header files"
   - "Visual C++, header files"
 ms.assetid: e7bf497a-0f63-48d0-9b54-cb0eef4073c4
 caps.latest.revision: 36
@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # C++ Standard Library Header Files
-Header files for the Standard C++ Library and extensions, by category.  
+Header files for the C++ Standard Library and extensions, by category.  
   
  `Algorithms` [[more information](../cpp/algorithms-modern-cpp.md)]  
  [\<algorithm>](../standard-library/algorithm.md)  

@@ -37,13 +37,14 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # IEnumOnSTLImpl Class
-This class defines an enumerator interface based on an STL collection.  
+This class defines an enumerator interface based on a C++ Standard Library collection.  
   
 ## Syntax  
   
 ```
 template <class Base,
-    const IID* piid, class T, class Copy, class CollType>  class ATL_NO_VTABLE IEnumOnSTLImpl :  public Base
+    const IID* piid, class T, class Copy, class CollType>  
+class ATL_NO_VTABLE IEnumOnSTLImpl : public Base
 ```  
   
 #### Parameters  
@@ -60,7 +61,7 @@ template <class Base,
  A [copy policy class](../../atl/atl-copy-policy-classes.md).  
   
  `CollType`  
- An STL container class.  
+ A C++ Standard Library container class.  
   
 ## Members  
   
@@ -79,16 +80,16 @@ template <class Base,
 |Name|Description|  
 |----------|-----------------|  
 |[IEnumOnSTLImpl::m_iter](#m_iter)|The iterator that represents the enumerator's current position within the collection.|  
-|[IEnumOnSTLImpl::m_pcollection](#m_pcollection)|A pointer to the STL container holding the items to be enumerated.|  
+|[IEnumOnSTLImpl::m_pcollection](#m_pcollection)|A pointer to the C++ Standard Library container holding the items to be enumerated.|  
 |[IEnumOnSTLImpl::m_spUnk](#m_spunk)|The **IUnknown** pointer of the object supplying the collection.|  
   
 ## Remarks  
- `IEnumOnSTLImpl` provides the implementation for a COM enumerator interface where the items being enumerated are stored in an STL-compatible container. This class is analogous to the [CComEnumImpl](../../atl/reference/ccomenumimpl-class.md) class, which provides an implementation for an enumerator interface based on an array.  
+ `IEnumOnSTLImpl` provides the implementation for a COM enumerator interface where the items being enumerated are stored in a C++ Standard Library-compatible container. This class is analogous to the [CComEnumImpl](../../atl/reference/ccomenumimpl-class.md) class, which provides an implementation for an enumerator interface based on an array.  
   
 > [!NOTE]
 >  See [CComEnumImpl::Init](../../atl/reference/ccomenumimpl-class.md#init) for details on further differences between `CComEnumImpl` and `IEnumOnSTLImpl`.  
   
- Typically, you will *not* need to create your own enumerator class by deriving from this interface implementation. If you want to use an ATL-supplied enumerator based on an STL container, it is more common to create an instance of [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md), or to create a collection class that returns an enumerator by deriving from [ICollectionOnSTLImpl](../../atl/reference/icollectiononstlimpl-class.md).  
+ Typically, you will *not* need to create your own enumerator class by deriving from this interface implementation. If you want to use an ATL-supplied enumerator based on a C++ Standard Library container, it is more common to create an instance of [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md), or to create a collection class that returns an enumerator by deriving from [ICollectionOnSTLImpl](../../atl/reference/icollectiononstlimpl-class.md).  
   
  However, if you do need to provide a custom enumerator (for example, one that exposes interfaces in addition to the enumerator interface), you can derive from this class. In this situation it is likely that you'll need to override the [Clone](#clone) method to provide your own implementation.  
   
@@ -114,7 +115,7 @@ HRESULT Init(
  [in] The **IUnknown** pointer of an object that must be kept alive during the lifetime of the enumerator. Pass **NULL** if no such object exists.  
   
  `collection`  
- A reference to the STL container that holds the items to be enumerated.  
+ A reference to the C++ Standard Library container that holds the items to be enumerated.  
   
 ### Return Value  
  A standard `HRESULT` value.  
@@ -169,7 +170,8 @@ CollType::iterator m_iter;
  This method provides the implementation of the [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx) method.  
   
 ```
-STDMETHOD(Next)(ULONG celt,
+STDMETHOD(Next)(
+    ULONG celt,
     T* rgelt,
     ULONG* pceltFetched);
 ```  

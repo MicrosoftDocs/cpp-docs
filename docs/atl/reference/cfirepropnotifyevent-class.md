@@ -73,8 +73,7 @@ class CFirePropNotifyEvent
  Notifies all connected [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638) interfaces (on every connection point of the object) that the specified object property has changed.  
   
 ```
-static HRESULT FireOnChanged(
-    IUnknown* pUnk,  DISPID dispID);
+static HRESULT FireOnChanged(IUnknown* pUnk, DISPID dispID);
 ```  
   
 ### Parameters  
@@ -94,8 +93,7 @@ static HRESULT FireOnChanged(
  Notifies all connected [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638) interfaces (on every connection point of the object) that the specified object property is about to change.  
   
 ```
-static HRESULT FireOnRequestEdit(
-    IUnknown* pUnk,  DISPID dispID);
+static HRESULT FireOnRequestEdit(IUnknown* pUnk, DISPID dispID);
 ```  
   
 ### Parameters  

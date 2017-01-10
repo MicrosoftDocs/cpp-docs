@@ -81,6 +81,9 @@ DECLARE_EVENT_MAP()
   
  For more information on event maps, see the article [ActiveX Controls: Events](../../mfc/mfc-activex-controls-events.md).  
   
+### Requirements  
+  **Header** afxctl.h  
+  
 ##  <a name="begin_event_map"></a>  BEGIN_EVENT_MAP  
  Begins the definition of your event map.  
   
@@ -100,12 +103,18 @@ BEGIN_EVENT_MAP(theClass,  baseClass)
   
  For more information on event maps and the `BEGIN_EVENT_MAP` macro, see the article [ActiveX Controls: Events](../../mfc/mfc-activex-controls-events.md).  
   
+### Requirements  
+  **Header** afxctl.h  
+  
 ##  <a name="end_event_map"></a>  END_EVENT_MAP  
  Use the `END_EVENT_MAP` macro to end the definition of your event map.  
   
 ```   
 END_EVENT_MAP()   
 ```  
+  
+### Requirements  
+  **Header** afxctl.h  
   
 ##  <a name="event_custom"></a>  EVENT_CUSTOM  
  Defines an event-map entry for a custom event.  
@@ -166,6 +175,9 @@ EVENT_CUSTOM(pszName, pfnFire,  vtsParams)
 > [!NOTE]
 >  Additional variant constants have been defined for all variant types, with the exception of **VTS_FONT** and **VTS_PICTURE**, that provide a pointer to the variant data constant. These constants are named using the **VTS_P**`constantname` convention. For example, **VTS_PCOLOR** is a pointer to a **VTS_COLOR** constant.  
   
+### Requirements  
+  **Header** afxctl.h  
+  
 ##  <a name="event_custom_id"></a>  EVENT_CUSTOM_ID  
  Defines an event firing function for a custom event belonging to the dispatch ID specified by `dispid`.  
   
@@ -200,6 +212,9 @@ EVENT_CUSTOM_ID(
   
  For a list of the **VTS_** constants, see [EVENT_CUSTOM](#event_custom).  
   
+### Requirements  
+  **Header** afxctl.h  
+  
 ##  <a name="on_oleverb"></a>  ON_OLEVERB  
  This macro defines a message map entry that maps a custom verb to a specific member function of your control.  
   
@@ -226,6 +241,9 @@ ON_OLEVERB(idsVerbName,  memberFxn)
   
  The values of the `lpMsg`, `hWndParent`, and `lpRect` parameters are taken from the corresponding parameters of the **IOleObject::DoVerb** member function.  
   
+### Requirements  
+  **Header** afxole.h  
+  
 ##  <a name="on_stdoleverb"></a>  ON_STDOLEVERB  
  Use this macro to override the default behavior of a standard verb.  
   
@@ -244,6 +262,10 @@ ON_STDOLEVERB(iVerb,   memberFxn)
  The standard verb index is of the form **OLEIVERB_**, followed by an action. `OLEIVERB_SHOW`, `OLEIVERB_HIDE`, and `OLEIVERB_UIACTIVATE` are some examples of standard verbs.  
   
  See [ON_OLEVERB](#on_oleverb) for a description of the function prototype to be used as the `memberFxn` parameter.  
+
   
+### Requirements  
+  **Header** afxole.h  
+    
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

@@ -44,7 +44,8 @@ This class provides two static functions for converting characters between upper
 ## Syntax  
   
 ```
-template <typename T>  class CDefaultCharTraits
+template <typename T>  
+class CDefaultCharTraits
 ```  
   
 #### Parameters  
@@ -70,9 +71,8 @@ template <typename T>  class CDefaultCharTraits
  Call this function to convert a character to lowercase.  
   
 ```
-static wchar_t CharToLower(wchar_t x);
-
-    static char CharToLower(char x);
+static wchar_t CharToLower(wchar_t x);  
+static char CharToLower(char x);
 ```  
   
 ### Parameters  
@@ -86,9 +86,8 @@ static wchar_t CharToLower(wchar_t x);
  Call this function to convert a character to uppercase.  
   
 ```
-static wchar_t CharToUpper(wchar_t x);
-
-    static char CharToUpper(char x);
+static wchar_t CharToUpper(wchar_t x);  
+static char CharToUpper(char x);
 ```  
   
 ### Parameters  

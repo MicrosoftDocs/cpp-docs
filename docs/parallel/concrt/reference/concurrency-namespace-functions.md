@@ -93,8 +93,7 @@ inline __declspec(noreturn) void __cdecl cancel_current_task();
   
 ```
 template<typename T, class _Ax>
-void concurrent_queue<T,
-    _Ax>::clear();
+void concurrent_queue<T, _Ax>::clear();
 ```   
   
 ### Parameters  
@@ -106,7 +105,8 @@ void concurrent_queue<T,
   
 ```
 template<typename _Function>
-__declspec(noinline) auto create_async(const _Function& _Func) -> decltype(ref new details::_AsyncTaskGeneratorThunk<_Function>(_Func));
+__declspec(noinline) auto create_async(const _Function& _Func)
+    -> decltype(ref new details::_AsyncTaskGeneratorThunk<_Function>(_Func));
 ```  
   
 ### Parameters  
@@ -152,12 +152,11 @@ IResourceManager* __cdecl CreateResourceManager();
   
 ```
 template<typename T>
-__declspec(
-    noinline) auto create_task(T _Param, const task_options& _TaskOptions = task_options()) -> task<typename details::_TaskTypeFromParam<T>::T>;
+__declspec(noinline) auto create_task(T _Param, const task_options& _TaskOptions = task_options())
+    -> task<typename details::_TaskTypeFromParam<T>::T>;
 
 template<typename _ReturnType>
-__declspec(
-    noinline) task<_ReturnType> create_task(const task<_ReturnType>& _Task);
+__declspec( noinline) task<_ReturnType> create_task(const task<_ReturnType>& _Task);
 ```  
   
 ### Parameters  
@@ -296,12 +295,10 @@ unsigned int __cdecl GetSchedulerId();
   
 ```
 template<typename T, class _Ax>
-template<class _I> void concurrent_vector<T,
-    _Ax>::internal_assign_iterators(
- _I
-    first,
- _I
-    last);
+template<class _I> 
+void concurrent_vector<T, _Ax>::internal_assign_iterators(
+   _I first,
+   _I last);
 ```   
   
 ### Parameters  
@@ -338,42 +335,24 @@ bool __cdecl is_current_task_group_canceling();
  Constructs a `choice` messaging block from an optional `Scheduler` or `ScheduleGroup` and two or more input sources.  
   
 ```
-template<typename T1,
-    typename T2,
-    typename... Ts>
-choice<std::tuple<T1,
-    T2,
- Ts...>> make_choice(
+template<typename T1, typename T2, typename... Ts>
+choice<std::tuple<T1, T2, Ts...>> make_choice(
     Scheduler& _PScheduler,
-    T1
- _Item1,
-    T2
- _Item2,
+    T1  _Item1,
+    T2  _Item2,
     Ts... _Items);
 
-template<typename T1,
-    typename T2,
-    typename... Ts>
-choice<std::tuple<T1,
-    T2,
- Ts...>> make_choice(
+template<typename T1, typename T2, typename... Ts>
+choice<std::tuple<T1, T2, Ts...>> make_choice(
     ScheduleGroup& _PScheduleGroup,
-    T1
- _Item1,
-    T2
- _Item2,
+    T1  _Item1,
+    T2  _Item2,
     Ts... _Items);
 
-template<typename T1,
-    typename T2,
-    typename... Ts>
-choice<std::tuple<T1,
-    T2,
- Ts...>> make_choice(
-    T1
- _Item1,
-    T2
- _Item2,
+template<typename T1, typename T2, typename... Ts>
+choice<std::tuple<T1, T2, Ts...>> make_choice(
+    T1  _Item1,
+    T2  _Item2,
     Ts... _Items);
 ```  
   
@@ -406,45 +385,24 @@ choice<std::tuple<T1,
  Constructs a `greedy multitype_join` messaging block from an optional `Scheduler` or `ScheduleGroup` and two or more input sources.  
   
 ```
-template<typename T1,
-    typename T2,
-    typename... Ts>
-multitype_join<std::tuple<T1,
-    T2,
- Ts...>,
-    greedy> make_greedy_join(
+template<typename T1, typename T2, typename... Ts>
+multitype_join<std::tuple<T1, T2, Ts...>,greedy> make_greedy_join(
     Scheduler& _PScheduler,
-    T1
- _Item1,
-    T2
- _Item2,
+    T1 _Item1,
+    T2 _Item2,
     Ts... _Items);
 
-template<typename T1,
-    typename T2,
-    typename... Ts>
-multitype_join<std::tuple<T1,
-    T2,
- Ts...>,
-    greedy> make_greedy_join(
+template<typename T1, typename T2, typename... Ts>
+multitype_join<std::tuple<T1, T2, Ts...>, greedy> make_greedy_join(
     ScheduleGroup& _PScheduleGroup,
-    T1
- _Item1,
-    T2
- _Item2,
+    T1 _Item1,
+    T2 _Item2,
     Ts... _Items);
 
-template<typename T1,
-    typename T2,
-    typename... Ts>
-multitype_join<std::tuple<T1,
-    T2,
- Ts...>,
-    greedy> make_greedy_join(
-    T1
- _Item1,
-    T2
- _Item2,
+template<typename T1, typename T2, typename... Ts>
+multitype_join<std::tuple<T1, T2, Ts...>, greedy> make_greedy_join(
+    T1 _Item1,
+    T2 _Items,
     Ts... _Items);
 ```  
   
@@ -486,17 +444,15 @@ multitype_join<std::tuple<T1, T2, Ts...>>
     Ts... _Items);
 
 template<typename T1, typename T2, typename... Ts>
-multitype_join<std::tuple<T1, T2, Ts...>>
-make_join(
+multitype_join<std::tuple<T1, T2, Ts...>> make_join(
  ScheduleGroup& _PScheduleGroup,
     T1 _Item1,
     T2 _Item2,
     Ts... _Items);
 
 template<typename T1, typename T2, typename... Ts>
-multitype_join<std::tuple<T1, T2, Ts...>>
-make_join(
- T1 _Item1,
+multitype_join<std::tuple<T1, T2, Ts...>> make_join(
+    T1 _Item1,
     T2 _Item2,
     Ts... _Items);
 ```  
@@ -602,7 +558,7 @@ inline void parallel_buffered_sort(
  The iterator type of the input range.  
   
  `_Allocator`  
- The type of an STL compatible memory allocator.  
+ The type of a C++ Standard Library compatible memory allocator.  
   
  `_Function`  
  The type of the binary comparator.  
@@ -614,7 +570,7 @@ inline void parallel_buffered_sort(
  A random-access iterator addressing the position one past the final element in the range to be sorted.  
   
  `_Alloc`  
- An instance of an STL compatible memory allocator.  
+ An instance of a C++ Standard Library compatible memory allocator.  
   
  `_Func`  
  A user-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns `true` when satisfied and `false` when not satisfied. This comparator function must impose a strict weak ordering on pairs of elements from the sequence.  
@@ -627,7 +583,7 @@ inline void parallel_buffered_sort(
   
  If you do not supply a binary comparator `std::less` is used as the default, which requires the element type to provide the operator `operator<()`.  
   
- If you do not supply an allocator type or instance, the STL memory allocator `std::allocator<T>` is used to allocate the buffer.  
+ If you do not supply an allocator type or instance, the C++ Standard Library memory allocator `std::allocator<T>` is used to allocate the buffer.  
   
  The algorithm divides the input range into two chunks and successively divides each chunk into two sub-chunks for execution in parallel. The optional argument `_Chunk_size` can be used to indicate to the algorithm that it should handles chunks of size < `_Chunk_size` serially.  
   
@@ -999,7 +955,7 @@ inline void parallel_radixsort(
  The iterator type of the input range.  
   
  `_Allocator`  
- The type of an STL compatible memory allocator.  
+ The type of a C++ Standard Library compatible memory allocator.  
   
  `_Function`  
  The type of the projection function.  
@@ -1011,7 +967,7 @@ inline void parallel_radixsort(
  A random-access iterator addressing the position one past the final element in the range to be sorted.  
   
  `_Alloc`  
- An instance of an STL compatible memory allocator.  
+ An instance of a C++ Standard Library compatible memory allocator.  
   
  `_Proj_func`  
  A user-defined projection function object that converts an element into an integral value.  
@@ -1024,7 +980,7 @@ inline void parallel_radixsort(
   
  If you do not supply a projection function, a default projection function which simply returns the element is used for integral types. The function will fail to compile if the element is not an integral type in the absence of a projection function.  
   
- If you do not supply an allocator type or instance, the STL memory allocator `std::allocator<T>` is used to allocate the buffer.  
+ If you do not supply an allocator type or instance, the C++ Standard Library memory allocator `std::allocator<T>` is used to allocate the buffer.  
   
  The algorithm divides the input range into two chunks and successively divides each chunk into two sub-chunks for execution in parallel. The optional argument `_Chunk_size` can be used to indicate to the algorithm that it should handles chunks of size < `_Chunk_size` serially.  
   
@@ -1043,8 +999,7 @@ inline typename std::iterator_traits<_Forward_iterator>::value_type parallel_red
     _Forward_iterator _Begin,
     _Forward_iterator _End,
     const typename std::iterator_traits<_Forward_iterator>::value_type& _Identity,
-    _Sym_reduce_fun
- _Sym_fun);
+    _Sym_reduce_fun _Sym_fun);
 
 template<typename _Reduce_type,
     typename _Forward_iterator,
@@ -1340,14 +1295,10 @@ void run_with_cancellation_token(
   
 ```
 template <class T>
-bool send(
-    _Inout_ ITarget<T>* _Trg,
-    const T& _Data);
+bool send(_Inout_ ITarget<T>* _Trg, const T& _Data);
 
 template <class T>
-bool send(
-    ITarget<T>& _Trg,
-    const T& _Data);
+bool send(ITarget<T>& _Trg, const T& _Data);
 ```  
   
 ### Parameters  
@@ -1499,9 +1450,7 @@ void Trace_agents_register_name(
   
 ``` 
 template <class T>
-bool try_receive(
-    _Inout_ ISource<T>* _Src,
-    T& _value);
+bool try_receive(_Inout_ ISource<T>* _Src, T& _value);
 
 template <class T>
 bool try_receive(
@@ -1510,9 +1459,7 @@ bool try_receive(
     typename ITarget<T>::filter_method const& _Filter_proc);
 
 template <class T>
-bool try_receive(
-    ISource<T>& _Src,
-    T& _value);
+bool try_receive(ISource<T>& _Src, T& _value);
 
 template <class T>
 bool try_receive(
@@ -1564,9 +1511,7 @@ auto when_all(
     _Iterator _End,
     const task_options& _TaskOptions = task_options()) -> 
     decltype (details::_WhenAllImpl<typename std::iterator_traits<_Iterator>::value_type::result_type,
-    _Iterator>::_Perform(_TaskOptions,
- _Begin,
-    _End));
+    _Iterator>::_Perform(_TaskOptions, _Begin,  _End));
 ```   
   
 ### Parameters  
@@ -1599,19 +1544,21 @@ template<typename _Iterator>
 auto when_any(
     _Iterator _Begin,
     _Iterator _End,
-    const task_options& _TaskOptions = task_options()) -> decltype (details::_WhenAnyImpl<typename std::iterator_traits<_Iterator>::value_type::result_type,
-    _Iterator>::_Perform(_TaskOptions,
- _Begin,
-    _End));
+    const task_options& _TaskOptions = task_options()) 
+    -> decltype (
+        details::_WhenAnyImpl<
+            typename std::iterator_traits<_Iterator>::value_type::result_type,
+            _Iterator>::_Perform(_TaskOptions, _Begin, _End));
 
 template<typename _Iterator>
 auto when_any(
     _Iterator _Begin,
     _Iterator _End,
-    cancellation_token _CancellationToken) -> decltype (details::_WhenAnyImpl<typename std::iterator_traits<_Iterator>::value_type::result_type,
-    _Iterator>::_Perform(_CancellationToken._GetImplValue(),
- _Begin,
-    _End));
+    cancellation_token _CancellationToken) 
+       -> decltype (
+           details::_WhenAnyImpl<
+               typename std::iterator_traits<_Iterator>::value_type::result_type,
+               _Iterator>::_Perform(_CancellationToken._GetImplValue(), _Begin, _End));
 ```   
   
 ### Parameters  

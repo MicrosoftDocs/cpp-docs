@@ -51,7 +51,10 @@ These functions provide support for modifying SID and ACL objects.
 |[AtlGetSacl](#atlgetsacl)|Call this function to retrieve the system access-control list (SACL) information of a specified object.|  
 |[AtlSetSacl](#atlsetsacl)|Call this function to set the system access-control list (SACL) information of a specified object.|  
 |[AtlGetSecurityDescriptor](#atlgetsecuritydescriptor)|Call this function to retrieve the security descriptor of a given object.|  
-  
+
+## Requirements  
+ **Header:** atlsecurity.h 
+
 ##  <a name="atlgetdacl"></a>  AtlGetDacl  
  Call this function to retrieve the discretionary access-control list (DACL) information of a specified object.  
   
@@ -80,7 +83,9 @@ inline bool AtlGetDacl(
   
 ### Remarks  
  In debug builds, an assertion error will occur if either `hObject` or `pDacl` is invalid *.*  
-  
+
+v
+
 ##  <a name="atlsetdacl"></a>  AtlSetDacl  
  Call this function to set the discretionary access-control list (DACL) information of a specified object.  
   
@@ -113,7 +118,9 @@ inline bool AtlSetDacl(
   
 ### Remarks  
  In debug builds, an assertion error will occur if `hObject` is invalid, or if `dwInheritanceFlowControl` is not one of the three permitted values.  
-  
+### Requirements  
+ **Header:** atlsecurity.h 
+
 ##  <a name="atlgetgroupsid"></a>  AtlGetGroupSid  
  Call this function to retrieve the group security identifier (SID) of an object.  
   
@@ -139,7 +146,10 @@ inline bool AtlGetGroupSid(
   
 ### Return Value  
  Returns true on success, false on failure.  
-  
+
+### Requirements  
+ **Header:** atlsecurity.h 
+
 ##  <a name="atlsetgroupsid"></a>  AtlSetGroupSid  
  Call this function to set the group security identifier (SID) of an object.  
   
@@ -165,7 +175,10 @@ inline bool AtlSetGroupSid(
   
 ### Return Value  
  Returns true on success, false on failure.  
-  
+
+### Requirements  
+ **Header:** atlsecurity.h 
+
 ##  <a name="atlgetownersid"></a>  AtlGetOwnerSid  
  Call this function to retrieve the owner security identifier (SID) of an object.  
   
@@ -191,7 +204,10 @@ inline bool AtlGetOwnerSid(
   
 ### Return Value  
  Returns true on success, false on failure.  
-  
+
+### Requirements  
+ **Header:** atlsecurity.h 
+
 ##  <a name="atlsetownersid"></a>  AtlSetOwnerSid  
  Call this function to set the owner security identifier (SID) of an object.  
   
@@ -217,7 +233,10 @@ inline bool AtlSetOwnerSid(
   
 ### Return Value  
  Returns true on success, false on failure.  
-  
+
+### Requirements  
+ **Header:** atlsecurity.h 
+
 ##  <a name="atlgetsacl"></a>  AtlGetSacl  
  Call this function to retrieve the system access-control list (SACL) information of a specified object.  
   
@@ -250,7 +269,10 @@ inline bool AtlGetSacl(
   
 ### Remarks  
  If `AtlGetSacl` is to be called many times on many different objects, it will be more efficient to enable the SE_SECURITY_NAME privilege once before calling the function, with `bRequestNeededPrivileges` set to false.  
-  
+
+### Requirements  
+ **Header:** atlsecurity.h 
+
 ##  <a name="atlsetsacl"></a>  AtlSetSacl  
  Call this function to set the system access-control list (SACL) information of a specified object.  
   
@@ -289,7 +311,10 @@ inline bool AtlSetSacl(
  In debug builds, an assertion error will occur if `hObject` is invalid, or if `dwInheritanceFlowControl` is not one of the three permitted values.  
   
  If `AtlSetSacl` is to be called many times on many different objects, it will be more efficient to enable the SE_SECURITY_NAME privilege once before calling the function, with `bRequestNeededPrivileges` set to false.  
-  
+
+### Requirements  
+ **Header:** atlsecurity.h 
+
 ##  <a name="atlgetsecuritydescriptor"></a>  AtlGetSecurityDescriptor  
  Call this function to retrieve the security descriptor of a given object.  
   
@@ -328,6 +353,9 @@ inline bool AtlGetSecurityDescriptor(
   
 ### Remarks  
  If `AtlGetSecurityDescriptor` is to be called many times on many different objects, it will be more efficient to enable the SE_SECURITY_NAME privilege once before calling the function, with `bRequestNeededPrivileges` set to false.  
-  
+
+### Requirements  
+ **Header:** atlsecurity.h 
+   
 ## See Also  
  [Functions](../../atl/reference/atl-functions.md)

@@ -42,8 +42,8 @@ This class provides methods for managing a simple array.
 ## Syntax  
   
 ```
-template <class T, class TEqual = CSimpleArrayEqualHelper<T>>
-    class CSimpleArray
+template <class T, class TEqual = CSimpleArrayEqualHelper<T>>  
+class CSimpleArray
 ```  
   
 #### Parameters  
@@ -117,10 +117,8 @@ BOOL Add(const T& t);
  The constructor for the array object.  
   
 ```
-CSimpleArray(
-    const CSimpleArray<T, TEqual>& src);
-
-    CSimpleArray();
+CSimpleArray(const CSimpleArray<T, TEqual>& src);  
+CSimpleArray();
 ```     
   
 ### Parameters  
@@ -181,7 +179,7 @@ int GetSize() const;
  Retrieves an element from the array.  
   
 ```
-T& operator[](int   nindex);
+T& operator[]int nindex);
 ```  
   
 ### Parameters  
@@ -198,11 +196,9 @@ T& operator[](int   nindex);
  Assignment operator.  
   
 ```
-CSimpleArray<T,
-    TEqual>
+CSimpleArray<T, TEqual>
 & operator=(
-    const CSimpleArray<T,
-    TEqual>& src);
+    const CSimpleArray<T, TEqual>& src);
 ```  
   
 ### Parameters  
@@ -249,7 +245,7 @@ void RemoveAll();
  Removes the specified element from the array.  
   
 ```
-BOOL RemoveAt(int   nIndex);
+BOOL RemoveAtint nIndex);
 ```  
   
 ### Parameters  

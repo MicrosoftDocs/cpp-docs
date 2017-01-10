@@ -50,22 +50,22 @@ class SchedulerPolicy;
   
 |Name|Description|  
 |----------|-----------------|  
-|[SchedulerPolicy::SchedulerPolicy Constructor](#ctor)|Overloaded. Constructs a new scheduler policy and populates it with values for [policy keys](concurrency-namespace-enums.md) supported by Concurrency Runtime schedulers and the Resource Manager.|  
-|[SchedulerPolicy::~SchedulerPolicy Destructor](#dtor)|Destroys a scheduler policy.|  
+|[SchedulerPolicy Constructor](#ctor)|Overloaded. Constructs a new scheduler policy and populates it with values for [policy keys](concurrency-namespace-enums.md) supported by Concurrency Runtime schedulers and the Resource Manager.|  
+|[~SchedulerPolicy Destructor](#dtor)|Destroys a scheduler policy.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[SchedulerPolicy::GetPolicyValue Method](#getpolicyvalue)|Retrieves the value of the policy key supplied as the `key` parameter.|  
-|[SchedulerPolicy::SetConcurrencyLimits Method](#setconcurrencylimits)|Simultaneously sets the `MinConcurrency` and `MaxConcurrency` policies on the `SchedulerPolicy` object.|  
-|[SchedulerPolicy::SetPolicyValue Method](#setpolicyvalue)|Sets the value of the policy key supplied as the `key` parameter and returns the old value.|  
+|[GetPolicyValue Method](#getpolicyvalue)|Retrieves the value of the policy key supplied as the `key` parameter.|  
+|[SetConcurrencyLimits Method](#setconcurrencylimits)|Simultaneously sets the `MinConcurrency` and `MaxConcurrency` policies on the `SchedulerPolicy` object.|  
+|[SetPolicyValue Method](#setpolicyvalue)|Sets the value of the policy key supplied as the `key` parameter and returns the old value.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[SchedulerPolicy::operator= Operator](#operator_eq)|Assigns the scheduler policy from another scheduler policy.|  
+|[operator= Operator](#operator_eq)|Assigns the scheduler policy from another scheduler policy.|  
   
 ## Remarks  
  For more information about the policies which can be controlled using the `SchedulerPolicy` class, see [PolicyElementKey Enumeration](concurrency-namespace-enums.md).  
@@ -78,7 +78,8 @@ class SchedulerPolicy;
   
  **Namespace:** concurrency  
   
-##  <a name="getpolicyvalue"></a>  SchedulerPolicy::GetPolicyValue Method  
+##  <a name="getpolicyvalue"></a> GetPolicyValue 
+
  Retrieves the value of the policy key supplied as the `key` parameter.  
   
 ```
@@ -95,7 +96,8 @@ unsigned int GetPolicyValue(PolicyElementKey key) const;
 ### Remarks  
  The method will throw [invalid_scheduler_policy_key](invalid-scheduler-policy-key-class.md) for an invalid policy key.  
   
-##  <a name="operator_eq"></a>  SchedulerPolicy::operator= Operator  
+##  <a name="operator_eq"></a> operator= 
+
  Assigns the scheduler policy from another scheduler policy.  
   
 ```
@@ -112,7 +114,8 @@ SchedulerPolicy& operator= (const SchedulerPolicy& _RhsPolicy);
 ### Remarks  
  Often, the most convenient way to define a new scheduler policy is to copy an existing policy and modify it using the `SetPolicyValue` or `SetConcurrencyLimits` methods.  
   
-##  <a name="ctor"></a>  SchedulerPolicy::SchedulerPolicy Constructor  
+##  <a name="ctor"></a> SchedulerPolicy 
+
  Constructs a new scheduler policy and populates it with values for [policy keys](concurrency-namespace-enums.md) supported by Concurrency Runtime schedulers and the Resource Manager.  
   
 ```
@@ -140,14 +143,16 @@ SchedulerPolicy(
   
  The third constructor is a copy constructor. Often, the most convenient way to define a new scheduler policy is to copy an existing policy and modify it using the `SetPolicyValue` or `SetConcurrencyLimits` methods.  
   
-##  <a name="dtor"></a>  SchedulerPolicy::~SchedulerPolicy Destructor  
+##  <a name="dtor"></a> ~SchedulerPolicy 
+
  Destroys a scheduler policy.  
   
 ```
 ~SchedulerPolicy();
 ```  
   
-##  <a name="setconcurrencylimits"></a>  SchedulerPolicy::SetConcurrencyLimits Method  
+##  <a name="setconcurrencylimits"></a> SetConcurrencyLimits 
+
  Simultaneously sets the `MinConcurrency` and `MaxConcurrency` policies on the `SchedulerPolicy` object.  
   
 ```
@@ -168,7 +173,8 @@ void SetConcurrencyLimits(
   
  The method can also throw [invalid_scheduler_policy_value](invalid-scheduler-policy-value-class.md) for other invalid values.  
   
-##  <a name="setpolicyvalue"></a>  SchedulerPolicy::SetPolicyValue Method  
+##  <a name="setpolicyvalue"></a> SetPolicyValue 
+
  Sets the value of the policy key supplied as the `key` parameter and returns the old value.  
   
 ```

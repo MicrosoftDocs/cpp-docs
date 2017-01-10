@@ -47,7 +47,8 @@ This class provides automatic resource cleanup for `GetBuffer` and `ReleaseBuffe
   
 ```
 template<typename TCharType>
-class CStrBufT```  
+class CStrBufT
+```  
   
 #### Parameters  
  *TCharType*  
@@ -117,10 +118,7 @@ static const DWORD AUTO_LENGTH = 0x01;
  Constructs a buffer object.  
   
 ```
-CStrBufT(StringType& str,
-    int nMinLength,
-    DWORD dwFlags = AUTO_LENGTH) throw(...);
-
+CStrBufT(StringType& str, int nMinLength, DWORD dwFlags = AUTO_LENGTH) throw(...);
 explicit CStrBufT(StringType& str) throw(...);
 ```  
   
@@ -146,7 +144,8 @@ explicit CStrBufT(StringType& str) throw(...);
 ##  <a name="operator_pcxstr"></a>  CStrBufT::operator PCXSTR  
  Directly accesses characters stored in the associated string object as a C-style string.  
   
-```operator PCXSTR() const throw();
+```
+ operator PCXSTR() const throw();
 ```  
   
 ### Return Value  
@@ -158,7 +157,8 @@ explicit CStrBufT(StringType& str) throw(...);
 ##  <a name="operator_pxstr"></a>  CStrBufT::operator PXSTR  
  Directly accesses characters stored in the associated string object as a C-style string.  
   
-```operator PXSTR() throw();
+```
+ operator PXSTR() throw();
 ```  
   
 ### Return Value  

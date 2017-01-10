@@ -46,7 +46,7 @@ This interface provides methods for configuring a thread pool.
   
 ```
 __interface
-    __declspec(uuid("B1F64757-6E88-4fa2-8886-7848B0D7E660")) IThreadPoolConfig :  public IUnknown
+    __declspec(uuid("B1F64757-6E88-4fa2-8886-7848B0D7E660")) IThreadPoolConfig : public IUnknown
 ```  
   
 ## Members  
@@ -104,7 +104,7 @@ STDMETHOD(GetTimeout)(DWORD* pdwMaxWait);
  Call this method to set the number of threads in the pool.  
   
 ```
-STDMETHOD(SetSize)(int nNumThreads);
+STDMETHOD(SetSize)int nNumThreads);
 ```  
   
 ### Parameters  

@@ -131,7 +131,7 @@ The [!INCLUDE[vcprvc](build/includes/vcprvc_md.md)] programming language and dev
  Includes security-enhanced alternatives to functions that are known to pose security issues.  
   
  [C++ Standard Library](standard-library/cpp-standard-library-reference.md)  
- The Standard Template Library (STL).  
+ The C++ Standard Library.  
   
  [Active Template Library (ATL)](atl/atl-com-desktop-components.md)  
  Support for  COM components and apps.  

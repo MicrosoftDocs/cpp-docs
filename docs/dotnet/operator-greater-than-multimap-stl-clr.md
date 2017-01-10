@@ -1,5 +1,5 @@
 ---
-title: "operator&gt; (multimap) (STL-CLR) | Microsoft Docs"
+title: "operator&gt; (multimap) (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -110,7 +110,7 @@ int main()
   
 ## See Also  
  [multimap (STL/CLR)](../dotnet/multimap-stl-clr.md)   
- [operator== (multimap) (STL/CLR)](../dotnet/operator-equality-multimap-stl-lr.md)   
+ [operator== (multimap) (STL/CLR)](../dotnet/operator-equality-multimap-stl-clr.md)   
  [operator!= (multimap) (STL/CLR)](../dotnet/operator-inequality-multimap-stl-clr.md)   
  [operator\< (multimap) (STL/CLR)](../dotnet/operator-less-than-multimap-stl-clr.md)   
  [operator>= (multimap) (STL/CLR)](../dotnet/operator-greater-or-equal-multimap-stl-clr.md)   

@@ -45,8 +45,7 @@ This class provides a thin wrapper around the Windows file-handling API.
 ## Syntax  
   
 ```
-class CAtlFile :
-    public CHandle
+class CAtlFile : public CHandle
 ```  
   
 ## Members  
@@ -97,7 +96,7 @@ class CAtlFile :
 CAtlFile() throw();
 CAtlFile(CAtlTransactionManager* pTM = NULL) throw();
 CAtlFile(CAtlFile& file) throw();
-explicit CAtlFile(HANDLE   hFile) throw();
+explicit CAtlFile(HANDLE hFile) throw();
 ```  
   
 ### Parameters  
@@ -232,9 +231,7 @@ HRESULT GetSize(ULONGLONG& nLen) const throw();
  Call this method to lock a region in the file to prevent other processes from accessing it.  
   
 ```
-HRESULT LockRange(
-    ULONGLONG nPos,
-    ULONGLONG nCount) throw();
+HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 ```  
   
 ### Parameters  
@@ -266,14 +263,17 @@ CAtlTransactionManager* m_pTM;
 HRESULT Read(
     LPVOID pBuffer,
     DWORD nBufSize) throw();
+
 HRESULT Read(
     LPVOID pBuffer,
     DWORD nBufSize,
     DWORD& nBytesRead) throw();
+
 HRESULT Read(
     LPVOID pBuffer,
     DWORD nBufSize,
     LPOVERLAPPED pOverlapped) throw();
+
 HRESULT Read(
     LPVOID pBuffer,
     DWORD nBufSize,
@@ -346,9 +346,7 @@ HRESULT SetSize(ULONGLONG   nNewLen) throw();
  Call this method to unlock a region of the file.  
   
 ```
-HRESULT UnlockRange(
-    ULONGLONG nPos,
-    ULONGLONG nCount) throw();
+HRESULT UnlockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 ```  
   
 ### Parameters  
@@ -373,10 +371,12 @@ HRESULT Write(
     DWORD nBufSize,
     LPOVERLAPPED pOverlapped,
     LPOVERLAPPED_COMPLETION_ROUTINE pfnCompletionRoutine) throw();
+
 HRESULT Write(
     LPCVOID pBuffer,
     DWORD nBufSize,
     DWORD* pnBytesWritten = NULL) throw();
+
 HRESULT Write(
     LPCVOID pBuffer,
     DWORD nBufSize,

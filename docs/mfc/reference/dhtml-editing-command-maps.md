@@ -64,6 +64,9 @@ DECLARE_DHTMLEDITING_CMDMAP(className)
 ### Example  
  See [HTMLEdit Sample](../../visual-cpp-samples.md).  
   
+### Requirements  
+  **Header** afxhtml.h  
+  
 ##  <a name="begin_dhtmlediting_cmdmap"></a>  BEGIN_DHTMLEDITING_CMDMAP  
  Starts the definition of a DHTML editing command map within a class.  
   
@@ -80,6 +83,9 @@ BEGIN_DHTMLEDITING_CMDMAP(className)
   
  Place the `BEGIN_DHTMLEDITING_CMDMAP` macro in the class's implementation (.cpp) file followed by [DHTMLEDITING_CMD_ENTRY](#dhtmlediting_cmd_entry) macros for the commands the class is to map (for example, from **ID_EDIT_CUT** to **IDM_CUT**). Use the [END_DHTMLEDITING_CMDMAP](#end_dhtmlediting_cmdmap) macro to mark the end of the event map.  
   
+### Requirements  
+  **Header** afxhtml.h  
+  
 ##  <a name="end_dhtmlediting_cmdmap"></a>  END_DHTMLEDITING_CMDMAP  
  Marks the end of a DHTML editing command map.  
   
@@ -92,6 +98,9 @@ END_DHTMLEDITING_CMDMAP()
   
 ### Example  
  See [HTMLEdit Sample](../../visual-cpp-samples.md).  
+  
+### Requirements  
+  **Header** afxhtml.h  
   
 ##  <a name="dhtmlediting_cmd_entry"></a>  DHTMLEDITING_CMD_ENTRY  
  Maps a command ID to an HTML editing command.  
@@ -109,6 +118,9 @@ DHTMLEDITING_CMD_ENTRY(cmdID,  dhtmlcmdID)
   
 ### Example  
  See [HTMLEdit Sample](../../visual-cpp-samples.md).  
+  
+### Requirements  
+  **Header** afxhtml.h  
   
 ##  <a name="dhtmlediting_cmd_entry_func"></a>  DHTMLEDITING_CMD_ENTRY_FUNC  
  Maps a command ID to an HTML editing command and message handler.  
@@ -130,6 +142,9 @@ DHTMLEDITING_CMD_ENTRY_FUNC(cmdID, dhtmlcmdID,  member_func_name)
 ### Example  
  See [HTMLEdit Sample](../../visual-cpp-samples.md).  
   
+### Requirements  
+  **Header** afxhtml.h  
+  
 ##  <a name="dhtmlediting_cmd_entry_type"></a>  DHTMLEDITING_CMD_ENTRY_TYPE  
  Maps a command ID to an HTML editing command and user interface element.  
   
@@ -149,6 +164,9 @@ DHTMLEDITING_CMD_ENTRY_TYPE(cmdID  ,   dhtmlcmdID  ,    elemType)
   
 ### Example  
  See [HTMLEdit Sample](../../visual-cpp-samples.md).  
+  
+### Requirements  
+  **Header** afxhtml.h  
   
 ##  <a name="dhtmlediting_cmd_entry_func_type"></a>  DHTMLEDITING_CMD_ENTRY_FUNC_TYPE  
  Maps a command ID to an HTML editing command, message handler, and user interface element.  
@@ -172,6 +190,9 @@ DHTMLEDITING_CMD_ENTRY_FUNC_TYPE(cmdID, dhtmlcmdID, member_func_name,  elemType)
   
 ### Example  
  See [HTMLEdit Sample](../../visual-cpp-samples.md).  
-  
+
+### Requirements  
+  **Header** afxhtml.h  
+    
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

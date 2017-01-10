@@ -251,8 +251,7 @@ BOOL DrawTextOnGlass(
 ### Remarks  
  A theme defines the visual style of an application. A theme is not used to draw the text if the `hTheme` parameter is `NULL`, or if the [DrawThemeTextEx](http://msdn.microsoft.com/library/windows/desktop/bb773317) method is not supported, or if [Desktop Window Manager](http://msdn.microsoft.com/library/windows/desktop/aa969540) (DWM) composition is disabled.  
   
- 
-## See Also   
+### See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449)   
  [Parts and States](http://msdn.microsoft.com/library/windows/desktop/bb773210)   
@@ -279,7 +278,7 @@ void EnableAccessibilitySupport(BOOL bEnable=TRUE);
  Use the [AFX_GLOBAL_DATA::IsAccessibilitySupport](#isaccessibilitysupport) method to determine whether Microsoft Active Accessibility support is enabled.  
   
  
-## See Also  
+### See Also  
  [UI Automation and Microsoft Active Accessibility](http://msdn.microsoft.com/library/87bee662-0a3e-4232-a421-20e7a5968321)   
  [AFX_GLOBAL_DATA::IsAccessibilitySupport](#isaccessibilitysupport)
 
@@ -344,7 +343,7 @@ COLORREF GetColor(int nColor);
 ### Remarks  
  If the `nColor` parameter is out of range, the return value is zero. Because zero is also a valid RGB value, you cannot use this method to determine whether a system color is supported by the current operating system. Instead, use the [GetSysColorBrush](http://msdn.microsoft.com/library/windows/desktop/dd144927) method, which returns `NULL` if the color is not supported.  
   
-## See Also  
+### See Also  
 
  [GetSysColor Function](http://msdn.microsoft.com/library/windows/desktop/ms724371)   
  [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449)   
@@ -388,7 +387,7 @@ BOOL GetNonClientMetrics(NONCLIENTMETRICS& info);
  `TRUE` if this method succeeds; otherwise, `FALSE`.  
  
   
-## See Also   
+### See Also   
  [NONCLIENTMETRICS Structure](http://msdn.microsoft.com/library/windows/desktop/ff729175)
 
 ## <a name="gettextheight"></a> AFX_GLOBAL_DATA::GetTextHeight
@@ -481,7 +480,7 @@ BOOL IsAccessibilitySupport() const;
  Use the [AFX_GLOBAL_DATA::EnableAccessibilitySupport](#enableaccessibilitysupport) method to enable or disable Active Accessibility support.  
   
 
-## See Also  
+### See Also  
  [UI Automation and Microsoft Active Accessibility](http://msdn.microsoft.com/library/87bee662-0a3e-4232-a421-20e7a5968321)
 
 ## <a name="isd2dinitialized"></a> AFX_GLOBAL_DATA::IsD2DInitialized
@@ -506,7 +505,7 @@ BOOL IsDwmCompositionEnabled();
 ### Return Value  
  `TRUE` if [Desktop Window Manager](http://msdn.microsoft.com/library/windows/desktop/aa969540) (DWM) composition is enabled; otherwise, `FALSE`.  
   
-## See Also    
+### See Also    
  [Desktop Window Manager](http://msdn.microsoft.com/library/windows/desktop/aa969540)   
  [Enable and Control DWM Composition](http://msdn.microsoft.com/library/windows/desktop/aa969538)
 
@@ -667,7 +666,7 @@ CString RegisterWindowClass(LPCTSTR lpszClassNamePrefix);
 ### Remarks  
  The return value is a colon-delimited list of the `lpszClassNamePrefix` parameter string, and the hexadecimal text representations of the handles of the current application instance; the application cursor, which is the arrow cursor whose identifier is IDC_ARROW; and the background brush. For more information about registering MFC window classes, see [AfxRegisterClass](../../mfc/reference/application-information-and-management.md#afxregisterclass).  
   
-## See Also    
+### See Also    
  [AfxRegisterClass](../../mfc/reference/application-information-and-management.md#afxregisterclass)   
  [AfxThrowResourceException](../../mfc/reference/exception-processing.md#afxthrowresourceexception)
 
@@ -713,7 +712,7 @@ BOOL SetLayeredAttrib(
 ### Return Value  
  `TRUE` if this method succeeds; otherwise, `FALSE`.   
  
-## See Also   
+### See Also   
  [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449)   
  [SetLayeredWindowAttributes](http://msdn.microsoft.com/library/windows/desktop/ms633540)
 

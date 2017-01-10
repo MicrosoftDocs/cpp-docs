@@ -45,9 +45,8 @@ This class provides implementations of the `IDispatch` methods, without getting 
 ## Syntax  
   
 ```
-template <UINT nID, class T,
-    const IID* pdiid>  class ATL_NO_VTABLE IDispEventSimpleImpl :  public _IDispEventLocator<nID,
-    pdiid>
+template <UINT nID, class T, const IID* pdiid>  
+class ATL_NO_VTABLE IDispEventSimpleImpl : public _IDispEventLocator<nID, pdiid>
 ```    
   
 #### Parameters  
@@ -185,7 +184,8 @@ HRESULT DispEventUnadvise(IUnknown* pUnk  const IID* piid);
  This implementation of **IDispatch::GetIDsOfNames** returns **E_NOTIMPL**.  
   
 ```
-STDMETHOD(GetIDsOfNames)(REFIID /* riid */,
+STDMETHOD(GetIDsOfNames)(
+    REFIID /* riid */,
     LPOLESTR* /* rgszNames */,
     UINT /* cNames */,
     LCID /* lcid */,
@@ -199,7 +199,8 @@ STDMETHOD(GetIDsOfNames)(REFIID /* riid */,
  This implementation of **IDispatch::GetTypeInfo** returns **E_NOTIMPL**.  
   
 ```
-STDMETHOD(GetTypeInfo)(UINT /* itinfo */,
+STDMETHOD(GetTypeInfo)(
+    UINT /* itinfo */,
     LCID /* lcid */,
     ITypeInfo** /* pptinfo */);
 ```  
@@ -221,7 +222,8 @@ STDMETHOD(GetTypeInfoCount)(UINT* /* pctinfo */);
  This implementation of **IDispatch::Invoke** calls the event handlers listed in the event sink map.  
   
 ```
-STDMETHOD(Invoke)(DISPID dispidMember,
+STDMETHOD(Invoke)(
+    DISPID dispidMember,
     REFIID /* riid */,
     LCID lcid,
     WORD /* wFlags */,

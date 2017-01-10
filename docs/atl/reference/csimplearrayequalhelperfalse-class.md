@@ -44,7 +44,8 @@ This class is a helper for the [CSimpleArray](../../atl/reference/csimplearray-c
 ## Syntax  
   
 ```
-template <class T>   class CSimpleArrayEqualHelperFalse
+template <class T>  
+class CSimpleArrayEqualHelperFalse
 ```  
   
 #### Parameters  
@@ -69,7 +70,7 @@ template <class T>   class CSimpleArrayEqualHelperFalse
  Returns false.  
   
 ```
-static bool IsEqual(const T&,  const T&);
+static bool IsEqual(const T&, const T&);
 ```  
   
 ### Return Value  

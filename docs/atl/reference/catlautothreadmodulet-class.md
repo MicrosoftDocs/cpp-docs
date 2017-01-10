@@ -45,8 +45,10 @@ This class provides methods for implementing a thread-pooled, apartment-model CO
 ## Syntax  
   
 ```
-template <class T, class ThreadAllocator = CComSimpleThreadAllocator,
-    DWORD dwWait = INFINITE>  class ATL_NO_VTABLE CAtlAutoThreadModuleT :  public IAtlAutoThreadModule
+template <class T, 
+         class ThreadAllocator = CComSimpleThreadAllocator,
+         DWORD dwWait = INFINITE>  
+class ATL_NO_VTABLE CAtlAutoThreadModuleT : public IAtlAutoThreadModule
 ```  
   
 #### Parameters  

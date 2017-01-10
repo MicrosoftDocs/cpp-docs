@@ -44,8 +44,9 @@ This class creates a temporary COM object and provides it with a skeletal implem
 ## Syntax  
   
 ```
-template <class  Base>  class CComObjectStack
- :  public Base
+template <class  Base>  
+class CComObjectStack
+ : public Base
 ```  
   
 #### Parameters  
@@ -129,16 +130,14 @@ CComObjectStack();
  Contains the `HRESULT` returned from calling `FinalConstruct` during construction of the `CComObjectStack` object.  
   
 ```
-HRESULT     m_hResFinalConstruct;
+HRESULT    m_hResFinalConstruct;
 ```  
   
 ##  <a name="queryinterface"></a>  CComObjectStack::QueryInterface  
  Returns **E_NOINTERFACE**.  
   
 ```
-HRESULT     QueryInterface(
-    REFIID,
- void**)
+HRESULT    QueryInterface(REFIID, void**)
  ;
 ```  
   

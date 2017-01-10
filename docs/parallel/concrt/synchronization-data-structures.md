@@ -114,7 +114,6 @@ The Concurrency Runtime provides several data structures that let you synchroniz
   
 |Method|Description|  
 |------------|-----------------|  
-
 |[wait](reference/event-class.md#wait)|Waits for the event to become signaled.|  
 |[set](reference/event-class.md#set)|Sets the event to the signaled state.|  
 |[reset](reference/event-class.md#reset)|Sets the event to the non-signaled state.|  

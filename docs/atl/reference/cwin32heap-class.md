@@ -93,7 +93,7 @@ class CWin32Heap : public IAtlMemMgr
  Allocates a block of memory from the heap object.  
   
 ```
-virtual __declspec(allocator) void* Allocate(size_t   nBytes) throw();
+virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 ```  
   
 ### Parameters  
@@ -112,9 +112,7 @@ virtual __declspec(allocator) void* Allocate(size_t   nBytes) throw();
  Attaches the heap object to an existing heap.  
   
 ```
-void Attach(
-    HANDLE hHeap,
-    bool bTakeOwnership) throw();
+void Attach(HANDLE hHeap, bool bTakeOwnership) throw();
 ```  
   
 ### Parameters  
@@ -132,8 +130,7 @@ void Attach(
   
 ```
 CWin32Heap() throw();
-CWin32Heap(
- HANDLE  hHeap) throw();
+CWin32Heap( HANDLE  hHeap) throw();
 CWin32Heap(
  DWORD  dwFlags,
     size_t nInitialSize,
@@ -236,9 +233,7 @@ HANDLE m_hHeap;
  Reallocates a block of memory from the heap object.  
   
 ```
-virtual __declspec(allocator) void* Reallocate(
-    void* p,
-    size_t nBytes) throw();
+virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 ```  
   
 ### Parameters  

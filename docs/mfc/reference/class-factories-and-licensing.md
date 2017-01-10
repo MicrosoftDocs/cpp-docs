@@ -69,6 +69,9 @@ DECLARE_OLECREATE_EX(class_name)
   
  [!code-cpp[NVC_MFCAxCtl#14](../../mfc/reference/codesnippet/cpp/class-factories-and-licensing_1.h)]  
   
+### Requirements  
+  **Header** afxctl.h  
+  
 ##  <a name="implement_olecreate_ex"></a>  IMPLEMENT_OLECREATE_EX  
  Implements your control's class factory and the [GetClassID](../../mfc/reference/colecontrol-class.md#getclassid) member function of your control class.  
   
@@ -102,6 +105,9 @@ IMPLEMENT_OLECREATE_EX(
 ### Remarks  
  This macro must appear in the implementation file for any control class that uses the `DECLARE_OLECREATE_EX` macro or the `BEGIN_OLEFACTORY` and `END_OLEFACTORY` macros. The external name is the identifier of the OLE control that is exposed to other applications. Containers use this name to request an object of this control class.  
   
+### Requirements  
+  **Header** afxctl.h  
+  
 ##  <a name="begin_olefactory"></a>  BEGIN_OLEFACTORY  
  Begins the declaration of your class factory in the header file of your control class.  
   
@@ -116,6 +122,9 @@ BEGIN_OLEFACTORY(class_name)
 ### Remarks  
  Declarations of class factory licensing functions should begin immediately after `BEGIN_OLEFACTORY`.  
   
+### Requirements  
+  **Header** afxctl.h  
+  
 ##  <a name="end_olefactory"></a>  END_OLEFACTORY  
  Ends the declaration of your control's class factory.  
   
@@ -126,6 +135,9 @@ END_OLEFACTORY(class_name)
 ### Parameters  
  *class_name*  
  The name of the control class whose class factory this is.  
+  
+### Requirements  
+  **Header** afxctl.h  
   
 ##  <a name="afxverifylicfile"></a>  AfxVerifyLicFile  
  Call this function to verify that the license file named by `pszLicFileName` is valid for the OLE control.  
@@ -158,6 +170,9 @@ BOOL AFXAPI AfxVerifyLicFile(
  If `cch` is â€“ 1, this function uses:  
   
  [!code-cpp[NVC_MFC_Utilities#36](../../mfc/codesnippet/cpp/class-factories-and-licensing_2.cpp)]  
-  
+
+### Requirements  
+  **Header** afxctl.h  
+
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

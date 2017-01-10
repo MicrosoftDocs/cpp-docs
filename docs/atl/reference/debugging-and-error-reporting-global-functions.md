@@ -52,14 +52,15 @@ HRESULT AtlHresultFromLastError();
   
 ### Remarks  
  `AtlHresultFromLastError` calls `GetLastError` to obtain the last error and returns the error after converting it to an HRESULT using the **HRESULT_FROM_WIN32** macro.  
-  
+
+### Requirements  
+ **Header:** atlcomcli.h  
+
 ##  <a name="atlhresultfromwin32"></a>  AtlHresultFromWin32  
  Converts a Win32 error code into an HRESULT.  
   
 ```
-AtlHresultFromWin32{
-    DWORD error
- };
+AtlHresultFromWin32(DWORD error);
 ```  
   
 ### Parameters  
@@ -71,54 +72,51 @@ AtlHresultFromWin32{
   
 > [!NOTE]
 >  Instead of using **HRESULT_FROM_WIN32(GetLastError())**, use the function [AtlHresultFromLastError](http://msdn.microsoft.com/library/74530d7d-3c91-484c-acf3-aff755715d66).  
-  
+
+### Requirements  
+ **Header:** atlcomcli.h  
+
 ##  <a name="atlreporterror"></a>  AtlReportError  
  Sets up the `IErrorInfo` interface to provide error information to clients of the object.  
   
 ```
-HRESULT     WINAPI
-    AtlReportError(
- const CLSID& clsid,
+HRESULT WINAPI AtlReportError(
+    const CLSID& clsid,
     LPCOLESTR lpszDesc,
     const IID& iid = GUID_NULL,
     HRESULT hRes = 0);
 
-    HRESULT WINAPI
-    AtlReportError(
- const CLSID& clsid,
+HRESULT WINAPI AtlReportError(
+    const CLSID& clsid,
     LPCOLESTR lpszDesc,
     DWORD dwHelpID,
     LPCOLESTR lpszHelpFile,
     const IID& iid = GUID_NULL,
     HRESULT hRes = 0);
 
-    HRESULT WINAPI
-    AtlReportError(
- const CLSID& clsid,
+HRESULT WINAPI AtlReportError(
+    const CLSID& clsid,
     LPCSTR lpszDesc,
     const IID& iid = GUID_NULL,
     HRESULT hRes = 0);
 
-    HRESULT WINAPI
-    AtlReportError(
- const CLSID& clsid,
+HRESULT WINAPI AtlReportError(
+    const CLSID& clsid,
     LPCSTR lpszDesc,
     DWORD dwHelpID,
     LPCSTR lpszHelpFile,
     const IID& iid = GUID_NULL,
     HRESULT hRes = 0);
 
-    HRESULT WINAPI
-    AtlReportError(
- const CLSID& clsid,
+HRESULT WINAPI AtlReportError(
+    const CLSID& clsid,
     UINT nID,
     const IID& iid = GUID_NULL,
     HRESULT hRes = 0,
     HINSTANCE hInst = _AtlBaseModule.GetResourceInstance());
 
-    HRESULT WINAPI
-    AtlReportError(
- const CLSID& clsid,
+HRESULT WINAPI AtlReportError(
+    const CLSID& clsid,
     UINT nID,
     DWORD dwHelpID,
     LPCOLESTR lpszHelpFile,
@@ -163,7 +161,10 @@ HRESULT     WINAPI
   
 > [!CAUTION]
 >  Do not use `AtlReportError` in C++ catch handlers. Some overrides of these functions use the ATL string conversion macros internally, which in turn use the `_alloca` function internally. Using `AtlReportError` in a C++ catch handler can cause exceptions in C++ catch handlers.  
-  
+
+### Requirements  
+ **Header:** atlcom.h  
+    
 ##  <a name="atlthrow"></a>  AtlThrow  
  Call this function to signal an error based on a `HRESULT` status code.  
   
@@ -192,7 +193,10 @@ __declspec(noreturn) inline void AtlThrow(HRESULT hr);
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#95](../../atl/codesnippet/cpp/debugging-and-error-reporting-global-functions_2.h)]  
-  
+
+## Requirements  
+ **Header:** atldef.h  
+
 ##  <a name="atlthrowlastwin32"></a>  AtlThrowLastWin32  
  Call this function to signal an error based on the result of the Windows function `GetLastError`.  
   
@@ -208,7 +212,11 @@ inline void AtlThrowLastWin32();
  If **_ATL_NO_EXCEPTIONS** is not defined in an ATL project, the function throws a [CAtlException](../../atl/reference/catlexception-class.md).  
   
  If **_ATL_NO_EXCEPTIONS** is defined, the function causes an assertion failure instead of throwing an exception.  
-  
+
+## Requirements  
+ **Header:** atldef.h  
+   
+     
 ## See Also  
  [Functions](../../atl/reference/atl-functions.md)   
  [Debugging and Error Reporting Macros](../../atl/reference/debugging-and-error-reporting-macros.md)

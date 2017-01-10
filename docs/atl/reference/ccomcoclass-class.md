@@ -43,9 +43,9 @@ This class provides methods for creating instances of a class, and obtaining its
 ## Syntax  
   
 ```
-template <class   T,
-    const CLSID* pclsid = &CLSID_NULL>
-    class CComCoClass
+template <class T,
+    const CLSID* pclsid = &CLSID_NULL>  
+class CComCoClass
 ```  
   
 #### Parameters  
@@ -87,13 +87,10 @@ template <class   T,
   
 ```
 template <class  Q>
-    static HRESULT CreateInstance(
-    Q** pp);
+    static HRESULT CreateInstance(Q** pp);
 
     template <class  Q>
-    static HRESULT CreateInstance(
-    IUnknown* punkOuter,
-    Q** pp);
+    static HRESULT CreateInstance(IUnknown* punkOuter, Q** pp);
 ```  
   
 ### Parameters  

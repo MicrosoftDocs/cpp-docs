@@ -87,14 +87,16 @@ CSocketAddr();
  Call this method to convert the provided host name to the host address.  
   
 ```
-int FindAddr(const char *szHost,
+int FindAddr(  
+    const char *szHost,
     const char *szPortOrServiceName,
     int flags,
     int addr_family,
     int sock_type,
     int ai_proto);
 
-    int FindAddr(const char *szHost,
+    int FindAddr(  
+    const char *szHost,
     int nPortNo,
     int flags,
     int addr_family,
@@ -194,7 +196,7 @@ int FindINET6Addr(
  Call this method to return a pointer to a specific element in the **addrinfo** list.  
   
 ```
-addrinfo* const GetAddrInfo(int   nIndex = 0) const;
+addrinfo* const GetAddrInfoint nIndex = 0) const;
 ```  
   
 ### Parameters  

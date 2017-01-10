@@ -865,7 +865,7 @@ The C runtime (CRT) library contains functions and global variables that are use
 |__winitenv|  
   
 ## Internal CRT Functions and Function Macros  
- These functions and function macros are used to implement the CRT and the C++ Standard Library (STL).  
+ These functions and function macros are used to implement the CRT and the C++ Standard Library.  
   
 |Name|  
 |----------|  

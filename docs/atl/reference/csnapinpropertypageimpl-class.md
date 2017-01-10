@@ -278,7 +278,7 @@ BOOL OnWizardNext();
  Call this member function to forward a message to each page in the property sheet.  
   
 ```
-LRESULT QuerySiblings(WPARAM wParam,  LPARAM lParam);
+LRESULT QuerySiblings(WPARAM wParam, LPARAM lParam);
 ```  
   
 ### Parameters  

@@ -47,7 +47,8 @@ This class is used by the string conversion macros `CW2CTEX` and `CT2CWEX`, and 
 ## Syntax  
   
 ```
-template<int t_nBufferLength = 128>  class CW2CWEX
+template<int t_nBufferLength = 128>  
+class CW2CWEX
 ```  
   
 #### Parameters  
@@ -102,9 +103,8 @@ template<int t_nBufferLength = 128>  class CW2CWEX
  The constructor.  
   
 ```
-CW2CWEX(LPCWSTR psz,  UINT nCodePage) throw(...);
-
-    CW2CWEX(LPCWSTR psz) throw(...);
+CW2CWEX(LPCWSTR psz, UINT nCodePage) throw(...);  
+CW2CWEX(LPCWSTR psz) throw(...);
 ```  
   
 ### Parameters  
@@ -137,7 +137,8 @@ LPCWSTR m_psz;
 ##  <a name="operator_lpcwstr"></a>  CW2CWEX::operator LPCWSTR  
  Conversion operator.  
   
-```operator LPCWSTR() const throw();
+```  
+operator LPCWSTR() const throw();
 ```  
   
 ### Return Value  

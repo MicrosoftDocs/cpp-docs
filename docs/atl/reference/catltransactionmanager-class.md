@@ -106,7 +106,9 @@ virtual ~CAtlTransactionManager();
  CAtlTransactionManager constructor.  
   
 ```
-CAtlTransactionManager(BOOL bFallback = TRUE,  BOOL bAutoCreateTransaction = TRUE);
+CAtlTransactionManager(
+  BOOL bFallback = TRUE, 
+  BOOL bAutoCreateTransaction = TRUE);
 ```  
   
 ### Parameters  
@@ -161,7 +163,8 @@ inline BOOL CAtlTransactionManager::Create();
  Creates or opens a file, file stream, or directory as a transacted operation.  
   
 ```
-inline HANDLE CAtlTransactionManager::CreateFile(LPCTSTR lpFileName,
+inline HANDLE CAtlTransactionManager::CreateFile(  
+    LPCTSTR lpFileName,
     DWORD dwDesiredAccess,
     DWORD dwShareMode,
     LPSECURITY_ATTRIBUTES lpSecurityAttributes,
@@ -216,7 +219,8 @@ inline BOOL CAtlTransactionManager::DeleteFile(LPCTSTR lpFileName);
  Searches a directory for a file or subdirectory as a transacted operation.  
   
 ```
-inline HANDLE CAtlTransactionManager::FindFirstFile(LPCTSTR lpFileName,
+inline HANDLE CAtlTransactionManager::FindFirstFile(  
+    LPCTSTR lpFileName,
     WIN32_FIND_DATA* pNextInfo);
 ```  
   
@@ -251,7 +255,8 @@ inline DWORD CAtlTransactionManager::GetFileAttributes(LPCTSTR lpFileName);
  Retrieves file system attributes for a specified file or directory as a transacted operation.  
   
 ```
-inline BOOL CAtlTransactionManager::GetFileAttributesEx(LPCTSTR lpFileName,
+inline BOOL CAtlTransactionManager::GetFileAttributesEx(  
+    LPCTSTR lpFileName,
     GET_FILEEX_INFO_LEVELS fInfoLevelId,
     LPVOID lpFileInformation);
 ```  
@@ -315,7 +320,9 @@ HANDLE m_hTransaction;
  Moves an existing file or a directory, including its children, as a transacted operation.  
   
 ```
-inline BOOL CAtlTransactionManager::MoveFile(LPCTSTR lpOldFileName,  LPCTSTR lpNewFileName);
+inline BOOL CAtlTransactionManager::MoveFile(
+  LPCTSTR lpOldFileName, 
+  LPCTSTR lpNewFileName);
 ```  
   
 ### Parameters  
@@ -332,7 +339,8 @@ inline BOOL CAtlTransactionManager::MoveFile(LPCTSTR lpOldFileName,  LPCTSTR lpN
  Creates the specified registry key and associates it with a transaction. If the key already exists, the function opens it.  
   
 ```
-inline LSTATUS CAtlTransactionManager::RegCreateKeyEx(HKEY hKey,
+inline LSTATUS CAtlTransactionManager::RegCreateKeyEx(  
+    HKEY hKey,
     LPCTSTR lpSubKey,
     DWORD dwReserved,
     LPTSTR lpClass,
@@ -381,7 +389,9 @@ inline LSTATUS CAtlTransactionManager::RegCreateKeyEx(HKEY hKey,
  Deletes a subkey and its values from the specified platform-specific view of the registry as a transacted operation.  
   
 ```
-inline LSTATUS CAtlTransactionManager::RegDeleteKeyEx(HKEY hKey,  LPCTSTR lpSubKey);
+inline LSTATUS CAtlTransactionManager::RegDeleteKeyEx(
+  HKEY hKey, 
+  LPCTSTR lpSubKey);
 ```  
   
 ### Parameters  
@@ -401,7 +411,8 @@ inline LSTATUS CAtlTransactionManager::RegDeleteKeyEx(HKEY hKey,  LPCTSTR lpSubK
  Opens the specified registry key and associates it with a transaction.  
   
 ```
-inline LSTATUS CAtlTransactionManager::RegOpenKeyEx(HKEY hKey,
+inline LSTATUS CAtlTransactionManager::RegOpenKeyEx(  
+    HKEY hKey,
     LPCTSTR lpSubKey,
     DWORD ulOptions,
     REGSAM samDesired,
@@ -447,7 +458,9 @@ inline BOOL CAtlTransactionManager::Rollback();
  Sets the attributes for a file or directory as a transacted operation.  
   
 ```
-inline BOOL CAtlTransactionManager::SetFileAttributes(LPCTSTR lpFileName,  DWORD dwAttributes);
+inline BOOL CAtlTransactionManager::SetFileAttributes(
+  LPCTSTR lpFileName, 
+  DWORD dwAttributes);
 ```  
   
 ### Parameters  

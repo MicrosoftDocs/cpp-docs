@@ -1,5 +1,5 @@
 ---
-title: "pop_heap (STL-CLR) | Microsoft Docs"
+title: "pop_heap (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -47,7 +47,7 @@ template<class _RanIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `pop_heap`. For more information, see [pop_heap](http://msdn.microsoft.com/Library/38f6eea3-d192-4597-aae7-c3ec2e659107).  
+ This function behaves the same as the C++ Standard Library function `pop_heap`. For more information, see [pop_heap](http://msdn.microsoft.com/Library/38f6eea3-d192-4597-aae7-c3ec2e659107).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

@@ -39,7 +39,7 @@ translation.priority.ht:
   
  A generic or template is missing one or more actual arguments. Check the generic or template declaration to find the correct number of parameters.  
   
- This error can be caused by missing template arguments in STL components.  
+ This error can be caused by missing template arguments in C++ Standard Library components.  
   
  The following sample generates C2976:  
   

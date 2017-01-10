@@ -49,7 +49,9 @@ This class implements **IUnknown** and provides a default implementation of the 
 ## Syntax  
   
 ```
-template<class T>  class ATL_NO_VTABLE IPersistStreamInitImpl :  public IPersistStreamInit
+template<class T>  
+class ATL_NO_VTABLE IPersistStreamInitImpl 
+   : public IPersistStreamInit
 ```  
   
 #### Parameters  
@@ -141,7 +143,7 @@ STDMETHOD(Load)(LPSTREAM pStm);
  Saves the object's properties to the specified stream.  
   
 ```
-STDMETHOD(Save)(LPSTREAM pStm,  BOOL fClearDirty);
+STDMETHOD(Save)(LPSTREAM pStm, BOOL fClearDirty);
 ```  
   
 ### Remarks  

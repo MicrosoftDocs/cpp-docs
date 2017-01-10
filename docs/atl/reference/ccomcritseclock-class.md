@@ -44,7 +44,8 @@ This class provides methods for locking and unlocking a critical section object.
 ## Syntax  
   
 ```
-template<class TLock> class CComCritSecLock
+template<class TLock>  
+class CComCritSecLock
 ```  
   
 #### Parameters  
@@ -77,8 +78,7 @@ template<class TLock> class CComCritSecLock
  The constructor.  
   
 ```
-CComCritSecLock(
-    TLock& cs,  bool bInitialLock = true);
+CComCritSecLock(TLock& cs, bool bInitialLock = true);
 ```  
   
 ### Parameters  

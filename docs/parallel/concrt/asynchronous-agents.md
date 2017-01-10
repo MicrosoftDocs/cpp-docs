@@ -64,7 +64,6 @@ An *asynchronous agent* (or just *agent*) is an application component that works
   
 |Method|Description|  
 |------------|-----------------|  
-
 |[start](reference/agent-class.md#start)|Schedules the `agent` object for execution and sets it to the `agent_runnable` state.|  
 |[run](reference/agent-class.md#run)|Executes the task that is to be performed by the `agent` object.|  
 |[done](reference/agent-class.md#done)|Moves an agent to the `agent_done` state.|  

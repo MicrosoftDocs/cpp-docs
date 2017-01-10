@@ -48,7 +48,8 @@ This class provides the methods required to implement a composite control.
 ## Syntax  
   
 ```
-template <class T>  class CComCompositeControl :  public CComControl<T,CAxDialogImpl<T>>
+template <class T>  
+class CComCompositeControl : public CComControl<T,CAxDialogImpl<T>>
 ```  
   
 #### Parameters  
@@ -165,9 +166,7 @@ BOOL CalcExtent(SIZE& size);
  This method is called to create the control window for the composite control.  
   
 ```
-HWND Create(HWND hWndParent,
-    RECT& /* rcPos */,
-    LPARAM dwInitParam = NULL);
+HWND Create(HWND hWndParent, RECT& /* rcPos */, LPARAM dwInitParam = NULL);
 ```  
   
 ### Parameters  
@@ -210,8 +209,7 @@ CComCompositeControl();
  Call this method to create the control window and advise any hosted controls.  
   
 ```
-virtual HWND CreateControlWindow(HWND hWndParent,
-    RECT& rcPos);
+virtual HWND CreateControlWindow(HWND hWndParent, RECT& rcPos);
 ```  
   
 ### Parameters  

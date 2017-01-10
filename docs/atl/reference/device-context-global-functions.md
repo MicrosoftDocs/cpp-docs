@@ -41,10 +41,7 @@ This function creates a device context for a given device.
  Creates a device context for the device specified in the [DVTARGETDEVICE](http://msdn.microsoft.com/library/windows/desktop/ms686613) structure.  
   
 ```
-HDC
-    AtlCreateTargetDC(
- HDC hdc,
-    DVTARGETDEVICE* ptd);
+HDC AtlCreateTargetDC(HDC hdc, DVTARGETDEVICE* ptd);
 ```  
   
 ### Parameters  
@@ -61,6 +58,9 @@ HDC
  If the structure is **NULL** and *hdc* is **NULL**, creates a device context for the default display device.  
   
  If *hdc* is not **NULL** and `ptd` is **NULL**, the function returns the existing *hdc*.  
-  
+
+## Requirements  
+ **Header:** atlwin.h  
+   
 ## See Also  
  [Functions](../../atl/reference/atl-functions.md)

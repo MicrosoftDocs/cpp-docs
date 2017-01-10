@@ -76,7 +76,7 @@ class CComSafeArrayBound : public SAFEARRAYBOUND
  The constructor.  
   
 ```
-CComSafeArrayBound(ULONG ulCount = 0,  LONG lLowerBound = 0) throw();
+CComSafeArrayBound(ULONG ulCount = 0, LONG lLowerBound = 0) throw();
 ```  
   
 ### Parameters  

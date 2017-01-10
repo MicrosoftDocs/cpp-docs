@@ -11,8 +11,8 @@ ms.topic: "get-started-article"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "Standard C++ Library, converting strings to System::String"
-  - "string conversion [C++], Standard C++ Library string"
+  - "C++ Standard Library, converting strings to System::String"
+  - "string conversion [C++], C++ Standard Library string"
   - "strings [C++], converting"
 ms.assetid: 1fde79a0-9d0b-44e5-981b-e8f2676c199d
 caps.latest.revision: 9
@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Convert Standard String to System::String
-This topic shows how convert a Standard C++ Library string ([\<string>](../standard-library/string.md)) to a <xref:System.String>.  
+This topic shows how convert a C++ Standard Library string ([\<string>](../standard-library/string.md)) to a <xref:System.String>.  
   
 ## Example  
   

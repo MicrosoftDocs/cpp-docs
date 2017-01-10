@@ -54,7 +54,10 @@ These macros define COM interface maps.
 |[COM_INTERFACE_ENTRY_FUNC_BLIND](#com_interface_entry_func_blind)|Same as [COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func), except that querying for any IID results in a call to `func`.|  
 |[COM_INTERFACE_ENTRY_NOINTERFACE](#com_interface_entry_nointerface)|Returns **E_NOINTERFACE** and terminates COM map processing when the specified interface is queried for.|  
 |[END_COM_MAP](#end_com_map)|Marks the end of the COM interface map entries.|  
-  
+
+## Requirements  
+ **Header:** atlcom.h  
+   
 ##  <a name="begin_com_map"></a>  BEGIN_COM_MAP  
  The COM map is the mechanism that exposes interfaces on an object to a client through `QueryInterface`.  
   
@@ -207,7 +210,7 @@ COM_INTERFACE_ENTRY_AGGREGATE_BLIND(punk)
  When the interface identified by `iid` is queried for, `COM_INTERFACE_ENTRY_AGGREGATE` forwards to `punk`.  
   
 ```
-COM_INTERFACE_ENTRY_AGGREGATE(iid,  punk)
+COM_INTERFACE_ENTRY_AGGREGATE(iid, punk)
 ```  
   
 ### Parameters  

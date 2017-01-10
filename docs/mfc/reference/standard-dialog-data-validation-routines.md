@@ -57,6 +57,8 @@ This topic lists the standard dialog data validation (DDV) routines used for com
 |[DDV_MinMaxUInt](#ddv_minmaxuint)|Verifies a given control value does not exceed a given **UINT** range.|  
 |[DDV_MinMaxULongLong](#ddv_minmaxulonglong)|Verifies a given control value does not exceed a given **ULONGLONG** range.|  
   
+
+  
 ##  <a name="ddv_maxchars"></a>  DDV_MaxChars  
  Call `DDV_MaxChars` to verify that the amount of characters in the control associated with *value* does not exceed *nChars*.  
   
@@ -79,6 +81,9 @@ void AFXAPI DDV_MaxChars(
   
 ### Remarks  
  For more information about DDV, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
+  
+### Requirements  
+  **Header** afxdd_.h  
   
 ##  <a name="ddv_minmaxbyte"></a>  DDV_MinMaxByte  
  Call `DDV_MinMaxByte` to verify that the value in the control associated with *value* falls between `minVal` and `maxVal`.  
@@ -106,6 +111,9 @@ void AFXAPI DDV_MinMaxByte(
   
 ### Remarks  
  For more information about DDV, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
+  
+### Requirements  
+  **Header** afxdd_.h  
   
 ##  <a name="ddv_minmaxdatetime"></a>  DDV_MinMaxDateTime  
  Call `DDV_MinMaxDateTime` to verify that the time/date value in the date and time picker control ( [CDateTimeCtrl](../../mfc/reference/cdatetimectrl-class.md)) associated with *refValue* falls between `refMinRange` and `refMaxRange`.  
@@ -140,6 +148,9 @@ void AFXAPI DDV_MinMaxDateTime(
 ### Remarks  
  For more information about DDV, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdd_.h  
+  
 ##  <a name="ddv_minmaxdouble"></a>  DDV_MinMaxDouble  
  Call `DDV_MinMaxDouble` to verify that the value in the control associated with *value* falls between `minVal` and `maxVal`.  
   
@@ -166,6 +177,9 @@ void AFXAPI DDV_MinMaxDouble(
   
 ### Remarks  
  For more information about DDV, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
+  
+### Requirements  
+  **Header** afxdd_.h  
   
 ##  <a name="ddv_minmaxdword"></a>  DDV_MinMaxDWord  
  Call `DDV_MinMaxDWord` to verify that the value in the control associated with *value* falls between `minVal` and `maxVal`.  
@@ -194,6 +208,9 @@ void AFXAPI DDV_MinMaxDWord(
 ### Remarks  
  For more information about DDV, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdd_.h  
+  
 ##  <a name="ddv_minmaxfloat"></a>  DDV_MinMaxFloat  
  Call `DDV_MinMaxFloat` to verify that the value in the control associated with *value* falls between `minVal` and `maxVal`.  
   
@@ -220,6 +237,9 @@ void AFXAPI DDV_MinMaxFloat(
   
 ### Remarks  
  For more information about DDV, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
+  
+### Requirements  
+  **Header** afxdd_.h  
   
 ##  <a name="ddv_minmaxint"></a>  DDV_MinMaxInt  
  Call `DDV_MinMaxInt` to verify that the value in the control associated with *value* falls between `minVal` and `maxVal`.  
@@ -248,6 +268,9 @@ void AFXAPI DDV_MinMaxInt(
 ### Remarks  
  For more information about DDV, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdd_.h  
+  
 ##  <a name="ddv_minmaxlong"></a>  DDV_MinMaxLong  
  Call `DDV_MinMaxLong` to verify that the value in the control associated with *value* falls between `minVal` and `maxVal`.  
   
@@ -275,6 +298,9 @@ void AFXAPI DDV_MinMaxLong(
 ### Remarks  
  For more information about DDV, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdd_.h  
+  
 ##  <a name="ddv_minmaxlonglong"></a>  DDV_MinMaxLongLong  
  Call `DDV_MinMaxLongLong` to verify that the value in the control associated with *value* falls between `minVal` and `maxVal`.  
   
@@ -301,6 +327,9 @@ void AFXAPI DDV_MinMaxLongLong(
   
 ### Remarks  
  For more information about DDV, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
+  
+### Requirements  
+  **Header** afxdd_.h  
   
 ##  <a name="ddv_minmaxmonth"></a>  DDV_MinMaxMonth  
  Call `DDV_MinMaxMonth` to verify that the time/date value in the month calendar control ( [CMonthCalCtrl](../../mfc/reference/cmonthcalctrl-class.md)) associated with *refValue* falls between `refMinRange` and `refMaxRange`.  
@@ -335,6 +364,9 @@ void AFXAPI DDV_MinMaxMonth(
 ### Remarks  
  For more information about DDV, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdd_.h  
+  
 ##  <a name="ddv_minmaxshort"></a>  DDV_MinMaxShort  
  Call `DDV_MinMaxShort` to verify that the value in the control associated with *value* falls between `minVal` and `maxVal`.  
   
@@ -361,6 +393,9 @@ void AFXAPI DDV_MinMaxShort(
   
 ### Remarks  
  For more information about DDV, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
+  
+### Requirements  
+  **Header** afxdd_.h  
   
 ##  <a name="ddv_minmaxslider"></a>  DDV_MinMaxSlider  
  Call `DDV_MinMaxSlider` to verify that the value in the control associated with *value* falls between `minVal` and `maxVal`.  
@@ -389,6 +424,9 @@ void AFXAPI DDV_MinMaxSlider(
 ### Remarks  
  For more information about DDV, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md). For information about slider controls, see [Using CSliderCtrl](../../mfc/using-csliderctrl.md).  
   
+### Requirements  
+  **Header** afxdd_.h  
+  
 ##  <a name="ddv_minmaxuint"></a>  DDV_MinMaxUInt  
  Call `DDV_MinMaxUInt` to verify that the value in the control associated with *value* falls between `minVal` and `maxVal`.  
   
@@ -416,6 +454,9 @@ void AFXAPI DDV_MinMaxUInt(
 ### Remarks  
  For more information about DDV, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdd_.h  
+  
 ##  <a name="ddv_minmaxulonglong"></a>  DDV_MinMaxULongLong  
  Call `DDV_MinMaxULongLong` to verify that the value in the control associated with *value* falls between `minVal` and `maxVal`.  
   
@@ -442,7 +483,10 @@ void AFXAPI DDV_MinMaxULongLong(
   
 ### Remarks  
  For more information about DDV, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
-  
+
+### Requirements  
+  **Header** afxdd_.h  
+    
 ## See Also  
  [Standard Dialog Data Exchange Routines](../../mfc/reference/standard-dialog-data-exchange-routines.md)   
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

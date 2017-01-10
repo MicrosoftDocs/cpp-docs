@@ -47,9 +47,9 @@ This class provides methods, static functions, and typedefs useful when creating
 ## Syntax  
   
 ```
-template <typename   T>
-    class CAutoVectorPtrElementTraits : public CDefaultElementTraits<
-    ATL::CAutoVectorPtr<T>>
+template <typename T>  
+class CAutoVectorPtrElementTraits : 
+   public CDefaultElementTraits<ATL::CAutoVectorPtr<T>>
 ```    
   
 #### Parameters  
@@ -93,7 +93,7 @@ typedef CAutoVectorPtr<T>& INARGTYPE;
  The data type to use for retrieving elements from the collection class object.  
   
 ```
-typedef T *& OUTARGTYPE;
+typedef T*& OUTARGTYPE;
 ```  
   
 ## See Also  

@@ -39,7 +39,10 @@ These macros define service maps and entries.
 |[END_SERVICE_MAP](#end_service_map)|Marks the end of an ATL service map.|  
 |[SERVICE_ENTRY](#service_entry)|Indicates that the object supports a specific service ID.|  
 |[SERVICE_ENTRY_CHAIN](#service_entry_chain)|Instructs [IServiceProviderImpl::QueryService](#queryservice) to chain to the specified object.|  
-  
+
+## Requirements  
+ **Header:** atlcom.h  
+   
 ##  <a name="begin_service_map"></a>  BEGIN_SERVICE_MAP  
  Marks the beginning of the service map.  
   

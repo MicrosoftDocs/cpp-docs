@@ -104,7 +104,7 @@ void Attach(HANDLE h) throw();
 ```
 CHandle() throw();
 CHandle(CHandle& h) throw();
-explicit CHandle(HANDLE   h) throw();
+explicit CHandle(HANDLE h) throw();
 ```  
   
 ### Parameters  
@@ -174,7 +174,8 @@ CHandle& operator=(CHandle& h) throw();
 ##  <a name="operator_handle"></a>  CHandle::operator HANDLE  
  Returns the value of the stored handle.  
   
-```operator HANDLE() const throw();
+```  
+operator HANDLE() const throw();
 ```  
   
 ### Remarks  

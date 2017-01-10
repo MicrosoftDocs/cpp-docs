@@ -44,7 +44,8 @@ This class provides default element comparison functions.
 ## Syntax  
   
 ```
-template<typename T>  class CDefaultCompareTraits
+template<typename T>  
+class CDefaultCompareTraits
 ```  
   
 #### Parameters  
@@ -72,7 +73,7 @@ template<typename T>  class CDefaultCompareTraits
  Call this function to compare two elements for equality.  
   
 ```
-static bool CompareElements(const T& element1,  const T& element2);
+static bool CompareElements(const T& element1, const T& element2);
 ```  
   
 ### Parameters  
@@ -92,7 +93,7 @@ static bool CompareElements(const T& element1,  const T& element2);
  Call this function to determine the greater and lesser element.  
   
 ```
-static int CompareElementsOrdered(const T& element1,  const T& element2);
+static int CompareElementsOrdered(const T& element1, const T& element2);
 ```  
   
 ### Parameters  

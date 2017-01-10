@@ -45,7 +45,8 @@ This class forms the basis for several smart heap pointer classes.
 ## Syntax  
   
 ```
-template <class T,  class Allocator = CCRTAllocator> class CHeapPtrBase
+template <class T, class Allocator = CCRTAllocator>  
+class CHeapPtrBase
 ```  
   
 #### Parameters  
@@ -198,7 +199,8 @@ T* operator->() const throw();
 ##  <a name="operator_t_star"></a>  CHeapPtrBase::operator T*  
  The cast operator.  
   
-```operator T*() const throw();
+```  
+operator T*() const throw();
 ```  
   
 ### Remarks  

@@ -53,13 +53,13 @@ These functions provide support for creating dialog boxes, and for creating, hos
 |[AtlAxWinInit](#atlaxwininit)|Initializes the hosting code for AxWin objects.|  
 |[AtlAxWinTerm](#atlaxwinterm)|Uninitializes the hosting code for AxWin objects.|  
 |[AtlGetObjectSourceInterface](#atlgetobjectsourceinterface)|Returns information about the default source interface of an object.|  
-  
+
+## Requirements  
+ **Header:** atlhost.h  
+
 ##  <a name="atlaxdialogbox"></a>  AtlAxDialogBox  
  Creates a modal dialog box from a dialog template provided by the user.  
-  
-
- 
-  
+   
 ```
 ATLAPI_(int) AtlAxDialogBox(
     HINSTANCE hInstance,
@@ -102,9 +102,6 @@ ATLAPI_(int) AtlAxDialogBox(
 ##  <a name="atlaxcreatedialog"></a>  AtlAxCreateDialog  
  Creates a modeless dialog box from a dialog template provided by the user.  
   
-
- 
-  
 ```
 ATLAPI_(HWND) AtlAxCreateDialog(
     HINSTANCE hInstance,
@@ -142,8 +139,6 @@ ATLAPI_(HWND) AtlAxCreateDialog(
  Creates an ActiveX control, initializes it, and hosts it in the specified window.  
   
 
- 
-  
 ```
 ATLAPI AtlAxCreateControl(
     LPCOLESTR lpszName,
@@ -188,9 +183,6 @@ ATLAPI AtlAxCreateControl(
   
 ##  <a name="atlaxcreatecontrolex"></a>  AtlAxCreateControlEx  
  Creates an ActiveX control, initializes it, and hosts it in the specified window. An interface pointer and event sink for the new control can also be created.  
-  
-
- 
   
 ```
 ATLAPI AtlAxCreateControlEx(
@@ -248,10 +240,7 @@ ATLAPI AtlAxCreateControlEx(
   
 ##  <a name="atlaxcreatecontrollic"></a>  AtlAxCreateControlLic  
  Creates a licensed ActiveX control, initializes it, and hosts it in the specified window.  
-  
 
- 
-  
 ```
 ATLAPI AtlAxCreateControlLic(
     LPCOLESTR lpszName,
@@ -298,9 +287,6 @@ ATLAPI AtlAxCreateControlLic(
   
 ##  <a name="atlaxcreatecontrollicex"></a>  AtlAxCreateControlLicEx  
  Creates a licensed ActiveX control, initializes it, and hosts it in the specified window. An interface pointer and event sink for the new control can also be created.  
-  
-
- 
   
 ```
 ATLAPI AtlAxCreateControlLicEx(
@@ -364,9 +350,6 @@ ATLAPI AtlAxCreateControlLicEx(
 ##  <a name="atlaxattachcontrol"></a>  AtlAxAttachControl  
  Attaches a previously created control to the specified window.  
   
-
- 
-  
 ```
 ATLAPI AtlAxAttachControl(
     IUnknown* pControl,
@@ -396,13 +379,8 @@ ATLAPI AtlAxAttachControl(
 ##  <a name="atlaxgethost"></a>  AtlAxGetHost  
  Obtains a direct interface pointer to the container for a specified window (if any), given its handle.  
   
-
- 
-  
 ```
-ATLAPI AtlAxGetHost(
-    HWND h,
-    IUnknown** pp);
+ATLAPI AtlAxGetHost(HWND h, IUnknown** pp);
 ```  
   
 ### Parameters  
@@ -418,13 +396,8 @@ ATLAPI AtlAxGetHost(
 ##  <a name="atlaxgetcontrol"></a>  AtlAxGetControl  
  Obtains a direct interface pointer to the control contained inside a specified window given its handle.  
   
-
- 
-  
 ```
-ATLAPI AtlAxGetControl(
-    HWND h,
-    IUnknown** pp);
+ATLAPI AtlAxGetControl(HWND h, IUnknown** pp);
 ```  
   
 ### Parameters  
@@ -440,13 +413,8 @@ ATLAPI AtlAxGetControl(
 ##  <a name="atlsetchildsite"></a>  AtlSetChildSite  
  Call this function to set the site of the child object to the **IUnknown** of the parent object.  
   
-
- 
-  
 ```
-HRESULT AtlSetChildSite(
-    IUnknown* punkChild,
-    IUnknown* punkParent);
+HRESULT AtlSetChildSite(IUnknown* punkChild, IUnknown* punkParent);
 ```  
   
 ### Parameters  
@@ -462,9 +430,6 @@ HRESULT AtlSetChildSite(
 ##  <a name="atlaxwininit"></a>  AtlAxWinInit  
  This function initializes ATL's control hosting code by registering the **"AtlAxWin80"** and **"AtlAxWinLic80"** window classes plus a couple of custom window messages.  
   
-
- 
-  
 ```
 ATLAPI_(BOOL) AtlAxWinInit();
 ```  
@@ -477,9 +442,6 @@ ATLAPI_(BOOL) AtlAxWinInit();
 
 ##  <a name="atlaxwinterm"></a>  AtlAxWinTerm  
  This function uninitializes ATL's control hosting code by unregistering the **"AtlAxWin80"** and **"AtlAxWinLic80"** window classes.  
-  
-
- 
   
 ```
 inline BOOL AtlAxWinTerm();
@@ -495,9 +457,6 @@ inline BOOL AtlAxWinTerm();
   
 ##  <a name="atlgetobjectsourceinterface"></a>  AtlGetObjectSourceInterface  
  Call this function to retrieve information about the default source interface of an object.  
-  
-
- 
   
 ```
 ATLAPI AtlGetObjectSourceInterface(

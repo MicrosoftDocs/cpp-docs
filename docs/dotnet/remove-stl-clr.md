@@ -1,5 +1,5 @@
 ---
-title: "remove (STL-CLR) | Microsoft Docs"
+title: "remove (STL/CLR) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -45,7 +45,7 @@ template<class _FwdIt, class _Ty> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `remove`. For more information, see [remove](http://msdn.microsoft.com/Library/77e2585c-441e-448d-bd1d-c893d1356ed8).  
+ This function behaves the same as the C++ Standard Library function `remove`. For more information, see [remove](http://msdn.microsoft.com/Library/77e2585c-441e-448d-bd1d-c893d1356ed8).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

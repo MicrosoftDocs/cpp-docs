@@ -149,7 +149,8 @@ LONG Close() throw();
  Call this method to create the specified key, if it does not exist as a subkey of `hKeyParent`.  
   
 ```
-LONG Create(HKEY hKeyParent,
+LONG Create(  
+    HKEY hKeyParent,
     LPCTSTR lpszKeyName,
     LPTSTR lpszClass = REG_NONE,
     DWORD dwOptions = REG_OPTION_NON_VOLATILE,
@@ -264,7 +265,8 @@ HKEY Detach() throw();
  Call this method to enumerate the subkeys of the open registry key.  
   
 ```
-LONG EnumKey(DWORD iIndex,
+LONG EnumKey(  
+    DWORD iIndex,
     LPTSTR pszName,
     LPDWORD pnNameLength,
     FILETIME* pftLastWriteTime = NULL) throw();
@@ -306,7 +308,8 @@ LONG Flush() throw();
  Call this method to retrieve a copy of the security descriptor protecting the open registry key.  
   
 ```
-LONG GetKeySecurity(SECURITY_INFORMATION si,
+LONG GetKeySecurity(  
+    SECURITY_INFORMATION si,
     PSECURITY_DESCRIPTOR psd,
     LPDWORD pnBytes) throw();
 ```  
@@ -347,7 +350,8 @@ CAtlTransactionManager* m_pTM;
  This method notifies the caller about changes to the attributes or contents of the open registry key.  
   
 ```
-LONG NotifyChangeKeyValue(BOOL bWatchSubtree,
+LONG NotifyChangeKeyValue(  
+    BOOL bWatchSubtree,
     DWORD dwNotifyFilter,
     HANDLE hEvent,
     BOOL bAsync = TRUE) throw();
@@ -387,7 +391,8 @@ LONG NotifyChangeKeyValue(BOOL bWatchSubtree,
  Call this method to open the specified key and set [m_hKey](#m_hkey) to the handle of this key.  
   
 ```
-LONG Open(HKEY hKeyParent,
+LONG Open(  
+    HKEY hKeyParent,
     LPCTSTR lpszKeyName,
     REGSAM samDesired = KEY_READ | KEY_WRITE) throw();
 ```  
@@ -413,7 +418,8 @@ LONG Open(HKEY hKeyParent,
 ##  <a name="operator_hkey"></a>  CRegKey::operator HKEY  
  Converts a `CRegKey` object to an HKEY.  
   
-```operator HKEY() const throw();
+```  
+operator HKEY() const throw();
 ```  
   
 ##  <a name="operator_eq"></a>  CRegKey::operator =  
@@ -437,7 +443,8 @@ CRegKey& operator= (CRegKey& key) throw();
  Call this method to retrieve the binary data for a specified value name.  
   
 ```
-LONG QueryBinaryValue(LPCTSTR pszValueName,
+LONG QueryBinaryValue(  
+    LPCTSTR pszValueName,
     void* pValue,
     ULONG* pnBytes) throw();
 ```  
@@ -465,7 +472,8 @@ LONG QueryBinaryValue(LPCTSTR pszValueName,
  Call this method to retrieve the DWORD data for a specified value name.  
   
 ```
-LONG QueryDWORDValue(LPCTSTR pszValueName,
+LONG QueryDWORDValue(  
+    LPCTSTR pszValueName,
     DWORD& dwValue) throw();
 ```  
   
@@ -489,7 +497,8 @@ LONG QueryDWORDValue(LPCTSTR pszValueName,
  Call this method to retrieve the GUID data for a specified value name.  
   
 ```
-LONG QueryGUIDValue(LPCTSTR pszValueName,
+LONG QueryGUIDValue(  
+    LPCTSTR pszValueName,
     GUID& guidValue) throw();
 ```  
   
@@ -513,7 +522,8 @@ LONG QueryGUIDValue(LPCTSTR pszValueName,
  Call this method to retrieve the multistring data for a specified value name.  
   
 ```
-LONG QueryMultiStringValue(LPCTSTR pszValueName,
+LONG QueryMultiStringValue(  
+    LPCTSTR pszValueName,
     LPTSTR pszValue,
     ULONG* pnChars) throw();
 ```  
@@ -541,7 +551,8 @@ LONG QueryMultiStringValue(LPCTSTR pszValueName,
  Call this method to retrieve the QWORD data for a specified value name.  
   
 ```
-LONG QueryQWORDValue(LPCTSTR pszValueName,
+LONG QueryQWORDValue(  
+    LPCTSTR pszValueName,
     ULONGLONG& qwValue) throw();
 ```  
   
@@ -565,7 +576,8 @@ LONG QueryQWORDValue(LPCTSTR pszValueName,
  Call this method to retrieve the string data for a specified value name.  
   
 ```
-LONG QueryStringValue(LPCTSTR pszValueName,
+LONG QueryStringValue(  
+    LPCTSTR pszValueName,
     LPTSTR pszValue,
     ULONG* pnChars) throw();
 ```  
@@ -593,7 +605,8 @@ LONG QueryStringValue(LPCTSTR pszValueName,
  Call this method to retrieve the data for the specified value field of [m_hKey](#m_hkey). Earlier versions of this method are no longer supported and are marked as **ATL_DEPRECATED**.  
   
 ```
-LONG QueryValue(LPCTSTR pszValueName,
+LONG QueryValue(  
+    LPCTSTR pszValueName,
     DWORD* pdwType,
     void* pData,
     ULONG* pnBytes) throw();
@@ -601,7 +614,8 @@ ATL_DEPRECATED LONG QueryValue(
     DWORD& dwValue,
     LPCTSTR lpszValueName);
 
-    ATL_DEPRECATED LONG QueryValue(LPTSTR szValue,
+    ATL_DEPRECATED LONG QueryValue(  
+    LPTSTR szValue,
     LPCTSTR lpszValueName,
     DWORD* pdwCount);
 ```  
@@ -663,7 +677,8 @@ LONG RecurseDeleteKey(LPCTSTR lpszKey) throw();
  Call this method to set the binary value of the registry key.  
   
 ```
-LONG SetBinaryValue(LPCTSTR pszValueName,
+LONG SetBinaryValue(  
+    LPCTSTR pszValueName,
     const void* pValue,
     ULONG nBytes) throw();
 ```  
@@ -688,7 +703,7 @@ LONG SetBinaryValue(LPCTSTR pszValueName,
  Call this method to set the DWORD value of the registry key.  
   
 ```
-LONG SetDWORDValue(LPCTSTR pszValueName,  DWORD dwValue) throw();
+LONG SetDWORDValue(LPCTSTR pszValueName, DWORD dwValue) throw();
 ```  
   
 ### Parameters  
@@ -708,7 +723,7 @@ LONG SetDWORDValue(LPCTSTR pszValueName,  DWORD dwValue) throw();
  Call this method to set the GUID value of the registry key.  
   
 ```
-LONG SetGUIDValue(LPCTSTR pszValueName,  REFGUID guidValue) throw();
+LONG SetGUIDValue(LPCTSTR pszValueName, REFGUID guidValue) throw();
 ```  
   
 ### Parameters  
@@ -728,7 +743,8 @@ LONG SetGUIDValue(LPCTSTR pszValueName,  REFGUID guidValue) throw();
  Call this method to store data in a specified value field of a specified key.  
   
 ```
-LONG SetKeyValue(LPCTSTR lpszKeyName,
+LONG SetKeyValue(  
+    LPCTSTR lpszKeyName,
     LPCTSTR lpszValue,
     LPCTSTR lpszValueName = NULL) throw();
 ```  
@@ -753,7 +769,7 @@ LONG SetKeyValue(LPCTSTR lpszKeyName,
  Call this method to set the security of the registry key.  
   
 ```
-LONG SetKeySecurity(SECURITY_INFORMATION si,  PSECURITY_DESCRIPTOR psd) throw();
+LONG SetKeySecurity(SECURITY_INFORMATION si, PSECURITY_DESCRIPTOR psd) throw();
 ```  
   
 ### Parameters  
@@ -780,7 +796,7 @@ LONG SetKeySecurity(SECURITY_INFORMATION si,  PSECURITY_DESCRIPTOR psd) throw();
  Call this method to set the multistring value of the registry key.  
   
 ```
-LONG SetMultiStringValue(LPCTSTR pszValueName,  LPCTSTR pszValue) throw();
+LONG SetMultiStringValue(LPCTSTR pszValueName, LPCTSTR pszValue) throw();
 ```  
   
 ### Parameters  
@@ -800,7 +816,7 @@ LONG SetMultiStringValue(LPCTSTR pszValueName,  LPCTSTR pszValue) throw();
  Call this method to set the QWORD value of the registry key.  
   
 ```
-LONG SetQWORDValue(LPCTSTR pszValueName,  ULONGLONG qwValue) throw();
+LONG SetQWORDValue(LPCTSTR pszValueName, ULONGLONG qwValue) throw();
 ```  
   
 ### Parameters  
@@ -820,7 +836,8 @@ LONG SetQWORDValue(LPCTSTR pszValueName,  ULONGLONG qwValue) throw();
  Call this method to set the string value of the registry key.  
   
 ```
-LONG SetStringValue(LPCTSTR pszValueName,
+LONG SetStringValue(  
+    LPCTSTR pszValueName,
     LPCTSTR pszValue,
     DWORD dwType = REG_SZ) throw();
 ```  
@@ -845,19 +862,24 @@ LONG SetStringValue(LPCTSTR pszValueName,
  Call this method to store data in the specified value field of [m_hKey](#m_hkey). Earlier versions of this method are no longer supported and are marked as **ATL_DEPRECATED**.  
   
 ```
-LONG SetValue(LPCTSTR pszValueName,
+LONG SetValue(  
+    LPCTSTR pszValueName,
     DWORD dwType,
     const void* pValue,
     ULONG nBytes) throw();
-static LONG WINAPI SetValue(HKEY hKeyParent,
+    
+static LONG WINAPI SetValue(  
+    HKEY hKeyParent,
     LPCTSTR lpszKeyName,
     LPCTSTR lpszValue,
     LPCTSTR lpszValueName = NULL);
 
-    ATL_DEPRECATED LONG SetValue(DWORD dwValue,
+    ATL_DEPRECATED LONG SetValue(  
+    DWORD dwValue,
     LPCTSTR lpszValueName);
 
-    ATL_DEPRECATED LONG SetValue(LPCTSTR lpszValue,
+    ATL_DEPRECATED LONG SetValue(  
+    LPCTSTR lpszValue,
     LPCTSTR lpszValueName = NULL,
     bool bMulti = false,
     int nValueLen = -1);

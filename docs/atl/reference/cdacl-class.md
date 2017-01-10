@@ -94,11 +94,13 @@ class CDacl : public CAcl
  Adds an allowed ACE (access-control entry) to the `CDacl` object.  
   
 ```
-bool AddAllowedAce(const CSid& rSid,
+bool AddAllowedAce(  
+    const CSid& rSid,
     ACCESS_MASK AccessMask,
     BYTE AceFlags = 0) throw(...);
 
-    bool AddAllowedAce(const CSid& rSid,
+    bool AddAllowedAce(  
+    const CSid& rSid,
     ACCESS_MASK AccessMask,
     BYTE AceFlags,
     const GUID* pObjectType,
@@ -136,11 +138,13 @@ bool AddAllowedAce(const CSid& rSid,
  Adds a denied ACE (access-control entry) to the `CDacl` object.  
   
 ```
-bool AddDeniedAce(const CSid& rSid,
+bool AddDeniedAce(  
+    const CSid& rSid,
     ACCESS_MASK AccessMask,
     BYTE AceFlags = 0) throw(...);
 
-    bool AddDeniedAce(const CSid& rSid,
+    bool AddDeniedAce(  
+    const CSid& rSid,
     ACCESS_MASK AccessMask,
     BYTE AceFlags,
     const GUID* pObjectType,
@@ -178,9 +182,8 @@ bool AddDeniedAce(const CSid& rSid,
  The constructor.  
   
 ```
-CDacl (const ACL& rhs) throw(...);
-
-    CDacl () throw();
+CDacl (const ACL& rhs) throw(...);  
+CDacl () throw();
 ```  
   
 ### Parameters  
@@ -231,7 +234,7 @@ CDacl& operator= (const ACL& rhs) throw(...);
  Removes a specific ACE (access-control entry) from the `CDacl` object.  
   
 ```
-void RemoveAce(UINT   nIndex) throw();
+void RemoveAce(UINT nIndex) throw();
 ```  
   
 ### Parameters  

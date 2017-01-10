@@ -68,26 +68,26 @@ class task;
   
 |Name|Description|  
 |----------|-----------------|  
-|[task::task Constructor](#ctor)|Overloaded. Constructs a `task` object.|  
+|[task Constructor](#ctor)|Overloaded. Constructs a `task` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[task::get Method](#get)|Overloaded. Returns the result this task produced. If the task is not in a terminal state, a call to `get` will wait for the task to finish. This method does not return a value when called on a task with a `result_type` of `void`.|  
-|[task::is_apartment_aware Method](#is_apartment_aware)|Determines whether the task unwraps a Windows Runtime `IAsyncInfo` interface or is descended from such a task.|  
-|[task::is_done Method (Concurrency Runtime)](#is_done)|Determines if the task is completed.|  
-|[task::scheduler Method (Concurrency Runtime)](#scheduler)|Returns the scheduler for this task|  
-|[task::then Method](#then)|Overloaded. Adds a continuation task to this task.|  
-|[task::wait Method](#wait)|Waits for this task to reach a terminal state. It is possible for `wait` to execute the task inline, if all of the tasks dependencies are satisfied, and it has not already been picked up for execution by a background worker.|  
+|[get Method](#get)|Overloaded. Returns the result this task produced. If the task is not in a terminal state, a call to `get` will wait for the task to finish. This method does not return a value when called on a task with a `result_type` of `void`.|  
+|[is_apartment_aware Method](#is_apartment_aware)|Determines whether the task unwraps a Windows Runtime `IAsyncInfo` interface or is descended from such a task.|  
+|[is_done Method](#is_done)|Determines if the task is completed.|  
+|[scheduler Method](#scheduler)|Returns the scheduler for this task|  
+|[then Method](#then)|Overloaded. Adds a continuation task to this task.|  
+|[wait Method](#wait)|Waits for this task to reach a terminal state. It is possible for `wait` to execute the task inline, if all of the tasks dependencies are satisfied, and it has not already been picked up for execution by a background worker.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[task::operator!= Operator](#operator_neq)|Overloaded. Determines whether two `task` objects represent different internal tasks.|  
-|[task::operator= Operator](#operator_eq)|Overloaded. Replaces the contents of one `task` object with another.|  
-|[task::operator== Operator](#operator_eq_eq)|Overloaded. Determines whether two `task` objects represent the same internal task.|  
+|[operator!= Operator](#operator_neq)|Overloaded. Determines whether two `task` objects represent different internal tasks.|  
+|[operator= Operator](#operator_eq)|Overloaded. Replaces the contents of one `task` object with another.|  
+|[operator== Operator](#operator_eq_eq)|Overloaded. Determines whether two `task` objects represent the same internal task.|  
   
 ## Remarks  
  For more information, see [Task Parallelism](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
@@ -100,7 +100,8 @@ class task;
   
  **Namespace:** concurrency  
   
-##  <a name="get"></a>  task::get Method  
+##  <a name="get"></a> get 
+
  Returns the result this task produced. If the task is not in a terminal state, a call to `get` will wait for the task to finish. This method does not return a value when called on a task with a `result_type` of `void`.  
   
 ```
@@ -118,7 +119,8 @@ void get() const;
 > [!IMPORTANT]
 >  In a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app, do not call [concurrency::task::wait](#wait) or `get` ( `wait` calls `get`) in code that runs on the STA. Otherwise, the runtime throws [concurrency::invalid_operation](invalid-operation-class.md) because these methods block the current thread and can cause the app to become unresponsive. However, you can call the `get` method to receive the result of the antecedent task in a task-based continuation because the result is immediately available.  
   
-##  <a name="is_apartment_aware"></a>  task::is_apartment_aware Method  
+##  <a name="is_apartment_aware"></a> is_apartment_aware 
+
  Determines whether the task unwraps a Windows Runtime `IAsyncInfo` interface or is descended from such a task.  
   
 ```
@@ -141,7 +143,8 @@ bool is_done() const;
 ### Remarks  
  The function returns true if the task is completed or canceled (with or without user exception).  
   
-##  <a name="operator_neq"></a>  task::operator!= Operator  
+##  <a name="operator_neq"></a> operator!= 
+
  Determines whether two `task` objects represent different internal tasks.  
   
 ```
@@ -156,7 +159,8 @@ bool operator!= (const task<void>& _Rhs) const;
 ### Return Value  
  `true` if the objects refer to different underlying tasks, and `false` otherwise.  
   
-##  <a name="operator_eq"></a>  task::operator= Operator  
+##  <a name="operator_eq"></a> operator= 
+
  Replaces the contents of one `task` object with another.  
   
 ```
@@ -174,7 +178,8 @@ task& operator= (task&& _Other);
 ### Remarks  
  As `task` behaves like a smart pointer, after a copy assignment, this `task` objects represents the same actual task as `_Other` does.  
   
-##  <a name="operator_eq_eq"></a>  task::operator== Operator  
+##  <a name="operator_eq_eq"></a> operator== 
+
  Determines whether two `task` objects represent the same internal task.  
   
 ```
@@ -199,7 +204,8 @@ scheduler_ptr scheduler() const;
 ### Return Value  
  A pointer to the scheduler  
   
-##  <a name="ctor"></a>  task::task Constructor  
+##  <a name="ctor"></a> task 
+
  Constructs a `task` object.  
   
 ```
@@ -248,7 +254,8 @@ task(
   
  For more information, see [Task Parallelism](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
   
-##  <a name="then"></a>  task::then Method  
+##  <a name="then"></a> then 
+
  Adds a continuation task to this task.  
   
 ```
@@ -308,7 +315,8 @@ __declspec(
   
  For more information on how to use task continuations to compose asynchronous work, see [Task Parallelism](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
   
-##  <a name="wait"></a>  task::wait Method  
+##  <a name="wait"></a> wait 
+
  Waits for this task to reach a terminal state. It is possible for `wait` to execute the task inline, if all of the tasks dependencies are satisfied, and it has not already been picked up for execution by a background worker.  
   
 ```

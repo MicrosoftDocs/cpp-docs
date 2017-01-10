@@ -39,7 +39,10 @@ These macros define category maps.
 |[END_CATEGORY_MAP](#end_category_map)|Marks the end of the category map.|  
 |[IMPLEMENTED_CATEGORY](#implemented_category)|Indicates categories that are implemented by the COM object.|  
 |[REQUIRED_CATEGORY](#required_category)|Indicates categories that are required of the container by the COM object.|  
-  
+
+## Requirements  
+ **Header:** atlcom.h  
+
 ##  <a name="begin_category_map"></a>  BEGIN_CATEGORY_MAP  
  Marks the beginning of the category map.  
   

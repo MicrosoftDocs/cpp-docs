@@ -41,9 +41,9 @@ The following classes provide support for COM collections and enumerations:
   
 -   [CComEnumImpl](../atl/reference/ccomenumimpl-class.md) Provides the implementation for a COM enumerator interface where the items being enumerated are stored in an array.  
   
--   [CComEnumOnSTL](../atl/reference/ccomenumonstl-class.md) Defines a COM enumerator object based on an STL collection.  
+-   [CComEnumOnSTL](../atl/reference/ccomenumonstl-class.md) Defines a COM enumerator object based on a C++ Standard Library collection.  
   
--   [IEnumOnSTLImpl](../atl/reference/ienumonstlimpl-class.md) Provides the implementation for a COM enumerator interface where the items being enumerated are stored in an STL-compatible container.  
+-   [IEnumOnSTLImpl](../atl/reference/ienumonstlimpl-class.md) Provides the implementation for a COM enumerator interface where the items being enumerated are stored in a C++ Standard Library-compatible container.  
   
 -   [ICollectionOnSTLImpl](../atl/reference/icollectiononstlimpl-class.md) Provides the implementation for the **Count**, **Item**, and `_NewEnum` properties of a collection interface.  
   

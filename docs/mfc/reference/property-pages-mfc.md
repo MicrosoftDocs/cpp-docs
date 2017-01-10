@@ -94,6 +94,9 @@ void AFXAPI DDP_CBIndex(
 ### Remarks  
  This function should be called before the corresponding `DDX_CBIndex` function call.  
   
+### Requirements  
+  **Header** afxctl.h  
+  
 ##  <a name="ddp_cbstring"></a>  DDP_CBString  
  Call this function in your property page's `DoDataExchange` function to synchronize the value of a string property with the current selection in a combo box on the property page.  
   
@@ -120,6 +123,9 @@ void AFXAPI DDP_CBString(
   
 ### Remarks  
  This function should be called before the corresponding `DDX_CBString` function call.  
+  
+### Requirements  
+  **Header** afxctl.h  
   
 ##  <a name="ddp_cbstringexact"></a>  DDP_CBStringExact  
  Call this function in your property page's `DoDataExchange` function to synchronize the value of a string property that exactly matches the current selection in a combo box on the property page.  
@@ -148,6 +154,9 @@ void AFXAPI DDP_CBStringExact(
 ### Remarks  
  This function should be called before the corresponding `DDX_CBStringExact` function call.  
   
+### Requirements  
+  **Header** afxctl.h  
+  
 ##  <a name="ddp_check"></a>  DDP_Check  
  Call this function in your property page's `DoDataExchange` function to synchronize the value of the property with the associated property page check box control.  
   
@@ -174,6 +183,9 @@ void AFXAPI DDP_Check(
   
 ### Remarks  
  This function should be called before the corresponding `DDX_Check` function call.  
+  
+### Requirements  
+  **Header** afxctl.h  
   
 ##  <a name="ddp_lbindex"></a>  DDP_LBIndex  
  Call this function in your property page's `DoDataExchange` function to synchronize the value of an integer property with the index of the current selection in a list box on the property page.  
@@ -202,6 +214,9 @@ void AFXAPI DDP_LBIndex(
 ### Remarks  
  This function should be called before the corresponding `DDX_LBIndex` function call.  
   
+### Requirements  
+  **Header** afxctl.h  
+  
 ##  <a name="ddp_lbstring"></a>  DDP_LBString  
  Call this function in your property page's `DoDataExchange` function to synchronize the value of a string property with the current selection in a list box on the property page.  
   
@@ -228,6 +243,9 @@ void AFXAPI DDP_LBString(
   
 ### Remarks  
  This function should be called before the corresponding `DDX_LBString` function call.  
+  
+### Requirements  
+  **Header** afxctl.h  
   
 ##  <a name="ddp_lbstringexact"></a>  DDP_LBStringExact  
  Call this function in your property page's `DoDataExchange` function to synchronize the value of a string property that exactly matches the current selection in a list box on the property page.  
@@ -256,6 +274,9 @@ void AFXAPI DDP_LBStringExact(
 ### Remarks  
  This function should be called before the corresponding `DDX_LBStringExact` function call.  
   
+### Requirements  
+  **Header** afxctl.h  
+  
 ##  <a name="ddp_postprocessing"></a>  DDP_PostProcessing  
  Call this function in your property page's `DoDataExchange` function, to finish the transfer of property values from the property page to your control when property values are being saved.  
   
@@ -271,6 +292,9 @@ void AFXAPI DDP_PostProcessing(CDataExchange * pDX);
  This function should be called after all data exchange functions are completed. For example:  
   
  [!code-cpp[NVC_MFCAxCtl#15](../../mfc/reference/codesnippet/cpp/property-pages-mfc_1.cpp)]  
+  
+### Requirements  
+  **Header** afxctl.h  
   
 ##  <a name="ddp_radio"></a>  DDP_Radio  
  Call this function in your control's `DoPropExchange` function to synchronize the value of the property with the associated property page radio button control.  
@@ -298,6 +322,9 @@ void AFXAPI DDP_Radio(
   
 ### Remarks  
  This function should be called before the corresponding `DDX_Radio` function call.  
+  
+### Requirements  
+  **Header** afxctl.h  
   
 ##  <a name="ddp_text"></a>  DDP_Text  
  Call this function in your control's `DoDataExchange` function to synchronize the value of the property with the associated property page control.  
@@ -368,6 +395,9 @@ void AFXAPI DDP_Text(
 ### Remarks  
  This function should be called before the corresponding `DDX_Text` function call.  
   
+### Requirements  
+  **Header** afxctl.h  
+  
 ##  <a name="begin_proppageids"></a>  BEGIN_PROPPAGEIDS  
  Begins the definition of your control's list of property page IDs.  
   
@@ -387,6 +417,9 @@ BEGIN_PROPPAGEIDS(class_name,  count)
   
  For more information on property pages, see the article [ActiveX Controls: Property Pages](../../mfc/mfc-activex-controls-property-pages.md).  
   
+### Requirements  
+  **Header** afxctl.h  
+  
 ##  <a name="end_proppageids"></a>  END_PROPPAGEIDS  
  Ends the definition of your property page ID list.  
   
@@ -397,6 +430,9 @@ END_PROPPAGEIDS(class_name)
 ### Parameters  
  *class_name*  
  The name of the control class that owns the property page.  
+  
+### Requirements  
+  **Header** afxctl.h  
   
 ##  <a name="proppageid"></a>  PROPPAGEID  
  Adds a property page for use by your OLE control.  
@@ -411,6 +447,9 @@ PROPPAGEID(clsid)
   
 ### Remarks  
  All `PROPPAGEID` macros must be placed between the `BEGIN_PROPPAGEIDS` and `END_PROPPAGEIDS` macros in your control's implementation file.  
-  
+
+### Requirements  
+  **Header** afxctl.h  
+    
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

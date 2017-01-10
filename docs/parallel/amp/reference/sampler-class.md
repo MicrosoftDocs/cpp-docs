@@ -45,29 +45,29 @@ class sampler;
   
 |Name|Description|  
 |----------|-----------------|  
-|[sampler::sampler Constructor](#ctor)|Overloaded. Constructs a sampler instance.|  
+|[sampler Constructor](#ctor)|Overloaded. Constructs a sampler instance.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[sampler::get_address_mode Method](#get_address_mode)|Returns the `address_mode` that’s associated with the sampler object.|  
-|[sampler::get_border_color Method](#get_border_color)|Returns the border color that’s associated with the sampler object.|  
-|[sampler::get_filter_mode Method](#get_filter_mode)|Returns the `filter_mode` that’s associated with the sampler object.|  
+|[get_address_mode Method](#get_address_mode)|Returns the `address_mode` that’s associated with the sampler object.|  
+|[get_border_color Method](#get_border_color)|Returns the border color that’s associated with the sampler object.|  
+|[get_filter_mode Method](#get_filter_mode)|Returns the `filter_mode` that’s associated with the sampler object.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[sampler::operator= Operator](#operator_eq)|Overloaded. Assignment operator.|  
+|[operator= Operator](#operator_eq)|Overloaded. Assignment operator.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[sampler::address_mode Data Member](#address_mode)|Gets the address mode of the `sampler` object.|  
-|[sampler::border_color Data Member](#border_color)|Gets the border color of the `sampler` object.|  
-|[sampler::filter_mode Data Member](#filter_mode)|Gets the filter mode of the `sampler` object.|  
+|[address_mode Data Member](#address_mode)|Gets the address mode of the `sampler` object.|  
+|[border_color Data Member](#border_color)|Gets the border color of the `sampler` object.|  
+|[filter_mode Data Member](#filter_mode)|Gets the filter mode of the `sampler` object.|  
   
 ## Inheritance Hierarchy  
  `sampler`  
@@ -77,7 +77,8 @@ class sampler;
   
  **Namespace:** concurrency::graphics  
   
-##  <a name="ctor"></a>  sampler::sampler Constructor  
+##  <a name="ctor"></a> sampler 
+
  Constructs an instance of the [sampler Class](sampler-class.md).  
   
 ```  
@@ -133,28 +134,32 @@ sampler(// [6] move constructor
  [6] Move Constructor  
  The `sampler` object to move into the new `sampler` instance.  
   
-##  <a name="address_mode"></a>  sampler::address_mode Data Member  
+##  <a name="address_mode"></a> address_mode 
+
  Gets the address mode of the `sampler` object.  
   
 ```  
 __declspec(property(get= get_address_mode)) Concurrency::graphics::address_mode address_mode;  
 ```  
   
-##  <a name="border_color"></a>  sampler::border_color Data Member  
+##  <a name="border_color"></a> border_color 
+
  Gets the border color of the `sampler` object.  
   
 ```  
 __declspec(property(get= get_border_color)) Concurrency::graphics::float_4 border_color;  
 ```  
   
-##  <a name="filter_mode"></a>  sampler::filter_mode Data Member  
+##  <a name="filter_mode"></a> filter_mode 
+
  Gets the filter mode of the `sampler` object.  
   
 ```  
 __declspec(property(get= get_filter_mode)) Concurrency::graphics::filter_mode filter_mode;  
 ```  
   
-##  <a name="get_address_mode"></a>  sampler::get_address_mode Method  
+##  <a name="get_address_mode"></a> get_address_mode 
+
  Returns the filter mode that’s configured for this `sampler`.  
   
 ```  
@@ -164,7 +169,8 @@ Concurrency::graphics::address_mode get_address_mode() const __GPU;
 ### Return Value  
  The address mode that’s configured for the sampler.  
   
-##  <a name="get_border_color"></a>  sampler::get_border_color Method  
+##  <a name="get_border_color"></a> get_border_color 
+
  Returns the border color that’s configured for this `sampler`.  
   
 ```  
@@ -174,7 +180,8 @@ Concurrency::graphics::float_4 get_border_color() const restrict(amp, cpu);
 ### Return Value  
  A float_4 that contains the border color.  
   
-##  <a name="get_filter_mode"></a>  sampler::get_filter_mode Method  
+##  <a name="get_filter_mode"></a> get_filter_mode 
+
  Returns the filter mode that’s configured for this `sampler`.  
   
 ```  
@@ -184,7 +191,8 @@ Concurrency::graphics::filter_mode get_filter_mode() const restrict(amp, cpu);
 ### Return Value  
  The filter mode that’s configured for the sampler.  
   
-##  <a name="operator_eq"></a>  sampler::operator= Operator  
+##  <a name="operator_eq"></a> operator= 
+
  Assigns the value of another sampler object to an existing sampler.  
   
 ```  

@@ -1,5 +1,5 @@
 ---
-title: "Implementing an STL-Based Collection | Microsoft Docs"
+title: "Implementing a C++ Standard Library-Based Collection | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -32,8 +32,8 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Implementing an STL-Based Collection
-ATL provides the `ICollectionOnSTLImpl` interface to enable you to quickly implement Standard Template Library (STL)-based collection interfaces on your objects. To understand how this class works, you will work through a simple example (below) that uses this class to implement a read-only collection aimed at Automation clients.  
+# Implementing a C++ Standard Library-Based Collection
+ATL provides the `ICollectionOnSTLImpl` interface to enable you to quickly implement C++ Standard Library-based collection interfaces on your objects. To understand how this class works, you will work through a simple example (below) that uses this class to implement a read-only collection aimed at Automation clients.  
   
  The sample code is from the [ATLCollections sample](../visual-cpp-samples.md).  
   
@@ -82,7 +82,7 @@ ATL provides the `ICollectionOnSTLImpl` interface to enable you to quickly imple
   
  [!code-cpp[NVC_ATL_COM#25](../atl/codesnippet/cpp/implementing-an-stl-based-collection_2.h)]  
   
- In this case, you will store the data as a **std::vector** of **std::string**s. **std::vector** is an STL container class that behaves like a managed array. **std::string** is the Standard C++ Library's string class. These classes make it easy to work with a collection of strings.  
+ In this case, you will store the data as a **std::vector** of **std::string**s. **std::vector** is a C++ Standard Library container class that behaves like a managed array. **std::string** is the C++ Standard Library's string class. These classes make it easy to work with a collection of strings.  
   
  Since Visual Basic support is vital to the success of this interface, the enumerator returned by the `_NewEnum` property must support the **IEnumVARIANT** interface. This is the only enumerator interface understood by Visual Basic.  
   

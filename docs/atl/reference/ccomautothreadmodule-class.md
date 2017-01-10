@@ -44,9 +44,8 @@ As of ATL 7.0, `CComAutoThreadModule` is obsolete: see [ATL Module Classes](../.
 ## Syntax  
   
 ```
-template <class   ThreadAllocator = CComSimpleThreadAllocator>
-    class CComAutoThreadModule :
-    public CComModule
+template <class ThreadAllocator = CComSimpleThreadAllocator>  
+class CComAutoThreadModule : public CComModule
 ```  
   
 #### Parameters  
@@ -200,8 +199,7 @@ LONG Lock();
  As of ATL 7.0, `CComAutoThreadModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
   
 ```
-ThreadAllocator
-    m_Allocator;
+ThreadAllocator  m_Allocator;
 ```     
   
 ### Remarks  

@@ -47,7 +47,8 @@ This class implements **IUnknown** and provides a default implementation of the 
 ## Syntax  
   
 ```
-template<class T>  class IRunnableObjectImpl
+template<class T>  
+class IRunnableObjectImpl
 ```  
   
 #### Parameters  
@@ -109,7 +110,7 @@ virtual BOOL IsRunning();
  Locks the control into the running state.  
   
 ```
-HRESULT LockRunning(BOOL fLock,  BOOL fLastUnlockCloses);
+HRESULT LockRunning(BOOL fLock, BOOL fLastUnlockCloses);
 ```  
   
 ### Return Value  

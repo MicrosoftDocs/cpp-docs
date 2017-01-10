@@ -42,9 +42,8 @@ This class provides a pool of worker threads that process a queue of work items.
 ## Syntax  
   
 ```
-template <class Worker, class ThreadTraits = DefaultThreadTraits>
-    class CThreadPool :
-    public IThreadPoolConfig
+template <class Worker, class ThreadTraits = DefaultThreadTraits>  
+class CThreadPool : public IThreadPoolConfig
 ```  
   
 #### Parameters  
@@ -220,9 +219,7 @@ HRESULT Initialize(
  Implementation of **IUnknown::QueryInterface**.  
   
 ```
-HRESULT STDMETHODCALLTYPE QueryInterface(
-    REFIID riid,
-    void** ppv) throw();
+HRESULT STDMETHODCALLTYPE QueryInterface(REFIID riid, void** ppv) throw();
 ```  
   
 ### Remarks  
@@ -262,7 +259,7 @@ ULONG STDMETHODCALLTYPE Release() throw();
  Call this method to set the number of threads in the pool.  
   
 ```
-HRESULT STDMETHODCALLTYPE SetSize(int   nNumThreads) throw();
+HRESULT STDMETHODCALLTYPE SetSizeint nNumThreads) throw();
 ```  
   
 ### Parameters  

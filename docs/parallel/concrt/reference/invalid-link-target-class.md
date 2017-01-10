@@ -49,7 +49,7 @@ class invalid_link_target : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[invalid_link_target::invalid_link_target Constructor](#ctor)|Overloaded. Constructs an `invalid_link_target` object.|  
+|[invalid_link_target Constructor](#ctor)|Overloaded. Constructs an `invalid_link_target` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  
@@ -61,7 +61,8 @@ class invalid_link_target : public std::exception;
   
  **Namespace:** concurrency  
   
-##  <a name="ctor"></a>  invalid_link_target::invalid_link_target Constructor  
+##  <a name="ctor"></a> invalid_link_target 
+
  Constructs an `invalid_link_target` object.  
   
 ```
