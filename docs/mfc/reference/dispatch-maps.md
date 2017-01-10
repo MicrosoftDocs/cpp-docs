@@ -70,7 +70,10 @@ DECLARE_DISPATCH_MAP()
   
 ### Example  
  [!code-cpp[NVC_MFCAutomation#10](../../mfc/codesnippet/cpp/dispatch-maps_1.h)]  
-  
+
+### Requirements  
+ **Header:** afxwin.h  
+
 ##  <a name="begin_dispatch_map"></a>  BEGIN_DISPATCH_MAP  
  Declares the definition of your dispatch map.  
   
@@ -87,7 +90,10 @@ BEGIN_DISPATCH_MAP(theClass, baseClass)
   
 ### Remarks  
  In the implementation (.cpp) file that defines the member functions for your class, start the dispatch map with the `BEGIN_DISPATCH_MAP` macro, add macro entries for each of your dispatch functions and properties, and complete the dispatch map with the `END_DISPATCH_MAP` macro.  
-  
+
+### Requirements  
+ **Header:** afxdisp.h  
+
 ##  <a name="end_dispatch_map"></a>  END_DISPATCH_MAP  
  Ends the definition of your dispatch map.  
   
@@ -97,12 +103,20 @@ END_DISPATCH_MAP()
   
 ### Remarks  
  It must be used in conjunction with `BEGIN_DISPATCH_MAP`.  
-  
+
+### Requirements  
+ **Header:** afxdisp.h  
+
 ##  <a name="disp_function"></a>  DISP_FUNCTION  
  Defines an OLE automation function in a dispatch map.  
   
 ```   
-DISP_FUNCTION(theClass, pszName, pfnMember, vtRetVal, vtsParams)   
+DISP_FUNCTION(
+  theClass, 
+  pszName, 
+  pfnMember, 
+  vtRetVal, 
+  vtsParams)   
 ```  
   
 ### Parameters  
@@ -175,12 +189,19 @@ DISP_FUNCTION(theClass, pszName, pfnMember, vtRetVal, vtsParams)
 |**VTS_PVARIANT**|**VARIANT\***|  
 |**VTS_PUNKNOWN**|**LPUNKNOWN\***|  
 |**VTS_NONE**|No parameters|  
-  
+
+### Requirements  
+ **Header:** afxdisp.h 
+
 ##  <a name="disp_property"></a>  DISP_PROPERTY  
  Defines an OLE automation property in a dispatch map.  
   
 ```   
-DISP_PROPERTY(theClass, pszName, memberName, vtPropType)   
+DISP_PROPERTY(
+  theClass, 
+  pszName, 
+  memberName, 
+  vtPropType)   
 ```  
   
 ### Parameters  
@@ -215,12 +236,20 @@ DISP_PROPERTY(theClass, pszName, memberName, vtPropType)
 |**VT_UNKNOWN**|`LPUNKNOWN`|  
   
  When an external client changes the property, the value of the member variable specified by `memberName` changes; there is no notification of the change.  
-  
+
+### Requirements  
+ **Header:** afxdisp.h 
+
 ##  <a name="disp_property_ex"></a>  DISP_PROPERTY_EX  
  Defines an OLE automation property and name the functions used to get and set the property's value in a dispatch map.  
   
 ```   
-DISP_PROPERTY_EX(theClass, pszName, memberGet, memberSet, vtPropType)   
+DISP_PROPERTY_EX(
+  theClass, 
+  pszName, 
+  memberGet, 
+  memberSet, 
+  vtPropType)   
 ```  
   
 ### Parameters  
@@ -243,12 +272,20 @@ DISP_PROPERTY_EX(theClass, pszName, memberGet, memberSet, vtPropType)
  The `memberGet` and `memberSet` functions have signatures determined by the `vtPropType` argument. The `memberGet` function takes no arguments and returns a value of the type specified by `vtPropType`. The `memberSet` function takes an argument of the type specified by `vtPropType` and returns nothing.  
   
  The `vtPropType` argument is of type **VARTYPE**. Possible values for this argument are taken from the `VARENUM` enumeration. For a list of these values, see the Remarks for the `vtRetVal` parameter in [DISP_FUNCTION](#disp_function). Note that `VT_EMPTY`, listed in the `DISP_FUNCTION` remarks, is not permitted as a property data type.  
-  
+
+### Requirements  
+ **Header:** afxdisp.h 
+
 ##  <a name="disp_property_notify"></a>  DISP_PROPERTY_NOTIFY  
  Defines an OLE automation property with notification in a dispatch map.  
   
 ```   
-DISP_PROPERTY_NOTIFY(theClass, szExternalName, memberName, pfnAfterSet, vtPropType)   
+DISP_PROPERTY_NOTIFY(
+  theClass, 
+  szExternalName, 
+  memberName, 
+  pfnAfterSet, 
+  vtPropType)   
 ```  
   
 ### Parameters  
@@ -286,12 +323,21 @@ DISP_PROPERTY_NOTIFY(theClass, szExternalName, memberName, pfnAfterSet, vtPropTy
 |`VT_BOOL`|**BOOL**|  
 |**VT_VARIANT**|**VARIANT**|  
 |**VT_UNKNOWN**|`LPUNKNOWN`|  
-  
+
+### Requirements  
+ **Header:** afxdisp.h 
+
 ##  <a name="disp_property_param"></a>  DISP_PROPERTY_PARAM  
  Defines a property accessed with separate **Get** and `Set` member functions.  
   
 ```   
-DISP_PROPERTY_PARAM(theClass, pszExternalName, pfnGet, pfnSet, vtPropType, vtsParams)   
+DISP_PROPERTY_PARAM(
+  theClass, 
+  pszExternalName, 
+  pfnGet, 
+  pfnSet, 
+  vtPropType,
+  vtsParams)   
 ```  
   
 ### Parameters  
@@ -332,7 +378,10 @@ DISP_PROPERTY_PARAM(theClass, pszExternalName, pfnGet, pfnSet, vtPropType, vtsPa
  These correspond to the following `DISP_PROPERTY_PARAM` macro in the control dispatch map:  
   
  [!code-cpp[NVC_MFCActiveXControl#12](../../mfc/codesnippet/cpp/dispatch-maps_6.cpp)]  
-  
+
+### Requirements  
+ **Header:** afxdisp.h 
+
 ##  <a name="disp_defvalue"></a>  DISP_DEFVALUE  
  Makes an existing property the default value of an object.  
   
@@ -351,6 +400,9 @@ DISP_DEFVALUE(theClass, pszName)
  Using a default value can make programming your automation object simpler for Visual Basic applications.  
   
  The "default value" of your object is the property that is retrieved or set when a reference to an object does not specify a property or member function.  
-  
+
+### Requirements  
+ **Header:** afxdisp.h 
+
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

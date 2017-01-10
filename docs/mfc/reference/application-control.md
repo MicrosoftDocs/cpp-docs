@@ -65,7 +65,10 @@ BOOL AFXAPI AfxOleCanExitApp();
   
 ### Example  
  [!code-cpp[NVC_MFCAutomation#2](../../mfc/codesnippet/cpp/application-control_1.cpp)]  
-  
+
+## Requirements  
+ **Header**: afxdisp.h 
+
 ##  <a name="afxolegetmessagefilter"></a>  AfxOleGetMessageFilter  
  Retrieves the application's current message filter.  
   
@@ -83,7 +86,10 @@ COleMessageFilter* AFXAPI  AfxOleGetMessageFilter();
  [!code-cpp[NVC_MFCAutomation#3](../../mfc/codesnippet/cpp/application-control_2.cpp)]  
   
  [!code-cpp[NVC_MFCAutomation#4](../../mfc/codesnippet/cpp/application-control_3.cpp)]  
-  
+
+### Requirements  
+ **Header**: afxwin.h 
+
 ##  <a name="afxolegetuserctrl"></a>  AfxOleGetUserCtrl  
  Retrieves the current user-control flag.  
   
@@ -96,7 +102,10 @@ BOOL  AFXAPI AfxOleGetUserCtrl();
   
 ### Remarks  
  The user is in control of the application when the user has explicitly opened or created a new document. The user is also in control if the application was not launched by the OLE system DLLs — in other words, if the user launched the application with the system shell.  
-  
+
+### Requirements  
+ **Header**: afxdisp.h
+
 ##  <a name="afxolesetuserctrl"></a>  AfxOleSetUserCtrl  
  Sets or clears the user-control flag, which is explained in the reference for `AfxOleGetUserCtrl`.  
   
@@ -112,7 +121,10 @@ void  AFXAPI AfxOleSetUserCtrl(BOOL bUserCtrl);
  The framework calls this function when the user creates or loads a document, but not when a document is loaded or created through an indirect action such as loading an embedded object from a container application.  
   
  Call this function if other actions in your application should put the user in control of the application.  
-  
+
+### Requirements  
+ **Header**: afxdisp.h
+
 ##  <a name="afxolelockapp"></a>  AfxOleLockApp  
  Increments the framework's global count of the number of active objects in the application.  
   
@@ -129,7 +141,10 @@ void  AFXAPI  AfxOleLockApp();
   
 ### Example  
  [!code-cpp[NVC_MFCAutomation#5](../../mfc/codesnippet/cpp/application-control_4.cpp)]  
-  
+
+### Requirements  
+ **Header**: afxdisp.h
+
 ##  <a name="afxoleunlockapp"></a>  AfxOleUnlockApp  
  Decrements the framework's count of active objects in the application.  
   
@@ -144,7 +159,10 @@ void AFXAPI AfxOleUnlockApp();
   
 ### Example  
  See the example for [AfxOleLockApp](#afxolelockapp).  
-  
+
+### Requirements  
+ **Header**: afxdisp.h  
+
 ##  <a name="afxoleregisterserverclass"></a>  AfxOleRegisterServerClass  
  This function allows you to register your server in the OLE system registry.  
   
@@ -206,7 +224,10 @@ BOOL AFXAPI AfxOleRegisterServerClass(
 |%3|Path to executable file|  
 |%4|Short type name|  
 |%5|Long type name|  
-  
+
+### Requirements  
+ **Header**: afxdisp.h
+
 ##  <a name="afxoleseteditmenu"></a>  AfxOleSetEditMenu  
  Implements the user interface for the *typename* Object command.  
   
@@ -245,6 +266,9 @@ void  AFXAPI  AfxOleSetEditMenu(
  You must have the following statement in your client's application resource script (.RC) file:  
   
  **#include \<afxolecl.rc>**  
-  
+
+### Requirements  
+ **Header**: afxole.h 
+
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

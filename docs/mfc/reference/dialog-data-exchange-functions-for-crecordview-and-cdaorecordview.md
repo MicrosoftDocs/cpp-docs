@@ -64,30 +64,17 @@ This topic lists the DDX_Field functions used to exchange data between a [CRecor
  The `DDX_FieldCBIndex` function synchronizes the index of the selected item in the list box control of a combo box control in a record view and an `int` field data member of a recordset associated with the record view.  
   
 ```  
- 
-void  
-AFXAPI  
-DDX_FieldCBIndex(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    int& 
-index  ,  
+void AFXAPI DDX_FieldCBIndex(
+    CDataExchange* pDX,    
+    int nIDC,   
+    int& index,  
     CRecordset* pRecordset);
 
-void  
-AFXAPI  
-DDX_FieldCBIndex(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    int& 
-index  ,  
-    CDaoRecordset* pRecordset);
-
- 
+void AFXAPI DDX_FieldCBIndex(
+    CDataExchange* pDX,    
+    int nIDC,   
+    int& index,  
+    CDaoRecordset* pRecordset);  
 ```  
   
 ### Parameters  
@@ -112,33 +99,25 @@ index  ,
   
 ### Example  
  See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. The example would be similar for `DDX_FieldCBIndex`.  
-  
+
+### Requirements  
+ **Header:** afxdao.h  
+
 ##  <a name="ddx_fieldcbstring"></a>  DDX_FieldCBString  
  The `DDX_FieldCBString` function manages the transfer of [CString](../../atl-mfc-shared/reference/cstringt-class.md) data between the edit control of a combo box control in a record view and a `CString` field data member of a recordset associated with the record view.  
   
 ```  
- 
-void  
-AFXAPI  
-DDX_FieldCBString(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    CString& 
-value  ,  
+void AFXAPI DDX_FieldCBString(
+    CDataExchange* pDX,    
+    int nIDC,   
+    CString& value,   
     CRecordset* pRecordset);
 
 void AFXAPI DDX_FieldCBString(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    CString& 
-value  ,  
-    CDaoRecordset* pRecordset);
-
- 
+    CDataExchange* pDX,    
+    int nIDC,   
+    CString& value,   
+    CDaoRecordset* pRecordset);  
 ```  
   
 ### Parameters  
@@ -164,34 +143,24 @@ value  ,
 ### Example  
  See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. The example includes a call to `DDX_FieldCBString`.  
   
-##  <a name="ddx_fieldcbstringexact"></a>  DDX_FieldCBStringExact  
+### Requirements  
+  **Header** afxdao.h  
+  
+## <a name="ddx_fieldcbstringexact"></a>  DDX_FieldCBStringExact  
  The `DDX_FieldCBStringExact` function manages the transfer of [CString](../../atl-mfc-shared/reference/cstringt-class.md) data between the edit control of a combo box control in a record view and a `CString` field data member of a recordset associated with the record view.  
   
 ```  
- 
-void  
-AFXAPI  
-DDX_FieldCBStringExact(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    CString& 
-value  ,  
+void AFXAPI DDX_FieldCBStringExact(
+    CDataExchange* pDX,    
+    int nIDC,   
+    CString& value,   
     CRecordset* pRecordset);
 
-void  
-AFXAPI  
-DDX_FieldCBStringExact(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    CString& 
-value  ,  
-    CDaoRecordset* pRecordset);
-
- 
+void AFXAPI DDX_FieldCBStringExact(
+    CDataExchange* pDX,    
+    int nIDC,   
+    CString& value,   
+    CDaoRecordset* pRecordset);  
 ```  
   
 ### Parameters  
@@ -217,31 +186,24 @@ value  ,
 ### Example  
  See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. Calls to `DDX_FieldCBStringExact` would be similar.  
   
+### Requirements  
+  **Header** afxdao.h  
+  
 ##  <a name="ddx_fieldcheck"></a>  DDX_FieldCheck  
  The `DDX_FieldCheck` function manages the transfer of `int` data between a check box control in a dialog box, form view, or control view object and an `int` data member of the dialog box, form view, or control view object.  
   
 ```  
- 
 void AFXAPI DDX_FieldCheck(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    int& 
-value  ,  
+    CDataExchange* pDX,    
+    int nIDC,   
+    int& value,   
     CRecordset* pRecordset);
 
 void AFXAPI DDX_FieldCheck(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    int& 
-value  ,  
-    CDaoRecordset* 
-pRecordset);
-
- 
+    CDataExchange* pDX,    
+    int nIDC,   
+    int& value,   
+    CDaoRecordset* pRecordset);  
 ```  
   
 ### Parameters  
@@ -262,34 +224,24 @@ pRecordset);
   
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdao.h  
+  
 ##  <a name="ddx_fieldlbindex"></a>  DDX_FieldLBIndex  
  The `DDX_FieldLBIndex` function synchronizes the index of the selected item in a list box control in a record view and an `int` field data member of a recordset associated with the record view.  
   
 ```  
- 
-void  
-AFXAPI  
-DDX_FieldLBIndex(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    int& 
-index  ,  
+void AFXAPI DDX_FieldLBIndex(
+    CDataExchange* pDX,    
+    int nIDC,   
+    int& index,  
     CRecordset* pRecordset);
 
-void  
-AFXAPI  
-DDX_FieldLBIndex(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    int& 
-index  ,  
-    CDaoRecordset* pRecordset);
-
- 
+void AFXAPI DDX_FieldLBIndex(
+    CDataExchange* pDX,    
+    int nIDC,   
+    int& index,  
+    CDaoRecordset* pRecordset);  
 ```  
   
 ### Parameters  
@@ -315,34 +267,24 @@ index  ,
 ### Example  
  See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example.  
   
+### Requirements  
+  **Header** afxdao.h  
+  
 ##  <a name="ddx_fieldlbstring"></a>  DDX_FieldLBString  
  The `DDX_FieldLBString` copies the current selection of a list box control in a record view to a [CString](../../atl-mfc-shared/reference/cstringt-class.md) field data member of a recordset associated with the record view.  
   
 ```  
- 
-void  
-AFXAPI  
-DDX_FieldLBString(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    CString& 
-value  ,  
+void AFXAPI DDX_FieldLBString(
+    CDataExchange* pDX,    
+    int nIDC,   
+    CString& value,   
     CRecordset* pRecordset);
 
-void  
-AFXAPI  
-DDX_FieldLBString(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    CString& 
-value  ,  
-    CDaoRecordset* pRecordset);
-
- 
+void AFXAPI DDX_FieldLBString(
+    CDataExchange* pDX,    
+    int nIDC,   
+    CString& value,   
+    CDaoRecordset* pRecordset);  
 ```  
   
 ### Parameters  
@@ -368,34 +310,24 @@ value  ,
 ### Example  
  See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. Calls to `DDX_FieldLBString` would be similar.  
   
+### Requirements  
+  **Header** afxdao.h  
+  
 ##  <a name="ddx_fieldlbstringexact"></a>  DDX_FieldLBStringExact  
  The `DDX_FieldLBStringExact` function copies the current selection of a list box control in a record view to a [CString](../../atl-mfc-shared/reference/cstringt-class.md) field data member of a recordset associated with the record view.  
   
 ```  
- 
-void  
-AFXAPI  
-DDX_FieldLBStringExact(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    CString& 
-value  ,  
+void AFXAPI DDX_FieldLBStringExact(
+    CDataExchange* pDX,    
+    int nIDC,   
+    CString& value,   
     CRecordset* pRecordset);
 
-void  
-AFXAPI  
-DDX_FieldLBStringExact(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    CString& 
-value  ,  
-    CDaoRecordset* pRecordset);
-
- 
+void AFXAPI DDX_FieldLBStringExact(
+    CDataExchange* pDX,    
+    int nIDC,   
+    CString& value,   
+    CDaoRecordset* pRecordset);  
 ```  
   
 ### Parameters  
@@ -421,34 +353,24 @@ value  ,
 ### Example  
  See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. Calls to `DDX_FieldLBStringExact` would be similar.  
   
+### Requirements  
+  **Header** afxdao.h  
+  
 ##  <a name="ddx_fieldradio"></a>  DDX_FieldRadio  
  The `DDX_FieldRadio` function associates a zero-based `int` member variable of a record view's recordset with the currently selected radio button in a group of radio buttons in the record view.  
   
 ```  
- 
-void  
-AFXAPI  
-DDX_FieldRadio(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    int& 
-value  ,  
+void AFXAPI DDX_FieldRadio(
+    CDataExchange* pDX,    
+    int nIDC,   
+    int& value,   
     CRecordset* pRecordset);
 
-void  
-AFXAPI  
-DDX_FieldRadio(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    int& 
-value  ,  
-    CDaoRecordset* pRecordset);
-
- 
+void AFXAPI DDX_FieldRadio(
+    CDataExchange* pDX,    
+    int nIDC,   
+    int& value,   
+    CDaoRecordset* pRecordset);  
 ```  
   
 ### Parameters  
@@ -474,34 +396,24 @@ value  ,
 ### Example  
  See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. Calls to `DDX_FieldRadio` would be similar.  
   
+### Requirements  
+  **Header** afxdao.h  
+  
 ##  <a name="ddx_fieldscroll"></a>  DDX_FieldScroll  
  The `DDX_FieldScroll` function synchronizes the scroll position of a scroll bar control in a record view and an `int` field data member of a recordset associated with the record view (or with whatever integer variable you choose to map it to).  
   
 ```  
- 
-void  
-AFXAPI  
-DDX_FieldScroll(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    int& 
-value  ,  
+void AFXAPI DDX_FieldScroll(
+    CDataExchange* pDX,    
+    int nIDC,   
+    int& value,   
     CRecordset* pRecordset);
 
-void  
-AFXAPI  
-DDX_FieldScroll(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    int& 
-value  ,  
-    CDaoRecordset* pRecordset);
-
- 
+void AFXAPI DDX_FieldScroll(
+    CDataExchange* pDX,    
+    int nIDC,   
+    int& value,   
+    CDaoRecordset* pRecordset);  
 ```  
   
 ### Parameters  
@@ -527,210 +439,120 @@ value  ,
 ### Example  
  See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. Calls to `DDX_FieldScroll` would be similar.  
   
+### Requirements  
+  **Header** afxdao.h  
+  
 ##  <a name="ddx_fieldtext"></a>  DDX_FieldText  
  The `DDX_FieldText` function manages the transfer of `int`, **short**, **long**, `DWORD`, [CString](../../atl-mfc-shared/reference/cstringt-class.md), **float**, **double**, **BOOL**, or **BYTE** data between an edit box control and the field data members of a recordset.  
   
 ```  
- 
-void  
-AFXAPI  
-DDX_FieldText(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    BYTE& 
-value  ,  
+void AFXAPI DDX_FieldText(
+    CDataExchange* pDX,    
+    int nIDC,   
+    BYTE& value,   
     CRecordset* pRecordset);
 
-void  
-AFXAPI  
-DDX_FieldText(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    int& 
-value  ,  
+void AFXAPI DDX_FieldText(
+    CDataExchange* pDX,    
+    int nIDC,   
+    int& value,   
     CRecordset* pRecordset);
 
-void  
-AFXAPI  
-DDX_FieldText(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    UINT& 
-value  ,  
+void AFXAPI DDX_FieldText(
+    CDataExchange* pDX,    
+    int nIDC,   
+    UINT& value,   
     CRecordset* pRecordset);
 
-void  
-AFXAPI  
-DDX_FieldText(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    long& 
-value  ,  
+void AFXAPI DDX_FieldText(
+    CDataExchange* pDX,    
+    int nIDC,   
+    long& value,   
     CRecordset* pRecordset);
 
-void  
-AFXAPI  
-DDX_FieldText(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    DWORD& 
-value  ,  
+void AFXAPI DDX_FieldText(
+    CDataExchange* pDX,    
+    int nIDC,   
+    DWORD& value,   
     CRecordset* pRecordset);
 
-void  
-AFXAPI  
-DDX_FieldText(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    CString& 
-value  ,  
+void AFXAPI DDX_FieldText(
+    CDataExchange* pDX,    
+    int nIDC,   
+    CString& value,   
     CRecordset* pRecordset);
 
-void  
-AFXAPI  
-DDX_FieldText(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    float& 
-value  ,  
+void AFXAPI DDX_FieldText(
+    CDataExchange* pDX,    
+    int nIDC,   
+    float& value,   
     CRecordset* pRecordset);
 
-void  
-AFXAPI  
-DDX_FieldText(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    double& 
-value  ,  
+void AFXAPI DDX_FieldText(
+    CDataExchange* pDX,    
+    int nIDC,   
+    double& value,   
     CRecordset* pRecordset);
 
-void  
-AFXAPI  
-DDX_FieldText(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    short& 
-value  ,  
+void AFXAPI DDX_FieldText(
+    CDataExchange* pDX,    
+    int nIDC,   
+    short& value,   
     CDaoRecordset* pRecordset);
 
-void  
-AFXAPI  
-DDX_FieldText(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    BOOL& 
-value  ,  
+void AFXAPI DDX_FieldText(
+    CDataExchange* pDX,    
+    int nIDC,   
+    BOOL& value,   
     CDaoRecordset* pRecordset);
 
-void  
-AFXAPI  
-DDX_FieldText(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    BYTE& 
-value  ,  
+void AFXAPI DDX_FieldText(
+    CDataExchange* pDX,    
+    int nIDC,   
+    BYTE& value,   
     CDaoRecordset* pRecordset);
 
-void  
-AFXAPI  
-DDX_FieldText(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    long& 
-value  ,  
+void AFXAPI DDX_FieldText(
+    CDataExchange* pDX,    
+    int nIDC,   
+    long& value,   
     CDaoRecordset* pRecordset);
 
-void  
-AFXAPI  
-DDX_FieldText(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    DWORD& 
-value  ,  
+void AFXAPI DDX_FieldText(
+    CDataExchange* pDX,    
+    int nIDC,   
+    DWORD& value,   
     CDaoRecordset* pRecordset);
 
-void  
-AFXAPI  
-DDX_FieldText(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    CString& 
-value  ,  
+void AFXAPI DDX_FieldText(
+    CDataExchange* pDX,    
+    int nIDC,   
+    CString& value,   
     CDaoRecordset* pRecordset);
 
-void  
-AFXAPI  
-DDX_FieldText(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    float& 
-value  ,  
+void AFXAPI DDX_FieldText(
+    CDataExchange* pDX,    
+    int nIDC,   
+    float& value,   
     CDaoRecordset* pRecordset);
 
-void  
-AFXAPI  
-DDX_FieldText(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    double& 
-value  ,  
+void AFXAPI DDX_FieldText(
+    CDataExchange* pDX,    
+    int nIDC,   
+    double& value,   
     CDaoRecordset* pRecordset);
 
-void  
-AFXAPI  
-DDX_FieldText(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    COleDateTime& 
-value  ,  
+void AFXAPI DDX_FieldText(
+    CDataExchange* pDX,    
+    int nIDC,   
+    COleDateTime& value,   
     CDaoRecordset* pRecordset);
 
-void  
-AFXAPI  
-DDX_FieldText(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    COleCurrency& 
-value  ,  
-    CDaoRecordset* pRecordset);
-
- 
+void AFXAPI DDX_FieldText(
+    CDataExchange* pDX,    
+    int nIDC,   
+    COleCurrency& value,   
+    CDaoRecordset* pRecordset);  
 ```  
   
 ### Parameters  
@@ -757,6 +579,10 @@ value  ,
  The following `DoDataExchange` function for a [CRecordView](../../mfc/reference/crecordview-class.md) contains `DDX_FieldText` function calls for three data types: `IDC_COURSELIST` is a combo box; the other two controls are edit boxes. For DAO programming, the *m_pSet* parameter is a pointer to a [CRecordset](../../mfc/reference/crecordset-class.md) or [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md).  
   
  [!code-cpp[NVC_MFCDatabase#43](../../mfc/codesnippet/cpp/dialog-data-exchange-functions-for-crecordview-and-cdaorecordview_1.cpp)]  
+
   
+### Requirements  
+  **Header** afxdao.h  
+    
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

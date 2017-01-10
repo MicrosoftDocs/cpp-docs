@@ -90,7 +90,10 @@ void AFXAPI AfxDrawGrayBitmap(
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#191](../../mfc/codesnippet/cpp/gray-and-dithered-bitmap-functions_1.cpp)]  
-  
+
+### Requirements  
+ **Header:** afxwin.h  
+
 ##  <a name="afxgetgraybitmap"></a>  AfxGetGrayBitmap  
  Copies a gray version of a bitmap.  
   
@@ -118,6 +121,9 @@ void AFXAPI AfxGetGrayBitmap(
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#193](../../mfc/codesnippet/cpp/gray-and-dithered-bitmap-functions_2.cpp)]  
+
+### Requirements  
+ **Header:** afxwin.h  
   
 ##  <a name="afxdrawditheredbitmap"></a>  AfxDrawDitheredBitmap  
  Draws a bitmap, replacing its background with a dithered (checker) pattern.  
@@ -158,7 +164,11 @@ void AFXAPI AfxDrawDitheredBitmap(
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#190](../../mfc/codesnippet/cpp/gray-and-dithered-bitmap-functions_3.cpp)]  
-  
+
+### Requirements  
+ **Header:** afxwin.h  
+
+
 ##  <a name="afxgetditheredbitmap"></a>  AfxGetDitheredBitmap  
  Copies a bitmap, replacing its background with a dithered (checker) pattern.  
   
@@ -190,6 +200,9 @@ void AFXAPI AfxGetDitheredBitmap(
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#192](../../mfc/codesnippet/cpp/gray-and-dithered-bitmap-functions_4.cpp)]  
+
+### Requirements  
+ **Header:** afxwin.h  
   
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

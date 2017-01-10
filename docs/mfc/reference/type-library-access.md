@@ -59,7 +59,10 @@ DECLARE_OLETYPELIB(class_name)
   
 ### Remarks  
  Use this macro in the control class header file.  
-  
+
+### Requirements  
+ **Header:** afxdisp.h  
+
 ##  <a name="implement_oletypelib"></a>  IMPLEMENT_OLETYPELIB  
  Implements the control's `GetTypeLib` member function.  
   
@@ -82,6 +85,9 @@ IMPLEMENT_OLETYPELIB(class_name, tlid, wVerMajor,  wVerMinor)
   
 ### Remarks  
  This macro must appear in the implementation file for any control class that uses the `DECLARE_OLETYPELIB` macro.  
-  
+
+### Requirements  
+ **Header:** afxdisp.h  
+   
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

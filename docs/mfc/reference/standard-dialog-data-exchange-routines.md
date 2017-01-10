@@ -62,15 +62,10 @@ This topic lists the standard dialog data exchange (DDX) routines used for commo
  The `DDX_CBIndex` function manages the transfer of `int` data between a combo box control in a dialog box, form view, or control view object and a `int` data member of the dialog box, form view, or control view object.  
   
 ```  
- 
 void AFXAPI DDX_CBIndex(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    int& index);
-
- 
+    CDataExchange* pDX,  
+    int nIDC,  
+    int& index);  
 ```  
   
 ### Parameters  
@@ -88,20 +83,17 @@ nIDC  ,
   
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdd_.h  
+  
 ##  <a name="ddx_cbstring"></a>  DDX_CBString  
  The `DDX_CBString` function manages the transfer of `CString` data between the edit control of a combo box control in a dialog box, form view, or control view object and a `CString` data member of the dialog box, form view, or control view object.  
   
 ```  
- 
 void AFXAPI DDX_CBString(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    CString& 
-value);
-
- 
+    CDataExchange* pDX,  
+    int nIDC,  
+    CString& value);  
 ```  
   
 ### Parameters  
@@ -122,20 +114,17 @@ value);
   
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdd_.h  
+  
 ##  <a name="ddx_cbstringexact"></a>  DDX_CBStringExact  
  The `DDX_CBStringExact` function manages the transfer of `CString` data between the edit control of a combo box control in a dialog box, form view, or control view object and a `CString` data member of the dialog box, form view, or control view object.  
   
 ```  
- 
 void AFXAPI DDX_CBStringExact(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    CString& 
-value);
-
- 
+    CDataExchange* pDX,  
+    int nIDC,  
+    CString& value);  
 ```  
   
 ### Parameters  
@@ -156,19 +145,17 @@ value);
   
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdd_.h  
+  
 ##  <a name="ddx_check"></a>  DDX_Check  
  The `DDX_Check` function manages the transfer of `int` data between a check box control in a dialog box, form view, or control view object and a `int` data member of the dialog box, form view, or control view object.  
   
 ```  
- 
 void AFXAPI DDX_Check(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    int& value);
-
- 
+    CDataExchange* pDX,  
+    int nIDC,  
+    int& value);  
 ```  
   
 ### Parameters  
@@ -186,19 +173,17 @@ nIDC  ,
   
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdd_.h  
+  
 ##  <a name="ddx_control"></a>  DDX_Control  
  The `DDX_Control` function subclasses the control, specified by `nIDC`, of the dialog box, form view, or control view object.  
   
 ```  
- 
 void AFXAPI DDX_Control(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    CWnd& rControl);
-
- 
+    CDataExchange* pDX,  
+    int nIDC,  
+    CWnd& rControl);  
 ```  
   
 ### Parameters  
@@ -216,33 +201,27 @@ nIDC  ,
   
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdd_.h  
+  
 ##  <a name="ddx_datetimectrl"></a>  DDX_DateTimeCtrl  
  The `DDX_DateTimeCtrl` function manages the transfer of date and/or time data between a date and time picker control ( [CDateTimeCtrl](../../mfc/reference/cdatetimectrl-class.md)) in a dialog box or form view object and either a [CTime](../../atl-mfc-shared/reference/ctime-class.md) or a [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) data member of the dialog box or form view object.  
   
 ```  
- 
 void AFXAPI DDX_DateTimeCtrl(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
     CTime& value);
 
 void AFXAPI DDX_DateTimeCtrl(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
     COleDateTime& value);
 
 void AFXAPI DDX_DateTimeCtrl(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    CString& value);
-
- 
+    CDataExchange* pDX,  
+    int nIDC,  
+    CString& value);  
 ```  
   
 ### Parameters  
@@ -262,19 +241,17 @@ nIDC  ,
   
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdd_.h  
+  
 ##  <a name="ddx_ipaddress"></a>  DDX_IPAddress  
  The `DDX_IPAddress` function manages the transfer of data between an IP Address control and a data member of the control view object.  
   
 ```  
- 
 void AFXAPI DDX_IPAddress(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    DWORD& value);
-
- 
+    CDataExchange* pDX,  
+    int nIDC,  
+    DWORD& value);  
 ```  
   
 ### Parameters  
@@ -301,19 +278,17 @@ nIDC  ,
   
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdd_.h  
+  
 ##  <a name="ddx_lbindex"></a>  DDX_LBIndex  
  The `DDX_LBIndex` function manages the transfer of `int` data between a list box control in a dialog box, form view, or control view object and an `int` data member of the dialog box, form view, or control view object.  
   
 ```  
- 
 void AFXAPI DDX_LBIndex(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    int& index);
-
- 
+    CDataExchange* pDX,  
+    int nIDC,  
+    int& index);  
 ```  
   
 ### Parameters  
@@ -331,20 +306,17 @@ nIDC  ,
   
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdd_.h  
+  
 ##  <a name="ddx_lbstring"></a>  DDX_LBString  
  The `DDX_LBString` function manages the transfer of `CString` data between a list box control in a dialog box, form view, or control view object and a `CString` data member of the dialog box, form view, or control view object.  
   
 ```  
- 
 void AFXAPI DDX_LBString(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    CString& 
-value);
-
- 
+    CDataExchange* pDX,  
+    int nIDC,  
+    CString& value);  
 ```  
   
 ### Parameters  
@@ -367,20 +339,17 @@ value);
   
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdd_.h  
+  
 ##  <a name="ddx_lbstringexact"></a>  DDX_LBStringExact  
  The `DDX_CBStringExact` function manages the transfer of `CString` data between the edit control of a list box control in a dialog box, form view, or control view object and a `CString` data member of the dialog box, form view, or control view object.  
   
 ```  
- 
 void AFXAPI DDX_LBStringExact(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    CString& 
-value);
-
- 
+    CDataExchange* pDX,  
+    int nIDC,  
+    CString& value);  
 ```  
   
 ### Parameters  
@@ -403,26 +372,22 @@ value);
   
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdd_.h  
+  
 ##  <a name="ddx_monthcalctrl"></a>  DDX_MonthCalCtrl  
  The `DDX_MonthCalCtrl` function manages the transfer of date data between a month calendar control ( [CMonthCalCtrl](../../mfc/reference/cmonthcalctrl-class.md)) in a dialog box, form view, or control view object and either a [CTime](../../atl-mfc-shared/reference/ctime-class.md) or a [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) data member of the dialog box, form view, or control view object.  
   
 ```  
- 
 void AFXAPI DDX_MonthCalCtrl(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
     CTime& value);
 
 void AFXAPI DDX_MonthCalCtrl(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    COleDateTime& value);
-
- 
+    CDataExchange* pDX,  
+    int nIDC,  
+    COleDateTime& value);  
 ```  
   
 ### Parameters  
@@ -444,19 +409,17 @@ nIDC  ,
   
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdd_.h  
+  
 ##  <a name="ddx_radio"></a>  DDX_Radio  
  The `DDX_Radio` function manages the transfer of `int` data between a radio control group in a dialog box, form view, or control view object and a `int` data member of the dialog box, form view, or control view object. The value of the `int` data member is determined according to which radio button within the group is selected.  
   
 ```  
- 
 void AFXAPI DDX_Radio(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    int& value);
-
- 
+    CDataExchange* pDX,  
+    int nIDC,  
+    int& value);  
 ```  
   
 ### Parameters  
@@ -476,19 +439,17 @@ nIDC  ,
   
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdd_.h  
+  
 ##  <a name="ddx_scroll"></a>  DDX_Scroll  
  The `DDX_Scroll` function manages the transfer of `int` data between a scroll-bar control in a dialog box, form view, or control view object and an `int` data member of the dialog box, form view, or control view object.  
   
 ```  
- 
 void AFXAPI DDX_Scroll(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    int& value);
-
- 
+    CDataExchange* pDX,  
+    int nIDC,  
+    int& value);  
 ```  
   
 ### Parameters  
@@ -506,19 +467,17 @@ nIDC  ,
   
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
+### Requirements  
+  **Header** afxdd_.h  
+  
 ##  <a name="ddx_slider"></a>  DDX_Slider  
  The `DDX_Slider` function manages the transfer of `int` data between a slider control in a dialog box or form view and an `int` data member of the dialog box or form view object.  
   
 ```  
- 
 void AFXAPI DDX_Slider(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    int& value);
-
- 
+    CDataExchange* pDX,  
+    int nIDC,  
+    int& value);  
 ```  
   
 ### Parameters  
@@ -536,88 +495,67 @@ nIDC  ,
   
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md). For information about slider controls, see [Using CSliderCtrl](../../mfc/using-csliderctrl.md).  
   
+### Requirements  
+  **Header** afxdd_.h  
+  
 ##  <a name="ddx_text"></a>  DDX_Text  
  The `DDX_Text` function manages the transfer of `int`, **UINT**, **long**, `DWORD`, `CString`, **float**, or **double** data between an edit control in a dialog box, form view, or control view and a [CString](../../atl-mfc-shared/reference/cstringt-class.md) data member of the dialog box, form view, or control view object.  
   
 ```  
- 
 void AFXAPI DDX_Text(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
     BYTE& value);
 
 void AFXAPI DDX_Text(
-    CDataExchange* 
-pDX  ,  
+    CDataExchange* pDX,  
     int nIDC,  
     short& value);
 
 void AFXAPI DDX_Text(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
     int& value);
 
 void AFXAPI DDX_Text(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
     UINT& value);
 
 void AFXAPI DDX_Text(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
     long& value);
 
 void AFXAPI DDX_Text(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
     DWORD& value);
 
 void AFXAPI DDX_Text(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
     CString& value);
 
 void AFXAPI DDX_Text(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
     float& value);
 
 void AFXAPI DDX_Text(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
     double& value);
 
 void AFXAPI DDX_Text(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
+    CDataExchange* pDX,  
+    int nIDC,  
     COleCurrency& value);
 
 void AFXAPI DDX_Text(
-    CDataExchange* 
-pDX  ,  
-    int 
-nIDC  ,  
-    COleDateTime& value);
-
- 
+    CDataExchange* pDX,  
+    int nIDC,  
+    COleDateTime& value);  
 ```  
   
 ### Parameters  
@@ -632,7 +570,10 @@ nIDC  ,
   
 ### Remarks  
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
-  
+
+### Requirements  
+  **Header** afxdd_.h  
+
 ## See Also  
  [Standard Dialog Data Validation Routines](../../mfc/reference/standard-dialog-data-validation-routines.md)   
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

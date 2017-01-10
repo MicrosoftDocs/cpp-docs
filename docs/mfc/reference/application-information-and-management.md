@@ -63,6 +63,8 @@ When you write an application, you create a single [CWinApp](../../mfc/reference
 |[AfxSocketInit](#afxsocketinit)|Called in a `CWinApp::InitInstance` override to initialize Windows Sockets.|  
 |[AfxWinInit](#afxwininit)|Called by the MFC-supplied `WinMain` function, as part of the [CWinApp](../../mfc/reference/cwinapp-class.md) initialization of a GUI-based application, to initialize MFC. Must be called directly for console applications that use MFC.|  
   
+
+  
 ##  <a name="afxbeginthread"></a>  AfxBeginThread  
  Call this function to create a new thread.  
   
@@ -126,6 +128,9 @@ CWinThread* AfxBeginThread(
 ### Example  
  See the example for [CSocket::Attach](../../mfc/reference/csocket-class.md#attach).  
   
+### Requirements  
+  **Header** afxwin.h  
+  
 ##  <a name="afxendthread"></a>  AfxEndThread  
  Call this function to terminate the currently executing thread.  
   
@@ -146,6 +151,9 @@ void AFXAPI AfxEndThread(
  Must be called from within the thread to be terminated.  
   
  For more information on `AfxEndThread`, see the article [Multithreading: Terminating Threads](../../parallel/multithreading-terminating-threads.md).  
+  
+### Requirements  
+  **Header** afxwin.h  
   
 ##  <a name="afxfreelibrary"></a>  AfxFreeLibrary  
  Both `AfxFreeLibrary` and `AfxLoadLibrary` maintain a reference count for each loaded library module.  
@@ -173,6 +181,9 @@ BOOL AFXAPI AfxFreeLibrary(HINSTANCE hInstLib);
 ### Example  
  See the example for [AfxLoadLibrary](#afxloadlibrary).  
   
+### Requirements  
+  **Header** afxdll_.h  
+  
 ##  <a name="afxgetapp"></a>  AfxGetApp  
  The pointer returned by this function can be used to access application information such as the main message-dispatch code or the topmost window.  
   
@@ -189,6 +200,9 @@ CWinApp* AFXAPI AfxGetApp();
 ### Example  
  [!code-cpp[NVC_MFCWindowing#126](../../mfc/reference/codesnippet/cpp/application-information-and-management_1.cpp)]  
   
+### Requirements  
+  **Header** afxwin.h  
+  
 ##  <a name="afxgetappname"></a>  AfxGetAppName  
  The string returned by this function can be used for diagnostic messages or as a root for temporary string names.  
   
@@ -201,6 +215,9 @@ LPCTSTR AFXAPI AfxGetAppName();
   
 ### Example  
  [!code-cpp[NVC_MFCWindowing#127](../../mfc/reference/codesnippet/cpp/application-information-and-management_2.cpp)]  
+  
+### Requirements  
+  **Header** afxwin.h  
   
 ##  <a name="afxgetinstancehandle"></a>  AfxGetInstanceHandle  
  This function allows you to retrieve the instance handle of the current application.  
@@ -217,6 +234,9 @@ HINSTANCE  AFXAPI AfxGetInstanceHandle();
   
 ### Example  
  [!code-cpp[NVC_MFCWindowing#128](../../mfc/reference/codesnippet/cpp/application-information-and-management_3.cpp)]  
+  
+### Requirements  
+  **Header** afxwin.h  
   
 ##  <a name="afxgetmainwnd"></a>  AfxGetMainWnd  
  If your application is an OLE server, call this function to retrieve a pointer to the active main window of the application instead of directly referring to the [m_pMainWnd](../../mfc/reference/cwinthread-class.md#m_pmainwnd) member of the application object.  
@@ -238,6 +258,9 @@ CWnd* AFXAPI AfxGetMainWnd();
 ### Example  
  [!code-cpp[NVC_MFCWindowing#129](../../mfc/reference/codesnippet/cpp/application-information-and-management_4.cpp)]  
   
+### Requirements  
+  **Header** afxwin.h  
+  
 ##  <a name="afxgetperuserregistration"></a>  AfxGetPerUserRegistration  
  Use this function to determine whether the application redirects registry access to the **HKEY_CURRENT_USER** ( **HKCU**) node.  
   
@@ -253,6 +276,9 @@ BOOL AFXAPI AfxGetPerUserRegistration();
   
  To change whether the application redirects registry access, use [AfxSetPerUserRegistration](#afxsetperuserregistration).  
   
+### Requirements  
+  **Header** afxstat_.h    
+  
 ##  <a name="afxgetresourcehandle"></a>  AfxGetResourceHandle  
  Use the `HINSTANCE` handle returned by this function to access the application's resources directly, for example, in calls to the Windows function **FindResource**.  
   
@@ -265,6 +291,9 @@ extern HINSTANCE  AfxGetResourceHandle();
   
 ### Example  
  [!code-cpp[NVC_MFCWindowing#130](../../mfc/reference/codesnippet/cpp/application-information-and-management_5.cpp)]  
+  
+### Requirements  
+  **Header** afxwin.h  
   
 ##  <a name="afxgetthread"></a>  AfxGetThread  
  Call this function to get a pointer to the [CWinThread](../../mfc/reference/cwinthread-class.md) object representing the currently executing thread.  
@@ -285,6 +314,9 @@ CWinThread* AfxGetThread();
 ### Example  
  [!code-cpp[NVC_MFCWindowing#132](../../mfc/reference/codesnippet/cpp/application-information-and-management_6.cpp)]  
   
+### Requirements  
+  **Header** afxwin.h  
+  
 ##  <a name="afxinitrichedit"></a>  AfxInitRichEdit  
  Call this function to initialize the rich edit control (version 1.0) for the application.  
   
@@ -301,6 +333,9 @@ BOOL AFXAPI AfxInitRichEdit();
   
  This function also initializes the common controls library, if the library hasn't already been initialized for the process. If you use the rich edit control directly from your MFC application, you should call this function to assure that MFC has properly initialized the rich edit control runtime. If you call the Create method of [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md), [CRichEditView](../../mfc/reference/cricheditview-class.md), or [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md), you typically don't need to call this function, but in some cases it might be necessary.  
   
+### Requirements  
+  **Header** afxwin.h  
+  
 ##  <a name="afxinitrichedit2"></a>  AfxInitRichEdit2  
  Call this function to initialize the rich edit control (version 2.0 and later) for the application.  
   
@@ -310,6 +345,9 @@ BOOL AFXAPI AfxInitRichEdit2();
   
 ### Remarks  
  Call this function to load the RICHED20.DLL and initialize version 2.0 of the rich edit control. If you call the Create method of [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md), [CRichEditView](../../mfc/reference/cricheditview-class.md), or [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md), you typically don't need to call this function, but in some cases it might be necessary.  
+  
+### Requirements  
+  **Header** afxwin.h  
   
 ##  <a name="afxloadlibrary"></a>  AfxLoadLibrary  
  Use `AfxLoadLibrary` to map a DLL module.  
@@ -355,6 +393,10 @@ HINSTANCE AFXAPI AfxLoadLibrary(LPCTSTR lpszModuleName);
 [!code-cpp[NVC_MFC_DLLUser#2](../../mfc/reference/codesnippet/cpp/application-information-and-management_8.cpp)]  
 [!code-cpp[NVC_MFC_DLLUser#3](../../mfc/reference/codesnippet/cpp/application-information-and-management_9.cpp)]  
   
+### Requirements  
+  **Header** afxdll_.h  
+   
+  
 ##  <a name="afxregisterclass"></a>  AfxRegisterClass  
  Use this function to register window classes in a DLL that uses MFC.  
   
@@ -376,6 +418,9 @@ BOOL AFXAPI AfxRegisterClass(WNDCLASS* lpWndClass);
   
 ### Example  
  [!code-cpp[NVC_MFC_DLL#3](../../atl-mfc-shared/codesnippet/cpp/application-information-and-management_10.cpp)]  
+  
+### Requirements  
+  **Header** afxwin.h  
   
 ##  <a name="afxregisterwndclass"></a>  AfxRegisterWndClass  
  Allows you to register your own window classes.  
@@ -430,6 +475,9 @@ LPCTSTR AFXAPI AfxRegisterWndClass(
 ### Example  
  [!code-cpp[NVC_MFCWindowing#134](../../mfc/reference/codesnippet/cpp/application-information-and-management_11.cpp)]  
   
+### Requirements  
+  **Header** afxwin.h  
+  
 ##  <a name="afxsetperuserregistration"></a>  AfxSetPerUserRegistration  
  Sets whether the application redirects registry access to the **HKEY_CURRENT_USER** ( **HKCU**) node.  
   
@@ -450,6 +498,9 @@ void AFXAPI AfxSetPerUserRegistration(BOOL bEnable);
   
  The default implementation accesses the registry under **HKCR**.  
   
+### Requirements  
+  **Header** afxstat_.h    
+  
 ##  <a name="afxsetresourcehandle"></a>  AfxSetResourceHandle  
  Use this function to set the `HINSTANCE` handle that determines where the default resources of the application are loaded.  
   
@@ -467,6 +518,9 @@ AFXAPI AfxSetResourceHandle(HINSTANCE hInstResource);
   
 ### Example  
  [!code-cpp[NVC_MFCWindowing#135](../../mfc/reference/codesnippet/cpp/application-information-and-management_12.cpp)]  
+  
+### Requirements  
+  **Header** afxwin.h  
   
 ##  <a name="afxsocketinit"></a>  AfxSocketInit  
  Call this function in your `CWinApp::InitInstance` override to initialize Windows Sockets.  
@@ -488,6 +542,9 @@ AfxSocketInit(WSADATA* lpwsaData = NULL);
   
 ### Remarks  
  When using MFC sockets in secondary threads in a statically linked MFC application, you must call `AfxSocketInit` in each thread that uses sockets to initialize the socket libraries. By default, `AfxSocketInit` is called only in the primary thread.  
+  
+### Requirements  
+  **Header** afxsock.h  
   
 ##  <a name="afxwininit"></a>  AfxWinInit  
  This function is called by the MFC-supplied `WinMain` function, as part of the [CWinApp](../../mfc/reference/cwinapp-class.md) initialization of a GUI-based application, to initialize MFC.  
@@ -526,7 +583,10 @@ BOOL AFXAPI AfxWinInit(
   
 ### Example  
  [!code-cpp[NVC_MFC_AfxWinInit#1](../../mfc/reference/codesnippet/cpp/application-information-and-management_13.cpp)]  
-  
+
+### Requirements  
+  **Header** afxwin.h  
+    
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)   
  [CWinApp Class](../../mfc/reference/cwinapp-class.md)

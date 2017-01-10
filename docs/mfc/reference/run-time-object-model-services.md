@@ -58,7 +58,8 @@ The classes [CObject](../../mfc/reference/cobject-class.md) and [CRuntimeClass](
 |[IMPLEMENT_DYNCREATE](#implement_dyncreate)|Enables dynamic creation and access to run-time information (must be used in the class implementation).|  
 |[IMPLEMENT_SERIAL](#implement_serial)|Permits serialization and access to run-time class information (must be used in the class implementation).|  
 |[RUNTIME_CLASS](#runtime_class)|Returns the `CRuntimeClass` structure that corresponds to the named class.|  
-  
+
+
  OLE frequently requires the dynamic creation of objects at run time. For example, an OLE server application must be able to create OLE items dynamically in response to a request from a client. Similarly, an automation server must be able to create items in response to requests from automation clients.  
   
  The Microsoft Foundation Class Library provides two macros specific to OLE.  
@@ -92,7 +93,10 @@ DECLARE_DYNAMIC(class_name)
   
 ### Example  
  See the example for [IMPLEMENT_DYNAMIC](#implement_dynamic).  
-  
+
+### Requirements  
+ **Header:** afx.h 
+
 ##  <a name="declare_dyncreate"></a>  DECLARE_DYNCREATE  
  Enables objects of `CObject`-derived classes to be created dynamically at run time.  
   
@@ -118,7 +122,10 @@ DECLARE_DYNCREATE(class_name)
   
 ### Example  
  See the example for [IMPLEMENT_DYNCREATE](#implement_dyncreate).  
-  
+
+### Requirements  
+ **Header:** afx.h 
+
 ##  <a name="declare_serial"></a>  DECLARE_SERIAL  
  Generates the C++ header code necessary for a `CObject`-derived class that can be serialized.  
   
@@ -148,6 +155,9 @@ DECLARE_SERIAL(class_name)
 ### Example  
  [!code-cpp[NVC_MFCCObjectSample#21](../../mfc/codesnippet/cpp/run-time-object-model-services_2.h)]  
   
+### Requirements  
+ **Header:** afx.h 
+
 ##  <a name="implement_dynamic"></a>  IMPLEMENT_DYNAMIC  
  Generates the C++ code necessary for a dynamic `CObject`-derived class with run-time access to the class name and position within the hierarchy.  
   
@@ -171,7 +181,10 @@ IMPLEMENT_DYNAMIC(class_name, base_class_name)
  [!code-cpp[NVC_MFCCObjectSample#2](../../mfc/codesnippet/cpp/run-time-object-model-services_3.h)]  
   
  [!code-cpp[NVC_MFCCObjectSample#3](../../mfc/codesnippet/cpp/run-time-object-model-services_4.cpp)]  
-  
+
+### Requirements  
+ **Header:** afx.h 
+
 ##  <a name="implement_dyncreate"></a>  IMPLEMENT_DYNCREATE  
  Enables objects of `CObject`-derived classes to be created dynamically at run time when used with the `DECLARE_DYNCREATE` macro.  
   
@@ -199,7 +212,10 @@ IMPLEMENT_DYNCREATE(class_name, base_class_name)
  [!code-cpp[NVC_MFCCObjectSample#22](../../mfc/codesnippet/cpp/run-time-object-model-services_5.h)]  
   
  [!code-cpp[NVC_MFCCObjectSample#23](../../mfc/codesnippet/cpp/run-time-object-model-services_6.cpp)]  
-  
+
+### Requirements  
+ **Header:** afx.h 
+
 ##  <a name="implement_serial"></a>  IMPLEMENT_SERIAL  
  Generates the C++ code necessary for a dynamic `CObject`-derived class with run-time access to the class name and position within the hierarchy.  
   
@@ -228,7 +244,10 @@ IMPLEMENT_SERIAL(class_name, base_class_name, wSchema)
   
 ### Example  
  [!code-cpp[NVC_MFCCObjectSample#24](../../mfc/codesnippet/cpp/run-time-object-model-services_7.cpp)]  
-  
+
+### Requirements  
+ **Header:** afx.h 
+
 ##  <a name="runtime_class"></a>  RUNTIME_CLASS  
  Gets the run-time class structure from the name of a C++ class.  
   
@@ -247,7 +266,10 @@ RUNTIME_CLASS(class_name)
   
 ### Example  
  [!code-cpp[NVC_MFCCObjectSample#25](../../mfc/codesnippet/cpp/run-time-object-model-services_8.cpp)]  
-  
+
+### Requirements  
+ **Header:** afx.h 
+   
 ##  <a name="declare_olecreate"></a>  DECLARE_OLECREATE  
  Enables objects of `CCmdTarget`-derived classes to be created through OLE automation.  
   
@@ -265,7 +287,10 @@ DECLARE_OLECREATE(class_name)
  Add the `DECLARE_OLECREATE` macro in the .h module for the class, and then include that module in all .cpp modules that need access to objects of this class.  
   
  If `DECLARE_OLECREATE` is included in the class declaration, then `IMPLEMENT_OLECREATE` must be included in the class implementation. A class declaration using `DECLARE_OLECREATE` must also use `DECLARE_DYNCREATE` or `DECLARE_SERIAL`.  
-  
+
+### Requirements  
+ **Header**: afxdisp.h  
+
 ##  <a name="implement_olecreate"></a>  IMPLEMENT_OLECREATE  
  Either this macro or [IMPLEMENT_OLECREATE_FLAGS](http://msdn.microsoft.com/library/d1589f6a-5a69-4742-b07c-4c621cfd040d) must appear in the implementation file for any class that uses `DECLARE_OLECREATE`.  
   
@@ -291,6 +316,9 @@ IMPLEMENT_OLECREATE(class_name, external_name, l, w1, w2, b1, b2, b3, b4, b5, b6
  The external name is the identifier exposed to other applications. Client applications use the external name to request an object of this class from an automation server.  
   
  The OLE class ID is a unique 128-bit identifier for the object. It consists of one **long**, two **WORD**s, and eight **BYTE**s, as represented by *l*, *w1*, *w2*, and *b1* through *b8* in the syntax description. The Application Wizard and code wizards create unique OLE class IDs for you as required.  
-  
+
+### Requirements  
+ **Header**: afxdisp.h 
+
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

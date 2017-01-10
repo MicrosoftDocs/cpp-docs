@@ -41,7 +41,7 @@ translation.priority.ht:
 # Collection Class Helpers
 The collection classes `CMap`, `CList`, and `CArray` use templated global helper functions for such purposes as comparing, copying, and serializing elements. As part of your implementation of classes based on `CMap`, `CList`, and `CArray`, you must override these functions as necessary with versions tailored to the type of data stored in your map, list, or array. For information on overriding helper functions such as `SerializeElements`, see the article [Collections: How to Make a Type-Safe Collection](../../mfc/how-to-make-a-type-safe-collection.md). Note that **ConstructElements** and **DestructElements** have been deprecated.  
   
- The Microsoft Foundation Class Library provides the following global functions to help you customize your collection classes:  
+ The Microsoft Foundation Class Library provides the following global functions in afxtempl.h to help you customize your collection classes:  
   
 ### Collection Class Helpers  
   
@@ -56,15 +56,12 @@ The collection classes `CMap`, `CList`, and `CArray` use templated global helper
 ##  <a name="compareelements"></a>  CompareElements  
  Called directly by [CList::Find](clist-class.md#not_found.md#clist__find and indirectly by [cmap__lookup](cmap-class.md#lookup) and [cmap__operator &#91;&#93;](cmap-class.md#operator_at).  
   
-```  
- 
+```   
 template<class TYPE, class ARG_TYPE>  
 BOOL AFXAPI  
 CompareElements(
     const TYPE* pElement1,  
-    const ARG_TYPE* pElement2);
-
- 
+    const ARG_TYPE* pElement2); 
 ```  
   
 ### Parameters  
@@ -90,18 +87,18 @@ CompareElements(
   
  The C++ language defines the comparison operator ( `==`) for simple types ( `char`, `int`, **float**, and so on) but does not define a comparison operator for classes and structures. If you want to use `CompareElements` or to instantiate one of the collection classes that uses it, you must either define the comparison operator or overload `CompareElements` with a version that returns appropriate values.  
   
+### Requirements  
+   **Header:** afxtempl.h   
+  
 ##  <a name="copyelements"></a>  CopyElements  
  This function is called directly by [CArray::Append](carray-class.md#append) and [CArray::Copy](carray-class.md#copy).  
   
-```  
- 
+```   
 template<class TYPE>  
 void AFXAPI CopyElements(
     TYPE* pDest,  
     const TYPE* pSrc,  
-    INT_PTR nCount);
-
- 
+    INT_PTR nCount); 
 ```  
   
 ### Parameters  
@@ -122,18 +119,18 @@ void AFXAPI CopyElements(
   
  For information on implementing this and other helper functions, see the article [Collections: How to Make a Type-Safe Collection](../how-to-make-a-type-safe-collection.md).  
   
+### Requirements  
+  **Header** afxtempl.h  
+  
 ##  <a name="dumpelements"></a>  DumpElements  
  Provides stream-oriented diagnostic output in text form for the elements of your collection when overridden.  
   
-```  
- 
+```   
 template<class TYPE>  
 void  AFXAPI DumpElements(
     CDumpContext& dc,  
     const TYPE* pElements,  
-    INT_PTR nCount);
-
- 
+    INT_PTR nCount); 
 ```  
   
 ### Parameters  
@@ -155,6 +152,9 @@ void  AFXAPI DumpElements(
  The default implementation does nothing. If the elements of your collection are derived from `CObject`, your override will typically iterate through the collection's elements, calling `Dump` for each element in turn.  
   
 
+### Requirements  
+  **Header** afxtempl.h  
+  
 ##  <a name="hashkey"></a>  HashKey  
  Calculates a hash value for the given key.  
   
@@ -188,15 +188,15 @@ template <> UINT AFXAPI HashKey(unsigned __int64 key)
 }
  ```
  
+### Requirements  
+  **Header** afxtempl.h 
+  
 ##  <a name="serializeelements"></a>  SerializeElements  
  [CArray](carray-class.md), [CList](clist-class.md), and [CMap](cmap-class.md) call this function to serialize elements.  
   
-```  
- 
+```   
 template<class TYPE>  
-void AFXAPI SerializeElements(CArchive& ar, TYPE* pElements, INT_PTR nCount);
-
- 
+void AFXAPI SerializeElements(CArchive& ar, TYPE* pElements, INT_PTR nCount); 
 ```  
   
 ### Parameters  
@@ -219,7 +219,10 @@ void AFXAPI SerializeElements(CArchive& ar, TYPE* pElements, INT_PTR nCount);
   
 ### Example  
  See the example in the article [Collections: How to Make a Type-Safe Collection](../how-to-make-a-type-safe-collection.md).  
-  
+ 
+### Requirements  
+  **Header** afxtempl.h 
+    
 ## See Also  
  [Macros and Globals](mfc-macros-and-globals.md)   
  [CMap Class](cmap-class.md)   

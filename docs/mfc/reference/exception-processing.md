@@ -121,7 +121,10 @@ TRY
   
 ### Example  
  See the example for [CATCH](#catch).  
-  
+
+### Requirements
+Header: afx.h
+
 ##  <a name="catch"></a>  CATCH  
  Defines a block of code that catches the first exception type thrown in the preceding **TRY** block.  
   
@@ -174,6 +177,9 @@ CATCH_ALL(exception_object_pointer_name)
 ### Example  
  See the example for [CFile::Abort](../../mfc/reference/cfile-class.md#abort).  
   
+### Requirements  
+  **Header** afx.h  
+
 ##  <a name="and_catch"></a>  AND_CATCH  
  Defines a block of code for catching additional exception types thrown in a preceding **TRY** block.  
   
@@ -199,6 +205,8 @@ AND_CATCH(exception_class, exception_object_pointer_name)
 ### Example  
  See the example for [CATCH](#catch).  
   
+### Requirements  
+  **Header** afx.h  
 ##  <a name="and_catch_all"></a>  AND_CATCH_ALL  
  Defines a block of code for catching additional exception types thrown in a preceding **TRY** block.  
   
@@ -218,6 +226,9 @@ AND_CATCH_ALL(exception_object_pointer_name)
 > [!NOTE]
 >  The `AND_CATCH_ALL` block is defined as a C++ scope (delineated by braces). If you declare variables in this scope, remember that they are accessible only within that scope.  
   
+### Requirements  
+  **Header** afx.h  
+  
 ##  <a name="end_catch"></a>  END_CATCH  
  Marks the end of the last **CATCH** or `AND_CATCH` block.  
   
@@ -228,12 +239,18 @@ END_CATCH
 ### Remarks  
  For more information on the `END_CATCH` macro, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).  
   
+### Requirements  
+  **Header** afx.h  
+  
 ##  <a name="end_catch_all"></a>  END_CATCH_ALL  
  Marks the end of the last `CATCH_ALL` or `AND_CATCH_ALL` block.  
   
 ```   
 END_CATCH_ALL  
 ```  
+  
+### Requirements  
+  **Header** afx.h  
   
 ##  <a name="throw"></a>  THROW (MFC)  
  Throws the specified exception.  
@@ -251,6 +268,9 @@ THROW(exception_object_pointer)
   
  For more information, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).  
   
+### Requirements  
+  **Header** afx.h  
+  
 ##  <a name="throw_last"></a>  THROW_LAST  
  Throws the exception back to the next outer **CATCH** block.  
   
@@ -266,6 +286,9 @@ THROW_LAST()
 ### Example  
  See the example for [CFile::Abort](../../mfc/reference/cfile-class.md#abort).  
   
+### Requirements  
+  **Header** afx.h  
+  
 ##  <a name="afxthrowarchiveexception"></a>  AfxThrowArchiveException  
  Throws an archive exception.  
   
@@ -279,6 +302,9 @@ void  AfxThrowArchiveException(int cause, LPCTSTR lpszArchiveName);
   
  `lpszArchiveName`  
  Points to a string containing the name of the `CArchive` object that caused the exception (if available).  
+  
+### Requirements  
+  **Header** afx.h  
   
 ##  <a name="afxthrowfileexception"></a>  AfxThrowFileException  
  Throws a file exception.  
@@ -303,6 +329,9 @@ void AfxThrowFileException(
 ### Remarks  
  You are responsible for determining the cause based on the operating-system error code.  
   
+### Requirements  
+  **Header** afx.h  
+  
 ##  <a name="afxthrowmemoryexception"></a>  AfxThrowMemoryException  
  Throws a memory exception.  
   
@@ -313,12 +342,18 @@ void AfxThrowMemoryException();
 ### Remarks  
  Call this function if calls to underlying system memory allocators (such as `malloc` and the [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574) Windows function) fail. You do not need to call it for **new** because **new** will throw a memory exception automatically if the memory allocation fails.  
   
+### Requirements  
+  **Header** afx.h  
+  
 ##  <a name="afxthrownotsupportedexception"></a>  AfxThrowNotSupportedException  
  Throws an exception that is the result of a request for an unsupported feature.  
   
 ```  
 void AfxThrowNotSupportedException(); 
 ```  
+  
+### Requirements  
+  **Header** afx.h  
   
 ##  <a name="afxthrowresourceexception"></a>  AfxThrowResourceException  
  Throws a resource exception.  
@@ -330,6 +365,9 @@ void  AfxThrowResourceException();
 ### Remarks  
  This function is normally called when a Windows resource cannot be loaded.  
   
+### Requirements  
+  **Header** afx.h  
+  
 ##  <a name="afxthrowuserexception"></a>  AfxThrowUserException  
  Throws an exception to stop an end-user operation.  
   
@@ -339,6 +377,9 @@ void AfxThrowUserException();
   
 ### Remarks  
  This function is normally called immediately after `AfxMessageBox` has reported an error to the user.  
+  
+### Requirements  
+  **Header** afx.h  
   
 ##  <a name="afxthrowoledispatchexception"></a>  AfxThrowOleDispatchException  
  Use this function to throw an exception within an OLE automation function.  
@@ -374,6 +415,9 @@ void AFXAPI AfxThrowOleDispatchException(
 ### Example  
  [!code-cpp[NVC_MFCExceptions#25](../../mfc/codesnippet/cpp/exception-processing_2.cpp)]  
   
+### Requirements  
+  **Header** afx.h  
+  
 ##  <a name="afxthrowoleexception"></a>  AfxThrowOleException  
  Creates an object of type `COleException` and throws an exception.  
   
@@ -391,6 +435,9 @@ void AFXAPI AfxThrowOleException(HRESULT hr);
   
 ### Remarks  
  The version that takes an `HRESULT` as an argument converts that result code into the corresponding `SCODE`. For more information on `HRESULT` and `SCODE`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+  
+### Requirements  
+  **Header** afxdao.h  
   
 ##  <a name="afxthrowdaoexception"></a>  AfxThrowDaoException  
  Call this function to throw an exception of type [CDaoException](../../mfc/reference/cdaoexception-class.md) from your own code.  
@@ -413,6 +460,9 @@ void AFXAPI AfxThrowDaoException(
   
  For information about exceptions related to the MFC DAO classes, see class `CDaoException` in this book and the article [Exceptions: Database Exceptions](../../mfc/exceptions-database-exceptions.md).  
   
+### Requirements  
+  **Header** afxdb.h  
+  
 ##  <a name="afxthrowdbexception"></a>  AfxThrowDBException  
  Call this function to throw an exception of type `CDBException` from your own code.  
   
@@ -420,9 +470,7 @@ void AFXAPI AfxThrowDaoException(
 void AfxThrowDBException(
     RETCODE nRetCode,  
     CDatabase* pdb,  
-    HSTMT hstmt);
-
- 
+    HSTMT hstmt); 
 ```  
   
 ### Parameters  
@@ -440,6 +488,9 @@ void AfxThrowDBException(
   
  For information about the **RETCODE** values defined by ODBC, see Chapter 8, "Retrieving Status and Error Information," in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. For information about MFC extensions to these codes, see class [CDBException](../../mfc/reference/cdbexception-class.md).  
   
+### Requirements  
+  **Header** afx.h  
+  
 ##  <a name="afxabort"></a>  AfxAbort  
  The default termination function supplied by MFC.  
   
@@ -452,6 +503,9 @@ void  AfxAbort();
   
 ### Example  
  See the example for [CATCH](#catch).  
+
+### Requirements  
+  **Header** afx.h   
   
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)   
