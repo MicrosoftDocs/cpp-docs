@@ -41,7 +41,7 @@ This topic provides a guide for upgrading Visual C++ code. This includes getting
   
 -   Faster builds, due to performance improvements in the compiler itself.  
   
--   Language features. Visual C++ now implements many features from the newer C++ standards.  
+-   Improved standards conformance. Visual C++ now implements many features from the latest C++ standards.  
   
 -   Better security. Security features such as guard checking.  
   
@@ -53,15 +53,13 @@ This topic provides a guide for upgrading Visual C++ code. This includes getting
  If you are not using Visual Studio's build system, you should consider upgrading to use MSBuild. If you upgrade to use MSBuild, you might have an easier time in future upgrades, and it will be easier to use services such as Visual Studio Online. MSBuild supports all the target platforms that Visual Studio supports.  
   
 ### Porting Visual Studio Projects  
- For larger projects, you might want to upgrade just one Visual Studio version at a time, because otherwise it can be hard to know what version introduced a particular breaking change that affected your code.  
-  
- To start upgrading a project or solution, just open the solution in the new version of Visual Studio, and follow the prompts to start upgrading it.  When you upgrade a project, you get an upgrade report, which is also saved in your project folder as UpgradeLog.htm. The upgrade report shows a summary of what problems were encountered during the upgrade process and some information about changes that were made, or problems that could not be addressed automatically.  
+  To start upgrading a project or solution, just open the solution in the new version of Visual Studio, and follow the prompts to start upgrading it.  When you upgrade a project, you get an upgrade report, which is also saved in your project folder as UpgradeLog.htm. The upgrade report shows a summary of what problems were encountered during the upgrade process and some information about changes that were made, or problems that could not be addressed automatically.  
   
 1.  Project properties  
   
 2.  Include files  
   
-3.  Code that no longer compiles cleanly due to compiler conformance changes  
+3.  Code that no longer compiles cleanly due to compiler conformance imrovements or changes in the standard  
   
 4.  Code that relies on Visual Studio or Windows features that are no longer available or header files that either aren't included in a default installation of Visual Studio, or were removed from the product  
   
@@ -79,16 +77,15 @@ This topic provides a guide for upgrading Visual C++ code. This includes getting
   
 1.  New warnings might mean you want to clean up your code. Depending on the specific diagnostics, this can improve the portability, standards conformance, and security of your code.  
   
-2.  You might want to take advantage of new compiler features such as the [/guard:cf (Enable Flow Control Guard)](../build/reference/guard-enable-control-flow-guard.md) compiler option, which adds checks for unauthorized code execution.  
+2.  You might want to take advantage of newer compiler features such as the [/guard:cf (Enable Flow Control Guard)](../build/reference/guard-enable-control-flow-guard.md) compiler option, which adds checks for unauthorized code execution.  
   
 3.  You might want to update some code to use new language features that simplify the code, improve the performance of your programs, or update the code to use modern libraries and conform to modern standards and best practices.  
   
- Once you've upgraded your project (and tested it), you might also want to consider improving your code further or plan the future direction of your code, or even reconsider the architecture of your project. Will it be important for your code to run on other platforms?  If so, what platforms?  C++ is a standardized langauge designed with portability and cross-platform development in mind, and yet the code for many Windows applications is strongly tied to the Windows platform. Do you want to refactor your code, to separate out those parts that are more tied to the Windows platform?  
+ Once you've upgraded and tested your project, you might also want to consider improving your code further or plan the future direction of your code, or even reconsider the architecture of your project. Will it receive ongoing development work? Will it be important for your code to run on other platforms?  If so, what platforms?  C++ is a standardized langauge designed with portability and cross-platform development in mind, and yet the code for many Windows applications is strongly tied to the Windows platform. Do you want to refactor your code, to separate out those parts that are more tied to the Windows platform?  
   
  What about your user interface?  If you are using MFC, you might want to update the UI.  Are you using any of the newer MFC features that were introduced in 2008 as a Feature Pack?  If you just want to give your app a newer look and feel, without rewriting the entire app, you might consider using the ribbon APIs in MFC, or using some of new features of MFC.  
   
- To add a new Windows desktop user interface, you could use C++/CX (component extensions), or add managed code in C# and an interoperability layer in C++/CLI to connect C# with your native code.  
-  
+ If you want to give your program a XAML user-interface but don't want to create a UWP app, you can use C# with WPF to create the UI layer and refactor your standard C++ logic into DLLs. Create an interoperability layer in C++/CLI to connect C# with your native code. Another option is to create a UWP app using [C++/CX](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh699871.aspx) or [C++/WinRT](https://github.com/microsoft/cppwinrt). In Windows 10, you can use the [Desktop App Converter](https://msdn.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter) to package your existing desktop application as a UWP app without having to modify any code.   
  Alternatively, perhaps you now have new requirements, or you can foresee the need for targeting platforms other than Windows desktop, such as Windows Phone, or Android devices. You could port your user interface code to a cross-platform UI library. With these UI frameworks, you can target multiple devices and still use Visual Studio  and the Visual Studio debugger as your development environment.  
   
 ## Related Topics  
@@ -98,6 +95,7 @@ This topic provides a guide for upgrading Visual C++ code. This includes getting
 |[Upgrading Projects from Earlier Versions of Visual C++](../porting/upgrading-projects-from-earlier-versions-of-visual-cpp.md)|Discusses how to use projects created in earlier versions of Visual C++.|  
 |[Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)|A list of all the changes in the Visual C++ libraries and build tools since 2003 that might require changes in your code.|  
 |[Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md)|All the "what's new" information for Visual C++ going back to Visual Studio 2003.|  
+|[Porting 3rd-party libraries](porting-third-party-libraries.md)|How to use the **vcpkg** command line tool to port older open-source libraries to versions compiled with more recent Visual C++ toolsets.|
 |[Porting and Upgrading: Examples and Case Studies](../porting/porting-and-upgrading-examples-and-case-studies.md)|For this section, we ported and upgrades several samples and applications and discussed the experiences and results. You might find that reading these gives you a sense of what is involved in the porting and upgrading process. Throughout the process, we discuss tips and tricks for upgrading and show how specific errors were fixed.|  
 |[Porting to the Universal Windows Platform](../porting/porting-to-the-universal-windows-platform-cpp.md)|Contains information about porting code to Windows 10|  
 |[Introduction to Visual C++ for UNIX Users](../porting/introduction-to-visual-cpp-for-unix-users.md)|Provides information for UNIX users who are new to [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] and want to become productive with it.|  
