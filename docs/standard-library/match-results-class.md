@@ -9,13 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.match_results"
   - "match_results"
-  - "std::tr1::match_results"
+  - "std::match_results"
+  - "regex/std::match_results"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "match_results class [TR1]"
+  - "match_results class"
 ms.assetid: b504fdca-e5dd-429d-9960-6e27c9167fa6
 caps.latest.revision: 16
 author: "corob-msft"
@@ -105,7 +105,7 @@ typedef Alloc allocator_type;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__match_results_allocator_type.cpp   
+// std__regex__match_results_allocator_type.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -224,7 +224,7 @@ const_iterator begin() const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__match_results_begin.cpp   
+// std__regex__match_results_begin.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -343,7 +343,7 @@ typedef typename iterator_traits<BidIt>::value_type char_type;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__match_results_char_type.cpp   
+// std__regex__match_results_char_type.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -462,7 +462,7 @@ typedef T0 const_iterator;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__match_results_const_iterator.cpp   
+// std__regex__match_results_const_iterator.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -581,7 +581,7 @@ typedef const typename Alloc::const_reference const_reference;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__match_results_const_reference.cpp   
+// std__regex__match_results_const_reference.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -700,7 +700,7 @@ typedef typename iterator_traits<BidIt>::difference_type difference_type;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__match_results_difference_type.cpp   
+// std__regex__match_results_difference_type.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -819,7 +819,7 @@ bool empty() const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__match_results_empty.cpp   
+// std__regex__match_results_empty.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -938,7 +938,7 @@ const_iterator end() const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__match_results_end.cpp   
+// std__regex__match_results_end.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -1196,7 +1196,7 @@ allocator_type get_allocator() const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__match_results_get_allocator.cpp   
+// std__regex__match_results_get_allocator.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -1315,7 +1315,7 @@ typedef const_iterator iterator;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__match_results_iterator.cpp   
+// std__regex__match_results_iterator.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -1438,7 +1438,7 @@ difference_type length(size_type sub = 0) const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__match_results_length.cpp   
+// std__regex__match_results_length.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -1566,7 +1566,7 @@ match_results(const match_results& right);
 ### Example  
   
 ```cpp  
-// std_tr1__regex__match_results_construct.cpp   
+// std__regex__match_results_construct.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -1685,7 +1685,7 @@ size_type max_size() const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__match_results_max_size.cpp   
+// std__regex__match_results_max_size.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -1808,7 +1808,7 @@ match_results& operator=(const match_results& right);
 ### Example  
   
 ```cpp  
-// std_tr1__regex__match_results_operator_as.cpp   
+// std__regex__match_results_operator_as.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -1931,7 +1931,7 @@ const_reference operator[](size_type n) const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__match_results_operator_br.cpp   
+// std__regex__match_results_operator_br.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -2054,7 +2054,7 @@ difference_type position(size_type sub = 0) const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__match_results_position.cpp   
+// std__regex__match_results_position.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -2173,7 +2173,7 @@ const_reference prefix() const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__match_results_prefix.cpp   
+// std__regex__match_results_prefix.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -2292,7 +2292,7 @@ typedef const_reference reference;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__match_results_reference.cpp   
+// std__regex__match_results_reference.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -2411,7 +2411,7 @@ size_type size() const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__match_results_size.cpp   
+// std__regex__match_results_size.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -2530,7 +2530,7 @@ typedef typename Alloc::size_type size_type;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__match_results_size_type.cpp   
+// std__regex__match_results_size_type.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -2653,7 +2653,7 @@ string_type str(size_type sub = 0) const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__match_results_str.cpp   
+// std__regex__match_results_str.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -2772,7 +2772,7 @@ typedef basic_string<char_type> string_type;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__match_results_string_type.cpp   
+// std__regex__match_results_string_type.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -2891,7 +2891,7 @@ const_reference suffix() const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__match_results_suffix.cpp   
+// std__regex__match_results_suffix.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -3014,7 +3014,7 @@ void swap(const match_results& right) throw();
 ### Example  
   
 ```cpp  
-// std_tr1__regex__match_results_swap.cpp   
+// std__regex__match_results_swap.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -3133,7 +3133,7 @@ typedef sub_match<BidIt> value_type;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__match_results_value_type.cpp   
+// std__regex__match_results_value_type.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   

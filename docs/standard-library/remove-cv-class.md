@@ -10,15 +10,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "remove_cv"
-  - "std::tr1::remove_cv"
-  - "std.tr1.remove_cv"
-  - "std.remove_cv"
   - "std::remove_cv"
   - "type_traits/std::remove_cv"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "remove_cv class [TR1]"
+  - "remove_cv class"
   - "remove_cv"
 ms.assetid: 8502602a-1c80-479c-84e0-33bd1d6496d6
 caps.latest.revision: 20
@@ -63,7 +60,6 @@ using remove_cv_t = typename remove_cv<T>::type;
 ## Example  
   
 ```cpp  
-  
 #include <type_traits>   
 #include <iostream>   
   
@@ -77,7 +73,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -85,7 +80,7 @@ remove_cv_t<const volatile int> == int
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

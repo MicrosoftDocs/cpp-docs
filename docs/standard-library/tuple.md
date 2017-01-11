@@ -13,7 +13,7 @@ f1_keywords:
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "tuple header [TR1]"
+  - "tuple header"
 ms.assetid: e4ef5c2d-318b-44f6-8bce-fce4ecd796a3
 caps.latest.revision: 20
 author: "corob-msft"

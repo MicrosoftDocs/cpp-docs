@@ -6,6 +6,13 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+f1_keywords: 
+  - "tuple/std::operator!="
+  - "tuple/std::operator>"
+  - "tuple/std::operator>="
+  - "tuple/std::operator<"
+  - "tuple/std::operator<="
+  - "tuple/std::operator=="
 ms.assetid: f25752dc-d3e2-4e12-b5ac-9a8682ca60ed
 caps.latest.revision: 13
 manager: "ghogen"
@@ -36,14 +43,13 @@ bool operator!=(const tuple<T1, T2, ..., TN>& tpl1,
 ### Example  
   
 ```cpp  
-// std_tr1__tuple__operator_ne.cpp   
+// std__tuple__operator_ne.cpp   
 // compile with: /EHsc   
 #include <tuple>   
 #include <iostream>   
   
 typedef std::tuple<int, double, int, double> Mytuple;   
-int main()   
-    {   
+int main() {   
     Mytuple c0(0, 1, 2, 3);   
   
 // display contents " 0 1 2 3"   
@@ -69,8 +75,7 @@ int main()
     std::cout << std::endl;   
   
     return (0);   
-    }  
-  
+}  
 ```  
   
 ```Output  
@@ -100,14 +105,13 @@ bool operator<(const tuple<T1, T2, ..., TN>& tpl1,
 ### Example  
   
 ```cpp  
-// std_tr1__tuple__operator_lt.cpp   
+// std__tuple__operator_lt.cpp   
 // compile with: /EHsc   
 #include <tuple>   
 #include <iostream>   
   
 typedef std::tuple<int, double, int, double> Mytuple;   
-int main()   
-    {   
+int main() {   
     Mytuple c0(0, 1, 2, 3);   
   
 // display contents " 0 1 2 3"   
@@ -133,8 +137,7 @@ int main()
     std::cout << std::endl;   
   
     return (0);   
-    }  
-  
+}  
 ```  
   
 ```Output  
@@ -164,14 +167,13 @@ bool operator<=(const tuple<T1, T2, ..., TN>& tpl1,
 ### Example  
   
 ```cpp  
-// std_tr1__tuple__operator_le.cpp   
+// std__tuple__operator_le.cpp   
 // compile with: /EHsc   
 #include <tuple>   
 #include <iostream>   
   
 typedef std::tuple<int, double, int, double> Mytuple;   
-int main()   
-    {   
+int main() {   
     Mytuple c0(0, 1, 2, 3);   
   
 // display contents " 0 1 2 3"   
@@ -197,8 +199,7 @@ int main()
     std::cout << std::endl;   
   
     return (0);   
-    }  
-  
+}  
 ```  
   
 ```Output  
@@ -228,14 +229,13 @@ bool operator==(const tuple<T1, T2, ..., TN>& tpl1,
 ### Example  
   
 ```cpp  
-// std_tr1__tuple__operator_eq.cpp   
+// std__tuple__operator_eq.cpp   
 // compile with: /EHsc   
 #include <tuple>   
 #include <iostream>   
   
 typedef std::tuple<int, double, int, double> Mytuple;   
-int main()   
-    {   
+int main() {   
     Mytuple c0(0, 1, 2, 3);   
   
 // display contents " 0 1 2 3"   
@@ -261,8 +261,7 @@ int main()
     std::cout << std::endl;   
   
     return (0);   
-    }  
-  
+}  
 ```  
   
 ```Output  
@@ -292,14 +291,13 @@ bool operator>(const tuple<T1, T2, ..., TN>& tpl1,
 ### Example  
   
 ```cpp  
-// std_tr1__tuple__operator_gt.cpp   
+// std__tuple__operator_gt.cpp   
 // compile with: /EHsc   
 #include <tuple>   
 #include <iostream>   
   
 typedef std::tuple<int, double, int, double> Mytuple;   
-int main()   
-    {   
+int main() {   
     Mytuple c0(0, 1, 2, 3);   
   
 // display contents " 0 1 2 3"   
@@ -325,8 +323,7 @@ int main()
     std::cout << std::endl;   
   
     return (0);   
-    }  
-  
+}  
 ```  
   
 ```Output  
@@ -356,14 +353,13 @@ bool operator>=(const tuple<T1, T2, ..., TN>& tpl1,
 ### Example  
   
 ```cpp  
-// std_tr1__tuple__operator_ge.cpp   
+// std__tuple__operator_ge.cpp   
 // compile with: /EHsc   
 #include <tuple>   
 #include <iostream>   
   
 typedef std::tuple<int, double, int, double> Mytuple;   
-int main()   
-    {   
+int main() {   
     Mytuple c0(0, 1, 2, 3);   
   
 // display contents " 0 1 2 3"   
@@ -389,8 +385,7 @@ int main()
     std::cout << std::endl;   
   
     return (0);   
-    }  
-  
+}  
 ```  
   
 ```Output  

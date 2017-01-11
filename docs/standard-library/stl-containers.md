@@ -77,7 +77,7 @@ std::set<BigObject, std::less<>> myNewSet;
   
  The following example shows how to overload `operator<` in order to enable users of a `std::set` to do lookups simply by passing in a small string that can be compared to each object's `BigObject::id` member.  
   
-```  
+```cpp  
 #include <set>  
 #include <string>  
 #include <iostream>  

@@ -9,14 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1._1"
   - "_1"
-  - "std::tr1::_1"
-  - "functional/std::tr1::_1"
+  - "std::_1"
+  - "functional/std::_1"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "_1 object [TR1]"
+  - "_1 object"
 ms.assetid: 30c3c480-ff31-4708-94be-7d0d65f243c9
 caps.latest.revision: 24
 author: "corob-msft"

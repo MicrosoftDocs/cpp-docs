@@ -9,12 +9,33 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.lognormal_distribution"
-  - "tr1.lognormal_distribution"
-  - "tr1::lognormal_distribution"
-  - "std::tr1::lognormal_distribution"
   - "lognormal_distribution"
-  - "random/std::tr1::lognormal_distribution"
+  - "std::lognormal_distribution"
+  - "random/std::lognormal_distribution"
+  - "std::lognormal_distribution::reset"
+  - "random/std::lognormal_distribution::reset"
+  - "std::lognormal_distribution::m"
+  - "random/std::lognormal_distribution::m"
+  - "std::lognormal_distribution::s"
+  - "random/std::lognormal_distribution::s"
+  - "std::lognormal_distribution::param"
+  - "random/std::lognormal_distribution::param"
+  - "std::lognormal_distribution::min"
+  - "random/std::lognormal_distribution::min"
+  - "std::lognormal_distribution::max"
+  - "random/std::lognormal_distribution::max"
+  - "std::lognormal_distribution::operator()"
+  - "random/std::lognormal_distribution::operator()"
+  - "std::lognormal_distribution::param_type"
+  - "random/std::lognormal_distribution::param_type"
+  - "std::lognormal_distribution::param_type::m"
+  - "random/std::lognormal_distribution::param_type::m"
+  - "std::lognormal_distribution::param_type::s"
+  - "random/std::lognormal_distribution::param_type::s"
+  - "std::lognormal_distribution::param_type::operator=="
+  - "random/std::lognormal_distribution::param_type::operator=="
+  - "std::lognormal_distribution::param_type::operator!="
+  - "random/std::lognormal_distribution::param_type::operator!="
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -44,12 +65,15 @@ Generates a log normal distribution.
   
 ## Syntax  
 ```  
+template <class RealType = double>  
 class lognormal_distribution  
    {  
-   public:  // types  
+public:  
+   // types  
    typedef RealType result_type;  
-   struct param_type;  // constructor and reset functions  
-   explicit lognormal_distribution(RealType m = 0.0, RealType s = 1.0);
+   struct param_type;  
+   // constructor and reset functions  
+   explicit lognormal_distribution(result_type m = 0.0, result_type s = 1.0);
    explicit lognormal_distribution(const param_type& parm);
    void reset();
    // generating functions  
@@ -58,31 +82,39 @@ class lognormal_distribution
    template <class URNG>  
    result_type operator()(URNG& gen, const param_type& parm);
    // property functions  
-   RealType m() const;
-   RealType s() const;
+   result_type m() const;
+   result_type s() const;
    param_type param() const;
    void param(const param_type& parm);
    result_type min() const;
    result_type max() const;
    };  
 ```  
-#### Parameters  
- `RealType`  
- The floating-point result type, defaults to `double`. For possible types, see [\<random>](../standard-library/random.md).  
+### Parameters  
+*RealType*  
+The floating-point result type, defaults to `double`. For possible types, see [\<random>](../standard-library/random.md).  
   
 ## Remarks  
- The template class describes a distribution that produces values of a user-specified integral type, or type `double` if none is provided, distributed according to the Log Normal Distribution. The following table links to articles about individual members.  
+The template class describes a distribution that produces values of a user-specified integral type, or type `double` if none is provided, distributed according to the Log Normal Distribution. The following table links to articles about individual members.  
   
 ||||  
 |-|-|-|  
 |[lognormal_distribution::lognormal_distribution](#lognormal_distribution__lognormal_distribution)|`lognormal_distribution::m`|`lognormal_distribution::param`|  
 |`lognormal_distribution::operator()`|`lognormal_distribution::s`|[lognormal_distribution::param_type](#lognormal_distribution__param_type)|  
   
- The property functions `m()` and `s()` return the values for the stored distribution parameters `m` and `s` respectively.  
+The property functions `m()` and `s()` return the values for the stored distribution parameters *m* and *s*, respectively.  
   
- For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
+The property member `param()` sets or returns the `param_type` stored distribution parameter package.  
+
+The `min()` and `max()` member functions return the smallest possible result and largest possible result, respectively.  
   
- For detailed information about the LogNormal distribution, see the Wolfram MathWorld article [LogNormal Distribution](http://go.microsoft.com/fwlink/LinkId=400917).  
+The `reset()` member function discards any cached values, so that the result of the next call to `operator()` does not depend on any values obtained from the engine before the call.  
+  
+The `operator()` member functions return the next generated value based on the URNG engine, either from the current parameter package, or the specified parameter package.
+  
+For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
+  
+For detailed information about the LogNormal distribution, see the Wolfram MathWorld article [LogNormal Distribution](http://go.microsoft.com/fwlink/LinkId=400917).  
   
 ## Example  
   
@@ -143,12 +175,9 @@ int main()
   
     test(m_dist, s_dist, samples);  
 }  
-  
 ```  
   
-## Output  
-  
-```  
+```Output  
 Use CTRL-Z to bypass data entry and run using default values.  
 Enter a floating point value for the 'm' distribution parameter: 0  
 Enter a floating point value for the 's' distribution parameter (must be greater than zero): 1  
@@ -181,49 +210,55 @@ Distribution for 10 samples:
   
 ```  
 explicit lognormal_distribution(RealType m = 0.0, RealType s = 1.0);
-
- 
 explicit lognormal_distribution(const param_type& parm);
 ```  
   
 ### Parameters  
- `m`  
- The `m` distribution parameter.  
+*m*  
+The `m` distribution parameter.  
   
- `s`  
- The `s` distribution parameter.  
+*s*  
+The `s` distribution parameter.  
   
- `parm`  
- The parameter structure used to construct the distribution.  
+*parm*  
+The `param_type` structure used to construct the distribution.  
   
 ### Remarks  
- **Precondition:** `0.0 < s`  
+**Precondition:** `0.0 < s`  
   
- The first constructor constructs an object whose stored `m` value holds the value `m` and whose stored `s` value holds the value `s`.  
+The first constructor constructs an object whose stored `m` value holds the value *m* and whose stored `s` value holds the value *s*.  
   
- The second constructor constructs an object whose stored parameters are initialized from `parm`. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
+The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
 ##  <a name="lognormal_distribution__param_type"></a>  lognormal_distribution::param_type  
- Stores the parameters of the distribution.  
+Stores the parameters of the distribution.  
+  
 ```  
 struct param_type {  
-   typedef lognormal_distribution<RealType> distribution_type;  
-   param_type(RealType m = 0.0, RealType s = 1.0);
-   RealType m() const;
-   RealType s() const;
-   .....  
+   typedef lognormal_distribution<result_type> distribution_type;  
+   param_type(result_type m = 0.0, result_type s = 1.0);
+   result_type m() const;
+   result_type s() const;
+
    bool operator==(const param_type& right) const;
    bool operator!=(const param_type& right) const;
-   };  
+};  
 ```    
 ### Parameters  
- See parent topic [lognormal_distribution Class](../standard-library/lognormal-distribution-class.md).  
+*m*  
+The `m` distribution parameter.  
+  
+*s*  
+The `s` distribution parameter.  
+  
+*right*  
+The `param_type` structure used to compare.  
   
 ### Remarks  
- **Precondition:** `0.0 < s`  
+**Precondition:** `0.0 < s`  
   
- This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
+This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
   
 ## See Also  
- [\<random>](../standard-library/random.md)
+[\<random>](../standard-library/random.md)
 

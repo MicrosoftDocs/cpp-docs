@@ -13,7 +13,7 @@ f1_keywords:
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "unordered_set header [TR1]"
+  - "unordered_set header"
 ms.assetid: a3364d54-147d-4796-8728-9e62a2e4c226
 caps.latest.revision: 20
 author: "corob-msft"

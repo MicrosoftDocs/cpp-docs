@@ -11,7 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
   - "is_trivial"
-  - "std.is_trivial"
   - "std::is_trivial"
   - "type_traits/std::is_trivial"
 dev_langs: 
@@ -57,7 +56,7 @@ struct is_trivial;
  An instance of the type predicate holds true if the type `T` is a trivial type, otherwise it holds false. Trivial types are scalar types, trivially copyable class types, arrays of these types and cv-qualified versions of these types.  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

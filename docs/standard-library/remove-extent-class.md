@@ -9,16 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::remove_extent"
-  - "std.tr1.remove_extent"
   - "remove_extent"
-  - "std.remove_extent"
   - "std::remove_extent"
   - "type_traits/std::remove_extent"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "remove_extent class [TR1]"
+  - "remove_extent class"
   - "remove_extent"
 ms.assetid: b9320862-3891-49fc-80bc-571eb2c035cf
 caps.latest.revision: 20
@@ -79,7 +76,6 @@ int main()
         << std::endl;   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -89,7 +85,7 @@ remove_extent_t<int[5][10]> == int [10]
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

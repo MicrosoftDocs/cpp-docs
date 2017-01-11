@@ -9,16 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.add_cv"
   - "add_cv"
-  - "std::tr1::add_cv"
-  - "std.add_cv"
   - "std::add_cv"
   - "type_traits/std::add_cv"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "add_cv class [TR1]"
+  - "add_cv class"
   - "add_cv"
 ms.assetid: a5572c78-a097-45d7-b476-ed4876889dea
 caps.latest.revision: 20
@@ -41,53 +38,78 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # add_cv Class
-Makes const/volatile type from type.  
+Makes const volatile type from type.  
   
 ## Syntax  
   
 ```  
-template <class Ty>  
+template <class T>  
 struct add_cv;  
  
-template <class T>using add_cv_t = typename add_cv<T>::type;  
+template <class T>
+using add_cv_t = typename add_cv<T>::type;  
 ```  
   
 #### Parameters  
- `Ty`  
- The type to modify.  
+*T*  
+The type to modify.  
   
 ## Remarks  
- An instance of the type modifier holds the modified-type [add_volatile Class](../standard-library/add-volatile-class.md)`<` [add_const Class](../standard-library/add-const-class.md)`<Ty> >`.  
+An instance of the modified type `add_cv<T>` has a `type` member typedef equivalent to *T* modified by both [add_volatile](../standard-library/add-volatile-class.md) and [add_const](../standard-library/add-const-class.md), unless *T* already has the cv-qualifiers, is a reference, or is a function.  
+  
+The `add_cv_t<T>` helper type is a shortcut to access the `add_cv<T>` member typedef `type`.
   
 ## Example  
   
 ```cpp  
+// add_cv.cpp
+// compile by using: cl /EHsc /W4 add_cv.cpp
 #include <type_traits>   
 #include <iostream>   
-  
-int main()   
-    {   
-    std::add_cv_t<int> *p = (const volatile int *)0;   
-  
-    p = p;  // to quiet "unused" warning   
-    std::cout << "add_cv<int> == "   
-        << typeid(*p).name() << std::endl;   
-  
-    return (0);   
-    }  
-  
+
+struct S {
+    void f() { 
+        std::cout << "invoked non-cv-qualified S.f()" << std::endl; 
+    }
+    void f() const { 
+        std::cout << "invoked const S.f()" << std::endl; 
+    }
+    void f() volatile { 
+        std::cout << "invoked volatile S.f()" << std::endl; 
+    }
+    void f() const volatile { 
+        std::cout << "invoked const volatile S.f()" << std::endl; 
+    }
+};
+
+template <class T>
+void invoke() {
+    T t;
+    ((T *)&t)->f(); 
+}
+
+int main()
+{
+    invoke<S>();
+    invoke<std::add_const<S>::type>();
+    invoke<std::add_volatile<S>::type>();
+    invoke<std::add_cv<S>::type>();
+}  
 ```  
   
 ```Output  
-add_cv_t<int> == int  
+invoked non-cv-qualified S.f()
+invoked const S.f()
+invoked volatile S.f()
+invoked const volatile S.f()  
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+**Header:** <type_traits>  
   
- **Namespace:** std  
+**Namespace:** std  
   
 ## See Also  
- [<type_traits>](../standard-library/type-traits.md)   
- [remove_const Class](../standard-library/remove-const-class.md)   
- [remove_volatile Class](../standard-library/remove-volatile-class.md)
+[<type_traits>](../standard-library/type-traits.md)   
+[remove_const Class](../standard-library/remove-const-class.md)   
+[remove_volatile Class](../standard-library/remove-volatile-class.md)

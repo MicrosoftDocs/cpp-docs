@@ -9,16 +9,32 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::exponential_distribution"
   - "exponential_distribution"
-  - "tr1::exponential_distribution"
-  - "tr1.exponential_distribution"
-  - "random/std::tr1::exponential_distribution"
-  - "std.tr1.exponential_distribution"
+  - "std::exponential_distribution"
+  - "random/std::exponential_distribution"
+  - "std::exponential_distribution::reset"
+  - "random/std::exponential_distribution::reset"
+  - "std::exponential_distribution::lambda"
+  - "random/std::exponential_distribution::lambda"
+  - "std::exponential_distribution::param"
+  - "random/std::exponential_distribution::param"
+  - "std::exponential_distribution::min"
+  - "random/std::exponential_distribution::min"
+  - "std::exponential_distribution::max"
+  - "random/std::exponential_distribution::max"
+  - "std::exponential_distribution::operator()"
+  - "random/std::exponential_distribution::operator()"
+  - "std::exponential_distribution::param_type"
+  - "random/std::exponential_distribution::param_type"
+  - "std::exponential_distribution::param_type::lambda"
+  - "random/std::exponential_distribution::param_type::lambda"
+  - "std::exponential_distribution::param_type::operator=="
+  - "random/std::exponential_distribution::param_type::operator=="
+  - "std::exponential_distribution::param_type::operator!="
+  - "random/std::exponential_distribution::param_type::operator!="
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "exponential_distribution class [TR1]"
   - "exponential_distribution class"
 ms.assetid: d54f3126-a09b-45f9-a30b-0d94d03bcdc9
 caps.latest.revision: 18
@@ -44,31 +60,42 @@ translation.priority.ht:
 Generates an exponential distribution.  
   
 ## Syntax  
+  
 ```  
+template<class RealType = double>
 class exponential_distribution  
    {  
-   public:  // types  
+public:  
+   // types  
    typedef RealType result_type;  
-   struct param_type;  // constructors and reset functions  
-   explicit exponential_distribution(RealType lambda = 1.0);
+   struct param_type;  
+   
+   // constructors and reset functions  
+   explicit exponential_distribution(result_type lambda = 1.0);
    explicit exponential_distribution(const param_type& parm);
    void reset();
+   
    // generating functions  
    template <class URNG>  
    result_type operator()(URNG& gen);
    template <class URNG>  
    result_type operator()(URNG& gen, const param_type& parm);
+   
    // property functions  
-   RealType lambda() const;
+   result_type lambda() const;
    param_type param() const;
    void param(const param_type& parm);
    result_type min() const;
    result_type max() const;
    };  
 ``` 
-#### Parameters  
- `RealType`  
- The floating-point result type, defaults to `double`. For possible types, see [\<random>](../standard-library/random.md).  
+### Parameters  
+*RealType*  
+The floating-point result type, defaults to `double`. For possible types, see [\<random>](../standard-library/random.md).  
+  
+*URNG*
+The random number generator engine. For possible types, see [\<random>](../standard-library/random.md).
+  
   
 ## Remarks  
  The template class describes a distribution that produces values of a user-specified integral type, or type `double` if none is provided, distributed according to the Exponential Distribution. The following table links to articles about individual members.  
@@ -78,11 +105,13 @@ class exponential_distribution
 |[exponential_distribution::exponential_distribution](#exponential_distribution__exponential_distribution)|`exponential_distribution::lambda`|`exponential_distribution::param`|  
 |`exponential_distribution::operator()`||[exponential_distribution::param_type](#exponential_distribution__param_type)|  
   
- The property function `lambda()` returns the value for the stored distribution parameter `lambda`.  
+The property member function `lambda()` returns the value for the stored distribution parameter `lambda`.  
   
- For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
+The property member function `param()` sets or returns the `param_type` stored distribution parameter package.  
   
- For detailed information about the exponential distribution, see the Wolfram MathWorld article [Exponential Distribution](http://go.microsoft.com/fwlink/LinkId=401098).  
+For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
+  
+For detailed information about the exponential distribution, see the Wolfram MathWorld article [Exponential Distribution](http://go.microsoft.com/fwlink/LinkId=401098).  
   
 ## Example  
   
@@ -139,9 +168,7 @@ int main()
   
 ```  
   
-## Output  
-  
-```  
+```Output  
 Use CTRL-Z to bypass data entry and run using default values.  
 Enter a floating point value for the 'lambda' distribution parameter (must be greater than zero): 1  
 Enter an integer value for the sample count: 10  
@@ -171,46 +198,50 @@ Distribution for 10 samples:
  Constructs the distribution.  
   
 ```  
-explicit exponential_distribution(RealType lambda = 1.0);
-
- 
+explicit exponential_distribution(result_type lambda = 1.0);
 explicit exponential_distribution(const param_type& parm);
 ```  
   
 ### Parameters  
- `lambda`  
+*lambda*  
  The `lambda` distribution parameter.  
   
- `parm`  
+*parm*  
  The parameter package used to construct the distribution.  
   
 ### Remarks  
- **Precondition:** `0.0 < lambda`  
+**Precondition:** `0.0 < lambda`  
   
- The first constructor constructs an object whose stored `lambda` value holds the value `lambda`.  
+The first constructor constructs an object whose stored `lambda` value holds the value *lambda*.  
   
- The second constructor constructs an object whose stored parameters are initialized from `parm`. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
+The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
 ##  <a name="exponential_distribution__param_type"></a>  exponential_distribution::param_type  
- Stores the parameters of the distribution.  
+Stores the parameters of the distribution.  
   
+```
 struct param_type {  
-   typedef exponential_distribution\<RealType> distribution_type;  
-   param_type(RealType lambda = 1.0);
-   RealType lambda() const;
-   .....  
+   typedef exponential_distribution<result_type> distribution_type;  
+   param_type(result_type lambda = 1.0);
+   result_type lambda() const;
+
    bool operator==(const param_type& right) const;
    bool operator!=(const param_type& right) const;
-   };  
+   };
+```  
   
 ### Parameters  
- See parent topic [exponential_distribution Class](../standard-library/exponential-distribution-class.md).  
+*lambda*  
+The `lambda` distribution parameter.  
+  
+*right*  
+The `param_type` object to compare to this.  
   
 ### Remarks  
- **Precondition:** `0.0 < lambda`  
+**Precondition:** `0.0 < lambda`  
   
- This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
+This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
   
 ## See Also  
- [\<random>](../standard-library/random.md)
+[\<random>](../standard-library/random.md)
 

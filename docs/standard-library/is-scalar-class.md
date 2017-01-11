@@ -9,16 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.is_scalar"
-  - "std::tr1::is_scalar"
   - "is_scalar"
-  - "std.is_scalar"
   - "std::is_scalar"
   - "type_traits/std::is_scalar"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_scalar class [TR1]"
+  - "is_scalar class"
   - "is_scalar"
 ms.assetid: a0cdfc9a-f27e-4808-890f-6ed7942db60c
 caps.latest.revision: 19
@@ -60,7 +57,7 @@ struct is_scalar;
 ## Example  
   
 ```cpp  
-// std_tr1__type_traits__is_scalar.cpp   
+// std__type_traits__is_scalar.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   
@@ -94,7 +91,7 @@ is_scalar<float> == true
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

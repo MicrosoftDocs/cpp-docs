@@ -9,12 +9,33 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.weibull_distribution"
   - "weibull_distribution"
-  - "tr1::weibull_distribution"
-  - "std::tr1::weibull_distribution"
-  - "tr1.weibull_distribution"
-  - "random/std::tr1::weibull_distribution"
+  - "std::weibull_distribution"
+  - "random/std::weibull_distribution"
+  - "std::weibull_distribution::reset"
+  - "random/std::weibull_distribution::reset"
+  - "std::weibull_distribution::a"
+  - "random/std::weibull_distribution::a"
+  - "std::weibull_distribution::b"
+  - "random/std::weibull_distribution::b"
+  - "std::weibull_distribution::param"
+  - "random/std::weibull_distribution::param"
+  - "std::weibull_distribution::min"
+  - "random/std::weibull_distribution::min"
+  - "std::weibull_distribution::max"
+  - "random/std::weibull_distribution::max"
+  - "std::weibull_distribution::operator()"
+  - "random/std::weibull_distribution::operator()"
+  - "std::weibull_distribution::param_type"
+  - "random/std::weibull_distribution::param_type"
+  - "std::weibull_distribution::param_type::a"
+  - "random/std::weibull_distribution::param_type::a"
+  - "std::weibull_distribution::param_type::b"
+  - "random/std::weibull_distribution::param_type::b"
+  - "std::weibull_distribution::param_type::operator=="
+  - "random/std::weibull_distribution::param_type::operator=="
+  - "std::weibull_distribution::param_type::operator!="
+  - "random/std::weibull_distribution::param_type::operator!="
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -50,20 +71,21 @@ class weibull_distribution
     // types  
    typedef RealType result_type;  
    struct param_type; 
+
     // constructor and reset functions  
-   explicit weibull_distribution(RealType a = 1.0, RealType b = 1.0);
+   explicit weibull_distribution(result_type a = 1.0, result_type b = 1.0);
    explicit weibull_distribution(const param_type& parm);
    void reset();
 
    // generating functions  
    template <class URNG>  
-   result_type operator()(URNG& gen);
+      result_type operator()(URNG& gen);
    template <class URNG>  
-   result_type operator()(URNG& gen, const param_type& parm);
+      result_type operator()(URNG& gen, const param_type& parm);
    
    // property functions  
-   RealType a() const;
-   RealType b() const;
+   result_type a() const;
+   result_type b() const;
    param_type param() const;
    void param(const param_type& parm);
    result_type min() const;
@@ -71,22 +93,30 @@ class weibull_distribution
    };  
 ```   
 #### Parameters  
- `RealType`  
- The floating-point result type, defaults to `double`. For possible types, see [\<random>](../standard-library/random.md).  
+*RealType*  
+The floating-point result type, defaults to `double`. For possible types, see [\<random>](../standard-library/random.md).  
   
 ## Remarks  
- The template class describes a distribution that produces values of a user-specified integral type, or type `double` if none is provided, distributed according to the Weibull Distribution. The following table links to articles about individual members.  
+The template class describes a distribution that produces values of a user-specified floating point type, or type `double` if none is provided, distributed according to the Weibull Distribution. The following table links to articles about individual members.  
   
 ||||  
 |-|-|-|  
 |[weibull_distribution::weibull_distribution](#weibull_distribution__weibull_distribution)|`weibull_distribution::a`|`weibull_distribution::param`|  
 |`weibull_distribution::operator()`|`weibull_distribution::b`|[weibull_distribution::param_type](#weibull_distribution__param_type)|  
   
- The property functions `a()` and `b()` return their respective values for stored distribution parameters `a` and `b`.  
+The property functions `a()` and `b()` return their respective values for stored distribution parameters *a* and *b*.  
   
- For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
+The property member `param()` sets or returns the `param_type` stored distribution parameter package.  
+
+The `min()` and `max()` member functions return the smallest possible result and largest possible result, respectively.  
   
- For detailed information about the Weibull distribution, see the Wolfram MathWorld article [Weibull Distribution](http://go.microsoft.com/fwlink/LinkId=401115).  
+The `reset()` member function discards any cached values, so that the result of the next call to `operator()` does not depend on any values obtained from the engine before the call.  
+  
+The `operator()` member functions return the next generated value based on the URNG engine, either from the current parameter package, or the specified parameter package.
+  
+For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
+  
+For detailed information about the Weibull distribution, see the Wolfram MathWorld article [Weibull Distribution](http://go.microsoft.com/fwlink/LinkId=401115).  
   
 ## Example  
   
@@ -151,7 +181,7 @@ int main()
 ## Output  
  First run:  
   
-```  
+```Output  
 Use CTRL-Z to bypass data entry and run using default values.  
 Enter a floating point value for the 'a' distribution parameter (must be greater than zero): 1  
 Enter a floating point value for the 'b' distribution parameter (must be greater than zero): 1  
@@ -176,7 +206,7 @@ Distribution for 10 samples:
   
  Second run:  
   
-```  
+```Output  
 Use CTRL-Z to bypass data entry and run using default values.  
 Enter a floating point value for the 'a' distribution parameter (must be greater than zero): .5  
 Enter a floating point value for the 'b' distribution parameter (must be greater than zero): 5.5  
@@ -207,49 +237,54 @@ Distribution for 10 samples:
 ##  <a name="weibull_distribution__weibull_distribution"></a>  weibull_distribution::weibull_distribution  
   
 ```  
-explicit weibull_distribution(RealType a = 1.0, RealType b = 1.0);
-
- 
+explicit weibull_distribution(result_type a = 1.0, result_type b = 1.0);
 explicit weibull_distribution(const param_type& parm);
 ```  
   
 ### Parameters  
- `a`  
- The `a` distribution parameter.  
+*a*  
+The `a` distribution parameter.  
   
- `b`  
- The `b` distribution parameter.  
+*b*  
+The `b` distribution parameter.  
   
- `parm`  
- The parameter structure used to construct the distribution.  
+*parm*  
+The `param_type` structure used to construct the distribution.  
   
 ### Remarks  
  **Precondition:** `0.0 < a` and `0.0 < b`  
   
- The first constructor constructs an object whose stored `a`value holds the value `a` and whose stored `b` value holds the value `b`.  
+ The first constructor constructs an object whose stored `a`value holds the value *a* and whose stored `b` value holds the value *b*.  
   
- The second constructor constructs an object whose stored parameters are initialized from `parm`. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
+ The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
 ##  <a name="weibull_distribution__param_type"></a>  weibull_distribution::param_type  
  Stores the parameters of the distribution.  
-```cpp  
+```  
 struct param_type {  
-   typedef weibull_distribution<RealType> distribution_type;  
-   param_type(RealType a = 1.0, RealType b = 1.0);
-   RealType a() const;
-   RealType b() const;
-   .....  
+   typedef weibull_distribution<result_type> distribution_type;  
+   param_type(result_type a = 1.0, result_type b = 1.0);
+   result_type a() const;
+   result_type b() const;
+
    bool operator==(const param_type& right) const;
    bool operator!=(const param_type& right) const;
    };  
 ```
 ### Parameters  
- See parent topic [weibull_distribution Class](../standard-library/weibull-distribution-class.md).  
+*a*  
+The `a` distribution parameter.  
+  
+*b*  
+The `b` distribution parameter.  
+  
+*right*  
+The `param_type` object to compare to this.  
   
 ### Remarks  
- **Precondition:** `0.0 < a` and `0.0 < b`  
+**Precondition:** `0.0 < a` and `0.0 < b`  
   
- This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
+This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
   
 ## See Also  
  [\<random>](../standard-library/random.md)

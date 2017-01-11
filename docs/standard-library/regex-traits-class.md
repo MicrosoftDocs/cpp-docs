@@ -10,12 +10,44 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "regex_traits"
-  - "std::tr1::regex_traits"
-  - "std.tr1.regex_traits"
+  - "std::regex_traits"
+  - "regex/std::regex_traits"
+  - "std::regex_traits::char_type"
+  - "regex/std::regex_traits::char_type"
+  - "std::regex_traits::size_type"
+  - "regex/std::regex_traits::size_type"
+  - "std::regex_traits::string_type"
+  - "regex/std::regex_traits::string_type"
+  - "std::regex_traits::locale_type"
+  - "regex/std::regex_traits::locale_type"
+  - "std::regex_traits::char_class_type"
+  - "regex/std::regex_traits::char_class_type"
+  - "std::regex_traits::length"
+  - "regex/std::regex_traits::length"
+  - "std::regex_traits::translate"
+  - "regex/std::regex_traits::translate"
+  - "std::regex_traits::translate_nocase"
+  - "regex/std::regex_traits::translate_nocase"
+  - "std::regex_traits::transform"
+  - "regex/std::regex_traits::transform"
+  - "std::regex_traits::transform_primary"
+  - "regex/std::regex_traits::transform_primary"
+  - "std::regex_traits::lookup_classname"
+  - "regex/std::regex_traits::lookup_classname"
+  - "std::regex_traits::lookup_collatename"
+  - "regex/std::regex_traits::lookup_collatename"
+  - "std::regex_traits::isctype"
+  - "regex/std::regex_traits::isctype"
+  - "std::regex_traits::value"
+  - "regex/std::regex_traits::value"
+  - "std::regex_traits::imbue"
+  - "regex/std::regex_traits::imbue"
+  - "std::regex_traits::getloc"
+  - "regex/std::regex_traits::getloc"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "regex_traits class [TR1]"
+  - "regex_traits class"
 ms.assetid: bc5a5eed-32fc-4eb7-913d-71c42e729e81
 caps.latest.revision: 19
 author: "corob-msft"
@@ -41,7 +73,15 @@ Describes characteristics of elements for matching.
   
 ## Syntax  
 ```  
-struct regex_traits {  
+template<class Elem>
+class regex_traits {  
+public:  
+   typedef Elem char_type;  
+   typedef size_t size_type;  
+   typedef basic_string<Elem> string_type;  
+   typedef locale locale_type;  
+   typedef ctype_base::mask char_class_type;  
+
    regex_traits();
    static size_type length(const char_type *str);
    char_type translate(char_type ch) const;
@@ -55,20 +95,14 @@ struct regex_traits {
    template <class FwdIt>  
    string_type lookup_collatename(FwdIt first, FwdIt last) const;
    bool isctype(char_type ch, char_class_type cls) const;
-   int value(Elem ch, int base) const;
+   int value(char_type ch, int base) const;
    locale_type imbue(locale_type loc);
    locale_type getloc() const;
-   typedef Elem char_type;  
-   typedef T6 size_type;  
-   typedef basic_string<Elem>  
-   string_type;  
-   typedef T7 locale_type;  
-   typedef T8 char_class_type;  
-   };  
+};  
  ``` 
 #### Parameters  
  `Elem`  
- The element type to describe.  
+ The character element type to describe.  
   
 ## Remarks  
  The template class describes various regular expression traits for type `Elem`. The template class [basic_regex Class](../standard-library/basic-regex-class.md) uses this information to manipulate elements of type `Elem`.  
@@ -93,7 +127,7 @@ typedef T8 char_class_type;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_traits_char_class_type.cpp   
+// std__regex__regex_traits_char_class_type.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -174,7 +208,7 @@ typedef Elem char_type;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_traits_char_type.cpp   
+// std__regex__regex_traits_char_type.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -255,7 +289,7 @@ locale_type getloc() const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_traits_getloc.cpp   
+// std__regex__regex_traits_getloc.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -340,7 +374,7 @@ locale_type imbue(locale_type loc);
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_traits_imbue.cpp   
+// std__regex__regex_traits_imbue.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -428,7 +462,7 @@ bool isctype(char_type ch, char_class_type cls) const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_traits_isctype.cpp   
+// std__regex__regex_traits_isctype.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -513,7 +547,7 @@ static size_type length(const char_type *str);
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_traits_length.cpp   
+// std__regex__regex_traits_length.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -594,7 +628,7 @@ typedef T7 locale_type;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_traits_locale_type.cpp   
+// std__regex__regex_traits_locale_type.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -687,7 +721,7 @@ char_class_type lookup_classname(FwdIt first, FwdIt last) const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_traits_lookup_classname.cpp   
+// std__regex__regex_traits_lookup_classname.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -776,7 +810,7 @@ string_type lookup_collatename(FwdIt first, FwdIt last) const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_traits_lookup_collatename.cpp   
+// std__regex__regex_traits_lookup_collatename.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -857,7 +891,7 @@ regex_traits();
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_traits_construct.cpp   
+// std__regex__regex_traits_construct.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -940,7 +974,7 @@ typedef T6 size_type;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_traits_size_type.cpp   
+// std__regex__regex_traits_size_type.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -1021,7 +1055,7 @@ typedef basic_string<Elem> string_type;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_traits_string_type.cpp   
+// std__regex__regex_traits_string_type.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -1110,7 +1144,7 @@ string_type transform(FwdIt first, FwdIt last) const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_traits_transform.cpp   
+// std__regex__regex_traits_transform.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -1199,7 +1233,7 @@ string_type transform_primary(FwdIt first, FwdIt last) const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_traits_transform_primary.cpp   
+// std__regex__regex_traits_transform_primary.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -1284,7 +1318,7 @@ char_type translate(char_type ch) const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_traits_translate.cpp   
+// std__regex__regex_traits_translate.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -1369,7 +1403,7 @@ char_type translate_nocase(char_type ch) const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_traits_translate_nocase.cpp   
+// std__regex__regex_traits_translate_nocase.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -1457,7 +1491,7 @@ int value(Elem ch, int radix) const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_traits_value.cpp   
+// std__regex__regex_traits_value.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -1526,8 +1560,14 @@ hex C == 12
 ```  
   
 ## See Also  
- [\<regex>](../standard-library/regex.md)   
- [regex_traits](../standard-library/regex-traits-class.md)   
+[\<regex>](../standard-library/regex.md)  
+[regex_constants Class](../standard-library/regex-constants-class.md)  
+[regex_error Class](../standard-library/regex-error-class.md)  
+[\<regex> functions](../standard-library/regex-functions.md)  
+[regex_iterator Class](../standard-library/regex-iterator-class.md)  
+[\<regex> operators](../standard-library/regex-operators.md)  
+[regex_token_iterator Class](../standard-library/regex-token-iterator-class.md)  
+[\<regex> typedefs](../standard-library/regex-typedefs.md)  
  [regex_traits\<char> Class](../standard-library/regex-traits-char-class.md)   
- [regex_traits<wchar_t> Class](../standard-library/regex-traits-wchar-t-class.md)
+ [regex_traits\<wchar_t> Class](../standard-library/regex-traits-wchar-t-class.md)
 

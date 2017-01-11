@@ -10,15 +10,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "is_union"
-  - "std::tr1::is_union"
-  - "std.tr1.is_union"
-  - "std.is_union"
   - "std::is_union"
   - "type_traits/std::is_union"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_union class [TR1]"
+  - "is_union class"
   - "is_union"
 ms.assetid: 80eda256-40b8-4db5-9ac1-d58bb8032a3e
 caps.latest.revision: 19
@@ -60,7 +57,7 @@ struct is_union;
 ## Example  
   
 ```cpp  
-// std_tr1__type_traits__is_union.cpp   
+// std__type_traits__is_union.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   
@@ -97,7 +94,7 @@ is_union<ints> == true
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

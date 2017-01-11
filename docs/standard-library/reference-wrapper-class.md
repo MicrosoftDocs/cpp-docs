@@ -9,17 +9,18 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.reference_wrapper"
-  - "tr1.reference_wrapper"
   - "reference_wrapper"
-  - "tr1::reference_wrapper"
-  - "xrefwrap/std::tr1::reference_wrapper"
-  - "std::tr1::reference_wrapper"
+  - "std::reference_wrapper"
+  - "functional/std::reference_wrapper"
+  - "type_traits/std::reference_wrapper"
+  - "xrefwrap/std::reference_wrapper"
+  - "type_traits/std::reference_wrapper::get"
+  - "type_traits/std::reference_wrapper::operator()"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "reference_wrapper class"
-  - "reference_wrapper class [TR1]"
+  - "reference_wrapper"
 ms.assetid: 90b8ed62-e6f1-44ed-acc7-9619bd58865a
 caps.latest.revision: 21
 author: "corob-msft"
@@ -48,100 +49,79 @@ Wraps a reference.
 ```  
 template <class Ty>  
 class reference_wrapper  
- : public unary_function<T1, Ret>        // see below  
- : public binary_function<T1, T2, Ret>   // see below  
- {  
+{  
 public:  
     typedef Ty type;  
-    typedef T0 result_type; // see below  
  
-    reference_wrapper(Ty&);
+    reference_wrapper(Ty&) noexcept;
+    operator Ty&() const noexcept;
+    Ty& get() const noexcept;
 
- 
-    Ty& get() const;
-
- operator Ty&() const;
-
- 
-    template <class T1, class T2, ..., class TN>  
-typename result_of<T(T1, T2, ..., TN)>::type operator()(T1&, T2&, ..., TN&);
-
+    template <class... Types> 
+    auto operator()(Types&&... args) const ->
+        decltype(std::invoke(get(), std::forward<Types>(args)...));
  
 private:  
     Ty *ptr; // exposition only  
- };  
+};  
 ```  
   
 ## Remarks  
- A `reference_wrapper<Ty>` is copy constructible and assignable, and holds a pointer that points to an object of type `Ty`.  
+A `reference_wrapper<Ty>` is a copy constructible and copy assignable wrapper around a reference to an object or a function of type `Ty`, and holds a pointer that points to an object of that type. A `reference_wrapper` can be used to store references in standard containers, and to pass objects by reference to `std::bind`.  
   
- A specialization `reference_wrapper<Ty>` is derived from `std::unary_function<T1, Ret>` (hence defining the nested type `result_type` as a synonym for `Ret` and the nested type `argument_type` as a synonym for `T1`) only if the type `Ty` is:  
+The type `Ty` must be an object type or a function type, or a static assert fails at compile time.  
   
- a function type or pointer to function type taking one argument of type `T1` and returning `Ret`; or  
-  
- a pointer to a member function `Ret T::f() cv`, where `cv` represents the member function's cv-qualifiers; the type `T1` is `cv``T*`; or  
-  
- a class type that is derived from `unary_function<T1, Ret>`.  
-  
- A specialization `reference_wrapper<Ty>` is derived from `std::binary_function<T1, T2, Ret>` (hence defining the nested type `result_type` as a synonym for `Ret`, the nested type `first_argument_type` as a synonym for `T1`, and the nested type `second_argument_type` as a synonym for `T2`) only if the type `Ty` is:  
-  
- a function type or pointer to function type taking two arguments of types `T1` and `T2` and returning `Ret`; or  
-  
- a pointer to a member function `Ret T::f(T2) cv`, where `cv` represents the member function's cv-qualifiers; the type `T1` is `cv``T*`; or  
-  
- a class type that is derived from `binary_function<T1, T2, Ret>`.  
+The helper functions [std::ref](functional-functions.md#ref_function) and [std::cref](functional-functions.md#cref_function) can be used to create `reference_wrapper` objects.  
   
 ### Constructors  
   
 |||  
 |-|-|  
-|[reference_wrapper::reference_wrapper](#reference_wrapper__reference_wrapper)|Constructs a `reference_wrapper`.|  
+|[reference_wrapper::reference_wrapper](#reference_wrapper)|Constructs a `reference_wrapper`.|  
   
 ### Typedefs  
   
 |||  
 |-|-|  
-|[reference_wrapper::result_type](#reference_wrapper__result_type)|The weak result type of the wrapped reference.|  
-|[reference_wrapper::type](#reference_wrapper__type)|The type of the wrapped reference.|  
+|[reference_wrapper::result_type](#result_type)|The weak result type of the wrapped reference.|  
+|[reference_wrapper::type](#type)|The type of the wrapped reference.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[reference_wrapper::get](#reference_wrapper__get)|Obtains the wrapped reference.|  
+|[reference_wrapper::get](#get)|Obtains the wrapped reference.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[reference_wrapper::operator Ty&amp;](#reference_wrapper__operator_ty_amp_)|Gets a pointer to the wrapped reference.|  
-|[reference_wrapper::operator()](#reference_wrapper__operator__)|Calls the wrapped reference.|  
-  
+|[reference_wrapper::operator Ty&amp;](#operator_ty_amp_)|Gets a pointer to the wrapped reference.|  
+|[reference_wrapper::operator()](#operator_call)|Calls the wrapped reference.|  
 ## Requirements  
  **Header:** \<functional>  
   
  **Namespace:** std  
   
-##  <a name="reference_wrapper__get"></a>  reference_wrapper::get  
+##  <a name="get"></a>  reference_wrapper::get  
  Obtains the wrapped reference.  
   
 ```  
-Ty& get() const;
+Ty& get() const noexcept;
 ```  
   
 ### Remarks  
- The member function returns `INVOKE(get(), t1, t2, ..., tN)`.  
+The member function returns the wrapped reference.  
   
 ### Example  
   
 ```cpp  
-// std_tr1__functional__reference_wrapper_get.cpp   
+// std__functional__reference_wrapper_get.cpp   
 // compile with: /EHsc   
 #include <functional>   
 #include <iostream>   
   
-int main()   
-    {   
+int main() {   
     int i = 1;   
     std::reference_wrapper<int> rwi(i);   
   
@@ -151,8 +131,7 @@ int main()
     std::cout << "i = " << i << std::endl;   
   
     return (0);   
-    }  
-  
+}  
 ```  
   
 ```Output  
@@ -161,13 +140,12 @@ rwi = 1
 i = -1  
 ```  
   
-##  <a name="reference_wrapper__operator_ty_amp_"></a>  reference_wrapper::operator Ty&amp;  
- Gets a pointer to the wrapped reference.  
+##  <a name="operator_ty_amp_"></a>  reference_wrapper::operator Ty&amp;  
+ Gets the wrapped reference.  
   
-```  operator Ty&() const;
 ```  
-  
-### Parameters  
+operator Ty&() const noexcept;
+```  
   
 ### Remarks  
  The member operator returns `*ptr`.  
@@ -175,13 +153,12 @@ i = -1
 ### Example  
   
 ```cpp  
-// std_tr1__functional__reference_wrapper_operator_cast.cpp   
+// std__functional__reference_wrapper_operator_cast.cpp   
 // compile with: /EHsc   
 #include <functional>   
 #include <iostream>   
   
-int main()   
-    {   
+int main() {   
     int i = 1;   
     std::reference_wrapper<int> rwi(i);   
   
@@ -189,8 +166,7 @@ int main()
     std::cout << "(int)rwi = " << (int)rwi << std::endl;   
   
     return (0);   
-    }  
-  
+}  
 ```  
   
 ```Output  
@@ -198,57 +174,54 @@ i = 1
 (int)rwi = 1  
 ```  
   
-##  <a name="reference_wrapper__operator__"></a>  reference_wrapper::operator()  
+##  <a name="operator_call"></a>  reference_wrapper::operator()  
  Calls the wrapped reference.  
   
 ```  
-template <class T1, class T2, ..., class TN>  
-typename result_of<T(T1, T2, ..., TN)>::type operator()(T1& t1, T2& t2, ..., TN& tN);
+template <class... Types>  
+auto operator()(Types&&... args);
 ```  
   
 ### Parameters  
- `TN`  
- The type of the Nth call argument.  
+ `Types`  
+ The argument list types.  
   
- `tN`  
- The Nth call argument.  
+ `args`  
+ The argument list.  
   
 ### Remarks  
- The template member operator returns `INVOKE(get(), t1, t2, ..., tN)`.  
+ The template member `operator()` returns `std::invoke(get(), std::forward<Types>(args)...)`.  
   
 ### Example  
   
 ```cpp  
-// std_tr1__functional__reference_wrapper_operator_call.cpp   
+// std__functional__reference_wrapper_operator_call.cpp   
 // compile with: /EHsc   
 #include <functional>   
 #include <iostream>   
   
-int neg(int val)   
-    {   
+int neg(int val) {   
     return (-val);   
-    }   
+}   
   
-int main()   
-    {   
+int main() {   
     std::reference_wrapper<int (int)> rwi(neg);   
   
     std::cout << "rwi(3) = " << rwi(3) << std::endl;   
   
     return (0);   
-    }  
-  
+}  
 ```  
   
 ```Output  
 rwi(3) = -3  
 ```  
   
-##  <a name="reference_wrapper__reference_wrapper"></a>  reference_wrapper::reference_wrapper  
+##  <a name="reference_wrapper"></a>  reference_wrapper::reference_wrapper  
  Constructs a `reference_wrapper`.  
   
 ```  
-explicit reference_wrapper(Ty& val);
+reference_wrapper(Ty& val) noexcept;
 ```  
   
 ### Parameters  
@@ -264,18 +237,16 @@ explicit reference_wrapper(Ty& val);
 ### Example  
   
 ```cpp  
-// std_tr1__functional__reference_wrapper_reference_wrapper.cpp   
+// std__functional__reference_wrapper_reference_wrapper.cpp   
 // compile with: /EHsc   
 #include <functional>   
 #include <iostream>   
   
-int neg(int val)   
-    {   
+int neg(int val) {   
     return (-val);   
-    }   
+}   
   
-int main()   
-    {   
+int main() {   
     int i = 1;   
     std::reference_wrapper<int> rwi(i);   
   
@@ -285,8 +256,7 @@ int main()
     std::cout << "i = " << i << std::endl;   
   
     return (0);   
-    }  
-  
+}  
 ```  
   
 ```Output  
@@ -295,31 +265,29 @@ rwi = 1
 i = -1  
 ```  
   
-##  <a name="reference_wrapper__result_type"></a>  reference_wrapper::result_type  
+##  <a name="result_type"></a>  reference_wrapper::result_type  
  The weak result type of the wrapped reference.  
   
 ```  
-typedef T0 result_type;  
+typedef R result_type;  
 ```  
   
 ### Remarks  
- The typedef is a synonym for the weak result type of a wrapped function.  
+ The `result_type` typedef is a synonym for the weak result type of a wrapped function. This typedef is only meaningful for function types.  
   
 ### Example  
   
 ```cpp  
-// std_tr1__functional__reference_wrapper_result_type.cpp   
+// std__functional__reference_wrapper_result_type.cpp   
 // compile with: /EHsc   
 #include <functional>   
 #include <iostream>   
   
-int neg(int val)   
-    {   
+int neg(int val) {   
     return (-val);   
-    }   
+}   
   
-int main()   
-    {   
+int main() {   
     typedef std::reference_wrapper<int (int)> Mywrapper;   
     Mywrapper rwi(neg);   
     Mywrapper::result_type val = rwi(3);   
@@ -327,15 +295,14 @@ int main()
     std::cout << "val = " << val << std::endl;   
   
     return (0);   
-    }  
-  
+}  
 ```  
   
 ```Output  
 val = -3  
 ```  
   
-##  <a name="reference_wrapper__type"></a>  reference_wrapper::type  
+##  <a name="type"></a>  reference_wrapper::type  
  The type of the wrapped reference.  
   
 ```  
@@ -348,18 +315,16 @@ typedef Ty type;
 ### Example  
   
 ```cpp  
-// std_tr1__functional__reference_wrapper_type.cpp   
+// std__functional__reference_wrapper_type.cpp   
 // compile with: /EHsc   
 #include <functional>   
 #include <iostream>   
   
-int neg(int val)   
-    {   
+int neg(int val) {   
     return (-val);   
-    }   
+}   
   
-int main()   
-    {   
+int main() {   
     int i = 1;   
     typedef std::reference_wrapper<int> Mywrapper;   
     Mywrapper rwi(i);   
@@ -369,8 +334,7 @@ int main()
     std::cout << "rwi = " << val << std::endl;   
   
     return (0);   
-    }  
-  
+}  
 ```  
   
 ```Output  

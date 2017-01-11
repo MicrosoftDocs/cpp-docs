@@ -1133,16 +1133,16 @@ void insert(
 |-|-|  
 |Parameter|Description|  
 |`_Where`|The position in the vector where the first element is inserted.|  
-|` val`|The value of the element being inserted into the vector.|  
-|` count`|The number of elements being inserted into the vector.|  
-|` first`|The position of the first element in the range of elements to be copied.|  
-|` last`|The position of the first element beyond the range of elements to be copied.|  
+|`val`|The value of the element being inserted into the vector.|  
+|`count`|The number of elements being inserted into the vector.|  
+|`first`|The position of the first element in the range of elements to be copied.|  
+|`last`|The position of the first element beyond the range of elements to be copied.|  
   
 ### Return Value  
  The first two `insert` functions return an iterator that points to the position where the new element was inserted into the vector.  
   
 ### Remarks  
- Any insertion operation can be expensive, see [vector Class](../standard-library/vector-class.md) for a discussion of `vector` performance.  
+ As a precondition, `first` and `last` must not be iterators into the vector, or the behavior is undefined. Any insertion operation can be expensive, see [vector Class](../standard-library/vector-class.md) for a discussion of `vector` performance.  
   
 ### Example  
   

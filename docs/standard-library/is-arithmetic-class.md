@@ -10,15 +10,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "is_arithmetic"
-  - "std.tr1.is_arithmetic"
-  - "std::tr1::is_arithmetic"
-  - "std.is_arithmetic"
   - "std::is_arithmetic"
   - "type_traits/std::is_arithmetic"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_arithmetic class [TR1]"
+  - "is_arithmetic class"
   - "is_arithmetic"
 ms.assetid: ea427b7e-0141-4a04-848f-561054c53001
 caps.latest.revision: 19
@@ -60,7 +57,7 @@ struct is_arithmetic;
 ## Example  
   
 ```cpp  
-// std_tr1__type_traits__is_arithmetic.cpp   
+// std__type_traits__is_arithmetic.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   
@@ -81,7 +78,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  

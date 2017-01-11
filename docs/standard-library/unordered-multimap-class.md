@@ -9,16 +9,100 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "unordered_map/std::tr1::unordered_multimap"
-  - "tr1.unordered_multimap"
   - "unordered_multimap"
-  - "std.tr1.unordered_multimap"
-  - "tr1::unordered_multimap"
-  - "std::tr1::unordered_multimap"
+  - "std::unordered_multimap"
+  - "unordered_map/std::unordered_multimap"
+  - "std::unordered_multimap::allocator_type"
+  - "unordered_map/std::unordered_multimap::allocator_type"
+  - "std::unordered_multimap::const_iterator"
+  - "unordered_map/std::unordered_multimap::const_iterator"
+  - "std::unordered_multimap::const_local_iterator"
+  - "unordered_map/std::unordered_multimap::const_local_iterator"
+  - "std::unordered_multimap::const_pointer"
+  - "unordered_map/std::unordered_multimap::const_pointer"
+  - "std::unordered_multimap::const_reference"
+  - "unordered_map/std::unordered_multimap::const_reference"
+  - "std::unordered_multimap::difference_type"
+  - "unordered_map/std::unordered_multimap::difference_type"
+  - "std::unordered_multimap::hasher"
+  - "unordered_map/std::unordered_multimap::hasher"
+  - "std::unordered_multimap::iterator"
+  - "unordered_map/std::unordered_multimap::iterator"
+  - "std::unordered_multimap::key_equal"
+  - "unordered_map/std::unordered_multimap::key_equal"
+  - "std::unordered_multimap::key_type"
+  - "unordered_map/std::unordered_multimap::key_type"
+  - "std::unordered_multimap::local_iterator"
+  - "unordered_map/std::unordered_multimap::local_iterator"
+  - "std::unordered_multimap::mapped_type"
+  - "unordered_map/std::unordered_multimap::mapped_type"
+  - "std::unordered_multimap::pointer"
+  - "unordered_map/std::unordered_multimap::pointer"
+  - "std::unordered_multimap::reference"
+  - "unordered_map/std::unordered_multimap::reference"
+  - "std::unordered_multimap::size_type"
+  - "unordered_map/std::unordered_multimap::size_type"
+  - "std::unordered_multimap::value_type"
+  - "unordered_map/std::unordered_multimap::value_type"
+  - "std::unordered_multimap::begin"
+  - "unordered_map/std::unordered_multimap::begin"
+  - "std::unordered_multimap::bucket"
+  - "unordered_map/std::unordered_multimap::bucket"
+  - "std::unordered_multimap::bucket_count"
+  - "unordered_map/std::unordered_multimap::bucket_count"
+  - "std::unordered_multimap::bucket_size"
+  - "unordered_map/std::unordered_multimap::bucket_size"
+  - "std::unordered_multimap::cbegin"
+  - "unordered_map/std::unordered_multimap::cbegin"
+  - "std::unordered_multimap::cend"
+  - "unordered_map/std::unordered_multimap::cend"
+  - "std::unordered_multimap::clear"
+  - "unordered_map/std::unordered_multimap::clear"
+  - "std::unordered_multimap::count"
+  - "unordered_map/std::unordered_multimap::count"
+  - "std::unordered_multimap::emplace"
+  - "unordered_map/std::unordered_multimap::emplace"
+  - "std::unordered_multimap::emplace_hint"
+  - "unordered_map/std::unordered_multimap::emplace_hint"
+  - "std::unordered_multimap::empty"
+  - "unordered_map/std::unordered_multimap::empty"
+  - "std::unordered_multimap::end"
+  - "unordered_map/std::unordered_multimap::end"
+  - "std::unordered_multimap::equal_range"
+  - "unordered_map/std::unordered_multimap::equal_range"
+  - "std::unordered_multimap::erase"
+  - "unordered_map/std::unordered_multimap::erase"
+  - "std::unordered_multimap::find"
+  - "unordered_map/std::unordered_multimap::find"
+  - "std::unordered_multimap::get_allocator"
+  - "unordered_map/std::unordered_multimap::get_allocator"
+  - "std::unordered_multimap::hash_function"
+  - "unordered_map/std::unordered_multimap::hash_function"
+  - "std::unordered_multimap::insert"
+  - "unordered_map/std::unordered_multimap::insert"
+  - "std::unordered_multimap::key_eq"
+  - "unordered_map/std::unordered_multimap::key_eq"
+  - "std::unordered_multimap::load_factor"
+  - "unordered_map/std::unordered_multimap::load_factor"
+  - "std::unordered_multimap::max_bucket_count"
+  - "unordered_map/std::unordered_multimap::max_bucket_count"
+  - "std::unordered_multimap::max_load_factor"
+  - "unordered_map/std::unordered_multimap::max_load_factor"
+  - "std::unordered_multimap::max_size"
+  - "unordered_map/std::unordered_multimap::max_size"
+  - "std::unordered_multimap::rehash"
+  - "unordered_map/std::unordered_multimap::rehash"
+  - "std::unordered_multimap::size"
+  - "unordered_map/std::unordered_multimap::size"
+  - "std::unordered_multimap::swap"
+  - "unordered_map/std::unordered_multimap::swap"
+  - "std::unordered_multimap::unordered_multimap"
+  - "unordered_map/std::unordered_multimap::unordered_multimap"
+  - "std::unordered_multimap::operator="
+  - "unordered_map/std::unordered_multimap::operator="
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "unordered_multimap class [TR1]"
   - "unordered_multimap class"
 ms.assetid: 4baead6c-5870-4b85-940f-a47d6b891c27
 caps.latest.revision: 28
@@ -150,7 +234,7 @@ typedef Alloc allocator_type;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_allocator_type.cpp   
+// std__unordered_map__unordered_multimap_allocator_type.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -201,7 +285,7 @@ const_local_iterator begin(size_type nbucket) const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_begin.cpp   
+// std__unordered_map__unordered_multimap_begin.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -260,7 +344,7 @@ size_type bucket(const Key& keyval) const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_bucket.cpp   
+// std__unordered_map__unordered_multimap_bucket.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -310,7 +394,7 @@ size_type bucket_count() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_bucket_count.cpp   
+// std__unordered_map__unordered_multimap_bucket_count.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -400,7 +484,7 @@ size_type bucket_size(size_type nbucket) const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_bucket_size.cpp   
+// std__unordered_map__unordered_multimap_bucket_size.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -500,7 +584,7 @@ void clear();
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_clear.cpp   
+// std__unordered_map__unordered_multimap_clear.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -566,7 +650,7 @@ typedef T1 const_iterator;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_const_iterator.cpp   
+// std__unordered_map__unordered_multimap_const_iterator.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -608,7 +692,7 @@ typedef T5 const_local_iterator;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_const_local_iterator.cpp   
+// std__unordered_map__unordered_multimap_const_local_iterator.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -655,7 +739,7 @@ typedef Alloc::const_pointer const_pointer;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_const_pointer.cpp   
+// std__unordered_map__unordered_multimap_const_pointer.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -700,7 +784,7 @@ typedef Alloc::const_reference const_reference;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_const_reference.cpp   
+// std__unordered_map__unordered_multimap_const_reference.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -749,7 +833,7 @@ size_type count(const Key& keyval) const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_count.cpp   
+// std__unordered_map__unordered_multimap_count.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -798,7 +882,7 @@ typedef T3 difference_type;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_difference_type.cpp   
+// std__unordered_map__unordered_multimap_difference_type.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -913,7 +997,7 @@ bool empty() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_empty.cpp   
+// std__unordered_map__unordered_multimap_empty.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -993,7 +1077,7 @@ const_local_iterator end(size_type nbucket) const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_end.cpp   
+// std__unordered_map__unordered_multimap_end.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1058,7 +1142,7 @@ std::pair<const_iterator, const_iterator>
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_equal_range.cpp   
+// std__unordered_map__unordered_multimap_equal_range.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1159,7 +1243,7 @@ const_iterator find(const Key& keyval) const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_find.cpp   
+// std__unordered_map__unordered_multimap_find.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1213,7 +1297,7 @@ Alloc get_allocator() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_get_allocator.cpp   
+// std__unordered_map__unordered_multimap_get_allocator.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1250,7 +1334,7 @@ Hash hash_function() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_hash_function.cpp   
+// std__unordered_map__unordered_multimap_hash_function.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1287,7 +1371,7 @@ typedef Hash hasher;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_hasher.cpp   
+// std__unordered_map__unordered_multimap_hasher.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1399,7 +1483,7 @@ typedef T0 iterator;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_iterator.cpp   
+// std__unordered_map__unordered_multimap_iterator.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1441,7 +1525,7 @@ Pred key_eq() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_key_eq.cpp   
+// std__unordered_map__unordered_multimap_key_eq.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1480,7 +1564,7 @@ typedef Pred key_equal;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_key_equal.cpp   
+// std__unordered_map__unordered_multimap_key_equal.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1519,7 +1603,7 @@ typedef Key key_type;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_key_type.cpp   
+// std__unordered_map__unordered_multimap_key_type.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1573,7 +1657,7 @@ float load_factor() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_load_factor.cpp   
+// std__unordered_map__unordered_multimap_load_factor.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1640,7 +1724,7 @@ typedef T4 local_iterator;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_local_iterator.cpp   
+// std__unordered_map__unordered_multimap_local_iterator.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1687,7 +1771,7 @@ typedef Ty mapped_type;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_mapped_type.cpp   
+// std__unordered_map__unordered_multimap_mapped_type.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1741,7 +1825,7 @@ size_type max_bucket_count() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_max_bucket_count.cpp   
+// std__unordered_map__unordered_multimap_max_bucket_count.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1834,7 +1918,7 @@ void max_load_factor(float factor);
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_max_load_factor.cpp   
+// std__unordered_map__unordered_multimap_max_load_factor.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1920,7 +2004,7 @@ size_type max_size() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_max_size.cpp   
+// std__unordered_map__unordered_multimap_max_size.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -2010,7 +2094,7 @@ typedef Alloc::pointer pointer;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_pointer.cpp   
+// std__unordered_map__unordered_multimap_pointer.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -2055,7 +2139,7 @@ typedef Alloc::reference reference;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_reference.cpp   
+// std__unordered_map__unordered_multimap_reference.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -2104,7 +2188,7 @@ void rehash(size_type nbuckets);
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_rehash.cpp   
+// std__unordered_map__unordered_multimap_rehash.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -2176,7 +2260,7 @@ size_type size() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_size.cpp   
+// std__unordered_map__unordered_multimap_size.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -2242,7 +2326,7 @@ typedef T2 size_type;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_size_type.cpp   
+// std__unordered_map__unordered_multimap_size_type.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -2281,7 +2365,7 @@ void swap(unordered_multimap& right);
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_swap.cpp   
+// std__unordered_map__unordered_multimap_swap.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -2486,10 +2570,10 @@ int main()
     cout << endl;  
   
     // Initializer_list plus size and hash  
-    unordered_multimap<int, char, tr1::hash<char>> c7(  
+    unordered_multimap<int, char, hash<char>> c7(  
         { { 5, 'g' }, { 6, 'h' }, { 7, 'i' }, { 8, 'j' } },  
         4,  
-        tr1::hash<char>()  
+        hash<char>()  
     );  
   
     for (const auto& c : c1) {  
@@ -2498,10 +2582,10 @@ int main()
     cout << endl;  
   
     // Initializer_list plus size, hash, and key_equal  
-    unordered_multimap<int, char, tr1::hash<char>, equal_to<char>> c8(  
+    unordered_multimap<int, char, hash<char>, equal_to<char>> c8(  
         { { 5, 'g' }, { 6, 'h' }, { 7, 'i' }, { 8, 'j' } },  
         4,  
-        tr1::hash<char>(),  
+        hash<char>(),  
         equal_to<char>()  
     );  
   
@@ -2511,10 +2595,10 @@ int main()
     cout << endl;  
   
     // Initializer_list plus size, hash, key_equal, and allocator  
-    unordered_multimap<int, char, tr1::hash<char>, equal_to<char>> c9(  
+    unordered_multimap<int, char, hash<char>, equal_to<char>> c9(  
         { { 5, 'g' }, { 6, 'h' }, { 7, 'i' }, { 8, 'j' } },  
         4,  
-        tr1::hash<char>(),  
+        hash<char>(),  
         equal_to<char>(),  
         allocator<pair<const char, int> >()  
     );  
@@ -2547,7 +2631,7 @@ typedef std::pair<const Key, Ty> value_type;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_multimap_value_type.cpp   
+// std__unordered_map__unordered_multimap_value_type.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   

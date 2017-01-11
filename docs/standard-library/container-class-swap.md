@@ -36,17 +36,16 @@ translation.priority.ht:
 > [!NOTE]
 >  This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).  
   
- Swaps the controlled sequences between **\*this** and ` right`.  
+Swaps the controlled sequences between **\*this** and its argument.  
   
 ## Syntax  
   
 ```  
- 
-    void swap(Container& right);
+void swap(Container& right);
 ```  
   
 ## Remarks  
- If **get_allocator ==** ` right`**.get_allocator**, it does so in constant time. Otherwise, it performs a number of element assignments and constructor calls proportional to the number of elements in the two controlled sequences.  
+If **\*this.get\_allocator ==** _right_**.get_allocator**, it does a swap in constant time. Otherwise, it performs a number of element assignments and constructor calls proportional to the number of elements in the two controlled sequences.  
   
 ## See Also  
- [Sample Container Class](../standard-library/sample-container-class.md)
+[Sample Container Class](../standard-library/sample-container-class.md)

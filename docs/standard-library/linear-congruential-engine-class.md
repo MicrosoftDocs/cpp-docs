@@ -9,12 +9,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.linear_congruential_engine"
-  - "random/std::tr1::linear_congruential_engine"
   - "linear_congruential_engine"
-  - "std::tr1::linear_congruential_engine"
-  - "tr1.linear_congruential_engine"
-  - "tr1::linear_congruential_engine"
+  - "std::linear_congruential_engine"
+  - "random/std::linear_congruential_engine"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

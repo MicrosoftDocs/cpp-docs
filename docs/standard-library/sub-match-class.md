@@ -10,12 +10,26 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "sub_match"
-  - "std::tr1::sub_match"
-  - "std.tr1.sub_match"
+  - "std::sub_match"
+  - "regex/std::sub_match"
+  - "std::sub_match::matched"
+  - "regex/std::sub_match::matched"
+  - "std::sub_match::compare"
+  - "regex/std::sub_match::compare"
+  - "std::sub_match::length"
+  - "regex/std::sub_match::length"
+  - "std::sub_match::str"
+  - "regex/std::sub_match::str"
+  - "std::sub_match::difference_type"
+  - "regex/std::sub_match::difference_type"
+  - "std::sub_match::iterator"
+  - "regex/std::sub_match::iterator"
+  - "std::sub_match::value_type"
+  - "regex/std::sub_match::value_type"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "sub_match class [TR1]"
+  - "sub_match class"
 ms.assetid: 804e2b9e-d16a-4c4c-ac60-024e0b2dd0e8
 caps.latest.revision: 19
 author: "corob-msft"
@@ -47,24 +61,14 @@ class sub_match
  : public std::pair<BidIt, BidIt> {  
 public:  
     bool matched;  
-    int compare(const sub_match& right) const;
-
- 
-    int compare(const basic_string<value_type>& right) const;
-
- 
-    int compare(const value_type *right) const;
-
- 
-    difference_type length() const;
-
- operator basic_string<value_type>() const;
-
- 
-    basic_string<value_type>  
-str() const;
-
- 
+    int compare(const sub_match& right) const;  
+    int compare(const basic_string<value_type>& right) const;   
+    int compare(const value_type *right) const;   
+    difference_type length() const;  
+    operator basic_string<value_type>() const;
+    basic_string<value_type> str() const;
+  
+    // typedefs
     typedef typename iterator_traits<BidIt>::value_type value_type;  
     typedef typename iterator_traits<BidIt>::difference_type difference_type;  
     typedef BidIt iterator;  
@@ -96,11 +100,7 @@ str() const;
   
 ```  
 int compare(const sub_match& right) const;
-
- 
 int compare(const basic_string<value_type>& str) const;
-
- 
 int compare(const value_type *ptr) const;
 ```  
   
@@ -112,7 +112,7 @@ int compare(const value_type *ptr) const;
  The string to compare to.  
   
  `ptr`  
- The nul-terminated sequence to compare to.  
+ The null-terminated sequence to compare to.  
   
 ### Remarks  
  The first member function compares the matched sequence `[first, second)` to the matched sequence `[right.first, right.second)`. The second member function compares the matched sequence `[first, second)` to the character sequence `[right.begin(), right.end())`. The third member function compares the matched sequence `[first, second)` to the character sequence `[right, right + std::char_traits<value_type>::length(right))`.  
@@ -128,7 +128,7 @@ int compare(const value_type *ptr) const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__sub_match_compare.cpp   
+// std__regex__sub_match_compare.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -191,7 +191,7 @@ typedef typename iterator_traits<BidIt>::difference_type difference_type;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__sub_match_difference_type.cpp   
+// std__regex__sub_match_difference_type.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -254,7 +254,7 @@ typedef BidIt iterator;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__sub_match_iterator.cpp   
+// std__regex__sub_match_iterator.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -317,7 +317,7 @@ difference_type length() const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__sub_match_length.cpp   
+// std__regex__sub_match_length.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -380,7 +380,7 @@ bool matched;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__sub_match_matched.cpp   
+// std__regex__sub_match_matched.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -442,7 +442,7 @@ compare(sub) == 0
 ### Example  
   
 ```cpp  
-// std_tr1__regex__sub_match_operator_str.cpp   
+// std__regex__sub_match_operator_str.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -505,7 +505,7 @@ basic_string<value_type> str() const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__sub_match_str.cpp   
+// std__regex__sub_match_str.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -568,7 +568,7 @@ typedef typename iterator_traits<BidIt>::value_type value_type;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__sub_match_value_type.cpp   
+// std__regex__sub_match_value_type.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   

@@ -9,16 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::is_same"
-  - "std.tr1.is_same"
   - "is_same"
-  - "std.is_same"
   - "std::is_same"
   - "type_traits/std::is_same"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_same class [TR1]"
+  - "is_same class"
   - "is_same"
 ms.assetid: d9df6c1d-c270-4ec2-802a-af275648dd1d
 caps.latest.revision: 19
@@ -63,7 +60,7 @@ struct is_same;
 ## Example  
   
 ```cpp  
-// std_tr1__type_traits__is_same.cpp   
+// std__type_traits__is_same.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   
@@ -105,7 +102,7 @@ is_same<int, const int> == false
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

@@ -9,16 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.is_polymorphic"
   - "is_polymorphic"
-  - "std::tr1::is_polymorphic"
-  - "std.is_polymorphic"
   - "std::is_polymorphic"
   - "type_traits/std::is_polymorphic"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_polymorphic class [TR1]"
+  - "is_polymorphic class"
   - "is_polymorphic"
 ms.assetid: 4e1704db-d6f9-4154-a100-0ba02a373f20
 caps.latest.revision: 19
@@ -60,7 +57,7 @@ struct is_polymorphic;
 ## Example  
   
 ```cpp  
-// std_tr1__type_traits__is_polymorphic.cpp   
+// std__type_traits__is_polymorphic.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   
@@ -109,7 +106,7 @@ is_polymorphic<throws> == true
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

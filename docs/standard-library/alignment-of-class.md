@@ -9,16 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.alignment_of"
-  - "std::tr1::alignment_of"
   - "alignment_of"
-  - "std.alignment_of"
   - "std::alignment_of"
   - "type_traits/std::alignment_of"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "alignment_of class [TR1]"
+  - "alignment_of class"
   - "alignment_of"
 ms.assetid: 4141c59a-f94e-41c4-93fd-9ea578b27387
 caps.latest.revision: 22
