@@ -9,16 +9,98 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "tr1::unordered_multiset"
-  - "std::tr1::unordered_multiset"
   - "unordered_multiset"
-  - "std.tr1.unordered_multiset"
-  - "unordered_set/std::tr1::unordered_multiset"
-  - "tr1.unordered_multiset"
+  - "std::unordered_multiset"
+  - "unordered_set/std::unordered_multiset"
+  - "std::unordered_multiset::allocator_type"
+  - "unordered_set/std::unordered_multiset::allocator_type"
+  - "std::unordered_multiset::const_iterator"
+  - "unordered_set/std::unordered_multiset::const_iterator"
+  - "std::unordered_multiset::const_local_iterator"
+  - "unordered_set/std::unordered_multiset::const_local_iterator"
+  - "std::unordered_multiset::const_pointer"
+  - "unordered_set/std::unordered_multiset::const_pointer"
+  - "std::unordered_multiset::const_reference"
+  - "unordered_set/std::unordered_multiset::const_reference"
+  - "std::unordered_multiset::difference_type"
+  - "unordered_set/std::unordered_multiset::difference_type"
+  - "std::unordered_multiset::hasher"
+  - "unordered_set/std::unordered_multiset::hasher"
+  - "std::unordered_multiset::iterator"
+  - "unordered_set/std::unordered_multiset::iterator"
+  - "std::unordered_multiset::key_equal"
+  - "unordered_set/std::unordered_multiset::key_equal"
+  - "std::unordered_multiset::key_type"
+  - "unordered_set/std::unordered_multiset::key_type"
+  - "std::unordered_multiset::local_iterator"
+  - "unordered_set/std::unordered_multiset::local_iterator"
+  - "std::unordered_multiset::pointer"
+  - "unordered_set/std::unordered_multiset::pointer"
+  - "std::unordered_multiset::reference"
+  - "unordered_set/std::unordered_multiset::reference"
+  - "std::unordered_multiset::size_type"
+  - "unordered_set/std::unordered_multiset::size_type"
+  - "std::unordered_multiset::value_type"
+  - "unordered_set/std::unordered_multiset::value_type"
+  - "std::unordered_multiset::begin"
+  - "unordered_set/std::unordered_multiset::begin"
+  - "std::unordered_multiset::bucket"
+  - "unordered_set/std::unordered_multiset::bucket"
+  - "std::unordered_multiset::bucket_count"
+  - "unordered_set/std::unordered_multiset::bucket_count"
+  - "std::unordered_multiset::bucket_size"
+  - "unordered_set/std::unordered_multiset::bucket_size"
+  - "std::unordered_multiset::cbegin"
+  - "unordered_set/std::unordered_multiset::cbegin"
+  - "std::unordered_multiset::cend"
+  - "unordered_set/std::unordered_multiset::cend"
+  - "std::unordered_multiset::clear"
+  - "unordered_set/std::unordered_multiset::clear"
+  - "std::unordered_multiset::count"
+  - "unordered_set/std::unordered_multiset::count"
+  - "std::unordered_multiset::emplace"
+  - "unordered_set/std::unordered_multiset::emplace"
+  - "std::unordered_multiset::emplace_hint"
+  - "unordered_set/std::unordered_multiset::emplace_hint"
+  - "std::unordered_multiset::empty"
+  - "unordered_set/std::unordered_multiset::empty"
+  - "std::unordered_multiset::end"
+  - "unordered_set/std::unordered_multiset::end"
+  - "std::unordered_multiset::equal_range"
+  - "unordered_set/std::unordered_multiset::equal_range"
+  - "std::unordered_multiset::erase"
+  - "unordered_set/std::unordered_multiset::erase"
+  - "std::unordered_multiset::find"
+  - "unordered_set/std::unordered_multiset::find"
+  - "std::unordered_multiset::get_allocator"
+  - "unordered_set/std::unordered_multiset::get_allocator"
+  - "std::unordered_multiset::hash_function"
+  - "unordered_set/std::unordered_multiset::hash_function"
+  - "std::unordered_multiset::insert"
+  - "unordered_set/std::unordered_multiset::insert"
+  - "std::unordered_multiset::key_eq"
+  - "unordered_set/std::unordered_multiset::key_eq"
+  - "std::unordered_multiset::load_factor"
+  - "unordered_set/std::unordered_multiset::load_factor"
+  - "std::unordered_multiset::max_bucket_count"
+  - "unordered_set/std::unordered_multiset::max_bucket_count"
+  - "std::unordered_multiset::max_load_factor"
+  - "unordered_set/std::unordered_multiset::max_load_factor"
+  - "std::unordered_multiset::max_size"
+  - "unordered_set/std::unordered_multiset::max_size"
+  - "std::unordered_multiset::rehash"
+  - "unordered_set/std::unordered_multiset::rehash"
+  - "std::unordered_multiset::size"
+  - "unordered_set/std::unordered_multiset::size"
+  - "std::unordered_multiset::swap"
+  - "unordered_set/std::unordered_multiset::swap"
+  - "std::unordered_multiset::unordered_multiset"
+  - "unordered_set/std::unordered_multiset::unordered_multiset"
+  - "std::unordered_multiset::operator="
+  - "unordered_set/std::unordered_multiset::operator="
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "unordered_multiset class [TR1]"
   - "unordered_multiset class"
 ms.assetid: 70c8dfc5-492a-4af2-84f5-1aa9cb04b71c
 caps.latest.revision: 24
@@ -147,7 +229,7 @@ typedef Alloc allocator_type;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_allocator_type.cpp   
+// std__unordered_set__unordered_multiset_allocator_type.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -198,7 +280,7 @@ const_local_iterator begin(size_type nbucket) const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_begin.cpp   
+// std__unordered_set__unordered_multiset_begin.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -257,7 +339,7 @@ size_type bucket(const Key& keyval) const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_bucket.cpp   
+// std__unordered_set__unordered_multiset_bucket.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -307,7 +389,7 @@ size_type bucket_count() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_bucket_count.cpp   
+// std__unordered_set__unordered_multiset_bucket_count.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -397,7 +479,7 @@ size_type bucket_size(size_type nbucket) const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_bucket_size.cpp   
+// std__unordered_set__unordered_multiset_bucket_size.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -497,7 +579,7 @@ void clear();
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_clear.cpp   
+// std__unordered_set__unordered_multiset_clear.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -563,7 +645,7 @@ typedef T1 const_iterator;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_const_iterator.cpp   
+// std__unordered_set__unordered_multiset_const_iterator.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -605,7 +687,7 @@ typedef T5 const_local_iterator;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_const_local_iterator.cpp   
+// std__unordered_set__unordered_multiset_const_local_iterator.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -652,7 +734,7 @@ typedef Alloc::const_pointer const_pointer;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_const_pointer.cpp   
+// std__unordered_set__unordered_multiset_const_pointer.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -697,7 +779,7 @@ typedef Alloc::const_reference const_reference;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_const_reference.cpp   
+// std__unordered_set__unordered_multiset_const_reference.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -746,7 +828,7 @@ size_type count(const Key& keyval) const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_count.cpp   
+// std__unordered_set__unordered_multiset_count.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -795,7 +877,7 @@ typedef T3 difference_type;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_difference_type.cpp   
+// std__unordered_set__unordered_multiset_difference_type.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -906,7 +988,7 @@ bool empty() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_empty.cpp   
+// std__unordered_set__unordered_multiset_empty.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -981,7 +1063,7 @@ const_local_iterator end(size_type nbucket) const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_end.cpp   
+// std__unordered_set__unordered_multiset_end.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -1046,7 +1128,7 @@ std::pair<const_iterator, const_iterator>
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_equal_range.cpp   
+// std__unordered_set__unordered_multiset_equal_range.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -1145,7 +1227,7 @@ const_iterator find(const Key& keyval) const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_find.cpp   
+// std__unordered_set__unordered_multiset_find.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -1199,7 +1281,7 @@ Alloc get_allocator() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_get_allocator.cpp   
+// std__unordered_set__unordered_multiset_get_allocator.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -1236,7 +1318,7 @@ Hash hash_function() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_hash_function.cpp   
+// std__unordered_set__unordered_multiset_hash_function.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -1273,7 +1355,7 @@ typedef Hash hasher;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_hasher.cpp   
+// std__unordered_set__unordered_multiset_hasher.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -1395,7 +1477,7 @@ Pred key_eq() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_key_eq.cpp   
+// std__unordered_set__unordered_multiset_key_eq.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -1434,7 +1516,7 @@ typedef Pred key_equal;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_key_equal.cpp   
+// std__unordered_set__unordered_multiset_key_equal.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -1473,7 +1555,7 @@ typedef Key key_type;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_key_type.cpp   
+// std__unordered_set__unordered_multiset_key_type.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -1526,7 +1608,7 @@ float load_factor() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_load_factor.cpp   
+// std__unordered_set__unordered_multiset_load_factor.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -1593,7 +1675,7 @@ typedef T4 local_iterator;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_local_iterator.cpp   
+// std__unordered_set__unordered_multiset_local_iterator.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -1640,7 +1722,7 @@ size_type max_bucket_count() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_max_bucket_count.cpp   
+// std__unordered_set__unordered_multiset_max_bucket_count.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -1733,7 +1815,7 @@ void max_load_factor(float factor);
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_max_load_factor.cpp   
+// std__unordered_set__unordered_multiset_max_load_factor.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -1819,7 +1901,7 @@ size_type max_size() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_max_size.cpp   
+// std__unordered_set__unordered_multiset_max_size.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -1909,7 +1991,7 @@ typedef Alloc::pointer pointer;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_pointer.cpp   
+// std__unordered_set__unordered_multiset_pointer.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -1955,7 +2037,7 @@ typedef Alloc::reference reference;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_reference.cpp   
+// std__unordered_set__unordered_multiset_reference.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -2005,7 +2087,7 @@ void rehash(size_type nbuckets);
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_rehash.cpp   
+// std__unordered_set__unordered_multiset_rehash.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -2077,7 +2159,7 @@ size_type size() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_size.cpp   
+// std__unordered_set__unordered_multiset_size.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -2143,7 +2225,7 @@ typedef T2 size_type;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_size_type.cpp   
+// std__unordered_set__unordered_multiset_size_type.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -2182,7 +2264,7 @@ void swap(unordered_multiset& right);
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_swap.cpp   
+// std__unordered_set__unordered_multiset_swap.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   
@@ -2325,7 +2407,7 @@ typedef Key value_type;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_set__unordered_multiset_value_type.cpp   
+// std__unordered_set__unordered_multiset_value_type.cpp   
 // compile with: /EHsc   
 #include <unordered_set>   
 #include <iostream>   

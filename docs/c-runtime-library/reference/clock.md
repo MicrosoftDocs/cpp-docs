@@ -64,13 +64,13 @@ clock_t clock( void );
 ```  
   
 ## Return Value  
- The elapsed wall-clock time since the start of the process (elapsed time in seconds times `CLOCKS_PER_SEC`). If the amount of elapsed time is unavailable, the function returns –1, cast as a `clock_t`.  
+The elapsed time since the CRT initialization at the start of the process, measured in `CLOCKS_PER_SEC` units per second. If the elapsed time is unavailable or has exceeded the maximum positive time that can be recorded as a `clock_t` type, the function returns the value `(clock_t)(-1)`.   
   
 ## Remarks  
- The `clock` function tells how much wall-clock time the calling process has used. Note that this is not strictly conformant with ISO C99, which specifies net CPU time as the return value. To obtain CPU time, use the Win32 [GetProcessTimes](http://msdn.microsoft.com/library/windows/desktop/ms683223) function.  
+The `clock` function tells how much wall-clock time has passed since the CRT initialization during process start. Note that this function does not strictly conform to ISO C, which specifies net CPU time as the return value. To obtain CPU times, use the Win32 [GetProcessTimes](https://msdn.microsoft.com/library/windows/desktop/ms683223) function. To determine the elapsed time in seconds, divide the value returned by the `clock` function by the macro `CLOCKS_PER_SEC`.  
   
- A timer tick is approximately equal to 1/`CLOCKS_PER_SEC` seconds. Given enough time, the value returned by `clock` can exceed the maximum positive value of `clock_t` and become negative, or exceed the maximum absolute value and roll over. Do not rely on this value for total elapsed time in processes that run for more than 214,748 seconds, or about 59 hours.  
-  
+Given enough time, the value returned by `clock` can exceed the maximum positive value of `clock_t`. When the process has run longer, the value returned by `clock` is always `(clock_t)(-1)`, as specified by the ISO C99 standard (7.23.2.1) and ISO C11 standard (7.27.2.1). Microsoft implements `clock_t` as a `long`, a signed 32-bit integer, and the `CLOCKS_PER_SEC` macro is defined as 1000. This gives a maximum `clock` function return value of 2147483.647 seconds, or about 24.8 days. Do not rely on the value returned by `clock` in processes that have run for longer than this amount of time. You can use the 64-bit `time` function or the Windows [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904) function to record process elapsed times of many years.  
+
 ## Requirements  
   
 |Routine|Required header|  
@@ -83,56 +83,52 @@ clock_t clock( void );
   
 ```  
 // crt_clock.c  
-// This example prompts for how long  
-// the program is to run and then continuously  
-// displays the elapsed time for that period.  
-//  
+// This sample uses clock() to 'sleep' for three 
+// seconds, then determines how long it takes  
+// to execute an empty loop 600000000 times.  
   
 #include <stdio.h>  
 #include <stdlib.h>  
 #include <time.h>  
   
-void sleep( clock_t wait );  
-  
-int main( void )  
-{  
-   long    i = 6000000L;  
-   clock_t start, finish;  
-   double  duration;  
-  
-   // Delay for a specified time.  
-   printf( "Delay for three seconds\n" );  
-   sleep( (clock_t)3 * CLOCKS_PER_SEC );  
-   printf( "Done!\n" );  
-  
-   // Measure the duration of an event.  
-   printf( "Time to do %ld empty loops is ", i );  
-   start = clock();  
-   while( i-- )   
-      ;  
-   finish = clock();  
-   duration = (double)(finish - start) / CLOCKS_PER_SEC;  
-   printf( "%2.1f seconds\n", duration );  
-}  
-  
 // Pauses for a specified number of milliseconds.  
-void sleep( clock_t wait )  
+void do_sleep( clock_t wait )  
 {  
    clock_t goal;  
    goal = wait + clock();  
    while( goal > clock() )  
       ;  
 }  
+  
+const long num_loops = 600000000L;
+
+int main( void )  
+{  
+   long    i = num_loops;  
+   clock_t start, finish;  
+   double  duration;  
+  
+   // Delay for a specified time.  
+   printf( "Delay for three seconds\n" );  
+   do_sleep( (clock_t)3 * CLOCKS_PER_SEC );  
+   printf( "Done!\n" );  
+  
+   // Measure the duration of an event.  
+   start = clock();  
+   while( i-- )   
+      ;  
+   finish = clock();  
+   duration = (double)(finish - start) / CLOCKS_PER_SEC;  
+   printf( "Time to do %ld empty loops is ", num_loops );  
+   printf( "%2.3f seconds\n", duration );  
+}  
 ```  
   
 ```Output  
 Delay for three seconds  
 Done!  
-Time to do 6000000 empty loops is 0.1 seconds  
+Time to do 600000000 empty loops is 1.354 seconds  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   

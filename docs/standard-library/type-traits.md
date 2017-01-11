@@ -13,7 +13,7 @@ f1_keywords:
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "typetrait header [TR1]"
+  - "typetrait header"
   - "type_traits"
 ms.assetid: 2260b51f-8160-4c66-a82f-00b534cb60d4
 caps.latest.revision: 35

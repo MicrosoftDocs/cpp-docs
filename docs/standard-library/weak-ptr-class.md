@@ -9,16 +9,28 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.weak_ptr"
-  - "tr1.weak_ptr"
   - "weak_ptr"
-  - "tr1::weak_ptr"
-  - "std::tr1::weak_ptr"
-  - "memory/std::tr1::weak_ptr"
+  - "std::weak_ptr"
+  - "memory/std::weak_ptr"
+  - "std::weak_ptr::element_type"
+  - "memory/std::weak_ptr::element_type"
+  - "std::weak_ptr::expired"
+  - "memory/std::weak_ptr::expired"
+  - "std::weak_ptr::lock"
+  - "memory/std::weak_ptr::lock"
+  - "std::weak_ptr::owner_before"
+  - "memory/std::weak_ptr::owner_before"
+  - "std::weak_ptr::reset"
+  - "memory/std::weak_ptr::reset"
+  - "std::weak_ptr::swap"
+  - "memory/std::weak_ptr::swap"
+  - "std::weak_ptr::use_count"
+  - "memory/std::weak_ptr::use_count"
+  - "std::weak_ptr::operator="
+  - "memory/std::weak_ptr::operator="
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "weak_ptr class [TR1]"
   - "weak_ptr class"
 ms.assetid: 2db4afb2-c7be-46fc-9c20-34ec2f8cc7c2
 caps.latest.revision: 22
@@ -45,26 +57,26 @@ Wraps a weakly linked pointer.
   
 ## Syntax  
 ```    
-class weak_ptr {  
-   public:  
+template<class _Ty>
+   class weak_ptr {  
+public:  
    typedef Ty element_type;  
    weak_ptr();
    weak_ptr(const weak_ptr&);
    template <class Other>  
-   weak_ptr(const weak_ptr<Other>&);
+      weak_ptr(const weak_ptr<Other>&);
    template <class Other>  
-   weak_ptr(const shared_ptr<Other>&);
+      weak_ptr(const shared_ptr<Other>&);
    weak_ptr& operator=(const weak_ptr&);
    template <class Other>  
-   weak_ptr& operator=(const weak_ptr<Other>&);
+      weak_ptr& operator=(const weak_ptr<Other>&);
    template <class Other>  
-   weak_ptr& operator=(shared_ptr<Other>&);
+      weak_ptr& operator=(shared_ptr<Other>&);
    void swap(weak_ptr&);
    void reset();
    long use_count() const;
    bool expired() const;
-   shared_ptr<Ty>  
-   lock() const;
+   shared_ptr<Ty> lock() const;
    };  
 ```    
 #### Parameters  
@@ -124,7 +136,7 @@ typedef Ty element_type;
 ### Example  
   
 ```cpp  
-// std_tr1__memory__weak_ptr_element_type.cpp   
+// std__memory__weak_ptr_element_type.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
@@ -159,7 +171,7 @@ bool expired() const;
 ### Example  
   
 ```cpp  
-// std_tr1__memory__weak_ptr_expired.cpp   
+// std__memory__weak_ptr_expired.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
@@ -215,7 +227,7 @@ shared_ptr<Ty> lock() const;
 ### Example  
   
 ```cpp  
-// std_tr1__memory__weak_ptr_lock.cpp   
+// std__memory__weak_ptr_lock.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
@@ -287,7 +299,7 @@ weak_ptr& operator=(const shared_ptr<Other>& sp);
 ### Example  
   
 ```cpp  
-// std_tr1__memory__weak_ptr_operator_as.cpp   
+// std__memory__weak_ptr_operator_as.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
@@ -348,7 +360,7 @@ void reset();
 ### Example  
   
 ```cpp  
-// std_tr1__memory__weak_ptr_reset.cpp   
+// std__memory__weak_ptr_reset.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
@@ -393,7 +405,7 @@ void swap(weak_ptr& wp);
 ### Example  
   
 ```cpp  
-// std_tr1__memory__weak_ptr_swap.cpp   
+// std__memory__weak_ptr_swap.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
@@ -457,7 +469,7 @@ long use_count() const;
 ### Example  
   
 ```cpp  
-// std_tr1__memory__weak_ptr_use_count.cpp   
+// std__memory__weak_ptr_use_count.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
@@ -514,7 +526,7 @@ weak_ptr(const shared_ptr<Other>& sp);
 ### Example  
   
 ```cpp  
-// std_tr1__memory__weak_ptr_construct.cpp   
+// std__memory__weak_ptr_construct.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
