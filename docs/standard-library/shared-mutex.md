@@ -236,7 +236,7 @@ void swap(shared_lock<Mutex>& x, shared_lock<Mutex>& y) noexcept;
  Exchanges the content of two `shared_lock` objects. Effectively the same as `x``.swap(``y``)`.  
   
 ## Requirements  
- **Header:** <shared_mutex>  
+ **Header:** \<shared_mutex>  
   
  **Namespace:** std  
   

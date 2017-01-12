@@ -69,7 +69,7 @@ struct is_trivially_default_constructible;
 -   the classes of all the non-static data members of type array of class have trivial constructors  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

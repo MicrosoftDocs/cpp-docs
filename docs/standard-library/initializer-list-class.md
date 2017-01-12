@@ -82,7 +82,7 @@ initializer_list<int> i1{ 1, 2, 3, 4 };
 |[size](#initializer_list__size)|Returns the number of elements in the `initializer_list`.|  
   
 ## Requirements  
- **Header:** <initializer_list>  
+ **Header:** \<initializer_list>  
   
  **Namespace:** std  
   

@@ -164,7 +164,7 @@ class hash_map
 |[hash_map::operator=](#hash_map__operator_eq)|Replaces the elements of a `hash_map` with a copy of another `hash_map`.|  
   
 ## Requirements  
- **Header:** <hash_map>  
+ **Header:** \<hash_map>  
   
  **Namespace:** stdext  
   

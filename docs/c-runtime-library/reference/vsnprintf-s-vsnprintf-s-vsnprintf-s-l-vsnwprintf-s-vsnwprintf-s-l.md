@@ -215,7 +215,8 @@ void FormatOutput(LPCSTR formatstring, ...)
    va_list args;  
    va_start(args, formatstring);  
    nSize = vsnprintf_s( buff, _countof(buff), _TRUNCATE, formatstring, args);  
-   printf("nSize: %d, buff: %s\n", nSize, buff);  
+   printf("nSize: %d, buff: %s\n", nSize, buff); 
+   va_end(args); 
 }  
   
 int main() {  

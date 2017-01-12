@@ -55,7 +55,7 @@ struct is_nothrow_copy_constructible;
  An instance of the type predicate holds true if the type `Ty` has a nothrow copy constructor, otherwise it holds false.  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

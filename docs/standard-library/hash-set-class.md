@@ -156,7 +156,7 @@ class hash_set
 |[hash_set::operator=](#hash_set__operator_eq)|Replaces the elements of a `hash_set` with a copy of another `hash_set`.|  
   
 ## Requirements  
- **Header:** <hash_set>  
+ **Header:** \<hash_set>  
   
  **Namespace:** stdext  
   

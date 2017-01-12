@@ -53,7 +53,7 @@ class is_error_code_enum;
  It is permissible to add specializations to this type for user-defined types.  
   
 ## Requirements  
- **Header:** <system_error>  
+ **Header:** \<system_error>  
   
  **Namespace:** std  
   

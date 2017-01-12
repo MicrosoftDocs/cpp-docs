@@ -60,7 +60,7 @@ struct is_constructible;
  An instance of the type predicate holds true if the type `T` is constructible by using the argument types in `Args`, otherwise it holds false. Type `T` is constructible if the variable definition `T t(std::declval<Args>()...);` is well-formed. Both `T` and all the types in `Args` must be complete types, `void`, or arrays of unknown bound.  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

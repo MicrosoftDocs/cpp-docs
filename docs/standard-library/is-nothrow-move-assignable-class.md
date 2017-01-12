@@ -55,7 +55,7 @@ struct is_nothrow_move_assignable;
  An instance of the type predicate holds true if the type `Ty` has a nothrow move assignment operator, otherwise it holds false.  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

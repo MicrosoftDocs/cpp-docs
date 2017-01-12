@@ -111,7 +111,7 @@ class scoped_allocator_adaptor;
 |[scoped_allocator_adaptor::select_on_container_copy_construction Method](#scoped_allocator_adaptor__select_on_container_copy_construction_method)|Creates a new `scoped_allocator_adaptor` object with each stored allocator object initialized by calling `select_on_container_copy_construction` for each corresponding allocator.|  
   
 ## Requirements  
- **Header:** <scoped_allocator>  
+ **Header:** \<scoped_allocator>  
   
  **Namespace:** std  
   

@@ -162,7 +162,7 @@ class hash_multimap
 |[hash_multimap::operator=](#hash_multimap__operator_eq)|Replaces the elements of a `hash_multimap` with a copy of another `hash_multimap`.|  
   
 ## Requirements  
- **Header:** <hash_map>  
+ **Header:** \<hash_map>  
   
  **Namespace:** stdext  
   

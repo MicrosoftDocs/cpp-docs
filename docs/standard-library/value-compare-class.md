@@ -70,7 +70,7 @@ protected:
  See the example for [hash_map::value_comp](../standard-library/hash-map-class.md#hash_map__value_comp) for an example of how to declare and use value_compare.  
   
 ## Requirements  
- **Header:** <hash_map>  
+ **Header:** \<hash_map>  
   
  **Namespace:** stdext  
   

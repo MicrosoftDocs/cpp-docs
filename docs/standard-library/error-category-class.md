@@ -73,7 +73,7 @@ class error_category;
 |[operator<](#error_category__operator_lt_)|Tests if the [error_category](../standard-library/error-category-class.md) object is less than the `error_category` object passed in for comparison.|  
   
 ## Requirements  
- **Header:** <system_error>  
+ **Header:** \<system_error>  
   
  **Namespace:** std  
   

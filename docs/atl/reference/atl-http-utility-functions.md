@@ -148,20 +148,6 @@ inline ATL_URL_PORT AtlGetDefaultUrlPort(ATL_URL_SCHEME m_nScheme) throw();
 ### Return Value  
  The [ATL_URL_PORT](atl-typedefs.md#atl_url_port) associated with the specified scheme or ATL_URL_INVALID_PORT_NUMBER if the scheme is not recognized.  
 
-## <a name="atlhexvalue"></a> AtlHexValue
-Call this function to get the numeric value of a hexadecimal digit.  
-  
-```  
-inline short AtlHexValue(char chIn) throw();  
-```  
-  
-### Parameters  
- `chIn`  
- The hexadecimal character '0'-'9', 'A'-'F', or 'a'-'f'.  
-  
-### Return Value  
- The numeric value of the input character interpreted as a hexadecimal digit. For example, an input of '0' returns a value of 0 and an input of 'A' returns a value of 10. If the input character is not a hexadecimal digit, this function returns -1.  
-  
 ## <a name="atlisunsafeurlchar"></a> AtlIsUnsafeUrlChar
  Call this function to find out whether a character is safe for use in a URL.  
   

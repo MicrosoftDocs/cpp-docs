@@ -82,7 +82,7 @@ class error_code;
 |[operator bool](#error_code__operator_bool)|Casts a variable of type `error_code`.|  
   
 ## Requirements  
- **Header:** <system_error>  
+ **Header:** \<system_error>  
   
  **Namespace:** std  
   
