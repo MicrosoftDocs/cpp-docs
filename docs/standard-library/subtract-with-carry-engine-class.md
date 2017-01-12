@@ -9,12 +9,14 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "tr1.subtract_with_carry_engine"
-  - "std::tr1::subtract_with_carry_engine"
-  - "random/std::tr1::subtract_with_carry_engine"
   - "subtract_with_carry_engine"
-  - "tr1::subtract_with_carry_engine"
-  - "std.tr1.subtract_with_carry_engine"
+  - "std::subtract_with_carry_engine"
+  - "random/std::subtract_with_carry_engine"
+  - "random/std::subtract_with_carry_engine::default_seed"
+  - "random/std::subtract_with_carry_engine::discard"
+  - "random/std::subtract_with_carry_engine::min"
+  - "random/std::subtract_with_carry_engine::max"
+  - "random/std::subtract_with_carry_engine::seed"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

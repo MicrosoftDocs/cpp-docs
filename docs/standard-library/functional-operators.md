@@ -4,10 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+f1_keywords: 
+  - "std::operator!="
+  - "functional/std::operator!="
+  - "std::operator=="
+  - "functional/std::operator=="
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "functional operators"
 ms.assetid: d4b3c760-f3e2-4b65-bdaa-d42e8dd6f5e1
 caps.latest.revision: 13
+author: "corob-msft"
+ms.author: "corob"
 manager: "ghogen"
 ---
 # &lt;functional&gt; operators
@@ -42,7 +55,7 @@ bool operator==(null_ptr_type npc, const function<Fty>& f);
 ### Example  
   
 ```cpp  
-// std_tr1__functional__operator_eq.cpp
+// std__functional__operator_eq.cpp
 // compile with: /EHsc   
 #include <functional>   
 #include <iostream>   
@@ -99,7 +112,7 @@ bool operator!=(null_ptr_type npc, const function<Fty>& f);
 ### Example  
   
 ```cpp  
-// std_tr1__functional__operator_ne.cpp   
+// std__functional__operator_ne.cpp   
 // compile with: /EHsc   
 #include <functional>   
 #include <iostream>   

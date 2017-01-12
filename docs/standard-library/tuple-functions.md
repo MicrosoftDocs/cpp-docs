@@ -6,6 +6,10 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+f1_keywords: 
+  - "tuple/std::get"
+  - "tuple/std::make_tuple"
+  - "tuple/std::tie"
 ms.assetid: bc6be38f-5258-4c14-b81b-63caa335fd44
 caps.latest.revision: 13
 manager: "ghogen"
@@ -19,32 +23,31 @@ manager: "ghogen"
  Gets an element from a `tuple` object, by index or (in C++14) by type.  
   
 ```  
- 
 // by index:
 // get reference to Index element of tuple
 template <size_t Index, class... Types>  
-constexpr tuple_element_t<Index, tuple<Types...>>& get(tuple<Types...>& Tuple) noexcept;
+   constexpr tuple_element_t<Index, tuple<Types...>>& get(tuple<Types...>& Tuple) noexcept;
 
 // get const reference to Index element of tuple
 template <size_t Index, class... Types>  
-constexpr const tuple_element_t<Index, tuple<Types...>>& get(const tuple<Types...>& Tuple) noexcept;
+   constexpr const tuple_element_t<Index, tuple<Types...>>& get(const tuple<Types...>& Tuple) noexcept;
 
 // get rvalue reference to Index element of tuple
 template <size_t Index, class... Types>  
-constexpr tuple_element_t<Index, tuple<Types...>>&& get(tuple<Types...>&& Tuple) noexcept;
+   constexpr tuple_element_t<Index, tuple<Types...>>&& get(tuple<Types...>&& Tuple) noexcept;
 
 // (C++14) by type:
 // get reference to T element of tuple
 template <class T, class... Types>  
-constexpr T& get(tuple<Types...>& Tuple) noexcept;
+   constexpr T& get(tuple<Types...>& Tuple) noexcept;
 
 // get const reference to T element of tuple
 template <class T, class... Types>  
-constexpr const T& get(const tuple<Types...>& Tuple) noexcept;
+   constexpr const T& get(const tuple<Types...>& Tuple) noexcept;
 
 // get rvalue reference to T element of tuple
 template <class T, class... Types>  
-constexpr T&& get(tuple<Types...>&& Tuple) noexcept;  
+   constexpr T&& get(tuple<Types...>&& Tuple) noexcept;  
 ```  
   
 ### Parameters  
@@ -74,8 +77,7 @@ constexpr T&& get(tuple<Types...>&& Tuple) noexcept;
   
 using namespace std;  
   
-int main()  
-{  
+int main() {  
     tuple<int, double, string> tup(0, 1.42, "Call me Tuple");  
   
     // get elements by index  
@@ -88,13 +90,11 @@ int main()
     cout << " " << get<double>(tup);  
     cout << " " << get<string>(tup) << endl;    
 }  
+```  
   
-/*  
-Output:  
+```Output  
 0 1.42 Call me Tuple  
 0 1.42 Call me Tuple  
-*/  
-  
 ```  
   
 ##  <a name="make_tuple_function"></a>  make_tuple Function  
@@ -102,7 +102,7 @@ Output:
   
 ```  
 template <class T1, class T2, ..., class TN>  
-tuple<V1, V2, ..., VN> make_tuple(const T1& t1, const T2& t2, ..., const TN& tN);
+   tuple<V1, V2, ..., VN> make_tuple(const T1& t1, const T2& t2, ..., const TN& tN);
 ```  
   
 ### Parameters  
@@ -120,15 +120,13 @@ tuple<V1, V2, ..., VN> make_tuple(const T1& t1, const T2& t2, ..., const TN& tN)
 ### Example  
   
 ```cpp  
-  
-// std_tr1__tuple__make_tuple.cpp   
+// std__tuple__make_tuple.cpp   
 // compile by using: /EHsc   
 #include <tuple>   
 #include <iostream>   
   
 typedef std::tuple<int, double, int, double> Mytuple;   
-int main()   
-    {   
+int main() {   
     Mytuple c0(0, 1, 2, 3);   
   
 // display contents " 0 1 2 3"   
@@ -148,11 +146,13 @@ int main()
     std::cout << std::endl;   
   
     return (0);   
-    }  
-  
+}  
 ```  
   
- `0 1 2 3  4 5 6 7`  
+```  
+ 0 1 2 3
+ 4 5 6 7  
+```  
   
 ##  <a name="tie_function"></a>  tie Function  
  Makes a `tuple` from element references.  
@@ -172,14 +172,13 @@ tuple<T1&, T2&, ..., TN&> tie(T1& t1, T2& t2, ..., TN& tN);
 ### Example  
   
 ```cpp  
-// std_tr1__tuple__tie.cpp   
+// std__tuple__tie.cpp   
 // compile with: /EHsc   
 #include <tuple>   
 #include <iostream>   
   
 typedef std::tuple<int, double, int, double> Mytuple;   
-int main()   
-    {   
+int main() {   
     Mytuple c0(0, 1, 2, 3);   
   
 // display contents " 0 1 2 3"   
@@ -203,7 +202,7 @@ int main()
     std::cout << std::endl;   
   
     return (0);   
-    }    
+}    
 ```  
   
 ```Output  

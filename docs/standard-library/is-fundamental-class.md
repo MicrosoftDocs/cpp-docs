@@ -10,15 +10,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "is_fundamental"
-  - "std.tr1.is_fundamental"
-  - "std::tr1::is_fundamental"
-  - "std.is_fundamental"
   - "std::is_fundamental"
   - "type_traits/std::is_fundamental"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_fundamental class [TR1]"
+  - "is_fundamental class"
   - "is_fundamental"
 ms.assetid: b84eee84-2fb2-4611-beaf-b384074d8b6a
 caps.latest.revision: 19
@@ -60,7 +57,7 @@ struct is_fundamental;
 ## Example  
   
 ```cpp  
-// std_tr1__type_traits__is_fundamental.cpp   
+// std__type_traits__is_fundamental.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   

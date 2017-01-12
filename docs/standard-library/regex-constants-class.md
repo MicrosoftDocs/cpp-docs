@@ -9,13 +9,117 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::regex_constants"
-  - "std.tr1.regex_constants"
   - "regex_constants"
+  - "std::regex_constants"
+  - "regex/std::regex_constants"
+  - "error_collate"
+  - "std::regex_constants::error_collate"
+  - "regex/std::regex_constants::error_collate"
+  - "error_ctype"
+  - "std::regex_constants::error_ctype"
+  - "regex/std::regex_constants::error_ctype"
+  - "error_escape"
+  - "std::regex_constants::error_escape"
+  - "regex/std::regex_constants::error_escape"
+  - "error_backref"
+  - "std::regex_constants::error_backref"
+  - "regex/std::regex_constants::error_backref"
+  - "error_brack"
+  - "std::regex_constants::error_brack"
+  - "regex/std::regex_constants::error_brack"
+  - "error_paren"
+  - "std::regex_constants::error_paren"
+  - "regex/std::regex_constants::error_paren"
+  - "error_brace"
+  - "std::regex_constants::error_brace"
+  - "regex/std::regex_constants::error_brace"
+  - "error_badbrace"
+  - "std::regex_constants::error_badbrace"
+  - "regex/std::regex_constants::error_badbrace"
+  - "error_range"
+  - "std::regex_constants::error_range"
+  - "regex/std::regex_constants::error_range"
+  - "error_space"
+  - "std::regex_constants::error_space"
+  - "regex/std::regex_constants::error_space"
+  - "error_badrepeat"
+  - "std::regex_constants::error_badrepeat"
+  - "regex/std::regex_constants::error_badrepeat"
+  - "error_complexity"
+  - "std::regex_constants::error_complexity"
+  - "regex/std::regex_constants::error_complexity"
+  - "error_stack"
+  - "std::regex_constants::error_stack"
+  - "regex/std::regex_constants::error_stack"
+  - "error_parse"
+  - "std::regex_constants::error_parse"
+  - "regex/std::regex_constants::error_parse"
+  - "error_syntax"
+  - "std::regex_constants::error_syntax"
+  - "regex/std::regex_constants::error_syntax"
+  - "match_default"
+  - "std::regex_constants::match_default"
+  - "regex/std::regex_constants::match_default"
+  - "match_not_bol"
+  - "std::regex_constants::match_not_bol"
+  - "regex/std::regex_constants::match_not_bol"
+  - "match_not_eol"
+  - "std::regex_constants::match_not_eol"
+  - "regex/std::regex_constants::match_not_eol"
+  - "match_not_bow"
+  - "std::regex_constants::match_not_bow"
+  - "regex/std::regex_constants::match_not_bow"
+  - "match_not_eow"
+  - "std::regex_constants::match_not_eow"
+  - "regex/std::regex_constants::match_not_eow"
+  - "match_any"
+  - "std::regex_constants::match_any"
+  - "regex/std::regex_constants::match_any"
+  - "match_not_null"
+  - "std::regex_constants::match_not_null"
+  - "regex/std::regex_constants::match_not_null"
+  - "match_continuous"
+  - "std::regex_constants::match_continuous"
+  - "regex/std::regex_constants::match_continuous"
+  - "match_prev_avail"
+  - "std::regex_constants::match_prev_avail"
+  - "regex/std::regex_constants::match_prev_avail"
+  - "format_default"
+  - "std::regex_constants::format_default"
+  - "regex/std::regex_constants::format_default"
+  - "format_sed"
+  - "std::regex_constants::format_sed"
+  - "regex/std::regex_constants::format_sed"
+  - "format_no_copy"
+  - "std::regex_constants::format_no_copy"
+  - "regex/std::regex_constants::format_no_copy"
+  - "format_first_only"
+  - "std::regex_constants::format_first_only"
+  - "regex/std::regex_constants::format_first_only"
+  - "std::regex_constants::ECMAScript"
+  - "regex/std::regex_constants::ECMAScript"
+  - "std::regex_constants::basic"
+  - "regex/std::regex_constants::basic"
+  - "std::regex_constants::extended"
+  - "regex/std::regex_constants::extended"
+  - "std::regex_constants::awk"
+  - "regex/std::regex_constants::awk"
+  - "std::regex_constants::grep"
+  - "regex/std::regex_constants::grep"
+  - "std::regex_constants::egrep"
+  - "regex/std::regex_constants::egrep"
+  - "std::regex_constants::icase"
+  - "regex/std::regex_constants::icase"
+  - "std::regex_constants::nosubs"
+  - "regex/std::regex_constants::nosubs"
+  - "std::regex_constants::optimize"
+  - "regex/std::regex_constants::optimize"
+  - "std::regex_constants::collate"
+  - "regex/std::regex_constants::collate"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "regex_constants class [TR1]"
+  - "regex_constants class"
 ms.assetid: 4a69c0ba-c46d-46e4-bd29-6f4efb805f26
 caps.latest.revision: 18
 author: "corob-msft"
@@ -43,9 +147,9 @@ Namespace for regular expression flags.
   
 ```  
 namespace regex_constants {  
-    typedef T1 syntax_option_type;  
-    typedef T2 match_flag_type;  
-    typedef T3 error_type;  
+    enum syntax_option_type;  
+    enum match_flag_type;  
+    enum error_type;  
  }  
 ```  
   
@@ -61,24 +165,30 @@ namespace regex_constants {
  Flags for reporting regular expression syntax errors.  
   
 ```  
-typedef T3 error_type;  
-static const error_type error_badbrace,
-    error_badrepeat,
-    error_brace,  
-    error_brack,
+enum error_type
+    {    // identify error
     error_collate,
-    error_complexity,
-    error_ctype,  
+    error_ctype,
     error_escape,
+    error_backref,
+    error_brack,
     error_paren,
+    error_brace,
+    error_badbrace,
     error_range,
-    error_space,  
+    error_space,
+    error_badrepeat,
+    error_complexity,
     error_stack,
-    error_backref;  
+    error_parse,
+    error_syntax
+    };  
 ```  
   
 ### Remarks  
  The type is an enumerated type that describes an object that can hold error flags. The distinct flag values are:  
+  
+ `error_backref` -- the expression contained an invalid back reference  
   
  `error_badbrace` -- the expression contained an invalid count in a { } expression  
   
@@ -98,11 +208,15 @@ static const error_type error_badbrace,
   
  `error_paren` -- the expression contained an unmatched '(' or ')'  
   
+ `error_parse` -- the expression failed to parse  
+  
  `error_range` -- the expression contained an invalid character range specifier  
   
  `error_space` -- parsing a regular expression failed because there were not enough resources available  
   
  `error_stack` -- an attempted match failed because there was not enough memory available  
+  
+ `error_syntax` -- parsing failed on a syntax error  
   
  `error_backref` -- the expression contained an invalid back reference  
   
@@ -110,17 +224,23 @@ static const error_type error_badbrace,
  Flags for regular expression matching options.  
   
 ```  
-typedef T2 match_flag_type;  
-static const match_flag_type match_any,
-    match_default,
-    match_not_bol,  
-    match_not_bow,
-    match_continuous,
-    match_not_eol,
-    match_not_eow,  
-    match_not_null,
-    match_partial,
-    match_prev_avail;  
+enum match_flag_type 
+    {    // specify matching and formatting rules
+    match_default = 0x0000,
+    match_not_bol = 0x0001,
+    match_not_eol = 0x0002,
+    match_not_bow = 0x0004,
+    match_not_eow = 0x0008,
+    match_any = 0x0010,
+    match_not_null = 0x0020,
+    match_continuous = 0x0040,
+    match_prev_avail = 0x0100,
+    format_default = 0x0000,
+    format_sed = 0x0400,
+    format_no_copy = 0x0800,
+    format_first_only = 0x1000,
+    _Match_not_null = 0x2000
+    };  
 ```  
   
 ### Remarks  
@@ -160,17 +280,21 @@ static const match_flag_type match_any,
  Flags for selecting syntax options.  
   
 ```  
-typedef T1 syntax_option_type;  
-static const syntax_option_type awk,
-    basic,
-    collate,
-    ECMAScript,  
-    egrep,
-    extended,
-    grep,
-    icase,
-    nosubs,
-    optimize;  
+enum syntax_option_type
+    {    // specify RE syntax rules
+    ECMAScript = 0x01,
+    basic = 0x02,
+    extended = 0x04,
+    awk = 0x08,
+    grep = 0x10,
+    egrep = 0x20,
+    _Gmask = 0x3F,
+
+    icase = 0x0100,
+    nosubs = 0x0200,
+    optimize = 0x0400,
+    collate = 0x0800
+    };  
 ```  
   
 ### Remarks  
@@ -178,11 +302,11 @@ static const syntax_option_type awk,
   
  The language specifiers are:  
   
+ `ECMAScript` -- compile as ECMAScript  
+  
  `basic` -- compile as BRE  
   
  `extended` -- compile as ERE  
-  
- `ECMAScript` -- compile as ECMAScript  
   
  `awk` -- compile as awk  
   
@@ -201,5 +325,11 @@ static const syntax_option_type awk,
  `collate` -- make matches locale-sensitive  
   
 ## See Also  
- [\<regex>](../standard-library/regex.md)   
- [regex_constants](../standard-library/regex-constants-class.md)
+[\<regex>](../standard-library/regex.md)  
+[regex_error Class](../standard-library/regex-error-class.md)  
+[\<regex> functions](../standard-library/regex-functions.md)  
+[regex_iterator Class](../standard-library/regex-iterator-class.md)  
+[\<regex> operators](../standard-library/regex-operators.md)  
+[regex_token_iterator Class](../standard-library/regex-token-iterator-class.md)  
+[regex_traits Class](../standard-library/regex-traits-class.md)  
+[\<regex> typedefs](../standard-library/regex-typedefs.md)  

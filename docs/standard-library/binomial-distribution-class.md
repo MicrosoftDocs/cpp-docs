@@ -9,16 +9,36 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::binomial_distribution"
-  - "std.tr1.binomial_distribution"
-  - "tr1::binomial_distribution"
-  - "random/std::tr1::binomial_distribution"
-  - "tr1.binomial_distribution"
   - "binomial_distribution"
+  - "std::binomial_distribution"
+  - "random/std::binomial_distribution"
+  - "std::binomial_distribution::reset"
+  - "random/std::binomial_distribution::reset"
+  - "std::binomial_distribution::p"
+  - "random/std::binomial_distribution::p"
+   - "std::binomial_distribution::t"
+  - "random/std::binomial_distribution::t"
+  - "std::binomial_distribution::param"
+  - "random/std::binomial_distribution::param"
+  - "std::binomial_distribution::min"
+  - "random/std::binomial_distribution::min"
+  - "std::binomial_distribution::max"
+  - "random/std::binomial_distribution::max"
+  - "std::binomial_distribution::operator()"
+  - "random/std::binomial_distribution::operator()"
+  - "std::binomial_distribution::param_type"
+  - "random/std::binomial_distribution::param_type"
+  - "std::binomial_distribution::param_type::p"
+  - "random/std::binomial_distribution::param_type::p"
+  - "std::binomial_distribution::param_type::t"
+  - "random/std::binomial_distribution::param_type::t"
+  - "std::binomial_distribution::param_type::operator=="
+  - "random/std::binomial_distribution::param_type::operator=="
+  - "std::binomial_distribution::param_type::operator!="
+  - "random/std::binomial_distribution::param_type::operator!="
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "binomial_distribution class [TR1]"
   - "binomial_distribution class"
 ms.assetid: b7c8a26a-da8c-45a5-a3a8-208f7a3609ce
 caps.latest.revision: 22
@@ -44,22 +64,29 @@ translation.priority.ht:
 Generates a binomial distribution.  
   
 ## Syntax  
+  
 ```  
+template<class IntType = int>
 class binomial_distribution  
    {  
-   public:  // types  
+public:  
+   // types  
    typedef IntType result_type;  
-   struct param_type;  // constructors and reset functions  
-   explicit binomial_distribution(IntType t = 1, double p = 0.5);
+   struct param_type;  
+   
+   // constructors and reset functions  
+   explicit binomial_distribution(result_type t = 1, double p = 0.5);
    explicit binomial_distribution(const param_type& parm);
    void reset();
+   
    // generating functions  
    template <class URNG>  
    result_type operator()(URNG& gen);
    template <class URNG>  
    result_type operator()(URNG& gen, const param_type& parm);
+   
    // property functions  
-   IntType t() const;
+   result_type t() const;
    double p() const;
    param_type param() const;
    void param(const param_type& parm);
@@ -68,22 +95,33 @@ class binomial_distribution
    };  
 ```  
 #### Parameters  
- `IntType`  
- The integer result type, defaults to `int`. For possible types, see [\<random>](../standard-library/random.md).  
+*IntType*  
+The integer result type, defaults to `int`. For possible types, see [\<random>](../standard-library/random.md).  
   
+*URNG*
+The uniform random number generator engine. For possible types, see [\<random>](../standard-library/random.md).  
+
 ## Remarks  
- The template class describes a distribution that produces values of a user-specified integral type, or type `int` if none is provided, distributed according to the Binomial Distribution discrete probability function. The following table links to articles about individual members.  
+The template class describes a distribution that produces values of a user-specified integral type, or type `int` if none is provided, distributed according to the Binomial Distribution discrete probability function. The following table links to articles about individual members.  
   
 ||||  
 |-|-|-|  
 |[binomial_distribution::binomial_distribution](#binomial_distribution__binomial_distribution)|`binomial_distribution::t`|`binomial_distribution::param`|  
 |`binomial_distribution::operator()`|`binomial_distribution::p`|[binomial_distribution::param_type](#binomial_distribution__param_type)|  
   
- The property members `t()` and `p()` return the currently stored distribution parameter values `t` and `p` respectively.  
+The property members `t()` and `p()` return the currently stored distribution parameter values `t` and `p` respectively.  
   
- For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
+The property member `param()` sets or returns the `param_type` stored distribution parameter package.  
+
+The `min()` and `max()` member functions return the smallest possible result and largest possible result, respectively.  
   
- For detailed information about the binomial distribution discrete probability function, see the Wolfram MathWorld article [Binomial Distribution](http://go.microsoft.com/fwlink/LinkId=398469).  
+The `reset()` member function discards any cached values, so that the result of the next call to `operator()` does not depend on any values obtained from the engine before the call.  
+  
+The `operator()` member functions return the next generated value based on the URNG engine, either from the current parameter package, or the specified parameter package.
+  
+For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
+  
+For detailed information about the binomial distribution discrete probability function, see the Wolfram MathWorld article [Binomial Distribution](http://go.microsoft.com/fwlink/LinkId=398469).  
   
 ## Example  
   
@@ -140,10 +178,9 @@ int main()
 }  
 ```  
   
-## Output  
- First run:  
+First run:  
   
-```  
+```Output  
 Use CTRL-Z to bypass data entry and run using default values.  
 Enter an integer value for t distribution (where 0 <= t): 22  
 Enter a double value for p distribution (where 0.0 <= p <= 1.0): .25  
@@ -165,9 +202,9 @@ Histogram for 100 samples:
     12 :  
 ```  
   
- Second run:  
+Second run:  
   
-```  
+```Output  
 Use CTRL-Z to bypass data entry and run using default values.  
 Enter an integer value for t distribution (where 0 <= t): 22  
 Enter a double value for p distribution (where 0.0 <= p <= 1.0): .5  
@@ -189,9 +226,9 @@ Histogram for 100 samples:
     16 ::  
 ```  
   
- Third run:  
+Third run:  
   
-```  
+```Output  
 Use CTRL-Z to bypass data entry and run using default values.  
 Enter an integer value for t distribution (where 0 <= t): 22  
 Enter a double value for p distribution (where 0.0 <= p <= 1.0): .75  
@@ -212,59 +249,64 @@ Histogram for 100 samples:
 ```  
   
 ## Requirements  
- **Header:** \<random>  
+**Header:** \<random>  
   
- **Namespace:** std  
+**Namespace:** std  
   
 ##  <a name="binomial_distribution__binomial_distribution"></a>  binomial_distribution::binomial_distribution  
- Constructs the distribution.  
+Constructs the distribution.  
   
 ```  
-explicit binomial_distribution(IntType t = 1, double p = 0.5);
-
- 
+explicit binomial_distribution(result_type t = 1, double p = 0.5);
 explicit binomial_distribution(const param_type& parm);
 ```  
   
 ### Parameters  
- `t`  
- The `t` distribution parameter.  
+*t*  
+The `t` distribution parameter.  
   
- `p`  
- The `p` distribution parameter.  
+*p*  
+The `p` distribution parameter.  
   
- `parm`  
- The parameter structure used to construct the distribution.  
+*parm*  
+The `param_type` structure used to construct the distribution.  
   
 ### Remarks  
- **Precondition:** `0 ≤ t` and `0.0 ≤ p ≤ 1.0`  
+**Precondition:** `0 ≤ t` and `0.0 ≤ p ≤ 1.0`  
   
- The first constructor constructs an object whose stored `p` value holds the value `p` and whose stored `t` value holds the value `t`.  
+The first constructor constructs an object whose stored `p` value holds the value *p* and whose stored `t` value holds the value *t*.  
   
- The second constructor constructs an object whose stored parameters are initialized from `parm`. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
-  
- For more information and a code example, see [binomial_distribution Class](../standard-library/binomial-distribution-class.md).  
+The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
 ##  <a name="binomial_distribution__param_type"></a>  binomial_distribution::param_type  
- Stores all the parameters of the distribution.  
+Stores all the parameters of the distribution.  
+  
 ```cpp  
 struct param_type {  
-   typedef binomial_distribution<IntType> distribution_type;  
-   param_type(IntType t = 1, double p = 0.5);
-   IntType t() const;
+   typedef binomial_distribution<result_type> distribution_type;  
+   param_type(result_type t = 1, double p = 0.5);
+   result_type t() const;
    double p() const;
    .....  
    bool operator==(const param_type& right) const;
    bool operator!=(const param_type& right) const;
    };  
 ```  
+  
 ### Parameters  
- See parent topic [binomial_distribution Class](../standard-library/binomial-distribution-class.md).  
+*t*  
+The `t` distribution parameter.  
+  
+*p*  
+The `p` distribution parameter.  
+  
+*right*  
+ The `param_type` object to compare to this.  
   
 ### Remarks  
- **Precondition:** `0 ≤ t` and `0.0 ≤ p ≤ 1.0`  
+**Precondition:** `0 ≤ t` and `0.0 ≤ p ≤ 1.0`  
   
- This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
+This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
   
 ## See Also  
  [\<random>](../standard-library/random.md)

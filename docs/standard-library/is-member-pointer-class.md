@@ -9,16 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::is_member_pointer"
   - "is_member_pointer"
-  - "std.tr1.is_member_pointer"
-  - "std.is_member_pointer"
   - "std::is_member_pointer"
   - "type_traits/std::is_member_pointer"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_member_pointer class [TR1]"
+  - "is_member_pointer class"
   - "is_member_pointer"
 ms.assetid: da07ff4e-9ee0-4baa-ad93-1741f10913d1
 caps.latest.revision: 19
@@ -60,7 +57,7 @@ struct is_member_pointer;
 ## Example  
   
 ```cpp  
-// std_tr1__type_traits__is_member_pointer.cpp   
+// std__type_traits__is_member_pointer.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   

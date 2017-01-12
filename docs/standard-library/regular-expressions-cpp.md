@@ -13,8 +13,7 @@ dev_langs:
 helpviewer_keywords: 
   - "Visual C++, regular expressions"
   - "regular expressions, Visual C++"
-  - "regular expressions [TR1]"
-  - "TR1 regular expressions"
+  - "regular expressions"
 ms.assetid: aafe202a-1d96-4b36-a270-d676dfd3c51c
 caps.latest.revision: 12
 author: "corob-msft"

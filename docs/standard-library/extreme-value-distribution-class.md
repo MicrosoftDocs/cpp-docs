@@ -9,12 +9,33 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.extreme_value_distribution"
-  - "tr1::extreme_value_distribution"
-  - "tr1.extreme_value_distribution"
-  - "std::tr1::extreme_value_distribution"
-  - "random/std::tr1::extreme_value_distribution"
   - "extreme_value_distribution"
+  - "std::extreme_value_distribution"
+  - "random/std::extreme_value_distribution"
+  - "std::extreme_value_distribution::reset"
+  - "random/std::extreme_value_distribution::reset"
+  - "std::extreme_value_distribution::a"
+  - "random/std::extreme_value_distribution::a"
+  - "std::extreme_value_distribution::b"
+  - "random/std::extreme_value_distribution::b"
+  - "std::extreme_value_distribution::param"
+  - "random/std::extreme_value_distribution::param"
+  - "std::extreme_value_distribution::min"
+  - "random/std::extreme_value_distribution::min"
+  - "std::extreme_value_distribution::max"
+  - "random/std::extreme_value_distribution::max"
+  - "std::extreme_value_distribution::operator()"
+  - "random/std::extreme_value_distribution::operator()"
+  - "std::extreme_value_distribution::param_type"
+  - "random/std::extreme_value_distribution::param_type"
+  - "std::extreme_value_distribution::param_type::a"
+  - "random/std::extreme_value_distribution::param_type::a"
+  - "std::extreme_value_distribution::param_type::b"
+  - "random/std::extreme_value_distribution::param_type::b"
+  - "std::extreme_value_distribution::param_type::operator=="
+  - "random/std::extreme_value_distribution::param_type::operator=="
+  - "std::extreme_value_distribution::param_type::operator!="
+  - "random/std::extreme_value_distribution::param_type::operator!="
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -44,34 +65,43 @@ Generates an extreme value distribution.
   
 ## Syntax  
 ```  
+template<class RealType = double>
 class extreme_value_distribution  
    {  
-   public:  // types  
+public:  
+   // types  
    typedef RealType result_type;  
-   struct param_type;  // constructor and reset functions  
-   explicit extreme_value_distribution(RealType a = 0.0, RealType b = 1.0);
+   struct param_type;  
+   
+   // constructor and reset functions  
+   explicit extreme_value_distribution(result_type a = 0.0, result_type b = 1.0);
    explicit extreme_value_distribution(const param_type& parm);
    void reset();
+   
    // generating functions  
    template <class URNG>  
    result_type operator()(URNG& gen);
    template <class URNG>  
    result_type operator()(URNG& gen, const param_type& parm);
+   
    // property functions  
-   RealType a() const;
-   RealType b() const;
+   result_type a() const;
+   result_type b() const;
    param_type param() const;
    void param(const param_type& parm);
    result_type min() const;
    result_type max() const;
    };  
 ```    
-#### Parameters  
- `RealType`  
- The floating-point result type, defaults to `double`. For possible types, see [\<random>](../standard-library/random.md).  
+### Parameters  
+*RealType*  
+The floating-point result type, defaults to `double`. For possible types, see [\<random>](../standard-library/random.md).  
+  
+*URNG*
+The random number generator engine. For possible types, see [\<random>](../standard-library/random.md).
   
 ## Remarks  
- The template class describes a distribution that produces values of a user-specified integral type, or type `double` if none is provided, distributed according to the Extreme Value Distribution. The following table links to articles about individual members.  
+ The template class describes a distribution that produces values of a user-specified floating-point type, or type `double` if none is provided, distributed according to the Extreme Value Distribution. The following table links to articles about individual members.  
   
 ||||  
 |-|-|-|  
@@ -142,12 +172,9 @@ int main()
   
     test(a_dist, b_dist, samples);  
 }  
-  
 ```  
   
-## Output  
-  
-```  
+```Output  
 Use CTRL-Z to bypass data entry and run using default values.  
 Enter a floating point value for the 'a' distribution parameter: 0  
 Enter a floating point value for the 'b' distribution parameter (must be greater than zero): 1  
@@ -179,44 +206,51 @@ Distribution for 10 samples:
  Constructs the distribution.  
   
 ```  
-explicit extreme_value_distribution(RealType a = 0.0, RealType b = 1.0);
-
- 
-explicit extreme_value_distribution(const param_type& parm);
+explicit extreme_value_distribution(result_type a_value = 0.0, result_type b_value = 1.0);
+explicit extreme_value_distribution(const param_type& parm);  
 ```  
   
 ### Parameters  
- `a`  
+*a_value*  
  The `a` distribution parameter.  
   
- `b`  
+*b_value*  
  The `b` distribution parameter.  
   
- `parm`  
- The parameter structure used to construct the distribution.  
+*parm*  
+ The `param_type` structure used to construct the distribution.  
   
 ### Remarks  
  **Precondition:** `0.0 < b`  
   
- The first constructor constructs an object whose stored `a` value holds the value `a` and whose stored `b` value holds the value `b`.  
+ The first constructor constructs an object whose stored `a` value holds the value *a_value* and whose stored `b` value holds the value *b_value*.  
   
- The second constructor constructs an object whose stored parameters are initialized from `parm`. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
+ The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
 ##  <a name="extreme_value_distribution__param_type"></a>  extreme_value_distribution::param_type  
- Stores the parameters of the distribution.  
+Stores the parameters of the distribution.  
+  
 ```cpp  
 struct param_type {  
-   typedef extreme_value_distribution<RealType> distribution_type;  
-   param_type(RealType a = 0.0, RealType b = 1.0);
-   RealType a() const;
-   RealType b() const;
-   .....  
+   typedef extreme_value_distribution<result_type> distribution_type;  
+   param_type(result_type a_value = 0.0, result_type b_value = 1.0);
+   result_type a() const;
+   result_type b() const;
+    
    bool operator==(const param_type& right) const;
    bool operator!=(const param_type& right) const;
    };  
 ```  
+  
 ### Parameters  
- See parent topic [extreme_value_distribution Class](../standard-library/extreme-value-distribution-class.md).  
+*a_value*  
+ The `a` distribution parameter.  
+  
+*b_value*  
+ The `b` distribution parameter.  
+  
+*right*  
+ The `param_type` object to compare to this.  
   
 ### Remarks  
  **Precondition:** `0.0 < b`  

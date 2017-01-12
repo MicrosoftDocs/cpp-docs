@@ -9,12 +9,33 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.fisher_f_distribution"
-  - "tr1.fisher_f_distribution"
-  - "std::tr1::fisher_f_distribution"
   - "fisher_f_distribution"
-  - "random/std::tr1::fisher_f_distribution"
-  - "tr1::fisher_f_distribution"
+  - "std::fisher_f_distribution"
+  - "random/std::fisher_f_distribution"
+  - "std::fisher_f_distribution::reset"
+  - "random/std::fisher_f_distribution::reset"
+  - "std::fisher_f_distribution::m"
+  - "random/std::fisher_f_distribution::m"
+  - "std::fisher_f_distribution::n"
+  - "random/std::fisher_f_distribution::n"
+  - "std::fisher_f_distribution::param"
+  - "random/std::fisher_f_distribution::param"
+  - "std::fisher_f_distribution::min"
+  - "random/std::fisher_f_distribution::min"
+  - "std::fisher_f_distribution::max"
+  - "random/std::fisher_f_distribution::max"
+  - "std::fisher_f_distribution::operator()"
+  - "random/std::fisher_f_distribution::operator()"
+  - "std::fisher_f_distribution::param_type"
+  - "random/std::fisher_f_distribution::param_type"
+  - "std::fisher_f_distribution::param_type::m"
+  - "random/std::fisher_f_distribution::param_type::m"
+  - "std::fisher_f_distribution::param_type::n"
+  - "random/std::fisher_f_distribution::param_type::n"
+  - "std::fisher_f_distribution::param_type::operator=="
+  - "random/std::fisher_f_distribution::param_type::operator=="
+  - "std::fisher_f_distribution::param_type::operator!="
+  - "random/std::fisher_f_distribution::param_type::operator!="
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -44,22 +65,26 @@ Generates a Fisher F distribution.
   
 ## Syntax  
 ```  
+template<class RealType = double>
 class fisher_f_distribution  
    {  
-   public:  // types  
+public:  
+   // types  
    typedef RealType result_type;  
    struct param_type;  // constructor and reset functions  
-   explicit fisher_f_distribution(RealType m = 1.0, RealType n = 1.0);
+   explicit fisher_f_distribution(result_type m = 1.0, result_type n = 1.0);
    explicit fisher_f_distribution(const param_type& parm);
    void reset();
+
    // generating functions  
    template <class URNG>  
    result_type operator()(URNG& gen);
    template <class URNG>  
    result_type operator()(URNG& gen, const param_type& parm);
+
    // property functions  
-   RealType m() const;
-   RealType n() const;
+   result_type m() const;
+   result_type n() const;
    param_type param() const;
    void param(const param_type& parm);
    result_type min() const;
@@ -67,11 +92,14 @@ class fisher_f_distribution
    };  
 ```  
 #### Parameters  
- `RealType`  
- The floating-point result type, defaults to `double`. For possible types, see [\<random>](../standard-library/random.md).  
+*RealType*  
+The floating-point result type, defaults to `double`. For possible types, see [\<random>](../standard-library/random.md).  
+  
+*URNG*
+The uniform random number generator engine. For possible types, see [\<random>](../standard-library/random.md).  
   
 ## Remarks  
- The template class describes a distribution that produces values of a user-specified integral type, or type `double` if none is provided, distributed according to the Fisher's F-Distribution. The following table links to articles about individual members.  
+ The template class describes a distribution that produces values of a user-specified floating-point type, or type `double` if none is provided, distributed according to the Fisher's F-Distribution. The following table links to articles about individual members.  
   
 ||||  
 |-|-|-|  
@@ -80,9 +108,17 @@ class fisher_f_distribution
   
  The property functions `m()` and `n()` return the values for the stored distribution parameters `m` and `n` respectively.  
   
+The property member `param()` sets or returns the `param_type` stored distribution parameter package.  
+
+The `min()` and `max()` member functions return the smallest possible result and largest possible result, respectively.  
+  
+The `reset()` member function discards any cached values, so that the result of the next call to `operator()` does not depend on any values obtained from the engine before the call.  
+  
+The `operator()` member functions return the next generated value based on the URNG engine, either from the current parameter package, or the specified parameter package.
+  
  For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
- For detailed information about the F- distribution, see the Wolfram MathWorld article [F-Distribution](http://go.microsoft.com/fwlink/LinkId=400899).  
+ For detailed information about the F-distribution, see the Wolfram MathWorld article [F-Distribution](http://go.microsoft.com/fwlink/LinkId=400899).  
   
 ## Example  
   
@@ -226,44 +262,50 @@ Distribution for 10 samples:
  Constructs the distribution.  
   
 ```  
-explicit fisher_f_distribution(RealType m = 1.0, RealType n = 1.0);
-
- 
+explicit fisher_f_distribution(result_type m = 1.0, result_type n = 1.0);
 explicit fisher_f_distribution(const param_type& parm);
 ```  
   
 ### Parameters  
- `m`  
+*m*  
  The `m` distribution parameter.  
   
- `n`  
+*n*  
  The `n` distribution parameter.  
   
- `parm`  
- The parameter structure used to construct the distribution.  
+*parm*  
+ The `param_type` structure used to construct the distribution.  
   
 ### Remarks  
  **Precondition:** `0.0 < m` and `0.0 < n`  
   
- The first constructor constructs an object whose stored `m` value holds the value `m` and whose stored `n` value holds the value `n`.  
+ The first constructor constructs an object whose stored `m` value holds the value *m* and whose stored `n` value holds the value *n*.  
   
- The second constructor constructs an object whose stored parameters are initialized from `parm`. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
+ The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
 ##  <a name="fisher_f_distribution__param_type"></a>  fisher_f_distribution::param_type  
  Stores the parameters of the distribution.  
+  
 ```cpp  
 struct param_type {  
-   typedef fisher_f_distribution<RealType> distribution_type;  
-   param_type(RealType m = 1.0, RealType n = 1.0);
-   RealType m() const;
-   RealType n() const;
-   ......  
+   typedef fisher_f_distribution<result_type> distribution_type;  
+   param_type(result_type m = 1.0, result_type n = 1.0);
+   result_type m() const;
+   result_type n() const;
+
    bool operator==(const param_type& right) const;
    bool operator!=(const param_type& right) const;
    };  
 ```  
 ### Parameters  
- See parent topic [extreme_value_distribution Class](../standard-library/extreme-value-distribution-class.md).  
+*m*  
+ The `m` distribution parameter.  
+  
+*n*  
+ The `n` distribution parameter.  
+  
+*right*  
+The `param_type` object to compare to this.  
   
 ### Remarks  
  **Precondition:** `0.0 < m` and `0.0 < n`  

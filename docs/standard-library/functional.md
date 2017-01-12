@@ -11,7 +11,6 @@ ms.topic: "article"
 f1_keywords: 
   - "<functional>"
   - "functional/std::<functional>"
-  - "std.<functional>"
   - "std::<functional>"
 dev_langs: 
   - "C++"
@@ -116,7 +115,6 @@ Defines C++ Standard Library functions that help construct *function objects*—
 |[pointer_to_binary_function](../standard-library/pointer-to-binary-function-class.md)|Converts a binary function pointer into an adaptable binary function.|  
 |[pointer_to_unary_function](../standard-library/pointer-to-unary-function-class.md)|Converts a unary function pointer into an adaptable unary function.|  
 |[reference_wrapper](../standard-library/reference-wrapper-class.md)|A class that wraps a reference.|  
-|[result_of](../standard-library/result-of-class2.md)|A struct that holds the return type of a wrapped callable object.|  
 |[unary_negate](../standard-library/unary-negate-class.md)|A template class providing a member function that negates the return value of a specified unary function.|  
   
 ### Functions  

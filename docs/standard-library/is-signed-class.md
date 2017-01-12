@@ -10,15 +10,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "is_signed"
-  - "std.tr1.is_signed"
-  - "std::tr1::is_signed"
-  - "std.is_signed"
   - "std::is_signed"
   - "type_traits/std::is_signed"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_signed class [TR1]"
+  - "is_signed class"
   - "is_signed"
 ms.assetid: 20ae44d9-22ad-4fbd-b26a-f18c62689451
 caps.latest.revision: 19
@@ -60,7 +57,7 @@ struct is_signed;
 ## Example  
   
 ```cpp  
-// std_tr1__type_traits__is_signed.cpp   
+// std__type_traits__is_signed.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   
@@ -94,7 +91,7 @@ is_signed<float> == false
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

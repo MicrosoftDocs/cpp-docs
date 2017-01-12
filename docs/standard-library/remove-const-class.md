@@ -9,16 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.remove_const"
-  - "std::tr1::remove_const"
   - "remove_const"
-  - "std.remove_const"
   - "std::remove_const"
   - "type_traits/std::remove_const"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "remove_const class [TR1]"
+  - "remove_const class"
   - "remove_const"
 ms.assetid: feb76fb3-9228-41d6-80f6-2fbb04daec43
 caps.latest.revision: 20
@@ -78,7 +75,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -86,7 +82,7 @@ remove_const_t<const int> == int
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

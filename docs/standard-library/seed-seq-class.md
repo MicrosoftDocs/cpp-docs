@@ -9,12 +9,17 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "tr1::seed_seq"
-  - "std::tr1::seed_seq"
-  - "tr1.seed_seq"
   - "seed_seq"
-  - "std.tr1.seed_seq"
-  - "random/std::tr1::seed_seq"
+  - "std::seed_seq"
+  - "random/std::seed_seq"
+  - "std::seed_seq::result_type"
+  - "random/std::seed_seq::result_type"
+  - "std::seed_seq::generate"
+  - "random/std::seed_seq::generate"
+  - "std::seed_seq::size"
+  - "random/std::seed_seq::size"
+  - "std::seed_seq::param"
+  - "random/std::seed_seq::param"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -46,22 +51,26 @@ Stores a vector of unsigned integer values that can supply a randomized seed for
 ```  
 class seed_seq  
    {  
-   public:  // types  
+public:  
+   // types  
    typedef unsigned int result_type;  
+
    // constructors  
    seed_seq();
    template <class T>  
-   seed_seq(initializer_list<T>  
-   initlist);
+      seed_seq(initializer_list<T> initlist);
    template <class InputIterator>  
-   seed_seq(InputIterator begin, InputIterator end);
+      seed_seq(InputIterator begin, InputIterator end);
+
    // generating functions  
    template <class RandomAccessIterator>  
-   void generate(RandomAccessIterator begin, RandomAccessIterator end);
+      void generate(RandomAccessIterator begin, RandomAccessIterator end);
+
    // property functions  
    size_t size() const;
    template <class OutputIterator>  
-   void param(OutputIterator dest) const;
+      void param(OutputIterator dest) const;
+
    // no copy functions  
    seed_seq(const seed_seq&) = delete;  
    void operator=(const seed_seq&) = delete;  
@@ -138,10 +147,7 @@ int main()
 }  
 ```  
   
-## Output  
-  
 ```Output  
-  
 seed_seq::size(): 0  
 seed_seq::param():  
 Generating a sequence of 5 elements into an array:  

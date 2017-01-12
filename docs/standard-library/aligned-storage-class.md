@@ -10,15 +10,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "aligned_storage"
-  - "std::tr1::aligned_storage"
-  - "std.tr1.aligned_storage"
-  - "std.aligned_storage"
   - "std::aligned_storage"
   - "type_traits/std::aligned_storage"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "aligned_storage class [TR1]"
+  - "aligned_storage class"
   - "aligned_storage"
 ms.assetid: f255e345-1f05-4d07-81e4-017f420839fb
 caps.latest.revision: 23

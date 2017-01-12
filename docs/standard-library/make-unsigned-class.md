@@ -9,16 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.make_unsigned"
   - "make_unsigned"
-  - "std::tr1::make_unsigned"
-  - "std.make_unsigned"
   - "std::make_unsigned"
   - "type_traits/std::make_unsigned"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "make_unsigned class[TR1]"
+  - "make_unsigned class"
   - "make_unsigned"
 ms.assetid: 7a6a3c4f-1a4c-47e8-9ee2-ac1f7b669353
 caps.latest.revision: 18
@@ -63,7 +60,7 @@ using make_unsigned_t = typename make_unsigned<T>::type;
  An instance of the type modifier holds a modified-type that is `T` if `is_unsigned<T>` holds true. Otherwise it is the smallest signed type `ST` for which `sizeof (T) <= sizeof (ST)`.  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

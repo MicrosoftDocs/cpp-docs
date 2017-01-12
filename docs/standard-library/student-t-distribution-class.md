@@ -9,12 +9,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::student_t_distribution"
-  - "tr1::student_t_distribution"
-  - "std.tr1.student_t_distribution"
-  - "random/std::tr1::student_t_distribution"
-  - "tr1.student_t_distribution"
   - "student_t_distribution"
+  - "std::student_t_distribution"
+  - "random/std::student_t_distribution"
+  - "random/std::student_t_distribution::result_type"
+  - "random/std::student_t_distribution::reset"
+  - "random/std::student_t_distribution::operator()"
+  - "random/std::student_t_distribution::n"
+  - "random/std::student_t_distribution::param"
+  - "random/std::student_t_distribution::min"
+  - "random/std::student_t_distribution::max"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -44,21 +48,26 @@ Generates a Student's *t*-distribution.
   
 ## Syntax  
 ```  
-class student_t_distribution  
-   {  
-   public:  // types  
+template<class RealType = double>
+class student_t_distribution {  
+public:  
+   // types  
    typedef RealType result_type;  
-   struct param_type;  // constructor and reset functions  
-   explicit student_t_distribution(RealType n = 1.0);
+   struct param_type;  
+   
+   // constructor and reset functions  
+   explicit student_t_distribution(result_type n = 1.0);
    explicit student_t_distribution(const param_type& parm);
    void reset();
+   
    // generating functions  
    template <class URNG>  
    result_type operator()(URNG& gen);
    template <class URNG>  
    result_type operator()(URNG& gen, const param_type& parm);
+   
    // property functions  
-   RealType n() const;
+   result_type n() const;
    param_type param() const;
    void param(const param_type& parm);
    result_type min() const;
@@ -66,7 +75,7 @@ class student_t_distribution
    };  
 ```  
 #### Parameters  
- `RealType`  
+*RealType*  
  The floating-point result type, defaults to `double`. For possible types, see [\<random>](../standard-library/random.md).  
   
 ## Remarks  
@@ -135,12 +144,9 @@ int main()
   
     test(n_dist, samples);  
 }  
-  
 ```  
   
-## Output  
-  
-```  
+```Output  
 Use CTRL-Z to bypass data entry and run using default values.  
 Enter a floating point value for the 'n' distribution parameter (must be greater than zero): 1  
 Enter an integer value for the sample count: 10  
@@ -171,39 +177,42 @@ Distribution for 10 samples:
   
 ```  
 explicit student_t_distribution(RealType n = 1.0);
-
- 
 explicit student_t_distribution(const param_type& parm);
 ```  
   
 ### Parameters  
- `n`  
+*n*  
  The `n` distribution parameter.  
   
- `parm`  
+*parm*  
  The parameter package used to construct the distribution.  
   
 ### Remarks  
  **Precondition:** `0.0 < n`  
   
- The first constructor constructs an object whose stored `n` value holds the value `n`.  
+ The first constructor constructs an object whose stored `n` value holds the value *n*.  
   
- The second constructor constructs an object whose stored parameters are initialized from `parm`. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
+ The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
 ##  <a name="student_t_distribution__param_type"></a>  student_t_distribution::param_type  
  Stores all the parameters of the distribution.  
 ```cpp    
 struct param_type {  
-   typedef student_t_distribution<RealType> distribution_type;  
-   param_type(RealType n = 1.0);
-   RealType n() const;
-   .....  
+   typedef student_t_distribution<result_type> distribution_type;  
+   param_type(result_type n = 1.0);
+   result_type n() const;
+
    bool operator==(const param_type& right) const;
    bool operator!=(const param_type& right) const;
    };  
 ```  
+  
 ### Parameters  
- See parent topic [student_t_distribution Class](../standard-library/student-t-distribution-class.md).  
+*n*  
+The `n` distribution parameter.  
+  
+*right*  
+The `param_type` object to compare to this.  
   
 ### Remarks  
  **Precondition:** `0.0 < n`  

@@ -9,13 +9,15 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::regex_error"
   - "regex_error"
-  - "std.tr1.regex_error"
+  - "std::regex_error"
+  - "regex/std::regex_error"
+  - "std::regex_error::code"
+  - "regex/std::regex_error::code"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "regex_error class [TR1]"
+  - "regex_error class"
 ms.assetid: 3333a1a3-ca6f-4612-84b2-1b4c7e3db5a4
 caps.latest.revision: 19
 author: "corob-msft"
@@ -74,7 +76,7 @@ regex_constants::error_code code() const;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_error_code.cpp   
+// std__regex__regex_error_code.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -125,7 +127,7 @@ regex_error(regex_constants::error_code error);
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_error_construct.cpp   
+// std__regex__regex_error_construct.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -160,5 +162,11 @@ regex error: unbalanced parentheses
 ```  
   
 ## See Also  
- [\<regex>](../standard-library/regex.md)   
- [regex_error](../standard-library/regex-error-class.md)
+[\<regex>](../standard-library/regex.md)  
+[regex_constants Class](../standard-library/regex-constants-class.md)  
+[\<regex> functions](../standard-library/regex-functions.md)  
+[regex_iterator Class](../standard-library/regex-iterator-class.md)  
+[\<regex> operators](../standard-library/regex-operators.md)  
+[regex_token_iterator Class](../standard-library/regex-token-iterator-class.md)  
+[regex_traits Class](../standard-library/regex-traits-class.md)  
+[\<regex> typedefs](../standard-library/regex-typedefs.md)  

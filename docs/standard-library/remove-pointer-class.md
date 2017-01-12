@@ -10,15 +10,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "remove_pointer"
-  - "std.tr1.remove_pointer"
-  - "std::tr1::remove_pointer"
-  - "std.remove_pointer"
   - "std::remove_pointer"
   - "type_traits/std::remove_pointer"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "remove_pointer class [TR1]"
+  - "remove_pointer class"
   - "remove_pointer"
 ms.assetid: 2cd4e417-32fb-4f53-bd16-4e8a98240832
 caps.latest.revision: 20
@@ -76,7 +73,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -84,7 +80,7 @@ remove_pointer_t<int *> == int
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

@@ -9,16 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.extent"
   - "extent"
-  - "std::tr1::extent"
-  - "std.extent"
   - "std::extent"
   - "type_traits/std::extent"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "extent class [TR1]"
+  - "extent class"
   - "extent"
 ms.assetid: 6d16263d-90b2-4330-9ec7-b59ed898792d
 caps.latest.revision: 20
@@ -63,7 +60,7 @@ struct extent;
 ## Example  
   
 ```cpp  
-// std_tr1__type_traits__extent.cpp   
+// std__type_traits__extent.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   

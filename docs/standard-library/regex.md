@@ -13,7 +13,7 @@ f1_keywords:
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "regex header [TR1]"
+  - "regex header"
 ms.assetid: 5dd4ef74-6063-4dbc-b692-1960bb736f0b
 caps.latest.revision: 23
 author: "corob-msft"
@@ -114,7 +114,15 @@ Defines a template class to parse [Regular Expressions (C++)](../standard-librar
 |[operator<<](../standard-library/regex-operators.md#operator_lt__lt_)|Inserts a `sub_match` in a stream.|  
   
 ## See Also  
- [Regular Expressions (C++)](../standard-library/regular-expressions-cpp.md)
+[Regular Expressions (C++)](../standard-library/regular-expressions-cpp.md)  
+[regex_constants Class](../standard-library/regex-constants-class.md)  
+[regex_error Class](../standard-library/regex-error-class.md)  
+[\<regex> functions](../standard-library/regex-functions.md)  
+[regex_iterator Class](../standard-library/regex-iterator-class.md)  
+[\<regex> operators](../standard-library/regex-operators.md)  
+[regex_token_iterator Class](../standard-library/regex-token-iterator-class.md)  
+[regex_traits Class](../standard-library/regex-traits-class.md)  
+[\<regex> typedefs](../standard-library/regex-typedefs.md)  
 
 
 

@@ -9,16 +9,37 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "random/std::tr1::gamma_distribution"
-  - "std::tr1::gamma_distribution"
-  - "std.tr1.gamma_distribution"
-  - "tr1.gamma_distribution"
-  - "tr1::gamma_distribution"
   - "gamma_distribution"
+  - "std::gamma_distribution"
+  - "random/std::gamma_distribution"
+  - "std::gamma_distribution::reset"
+  - "random/std::gamma_distribution::reset"
+  - "std::gamma_distribution::alpha"
+  - "random/std::gamma_distribution::alpha"
+  - "std::gamma_distribution::beta"
+  - "random/std::gamma_distribution::beta"
+  - "std::gamma_distribution::param"
+  - "random/std::gamma_distribution::param"
+  - "std::gamma_distribution::min"
+  - "random/std::gamma_distribution::min"
+  - "std::gamma_distribution::max"
+  - "random/std::gamma_distribution::max"
+  - "std::gamma_distribution::operator()"
+  - "random/std::gamma_distribution::operator()"
+  - "std::gamma_distribution::param_type"
+  - "random/std::gamma_distribution::param_type"
+  - "std::gamma_distribution::param_type::alpha"
+  - "random/std::gamma_distribution::param_type::alpha"
+  - "std::gamma_distribution::param_type::beta"
+  - "random/std::gamma_distribution::param_type::beta"
+  - "std::gamma_distribution::param_type::operator=="
+  - "random/std::gamma_distribution::param_type::operator=="
+  - "std::gamma_distribution::param_type::operator!="
+  - "random/std::gamma_distribution::param_type::operator!="
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "gamma_distribution class [TR1]"
+  - "gamma_distribution"
   - "gamma_distribution class"
 ms.assetid: 2a6798ac-6152-41d7-8ef6-d684d92f1572
 caps.latest.revision: 18
@@ -45,23 +66,27 @@ Generates a gamma distribution.
   
 ## Syntax  
 ```  
+template<class RealType = double>
 class gamma_distribution {
 public:    
     // types 
     typedef RealType result_type;    
-    struct param_type;    
+    struct param_type;  
+
     // constructors and reset functions 
-    explicit gamma_distribution(RealType alpha = 1.0, RealType beta = 1.0);
+    explicit gamma_distribution(result_type alpha = 1.0, result_type beta = 1.0);
     explicit gamma_distribution(const param_type& parm);
     void reset();
+    
     // generating functions
     template <class URNG>  
     result_type operator()(URNG& gen);
     template <class URNG>
     result_type operator()(URNG& gen, const param_type& parm);
+    
     // property functions
-    RealType alpha() const;
-    RealType beta() const;
+    result_type alpha() const;
+    result_type beta() const;
     param_type param() const;
     void param(const param_type& parm);
     result_type min() const;
@@ -69,22 +94,33 @@ public:
 };
 ```    
 #### Parameters  
- `RealType`  
- The floating-point result type, defaults to `double`. For possible types, see [\<random>](../standard-library/random.md).  
+*RealType*  
+The floating-point result type, defaults to `double`. For possible types, see [\<random>](../standard-library/random.md).  
+  
+*URNG*
+The uniform random number generator engine. For possible types, see [\<random>](../standard-library/random.md).  
   
 ## Remarks  
- The template class describes a distribution that produces values of a user-specified integral type, or type `double` if none is provided, distributed according to the Gamma Distribution. The following table links to articles about individual members.  
+The template class describes a distribution that produces values of a user-specified floating-point type, or type `double` if none is provided, distributed according to the Gamma Distribution. The following table links to articles about individual members.  
   
 ||||  
 |-|-|-|  
 |[gamma_distribution::gamma_distribution](#gamma_distribution__gamma_distribution)|`gamma_distribution::alpha`|`gamma_distribution::param`|  
 |`gamma_distribution::operator()`|`gamma_distribution::beta`|[gamma_distribution::param_type](#gamma_distribution__param_type)|  
   
- The property functions `alpha()` and `beta()` return their respective values for stored distribution parameters `alpha` and `beta`.  
+The property functions `alpha()` and `beta()` return their respective values for stored distribution parameters *alpha* and *beta*.  
   
- For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
+The property member `param()` sets or returns the `param_type` stored distribution parameter package.  
+
+The `min()` and `max()` member functions return the smallest possible result and largest possible result, respectively.  
   
- For detailed information about the gamma distribution, see the Wolfram MathWorld article [Gamma Distribution](http://go.microsoft.com/fwlink/LinkId=401111).  
+The `reset()` member function discards any cached values, so that the result of the next call to `operator()` does not depend on any values obtained from the engine before the call.  
+  
+The `operator()` member functions return the next generated value based on the URNG engine, either from the current parameter package, or the specified parameter package.
+  
+For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
+  
+For detailed information about the gamma distribution, see the Wolfram MathWorld article [Gamma Distribution](http://go.microsoft.com/fwlink/LinkId=401111).  
   
 ## Example  
   
@@ -144,12 +180,9 @@ int main()
   
     test(a_dist, b_dist, samples);  
 }  
-  
 ```  
   
-## Output  
-  
-```  
+```Output  
 Use CTRL-Z to bypass data entry and run using default values.  
 Enter a floating point value for the 'alpha' distribution parameter (must be greater than zero): 1  
 Enter a floating point value for the 'beta' distribution parameter (must be greater than zero): 1  
@@ -173,60 +206,66 @@ Distribution for 10 samples:
 ```  
   
 ## Requirements  
- **Header:** \<random>  
+**Header:** \<random>  
   
- **Namespace:** std  
+**Namespace:** std  
   
 ##  <a name="gamma_distribution__gamma_distribution"></a>  gamma_distribution::gamma_distribution  
- Constructs the distribution.  
+Constructs the distribution.  
   
 ```  
-explicit gamma_distribution(RealType alpha = 1.0, RealType beta = 1.0);
-
- 
+explicit gamma_distribution(result_type alpha = 1.0, result_type beta = 1.0);
 explicit gamma_distribution(const param_type& parm);
 ```  
   
 ### Parameters  
- `alpha`  
- The `alpha` distribution parameter.  
+*alpha*  
+The `alpha` distribution parameter.  
   
- `beta`  
- The `beta` distribution parameter.  
+*beta*  
+The `beta` distribution parameter.  
   
- `parm`  
- The parameter structure used to construct the distribution.  
+*parm*  
+The parameter structure used to construct the distribution.  
   
 ### Remarks  
- **Precondition:** `0.0 < alpha` and `0.0 < beta`  
+**Precondition:** `0.0 < alpha` and `0.0 < beta`  
   
- The first constructor constructs an object whose stored `alpha` value holds the value `alpha` and whose stored `beta` value holds the value `beta`.  
+The first constructor constructs an object whose stored `alpha` value holds the value *alpha* and whose stored `beta` value holds the value *beta*.  
   
- The second constructor constructs an object whose stored parameters are initialized from `parm`. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
+The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
 ##  <a name="gamma_distribution__param_type"></a>  gamma_distribution::param_type  
- Stores the parameters of the distribution.  
+Stores the parameters of the distribution.  
+  
 ```cpp   
 struct param_type {  
-   typedef gamma_distribution<RealType> distribution_type;  
-   param_type(RealType alpha = 1.0, RealType beta 1.0);
-   RealType alpha() const;
-   RealType beta() const;
-   .....  
+   typedef gamma_distribution<result_type> distribution_type;  
+   param_type(result_type alpha = 1.0, result_type beta 1.0);
+   result_type alpha() const;
+   result_type beta() const;
+
    bool operator==(const param_type& right) const;
    bool operator!=(const param_type& right) const;
    };  
 ```  
 ### Parameters  
- See parent topic [gamma_distribution Class](../standard-library/gamma-distribution-class.md).  
+*alpha*  
+The `alpha` distribution parameter.  
+  
+*beta*  
+The `beta` distribution parameter.  
+  
+*right*  
+The `param_type` instance to compare this to.  
   
 ### Remarks  
- **Precondition:** `0.0 < alpha` and `0.0 < beta`  
+**Precondition:** `0.0 < alpha` and `0.0 < beta`  
   
- This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
+This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
   
 ## See Also  
- [\<random>](../standard-library/random.md)
+[\<random>](../standard-library/random.md)
 
 
 

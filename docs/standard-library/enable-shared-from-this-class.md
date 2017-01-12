@@ -9,19 +9,14 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "tr1.enable_shared_from_this"
   - "enable_shared_from_this"
-  - "std.tr1.enable_shared_from_this"
-  - "memory/std::tr1::enable_shared_from_this"
-  - "std::tr1::enable_shared_from_this"
-  - "tr1::enable_shared_from_this"
-  - "std.enable_shared_from_this"
+  - "std::enable_shared_from_this"
   - "memory/std::enable_shared_from_this"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "enable_shared_from_this class"
-  - "enable_shared_from_this class [TR1]"
+  - "enable_shared_from_this"
 ms.assetid: 9237603d-22e2-421f-b070-838ac006baf5
 caps.latest.revision: 22
 author: "corob-msft"

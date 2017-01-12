@@ -10,12 +10,36 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "regex_token_iterator"
-  - "std.tr1.regex_token_iterator"
-  - "std::tr1::regex_token_iterator"
+  - "std::regex_token_iterator"
+  - "regex/std::regex_token_iterator"
+  - "std::regex_token_iterator::regex_type"
+  - "regex/std::regex_token_iterator::regex_type"
+  - "std::regex_token_iterator::value_type"
+  - "regex/std::regex_token_iterator::value_type"
+  - "std::regex_token_iterator::iterator_category"
+  - "regex/std::regex_token_iterator::iterator_category"
+  - "std::regex_token_iterator::difference_type"
+  - "regex/std::regex_token_iterator::difference_type"
+  - "std::regex_token_iterator::pointer"
+  - "regex/std::regex_token_iterator::pointer"
+  - "std::regex_token_iterator::reference"
+  - "regex/std::regex_token_iterator::reference"
+  - "std::regex_token_iterator::operator=="
+  - "regex/std::regex_token_iterator::operator=="
+  - "std::regex_token_iterator::operator!="
+  - "regex/std::regex_token_iterator::operator!="
+  - "std::regex_token_iterator::operator*"
+  - "regex/std::regex_token_iterator::operator*"
+  - "std::regex_token_iterator::operator->"
+  - "regex/std::regex_token_iterator::operator->"
+  - "std::regex_token_iterator::operator++"
+  - "regex/std::regex_token_iterator::operator++"
+  - "std::regex_token_iterator::operator!="
+  - "regex/std::regex_token_iterator::operator!="
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "regex_token_iterator class [TR1]"
+  - "regex_token_iterator class"
 ms.assetid: a213ba48-8e4e-4b6b-871a-2637acf05f15
 caps.latest.revision: 15
 author: "corob-msft"
@@ -41,37 +65,40 @@ Iterator class for submatches.
   
 ## Syntax  
 ```  
+template<class BidIt,
+   class Elem = typename std::iterator_traits<BidIt>::value_type,
+   class RxTraits = regex_traits<Elem> >
 class regex_token_iterator {  
-   public:  
-   typedef basic_regex<Elem, RXtraits>  
-   regex_type;  
+public:  
+   typedef basic_regex<Elem, RXtraits> regex_type;  
    typedef sub_match<BidIt> value_type;  
    typedef std::forward_iterator_tag iterator_category;  
    typedef std::ptrdiff_t difference_type;  
    typedef const sub_match<BidIt> *pointer;  
    typedef const sub_match<BidIt>& reference;  
    regex_token_iterator();
-   regex_token_iterator(BidIt first, BidIt last,  
-   const regex_type& re, int submatch = 0,  
-   regex_constants::match_flag_type f = regex_constants::match_default);
-   regex_token_iterator(BidIt first, BidIt last,  
-   const regex_type& re, const std::vector<int> submatches,  
-   regex_constants::match_flag_type f = regex_constants::match_default);
+   regex_token_iterator(
+      BidIt first, BidIt last,  
+      const regex_type& re, int submatch = 0,  
+      regex_constants::match_flag_type f = regex_constants::match_default);
+   regex_token_iterator(
+      BidIt first, BidIt last,  
+      const regex_type& re, const std::vector<int> submatches,  
+      regex_constants::match_flag_type f = regex_constants::match_default);
    template <std::size_t N>  
-   regex_token_iterator(BidIt first, BidIt last,  
-   const regex_type& re, const int (&submatches)[N],  
-   regex_constants::match_flag_type f = regex_constants::match_default);
+   regex_token_iterator(
+      BidIt first, BidIt last,  
+      const regex_type& re, const int (&submatches)[N],  
+      regex_constants::match_flag_type f = regex_constants::match_default);
    bool operator==(const regex_token_iterator& right);
    bool operator!=(const regex_token_iterator& right);
    const basic_string<Elem>& operator*();
    const basic_string<Elem> * operator->();
    regex_token_iterator& operator++();
    regex_token_iterator& operator++(int);
-   private:  
-   regex_iterator<BidIt, Elem, RXtraits>  
-   it; // exposition only  
-   vector<int> subs;
-   // exposition only  
+private:  
+   regex_iterator<BidIt, Elem, RXtraits> it; // exposition only  
+   vector<int> subs;   // exposition only  
    int pos;  // exposition only  
    };  
 ```  
@@ -107,8 +134,7 @@ typedef std::ptrdiff_t difference_type;
   
 ### Example  
   
-```cpp  
-  
+```cpp    
 #include <regex>   
 #include <iostream>   
   
@@ -169,7 +195,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -201,7 +226,6 @@ match == aa
 match == y  
 match == aa  
 match == z  
-  
 ```  
   
 ##  <a name="regex_token_iterator__iterator_category"></a>  regex_token_iterator::iterator_category  
@@ -217,7 +241,7 @@ typedef std::forward_iterator_tag iterator_category;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_token_iterator_iterator_category.cpp   
+// std__regex__regex_token_iterator_iterator_category.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -331,7 +355,7 @@ bool operator!=(const regex_token_iterator& right);
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_token_iterator_operator_ne.cpp   
+// std__regex__regex_token_iterator_operator_ne.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -441,7 +465,7 @@ const sub_match<BidIt>& operator*();
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_token_iterator_operator_star.cpp   
+// std__regex__regex_token_iterator_operator_star.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -555,7 +579,7 @@ regex_token_iterator& operator++(int);
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_token_iterator_operator_inc.cpp   
+// std__regex__regex_token_iterator_operator_inc.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -669,7 +693,7 @@ bool operator==(const regex_token_iterator& right);
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_token_iterator_operator_eq.cpp   
+// std__regex__regex_token_iterator_operator_eq.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -779,7 +803,7 @@ const sub_match<BidIt> * operator->();
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_token_iterator_operator_arrow.cpp   
+// std__regex__regex_token_iterator_operator_arrow.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -886,7 +910,7 @@ typedef sub_match<BidIt> *pointer;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_token_iterator_pointer.cpp   
+// std__regex__regex_token_iterator_pointer.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -999,7 +1023,7 @@ typedef sub_match<BidIt>& reference;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_token_iterator_reference.cpp   
+// std__regex__regex_token_iterator_reference.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -1141,7 +1165,7 @@ regex_token_iterator(BidIt first, BidIt last,
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_token_iterator_construct.cpp   
+// std__regex__regex_token_iterator_construct.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -1251,7 +1275,7 @@ typedef basic_regex<Elem, RXtraits> regex_type;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_token_iterator_regex_type.cpp   
+// std__regex__regex_token_iterator_regex_type.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -1361,7 +1385,7 @@ typedef sub_match<BidIt> value_type;
 ### Example  
   
 ```cpp  
-// std_tr1__regex__regex_token_iterator_value_type.cpp   
+// std__regex__regex_token_iterator_value_type.cpp   
 // compile with: /EHsc   
 #include <regex>   
 #include <iostream>   
@@ -1459,7 +1483,12 @@ match == z
 ```  
   
 ## See Also  
- [\<regex>](../standard-library/regex.md)   
- [regex_token_iterator](../standard-library/regex-token-iterator-class.md)   
- [regex_iterator Class](../standard-library/regex-iterator-class.md)
+[\<regex>](../standard-library/regex.md)  
+[regex_constants Class](../standard-library/regex-constants-class.md)  
+[regex_error Class](../standard-library/regex-error-class.md)  
+[\<regex> functions](../standard-library/regex-functions.md)  
+[regex_iterator Class](../standard-library/regex-iterator-class.md)  
+[\<regex> operators](../standard-library/regex-operators.md)  
+[regex_traits Class](../standard-library/regex-traits-class.md)  
+[\<regex> typedefs](../standard-library/regex-typedefs.md)  
 

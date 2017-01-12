@@ -9,17 +9,101 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::unordered_map"
-  - "std.tr1.unordered_map"
-  - "tr1.unordered_map"
-  - "tr1::unordered_map"
   - "unordered_map"
-  - "unordered_map/std::tr1::unordered_map"
+  - "std::unordered_map"
+  - "unordered_map/std::unordered_map"
+  - "std::unordered_map::allocator_type"
+  - "unordered_map/std::unordered_map::allocator_type"
+  - "std::unordered_map::const_iterator"
+  - "unordered_map/std::unordered_map::const_iterator"
+  - "std::unordered_map::const_local_iterator"
+  - "unordered_map/std::unordered_map::const_local_iterator"
+  - "std::unordered_map::const_pointer"
+  - "unordered_map/std::unordered_map::const_pointer"
+  - "std::unordered_map::const_reference"
+  - "unordered_map/std::unordered_map::const_reference"
+  - "std::unordered_map::difference_type"
+  - "unordered_map/std::unordered_map::difference_type"
+  - "std::unordered_map::hasher"
+  - "unordered_map/std::unordered_map::hasher"
+  - "std::unordered_map::iterator"
+  - "unordered_map/std::unordered_map::iterator"
+  - "std::unordered_map::key_equal"
+  - "unordered_map/std::unordered_map::key_equal"
+  - "std::unordered_map::key_type"
+  - "unordered_map/std::unordered_map::key_type"
+  - "std::unordered_map::local_iterator"
+  - "unordered_map/std::unordered_map::local_iterator"
+  - "std::unordered_map::mapped_type"
+  - "unordered_map/std::unordered_map::mapped_type"
+  - "std::unordered_map::pointer"
+  - "unordered_map/std::unordered_map::pointer"
+  - "std::unordered_map::reference"
+  - "unordered_map/std::unordered_map::reference"
+  - "std::unordered_map::size_type"
+  - "unordered_map/std::unordered_map::size_type"
+  - "std::unordered_map::value_type"
+  - "unordered_map/std::unordered_map::value_type"
+  - "std::unordered_map::at"
+  - "unordered_map/std::unordered_map::at"
+  - "std::unordered_map::begin"
+  - "unordered_map/std::unordered_map::begin"
+  - "std::unordered_map::bucket"
+  - "unordered_map/std::unordered_map::bucket"
+  - "std::unordered_map::bucket_count"
+  - "unordered_map/std::unordered_map::bucket_count"
+  - "std::unordered_map::bucket_size"
+  - "unordered_map/std::unordered_map::bucket_size"
+  - "std::unordered_map::cbegin"
+  - "unordered_map/std::unordered_map::cbegin"
+  - "std::unordered_map::cend"
+  - "unordered_map/std::unordered_map::cend"
+  - "std::unordered_map::clear"
+  - "unordered_map/std::unordered_map::clear"
+  - "std::unordered_map::count"
+  - "unordered_map/std::unordered_map::count"
+  - "std::unordered_map::emplace"
+  - "unordered_map/std::unordered_map::emplace"
+  - "std::unordered_map::emplace_hint"
+  - "unordered_map/std::unordered_map::emplace_hint"
+  - "std::unordered_map::empty"
+  - "unordered_map/std::unordered_map::empty"
+  - "std::unordered_map::end"
+  - "unordered_map/std::unordered_map::end"
+  - "std::unordered_map::equal_range"
+  - "unordered_map/std::unordered_map::equal_range"
+  - "std::unordered_map::erase"
+  - "unordered_map/std::unordered_map::erase"
+  - "std::unordered_map::find"
+  - "unordered_map/std::unordered_map::find"
+  - "std::unordered_map::get_allocator"
+  - "unordered_map/std::unordered_map::get_allocator"
+  - "std::unordered_map::hash_function"
+  - "unordered_map/std::unordered_map::hash_function"
+  - "std::unordered_map::insert"
+  - "unordered_map/std::unordered_map::insert"
+  - "std::unordered_map::key_eq"
+  - "unordered_map/std::unordered_map::key_eq"
+  - "std::unordered_map::load_factor"
+  - "unordered_map/std::unordered_map::load_factor"
+  - "std::unordered_map::max_bucket_count"
+  - "unordered_map/std::unordered_map::max_bucket_count"
+  - "std::unordered_map::max_load_factor"
+  - "unordered_map/std::unordered_map::max_load_factor"
+  - "std::unordered_map::max_size"
+  - "unordered_map/std::unordered_map::max_size"
+  - "std::unordered_map::rehash"
+  - "unordered_map/std::unordered_map::rehash"
+  - "std::unordered_map::size"
+  - "unordered_map/std::unordered_map::size"
+  - "std::unordered_map::swap"
+  - "unordered_map/std::unordered_map::swap"
+  - "std::unordered_map::unordered_map"
+  - "unordered_map/std::unordered_map::unordered_map"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "unordered_map class"
-  - "unordered_map class [TR1]"
 ms.assetid: 7cf7cfa1-16e7-461c-a9b2-3b8d8ec24e0d
 caps.latest.revision: 20
 author: "corob-msft"
@@ -152,7 +236,7 @@ typedef Alloc allocator_type;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_allocator_type.cpp   
+// std__unordered_map__unordered_map_allocator_type.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -247,7 +331,7 @@ const_local_iterator begin(size_type nbucket) const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_begin.cpp   
+// std__unordered_map__unordered_map_begin.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -305,7 +389,7 @@ size_type bucket(const Key& keyval) const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_bucket.cpp   
+// std__unordered_map__unordered_map_bucket.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -354,7 +438,7 @@ size_type bucket_count() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_bucket_count.cpp   
+// std__unordered_map__unordered_map_bucket_count.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -444,7 +528,7 @@ size_type bucket_size(size_type nbucket) const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_bucket_size.cpp   
+// std__unordered_map__unordered_map_bucket_size.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -542,7 +626,7 @@ void clear();
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_clear.cpp   
+// std__unordered_map__unordered_map_clear.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -608,7 +692,7 @@ typedef T1 const_iterator;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_const_iterator.cpp   
+// std__unordered_map__unordered_map_const_iterator.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -650,7 +734,7 @@ typedef T5 const_local_iterator;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_const_local_iterator.cpp   
+// std__unordered_map__unordered_map_const_local_iterator.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -697,7 +781,7 @@ typedef Alloc::const_pointer const_pointer;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_const_pointer.cpp   
+// std__unordered_map__unordered_map_const_pointer.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -742,7 +826,7 @@ typedef Alloc::const_reference const_reference;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_const_reference.cpp   
+// std__unordered_map__unordered_map_const_reference.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -791,7 +875,7 @@ size_type count(const Key& keyval) const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_count.cpp   
+// std__unordered_map__unordered_map_count.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -840,7 +924,7 @@ typedef T3 difference_type;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_difference_type.cpp   
+// std__unordered_map__unordered_map_difference_type.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -954,7 +1038,7 @@ bool empty() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_empty.cpp   
+// std__unordered_map__unordered_map_empty.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1044,7 +1128,7 @@ std::pair<const_iterator, const_iterator>  equal_range(const Key& keyval) const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_equal_range.cpp   
+// std__unordered_map__unordered_map_equal_range.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1139,7 +1223,7 @@ const_iterator find(const Key& keyval) const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_find.cpp   
+// std__unordered_map__unordered_map_find.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1193,7 +1277,7 @@ Alloc get_allocator() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_get_allocator.cpp   
+// std__unordered_map__unordered_map_get_allocator.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1230,7 +1314,7 @@ Hash hash_function() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_hash_function.cpp   
+// std__unordered_map__unordered_map_hash_function.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1267,7 +1351,7 @@ typedef Hash hasher;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_hasher.cpp   
+// std__unordered_map__unordered_map_hasher.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1375,7 +1459,7 @@ typedef T0 iterator;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_iterator.cpp   
+// std__unordered_map__unordered_map_iterator.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1417,7 +1501,7 @@ Pred key_eq() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_key_eq.cpp   
+// std__unordered_map__unordered_map_key_eq.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1456,7 +1540,7 @@ typedef Pred key_equal;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_key_equal.cpp   
+// std__unordered_map__unordered_map_key_equal.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1495,7 +1579,7 @@ typedef Key key_type;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_key_type.cpp   
+// std__unordered_map__unordered_map_key_type.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1549,7 +1633,7 @@ float load_factor() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_load_factor.cpp   
+// std__unordered_map__unordered_map_load_factor.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1635,7 +1719,7 @@ typedef T4 local_iterator;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_local_iterator.cpp   
+// std__unordered_map__unordered_map_local_iterator.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1682,7 +1766,7 @@ typedef Ty mapped_type;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_mapped_type.cpp   
+// std__unordered_map__unordered_map_mapped_type.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1736,7 +1820,7 @@ size_type max_bucket_count() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_max_bucket_count.cpp   
+// std__unordered_map__unordered_map_max_bucket_count.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1829,7 +1913,7 @@ void max_load_factor(float factor);
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_max_load_factor.cpp   
+// std__unordered_map__unordered_map_max_load_factor.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1915,7 +1999,7 @@ size_type max_size() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_max_size.cpp   
+// std__unordered_map__unordered_map_max_size.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -1999,7 +2083,7 @@ int main()
     std::cout << std::endl;   
   
 // insert by moving key  
-    std::tr1::unordered_map<string, int> c2;  
+    std::unordered_map<string, int> c2;  
     std::string str("abc");  
     std::cout << "c2[std::move(str)] == " << c2[std::move(str)] << std::endl;  
     std::cout << "c2["abc"] == " << c2["abc"] << std::endl;  
@@ -2094,7 +2178,7 @@ typedef Alloc::pointer pointer;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_pointer.cpp   
+// std__unordered_map__unordered_map_pointer.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -2139,7 +2223,7 @@ typedef Alloc::reference reference;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_reference.cpp   
+// std__unordered_map__unordered_map_reference.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -2188,7 +2272,7 @@ void rehash(size_type nbuckets);
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_rehash.cpp   
+// std__unordered_map__unordered_map_rehash.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -2260,7 +2344,7 @@ size_type size() const;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_size.cpp   
+// std__unordered_map__unordered_map_size.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -2326,7 +2410,7 @@ typedef T2 size_type;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_size_type.cpp   
+// std__unordered_map__unordered_map_size_type.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -2365,7 +2449,7 @@ void swap(unordered_map& right);
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_swap.cpp   
+// std__unordered_map__unordered_map_swap.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -2517,7 +2601,7 @@ int main()
     cout << endl;  
   
     Mymap c2(8,  
-        tr1::hash<char>(),  
+        hash<char>(),  
         equal_to<char>(),  
         allocator<pair<const char, int> >());  
   
@@ -2534,7 +2618,7 @@ int main()
     Mymap c3(c1.begin(),  
         c1.end(),  
         8,  
-        tr1::hash<char>(),  
+        hash<char>(),  
         equal_to<char>(),  
         allocator<pair<const char, int> >());  
   
@@ -2569,10 +2653,10 @@ int main()
     cout << endl;  
   
     // Initializer_list plus size and hash  
-    unordered_map<int, char, tr1::hash<char>> c7(  
+    unordered_map<int, char, hash<char>> c7(  
         { { 5, 'g' }, { 6, 'h' }, { 7, 'i' }, { 8, 'j' } },   
         4,   
-        tr1::hash<char>()  
+        hash<char>()  
     );  
   
     for (const auto& c : c1) {  
@@ -2581,10 +2665,10 @@ int main()
     cout << endl;  
   
     // Initializer_list plus size, hash, and key_equal  
-    unordered_map<int, char, tr1::hash<char>, equal_to<char>> c8(  
+    unordered_map<int, char, hash<char>, equal_to<char>> c8(  
         { { 5, 'g' }, { 6, 'h' }, { 7, 'i' }, { 8, 'j' } },   
         4,   
-        tr1::hash<char>(),   
+        hash<char>(),   
         equal_to<char>()  
     );  
   
@@ -2594,10 +2678,10 @@ int main()
     cout << endl;  
   
     // Initializer_list plus size, hash, key_equal, and allocator  
-    unordered_map<int, char, tr1::hash<char>, equal_to<char>> c9(  
+    unordered_map<int, char, hash<char>, equal_to<char>> c9(  
         { { 5, 'g' }, { 6, 'h' }, { 7, 'i' }, { 8, 'j' } },  
         4,  
-        tr1::hash<char>(),  
+        hash<char>(),  
         equal_to<char>(),  
         allocator<pair<const char, int> >()  
     );  
@@ -2610,8 +2694,18 @@ int main()
 ```  
   
 ```Output  
-[a, 1] [b, 2] [c, 3] [d, 4] [e, 5] [f, 6] [a, 1] [b, 2] [c, 3] [a, 1] [b, 2] [c, 3] [5, g] [6, h] [7, i] [8, j] [5, g] [6, h] [7, i] [8, j] [5, g] [6, h] [7, i] [8, j] [5, g] [6, h] [7, i] [8, j] [5, g] [6, h] [7, i] [8, j]  
-```  
+ [a, 1] [b, 2] [c, 3]
+ [d, 4] [e, 5] [f, 6]
+ [a, 1] [b, 2] [c, 3]
+ [a, 1] [b, 2] [c, 3]
+
+ [5, g] [6, h] [7, i] [8, j]
+ [a, 1] [b, 2] [c, 3]
+
+ [a, 1] [b, 2] [c, 3]
+ [a, 1] [b, 2] [c, 3]
+ [a, 1] [b, 2] [c, 3]
+ ```  
   
 ##  <a name="unordered_map__value_type"></a>  unordered_map::value_type  
  The type of an element.  
@@ -2626,7 +2720,7 @@ typedef std::pair<const Key, Ty> value_type;
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__unordered_map_value_type.cpp   
+// std__unordered_map__unordered_map_value_type.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   

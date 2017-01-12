@@ -4,10 +4,54 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+f1_keywords: 
+  - "std::bind"
+  - "functional/std::bind"
+  - "std::bind1st"
+  - "functional/std::bind1st"
+  - "std::bind2nd"
+  - "functional/std::bind2nd"
+  - "std::bit_and"
+  - "functional/std::bit_and"
+  - "std::bit_not"
+  - "functional/std::bit_not"
+  - "std::bit_or"
+  - "functional/std::bit_or"
+  - "std::bit_xor"
+  - "functional/std::bit_xor"
+  - "std::cref"
+  - "functional/std::cref"
+  - "type_traits/std::cref"
+  - "std::mem_fn"
+  - "functional/std::mem_fn"
+  - "std::mem_fun"
+  - "functional/std::mem_fun"
+  - "std::mem_fun_ref"
+  - "functional/std::mem_fun_ref"
+  - "std::not1"
+  - "functional/std::not1"
+  - "std::not2"
+  - "functional/std::not2"
+  - "std::ptr_fun"
+  - "functional/std::ptr_fun"
+  - "std::ref"
+  - "functional/std::ref"
+  - "type_traits/std::ref"
+  - "std::swap"
+  - "functional/std::swap"
+  - "type_traits/std::swap"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "functional functions"
 ms.assetid: c34d0b45-50a7-447a-9368-2210d06339a4
 caps.latest.revision: 12
+author: "corob-msft"
+ms.author: "corob"
 manager: "ghogen"
 ---
 # &lt;functional&gt; functions
@@ -47,7 +91,7 @@ unspecified bind(Fty fn, T1 t1, T2 t2, ..., TN tN);
 ### Remarks  
  The types `Fty, T1, T2, ..., TN` must be copy constructible, and `INVOKE(fn, t1, ..., tN)` must be a valid expression for some values `w1, w2, ..., wN`.  
   
- The first template function returns a forwarding call wrapper `g` with a weak result type. The effect of `g(u1, u2, ..., uM)` is `INVOKE(f, v1, v2, ..., vN,` [result_of Class](../standard-library/result-of-class2.md)`<Fty` `cv` `(V1, V2, ..., VN)>::type)`, where `cv` is the cv-qualifiers of `g` and the values and types of the bound arguments `v1, v2, ..., vN` are determined as specified below. You use it to bind arguments to a callable object to make a callable object with a tailored argument list.  
+ The first template function returns a forwarding call wrapper `g` with a weak result type. The effect of `g(u1, u2, ..., uM)` is `INVOKE(f, v1, v2, ..., vN,` [result_of](../standard-library/result-of-class.md)`<Fty` `cv` `(V1, V2, ..., VN)>::type)`, where `cv` is the cv-qualifiers of `g` and the values and types of the bound arguments `v1, v2, ..., vN` are determined as specified below. You use it to bind arguments to a callable object to make a callable object with a tailored argument list.  
   
  The second template function returns a forwarding call wrapper `g` with a nested type `result_type` that is a synonym for `Ret`. The effect of `g(u1, u2, ..., uM)` is `INVOKE(f, v1, v2, ..., vN, Ret)`, where `cv` is the cv-qualifiers of `g` and the values and types of the bound arguments `v1, v2, ..., vN` are determined as specified below. You use it to bind arguments to a callable object to make a callable object with a tailored argument list and with a specified return type.  
   
@@ -70,7 +114,7 @@ unspecified bind(Fty fn, T1 t1, T2 t2, ..., TN tN);
 ### Example  
   
 ```cpp  
-// std_tr1__functional__bind.cpp   
+// std__functional__bind.cpp   
 // compile with: /EHsc   
 #include <functional>   
 #include <algorithm>   
@@ -466,7 +510,7 @@ reference_wrapper<const Ty> cref(const reference_wrapper<Ty>& arg);
 ### Example  
   
 ```cpp  
-// std_tr1__functional__cref.cpp   
+// std__functional__cref.cpp   
 // compile with: /EHsc   
 #include <functional>   
 #include <iostream>   
@@ -521,7 +565,7 @@ unspecified mem_fn(Ret Ty::*pm);
 ### Example  
   
 ```cpp  
-// std_tr1__functional__mem_fn.cpp   
+// std__functional__mem_fn.cpp   
 // compile with: /EHsc   
 #include <functional>   
 #include <iostream>   
@@ -926,7 +970,7 @@ reference_wrapper<Ty> ref(reference_wrapper<Ty>& arg);
 ### Example  
   The following example defines two functions: one bound to a string variable, the other bound to a reference of the string variable computed by a call to `ref`. When the value of the variable changes, the first function continues to use the old value and the second function uses the new value.  
   
-```  
+```cpp  
 #include <algorithm>  
 #include <functional>  
 #include <iostream>  
@@ -1022,7 +1066,7 @@ void swap(function<Fty>& f1, function<Fty>& f2);
 ### Example  
   
 ```cpp  
-// std_tr1__functional__swap.cpp   
+// std__functional__swap.cpp   
 // compile with: /EHsc   
 #include <functional>   
 #include <iostream>   

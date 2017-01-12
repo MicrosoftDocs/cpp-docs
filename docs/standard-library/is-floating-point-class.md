@@ -10,15 +10,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "is_floating_point"
-  - "std.tr1.is_floating_point"
-  - "std::tr1::is_floating_point"
-  - "std.is_floating_point"
   - "std::is_floating_point"
   - "type_traits/std::is_floating_point"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_floating_point class [TR1]"
+  - "is_floating_point class"
   - "is_floating_point"
 ms.assetid: 070679c1-115b-4ee4-8ab7-f52e5d9e157f
 caps.latest.revision: 19
@@ -62,7 +59,7 @@ struct is_floating_point;
 ## Example  
   
 ```cpp  
-// std_tr1__type_traits__is_floating_point.cpp   
+// std__type_traits__is_floating_point.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   
@@ -93,7 +90,7 @@ is_floating_point<float> == true
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

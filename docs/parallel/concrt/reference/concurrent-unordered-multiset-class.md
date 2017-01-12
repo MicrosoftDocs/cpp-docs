@@ -41,7 +41,7 @@ The `concurrent_unordered_multiset` class is an concurrency-safe container that 
   
 ```
 template <typename K,
-    typename _Hasher = std::tr1::hash<K>,
+    typename _Hasher = std::hash<K>,
     typename key_equality = std::equal_to<K>,
     typename _Allocator_type = std::allocator<K>
 >,
@@ -59,7 +59,7 @@ template <typename K,
  The key type.  
   
  `_Hasher`  
- The hash function object type. This argument is optional and the default value is `std::tr1::hash<``K``>`.  
+ The hash function object type. This argument is optional and the default value is `std::hash<``K``>`.  
   
  `key_equality`  
  The equality comparison function object type. This argument is optional and the default value is `std::equal_to<``K``>`.  
@@ -362,8 +362,8 @@ iterator insert(
     V&& value);
 
 template<class V>
-typename std::tr1::enable_if<!std::tr1::is_same<const_iterator,
-    typename std::tr1::remove_reference<V>::type>::value,
+typename std::enable_if<!std::is_same<const_iterator,
+    typename std::remove_reference<V>::type>::value,
     iterator>::type insert(
     const_iterator _Where,
     V&& value);

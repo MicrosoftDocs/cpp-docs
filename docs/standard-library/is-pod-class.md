@@ -9,16 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.is_pod"
   - "is_pod"
-  - "std::tr1::is_pod"
-  - "std.is_pod"
   - "std::is_pod"
   - "type_traits/std::is_pod"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_pod class [TR1]"
+  - "is_pod class"
   - "is_pod"
 ms.assetid: d73ebdee-746b-4082-9fa4-2db71432eb0e
 caps.latest.revision: 20
@@ -46,24 +43,24 @@ Tests if type is POD.
 ## Syntax  
   
 ```
-template <class Ty>
+template <class T>
 struct is_pod;
 ```  
   
 #### Parameters  
- `Ty`  
- The type to query.  
+*T*  
+The type to query.  
   
 ## Remarks  
- `is_pod<Ty>::value` is `true` if the type `Ty` is Plain Old Data (POD). Otherwise it is `false`.  
+`is_pod<T>::value` is `true` if the type *T* is Plain Old Data (POD). Otherwise it is `false`.  
   
- Arithmetic types, enumeration types, pointer types, and pointer to member types are POD.  
+Arithmetic types, enumeration types, pointer types, and pointer to member types are POD.  
   
- A cv-qualified version of a POD type is itself a POD type.  
+A cv-qualified version of a POD type is itself a POD type.  
   
- An array of POD is itself POD.  
+An array of POD is itself POD.  
   
- A struct or union, all of whose non-static data members are POD, is itself POD if it has:  
+A struct or union, all of whose non-static data members are POD, is itself POD if it has:  
   
 -   No user-declared constructors.  
   
@@ -79,40 +76,27 @@ struct is_pod;
   
 -   No user-defined destructor.  
   
- Therefore, you can recursively build POD structs and arrays that contain POD structs and arrays.  
+Therefore, you can recursively build POD structs and arrays that contain POD structs and arrays.  
   
 ## Example  
   
 ```cpp  
-// std_tr1__type_traits__is_pod.cpp   
+// std__type_traits__is_pod.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   
   
-struct trivial   
-    {   
+struct trivial {   
     int val;   
-    };   
+};   
   
-struct throws   
-    {   
-    throws() throw(int)   
-        {   
-        }   
-  
-    throws(const throws&) throw(int)   
-        {   
-        }   
-  
-    throws& operator=(const throws&) throw(int)   
-        {   
-        }   
+struct throws {   
+    throws() {}  // User-declared ctor, so not POD
   
     int val;   
-    };   
+};   
   
-int main()   
-    {   
+int main() {   
     std::cout << "is_pod<trivial> == " << std::boolalpha   
         << std::is_pod<trivial>::value << std::endl;   
     std::cout << "is_pod<int> == " << std::boolalpha   
@@ -121,22 +105,22 @@ int main()
         << std::is_pod<throws>::value << std::endl;   
   
     return (0);   
-    }   
-    /* Output:  
-    is_pod<trivial> == true  
+}  
+```  
+  
+```Output  
+is_pod<trivial> == true  
 is_pod<int> == true  
 is_pod<throws> == false  
-*/  
-  
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+**Header:** \<type_traits>  
   
- **Namespace:** std  
+**Namespace:** std  
   
 ## See Also  
- [<type_traits>](../standard-library/type-traits.md)
+[<type_traits>](../standard-library/type-traits.md)
 
 
 

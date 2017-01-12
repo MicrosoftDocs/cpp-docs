@@ -6,8 +6,18 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+f1_keywords: 
+  - "memory/std::operator!="
+  - "memory/std::operator>"
+  - "memory/std::operator>="
+  - "memory/std::operator<"
+  - "memory/std::operator<="
+  - "memory/std::operator<<"
+  - "memory/std::operator=="
 ms.assetid: 257e3ba9-c4c2-4ae8-9b11-b156ba9c28de
 caps.latest.revision: 13
+author: "corob-msft"
+ms.author: "corob"
 manager: "ghogen"
 ---
 # &lt;memory&gt; operators
@@ -90,7 +100,7 @@ The allocator objects Alloc & v1Alloc are equal.
 ### Example  
   
 ```cpp  
-// std_tr1__memory__operator_ne.cpp   
+// std__memory__operator_ne.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
@@ -199,7 +209,7 @@ The allocator objects cAlloc & Alloc are equal.
 ### Example  
   
 ```cpp  
-// std_tr1__memory__operator_eq.cpp   
+// std__memory__operator_eq.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   
@@ -343,7 +353,7 @@ bool operator>(
  The type controlled by the right shared pointer.  
   
 ##  <a name="operator_lt__lt_"></a>  operator&lt;&lt;  
- shared_ptr inserter.  
+Writes the shared pointer to the stream.  
   
 ```  
 template <class Elem, class Tr, class Ty>  
@@ -373,7 +383,7 @@ std::basic_ostream<Elem, Tr>& operator<<(std::basic_ostream<Elem, Tr>& out,
 ### Example  
   
 ```cpp  
-// std_tr1__memory__operator_sl.cpp   
+// std__memory__operator_sl.cpp   
 // compile with: /EHsc   
 #include <memory>   
 #include <iostream>   

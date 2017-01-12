@@ -13,7 +13,7 @@ f1_keywords:
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "unordered_map header [TR1]"
+  - "unordered_map header"
 ms.assetid: eb90ecb2-250a-4be1-83d2-f66b2917edde
 caps.latest.revision: 20
 author: "corob-msft"

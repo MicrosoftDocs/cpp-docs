@@ -9,16 +9,13 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.is_pointer"
   - "is_pointer"
-  - "std::tr1::is_pointer"
-  - "std.is_pointer"
   - "std::is_pointer"
   - "type_traits/std::is_pointer"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "is_pointer class [TR1]"
+  - "is_pointer class"
   - "is_pointer"
 ms.assetid: 44e0a403-7241-4e0a-8922-32877bcb9a4c
 caps.latest.revision: 19
@@ -60,7 +57,7 @@ struct is_pointer;
 ## Example  
   
 ```cpp  
-// std_tr1__type_traits__is_pointer.cpp   
+// std__type_traits__is_pointer.cpp   
 // compile with: /EHsc   
 #include <type_traits>   
 #include <iostream>   
@@ -97,7 +94,7 @@ is_pointer<int *> == true
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

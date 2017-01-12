@@ -9,12 +9,29 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::tr1::chi_squared_distribution"
   - "chi_squared_distribution"
-  - "random/std::tr1::chi_squared_distribution"
-  - "std.tr1.chi_squared_distribution"
-  - "tr1.chi_squared_distribution"
-  - "tr1::chi_squared_distribution"
+  - "std::chi_squared_distribution"
+  - "random/std::chi_squared_distribution"
+  - "std::chi_squared_distribution::reset"
+  - "random/std::chi_squared_distribution::reset"
+  - "std::chi_squared_distribution::n"
+  - "random/std::chi_squared_distribution::n"
+  - "std::chi_squared_distribution::param"
+  - "random/std::chi_squared_distribution::param"
+  - "std::chi_squared_distribution::min"
+  - "random/std::chi_squared_distribution::min"
+  - "std::chi_squared_distribution::max"
+  - "random/std::chi_squared_distribution::max"
+  - "std::chi_squared_distribution::operator()"
+  - "random/std::chi_squared_distribution::operator()"
+  - "std::chi_squared_distribution::param_type"
+  - "random/std::chi_squared_distribution::param_type"
+  - "std::chi_squared_distribution::param_type::n"
+  - "random/std::chi_squared_distribution::param_type::n"
+  - "std::chi_squared_distribution::param_type::operator=="
+  - "random/std::chi_squared_distribution::param_type::operator=="
+  - "std::chi_squared_distribution::param_type::operator!="
+  - "random/std::chi_squared_distribution::param_type::operator!="
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -43,21 +60,28 @@ translation.priority.ht:
 Generates a chi-squared distribution.  
   
 ## Syntax  
+  
 ```  
+template<class RealType = double>  
 class chi_squared_distribution {
 public:    
     // types 
     typedef RealType result_type;    
-    struct param_type;    
+    struct param_type;  
+
     // constructor and reset functions 
     explicit chi_squared_distribution(RealType n = 1);
     explicit chi_squared_distribution(const param_type& parm);
-    void reset();
-    // generating functions template <class URNG>  
+    void reset();  
+
+    // generating functions 
+    template <class URNG>  
     result_type operator()(URNG& gen);
     template <class URNG>
     result_type operator()(URNG& gen, const param_type& parm);
-    // property functions RealType n() const;
+    
+    // property functions 
+    RealType n() const;
     param_type param() const;
     void param(const param_type& parm);
     result_type min() const;
@@ -65,22 +89,33 @@ public:
 };
 ```  
 #### Parameters  
- `RealType`  
- The floating-point result type, defaults to `double`. For possible types, see [\<random>](../standard-library/random.md).  
+*RealType*  
+The floating-point result type, defaults to `double`. For possible types, see [\<random>](../standard-library/random.md).  
+  
+*URNG*
+The uniform random number generator engine. For possible types, see [\<random>](../standard-library/random.md).  
   
 ## Remarks  
- The template class describes a distribution that produces values of a user-specified integral type, or type `double` if none is provided, distributed according to the Chi-Squared Distribution. The following table links to articles about individual members.  
+The template class describes a distribution that produces values of a user-specified floating-point type, or type `double` if none is provided, distributed according to the Chi-Squared Distribution. The following table links to articles about individual members.  
   
 ||||  
 |-|-|-|  
 |[chi_squared_distribution::chi_squared_distribution](../standard-library/chi-squared-distribution-class.md)|`chi_squared_distribution::n`|`chi_squared_distribution::param`|  
 |`chi_squared_distribution::operator()`||[chi_squared_distribution::param_type](#chi_squared_distribution__param_type)|  
   
- The property function `n()` returns the value for the stored distribution parameter `n`.  
+The property function `n()` returns the value for the stored distribution parameter `n`.  
   
- For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
+The property member `param()` sets or returns the `param_type` stored distribution parameter package.  
+
+The `min()` and `max()` member functions return the smallest possible result and largest possible result, respectively.  
   
- For detailed information about the chi-squared distribution, see the Wolfram MathWorld article [Chi-Squared Distribution](http://go.microsoft.com/fwlink/LinkId=400528).  
+The `reset()` member function discards any cached values, so that the result of the next call to `operator()` does not depend on any values obtained from the engine before the call.  
+  
+The `operator()` member functions return the next generated value based on the URNG engine, either from the current parameter package, or the specified parameter package.
+  
+For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
+  
+For detailed information about the chi-squared distribution, see the Wolfram MathWorld article [Chi-Squared Distribution](http://go.microsoft.com/fwlink/LinkId=400528).  
   
 ## Example  
   
@@ -134,13 +169,11 @@ int main()
   
     test(n_dist, samples);  
 }  
-  
 ```  
   
-## Output  
- First run:  
+First run:  
   
-```  
+```Output  
 Use CTRL-Z to bypass data entry and run using default values.  
 Enter a floating point value for the 'n' distribution parameter (must be greater than zero): .5  
 Enter an integer value for the sample count: 10  
@@ -161,9 +194,9 @@ Distribution for 10 samples:
     10: 1.5429743723  
 ```  
   
- Second run:  
+Second run:  
   
-```  
+```Output  
 Use CTRL-Z to bypass data entry and run using default values.  
 Enter a floating point value for the 'n' distribution parameter (must be greater than zero): .3333  
 Enter an integer value for the sample count: 10  
@@ -184,9 +217,9 @@ Distribution for 10 samples:
     10: 1.3552086624  
 ```  
   
- Third run:  
+Third run:  
   
-```  
+```Output  
 Use CTRL-Z to bypass data entry and run using default values.  
 Enter a floating point value for the 'n' distribution parameter (must be greater than zero): 1000  
 Enter an integer value for the sample count: 10  
@@ -208,53 +241,57 @@ Distribution for 10 samples:
 ```  
   
 ## Requirements  
- **Header:** \<random>  
+**Header:** \<random>  
   
- **Namespace:** std  
+**Namespace:** std  
   
 ##  <a name="chi_squared_distribution__chi_squared_distribution"></a>  chi_squared_distribution::chi_squared_distribution  
- Constructs the distribution.  
+Constructs the distribution.  
   
 ```  
-explicit chi_squared_distribution(RealType n = 1.0);
-
- 
+explicit chi_squared_distribution(result_type n = 1.0);  
 explicit chi_squared_distribution(const param_type& parm);
 ```  
   
 ### Parameters  
- `n`  
- The `n` distribution parameter.  
+*n*  
+The `n` distribution parameter.  
   
- `parm`  
+*parm*  
  The parameter structure used to construct the distribution.  
   
 ### Remarks  
- **Precondition:** `0.0 < n`  
+**Precondition:** `0.0 < n`  
   
- The first constructor constructs an object whose stored `n` value holds the value `n`.  
+The first constructor constructs an object whose stored `n` value holds the value *n*.  
   
- The second constructor constructs an object whose stored parameters are initialized from `parm`. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
+The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
 ##  <a name="chi_squared_distribution__param_type"></a>  chi_squared_distribution::param_type  
- Stores the parameters of the distribution.  
+Stores the parameters of the distribution.  
+  
 ```cpp    
 struct param_type {  
-   typedef chi_squared_distribution<RealType> distribution_type;  
-   param_type(RealType n = 1.0);
-   RealType n() const;
-   .....  
+   typedef chi_squared_distribution<result_type> distribution_type;  
+   param_type(result_type n = 1.0);
+   result_type n() const;
+   
    bool operator==(const param_type& right) const;
    bool operator!=(const param_type& right) const;
    };  
 ```  
+
 ### Parameters  
- See parent topic [chi_squared_distribution Class](../standard-library/chi-squared-distribution-class.md).  
+*n*  
+The `n` distribution parameter.  
+  
+*right*  
+The `param_type` object to compare to this.  
   
 ### Remarks  
- **Precondition:** `0.0 < n`  
+**Precondition:** `0.0 < n`  
   
- This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
+This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
   
 ## See Also  
  [\<random>](../standard-library/random.md)

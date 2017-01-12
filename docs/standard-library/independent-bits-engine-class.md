@@ -9,12 +9,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.tr1.independent_bits_engine"
-  - "std::tr1::independent_bits_engine"
-  - "tr1::independent_bits_engine"
-  - "tr1.independent_bits_engine"
   - "independent_bits_engine"
-  - "random/std::tr1::independent_bits_engine"
+  - "std::independent_bits_engine"
+  - "random/std::independent_bits_engine"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,7 +46,7 @@ template <class Engine, size_t W, class UIntType>
 class independent_bits_engine;  
 ```  
   
-#### Parameters  
+### Parameters  
  `Engine`  
  The base engine type.  
   

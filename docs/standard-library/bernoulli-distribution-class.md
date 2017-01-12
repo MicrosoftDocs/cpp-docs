@@ -9,17 +9,33 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "tr1.bernoulli_distribution"
-  - "random/std::tr1::bernoulli_distribution"
-  - "std.tr1.bernoulli_distribution"
   - "bernoulli_distribution"
-  - "tr1::bernoulli_distribution"
-  - "std::tr1::bernoulli_distribution"
+  - "std::bernoulli_distribution"
+  - "random/std::bernoulli_distribution"
+  - "std::bernoulli_distribution::reset"
+  - "random/std::bernoulli_distribution::reset"
+  - "std::bernoulli_distribution::p"
+  - "random/std::bernoulli_distribution::p"
+  - "std::bernoulli_distribution::param"
+  - "random/std::bernoulli_distribution::param"
+  - "std::bernoulli_distribution::min"
+  - "random/std::bernoulli_distribution::min"
+  - "std::bernoulli_distribution::max"
+  - "random/std::bernoulli_distribution::max"
+  - "std::bernoulli_distribution::operator()"
+  - "random/std::bernoulli_distribution::operator()"
+  - "std::bernoulli_distribution::param_type"
+  - "random/std::bernoulli_distribution::param_type"
+  - "std::bernoulli_distribution::param_type::p"
+  - "random/std::bernoulli_distribution::param_type::p"
+  - "std::bernoulli_distribution::param_type::operator=="
+  - "random/std::bernoulli_distribution::param_type::operator=="
+  - "std::bernoulli_distribution::param_type::operator!="
+  - "random/std::bernoulli_distribution::param_type::operator!="
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "bernoulli_distribution class"
-  - "bernoulli_distribution class [TR1]"
 ms.assetid: 586bcde1-95ca-411a-bf17-4aaf19482f34
 caps.latest.revision: 22
 author: "corob-msft"
@@ -44,22 +60,26 @@ translation.priority.ht:
 Generates a Bernoulli distribution.  
   
 ## Syntax  
+  
 ```  
 class bernoulli_distribution  
    {  
-   public:  
-// types  
+public:  
+   // types  
    typedef bool result_type;  
    struct param_type;  
-// constructors and reset functions  
+
+   // constructors and reset functions  
    explicit bernoulli_distribution(double p = 0.5);
    explicit bernoulli_distribution(const param_type& parm);
    void reset();
+   
    // generating functions  
    template <class URNG>  
    result_type operator()(URNG& gen);
    template <class URNG>  
    result_type operator()(URNG& gen, const param_type& parm);
+   
    // property functions  
    double p() const;
    param_type param() const;
@@ -69,19 +89,32 @@ class bernoulli_distribution
    };  
 ```
   
+### Parameters  
+  
+*URNG*
+The uniform random number generator engine. For possible types, see [\<random>](../standard-library/random.md).  
+  
 ## Remarks  
- The class describes a distribution that produces values of type `bool`, distributed according to the Bernoulli distribution discrete probability function. The following table links to articles about individual members.  
+The class describes a distribution that produces values of type `bool`, distributed according to the Bernoulli distribution discrete probability function. The following table links to articles about individual members.  
   
 ||||  
 |-|-|-|  
 |[bernoulli_distribution::bernoulli_distribution](#bernoulli_distribution__bernoulli_distribution)|`bernoulli_distribution::p`|`bernoulli_distribution::param`|  
 |`bernoulli_distribution::operator()`||[bernoulli_distribution::param_type](#bernoulli_distribution__param_type)|  
   
- The property member `p()` returns the currently stored distribution parameter value `p`.  
+The property member `p()` returns the currently stored distribution parameter value `p`.  
   
- For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
+The property member `param()` sets or returns the `param_type` stored distribution parameter package.  
+
+The `min()` and `max()` member functions return the smallest possible result and largest possible result, respectively.  
   
- For detailed information about the Bernoulli distribution discrete probability function, see the Wolfram MathWorld article [Bernoulli Distribution](http://go.microsoft.com/fwlink/LinkId=398467).  
+The `reset()` member function discards any cached values, so that the result of the next call to `operator()` does not depend on any values obtained from the engine before the call.  
+  
+The `operator()` member functions return the next generated value based on the URNG engine, either from the current parameter package, or the specified parameter package.
+  
+For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
+  
+For detailed information about the Bernoulli distribution discrete probability function, see the Wolfram MathWorld article [Bernoulli Distribution](http://go.microsoft.com/fwlink/LinkId=398467).  
   
 ## Example  
   
@@ -131,71 +164,65 @@ int main()
   
     test(p_dist, samples);  
 }  
-  
 ```  
   
-## Output  
-  
-```  
+```Output  
 Use CTRL-Z to bypass data entry and run using default values.  
 Enter a double value for p distribution (where 0.0 <= p <= 1.0): .45  
 Enter an integer value for a sample count: 100  
 p == 0.45  
 Histogram for 100 samples:  
-false :::::::::::::::::::::::::::::::::::::::::::::::::::::  
-    true :::::::::::::::::::::::::::::::::::::::::::::::  
+false :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ true :::::::::::::::::::::::::::::::::::::::::
 ```  
   
 ## Requirements  
- **Header:** \<random>  
+**Header:** \<random>  
   
- **Namespace:** std  
+**Namespace:** std  
   
 ##  <a name="bernoulli_distribution__bernoulli_distribution"></a>  bernoulli_distribution::bernoulli_distribution  
- Constructs the distribution.  
+Constructs the distribution.  
   
 ```  
 explicit bernoulli_distribution(double p = 0.5);
-
- 
 explicit bernoulli_distribution(const param_type& parm);
 ```  
   
 ### Parameters  
- `p`  
+*p*  
  The stored `p` distribution parameter.  
   
- `parm`  
- The parameter structure used to construct the distribution.  
+*parm*  
+ The `param_type` structure used to construct the distribution.  
   
 ### Remarks  
  **Precondition:** `0.0 ≤ p ≤ 1.0`  
   
- The first constructor constructs an object whose stored `p` value holds the value `p`.  
+The first constructor constructs an object whose stored `p` value holds the value *p*.  
   
- The second constructor constructs an object whose stored parameters are initialized from `parm`. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
-  
- For more information and a code example, see [binomial_distribution Class](../standard-library/binomial-distribution-class.md).  
+The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
 ##  <a name="bernoulli_distribution__param_type"></a>  bernoulli_distribution::param_type  
- Contains the parameters of the distribution.  
+Contains the parameters of the distribution.  
   
 struct param_type {  
    typedef bernoulli_distribution distribution_type;  
    param_type(double p = 0.5);
    double p() const;
-   .....  
+
    bool operator==(const param_type& right) const;
    bool operator!=(const param_type& right) const;
    };  
   
 ### Parameters  
- See parent topic [bernoulli_distribution Class](../standard-library/bernoulli-distribution-class.md).  
+*p*  
+The stored `p` distribution parameter.  
   
 ### Remarks  
- **Precondition:** `0.0 ≤ p ≤ 1.0`  
+**Precondition:** `0.0 ≤ p ≤ 1.0`  
   
- This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
+This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
   
 ## See Also  
  [\<random>](../standard-library/random.md)

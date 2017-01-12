@@ -93,8 +93,6 @@ int main()
 }  
 ```  
   
- **Output:**  
-  
 ```Output  
 2430338871 3531691818 2723770500 3252414483 3632920437  
 ```  
@@ -118,10 +116,7 @@ int main()
     }  
     cout << endl;  
 }  
-  
 ```  
-  
- **Output:**  
   
 ```Output  
 5 1 6 1 2  
@@ -205,10 +200,7 @@ int main()
     mt19937 engine3(seq);  
     test(engine3);  
 }  
-  
 ```  
-  
-## Example Output and Code Remarks  
   
 ```Output  
 Using random_device URNG:  
@@ -229,7 +221,7 @@ Randomized array: Si C Sc H Na O S Cr K Li Al Ti Cl B Mn He Fe Ne Be Ar V P Ca N
 --  
 ```  
   
- This code demonstrates two different randomizations—randomize a vector of integers and shuffle an array of indexed data—with a test template function. The first call to the test function uses the crypto-secure, non-deterministic, not-seedable, non-repeatable URNG `random_device`. The second test run uses `mersenne_twister_engine` as URNG, with a deterministic 32-bit constant seed, which means the results are repeatable. The third test run seeds `mersenne_twister_engine` with a 32-bit non-deterministic result from `random_device`. The fourth test run expands on this by using a [seed sequence](../standard-library/seed-seq-class.md) filled with `random_device` results, which effectively gives more than 32-bit non-deterministic randomness (but still not crypto-secure). For more information, read on.  
+This code demonstrates two different randomizations—randomize a vector of integers and shuffle an array of indexed data—with a test template function. The first call to the test function uses the crypto-secure, non-deterministic, not-seedable, non-repeatable URNG `random_device`. The second test run uses `mersenne_twister_engine` as URNG, with a deterministic 32-bit constant seed, which means the results are repeatable. The third test run seeds `mersenne_twister_engine` with a 32-bit non-deterministic result from `random_device`. The fourth test run expands on this by using a [seed sequence](../standard-library/seed-seq-class.md) filled with `random_device` results, which effectively gives more than 32-bit non-deterministic randomness (but still not crypto-secure). For more information, read on.  
   
 ##  <a name="listing"></a> Categorized Listing  
   

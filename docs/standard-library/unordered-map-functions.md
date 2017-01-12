@@ -6,8 +6,12 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+f1_keywords: 
+  - "unordered_map/std::swap"
 ms.assetid: cf2e4115-f205-4a0e-90be-a143ffcc1f44
 caps.latest.revision: 10
+author: "corob-msft"
+ms.author: "corob"
 manager: "ghogen"
 ---
 # &lt;unordered_map&gt; functions
@@ -53,7 +57,7 @@ void swap(
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__u_m_swap.cpp   
+// std__unordered_map__u_m_swap.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   
@@ -144,7 +148,7 @@ void swap(
 ### Example  
   
 ```cpp  
-// std_tr1__unordered_map__u_mm_swap.cpp   
+// std__unordered_map__u_mm_swap.cpp   
 // compile with: /EHsc   
 #include <unordered_map>   
 #include <iostream>   

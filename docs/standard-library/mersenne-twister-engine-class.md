@@ -9,12 +9,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "random/std::tr1::mersenne_twister_engine"
-  - "tr1.mersenne_twister_engine"
-  - "std.tr1.mersenne_twister_engine"
-  - "std::tr1::mersenne_twister_engine"
-  - "tr1::mersenne_twister_engine"
   - "mersenne_twister_engine"
+  - "std::mersenne_twister_engine"
+  - "random/std::mersenne_twister_engine"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

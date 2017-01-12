@@ -9,12 +9,33 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "tr1::negative_binomial_distribution"
-  - "tr1.negative_binomial_distribution"
-  - "std.tr1.negative_binomial_distribution"
-  - "random/std::tr1::negative_binomial_distribution"
-  - "std::tr1::negative_binomial_distribution"
   - "negative_binomial_distribution"
+  - "std::negative_binomial_distribution"
+  - "random/std::negative_binomial_distribution"
+  - "std::negative_binomial_distribution::reset"
+  - "random/std::negative_binomial_distribution::reset"
+  - "std::negative_binomial_distribution::k"
+  - "random/std::negative_binomial_distribution::k"
+  - "std::negative_binomial_distribution::p"
+  - "random/std::negative_binomial_distribution::p"
+  - "std::negative_binomial_distribution::param"
+  - "random/std::negative_binomial_distribution::param"
+  - "std::negative_binomial_distribution::min"
+  - "random/std::negative_binomial_distribution::min"
+  - "std::negative_binomial_distribution::max"
+  - "random/std::negative_binomial_distribution::max"
+  - "std::negative_binomial_distribution::operator()"
+  - "random/std::negative_binomial_distribution::operator()"
+  - "std::negative_binomial_distribution::param_type"
+  - "random/std::negative_binomial_distribution::param_type"
+  - "std::negative_binomial_distribution::param_type::k"
+  - "random/std::negative_binomial_distribution::param_type::k"
+  - "std::negative_binomial_distribution::param_type::p"
+  - "random/std::negative_binomial_distribution::param_type::p"
+  - "std::negative_binomial_distribution::param_type::operator=="
+  - "random/std::negative_binomial_distribution::param_type::operator=="
+  - "std::negative_binomial_distribution::param_type::operator!="
+  - "random/std::negative_binomial_distribution::param_type::operator!="
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -44,6 +65,8 @@ Generates a negative binomial distribution.
   
 ## Syntax  
   
+```
+template<class IntType = int>
 class negative_binomial_distribution
 {
 public:
@@ -52,7 +75,7 @@ public:
     struct param_type;   
     
     // constructor and reset functions
-    explicit negative_binomial_distribution(IntType k = 1, double p = 0.5);
+    explicit negative_binomial_distribution(result_type k = 1, double p = 0.5);
     explicit negative_binomial_distribution(const param_type& parm);
     void reset();
     
@@ -63,7 +86,7 @@ public:
     result_type operator()(URNG& gen, const param_type& parm);
     
     // property functions     
-    IntType k() const;
+    result_type k() const;
     double p() const;
     param_type param() const;
     void param(const param_type& parm);
@@ -71,23 +94,31 @@ public:
     result_type max() const; 
 };
   
-#### Parameters  
- `IntType`  
- The integer result type, defaults to `int`. For possible types, see [\<random>](../standard-library/random.md).  
+### Parameters  
+*IntType*  
+The integer result type, defaults to `int`. For possible types, see [\<random>](../standard-library/random.md).  
   
 ## Remarks  
- The template class describes a distribution that produces values of a user-specified integral type, or type `int` if none is provided, distributed according to the Negative Binomial Distribution discrete probability function. The following table links to articles about individual members.  
+The template class describes a distribution that produces values of a user-specified integral type, or type `int` if none is provided, distributed according to the Negative Binomial Distribution discrete probability function. The following table links to articles about individual members.  
   
 ||||  
 |-|-|-|  
 |[negative_binomial_distribution::negative_binomial_distribution](#negative_binomial_distribution__negative_binomial_distribution)|`negative_binomial_distribution::k`|`negative_binomial_distribution::param`|  
 |`negative_binomial_distribution::operator()`|`negative_binomial_distribution::p`|[negative_binomial_distribution::param_type](#negative_binomial_distribution__param_type)|  
   
- The property members `k()` and `p()` return the currently stored distribution parameter values `k` and `p` respectively.  
+The property members `k()` and `p()` return the currently stored distribution parameter values *k* and *p* respectively.  
   
- For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
+The property member `param()` sets or returns the `param_type` stored distribution parameter package.  
+
+The `min()` and `max()` member functions return the smallest possible result and largest possible result, respectively.  
   
- For detailed information about the negative binomial distribution discrete probability function, see the Wolfram MathWorld article [Negative Binomial Distribution](http://go.microsoft.com/fwlink/LinkId=400516).  
+The `reset()` member function discards any cached values, so that the result of the next call to `operator()` does not depend on any values obtained from the engine before the call.  
+  
+The `operator()` member functions return the next generated value based on the URNG engine, either from the current parameter package, or the specified parameter package.
+  
+For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
+  
+For detailed information about the negative binomial distribution discrete probability function, see the Wolfram MathWorld article [Negative Binomial Distribution](http://go.microsoft.com/fwlink/LinkId=400516).  
   
 ## Example  
   
@@ -145,10 +176,9 @@ int main()
   
 ```  
   
-## Output  
- First run:  
+First run:  
   
-```  
+```Output  
 Use CTRL-Z to bypass data entry and run using default values.  
 Enter an integer value for k distribution (where 0 `<` k): 1  
 Enter a double value for p distribution (where 0.0 `<`p `<`= 1.0): .5  
@@ -165,9 +195,9 @@ Histogram for 100 samples:
     5 ::  
 ```  
   
- Second run:  
+Second run:  
   
-```  
+```Output  
 Use CTRL-Z to bypass data entry and run using default values.  
 Enter an integer value for k distribution (where 0 `<` k): 100  
 Enter a double value for p distribution (where 0.0 `<` p <= 1.0): .667  
@@ -210,57 +240,62 @@ Histogram for 100 samples:
 ```  
   
 ## Requirements  
- **Header:** \<random>  
+**Header:** \<random>  
   
- **Namespace:** std  
+**Namespace:** std  
   
 ##  <a name="negative_binomial_distribution__negative_binomial_distribution"></a>  negative_binomial_distribution::negative_binomial_distribution  
- Constructs the distribution.  
+Constructs the distribution.  
   
 ```  
-explicit negative_binomial_distribution(IntType k = 1, double p = 0.5);
-
- 
+explicit negative_binomial_distribution(result_type k = 1, double p = 0.5);
 explicit negative_binomial_distribution(const param_type& parm);
 ```  
   
 ### Parameters  
- `k`  
- The `k` distribution parameter.  
+*k*  
+The `k` distribution parameter.  
   
- `p`  
- The `p` distribution parameter.  
+*p*  
+The `p` distribution parameter.  
   
- `parm`  
- The parameter structure used to construct the distribution.  
+*parm*  
+The parameter structure used to construct the distribution.  
   
 ### Remarks  
- **Precondition:** `0.0 < k` and `0.0 < p ≤ 1.0`  
+**Precondition:** `0.0 < k` and `0.0 < p ≤ 1.0`  
   
- The first constructor constructs an object whose stored `p` value holds the value `p` and whose stored `k` value holds the value `k`.  
+The first constructor constructs an object whose stored `p` value holds the value *p* and whose stored `k` value holds the value *k*.  
   
- The second constructor constructs an object whose stored parameters are initialized from `parm`. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
+The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
 ##  <a name="negative_binomial_distribution__param_type"></a>  negative_binomial_distribution::param_type  
- Stores the parameters of the distribution.  
+Stores the parameters of the distribution.  
   
 struct param_type {  
-   typedef negative_binomial_distribution`<`IntType> distribution_type;  
-   param_type(IntType k = 1, double p = 0.5);
-   IntType k() const;
+   typedef negative_binomial_distribution`<`result_type> distribution_type;  
+   param_type(result_type k = 1, double p = 0.5);
+   result_type k() const;
    double p() const;
-   .....  
+
    bool operator==(const param_type& right) const;
    bool operator!=(const param_type& right) const;
    };  
   
 ### Parameters  
- See parent topic [negative_binomial_distribution Class](../standard-library/negative-binomial-distribution-class.md).  
+*k*  
+The `k` distribution parameter.  
+  
+*p*  
+The `p` distribution parameter.  
+  
+*right*  
+The `param_type` structure used to compare.  
   
 ### Remarks  
- **Precondition:** `0.0 < k` and `0.0 < p ≤ 1.0`  
+**Precondition:** `0.0 < k` and `0.0 < p ≤ 1.0`  
   
- This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
+This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
   
 ## See Also  
  [\<random>](../standard-library/random.md)
