@@ -92,7 +92,7 @@ Include the header `<system_error>` to define the exception class `system_error`
 |[system_error](../standard-library/system-error-class.md)|Represents the base class for all exceptions thrown to report a low-level system overflow.|  
   
 ## Requirements  
- **Header:** <system_error>  
+ **Header:** \<system_error>  
   
  **Namespace:** std  
   

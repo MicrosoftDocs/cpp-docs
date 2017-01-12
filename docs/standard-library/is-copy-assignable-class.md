@@ -55,7 +55,7 @@ struct is_copy_assignable;
  An instance of the type predicate holds true if the type `Ty` is a class that has a copy assignment operator, otherwise it holds false. Equivalent to is_assignable\<Ty&, const Ty&>.  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

@@ -81,7 +81,7 @@ class error_condition;
 |[operator bool](#error_condition__operator_bool)|Casts a variable of type `error_condition`.|  
   
 ## Requirements  
- **Header:** <system_error>  
+ **Header:** \<system_error>  
   
  **Namespace:** std  
   

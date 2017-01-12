@@ -93,7 +93,7 @@ is_base_of<derived, base> == false
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

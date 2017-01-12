@@ -56,7 +56,7 @@ struct is_nothrow_destructible;
  An instance of the type predicate holds true if the type `T` is a destructible type, and the destructor is known to the compiler not to throw. Otherwise, it holds false.  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

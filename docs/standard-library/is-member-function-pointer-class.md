@@ -99,7 +99,7 @@ is_member_function_pointer<int (functional::*)()> == true
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

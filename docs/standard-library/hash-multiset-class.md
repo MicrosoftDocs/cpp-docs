@@ -154,7 +154,7 @@ class hash_multiset
 |[hash_multiset::operator=](#hash_multiset__operator_eq)|Replaces the elements of the hash_multiset with a copy of another hash_multiset.|  
   
 ## Requirements  
- **Header:** <hash_set>  
+ **Header:** \<hash_set>  
   
  **Namespace:** stdext  
   

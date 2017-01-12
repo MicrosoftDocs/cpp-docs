@@ -70,7 +70,7 @@ const error_code& code() const throw();
  The member function `code` returns the stored [error_code](../standard-library/error-code-class.md) object.  
   
 ## Requirements  
- **Header:** <system_error>  
+ **Header:** \<system_error>  
   
  **Namespace:** std  
   

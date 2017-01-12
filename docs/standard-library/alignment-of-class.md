@@ -55,7 +55,7 @@ struct alignment_of;
  The type query holds the value of the the alignment of the type `Ty`.  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

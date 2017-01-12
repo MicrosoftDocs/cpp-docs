@@ -65,7 +65,7 @@ using decay_t = typename decay<T>::type;
 -   Otherwise, the modified type `type` is `remove_cv<U>::type`.  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

@@ -67,7 +67,7 @@ struct is_trivially_move_assignable;
  the classes of all the non-static data members of type array of class have trivial move assignment operators  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   
