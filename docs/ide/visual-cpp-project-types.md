@@ -51,10 +51,7 @@ You can use a project template to create the basic program structure, menus, too
  Visual Studio the following Visual C++ project templates.  
   
 ### Store Apps  
-  
-||  
-|-|  
-|[C#, VB, and C++ project templates for  Store apps](http://go.microsoft.com/fwlink/p/?LinkID=262279)|  
+[C#, VB, and C++ project templates for  Store apps](http://go.microsoft.com/fwlink/p/?LinkID=262279)
   
 ### ATL  
   
