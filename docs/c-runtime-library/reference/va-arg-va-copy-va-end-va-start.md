@@ -72,11 +72,11 @@ Accesses variable-argument lists.
 ## Syntax  
   
 ```  
-  
-      type va_arg(  
+type va_arg(  
    va_list arg_ptr,  
    type   
-);void va_copy(  
+);
+void va_copy(  
    va_list dest,  
    va_list src  
 ); // (ISO C99 and later)  
@@ -89,7 +89,7 @@ void va_start(
 ); // (ANSI C89 and later)  
 void va_start(  
    arg_ptr   
-);  // (Pre-ANSI C89 standardization version)  
+);  // (deprecated Pre-ANSI C89 standardization version)  
 ```  
   
 #### Parameters  
@@ -150,6 +150,8 @@ void testit (int i, ...)
         char *s = va_arg(argptr, char*);  
         printf("%s\n", s);  
     }  
+
+    va_end(argptr);  
 }  
   
 int main()  

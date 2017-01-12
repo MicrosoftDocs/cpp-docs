@@ -241,6 +241,7 @@ void FormatOutput(LPCWSTR formatstring, ...)
     // Note: _vsnwprintf is deprecated; consider vsnwprintf_s instead  
     nSize = _vsnwprintf(buff, BUFFCOUNT - 1, formatstring, args); // C4996  
     wprintf(L"nSize: %d, buff: %ls\n", nSize, buff);  
+    va_end(args);
 }  
   
 int main() {  
@@ -277,7 +278,8 @@ void FormatOutput(char* formatstring, ...)
     va_list args;  
     va_start(args, formatstring);  
     nSize = vsnprintf(buff, sizeof(buff), formatstring, args);  
-    printf("nSize: %d, buff: %s\n", nSize, buff);  
+    printf("nSize: %d, buff: %s\n", nSize, buff);
+    va_end(args);  
 }  
   
 int main() {  

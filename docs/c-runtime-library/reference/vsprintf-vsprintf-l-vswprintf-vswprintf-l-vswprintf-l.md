@@ -219,7 +219,8 @@ void test( char * format, ... )
     // Note: vsprintf is deprecated; consider using vsprintf_s instead  
     puts( buffer );  
   
-    free( buffer );  
+    free( buffer ); 
+    va_end( args ); 
 }  
   
 int main( void )  

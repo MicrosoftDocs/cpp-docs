@@ -183,6 +183,7 @@ void example( char * format, ... )
         puts( buffer );  
         free( buffer );  
     }  
+    va_end( args );
 }  
   
 int main( void )  
