@@ -45,7 +45,7 @@ This class represents a mapping structure, using a Red-Black binary tree.
 template <typename K,
           typename V, 
           class KTraits = CElementTraits<K>, 
-          class VTraits = CElementTraits<V>>  
+          class VTraits = CElementTraits<V>> 
 class CRBMap : public CRBTree<K, V, KTraits, VTraits>
 ```    
   
@@ -135,10 +135,7 @@ explicit CRBMap(size_t nBlockSize = 10) throw();
  Call this method to look up keys or values in the `CRBMap` object.  
   
 ```
-bool Lookup(
-    KINARGTYPE key,
-    VOUTARGTYPE value) const throw(...);
-
+bool Lookup(KINARGTYPE key, VOUTARGTYPE value) const throw(...);
 const CPair* Lookup(KINARGTYPE key) const throw();
 CPair* Lookup(KINARGTYPE key) throw();
 ```  

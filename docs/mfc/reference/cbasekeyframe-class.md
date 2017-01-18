@@ -113,9 +113,7 @@ CBaseKeyFrame();
  Returns the underlying keyframe value.  
   
 ```  
-UI_ANIMATION_KEYFRAME GetAnimationKeyframe() const;
-
- 
+UI_ANIMATION_KEYFRAME GetAnimationKeyframe() const;  
 ```  
   
 ### Return Value  
@@ -128,9 +126,7 @@ UI_ANIMATION_KEYFRAME GetAnimationKeyframe() const;
  Tells whether a keyframe has been added to storyboard.  
   
 ```  
-BOOL IsAdded() const;
-
- 
+BOOL IsAdded() const;  
 ```  
   
 ### Return Value  
@@ -143,9 +139,7 @@ BOOL IsAdded() const;
  Specifies whether the keyframe should be added to storyboard at offset, or after transition.  
   
 ```  
-BOOL IsKeyframeAtOffset() const;
-
- 
+BOOL IsKeyframeAtOffset() const;  
 ```  
   
 ### Return Value  

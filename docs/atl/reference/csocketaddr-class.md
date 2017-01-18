@@ -87,7 +87,7 @@ CSocketAddr();
  Call this method to convert the provided host name to the host address.  
   
 ```
-int FindAddr(  
+int FindAddr(
     const char *szHost,
     const char *szPortOrServiceName,
     int flags,
@@ -95,7 +95,7 @@ int FindAddr(
     int sock_type,
     int ai_proto);
 
-    int FindAddr(  
+int FindAddr(
     const char *szHost,
     int nPortNo,
     int flags,

@@ -313,9 +313,7 @@ CContextMenuManager* GetContextMenuManager();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetDataVersion() const;
-
- 
+int GetDataVersion() const;  
 ```  
   
 ### Return Value  
@@ -326,9 +324,7 @@ int GetDataVersion() const;
  Returns the major version of the application that is saved in the Windows registry when you call [CWinAppEx::SaveState](#savestate).  
   
 ```  
-int GetDataVersionMajor() const;
-
- 
+int GetDataVersionMajor() const;  
 ```  
   
 ### Return Value  
@@ -338,9 +334,7 @@ int GetDataVersionMajor() const;
  Returns the minor version of the application that is saved in the Windows registry when you call [CWinAppEx::SaveState](#savestate).  
   
 ```  
-int GetDataVersionMinor() const;
-
- 
+int GetDataVersionMinor() const;  
 ```  
   
 ### Return Value  
@@ -708,9 +702,7 @@ BOOL InitTooltipManager();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsResourceSmartUpdate() const;
-
- 
+BOOL IsResourceSmartUpdate() const;  
 ```  
   
 ### Return Value  

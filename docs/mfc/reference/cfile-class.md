@@ -140,16 +140,9 @@ virtual void Abort();
  Constructs and initializes a `CFile` object.  
   
 ```  
- 
-CFile();
-
- 
-CFile(
-CAtlTransactionManager* pTM);
-
- 
-CFile(
-HANDLE hFile);
+CFile();  
+CFile(CAtlTransactionManager* pTM);  
+  CFile(HANDLE hFile);
 
  
 CFile(
@@ -258,9 +251,7 @@ virtual void Close();
  Constructs a duplicate `CFile` object for a given file.  
   
 ```  
-virtual CFile* Duplicate() const;
-
- 
+virtual CFile* Duplicate() const;  
 ```  
   
 ### Return Value  
@@ -286,9 +277,7 @@ virtual void Flush();
  Call this member function to retrieve the name of a specified file.  
   
 ```  
-virtual CString GetFileName() const;
-
- 
+virtual CString GetFileName() const;  
 ```  
   
 ### Return Value  
@@ -308,9 +297,7 @@ virtual CString GetFileName() const;
  Call this member function to retrieve the full path of a specified file.  
   
 ```  
-virtual CString GetFilePath() const;
-
- 
+virtual CString GetFilePath() const;  
 ```  
   
 ### Return Value  
@@ -328,9 +315,7 @@ virtual CString GetFilePath() const;
  Call this member function to retrieve the file title (the display name) for the file.  
   
 ```  
-virtual CString GetFileTitle() const;
-
- 
+virtual CString GetFileTitle() const;  
 ```  
   
 ### Return Value  
@@ -348,9 +333,7 @@ virtual CString GetFileTitle() const;
  Obtains the current logical length of the file in bytes.  
   
 ```  
-virtual ULONGLONG GetLength() const;
-
- 
+virtual ULONGLONG GetLength() const;  
 ```  
   
 ### Return Value  
@@ -363,9 +346,7 @@ virtual ULONGLONG GetLength() const;
  Obtains the current value of the file pointer, which can be used in subsequent calls to `Seek`.  
   
 ```  
-virtual ULONGLONG GetPosition() const;
-
- 
+virtual ULONGLONG GetPosition() const;  
 ```  
   
 ### Return Value  
@@ -378,11 +359,8 @@ virtual ULONGLONG GetPosition() const;
  This method retrieves status information related to a given `CFile` object instance or a given file path.  
   
 ```  
-BOOL GetStatus(
-    CFileStatus& rStatus) const;
-
- 
- 
+BOOL GetStatus(CFileStatus& rStatus) const;  
+  
 static BOOL PASCAL GetStatus(
     LPCTSTR lpszFileName,  
     CFileStatus& rStatus,
@@ -558,9 +536,7 @@ virtual BOOL Open(
  Use this operator to pass a handle to a `CFile` object to functions such as [ReadFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365468) and [GetFileTime](http://msdn.microsoft.com/library/windows/desktop/ms724320) that expect a `HANDLE`.  
   
 ```  
-operator HANDLE() const;
-
- 
+operator HANDLE() const;  
 ```  
   
 ##  <a name="read"></a>  CFile::Read  
@@ -592,7 +568,8 @@ virtual UINT Read(
   
 ```  
 static void PASCAL Remove(
-    LPCTSTR lpszFileName, CAtlTransactionManager* pTM = NULL);
+    LPCTSTR lpszFileName, 
+    CAtlTransactionManager* pTM = NULL);
 ```  
   
 ### Parameters  
@@ -640,7 +617,6 @@ static void PASCAL Rename(
  Repositions the file pointer in an open file.  
   
 ```  
- 
 virtual ULONGLONG Seek(
 LONGLONG lOff,  
 UINT nFrom);

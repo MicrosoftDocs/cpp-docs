@@ -117,9 +117,8 @@ void Add(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
   
 ```
 CTokenPrivileges() throw();
-CTokenPrivileges(const CTokenPrivileges& rhs) throw(...);
-
-    CTokenPrivileges(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
+CTokenPrivileges(const CTokenPrivileges& rhs) throw(... );  
+CTokenPrivileges(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
 ```  
   
 ### Parameters  
@@ -259,7 +258,7 @@ const TOKEN_PRIVILEGES* GetPTOKEN_PRIVILEGES() const throw(...);
  Retrieves the attribute associated with a given privilege name.  
   
 ```
-bool LookupPrivilege(  
+bool LookupPrivilege(
     LPCTSTR pszPrivilege,
     DWORD* pdwAttributes = NULL) const throw(...);
 ```  

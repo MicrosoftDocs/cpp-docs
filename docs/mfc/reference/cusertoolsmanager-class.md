@@ -157,9 +157,7 @@ CUserToolsManager(
  Returns the pointer to the [CUserTool Class](../../mfc/reference/cusertool-class.md) object that is associated with a specified command ID.  
   
 ```  
-CUserTool* FindTool(UINT uiCmdId) const;
-
- 
+CUserTool* FindTool(UINT uiCmdId) const;  
 ```  
   
 ### Parameters  
@@ -176,9 +174,7 @@ CUserTool* FindTool(UINT uiCmdId) const;
  Returns the resource ID that is associated with the **Arguments** menu on the **Tools** tab of the **Customize** dialog box.  
   
 ```  
-UINT GetArgumentsMenuID() const;
-
- 
+UINT GetArgumentsMenuID() const;  
 ```  
   
 ### Return Value  
@@ -191,9 +187,7 @@ UINT GetArgumentsMenuID() const;
  Returns the default extension that the **File Open** dialog box ( [CFileDialog](../../mfc/reference/cfiledialog-class.md#cfiledialog)) uses in the **Command** field on the **Tools** tab of the **Customize** dialog box.  
   
 ```  
-const CString& GetDefExt() const;
-
- 
+const CString& GetDefExt() const;  
 ```  
   
 ### Return Value  
@@ -203,9 +197,7 @@ const CString& GetDefExt() const;
  Returns the file filter that the **File Open** dialog box ( [CFileDialog Class](../../mfc/reference/cfiledialog-class.md)) uses in the **Command** field on the **Tools** tab of the **Customize** dialog box.  
   
 ```  
-const CString& GetFilter() const;
-
- 
+const CString& GetFilter() const;  
 ```  
   
 ### Return Value  
@@ -215,9 +207,7 @@ const CString& GetFilter() const;
  Returns the resource ID that is associated with the **Initial directory** menu on the **Tools** tab of the **Customize** dialog box.  
   
 ```  
-UINT GetInitialDirMenuID() const;
-
- 
+UINT GetInitialDirMenuID() const;  
 ```  
   
 ### Return Value  
@@ -230,9 +220,7 @@ UINT GetInitialDirMenuID() const;
  Returns the maximum number of user tools that can be allocated in the application.  
   
 ```  
-int GetMaxTools() const;
-
- 
+int GetMaxTools() const;  
 ```  
   
 ### Return Value  
@@ -245,9 +233,7 @@ int GetMaxTools() const;
  Returns the command ID of the menu item placeholder for user tools.  
   
 ```  
-UINT GetToolsEntryCmd() const;
-
- 
+UINT GetToolsEntryCmd() const;  
 ```  
   
 ### Return Value  
@@ -260,9 +246,7 @@ UINT GetToolsEntryCmd() const;
  Returns a reference to the list of user tools.  
   
 ```  
-const CObList& GetUserTools() const;
-
- 
+const CObList& GetUserTools() const;  
 ```  
   
 ### Return Value  
@@ -292,9 +276,7 @@ BOOL InvokeTool(UINT uiCmdId);
  Determines whether a command ID is associated with a user tool.  
   
 ```  
-BOOL IsUserToolCmd(UINT uiCmdId) const;
-
- 
+BOOL IsUserToolCmd(UINT uiCmdId) const;  
 ```  
   
 ### Parameters  

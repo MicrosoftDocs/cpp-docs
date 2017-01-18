@@ -188,24 +188,12 @@ COleSafeArray(
  
 COleSafeArray(
     LPCSAFEARRAY pSrc,
-    VARTYPE vtSrc);
-
- 
-COleSafeArray(
-    const COleSafeArray& saSrc);
-
- 
-COleSafeArray(
-    const VARIANT& varSrc);
-
- 
-COleSafeArray(
-    LPCVARIANT pSrc);
-
- 
-COleSafeArray(
-    const COleVariant& varSrc);
-```  
+    VARTYPE vtSrc);  
+  
+COleSafeArray(const COleSafeArray& saSrc);  
+COleSafeArray(const VARIANT& varSrc);  
+  COleSafeArray(LPCVARIANT pSrc);  
+COleSafeArray(const COleVariant& varSrc);```  
   
 ### Parameters  
  `saSrc`  
@@ -490,9 +478,7 @@ void Lock();
  Call this casting operator to access the underlying **VARIANT** structure for this `COleSafeArray` object.  
   
 ```  
-operator LPCVARIANT() const;
-
- 
+operator LPCVARIANT() const;  
 ```  
   
 ##  <a name="operator_lpvariant"></a>  COleSafeArray::operator LPVARIANT  
@@ -509,17 +495,10 @@ operator LPVARIANT();
  These overloaded assignment operators copy the source value into this `COleSafeArray` object.  
   
 ```  
-COleSafeArray& operator=(const COleSafeArray& saSrc);
-
- 
-COleSafeArray& operator=(const VARIANT& varSrc);
-
- 
-COleSafeArray& operator=(LPCVARIANT pSrc);
-
- 
-COleSafeArray& operator=(const COleVariant& varSrc);
-```  
+COleSafeArray& operator=(const COleSafeArray& saSrc);  
+COleSafeArray& operator=(const VARIANT& varSrc);  
+  COleSafeArray& operator=(LPCVARIANT pSrc);  
+COleSafeArray& operator=(const COleVariant& varSrc);```  
   
 ### Remarks  
  A brief description of each operator follows:  
@@ -534,30 +513,9 @@ COleSafeArray& operator=(const COleVariant& varSrc);
  This operator compares two arrays ( **SAFEARRAY**, **VARIANT**, `COleVariant`, or `COleSafeArray` arrays) and returns nonzero if they are equal; otherwise 0.  
   
 ```  
-BOOL operator==(const SAFEARRAY& saSrc) const;
-
- 
- 
-BOOL operator==(LPCSAFEARRAY pSrc) const;
-
- 
- 
-BOOL operator==(const COleSafeArray& saSrc) const;
-
- 
- 
-BOOL operator==(const VARIANT& varSrc) const;
-
- 
- 
-BOOL operator==(LPCVARIANT pSrc) const;
-
- 
- 
-BOOL operator==(const COleVariant& varSrc) const;
-
- 
-```  
+BOOL operator==(const SAFEARRAY& saSrc) const;  BOOL operator==(LPCSAFEARRAY pSrc) const;  
+   BOOL operator==(const COleSafeArray& saSrc) const;  BOOL operator==(const VARIANT& varSrc) const;  
+   BOOL operator==(LPCVARIANT pSrc) const;  BOOL operator==(const COleVariant& varSrc) const;  ```  
   
 ### Remarks  
  Two arrays are equal if they have an equal number of dimensions, equal size in each dimension, and equal element values.  

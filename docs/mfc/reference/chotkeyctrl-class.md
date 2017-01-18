@@ -165,14 +165,11 @@ virtual BOOL CreateEx(
  Retrieves the virtual key code and modifier flags of a keyboard shortcut from a hot key control.  
   
 ```  
-DWORD GetHotKey() const;
-
- 
+DWORD GetHotKey() const;  
+  
 void GetHotKey(
     WORD& wVirtualKeyCode,  
-    WORD& wModifiers) const;
-
- 
+    WORD& wModifiers) const;  
 ```  
   
 ### Parameters  
@@ -201,9 +198,7 @@ void GetHotKey(
  Call this member function to get the localized name of the hot key.  
   
 ```  
-CString GetHotKeyName() const;
-
- 
+CString GetHotKeyName() const;  
 ```  
   
 ### Return Value  

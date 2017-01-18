@@ -128,12 +128,12 @@ class CContainedWindowT : public TBase
  The constructor initializes data members.  
   
 ```
-CContainedWindowT(  
+CContainedWindowT(
     LPTSTR lpszClassName,
     CMessageMap* pObject,
     DWORD dwMsgMapID = 0);
 
-    CContainedWindowT(  
+CContainedWindowT(
     CMessageMap* pObject,
     DWORD dwMsgMapID = 0)
     CContainedWindowT();
@@ -175,7 +175,7 @@ HWND Create(
     _U_MENUorID MenuOrID = 0U,
     LPVOID lpCreateParam = NULL);
 
-    HWND Create(
+HWND Create(
     CMessageMap* pObject,
     DWORD dwMsgMapID,
     HWND hWndParent,
@@ -186,7 +186,7 @@ HWND Create(
     _U_MENUorID MenuOrID = 0U,
     LPVOID lpCreateParam = NULL);
 
-    HWND Create(  
+HWND Create(
     LPCTSTR lpszClassName,
     CMessageMap* pObject,
     DWORD dwMsgMapID,
@@ -247,7 +247,7 @@ HWND Create(
   
 ```
 LRESULT DefWindowProc()
-    LRESULT DefWindowProc(
+LRESULT DefWindowProc(
     UINT uMsg,
     WPARAM wParam,
     LPARAM lParam);

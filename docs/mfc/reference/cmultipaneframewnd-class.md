@@ -184,9 +184,7 @@ virtual void CalcExpectedDockedRect(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL CanBeAttached() const;
-
- 
+virtual BOOL CanBeAttached() const;  
 ```  
   
 ### Return Value  
@@ -197,9 +195,7 @@ virtual BOOL CanBeAttached() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL CanBeDockedToPane(const CDockablePane* pDockingBar) const;
-
- 
+virtual BOOL CanBeDockedToPane(const CDockablePane* pDockingBar) const;  
 ```  
   
 ### Parameters  
@@ -294,9 +290,7 @@ virtual CString GetCaptionText();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual CWnd* GetFirstVisiblePane() const;
-
- 
+virtual CWnd* GetFirstVisiblePane() const;  
 ```  
   
 ### Return Value  
@@ -307,9 +301,7 @@ virtual CWnd* GetFirstVisiblePane() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual CWnd* GetPane() const;
-
- 
+virtual CWnd* GetPane() const;  
 ```  
   
 ### Return Value  
@@ -333,9 +325,7 @@ CPaneContainerManager& GetPaneContainerManager();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual int GetPaneCount() const;
-
- 
+virtual int GetPaneCount() const;  
 ```  
   
 ### Return Value  
@@ -346,9 +336,7 @@ virtual int GetPaneCount() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual int GetVisiblePaneCount() const;
-
- 
+virtual int GetVisiblePaneCount() const;  
 ```  
   
 ### Return Value  

@@ -114,9 +114,7 @@ void AddButtons(
   
 ```  
 CMFCRibbonButtonsGroup();
-
-CMFCRibbonButtonsGroup(CMFCRibbonBaseElement* pButton);
-```  
+CMFCRibbonButtonsGroup(CMFCRibbonBaseElement* pButton);```  
   
 ### Parameters  
  [in] `pButton`  
@@ -130,9 +128,7 @@ CMFCRibbonButtonsGroup(CMFCRibbonBaseElement* pButton);
  Returns a pointer to the button that is located at a specified index.  
   
 ```  
-CMFCRibbonBaseElement* GetButton(int i) const;
-
- 
+CMFCRibbonBaseElement* GetButton(int i) const;  
 ```  
   
 ### Parameters  
@@ -148,9 +144,7 @@ CMFCRibbonBaseElement* GetButton(int i) const;
  Returns the number of buttons in the group.  
   
 ```  
-int GetCount() const;
-
- 
+int GetCount() const;  
 ```  
   
 ### Return Value  
@@ -160,9 +154,7 @@ int GetCount() const;
  Retrieves the source image size of the protected `CMFCToolBarImages` member `m_Images`.  
   
 ```  
-const CSize GetImageSize() const;
-
- 
+const CSize GetImageSize() const;  
 ```  
   
 ### Return Value  
@@ -189,9 +181,7 @@ virtual CSize GetRegularSize(CDC* pDC);
  Reports whether the `CMFCRibbonButtonsGroup` object contains toolbar images.  
   
 ```  
-BOOL HasImages() const;
-
- 
+BOOL HasImages() const;  
 ```  
   
 ### Return Value  

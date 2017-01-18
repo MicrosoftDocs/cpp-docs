@@ -304,9 +304,7 @@ static void __stdcall AdjustToolbars();
  The framework calls this method to determine whether 3D tabs should always be highlighted in the application.  
   
 ```  
-virtual BOOL AlwaysHighlight3DTabs() const;
-
- 
+virtual BOOL AlwaysHighlight3DTabs() const;  
 ```  
   
 ### Return Value  
@@ -476,9 +474,7 @@ virtual COLORREF GetAutoHideButtonTextColor(CMFCAutoHideButton* pButton);
  The framework calls this method when it draws a toolbar button.  
   
 ```  
-virtual CSize GetButtonExtraBorder() const;
-
- 
+virtual CSize GetButtonExtraBorder() const;  
 ```  
   
 ### Return Value  
@@ -508,9 +504,7 @@ virtual COLORREF GetCaptionBarTextColor(CMFCCaptionBar* pBar);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual CSize GetCaptionButtonExtraBorder() const;
-
- 
+virtual CSize GetCaptionButtonExtraBorder() const;  
 ```  
   
 ### Return Value  
@@ -521,9 +515,7 @@ virtual CSize GetCaptionButtonExtraBorder() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual int GetDockingPaneCaptionExtraHeight() const;
-
- 
+virtual int GetDockingPaneCaptionExtraHeight() const;  
 ```  
   
 ### Return Value  
@@ -589,9 +581,7 @@ virtual int GetMDITabsBordersSize();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual int GetMenuImageMargin() const;
-
- 
+virtual int GetMenuImageMargin() const;  
 ```  
   
 ### Return Value  
@@ -621,9 +611,7 @@ virtual COLORREF GetMenuItemTextColor(
  Retrieves the width and height of the menu shadow.  
   
 ```  
-int GetMenuShadowDepth() const;
-
- 
+int GetMenuShadowDepth() const;  
 ```  
   
 ### Return Value  
@@ -636,9 +624,7 @@ int GetMenuShadowDepth() const;
  Called by the framework when it has to retrieve the size of the system buttons.  
   
 ```  
-virtual CSize GetNcBtnSize(BOOL bSmall) const;
-
- 
+virtual CSize GetNcBtnSize(BOOL bSmall) const;  
 ```  
   
 ### Parameters  
@@ -655,9 +641,7 @@ virtual CSize GetNcBtnSize(BOOL bSmall) const;
  The framework calls this method to obtain the border size of pop-up menus.  
   
 ```  
-virtual int GetPopupMenuBorderSize() const;
-
- 
+virtual int GetPopupMenuBorderSize() const;  
 ```  
   
 ### Return Value  
@@ -670,9 +654,7 @@ virtual int GetPopupMenuBorderSize() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual int GetPopupMenuGap() const;
-
- 
+virtual int GetPopupMenuGap() const;  
 ```  
   
 ### Return Value  
@@ -731,9 +713,7 @@ virtual COLORREF GetRibbonHyperlinkTextColor(CMFCRibbonLinkCtrl* pHyperLink);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual int GetRibbonPopupBorderSize(const CMFCRibbonPanelMenu*) const;
-
- 
+virtual int GetRibbonPopupBorderSize(const CMFCRibbonPanelMenu*) const;  
 ```  
   
 ### Parameters  
@@ -972,9 +952,7 @@ virtual COLORREF GetTabTextColor(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetTasksPaneGroupCaptionHeight() const;
-
- 
+int GetTasksPaneGroupCaptionHeight() const;  
 ```  
   
 ### Return Value  
@@ -985,9 +963,7 @@ int GetTasksPaneGroupCaptionHeight() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetTasksPaneGroupCaptionHorzOffset() const;
-
- 
+int GetTasksPaneGroupCaptionHorzOffset() const;  
 ```  
   
 ### Return Value  
@@ -998,9 +974,7 @@ int GetTasksPaneGroupCaptionHorzOffset() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetTasksPaneGroupCaptionVertOffset() const;
-
- 
+int GetTasksPaneGroupCaptionVertOffset() const;  
 ```  
   
 ### Return Value  
@@ -1011,9 +985,7 @@ int GetTasksPaneGroupCaptionVertOffset() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetTasksPaneGroupVertOffset() const;
-
- 
+int GetTasksPaneGroupVertOffset() const;  
 ```  
   
 ### Return Value  
@@ -1024,9 +996,7 @@ int GetTasksPaneGroupVertOffset() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetTasksPaneHorzMargin() const;
-
- 
+int GetTasksPaneHorzMargin() const;  
 ```  
   
 ### Return Value  
@@ -1037,9 +1007,7 @@ int GetTasksPaneHorzMargin() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetTasksPaneIconHorzOffset() const;
-
- 
+int GetTasksPaneIconHorzOffset() const;  
 ```  
   
 ### Return Value  
@@ -1050,9 +1018,7 @@ int GetTasksPaneIconHorzOffset() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetTasksPaneIconVertOffset() const;
-
- 
+int GetTasksPaneIconVertOffset() const;  
 ```  
   
 ### Return Value  
@@ -1063,9 +1029,7 @@ int GetTasksPaneIconVertOffset() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetTasksPaneTaskHorzOffset() const;
-
- 
+int GetTasksPaneTaskHorzOffset() const;  
 ```  
   
 ### Return Value  
@@ -1076,9 +1040,7 @@ int GetTasksPaneTaskHorzOffset() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetTasksPaneVertMargin() const;
-
- 
+int GetTasksPaneVertMargin() const;  
 ```  
   
 ### Return Value  
@@ -1113,9 +1075,7 @@ virtual COLORREF GetToolbarButtonTextColor(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual int GetToolBarCustomizeButtonMargin() const;
-
- 
+virtual int GetToolBarCustomizeButtonMargin() const;  
 ```  
   
 ### Return Value  
@@ -1126,9 +1086,7 @@ virtual int GetToolBarCustomizeButtonMargin() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual COLORREF GetToolbarDisabledColor() const;
-
- 
+virtual COLORREF GetToolbarDisabledColor() const;  
 ```  
   
 ### Return Value  
@@ -1180,9 +1138,7 @@ virtual BOOL GetToolTipInfo(
  Returns whether auto-hide buttons overlap in the current visual manager.  
   
 ```  
-virtual BOOL HasOverlappedAutoHideButtons() const;
-
- 
+virtual BOOL HasOverlappedAutoHideButtons() const;  
 ```  
   
 ### Return Value  
@@ -1192,9 +1148,7 @@ virtual BOOL HasOverlappedAutoHideButtons() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsAutoDestroy() const;
-
- 
+BOOL IsAutoDestroy() const;  
 ```  
   
 ### Return Value  
@@ -1205,9 +1159,7 @@ BOOL IsAutoDestroy() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsDefaultWinXPPopupButton(CMFCDesktopAlertWndButton*) const;
-
- 
+virtual BOOL IsDefaultWinXPPopupButton(CMFCDesktopAlertWndButton*) const;  
 ```  
   
 ### Parameters  
@@ -1234,9 +1186,7 @@ virtual BOOL IsDockingTabHasBorder();
  Specifies whether the framework embosses images that are unavailable.  
   
 ```  
-BOOL IsEmbossDisabledImage() const;
-
- 
+BOOL IsEmbossDisabledImage() const;  
 ```  
   
 ### Return Value  
@@ -1249,9 +1199,7 @@ BOOL IsEmbossDisabledImage() const;
  The framework calls this method when it draws inactive images on the toolbar or in a menu.  
   
 ```  
-BOOL IsFadeInactiveImage() const;
-
- 
+BOOL IsFadeInactiveImage() const;  
 ```  
   
 ### Return Value  
@@ -1264,9 +1212,7 @@ BOOL IsFadeInactiveImage() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsFrameMenuCheckedItems() const;
-
- 
+BOOL IsFrameMenuCheckedItems() const;  
 ```  
   
 ### Return Value  
@@ -1277,9 +1223,7 @@ BOOL IsFrameMenuCheckedItems() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsHighlightOneNoteTabs() const;
-
- 
+virtual BOOL IsHighlightOneNoteTabs() const;  
 ```  
   
 ### Return Value  
@@ -1301,9 +1245,7 @@ virtual BOOL IsHighlightWholeMenuItem();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsLayeredRibbonKeyTip() const;
-
- 
+virtual BOOL IsLayeredRibbonKeyTip() const;  
 ```  
   
 ### Return Value  
@@ -1314,9 +1256,7 @@ virtual BOOL IsLayeredRibbonKeyTip() const;
  Indicates whether menu buttons appear flat.  
   
 ```  
-BOOL IsMenuFlatLook() const;
-
- 
+BOOL IsMenuFlatLook() const;  
 ```  
   
 ### Return Value  
@@ -1329,9 +1269,7 @@ BOOL IsMenuFlatLook() const;
  Indicates whether the visual manager implements Office XP-style menus.  
   
 ```  
-virtual BOOL IsOfficeXPStyleMenus() const;
-
- 
+virtual BOOL IsOfficeXPStyleMenus() const;  
 ```  
   
 ### Return Value  
@@ -1344,9 +1282,7 @@ virtual BOOL IsOfficeXPStyleMenus() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsOffsetPressedButton() const;
-
- 
+virtual BOOL IsOffsetPressedButton() const;  
 ```  
   
 ### Return Value  
@@ -1378,9 +1314,7 @@ virtual BOOL IsOwnerDrawMenuCheck();
  Indicates whether the visual manager displays shadows when rendering highlighted images.  
   
 ```  
-BOOL IsShadowHighlightedImage() const;
-
- 
+BOOL IsShadowHighlightedImage() const;  
 ```  
   
 ### Return Value  
@@ -1390,9 +1324,7 @@ BOOL IsShadowHighlightedImage() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsToolbarButtonFillEnabled() const;
-
- 
+BOOL IsToolbarButtonFillEnabled() const;  
 ```  
   
 ### Return Value  
@@ -1417,9 +1349,7 @@ virtual BOOL IsToolbarRoundShape(CMFCToolBar*);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsWindowsThemingSupported() const;
-
- 
+virtual BOOL IsWindowsThemingSupported() const;  
 ```  
   
 ### Return Value  

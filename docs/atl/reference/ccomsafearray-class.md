@@ -321,7 +321,7 @@ LPSAFEARRAY Detach();
  Retrieves a single element from a single-dimensional array.  
   
 ```
-T& GetAt(LONG   lIndex) const;
+T& GetAt(LONG lIndex) const;
 ```  
   
 ### Parameters  
@@ -523,7 +523,7 @@ ATL::CComSafeArray<T>& operator=(const SAFEARRAY* psaSrc);
 ##  <a name="operator_lpsafearray"></a>  CComSafeArray::operator LPSAFEARRAY  
  Casts a value to a **SAFEARRAY** pointer.  
   
-```  
+```
 operator LPSAFEARRAY() const;
 ```  
   

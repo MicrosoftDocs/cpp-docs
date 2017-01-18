@@ -89,10 +89,7 @@ HRESULT CloseHandle(HANDLE  hHandle);
  Implement this method to execute code when the handle associated with this object becomes signaled.  
   
 ```
-HRESULT Execute(
-    DWORD_PTR
-    dwParam,
-    HANDLE hObject);
+HRESULT Execute(DWORD_PTR dwParam, HANDLE hObject);
 ```  
   
 ### Parameters  

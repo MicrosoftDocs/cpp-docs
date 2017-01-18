@@ -193,9 +193,7 @@ static void AlwaysShowEmptyToolsEntry(BOOL bShow = TRUE);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL AreAllCommandsShown() const;
-
- 
+BOOL AreAllCommandsShown() const;  
 ```  
   
 ### Return Value  
@@ -206,9 +204,7 @@ BOOL AreAllCommandsShown() const;
  Determines the location of a point relative to the pop-up menu.  
   
 ```  
-MENUAREA_TYPE CheckArea(const CPoint& ptScreen) const;
-
- 
+MENUAREA_TYPE CheckArea(const CPoint& ptScreen) const;  
 ```  
   
 ### Parameters  
@@ -330,9 +326,7 @@ virtual CPane* CreateTearOffBar(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL DefaultMouseClickOnClose() const;
-
- 
+virtual BOOL DefaultMouseClickOnClose() const;  
 ```  
   
 ### Return Value  
@@ -414,9 +408,7 @@ void EnableVertResize(int nMinResize);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-CMFCToolBarMenuButton* FindSubItemByCommand(UINT uiCmd) const;
-
- 
+CMFCToolBarMenuButton* FindSubItemByCommand(UINT uiCmd) const;  
 ```  
   
 ### Parameters  
@@ -487,9 +479,7 @@ static CMFCPopupMenu::ANIMATION_TYPE GetAnimationType(BOOL bNoSystem = FALSE);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-DROP_DIRECTION GetDropDirection() const;
-
- 
+DROP_DIRECTION GetDropDirection() const;  
 ```  
   
 ### Return Value  
@@ -544,9 +534,7 @@ virtual CMFCPopupMenuBar* GetMenuBar();
  Returns a pointer to the menu item at the specified index.  
   
 ```  
-CMFCToolBarMenuButton* GetMenuItem(int iIndex) const;
-
- 
+CMFCToolBarMenuButton* GetMenuItem(int iIndex) const;  
 ```  
   
 ### Parameters  
@@ -563,9 +551,7 @@ CMFCToolBarMenuButton* GetMenuItem(int iIndex) const;
  Returns the number of items in a pop-up menu.  
   
 ```  
-int GetMenuItemCount() const;
-
- 
+int GetMenuItemCount() const;  
 ```  
   
 ### Return Value  
@@ -575,9 +561,7 @@ int GetMenuItemCount() const;
  Returns a pointer to the window where the framework routes the pop-up menu messages.  
   
 ```  
-CWnd* GetMessageWnd() const;
-
- 
+CWnd* GetMessageWnd() const;  
 ```  
   
 ### Return Value  
@@ -604,9 +588,7 @@ virtual CWnd* GetParentArea(CRect& rectParentBtn);
  Returns a pointer to the parent toolbar button.  
   
 ```  
-CMFCToolBarMenuButton* GetParentButton() const;
-
- 
+CMFCToolBarMenuButton* GetParentButton() const;  
 ```  
   
 ### Return Value  
@@ -621,9 +603,7 @@ CMFCToolBarMenuButton* GetParentButton() const;
  Returns a pointer to the parent pop-up menu.  
   
 ```  
-CMFCPopupMenu* GetParentPopupMenu() const;
-
- 
+CMFCPopupMenu* GetParentPopupMenu() const;  
 ```  
   
 ### Return Value  
@@ -636,9 +616,7 @@ CMFCPopupMenu* GetParentPopupMenu() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-CMFCRibbonBaseElement* GetParentRibbonElement() const;
-
- 
+CMFCRibbonBaseElement* GetParentRibbonElement() const;  
 ```  
   
 ### Return Value  
@@ -649,9 +627,7 @@ CMFCRibbonBaseElement* GetParentRibbonElement() const;
  Returns a pointer to the parent toolbar.  
   
 ```  
-CMFCToolBar* GetParentToolBar() const;
-
- 
+CMFCToolBar* GetParentToolBar() const;  
 ```  
   
 ### Return Value  
@@ -664,9 +640,7 @@ CMFCToolBar* GetParentToolBar() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-QUICK_CUSTOMIZE_TYPE GetQuickCustomizeType() const;
-
- 
+QUICK_CUSTOMIZE_TYPE GetQuickCustomizeType() const;  
 ```  
   
 ### Return Value  
@@ -690,9 +664,7 @@ CMFCToolBarMenuButton* GetSelItem();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL HasBeenResized() const;
-
- 
+BOOL HasBeenResized() const;  
 ```  
   
 ### Return Value  
@@ -703,9 +675,7 @@ BOOL HasBeenResized() const;
  Indicates whether the pop-up menu can hide rarely used commands.  
   
 ```  
-BOOL HideRarelyUsedCommands() const;
-
- 
+BOOL HideRarelyUsedCommands() const;  
 ```  
   
 ### Return Value  
@@ -770,9 +740,7 @@ int InsertSeparator(int iInsertAt = -1);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsAlwaysClose() const;
-
- 
+virtual BOOL IsAlwaysClose() const;  
 ```  
   
 ### Return Value  
@@ -820,9 +788,7 @@ BOOL IsEscClose();
  Indicates whether a pop-up menu is currently idle.  
   
 ```  
-virtual BOOL IsIdle() const;
-
- 
+virtual BOOL IsIdle() const;  
 ```  
   
 ### Return Value  
@@ -859,9 +825,7 @@ BOOL IsQuickCustomize();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsResizeble() const;
-
- 
+BOOL IsResizeble() const;  
 ```  
   
 ### Return Value  
@@ -872,9 +836,7 @@ BOOL IsResizeble() const;
  Indicates whether the menu is right-aligned or left-aligned.  
   
 ```  
-BOOL IsRightAlign() const;
-
- 
+BOOL IsRightAlign() const;  
 ```  
   
 ### Return Value  
@@ -889,9 +851,7 @@ BOOL IsRightAlign() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsScrollable() const;
-
- 
+BOOL IsScrollable() const;  
 ```  
   
 ### Return Value  
@@ -915,9 +875,7 @@ static BOOL IsSendMenuSelectMsg();
  Indicates whether the pop-up menu is currently visible.  
   
 ```  
-BOOL IsShown() const;
-
- 
+BOOL IsShown() const;  
 ```  
   
 ### Return Value  

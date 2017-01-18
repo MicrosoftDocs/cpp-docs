@@ -176,9 +176,7 @@ class CEdit : public CWnd
  Call this function to determine if the last edit operation can be undone.  
   
 ```  
-BOOL CanUndo() const;
-
- 
+BOOL CanUndo() const;  
 ```  
   
 ### Return Value  
@@ -207,9 +205,7 @@ CEdit();
  Call this function to retrieve the zero-based line and character indices of the character nearest the specified point in this `CEdit` control  
   
 ```  
-int CharFromPos(CPoint pt) const;
-
- 
+int CharFromPos(CPoint pt) const;  
 ```  
   
 ### Parameters  
@@ -374,13 +370,9 @@ BOOL FmtLines(BOOL bAddEOL);
 ```  
 BOOL GetCueBanner(
     LPWSTR lpszText,  
-    int cchText) const;
-
- 
- 
-CString GetCueBanner() const;
-
- 
+    int cchText) const;  
+  
+CString GetCueBanner() const;  
 ```  
   
 ### Parameters  
@@ -402,9 +394,7 @@ CString GetCueBanner() const;
  Call this function to determine the topmost visible line in an edit control.  
   
 ```  
-int GetFirstVisibleLine() const;
-
- 
+int GetFirstVisibleLine() const;  
 ```  
   
 ### Return Value  
@@ -420,9 +410,7 @@ int GetFirstVisibleLine() const;
  Call this function to retrieve a handle to the memory currently allocated for a multiple-line edit control.  
   
 ```  
-HLOCAL GetHandle() const;
-
- 
+HLOCAL GetHandle() const;  
 ```  
   
 ### Return Value  
@@ -449,9 +437,7 @@ HLOCAL GetHandle() const;
 ```  
 BOOL GetHighlight(
     int* pichStart,   
-    int* pichEnd) const;
-
- 
+    int* pichEnd) const;  
 ```  
   
 ### Parameters  
@@ -471,9 +457,7 @@ BOOL GetHighlight(
  Call this member function to get the text limit for this `CEdit` object.  
   
 ```  
-UINT GetLimitText() const;
-
- 
+UINT GetLimitText() const;  
 ```  
   
 ### Return Value  
@@ -496,16 +480,12 @@ UINT GetLimitText() const;
 ```  
 int GetLine(
     int nIndex,  
-    LPTSTR lpszBuffer) const;
-
- 
- 
+    LPTSTR lpszBuffer) const;  
+  
 int GetLine(
     int nIndex,  
     LPTSTR lpszBuffer,  
-    int nMaxLength) const;
-
- 
+    int nMaxLength) const;  
 ```  
   
 ### Parameters  
@@ -533,9 +513,7 @@ int GetLine(
  Call this function to retrieve the number of lines in a multiple-line edit control.  
   
 ```  
-int GetLineCount() const;
-
- 
+int GetLineCount() const;  
 ```  
   
 ### Return Value  
@@ -553,9 +531,7 @@ int GetLineCount() const;
  Call this member function to retrieve the left and right margins of this edit control.  
   
 ```  
-DWORD GetMargins() const;
-
- 
+DWORD GetMargins() const;  
 ```  
   
 ### Return Value  
@@ -576,9 +552,7 @@ DWORD GetMargins() const;
  Call this function to determine whether the contents of an edit control have been modified.  
   
 ```  
-BOOL GetModify() const;
-
- 
+BOOL GetModify() const;  
 ```  
   
 ### Return Value  
@@ -596,9 +570,7 @@ BOOL GetModify() const;
  Call this function to retrieve the password character that is displayed in an edit control when the user enters text.  
   
 ```  
-TCHAR GetPasswordChar() const;
-
- 
+TCHAR GetPasswordChar() const;  
 ```  
   
 ### Return Value  
@@ -616,9 +588,7 @@ TCHAR GetPasswordChar() const;
  Call this function to get the formatting rectangle of an edit control.  
   
 ```  
-void GetRect(LPRECT lpRect) const;
-
- 
+void GetRect(LPRECT lpRect) const;  
 ```  
   
 ### Parameters  
@@ -639,15 +609,11 @@ void GetRect(LPRECT lpRect) const;
  Call this function to get the starting and ending character positions of the current selection (if any) in an edit control, using either the return value or the parameters.  
   
 ```  
-DWORD GetSel() const;
-
- 
- 
+DWORD GetSel() const;  
+  
 void GetSel(
     int& nStartChar,  
-    int& nEndChar) const;
-
- 
+    int& nEndChar) const;  
 ```  
   
 ### Parameters  
@@ -705,9 +671,7 @@ void LimitText(int nChars = 0);
  Call this function to retrieve the line number of the line that contains the specified character index.  
   
 ```  
-int LineFromChar(int nIndex = -1) const;
-
- 
+int LineFromChar(int nIndex = -1) const;  
 ```  
   
 ### Parameters  
@@ -731,9 +695,7 @@ int LineFromChar(int nIndex = -1) const;
  Call this function to retrieve the character index of a line within a multiple-line edit control.  
   
 ```  
-int LineIndex(int nLine = -1) const;
-
- 
+int LineIndex(int nLine = -1) const;  
 ```  
   
 ### Parameters  
@@ -757,9 +719,7 @@ int LineIndex(int nLine = -1) const;
  Retrieves the length of a line in an edit control.  
   
 ```  
-int LineLength(int nLine = -1) const;
-
- 
+int LineLength(int nLine = -1) const;  
 ```  
   
 ### Parameters  
@@ -830,9 +790,7 @@ void Paste();
  Call this function to get the position (top-left corner) of a given character within this `CEdit` object.  
   
 ```  
-CPoint PosFromChar(UINT nChar) const;
-
- 
+CPoint PosFromChar(UINT nChar) const;  
 ```  
   
 ### Parameters  
@@ -857,8 +815,7 @@ CPoint PosFromChar(UINT nChar) const;
  Call this function to replace the current selection in an edit control with the text specified by `lpszNewText`.  
   
 ```  
-void ReplaceSel(
-    LPCTSTR lpszNewText, BOOL bCanUndo = FALSE);
+void ReplaceSel(LPCTSTR lpszNewText, BOOL bCanUndo = FALSE);
 ```  
   
 ### Parameters  
@@ -882,8 +839,7 @@ void ReplaceSel(
  Sets the text that is displayed as the text cue, or tip, in an edit control when the control is empty.  
   
 ```  
-BOOL SetCueBanner(
-    LPCWSTR lpszText);
+BOOL SetCueBanner(LPCWSTR lpszText);
 
  
 BOOL SetCueBanner(
@@ -1167,14 +1123,10 @@ void SetSel(
  Call this function to set the tab stops in a multiple-line edit control.  
   
 ```  
-void SetTabStops();
+void SetTabStops();  
+BOOL SetTabStops(const int& cxEachStop);
 
- 
-BOOL SetTabStops(
-    const int& cxEachStop);
-
- 
-BOOL SetTabStops(
+ BOOL SetTabStops(
     int nTabStops,  
     LPINT rgTabStops);
 ```  
@@ -1210,8 +1162,7 @@ BOOL SetTabStops(
  Displays a balloon tip that is associated with the current edit control.  
   
 ```  
-BOOL ShowBalloonTip(
-    PEDITBALLOONTIP pEditBalloonTip);
+BOOL ShowBalloonTip(PEDITBALLOONTIP pEditBalloonTip);
 
  
 BOOL ShowBalloonTip(

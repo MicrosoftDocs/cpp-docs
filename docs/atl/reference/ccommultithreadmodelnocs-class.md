@@ -127,7 +127,7 @@ typedef CComFakeCriticalSection CriticalSection;
  This static function calls the Win32 function [InterlockedDecrement](http://msdn.microsoft.com/library/windows/desktop/ms683580), which decrements the value of the variable pointed to by `p`.  
   
 ```
-static ULONG WINAPI Decrement(LPLONG   p) throw();
+static ULONG WINAPI Decrement(LPLONG p) throw();
 ```  
   
 ### Parameters  
@@ -144,7 +144,7 @@ static ULONG WINAPI Decrement(LPLONG   p) throw();
  This static function calls the Win32 function [InterlockedIncrement](http://msdn.microsoft.com/library/windows/desktop/ms683614), which increments the value of the variable pointed to by `p`.  
   
 ```
-static ULONG WINAPI Increment(LPLONG   p) throw();
+static ULONG WINAPI Increment(LPLONG p) throw();
 ```  
   
 ### Parameters  

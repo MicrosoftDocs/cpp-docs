@@ -168,9 +168,7 @@ virtual INT_PTR DoModal();
  Call this function to get a handle to the metafile that contains the iconic aspect of the selected item.  
   
 ```  
-HGLOBAL GetIconicMetafile() const;
-
- 
+HGLOBAL GetIconicMetafile() const;  
 ```  
   
 ### Return Value  

@@ -296,12 +296,3 @@ virtual void SetRect(const RECT* prc, BOOL bRedraw);
   
 ## See Also  
  [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)
-
-
-
-
-
-
-
-
-

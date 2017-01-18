@@ -157,9 +157,7 @@ IDWriteTextLayout* Get();
 ```  
 CString GetFontFamilyName(
     UINT32 currentPosition,  
-    DWRITE_TEXT_RANGE* textRange = NULL) const;
-
- 
+    DWRITE_TEXT_RANGE* textRange = NULL) const;  
 ```  
   
 ### Parameters  
@@ -178,9 +176,7 @@ CString GetFontFamilyName(
 ```  
 CString GetLocaleName(
     UINT32 currentPosition,  
-    DWRITE_TEXT_RANGE* textRange = NULL) const;
-
- 
+    DWRITE_TEXT_RANGE* textRange = NULL) const;  
 ```  
   
 ### Parameters  
@@ -197,9 +193,7 @@ CString GetLocaleName(
  Checks resource validity  
   
 ```  
-virtual BOOL IsValid() const;
-
- 
+virtual BOOL IsValid() const;  
 ```  
   
 ### Return Value  

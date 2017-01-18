@@ -113,9 +113,7 @@ virtual CRichEditCntrItem* CreateClientItem(REOBJECT* preo = NULL) const = 0;
  Call this function to determine the text format for streaming the contents of the rich edit.  
   
 ```  
-int GetStreamFormat() const;
-
- 
+int GetStreamFormat() const;  
 ```  
   
 ### Return Value  
@@ -132,9 +130,7 @@ int GetStreamFormat() const;
  Call this function to access the [CRichEditView](../../mfc/reference/cricheditview-class.md) object associated with this `CRichEditDoc` object.  
   
 ```  
-virtual CRichEditView* GetView() const;
-
- 
+virtual CRichEditView* GetView() const;  
 ```  
   
 ### Return Value  

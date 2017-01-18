@@ -78,9 +78,7 @@ class CDocItem : public CCmdTarget
  Call this function to get the document that contains the item.  
   
 ```  
-CDocument* GetDocument() const;
-
- 
+CDocument* GetDocument() const;  
 ```  
   
 ### Return Value  
@@ -93,9 +91,7 @@ CDocument* GetDocument() const;
  Called by the framework when default serialization occurs.  
   
 ```  
-virtual BOOL IsBlank() const;
-
- 
+virtual BOOL IsBlank() const;  
 ```  
   
 ### Return Value  

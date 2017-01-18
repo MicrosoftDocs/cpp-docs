@@ -113,8 +113,7 @@ class CTabCtrl : public CWnd
  Calculates a tab control's display area given a window rectangle, or calculates the window rectangle that would correspond to a given display area.  
   
 ```  
-void AdjustRect(
-    BOOL bLarger,   LPRECT lpRect);
+void AdjustRect(BOOL bLarger,   LPRECT lpRect);
 ```  
   
 ### Parameters  
@@ -280,9 +279,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
  Retrieves the index of the tab with the current focus.  
   
 ```  
-int GetCurFocus() const;
-
- 
+int GetCurFocus() const;  
 ```  
   
 ### Return Value  
@@ -292,9 +289,7 @@ int GetCurFocus() const;
  Retrieves the currently selected tab in a tab control.  
   
 ```  
-int GetCurSel() const;
-
- 
+int GetCurSel() const;  
 ```  
   
 ### Return Value  
@@ -317,9 +312,7 @@ DWORD GetExtendedStyle();
  Retrieves the image list that's associated with a tab control.  
   
 ```  
-CImageList* GetImageList() const;
-
- 
+CImageList* GetImageList() const;  
 ```  
   
 ### Return Value  
@@ -329,10 +322,7 @@ CImageList* GetImageList() const;
  Retrieves information about a tab in a tab control.  
   
 ```  
-BOOL GetItem(
-    int nItem,   TCITEM* pTabCtrlItem) const;
-
- 
+BOOL GetItem(int nItem,   TCITEM* pTabCtrlItem) const;  
 ```  
   
 ### Parameters  
@@ -380,9 +370,7 @@ BOOL GetItem(
  Retrieves the number of tabs in the tab control.  
   
 ```  
-int GetItemCount() const;
-
- 
+int GetItemCount() const;  
 ```  
   
 ### Return Value  
@@ -395,10 +383,7 @@ int GetItemCount() const;
  Retrieves the bounding rectangle for the specified tab in a tab control.  
   
 ```  
-BOOL GetItemRect(
-    int nItem,   LPRECT lpRect) const;
-
- 
+BOOL GetItemRect(int nItem,   LPRECT lpRect) const;  
 ```  
   
 ### Parameters  
@@ -420,9 +405,7 @@ BOOL GetItemRect(
 ```  
 DWORD GetItemState(
     int nItem,  
-    DWORD dwMask) const;
-
- 
+    DWORD dwMask) const;  
 ```  
   
 ### Parameters  
@@ -447,9 +430,7 @@ DWORD GetItemState(
  Retrieves the current number of rows in a tab control.  
   
 ```  
-int GetRowCount() const;
-
- 
+int GetRowCount() const;  
 ```  
   
 ### Return Value  
@@ -462,9 +443,7 @@ int GetRowCount() const;
  Retrieves the handle of the tool tip control associated with a tab control.  
   
 ```  
-CToolTipCtrl* GetToolTips() const;
-
- 
+CToolTipCtrl* GetToolTips() const;  
 ```  
   
 ### Return Value  
@@ -477,8 +456,7 @@ CToolTipCtrl* GetToolTips() const;
  Sets the highlight state of a tab item.  
   
 ```  
-BOOL HighlightItem(
-    int idItem,   BOOL fHighlight = TRUE);
+BOOL HighlightItem(int idItem,   BOOL fHighlight = TRUE);
 ```  
   
 ### Parameters  
@@ -498,9 +476,7 @@ BOOL HighlightItem(
  Determines which tab, if any, is at the specified screen position.  
   
 ```  
-int HitTest(TCHITTESTINFO* pHitTestInfo) const;
-
- 
+int HitTest(TCHITTESTINFO* pHitTestInfo) const;  
 ```  
   
 ### Parameters  
@@ -638,8 +614,7 @@ int SetCurSel(int nItem);
  Sets the extended styles for a tab control.  
   
 ```  
-DWORD SetExtendedStyle(
-    DWORD dwNewStyle,   DWORD dwExMask = 0);
+DWORD SetExtendedStyle(DWORD dwNewStyle,   DWORD dwExMask = 0);
 ```  
   
 ### Parameters  
@@ -673,8 +648,7 @@ CImageList* SetImageList(CImageList* pImageList);
  Sets some or all of a tab's attributes.  
   
 ```  
-BOOL SetItem(
-    int nItem,   TCITEM* pTabCtrlItem);
+BOOL SetItem(int nItem,   TCITEM* pTabCtrlItem);
 ```  
   
 ### Parameters  

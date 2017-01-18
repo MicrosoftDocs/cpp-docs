@@ -103,15 +103,10 @@ class CTimeSpan
   
 ```
 bool operator==(CTimeSpan span) const throw();
-
 bool operator!=(CTimeSpan span) const throw();
-
 bool operator<(CTimeSpan span) const throw();
-
 bool operator>(CTimeSpan span) const throw();
-
 bool operator<=(CTimeSpan span) const throw();
-
 bool operator>=(CTimeSpan span) const throw();
 ```  
   
@@ -131,7 +126,6 @@ bool operator>=(CTimeSpan span) const throw();
   
 ```
 CTimeSpan() throw();
-
 CTimeSpan(__time64_t time) throw();
 
 CTimeSpan(  
@@ -179,9 +173,7 @@ CTimeSpan(
   
 ```
 CString Format(LPCSTR pFormat) const;
-
 CString Format(LPCTSTR pszFormat) const;
-
 CString Format(UINT nID) const;
 ```  
   
@@ -269,7 +261,8 @@ LONG GetSeconds() const throw();
 ##  <a name="gettimespan"></a>  CTimeSpan::GetTimeSpan  
  Returns the value of the `CTimeSpan` object.  
   
-```__time64_t GetTimeSpan() const throw();
+```
+__ time64_t GetTimeSpan() const throw();
 ```  
   
 ### Return Value  
@@ -319,7 +312,6 @@ LONGLONG GetTotalSeconds() const throw();
   
 ```
 CTimeSpan operator+(CTimeSpan span) const throw();
-
 CTimeSpan operator-(CTimeSpan span) const throw();
 ```  
   
@@ -341,7 +333,6 @@ CTimeSpan operator-(CTimeSpan span) const throw();
   
 ```
 CTimeSpan& operator+=(CTimeSpan span) throw();
-
 CTimeSpan& operator-=(CTimeSpan span) throw();
 ```  
   

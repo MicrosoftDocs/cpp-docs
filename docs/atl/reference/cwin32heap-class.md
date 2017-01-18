@@ -132,7 +132,7 @@ void Attach(HANDLE hHeap, bool bTakeOwnership) throw();
 CWin32Heap() throw();
 CWin32Heap( HANDLE  hHeap) throw();
 CWin32Heap(
- DWORD  dwFlags,
+    DWORD  dwFlags,
     size_t nInitialSize,
     size_t nMaxSize = 0);
 ```  

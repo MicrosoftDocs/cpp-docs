@@ -999,9 +999,7 @@ void operator=(const CAsyncSocket& rSrc);
  Use this operator to retrieve the **SOCKET** handle of the `CAsyncSocket` object.  
   
 ```  
-operator SOCKET() const;
-
- 
+operator SOCKET() const;  
 ```  
   
 ### Return Value  

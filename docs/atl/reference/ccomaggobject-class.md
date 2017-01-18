@@ -139,8 +139,8 @@ CComAggObject(void* pv);
   
 ```
 static HRESULT WINAPI CreateInstance(
-  LPUNKNOWN pUnkOuter,
-  CComAggObject<contained>** pp);
+    LPUNKNOWN pUnkOuter,
+    CComAggObject<contained>** pp);
 ```  
   
 ### Parameters  
@@ -191,7 +191,6 @@ CComContainedObject<contained> m_contained;
   
 ```
 STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
-
 template <class Q>
 HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 ```  

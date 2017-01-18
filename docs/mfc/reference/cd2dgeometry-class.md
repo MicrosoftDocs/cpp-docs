@@ -141,9 +141,7 @@ BOOL CombineWithGeometry(
     D2D1_COMBINE_MODE combineMode,  
     const D2D1_MATRIX_3X2_F& inputGeometryTransform,  
     ID2D1SimplifiedGeometrySink* geometrySink,  
-    FLOAT flatteningTolerance = D2D1_DEFAULT_FLATTENING_TOLERANCE) const;
-
- 
+    FLOAT flatteningTolerance = D2D1_DEFAULT_FLATTENING_TOLERANCE) const;  
 ```  
   
 ### Parameters  
@@ -172,9 +170,7 @@ BOOL CombineWithGeometry(
 D2D1_GEOMETRY_RELATION CompareWithGeometry(
     CD2DGeometry& inputGeometry,  
     const D2D1_MATRIX_3X2_F& inputGeometryTransform,  
-    FLOAT flatteningTolerance = D2D1_DEFAULT_FLATTENING_TOLERANCE) const;
-
- 
+    FLOAT flatteningTolerance = D2D1_DEFAULT_FLATTENING_TOLERANCE) const;  
 ```  
   
 ### Parameters  
@@ -197,9 +193,7 @@ D2D1_GEOMETRY_RELATION CompareWithGeometry(
 BOOL ComputeArea(
     const D2D1_MATRIX_3X2_F& worldTransform,  
     FLOAT& area,  
-    FLOAT flatteningTolerance = D2D1_DEFAULT_FLATTENING_TOLERANCE) const;
-
- 
+    FLOAT flatteningTolerance = D2D1_DEFAULT_FLATTENING_TOLERANCE) const;  
 ```  
   
 ### Parameters  
@@ -222,9 +216,7 @@ BOOL ComputeArea(
 BOOL ComputeLength(
     const D2D1_MATRIX_3X2_F& worldTransform,  
     FLOAT& length,  
-    FLOAT flatteningTolerance = D2D1_DEFAULT_FLATTENING_TOLERANCE) const;
-
- 
+    FLOAT flatteningTolerance = D2D1_DEFAULT_FLATTENING_TOLERANCE) const;  
 ```  
   
 ### Parameters  
@@ -249,9 +241,7 @@ BOOL ComputePointAtLength(
     const D2D1_MATRIX_3X2_F& worldTransform,  
     CD2DPointF& point,  
     CD2DPointF& unitTangentVector,  
-    FLOAT flatteningTolerance = D2D1_DEFAULT_FLATTENING_TOLERANCE) const;
-
- 
+    FLOAT flatteningTolerance = D2D1_DEFAULT_FLATTENING_TOLERANCE) const;  
 ```  
   
 ### Parameters  
@@ -298,9 +288,7 @@ BOOL FillContainsPoint(
     CD2DPointF point,  
     const D2D1_MATRIX_3X2_F& worldTransform,  
     BOOL* contains,  
-    FLOAT flatteningTolerance = D2D1_DEFAULT_FLATTENING_TOLERANCE) const;
-
- 
+    FLOAT flatteningTolerance = D2D1_DEFAULT_FLATTENING_TOLERANCE) const;  
 ```  
   
 ### Parameters  
@@ -331,13 +319,10 @@ ID2D1Geometry* Get();
   
 ##  <a name="getbounds"></a>  CD2DGeometry::GetBounds  
   
-```  
- 
+```   
 BOOL GetBounds(
 const D2D1_MATRIX_3X2_F& worldTransform,  
-CD2DRectF& bounds) const;
-
- 
+CD2DRectF& bounds) const; 
 ```  
   
 ### Parameters  
@@ -355,9 +340,7 @@ BOOL GetWidenedBounds(
     ID2D1StrokeStyle* strokeStyle,  
     const D2D1_MATRIX_3X2_F& worldTransform,  
     CD2DRectF& bounds,  
-    FLOAT flatteningTolerance = D2D1_DEFAULT_FLATTENING_TOLERANCE) const;
-
- 
+    FLOAT flatteningTolerance = D2D1_DEFAULT_FLATTENING_TOLERANCE) const;  
 ```  
   
 ### Parameters  
@@ -383,9 +366,7 @@ BOOL GetWidenedBounds(
  Checks resource validity  
   
 ```  
-virtual BOOL IsValid() const;
-
- 
+virtual BOOL IsValid() const;  
 ```  
   
 ### Return Value  
@@ -415,9 +396,7 @@ operator ID2D1Geometry*();
 BOOL Outline(
     const D2D1_MATRIX_3X2_F& worldTransform,  
     ID2D1SimplifiedGeometrySink* geometrySink,  
-    FLOAT flatteningTolerance = D2D1_DEFAULT_FLATTENING_TOLERANCE) const;
-
- 
+    FLOAT flatteningTolerance = D2D1_DEFAULT_FLATTENING_TOLERANCE) const;  
 ```  
   
 ### Parameters  
@@ -441,9 +420,7 @@ BOOL Simplify(
     D2D1_GEOMETRY_SIMPLIFICATION_OPTION simplificationOption,  
     const D2D1_MATRIX_3X2_F& worldTransform,  
     ID2D1SimplifiedGeometrySink* geometrySink,  
-    FLOAT flatteningTolerance = D2D1_DEFAULT_FLATTENING_TOLERANCE) const;
-
- 
+    FLOAT flatteningTolerance = D2D1_DEFAULT_FLATTENING_TOLERANCE) const;  
 ```  
   
 ### Parameters  
@@ -472,9 +449,7 @@ BOOL StrokeContainsPoint(
     ID2D1StrokeStyle* strokeStyle,  
     const D2D1_MATRIX_3X2_F& worldTransform,  
     BOOL* contains,  
-    FLOAT flatteningTolerance = D2D1_DEFAULT_FLATTENING_TOLERANCE) const;
-
- 
+    FLOAT flatteningTolerance = D2D1_DEFAULT_FLATTENING_TOLERANCE) const;  
 ```  
   
 ### Parameters  
@@ -506,9 +481,7 @@ BOOL StrokeContainsPoint(
 BOOL Tessellate(
     const D2D1_MATRIX_3X2_F& worldTransform,  
     ID2D1TessellationSink* tessellationSink,  
-    FLOAT flatteningTolerance = D2D1_DEFAULT_FLATTENING_TOLERANCE) const;
-
- 
+    FLOAT flatteningTolerance = D2D1_DEFAULT_FLATTENING_TOLERANCE) const;  
 ```  
   
 ### Parameters  
@@ -533,9 +506,7 @@ BOOL Widen(
     ID2D1StrokeStyle* strokeStyle,  
     const D2D1_MATRIX_3X2_F& worldTransform,  
     ID2D1SimplifiedGeometrySink* geometrySink,  
-    FLOAT flatteningTolerance = D2D1_DEFAULT_FLATTENING_TOLERANCE) const;
-
- 
+    FLOAT flatteningTolerance = D2D1_DEFAULT_FLATTENING_TOLERANCE) const;  
 ```  
   
 ### Parameters  

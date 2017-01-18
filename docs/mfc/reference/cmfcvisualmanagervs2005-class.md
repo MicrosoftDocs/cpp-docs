@@ -161,9 +161,7 @@ virtual void GetTabFrameColors(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL HasOverlappedAutoHideButtons() const;
-
- 
+virtual BOOL HasOverlappedAutoHideButtons() const;  
 ```  
   
 ### Return Value  

@@ -183,9 +183,7 @@ virtual CSize CalcFixedLayout(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
-
- 
+virtual BOOL CanAcceptPane(const CBasePane* pBar) const;  
 ```  
   
 ### Parameters  
@@ -281,9 +279,7 @@ virtual BOOL DockPaneLeftOf(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL DoesAllowDynInsertBefore() const;
-
- 
+virtual BOOL DoesAllowDynInsertBefore() const;  
 ```  
   
 ### Return Value  
@@ -333,9 +329,7 @@ virtual void FixupVirtualRects();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual UINT GetDockSiteID() const;
-
- 
+virtual UINT GetDockSiteID() const;  
 ```  
   
 ### Return Value  
@@ -346,9 +340,7 @@ virtual UINT GetDockSiteID() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-const CObList& GetDockSiteRowsList() const;
-
- 
+const CObList& GetDockSiteRowsList() const;  
 ```  
   
 ### Return Value  
@@ -359,9 +351,7 @@ const CObList& GetDockSiteRowsList() const;
  Returns a list of panes that are docked in the dock site.  
   
 ```  
-const CObList& GetPaneList() const;
-
- 
+const CObList& GetPaneList() const;  
 ```  
   
 ### Return Value  
@@ -382,9 +372,7 @@ virtual BOOL IsAccessibilityCompatible();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsDragMode() const;
-
- 
+virtual BOOL IsDragMode() const;  
 ```  
   
 ### Return Value  
@@ -395,9 +383,7 @@ virtual BOOL IsDragMode() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-bool IsLastRow(CDockingPanesRow* pRow) const;
-
- 
+bool IsLastRow(CDockingPanesRow* pRow) const;  
 ```  
   
 ### Parameters  
@@ -428,9 +414,7 @@ BOOL IsRectWithinDockSite(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsResizable() const;
-
- 
+virtual BOOL IsResizable() const;  
 ```  
   
 ### Return Value  

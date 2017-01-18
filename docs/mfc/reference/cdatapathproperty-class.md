@@ -96,13 +96,8 @@ class CDataPathProperty : public CAsyncMonikerFile
  Constructs a `CDataPathProperty` object.  
   
 ```  
-CDataPathProperty(
-    COleControl* pControl = NULL);
-
- 
-CDataPathProperty(
-    LPCTSTR lpszPath, COleControl* pControl = NULL);
-```  
+CDataPathProperty(COleControl* pControl = NULL);  
+CDataPathProperty(LPCTSTR lpszPath, COleControl* pControl = NULL);```  
   
 ### Parameters  
  `pControl`  
@@ -128,9 +123,7 @@ COleControl* GetControl();
  Call this member function to retrieve the path, set when the `CDataPathProperty` object was constructed, or specified in **Open**, or specified in a previous call to the `SetPath` member function.  
   
 ```  
-CString GetPath() const;
-
- 
+CString GetPath() const;  
 ```  
   
 ### Return Value  
@@ -153,11 +146,9 @@ virtual BOOL Open(
  
 virtual BOOL Open(
     LPCTSTR lpszPath,  
-    CFileException* pError = NULL);
-
- 
-virtual BOOL Open(
-    CFileException* pError = NULL);
+    CFileException* pError = NULL);  
+  
+virtual BOOL Open(CFileException* pError = NULL);
 ```  
   
 ### Parameters  

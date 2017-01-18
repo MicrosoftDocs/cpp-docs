@@ -147,9 +147,7 @@ CMFCRibbonFontComboBox(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-const CMFCFontInfo* GetFontDesc(int iIndex = -1) const;
-
- 
+const CMFCFontInfo* GetFontDesc(int iIndex = -1) const;  
 ```  
   
 ### Parameters  
@@ -198,9 +196,7 @@ BOOL SetFont(
  Returns the specified character set.  
   
 ```  
-BYTE GetCharSet() const;
-
- 
+BYTE GetCharSet() const;  
 ```  
   
 ### Return Value  
@@ -212,9 +208,7 @@ BYTE GetCharSet() const;
  Returns which font types to display in the combo box. Valid options are DEVICE_FONTTYPE, RASTER_FONTTYPE, and TRUETYPE_FONTTYPE, or any bitwise combination thereof.  
   
 ```  
-int GetFontType() const;
-
- 
+int GetFontType() const;  
 ```  
   
 ### Return Value  
@@ -226,9 +220,7 @@ int GetFontType() const;
  Returns the pitch and the family of the fonts that are displayed in the combo box.  
   
 ```  
-BYTE GetPitchAndFamily() const;
-
- 
+BYTE GetPitchAndFamily() const;  
 ```  
   
 ### Return Value  

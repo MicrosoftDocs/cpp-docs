@@ -110,9 +110,7 @@ CMFCRibbonProgressBar(
  Returns the current position of the progress bar.  
   
 ```  
-int GetPos () const;
-
- 
+int GetPos () const;  
 ```  
   
 ### Return Value  
@@ -125,9 +123,7 @@ int GetPos () const;
  Returns the progress bar's current maximum value.  
   
 ```  
-int GetRangeMax() const;
-
- 
+int GetRangeMax() const;  
 ```  
   
 ### Return Value  
@@ -139,9 +135,7 @@ int GetRangeMax() const;
  Returns the progress bar's current minimum range value.  
   
 ```  
-int GetRangeMin() const;
-
- 
+int GetRangeMin() const;  
 ```  
   
 ### Return Value  
@@ -165,9 +159,7 @@ virtual CSize GetRegularSize(CDC* pDC);
  Specifies whether the progress bar is working in infinite mode.  
   
 ```  
-BOOL IsInfiniteMode() const;
-
- 
+BOOL IsInfiniteMode() const;  
 ```  
   
 ### Return Value  

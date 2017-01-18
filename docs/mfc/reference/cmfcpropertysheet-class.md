@@ -246,9 +246,7 @@ void EnablePageHeader(int nHeaderHeight);
  Retrieves the height of the current header.  
   
 ```  
-int GetHeaderHeight() const;
-
- 
+int GetHeaderHeight() const;  
 ```  
   
 ### Return Value  
@@ -261,9 +259,7 @@ int GetHeaderHeight() const;
  Retrieves an enumeration value that specifies the appearance of the current property sheet.  
   
 ```  
-PropSheetLook GetLook() const;
-
- 
+PropSheetLook GetLook() const;  
 ```  
   
 ### Return Value  
@@ -273,9 +269,7 @@ PropSheetLook GetLook() const;
  Gets the width of the navigation bar.  
   
 ```  
-int GetNavBarWidth() const;
-
- 
+int GetNavBarWidth() const;  
 ```  
   
 ### Return Value  
@@ -285,9 +279,7 @@ int GetNavBarWidth() const;
  Retrieves the internal tab control object that supports the current property sheet control.  
   
 ```  
-CMFCTabCtrl& GetTab() const;
-
- 
+CMFCTabCtrl& GetTab() const;  
 ```  
   
 ### Return Value  
@@ -383,9 +375,7 @@ void RemoveCategory(CMFCPropertySheetCategoryInfo* pCategory);
   
 ```  
 void RemovePage(CPropertyPage* pPage);
-
-void RemovePage(int nPage);
-```  
+void RemovePage(int nPage);```  
   
 ### Parameters  
  [in] `pPage`  
@@ -404,13 +394,8 @@ void RemovePage(int nPage);
 BOOL SetIconsList(
     UINT uiImageListResID,  
     int cx,  
-    COLORREF clrTransparent=RGB(255,
-    0,
-    255));
-
-void SetIconsList(
-    HIMAGELIST hIcons);
-```  
+    COLORREF clrTransparent=RGB(255, 0, 255));
+void SetIconsList(HIMAGELIST hIcons);```  
   
 ### Parameters  
  [in] `uiImageListResID`  

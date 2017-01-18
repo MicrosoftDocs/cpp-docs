@@ -121,9 +121,7 @@ CInternetConnection(
  Call this member function to get the context ID for this session.  
   
 ```  
-DWORD_PTR GetContext() const;
-
- 
+DWORD_PTR GetContext() const;  
 ```  
   
 ### Return Value  
@@ -138,9 +136,7 @@ DWORD_PTR GetContext() const;
  Call this member function to get the name of the server associated with this Internet connection.  
   
 ```  
-CString GetServerName() const;
-
- 
+CString GetServerName() const;  
 ```  
   
 ### Return Value  
@@ -150,9 +146,7 @@ CString GetServerName() const;
  Call this member function to get a pointer to the `CInternetSession` object that's associated with this connection.  
   
 ```  
-CInternetSession* GetSession() const;
-
- 
+CInternetSession* GetSession() const;  
 ```  
   
 ### Return Value  
@@ -162,9 +156,7 @@ CInternetSession* GetSession() const;
  Use this operator to get the API-level handle for the current Internet session.  
   
 ```  
-operator HINTERNET() const;
-
- 
+operator HINTERNET() const;  
 ```  
   
 ## See Also  

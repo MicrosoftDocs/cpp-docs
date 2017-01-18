@@ -166,9 +166,7 @@ ID2D1Layer* Get();
  Returns the size of the render target in device-independent pixels  
   
 ```  
-CD2DSizeF GetSize() const;
-
- 
+CD2DSizeF GetSize() const;  
 ```  
   
 ### Return Value  
@@ -178,9 +176,7 @@ CD2DSizeF GetSize() const;
  Checks resource validity  
   
 ```  
-virtual BOOL IsValid() const;
-
- 
+virtual BOOL IsValid() const;  
 ```  
   
 ### Return Value  

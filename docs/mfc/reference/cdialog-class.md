@@ -141,9 +141,8 @@ explicit CDialog(
  
 explicit CDialog(
     UINT nIDTemplate,  
-    CWnd* pParentWnd = NULL);
-
- 
+    CWnd* pParentWnd = NULL);  
+  
 CDialog();
 ```  
   
@@ -297,9 +296,7 @@ void EndDialog(int nResult);
  Call the `GetDefID` member function to get the ID of the default pushbutton control for a dialog box.  
   
 ```  
-DWORD GetDefID() const;
-
- 
+DWORD GetDefID() const;  
 ```  
   
 ### Return Value  
@@ -365,9 +362,7 @@ BOOL InitModalIndirect(
  Call to convert the dialog-box units of a rectangle to screen units.  
   
 ```  
-void MapDialogRect(LPRECT lpRect) const;
-
- 
+void MapDialogRect(LPRECT lpRect) const;  
 ```  
   
 ### Parameters  
@@ -385,9 +380,7 @@ void MapDialogRect(LPRECT lpRect) const;
  Moves the focus to the next control in the dialog box.  
   
 ```  
-void NextDlgCtrl() const;
-
- 
+void NextDlgCtrl() const;  
 ```  
   
 ### Remarks  
@@ -475,9 +468,7 @@ Virtual void OnSetFont(CFont* pFont);
  Sets the focus to the previous control in the dialog box.  
   
 ```  
-void PrevDlgCtrl() const;
-
- 
+void PrevDlgCtrl() const;  
 ```  
   
 ### Remarks  

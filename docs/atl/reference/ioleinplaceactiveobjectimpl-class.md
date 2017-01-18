@@ -179,6 +179,6 @@ HRESULT TranslateAccelerator(LPMSG lpmsg);
  See [IOleInPlaceActiveObject::TranslateAccelerator](http://msdn.microsoft.com/library/windows/desktop/ms693360) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ## See Also  
- [CComControl Class](../../atl/reference/ccomcontrol-class.md)   
- [ActiveX Controls Interfaces](http://msdn.microsoft.com/library/windows/desktop/ms692724)   
+ [CComControl Class](../../atl/reference/ccomcontrol-class.md)  
+ [ActiveX Controls Interfaces](http://msdn.microsoft.com/library/windows/desktop/ms692724)  
  [Class Overview](../../atl/atl-class-overview.md)

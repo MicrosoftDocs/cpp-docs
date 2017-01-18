@@ -104,8 +104,8 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
  Called when a value of an animation variable has changed.  
   
 ```  
-IFACEMETHOD(
-    OnIntegerValueChanged) (__in IUIAnimationStoryboard* storyboard,
+IFACEMETHOD(OnIntegerValueChanged) (
+    __in IUIAnimationStoryboard* storyboard,
     __in IUIAnimationVariable* variable,
     __in INT32 newValue,
     __in INT32 previousValue);

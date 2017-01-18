@@ -195,9 +195,7 @@ virtual BOOL Create(
  Retrieves the width of the border of the current month calendar control.  
   
 ```  
-int GetCalendarBorder() const;
-
- 
+int GetCalendarBorder() const;  
 ```  
   
 ### Return Value  
@@ -210,9 +208,7 @@ int GetCalendarBorder() const;
  Retrieves the number of calendars displayed in the current month calendar control.  
   
 ```  
-int GetCalendarCount() const;
-
- 
+int GetCalendarCount() const;  
 ```  
   
 ### Return Value  
@@ -225,9 +221,7 @@ int GetCalendarCount() const;
  Retrieves information about the current month calendar control.  
   
 ```  
-BOOL GetCalendarGridInfo(PMCGRIDINFO pmcGridInfo) const;
-
- 
+BOOL GetCalendarGridInfo(PMCGRIDINFO pmcGridInfo) const;  
 ```  
   
 ### Parameters  
@@ -256,9 +250,7 @@ BOOL GetCalendarGridInfo(PMCGRIDINFO pmcGridInfo) const;
  Retrieves the calendar identifier for the current month calendar control.  
   
 ```  
-CALID GetCalID() const;
-
- 
+CALID GetCalID() const;  
 ```  
   
 ### Return Value  
@@ -273,9 +265,7 @@ CALID GetCalID() const;
  Retrieves the color of an area of the month calendar control specified by `nRegion`.  
   
 ```  
-COLORREF GetColor(int nRegion) const;
-
- 
+COLORREF GetColor(int nRegion) const;  
 ```  
   
 ### Parameters  
@@ -289,9 +279,7 @@ COLORREF GetColor(int nRegion) const;
  Retrieves the view that is currently displayed by the current month calendar control.  
   
 ```  
-DWORD GetCurrentView() const;
-
- 
+DWORD GetCurrentView() const;  
 ```  
   
 ### Return Value  
@@ -321,17 +309,8 @@ DWORD GetCurrentView() const;
  Retrieves the system time as indicated by the currently-selected date.  
   
 ```  
-BOOL GetCurSel(COleDateTime& refDateTime) const;
-
- 
- 
-BOOL GetCurSel(CTime& refDateTime) const;
-
- 
- 
-BOOL GetCurSel(LPSYSTEMTIME pDateTime) const;
-
- 
+BOOL GetCurSel(COleDateTime& refDateTime) const;  BOOL GetCurSel(CTime& refDateTime) const;  
+   BOOL GetCurSel(LPSYSTEMTIME pDateTime) const;  
 ```  
   
 ### Parameters  
@@ -356,9 +335,7 @@ BOOL GetCurSel(LPSYSTEMTIME pDateTime) const;
  Gets the first day of the week to be displayed in the leftmost column of the calendar.  
   
 ```  
-int GetFirstDayOfWeek(BOOL* pbLocal = NULL) const;
-
- 
+int GetFirstDayOfWeek(BOOL* pbLocal = NULL) const;  
 ```  
   
 ### Parameters  
@@ -388,9 +365,7 @@ int GetFirstDayOfWeek(BOOL* pbLocal = NULL) const;
  Retrieves the current maximum number of days that can be selected in a month calendar control.  
   
 ```  
-int GetMaxSelCount() const;
-
- 
+int GetMaxSelCount() const;  
 ```  
   
 ### Return Value  
@@ -406,9 +381,7 @@ int GetMaxSelCount() const;
  Retrieves the maximum width of the "Today" string for the current month calendar control.  
   
 ```  
-DWORD GetMaxTodayWidth() const;
-
- 
+DWORD GetMaxTodayWidth() const;  
 ```  
   
 ### Return Value  
@@ -433,9 +406,7 @@ DWORD GetMaxTodayWidth() const;
  Retrieves the minimum size required to show a full month in a month calendar control.  
   
 ```  
-BOOL GetMinReqRect(RECT* pRect) const;
-
- 
+BOOL GetMinReqRect(RECT* pRect) const;  
 ```  
   
 ### Parameters  
@@ -452,9 +423,7 @@ BOOL GetMinReqRect(RECT* pRect) const;
  Retrieves the scroll rate for a month calendar control.  
   
 ```  
-int GetMonthDelta() const;
-
- 
+int GetMonthDelta() const;  
 ```  
   
 ### Return Value  
@@ -470,23 +439,17 @@ int GetMonthDelta() const;
 int GetMonthRange(
     COleDateTime& refMinRange,  
     COleDateTime& refMaxRange,  
-    DWORD dwFlags) const;
-
- 
- 
+    DWORD dwFlags) const;  
+  
 int GetMonthRange(
     CTime& refMinRange,  
     CTime& refMaxRange,  
-    DWORD dwFlags) const;
-
- 
- 
+    DWORD dwFlags) const;  
+  
 int GetMonthRange(
     LPSYSTEMTIME pMinRange,  
     LPSYSTEMTIME pMaxRange,  
-    DWORD dwFlags) const;
-
- 
+    DWORD dwFlags) const;  
 ```  
   
 ### Parameters  
@@ -525,21 +488,15 @@ int GetMonthRange(
 ```  
 DWORD GetRange(
     COleDateTime* pMinRange,  
-    COleDateTime* pMaxRange) const;
-
- 
- 
+    COleDateTime* pMaxRange) const;  
+  
 DWORD GetRange(
     CTime* pMinRange,  
-    CTime* pMaxRange) const;
-
- 
- 
+    CTime* pMaxRange) const;  
+  
 DWORD GetRange(
     LPSYSTEMTIME pMinRange,  
-    LPSYSTEMTIME pMaxRange) const;
-
- 
+    LPSYSTEMTIME pMaxRange) const;  
 ```  
   
 ### Parameters  
@@ -569,21 +526,15 @@ DWORD GetRange(
 ```  
 BOOL GetSelRange(
     COleDateTime& refMinRange,  
-    COleDateTime& refMaxRange) const;
-
- 
- 
+    COleDateTime& refMaxRange) const;  
+  
 BOOL GetSelRange(
     CTime& refMinRange,  
-    CTime& refMaxRange) const;
-
- 
- 
+    CTime& refMaxRange) const;  
+  
 BOOL GetSelRange(
     LPSYSTEMTIME pMinRange,  
-    LPSYSTEMTIME pMaxRange) const;
-
- 
+    LPSYSTEMTIME pMaxRange) const;  
 ```  
   
 ### Parameters  
@@ -611,17 +562,8 @@ BOOL GetSelRange(
  Retrieves the date information for the date specified as "today" for a month calendar control.  
   
 ```  
-BOOL GetToday(COleDateTime& refDateTime) const;
-
- 
- 
-BOOL GetToday(COleDateTime& refDateTime) const;
-
- 
- 
-BOOL GetToday(LPSYSTEMTIME pDateTime) const;
-
- 
+BOOL GetToday(COleDateTime& refDateTime) const;  BOOL GetToday(COleDateTime& refDateTime) const;  
+   BOOL GetToday(LPSYSTEMTIME pDateTime) const;  
 ```  
   
 ### Parameters  
@@ -661,9 +603,7 @@ DWORD HitTest(PMCHITTESTINFO pMCHitTest);
  Indicates whether the current view of the current month calendar control is the century view.  
   
 ```  
-BOOL IsCenturyView() const;
-
- 
+BOOL IsCenturyView() const;  
 ```  
   
 ### Return Value  
@@ -676,9 +616,7 @@ BOOL IsCenturyView() const;
  Indicates whether the current view of the current month calendar control is the decade view.  
   
 ```  
-BOOL IsDecadeView() const;
-
- 
+BOOL IsDecadeView() const;  
 ```  
   
 ### Return Value  
@@ -691,9 +629,7 @@ BOOL IsDecadeView() const;
  Indicates whether the current view of the current month calendar control is the month view.  
   
 ```  
-BOOL IsMonthView() const;
-
- 
+BOOL IsMonthView() const;  
 ```  
   
 ### Return Value  
@@ -706,9 +642,7 @@ BOOL IsMonthView() const;
  Indicates whether the current view of the current month calendar control is the year view.  
   
 ```  
-BOOL IsYearView() const;
-
- 
+BOOL IsYearView() const;  
 ```  
   
 ### Return Value  
@@ -858,13 +792,9 @@ BOOL SetCurrentView(DWORD dwNewView);
  Sets the currently selected date for a month calendar control.  
   
 ```  
-BOOL SetCurSel(const COleDateTime& refDateTime);
-
- 
-BOOL SetCurSel(const CTime& refDateTime);
-
- 
-BOOL SetCurSel(const LPSYSTEMTIME pDateTime);
+BOOL SetCurSel(const COleDateTime& refDateTime);  
+BOOL SetCurSel(const CTime& refDateTime);  
+  BOOL SetCurSel(const LPSYSTEMTIME pDateTime);
 ```  
   
 ### Parameters  
@@ -1077,13 +1007,9 @@ BOOL SetSelRange(
  Sets the calendar control for the current day.  
   
 ```  
-void SetToday(const COleDateTime& refDateTime);
-
- 
-void SetToday(const CTime* pDateTime);
-
- 
-void SetToday(const LPSYSTEMTIME pDateTime);
+void SetToday(const COleDateTime& refDateTime);  
+void SetToday(const CTime* pDateTime);  
+  void SetToday(const LPSYSTEMTIME pDateTime);
 ```  
   
 ### Parameters  

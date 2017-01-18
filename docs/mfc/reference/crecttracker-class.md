@@ -156,9 +156,7 @@ CRectTracker(
  Call this function to draw the rectangle's outer lines and inner region.  
   
 ```  
-void Draw(CDC* pDC) const;
-
- 
+void Draw(CDC* pDC) const;  
 ```  
   
 ### Parameters  
@@ -201,9 +199,7 @@ virtual void DrawTrackerRect(
  The framework calls this member function to retrieve the mask for a rectangle's resize handles.  
   
 ```  
-virtual UINT GetHandleMask() const;
-
- 
+virtual UINT GetHandleMask() const;  
 ```  
   
 ### Return Value  
@@ -224,9 +220,7 @@ virtual UINT GetHandleMask() const;
  Call this function to retrieve the coordinates of the rectangle.  
   
 ```  
-void GetTrueRect(LPRECT lpTrueRect) const;
-
- 
+void GetTrueRect(LPRECT lpTrueRect) const;  
 ```  
   
 ### Parameters  
@@ -240,9 +234,7 @@ void GetTrueRect(LPRECT lpTrueRect) const;
  Call this function to find out whether the user has grabbed a resize handle.  
   
 ```  
-int HitTest(CPoint point) const;
-
- 
+int HitTest(CPoint point) const;  
 ```  
   
 ### Parameters  
@@ -313,9 +305,7 @@ UINT m_nStyle;
  Call this function to convert a potentially inverted handle.  
   
 ```  
-int NormalizeHit(int nHandle) const;
-
- 
+int NormalizeHit(int nHandle) const;  
 ```  
   
 ### Parameters  
@@ -350,9 +340,7 @@ virtual void OnChangedRect(const CRect& rectOld);
 ```  
 BOOL SetCursor(
     CWnd* pWnd,  
-    UINT nHitTest) const;
-
- 
+    UINT nHitTest) const;  
 ```  
   
 ### Parameters  

@@ -91,7 +91,6 @@ class CMFCOutlookBar : public CBaseTabbedPane
     CMFCOutlookBarPane m_wndOutlookPane;  
  ... };  
  ```  
-  
 2.  When processing the `WM_CREATE` message in the main frame, call the [CMFCOutlookBar::Create](#create) method to create the Outlook bar tab control.  
   
  ```  
@@ -105,14 +104,12 @@ class CMFCOutlookBar : public CBaseTabbedPane
     WS_CHILD | WS_VISIBLE | CBRS_LEFT);
 
  ```  
-  
 3.  Obtain a pointer to the underlying `CMFCOutlookBarTabCtrl` by using [CBaseTabbedPane::GetUnderlyingWindow](../../mfc/reference/cbasetabbedpane-class.md#getunderlyingwindow).  
   
  ```  
     CMFCOutlookBarTabCtrl* pOutlookBar = (CMFCOutlookBarTabCtrl*) m_wndOutlookBar.GetUnderlyingWindow ();
 
  ```  
-  
 4.  Create a [CMFCOutlookBarPane Class](../../mfc/reference/cmfcoutlookbarpane-class.md) object for each tab that contains buttons.  
   
  ```  
@@ -130,7 +127,6 @@ class CMFCOutlookBar : public CBaseTabbedPane
     ID_FILE_OPEN);
 
  ```  
-  
 5.  Call [CMFCOutlookBarTabCtrl::AddTab](../../mfc/reference/cmfcbasetabctrl-class.md#addtab) to add each new tab. Set the `bDetachable` parameter to `FALSE` to make a page non-detachable. Or, use [CMFCOutlookBarTabCtrl::AddControl](../../mfc/reference/cmfcoutlookbartabctrl-class.md#addcontrol) to add detachable pages.  
   
  ```  
@@ -138,7 +134,6 @@ class CMFCOutlookBar : public CBaseTabbedPane
     TRUE);
 
  ```  
-  
 6.  To add a `CWnd`-derived control (for example, [CMFCShellTreeCtrl Class](../../mfc/reference/cmfcshelltreectrl-class.md)) as a tab, create the control and call [CMFCOutlookBarTabCtrl::AddTab](../../mfc/reference/cmfcbasetabctrl-class.md#addtab) to add it to the Outlook bar.  
   
 > [!NOTE]
@@ -175,9 +170,7 @@ class CMFCOutlookBar : public CBaseTabbedPane
  Specifies whether an empty tabbed pane can be destroyed.  
   
 ```  
-virtual BOOL AllowDestroyEmptyTabbedPane() const;
-
- 
+virtual BOOL AllowDestroyEmptyTabbedPane() const;  
 ```  
   
 ### Return Value  
@@ -190,9 +183,7 @@ virtual BOOL AllowDestroyEmptyTabbedPane() const;
  Determines whether another pane can be docked to the Outlook bar pane.  
   
 ```  
-virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
-
- 
+virtual BOOL CanAcceptPane(const CBasePane* pBar) const;  
 ```  
   
 ### Parameters  
@@ -213,9 +204,7 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
  Determines whether the caption for the tabbed pane displays the same text as the active tab.  
   
 ```  
-virtual BOOL CanSetCaptionTextToTabName() const;
-
- 
+virtual BOOL CanSetCaptionTextToTabName() const;  
 ```  
   
 ### Return Value  
@@ -312,9 +301,7 @@ CMFCOutlookBarPane* CreateCustomPage(
  Specifies whether a user can dock a pane at the outer edge of the Outlook bar.  
   
 ```  
-DECLARE_MESSAGE_MAP virtual BOOL DoesAllowDynInsertBefore() const;
-
- 
+DECLARE_MESSAGE_MAP virtual BOOL DoesAllowDynInsertBefore() const;  
 ```  
   
 ### Return Value  
@@ -362,9 +349,7 @@ virtual BOOL FloatTab(
  Returns the font of the text on the page button tabs of the Outlook bar.  
   
 ```  
-CFont* GetButtonsFont() const;
-
- 
+CFont* GetButtonsFont() const;  
 ```  
   
 ### Return Value  
@@ -379,9 +364,7 @@ CFont* GetButtonsFont() const;
 ```  
 virtual void GetTabArea(
     CRect& rectTabAreaTop,  
-    CRect& rectTabAreaBottom) const;
-
- 
+    CRect& rectTabAreaBottom) const;  
 ```  
   
 ### Parameters  
@@ -402,9 +385,7 @@ virtual void GetTabArea(
  Specifies whether the behavior of the Outlook bar mimics that of Microsoft Office Outlook 2003.  
   
 ```  
-BOOL IsMode2003() const;
-
- 
+BOOL IsMode2003() const;  
 ```  
   
 ### Return Value  

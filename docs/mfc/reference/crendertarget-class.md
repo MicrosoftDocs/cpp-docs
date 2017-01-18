@@ -195,10 +195,8 @@ static D2D1_COLOR_F COLORREF_TO_D2DCOLOR(
 ```  
 BOOL CreateCompatibleRenderTarget(
     CBitmapRenderTarget& bitmapTarget,  
-    CD2DSizeF sizeDesired = CD2DSizeF(0.,  
-    0.), 
-    CD2DSizeU sizePixelDesired = CD2DSizeU(0,  
-    0), 
+    CD2DSizeF sizeDesired = CD2DSizeF(0., 0.), 
+    CD2DSizeU sizePixelDesired = CD2DSizeU(0, 0), 
     D2D1_PIXEL_FORMAT* desiredFormat = NULL,  
     D2D1_COMPATIBLE_RENDER_TARGET_OPTIONS options = D2D1_COMPATIBLE_RENDER_TARGET_OPTIONS_NONE);
 ```  
@@ -627,9 +625,7 @@ void Flush(
  Retrieves the current antialiasing mode for nontext drawing operations.  
   
 ```  
-D2D1_ANTIALIAS_MODE GetAntialiasMode() const;
-
- 
+D2D1_ANTIALIAS_MODE GetAntialiasMode() const;  
 ```  
   
 ### Return Value  
@@ -639,9 +635,7 @@ D2D1_ANTIALIAS_MODE GetAntialiasMode() const;
  Returns the render target's dots per inch (DPI)  
   
 ```  
-CD2DSizeF GetDpi() const;
-
- 
+CD2DSizeF GetDpi() const;  
 ```  
   
 ### Return Value  
@@ -651,9 +645,7 @@ CD2DSizeF GetDpi() const;
  Gets the maximum size, in device-dependent units (pixels), of any one bitmap dimension supported by the render target  
   
 ```  
-UINT32 GetMaximumBitmapSize() const;
-
- 
+UINT32 GetMaximumBitmapSize() const;  
 ```  
   
 ### Return Value  
@@ -663,9 +655,7 @@ UINT32 GetMaximumBitmapSize() const;
  Retrieves the pixel format and alpha mode of the render target  
   
 ```  
-D2D1_PIXEL_FORMAT GetPixelFormat() const;
-
- 
+D2D1_PIXEL_FORMAT GetPixelFormat() const;  
 ```  
   
 ### Return Value  
@@ -675,9 +665,7 @@ D2D1_PIXEL_FORMAT GetPixelFormat() const;
  Returns the size of the render target in device pixels  
   
 ```  
-CD2DSizeU GetPixelSize() const;
-
- 
+CD2DSizeU GetPixelSize() const;  
 ```  
   
 ### Return Value  
@@ -697,9 +685,7 @@ ID2D1RenderTarget* GetRenderTarget();
  Returns the size of the render target in device-independent pixels  
   
 ```  
-CD2DSizeF GetSize() const;
-
- 
+CD2DSizeF GetSize() const;  
 ```  
   
 ### Return Value  
@@ -711,9 +697,7 @@ CD2DSizeF GetSize() const;
 ```  
 void GetTags(
     D2D1_TAG* tag1 = NULL,  
-    D2D1_TAG* tag2 = NULL) const;
-
- 
+    D2D1_TAG* tag2 = NULL) const;  
 ```  
   
 ### Parameters  
@@ -727,9 +711,7 @@ void GetTags(
  Gets the current antialiasing mode for text and glyph drawing operations.  
   
 ```  
-D2D1_TEXT_ANTIALIAS_MODE GetTextAntialiasMode() const;
-
- 
+D2D1_TEXT_ANTIALIAS_MODE GetTextAntialiasMode() const;  
 ```  
   
 ### Return Value  
@@ -761,9 +743,7 @@ void GetTransform(D2D1_MATRIX_3X2_F* transform);
  Indicates whether the render target supports the specified properties  
   
 ```  
-BOOL IsSupported(const D2D1_RENDER_TARGET_PROPERTIES& renderTargetProperties) const;
-
- 
+BOOL IsSupported(const D2D1_RENDER_TARGET_PROPERTIES& renderTargetProperties) const;  
 ```  
   
 ### Parameters  
@@ -777,9 +757,7 @@ BOOL IsSupported(const D2D1_RENDER_TARGET_PROPERTIES& renderTargetProperties) co
  Checks resource validity  
   
 ```  
-BOOL IsValid() const;
-
- 
+BOOL IsValid() const;  
 ```  
   
 ### Return Value  
@@ -877,9 +855,7 @@ void RestoreDrawingState(ID2D1DrawingStateBlock& drawingStateBlock);
  Saves the current drawing state to the specified ID2D1DrawingStateBlock.  
   
 ```  
-void SaveDrawingState(ID2D1DrawingStateBlock& drawingStateBlock) const;
-
- 
+void SaveDrawingState(ID2D1DrawingStateBlock& drawingStateBlock) const;  
 ```  
   
 ### Parameters  
@@ -950,9 +926,7 @@ void SetTextRenderingParams(IDWriteRenderingParams* textRenderingParams = NULL);
  Applies the specified transform to the render target, replacing the existing transformation. All subsequent drawing operations occur in the transformed space.  
   
 ```  
-void SetTransform(const D2D1_MATRIX_3X2_F* transform);
-
- 
+void SetTransform(const D2D1_MATRIX_3X2_F* transform);  
 void SetTransform(const D2D1_MATRIX_3X2_F& transform);
 ```  
   

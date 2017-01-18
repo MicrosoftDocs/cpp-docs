@@ -349,9 +349,7 @@ int GetLogPen(LOGPEN* pLogPen);
  Gets the attached Windows GDI handle of the `CPen` object.  
   
 ```  
-operator HPEN() const;
-
- 
+operator HPEN() const;  
 ```  
   
 ### Return Value  

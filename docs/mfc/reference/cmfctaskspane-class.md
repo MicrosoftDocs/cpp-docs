@@ -398,8 +398,7 @@ CMFCTasksPane();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-void CollapseAllGroups(
-    BOOL bCollapse = TRUE);
+void CollapseAllGroups(BOOL bCollapse = TRUE);
 
  
 void CollapseAllGroups(
@@ -461,9 +460,7 @@ virtual CPaneFrameWnd* CreateDefaultMiniframe(CRect rectInitial);
  Creates a menu that appears when a user clicks the **Other Tasks Panes** menu button.  
   
 ```  
-HMENU CreateMenu() const;
-
- 
+HMENU CreateMenu() const;  
 ```  
   
 ### Return Value  
@@ -607,9 +604,7 @@ void EnableWrapTasks(BOOL bEnable = TRUE);
  Returns the zero-based index for the active page.  
   
 ```  
-int GetActivePage() const;
-
- 
+int GetActivePage() const;  
 ```  
   
 ### Return Value  
@@ -619,9 +614,7 @@ int GetActivePage() const;
  Returns the height of the group caption.  
   
 ```  
-int GetGroupCaptionHeight() const;
-
- 
+int GetGroupCaptionHeight() const;  
 ```  
   
 ### Return Value  
@@ -631,9 +624,7 @@ int GetGroupCaptionHeight() const;
  Returns the horizontal offset of a group caption.  
   
 ```  
-int GetGroupCaptionHorzOffset() const;
-
- 
+int GetGroupCaptionHorzOffset() const;  
 ```  
   
 ### Return Value  
@@ -643,9 +634,7 @@ int GetGroupCaptionHorzOffset() const;
  Returns the vertical offset of a group caption.  
   
 ```  
-int GetGroupCaptionVertOffset() const;
-
- 
+int GetGroupCaptionVertOffset() const;  
 ```  
   
 ### Return Value  
@@ -658,9 +647,7 @@ int GetGroupCaptionVertOffset() const;
  Returns the total number of groups.  
   
 ```  
-int GetGroupCount() const;
-
- 
+int GetGroupCount() const;  
 ```  
   
 ### Return Value  
@@ -672,9 +659,7 @@ int GetGroupCount() const;
 ```  
 BOOL GetGroupLocation(
     CMFCTasksPaneTaskGroup* pGroup,  
-    int& nGroup) const;
-
- 
+    int& nGroup) const;  
 ```  
   
 ### Parameters  
@@ -691,9 +676,7 @@ BOOL GetGroupLocation(
  Returns the vertical offset of a group.  
   
 ```  
-int GetGroupVertOffset() const;
-
- 
+int GetGroupVertOffset() const;  
 ```  
   
 ### Return Value  
@@ -703,9 +686,7 @@ int GetGroupVertOffset() const;
  Returns the horizontal spacing between a task pane and the edge of the client area.  
   
 ```  
-int GetHorzMargin() const;
-
- 
+int GetHorzMargin() const;  
 ```  
   
 ### Return Value  
@@ -718,9 +699,7 @@ int GetHorzMargin() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-void GetNextPages(CStringList& lstNextPages) const;
-
- 
+void GetNextPages(CStringList& lstNextPages) const;  
 ```  
   
 ### Parameters  
@@ -734,9 +713,7 @@ void GetNextPages(CStringList& lstNextPages) const;
 ```  
 BOOL GetPageByGroup(
     int nGroup,  
-    int& nPage) const;
-
- 
+    int& nPage) const;  
 ```  
   
 ### Parameters  
@@ -753,9 +730,7 @@ BOOL GetPageByGroup(
  Returns the number of pages.  
   
 ```  
-int GetPagesCount() const;
-
- 
+int GetPagesCount() const;  
 ```  
   
 ### Return Value  
@@ -765,9 +740,7 @@ int GetPagesCount() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-void GetPreviousPages(CStringList& lstPrevPages) const;
-
- 
+void GetPreviousPages(CStringList& lstPrevPages) const;  
 ```  
   
 ### Parameters  
@@ -779,9 +752,7 @@ void GetPreviousPages(CStringList& lstPrevPages) const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual CScrollBar* GetScrollBarCtrl(int nBar) const;
-
- 
+virtual CScrollBar* GetScrollBarCtrl(int nBar) const;  
 ```  
   
 ### Parameters  
@@ -797,9 +768,7 @@ virtual CScrollBar* GetScrollBarCtrl(int nBar) const;
 ```  
 CMFCTasksPaneTask* GetTask(
     int nGroup,  
-    int nTask) const;
-
- 
+    int nTask) const;  
 ```  
   
 ### Parameters  
@@ -816,9 +785,7 @@ CMFCTasksPaneTask* GetTask(
  Returns the number of tasks in a specified group.  
   
 ```  
-int GetTaskCount(int nGroup) const;
-
- 
+int GetTaskCount(int nGroup) const;  
 ```  
   
 ### Parameters  
@@ -832,9 +799,7 @@ int GetTaskCount(int nGroup) const;
  Returns a task group for a specified group index.  
   
 ```  
-CMFCTasksPaneTaskGroup* GetTaskGroup(int nGroup) const;
-
- 
+CMFCTasksPaneTaskGroup* GetTaskGroup(int nGroup) const;  
 ```  
   
 ### Parameters  
@@ -851,21 +816,17 @@ CMFCTasksPaneTaskGroup* GetTaskGroup(int nGroup) const;
 BOOL GetTaskLocation(
     UINT uiCommandID,  
     int& nGroup,  
-    int& nTask) const;
-
- 
+    int& nTask) const;  
+  
 BOOL GetTaskLocation(
     HWND hwndTask,  
     int& nGroup,  
-    int& nTask) const;
-
- 
+    int& nTask) const;  
+  
 BOOL GetTaskLocation(
     CMFCTasksPaneTask* pTask,  
     int& nGroup,  
-    int& nTask) const;
-
- 
+    int& nTask) const;  
 ```  
   
 ### Parameters  
@@ -894,9 +855,7 @@ BOOL GetTaskLocation(
  Returns the horizontal offset of tasks.  
   
 ```  
-int GetTasksHorzOffset() const;
-
- 
+int GetTasksHorzOffset() const;  
 ```  
   
 ### Return Value  
@@ -909,9 +868,7 @@ int GetTasksHorzOffset() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetTasksIconHorzOffset() const;
-
- 
+int GetTasksIconHorzOffset() const;  
 ```  
   
 ### Return Value  
@@ -922,9 +879,7 @@ int GetTasksIconHorzOffset() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetTasksIconVertOffset() const;
-
- 
+int GetTasksIconVertOffset() const;  
 ```  
   
 ### Return Value  
@@ -935,9 +890,7 @@ int GetTasksIconVertOffset() const;
  Returns the vertical margin between a task pane and the edges of the client area.  
   
 ```  
-int GetVertMargin() const;
-
- 
+int GetVertMargin() const;  
 ```  
   
 ### Return Value  
@@ -961,9 +914,7 @@ virtual BOOL IsAccessibilityCompatible();
  Indicates whether animation is enabled.  
   
 ```  
-BOOL IsAnimationEnabled() const;
-
- 
+BOOL IsAnimationEnabled() const;  
 ```  
   
 ### Return Value  
@@ -976,9 +927,7 @@ BOOL IsAnimationEnabled() const;
  Indicates whether the back button is enabled.  
   
 ```  
-BOOL IsBackButtonEnabled() const;
-
- 
+BOOL IsBackButtonEnabled() const;  
 ```  
   
 ### Return Value  
@@ -991,9 +940,7 @@ BOOL IsBackButtonEnabled() const;
  Indicates whether the forward button is enabled.  
   
 ```  
-BOOL IsForwardButtonEnabled() const;
-
- 
+BOOL IsForwardButtonEnabled() const;  
 ```  
   
 ### Return Value  
@@ -1006,9 +953,7 @@ BOOL IsForwardButtonEnabled() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsGroupCollapseEnabled() const;
-
- 
+BOOL IsGroupCollapseEnabled() const;  
 ```  
   
 ### Return Value  
@@ -1019,9 +964,7 @@ BOOL IsGroupCollapseEnabled() const;
  Indicates whether the **Next** and **Previous** navigation buttons have drop-down menus.  
   
 ```  
-BOOL IsHistoryMenuButtonsEnabled() const;
-
- 
+BOOL IsHistoryMenuButtonsEnabled() const;  
 ```  
   
 ### Return Value  
@@ -1031,9 +974,7 @@ BOOL IsHistoryMenuButtonsEnabled() const;
  Indicates whether the navigation toolbar is enabled.  
   
 ```  
-BOOL IsNavigationToolbarEnabled() const;
-
- 
+BOOL IsNavigationToolbarEnabled() const;  
 ```  
   
 ### Return Value  
@@ -1043,9 +984,7 @@ BOOL IsNavigationToolbarEnabled() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsToolBox() const;
-
- 
+virtual BOOL IsToolBox() const;  
 ```  
   
 ### Return Value  
@@ -1056,9 +995,7 @@ virtual BOOL IsToolBox() const;
  Indicates whether the task pane wraps words in labels.  
   
 ```  
-BOOL IsWrapLabelsEnabled() const;
-
- 
+BOOL IsWrapLabelsEnabled() const;  
 ```  
   
 ### Return Value  
@@ -1068,9 +1005,7 @@ BOOL IsWrapLabelsEnabled() const;
  Specifies whether the framework wraps the task string.  
   
 ```  
-BOOL IsWrapTasksEnabled() const;
-
- 
+BOOL IsWrapTasksEnabled() const;  
 ```  
   
 ### Return Value  
@@ -1518,13 +1453,9 @@ void SetHorzMargin(int n = -1);
 BOOL SetIconsList(
     UINT uiImageListResID,  
     int cx,  
-    COLORREF clrTransparent = RGB(255,
-    0,
-    255));
-
- 
-void SetIconsList(
-    HIMAGELIST hIcons);
+    COLORREF clrTransparent = RGB(255, 0, 255));  
+  
+void SetIconsList(HIMAGELIST hIcons);
 ```  
   
 ### Parameters  
@@ -1609,7 +1540,7 @@ void SetTasksHorzOffset(int n = -1);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-void SetTasksIconHorzOffset(it n = -1);
+void SetTasksIconHorzOffset(int n = -1);
 ```  
   
 ### Parameters  
@@ -1621,7 +1552,7 @@ void SetTasksIconHorzOffset(it n = -1);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-void SetTasksIconVertOffset(it n = -1);
+void SetTasksIconVertOffset(int n = -1);
 ```  
   
 ### Parameters  

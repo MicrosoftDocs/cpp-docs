@@ -137,9 +137,7 @@ CMFCAutoHideButton* AddAutoHideWindow(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL AllowShowOnPaneMenu() const;
-
- 
+virtual BOOL AllowShowOnPaneMenu() const;  
 ```  
   
 ### Return Value  
@@ -251,8 +249,7 @@ virtual BOOL OnShowControlBarMenu(CPoint);
  Removes and destroys the auto-hide window.  
   
 ```  
-    BOOL RemoveAutoHideWindow(
-		    CDockablePane* pAutoHideWnd);
+    BOOL RemoveAutoHideWindow(CDockablePane* pAutoHideWnd);
 ```  
   
 ### Parameters  
@@ -268,10 +265,7 @@ virtual BOOL OnShowControlBarMenu(CPoint);
  Flags an auto-hide bar as active.  
   
 ```  
-virtual void SetActiveInGroup(
-		    BOOL bActive);
-
- 
+virtual void SetActiveInGroup(BOOL bActive);  
 ```  
   
 ### Parameters  
@@ -300,9 +294,7 @@ void SetRecentVisibleState(BOOL bState);
 BOOL ShowAutoHideWindow(
 		CDockablePane* pAutoHideWnd,  
 		BOOL bShow,  
-		BOOL bDelay);
-
- 
+		BOOL bDelay);  
 ```  
   
 ### Parameters  

@@ -158,11 +158,9 @@ BOOL AddTask(
     LPCTSTR strCommandLineArgs,  
     LPCTSTR strTitle,  
     LPCTSTR strIconLocation,  
-    int iIconIndex);
-
- 
-BOOL AddTask(
-    IShellLink* pShellLink);
+    int iIconIndex);  
+  
+BOOL AddTask(IShellLink* pShellLink);
 ```  
   
 ### Parameters  
@@ -274,9 +272,7 @@ ICustomDestinationList* GetDestinationList();
  Retrieves the maximum number of items, including category headers that can display in the calling application's destination menu.  
   
 ```  
-UINT GetMaxSlots() const;
-
- 
+UINT GetMaxSlots() const;  
 ```  
   
 ### Return Value  

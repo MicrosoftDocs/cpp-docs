@@ -108,8 +108,8 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
  Gets the interpolator's dependencies.  
   
 ```  
-IFACEMETHOD(
-    GetDependencies)(__out UI_ANIMATION_DEPENDENCIES* initialValueDependencies,
+IFACEMETHOD(GetDependencies)(
+    __out UI_ANIMATION_DEPENDENCIES* initialValueDependencies,
     __out UI_ANIMATION_DEPENDENCIES* initialVelocityDependencies,
     __out UI_ANIMATION_DEPENDENCIES* durationDependencies);
 ```  
@@ -159,8 +159,9 @@ IFACEMETHOD(GetFinalValue)(__out DOUBLE* value);
  Interpolates the value at a given offset  
   
 ```  
-IFACEMETHOD(
-    InterpolateValue)(__in UI_ANIMATION_SECONDS offset, __out DOUBLE* value);
+IFACEMETHOD(InterpolateValue)(
+  __in UI_ANIMATION_SECONDS offset, 
+  __out DOUBLE* value);
 ```  
   
 ### Parameters  
@@ -177,8 +178,9 @@ IFACEMETHOD(
  Interpolates the velocity at a given offset  
   
 ```  
-IFACEMETHOD(
-    InterpolateVelocity)(__in UI_ANIMATION_SECONDS offset, __out DOUBLE* velocity);
+IFACEMETHOD(InterpolateVelocity)(
+  __in UI_ANIMATION_SECONDS offset,
+  __out DOUBLE* velocity);
 ```  
   
 ### Parameters  
@@ -220,8 +222,9 @@ IFACEMETHOD(SetDuration)(__in UI_ANIMATION_SECONDS duration);
  Sets the interpolator's initial value and velocity.  
   
 ```  
-IFACEMETHOD(
-    SetInitialValueAndVelocity)(__in DOUBLE initialValue, __in DOUBLE initialVelocity);
+IFACEMETHOD(SetInitialValueAndVelocity)(
+  __in DOUBLE initialValue, 
+  __in DOUBLE initialVelocity);
 ```  
   
 ### Parameters  

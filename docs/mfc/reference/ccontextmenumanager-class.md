@@ -133,9 +133,7 @@ CContextMenuManager();
  Returns a handle to the menu associated with a given resource ID.  
   
 ```  
-HMENU GetMenuById(UINT nMenuResId) const;
-
- 
+HMENU GetMenuById(UINT nMenuResId) const;  
 ```  
   
 ### Parameters  
@@ -151,9 +149,7 @@ HMENU GetMenuById(UINT nMenuResId) const;
 ```  
 HMENU GetMenuByName(
     LPCTSTR lpszName,  
-    UINT* puiOrigResID = NULL) const;
-
- 
+    UINT* puiOrigResID = NULL) const;  
 ```  
   
 ### Parameters  
@@ -173,9 +169,7 @@ HMENU GetMenuByName(
  Returns the list of menu names added to the [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md).  
   
 ```  
-void GetMenuNames(CStringList& listOfNames) const;
-
- 
+void GetMenuNames(CStringList& listOfNames) const;  
 ```  
   
 ### Parameters  

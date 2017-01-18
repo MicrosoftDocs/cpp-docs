@@ -103,14 +103,10 @@ if (!pTabbededBar->Create (_T(""),
 }  
  
 pTabbededBar->AddTab (&m_wndClassView);
-
 pTabbededBar->AddTab (&m_wndResourceView);
-
-pTabbededBar->AddTab (&m_wndFileView);
-
+pTabbededBar->AddTab (&m_wndFileView);
 pTabbededBar->EnableDocking(CBRS_ALIGN_ANY);
-
-DockPane(pTabbededBar);
+DockPane(pTabbededBar);
 ```  
   
 ## Example  
@@ -218,9 +214,7 @@ virtual BOOL FloatTab(
 ```  
 virtual void GetTabArea(
     CRect& rectTabAreaTop,  
-    CRect& rectTabAreaBottom) const;
-
- 
+    CRect& rectTabAreaBottom) const;  
 ```  
   
 ### Parameters  
@@ -239,9 +233,7 @@ virtual void GetTabArea(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-CMFCTabCtrl* GetTabWnd() const;
-
- 
+CMFCTabCtrl* GetTabWnd() const;  
 ```  
   
 ### Return Value  
@@ -252,9 +244,7 @@ CMFCTabCtrl* GetTabWnd() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL HasAutoHideMode() const;
-
- 
+virtual BOOL HasAutoHideMode() const;  
 ```  
   
 ### Return Value  
@@ -265,9 +255,7 @@ virtual BOOL HasAutoHideMode() const;
  Determines whether the tabs are located at the bottom of the window.  
   
 ```  
-virtual BOOL IsTabLocationBottom() const;
-
- 
+virtual BOOL IsTabLocationBottom() const;  
 ```  
   
 ### Return Value  
@@ -313,8 +301,7 @@ static void ResetTabs();
  Sets a list of custom colors that are used when the auto color feature is enabled.  
   
 ```  
-static void SetTabAutoColors(
-    const CArray<COLORREF, COLORREF>& arColors);
+static void SetTabAutoColors(const CArray<COLORREF, COLORREF>& arColors);
 ```  
   
 ### Parameters  

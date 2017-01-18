@@ -154,7 +154,7 @@ void AddBackslash();
  Call this method to add a file extension to a path.  
   
 ```
-BOOL AddExtension(PCXSTR    pszExtension);
+BOOL AddExtension(PCXSTR pszExtension);
 ```  
   
 ### Parameters  
@@ -171,7 +171,7 @@ BOOL AddExtension(PCXSTR    pszExtension);
  Call this method to append a string to the current path.  
   
 ```
-BOOL Append(PCXSTR    pszMore);
+BOOL Append(PCXSTR pszMore);
 ```  
   
 ### Parameters  
@@ -188,7 +188,7 @@ BOOL Append(PCXSTR    pszMore);
  Call this method to create a root path from a given drive number.  
   
 ```
-void BuildRoot(int    iDrive);
+void BuildRoot(int iDrive);
 ```  
   
 ### Parameters  
@@ -212,10 +212,7 @@ void Canonicalize();
  Call this method to concatenate a string representing a directory name and a string representing a file path name into one path.  
   
 ```
-void Combine(
-    PCXSTR
-pszDir,
- PCXSTR   pszFile);
+void Combine(PCXSTR pszDir, PCXSTR  pszFile);
 ```  
   
 ### Parameters  
@@ -232,7 +229,7 @@ pszDir,
  Call this method to determine whether the specified path shares a common prefix with the current path.  
   
 ```
-CPathT<StringType> CommonPrefix(PCXSTR    pszOther);
+CPathT<StringType> CommonPrefix(PCXSTR pszOther);
 ```  
   
 ### Parameters  
@@ -249,10 +246,7 @@ CPathT<StringType> CommonPrefix(PCXSTR    pszOther);
  Call this method to truncate a file path to fit within a given pixel width by replacing path components with ellipses.  
   
 ```
-BOOL CompactPath(
-    HDC
-hDC,
- UINT nWidth);
+BOOL CompactPath(HDC hDC, UINT nWidth);
 ```  
   
 ### Parameters  
@@ -272,11 +266,7 @@ hDC,
  Call this method to truncate a file path to fit within a given number of characters by replacing path components with ellipses.  
   
 ```
-BOOL CompactPathEx(
-    UINT
-nMaxChars,
- DWORD
-dwFlags = 0);
+BOOL CompactPathEx(UINT nMaxChars, DWORD dwFlags = 0);
 ```  
   
 ### Parameters  
@@ -296,10 +286,8 @@ dwFlags = 0);
  The constructor.  
   
 ```
-CPathT(PCXSTR    pszPath);
-
+CPathT(PCXSTR pszPath);
 CPathT(const CPathT<StringType>& path);
-
 CPathT() throw();
 ```  
   
@@ -402,7 +390,7 @@ BOOL IsFileSpec() const;
  Call this method to determine whether a path contains a valid prefix of the type passed by `pszPrefix`.  
   
 ```
-BOOL IsPrefix(PCXSTR    pszPrefix) const;
+BOOL IsPrefix(PCXSTR pszPrefix) const;
 ```  
   
 ### Parameters  
@@ -445,7 +433,7 @@ BOOL IsRoot() const;
  Call this method to determine whether another path has a common root component with the current path.  
   
 ```
-BOOL IsSameRoot(PCXSTR    pszOther) const;
+BOOL IsSameRoot(PCXSTR pszOther) const;
 ```  
   
 ### Parameters  
@@ -524,7 +512,7 @@ BOOL MakePretty();
  Call this method to search the path for a string containing a wildcard match type.  
   
 ```
-BOOL MatchSpec(PCXSTR    pszSpec) const;
+BOOL MatchSpec(PCXSTR pszSpec) const;
 ```  
   
 ### Parameters  
@@ -541,7 +529,7 @@ BOOL MatchSpec(PCXSTR    pszSpec) const;
  This operator appends a string to the path.  
   
 ```
-CPathT<StringType>& operator+=(PCXSTR    pszMore);
+CPathT<StringType>& operator+=(PCXSTR pszMore);
 ```  
   
 ### Parameters  
@@ -555,7 +543,7 @@ CPathT<StringType>& operator+=(PCXSTR    pszMore);
  This operator allows the object to be treated like a string.  
   
 ```
-    operatorconst StringType&() const throw();
+ operatorconst StringType&() const throw();
 ```  
   
 ### Return Value  
@@ -565,7 +553,7 @@ CPathT<StringType>& operator+=(PCXSTR    pszMore);
  This operator allows the object to be treated like a string.  
   
 ```
-    operatorPCXSTR() const throw();
+ operatorPCXSTR() const throw();
 ```  
   
 ### Return Value  
@@ -575,7 +563,7 @@ CPathT<StringType>& operator+=(PCXSTR    pszMore);
  This operator allows the object to be treated like a string.  
   
 ```
-    operatorStringType&() throw();
+ operatorStringType&() throw();
 ```  
   
 ### Return Value  
@@ -616,13 +604,10 @@ void QuoteSpaces();
   
 ```
 BOOL RelativePathTo(
-    PCXSTR
-pszFrom,
- DWORD
-dwAttrFrom,
-    PCXSTR
-pszTo,
- DWORD   dwAttrTo);
+    PCXSTR pszFrom,
+    DWORD dwAttrFrom,
+    PCXSTR pszTo,
+    DWORD dwAttrTo);
 ```  
   
 ### Parameters  
@@ -701,7 +686,7 @@ BOOL RemoveFileSpec();
  Call this method to replace the file name extension in the path with a new extension. If the file name does not contain an extension, the extension will be attached to the end of the path.  
   
 ```
-BOOL RenameExtension(PCXSTR    pszExtension);
+BOOL RenameExtension(PCXSTR pszExtension);
 ```  
   
 ### Parameters  

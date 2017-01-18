@@ -195,17 +195,12 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
  Retrieves the status bar control's current widths of the horizontal and vertical borders and of the space between rectangles.  
   
 ```  
-BOOL GetBorders(
-    int* pBorders) const;
-
- 
- 
+BOOL GetBorders(int* pBorders) const;  
+  
 BOOL GetBorders(
     int& nHorz,  
     int& nVert,  
-    int& nSpacing) const;
-
- 
+    int& nSpacing) const;  
 ```  
   
 ### Parameters  
@@ -234,9 +229,7 @@ BOOL GetBorders(
  Retrieves the icon for a part (also known as a pane) in the current status bar control.  
   
 ```  
-HICON GetIcon(int iPart) const;
-
- 
+HICON GetIcon(int iPart) const;  
 ```  
   
 ### Parameters  
@@ -269,9 +262,7 @@ HICON GetIcon(int iPart) const;
 ```  
 int GetParts(
     int nParts,  
-    int* pParts) const;
-
- 
+    int* pParts) const;  
 ```  
   
 ### Parameters  
@@ -296,9 +287,7 @@ int GetParts(
 ```  
 BOOL GetRect(
     int nPane,  
-    LPRECT lpRect) const;
-
- 
+    LPRECT lpRect) const;  
 ```  
   
 ### Parameters  
@@ -320,16 +309,12 @@ BOOL GetRect(
 ```  
 CString GetText(
     int nPane,  
-    int* pType = NULL) const;
-
- 
- 
+    int* pType = NULL) const;  
+  
 int GetText(
     LPCTSTR lpszText,  
     int nPane,  
-    int* pType = NULL) const;
-
- 
+    int* pType = NULL) const;  
 ```  
   
 ### Parameters  
@@ -362,9 +347,7 @@ int GetText(
 ```  
 int GetTextLength(
     int nPane,  
-    int* pType = NULL) const;
-
- 
+    int* pType = NULL) const;  
 ```  
   
 ### Parameters  
@@ -392,9 +375,7 @@ int GetTextLength(
  Retrieves the tooltip text for a pane in a status bar.  
   
 ```  
-CString GetTipText(int nPane) const;
-
- 
+CString GetTipText(int nPane) const;  
 ```  
   
 ### Parameters  
@@ -414,9 +395,7 @@ CString GetTipText(int nPane) const;
  Checks a status window control to determine if it is in simple mode.  
   
 ```  
-BOOL IsSimple() const;
-
- 
+BOOL IsSimple() const;  
 ```  
   
 ### Return Value  

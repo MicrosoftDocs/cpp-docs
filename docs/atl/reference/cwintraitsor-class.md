@@ -46,8 +46,9 @@ This class provides a method for standardizing the styles used when creating a w
 ## Syntax  
   
 ```
-template <DWORD   t_dwStyle = 0,
-    DWORD t_dwExStyle = 0, class TWinTraits = CControlWinTraits>  
+template <DWORD t_dwStyle = 0,
+          DWORD t_dwExStyle = 0, 
+          class TWinTraits = CControlWinTraits>
 class CWinTraitsOR
 ```  
   
@@ -81,7 +82,7 @@ class CWinTraitsOR
  Call this function to retrieve a combination (using the logical OR operator) of the standard styles of the `CWinTraits` object and the default styles specified by `t_dwStyle`.  
   
 ```
-static DWORD GetWndStyle(DWORD   dwStyle);
+static DWORD GetWndStyle(DWORD dwStyle);
 ```  
   
 ### Parameters  
@@ -95,7 +96,7 @@ static DWORD GetWndStyle(DWORD   dwStyle);
  Call this function to retrieve a combination (using the logical OR operator) of the extended styles of the `CWinTraits` object and the default styles specified by `t_dwStyle`.  
   
 ```
-static DWORD GetWndExStyle(DWORD   dwExStyle);
+static DWORD GetWndExStyle(DWORD dwExStyle);
 ```  
   
 ### Parameters  
@@ -108,12 +109,4 @@ static DWORD GetWndExStyle(DWORD   dwExStyle);
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)   
  [Understanding Window Traits](../../atl/understanding-window-traits.md)
-
-
-
-
-
-
-
-
 

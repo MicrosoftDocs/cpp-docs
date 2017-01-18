@@ -470,7 +470,7 @@ void AFXAPI AfxThrowDaoException(
 void AfxThrowDBException(
     RETCODE nRetCode,  
     CDatabase* pdb,  
-    HSTMT hstmt); 
+    HSTMT hstmt);  
 ```  
   
 ### Parameters  

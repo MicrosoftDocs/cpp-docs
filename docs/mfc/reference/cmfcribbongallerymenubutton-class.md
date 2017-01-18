@@ -76,10 +76,8 @@ BOOL CMainFrame::OnShowPopupMenu (CMFCPopupMenu* pMenuPopup)
  {  
     CMFCToolBarButton* pExButton = 
     pMenuBar->GetButton(nBulletIndex);
-
- ASSERT_VALID (pExButton);
-
-    CMFCRibbonGalleryMenuButton paletteBullet (
+ASSERT_VALID (pExButton);
+    CMFCRibbonGalleryMenuButton paletteBullet (
     pExButton->m_nID, 
     pExButton->GetImage (),  
     pExButton->m_strText);
@@ -183,9 +181,7 @@ CMFCRibbonGallery& GetPalette();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL HasButton() const;
-
- 
+virtual BOOL HasButton() const;  
 ```  
   
 ### Return Value  
@@ -196,9 +192,7 @@ virtual BOOL HasButton() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsEmptyMenuAllowed() const;
-
- 
+virtual BOOL IsEmptyMenuAllowed() const;  
 ```  
   
 ### Return Value  

@@ -224,9 +224,7 @@ void CTaskDialog::AddRadioButton(
   
 ```  
 protected:  
-void ClickCommandControl(int nCommandControlID) const;
-
- 
+void ClickCommandControl(int nCommandControlID) const;  
 ```  
   
 ### Parameters  
@@ -241,9 +239,7 @@ void ClickCommandControl(int nCommandControlID) const;
   
 ```  
 protected:  
-void ClickRadioButton(int nRadioButtonID) const;
-
- 
+void ClickRadioButton(int nRadioButtonID) const;  
 ```  
   
 ### Parameters  
@@ -338,9 +334,7 @@ INT_PTR DoModal (HWND hParent = ::GetActiveWindow());
  Retrieves the number of common buttons.  
   
 ```  
-int GetCommonButtonCount() const;
-
- 
+int GetCommonButtonCount() const;  
 ```  
   
 ### Return Value  
@@ -355,9 +349,7 @@ int GetCommonButtonCount() const;
  Converts a standard Windows button to the common button type associated with the [CTaskDialog Class](../../mfc/reference/ctaskdialog-class.md).  
   
 ```  
-int GetCommonButtonFlag(int nButtonId) const;
-
- 
+int GetCommonButtonFlag(int nButtonId) const;  
 ```  
   
 ### Parameters  
@@ -385,9 +377,7 @@ int GetCommonButtonId(int nFlag);
  Returns the option flags for this `CTaskDialog`.  
   
 ```  
-int GetOptions() const;
-
- 
+int GetOptions() const;  
 ```  
   
 ### Return Value  
@@ -403,9 +393,7 @@ int GetOptions() const;
  Returns the selected command button control.  
   
 ```  
-int GetSelectedCommandControlID() const;
-
- 
+int GetSelectedCommandControlID() const;  
 ```  
   
 ### Return Value  
@@ -421,9 +409,7 @@ int GetSelectedCommandControlID() const;
  Returns the selected radio button.  
   
 ```  
-int GetSelectedRadioButtonID() const;
-
- 
+int GetSelectedRadioButtonID() const;  
 ```  
   
 ### Return Value  
@@ -439,9 +425,7 @@ int GetSelectedRadioButtonID() const;
  Retrieves the state of the verification check box.  
   
 ```  
-BOOL GetVerificationCheckboxState() const;
-
- 
+BOOL GetVerificationCheckboxState() const;  
 ```  
   
 ### Return Value  
@@ -454,9 +438,7 @@ BOOL GetVerificationCheckboxState() const;
  Determines whether a command button control or button is enabled.  
   
 ```  
-BOOL IsCommandControlEnabled(int nCommandControlID) const;
-
- 
+BOOL IsCommandControlEnabled(int nCommandControlID) const;  
 ```  
   
 ### Parameters  
@@ -478,9 +460,7 @@ BOOL IsCommandControlEnabled(int nCommandControlID) const;
  Determines whether a radio button is enabled.  
   
 ```  
-BOOL IsRadioButtonEnabled(int nRadioButtonID) const;
-
- 
+BOOL IsRadioButtonEnabled(int nRadioButtonID) const;  
 ```  
   
 ### Parameters  
@@ -565,9 +545,7 @@ void LoadRadioButtons(
   
 ```  
 protected:  
-void NavigateTo(CTaskDialog& oTaskDialog) const;
-
- 
+void NavigateTo(CTaskDialog& oTaskDialog) const;  
 ```  
   
 ### Parameters  
@@ -956,11 +934,8 @@ void SetExpansionArea(
  Updates the footer icon of the `CTaskDialog`.  
   
 ```  
-void SetFooterIcon(HICON hFooterIcon);
-
- 
-void SetFooterIcon(LPCWSTR lpszFooterIcon);
-```  
+void SetFooterIcon(HICON hFooterIcon);  
+void SetFooterIcon(LPCWSTR lpszFooterIcon);```  
   
 ### Parameters  
  [in] `hFooterIcon`  
@@ -1000,11 +975,8 @@ void SetFooterText(const CString& strFooterText);
  Updates the main icon of the `CTaskDialog`.  
   
 ```  
-void SetMainIcon(HICON hMainIcon);
-
- 
-void SetMainIcon(LPCWSTR lpszMainIcon);
-```  
+void SetMainIcon(HICON hMainIcon);  
+void SetMainIcon(LPCWSTR lpszMainIcon);```  
   
 ### Parameters  
  [in] `hMainIcon`  

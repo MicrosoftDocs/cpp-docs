@@ -275,11 +275,9 @@ void CreateRelation(
     LPCTSTR lpszForeignTable,  
     long lAttributes,  
     LPCTSTR lpszField,  
-    LPCTSTR lpszForeignField);
-
- 
-void CreateRelation(
-    CDaoRelationInfo& relinfo);
+    LPCTSTR lpszForeignField);  
+  
+void CreateRelation(CDaoRelationInfo& relinfo);
 ```  
   
 ### Parameters  
@@ -690,9 +688,7 @@ CString GetVersion();
  Call this member function to determine whether the `CDaoDatabase` object is currently open on a database.  
   
 ```  
-BOOL IsOpen() const;
-
- 
+BOOL IsOpen() const;  
 ```  
   
 ### Return Value  
@@ -722,8 +718,7 @@ virtual void Open(
     LPCTSTR lpszName,  
     BOOL bExclusive = FALSE,  
     BOOL bReadOnly = FALSE,  
-    LPCTSTR lpszConnect = _T(
- ""));
+    LPCTSTR lpszConnect = _T(""));
 ```  
   
 ### Parameters  

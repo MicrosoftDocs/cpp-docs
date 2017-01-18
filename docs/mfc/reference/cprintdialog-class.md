@@ -197,9 +197,7 @@ virtual INT_PTR DoModal();
  Retrieves the number of copies requested.  
   
 ```  
-int GetCopies() const;
-
- 
+int GetCopies() const;  
 ```  
   
 ### Return Value  
@@ -237,9 +235,7 @@ BOOL GetDefaults();
  Retrieves the name of the currently selected printer device.  
   
 ```  
-CString GetDeviceName() const;
-
- 
+CString GetDeviceName() const;  
 ```  
   
 ### Return Value  
@@ -257,9 +253,7 @@ CString GetDeviceName() const;
  Retrieves the `DEVMODE` structure.  
   
 ```  
-LPDEVMODE GetDevMode() const;
-
- 
+LPDEVMODE GetDevMode() const;  
 ```  
   
 ### Return Value  
@@ -275,9 +269,7 @@ LPDEVMODE GetDevMode() const;
  Retrieves the name of the currently selected printer driver.  
   
 ```  
-CString GetDriverName() const;
-
- 
+CString GetDriverName() const;  
 ```  
   
 ### Return Value  
@@ -293,9 +285,7 @@ CString GetDriverName() const;
  Retrieves the starting page of the print range.  
   
 ```  
-int GetFromPage() const;
-
- 
+int GetFromPage() const;  
 ```  
   
 ### Return Value  
@@ -311,9 +301,7 @@ int GetFromPage() const;
  Retrieves the name of the currently selected printer port.  
   
 ```  
-CString GetPortName() const;
-
- 
+CString GetPortName() const;  
 ```  
   
 ### Return Value  
@@ -329,9 +317,7 @@ CString GetPortName() const;
  Retrieves a handle to the printer device context.  
   
 ```  
-HDC GetPrinterDC() const;
-
- 
+HDC GetPrinterDC() const;  
 ```  
   
 ### Return Value  
@@ -347,9 +333,7 @@ HDC GetPrinterDC() const;
  Retrieves the ending page of the print range.  
   
 ```  
-int GetToPage() const;
-
- 
+int GetToPage() const;  
 ```  
   
 ### Return Value  
@@ -380,9 +364,7 @@ PRINTDLG& m_pd;
  Determines whether to print all pages of the document.  
   
 ```  
-BOOL PrintAll() const;
-
- 
+BOOL PrintAll() const;  
 ```  
   
 ### Return Value  
@@ -398,9 +380,7 @@ BOOL PrintAll() const;
  Determines whether collated copies are requested.  
   
 ```  
-BOOL PrintCollate() const;
-
- 
+BOOL PrintCollate() const;  
 ```  
   
 ### Return Value  
@@ -416,9 +396,7 @@ BOOL PrintCollate() const;
  Determines whether to print only a specified range of pages.  
   
 ```  
-BOOL PrintRange() const;
-
- 
+BOOL PrintRange() const;  
 ```  
   
 ### Return Value  
@@ -434,9 +412,7 @@ BOOL PrintRange() const;
  Determines whether to print only the currently selected items.  
   
 ```  
-BOOL PrintSelection() const;
-
- 
+BOOL PrintSelection() const;  
 ```  
   
 ### Return Value  

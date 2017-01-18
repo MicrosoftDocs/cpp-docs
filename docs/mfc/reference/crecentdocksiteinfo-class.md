@@ -146,8 +146,7 @@ CRect& GetRecentDockedRect(BOOL bForSlider);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-CList<HWND, HWND>& GetRecentListOfPanes(
-    BOOL bForSlider);
+CList<HWND, HWND>& GetRecentListOfPanes(BOOL bForSlider);
 ```  
   
 ### Parameters  

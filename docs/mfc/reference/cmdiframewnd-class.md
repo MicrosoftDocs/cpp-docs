@@ -239,11 +239,8 @@ void MDIActivate(CWnd* pWndActivate);
  Arranges all the MDI child windows in a cascade format.  
   
 ```  
-void MDICascade();
-
- 
-void MDICascade(int nType);
-```  
+void MDICascade();  
+void MDICascade(int nType);```  
   
 ### Parameters  
  `nType`  
@@ -259,9 +256,7 @@ void MDICascade(int nType);
  Retrieves the current active MDI child window, along with a flag indicating whether the child window is maximized.  
   
 ```  
-CMDIChildWnd* MDIGetActive(BOOL* pbMaximized = NULL) const;
-
- 
+CMDIChildWnd* MDIGetActive(BOOL* pbMaximized = NULL) const;  
 ```  
   
 ### Parameters  
@@ -380,11 +375,8 @@ CMenu* MDISetMenu(
  Arranges all child windows in a tiled format.  
   
 ```  
-void MDITile();
-
- 
-void MDITile(int nType);
-```  
+void MDITile();  
+void MDITile(int nType);```  
   
 ### Parameters  
  `nType`  

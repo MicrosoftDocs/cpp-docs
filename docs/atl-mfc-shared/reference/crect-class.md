@@ -82,8 +82,7 @@ class CRect : public tagRECT
 |[CRect::UnionRect](#unionrect)|Sets `CRect` equal to the union of two rectangles.|  
 |[CRect::Width](#width)|Calculates the width of `CRect`.|  
   
-### Public Operators  
-  
+### Public Operators    
 |Name|Description|  
 |----------|-----------------|  
 |[CRect::operator -](#operator_-)|Subtracts the given offsets from `CRect` or deflates `CRect` and returns the resulting `CRect`.|  
@@ -106,7 +105,7 @@ class CRect : public tagRECT
  A `CRect` object can be passed as a function parameter wherever a `RECT` structure, **LPCRECT**, or `LPRECT` can be passed.  
   
 > [!NOTE]
->  This class is derived from the **tagRECT** structure. (The name **tagRECT** is a less-commonly-used name for the `RECT` structure.) This means that the data members ( **left**, **top**, **right**, and **bottom**) of the `RECT` structure are accessible data members of `CRect`.  
+>  This class is derived from the **tagRECT** structure. (The name **tagRECT** is a less-commonly-used name for the `RECT` structure.) This means that the data members (**left**, **top**, **right**, and **bottom**) of the `RECT` structure are accessible data members of `CRect`.  
   
  A `CRect` contains member variables that define the top-left and bottom-right points of a rectangle.  
   
@@ -129,10 +128,8 @@ class CRect : public tagRECT
  The coordinates are returned as a reference to a [CPoint](cpoint-class.md) object that is contained in `CRect`.  
   
 ```  
- 
 CPoint& BottomRight() throw();
-
-const CPoint& BottomRight() const throw();  
+const CPoint& BottomRight() const throw();
 ```  
   
 ### Return Value  
@@ -158,13 +155,15 @@ const CPoint& BottomRight() const throw();
  CRect rect2(10, 10, 350, 350);
  CPoint ptLow(180, 180);
 
- rect2.BottomRight() = ptLow;
+   CRect rect2(10, 10, 350, 350);
+   CPoint ptLow(180, 180);
+rect2.BottomRight() = ptLow;
 
- // rect2 is now (10, 10, 180, 180)
- ASSERT(rect2 == CRect(10, 10, 180, 180));  
+   // rect2 is now (10, 10, 180, 180)
+   ASSERT(rect2 == CRect(10, 10, 180, 180));   
 ```
   
-##  <a name="centerpoint"></a>  CRect::CenterPOINT 
+##  <a name="centerpoint"></a>  CRect::CenterPoint 
  Calculates the centerpoint of `CRect` by adding the left and right values and dividing by two, and adding the top and bottom values and dividing by two.  
   
 ```  
@@ -304,7 +303,7 @@ CRect(POINT topLeft, POINT bottomRight) throw();
 ### Remarks  
  If no arguments are given, **left**, **top**, **right**, and **bottom** members are not initialized.  
   
- The `CRect`( **const RECT&**) and `CRect`( **LPCRECT**) constructors perform a [CopyRect](#copyrect). The other constructors initialize the member variables of the object directly.  
+ The `CRect`(**const RECT&**) and `CRect`(**LPCRECT**) constructors perform a [CopyRect](#copyrect). The other constructors initialize the member variables of the object directly.  
   
 ### Example  
 ```cpp  
@@ -385,26 +384,24 @@ void DeflateRect(int l, int t, int r, int b) throw();
  The first two overloads deflate both pairs of opposite sides of `CRect` so that its total width is decreased by two times *x* (or `cx`) and its total height is decreased by two times *y* (or `cy`). The other two overloads deflate each side of `CRect` independently of the others.  
   
 ### Example  
-```cpp  
- CRect rect(10, 10, 50, 50);
- rect.DeflateRect(1, 2);
-
- ASSERT(rect.left == 11 && rect.right == 49);
- ASSERT(rect.top == 12 && rect.bottom == 48);
-
- CRect rect2(10, 10, 50, 50);
- CRect rectDeflate(1, 2, 3, 4);
-
- rect2.DeflateRect(&rectDeflate);
- ASSERT(rect2.left == 11 && rect2.right == 47);
- ASSERT(rect2.top == 12 && rect2.bottom == 46);  
+```cpp
+   CRect rect(10, 10, 50, 50);
+   rect.DeflateRect(1, 2);
+   ASSERT(rect.left == 11 && rect.right == 49);
+   ASSERT(rect.top == 12 && rect.bottom == 48);
+   
+   CRect rect2(10, 10, 50, 50);
+   CRect rectDeflate(1, 2, 3, 4);
+   rect2.DeflateRect(&rectDeflate);
+   ASSERT(rect2.left == 11 && rect2.right == 47);
+   ASSERT(rect2.top == 12 && rect2.bottom == 46);   
 ```
   
 ##  <a name="equalrect"></a>  CRect::EqualRect  
  Determines whether `CRect` is equal to the given rectangle.  
   
 ```  
-BOOL EqualRect(LPCRECT lpRect) const throw();  
+BOOL EqualRect(LPCRECT lpRect) const throw();
 ```  
   
 ### Parameters  
@@ -418,14 +415,12 @@ BOOL EqualRect(LPCRECT lpRect) const throw();
 >  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
-```cpp  
- CRect rect1(35, 150, 10, 25);
- CRect rect2(35, 150, 10, 25);
- CRect rect3(98, 999,  6,  3);
-
- ASSERT(rect1.EqualRect(rect2));
- ASSERT(!rect1.EqualRect(rect3));
-
+```cpp
+   CRect rect1(35, 150, 10, 25);
+   CRect rect2(35, 150, 10, 25);
+   CRect rect3(98, 999, 6, 3);
+ASSERT(rect1.EqualRect(rect2));
+   ASSERT(!rect1.EqualRect(rect3));
  // works just fine against RECTs, as well
 
  RECT test;
@@ -458,8 +453,12 @@ int Height() const throw();
  CRect rect(20, 30, 80, 70);
  int nHt = rect.Height();
 
- // nHt is now 40
- ASSERT(nHt == 40);  
+```cpp
+   CRect rect(20, 30, 80, 70);
+int nHt = rect.Height();
+
+   // nHt is now 40
+   ASSERT(nHt == 40);   
 ```
 
   
@@ -470,7 +469,7 @@ int Height() const throw();
 void InflateRect(int x, int y) throw();
 void InflateRect(SIZE size) throw();
 void InflateRect(LPCRECT lpRect) throw();
-void InflateRect(int l, int t, int r, int b) throw();  
+void InflateRect(int l, int t, int r,  int b) throw();  
 ```  
   
 ### Parameters  
@@ -515,8 +514,8 @@ void InflateRect(int l, int t, int r, int b) throw();
 ##  <a name="intersectrect"></a>  CRect::IntersectRect  
  Makes a `CRect` equal to the intersection of two existing rectangles.  
   
-```   
- BOOL IntersectRect(LPCRECT lpRect1, LPCRECT lpRect2) throw();  
+```  
+BOOL IntersectRect(LPCRECT lpRect1, LPCRECT lpRect2) throw();  
 ```  
   
 ### Parameters  
@@ -541,9 +540,12 @@ void InflateRect(int l, int t, int r, int b) throw();
  CRect rectTwo(0, 75, 350,  95);
  CRect rectInter;
 
- rectInter.IntersectRect(rectOne, rectTwo);
- // rectInter is now (125, 75, 150, 95)
+```cpp
+   CRect rectOne(125,  0, 150, 200);
+   CRect rectTwo(0, 75, 350, 95);
+   CRect rectInter;
 
+   rectInter.IntersectRect(rectOne, rectTwo);
  ASSERT(rectInter == CRect(125, 75, 150, 95));
  // operator &= can do the same task:
 
@@ -573,11 +575,13 @@ BOOL IsRectEmpty() const throw();
  CRect rectNone(0, 0, 0, 0);
  CRect rectSome(35, 50, 135, 150);
 
- ASSERT(rectNone.IsRectEmpty());
- ASSERT(!rectSome.IsRectEmpty());
-
- CRect rectEmpty(35, 35, 35, 35);
- ASSERT(rectEmpty.IsRectEmpty());  
+```cpp
+   CRect rectNone(0, 0, 0, 0);
+   CRect rectSome(35, 50, 135, 150);
+ASSERT(rectNone.IsRectEmpty());
+   ASSERT(!rectSome.IsRectEmpty());
+CRect rectEmpty(35, 35, 35, 35);
+   ASSERT(rectEmpty.IsRectEmpty());   
 ```
 
   
@@ -599,9 +603,11 @@ BOOL IsRectNull() const throw();
  CRect rectNone(0, 0, 0, 0);
  CRect rectSome(35, 50, 135, 150);
 
- ASSERT(rectNone.IsRectNull());
- ASSERT(!rectSome.IsRectNull());
-
+```cpp
+   CRect rectNone(0, 0, 0, 0);
+   CRect rectSome(35, 50, 135, 150);
+ASSERT(rectNone.IsRectNull());
+   ASSERT(!rectSome.IsRectNull());
  // note that null means _all_ zeros
 
  CRect rectNotNull(0, 0, 35, 50);
@@ -611,7 +617,7 @@ BOOL IsRectNull() const throw();
 ##  <a name="movetox"></a>  CRect::MoveToX  
  Call this function to move the rectangle to the absolute x-coordinate specified by *x*.  
   
-```   
+```  
 void MoveToX(int x) throw();  
 ```  
   
@@ -624,8 +630,12 @@ void MoveToX(int x) throw();
  CRect rect(0, 0, 100, 100);
  rect.MoveToX(10);
 
- // rect is now (10, 0, 110, 100);
- ASSERT(rect == CRect(10, 0, 110, 100));  
+```cpp
+   CRect rect(0, 0, 100, 100);
+rect.MoveToX(10);
+
+   // rect is now (10, 0, 110, 100);
+   ASSERT(rect == CRect(10, 0, 110, 100));   
 ```
   
 ##  <a name="movetoxy"></a>  CRect::MoveToXY  
@@ -633,7 +643,7 @@ void MoveToX(int x) throw();
   
 ```  
 void MoveToXY(int x, int y) throw();
-void MoveToXY(POINT oint) throw(); 
+void MoveToXY(POINT point) throw();  
 ```  
   
 ### Parameters  
@@ -651,16 +661,19 @@ void MoveToXY(POINT oint) throw();
  CRect rect(0, 0, 100, 100);
  rect.MoveToXY(10, 10);
 
- // rect is now (10, 10, 110, 110);
- ASSERT(rect == CRect(10, 10, 110, 110));  
+```cpp
+   CRect rect(0, 0, 100, 100);
+   rect.MoveToXY(10, 10);
+// rect is now (10, 10, 110, 110);
+   ASSERT(rect == CRect(10, 10, 110, 110));   
 ```
 
   
 ##  <a name="movetoy"></a>  CRect::MoveToY  
  Call this function to move the rectangle to the absolute y-coordinate specified by *y*.  
   
-```   
-void MoveToY(int y) throw(); 
+```  
+void MoveToY(int y) throw();  
 ```  
   
 ### Parameters  
@@ -672,8 +685,11 @@ void MoveToY(int y) throw();
  CRect rect(0, 0, 100, 100);
  rect.MoveToY(10);
 
- // rect is now (0, 10, 100, 110);
- ASSERT(rect == CRect(0, 10, 100, 110));  
+```cpp
+   CRect rect(0, 0, 100, 100);
+   rect.MoveToY(10);
+// rect is now (0, 10, 100, 110);
+   ASSERT(rect == CRect(0, 10, 100, 110));   
 ```
 
   
@@ -695,19 +711,18 @@ void NormalizeRect() throw();
  CRect rect1(110, 100, 250, 310);
  CRect rect2(250, 310, 110, 100);
 
- rect1.NormalizeRect();
- rect2.NormalizeRect();
-
- // rect1 should be unchanged
- // rect2 becomes (110, 100, 250, 310)
-
+```cpp
+   CRect rect1(110, 100, 250, 310);
+   CRect rect2(250, 310, 110, 100);
+rect1.NormalizeRect();
+   rect2.NormalizeRect();
  ASSERT(rect1 == rect2);  
 ```
   
 ##  <a name="offsetrect"></a>  CRect::OffsetRect  
  Moves `CRect` by the specified offsets.  
   
-```   
+```  
 void OffsetRect(int x, int y) throw();
 void OffsetRect(POINT point) throw();
 void OffsetRect(SIZE size) throw();  
@@ -734,21 +749,26 @@ void OffsetRect(SIZE size) throw();
  CRect rect(0, 0, 35, 35);
  rect.OffsetRect(230, 230);
 
- // rect is now (230, 230, 265, 265)
- ASSERT(rect == CRect(230, 230, 265, 265));  
+```cpp
+   CRect rect(0, 0, 35, 35);
+   rect.OffsetRect(230, 230);
+
+   // rect is now (230, 230, 265, 265)
+   ASSERT(rect == CRect(230, 230, 265, 265));   
 ```
 
   
 ##  <a name="operator_lpcrect"></a>  CRect::operator LPCRECT Converts a `CRect` to an [LPCRECT](../../mfc/reference/data-types-mfc.md).  
 
   
-```
+```  
 operator LPCRECT() const throw();
 ```  
   
 ### Remarks  
- When you use this function, you don't need the address-of ( **&**) operator. This operator will be automatically used when you pass a `CRect` object to a function that expects an **LPCRECT**. 
- 
+ When you use this function, you don't need the address-of (**&**) operator. This operator will be automatically used when you pass a `CRect` object to a function that expects an **LPCRECT**.  
+  
+
 ##  <a name="operator_lprect"></a>  CRect::operator LPRECT  
  Converts a `CRect` to an [LPRECT](../../mfc/reference/data-types-mfc.md).  
 
@@ -758,7 +778,7 @@ operator LPRECT() throw();
 ```  
   
 ### Remarks  
- When you use this function, you don't need the address-of ( **&**) operator. This operator will be automatically used when you pass a `CRect` object to a function that expects an `LPRECT`.  
+ When you use this function, you don't need the address-of (**&**) operator. This operator will be automatically used when you pass a `CRect` object to a function that expects an `LPRECT`.  
   
 ### Example  
  See the example for [CRect::operator LPCRECT](#operator_lpcrect).  
@@ -767,7 +787,7 @@ operator LPRECT() throw();
  Assigns *srcRect* to `CRect`.  
   
 ```  
-void operator=(const RECT& srcRect) throw();  
+void operator=(const RECT& srcRect) throw();
 ```  
   
 ### Parameters  
@@ -779,16 +799,20 @@ void operator=(const RECT& srcRect) throw();
  CRect rect(0, 0, 127, 168);
  CRect rect2;
 
- rect2 = rect;
- ASSERT(rect2 == CRect(0, 0, 127, 168));  
+```cpp
+   CRect rect(0, 0, 127, 168);
+   CRect rect2;
+
+   rect2 = rect;
+   ASSERT(rect2 == CRect(0, 0, 127, 168));   
 ```
 
   
 ##  <a name="operator_eq_eq"></a>  CRect::operator ==  
  Determines whether `rect` is equal to `CRect` by comparing the coordinates of their upper-left and lower-right corners.  
   
-```   
-BOOL operator==(const RECT& rect) const throw();  
+```  
+BOOL operator==(const RECT& rect) const throw();
 ```  
   
 ### Parameters  
@@ -809,8 +833,11 @@ BOOL operator==(const RECT& rect) const throw();
  CRect rect2(35, 150, 10, 25);
  CRect rect3(98, 999,  6,  3);
 
- ASSERT(rect1 == rect2);
-
+```cpp
+   CRect rect1(35, 150, 10, 25);
+   CRect rect2(35, 150, 10, 25);
+   CRect rect3(98, 999, 6, 3);
+ASSERT(rect1 == rect2);
  // works just fine against RECTs, as well
 
  RECT test;
@@ -826,8 +853,8 @@ BOOL operator==(const RECT& rect) const throw();
 ##  <a name="operator_neq"></a>  CRect::operator !=  
  Determines whether `rect` is not equal to `CRect` by comparing the coordinates of their upper-left and lower-right corners.  
   
-```   
-BOOL operator!=(const RECT& rect) const throw();  
+```  
+BOOL operator!=(const RECT& rect) const throw();
 ```  
   
 ### Parameters  
@@ -848,8 +875,11 @@ BOOL operator!=(const RECT& rect) const throw();
  CRect rect2(35, 150, 10, 25);
  CRect rect3(98, 999,  6,  3);
 
- ASSERT(rect1 != rect3);
-
+```cpp
+   CRect rect1(35, 150, 10, 25);
+   CRect rect2(35, 150, 10, 25);
+   CRect rect3(98, 999, 6, 3);
+ASSERT(rect1 != rect3);
  // works just fine against RECTs, as well
 
  RECT test;
@@ -864,10 +894,10 @@ BOOL operator!=(const RECT& rect) const throw();
 ##  <a name="operator_add_eq"></a>  CRect::operator +=  
  The first two overloads move `CRect` by the specified offsets.  
   
-```   
+```  
 void operator+=(POINT point) throw();
 void operator+=(SIZE size) throw();
-void operator+=(LPCRECT lpRect) throw();  
+void operator+=(LPCRECT lpRect) throw();
 ```  
   
 ### Parameters  
@@ -891,17 +921,22 @@ void operator+=(LPCRECT lpRect) throw();
  CPoint pt(35, 65);
  CRect rect2(135, 300, 235, 400);
 
- rect1 += pt;
- ASSERT(rect1 == rect2);  
+```cpp
+   CRect   rect1(100, 235, 200, 335);
+   CPoint pt(35, 65);
+   CRect   rect2(135, 300, 235, 400);
+
+   rect1 += pt;
+   ASSERT(rect1 == rect2);   
 ```
   
 ##  <a name="operator_-_eq"></a>  CRect::operator -=  
  The first two overloads move `CRect` by the specified offsets.  
   
-```   
+```  
 void operator-=(POINT point) throw();
 void operator-=(SIZE size) throw();
-void operator-=(LPCRECT lpRect) throw();  
+void operator-=(LPCRECT lpRect) throw();
 ```  
   
 ### Parameters  
@@ -925,15 +960,20 @@ void operator-=(LPCRECT lpRect) throw();
  CPoint pt(35, 65);
  rect1 -= pt;
 
- CRect rectResult(65, 170, 165, 270);
- ASSERT(rect1 == rectResult);  
+```cpp
+   CRect   rect1(100, 235, 200, 335);
+   CPoint pt(35, 65);
+
+   rect1 -= pt;
+   CRect   rectResult(65, 170, 165, 270);
+   ASSERT(rect1 == rectResult);   
 ```
   
 ##  <a name="operator_amp_eq"></a>  CRect::operator &amp;=  
  Sets `CRect` equal to the intersection of `CRect` and `rect`.  
   
 ```  
-void operator&=(const RECT& rect) throw();  
+void operator&=(const RECT& rect) throw();
 ```  
   
 ### Parameters  
@@ -952,8 +992,8 @@ void operator&=(const RECT& rect) throw();
 ##  <a name="operator_or_eq"></a>  CRect::operator &#124;=  
  Sets `CRect` equal to the union of `CRect` and `rect`.  
   
-```   
-void operator|=(const RECT& rect) throw();  
+```  
+void operator|=(const RECT& rect) throw();
 ```  
   
 ### Parameters  
@@ -972,18 +1012,23 @@ void operator|=(const RECT& rect) throw();
  CRect rect2( 0, 100, 300, 200);
  rect1 |= rect2;
 
- CRect rectResult(0, 0, 300, 300);
- ASSERT(rectResult == rect1);  
+```cpp
+   CRect   rect1(100,  0, 200, 300);
+   CRect   rect2(0, 100, 300, 200);
+
+   rect1 |= rect2;
+   CRect   rectResult(0, 0, 300, 300);
+   ASSERT(rectResult == rect1);   
 ```
 
   
 ##  <a name="operator_add"></a>  CRect::operator +  
  The first two overloads return a `CRect` object that is equal to `CRect` displaced by the specified offsets.  
   
-```   
+```  
 CRect operator+(POINT point) const throw();
 CRect operator+(LPCRECT lpRect) const throw();
-CRect operator+(SIZE size) const throw();  
+CRect operator+(SIZE size) const throw();
 ```  
   
 ### Parameters  
@@ -1005,24 +1050,24 @@ CRect operator+(SIZE size) const throw();
  The third overload returns a new `CRect` that is equal to `CRect` inflated by the number of units specifed in each member of the parameter.  
   
 ### Example  
-```cpp  
- CRect rect1(100, 235, 200, 335);
- CPoint pt(35, 65);
- CRect rect2;
+```cpp
+   CRect   rect1(100, 235, 200, 335);
+   CPoint pt(35, 65);
+   CRect   rect2;
 
- rect2 = rect1 + pt;
- CRect rectResult(135, 300, 235, 400);
- ASSERT(rectResult == rect2);  
+   rect2 = rect1 + pt;
+   CRect   rectResult(135, 300, 235, 400);
+   ASSERT(rectResult == rect2);   
 ```
 
   
 ##  <a name="operator_-"></a>  CRect::operator -  
  The first two overloads return a `CRect` object that is equal to `CRect` displaced by the specified offsets.  
   
-```   
+```  
 CRect operator-(POINT point) const throw();
 CRect operator-(SIZE size) const throw();
-CRect operator-(LPCRECT lpRect) const throw();  
+CRect operator-(LPCRECT lpRect) const throw();
 ```  
   
 ### Parameters  
@@ -1044,14 +1089,14 @@ CRect operator-(LPCRECT lpRect) const throw();
  The third overload returns a new `CRect` that is equal to `CRect` deflated by the number of units specifed in each member of the parameter. Note that this overload functions like [DeflateRect](#deflaterect), not [SubtractRect](#subtractrect).  
   
 ### Example  
-```cpp  
- CRect rect1(100, 235, 200, 335);
- CPoint pt(35, 65);
- CRect rect2;
+```cpp
+   CRect   rect1(100, 235, 200, 335);
+   CPoint pt(35, 65);
+   CRect   rect2;
 
- rect2 = rect1 - pt;
- CRect rectResult(65, 170, 165, 270);
- ASSERT(rect2 == rectResult);  
+   rect2 = rect1 - pt;
+   CRect   rectResult(65, 170, 165, 270);
+   ASSERT(rect2 == rectResult);   
 ```
 
   
@@ -1059,7 +1104,7 @@ CRect operator-(LPCRECT lpRect) const throw();
  Returns a `CRect` that is the intersection of `CRect` and *rect2*.  
   
 ```  
-CRect operator&(const RECT& rect2) const throw();  
+CRect operator&(const RECT& rect2) const throw();
 ```  
   
 ### Parameters  
@@ -1076,14 +1121,14 @@ CRect operator&(const RECT& rect2) const throw();
 >  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
-```cpp  
- CRect rect1(100,   0, 200, 300);
- CRect rect2( 0, 100, 300, 200);
- CRect rect3;
+```cpp
+   CRect   rect1(100,  0, 200, 300);
+   CRect   rect2(0, 100, 300, 200);
+   CRect   rect3;
 
- rect3 = rect1 & rect2;
-CRect rectResult(100, 100, 200, 200);
- ASSERT(rectResult == rect3);  
+   rect3 = rect1 & rect2;
+   CRect   rectResult(100, 100, 200, 200);
+   ASSERT(rectResult == rect3);   
 ```
 
   
@@ -1091,7 +1136,8 @@ CRect rectResult(100, 100, 200, 200);
  Returns a `CRect` that is the union of `CRect` and *rect2*.  
   
 ```   
-CRect operator|(const RECT& rect2) const throw();  
+CRect operator|(const RECT& 
+rect2) const throw(); 
 ```  
   
 ### Parameters  
@@ -1113,10 +1159,14 @@ CRect operator|(const RECT& rect2) const throw();
  CRect rect2( 0, 100, 300, 200);
  CRect rect3;
 
- rect3 = rect1 | rect2;
+```cpp
+   CRect   rect1(100,  0, 200, 300);
+   CRect   rect2(0, 100, 300, 200);
+   CRect   rect3;
 
- CRect rectResult(0, 0, 300, 300);
- ASSERT(rectResult == rect3);  
+   rect3 = rect1 | rect2;
+   CRect   rectResult(0, 0, 300, 300);
+   ASSERT(rectResult == rect3);   
 ```
 
   
@@ -1124,7 +1174,7 @@ CRect operator|(const RECT& rect2) const throw();
  Determines whether the specified point lies within `CRect`.  
   
 ```   
-BOOL PtInRect(POINT point) const throw();  
+BOOL PtInRect(POINT point) const throw(); 
 ```  
   
 ### Parameters  
@@ -1171,7 +1221,7 @@ BOOL PtInRect(POINT point) const throw();
  Sets the dimensions of `CRect` to the specified coordinates.  
   
 ```   
-void SetRect(int  x1, int y1, int x2, int y2) throw();  
+void SetRect(int x1, int y1, int x2, int y2) throw(); 
 ```  
   
 ### Parameters  
@@ -1192,7 +1242,10 @@ void SetRect(int  x1, int y1, int x2, int y2) throw();
  CRect rect;
  rect.SetRect(256, 256, 512, 512);
 
- ASSERT(rect == CRect(256, 256, 512, 512));  
+```cpp
+   CRect rect;
+   rect.SetRect(256, 256, 512, 512);
+   ASSERT(rect == CRect(256, 256, 512, 512));   
 ```
 
   
@@ -1234,13 +1287,12 @@ CSize Size() const throw();
  CSize sz = rect.Size();
  ASSERT(sz.cx == 40 && sz.cy == 40);  
 ```
->>>>>>> master
-  
+
 ##  <a name="subtractrect"></a>  CRect::SubtractRect  
  Makes the dimensions of the **CRect** equal to the subtraction of `lpRectSrc2` from `lpRectSrc1`.  
   
-```   
- BOOL SubtractRect(LPCRECT lpRectSrc1,LPCRECT lpRectSrc2) throw();  
+```  
+BOOL SubtractRect(LPCRECT lpRectSrc1, LPCRECT lpRectSrc2) throw();
 ```  
   
 ### Parameters  
@@ -1266,42 +1318,44 @@ CSize Size() const throw();
 >  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
-```cpp  
- RECT   rectOne;
- RECT   rectTwo;
+```cpp
+   RECT   rectOne;
+   RECT   rectTwo;
 
- rectOne.left = 10;
- rectOne.top = 10;
- rectOne.bottom = 100;
- rectOne.right = 100;
+   rectOne.left = 10;
+   rectOne.top = 10;
+   rectOne.bottom = 100;
+   rectOne.right = 100;
 
- rectTwo.left = 50;
- rectTwo.top = 10;
- rectTwo.bottom = 150;
- rectTwo.right = 150;
+   rectTwo.left = 50;
+   rectTwo.top = 10;
+   rectTwo.bottom = 150;
+   rectTwo.right = 150;
 
- CRect rectDiff;
- rectDiff.SubtractRect(&rectOne, &rectTwo);
- CRect rectResult(10, 10, 50, 100);
- ASSERT(rectDiff == rectResult);
+   CRect   rectDiff;
 
- // works for CRect, too, since there is
- // implicit CRect -> LPCRECT conversion
+   rectDiff.SubtractRect(&rectOne, &rectTwo);
+CRect   rectResult(10, 10, 50, 100);
 
- CRect rect1(10, 10, 100, 100);
- CRect rect2(50, 10, 150, 150);
- CRect rectOut;
+   ASSERT(rectDiff == rectResult);
 
- rectOut.SubtractRect(rect1, rect2);
- ASSERT(rectResult == rectOut);  
+   // works for CRect, too, since there is
+   // implicit CRect -> LPCRECT conversion
+
+   CRect rect1(10, 10, 100, 100);
+   CRect rect2(50, 10, 150, 150);
+   CRect rectOut;
+
+   rectOut.SubtractRect(rect1, rect2);
+   ASSERT(rectResult == rectOut);   
 ```
   
 ##  <a name="topleft"></a>  CRect::TopLeft  
  The coordinates are returned as a reference to a [CPoint](cpoint-class.md) object that is contained in `CRect`.  
   
-```   
+```  
 CPoint& TopLeft() throw();
-const CPoint& TopLeft() const throw();  
+const CPoint& TopLeft() const throw(); 
 ```  
   
 ### Return Value  
@@ -1316,8 +1370,8 @@ const CPoint& TopLeft() const throw();
 ##  <a name="unionrect"></a>  CRect::UnionRect  
  Makes the dimensions of `CRect` equal to the union of the two source rectangles.  
   
-```   
- BOOL UnionRect(LPCRECT lpRect1, LPCRECT lpRect2) throw();  
+```  
+BOOL UnionRect(LPCRECT lpRect1, LPCRECT lpRect2) throw();
 ```  
   
 ### Parameters  
@@ -1339,14 +1393,14 @@ const CPoint& TopLeft() const throw();
 >  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
-```cpp  
- CRect rect1(100,   0, 200, 300);
- CRect rect2(0, 100, 300, 200);
- CRect rect3;
+```cpp
+   CRect   rect1(100,  0, 200, 300);
+   CRect   rect2(0, 100, 300, 200);
+   CRect   rect3;
 
- rect3.UnionRect(&rect1, &rect2);
- CRect rectResult(0, 0, 300, 300);
- ASSERT(rectResult == rect3);  
+   rect3.UnionRect(&rect1, &rect2);
+   CRect   rectResult(0, 0, 300, 300);
+   ASSERT(rectResult == rect3);   
 ```
  
 ##  <a name="width"></a>  CRect::Width  
@@ -1368,13 +1422,11 @@ int Width() const throw();
 ### Example  
 
 ```cpp
- CRect rect(20, 30, 80, 70);
- int nWid = rect.Width();
-
- // nWid is now 60
- ASSERT(nWid == 60);  
+   CRect rect(20, 30, 80, 70);
+int nWid = rect.Width();
+   // nWid is now 60
+   ASSERT(nWid == 60);   
 ```
-  
 ## See Also  
  [CPoint Class](cpoint-class.md)   
  [CSize Class](csize-class.md)   

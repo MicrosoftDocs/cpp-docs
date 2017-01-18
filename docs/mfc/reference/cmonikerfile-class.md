@@ -142,9 +142,7 @@ BOOL Detach(CFileException* pError = NULL);
  Call this function to retrieve a pointer to the current moniker.  
   
 ```  
-IMoniker* GetMoniker() const;
-
- 
+IMoniker* GetMoniker() const;  
 ```  
   
 ### Return Value  

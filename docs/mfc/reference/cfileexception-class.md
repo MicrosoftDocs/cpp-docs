@@ -139,9 +139,7 @@ static int PASCAL ErrnoToException(int nErrno);
 virtual BOOL GetErrorMessage(
     LPTSTR lpszError,  
     UINT nMaxError,  
-    PUINT pnHelpContext = NULL) const;
-
- 
+    PUINT pnHelpContext = NULL) const;  
 ```  
   
 ### Parameters  
@@ -252,8 +250,7 @@ static int PASCAL OsErrorToException(LONG lOsError);
  Constructs a `CFileException` object corresponding to a given `nErrno` value, then throws the exception.  
   
 ```  
-static void PASCAL ThrowErrno(
-    int nErrno, LPCTSTR lpszFileName = NULL);
+static void PASCAL ThrowErrno(int nErrno, LPCTSTR lpszFileName = NULL);
 ```  
   
 ### Parameters  
@@ -270,8 +267,7 @@ static void PASCAL ThrowErrno(
  Throws a `CFileException` corresponding to a given `lOsError` value. If the error code is unknown, then the function throws an exception coded as **CFileException::generic**.  
   
 ```  
-static void PASCAL ThrowOsError(
-    LONG lOsError, LPCTSTR lpszFileName = NULL);
+static void PASCAL ThrowOsError(LONG lOsError, LPCTSTR lpszFileName = NULL);
 ```  
   
 ### Parameters  

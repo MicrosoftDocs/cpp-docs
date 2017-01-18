@@ -200,9 +200,7 @@ virtual INT_PTR DoModal();
  Call this function after `DoModal` to retrieve the name of the currently selected printer.  
   
 ```  
-CString GetDeviceName() const;
-
- 
+CString GetDeviceName() const;  
 ```  
   
 ### Return Value  
@@ -212,9 +210,7 @@ CString GetDeviceName() const;
  Call this function after calling `DoModal` to retrieve information about the printer device context of the `CPageSetupDialog` object.  
   
 ```  
-LPDEVMODE GetDevMode() const;
-
- 
+LPDEVMODE GetDevMode() const;  
 ```  
   
 ### Return Value  
@@ -224,9 +220,7 @@ LPDEVMODE GetDevMode() const;
  Call this function after calling [DoModal](../../mfc/reference/cprintdialog-class.md#domodal) to retrieve the name of the system-defined printer device driver.  
   
 ```  
-CString GetDriverName() const;
-
- 
+CString GetDriverName() const;  
 ```  
   
 ### Return Value  
@@ -241,9 +235,7 @@ CString GetDriverName() const;
 ```  
 void GetMargins(
     LPRECT lpRectMargins,  
-    LPRECT lpRectMinMargins) const;
-
- 
+    LPRECT lpRectMinMargins) const;  
 ```  
   
 ### Parameters  
@@ -257,9 +249,7 @@ void GetMargins(
  Call this function to retrieve the size of the paper selected for printing.  
   
 ```  
-CSize GetPaperSize() const;
-
- 
+CSize GetPaperSize() const;  
 ```  
   
 ### Return Value  
@@ -269,9 +259,7 @@ CSize GetPaperSize() const;
  Call this function after calling `DoModal` to retrieve the name of the currently selected printer port.  
   
 ```  
-CString GetPortName() const;
-
- 
+CString GetPortName() const;  
 ```  
   
 ### Return Value  

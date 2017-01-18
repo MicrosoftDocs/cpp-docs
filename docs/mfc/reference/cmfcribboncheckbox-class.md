@@ -70,8 +70,7 @@ class CMFCRibbonCheckBox : public CMFCRibbonButton
 ```  
 CMFCRibbonCheckBox (UINT nID, LPCTSTR lpszText)  
 ```  
-  
- where `nID` is the check box command ID and `lpszText` is the text label of the check box.  
+where `nID` is the check box command ID and `lpszText` is the text label of the check box.  
   
  You can add a check box to a ribbon panel by using [CMFCRibbonPanel::Add](../../mfc/reference/cmfcribbonpanel-class.md#add).  
   
@@ -166,9 +165,7 @@ virtual CSize GetRegularSize(CDC* pDC);
  Indicates whether there is a tooltip image associated with the checkbox.  
   
 ```  
-virtual BOOL IsDrawTooltipImage() const;
-
- 
+virtual BOOL IsDrawTooltipImage() const;  
 ```  
   
 ### Return Value  
@@ -193,8 +190,7 @@ virtual void OnDraw(CDC* pDC);
  Called by the framework to draw a menu image for the checkbox.  
   
 ```  
-virtual BOOL OnDrawMenuImage(
-    CDC*, CRect);
+virtual BOOL OnDrawMenuImage(CDC*, CRect);
 ```  
   
 ### Parameters  

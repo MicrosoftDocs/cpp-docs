@@ -161,9 +161,7 @@ virtual BOOL FindNextFile();
  Call this member function to get the URL of the specified file.  
   
 ```  
-CString GetFileURL() const;
-
- 
+CString GetFileURL() const;  
 ```  
   
 ### Return Value  

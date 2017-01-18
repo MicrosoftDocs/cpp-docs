@@ -229,7 +229,7 @@ HRESULT STDMETHODCALLTYPE QueryInterface(REFIID riid, void** ppv) throw();
  Call this method to queue a work item to be handled by a thread in the pool.  
   
 ```
-BOOL QueueRequest(Worker::RequestType   request) throw();
+BOOL QueueRequest(Worker::RequestType request) throw();
 ```  
   
 ### Parameters  
@@ -280,7 +280,7 @@ HRESULT STDMETHODCALLTYPE SetSizeint nNumThreads) throw();
  Call this method to set the maximum time in milliseconds that the thread pool will wait for a thread to shut down.  
   
 ```
-HRESULT STDMETHODCALLTYPE SetTimeout(DWORD   dwMaxWait) throw();
+HRESULT STDMETHODCALLTYPE SetTimeout(DWORD dwMaxWait) throw();
 ```  
   
 ### Parameters  
@@ -299,7 +299,7 @@ HRESULT STDMETHODCALLTYPE SetTimeout(DWORD   dwMaxWait) throw();
  Call this method to shut down the thread pool.  
   
 ```
-void Shutdown(DWORD   dwMaxWait = 0) throw();
+void Shutdown(DWORD dwMaxWait = 0) throw();
 ```  
   
 ### Parameters  

@@ -146,9 +146,7 @@ virtual void CloseDelayedSubMenu();
  Builds a menu from the popup menu buttons.  
   
 ```  
-virtual HMENU ExportToMenu() const;
-
- 
+virtual HMENU ExportToMenu() const;  
 ```  
   
 ### Return Value  
@@ -176,9 +174,7 @@ CMFCToolBar* FindDestintationToolBar(CPoint point);
  Indicates the size of menu-button images.  
   
 ```  
-virtual CSize GetCurrentMenuImageSize() const;
-
- 
+virtual CSize GetCurrentMenuImageSize() const;  
 ```  
   
 ### Return Value  
@@ -190,9 +186,7 @@ virtual CSize GetCurrentMenuImageSize() const;
  Returns the identifier of the default menu item.  
   
 ```  
-UINT GetDefaultMenuId() const;
-
- 
+UINT GetDefaultMenuId() const;  
 ```  
   
 ### Return Value  
@@ -216,9 +210,7 @@ static int __stdcall GetLastCommandIndex();
  Gets the row offset of the popup menu bar.  
   
 ```  
-int GetOffset() const;
-
- 
+int GetOffset() const;  
 ```  
   
 ### Return Value  
@@ -252,9 +244,7 @@ virtual BOOL ImportFromMenu(
  Indicates whether the popup menu bar is in drop-down-list mode.  
   
 ```  
-BOOL IsDropDownListMode() const;
-
- 
+BOOL IsDropDownListMode() const;  
 ```  
   
 ### Return Value  
@@ -266,9 +256,7 @@ BOOL IsDropDownListMode() const;
  Indicates whether the popup menu bar is in palette mode.  
   
 ```  
-BOOL IsPaletteMode() const;
-
- 
+BOOL IsPaletteMode() const;  
 ```  
   
 ### Return Value  
@@ -281,9 +269,7 @@ BOOL IsPaletteMode() const;
  Indicates whether this is a ribbon panel ( `FALSE` by default).  
   
 ```  
-virtual BOOL IsRibbonPanel() const;
-
- 
+virtual BOOL IsRibbonPanel() const;  
 ```  
   
 ### Return Value  
@@ -295,9 +281,7 @@ virtual BOOL IsRibbonPanel() const;
  Indicates whether this is a ribbon panel in regular mode ( `FALSE` by default).  
   
 ```  
-virtual BOOL IsRibbonPanelInRegularMode() const;
-
- 
+virtual BOOL IsRibbonPanelInRegularMode() const;  
 ```  
   
 ### Return Value  

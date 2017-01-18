@@ -223,9 +223,8 @@ CBaseKeyFrame* GetStartKeyframe();
 ```  
 IUIAnimationTransition* GetTransition(
     IUIAnimationTransitionLibrary* pLibrary,  
-    IUIAnimationTransitionFactory* pFactory);
-
- 
+    IUIAnimationTransitionFactory* pFactory);  
+  
 IUIAnimationTransition* GetTransition();
 ```  
   
@@ -246,9 +245,7 @@ IUIAnimationTransition* GetTransition();
  Returns transition type.  
   
 ```  
-TRANSITION_TYPE GetType() const;
-
- 
+TRANSITION_TYPE GetType() const;  
 ```  
   
 ### Return Value  

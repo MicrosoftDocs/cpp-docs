@@ -161,9 +161,7 @@ virtual INT_PTR DoModal();
  Call this function after calling `DoModal` to retrieve the information about the color the user selected.  
   
 ```  
-COLORREF GetColor() const;
-
- 
+COLORREF GetColor() const;  
 ```  
   
 ### Return Value  

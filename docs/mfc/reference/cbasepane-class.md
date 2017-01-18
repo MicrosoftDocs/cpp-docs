@@ -362,9 +362,7 @@ virtual CSize CalcFixedLayout(
  Determines whether another pane can be docked to the pane.  
   
 ```  
-virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
-
- 
+virtual BOOL CanAcceptPane(const CBasePane* pBar) const;  
 ```  
   
 ### Parameters  
@@ -385,9 +383,7 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
  Determines whether the pane supports auto-hide mode.  
   
 ```  
-virtual BOOL CanAutoHide() const;
-
- 
+virtual BOOL CanAutoHide() const;  
 ```  
   
 ### Return Value  
@@ -404,9 +400,7 @@ virtual BOOL CanAutoHide() const;
  Determines whether the pane can be docked to another pane or frame window.  
   
 ```  
-virtual BOOL CanBeAttached() const;
-
- 
+virtual BOOL CanBeAttached() const;  
 ```  
   
 ### Return Value  
@@ -419,9 +413,7 @@ virtual BOOL CanBeAttached() const;
  Determines whether the pane can be closed.  
   
 ```  
-virtual BOOL CanBeClosed() const;
-
- 
+virtual BOOL CanBeClosed() const;  
 ```  
   
 ### Return Value  
@@ -438,9 +430,7 @@ virtual BOOL CanBeClosed() const;
  Determines whether the pane can be docked to another pane.  
   
 ```  
-virtual BOOL CanBeDocked(CBasePane* pDockBar) const;
-
- 
+virtual BOOL CanBeDocked(CBasePane* pDockBar) const;  
 ```  
   
 ### Parameters  
@@ -461,9 +451,7 @@ virtual BOOL CanBeDocked(CBasePane* pDockBar) const;
  Determines whether the pane can be resized.  
   
 ```  
-virtual BOOL CanBeResized() const;
-
- 
+virtual BOOL CanBeResized() const;  
 ```  
   
 ### Return Value  
@@ -476,9 +464,7 @@ virtual BOOL CanBeResized() const;
  Specifies whether the pane can be converted to an MDI tabbed document.  
   
 ```  
-virtual BOOL CanBeTabbedDocument() const;
-
- 
+virtual BOOL CanBeTabbedDocument() const;  
 ```  
   
 ### Return Value  
@@ -491,9 +477,7 @@ virtual BOOL CanBeTabbedDocument() const;
  Determines whether the pane can float.  
   
 ```  
-virtual BOOL CanFloat() const;
-
- 
+virtual BOOL CanFloat() const;  
 ```  
   
 ### Return Value  
@@ -513,9 +497,7 @@ virtual BOOL CanFloat() const;
  Specifies whether the pane can receive focus.  
   
 ```  
-virtual BOOL CanFocus() const;
-
- 
+virtual BOOL CanFocus() const;  
 ```  
   
 ### Return Value  
@@ -706,9 +688,7 @@ virtual BOOL DockToFrameWindow(
  Determines whether another pane can be dynamically inserted between this pane and the parent frame.  
   
 ```  
-virtual BOOL DoesAllowDynInsertBefore() const;
-
- 
+virtual BOOL DoesAllowDynInsertBefore() const;  
 ```  
   
 ### Return Value  
@@ -842,9 +822,7 @@ virtual HRESULT get_accSelection(VARIANT* pvarChildren);
  Returns the caption height.  
   
 ```  
-virtual int GetCaptionHeight() const;
-
- 
+virtual int GetCaptionHeight() const;  
 ```  
   
 ### Return Value  
@@ -874,9 +852,7 @@ virtual DWORD GetControlBarStyle() const
  Returns the current pane alignment.  
   
 ```  
-virtual DWORD GetCurrentAlignment() const;
-
- 
+virtual DWORD GetCurrentAlignment() const;  
 ```  
   
 ### Return Value  
@@ -893,9 +869,7 @@ virtual DWORD GetCurrentAlignment() const;
  Returns the current docking mode for the pane.  
   
 ```  
-virtual AFX_DOCK_TYPE GetDockingMode() const;
-
- 
+virtual AFX_DOCK_TYPE GetDockingMode() const;  
 ```  
   
 ### Return Value  
@@ -912,9 +886,7 @@ virtual AFX_DOCK_TYPE GetDockingMode() const;
  Returns a pointer to the [CDockingPanesRow](../../mfc/reference/cdockingpanesrow-class.md)object where the pane is docked.  
   
 ```  
-virtual CWnd* GetDockSiteFrameWnd() const;
-
- 
+virtual CWnd* GetDockSiteFrameWnd() const;  
 ```  
   
 ### Return Value  
@@ -927,9 +899,7 @@ virtual CWnd* GetDockSiteFrameWnd() const;
  Returns the CBRS_ALIGN_ styles that are applied to the pane.  
   
 ```  
-virtual DWORD GetEnabledAlignment() const;
-
- 
+virtual DWORD GetEnabledAlignment() const;  
 ```  
   
 ### Return Value  
@@ -952,9 +922,7 @@ virtual DWORD GetEnabledAlignment() const;
  Returns the pane styles that are specific to MFC.  
   
 ```  
-virtual DWORD GetMFCStyle() const;
-
- 
+virtual DWORD GetMFCStyle() const;  
 ```  
   
 ### Return Value  
@@ -994,9 +962,7 @@ CDockingPanesRow* GetPaneRow();
  Returns the pane style.  
   
 ```  
-virtual DWORD GetPaneStyle() const;
-
- 
+virtual DWORD GetPaneStyle() const;  
 ```  
   
 ### Return Value  
@@ -1006,9 +972,7 @@ virtual DWORD GetPaneStyle() const;
  Returns a pointer to the parent dock site.  
   
 ```  
-virtual CDockSite* GetParentDockSite() const;
-
- 
+virtual CDockSite* GetParentDockSite() const;  
 ```  
   
 ### Return Value  
@@ -1018,9 +982,7 @@ virtual CDockSite* GetParentDockSite() const;
  Returns a pointer to the parent mini-frame window.  
   
 ```  
-virtual CPaneFrameWnd* GetParentMiniFrame(BOOL bNoAssert=FALSE) const;
-
- 
+virtual CPaneFrameWnd* GetParentMiniFrame(BOOL bNoAssert=FALSE) const;  
 ```  
   
 ### Parameters  
@@ -1039,9 +1001,7 @@ virtual CPaneFrameWnd* GetParentMiniFrame(BOOL bNoAssert=FALSE) const;
  Returns a pointer to the parent tabbed pane.  
   
 ```  
-CBaseTabbedPane* GetParentTabbedPane() const;
-
- 
+CBaseTabbedPane* GetParentTabbedPane() const;  
 ```  
   
 ### Return Value  
@@ -1051,9 +1011,7 @@ CBaseTabbedPane* GetParentTabbedPane() const;
  Returns a pointer to the parent window that is inside a tab.  
   
 ```  
-CMFCBaseTabCtrl* GetParentTabWnd(HWND& hWndTab) const;
-
- 
+CMFCBaseTabCtrl* GetParentTabWnd(HWND& hWndTab) const;  
 ```  
   
 ### Parameters  
@@ -1070,9 +1028,7 @@ CMFCBaseTabCtrl* GetParentTabWnd(HWND& hWndTab) const;
  The framework calls this method when a pane is restored from an archive.  
   
 ```  
-virtual BOOL GetRecentVisibleState() const;
-
- 
+virtual BOOL GetRecentVisibleState() const;  
 ```  
   
 ### Return Value  
@@ -1082,9 +1038,7 @@ virtual BOOL GetRecentVisibleState() const;
  Specifies whether the pane is hidden in print preview.  
   
 ```  
-virtual BOOL HideInPrintPreviewMode() const;
-
- 
+virtual BOOL HideInPrintPreviewMode() const;  
 ```  
   
 ### Return Value  
@@ -1130,9 +1084,7 @@ virtual BOOL IsAccessibilityCompatible();
  Determines whether a pane is in auto-hide mode.  
   
 ```  
-virtual BOOL IsAutoHideMode() const;
-
- 
+virtual BOOL IsAutoHideMode() const;  
 ```  
   
 ### Return Value  
@@ -1145,9 +1097,7 @@ virtual BOOL IsAutoHideMode() const;
  Specifies whether the pane is a dialog box control.  
   
 ```  
-BOOL IsDialogControl() const;
-
- 
+BOOL IsDialogControl() const;  
 ```  
   
 ### Return Value  
@@ -1160,9 +1110,7 @@ BOOL IsDialogControl() const;
  Determines whether the pane is docked.  
   
 ```  
-virtual BOOL IsDocked() const;
-
- 
+virtual BOOL IsDocked() const;  
 ```  
   
 ### Return Value  
@@ -1172,9 +1120,7 @@ virtual BOOL IsDocked() const;
  Determines whether the pane is floating.  
   
 ```  
-virtual BOOL IsFloating() const;
-
- 
+virtual BOOL IsFloating() const;  
 ```  
   
 ### Return Value  
@@ -1187,9 +1133,7 @@ virtual BOOL IsFloating() const;
  Determines whether the pane is docked horizontally.  
   
 ```  
-virtual BOOL IsHorizontal() const;
-
- 
+virtual BOOL IsHorizontal() const;  
 ```  
   
 ### Return Value  
@@ -1202,9 +1146,7 @@ virtual BOOL IsHorizontal() const;
  Specifies whether the pane is in a multi-pane frame window ( [CMultiPaneFrameWnd Class](../../mfc/reference/cmultipaneframewnd-class.md)).  
   
 ```  
-virtual BOOL IsInFloatingMultiPaneFrameWnd() const;
-
- 
+virtual BOOL IsInFloatingMultiPaneFrameWnd() const;  
 ```  
   
 ### Return Value  
@@ -1217,9 +1159,7 @@ virtual BOOL IsInFloatingMultiPaneFrameWnd() const;
  Determines whether the pane has been added to an MDI child window as a tabbed document.  
   
 ```  
-virtual BOOL IsMDITabbed() const;
-
- 
+virtual BOOL IsMDITabbed() const;  
 ```  
   
 ### Return Value  
@@ -1229,9 +1169,7 @@ virtual BOOL IsMDITabbed() const;
  Specifies whether the `WS_VISIBLE` flag is set for the pane.  
   
 ```  
-BOOL IsPaneVisible() const;
-
- 
+BOOL IsPaneVisible() const;  
 ```  
   
 ### Return Value  
@@ -1247,9 +1185,7 @@ BOOL IsPaneVisible() const;
 BOOL IsPointNearDockSite(
     CPoint point,  
     DWORD& dwBarAlignment,  
-    BOOL& bOuterEdge) const;
-
- 
+    BOOL& bOuterEdge) const;  
 ```  
   
 ### Parameters  
@@ -1272,9 +1208,7 @@ BOOL IsPointNearDockSite(
  Determines whether the pane can be resized.  
   
 ```  
-virtual BOOL IsResizable() const;
-
- 
+virtual BOOL IsResizable() const;  
 ```  
   
 ### Return Value  
@@ -1289,9 +1223,7 @@ virtual BOOL IsResizable() const;
  Determines whether the pane is restored from the registry.  
   
 ```  
-virtual BOOL IsRestoredFromRegistry() const;
-
- 
+virtual BOOL IsRestoredFromRegistry() const;  
 ```  
   
 ### Return Value  
@@ -1301,9 +1233,7 @@ virtual BOOL IsRestoredFromRegistry() const;
  Determines whether the pane has been inserted in the tab control of a tabbed window.  
   
 ```  
-virtual BOOL IsTabbed() const;
-
- 
+virtual BOOL IsTabbed() const;  
 ```  
   
 ### Return Value  
@@ -1316,9 +1246,7 @@ virtual BOOL IsTabbed() const;
  Determines whether the pane is visible.  
   
 ```  
-virtual BOOL IsVisible() const;
-
- 
+virtual BOOL IsVisible() const;  
 ```  
   
 ### Return Value  
@@ -1500,9 +1428,7 @@ CBasePane* PaneFromPoint(
     CPoint point,  
     int nSensitivity,  
     bool bExactBar = false,  
-    CRuntimeClass* pRTCBarType = NULL) const;
-
- 
+    CRuntimeClass* pRTCBarType = NULL) const;  
 ```  
   
 ### Parameters  

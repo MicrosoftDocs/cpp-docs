@@ -50,8 +50,10 @@ This class implements **IUnknown** and allows a client to access the information
 ## Syntax  
   
 ```
-template <class T>  
-class ATL_NO_VTABLE IPerPropertyBrowsingImpl : public IPerPropertyBrowsing
+
+template <class T>
+class ATL_NO_VTABLE IPerPropertyBrowsingImpl :
+    public IPerPropertyBrowsing
 ```  
   
 #### Parameters  

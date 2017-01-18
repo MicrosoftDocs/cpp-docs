@@ -94,8 +94,7 @@ class CDocObjectServerItem : public COleServerItem
  Constructs a `CDocObjectServerItem` object.  
   
 ```  
-CDocObjectServerItem(
-    COleServerDoc* pServerDoc, BOOL bAutoDelete);
+CDocObjectServerItem(COleServerDoc* pServerDoc, BOOL bAutoDelete);
 ```  
   
 ### Parameters  
@@ -109,9 +108,7 @@ CDocObjectServerItem(
  Retrieves a pointer to the document that contains the item.  
   
 ```  
-COleServerDoc* GetDocument() const;
-
- 
+COleServerDoc* GetDocument() const;  
 ```  
   
 ### Return Value  

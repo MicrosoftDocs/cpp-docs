@@ -455,11 +455,8 @@ void GetParameterInfo(
  Call this member function to retrieve the current value of the specified parameter stored in the querydef's Parameters collection.  
   
 ```  
-virtual COleVariant GetParamValue(LPCTSTR lpszName);
-
- 
-virtual COleVariant GetParamValue(int nIndex);
-```  
+virtual COleVariant GetParamValue(LPCTSTR lpszName);  
+virtual COleVariant GetParamValue(int nIndex);```  
   
 ### Parameters  
  `lpszName`  
@@ -565,9 +562,7 @@ short GetType();
  Call this member function to determine whether the `CDaoQueryDef` object is currently open.  
   
 ```  
-BOOL IsOpen() const;
-
- 
+BOOL IsOpen() const;  
 ```  
   
 ### Return Value  

@@ -151,9 +151,7 @@ void AddToRight(
  Returns a rectangle that represents the area of the ribbon main panel.  
   
 ```  
-CRect GetCommandsFrame() const;
-
- 
+CRect GetCommandsFrame() const;  
 ```  
   
 ### Return Value  

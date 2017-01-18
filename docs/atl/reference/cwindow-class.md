@@ -376,7 +376,6 @@ HWND ChildWindowFromPoint(POINT point, UINT uFlags) const throw();
   
 ```
 BOOL ClientToScreen(LPPOINT lpPoint) const throw();
-
 BOOL ClientToScreen(LPRECT lpRect) const throw();
 ```  
   
@@ -389,7 +388,7 @@ BOOL ClientToScreen(LPRECT lpRect) const throw();
  Creates a window.  
   
 ```
-HWND Create(  
+HWND Create(
     LPCTSTR lpstrWndClass,
     HWND hWndParent,
     _U_RECT rect = NULL,
@@ -797,6 +796,7 @@ UINT GetDlgItemText(
     int nID,
     LPTSTR lpStr,
     int nMaxCount) const throw();
+
 BOOL GetDlgItemText(  
     int nID,
     BSTR& bstrText) const throw();
@@ -1138,9 +1138,7 @@ int GetWindowRgn(HRGN hRgn) throw();
   
 ```
 int GetWindowText(LPTSTR lpszStringBuf, int nMaxCount) const throw();
-
 BOOL GetWindowText(BSTR& bstrText) throw();
-
 int GetWindowText(CSimpleString& strText) const;
 ```  
   
@@ -1736,7 +1734,6 @@ BOOL ResizeClient(
   
 ```
 BOOL ScreenToClient(LPPOINT lpPoint) const throw();
-
 BOOL ScreenToClient(LPRECT lpRect) const throw();
 ```  
   
@@ -1798,6 +1795,7 @@ LRESULT SendMessage(
     UINT message,
     WPARAM wParam = 0,
     LPARAM lParam = 0) throw();
+
 static LRESULT SendMessage(  
     HWND hWnd,
     UINT message,
@@ -2074,10 +2072,7 @@ BOOL SetScrollRange(
 UINT SetTimer(  
     UINT nIDEvent,
     UINT nElapse,
-    void (CALLBACK* lpfnTimer)(HWND,
-    UINT,
- UINT,
-    DWORD) = NULL) throw();
+    void (CALLBACK* lpfnTimer)(HWND, UINT, UINT, DWORD) = NULL) throw();
 ```  
   
 ### Remarks  
@@ -2139,6 +2134,7 @@ BOOL SetWindowPos(
     int cx,
     int cy,
     UINT nFlags) throw();
+
 BOOL SetWindowPos(  
     HWND hWndInsertAfter,
     LPCRECT lpRect,

@@ -52,8 +52,7 @@ This class provides a method for standardizing the styles used when creating a w
 ## Syntax  
   
 ```
-template <DWORD t_dwStyle = 0, DWORD t_dwExStyle = 0>  
-class CWinTraits
+template <DWORD t_dwStyle = 0, DWORD t_dwExStyle = 0>  class CWinTraits
 ```  
   
 #### Parameters  
@@ -125,12 +124,3 @@ static DWORD GetWndExStyle(DWORD dwExStyle);
  [Class Members](http://msdn.microsoft.com/en-us/dbe6a147-3f01-4aea-a3fb-fe6ebadc31f8)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Understanding Window Traits](../../atl/understanding-window-traits.md)
-
-
-
-
-
-
-
-
-

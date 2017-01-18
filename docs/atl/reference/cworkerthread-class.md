@@ -244,7 +244,7 @@ HRESULT RemoveHandle(HANDLE hObject) throw();
  Call this method to shut down the worker thread.  
   
 ```
-HRESULT Shutdown(DWORD   dwWait = ATL_WORKER_THREAD_WAIT) throw();
+HRESULT Shutdown(DWORD dwWait = ATL_WORKER_THREAD_WAIT) throw();
 ```  
   
 ### Parameters  

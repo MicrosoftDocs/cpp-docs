@@ -74,8 +74,7 @@ interface IAxWinHostWindow : IUnknown
  Attaches an existing (and previously initialized) control to the host object using the window identified by `hWnd`.  
   
 ```
-STDMETHOD(AttachControl)(
-    IUnknown* pUnkControl, HWND hWnd);
+STDMETHOD(AttachControl)(IUnknown* pUnkControl, HWND hWnd);
 ```  
   
 ### Parameters  

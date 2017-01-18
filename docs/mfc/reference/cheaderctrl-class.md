@@ -346,9 +346,7 @@ BOOL EditFilter(
  Retrieves the width of the margin of a bitmap in a header control.  
   
 ```  
-int GetBitmapMargin() const;
-
- 
+int GetBitmapMargin() const;  
 ```  
   
 ### Return Value  
@@ -364,9 +362,7 @@ int GetBitmapMargin() const;
  Gets the index of the item that has the focus in the current header control.  
   
 ```  
-int GetFocusedItem() const;
-
- 
+int GetFocusedItem() const;  
 ```  
   
 ### Return Value  
@@ -389,9 +385,7 @@ int GetFocusedItem() const;
  Retrieves the handle of an image list used for drawing header items in a header control.  
   
 ```  
-CImageList* GetImageList() const;
-
- 
+CImageList* GetImageList() const;  
 ```  
   
 ### Return Value  
@@ -409,9 +403,7 @@ CImageList* GetImageList() const;
 ```  
 BOOL GetItem(
     int nPos,  
-    HDITEM* pHeaderItem) const;
-
- 
+    HDITEM* pHeaderItem) const;  
 ```  
   
 ### Parameters  
@@ -431,9 +423,7 @@ BOOL GetItem(
  Retrieves a count of the items in a header control.  
   
 ```  
-int GetItemCount() const;
-
- 
+int GetItemCount() const;  
 ```  
   
 ### Return Value  
@@ -448,9 +438,7 @@ int GetItemCount() const;
 ```  
 BOOL GetItemDropDownRect(
     int iItem,   
-    LPRECT lpRect) const;
-
- 
+    LPRECT lpRect) const;  
 ```  
   
 ### Parameters  
@@ -482,9 +470,7 @@ BOOL GetItemDropDownRect(
 ```  
 BOOL GetItemRect(
     int nIndex,  
-    LPRECT lpRect) const;
-
- 
+    LPRECT lpRect) const;  
 ```  
   
 ### Parameters  
@@ -529,9 +515,7 @@ BOOL GetOrderArray(
  Gets the bounding rectangle of the overflow button of the current header control.  
   
 ```  
-BOOL GetOverflowRect(LPRECT lpRect) const;
-
- 
+BOOL GetOverflowRect(LPRECT lpRect) const;  
 ```  
   
 ### Parameters  
@@ -633,9 +617,7 @@ BOOL Layout(HDLAYOUT* pHeaderLayout);
  Retrieves the index value for an item based on its order in the header control.  
   
 ```  
-int OrderToIndex(int nOrder) const;
-
- 
+int OrderToIndex(int nOrder) const;  
 ```  
   
 ### Parameters  
@@ -721,11 +703,8 @@ BOOL SetFocusedItem(int iItem);
  Changes the divider between header items to indicate a manual drag and drop of a header item.  
   
 ```  
-int SetHotDivider(CPoint pt);
-
- 
-int SetHotDivider(int nIndex);
-```  
+int SetHotDivider(CPoint pt);  
+int SetHotDivider(int nIndex);```  
   
 ### Parameters  
  `pt`  

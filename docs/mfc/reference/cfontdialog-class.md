@@ -128,9 +128,7 @@ CFontDialog(
     const CHARFORMAT& charformat,  
     DWORD dwFlags = CF_SCREENFONTS,  
     CDC* pdcPrinter = NULL,  
-    CWnd* pParentWnd = NULL);
-
- 
+    CWnd* pParentWnd = NULL);  
 ```  
   
 ### Parameters  
@@ -182,9 +180,7 @@ virtual INT_PTR DoModal();
  Retrieves the character formatting of the selected font.  
   
 ```  
-void GetCharFormat(CHARFORMAT& cf) const;
-
- 
+void GetCharFormat(CHARFORMAT& cf) const;  
 ```  
   
 ### Parameters  
@@ -195,9 +191,7 @@ void GetCharFormat(CHARFORMAT& cf) const;
  Call this function to retrieve the selected font color.  
   
 ```  
-COLORREF GetColor() const;
-
- 
+COLORREF GetColor() const;  
 ```  
   
 ### Return Value  
@@ -229,9 +223,7 @@ void GetCurrentFont(LPLOGFONT lplf);
  Call this function to retrieve the face name of the selected font.  
   
 ```  
-CString GetFaceName() const;
-
- 
+CString GetFaceName() const;  
 ```  
   
 ### Return Value  
@@ -244,9 +236,7 @@ CString GetFaceName() const;
  Call this function to retrieve the size of the selected font.  
   
 ```  
-int GetSize() const;
-
- 
+int GetSize() const;  
 ```  
   
 ### Return Value  
@@ -259,9 +249,7 @@ int GetSize() const;
  Call this function to retrieve the style name of the selected font.  
   
 ```  
-CString GetStyleName() const;
-
- 
+CString GetStyleName() const;  
 ```  
   
 ### Return Value  
@@ -274,9 +262,7 @@ CString GetStyleName() const;
  Call this function to retrieve the weight of the selected font.  
   
 ```  
-int GetWeight() const;
-
- 
+int GetWeight() const;  
 ```  
   
 ### Return Value  
@@ -292,9 +278,7 @@ int GetWeight() const;
  Call this function to determine if the selected font is bold.  
   
 ```  
-BOOL IsBold() const;
-
- 
+BOOL IsBold() const;  
 ```  
   
 ### Return Value  
@@ -307,9 +291,7 @@ BOOL IsBold() const;
  Call this function to determine if the selected font is italic.  
   
 ```  
-BOOL IsItalic() const;
-
- 
+BOOL IsItalic() const;  
 ```  
   
 ### Return Value  
@@ -322,9 +304,7 @@ BOOL IsItalic() const;
  Call this function to determine if the selected font is displayed with strikeout.  
   
 ```  
-BOOL IsStrikeOut() const;
-
- 
+BOOL IsStrikeOut() const;  
 ```  
   
 ### Return Value  
@@ -337,9 +317,7 @@ BOOL IsStrikeOut() const;
  Call this function to determine if the selected font is underlined.  
   
 ```  
-BOOL IsUnderline() const;
-
- 
+BOOL IsUnderline() const;  
 ```  
   
 ### Return Value  

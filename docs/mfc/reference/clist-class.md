@@ -115,11 +115,8 @@ class CList : public CObject
  Adds a new element or list of elements to the head of this list.  
   
 ```  
-POSITION AddHead(ARG_TYPE newElement);
-
- 
-void AddHead(CList* pNewList);
-```  
+POSITION AddHead(ARG_TYPE newElement);  
+void AddHead(CList* pNewList);```  
   
 ### Parameters  
  `ARG_TYPE`  
@@ -144,11 +141,8 @@ void AddHead(CList* pNewList);
  Adds a new element or list of elements to the tail of this list.  
   
 ```  
-POSITION AddTail(ARG_TYPE newElement);
-
- 
-void AddTail(CList* pNewList);
-```  
+POSITION AddTail(ARG_TYPE newElement);  
+void AddTail(CList* pNewList);```  
   
 ### Parameters  
  `ARG_TYPE`  
@@ -192,9 +186,7 @@ CList(INT_PTR nBlockSize = 10);
 ```  
 POSITION Find(
     ARG_TYPE searchValue,  
-    POSITION startAfter = NULL) const;
-
- 
+    POSITION startAfter = NULL) const;  
 ```  
   
 ### Parameters  
@@ -217,9 +209,7 @@ POSITION Find(
  Uses the value of `nIndex` as an index into the list.  
   
 ```  
-POSITION FindIndex(INT_PTR nIndex) const;
-
- 
+POSITION FindIndex(INT_PTR nIndex) const;  
 ```  
   
 ### Parameters  
@@ -239,12 +229,8 @@ POSITION FindIndex(INT_PTR nIndex) const;
  Gets the list element at a given position.  
   
 ```  
-TYPE& GetAt(POSITION position);
-
- 
-const TYPE& GetAt(POSITION position) const;
-
- 
+TYPE& GetAt(POSITION position);  
+const TYPE& GetAt(POSITION position) const;  
 ```  
   
 ### Parameters  
@@ -269,9 +255,7 @@ const TYPE& GetAt(POSITION position) const;
  Gets the number of elements in this list.  
   
 ```  
-INT_PTR GetCount() const;
-
- 
+INT_PTR GetCount() const;  
 ```  
   
 ### Return Value  
@@ -287,12 +271,9 @@ INT_PTR GetCount() const;
  Gets the head element (or a reference to the head element) of this list.  
   
 ```  
-const TYPE& GetHead() const;
-
- 
- 
-TYPE& GetHead();
-```  
+const TYPE& GetHead() const;  
+  
+TYPE& GetHead();```  
   
 ### Parameters  
  *TYPE*  
@@ -313,9 +294,7 @@ TYPE& GetHead();
  Gets the position of the head element of this list.  
   
 ```  
-POSITION GetHeadPosition() const;
-
- 
+POSITION GetHeadPosition() const;  
 ```  
   
 ### Return Value  
@@ -328,12 +307,8 @@ POSITION GetHeadPosition() const;
  Gets the list element identified by `rPosition`, then sets `rPosition` to the **POSITION** value of the next entry in the list.  
   
 ```  
-TYPE& GetNext(POSITION& rPosition);
-
- 
-const TYPE& GetNext(POSITION& rPosition) const;
-
- 
+TYPE& GetNext(POSITION& rPosition);  
+const TYPE& GetNext(POSITION& rPosition) const;  
 ```  
   
 ### Parameters  
@@ -362,12 +337,8 @@ const TYPE& GetNext(POSITION& rPosition) const;
  Gets the list element identified by `rPosition`, then sets `rPosition` to the **POSITION** value of the previous entry in the list.  
   
 ```  
-TYPE& GetPrev(POSITION& rPosition);
-
- 
-const TYPE& GetPrev(POSITION& rPosition) const;
-
- 
+TYPE& GetPrev(POSITION& rPosition);  
+const TYPE& GetPrev(POSITION& rPosition) const;  
 ```  
   
 ### Parameters  
@@ -396,9 +367,7 @@ const TYPE& GetPrev(POSITION& rPosition) const;
  Returns the number of list elements.  
   
 ```  
-INT_PTR GetSize() const;
-
- 
+INT_PTR GetSize() const;  
 ```  
   
 ### Return Value  
@@ -414,12 +383,8 @@ INT_PTR GetSize() const;
  Gets the `CObject` pointer that represents the tail element of this list.  
   
 ```  
-TYPE& GetTail();
-
- 
-const TYPE& GetTail() const;
-
- 
+TYPE& GetTail();  
+const TYPE& GetTail() const;  
 ```  
   
 ### Parameters  
@@ -439,9 +404,7 @@ const TYPE& GetTail() const;
  Gets the position of the tail element of this list; **NULL** if the list is empty.  
   
 ```  
-POSITION GetTailPosition() const;
-
- 
+POSITION GetTailPosition() const;  
 ```  
   
 ### Return Value  
@@ -454,8 +417,7 @@ POSITION GetTailPosition() const;
  Adds an element to this list after the element at the specified position.  
   
 ```  
-POSITION InsertAfter(
-    POSITION position, ARG_TYPE newElement);
+POSITION InsertAfter(POSITION position, ARG_TYPE newElement);
 ```  
   
 ### Parameters  
@@ -478,8 +440,7 @@ POSITION InsertAfter(
  Adds an element to this list before the element at the specified position.  
   
 ```  
-POSITION InsertBefore(
-    POSITION position, ARG_TYPE newElement);
+POSITION InsertBefore(POSITION position, ARG_TYPE newElement);
 ```  
   
 ### Parameters  
@@ -505,9 +466,7 @@ POSITION InsertBefore(
  Indicates whether this list contains no elements.  
   
 ```  
-BOOL IsEmpty() const;
-
- 
+BOOL IsEmpty() const;  
 ```  
   
 ### Return Value  
@@ -590,8 +549,7 @@ TYPE RemoveTail();
  A variable of type **POSITION** is a key for the list.  
   
 ```  
-void SetAt(
-    POSITION pos, ARG_TYPE newElement);
+void SetAt(POSITION pos, ARG_TYPE newElement);
 ```  
   
 ### Parameters  

@@ -127,9 +127,7 @@ class CMFCToolBarDateTimeCtrl : public CMFCToolBarButton
  Specifies whether a user can stretch the button during customization.  
   
 ```  
-virtual BOOL CanBeStretched() const;
-
- 
+virtual BOOL CanBeStretched() const;  
 ```  
   
 ### Return Value  
@@ -188,9 +186,7 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
  Copies text from the toolbar button to a menu.  
   
 ```  
-virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
-
- 
+virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;  
 ```  
   
 ### Parameters  
@@ -224,9 +220,7 @@ static CMFCToolBarDateTimeCtrl* __stdcall GetByCmd(UINT uiCmd);
  Returns a pointer to the date and time picker control.  
   
 ```  
-CDateTimeCtrl* GetDateTimeCtrl() const;
-
- 
+CDateTimeCtrl* GetDateTimeCtrl() const;  
 ```  
   
 ### Return Value  
@@ -253,15 +247,8 @@ virtual HWND GetHwnd();
   
 ```  
 BOOL GetTime(COleDateTime& timeDest) const;
-
- 
 DWORD GetTime(CTime& timeDest) const;
-
- 
-DWORD GetTime(LPSYSTEMTIME pTimeDest) const;
-
- 
- 
+DWORD GetTime(LPSYSTEMTIME pTimeDest) const;  
 ```  
   
 ### Parameters  
@@ -314,9 +301,7 @@ static DWORD GetTimeAll(
  Determines whether a border of the button is displayed when a user selects the button.  
   
 ```  
-virtual BOOL HaveHotBorder() const;
-
- 
+virtual BOOL HaveHotBorder() const;  
 ```  
   
 ### Return Value  
@@ -501,9 +486,7 @@ virtual BOOL OnUpdateToolTip(
   
 ```  
 BOOL SetTime(const COleDateTime& timeNew);
-
 BOOL SetTime(const CTime* timeNew);
-
 BOOL SetTime(LPSYSTEMTIME pTimeNew=NULL);
 ```  
   

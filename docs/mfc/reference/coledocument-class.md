@@ -129,11 +129,8 @@ virtual void AddItem(CDocItem* pItem);
  Call this function to change the print-target device for all embedded [COleClientItem](../../mfc/reference/coleclientitem-class.md) items in your application's container document.  
   
 ```  
-BOOL ApplyPrintDevice(const DVTARGETDEVICE* ptd);
-
- 
-BOOL ApplyPrintDevice(const PRINTDLG* ppd);
-```  
+BOOL ApplyPrintDevice(const DVTARGETDEVICE* ptd);  
+BOOL ApplyPrintDevice(const PRINTDLG* ppd);```  
   
 ### Parameters  
  `ptd`  
@@ -197,9 +194,7 @@ virtual COleClientItem* GetInPlaceActiveItem(CWnd* pWnd);
  Call this function repeatedly to access each of the client items in your document.  
   
 ```  
-COleClientItem* GetNextClientItem(POSITION& pos) const;
-
- 
+COleClientItem* GetNextClientItem(POSITION& pos) const;  
 ```  
   
 ### Parameters  
@@ -219,9 +214,7 @@ COleClientItem* GetNextClientItem(POSITION& pos) const;
  Call this function repeatedly to access each of the items in your document.  
   
 ```  
-virtual CDocItem* GetNextItem(POSITION& pos) const;
-
- 
+virtual CDocItem* GetNextItem(POSITION& pos) const;  
 ```  
   
 ### Parameters  
@@ -241,9 +234,7 @@ virtual CDocItem* GetNextItem(POSITION& pos) const;
  Call this function repeatedly to access each of the server items in your document.  
   
 ```  
-COleServerItem* GetNextServerItem(POSITION& pos) const;
-
- 
+COleServerItem* GetNextServerItem(POSITION& pos) const;  
 ```  
   
 ### Parameters  
@@ -280,9 +271,7 @@ virtual COleClientItem* GetPrimarySelectedItem(CView* pView);
  Call this function to get the position of the first item in the document.  
   
 ```  
-virtual POSITION GetStartPosition() const;
-
- 
+virtual POSITION GetStartPosition() const;  
 ```  
   
 ### Return Value  
@@ -295,9 +284,7 @@ virtual POSITION GetStartPosition() const;
  Call this function to determine whether the document contains any blank items.  
   
 ```  
-BOOL HasBlankItems() const;
-
- 
+BOOL HasBlankItems() const;  
 ```  
   
 ### Return Value  

@@ -111,11 +111,8 @@ class CObList : public CObject
  Adds a new element or list of elements to the head of this list.  
   
 ```  
-POSITION AddHead(CObject* newElement);
-
- 
-void AddHead(CObList* pNewList);
-```  
+POSITION AddHead(CObject* newElement);  
+void AddHead(CObList* pNewList);```  
   
 ### Parameters  
  `newElement`  
@@ -154,11 +151,8 @@ void AddHead(CObList* pNewList);
  Adds a new element or list of elements to the tail of this list.  
   
 ```  
-POSITION AddTail(CObject* newElement);
-
- 
-void AddTail(CObList* pNewList);
-```  
+POSITION AddTail(CObject* newElement);  
+void AddTail(CObList* pNewList);```  
   
 ### Parameters  
  `newElement`  
@@ -229,9 +223,7 @@ CObList(INT_PTR nBlockSize = 10);
 ```  
 POSITION Find(
     CObject* searchValue,  
-    POSITION startAfter = NULL) const;
-
- 
+    POSITION startAfter = NULL) const;  
 ```  
   
 ### Parameters  
@@ -263,9 +255,7 @@ POSITION Find(
  Uses the value of `nIndex` as an index into the list.  
   
 ```  
-POSITION FindIndex(INT_PTR nIndex) const;
-
- 
+POSITION FindIndex(INT_PTR nIndex) const;  
 ```  
   
 ### Parameters  
@@ -294,12 +284,8 @@ POSITION FindIndex(INT_PTR nIndex) const;
  A variable of type **POSITION** is a key for the list.  
   
 ```  
-CObject*& GetAt(POSITION position);
-
- 
-const CObject*& GetAt(POSITION position) const;
-
- 
+CObject*& GetAt(POSITION position);  
+const CObject*& GetAt(POSITION position) const;  
 ```  
   
 ### Parameters  
@@ -328,9 +314,7 @@ const CObject*& GetAt(POSITION position) const;
  Gets the number of elements in this list.  
   
 ```  
-INT_PTR GetCount() const;
-
- 
+INT_PTR GetCount() const;  
 ```  
   
 ### Return Value  
@@ -352,12 +336,8 @@ INT_PTR GetCount() const;
  Gets the `CObject` pointer that represents the head element of this list.  
   
 ```  
-CObject*& GetHead();
-
- 
-const CObject*& GetHead() const;
-
- 
+CObject*& GetHead();  
+const CObject*& GetHead() const;  
 ```  
   
 ### Return Value  
@@ -386,9 +366,7 @@ const CObject*& GetHead() const;
  Gets the position of the head element of this list.  
   
 ```  
-POSITION GetHeadPosition() const;
-
- 
+POSITION GetHeadPosition() const;  
 ```  
   
 ### Return Value  
@@ -410,12 +388,8 @@ POSITION GetHeadPosition() const;
  Gets the list element identified by `rPosition`, then sets `rPosition` to the `POSITION` value of the next entry in the list.  
   
 ```  
-CObject*& GetNext(POSITION& rPosition);
-
- 
-const CObject* GetNext(POSITION& rPosition) const;
-
- 
+CObject*& GetNext(POSITION& rPosition);  
+const CObject* GetNext(POSITION& rPosition) const;  
 ```  
   
 ### Parameters  
@@ -459,12 +433,8 @@ const CObject* GetNext(POSITION& rPosition) const;
  Gets the list element identified by `rPosition`, then sets `rPosition` to the `POSITION` value of the previous entry in the list.  
   
 ```  
-CObject*& GetPrev(POSITION& rPosition);
-
- 
-const CObject* GetPrev(POSITION& rPosition) const;
-
- 
+CObject*& GetPrev(POSITION& rPosition);  
+const CObject* GetPrev(POSITION& rPosition) const;  
 ```  
   
 ### Parameters  
@@ -506,9 +476,7 @@ const CObject* GetPrev(POSITION& rPosition) const;
  Returns the number of list elements.  
   
 ```  
-INT_PTR GetSize() const;
-
- 
+INT_PTR GetSize() const;  
 ```  
   
 ### Return Value  
@@ -533,12 +501,8 @@ INT_PTR GetSize() const;
  Gets the `CObject` pointer that represents the tail element of this list.  
   
 ```  
-CObject*& GetTail();
-
- 
-const CObject*& GetTail() const;
-
- 
+CObject*& GetTail();  
+const CObject*& GetTail() const;  
 ```  
   
 ### Return Value  
@@ -563,9 +527,7 @@ const CObject*& GetTail() const;
  Gets the position of the tail element of this list; **NULL** if the list is empty.  
   
 ```  
-POSITION GetTailPosition() const;
-
- 
+POSITION GetTailPosition() const;  
 ```  
   
 ### Return Value  
@@ -669,9 +631,7 @@ POSITION InsertBefore(
  Indicates whether this list contains no elements.  
   
 ```  
-BOOL IsEmpty() const;
-
- 
+BOOL IsEmpty() const;  
 ```  
   
 ### Return Value  

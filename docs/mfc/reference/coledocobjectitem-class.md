@@ -165,9 +165,7 @@ HRESULT ExecCommand(
  Call this member function to get a pointer to the `IOleDocumentView` interface of the currently active view.  
   
 ```  
-LPOLEDOCUMENTVIEW GetActiveView() const;
-
- 
+LPOLEDOCUMENTVIEW GetActiveView() const;  
 ```  
   
 ### Return Value  

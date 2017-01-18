@@ -207,9 +207,7 @@ virtual void AdjustPaneFrames();
  Calculates the size of the borders for a miniframe window.  
   
 ```  
-virtual void CalcBorderSize(CRect& rectBorderSize) const;
-
- 
+virtual void CalcBorderSize(CRect& rectBorderSize) const;  
 ```  
   
 ### Parameters  
@@ -254,9 +252,7 @@ virtual void CalcExpectedDockedRect(
  Determines whether the current pane can be docked to another pane or frame window.  
   
 ```  
-virtual BOOL CanBeAttached() const;
-
- 
+virtual BOOL CanBeAttached() const;  
 ```  
   
 ### Return Value  
@@ -266,9 +262,7 @@ virtual BOOL CanBeAttached() const;
  Determines whether the mini-frame window can be docked to a pane.  
   
 ```  
-virtual BOOL CanBeDockedToPane(const CDockablePane* pDockingBar) const;
-
- 
+virtual BOOL CanBeDockedToPane(const CDockablePane* pDockingBar) const;  
 ```  
   
 ### Parameters  
@@ -425,9 +419,7 @@ static CPaneFrameWnd* __stdcall FrameFromPoint(
  Returns the height of the mini-frame window caption.  
   
 ```  
-virtual int GetCaptionHeight() const;
-
- 
+virtual int GetCaptionHeight() const;  
 ```  
   
 ### Return Value  
@@ -440,9 +432,7 @@ virtual int GetCaptionHeight() const;
  Calculates the bounding rectangle of a mini-frame window caption.  
   
 ```  
-virtual void GetCaptionRect(CRect& rectCaption) const;
-
- 
+virtual void GetCaptionRect(CRect& rectCaption) const;  
 ```  
   
 ### Parameters  
@@ -469,9 +459,7 @@ virtual CString GetCaptionText();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-CDockingManager* GetDockingManager() const;
-
- 
+CDockingManager* GetDockingManager() const;  
 ```  
   
 ### Return Value  
@@ -482,9 +470,7 @@ CDockingManager* GetDockingManager() const;
  Returns the docking mode.  
   
 ```  
-virtual AFX_DOCK_TYPE GetDockingMode() const;
-
- 
+virtual AFX_DOCK_TYPE GetDockingMode() const;  
 ```  
   
 ### Return Value  
@@ -500,9 +486,7 @@ virtual AFX_DOCK_TYPE GetDockingMode() const;
  Returns the first visible pane that is contained in a mini-frame window.  
   
 ```  
-virtual CWnd* GetFirstVisiblePane() const;
-
- 
+virtual CWnd* GetFirstVisiblePane() const;  
 ```  
   
 ### Return Value  
@@ -512,9 +496,7 @@ virtual CWnd* GetFirstVisiblePane() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-CPoint GetHotPoint() const;
-
- 
+CPoint GetHotPoint() const;  
 ```  
   
 ### Return Value  
@@ -525,9 +507,7 @@ CPoint GetHotPoint() const;
  Returns a pane that is contained in the mini-frame window.  
   
 ```  
-virtual CWnd* GetPane() const;
-
- 
+virtual CWnd* GetPane() const;  
 ```  
   
 ### Return Value  
@@ -539,9 +519,7 @@ virtual CWnd* GetPane() const;
  Returns the number of panes that are contained in a mini-frame window.  
   
 ```  
-virtual int GetPaneCount() const;
-
- 
+virtual int GetPaneCount() const;  
 ```  
   
 ### Return Value  
@@ -564,9 +542,7 @@ CWnd* GetParent();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL GetPinState() const;
-
- 
+BOOL GetPinState() const;  
 ```  
   
 ### Return Value  
@@ -577,9 +553,7 @@ BOOL GetPinState() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-CRect GetRecentFloatingRect() const;
-
- 
+CRect GetRecentFloatingRect() const;  
 ```  
   
 ### Return Value  
@@ -590,9 +564,7 @@ CRect GetRecentFloatingRect() const;
  Returns the number of visible panes that are contained in a mini-frame window.  
   
 ```  
-virtual int GetVisiblePaneCount() const;
-
- 
+virtual int GetVisiblePaneCount() const;  
 ```  
   
 ### Return Value  
@@ -637,9 +609,7 @@ virtual LRESULT HitTest(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsCaptured() const;
-
- 
+BOOL IsCaptured() const;  
 ```  
   
 ### Return Value  
@@ -650,9 +620,7 @@ BOOL IsCaptured() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsDelayShow() const;
-
- 
+BOOL IsDelayShow() const;  
 ```  
   
 ### Return Value  
@@ -663,9 +631,7 @@ BOOL IsDelayShow() const;
  Determines whether a mini-frame window should be rolled down.  
   
 ```  
-virtual BOOL IsRollDown() const;
-
- 
+virtual BOOL IsRollDown() const;  
 ```  
   
 ### Return Value  
@@ -680,9 +646,7 @@ virtual BOOL IsRollDown() const;
  Determines whether a mini-frame window should be rolled up.  
   
 ```  
-virtual BOOL IsRollUp() const;
-
- 
+virtual BOOL IsRollUp() const;  
 ```  
   
 ### Return Value  

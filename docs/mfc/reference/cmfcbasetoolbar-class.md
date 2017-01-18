@@ -93,9 +93,7 @@ class CMFCBaseToolBar : public CPane
  Returns the docking mode.  
   
 ```  
-virtual AFX_DOCK_TYPE GetDockingMode() const;
-
- 
+virtual AFX_DOCK_TYPE GetDockingMode() const;  
 ```  
   
 ### Return Value  
@@ -105,9 +103,7 @@ virtual AFX_DOCK_TYPE GetDockingMode() const;
  Returns the minimum size of a toolbar.  
   
 ```  
-virtual void GetMinSize(CSize& size) const;
-
- 
+virtual void GetMinSize(CSize& size) const;  
 ```  
   
 ### Parameters  

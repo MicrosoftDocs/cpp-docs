@@ -212,9 +212,7 @@ virtual BOOL CreateEx(
  Indicates whether an Audio-Video Interleaved (AVI) clip is playing.  
   
 ```  
-BOOL IsPlaying() const;
-
- 
+BOOL IsPlaying() const;  
 ```  
   
 ### Return Value  
@@ -227,9 +225,7 @@ BOOL IsPlaying() const;
  Call this function to open an AVI clip and display its first frame.  
   
 ```  
-BOOL Open(LPCTSTR lpszFileName);
-
- 
+BOOL Open(LPCTSTR lpszFileName);  
 BOOL Open(UINT nID);
 ```  
   

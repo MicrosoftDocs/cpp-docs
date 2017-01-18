@@ -192,9 +192,7 @@ class CMFCVisualManagerOffice2007 : public CMFCVisualManagerOffice2003
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL AlwaysHighlight3DTabs() const;
-
- 
+virtual BOOL AlwaysHighlight3DTabs() const;  
 ```  
   
 ### Return Value  
@@ -261,9 +259,7 @@ virtual COLORREF GetMenuItemTextColor(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual CSize GetNcBtnSize(BOOL bSmall) const;
-
- 
+virtual CSize GetNcBtnSize(BOOL bSmall) const;  
 ```  
   
 ### Parameters  
@@ -277,9 +273,7 @@ virtual CSize GetNcBtnSize(BOOL bSmall) const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-CMFCRibbonBar* GetRibbonBar(CWnd* pWnd) const;
-
- 
+CMFCRibbonBar* GetRibbonBar(CWnd* pWnd) const;  
 ```  
   
 ### Parameters  
@@ -307,9 +301,7 @@ virtual COLORREF GetRibbonHyperlinkTextColor(CMFCRibbonLinkCtrl* pHyperLink);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual int GetRibbonPopupBorderSize(const CMFCRibbonPanelMenu* pPopup) const;
-
- 
+virtual int GetRibbonPopupBorderSize(const CMFCRibbonPanelMenu* pPopup) const;  
 ```  
   
 ### Parameters  
@@ -525,9 +517,7 @@ virtual BOOL IsHighlightWholeMenuItem();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsLayeredRibbonKeyTip() const;
-
- 
+virtual BOOL IsLayeredRibbonKeyTip() const;  
 ```  
   
 ### Return Value  
@@ -560,9 +550,7 @@ virtual BOOL IsOwnerDrawMenuCheck();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsRibbonPresent(CWnd* pWnd) const;
-
- 
+BOOL IsRibbonPresent(CWnd* pWnd) const;  
 ```  
   
 ### Parameters  

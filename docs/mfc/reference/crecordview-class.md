@@ -107,11 +107,8 @@ class AFX_NOVTABLE CRecordView : public CFormView
  When you create an object of a type derived from `CRecordView`, call either form of the constructor to initialize the view object and identify the dialog resource on which the view is based.  
   
 ```  
-explicit CRecordView(LPCTSTR lpszTemplateName);
-
- 
-explicit CRecordView(UINT nIDTemplate);
-```  
+explicit CRecordView(LPCTSTR lpszTemplateName);  
+explicit CRecordView(UINT nIDTemplate);```  
   
 ### Parameters  
  `lpszTemplateName`  

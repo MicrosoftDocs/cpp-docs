@@ -114,8 +114,10 @@ template <class T,
  Creates a modeless dialog box.  
   
 ```  
- 
-HWND Create(HWND hWndParent, LPARAM dwInitParam = NULL);  
+HWND Create(
+    HWND hWndParent,  
+    LPARAM dwInitParam = NULL );  
+
 HWND Create(
     HWND hWndParent,  
     RECT&, 

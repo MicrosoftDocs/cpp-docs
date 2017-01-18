@@ -88,11 +88,9 @@ CMFCFontInfo(
     LPCTSTR lpszScript,  
     BYTE nCharSet,  
     BYTE nPitchAndFamily,  
-    int nType);
-
- 
-CMFCFontInfo(
-    const CMFCFontInfo& src);
+    int nType);  
+  
+CMFCFontInfo(const CMFCFontInfo& src);
 ```  
   
 ### Parameters  
@@ -123,9 +121,7 @@ CMFCFontInfo(
  Retrieves the concatenated names of a font and its character set (script).  
   
 ```  
-CString GetFullName() const;
-
- 
+CString GetFullName() const;  
 ```  
   
 ### Return Value  

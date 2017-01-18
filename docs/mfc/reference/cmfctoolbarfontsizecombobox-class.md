@@ -94,9 +94,7 @@ CMFCToolBarFontSizeComboBox();
  Retrieves the font size, in twips, from the text box of a font size combo box.  
   
 ```  
-int GetTwipSize() const;
-
- 
+int GetTwipSize() const;  
 ```  
   
 ### Return Value  

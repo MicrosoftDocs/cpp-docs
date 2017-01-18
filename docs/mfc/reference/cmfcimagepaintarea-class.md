@@ -105,9 +105,7 @@ CMFCImagePaintArea(CMFCImageEditorDialog* pParentDlg);
  Retrieves the current drawing mode.  
   
 ```  
-IMAGE_EDIT_MODE GetMode() const;
-
- 
+IMAGE_EDIT_MODE GetMode() const;  
 ```  
   
 ### Return Value  

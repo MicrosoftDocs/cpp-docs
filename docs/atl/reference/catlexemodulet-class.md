@@ -176,9 +176,7 @@ DWORD m_dwTimeOut;
  Parses the command line and performs registration if necessary.  
   
 ```
-bool ParseCommandLine(  
-   LPCTSTR lpCmdLine,
-   HRESULT* pnRetCode) throw();
+bool ParseCommandLine(LPCTSTR lpCmdLine, HRESULT* pnRetCode) throw();
 ```  
   
 ### Parameters  

@@ -132,9 +132,7 @@ void Deactivate();
  Returns the coordinates of the last position of the tooltip control.  
   
 ```  
-void GetLastRect(CRect& rect) const;
-
- 
+void GetLastRect(CRect& rect) const;  
 ```  
   
 ### Parameters  

@@ -253,9 +253,7 @@ void EnablePaneMenu(
  Returns a pointer to the currently displayed pop-up menu.  
   
 ```  
-CMFCPopupMenu* GetActivePopup() const;
-
- 
+CMFCPopupMenu* GetActivePopup() const;  
 ```  
   
 ### Return Value  
@@ -279,9 +277,7 @@ COleCntrFrameWndEx* GetContainerFrameWindow();
  Returns the menu resource ID that was specified when the frame window loaded the menu.  
   
 ```  
-UINT GetDefaultResId() const;
-
- 
+UINT GetDefaultResId() const;  
 ```  
   
 ### Return Value  
@@ -327,9 +323,7 @@ CFrameWnd* GetMainFrame();
  Returns a pointer to the menu bar object attached to the frame window.  
   
 ```  
-const CMFCMenuBar* GetMenuBar() const;
-
- 
+const CMFCMenuBar* GetMenuBar() const;  
 ```  
   
 ### Return Value  
@@ -356,9 +350,7 @@ CBasePane* GetPane(UINT nID);
  Returns a list of pane objects that are in a tear-off state.  
   
 ```  
-const CObList& GetTearOffBars() const;
-
- 
+const CObList& GetTearOffBars() const;  
 ```  
   
 ### Return Value  
@@ -435,9 +427,7 @@ BOOL InsertPane(
  Determines whether the pointer to the menu bar object is not `NULL`  
   
 ```  
-BOOL IsMenuBarAvailable() const;
-
- 
+BOOL IsMenuBarAvailable() const;  
 ```  
   
 ### Return Value  
@@ -453,9 +443,7 @@ BOOL IsMenuBarAvailable() const;
 BOOL IsPointNearDockSite(
     CPoint point,  
     DWORD& dwBarAlignment,  
-    BOOL& bOuterEdge) const;
-
- 
+    BOOL& bOuterEdge) const;  
 ```  
   
 ### Parameters  
@@ -729,16 +717,13 @@ CBasePane* PaneFromPoint(
     CPoint point,  
     int nSensitivity,  
     bool bExactBar,  
-    CRuntimeClass* pRTCBarType) const;
-
- 
+    CRuntimeClass* pRTCBarType) const;  
+  
 CBasePane* PaneFromPoint(
     CPoint point,  
     int nSensitivity,  
     DWORD& dwAlignment,  
-    CRuntimeClass* pRTCBarType) const;
-
- 
+    CRuntimeClass* pRTCBarType) const;  
 ```  
   
 ### Parameters  

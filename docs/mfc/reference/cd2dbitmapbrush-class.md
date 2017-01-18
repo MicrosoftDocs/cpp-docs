@@ -136,8 +136,7 @@ CD2DBitmapBrush(
     CRenderTarget* pParentTarget,  
     UINT uiResID,  
     LPCTSTR lpszType = NULL,  
-    CD2DSizeU sizeDest = CD2DSizeU(0,  
-    0), 
+    CD2DSizeU sizeDest = CD2DSizeU(0, 0), 
     D2D1_BITMAP_BRUSH_PROPERTIES* pBitmapBrushProperties = NULL,  
     CD2DBrushProperties* pBrushProperties = NULL,  
     BOOL bAutoDestroy = TRUE);
@@ -146,8 +145,7 @@ CD2DBitmapBrush(
 CD2DBitmapBrush(
     CRenderTarget* pParentTarget,  
     LPCTSTR lpszImagePath,  
-    CD2DSizeU sizeDest = CD2DSizeU(0,  
-    0), 
+    CD2DSizeU sizeDest = CD2DSizeU(0, 0), 
     D2D1_BITMAP_BRUSH_PROPERTIES* pBitmapBrushProperties = NULL,  
     CD2DBrushProperties* pBrushProperties = NULL,  
     BOOL bAutoDestroy = TRUE);
@@ -244,9 +242,7 @@ CD2DBitmap* GetBitmap();
  Gets the method by which the brush horizontally tiles those areas that extend past its bitmap  
   
 ```  
-D2D1_EXTEND_MODE GetExtendModeX() const;
-
- 
+D2D1_EXTEND_MODE GetExtendModeX() const;  
 ```  
   
 ### Return Value  
@@ -256,9 +252,7 @@ D2D1_EXTEND_MODE GetExtendModeX() const;
  Gets the method by which the brush vertically tiles those areas that extend past its bitmap  
   
 ```  
-D2D1_EXTEND_MODE GetExtendModeY() const;
-
- 
+D2D1_EXTEND_MODE GetExtendModeY() const;  
 ```  
   
 ### Return Value  
@@ -268,9 +262,7 @@ D2D1_EXTEND_MODE GetExtendModeY() const;
  Gets the interpolation method used when the brush bitmap is scaled or rotated  
   
 ```  
-D2D1_BITMAP_INTERPOLATION_MODE GetInterpolationMode() const;
-
- 
+D2D1_BITMAP_INTERPOLATION_MODE GetInterpolationMode() const;  
 ```  
   
 ### Return Value  

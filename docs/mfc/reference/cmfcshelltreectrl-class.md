@@ -99,9 +99,7 @@ void EnableShellContextMenu(BOOL bEnable = TRUE);
  Returns the flags set for the [CMFCShellTreeCtrl Class](../../mfc/reference/cmfcshelltreectrl-class.md) object.  
   
 ```  
-DWORD GetFlags() const;
-
- 
+DWORD GetFlags() const;  
 ```  
   
 ### Return Value  
@@ -116,9 +114,7 @@ DWORD GetFlags() const;
 ```  
 BOOL GetItemPath(
     CString& strPath,  
-    HTREEITEM htreeItem = NULL) const;
-
- 
+    HTREEITEM htreeItem = NULL) const;  
 ```  
   
 ### Parameters  
@@ -140,9 +136,7 @@ BOOL GetItemPath(
  Returns a pointer to the [CMFCShellListCtrl Class](../../mfc/reference/cmfcshelllistctrl-class.md) object that is associated with this [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) object.  
   
 ```  
-CMFCShellListCtrl* GetRelatedList() const;
-
- 
+CMFCShellListCtrl* GetRelatedList() const;  
 ```  
   
 ### Return Value  
@@ -218,9 +212,7 @@ void Refresh();
   
 ```  
 BOOL SelectPath(LPCTSTR lpszPath);
-
-BOOL SelectPath(LPCITEMIDLIST lpidl);
-```  
+BOOL SelectPath(LPCITEMIDLIST lpidl);```  
   
 ### Parameters  
  [in] `lpszPath`  

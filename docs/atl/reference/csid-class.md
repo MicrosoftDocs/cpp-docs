@@ -136,9 +136,13 @@ CSid(
     BYTE nSubAuthorityCount,
     ...) throw(...);
 
-    explicit CSid(        LPCTSTR pszAccountName,     LPCTSTR pszSystem = NULL) throw(...);
+explicit CSid(
+    LPCTSTR pszAccountName,
+    LPCTSTR pszSystem = NULL) throw(...);
 
-    explicit CSid(        const SID* pSid,     LPCTSTR pszSystem = NULL) throw(...);
+explicit CSid(
+    const SID* pSid,
+    LPCTSTR pszSystem = NULL) throw(...);
 ```  
   
 ### Parameters  
@@ -309,11 +313,11 @@ bool IsValid() const throw();
  Updates the `CSid` object given the account name and domain, or an existing SID (security identifier) structure.  
   
 ```
-bool LoadAccount(  
+bool LoadAccount(
     LPCTSTR pszAccountName,
     LPCTSTR pszSystem = NULL) throw(...);
 
-bool LoadAccount(  
+bool LoadAccount(
     const SID* pSid,
     LPCTSTR pszSystem = NULL) throw(...);
 ```  
@@ -410,7 +414,7 @@ bool operator<(
  Compares relative value of two security descriptor objects.  
   
 ```
-bool operator<(
+bool operator<=(
     const CSid& lhs,
     const CSid& rhs) throw();
 ```  
@@ -429,7 +433,7 @@ bool operator<(
  Compares relative value of two security descriptor objects.  
   
 ```
-bool operator<(
+bool operator>(
     const CSid& lhs,
     const CSid& rhs) throw();
 ```  
@@ -448,7 +452,7 @@ bool operator<(
  Compares relative value of two security descriptor objects.  
   
 ```
-bool operator<(
+bool operator>=(
     const CSid& lhs,
     const CSid& rhs) throw());
 ```  
@@ -513,12 +517,3 @@ SID_NAME_USE SidNameUse() const throw();
  [Class Overview](../../atl/atl-class-overview.md)   
  [Security Global Functions](../../atl/reference/security-global-functions.md)   
  [Operators](../../atl/reference/atl-operators.md)
-
-
-
-
-
-
-
-
-

@@ -106,9 +106,7 @@ CMFCRibbonStatusBarPane(
     LPCTSTR lpszText,  
     HBITMAP hBmpAnimationList,  
     int cxAnimation=16,  
-    COLORREF clrTrnsp=RGB(192,  
-    192 1,  
-    192) 1,  
+    COLORREF clrTrnsp=RGB(192,192 1,192) 1,  
     HICON hIcon=NULL,  
     BOOL bIsStatic=FALSE);
 
@@ -117,9 +115,7 @@ CMFCRibbonStatusBarPane(
     LPCTSTR lpszText,  
     UINT uiAnimationListResID,  
     int cxAnimation=16,  
-    COLORREF clrTrnsp=RGB(192,  
-    192 1,  
-    192) 1,  
+    COLORREF clrTrnsp=RGB(192, 192 1, 192) 1,  
     HICON hIcon=NULL,  
     BOOL bIsStatic=FALSE);
 ```  
@@ -156,9 +152,7 @@ CMFCRibbonStatusBarPane(
  Gets the longest text string that the status bar pane can display.  
   
 ```  
-LPCTSTR GetAlmostLargeText() const;
-
- 
+LPCTSTR GetAlmostLargeText() const;  
 ```  
   
 ### Return Value  
@@ -168,9 +162,7 @@ LPCTSTR GetAlmostLargeText() const;
  Gets the current setting of the text alignment of the label of the status bar pane.  
   
 ```  
-int GetTextAlign() const;
-
- 
+int GetTextAlign() const;  
 ```  
   
 ### Return Value  
@@ -186,9 +178,7 @@ int GetTextAlign() const;
  Determines whether the animation is in progress.  
   
 ```  
-BOOL IsAnimation() const;
-
- 
+BOOL IsAnimation() const;  
 ```  
   
 ### Return Value  
@@ -198,9 +188,7 @@ BOOL IsAnimation() const;
  Determine whether the pane is located in the extended area of the ribbon status bar.  
   
 ```  
-BOOL IsExtended() const;
-
- 
+BOOL IsExtended() const;  
 ```  
   
 ### Return Value  
@@ -263,16 +251,12 @@ void SetAlmostLargeText(LPCTSTR lpszAlmostLargeText);
 void SetAnimationList(
     HBITMAP hBmpAnimationList,  
     int cxAnimation=16,  
-    COLORREF clrTransp=RGB(192,  
-    192 1,  
-    192) 1);
+    COLORREF clrTransp=RGB(192, 192 1, 192) 1);
 
 BOOL SetAnimationList(
     UINT uiAnimationListResID,  
     int cxAnimation=16,  
-    COLORREF clrTransp=RGB(192,  
-    192 1,  
-    192) 1);
+    COLORREF clrTransp=RGB(192, 192 1, 192) 1);
 ```  
   
 ### Parameters  

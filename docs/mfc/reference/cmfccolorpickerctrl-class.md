@@ -148,9 +148,7 @@ virtual void DrawCursor(
  Retrieves the color that the user selects.  
   
 ```  
-COLORREF GetColor() const;
-
- 
+COLORREF GetColor() const;  
 ```  
   
 ### Return Value  
@@ -184,9 +182,7 @@ void GetHLS(
  Retrieves the hue component of the color that the user selects.  
   
 ```  
-double GetHue() const;
-
- 
+double GetHue() const;  
 ```  
   
 ### Return Value  
@@ -198,9 +194,7 @@ double GetHue() const;
  Retrieves the luminance component of the color that the user selects.  
   
 ```  
-double GetLuminance() const;
-
- 
+double GetLuminance() const;  
 ```  
   
 ### Return Value  
@@ -212,9 +206,7 @@ double GetLuminance() const;
  Retrieves the saturation value of the color that the user selects.  
   
 ```  
-double GetSaturation() const;
-
- 
+double GetSaturation() const;  
 ```  
   
 ### Return Value  

@@ -73,9 +73,7 @@ class CDockablePaneAdapter : public CDockablePane
  Returns the underlying window for the dockable pane adapter.  
   
 ```  
-virtual CWnd* GetWrappedWnd() const;
-
- 
+virtual CWnd* GetWrappedWnd() const;  
 ```  
   
 ### Return Value  

@@ -70,21 +70,10 @@ class CD2DPointF : public D2D1_POINT_2F;
  Constructs a CD2DPointF object from CPoint object.  
   
 ```  
-CD2DPointF(
-    const CPoint& pt);
-
- 
-CD2DPointF(
-    const D2D1_POINT_2F& pt);
-
- 
-CD2DPointF(
-    const D2D1_POINT_2F* pt);
-
- 
-CD2DPointF(
-    FLOAT fX = 0.,  
-    FLOAT fY = 0.);
+CD2DPointF(const CPoint& pt);    
+CD2DPointF(const D2D1_POINT_2F& pt);    
+CD2DPointF(const D2D1_POINT_2F* pt); 
+CD2DPointF(FLOAT fX = 0., FLOAT fY = 0.);
 ```  
   
 ### Parameters  

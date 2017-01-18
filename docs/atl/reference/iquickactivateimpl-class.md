@@ -85,7 +85,7 @@ class ATL_NO_VTABLE IQuickActivateImpl : public IQuickActivate
  Retrieves the current display size for a running control.  
   
 ```
-STDMETHOD(GetContentExtent)(LPSIZEL   pSize);
+STDMETHOD(GetContentExtent)(LPSIZEL pSize);
 ```  
   
 ### Remarks  
@@ -111,7 +111,7 @@ STDMETHOD(QuickActivate)(
  Informs the control of how much display space the container has assigned to it.  
   
 ```
-STDMETHOD(SetContentExtent)(LPSIZEL   pSize);
+STDMETHOD(SetContentExtent)(LPSIZEL pSize);
 ```  
   
 ### Remarks  

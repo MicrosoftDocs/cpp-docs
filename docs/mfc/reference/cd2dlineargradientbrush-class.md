@@ -197,9 +197,7 @@ ID2D1LinearGradientBrush* Get();
  Retrieves the ending coordinates of the linear gradient  
   
 ```  
-CD2DPointF GetEndPoint() const;
-
- 
+CD2DPointF GetEndPoint() const;  
 ```  
   
 ### Return Value  
@@ -209,9 +207,7 @@ CD2DPointF GetEndPoint() const;
  Retrieves the starting coordinates of the linear gradient  
   
 ```  
-CD2DPointF GetStartPoint() const;
-
- 
+CD2DPointF GetStartPoint() const;  
 ```  
   
 ### Return Value  

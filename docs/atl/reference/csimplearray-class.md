@@ -179,7 +179,7 @@ int GetSize() const;
  Retrieves an element from the array.  
   
 ```
-T& operator[]int nindex);
+T& operator[](int nindex);
 ```  
   
 ### Parameters  

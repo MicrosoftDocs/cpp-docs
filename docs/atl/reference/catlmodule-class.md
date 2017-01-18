@@ -226,7 +226,7 @@ virtual LONG Unlock() throw();
  Runs the script contained in a specified resource to register or unregister an object.  
   
 ```
-HRESULT WINAPI UpdateRegistryFromResourceD(  
+HRESULT WINAPI UpdateRegistryFromResourceD(
     UINT nResID,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
@@ -324,13 +324,4 @@ HRESULT WINAPI UpdateRegistryFromResourceS(
  [_ATL_MODULE](atl-typedefs.md#_atl_module)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Module Classes](../../atl/atl-module-classes.md)   
- [Registry Component (Registrar)](../../atl/atl-registry-component-registrar.md)
-
-
-
-
-
-
-
-
-
+ [Registry Component (Registrar)](../../atl/atl-registry-component-registrar.md)  

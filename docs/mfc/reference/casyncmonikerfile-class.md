@@ -167,7 +167,7 @@ virtual DWORD GetBindInfo() const;
  Call this function to retrieve a pointer to the asynchronous transfer binding.  
   
 ```  
-IBinding* GetBinding() const; 
+IBinding* GetBinding() const;  
 ```  
   
 ### Return Value  
@@ -182,7 +182,7 @@ IBinding* GetBinding() const;
  Call this function to retrieve the format of the data in the stream.  
   
 ```  
-FORMATETC* GetFormatEtc() const; 
+FORMATETC* GetFormatEtc() const;  
 ```  
   
 ### Return Value  
@@ -192,9 +192,7 @@ FORMATETC* GetFormatEtc() const;
  Called from the client of an asynchronous moniker as the binding process starts to receive the priority given to the thread for the binding operation.  
   
 ```  
-virtual LONG GetPriority() const;
-
- 
+virtual LONG GetPriority() const;  
 ```  
   
 ### Return Value  

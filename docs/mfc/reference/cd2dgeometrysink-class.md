@@ -242,9 +242,7 @@ ID2D1GeometrySink* Get();
  Checks geometry sink validity  
   
 ```  
-BOOL IsValid() const;
-
- 
+BOOL IsValid() const;  
 ```  
   
 ### Return Value  

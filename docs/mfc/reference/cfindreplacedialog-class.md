@@ -181,9 +181,7 @@ virtual BOOL Create(
  Call this function from your callback function to determine whether the user wants to find the next occurrence of the search string.  
   
 ```  
-BOOL FindNext() const;
-
- 
+BOOL FindNext() const;  
 ```  
   
 ### Return Value  
@@ -193,9 +191,7 @@ BOOL FindNext() const;
  Call this function from your callback function to retrieve the default string to find.  
   
 ```  
-CString GetFindString() const;
-
- 
+CString GetFindString() const;  
 ```  
   
 ### Return Value  
@@ -230,9 +226,7 @@ static CFindReplaceDialog* PASCAL GetNotifier(LPARAM lParam);
  Call this function to retrieve the current replace string.  
   
 ```  
-CString GetReplaceString() const;
-
- 
+CString GetReplaceString() const;  
 ```  
   
 ### Return Value  
@@ -245,9 +239,7 @@ CString GetReplaceString() const;
  Call this function within your callback function to determine whether the user has decided to terminate the dialog box.  
   
 ```  
-BOOL IsTerminating() const;
-
- 
+BOOL IsTerminating() const;  
 ```  
   
 ### Return Value  
@@ -278,9 +270,7 @@ FINDREPLACE m_fr;
  Call this function to determine whether the user wants to match the case of the find string exactly.  
   
 ```  
-BOOL MatchCase() const;
-
- 
+BOOL MatchCase() const;  
 ```  
   
 ### Return Value  
@@ -290,9 +280,7 @@ BOOL MatchCase() const;
  Call this function to determine whether the user wants to match entire words only.  
   
 ```  
-BOOL MatchWholeWord() const;
-
- 
+BOOL MatchWholeWord() const;  
 ```  
   
 ### Return Value  
@@ -302,9 +290,7 @@ BOOL MatchWholeWord() const;
  Call this function to determine whether the user wants all occurrences of the string to be replaced.  
   
 ```  
-BOOL ReplaceAll() const;
-
- 
+BOOL ReplaceAll() const;  
 ```  
   
 ### Return Value  
@@ -314,9 +300,7 @@ BOOL ReplaceAll() const;
  Call this function to determine whether the user wants the current word to be replaced.  
   
 ```  
-BOOL ReplaceCurrent() const;
-
- 
+BOOL ReplaceCurrent() const;  
 ```  
   
 ### Return Value  
@@ -326,9 +310,7 @@ BOOL ReplaceCurrent() const;
  Call this function to determine whether the user wants the search to proceed in a downward direction.  
   
 ```  
-BOOL SearchDown() const;
-
- 
+BOOL SearchDown() const;  
 ```  
   
 ### Return Value  
@@ -336,7 +318,4 @@ BOOL SearchDown() const;
   
 ## See Also  
  [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)   
- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
-
-
+ [Hierarchy Chart](../../mfc/hierarchy-chart.md)  

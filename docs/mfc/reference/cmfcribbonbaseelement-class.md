@@ -240,9 +240,7 @@ virtual int AddToListBox(
  Indicates whether the ribbon element can be added to the quick access toolbar.  
   
 ```  
-virtual BOOL CanBeAddedToQuickAccessToolBar() const;
-
- 
+virtual BOOL CanBeAddedToQuickAccessToolBar() const;  
 ```  
   
 ### Return Value  
@@ -254,9 +252,7 @@ virtual BOOL CanBeAddedToQuickAccessToolBar() const;
  Indicates whether the size of the ribbon element can be compact.  
   
 ```  
-virtual BOOL CanBeCompacted() const;
-
- 
+virtual BOOL CanBeCompacted() const;  
 ```  
   
 ### Return Value  
@@ -450,9 +446,7 @@ virtual CSize GetCompactSize(CDC* pDC);
  Retrieves the user-defined data associated with the ribbon element.  
   
 ```  
-DWORD_PTR GetData() const;
-
- 
+DWORD_PTR GetData() const;  
 ```  
   
 ### Return Value  
@@ -462,9 +456,7 @@ DWORD_PTR GetData() const;
  Returns the description of the ribbon element.  
   
 ```  
-virtual CString GetDescription() const;
-
- 
+virtual CString GetDescription() const;  
 ```  
   
 ### Return Value  
@@ -530,9 +522,7 @@ virtual CMFCRibbonBaseElement* GetHighlighted();
  Returns the command ID of the ribbon element.  
   
 ```  
-UINT GetID() const;
-
- 
+UINT GetID() const;  
 ```  
   
 ### Return Value  
@@ -542,9 +532,7 @@ UINT GetID() const;
  Returns the image size of the ribbon element.  
   
 ```  
-virtual CSize GetImageSize(RibbonImageType R) const;
-
- 
+virtual CSize GetImageSize(RibbonImageType R) const;  
 ```  
   
 ### Return Value  
@@ -568,9 +556,7 @@ virtual CSize GetIntermediateSize(CDC* pDC);
  Returns the keytip associated with the ribbon element.  
   
 ```  
-LPCTSTR GetKeys() const;
-
- 
+LPCTSTR GetKeys() const;  
 ```  
   
 ### Return Value  
@@ -618,9 +604,7 @@ virtual CSize GetKeyTipSize(CDC* pDC);
  Indicates the display location of the ribbon element in a ribbon group.  
   
 ```  
-RibbonElementLocation GetLocationInGroup() const;
-
- 
+RibbonElementLocation GetLocationInGroup() const;  
 ```  
   
 ### Return Value  
@@ -641,9 +625,7 @@ RibbonElementLocation GetLocationInGroup() const;
  Returns the menu keytip for the ribbon element.  
   
 ```  
-LPCTSTR GetMenuKeys() const;
-
- 
+LPCTSTR GetMenuKeys() const;  
 ```  
   
 ### Return Value  
@@ -668,9 +650,7 @@ virtual UINT GetNotifyID();
  Retrieves the original ribbon element.  
   
 ```  
-CMFCRibbonBaseElement* GetOriginal() const;
-
- 
+CMFCRibbonBaseElement* GetOriginal() const;  
 ```  
   
 ### Return Value  
@@ -683,9 +663,7 @@ CMFCRibbonBaseElement* GetOriginal() const;
  Retrieves the ribbon category for the ribbon element.  
   
 ```  
-CMFCRibbonCategory* GetParentCategory() const;
-
- 
+CMFCRibbonCategory* GetParentCategory() const;  
 ```  
   
 ### Return Value  
@@ -697,9 +675,7 @@ CMFCRibbonCategory* GetParentCategory() const;
  Retrieves the ribbon panel that contains the ribbon element.  
   
 ```  
-virtual CMFCRibbonPanel* GetParentPanel() const;
-
- 
+virtual CMFCRibbonPanel* GetParentPanel() const;  
 ```  
   
 ### Return Value  
@@ -711,9 +687,7 @@ virtual CMFCRibbonPanel* GetParentPanel() const;
  Retrieves the parent ribbon bar for the ribbon element.  
   
 ```  
-CMFCRibbonBar* GetParentRibbonBar() const;
-
- 
+CMFCRibbonBar* GetParentRibbonBar() const;  
 ```  
   
 ### Return Value  
@@ -725,9 +699,7 @@ CMFCRibbonBar* GetParentRibbonBar() const;
  Retrieves the parent window for the ribbon element.  
   
 ```  
-virtual CWnd* GetParentWnd() const;
-
- 
+virtual CWnd* GetParentWnd() const;  
 ```  
   
 ### Return Value  
@@ -752,9 +724,7 @@ virtual CMFCRibbonBaseElement* GetPressed();
  Retrieves the command ID of the ribbon element when it is located in the quick access toolbar.  
   
 ```  
-virtual UINT GetQuickAccessToolBarID() const;
-
- 
+virtual UINT GetQuickAccessToolBarID() const;  
 ```  
   
 ### Return Value  
@@ -766,9 +736,7 @@ virtual UINT GetQuickAccessToolBarID() const;
  Returns the bounding rectangle of the ribbon element.  
   
 ```  
-CRect GetRect() const;
-
- 
+CRect GetRect() const;  
 ```  
   
 ### Return Value  
@@ -811,9 +779,7 @@ virtual CSize GetSize(CDC* pDC);
  Returns the text associated with the ribbon element.  
   
 ```  
-LPCTSTR GetText() const;
-
- 
+LPCTSTR GetText() const;  
 ```  
   
 ### Return Value  
@@ -823,9 +789,7 @@ LPCTSTR GetText() const;
  Returns tooltip text of the ribbon element.  
   
 ```  
-virtual CString GetToolTipText() const;
-
- 
+virtual CString GetToolTipText() const;  
 ```  
   
 ### Return Value  
@@ -835,9 +799,7 @@ virtual CString GetToolTipText() const;
  Retrieves the top level ribbon bar for the ribbon element.  
   
 ```  
-CMFCRibbonBar* GetTopLevelRibbonBar() const;
-
- 
+CMFCRibbonBar* GetTopLevelRibbonBar() const;  
 ```  
   
 ### Return Value  
@@ -849,9 +811,7 @@ CMFCRibbonBar* GetTopLevelRibbonBar() const;
  Specifies whether the ribbon element has a compact mode.  
   
 ```  
-virtual BOOL HasCompactMode() const;
-
- 
+virtual BOOL HasCompactMode() const;  
 ```  
   
 ### Return Value  
@@ -866,9 +826,7 @@ virtual BOOL HasCompactMode() const;
  Specifies whether the ribbon element has an intermediate mode.  
   
 ```  
-virtual BOOL HasIntermediateMode() const;
-
- 
+virtual BOOL HasIntermediateMode() const;  
 ```  
   
 ### Return Value  
@@ -880,9 +838,7 @@ virtual BOOL HasIntermediateMode() const;
  Determines whether the ribbon element has a large mode.  
   
 ```  
-virtual BOOL HasLargeMode() const;
-
- 
+virtual BOOL HasLargeMode() const;  
 ```  
   
 ### Return Value  
@@ -895,9 +851,7 @@ virtual BOOL HasLargeMode() const;
  Indicates whether the ribbon element has a menu.  
   
 ```  
-virtual BOOL HasMenu() const;
-
- 
+virtual BOOL HasMenu() const;  
 ```  
   
 ### Return Value  
@@ -927,9 +881,7 @@ virtual CMFCRibbonBaseElement* HitTest(CPoint point);
  Indicates whether the ribbon element is aligned vertically with other ribbon elements.  
   
 ```  
-virtual BOOL IsAlignByColumn() const;
-
- 
+virtual BOOL IsAlignByColumn() const;  
 ```  
   
 ### Return Value  
@@ -942,9 +894,7 @@ virtual BOOL IsAlignByColumn() const;
  Indicates whether the ribbon element image size is always large.  
   
 ```  
-virtual BOOL IsAlwaysLargeImage() const;
-
- 
+virtual BOOL IsAlwaysLargeImage() const;  
 ```  
   
 ### Return Value  
@@ -957,9 +907,7 @@ virtual BOOL IsAlwaysLargeImage() const;
  Indicates whether the ribbon element is in auto repeat mode.  
   
 ```  
-virtual BOOL IsAutoRepeatMode(int& nDelay) const;
-
- 
+virtual BOOL IsAutoRepeatMode(int& nDelay) const;  
 ```  
   
 ### Parameters  
@@ -978,9 +926,7 @@ virtual BOOL IsAutoRepeatMode(int& nDelay) const;
  Specifies whether the ribbon element is checked.  
   
 ```  
-virtual BOOL IsChecked() const;
-
- 
+virtual BOOL IsChecked() const;  
 ```  
   
 ### Return Value  
@@ -990,9 +936,7 @@ virtual BOOL IsChecked() const;
  Specifies whether the ribbon element is in a compact mode.  
   
 ```  
-BOOL IsCompactMode() const;
-
- 
+BOOL IsCompactMode() const;  
 ```  
   
 ### Return Value  
@@ -1002,9 +946,7 @@ BOOL IsCompactMode() const;
  Indicates whether the ribbon element is set to appear as a pop-up command.  
   
 ```  
-BOOL IsDefaultMenuLook() const;
-
- 
+BOOL IsDefaultMenuLook() const;  
 ```  
   
 ### Return Value  
@@ -1016,9 +958,7 @@ BOOL IsDefaultMenuLook() const;
  Specifies whether the ribbon element is disabled.  
   
 ```  
-virtual BOOL IsDisabled() const;
-
- 
+virtual BOOL IsDisabled() const;  
 ```  
   
 ### Return Value  
@@ -1028,9 +968,7 @@ virtual BOOL IsDisabled() const;
  Specifies whether the ribbon element displays a pop-up menu and is dropped down.  
   
 ```  
-virtual BOOL IsDroppedDown() const;
-
- 
+virtual BOOL IsDroppedDown() const;  
 ```  
   
 ### Return Value  
@@ -1040,9 +978,7 @@ virtual BOOL IsDroppedDown() const;
  Specifies whether the ribbon element has the focus.  
   
 ```  
-virtual BOOL IsFocused() const;
-
- 
+virtual BOOL IsFocused() const;  
 ```  
   
 ### Return Value  
@@ -1052,9 +988,7 @@ virtual BOOL IsFocused() const;
  Indicates whether the ribbon element is contained in a ribbon gallery.  
   
 ```  
-virtual BOOL IsGalleryIcon() const;
-
- 
+virtual BOOL IsGalleryIcon() const;  
 ```  
   
 ### Return Value  
@@ -1067,9 +1001,7 @@ virtual BOOL IsGalleryIcon() const;
  Specifies whether ribbon element is highlighted.  
   
 ```  
-virtual BOOL IsHighlighted() const;
-
- 
+virtual BOOL IsHighlighted() const;  
 ```  
   
 ### Return Value  
@@ -1081,9 +1013,7 @@ virtual BOOL IsHighlighted() const;
  Indicates whether the current image for the ribbon element is intermediate size.  
   
 ```  
-BOOL IsIntermediateMode() const;
-
- 
+BOOL IsIntermediateMode() const;  
 ```  
   
 ### Return Value  
@@ -1096,9 +1026,7 @@ BOOL IsIntermediateMode() const;
  Indicates whether the current image for the ribbon element is large size.  
   
 ```  
-BOOL IsLargeMode() const;
-
- 
+BOOL IsLargeMode() const;  
 ```  
   
 ### Return Value  
@@ -1111,9 +1039,7 @@ BOOL IsLargeMode() const;
  Indicates whether the ribbon element is contained in a menu.  
   
 ```  
-BOOL IsMenuMode() const;
-
- 
+BOOL IsMenuMode() const;  
 ```  
   
 ### Return Value  
@@ -1125,9 +1051,7 @@ BOOL IsMenuMode() const;
  Indicates whether the user has clicked the ribbon element.  
   
 ```  
-virtual BOOL IsPressed() const;
-
- 
+virtual BOOL IsPressed() const;  
 ```  
   
 ### Return Value  
@@ -1137,9 +1061,7 @@ virtual BOOL IsPressed() const;
  Indicates whether the ribbon element is contained in the quick access toolbar.  
   
 ```  
-BOOL IsQATMode() const;
-
- 
+BOOL IsQATMode() const;  
 ```  
   
 ### Return Value  
@@ -1151,9 +1073,7 @@ BOOL IsQATMode() const;
  Indicates whether the ribbon element is a display separator.  
   
 ```  
-virtual BOOL IsSeparator() const;
-
- 
+virtual BOOL IsSeparator() const;  
 ```  
   
 ### Return Value  
@@ -1165,9 +1085,7 @@ virtual BOOL IsSeparator() const;
  Indicates whether the ribbon element is contained in a group that displays a common border.  
   
 ```  
-BOOL IsShowGroupBorder() const;
-
- 
+BOOL IsShowGroupBorder() const;  
 ```  
   
 ### Return Value  
@@ -1179,9 +1097,7 @@ BOOL IsShowGroupBorder() const;
  Indicates whether the tooltip is displayed under the ribbon element.  
   
 ```  
-virtual BOOL IsShowTooltipOnBottom() const;
-
- 
+virtual BOOL IsShowTooltipOnBottom() const;  
 ```  
   
 ### Return Value  
@@ -1193,9 +1109,7 @@ virtual BOOL IsShowTooltipOnBottom() const;
  Indicates whether the ribbon element can be selected with the keyboard.  
   
 ```  
-virtual BOOL IsTabStop() const;
-
- 
+virtual BOOL IsTabStop() const;  
 ```  
   
 ### Return Value  
@@ -1208,9 +1122,7 @@ virtual BOOL IsTabStop() const;
  Indicates whether the text for the ribbon element is displayed on the right.  
   
 ```  
-BOOL IsTextAlwaysOnRight() const;
-
- 
+BOOL IsTextAlwaysOnRight() const;  
 ```  
   
 ### Return Value  
@@ -1222,9 +1134,7 @@ BOOL IsTextAlwaysOnRight() const;
  Indicates whether the ribbon element is currently displayed.  
   
 ```  
-BOOL IsVisible() const;
-
- 
+BOOL IsVisible() const;  
 ```  
   
 ### Return Value  
@@ -1236,9 +1146,7 @@ BOOL IsVisible() const;
  Indicates whether the display height of the ribbon element is the same as the display height of the ribbon panel that contains it.  
   
 ```  
-virtual BOOL IsWholeRowHeight() const;
-
- 
+virtual BOOL IsWholeRowHeight() const;  
 ```  
   
 ### Return Value  
@@ -1861,9 +1769,7 @@ virtual void UpdateTooltipInfo();
  Indicates whether the parent element has keyboard focus.  
   
 ```  
-virtual BOOL HasFocus() const;
-
- 
+virtual BOOL HasFocus() const;  
 ```  
   
 ### Return Value  

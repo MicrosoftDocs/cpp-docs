@@ -214,9 +214,7 @@ CToolTipCtrl& GetToolTipCtrl();
  Indicates whether a check box or radio button is an automatic button.  
   
 ```  
-BOOL IsAutoCheck() const;
-
- 
+BOOL IsAutoCheck() const;  
 ```  
   
 ### Return Value  
@@ -228,9 +226,7 @@ BOOL IsAutoCheck() const;
  Indicates whether a button is set to auto-repeat mode.  
   
 ```  
-BOOL IsAutorepeatCommandMode() const;
-
- 
+BOOL IsAutorepeatCommandMode() const;  
 ```  
   
 ### Return Value  
@@ -243,9 +239,7 @@ BOOL IsAutorepeatCommandMode() const;
  Indicates whether a button is a check box button.  
   
 ```  
-BOOL IsCheckBox() const;
-
- 
+BOOL IsCheckBox() const;  
 ```  
   
 ### Return Value  
@@ -257,9 +251,7 @@ BOOL IsCheckBox() const;
  Indicates whether the current button is checked.  
   
 ```  
-BOOL IsChecked() const;
-
- 
+BOOL IsChecked() const;  
 ```  
   
 ### Return Value  
@@ -272,9 +264,7 @@ BOOL IsChecked() const;
  Indicates whether a button is highlighted.  
   
 ```  
-BOOL IsHighlighted() const;
-
- 
+BOOL IsHighlighted() const;  
 ```  
   
 ### Return Value  
@@ -287,9 +277,7 @@ BOOL IsHighlighted() const;
  Indicates whether a button is pushed and highlighted.  
   
 ```  
-BOOL IsPressed() const;
-
- 
+BOOL IsPressed() const;  
 ```  
   
 ### Return Value  
@@ -301,9 +289,7 @@ BOOL IsPressed() const;
  Indicates whether a button is pushed.  
   
 ```  
-BOOL IsPushed() const;
-
- 
+BOOL IsPushed() const;  
 ```  
   
 ### Return Value  
@@ -315,9 +301,7 @@ BOOL IsPushed() const;
  Indicates whether a button is a radio button.  
   
 ```  
-BOOL IsRadioButton() const;
-
- 
+BOOL IsRadioButton() const;  
 ```  
   
 ### Return Value  

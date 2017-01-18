@@ -153,10 +153,8 @@ CMFCRibbonComboBox();
   
 ```  
 BOOL DeleteItem(int iIndex);
-
 BOOL DeleteItem(DWORD_PTR dwData);
-
-BOOL DeleteItem(LPCTSTR lpszText);
+BOOL DeleteItem(LPCTSTR lpszText);
 ```  
   
 ### Parameters  
@@ -192,9 +190,7 @@ void EnableDropDownListResize(BOOL bEnable=FALSE);
  Returns the index of the first item in the list box that matches a specified string.  
   
 ```  
-int FindItem(LPCTSTR lpszText) const;
-
- 
+int FindItem(LPCTSTR lpszText) const;  
 ```  
   
 ### Parameters  
@@ -210,9 +206,7 @@ int FindItem(LPCTSTR lpszText) const;
  Returns the number of items in the list box.  
   
 ```  
-INT_PTR GetCount() const;
-
- 
+INT_PTR GetCount() const;  
 ```  
   
 ### Return Value  
@@ -224,9 +218,7 @@ INT_PTR GetCount() const;
  Gets the index of the currently selected item in the list box.  
   
 ```  
-int GetCurSel() const;
-
- 
+int GetCurSel() const;  
 ```  
   
 ### Return Value  
@@ -265,9 +257,7 @@ virtual CSize GetIntermediateSize(CDC* pDC);
  Returns the string associated with an item at a specified index in the list box.  
   
 ```  
-LPCTSTR GetItem(int iIndex) const;
-
- 
+LPCTSTR GetItem(int iIndex) const;  
 ```  
   
 ### Parameters  
@@ -283,9 +273,7 @@ LPCTSTR GetItem(int iIndex) const;
  Returns the data associated with an item at a specified index in the list box.  
   
 ```  
-DWORD_PTR GetItemData(int iIndex) const;
-
- 
+DWORD_PTR GetItemData(int iIndex) const;  
 ```  
   
 ### Parameters  
@@ -299,9 +287,7 @@ DWORD_PTR GetItemData(int iIndex) const;
  Indicates whether the control contains an edit box.  
   
 ```  
-BOOL HasEditBox() const;
-
- 
+BOOL HasEditBox() const;  
 ```  
   
 ### Return Value  
@@ -313,9 +299,7 @@ BOOL HasEditBox() const;
  Indicates whether or not the list box can be resized.  
   
 ```  
-BOOL IsResizeDropDownList() const;
-
- 
+BOOL IsResizeDropDownList() const;  
 ```  
   
 ### Return Value  
@@ -352,10 +336,8 @@ void RemoveAllItems();
   
 ```  
 BOOL SelectItem(int iIndex);
-
 BOOL SelectItem(DWORD_PTR dwData);
-
-BOOL SelectItem(LPCTSTR lpszText);
+BOOL SelectItem(LPCTSTR lpszText);
 ```  
   
 ### Parameters  

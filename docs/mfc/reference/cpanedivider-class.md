@@ -301,9 +301,7 @@ virtual BOOL CreateEx(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL DoesAllowDynInsertBefore() const;
-
- 
+virtual BOOL DoesAllowDynInsertBefore() const;  
 ```  
   
 ### Return Value  
@@ -367,9 +365,7 @@ static int __stdcall GetDefaultWidth();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-const CBasePane* GetFirstPane() const;
-
- 
+const CBasePane* GetFirstPane() const;  
 ```  
   
 ### Return Value  
@@ -394,9 +390,7 @@ void GetPaneDividers(CObList& lstSliders);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-DWORD GetPaneDividerStyle() const;
-
- 
+DWORD GetPaneDividerStyle() const;  
 ```  
   
 ### Return Value  
@@ -432,9 +426,7 @@ CRect GetRootContainerRect();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetWidth() const;
-
- 
+int GetWidth() const;  
 ```  
   
 ### Return Value  
@@ -481,9 +473,7 @@ virtual BOOL InsertPane(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsAutoHideMode() const;
-
- 
+BOOL IsAutoHideMode() const;  
 ```  
   
 ### Return Value  
@@ -494,9 +484,7 @@ BOOL IsAutoHideMode() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsDefault() const;
-
- 
+BOOL IsDefault() const;  
 ```  
   
 ### Return Value  
@@ -507,9 +495,7 @@ BOOL IsDefault() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsHorizontal() const;
-
- 
+BOOL IsHorizontal() const;  
 ```  
   
 ### Return Value  

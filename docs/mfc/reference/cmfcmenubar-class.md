@@ -146,9 +146,7 @@ virtual void AdjustLocations();
  Determines whether text labels are allowed under images in the menu bar.  
   
 ```  
-virtual BOOL AllowChangeTextLabels() const;
-
- 
+virtual BOOL AllowChangeTextLabels() const;  
 ```  
   
 ### Return Value  
@@ -160,9 +158,7 @@ virtual BOOL AllowChangeTextLabels() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL AllowShowOnPaneMenu() const;
-
- 
+virtual BOOL AllowShowOnPaneMenu() const;  
 ```  
   
 ### Return Value  
@@ -218,9 +214,7 @@ virtual int CalcMaxButtonHeight();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL CanBeClosed() const;
-
- 
+virtual BOOL CanBeClosed() const;  
 ```  
   
 ### Return Value  
@@ -231,9 +225,7 @@ virtual BOOL CanBeClosed() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL CanBeRestored() const;
-
- 
+virtual BOOL CanBeRestored() const;  
 ```  
   
 ### Return Value  
@@ -379,9 +371,7 @@ static void EnableMenuShadows(BOOL bEnable = TRUE);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual int GetAvailableExpandSize() const;
-
- 
+virtual int GetAvailableExpandSize() const;  
 ```  
   
 ### Return Value  
@@ -392,9 +382,7 @@ virtual int GetAvailableExpandSize() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual int GetColumnWidth() const;
-
- 
+virtual int GetColumnWidth() const;  
 ```  
   
 ### Return Value  
@@ -405,9 +393,7 @@ virtual int GetColumnWidth() const;
  Retrieves a handle to the original menu. The framework loads the original menu from the resource file.  
   
 ```  
-HMENU GetDefaultMenu() const;
-
- 
+HMENU GetDefaultMenu() const;  
 ```  
   
 ### Return Value  
@@ -420,9 +406,7 @@ HMENU GetDefaultMenu() const;
  Retrieves the resource identifier for the default menu.  
   
 ```  
-UINT GetDefaultMenuResId() const;
-
- 
+UINT GetDefaultMenuResId() const;  
 ```  
   
 ### Return Value  
@@ -473,9 +457,7 @@ CMFCToolBarComboBoxButton* GetHelpCombobox();
  Retrieves the handle to the menu attached to the [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) object.  
   
 ```  
-HMENU GetHMenu() const;
-
- 
+HMENU GetHMenu() const;  
 ```  
   
 ##  <a name="getmenufont"></a>  CMFCMenuBar::GetMenuFont  
@@ -499,9 +481,7 @@ static const CFont& GetMenuFont(BOOL bHorz = TRUE);
  Retrieves a [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md) object on a menu bar based on the item index.  
   
 ```  
-CMFCToolBarButton* GetMenuItem(int iItem) const;
-
- 
+CMFCToolBarButton* GetMenuItem(int iItem) const;  
 ```  
   
 ### Parameters  
@@ -515,9 +495,7 @@ CMFCToolBarButton* GetMenuItem(int iItem) const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual int GetRowHeight() const;
-
- 
+virtual int GetRowHeight() const;  
 ```  
   
 ### Return Value  
@@ -530,9 +508,7 @@ virtual int GetRowHeight() const;
 ```  
 CMFCToolBarMenuButtonsButton* GetSystemButton(
     UINT uiBtn,  
-    BOOL bByCommand = TRUE) const;
-
- 
+    BOOL bByCommand = TRUE) const;  
 ```  
   
 ### Parameters  
@@ -547,9 +523,7 @@ CMFCToolBarMenuButtonsButton* GetSystemButton(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetSystemButtonsCount() const;
-
- 
+int GetSystemButtonsCount() const;  
 ```  
   
 ### Return Value  
@@ -560,9 +534,7 @@ int GetSystemButtonsCount() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-CMFCToolBarSystemMenuButton* GetSystemMenu() const;
-
- 
+CMFCToolBarSystemMenuButton* GetSystemMenu() const;  
 ```  
   
 ### Return Value  
@@ -587,9 +559,7 @@ static void HighlightDisabledItems(BOOL bHighlight = TRUE);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsButtonExtraSizeAvailable() const;
-
- 
+virtual BOOL IsButtonExtraSizeAvailable() const;  
 ```  
   
 ### Return Value  
@@ -760,9 +730,7 @@ virtual BOOL OnSetDefaultButtonText(CMFCToolBarButton* pButton);
 ```  
 virtual INT_PTR OnToolHitTest(
     CPoint point,  
-    TOOLINFO* pTI) const;
-
- 
+    TOOLINFO* pTI) const;  
 ```  
   
 ### Parameters  

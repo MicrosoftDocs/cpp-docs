@@ -103,9 +103,7 @@ class AFX_NOVTABLE CObject
  Validates this object's integrity.  
   
 ```  
-virtual void AssertValid() const;
-
- 
+virtual void AssertValid() const;  
 ```  
   
 ### Remarks  
@@ -128,11 +126,8 @@ virtual void AssertValid() const;
  These functions are the standard `CObject` constructors.  
   
 ```  
-CObject();
-
- 
-CObject(const CObject& objectSrc);
-```  
+CObject();  
+CObject(const CObject& objectSrc);```  
   
 ### Parameters  
  *objectSrc*  
@@ -154,9 +149,7 @@ CObject(const CObject& objectSrc);
  Dumps the contents of your object to a [CDumpContext](../../mfc/reference/cdumpcontext-class.md) object.  
   
 ```  
-virtual void Dump(CDumpContext& dc) const;
-
- 
+virtual void Dump(CDumpContext& dc) const;  
 ```  
   
 ### Parameters  
@@ -186,9 +179,7 @@ virtual void Dump(CDumpContext& dc) const;
  Returns the `CRuntimeClass` structure corresponding to this object's class.  
   
 ```  
-virtual CRuntimeClass* GetRuntimeClass() const;
-
- 
+virtual CRuntimeClass* GetRuntimeClass() const;  
 ```  
   
 ### Return Value  
@@ -220,9 +211,7 @@ virtual CRuntimeClass* GetRuntimeClass() const;
  Tests this object's relationship to a given class.  
   
 ```  
-BOOL IsKindOf(const CRuntimeClass* pClass) const;
-
- 
+BOOL IsKindOf(const CRuntimeClass* pClass) const;  
 ```  
   
 ### Parameters  
@@ -246,9 +235,7 @@ BOOL IsKindOf(const CRuntimeClass* pClass) const;
  Tests whether this object is eligible for serialization.  
   
 ```  
-BOOL IsSerializable() const;
-
- 
+BOOL IsSerializable() const;  
 ```  
   
 ### Return Value  
@@ -269,8 +256,7 @@ BOOL IsSerializable() const;
  For the Release version of the library, operator **delete** frees the memory allocated by operator **new**.  
   
 ```  
-void PASCAL operator delete(
-    void* p);
+void PASCAL operator delete(void* p);
 
  
 void PASCAL operator delete(
@@ -306,16 +292,10 @@ void PASCAL operator delete(
  For the Release version of the library, operator **new** performs an optimal memory allocation in a manner similar to `malloc`.  
   
 ```  
-void* PASCAL operator new(
-    size_t nSize);
+void* PASCAL operator new(size_t nSize);  
+void* PASCAL operator new(size_t, void* p);
 
- 
-void* PASCAL operator new(
-    size_t, 
-    void* p);
-
- 
-void* PASCAL operator new(
+ void* PASCAL operator new(
     size_t nSize,  
     LPCSTR lpszFileName,  
     int nLine);

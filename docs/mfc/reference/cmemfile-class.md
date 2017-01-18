@@ -149,8 +149,7 @@ void Attach(
  The first overload opens an empty memory file.  
   
 ```  
-CMemFile(
-    UINT nGrowBytes = 1024);
+CMemFile(UINT nGrowBytes = 1024);
 
  
 CMemFile(

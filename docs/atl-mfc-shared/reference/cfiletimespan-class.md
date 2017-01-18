@@ -91,9 +91,7 @@ class CFileTimeSpan
   
 ```
 CFileTimeSpan() throw();
-
 CFileTimeSpan(const CFileTimeSpan& span) throw();
-
 CFileTimeSpan(LONGLONG nSpan) throw();
 ```  
   

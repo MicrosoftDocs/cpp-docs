@@ -142,15 +142,10 @@ class COleDateTime
   
 ```
 bool operator==(const COleDateTime& date) const throw();
-
 bool operator!=(const COleDateTime& date) const throw();
-
 bool operator<(const COleDateTime& date) const throw();
-
 bool operator>(const COleDateTime& date) const throw();
-
 bool operator<=(const COleDateTime& date) const throw();
-
 bool operator>=(const COleDateTime& date) const throw();
 ```  
   
@@ -176,28 +171,22 @@ bool operator>=(const COleDateTime& date) const throw();
   
 ```
 COleDateTime() throw();
-
 COleDateTime(const VARIANT& varSrc) throw();
-
 COleDateTime(DATE dtSrc) throw();
-
 COleDateTime(time_t timeSrc) throw();
-
 COleDateTime(__time64_t timeSrc) throw();
-
 COleDateTime(const SYSTEMTIME& systimeSrc) throw();
-
 COleDateTime(const FILETIME& filetimeSrc) throw();
 
-COleDateTime(  
- int nYear,
- int nMonth,
- int nDay,
- int nHour,
- int nMin,
- int nSec) throw();
+COleDateTime(int nYear,
+    int nMonth,
+    int nDay,
+    int nHour,
+    int nMin,
+    int nSec) throw();
 
-COleDateTime(WORD wDosDate, WORD wDosTime) throw();
+COleDateTime(WORD wDosDate,
+    WORD wDosTime) throw();
 COleDateTime(const DBTIMESTAMP& dbts) throw();
 ```  
   
@@ -758,17 +747,11 @@ DateTimeStatus m_status;
   
 ```
 COleDateTime& operator=(const VARIANT& varSrc) throw();
-
 COleDateTime& operator=(DATE dtSrc) throw();
-
 COleDateTime& operator=(const time_t& timeSrc) throw();
-
 COleDateTime& operator=(const __time64_t& timeSrc) throw();
-
 COleDateTime& operator=(const SYSTEMTIME& systimeSrc) throw();
-
 COleDateTime& operator=(const FILETIME& filetimeSrc) throw();
-
 COleDateTime& operator=(const UDATE& udate) throw();
 ```  
   
@@ -802,9 +785,7 @@ COleDateTime& operator=(const UDATE& udate) throw();
   
 ```
 COleDateTime operator+(COleDateTimeSpan dateSpan) const throw();
-
 COleDateTime operator-(COleDateTimeSpan dateSpan) const throw();
-
 COleDateTimeSpan operator-(const COleDateTime& date) const throw();
 ```  
   
@@ -831,7 +812,6 @@ COleDateTimeSpan operator-(const COleDateTime& date) const throw();
   
 ```
 COleDateTime& operator+=(COleDateTimeSpan dateSpan) throw();
-
 COleDateTime& operator-=(COleDateTimeSpan dateSpan) throw();
 ```  
   
@@ -852,7 +832,7 @@ COleDateTime& operator-=(COleDateTimeSpan dateSpan) throw();
  Converts a **ColeDateTime** value into a **DATE**.  
   
 ```
- operator DATE() const throw();
+operator DATE() const throw();
 ```  
   
 ### Remarks  

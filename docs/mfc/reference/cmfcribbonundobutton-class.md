@@ -137,9 +137,7 @@ CMFCRibbonUndoButton(
  Determines the number of items that a user selected from the drop-down list.  
   
 ```  
-int GetActionNumber() const;
-
- 
+int GetActionNumber() const;  
 ```  
   
 ### Return Value  
@@ -149,9 +147,7 @@ int GetActionNumber() const;
  Indicates whether the object contains a menu.  
   
 ```  
-virtual BOOL HasMenu() const;
-
- 
+virtual BOOL HasMenu() const;  
 ```  
   
 ### Return Value  

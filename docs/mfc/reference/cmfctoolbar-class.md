@@ -361,9 +361,7 @@ void AdjustSize();
  Specifies whether text labels can be shown under images on the toolbar buttons.  
   
 ```  
-virtual BOOL AllowChangeTextLabels() const;
-
- 
+virtual BOOL AllowChangeTextLabels() const;  
 ```  
   
 ### Return Value  
@@ -380,9 +378,7 @@ virtual BOOL AllowChangeTextLabels() const;
  Determines whether the toolbar is displayed in the list of toolbars on the **Toolbars** pane of the **Customize** dialog box.  
   
 ```  
-virtual BOOL AllowShowOnList() const;
-
- 
+virtual BOOL AllowShowOnList() const;  
 ```  
   
 ### Return Value  
@@ -397,9 +393,7 @@ virtual BOOL AllowShowOnList() const;
  Specifies whether text labels under images are currently displayed on the toolbar buttons.  
   
 ```  
-BOOL AreTextLabels() const;
-
- 
+BOOL AreTextLabels() const;  
 ```  
   
 ### Return Value  
@@ -437,9 +431,7 @@ static void AutoGrayInactiveImages(
  Returns the index of a specified [CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md) object in this toolbar.  
   
 ```  
-int ButtonToIndex(const CMFCToolBarButton* pButton) const;
-
- 
+int ButtonToIndex(const CMFCToolBarButton* pButton) const;  
 ```  
   
 ### Parameters  
@@ -511,9 +503,7 @@ virtual CSize CalcSize(BOOL bVertDock);
  Specifies whether a user can close the toolbar.  
   
 ```  
-virtual BOOL CanBeClosed() const;
-
- 
+virtual BOOL CanBeClosed() const;  
 ```  
   
 ### Return Value  
@@ -528,9 +518,7 @@ virtual BOOL CanBeClosed() const;
  Determines whether the system can restore a toolbar to its original state after customization.  
   
 ```  
-virtual BOOL CanBeRestored() const;
-
- 
+virtual BOOL CanBeRestored() const;  
 ```  
   
 ### Return Value  
@@ -549,9 +537,7 @@ virtual BOOL CanBeRestored() const;
  Specifies whether the pane can receive focus.  
   
 ```  
-virtual BOOL CanFocus() const;
-
- 
+virtual BOOL CanFocus() const;  
 ```  
   
 ### Return Value  
@@ -601,9 +587,7 @@ void CleanUpLockedImages();
 ```  
 int CommandToIndex(
     UINT nIDFind,  
-    int iIndexFirst=0) const;
-
- 
+    int iIndexFirst=0) const;  
 ```  
   
 ### Parameters  
@@ -910,9 +894,7 @@ static CMFCToolBar* __stdcall FromHandlePermanent(HWND hwnd);
  Returns a read-only list of buttons in a toolbar.  
   
 ```  
-const CObList& GetAllButtons() const;
-
- 
+const CObList& GetAllButtons() const;  
 ```  
   
 ### Return Value  
@@ -945,9 +927,7 @@ static const CList<UINT,UINT>& GetBasicCommands();
  Returns a pointer to the [CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md) object at a specified index.  
   
 ```  
-CMFCToolBarButton* GetButton(int iIndex) const;
-
- 
+CMFCToolBarButton* GetButton(int iIndex) const;  
 ```  
   
 ### Parameters  
@@ -965,9 +945,7 @@ void GetButtonInfo(
     int nIndex,  
     UINT& nID,  
     UINT& nStyle,  
-    int& iImage) const;
-
- 
+    int& iImage) const;  
 ```  
   
 ### Parameters  
@@ -992,9 +970,7 @@ void GetButtonInfo(
  Returns the dimensions of each button on the toolbar.  
   
 ```  
-CSize GetButtonSize() const;
-
- 
+CSize GetButtonSize() const;  
 ```  
   
 ### Return Value  
@@ -1007,9 +983,7 @@ CSize GetButtonSize() const;
  Returns the current style of the toolbar button that is located at the specified index.  
   
 ```  
-UINT GetButtonStyle(int nIndex) const;
-
- 
+UINT GetButtonStyle(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -1026,15 +1000,11 @@ UINT GetButtonStyle(int nIndex) const;
  Returns the text label of a button that has a specified index.  
   
 ```  
-CString GetButtonText(
-    int nIndex) const;
-
- 
+CString GetButtonText(int nIndex) const;  
+  
 void GetButtonText(
     int nIndex,  
-    CString& rString) const;
-
- 
+    CString& rString) const;  
 ```  
   
 ### Parameters  
@@ -1067,9 +1037,7 @@ static CMFCToolBarImages* GetColdImages();
  Returns the width of the toolbar buttons.  
   
 ```  
-virtual int GetColumnWidth() const;
-
- 
+virtual int GetColumnWidth() const;  
 ```  
   
 ### Return Value  
@@ -1101,9 +1069,7 @@ static int GetCommandButtons(
  Returns the number of buttons and separators on the toolbar.  
   
 ```  
-int GetCount() const;
-
- 
+int GetCount() const;  
 ```  
   
 ### Return Value  
@@ -1171,9 +1137,7 @@ static CMFCToolBarImages* __stdcall GetDisabledMenuImages();
  Retrieves a pointer to the menu button object that is currently displaying its sub-menu.  
   
 ```  
-CMFCToolBarMenuButton* GetDroppedDownMenu(int* pIndex = NULL) const;
-
- 
+CMFCToolBarMenuButton* GetDroppedDownMenu(int* pIndex = NULL) const;  
 ```  
   
 ### Parameters  
@@ -1190,9 +1154,7 @@ CMFCToolBarMenuButton* GetDroppedDownMenu(int* pIndex = NULL) const;
  Specifies whether the images of disabled buttons are dimmed versions of the regular button images, or taken from the collection of disabled button images.  
   
 ```  
-BOOL GetGrayDisabledButtons() const;
-
- 
+BOOL GetGrayDisabledButtons() const;  
 ```  
   
 ### Return Value  
@@ -1205,9 +1167,7 @@ BOOL GetGrayDisabledButtons() const;
  Returns a pointer to the toolbar button that is currently highlighted.  
   
 ```  
-CMFCToolBarButton* GetHighlightedButton() const;
-
- 
+CMFCToolBarButton* GetHighlightedButton() const;  
 ```  
   
 ### Return Value  
@@ -1220,9 +1180,7 @@ CMFCToolBarButton* GetHighlightedButton() const;
  Determines whether the toolbar buttons are *hot-tracked*. If a button is hot-tracked, it is highlighted when the mouse moves across it.  
   
 ```  
-BOOL GetHotBorder() const;
-
- 
+BOOL GetHotBorder() const;  
 ```  
   
 ### Return Value  
@@ -1248,9 +1206,7 @@ static COLORREF GetHotTextColor();
  Returns a handle to the window that had the input focus just before the toolbar did.  
   
 ```  
-HWND GetHwndLastFocus() const;
-
- 
+HWND GetHwndLastFocus() const;  
 ```  
   
 ### Return Value  
@@ -1263,9 +1219,7 @@ HWND GetHwndLastFocus() const;
  Specifies whether calls to set button labels are ignored.  
   
 ```  
-BOOL GetIgnoreSetText() const;
-
- 
+BOOL GetIgnoreSetText() const;  
 ```  
   
 ### Return Value  
@@ -1290,9 +1244,7 @@ static CMFCToolBarImages* GetImages();
  Returns the current size of toolbar button images.  
   
 ```  
-CSize GetImageSize() const;
-
- 
+CSize GetImageSize() const;  
 ```  
   
 ### Return Value  
@@ -1302,9 +1254,7 @@ CSize GetImageSize() const;
  Returns the index offset used to find the toolbar button images for this toolbar in the global list of toolbar button images.  
   
 ```  
-int GetImagesOffset() const;
-
- 
+int GetImagesOffset() const;  
 ```  
   
 ### Return Value  
@@ -1323,9 +1273,7 @@ int GetImagesOffset() const;
 ```  
 virtual void GetInvalidateItemRect(
     int nIndex,  
-    LPRECT lpRect) const;
-
- 
+    LPRECT lpRect) const;  
 ```  
   
 ### Parameters  
@@ -1342,9 +1290,7 @@ virtual void GetInvalidateItemRect(
  Returns the command ID of the toolbar button at a specified index.  
   
 ```  
-UINT GetItemID(int nIndex) const;
-
- 
+UINT GetItemID(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -1360,9 +1306,7 @@ UINT GetItemID(int nIndex) const;
 ```  
 virtual void GetItemRect(
     int nIndex,  
-    LPRECT lpRect) const;
-
- 
+    LPRECT lpRect) const;  
 ```  
   
 ### Parameters  
@@ -1473,9 +1417,7 @@ CMFCToolBarImages* GetLockedImages();
  Returns the default size of locked toolbar images.  
   
 ```  
-CSize GetLockedImageSize() const;
-
- 
+CSize GetLockedImageSize() const;  
 ```  
   
 ### Return Value  
@@ -1552,9 +1494,7 @@ static CSize GetMenuImageSize();
  Retrieves the collection of non-customized buttons of the toolbar.  
   
 ```  
-const CObList& GetOrigButtons() const;
-
- 
+const CObList& GetOrigButtons() const;  
 ```  
   
 ### Return Value  
@@ -1569,9 +1509,7 @@ const CObList& GetOrigButtons() const;
  Retrieves the collection of non-customized reset buttons of the toolbar.  
   
 ```  
-const CObList& GetOrigResetButtons() const;
-
- 
+const CObList& GetOrigResetButtons() const;  
 ```  
   
 ### Return Value  
@@ -1586,9 +1524,7 @@ const CObList& GetOrigResetButtons() const;
  Retrieves the resource ID of the toolbar.  
   
 ```  
-UINT GetResourceID() const;
-
- 
+UINT GetResourceID() const;  
 ```  
   
 ### Return Value  
@@ -1616,9 +1552,7 @@ BOOL GetRouteCommandsViaFrame();
  Returns the height of toolbar buttons.  
   
 ```  
-virtual int GetRowHeight() const;
-
- 
+virtual int GetRowHeight() const;  
 ```  
   
 ### Return Value  
@@ -1805,9 +1739,7 @@ static BOOL IsBasicCommand(UINT uiCmd);
  Determines whether the toolbar can display buttons that have extended borders.  
   
 ```  
-virtual BOOL IsButtonExtraSizeAvailable() const;
-
- 
+virtual BOOL IsButtonExtraSizeAvailable() const;  
 ```  
   
 ### Return Value  
@@ -1822,9 +1754,7 @@ virtual BOOL IsButtonExtraSizeAvailable() const;
  Determines whether the specified button is highlighted.  
   
 ```  
-BOOL IsButtonHighlighted(int iButton) const;
-
- 
+BOOL IsButtonHighlighted(int iButton) const;  
 ```  
   
 ### Parameters  
@@ -1901,9 +1831,7 @@ static BOOL IsCustomizeMode();
  Determines whether a toolbar button is being dragged.  
   
 ```  
-BOOL IsDragButton(const CMFCToolBarButton* pButton) const;
-
- 
+BOOL IsDragButton(const CMFCToolBarButton* pButton) const;  
 ```  
   
 ### Parameters  
@@ -1934,9 +1862,7 @@ BOOL IsExistCustomizeButton();
  Determines whether the toolbar is floating.  
   
 ```  
-virtual BOOL IsFloating() const;
-
- 
+virtual BOOL IsFloating() const;  
 ```  
   
 ### Return Value  
@@ -1978,9 +1904,7 @@ static BOOL IsLastCommandFromButton(CMFCToolBarButton* pButton);
  Determines whether the toolbar is locked.  
   
 ```  
-BOOL IsLocked() const;
-
- 
+BOOL IsLocked() const;  
 ```  
   
 ### Return Value  
@@ -2010,9 +1934,7 @@ BOOL IsOneRowWithSibling();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsResourceChanged() const;
-
- 
+virtual BOOL IsResourceChanged() const;  
 ```  
   
 ### Return Value  
@@ -2034,9 +1956,7 @@ BOOL IsSibling();
  Specifies whether the toolbar is user-defined.  
   
 ```  
-BOOL IsUserDefined() const;
-
- 
+BOOL IsUserDefined() const;  
 ```  
   
 ### Return Value  
@@ -2374,9 +2294,7 @@ virtual BOOL OnSetDefaultButtonText(CMFCToolBarButton* pButton);
 ```  
 virtual BOOL OnUserToolTip(
     CMFCToolBarButton* pButton,  
-    CString& strTTText) const;
-
- 
+    CString& strTTText) const;  
 ```  
   
 ### Parameters  
@@ -2610,8 +2528,7 @@ virtual BOOL SaveState(
  Sets the list of commands that are always displayed when a user opens a menu.  
   
 ```  
-static void __stdcall SetBasicCommands(
-    CList<UINT,UINT>& lstCommands);
+static void __stdcall SetBasicCommands(CList<UINT,UINT>& lstCommands);
 ```  
   
 ### Parameters  
@@ -2944,8 +2861,7 @@ static void __stdcall SetMenuSizes(
  Sets the list of commands that cannot be executed by the user.  
   
 ```  
-static void SetNonPermittedCommands(
-    CList<UINT,UINT>& lstCommands);
+static void SetNonPermittedCommands(CList<UINT,UINT>& lstCommands);
 ```  
   
 ### Parameters  

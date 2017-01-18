@@ -161,9 +161,7 @@ virtual INT_PTR AddSortedItem(
  Indicates whether the combo box button size can change.  
   
 ```  
-virtual BOOL CanBeStretched() const;
-
- 
+virtual BOOL CanBeStretched() const;  
 ```  
   
 ### Return Value  
@@ -300,13 +298,9 @@ virtual CMFCToolBarComboBoxEdit* CreateEdit(
  Deletes a specified item from the list box.  
   
 ```  
-BOOL DeleteItem(int iIndex);
-
- 
-BOOL DeleteItem(DWORD_PTR dwData);
-
- 
-BOOL DeleteItem(LPCTSTR lpszText);
+BOOL DeleteItem(int iIndex);  
+BOOL DeleteItem(DWORD_PTR dwData);  
+  BOOL DeleteItem(LPCTSTR lpszText);
 ```  
   
 ### Parameters  
@@ -352,9 +346,7 @@ virtual void EnableWindow(BOOL bEnable = TRUE);
  Copies a string from the application string table to the specified menu using the combo box button command ID.  
   
 ```  
-virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
-
- 
+virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;  
 ```  
   
 ### Parameters  
@@ -368,9 +360,7 @@ virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
  Returns the index of the first item in the list box that contains a specified string.  
   
 ```  
-int FindItem(LPCTSTR lpszText) const;
-
- 
+int FindItem(LPCTSTR lpszText) const;  
 ```  
   
 ### Parameters  
@@ -407,9 +397,7 @@ static CMFCToolBarComboBoxButton* GetByCmd(
  Returns a pointer to the combo box in the combo box button.  
   
 ```  
-CComboBox* GetComboBox() const;
-
- 
+CComboBox* GetComboBox() const;  
 ```  
   
 ### Return Value  
@@ -431,9 +419,7 @@ UINT GetContextMenuID();
  Returns the number of items in the list box.  
   
 ```  
-INT_PTR GetCount() const;
-
- 
+INT_PTR GetCount() const;  
 ```  
   
 ### Return Value  
@@ -461,9 +447,7 @@ static int GetCountAll(UINT uiCmd);
  Gets the index of the currently selected item in the list box.  
   
 ```  
-int GetCurSel() const;
-
- 
+int GetCurSel() const;  
 ```  
   
 ### Return Value  
@@ -515,9 +499,7 @@ virtual HWND GetHwnd();
  Returns the string associated with an item at a specified index in the list box.  
   
 ```  
-LPCTSTR GetItem(int iIndex=-1) const;
-
- 
+LPCTSTR GetItem(int iIndex=-1) const;  
 ```  
   
 ### Parameters  
@@ -556,9 +538,7 @@ static LPCTSTR GetItemAll(
  Returns the data associated with an item at a specific index in the list box.  
   
 ```  
-DWORD_PTR GetItemData(int iIndex=-1) const;
-
- 
+DWORD_PTR GetItemData(int iIndex=-1) const;  
 ```  
   
 ### Parameters  
@@ -618,9 +598,7 @@ static void* GetItemDataPtrAll(
  Returns the prompt string for the combo box button.  
   
 ```  
-virtual CString GetPrompt() const;
-
- 
+virtual CString GetPrompt() const;  
 ```  
   
 ### Return Value  
@@ -633,9 +611,7 @@ virtual CString GetPrompt() const;
  Gets the text in the edit box.  
   
 ```  
-LPCTSTR GetText() const;
-
- 
+LPCTSTR GetText() const;  
 ```  
   
 ### Return Value  
@@ -663,9 +639,7 @@ static LPCTSTR GetTextAll(UINT uiCmd);
  Indicates whether the combo box currently has the focus.  
   
 ```  
-virtual BOOL HasFocus() const;
-
- 
+virtual BOOL HasFocus() const;  
 ```  
   
 ### Return Value  
@@ -717,9 +691,7 @@ virtual BOOL IsOwnerOf(HWND hwnd);
  Indicates whether the combo box button resides on a ribbon panel.  
   
 ```  
-BOOL IsRibbonButton() const;
-
- 
+BOOL IsRibbonButton() const;  
 ```  
   
 ### Return Value  
@@ -976,16 +948,10 @@ void RemoveAllItems();
 ```  
 BOOL SelectItem(
     int iIndex,  
-    BOOL bNotify=TRUE);
-
- 
-BOOL SelectItem(
-    DWORD_PTR dwData);
-
- 
-BOOL SelectItem(
-    LPCTSTR lpszText);
-```  
+    BOOL bNotify=TRUE);  
+  
+BOOL SelectItem(DWORD_PTR dwData);  
+BOOL SelectItem(LPCTSTR lpszText);```  
   
 ### Parameters  
  [in] `iIndex`  

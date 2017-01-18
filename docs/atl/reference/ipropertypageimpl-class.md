@@ -276,9 +276,7 @@ void SetDirty(BOOL bDirty);
  Provides an array of **IUnknown** pointers for the objects associated with the property page.  
   
 ```
-HRESULT SetObjects(  
-    ULONG nObjects,
-    IUnknown** ppUnk);
+HRESULT SetObjects(ULONG nObjects, IUnknown** ppUnk);
 ```  
   
 ### Remarks  

@@ -124,13 +124,9 @@ void AttachDispatch(
  Constructs a `COleDispatchDriver` object.  
   
 ```  
-COleDispatchDriver();
-
- 
-COleDispatchDriver(LPDISPATCH lpDispatch, BOOL bAutoRelease = TRUE);
-
- 
-COleDispatchDriver(const COleDispatchDriver& dispatchSrc);
+COleDispatchDriver();  
+COleDispatchDriver(LPDISPATCH lpDispatch, BOOL bAutoRelease = TRUE);  
+  COleDispatchDriver(const COleDispatchDriver& dispatchSrc);
 ```  
   
 ### Parameters  
@@ -157,7 +153,6 @@ COleDispatchDriver(const COleDispatchDriver& dispatchSrc);
  Creates an [IDispatch](http://msdn.microsoft.com/en-us/0e171f7f-0022-4e9b-ac8e-98192828e945) interface object and attaches it to the `COleDispatchDriver` object.  
   
 ```  
- 
 BOOL CreateDispatch(
 		REFCLSID clsid,  
 		COleException* pError = NULL);
@@ -209,9 +204,7 @@ LPDISPATCH DetachDispatch();
 void GetProperty(
     DISPID dwDispID,  
     VARTYPE vtProp,  
-    void* pvProp) const;
-
- 
+    void* pvProp) const;  
 ```  
   
 ### Parameters  

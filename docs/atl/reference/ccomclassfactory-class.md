@@ -42,7 +42,9 @@ This class implements the [IClassFactory](http://msdn.microsoft.com/library/wind
 ## Syntax  
   
 ```
-class CComClassFactory : public IClassFactory,   public CComObjectRootEx<CComGlobalsThreadModel>
+class CComClassFactory 
+   : public IClassFactory,  
+     public CComObjectRootEx<CComGlobalsThreadModel>
 ```  
   
 ## Members  

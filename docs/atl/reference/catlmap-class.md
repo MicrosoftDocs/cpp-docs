@@ -42,10 +42,10 @@ This class provides methods for creating and managing a map object.
 ## Syntax  
   
 ```
-template <typename K, 
+template <typename K,
           typename V, 
-          class KTraits = CElementTraits<K>,
-          class VTraits = CElementTraits<V>>  
+          class KTraits = CElementTraits<K>, 
+          class VTraits = CElementTraits<V>>
 class CAtlMap
 ```  
   
@@ -257,7 +257,7 @@ void GetAt(
     KOUTARGTYPE key,
     VOUTARGTYPE value) const;
 
-    CPair* GetAt(POSITION& pos) throw();
+CPair* GetAt(POSITION& pos) throw();
 ```  
   
 ### Parameters  
@@ -321,7 +321,6 @@ const K& GetKeyAt(POSITION pos) const throw();
   
 ```
 CPair* GetNext(POSITION& pos) throw();
-
 const CPair* GetNext(POSITION& pos) const throw();
 ```  
   
@@ -482,10 +481,7 @@ typedef KTraits::OUTARGTYPE KOUTARGTYPE;
  Call this method to look up keys or values in the `CAtlMap` object.  
   
 ```
-bool Lookup(
-    KINARGTYPE key,
-    VOUTARGTYPE value) const;
-
+bool Lookup(KINARGTYPE key, VOUTARGTYPE value) const;
 const CPair* Lookup(KINARGTYPE key) const throw();
 CPair* Lookup(KINARGTYPE key) throw();
 ```  
@@ -507,7 +503,7 @@ CPair* Lookup(KINARGTYPE key) throw();
  Replaces or adds a new element to the `CAtlMap`.  
   
 ```
-V& operator[](kinargtype   key) throw();
+V& operator[](kinargtype key) throw();
 ```  
   
 ### Parameters  
@@ -524,7 +520,7 @@ V& operator[](kinargtype   key) throw();
  Call this method to rehash the `CAtlMap` object.  
   
 ```
-void Rehash(UINT   nBins = 0);
+void Rehash(UINT nBins = 0);
 ```  
   
 ### Parameters  

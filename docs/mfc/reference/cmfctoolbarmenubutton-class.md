@@ -133,11 +133,8 @@ class CMFCToolBarMenuButton : public CMFCToolBarButton
   
 ```  
 CMFCToolBarMenuButton();
-
-CMFCToolBarMenuButton(
-    const CMFCToolBarMenuButton& src);
-
-CMFCToolBarMenuButton(
+CMFCToolBarMenuButton(const CMFCToolBarMenuButton& src);
+CMFCToolBarMenuButton(
     UINT uiID,  
     HMENU hMenu,  
     int iImage,  
@@ -176,9 +173,7 @@ CMFCToolBarMenuButton(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL CompareWith(const CMFCToolBarButton& other) const;
-
- 
+virtual BOOL CompareWith(const CMFCToolBarButton& other) const;  
 ```  
   
 ### Parameters  
@@ -220,9 +215,7 @@ virtual void CreateFromMenu(HMENU hMenu);
  Creates a menu that consists of the commands in the toolbar menu. Returns a handle to the menu.  
   
 ```  
-virtual HMENU CreateMenu() const;
-
- 
+virtual HMENU CreateMenu() const;  
 ```  
   
 ### Return Value  
@@ -282,9 +275,7 @@ void EnableQuickCustomize();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL HasButton() const;
-
- 
+virtual BOOL HasButton() const;  
 ```  
   
 ### Return Value  
@@ -295,9 +286,7 @@ virtual BOOL HasButton() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL HaveHotBorder() const;
-
- 
+virtual BOOL HaveHotBorder() const;  
 ```  
   
 ### Return Value  
@@ -308,9 +297,7 @@ virtual BOOL HaveHotBorder() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsBorder() const;
-
- 
+virtual BOOL IsBorder() const;  
 ```  
   
 ### Return Value  
@@ -321,9 +308,7 @@ virtual BOOL IsBorder() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsClickedOnMenu() const;
-
- 
+BOOL IsClickedOnMenu() const;  
 ```  
   
 ### Return Value  
@@ -345,9 +330,7 @@ BOOL IsQuickMode();
  Gives read-only access to the list of commands in the toolbar menu.  
   
 ```  
-const CObList& GetCommands() const;
-
- 
+const CObList& GetCommands() const;  
 ```  
   
 ### Return Value  
@@ -371,9 +354,7 @@ void GetImageRect(CRect& rectImage);
  Returns the number of rows in the drop-down menu when the menu is in palette mode.  
   
 ```  
-int GetPaletteRows() const;
-
- 
+int GetPaletteRows() const;  
 ```  
   
 ### Return Value  
@@ -386,9 +367,7 @@ int GetPaletteRows() const;
  Returns a pointer to the [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) object that represents the drop-down menu of the button.  
   
 ```  
-CMFCPopupMenu* GetPopupMenu() const;
-
- 
+CMFCPopupMenu* GetPopupMenu() const;  
 ```  
   
 ### Return Value  
@@ -401,9 +380,7 @@ CMFCPopupMenu* GetPopupMenu() const;
  Indicates whether the pop-up menu is currently displayed.  
   
 ```  
-virtual BOOL IsDroppedDown() const;
-
- 
+virtual BOOL IsDroppedDown() const;  
 ```  
   
 ### Return Value  
@@ -413,9 +390,7 @@ virtual BOOL IsDroppedDown() const;
  Specifies whether menu items shows empty submenus.  
   
 ```  
-virtual BOOL IsEmptyMenuAllowed() const;
-
- 
+virtual BOOL IsEmptyMenuAllowed() const;  
 ```  
   
 ### Return Value  
@@ -430,9 +405,7 @@ virtual BOOL IsEmptyMenuAllowed() const;
  Indicates whether the button is in exclusive mode.  
   
 ```  
-virtual BOOL IsExclusive() const;
-
- 
+virtual BOOL IsExclusive() const;  
 ```  
   
 ### Return Value  
@@ -447,9 +420,7 @@ virtual BOOL IsExclusive() const;
  Determines whether the drop-down menu is in palette mode.  
   
 ```  
-BOOL IsMenuPaletteMode() const;
-
- 
+BOOL IsMenuPaletteMode() const;  
 ```  
   
 ### Return Value  
@@ -462,9 +433,7 @@ BOOL IsMenuPaletteMode() const;
  Indicates whether the drop-down menu has a tear-off bar.  
   
 ```  
-virtual BOOL IsTearOffMenu() const;
-
- 
+virtual BOOL IsTearOffMenu() const;  
 ```  
   
 ### Return Value  
@@ -496,9 +465,7 @@ virtual void OnAfterCreatePopupMenu();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL OnBeforeDrag() const;
-
- 
+virtual BOOL OnBeforeDrag() const;  
 ```  
   
 ### Return Value  

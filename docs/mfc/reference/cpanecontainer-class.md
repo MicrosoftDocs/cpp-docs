@@ -308,8 +308,7 @@ CDockablePane* FindTabbedPane(UINT nID);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-CList<UINT, UINT>* GetAssociatedSiblingPaneIDs(
-    CDockablePane* pBar);
+CList<UINT, UINT>* GetAssociatedSiblingPaneIDs(CDockablePane* pBar);
 ```  
   
 ### Parameters  
@@ -323,9 +322,7 @@ CList<UINT, UINT>* GetAssociatedSiblingPaneIDs(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-const CDockablePane* GetLeftPane() const;
-
- 
+const CDockablePane* GetLeftPane() const;  
 ```  
   
 ### Return Value  
@@ -336,9 +333,7 @@ const CDockablePane* GetLeftPane() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-const CPaneContainer* GetLeftPaneContainer() const;
-
- 
+const CPaneContainer* GetLeftPaneContainer() const;  
 ```  
   
 ### Return Value  
@@ -349,9 +344,7 @@ const CPaneContainer* GetLeftPaneContainer() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual void GetMinSize(CSize& size) const;
-
- 
+virtual void GetMinSize(CSize& size) const;  
 ```  
   
 ### Parameters  
@@ -363,9 +356,7 @@ virtual void GetMinSize(CSize& size) const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual void GetMinSizeLeft(CSize& size) const;
-
- 
+virtual void GetMinSizeLeft(CSize& size) const;  
 ```  
   
 ### Parameters  
@@ -377,9 +368,7 @@ virtual void GetMinSizeLeft(CSize& size) const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual void GetMinSizeRight(CSize& size) const;
-
- 
+virtual void GetMinSizeRight(CSize& size) const;  
 ```  
   
 ### Parameters  
@@ -391,9 +380,7 @@ virtual void GetMinSizeRight(CSize& size) const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetNodeCount() const;
-
- 
+int GetNodeCount() const;  
 ```  
   
 ### Return Value  
@@ -404,9 +391,7 @@ int GetNodeCount() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-const CPaneDivider* GetPaneDivider() const;
-
- 
+const CPaneDivider* GetPaneDivider() const;  
 ```  
   
 ### Return Value  
@@ -417,9 +402,7 @@ const CPaneDivider* GetPaneDivider() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-CPaneContainer* GetParentPaneContainer() const;
-
- 
+CPaneContainer* GetParentPaneContainer() const;  
 ```  
   
 ### Return Value  
@@ -430,9 +413,7 @@ CPaneContainer* GetParentPaneContainer() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-CRect GetRecentPaneDividerRect() const;
-
- 
+CRect GetRecentPaneDividerRect() const;  
 ```  
   
 ### Return Value  
@@ -443,9 +424,7 @@ CRect GetRecentPaneDividerRect() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-DWORD GetRecentPaneDividerStyle() const;
-
- 
+DWORD GetRecentPaneDividerStyle() const;  
 ```  
   
 ### Return Value  
@@ -478,9 +457,7 @@ LONG GetRefCount();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual int GetResizeStep() const;
-
- 
+virtual int GetResizeStep() const;  
 ```  
   
 ### Return Value  
@@ -491,9 +468,7 @@ virtual int GetResizeStep() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-const CDockablePane* GetRightPane() const;
-
- 
+const CDockablePane* GetRightPane() const;  
 ```  
   
 ### Return Value  
@@ -504,9 +479,7 @@ const CDockablePane* GetRightPane() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-const CPaneContainer* GetRightPaneContainer() const;
-
- 
+const CPaneContainer* GetRightPaneContainer() const;  
 ```  
   
 ### Return Value  
@@ -517,9 +490,7 @@ const CPaneContainer* GetRightPaneContainer() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetTotalReferenceCount() const;
-
- 
+int GetTotalReferenceCount() const;  
 ```  
   
 ### Return Value  
@@ -532,9 +503,7 @@ int GetTotalReferenceCount() const;
 ```  
 virtual void GetWindowRect(
     CRect& rect,  
-    BOOL bIgnoreVisibility = FALSE) const;
-
- 
+    BOOL bIgnoreVisibility = FALSE) const;  
 ```  
   
 ### Parameters  
@@ -547,9 +516,7 @@ virtual void GetWindowRect(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsDisposed() const;
-
- 
+BOOL IsDisposed() const;  
 ```  
   
 ### Return Value  
@@ -560,9 +527,7 @@ BOOL IsDisposed() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsEmpty() const;
-
- 
+BOOL IsEmpty() const;  
 ```  
   
 ### Return Value  
@@ -573,9 +538,7 @@ BOOL IsEmpty() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsLeftPane(CDockablePane* pBar) const;
-
- 
+BOOL IsLeftPane(CDockablePane* pBar) const;  
 ```  
   
 ### Parameters  
@@ -589,9 +552,7 @@ BOOL IsLeftPane(CDockablePane* pBar) const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsLeftPaneContainer() const;
-
- 
+BOOL IsLeftPaneContainer() const;  
 ```  
   
 ### Return Value  
@@ -602,9 +563,7 @@ BOOL IsLeftPaneContainer() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsLeftPartEmpty(BOOL bCheckVisibility = FALSE) const;
-
- 
+BOOL IsLeftPartEmpty(BOOL bCheckVisibility = FALSE) const;  
 ```  
   
 ### Parameters  
@@ -618,9 +577,7 @@ BOOL IsLeftPartEmpty(BOOL bCheckVisibility = FALSE) const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsRightPartEmpty(BOOL bCheckVisibility = FALSE) const;
-
- 
+BOOL IsRightPartEmpty(BOOL bCheckVisibility = FALSE) const;  
 ```  
   
 ### Parameters  
@@ -634,9 +591,7 @@ BOOL IsRightPartEmpty(BOOL bCheckVisibility = FALSE) const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsVisible() const;
-
- 
+BOOL IsVisible() const;  
 ```  
   
 ### Return Value  

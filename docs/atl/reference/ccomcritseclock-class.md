@@ -44,8 +44,7 @@ This class provides methods for locking and unlocking a critical section object.
 ## Syntax  
   
 ```
-template<class TLock>  
-class CComCritSecLock
+template<class TLock> class CComCritSecLock
 ```  
   
 #### Parameters  
@@ -127,20 +126,3 @@ void Unlock() throw();
 ## See Also  
  [CComCriticalSection Class](../../atl/reference/ccomcriticalsection-class.md)   
  [CComAutoCriticalSection Class](../../atl/reference/ccomautocriticalsection-class.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

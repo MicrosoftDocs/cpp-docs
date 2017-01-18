@@ -88,11 +88,8 @@ class CFormView : public CScrollView
  Constructs a `CFormView` object.  
   
 ```  
-CFormView(LPCTSTR lpszTemplateName);
-
- 
-CFormView(UINT nIDTemplate);
-```  
+CFormView(LPCTSTR lpszTemplateName);  
+CFormView(UINT nIDTemplate);```  
   
 ### Parameters  
  `lpszTemplateName`  
@@ -118,9 +115,7 @@ CFormView(UINT nIDTemplate);
  Used by MFC to ensure that initialization is completed before performing other operations.  
   
 ```  
-BOOL IsInitDlgCompleted() const;
-
- 
+BOOL IsInitDlgCompleted() const;  
 ```  
   
 ### Return Value  

@@ -125,13 +125,11 @@ class CMFCRibbonButton : public CMFCRibbonBaseElement
 ```  
 CMFCRibbonPanel* pPanel = pCategory->AddPanel (
     _T("Clipboard"), // Panel name  
-    m_PanelIcons.ExtractIcon (0));
-*// Panel icon  
+    m_PanelIcons.ExtractIcon (0)); // Panel icon  
+
 // Create the first button ("Paste"):  
 CMFCRibbonButton* pPasteButton = 
-    new CMFCRibbonButton (ID_EDIT_PASTE,
-    _T("Paste"), -1,
-    0);
+    new CMFCRibbonButton (ID_EDIT_PASTE, _T("Paste"), -1, 0);
 
 // The third parameter (-1) disables small images for button.  
 // This button is always displayed with a large image  
@@ -139,17 +137,9 @@ CMFCRibbonButton* pPasteButton =
 pPasteButton->SetMenu (IDR_CONTEXT_MENU);
 
 // Add buttons to the panel. These buttons have only small images.  
-pPanel->Add (new CMFCRibbonButton (ID_EDIT_CUT,
-    _T("Cut"),
-    1));
-
-pPanel->Add (new CMFCRibbonButton (ID_EDIT_COPY,
-    _T("Copy"),
-    2));
-
-pPanel->Add (new CMFCRibbonButton (ID_EDIT_PAINT,
-    _T("Paint"),
-    9));
+pPanel->Add (new CMFCRibbonButton (ID_EDIT_CUT, _T("Cut"), 1));
+pPanel->Add (new CMFCRibbonButton (ID_EDIT_COPY, _T("Copy"), 2));
+pPanel->Add (new CMFCRibbonButton (ID_EDIT_PAINT, _T("Paint"), 9));
 ```  
   
 ## Inheritance Hierarchy  
@@ -310,9 +300,7 @@ virtual int DrawRibbonText(
  Returns the index of a pop-up menu item that is associated with the specified command ID.  
   
 ```  
-int FindSubItemIndexByID(UINT uiID) const;
-
- 
+int FindSubItemIndexByID(UINT uiID) const;  
 ```  
   
 ### Parameters  
@@ -326,9 +314,7 @@ int FindSubItemIndexByID(UINT uiID) const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-CRect GetCommandRect() const;
-
- 
+CRect GetCommandRect() const;  
 ```  
   
 ### Return Value  
@@ -353,9 +339,7 @@ virtual CSize GetCompactSize(CDC* pDC);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-HICON GetIcon(BOOL bLargeIcon = TRUE) const;
-
- 
+HICON GetIcon(BOOL bLargeIcon = TRUE) const;  
 ```  
   
 ### Parameters  
@@ -369,9 +353,7 @@ HICON GetIcon(BOOL bLargeIcon = TRUE) const;
  Returns the index of the image that is associated with the button.  
   
 ```  
-int GetImageIndex(BOOL bLargeImage) const;
-
- 
+int GetImageIndex(BOOL bLargeImage) const;  
 ```  
   
 ### Parameters  
@@ -385,9 +367,7 @@ int GetImageIndex(BOOL bLargeImage) const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual CSize GetImageSize(RibbonImageType type) const;
-
- 
+virtual CSize GetImageSize(RibbonImageType type) const;  
 ```  
   
 ### Parameters  
@@ -415,9 +395,7 @@ virtual CSize GetIntermediateSize(CDC* pDC);
  Returns a handle to a Windows menu that is assigned to the ribbon button.  
   
 ```  
-HMENU GetMenu() const;
-
- 
+HMENU GetMenu() const;  
 ```  
   
 ### Return Value  
@@ -427,9 +405,7 @@ HMENU GetMenu() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-CRect GetMenuRect() const;
-
- 
+CRect GetMenuRect() const;  
 ```  
   
 ### Return Value  
@@ -454,9 +430,7 @@ virtual CSize GetRegularSize(CDC* pDC);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-const CArray<CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& GetSubItems() const;
-
- 
+const CArray<CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& GetSubItems() const;  
 ```  
   
 ### Return Value  
@@ -467,9 +441,7 @@ const CArray<CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& GetSubItems() cons
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetTextRowHeight() const;
-
- 
+int GetTextRowHeight() const;  
 ```  
   
 ### Return Value  
@@ -480,9 +452,7 @@ int GetTextRowHeight() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual CString GetToolTipText() const;
-
- 
+virtual CString GetToolTipText() const;  
 ```  
   
 ### Return Value  
@@ -493,9 +463,7 @@ virtual CString GetToolTipText() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL HasCompactMode() const;
-
- 
+virtual BOOL HasCompactMode() const;  
 ```  
   
 ### Return Value  
@@ -506,9 +474,7 @@ virtual BOOL HasCompactMode() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL HasIntermediateMode() const;
-
- 
+virtual BOOL HasIntermediateMode() const;  
 ```  
   
 ### Return Value  
@@ -519,9 +485,7 @@ virtual BOOL HasIntermediateMode() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL HasLargeMode() const;
-
- 
+virtual BOOL HasLargeMode() const;  
 ```  
   
 ### Return Value  
@@ -532,9 +496,7 @@ virtual BOOL HasLargeMode() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL HasMenu() const;
-
- 
+virtual BOOL HasMenu() const;  
 ```  
   
 ### Return Value  
@@ -545,9 +507,7 @@ virtual BOOL HasMenu() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsAlwaysDrawBorder() const;
-
- 
+virtual BOOL IsAlwaysDrawBorder() const;  
 ```  
   
 ### Return Value  
@@ -558,9 +518,7 @@ virtual BOOL IsAlwaysDrawBorder() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsAlwaysLargeImage() const;
-
- 
+virtual BOOL IsAlwaysLargeImage() const;  
 ```  
   
 ### Return Value  
@@ -571,9 +529,7 @@ virtual BOOL IsAlwaysLargeImage() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsApplicationButton() const;
-
- 
+virtual BOOL IsApplicationButton() const;  
 ```  
   
 ### Return Value  
@@ -584,9 +540,7 @@ virtual BOOL IsApplicationButton() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsCommandAreaHighlighted() const;
-
- 
+virtual BOOL IsCommandAreaHighlighted() const;  
 ```  
   
 ### Return Value  
@@ -597,9 +551,7 @@ virtual BOOL IsCommandAreaHighlighted() const;
  Specifies whether the default command for a ribbon button is enabled.  
   
 ```  
-BOOL IsDefaultCommand() const;
-
- 
+BOOL IsDefaultCommand() const;  
 ```  
   
 ### Return Value  
@@ -609,9 +561,7 @@ BOOL IsDefaultCommand() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsDefaultPanelButton() const;
-
- 
+virtual BOOL IsDefaultPanelButton() const;  
 ```  
   
 ### Return Value  
@@ -622,9 +572,7 @@ virtual BOOL IsDefaultPanelButton() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsDrawTooltipImage() const;
-
- 
+virtual BOOL IsDrawTooltipImage() const;  
 ```  
   
 ### Return Value  
@@ -635,9 +583,7 @@ virtual BOOL IsDrawTooltipImage() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsLargeImage() const;
-
- 
+BOOL IsLargeImage() const;  
 ```  
   
 ### Return Value  
@@ -648,9 +594,7 @@ BOOL IsLargeImage() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsMenuAreaHighlighted() const;
-
- 
+virtual BOOL IsMenuAreaHighlighted() const;  
 ```  
   
 ### Return Value  
@@ -661,9 +605,7 @@ virtual BOOL IsMenuAreaHighlighted() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsMenuOnBottom() const;
-
- 
+BOOL IsMenuOnBottom() const;  
 ```  
   
 ### Return Value  
@@ -674,9 +616,7 @@ BOOL IsMenuOnBottom() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsPopupDefaultMenuLook() const;
-
- 
+virtual BOOL IsPopupDefaultMenuLook() const;  
 ```  
   
 ### Return Value  
@@ -687,9 +627,7 @@ virtual BOOL IsPopupDefaultMenuLook() const;
  Specifies whether the menu is right-aligned.  
   
 ```  
-BOOL IsRightAlignMenu() const;
-
- 
+BOOL IsRightAlignMenu() const;  
 ```  
   
 ### Return Value  
@@ -699,9 +637,7 @@ BOOL IsRightAlignMenu() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsSingleLineText() const;
-
- 
+BOOL IsSingleLineText() const;  
 ```  
   
 ### Return Value  
@@ -799,9 +735,7 @@ BOOL RemoveSubItem(int nIndex);
 ```  
 virtual BOOL SetACCData(
     CWnd* pParent,  
-    CAccessibilityData& data);
-
- 
+    CAccessibilityData& data);  
 ```  
   
 ### Parameters  

@@ -302,9 +302,7 @@ void FreeExtra();
  Returns the array element at the specified index.  
   
 ```  
-CObject* GetAt(INT_PTR nIndex) const;
-
- 
+CObject* GetAt(INT_PTR nIndex) const;  
 ```  
   
 ### Parameters  
@@ -339,9 +337,7 @@ CObject* GetAt(INT_PTR nIndex) const;
  Returns the number of array elements.  
   
 ```  
-INT_PTR GetCount() const;
-
- 
+INT_PTR GetCount() const;  
 ```  
   
 ### Return Value  
@@ -370,12 +366,9 @@ INT_PTR GetCount() const;
  Use this member function to gain direct access to the elements in the array.  
   
 ```  
-const CObject** GetData() const;
-
- 
- 
-    CObject** GetData();
-```  
+const CObject** GetData() const;  
+  
+CObject** GetData();```  
   
 ### Return Value  
  A pointer to the array of `CObject` pointers.  
@@ -405,9 +398,7 @@ const CObject** GetData() const;
  Returns the size of the array.  
   
 ```  
-INT_PTR GetSize() const;
-
- 
+INT_PTR GetSize() const;  
 ```  
   
 ### Remarks  
@@ -433,9 +424,7 @@ INT_PTR GetSize() const;
  Returns the current upper bound of this array.  
   
 ```  
-INT_PTR GetUpperBound() const;
-
- 
+INT_PTR GetUpperBound() const;  
 ```  
   
 ### Return Value  
@@ -530,9 +519,7 @@ void InsertAt(
  Determines if the array is empty.  
   
 ```  
-BOOL IsEmpty() const;
-
- 
+BOOL IsEmpty() const;  
 ```  
   
 ### Return Value  
@@ -542,12 +529,8 @@ BOOL IsEmpty() const;
  These subscript operators are a convenient substitute for the `SetAt` and `GetAt` functions.  
   
 ```  
-CObject*& operator[](int_ptr nindex);
-
- 
-CObject* operator[](int_ptr nindex) const;
-
- 
+CObject*& operator[](int_ptr nindex);  
+CObject* operator[](int_ptr nindex) const;  
 ```  
   
 ### Remarks  

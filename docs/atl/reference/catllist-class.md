@@ -279,7 +279,6 @@ POSITION FindIndex(size_t iElement) const throw();
   
 ```
 E& GetAt(POSITION pos) throw();
-
 const E& GetAt(POSITION pos) const throw();
 ```  
   
@@ -318,7 +317,6 @@ size_t GetCount() const throw();
   
 ```
 E& GetHead() throw();
-
 const E& GetHead() const throw();
 ```  
   
@@ -356,7 +354,6 @@ POSITION GetHeadPosition() const throw();
   
 ```
 E& GetNext(POSITION& pos) throw();
-
 const E& GetNext(POSITION& pos) const throw();
 ```  
   
@@ -380,7 +377,6 @@ const E& GetNext(POSITION& pos) const throw();
   
 ```
 E& GetPrev(POSITION& pos) throw();
-
 const E& GetPrev(POSITION& pos) const throw();
 ```  
   
@@ -404,7 +400,6 @@ const E& GetPrev(POSITION& pos) const throw();
   
 ```
 E& GetTail() throw();
-
 const E& GetTail() const throw();
 ```  
   

@@ -110,9 +110,8 @@ class CSecurityDesc
   
 ```
 CSecurityDesc() throw();
-CSecurityDesc(const CSecurityDesc& rhs) throw(...);
-
-    CSecurityDesc(const SECURITY_DESCRIPTOR& rhs) throw(...);
+CSecurityDesc(const CSecurityDesc& rhs) throw(... );  
+CSecurityDesc(const SECURITY_DESCRIPTOR& rhs) throw(...);
 ```  
   
 ### Parameters  
@@ -468,7 +467,9 @@ operator const SECURITY_DESCRIPTOR *() const throw();
  Sets the control bits of a security descriptor.  
   
 ```
-bool SetControl(SECURITY_DESCRIPTOR_CONTROL ControlBitsOfInterest, SECURITY_DESCRIPTOR_CONTROL ControlBitsToSet) throw();
+bool SetControl(
+    SECURITY_DESCRIPTOR_CONTROL ControlBitsOfInterest, 
+    SECURITY_DESCRIPTOR_CONTROL ControlBitsToSet) throw();
 ```  
   
 ### Parameters  
@@ -492,7 +493,7 @@ inline void SetDacl(
     bool bPresent = true,
     bool bDefaulted = false) throw(...);
 
-    inline void SetDacl(  
+inline void SetDacl(  
     const CDacl& Dacl,
     bool bDefaulted = false) throw(...);
 ```  

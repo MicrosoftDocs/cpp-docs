@@ -41,7 +41,6 @@ Provides a type-safe "wrapper" for objects of class `CPtrArray` or `CObArray`.
 ## Syntax  
   
 ```  
- 
 template<class BASE_CLASS, class TYPE>  
 class CTypedPtrArray : public BASE_CLASS  
 ```  
@@ -115,8 +114,7 @@ INT_PTR Add(TYPE newElement);
  This member function calls `BASE_CLASS`**::Append**.  
   
 ```  
-INT_PTR Append(
-    const CTypedPtrArray<BASE_CLASS, TYPE>& src);
+INT_PTR Append(const CTypedPtrArray<BASE_CLASS, TYPE>& src);
 ```  
   
 ### Parameters  
@@ -139,8 +137,7 @@ INT_PTR Append(
  This member function calls `BASE_CLASS`**::Copy**.  
   
 ```  
-void Copy(
-    const CTypedPtrArray<BASE_CLASS, TYPE>& src);
+void Copy(const CTypedPtrArray<BASE_CLASS, TYPE>& src);
 ```  
   
 ### Parameters  
@@ -180,9 +177,7 @@ TYPE& ElementAt(INT_PTR nIndex);
  This inline function calls `BASE_CLASS`**::GetAt**.  
   
 ```  
-TYPE GetAt(INT_PTR nIndex) const;
-
- 
+TYPE GetAt(INT_PTR nIndex) const;  
 ```  
   
 ### Parameters  
@@ -242,12 +237,8 @@ void InsertAt(
  These inline operators call `BASE_CLASS`**::operator [ ]**.  
   
 ```  
-TYPE& operator[ ](int_ptr nindex);
-
- 
-TYPE operator[ ](int_ptr nindex) const;
-
- 
+TYPE& operator[ ](int_ptr nindex);  
+TYPE operator[ ](int_ptr nindex) const;  
 ```  
   
 ### Parameters  

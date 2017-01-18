@@ -76,9 +76,7 @@ pszPropName  ,
 hBlob  ,  
     HGLOBAL 
 hBlobDefault  
-= NULL);
-
- 
+= NULL);  
 ```  
   
 ### Parameters  
@@ -129,9 +127,7 @@ pPX  ,
 pszPropName  ,  
     BOOL& 
 bValue  ,  
-    BOOL bDefault);
-
- 
+    BOOL bDefault);  
 ```  
   
 ### Parameters  
@@ -173,9 +169,7 @@ pszPropName  ,
     OLE_COLOR& 
 clrValue  ,  
     OLE_COLOR 
-clrDefault);
-
- 
+clrDefault);  
 ```  
   
 ### Parameters  
@@ -218,9 +212,7 @@ pPX  ,
 pszPropName  ,  
     CY& 
 cyValue  ,  
-    CY cyDefault);
-
- 
+    CY cyDefault);  
 ```  
   
 ### Parameters  
@@ -259,9 +251,7 @@ BOOL
 PX_DataPath(
     CPropExchange* 
 pPX,  
-    CDataPathProperty& dataPathProperty);
-
- 
+    CDataPathProperty& dataPathProperty);  
 ```  
   
 ### Parameters  
@@ -301,9 +291,7 @@ pPX  ,
 pszPropName  ,  
     double& 
 doubleValue  ,  
-    double doubleDefault);
-
- 
+    double doubleDefault);  
 ```  
   
 ### Parameters  
@@ -346,9 +334,7 @@ pFontDesc
 NULL,  
     LPFONTDISP 
 pFontDispAmbient  
-= NULL);
-
- 
+= NULL);  
 ```  
   
 ### Parameters  
@@ -394,9 +380,7 @@ pPX  ,
 pszPropName  ,  
     float& 
 floatValue  ,  
-    float floatDefault);
-
- 
+    float floatDefault);  
 ```  
   
 ### Parameters  
@@ -435,9 +419,7 @@ pUnk  ,
 iid  ,  
     LPUNKNOWN 
 pUnkDefault  
-= NULL);
-
- 
+= NULL);  
 ```  
   
 ### Parameters  
@@ -483,9 +465,7 @@ pPX  ,
 pszPropName  ,  
     long& 
 lValue  ,  
-    long lDefault);
-
- 
+    long lDefault);  
 ```  
   
 ### Parameters  
@@ -528,9 +508,7 @@ pPX  ,
 pszPropName  ,  
     CPictureHolder& 
 pict  ,  
-    CPictureHolder& pictDefault);
-
- 
+    CPictureHolder& pictDefault);  
 ```  
   
 ### Parameters  
@@ -573,9 +551,7 @@ pPX  ,
 pszPropName  ,  
     short& 
 sValue  ,  
-    short sDefault);
-
- 
+    short sDefault);  
 ```  
   
 ### Parameters  
@@ -618,9 +594,7 @@ pPX  ,
 pszPropName  ,  
     ULONG& 
 ulValue  ,  
-    long ulDefault);
-
- 
+    long ulDefault);  
 ```  
   
 ### Parameters  
@@ -663,9 +637,7 @@ pPX  ,
 pszPropName  ,  
     USHORT& 
 usValue  ,  
-    USHORT usDefault);
-
- 
+    USHORT usDefault);  
 ```  
   
 ### Parameters  
@@ -708,9 +680,7 @@ pPX  ,
 pszPropName  ,  
     CString& 
 strValue  ,  
-    CString strDefault);
-
- 
+    CString strDefault);  
 ```  
   
 ### Parameters  
@@ -741,9 +711,7 @@ BOOL
 PX_VBXFontConvert(
     CPropExchange* 
 pPX  ,  
-    CFontHolder& font);
-
- 
+    CFontHolder& font);  
 ```  
   
 ### Parameters  

@@ -161,9 +161,7 @@ virtual BOOL EditItem(int iIndex);
  Retrieves the number of strings in an editable list control.  
   
 ```  
-virtual int GetCount() const;
-
- 
+virtual int GetCount() const;  
 ```  
   
 ### Return Value  
@@ -176,9 +174,7 @@ virtual int GetCount() const;
  Retrieves an application-specific 32-bit value that is associated with an editable list control item.  
   
 ```  
-virtual DWORD_PTR GetItemData(int iIndex) const;
-
- 
+virtual DWORD_PTR GetItemData(int iIndex) const;  
 ```  
   
 ### Parameters  
@@ -195,9 +191,7 @@ virtual DWORD_PTR GetItemData(int iIndex) const;
  Retrieves the text of an editable list control item.  
   
 ```  
-virtual CString GetItemText(int iIndex) const;
-
- 
+virtual CString GetItemText(int iIndex) const;  
 ```  
   
 ### Parameters  
@@ -213,9 +207,7 @@ virtual CString GetItemText(int iIndex) const;
  Returns the handle to the current embedded list view control.  
   
 ```  
-virtual HWND GetListHwnd() const;
-
- 
+virtual HWND GetListHwnd() const;  
 ```  
   
 ### Return Value  
@@ -228,9 +220,7 @@ virtual HWND GetListHwnd() const;
  Retrieves the zero-based index of the currently selected item in an editable list control.  
   
 ```  
-virtual int GetSelItem() const;
-
- 
+virtual int GetSelItem() const;  
 ```  
   
 ### Return Value  

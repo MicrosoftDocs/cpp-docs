@@ -338,9 +338,7 @@ void EnableUserDefinedToolbars(BOOL bEnable=TRUE);
  Populates the provided `CListBox` object with the commands in the **All Commands** category.  
   
 ```  
-virtual void FillAllCommandsList(CListBox& wndListOfCommands) const;
-
- 
+virtual void FillAllCommandsList(CListBox& wndListOfCommands) const;  
 ```  
   
 ### Parameters  
@@ -360,9 +358,7 @@ virtual void FillAllCommandsList(CListBox& wndListOfCommands) const;
 ```  
 void FillCategoriesComboBox(
     CComboBox& wndCategory,  
-    BOOL bAddEmpty = TRUE) const;
-
- 
+    BOOL bAddEmpty = TRUE) const;  
 ```  
   
 ### Parameters  
@@ -387,9 +383,7 @@ void FillCategoriesComboBox(
 ```  
 void FillCategoriesListBox(
     CListBox& wndCategory,  
-    BOOL bAddEmpty = TRUE) const;
-
- 
+    BOOL bAddEmpty = TRUE) const;  
 ```  
   
 ### Parameters  
@@ -412,9 +406,7 @@ void FillCategoriesListBox(
  Retrieves the name that is associated with the given command ID.  
   
 ```  
-LPCTSTR GetCommandName(UINT uiCmd) const;
-
- 
+LPCTSTR GetCommandName(UINT uiCmd) const;  
 ```  
   
 ### Parameters  
@@ -430,9 +422,7 @@ LPCTSTR GetCommandName(UINT uiCmd) const;
 ```  
 int GetCountInCategory(
     LPCTSTR lpszItemName,  
-    const CObList& lstCommands) const;
-
- 
+    const CObList& lstCommands) const;  
 ```  
   
 ### Parameters  
@@ -452,9 +442,7 @@ int GetCountInCategory(
  Retrieves the set of flags that affect the behavior of the dialog box.  
   
 ```  
-UINT GetFlags() const;
-
- 
+UINT GetFlags() const;  
 ```  
   
 ### Return Value  

@@ -159,9 +159,7 @@ COleObjectFactory(
  Returns a reference to the OLE class ID this factory represents.  
   
 ```  
-REFCLSID GetClassID() const;
-
- 
+REFCLSID GetClassID() const;  
 ```  
   
 ### Return Value  
@@ -206,9 +204,7 @@ BOOL IsLicenseValid();
  Returns a nonzero value if the factory is registered with the OLE system DLLs.  
   
 ```  
-virtual BOOL IsRegistered() const;
-
- 
+virtual BOOL IsRegistered() const;  
 ```  
   
 ### Return Value  
@@ -287,11 +283,8 @@ static BOOL PASCAL UnregisterAll();
  Registers all of the application's object factories with the OLE system registry.  
   
 ```  
-void UpdateRegistry(LPCTSTR lpszProgID = NULL);
-
- 
-virtual BOOL UpdateRegistry(BOOL bRegister);
-```  
+void UpdateRegistry(LPCTSTR lpszProgID = NULL);  
+virtual BOOL UpdateRegistry(BOOL bRegister);```  
   
 ### Parameters  
  `lpszProgID`  

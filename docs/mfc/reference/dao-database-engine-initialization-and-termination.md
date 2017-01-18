@@ -52,9 +52,7 @@ When using MFC DAO objects, the DAO database engine must first be initialized an
  
 void AfxDaoInit();
 
-throw(CDaoException*);
-
- 
+throw(CDaoException*);  
 ```  
   
 ### Remarks  
@@ -70,9 +68,7 @@ throw(CDaoException*);
   
 ```  
  
-void AfxDaoTerm();
-
- 
+void AfxDaoTerm();  
 ```  
   
 ### Remarks  

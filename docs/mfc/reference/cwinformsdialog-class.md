@@ -97,9 +97,7 @@ CWinFormsDialog(UINT nIDTemplate = IDD);
  Retrieves a reference to the Windows Forms user control.  
   
 ```  
-inline TManagedControl^ GetControl() const;
-
- 
+inline TManagedControl^ GetControl() const;  
 ```  
   
 ### Return Value  

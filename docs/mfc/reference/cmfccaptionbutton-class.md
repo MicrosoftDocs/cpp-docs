@@ -126,9 +126,7 @@ CMFCCaptionButton(
  Returns the command represented by the button.  
   
 ```  
-UINT GetHit() const;
-
- 
+UINT GetHit() const;  
 ```  
   
 ### Return Value  
@@ -152,9 +150,7 @@ UINT GetHit() const;
 ```  
 virtual CMenuImages::IMAGES_IDS GetIconID(
     BOOL bHorz,  
-    BOOL bMaximized = FALSE) const;
-
- 
+    BOOL bMaximized = FALSE) const;  
 ```  
   
 ### Parameters  
@@ -174,9 +170,7 @@ virtual CMenuImages::IMAGES_IDS GetIconID(
  Returns the rectangle occupied by the button.  
   
 ```  
-virtual CRect GetRect() const;
-
- 
+virtual CRect GetRect() const;  
 ```  
   
 ### Return Value  
@@ -202,9 +196,7 @@ static CSize GetSize();
  Indicates whether the title bar height is set to mini size.  
   
 ```  
-BOOL IsMiniFrameButton() const;
-
- 
+BOOL IsMiniFrameButton() const;  
 ```  
   
 ### Return Value  

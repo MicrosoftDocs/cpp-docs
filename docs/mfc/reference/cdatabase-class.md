@@ -167,9 +167,7 @@ void Cancel();
  Call this member function to determine whether the database allows transactions.  
   
 ```  
-BOOL CanTransact() const;
-
- 
+BOOL CanTransact() const;  
 ```  
   
 ### Return Value  
@@ -182,9 +180,7 @@ BOOL CanTransact() const;
  Call this member function to determine whether the `CDatabase` object allows updates.  
   
 ```  
-BOOL CanUpdate() const;
-
- 
+BOOL CanUpdate() const;  
 ```  
   
 ### Return Value  
@@ -270,9 +266,7 @@ void ExecuteSQL(LPCTSTR lpszSQL);
  Call this member function to determine the persistence of bookmarks on a recordset object after certain operations.  
   
 ```  
-DWORD GetBookmarkPersistence() const;
-
- 
+DWORD GetBookmarkPersistence() const;  
 ```  
   
 ### Return Value  
@@ -299,9 +293,7 @@ DWORD GetBookmarkPersistence() const;
  Call this member function to retrieve the connection string used during the call to `OpenEx` or `Open` that connected the `CDatabase` object to a data source.  
   
 ```  
-const CString GetConnect() const;
-
- 
+const CString GetConnect() const;  
 ```  
   
 ### Return Value  
@@ -314,9 +306,7 @@ const CString GetConnect() const;
  Call this member function to determine how a [CommitTrans](#committrans) operation affects cursors on open recordset objects.  
   
 ```  
-int GetCursorCommitBehavior() const;
-
- 
+int GetCursorCommitBehavior() const;  
 ```  
   
 ### Return Value  
@@ -337,9 +327,7 @@ int GetCursorCommitBehavior() const;
  Call this member function to determine how a [Rollback](#rollback) operation affects cursors on open recordset objects.  
   
 ```  
-int GetCursorRollbackBehavior() const;
-
- 
+int GetCursorRollbackBehavior() const;  
 ```  
   
 ### Return Value  
@@ -360,9 +348,7 @@ int GetCursorRollbackBehavior() const;
  Call this member function to retrieve the name of the currently connected database (provided that the data source defines a named object called "database").  
   
 ```  
-CString GetDatabaseName() const;
-
- 
+CString GetDatabaseName() const;  
 ```  
   
 ### Return Value  
@@ -377,9 +363,7 @@ CString GetDatabaseName() const;
  Call this member function to determine whether the `CDatabase` object is currently connected to a data source.  
   
 ```  
-BOOL IsOpen() const;
-
- 
+BOOL IsOpen() const;  
 ```  
   
 ### Return Value  

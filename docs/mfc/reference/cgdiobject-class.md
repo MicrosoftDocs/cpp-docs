@@ -203,9 +203,7 @@ static CGdiObject* PASCAL FromHandle(HGDIOBJ hObject);
 ```  
 int GetObject(
     int nCount,  
-    LPVOID lpObject) const;
-
- 
+    LPVOID lpObject) const;  
 ```  
   
 ### Parameters  
@@ -238,9 +236,7 @@ int GetObject(
  Retrieves the type of the GDI object.  
   
 ```  
-UINT GetObjectType() const;
-
- 
+UINT GetObjectType() const;  
 ```  
   
 ### Return Value  
@@ -276,9 +272,7 @@ UINT GetObjectType() const;
  Returns `m_hObject` unless **this** is **NULL**, in which case **NULL** is returned.  
   
 ```  
-HGDIOBJ GetSafeHandle() const;
-
- 
+HGDIOBJ GetSafeHandle() const;  
 ```  
   
 ### Return Value  
@@ -301,9 +295,7 @@ HGDIOBJ m_hObject;
  Determines if two GDI objects are logically not equal.  
   
 ```  
-BOOL operator!=(const CGdiObject& obj) const;
-
- 
+BOOL operator!=(const CGdiObject& obj) const;  
 ```  
   
 ### Parameters  
@@ -317,9 +309,7 @@ BOOL operator!=(const CGdiObject& obj) const;
  Determines if two GDI objects are logically equal.  
   
 ```  
-BOOL operator==(const CGdiObject& obj) const;
-
- 
+BOOL operator==(const CGdiObject& obj) const;  
 ```  
   
 ### Parameters  
@@ -333,9 +323,7 @@ BOOL operator==(const CGdiObject& obj) const;
  Retrieves a `HANDLE` to the attached Windows GDI object; otherwise **NULL** if no object is attached.  
   
 ```  
-operator HGDIOBJ() const;
-
- 
+operator HGDIOBJ() const;  
 ```  
   
 ##  <a name="unrealizeobject"></a>  CGdiObject::UnrealizeObject  

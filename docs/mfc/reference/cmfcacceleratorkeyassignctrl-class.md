@@ -96,9 +96,7 @@ CMFCAcceleratorKeyAssignCtrl();
  Retrieves the `ACCEL` structure for a shortcut key pressed in the [CMFCAcceleratorKeyAssignCtrl](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md) object.  
   
 ```  
-ACCEL const* GetAccel() const;
-
- 
+ACCEL const* GetAccel() const;  
 ```  
   
 ### Return Value  
@@ -111,9 +109,7 @@ ACCEL const* GetAccel() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsFocused() const;
-
- 
+BOOL IsFocused() const;  
 ```  
   
 ### Return Value  
@@ -124,9 +120,7 @@ BOOL IsFocused() const;
  Determines whether a shortcut key has been defined in the [CMFCAcceleratorKeyAssignCtrl](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md) object.  
   
 ```  
-BOOL IsKeyDefined() const;
-
- 
+BOOL IsKeyDefined() const;  
 ```  
   
 ### Return Value  

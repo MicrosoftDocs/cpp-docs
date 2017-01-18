@@ -91,9 +91,7 @@ CTreeView();
  Returns a reference to the tree control associated with the view.  
   
 ```  
-CTreeCtrl& GetTreeCtrl() const;
-
- 
+CTreeCtrl& GetTreeCtrl() const;  
 ```  
   
 ## See Also  

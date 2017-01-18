@@ -168,9 +168,7 @@ void EnableOtherButton(
  Gets the current color of the property.  
   
 ```  
-COLORREF GetColor() const;
-
- 
+COLORREF GetColor() const;  
 ```  
   
 ### Return Value  

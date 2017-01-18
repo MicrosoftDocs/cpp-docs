@@ -229,8 +229,7 @@ BOOL CreateEx(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-CMFCRibbonBaseElement* FindByID(
-    UINT uiCmdID, BOOL = TRUE);
+CMFCRibbonBaseElement* FindByID(UINT uiCmdID, BOOL = TRUE);
 ```  
   
 ### Parameters  
@@ -259,9 +258,7 @@ CMFCRibbonBaseElement* FindElement(UINT uiID);
  Returns the number of elements that are located in the main area of the ribbon status bar.  
   
 ```  
-int GetCount() const;
-
- 
+int GetCount() const;  
 ```  
   
 ### Return Value  
@@ -287,9 +284,7 @@ CMFCRibbonBaseElement* GetElement(int nIndex);
  Returns the number of elements that are located in the extended area of the ribbon status bar.  
   
 ```  
-int GetExCount() const;
-
- 
+int GetExCount() const;  
 ```  
   
 ### Return Value  
@@ -315,9 +310,7 @@ CMFCRibbonBaseElement* GetExElement(int nIndex);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL GetExtendedArea(CRect& rect) const;
-
- 
+virtual BOOL GetExtendedArea(CRect& rect) const;  
 ```  
   
 ### Parameters  
@@ -331,9 +324,7 @@ virtual BOOL GetExtendedArea(CRect& rect) const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetSpace() const;
-
- 
+int GetSpace() const;  
 ```  
   
 ### Return Value  
@@ -344,9 +335,7 @@ int GetSpace() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsBottomFrame() const;
-
- 
+BOOL IsBottomFrame() const;  
 ```  
   
 ### Return Value  
@@ -357,9 +346,7 @@ BOOL IsBottomFrame() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsExtendedElement(CMFCRibbonBaseElement* pElement) const;
-
- 
+BOOL IsExtendedElement(CMFCRibbonBaseElement* pElement) const;  
 ```  
   
 ### Parameters  
@@ -373,9 +360,7 @@ BOOL IsExtendedElement(CMFCRibbonBaseElement* pElement) const;
  Determines whether information mode is enabled for the ribbon status bar.  
   
 ```  
-BOOL IsInformationMode() const;
-
- 
+BOOL IsInformationMode() const;  
 ```  
   
 ### Return Value  

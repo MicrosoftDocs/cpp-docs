@@ -182,7 +182,7 @@ BOOL CrackUrl(LPCTSTR lpszUrl, DWORD dwFlags = 0) throw();
  This method constructs a URL string from a CUrl object's component fields.  
   
 ```
-inline BOOL CreateUrl(  
+inline BOOL CreateUrl(
     LPTSTR lpszUrl,
     DWORD* pdwMaxLength,
     DWORD dwFlags = 0) const throw();

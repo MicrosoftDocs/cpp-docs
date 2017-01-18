@@ -259,9 +259,7 @@ CEdit* GetEditCtrl();
  Call this member function to get the extended styles used for a `CComboBoxEx` control.  
   
 ```  
-DWORD GetExtendedStyle() const;
-
- 
+DWORD GetExtendedStyle() const;  
 ```  
   
 ### Return Value  
@@ -274,9 +272,7 @@ DWORD GetExtendedStyle() const;
  Call this member function to get a pointer to the image list used by a `CComboBoxEx` control.  
   
 ```  
-CImageList* GetImageList() const;
-
- 
+CImageList* GetImageList() const;  
 ```  
   
 ### Return Value  

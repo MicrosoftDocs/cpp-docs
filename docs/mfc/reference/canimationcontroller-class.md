@@ -206,9 +206,7 @@ CAnimationController(void);
  Called by the framework to clean up the group when animation has been scheduled.  
   
 ```  
-void CleanUpGroup(UINT32 nGroupID);
-
- 
+void CleanUpGroup(UINT32 nGroupID);  
 void CleanUpGroup(CAnimationGroup* pGroup);
 ```  
   
@@ -338,9 +336,7 @@ virtual BOOL EnableStoryboardEventHandler(
  Finds an animation group by its Group ID.  
   
 ```  
-CAnimationGroup* FindAnimationGroup(UINT32 nGroupID);
-
- 
+CAnimationGroup* FindAnimationGroup(UINT32 nGroupID);  
 CAnimationGroup* FindAnimationGroup(IUIAnimationStoryboard* pStoryboard);
 ```  
   
@@ -472,9 +468,7 @@ virtual BOOL IsAnimationInProgress();
  Tells whether animation controller is valid.  
   
 ```  
-BOOL IsValid() const;
-
- 
+BOOL IsValid() const;  
 ```  
   
 ### Return Value  

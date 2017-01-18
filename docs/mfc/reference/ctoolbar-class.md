@@ -148,9 +148,7 @@ class CToolBar : public CControlBar
  This member function returns the index of the first toolbar button, starting at position 0, whose command ID matches `nIDFind`.  
   
 ```  
-int CommandToIndex(UINT nIDFind) const;
-
- 
+int CommandToIndex(UINT nIDFind) const;  
 ```  
   
 ### Parameters  
@@ -268,9 +266,7 @@ void GetButtonInfo(
     int nIndex,  
     UINT& nID,  
     UINT& nStyle,  
-    int& iImage) const;
-
- 
+    int& iImage) const;  
 ```  
   
 ### Parameters  
@@ -295,9 +291,7 @@ void GetButtonInfo(
  Call this member function to retrieve the style of a button or separator on the toolbar.  
   
 ```  
-UINT GetButtonStyle(int nIndex) const;
-
- 
+UINT GetButtonStyle(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -314,16 +308,11 @@ UINT GetButtonStyle(int nIndex) const;
  Call this member function to retrieve the text that appears on a button.  
   
 ```  
-CString GetButtonText(
-    int nIndex) const;
-
- 
- 
+CString GetButtonText(int nIndex) const;  
+  
 void GetButtonText(
     int nIndex,  
-    CString& rString) const;
-
- 
+    CString& rString) const;  
 ```  
   
 ### Parameters  
@@ -343,9 +332,7 @@ void GetButtonText(
  This member function returns the command ID of the button or separator specified by `nIndex`.  
   
 ```  
-UINT GetItemID(int nIndex) const;
-
- 
+UINT GetItemID(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -364,9 +351,7 @@ UINT GetItemID(int nIndex) const;
 ```  
 virtual void GetItemRect(
     int nIndex,  
-    LPRECT lpRect) const;
-
- 
+    LPRECT lpRect) const;  
 ```  
   
 ### Parameters  
@@ -388,9 +373,7 @@ virtual void GetItemRect(
  This member function allows direct access to the underlying common control.  
   
 ```  
-CToolBarCtrl& GetToolBarCtrl() const;
-
- 
+CToolBarCtrl& GetToolBarCtrl() const;  
 ```  
   
 ### Return Value  
@@ -408,11 +391,8 @@ CToolBarCtrl& GetToolBarCtrl() const;
  Call this member function to load the bitmap specified by `lpszResourceName` or `nIDResource`.  
   
 ```  
-BOOL LoadBitmap(LPCTSTR lpszResourceName);
-
- 
-BOOL LoadBitmap(UINT nIDResource);
-```  
+BOOL LoadBitmap(LPCTSTR lpszResourceName);  
+BOOL LoadBitmap(UINT nIDResource);```  
   
 ### Parameters  
  `lpszResourceName`  
@@ -434,11 +414,8 @@ BOOL LoadBitmap(UINT nIDResource);
  Call this member function to load the toolbar specified by `lpszResourceName` or `nIDResource`.  
   
 ```  
-BOOL LoadToolBar(LPCTSTR lpszResourceName);
-
- 
-BOOL LoadToolBar(UINT nIDResource);
-```  
+BOOL LoadToolBar(LPCTSTR lpszResourceName);  
+BOOL LoadToolBar(UINT nIDResource);```  
   
 ### Parameters  
  `lpszResourceName`  

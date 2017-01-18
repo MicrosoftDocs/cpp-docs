@@ -145,9 +145,7 @@ ID2D1PathGeometry* Detach();
  Retrieves tthe number of figures in the path geometry.  
   
 ```  
-int GetFigureCount() const;
-
- 
+int GetFigureCount() const;  
 ```  
   
 ### Return Value  
@@ -157,9 +155,7 @@ int GetFigureCount() const;
  Retrieves the number of segments in the path geometry.  
   
 ```  
-int GetSegmentCount() const;
-
- 
+int GetSegmentCount() const;  
 ```  
   
 ### Return Value  

@@ -70,14 +70,10 @@ class CD2DBrushProperties : public D2D1_BRUSH_PROPERTIES;
  Creates a CD2D_BRUSH_PROPERTIES structure  
   
 ```  
-CD2DBrushProperties();
+CD2DBrushProperties();  
+CD2DBrushProperties(FLOAT _opacity);
 
- 
-CD2DBrushProperties(
-    FLOAT _opacity);
-
- 
-CD2DBrushProperties(
+ CD2DBrushProperties(
     D2D1_MATRIX_3X2_F _transform,  
     FLOAT _opacity = 1.);
 ```  

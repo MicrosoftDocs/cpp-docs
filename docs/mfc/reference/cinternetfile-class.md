@@ -181,9 +181,7 @@ virtual void Flush();
  Returns the size of the file.  
   
 ```  
-virtual ULONGLONG GetLength() const;
-
- 
+virtual ULONGLONG GetLength() const;  
 ```  
   
 ##  <a name="m_hfile"></a>  CInternetFile::m_hFile  
@@ -197,9 +195,7 @@ HINTERNET m_hFile;
  Use this operator to get the Windows handle for the current Internet session.  
   
 ```  
-operator HINTERNET() const;
-
- 
+operator HINTERNET() const;  
 ```  
   
 ##  <a name="read"></a>  CInternetFile::Read  
@@ -230,8 +226,7 @@ virtual UINT Read(
  Call this member function to read a stream of characters until it finds a newline character.  
   
 ```  
-virtual BOOL ReadString(
-    CString& rString);
+virtual BOOL ReadString(CString& rString);
 
  
 virtual LPTSTR ReadString(

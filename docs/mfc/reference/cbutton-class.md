@@ -225,9 +225,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
  Call this member function to get the handle of a bitmap, previously set with [SetBitmap](#setbitmap), that is associated with a button.  
   
 ```  
-HBITMAP GetBitmap() const;
-
- 
+HBITMAP GetBitmap() const;  
 ```  
   
 ### Return Value  
@@ -240,9 +238,7 @@ HBITMAP GetBitmap() const;
  Retrieves information about the button control style.  
   
 ```  
-UINT GetButtonStyle() const;
-
- 
+UINT GetButtonStyle() const;  
 ```  
   
 ### Return Value  
@@ -255,9 +251,7 @@ UINT GetButtonStyle() const;
  Retrieves the check state of a radio button or check box.  
   
 ```  
-int GetCheck() const;
-
- 
+int GetCheck() const;  
 ```  
   
 ### Return Value  
@@ -278,9 +272,7 @@ int GetCheck() const;
  Call this member function to get the handle of a cursor, previously set with [SetCursor](#setcursor), that is associated with a button.  
   
 ```  
-HCURSOR GetCursor();
-
- 
+HCURSOR GetCursor();  
 ```  
   
 ### Return Value  
@@ -293,9 +285,7 @@ HCURSOR GetCursor();
  Call this member function to get the handle of an icon, previously set with [SetIcon](#seticon), that is associated with a button.  
   
 ```  
-HICON GetIcon() const;
-
- 
+HICON GetIcon() const;  
 ```  
   
 ### Return Value  
@@ -342,14 +332,11 @@ BOOL GetImageList(PBUTTON_IMAGELIST pbuttonImagelist);
  Retrieves the note text associated with the current command link control.  
   
 ```  
-CString GetNote() const;
-
- 
+CString GetNote() const;  
+  
 BOOL GetNote(
     LPTSTR lpszNote,   
-    UINT* cchNote) const;
-
- 
+    UINT* cchNote) const;  
 ```  
   
 ### Parameters  
@@ -375,9 +362,7 @@ BOOL GetNote(
  Retrieves the length of the note text for the current command link control.  
   
 ```  
-UINT GetNoteLength() const;
-
- 
+UINT GetNoteLength() const;  
 ```  
   
 ### Return Value  
@@ -392,9 +377,7 @@ UINT GetNoteLength() const;
  Retrieves the glyph associated with the current split button control.  
   
 ```  
-TCHAR GetSplitGlyph() const;
-
- 
+TCHAR GetSplitGlyph() const;  
 ```  
   
 ### Return Value  
@@ -411,9 +394,7 @@ TCHAR GetSplitGlyph() const;
  Retrieves the [image list](../../mfc/reference/cimagelist-class.md) for the current split button control.  
   
 ```  
-CImageList* GetSplitImageList() const;
-
- 
+CImageList* GetSplitImageList() const;  
 ```  
   
 ### Return Value  
@@ -428,9 +409,7 @@ CImageList* GetSplitImageList() const;
  Retrieves parameters that determine how Windows draws the current split button control.  
   
 ```  
-BOOL GetSplitInfo(PBUTTON_SPLITINFO pInfo) const;
-
- 
+BOOL GetSplitInfo(PBUTTON_SPLITINFO pInfo) const;  
 ```  
   
 ### Parameters  
@@ -451,9 +430,7 @@ BOOL GetSplitInfo(PBUTTON_SPLITINFO pInfo) const;
  Retrieves the bounding rectangle of the drop-down component of the current split button control.  
   
 ```  
-BOOL GetSplitSize(LPSIZE pSize) const;
-
- 
+BOOL GetSplitSize(LPSIZE pSize) const;  
 ```  
   
 ### Parameters  
@@ -476,9 +453,7 @@ BOOL GetSplitSize(LPSIZE pSize) const;
  Retrieves the split button styles that define the current split button control.  
   
 ```  
-UINT GetSplitStyle() const;
-
- 
+UINT GetSplitStyle() const;  
 ```  
   
 ### Return Value  
@@ -495,9 +470,7 @@ UINT GetSplitStyle() const;
  Retrieves the state of a button control.  
   
 ```  
-UINT GetState() const;
-
- 
+UINT GetState() const;  
 ```  
   
 ### Return Value  

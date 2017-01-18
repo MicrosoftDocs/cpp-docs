@@ -138,7 +138,7 @@ LPCSTR m_psz;
 ##  <a name="operator_lpcstr"></a>  CA2CAEX::operator LPCSTR  
  Conversion operator.  
   
-```
+```  
 operator LPCSTR() const throw();
 ```  
   

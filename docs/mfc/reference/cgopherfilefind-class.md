@@ -173,13 +173,8 @@ virtual BOOL FindNextFile();
  Gets the creation time for the current file.  
   
 ```  
-virtual BOOL GetCreationTime(FILETIME* pTimeStamp) const;
-
- 
- 
-virtual BOOL GetCreationTime(CTime& refTime) const;
-
- 
+virtual BOOL GetCreationTime(FILETIME* pTimeStamp) const;  
+virtual BOOL GetCreationTime(CTime& refTime) const;  
 ```  
   
 ### Parameters  
@@ -202,13 +197,8 @@ virtual BOOL GetCreationTime(CTime& refTime) const;
  Gets the time the specified file was last accessed.  
   
 ```  
-virtual BOOL GetLastAccessTime(CTime& refTime) const;
-
- 
- 
-virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
-
- 
+virtual BOOL GetLastAccessTime(CTime& refTime) const;  
+virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;  
 ```  
   
 ### Parameters  
@@ -231,13 +221,8 @@ virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
  Gets the last time the file was changed.  
   
 ```  
-virtual BOOL GetLastWriteTime(FILETIME* pTimeStamp) const;
-
- 
- 
-virtual BOOL GetLastWriteTime(CTime& refTime) const;
-
- 
+virtual BOOL GetLastWriteTime(FILETIME* pTimeStamp) const;  
+virtual BOOL GetLastWriteTime(CTime& refTime) const;  
 ```  
   
 ### Parameters  
@@ -260,9 +245,7 @@ virtual BOOL GetLastWriteTime(CTime& refTime) const;
  Call this member function to get the length, in bytes, of the found file.  
   
 ```  
-virtual ULONGLONG GetLength() const;
-
- 
+virtual ULONGLONG GetLength() const;  
 ```  
   
 ### Return Value  
@@ -281,9 +264,7 @@ virtual ULONGLONG GetLength() const;
  Call this member function to get the [CGopherLocator](../../mfc/reference/cgopherlocator-class.md) object that [FindFile](#findfile) uses to find the gopher file.  
   
 ```  
-CGopherLocator GetLocator() const;
-
- 
+CGopherLocator GetLocator() const;  
 ```  
   
 ### Return Value  
@@ -293,9 +274,7 @@ CGopherLocator GetLocator() const;
  Call this member function to get the name of the gopher screen.  
   
 ```  
-CString GetScreenName() const;
-
- 
+CString GetScreenName() const;  
 ```  
   
 ### Return Value  
@@ -305,9 +284,7 @@ CString GetScreenName() const;
  Tests for the current directory and parent directory markers while iterating through files.  
   
 ```  
-virtual BOOL IsDots() const;
-
- 
+virtual BOOL IsDots() const;  
 ```  
   
 ### Return Value  

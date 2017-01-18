@@ -147,7 +147,7 @@ LPSTR m_psz;
  The static buffer, used to store the converted string.  
   
 ```
-char m_szBuffer[ t_nBufferLength];
+char m_szBuffer[t_nBufferLength];
 ```  
   
 ##  <a name="operator_lpstr"></a>  CW2AEX::operator LPSTR  

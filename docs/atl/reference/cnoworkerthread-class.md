@@ -172,13 +172,4 @@ HRESULT Shutdown(DWORD dwWait = ATL_WORKER_THREAD_WAIT) throw();
  Always returns S_OK.  
   
 ### Remarks  
- The implementation provided by this class does nothing.
-
-
-
-
-
-
-
-
-
+ The implementation provided by this class does nothing.

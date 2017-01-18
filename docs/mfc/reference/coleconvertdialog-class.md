@@ -178,9 +178,7 @@ virtual INT_PTR DoModal();
  Call this function to get the **CLSID** associated with the item the user selected in the Convert dialog box.  
   
 ```  
-REFCLSID GetClassID() const;
-
- 
+REFCLSID GetClassID() const;  
 ```  
   
 ### Return Value  
@@ -195,9 +193,7 @@ REFCLSID GetClassID() const;
  Call this function to determine whether the user chose to display the selected item as an icon.  
   
 ```  
-DVASPECT GetDrawAspect() const;
-
- 
+DVASPECT GetDrawAspect() const;  
 ```  
   
 ### Return Value  
@@ -216,9 +212,7 @@ DVASPECT GetDrawAspect() const;
  Call this function to get a handle to the metafile that contains the iconic aspect of the selected item.  
   
 ```  
-HGLOBAL GetIconicMetafile() const;
-
- 
+HGLOBAL GetIconicMetafile() const;  
 ```  
   
 ### Return Value  
@@ -228,9 +222,7 @@ HGLOBAL GetIconicMetafile() const;
  Call this function to determine the type of conversion selected in the Convert dialog box.  
   
 ```  
-UINT GetSelectionType() const;
-
- 
+UINT GetSelectionType() const;  
 ```  
   
 ### Return Value  

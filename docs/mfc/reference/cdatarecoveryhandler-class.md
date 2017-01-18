@@ -236,9 +236,7 @@ virtual BOOL DeleteAutosavedFile(const CString& strAutosavedFile);
  Generates the name for an autosave file associated with the supplied document file name.  
   
 ```  
-virtual CString GenerateAutosaveFileName(const CString& strDocumentName) const;
-
- 
+virtual CString GenerateAutosaveFileName(const CString& strDocumentName) const;  
 ```  
   
 ### Parameters  
@@ -255,9 +253,7 @@ virtual CString GenerateAutosaveFileName(const CString& strDocumentName) const;
  Returns the interval between autosave tries.  
   
 ```  
-virtual int GetAutosaveInterval() const;
-
- 
+virtual int GetAutosaveInterval() const;  
 ```  
   
 ### Return Value  
@@ -267,9 +263,7 @@ virtual int GetAutosaveInterval() const;
  Returns the path of the autosaved files.  
   
 ```  
-virtual CString GetAutosavePath() const;
-
- 
+virtual CString GetAutosavePath() const;  
 ```  
   
 ### Return Value  
@@ -279,9 +273,7 @@ virtual CString GetAutosavePath() const;
  Retrieves the document name from a `CDocument` object.  
   
 ```  
-virtual CString GetDocumentListName(CDocument* pDocument) const;
-
- 
+virtual CString GetDocumentListName(CDocument* pDocument) const;  
 ```  
   
 ### Parameters  
@@ -321,9 +313,7 @@ virtual CString GetNormalDocumentTitle(CDocument* pDocument);
  Creates and returns the title for the recovered document.  
   
 ```  
-virtual CString GetRecoveredDocumentTitle(const CString& strDocumentTitle) const;
-
- 
+virtual CString GetRecoveredDocumentTitle(const CString& strDocumentTitle) const;  
 ```  
   
 ### Parameters  
@@ -340,9 +330,7 @@ virtual CString GetRecoveredDocumentTitle(const CString& strDocumentTitle) const
  Retrieves the unique restart identifier for the application.  
   
 ```  
-virtual CString GetRestartIdentifier() const;
-
- 
+virtual CString GetRestartIdentifier() const;  
 ```  
   
 ### Return Value  
@@ -357,9 +345,7 @@ virtual CString GetRestartIdentifier() const;
  Indicates whether the `CDataRecoveryHandler` performs an autosave on the current idle loop.  
   
 ```  
-virtual BOOL GetSaveDocumentInfoOnIdle() const;
-
- 
+virtual BOOL GetSaveDocumentInfoOnIdle() const;  
 ```  
   
 ### Return Value  
@@ -369,9 +355,7 @@ virtual BOOL GetSaveDocumentInfoOnIdle() const;
  Indicates whether the restart manager caused the application to exit.  
   
 ```  
-virtual BOOL GetShutdownByRestartManager() const;
-
- 
+virtual BOOL GetShutdownByRestartManager() const;  
 ```  
   
 ### Return Value  

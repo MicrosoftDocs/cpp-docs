@@ -112,9 +112,7 @@ int AddView(
  Returns the index of the specified view in the tab control.  
   
 ```  
-int FindTab(HWND hWndView) const;
-
- 
+int FindTab(HWND hWndView) const;  
 ```  
   
 ### Parameters  
@@ -131,9 +129,7 @@ int FindTab(HWND hWndView) const;
  Returns a pointer to the currently active view.  
   
 ```  
-CView* GetActiveView() const;
-
- 
+CView* GetActiveView() const;  
 ```  
   
 ### Return Value  
@@ -155,9 +151,7 @@ DECLARE_DYNCREATE CMFCTabCtrl& GetTabControl();
  Called by the framework when creating a tab view to determine whether the tab view has a shared horizontal scroll bar.  
   
 ```  
-virtual BOOL IsScrollBar() const;
-
- 
+virtual BOOL IsScrollBar() const;  
 ```  
   
 ### Return Value  

@@ -109,9 +109,8 @@ CMFCToolBarFontComboBox(
     CObList* pLstFontsExternal,  
     int nFontType,  
     BYTE nCharSet,  
-    BYTE nPitchAndFamily);
-
- 
+    BYTE nPitchAndFamily);  
+  
 CMFCToolBarFontComboBox();
 ```  
   
@@ -158,9 +157,7 @@ CMFCToolBarFontComboBox();
  Returns a pointer to the `CMFCFontInfo` object for a specified index in the combo box.  
   
 ```  
-const CMFCFontInfo* GetFontDesc(int iIndex=-1) const;
-
- 
+const CMFCFontInfo* GetFontDesc(int iIndex=-1) const;  
 ```  
   
 ### Parameters  

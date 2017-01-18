@@ -329,7 +329,7 @@ HRESULT Seek(
  Call this method to set the size of the file.  
   
 ```
-HRESULT SetSize(ULONGLONG   nNewLen) throw();
+HRESULT SetSize(ULONGLONG nNewLen) throw();
 ```  
   
 ### Parameters  

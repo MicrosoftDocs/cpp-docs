@@ -181,9 +181,7 @@ void EnableOtherButton(
  Retrieves the current automatic (default) color.  
   
 ```  
-COLORREF GetAutomaticColor() const;
-
- 
+COLORREF GetAutomaticColor() const;  
 ```  
   
 ### Return Value  
@@ -196,9 +194,7 @@ COLORREF GetAutomaticColor() const;
  Retrieves the currently selected color.  
   
 ```  
-COLORREF GetColor() const;
-
- 
+COLORREF GetColor() const;  
 ```  
   
 ### Return Value  
@@ -210,9 +206,7 @@ COLORREF GetColor() const;
  Indicates whether the current color button is displayed in the visual style of Windows XP.  
   
 ```  
-BOOL IsDrawXPTheme() const;
-
- 
+BOOL IsDrawXPTheme() const;  
 ```  
   
 ### Return Value  

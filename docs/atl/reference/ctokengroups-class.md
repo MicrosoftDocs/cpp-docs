@@ -91,7 +91,7 @@ class CTokenGroups
  Adds a `CSid` or existing **TOKEN_GROUPS** structure to the `CTokenGroups` object.  
   
 ```
-void Add(const CSid& rSid, DWORD dwAttributes) throw(...);  
+void Add(const CSid& rSid, DWORD dwAttributes) throw(... );  
 void Add(const TOKEN_GROUPS& rTokenGroups) throw(...);
 ```  
   
@@ -113,9 +113,8 @@ void Add(const TOKEN_GROUPS& rTokenGroups) throw(...);
   
 ```
 CTokenGroups() throw();
-CTokenGroups(const CTokenGroups& rhs) throw(...);
-
-    CTokenGroups(const TOKEN_GROUPS& rhs) throw(...);
+CTokenGroups(const CTokenGroups& rhs) throw(... );  
+CTokenGroups(const TOKEN_GROUPS& rhs) throw(...);
 ```  
   
 ### Parameters  

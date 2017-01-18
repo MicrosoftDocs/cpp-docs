@@ -190,9 +190,7 @@ INT_PTR
  Call this function to get the **CLSID** associated with the selected item only if [DoModal](#domodal) returns **IDOK** and the selection type is **COleInsertDialog::createNewItem**.  
   
 ```  
-REFCLSID GetClassID() const;
-
- 
+REFCLSID GetClassID() const;  
 ```  
   
 ### Return Value  
@@ -205,9 +203,7 @@ REFCLSID GetClassID() const;
  Call this function to determine if the user chose to display the selected item as an icon.  
   
 ```  
-DVASPECT GetDrawAspect() const;
-
- 
+DVASPECT GetDrawAspect() const;  
 ```  
   
 ### Return Value  
@@ -226,9 +222,7 @@ DVASPECT GetDrawAspect() const;
  Call this function to get a handle to the metafile that contains the iconic aspect of the selected item.  
   
 ```  
-HGLOBAL GetIconicMetafile() const;
-
- 
+HGLOBAL GetIconicMetafile() const;  
 ```  
   
 ### Return Value  
@@ -238,9 +232,7 @@ HGLOBAL GetIconicMetafile() const;
  Call this function to get the full path of the selected file only if [DoModal](#domodal) returns **IDOK** and the selection type is not **COleInsertDialog::createNewItem**.  
   
 ```  
-CString GetPathName() const;
-
- 
+CString GetPathName() const;  
 ```  
   
 ### Return Value  
@@ -250,9 +242,7 @@ CString GetPathName() const;
  Call this function to get the selection type chosen when the Insert Object dialog box was dismissed by choosing **OK**.  
   
 ```  
-UINT GetSelectionType() const;
-
- 
+UINT GetSelectionType() const;  
 ```  
   
 ### Return Value  

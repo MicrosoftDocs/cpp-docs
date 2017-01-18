@@ -116,9 +116,7 @@ void CalcExpectedDockedRect(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL CanBeAttached(CWnd* pWnd) const;
-
- 
+BOOL CanBeAttached(CWnd* pWnd) const;  
 ```  
   
 ### Parameters  
@@ -132,9 +130,7 @@ BOOL CanBeAttached(CWnd* pWnd) const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL CanPaneBeInFloatingMultiPaneFrameWnd(CWnd* pWnd) const;
-
- 
+BOOL CanPaneBeInFloatingMultiPaneFrameWnd(CWnd* pWnd) const;  
 ```  
   
 ### Parameters  
@@ -156,9 +152,7 @@ BOOL CheckAlignment(
     BOOL bOuterEdge,  
     DWORD& dwAlignment,  
     DWORD dwEnabledDockBars = CBRS_ALIGN_ANY,  
-    LPCRECT lpRectBounds = NULL) const;
-
- 
+    LPCRECT lpRectBounds = NULL) const;  
 ```  
   
 ### Parameters  

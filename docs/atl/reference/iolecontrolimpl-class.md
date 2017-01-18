@@ -79,7 +79,7 @@ class IOleControlImpl
  In ATL's implementation, `FreezeEvents` increments the control class's `m_nFreezeEvents` data member if `bFreeze` is **TRUE**, and decrements `m_nFreezeEvents` if `bFreeze` is **FALSE**.  
   
 ```
-HRESULT FreezeEvents(BOOL Freeze);
+HRESULT FreezeEvents(BOOL bFreeze);
 ```  
   
 ### Remarks  

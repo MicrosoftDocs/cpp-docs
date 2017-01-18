@@ -118,9 +118,7 @@ void AddCmd(UINT uiCmd);
  Retrieves the usage count that is associated with the given command ID.  
   
 ```  
-UINT GetCount(UINT uiCmd) const;
-
- 
+UINT GetCount(UINT uiCmd) const;  
 ```  
   
 ### Parameters  
@@ -137,9 +135,7 @@ UINT GetCount(UINT uiCmd) const;
  Determines whether this object has received the minimum amount of tracking data.  
   
 ```  
-BOOL HasEnoughInformation() const;
-
- 
+BOOL HasEnoughInformation() const;  
 ```  
   
 ### Return Value  
@@ -154,9 +150,7 @@ BOOL HasEnoughInformation() const;
  Determines whether the given command is frequently used.  
   
 ```  
-BOOL IsFreqeuntlyUsedCmd(UINT uiCmd) const;
-
- 
+BOOL IsFreqeuntlyUsedCmd(UINT uiCmd) const;  
 ```  
   
 ### Parameters  

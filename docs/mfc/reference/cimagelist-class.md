@@ -128,11 +128,9 @@ int Add(
  
 int Add(
     CBitmap* pbmImage,  
-    COLORREF crMask);
-
- 
-int Add(
-    HICON hIcon);
+    COLORREF crMask);  
+  
+int Add(HICON hIcon);
 ```  
   
 ### Parameters  
@@ -279,11 +277,9 @@ BOOL Create(
     CImageList& imagelist2,  
     int nImage2,  
     int dx,  
-    int dy);
-
- 
-BOOL Create(
-    CImageList* pImageList);
+    int dy);  
+  
+BOOL Create(CImageList* pImageList);
 ```  
   
 ### Parameters  
@@ -561,8 +557,7 @@ BOOL DrawEx(
  Call this member function to draw an image from an image list.  
   
 ```  
-BOOL DrawIndirect(
-    IMAGELISTDRAWPARAMS* pimldp);
+BOOL DrawIndirect(IMAGELISTDRAWPARAMS* pimldp);
 
  
 BOOL DrawIndirect(
@@ -728,9 +723,7 @@ static CImageList* PASCAL FromHandlePermanent(HIMAGELIST hImageList);
  Call this function to retrieve the current background color for an image list.  
   
 ```  
-COLORREF GetBkColor() const;
-
- 
+COLORREF GetBkColor() const;  
 ```  
   
 ### Return Value  
@@ -762,9 +755,7 @@ static CImageList* PASCAL GetDragImage(
  Call this function to retrieve the number of images in an image list.  
   
 ```  
-int GetImageCount() const;
-
- 
+int GetImageCount() const;  
 ```  
   
 ### Return Value  
@@ -779,9 +770,7 @@ int GetImageCount() const;
 ```  
 BOOL GetImageInfo(
     int nImage,  
-    IMAGEINFO* pImageInfo) const;
-
- 
+    IMAGEINFO* pImageInfo) const;  
 ```  
   
 ### Parameters  
@@ -801,9 +790,7 @@ BOOL GetImageInfo(
  Call this function to retrieve the **m_hImageList** data member.  
   
 ```  
-HIMAGELIST GetSafeHandle() const;
-
- 
+HIMAGELIST GetSafeHandle() const;  
 ```  
   
 ### Return Value  
@@ -827,9 +814,7 @@ HIMAGELIST GetSafeHandle() const;
  Use this operator to get the attached handle of the `CImageList` object.  
   
 ```  
-operator HIMAGELIST() const;
-
- 
+operator HIMAGELIST() const;  
 ```  
   
 ### Return Value  

@@ -107,13 +107,8 @@ class CTypedPtrList : public BASE_CLASS
  This member function calls `BASE_CLASS`**::AddHead**.  
   
 ```  
-POSITION AddHead(
-    TYPE newElement);
-
- 
-void AddHead(
-    CTypedPtrList<BASE_CLASS, TYPE>* pNewList);
-```  
+POSITION AddHead(TYPE newElement);  
+void AddHead(CTypedPtrList<BASE_CLASS, TYPE>* pNewList);```  
   
 ### Parameters  
  *TYPE*  
@@ -138,13 +133,8 @@ void AddHead(
  This member function calls `BASE_CLASS`**::AddTail**.  
   
 ```  
-POSITION AddTail(
-    TYPE newElement);
-
- 
-void AddTail(
-    CTypedPtrList<BASE_CLASS, TYPE>* pNewList);
-```  
+POSITION AddTail(TYPE newElement);  
+void AddTail(CTypedPtrList<BASE_CLASS, TYPE>* pNewList);```  
   
 ### Parameters  
  *TYPE*  
@@ -169,12 +159,8 @@ void AddTail(
  A variable of type **POSITION** is a key for the list.  
   
 ```  
-TYPE& GetAt(POSITION position);
-
- 
-TYPE GetAt(POSITION position) const;
-
- 
+TYPE& GetAt(POSITION position);  
+TYPE GetAt(POSITION position) const;  
 ```  
   
 ### Parameters  
@@ -200,12 +186,8 @@ TYPE GetAt(POSITION position) const;
  Gets the pointer that represents the head element of this list.  
   
 ```  
-TYPE& GetHead();
-
- 
-TYPE GetHead() const;
-
- 
+TYPE& GetHead();  
+TYPE GetHead() const;  
 ```  
   
 ### Parameters  
@@ -224,12 +206,8 @@ TYPE GetHead() const;
  Gets the list element identified by `rPosition`, then sets `rPosition` to the **POSITION** value of the next entry in the list.  
   
 ```  
-TYPE& GetNext(POSITION& rPosition);
-
- 
-TYPE GetNext(POSITION& rPosition) const;
-
- 
+TYPE& GetNext(POSITION& rPosition);  
+TYPE GetNext(POSITION& rPosition) const;  
 ```  
   
 ### Parameters  
@@ -257,12 +235,8 @@ TYPE GetNext(POSITION& rPosition) const;
  Gets the list element identified by `rPosition`, then sets `rPosition` to the **POSITION** value of the previous entry in the list.  
   
 ```  
-TYPE& GetPrev(POSITION& rPosition);
-
- 
-TYPE GetPrev(POSITION& rPosition) const;
-
- 
+TYPE& GetPrev(POSITION& rPosition);  
+TYPE GetPrev(POSITION& rPosition) const;  
 ```  
   
 ### Parameters  
@@ -288,12 +262,8 @@ TYPE GetPrev(POSITION& rPosition) const;
  Gets the pointer that represents the head element of this list.  
   
 ```  
-TYPE& GetTail();
-
- 
-TYPE GetTail() const;
-
- 
+TYPE& GetTail();  
+TYPE GetTail() const;  
 ```  
   
 ### Parameters  
@@ -346,8 +316,7 @@ TYPE RemoveTail();
  This member function calls `BASE_CLASS`**::SetAt**.  
   
 ```  
-void SetAt(
-    POSITION pos, TYPE newElement);
+void SetAt(POSITION pos, TYPE newElement);
 ```  
   
 ### Parameters  

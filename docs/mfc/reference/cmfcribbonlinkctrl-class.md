@@ -134,9 +134,7 @@ virtual CSize GetCompactSize(CDC* pDC);
  Returns the value of the hyperlink.  
   
 ```  
-LPCTSTR GetLink() const;
-
- 
+LPCTSTR GetLink() const;  
 ```  
   
 ### Return Value  
@@ -162,9 +160,7 @@ virtual CSize GetRegularSize(CDC* pDC);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual CString GetToolTipText() const;
-
- 
+virtual CString GetToolTipText() const;  
 ```  
   
 ### Return Value  
@@ -190,9 +186,7 @@ virtual BOOL OnDrawMenuImage(CDC*, CRect);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsDrawTooltipImage() const;
-
- 
+virtual BOOL IsDrawTooltipImage() const;  
 ```  
   
 ### Return Value  

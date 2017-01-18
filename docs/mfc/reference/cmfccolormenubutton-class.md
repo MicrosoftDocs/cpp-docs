@@ -250,9 +250,7 @@ void EnableTearOff(
  Retrieves the current automatic color.  
   
 ```  
-COLORREF GetAutomaticColor() const;
-
- 
+COLORREF GetAutomaticColor() const;  
 ```  
   
 ### Return Value  
@@ -265,9 +263,7 @@ COLORREF GetAutomaticColor() const;
  Retrieves the current button's color.  
   
 ```  
-COLORREF GetColor() const;
-
- 
+COLORREF GetColor() const;  
 ```  
   
 ### Return Value  
@@ -296,9 +292,7 @@ static COLORREF GetColorByCmdID(UINT uiCmdID);
  Indicates whether empty menus are supported.  
   
 ```  
-virtual BOOL IsEmptyMenuAllowed() const;
-
- 
+virtual BOOL IsEmptyMenuAllowed() const;  
 ```  
   
 ### Return Value  

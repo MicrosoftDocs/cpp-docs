@@ -100,9 +100,7 @@ class CMFCDesktopAlertWndButton : public CMFCButton
  Determines whether the button is displayed in the caption area of the alert dialog box.  
   
 ```  
-BOOL IsCaptionButton() const;
-
- 
+BOOL IsCaptionButton() const;  
 ```  
   
 ### Return Value  
@@ -112,9 +110,7 @@ BOOL IsCaptionButton() const;
  Determines whether the button closes the alert dialog box.  
   
 ```  
-BOOL IsCloseButton() const;
-
- 
+BOOL IsCloseButton() const;  
 ```  
   
 ### Return Value  

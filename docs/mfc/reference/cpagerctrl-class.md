@@ -182,9 +182,7 @@ void ForwardMouse(BOOL bForward);
  Retrieves the border size of the current pager control.  
   
 ```  
-int GetBorder() const;
-
- 
+int GetBorder() const;  
 ```  
   
 ### Return Value  
@@ -202,9 +200,7 @@ int GetBorder() const;
  Retrieves the background color of the current pager control.  
   
 ```  
-COLORREF GetBkColor() const;
-
- 
+COLORREF GetBkColor() const;  
 ```  
   
 ### Return Value  
@@ -222,9 +218,7 @@ COLORREF GetBkColor() const;
  Retrieves the button size of the current pager control.  
   
 ```  
-int GetButtonSize() const;
-
- 
+int GetButtonSize() const;  
 ```  
   
 ### Return Value  
@@ -239,9 +233,7 @@ int GetButtonSize() const;
  Retrieves the state of the specified scroll button in the current pager control.  
   
 ```  
-DWORD GetButtonState(int iButton) const;
-
- 
+DWORD GetButtonState(int iButton) const;  
 ```  
   
 ### Parameters  
@@ -260,9 +252,7 @@ DWORD GetButtonState(int iButton) const;
  Retrieves the [IDropTarget](http://msdn.microsoft.com/library/windows/desktop/ms679679) interface for the current pager control.  
   
 ```  
-IDropTarget* GetDropTarget() const;
-
- 
+IDropTarget* GetDropTarget() const;  
 ```  
   
 ### Return Value  
@@ -277,9 +267,7 @@ IDropTarget* GetDropTarget() const;
  Retrieves the scroll position of the current pager control.  
   
 ```  
-int GetScrollPos() const;
-
- 
+int GetScrollPos() const;  
 ```  
   
 ### Return Value  
@@ -297,9 +285,7 @@ int GetScrollPos() const;
  Indicates whether the specified scroll button of the current pager control is in pressed state.  
   
 ```  
-BOOL IsButtonDepressed(int iButton) const;
-
- 
+BOOL IsButtonDepressed(int iButton) const;  
 ```  
   
 ### Parameters  
@@ -318,9 +304,7 @@ BOOL IsButtonDepressed(int iButton) const;
  Indicates whether the specified scroll button of the current pager control is in grayed state.  
   
 ```  
-BOOL IsButtonGrayed(int iButton) const;
-
- 
+BOOL IsButtonGrayed(int iButton) const;  
 ```  
   
 ### Parameters  
@@ -339,9 +323,7 @@ BOOL IsButtonGrayed(int iButton) const;
  Indicates whether the specified scroll button of the current pager control is in hot state.  
   
 ```  
-BOOL IsButtonHot(int iButton) const;
-
- 
+BOOL IsButtonHot(int iButton) const;  
 ```  
   
 ### Parameters  
@@ -360,9 +342,7 @@ BOOL IsButtonHot(int iButton) const;
  Indicates whether the specified scroll button of the current pager control is in invisible state.  
   
 ```  
-BOOL IsButtonInvisible(int iButton) const;
-
- 
+BOOL IsButtonInvisible(int iButton) const;  
 ```  
   
 ### Parameters  
@@ -388,9 +368,7 @@ BOOL IsButtonInvisible(int iButton) const;
  Indicates whether the specified scroll button of the current pager control is in normal state.  
   
 ```  
-BOOL IsButtonNormal(int iButton) const;
-
- 
+BOOL IsButtonNormal(int iButton) const;  
 ```  
   
 ### Parameters  

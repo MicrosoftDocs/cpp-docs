@@ -317,9 +317,7 @@ void ExecWB(
  Call this member function to retrieve Internet Explorer's address bar.  
   
 ```  
-BOOL GetAddressBar() const;
-
- 
+BOOL GetAddressBar() const;  
 ```  
   
 ### Return Value  
@@ -332,9 +330,7 @@ BOOL GetAddressBar() const;
  Call this member function to retrieve the automation object supported by the application that contains the WebBrowser control.  
   
 ```  
-LPDISPATCH GetApplication() const;
-
- 
+LPDISPATCH GetApplication() const;  
 ```  
   
 ### Return Value  
@@ -347,9 +343,7 @@ LPDISPATCH GetApplication() const;
  Call this member function to determine whether the WebBrowser control is engaged in a navigation or downloading operation.  
   
 ```  
-BOOL GetBusy() const;
-
- 
+BOOL GetBusy() const;  
 ```  
   
 ### Return Value  
@@ -362,9 +356,7 @@ BOOL GetBusy() const;
  Call this member function to retrieve an object that evaluates to the container of the web browser.  
   
 ```  
-LPDISPATCH GetContainer() const;
-
- 
+LPDISPATCH GetContainer() const;  
 ```  
   
 ### Return Value  
@@ -377,9 +369,7 @@ LPDISPATCH GetContainer() const;
  Call this member function to retrieve the full path of the file that Internet Explorer is currently displaying.  
   
 ```  
-CString GetFullName() const;
-
- 
+CString GetFullName() const;  
 ```  
   
 ### Return Value  
@@ -392,9 +382,7 @@ CString GetFullName() const;
  Call this member function to determine whether the WebBrowser control is operating in full-screen mode or in normal window mode.  
   
 ```  
-BOOL GetFullScreen() const;
-
- 
+BOOL GetFullScreen() const;  
 ```  
   
 ### Return Value  
@@ -409,9 +397,7 @@ BOOL GetFullScreen() const;
  Call this member function to retrieve the height, in pixels, of the WebBrowser control's frame window.  
   
 ```  
-long GetHeight() const;
-
- 
+long GetHeight() const;  
 ```  
   
 ### Return Value  
@@ -421,9 +407,7 @@ long GetHeight() const;
  Call this member function to retrieve the HTML document for the active document.  
   
 ```  
-LPDISPATCH GetHtmlDocument() const;
-
- 
+LPDISPATCH GetHtmlDocument() const;  
 ```  
   
 ### Return Value  
@@ -436,9 +420,7 @@ LPDISPATCH GetHtmlDocument() const;
  Call this member function to retrieve the distance between the internal left edge of the WebBrowser control and the left edge of its container.  
   
 ```  
-long GetLeft() const;
-
- 
+long GetLeft() const;  
 ```  
   
 ### Return Value  
@@ -451,9 +433,7 @@ long GetLeft() const;
  Call this member function to get the name of the resource being displayed in the WebBrowser.  
   
 ```  
-CString GetLocationName() const;
-
- 
+CString GetLocationName() const;  
 ```  
   
 ### Return Value  
@@ -468,9 +448,7 @@ CString GetLocationName() const;
  Call this member function to retrieve the URL of the resource that the WebBrowser control is currently displaying.  
   
 ```  
-CString GetLocationURL() const;
-
- 
+CString GetLocationURL() const;  
 ```  
   
 ### Return Value  
@@ -485,9 +463,7 @@ CString GetLocationURL() const;
  Call this member function to determine whether the menu bar is visible.  
   
 ```  
-BOOL GetMenuBar() const;
-
- 
+BOOL GetMenuBar() const;  
 ```  
   
 ### Return Value  
@@ -500,9 +476,7 @@ BOOL GetMenuBar() const;
  Call this member function to determine whether the web browser is operating offline.  
   
 ```  
-BOOL GetOffline() const;
-
- 
+BOOL GetOffline() const;  
 ```  
   
 ### Return Value  
@@ -515,9 +489,7 @@ BOOL GetOffline() const;
  Call this member function to retrieve a pointer to the parent object of the WebBrowser control.  
   
 ```  
-LPDISPATCH GetParentBrowser() const;
-
- 
+LPDISPATCH GetParentBrowser() const;  
 ```  
   
 ### Return Value  
@@ -532,11 +504,9 @@ LPDISPATCH GetParentBrowser() const;
 ```  
 BOOL GetProperty(
     LPCTSTR lpszProperty,  
-    CString& strValue);
-
- 
-COleVariant GetProperty(
-    LPCTSTR lpszProperty);
+    CString& strValue);  
+  
+COleVariant GetProperty(LPCTSTR lpszProperty);
 ```  
   
 ### Parameters  
@@ -556,9 +526,7 @@ COleVariant GetProperty(
  Call this member function to retrieve the ready state of the WebBrowser object.  
   
 ```  
-READYSTATE GetReadyState() const;
-
- 
+READYSTATE GetReadyState() const;  
 ```  
   
 ### Return Value  
@@ -571,9 +539,7 @@ READYSTATE GetReadyState() const;
  Call this member function to determine whether the WebBrowser object is registered as a top-level browser for target name resolution.  
   
 ```  
-BOOL GetRegisterAsBrowser() const;
-
- 
+BOOL GetRegisterAsBrowser() const;  
 ```  
   
 ### Return Value  
@@ -586,9 +552,7 @@ BOOL GetRegisterAsBrowser() const;
  Call this member function to determine whether the WebBrowser control is registered as a drop target for navigation.  
   
 ```  
-BOOL GetRegisterAsDropTarget() const;
-
- 
+BOOL GetRegisterAsDropTarget() const;  
 ```  
   
 ### Return Value  
@@ -601,9 +565,7 @@ BOOL GetRegisterAsDropTarget() const;
  Call this member function to determine whether any dialog boxes can be shown in the WebBrowser control.  
   
 ```  
-BOOL GetSilent() const;
-
- 
+BOOL GetSilent() const;  
 ```  
   
 ### Return Value  
@@ -633,9 +595,7 @@ BOOL GetSource(CString& strRef);
  Call this member function to determine whether the WebBrowser control displays a status bar.  
   
 ```  
-BOOL GetStatusBar() const;
-
- 
+BOOL GetStatusBar() const;  
 ```  
   
 ### Return Value  
@@ -648,9 +608,7 @@ BOOL GetStatusBar() const;
  Call this member function to determine whether the web browser is in theater mode.  
   
 ```  
-BOOL GetTheaterMode() const;
-
- 
+BOOL GetTheaterMode() const;  
 ```  
   
 ### Return Value  
@@ -665,9 +623,7 @@ BOOL GetTheaterMode() const;
  Call this member function to determine whether the toolbar is visible.  
   
 ```  
-int GetToolBar() const;
-
- 
+int GetToolBar() const;  
 ```  
   
 ### Return Value  
@@ -677,9 +633,7 @@ int GetToolBar() const;
  Call this member function to retrieve the screen coordinate of the top edge of the WebBrowser control's main window.  
   
 ```  
-long GetTop() const;
-
- 
+long GetTop() const;  
 ```  
   
 ### Return Value  
@@ -692,9 +646,7 @@ long GetTop() const;
  Call this member function to determine whether Internet Explorer is the top-level container of the WebBrowser control.  
   
 ```  
-BOOL GetTopLevelContainer() const;
-
- 
+BOOL GetTopLevelContainer() const;  
 ```  
   
 ### Return Value  
@@ -707,9 +659,7 @@ BOOL GetTopLevelContainer() const;
  Call this member function to retrieve the type name of the contained active document.  
   
 ```  
-CString GetType() const;
-
- 
+CString GetType() const;  
 ```  
   
 ### Return Value  
@@ -722,9 +672,7 @@ CString GetType() const;
  Call this member function to determine if the contained object is visible.  
   
 ```  
-BOOL GetVisible() const;
-
- 
+BOOL GetVisible() const;  
 ```  
   
 ### Return Value  
@@ -737,9 +685,7 @@ BOOL GetVisible() const;
  Retrieves the width of the Internet Explorer main window.  
   
 ```  
-long GetWidth() const;
-
- 
+long GetWidth() const;  
 ```  
   
 ### Return Value  
@@ -786,11 +732,8 @@ void GoSearch();
  Call this member function to load the specified resource into the WebBrowser control.  
   
 ```  
-BOOL LoadFromResource(LPCTSTR lpszResource);
-
- 
-BOOL LoadFromResource(UINT nRes);
-```  
+BOOL LoadFromResource(LPCTSTR lpszResource);  
+BOOL LoadFromResource(UINT nRes);```  
   
 ### Parameters  
  `lpszResource`  
@@ -1583,9 +1526,7 @@ HRESULT QueryFormsCommand(
  Call this member function to query a command status.  
   
 ```  
-OLECMDF QueryStatusWB(OLECMDID cmdID) const;
-
- 
+OLECMDF QueryStatusWB(OLECMDID cmdID) const;  
 ```  
   
 ### Parameters  

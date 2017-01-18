@@ -217,7 +217,6 @@ static const ULONGLONG Minute = Second* 60;
   
 ```
 CFileTime operator-(CFileTimeSpan span) const throw();
-
 CFileTimeSpan operator-(CFileTime ft) const throw();
 ```  
   

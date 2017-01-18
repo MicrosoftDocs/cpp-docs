@@ -218,9 +218,7 @@ CSliderCtrl();
  Retrieves the handle to a slider control buddy window at a given location.  
   
 ```  
-CWnd* GetBuddy(BOOL fLocation = TRUE) const;
-
- 
+CWnd* GetBuddy(BOOL fLocation = TRUE) const;  
 ```  
   
 ### Parameters  
@@ -241,9 +239,7 @@ CWnd* GetBuddy(BOOL fLocation = TRUE) const;
  Retrieves the size and position of the bounding rectangle for a slider control's channel.  
   
 ```  
-void GetChannelRect(LPRECT lprc) const;
-
- 
+void GetChannelRect(LPRECT lprc) const;  
 ```  
   
 ### Parameters  
@@ -257,9 +253,7 @@ void GetChannelRect(LPRECT lprc) const;
  Retrieves the size of the line for a slider control.  
   
 ```  
-int GetLineSize() const;
-
- 
+int GetLineSize() const;  
 ```  
   
 ### Return Value  
@@ -272,9 +266,7 @@ int GetLineSize() const;
  Retrieves the number of tick marks in a slider control.  
   
 ```  
-UINT GetNumTics() const;
-
- 
+UINT GetNumTics() const;  
 ```  
   
 ### Return Value  
@@ -284,9 +276,7 @@ UINT GetNumTics() const;
  Retrieves the size of the page for a slider control.  
   
 ```  
-int GetPageSize() const;
-
- 
+int GetPageSize() const;  
 ```  
   
 ### Return Value  
@@ -299,9 +289,7 @@ int GetPageSize() const;
  Retrieves the current position of the slider in a slider control.  
   
 ```  
-int GetPos() const;
-
- 
+int GetPos() const;  
 ```  
   
 ### Return Value  
@@ -313,9 +301,7 @@ int GetPos() const;
 ```  
 void GetRange(
     int& nMin,  
-    int& nMax) const;
-
- 
+    int& nMax) const;  
 ```  
   
 ### Parameters  
@@ -332,9 +318,7 @@ void GetRange(
  Retrieves the maximum position for the slider in a slider control.  
   
 ```  
-int GetRangeMax() const;
-
- 
+int GetRangeMax() const;  
 ```  
   
 ### Return Value  
@@ -344,9 +328,7 @@ int GetRangeMax() const;
  Retrieves the minimum position for the slider in a slider control.  
   
 ```  
-int GetRangeMin() const;
-
- 
+int GetRangeMin() const;  
 ```  
   
 ### Return Value  
@@ -358,9 +340,7 @@ int GetRangeMin() const;
 ```  
 void GetSelection(
     int& nMin,  
-    int& nMax) const;
-
- 
+    int& nMax) const;  
 ```  
   
 ### Parameters  
@@ -374,9 +354,7 @@ void GetSelection(
  Retrieves the length of the slider in the current trackbar control.  
   
 ```  
-int GetThumbLength() const;
-
- 
+int GetThumbLength() const;  
 ```  
   
 ### Return Value  
@@ -389,9 +367,7 @@ int GetThumbLength() const;
  Retrieves the size and position of the bounding rectangle for the slider (thumb) in a slider control.  
   
 ```  
-void GetThumbRect(LPRECT lprc) const;
-
- 
+void GetThumbRect(LPRECT lprc) const;  
 ```  
   
 ### Parameters  
@@ -402,9 +378,7 @@ void GetThumbRect(LPRECT lprc) const;
  Retrieves the position of a tick mark in a slider control.  
   
 ```  
-int GetTic(int nTic) const;
-
- 
+int GetTic(int nTic) const;  
 ```  
   
 ### Parameters  
@@ -418,9 +392,7 @@ int GetTic(int nTic) const;
  Retrieves the address of the array containing the positions of tick marks for a slider control.  
   
 ```  
-DWORD* GetTicArray() const;
-
- 
+DWORD* GetTicArray() const;  
 ```  
   
 ### Return Value  
@@ -430,9 +402,7 @@ DWORD* GetTicArray() const;
  Retrieves the current physical position of a tick mark in a slider control.  
   
 ```  
-int GetTicPos(int nTic) const;
-
- 
+int GetTicPos(int nTic) const;  
 ```  
   
 ### Parameters  
@@ -446,9 +416,7 @@ int GetTicPos(int nTic) const;
  Retrieves the handle to the tooltip control assigned to the slider control, if any.  
   
 ```  
-CToolTipCtrl* GetToolTips() const;
-
- 
+CToolTipCtrl* GetToolTips() const;  
 ```  
   
 ### Return Value  

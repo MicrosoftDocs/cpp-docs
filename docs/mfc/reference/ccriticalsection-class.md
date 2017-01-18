@@ -120,11 +120,8 @@ CCriticalSection();
  Call this member function to gain access to the critical section object.  
   
 ```  
-BOOL Lock();
-
- 
-BOOL Lock(DWORD dwTimeout);
-```  
+BOOL Lock();  
+BOOL Lock(DWORD dwTimeout);```  
   
 ### Parameters  
  `dwTimeout`  

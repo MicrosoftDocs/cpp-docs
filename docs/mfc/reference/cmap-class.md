@@ -42,8 +42,7 @@ A dictionary collection class that maps unique keys to values.
 ## Syntax  
   
 ```  
-template<class KEY, class ARG_KEY, class VALUE, class ARG_VALUE>
-class CMap : public CObject  
+template<class KEY, class ARG_KEY, class VALUE, class ARG_VALUE>class CMap : public CObject  
 ```  
   
 #### Parameters  
@@ -96,8 +95,7 @@ class CMap : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-
-|[CMap::operator [ ]](#operator_at)|Inserts an element into the map; operator substitution for `SetAt`.|  
+|[CMap::operator [ ]](#operator_at)|Inserts an element into the map â€” operator substitution for `SetAt`.|  
   
 ## Remarks  
  Once you have inserted a key-value pair (element) into the map, you can efficiently retrieve or delete the pair using the key to access it. You can also iterate over all the elements in the map.  
@@ -147,9 +145,9 @@ CMap(INT_PTR nBlockSize = 10);
   
  The structure is composed of two fields:  
   
-- **key** The actual value of the key type.  
+- **keyÂ Â Â** The actual value of the key type.  
   
-- **value** The value of the associated object.  
+- **valueÂ Â Â** The value of the associated object.  
   
  It is used to store the return values from [CMap::PLookup](#plookup), [CMap::PGetFirstAssoc](#pgetfirstassoc), and [CMap::PGetNextAssoc](#pgetnextassoc).  
   
@@ -160,7 +158,7 @@ CMap(INT_PTR nBlockSize = 10);
  Retrieves the number of elements in the map.  
   
 ```  
-INT_PTR GetCount() const; 
+INT_PTR GetCount() const;  
 ```  
   
 ### Return Value  
@@ -173,7 +171,7 @@ INT_PTR GetCount() const;
  Determines the number of elements in the hash table for the map.  
   
 ```  
-UINT GetHashTableSize() const; 
+UINT GetHashTableSize() const;  
 ```  
   
 ### Return Value  
@@ -189,7 +187,7 @@ UINT GetHashTableSize() const;
 void GetNextAssoc(
     POSITION& rNextPosition,
     KEY& rKey,
-    VALUE& rValue) const; 
+    VALUE& rValue) const;  
 ```  
   
 ### Parameters  
@@ -220,7 +218,7 @@ void GetNextAssoc(
  Returns the number of map elements.  
   
 ```  
-INT_PTR GetSize() const; 
+INT_PTR GetSize() const;  
 ```  
   
 ### Return Value  
@@ -236,7 +234,7 @@ INT_PTR GetSize() const;
  Starts a map iteration by returning a **POSITION** value that can be passed to a `GetNextAssoc` call.  
   
 ```  
-POSITION GetStartPosition() const;
+POSITION GetStartPosition() const;  
 ```  
   
 ### Return Value  
@@ -252,7 +250,7 @@ POSITION GetStartPosition() const;
  Initializes the hash table.  
   
 ```  
-void InitHashTable(UINT hashSize, BOOL  bAllocNow = TRUE); 
+void InitHashTable(UINT hashSize, BOOL  bAllocNow = TRUEÂ);  
 ```  
   
 ### Parameters  
@@ -272,7 +270,7 @@ void InitHashTable(UINT hashSize, BOOL  bAllocNow = TRUE);
  Determines whether the map is empty.  
   
 ```  
-BOOL IsEmpty() const;
+BOOL IsEmpty() const;  
 ```  
   
 ### Return Value  
@@ -285,7 +283,7 @@ BOOL IsEmpty() const;
  Looks up the value mapped to a given key.  
   
 ```  
-BOOL Lookup( ARG_KEY key, VALUE& rValue) const; 
+BOOL Lookup(ARG_KEY key, VALUE& rValue) const;  
 ```  
   
 ### Parameters  
@@ -314,7 +312,7 @@ BOOL Lookup( ARG_KEY key, VALUE& rValue) const;
  A convenient substitute for the `SetAt` member function.  
   
 ```  
-VALUE& operator[] (ARG_KEY key);
+VALUE& operator[](arg_key key);
 ```  
   
 ### Parameters  
@@ -339,8 +337,7 @@ VALUE& operator[] (ARG_KEY key);
  Returns the first entry of the map object.  
   
 ```  
-const CPair* PGetFirstAssoc() const;
-CPair* PGetFirstAssoc(); 
+const CPair* PGetFirstAssoc() const;Â CPair* PGetFirstAssoc();  
 ```  
   
 ### Return Value  
@@ -356,7 +353,8 @@ CPair* PGetFirstAssoc();
  Retrieves the map element pointed to by `pAssocRec`.  
   
 ```  
-const CPair *PGetNextAssoc(const CPair* pAssocRet) const; 
+const CPair *PGetNextAssoc(const CPair* pAssocRet) const;  
+  
 CPair *PGetNextAssoc(const CPair* pAssocRet);
 ```  
   
@@ -378,8 +376,7 @@ CPair *PGetNextAssoc(const CPair* pAssocRet);
   
 ```  
 const CPair* PLookup(ARG_KEY  key) const;
-CPair* PLookup(ARG_KEY  key); 
-```  
+CPair* PLookup(Â    ARG_KEY  keyÂ);  ```  
   
 ### Parameters  
  `key`  
@@ -459,7 +456,4 @@ void SetAt(ARG_KEY key, ARG_VALUE newValue);
 ## See Also  
  [MFC Sample COLLECT](../../visual-cpp-samples.md)   
  [CObject Class](../../mfc/reference/cobject-class.md)   
- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
-
-
+ [Hierarchy Chart](../../mfc/hierarchy-chart.md)  

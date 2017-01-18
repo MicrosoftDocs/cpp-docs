@@ -433,9 +433,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ```  
 int FindString(
     int nStartAfter,  
-    LPCTSTR lpszString) const;
-
- 
+    LPCTSTR lpszString) const;  
 ```  
   
 ### Parameters  
@@ -460,9 +458,7 @@ int FindString(
 ```  
 int FindStringExact(
     int nIndexStart,  
-    LPCTSTR lpszFind) const;
-
- 
+    LPCTSTR lpszFind) const;  
 ```  
   
 ### Parameters  
@@ -485,9 +481,7 @@ int FindStringExact(
  Retrieves information for the `CComboBox` object.  
   
 ```  
-BOOL GetComboBoxInfo(PCOMBOBOXINFO pcbi) const;
-
- 
+BOOL GetComboBoxInfo(PCOMBOBOXINFO pcbi) const;  
 ```  
   
 ### Parameters  
@@ -504,9 +498,7 @@ BOOL GetComboBoxInfo(PCOMBOBOXINFO pcbi) const;
  Call this member function to retrieve the number of items in the list-box portion of a combo box.  
   
 ```  
-int GetCount() const;
-
- 
+int GetCount() const;  
 ```  
   
 ### Return Value  
@@ -519,14 +511,11 @@ int GetCount() const;
  Gets the cue text that is displayed for a combo box control.  
   
 ```  
-CString GetCueBanner() const;
-
- 
+CString GetCueBanner() const;  
+  
 BOOL GetCueBanner(
     LPTSTR lpszText,   
-    int cchText) const;
-
- 
+    int cchText) const;  
 ```  
   
 ### Parameters  
@@ -552,9 +541,7 @@ BOOL GetCueBanner(
  Call this member function to determine which item in the combo box is selected.  
   
 ```  
-int GetCurSel() const;
-
- 
+int GetCurSel() const;  
 ```  
   
 ### Return Value  
@@ -570,9 +557,7 @@ int GetCurSel() const;
  Call the `GetDroppedControlRect` member function to retrieve the screen coordinates of the visible (dropped-down) list box of a drop-down combo box.  
   
 ```  
-void GetDroppedControlRect(LPRECT lprect) const;
-
- 
+void GetDroppedControlRect(LPRECT lprect) const;  
 ```  
   
 ### Parameters  
@@ -586,9 +571,7 @@ void GetDroppedControlRect(LPRECT lprect) const;
  Call the `GetDroppedState` member function to determine whether the list box of a drop-down combo box is visible (dropped down).  
   
 ```  
-BOOL GetDroppedState() const;
-
- 
+BOOL GetDroppedState() const;  
 ```  
   
 ### Return Value  
@@ -601,9 +584,7 @@ BOOL GetDroppedState() const;
  Call this function to retrieve the minimum allowable width, in pixels, of the list box of a combo box.  
   
 ```  
-int GetDroppedWidth() const;
-
- 
+int GetDroppedWidth() const;  
 ```  
   
 ### Return Value  
@@ -621,9 +602,7 @@ int GetDroppedWidth() const;
  Gets the starting and ending character positions of the current selection in the edit control of a combo box.  
   
 ```  
-DWORD GetEditSel() const;
-
- 
+DWORD GetEditSel() const;  
 ```  
   
 ### Return Value  
@@ -636,9 +615,7 @@ DWORD GetEditSel() const;
  Call the `GetExtendedUI` member function to determine whether a combo box has the default user interface or the extended user interface.  
   
 ```  
-BOOL GetExtendedUI() const;
-
- 
+BOOL GetExtendedUI() const;  
 ```  
   
 ### Return Value  
@@ -660,9 +637,7 @@ BOOL GetExtendedUI() const;
  Retrieves from the combo box the width in pixels by which the list-box portion of the combo box can be scrolled horizontally.  
   
 ```  
-UINT GetHorizontalExtent() const;
-
- 
+UINT GetHorizontalExtent() const;  
 ```  
   
 ### Return Value  
@@ -678,9 +653,7 @@ UINT GetHorizontalExtent() const;
  Retrieves the application-supplied 32-bit value associated with the specified combo-box item.  
   
 ```  
-DWORD_PTR GetItemData(int nIndex) const;
-
- 
+DWORD_PTR GetItemData(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -700,9 +673,7 @@ DWORD_PTR GetItemData(int nIndex) const;
  Retrieves the application-supplied 32-bit value associated with the specified combo-box item as a pointer ( **void\***).  
   
 ```  
-void* GetItemDataPtr(int nIndex) const;
-
- 
+void* GetItemDataPtr(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -719,9 +690,7 @@ void* GetItemDataPtr(int nIndex) const;
  Call the `GetItemHeight` member function to retrieve the height of list items in a combo box.  
   
 ```  
-int GetItemHeight(int nIndex) const;
-
- 
+int GetItemHeight(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -740,15 +709,11 @@ int GetItemHeight(int nIndex) const;
 ```  
 int GetLBText(
     int nIndex,  
-    LPTSTR lpszText) const;
-
- 
- 
+    LPTSTR lpszText) const;  
+  
 void GetLBText(
     int nIndex,  
-    CString& rString) const;
-
- 
+    CString& rString) const;  
 ```  
   
 ### Parameters  
@@ -774,9 +739,7 @@ void GetLBText(
  Gets the length of a string in the list box of a combo box.  
   
 ```  
-int GetLBTextLen(int nIndex) const;
-
- 
+int GetLBTextLen(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -793,9 +756,7 @@ int GetLBTextLen(int nIndex) const;
  Retrieves the locale used by the combo box.  
   
 ```  
-LCID GetLocale() const;
-
- 
+LCID GetLocale() const;  
 ```  
   
 ### Return Value  
@@ -811,9 +772,7 @@ LCID GetLocale() const;
  Gets the minimum number of visible items in the drop-down list of the current combo box control.  
   
 ```  
-int GetMinVisible() const;
-
- 
+int GetMinVisible() const;  
 ```  
   
 ### Return Value  
@@ -826,9 +785,7 @@ int GetMinVisible() const;
  Retrieves the zero-based index of the first visible item in the list-box portion of the combo box.  
   
 ```  
-int GetTopIndex() const;
-
- 
+int GetTopIndex() const;  
 ```  
   
 ### Return Value  

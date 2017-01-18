@@ -185,9 +185,7 @@ BOOL FindText(
  Call this member function to obtain the number of characters currently in the edit control's buffer, not including the null terminator.  
   
 ```  
-UINT GetBufferLength() const;
-
- 
+UINT GetBufferLength() const;  
 ```  
   
 ### Return Value  
@@ -197,9 +195,7 @@ UINT GetBufferLength() const;
  Call `GetEditCtrl` to get a reference to the edit control used by the edit view.  
   
 ```  
-CEdit& GetEditCtrl() const;
-
- 
+CEdit& GetEditCtrl() const;  
 ```  
   
 ### Return Value  
@@ -218,9 +214,7 @@ CEdit& GetEditCtrl() const;
  Call `GetPrinterFont` to get a pointer to a [CFont](../../mfc/reference/cfont-class.md) object that describes the current printer font.  
   
 ```  
-CFont* GetPrinterFont() const;
-
- 
+CFont* GetPrinterFont() const;  
 ```  
   
 ### Return Value  
@@ -235,9 +229,7 @@ CFont* GetPrinterFont() const;
  Call `GetSelectedText` to copy the selected text into a `CString` object, up to the end of the selection or the character preceding the first carriage-return character in the selection.  
   
 ```  
-void GetSelectedText(CString& strResult) const;
-
- 
+void GetSelectedText(CString& strResult) const;  
 ```  
   
 ### Parameters  
@@ -248,9 +240,7 @@ void GetSelectedText(CString& strResult) const;
  Call this member function to obtain a pointer to the buffer. The buffer should not be modified.  
   
 ```  
-LPCTSTR LockBuffer() const;
-
- 
+LPCTSTR LockBuffer() const;  
 ```  
   
 ### Return Value  
@@ -433,9 +423,7 @@ void SetTabStops(int nTabStops);
  Call this member function to unlock the buffer.  
   
 ```  
-void UnlockBuffer() const;
-
- 
+void UnlockBuffer() const;  
 ```  
   
 ### Remarks  

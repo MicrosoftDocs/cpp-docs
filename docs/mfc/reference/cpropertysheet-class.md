@@ -303,9 +303,7 @@ CPropertySheet(
 ```  
 virtual BOOL Create(CWnd* pParentWnd = NULL,
     DWORD dwStyle = (DWORD)–1,
-    DWORD dwExStyle = 0);
-
- 
+    DWORD dwExStyle = 0);  
 ```  
   
 ### Parameters  
@@ -422,9 +420,7 @@ void EndDialog(int nEndID);
  Gets the index number of the property sheet window's active page and then uses the returned index number as the parameter for `GetPage`.  
   
 ```  
-int GetActiveIndex() const;
-
- 
+int GetActiveIndex() const;  
 ```  
   
 ### Return Value  
@@ -437,9 +433,7 @@ int GetActiveIndex() const;
  Retrieves the property sheet window's active page.  
   
 ```  
-CPropertyPage* GetActivePage() const;
-
- 
+CPropertyPage* GetActivePage() const;  
 ```  
   
 ### Return Value  
@@ -455,9 +449,7 @@ CPropertyPage* GetActivePage() const;
  Returns a pointer to the specified page in this property sheet.  
   
 ```  
-CPropertyPage* GetPage(int nPage) const;
-
- 
+CPropertyPage* GetPage(int nPage) const;  
 ```  
   
 ### Parameters  
@@ -474,9 +466,7 @@ CPropertyPage* GetPage(int nPage) const;
  Determines the number of pages currently in the property sheet.  
   
 ```  
-int GetPageCount() const;
-
- 
+int GetPageCount() const;  
 ```  
   
 ### Return Value  
@@ -509,9 +499,7 @@ int GetPageIndex(CPropertyPage* pPage);
  Retrieves a pointer to a tab control to do something specific to the tab control (that is, to use any of the APIs in [CTabCtrl](../../mfc/reference/ctabctrl-class.md)).  
   
 ```  
-CTabCtrl* GetTabControl() const;
-
- 
+CTabCtrl* GetTabControl() const;  
 ```  
   
 ### Return Value  
@@ -538,9 +526,7 @@ CTabCtrl* GetTabControl() const;
  Converts the dialog-box units of a rectangle to screen units.  
   
 ```  
-void MapDialogRect(LPRECT lpRect) const;
-
- 
+void MapDialogRect(LPRECT lpRect) const;  
 ```  
   
 ### Parameters  
@@ -608,11 +594,8 @@ void PressButton(int nButton);
  Removes a page from the property sheet and destroys the associated window.  
   
 ```  
-void RemovePage(CPropertyPage* pPage);
-
- 
-void RemovePage(int nPage);
-```  
+void RemovePage(CPropertyPage* pPage);  
+void RemovePage(int nPage);```  
   
 ### Parameters  
  `pPage`  
@@ -628,11 +611,8 @@ void RemovePage(int nPage);
  Changes the active page.  
   
 ```  
-BOOL SetActivePage(int nPage);
-
- 
-BOOL SetActivePage(CPropertyPage* pPage);
-```  
+BOOL SetActivePage(int nPage);  
+BOOL SetActivePage(CPropertyPage* pPage);```  
   
 ### Parameters  
  `nPage`  

@@ -128,9 +128,7 @@ CMFCRibbonColorButton(
     UINT nID,  
     LPCTSTR lpszText,  
     int nSmallImageIndex,  
-    COLORREF color = RGB(0,
-    0,
-    0));
+    COLORREF color = RGB(0, 0, 0));
 
  
 CMFCRibbonColorButton(
@@ -139,9 +137,7 @@ CMFCRibbonColorButton(
     BOOL bSimpleButtonLook,  
     int nSmallImageIndex,  
     int nLargeImageIndex,  
-    COLORREF color = RGB(0,
-    0,
-    0));
+    COLORREF color = RGB(0, 0, 0));
 ```  
   
 ### Parameters  
@@ -222,9 +218,7 @@ void EnableOtherButton(
  Retrieves the current automatic-button color.  
   
 ```  
-COLORREF GetAutomaticColor() const;
-
- 
+COLORREF GetAutomaticColor() const;  
 ```  
   
 ### Return Value  
@@ -237,9 +231,7 @@ COLORREF GetAutomaticColor() const;
  Returns the currently selected color.  
   
 ```  
-COLORREF GetColor() const;
-
- 
+COLORREF GetColor() const;  
 ```  
   
 ### Return Value  
@@ -249,9 +241,7 @@ COLORREF GetColor() const;
  Returns the size of the color elements that appear on the color bar.  
   
 ```  
-CSize GetColorBoxSize() const;
-
- 
+CSize GetColorBoxSize() const;  
 ```  
   
 ### Return Value  
@@ -261,9 +251,7 @@ CSize GetColorBoxSize() const;
  Gets the number of items in a row of the ribbon color button’s gallery display.  
   
 ```  
-int GetColumns() const;
-
- 
+int GetColumns() const;  
 ```  
   
 ### Return Value  
@@ -275,9 +263,7 @@ int GetColumns() const;
  Returns the color of the currently selected element on the pop-up color palette.  
   
 ```  
-COLORREF GetHighlightedColor() const;
-
- 
+COLORREF GetHighlightedColor() const;  
 ```  
   
 ### Return Value  

@@ -65,9 +65,7 @@ interface class ICommandTarget
  Initializes the command target object.  
   
 ```  
-void Initialize(ICommandSource^ cmdSource);
-
- 
+void Initialize(ICommandSource^ cmdSource);  
 ```  
   
 ### Parameters  

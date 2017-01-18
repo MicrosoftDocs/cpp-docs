@@ -121,9 +121,7 @@ class CStatusBar : public CControlBar
  Gets the indicator index for a given ID.  
   
 ```  
-int CommandToIndex(UINT nIDFind) const;
-
- 
+int CommandToIndex(UINT nIDFind) const;  
 ```  
   
 ### Parameters  
@@ -231,9 +229,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
  Returns the ID of the indicator specified by `nIndex`.  
   
 ```  
-UINT GetItemID(int nIndex) const;
-
- 
+UINT GetItemID(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -249,9 +245,7 @@ UINT GetItemID(int nIndex) const;
 ```  
 void GetItemRect(
     int nIndex,  
-    LPRECT lpRect) const;
-
- 
+    LPRECT lpRect) const;  
 ```  
   
 ### Parameters  
@@ -272,9 +266,7 @@ void GetPaneInfo(
     int nIndex,  
     UINT& nID,  
     UINT& nStyle,  
-    int& cxWidth) const;
-
- 
+    int& cxWidth) const;  
 ```  
   
 ### Parameters  
@@ -294,9 +286,7 @@ void GetPaneInfo(
  Call this member function to retrieve the style of a status bar's pane.  
   
 ```  
-UINT GetPaneStyle(int nIndex) const;
-
- 
+UINT GetPaneStyle(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -315,17 +305,7 @@ UINT GetPaneStyle(int nIndex) const;
  Call this member function to retrieve the text that appears in a status-bar pane.  
   
 ```  
-CString GetPaneText(
-    int nIndex) const;
-
- 
- 
-void GetPaneText(
-    int nIndex,  
-    CString& rString) const;
-
- 
-```  
+CString GetPaneText(int nIndex) const;  void GetPaneText(int nIndex, CString& rString) const;  ```  
   
 ### Parameters  
  `nIndex`  
@@ -344,9 +324,7 @@ void GetPaneText(
  This member function allows direct access to the underlying common control.  
   
 ```  
-CStatusBarCtrl& GetStatusBarCtrl() const;
-
- 
+CStatusBarCtrl& GetStatusBarCtrl() const;  
 ```  
   
 ### Return Value  

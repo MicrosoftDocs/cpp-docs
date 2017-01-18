@@ -149,11 +149,9 @@ CGopherConnection(
 CGopherLocator CreateLocator(
     LPCTSTR pstrDisplayString,  
     LPCTSTR pstrSelectorString,  
-    DWORD dwGopherType);
-
- 
-static CGopherLocator CreateLocator(
-    LPCTSTR pstrLocator);
+    DWORD dwGopherType);  
+  
+static CGopherLocator CreateLocator(LPCTSTR pstrLocator);
 
  
 static CGopherLocator CreateLocator(

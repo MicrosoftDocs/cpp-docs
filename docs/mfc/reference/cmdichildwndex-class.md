@@ -340,9 +340,7 @@ virtual LPCTSTR GetDocumentName(CObject** pObj);
  Called by the framework to retrieve the icon of the MDI child window.  
   
 ```  
-virtual HICON GetFrameIcon() const;
-
- 
+virtual HICON GetFrameIcon() const;  
 ```  
   
 ### Return Value  
@@ -357,9 +355,7 @@ virtual HICON GetFrameIcon() const;
  Called by the framework to retrieve the text for the MDI child window.  
   
 ```  
-virtual CString GetFrameText() const;
-
- 
+virtual CString GetFrameText() const;  
 ```  
   
 ### Return Value  
@@ -399,9 +395,7 @@ CMFCTabCtrl* GetRelatedTabGroup();
  Returns a pointer to a docking pane that is part of a group of MDI tabbed documents.  
   
 ```  
-CDockablePane* GetTabbedPane() const;
-
- 
+CDockablePane* GetTabbedPane() const;  
 ```  
   
 ### Return Value  
@@ -452,9 +446,7 @@ BOOL InsertPane(
 BOOL IsPointNearDockSite(
     CPoint point,  
     DWORD& dwBarAlignment,  
-    BOOL& bOuterEdge) const;
-
- 
+    BOOL& bOuterEdge) const;  
 ```  
   
 ### Parameters  
@@ -495,9 +487,7 @@ virtual BOOL IsReadOnly();
  Specifies whether the MDI child window contains a docking pane.  
   
 ```  
-BOOL IsTabbedPane() const;
-
- 
+BOOL IsTabbedPane() const;  
 ```  
   
 ### Return Value  
@@ -552,16 +542,13 @@ CBasePane* PaneFromPoint(
     CPoint point,  
     int nSensitivity,  
     bool bExactBar,  
-    CRuntimeClass* pRTCBarType) const;
-
- 
+    CRuntimeClass* pRTCBarType) const;  
+  
 CBasePane* PaneFromPoint(
     CPoint point,  
     int nSensitivity,  
     DWORD& dwAlignment,  
-    CRuntimeClass* pRTCBarType) const;
-
- 
+    CRuntimeClass* pRTCBarType) const;  
 ```  
   
 ### Parameters  
@@ -884,9 +871,7 @@ AFX_IMPORT_DATA static DWORD m_dwDefaultTaskbarTabPropertyFlags;
  Tells whether automatic selection of a portion of a window's client area to display as that window's thumbnail in the taskbar is enabled or disabled.  
   
 ```  
-BOOL IsTaskbarThumbnailClipRectEnabled() const;
-
- 
+BOOL IsTaskbarThumbnailClipRectEnabled() const;  
 ```  
   
 ### Return Value  
@@ -935,9 +920,7 @@ BOOL InvalidateIconicBitmaps();
  Called by the framework when it needs to select a portion of a window's client area to display as that window's thumbnail in the taskbar.  
   
 ```  
-virtual CRect GetTaskbarThumbnailClipRect() const;
-
- 
+virtual CRect GetTaskbarThumbnailClipRect() const;  
 ```  
   
 ### Return Value  

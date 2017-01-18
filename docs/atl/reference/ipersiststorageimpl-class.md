@@ -148,8 +148,7 @@ STDMETHOD(Load)(IStorage* pStorage);
  Saves the object's properties to the specified storage.  
   
 ```
-STDMETHOD(Save)(
-    IStorage* pStorage, BOOL fSameAsLoad);
+STDMETHOD(Save)(IStorage* pStorage, BOOL fSameAsLoad);
 ```  
   
 ### Remarks  

@@ -103,9 +103,7 @@ CGopherLocator(const CGopherLocator& ref);
  Call this member function to get the locator type.  
   
 ```  
-BOOL GetLocatorType(DWORD& dwRef) const;
-
- 
+BOOL GetLocatorType(DWORD& dwRef) const;  
 ```  
   
 ### Parameters  
@@ -149,9 +147,7 @@ BOOL GetLocatorType(DWORD& dwRef) const;
  This useful casting operator provides an efficient method to access the null-terminated C string contained in a `CGopherLocator` object.  
   
 ```  
-operator LPCTSTR () const;
-
- 
+operator LPCTSTR () const;  
 ```  
   
 ### Return Value  
