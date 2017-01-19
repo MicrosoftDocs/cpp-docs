@@ -66,7 +66,7 @@ Visual C++ no longer supports targeting Windows 95, Windows 98, Windows ME, Wind
 #define _WIN32_WINNT_WIN10                  0x0A00 // Windows 10  
 ```  
   
- If you don't see all of these versions of Windows listed in a copy of SDKDDKVer.h that you're looking at, you probably are using an older version of the Windows SDK. By default, Win32 projects in [!INCLUDE[vs_dev14](../ide/includes/vs_dev14_md.md)] use the Windows 8.1 SDK. To use the Windows 10 SDK, see [How to: Use the Windows 10 SDK in a Windows Desktop Application](../windows/how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md).  
+ If you don't see all of these versions of Windows listed in a copy of SDKDDKVer.h that you're looking at, you probably are using an older version of the Windows SDK. By default, Win32 projects in Visual Studio 2017 use the Windows 10 SDK.   
   
 > [!NOTE]
 >  Values are not guaranteed to work if you include internal MFC headers in your application.  

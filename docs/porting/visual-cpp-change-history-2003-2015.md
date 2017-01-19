@@ -42,7 +42,9 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
   
  Additionally, ongoing improvements to compiler conformance can sometimes change how the compiler understands your existing source code. When this happens, you might encounter new or different errors during your build, or even behavioral differences in code that previously built and seemed to run correctly. Although these are not breaking changes like the ones discussed in this document, source code changes might be needed to resolve these issues.  
   
- This article describes all the breaking changes going back to Visual Studio 2003, and in this article the terms "new behavior" or "now" refer to Visual Studio 2015. The terms "old behavior" and "before" refer to Visual Studio 2013 and earlier releases.  
+ This article describes all the breaking changes from Visual Studio 2015 going back to Visual Studio 2003, and in this article the terms "new behavior" or "now" refer to Visual Studio 2015 and later. The terms "old behavior" and "before" refer to Visual Studio 2013 and earlier releases. 
+ 
+ For information about Visual Studio 2017, see [What's new for Visual C++ in Visual Studio 2017](../top/what-s-new-for-visual-cpp-in-visual-studio.md) and [Conformance Improvements in Visual C++ in Visual Studio 2017](../top/cpp-conformance-improvements-2017.md).
   
 1.  [C Runtime (CRT) Library Breaking Changes](#BK_CRT)  
   

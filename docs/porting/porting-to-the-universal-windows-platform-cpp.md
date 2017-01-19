@@ -32,7 +32,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Porting to the Universal Windows Platform (C++)
-In this topic, you can find information on how to port existing C++ code to the Windows 10 app platform, the Universal Windows Platform. What is meant by the term *universal* is that your code can run on any of the devices that run Windows 10, including desktop, phone, tablets, and future devices that run Windows 10. With Windows 8.1, you created an app that targeted both Windows 8.1 and Windows Phone 8.1 by using a special project system feature called a shared project. Universal Windows Apps do not use this mechanism, but instead you use a single project and a single XAML that works well on any device that runs Windows 10. You can use dynamic layout features in XAML to allow the app's UI to adapt to different display sizes.  
+In this topic, you can find information on how to port existing C++ code to the Windows 10 app platform, the Universal Windows Platform. What is meant by the term *universal* is that your code can run on any of the devices that run Windows 10, including desktop, phone, tablets, and future devices that run Windows 10. You create a single project and a single XAML-base user interface that works well on any device that runs Windows 10. You can use dynamic layout features in XAML to allow the app's UI to adapt to different display sizes.  
   
  The Windows Dev Center documentation contains a guide for porting Windows 8.1 apps to the Universal Windows Platform. See [Move from Windows Runtime 8 to UWP](https://msdn.microsoft.com/windows/uwp/porting/w8x-to-uwp-root). Although the guide focused mostly on C# code, most of the guidance is applicable to C++. The following procedures contain more detailed information.  
   
@@ -45,15 +45,15 @@ In this topic, you can find information on how to port existing C++ code to the 
  If you have a classic desktop Win32 DLL and you want to call it from a UWP application, you can do that as well. Using such procedures, you can create a UWP user interface layer for an existing classic Windows desktop C++ application, or your cross-platform standard C++ code. See [How to: Use Existing C++ Code in a Universal Windows Platform App](../porting/how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md).  
   
 ##  <a name="BK_81StoreApp"></a> Porting a Windows 8.1 Store App to the UWP  
- If you have a Windows 8.1 Store App, you can use this procedure to get it working on the UWP and any device that runs Windows 10.  It's a good idea to first build the project with [!INCLUDE[vs_dev14](../ide/includes/vs_dev14_md.md)] as a Windows 8.1 project, to first eliminate any issues that arise from changes in the compiler and libraries. Once you've done that, there are two ways to convert this to a Windows 10 UWP project. The easiest way (as explained in the following procedure) is to create a Universal Windows project, and copy your existing code into it. If you were using a Universal project for Windows 8.1 desktop and Windows 8.1 Phone, your project will start with two different layouts in XAML but end with a single dynamic layout that adjusts to the display size.  
+ If you have a Windows 8.1 Store App, you can use this procedure to get it working on the UWP and any device that runs Windows 10.  It's a good idea to first build the project with Visual Studio 2017 as a Windows 8.1 project, to first eliminate any issues that arise from changes in the compiler and libraries. Once you've done that, there are two ways to convert this to a Windows 10 UWP project. The easiest way (as explained in the following procedure) is to create a Universal Windows project, and copy your existing code into it. If you were using a Universal project for Windows 8.1 desktop and Windows 8.1 Phone, your project will start with two different layouts in XAML but end with a single dynamic layout that adjusts to the display size.  
   
 #### To port a Windows 8.1 Store App to the UWP  
   
-1.  If you have not already done so, open your Windows 8.1 App project in [!INCLUDE[vs_dev14](../ide/includes/vs_dev14_md.md)], and follow the instructions to upgrade the project file.  
+1.  If you have not already done so, open your Windows 8.1 App project in Visual Studio 2017, and follow the instructions to upgrade the project file.  
   
-     You need to have installed the Windows 8.1 Tools in Visual Studio setup. If you don't have those tools installed, start Visual Studio setup from the Programs and Features window, choose [!INCLUDE[vs_dev14](../ide/includes/vs_dev14_md.md)], and in the setup window, choose **Modify**. Locate Windows 8.1 Tools, make sure it is selected, and choose OK.  
+     You need to have installed the Windows 8.1 Tools in Visual Studio setup. If you don't have those tools installed, start Visual Studio setup from the Programs and Features window, choose Visual Studio 2017, and in the setup window, choose **Modify**. Locate Windows 8.1 Tools, make sure it is selected, and choose OK.  
   
-2.  Open the Project Properties window, and under C++, General, set the Platform Toolset to v140, the build tools for [!INCLUDE[vs_dev14](../ide/includes/vs_dev14_md.md)].  
+2.  Open the Project Properties window, and under C++, General, set the Platform Toolset to v141, the build tools for Visual Studio 2017.  
   
 3.  Build the project as a Windows 8.1 project, and address any build errors. Any errors at this stage are probably due to breaking changes in the build tools and libraries. See [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md) for a detailed explanation of the changes that might affect your code.  
   
@@ -93,7 +93,7 @@ In this topic, you can find information on how to port existing C++ code to the 
   
 #### To port a Windows 8.1 Runtime Component to the UWP  
   
-1.  In the **New Project** dialog in [!INCLUDE[vs_dev14](../ide/includes/vs_dev14_md.md)], locate the **Windows Universal** node. If you don't see this node, install the [Tools for Windows 10](http://go.microsoft.com/fwlink/p/?LinkID=617903) first. Choose the **Windows Runtime Component** template, give a name for your component, and choose the **OK** button. The component name will be used as the namespace name, so you might want to use the same name as your old projects' namespace. This requires that you create the project in a different folder from the old one. If you choose a different name, you can update the namespace name in the generated code files.  
+1.  In the **New Project** dialog in Visual Studio 2017, locate the **Windows Universal** node. If you don't see this node, install the [Tools for Windows 10](http://go.microsoft.com/fwlink/p/?LinkID=617903) first. Choose the **Windows Runtime Component** template, give a name for your component, and choose the **OK** button. The component name will be used as the namespace name, so you might want to use the same name as your old projects' namespace. This requires that you create the project in a different folder from the old one. If you choose a different name, you can update the namespace name in the generated code files.  
   
 2.  Close the project.  
   

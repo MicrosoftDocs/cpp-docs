@@ -1,5 +1,5 @@
 ---
-title: "Migrating Third-Party Libraries | Microsoft Docs"
+title: "Porting Third-Party Libraries | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/10/2017"
 ms.reviewer: ""
@@ -33,18 +33,19 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
+# Porting third-party libraries
 When you upgrade a project to the current version of Visual C++, you also have to upgrade any libraries that the project uses, so that the library and your project are built with the same version and flavor of the compiler. (For more information, see [Overview of potential upgrade issues](overview-of-potential-upgrade-issues-visual-cpp.md)). 
 
 ## Introducing vcpkg
 In the past, finding and upgrading 3rd party libraries was sometimes a non-trivial task. To make it easier to acquire and rebuild C++ 3rd party open source libraries, the Visual C++ team has created a command-line tool called the **VC++ Packaging Tool** or **vcpkg**. Vcpkg has a searchable catalog of many popular C++ open-source libraries. You can install any library in the catalog directly from the vcpkg command line. When you install a library, Vcpkg creates a directory tree on your machine and adds the .h, the .lib and binaries in this folder. You can use this folder in your compilation command line, or integrate it into Visual Studio 2015 or later by using the vcpkg integrate install command. After you integrate a library location, Visual Studio can find it and add it to any new project that you create. To use a library, just #include it, and Visual Studio will automatically add the .lib path to your project settings and copy the dll to your solution folder.
 
-## Acquisition and Usage
+## Acquisition and usage
 
 You can download vcpkg from the [vcpkg GitHub repo][vcpkg](https://github.com/Microsoft/vcpkg/).
 
- - To search a library in the catalog run: vcpkg search <LibName>
- - To acquire a library just run: vcpkg install boost
- - To list the already installed libs run: vcpkg list
+ - To search a library in the catalog: vcpkg search <LibName>
+ - To acquire a library (for example Boost): vcpkg install boost
+ - To list the libs that are currently installed: vcpkg list
 
 The blog post [Vcpkg: a tool to acquire and build C++ open source libraries on Windows](https://blogs.msdn.microsoft.com/vcblog/2016/09/19/vcpkg-a-tool-to-acquire-and-build-c-open-source-libraries-on-windows/) explains how vcpkg works and gives a list of supported libraries. The list is updated every week.
 
