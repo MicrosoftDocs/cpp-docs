@@ -34,7 +34,7 @@ translation.priority.ht:
 This porting case study is designed to give you an idea of what a typical porting project is like, the types of problems you might encounter, and some general tips and tricks for addressing porting problems. It's not meant to be a definitive guide to porting, since the experience of porting a project depends very much on the specifics of the code.  
   
 ## Spy++  
- Spy++ is a widely used GUI diagnostic tool for the Windows desktop that provides all sorts of information about user interface elements on the Windows desktop. It shows the complete hierarchy of windows and provides access to metadata about each window and control. This useful application has shipped with Visual Studio for many years. We found an old version of it that was last compiled in Visual C++ 6.0 and ported it to [!INCLUDE[vs_dev14](../ide/includes/vs_dev14_md.md)].  
+ Spy++ is a widely used GUI diagnostic tool for the Windows desktop that provides all sorts of information about user interface elements on the Windows desktop. It shows the complete hierarchy of windows and provides access to metadata about each window and control. This useful application has shipped with Visual Studio for many years. We found an old version of it that was last compiled in Visual C++ 6.0 and ported it to [!INCLUDE[vs_dev14](../ide/includes/vs_dev14_md.md)]. The experience for Visual Studio 2017 should be almost identical.
   
  We considered this case to be typical for porting Windows desktop applications that use MFC and the Win32 API, especially for old projects that have not been updated with each release of Visual C++ since Visual C++ 6.0.  
   
@@ -275,7 +275,7 @@ MOUT << _T(" chUser:'") << chUser
   
 mstream& operator<<(LPTSTR psz)  
 {  
-return (mstream&)ostrstream::operator<<(psz);  
+  return (mstream&)ostrstream::operator<<(psz);  
 }  
   
 ```  
@@ -377,25 +377,25 @@ warning C4456: declaration of 'lpszBuffer' hides previous local declaration
   
 DECODEPARM(CB_GETLBTEXT)  
 {  
-P2WPOUT();  
+  P2WPOUT();  
   
-P2LPOUTPTRSTR;  
-P2IFDATA()  
-{  
-PARM(lpszBuffer, PPACK_STRINGORD, ED2);  
-  
-INDENT();  
-  
-P2IFISORD(lpszBuffer)  
-{  
-P2OUTORD(lpszBuffer);  
-}  
-else  
-{  
-PARM(lpszBuffer, LPTSTR, ED2);  
-P2OUTS(lpszBuffer);  
-}  
-}  
+  P2LPOUTPTRSTR;  
+  P2IFDATA()  
+  {  
+    PARM(lpszBuffer, PPACK_STRINGORD, ED2);  
+      
+    INDENT();  
+      
+    P2IFISORD(lpszBuffer)  
+    {  
+      P2OUTORD(lpszBuffer);  
+    }  
+    else  
+    {  
+      PARM(lpszBuffer, LPTSTR, ED2);  
+      P2OUTS(lpszBuffer);  
+    }  
+  }  
 }  
   
 ```  
@@ -463,7 +463,7 @@ error C2065: 'm_bIsWindows9x': undeclared identifier
   
 void CSpyApp::OnUpdateSpyProcesses(CCmdUI *pCmdUI)  
 {  
-pCmdUI->Enable(m_bIsWindows9x || hToolhelp32 != NULL);  
+  pCmdUI->Enable(m_bIsWindows9x || hToolhelp32 != NULL);  
 }  
   
 ```  
@@ -474,7 +474,7 @@ pCmdUI->Enable(m_bIsWindows9x || hToolhelp32 != NULL);
   
 void CSpyApp::OnUpdateSpyProcesses(CCmdUI *pCmdUI)  
 {  
-pCmdUI->Enable(TRUE /*!m_bIsWindows9x || hToolhelp32 != NULL*/);  
+  pCmdUI->Enable(TRUE /*!m_bIsWindows9x || hToolhelp32 != NULL*/);  
 }  
   
 ```  
@@ -497,17 +497,17 @@ m_bStdMouse = TRUE;
   
 class CTreeListBox : public CListBox  
 {  
-DECLARE_DYNCREATE(CTreeListBox)  
-  
-CTreeListBox();  
-  
-private:  
-int ItemFromPoint(const CPoint& point);  
-  
-class CTreeCtl* m_pTree;  
-BOOL m_bGotMouseDown : 1;  
-BOOL m_bDeferedDeselection : 1;  
-BOOL m_bStdMouse : 1;  
+  DECLARE_DYNCREATE(CTreeListBox)  
+    
+  CTreeListBox();  
+    
+  private:  
+  int ItemFromPoint(const CPoint& point);  
+    
+  class CTreeCtl* m_pTree;  
+  BOOL m_bGotMouseDown : 1;  
+  BOOL m_bDeferedDeselection : 1;  
+  BOOL m_bStdMouse : 1;  
   
 ```  
   
@@ -626,23 +626,23 @@ _tcscpy(pParentNode->m_szText, strTitle);
   
 BOOL C3dDialogTemplate::GetFont(CString& strFace, WORD& nFontSize)  
 {  
-ASSERT(m_hTemplate != NULL);  
-  
-DLGTEMPLATE* pTemplate = (DLGTEMPLATE*)GlobalLock(m_hTemplate);  
-if ((pTemplate->style & DS_SETFONT) == 0)  
-{  
-GlobalUnlock(m_hTemplate);  
-return FALSE;  
-}  
-  
-BYTE* pb = GetFontSizeField(pTemplate);  
-nFontSize = *(WORD*)pb;  
-pb += sizeof (WORD);  
-WideCharToMultiByte(CP_ACP, 0, (LPCWSTR)pb, -1,  
-strFace.GetBufferSetLength(LF_FACESIZE), LF_FACESIZE, NULL, NULL);  
-strFace.ReleaseBuffer();  
-GlobalUnlock(m_hTemplate);  
-return TRUE;  
+  ASSERT(m_hTemplate != NULL);  
+    
+  DLGTEMPLATE* pTemplate = (DLGTEMPLATE*)GlobalLock(m_hTemplate);  
+  if ((pTemplate->style & DS_SETFONT) == 0)  
+  {  
+    GlobalUnlock(m_hTemplate);  
+    return FALSE;  
+  }  
+    
+  BYTE* pb = GetFontSizeField(pTemplate);  
+  nFontSize = *(WORD*)pb;  
+  pb += sizeof (WORD);  
+  WideCharToMultiByte(CP_ACP, 0, (LPCWSTR)pb, -1,  
+  strFace.GetBufferSetLength(LF_FACESIZE), LF_FACESIZE, NULL, NULL);  
+  strFace.ReleaseBuffer();  
+  GlobalUnlock(m_hTemplate);  
+  return TRUE;  
 }  
   
 ```  
@@ -694,9 +694,9 @@ strFace.ReleaseBuffer();
   
 int CPerfTextDataBase::NumStrings(LPCTSTR mszStrings) const  
 {  
-for (int n = 0; mszStrings[0] != 0; n++)  
-mszStrings = _tcschr(mszStrings, 0) + 1;  
-return(n);  
+  for (int n = 0; mszStrings[0] != 0; n++)  
+  mszStrings = _tcschr(mszStrings, 0) + 1;  
+  return(n);  
 }  
   
 ```  
@@ -713,16 +713,16 @@ return(n);
   
 int CPerfTextDataBase::NumStrings(LPCTSTR mszStrings) const  
 {  
-int n;  
-for (n = 0; mszStrings[0] != 0; n++)  
-mszStrings = _tcschr(mszStrings, 0) + 1;  
-return(n);  
+  int n;  
+  for (n = 0; mszStrings[0] != 0; n++)  
+  mszStrings = _tcschr(mszStrings, 0) + 1;  
+  return(n);  
 }  
   
 ```  
   
 ## Summary  
- Porting Spy++ from the original Visual C++ 6.0 code to the latest compiler took about 20 hours of coding time over the course of about a week. We upgraded directly through eight releases of the product, but for larger projects, you might find it better to upgrade one release at a time. This might take longer, but at least you will be able to narrow down what version of the tools caused a particular error to occur.  
+ Porting Spy++ from the original Visual C++ 6.0 code to the latest compiler took about 20 hours of coding time over the course of about a week. We upgraded directly through eight releases of the product from Visual Studio 6.0 to Visual Studio 2015. This is now the recommended approach for all upgrades on projects large and small.  
   
 ## See Also  
  [Porting and Upgrading: Examples and Case Studies](../porting/porting-and-upgrading-examples-and-case-studies.md)   
