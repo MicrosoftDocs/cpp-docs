@@ -361,7 +361,7 @@ description: Learn how to use C++ to develop applications, services, and tools f
                                 </a>
                             </li>
                             <li>
-                                <a href="/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp">
+                                <a href="/cpp/windows/component-extensions-for-runtime-platforms">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
