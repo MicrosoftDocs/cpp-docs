@@ -164,7 +164,6 @@ vector&<bool&>::const_reference operator[](size_type Pos) const;
   This code example shows the correct use of `vector<bool>::operator[]` and two common coding mistakes, which are commented out. These mistakes cause errors because the address of the `vector<bool>::reference` object that `vector<bool>::operator[]` returns cannot be taken.  
   
 ```cpp  
-  
 // cl.exe /EHsc /nologo /W4 /MTd   
 #include <vector>  
 #include <iostream>  
@@ -178,8 +177,8 @@ int main()
     vb.push_back(true);  
     vb.push_back(false);  
   
-    //    bool* pb = &vb[1]; // conversion error -                         do not use  
-    //    bool& refb = vb[1];   // conversion error -                         do not use  
+    //    bool* pb = &vb[1]; // conversion error - do not use  
+    //    bool& refb = vb[1];   // conversion error - do not use  
     bool hold = vb[1];  
     cout << "The second element of vb is " << vb[1] << endl;  
     cout << "The held value from the second element of vb is " << hold << endl;  
@@ -189,7 +188,6 @@ int main()
     cout << "The second element of vb is " << vb[1] << endl;  
     cout << "The held value from the second element of vb is " << hold << endl;  
 }  
-  
 ```  
   
 ##  <a name="vector_lt_bool_gt___pointer"></a>  vector\<bool>::pointer  
@@ -207,9 +205,9 @@ typedef iterator pointer;
   
 ```cpp  
     vector<bool> vb;  
-...  
-    bool* pb = &vb[1]; // conversion error -         do not use  
-    bool& refb = vb[1];   // conversion error -         do not use  
+    //...  
+    bool* pb = &vb[1]; // conversion error - do not use  
+    bool& refb = vb[1];   // conversion error - do not use  
 ```  
   
 ###  <a name="vector_lt_bool_gt___reference_flip"></a>  vector\<bool>::reference::flip  
@@ -218,8 +216,6 @@ typedef iterator pointer;
 ```  
 void flip();
 ```  
-  
-#### Remarks  
   
 #### Example  
   
@@ -251,19 +247,20 @@ int main()
     }  
     cout << endl;  
 }  
-/* Output:  
+```  
+  
+```Output  
 The vector is:  
     true false false true true  
 The vector with first element flipped is:  
     false false false true true  
-	*/  
-  
 ```  
   
 ###  <a name="vector_lt_bool_gt___reference_operator_bool"></a>  vector\<bool>::reference::operator bool  
  Provides an implicit conversion from `vector<bool>::reference` to `bool`.  
   
-```  operator bool() const;
+```  
+operator bool() const;
 ```  
   
 #### Return Value  
@@ -277,7 +274,6 @@ The vector with first element flipped is:
   
 ```  
 reference& operator=(const reference& Right);
-
 reference& operator=(bool Val);
 ```  
   
@@ -344,7 +340,9 @@ int main()
     cout << "The original value of the 3rd element still stored in a bool: " << b3 << endl;  
     cout << endl;  
 }  
-/* Output:  
+```  
+  
+```Output  
 The vector is: true false false true true  
 The original value of the 1st element stored in a bool: true  
 The original value of the 2nd element stored in a bool: false  
@@ -355,15 +353,12 @@ The vector after assigning false to refelem1 is now: true true true true true
 The original value of the 1st element still stored in a bool: true  
 The original value of the 2nd element still stored in a bool: false  
 The original value of the 3rd element still stored in a bool: false  
-*/  
-  
 ```  
   
 ##  <a name="vector_lt_bool_gt___swap"></a>  vector\<bool>::swap  
  Static member function that exchanges two elements of Boolean vectors ( `vector<bool>`) by using the proxy class [vector\<bool>::reference](#vector_lt_bool_gt___reference_class).  
   
 ```  
- 
 static void swap(
     reference Left,  
     reference Right);
