@@ -106,7 +106,6 @@ invoked const volatile S.f()
   
 ## Requirements  
 **Header:** \<type_traits>  
-  
 **Namespace:** std  
   
 ## See Also  

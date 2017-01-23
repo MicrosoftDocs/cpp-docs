@@ -92,7 +92,7 @@ class fpos
  Create an object that contains information about a position (offset) in a stream.  
   
 ```  
-fpos(streamoff _Off =0);
+fpos(streamoff _Off = 0);
 
 fpos(Statetype _State, fpos_t _Filepos);
 ```  
@@ -226,7 +226,6 @@ fpos<Statetype>& operator+=(streamoff _Off);
   
 ```  
 streamoff operator-(const fpos<Statetype>& right) const;
-
  
 fpos<Statetype> operator-(streamoff _Off) const;
 ```  
@@ -287,7 +286,8 @@ bool operator==(const fpos<Statetype>& right) const;
 ##  <a name="fpos__operator_streamoff"></a>  fpos::operator streamoff  
  Cast object of type `fpos` to object of type `streamoff`.  
   
-```  operator streamoff() const;
+```  
+operator streamoff() const;
 ```  
   
 ### Remarks  

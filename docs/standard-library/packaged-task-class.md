@@ -77,7 +77,7 @@ class packaged_task;
 ##  <a name="packaged_task__get_future_method"></a>  packaged_task::get_future  
  Returns an object of type `future<Ty>` that has the same *associated asynchronous state*.  
   
-```cpp
+```
 future<Ty> get_future();
 ```  
   
@@ -89,7 +89,7 @@ future<Ty> get_future();
 ##  <a name="packaged_task__make_ready_at_thread_exit_method"></a>  packaged_task::make_ready_at_thread_exit  
  Calls the callable object that's stored in the *associated asynchronous state* and atomically stores the returned value.  
   
-```cpp
+```
 void make_ready_at_thread_exit(ArgTypes... args);
 ```  
   
@@ -105,7 +105,7 @@ void make_ready_at_thread_exit(ArgTypes... args);
 ##  <a name="packaged_task__operator_eq"></a>  packaged_task::operator=  
  Transfers the *associated asynchronous state* from a specified object.  
   
-```cpp
+```
 packaged_task& operator=(packaged_task&& Right);
 ```  
   
@@ -122,7 +122,7 @@ packaged_task& operator=(packaged_task&& Right);
 ##  <a name="packaged_task__operator__"></a>  packaged_task::operator()  
  Calls the callable object that's stored in the *associated asynchronous state*, atomically stores the returned value, and sets the state to *ready*.  
   
-```cpp
+```
 void operator()(ArgTypes... args);
 ```  
   
@@ -146,15 +146,15 @@ operator bool() const noexcept;
 ##  <a name="packaged_task__packaged_task_constructor"></a>  packaged_task::packaged_task Constructor  
  Constructs a `packaged_task` object.  
   
-```cpp
+```
 packaged_task() noexcept;
 packaged_task(packaged_task&& Right) noexcept;
 template <class Fn>
-explicit packaged_task(Fn&& fn);
+   explicit packaged_task(Fn&& fn);
 
 template <class Fn, class Alloc>
-explicit packaged_task(allocator_arg_t,
-    const Alloc& alloc, Fn&& fn);
+   explicit packaged_task(
+      allocator_arg_t, const Alloc& alloc, Fn&& fn);
 ```  
   
 ### Parameters  
