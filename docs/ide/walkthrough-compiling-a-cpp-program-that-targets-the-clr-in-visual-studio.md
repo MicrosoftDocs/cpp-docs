@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Compiling a C++ Program that Targets the CLR in Visual Studio | Microsoft Docs"
+title: "Compiling a C++ Program that Targets the CLR | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

@@ -1,5 +1,5 @@
 ---
-title: "Input and Output, Manifest Tool, Configuration Properties, &lt;Projectname&gt; Property Pages Dialog Box | Microsoft Docs"
+title: "Manifest Tool Input and Output Properties (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
