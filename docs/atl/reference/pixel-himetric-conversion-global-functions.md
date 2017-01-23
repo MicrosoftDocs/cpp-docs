@@ -69,8 +69,8 @@ extern void AtlHiMetricToPixel(
   
 ```
 extern void AtlPixelToHiMetric(
-  const SIZEL* lpSizeInPix,  
-  LPSIZEL lpSizeInHiMetric);
+    const SIZEL* lpSizeInPix, 
+    LPSIZEL lpSizeInHiMetric);
 ```  
   
 ### Parameters  

@@ -177,8 +177,7 @@ CSize GetMinSize();
  Retrieves the rectangle for the window's current client area.  
   
 ```  
-void GetHostWndRect(
-    CRect& rect,);
+void GetHostWndRect(CRect& rect,);
 ```  
   
 ### Parameters  
@@ -221,9 +220,7 @@ BOOL IsEmpty();
 ```  
 static BOOL LoadResource(CWnd* pHostWnd,
     LPVOID lpResource,
-    DWORD dwSize);
-
- 
+    DWORD dwSize);  
 ```  
   
 ### Parameters  
@@ -245,9 +242,7 @@ static BOOL LoadResource(CWnd* pHostWnd,
  Gets a [MoveSettings](#movesettings_structure) value that defines how much a child control is moved horizontally when the user resizes its hosting window.  
   
 ```  
-static MoveSettings MoveHorizontal(int nRatio);
-
- 
+static MoveSettings MoveHorizontal(int nRatio);  
 ```  
   
 ### Parameters  
@@ -263,9 +258,7 @@ static MoveSettings MoveHorizontal(int nRatio);
  Gets a [MoveSettings](#movesettings_structure) value that defines how much a child control is moved horizontally when the user resizes its hosting window.  
   
 ```  
-static MoveSettings MoveHorizontalAndVertical(int nXRatio int nYRatio);
-
- 
+static MoveSettings MoveHorizontalAndVertical(int nXRatio int nYRatio);  
 ```  
   
 ### Parameters  
@@ -284,9 +277,7 @@ static MoveSettings MoveHorizontalAndVertical(int nXRatio int nYRatio);
  Gets a [MoveSettings](#movesettings_structure) value that represents no motion, vertical or horizontal, for a child control.  
   
 ```  
-static MoveSettings MoveNone();
-
- 
+static MoveSettings MoveNone();  
 ```  
   
 ### Return Value  
@@ -339,9 +330,7 @@ BOOL IsVertical() const
  Gets a [MoveSettings](#movesettings_structure) value that defines how much a child control is moved vertically when the user resizes its hosting window.  
   
 ```  
-static MoveSettings MoveVertical(int nRatio);
-
- 
+static MoveSettings MoveVertical(int nRatio);  
 ```  
   
 ### Parameters  
@@ -371,9 +360,7 @@ void SetMinSize(const CSize& size);
  Gets a [SizeSettings](#sizesettings_structure) value that defines how much a child control is resized horizontally when the user resizes its hosting window.  
   
 ```  
-static SizeSettings SizeHorizontal(int nRatio);
-
- 
+static SizeSettings SizeHorizontal(int nRatio);  
 ```  
   
 ### Parameters  
@@ -389,9 +376,7 @@ static SizeSettings SizeHorizontal(int nRatio);
  Gets a [SizeSettings](#sizesettings_structure) value that defines how much a child control is resized horizontally when the user resizes its hosting window.  
   
 ```  
-static SizeSettings SizeHorizontalAndVertical(int nXRatio int nYRatio);
-
- 
+static SizeSettings SizeHorizontalAndVertical(int nXRatio int nYRatio);  
 ```  
   
 ### Parameters  
@@ -410,9 +395,7 @@ static SizeSettings SizeHorizontalAndVertical(int nXRatio int nYRatio);
  Gets a [SizeSettings](#sizesettings_structure) value that represents no change in size for a child control.  
   
 ```  
-static SizeSettings SizeNone();
-
- 
+static SizeSettings SizeNone();  
 ```  
   
 ### Return Value  
@@ -464,9 +447,7 @@ BOOL IsVertical() const
  Gets a [SizeSettings](#sizesettings_structure) value that defines how much a child control is resized vertically when the user resizes its hosting window.  
   
 ```  
-static SizeSettings SizeVertical(int nRatio);
-
- 
+static SizeSettings SizeVertical(int nRatio);  
 ```  
   
 ### Parameters  

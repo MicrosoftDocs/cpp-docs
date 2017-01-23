@@ -169,9 +169,7 @@ IDWriteTextFormat* Get();
  Gets a copy of the font family name.  
   
 ```  
-CString GetFontFamilyName() const;
-
- 
+CString GetFontFamilyName() const;  
 ```  
   
 ### Return Value  
@@ -181,7 +179,7 @@ CString GetFontFamilyName() const;
  Gets a copy of the locale name.  
   
 ```  
-CString GetLocaleName() const; 
+CString GetLocaleName() const;  
 ```  
   
 ### Return Value  
@@ -191,7 +189,7 @@ CString GetLocaleName() const;
  Checks resource validity  
   
 ```  
-virtual BOOL IsValid() const; 
+virtual BOOL IsValid() const;  
 ```  
   
 ### Return Value  

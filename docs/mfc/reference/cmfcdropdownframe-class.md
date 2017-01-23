@@ -125,9 +125,7 @@ virtual BOOL Create(
  Retrieves the parent menu bar of the drop-down frame.  
   
 ```  
-CMFCMenuBar* GetParentMenuBar() const;
-
- 
+CMFCMenuBar* GetParentMenuBar() const;  
 ```  
   
 ### Return Value  
@@ -140,9 +138,7 @@ CMFCMenuBar* GetParentMenuBar() const;
  Retrieves the parent pop-up menu of the drop-down frame.  
   
 ```  
-CMFCDropDownFrame* GetParentPopupMenu() const;
-
- 
+CMFCDropDownFrame* GetParentPopupMenu() const;  
 ```  
   
 ### Return Value  

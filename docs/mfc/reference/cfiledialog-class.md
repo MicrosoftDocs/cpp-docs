@@ -590,9 +590,7 @@ HRESULT GetEditBoxText(
  Call this function to retrieve the extension of the filename entered into the dialog box.  
   
 ```  
-CString GetFileExt() const;
-
- 
+CString GetFileExt() const;  
 ```  
   
 ### Return Value  
@@ -607,9 +605,7 @@ CString GetFileExt() const;
  Call this function to retrieve the name of the filename entered in the dialog box.  
   
 ```  
-CString GetFileName() const;
-
- 
+CString GetFileName() const;  
 ```  
   
 ### Return Value  
@@ -624,9 +620,7 @@ CString GetFileName() const;
  Call this function to retrieve the title of the file entered in the dialog box.  
   
 ```  
-CString GetFileTitle() const;
-
- 
+CString GetFileTitle() const;  
 ```  
   
 ### Return Value  
@@ -644,9 +638,7 @@ CString GetFileTitle() const;
  Call this member function to retrieve the path of the currently open folder or directory for an Explorer-style Open or Save As common dialog box.  
   
 ```  
-CString GetFolderPath() const;
-
- 
+CString GetFolderPath() const;  
 ```  
   
 ### Return Value  
@@ -721,9 +713,7 @@ IFileSaveDialog* GetIFileSaveDialog();
  Call this function to retrieve the next filename from the group selected in the dialog box.  
   
 ```  
-CString GetNextPathName(POSITION& pos) const;
-
- 
+CString GetNextPathName(POSITION& pos) const;  
 ```  
   
 ### Parameters  
@@ -742,12 +732,9 @@ CString GetNextPathName(POSITION& pos) const;
  Retrieves the associated **OPENFILENAME** structure.  
   
 ```  
-const OPENFILENAME& GetOFN() const;
-
- 
- 
-OPENFILENAME& GetOFN();
-```  
+const OPENFILENAME& GetOFN() const;  
+  
+OPENFILENAME& GetOFN();```  
   
 ### Return Value  
  An [OPENFILENAME](http://msdn.microsoft.com/library/windows/desktop/ms646839) structure.  
@@ -759,9 +746,7 @@ OPENFILENAME& GetOFN();
  Call this function to retrieve the full path of the file entered in the dialog box.  
   
 ```  
-CString GetPathName() const;
-
- 
+CString GetPathName() const;  
 ```  
   
 ### Return Value  
@@ -779,9 +764,7 @@ CString GetPathName() const;
  Call this function to determine whether the Read Only check box has been selected in the Windows standard File Open and File Save As dialog boxes.  
   
 ```  
-BOOL GetReadOnlyPref() const;
-
- 
+BOOL GetReadOnlyPref() const;  
 ```  
   
 ### Return Value  
@@ -839,9 +822,7 @@ HRESULT GetSelectedControlItem(
  Call this member function to retrieve the position of the first file pathname in the list, if `m_ofn.Flags` has the `OFN_ALLOWMULTISELECT` flag set.  
   
 ```  
-POSITION GetStartPosition() const;
-
- 
+POSITION GetStartPosition() const;  
 ```  
   
 ### Return Value  
@@ -865,9 +846,7 @@ void HideControl(int nID);
  Determines if the current dialog is in folder picker mode.  
   
 ```  
-BOOL IsPickFoldersMode() const;
-
- 
+BOOL IsPickFoldersMode() const;  
 ```  
   
 ### Return Value  

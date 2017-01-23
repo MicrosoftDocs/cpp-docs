@@ -387,8 +387,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
  This method is called by the Service Control Manager.  
   
 ```
-void ServiceMain(DWORD dwArgc,
-    LPTSTR* lpszArgv) throw();
+void ServiceMain(DWORD dwArgc, LPTSTR* lpszArgv) throw();
 ```  
   
 ### Parameters  

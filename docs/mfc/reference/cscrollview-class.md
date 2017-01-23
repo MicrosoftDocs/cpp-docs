@@ -123,9 +123,7 @@ class CScrollView : public CView
 ```  
 void CheckScrollBars(
     BOOL& bHasHorzBar,  
-    BOOL& bHasVertBar) const;
-
- 
+    BOOL& bHasVertBar) const;  
 ```  
   
 ### Parameters  
@@ -171,9 +169,7 @@ void FillOutsideRect(
  Call `GetDeviceScrollPosition` when you need the current horizontal and vertical positions of the scroll boxes in the scroll bars.  
   
 ```  
-CPoint GetDeviceScrollPosition() const;
-
- 
+CPoint GetDeviceScrollPosition() const;  
 ```  
   
 ### Return Value  
@@ -192,9 +188,7 @@ void GetDeviceScrollSizes(
     int& nMapMode,  
     SIZE& sizeTotal,  
     SIZE& sizePage,  
-    SIZE& sizeLine) const;
-
- 
+    SIZE& sizeLine) const;  
 ```  
   
 ### Parameters  
@@ -217,9 +211,7 @@ void GetDeviceScrollSizes(
  Call `GetScrollPosition` when you need the current horizontal and vertical positions of the scroll boxes in the scroll bars.  
   
 ```  
-CPoint GetScrollPosition() const;
-
- 
+CPoint GetScrollPosition() const;  
 ```  
   
 ### Return Value  
@@ -234,9 +226,7 @@ CPoint GetScrollPosition() const;
  Call `GetTotalSize` to retrieve the current horizontal and vertical sizes of the scroll view.  
   
 ```  
-CSize GetTotalSize() const;
-
- 
+CSize GetTotalSize() const;  
 ```  
   
 ### Return Value  

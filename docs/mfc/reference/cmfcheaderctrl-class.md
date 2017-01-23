@@ -134,9 +134,7 @@ void EnableMultipleSort(BOOL bEnable=TRUE);
  Indicates whether a column is unsorted, or is sorted in ascending or descending order.  
   
 ```  
-int GetColumnState(int iColumn) const;
-
- 
+int GetColumnState(int iColumn) const;  
 ```  
   
 ### Parameters  
@@ -158,9 +156,7 @@ int GetColumnState(int iColumn) const;
  Retrieves the zero-based index of the first sorted column in the header control.  
   
 ```  
-int GetSortColumn() const;
-
- 
+int GetSortColumn() const;  
 ```  
   
 ### Return Value  
@@ -173,9 +169,7 @@ int GetSortColumn() const;
  Indicates whether any column in the header control is sorted in ascending order.  
   
 ```  
-BOOL IsAscending() const;
-
- 
+BOOL IsAscending() const;  
 ```  
   
 ### Return Value  
@@ -188,9 +182,7 @@ BOOL IsAscending() const;
  Indicates whether the parent window of the current header control is a dialog box.  
   
 ```  
-BOOL IsDialogControl() const;
-
- 
+BOOL IsDialogControl() const;  
 ```  
   
 ### Return Value  
@@ -200,9 +192,7 @@ BOOL IsDialogControl() const;
  Indicates whether the current header control is in *multiple column sort* mode.  
   
 ```  
-BOOL IsMultipleSort() const;
-
- 
+BOOL IsMultipleSort() const;  
 ```  
   
 ### Return Value  

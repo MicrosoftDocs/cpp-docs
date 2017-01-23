@@ -155,7 +155,9 @@ int eprintf(const char* format, ...)
 {  
   va_list args;  
   va_start(args, format);  
-  return _vcprintf(format, args);  
+  int result = _vcprintf(format, args);  
+  va_end(args);  
+  return result;  
 }  
   
 int main()  

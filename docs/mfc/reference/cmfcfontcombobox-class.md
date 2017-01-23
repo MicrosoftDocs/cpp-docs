@@ -106,9 +106,7 @@ CMFCFontComboBox();
  Retrieves information about the currently selected font.  
   
 ```  
-CMFCFontInfo* GetSelFont() const;
-
- 
+CMFCFontInfo* GetSelFont() const;  
 ```  
   
 ### Return Value  
@@ -130,8 +128,7 @@ static BOOL m_bDrawUsingFont;
  Selects the font that matches the specified criteria from the font combo box.  
   
 ```  
-BOOL SelectFont(
-    CMFCFontInfo* pDesc);
+BOOL SelectFont(CMFCFontInfo* pDesc);
 
  
 BOOL SelectFont(

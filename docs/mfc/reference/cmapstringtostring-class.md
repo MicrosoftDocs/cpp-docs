@@ -134,9 +134,7 @@ class CMapStringToString : public CObject
 ```  
 const CPair* PGetFirstAssoc() const;
 
- 
-CPair* PGetFirstAssoc();
-```  
+CPair* PGetFirstAssoc();```  
   
 ### Return Value  
  A pointer to the first entry in the map; see [CMapStringToString::CPair](#cpair). If the map is empty, the value is `NULL`.  
@@ -151,12 +149,9 @@ CPair* PGetFirstAssoc();
  Retrieves the map element pointed to by `pAssocRec`.  
   
 ```  
-const CPair *PGetNextAssoc(const CPair* pAssoc) const;
-
- 
- 
-CPair *PGetNextAssoc(const CPair* pAssoc);
-```  
+const CPair *PGetNextAssoc(const CPair* pAssoc) const;  
+  
+CPair *PGetNextAssoc(const CPair* pAssoc);```  
   
 ### Parameters  
  *pAssoc*  
@@ -177,9 +172,7 @@ CPair *PGetNextAssoc(const CPair* pAssoc);
 ```  
 const CPair* PLookup(LPCTSTR key) const;
 
- 
-CPair* PLookup(LPCTSTR key);
-```  
+CPair* PLookup(LPCTSTR key);```  
   
 ### Parameters  
  `key`  

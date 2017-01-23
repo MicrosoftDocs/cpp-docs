@@ -154,8 +154,7 @@ virtual BOOL AddToStoryboardAtOffset(
  Constructs a keyframe that depends on a transition.  
   
 ```  
-CKeyFrame(
-    CBaseTransition* pTransition);
+CKeyFrame(CBaseTransition* pTransition);
 
  
 CKeyFrame(

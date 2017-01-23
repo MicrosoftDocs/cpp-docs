@@ -108,9 +108,7 @@ class CMFCDropDownToolBar : public CMFCToolBar
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL AllowShowOnPaneMenu() const;
-
- 
+virtual BOOL AllowShowOnPaneMenu() const;  
 ```  
   
 ### Return Value  

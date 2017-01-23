@@ -43,8 +43,7 @@ This class provides methods for creating instances of a class, and obtaining its
 ## Syntax  
   
 ```
-template <class T,
-    const CLSID* pclsid = &CLSID_NULL>  
+template <class T, const CLSID* pclsid = &CLSID_NULL>  
 class CComCoClass
 ```  
   
@@ -87,10 +86,10 @@ class CComCoClass
   
 ```
 template <class  Q>
-    static HRESULT CreateInstance(Q** pp);
+static HRESULT CreateInstance( Q** pp);
 
-    template <class  Q>
-    static HRESULT CreateInstance(IUnknown* punkOuter, Q** pp);
+template <class  Q>
+static HRESULT CreateInstance(IUnknown* punkOuter, Q** pp);
 ```  
   
 ### Parameters  
@@ -129,32 +128,32 @@ static HRESULT WINAPI Error(
     const IID& iid = GUID_NULL,
     HRESULT hRes = 0);
 
-    static HRESULT WINAPI Error(
+static HRESULT WINAPI Error(
     LPCOLESTR lpszDesc,
     DWORD dwHelpID,
     LPCOLESTR lpszHelpFile,
     const IID& iid = GUID_NULL,
     HRESULT hRes = 0);
 
-    static HRESULT WINAPI Error(
+static HRESULT WINAPI Error(
     LPCSTR lpszDesc,
     const IID& iid = GUID_NULL,
     HRESULT hRes = 0);
 
-    static HRESULT WINAPI Error(
+static HRESULT WINAPI Error(
     LPCSTR lpszDesc,
     DWORD dwHelpID,
     LPCSTR lpszHelpFile,
     const IID& iid = GUID_NULL,
     HRESULT hRes = 0);
 
-    static HRESULT WINAPI Error(
+static HRESULT WINAPI Error(
     UINT nID,
     const IID& iid = GUID_NULL,
     HRESULT hRes = 0,
     HINSTANCE hInst = _AtlBaseModule.GetResourceInstance ());
 
-    static HRESULT Error(
+static HRESULT Error(
     UINT nID,
     DWORD dwHelpID,
     LPCOLESTR lpszHelpFile,

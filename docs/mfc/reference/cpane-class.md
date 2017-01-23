@@ -191,9 +191,7 @@ BOOL AllocElements(
  Specifies whether the pane is listed in the runtime-generated list of panes for the application.  
   
 ```  
-virtual BOOL AllowShowOnPaneMenu() const;
-
- 
+virtual BOOL AllowShowOnPaneMenu() const;  
 ```  
   
 ### Return Value  
@@ -222,9 +220,7 @@ virtual CSize CalcAvailableSize(CRect rectRequired);
 ```  
 void CalcInsideRect(
     CRect& rect,  
-    BOOL bHorz) const;
-
- 
+    BOOL bHorz) const;  
 ```  
   
 ### Parameters  
@@ -268,9 +264,7 @@ virtual CSize CalcSize(BOOL bVertDock);
  Determines if the pane can be docked at the specified base pane.  
   
 ```  
-virtual BOOL CanBeDocked(CBasePane* pDockBar) const;
-
- 
+virtual BOOL CanBeDocked(CBasePane* pDockBar) const;  
 ```  
   
 ### Parameters  
@@ -289,9 +283,7 @@ virtual BOOL CanBeDocked(CBasePane* pDockBar) const;
  Determines if the pane can be converted to a tabbed document.  
   
 ```  
-virtual BOOL CanBeTabbedDocument() const;
-
- 
+virtual BOOL CanBeTabbedDocument() const;  
 ```  
   
 ### Return Value  
@@ -546,9 +538,7 @@ virtual BOOL DockToFrameWindow(
  Indicates whether you can dock another pane at the same row where the current pane is docked.  
   
 ```  
-virtual BOOL DoesAllowSiblingBars() const;
-
- 
+virtual BOOL DoesAllowSiblingBars() const;  
 ```  
   
 ### Return Value  
@@ -589,9 +579,7 @@ virtual BOOL FloatPane(
  Returns the amount, in pixels, that the pane can expand.  
   
 ```  
-virtual int GetAvailableExpandSize() const;
-
- 
+virtual int GetAvailableExpandSize() const;  
 ```  
   
 ### Return Value  
@@ -603,9 +591,7 @@ virtual int GetAvailableExpandSize() const;
  Returns the amount, in pixels, that the pane can shrink.  
   
 ```  
-virtual int GetAvailableStretchSize() const;
-
- 
+virtual int GetAvailableStretchSize() const;  
 ```  
   
 ### Return Value  
@@ -618,9 +604,7 @@ virtual int GetAvailableStretchSize() const;
  Returns the width of the borders of the pane.  
   
 ```  
-CRect GetBorders() const;
-
- 
+CRect GetBorders() const;  
 ```  
   
 ### Return Value  
@@ -633,9 +617,7 @@ CRect GetBorders() const;
  Returns the *hot spot* for the pane.  
   
 ```  
-CPoint GetClientHotSpot() const;
-
- 
+CPoint GetClientHotSpot() const;  
 ```  
   
 ### Return Value  
@@ -647,9 +629,7 @@ CPoint GetClientHotSpot() const;
  Returns the dock row ( [CDockingPanesRow Class](../../mfc/reference/cdockingpanesrow-class.md)) in which the pane is docked.  
   
 ```  
-CDockingPanesRow* GetDockSiteRow() const;
-
- 
+CDockingPanesRow* GetDockSiteRow() const;  
 ```  
   
 ### Return Value  
@@ -659,9 +639,7 @@ CDockingPanesRow* GetDockSiteRow() const;
  Determines if the pane is in exclusive row mode.  
   
 ```  
-virtual BOOL GetExclusiveRowMode() const;
-
- 
+virtual BOOL GetExclusiveRowMode() const;  
 ```  
   
 ### Return Value  
@@ -674,9 +652,7 @@ virtual BOOL GetExclusiveRowMode() const;
  Returns the hot spot that is stored in an underlying `CMFCDragFrameImpl` object.  
   
 ```  
-CPoint GetHotSpot() const;
-
- 
+CPoint GetHotSpot() const;  
 ```  
   
 ### Return Value  
@@ -688,9 +664,7 @@ CPoint GetHotSpot() const;
  Retrieves the minimum allowed size for the pane.  
   
 ```  
-virtual void GetMinSize(CSize& size) const;
-
- 
+virtual void GetMinSize(CSize& size) const;  
 ```  
   
 ### Parameters  
@@ -703,9 +677,7 @@ virtual void GetMinSize(CSize& size) const;
  Retrieves the title for the pane.  
   
 ```  
-virtual void GetPaneName(CString& strName) const;
-
- 
+virtual void GetPaneName(CString& strName) const;  
 ```  
   
 ### Parameters  
@@ -719,9 +691,7 @@ virtual void GetPaneName(CString& strName) const;
  Retrieves the *virtual rectangle* of the pane.  
   
 ```  
-void GetVirtualRect(CRect& rectVirtual) const;
-
- 
+void GetVirtualRect(CRect& rectVirtual) const;  
 ```  
   
 ### Parameters  
@@ -739,9 +709,7 @@ void GetVirtualRect(CRect& rectVirtual) const;
 ```  
 virtual AFX_CS_STATUS IsChangeState(
     int nOffset,  
-    CBasePane** ppTargetBar) const;
-
- 
+    CBasePane** ppTargetBar) const;  
 ```  
   
 ### Parameters  
@@ -765,9 +733,7 @@ virtual AFX_CS_STATUS IsChangeState(
  Specifies whether the pane is being moved.  
   
 ```  
-virtual BOOL IsDragMode() const;
-
- 
+virtual BOOL IsDragMode() const;  
 ```  
   
 ### Return Value  
@@ -779,9 +745,7 @@ virtual BOOL IsDragMode() const;
  Specifies whether the pane is in a multi-pane frame window ( [CMultiPaneFrameWnd Class](../../mfc/reference/cmultipaneframewnd-class.md)).  
   
 ```  
-virtual BOOL IsInFloatingMultiPaneFrameWnd() const;
-
- 
+virtual BOOL IsInFloatingMultiPaneFrameWnd() const;  
 ```  
   
 ### Return Value  
@@ -796,9 +760,7 @@ virtual BOOL IsInFloatingMultiPaneFrameWnd() const;
 ```  
 bool IsLeftOf(
     CRect rect,  
-    bool bWindowRect = true) const;
-
- 
+    bool bWindowRect = true) const;  
 ```  
   
 ### Parameters  
@@ -817,9 +779,7 @@ bool IsLeftOf(
  Specifies whether the pane is resizable.  
   
 ```  
-virtual BOOL IsResizable() const;
-
- 
+virtual BOOL IsResizable() const;  
 ```  
   
 ### Return Value  
@@ -836,9 +796,7 @@ virtual BOOL IsResizable() const;
  Determines whether the pane has been inserted into the tab control of a tabbed window.  
   
 ```  
-virtual BOOL IsTabbed() const;
-
- 
+virtual BOOL IsTabbed() const;  
 ```  
   
 ### Return Value  
@@ -1160,11 +1118,9 @@ void SetBorders(
     int cxLeft = 0,  
     int cyTop = 0,  
     int cxRight = 0,  
-    int cyBottom = 0);
-
- 
-void SetBorders(
-    LPCRECT lpRect);
+    int cyBottom = 0);  
+  
+void SetBorders(LPCRECT lpRect);
 ```  
   
 ### Parameters  
@@ -1330,13 +1286,9 @@ virtual void UndockPane(BOOL bDelay = FALSE);
  Updates the virtual rectangle.  
   
 ```  
-void UpdateVirtualRect();
-
- 
-void UpdateVirtualRect(CPoint ptOffset);
-
- 
-void UpdateVirtualRect(CSize sizeNew);
+void UpdateVirtualRect();  
+void UpdateVirtualRect(CPoint ptOffset);  
+  void UpdateVirtualRect(CSize sizeNew);
 ```  
   
 ### Parameters  

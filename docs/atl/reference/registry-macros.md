@@ -65,8 +65,7 @@ These macros define useful type library and registry facilities.
  Provides a way for ATL to obtain the *libid* of the type library.  
   
 ```
-DECLARE_LIBID(
-    libid )
+DECLARE_LIBID( libid )
 ```  
   
 ### Parameters  
@@ -145,8 +144,7 @@ DECLARE_REGISTRY_APPID_RESOURCEID(
  Gets the named resource containing the registry file and runs the script to either enter objects into the system registry or remove them from the system registry.  
   
 ```
-DECLARE_REGISTRY_RESOURCE(
-    x )
+DECLARE_REGISTRY_RESOURCE( x )
 ```  
   
 ### Parameters  
@@ -169,8 +167,7 @@ DECLARE_REGISTRY_RESOURCE(
  Same as [DECLARE_REGISTRY_RESOURCE](#declare_registry_resource) except that it uses a wizard-generated **UINT** to identify the resource, rather than a string name.  
   
 ```
-DECLARE_REGISTRY_RESOURCEID(
-    x )
+DECLARE_REGISTRY_RESOURCEID( x )
 ```  
   
 ### Parameters  

@@ -96,8 +96,7 @@ class CCachedDataPathProperty : public CDataPathProperty
  Constructs a `CCachedDataPathProperty` object.  
   
 ```  
-CCachedDataPathProperty(
-    COleControl* pControl = NULL);
+CCachedDataPathProperty(COleControl* pControl = NULL);
 
  
 CCachedDataPathProperty(

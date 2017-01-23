@@ -154,7 +154,7 @@ IUnknown**
  Retrieves the element at the specified index.  
   
 ```
-IUnknown* GetAtint nIndex);
+IUnknown* GetAt(int nIndex);
 ```  
   
 ### Parameters  
@@ -195,7 +195,7 @@ int GetSize() const;
  Call this method to get the **IUnknown** pointer associated with a given cookie.  
   
 ```
-IUnknown* WINAPI GetUnknown(DWORD   dwCookie);
+IUnknown* WINAPI GetUnknown(DWORD dwCookie);
 ```  
   
 ### Parameters  
@@ -209,7 +209,7 @@ IUnknown* WINAPI GetUnknown(DWORD   dwCookie);
  Call this method to remove an **IUnknown** pointer from the array.  
   
 ```
-BOOL Remove(DWORD   dwCookie);
+BOOL Remove(DWORD dwCookie);
 ```  
   
 ### Parameters  

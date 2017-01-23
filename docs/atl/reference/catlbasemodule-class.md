@@ -111,7 +111,7 @@ CAtlBaseModule() throw();
  Returns a handle to a specified resource instance.  
   
 ```
-HINSTANCE GetHInstanceAtint i) throw();
+HINSTANCE GetHInstanceAt(int i) throw();
 ```  
   
 ### Parameters  

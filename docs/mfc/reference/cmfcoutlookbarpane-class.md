@@ -208,9 +208,7 @@ BOOL AddButton(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL CanBeAttached() const;
-
- 
+virtual BOOL CanBeAttached() const;  
 ```  
   
 ### Return Value  
@@ -301,9 +299,7 @@ void EnablePageScrollMode(BOOL bPageScroll=TRUE);
  Returns the regular (that is, non-selected) text color of the Outlook bar pane.  
   
 ```  
-DECLARE_MESSAGE_MAPCOLORREF GetRegularColor() const;
-
- 
+DECLARE_MESSAGE_MAPCOLORREF GetRegularColor() const;  
 ```  
   
 ### Return Value  
@@ -316,9 +312,7 @@ DECLARE_MESSAGE_MAPCOLORREF GetRegularColor() const;
  Determines whether there is a background image loaded for the Outlook bar pane.  
   
 ```  
-BOOL IsBackgroundTexture() const;
-
- 
+BOOL IsBackgroundTexture() const;  
 ```  
   
 ### Return Value  
@@ -333,9 +327,7 @@ BOOL IsBackgroundTexture() const;
  Determines whether the button border is shaded when a button is highlighted and a background image is displayed.  
   
 ```  
-BOOL IsDrawShadedHighlight() const;
-
- 
+BOOL IsDrawShadedHighlight() const;  
 ```  
   
 ### Return Value  

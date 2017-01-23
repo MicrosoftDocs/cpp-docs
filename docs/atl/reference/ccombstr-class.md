@@ -120,15 +120,10 @@ class CComBSTR
   
 ```
 HRESULT Append(const CComBSTR& bstrSrc) throw();
-
 HRESULT Append(wchar_t ch) throw();
-
 HRESULT Append(char ch) throw();
-
 HRESULT Append(LPCOLESTR lpsz) throw();
-
 HRESULT Append(LPCSTR lpsz) throw();
-
 HRESULT Append(LPCOLESTR lpsz, int nLen) throw();
 ```  
   
@@ -277,21 +272,14 @@ unsigned int ByteLength() const throw();
   
 ```
 CComBSTR() throw();
-CComBSTR( const CComBSTR& src);
-
-    CComBSTR( REFGUID  guid);
-
-    CComBSTR( int  nSize);
-
-    CComBSTR( int  nSize, LPCOLESTR sz);
-
-    CComBSTR( int  nSize, LPCSTR sz);
-
-    CComBSTR( LPCOLESTR  pSrc);
-
-    CComBSTR( LPCSTR  pSrc);
-
-    CComBSTR( CComBSTR&& src);
+CComBSTR(const CComBSTR& src);  
+CComBSTR(REFGUID  guid);  
+CComBSTR(int nSize);  
+CComBSTR(int nSize, LPCOLESTR sz);  
+CComBSTR(int nSize, LPCSTR sz);  
+CComBSTR(LPCOLESTR pSrc);  
+CComBSTR(LPCSTR pSrc);  
+CComBSTR(CComBSTR&& src);
 ```  
   
 ### Parameters  
@@ -471,10 +459,8 @@ bool operator!() const throw();
 ```
 bool operator!= (const CComBSTR& bstrSrc) const throw();
 bool operator!= (LPCOLESTR pszSrc) const;
-
-    bool operator!= (LPCSTR pszSrc) const;
-
-    bool operator!= int nNull) const throw();
+bool operator!= (LPCSTR pszSrc) const;
+bool operator!= (int nNull) const throw();
 ```  
   
 ### Parameters  
@@ -551,9 +537,8 @@ bool operator<(LPCSTR pszSrc) const throw();
   
 ```
 CComBSTR& operator= (const CComBSTR& src);  
-CComBSTR& operator= (LPCOLESTR pSrc);
-
-    CComBSTR& operator= (LPCSTR pSrc);
+CComBSTR& operator= (LPCOLESTR pSrc);  
+CComBSTR& operator= (LPCSTR pSrc);
 ```  
   
 ### Remarks  
@@ -568,10 +553,8 @@ CComBSTR& operator= (LPCOLESTR pSrc);
 ```
 bool operator== (const CComBSTR& bstrSrc) const throw();
 bool operator== (LPCOLESTR pszSrc) const;
-
-    bool operator== (LPCSTR pszSrc) const;
-
-    bool operator== int nNull) const throw();
+bool operator== (LPCSTR pszSrc) const;
+bool operator== (int nNull) const throw();
 ```  
   
 ### Parameters  

@@ -193,9 +193,7 @@ int GetEntryCount();
  Returns the index of the entry in the logical palette that most closely matches the specified color value.  
   
 ```  
-UINT GetNearestPaletteIndex(COLORREF crColor) const;
-
- 
+UINT GetNearestPaletteIndex(COLORREF crColor) const;  
 ```  
   
 ### Parameters  
@@ -212,9 +210,7 @@ UINT GetNearestPaletteIndex(COLORREF crColor) const;
 UINT GetPaletteEntries(
     UINT nStartIndex,  
     UINT nNumEntries,  
-    LPPALETTEENTRY lpPaletteColors) const;
-
- 
+    LPPALETTEENTRY lpPaletteColors) const;  
 ```  
   
 ### Parameters  
@@ -234,9 +230,7 @@ UINT GetPaletteEntries(
  Use this operator to get the attached Windows GDI handle of the `CPalette` object.  
   
 ```  
-operator HPALETTE() const;
-
- 
+operator HPALETTE() const;  
 ```  
   
 ### Return Value  

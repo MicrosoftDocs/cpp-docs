@@ -215,9 +215,7 @@ virtual void AdjustDockingLayout(HDWP hdwp=NULL);
  Determines whether the MDI tabs feature or the MDI tabbed groups feature is enabled.  
   
 ```  
-BOOL AreMDITabs(int* pnMDITabsType=NULL) const;
-
- 
+BOOL AreMDITabs(int* pnMDITabsType=NULL) const;  
 ```  
   
 ### Parameters  
@@ -658,9 +656,7 @@ void EnableWindowsDialog(
  Returns a pointer to the currently displayed popup menu.  
   
 ```  
-CMFCPopupMenu* GetActivePopup() const;
-
- 
+CMFCPopupMenu* GetActivePopup() const;  
 ```  
   
 ### Return Value  
@@ -673,9 +669,7 @@ CMFCPopupMenu* GetActivePopup() const;
  Returns the ID of shared resources of the MDI frame window.  
   
 ```  
-UINT GetDefaultResId() const;
-
- 
+UINT GetDefaultResId() const;  
 ```  
   
 ### Return Value  
@@ -688,9 +682,7 @@ UINT GetDefaultResId() const;
  Returns a list of MDI tabbed windows.  
   
 ```  
-const CObList& GetMDITabGroups() const;
-
- 
+const CObList& GetMDITabGroups() const;  
 ```  
   
 ### Return Value  
@@ -742,9 +734,7 @@ DWORD GetMDITabsContextMenuAllowedItems();
  Returns a pointer to a menu bar object attached to the frame window.  
   
 ```  
-const CMFCMenuBar* GetMenuBar() const;
-
- 
+const CMFCMenuBar* GetMenuBar() const;  
 ```  
   
 ### Return Value  
@@ -780,9 +770,7 @@ CMFCRibbonBar* GetRibbonBar();
  Returns a list of tear-off menus.  
   
 ```  
-const CObList& GetTearOffBars() const;
-
- 
+const CObList& GetTearOffBars() const;  
 ```  
   
 ### Return Value  
@@ -842,9 +830,7 @@ BOOL InsertPane(
  Determines whether the frame window is in full-screen mode.  
   
 ```  
-BOOL IsFullScreen() const;
-
- 
+BOOL IsFullScreen() const;  
 ```  
   
 ### Return Value  
@@ -857,9 +843,7 @@ BOOL IsFullScreen() const;
  Specifies whether the MDI Tabbed Groups feature is enabled.  
   
 ```  
-BOOL IsMDITabbedGroup() const;
-
- 
+BOOL IsMDITabbedGroup() const;  
 ```  
   
 ### Return Value  
@@ -886,9 +870,7 @@ BOOL IsMemberOfMDITabGroup(CWnd* pWnd);
  Determines whether the frame window has a menu bar.  
   
 ```  
-BOOL IsMenuBarAvailable() const;
-
- 
+BOOL IsMenuBarAvailable() const;  
 ```  
   
 ### Return Value  
@@ -901,9 +883,7 @@ BOOL IsMenuBarAvailable() const;
 BOOL IsPointNearDockSite(
     CPoint point,  
     DWORD& dwBarAlignment,  
-    BOOL& bOuterEdge) const;
-
- 
+    BOOL& bOuterEdge) const;  
 ```  
   
 ### Parameters  
@@ -1424,16 +1404,13 @@ CBasePane* PaneFromPoint(
     CPoint point,  
     int nSensitivity,  
     bool bExactBar,  
-    CRuntimeClass* pRTCBarType) const;
-
- 
+    CRuntimeClass* pRTCBarType) const;  
+  
 CBasePane* PaneFromPoint(
     CPoint point,  
     int nSensitivity,  
     DWORD& dwAlignment,  
-    CRuntimeClass* pRTCBarType) const;
-
- 
+    CRuntimeClass* pRTCBarType) const;  
 ```  
   
 ### Parameters  

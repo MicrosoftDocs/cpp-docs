@@ -555,9 +555,7 @@ UINT GetDefaultItem(
  Retrieves the context help ID associated with `CMenu`.  
   
 ```  
-DWORD GetMenuContextHelpId() const;
-
- 
+DWORD GetMenuContextHelpId() const;  
 ```  
   
 ### Return Value  
@@ -570,9 +568,7 @@ DWORD GetMenuContextHelpId() const;
  Retrieves information for a menu.  
   
 ```  
-BOOL GetMenuInfo(LPMENUINFO lpcmi) const;
-
- 
+BOOL GetMenuInfo(LPMENUINFO lpcmi) const;  
 ```  
   
 ### Parameters  
@@ -589,9 +585,7 @@ BOOL GetMenuInfo(LPMENUINFO lpcmi) const;
  Determines the number of items in a pop-up or top-level menu.  
   
 ```  
-UINT GetMenuItemCount() const;
-
- 
+UINT GetMenuItemCount() const;  
 ```  
   
 ### Return Value  
@@ -604,9 +598,7 @@ UINT GetMenuItemCount() const;
  Obtains the menu-item identifier for a menu item located at the position defined by `nPos`.  
   
 ```  
-UINT GetMenuItemID(int nPos) const;
-
- 
+UINT GetMenuItemID(int nPos) const;  
 ```  
   
 ### Parameters  
@@ -654,9 +646,7 @@ BOOL GetMenuItemInfo(
 ```  
 UINT GetMenuState(
     UINT nID,  
-    UINT nFlags) const;
-
- 
+    UINT nFlags) const;  
 ```  
   
 ### Parameters  
@@ -700,16 +690,12 @@ int GetMenuString(
     UINT nIDItem,  
     LPTSTR lpString,  
     int nMaxCount,  
-    UINT nFlags) const;
-
- 
- 
+    UINT nFlags) const;  
+  
 int GetMenuString(
     UINT nIDItem,  
     CString& rString,  
-    UINT nFlags) const;
-
- 
+    UINT nFlags) const;  
 ```  
   
 ### Parameters  
@@ -746,9 +732,7 @@ int GetMenuString(
  Returns the `HMENU` wrapped by this `CMenu` object, or a **NULL**`CMenu` pointer.  
   
 ```  
-HMENU GetSafeHmenu() const;
-
- 
+HMENU GetSafeHmenu() const;  
 ```  
   
 ### Example  
@@ -758,9 +742,7 @@ HMENU GetSafeHmenu() const;
  Retrieves the `CMenu` object of a pop-up menu.  
   
 ```  
-CMenu* GetSubMenu(int nPos) const;
-
- 
+CMenu* GetSubMenu(int nPos) const;  
 ```  
   
 ### Parameters  
@@ -860,11 +842,8 @@ BOOL InsertMenuItem(
  Loads a menu resource from the application's executable file and attaches it to the `CMenu` object.  
   
 ```  
-BOOL LoadMenu(LPCTSTR lpszResourceName);
-
- 
-BOOL LoadMenu(UINT nIDResource);
-```  
+BOOL LoadMenu(LPCTSTR lpszResourceName);  
+BOOL LoadMenu(UINT nIDResource);```  
   
 ### Parameters  
  `lpszResourceName`  
@@ -1003,9 +982,7 @@ BOOL ModifyMenu(
  Use this operator to retrieve the handle of the `CMenu` object.  
   
 ```  
-operator HMENU() const;
-
- 
+operator HMENU() const;  
 ```  
   
 ### Return Value  
@@ -1018,9 +995,7 @@ operator HMENU() const;
  Determines if two menus are logically not equal.  
   
 ```  
-BOOL operator!=(const CMenu& menu) const;
-
- 
+BOOL operator!=(const CMenu& menu) const;  
 ```  
   
 ### Parameters  
@@ -1034,9 +1009,7 @@ BOOL operator!=(const CMenu& menu) const;
  Determines if two menus are logically equal.  
   
 ```  
-BOOL operator==(const CMenu& menu) const;
-
- 
+BOOL operator==(const CMenu& menu) const;  
 ```  
   
 ### Parameters  

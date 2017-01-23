@@ -814,11 +814,8 @@ virtual BOOL IsExternalDispatchSafe();
  Loads the specified resource into the WebBrowser control in the DHTML dialog.  
   
 ```  
-BOOL LoadFromResource(LPCTSTR lpszResource);
-
- 
-BOOL LoadFromResource(UINT nRes);
-```  
+BOOL LoadFromResource(LPCTSTR lpszResource);  
+BOOL LoadFromResource(UINT nRes);```  
   
 ### Parameters  
  `lpszResource`  

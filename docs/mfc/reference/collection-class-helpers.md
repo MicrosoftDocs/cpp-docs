@@ -61,7 +61,7 @@ template<class TYPE, class ARG_TYPE>
 BOOL AFXAPI  
 CompareElements(
     const TYPE* pElement1,  
-    const ARG_TYPE* pElement2); 
+    const ARG_TYPE* pElement2);  
 ```  
   
 ### Parameters  
@@ -98,7 +98,7 @@ template<class TYPE>
 void AFXAPI CopyElements(
     TYPE* pDest,  
     const TYPE* pSrc,  
-    INT_PTR nCount); 
+    INT_PTR nCount);  
 ```  
   
 ### Parameters  
@@ -130,7 +130,7 @@ template<class TYPE>
 void  AFXAPI DumpElements(
     CDumpContext& dc,  
     const TYPE* pElements,  
-    INT_PTR nCount); 
+    INT_PTR nCount);  
 ```  
   
 ### Parameters  
@@ -196,7 +196,7 @@ template <> UINT AFXAPI HashKey(unsigned __int64 key)
   
 ```   
 template<class TYPE>  
-void AFXAPI SerializeElements(CArchive& ar, TYPE* pElements, INT_PTR nCount); 
+void AFXAPI SerializeElements(CArchive& ar, TYPE* pElements, INT_PTR nCount);  
 ```  
   
 ### Parameters  

@@ -82,9 +82,7 @@ class CMFCImageEditorPaletteBar : public CMFCToolBar
  Returns the height of toolbar buttons.  
   
 ```  
-virtual int GetRowHeight() const;
-
- 
+virtual int GetRowHeight() const;  
 ```  
   
 ### Return Value  
@@ -94,9 +92,7 @@ virtual int GetRowHeight() const;
  Determines whether the toolbar can display buttons that have extended borders.  
   
 ```  
-virtual BOOL IsButtonExtraSizeAvailable() const;
-
- 
+virtual BOOL IsButtonExtraSizeAvailable() const;  
 ```  
   
 ### Return Value  

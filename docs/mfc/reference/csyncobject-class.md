@@ -88,11 +88,8 @@ class CSyncObject : public CObject
  Constructs a synchronization object with the supplied name.  
   
 ```  
-explicit CSyncObject(LPCTSTR pstrName);
-
- 
-virtual ~CSyncObject();
-```  
+explicit CSyncObject(LPCTSTR pstrName);  
+virtual ~CSyncObject();```  
   
 ### Parameters  
  `pstrName`  
@@ -126,9 +123,7 @@ HANDLE m_hObject;
  Use this operator to get the handle of the `CSyncObject` object.  
   
 ```  
-operator HANDLE() const;
-
- 
+operator HANDLE() const;  
 ```  
   
 ### Return Value  

@@ -88,8 +88,7 @@ class CRecentFileList
  Adds a file to the most recently used (MRU) file list.  
   
 ```  
-virtual void Add(
-    LPCTSTR lpszPathName);
+virtual void Add(LPCTSTR lpszPathName);
 
  
 virtual void Add(
@@ -171,9 +170,7 @@ virtual BOOL GetDisplayName(
     int nIndex,  
     LPCTSTR lpszCurDir,  
     int nCurDir,  
-    BOOL bAtLeastName = TRUE) const;
-
- 
+    BOOL bAtLeastName = TRUE) const;  
 ```  
   
 ### Parameters  
@@ -202,9 +199,7 @@ virtual BOOL GetDisplayName(
  Retrieves the number of files in the MRU file list.  
   
 ```  
-int GetSize() const;
-
- 
+int GetSize() const;  
 ```  
   
 ### Return Value  

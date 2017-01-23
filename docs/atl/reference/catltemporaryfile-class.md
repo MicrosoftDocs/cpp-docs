@@ -255,7 +255,7 @@ operator HANDLE() throw();
  Call this method to read data from the temporary file starting at the position indicated by the file pointer.  
   
 ```
-HRESULT Read(  
+HRESULT Read(
     LPVOID pBuffer,
     DWORD nBufSize,
     DWORD& nBytesRead) throw();

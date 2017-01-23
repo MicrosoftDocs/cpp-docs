@@ -48,7 +48,7 @@ This class is used by the string conversion macros `CA2TEX` and `CT2AEX`, and th
 ## Syntax  
   
 ```
-template <int t_nBufferLength = 128>  
+template <int t_nBufferLength = 128>
 class CA2AEX
 ```  
   
@@ -110,7 +110,7 @@ class CA2AEX
   
 ```
 CA2AEX(LPCSTR psz, UINT nCodePage) throw(...);
-CA2AEX( LPCSTR  psz) throw(...);
+CA2AEX(LPCSTR psz) throw(...);
 ```  
   
 ### Parameters  

@@ -390,9 +390,7 @@ DWORD GetDefBtnCode();
  Retrieves the identifier of the control.  
   
 ```  
-virtual int GetDlgCtrlID() const;
-
- 
+virtual int GetDlgCtrlID() const;  
 ```  
   
 ### Return Value  
@@ -416,9 +414,7 @@ BOOL GetEventIID(IID* piid);
  Retrieves the window's extended styles.  
   
 ```  
-virtual DWORD GetExStyle() const;
-
- 
+virtual DWORD GetExStyle() const;  
 ```  
   
 ### Return Value  
@@ -434,9 +430,7 @@ virtual DWORD GetExStyle() const;
 virtual void GetProperty(
     DISPID dwDispID,  
     VARTYPE vtProp,  
-    void* pvProp) const;
-
- 
+    void* pvProp) const;  
 ```  
   
 ### Parameters  
@@ -456,9 +450,7 @@ virtual void GetProperty(
  Retrieves the styles of the control site.  
   
 ```  
-virtual DWORD GetStyle() const;
-
- 
+virtual DWORD GetStyle() const;  
 ```  
   
 ### Return Value  
@@ -471,9 +463,7 @@ virtual DWORD GetStyle() const;
  Retrieves the current text of the control.  
   
 ```  
-virtual void GetWindowText(CString& str) const;
-
- 
+virtual void GetWindowText(CString& str) const;  
 ```  
   
 ### Parameters  
@@ -570,9 +560,7 @@ BOOL IsDefaultButton();
  Determines if the control site is enabled.  
   
 ```  
-virtual BOOL IsWindowEnabled() const;
-
- 
+virtual BOOL IsWindowEnabled() const;  
 ```  
   
 ### Return Value  
@@ -884,11 +872,8 @@ virtual int SetDlgCtrlID(int nID);
  Sets focus to the control.  
   
 ```  
-virtual CWnd* SetFocus();
-
- 
-virtual CWnd* SetFocus(LPMSG lpmsg);
-```  
+virtual CWnd* SetFocus();  
+virtual CWnd* SetFocus(LPMSG lpmsg);```  
   
 ### Parameters  
  *lpmsg*  

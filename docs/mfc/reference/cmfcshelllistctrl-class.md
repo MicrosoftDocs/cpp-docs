@@ -101,9 +101,7 @@ class CMFCShellListCtrl : public CMFCListCtrl
   
 ```  
 virtual HRESULT DisplayFolder(LPCTSTR lpszPath);
-
-virtual HRESULT DisplayFolder(LPAFX_SHELLITEMINFO lpItemInfo);
-```  
+virtual HRESULT DisplayFolder(LPAFX_SHELLITEMINFO lpItemInfo);```  
   
 ### Parameters  
  [in] `lpszPath`  
@@ -140,9 +138,7 @@ void EnableShellContextMenu(BOOL bEnable = TRUE);
  Retrieves the path of the currently selected folder in the [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object.  
   
 ```  
-BOOL GetCurrentFolder(CString& strPath) const;
-
- 
+BOOL GetCurrentFolder(CString& strPath) const;  
 ```  
   
 ### Parameters  
@@ -159,9 +155,7 @@ BOOL GetCurrentFolder(CString& strPath) const;
  Retrieves the name of the currently selected folder in the [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object.  
   
 ```  
-BOOL GetCurrentFolderName(CString& strName) const;
-
- 
+BOOL GetCurrentFolderName(CString& strName) const;  
 ```  
   
 ### Parameters  
@@ -178,9 +172,7 @@ BOOL GetCurrentFolderName(CString& strName) const;
  Returns the PIDL of the currently selected item.  
   
 ```  
-LPITEMIDLIST GetCurrentItemIdList() const;
-
- 
+LPITEMIDLIST GetCurrentItemIdList() const;  
 ```  
   
 ### Return Value  
@@ -190,9 +182,7 @@ LPITEMIDLIST GetCurrentItemIdList() const;
  Gets a pointer to the currently selected item in the [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object.  
   
 ```  
-const IShellFolder* GetCurrentShellFolder() const;
-
- 
+const IShellFolder* GetCurrentShellFolder() const;  
 ```  
   
 ### Return Value  
@@ -207,9 +197,7 @@ const IShellFolder* GetCurrentShellFolder() const;
 ```  
 BOOL GetItemPath(
     CString& strPath,  
-    int iItem) const;
-
- 
+    int iItem) const;  
 ```  
   
 ### Parameters  
@@ -229,9 +217,7 @@ BOOL GetItemPath(
  Returns the type of items displayed by the [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object.  
   
 ```  
-SHCONTF GetItemTypes() const;
-
- 
+SHCONTF GetItemTypes() const;  
 ```  
   
 ### Return Value  
@@ -244,9 +230,7 @@ SHCONTF GetItemTypes() const;
  Determines if the folder that is displayed in the [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object is the desktop folder.  
   
 ```  
-BOOL IsDesktop() const;
-
- 
+BOOL IsDesktop() const;  
 ```  
   
 ### Return Value  

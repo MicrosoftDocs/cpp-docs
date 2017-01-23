@@ -92,20 +92,10 @@ class CBrush : public CGdiObject
  Constructs a `CBrush` object.  
   
 ```  
-CBrush();
-
- 
-CBrush(
-    COLORREF crColor);
-
- 
-CBrush(
-    int nIndex,  
-    COLORREF crColor);
-
- 
-explicit CBrush(
-    CBitmap* pBitmap);
+CBrush(); 
+CBrush(COLORREF crColor); 
+CBrush(int nIndex, COLORREF crColor); 
+explicit CBrush(CBitmap* pBitmap);
 ```  
   
 ### Parameters  
@@ -382,9 +372,7 @@ int GetLogBrush(LOGBRUSH* pLogBrush);
  Use this operator to get the attached Windows GDI handle of the `CBrush` object.  
   
 ```  
-operator HBRUSH() const;
-
- 
+operator HBRUSH() const;  
 ```  
   
 ### Return Value  

@@ -433,7 +433,8 @@ compare(sub) == 0
 ##  <a name="sub_match__operator_basic_string_lt_value_type_gt_"></a>  sub_match::operator basic_string&lt;value_type&gt;  
  Casts submatch to a string.  
   
-```  operator basic_string<value_type>() const;
+```  
+operator basic_string<value_type>() const;
 ```  
   
 ### Remarks  

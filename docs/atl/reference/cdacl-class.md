@@ -99,7 +99,7 @@ bool AddAllowedAce(
     ACCESS_MASK AccessMask,
     BYTE AceFlags = 0) throw(...);
 
-    bool AddAllowedAce(  
+bool AddAllowedAce(  
     const CSid& rSid,
     ACCESS_MASK AccessMask,
     BYTE AceFlags,
@@ -143,7 +143,7 @@ bool AddDeniedAce(
     ACCESS_MASK AccessMask,
     BYTE AceFlags = 0) throw(...);
 
-    bool AddDeniedAce(  
+bool AddDeniedAce(
     const CSid& rSid,
     ACCESS_MASK AccessMask,
     BYTE AceFlags,

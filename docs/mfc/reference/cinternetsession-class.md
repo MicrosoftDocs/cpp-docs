@@ -194,9 +194,7 @@ BOOL EnableStatusCallback(BOOL bEnable = TRUE);
  Call this member function to get the context value for a particular application session.  
   
 ```  
-DWORD_PTR GetContext() const;
-
- 
+DWORD_PTR GetContext() const;  
 ```  
   
 ### Return Value  
@@ -502,9 +500,7 @@ CStdioFile* OpenURL(
  Use this operator to get the Windows handle for the current Internet session.  
   
 ```  
-operator HINTERNET() const;
-
- 
+operator HINTERNET() const;  
 ```  
   
 ##  <a name="setcookie"></a>  CInternetSession::SetCookie  

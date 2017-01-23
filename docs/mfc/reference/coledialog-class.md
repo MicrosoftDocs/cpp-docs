@@ -96,9 +96,7 @@ class COleDialog : public CCommonDialog
  Call the `GetLastError` member function to get additional error information when `DoModal` returns **IDABORT**.  
   
 ```  
-UINT GetLastError() const;
-
- 
+UINT GetLastError() const;  
 ```  
   
 ### Return Value  

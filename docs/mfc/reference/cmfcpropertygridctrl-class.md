@@ -291,9 +291,7 @@ CMFCPropertyGridCtrl();
 ```  
 virtual int CompareProps(
     const CMFCPropertyGridProperty* pProp1,  
-    const CMFCPropertyGridProperty* pProp2) const;
-
- 
+    const CMFCPropertyGridProperty* pProp2) const;  
 ```  
   
 ### Parameters  
@@ -379,9 +377,7 @@ BOOL DeleteProperty(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL DrawControlBarColors() const;
-
- 
+BOOL DrawControlBarColors() const;  
 ```  
   
 ### Return Value  
@@ -496,9 +492,7 @@ void ExpandAll(BOOL bExpand=TRUE);
 ```  
 CMFCPropertyGridProperty* FindItemByData(
     DWORD_PTR dwData,  
-    BOOL bSearchSubItems=TRUE) const;
-
- 
+    BOOL bSearchSubItems=TRUE) const;  
 ```  
   
 ### Parameters  
@@ -613,9 +607,7 @@ virtual HRESULT get_accSelection(VARIANT* pvarChildren);
  Retrieves the background color of the current property grid control.  
   
 ```  
-COLORREF GetBkColor() const;
-
- 
+COLORREF GetBkColor() const;  
 ```  
   
 ### Return Value  
@@ -638,9 +630,7 @@ CFont& GetBoldFont();
  Retrieves the currently selected property.  
   
 ```  
-CMFCPropertyGridProperty* GetCurSel() const;
-
- 
+CMFCPropertyGridProperty* GetCurSel() const;  
 ```  
   
 ### Return Value  
@@ -691,9 +681,7 @@ void GetCustomColors(
  Retrieves the height of the description area, which is located at the bottom of the property grid control.  
   
 ```  
-int GetDescriptionHeight() const;
-
- 
+int GetDescriptionHeight() const;  
 ```  
   
 ### Return Value  
@@ -708,9 +696,7 @@ int GetDescriptionHeight() const;
  Retrieves the number of rows in the description area of the current property grid control.  
   
 ```  
-int GetDescriptionRows() const;
-
- 
+int GetDescriptionRows() const;  
 ```  
   
 ### Return Value  
@@ -733,9 +719,7 @@ virtual CMFCHeaderCtrl& GetHeaderCtrl();
  Retrieves the height of the header of a property grid control.  
   
 ```  
-int GetHeaderHeight() const;
-
- 
+int GetHeaderHeight() const;  
 ```  
   
 ### Return Value  
@@ -747,9 +731,7 @@ int GetHeaderHeight() const;
  Retrieves of the width of the left column of the current property grid control, which contains the name of each property.  
   
 ```  
-int GetLeftColumnWidth() const;
-
- 
+int GetLeftColumnWidth() const;  
 ```  
   
 ### Return Value  
@@ -762,9 +744,7 @@ int GetLeftColumnWidth() const;
  Retrieves the bounding rectangle of the property grid control.  
   
 ```  
-CRect GetListRect() const;
-
- 
+CRect GetListRect() const;  
 ```  
   
 ### Return Value  
@@ -776,9 +756,7 @@ CRect GetListRect() const;
  Retrieves a pointer to the property object that corresponds to the specified index of an item in a property grid control.  
   
 ```  
-CMFCPropertyGridProperty* GetProperty(int nIndex) const;
-
- 
+CMFCPropertyGridProperty* GetProperty(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -796,9 +774,7 @@ CMFCPropertyGridProperty* GetProperty(int nIndex) const;
  Retrieves the current width of the column that contains property values.  
   
 ```  
-int GetPropertyColumnWidth() const;
-
- 
+int GetPropertyColumnWidth() const;  
 ```  
   
 ### Return Value  
@@ -811,9 +787,7 @@ int GetPropertyColumnWidth() const;
  Retrieves the number of properties in a property grid control.  
   
 ```  
-int GetPropertyCount() const;
-
- 
+int GetPropertyCount() const;  
 ```  
   
 ### Return Value  
@@ -825,9 +799,7 @@ int GetPropertyCount() const;
  Retrieves the height of a row in the property grid control.  
   
 ```  
-int GetRowHeight() const;
-
- 
+int GetRowHeight() const;  
 ```  
   
 ### Return Value  
@@ -840,9 +812,7 @@ int GetRowHeight() const;
  Retrieves a pointer to the scroll bar control in the property grid control.  
   
 ```  
-virtual CScrollBar* GetScrollBarCtrl(int nBar) const;
-
- 
+virtual CScrollBar* GetScrollBarCtrl(int nBar) const;  
 ```  
   
 ### Parameters  
@@ -859,9 +829,7 @@ virtual CScrollBar* GetScrollBarCtrl(int nBar) const;
  Retrieves the color that is used to draw the text of property items in the current property grid control.  
   
 ```  
-COLORREF GetTextColor() const;
-
- 
+COLORREF GetTextColor() const;  
 ```  
   
 ### Return Value  
@@ -877,9 +845,7 @@ COLORREF GetTextColor() const;
 CMFCPropertyGridProperty* HitTest(
     CPoint pt,  
     CMFCPropertyGridProperty::ClickArea* pnArea=NULL,  
-    BOOL bPropsOnly=FALSE) const;
-
- 
+    BOOL bPropsOnly=FALSE) const;  
 ```  
   
 ### Parameters  
@@ -929,9 +895,7 @@ virtual void InitHeader();
  Indicates whether a property grid control is in alphabetic mode.  
   
 ```  
-BOOL IsAlphabeticMode() const;
-
- 
+BOOL IsAlphabeticMode() const;  
 ```  
   
 ### Return Value  
@@ -946,9 +910,7 @@ BOOL IsAlphabeticMode() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsAlwaysShowUserToolTip() const;
-
- 
+BOOL IsAlwaysShowUserToolTip() const;  
 ```  
   
 ### Return Value  
@@ -959,9 +921,7 @@ BOOL IsAlwaysShowUserToolTip() const;
  Indicates whether the description area of the property grid control is displayed.  
   
 ```  
-BOOL IsDescriptionArea() const;
-
- 
+BOOL IsDescriptionArea() const;  
 ```  
   
 ### Return Value  
@@ -974,9 +934,7 @@ BOOL IsDescriptionArea() const;
  Indicates whether each property group name is displayed across the width of the current property grid control.  
   
 ```  
-BOOL IsGroupNameFullWidth() const;
-
- 
+BOOL IsGroupNameFullWidth() const;  
 ```  
   
 ### Return Value  
@@ -989,9 +947,7 @@ BOOL IsGroupNameFullWidth() const;
  Indicates whether the header control is displayed.  
   
 ```  
-BOOL IsHeaderCtrl() const;
-
- 
+BOOL IsHeaderCtrl() const;  
 ```  
   
 ### Return Value  
@@ -1004,9 +960,7 @@ BOOL IsHeaderCtrl() const;
  Indicates how the property grid control displays modified properties.  
   
 ```  
-BOOL IsMarkModifiedProperties() const;
-
- 
+BOOL IsMarkModifiedProperties() const;  
 ```  
   
 ### Return Value  
@@ -1018,9 +972,7 @@ BOOL IsMarkModifiedProperties() const;
  Indicates whether the framework redraws the name and value columns of the current property grid control when a user resizes the columns.  
   
 ```  
-BOOL IsShowDragContext() const;
-
- 
+BOOL IsShowDragContext() const;  
 ```  
   
 ### Return Value  
@@ -1033,9 +985,7 @@ BOOL IsShowDragContext() const;
  Indicates whether the appearance of the property grid control is in the style of Visual Studio .NET.  
   
 ```  
-BOOL IsVSDotNetLook() const;
-
- 
+BOOL IsVSDotNetLook() const;  
 ```  
   
 ### Return Value  
@@ -1146,9 +1096,7 @@ virtual void OnDrawList(CDC* pDC);
 ```  
 virtual int OnDrawProperty(
     CDC* pDC,  
-    CMFCPropertyGridProperty* pProp) const;
-
- 
+    CMFCPropertyGridProperty* pProp) const;  
 ```  
   
 ### Parameters  
@@ -1167,9 +1115,7 @@ virtual int OnDrawProperty(
  Called by the framework when the value of a property is changed.  
   
 ```  
-virtual void OnPropertyChanged(CMFCPropertyGridProperty* pProp) const;
-
- 
+virtual void OnPropertyChanged(CMFCPropertyGridProperty* pProp) const;  
 ```  
   
 ### Parameters  

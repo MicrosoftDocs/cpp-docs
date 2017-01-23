@@ -187,9 +187,7 @@ virtual BOOL CanBeDropped(CMFCToolBar* pToolbar);
  Determines whether the button can be stored.  
   
 ```  
-virtual BOOL CanBeStored() const;
-
- 
+virtual BOOL CanBeStored() const;  
 ```  
   
 ### Return Value  
@@ -204,9 +202,7 @@ virtual BOOL CanBeStored() const;
  Specifies whether a user can stretch the button during customization.  
   
 ```  
-virtual BOOL CanBeStretched() const;
-
- 
+virtual BOOL CanBeStretched() const;  
 ```  
   
 ### Return Value  
@@ -251,9 +247,7 @@ CMFCToolBarButton(
  Compares this instance with the provided `CMFCToolBarButton` object.  
   
 ```  
-virtual BOOL CompareWith(const CMFCToolBarButton& other) const;
-
- 
+virtual BOOL CompareWith(const CMFCToolBarButton& other) const;  
 ```  
   
 ### Parameters  
@@ -315,9 +309,7 @@ virtual void EnableWindow(BOOL bEnable = TRUE);
  Copies text from the toolbar button to a menu.  
   
 ```  
-virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
-
- 
+virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;  
 ```  
   
 ### Parameters  
@@ -368,9 +360,7 @@ virtual HWND GetHwnd();
  Retrieves the image index of the button.  
   
 ```  
-int GetImage() const;
-
- 
+int GetImage() const;  
 ```  
   
 ### Return Value  
@@ -383,9 +373,7 @@ int GetImage() const;
  Retrieves the region of the client area of the button that must be redrawn.  
   
 ```  
-virtual const CRect GetInvalidateRect() const;
-
- 
+virtual const CRect GetInvalidateRect() const;  
 ```  
   
 ### Return Value  
@@ -398,9 +386,7 @@ virtual const CRect GetInvalidateRect() const;
  Retrieves the parent window of the button.  
   
 ```  
-CWnd* GetParentWnd() const;
-
- 
+CWnd* GetParentWnd() const;  
 ```  
   
 ### Return Value  
@@ -425,9 +411,7 @@ static const CList<UINT,UINT>& GetProtectedCommands();
  Retrieves the size of the button text.  
   
 ```  
-SIZE GetTextSize() const;
-
- 
+SIZE GetTextSize() const;  
 ```  
   
 ### Return Value  
@@ -437,9 +421,7 @@ SIZE GetTextSize() const;
  Determines whether the button has the current input focus.  
   
 ```  
-virtual BOOL HasFocus() const;
-
- 
+virtual BOOL HasFocus() const;  
 ```  
   
 ### Return Value  
@@ -452,9 +434,7 @@ virtual BOOL HasFocus() const;
  Determines whether a border of the button is displayed when a user selects the button.  
   
 ```  
-virtual BOOL HaveHotBorder() const;
-
- 
+virtual BOOL HaveHotBorder() const;  
 ```  
   
 ### Return Value  
@@ -469,9 +449,7 @@ virtual BOOL HaveHotBorder() const;
  Determines whether an image is displayed on the button.  
   
 ```  
-BOOL IsDrawImage() const;
-
- 
+BOOL IsDrawImage() const;  
 ```  
   
 ### Return Value  
@@ -484,9 +462,7 @@ BOOL IsDrawImage() const;
  Determines whether a text label is displayed on the button.  
   
 ```  
-BOOL IsDrawText() const;
-
- 
+BOOL IsDrawText() const;  
 ```  
   
 ### Return Value  
@@ -499,9 +475,7 @@ BOOL IsDrawText() const;
  Determines whether the button displays a submenu.  
   
 ```  
-virtual BOOL IsDroppedDown() const;
-
- 
+virtual BOOL IsDroppedDown() const;  
 ```  
   
 ### Return Value  
@@ -514,9 +488,7 @@ virtual BOOL IsDroppedDown() const;
  Determines whether the button can be customized.  
   
 ```  
-virtual BOOL IsEditable() const;
-
- 
+virtual BOOL IsEditable() const;  
 ```  
   
 ### Return Value  
@@ -533,9 +505,7 @@ virtual BOOL IsEditable() const;
  Determines whether the button can be displayed with an extended border.  
   
 ```  
-virtual BOOL IsExtraSize() const;
-
- 
+virtual BOOL IsExtraSize() const;  
 ```  
   
 ### Return Value  
@@ -550,9 +520,7 @@ virtual BOOL IsExtraSize() const;
  Determines whether the button is in the first position in its button group.  
   
 ```  
-virtual BOOL IsFirstInGroup() const;
-
- 
+virtual BOOL IsFirstInGroup() const;  
 ```  
   
 ### Return Value  
@@ -567,9 +535,7 @@ virtual BOOL IsFirstInGroup() const;
  Determines whether the button is hidden.  
   
 ```  
-BOOL IsHidden() const;
-
- 
+BOOL IsHidden() const;  
 ```  
   
 ### Return Value  
@@ -586,9 +552,7 @@ BOOL IsHidden() const;
  Determines whether the button is located on a horizontal toolbar.  
   
 ```  
-BOOL IsHorizontal() const;
-
- 
+BOOL IsHorizontal() const;  
 ```  
   
 ### Return Value  
@@ -603,9 +567,7 @@ BOOL IsHorizontal() const;
  Specifies whether the button is in the last position in its button group.  
   
 ```  
-virtual BOOL IsLastInGroup() const;
-
- 
+virtual BOOL IsLastInGroup() const;  
 ```  
   
 ### Return Value  
@@ -620,9 +582,7 @@ virtual BOOL IsLastInGroup() const;
  Determines whether the button is on a locked (non-customizable) toolbar.  
   
 ```  
-BOOL IsLocked() const;
-
- 
+BOOL IsLocked() const;  
 ```  
   
 ### Return Value  
@@ -652,9 +612,7 @@ virtual BOOL IsOwnerOf(HWND hwnd);
  Determines whether the toolbar button is visible.  
   
 ```  
-BOOL IsVisible() const;
-
- 
+BOOL IsVisible() const;  
 ```  
   
 ### Return Value  
@@ -815,9 +773,7 @@ virtual void OnAddToCustomizePage();
  Specifies whether the button can be dragged.  
   
 ```  
-virtual BOOL OnBeforeDrag() const;
-
- 
+virtual BOOL OnBeforeDrag() const;  
 ```  
   
 ### Return Value  
@@ -1243,9 +1199,7 @@ virtual BOOL PrepareDrag(COleDataSource& srcItem);
  Retrieves the bounding rectangle of the button.  
   
 ```  
-const CRect& Rect() const;
-
- 
+const CRect& Rect() const;  
 ```  
   
 ### Return Value  
@@ -1349,8 +1303,7 @@ virtual void SetImage(int iImage);
  Sets the list of commands that the user cannot customize.  
   
 ```  
-static void SetProtectedCommands(
-    const CList<UINT,UINT>& lstCmds);
+static void SetProtectedCommands(const CList<UINT,UINT>& lstCmds);
 ```  
   
 ### Parameters  

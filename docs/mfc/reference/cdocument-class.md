@@ -292,9 +292,7 @@ virtual ATL::IDocument* GetAdapter();
  Call this function to get a pointer to the document template for this document type.  
   
 ```  
-CDocTemplate* GetDocTemplate() const;
-
- 
+CDocTemplate* GetDocTemplate() const;  
 ```  
   
 ### Return Value  
@@ -330,9 +328,7 @@ virtual CFile* GetFile(
  Call this function to get the position of the first view in the list of views associated with the document.  
   
 ```  
-virtual POSITION GetFirstViewPosition() const;
-
- 
+virtual POSITION GetFirstViewPosition() const;  
 ```  
   
 ### Return Value  
@@ -345,9 +341,7 @@ virtual POSITION GetFirstViewPosition() const;
  Call this function to iterate through all of the document's views.  
   
 ```  
-virtual CView* GetNextView(POSITION& rPosition) const;
-
- 
+virtual CView* GetNextView(POSITION& rPosition) const;  
 ```  
   
 ### Parameters  
@@ -367,9 +361,7 @@ virtual CView* GetNextView(POSITION& rPosition) const;
  Call this function to get the fully qualified path of the document's disk file.  
   
 ```  
-const CString& GetPathName() const;
-
- 
+const CString& GetPathName() const;  
 ```  
   
 ### Return Value  
@@ -404,9 +396,7 @@ virtual BOOL GetThumbnail(
  Call this function to get the document's title, which is usually derived from the document's filename.  
   
 ```  
-const CString& GetTitle() const;
-
- 
+const CString& GetTitle() const;  
 ```  
   
 ### Return Value  
@@ -436,9 +426,7 @@ virtual BOOL IsModified();
  Tells whether this instance of `CDocument` was created for the Search & Organize handler.  
   
 ```  
-BOOL IsSearchAndOrganizeHandler() const;
-
- 
+BOOL IsSearchAndOrganizeHandler() const;  
 ```  
   
 ### Return Value  

@@ -123,9 +123,7 @@ virtual BOOL Create(
  Retrieves the [IHTMLDocument2](https://msdn.microsoft.com/library/aa752574.aspx) interface on the document currently loaded in the contained WebBrowser control  
   
 ```  
-BOOL GetDHtmlDocument(IHTMLDocument2** ppDocument) const;
-
- 
+BOOL GetDHtmlDocument(IHTMLDocument2** ppDocument) const;  
 ```  
   
 ### Parameters  

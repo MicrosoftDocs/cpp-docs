@@ -96,11 +96,9 @@ void MoveDragFrame(BOOL bForceMove = FALSE);
 ```  
 void PlaceTabPreDocking(
     CBaseTabbedPane* pTabbedBar,  
-    BOOL bFirstTime);
-
- 
-void PlaceTabPreDocking(
-    CWnd* pCBarToPlaceOn);
+    BOOL bFirstTime);  
+  
+void PlaceTabPreDocking(CWnd* pCBarToPlaceOn);
 ```  
   
 ### Parameters  

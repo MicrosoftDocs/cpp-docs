@@ -76,16 +76,9 @@ class CD2DSizeU : public D2D1_SIZE_U;
  Constructs a CD2DSizeU object from CSize object.  
   
 ```  
-CD2DSizeU(
-    const CSize& size);
-
- 
-CD2DSizeU(
-    const D2D1_SIZE_U& size);
-
- 
-CD2DSizeU(
-    const D2D1_SIZE_U* size);
+CD2DSizeU(const CSize& size);  
+CD2DSizeU(const D2D1_SIZE_U& size);  
+  CD2DSizeU(const D2D1_SIZE_U* size);
 
  
 CD2DSizeU(
@@ -107,9 +100,7 @@ CD2DSizeU(
  Returns a Boolean value that indicates whether an expression contains no valid data (Null).  
   
 ```  
-BOOL IsNull() const;
-
- 
+BOOL IsNull() const;  
 ```  
   
 ### Return Value  

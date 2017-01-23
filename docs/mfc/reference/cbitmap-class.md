@@ -266,9 +266,7 @@ int GetBitmap(BITMAP* pBitMap);
 ```  
 DWORD GetBitmapBits(
     DWORD dwCount,  
-    LPVOID lpBits) const;
-
- 
+    LPVOID lpBits) const;  
 ```  
   
 ### Parameters  
@@ -288,9 +286,7 @@ DWORD GetBitmapBits(
  Returns the width and height of the bitmap.  
   
 ```  
-CSize GetBitmapDimension() const;
-
- 
+CSize GetBitmapDimension() const;  
 ```  
   
 ### Return Value  
@@ -303,9 +299,7 @@ CSize GetBitmapDimension() const;
  Loads the bitmap resource named by `lpszResourceName` or identified by the ID number in `nIDResource` from the application's executable file.  
   
 ```  
-BOOL LoadBitmap(LPCTSTR lpszResourceName);
-
- 
+BOOL LoadBitmap(LPCTSTR lpszResourceName);  
 BOOL LoadBitmap(UINT nIDResource);
 ```  
   
@@ -410,9 +404,7 @@ BOOL LoadOEMBitmap(UINT nIDBitmap);
  Use this operator to get the attached Windows GDI handle of the `CBitmap` object.  
   
 ```  
-operator HBITMAP() const;
-
- 
+operator HBITMAP() const;  
 ```  
   
 ### Return Value  

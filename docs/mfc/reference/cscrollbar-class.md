@@ -181,9 +181,7 @@ BOOL EnableScrollBar(UINT nArrowFlags = ESB_ENABLE_BOTH);
  Retrieves the information that the **SCROLLBARINFO** structure maintains about a scroll bar.  
   
 ```  
-BOOL GetScrollBarInfo(PSCROLLBARINFO pScrollInfo) const;
-
- 
+BOOL GetScrollBarInfo(PSCROLLBARINFO pScrollInfo) const;  
 ```  
   
 ### Parameters  
@@ -242,9 +240,7 @@ int GetScrollLimit();
  Retrieves the current position of a scroll box.  
   
 ```  
-int GetScrollPos() const;
-
- 
+int GetScrollPos() const;  
 ```  
   
 ### Return Value  
@@ -262,9 +258,7 @@ int GetScrollPos() const;
 ```  
 void GetScrollRange(
     LPINT lpMinPos,  
-    LPINT lpMaxPos) const;
-
- 
+    LPINT lpMaxPos) const;  
 ```  
   
 ### Parameters  

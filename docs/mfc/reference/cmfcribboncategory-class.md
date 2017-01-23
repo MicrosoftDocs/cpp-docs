@@ -254,9 +254,7 @@ virtual void CopyFrom(CMFCRibbonCategory& src);
 ```  
 CMFCRibbonBaseElement* FindByData(
     DWORD_PTR dwData,  
-    BOOL bVisibleOnly = TRUE) const;
-
- 
+    BOOL bVisibleOnly = TRUE) const;  
 ```  
   
 ### Parameters  
@@ -277,9 +275,7 @@ CMFCRibbonBaseElement* FindByData(
 ```  
 CMFCRibbonBaseElement* FindByID(
     UINT uiCmdID,  
-    BOOL bVisibleOnly = TRUE) const;
-
- 
+    BOOL bVisibleOnly = TRUE) const;  
 ```  
   
 ### Parameters  
@@ -314,9 +310,7 @@ CMFCRibbonPanel* FindPanelWithElem(const CMFCRibbonBaseElement* pElement);
  Retrieves the context ID of the ribbon category.  
   
 ```  
-UINT GetContextID() const;
-
- 
+UINT GetContextID() const;  
 ```  
   
 ### Return Value  
@@ -329,9 +323,7 @@ UINT GetContextID() const;
  Retrieves the user-defined data that is associated with the ribbon category.  
   
 ```  
-DWORD_PTR GetData() const;
-
- 
+DWORD_PTR GetData() const;  
 ```  
   
 ### Return Value  
@@ -387,9 +379,7 @@ void GetElementsByID(
  Retrieves the first visible element that belongs to the ribbon category.  
   
 ```  
-CMFCRibbonBaseElement* GetFirstVisibleElement() const;
-
- 
+CMFCRibbonBaseElement* GetFirstVisibleElement() const;  
 ```  
   
 ### Return Value  
@@ -425,9 +415,7 @@ CMFCRibbonBaseElement* GetHighlighted();
  Retrieves the number of images in the specified image list that is contained in the ribbon category.  
   
 ```  
-int GetImageCount(BOOL bIsLargeImage) const;
-
- 
+int GetImageCount(BOOL bIsLargeImage) const;  
 ```  
   
 ### Parameters  
@@ -443,9 +431,7 @@ int GetImageCount(BOOL bIsLargeImage) const;
  Retrieves the size of an image in the specified image list that is contained in the ribbon category.  
   
 ```  
-CSize GetImageSize(BOOL bIsLargeImage) const;
-
- 
+CSize GetImageSize(BOOL bIsLargeImage) const;  
 ```  
   
 ### Parameters  
@@ -464,9 +450,7 @@ CSize GetImageSize(BOOL bIsLargeImage) const;
 ```  
 void GetItemIDsList(
     CList<UINT, UINT>& lstItems,  
-    BOOL bHiddenOnly = FALSE) const;
-
- 
+    BOOL bHiddenOnly = FALSE) const;  
 ```  
   
 ### Parameters  
@@ -492,9 +476,7 @@ CMFCToolBarImages& GetLargeImages();
  Retrieves the last visible element that belongs to the ribbon category.  
   
 ```  
-CMFCRibbonBaseElement* GetLastVisibleElement() const;
-
- 
+CMFCRibbonBaseElement* GetLastVisibleElement() const;  
 ```  
   
 ### Return Value  
@@ -523,9 +505,7 @@ int GetMaxHeight(CDC* pDC);
  Retrieves the name of the ribbon category.  
   
 ```  
-LPCTSTR GetName() const;
-
- 
+LPCTSTR GetName() const;  
 ```  
   
 ### Return Value  
@@ -554,9 +534,7 @@ CMFCRibbonPanel* GetPanel(int nIndex);
  Returns the number of ribbon panels in the ribbon category.  
   
 ```  
-int GetPanelCount() const;
-
- 
+int GetPanelCount() const;  
 ```  
   
 ### Return Value  
@@ -566,9 +544,7 @@ int GetPanelCount() const;
  Retrieves a pointer to a ribbon panel if the specified point is located in it.  
   
 ```  
-CMFCRibbonPanel* GetPanelFromPoint(CPoint point) const;
-
- 
+CMFCRibbonPanel* GetPanelFromPoint(CPoint point) const;  
 ```  
   
 ### Parameters  
@@ -585,9 +561,7 @@ CMFCRibbonPanel* GetPanelFromPoint(CPoint point) const;
  Retrieves the zero-based index of the specified ribbon panel.  
   
 ```  
-int GetPanelIndex(const CMFCRibbonPanel* pPanel) const;
-
- 
+int GetPanelIndex(const CMFCRibbonPanel* pPanel) const;  
 ```  
   
 ### Parameters  
@@ -604,9 +578,7 @@ int GetPanelIndex(const CMFCRibbonPanel* pPanel) const;
  Retrieves the parent ribbon element of the ribbon category.  
   
 ```  
-CMFCRibbonBaseElement* GetParentButton() const;
-
- 
+CMFCRibbonBaseElement* GetParentButton() const;  
 ```  
   
 ### Return Value  
@@ -618,9 +590,7 @@ CMFCRibbonBaseElement* GetParentButton() const;
  Returns a pointer to the parent menu bar of the `CMFCRibbonCategory` object.  
   
 ```  
-CMFCRibbonPanelMenuBar* GetParentMenuBar() const;
-
- 
+CMFCRibbonPanelMenuBar* GetParentMenuBar() const;  
 ```  
   
 ### Return Value  
@@ -632,9 +602,7 @@ CMFCRibbonPanelMenuBar* GetParentMenuBar() const;
  Retrieves the parent ribbon bar for the ribbon category.  
   
 ```  
-CMFCRibbonBar* GetParentRibbonBar() const;
-
- 
+CMFCRibbonBar* GetParentRibbonBar() const;  
 ```  
   
 ### Return Value  
@@ -646,9 +614,7 @@ CMFCRibbonBar* GetParentRibbonBar() const;
  Retrieves the display rectangle for the ribbon category.  
   
 ```  
-CRect GetRect() const;
-
- 
+CRect GetRect() const;  
 ```  
   
 ### Return Value  
@@ -671,9 +637,7 @@ CMFCToolBarImages& GetSmallImages();
  Returns the current color of the ribbon category tab.  
   
 ```  
-AFX_RibbonCategoryColor GetTabColor() const;
-
- 
+AFX_RibbonCategoryColor GetTabColor() const;  
 ```  
   
 ### Return Value  
@@ -700,9 +664,7 @@ AFX_RibbonCategoryColor GetTabColor() const;
  Retrieves the display rectangle for the ribbon category tab.  
   
 ```  
-CRect GetTabRect() const;
-
- 
+CRect GetTabRect() const;  
 ```  
   
 ### Return Value  
@@ -714,9 +676,7 @@ CRect GetTabRect() const;
  Retrieves the vertical location of text on ribbon buttons in the ribbon category that display large images.  
   
 ```  
-int GetTextTopLine() const;
-
- 
+int GetTextTopLine() const;  
 ```  
   
 ### Return Value  
@@ -767,9 +727,7 @@ CMFCRibbonPanel* HighlightPanel(
 ```  
 CMFCRibbonBaseElement* HitTest(
     CPoint point,  
-    BOOL bCheckPanelCaption = FALSE) const;
-
- 
+    BOOL bCheckPanelCaption = FALSE) const;  
 ```  
   
 ### Parameters  
@@ -789,9 +747,7 @@ CMFCRibbonBaseElement* HitTest(
  Retrieves the zero-based index of a ribbon element if the specified point is located in it.  
   
 ```  
-int HitTestEx(CPoint point) const;
-
- 
+int HitTestEx(CPoint point) const;  
 ```  
   
 ### Parameters  
@@ -808,9 +764,7 @@ int HitTestEx(CPoint point) const;
  If a point falls within a ribbon category’s left or right scroll button, returns a pointer to that button.  
   
 ```  
-CMFCRibbonBaseElement* HitTestScrollButtons(CPoint point) const;
-
- 
+CMFCRibbonBaseElement* HitTestScrollButtons(CPoint point) const;  
 ```  
   
 ### Parameters  
@@ -826,9 +780,7 @@ CMFCRibbonBaseElement* HitTestScrollButtons(CPoint point) const;
  Indicates whether the ribbon category is the active category on the ribbon bar.  
   
 ```  
-BOOL IsActive() const;
-
- 
+BOOL IsActive() const;  
 ```  
   
 ### Return Value  
@@ -841,9 +793,7 @@ BOOL IsActive() const;
  Indicates whether the ribbon category is visible.  
   
 ```  
-BOOL IsVisible() const;
-
- 
+BOOL IsVisible() const;  
 ```  
   
 ### Return Value  
@@ -856,9 +806,7 @@ BOOL IsVisible() const;
  Indicates whether the parent ribbon has Windows 7 look (small rectangular application button).  
   
 ```  
-BOOL IsWindows7Look() const;
-
- 
+BOOL IsWindows7Look() const;  
 ```  
   
 ### Return Value  
@@ -1134,8 +1082,7 @@ virtual void ReposPanels(CDC* pDC);
  Defines the order in which the ribbon panels of the ribbon category collapse.  
   
 ```  
-void SetCollapseOrder(
-    const CArray<int,int>& arCollapseOrder);
+void SetCollapseOrder(const CArray<int,int>& arCollapseOrder);
 ```  
   
 ### Parameters  

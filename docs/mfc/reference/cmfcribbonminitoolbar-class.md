@@ -166,9 +166,7 @@ BOOL ShowWithContextMenu(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsContextMenuMode() const;
-
- 
+BOOL IsContextMenuMode() const;  
 ```  
   
 ### Return Value  
@@ -179,9 +177,7 @@ BOOL IsContextMenuMode() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsRibbonMiniToolBar() const;
-
- 
+virtual BOOL IsRibbonMiniToolBar() const;  
 ```  
   
 ### Return Value  

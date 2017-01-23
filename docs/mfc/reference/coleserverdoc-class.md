@@ -233,9 +233,7 @@ BOOL DiscardUndoState();
  Retrieves a pointer to the underlying `IOleClientSite` interface.  
   
 ```  
-LPOLECLIENTSITE GetClientSite() const;
-
- 
+LPOLECLIENTSITE GetClientSite() const;  
 ```  
   
 ### Return Value  
@@ -279,9 +277,7 @@ COleServerItem* GetEmbeddedItem();
  Call the `GetItemClipRect` member function to get the clipping-rectangle coordinates of the item that is being edited in place.  
   
 ```  
-void GetItemClipRect(LPRECT lpClipRect) const;
-
- 
+void GetItemClipRect(LPRECT lpClipRect) const;  
 ```  
   
 ### Parameters  
@@ -297,9 +293,7 @@ void GetItemClipRect(LPRECT lpClipRect) const;
  Call the `GetItemPosition` member function to get the coordinates of the item being edited in place.  
   
 ```  
-void GetItemPosition(LPRECT lpPosRect) const;
-
- 
+void GetItemPosition(LPRECT lpPosRect) const;  
 ```  
   
 ### Parameters  
@@ -318,9 +312,7 @@ void GetItemPosition(LPRECT lpPosRect) const;
 BOOL GetZoomFactor(
     LPSIZE lpSizeNum = NULL,  
     LPSIZE lpSizeDenom = NULL,  
-    LPCRECT lpPosRect = NULL) const;
-
- 
+    LPCRECT lpPosRect = NULL) const;  
 ```  
   
 ### Parameters  
@@ -345,9 +337,7 @@ BOOL GetZoomFactor(
  Determines if the document is a DocObject.  
   
 ```  
-BOOL IsDocObject() const;
-
- 
+BOOL IsDocObject() const;  
 ```  
   
 ### Return Value  
@@ -357,9 +347,7 @@ BOOL IsDocObject() const;
  Call the `IsEmbedded` member function to determine whether the document represents an object embedded in a container.  
   
 ```  
-BOOL IsEmbedded() const;
-
- 
+BOOL IsEmbedded() const;  
 ```  
   
 ### Return Value  
@@ -372,9 +360,7 @@ BOOL IsEmbedded() const;
  Call the `IsInPlaceActive` member function to determine whether the item is currently in the in-place active state.  
   
 ```  
-BOOL IsInPlaceActive() const;
-
- 
+BOOL IsInPlaceActive() const;  
 ```  
   
 ### Return Value  

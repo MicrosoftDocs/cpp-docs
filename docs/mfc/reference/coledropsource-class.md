@@ -139,7 +139,8 @@ virtual BOOL OnBeginDrag(CWnd* pWnd);
   
 ```  
 virtual SCODE QueryContinueDrag(
-    BOOL bEscapePressed, DWORD dwKeyState);
+    BOOL bEscapePressed, 
+    DWORD dwKeyState);
 ```  
   
 ### Parameters  

@@ -230,9 +230,7 @@ virtual void AddNew();
  Call this member function to determine whether the previously opened recordset allows you to add new records by calling the [AddNew](#addnew) member function.  
   
 ```  
-BOOL CanAppend() const;
-
- 
+BOOL CanAppend() const;  
 ```  
   
 ### Return Value  
@@ -294,9 +292,7 @@ BOOL CanRestart();
  Call this member function to determine whether the recordset allows scrolling.  
   
 ```  
-BOOL CanScroll() const;
-
- 
+BOOL CanScroll() const;  
 ```  
   
 ### Return Value  
@@ -324,9 +320,7 @@ BOOL CanTransact();
  Call this member function to determine whether the recordset can be updated.  
   
 ```  
-BOOL CanUpdate() const;
-
- 
+BOOL CanUpdate() const;  
 ```  
   
 ### Return Value  
@@ -931,14 +925,9 @@ virtual void GetFieldValue(
 virtual void GetFieldValue(
     int nIndex,  
     COleVariant& varValue);
-
  
-virtual COleVariant GetFieldValue(
-    LPCTSTR lpszName);
-
- 
-virtual COleVariant GetFieldValue(
-    int nIndex);
+virtual COleVariant GetFieldValue(LPCTSTR lpszName); 
+virtual COleVariant GetFieldValue(int nIndex);
 ```  
   
 ### Parameters  
@@ -1078,11 +1067,8 @@ CString GetName();
  Call this member function to retrieve the current value of the specified parameter stored in the underlying DAOParameter object.  
   
 ```  
-virtual COleVariant GetParamValue(int nIndex);
-
- 
-virtual COleVariant GetParamValue(LPCTSTR lpszName);
-```  
+virtual COleVariant GetParamValue(int nIndex);  
+virtual COleVariant GetParamValue(LPCTSTR lpszName);```  
   
 ### Parameters  
  `nIndex`  
@@ -1145,9 +1131,7 @@ long GetRecordCount();
  Call this member function to get the SQL statement that was used to select the recordset's records when it was opened.  
   
 ```  
-CString GetSQL() const;
-
- 
+CString GetSQL() const;  
 ```  
   
 ### Return Value  
@@ -1216,9 +1200,7 @@ CString GetValidationText();
  Call this member function before you scroll from record to record to learn whether you have gone before the first record of the recordset.  
   
 ```  
-BOOL IsBOF() const;
-
- 
+BOOL IsBOF() const;  
 ```  
   
 ### Return Value  
@@ -1265,9 +1247,7 @@ BOOL IsBOF() const;
  Call this member function to determine whether the current record has been deleted.  
   
 ```  
-BOOL IsDeleted() const;
-
- 
+BOOL IsDeleted() const;  
 ```  
   
 ### Return Value  
@@ -1287,9 +1267,7 @@ BOOL IsDeleted() const;
  Call this member function as you scroll from record to record to learn whether you have gone beyond the last record of the recordset.  
   
 ```  
-BOOL IsEOF() const;
-
- 
+BOOL IsEOF() const;  
 ```  
   
 ### Return Value  
@@ -1397,9 +1375,7 @@ BOOL IsFieldNullable(void* pv);
  Call this member function to determine if the recordset is open.  
   
 ```  
-BOOL IsOpen() const;
-
- 
+BOOL IsOpen() const;  
 ```  
   
 ### Return Value  
@@ -2057,11 +2033,8 @@ void SetFieldValue(
  Call this member function to set the field to a Null value.  
   
 ```  
-void SetFieldValueNull(int nIndex);
-
- 
-void SetFieldValueNull(LPCTSTR lpszName);
-```  
+void SetFieldValueNull(int nIndex);  
+void SetFieldValueNull(LPCTSTR lpszName);```  
   
 ### Parameters  
  `nIndex`  
@@ -2130,11 +2103,8 @@ virtual void SetParamValue(
  Call this member function to set the parameter to a Null value.  
   
 ```  
-void SetParamValueNull(int nIndex);
-
- 
-void SetParamValueNull(LPCTSTR lpszName);
-```  
+void SetParamValueNull(int nIndex);  
+void SetParamValueNull(LPCTSTR lpszName);```  
   
 ### Parameters  
  `nIndex`  

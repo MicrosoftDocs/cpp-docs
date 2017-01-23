@@ -45,7 +45,9 @@ This class implements the [IClassFactory](http://msdn.microsoft.com/library/wind
 ## Syntax  
   
 ```
-class CComClassFactoryAutoThread : public IClassFactory,   public CComObjectRootEx<CComGlobalsThreadModel>
+class CComClassFactoryAutoThread 
+   : public IClassFactory, 
+     public CComObjectRootEx<CComGlobalsThreadModel>
 ```  
   
 ## Members  
@@ -80,7 +82,10 @@ class CComClassFactoryAutoThread : public IClassFactory,   public CComObjectRoot
  Creates an object of the specified CLSID and retrieves an interface pointer to this object.  
   
 ```
-STDMETHODIMP CreateInstance(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
+STDMETHODIMP CreateInstance(
+    LPUNKNOWN pUnkOuter,
+    REFIID riid,
+    void** ppvObj);
 ```  
   
 ### Parameters  

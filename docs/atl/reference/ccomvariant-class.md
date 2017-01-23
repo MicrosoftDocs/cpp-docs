@@ -292,7 +292,7 @@ ULONG GetSize() const;
  Assigns a value and corresponding type to the `CComVariant` object.  
   
 ```
-CComVariant& operator=(const CComVariant& varSrc);  
+CComVariant& operator=(const CComVariant& varSrc);
 CComVariant& operator=(const VARIANT& varSrc);
 CComVariant& operator=(const CComBSTR& bstrSrc);
 CComVariant& operator=(LPCOLESTR lpszSrc);

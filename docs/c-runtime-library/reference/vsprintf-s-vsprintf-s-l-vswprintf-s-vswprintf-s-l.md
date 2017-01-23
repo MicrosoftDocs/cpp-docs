@@ -183,7 +183,8 @@ void test( char * format, ... )
    buffer = malloc( len * sizeof(char) );  
    vsprintf_s( buffer, len, format, args );  
    puts( buffer );  
-   free( buffer );  
+   free( buffer );
+   va_end( args );  
 }  
   
 int main( void )  

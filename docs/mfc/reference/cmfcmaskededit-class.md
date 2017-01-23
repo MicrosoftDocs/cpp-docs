@@ -221,13 +221,9 @@ void EnableSetMaskedCharsOnly(BOOL bEnable=TRUE);
 ```  
 int GetWindowText(
     LPTSTR lpszStringBuf,  
-    int nMaxCount) const;
-
- 
-void GetWindowText(
-    CString& rstrString) const;
-
- 
+    int nMaxCount) const;  
+  
+void GetWindowText(CString& rstrString) const;  
 ```  
   
 ### Parameters  
@@ -254,9 +250,7 @@ void GetWindowText(
 ```  
 virtual BOOL IsMaskedChar(
     TCHAR chChar,  
-    TCHAR chMaskChar) const;
-
- 
+    TCHAR chMaskChar) const;  
 ```  
   
 ### Parameters  

@@ -131,9 +131,7 @@ virtual BOOL Create(
  Returns the **IHTMLDocument2** interface on the current document.  
   
 ```  
-BOOL GetDHtmlDocument(IHTMLDocument2** ppDocument) const;
-
- 
+BOOL GetDHtmlDocument(IHTMLDocument2** ppDocument) const;  
 ```  
   
 ### Parameters  

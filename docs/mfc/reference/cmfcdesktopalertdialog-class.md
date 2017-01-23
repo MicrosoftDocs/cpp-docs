@@ -113,9 +113,7 @@ CSize GetDlgSize();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL HasFocus() const;
-
- 
+BOOL HasFocus() const;  
 ```  
   
 ### Return Value  

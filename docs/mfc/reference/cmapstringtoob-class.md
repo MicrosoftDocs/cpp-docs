@@ -132,9 +132,7 @@ CMapStringToOb(INT_PTR nBlockSize = 10);
  Determines how many elements are in the map.  
   
 ```  
-INT_PTR GetCount() const;
-
- 
+INT_PTR GetCount() const;  
 ```  
   
 ### Return Value  
@@ -161,9 +159,7 @@ INT_PTR GetCount() const;
  Determines the current number of elements in the hash table.  
   
 ```  
-UINT GetHashTableSize() const;
-
- 
+UINT GetHashTableSize() const;  
 ```  
   
 ### Return Value  
@@ -188,9 +184,7 @@ UINT GetHashTableSize() const;
 void GetNextAssoc(
     POSITION& rNextPosition,  
     CString& rKey,  
-    CObject*& rValue) const;
-
- 
+    CObject*& rValue) const;  
 ```  
   
 ### Parameters  
@@ -244,9 +238,7 @@ void GetNextAssoc(
  Returns the number of map elements.  
   
 ```  
-INT_PTR GetSize() const;
-
- 
+INT_PTR GetSize() const;  
 ```  
   
 ### Return Value  
@@ -273,9 +265,7 @@ INT_PTR GetSize() const;
  Starts a map iteration by returning a **POSITION** value that can be passed to a `GetNextAssoc` call.  
   
 ```  
-POSITION GetStartPosition() const;
-
- 
+POSITION GetStartPosition() const;  
 ```  
   
 ### Return Value  
@@ -302,9 +292,7 @@ POSITION GetStartPosition() const;
  Calculates the hash value of a specified key.  
   
 ```  
-UINT HashKey(LPCTSTR key) const;
-
- 
+UINT HashKey(LPCTSTR key) const;  
 ```  
   
 ### Parameters  
@@ -360,9 +348,7 @@ void InitHashTable(
  Determines whether the map is empty.  
   
 ```  
-BOOL IsEmpty() const;
-
- 
+BOOL IsEmpty() const;  
 ```  
   
 ### Return Value  
@@ -389,9 +375,7 @@ BOOL IsEmpty() const;
 ```  
 BOOL Lookup(
     LPCTSTR key,  
-    CObject*& rValue) const;
-
- 
+    CObject*& rValue) const;  
 ```  
   
 ### Parameters  
@@ -429,9 +413,7 @@ BOOL Lookup(
 ```  
 BOOL LookupKey(
     LPCTSTR key,  
-    LPCTSTR& rKey) const;
-
- 
+    LPCTSTR& rKey) const;  
 ```  
   
 ### Parameters  

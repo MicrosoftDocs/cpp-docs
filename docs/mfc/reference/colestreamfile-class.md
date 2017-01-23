@@ -189,9 +189,7 @@ LPSTREAM Detach();
  Call this function to return a pointer to current stream.  
   
 ```  
-IStream* GetStream() const;
-
- 
+IStream* GetStream() const;  
 ```  
   
 ### Return Value  

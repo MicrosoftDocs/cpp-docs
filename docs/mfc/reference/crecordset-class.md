@@ -191,9 +191,7 @@ virtual void AddNew();
  Determines whether the previously opened recordset allows you to add new records.  
   
 ```  
-BOOL CanAppend() const;
-
- 
+BOOL CanAppend() const;  
 ```  
   
 ### Return Value  
@@ -203,9 +201,7 @@ BOOL CanAppend() const;
  Determines whether the recordset allows you to mark records using bookmarks.  
   
 ```  
-BOOL CanBookmark() const;
-
- 
+BOOL CanBookmark() const;  
 ```  
   
 ### Return Value  
@@ -249,9 +245,7 @@ void CancelUpdate();
  Determines whether the recordset allows restarting its query (to refresh its records) by calling the **Requery** member function.  
   
 ```  
-BOOL CanRestart() const;
-
- 
+BOOL CanRestart() const;  
 ```  
   
 ### Return Value  
@@ -261,9 +255,7 @@ BOOL CanRestart() const;
  Determines whether the recordset allows scrolling.  
   
 ```  
-BOOL CanScroll() const;
-
- 
+BOOL CanScroll() const;  
 ```  
   
 ### Return Value  
@@ -276,9 +268,7 @@ BOOL CanScroll() const;
  Determines whether the recordset allows transactions.  
   
 ```  
-BOOL CanTransact() const;
-
- 
+BOOL CanTransact() const;  
 ```  
   
 ### Return Value  
@@ -291,9 +281,7 @@ BOOL CanTransact() const;
  Determines whether the recordset can be updated.  
   
 ```  
-BOOL CanUpdate() const;
-
- 
+BOOL CanUpdate() const;  
 ```  
   
 ### Return Value  
@@ -640,9 +628,7 @@ void GetFieldValue(
  Retrieves the total number of fields in your recordset object.  
   
 ```  
-short GetODBCFieldCount() const;
-
- 
+short GetODBCFieldCount() const;  
 ```  
   
 ### Return Value  
@@ -686,9 +672,7 @@ void GetODBCFieldInfo(
  Determines the size of the recordset.  
   
 ```  
-long GetRecordCount() const;
-
- 
+long GetRecordCount() const;  
 ```  
   
 ### Return Value  
@@ -703,9 +687,7 @@ long GetRecordCount() const;
  Obtains the current setting for the number of rows you wish to retrieve during a given fetch.  
   
 ```  
-DWORD GetRowsetSize() const;
-
- 
+DWORD GetRowsetSize() const;  
 ```  
   
 ### Return Value  
@@ -722,9 +704,7 @@ DWORD GetRowsetSize() const;
  Determines how many records were actually retrieved after a fetch.  
   
 ```  
-DWORD GetRowsFetched() const;
-
- 
+DWORD GetRowsFetched() const;  
 ```  
   
 ### Return Value  
@@ -744,9 +724,7 @@ DWORD GetRowsFetched() const;
  Obtains the status for a row in the current rowset.  
   
 ```  
-WORD GetRowStatus(WORD wRow) const;
-
- 
+WORD GetRowStatus(WORD wRow) const;  
 ```  
   
 ### Parameters  
@@ -774,9 +752,7 @@ WORD GetRowStatus(WORD wRow) const;
  Determines the index of the current record in the recordset and whether the last record has been seen.  
   
 ```  
-void GetStatus(CRecordsetStatus& rStatus) const;
-
- 
+void GetStatus(CRecordsetStatus& rStatus) const;  
 ```  
   
 ### Parameters  
@@ -808,9 +784,7 @@ void GetStatus(CRecordsetStatus& rStatus) const;
  Call this member function to get the SQL statement that was used to select the recordset's records when it was opened.  
   
 ```  
-const CString& GetSQL() const;
-
- 
+const CString& GetSQL() const;  
 ```  
   
 ### Return Value  
@@ -828,9 +802,7 @@ const CString& GetSQL() const;
  Gets the name of the SQL table on which the recordset's query is based.  
   
 ```  
-const CString& GetTableName() const;
-
- 
+const CString& GetTableName() const;  
 ```  
   
 ### Return Value  
@@ -846,9 +818,7 @@ const CString& GetTableName() const;
  Returns nonzero if the recordset has been positioned before the first record. There is no current record.  
   
 ```  
-BOOL IsBOF() const;
-
- 
+BOOL IsBOF() const;  
 ```  
   
 ### Return Value  
@@ -868,9 +838,7 @@ BOOL IsBOF() const;
  Determines whether the current record has been deleted.  
   
 ```  
-BOOL IsDeleted() const;
-
- 
+BOOL IsDeleted() const;  
 ```  
   
 ### Return Value  
@@ -890,9 +858,7 @@ BOOL IsDeleted() const;
  Returns nonzero if the recordset has been positioned after the last record. There is no current record.  
   
 ```  
-BOOL IsEOF() const;
-
- 
+BOOL IsEOF() const;  
 ```  
   
 ### Return Value  
@@ -991,9 +957,7 @@ BOOL IsFieldNullable(void* pv);
  Determines if the recordset is already open.  
   
 ```  
-BOOL IsOpen() const;
-
- 
+BOOL IsOpen() const;  
 ```  
   
 ### Return Value  
@@ -1508,8 +1472,7 @@ void SetBookmark(const CDBVariant& varBookmark);
  Flags a field data member of the recordset as changed or as unchanged.  
   
 ```  
-void SetFieldDirty(
-    void* pv, BOOL bDirty = TRUE);
+void SetFieldDirty(void* pv, BOOL bDirty = TRUE);
 ```  
   
 ### Parameters  
@@ -1546,8 +1509,7 @@ void SetFieldDirty(
  Flags a field data member of the recordset as Null (specifically having no value) or as non-Null.  
   
 ```  
-void SetFieldNull(
-    void* pv, BOOL bNull = TRUE);
+void SetFieldNull(void* pv, BOOL bNull = TRUE);
 ```  
   
 ### Parameters  
@@ -1628,8 +1590,7 @@ void SetParamNull(
  Moves the cursor to a row within the current rowset.  
   
 ```  
-void SetRowsetCursorPosition(
-    WORD wRow, WORD wLockType = SQL_LOCK_NO_CHANGE);
+void SetRowsetCursorPosition(WORD wRow, WORD wLockType = SQL_LOCK_NO_CHANGE);
 ```  
   
 ### Parameters  

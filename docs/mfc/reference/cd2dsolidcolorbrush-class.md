@@ -188,9 +188,7 @@ ID2D1SolidColorBrush* Get();
  Retrieves the color of the solid color brush  
   
 ```  
-D2D1_COLOR_F GetColor() const;
-
- 
+D2D1_COLOR_F GetColor() const;  
 ```  
   
 ### Return Value  

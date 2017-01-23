@@ -57,7 +57,7 @@ struct is_trivially_copy_constructible;
  A copy constructor for a class `T` is trivial if it is implicitly declared, the class `T` has no virtual functions or virtual bases, all the direct bases of class `T` have trivial copy constructors, the classes of all the non-static data members of class type have trivial copy constructors, and the classes of all the non-static data members of type array of class have trivial copy constructors.  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

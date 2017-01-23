@@ -134,9 +134,7 @@ virtual CMFCHeaderCtrl& GetHeaderCtrl();
  Checks whether the list control currently supports sorting on multiple columns.  
   
 ```  
-BOOL IsMultipleSort() const;
-
- 
+BOOL IsMultipleSort() const;  
 ```  
   
 ### Return Value  

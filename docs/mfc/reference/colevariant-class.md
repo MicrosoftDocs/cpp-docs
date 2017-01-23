@@ -114,74 +114,23 @@ void Attach(VARIANT& varSrc);
  Constructs a `COleVariant` object.  
   
 ```  
-COleVariant();
-
- 
-COleVariant(
-    const VARIANT& varSrc);
-
- 
-COleVariant(
-    const COleVariant& varSrc);
-
- 
-COleVariant(
-    LPCVARIANT pSrc);
-
- 
-COleVariant(
-    LPCTSTR lpszSrc);
-
- 
-COleVariant(
-    LPCTSTR lpszSrc,  
-    VARTYPE vtSrc);
-
- 
-COleVariant(
-    CString& strSrc);
-
- 
-COleVariant(
-    BYTE nSrc);
-
- 
-COleVariant(
-    short nSrc,  
-    VARTYPE vtSrc = VT_I2);
-
- 
-COleVariant(
-    long lSrc,  
-    VARTYPE vtSrc = VT_I4);
-
- 
-COleVariant(
-    const COleCurrency& curSrc);
-
- 
-COleVariant(
-    float fltSrc);
-
- 
-COleVariant(
-    double dblSrc);
-
- 
-COleVariant(
-    const COleDateTime& timeSrc);
-
- 
-COleVariant(
-    const CByteArray& arrSrc);
-
- 
-COleVariant(
-    const CLongBinary& lbSrc);
-
- 
-COleVariant(
-    LPCITEMIDLIST pidl);
+COleVariant(); 
+COleVariant(const VARIANT& varSrc); 
+COleVariant(const COleVariant& varSrc); 
+COleVariant(LPCVARIANT pSrc); 
+COleVariant(LPCTSTR lpszSrc); 
+COleVariant(LPCTSTR lpszSrc, VARTYPE vtSrc); 
+COleVariant(CString& strSrc); 
+COleVariant(BYTE nSrc); 
+COleVariant(short nSrc, VARTYPE vtSrc = VT_I2); 
+COleVariant(long lSrc,VARTYPE vtSrc = VT_I4); 
+COleVariant(const COleCurrency& curSrc); 
+COleVariant(float fltSrc); 
+COleVariant(double dblSrc); 
+COleVariant(const COleDateTime& timeSrc); 
+COleVariant(const CByteArray& arrSrc); 
+COleVariant(const CLongBinary& lbSrc); 
+COleVariant(LPCITEMIDLIST pidl);
 ```  
   
 ### Parameters  
@@ -263,9 +212,7 @@ COleVariant(
  Converts the type of variant value in this `COleVariant` object.  
   
 ```  
-void ChangeType(
-    VARTYPE vartype,  
-    LPVARIANT pSrc = NULL);
+void ChangeType(VARTYPE vartype, LPVARIANT pSrc = NULL);
 ```  
   
 ### Parameters  
@@ -320,9 +267,7 @@ void GetByteArrayFromVariantArray(CByteArray& bytes);
  This casting operator returns a `VARIANT` structure whose value is copied from this `COleVariant` object.  
   
 ```  
-operator LPCVARIANT() const;
-
- 
+operator LPCVARIANT() const; 
 ```  
   
 ### Remarks  
@@ -343,45 +288,19 @@ operator LPVARIANT();
  These overloaded assignment operators copy the source value into this `COleVariant` object.  
   
 ```  
-const COleVariant& operator=(const VARIANT& varSrc);
-
- 
-const COleVariant& operator=(LPCVARIANT pSrc);
-
- 
-const COleVariant& operator=(const COleVariant& varSrc);
-
- 
+const COleVariant& operator=(const VARIANT& varSrc); 
+const COleVariant& operator=(LPCVARIANT pSrc); 
+const COleVariant& operator=(const COleVariant& varSrc); 
 const COleVariant& operator=(const LPCTSTR lpszSrc);
-
- 
-const COleVariant& operator=(const CString& strSrc);
-
- 
-const COleVariant& operator=(BYTE nSrc);
-
- 
-const COleVariant& operator=(short nSrc);
-
- 
-const COleVariant& operator=(long lSrc);
-
- 
-const COleVariant& operator=(const COleCurrency& curSrc);
-
- 
-const COleVariant& operator=(float fltSrc);
-
- 
-const COleVariant& operator=(double dblSrc);
-
- 
-const COleVariant& operator=(const COleDateTime& dateSrc);
-
- 
-const COleVariant& operator=(const CByteArray& arrSrc);
-
- 
+const COleVariant& operator=(const CString& strSrc); 
+const COleVariant& operator=(BYTE nSrc); 
+const COleVariant& operator=(short nSrc); 
+const COleVariant& operator=(long lSrc); 
+const COleVariant& operator=(const COleCurrency& curSrc); 
+const COleVariant& operator=(float fltSrc); 
+const COleVariant& operator=(double dblSrc); 
+const COleVariant& operator=(const COleDateTime& dateSrc); 
+const COleVariant& operator=(const CByteArray& arrSrc); 
 const COleVariant& operator=(const CLongBinary& lbSrc);
 ```  
   
@@ -418,13 +337,8 @@ const COleVariant& operator=(const CLongBinary& lbSrc);
  This operator compares two variant values and returns nonzero if they are equal; otherwise 0.  
   
 ```  
-BOOL operator==(const VARIANT& varSrc) const;
-
- 
- 
+BOOL operator==(const VARIANT& varSrc) const; 
 BOOL operator==(LPCVARIANT pSrc) const;
-
- 
 ```  
   
 ##  <a name="operator_lt_lt__gt_gt"></a>  COleVariant::operator &lt;&lt;, &gt;&gt;  
@@ -434,12 +348,10 @@ BOOL operator==(LPCVARIANT pSrc) const;
 friend CDumpContext& AFXAPI operator<<(
     CDumpContext& dc,  
     OleVariant varSrc);
-
  
 friend CArchive& AFXAPI operator<<(
     CArchive& ar,  
     COleVariant varSrc);
-
  
 friend CArchive& AFXAPI operator>>(
     CArchive& ar,  
@@ -453,9 +365,7 @@ friend CArchive& AFXAPI operator>>(
  Sets the string to a particular type.  
   
 ```  
-void SetString(
-    LPCTSTR lpszSrc,  
-    VARTYPE vtSrc);
+void SetString(LPCTSTR lpszSrc, VARTYPE vtSrc);
 ```  
   
 ### Parameters  

@@ -192,9 +192,7 @@ void ActivateMDITab(int nTab = -1);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL AllowDestroyEmptyTabbedPane() const;
-
- 
+virtual BOOL AllowDestroyEmptyTabbedPane() const;  
 ```  
   
 ### Return Value  
@@ -363,9 +361,7 @@ static HICON __stdcall GetDocumentIcon(UINT nCmdID);
  Retrieves the index of the first tab that is visible in the current tab control.  
   
 ```  
-virtual int GetFirstVisibleTabNum() const;
-
- 
+virtual int GetFirstVisibleTabNum() const;  
 ```  
   
 ### Return Value  
@@ -378,9 +374,7 @@ virtual int GetFirstVisibleTabNum() const;
  Retrieves a value that specifies how the current tab control can be resized.  
   
 ```  
-ResizeMode GetResizeMode() const;
-
- 
+ResizeMode GetResizeMode() const;  
 ```  
   
 ### Return Value  
@@ -405,9 +399,7 @@ CScrollBar* GetScrollBar();
 ```  
 void GetTabArea(
     CRect& rectTabAreaTop,  
-    CRect& rectTabAreaBottom) const;
-
- 
+    CRect& rectTabAreaBottom) const;  
 ```  
   
 ### Parameters  
@@ -424,9 +416,7 @@ void GetTabArea(
  Retrieves the maximum width of a tab.  
   
 ```  
-int GetTabMaxWidth() const;
-
- 
+int GetTabMaxWidth() const;  
 ```  
   
 ### Return Value  
@@ -439,9 +429,7 @@ int GetTabMaxWidth() const;
  Retrieves the height of the tab area of the current tab control.  
   
 ```  
-virtual int GetTabsHeight() const;
-
- 
+virtual int GetTabsHeight() const;  
 ```  
   
 ### Return Value  
@@ -451,9 +439,7 @@ virtual int GetTabsHeight() const;
  Retrieves a rectangle that bounds the tab area of the current tab control.  
   
 ```  
-virtual void GetTabsRect(CRect& rect) const;
-
- 
+virtual void GetTabsRect(CRect& rect) const;  
 ```  
   
 ### Parameters  
@@ -464,9 +450,7 @@ virtual void GetTabsRect(CRect& rect) const;
  Retrieves the boundary of the client area of the current tab control.  
   
 ```  
-void GetWndArea(CRect& rect) const;
-
- 
+void GetWndArea(CRect& rect) const;  
 ```  
   
 ### Parameters  
@@ -528,9 +512,7 @@ virtual void HideSingleTab(BOOL bHide=TRUE);
  Indicates whether the current tab of a tab control is the active tab in a multiple document interface tab group.  
   
 ```  
-BOOL IsActiveInMDITabGroup() const;
-
- 
+BOOL IsActiveInMDITabGroup() const;  
 ```  
   
 ### Return Value  
@@ -543,9 +525,7 @@ BOOL IsActiveInMDITabGroup() const;
  Indicates whether the text of the active tab is displayed using a bold font.  
   
 ```  
-BOOL IsActiveTabBoldFont() const;
-
- 
+BOOL IsActiveTabBoldFont() const;  
 ```  
   
 ### Return Value  
@@ -558,9 +538,7 @@ BOOL IsActiveTabBoldFont() const;
  Indicates whether the Close button ( **X**) is displayed on an active tab or on the upper-right corner of the tab area.  
   
 ```  
-virtual BOOL IsActiveTabCloseButton() const;
-
- 
+virtual BOOL IsActiveTabCloseButton() const;  
 ```  
   
 ### Return Value  
@@ -572,9 +550,7 @@ virtual BOOL IsActiveTabCloseButton() const;
  Indicates whether the tabbed window draws a frame rectangle around embedded panes.  
   
 ```  
-BOOL IsDrawFrame() const;
-
- 
+BOOL IsDrawFrame() const;  
 ```  
   
 ### Return Value  
@@ -587,9 +563,7 @@ BOOL IsDrawFrame() const;
  Indicates whether the frame around the tab area is flat or 3D.  
   
 ```  
-BOOL IsFlatFrame() const;
-
- 
+BOOL IsFlatFrame() const;  
 ```  
   
 ### Return Value  
@@ -602,9 +576,7 @@ BOOL IsFlatFrame() const;
  Indicates whether the appearance of the tabs in the current tab control is flat or not.  
   
 ```  
-virtual BOOL IsFlatTab() const;
-
- 
+virtual BOOL IsFlatTab() const;  
 ```  
   
 ### Return Value  
@@ -614,9 +586,7 @@ virtual BOOL IsFlatTab() const;
  Indicates whether the appearance of the left and right side of a tab in the current tab control is rounded.  
   
 ```  
-virtual BOOL IsLeftRightRounded() const;
-
- 
+virtual BOOL IsLeftRightRounded() const;  
 ```  
   
 ### Return Value  
@@ -626,9 +596,7 @@ virtual BOOL IsLeftRightRounded() const;
  Indicates whether the current tab control is contained in the client area of a multiple-document interface window.  
   
 ```  
-virtual BOOL IsMDITabGroup() const;
-
- 
+virtual BOOL IsMDITabGroup() const;  
 ```  
   
 ### Return Value  
@@ -638,9 +606,7 @@ virtual BOOL IsMDITabGroup() const;
  Indicates whether the current tab control is displayed in the style of Microsoft OneNote.  
   
 ```  
-virtual BOOL IsOneNoteStyle() const;
-
- 
+virtual BOOL IsOneNoteStyle() const;  
 ```  
   
 ### Return Value  
@@ -650,9 +616,7 @@ virtual BOOL IsOneNoteStyle() const;
  Indicates whether the current tab control has a scroll bar that can scroll its tabs as a group.  
   
 ```  
-BOOL IsSharedScroll() const;
-
- 
+BOOL IsSharedScroll() const;  
 ```  
   
 ### Return Value  
@@ -665,9 +629,7 @@ BOOL IsSharedScroll() const;
  Indicates whether the tab control displays scroll buttons or a button that displays a menu of tabbed windows.  
   
 ```  
-BOOL IsTabDocumentsMenu() const;
-
- 
+BOOL IsTabDocumentsMenu() const;  
 ```  
   
 ### Return Value  
@@ -680,9 +642,7 @@ BOOL IsTabDocumentsMenu() const;
  Indicates whether tabs are drawn using the style of Visual Studio 2005.  
   
 ```  
-virtual BOOL IsVS2005Style() const;
-
- 
+virtual BOOL IsVS2005Style() const;  
 ```  
   
 ### Return Value  
@@ -880,13 +840,9 @@ void SetFlatFrame(
 virtual BOOL SetImageList(
     UINT uiID,  
     int cx=15,  
-    COLORREF clrTransp=RGB(255,
-    0,
-    255));
-
- 
-virtual BOOL SetImageList(
-    HIMAGELIST hImageList);
+    COLORREF clrTransp=RGB(255, 0, 255));  
+  
+virtual BOOL SetImageList(HIMAGELIST hImageList);
 ```  
   
 ### Parameters  

@@ -46,7 +46,7 @@ In most cases, you can open a project that was created in an earlier version of 
   
 2.  In the current version of Visual Studio, open—and thereby upgrade—the copy of the project or solution and save it.  
   
-3.  For each converted project, open the shortcut menu and choose **Properties**. Under **Configuration Properties**, select **General** and then for **Platform Toolset**, select the current version. (For example, for Visual Studio 2013, select v120.)  
+3.  For each converted project, open the shortcut menu and choose **Properties**. Under **Configuration Properties**, select **General** and then for **Platform Toolset**, select the current version. (For example, for Visual Studio 2017, select v141.)  
   
 4.  Build the solution. If the build fails, modify the settings and rebuild.  
   
@@ -55,6 +55,7 @@ In most cases, you can open a project that was created in an earlier version of 
  For information about how to update the targeted Windows versions, see [Modifying WINVER and _WIN32_WINNT](../porting/modifying-winver-and-win32-winnt.md).  
   
 ## See Also  
- [Build System Changes](../build/build-system-changes.md)   
+ [Build System Changes](../build/build-system-changes.md)  
+ [What's New for Visual C++ in Visual Studio 2017](../top/what-s-new-for-visual-cpp-in-visual-studio.md) 
  [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)   
  [Nonstandard Behavior](../cpp/nonstandard-behavior.md)

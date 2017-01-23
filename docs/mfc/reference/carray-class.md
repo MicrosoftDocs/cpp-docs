@@ -198,8 +198,8 @@ void Copy(const CArray& src);
  Returns a temporary reference to the specified element within the array.  
   
 ```  
-TYPE& ElementAt(INT_PTR nIndex); 
-const TYPE& ElementAt(INT_PTR nIndex) const; 
+TYPE& ElementAt(INT_PTR nIndex);  
+const TYPE& ElementAt(INT_PTR nIndex) const;  
 ```  
   
 ### Parameters  
@@ -232,7 +232,7 @@ void FreeExtra();
  Returns the array element at the specified index.  
   
 ```  
-TYPE& GetAt(INT_PTR nIndex); 
+TYPE& GetAt(INT_PTR nIndex);  
 const TYPE& GetAt(INT_PTR nIndex) const;  
 ```  
   
@@ -376,7 +376,7 @@ BOOL IsEmpty() const;
  These subscript operators are a convenient substitute for the [SetAt](#setat) and [GetAt](#getat) functions.  
   
 ```  
-TYPE& operator[](int_ptr nindex); 
+TYPE& operator[](int_ptr nindex);  
 const TYPE& operator[](int_ptr nindex) const;  
 ```  
   
@@ -464,8 +464,7 @@ void RemoveAt(
  Sets the array element at the specified index.  
   
 ```  
-void SetAt(
-    INT_PTR nIndex, ARG_TYPE newElement);
+void SetAt(INT_PTR nIndex, ARG_TYPE newElement);
 ```  
   
 ### Parameters  
@@ -490,8 +489,7 @@ void SetAt(
  Sets the array element at the specified index.  
   
 ```  
-void SetAtGrow(
-    INT_PTR nIndex, ARG_TYPE newElement);
+void SetAtGrow(INT_PTR nIndex, ARG_TYPE newElement);
 ```  
   
 ### Parameters  

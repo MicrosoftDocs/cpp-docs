@@ -342,9 +342,7 @@ virtual BOOL OnIdle(LONG lCount);
  Retrieves the handle of the `CWinThread` object.  
   
 ```  
-operator HANDLE() const;
-
- 
+operator HANDLE() const;  
 ```  
   
 ### Return Value  

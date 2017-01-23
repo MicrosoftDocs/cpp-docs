@@ -204,9 +204,7 @@ void Flush();
  Gets the `CFile` object pointer for this archive.  
   
 ```  
-CFile* GetFile() const;
-
- 
+CFile* GetFile() const;  
 ```  
   
 ### Return Value  
@@ -240,9 +238,7 @@ UINT GetObjectSchema();
  Call this member function to determine whether the archive object's internal buffer is empty.  
   
 ```  
-BOOL IsBufferEmpty() const;
-
- 
+BOOL IsBufferEmpty() const;  
 ```  
   
 ### Return Value  
@@ -259,9 +255,7 @@ BOOL IsBufferEmpty() const;
  Determines whether the archive is loading data.  
   
 ```  
-BOOL IsLoading() const;
-
- 
+BOOL IsLoading() const;  
 ```  
   
 ### Return Value  
@@ -277,9 +271,7 @@ BOOL IsLoading() const;
  Determines whether the archive is storing data.  
   
 ```  
-BOOL IsStoring() const;
-
- 
+BOOL IsStoring() const;  
 ```  
   
 ### Return Value  
@@ -365,9 +357,8 @@ CArchive& AFXAPI operator<<(
 template<typename BaseType,  
     class StringTraits> CArchive& operator<<(
     const ATL::CStringT<BaseType,  
-    StringTraits>& str);
-
- 
+    StringTraits>& str);  
+  
 CArchive& operator<<(BYTE by); 
 CArchive& operator<<(WORD w); 
 CArchive& operator<<(LONG l); 
@@ -448,48 +439,21 @@ CArchive& AFXAPI operator>>(
 template<typename BaseType,  
     class StringTraits> CArchive& operator>>(
     ATL::CStringT<BaseType, 
-    StringTraits>& str);
-
- 
-CArchive& operator>>(BYTE& by);
-
- 
-CArchive& operator>>(WORD& w);
-
- 
-CArchive& operator>>(int& i);
-
- 
-CArchive& operator>>(LONG& l);
-
- 
-CArchive& operator>>(DWORD& dw);
-
- 
-CArchive& operator>>(float& f);
-
- 
-CArchive& operator>>(double& d);
-
- 
-CArchive& operator>>(short& w);
-
- 
-CArchive& operator>>(char& ch);
-
- 
-CArchive& operator>>(wchar_t& ch);
-
- 
-CArchive& operator>>(unsigned& u);
-
- 
-CArchive& operator>>(bool& b);
-
- 
-CArchive& operator>>(ULONGLONG& dwdw);
-
- 
+    StringTraits>& str);  
+  
+CArchive& operator>>(BYTE& by);    
+CArchive& operator>>(WORD& w);    
+CArchive& operator>>(int& i);    
+CArchive& operator>>(LONG& l);    
+CArchive& operator>>(DWORD& dw);    
+CArchive& operator>>(float& f);    
+CArchive& operator>>(double& d);    
+CArchive& operator>>(short& w);    
+CArchive& operator>>(char& ch);    
+CArchive& operator>>(wchar_t& ch);    
+CArchive& operator>>(unsigned& u);    
+CArchive& operator>>(bool& b);    
+CArchive& operator>>(ULONGLONG& dwdw);   
 CArchive& operator>>(LONGLONG& dwdw);
 ```  
   
@@ -517,8 +481,7 @@ CArchive& operator>>(LONGLONG& dwdw);
  Reads a specified number of bytes from the archive.  
   
 ```  
-UINT Read(void* lpBuf,  
-    UINT nMax);
+UINT Read(void* lpBuf, UINT nMax);
 ```  
   
 ### Parameters  
@@ -600,12 +563,8 @@ CObject* ReadObject(const CRuntimeClass* pClass);
  Call this member function to read text data into a buffer from the file associated with the `CArchive` object.  
   
 ```  
-BOOL ReadString(CString& rString);
-
- 
-LPTSTR ReadString(
-    LPTSTR lpsz,  
-    UINT nMax);
+BOOL ReadString(CString& rString); 
+LPTSTR ReadString(LPTSTR lpsz, UINT nMax);
 ```  
   
 ### Parameters  
@@ -696,9 +655,7 @@ void SetObjectSchema(UINT nSchema);
  Use `SetStoreParams` when storing a large number of `CObject`-derived objects in an archive.  
   
 ```  
-void SetStoreParams(
-    UINT nHashSize = 2053,  
-    UINT nBlockSize = 128);
+void SetStoreParams(UINT nHashSize = 2053, UINT nBlockSize = 128);
 ```  
   
 ### Parameters  
@@ -720,9 +677,7 @@ void SetStoreParams(
  Writes a specified number of bytes to the archive.  
   
 ```  
-void Write(
-    const void* lpBuf,  
-    UINT nMax);
+void Write(const void* lpBuf, INT nMax);
 ```  
   
 ### Parameters  

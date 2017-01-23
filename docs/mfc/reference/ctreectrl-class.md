@@ -385,9 +385,7 @@ BOOL Expand(
  This member function implements the behavior of the Win32 message [TVM_GETBKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb773570), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ```  
-COLORREF GetBkColor() const;
-
- 
+COLORREF GetBkColor() const;  
 ```  
   
 ### Return Value  
@@ -400,9 +398,7 @@ COLORREF GetBkColor() const;
  Call this member function to retrieve an item's check state.  
   
 ```  
-BOOL GetCheck(HTREEITEM hItem) const;
-
- 
+BOOL GetCheck(HTREEITEM hItem) const;  
 ```  
   
 ### Parameters  
@@ -419,9 +415,7 @@ BOOL GetCheck(HTREEITEM hItem) const;
  Call this function to retrieve the tree view item that is the child of the item specified by `hItem`.  
   
 ```  
-HTREEITEM GetChildItem(HTREEITEM hItem) const;
-
- 
+HTREEITEM GetChildItem(HTREEITEM hItem) const;  
 ```  
   
 ### Parameters  
@@ -438,9 +432,7 @@ HTREEITEM GetChildItem(HTREEITEM hItem) const;
  Call this function to retrieve a count of the items in a tree view control.  
   
 ```  
-UINT GetCount() const;
-
- 
+UINT GetCount() const;  
 ```  
   
 ### Return Value  
@@ -453,9 +445,7 @@ UINT GetCount() const;
  Call this function to retrieve the item that is the target of a drag-and-drop operation.  
   
 ```  
-HTREEITEM GetDropHilightItem() const;
-
- 
+HTREEITEM GetDropHilightItem() const;  
 ```  
   
 ### Return Value  
@@ -468,9 +458,7 @@ HTREEITEM GetDropHilightItem() const;
  Call this function to retrieve the handle of the edit control being used to edit a tree view item's text.  
   
 ```  
-CEdit* GetEditControl() const;
-
- 
+CEdit* GetEditControl() const;  
 ```  
   
 ### Return Value  
@@ -483,9 +471,7 @@ CEdit* GetEditControl() const;
  Retrieves the extended styles that the current tree-view control is using.  
   
 ```  
-DWORD GetExtendedStyle() const;
-
- 
+DWORD GetExtendedStyle() const;  
 ```  
   
 ### Return Value  
@@ -498,9 +484,7 @@ DWORD GetExtendedStyle() const;
  Call this function to retrieve the first visible item of the tree view control.  
   
 ```  
-HTREEITEM GetFirstVisibleItem() const;
-
- 
+HTREEITEM GetFirstVisibleItem() const;  
 ```  
   
 ### Return Value  
@@ -513,9 +497,7 @@ HTREEITEM GetFirstVisibleItem() const;
  Call this function to retrieve the handle of the normal or state image list associated with the tree view control.  
   
 ```  
-CImageList* GetImageList(UINT nImageList) const;
-
- 
+CImageList* GetImageList(UINT nImageList) const;  
 ```  
   
 ### Parameters  
@@ -541,9 +523,7 @@ CImageList* GetImageList(UINT nImageList) const;
  Call this function to retrieve the amount, in pixels, that child items are indented relative to their parent items.  
   
 ```  
-UINT GetIndent() const;
-
- 
+UINT GetIndent() const;  
 ```  
   
 ### Return Value  
@@ -556,9 +536,7 @@ UINT GetIndent() const;
  This member function implements the behavior of the Win32 message [TVM_GETINSERTMARKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb773590), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ```  
-COLORREF GetInsertMarkColor() const;
-
- 
+COLORREF GetInsertMarkColor() const;  
 ```  
   
 ### Return Value  
@@ -571,9 +549,7 @@ COLORREF GetInsertMarkColor() const;
  Call this function to retrieve the attributes of the specified tree view item.  
   
 ```  
-BOOL GetItem(TVITEM* pItem) const;
-
- 
+BOOL GetItem(TVITEM* pItem) const;  
 ```  
   
 ### Parameters  
@@ -590,9 +566,7 @@ BOOL GetItem(TVITEM* pItem) const;
  Call this function to retrieve the 32-bit application-specific value associated with the specified item.  
   
 ```  
-DWORD_PTR GetItemData(HTREEITEM hItem) const;
-
- 
+DWORD_PTR GetItemData(HTREEITEM hItem) const;  
 ```  
   
 ### Parameters  
@@ -609,9 +583,7 @@ DWORD_PTR GetItemData(HTREEITEM hItem) const;
  Retrieves the index of the image to display when the specified item of the current tree-view control is in the expanded state.  
   
 ```  
-int GetItemExpandedImageIndex(HTREEITEM hItem)const;
-
- 
+int GetItemExpandedImageIndex(HTREEITEM hItem)const;  
 ```  
   
 ### Parameters  
@@ -630,9 +602,7 @@ int GetItemExpandedImageIndex(HTREEITEM hItem)const;
  This member function implements the behavior of the Win32 message [TVM_GETITEMHEIGHT](http://msdn.microsoft.com/library/windows/desktop/bb773599), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ```  
-SHORT GetItemHeight() const;
-
- 
+SHORT GetItemHeight() const;  
 ```  
   
 ### Return Value  
@@ -648,9 +618,7 @@ SHORT GetItemHeight() const;
 BOOL GetItemImage(
     HTREEITEM hItem,  
     int& nImage,  
-    int& nSelectedImage) const;
-
- 
+    int& nSelectedImage) const;  
 ```  
   
 ### Parameters  
@@ -681,9 +649,7 @@ BOOL GetItemImage(
 BOOL GetItemPartRect(
     HTREEITEM hItem,   
     int nPart,   
-    LPRECT lpRect)const;
-
- 
+    LPRECT lpRect)const;  
 ```  
   
 ### Parameters  
@@ -719,9 +685,7 @@ BOOL GetItemPartRect(
 BOOL GetItemRect(
     HTREEITEM hItem,  
     LPRECT lpRect,  
-    BOOL bTextOnly) const;
-
- 
+    BOOL bTextOnly) const;  
 ```  
   
 ### Parameters  
@@ -746,9 +710,7 @@ BOOL GetItemRect(
 ```  
 UINT GetItemState(
     HTREEITEM hItem,  
-    UINT nStateMask) const;
-
- 
+    UINT nStateMask) const;  
 ```  
   
 ### Parameters  
@@ -768,9 +730,7 @@ UINT GetItemState(
  Retrieves the extended state of the specified item in the current tree-view control.  
   
 ```  
-UINT GetItemStateEx(HTREEITEM hItem) const;
-
- 
+UINT GetItemStateEx(HTREEITEM hItem) const;  
 ```  
   
 ### Parameters  
@@ -789,9 +749,7 @@ UINT GetItemStateEx(HTREEITEM hItem) const;
  Returns the text of the item specified by `hItem`.  
   
 ```  
-CString GetItemText(HTREEITEM hItem) const;
-
- 
+CString GetItemText(HTREEITEM hItem) const;  
 ```  
   
 ### Parameters  
@@ -808,9 +766,7 @@ CString GetItemText(HTREEITEM hItem) const;
  Retrieves the last unexpanded node item in the current tree-view control.  
   
 ```  
-HTREEITEM GetLastVisibleItem() const;
-
- 
+HTREEITEM GetLastVisibleItem() const;  
 ```  
   
 ### Return Value  
@@ -833,9 +789,7 @@ HTREEITEM GetLastVisibleItem() const;
  This member function implements the behavior of the win32 message [TVM_GETLINECOLOR](http://msdn.microsoft.com/library/windows/desktop/bb773619), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ```  
-COLORREF GetLineColor() const;
-
- 
+COLORREF GetLineColor() const;  
 ```  
   
 ### Return Value  
@@ -850,9 +804,7 @@ COLORREF GetLineColor() const;
 ```  
 HTREEITEM GetNextItem(
     HTREEITEM hItem,  
-    UINT nCode) const;
-
- 
+    UINT nCode) const;  
 ```  
   
 ### Parameters  
@@ -899,9 +851,7 @@ HTREEITEM GetNextItem(
  Call this function to retrieve the next sibling of `hItem`.  
   
 ```  
-HTREEITEM GetNextSiblingItem(HTREEITEM hItem) const;
-
- 
+HTREEITEM GetNextSiblingItem(HTREEITEM hItem) const;  
 ```  
   
 ### Parameters  
@@ -918,9 +868,7 @@ HTREEITEM GetNextSiblingItem(HTREEITEM hItem) const;
  Call this function to retrieve the next visible item of `hItem`.  
   
 ```  
-HTREEITEM GetNextVisibleItem(HTREEITEM hItem) const;
-
- 
+HTREEITEM GetNextVisibleItem(HTREEITEM hItem) const;  
 ```  
   
 ### Parameters  
@@ -937,9 +885,7 @@ HTREEITEM GetNextVisibleItem(HTREEITEM hItem) const;
  Call this function to retrieve the parent of `hItem`.  
   
 ```  
-HTREEITEM GetParentItem(HTREEITEM hItem) const;
-
- 
+HTREEITEM GetParentItem(HTREEITEM hItem) const;  
 ```  
   
 ### Parameters  
@@ -959,9 +905,7 @@ HTREEITEM GetParentItem(HTREEITEM hItem) const;
  Call this function to retrieve the previous sibling of `hItem`.  
   
 ```  
-HTREEITEM GetPrevSiblingItem(HTREEITEM hItem) const;
-
- 
+HTREEITEM GetPrevSiblingItem(HTREEITEM hItem) const;  
 ```  
   
 ### Parameters  
@@ -978,9 +922,7 @@ HTREEITEM GetPrevSiblingItem(HTREEITEM hItem) const;
  Call this function to retrieve the previous visible item of `hItem`.  
   
 ```  
-HTREEITEM GetPrevVisibleItem(HTREEITEM hItem) const;
-
- 
+HTREEITEM GetPrevVisibleItem(HTREEITEM hItem) const;  
 ```  
   
 ### Parameters  
@@ -997,9 +939,7 @@ HTREEITEM GetPrevVisibleItem(HTREEITEM hItem) const;
  Call this function to retrieve the root item of the tree view control.  
   
 ```  
-HTREEITEM GetRootItem() const;
-
- 
+HTREEITEM GetRootItem() const;  
 ```  
   
 ### Return Value  
@@ -1012,9 +952,7 @@ HTREEITEM GetRootItem() const;
  Call this member function to retrieve the maximum scroll time for the tree view control.  
   
 ```  
-UINT GetScrollTime() const;
-
- 
+UINT GetScrollTime() const;  
 ```  
   
 ### Return Value  
@@ -1040,9 +978,7 @@ UINT GetSelectedCount();
  Call this function to retrieve the currently selected item of the tree view control.  
   
 ```  
-HTREEITEM GetSelectedItem() const;
-
- 
+HTREEITEM GetSelectedItem() const;  
 ```  
   
 ### Return Value  
@@ -1055,9 +991,7 @@ HTREEITEM GetSelectedItem() const;
  This member function implements the behavior of the Win32 message [TVM_GETTEXTCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb773633), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ```  
-COLORREF GetTextColor() const;
-
- 
+COLORREF GetTextColor() const;  
 ```  
   
 ### Return Value  
@@ -1070,9 +1004,7 @@ COLORREF GetTextColor() const;
  This member function implements the behavior of the Win32 message [TVM_GETTOOLTIPS](http://msdn.microsoft.com/library/windows/desktop/bb773729), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ```  
-CToolTipCtrl* GetToolTips() const;
-
- 
+CToolTipCtrl* GetToolTips() const;  
 ```  
   
 ### Return Value  
@@ -1088,9 +1020,7 @@ CToolTipCtrl* GetToolTips() const;
  Call this function to retrieve a count of the visible items in a tree view control.  
   
 ```  
-UINT GetVisibleCount() const;
-
- 
+UINT GetVisibleCount() const;  
 ```  
   
 ### Return Value  
@@ -1105,14 +1035,9 @@ UINT GetVisibleCount() const;
 ```  
 HTREEITEM HitTest(
     CPoint pt,  
-    UINT* pFlags = NULL) const;
-
- 
- 
-HTREEITEM HitTest(
-    TVHITTESTINFO* pHitTestInfo) const;
-
- 
+    UINT* pFlags = NULL) const;  
+  
+HTREEITEM HitTest(TVHITTESTINFO* pHitTestInfo) const;  
 ```  
   
 ### Parameters  
@@ -1155,8 +1080,7 @@ HTREEITEM HitTest(
  Call this function to insert a new item in a tree view control.  
   
 ```  
-HTREEITEM InsertItem(
-    LPTVINSERTSTRUCT lpInsertStruct);
+HTREEITEM InsertItem(LPTVINSERTSTRUCT lpInsertStruct);
 
  
 HTREEITEM InsertItem(
@@ -1229,9 +1153,7 @@ HTREEITEM InsertItem(
  Use this function to determine whether the tree item specified by `hItem` has child items.  
   
 ```  
-BOOL ItemHasChildren(HTREEITEM hItem) const;
-
- 
+BOOL ItemHasChildren(HTREEITEM hItem) const;  
 ```  
   
 ### Parameters  
@@ -1251,9 +1173,7 @@ BOOL ItemHasChildren(HTREEITEM hItem) const;
  Maps the specified accessibility identifier to the handle of a tree-view item in the current tree-view control.  
   
 ```  
-HTREEITEM MapAccIdToItem(UINT uAccId) const;
-
- 
+HTREEITEM MapAccIdToItem(UINT uAccId) const;  
 ```  
   
 ### Parameters  
@@ -1284,9 +1204,7 @@ HTREEITEM MapAccIdToItem(UINT uAccId) const;
  Maps the specified handle of a tree-view item in the current tree-view control to an accessibility identifier.  
   
 ```  
-UINT MapItemToAccID(HTREEITEM hItem) const;
-
- 
+UINT MapItemToAccID(HTREEITEM hItem) const;  
 ```  
   
 ### Parameters  
@@ -1599,8 +1517,7 @@ COLORREF SetInsertMarkColor(COLORREF clrNew);
  Call this function to set the attributes of the specified tree view item.  
   
 ```  
-BOOL SetItem(
-    TVITEM* pItem);
+BOOL SetItem(TVITEM* pItem);
 
  
 BOOL SetItem(

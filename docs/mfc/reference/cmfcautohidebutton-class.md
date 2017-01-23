@@ -139,9 +139,7 @@ virtual BOOL Create(
  Retrieves the alignment of the auto-hide button.  
   
 ```  
-DWORD GetAlignment() const;
-
- 
+DWORD GetAlignment() const;  
 ```  
   
 ### Return Value  
@@ -162,9 +160,7 @@ DWORD GetAlignment() const;
  Returns the [CDockablePane](../../mfc/reference/cdockablepane-class.md) object associated with the auto-hide button.  
   
 ```  
-CDockablePane* GetAutoHideWindow() const;
-
- 
+CDockablePane* GetAutoHideWindow() const;  
 ```  
   
 ### Return Value  
@@ -188,9 +184,7 @@ CMFCAutoHideBar* GetParentToolBar();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-CRect GetRect() const;
-
- 
+CRect GetRect() const;  
 ```  
   
 ### Return Value  
@@ -201,9 +195,7 @@ CRect GetRect() const;
  Determines the size of the auto-hide button.  
   
 ```  
-CSize GetSize() const;
-
- 
+CSize GetSize() const;  
 ```  
   
 ### Return Value  
@@ -216,9 +208,7 @@ CSize GetSize() const;
  Returns the size of the text label for the auto-hide button.  
   
 ```  
-virtual CSize GetTextSize() const;
-
- 
+virtual CSize GetTextSize() const;  
 ```  
   
 ### Return Value  
@@ -228,9 +218,7 @@ virtual CSize GetTextSize() const;
  Indicates whether the auto-hide button is active.  
   
 ```  
-BOOL IsActive() const;
-
- 
+BOOL IsActive() const;  
 ```  
   
 ### Return Value  
@@ -243,9 +231,7 @@ BOOL IsActive() const;
  Determines whether the auto-hide button is horizontal or vertical.  
   
 ```  
-BOOL IsHorizontal() const;
-
- 
+BOOL IsHorizontal() const;  
 ```  
   
 ### Return Value  
@@ -258,9 +244,7 @@ BOOL IsHorizontal() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsTop() const;
-
- 
+BOOL IsTop() const;  
 ```  
   
 ### Return Value  
@@ -271,9 +255,7 @@ BOOL IsTop() const;
  Indicates whether the auto-hide button is visible.  
   
 ```  
-virtual BOOL IsVisible() const;
-
- 
+virtual BOOL IsVisible() const;  
 ```  
   
 ### Return Value  
@@ -411,9 +393,7 @@ virtual void HighlightButton(BOOL bHighlight);
  Returns the highlight state of the auto hide button.  
   
 ```  
-virtual BOOL IsHighlighted() const;
-
- 
+virtual BOOL IsHighlighted() const;  
 ```  
   
 ### Return Value  

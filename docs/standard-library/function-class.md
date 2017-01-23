@@ -52,26 +52,22 @@ public:
 
     function();
     function(nullptr_t);
-
     function(const function& right);
-
     template <class Fty2>
-    function(Fty2 fn);
+        function(Fty2 fn);
+    template <class Fty2, class Alloc>
+        function(reference_wrapper<Fty2>, const Alloc& Ax);
 
     template <class Fty2, class Alloc>
-    function(reference_wrapper<Fty2>, const Alloc& Ax);
-
+        void assign(Fty2, const Alloc& Ax);
     template <class Fty2, class Alloc>
-    void assign(Fty2, const Alloc& Ax);
-
-    template <class Fty2, class Alloc>
-    assign(reference_wrapper<Fty2>, const Alloc& Ax);
+        void assign(reference_wrapper<Fty2>, const Alloc& Ax);
     function& operator=(nullptr_t);
     function& operator=(const function&);
     template <class Fty2>
-    function& operator=(Fty2);
+        function& operator=(Fty2);
     template <class Fty2>
-    function& operator=(reference_wrapper<Fty2>);
+        function& operator=(reference_wrapper<Fty2>);
 
     void swap(function&);
     explicit operator bool() const;
@@ -79,19 +75,19 @@ public:
     result_type operator()(T1, T2, ....., TN) const;
     const std::type_info& target_type() const;
     template <class Fty2>
-    Fty2 *target();
+        Fty2 *target();
 
     template <class Fty2>
-    const Fty2 *target() const;
+        const Fty2 *target() const;
 
     template <class Fty2>
-    void operator==(const Fty2&) const = delete;
+        void operator==(const Fty2&) const = delete;
     template <class Fty2>
-    void operator!=(const Fty2&) const = delete;
+        void operator!=(const Fty2&) const = delete;
 };
 ```  
   
-#### Parameters  
+### Parameters  
  `Fty`  
  The function type to wrap.  
   
@@ -154,15 +150,14 @@ public:
   
 ```  
 template <class Fx, class Alloc>  
-void assign(
-    Fx _Func,   
-    const Alloc& Ax);
+    void assign(
+        Fx _Func,   
+        const Alloc& Ax);
 
 template <class Fx, class Alloc>  
-void assign(
-    reference_wrapper<Fx>  
-_Fnref,   
-    const Alloc& Ax);
+    void assign(
+        reference_wrapper<Fx> _Fnref,   
+        const Alloc& Ax);
 ```  
   
 ### Parameters  
@@ -183,41 +178,34 @@ _Fnref,
   
 ```  
 function();
-
 function(nullptr_t npc);
-
 function(const function& right);
-
 template <class Fx>  
-function(Fx _Func);
-
+    function(Fx _Func);
 template <class Fx>  
-function(reference_wrapper<Fx>  
-_Fnref);
+    function(reference_wrapper<Fx> _Fnref);
+template <class Fx, class Alloc>  
+    function(
+        Fx _Func,   
+        const Alloc& Ax);
 
 template <class Fx, class Alloc>  
-function(
- Fx _Func,   
-    const Alloc& Ax);
-
-template <class Fx, class Alloc>  
-function(
- reference_wrapper<Fx>  
-_Fnref,   
-    const Alloc& Ax);
+    function(
+        reference_wrapper<Fx> _Fnref,   
+        const Alloc& Ax);
 ```  
   
 ### Parameters  
  ` right`  
  The function object to copy.  
   
- Fx  
+ `Fx`  
  The type of the callable object.  
   
  `_Func`  
  The callable object to wrap.  
   
- Alloc  
+ `Alloc`  
  The allocator type.  
   
  `Ax`  
@@ -302,7 +290,8 @@ g is empty (correct).
 ##  <a name="function__operator_unspecified"></a>  function::operator unspecified  
  Tests if stored callable object exists.  
   
-```  operator unspecified();
+```  
+operator unspecified();
 ```   
   
 ### Remarks  
@@ -330,8 +319,7 @@ int main()
     std::cout << std::boolalpha << "not empty == " << (bool)fn1 << std::endl;   
   
     return (0);   
-    }  
-  
+    }    
 ```  
   
 ```Output  
@@ -343,7 +331,8 @@ not empty == true
  Calls a callable object.  
   
 ```  
-result_type operator()(T1 t1,
+result_type operator()(
+    T1 t1,
     T2 t2, ...,
     TN tN);
 ```  
@@ -379,7 +368,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -392,15 +380,11 @@ val == -3
   
 ```  
 function& operator=(null_ptr_type npc);
-
 function& operator=(const function& right);
-
 template <class Fty>  
-function& operator=(Fty fn);
-
+    function& operator=(Fty fn);
 template <class Fty>  
-function& operator=(reference_wrapper<Fty>  
-fnref);
+    function& operator=(reference_wrapper<Fty> fnref);
 ```  
   
 ### Parameters  
@@ -456,7 +440,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -504,7 +487,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -556,7 +538,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -574,10 +555,9 @@ val == -3
   
 ```  
 template <class Fty2>  
-Fty2 *target();
-
+    Fty2 *target();
 template <class Fty2>  
-const Fty2 *target() const;
+    const Fty2 *target() const;
 ```  
   
 ### Parameters  
@@ -664,7 +644,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  

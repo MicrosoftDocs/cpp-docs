@@ -166,9 +166,7 @@ BOOL Create(
  Indicates whether another pane can be dynamically inserted between the caption bar and its parent frame.  
   
 ```  
-virtual BOOL DoesAllowDynInsertBefore() const;
-
- 
+virtual BOOL DoesAllowDynInsertBefore() const;  
 ```  
   
 ### Return Value  
@@ -216,9 +214,7 @@ BarElementAlignment GetAlignment(BarElement elem);
  Returns the border size of the caption bar.  
   
 ```  
-int GetBorderSize() const;
-
- 
+int GetBorderSize() const;  
 ```  
   
 ### Return Value  
@@ -228,9 +224,7 @@ int GetBorderSize() const;
  Retrieves the bounding rectangle of the button on the caption bar.  
   
 ```  
-CRect GetButtonRect() const;
-
- 
+CRect GetButtonRect() const;  
 ```  
   
 ### Return Value  
@@ -240,9 +234,7 @@ CRect GetButtonRect() const;
  Returns the distance between the edge of the caption bar elements and the edge of the caption bar control.  
   
 ```  
-int GetMargin() const;
-
- 
+int GetMargin() const;  
 ```  
   
 ### Return Value  
@@ -252,9 +244,7 @@ int GetMargin() const;
  Specifies whether the caption bar is in the message bar mode.  
   
 ```  
-BOOL IsMessageBarMode() const;
-
- 
+BOOL IsMessageBarMode() const;  
 ```  
   
 ### Return Value  

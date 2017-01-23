@@ -210,7 +210,7 @@ CAnimationBaseObject* FindAnimationObject(IUIAnimationVariable* pVariable);
  Returns GroupID.  
   
 ```  
-UINT32 GetGroupID() const; 
+UINT32 GetGroupID() const;  
 ```  
   
 ### Return Value  

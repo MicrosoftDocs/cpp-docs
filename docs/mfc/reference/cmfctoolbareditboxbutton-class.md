@@ -141,9 +141,7 @@ class CMFCToolBarEditBoxButton : public CMFCToolBarButton
  Specifies whether a user can stretch the button during customization.  
   
 ```  
-virtual BOOL CanBeStretched() const;
-
- 
+virtual BOOL CanBeStretched() const;  
 ```  
   
 ### Return Value  
@@ -286,9 +284,7 @@ virtual void GetEditBorder(CRect& rectBorder);
  Returns a pointer to the [CEdit Class](../../mfc/reference/cedit-class.md) control that is embedded in the button.  
   
 ```  
-CEdit* GetEditBox() const;
-
- 
+CEdit* GetEditBox() const;  
 ```  
   
 ### Return Value  
@@ -314,9 +310,7 @@ virtual HWND GetHwnd();
  Retrieves the region of the client area of the button that must be redrawn.  
   
 ```  
-virtual const CRect GetInvalidateRect() const;
-
- 
+virtual const CRect GetInvalidateRect() const;  
 ```  
   
 ### Return Value  
@@ -329,9 +323,7 @@ virtual const CRect GetInvalidateRect() const;
  Determines whether a border of the button is displayed when a user clicks the button.  
   
 ```  
-virtual BOOL HaveHotBorder() const;
-
- 
+virtual BOOL HaveHotBorder() const;  
 ```  
   
 ### Return Value  

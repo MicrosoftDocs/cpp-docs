@@ -144,8 +144,8 @@ explicit CStrBufT(StringType& str) throw(...);
 ##  <a name="operator_pcxstr"></a>  CStrBufT::operator PCXSTR  
  Directly accesses characters stored in the associated string object as a C-style string.  
   
-```
- operator PCXSTR() const throw();
+```  
+operator PCXSTR() const throw();
 ```  
   
 ### Return Value  
@@ -158,7 +158,7 @@ explicit CStrBufT(StringType& str) throw(...);
  Directly accesses characters stored in the associated string object as a C-style string.  
   
 ```
- operator PXSTR() throw();
+operator PXSTR() throw();
 ```  
   
 ### Return Value  

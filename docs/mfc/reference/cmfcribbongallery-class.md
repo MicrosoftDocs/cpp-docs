@@ -315,9 +315,7 @@ virtual CMFCRibbonBaseElement* GetDroppedDown();
  Returns the name of the group that is located at the specified index.  
   
 ```  
-LPCTSTR GetGroupName(int nGroupIndex) const;
-
- 
+LPCTSTR GetGroupName(int nGroupIndex) const;  
 ```  
   
 ### Parameters  
@@ -333,9 +331,7 @@ LPCTSTR GetGroupName(int nGroupIndex) const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual int GetGroupOffset() const;
-
- 
+virtual int GetGroupOffset() const;  
 ```  
   
 ### Return Value  
@@ -346,9 +342,7 @@ virtual int GetGroupOffset() const;
  Returns the number of items in a row of the ribbon gallery.  
   
 ```  
-int GetIconsInRow() const;
-
- 
+int GetIconsInRow() const;  
 ```  
   
 ### Return Value  
@@ -360,9 +354,7 @@ int GetIconsInRow() const;
  Returns the tooltip text that is associated with an item in the gallery.  
   
 ```  
-LPCTSTR GetItemToolTip(int nItemIndex) const;
-
- 
+LPCTSTR GetItemToolTip(int nItemIndex) const;  
 ```  
   
 ### Parameters  
@@ -394,9 +386,7 @@ static int GetLastSelectedItem(UINT uiCmdID);
  Returns the command ID of the current palette.  
   
 ```  
-int GetPaletteID() const;
-
- 
+int GetPaletteID() const;  
 ```  
   
 ### Return Value  
@@ -422,9 +412,7 @@ virtual CSize GetRegularSize(CDC* pDC);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetSelectedItem() const;
-
- 
+int GetSelectedItem() const;  
 ```  
   
 ### Return Value  
@@ -435,9 +423,7 @@ int GetSelectedItem() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL HasMenu() const;
-
- 
+virtual BOOL HasMenu() const;  
 ```  
   
 ### Return Value  
@@ -448,9 +434,7 @@ virtual BOOL HasMenu() const;
  Specifies whether the palette is contained in a gallery button.  
   
 ```  
-BOOL IsButtonMode() const;
-
- 
+BOOL IsButtonMode() const;  
 ```  
   
 ### Return Value  
@@ -462,9 +446,7 @@ BOOL IsButtonMode() const;
  Specifies whether menu resizing is enabled.  
   
 ```  
-BOOL IsMenuResizeEnabled() const;
-
- 
+BOOL IsMenuResizeEnabled() const;  
 ```  
   
 ### Return Value  
@@ -476,9 +458,7 @@ BOOL IsMenuResizeEnabled() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsMenuResizeVertical() const;
-
- 
+BOOL IsMenuResizeVertical() const;  
 ```  
   
 ### Return Value  
@@ -489,9 +469,7 @@ BOOL IsMenuResizeVertical() const;
  Specifies whether the side bar is enabled or disabled.  
   
 ```  
-BOOL IsMenuSideBar() const;
-
- 
+BOOL IsMenuSideBar() const;  
 ```  
   
 ### Return Value  
@@ -698,8 +676,7 @@ void SetItemToolTip(
  Attaches a palette to a ribbon gallery.  
   
 ```  
-void SetPalette(
-    CMFCToolBarImages& imagesPalette);
+void SetPalette(CMFCToolBarImages& imagesPalette);
 
  
 void SetPalette(

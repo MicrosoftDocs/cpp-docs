@@ -258,9 +258,7 @@ COleDataSource* GetDataSource();
  Call this function to get a pointer to the document that contains the item.  
   
 ```  
-COleServerDoc* GetDocument() const;
-
- 
+COleServerDoc* GetDocument() const;  
 ```  
   
 ### Return Value  
@@ -291,9 +289,7 @@ void GetEmbedSourceData(LPSTGMEDIUM lpStgMedium);
  Call this function to get the name of the item.  
   
 ```  
-const CString& GetItemName() const;
-
- 
+const CString& GetItemName() const;  
 ```  
   
 ### Return Value  
@@ -352,9 +348,7 @@ void GetObjectDescriptorData(
  Call this function to see if the OLE item is connected.  
   
 ```  
-BOOL IsConnected() const;
-
- 
+BOOL IsConnected() const;  
 ```  
   
 ### Return Value  
@@ -367,9 +361,7 @@ BOOL IsConnected() const;
  Call this function to see if the OLE item is a linked item.  
   
 ```  
-BOOL IsLinkedItem() const;
-
- 
+BOOL IsLinkedItem() const;  
 ```  
   
 ### Return Value  

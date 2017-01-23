@@ -119,9 +119,7 @@ void DrawToolIcon(
  Returns a string that contains the text of the command associated with the user tool.  
   
 ```  
-const CString& GetCommand() const;
-
- 
+const CString& GetCommand() const;  
 ```  
   
 ### Return Value  
@@ -131,9 +129,7 @@ const CString& GetCommand() const;
  Returns the command ID of the user tool.  
   
 ```  
-UINT GetCommandId() const;
-
- 
+UINT GetCommandId() const;  
 ```  
   
 ### Return Value  

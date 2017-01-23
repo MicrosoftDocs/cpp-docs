@@ -77,8 +77,8 @@ class CAnimationVariableChangeHandler : public CUIAnimationVariableChangeHandler
  Called when a value of an animation variable has changed.  
   
 ```  
-IFACEMETHOD(
-    OnValueChanged) (__in IUIAnimationStoryboard* storyboard,
+IFACEMETHOD(OnValueChanged) (
+    __in IUIAnimationStoryboard* storyboard,
     __in IUIAnimationVariable* variable,
     __in DOUBLE newValue,
     __in DOUBLE previousValue);

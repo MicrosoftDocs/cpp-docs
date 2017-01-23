@@ -105,9 +105,7 @@ CDateTimeCtrl();
  Closes the current date and time picker control.  
   
 ```  
-void CloseMonthCal() const;
-
- 
+void CloseMonthCal() const;  
 ```  
   
 ### Remarks  
@@ -166,12 +164,8 @@ virtual BOOL Create(
 ##  <a name="getdatetimepickerinfo"></a>  CDateTimeCtrl::GetDateTimePickerInfo  
  Retrieves information about the current date and time picker control.  
   
-```  
- 
-BOOL GetDateTimePickerInfo(
-LPDATETIMEPICKERINFO pDateTimePickerInfo) const;
-
- 
+```   
+BOOL GetDateTimePickerInfo(LPDATETIMEPICKERINFO pDateTimePickerInfo) const;  
 ```  
   
 ### Parameters  
@@ -200,9 +194,7 @@ LPDATETIMEPICKERINFO pDateTimePickerInfo) const;
  Retrieves the color for a given portion of the month calendar within the date and time picker control.  
   
 ```  
-COLORREF GetMonthCalColor(int iColor) const;
-
- 
+COLORREF GetMonthCalColor(int iColor) const;  
 ```  
   
 ### Parameters  
@@ -222,9 +214,7 @@ COLORREF GetMonthCalColor(int iColor) const;
  Retrieves the `CMonthCalCtrl` object associated with the date and time picker control.  
   
 ```  
-CMonthCalCtrl* GetMonthCalCtrl() const;
-
- 
+CMonthCalCtrl* GetMonthCalCtrl() const;  
 ```  
   
 ### Return Value  
@@ -240,9 +230,7 @@ CMonthCalCtrl* GetMonthCalCtrl() const;
  Gets the font currently used by the date and time picker control's month calendar control.  
   
 ```  
-CFont* GetMonthCalFont() const;
-
- 
+CFont* GetMonthCalFont() const;  
 ```  
   
 ### Return Value  
@@ -255,9 +243,7 @@ CFont* GetMonthCalFont() const;
  Gets the style of the drop-down month calendar control that is associated with the current date and time picker control.  
   
 ```  
-DWORD GetMonthCalStyle() const;
-
- 
+DWORD GetMonthCalStyle() const;  
 ```  
   
 ### Return Value  
@@ -272,15 +258,11 @@ DWORD GetMonthCalStyle() const;
 ```  
 DWORD GetRange(
     COleDateTime* pMinRange,  
-    COleDateTime* pMaxRange) const;
-
- 
- 
+    COleDateTime* pMaxRange) const;  
+  
 DWORD GetRange(
     CTime* pMinRange,  
-    CTime* pMaxRange) const;
-
- 
+    CTime* pMaxRange) const;  
 ```  
   
 ### Parameters  
@@ -311,17 +293,9 @@ DWORD GetRange(
  Retrieves the currently selected time from a date and time picker control and puts it in a specified `SYSTEMTIME` structure.  
   
 ```  
-BOOL GetTime(COleDateTime& timeDest) const;
-
- 
- 
-DWORD GetTime(CTime& timeDest) const;
-
- 
- 
-DWORD GetTime(LPSYSTEMTIME pTimeDest) const;
-
- 
+BOOL GetTime(COleDateTime& timeDest) const;  
+DWORD GetTime(CTime& timeDest) const;  
+DWORD GetTime(LPSYSTEMTIME pTimeDest) const;  
 ```  
   
 ### Parameters  
@@ -346,11 +320,7 @@ DWORD GetTime(LPSYSTEMTIME pTimeDest) const;
  Returns the ideal size of the date and time picker control that is required to display the current date or time.  
   
 ```  
- 
-BOOL GetIdealSize(
-LPSIZE psize) const;
-
- 
+BOOL GetIdealSize(LPSIZE psize) const;  
 ```  
   
 ### Parameters  
@@ -461,9 +431,7 @@ void SetMonthCalFont(
  Sets the style of the drop-down month calendar control that is associated with the current date and time picker control.  
   
 ```  
- 
-DWORD SetMonthCalStyle(
-DWORD dwStyle);
+DWORD SetMonthCalStyle(DWORD dwStyle);
 ```  
   
 ### Parameters  
@@ -522,12 +490,8 @@ BOOL SetRange(
  Sets the time in a date and time picker control.  
   
 ```  
-BOOL SetTime(const COleDateTime& timeNew);
-
- 
-BOOL SetTime(const CTime* pTimeNew);
-
- 
+BOOL SetTime(const COleDateTime& timeNew);  
+BOOL SetTime(const CTime* pTimeNew);  
 BOOL SetTime(LPSYSTEMTIME pTimeNew = NULL);
 ```  
   

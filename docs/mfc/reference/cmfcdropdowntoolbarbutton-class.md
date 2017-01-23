@@ -168,9 +168,7 @@ BOOL DropDownToolbar(CWnd* pWnd);
  Copies text from the toolbar button to a menu.  
   
 ```  
-virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
-
- 
+virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;  
 ```  
   
 ### Parameters  
@@ -189,9 +187,7 @@ virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
  Retrieves the drop-down toolbar that is associated with the button.  
   
 ```  
-CMFCToolBar* GetDropDownToolBar() const;
-
- 
+CMFCToolBar* GetDropDownToolBar() const;  
 ```  
   
 ### Return Value  
@@ -204,9 +200,7 @@ CMFCToolBar* GetDropDownToolBar() const;
  Determines whether the drop-down toolbar is currently open.  
   
 ```  
-BOOL IsDropDown() const;
-
- 
+BOOL IsDropDown() const;  
 ```  
   
 ### Return Value  
@@ -219,9 +213,7 @@ BOOL IsDropDown() const;
  Determines whether the button can be displayed with an extended border.  
   
 ```  
-virtual BOOL IsExtraSize() const;
-
- 
+virtual BOOL IsExtraSize() const;  
 ```  
   
 ### Return Value  

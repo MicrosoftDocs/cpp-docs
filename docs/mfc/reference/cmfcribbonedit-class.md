@@ -246,9 +246,7 @@ virtual CSize GetCompactSize(CDC* pDC);
  Retrieves the text in the text box.  
   
 ```  
-CString GetEditText() const;
-
- 
+CString GetEditText() const;  
 ```  
   
 ### Return Value  
@@ -276,9 +274,7 @@ virtual CSize GetIntermediateSize(CDC* pDC);
  Retrieves the alignment of the text in the text box.  
   
 ```  
-int GetTextAlign() const;
-
- 
+int GetTextAlign() const;  
 ```  
   
 ### Return Value  
@@ -299,9 +295,7 @@ int GetTextAlign() const;
  Retrieves the width, in pixels, of the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control.  
   
 ```  
-int GetWidth(BOOL bInFloatyMode = FALSE) const;
-
- 
+int GetWidth(BOOL bInFloatyMode = FALSE) const;  
 ```  
   
 ### Parameters  
@@ -317,9 +311,7 @@ int GetWidth(BOOL bInFloatyMode = FALSE) const;
  Indicates whether the display size for the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control can be compact.  
   
 ```  
-virtual BOOL HasCompactMode() const;
-
- 
+virtual BOOL HasCompactMode() const;  
 ```  
   
 ### Return Value  
@@ -332,9 +324,7 @@ virtual BOOL HasCompactMode() const;
  Indicates whether the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control has the focus.  
   
 ```  
-virtual BOOL HasFocus() const;
-
- 
+virtual BOOL HasFocus() const;  
 ```  
   
 ### Return Value  
@@ -346,9 +336,7 @@ virtual BOOL HasFocus() const;
  Indicates whether the display size for the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control can be large.  
   
 ```  
-virtual BOOL HasLargeMode() const;
-
- 
+virtual BOOL HasLargeMode() const;  
 ```  
   
 ### Return Value  
@@ -361,9 +349,7 @@ virtual BOOL HasLargeMode() const;
  Indicates whether the text box has a spin button.  
   
 ```  
-virtual BOOL HasSpinButtons() const;
-
- 
+virtual BOOL HasSpinButtons() const;  
 ```  
   
 ### Return Value  
@@ -375,9 +361,7 @@ virtual BOOL HasSpinButtons() const;
  Indicates whether the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control is highlighted.  
   
 ```  
-virtual BOOL IsHighlighted() const;
-
- 
+virtual BOOL IsHighlighted() const;  
 ```  
   
 ### Return Value  

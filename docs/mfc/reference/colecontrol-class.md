@@ -470,9 +470,8 @@ BOOL BoundPropertyRequestEdit(DISPID dispid);
   
 ```  
 virtual void ClientToParent(
-    LPCRECT lprcBounds, LPPOINT pPoint) const;
-
- 
+    LPCRECT lprcBounds, 
+    LPPOINT pPoint) const;  
 ```  
   
 ### Parameters  
@@ -1180,10 +1179,7 @@ virtual HRESULT GetClassID(LPCLSID pclsid) = 0;
  Retrieves the difference between the upper left corner of the control's rectangular area and the upper left corner of its client area.  
   
 ```  
-virtual void GetClientOffset(
-    long* pdxOffset, long* pdyOffset) const;
-
- 
+virtual void GetClientOffset(long* pdxOffset, long* pdyOffset) const;  
 ```  
   
 ### Parameters  
@@ -1200,9 +1196,7 @@ virtual void GetClientOffset(
  Retrieves the size of the control's client area.  
   
 ```  
-virtual void GetClientRect(LPRECT lpRect) const;
-
- 
+virtual void GetClientRect(LPRECT lpRect) const;  
 ```  
   
 ### Parameters  
@@ -1295,7 +1289,8 @@ void GetControlSize(
   
 ```  
 CDC* GetDC(
-    LPCRECT lprcRect = NULL, DWORD dwFlags = OLEDC_PAINTBKGND);
+    LPCRECT lprcRect = NULL,
+    DWORD dwFlags = OLEDC_PAINTBKGND);
 ```  
   
 ### Parameters  
@@ -1417,9 +1412,7 @@ OLE_HANDLE GetHwnd();
 ```  
 virtual void GetMessageString(
     UINT nID,  
-    CString& rMessage) const;
-
- 
+    CString& rMessage) const;  
 ```  
   
 ### Parameters  
@@ -1539,7 +1532,8 @@ virtual IDropTarget* GetWindowlessDropTarget();
   
 ```  
 void InitializeIIDs(
-    const IID* piidPrimary, const IID* piidEvents);
+    const IID* piidPrimary,
+    const IID* piidEvents);
 ```  
   
 ### Parameters  
@@ -1624,8 +1618,7 @@ void InvalidateControl(
  Invalidates the container window's client area within the given region.  
   
 ```  
-void InvalidateRgn(
-    CRgn* pRgn, BOOL bErase = TRUE);
+void InvalidateRgn(CRgn* pRgn, BOOL bErase = TRUE);
 ```  
   
 ### Parameters  
@@ -1719,8 +1712,7 @@ virtual BOOL IsSubclassedControl();
  Resets any previous data loaded asynchronously and initiates a new loading of the control's asynchronous property.  
   
 ```  
-void Load(
-    LPCTSTR strNewPath, CDataPathProperty& prop);
+void Load(LPCTSTR strNewPath, CDataPathProperty& prop);
 ```  
   
 ### Parameters  
@@ -2237,8 +2229,7 @@ virtual BOOL OnGetViewExtent(
  Called by the framework in response to a container's **IViewObjectEx::GetRect** request.  
   
 ```  
-virtual BOOL OnGetViewRect(
-    DWORD dwAspect, LPRECTL pRect);
+virtual BOOL OnGetViewRect(DWORD dwAspect, LPRECTL pRect);
 ```  
   
 ### Parameters  
@@ -2807,9 +2798,7 @@ virtual BOOL OnWindowlessMessage(
 virtual UINT ParentToClient(
     LPCRECT lprcBounds,
     LPPOINT pPoint,
-    BOOL bHitTest = FALSE) const;
-
- 
+    BOOL bHitTest = FALSE) const;  
 ```  
   
 ### Parameters  
@@ -3177,8 +3166,7 @@ CWnd* SetCapture();
  Sets the size of the OLE control window and notifies the container that the control site is changing.  
   
 ```  
-BOOL SetControlSize(
-    int cx, int cy);
+BOOL SetControlSize(int cx, int cy);
 ```  
   
 ### Parameters  

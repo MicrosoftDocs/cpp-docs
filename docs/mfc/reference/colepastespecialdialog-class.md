@@ -267,9 +267,7 @@ virtual INT_PTR DoModal();
  Determines if the user chose to display the selected item as an icon.  
   
 ```  
-DVASPECT GetDrawAspect() const;
-
- 
+DVASPECT GetDrawAspect() const;  
 ```  
   
 ### Return Value  
@@ -288,9 +286,7 @@ DVASPECT GetDrawAspect() const;
  Gets the metafile associated with the item selected by the user.  
   
 ```  
-HGLOBAL GetIconicMetafile() const;
-
- 
+HGLOBAL GetIconicMetafile() const;  
 ```  
   
 ### Return Value  
@@ -300,9 +296,7 @@ HGLOBAL GetIconicMetafile() const;
  Gets the index value associated with the entry the user selected.  
   
 ```  
-int GetPasteIndex() const;
-
- 
+int GetPasteIndex() const;  
 ```  
   
 ### Return Value  
@@ -315,9 +309,7 @@ int GetPasteIndex() const;
  Determines the type of selection the user made.  
   
 ```  
-UINT GetSelectionType() const;
-
- 
+UINT GetSelectionType() const;  
 ```  
   
 ### Return Value  

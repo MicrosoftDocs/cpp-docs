@@ -112,9 +112,7 @@ CMFCRibbonSlider(
  Returns the current position of the slider control.  
   
 ```  
-int GetPos() const;
-
- 
+int GetPos() const;  
 ```  
   
 ### Return Value  
@@ -124,9 +122,7 @@ int GetPos() const;
  Obtains the maximum increment of the slider that the slider can travel on the slider control.  
   
 ```  
-int GetRangeMax() const;
-
- 
+int GetRangeMax() const;  
 ```  
   
 ### Return Value  
@@ -136,9 +132,7 @@ int GetRangeMax() const;
  Returns the minimum increment that the slider can travel on the slider control.  
   
 ```  
-int GetRangeMin() const;
-
- 
+int GetRangeMin() const;  
 ```  
   
 ### Return Value  
@@ -162,9 +156,7 @@ virtual CSize GetRegularSize(CDC* pDC);
  Obtain the zoom increment for the slider control.  
   
 ```  
-int GetZoomIncrement() const;
-
- 
+int GetZoomIncrement() const;  
 ```  
   
 ### Return Value  
@@ -174,9 +166,7 @@ int GetZoomIncrement() const;
  Specifies whether the slider has zoom buttons.  
   
 ```  
-BOOL HasZoomButtons() const;
-
- 
+BOOL HasZoomButtons() const;  
 ```  
   
 ### Return Value  

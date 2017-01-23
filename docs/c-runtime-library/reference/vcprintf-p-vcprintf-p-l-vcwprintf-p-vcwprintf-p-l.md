@@ -148,8 +148,7 @@ int _vcwprintf_p_l(
 ## Example  
   
 ```  
-  
-      // crt_vcprintf_p.c  
+// crt_vcprintf_p.c  
 // compile with: /c  
 #include <conio.h>  
 #include <stdarg.h>  
@@ -157,9 +156,11 @@ int _vcwprintf_p_l(
 // An error formatting function that's used to print to the console.  
 int eprintf(const char* format, ...)  
 {  
-  va_list args;  
-  va_start(args, format);  
-  return _vcprintf_p(format, args);  
+   va_list args;  
+   va_start(args, format);  
+   int result = _vcprintf_p(format, args);  
+   va_end(args);  
+   return result;
 }  
   
 int main()  

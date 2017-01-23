@@ -152,9 +152,7 @@ void AddControl(
  Called by the framework during resizing operations to determine whether fewer Outlook bar tab page buttons can be displayed than are currently visible.  
   
 ```  
-virtual BOOL CanShowFewerPageButtons() const;
-
- 
+virtual BOOL CanShowFewerPageButtons() const;  
 ```  
   
 ### Return Value  
@@ -167,9 +165,7 @@ virtual BOOL CanShowFewerPageButtons() const;
  Called by the framework during resizing operations to determine whether more Outlook bar tab page buttons can be displayed than are currently visible.  
   
 ```  
-virtual BOOL CanShowMorePageButtons() const;
-
- 
+virtual BOOL CanShowMorePageButtons() const;  
 ```  
   
 ### Return Value  
@@ -261,9 +257,7 @@ void EnableScrollButtons(
  Returns the border size of the Outlook tab control.  
   
 ```  
-int GetBorderSize() const;
-
- 
+int GetBorderSize() const;  
 ```  
   
 ### Return Value  
@@ -273,9 +267,7 @@ int GetBorderSize() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetVisiblePageButtons() const;
-
- 
+int GetVisiblePageButtons() const;  
 ```  
   
 ### Return Value  
@@ -299,9 +291,7 @@ static BOOL IsAnimation();
  Determines whether the Outlook bar tab control is in a mode that emulates Microsoft Outlook 2003.  
   
 ```  
-BOOL IsMode2003() const;
-
- 
+BOOL IsMode2003() const;  
 ```  
   
 ### Return Value  
@@ -409,9 +399,7 @@ void SetPageButtonTextAlign(
 BOOL SetToolbarImageList(
     UINT uiID,  
     int cx,  
-    COLORREF clrTransp=RGB(255,
-    0,
-    255));
+    COLORREF clrTransp=RGB(255, 0, 255));
 ```  
   
 ### Parameters  

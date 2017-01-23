@@ -122,9 +122,7 @@ BOOL AddView(
  Returns the command that is executed when the user double-clicks inside the provided view.  
   
 ```  
-UINT GetViewDblClickCommand(int iId) const;
-
- 
+UINT GetViewDblClickCommand(int iId) const;  
 ```  
   
 ### Parameters  
@@ -138,9 +136,7 @@ UINT GetViewDblClickCommand(int iId) const;
  Retrieves the icon associated with a view ID.  
   
 ```  
-UINT GetViewIconId(int iViewId) const;
-
- 
+UINT GetViewIconId(int iViewId) const;  
 ```  
   
 ### Parameters  
@@ -157,9 +153,7 @@ UINT GetViewIconId(int iViewId) const;
  Retrieves the view ID associated with a view name.  
   
 ```  
-int GetViewIdByName(LPCTSTR lpszName) const;
-
- 
+int GetViewIdByName(LPCTSTR lpszName) const;  
 ```  
   
 ### Parameters  
@@ -176,9 +170,7 @@ int GetViewIdByName(LPCTSTR lpszName) const;
  Retrieves a list of all the registered view names.  
   
 ```  
-void GetViewNames(CStringList& listOfNames) const;
-
- 
+void GetViewNames(CStringList& listOfNames) const;  
 ```  
   
 ### Parameters  

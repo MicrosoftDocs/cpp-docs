@@ -650,9 +650,7 @@ virtual void FixupVirtualRects();
 virtual CPaneFrameWnd* FrameFromPoint(
     CPoint pt,  
     CPaneFrameWnd* pFrameToExclude,  
-    BOOL bFloatMultiOnly) const;
-
- 
+    BOOL bFloatMultiOnly) const;  
 ```  
   
 ### Parameters  
@@ -674,9 +672,7 @@ virtual CPaneFrameWnd* FrameFromPoint(
 ```  
 CRect GetClientAreaBounds() const;
 
- 
-void GetClientAreaBounds(CRect& rcClient);
-```  
+void GetClientAreaBounds(CRect& rcClient);```  
   
 ### Parameters  
  [out] `rcClient`  
@@ -708,9 +704,7 @@ static AFX_DOCK_TYPE GetDockingMode();
  Gets a pointer to the parent window frame.  
   
 ```  
-CFrameWnd* GetDockSiteFrameWnd() const;
-
- 
+CFrameWnd* GetDockSiteFrameWnd() const;  
 ```  
   
 ### Return Value  
@@ -720,9 +714,7 @@ CFrameWnd* GetDockSiteFrameWnd() const;
  Returns the enabled alignment of the panes.  
   
 ```  
-DWORD GetEnabledAutoHideAlignment() const;
-
- 
+DWORD GetEnabledAutoHideAlignment() const;  
 ```  
   
 ### Return Value  
@@ -735,9 +727,7 @@ DWORD GetEnabledAutoHideAlignment() const;
  Gets a list of miniframes.  
   
 ```  
-const CObList& GetMiniFrames() const;
-
- 
+const CObList& GetMiniFrames() const;  
 ```  
   
 ### Return Value  
@@ -747,9 +737,7 @@ const CObList& GetMiniFrames() const;
  Gets a rectangle that contains the outer edges of the frame.  
   
 ```  
-CRect GetOuterEdgeBounds() const;
-
- 
+CRect GetOuterEdgeBounds() const;  
 ```  
   
 ### Return Value  
@@ -798,9 +786,7 @@ CSmartDockingManager* GetSmartDockingManager();
  Retrieves a pointer to the smart docking manager.  
   
 ```  
-CSmartDockingManager* GetSmartDockingManagerPermanent() const;
-
- 
+CSmartDockingManager* GetSmartDockingManagerPermanent() const;  
 ```  
   
 ### Return Value  
@@ -900,9 +886,7 @@ static BOOL IsDockSiteMenu();
  Determines if the layouts of all panes are adjusted.  
   
 ```  
-BOOL IsInAdjustLayout() const;
-
- 
+BOOL IsInAdjustLayout() const;  
 ```  
   
 ### Return Value  
@@ -912,9 +896,7 @@ BOOL IsInAdjustLayout() const;
  Specifies whether the docking manager is in OLE container mode.  
   
 ```  
-BOOL IsOLEContainerMode() const;
-
- 
+BOOL IsOLEContainerMode() const;  
 ```  
   
 ### Return Value  
@@ -930,9 +912,7 @@ BOOL IsOLEContainerMode() const;
 BOOL IsPointNearDockSite(
     CPoint point,  
     DWORD& dwBarAlignment,  
-    BOOL& bOuterEdge) const;
-
- 
+    BOOL& bOuterEdge) const;  
 ```  
   
 ### Parameters  
@@ -952,9 +932,7 @@ BOOL IsPointNearDockSite(
  Determines if the print preview mode is set.  
   
 ```  
-BOOL IsPrintPreviewValid() const;
-
- 
+BOOL IsPrintPreviewValid() const;  
 ```  
   
 ### Return Value  
@@ -1099,17 +1077,14 @@ virtual CBasePane* PaneFromPoint(
     bool bExactBar = false,  
     CRuntimeClass* pRTCBarType = NULL,  
     BOOL bCheckVisibility = FALSE,  
-    const CBasePane* pBarToIgnore = NULL) const;
-
- 
+    const CBasePane* pBarToIgnore = NULL) const;  
+  
 virtual CBasePane* PaneFromPoint(
     CPoint point,  
     int nSensitivity,  
     DWORD& dwAlignment,  
     CRuntimeClass* pRTCBarType = NULL,  
-    const CBasePane* pBarToIgnore = NULL) const;
-
- 
+    const CBasePane* pBarToIgnore = NULL) const;  
 ```  
   
 ### Parameters  

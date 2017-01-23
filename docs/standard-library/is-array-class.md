@@ -87,7 +87,7 @@ is_array<int[5]> == true
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

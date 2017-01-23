@@ -160,9 +160,7 @@ virtual BOOL Create(
  This member function allows direct access to the underlying common control.  
   
 ```  
-CReBarCtrl& GetReBarCtrl() const;
-
- 
+CReBarCtrl& GetReBarCtrl() const;  
 ```  
   
 ### Return Value  

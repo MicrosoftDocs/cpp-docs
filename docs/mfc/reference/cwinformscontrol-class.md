@@ -169,9 +169,7 @@ CWinFormsControl();
  Retrieves a pointer to the Windows Forms control.  
   
 ```  
-inline TManagedControl^ GetControl() const;
-
- 
+inline TManagedControl^ GetControl() const;  
 ```  
   
 ### Return Value  
@@ -184,9 +182,7 @@ inline TManagedControl^ GetControl() const;
  Retrieves a handle to the Windows Forms control.  
   
 ```  
-inline HWND GetControlHandle() const;
-
- 
+inline HWND GetControlHandle() const;  
 ```  
   
 ### Return Value  
@@ -199,9 +195,7 @@ inline HWND GetControlHandle() const;
  Replaces [CWinFormsControl::GetControl](#getcontrol) in expressions.  
   
 ```  
-inline TManagedControl^  operator->() const;
-
- 
+inline TManagedControl^  operator->() const;  
 ```  
   
 ### Remarks  
@@ -213,9 +207,7 @@ inline TManagedControl^  operator->() const;
  Casts a type as a pointer to a Windows Forms control.  
   
 ```  
-inline operator TManagedControl^() const;
-
- 
+inline operator TManagedControl^() const;  
 ```  
   
 ### Remarks  

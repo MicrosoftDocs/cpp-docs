@@ -48,8 +48,9 @@ This class provides methods for manipulating a window that hosts an ActiveX cont
 ## Syntax  
   
 ```
-template <class TBase = CWindow>  
-class CAxWindow2T : public CAxWindowT<TBase>
+template <class TBase = CWindow>
+    class CAxWindow2T :
+    public CAxWindowT<TBase>
 ```  
   
 #### Parameters  
@@ -144,8 +145,8 @@ HRESULT CreateControlLic(
     DWORD dwResID,
     IStream* pStream = NULL,
     IUnknown** ppUnkContainer = NULL,
-    BSTR bstrLicKey = NULL);  
-  
+    BSTR bstrLicKey = NULL);
+
 HRESULT CreateControlLic(
     LPCOLESTR lpszName,
     IStream* pStream = NULL,
@@ -174,9 +175,9 @@ HRESULT CreateControlLicEx(
     IUnknown** ppUnkControl = NULL,
     REFIID iidSink = IID_NULL,
     IUnknown* punkSink = NULL,
-    BSTR bstrLicKey = NULL);  
-  
-HRESULT CreateControlLicEx(
+    BSTR bstrLicKey = NULL);
+
+    HRESULT CreateControlLicEx(
     DWORD dwResID,
     IStream* pStream = NULL,
     IUnknown** ppUnkContainer = NULL,
@@ -220,11 +221,3 @@ CAxWindow2T<TBase>& operator= (HWND hWnd);
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)   
  [Control Containment FAQ](../../atl/atl-control-containment-faq.md)
-
-
-
-
-
-
-
-

@@ -109,8 +109,9 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
  Called when a status of animation manager has changed.  
   
 ```  
-IFACEMETHOD(
-    OnManagerStatusChanged)(UI_ANIMATION_MANAGER_STATUS newStatus,UI_ANIMATION_MANAGER_STATUS previousStatus);
+IFACEMETHOD(OnManagerStatusChanged)(
+  UI_ANIMATION_MANAGER_STATUS newStatus,
+  UI_ANIMATION_MANAGER_STATUS previousStatus);
 ```  
   
 ### Parameters  

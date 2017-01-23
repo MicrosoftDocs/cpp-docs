@@ -70,22 +70,10 @@ class CD2DPointU : public D2D1_POINT_2U;
  Constructs a CD2DPointU object from CPoint object.  
   
 ```  
-CD2DPointU(
-    const CPoint& pt);
-
- 
-CD2DPointU(
-    const D2D1_POINT_2U& pt);
-
- 
-CD2DPointU(
-    const D2D1_POINT_2U* pt);
-
- 
-CD2DPointU(
-    UINT32 uX = 0,  
-    UINT32 uY = 0);
-```  
+CD2DPointU(const CPoint& pt);  
+CD2DPointU(const D2D1_POINT_2U& pt);  
+  CD2DPointU(const D2D1_POINT_2U* pt);  
+CD2DPointU(UINT32 uX = 0, UINT32 uY = 0);```  
   
 ### Parameters  
  `pt`  

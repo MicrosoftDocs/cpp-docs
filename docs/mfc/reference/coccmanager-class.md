@@ -192,11 +192,8 @@ virtual BOOL IsDialogMessage(
  Call this function to determine if the specified control is a label control.  
   
 ```  
-static BOOL AFX_CDECL IsLabelControl(CWnd* pWnd);
-
- 
-static BOOL AFX_CDECL IsLabelControl(COleControlSiteOrWnd* pWnd);
-```  
+static BOOL AFX_CDECL IsLabelControl(CWnd* pWnd);  
+static BOOL AFX_CDECL IsLabelControl(COleControlSiteOrWnd* pWnd);```  
   
 ### Parameters  
  `pWnd`  

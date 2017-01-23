@@ -80,11 +80,8 @@ class CMFCAcceleratorKey : public CObject
  Constructs a [CMFCAcceleratorKey](../../mfc/reference/cmfcacceleratorkey-class.md) object.  
   
 ```  
-CMFCAcceleratorKey();
-
- 
-CMFCAcceleratorKey(LPACCEL lpAccel);
-```  
+CMFCAcceleratorKey();  
+CMFCAcceleratorKey(LPACCEL lpAccel);```  
   
 ### Parameters  
  [in] `lpAccel`  
@@ -97,9 +94,7 @@ CMFCAcceleratorKey(LPACCEL lpAccel);
  Translates the ACCEL structure to its associated string value.  
   
 ```  
-void Format(CString& str) const;
-
- 
+void Format(CString& str) const;  
 ```  
   
 ### Parameters  

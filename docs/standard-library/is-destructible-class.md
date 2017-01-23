@@ -58,7 +58,7 @@ struct is_destructible;
  An instance of the type predicate holds true if the type `T` is a destructible type, otherwise it holds false. Destructible types are reference types, object types, and types where for some type `U` equal to `remove_all_extents_t<T>` the unevaluated operand `std::declval<U&>.~U()` is well-formed. Other types, including incomplete types, `void`, and function types, are not destructible types.  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

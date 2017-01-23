@@ -210,9 +210,7 @@ virtual CDockablePane* AttachToTabWnd(
     CDockablePane* pTabControlBarAttachTo,  
     AFX_DOCK_METHOD dockMethod,  
     BOOL bSetActive= TRUE,  
-    CDockablePane** ppTabbedControlBar = NULL);
-
- 
+    CDockablePane** ppTabbedControlBar = NULL);  
 ```  
   
 ### Parameters  
@@ -275,9 +273,7 @@ virtual CSize CalcFixedLayout(
  Determines whether the specified mini-frame can be docked to the pane.  
   
 ```  
-virtual BOOL CanAcceptMiniFrame(CPaneFrameWnd* pMiniFrame) const;
-
- 
+virtual BOOL CanAcceptMiniFrame(CPaneFrameWnd* pMiniFrame) const;  
 ```  
   
 ### Parameters  
@@ -291,9 +287,7 @@ virtual BOOL CanAcceptMiniFrame(CPaneFrameWnd* pMiniFrame) const;
  Determines whether another pane can be docked to the current pane.  
   
 ```  
-virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
-
- 
+virtual BOOL CanAcceptPane(const CBasePane* pBar) const;  
 ```  
   
 ### Parameters  
@@ -314,9 +308,7 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
  Determines whether the pane can auto-hide.  
   
 ```  
-virtual BOOL CanAutoHide() const;
-
- 
+virtual BOOL CanAutoHide() const;  
 ```  
   
 ### Return Value  
@@ -335,9 +327,7 @@ virtual BOOL CanAutoHide() const;
  Determines whether the current pane can be docked to another pane.  
   
 ```  
-virtual BOOL CanBeAttached() const;
-
- 
+virtual BOOL CanBeAttached() const;  
 ```  
   
 ### Return Value  
@@ -747,9 +737,7 @@ virtual void EnableGripper(BOOL bEnable);
  Specifies the position of the pane when in auto-hide mode.  
   
 ```  
-CRect GetAHRestoredRect() const;
-
- 
+CRect GetAHRestoredRect() const;  
 ```  
   
 ### Return Value  
@@ -761,9 +749,7 @@ CRect GetAHRestoredRect() const;
  Retrieves the auto-hide slide mode for the pane.  
   
 ```  
-virtual UINT GetAHSlideMode() const;
-
- 
+virtual UINT GetAHSlideMode() const;  
 ```  
   
 ### Return Value  
@@ -775,9 +761,7 @@ virtual UINT GetAHSlideMode() const;
  Returns the height, in pixels, of the current caption.  
   
 ```  
-virtual int GetCaptionHeight() const;
-
- 
+virtual int GetCaptionHeight() const;  
 ```  
   
 ### Return Value  
@@ -790,9 +774,7 @@ virtual int GetCaptionHeight() const;
  Returns the default pane divider for the pane's container.  
   
 ```  
-CPaneDivider* GetDefaultPaneDivider() const;
-
- 
+CPaneDivider* GetDefaultPaneDivider() const;  
 ```  
   
 ### Return Value  
@@ -848,9 +830,7 @@ static const CSize& GetDragSensitivity();
  Retrieves the percentage of space that a pane occupies in its container ( [CPaneContainer Class](../../mfc/reference/cpanecontainer-class.md)).  
   
 ```  
-int GetLastPercentInPaneContainer() const;
-
- 
+int GetLastPercentInPaneContainer() const;  
 ```  
   
 ### Return Value  
@@ -865,9 +845,7 @@ int GetLastPercentInPaneContainer() const;
 ```  
 virtual void GetTabArea(
     CRect& rectTabAreaTop,  
-    CRect& rectTabAreaBottom) const;
-
- 
+    CRect& rectTabAreaBottom) const;  
 ```  
   
 ### Parameters  
@@ -884,9 +862,7 @@ virtual void GetTabArea(
  Returns the runtime class information about a tabbed window that is created when another pane docks to the current pane.  
   
 ```  
-CRuntimeClass* GetTabbedPaneRTC() const;
-
- 
+CRuntimeClass* GetTabbedPaneRTC() const;  
 ```  
   
 ### Return Value  
@@ -901,9 +877,7 @@ CRuntimeClass* GetTabbedPaneRTC() const;
  Specifies whether a docking pane can be switched to autohide mode.  
   
 ```  
-virtual BOOL HasAutoHideMode() const;
-
- 
+virtual BOOL HasAutoHideMode() const;  
 ```  
   
 ### Return Value  
@@ -945,9 +919,7 @@ virtual int HitTest(
  Indicates whether the docking pane and all other panes in the container can be switched to autohide mode.  
   
 ```  
-virtual BOOL IsAutohideAllEnabled() const;
-
- 
+virtual BOOL IsAutohideAllEnabled() const;  
 ```  
   
 ### Return Value  
@@ -962,9 +934,7 @@ virtual BOOL IsAutohideAllEnabled() const;
  Determines whether a pane is in autohide mode.  
   
 ```  
-virtual BOOL IsAutoHideMode() const;
-
- 
+virtual BOOL IsAutoHideMode() const;  
 ```  
   
 ### Return Value  
@@ -974,9 +944,7 @@ virtual BOOL IsAutoHideMode() const;
  Determines whether the current pane is docked.  
   
 ```  
-virtual BOOL IsDocked() const;
-
- 
+virtual BOOL IsDocked() const;  
 ```  
   
 ### Return Value  
@@ -989,9 +957,7 @@ virtual BOOL IsDocked() const;
  Determines the behavior of a pane that is in autohide mode if it is shown (or hidden) by calling [CDockablePane::ShowPane](#showpane).  
   
 ```  
-virtual BOOL IsHideInAutoHideMode() const;
-
- 
+virtual BOOL IsHideInAutoHideMode() const;  
 ```  
   
 ### Return Value  
@@ -1008,9 +974,7 @@ virtual BOOL IsHideInAutoHideMode() const;
  Specifies whether the pane is in a multi-pane frame window ( [CMultiPaneFrameWnd Class](../../mfc/reference/cmultipaneframewnd-class.md)).  
   
 ```  
-virtual BOOL IsInFloatingMultiPaneFrameWnd() const;
-
- 
+virtual BOOL IsInFloatingMultiPaneFrameWnd() const;  
 ```  
   
 ### Return Value  
@@ -1022,9 +986,7 @@ virtual BOOL IsInFloatingMultiPaneFrameWnd() const;
  Specifies whether the pane is resizable.  
   
 ```  
-virtual BOOL IsResizable() const;
-
- 
+virtual BOOL IsResizable() const;  
 ```  
   
 ### Return Value  
@@ -1039,9 +1001,7 @@ virtual BOOL IsResizable() const;
  Specifies whether tabs are located at the top or bottom of the pane.  
   
 ```  
-virtual BOOL IsTabLocationBottom() const;
-
- 
+virtual BOOL IsTabLocationBottom() const;  
 ```  
   
 ### Return Value  
@@ -1054,9 +1014,7 @@ virtual BOOL IsTabLocationBottom() const;
  Specifies whether a pane is being moved by the user.  
   
 ```  
-BOOL IsTracked() const;
-
- 
+BOOL IsTracked() const;  
 ```  
   
 ### Return Value  
@@ -1066,9 +1024,7 @@ BOOL IsTracked() const;
  Determines whether the current pane is visible.  
   
 ```  
-virtual BOOL IsVisible() const;
-
- 
+virtual BOOL IsVisible() const;  
 ```  
   
 ### Return Value  

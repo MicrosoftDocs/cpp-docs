@@ -42,7 +42,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Visual C++ in Visual Studio
-The [!INCLUDE[vcprvc](build/includes/vcprvc_md.md)] programming language and development tools help you develop native Universal Windows apps, native desktop and server applications, cross-platform libraries that run on Android and iOS as well as Windows, and managed apps that run on the .NET Framework.  
+The Visual Studio 2017 programming language and development tools help you develop native Universal Windows apps, native desktop and server applications, cross-platform libraries that run on Android and iOS as well as Windows, and managed apps that run on the .NET Framework.  
   
  **Who is this documentation for?**  
   
@@ -57,9 +57,12 @@ The [!INCLUDE[vcprvc](build/includes/vcprvc_md.md)] programming language and dev
 ## General Information about Visual C++  
  [What's New for Visual C++](what-s-new-for-visual-cpp-in-visual-studio.md)  
  Find out what’s new in Visual C++.  
-  
+
+ [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md) 
+ Learn about C++ conformance improvements in Visual Studio 2017. 
+
  [Visual C++ change history 2003 - 2015](porting/visual-cpp-change-history-2003-2015.md)  
- Learn about the breaking changes in this version.  
+ Learn about the breaking changes in previous versions.  
   
  [Welcome Back to C++](cpp/welcome-back-to-cpp-modern-cpp.md)  
  Learn more about modern C++ programming techniques based on C++11 and C++14 that enable you to write fast, safe code and avoid many of the pitfalls of C-style programming.  
@@ -68,7 +71,7 @@ The [!INCLUDE[vcprvc](build/includes/vcprvc_md.md)] programming language and dev
  Learn how to create effective error reports against the Visual C++ toolset (compiler, linker, and other tools), and ways to submit your report.  
   
  [Visual C++ Porting and Upgrading Guide](porting/visual-cpp-porting-and-upgrading-guide.md)  
- Guidance for porting code and upgrading projects to Visual C++ in [!INCLUDE[vs_dev14](ide/includes/vs_dev14_md.md)], including porting C++ code to Windows 10 and the Universal Windows Platform.  
+ Guidance for porting code and upgrading projects to Visual C++ in Visual Studio 2017, including porting C++ code to Windows 10 and the Universal Windows Platform.  
   
  [Support For C++11/14/17 Features (Modern C++)](cpp/support-for-cpp11-14-17-features-modern-cpp.md)  
  Learn about support for C++11 and C++14 features in Visual C++.  

@@ -31,7 +31,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Use Existing C++ Code in a Universal Windows Platform App
-This topic contains a discussion and procedures for porting C++ libraries (DLLs and static libraries) to the Universal Windows Platform (UWP), which is a necessary part of creating a Windows 10 UI layer that works with your existing classic Win32 C++ code or standard, cross-platform C++ code. There are several ways to use existing C++ code in a Universal Windows App.  
+Perhaps the easiest way to get your desktop program running in the UWP environment is to use the Desktop Bridge technologies. These include the Desktop App Converter, which will package your existing application as a UWP app with no code changes required. For more information, see [Bring your desktop app to the Universal Windows Platform (UWP) with the Desktop Bridge](https://msdn.microsoft.com/windows/uwp/porting/desktop-to-uwp-root).
+
+The rest of this topic discusses how to port C++ libraries (DLLs and static libraries) to the Universal Windows Platform (UWP). You might want to do this so that your core C++ logic can be used with multiple UWP apps. 
   
  UWP Apps run in a protected environment, and as a result, many Win32, COM, and CRT API calls that might compromise the security of the platform are not allowed. The compiler can detect such calls and generate an error, if the /ZW option is used. You can use the App Certification Kit on your application to detect code that calls forbidden APIs. See [Using the App Certification Kit](https://msdn.microsoft.com/library/windows/apps/hh694081.aspx).  
   
@@ -41,7 +43,7 @@ This topic contains a discussion and procedures for porting C++ libraries (DLLs 
   
  If you have source code for the DLL or static library, you can recompile with /ZW as a UWP project. If you do that, you can add a reference using the Solution Explorer, and use it in C++ UWP apps. In the case of a DLL, you link with the export library.  
   
- To expose functionality to callers in other languages, you can convert the library into a Windows Runtime Component. Windows Runtime Components differ from ordinary DLLs in that they include metadata in the form of .winmd files which describe the contents in a way that .NET and JavaScript consumers require. To expose API elements to other languages, you can add C++/CX constructs, such as ref classes, and make them public, or use the [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).  
+ To expose functionality to callers in other languages, you can convert the library into a Windows Runtime Component. Windows Runtime Components differ from ordinary DLLs in that they include metadata in the form of .winmd files which describe the contents in a way that .NET and JavaScript consumers require. To expose API elements to other languages, you can add C++/CX constructs, such as ref classes, and make them public, or use the [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).  In Windows 10 and later, you can use the [C++/WinRT library](https://github.com/microsoft/cppwinrt) instead of C++/CX. 
   
  The preceding discussion doesn't apply to the case of COM components, which must be handled differently. If you have a COM server in an EXE or DLL, you can use it in a Universal Windows Project as long as you package it as a [registration-free COM component](https://msdn.microsoft.com/library/dd408052.aspx), add it to your project as a Content file, and instantiate it using [CoCreateInstanceFromApp](https://msdn.microsoft.com/library/windows/apps/hh404137.aspx). See [Using Free-COM DLL in Windows Store C++ Project](http://blogs.msdn.com/b/win8devsupport/archive/2013/05/20/using-free-com-dll-in-windows-store-c-project.aspx).  
   
@@ -91,23 +93,23 @@ This topic contains a discussion and procedures for porting C++ libraries (DLLs 
   
     class Giraffe  
     {  
-    int id;  
-        Giraffe(int id_in);  
-    friend class GiraffeFactory;  
+        int id;  
+            Giraffe(int id_in);  
+        friend class GiraffeFactory;  
   
     public:  
-    GIRAFFE_API int GetID();  
+        GIRAFFE_API int GetID();  
     };  
   
     class GiraffeFactory  
     {  
-    static int nextID;  
-  
+        static int nextID;  
+    
     public:  
-    GIRAFFE_API GiraffeFactory();  
-    GIRAFFE_API static int GetNextID();  
-    GIRAFFE_API static Giraffe* Create();  
-    };  
+        GIRAFFE_API GiraffeFactory();  
+        GIRAFFE_API static int GetNextID();  
+        GIRAFFE_API static Giraffe* Create();  
+   };  
     ```  
   
      And the following code file:  
@@ -123,24 +125,24 @@ This topic contains a discussion and procedures for porting C++ libraries (DLLs 
   
     int Giraffe::GetID()  
     {  
-    return id;  
+      return id;  
     }  
   
     int GiraffeFactory::nextID = 0;  
   
     GiraffeFactory::GiraffeFactory()  
     {  
-    nextID = 0;  
+        nextID = 0;  
     }  
   
     int GiraffeFactory::GetNextID()  
     {  
-    return nextID;  
+        return nextID;  
     }  
   
     Giraffe* GiraffeFactory::Create()  
     {  
-    return new Giraffe(nextID++);  
+        return new Giraffe(nextID++);  
     }  
   
     int giraffeFunction();  
@@ -195,10 +197,10 @@ This topic contains a discussion and procedures for porting C++ libraries (DLLs 
     ```  
     MainPage::MainPage()  
     {  
-    InitializeComponent();  
-    GiraffeFactory gf;  
-    Giraffe* g = gf.Create();  
-    int id = g->GetID();  
+        InitializeComponent();  
+        GiraffeFactory gf;  
+        Giraffe* g = gf.Create();  
+        int id = g->GetID();  
     }  
   
     ```  
@@ -233,7 +235,7 @@ LNK4264: archiving object file compiled with /ZW into a static library; note tha
   
 2.  Close the project.  
   
-3.  In the Windows File Explorer, locate the project. By default, Visual Studio uses the Visual Studio 2015\Projects folder in your Documents folder. Locate the C++ library project that contains the code you want to port. Copy the source files (header files, code files, and any other resources, including in subdirectories) from your C++ library project, and paste them into the project folder, making sure to preserve the same folder structure.  
+3.  In the Windows File Explorer, locate the project. By default, Visual Studio uses the Visual Studio 2017\Projects folder in your Documents folder. Locate the C++ library project that contains the code you want to port. Copy the source files (header files, code files, and any other resources, including in subdirectories) from your C++ library project, and paste them into the project folder, making sure to preserve the same folder structure.  
   
 4.  Reopen the Windows Runtime Component project, and open the shortcut menu for the project node in **Solution Explorer**, and choose **Add, Existing Item**.  
   

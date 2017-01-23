@@ -166,9 +166,7 @@ ID2D1Mesh* Get();
  Checks resource validity  
   
 ```  
-virtual BOOL IsValid() const;
-
- 
+virtual BOOL IsValid() const;  
 ```  
   
 ### Return Value  

@@ -538,7 +538,7 @@ HRESULT STDMETHODCALLTYPE get_Window(LONG_PTR* phWnd);
  Call this method to set the paint style used by the control, for example, flat or 3D.  
   
 ```
-HRESULT STDMETHODCALLTYPE put_Appearance(SHORT   nAppearance);
+HRESULT STDMETHODCALLTYPE put_Appearance(SHORT nAppearance);
 ```  
   
 ### Parameters  
@@ -720,7 +720,7 @@ HRESULT STDMETHODCALLTYPE put_Enabled(VARIANT_BOOL bEnabled);
  Call this method to set the control's fill color.  
   
 ```
-HRESULT STDMETHODCALLTYPE put_FillColor(OLE_COLOR   clrFillColor);
+HRESULT STDMETHODCALLTYPE put_FillColor(OLE_COLOR clrFillColor);
 ```  
   
 ### Parameters  
@@ -877,7 +877,7 @@ HRESULT STDMETHODCALLTYPE put_Text(BSTR bstrText);
  Call this method to set the flag that indicates if the control is valid or not.  
   
 ```
-HRESULT STDMETHODCALLTYPE getvalid(VARIANT_BOOL   bValid);
+HRESULT STDMETHODCALLTYPE getvalid(VARIANT_BOOL bValid);
 ```  
   
 ### Parameters  

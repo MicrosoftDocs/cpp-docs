@@ -162,6 +162,20 @@ inline int AtlHexEncodeGetRequiredLength(int nSrcLen) throw();
 ### Return Value  
  The number of characters required for a buffer that could hold encoded data of `nSrcLen` bytes.  
   
+## <a name="atlhexvalue"></a> AtlHexValue
+Call this function to get the numeric value of a hexadecimal digit.  
+  
+```  
+inline short AtlHexValue(char chIn) throw();  
+```  
+  
+### Parameters  
+ `chIn`  
+ The hexadecimal character '0'-'9', 'A'-'F', or 'a'-'f'.  
+  
+### Return Value  
+ The numeric value of the input character interpreted as a hexadecimal digit. For example, an input of '0' returns a value of 0 and an input of 'A' returns a value of 10. If the input character is not a hexadecimal digit, this function returns -1.  
+  
 ## <a name="atlunicodetoutf8"></a> AtlUnicodeToUTF8
 Call this function to convert a Unicode string to UTF-8.  
   

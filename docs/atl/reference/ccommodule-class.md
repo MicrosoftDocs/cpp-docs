@@ -342,7 +342,7 @@ HRESULT RegisterClassObjects(DWORD dwClsContext, DWORD dwFlags) throw();
  A standard HRESULT value.  
   
 ### Remarks  
- Registers an EXE class object with OLE so other applications can connect to it. This method                        is only available to EXEs.  
+ Registers an EXE class object with OLE so other applications can connect to it. This method is only available to EXEs.  
   
 ##  <a name="registerserver"></a>  CComModule::RegisterServer  
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
@@ -377,7 +377,7 @@ HRESULT RegisterServer(
   
 ```
 HRESULT RegisterTypeLib() throw();
-HRESULT RegisterTypeLib(LPCTSTR   lpszIndex) throw();
+HRESULT RegisterTypeLib(LPCTSTR lpszIndex) throw();
 ```  
   
 ### Parameters  
@@ -403,7 +403,7 @@ HRESULT RevokeClassObjects() throw();
  A standard HRESULT value.  
   
 ### Remarks  
- Removes the class object. This method                        is only available to EXEs.  
+ Removes the class object. This method        is only available to EXEs.  
   
 ##  <a name="term"></a>  CComModule::Term  
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
@@ -480,7 +480,7 @@ ATL_DEPRECATED HRESULT UpdateRegistryClass(
     DWORD dwFlags,
     BOOL bRegister);
 
-    ATL_DEPRECATED HRESULT UpdateRegistryClass(  
+ATL_DEPRECATED HRESULT UpdateRegistryClass(  
     const CLSID& clsid,
     LPCTSTR lpszProgID,
     LPCTSTR lpszVerIndProgID,

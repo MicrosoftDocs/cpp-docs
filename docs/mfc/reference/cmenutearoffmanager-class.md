@@ -109,9 +109,7 @@ CMenuTearOffManager();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-LPCTSTR GetRegPath() const;
-
- 
+LPCTSTR GetRegPath() const;  
 ```  
   
 ### Return Value  
@@ -148,9 +146,7 @@ BOOL Initialize(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsDynamicID(UINT uiID) const;
-
- 
+BOOL IsDynamicID(UINT uiID) const;  
 ```  
   
 ### Parameters  

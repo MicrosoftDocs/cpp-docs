@@ -413,9 +413,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ```  
 int FindString(
     int nStartAfter,  
-    LPCTSTR lpszItem) const;
-
- 
+    LPCTSTR lpszItem) const;  
 ```  
   
 ### Parameters  
@@ -440,9 +438,7 @@ int FindString(
 ```  
 int FindStringExact(
     int nIndexStart,  
-    LPCTSTR lpszFind) const;
-
- 
+    LPCTSTR lpszFind) const;  
 ```  
   
 ### Parameters  
@@ -465,9 +461,7 @@ int FindStringExact(
  Retrieves the zero-based index of the current anchor item in the list box.  
   
 ```  
-int GetAnchorIndex() const;
-
- 
+int GetAnchorIndex() const;  
 ```  
   
 ### Return Value  
@@ -483,9 +477,7 @@ int GetAnchorIndex() const;
  Determines the index of the item that has the focus rectangle in a multiple-selection list box.  
   
 ```  
-int GetCaretIndex() const;
-
- 
+int GetCaretIndex() const;  
 ```  
   
 ### Return Value  
@@ -501,9 +493,7 @@ int GetCaretIndex() const;
  Retrieves the number of items in a list box.  
   
 ```  
-int GetCount() const;
-
- 
+int GetCount() const;  
 ```  
   
 ### Return Value  
@@ -519,9 +509,7 @@ int GetCount() const;
  Retrieves the zero-based index of the currently selected item, if any, in a single-selection list box.  
   
 ```  
-int GetCurSel() const;
-
- 
+int GetCurSel() const;  
 ```  
   
 ### Return Value  
@@ -539,9 +527,7 @@ int GetCurSel() const;
  Retrieves from the list box the width in pixels by which it can be scrolled horizontally.  
   
 ```  
-int GetHorizontalExtent() const;
-
- 
+int GetHorizontalExtent() const;  
 ```  
   
 ### Return Value  
@@ -557,9 +543,7 @@ int GetHorizontalExtent() const;
  Retrieves the application-supplied doubleword value associated with the specified list-box item.  
   
 ```  
-DWORD_PTR GetItemData(int nIndex) const;
-
- 
+DWORD_PTR GetItemData(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -579,9 +563,7 @@ DWORD_PTR GetItemData(int nIndex) const;
  Retrieves the application-supplied 32-bit value associated with the specified list-box item as a pointer ( **void\***).  
   
 ```  
-void* GetItemDataPtr(int nIndex) const;
-
- 
+void* GetItemDataPtr(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -598,9 +580,7 @@ void* GetItemDataPtr(int nIndex) const;
  Determines the height of items in a list box.  
   
 ```  
-int GetItemHeight(int nIndex) const;
-
- 
+int GetItemHeight(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -619,9 +599,7 @@ int GetItemHeight(int nIndex) const;
 ```  
 int GetItemRect(
     int nIndex,  
-    LPRECT lpRect) const;
-
- 
+    LPRECT lpRect) const;  
 ```  
   
 ### Parameters  
@@ -641,9 +619,7 @@ int GetItemRect(
  Retrieves the number of items per column.  
   
 ```  
-DWORD GetListBoxInfo() const;
-
- 
+DWORD GetListBoxInfo() const;  
 ```  
   
 ### Return Value  
@@ -656,9 +632,7 @@ DWORD GetListBoxInfo() const;
  Retrieves the locale used by the list box.  
   
 ```  
-LCID GetLocale() const;
-
- 
+LCID GetLocale() const;  
 ```  
   
 ### Return Value  
@@ -674,9 +648,7 @@ LCID GetLocale() const;
  Retrieves the selection state of an item.  
   
 ```  
-int GetSel(int nIndex) const;
-
- 
+int GetSel(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -698,9 +670,7 @@ int GetSel(int nIndex) const;
  Retrieves the total number of selected items in a multiple-selection list box.  
   
 ```  
-int GetSelCount() const;
-
- 
+int GetSelCount() const;  
 ```  
   
 ### Return Value  
@@ -715,9 +685,7 @@ int GetSelCount() const;
 ```  
 int GetSelItems(
     int nMaxItems,  
-    LPINT rgIndex) const;
-
- 
+    LPINT rgIndex) const;  
 ```  
   
 ### Parameters  
@@ -739,15 +707,11 @@ int GetSelItems(
 ```  
 int GetText(
     int nIndex,  
-    LPTSTR lpszBuffer) const;
-
- 
- 
+    LPTSTR lpszBuffer) const;  
+  
 void GetText(
     int nIndex,  
-    CString& rString) const;
-
- 
+    CString& rString) const;  
 ```  
   
 ### Parameters  
@@ -773,9 +737,7 @@ void GetText(
  Gets the length of a string in a list-box item.  
   
 ```  
-int GetTextLen(int nIndex) const;
-
- 
+int GetTextLen(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -792,9 +754,7 @@ int GetTextLen(int nIndex) const;
  Retrieves the zero-based index of the first visible item in a list box.  
   
 ```  
-int GetTopIndex() const;
-
- 
+int GetTopIndex() const;  
 ```  
   
 ### Return Value  
@@ -866,9 +826,7 @@ int InsertString(
 ```  
 UINT ItemFromPoint(
     CPoint pt,  
-    BOOL& bOutside) const;
-
- 
+    BOOL& bOutside) const;  
 ```  
   
 ### Parameters  
@@ -1202,14 +1160,10 @@ int SetSel(
  Sets the tab-stop positions in a list box.  
   
 ```  
-void SetTabStops();
+void SetTabStops();  
+BOOL SetTabStops(const int& cxEachStop);
 
- 
-BOOL SetTabStops(
-    const int& cxEachStop);
-
- 
-BOOL SetTabStops(
+ BOOL SetTabStops(
     int nTabStops,  
     LPINT rgTabStops);
 ```  

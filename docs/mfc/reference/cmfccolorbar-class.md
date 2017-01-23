@@ -220,9 +220,7 @@ virtual void AdjustLocations();
  Indicates whether the text label of color buttons can change.  
   
 ```  
-virtual BOOL AllowChangeTextLabels() const;
-
- 
+virtual BOOL AllowChangeTextLabels() const;  
 ```  
   
 ### Return Value  
@@ -235,9 +233,7 @@ virtual BOOL AllowChangeTextLabels() const;
  Indicates whether the color bar control object can appear in a toolbar list during the customization process.  
   
 ```  
-virtual BOOL AllowShowOnList() const;
-
- 
+virtual BOOL AllowShowOnList() const;  
 ```  
   
 ### Return Value  
@@ -508,9 +504,7 @@ void EnableOtherButton(
  Retrieves the currently selected color.  
   
 ```  
-COLORREF GetColor() const;
-
- 
+COLORREF GetColor() const;  
 ```  
   
 ### Return Value  
@@ -520,9 +514,7 @@ COLORREF GetColor() const;
  Calculates the number of rows and columns in the grid of a color bar control.  
   
 ```  
-CSize GetColorGridSize(BOOL bVertDock) const;
-
- 
+CSize GetColorGridSize(BOOL bVertDock) const;  
 ```  
   
 ### Parameters  
@@ -538,9 +530,7 @@ CSize GetColorGridSize(BOOL bVertDock) const;
  Retrieves the command ID of the current color bar control.  
   
 ```  
-UINT GetCommandID() const;
-
- 
+UINT GetCommandID() const;  
 ```  
   
 ### Return Value  
@@ -553,9 +543,7 @@ UINT GetCommandID() const;
  Calculates the additional height that the current color bar requires to display miscellaneous user interface elements, such as the **Other** button or document colors.  
   
 ```  
-int GetExtraHeight(int nNumColumns) const;
-
- 
+int GetExtraHeight(int nNumColumns) const;  
 ```  
   
 ### Parameters  
@@ -571,9 +559,7 @@ int GetExtraHeight(int nNumColumns) const;
  Retrieves the color that signifies that a color button has the focus; that is, the button is *hot*.  
   
 ```  
-COLORREF GetHighlightedColor() const;
-
- 
+COLORREF GetHighlightedColor() const;  
 ```  
   
 ### Return Value  
@@ -595,9 +581,7 @@ int GetHorzMargin();
  Retrieves the vertical margin, which is the space between the top or bottom color cell and the client area boundary.  
   
 ```  
-int GetVertMargin() const;
-
- 
+int GetVertMargin() const;  
 ```  
   
 ### Return Value  
@@ -626,9 +610,7 @@ static int InitColors(
  Indicates whether the current color bar is dockable.  
   
 ```  
-BOOL IsTearOff() const;
-
- 
+BOOL IsTearOff() const;  
 ```  
   
 ### Return Value  

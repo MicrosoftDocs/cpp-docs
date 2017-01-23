@@ -237,9 +237,7 @@ virtual BOOL ActivateAs(
  Call this function to initialize a [COleDataObject](../../mfc/reference/coledataobject-class.md) for accessing the data in the OLE item.  
   
 ```  
-void AttachDataObject(COleDataObject& rDataObject) const;
-
- 
+void AttachDataObject(COleDataObject& rDataObject) const;  
 ```  
   
 ### Parameters  
@@ -879,9 +877,7 @@ BOOL Draw(
  Returns the view on which the item is in-place activated.  
   
 ```  
-CView* GetActiveView() const;
-
- 
+CView* GetActiveView() const;  
 ```  
   
 ### Return Value  
@@ -917,9 +913,7 @@ BOOL GetCachedExtent(
  Returns the class ID of the item into the memory pointed to by `pClassID`.  
   
 ```  
-void GetClassID(CLSID* pClassID) const;
-
- 
+void GetClassID(CLSID* pClassID) const;  
 ```  
   
 ### Parameters  
@@ -962,9 +956,7 @@ void GetClipboardData(
  Call this function to get a pointer to the document that contains the OLE item.  
   
 ```  
-COleDocument* GetDocument() const;
-
- 
+COleDocument* GetDocument() const;  
 ```  
   
 ### Return Value  
@@ -977,9 +969,7 @@ COleDocument* GetDocument() const;
  Call the `GetDrawAspect` member function to determine the current "aspect," or view, of the item.  
   
 ```  
-DVASPECT GetDrawAspect() const;
-
- 
+DVASPECT GetDrawAspect() const;  
 ```  
   
 ### Return Value  
@@ -1019,12 +1009,9 @@ BOOL GetExtent(
  Call this member function to retrieve a handle to an icon resource associated with the server of a particular CLSID.  
   
 ```  
-HICON GetIconFromRegistry() const;
-
- 
- 
-static HICON GetIconFromRegistry(CLSID& clsid);
-```  
+HICON GetIconFromRegistry() const;  
+  
+static HICON GetIconFromRegistry(CLSID& clsid);```  
   
 ### Parameters  
  `clsid`  
@@ -1068,9 +1055,7 @@ CWnd* GetInPlaceWindow();
  Call this function to get the OLE item's current state.  
   
 ```  
-UINT GetItemState() const;
-
- 
+UINT GetItemState() const;  
 ```  
   
 ### Return Value  
@@ -1085,9 +1070,7 @@ UINT GetItemState() const;
  Returns the status code of the last OLE operation.  
   
 ```  
-SCODE GetLastStatus() const;
-
- 
+SCODE GetLastStatus() const;  
 ```  
   
 ### Return Value  
@@ -1123,9 +1106,7 @@ OLEUPDATE GetLinkUpdateOptions();
  Call this function to determine whether the OLE item is embedded or linked, or static.  
   
 ```  
-OLE_OBJTYPE GetType() const;
-
- 
+OLE_OBJTYPE GetType() const;  
 ```  
   
 ### Return Value  
@@ -1170,9 +1151,7 @@ void GetUserType(
  Call this function to see whether the OLE item is in-place active.  
   
 ```  
-BOOL IsInPlaceActive() const;
-
- 
+BOOL IsInPlaceActive() const;  
 ```  
   
 ### Return Value  
@@ -1185,9 +1164,7 @@ BOOL IsInPlaceActive() const;
  Call this function to see whether the OLE item is up to date.  
   
 ```  
-BOOL IsLinkUpToDate() const;
-
- 
+BOOL IsLinkUpToDate() const;  
 ```  
   
 ### Return Value  
@@ -1204,9 +1181,7 @@ BOOL IsLinkUpToDate() const;
  Call this function to see whether the OLE item is dirty (modified since it was last saved).  
   
 ```  
-BOOL IsModified() const;
-
- 
+BOOL IsModified() const;  
 ```  
   
 ### Return Value  
@@ -1219,9 +1194,7 @@ BOOL IsModified() const;
  Call this function to see whether the OLE item is open; that is, opened in an instance of the server application running in a separate window.  
   
 ```  
-BOOL IsOpen() const;
-
- 
+BOOL IsOpen() const;  
 ```  
   
 ### Return Value  
@@ -1234,9 +1207,7 @@ BOOL IsOpen() const;
  Call this function to see whether the OLE item is running; that is, whether the item is loaded and running in the server application.  
   
 ```  
-BOOL IsRunning() const;
-
- 
+BOOL IsRunning() const;  
 ```  
   
 ### Return Value  
@@ -1786,11 +1757,8 @@ void SetLinkUpdateOptions(OLEUPDATE dwUpdateOpt);
  Call this function to change the print-target device for this item.  
   
 ```  
-BOOL SetPrintDevice(const DVTARGETDEVICE* ptd);
-
- 
-BOOL SetPrintDevice(const PRINTDLG* ppd);
-```  
+BOOL SetPrintDevice(const DVTARGETDEVICE* ptd);  
+BOOL SetPrintDevice(const PRINTDLG* ppd);```  
   
 ### Parameters  
  `ptd`  

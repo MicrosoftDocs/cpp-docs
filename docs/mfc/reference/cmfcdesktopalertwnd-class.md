@@ -167,9 +167,7 @@ virtual BOOL Create(
  Returns the animation speed.  
   
 ```  
-UINT GetAnimationSpeed() const;
-
- 
+UINT GetAnimationSpeed() const;  
 ```  
   
 ### Return Value  
@@ -202,9 +200,7 @@ CMFCPopupMenu::ANIMATION_TYPE GetAnimationType();
  Returns the auto-close time out.  
   
 ```  
-int GetAutoCloseTime() const;
-
- 
+int GetAutoCloseTime() const;  
 ```  
   
 ### Return Value  
@@ -230,9 +226,7 @@ virtual int GetCaptionHeight();
  Returns the last position of the desktop alert window on the screen.  
   
 ```  
-CPoint GetLastPos() const;
-
- 
+CPoint GetLastPos() const;  
 ```  
   
 ### Return Value  
@@ -245,9 +239,7 @@ CPoint GetLastPos() const;
  Returns the transparency level.  
   
 ```  
-BYTE GetTransparency() const;
-
- 
+BYTE GetTransparency() const;  
 ```  
   
 ### Return Value  
@@ -260,9 +252,7 @@ BYTE GetTransparency() const;
  Determines whether the desktop alert window has a small caption or a regular-size caption.  
   
 ```  
-BOOL HasSmallCaption() const;
-
- 
+BOOL HasSmallCaption() const;  
 ```  
   
 ### Return Value  

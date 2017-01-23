@@ -163,11 +163,11 @@ inline char* Combine(
    const char* pszDir,
    const char* pszFile 
 );
+
 inline wchar_t* Combine(  
    wchar_t* pszDest,
    const wchar_t* pszDir,
-   const wchar_t* pszFile 
-);
+   const wchar_t* pszFile);
 ```
 ### Remarks
 See PathCombine for details.
@@ -312,10 +312,8 @@ inline int GetDriveNumber(const wchar_t* pszPath);
 This function is an overloaded wrapper for [PathIsDirectory](https://msdn.microsoft.com/en-us/library/windows/desktop/bb773621).
 
 ```  
-inline BOOL IsDirectory(const char* pszPath 
-);
-inline BOOL IsDirectory(const wchar_t* pszPath 
-);
+inline BOOL IsDirectory(const char* pszPath);
+inline BOOL IsDirectory(const wchar_t* pszPath);
 ```  
 ### Remarks
 See PathIsDirectory for details.  

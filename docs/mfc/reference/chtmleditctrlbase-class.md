@@ -184,9 +184,7 @@ HRESULT AddToGlyphTable(
     unsigned short nPosInfo,  
     unsigned short nDirection,  
     unsigned int nImgWidth,  
-    unsigned int nImgHeight) const;
-
- 
+    unsigned int nImgHeight) const;  
 ```  
   
 ### Parameters  
@@ -226,9 +224,7 @@ HRESULT AddToGlyphTable(
  Toggles the bold state of the selected text.  
   
 ```  
-HRESULT Bold() const;
-
- 
+HRESULT Bold() const;  
 ```  
   
 ### Return Value  
@@ -241,9 +237,7 @@ HRESULT Bold() const;
  Overwrites a button control on the current selection.  
   
 ```  
-HRESULT Button(LPCTSTR szId = NULL) const;
-
- 
+HRESULT Button(LPCTSTR szId = NULL) const;  
 ```  
   
 ### Parameters  
@@ -260,9 +254,7 @@ HRESULT Button(LPCTSTR szId = NULL) const;
  Overwrites a check box control on the current selection.  
   
 ```  
-HRESULT CheckBox(LPCTSTR szId = NULL) const;
-
- 
+HRESULT CheckBox(LPCTSTR szId = NULL) const;  
 ```  
   
 ### Parameters  
@@ -279,9 +271,7 @@ HRESULT CheckBox(LPCTSTR szId = NULL) const;
  Clears the current selection.  
   
 ```  
-HRESULT ClearSelection() const;
-
- 
+HRESULT ClearSelection() const;  
 ```  
   
 ### Return Value  
@@ -294,9 +284,7 @@ HRESULT ClearSelection() const;
  Copies the current selection to the clipboard.  
   
 ```  
-HRESULT Copy() const;
-
- 
+HRESULT Copy() const;  
 ```  
   
 ### Return Value  
@@ -309,9 +297,7 @@ HRESULT Copy() const;
  Copies the current selection to the clipboard and then deletes it.  
   
 ```  
-HRESULT Cut() const;
-
- 
+HRESULT Cut() const;  
 ```  
   
 ### Return Value  
@@ -324,9 +310,7 @@ HRESULT Cut() const;
  Deletes the current selection.  
   
 ```  
-HRESULT Delete() const;
-
- 
+HRESULT Delete() const;  
 ```  
   
 ### Return Value  
@@ -339,9 +323,7 @@ HRESULT Delete() const;
  Overwrites a drop-down selection control on the current selection.  
   
 ```  
-HRESULT DropDownBox(LPCTSTR szId = NULL) const;
-
- 
+HRESULT DropDownBox(LPCTSTR szId = NULL) const;  
 ```  
   
 ### Parameters  
@@ -358,9 +340,7 @@ HRESULT DropDownBox(LPCTSTR szId = NULL) const;
  Removes all entries from the glyph table, which hides all images displayed for tags in design mode.  
   
 ```  
-HRESULT EmptyGlyphTable() const;
-
- 
+HRESULT EmptyGlyphTable() const;  
 ```  
   
 ### Return Value  
@@ -377,18 +357,14 @@ HRESULT ExecCommand(
     long cmdID,  
     long cmdExecOpt,  
     VARIANT* pInVar = NULL,  
-    VARIANT* pOutVar = NULL) const;
-
- 
- 
+    VARIANT* pOutVar = NULL) const;  
+  
 HRESULT ExecCommand(
     const GUID* pGuid,  
     long cmdID,  
     long cmdExecOpt,  
     VARIANT* pInVar = NULL,  
-    VARIANT* pOutVar = NULL) const;
-
- 
+    VARIANT* pOutVar = NULL) const;  
 ```  
   
 ### Parameters  
@@ -417,9 +393,7 @@ HRESULT ExecCommand(
  Opens a font dialog box to enable the user to change the text color, font, and font size of the current selection.  
   
 ```  
-HRESULT Font() const;
-
- 
+HRESULT Font() const;  
 ```  
   
 ### Return Value  
@@ -432,9 +406,7 @@ HRESULT Font() const;
  Returns whether an element's position property is "absolute."  
   
 ```  
-HRESULT GetAbsolutePosition(bool& bCurValue) const;
-
- 
+HRESULT GetAbsolutePosition(bool& bCurValue) const;  
 ```  
   
 ### Parameters  
@@ -451,9 +423,7 @@ HRESULT GetAbsolutePosition(bool& bCurValue) const;
  Retrieves the background color of the current selection.  
   
 ```  
-HRESULT GetBackColor(int& nColor) const;
-
- 
+HRESULT GetBackColor(int& nColor) const;  
 ```  
   
 ### Parameters  
@@ -470,9 +440,7 @@ HRESULT GetBackColor(int& nColor) const;
  Retrieves the current block format tag.  
   
 ```  
-HRESULT GetBlockFormat(CString& strFormat) const;
-
- 
+HRESULT GetBlockFormat(CString& strFormat) const;  
 ```  
   
 ### Parameters  
@@ -489,9 +457,7 @@ HRESULT GetBlockFormat(CString& strFormat) const;
  Retrieves the strings corresponding to the available block format tags.  
   
 ```  
-HRESULT GetBlockFormatNames(CStringArray& sa) const;
-
- 
+HRESULT GetBlockFormatNames(CStringArray& sa) const;  
 ```  
   
 ### Parameters  
@@ -508,9 +474,7 @@ HRESULT GetBlockFormatNames(CStringArray& sa) const;
  Retrieves the name of a bookmark anchor.  
   
 ```  
-HRESULT GetBookMark(CString& strAnchor) const;
-
- 
+HRESULT GetBookMark(CString& strAnchor) const;  
 ```  
   
 ### Parameters  
@@ -527,9 +491,7 @@ HRESULT GetBookMark(CString& strAnchor) const;
  Retrieves the document object.  
   
 ```  
-HRESULT GetDocument(IHTMLDocument2** ppDoc) const;
-
- 
+HRESULT GetDocument(IHTMLDocument2** ppDoc) const;  
 ```  
   
 ### Parameters  
@@ -543,9 +505,7 @@ HRESULT GetDocument(IHTMLDocument2** ppDoc) const;
  Retrieves the HTML of the current document.  
   
 ```  
-HRESULT GetDocumentHTML(CString& szHTML) const;
-
- 
+HRESULT GetDocumentHTML(CString& szHTML) const;  
 ```  
   
 ### Parameters  
@@ -559,9 +519,7 @@ HRESULT GetDocumentHTML(CString& szHTML) const;
  Retrieves the document's title.  
   
 ```  
-HRESULT GetDocumentTitle(CString& szTitle) const;
-
- 
+HRESULT GetDocumentTitle(CString& szTitle) const;  
 ```  
   
 ### Parameters  
@@ -575,9 +533,7 @@ HRESULT GetDocumentTitle(CString& szTitle) const;
  Retrieves an interface pointer to the event object that contains information relevant to the most recent event.  
   
 ```  
-HRESULT GetEvent(IHTMLEventObj** ppEventObj) const;
-
- 
+HRESULT GetEvent(IHTMLEventObj** ppEventObj) const;  
 ```  
   
 ### Parameters  
@@ -591,9 +547,7 @@ HRESULT GetEvent(IHTMLEventObj** ppEventObj) const;
  Retrieves the object that fired the event.  
   
 ```  
-HRESULT GetEventSrcElement(IHTMLElement** ppSrcElement) const;
-
- 
+HRESULT GetEventSrcElement(IHTMLElement** ppSrcElement) const;  
 ```  
   
 ### Parameters  
@@ -607,9 +561,7 @@ HRESULT GetEventSrcElement(IHTMLElement** ppSrcElement) const;
  Retrieves the font name for the current selection.  
   
 ```  
-HRESULT GetFontFace(CString& strFace) const;
-
- 
+HRESULT GetFontFace(CString& strFace) const;  
 ```  
   
 ### Parameters  
@@ -628,9 +580,7 @@ HRESULT GetFontFace(CString& strFace) const;
  Retrieves the font size for the current selection.  
   
 ```  
-HRESULT GetFontSize(short& nSize) const;
-
- 
+HRESULT GetFontSize(short& nSize) const;  
 ```  
   
 ### Parameters  
@@ -664,9 +614,7 @@ HRESULT GetForeColor(int& nColor);
  Returns the security zone of the current page in the web browser.  
   
 ```  
-HRESULT GetFrameZone(short& nZone) const;
-
- 
+HRESULT GetFrameZone(short& nZone) const;  
 ```  
   
 ### Parameters  
@@ -683,9 +631,7 @@ HRESULT GetFrameZone(short& nZone) const;
  Indicates whether the HTML document has changed.  
   
 ```  
-HRESULT GetIsDirty() const;
-
- 
+HRESULT GetIsDirty() const;  
 ```  
   
 ### Remarks  
@@ -695,9 +641,7 @@ HRESULT GetIsDirty() const;
  Returns whether a glyph is displayed for all elements that have a **styleFloat** property.  
   
 ```  
-HRESULT GetShowAlignedSiteTags(bool& bCurValue) const;
-
- 
+HRESULT GetShowAlignedSiteTags(bool& bCurValue) const;  
 ```  
   
 ### Parameters  
@@ -714,9 +658,7 @@ HRESULT GetShowAlignedSiteTags(bool& bCurValue) const;
  Returns whether the WebBrowser displays glyphs to show the location of all tags in a document.  
   
 ```  
-HRESULT GetShowAllTags(bool& bCurValue) const;
-
- 
+HRESULT GetShowAllTags(bool& bCurValue) const;  
 ```  
   
 ### Parameters  
@@ -733,9 +675,7 @@ HRESULT GetShowAllTags(bool& bCurValue) const;
  Retrieves whether the WebBrowser displays a glyph for area tags.  
   
 ```  
-HRESULT GetShowAreaTags(bool& bCurValue) const;
-
- 
+HRESULT GetShowAreaTags(bool& bCurValue) const;  
 ```  
   
 ### Parameters  
@@ -752,9 +692,7 @@ HRESULT GetShowAreaTags(bool& bCurValue) const;
  Retrieves whether the WebBrowser displays a glyph for br tags.  
   
 ```  
-HRESULT GetShowBRTags(bool& bCurValue) const;
-
- 
+HRESULT GetShowBRTags(bool& bCurValue) const;  
 ```  
   
 ### Parameters  
@@ -771,9 +709,7 @@ HRESULT GetShowBRTags(bool& bCurValue) const;
  Retrieves whether the WebBrowser displays a glyph for comment tags.  
   
 ```  
-HRESULT GetShowCommentTags(bool& bCurValue) const;
-
- 
+HRESULT GetShowCommentTags(bool& bCurValue) const;  
 ```  
   
 ### Parameters  
@@ -790,9 +726,7 @@ HRESULT GetShowCommentTags(bool& bCurValue) const;
  Retrieves whether the WebBrowser displays all the tags shown in Microsoft Internet Explorer 4.0.  
   
 ```  
-HRESULT GetShowMiscTags(bool& bCurValue) const;
-
- 
+HRESULT GetShowMiscTags(bool& bCurValue) const;  
 ```  
   
 ### Parameters  
@@ -809,9 +743,7 @@ HRESULT GetShowMiscTags(bool& bCurValue) const;
  Retrieves whether the WebBrowser displays a glyph for all the script tags.  
   
 ```  
-HRESULT GetShowScriptTags(bool& bCurValue) const;
-
- 
+HRESULT GetShowScriptTags(bool& bCurValue) const;  
 ```  
   
 ### Parameters  
@@ -828,9 +760,7 @@ HRESULT GetShowScriptTags(bool& bCurValue) const;
  Retrieves whether the WebBrowser displays a glyph for all the style tags.  
   
 ```  
-HRESULT GetShowStyleTags(bool& bCurValue) const;
-
- 
+HRESULT GetShowStyleTags(bool& bCurValue) const;  
 ```  
   
 ### Parameters  
@@ -847,9 +777,7 @@ HRESULT GetShowStyleTags(bool& bCurValue) const;
  Retrieves whether the WebBrowser displays a glyph for all unknown tags.  
   
 ```  
-HRESULT GetShowUnknownTags(bool& bCurValue) const;
-
- 
+HRESULT GetShowUnknownTags(bool& bCurValue) const;  
 ```  
   
 ### Parameters  
@@ -866,9 +794,7 @@ HRESULT GetShowUnknownTags(bool& bCurValue) const;
  Overwrites a horizontal line on the current selection.  
   
 ```  
-HRESULT HorizontalLine(LPCTSTR szId = NULL) const;
-
- 
+HRESULT HorizontalLine(LPCTSTR szId = NULL) const;  
 ```  
   
 ### Parameters  
@@ -885,9 +811,7 @@ HRESULT HorizontalLine(LPCTSTR szId = NULL) const;
  Inserts a hyperlink on the current selection.  
   
 ```  
-HRESULT HyperLink(LPCTSTR szUrl = NULL) const;
-
- 
+HRESULT HyperLink(LPCTSTR szUrl = NULL) const;  
 ```  
   
 ### Parameters  
@@ -904,9 +828,7 @@ HRESULT HyperLink(LPCTSTR szUrl = NULL) const;
  Performs a paste operation that's compatible with Internet Explorer 5.  
   
 ```  
-HRESULT IE50Paste(LPCTSTR szData) const;
-
- 
+HRESULT IE50Paste(LPCTSTR szData) const;  
 ```  
   
 ### Parameters  
@@ -923,9 +845,7 @@ HRESULT IE50Paste(LPCTSTR szData) const;
  Overwrites an inline frame on the current selection.  
   
 ```  
-HRESULT Iframe(LPCTSTR szId = NULL) const;
-
- 
+HRESULT Iframe(LPCTSTR szId = NULL) const;  
 ```  
   
 ### Parameters  
@@ -942,9 +862,7 @@ HRESULT Iframe(LPCTSTR szId = NULL) const;
  Overwrites an image on the current selection.  
   
 ```  
-HRESULT Image(LPCTSTR szUrl = NULL) const;
-
- 
+HRESULT Image(LPCTSTR szUrl = NULL) const;  
 ```  
   
 ### Parameters  
@@ -961,9 +879,7 @@ HRESULT Image(LPCTSTR szUrl = NULL) const;
  Increases the indent of the selected text by one indentation increment.  
   
 ```  
-HRESULT Indent() const;
-
- 
+HRESULT Indent() const;  
 ```  
   
 ### Return Value  
@@ -976,9 +892,7 @@ HRESULT Indent() const;
  Overwrites a box on the current selection.  
   
 ```  
-HRESULT InsFieldSet(LPCTSTR szId = NULL) const;
-
- 
+HRESULT InsFieldSet(LPCTSTR szId = NULL) const;  
 ```  
   
 ### Parameters  
@@ -995,9 +909,7 @@ HRESULT InsFieldSet(LPCTSTR szId = NULL) const;
  Overwrites a button control on the current selection.  
   
 ```  
-HRESULT InsInputButton(LPCTSTR szId = NULL) const;
-
- 
+HRESULT InsInputButton(LPCTSTR szId = NULL) const;  
 ```  
   
 ### Parameters  
@@ -1014,9 +926,7 @@ HRESULT InsInputButton(LPCTSTR szId = NULL) const;
  Inserts a hidden control on the current selection.  
   
 ```  
-HRESULT InsInputHidden(LPCTSTR szId = NULL) const;
-
- 
+HRESULT InsInputHidden(LPCTSTR szId = NULL) const;  
 ```  
   
 ### Parameters  
@@ -1033,9 +943,7 @@ HRESULT InsInputHidden(LPCTSTR szId = NULL) const;
  Overwrites an image control on the current selection.  
   
 ```  
-HRESULT InsInputImage(LPCTSTR szId = NULL) const;
-
- 
+HRESULT InsInputImage(LPCTSTR szId = NULL) const;  
 ```  
   
 ### Parameters  
@@ -1052,9 +960,7 @@ HRESULT InsInputImage(LPCTSTR szId = NULL) const;
  Overwrites a password control on the current selection.  
   
 ```  
-HRESULT InsInputPassword(LPCTSTR szId = NULL) const;
-
- 
+HRESULT InsInputPassword(LPCTSTR szId = NULL) const;  
 ```  
   
 ### Parameters  
@@ -1071,9 +977,7 @@ HRESULT InsInputPassword(LPCTSTR szId = NULL) const;
  Overwrites a reset control on the current selection.  
   
 ```  
-HRESULT InsInputReset(LPCTSTR szId = NULL) const;
-
- 
+HRESULT InsInputReset(LPCTSTR szId = NULL) const;  
 ```  
   
 ### Parameters  
@@ -1090,9 +994,7 @@ HRESULT InsInputReset(LPCTSTR szId = NULL) const;
  Overwrites a submit control on the current selection.  
   
 ```  
-HRESULT InsInputSubmit(LPCTSTR szId = NULL) const;
-
- 
+HRESULT InsInputSubmit(LPCTSTR szId = NULL) const;  
 ```  
   
 ### Parameters  
@@ -1109,9 +1011,7 @@ HRESULT InsInputSubmit(LPCTSTR szId = NULL) const;
  Overwrites a file upload control on the current selection.  
   
 ```  
-HRESULT InsInputUpload(LPCTSTR szId = NULL) const;
-
- 
+HRESULT InsInputUpload(LPCTSTR szId = NULL) const;  
 ```  
   
 ### Parameters  
@@ -1128,9 +1028,7 @@ HRESULT InsInputUpload(LPCTSTR szId = NULL) const;
  Determines if an element is statically positioned.  
   
 ```  
-HRESULT Is1DElement(bool& bValue) const;
-
- 
+HRESULT Is1DElement(bool& bValue) const;  
 ```  
   
 ### Parameters  
@@ -1147,9 +1045,7 @@ HRESULT Is1DElement(bool& bValue) const;
  Determines if an element is absolutely positioned.  
   
 ```  
-HRESULT Is2DElement(bool& bValue) const;
-
- 
+HRESULT Is2DElement(bool& bValue) const;  
 ```  
   
 ### Parameters  
@@ -1166,9 +1062,7 @@ HRESULT Is2DElement(bool& bValue) const;
  Toggles the current selection between italic and nonitalic.  
   
 ```  
-HRESULT Italic() const;
-
- 
+HRESULT Italic() const;  
 ```  
   
 ### Return Value  
@@ -1181,9 +1075,7 @@ HRESULT Italic() const;
  Centers the format block in which the current selection is located.  
   
 ```  
-HRESULT JustifyCenter() const;
-
- 
+HRESULT JustifyCenter() const;  
 ```  
   
 ### Return Value  
@@ -1196,9 +1088,7 @@ HRESULT JustifyCenter() const;
  Left-justifies the format block in which the current selection is located.  
   
 ```  
-HRESULT JustifyLeft() const;
-
- 
+HRESULT JustifyLeft() const;  
 ```  
   
 ### Return Value  
@@ -1211,9 +1101,7 @@ HRESULT JustifyLeft() const;
  Right-justifies the format block in which the current selection is located.  
   
 ```  
-HRESULT JustifyRight() const;
-
- 
+HRESULT JustifyRight() const;  
 ```  
   
 ### Return Value  
@@ -1226,9 +1114,7 @@ HRESULT JustifyRight() const;
  Overwrites a list box selection control on the current selection.  
   
 ```  
-HRESULT ListBox(LPCTSTR szId = NULL) const;
-
- 
+HRESULT ListBox(LPCTSTR szId = NULL) const;  
 ```  
   
 ### Parameters  
@@ -1245,9 +1131,7 @@ HRESULT ListBox(LPCTSTR szId = NULL) const;
  Overwrites an empty marquee on the current selection.  
   
 ```  
-HRESULT Marquee(LPCTSTR szId = NULL) const;
-
- 
+HRESULT Marquee(LPCTSTR szId = NULL) const;  
 ```  
   
 ### Parameters  
@@ -1264,9 +1148,7 @@ HRESULT Marquee(LPCTSTR szId = NULL) const;
  Creates a new document.  
   
 ```  
-HRESULT NewDocument() const;
-
- 
+HRESULT NewDocument() const;  
 ```  
   
 ### Return Value  
@@ -1276,9 +1158,7 @@ HRESULT NewDocument() const;
  Toggles the current selection between an ordered list and a normal format block.  
   
 ```  
-HRESULT OrderList(LPCTSTR szId = NULL) const;
-
- 
+HRESULT OrderList(LPCTSTR szId = NULL) const;  
 ```  
   
 ### Parameters  
@@ -1295,9 +1175,7 @@ HRESULT OrderList(LPCTSTR szId = NULL) const;
  Decreases by one increment the indentation of the format block in which the current selection is located.  
   
 ```  
-HRESULT Outdent() const;
-
- 
+HRESULT Outdent() const;  
 ```  
   
 ### Return Value  
@@ -1310,9 +1188,7 @@ HRESULT Outdent() const;
  Overwrites a line break on the current selection.  
   
 ```  
-HRESULT Paragraph(LPCTSTR szId = NULL) const;
-
- 
+HRESULT Paragraph(LPCTSTR szId = NULL) const;  
 ```  
   
 ### Parameters  
@@ -1329,9 +1205,7 @@ HRESULT Paragraph(LPCTSTR szId = NULL) const;
  Overwrites the contents of the clipboard on the current selection.  
   
 ```  
-HRESULT Paste() const;
-
- 
+HRESULT Paste() const;  
 ```  
   
 ### Return Value  
@@ -1344,17 +1218,9 @@ HRESULT Paste() const;
  Prints the current document.  
   
 ```  
-HRESULT PrintDocument() const;
-
- 
- 
-HRESULT PrintDocument(LPCTSTR szPrintTemplate) const;
-
- 
- 
-HRESULT PrintDocument(bool bShowPrintDialog) const;
-
- 
+HRESULT PrintDocument() const;  
+HRESULT PrintDocument(LPCTSTR szPrintTemplate) const;  
+HRESULT PrintDocument(bool bShowPrintDialog) const;  
 ```  
   
 ### Parameters  
@@ -1374,13 +1240,8 @@ HRESULT PrintDocument(bool bShowPrintDialog) const;
  Opens the Print Preview window for the current document using either the default print preview template or a custom template.  
   
 ```  
-HRESULT PrintPreview() const;
-
- 
- 
-HRESULT PrintPreview(LPCTSTR szPrintTemplate) const;
-
- 
+HRESULT PrintPreview() const;  
+HRESULT PrintPreview(LPCTSTR szPrintTemplate) const;  
 ```  
   
 ### Parameters  
@@ -1397,9 +1258,7 @@ HRESULT PrintPreview(LPCTSTR szPrintTemplate) const;
  Call this method to query the status of commands.  
   
 ```  
-long QueryStatus(long cmdID) const;
-
- 
+long QueryStatus(long cmdID) const;  
 ```  
   
 ### Parameters  
@@ -1413,9 +1272,7 @@ long QueryStatus(long cmdID) const;
  Overwrites a radio control on the current selection.  
   
 ```  
-HRESULT RadioButton(LPCTSTR szId = NULL) const;
-
- 
+HRESULT RadioButton(LPCTSTR szId = NULL) const;  
 ```  
   
 ### Parameters  
@@ -1432,9 +1289,7 @@ HRESULT RadioButton(LPCTSTR szId = NULL) const;
  Refreshes the current document.  
   
 ```  
-HRESULT RefreshDocument() const;
-
- 
+HRESULT RefreshDocument() const;  
 ```  
   
 ### Return Value  
@@ -1447,9 +1302,7 @@ HRESULT RefreshDocument() const;
  Removes the formatting tags from the current selection.  
   
 ```  
-HRESULT RemoveFormat() const;
-
- 
+HRESULT RemoveFormat() const;  
 ```  
   
 ### Return Value  
@@ -1462,9 +1315,7 @@ HRESULT RemoveFormat() const;
  Saves the current Web page to a file.  
   
 ```  
-HRESULT SaveAs(LPCTSTR szPath = NULL) const;
-
- 
+HRESULT SaveAs(LPCTSTR szPath = NULL) const;  
 ```  
   
 ### Parameters  
@@ -1481,9 +1332,7 @@ HRESULT SaveAs(LPCTSTR szPath = NULL) const;
  Selects the entire document.  
   
 ```  
-HRESULT SelectAll() const;
-
- 
+HRESULT SelectAll() const;  
 ```  
   
 ### Return Value  
@@ -1496,9 +1345,7 @@ HRESULT SelectAll() const;
  Allows absolutely positioned elements to be moved by dragging.  
   
 ```  
-HRESULT Set2DPosition(bool bNewValue) const;
-
- 
+HRESULT Set2DPosition(bool bNewValue) const;  
 ```  
   
 ### Parameters  
@@ -1515,9 +1362,7 @@ HRESULT Set2DPosition(bool bNewValue) const;
  Sets an element's position property to "absolute" or "static."  
   
 ```  
-HRESULT SetAbsolutePosition(bool bNewValue) const;
-
- 
+HRESULT SetAbsolutePosition(bool bNewValue) const;  
 ```  
   
 ### Parameters  
@@ -1534,9 +1379,7 @@ HRESULT SetAbsolutePosition(bool bNewValue) const;
  Set atomic selection mode.  
   
 ```  
-HRESULT SetAtomicSelection(bool bNewValue) const;
-
- 
+HRESULT SetAtomicSelection(bool bNewValue) const;  
 ```  
   
 ### Parameters  
@@ -1553,9 +1396,7 @@ HRESULT SetAtomicSelection(bool bNewValue) const;
  Turns automatic URL detection on and off.  
   
 ```  
-HRESULT SetAutoURLDetectMode(bool bNewValue) const;
-
- 
+HRESULT SetAutoURLDetectMode(bool bNewValue) const;  
 ```  
   
 ### Parameters  
@@ -1572,13 +1413,8 @@ HRESULT SetAutoURLDetectMode(bool bNewValue) const;
  Sets the background color of the current selection.  
   
 ```  
-HRESULT SetBackColor(int nColor) const;
-
- 
- 
-HRESULT SetBackColor(LPCTSTR szColor) const;
-
- 
+HRESULT SetBackColor(int nColor) const;  
+HRESULT SetBackColor(LPCTSTR szColor) const;  
 ```  
   
 ### Parameters  
@@ -1598,9 +1434,7 @@ HRESULT SetBackColor(LPCTSTR szColor) const;
  Sets the current block format tag.  
   
 ```  
-HRESULT SetBlockFormat(LPCTSTR szFormat) const;
-
- 
+HRESULT SetBlockFormat(LPCTSTR szFormat) const;  
 ```  
   
 ### Parameters  
@@ -1617,9 +1451,7 @@ HRESULT SetBlockFormat(LPCTSTR szFormat) const;
  Creates a bookmark anchor for the current selection or insertion point.  
   
 ```  
-HRESULT SetBookMark(LPCTSTR szAnchorName) const;
-
- 
+HRESULT SetBookMark(LPCTSTR szAnchorName) const;  
 ```  
   
 ### Parameters  
@@ -1636,9 +1468,7 @@ HRESULT SetBookMark(LPCTSTR szAnchorName) const;
  Selects which CSS level (CSS1 or CSS2) the editor will support, if any.  
   
 ```  
-HRESULT SetCSSEditingLevel(short nLevel) const;
-
- 
+HRESULT SetCSSEditingLevel(short nLevel) const;  
 ```  
   
 ### Parameters  
@@ -1662,9 +1492,7 @@ HRESULT SetDefaultComposeSettings(
     COLORREF crFontBgColor = 0xFF000000,  
     bool bBold = false,  
     bool bItalic = false,  
-    bool bUnderline = false) const;
-
- 
+    bool bUnderline = false) const;  
 ```  
   
 ### Parameters  
@@ -1699,9 +1527,7 @@ HRESULT SetDefaultComposeSettings(
  Set design mode.  
   
 ```  
-BOOL SetDesignMode(BOOL bMode) const;
-
- 
+BOOL SetDesignMode(BOOL bMode) const;  
 ```  
   
 ### Parameters  
@@ -1715,9 +1541,7 @@ BOOL SetDesignMode(BOOL bMode) const;
  Disables the hatched border and handles around an element that has edit focus.  
   
 ```  
-HRESULT SetDisableEditFocusUI(bool bNewValue) const;
-
- 
+HRESULT SetDisableEditFocusUI(bool bNewValue) const;  
 ```  
   
 ### Parameters  
@@ -1734,9 +1558,7 @@ HRESULT SetDisableEditFocusUI(bool bNewValue) const;
  Sets the HTML of the current document.  
   
 ```  
-HRESULT SetDocumentHTML(LPCTSTR szHTML) const;
-
- 
+HRESULT SetDocumentHTML(LPCTSTR szHTML) const;  
 ```  
   
 ### Parameters  
@@ -1750,9 +1572,7 @@ HRESULT SetDocumentHTML(LPCTSTR szHTML) const;
  Sets the font for the current selection.  
   
 ```  
-HRESULT SetFontFace(LPCTSTR szFace) const;
-
- 
+HRESULT SetFontFace(LPCTSTR szFace) const;  
 ```  
   
 ### Parameters  
@@ -1769,9 +1589,7 @@ HRESULT SetFontFace(LPCTSTR szFace) const;
  Sets the font size for the current selection.  
   
 ```  
-HRESULT SetFontSize(unsigned short size) const;
-
- 
+HRESULT SetFontSize(unsigned short size) const;  
 ```  
   
 ### Parameters  
@@ -1788,13 +1606,8 @@ HRESULT SetFontSize(unsigned short size) const;
  Sets the foreground (text) color of the current selection.  
   
 ```  
-HRESULT SetForeColor(LPCTSTR szColor) const;
-
- 
- 
-HRESULT SetForeColor(int nColor) const;
-
- 
+HRESULT SetForeColor(LPCTSTR szColor) const;  
+HRESULT SetForeColor(int nColor) const;  
 ```  
   
 ### Parameters  
@@ -1814,9 +1627,7 @@ HRESULT SetForeColor(int nColor) const;
  Sets the paste operation to be compatible with Microsoft Internet Explorer 5.  
   
 ```  
-HRESULT SetIE5PasteMode(bool bNewValue) const;
-
- 
+HRESULT SetIE5PasteMode(bool bNewValue) const;  
 ```  
   
 ### Parameters  
@@ -1833,9 +1644,7 @@ HRESULT SetIE5PasteMode(bool bNewValue) const;
  Causes the WebBrowser to update an element's appearance continuously during a resizing or moving operation, rather than updating only at the completion of the move or resize.  
   
 ```  
-HRESULT SetLiveResize(bool bNewValue) const;
-
- 
+HRESULT SetLiveResize(bool bNewValue) const;  
 ```  
   
 ### Parameters  
@@ -1852,9 +1661,7 @@ HRESULT SetLiveResize(bool bNewValue) const;
  Enables multiple selection.  
   
 ```  
-HRESULT SetMultiSelect(bool bNewValue) const;
-
- 
+HRESULT SetMultiSelect(bool bNewValue) const;  
 ```  
   
 ### Parameters  
@@ -1871,9 +1678,7 @@ HRESULT SetMultiSelect(bool bNewValue) const;
  Commands the WebBrowser never to change the mouse pointer.  
   
 ```  
-HRESULT SetOverrideCursor(bool bNewValue) const;
-
- 
+HRESULT SetOverrideCursor(bool bNewValue) const;  
 ```  
   
 ### Parameters  
@@ -1890,9 +1695,7 @@ HRESULT SetOverrideCursor(bool bNewValue) const;
  Toggles the text-entry mode between insert and overwrite.  
   
 ```  
-HRESULT SetOverwriteMode(bool bMode) const;
-
- 
+HRESULT SetOverwriteMode(bool bMode) const;  
 ```  
   
 ### Parameters  
@@ -1909,9 +1712,7 @@ HRESULT SetOverwriteMode(bool bMode) const;
  Hides invisible elements in design mode.  
   
 ```  
-HRESULT SetRespectVisInDesign(bool bNewValue) const;
-
- 
+HRESULT SetRespectVisInDesign(bool bNewValue) const;  
 ```  
   
 ### Parameters  
@@ -1928,9 +1729,7 @@ HRESULT SetRespectVisInDesign(bool bNewValue) const;
  Displays a glyph for all elements that have a **styleFloat** property.  
   
 ```  
-HRESULT SetShowAlignedSiteTags(bool bNewValue) const;
-
- 
+HRESULT SetShowAlignedSiteTags(bool bNewValue) const;  
 ```  
   
 ### Parameters  
@@ -1947,9 +1746,7 @@ HRESULT SetShowAlignedSiteTags(bool bNewValue) const;
  Displays glyphs to show the location of all tags in a document.  
   
 ```  
-HRESULT SetShowAllTags(bool bNewValue) const;
-
- 
+HRESULT SetShowAllTags(bool bNewValue) const;  
 ```  
   
 ### Parameters  
@@ -1966,9 +1763,7 @@ HRESULT SetShowAllTags(bool bNewValue) const;
  Displays a glyph for all the area tags.  
   
 ```  
-HRESULT SetShowAreaTags(bool bNewValue) const;
-
- 
+HRESULT SetShowAreaTags(bool bNewValue) const;  
 ```  
   
 ### Parameters  
@@ -1985,9 +1780,7 @@ HRESULT SetShowAreaTags(bool bNewValue) const;
  Displays a glyph for all the br tags.  
   
 ```  
-HRESULT SetShowBRTags(bool bNewValue) const;
-
- 
+HRESULT SetShowBRTags(bool bNewValue) const;  
 ```  
   
 ### Parameters  
@@ -2004,9 +1797,7 @@ HRESULT SetShowBRTags(bool bNewValue) const;
  Displays a glyph for all the comment tags.  
   
 ```  
-HRESULT SetShowCommentTags(bool bNewValue) const;
-
- 
+HRESULT SetShowCommentTags(bool bNewValue) const;  
 ```  
   
 ### Parameters  
@@ -2023,9 +1814,7 @@ HRESULT SetShowCommentTags(bool bNewValue) const;
  Displays all the tags shown in Microsoft Internet Explorer 4.0.  
   
 ```  
-HRESULT SetShowMiscTags(bool bNewValue) const;
-
- 
+HRESULT SetShowMiscTags(bool bNewValue) const;  
 ```  
   
 ### Parameters  
@@ -2042,9 +1831,7 @@ HRESULT SetShowMiscTags(bool bNewValue) const;
  Displays a glyph for all the script tags.  
   
 ```  
-HRESULT SetShowScriptTags(bool bNewValue) const;
-
- 
+HRESULT SetShowScriptTags(bool bNewValue) const;  
 ```  
   
 ### Parameters  
@@ -2061,9 +1848,7 @@ HRESULT SetShowScriptTags(bool bNewValue) const;
  Displays a glyph for all the style tags.  
   
 ```  
-HRESULT SetShowStyleTags(bool bNewValue) const;
-
- 
+HRESULT SetShowStyleTags(bool bNewValue) const;  
 ```  
   
 ### Parameters  
@@ -2080,9 +1865,7 @@ HRESULT SetShowStyleTags(bool bNewValue) const;
  Displays a glyph for all the unknown tags.  
   
 ```  
-HRESULT SetShowUnknownTags(bool bNewValue) const;
-
- 
+HRESULT SetShowUnknownTags(bool bNewValue) const;  
 ```  
   
 ### Parameters  
@@ -2099,9 +1882,7 @@ HRESULT SetShowUnknownTags(bool bNewValue) const;
  Overwrites a multiline text input control on the current selection.  
   
 ```  
-HRESULT TextArea(LPCTSTR szId = NULL) const;
-
- 
+HRESULT TextArea(LPCTSTR szId = NULL) const;  
 ```  
   
 ### Parameters  
@@ -2118,9 +1899,7 @@ HRESULT TextArea(LPCTSTR szId = NULL) const;
  Overwrites a text control on the current selection.  
   
 ```  
-HRESULT TextBox(LPCTSTR szId = NULL) const;
-
- 
+HRESULT TextBox(LPCTSTR szId = NULL) const;  
 ```  
   
 ### Parameters  
@@ -2137,9 +1916,7 @@ HRESULT TextBox(LPCTSTR szId = NULL) const;
  Removes any bookmark from the current selection.  
   
 ```  
-HRESULT UnBookmark() const;
-
- 
+HRESULT UnBookmark() const;  
 ```  
   
 ### Return Value  
@@ -2152,9 +1929,7 @@ HRESULT UnBookmark() const;
  Toggles the current selection between underlined and not underlined.  
   
 ```  
-HRESULT Underline() const;
-
- 
+HRESULT Underline() const;  
 ```  
   
 ### Return Value  
@@ -2167,9 +1942,7 @@ HRESULT Underline() const;
  Removes any hyperlink from the current selection.  
   
 ```  
-HRESULT Unlink() const;
-
- 
+HRESULT Unlink() const;  
 ```  
   
 ### Return Value  
@@ -2182,9 +1955,7 @@ HRESULT Unlink() const;
  Toggles the current selection between an ordered list and a normal format block.  
   
 ```  
-HRESULT UnorderList(LPCTSTR szId = NULL) const;
-
- 
+HRESULT UnorderList(LPCTSTR szId = NULL) const;  
 ```  
   
 ### Parameters  

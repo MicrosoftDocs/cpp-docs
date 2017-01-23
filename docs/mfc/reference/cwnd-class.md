@@ -942,16 +942,11 @@ void CheckRadioButton(
  Determines which, if any, of the child windows belonging to `CWnd` contains the specified point.  
   
 ```  
-CWnd* ChildWindowFromPoint(
-    POINT point) const;
-
- 
- 
+CWnd* ChildWindowFromPoint(POINT point) const;  
+  
 CWnd* ChildWindowFromPoint(
     POINT point,  
-    UINT nFlags) const;
-
- 
+    UINT nFlags) const;  
 ```  
   
 ### Parameters  
@@ -984,14 +979,7 @@ CWnd* ChildWindowFromPoint(
  Converts the client coordinates of a given point or rectangle on the display to screen coordinates.  
   
 ```  
-void ClientToScreen(LPPOINT lpPoint) const;
-
- 
- 
-void ClientToScreen(LPRECT lpRect) const;
-
- 
-```  
+void ClientToScreen(LPPOINT lpPoint) const;  void ClientToScreen(LPRECT lpRect) const;  ```  
   
 ### Parameters  
  `lpPoint`  
@@ -1714,9 +1702,7 @@ void DragAcceptFiles(BOOL bAccept = TRUE);
  Captures the mouse and tracks its movement until the user releases the left button, presses the ESC key, or moves the mouse outside the drag rectangle around the specified point.  
   
 ```  
-BOOL DragDetect(POINT pt) const;
-
- 
+BOOL DragDetect(POINT pt) const;  
 ```  
   
 ### Parameters  
@@ -2010,11 +1996,8 @@ void EndPaint(LPPAINTSTRUCT lpPaint);
  Initiates a dialog resource.  
   
 ```  
-BOOL ExecuteDlgInit(LPCTSTR lpszResourceName);
-
- 
-BOOL ExecuteDlgInit(LPVOID lpResource);
-```  
+BOOL ExecuteDlgInit(LPCTSTR lpszResourceName);  
+BOOL ExecuteDlgInit(LPVOID lpResource);```  
   
 ### Parameters  
  `lpszResourceName`  
@@ -2554,9 +2537,7 @@ static CWnd* PASCAL GetActiveWindow();
  Retrieves the ancestor window object of the specified window.  
   
 ```  
-CWnd* GetAncestor(UINT gaFlags) const;
-
- 
+CWnd* GetAncestor(UINT gaFlags) const;  
 ```  
   
 ### Parameters  
@@ -2620,9 +2601,7 @@ int GetCheckedRadioButton(
  Copies the client coordinates of the `CWnd` client area into the structure pointed to by `lpRect`.  
   
 ```  
-void GetClientRect(LPRECT lpRect) const;
-
- 
+void GetClientRect(LPRECT lpRect) const;  
 ```  
   
 ### Parameters  
@@ -2776,9 +2755,7 @@ CDCRenderTarget* GetDCRenderTarget();
 ```  
 CWnd* GetDescendantWindow(
     int nID,  
-    BOOL bOnlyPerm = FALSE) const;
-
- 
+    BOOL bOnlyPerm = FALSE) const;  
 ```  
   
 ### Parameters  
@@ -2811,9 +2788,7 @@ static CWnd* PASCAL GetDesktopWindow();
  Returns the window or control ID value for any child window, not only that of a control in a dialog box.  
   
 ```  
-int GetDlgCtrlID() const;
-
- 
+int GetDlgCtrlID() const;  
 ```  
   
 ### Return Value  
@@ -2829,16 +2804,11 @@ int GetDlgCtrlID() const;
  Retrieves a pointer to the specified control or child window in a dialog box or other window.  
   
 ```  
-CWnd* GetDlgItem(
-    int nID) const;
-
- 
- 
+CWnd* GetDlgItem(int nID) const;  
+  
 void GetDlgItem(
     int nID,  
-    HWND* phWnd) const;
-
- 
+    HWND* phWnd) const;  
 ```  
   
 ### Parameters  
@@ -2866,9 +2836,7 @@ void GetDlgItem(
 UINT GetDlgItemInt(
     int nID,  
     BOOL* lpTrans = NULL,  
-    BOOL bSigned = TRUE) const;
-
- 
+    BOOL bSigned = TRUE) const;  
 ```  
   
 ### Parameters  
@@ -2902,15 +2870,11 @@ UINT GetDlgItemInt(
 int GetDlgItemText(
     int nID,  
     LPTSTR lpStr,  
-    int nMaxCount) const;
-
- 
- 
+    int nMaxCount) const;  
+  
 int GetDlgItemText(
     int nID,  
-    CString& rString) const;
-
- 
+    CString& rString) const;  
 ```  
   
 ### Parameters  
@@ -2967,9 +2931,7 @@ CMFCDynamicLayout* GetDynamicLayout();
  Returns the window's extended style.  
   
 ```  
-DWORD GetExStyle() const;
-
- 
+DWORD GetExStyle() const;  
 ```  
   
 ### Return Value  
@@ -2991,9 +2953,7 @@ static CWnd* PASCAL GetFocus();
  Sends the `WM_GETFONT` message to the window to retrieve the current font.  
   
 ```  
-CFont* GetFont() const;
-
- 
+CFont* GetFont() const;  
 ```  
   
 ### Return Value  
@@ -3019,9 +2979,7 @@ static CWnd* PASCAL GetForegroundWindow();
  Call this member function to get the handle to either a big (32x32) or the handle to a small (16x16) icon, as indicated by `bBigIcon`.  
   
 ```  
-HICON GetIcon(BOOL bBigIcon) const;
-
- 
+HICON GetIcon(BOOL bBigIcon) const;  
 ```  
   
 ### Parameters  
@@ -3035,9 +2993,7 @@ HICON GetIcon(BOOL bBigIcon) const;
  Determines which pop-up window owned by `CWnd` was most recently active.  
   
 ```  
-CWnd* GetLastActivePopup() const;
-
- 
+CWnd* GetLastActivePopup() const;  
 ```  
   
 ### Return Value  
@@ -3061,9 +3017,7 @@ CWnd* GetLastActivePopup() const;
 BOOL GetLayeredWindowAttributes(
     COLORREF* pcrKey,  
     BYTE* pbAlpha,  
-    DWORD* pdwFlags) const;
-
- 
+    DWORD* pdwFlags) const;  
 ```  
   
 ### Parameters  
@@ -3086,9 +3040,7 @@ BOOL GetLayeredWindowAttributes(
  Retrieves a pointer to the menu for this window.  
   
 ```  
-CMenu* GetMenu() const;
-
- 
+CMenu* GetMenu() const;  
 ```  
   
 ### Return Value  
@@ -3109,9 +3061,7 @@ CMenu* GetMenu() const;
 BOOL GetMenuBarInfo(
     LONG idObject,  
     LONG idItem,  
-    PMENUBARINFO pmbi) const;
-
- 
+    PMENUBARINFO pmbi) const;  
 ```  
   
 ### Parameters  
@@ -3136,14 +3086,10 @@ BOOL GetMenuBarInfo(
 ```  
 CWnd* GetNextDlgGroupItem(
     CWnd* pWndCtl,  
-    BOOL bPrevious = FALSE) const;
-
- 
- 
+    BOOL bPrevious = FALSE) const;  
+  
 COleControlSiteOrWnd* GetNextDlgGroupItem(
-    COleControlSiteOrWnd* pCurSiteOrWnd = NULL) const;
-
- 
+    COleControlSiteOrWnd* pCurSiteOrWnd = NULL) const;  
 ```  
   
 ### Parameters  
@@ -3181,15 +3127,11 @@ COleControlSiteOrWnd* GetNextDlgGroupItem(
 ```  
 CWnd* GetNextDlgTabItem(
     CWnd* pWndCtl,  
-    BOOL bPrevious = FALSE) const;
-
- 
- 
+    BOOL bPrevious = FALSE) const;  
+  
 COleControlSiteOrWnd* GetNextDlgTabItem(
     COleControlSiteOrWnd* pCurSiteOrWnd,  
-    BOOL bPrevious) const;
-
- 
+    BOOL bPrevious) const;  
 ```  
   
 ### Parameters  
@@ -3213,9 +3155,7 @@ COleControlSiteOrWnd* GetNextDlgTabItem(
  Searches for the next (or previous) window in the window manager's list.  
   
 ```  
-CWnd* GetNextWindow(UINT nFlag = GW_HWNDNEXT) const;
-
- 
+CWnd* GetNextWindow(UINT nFlag = GW_HWNDNEXT) const;  
 ```  
   
 ### Parameters  
@@ -3236,9 +3176,7 @@ CWnd* GetNextWindow(UINT nFlag = GW_HWNDNEXT) const;
  Retrieves the custom site for the specified ActiveX control.  
   
 ```  
-COleControlSite* GetOleControlSite(UINT idControl) const;
-
- 
+COleControlSite* GetOleControlSite(UINT idControl) const;  
 ```  
   
 ### Parameters  
@@ -3259,9 +3197,7 @@ static CWnd* PASCAL GetOpenClipboardWindow();
  Retrieves a pointer to the owner of the window.  
   
 ```  
-CWnd* GetOwner() const;
-
- 
+CWnd* GetOwner() const;  
 ```  
   
 ### Return Value  
@@ -3276,9 +3212,7 @@ CWnd* GetOwner() const;
  Call this function to get a pointer to a child window's parent window (if any).  
   
 ```  
-CWnd* GetParent() const;
-
- 
+CWnd* GetParent() const;  
 ```  
   
 ### Return Value  
@@ -3291,9 +3225,7 @@ CWnd* GetParent() const;
  Call this member function to retrieve the parent frame window.  
   
 ```  
-CFrameWnd* GetParentFrame() const;
-
- 
+CFrameWnd* GetParentFrame() const;  
 ```  
   
 ### Return Value  
@@ -3306,9 +3238,7 @@ CFrameWnd* GetParentFrame() const;
  Call this member function to get a pointer to a child window's parent window or owner window.  
   
 ```  
-CWnd* GetParentOwner() const;
-
- 
+CWnd* GetParentOwner() const;  
 ```  
   
 ### Return Value  
@@ -3326,9 +3256,7 @@ CWnd* GetParentOwner() const;
 void GetProperty(
     DISPID dwDispID,  
     VARTYPE vtProp,  
-    void* pvProp)const;
-
- 
+    void* pvProp)const;  
 ```  
   
 ### Parameters  
@@ -3363,9 +3291,7 @@ CHwndRenderTarget* GetRenderTarget();
  Returns `m_hWnd`, or **NULL** if the **this** pointer is **NULL**.  
   
 ```  
-HWND GetSafeHwnd() const;
-
- 
+HWND GetSafeHwnd() const;  
 ```  
   
 ### Return Value  
@@ -3403,9 +3329,7 @@ static CWnd* GetSafeOwner(
  Call this member function to obtain a pointer to the specified sibling scroll bar or splitter window.  
   
 ```  
-virtual CScrollBar* GetScrollBarCtrl(int nBar) const;
-
- 
+virtual CScrollBar* GetScrollBarCtrl(int nBar) const;  
 ```  
   
 ### Parameters  
@@ -3428,9 +3352,7 @@ virtual CScrollBar* GetScrollBarCtrl(int nBar) const;
 ```  
 BOOL GetScrollBarInfo(
     LONG idObject,  
-    PSCROLLBARINFO psbi) const;
-
- 
+    PSCROLLBARINFO psbi) const;  
 ```  
   
 ### Parameters  
@@ -3504,9 +3426,7 @@ int GetScrollLimit(int nBar);
  Retrieves the current position of the scroll box of a scroll bar.  
   
 ```  
-int GetScrollPos(int nBar) const;
-
- 
+int GetScrollPos(int nBar) const;  
 ```  
   
 ### Parameters  
@@ -3530,9 +3450,7 @@ int GetScrollPos(int nBar) const;
 void GetScrollRange(
     int nBar,  
     LPINT lpMinPos,  
-    LPINT lpMaxPos) const;
-
- 
+    LPINT lpMaxPos) const;  
 ```  
   
 ### Parameters  
@@ -3558,9 +3476,7 @@ void GetScrollRange(
  Returns the current window style.  
   
 ```  
-DWORD GetStyle() const;
-
- 
+DWORD GetStyle() const;  
 ```  
   
 ### Return Value  
@@ -3570,9 +3486,7 @@ DWORD GetStyle() const;
  Allows the application to access the Control menu for copying and modification.  
   
 ```  
-CMenu* GetSystemMenu(BOOL bRevert) const;
-
- 
+CMenu* GetSystemMenu(BOOL bRevert) const;  
 ```  
   
 ### Parameters  
@@ -3600,9 +3514,7 @@ CMenu* GetSystemMenu(BOOL bRevert) const;
  Retrieves information about the specified title bar.  
   
 ```  
-BOOL GetTitleBarInfo(PTITLEBARINFO pti) const;
-
- 
+BOOL GetTitleBarInfo(PTITLEBARINFO pti) const;  
 ```  
   
 ### Parameters  
@@ -3616,9 +3528,7 @@ BOOL GetTitleBarInfo(PTITLEBARINFO pti) const;
  Call this member function to retrieve the window's top level frame window, if any.  
   
 ```  
-CFrameWnd* GetTopLevelFrame() const;
-
- 
+CFrameWnd* GetTopLevelFrame() const;  
 ```  
   
 ### Return Value  
@@ -3633,9 +3543,7 @@ CFrameWnd* GetTopLevelFrame() const;
  Call this member function to retrieve the top-level window.  
   
 ```  
-CWnd* GetTopLevelOwner() const;
-
- 
+CWnd* GetTopLevelOwner() const;  
 ```  
   
 ### Return Value  
@@ -3648,9 +3556,7 @@ CWnd* GetTopLevelOwner() const;
  Call this member function to retrieve the window's top-level parent.  
   
 ```  
-CWnd* GetTopLevelParent() const;
-
- 
+CWnd* GetTopLevelParent() const;  
 ```  
   
 ### Return Value  
@@ -3665,9 +3571,7 @@ CWnd* GetTopLevelParent() const;
  Searches for the top-level child window that belongs to `CWnd`.  
   
 ```  
-CWnd* GetTopWindow() const;
-
- 
+CWnd* GetTopWindow() const;  
 ```  
   
 ### Return Value  
@@ -3746,9 +3650,7 @@ int GetUpdateRgn(
  Returns a pointer to the window requested, or **NULL** if none.  
   
 ```  
-CWnd* GetWindow(UINT nCmd) const;
-
- 
+CWnd* GetWindow(UINT nCmd) const;  
 ```  
   
 ### Parameters  
@@ -3774,9 +3676,7 @@ CWnd* GetWindow(UINT nCmd) const;
  Call this member function to retrieve the help context identifier, if any, associated with the window.  
   
 ```  
-DWORD GetWindowContextHelpId() const;
-
- 
+DWORD GetWindowContextHelpId() const;  
 ```  
   
 ### Return Value  
@@ -3819,9 +3719,7 @@ CDC* GetWindowDC();
  Retrieves information about the window.  
   
 ```  
-BOOL GetWindowInfo(PWINDOWINFO pwi) const;
-
- 
+BOOL GetWindowInfo(PWINDOWINFO pwi) const;  
 ```  
   
 ### Parameters  
@@ -3845,9 +3743,7 @@ long GetWindowlessChildCount();
  Retrieves the show state and the normal (restored), minimized, and maximized positions of a window.  
   
 ```  
-BOOL GetWindowPlacement(WINDOWPLACEMENT* lpwndpl) const;
-
- 
+BOOL GetWindowPlacement(WINDOWPLACEMENT* lpwndpl) const;  
 ```  
   
 ### Parameters  
@@ -3864,9 +3760,7 @@ BOOL GetWindowPlacement(WINDOWPLACEMENT* lpwndpl) const;
  Copies the dimensions of the bounding rectangle of the `CWnd` object to the structure pointed to by `lpRect`.  
   
 ```  
-void GetWindowRect(LPRECT lpRect) const;
-
- 
+void GetWindowRect(LPRECT lpRect) const;  
 ```  
   
 ### Parameters  
@@ -3880,9 +3774,7 @@ void GetWindowRect(LPRECT lpRect) const;
  Call this member function to get the window region of a window.  
   
 ```  
-int GetWindowRgn(HRGN hRgn)const;
-
- 
+int GetWindowRgn(HRGN hRgn)const;  
 ```  
   
 ### Parameters  
@@ -3913,14 +3805,10 @@ int GetWindowRgn(HRGN hRgn)const;
 ```  
 int GetWindowText(
     LPTSTR lpszStringBuf,  
-    int nMaxCount) const;
-
- 
- 
+    int nMaxCount) const;  
+  
 void GetWindowText(
-    CString& rString) const;
-
- 
+    CString& rString) const;  
 ```  
   
 ### Parameters  
@@ -3948,9 +3836,7 @@ void GetWindowText(
  Returns the length of the `CWnd` object caption title.  
   
 ```  
-int GetWindowTextLength() const;
-
- 
+int GetWindowTextLength() const;  
 ```  
   
 ### Return Value  
@@ -4154,9 +4040,7 @@ void AFX_CDECL InvokeHelper(
  Indicates whether the window specified by `pWnd` is a child window or other direct descendant of `CWnd`.  
   
 ```  
-BOOL IsChild(const CWnd* pWnd) const;
-
- 
+BOOL IsChild(const CWnd* pWnd) const;  
 ```  
   
 ### Parameters  
@@ -4204,9 +4088,7 @@ BOOL IsDialogMessage(LPMSG lpMsg);
  Determines whether a button control has a check mark next to it.  
   
 ```  
-UINT IsDlgButtonChecked(int nIDButton) const;
-
- 
+UINT IsDlgButtonChecked(int nIDButton) const;  
 ```  
   
 ### Parameters  
@@ -4223,9 +4105,7 @@ UINT IsDlgButtonChecked(int nIDButton) const;
  Determines whether dynamic layout is enabled on this window. If dynamic layout is enabled, the position and size of child windows can change when the user resizes the parent window.  
   
 ```  
-BOOL IsDynamicLayoutEnabled() const;
-
- 
+BOOL IsDynamicLayoutEnabled() const;  
 ```  
   
 ### Return Value  
@@ -4237,9 +4117,7 @@ BOOL IsDynamicLayoutEnabled() const;
  Specifies whether `CWnd` is minimized (iconic).  
   
 ```  
-BOOL IsIconic() const;
-
- 
+BOOL IsIconic() const;  
 ```  
   
 ### Return Value  
@@ -4252,9 +4130,7 @@ BOOL IsIconic() const;
  Specifies whether `CWnd` has touch support.  
   
 ```  
-BOOL IsTouchWindow() const;
-
- 
+BOOL IsTouchWindow() const;  
 ```  
   
 ### Return Value  
@@ -4266,9 +4142,7 @@ BOOL IsTouchWindow() const;
  Specifies whether `CWnd` is enabled for mouse and keyboard input.  
   
 ```  
-BOOL IsWindowEnabled() const;
-
- 
+BOOL IsWindowEnabled() const;  
 ```  
   
 ### Return Value  
@@ -4281,9 +4155,7 @@ BOOL IsWindowEnabled() const;
  Determines the visibility state of the given window.  
   
 ```  
-BOOL IsWindowVisible() const;
-
- 
+BOOL IsWindowVisible() const;  
 ```  
   
 ### Return Value  
@@ -4301,9 +4173,7 @@ BOOL IsWindowVisible() const;
  Determines whether `CWnd` has been maximized.  
   
 ```  
-BOOL IsZoomed() const;
-
- 
+BOOL IsZoomed() const;  
 ```  
   
 ### Return Value  
@@ -4381,16 +4251,12 @@ HWND m_hWnd;
 ```  
 void MapWindowPoints(
     CWnd* pwndTo,  
-    LPRECT lpRect) const;
-
- 
- 
+    LPRECT lpRect) const;  
+  
 void MapWindowPoints(
     CWnd* pwndTo,  
     LPPOINT lpPoint,  
-    UINT nCount) const;
-
- 
+    UINT nCount) const;  
 ```  
   
 ### Parameters  
@@ -6895,9 +6761,7 @@ afx_msg void OnNcMButtonUp(
 ```  
 afx_msg void OnNcMouseHover(
     UINT nHitTest,   
-    CPoint point);
-
- 
+    CPoint point);  
 ```  
   
 ### Parameters  
@@ -8191,9 +8055,7 @@ afx_msg void OnTimer(UINT_PTR nIDEvent);
 ```  
 virtual INT_PTR OnToolHitTest(
     CPoint point,  
-    TOOLINFO* pTI) const;
-
- 
+    TOOLINFO* pTI) const;  
 ```  
   
 ### Parameters  
@@ -8720,18 +8582,14 @@ BOOL OpenClipboard();
  Use this operator to get the handle to the `CWnd` object.  
   
 ```  
-operator HWND() const;
-
- 
+operator HWND() const;  
 ```  
   
 ##  <a name="operator_neq"></a>  CWnd::operator !=  
  Compares two `CWnd` objects to determine if they do not have the same [m_hWnd](#m_hwnd).  
   
 ```  
-BOOL operator!=(const CWnd& wnd) const;
-
- 
+BOOL operator!=(const CWnd& wnd) const;  
 ```  
   
 ### Parameters  
@@ -8745,9 +8603,7 @@ BOOL operator!=(const CWnd& wnd) const;
  Compares two `CWnd` objects to determine if they have the same [m_hWnd](#m_hwnd).  
   
 ```  
-BOOL operator==(const CWnd& wnd) const;
-
- 
+BOOL operator==(const CWnd& wnd) const;  
 ```  
   
 ### Parameters  
@@ -8874,9 +8730,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ```  
 void Print(
     CDC* pDC,  
-    DWORD dwFlags) const;
-
- 
+    DWORD dwFlags) const;  
 ```  
   
 ### Parameters  
@@ -8919,9 +8773,7 @@ void Print(
 ```  
 void PrintClient(
     CDC* pDC,  
-    DWORD dwFlags) const;
-
- 
+    DWORD dwFlags) const;  
 ```  
   
 ### Parameters  
@@ -8949,9 +8801,7 @@ void PrintClient(
 ```  
 BOOL PrintWindow(
     CDC* pDC,  
-    UINT nFlags) const;
-
- 
+    UINT nFlags) const;  
 ```  
   
 ### Parameters  
@@ -9171,14 +9021,7 @@ int RunModalLoop(DWORD dwFlags = 0);
  Converts the screen coordinates of a given point or rectangle on the display to client coordinates.  
   
 ```  
-void ScreenToClient(LPPOINT lpPoint) const;
-
- 
- 
-void ScreenToClient(LPRECT lpRect) const;
-
- 
-```  
+void ScreenToClient(LPPOINT lpPoint) const;  void ScreenToClient(LPRECT lpRect) const;  ```  
   
 ### Parameters  
  `lpPoint`  

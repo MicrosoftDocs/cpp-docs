@@ -93,15 +93,9 @@ class CStdioFile : public CFile
  Constructs and initializes a `CStdioFile` object.  
   
 ```  
-CStdioFile();
-
- 
-CStdioFile(
-    CAtlTransactionManager* pTM);
-
- 
-CStdioFile(
-    FILE* pOpenStream);
+CStdioFile();  
+CStdioFile(CAtlTransactionManager* pTM);  
+  CStdioFile(FILE* pOpenStream);
 
  
 CStdioFile(
@@ -195,11 +189,9 @@ virtual BOOL Open(
 ```  
 virtual LPTSTR ReadString(
     LPTSTR lpsz,  
-    UINT nMax);
-
- 
-virtual BOOL ReadString(
-    CString& rString);
+    UINT nMax);  
+  
+virtual BOOL ReadString(CString& rString);
 ```  
   
 ### Parameters  

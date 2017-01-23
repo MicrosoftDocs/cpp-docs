@@ -151,9 +151,7 @@ virtual CSize CalcFixedLayout(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int CommandToIndex(UINT nIDFind) const;
-
- 
+int CommandToIndex(UINT nIDFind) const;  
 ```  
   
 ### Parameters  
@@ -207,9 +205,7 @@ BOOL CreateEx(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL DoesAllowDynInsertBefore() const;
-
- 
+virtual BOOL DoesAllowDynInsertBefore() const;  
 ```  
   
 ### Return Value  
@@ -273,9 +269,7 @@ void EnablePaneProgressBar(
  Retrieves the number of panes in the status bar.  
   
 ```  
-int GetCount() const;
-
- 
+int GetCount() const;  
 ```  
   
 ### Return Value  
@@ -285,9 +279,7 @@ int GetCount() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL GetDrawExtendedArea() const;
-
- 
+BOOL GetDrawExtendedArea() const;  
 ```  
   
 ### Return Value  
@@ -298,9 +290,7 @@ BOOL GetDrawExtendedArea() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL GetExtendedArea(CRect& rect) const;
-
- 
+virtual BOOL GetExtendedArea(CRect& rect) const;  
 ```  
   
 ### Parameters  
@@ -314,9 +304,7 @@ virtual BOOL GetExtendedArea(CRect& rect) const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-UINT GetItemID(int nIndex) const;
-
- 
+UINT GetItemID(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -332,9 +320,7 @@ UINT GetItemID(int nIndex) const;
 ```  
 void GetItemRect(
     int nIndex,  
-    LPRECT lpRect) const;
-
- 
+    LPRECT lpRect) const;  
 ```  
   
 ### Parameters  
@@ -351,9 +337,7 @@ void GetPaneInfo(
     int nIndex,  
     UINT& nID,  
     UINT& nStyle,  
-    int& cxWidth) const;
-
- 
+    int& cxWidth) const;  
 ```  
   
 ### Parameters  
@@ -368,9 +352,7 @@ void GetPaneInfo(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-long GetPaneProgress(int nIndex) const;
-
- 
+long GetPaneProgress(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -384,9 +366,7 @@ long GetPaneProgress(int nIndex) const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-UINT GetPaneStyle(int nIndex) const;
-
- 
+UINT GetPaneStyle(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -402,13 +382,9 @@ UINT GetPaneStyle(int nIndex) const;
 ```  
 void GetPaneText(
     int nIndex,  
-    CString& s) const;
-
- 
-CString GetPaneText(
-    int nIndex) const;
-
- 
+    CString& s) const;  
+  
+CString GetPaneText(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -423,9 +399,7 @@ CString GetPaneText(
  Retrieves the width of the pane of a status bar.  
   
 ```  
-int GetPaneWidth(int nIndex) const;
-
- 
+int GetPaneWidth(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -439,9 +413,7 @@ int GetPaneWidth(int nIndex) const;
  Retrieve the tooltip text of a status bar's pane.  
   
 ```  
-CString GetTipText(int nIndex) const;
-
- 
+CString GetTipText(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -589,9 +561,7 @@ void SetPaneIcon(
 void SetPaneIcon(
     int nIndex,  
     HBITMAP hBmp,  
-    COLORREF clrTransparent=RGB(255,
-    0,
-    255),  
+    COLORREF clrTransparent=RGB(255, 0, 255),  
     BOOL bUpdate=TRUE);
 ```  
   

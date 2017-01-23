@@ -182,9 +182,7 @@ virtual BOOL CreateEx(
  Gets the color of the progress indicator bar for the current progress bar control.  
   
 ```  
-COLORREF GetBarColor() const;
-
- 
+COLORREF GetBarColor() const;  
 ```  
   
 ### Return Value  
@@ -197,9 +195,7 @@ COLORREF GetBarColor() const;
  Gets the background color of the current progress bar.  
   
 ```  
-COLORREF GetBkColor() const;
-
- 
+COLORREF GetBkColor() const;  
 ```  
   
 ### Return Value  
@@ -250,9 +246,7 @@ void GetRange(
  Gets the state of the current progress bar control.  
   
 ```  
-int GetState() const;
-
- 
+int GetState() const;  
 ```  
   
 ### Return Value  
@@ -281,9 +275,7 @@ int GetState() const;
  Retrieves the step increment for the progress bar of the current progress bar control.  
   
 ```  
-int GetStep() const;
-
- 
+int GetStep() const;  
 ```  
   
 ### Return Value  

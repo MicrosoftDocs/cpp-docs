@@ -174,9 +174,7 @@ HRESULT DisplayErrorTip();
  Retrieves a validated and parsed representation of the network address that is associated with the current network address control.  
   
 ```  
-HRESULT GetAddress(PNC_ADDRESS pAddress) const;
-
- 
+HRESULT GetAddress(PNC_ADDRESS pAddress) const;  
 ```  
   
 ### Parameters  
@@ -199,9 +197,7 @@ HRESULT GetAddress(PNC_ADDRESS pAddress) const;
  Retrieves the type of network address that the current network address control can support.  
   
 ```  
-DWORD GetAllowType() const;
-
- 
+DWORD GetAllowType() const;  
 ```  
   
 ### Return Value  

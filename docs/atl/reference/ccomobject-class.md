@@ -149,7 +149,6 @@ static HRESULT WINAPI CreateInstance(CComObject<Base>** pp);
   
 ```
 STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
-
 template <class Q>  
 HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 ```  

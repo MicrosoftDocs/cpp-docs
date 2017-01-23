@@ -246,12 +246,9 @@ CPropertyPage(
  Retrieves the Windows [PROPSHEETPAGE](http://msdn.microsoft.com/library/windows/desktop/bb774548) structure associated with the `CPropertyPage` object.  
   
 ```  
-const PROPSHEETPAGE& GetPSP() const;
-
- 
- 
-PROPSHEETPAGE& GetPSP();
-```  
+const PROPSHEETPAGE& GetPSP() const;  
+  
+PROPSHEETPAGE& GetPSP();```  
   
 ### Return Value  
  A reference to the **PROPSHEETPAGE** structure.  

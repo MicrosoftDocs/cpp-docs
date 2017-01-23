@@ -102,7 +102,6 @@ CComPtr (const CComPtr<T>& lp) throw ();
   
 ```
 T* operator= (T* lp) throw ();
-
 T* operator= (const CComPtr<T>& lp) throw ();
 ```  
   

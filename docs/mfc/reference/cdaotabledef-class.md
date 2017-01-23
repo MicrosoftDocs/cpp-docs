@@ -246,11 +246,9 @@ void CreateField(
     LPCTSTR lpszName,  
     short nType,  
     long lSize,  
-    long lAttributes = 0);
-
- 
-void CreateField(
-    CDaoFieldInfo& fieldinfo);
+    long lAttributes = 0);  
+  
+void CreateField(CDaoFieldInfo& fieldinfo);
 ```  
   
 ### Parameters  
@@ -340,11 +338,8 @@ void CreateIndex(CDaoIndexInfo& indexinfo);
  Call this member function to remove a field and make it inaccessible.  
   
 ```  
-void DeleteField(LPCTSTR lpszName);
-
- 
-void DeleteField(int nIndex);
-```  
+void DeleteField(LPCTSTR lpszName);  
+void DeleteField(int nIndex);```  
   
 ### Parameters  
  `lpszName`  
@@ -362,11 +357,8 @@ void DeleteField(int nIndex);
  Call this member function to delete an index in an underlying table.  
   
 ```  
-void DeleteIndex(LPCTSTR lpszName);
-
- 
-void DeleteIndex(int nIndex);
-```  
+void DeleteIndex(LPCTSTR lpszName);  
+void DeleteIndex(int nIndex);```  
   
 ### Parameters  
  `lpszName`  
@@ -653,9 +645,7 @@ CString GetValidationText();
  Call this member function to determine whether the `CDaoTableDef` object is currently open.  
   
 ```  
-BOOL IsOpen() const;
-
- 
+BOOL IsOpen() const;  
 ```  
   
 ### Return Value  

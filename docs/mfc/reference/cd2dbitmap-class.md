@@ -137,24 +137,21 @@ CD2DBitmap(
     CRenderTarget* pParentTarget,  
     UINT uiResID,  
     LPCTSTR lpszType = NULL,  
-    CD2DSizeU sizeDest = CD2DSizeU(0,  
-    0), 
+    CD2DSizeU sizeDest = CD2DSizeU(0, 0), 
     BOOL bAutoDestroy = TRUE);
 
  
 CD2DBitmap(
     CRenderTarget* pParentTarget,  
     LPCTSTR lpszPath,  
-    CD2DSizeU sizeDest = CD2DSizeU(0,  
-    0), 
+    CD2DSizeU sizeDest = CD2DSizeU(0, 0), 
     BOOL bAutoDestroy = TRUE);
 
  
 CD2DBitmap(
     CRenderTarget* pParentTarget,  
     HBITMAP hbmpSrc,  
-    CD2DSizeU sizeDest = CD2DSizeU(0,  
-    0), 
+    CD2DSizeU sizeDest = CD2DSizeU(0, 0), 
     BOOL bAutoDestroy = TRUE);
 
  
@@ -306,9 +303,7 @@ ID2D1Bitmap* Get();
  Return the dots per inch (DPI) of the bitmap  
   
 ```  
-CD2DSizeF GetDPI() const;
-
- 
+CD2DSizeF GetDPI() const;  
 ```  
   
 ### Return Value  
@@ -318,9 +313,7 @@ CD2DSizeF GetDPI() const;
  Retrieves the pixel format and alpha mode of the bitmap  
   
 ```  
-D2D1_PIXEL_FORMAT GetPixelFormat() const;
-
- 
+D2D1_PIXEL_FORMAT GetPixelFormat() const;  
 ```  
   
 ### Return Value  
@@ -330,9 +323,7 @@ D2D1_PIXEL_FORMAT GetPixelFormat() const;
  Returns the size, in device-dependent units (pixels), of the bitmap  
   
 ```  
-CD2DSizeU GetPixelSize() const;
-
- 
+CD2DSizeU GetPixelSize() const;  
 ```  
   
 ### Return Value  
@@ -342,9 +333,7 @@ CD2DSizeU GetPixelSize() const;
  Returns the size, in device-independent pixels (DIPs), of the bitmap  
   
 ```  
-CD2DSizeF GetSize() const;
-
- 
+CD2DSizeF GetSize() const;  
 ```  
   
 ### Return Value  
@@ -354,9 +343,7 @@ CD2DSizeF GetSize() const;
  Checks resource validity  
   
 ```  
-virtual BOOL IsValid() const;
-
- 
+virtual BOOL IsValid() const;  
 ```  
   
 ### Return Value  

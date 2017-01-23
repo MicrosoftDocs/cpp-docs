@@ -120,7 +120,8 @@ CMemoryState();
   
 ```  
 BOOL Difference(
-    const CMemoryState& oldState,   const CMemoryState& newState);
+    const CMemoryState& oldState,   
+    const CMemoryState& newState);
 ```  
   
 ### Parameters  

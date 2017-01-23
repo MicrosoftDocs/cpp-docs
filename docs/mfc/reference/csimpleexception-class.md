@@ -86,11 +86,8 @@ class AFX_NOVTABLE CSimpleException : public CException
  The constructor.  
   
 ```  
-CSimpleException();
-
- 
-explicit CSimpleException(BOOL bAutoDelete);
-```  
+CSimpleException();  
+explicit CSimpleException(BOOL bAutoDelete);```  
   
 ### Parameters  
  `bAutoDelete`  

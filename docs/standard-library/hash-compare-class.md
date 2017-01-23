@@ -73,7 +73,7 @@ class hash_compare
  See examples for [hash_map::hash_map](../standard-library/hash-map-class.md#hash_map__hash_map), [hash_multimap::hash_multimap](../standard-library/hash-multimap-class.md#hash_multimap__hash_multimap), [hash_set::hash_set](../standard-library/hash-set-class.md#hash_set__hash_set), and [hash_multiset::hash_multiset](../standard-library/hash-multiset-class.md#hash_multiset__hash_multiset), for examples of how to declare and use hash_compare.  
   
 ## Requirements  
- **Header:** <hash_map>  
+ **Header:** \<hash_map>  
   
  **Namespace:** stdext  
   

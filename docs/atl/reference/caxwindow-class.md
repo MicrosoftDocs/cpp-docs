@@ -86,7 +86,9 @@ class CAxWindow : public CWindow
  Creates a new host object if one isn't already present and attaches the specified control to the host.  
   
 ```
-HRESULT AttachControl(IUnknown* pControl, IUnknown** ppUnkContainer);
+HRESULT AttachControl(
+    IUnknown* pControl,
+    IUnknown** ppUnkContainer);
 ```  
   
 ### Parameters  
@@ -120,8 +122,8 @@ CAxWindow(HWND hWnd = NULL);
 HRESULT CreateControl(
     LPCOLESTR lpszName,
     IStream* pStream = NULL,
-    IUnknown** ppUnkContainer = NULL);  
-  
+    IUnknown** ppUnkContainer = NULL);
+
 HRESULT CreateControl(
     DWORD dwResID,
     IStream* pStream = NULL,
@@ -250,7 +252,7 @@ static LPCTSTR GetWndClassName();
  Assigns an `HWND` to an existing `CAxWindow` object.  
   
 ```
-CAxWindow<TBase>& operator=(HWND   hWnd);
+CAxWindow<TBase>& operator=(HWND hWnd);
 ```  
   
 ### Parameters  
@@ -265,8 +267,7 @@ CAxWindow<TBase>& operator=(HWND   hWnd);
   
 ```
 HRESULT QueryControl(REFIID iid, void** ppUnk);
-
-template <class Q>
+template <class  Q>
 HRESULT QueryControl(Q** ppUnk);
 ```  
   
@@ -287,8 +288,7 @@ HRESULT QueryControl(Q** ppUnk);
  Returns the specified interface of the host.  
   
 ```
-HRESULT QueryHost(REFIID iid,void** ppUnk);
-
+HRESULT QueryHost(REFIID iid, void** ppUnk);
 template <class  Q>
 HRESULT QueryHost(Q** ppUnk);
 ```  
@@ -346,11 +346,4 @@ HRESULT SetExternalUIHandler(IDocHostUIHandlerDispatch* pUIHandler);
  [Composite Control Fundamentals](../../atl/atl-composite-control-fundamentals.md)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Control Containment FAQ](../../atl/atl-control-containment-faq.md)
-
-
-
-
-
-
-
 

@@ -431,9 +431,7 @@ LPCTSTR AFXAPI AfxRegisterWndClass(
     UINT nClassStyle,  
     HCURSOR hCursor = 0,  
     HBRUSH hbrBackground = 0,  
-    HICON hIcon = 0);
-
- 
+    HICON hIcon = 0);  
 ```  
   
 ### Parameters  
@@ -507,9 +505,7 @@ void AFXAPI AfxSetPerUserRegistration(BOOL bEnable);
 ```  
  
 void  
-AFXAPI AfxSetResourceHandle(HINSTANCE hInstResource);
-
- 
+AFXAPI AfxSetResourceHandle(HINSTANCE hInstResource);  
 ```  
   
 ### Parameters  
@@ -528,9 +524,7 @@ AFXAPI AfxSetResourceHandle(HINSTANCE hInstResource);
 ```  
  
 BOOL  
-AfxSocketInit(WSADATA* lpwsaData = NULL);
-
- 
+AfxSocketInit(WSADATA* lpwsaData = NULL);  
 ```  
   
 ### Parameters  
@@ -555,9 +549,7 @@ BOOL AFXAPI AfxWinInit(
     HINSTANCE hInstance,  
     HINSTANCE hPrevInstance,  
     LPTSTR lpCmdLine,  
-    int nCmdShow);
-
- 
+    int nCmdShow);  
 ```  
   
 ### Parameters  

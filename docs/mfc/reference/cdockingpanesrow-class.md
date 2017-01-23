@@ -249,9 +249,7 @@ void FixupVirtualRects(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual int GetAvailableLength(BOOL bUseVirtualRect = FALSE) const;
-
- 
+virtual int GetAvailableLength(BOOL bUseVirtualRect = FALSE) const;  
 ```  
   
 ### Parameters  
@@ -277,9 +275,7 @@ virtual void GetAvailableSpace(CRect& rect);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-void GetClientRect(CRect& rect) const;
-
- 
+void GetClientRect(CRect& rect) const;  
 ```  
   
 ### Parameters  
@@ -291,9 +287,7 @@ void GetClientRect(CRect& rect) const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-CDockSite* GetDockSite() const;
-
- 
+CDockSite* GetDockSite() const;  
 ```  
   
 ### Return Value  
@@ -304,9 +298,7 @@ CDockSite* GetDockSite() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetExtraSpace() const;
-
- 
+int GetExtraSpace() const;  
 ```  
   
 ### Return Value  
@@ -332,9 +324,7 @@ void GetGroupFromPane(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetID() const;
-
- 
+int GetID() const;  
 ```  
   
 ### Return Value  
@@ -345,9 +335,7 @@ int GetID() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetMaxPaneSize(BOOL bSkipHiddenBars = TRUE) const;
-
- 
+int GetMaxPaneSize(BOOL bSkipHiddenBars = TRUE) const;  
 ```  
   
 ### Parameters  
@@ -361,9 +349,7 @@ int GetMaxPaneSize(BOOL bSkipHiddenBars = TRUE) const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetPaneCount() const;
-
- 
+int GetPaneCount() const;  
 ```  
   
 ### Return Value  
@@ -374,9 +360,7 @@ int GetPaneCount() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-const CObList& GetPaneList() const;
-
- 
+const CObList& GetPaneList() const;  
 ```  
   
 ### Return Value  
@@ -387,9 +371,7 @@ const CObList& GetPaneList() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-DWORD GetRowAlignment() const;
-
- 
+DWORD GetRowAlignment() const;  
 ```  
   
 ### Return Value  
@@ -400,9 +382,7 @@ DWORD GetRowAlignment() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetRowHeight() const;
-
- 
+int GetRowHeight() const;  
 ```  
   
 ### Return Value  
@@ -413,9 +393,7 @@ int GetRowHeight() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetRowOffset() const;
-
- 
+int GetRowOffset() const;  
 ```  
   
 ### Return Value  
@@ -437,9 +415,7 @@ virtual int GetVisibleCount();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-void GetWindowRect(CRect& rect) const;
-
- 
+void GetWindowRect(CRect& rect) const;  
 ```  
   
 ### Parameters  
@@ -465,9 +441,7 @@ BOOL HasPane(CBasePane* pControlBar);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsEmpty() const;
-
- 
+virtual BOOL IsEmpty() const;  
 ```  
   
 ### Return Value  
@@ -478,9 +452,7 @@ virtual BOOL IsEmpty() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsExclusiveRow() const;
-
- 
+virtual BOOL IsExclusiveRow() const;  
 ```  
   
 ### Return Value  
@@ -491,9 +463,7 @@ virtual BOOL IsExclusiveRow() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-bool IsHorizontal() const;
-
- 
+bool IsHorizontal() const;  
 ```  
   
 ### Return Value  
@@ -504,9 +474,7 @@ bool IsHorizontal() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsVisible() const;
-
- 
+virtual BOOL IsVisible() const;  
 ```  
   
 ### Return Value  
@@ -668,9 +636,7 @@ virtual int ResizeByPaneDivider(int);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-void ScreenToClient(CRect& rect) const;
-
- 
+void ScreenToClient(CRect& rect) const;  
 ```  
   
 ### Parameters  

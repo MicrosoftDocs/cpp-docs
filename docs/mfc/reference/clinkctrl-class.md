@@ -202,9 +202,7 @@ virtual BOOL CreateEx(DWORD  dwExStyle,
  Retrieves the ideal height of the link control.  
   
 ```  
-int GetIdealHeight() const;
-
- 
+int GetIdealHeight() const;  
 ```  
   
 ### Return Value  
@@ -219,9 +217,7 @@ int GetIdealHeight() const;
 ```  
 int GetIdealSize(
     int cxMaxWidth,   
-    SIZE* pSize) const;
-
- 
+    SIZE* pSize) const;  
 ```  
   
 ### Parameters  
@@ -243,9 +239,7 @@ int GetIdealSize(
  Retrieves the states and attributes of a link control item.  
   
 ```  
-BOOL GetItem(PLITEM pItem) const;
-
- 
+BOOL GetItem(PLITEM pItem) const;  
 ```  
   
 ### Parameters  
@@ -264,16 +258,12 @@ BOOL GetItem(PLITEM pItem) const;
 ```  
 BOOL GetItemID(
     int iLink,  
-    CString& strID) const;
-
- 
- 
+    CString& strID) const;  
+  
 BOOL GetItemID(
     int iLink,  
     LPWSTR szID,  
-    UINT cchID) const;
-
- 
+    UINT cchID) const;  
 ```  
   
 ### Parameters  
@@ -305,9 +295,7 @@ BOOL GetItemID(
 BOOL GetItemState(
     int iLink,  
     UINT* pnState,  
-    UINT stateMask = LIS_FOCUSED | LIS_ENABLED | LIS_VISITED) const;
-
- 
+    UINT stateMask = LIS_FOCUSED | LIS_ENABLED | LIS_VISITED) const;  
 ```  
   
 ### Parameters  
@@ -332,16 +320,12 @@ BOOL GetItemState(
 ```  
 BOOL GetItemUrl(
     int iLink,  
-    CString& strUrl) const;
-
- 
- 
+    CString& strUrl) const;  
+  
 BOOL GetItemUrl(
     int iLink,  
     LPWSTR szUrl,  
-    UINT cchUrl) const;
-
- 
+    UINT cchUrl) const;  
 ```  
   
 ### Parameters  
@@ -370,9 +354,7 @@ BOOL GetItemUrl(
  Determines if the user clicked the specified link.  
   
 ```  
-BOOL HitTest(PLHITTESTINFO phti) const;
-
- 
+BOOL HitTest(PLHITTESTINFO phti) const;  
 ```  
   
 ### Parameters  

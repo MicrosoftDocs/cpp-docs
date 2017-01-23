@@ -86,12 +86,10 @@ struct CRuntimeClass
  Call this function to dynamically create the specified class during run time.  
   
 ```  
-CObject* CreateObject();
-
- 
-static CObject* PASCAL CreateObject(LPCSTR lpszClassName);
-
- 
+CObject* CreateObject();  
+  
+static CObject* PASCAL CreateObject(LPCSTR lpszClassName);  
+  
 static CObject* PASCAL CreateObject(LPCWSTR lpszClassName);
 ```  
   
@@ -112,9 +110,8 @@ static CObject* PASCAL CreateObject(LPCWSTR lpszClassName);
  Call this function to retrieve the `CRuntimeClass` structure associated with the familiar name.  
   
 ```  
-static CRuntimeClass* PASCAL FromName(LPCSTR lpszClassName);
-
- 
+static CRuntimeClass* PASCAL FromName(LPCSTR lpszClassName);  
+  
 static CRuntimeClass* PASCAL FromName(LPCWSTR lpszClassName);
 ```  
   

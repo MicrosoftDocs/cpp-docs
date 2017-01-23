@@ -120,9 +120,7 @@ CMFCPropertyGridFontProperty(
  Retrieves the font color that the user selects from the font dialog box.  
   
 ```  
-COLORREF GetColor() const;
-
- 
+COLORREF GetColor() const;  
 ```  
   
 ### Return Value  

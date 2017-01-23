@@ -201,9 +201,7 @@ ID2D1RadialGradientBrush* Get();
  Retrieves the center of the gradient ellipse  
   
 ```  
-CD2DPointF GetCenter() const;
-
- 
+CD2DPointF GetCenter() const;  
 ```  
   
 ### Return Value  
@@ -213,9 +211,7 @@ CD2DPointF GetCenter() const;
  Retrieves the offset of the gradient origin relative to the gradient ellipse's center  
   
 ```  
-CD2DPointF GetGradientOriginOffset() const;
-
- 
+CD2DPointF GetGradientOriginOffset() const;  
 ```  
   
 ### Return Value  
@@ -225,9 +221,7 @@ CD2DPointF GetGradientOriginOffset() const;
  Retrieves the x-radius of the gradient ellipse  
   
 ```  
-FLOAT GetRadiusX() const;
-
- 
+FLOAT GetRadiusX() const;  
 ```  
   
 ### Return Value  
@@ -237,9 +231,7 @@ FLOAT GetRadiusX() const;
  Retrieves the y-radius of the gradient ellipse  
   
 ```  
-FLOAT GetRadiusY() const;
-
- 
+FLOAT GetRadiusY() const;  
 ```  
   
 ### Return Value  

@@ -153,9 +153,7 @@ CMFCColorDialog(
  Retrieves the color that the user selects from the color dialog.  
   
 ```  
-COLORREF GetColor() const;
-
- 
+COLORREF GetColor() const;  
 ```  
   
 ### Return Value  
@@ -168,9 +166,7 @@ COLORREF GetColor() const;
  Retrieves the color palette that is available in the current color dialog.  
   
 ```  
-CPalette* GetPalette() const;
-
- 
+CPalette* GetPalette() const;  
 ```  
   
 ### Return Value  

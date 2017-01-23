@@ -509,9 +509,7 @@ CRgn();
  Determines whether the given region is equivalent to the region stored in the `CRgn` object.  
   
 ```  
-BOOL EqualRgn(CRgn* pRgn) const;
-
- 
+BOOL EqualRgn(CRgn* pRgn) const;  
 ```  
   
 ### Parameters  
@@ -547,9 +545,7 @@ static CRgn* PASCAL FromHandle(HRGN hRgn);
 ```  
 int GetRegionData(
     LPRGNDATA lpRgnData,  
-    int nCount) const;
-
- 
+    int nCount) const;  
 ```  
   
 ### Parameters  
@@ -569,9 +565,7 @@ int GetRegionData(
  Retrieves the coordinates of the bounding rectangle of the `CRgn` object.  
   
 ```  
-int GetRgnBox(LPRECT lpRect) const;
-
- 
+int GetRgnBox(LPRECT lpRect) const;  
 ```  
   
 ### Parameters  
@@ -610,11 +604,9 @@ int GetRgnBox(LPRECT lpRect) const;
 ```  
 int OffsetRgn(
     int x,  
-    int y);
-
- 
-int OffsetRgn(
-    POINT point);
+    int y);  
+  
+int OffsetRgn(POINT point);
 ```  
   
 ### Parameters  
@@ -650,9 +642,7 @@ int OffsetRgn(
  Use this operator to get the attached Windows GDI handle of the `CRgn` object.  
   
 ```  
-operator HRGN() const;
-
- 
+operator HRGN() const;  
 ```  
   
 ### Return Value  
@@ -669,14 +659,9 @@ operator HRGN() const;
 ```  
 BOOL PtInRegion(
     int x,  
-    int y) const;
-
- 
- 
-BOOL PtInRegion(
-    POINT point) const;
-
- 
+    int y) const;  
+  
+BOOL PtInRegion(POINT point) const;  
 ```  
   
 ### Parameters  
@@ -696,9 +681,7 @@ BOOL PtInRegion(
  Determines whether any part of the rectangle specified by `lpRect` is within the boundaries of the region stored in the `CRgn` object.  
   
 ```  
-BOOL RectInRegion(LPCRECT lpRect) const;
-
- 
+BOOL RectInRegion(LPCRECT lpRect) const;  
 ```  
   
 ### Parameters  
@@ -728,11 +711,9 @@ void SetRectRgn(
     int x1,  
     int y1,  
     int x2,  
-    int y2);
-
- 
-void SetRectRgn(
-    LPCRECT lpRect);
+    int y2);  
+  
+void SetRectRgn(LPCRECT lpRect);
 ```  
   
 ### Parameters  

@@ -154,7 +154,7 @@ func(make_pair("foo", "bar"));
  C++11 solved this ambiguity by using `enable_if` to make sure `pair<A, B>(const pair<X, Y>&)` exists **only** when `const X&` is implicitly convertible to `A` and `const Y&` is implicitly convertible to `B`.  This allows overload resolution to determine that `pair<const char *, const char *>` is not convertible to `pair<int, int>` and that the overload that takes `pair<string, string>` is viable.  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

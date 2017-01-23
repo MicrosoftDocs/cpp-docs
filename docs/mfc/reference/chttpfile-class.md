@@ -208,9 +208,7 @@ BOOL EndRequest(
  Call this member function to get the name of the HTTP file as a URL.  
   
 ```  
-virtual CString GetFileURL() const;
-
- 
+virtual CString GetFileURL() const;  
 ```  
   
 ### Return Value  
@@ -223,9 +221,7 @@ virtual CString GetFileURL() const;
  Call this member function to get the name of the object associated with this `CHttpFile`.  
   
 ```  
-CString GetObject() const;
-
- 
+CString GetObject() const;  
 ```  
   
 ### Return Value  
@@ -238,9 +234,7 @@ CString GetObject() const;
  Call this member function to get the HTTP verb (or method) associated with this `CHttpFile`.  
   
 ```  
-CString GetVerb() const;
-
- 
+CString GetVerb() const;  
 ```  
   
 ### Return Value  
@@ -257,23 +251,17 @@ BOOL QueryInfo(
     DWORD dwInfoLevel,  
     LPVOID lpvBuffer,  
     LPDWORD lpdwBufferLength,  
-    LPDWORD lpdwIndex = NULL) const;
-
- 
- 
+    LPDWORD lpdwIndex = NULL) const;  
+  
 BOOL QueryInfo(
     DWORD dwInfoLevel,  
     CString& str,  
-    LPDWORD dwIndex = NULL) const;
-
- 
- 
+    LPDWORD dwIndex = NULL) const;  
+  
 BOOL QueryInfo(
     DWORD dwInfoLevel,  
     SYSTEMTIME* pSysTime,  
-    LPDWORD dwIndex = NULL) const;
-
- 
+    LPDWORD dwIndex = NULL) const;  
 ```  
   
 ### Parameters  
@@ -376,9 +364,7 @@ BOOL QueryInfo(
  Call this member function to get the status code associated with an HTTP request and place it in the supplied `dwStatusCode` parameter.  
   
 ```  
-BOOL QueryInfoStatusCode(DWORD& dwStatusCode) const;
-
- 
+BOOL QueryInfoStatusCode(DWORD& dwStatusCode) const;  
 ```  
   
 ### Parameters  

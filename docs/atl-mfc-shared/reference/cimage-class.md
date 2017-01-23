@@ -147,7 +147,6 @@ CDC* pDC = CDC::FromHandle(m_myImage.GetDC());
 
 // Use pDC here
 pDC->Rectangle(0, 40, 100, 50);
-
 m_myImage.ReleaseDC();
 ```  
   
@@ -158,13 +157,13 @@ m_myImage.ReleaseDC();
 ```cpp
 void CMyDlg::OnRButtonDown(UINT nFlags, CPoint point)
 {
- UNREFERENCED_PARAMETER(nFlags);
+  UNREFERENCED_PARAMETER(nFlags);
 
- CBitmap* pBitmap = CBitmap::FromHandle(m_myImage);
- m_pmenuPop->AppendMenu(0, ID_BMPCOMMAND, pBitmap);
- ClientToScreen(&point);
- m_pmenuPop->TrackPopupMenu(TPM_RIGHTBUTTON | TPM_LEFTALIGN, point.x, 
- point.y, this);
+  CBitmap* pBitmap = CBitmap::FromHandle(m_myImage);
+  m_pmenuPop->AppendMenu(0, ID_BMPCOMMAND, pBitmap);
+  ClientToScreen(&point);
+  m_pmenuPop->TrackPopupMenu(TPM_RIGHTBUTTON | TPM_LEFTALIGN, point.x, 
+  point.y, this);
 }
 ```  
 
@@ -285,7 +284,7 @@ BOOL AlphaBlend(
  Attaches `hBitmap` to a `CImage` object.  
   
 ```
-void Attach(HBITMAP hBitmap,   DIBOrientation eOrientation = DIBOR_DEFAULT) throw();
+void Attach(HBITMAP hBitmap, DIBOrientation eOrientation = DIBOR_DEFAULT) throw();
 ```  
   
 ### Parameters  

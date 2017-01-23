@@ -474,8 +474,7 @@ HRESULT GetAmbientPalette(HPALETTE& hPalette);
  Retrieves the container property specified by `dispid`.  
   
 ```
-HRESULT GetAmbientProperty(DISPID dispid,
-    VARIANT& var);
+HRESULT GetAmbientProperty(DISPID dispid, VARIANT& var);
 ```  
   
 ### Parameters  
@@ -673,8 +672,7 @@ HRESULT InPlaceActivate(LONG iVerb, const RECT* prcPosRect = NULL);
  Call this method to query the control site for a pointer to the identified interface.  
   
 ```
-HRESULT InternalGetSite(REFIID riid,
-    void** ppUnkSite);
+HRESULT InternalGetSite(REFIID riid, void** ppUnkSite);
 ```  
   
 ### Parameters  

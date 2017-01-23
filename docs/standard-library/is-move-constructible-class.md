@@ -55,7 +55,7 @@ struct is_move_constructible;
  A type predicate that evaluates to true if the type `T` can be constructed by using a move operation. This predicate is equivalent to `is_constructible<T, T&&>`.  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

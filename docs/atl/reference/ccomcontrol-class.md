@@ -196,9 +196,9 @@ HRESULT FireOnRequestEdit(DISPID dispID);
   
 ```
 int MessageBox(
-  LPCTSTR lpszText, 
-  LPCTSTR lpszCaption = _T(""), 
-  UINT nType = MB_OK);
+    LPCTSTR lpszText,
+    LPCTSTR lpszCaption = _T(""),
+    UINT nType = MB_OK);
 ```  
   
 ### Parameters  

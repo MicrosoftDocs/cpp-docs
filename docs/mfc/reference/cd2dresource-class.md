@@ -131,9 +131,7 @@ virtual void Destroy() = 0;
  Check auto destroy flag.  
   
 ```  
-BOOL IsAutoDestroy() const;
-
- 
+BOOL IsAutoDestroy() const;  
 ```  
   
 ### Return Value  

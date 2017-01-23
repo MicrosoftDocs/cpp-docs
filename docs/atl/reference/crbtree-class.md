@@ -42,10 +42,10 @@ This class provides methods for creating and utilizing a Red-Black tree.
 ## Syntax  
   
 ```
-template <typename K, 
-          typename V,
-          class KTraits = CElementTraits<K>,
-          class VTraits = CElementTraits<V>>  
+template <typename K,
+          typename V, 
+          class KTraits = CElementTraits<K>, 
+          class VTraits = CElementTraits<V>> 
 class CRBTree
 ```  
   
@@ -165,12 +165,8 @@ POSITION FindFirstKeyAfter(KINARGTYPE key) const throw();
   
 ```
 CPair* GetAt(POSITION pos) throw();
-
 const CPair* GetAt(POSITION pos) const throw();
-void GetAt(
-    POSITION pos,
-    KOUTARGTYPE key,
-    VOUTARGTYPE value) const;
+void GetAt(POSITION pos, KOUTARGTYPE key, VOUTARGTYPE value) const;
 ```  
   
 ### Parameters  
@@ -405,9 +401,7 @@ void RemoveAt(POSITION pos) throw();
  Call this method to change the value stored at a given position in the `CRBTree` object.  
   
 ```
-void SetValueAt(
-    POSITION pos,
-    VINARGTYPE value);
+void SetValueAt(POSITION pos, VINARGTYPE value);
 ```  
   
 ### Parameters  

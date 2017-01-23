@@ -172,7 +172,7 @@ BOOL SetPipeName(
  Call this method to set the time in milliseconds that this class will wait for the named pipe to become available.  
   
 ```
-void SetTimeout(DWORD   dwTimeout);
+void SetTimeout(DWORD dwTimeout);
 ```  
   
 ### Parameters  

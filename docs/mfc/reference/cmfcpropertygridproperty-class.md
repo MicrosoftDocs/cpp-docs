@@ -431,9 +431,7 @@ virtual CString FormatProperty();
  Retrieves a `DWORD` value that is associated with a property.  
   
 ```  
-DWORD_PTR GetData() const;
-
- 
+DWORD_PTR GetData() const;  
 ```  
   
 ### Return Value  
@@ -446,9 +444,7 @@ DWORD_PTR GetData() const;
  Retrieves a property description.  
   
 ```  
-const CString& GetDescription() const;
-
- 
+const CString& GetDescription() const;  
 ```  
   
 ### Return Value  
@@ -461,9 +457,7 @@ const CString& GetDescription() const;
  Retrieves the number of expanded sub-items.  
   
 ```  
-int GetExpandedSubItems(BOOL bIncludeHidden=TRUE) const;
-
- 
+int GetExpandedSubItems(BOOL bIncludeHidden=TRUE) const;  
 ```  
   
 ### Parameters  
@@ -481,9 +475,7 @@ int GetExpandedSubItems(BOOL bIncludeHidden=TRUE) const;
  Retrieves the zero-based index of the property's hierarchy level.  
   
 ```  
-int GetHierarchyLevel() const;
-
- 
+int GetHierarchyLevel() const;  
 ```  
   
 ### Return Value  
@@ -495,9 +487,7 @@ int GetHierarchyLevel() const;
  Retrieves the name of the property.  
   
 ```  
-LPCTSTR GetName() const;
-
- 
+LPCTSTR GetName() const;  
 ```  
   
 ### Return Value  
@@ -521,9 +511,7 @@ virtual CString GetNameTooltip();
  Retrieves the text of the option that is specified by an index.  
   
 ```  
-LPCTSTR GetOption(int nIndex) const;
-
- 
+LPCTSTR GetOption(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -539,9 +527,7 @@ LPCTSTR GetOption(int nIndex) const;
  Retrieves the number of options that belong to a property.  
   
 ```  
-int GetOptionCount() const;
-
- 
+int GetOptionCount() const;  
 ```  
   
 ### Return Value  
@@ -554,9 +540,7 @@ int GetOptionCount() const;
  Retrieves the initial value of the current property.  
   
 ```  
-const COleVariant& GetOriginalValue() const;
-
- 
+const COleVariant& GetOriginalValue() const;  
 ```  
   
 ### Return Value  
@@ -571,9 +555,7 @@ const COleVariant& GetOriginalValue() const;
  Retrieves a pointer to a parent property.  
   
 ```  
-CMFCPropertyGridProperty* GetParent() const;
-
- 
+CMFCPropertyGridProperty* GetParent() const;  
 ```  
   
 ### Return Value  
@@ -585,9 +567,7 @@ CMFCPropertyGridProperty* GetParent() const;
  Retrieves the bounding rectangle of a property.  
   
 ```  
-CRect GetRect() const;
-
- 
+CRect GetRect() const;  
 ```  
   
 ### Return Value  
@@ -599,9 +579,7 @@ CRect GetRect() const;
  Retrieves a sub-property identified by a zero-based index.  
   
 ```  
-CMFCPropertyGridProperty* GetSubItem(int nIndex) const;
-
- 
+CMFCPropertyGridProperty* GetSubItem(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -621,9 +599,7 @@ CMFCPropertyGridProperty* GetSubItem(int nIndex) const;
  Retrieves the number of sub-items.  
   
 ```  
-int GetSubItemsCount() const;
-
- 
+int GetSubItemsCount() const;  
 ```  
   
 ### Return Value  
@@ -635,9 +611,7 @@ int GetSubItemsCount() const;
  Retrieves a property value.  
   
 ```  
-virtual const _variant_t& GetValue() const;
-
- 
+virtual const _variant_t& GetValue() const;  
 ```  
   
 ### Return Value  
@@ -661,9 +635,7 @@ virtual CString GetValueTooltip();
  Indicates whether a property contains a button.  
   
 ```  
-virtual BOOL HasButton() const;
-
- 
+virtual BOOL HasButton() const;  
 ```  
   
 ### Return Value  
@@ -683,9 +655,7 @@ CMFCPropertyGridProperty* HitTest(
 CMFCPropertyGridProperty* HitTest(
     CPoint pt,  
     CMFCPropertyGridProperty::ClickArea* pnArea=NULL,  
-    BOOL bPropsOnly=FALSE) const;
-
- 
+    BOOL bPropsOnly=FALSE) const;  
 ```  
   
 ### Parameters  
@@ -728,9 +698,7 @@ void Init();
  Indicates whether a property is editable.  
   
 ```  
-BOOL IsAllowEdit() const;
-
- 
+BOOL IsAllowEdit() const;  
 ```  
   
 ### Return Value  
@@ -742,9 +710,7 @@ BOOL IsAllowEdit() const;
  Indicates whether a property is enabled or disabled.  
   
 ```  
-BOOL IsEnabled() const;
-
- 
+BOOL IsEnabled() const;  
 ```  
   
 ### Return Value  
@@ -757,9 +723,7 @@ BOOL IsEnabled() const;
  Indicates whether a property is expanded or collapsed.  
   
 ```  
-BOOL IsExpanded() const;
-
- 
+BOOL IsExpanded() const;  
 ```  
   
 ### Return Value  
@@ -771,9 +735,7 @@ BOOL IsExpanded() const;
  Indicates whether the current property represents a group.  
   
 ```  
-BOOL IsGroup() const;
-
- 
+BOOL IsGroup() const;  
 ```  
   
 ### Return Value  
@@ -786,9 +748,7 @@ BOOL IsGroup() const;
  Indicates whether the current property is editable.  
   
 ```  
-BOOL IsInPlaceEditing() const;
-
- 
+BOOL IsInPlaceEditing() const;  
 ```  
   
 ### Return Value  
@@ -800,9 +760,7 @@ BOOL IsInPlaceEditing() const;
  Indicates whether the current property is modified.  
   
 ```  
-BOOL IsModified() const;
-
- 
+BOOL IsModified() const;  
 ```  
   
 ### Return Value  
@@ -814,9 +772,7 @@ BOOL IsModified() const;
  Indicates whether the parents of the current property are expanded.  
   
 ```  
-BOOL IsParentExpanded() const;
-
- 
+BOOL IsParentExpanded() const;  
 ```  
   
 ### Return Value  
@@ -828,9 +784,7 @@ BOOL IsParentExpanded() const;
  Indicates whether the current property is selected.  
   
 ```  
-virtual BOOL IsSelected() const;
-
- 
+virtual BOOL IsSelected() const;  
 ```  
   
 ### Return Value  
@@ -842,9 +796,7 @@ virtual BOOL IsSelected() const;
  Indicates whether the specified property is a sub-item of the current property.  
   
 ```  
-BOOL IsSubItem(CMFCPropertyGridProperty* pProp) const;
-
- 
+BOOL IsSubItem(CMFCPropertyGridProperty* pProp) const;  
 ```  
   
 ### Parameters  
@@ -858,9 +810,7 @@ BOOL IsSubItem(CMFCPropertyGridProperty* pProp) const;
  Indicates whether the value of the current property has changed.  
   
 ```  
-virtual BOOL IsValueChanged() const;
-
- 
+virtual BOOL IsValueChanged() const;  
 ```  
   
 ### Return Value  
@@ -872,9 +822,7 @@ virtual BOOL IsValueChanged() const;
  Indicates whether the current property is visible.  
   
 ```  
-BOOL IsVisible() const;
-
- 
+BOOL IsVisible() const;  
 ```  
   
 ### Return Value  
@@ -1242,9 +1190,7 @@ virtual void OnSelectCombo();
  Called by the framework when the mouse pointer moves to a property item.  
   
 ```  
-virtual BOOL OnSetCursor() const;
-
- 
+virtual BOOL OnSetCursor() const;  
 ```  
   
 ### Return Value  

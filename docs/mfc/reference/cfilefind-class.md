@@ -120,9 +120,7 @@ class CFileFind : public CObject
  This member function is called when a `CFileFind` object is constructed.  
   
 ```  
-CFileFind();
-
- 
+CFileFind();  
 CFileFind(CAtlTransactionManager* pTM);
 ```  
   
@@ -281,13 +279,8 @@ virtual BOOL FindNextFile();
  Call this member function to get the time the specified file was created.  
   
 ```  
-virtual BOOL GetCreationTime(FILETIME* pTimeStamp) const;
-
- 
- 
-virtual BOOL GetCreationTime(CTime& refTime) const;
-
- 
+virtual BOOL GetCreationTime(FILETIME* pTimeStamp) const;  
+virtual BOOL GetCreationTime(CTime& refTime) const;  
 ```  
   
 ### Parameters  
@@ -313,9 +306,7 @@ virtual BOOL GetCreationTime(CTime& refTime) const;
  Call this member function to get the name of the found file.  
   
 ```  
-virtual CString GetFileName() const;
-
- 
+virtual CString GetFileName() const;  
 ```  
   
 ### Return Value  
@@ -339,9 +330,7 @@ virtual CString GetFileName() const;
  Call this member function to get the full path of the specified file.  
   
 ```  
-virtual CString GetFilePath() const;
-
- 
+virtual CString GetFilePath() const;  
 ```  
   
 ### Return Value  
@@ -365,9 +354,7 @@ virtual CString GetFilePath() const;
  Call this member function to get the title of the found file.  
   
 ```  
-virtual CString GetFileTitle() const;
-
- 
+virtual CString GetFileTitle() const;  
 ```  
   
 ### Return Value  
@@ -391,9 +378,7 @@ virtual CString GetFileTitle() const;
  Call this member function to retrieve the specified URL.  
   
 ```  
-virtual CString GetFileURL() const;
-
- 
+virtual CString GetFileURL() const;  
 ```  
   
 ### Return Value  
@@ -411,13 +396,8 @@ virtual CString GetFileURL() const;
  Call this member function to get the time that the specified file was last accessed.  
   
 ```  
-virtual BOOL GetLastAccessTime(CTime& refTime) const;
-
- 
- 
-virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
-
- 
+virtual BOOL GetLastAccessTime(CTime& refTime) const;  
+virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;  
 ```  
   
 ### Parameters  
@@ -443,13 +423,8 @@ virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
  Call this member function to get the last time the file was changed.  
   
 ```  
-virtual BOOL GetLastWriteTime(FILETIME* pTimeStamp) const;
-
- 
- 
-virtual BOOL GetLastWriteTime(CTime& refTime) const;
-
- 
+virtual BOOL GetLastWriteTime(FILETIME* pTimeStamp) const;  
+virtual BOOL GetLastWriteTime(CTime& refTime) const;  
 ```  
   
 ### Parameters  
@@ -475,9 +450,7 @@ virtual BOOL GetLastWriteTime(CTime& refTime) const;
  Call this member function to get the length of the found file, in bytes.  
   
 ```  
-ULONGLONG GetLength() const;
-
- 
+ULONGLONG GetLength() const;  
 ```  
   
 ### Return Value  
@@ -498,9 +471,7 @@ ULONGLONG GetLength() const;
  Call this member function to get the root of the found file.  
   
 ```  
-virtual CString GetRoot() const;
-
- 
+virtual CString GetRoot() const;  
 ```  
   
 ### Return Value  
@@ -518,9 +489,7 @@ virtual CString GetRoot() const;
  Call this member function to determine if the found file is archived.  
   
 ```  
-BOOL IsArchived() const;
-
- 
+BOOL IsArchived() const;  
 ```  
   
 ### Return Value  
@@ -540,9 +509,7 @@ BOOL IsArchived() const;
  Call this member function to determine if the found file is compressed.  
   
 ```  
-BOOL IsCompressed() const;
-
- 
+BOOL IsCompressed() const;  
 ```  
   
 ### Return Value  
@@ -562,9 +529,7 @@ BOOL IsCompressed() const;
  Call this member function to determine if the found file is a directory.  
   
 ```  
-BOOL IsDirectory() const;
-
- 
+BOOL IsDirectory() const;  
 ```  
   
 ### Return Value  
@@ -586,9 +551,7 @@ BOOL IsDirectory() const;
  Call this member function to test for the current directory and parent directory markers while iterating through files.  
   
 ```  
-virtual BOOL IsDots() const;
-
- 
+virtual BOOL IsDots() const;  
 ```  
   
 ### Return Value  
@@ -604,9 +567,7 @@ virtual BOOL IsDots() const;
  Call this member function to determine if the found file is hidden.  
   
 ```  
-BOOL IsHidden() const;
-
- 
+BOOL IsHidden() const;  
 ```  
   
 ### Return Value  
@@ -626,9 +587,7 @@ BOOL IsHidden() const;
  Call this member function to determine if the found file is a normal file.  
   
 ```  
-BOOL IsNormal() const;
-
- 
+BOOL IsNormal() const;  
 ```  
   
 ### Return Value  
@@ -648,9 +607,7 @@ BOOL IsNormal() const;
  Call this member function to determine if the found file is read-only.  
   
 ```  
-BOOL IsReadOnly() const;
-
- 
+BOOL IsReadOnly() const;  
 ```  
   
 ### Return Value  
@@ -670,9 +627,7 @@ BOOL IsReadOnly() const;
  Call this member function to determine if the found file is a system file.  
   
 ```  
-BOOL IsSystem() const;
-
- 
+BOOL IsSystem() const;  
 ```  
   
 ### Return Value  
@@ -692,9 +647,7 @@ BOOL IsSystem() const;
  Call this member function to determine if the found file is a temporary file.  
   
 ```  
-BOOL IsTemporary() const;
-
- 
+BOOL IsTemporary() const;  
 ```  
   
 ### Return Value  
@@ -723,9 +676,7 @@ CAtlTransactionManager* m_pTM;
  Call this member function to test the file attributes on the found file.  
   
 ```  
-virtual BOOL MatchesMask(DWORD dwMask) const;
-
- 
+virtual BOOL MatchesMask(DWORD dwMask) const;  
 ```  
   
 ### Parameters  

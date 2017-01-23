@@ -153,9 +153,7 @@ BOOL Create(
  Provides direct access to `CReBarCtrl` the underlying common control for `CMFCReBar` objects.  
   
 ```  
-CReBarCtrl& GetReBarCtrl() const;
-
- 
+CReBarCtrl& GetReBarCtrl() const;  
 ```  
   
 ### Return Value  
@@ -185,9 +183,7 @@ virtual CSize CalcFixedLayout(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL CanFloat() const;
-
- 
+virtual BOOL CanFloat() const;  
 ```  
   
 ### Return Value  
@@ -210,9 +206,7 @@ void EnableDocking(DWORD dwDockStyle);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-UINT GetReBarBandInfoSize() const;
-
- 
+UINT GetReBarBandInfoSize() const;  
 ```  
   
 ### Return Value  
@@ -239,9 +233,7 @@ virtual BOOL OnShowControlBarMenu(CPoint);
 ```  
 virtual INT_PTR OnToolHitTest(
     CPoint point,  
-    TOOLINFO* pTI) const;
-
- 
+    TOOLINFO* pTI) const;  
 ```  
   
 ### Parameters  

@@ -94,8 +94,7 @@ CMFCRibbonMainPanel* pMainPanel = m_wndRibbonBar.AddMainCategory(_T("Main Menu")
 ...  
 pMainPanel->Add(new CMFCRibbonSeparator(TRUE));
 ```  
-  
- Call [CMFCRibbonPanel::AddSeparator](../../mfc/reference/cmfcribbonpanel-class.md#addseparator) to add separators to ribbon panels. The separators are allocated and added internally by the `AddSeparator` method.  
+Call [CMFCRibbonPanel::AddSeparator](../../mfc/reference/cmfcribbonpanel-class.md#addseparator) to add separators to ribbon panels. The separators are allocated and added internally by the `AddSeparator` method.  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -174,9 +173,7 @@ virtual CSize GetRegularSize(CDC* pDC);
  Indicates whether this is a separator.  
   
 ```  
-virtual BOOL IsSeparator() const;
-
- 
+virtual BOOL IsSeparator() const;  
 ```  
   
 ### Return Value  
@@ -186,9 +183,7 @@ virtual BOOL IsSeparator() const;
  Indicates whether this is a tab stop.  
   
 ```  
-virtual BOOL IsTabStop() const;
-
- 
+virtual BOOL IsTabStop() const;  
 ```  
   
 ### Return Value  

@@ -120,8 +120,7 @@ CSplitButton();
 CSplitButton(
     UINT nMenuId,   
     UINT nSubMenuId)  
-CSplitButton(
-    CMenu* pMenu)  
+CSplitButton(CMenu* pMenu)  
 ```  
   
 ### Parameters  
@@ -171,11 +170,9 @@ END_MESSAGE_MAP()
 ```  
 void SetDropDownMenu(
     UINT nMenuId,   
-    UINT nSubMenuId);
-
- 
-void SetDropDownMenu(
-    CMenu* pMenu);
+    UINT nSubMenuId);  
+  
+void SetDropDownMenu(CMenu* pMenu);
 ```  
   
 ### Parameters  

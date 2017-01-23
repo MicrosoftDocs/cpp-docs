@@ -75,7 +75,7 @@ translation.priority.mt:
 |[hash_multimap Class](../standard-library/hash-multimap-class.md)|Used for the storage and fast retrieval of data from a collection in which each element is a pair that has a sort key whose value need not be unique and an associated data value.|  
   
 ## Requirements  
- **Header:** <hash_map>  
+ **Header:** \<hash_map>  
   
  **Namespace:** stdext  
   

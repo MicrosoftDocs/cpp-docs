@@ -94,9 +94,7 @@ CListView();
  Call this member function to get a reference to the list control associated with the view.  
   
 ```  
-CListCtrl& GetListCtrl() const;
-
- 
+CListCtrl& GetListCtrl() const;  
 ```  
   
 ### Return Value  

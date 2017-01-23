@@ -43,7 +43,8 @@ Provides an implicit conversion from `vector<bool>::reference` to `bool`.
   
 ## Syntax  
   
-```  operator bool() const;
+```  
+operator bool() const;
 ```  
   
 ## Return Value  

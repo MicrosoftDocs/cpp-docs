@@ -99,7 +99,7 @@ is_member_object_pointer<int (functional::*)()> == false
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

@@ -131,9 +131,7 @@ virtual INT_PTR DoModal();
  Called by the framework to build a string that describes a key mapping. By default, the string contains the command name, the shortcut keys used, and the shortcut key description.  
   
 ```  
-virtual CString FormatItem(int nItem) const;
-
- 
+virtual CString FormatItem(int nItem) const;  
 ```  
   
 ### Parameters  
@@ -149,9 +147,7 @@ virtual CString FormatItem(int nItem) const;
  Retrieves a string value. The string contains a list of shortcut keys that are associated with a specified command.  
   
 ```  
-virtual CString GetCommandKeys(UINT uiCmdID) const;
-
- 
+virtual CString GetCommandKeys(UINT uiCmdID) const;  
 ```  
   
 ### Parameters  
@@ -188,9 +184,7 @@ virtual void OnInsertItem(
 virtual int OnPrintHeader(
     CDC& dc,  
     int nPage,  
-    int cx) const;
-
- 
+    int cx) const;  
 ```  
   
 ### Parameters  
@@ -218,9 +212,7 @@ virtual int OnPrintItem(
     int nItem,  
     int y,  
     int cx,  
-    BOOL bCalcHeight) const;
-
- 
+    BOOL bCalcHeight) const;  
 ```  
   
 ### Parameters  

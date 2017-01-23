@@ -81,13 +81,9 @@ class CMFCRibbonApplicationButton : public CMFCRibbonButton
  Constructs and initializes a [CMFCRibbonApplicationButton](../../mfc/reference/cmfcribbonapplicationbutton-class.md) object.  
   
 ```  
-CMFCRibbonApplicationButton();
-
- 
-CMFCRibbonApplicationButton(UINT uiBmpResID);
-
- 
-CMFCRibbonApplicationButton(HBITMAP hBmp);
+CMFCRibbonApplicationButton();  
+CMFCRibbonApplicationButton(UINT uiBmpResID);  
+  CMFCRibbonApplicationButton(HBITMAP hBmp);
 ```  
   
 ### Parameters  
@@ -104,11 +100,8 @@ CMFCRibbonApplicationButton(HBITMAP hBmp);
  Assigns an image to the application button.  
   
 ```  
-void SetImage(UINT uiBmpResID);
-
- 
-void SetImage(HBITMAP hBmp);
-```  
+void SetImage(UINT uiBmpResID);  
+void SetImage(HBITMAP hBmp);```  
   
 ### Parameters  
  [in] `uiBmpResID`  

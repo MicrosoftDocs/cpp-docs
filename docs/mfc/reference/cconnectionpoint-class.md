@@ -163,9 +163,7 @@ virtual int GetMaxConnections();
  Retrieves a pointer to the connection element at `pos`.  
   
 ```  
-LPUNKNOWN GetNextConnection(POSITION& pos) const;
-
- 
+LPUNKNOWN GetNextConnection(POSITION& pos) const;  
 ```  
   
 ### Parameters  
@@ -185,9 +183,7 @@ LPUNKNOWN GetNextConnection(POSITION& pos) const;
  Starts a map iteration by returning a **POSITION** value that can be passed to a [GetNextConnection](#getnextconnection) call.  
   
 ```  
-POSITION GetStartPosition() const;
-
- 
+POSITION GetStartPosition() const;  
 ```  
   
 ### Return Value  

@@ -57,7 +57,7 @@ struct is_final;
  An instance of the type predicate holds true if the type `T` is a class type marked `final`, otherwise it holds false. If `T` is a class type, it must be a complete type.  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

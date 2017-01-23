@@ -172,9 +172,7 @@ virtual INT_PTR DoModal();
  Call this function after calling `DoModal` to retrieve the number of copies requested.  
   
 ```  
-int GetCopies() const;
-
- 
+int GetCopies() const;  
 ```  
   
 ### Return Value  
@@ -201,9 +199,7 @@ BOOL GetDefaults();
  Call this function after calling [DoModal](#domodal) to retrieve the name of the currently selected printer, or after calling [GetDefaults](#getdefaults) to retrieve the name of the default printer.  
   
 ```  
-CString GetDeviceName() const;
-
- 
+CString GetDeviceName() const;  
 ```  
   
 ### Return Value  
@@ -216,9 +212,7 @@ CString GetDeviceName() const;
  Call this function after calling [DoModal](#domodal) or [GetDefaults](#getdefaults) to retrieve information about the printing device.  
   
 ```  
-LPDEVMODE GetDevMode() const;
-
- 
+LPDEVMODE GetDevMode() const;  
 ```  
   
 ### Return Value  
@@ -228,9 +222,7 @@ LPDEVMODE GetDevMode() const;
  Call this function after calling [DoModal](#domodal) or [GetDefaults](#getdefaults) to retrieve the name of the system-defined printer device driver.  
   
 ```  
-CString GetDriverName() const;
-
- 
+CString GetDriverName() const;  
 ```  
   
 ### Return Value  
@@ -243,9 +235,7 @@ CString GetDriverName() const;
  Call this function after calling [DoModal](#domodal) or [GetDefaults](#getdefaults) to retrieve the name of the currently selected printer port.  
   
 ```  
-CString GetPortName() const;
-
- 
+CString GetPortName() const;  
 ```  
   
 ### Return Value  
@@ -255,9 +245,7 @@ CString GetPortName() const;
  Returns a handle to the printer device context.  
   
 ```  
-HDC GetPrinterDC() const;
-
- 
+HDC GetPrinterDC() const;  
 ```  
   
 ### Return Value  
@@ -282,9 +270,7 @@ PRINTDLGEX m_pdex;
  Call this function after calling `DoModal` to determine whether to print all pages in the document.  
   
 ```  
-BOOL PrintAll() const;
-
- 
+BOOL PrintAll() const;  
 ```  
   
 ### Return Value  
@@ -294,9 +280,7 @@ BOOL PrintAll() const;
  Call this function after calling `DoModal` to determine whether the printer should collate all printed copies of the document.  
   
 ```  
-BOOL PrintCollate() const;
-
- 
+BOOL PrintCollate() const;  
 ```  
   
 ### Return Value  
@@ -306,9 +290,7 @@ BOOL PrintCollate() const;
  Call this function after calling `DoModal` to determine whether to print the current page in the document.  
   
 ```  
-BOOL PrintCurrentPage() const;
-
- 
+BOOL PrintCurrentPage() const;  
 ```  
   
 ### Return Value  
@@ -318,9 +300,7 @@ BOOL PrintCurrentPage() const;
  Call this function after calling `DoModal` to determine whether to print only a range of pages in the document.  
   
 ```  
-BOOL PrintRange() const;
-
- 
+BOOL PrintRange() const;  
 ```  
   
 ### Return Value  
@@ -333,9 +313,7 @@ BOOL PrintRange() const;
  Call this function after calling `DoModal` to determine whether to print only the currently selected items.  
   
 ```  
-BOOL PrintSelection() const;
-
- 
+BOOL PrintSelection() const;  
 ```  
   
 ### Return Value  

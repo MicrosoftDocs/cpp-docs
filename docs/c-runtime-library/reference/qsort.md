@@ -20,6 +20,7 @@ apilocation:
   - "msvcr110_clr0400.dll"
   - "msvcr120.dll"
   - "msvcr120_clr0400.dll"
+  - "ntdll.dll"
   - "ucrtbase.dll"
   - "api-ms-win-crt-utility-l1-1-0.dll"
 apitype: "DLLExport"

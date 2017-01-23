@@ -312,9 +312,7 @@ int GetLogFont(LOGFONT* pLogFont);
  Use this operator to get the Windows GDI handle of the font attached to the `CFont` object.  
   
 ```  
-operator HFONT() const;
-
- 
+operator HFONT() const;  
 ```  
   
 ### Return Value  

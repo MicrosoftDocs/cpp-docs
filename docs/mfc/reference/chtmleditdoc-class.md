@@ -82,9 +82,7 @@ CHtmlEditDoc();
  Retrieves the [CHtmlEditView](../../mfc/reference/chtmleditview-class.md) object attached to this document.  
   
 ```  
-virtual CHtmlEditView* GetView() const;
-
- 
+virtual CHtmlEditView* GetView() const;  
 ```  
   
 ### Return Value  

@@ -120,13 +120,9 @@ HRESULT Attach(DWORD dwCookie) throw();
   
 ```
 CComGITPtr() throw();
-
 CComGITPtr(T* p);
-
 CComGITPtr(const CComGITPtr& git);
-
-explicit CComGITPtr(DWORD  dwCookie) throw();
-
+explicit CComGITPtr(DWORD dwCookie) throw();
 CComGITPtr(CComGITPtr&& rv);
 ```  
   
@@ -216,11 +212,8 @@ DWORD m_dwCookie;
   
 ```
 CComGITPtr& operator= (T* p);
-
 CComGITPtr& operator= (const CComGITPtr& git);
-
 CComGITPtr& operator= (DWORD dwCookie);
-
 CComGITPtr& operator= (CComGITPtr&& rv);
 ```  
   

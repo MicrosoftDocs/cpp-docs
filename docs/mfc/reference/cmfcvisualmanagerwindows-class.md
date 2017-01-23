@@ -156,9 +156,7 @@ class CMFCVisualManagerWindows : public CMFCVisualManagerOfficeXP
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL AlwaysHighlight3DTabs() const;
-
- 
+virtual BOOL AlwaysHighlight3DTabs() const;  
 ```  
   
 ### Return Value  
@@ -248,9 +246,7 @@ virtual BOOL DrawPushButtonWinXP(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual CSize GetButtonExtraBorder() const;
-
- 
+virtual CSize GetButtonExtraBorder() const;  
 ```  
   
 ### Return Value  
@@ -261,9 +257,7 @@ virtual CSize GetButtonExtraBorder() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual CSize GetCaptionButtonExtraBorder() const;
-
- 
+virtual CSize GetCaptionButtonExtraBorder() const;  
 ```  
   
 ### Return Value  
@@ -274,9 +268,7 @@ virtual CSize GetCaptionButtonExtraBorder() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual int GetDockingPaneCaptionExtraHeight() const;
-
- 
+virtual int GetDockingPaneCaptionExtraHeight() const;  
 ```  
   
 ### Return Value  
@@ -301,9 +293,7 @@ virtual COLORREF GetHighlightedMenuItemTextColor(CMFCToolBarMenuButton* pButton)
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual int GetPopupMenuGap() const;
-
- 
+virtual int GetPopupMenuGap() const;  
 ```  
   
 ### Return Value  
@@ -331,9 +321,7 @@ virtual COLORREF GetToolbarButtonTextColor(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsDefaultWinXPPopupButton(CMFCDesktopAlertWndButton* pButton) const;
-
- 
+virtual BOOL IsDefaultWinXPPopupButton(CMFCDesktopAlertWndButton* pButton) const;  
 ```  
   
 ### Parameters  
@@ -358,9 +346,7 @@ virtual BOOL IsHighlightWholeMenuItem();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsOfficeStyleMenus() const;
-
- 
+BOOL IsOfficeStyleMenus() const;  
 ```  
   
 ### Return Value  
@@ -371,9 +357,7 @@ BOOL IsOfficeStyleMenus() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsOfficeXPStyleMenus() const;
-
- 
+virtual BOOL IsOfficeXPStyleMenus() const;  
 ```  
   
 ### Return Value  
@@ -384,9 +368,7 @@ virtual BOOL IsOfficeXPStyleMenus() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsWindowsThemingSupported() const;
-
- 
+virtual BOOL IsWindowsThemingSupported() const;  
 ```  
   
 ### Return Value  

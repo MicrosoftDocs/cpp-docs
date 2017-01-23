@@ -199,7 +199,7 @@ CComContainedObject<contained> m_contained;
   
 ```
 STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
-template <class Q>
+template <class Q>  
 HRESULT QueryInterface(Q** pp);
 ```  
   

@@ -250,9 +250,7 @@ void EnableValueChangedEvent (
  Returns default value.  
   
 ```  
-DOUBLE GetDefaultValue() const;
-
- 
+DOUBLE GetDefaultValue() const;  
 ```  
   
 ### Return Value  
@@ -278,9 +276,7 @@ CAnimationBaseObject* GetParentAnimationObject();
  Returns the current value of animation variable.  
   
 ```  
-HRESULT GetValue(DOUBLE& dblValue);
-
- 
+HRESULT GetValue(DOUBLE& dblValue);  
 HRESULT GetValue(INT32& nValue);
 ```  
   

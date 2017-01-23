@@ -164,9 +164,7 @@ class CRichEditCtrl : public CWnd
  Determines if the rich edit control can paste the specified Clipboard format.  
   
 ```  
-BOOL CanPaste(UINT nFormat = 0) const;
-
- 
+BOOL CanPaste(UINT nFormat = 0) const;  
 ```  
   
 ### Parameters  
@@ -188,9 +186,7 @@ BOOL CanPaste(UINT nFormat = 0) const;
  Determines if the redo queue contains any actions.  
   
 ```  
-BOOL CanRedo() const;
-
- 
+BOOL CanRedo() const;  
 ```  
   
 ### Return Value  
@@ -205,9 +201,7 @@ BOOL CanRedo() const;
  Determines if the last editing operation can be undone.  
   
 ```  
-BOOL CanUndo() const;
-
- 
+BOOL CanUndo() const;  
 ```  
   
 ### Return Value  
@@ -223,9 +217,7 @@ BOOL CanUndo() const;
  Retrieves information about the character at the point specified by the parameter `pt`.  
   
 ```  
-int CharFromPos(CPoint pt) const;
-
- 
+int CharFromPos(CPoint pt) const;  
 ```  
   
 ### Parameters  
@@ -432,9 +424,7 @@ void EmptyUndoBuffer();
 ```  
 long FindText(
     DWORD dwFlags,  
-    FINDTEXTEX* pFindText) const;
-
- 
+    FINDTEXTEX* pFindText) const;  
 ```  
   
 ### Parameters  
@@ -461,9 +451,7 @@ long FindText(
 ```  
 DWORD FindWordBreak(
     UINT nCode,  
-    DWORD nStart) const;
-
- 
+    DWORD nStart) const;  
 ```  
   
 ### Parameters  
@@ -510,9 +498,7 @@ long FormatRange(
  Gets the position (top-left corner) of a given character within this `CRichEditCtrl` object.  
   
 ```  
-CPoint GetCharPos(long lChar) const;
-
- 
+CPoint GetCharPos(long lChar) const;  
 ```  
   
 ### Parameters  
@@ -531,14 +517,7 @@ CPoint GetCharPos(long lChar) const;
  Gets the default character formatting attributes of this `CRichEditCtrl` object.  
   
 ```  
-DWORD GetDefaultCharFormat(CHARFORMAT& cf) const;
-
- 
- 
-DWORD GetDefaultCharFormat(CHARFORMAT2& cf) const;
-
- 
-```  
+DWORD GetDefaultCharFormat(CHARFORMAT& cf) const;  DWORD GetDefaultCharFormat(CHARFORMAT2& cf) const;  ```  
   
 ### Parameters  
  `cf`  
@@ -559,9 +538,7 @@ DWORD GetDefaultCharFormat(CHARFORMAT2& cf) const;
  Gets the event mask for this `CRichEditCtrl` object.  
   
 ```  
-long GetEventMask() const;
-
- 
+long GetEventMask() const;  
 ```  
   
 ### Return Value  
@@ -579,9 +556,7 @@ long GetEventMask() const;
  Determines the topmost visible line in this `CRichEditCtrl` object.  
   
 ```  
-int GetFirstVisibleLine() const;
-
- 
+int GetFirstVisibleLine() const;  
 ```  
   
 ### Return Value  
@@ -597,9 +572,7 @@ int GetFirstVisibleLine() const;
  Accesses the **IRichEditOle** interface for this `CRichEditCtrl` object.  
   
 ```  
-IRichEditOle* GetIRichEditOle() const;
-
- 
+IRichEditOle* GetIRichEditOle() const;  
 ```  
   
 ### Return Value  
@@ -614,9 +587,7 @@ IRichEditOle* GetIRichEditOle() const;
  Gets the text limit for this `CRichEditCtrl` object.  
   
 ```  
-long GetLimitText() const;
-
- 
+long GetLimitText() const;  
 ```  
   
 ### Return Value  
@@ -636,16 +607,12 @@ long GetLimitText() const;
 ```  
 int GetLine(
     int nIndex,  
-    LPTSTR lpszBuffer) const;
-
- 
- 
+    LPTSTR lpszBuffer) const;  
+  
 int GetLine(
     int nIndex,  
     LPTSTR lpszBuffer,  
-    int nMaxLength) const;
-
- 
+    int nMaxLength) const;  
 ```  
   
 ### Parameters  
@@ -676,9 +643,7 @@ int GetLine(
  Retrieves the number of lines in the `CRichEditCtrl` object.  
   
 ```  
-int GetLineCount() const;
-
- 
+int GetLineCount() const;  
 ```  
   
 ### Return Value  
@@ -694,9 +659,7 @@ int GetLineCount() const;
  Determines if the contents of this `CRichEditCtrl` object have been modified.  
   
 ```  
-BOOL GetModify() const;
-
- 
+BOOL GetModify() const;  
 ```  
   
 ### Return Value  
@@ -714,9 +677,7 @@ BOOL GetModify() const;
  Retrieves the options currently set for the rich edit control.  
   
 ```  
-UINT GetOptions() const;
-
- 
+UINT GetOptions() const;  
 ```  
   
 ### Return Value  
@@ -726,14 +687,7 @@ UINT GetOptions() const;
  Gets the paragraph formatting attributes of the current selection.  
   
 ```  
-DWORD GetParaFormat(PARAFORMAT& pf) const;
-
- 
- 
-DWORD GetParaFormat(PARAFORMAT2& pf) const;
-
- 
-```  
+DWORD GetParaFormat(PARAFORMAT& pf) const;  DWORD GetParaFormat(PARAFORMAT2& pf) const;  ```  
   
 ### Parameters  
  `pf`  
@@ -758,9 +712,7 @@ DWORD GetParaFormat(PARAFORMAT2& pf) const;
 ```  
 BOOL GetPunctuation(
     UINT fType,  
-    PUNCTUATION* lpPunc) const;
-
- 
+    PUNCTUATION* lpPunc) const;  
 ```  
   
 ### Parameters  
@@ -780,9 +732,7 @@ BOOL GetPunctuation(
  Retrieves the formatting rectangle for this `CRichEditCtrl` object.  
   
 ```  
-void GetRect(LPRECT lpRect) const;
-
- 
+void GetRect(LPRECT lpRect) const;  
 ```  
   
 ### Parameters  
@@ -801,9 +751,7 @@ void GetRect(LPRECT lpRect) const;
  Retrieves the type of the next available action in the redo queue, if any.  
   
 ```  
-UNDONAMEID GetRedoName() const;
-
- 
+UNDONAMEID GetRedoName() const;  
 ```  
   
 ### Return Value  
@@ -816,16 +764,11 @@ UNDONAMEID GetRedoName() const;
  Retrieves the bounds of the current selection in this `CRichEditCtrl` object.  
   
 ```  
-void GetSel(
-    CHARRANGE& cr) const;
-
- 
- 
+void GetSel(CHARRANGE& cr) const;  
+  
 void GetSel(
     long& nStartChar,  
-    long& nEndChar) const;
-
- 
+    long& nEndChar) const;  
 ```  
   
 ### Parameters  
@@ -856,14 +799,7 @@ void GetSel(
  Gets the character formatting attributes of the current selection.  
   
 ```  
-DWORD GetSelectionCharFormat(CHARFORMAT& cf) const;
-
- 
- 
-DWORD GetSelectionCharFormat(CHARFORMAT2& cf) const;
-
- 
-```  
+DWORD GetSelectionCharFormat(CHARFORMAT& cf) const;  DWORD GetSelectionCharFormat(CHARFORMAT2& cf) const;  ```  
   
 ### Parameters  
  `cf`  
@@ -886,9 +822,7 @@ DWORD GetSelectionCharFormat(CHARFORMAT2& cf) const;
  Determines the selection type in this `CRichEditCtrl` object.  
   
 ```  
-WORD GetSelectionType() const;
-
- 
+WORD GetSelectionType() const;  
 ```  
   
 ### Return Value  
@@ -914,14 +848,7 @@ WORD GetSelectionType() const;
  Retrieves the text from the current selection in this `CRichEditCtrl` object.  
   
 ```  
-long GetSelText(LPSTR lpBuf) const;
-
- 
- 
-CString GetSelText() const;
-
- 
-```  
+long GetSelText(LPSTR lpBuf) const;  CString GetSelText() const;  ```  
   
 ### Parameters  
  `lpBuf`  
@@ -946,9 +873,7 @@ CString GetSelText() const;
  Retrieves the length of the text, in characters, in this `CRichEditCtrl` object, not including the terminating null character.  
   
 ```  
-long GetTextLength() const;
-
- 
+long GetTextLength() const;  
 ```  
   
 ### Return Value  
@@ -966,9 +891,7 @@ long GetTextLength() const;
 ```  
 long GetTextLengthEx(
     DWORD dwFlags,  
-    UINT uCodePage = -1) const;
-
- 
+    UINT uCodePage = -1) const;  
 ```  
   
 ### Parameters  
@@ -988,9 +911,7 @@ long GetTextLengthEx(
  Retrieves the current text mode and undo level of a rich edit control.  
   
 ```  
-UINT GetTextMode() const;
-
- 
+UINT GetTextMode() const;  
 ```  
   
 ### Return Value  
@@ -1003,9 +924,7 @@ UINT GetTextMode() const;
 int GetTextRange(
     int nFirst,  
     int nLast,  
-    CString& refString) const;
-
- 
+    CString& refString) const;  
 ```  
   
 ### Parameters  
@@ -1030,9 +949,7 @@ int GetTextRange(
  Retrieves the type of the next available action in the undo queue, if any.  
   
 ```  
-UNDONAMEID GetUndoName() const;
-
- 
+UNDONAMEID GetUndoName() const;  
 ```  
   
 ### Return Value  
@@ -1045,9 +962,7 @@ UNDONAMEID GetUndoName() const;
  Retrieves the current word wrapping and word breaking options for the rich edit control.  
   
 ```  
-UINT GetWordWrapMode() const;
-
- 
+UINT GetWordWrapMode() const;  
 ```  
   
 ### Return Value  
@@ -1106,9 +1021,7 @@ void LimitText(long nChars = 0);
  Retrieves the line number of the line that contains the specified character index.  
   
 ```  
-long LineFromChar(long nIndex) const;
-
- 
+long LineFromChar(long nIndex) const;  
 ```  
   
 ### Parameters  
@@ -1130,9 +1043,7 @@ long LineFromChar(long nIndex) const;
  Retrieves the character index of a line within this `CRichEditCtrl` object.  
   
 ```  
-int LineIndex(int nLine = -1) const;
-
- 
+int LineIndex(int nLine = -1) const;  
 ```  
   
 ### Parameters  
@@ -1154,9 +1065,7 @@ int LineIndex(int nLine = -1) const;
  Retrieves the length of a line in a rich edit control.  
   
 ```  
-int LineLength(int nLine = -1) const;
-
- 
+int LineLength(int nLine = -1) const;  
 ```  
   
 ### Parameters  
@@ -1247,9 +1156,7 @@ void PasteSpecial(
  Retrieves the client area coordinates of a specified character in an edit control.  
   
 ```  
-CPoint PosFromChar(UINT nChar) const;
-
- 
+CPoint PosFromChar(UINT nChar) const;  
 ```  
   
 ### Parameters  
@@ -1366,11 +1273,8 @@ COLORREF SetBackgroundColor(
  Sets the character formatting attributes for new text in this `CRichEditCtrl` object.  
   
 ```  
-BOOL SetDefaultCharFormat(CHARFORMAT& cf);
-
- 
-BOOL SetDefaultCharFormat(CHARFORMAT2& cf);
-```  
+BOOL SetDefaultCharFormat(CHARFORMAT& cf);  
+BOOL SetDefaultCharFormat(CHARFORMAT2& cf);```  
   
 ### Parameters  
  `cf`  
@@ -1501,11 +1405,8 @@ void SetOptions(
  Sets the paragraph formatting attributes for the current selection in this `CRichEditCtrl` object.  
   
 ```  
-BOOL SetParaFormat(PARAFORMAT& pf);
-
- 
-BOOL SetParaFormat(PARAFORMAT2& pf);
-```  
+BOOL SetParaFormat(PARAFORMAT& pf);  
+BOOL SetParaFormat(PARAFORMAT2& pf);```  
   
 ### Parameters  
  `pf`  
@@ -1593,11 +1494,9 @@ void SetRect(LPCRECT lpRect);
 ```  
 void SetSel(
     long nStartChar,  
-    long nEndChar);
-
- 
-void SetSel(
-    CHARRANGE& cr);
+    long nEndChar);  
+  
+void SetSel(CHARRANGE& cr);
 ```  
   
 ### Parameters  
@@ -1630,11 +1529,8 @@ void SetSel(
  Sets the character formatting attributes for the text in the current selection in this `CRichEditCtrl` object.  
   
 ```  
-BOOL SetSelectionCharFormat(CHARFORMAT& cf);
-
- 
-BOOL SetSelectionCharFormat(CHARFORMAT2& cf);
-```  
+BOOL SetSelectionCharFormat(CHARFORMAT& cf);  
+BOOL SetSelectionCharFormat(CHARFORMAT2& cf);```  
   
 ### Parameters  
  `cf`  
@@ -1728,11 +1624,8 @@ UINT SetUndoLimit(UINT nLimit);
  Sets the character formatting attributes for the currently selected word in this `CRichEditCtrl` object.  
   
 ```  
-BOOL SetWordCharFormat(CHARFORMAT& cf);
-
- 
-BOOL SetWordCharFormat(CHARFORMAT2& cf);
-```  
+BOOL SetWordCharFormat(CHARFORMAT& cf);  
+BOOL SetWordCharFormat(CHARFORMAT2& cf);```  
   
 ### Parameters  
  `cf`  
@@ -1755,9 +1648,7 @@ BOOL SetWordCharFormat(CHARFORMAT2& cf);
  Sets the word-wrapping and word-breaking options for the rich edit control.  
   
 ```  
-UINT SetWordWrapMode(UINT uFlags) const;
-
- 
+UINT SetWordWrapMode(UINT uFlags) const;  
 ```  
   
 ### Parameters  

@@ -183,11 +183,9 @@ int GetAddress(
     BYTE& nField0,  
     BYTE& nField1,  
     BYTE& nField2,  
-    BYTE& nField3);
-
- 
-int GetAddress(
-    DWORD& dwAddress);
+    BYTE& nField3);  
+  
+int GetAddress(DWORD& dwAddress);
 ```  
   
 ### Parameters  
@@ -223,9 +221,7 @@ int GetAddress(
  Determines if all fields in the IP Address Control are empty.  
   
 ```  
-BOOL IsBlank() const;
-
- 
+BOOL IsBlank() const;  
 ```  
   
 ### Return Value  
@@ -242,11 +238,9 @@ void SetAddress(
     BYTE nField0,  
     BYTE nField1,  
     BYTE nField2,  
-    BYTE nField3);
-
- 
-void SetAddress(
-    DWORD dwAddress);
+    BYTE nField3);  
+  
+void SetAddress(DWORD dwAddress);
 ```  
   
 ### Parameters  

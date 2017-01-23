@@ -302,9 +302,7 @@ virtual COLORREF GetBaseThemeColor();
  Gets the color used for the highlighted menu item.  
   
 ```  
-virtual COLORREF GetHighlightMenuItemColor() const;
-
- 
+virtual COLORREF GetHighlightMenuItemColor() const;  
 ```  
   
 ### Return Value  
@@ -447,9 +445,7 @@ virtual void GetTabFrameColors(
  Gets the margin for the toolbar Customize button.  
   
 ```  
-virtual int GetToolBarCustomizeButtonMargin() const;
-
- 
+virtual int GetToolBarCustomizeButtonMargin() const;  
 ```  
   
 ### Return Value  
@@ -461,9 +457,7 @@ virtual int GetToolBarCustomizeButtonMargin() const;
  Gets the disabled color for the toolbar.  
   
 ```  
-virtual COLORREF GetToolbarDisabledColor() const;
-
- 
+virtual COLORREF GetToolbarDisabledColor() const;  
 ```  
   
 ### Return Value  
@@ -521,9 +515,7 @@ virtual BOOL IsDockingTabHasBorder();
  Indicates whether OneNote tabs should be highlighted.  
   
 ```  
-virtual BOOL IsHighlightOneNoteTabs() const;
-
- 
+virtual BOOL IsHighlightOneNoteTabs() const;  
 ```  
   
 ### Return Value  
@@ -535,9 +527,7 @@ virtual BOOL IsHighlightOneNoteTabs() const;
  Called by the framework while drawing a toolbar button.  
   
 ```  
-virtual BOOL IsOffsetPressedButton() const;
-
- 
+virtual BOOL IsOffsetPressedButton() const;  
 ```  
   
 ### Return Value  
@@ -590,9 +580,7 @@ static BOOL IsUseGlobalTheme();
  Indicates whether Windows theming is supported.  
   
 ```  
-virtual BOOL IsWindowsThemingSupported() const;
-
- 
+virtual BOOL IsWindowsThemingSupported() const;  
 ```  
   
 ### Return Value  

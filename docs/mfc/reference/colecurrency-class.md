@@ -103,19 +103,10 @@ class COleCurrency
  Constructs a **COleCurrency** object.  
   
 ```  
-COleCurrency();
-
- 
-COleCurrency(
-    CURRENCY cySrc);
-
- 
-COleCurrency(
-    const COleCurrency& curSrc);
-
- 
-COleCurrency(
-    const VARIANT& varSrc);
+COleCurrency();  
+COleCurrency(CURRENCY cySrc);  
+  COleCurrency(const COleCurrency& curSrc);  
+COleCurrency(const VARIANT& varSrc);
 
  
 COleCurrency(
@@ -185,9 +176,7 @@ CString Format(DWORD  dwFlags = 0, LCID  lcid = LANG_USER_DEFAULT) const;
  Call this member function to get the status (validity) of a given **COleCurrency** object.  
   
 ```  
-CurrencyStatus GetStatus() const;
-
- 
+CurrencyStatus GetStatus() const;  
 ```  
   
 ### Return Value  
@@ -302,13 +291,9 @@ enum CurrencyStatus{
  These overloaded assignment operators copy the source currency value into this **COleCurrency** object.  
   
 ```  
-const COleCurrency& operator=(CURRENCY cySrc);
-
- 
-const COleCurrency& operator=(const COleCurrency& curSrc);
-
- 
-const COleCurrency& operator=(const VARIANT& varSrc);
+const COleCurrency& operator=(CURRENCY cySrc);  
+const COleCurrency& operator=(const COleCurrency& curSrc);  
+  const COleCurrency& operator=(const VARIANT& varSrc);
 ```  
   
 ### Remarks  
@@ -329,17 +314,9 @@ const COleCurrency& operator=(const VARIANT& varSrc);
  These operators allow you to add and subtract two **COleCurrency** values to and from each other and to change the sign of a **COleCurrency** value.  
   
 ```  
-COleCurrency operator+(const COleCurrency& cur) const;
-
- 
- 
-COleCurrency operator-(const COleCurrency& cur) const;
-
- 
- 
-COleCurrency operator-() const;
-
- 
+COleCurrency operator+(const COleCurrency& cur) const;  
+COleCurrency operator-(const COleCurrency& cur) const;  
+COleCurrency operator-() const;  
 ```  
   
 ### Remarks  
@@ -358,9 +335,7 @@ COleCurrency operator-() const;
  Allow you to add and subtract a **COleCurrency** value to and from this **COleCurrency** object.  
   
 ```  
-const COleCurrency& operator+=(const COleCurrency& cur);
-
- 
+const COleCurrency& operator+=(const COleCurrency& cur);  
 const COleCurrency& operator-=(const COleCurrency& cur);
 ```  
   
@@ -380,13 +355,8 @@ const COleCurrency& operator-=(const COleCurrency& cur);
  Allow you to scale a **COleCurrency** value by an integral value.  
   
 ```  
-COleCurrency operator*(long nOperand) const;
-
- 
- 
-COleCurrency operator/(long nOperand) const;
-
- 
+COleCurrency operator*(long nOperand) const;  
+COleCurrency operator/(long nOperand) const;  
 ```  
   
 ### Remarks  
@@ -405,9 +375,7 @@ COleCurrency operator/(long nOperand) const;
  Allow you to scale this **COleCurrency** value by an integral value.  
   
 ```  
-const COleCurrency& operator*=(long nOperand);
-
- 
+const COleCurrency& operator*=(long nOperand);  
 const COleCurrency& operator/=(long nOperand);
 ```  
   
@@ -430,12 +398,10 @@ const COleCurrency& operator/=(long nOperand);
 friend CDumpContext& operator<<(
     CDumpContext& dc,  
     COleCurrency curSrc);
-
  
 friend CArchive& operator<<(
     CArchive& ar,  
     COleCurrency curSrc);
-
  
 friend CArchive& operator>>(
     CArchive& ar,  
@@ -449,9 +415,7 @@ friend CArchive& operator>>(
  Returns a `CURRENCY` structure whose value is copied from this **COleCurrency** object.  
   
 ```  
-operator CURRENCY() const;
-
- 
+operator CURRENCY() const; 
 ```  
   
 ### Remarks  
@@ -464,14 +428,9 @@ BOOL ParseCurrency(
     LPCTSTR lpszCurrency,  
     DWORD dwFlags = 0,  
     LCID lcid = LANG_USER_DEFAULT);
-
  
-throw(
-    CMemoryException*);
-
- 
-throw(
-    COleException*);
+throw(CMemoryException*); 
+throw(COleException*);
 ```  
   
 ### Parameters  
@@ -507,29 +466,12 @@ throw(
  Compare two currency values and return nonzero if the condition is true; otherwise 0.  
   
 ```  
-BOOL operator==(const COleCurrency& cur) const;
-
- 
- 
-BOOL operator!=(const COleCurrency& cur) const;
-
- 
- 
-BOOL operator<(const COleCurrency& cur) const;
-
- 
- 
-BOOL operator>(const COleCurrency& cur) const;
-
- 
- 
-BOOL operator<=(const COleCurrency& cur) const;
-
- 
- 
-BOOL operator>=(const COleCurrency& cur) const;
-
- 
+BOOL operator==(const COleCurrency& cur) const;  
+BOOL operator!=(const COleCurrency& cur) const;  
+BOOL operator<(const COleCurrency& cur) const;  
+BOOL operator>(const COleCurrency& cur) const;  
+BOOL operator<=(const COleCurrency& cur) const;  
+BOOL operator>=(const COleCurrency& cur) const;  
 ```  
   
 ### Remarks  
@@ -565,9 +507,7 @@ void SetCurrency(
  Call this member function to set the status (validity) of this **COleCurrency** object.  
   
 ```  
-void SetStatus(     CurrencyStatus  status  );
-
- 
+void SetStatus(CurrencyStatus  status  );
 ```  
   
 ### Parameters  

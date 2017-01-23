@@ -75,9 +75,7 @@ class CMFCRibbonContextCaption : public CMFCRibbonButton
  Returns the background color of the caption.  
   
 ```  
-AFX_RibbonCategoryColor GetColor() const;
-
- 
+AFX_RibbonCategoryColor GetColor() const;  
 ```  
   
 ### Return Value  
@@ -106,9 +104,7 @@ AFX_RibbonCategoryColor GetColor() const;
  Retrieves the position of the right-hand edge of the category’s ribbon tab.  
   
 ```  
-int GetRightTabX() const;
-
- 
+int GetRightTabX() const;  
 ```  
   
 ### Return Value  

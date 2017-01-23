@@ -308,9 +308,7 @@ void CreateOleFont(CFont* pFont);
  Finds the custom site that hosts the specified item.  
   
 ```  
-virtual COleControlSite* FindItem(UINT nID) const;
-
- 
+virtual COleControlSite* FindItem(UINT nID) const;  
 ```  
   
 ### Parameters  
@@ -363,16 +361,11 @@ virtual BOOL GetAmbientProp(
  Retrieves a pointer to the specified control or child window in a dialog box or other window.  
   
 ```  
-virtual CWnd* GetDlgItem(
-    int nID) const;
-
- 
- 
+virtual CWnd* GetDlgItem(int nID) const;  
+  
 virtual void GetDlgItem(
     int nID,  
-    HWND* phWnd) const;
-
- 
+    HWND* phWnd) const;  
 ```  
   
 ### Parameters  
@@ -392,9 +385,7 @@ virtual void GetDlgItem(
 virtual UINT GetDlgItemInt(
     int nID,  
     BOOL* lpTrans,  
-    BOOL bSigned) const;
-
- 
+    BOOL bSigned) const;  
 ```  
   
 ### Parameters  
@@ -426,9 +417,7 @@ virtual UINT GetDlgItemInt(
 virtual int GetDlgItemText(
     int nID,  
     LPTSTR lpStr,  
-    int nMaxCount) const;
-
- 
+    int nMaxCount) const;  
 ```  
   
 ### Parameters  
@@ -490,9 +479,7 @@ virtual BOOL HandleWindowlessMessage(
  Determines the state of the specified button.  
   
 ```  
-virtual UINT IsDlgButtonChecked(int nIDButton) const;
-
- 
+virtual UINT IsDlgButtonChecked(int nIDButton) const;  
 ```  
   
 ### Parameters  

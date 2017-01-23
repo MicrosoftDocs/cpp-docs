@@ -189,9 +189,7 @@ virtual void Dropped(
 ```  
 int ItemFromPt(
     CPoint pt,  
-    BOOL bAutoScroll = TRUE) const;
-
- 
+    BOOL bAutoScroll = TRUE) const;  
 ```  
   
 ### Parameters  

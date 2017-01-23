@@ -417,9 +417,7 @@ virtual CFrameWnd* GetActiveFrame();
  Call this member function to obtain a pointer to the active view (if any) attached to a frame window ( `CFrameWnd`).  
   
 ```  
-CView* GetActiveView() const;
-
- 
+CView* GetActiveView() const;  
 ```  
   
 ### Return Value  
@@ -453,9 +451,7 @@ CControlBar* GetControlBar(UINT nID);
  Call this member function to store state information about the frame window's control bars in a `CDockState` object.  
   
 ```  
-void GetDockState(CDockState& state) const;
-
- 
+void GetDockState(CDockState& state) const;  
 ```  
   
 ### Parameters  
@@ -517,9 +513,7 @@ virtual CWnd* GetMessageBar();
 ```  
 virtual void GetMessageString(
     UINT nID,  
-    CString& rMessage) const;
-
- 
+    CString& rMessage) const;  
 ```  
   
 ### Parameters  
@@ -536,9 +530,7 @@ virtual void GetMessageString(
  Retrieves the title of the window object.  
   
 ```  
-CString GetTitle() const;
-
- 
+CString GetTitle() const;  
 ```  
   
 ### Return Value  
@@ -569,9 +561,7 @@ void InitialUpdateFrame(
  Call this member function to check if a frame window is modal or modeless.  
   
 ```  
-BOOL InModalState() const;
-
- 
+BOOL InModalState() const;  
 ```  
   
 ### Return Value  
@@ -581,9 +571,7 @@ BOOL InModalState() const;
  Call this member function to determine if the splitter bar in the window is currently being moved.  
   
 ```  
-BOOL IsTracking() const;
-
- 
+BOOL IsTracking() const;  
 ```  
   
 ### Return Value  
@@ -845,9 +833,7 @@ static AFX_DATA const CRect rectDefault;
  Call this function to store information about each control bar owned by the frame window.  
   
 ```  
-void SaveBarState(LPCTSTR lpszProfileName) const;
-
- 
+void SaveBarState(LPCTSTR lpszProfileName) const;  
 ```  
   
 ### Parameters  
@@ -944,11 +930,8 @@ virtual void SetMenuBarVisibility(DWORD nStyle);
  Call this function to place a string in the status-bar pane that has an ID of 0.  
   
 ```  
-void SetMessageText(LPCTSTR lpszText);
-
- 
-void SetMessageText(UINT nID);
-```  
+void SetMessageText(LPCTSTR lpszText);  
+void SetMessageText(UINT nID);```  
   
 ### Parameters  
  `lpszText`  

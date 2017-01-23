@@ -106,9 +106,7 @@ class CAutoHideDockSite : public CDockSite
  Determines whether a base pane is a [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) object or derived from `CMFCAutoHideBar`.  
   
 ```  
-virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
-
- 
+virtual BOOL CanAcceptPane(const CBasePane* pBar) const;  
 ```  
   
 ### Parameters  
@@ -152,9 +150,7 @@ virtual void DockPane(
  Retrieves the size of the dock site in screen coordinates.  
   
 ```  
-void GetAlignRect(CRect& rect) const;
-
- 
+void GetAlignRect(CRect& rect) const;  
 ```  
   
 ### Parameters  

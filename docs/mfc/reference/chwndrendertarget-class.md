@@ -102,9 +102,7 @@ void Attach(ID2D1HwndRenderTarget* pTarget);
  Indicates whether the HWND associated with this render target is occluded.  
   
 ```  
-D2D1_WINDOW_STATE CheckWindowState() const;
-
- 
+D2D1_WINDOW_STATE CheckWindowState() const;  
 ```  
   
 ### Return Value  
@@ -149,9 +147,7 @@ ID2D1HwndRenderTarget* Detach();
  Returns the HWND associated with this render target.  
   
 ```  
-HWND GetHwnd() const;
-
- 
+HWND GetHwnd() const;  
 ```  
   
 ### Return Value  

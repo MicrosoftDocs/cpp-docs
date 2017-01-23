@@ -159,9 +159,7 @@ ID2D1Brush* Get();
  Gets the degree of opacity of this brush  
   
 ```  
-FLOAT GetOpacity() const;
-
- 
+FLOAT GetOpacity() const;  
 ```  
   
 ### Return Value  
@@ -171,9 +169,7 @@ FLOAT GetOpacity() const;
  Gets the current transform of the render target  
   
 ```  
-void GetTransform(D2D1_MATRIX_3X2_F* transform) const;
-
- 
+void GetTransform(D2D1_MATRIX_3X2_F* transform) const;  
 ```  
   
 ### Parameters  
@@ -184,9 +180,7 @@ void GetTransform(D2D1_MATRIX_3X2_F* transform) const;
  Checks resource validity  
   
 ```  
-virtual BOOL IsValid() const;
-
- 
+virtual BOOL IsValid() const;  
 ```  
   
 ### Return Value  

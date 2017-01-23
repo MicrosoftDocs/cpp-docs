@@ -541,9 +541,7 @@ virtual BOOL FireChangingActiveTab(int nNewTab);
  Retrieves the index of the currently active tab.  
   
 ```  
-virtual int GetActiveTab() const;
-
- 
+virtual int GetActiveTab() const;  
 ```  
   
 ### Return Value  
@@ -553,9 +551,7 @@ virtual int GetActiveTab() const;
  Retrieves the background color of the currently active tab.  
   
 ```  
-virtual COLORREF GetActiveTabColor() const;
-
- 
+virtual COLORREF GetActiveTabColor() const;  
 ```  
   
 ### Return Value  
@@ -568,9 +564,7 @@ virtual COLORREF GetActiveTabColor() const;
  Retrieves the text color for the active tab.  
   
 ```  
-virtual COLORREF GetActiveTabTextColor() const;
-
- 
+virtual COLORREF GetActiveTabTextColor() const;  
 ```  
   
 ### Return Value  
@@ -583,9 +577,7 @@ virtual COLORREF GetActiveTabTextColor() const;
  Retrieves a pointer to the currently active tab window.  
   
 ```  
-virtual CWnd* GetActiveWnd() const;
-
- 
+virtual CWnd* GetActiveWnd() const;  
 ```  
   
 ### Return Value  
@@ -595,9 +587,7 @@ virtual CWnd* GetActiveWnd() const;
  Retrieves the array of colors used for automatic coloring.  
   
 ```  
-const CArray<COLORREF,COLORREF>& GetAutoColors() const;
-
- 
+const CArray<COLORREF,COLORREF>& GetAutoColors() const;  
 ```  
   
 ### Return Value  
@@ -610,8 +600,7 @@ const CArray<COLORREF,COLORREF>& GetAutoColors() const;
  Retrieves a pointer to the first visible tab.  
   
 ```  
-virtual CWnd* GetFirstVisibleTab(
-    int& iTabNum);
+virtual CWnd* GetFirstVisibleTab(int& iTabNum);
 
  
 virtual CWnd* GetFirstVisibleTab(
@@ -638,9 +627,7 @@ virtual CWnd* GetFirstVisibleTab(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual int GetFirstVisibleTabNum() const;
-
- 
+virtual int GetFirstVisibleTabNum() const;  
 ```  
   
 ### Return Value  
@@ -651,9 +638,7 @@ virtual int GetFirstVisibleTabNum() const;
  Retrieves the index of the currently highlighted tab.  
   
 ```  
-int GetHighlightedTab() const;
-
- 
+int GetHighlightedTab() const;  
 ```  
   
 ### Return Value  
@@ -663,9 +648,7 @@ int GetHighlightedTab() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual const CImageList* GetImageList() const;
-
- 
+virtual const CImageList* GetImageList() const;  
 ```  
   
 ### Return Value  
@@ -676,9 +659,7 @@ virtual const CImageList* GetImageList() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual CSize GetImageSize() const;
-
- 
+virtual CSize GetImageSize() const;  
 ```  
   
 ### Return Value  
@@ -703,9 +684,7 @@ virtual CWnd* GetLastVisibleTab(int& iTabNum);
  Retrieves the location of the tab area portion of the tab control.  
   
 ```  
-Location GetLocation() const;
-
- 
+Location GetLocation() const;  
 ```  
   
 ### Return Value  
@@ -718,9 +697,7 @@ Location GetLocation() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual CSize GetMaxWindowSize() const;
-
- 
+virtual CSize GetMaxWindowSize() const;  
 ```  
   
 ### Return Value  
@@ -752,9 +729,7 @@ virtual void GetTabArea(
  Retrieves the background color of the specified tab.  
   
 ```  
-virtual COLORREF GetTabBkColor(int iTab) const;
-
- 
+virtual COLORREF GetTabBkColor(int iTab) const;  
 ```  
   
 ### Parameters  
@@ -768,9 +743,7 @@ virtual COLORREF GetTabBkColor(int iTab) const;
  Retrieves the size of the tab borders in the tab control.  
   
 ```  
-virtual int GetTabBorderSize() const;
-
- 
+virtual int GetTabBorderSize() const;  
 ```  
   
 ### Return Value  
@@ -783,9 +756,7 @@ virtual int GetTabBorderSize() const;
  Retrieves the index of a tab based on a tab ID.  
   
 ```  
-virtual int GetTabByID(int id) const;
-
- 
+virtual int GetTabByID(int id) const;  
 ```  
   
 ### Parameters  
@@ -802,9 +773,7 @@ virtual int GetTabByID(int id) const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-CRect GetTabCloseButton() const;
-
- 
+CRect GetTabCloseButton() const;  
 ```  
   
 ### Return Value  
@@ -815,9 +784,7 @@ CRect GetTabCloseButton() const;
  Retrieves the index of the tab that contains the specified HWND object.  
   
 ```  
-virtual int GetTabFromHwnd(HWND hwnd) const;
-
- 
+virtual int GetTabFromHwnd(HWND hwnd) const;  
 ```  
   
 ### Parameters  
@@ -831,9 +798,7 @@ virtual int GetTabFromHwnd(HWND hwnd) const;
  Retrieves the tab that contains a specified point.  
   
 ```  
-virtual int GetTabFromPoint(CPoint& pt) const;
-
- 
+virtual int GetTabFromPoint(CPoint& pt) const;  
 ```  
   
 ### Parameters  
@@ -847,9 +812,7 @@ virtual int GetTabFromPoint(CPoint& pt) const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual int GetTabFullWidth(int iTab) const;
-
- 
+virtual int GetTabFullWidth(int iTab) const;  
 ```  
   
 ### Parameters  
@@ -863,9 +826,7 @@ virtual int GetTabFullWidth(int iTab) const;
  Returns the HICON associated with the specified tab.  
   
 ```  
-virtual HICON GetTabHicon(int iTab) const;
-
- 
+virtual HICON GetTabHicon(int iTab) const;  
 ```  
   
 ### Parameters  
@@ -879,9 +840,7 @@ virtual HICON GetTabHicon(int iTab) const;
  Retrieves the icon associated with the specified tab.  
   
 ```  
-virtual UINT GetTabIcon(int iTab) const;
-
- 
+virtual UINT GetTabIcon(int iTab) const;  
 ```  
   
 ### Parameters  
@@ -898,9 +857,7 @@ virtual UINT GetTabIcon(int iTab) const;
  Retrieves the ID for a tab specified by the tab index.  
   
 ```  
-int GetTabID(int iTab) const;
-
- 
+int GetTabID(int iTab) const;  
 ```  
   
 ### Parameters  
@@ -916,9 +873,7 @@ int GetTabID(int iTab) const;
 ```  
 virtual BOOL GetTabLabel(
     int iTab,  
-    CString& strLabel) const;
-
- 
+    CString& strLabel) const;  
 ```  
   
 ### Parameters  
@@ -942,9 +897,7 @@ virtual BOOL GetTabLabel(
 ```  
 virtual BOOL GetTabRect(
     int iTab,  
-    CRect& rect) const;
-
- 
+    CRect& rect) const;  
 ```  
   
 ### Parameters  
@@ -961,9 +914,7 @@ virtual BOOL GetTabRect(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual int GetTabsHeight() const;
-
- 
+virtual int GetTabsHeight() const;  
 ```  
   
 ### Return Value  
@@ -974,9 +925,7 @@ virtual int GetTabsHeight() const;
  Retrieves the number of tabs in the tab control.  
   
 ```  
-virtual int GetTabsNum() const;
-
- 
+virtual int GetTabsNum() const;  
 ```  
   
 ### Return Value  
@@ -986,9 +935,7 @@ virtual int GetTabsNum() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual void GetTabsRect(CRect& rect) const;
-
- 
+virtual void GetTabsRect(CRect& rect) const;  
 ```  
   
 ### Parameters  
@@ -1000,9 +947,7 @@ virtual void GetTabsRect(CRect& rect) const;
  Retrieves the text color for the specified tab.  
   
 ```  
-virtual COLORREF GetTabTextColor(int iTab) const;
-
- 
+virtual COLORREF GetTabTextColor(int iTab) const;  
 ```  
   
 ### Parameters  
@@ -1016,9 +961,7 @@ virtual COLORREF GetTabTextColor(int iTab) const;
  Returns the pointer to the pane that resides on the specified tab.  
   
 ```  
-virtual CWnd* GetTabWnd(int iTab) const;
-
- 
+virtual CWnd* GetTabWnd(int iTab) const;  
 ```  
   
 ### Parameters  
@@ -1037,9 +980,7 @@ virtual CWnd* GetTabWnd(int iTab) const;
  Returns a pointer to the control that resides on a tab, even if the control has a wrapper.  
   
 ```  
-virtual CWnd* GetTabWndNoWrapper(int iTab) const;
-
- 
+virtual CWnd* GetTabWndNoWrapper(int iTab) const;  
 ```  
   
 ### Parameters  
@@ -1058,9 +999,7 @@ virtual CWnd* GetTabWndNoWrapper(int iTab) const;
  Retrieves a reference to the tooltip contorl.  
   
 ```  
-CToolTipCtrl& GetToolTipCtrl() const;
-
- 
+CToolTipCtrl& GetToolTipCtrl() const;  
 ```  
   
 ### Return Value  
@@ -1070,9 +1009,7 @@ CToolTipCtrl& GetToolTipCtrl() const;
  Retrieves the number of currently visible tabs.  
   
 ```  
-virtual int GetVisibleTabsNum() const;
-
- 
+virtual int GetVisibleTabsNum() const;  
 ```  
   
 ### Return Value  
@@ -1082,9 +1019,7 @@ virtual int GetVisibleTabsNum() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL HasImage(int iTab) const;
-
- 
+virtual BOOL HasImage(int iTab) const;  
 ```  
   
 ### Parameters  
@@ -1166,9 +1101,7 @@ void InvalidateTab(int iTab);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsActiveTabCloseButton() const;
-
- 
+virtual BOOL IsActiveTabCloseButton() const;  
 ```  
   
 ### Return Value  
@@ -1179,9 +1112,7 @@ virtual BOOL IsActiveTabCloseButton() const;
  Determines whether the tab control is in autocolor mode.  
   
 ```  
-BOOL IsAutoColor() const;
-
- 
+BOOL IsAutoColor() const;  
 ```  
   
 ### Return Value  
@@ -1194,9 +1125,7 @@ BOOL IsAutoColor() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsAutoDestroyWindow() const;
-
- 
+BOOL IsAutoDestroyWindow() const;  
 ```  
   
 ### Return Value  
@@ -1207,9 +1136,7 @@ BOOL IsAutoDestroyWindow() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsColored() const;
-
- 
+virtual BOOL IsColored() const;  
 ```  
   
 ### Return Value  
@@ -1220,9 +1147,7 @@ virtual BOOL IsColored() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsDialogControl() const;
-
- 
+BOOL IsDialogControl() const;  
 ```  
   
 ### Return Value  
@@ -1233,9 +1158,7 @@ BOOL IsDialogControl() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsDrawNoPrefix() const;
-
- 
+BOOL IsDrawNoPrefix() const;  
 ```  
   
 ### Return Value  
@@ -1246,9 +1169,7 @@ BOOL IsDrawNoPrefix() const;
  Indicates whether the frame of the tab control is rendered in a flat style or in a 3D style.  
   
 ```  
-virtual BOOL IsFlatFrame() const;
-
- 
+virtual BOOL IsFlatFrame() const;  
 ```  
   
 ### Return Value  
@@ -1263,9 +1184,7 @@ virtual BOOL IsFlatFrame() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsFlatTab() const;
-
- 
+virtual BOOL IsFlatTab() const;  
 ```  
   
 ### Return Value  
@@ -1276,9 +1195,7 @@ virtual BOOL IsFlatTab() const;
  Determines whether the tab control hides the tab label if there is only one tab.  
   
 ```  
-virtual BOOL IsHideSingleTab() const;
-
- 
+virtual BOOL IsHideSingleTab() const;  
 ```  
   
 ### Return Value  
@@ -1308,9 +1225,7 @@ BOOL IsIconAdded(
  Indicates whether the tab control is configured to enable the user to dynamically modify the tab labels.  
   
 ```  
-virtual BOOL IsInPlaceEdit() const;
-
- 
+virtual BOOL IsInPlaceEdit() const;  
 ```  
   
 ### Return Value  
@@ -1323,9 +1238,7 @@ virtual BOOL IsInPlaceEdit() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsLeftRightRounded() const;
-
- 
+virtual BOOL IsLeftRightRounded() const;  
 ```  
   
 ### Return Value  
@@ -1336,9 +1249,7 @@ virtual BOOL IsLeftRightRounded() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsMDITab() const;
-
- 
+BOOL IsMDITab() const;  
 ```  
   
 ### Return Value  
@@ -1349,9 +1260,7 @@ BOOL IsMDITab() const;
  Determines whether tabs are displayed in the style of Microsoft OneNote.  
   
 ```  
-virtual BOOL IsOneNoteStyle() const;
-
- 
+virtual BOOL IsOneNoteStyle() const;  
 ```  
   
 ### Return Value  
@@ -1383,9 +1292,7 @@ virtual BOOL IsPtInTabArea(CPoint point) const = 0;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsTabCloseButtonHighlighted() const;
-
- 
+BOOL IsTabCloseButtonHighlighted() const;  
 ```  
   
 ### Return Value  
@@ -1396,9 +1303,7 @@ BOOL IsTabCloseButtonHighlighted() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsTabCloseButtonPressed() const;
-
- 
+BOOL IsTabCloseButtonPressed() const;  
 ```  
   
 ### Return Value  
@@ -1409,9 +1314,7 @@ BOOL IsTabCloseButtonPressed() const;
  Determines whether a tab is detachable.  
   
 ```  
-virtual BOOL IsTabDetachable(int iTab) const;
-
- 
+virtual BOOL IsTabDetachable(int iTab) const;  
 ```  
   
 ### Parameters  
@@ -1428,9 +1331,7 @@ virtual BOOL IsTabDetachable(int iTab) const;
  Determines whether a tab label contains only icons and no text.  
   
 ```  
-virtual BOOL IsTabIconOnly(int iTab) const;
-
- 
+virtual BOOL IsTabIconOnly(int iTab) const;  
 ```  
   
 ### Parameters  
@@ -1447,9 +1348,7 @@ virtual BOOL IsTabIconOnly(int iTab) const;
  Determines whether the tab control allows the user to change tab positions by using the mouse.  
   
 ```  
-BOOL IsTabSwapEnabled() const;
-
- 
+BOOL IsTabSwapEnabled() const;  
 ```  
   
 ### Return Value  
@@ -1462,9 +1361,7 @@ BOOL IsTabSwapEnabled() const;
  Indicates whether the specified tab is visible.  
   
 ```  
-virtual BOOL IsTabVisible(int iTab) const;
-
- 
+virtual BOOL IsTabVisible(int iTab) const;  
 ```  
   
 ### Parameters  
@@ -1478,9 +1375,7 @@ virtual BOOL IsTabVisible(int iTab) const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsVS2005Style() const;
-
- 
+virtual BOOL IsVS2005Style() const;  
 ```  
   
 ### Return Value  
@@ -1602,8 +1497,7 @@ virtual DROPEFFECT OnDragEnter(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL OnRenameTab(
-    int, CString&);
+virtual BOOL OnRenameTab(int, CString&);
 ```  
   
 ### Parameters  
@@ -1749,8 +1643,7 @@ virtual void SetActiveTabTextColor(COLORREF clr);
  Sets the colors of the tab control that the framework uses in automatic color mode.  
   
 ```  
-void SetAutoColors(
-    const CArray<COLORREF,COLORREF>& arColors);
+void SetAutoColors(const CArray<COLORREF,COLORREF>& arColors);
 ```  
   
 ### Parameters  
@@ -1802,13 +1695,9 @@ void SetDrawNoPrefix(
 virtual BOOL SetImageList(
     UINT uiID,  
     int cx = 15,  
-    COLORREF clrTransp = RGB(255,
-    0,
-    255));
-
- 
-virtual BOOL SetImageList(
-    HIMAGELIST hImageList);
+    COLORREF clrTransp = RGB(255, 0, 255));  
+  
+virtual BOOL SetImageList(HIMAGELIST hImageList);
 ```  
   
 ### Parameters  
@@ -1977,8 +1866,7 @@ virtual void SetTabsHeight();
  Arranges the tabs in the specified order.  
   
 ```  
-BOOL SetTabsOrder(
-    const CArray<int,int>& arOrder);
+BOOL SetTabsOrder(const CArray<int,int>& arOrder);
 ```  
   
 ### Parameters  

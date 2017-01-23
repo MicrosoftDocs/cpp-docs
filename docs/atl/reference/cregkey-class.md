@@ -193,7 +193,7 @@ LONG Create(
 ```
 CRegKey() throw();
 CRegKey(CRegKey& key) throw();
-explicit CRegKey(HKEY   hKey) throw();
+explicit CRegKey(HKEY hKey) throw();
 CRegKey(CAtlTransactionManager* pTM) throw();
 ```  
   
@@ -610,11 +610,12 @@ LONG QueryValue(
     DWORD* pdwType,
     void* pData,
     ULONG* pnBytes) throw();
+
 ATL_DEPRECATED LONG QueryValue(
     DWORD& dwValue,
     LPCTSTR lpszValueName);
 
-    ATL_DEPRECATED LONG QueryValue(  
+ATL_DEPRECATED LONG QueryValue(
     LPTSTR szValue,
     LPCTSTR lpszValueName,
     DWORD* pdwCount);
@@ -874,11 +875,11 @@ static LONG WINAPI SetValue(
     LPCTSTR lpszValue,
     LPCTSTR lpszValueName = NULL);
 
-    ATL_DEPRECATED LONG SetValue(  
+ATL_DEPRECATED LONG SetValue(  
     DWORD dwValue,
     LPCTSTR lpszValueName);
 
-    ATL_DEPRECATED LONG SetValue(  
+ATL_DEPRECATED LONG SetValue(  
     LPCTSTR lpszValue,
     LPCTSTR lpszValueName = NULL,
     bool bMulti = false,

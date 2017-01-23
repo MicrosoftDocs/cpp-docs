@@ -23,7 +23,10 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Visual C++ What&#39;s New 2003 through 2015
-In Visual C++ 2015, ongoing improvements to compiler conformance can sometimes change how the compiler understands your existing source code. When this happens, you might encounter new or different errors during your build, or even behavioral differences in code that previously built and seemed to run correctly.  
+
+**Note** For information about Visual Studio 2017, see [What's new for Visual C++ in Visual Studio 2017](../top/what-s-new-for-visual-cpp-in-visual-studio.md) and [Conformance Improvements in Visual C++ in Visual Studio 2017](../top/cpp-conformance-improvements-2017.md).
+
+In Visual C++ 2015 and later, ongoing improvements to compiler conformance can sometimes change how the compiler understands your existing source code. When this happens, you might encounter new or different errors during your build, or even behavioral differences in code that previously built and seemed to run correctly.  
   
  Fortunately, these differences  have little or no impact on most of your source code and when source code or other changes are needed to address these differences,  fixes are usually small and straight-forward. We've included many examples of previously-acceptable source code that might need to be changed *(before)* and the fixes to correct them *(after)*.  
   

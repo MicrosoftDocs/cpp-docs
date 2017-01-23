@@ -150,10 +150,8 @@ void Append(PCXSTR pszSrc);
   
 ```cpp
 CSimpleString str1(pMgr), str2(pMgr);
-
 str1.SetString(_T("Soccer is"));
 str2.SetString(_T(" an elegant game"));
-
 str1.Append(str2);
 ASSERT(_tcscmp(str1, _T("Soccer is an elegant game")) == 0);
 ```
@@ -203,7 +201,6 @@ static void CopyChars(
 ```cpp
  CSimpleString str(_T("xxxxxxxxxxxxxxxxxxx"), 20, pMgr);
 TCHAR* pszSrc = _T("Hello world!");
-
 _tprintf_s(_T("%s\n"), str);
 str.CopyChars(str.GetBuffer(), pszSrc, 12);
 _tprintf_s(_T("%s\n"), str);
@@ -291,7 +288,7 @@ Makes this `CSimpleStringT` object an empty string and frees memory as appropria
 ### Syntax  
   
 ```  
-void Empty() throw(); 
+void Empty() throw();  
 ```  
 ### Remarks  
  For more information, see [Strings: CString Exception Cleanup](../cstring-exception-cleanup.md).  
@@ -356,7 +353,7 @@ Retrieves the allocated length of a `CSimpleStringT` object.
 ### Syntax  
   
 ```  
-int GetAllocLength() const throw();
+int GetAllocLength() const throw();  
 ```  
 ### Return Value  
  The number of characters allocated for this object.  
@@ -424,14 +421,13 @@ PXSTR GetBuffer();
 ### Example  
 ```cpp  
 CSimpleString s(_T("abcd"), pMgr);
-
 LPTSTR pBuffer = s.GetBuffer(10);
 int sizeOfBuffer = s.GetAllocLength();
 
 // Directly access CSimpleString buffer
 _tcscpy_s(pBuffer, sizeOfBuffer, _T("Hello"));
 ASSERT(_tcscmp(s, _T("Hello")) == 0);
-s.ReleaseBuffer();
+s.ReleaseBuffer();   
 ```
   
 ##  <a name="getbuffersetlength"></a>  CSimpleStringT::GetBufferSetLength  
@@ -491,7 +487,7 @@ Returns the number of characters in the `CSimpleStringT` object.
 ### Syntax  
   
 ```  
-int GetLength() const throw();
+int GetLength() const throw();  
 ```  
 ### Return Value  
  A count of the characters in the string.  
@@ -507,7 +503,7 @@ Retrieves the memory manager of the `CSimpleStringT` object.
 ### Syntax  
   
 ```  
-IAtlStringMgr* GetManager() const throw();
+IAtlStringMgr* GetManager() const throw();  
 ```  
 ### Return Value  
  A pointer to the memory manager for the `CSimpleStringT` object.  
@@ -547,7 +543,7 @@ Tests a `CSimpleStringT` object for the empty condition.
 ### Syntax  
   
 ```  
-bool IsEmpty() const throw();
+bool IsEmpty() const throw();  
 ```  
 ### Return Value  
  Returns **true** if the `CSimpleStringT` object has 0 length; otherwise **false**.  
@@ -810,7 +806,6 @@ void Preallocate( int nLength);
   
 ```cpp  
 CSimpleString str(pMgr);
-
 _tprintf_s(_T("Allocated length: %d\n"), str.GetAllocLength());
 str.Preallocate(100);
 _tprintf_s(_T("Allocated length: %d\n"), str.GetAllocLength());
@@ -822,7 +817,7 @@ A pointer to a string.
 ### Syntax  
   
 ```  
-typedef ChTraitsBase< BaseType >::PXSTR PXSTR;
+typedef ChTraitsBase< BaseType >::PXSTR PXSTR;  
 ```  
 ##  <a name="releasebuffer"></a>  CSimpleStringT::ReleaseBuffer  
 Releases control of the buffer allocated by [GetBuffer](#getbuffer).  
@@ -845,7 +840,6 @@ void ReleaseBuffer(int nNewLength = -1);
 ```cpp  
 const int bufferSize = 1024;
 CSimpleString s(_T("abc"), pMgr);
-
 LPTSTR p = s.GetBuffer(bufferSize);
 _tcscpy_s(p, bufferSize, _T("abc"));
 
@@ -900,7 +894,6 @@ void SetAt(int iChar, XCHAR ch);
   
 ```cpp  
 CSimpleString s(_T("abcdef"), pMgr);
-
 s.SetAt(1, _T('a'));
 ASSERT(_tcscmp(s, _T("aacdef")) == 0);
 ``` 
@@ -961,7 +954,6 @@ void SetString(PCXSTR pszSrc);
 ```cpp  
 CSimpleString s(_T("abcdef"), pMgr);
 ASSERT(_tcscmp(s, _T("abcdef")) == 0);
-
 s.SetString(_T("Soccer"), 6);
 ASSERT(_tcscmp(s, _T("Soccer")) == 0);
 ```
@@ -1014,10 +1006,8 @@ void Truncate(int nNewLength);
   
 ```cpp  
 CSimpleString str(_T("abcdefghi"), pMgr);
-
 _tprintf_s(_T("Allocated length: %d\n"), str.GetLength());
 _tprintf_s(_T("Contents: %s\n"), str);
-
 str.Truncate(4);
 _tprintf_s(_T("Allocated length: %d\n"), str.GetLength());
 _tprintf_s(_T("Contents: %s\n"), str);

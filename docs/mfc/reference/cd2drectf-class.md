@@ -76,16 +76,9 @@ class CD2DRectF : public D2D1_RECT_F;
  Constructs a CD2DRectF object from CRect object.  
   
 ```  
-CD2DRectF(
-    const CRect& rect);
-
- 
-CD2DRectF(
-    const D2D1_RECT_F& rect);
-
- 
-CD2DRectF(
-    const D2D1_RECT_F* rect);
+CD2DRectF(const CRect& rect);  
+CD2DRectF(const D2D1_RECT_F& rect);  
+  CD2DRectF(const D2D1_RECT_F* rect);
 
  
 CD2DRectF(
@@ -115,9 +108,7 @@ CD2DRectF(
  Returns a Boolean value that indicates whether an expression contains no valid data (Null).  
   
 ```  
-BOOL IsNull() const;
-
- 
+BOOL IsNull() const;  
 ```  
   
 ### Return Value  

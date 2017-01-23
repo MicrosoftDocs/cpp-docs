@@ -155,9 +155,7 @@ virtual void GetAnimationVariableList(
  Retrieves the current value.  
   
 ```  
-BOOL GetValue(DOUBLE& dblValue);
-
- 
+BOOL GetValue(DOUBLE& dblValue);  
 BOOL GetValue(INT32& nValue);
 ```  
   
@@ -224,9 +222,7 @@ operator INT32();
  Assigns a DOUBLE value to CAnimationValue.  
   
 ```  
-void operator=(DOUBLE dblVal);
-
- 
+void operator=(DOUBLE dblVal);  
 void operator=(INT32 nVal);
 ```  
   

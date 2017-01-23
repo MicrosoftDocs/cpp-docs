@@ -285,9 +285,7 @@ void EndDrag();
 ```  
 void GetBandBorders(
     UINT uBand,  
-    LPRECT prc) const;
-
- 
+    LPRECT prc) const;  
 ```  
   
 ### Parameters  
@@ -301,9 +299,7 @@ void GetBandBorders(
  Implements the behavior of the Win32 message [RB_GETBANDCOUNT](http://msdn.microsoft.com/library/windows/desktop/bb774439), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ```  
-UINT GetBandCount() const;
-
- 
+UINT GetBandCount() const;  
 ```  
   
 ### Return Value  
@@ -315,9 +311,7 @@ UINT GetBandCount() const;
 ```  
 BOOL GetBandInfo(
     UINT uBand,  
-    REBARBANDINFO* prbbi) const;
-
- 
+    REBARBANDINFO* prbbi) const;  
 ```  
   
 ### Parameters  
@@ -348,9 +342,7 @@ void GetBandMargins(PMARGINS pMargins);
  Retrieves the height of the rebar bar.  
   
 ```  
-UINT GetBarHeight() const;
-
- 
+UINT GetBarHeight() const;  
 ```  
   
 ### Return Value  
@@ -360,9 +352,7 @@ UINT GetBarHeight() const;
  Implements the behavior of the Win32 message [RB_GETBARINFO](http://msdn.microsoft.com/library/windows/desktop/bb774457), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ```  
-BOOL GetBarInfo(REBARINFO* prbi) const;
-
- 
+BOOL GetBarInfo(REBARINFO* prbi) const;  
 ```  
   
 ### Parameters  
@@ -376,9 +366,7 @@ BOOL GetBarInfo(REBARINFO* prbi) const;
  Implements the behavior of the Win32 message [RB_GETBKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb774459), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ```  
-COLORREF GetBkColor() const;
-
- 
+COLORREF GetBkColor() const;  
 ```  
   
 ### Return Value  
@@ -405,9 +393,7 @@ BOOL GetColorScheme(COLORSCHEME* lpcs);
  Implements the behavior of the Win32 message [RB_GETDROPTARGET](http://msdn.microsoft.com/library/windows/desktop/bb774463), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ```  
-IDropTarget* GetDropTarget() const;
-
- 
+IDropTarget* GetDropTarget() const;  
 ```  
   
 ### Return Value  
@@ -417,9 +403,7 @@ IDropTarget* GetDropTarget() const;
  Gets the extended styles of the current rebar control.  
   
 ```  
-DWORD GetExtendedStyle() const;
-
- 
+DWORD GetExtendedStyle() const;  
 ```  
   
 ### Return Value  
@@ -432,9 +416,7 @@ DWORD GetExtendedStyle() const;
  Gets the `CImageList` object associated with a rebar control.  
   
 ```  
-CImageList* GetImageList() const;
-
- 
+CImageList* GetImageList() const;  
 ```  
   
 ### Return Value  
@@ -447,9 +429,7 @@ CImageList* GetImageList() const;
  Retrieves the rebar control's current palette.  
   
 ```  
-CPalette* GetPalette() const;
-
- 
+CPalette* GetPalette() const;  
 ```  
   
 ### Return Value  
@@ -467,9 +447,7 @@ CPalette* GetPalette() const;
 ```  
 BOOL GetRect(
     UINT uBand,  
-    LPRECT prc) const;
-
- 
+    LPRECT prc) const;  
 ```  
   
 ### Parameters  
@@ -489,9 +467,7 @@ BOOL GetRect(
  Implements the behavior of the Win32 message [RB_GETROWCOUNT](http://msdn.microsoft.com/library/windows/desktop/bb774471), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ```  
-UINT GetRowCount() const;
-
- 
+UINT GetRowCount() const;  
 ```  
   
 ### Return Value  
@@ -504,9 +480,7 @@ UINT GetRowCount() const;
  Implements the behavior of the Win32 message [RB_GETROWHEIGHT](http://msdn.microsoft.com/library/windows/desktop/bb774473), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ```  
-UINT GetRowHeight(UINT uRow) const;
-
- 
+UINT GetRowHeight(UINT uRow) const;  
 ```  
   
 ### Parameters  
@@ -523,9 +497,7 @@ UINT GetRowHeight(UINT uRow) const;
  Implements the behavior of the Win32 message [RB_GETTEXTCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb774475), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ```  
-COLORREF GetTextColor() const;
-
- 
+COLORREF GetTextColor() const;  
 ```  
   
 ### Return Value  
@@ -535,9 +507,7 @@ COLORREF GetTextColor() const;
  Implements the behavior of the Win32 message [RB_GETTOOLTIPS](http://msdn.microsoft.com/library/windows/desktop/bb774477), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ```  
-CToolTipCtrl* GetToolTips() const;
-
- 
+CToolTipCtrl* GetToolTips() const;  
 ```  
   
 ### Return Value  
@@ -564,9 +534,7 @@ int HitTest(RBHITTESTINFO* prbht);
  Implements the behavior of the Win32 message [RB_IDTOINDEX](http://msdn.microsoft.com/library/windows/desktop/bb774496), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ```  
-int IDToIndex(UINT uBandID) const;
-
- 
+int IDToIndex(UINT uBandID) const;  
 ```  
   
 ### Parameters  

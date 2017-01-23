@@ -247,9 +247,7 @@ CFrameWnd* CreateOleFrame(
 ```  
 virtual BOOL GetDocString(
     CString& rString,  
-    enum DocStringIndex index) const;
-
- 
+    enum DocStringIndex index) const;  
 ```  
   
 ### Parameters  
@@ -404,8 +402,7 @@ virtual Confidence MatchDocType(
  Opens a file specified by a path.  
   
 ```  
-virtual CDocument* OpenDocumentFile(
-    LPCTSTR lpszPathName) = 0;  
+virtual CDocument* OpenDocumentFile(LPCTSTR lpszPathName) = 0;  
  
 virtual CDocument* OpenDocumentFile(
     LPCTSTR lpszPathName,  

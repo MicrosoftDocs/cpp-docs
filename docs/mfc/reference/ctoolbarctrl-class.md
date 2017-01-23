@@ -412,9 +412,7 @@ BOOL CheckButton(
  Retrieves the zero-based index for the button associated with the specified command identifier.  
   
 ```  
-UINT CommandToIndex(UINT nID) const;
-
- 
+UINT CommandToIndex(UINT nID) const;  
 ```  
   
 ### Parameters  
@@ -570,9 +568,7 @@ BOOL EnableButton(
  Retrieves the anchor highlight setting for a toolbar.  
   
 ```  
-BOOL GetAnchorHighlight() const;
-
- 
+BOOL GetAnchorHighlight() const;  
 ```  
   
 ### Return Value  
@@ -585,9 +581,7 @@ BOOL GetAnchorHighlight() const;
  Retrieves the index of the bitmap associated with a button in a toolbar.  
   
 ```  
-int GetBitmap(int nID) const;
-
- 
+int GetBitmap(int nID) const;  
 ```  
   
 ### Parameters  
@@ -604,9 +598,7 @@ int GetBitmap(int nID) const;
  Retrieves the bitmap flags from the toolbar.  
   
 ```  
-UINT GetBitmapFlags() const;
-
- 
+UINT GetBitmapFlags() const;  
 ```  
   
 ### Return Value  
@@ -621,9 +613,7 @@ UINT GetBitmapFlags() const;
 ```  
 BOOL GetButton(
     int nIndex,  
-    LPTBBUTTON lpButton) const;
-
- 
+    LPTBBUTTON lpButton) const;  
 ```  
   
 ### Parameters  
@@ -640,9 +630,7 @@ BOOL GetButton(
  Retrieves a count of the buttons currently in the toolbar control.  
   
 ```  
-int GetButtonCount() const;
-
- 
+int GetButtonCount() const;  
 ```  
   
 ### Return Value  
@@ -654,9 +642,7 @@ int GetButtonCount() const;
 ```  
 int GetButtonInfo(
     int nID,  
-    TBBUTTONINFO* ptbbi) const;
-
- 
+    TBBUTTONINFO* ptbbi) const;  
 ```  
   
 ### Parameters  
@@ -676,9 +662,7 @@ int GetButtonInfo(
  Gets the size of a toolbar button.  
   
 ```  
-DWORD GetButtonSize() const;
-
- 
+DWORD GetButtonSize() const;  
 ```  
   
 ### Return Value  
@@ -688,9 +672,7 @@ DWORD GetButtonSize() const;
  Retrieves the display text of a specified button on the current toolbar control.  
   
 ```  
-CString GetButtonText(int idButton) const;
-
- 
+CString GetButtonText(int idButton) const;  
 ```  
   
 ### Parameters  
@@ -709,9 +691,7 @@ CString GetButtonText(int idButton) const;
  Retrieves the color scheme of the current toolbar control.  
   
 ```  
-BOOL GetColorScheme(COLORSCHEME* lpColorScheme) const;
-
- 
+BOOL GetColorScheme(COLORSCHEME* lpColorScheme) const;  
 ```  
   
 ### Parameters  
@@ -730,9 +710,7 @@ BOOL GetColorScheme(COLORSCHEME* lpColorScheme) const;
  Retrieves the image list that a toolbar control uses to display disabled buttons.  
   
 ```  
-CImageList* GetDisabledImageList() const;
-
- 
+CImageList* GetDisabledImageList() const;  
 ```  
   
 ### Return Value  
@@ -745,9 +723,7 @@ CImageList* GetDisabledImageList() const;
  Retrieves the [IDropTarget](http://msdn.microsoft.com/library/windows/desktop/ms679679) interface for a toolbar control.  
   
 ```  
-HRESULT GetDropTarget(IDropTarget** ppDropTarget) const;
-
- 
+HRESULT GetDropTarget(IDropTarget** ppDropTarget) const;  
 ```  
   
 ### Parameters  
@@ -764,9 +740,7 @@ HRESULT GetDropTarget(IDropTarget** ppDropTarget) const;
  Retrieves the extended styles for a toolbar control.  
   
 ```  
-DWORD GetExtendedStyle() const;
-
- 
+DWORD GetExtendedStyle() const;  
 ```  
   
 ### Return Value  
@@ -779,9 +753,7 @@ DWORD GetExtendedStyle() const;
  Retrieves the image list that a toolbar control uses to display "hot" buttons. A hot button appears highlighted when the mouse pointer is above it.  
   
 ```  
-CImageList* GetHotImageList() const;
-
- 
+CImageList* GetHotImageList() const;  
 ```  
   
 ### Return Value  
@@ -794,9 +766,7 @@ CImageList* GetHotImageList() const;
  Retrieves the index of the hot item in a toolbar.  
   
 ```  
-int GetHotItem() const;
-
- 
+int GetHotItem() const;  
 ```  
   
 ### Return Value  
@@ -809,9 +779,7 @@ int GetHotItem() const;
  Retrieves the image list that a toolbar control uses to display buttons in their default state.  
   
 ```  
-CImageList* GetImageList() const;
-
- 
+CImageList* GetImageList() const;  
 ```  
   
 ### Return Value  
@@ -824,9 +792,7 @@ CImageList* GetImageList() const;
  Retrieves the current insertion mark for the toolbar.  
   
 ```  
-void GetInsertMark(TBINSERTMARK* ptbim) const;
-
- 
+void GetInsertMark(TBINSERTMARK* ptbim) const;  
 ```  
   
 ### Parameters  
@@ -840,9 +806,7 @@ void GetInsertMark(TBINSERTMARK* ptbim) const;
  Retrieves the color used to draw the insertion mark for the toolbar.  
   
 ```  
-COLORREF GetInsertMarkColor() const;
-
- 
+COLORREF GetInsertMarkColor() const;  
 ```  
   
 ### Return Value  
@@ -857,9 +821,7 @@ COLORREF GetInsertMarkColor() const;
 ```  
 BOOL GetItemRect(
     int nIndex,  
-    LPRECT lpRect) const;
-
- 
+    LPRECT lpRect) const;  
 ```  
   
 ### Parameters  
@@ -879,9 +841,7 @@ BOOL GetItemRect(
  Retrieves the total size of all of the visible buttons and separators in the toolbar.  
   
 ```  
-BOOL GetMaxSize(LPSIZE pSize) const;
-
- 
+BOOL GetMaxSize(LPSIZE pSize) const;  
 ```  
   
 ### Parameters  
@@ -898,9 +858,7 @@ BOOL GetMaxSize(LPSIZE pSize) const;
  Retrieves the maximum number of text rows displayed on a toolbar button.  
   
 ```  
-int GetMaxTextRows() const;
-
- 
+int GetMaxTextRows() const;  
 ```  
   
 ### Return Value  
@@ -910,9 +868,7 @@ int GetMaxTextRows() const;
  Retrieves the metrics of the `CToolBarCtrl` object.  
   
 ```  
-void GetMetrics(LPTBMETRICS ptbm) const;
-
- 
+void GetMetrics(LPTBMETRICS ptbm) const;  
 ```  
   
 ### Parameters  
@@ -928,9 +884,7 @@ void GetMetrics(LPTBMETRICS ptbm) const;
 ```  
 BOOL GetPadding(
     int* pnHorzPadding,   
-    int* pnVertPadding) const;
-
- 
+    int* pnVertPadding) const;  
 ```  
   
 ### Parameters  
@@ -965,9 +919,7 @@ CImageList* GetPressedImageList();
 ```  
 BOOL GetRect(
     int nID,  
-    LPRECT lpRect) const;
-
- 
+    LPRECT lpRect) const;  
 ```  
   
 ### Parameters  
@@ -987,9 +939,7 @@ BOOL GetRect(
  Retrieves the number of rows of buttons currently displayed by the toolbar control.  
   
 ```  
-int GetRows() const;
-
- 
+int GetRows() const;  
 ```  
   
 ### Return Value  
@@ -1002,9 +952,7 @@ int GetRows() const;
  Retrieves information about the state of the specified button in a toolbar control, such as whether it is enabled, pressed, or checked.  
   
 ```  
-int GetState(int nID) const;
-
- 
+int GetState(int nID) const;  
 ```  
   
 ### Parameters  
@@ -1024,15 +972,11 @@ int GetState(int nID) const;
 int GetString(
     int nString,  
     LPTSTR lpstrString,  
-    int cchMaxLen) const;
-
- 
- 
+    int cchMaxLen) const;  
+  
 int GetString(
     int nString,  
-    CString& str) const;
-
- 
+    CString& str) const;  
 ```  
   
 ### Parameters  
@@ -1058,9 +1002,7 @@ int GetString(
  Gets the styles currently applied to a toolbar control.  
   
 ```  
-DWORD GetStyle() const;
-
- 
+DWORD GetStyle() const;  
 ```  
   
 ### Return Value  
@@ -1070,9 +1012,7 @@ DWORD GetStyle() const;
  Retrieves the handle of the tool tip control, if any, associated with the toolbar control.  
   
 ```  
-CToolTipCtrl* GetToolTips() const;
-
- 
+CToolTipCtrl* GetToolTips() const;  
 ```  
   
 ### Return Value  
@@ -1085,9 +1025,7 @@ CToolTipCtrl* GetToolTips() const;
  Determines where a point lies in a toolbar control.  
   
 ```  
-int HitTest(LPPOINT ppt) const;
-
- 
+int HitTest(LPPOINT ppt) const;  
 ```  
   
 ### Parameters  
@@ -1174,9 +1112,7 @@ BOOL InsertButton(
 ```  
 BOOL InsertMarkHitTest(
     LPPOINT ppt,  
-    LPTBINSERTMARK ptbim) const;
-
- 
+    LPTBINSERTMARK ptbim) const;  
 ```  
   
 ### Parameters  
@@ -1196,9 +1132,7 @@ BOOL InsertMarkHitTest(
  Determines whether the specified button in a toolbar control is checked.  
   
 ```  
-BOOL IsButtonChecked(int nID) const;
-
- 
+BOOL IsButtonChecked(int nID) const;  
 ```  
   
 ### Parameters  
@@ -1215,9 +1149,7 @@ BOOL IsButtonChecked(int nID) const;
  Determines whether the specified button in a toolbar control is enabled.  
   
 ```  
-BOOL IsButtonEnabled(int nID) const;
-
- 
+BOOL IsButtonEnabled(int nID) const;  
 ```  
   
 ### Parameters  
@@ -1234,9 +1166,7 @@ BOOL IsButtonEnabled(int nID) const;
  Determines whether the specified button in a toolbar control is hidden.  
   
 ```  
-BOOL IsButtonHidden(int nID) const;
-
- 
+BOOL IsButtonHidden(int nID) const;  
 ```  
   
 ### Parameters  
@@ -1253,9 +1183,7 @@ BOOL IsButtonHidden(int nID) const;
  Checks the highlight state of a toolbar button.  
   
 ```  
-BOOL IsButtonHighlighted(int nID) const;
-
- 
+BOOL IsButtonHighlighted(int nID) const;  
 ```  
   
 ### Parameters  
@@ -1269,9 +1197,7 @@ BOOL IsButtonHighlighted(int nID) const;
  Determines whether the specified button in a toolbar control is indeterminate.  
   
 ```  
-BOOL IsButtonIndeterminate(int nID) const;
-
- 
+BOOL IsButtonIndeterminate(int nID) const;  
 ```  
   
 ### Parameters  
@@ -1288,9 +1214,7 @@ BOOL IsButtonIndeterminate(int nID) const;
  Determines whether the specified button in a toolbar control is pressed.  
   
 ```  
-BOOL IsButtonPressed(int nID) const;
-
- 
+BOOL IsButtonPressed(int nID) const;  
 ```  
   
 ### Parameters  
@@ -1401,8 +1325,7 @@ BOOL MoveButton(
  Presses or releases the specified button in a toolbar control.  
   
 ```  
-BOOL PressButton(
-    int nID, BOOL bPress = TRUE);
+BOOL PressButton(int nID, BOOL bPress = TRUE);
 ```  
   
 ### Parameters  

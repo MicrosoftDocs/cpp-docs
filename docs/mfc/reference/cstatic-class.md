@@ -179,9 +179,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
  Gets the handle of the bitmap, previously set with [SetBitmap](#setbitmap), that is associated with `CStatic`.  
   
 ```  
-HBITMAP GetBitmap() const;
-
- 
+HBITMAP GetBitmap() const;  
 ```  
   
 ### Return Value  
@@ -207,9 +205,7 @@ HCURSOR GetCursor();
  Gets the handle of the enhanced metafile, previously set with [SetEnhMetafile](#setenhmetafile), that is associated with `CStatic`.  
   
 ```  
-HENHMETAFILE GetEnhMetaFile() const;
-
- 
+HENHMETAFILE GetEnhMetaFile() const;  
 ```  
   
 ### Return Value  
@@ -222,9 +218,7 @@ HENHMETAFILE GetEnhMetaFile() const;
  Gets the handle of the icon, previously set with [SetIcon](#seticon), that is associated with `CStatic`.  
   
 ```  
-HICON GetIcon() const;
-
- 
+HICON GetIcon() const;  
 ```  
   
 ### Return Value  
@@ -265,8 +259,7 @@ HBITMAP SetBitmap(HBITMAP hBitmap);
 ```  
 MyStaticControl.SetBitmap(HBITMAP(MyBitmap));
 ```  
-  
- The following example creates two `CStatic` objects on the heap. It then loads one with a system bitmap using `CBitmap::LoadOEMBitmap` and the other from a file using `CImage::Load`.  
+The following example creates two `CStatic` objects on the heap. It then loads one with a system bitmap using `CBitmap::LoadOEMBitmap` and the other from a file using `CImage::Load`.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CStatic#3](../../mfc/reference/codesnippet/cpp/cstatic-class_3.cpp)]  

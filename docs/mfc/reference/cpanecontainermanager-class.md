@@ -247,9 +247,7 @@ void CalcRects(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL CanBeAttached() const;
-
- 
+virtual BOOL CanBeAttached() const;  
 ```  
   
 ### Return Value  
@@ -310,9 +308,7 @@ virtual BOOL Create(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL DoesAllowDynInsertBefore() const;
-
- 
+virtual BOOL DoesAllowDynInsertBefore() const;  
 ```  
   
 ### Return Value  
@@ -377,9 +373,7 @@ CDockablePane* FindTabbedPane(UINT nID);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual void GetAvailableSpace(CRect& rect) const;
-
- 
+virtual void GetAvailableSpace(CRect& rect) const;  
 ```  
   
 ### Parameters  
@@ -391,9 +385,7 @@ virtual void GetAvailableSpace(CRect& rect) const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-CPaneDivider* GetDefaultPaneDivider() const;
-
- 
+CPaneDivider* GetDefaultPaneDivider() const;  
 ```  
   
 ### Return Value  
@@ -415,9 +407,7 @@ virtual CWnd* GetDockSiteFrameWnd();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual CBasePane* GetFirstPane() const;
-
- 
+virtual CBasePane* GetFirstPane() const;  
 ```  
   
 ### Return Value  
@@ -428,9 +418,7 @@ virtual CBasePane* GetFirstPane() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual CWnd* GetFirstVisiblePane() const;
-
- 
+virtual CWnd* GetFirstVisiblePane() const;  
 ```  
   
 ### Return Value  
@@ -472,9 +460,7 @@ virtual void GetMinSize(CSize& size);
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetNodeCount() const;
-
- 
+int GetNodeCount() const;  
 ```  
   
 ### Return Value  
@@ -485,9 +471,7 @@ int GetNodeCount() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-CRuntimeClass* GetPaneContainerRTC() const;
-
- 
+CRuntimeClass* GetPaneContainerRTC() const;  
 ```  
   
 ### Return Value  
@@ -498,9 +482,7 @@ CRuntimeClass* GetPaneContainerRTC() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetPaneCount() const;
-
- 
+int GetPaneCount() const;  
 ```  
   
 ### Return Value  
@@ -511,9 +493,7 @@ int GetPaneCount() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetTotalRefCount() const;
-
- 
+int GetTotalRefCount() const;  
 ```  
   
 ### Return Value  
@@ -524,9 +504,7 @@ int GetTotalRefCount() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual int GetVisiblePaneCount() const;
-
- 
+virtual int GetVisiblePaneCount() const;  
 ```  
   
 ### Return Value  
@@ -537,9 +515,7 @@ virtual int GetVisiblePaneCount() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual void GetWindowRect(CRect& rect) const;
-
- 
+virtual void GetWindowRect(CRect& rect) const;  
 ```  
   
 ### Parameters  
@@ -583,9 +559,7 @@ virtual BOOL InsertPane(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsAutoHideMode() const;
-
- 
+BOOL IsAutoHideMode() const;  
 ```  
   
 ### Return Value  
@@ -596,9 +570,7 @@ BOOL IsAutoHideMode() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsEmpty() const;
-
- 
+BOOL IsEmpty() const;  
 ```  
   
 ### Return Value  
@@ -609,9 +581,7 @@ BOOL IsEmpty() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-virtual BOOL IsRootPaneContainerVisible() const;
-
- 
+virtual BOOL IsRootPaneContainerVisible() const;  
 ```  
   
 ### Return Value  

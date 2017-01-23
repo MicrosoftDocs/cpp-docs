@@ -574,9 +574,7 @@ void EnableToolTips(
 ```  
 CMFCRibbonBaseElement* FindByData(
     DWORD_PTR dwData,  
-    BOOL bVisibleOnly = TRUE) const;
-
- 
+    BOOL bVisibleOnly = TRUE) const;  
 ```  
   
 ### Parameters  
@@ -599,9 +597,7 @@ CMFCRibbonBaseElement* FindByData(
 CMFCRibbonBaseElement* FindByID(
     UINT uiCmdID,  
     BOOL bVisibleOnly = TRUE,  
-    BOOL bExcludeQAT = FALSE) const;
-
- 
+    BOOL bExcludeQAT = FALSE) const;  
 ```  
   
 ### Parameters  
@@ -626,9 +622,7 @@ CMFCRibbonBaseElement* FindByID(
  Retrieves the index of the ribbon category that contains the specified data.  
   
 ```  
-int FindCategoryIndexByData(DWORD dwData) const;
-
- 
+int FindCategoryIndexByData(DWORD dwData) const;  
 ```  
   
 ### Parameters  
@@ -651,9 +645,7 @@ void ForceRecalcLayout();
  Retrieves a pointer to the active ribbon category.  
   
 ```  
-CMFCRibbonCategory* GetActiveCategory() const;
-
- 
+CMFCRibbonCategory* GetActiveCategory() const;  
 ```  
   
 ### Return Value  
@@ -668,9 +660,7 @@ CMFCRibbonCategory* GetActiveCategory() const;
  Retrieves a pointer to the application button.  
   
 ```  
-CMFCRibbonApplicationButton* GetApplicationButton() const;
-
- 
+CMFCRibbonApplicationButton* GetApplicationButton() const;  
 ```  
   
 ### Return Value  
@@ -680,9 +670,7 @@ CMFCRibbonApplicationButton* GetApplicationButton() const;
  Retrieves the height of the caption area for the ribbon bar.  
   
 ```  
-int GetCaptionHeight() const;
-
- 
+int GetCaptionHeight() const;  
 ```  
   
 ### Return Value  
@@ -694,9 +682,7 @@ int GetCaptionHeight() const;
  Retrieves a pointer to the ribbon category at the specified index.  
   
 ```  
-CMFCRibbonCategory* GetCategory(int nIndex) const;
-
- 
+CMFCRibbonCategory* GetCategory(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -710,9 +696,7 @@ CMFCRibbonCategory* GetCategory(int nIndex) const;
  Retrieves the number of ribbon categories in the ribbon bar.  
   
 ```  
-int GetCategoryCount() const;
-
- 
+int GetCategoryCount() const;  
 ```  
   
 ### Return Value  
@@ -722,9 +706,7 @@ int GetCategoryCount() const;
  Retrieves the height of the category.  
   
 ```  
-int GetCategoryHeight() const;
-
- 
+int GetCategoryHeight() const;  
 ```  
   
 ### Return Value  
@@ -737,9 +719,7 @@ int GetCategoryHeight() const;
  Retrieves the index of the specified ribbon category.  
   
 ```  
-int GetCategoryIndex(CMFCRibbonCategory* pCategory) const;
-
- 
+int GetCategoryIndex(CMFCRibbonCategory* pCategory) const;  
 ```  
   
 ### Parameters  
@@ -755,9 +735,7 @@ int GetCategoryIndex(CMFCRibbonCategory* pCategory) const;
 ```  
 BOOL GetContextName(
     UINT uiContextID,  
-    CString& strName) const;
-
- 
+    CString& strName) const;  
 ```  
   
 ### Parameters  
@@ -805,9 +783,7 @@ void GetElementsByID(
  Retrieves the flags that indicate how much of the ribbon bar is visible.  
   
 ```  
-DWORD GetHideFlags() const;
-
- 
+DWORD GetHideFlags() const;  
 ```  
   
 ### Return Value  
@@ -827,9 +803,7 @@ DWORD GetHideFlags() const;
   
 ```  
 void GetItemIDsList(CList<UINT, UINT>& lstItems,  
-    BOOL bHiddenOnly = FALSE) const;
-
- 
+    BOOL bHiddenOnly = FALSE) const;  
 ```  
   
 ### Parameters  
@@ -845,9 +819,7 @@ void GetItemIDsList(CList<UINT, UINT>& lstItems,
  Retrieves the current navigation level as the user presses the keytips that are contained on the ribbon bar.  
   
 ```  
-int GetKeyboardNavigationLevel() const;
-
- 
+int GetKeyboardNavigationLevel() const;  
 ```  
   
 ### Return Value  
@@ -868,9 +840,7 @@ int GetKeyboardNavigationLevel() const;
  Retrieves the current keyboard navigation object on the ribbon bar.  
   
 ```  
-CObject* GetKeyboardNavLevelCurrent() const;
-
- 
+CObject* GetKeyboardNavLevelCurrent() const;  
 ```  
   
 ### Return Value  
@@ -883,9 +853,7 @@ CObject* GetKeyboardNavLevelCurrent() const;
  Retrieves the parent keyboard navigation object on the ribbon bar.  
   
 ```  
-CObject* GetKeyboardNavLevelParent() const;
-
- 
+CObject* GetKeyboardNavLevelParent() const;  
 ```  
   
 ### Return Value  
@@ -898,9 +866,7 @@ CObject* GetKeyboardNavLevelParent() const;
  Retrieves a pointer to the main ribbon category.  
   
 ```  
-CMFCRibbonCategory* GetMainCategory() const;
-
- 
+CMFCRibbonCategory* GetMainCategory() const;  
 ```  
   
 ### Return Value  
@@ -913,9 +879,7 @@ CMFCRibbonCategory* GetMainCategory() const;
  Retrieves the display rectangle for the commands section of the quick access toolbar.  
   
 ```  
-CRect GetQATCommandsLocation() const;
-
- 
+CRect GetQATCommandsLocation() const;  
 ```  
   
 ### Return Value  
@@ -940,8 +904,7 @@ CMFCRibbonBaseElement* GetQATDroppedDown();
  Retrieves a list of command IDs for the ribbon elements on the quick access toolbar.  
   
 ```  
-void GetQuickAccessCommands(
-    CList<UINT,UINT>& lstCommands);
+void GetQuickAccessCommands(CList<UINT,UINT>& lstCommands);
 ```  
   
 ### Parameters  
@@ -955,9 +918,7 @@ void GetQuickAccessCommands(
  Retrieves the display rectangle for the quick access toolbar.  
   
 ```  
-CRect GetQuickAccessToolbarLocation() const;
-
- 
+CRect GetQuickAccessToolbarLocation() const;  
 ```  
   
 ### Return Value  
@@ -969,9 +930,7 @@ CRect GetQuickAccessToolbarLocation() const;
  Retrieves the percent size reduction in the display width of the category tabs.  
   
 ```  
-int GetTabTrancateRatio() const;
-
- 
+int GetTabTrancateRatio() const;  
 ```  
   
 ### Return Value  
@@ -984,9 +943,7 @@ int GetTabTrancateRatio() const;
  Retrieves the large size of tooltip width for the ribbon bar.  
   
 ```  
-int GetTooltipFixedWidthLargeImage() const;
-
- 
+int GetTooltipFixedWidthLargeImage() const;  
 ```  
   
 ### Return Value  
@@ -999,9 +956,7 @@ int GetTooltipFixedWidthLargeImage() const;
  Retrieves the regular size of tooltip width for the ribbon bar.  
   
 ```  
-int GetTooltipFixedWidthRegular() const;
-
- 
+int GetTooltipFixedWidthRegular() const;  
 ```  
   
 ### Return Value  
@@ -1014,9 +969,7 @@ int GetTooltipFixedWidthRegular() const;
  Retrieves the number of visible categories on the ribbon bar.  
   
 ```  
-int GetVisibleCategoryCount() const;
-
- 
+int GetVisibleCategoryCount() const;  
 ```  
   
 ### Return Value  
@@ -1076,9 +1029,7 @@ virtual CMFCRibbonBaseElement* HitTest(
  Indicates whether the keytips feature is enabled.  
   
 ```  
-BOOL IsKeyTipEnabled() const;
-
- 
+BOOL IsKeyTipEnabled() const;  
 ```  
   
 ### Return Value  
@@ -1088,9 +1039,7 @@ BOOL IsKeyTipEnabled() const;
  Indicates whether the ribbon bar is the primary ribbon bar.  
   
 ```  
-virtual BOOL IsMainRibbonBar() const;
-
- 
+virtual BOOL IsMainRibbonBar() const;  
 ```  
   
 ### Return Value  
@@ -1103,9 +1052,7 @@ virtual BOOL IsMainRibbonBar() const;
  Indicates whether the **Print Preview** feature is enabled.  
   
 ```  
-BOOL IsPrintPreviewEnabled() const;
-
- 
+BOOL IsPrintPreviewEnabled() const;  
 ```  
   
 ### Return Value  
@@ -1115,9 +1062,7 @@ BOOL IsPrintPreviewEnabled() const;
  Indicates whether the quick access toolbar contains command buttons.  
   
 ```  
-BOOL IsQATEmpty() const;
-
- 
+BOOL IsQATEmpty() const;  
 ```  
   
 ### Return Value  
@@ -1129,9 +1074,7 @@ BOOL IsQATEmpty() const;
  Indicates whether the quick access toolbar is located over or under the ribbon bar.  
   
 ```  
-BOOL IsQuickAccessToolbarOnTop() const;
-
- 
+BOOL IsQuickAccessToolbarOnTop() const;  
 ```  
   
 ### Return Value  
@@ -1141,9 +1084,7 @@ BOOL IsQuickAccessToolbarOnTop() const;
  Indicates whether the ribbon bar replaces or is under the caption of the main frame window.  
   
 ```  
-BOOL IsReplaceFrameCaption() const;
-
- 
+BOOL IsReplaceFrameCaption() const;  
 ```  
   
 ### Return Value  
@@ -1153,9 +1094,7 @@ BOOL IsReplaceFrameCaption() const;
  Indicates whether button groups located on the ribbon bar display a group border.  
   
 ```  
-virtual BOOL IsShowGroupBorder(CMFCRibbonButtonsGroup* pGroup) const;
-
- 
+virtual BOOL IsShowGroupBorder(CMFCRibbonButtonsGroup* pGroup) const;  
 ```  
   
 ### Parameters  
@@ -1172,9 +1111,7 @@ virtual BOOL IsShowGroupBorder(CMFCRibbonButtonsGroup* pGroup) const;
  Indicates whether tooltip descriptions are enabled.  
   
 ```  
-BOOL IsToolTipDescrEnabled() const;
-
- 
+BOOL IsToolTipDescrEnabled() const;  
 ```  
   
 ### Return Value  
@@ -1187,9 +1124,7 @@ BOOL IsToolTipDescrEnabled() const;
  Indicates whether tooltips are enabled or disabled for the ribbon bar.  
   
 ```  
-BOOL IsToolTipEnabled() const;
-
- 
+BOOL IsToolTipEnabled() const;  
 ```  
   
 ### Return Value  
@@ -1199,9 +1134,7 @@ BOOL IsToolTipEnabled() const;
  Indicates whether the display is set for Windows Aero color scheme.  
   
 ```  
-BOOL IsTransparentCaption() const;
-
- 
+BOOL IsTransparentCaption() const;  
 ```  
   
 ### Return Value  
@@ -1717,9 +1650,7 @@ virtual CMFCRibbonBaseElement* GetFocused();
  Indicates whether the ribbon has Windows 7 look (small rectangular application button).  
   
 ```  
-BOOL IsWindows7Look() const;
-
- 
+BOOL IsWindows7Look() const;  
 ```  
   
 ### Return Value  
@@ -1765,9 +1696,7 @@ virtual BOOL LoadFromResource(
  Saves the Ribbon Bar to a buffer.  
   
 ```  
-UINT SaveToXMLBuffer(LPBYTE* ppBuffer) const;
-
- 
+UINT SaveToXMLBuffer(LPBYTE* ppBuffer) const;  
 ```  
   
 ### Parameters  
@@ -1783,9 +1712,7 @@ UINT SaveToXMLBuffer(LPBYTE* ppBuffer) const;
  Saves the Ribbon Bar to an XML file.  
   
 ```  
-BOOL SaveToXMLFile(LPCTSTR lpszFilePath) const;
-
- 
+BOOL SaveToXMLFile(LPCTSTR lpszFilePath) const;  
 ```  
   
 ### Parameters  

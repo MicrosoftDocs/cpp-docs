@@ -177,9 +177,7 @@ BOOL DoPreparePrinting(CPrintInfo* pInfo);
  Call this function to get a pointer to the view's document.  
   
 ```  
-CDocument* GetDocument() const;
-
- 
+CDocument* GetDocument() const;  
 ```  
   
 ### Return Value  
@@ -192,9 +190,7 @@ CDocument* GetDocument() const;
  Called by the framework to check whether the specified document item is selected.  
   
 ```  
-virtual BOOL IsSelected(const CObject* pDocItem) const;
-
- 
+virtual BOOL IsSelected(const CObject* pDocItem) const;  
 ```  
   
 ### Parameters  

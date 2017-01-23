@@ -97,9 +97,7 @@ class CTypedPtrMap : public BASE_CLASS
 void GetNextAssoc(
     POSITION& rPosition,
     KEY& rKey,
-    VALUE& rValue) const;
-
- 
+    VALUE& rValue) const;  
 ```  
   
 ### Parameters  
@@ -129,10 +127,7 @@ void GetNextAssoc(
  `Lookup` uses a hashing algorithm to quickly find the map element with a key that matches exactly.  
   
 ```  
-BOOL Lookup(
-    BASE_CLASS ::BASE_ARG_KEY key, VALUE& rValue) const;
-
- 
+BOOL Lookup(BASE_CLASS ::BASE_ARG_KEY key, VALUE& rValue) const;  
 ```  
   
 ### Parameters  
@@ -198,8 +193,7 @@ BOOL RemoveKey(KEY key);
  This member function calls `BASE_CLASS`**::SetAt**.  
   
 ```  
-void SetAt(
-    KEY key, VALUE newValue);
+void SetAt(KEY key, VALUE newValue);
 ```  
   
 ### Parameters  

@@ -914,9 +914,7 @@ HDC Detach();
  Use this function when you give **HIMETRIC** sizes to OLE, converting pixels to **HIMETRIC**.  
   
 ```  
-void DPtoHIMETRIC(LPSIZE lpSize) const;
-
- 
+void DPtoHIMETRIC(LPSIZE lpSize) const;  
 ```  
   
 ### Parameters  
@@ -932,19 +930,10 @@ void DPtoHIMETRIC(LPSIZE lpSize) const;
 ```  
 void DPtoLP(
     LPPOINT lpPoints,  
-    int nCount = 1) const;
-
- 
- 
-void DPtoLP(
-    LPRECT lpRect) const;
-
- 
- 
-void DPtoLP(
-    LPSIZE lpSize) const;
-
- 
+    int nCount = 1) const;  
+  
+void DPtoLP(LPRECT lpRect) const;
+void DPtoLP(LPSIZE lpSize) const;  
 ```  
   
 ### Parameters  
@@ -1457,11 +1446,9 @@ BOOL Ellipse(
     int x1,  
     int y1,  
     int x2,  
-    int y2);
-
- 
-BOOL Ellipse(
-    LPCRECT lpRect);
+    int y2);  
+  
+BOOL Ellipse(LPCRECT lpRect);
 ```  
   
 ### Parameters  
@@ -1547,8 +1534,7 @@ BOOL EndPath();
 ```  
 int EnumObjects(
     int nObjectType,  
-    int (
-    CALLBACK* lpfn)(
+    int (CALLBACK* lpfn)(
     LPVOID,
     LPARAM),  
     LPARAM lpData);
@@ -1673,11 +1659,9 @@ int ExcludeClipRect(
     int x1,  
     int y1,  
     int x2,  
-    int y2);
-
- 
-int ExcludeClipRect(
-    LPCRECT lpRect);
+    int y2);  
+  
+int ExcludeClipRect(LPCRECT lpRect);
 ```  
   
 ### Parameters  
@@ -2053,9 +2037,7 @@ static CDC* PASCAL FromHandle(HDC hDC);
  Returns the current arc direction for the device context.  
   
 ```  
-int GetArcDirection() const;
-
- 
+int GetArcDirection() const;  
 ```  
   
 ### Return Value  
@@ -2074,9 +2056,7 @@ int GetArcDirection() const;
  Retrieves the setting for the current aspect-ratio filter.  
   
 ```  
-CSize GetAspectRatioFilter() const;
-
- 
+CSize GetAspectRatioFilter() const;  
 ```  
   
 ### Return Value  
@@ -2089,9 +2069,7 @@ CSize GetAspectRatioFilter() const;
  Returns the current background color.  
   
 ```  
-COLORREF GetBkColor() const;
-
- 
+COLORREF GetBkColor() const;  
 ```  
   
 ### Return Value  
@@ -2104,9 +2082,7 @@ COLORREF GetBkColor() const;
  Returns the background mode.  
   
 ```  
-int GetBkMode() const;
-
- 
+int GetBkMode() const;  
 ```  
   
 ### Return Value  
@@ -2150,9 +2126,7 @@ UINT GetBoundsRect(
  Retrieves the origin (in device units) of the brush currently selected for the device context.  
   
 ```  
-CPoint GetBrushOrg() const;
-
- 
+CPoint GetBrushOrg() const;  
 ```  
   
 ### Return Value  
@@ -2170,16 +2144,13 @@ DWORD GetCharacterPlacement(
     int nCount,  
     int nMaxExtent,  
     LPGCP_RESULTS lpResults,  
-    DWORD dwFlags) const;
-
- 
+    DWORD dwFlags) const;  
+  
 DWORD GetCharacterPlacement(
     CString& str,  
     int nMaxExtent,  
     LPGCP_RESULTS lpResults,  
-    DWORD dwFlags) const;
-
- 
+    DWORD dwFlags) const;  
 ```  
   
 ### Parameters  
@@ -2216,16 +2187,12 @@ DWORD GetCharacterPlacement(
 BOOL GetCharABCWidths(
     UINT nFirstChar,  
     UINT nLastChar,  
-    LPABC lpabc) const;
-
- 
- 
+    LPABC lpabc) const;  
+  
 BOOL GetCharABCWidths(
     UINT nFirstChar,  
     UINT nLastChar,  
-    LPABCFLOAT lpABCF) const;
-
- 
+    LPABCFLOAT lpABCF) const;  
 ```  
   
 ### Parameters  
@@ -2265,9 +2232,7 @@ BOOL GetCharABCWidthsI(
     UINT giFirst,  
     UINT cgi,  
     LPWORD pgi,  
-    LPABC lpabc) const;
-
- 
+    LPABC lpabc) const;  
 ```  
   
 ### Parameters  
@@ -2296,16 +2261,12 @@ BOOL GetCharABCWidthsI(
 BOOL GetCharWidth(
     UINT nFirstChar,  
     UINT nLastChar,  
-    LPINT lpBuffer) const;
-
- 
- 
+    LPINT lpBuffer) const;  
+  
 BOOL GetCharWidth(
     UINT nFirstChar,  
     UINT nLastChar,  
-    float* lpFloatBuffer) const;
-
- 
+    float* lpFloatBuffer) const;  
 ```  
   
 ### Parameters  
@@ -2339,9 +2300,7 @@ BOOL GetCharWidthI(
     UINT giFirst,  
     UINT cgi,  
     LPWORD pgi,  
-    LPINT lpBuffer) const;
-
- 
+    LPINT lpBuffer) const;  
 ```  
   
 ### Parameters  
@@ -2367,9 +2326,7 @@ BOOL GetCharWidthI(
  Retrieves the dimensions of the tightest bounding rectangle around the current clipping boundary.  
   
 ```  
-virtual int GetClipBox(LPRECT lpRect) const;
-
- 
+virtual int GetClipBox(LPRECT lpRect) const;  
 ```  
   
 ### Parameters  
@@ -2394,9 +2351,7 @@ virtual int GetClipBox(LPRECT lpRect) const;
  Retrieves the color adjustment values for the device context.  
   
 ```  
-BOOL GetColorAdjustment(LPCOLORADJUSTMENT lpColorAdjust) const;
-
- 
+BOOL GetColorAdjustment(LPCOLORADJUSTMENT lpColorAdjust) const;  
 ```  
   
 ### Parameters  
@@ -2410,9 +2365,7 @@ BOOL GetColorAdjustment(LPCOLORADJUSTMENT lpColorAdjust) const;
  Returns a pointer to the currently selected `CBitmap` object.  
   
 ```  
-CBitmap* GetCurrentBitmap() const;
-
- 
+CBitmap* GetCurrentBitmap() const;  
 ```  
   
 ### Return Value  
@@ -2425,9 +2378,7 @@ CBitmap* GetCurrentBitmap() const;
  Returns a pointer to the currently selected `CBrush` object.  
   
 ```  
-CBrush* GetCurrentBrush() const;
-
- 
+CBrush* GetCurrentBrush() const;  
 ```  
   
 ### Return Value  
@@ -2440,9 +2391,7 @@ CBrush* GetCurrentBrush() const;
  Returns a pointer to the currently selected `CFont` object.  
   
 ```  
-CFont* GetCurrentFont() const;
-
- 
+CFont* GetCurrentFont() const;  
 ```  
   
 ### Return Value  
@@ -2455,9 +2404,7 @@ CFont* GetCurrentFont() const;
  Returns a pointer to the currently selected `CPalette` object.  
   
 ```  
-CPalette* GetCurrentPalette() const;
-
- 
+CPalette* GetCurrentPalette() const;  
 ```  
   
 ### Return Value  
@@ -2470,9 +2417,7 @@ CPalette* GetCurrentPalette() const;
  Returns a pointer to the currently selected `CPen` object.  
   
 ```  
-CPen* GetCurrentPen() const;
-
- 
+CPen* GetCurrentPen() const;  
 ```  
   
 ### Return Value  
@@ -2485,9 +2430,7 @@ CPen* GetCurrentPen() const;
  Retrieves the current position (in logical coordinates).  
   
 ```  
-CPoint GetCurrentPosition() const;
-
- 
+CPoint GetCurrentPosition() const;  
 ```  
   
 ### Return Value  
@@ -2500,9 +2443,7 @@ CPoint GetCurrentPosition() const;
  Retrieves the current brush color.  
   
 ```  
-COLORREF GetDCBrushColor() const;
-
- 
+COLORREF GetDCBrushColor() const;  
 ```  
   
 ### Return Value  
@@ -2517,9 +2458,7 @@ COLORREF GetDCBrushColor() const;
  Retrieves the current pen color.  
   
 ```  
-COLORREF GetDCPenColor() const;
-
- 
+COLORREF GetDCPenColor() const;  
 ```  
   
 ### Return Value  
@@ -2534,9 +2473,7 @@ COLORREF GetDCPenColor() const;
  Retrieves a wide range of device-specific information about the display device.  
   
 ```  
-int GetDeviceCaps(int nIndex) const;
-
- 
+int GetDeviceCaps(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -2557,9 +2494,7 @@ DWORD GetFontData(
     DWORD dwTable,  
     DWORD dwOffset,  
     LPVOID lpData,  
-    DWORD cbData) const;
-
- 
+    DWORD cbData) const;  
 ```  
   
 ### Parameters  
@@ -2591,9 +2526,7 @@ DWORD GetFontData(
  Returns information about the currently selected font for the specified display context.  
   
 ```  
-DWORD GetFontLanguageInfo() const;
-
- 
+DWORD GetFontLanguageInfo() const;  
 ```  
   
 ### Return Value  
@@ -2612,9 +2545,7 @@ DWORD GetGlyphOutline(
     LPGLYPHMETRICS lpgm,  
     DWORD cbBuffer,  
     LPVOID lpBuffer,  
-    const MAT2* lpmat2) const;
-
- 
+    const MAT2* lpmat2) const;  
 ```  
   
 ### Parameters  
@@ -2655,9 +2586,7 @@ DWORD GetGlyphOutline(
  Retrieves the current graphics mode for the specified device context.  
   
 ```  
-int GetGraphicsMode() const;
-
- 
+int GetGraphicsMode() const;  
 ```  
   
 ### Return Value  
@@ -2691,9 +2620,7 @@ static CBrush* PASCAL GetHalftoneBrush();
 ```  
 int GetKerningPairs(
     int nPairs,  
-    LPKERNINGPAIR lpkrnpair) const;
-
- 
+    LPKERNINGPAIR lpkrnpair) const;  
 ```  
   
 ### Parameters  
@@ -2710,9 +2637,7 @@ int GetKerningPairs(
  Call this member function to determine the layout of the text and graphics for a device context, such as a printer or a metafile.  
   
 ```  
-DWORD GetLayout() const;
-
- 
+DWORD GetLayout() const;  
 ```  
   
 ### Return Value  
@@ -2725,9 +2650,7 @@ DWORD GetLayout() const;
  Retrieves the current mapping mode.  
   
 ```  
-int GetMapMode() const;
-
- 
+int GetMapMode() const;  
 ```  
   
 ### Return Value  
@@ -2743,9 +2666,7 @@ int GetMapMode() const;
  Returns the miter limit for the device context.  
   
 ```  
-float GetMiterLimit() const;
-
- 
+float GetMiterLimit() const;  
 ```  
   
 ### Return Value  
@@ -2758,9 +2679,7 @@ float GetMiterLimit() const;
  Returns the solid color that best matches a specified logical color.  
   
 ```  
-COLORREF GetNearestColor(COLORREF crColor) const;
-
- 
+COLORREF GetNearestColor(COLORREF crColor) const;  
 ```  
   
 ### Parameters  
@@ -2779,9 +2698,7 @@ COLORREF GetNearestColor(COLORREF crColor) const;
 ```  
 UINT GetOutlineTextMetrics(
     UINT cbData,  
-    LPOUTLINETEXTMETRIC lpotm) const;
-
- 
+    LPOUTLINETEXTMETRIC lpotm) const;  
 ```  
   
 ### Parameters  
@@ -2807,9 +2724,7 @@ UINT GetOutlineTextMetrics(
 BOOL GetOutputCharWidth(
     UINT nFirstChar,  
     UINT nLastChar,  
-    LPINT lpBuffer) const;
-
- 
+    LPINT lpBuffer) const;  
 ```  
   
 ### Parameters  
@@ -2840,16 +2755,12 @@ CSize GetOutputTabbedTextExtent(
     LPCTSTR lpszString,  
     int nCount,  
     int nTabPositions,  
-    LPINT lpnTabStopPositions) const;
-
- 
- 
+    LPINT lpnTabStopPositions) const;  
+  
 CSize GetOutputTabbedTextExtent(
     const CString& str,  
     int nTabPositions,  
-    LPINT lpnTabStopPositions) const;
-
- 
+    LPINT lpnTabStopPositions) const;  
 ```  
   
 ### Parameters  
@@ -2886,14 +2797,9 @@ CSize GetOutputTabbedTextExtent(
 ```  
 CSize GetOutputTextExtent(
     LPCTSTR lpszString,  
-    int nCount) const;
-
- 
- 
-CSize GetOutputTextExtent(
-    const CString& str) const;
-
- 
+    int nCount) const;  
+  
+CSize GetOutputTextExtent(const CString& str) const;  
 ```  
   
 ### Parameters  
@@ -2918,9 +2824,7 @@ CSize GetOutputTextExtent(
  Retrieves the metrics for the current font using `m_hDC`, the output device context.  
   
 ```  
-BOOL GetOutputTextMetrics(LPTEXTMETRIC lpMetrics) const;
-
- 
+BOOL GetOutputTextMetrics(LPTEXTMETRIC lpMetrics) const;  
 ```  
   
 ### Parameters  
@@ -2937,9 +2841,7 @@ BOOL GetOutputTextMetrics(LPTEXTMETRIC lpMetrics) const;
 int GetPath(
     LPPOINT lpPoints,  
     LPBYTE lpTypes,  
-    int nCount) const;
-
- 
+    int nCount) const;  
 ```  
   
 ### Parameters  
@@ -2979,14 +2881,9 @@ int GetPath(
 ```  
 COLORREF GetPixel(
     int x,  
-    int y) const;
-
- 
- 
-COLORREF GetPixel(
-    POINT point) const;
-
- 
+    int y) const;  
+  
+COLORREF GetPixel(POINT point) const;  
 ```  
   
 ### Parameters  
@@ -3013,9 +2910,7 @@ COLORREF GetPixel(
  Retrieves the current polygon-filling mode.  
   
 ```  
-int GetPolyFillMode() const;
-
- 
+int GetPolyFillMode() const;  
 ```  
   
 ### Return Value  
@@ -3028,9 +2923,7 @@ int GetPolyFillMode() const;
  Retrieves the current drawing mode.  
   
 ```  
-int GetROP2() const;
-
- 
+int GetROP2() const;  
 ```  
   
 ### Return Value  
@@ -3043,9 +2936,7 @@ int GetROP2() const;
  Call this member function to get [m_hDC](#m_hdc), the output device context.  
   
 ```  
-HDC GetSafeHdc() const;
-
- 
+HDC GetSafeHdc() const;  
 ```  
   
 ### Return Value  
@@ -3058,9 +2949,7 @@ HDC GetSafeHdc() const;
  Retrieves the current bitmap-stretching mode.  
   
 ```  
-int GetStretchBltMode() const;
-
- 
+int GetStretchBltMode() const;  
 ```  
   
 ### Return Value  
@@ -3079,16 +2968,12 @@ CSize GetTabbedTextExtent(
     LPCTSTR lpszString,  
     int nCount,  
     int nTabPositions,  
-    LPINT lpnTabStopPositions) const;
-
- 
- 
+    LPINT lpnTabStopPositions) const;  
+  
 CSize GetTabbedTextExtent(
     const CString& str,  
     int nTabPositions,  
-    LPINT lpnTabStopPositions) const;
-
- 
+    LPINT lpnTabStopPositions) const;  
 ```  
   
 ### Parameters  
@@ -3123,9 +3008,7 @@ CSize GetTabbedTextExtent(
  Retrieves the status of the text-alignment flags for the device context.  
   
 ```  
-UINT GetTextAlign() const;
-
- 
+UINT GetTextAlign() const;  
 ```  
   
 ### Return Value  
@@ -3166,9 +3049,7 @@ UINT GetTextAlign() const;
  Retrieves the current setting for the amount of intercharacter spacing.  
   
 ```  
-int GetTextCharacterExtra() const;
-
- 
+int GetTextCharacterExtra() const;  
 ```  
   
 ### Return Value  
@@ -3183,9 +3064,7 @@ int GetTextCharacterExtra() const;
  Retrieves the current text color.  
   
 ```  
-COLORREF GetTextColor() const;
-
- 
+COLORREF GetTextColor() const;  
 ```  
   
 ### Return Value  
@@ -3200,14 +3079,9 @@ COLORREF GetTextColor() const;
 ```  
 CSize GetTextExtent(
     LPCTSTR lpszString,  
-    int nCount) const;
-
- 
- 
-CSize GetTextExtent(
-    const CString& str) const;
-
- 
+    int nCount) const;  
+  
+CSize GetTextExtent(const CString& str) const;  
 ```  
   
 ### Parameters  
@@ -3242,9 +3116,7 @@ BOOL GetTextExtentExPointI(
     int nMaxExtent,  
     LPINT lpnFit,  
     LPINT alpDx,  
-    LPSIZE lpSize) const;
-
- 
+    LPSIZE lpSize) const;  
 ```  
   
 ### Parameters  
@@ -3279,9 +3151,7 @@ BOOL GetTextExtentExPointI(
 BOOL GetTextExtentPointI(
     LPWORD pgiIn,  
     int cgi,  
-    LPSIZE lpSize) const;
-
- 
+    LPSIZE lpSize) const;  
 ```  
   
 ### Parameters  
@@ -3306,14 +3176,9 @@ BOOL GetTextExtentPointI(
 ```  
 int GetTextFace(
     int nCount,  
-    LPTSTR lpszFacename) const;
-
- 
- 
-int GetTextFace(
-    CString& rString) const;
-
- 
+    LPTSTR lpszFacename) const;  
+  
+int GetTextFace(CString& rString) const;  
 ```  
   
 ### Parameters  
@@ -3336,9 +3201,7 @@ int GetTextFace(
  Retrieves the metrics for the current font using the attribute device context.  
   
 ```  
-BOOL GetTextMetrics(LPTEXTMETRIC lpMetrics) const;
-
- 
+BOOL GetTextMetrics(LPTEXTMETRIC lpMetrics) const;  
 ```  
   
 ### Parameters  
@@ -3352,9 +3215,7 @@ BOOL GetTextMetrics(LPTEXTMETRIC lpMetrics) const;
  Retrieves the x- and y-extents of the device context's viewport.  
   
 ```  
-CSize GetViewportExt() const;
-
- 
+CSize GetViewportExt() const;  
 ```  
   
 ### Return Value  
@@ -3364,9 +3225,7 @@ CSize GetViewportExt() const;
  Retrieves the x- and y-coordinates of the origin of the viewport associated with the device context.  
   
 ```  
-CPoint GetViewportOrg() const;
-
- 
+CPoint GetViewportOrg() const;  
 ```  
   
 ### Return Value  
@@ -3376,9 +3235,7 @@ CPoint GetViewportOrg() const;
  Returns the window associated with the display device context.  
   
 ```  
-CWnd* GetWindow() const;
-
- 
+CWnd* GetWindow() const;  
 ```  
   
 ### Return Value  
@@ -3391,9 +3248,7 @@ CWnd* GetWindow() const;
  Retrieves the x- and y-extents of the window associated with the device context.  
   
 ```  
-CSize GetWindowExt() const;
-
- 
+CSize GetWindowExt() const;  
 ```  
   
 ### Return Value  
@@ -3403,9 +3258,7 @@ CSize GetWindowExt() const;
  Retrieves the x- and y-coordinates of the origin of the window associated with the device context.  
   
 ```  
-CPoint GetWindowOrg() const;
-
- 
+CPoint GetWindowOrg() const;  
 ```  
   
 ### Return Value  
@@ -3415,9 +3268,7 @@ CPoint GetWindowOrg() const;
  Retrieves the current world-space to page-space transformation.  
   
 ```  
-BOOL GetWorldTransform(XFORM& rXform) const;
-
- 
+BOOL GetWorldTransform(XFORM& rXform) const;  
 ```  
   
 ### Parameters  
@@ -3474,8 +3325,7 @@ BOOL GradientFill(
 ```  
 virtual BOOL GrayString(
     CBrush* pBrush,  
-    BOOL (
-    CALLBACK* lpfnOutput)(
+    BOOL (CALLBACK* lpfnOutput)(
     HDC,
     LPARAM,
     int),  
@@ -3532,9 +3382,7 @@ virtual BOOL GrayString(
  Use this function when you convert **HIMETRIC** sizes from OLE to pixels.  
   
 ```  
-void HIMETRICtoDP(LPSIZE lpSize) const;
-
- 
+void HIMETRICtoDP(LPSIZE lpSize) const;  
 ```  
   
 ### Parameters  
@@ -3548,9 +3396,7 @@ void HIMETRICtoDP(LPSIZE lpSize) const;
  Call this function to convert **HIMETRIC** units into logical units.  
   
 ```  
-void HIMETRICtoLP(LPSIZE lpSize) const;
-
- 
+void HIMETRICtoLP(LPSIZE lpSize) const;  
 ```  
   
 ### Parameters  
@@ -3570,11 +3416,9 @@ int IntersectClipRect(
     int x1,  
     int y1,  
     int x2,  
-    int y2);
-
- 
-int IntersectClipRect(
-    LPCRECT lpRect);
+    int y2);  
+  
+int IntersectClipRect(LPCRECT lpRect);
 ```  
   
 ### Parameters  
@@ -3647,9 +3491,7 @@ BOOL InvertRgn(CRgn* pRgn);
  Determines whether the device context is being used for printing.  
   
 ```  
-BOOL IsPrinting() const;
-
- 
+BOOL IsPrinting() const;  
 ```  
   
 ### Return Value  
@@ -3661,11 +3503,9 @@ BOOL IsPrinting() const;
 ```  
 BOOL LineTo(
     int x,  
-    int y);
-
- 
-BOOL LineTo(
-    POINT point);
+    int y);  
+  
+BOOL LineTo(POINT point);
 ```  
   
 ### Parameters  
@@ -3693,19 +3533,10 @@ BOOL LineTo(
 ```  
 void LPtoDP(
     LPPOINT lpPoints,  
-    int nCount = 1) const;
-
- 
- 
-void LPtoDP(
-    LPRECT lpRect) const;
-
- 
- 
-void LPtoDP(
-    LPSIZE lpSize) const;
-
- 
+    int nCount = 1) const;  
+  
+void LPtoDP(LPRECT lpRect) const;
+void LPtoDP(LPSIZE lpSize) const;  
 ```  
   
 ### Parameters  
@@ -3730,9 +3561,7 @@ void LPtoDP(
  Call this function to convert logical units into **HIMETRIC** units.  
   
 ```  
-void LPtoHIMETRIC(LPSIZE lpSize) const;
-
- 
+void LPtoHIMETRIC(LPSIZE lpSize) const;  
 ```  
   
 ### Parameters  
@@ -3858,11 +3687,9 @@ BOOL ModifyWorldTransform(
 ```  
 CPoint MoveTo(
     int x,  
-    int y);
-
- 
-CPoint MoveTo(
-    POINT point);
+    int y);  
+  
+CPoint MoveTo(POINT point);
 ```  
   
 ### Parameters  
@@ -3887,11 +3714,9 @@ CPoint MoveTo(
 ```  
 int OffsetClipRgn(
     int x,  
-    int y);
-
- 
-int OffsetClipRgn(
-    SIZE size);
+    int y);  
+  
+int OffsetClipRgn(SIZE size);
 ```  
   
 ### Parameters  
@@ -3960,9 +3785,7 @@ CPoint OffsetWindowOrg(
  Use this operator to retrieve the device context handle of the `CDC` object.  
   
 ```  
-operator HDC() const;
-
- 
+operator HDC() const;  
 ```  
   
 ### Return Value  
@@ -4103,8 +3926,7 @@ BOOL Pie(
  Plays the contents of the specified metafile on the device context.  
   
 ```  
-BOOL PlayMetaFile(
-    HMETAFILE hMF);
+BOOL PlayMetaFile(HMETAFILE hMF);
 
  
 BOOL PlayMetaFile(
@@ -4425,14 +4247,9 @@ BOOL PolyPolyline(
 ```  
 virtual BOOL PtVisible(
     int x,  
-    int y) const;
-
- 
- 
-BOOL PtVisible(
-    POINT point) const;
-
- 
+    int y) const;  
+  
+BOOL PtVisible(POINT point) const;  
 ```  
   
 ### Parameters  
@@ -4452,9 +4269,7 @@ BOOL PtVisible(
  Calls the abort function installed by the [SetAbortProc](#setabortproc) member function for a printing application and queries whether the printing should be terminated.  
   
 ```  
-BOOL QueryAbort() const;
-
- 
+BOOL QueryAbort() const;  
 ```  
   
 ### Return Value  
@@ -4485,11 +4300,9 @@ BOOL Rectangle(
     int x1,  
     int y1,  
     int x2,  
-    int y2);
-
- 
-BOOL Rectangle(
-    LPCRECT lpRect);
+    int y2);  
+  
+BOOL Rectangle(LPCRECT lpRect);
 ```  
   
 ### Parameters  
@@ -4523,9 +4336,7 @@ BOOL Rectangle(
  Determines whether any part of the given rectangle lies within the clipping region of the display context.  
   
 ```  
-virtual BOOL RectVisible(LPCRECT lpRect) const;
-
- 
+virtual BOOL RectVisible(LPCRECT lpRect) const;  
 ```  
   
 ### Parameters  
@@ -4809,8 +4620,7 @@ BOOL SelectClipPath(int nMode);
  Selects the given region as the current clipping region for the device context.  
   
 ```  
-int SelectClipRgn(
-    CRgn* pRgn);
+int SelectClipRgn(CRgn* pRgn);
 
  
 int SelectClipRgn(
@@ -4861,21 +4671,11 @@ int SelectClipRgn(
  Selects an object into the device context.  
   
 ```  
-CPen* SelectObject(CPen* pPen);
-
- 
-CBrush* SelectObject(CBrush* pBrush);
-
- 
-virtual CFont* SelectObject(CFont* pFont);
-
- 
-CBitmap* SelectObject(CBitmap* pBitmap);
-
- 
-int SelectObject(CRgn* pRgn);
-
- 
+CPen* SelectObject(CPen* pPen);  
+CBrush* SelectObject(CBrush* pBrush);  
+virtual CFont* SelectObject(CFont* pFont);  
+CBitmap* SelectObject(CBitmap* pBitmap);  
+int SelectObject(CRgn* pRgn);  
 CGdiObject* SelectObject(CGdiObject* pObject);
 ```  
   
@@ -4994,10 +4794,7 @@ virtual CGdiObject* SelectStockObject(int nIndex);
  Installs the abort procedure for the print job.  
   
 ```  
-int SetAbortProc(
-    BOOL (
-    CALLBACK* lpfn)(
-    HDC, int));
+int SetAbortProc(BOOL (CALLBACK* lpfn)(HDC, int));
 ```  
   
 ### Parameters  
@@ -5154,11 +4951,9 @@ UINT SetBoundsRect(
 ```  
 CPoint SetBrushOrg(
     int x,  
-    int y);
-
- 
-CPoint SetBrushOrg(
-    POINT point);
+    int y);  
+  
+CPoint SetBrushOrg(POINT point);
 ```  
   
 ### Parameters  
@@ -5666,11 +5461,9 @@ int SetTextJustification(
 ```  
 virtual CSize SetViewportExt(
     int cx,  
-    int cy);
-
- 
-CSize SetViewportExt(
-    SIZE size);
+    int cy);  
+  
+CSize SetViewportExt(SIZE size);
 ```  
   
 ### Parameters  
@@ -5707,11 +5500,9 @@ CSize SetViewportExt(
 ```  
 virtual CPoint SetViewportOrg(
     int x,  
-    int y);
-
- 
-CPoint SetViewportOrg(
-    POINT point);
+    int y);  
+  
+CPoint SetViewportOrg(POINT point);
 ```  
   
 ### Parameters  
@@ -5741,11 +5532,9 @@ CPoint SetViewportOrg(
 ```  
 virtual CSize SetWindowExt(
     int cx,  
-    int cy);
-
- 
-CSize SetWindowExt(
-    SIZE size);
+    int cy);  
+  
+CSize SetWindowExt(SIZE size);
 ```  
   
 ### Parameters  
@@ -5789,11 +5578,9 @@ CSize SetWindowExt(
 ```  
 CPoint SetWindowOrg(
     int x,  
-    int y);
-
- 
-CPoint SetWindowOrg(
-    POINT point);
+    int y);  
+  
+CPoint SetWindowOrg(POINT point);
 ```  
   
 ### Parameters  
@@ -5839,9 +5626,7 @@ BOOL SetWorldTransform(const XFORM& rXform);
  Informs the device driver that a new print job is starting and that all subsequent `StartPage` and `EndPage` calls should be spooled under the same job until an `EndDoc` call occurs.  
   
 ```  
-int StartDoc(LPDOCINFO lpDocInfo);
-
- 
+int StartDoc(LPDOCINFO lpDocInfo);  
 int StartDoc(LPCTSTR lpszDocName);
 ```  
   

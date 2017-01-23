@@ -151,9 +151,7 @@ virtual BOOL AddTab(
  Specifies whether an empty tabbed pane can be destroyed.  
   
 ```  
-virtual BOOL AllowDestroyEmptyTabbedPane() const;
-
- 
+virtual BOOL AllowDestroyEmptyTabbedPane() const;  
 ```  
   
 ### Return Value  
@@ -180,9 +178,7 @@ virtual void ApplyRestoredTabInfo(BOOL bUseTabIndexes = FALSE);
  Specifies whether the tabbed pane can float.  
   
 ```  
-virtual BOOL CanFloat() const;
-
- 
+virtual BOOL CanFloat() const;  
 ```  
   
 ### Return Value  
@@ -192,9 +188,7 @@ virtual BOOL CanFloat() const;
  Determines whether the caption for the tabbed pane should display the same text as the active tab.  
   
 ```  
-virtual BOOL CanSetCaptionTextToTabName() const;
-
- 
+virtual BOOL CanSetCaptionTextToTabName() const;  
 ```  
   
 ### Return Value  
@@ -359,9 +353,7 @@ virtual CWnd* GetFirstVisibleTab(int& iTabNum);
  Retrieves the minimum allowed size for the pane.  
   
 ```  
-virtual void GetMinSize(CSize& size) const;
-
- 
+virtual void GetMinSize(CSize& size) const;  
 ```  
   
 ### Parameters  
@@ -375,9 +367,7 @@ virtual void GetMinSize(CSize& size) const;
  Retrieves the minimum allowed size for the pane.  
   
 ```  
-virtual void GetMinSize(CSize& size) const;
-
- 
+virtual void GetMinSize(CSize& size) const;  
 ```  
   
 ### Parameters  
@@ -426,9 +416,7 @@ virtual void GetTabArea(
  Returns the count of tabs in a tab window.  
   
 ```  
-virtual int GetTabsNum() const;
-
- 
+virtual int GetTabsNum() const;  
 ```  
   
 ### Return Value  
@@ -448,9 +436,7 @@ virtual CMFCBaseTabCtrl* GetUnderlyingWindow();
  Returns the count of visible tabs.  
   
 ```  
-virtual int GetVisibleTabsNum() const;
-
- 
+virtual int GetVisibleTabsNum() const;  
 ```  
   
 ### Return Value  
@@ -463,9 +449,7 @@ virtual int GetVisibleTabsNum() const;
  Determines whether the tabbed pane can be switched to autohide mode.  
   
 ```  
-virtual BOOL HasAutoHideMode() const;
-
- 
+virtual BOOL HasAutoHideMode() const;  
 ```  
   
 ### Return Value  
@@ -478,9 +462,7 @@ virtual BOOL HasAutoHideMode() const;
  Determines whether the tabbed pane is hidden if only one tab is displayed.  
   
 ```  
-virtual BOOL IsHideSingleTab() const;
-
- 
+virtual BOOL IsHideSingleTab() const;  
 ```  
   
 ### Return Value  

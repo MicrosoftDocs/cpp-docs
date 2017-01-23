@@ -76,16 +76,9 @@ class CD2DRectU : public D2D1_RECT_U;
  Constructs a CD2DRectU object from CRect object.  
   
 ```  
-CD2DRectU(
-    const CRect& rect);
-
- 
-CD2DRectU(
-    const D2D1_RECT_U& rect);
-
- 
-CD2DRectU(
-    const D2D1_RECT_U* rect);
+CD2DRectU(const CRect& rect);  
+CD2DRectU(const D2D1_RECT_U& rect);  
+  CD2DRectU(const D2D1_RECT_U* rect);
 
  
 CD2DRectU(
@@ -115,9 +108,7 @@ CD2DRectU(
  Returns a Boolean value that indicates whether an expression contains no valid data (Null).  
   
 ```  
-BOOL IsNull() const;
-
- 
+BOOL IsNull() const;  
 ```  
   
 ### Return Value  

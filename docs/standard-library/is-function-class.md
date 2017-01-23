@@ -93,7 +93,7 @@ is_function<float()> == true
 ```  
   
 ## Requirements  
- **Header:** <type_traits>  
+ **Header:** \<type_traits>  
   
  **Namespace:** std  
   

@@ -291,9 +291,7 @@ class CListCtrl : public CWnd
 CSize ApproximateViewRect(
     CSize sz = CSize(-1,  
  -1),  
-    int iCount = -1) const;
-
- 
+    int iCount = -1) const;  
 ```  
   
 ### Parameters  
@@ -334,10 +332,7 @@ BOOL Arrange(UINT nCode);
 ### Remarks  
  The `nCode` parameter specifies the alignment style.  
   
-### Example  
-
-   
-
+### Example    
 ```cpp
 	// Align all of the list view control items along the top
 	// of the window (the list view control must be in icon or
@@ -653,9 +648,7 @@ BOOL EnsureVisible(
 ```  
 int FindItem(
     LVFINDINFO* pFindInfo,  
-    int nStart = -1) const;
-
- 
+    int nStart = -1) const;  
 ```  
   
 ### Parameters  
@@ -692,9 +685,7 @@ int FindItem(
  Retrieves the background color of a list view control.  
   
 ```  
-COLORREF GetBkColor() const;
-
- 
+COLORREF GetBkColor() const;  
 ```  
   
 ### Return Value  
@@ -707,9 +698,7 @@ COLORREF GetBkColor() const;
  Retrieves the current background image of a list view control.  
   
 ```  
-BOOL GetBkImage(LVBKIMAGE* plvbkImage) const;
-
- 
+BOOL GetBkImage(LVBKIMAGE* plvbkImage) const;  
 ```  
   
 ### Parameters  
@@ -742,9 +731,7 @@ BOOL GetBkImage(LVBKIMAGE* plvbkImage) const;
  Retrieves the callback mask for a list view control.  
   
 ```  
-UINT GetCallbackMask() const;
-
- 
+UINT GetCallbackMask() const;  
 ```  
   
 ### Return Value  
@@ -760,9 +747,7 @@ UINT GetCallbackMask() const;
  Retrieves the current display status of the state image that is associated with an item.  
   
 ```  
-BOOL GetCheck(int nItem) const;
-
- 
+BOOL GetCheck(int nItem) const;  
 ```  
   
 ### Parameters  
@@ -784,9 +769,7 @@ BOOL GetCheck(int nItem) const;
 ```  
 BOOL GetColumn(
     int nCol,  
-    LVCOLUMN* pColumn) const;
-
- 
+    LVCOLUMN* pColumn) const;  
 ```  
   
 ### Parameters  
@@ -853,8 +836,7 @@ BOOL GetColumnOrderArray(
 			int  nColumnCount = pHeaderCtrl->GetItemCount();
 			LPINT pnOrder = (LPINT) malloc(nColumnCount*sizeof(int));
 			ASSERT(pnOrder != NULL);
-
-			m_myListCtrl.GetColumnOrderArray(pnOrder, nColumnCount);
+m_myListCtrl.GetColumnOrderArray(pnOrder, nColumnCount);
 
 			int i, j, nTemp;
 			for (i = 0, j = nColumnCount-1; i < j; i++, j--)
@@ -874,9 +856,7 @@ BOOL GetColumnOrderArray(
  Retrieves the width of a column in report view or list view.  
   
 ```  
-int GetColumnWidth(int nCol) const;
-
- 
+int GetColumnWidth(int nCol) const;  
 ```  
   
 ### Parameters  
@@ -899,9 +879,7 @@ int GetColumnWidth(int nCol) const;
  Calculates the number of items that can fit vertically in the visible area of a list view control when in list view or report view.  
   
 ```  
-int GetCountPerPage() const;
-
- 
+int GetCountPerPage() const;  
 ```  
   
 ### Return Value  
@@ -914,9 +892,7 @@ int GetCountPerPage() const;
  Retrieves the handle of the edit control used to edit a list view item's text.  
   
 ```  
-CEdit* GetEditControl() const;
-
- 
+CEdit* GetEditControl() const;  
 ```  
   
 ### Return Value  
@@ -942,9 +918,7 @@ CEdit* GetEditControl() const;
  Retrieves the string to display if the current list-view control is empty.  
   
 ```  
-CString GetEmptyText() const;
-
- 
+CString GetEmptyText() const;  
 ```  
   
 ### Return Value  
@@ -973,9 +947,7 @@ DWORD GetExtendedStyle();
  Gets the position of the first selected item in the list view control.  
   
 ```  
-POSITION GetFirstSelectedItemPosition() const;
-
- 
+POSITION GetFirstSelectedItemPosition() const;  
 ```  
   
 ### Return Value  
@@ -1007,9 +979,7 @@ POSITION GetFirstSelectedItemPosition() const;
  Retrieves the group that has the keyboard focus in the current list-view control.  
   
 ```  
-int GetFocusedGroup() const;
-
- 
+int GetFocusedGroup() const;  
 ```  
   
 ### Return Value  
@@ -1022,9 +992,7 @@ int GetFocusedGroup() const;
  Retrieves the number of groups in the current list-view control.  
   
 ```  
-int GetGroupCount()const;
-
- 
+int GetGroupCount()const;  
 ```  
   
 ### Return Value  
@@ -1039,9 +1007,7 @@ int GetGroupCount()const;
 ```  
 int GetGroupInfo(
     int iGroupId,  
-    PLVGROUP pgrp) const;
-
- 
+    PLVGROUP pgrp) const;  
 ```  
   
 ### Parameters  
@@ -1063,9 +1029,7 @@ int GetGroupInfo(
 ```  
 BOOL GetGroupInfoByIndex(
     int iIndex,   
-    PLVGROUP pGroup) const;
-
- 
+    PLVGROUP pGroup) const;  
 ```  
   
 ### Parameters  
@@ -1092,10 +1056,7 @@ public:
 
   
 ### Example  
- The following code example demonstrates the `GetGroupInfoByIndex` method. In an earlier section of this code example we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example retrieves information about the group whose index is 0, if such a group exists.  
-  
-
- 
+ The following code example demonstrates the `GetGroupInfoByIndex` method. In an earlier section of this code example we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example retrieves information about the group whose index is 0, if such a group exists.    
 ```cpp
 	// GetGroupInfoByIndex
 	const int GROUP_HEADER_BUFFER_SIZE = 40;
@@ -1128,9 +1089,7 @@ public:
  Retrieves the metrics of a group.  
   
 ```  
-void GetGroupMetrics(PLVGROUPMETRICS pGroupMetrics) const;
-
- 
+void GetGroupMetrics(PLVGROUPMETRICS pGroupMetrics) const;  
 ```  
   
 ### Parameters  
@@ -1147,9 +1106,7 @@ void GetGroupMetrics(PLVGROUPMETRICS pGroupMetrics) const;
 BOOL GetGroupRect(
     int iGroupId,   
     LPRECT lpRect,   
-    int iCoords = LVGGR_GROUP) const;
-
- 
+    int iCoords = LVGGR_GROUP) const;  
 ```  
   
 ### Parameters  
@@ -1169,11 +1126,7 @@ BOOL GetGroupRect(
  This method sends the [LVM_GETGROUPRECT](http://msdn.microsoft.com/library/windows/desktop/bb774935) message, which is described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
 ### Example  
- The following code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.  
-  
-
-   
-
+ The following code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.    
 ```cpp
 public:
 	// Variable used to access the list control.
@@ -1182,10 +1135,8 @@ public:
 
   
 ### Example  
- The following code example demonstrates the `GetGroupRect` method. In an earlier section of this code example, we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example draws a 3D rectangle around the group whose index is 0, if such a group exists.  
+ The following code example demonstrates the `GetGroupRect` method. In an earlier section of this code example, we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example draws a 3D rectangle around the group whose index is 0, if such a group exists.    
   
-
- 
 ```cpp
 	// GetGroupRect
 
@@ -1208,9 +1159,7 @@ public:
 ```  
 UINT GetGroupState(
     int iGroupId,   
-    DWORD dwMask) const;
-
- 
+    DWORD dwMask) const;  
 ```  
   
 ### Parameters  
@@ -1257,10 +1206,8 @@ HCURSOR GetHotCursor();
 ### Remarks  
  This member function implements the behavior of the Win32 macro, [ListView_GetHotCursor](http://msdn.microsoft.com/library/windows/desktop/bb761292), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)]. The hot cursor, only visible when hover selection is enabled, appears when the cursor passes over any list view item. Hover selection is enabled by setting the **LVS_EX_TRACKSELECT** extended style.  
   
-### Example  
-
-   
-
+### Example    
+  
 ```cpp
 		// Set the hot cursor to be the system app starting cursor.
 		HCURSOR hCursor = ::LoadCursor(NULL, IDC_APPSTARTING);
@@ -1284,10 +1231,8 @@ int GetHotItem();
   
  If hot tracking is enabled, when a user pauses over a list view item, the item label is automatically highlighted without the use of a mouse button.  
   
-### Example  
-
-   
-
+### Example    
+  
 ```cpp
 	// Set the hot item to the first item only if no other item is 
 	// highlighted.
@@ -1300,9 +1245,7 @@ int GetHotItem();
  Retrieves the current hover time of a list view control.  
   
 ```  
-DWORD GetHoverTime() const;
-
- 
+DWORD GetHoverTime() const;  
 ```  
   
 ### Return Value  
@@ -1311,10 +1254,8 @@ DWORD GetHoverTime() const;
 ### Remarks  
  This member function implements the behavior of the Win32 macro, [ListView_GetHoverTime](http://msdn.microsoft.com/library/windows/desktop/bb761296), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-### Example  
-
-   
-
+### Example    
+  
 ```cpp
 		// If the hover time is the default set to 1 sec.
 		DWORD dwTime = m_myListCtrl.GetHoverTime();
@@ -1327,9 +1268,7 @@ DWORD GetHoverTime() const;
  Retrieves the handle of an image list used for drawing list view items.  
   
 ```  
-CImageList* GetImageList(int nImageList) const;
-
- 
+CImageList* GetImageList(int nImageList) const;  
 ```  
   
 ### Parameters  
@@ -1345,14 +1284,11 @@ CImageList* GetImageList(int nImageList) const;
 ### Return Value  
  A pointer to the image list used for drawing list view items.  
   
-### Example  
-
-   
-
+### Example    
+  
 ```cpp
 		ASSERT(m_myListCtrl.GetImageList(LVSIL_NORMAL) == NULL);
-
-		m_myListCtrl.SetImageList(&m_lcImageList, LVSIL_NORMAL);
+m_myListCtrl.SetImageList(&m_lcImageList, LVSIL_NORMAL);
 		ASSERT(m_myListCtrl.GetImageList(LVSIL_NORMAL) == &m_lcImageList);
 ```
 
@@ -1361,9 +1297,7 @@ CImageList* GetImageList(int nImageList) const;
  Retrieves the current position of the insertion mark.  
   
 ```  
-BOOL GetInsertMark(LPLVINSERTMARK lvim) const;
-
- 
+BOOL GetInsertMark(LPLVINSERTMARK lvim) const;  
 ```  
   
 ### Parameters  
@@ -1380,9 +1314,7 @@ BOOL GetInsertMark(LPLVINSERTMARK lvim) const;
  Retrieves the current color of the insertion mark.  
   
 ```  
-COLORREF GetInsertMarkColor() const;
-
- 
+COLORREF GetInsertMarkColor() const;  
 ```  
   
 ### Return Value  
@@ -1395,9 +1327,7 @@ COLORREF GetInsertMarkColor() const;
  Retrieves the rectangle that bounds the insertion point.  
   
 ```  
-int GetInsertMarkRect(LPRECT pRect) const;
-
- 
+int GetInsertMarkRect(LPRECT pRect) const;  
 ```  
   
 ### Parameters  
@@ -1418,9 +1348,7 @@ int GetInsertMarkRect(LPRECT pRect) const;
  Retrieves some or all of a list view item's attributes.  
   
 ```  
-BOOL GetItem(LVITEM* pItem) const;
-
- 
+BOOL GetItem(LVITEM* pItem) const;  
 ```  
   
 ### Parameters  
@@ -1437,9 +1365,7 @@ BOOL GetItem(LVITEM* pItem) const;
  Retrieves the number of items in a list view control.  
   
 ```  
-int GetItemCount() const;
-
- 
+int GetItemCount() const; 
 ```  
   
 ### Return Value  
@@ -1452,9 +1378,7 @@ int GetItemCount() const;
  Retrieves the 32-bit application-specific value associated with the item specified by `nItem`.  
   
 ```  
-DWORD_PTR GetItemData(int nItem) const;
-
- 
+DWORD_PTR GetItemData(int nItem) const; 
 ```  
   
 ### Parameters  
@@ -1489,9 +1413,7 @@ BOOL GetItemIndexRect(
     PLVITEMINDEX pItemIndex,   
     int iColumn,   
     int rectType,   
-    LPRECT pRect) const;
-
- 
+    LPRECT pRect) const;  
 ```  
   
 ### Parameters  
@@ -1510,11 +1432,8 @@ BOOL GetItemIndexRect(
  This method sends the [LVM_GETITEMINDEXRECT](http://msdn.microsoft.com/library/windows/desktop/bb761046) message, which is described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)]. For more information, see [ListView_GetItemIndexRect Macro](http://msdn.microsoft.com/library/windows/desktop/bb774959).  
   
 ### Example  
- The following code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.  
+ The following code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.    
   
-
-   
-
 ```cpp
 public:
 	// Variable used to access the list control.
@@ -1523,10 +1442,8 @@ public:
 
   
 ### Example  
- The following code example demonstrates the `GetGroupRect` method. Prior to entering this code example we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example draws a 3D rectangle around the second subitem in both columns.  
+ The following code example demonstrates the `GetGroupRect` method. Prior to entering this code example we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example draws a 3D rectangle around the second subitem in both columns.    
   
-
- 
 ```cpp
 	// GetItemIndexRect
 	// Get the rectangle that bounds the second item in the first group.
@@ -1548,9 +1465,7 @@ public:
 ```  
 BOOL GetItemPosition(
     int nItem,  
-    LPPOINT lpPoint) const;
-
- 
+    LPPOINT lpPoint) const;  
 ```  
   
 ### Parameters  
@@ -1563,10 +1478,8 @@ BOOL GetItemPosition(
 ### Return Value  
  Nonzero if successful; otherwise zero.  
   
-### Example  
-
-   
-
+### Example    
+  
 ```cpp
 		POINT pt;
 
@@ -1589,9 +1502,7 @@ BOOL GetItemPosition(
 BOOL GetItemRect(
     int nItem,  
     LPRECT lpRect,  
-    UINT nCode) const;
-
- 
+    UINT nCode) const;  
 ```  
   
 ### Parameters  
@@ -1613,17 +1524,14 @@ BOOL GetItemRect(
 ### Return Value  
  Nonzero if successful; otherwise zero.  
   
-### Example  
-
-   
-
+### Example    
+  
 ```cpp
 // OnClick is the handler for the NM_CLICK notification
 void CListCtrlDlg::OnClick(NMHDR* pNMHDR, LRESULT* pResult)
 {
 	UNREFERENCED_PARAMETER(pResult);
-
-	LPNMITEMACTIVATE pia = (LPNMITEMACTIVATE)pNMHDR;
+LPNMITEMACTIVATE pia = (LPNMITEMACTIVATE)pNMHDR;
 
 	// Get the current mouse location and convert it to client
 	// coordinates.
@@ -1666,9 +1574,7 @@ void CListCtrlDlg::OnClick(NMHDR* pNMHDR, LRESULT* pResult)
 BOOL GetItemSpacing(
     BOOL fSmall,   
     int* pnHorzSpacing,   
-    int* pnVertSpacing) const;
-
- 
+    int* pnVertSpacing) const;  
 ```  
   
 ### Parameters  
@@ -1691,9 +1597,7 @@ BOOL GetItemSpacing(
 ```  
 UINT GetItemState(
     int nItem,  
-    UINT nMask) const;
-
- 
+    UINT nMask) const;  
 ```  
   
 ### Parameters  
@@ -1720,15 +1624,11 @@ int GetItemText(
     int nItem,  
     int nSubItem,  
     LPTSTR lpszText,  
-    int nLen) const;
-
- 
+    int nLen) const; 
  
 CString GetItemText(
     int nItem,  
-    int nSubItem) const;
-
- 
+    int nSubItem) const;  
 ```  
   
 ### Parameters  
@@ -1758,9 +1658,7 @@ CString GetItemText(
 ```  
 int GetNextItem(
     int nItem,  
-    int nFlags) const;
-
- 
+    int nFlags) const;  
 ```  
   
 ### Parameters  
@@ -1799,9 +1697,7 @@ int GetNextItem(
 ```  
 BOOL GetNextItemIndex(
     PLVITEMINDEX pItemIndex,   
-    int nFlags) const;
-
- 
+    int nFlags) const;  
 ```  
   
 ### Parameters  
@@ -1823,9 +1719,7 @@ BOOL GetNextItemIndex(
  Gets the index of the list item identified by `pos`, then sets *pos* to the **POSITION** value.  
   
 ```  
-int GetNextSelectedItem(POSITION& pos) const;
-
- 
+int GetNextSelectedItem(POSITION& pos) const;  
 ```  
   
 ### Parameters  
@@ -1841,11 +1735,8 @@ int GetNextSelectedItem(POSITION& pos) const;
  You must ensure that your **POSITION** value is valid. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.  
   
 ### Example  
- The following code sample demonstrates the usage of this function.  
+ The following code sample demonstrates the usage of this function.    
   
-
-   
-
 ```cpp
 		POSITION pos = m_myListCtrl.GetFirstSelectedItemPosition();
 		if (pos == NULL)
@@ -1868,9 +1759,7 @@ int GetNextSelectedItem(POSITION& pos) const;
  Retrieves the current number of working areas for a list view control.  
   
 ```  
-UINT GetNumberOfWorkAreas() const;
-
- 
+UINT GetNumberOfWorkAreas() const;  
 ```  
   
 ### Return Value  
@@ -1879,10 +1768,8 @@ UINT GetNumberOfWorkAreas() const;
 ### Remarks  
  This member function implements the behavior of the Win32 macro, [ListView_GetNumberOfWorkAreas](http://msdn.microsoft.com/library/windows/desktop/bb774988), as described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
-### Example  
-
-   
-
+### Example    
+  
 ```cpp
 		UINT i, uCount = m_myListCtrl.GetNumberOfWorkAreas();
 		LPRECT lpRects = (LPRECT) malloc(uCount*sizeof(RECT));
@@ -1914,9 +1801,7 @@ UINT GetNumberOfWorkAreas() const;
  Retrieves the color of the border of a list view control.  
   
 ```  
-COLORREF GetOutlineColor() const;
-
- 
+COLORREF GetOutlineColor() const;  
 ```  
   
 ### Return Value  
@@ -1929,9 +1814,7 @@ COLORREF GetOutlineColor() const;
  Retrieves the current view origin for a list view control.  
   
 ```  
-BOOL GetOrigin(LPPOINT lpPoint) const;
-
- 
+BOOL GetOrigin(LPPOINT lpPoint) const;  
 ```  
   
 ### Parameters  
@@ -1945,9 +1828,7 @@ BOOL GetOrigin(LPPOINT lpPoint) const;
  Retrieves the index of the currently-selected column in the list control.  
   
 ```  
-UINT GetSelectedColumn() const;
-
- 
+UINT GetSelectedColumn() const;  
 ```  
   
 ### Return Value  
@@ -1960,18 +1841,14 @@ UINT GetSelectedColumn() const;
  Retrieves the number of selected items in the list view control.  
   
 ```  
-UINT GetSelectedCount() const;
-
- 
+UINT GetSelectedCount() const;  
 ```  
   
 ### Return Value  
  The number of selected items in the list view control.  
   
-### Example  
-
-   
-
+### Example    
+  
 ```cpp
 		UINT i, uSelectedCount = m_myListCtrl.GetSelectedCount();
 		int  nItem = -1;
@@ -2016,9 +1893,7 @@ int GetSelectionMark();
  Determines the minimum column width necessary to display all of a given string.  
   
 ```  
-int GetStringWidth(LPCTSTR lpsz) const;
-
- 
+int GetStringWidth(LPCTSTR lpsz) const;  
 ```  
   
 ### Parameters  
@@ -2088,9 +1963,7 @@ BOOL GetSubItemRect(
  Retrieves the text background color of a list view control.  
   
 ```  
-COLORREF GetTextBkColor() const;
-
- 
+COLORREF GetTextBkColor() const;  
 ```  
   
 ### Return Value  
@@ -2103,9 +1976,7 @@ COLORREF GetTextBkColor() const;
  Retrieves the text color of a list view control.  
   
 ```  
-COLORREF GetTextColor() const;
-
- 
+COLORREF GetTextColor() const;  
 ```  
   
 ### Return Value  
@@ -2118,9 +1989,7 @@ COLORREF GetTextColor() const;
  Retrieves information about a tile in a list view control.  
   
 ```  
-BOOL GetTileInfo(PLVTILEINFO pti) const;
-
- 
+BOOL GetTileInfo(PLVTILEINFO pti) const;  
 ```  
   
 ### Parameters  
@@ -2137,9 +2006,7 @@ BOOL GetTileInfo(PLVTILEINFO pti) const;
  Retrieves information about a list view control in tile view.  
   
 ```  
-BOOL GetTileViewInfo(PLVTILEVIEWINFO ptvi) const;
-
- 
+BOOL GetTileViewInfo(PLVTILEVIEWINFO ptvi) const;  
 ```  
   
 ### Parameters  
@@ -2156,9 +2023,7 @@ BOOL GetTileViewInfo(PLVTILEVIEWINFO ptvi) const;
  Retrieves the tooltip control that the list view control uses to display tooltips.  
   
 ```  
-CToolTipCtrl* GetToolTips() const;
-
- 
+CToolTipCtrl* GetToolTips() const;  
 ```  
   
 ### Return Value  
@@ -2183,9 +2048,7 @@ CToolTipCtrl* GetToolTips() const;
  Retrieves the index of the topmost visible item when in list view or report view.  
   
 ```  
-int GetTopIndex() const;
-
- 
+int GetTopIndex() const;  
 ```  
   
 ### Return Value  
@@ -2214,9 +2077,7 @@ int GetTopIndex() const;
  Gets the view of the list view control.  
   
 ```  
-DWORD GetView() const;
-
- 
+DWORD GetView() const;  
 ```  
   
 ### Return Value  
@@ -2229,9 +2090,7 @@ DWORD GetView() const;
  Retrieves the bounding rectangle of all items in the list view control.  
   
 ```  
-BOOL GetViewRect(LPRECT lpRect) const;
-
- 
+BOOL GetViewRect(LPRECT lpRect) const;  
 ```  
   
 ### Parameters  
@@ -2250,9 +2109,7 @@ BOOL GetViewRect(LPRECT lpRect) const;
 ```  
 void GetWorkAreas(
     int nWorkAreas,  
-    LPRECT prc) const;
-
- 
+    LPRECT prc) const;  
 ```  
   
 ### Parameters  
@@ -2272,9 +2129,7 @@ void GetWorkAreas(
  Determines if the list view control has the specified group.  
   
 ```  
-BOOL HasGroup(int iGroupId) const;
-
- 
+BOOL HasGroup(int iGroupId) const;  
 ```  
   
 ### Parameters  
@@ -2291,16 +2146,11 @@ BOOL HasGroup(int iGroupId) const;
  Determines which list view item, if any, is at a specified position.  
   
 ```  
-int HitTest(
-    LVHITTESTINFO* pHitTestInfo) const;
-
- 
- 
+int HitTest(LVHITTESTINFO* pHitTestInfo) const;  
+  
 int HitTest(
     CPoint pt,  
-    UINT* pFlags = NULL) const;
-
- 
+    UINT* pFlags = NULL) const;  
 ```  
   
 ### Parameters  
@@ -2431,8 +2281,7 @@ LRESULT InsertGroupSorted(PLVINSERTGROUPSORTED pStructInsert);
  Inserts an item into the list view control.  
   
 ```  
-int InsertItem(
-    const LVITEM* pItem);
+int InsertItem(const LVITEM* pItem);
 
  
 int InsertItem(
@@ -2518,9 +2367,7 @@ int InsertItem(
 ```  
 int InsertMarkHitTest(
     LPPOINT pPoint,  
-    LPLVINSERTMARK lvim) const;
-
- 
+    LPLVINSERTMARK lvim) const;  
 ```  
   
 ### Parameters  
@@ -2540,9 +2387,7 @@ int InsertMarkHitTest(
  Determines whether group view is enabled for a list view control.  
   
 ```  
-BOOL IsGroupViewEnabled() const;
-
- 
+BOOL IsGroupViewEnabled() const;  
 ```  
   
 ### Return Value  
@@ -2555,9 +2400,7 @@ BOOL IsGroupViewEnabled() const;
  Indicates whether a specified item in the current list-view control is visible.  
   
 ```  
-BOOL IsItemVisible(int index) const;
-
- 
+BOOL IsItemVisible(int index) const;  
 ```  
   
 ### Parameters  
@@ -2576,9 +2419,7 @@ BOOL IsItemVisible(int index) const;
  Maps the unique ID of an item in the current list-view control to an index.  
   
 ```  
-UINT MapIDToIndex(UINT id) const;
-
- 
+UINT MapIDToIndex(UINT id) const;  
 ```  
   
 ### Parameters  
@@ -2601,9 +2442,7 @@ UINT MapIDToIndex(UINT id) const;
  Maps the index of an item in the current list-view control to a unique ID.  
   
 ```  
-UINT MapIndexToID(UINT index) const;
-
- 
+UINT MapIndexToID(UINT index) const;  
 ```  
   
 ### Parameters  
@@ -2623,10 +2462,8 @@ UINT MapIndexToID(UINT index) const;
  This method sends the [LVM_MAPINDEXTOID](http://msdn.microsoft.com/library/windows/desktop/bb761139) message, which is described in the [!INCLUDE[winSDK](./includes/winsdk_md.md)].  
   
 ### Example  
- The following code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.  
+ The following code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.    
   
-
- 
 ```cpp
 public:
 	// Variable used to access the list control.
@@ -2635,11 +2472,8 @@ public:
 
   
 ### Example  
- The following code example demonstrates the `MapIndexToID` method. In an earlier section of this code example, we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following example maps the index of each list-view item to an identification number, and then retrieves the index for each identification number. Finally, the example reports whether the original indexes were retrieved.  
+ The following code example demonstrates the `MapIndexToID` method. In an earlier section of this code example, we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following example maps the index of each list-view item to an identification number, and then retrieves the index for each identification number. Finally, the example reports whether the original indexes were retrieved.    
   
-
-   
-
 ```cpp
 	// MapIndexToID
 	int iCount = m_listCtrl.GetItemCount();
@@ -2804,16 +2638,13 @@ BOOL SetBkColor(COLORREF cr);
  Sets the background image of a list view control.  
   
 ```  
-BOOL SetBkImage(
-    LVBKIMAGE* plvbkImage);
-
+BOOL SetBkImage(LVBKIMAGE* plvbkImage);
  
 BOOL SetBkImage(
     HBITMAP hbm,  
     BOOL fTile = TRUE,  
     int xOffsetPercent = 0,  
     int yOffsetPercent = 0);
-
  
 BOOL SetBkImage(
     LPTSTR pszUrl,  
@@ -3113,11 +2944,9 @@ DWORD SetHoverTime(DWORD dwHoverTime = (DWORD)-1);
 ```  
 CSize SetIconSpacing(
     int cx,  
-    int cy);
-
- 
-CSize SetIconSpacing(
-    CSize size);
+    int cy);  
+  
+CSize SetIconSpacing(CSize size);
 ```  
   
 ### Parameters  
@@ -3228,8 +3057,7 @@ COLORREF SetInsertMarkColor(COLORREF color);
  Sets some or all of a list view item's attributes.  
   
 ```  
-BOOL SetItem(
-    const LVITEM* pItem);
+BOOL SetItem(const LVITEM* pItem);
 
  
 BOOL SetItem(
@@ -3386,8 +3214,7 @@ BOOL SetItemCountEx(
  Sets the 32-bit application-specific value associated with the item specified by `nItem`.  
   
 ```  
-BOOL SetItemData(
-    int nItem, DWORD_PTR dwData);
+BOOL SetItemData(int nItem, DWORD_PTR dwData);
 ```  
   
 ### Parameters  
@@ -3422,9 +3249,7 @@ BOOL SetItemData(
 BOOL SetItemIndexState(
     PLVITEMINDEX pItemIndex,   
     DWORD dwState,   
-    DWORD dwMask) const;
-
- 
+    DWORD dwMask) const;  
 ```  
   
 ### Parameters  
@@ -3794,8 +3619,7 @@ int CALLBACK CompareFunc(LPARAM lParam1,
     LPARAM lParam2,
     LPARAM lParamSort);
 ```  
-  
- The comparison function must return a negative value if the first item should precede the second, a positive value if the first item should follow the second, or zero if the two items are equal.  
+The comparison function must return a negative value if the first item should precede the second, a positive value if the first item should follow the second, or zero if the two items are equal.  
   
  The `lParam1` parameter is the 32-bit value associated with the first item that is compared, and the `lParam2` parameter is the value associated with the second item. These are the values that were specified in the `lParam` member of the items' [LVITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) structure when they were inserted into the list. The `lParamSort` parameter is the same as the `dwData` value.  
   
@@ -3810,8 +3634,7 @@ int CALLBACK CListCtrlDlg::MyCompareProc(LPARAM lParam1, LPARAM lParam2,
 	LPARAM lParamSort)
 {
 	UNREFERENCED_PARAMETER(lParamSort);
-
-	return (int)(lParam1 - lParam2);
+return (int)(lParam1 - lParam2);
 }
 ```
   
@@ -3852,8 +3675,7 @@ int CALLBACK CompareFunc(LPARAM lParam1,
     LPARAM lParam2,
     LPARAM lParamSort);
 ```  
-  
- This message is like [LVM_SORTITEMS](http://msdn.microsoft.com/library/windows/desktop/bb761227), except for the type of information passed to the comparison function. In [LVM_SORTITEMS](http://msdn.microsoft.com/library/windows/desktop/bb761227), `lParam1` and `lParam2` are the values of the items to compare. In [LVM_SORTITEMSEX](http://msdn.microsoft.com/library/windows/desktop/bb761228), `lParam1` is the current index of the first item to compare and `lParam2` is the current index of the second item. You can send an [LVM_GETITEMTEXT](http://msdn.microsoft.com/library/windows/desktop/bb761055) message to retrieve more information about an item.  
+This message is like [LVM_SORTITEMS](http://msdn.microsoft.com/library/windows/desktop/bb761227), except for the type of information passed to the comparison function. In [LVM_SORTITEMS](http://msdn.microsoft.com/library/windows/desktop/bb761227), `lParam1` and `lParam2` are the values of the items to compare. In [LVM_SORTITEMSEX](http://msdn.microsoft.com/library/windows/desktop/bb761228), `lParam1` is the current index of the first item to compare and `lParam2` is the current index of the second item. You can send an [LVM_GETITEMTEXT](http://msdn.microsoft.com/library/windows/desktop/bb761055) message to retrieve more information about an item.  
   
  The comparison function must return a negative value if the first item should precede the second, a positive value if the first item should follow the second, or zero if the two items are equal.  
   
@@ -3885,8 +3707,7 @@ int CALLBACK ListCompareFunc(
 {
 	CListCtrl* pListCtrl = (CListCtrl*) lParamSort;
 	CString    strItem1 = pListCtrl->GetItemText(static_cast<int>(lParam1), 1);
-	CString    strItem2 = pListCtrl->GetItemText(static_cast<int>(lParam2), 1);
-
+	CString    strItem2 = pListCtrl->GetItemText(static_cast<int>(lParam2), 1)
 	int x1 = _tstoi(strItem1.GetBuffer());
 	int x2 = _tstoi(strItem2.GetBuffer());
 	int result = 0;
@@ -3931,8 +3752,7 @@ int SubItemHitTest(LPLVHITTESTINFO pInfo);
 void CListCtrlDlg::OnDblClk(NMHDR* pNMHDR, LRESULT* pResult)
 {
 	UNREFERENCED_PARAMETER(pResult);
-
-	LPNMITEMACTIVATE pia = (LPNMITEMACTIVATE)pNMHDR;
+LPNMITEMACTIVATE pia = (LPNMITEMACTIVATE)pNMHDR;
 	LVHITTESTINFO lvhti;
 
 	// Clear the subitem text the user clicked on.

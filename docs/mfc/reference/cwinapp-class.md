@@ -248,9 +248,7 @@ virtual void AddToRecentFileList(LPCTSTR lpszPathName);
  Called by the framework when the application unexpectedly exits.  
   
 ```  
- 
-virtual DWORD ApplicationRecoveryCallback(
-LPVOID lpvParam);
+virtual DWORD ApplicationRecoveryCallback(LPVOID lpvParam);
 ```  
   
 ### Parameters  
@@ -400,7 +398,6 @@ virtual void DoWaitCursor(int nCode);
  Enables application D2D support. Call this method before the main window is initialized.  
   
 ```  
- 
 BOOL EnableD2DSupport(
 D2D1_FACTORY_TYPE d2dFactoryType = D2D1_FACTORY_TYPE_SINGLE_THREADED,  
 DWRITE_FACTORY_TYPE writeFactoryType = DWRITE_FACTORY_TYPE_SHARED);
@@ -442,9 +439,7 @@ void EnableShellOpen();
  Enables Taskbar interaction.  
   
 ```  
- 
-BOOL EnableTaskbarInteraction(
-BOOL bEnable = TRUE);
+BOOL EnableTaskbarInteraction(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
@@ -534,9 +529,7 @@ virtual DWORD GetApplicationRestartFlags();
  Returns the key for HKEY_CURRENT_USER\\"Software"\RegistryKey\ProfileName.  
   
 ```  
- 
-HKEY GetAppRegistryKey(
-CAtlTransactionManager* pTM = NULL);
+HKEY GetAppRegistryKey(CAtlTransactionManager* pTM = NULL);
 ```  
   
 ### Parameters  
@@ -569,9 +562,7 @@ virtual CDataRecoveryHandler *GetDataRecoveryHandler();
  Gets the position of the first document template in the application.  
   
 ```  
-POSITION GetFirstDocTemplatePosition() const;
-
- 
+POSITION GetFirstDocTemplatePosition() const;  
 ```  
   
 ### Return Value  
@@ -594,9 +585,7 @@ AFX_HELP_TYPE GetHelpMode();
  Gets the document template identified by `pos`, then sets `pos` to the **POSITION** value.  
   
 ```  
-CDocTemplate* GetNextDocTemplate(POSITION& pos) const;
-
- 
+CDocTemplate* GetNextDocTemplate(POSITION& pos) const;  
 ```  
   
 ### Parameters  
@@ -747,7 +736,6 @@ CString GetProfileString(
  Returns the key for HKEY_CURRENT_USER\\"Software"\RegistryKey\AppName\lpszSection.  
   
 ```  
- 
 HKEY GetSectionKey(
 LPCTSTR lpszSection,  
 CAtlTransactionManager* pTM = NULL);
@@ -831,14 +819,7 @@ virtual BOOL IsTaskbarInteractionEnabled();
  Loads the cursor resource named by `lpszResourceName` or specified by `nIDResource` from the current executable file.  
   
 ```  
-HCURSOR LoadCursor(LPCTSTR lpszResourceName) const;
-
- 
- 
-HCURSOR LoadCursor(UINT nIDResource) const;
-
- 
-```  
+HCURSOR LoadCursor(LPCTSTR lpszResourceName) const;  HCURSOR LoadCursor(UINT nIDResource) const;  ```  
   
 ### Parameters  
  `lpszResourceName`  
@@ -862,14 +843,7 @@ HCURSOR LoadCursor(UINT nIDResource) const;
  Loads the icon resource named by `lpszResourceName` or specified by `nIDResource` from the executable file.  
   
 ```  
-HICON LoadIcon(LPCTSTR lpszResourceName) const;
-
- 
- 
-HICON LoadIcon(UINT nIDResource) const;
-
- 
-```  
+HICON LoadIcon(LPCTSTR lpszResourceName) const;  HICON LoadIcon(UINT nIDResource) const;  ```  
   
 ### Parameters  
  `lpszResourceName`  
@@ -893,9 +867,7 @@ HICON LoadIcon(UINT nIDResource) const;
  Loads the Windows predefined cursor resource specified by `nIDCursor`.  
   
 ```  
-HCURSOR LoadOEMCursor(UINT nIDCursor) const;
-
- 
+HCURSOR LoadOEMCursor(UINT nIDCursor) const;  
 ```  
   
 ### Parameters  
@@ -917,9 +889,7 @@ HCURSOR LoadOEMCursor(UINT nIDCursor) const;
  Loads the Windows predefined icon resource specified by `nIDIcon`.  
   
 ```  
-HICON LoadOEMIcon(UINT nIDIcon) const;
-
- 
+HICON LoadOEMIcon(UINT nIDIcon) const;  
 ```  
   
 ### Parameters  
@@ -936,9 +906,7 @@ HICON LoadOEMIcon(UINT nIDIcon) const;
  Loads the Windows predefined cursor resource that `lpszCursorName` specifies.  
   
 ```  
-HCURSOR LoadStandardCursor(LPCTSTR lpszCursorName) const;
-
- 
+HCURSOR LoadStandardCursor(LPCTSTR lpszCursorName) const;  
 ```  
   
 ### Parameters  
@@ -982,9 +950,7 @@ HCURSOR LoadStandardCursor(LPCTSTR lpszCursorName) const;
  Loads the Windows predefined icon resource that `lpszIconName` specifies.  
   
 ```  
-HICON LoadStandardIcon(LPCTSTR lpszIconName) const;
-
- 
+HICON LoadStandardIcon(LPCTSTR lpszIconName) const;  
 ```  
   
 ### Parameters  
@@ -1400,7 +1366,6 @@ virtual BOOL OnIdle(LONG lCount);
  The framework calls this method to open the named [CDocument](../../mfc/reference/cdocument-class.md) file for the application.  
   
 ```  
- 
 virtual CDocument* OpenDocumentFile(
 LPCTSTR lpszFileName  
 BOOL bAddToMRU = TRUE);
@@ -1572,9 +1537,7 @@ virtual BOOL Register();
  Call this member function to register all of your application's document types with the Windows File Manager.  
   
 ```  
- 
-void RegisterShellFileTypes(
-BOOL bCompat = FALSE);
+void RegisterShellFileTypes(BOOL bCompat = FALSE);
 ```  
   
 ### Parameters  
@@ -1595,7 +1558,6 @@ BOOL bCompat = FALSE);
  Registers the application with the restart manager.  
   
 ```  
- 
 virtual HRESULT RegisterWithRestartManager(
 BOOL bRegisterRecoveryCallback,  
 const CString& strRestartIdentifier);
@@ -1650,9 +1612,7 @@ DWORD dwCallbackFlags);
  Determines whether the restart manager reopens the files that were open when the application exited unexpectedly.  
   
 ```  
-virtual BOOL ReopenPreviousFilesAtRestart() const;
-
- 
+virtual BOOL ReopenPreviousFilesAtRestart() const;  
 ```  
   
 ### Return Value  
@@ -1677,9 +1637,7 @@ virtual BOOL CWinApp::RestartInstance();
  Determines whether the restart manager restores the autosaved files when it restarts the application.  
   
 ```  
-virtual BOOL RestoreAutosavedFilesAtRestart() const;
-
- 
+virtual BOOL RestoreAutosavedFilesAtRestart() const;  
 ```  
   
 ### Return Value  
@@ -1782,11 +1740,8 @@ void SetHelpMode(AFX_HELP_TYPE eHelpType);
  Causes application settings to be stored in the registry instead of INI files.  
   
 ```  
-void SetRegistryKey(LPCTSTR lpszRegistryKey);
-
- 
-void SetRegistryKey(UINT nIDRegistryKey);
-```  
+void SetRegistryKey(LPCTSTR lpszRegistryKey);  
+void SetRegistryKey(UINT nIDRegistryKey);```  
   
 ### Parameters  
  *lpszRegistryKey*  
@@ -1802,9 +1757,7 @@ void SetRegistryKey(UINT nIDRegistryKey);
  Determines whether the restart manager recovers an application that exited unexpectedly.  
   
 ```  
-virtual BOOL SupportsApplicationRecovery() const;
-
- 
+virtual BOOL SupportsApplicationRecovery() const;  
 ```  
   
 ### Return Value  
@@ -1814,9 +1767,7 @@ virtual BOOL SupportsApplicationRecovery() const;
  Determines whether the restart manager autosaves open documents at a regular interval.  
   
 ```  
-virtual BOOL SupportsAutosaveAtInterval() const;
-
- 
+virtual BOOL SupportsAutosaveAtInterval() const;  
 ```  
   
 ### Return Value  
@@ -1826,9 +1777,7 @@ virtual BOOL SupportsAutosaveAtInterval() const;
  Determines whether the restart manager autosaves any open documents when the application restarts.  
   
 ```  
-virtual BOOL SupportsAutosaveAtRestart() const;
-
- 
+virtual BOOL SupportsAutosaveAtRestart() const;  
 ```  
   
 ### Return Value  
@@ -1838,9 +1787,7 @@ virtual BOOL SupportsAutosaveAtRestart() const;
  Determines whether the application supports the restart manager.  
   
 ```  
-virtual BOOL SupportsRestartManager() const;
-
- 
+virtual BOOL SupportsRestartManager() const;  
 ```  
   
 ### Return Value  
@@ -1988,9 +1935,7 @@ BOOL WriteProfileString(
  Explicitly sets Application User Model ID for the application. This method should be called before any user interface is presented to the user (the best place is the application constructor).  
   
 ```  
- 
-void SetAppID(
-LPCTSTR lpcszAppID);
+void SetAppID(LPCTSTR lpcszAppID);
 ```  
   
 ### Parameters  

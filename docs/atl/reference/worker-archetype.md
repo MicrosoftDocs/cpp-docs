@@ -112,7 +112,7 @@ BOOL Initialize(void* pvParam) throw();
 A typedef for the type of work item that can be processed by the worker class.  
   
 ```  
-typedef   MyRequestType RequestType;    
+typedef MyRequestType RequestType;    
 ```  
   
 ### Remarks  

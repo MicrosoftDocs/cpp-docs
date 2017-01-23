@@ -267,9 +267,7 @@ virtual void GetAnimationVariableList(
  Tells whether related transition are destroyed automatically.  
   
 ```  
-BOOL GetAutodestroyTransitions() const;
-
- 
+BOOL GetAutodestroyTransitions() const;  
 ```  
   
 ### Return Value  
@@ -282,9 +280,7 @@ BOOL GetAutodestroyTransitions() const;
  Returns current Group ID.  
   
 ```  
-UINT32 GetGroupID() const;
-
- 
+UINT32 GetGroupID() const;  
 ```  
   
 ### Return Value  
@@ -297,9 +293,7 @@ UINT32 GetGroupID() const;
  Returns current Object ID.  
   
 ```  
-UINT32 GetObjectID() const;
-
- 
+UINT32 GetObjectID() const;  
 ```  
   
 ### Return Value  
@@ -312,9 +306,7 @@ UINT32 GetObjectID() const;
  Returns user defined data.  
   
 ```  
-DWORD GetUserData() const;
-
- 
+DWORD GetUserData() const;  
 ```  
   
 ### Return Value  

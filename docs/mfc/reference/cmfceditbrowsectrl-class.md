@@ -183,9 +183,7 @@ void EnableFolderBrowseButton();
  Retrieves the browse mode of the current edit browse control.  
   
 ```  
-CMFCEditBrowseCtrl::BrowseMode GetMode() const;
-
- 
+CMFCEditBrowseCtrl::BrowseMode GetMode() const;  
 ```  
   
 ### Return Value  
@@ -271,11 +269,9 @@ void SetBrowseButtonImage(
  
 void SetBrowseButtonImage(
     HBITMAP hBitmap,  
-    BOOL bAutoDestroy= TRUE);
-
- 
-void SetBrowseButtonImage(
-    UINT uiBmpResId);
+    BOOL bAutoDestroy= TRUE);  
+  
+void SetBrowseButtonImage(UINT uiBmpResId);
 ```  
   
 ### Parameters  

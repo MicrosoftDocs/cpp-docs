@@ -154,9 +154,7 @@ virtual INT_PTR DoModal();
  Call this function to get the selection type chosen by the user in the Server Busy dialog box.  
   
 ```  
-UINT GetSelectionType() const;
-
- 
+UINT GetSelectionType() const;  
 ```  
   
 ### Return Value  

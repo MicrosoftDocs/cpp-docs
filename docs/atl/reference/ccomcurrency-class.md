@@ -115,35 +115,22 @@ class CComCurrency
   
 ```
 CComCurrency() throw();
-CComCurrency( const CComCurrency& curSrc) throw();
-CComCurrency( CURRENCY  cySrc) throw();
-CComCurrency( DECIMAL  dSrc);
-
-    CComCurrency( ULONG  ulSrc);
-
-    CComCurrency( USHORT  usSrc);
-
-    CComCurrency( CHAR  cSrc);
-
-    CComCurrency( DOUBLE  dSrc);
-
-    CComCurrency( FLOAT  fSrc);
-
-    CComCurrency( LONG  lSrc);
-
-    CComCurrency( SHORT  sSrc);
-
-    CComCurrency( BYTE  bSrc);
-
-    CComCurrency( LONGLONG  nInteger, SHORT nFraction);
-
-    explicit CComCurrency(LPDISPATCH pDispSrc);
-
-    explicit CComCurrency(const VARIANT& varSrc);
-
-    explicit CComCurrency(LPCWSTR szSrc);
-
-    explicit CComCurrency(LPCSTR szSrc);
+CComCurrency(const CComCurrency& curSrc) throw();
+CComCurrency(CURRENCY cySrc) throw();
+CComCurrency(DECIMAL dSrc);
+CComCurrency(ULONG ulSrc);  
+CComCurrency(USHORT usSrc);  
+CComCurrency(CHAR cSrc);  
+CComCurrency(DOUBLE dSrc);  
+CComCurrency(FLOAT fSrc);  
+CComCurrency(LONG lSrc);  
+CComCurrency(SHORT sSrc);  
+CComCurrency(BYTE bSrc);  
+CComCurrency(LONGLONG nInteger, SHORT nFraction);  
+explicit CComCurrency(LPDISPATCH pDispSrc);  
+explicit CComCurrency(const VARIANT& varSrc);  
+explicit CComCurrency(LPCWSTR szSrc);  
+explicit CComCurrency(LPCSTR szSrc);
 ```  
   
 ### Parameters  
@@ -232,8 +219,7 @@ CURRENCY m_currency;
   
 ```
 CComCurrency operator-() const;
-
-    CComCurrency operator-(const CComCurrency& cur) const;
+CComCurrency operator-(const CComCurrency& cur) const;
 ```  
   
 ### Parameters  
@@ -268,8 +254,7 @@ bool operator!= (const CComCurrency& cur) const;
   
 ```
 CComCurrency operator*(long nOperand) const;
-
-    CComCurrency operator*(const CComCurrency& cur) const;
+CComCurrency operator*(const CComCurrency& cur) const;
 ```  
   
 ### Parameters  
@@ -290,7 +275,6 @@ CComCurrency operator*(long nOperand) const;
   
 ```
 const CComCurrency& operator*= (long nOperand);
-
 const CComCurrency& operator*= (const CComCurrency& cur);
 ```  
   
@@ -414,25 +398,15 @@ bool operator<= (const CComCurrency& cur) const;
   
 ```
 const CComCurrency& operator= (const CComCurrency& curSrc) throw();
-
 const CComCurrency& operator= (CURRENCY cySrc) throw();
-
 const CComCurrency& operator= (FLOAT fSrc);
-
 const CComCurrency& operator= (SHORT sSrc);
-
 const CComCurrency& operator= (LONG lSrc);
-
 const CComCurrency& operator= (BYTE bSrc);
-
 const CComCurrency& operator= (USHORT usSrc);
-
 const CComCurrency& operator= (DOUBLE dSrc);
-
 const CComCurrency& operator= (CHAR cSrc);
-
 const CComCurrency& operator= (ULONG ulSrc);
-
 const CComCurrency& operator= (DECIMAL dSrc);
 ```  
   

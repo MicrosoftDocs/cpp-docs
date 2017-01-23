@@ -516,9 +516,7 @@ virtual CWnd* GetActivePane(
  Returns the current pane column count.  
   
 ```  
-int GetColumnCount() const;
-
- 
+int GetColumnCount() const;  
 ```  
   
 ### Return Value  
@@ -531,9 +529,7 @@ int GetColumnCount() const;
 void GetColumnInfo(
     int col,  
     int& cxCur,  
-    int& cxMin) const;
-
- 
+    int& cxMin) const;  
 ```  
   
 ### Parameters  
@@ -552,9 +548,7 @@ void GetColumnInfo(
 ```  
 CWnd* GetPane(
     int row,  
-    int col) const;
-
- 
+    int col) const;  
 ```  
   
 ### Parameters  
@@ -571,9 +565,7 @@ CWnd* GetPane(
  Returns the current pane row count.  
   
 ```  
-int GetRowCount() const;
-
- 
+int GetRowCount() const;  
 ```  
   
 ### Return Value  
@@ -586,9 +578,7 @@ int GetRowCount() const;
 void GetRowInfo(
     int row,  
     int& cyCur,  
-    int& cyMin) const;
-
- 
+    int& cyMin) const;  
 ```  
   
 ### Parameters  
@@ -608,9 +598,7 @@ void GetRowInfo(
  Returns the shared scroll-bar style for the splitter window.  
   
 ```  
-DWORD GetScrollStyle() const;
-
- 
+DWORD GetScrollStyle() const;  
 ```  
   
 ### Return Value  
@@ -628,9 +616,7 @@ DWORD GetScrollStyle() const;
 ```  
 int IdFromRowCol(
     int row,  
-    int col) const;
-
- 
+    int col) const;  
 ```  
   
 ### Parameters  

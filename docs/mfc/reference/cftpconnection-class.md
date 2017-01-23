@@ -205,16 +205,11 @@ BOOL CreateDirectory(LPCTSTR pstrDirName);
  Call this member function to get the name of the current directory.  
   
 ```  
-BOOL GetCurrentDirectory(
-    CString& strDirName) const;
-
- 
- 
+BOOL GetCurrentDirectory(CString& strDirName) const;  
+  
 BOOL GetCurrentDirectory(
     LPTSTR pstrDirName,  
-    LPDWORD lpdwLen) const;
-
- 
+    LPDWORD lpdwLen) const;  
 ```  
   
 ### Parameters  
@@ -244,16 +239,11 @@ BOOL GetCurrentDirectory(
  Call this member function to get the current directory's name as a URL.  
   
 ```  
-BOOL GetCurrentDirectoryAsURL(
-    CString& strDirName) const;
-
- 
- 
+BOOL GetCurrentDirectoryAsURL(CString& strDirName) const;  
+  
 BOOL GetCurrentDirectoryAsURL(
     LPTSTR pstrName,  
-    LPDWORD lpdwLen) const;
-
- 
+    LPDWORD lpdwLen) const;  
 ```  
   
 ### Parameters  

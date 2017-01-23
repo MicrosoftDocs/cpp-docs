@@ -602,9 +602,7 @@ static void PASCAL Idle(int nAction = dbFreeLocks);
  Call this member function to determine whether the `CDaoWorkspace` object is open — that is, whether the MFC object has been initialized by a call to [Open](#open) or a call to [Create](#create).  
   
 ```  
-BOOL IsOpen() const;
-
- 
+BOOL IsOpen() const;  
 ```  
   
 ### Return Value  

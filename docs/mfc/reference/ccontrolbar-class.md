@@ -179,9 +179,7 @@ virtual CSize CalcFixedLayout(
 ```  
 virtual void CalcInsideRect(
     CRect& rect,  
-    BOOL bHorz) const;
-
- 
+    BOOL bHorz) const;  
 ```  
   
 ### Parameters  
@@ -302,9 +300,7 @@ DWORD GetBarStyle();
  Returns the current border values for the control bar.  
   
 ```  
-CRect GetBorders() const;
-
- 
+CRect GetBorders() const;  
 ```  
   
 ### Return Value  
@@ -314,9 +310,7 @@ CRect GetBorders() const;
  Returns the number of non- `HWND` items on the `CControlBar` object.  
   
 ```  
-int GetCount() const;
-
- 
+int GetCount() const;  
 ```  
   
 ### Return Value  
@@ -329,9 +323,7 @@ int GetCount() const;
  Call this member function to obtain a pointer to the current frame window to which your control bar is docked.  
   
 ```  
-CFrameWnd* GetDockingFrame() const;
-
- 
+CFrameWnd* GetDockingFrame() const;  
 ```  
   
 ### Return Value  
@@ -346,9 +338,7 @@ CFrameWnd* GetDockingFrame() const;
  Call this member function to determine whether the control bar is floating or docked.  
   
 ```  
-BOOL IsFloating() const;
-
- 
+BOOL IsFloating() const;  
 ```  
   
 ### Return Value  
@@ -447,11 +437,9 @@ void SetBorders(
     int cxLeft = 0,  
     int cyTop = 0,  
     int cxRight = 0,  
-    int cyBottom = 0);
-
- 
-void SetBorders(
-    LPCRECT lpRect);
+    int cyBottom = 0);  
+  
+void SetBorders(LPCRECT lpRect);
 ```  
   
 ### Parameters  

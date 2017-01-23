@@ -123,27 +123,13 @@ CDumpContext(CFile* pFile = NULL);
  Dumps the specified type formatted as hexadecimal numbers.  
   
 ```  
-CDumpContext& DumpAsHex(BYTE b);
-
- 
-CDumpContext& DumpAsHex(DWORD dw);
-
- 
-CDumpContext& DumpAsHex(int n);
-
- 
-CDumpContext& DumpAsHex(LONG l);
-
- 
-CDumpContext& DumpAsHex(LONGLONG n);
-
- 
-CDumpContext& DumpAsHex(UINT u);
-
- 
-CDumpContext& DumpAsHex(ULONGLONG n);
-
- 
+CDumpContext& DumpAsHex(BYTE b);  
+CDumpContext& DumpAsHex(DWORD dw);  
+CDumpContext& DumpAsHex(int n);  
+CDumpContext& DumpAsHex(LONG l);  
+CDumpContext& DumpAsHex(LONGLONG n);  
+CDumpContext& DumpAsHex(UINT u);  
+CDumpContext& DumpAsHex(ULONGLONG n);  
 CDumpContext& DumpAsHex(WORD w);
 ```  
   
@@ -170,9 +156,7 @@ void Flush();
  Determines whether a deep or shallow dump is in process.  
   
 ```  
-int GetDepth() const;
-
- 
+int GetDepth() const;  
 ```  
   
 ### Return Value  
@@ -215,108 +199,26 @@ void HexDump(
  Outputs the specified data to the dump context.  
   
 ```  
-CDumpContext& operator<<(const CObject* pOb);
-
- 
-throw(CFileException*);
-
- 
-CDumpContext& operator<<(const CObject& ob);
-
- 
-throw(CFileException*);
-
- 
-CDumpContext& operator<<(LPCTSTR lpsz);
-
- 
-throw(CFileException*);
-
- 
-CDumpContext& operator<<(const void* lp);
-
- 
-throw(CFileException*);
-
- 
-CDumpContext& operator<<(BYTE by);
-
- 
-throw(CFileException*);
-
- 
-CDumpContext& operator<<(WORD w);
-
- 
-throw(CFileException*);
-
- 
-CDumpContext& operator<<(DWORD dw);
-
- 
-throw(CFileException*);
-
- 
-CDumpContext& operator<<(int n);
-
- 
-throw(CFileException*);
-
- 
-CDumpContext& operator<<(double d);
-
- 
-throw(CFileException*);
-
- 
-CDumpContext& operator<<(float f);
-
- 
-throw(CFileException*);
-
- 
-CDumpContext& operator<<(LONG l);
-
- 
-throw(CFileException*);
-
- 
-CDumpContext& operator<<(UINT u);
-
- 
-throw(CFileException*);
-
- 
-CDumpContext& operator<<(LPCWSTR lpsz);
-
- 
-throw(CFileException*);
-
- 
-CDumpContext& operator<<(LPCSTR lpsz);
-
- 
-throw(CFileException*);
-
- 
-CDumpContext& operator<<(LONGLONG n);
-
- 
-CDumpContext& operator<<(ULONGLONG n);
-
- 
-CDumpContext& operator<<(HWND h);
-
- 
-CDumpContext& operator<<(HDC h);
-
- 
-CDumpContext& operator<<(HMENU h);
-
- 
-CDumpContext& operator<<(HACCEL h);
-
- 
+CDumpContext& operator<<(const CObject* pOb);  
+CDumpContext& operator<<(const CObject& ob);  
+CDumpContext& operator<<(LPCTSTR lpsz);  
+CDumpContext& operator<<(const void* lp);  
+CDumpContext& operator<<(BYTE by);  
+CDumpContext& operator<<(WORD w);  
+CDumpContext& operator<<(DWORD dw);  
+CDumpContext& operator<<(int n);  
+CDumpContext& operator<<(double d);  
+CDumpContext& operator<<(float f);  
+CDumpContext& operator<<(LONG l);  
+CDumpContext& operator<<(UINT u);  
+CDumpContext& operator<<(LPCWSTR lpsz);  
+CDumpContext& operator<<(LPCSTR lpsz);  
+CDumpContext& operator<<(LONGLONG n);  
+CDumpContext& operator<<(ULONGLONG n);  
+CDumpContext& operator<<(HWND h);  
+CDumpContext& operator<<(HDC h);  
+CDumpContext& operator<<(HMENU h);  
+CDumpContext& operator<<(HACCEL h);  
 CDumpContext& operator<<(HFONT h);
 ```  
   

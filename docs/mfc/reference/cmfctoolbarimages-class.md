@@ -457,9 +457,7 @@ static void FillDitheredRect(
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL GetAlwaysLight() const;
-
- 
+BOOL GetAlwaysLight() const;  
 ```  
   
 ### Return Value  
@@ -470,9 +468,7 @@ BOOL GetAlwaysLight() const;
  Returns the number of images in the toolbar images list.  
   
 ```  
-int GetCount() const;
-
- 
+int GetCount() const;  
 ```  
   
 ### Return Value  
@@ -506,9 +502,7 @@ static BYTE __stdcall GetFadedImageAlpha();
  Retrieves either the size of the toolbar images that are stored in memory (source size), or the size of the toolbar images that are drawn on the screen (destination size).  
   
 ```  
-SIZE GetImageSize(BOOL bDest=FALSE) const;
-
- 
+SIZE GetImageSize(BOOL bDest=FALSE) const;  
 ```  
   
 ### Parameters  
@@ -527,9 +521,7 @@ SIZE GetImageSize(BOOL bDest=FALSE) const;
  Returns the handle to the bitmap that contains all the toolbar images.  
   
 ```  
-HBITMAP GetImageWell() const;
-
- 
+HBITMAP GetImageWell() const;  
 ```  
   
 ### Return Value  
@@ -542,9 +534,7 @@ HBITMAP GetImageWell() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-HBITMAP GetImageWellLight() const;
-
- 
+HBITMAP GetImageWellLight() const;  
 ```  
   
 ### Return Value  
@@ -555,9 +545,7 @@ HBITMAP GetImageWellLight() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-CRect GetLastImageRect() const;
-
- 
+CRect GetLastImageRect() const;  
 ```  
   
 ### Return Value  
@@ -568,9 +556,7 @@ CRect GetLastImageRect() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-int GetLightPercentage() const;
-
- 
+int GetLightPercentage() const;  
 ```  
   
 ### Return Value  
@@ -581,9 +567,7 @@ int GetLightPercentage() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL GetMapTo3DColors() const;
-
- 
+BOOL GetMapTo3DColors() const;  
 ```  
   
 ### Return Value  
@@ -608,9 +592,7 @@ HBITMAP GetMask(int iImage);
  Returns the image index for a specified resource ID.  
   
 ```  
-int GetResourceOffset(UINT uiResId) const;
-
- 
+int GetResourceOffset(UINT uiResId) const;  
 ```  
   
 ### Parameters  
@@ -624,9 +606,7 @@ int GetResourceOffset(UINT uiResId) const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-COLORREF GetTransparentColor() const;
-
- 
+COLORREF GetTransparentColor() const;  
 ```  
   
 ### Return Value  
@@ -670,9 +650,7 @@ static BOOL Is32BitTransparencySupported();
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsPreMultiplyAutoCheck() const;
-
- 
+BOOL IsPreMultiplyAutoCheck() const;  
 ```  
   
 ### Return Value  
@@ -683,9 +661,7 @@ BOOL IsPreMultiplyAutoCheck() const;
  Specifies whether the toolbar images are read-only.  
   
 ```  
-BOOL IsReadOnly() const;
-
- 
+BOOL IsReadOnly() const;  
 ```  
   
 ### Return Value  
@@ -711,9 +687,7 @@ static BOOL IsRTL();
  Specifies whether this set of toolbar images contains user-defined images.  
   
 ```  
-BOOL IsUserImagesList() const;
-
- 
+BOOL IsUserImagesList() const;  
 ```  
   
 ### Return Value  
@@ -723,9 +697,7 @@ BOOL IsUserImagesList() const;
  Indicates whether this set of toolbar images contains a valid toolbar image.  
   
 ```  
-BOOL IsValid() const;
-
- 
+BOOL IsValid() const;  
 ```  
   
 ### Return Value  
@@ -936,8 +908,7 @@ static BOOL __stdcall PreMultiplyAlpha(
     HBITMAP hbmp,  
     BOOL bAutoCheckPremlt);
 
-BOOL PreMultiplyAlpha(
-    HBITMAP hbmp);
+BOOL PreMultiplyAlpha(HBITMAP hbmp);
 ```  
   
 ### Parameters  
@@ -1156,9 +1127,7 @@ BOOL ConvertTo32Bits(COLORREF clrTransparent = (COLORREF)-1);
  Returns current resolution of underlined images.  
   
 ```  
-int GetBitsPerPixel() const;
-
- 
+int GetBitsPerPixel() const;  
 ```  
   
 ### Return Value  
@@ -1170,9 +1139,7 @@ int GetBitsPerPixel() const;
  Returns the current scale ratio of underlined images.  
   
 ```  
-double GetScale() const;
-
- 
+double GetScale() const;  
 ```  
   
 ### Return Value  
@@ -1184,9 +1151,7 @@ double GetScale() const;
  Tells whether the underlined images are scaled or not.  
   
 ```  
-BOOL IsScaled () const;
-
- 
+BOOL IsScaled () const;  
 ```  
   
 ### Return Value  

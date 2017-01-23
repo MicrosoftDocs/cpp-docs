@@ -64,16 +64,9 @@ class CD2DEllipse : public D2D1_ELLIPSE;
  Constructs a CD2DEllipse object from CD2DRectF object.  
   
 ```  
-CD2DEllipse(
-    const CD2DRectF& rect);
-
- 
-CD2DEllipse(
-    const D2D1_ELLIPSE& ellipse);
-
- 
-CD2DEllipse(
-    const D2D1_ELLIPSE* ellipse);
+CD2DEllipse(const CD2DRectF& rect);  
+CD2DEllipse(const D2D1_ELLIPSE& ellipse);  
+  CD2DEllipse(const D2D1_ELLIPSE* ellipse);
 
  
 CD2DEllipse(

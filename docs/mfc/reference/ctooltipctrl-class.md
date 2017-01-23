@@ -208,8 +208,7 @@ BOOL AdjustRect(
  Creates a tool tip control and attaches it to a `CToolTipCtrl` object.  
   
 ```  
-virtual BOOL Create(
-    CWnd* pParentWnd, DWORD dwStyle = 0);
+virtual BOOL Create(CWnd* pParentWnd, DWORD dwStyle = 0);
 ```  
   
 ### Parameters  
@@ -298,9 +297,7 @@ void DelTool(
  Retrieves the size of the tool tip.  
   
 ```  
-CSize GetBubbleSize(LPTOOLINFO lpToolInfo) const;
-
- 
+CSize GetBubbleSize(LPTOOLINFO lpToolInfo) const;  
 ```  
   
 ### Parameters  
@@ -317,9 +314,7 @@ CSize GetBubbleSize(LPTOOLINFO lpToolInfo) const;
  Retrieves information, such as the size, position, and text, of the tooltip window displayed by the current tooltip control.  
   
 ```  
-BOOL GetCurrentTool(LPTOOLINFO lpToolInfo) const;
-
- 
+BOOL GetCurrentTool(LPTOOLINFO lpToolInfo) const;  
 ```  
   
 ### Parameters  
@@ -343,9 +338,7 @@ BOOL GetCurrentTool(LPTOOLINFO lpToolInfo) const;
  Retrieves the initial, pop-up, and reshow durations currently set for a tool tip control.  
   
 ```  
-int GetDelayTime(DWORD dwDuration) const;
-
- 
+int GetDelayTime(DWORD dwDuration) const;  
 ```  
   
 ### Parameters  
@@ -368,9 +361,7 @@ int GetDelayTime(DWORD dwDuration) const;
  Retrieves the top, left, bottom, and right margins set for a tool tip window.  
   
 ```  
-void GetMargin(LPRECT lprc) const;
-
- 
+void GetMargin(LPRECT lprc) const;  
 ```  
   
 ### Parameters  
@@ -391,9 +382,7 @@ void GetMargin(LPRECT lprc) const;
  Retrieves the maximum width for a tool tip window.  
   
 ```  
-int GetMaxTipWidth() const;
-
- 
+int GetMaxTipWidth() const;  
 ```  
   
 ### Return Value  
@@ -409,9 +398,7 @@ int GetMaxTipWidth() const;
 void GetText(
     CString& str,  
     CWnd* pWnd,  
-    UINT_PTR nIDTool = 0) const;
-
- 
+    UINT_PTR nIDTool = 0) const;  
 ```  
   
 ### Parameters  
@@ -431,9 +418,7 @@ void GetText(
  Retrieves the background color in a tool tip window.  
   
 ```  
-COLORREF GetTipBkColor() const;
-
- 
+COLORREF GetTipBkColor() const;  
 ```  
   
 ### Return Value  
@@ -446,9 +431,7 @@ COLORREF GetTipBkColor() const;
  Retrieves the text color in a tool tip window.  
   
 ```  
-COLORREF GetTipTextColor() const;
-
- 
+COLORREF GetTipTextColor() const;  
 ```  
   
 ### Return Value  
@@ -461,9 +444,7 @@ COLORREF GetTipTextColor() const;
  Retrieves the title of the current tooltip control.  
   
 ```  
-void GetTitle(PTTGETTITLE pttgt) const;
-
- 
+void GetTitle(PTTGETTITLE pttgt) const;  
 ```  
   
 ### Parameters  
@@ -479,9 +460,7 @@ void GetTitle(PTTGETTITLE pttgt) const;
  Retrieves a count of the tools registered with the tool tip control.  
   
 ```  
-int GetToolCount() const;
-
- 
+int GetToolCount() const;  
 ```  
   
 ### Return Value  
@@ -494,9 +473,7 @@ int GetToolCount() const;
 BOOL GetToolInfo(
     CToolInfo& ToolInfo,  
     CWnd* pWnd,  
-    UINT_PTR nIDTool = 0) const;
-
- 
+    UINT_PTR nIDTool = 0) const;  
 ```  
   
 ### Parameters  
@@ -522,9 +499,7 @@ BOOL GetToolInfo(
 BOOL HitTest(
     CWnd* pWnd,  
     CPoint pt,  
-    LPTOOLINFO lpToolInfo) const;
-
- 
+    LPTOOLINFO lpToolInfo) const;  
 ```  
   
 ### Parameters  
@@ -616,8 +591,7 @@ void RelayEvent(LPMSG lpMsg);
  Sets the delay time for a tool tip control.  
   
 ```  
-void SetDelayTime(
-    UINT nDelay);
+void SetDelayTime(UINT nDelay);
 
  
 void SetDelayTime(

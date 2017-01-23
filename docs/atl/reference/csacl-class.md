@@ -100,7 +100,7 @@ bool AddAuditAce(
     bool bFailure,
     BYTE AceFlags = 0) throw(...);
 
-    bool AddAuditAce(
+bool AddAuditAce(
     const CSid& rSid,
     ACCESS_MASK AccessMask,
     bool bSuccess,

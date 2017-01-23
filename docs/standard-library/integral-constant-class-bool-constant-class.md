@@ -97,7 +97,8 @@ integral_constant<bool, false> == false
 ```  
   
 ## Requirements  
-**Header:** <type_traits>  
+
+**Header:** \<type_traits>
   
 **Namespace:** std  
   

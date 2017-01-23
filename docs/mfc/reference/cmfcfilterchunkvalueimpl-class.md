@@ -163,9 +163,7 @@ void CopyFrom (IFilterChunkValue* pValue);
  Retrieves the chunk GUID.  
   
 ```  
-REFGUID GetChunkGUID() const;
-
- 
+REFGUID GetChunkGUID() const;  
 ```  
   
 ### Return Value  
@@ -177,9 +175,7 @@ REFGUID GetChunkGUID() const;
  Retrieves the chunk PID (property ID).  
   
 ```  
-DWORD GetChunkPID() const;
-
- 
+DWORD GetChunkPID() const;  
 ```  
   
 ### Return Value  
@@ -191,9 +187,7 @@ DWORD GetChunkPID() const;
  Retrieves the chunk type.  
   
 ```  
-CHUNKSTATE GetChunkType() const;
-
- 
+CHUNKSTATE GetChunkType() const;  
 ```  
   
 ### Return Value  
@@ -245,9 +239,7 @@ PROPVARIANT GetValueNoAlloc ();
  Checks whether this property value is valid or not.  
   
 ```  
-BOOL IsValid() const;
-
- 
+BOOL IsValid() const;  
 ```  
   
 ### Return Value  

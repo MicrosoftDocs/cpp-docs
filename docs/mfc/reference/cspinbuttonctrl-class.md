@@ -176,9 +176,7 @@ CSpinButtonCtrl();
 ```  
 UINT GetAccel(
     int nAccel,  
-    UDACCEL* pAccel) const;
-
- 
+    UDACCEL* pAccel) const;  
 ```  
   
 ### Parameters  
@@ -195,9 +193,7 @@ UINT GetAccel(
  Retrieves the current base for a spin button control.  
   
 ```  
-UINT GetBase() const;
-
- 
+UINT GetBase() const;  
 ```  
   
 ### Return Value  
@@ -207,9 +203,7 @@ UINT GetBase() const;
  Retrieves a pointer to the current buddy window.  
   
 ```  
-CWnd* GetBuddy() const;
-
- 
+CWnd* GetBuddy() const;  
 ```  
   
 ### Return Value  
@@ -219,14 +213,7 @@ CWnd* GetBuddy() const;
  Retrieves the current position of a spin button control.  
   
 ```  
-int GetPos() const;
-
- 
- 
-int GetPos32(LPBOOL lpbError = NULL) const;
-
- 
-```  
+int GetPos() const;  int GetPos32(LPBOOL lpbError = NULL) const;  ```  
   
 ### Parameters  
  *lpbError*  
@@ -244,21 +231,15 @@ int GetPos32(LPBOOL lpbError = NULL) const;
  Retrieves the upper and lower limits (range) for a spin button control.  
   
 ```  
-DWORD GetRange() const;
-
- 
- 
+DWORD GetRange() const;  
+  
 void GetRange(
     int& lower,  
-    int& upper) const;
-
- 
- 
+    int& upper) const;  
+  
 void GetRange32(
     int& lower,  
-    int &upper) const;
-
- 
+    int &upper) const;  
 ```  
   
 ### Parameters  
@@ -331,11 +312,8 @@ CWnd* SetBuddy(CWnd* pWndBuddy);
  Sets the current position for a spin button control.  
   
 ```  
-int SetPos(int nPos);
-
- 
-int SetPos32(int nPos);
-```  
+int SetPos(int nPos);  
+int SetPos32(int nPos);```  
   
 ### Parameters  
  `nPos`  

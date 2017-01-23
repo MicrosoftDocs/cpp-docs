@@ -131,9 +131,7 @@ class CMFCRibbonPanel : public CObject
  Appends the specified ribbon element to the array of ribbon elements that is contained in the ribbon panel.  
   
 ```  
- 
-virtual void Add(
-CMFCRibbonBaseElement* pElem);
+virtual void Add(CMFCRibbonBaseElement* pElem);
 ```  
   
 ### Parameters  
@@ -156,7 +154,6 @@ virtual void AddSeparator();
  Adds a toolbar to the ribbon panel.  
   
 ```  
- 
 CMFCRibbonButtonsGroup* AddToolBar(
 UINT uiToolbarResID,  
 UINT uiColdResID = 0,  
@@ -187,14 +184,11 @@ UINT uiDisabledResID = 0);
  Constructs and initializes a [CMFCRibbonPanel](../../mfc/reference/cmfcribbonpanel-class.md) object.  
   
 ```  
- 
 CMFCRibbonPanel(
 LPCTSTR lpszName = NULL,  
-HICON hIcon = NULL);
-
- 
-CMFCRibbonPanel(
-CMFCRibbonGallery* pPaletteButton);
+HICON hIcon = NULL);  
+  
+CMFCRibbonPanel(CMFCRibbonGallery* pPaletteButton);
 ```  
   
 ### Parameters  
@@ -211,11 +205,7 @@ CMFCRibbonGallery* pPaletteButton);
  Retrieves the ribbon element that is associated with the specified data.  
   
 ```  
- 
-CMFCRibbonBaseElement* FindByData(
-DWORD_PTR dwData) const;
-
- 
+CMFCRibbonBaseElement* FindByData(DWORD_PTR dwData) const;  
 ```  
   
 ### Parameters  
@@ -231,11 +221,7 @@ DWORD_PTR dwData) const;
  Retrieves the ribbon element that is identified by the specified command ID.  
   
 ```  
- 
-CMFCRibbonBaseElement* FindByID(
-UINT uiCmdID) const;
-
- 
+CMFCRibbonBaseElement* FindByID(UINT uiCmdID) const;  
 ```  
   
 ### Parameters  
@@ -249,9 +235,7 @@ UINT uiCmdID) const;
  Retrieves the height of a caption for the ribbon panel.  
   
 ```  
-int GetCaptionHeight() const;
-
- 
+int GetCaptionHeight() const;  
 ```  
   
 ### Return Value  
@@ -263,9 +247,7 @@ int GetCaptionHeight() const;
  Retrieves the number of ribbon elements that are contained in the ribbon panel.  
   
 ```  
-int GetCount() const;
-
- 
+int GetCount() const;  
 ```  
   
 ### Return Value  
@@ -275,9 +257,7 @@ int GetCount() const;
  Returns the user-defined data associated with the panel.  
   
 ```  
-DWORD_PTR GetData() const;
-
- 
+DWORD_PTR GetData() const;  
 ```  
   
 ### Return Value  
@@ -300,9 +280,7 @@ CMFCRibbonButton& GetDefaultButton();
  Retrieves a pointer to a ribbon element if its pop-up menu is dropped down.  
   
 ```  
-CMFCRibbonBaseElement* GetDroppedDown() const;
-
- 
+CMFCRibbonBaseElement* GetDroppedDown() const;  
 ```  
   
 ### Return Value  
@@ -315,11 +293,7 @@ CMFCRibbonBaseElement* GetDroppedDown() const;
  Returns the ribbon element located at a specified index.  
   
 ```  
- 
-CMFCRibbonBaseElement* GetElement(
-int nIndex) const;
-
- 
+CMFCRibbonBaseElement* GetElement(int nIndex) const;  
 ```  
   
 ### Parameters  
@@ -333,9 +307,7 @@ int nIndex) const;
  Retrieves all ribbon elements that are contained in the ribbon panel.  
   
 ```  
- 
-void GetElements(
-CArray<CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& arElements);
+void GetElements(CArray<CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& arElements);
 ```  
   
 ### Parameters  
@@ -348,7 +320,6 @@ CArray<CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& arElements);
  Adds ribbon elements that have the specified command ID to the specified array.  
   
 ```  
- 
 void GetElementsByID(
 UINT uiCmdID,  
 CArray<CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& arElements);
@@ -368,9 +339,7 @@ CArray<CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& arElements);
  Retrieves the ribbon element that is highlighted on the ribbon panel.  
   
 ```  
-CMFCRibbonBaseElement* GetHighlighted() const;
-
- 
+CMFCRibbonBaseElement* GetHighlighted() const;  
 ```  
   
 ### Return Value  
@@ -382,11 +351,7 @@ CMFCRibbonBaseElement* GetHighlighted() const;
  Retrieves the zero-based index of the specified ribbon element from the array of ribbon elements that are contained in the ribbon panel.  
   
 ```  
- 
-virtual int GetIndex(
-CMFCRibbonBaseElement* pElem) const;
-
- 
+virtual int GetIndex(CMFCRibbonBaseElement* pElem) const;  
 ```  
   
 ### Parameters  
@@ -402,11 +367,7 @@ CMFCRibbonBaseElement* pElem) const;
  Retrieves the command IDs for all ribbon elements in the ribbon panel.  
   
 ```  
- 
-void GetItemIDsList(
-CList<UINT, UINT>& lstItems) const;
-
- 
+void GetItemIDsList(CList<UINT, UINT>& lstItems) const;  
 ```  
   
 ### Parameters  
@@ -419,9 +380,7 @@ CList<UINT, UINT>& lstItems) const;
  Retrieves the name of the ribbon panel.  
   
 ```  
-LPCTSTR GetName() const;
-
- 
+LPCTSTR GetName() const;  
 ```  
   
 ### Return Value  
@@ -433,9 +392,7 @@ LPCTSTR GetName() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-CMFCRibbonBaseElement* GetParentButton() const;
-
- 
+CMFCRibbonBaseElement* GetParentButton() const;  
 ```  
   
 ### Return Value  
@@ -446,9 +403,7 @@ CMFCRibbonBaseElement* GetParentButton() const;
  Returns the parent category of the ribbon panel.  
   
 ```  
-CMFCRibbonCategory* GetParentCategory() const;
-
- 
+CMFCRibbonCategory* GetParentCategory() const;  
 ```  
   
 ### Return Value  
@@ -458,9 +413,7 @@ CMFCRibbonCategory* GetParentCategory() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-CMFCRibbonPanelMenuBar* GetParentMenuBar() const;
-
- 
+CMFCRibbonPanelMenuBar* GetParentMenuBar() const;  
 ```  
   
 ### Return Value  
@@ -471,9 +424,7 @@ CMFCRibbonPanelMenuBar* GetParentMenuBar() const;
  Retrieves the preferred display rectangle for the pop-up menu of the ribbon panel.  
   
 ```  
- 
-virtual BOOL GetPreferedMenuLocation(
-CRect& rect);
+virtual BOOL GetPreferedMenuLocation(CRect& rect);
 ```  
   
 ### Parameters  
@@ -490,9 +441,7 @@ CRect& rect);
  Retrieves a pointer to a ribbon element on the ribbon panel if the user currently presses it.  
   
 ```  
-CMFCRibbonBaseElement* GetPressed() const;
-
- 
+CMFCRibbonBaseElement* GetPressed() const;  
 ```  
   
 ### Return Value  
@@ -504,9 +453,7 @@ CMFCRibbonBaseElement* GetPressed() const;
  Retrieves the display rectangle for the ribbon panel.  
   
 ```  
-const CRect& GetRect() const;
-
- 
+const CRect& GetRect() const;  
 ```  
   
 ### Return Value  
@@ -518,11 +465,7 @@ const CRect& GetRect() const;
  Indicates whether the ribbon panel contains the specified ribbon element.  
   
 ```  
- 
-BOOL HasElement(
-const CMFCRibbonBaseElement* pElem) const;
-
- 
+BOOL HasElement(const CMFCRibbonBaseElement* pElem) const;  
 ```  
   
 ### Parameters  
@@ -538,7 +481,6 @@ const CMFCRibbonBaseElement* pElem) const;
  Sets the highlight color for the selected ribbon panel and for the ribbon element specified by the point.  
   
 ```  
- 
 virtual void Highlight(
 BOOL bHighlight,  
 CPoint point);
@@ -557,7 +499,6 @@ CPoint point);
  Retrieves a ribbon element if the specified point is located in it.  
   
 ```  
- 
 virtual CMFCRibbonBaseElement* HitTest(
 CPoint point,  
 BOOL bCheckPanelCaption = FALSE);
@@ -580,11 +521,7 @@ BOOL bCheckPanelCaption = FALSE);
  Retrieves the zero-based index of the ribbon element that has the specified point located in it.  
   
 ```  
- 
-virtual int HitTestEx(
-CPoint point) const;
-
- 
+virtual int HitTestEx(CPoint point) const;  
 ```  
   
 ### Parameters  
@@ -601,7 +538,6 @@ CPoint point) const;
  Inserts the specified ribbon element at the specified position in the array of ribbon elements that is contained in the ribbon panel.  
   
 ```  
- 
 virtual BOOL Insert(
 CMFCRibbonBaseElement* pElem,  
 int nIndex);
@@ -624,9 +560,7 @@ int nIndex);
  Inserts a separator at the given position.  
   
 ```  
- 
-virtual BOOL InsertSeparator(
-int nIndex);
+virtual BOOL InsertSeparator(int nIndex);
 ```  
   
 ### Parameters  
@@ -643,9 +577,7 @@ int nIndex);
  Indicates whether the vertical positions of ribbon elements are centered within their display rectangle.  
   
 ```  
-BOOL IsCenterColumnVert() const;
-
- 
+BOOL IsCenterColumnVert() const;  
 ```  
   
 ### Return Value  
@@ -655,9 +587,7 @@ BOOL IsCenterColumnVert() const;
  Indicates whether the display size of the ribbon panel is minimized in the horizontal direction.  
   
 ```  
-BOOL IsCollapsed() const;
-
- 
+BOOL IsCollapsed() const;  
 ```  
   
 ### Return Value  
@@ -670,9 +600,7 @@ BOOL IsCollapsed() const;
  Indicates whether the display of the ribbon panel is highlighted.  
   
 ```  
-BOOL IsHighlighted() const;
-
- 
+BOOL IsHighlighted() const;  
 ```  
   
 ### Return Value  
@@ -685,9 +613,7 @@ BOOL IsHighlighted() const;
  Indicates whether the display dimensions of ribbon elements that are in the same column in the ribbon panel are set to the same width.  
   
 ```  
-BOOL IsJustifyColumns() const;
-
- 
+BOOL IsJustifyColumns() const;  
 ```  
   
 ### Return Value  
@@ -697,9 +623,7 @@ BOOL IsJustifyColumns() const;
  Indicates whether the ribbon panel is the main ribbon panel.  
   
 ```  
-virtual BOOL IsMainPanel() const;
-
- 
+virtual BOOL IsMainPanel() const;  
 ```  
   
 ### Return Value  
@@ -714,9 +638,7 @@ virtual BOOL IsMainPanel() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
-BOOL IsMenuMode() const;
-
- 
+BOOL IsMenuMode() const;  
 ```  
   
 ### Return Value  
@@ -727,9 +649,7 @@ BOOL IsMenuMode() const;
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ```  
- 
-virtual BOOL OnKey(
-UINT nChar);
+virtual BOOL OnKey(UINT nChar);
 ```  
   
 ### Parameters  
@@ -743,7 +663,6 @@ UINT nChar);
  Recalculates the width of each display layout configuration for the ribbon panel.  
   
 ```  
- 
 virtual void RecalcWidths(
 CDC* pDC,  
 int nHeight);
@@ -763,7 +682,6 @@ int nHeight);
  Removes and optionally deletes an element located at the specified index.  
   
 ```  
- 
 BOOL Remove(
 int nIndex,  
 BOOL bDelete = TRUE);
@@ -796,7 +714,6 @@ void RemoveAll();
  Replaces one element with another based on their index value.  
   
 ```  
- 
 BOOL Replace(
 int nIndex,  
 CMFCRibbonBaseElement* pElem);
@@ -819,7 +736,6 @@ CMFCRibbonBaseElement* pElem);
  Replaces one element with another based on a specified command ID.  
   
 ```  
- 
 BOOL ReplaceByID(
 UINT uiCmdID,  
 CMFCRibbonBaseElement* pElem);
@@ -842,9 +758,7 @@ CMFCRibbonBaseElement* pElem);
  Enables or disables the centering of the vertical positions of ribbon elements within their display rectangle.  
   
 ```  
- 
-void SetCenterColumnVert(
-BOOL bSet = TRUE);
+void SetCenterColumnVert(BOOL bSet = TRUE);
 ```  
   
 ### Parameters  
@@ -857,9 +771,7 @@ BOOL bSet = TRUE);
  Associates user-defined data with the ribbon panel.  
   
 ```  
- 
-void SetData(
-DWORD_PTR dwData);
+void SetData(DWORD_PTR dwData);
 ```  
   
 ### Parameters  
@@ -873,7 +785,6 @@ DWORD_PTR dwData);
  Assigns a popup menu to the element that has the given command ID.  
   
 ```  
- 
 BOOL SetElementMenu(
 UINT uiCmdID,  
 HMENU hMenu,  
@@ -914,7 +825,6 @@ BOOL bRightAlign = FALSE);
  Adds the ribbon element that is specified by the provided runtime class information to the ribbon panel.  
   
 ```  
- 
 CMFCRibbonBaseElement* SetElementRTC(
 int nIndex,  
 CRuntimeClass* pRTC);
@@ -937,7 +847,6 @@ CRuntimeClass* pRTC);
  Adds a ribbon element that is specified by the provided runtime class information to the ribbon panel.  
   
 ```  
- 
 CMFCRibbonBaseElement* SetElementRTCByID(
 UINT uiCmdID,  
 CRuntimeClass* pRTC);
@@ -979,18 +888,14 @@ ID_CHAR_COLOR,
 pColorButton->EnableAutomaticButton(_T("Automatic"),
     RGB (0,
     0,
-    0));
-
- 
+    0));  
 ```  
   
 ##  <a name="setjustifycolumns"></a>  CMFCRibbonPanel::SetJustifyColumns  
  Enables or disables the adjustment of the width of ribbon elements in the same column.  
   
 ```  
- 
-void SetJustifyColumns(
-BOOL bSet = TRUE);
+void SetJustifyColumns(BOOL bSet = TRUE);
 ```  
   
 ### Parameters  
@@ -1004,9 +909,7 @@ BOOL bSet = TRUE);
  Sets the keytip for the default button of the ribbon panel.  
   
 ```  
- 
-void SetKeys(
-LPCTSTR lpszKeys);
+void SetKeys(LPCTSTR lpszKeys);
 ```  
   
 ### Parameters  
@@ -1020,9 +923,7 @@ LPCTSTR lpszKeys);
  Creates and displays a pop-up menu for the ribbon panel.  
   
 ```  
- 
-CMFCRibbonPanelMenu* ShowPopup(
-CMFCRibbonDefaultPanelButton* pButton = NULL);
+CMFCRibbonPanelMenu* ShowPopup(CMFCRibbonDefaultPanelButton* pButton = NULL);
 ```  
   
 ### Parameters  
@@ -1039,9 +940,7 @@ CMFCRibbonDefaultPanelButton* pButton = NULL);
  Sets focus to the specified Ribbon element.  
   
 ```  
- 
-void SetFocused(
-CMFCRibbonBaseElement* pNewFocus);
+void SetFocused(CMFCRibbonBaseElement* pNewFocus);
 ```  
   
 ### Parameters  
@@ -1054,9 +953,7 @@ CMFCRibbonBaseElement* pNewFocus);
  Scrolls the gallery to make the specified Ribbon element visible.  
   
 ```  
- 
-void MakeGalleryItemVisible(
-CMFCRibbonBaseElement* pItem);
+void MakeGalleryItemVisible(CMFCRibbonBaseElement* pItem);
 ```  
   
 ### Parameters  
@@ -1069,9 +966,7 @@ CMFCRibbonBaseElement* pItem);
  Indicates whether the parent ribbon has Windows 7 look (small rectangular application button).  
   
 ```  
-BOOL IsWindows7Look() const;
-
- 
+BOOL IsWindows7Look() const;  
 ```  
   
 ### Return Value  
@@ -1083,7 +978,6 @@ BOOL IsWindows7Look() const;
  Retrieves an array of visible elements.  
   
 ```  
- 
 void GetVisibleElements(
 CArray<CMFCRibbonBaseElement*,  
 CMFCRibbonBaseElement*>& arElements);
@@ -1111,9 +1005,7 @@ CRect GetGalleryRect();
  Returns a focused element.  
   
 ```  
-CMFCRibbonBaseElement* GetFocused() const;
-
- 
+CMFCRibbonBaseElement* GetFocused() const;  
 ```  
   
 ### Return Value  

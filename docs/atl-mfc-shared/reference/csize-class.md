@@ -84,12 +84,12 @@ class CSize : public tagSIZE
 ##  <a name="csize"></a>  CSize::CSize  
  Constructs a `CSize` object.  
   
-```   
- CSize() throw();
-CSize(int initCX, int initCY) throw();
-CSize(SIZE initSize) throw();
-CSize(POINT initPt) throw();
-CSize(DWORD dwSize) throw(); 
+```  
+CSize() throw();
+CSize( int initCX, int initCY) throw();
+CSize( SIZE initSize) throw();
+CSize( POINT initPt) throw();
+CSize( DWORD dwSize) throw(); 
 ```  
   
 ### Parameters  

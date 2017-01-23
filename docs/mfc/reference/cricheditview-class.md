@@ -155,9 +155,7 @@ void AdjustDialogPosition(CDialog* pDlg);
  Call this function to determine if the Clipboard contains information that can be pasted into this rich edit view.  
   
 ```  
-BOOL CanPaste() const;
-
- 
+BOOL CanPaste() const;  
 ```  
   
 ### Return Value  
@@ -366,9 +364,7 @@ virtual HMENU GetContextMenu(
  Call this function to get a pointer to the `CRichEditDoc` associated with this view.  
   
 ```  
-CRichEditDoc* GetDocument() const;
-
- 
+CRichEditDoc* GetDocument() const;  
 ```  
   
 ### Return Value  
@@ -378,9 +374,7 @@ CRichEditDoc* GetDocument() const;
  Call this function to get the OLE item that is currently activated in place in this `CRichEditView` object.  
   
 ```  
-CRichEditCntrItem* GetInPlaceActiveItem() const;
-
- 
+CRichEditCntrItem* GetInPlaceActiveItem() const;  
 ```  
   
 ### Return Value  
@@ -390,9 +384,7 @@ CRichEditCntrItem* GetInPlaceActiveItem() const;
  Call this function to retrieve the current margins used in printing.  
   
 ```  
-CRect GetMargins() const;
-
- 
+CRect GetMargins() const;  
 ```  
   
 ### Return Value  
@@ -402,9 +394,7 @@ CRect GetMargins() const;
  Call this function to get the dimensions of the page used in printing.  
   
 ```  
-CRect GetPageRect() const;
-
- 
+CRect GetPageRect() const;  
 ```  
   
 ### Return Value  
@@ -417,9 +407,7 @@ CRect GetPageRect() const;
  Call this function to retrieve the current paper size.  
   
 ```  
-CSize GetPaperSize() const;
-
- 
+CSize GetPaperSize() const;  
 ```  
   
 ### Return Value  
@@ -445,9 +433,7 @@ PARAFORMAT2& GetParaFormatSelection();
  Call this function to retrieve the bounds of the printing area within the page rectangle.  
   
 ```  
-CRect GetPrintRect() const;
-
- 
+CRect GetPrintRect() const;  
 ```  
   
 ### Return Value  
@@ -460,9 +446,7 @@ CRect GetPrintRect() const;
  Call this function to determine the width of the printing area.  
   
 ```  
-int GetPrintWidth() const;
-
- 
+int GetPrintWidth() const;  
 ```  
   
 ### Return Value  
@@ -472,9 +456,7 @@ int GetPrintWidth() const;
  Call this function to retrieve the [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) object associated with the `CRichEditView` object.  
   
 ```  
-CRichEditCtrl& GetRichEditCtrl() const;
-
- 
+CRichEditCtrl& GetRichEditCtrl() const;  
 ```  
   
 ### Return Value  
@@ -487,9 +469,7 @@ CRichEditCtrl& GetRichEditCtrl() const;
  Call this function to retrieve the OLE item (a `CRichEditCntrItem` object) currently selected in this `CRichEditView` object.  
   
 ```  
-CRichEditCntrItem* GetSelectedItem() const;
-
- 
+CRichEditCntrItem* GetSelectedItem() const;  
 ```  
   
 ### Return Value  
@@ -499,9 +479,7 @@ CRichEditCntrItem* GetSelectedItem() const;
  Call this function to retrieve the length of the text in this `CRichEditView` object.  
   
 ```  
-long GetTextLength() const;
-
- 
+long GetTextLength() const;  
 ```  
   
 ### Return Value  
@@ -513,9 +491,7 @@ long GetTextLength() const;
 ```  
 long GetTextLengthEx(
     DWORD dwFlags,  
-    UINT uCodePage = -1) const;
-
- 
+    UINT uCodePage = -1) const;  
 ```  
   
 ### Parameters  
@@ -577,9 +553,7 @@ static BOOL AFX_CDECL IsRichEditFormat(CLIPFORMAT cf);
  Call this function to determine if the specified OLE item is currently selected in this view.  
   
 ```  
-virtual BOOL IsSelected(const CObject* pDocItem) const;
-
- 
+virtual BOOL IsSelected(const CObject* pDocItem) const;  
 ```  
   
 ### Parameters  

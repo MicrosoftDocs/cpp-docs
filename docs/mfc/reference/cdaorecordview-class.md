@@ -105,11 +105,8 @@ class AFX_NOVTABLE CDaoRecordView : public CFormView
  When you create an object of a type derived from `CDaoRecordView`, call either form of the constructor to initialize the view object and identify the dialog resource on which the view is based.  
   
 ```  
-explicit CDaoRecordView(LPCTSTR lpszTemplateName);
-
- 
-explicit CDaoRecordView(UINT nIDTemplate);
-```  
+explicit CDaoRecordView(LPCTSTR lpszTemplateName);  
+explicit CDaoRecordView(UINT nIDTemplate);```  
   
 ### Parameters  
  `lpszTemplateName`  
