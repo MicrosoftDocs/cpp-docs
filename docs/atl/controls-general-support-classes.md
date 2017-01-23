@@ -1,5 +1,5 @@
 ---
-title: "Controls: General Support Classes | Microsoft Docs"
+title: "ATL Controls: General Support Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

@@ -1,5 +1,5 @@
 ---
-title: "Threading Models and Critical Sections Classes | Microsoft Docs"
+title: "Threading Models and Critical Sections Classes (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

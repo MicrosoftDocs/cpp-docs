@@ -1,5 +1,5 @@
 ---
-title: "Memory Management Classes | Microsoft Docs"
+title: "Memory Management Classes (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

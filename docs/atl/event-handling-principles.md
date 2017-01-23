@@ -1,5 +1,5 @@
 ---
-title: "Event Handling Principles | Microsoft Docs"
+title: "Event Handling Principles (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

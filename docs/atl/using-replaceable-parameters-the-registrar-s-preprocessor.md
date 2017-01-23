@@ -1,5 +1,5 @@
 ---
-title: "Using Replaceable Parameters (The Registrar&#39;s Preprocessor) | Microsoft Docs"
+title: "Using Replaceable Parameters (ATL Registrar) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

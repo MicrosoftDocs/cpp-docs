@@ -1,5 +1,5 @@
 ---
-title: "Debugging Tips | Microsoft Docs"
+title: "Debugging Tips (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

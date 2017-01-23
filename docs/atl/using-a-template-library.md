@@ -1,5 +1,5 @@
 ---
-title: "Using a Template Library | Microsoft Docs"
+title: "Using a Template Library (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

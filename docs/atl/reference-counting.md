@@ -1,5 +1,5 @@
 ---
-title: "Reference Counting | Microsoft Docs"
+title: "Reference Counting (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

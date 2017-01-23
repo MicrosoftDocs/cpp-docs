@@ -1,5 +1,5 @@
 ---
-title: "Interface Pointers Classes | Microsoft Docs"
+title: "Interface Pointers Classes (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

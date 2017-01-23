@@ -1,5 +1,5 @@
 ---
-title: "Site Information Classes | Microsoft Docs"
+title: "Site Information Classes (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
