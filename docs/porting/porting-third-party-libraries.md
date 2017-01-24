@@ -33,7 +33,9 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
+
 # Porting third-party libraries
+
 When you upgrade a project to the current version of Visual C++, you also have to upgrade any libraries that the project uses, so that the library and your project are built with the same version and flavor of the compiler. (For more information, see [Overview of potential upgrade issues](overview-of-potential-upgrade-issues-visual-cpp.md)). 
 
 ## Introducing vcpkg

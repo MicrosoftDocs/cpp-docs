@@ -43,7 +43,7 @@ The `vector<bool>::reference` class is a proxy class provided by the [vector\<bo
   
 ```cpp  
     vector<bool> vb;  
-...  
+    // ...  
     bool* pb = &vb[1]; // conversion error - do not use  
     bool& refb = vb[1];   // conversion error - do not use  
 ```  

@@ -267,8 +267,6 @@ virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Mode = ios_base::in |
   
 ```  
 basic_string<Elem, Tr, Alloc> str() const;
-
- 
 void str(
     const basic_string<Elem, Tr, Alloc>& _Newstr);
 ```  
@@ -349,7 +347,7 @@ virtual int_type underflow();
 ##  <a name="basic_streambuf__swap"></a>  basic_streambuf::swap  
  Swaps the contents of this string buffer with another string buffer.  
   
-```cpp  
+```  
 void basic_stringbuf<T>::swap(basic_stringbuf& other)  
 ```  
   
@@ -360,13 +358,10 @@ void basic_stringbuf<T>::swap(basic_stringbuf& other)
 ### Remarks  
   
 ##  <a name="basic_stringbuf__operator_eq"></a>  basic_stringbuf::operator=  
- Assigns the contents of the basic_stringbuf on the right side of the operator to the basic_stringbuf on the left side..  
+ Assigns the contents of the basic_stringbuf on the right side of the operator to the basic_stringbuf on the left side.  
   
-```cpp  
+```  
 basic_stringbuf& basic_stringbuf:: operator=(const basic_stringbuf& other)  
-```  
-  
-```  
 ```  
   
 ### Parameters  

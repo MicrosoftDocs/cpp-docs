@@ -162,7 +162,11 @@ private:
   
 -   The function is also marked with the [naked](../cpp/naked-cpp.md) [__declspec](../cpp/declspec.md) modifier.  
   
- If the compiler cannot inline a function declared with `__forceinline`, it generates a level 1 warning.  
+ If the compiler cannot inline a function declared with `__forceinline`, it generates a level 1 warning, except when:
+  
+-   The function is compiled by using /Od or /Ob0. No inlining is expected in these cases.     
+  
+-   The function is defined externally, in an included library or another translation unit, or is a virtual call target or indirect call target. The compiler can't identify non-inlined code that it can't find in the current translation unit.  
   
  Recursive functions can be substituted inline to a depth specified by the [inline_depth](../preprocessor/inline-depth.md) pragma, up to a maximum of 16 calls. After that depth, recursive function calls are treated as calls to an instance of the function.  The depth to which recursive functions are examined by the inline heuristic cannot exceed 16. The [inline_recursion](../preprocessor/inline-recursion.md) pragma controls the inline expansion of a function currently under expansion. See the [Inline-Function Expansion](../build/reference/ob-inline-function-expansion.md) (/Ob) compiler option for related information.  
   

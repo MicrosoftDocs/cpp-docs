@@ -33,7 +33,7 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # path Class
-The **path** class stores an object of type string_type, called myname here for the purposes of exposition, suitable for use as a pathname. string_type is a synonym for basic_string<value_type>, where value_type is a synonym for char under Windows or wchar_t under Posix.  
+The **path** class stores an object of type string\_type, called myname here for the purposes of exposition, suitable for use as a pathname. string\_type is a synonym for basic\_string\<value_type>, where value\_type is a synonym for char under Windows or wchar_t under Posix.  
   
  For more information, and code examples, see [File System Navigation (C++)](../standard-library/file-system-navigation.md).  
   
@@ -47,8 +47,8 @@ class path;
   
 ```  
 template <class Source>  
-path& append(const Source& source);
-
+path& append(const Source& source);  
+   
 template <class InIt>  
 path& append(InIt first, InIt last);
 ```  
@@ -59,8 +59,8 @@ path& append(InIt first, InIt last);
   
 ```  
 template <class Source>  
-path& assign(const Source& source);
-
+path& assign(const Source& source);  
+  
 template <class InIt>  
 path& assign(InIt first, InIt last);
 ```  
@@ -96,8 +96,6 @@ void clear() noexcept;
 ```  
 int compare(const path& pval) const noexcept;  
 int compare(const string_type& str) const;
-
- 
 int compare(const value_type *ptr) const;
 ```  
   
@@ -107,8 +105,8 @@ int compare(const value_type *ptr) const;
   
 ```  
 template <class Source>  
-path& concat(const Source& source);
-
+path& concat(const Source& source);  
+  
 template <class InIt>  
 path& concat(InIt first, InIt last);
 ```  
@@ -165,14 +163,13 @@ path filename() const;
 template <class Elem,  
     class Traits = char_traits<Elem>,  
     class Alloc = allocator<Elem>>  
-basic_string<Elem, Traits, Alloc>  
+  basic_string<Elem, Traits, Alloc>  
     generic_string(const Alloc& al = Alloc()) const;
-
- 
+  
 string generic_string() const;
 ```  
   
- Returns `this->string<Elem, Traits, Alloc>(_Al)` with (under Windows) any backslash converted to a forward slash.  
+ Returns `this->string<Elem, Traits, Alloc>(al)` with (under Windows) any backslash converted to a forward slash.  
   
 ## path::generic_u16string  
   
@@ -225,7 +222,6 @@ bool has_filename() const;
 ## path::has_parent_path  
   
 ```  
- 
 bool has_parent_path() const;
 ```  
   
@@ -289,15 +285,18 @@ bool is_relative() const;
   
 ## path::iterator  
   
+```  
 class iterator  
-   {// bidirectional iterator for path  
+   {
+   // bidirectional iterator for path  
    typedef bidirectional_iterator_tag iterator_category;  
    typedef path_type value_type;  
    typedef ptrdiff_t difference_type;  
    typedef const value_type *pointer;  
    typedef const value_type& reference;  
-   .....  
+   // ...  
    };  
+```  
   
  The class describes a bidirectional constant iterator that designates the path components of myname in the sequence:  
   
@@ -305,11 +304,7 @@ class iterator
   
 2.  the root directory, if present  
   
-3.  the remaining directory elements of the parent path, if present, ending withthe filename, if present  
-  
-4.  
-  
-5.  
+3.  the remaining directory elements of the parent path, if present, ending with the filename, if present    
   
  For pval an object of type path:  
   
@@ -345,8 +340,8 @@ const string_type& native() const noexcept;
   
 ```  
 path& operator=(const path& right);
-
 path& operator=(path&& right) noexcept;  
+  
 template <class Source>  
 path& operator=(const Source& source);
 ```  
@@ -357,16 +352,13 @@ path& operator=(const Source& source);
   
 ```  
 path& operator+=(const path& right);
-
 path& operator+=(const string_type& str);
-
 path& operator+=(const value_type *ptr);
-
 path& operator+=(value_type elem);
-
+  
 template <class Source>  
 path& operator+=(const Source& source);
-
+  
 template <class Elem>  
 path& operator+=(Elem elem);
 ```  
@@ -388,8 +380,8 @@ path& operator+=(Elem elem);
 ## path::operator/=  
   
 ```  
-path& operator/=(const path& right);
-
+path& operator/=(const path& right);  
+  
 template <class Source>  
 path& operator/=(const Source& source);
 ```  
@@ -402,7 +394,8 @@ path& operator/=(const Source& source);
   
 ## path::operator string_type  
   
-```  operator string_type() const;
+```  
+operator string_type() const;
 ```  
   
  The member operator returns myname.  
@@ -421,17 +414,17 @@ path parent_path() const;
 path();
 
 path(const path& right);
-
 path(path&& right) noexcept;  
+  
 template <class Source>  
 path(const Source& source);
-
+  
 template <class Source>  
 path(const Source& source, const locale& loc);
-
+  
 template <class InIt>  
 path(InIt first, InIt last);
-
+  
 template <class InIt>  
 path(InIt first, InIt last, const locale& loc);
 ```  
@@ -489,13 +482,12 @@ path& replace_extension(const path& newext = path());
 ## path::replace_filename  
   
 ```  
- 
 path& replace_filename(const path& pval);
 ```  
   
  The member function executes:  
   
-```  
+```cpp  
 remove_filename();
 
 *this /= pval;  
@@ -521,7 +513,6 @@ path root_name() const;
 ## path::root_path  
   
 ```  
- 
 path root_path() const;
 ```  
   
@@ -530,7 +521,6 @@ path root_path() const;
 ## path::stem  
   
 ```  
- 
 path stem() const;
 ```  
   
@@ -599,7 +589,6 @@ string u8string() const;
 ## path::value_type  
   
 ```  
- 
 #if _WIN32_C_LIB  
 typedef wchar_t value_type;  
 #else // assume Posix  

@@ -92,7 +92,7 @@ This topic provides a guide for upgrading Visual C++ code. This includes getting
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)|Discusses how to use projects created in earlier versions of Visual C++.|  
+ |[Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)|Discusses how to use projects created in earlier versions of Visual C++.|  
 |[What's New for Visual C++ in Visual Studio 2017 RC](what-s-new-for-visual-cpp-in-visual-studio.md)|Changes in the IDE and tools from Visual Studio 2015 to Visual Studio 2017|
 |[C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md)|Standards conformance improvements from Visual Studio 2015 to Visual Studio 2017|
 |[Visual C++ change history 2003 - 2015](visual-cpp-change-history-2003-2015.md)|A list of all the changes in the Visual C++ libraries and build tools from Visual Studio 2003 through 2015 that might require changes in your code.|  
@@ -101,7 +101,7 @@ This topic provides a guide for upgrading Visual C++ code. This includes getting
 |[Porting and Upgrading: Examples and Case Studies](porting-and-upgrading-examples-and-case-studies.md)|For this section, we ported and upgrades several samples and applications and discussed the experiences and results. You might find that reading these gives you a sense of what is involved in the porting and upgrading process. Throughout the process, we discuss tips and tricks for upgrading and show how specific errors were fixed.|  
 |[Porting to the Universal Windows Platform](porting-to-the-universal-windows-platform-cpp.md)|Contains information about porting code to Windows 10|  
 |[Introduction to Visual C++ for UNIX Users](introduction-to-visual-cpp-for-unix-users.md)|Provides information for UNIX users who are new to [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] and want to become productive with it.|  
-|[Porting from UNIX to Win32](porting-from-unix-to-win32.md)|Discusses options for migrating UNIX applications to Windows.|  
+|[Porting from UNIX to Win32](porting-from-unix-to-win32.md)|Discusses options for migrating UNIX applications to Windows.| 
 |[C++/CLI Migration Primer](../dotnet/cpp-cli-migration-primer.md)|Shows in detail how to upgrade your Managed Extensions for C++ syntax to use the new syntax. For more information, see [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md).|  
   
 ## See Also  
