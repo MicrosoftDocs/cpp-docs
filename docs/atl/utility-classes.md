@@ -1,5 +1,5 @@
 ---
-title: "Utility Classes | Microsoft Docs"
+title: "Utility Classes (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

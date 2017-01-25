@@ -1,5 +1,5 @@
 ---
-title: "Dual Interfaces Classes | Microsoft Docs"
+title: "Dual Interfaces Classes (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

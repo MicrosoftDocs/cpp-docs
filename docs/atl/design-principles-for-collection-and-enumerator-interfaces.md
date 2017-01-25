@@ -1,5 +1,5 @@
 ---
-title: "Design Principles for Collection and Enumerator Interfaces | Microsoft Docs"
+title: "Designing Collection and Enumerator Interfaces (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

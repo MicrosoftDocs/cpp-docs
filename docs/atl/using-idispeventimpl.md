@@ -1,5 +1,5 @@
 ---
-title: "Using IDispEventImpl | Microsoft Docs"
+title: "Using IDispEventImpl (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

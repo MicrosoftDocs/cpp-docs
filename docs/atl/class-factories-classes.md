@@ -1,5 +1,5 @@
 ---
-title: "Class Factories Classes | Microsoft Docs"
+title: " ATL Class Factories Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

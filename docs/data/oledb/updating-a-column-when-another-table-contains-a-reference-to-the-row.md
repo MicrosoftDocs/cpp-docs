@@ -1,5 +1,5 @@
 ---
-title: "Updating a Column When Another Table Contains a Reference to the Row | Microsoft Docs"
+title: "Update a column when another table contains a reference to the row | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

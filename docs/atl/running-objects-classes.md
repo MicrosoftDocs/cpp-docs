@@ -1,5 +1,5 @@
 ---
-title: "Running Objects Classes | Microsoft Docs"
+title: "Running Objects Classes (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
