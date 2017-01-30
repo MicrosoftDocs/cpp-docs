@@ -1,5 +1,5 @@
 ---
-title: "Implementing a Dual Interface | Microsoft Docs"
+title: "Implementing a Dual Interface (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

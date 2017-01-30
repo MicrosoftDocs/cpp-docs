@@ -1,5 +1,5 @@
 ---
-title: "Properties and Property Pages Classes | Microsoft Docs"
+title: "Properties and Property Pages Classes (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

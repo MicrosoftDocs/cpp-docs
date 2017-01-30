@@ -1,5 +1,5 @@
 ---
-title: "Windows Support Classes | Microsoft Docs"
+title: "Windows Support Classes (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

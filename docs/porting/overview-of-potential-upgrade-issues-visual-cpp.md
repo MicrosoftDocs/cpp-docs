@@ -101,7 +101,7 @@ dumpbin.exe /LINKERMEMBER somelibrary.lib
   
  One example of a common compiler error you might see when upgrading is when a non-const argument is passed to a const parameter. Older versions of Visual C++ did not always flag this as an error. For more information, see [The compiler's more strict conversions](porting-guide-spy-increment.md#stricter_conversions).  
   
- For more information on specific conformance improvements, see [Visual C++ change history 2003 – 2015](visual-cpp-change-history-2003-2015.md) and [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017).  
+ For more information on specific conformance improvements, see [Visual C++ change history 2003 – 2015](visual-cpp-change-history-2003-2015.md) and [C++ conformance improvements in Visual Studio 2017](../cpp-conformance-improvements-2017.md).  
   
 ## Errors involving \<stdint.h> integral types  
  The \<stdint.h> header defines typedefs and macros that, unlike built-in integral types, are guaranteed to have a specified length on all platforms. Some examples are uint32_t and int64_t. Visual C++ added \<stdint.h> in Visual Studio 2010. Code that was written before 2010 might have provided private definitions for those types and those definitions might not always be consistent with the \<stdint.h> definitions.  
@@ -115,7 +115,7 @@ dumpbin.exe /LINKERMEMBER somelibrary.lib
 ## Errors involving CRT functions  
  Many changes have been made to the C runtime over the years. Many secure versions of functions have been added, and some have been removed. Also, as described earlier in this article, Microsoft’s implementation of the CRT was refactored in Visual Studio 2015 into new binaries and associated .lib files.  
   
- If an error involves a CRT function, search the [Visual C++ change history 2003 - 2015](visual-cpp-change-history-2003-2015.md) or [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md) to see if those topics contain any additional information. If the error is LNK2019, unresolved external, make sure the function has not been removed. Otherwise, if you are sure that the function still exists, and the calling code is correct, check to see whether your project uses /NODEFAULTLIB. If so you need to update the list of libraries so that the project uses the new universal (UCRT) libraries. See the section above on Library and dependencies for more information.  
+ If an error involves a CRT function, search the [Visual C++ change history 2003 - 2015](visual-cpp-change-history-2003-2015.md) or [C++ conformance improvements in Visual Studio 2017](../cpp-conformance-improvements-2017.md) to see if those topics contain any additional information. If the error is LNK2019, unresolved external, make sure the function has not been removed. Otherwise, if you are sure that the function still exists, and the calling code is correct, check to see whether your project uses /NODEFAULTLIB. If so you need to update the list of libraries so that the project uses the new universal (UCRT) libraries. See the section above on Library and dependencies for more information.  
   
  If the error involves printf or scanf, make sure that you are not privately defining either function without including stdio.h. If so, either remove the private definitions or link to legacy_stdio_definitions.lib (Project &#124; Properties &#124; Linker &#124; Linker Input). If you are linking with Windows SDK 8.1 or earlier, then add legacy_stdio_definitions.lib.  
   
@@ -143,7 +143,7 @@ dumpbin.exe /LINKERMEMBER somelibrary.lib
  For more information, see [Updating the Target Windows Version](porting-guide-spy-increment.md#updating_winver) and [More outdated header files](porting-guide-spy-increment.md#outdated_header_files).  
   
 ## ATL / MFC  
- ATL and MFC are relatively stable APIs but changes are made occasionally. See the [Visual C++ change history 2003 – 2015](visual-cpp-change-history-2003-2015.md) for more information and [What's New for Visual C++ in Visual Studio 2017](../what-s-new-for-visual-cpp-in-visual-studio.md) and [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md).  
+ ATL and MFC are relatively stable APIs but changes are made occasionally. See the [Visual C++ change history 2003 – 2015](visual-cpp-change-history-2003-2015.md) for more information and [What's New for Visual C++ in Visual Studio 2017](../what-s-new-for-visual-cpp-in-visual-studio.md) and [C++ conformance improvements in Visual Studio 2017](../cpp-conformance-improvements-2017.md).  
   
 ### LNK 2005 _DllMain@12 already defined in MSVCRTD.lib  
  This error can occur in MFC applications. It indicates an ordering issue between the CRT library and the MFC library. MFC needs to be linked first so that it provides new and delete operators. To fix the error, use the /NODEFAULTLIB switch to Ignore these default libraries: MSVCRTD.lib and mfcs140d.lib. Then add these same libs as additional dependencies.  
@@ -160,4 +160,4 @@ dumpbin.exe /LINKERMEMBER somelibrary.lib
   
 ## See Also  
  [Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)
- [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md)
+ [C++ conformance improvements in Visual Studio 2017](../cpp-conformance-improvements-2017.md)

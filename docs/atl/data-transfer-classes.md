@@ -1,5 +1,5 @@
 ---
-title: "Data Transfer Classes | Microsoft Docs"
+title: "Data Transfer Classes (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

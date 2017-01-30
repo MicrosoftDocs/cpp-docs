@@ -1,5 +1,5 @@
 ---
-title: "Example: Implementing a Property Page | Microsoft Docs"
+title: "Implementing a Property Page (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

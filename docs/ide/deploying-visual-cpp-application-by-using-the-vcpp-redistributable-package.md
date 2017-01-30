@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Deploying a Visual C++ Application By Using the Visual C++ Redistributable Package | Microsoft Docs"
+title: "Deploy an App By Using the Redistributable Package (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

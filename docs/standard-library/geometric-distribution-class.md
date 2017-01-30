@@ -16,7 +16,7 @@ f1_keywords:
   - "random/std::geometric_distribution::reset"
   - "std::geometric_distribution::p"
   - "random/std::geometric_distribution::p"
-   - "std::geometric_distribution::param"
+  - "std::geometric_distribution::param"
   - "random/std::geometric_distribution::param"
   - "std::geometric_distribution::min"
   - "random/std::geometric_distribution::min"

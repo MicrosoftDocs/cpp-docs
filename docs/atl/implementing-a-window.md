@@ -1,5 +1,5 @@
 ---
-title: "Implementing a Window | Microsoft Docs"
+title: "Implementing a Window (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

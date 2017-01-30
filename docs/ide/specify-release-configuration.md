@@ -1,5 +1,5 @@
 ---
-title: "Specify Release Configuration Settings, Create New Project From Existing Code Files Wizard | Microsoft Docs"
+title: "New Project From Existing Code Release Configuration | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

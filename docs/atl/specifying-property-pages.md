@@ -1,5 +1,5 @@
 ---
-title: "Specifying Property Pages | Microsoft Docs"
+title: "Specifying Property Pages (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

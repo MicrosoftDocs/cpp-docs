@@ -1,5 +1,5 @@
 ---
-title: "MMC Snap-In Classes | Microsoft Docs"
+title: "MMC Snap-In Classes (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

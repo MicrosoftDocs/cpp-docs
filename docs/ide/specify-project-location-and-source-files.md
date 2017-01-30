@@ -1,5 +1,5 @@
 ---
-title: "Specify Project Location and Source Files, Create New Project From Existing Code Files Wizard | Microsoft Docs"
+title: "New Project From Existing Code - Source Files (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
