@@ -16,7 +16,7 @@ f1_keywords:
   - "random/std::binomial_distribution::reset"
   - "std::binomial_distribution::p"
   - "random/std::binomial_distribution::p"
-   - "std::binomial_distribution::t"
+  - "std::binomial_distribution::t"
   - "random/std::binomial_distribution::t"
   - "std::binomial_distribution::param"
   - "random/std::binomial_distribution::param"

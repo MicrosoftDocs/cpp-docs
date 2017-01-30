@@ -101,7 +101,7 @@ By optimizing an executable, you can achieve a balance between fast execution sp
   
 -   [Specifying Compiler Optimization for an ATL Project](../../atl/reference/specifying-compiler-optimization-for-an-atl-project.md)  
   
--   [What optimization techniques should I use to improve the client application's performance when loading?](../../build/what-optimization-techniques-should-i-use.md)  
+-   [What optimization techniques should I use to improve the client application's performance when loading?](../../build/dll-frequently-asked-questions.md#mfc_optimization)  
   
 -   [!INCLUDE[crabout](../../build/reference/includes/crabout_md.md)] how to reduce the time to load DLL methods, see "Optimizing DLL Load Time Performance" in the "Under the Hood" column in the "MSDN Magazine" on the [MSDN Library](http://go.microsoft.com/fwlink/?linkid=556) Web site.  
   
