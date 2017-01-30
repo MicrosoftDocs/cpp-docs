@@ -44,13 +44,13 @@ The Image editor tools for drawing lines and closed figures all work in the same
   
 ### To draw a line  
   
-1.  On the [Image Editor toolbar](../mfc/toolbar-image-editor-for-icons.md) (or from the **Image** menu, **Tools** command), click the **Line** tool.  
+1.  On the [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md) (or from the **Image** menu, **Tools** command), click the **Line** tool.  
   
 2.  If necessary, select colors and a brush:  
   
     -   In the [Colors palette](../windows/colors-window-image-editor-for-icons.md), click the left mouse button to select a foreground color or the right mouse button to select a background color.  
   
-    -   In the [Options selector](../mfc/toolbar-image-editor-for-icons.md), click a shape representing the brush you want to use.  
+    -   In the [Options selector](../windows/toolbar-image-editor-for-icons.md), click a shape representing the brush you want to use.  
   
 3.  Place the pointer at the line's starting point.  
   
@@ -75,8 +75,8 @@ The Image editor tools for drawing lines and closed figures all work in the same
  None  
   
 ## See Also  
- [Accelerator Keys](../mfc/accelerator-keys-image-editor-for-icons.md)   
- [Editing Graphical Resources](../mfc/editing-graphical-resources-image-editor-for-icons.md)   
- [Image Editor for Icons](../mfc/image-editor-for-icons.md)   
- [Working with Color](../mfc/working-with-color-image-editor-for-icons.md)
+ [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)   
+ [Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)   
+ [Image Editor for Icons](../windows/image-editor-for-icons.md)   
+ [Working with Color](../windows/working-with-color-image-editor-for-icons.md)
 

@@ -78,5 +78,5 @@ Previewing your resources allows you to view graphical resource without opening 
   
 ## See Also  
  [How to: Open a Resource Script File Outside of a Project (Standalone)](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md)   
- [Resource Editors](../mfc/resource-editors.md)
+ [Resource Editors](../windows/resource-editors.md)
 

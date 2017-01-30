@@ -50,7 +50,7 @@ translation.priority.ht:
  MFC or ATL  
   
 ## See Also  
- [Toolbar Button Properties](../mfc/toolbar-button-properties.md)   
- [Creating, Moving, and Editing Toolbar Buttons](../mfc/creating-moving-and-editing-toolbar-buttons.md)   
- [Toolbar Editor](../mfc/toolbar-editor.md)
+ [Toolbar Button Properties](../windows/toolbar-button-properties.md)   
+ [Creating, Moving, and Editing Toolbar Buttons](../windows/creating-moving-and-editing-toolbar-buttons.md)   
+ [Toolbar Editor](../windows/toolbar-editor.md)
 

@@ -59,4 +59,4 @@ The symbols in this table only appear in an MFC project when database support ha
   
 ## See Also  
  [MFC Predefined Symbols](../windows/mfc-predefined-symbols.md)   
- [Symbols: Resource Identifiers](../mfc/symbols-resource-identifiers.md)
+ [Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)

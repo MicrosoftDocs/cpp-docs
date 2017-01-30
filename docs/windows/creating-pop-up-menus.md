@@ -64,4 +64,4 @@ translation.priority.mt:
   
 ## See Also  
  [Connecting a Pop-up Menu to Your Application](../windows/connecting-a-pop-up-menu-to-your-application.md)   
- [Menu Editor](../mfc/menu-editor.md)
+ [Menu Editor](../windows/menu-editor.md)

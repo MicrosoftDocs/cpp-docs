@@ -42,15 +42,15 @@ You can arrange controls on dialog boxes with the Dialog editor in one of three 
   
 -   Without any snapping or alignment features  
   
- The [Dialog Editor Toolbar](../mfc/showing-or-hiding-the-dialog-editor-toolbar.md) contains buttons that control the state. To change the state, click the appropriate icon. You can also change states by using the **Guide Settings** command on the **Format** menu.  
+ The [Dialog Editor Toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md) contains buttons that control the state. To change the state, click the appropriate icon. You can also change states by using the **Guide Settings** command on the **Format** menu.  
   
 -   [Creating and Setting Guides and Margins](../mfc/creating-and-setting-guides-and-margins.md)  
   
--   [Aligning Controls on a Guide](../mfc/aligning-controls-on-a-guide.md)  
+-   [Aligning Controls on a Guide](../windows/aligning-controls-on-a-guide.md)  
   
--   [Disabling Guides](../mfc/disabling-guides.md)  
+-   [Disabling Guides](../windows/disabling-guides.md)  
   
--   [Modifying the Layout Grid](../mfc/modifying-the-layout-grid.md)  
+-   [Modifying the Layout Grid](../windows/modifying-the-layout-grid.md)  
   
  For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
@@ -58,7 +58,7 @@ You can arrange controls on dialog boxes with the Dialog editor in one of three 
  Win32  
   
 ## See Also  
- [Arrangement of Controls on Dialog Boxes](../mfc/arrangement-of-controls-on-dialog-boxes.md)   
- [Controls in Dialog Boxes](../mfc/controls-in-dialog-boxes.md)   
+ [Arrangement of Controls on Dialog Boxes](../windows/arrangement-of-controls-on-dialog-boxes.md)   
+ [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)   
  [Controls](../mfc/controls-mfc.md)
 

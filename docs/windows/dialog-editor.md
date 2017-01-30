@@ -46,29 +46,29 @@ The Dialog editor allows you to create or edit dialog box resources. You open th
   
  You can store a dialog box as a template so you can reuse it. You can also easily switch between designing the dialog box and editing the code that implements it.  
   
- It's also possible to edit properties of single or multiple controls in the Dialog editor. You can change the tab order, that is, the order in which controls gain focus when the TAB key is pressed, or you can define an access key (a key combination) that allows users to choose a control using the keyboard. For a list of preset access keys, see [Accelerator Keys for the Dialog Editor](../mfc/accelerator-keys-for-the-dialog-editor.md).  
+ It's also possible to edit properties of single or multiple controls in the Dialog editor. You can change the tab order, that is, the order in which controls gain focus when the TAB key is pressed, or you can define an access key (a key combination) that allows users to choose a control using the keyboard. For a list of preset access keys, see [Accelerator Keys for the Dialog Editor](../windows/accelerator-keys-for-the-dialog-editor.md).  
   
  The Dialog editor also allows you to use custom controls, including ActiveX controls. In addition, you can edit a [form view](../mfc/reference/cformview-class.md), [Record Views](../data/record-views-mfc-data-access.md), or [Dialog Bars](../mfc/dialog-bars.md).  
   
  Starting with [!INCLUDE[vs_dev14](../ide/includes/vs_dev14_md.md)], you can use the dialog editor to define dynamic layouts, which specify how controls move and resize when the user resizes a dialog. For more information, see [Dynamic Layout](../mfc/dynamic-layout.md).  
   
--   [Creating a New Dialog Box](../mfc/creating-a-new-dialog-box.md)  
+-   [Creating a New Dialog Box](../windows/creating-a-new-dialog-box.md)  
   
--   [Creating a Dialog Box that Users Can't Exit at Run Time](../mfc/creating-a-dialog-box-that-users-cannot-exit.md)  
+-   [Creating a Dialog Box that Users Can't Exit at Run Time](../windows/creating-a-dialog-box-that-users-cannot-exit.md)  
   
--   [Showing or Hiding the Dialog Editor Toolbar](../mfc/showing-or-hiding-the-dialog-editor-toolbar.md)  
+-   [Showing or Hiding the Dialog Editor Toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md)  
   
--   [Switching Between the Dialog Editor and Code](../mfc/switching-between-dialog-box-controls-and-code.md)  
+-   [Switching Between the Dialog Editor and Code](../windows/switching-between-dialog-box-controls-and-code.md)  
   
--   [Controls in Dialog Boxes](../mfc/controls-in-dialog-boxes.md)  
+-   [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)  
   
--   [Adding Event Handlers for Dialog Box Controls](../mfc/adding-event-handlers-for-dialog-box-controls.md)  
+-   [Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md)  
   
--   [Testing a Dialog Box](../mfc/testing-a-dialog-box.md)  
+-   [Testing a Dialog Box](../windows/testing-a-dialog-box.md)  
   
--   [Accelerator Keys for the Dialog Editor](../mfc/accelerator-keys-for-the-dialog-editor.md)  
+-   [Accelerator Keys for the Dialog Editor](../windows/accelerator-keys-for-the-dialog-editor.md)  
   
--   [Troubleshooting the Dialog Editor](../mfc/troubleshooting-the-dialog-editor.md)  
+-   [Troubleshooting the Dialog Editor](../windows/troubleshooting-the-dialog-editor.md)  
   
     > [!TIP]
     >  While using the Dialog editor, in many instances, you can click the right mouse button to display a shortcut menu of frequently used commands.  
@@ -79,7 +79,7 @@ The Dialog editor allows you to create or edit dialog box resources. You open th
  Win32  
   
 ## See Also  
- [Resource Editors](../mfc/resource-editors.md)   
+ [Resource Editors](../windows/resource-editors.md)   
  [Controls](../mfc/controls-mfc.md)   
  [Control Classes](../mfc/control-classes.md)   
  [Dialog Box Classes](../mfc/dialog-box-classes.md)   

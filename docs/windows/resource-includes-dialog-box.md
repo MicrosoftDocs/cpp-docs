@@ -41,7 +41,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Resource Includes Dialog Box
-You can use the **Resource Includes** dialog box to modify the environment's normal working arrangement of storing all resources in the project .rc file and all [symbols](../mfc/symbols-resource-identifiers.md) in Resource.h.  
+You can use the **Resource Includes** dialog box to modify the environment's normal working arrangement of storing all resources in the project .rc file and all [symbols](../windows/symbols-resource-identifiers.md) in Resource.h.  
   
  To open the **Resource Includes** dialog box, right-click an .rc file in [Resource View](../windows/resource-view-window.md), then choose **Resource Includes** from the shortcut menu.  
   
@@ -66,6 +66,6 @@ You can use the **Resource Includes** dialog box to modify the environment's nor
   
 ## See Also  
  [How to: Specify Include Directories for Resources](../windows/how-to-specify-include-directories-for-resources.md)   
- [Symbols: Resource Identifiers](../mfc/symbols-resource-identifiers.md)   
- [Resource Files](../mfc/resource-files-visual-studio.md)   
- [Resource Editors](../mfc/resource-editors.md)
+ [Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)   
+ [Resource Files](../windows/resource-files-visual-studio.md)   
+ [Resource Editors](../windows/resource-editors.md)

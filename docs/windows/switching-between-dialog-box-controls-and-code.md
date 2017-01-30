@@ -67,5 +67,5 @@ In MFC applications, you can double-click on dialog box controls to jump to thei
  Win32  
   
 ## See Also  
- [Dialog Editor](../mfc/dialog-editor.md)
+ [Dialog Editor](../windows/dialog-editor.md)
 

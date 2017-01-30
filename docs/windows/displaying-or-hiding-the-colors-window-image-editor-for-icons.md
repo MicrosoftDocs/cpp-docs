@@ -42,7 +42,7 @@ translation.priority.ht:
   
      \- or -  
   
-2.  Click **Show Colors Window** on the [Image menu](../mfc/image-menu-image-editor-for-icons.md).  
+2.  Click **Show Colors Window** on the [Image menu](../windows/image-menu-image-editor-for-icons.md).  
   
 ### To hide the Colors window  
   
@@ -58,4 +58,4 @@ translation.priority.ht:
   
 ## See Also  
  [Colors Window](../windows/colors-window-image-editor-for-icons.md)   
- [Image Editor for Icons](../mfc/image-editor-for-icons.md)
+ [Image Editor for Icons](../windows/image-editor-for-icons.md)

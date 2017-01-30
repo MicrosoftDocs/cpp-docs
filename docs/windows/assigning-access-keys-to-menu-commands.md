@@ -59,4 +59,4 @@ You can assign an access key (a mnemonic that allows the user to select the menu
  Win32  
   
 ## See Also  
- [Menu Editor](../mfc/menu-editor.md)
+ [Menu Editor](../windows/menu-editor.md)

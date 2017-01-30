@@ -66,6 +66,6 @@ Option Selector on the Image Editor Toolbar
   
 ## See Also  
  [Displaying or Hiding the Toolbar](../mfc/displaying-or-hiding-the-toolbar-image-editor-for-icons.md)   
- [Accelerator Keys](../mfc/accelerator-keys-image-editor-for-icons.md)   
- [Image Editor for Icons](../mfc/image-editor-for-icons.md)
+ [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)   
+ [Image Editor for Icons](../windows/image-editor-for-icons.md)
 

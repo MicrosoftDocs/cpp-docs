@@ -69,4 +69,4 @@ New Item Box with Focus Shifted After You Type Menu Name
  Win32  
   
 ## See Also  
- [Menu Editor](../mfc/menu-editor.md)
+ [Menu Editor](../windows/menu-editor.md)

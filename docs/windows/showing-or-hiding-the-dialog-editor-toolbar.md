@@ -50,7 +50,7 @@ When you open the Dialog editor, the Dialog Editor toolbar automatically appears
 |![Center Vertical button](../mfc/media/vcdialogeditorvertical.png "vcDialogEditorVertical")|Vertical|![Toggle Grid button](../mfc/media/vcdialogeditortogglegrid.png "vcDialogEditorToggleGrid")|Toggle Grid|  
 |![Center Horizontal button](../mfc/media/vcdialogeditorhorizontal.png "vcDialogEditorHorizontal")|Horizontal|![Toggle Guides button](../mfc/media/vcdialogeditortoggleguides.png "vcDialogEditorToggleGuides")|Toggle Guides|  
   
- The Dialog Editor toolbar contains buttons for arranging the layout of controls on the dialog box, for example size and alignment. Dialog Editor toolbar buttons correspond to commands on the Format menu. For details, see [Accelerator Keys for the Dialog Editor](../mfc/accelerator-keys-for-the-dialog-editor.md).  
+ The Dialog Editor toolbar contains buttons for arranging the layout of controls on the dialog box, for example size and alignment. Dialog Editor toolbar buttons correspond to commands on the Format menu. For details, see [Accelerator Keys for the Dialog Editor](../windows/accelerator-keys-for-the-dialog-editor.md).  
   
  When you are in the Dialog editor, you can toggle the display of the Dialog Editor toolbar by selecting it from the list of available toolbars and windows.  
   
@@ -68,8 +68,8 @@ When you open the Dialog editor, the Dialog Editor toolbar automatically appears
  Win32  
   
 ## See Also  
- [Arrangement of Controls on Dialog Boxes](../mfc/arrangement-of-controls-on-dialog-boxes.md)   
+ [Arrangement of Controls on Dialog Boxes](../windows/arrangement-of-controls-on-dialog-boxes.md)   
  [How to: Create a Resource](../windows/how-to-create-a-resource.md)   
- [Resource Files](../mfc/resource-files-visual-studio.md)   
- [Dialog Editor](../mfc/dialog-editor.md)
+ [Resource Files](../windows/resource-files-visual-studio.md)   
+ [Dialog Editor](../windows/dialog-editor.md)
 

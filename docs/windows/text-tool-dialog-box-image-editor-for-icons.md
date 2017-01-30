@@ -39,10 +39,10 @@ translation.priority.ht:
 # Text Tool Dialog Box (Image Editor for Icons)
 Use the **Text Tool** dialog box to add text to a cursor, bitmap, or icon resource.  
   
- To access this dialog box, open the [Image Editor](../mfc/window-panes-image-editor-for-icons.md). Select **Tools** from the **Image** menu, and then select the **Text Tool** command.  
+ To access this dialog box, open the [Image Editor](../windows/window-panes-image-editor-for-icons.md). Select **Tools** from the **Image** menu, and then select the **Text Tool** command.  
   
  **Font button**  
- Opens the [Text Tool Font dialog box](../mfc/text-tool-font-dialog-box-image-editor-for-icons.md), in which you can change the font, style, or size of the cursor font. Changes are applied to the text displayed in the Text area.  
+ Opens the [Text Tool Font dialog box](../windows/text-tool-font-dialog-box-image-editor-for-icons.md), in which you can change the font, style, or size of the cursor font. Changes are applied to the text displayed in the Text area.  
   
  **Text area**  
  Displays the text that appears as part of the resource. Initially this area is empty.  
@@ -56,5 +56,5 @@ Use the **Text Tool** dialog box to add text to a cursor, bitmap, or icon resour
  None  
   
 ## See Also  
- [Editing Graphical Resources](../mfc/editing-graphical-resources-image-editor-for-icons.md)
+ [Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)
 

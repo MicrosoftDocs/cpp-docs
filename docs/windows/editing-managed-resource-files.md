@@ -42,4 +42,4 @@ Managed resource files (.resx) are XML files. When you add a managed resource fi
  For more information, see [Resources in .Resx File Format](http://msdn.microsoft.com/en-us/0c476133-87e4-47e8-b0ef-4b88f4ef3dc5).  
   
 ## See Also  
- [Resource Files](../mfc/resource-files-visual-studio.md)
+ [Resource Files](../windows/resource-files-visual-studio.md)

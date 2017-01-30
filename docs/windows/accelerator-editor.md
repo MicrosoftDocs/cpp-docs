@@ -69,5 +69,5 @@ An accelerator table is a Windows resource that contains a list of accelerator k
  Win32  
   
 ## See Also  
- [Resource Editors](../mfc/resource-editors.md)
+ [Resource Editors](../windows/resource-editors.md)
 

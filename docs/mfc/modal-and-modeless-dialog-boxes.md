@@ -46,11 +46,11 @@ You can use class [CDialog](../mfc/reference/cdialog-class.md) to manage two kin
   
  Creating a dialog box for your program requires the following steps:  
   
-1.  Use the [dialog editor](../mfc/dialog-editor.md) to design the dialog box and create its dialog-template resource.  
+1.  Use the [dialog editor](../windows/dialog-editor.md) to design the dialog box and create its dialog-template resource.  
   
 2.  Create a dialog class.  
   
-3.  Connect the [dialog resource's controls to message handlers](../mfc/adding-event-handlers-for-dialog-box-controls.md) in the dialog class.  
+3.  Connect the [dialog resource's controls to message handlers](../windows/adding-event-handlers-for-dialog-box-controls.md) in the dialog class.  
   
 4.  Add data members associated with the dialog box's controls and to specify [dialog data exchange](../mfc/dialog-data-exchange.md) and [dialog data validations](../mfc/dialog-data-validation.md) for the controls.  
   

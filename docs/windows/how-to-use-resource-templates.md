@@ -90,5 +90,5 @@ A resource template is a customized resource that you have saved as an .rct file
  Win32  
   
 ## See Also  
- [Resource Files](../mfc/resource-files-visual-studio.md)   
- [Resource Editors](../mfc/resource-editors.md)
+ [Resource Files](../windows/resource-files-visual-studio.md)   
+ [Resource Editors](../windows/resource-editors.md)

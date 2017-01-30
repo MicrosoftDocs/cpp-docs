@@ -42,7 +42,7 @@ By default, the Image editor displays the view in the left pane at actual size a
   
 1.  Select the **Image Editor** pane whose magnification factor you want to change.  
   
-2.  On the [Image Editor toolbar](../mfc/toolbar-image-editor-for-icons.md), click the arrow to the right of the [Magnify tool](../mfc/toolbar-image-editor-for-icons.md) and select the magnification-factor from the submenu: **1X**, **2X**, **6X**, or **8X**.  
+2.  On the [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md), click the arrow to the right of the [Magnify tool](../windows/toolbar-image-editor-for-icons.md) and select the magnification-factor from the submenu: **1X**, **2X**, **6X**, or **8X**.  
   
     > [!NOTE]
     >  To select a magnification factor other than those listed in the **Magnify** tool, use the accelerator keys.  
@@ -54,6 +54,6 @@ By default, the Image editor displays the view in the left pane at actual size a
  None  
   
 ## See Also  
- [Accelerator Keys](../mfc/accelerator-keys-image-editor-for-icons.md)   
- [Window Panes](../mfc/window-panes-image-editor-for-icons.md)
+ [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)   
+ [Window Panes](../windows/window-panes-image-editor-for-icons.md)
 

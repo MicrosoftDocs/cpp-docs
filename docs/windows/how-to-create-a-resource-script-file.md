@@ -39,7 +39,7 @@ translation.priority.mt:
 > [!NOTE]
 >  The Resource Editor is not available in Express editions.  
 >   
->  This material applies to Windows desktop applications. Projects in .NET languages do not use resource script files. See [Resource Files](../mfc/resource-files-visual-studio.md), for more information.  
+>  This material applies to Windows desktop applications. Projects in .NET languages do not use resource script files. See [Resource Files](../windows/resource-files-visual-studio.md), for more information.  
   
 ### To create a new resource script (.rc) file  
   
@@ -64,5 +64,5 @@ translation.priority.mt:
  Win32  
   
 ## See Also  
- [Resource Files](../mfc/resource-files-visual-studio.md)   
- [Resource Editors](../mfc/resource-editors.md)
+ [Resource Files](../windows/resource-files-visual-studio.md)   
+ [Resource Editors](../windows/resource-editors.md)

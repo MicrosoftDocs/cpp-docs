@@ -47,13 +47,13 @@ Version information consists of company and product identification, a product re
   
  The Version Information editor enables you to:  
   
--   [Edit a string in a version information resource](../mfc/editing-a-string-in-a-version-information-resource.md)  
+-   [Edit a string in a version information resource](../windows/editing-a-string-in-a-version-information-resource.md)  
   
--   [Add version information for another language (new version info block)](../mfc/adding-version-information-for-another-language.md)  
+-   [Add version information for another language (new version info block)](../windows/adding-version-information-for-another-language.md)  
   
--   [Delete a version information block](../mfc/deleting-a-version-information-block.md)  
+-   [Delete a version information block](../windows/deleting-a-version-information-block.md)  
   
--   [Access version information from within your program](../mfc/accessing-version-information-from-within-your-program.md)  
+-   [Access version information from within your program](../windows/accessing-version-information-from-within-your-program.md)  
   
     > [!NOTE]
     >  While using the Version Information editor, in many instances you can right-click to display a shortcut menu of resource-specific commands. For example, if you click while pointing to a block header entry, the shortcut menu shows the New Version Block Info and Delete Version Block Info commands.  
@@ -64,6 +64,6 @@ Version information consists of company and product identification, a product re
  Win32  
   
 ## See Also  
- [Resource Editors](../mfc/resource-editors.md)   
+ [Resource Editors](../windows/resource-editors.md)   
  [Menus and Other Resources](http://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)
 

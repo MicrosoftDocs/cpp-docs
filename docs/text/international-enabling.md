@@ -53,7 +53,7 @@ Most traditional C and C++ code makes assumptions about character and string man
   
     -   Take care if you mix ANSI (8-bit) and Unicode (16-bit) characters in your application. It is possible to use ANSI characters in some parts of your program and Unicode characters in others, but you cannot mix them in the same string.  
   
-    -   Do not hard-code strings in your application. Instead, make them STRINGTABLE resources by adding them to the application's .rc file. Your application can then be localized without requiring source code changes or recompilation. For more information about STRINGTABLE resources, see [String Editor](../mfc/string-editor.md).  
+    -   Do not hard-code strings in your application. Instead, make them STRINGTABLE resources by adding them to the application's .rc file. Your application can then be localized without requiring source code changes or recompilation. For more information about STRINGTABLE resources, see [String Editor](../windows/string-editor.md).  
   
 > [!NOTE]
 >  European and MBCS character sets have some characters, such as accented letters, with character codes greater than 0x80. Because most code uses signed characters, these characters greater than 0x80 are sign-extended when converted to `int`. This is a problem for array indexing because the sign-extended characters, being negative, indexes outside the array. Languages that use MBCS, such as Japanese, are also unique. Because a character might consist of 1 or 2 bytes, you should always manipulate both bytes at the same time.  

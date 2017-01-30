@@ -96,11 +96,11 @@ The Dialog Editor tab appears in the [Toolbox window](/visualstudio/ide/referenc
   
  You can add custom controls to the dialog box by selecting the **Custom Control** icon in the Toolbox and dragging it to your dialog box. To add a Syslink control, add a custom control, then change the control's **Class** property to **Syslink**. This will cause the properties to refresh and show the Syslink control properties. For information on the MFC wrapper class, see [CLinkCtrl](../mfc/reference/clinkctrl-class.md).  
   
- You may also [add ActiveX controls to your dialog box](../mfc/viewing-and-adding-activex-controls-to-a-dialog-box.md).  
+ You may also [add ActiveX controls to your dialog box](../windows/viewing-and-adding-activex-controls-to-a-dialog-box.md).  
   
  You can also customize the Toolbox window for easier use. For more information, see [Managing Items and Tabs in the Toolbox](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db). For example, you can place controls in the Toolbox window for easy access. For more information, see [Customize Toolbox dialog box](http://msdn.microsoft.com/en-us/bd07835f-18a8-433e-bccc-7141f65263bb).  
   
- For more information on using the RichEdit 1.0 control with MFC, see [Using the RichEdit 1.0 Control with MFC](../mfc/using-the-richedit-1-0-control-with-mfc.md)  
+ For more information on using the RichEdit 1.0 control with MFC, see [Using the RichEdit 1.0 Control with MFC](../windows/using-the-richedit-1-0-control-with-mfc.md)  
   
  For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
@@ -113,6 +113,6 @@ The Dialog Editor tab appears in the [Toolbox window](/visualstudio/ide/referenc
  [Dialog Box Classes](../mfc/dialog-box-classes.md)   
  [Scroll-Bar Styles](../mfc/reference/scroll-bar-styles.md)   
  [Rich Edit Control Examples](../mfc/rich-edit-control-examples.md)   
- [Adding Event Handlers for Dialog Box Controls](../mfc/adding-event-handlers-for-dialog-box-controls.md)   
+ [Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md)   
  [Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)
 

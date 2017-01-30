@@ -51,7 +51,7 @@ The New Toolbar Resource dialog box allows you to specify the width and height o
  MFC or ATL  
   
 ## See Also  
- [Toolbar Button Properties](../mfc/toolbar-button-properties.md)   
- [Converting Bitmaps to Toolbars](../mfc/converting-bitmaps-to-toolbars.md)   
- [Toolbar Editor](../mfc/toolbar-editor.md)
+ [Toolbar Button Properties](../windows/toolbar-button-properties.md)   
+ [Converting Bitmaps to Toolbars](../windows/converting-bitmaps-to-toolbars.md)   
+ [Toolbar Editor](../windows/toolbar-editor.md)
 

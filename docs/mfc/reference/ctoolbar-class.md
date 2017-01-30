@@ -428,7 +428,7 @@ BOOL LoadToolBar(UINT nIDResource);```
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- See [toolbar editor](../../mfc/toolbar-editor.md) in for more information about creating a toolbar resource.  
+ See [toolbar editor](../../windows/toolbar-editor.md) in for more information about creating a toolbar resource.  
   
 ### Example  
   See the example for [CToolBar::CreateEx](#createex).  

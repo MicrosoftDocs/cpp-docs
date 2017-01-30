@@ -103,7 +103,7 @@ A toolbar is a [control bar](../mfc/control-bars.md) that contains the bitmap im
  Also see the MFC General sample [DOCKTOOL](../visual-cpp-samples.md).  
   
 ##  <a name="_core_the_toolbar_bitmap"></a> The Toolbar Bitmap  
- Once constructed, a `CToolBar` object creates the toolbar image by loading a single bitmap that contains one image for each button. The Application Wizard creates a standard toolbar bitmap that you can customize with the Visual C++ [toolbar editor](../mfc/toolbar-editor.md).  
+ Once constructed, a `CToolBar` object creates the toolbar image by loading a single bitmap that contains one image for each button. The Application Wizard creates a standard toolbar bitmap that you can customize with the Visual C++ [toolbar editor](../windows/toolbar-editor.md).  
   
 ### What do you want to know more about  
   
@@ -121,5 +121,5 @@ A toolbar is a [control bar](../mfc/control-bars.md) that contains the bitmap im
   
 ## See Also  
  [Toolbars](../mfc/toolbars.md)   
- [Toolbar Editor](../mfc/toolbar-editor.md)
+ [Toolbar Editor](../windows/toolbar-editor.md)
 

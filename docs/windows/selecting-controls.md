@@ -38,15 +38,15 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Selecting Controls
-Select controls to size, align, move, copy, or delete them, and then perform the operation you want. In most cases, you need to select more than one control to use the sizing and alignment tools on the [Dialog Editor toolbar](../mfc/showing-or-hiding-the-dialog-editor-toolbar.md).  
+Select controls to size, align, move, copy, or delete them, and then perform the operation you want. In most cases, you need to select more than one control to use the sizing and alignment tools on the [Dialog Editor toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).  
   
  When a control is selected, it has a shaded border around it with solid (active) or hollow (inactive) "sizing handles," small squares that appear in the selection border. When multiple controls are selected, the dominant control has solid sizing handles; all the other selected controls have hollow sizing handles.  
   
  When you are sizing or aligning multiple controls, the Dialog editor uses the "dominant control" to determine how the other controls are sized or aligned. By default, the dominant control is the first control selected.  
   
--   [Selecting Multiple Controls](../mfc/selecting-multiple-controls.md)  
+-   [Selecting Multiple Controls](../windows/selecting-multiple-controls.md)  
   
--   [Specifying the Dominant Control](../mfc/specifying-the-dominant-control.md)  
+-   [Specifying the Dominant Control](../windows/specifying-the-dominant-control.md)  
   
  For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
@@ -54,6 +54,6 @@ Select controls to size, align, move, copy, or delete them, and then perform the
  Win32  
   
 ## See Also  
- [Controls in Dialog Boxes](../mfc/controls-in-dialog-boxes.md)   
+ [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)   
  [Controls](../mfc/controls-mfc.md)
 

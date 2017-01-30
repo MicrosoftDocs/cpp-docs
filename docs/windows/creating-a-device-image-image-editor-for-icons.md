@@ -43,7 +43,7 @@ translation.priority.ht:
 # Creating a Device Image (Image Editor for Icons)
 When you create a new icon or cursor resource, the Image editor first creates an image in a specific style (32 × 32, 16 colors for icons and 32 × 32, Monochrome for cursors). You can then add images in different sizes and styles to the initial icon or cursor and edit each additional image, as needed, for the different display devices. You can also edit an image by performing a cut-and-paste operation from an existing image type or from a bitmap created in a graphics program.  
   
- When you open the icon or cursor resource in the [Image editor](../mfc/image-editor-for-icons.md), the image most closely matching the current display device is opened by default.  
+ When you open the icon or cursor resource in the [Image editor](../windows/image-editor-for-icons.md), the image most closely matching the current display device is opened by default.  
   
 ### To create a new icon or cursor  
   
@@ -63,6 +63,6 @@ When you create a new icon or cursor resource, the Image editor first creates an
  None  
   
 ## See Also  
- [Icons and Cursors: Image Resources for Display Devices](../mfc/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)   
- [Accelerator Keys](../mfc/accelerator-keys-image-editor-for-icons.md)   
- [Icons and Cursors: Image Resources for Display Devices](../mfc/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)
+ [Icons and Cursors: Image Resources for Display Devices](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)   
+ [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)   
+ [Icons and Cursors: Image Resources for Display Devices](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)

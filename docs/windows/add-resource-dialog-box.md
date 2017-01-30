@@ -50,7 +50,7 @@ Use this dialog box to add resources to a C++ Windows desktop application projec
  The resources shown at the top level in the tree control are the default resources that are provided by Visual Studio.  
   
  **New**  
- Creates a resource based on the type you have selected in the **Resource Type** box. The resource opens in the appropriate editor. For example, if you create a dialog resource, it opens in the [dialog editor](../mfc/dialog-editor.md).  
+ Creates a resource based on the type you have selected in the **Resource Type** box. The resource opens in the appropriate editor. For example, if you create a dialog resource, it opens in the [dialog editor](../windows/dialog-editor.md).  
   
  **Import**  
  Opens the **Import** dialog box in which you can navigate to a resource you'd want to import into your current project. You can import a bitmap, icon, cursor, HTML resource file, sound (.WAV) resource file, or custom resource file.  

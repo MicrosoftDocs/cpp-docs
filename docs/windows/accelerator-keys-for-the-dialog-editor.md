@@ -66,5 +66,5 @@ Below are the default accelerator keys for the Dialog editor commands. To change
  Win32  
   
 ## See Also  
- [Dialog Editor](../mfc/dialog-editor.md)
+ [Dialog Editor](../windows/dialog-editor.md)
 

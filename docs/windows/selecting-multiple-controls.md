@@ -58,7 +58,7 @@ translation.priority.ht:
 1.  With a group of controls selected, hold down the SHIFT key and click the control you want to remove from or add to the existing selection.  
   
     > [!NOTE]
-    >  Holding down the CTRL key and clicking a control within a selection will make that control the dominant control in that selection. For more information, see [Specifying the Dominant Control](../mfc/specifying-the-dominant-control.md).  
+    >  Holding down the CTRL key and clicking a control within a selection will make that control the dominant control in that selection. For more information, see [Specifying the Dominant Control](../windows/specifying-the-dominant-control.md).  
   
  For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
@@ -66,6 +66,6 @@ translation.priority.ht:
  Win32  
   
 ## See Also  
- [Selecting Controls](../mfc/selecting-controls.md)   
- [Controls in Dialog Boxes](../mfc/controls-in-dialog-boxes.md)
+ [Selecting Controls](../windows/selecting-controls.md)   
+ [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)
 

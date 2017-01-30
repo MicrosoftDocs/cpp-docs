@@ -55,6 +55,6 @@ When you add a list box with a horizontal scroll bar to a dialog box using MFC c
  MFC  
   
 ## See Also  
- [Controls in Dialog Boxes](../mfc/controls-in-dialog-boxes.md)   
+ [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)   
  [Controls](../mfc/controls-mfc.md)
 

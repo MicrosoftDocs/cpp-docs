@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Insert ActiveX Control Dialog Box
-This dialog box enables you to [insert ActiveX controls into your dialog box](../mfc/viewing-and-adding-activex-controls-to-a-dialog-box.md) while using the [Dialog editor](../mfc/dialog-editor.md).  
+This dialog box enables you to [insert ActiveX controls into your dialog box](../windows/viewing-and-adding-activex-controls-to-a-dialog-box.md) while using the [Dialog editor](../windows/dialog-editor.md).  
   
  **ActiveX Control**  
  Displays a list of Active X controls. Inserting a control from this dialog box does not generate a wrapper class. If you need a wrapper class, use [Class View](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925) to create one (for more information, see [Adding a Class](../ide/adding-a-class-visual-cpp.md)). If an Active X control does not appear in this dialog box, try installing the control according to the vendor's instructions.  
@@ -52,7 +52,7 @@ This dialog box enables you to [insert ActiveX controls into your dialog box](..
  Win32  
   
 ## See Also  
- [Dialog Editor Tab, Toolbox](../mfc/dialog-editor-tab-toolbox.md)   
- [Resource Files](../mfc/resource-files-visual-studio.md)   
- [Controls in Dialog Boxes](../mfc/controls-in-dialog-boxes.md)
+ [Dialog Editor Tab, Toolbox](../windows/dialog-editor-tab-toolbox.md)   
+ [Resource Files](../windows/resource-files-visual-studio.md)   
+ [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)
 

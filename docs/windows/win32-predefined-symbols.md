@@ -59,4 +59,4 @@ These symbols are defined in the Win32 header files, and they support standard W
   
 ## See Also  
  [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)   
- [Symbols: Resource Identifiers](../mfc/symbols-resource-identifiers.md)
+ [Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)

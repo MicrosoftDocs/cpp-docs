@@ -76,6 +76,6 @@ Normally, keyboard users move the input focus from one control to another in a d
  Win32  
   
 ## See Also  
- [Controls in Dialog Boxes](../mfc/controls-in-dialog-boxes.md)   
+ [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)   
  [Controls](../mfc/controls-mfc.md)
 

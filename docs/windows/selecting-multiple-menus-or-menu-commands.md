@@ -49,4 +49,4 @@ You can select multiple menu names or menu commands to perform bulk operations s
  Win32  
   
 ## See Also  
- [Menu Editor](../mfc/menu-editor.md)
+ [Menu Editor](../windows/menu-editor.md)

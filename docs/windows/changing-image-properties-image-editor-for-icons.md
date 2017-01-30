@@ -62,7 +62,7 @@ You can set or modify properties of an image using the [Properties window](/visu
  None  
   
 ## See Also  
- [Accelerator Keys](../mfc/accelerator-keys-image-editor-for-icons.md)   
- [Editing Graphical Resources](../mfc/editing-graphical-resources-image-editor-for-icons.md)   
- [Image Editor for Icons](../mfc/image-editor-for-icons.md)
+ [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)   
+ [Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)   
+ [Image Editor for Icons](../windows/image-editor-for-icons.md)
 

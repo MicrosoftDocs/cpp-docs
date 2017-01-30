@@ -47,7 +47,7 @@ Whether you are moving controls, adding controls, or rearranging a current layou
   
 ### To create a guide  
   
-1.  Within the ruler, click once to create a guide. (One click creates a new guide; double-clicking launches the [Guide Settings Dialog Box](../mfc/guide-settings-dialog-box.md) in which you can specify guide settings.)  
+1.  Within the ruler, click once to create a guide. (One click creates a new guide; double-clicking launches the [Guide Settings Dialog Box](../windows/guide-settings-dialog-box.md) in which you can specify guide settings.)  
   
 ### To set a guide  
   
@@ -75,6 +75,6 @@ Whether you are moving controls, adding controls, or rearranging a current layou
  Win32  
   
 ## See Also  
- [Dialog Editor States (Guides and Grids)](../mfc/dialog-editor-states-guides-and-grids.md)   
- [Controls in Dialog Boxes](../mfc/controls-in-dialog-boxes.md)
+ [Dialog Editor States (Guides and Grids)](../windows/dialog-editor-states-guides-and-grids.md)   
+ [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)
 

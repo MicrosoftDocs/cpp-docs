@@ -72,19 +72,19 @@ Icons and cursors are graphical resources that can contain multiple images in di
 |256|64|64|  
 |256|96|96|  
   
--   [Creating a New Device Image (Icon or Cursor)](../mfc/creating-a-device-image-image-editor-for-icons.md)  
+-   [Creating a New Device Image (Icon or Cursor)](../windows/creating-a-device-image-image-editor-for-icons.md)  
   
--   [Adding an Image for a Different Display Device](../mfc/adding-an-image-for-a-different-display-device-image-editor-for-icons.md)  
+-   [Adding an Image for a Different Display Device](../windows/adding-an-image-for-a-different-display-device-image-editor-for-icons.md)  
   
--   [Copying a Device Image](../mfc/copying-a-device-image-image-editor-for-icons.md)  
+-   [Copying a Device Image](../windows/copying-a-device-image-image-editor-for-icons.md)  
   
--   [Deleting a Device Image](../mfc/deleting-a-device-image-image-editor-for-icons.md)  
+-   [Deleting a Device Image](../windows/deleting-a-device-image-image-editor-for-icons.md)  
   
--   [Creating Transparent or Inverse Regions in Device Images](../mfc/creating-transparent-or-inverse-regions-in-device-images.md)  
+-   [Creating Transparent or Inverse Regions in Device Images](../windows/creating-transparent-or-inverse-regions-in-device-images.md)  
   
 -   [Creating a 256-Color Icon or Cursor](../mfc/creating-a-256-color-icon-or-cursor-image-editor-for-icons.md)  
   
--   [Setting a Cursor's Hot Spot](../mfc/setting-a-cursor-s-hot-spot-image-editor-for-icons.md)  
+-   [Setting a Cursor's Hot Spot](../windows/setting-a-cursor-s-hot-spot-image-editor-for-icons.md)  
   
  For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
@@ -92,7 +92,7 @@ Icons and cursors are graphical resources that can contain multiple images in di
  None  
   
 ## See Also  
- [Image Editor for Icons](../mfc/image-editor-for-icons.md)   
+ [Image Editor for Icons](../windows/image-editor-for-icons.md)   
  [Icons](http://msdn.microsoft.com/library/windows/desktop/ms646973)   
  [Cursors](http://msdn.microsoft.com/library/windows/desktop/ms646970)
 

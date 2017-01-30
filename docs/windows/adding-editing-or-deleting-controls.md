@@ -42,17 +42,17 @@ Using the Dialog editor, you can add, resize, edit, and delete controls in dialo
   
 -   [Add a control to a dialog box](../mfc/adding-a-control-to-a-dialog-box.md)  
   
--   [Size a control while you add it](../mfc/sizing-a-control-while-you-add-it.md)  
+-   [Size a control while you add it](../windows/sizing-a-control-while-you-add-it.md)  
   
--   [Add multiple controls](../mfc/adding-multiple-controls.md)  
+-   [Add multiple controls](../windows/adding-multiple-controls.md)  
   
--   [Add an ActiveX control to a dialog box](../mfc/viewing-and-adding-activex-controls-to-a-dialog-box.md)  
+-   [Add an ActiveX control to a dialog box](../windows/viewing-and-adding-activex-controls-to-a-dialog-box.md)  
   
--   [Edit the properties of a control or controls](../mfc/editing-control-properties.md)  
+-   [Edit the properties of a control or controls](../windows/editing-control-properties.md)  
   
--   [Delete a control](../mfc/deleting-a-control.md)  
+-   [Delete a control](../windows/deleting-a-control.md)  
   
--   [Show or hide the Toolbox window](../mfc/showing-or-hiding-the-dialog-editor-toolbar.md)  
+-   [Show or hide the Toolbox window](../windows/showing-or-hiding-the-dialog-editor-toolbar.md)  
   
  For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
@@ -60,7 +60,7 @@ Using the Dialog editor, you can add, resize, edit, and delete controls in dialo
  Win32  
   
 ## See Also  
- [Controls in Dialog Boxes](../mfc/controls-in-dialog-boxes.md)   
- [Adding Event Handlers for Dialog Box Controls](../mfc/adding-event-handlers-for-dialog-box-controls.md)   
+ [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)   
+ [Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md)   
  [Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)
 

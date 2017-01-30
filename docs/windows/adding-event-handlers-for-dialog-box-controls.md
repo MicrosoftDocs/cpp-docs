@@ -82,8 +82,8 @@ For project dialog boxes that are already associated with a class, you can take 
  Win32  
   
 ## See Also  
- [Default Control Events](../mfc/default-control-events.md)   
- [Defining Member Variables for Dialog Controls](../mfc/defining-member-variables-for-dialog-controls.md)   
+ [Default Control Events](../windows/default-control-events.md)   
+ [Defining Member Variables for Dialog Controls](../windows/defining-member-variables-for-dialog-controls.md)   
  [Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)   
  [Adding a Class](../ide/adding-a-class-visual-cpp.md)   
  [Adding a Member Function](../ide/adding-a-member-function-visual-cpp.md)   

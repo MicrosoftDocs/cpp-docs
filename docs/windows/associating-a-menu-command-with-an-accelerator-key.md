@@ -66,4 +66,4 @@ There are often times you want a menu command and a keyboard combination to issu
   
 ## See Also  
  [Adding Commands to a Menu](../windows/adding-commands-to-a-menu.md)   
- [Menu Editor](../mfc/menu-editor.md)
+ [Menu Editor](../windows/menu-editor.md)

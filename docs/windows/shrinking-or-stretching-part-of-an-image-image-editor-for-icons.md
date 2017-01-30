@@ -39,7 +39,7 @@ translation.priority.ht:
 # Shrinking or Stretching Part of an Image (Image Editor for Icons)
 ### To shrink or stretch part of an image  
   
-1.  Select the part of the image you want to resize. For more information, see [Selecting an Area of the Image](../mfc/selecting-an-area-of-an-image-image-editor-for-icons.md).  
+1.  Select the part of the image you want to resize. For more information, see [Selecting an Area of the Image](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md).  
   
 2.  Drag one of the sizing handles until the selection is the desired size.  
   
@@ -50,6 +50,6 @@ translation.priority.ht:
  None  
   
 ## See Also  
- [Accelerator Keys](../mfc/accelerator-keys-image-editor-for-icons.md)   
- [Resizing an Image](../mfc/resizing-an-image-image-editor-for-icons.md)
+ [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)   
+ [Resizing an Image](../windows/resizing-an-image-image-editor-for-icons.md)
 

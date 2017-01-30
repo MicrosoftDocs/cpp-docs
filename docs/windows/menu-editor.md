@@ -81,8 +81,8 @@ Menus allow you to arrange commands in a logical and easy-to-find fashion. With 
  Win32  
   
 ## See Also  
- [Working with Resource Files](../mfc/working-with-resource-files.md)   
- [Resource Editors](../mfc/resource-editors.md)   
+ [Working with Resource Files](../windows/working-with-resource-files.md)   
+ [Resource Editors](../windows/resource-editors.md)   
  [User-Interface Objects and Command IDs](../mfc/user-interface-objects-and-command-ids.md)   
  [Menus](../mfc/menus-mfc.md)   
  [Menus](http://msdn.microsoft.com/library/windows/desktop/ms646977.aspx)

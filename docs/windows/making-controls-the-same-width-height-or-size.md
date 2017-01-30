@@ -34,13 +34,13 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Making Controls the Same Width, Height, or Size
-You can resize a group of controls based on the size of the dominant control. You can also [resize a control based on the dimensions of its caption text](../mfc/sizing-individual-controls.md).  
+You can resize a group of controls based on the size of the dominant control. You can also [resize a control based on the dimensions of its caption text](../windows/sizing-individual-controls.md).  
   
 ### To make controls the same width, height, or size  
   
-1.  [Select the controls](../mfc/selecting-multiple-controls.md) you want to resize.  
+1.  [Select the controls](../windows/selecting-multiple-controls.md) you want to resize.  
   
-     The control selected first in the series is the dominant control. The final size of the controls in the group depends on the size of the dominant control. For more information on selecting the dominant control, see [Specifying a Dominant Control](../mfc/specifying-the-dominant-control.md).  
+     The control selected first in the series is the dominant control. The final size of the controls in the group depends on the size of the dominant control. For more information on selecting the dominant control, see [Specifying a Dominant Control](../windows/specifying-the-dominant-control.md).  
   
 2.  From the **Format** menu, choose **Make Same Size**, then choose one of the following commands:  
   
@@ -57,6 +57,6 @@ You can resize a group of controls based on the size of the dominant control. Yo
  Win32  
   
 ## See Also  
- [Controls in Dialog Boxes](../mfc/controls-in-dialog-boxes.md)   
+ [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)   
  [Controls](../mfc/controls-mfc.md)
 

@@ -74,5 +74,5 @@ Normally it is easy and convenient to work with the default arrangement of all r
  Win32  
   
 ## See Also  
- [Resource Files](../mfc/resource-files-visual-studio.md)   
- [Resource Editors](../mfc/resource-editors.md)
+ [Resource Files](../windows/resource-files-visual-studio.md)   
+ [Resource Editors](../windows/resource-editors.md)

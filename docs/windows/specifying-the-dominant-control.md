@@ -57,7 +57,7 @@ The control selected first is the dominant control.
  Win32  
   
 ## See Also  
- [Selecting Multiple Controls](../mfc/selecting-multiple-controls.md)   
- [Selecting Controls](../mfc/selecting-controls.md)   
- [Controls in Dialog Boxes](../mfc/controls-in-dialog-boxes.md)
+ [Selecting Multiple Controls](../windows/selecting-multiple-controls.md)   
+ [Selecting Controls](../windows/selecting-controls.md)   
+ [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)
 

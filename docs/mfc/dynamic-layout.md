@@ -165,5 +165,5 @@ With MFC in [!INCLUDE[vs_dev14](../ide/includes/vs_dev14_md.md)], you can create
  [CMFCDynamicLayout Class](../mfc/reference/cmfcdynamiclayout-class.md)   
  [Control Classes](../mfc/control-classes.md)   
  [Dialog Box Classes](../mfc/dialog-box-classes.md)   
- [Dialog Editor](../mfc/dialog-editor.md)
+ [Dialog Editor](../windows/dialog-editor.md)
 

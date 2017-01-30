@@ -62,7 +62,7 @@ The sizing handles of controls snap to guides when the controls are moved, and g
   
 1.  From the **Format** menu, choose **Guide Settings**.  
   
-2.  In the [Guide Settings Dialog Box](../mfc/guide-settings-dialog-box.md), in the **Grid Spacing** field, specify a new width and height in DLUs.  
+2.  In the [Guide Settings Dialog Box](../windows/guide-settings-dialog-box.md), in the **Grid Spacing** field, specify a new width and height in DLUs.  
   
  For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
@@ -71,6 +71,6 @@ The sizing handles of controls snap to guides when the controls are moved, and g
  Win32  
   
 ## See Also  
- [Dialog Editor States (Guides and Grids)](../mfc/dialog-editor-states-guides-and-grids.md)   
- [Controls in Dialog Boxes](../mfc/controls-in-dialog-boxes.md)
+ [Dialog Editor States (Guides and Grids)](../windows/dialog-editor-states-guides-and-grids.md)   
+ [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)
 

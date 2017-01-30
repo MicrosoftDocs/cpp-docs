@@ -39,7 +39,7 @@ translation.priority.ht:
 # Symbol Name Restrictions
 The restrictions on symbol names are as follows:  
   
--   All [symbols](../mfc/symbols-resource-identifiers.md) must be unique within the scope of the application. This prevents conflicting symbol definitions in the header files.  
+-   All [symbols](../windows/symbols-resource-identifiers.md) must be unique within the scope of the application. This prevents conflicting symbol definitions in the header files.  
   
 -   Valid characters for a symbol name include A-Z, a-z, 0-9, and underscores ( _ ).  
   

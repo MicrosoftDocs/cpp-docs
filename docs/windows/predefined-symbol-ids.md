@@ -55,4 +55,4 @@ When you begin a new project, depending on the project type, some symbol IDs are
  Win32, MFC, or ATL  
   
 ## See Also  
- [Symbols: Resource Identifiers](../mfc/symbols-resource-identifiers.md)
+ [Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)

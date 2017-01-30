@@ -52,6 +52,6 @@ You can open and edit images in the development environment just as you would in
  None  
   
 ## See Also  
- [Editing Graphical Resources](../mfc/editing-graphical-resources-image-editor-for-icons.md)   
- [Image Editor for Icons](../mfc/image-editor-for-icons.md)
+ [Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)   
+ [Image Editor for Icons](../windows/image-editor-for-icons.md)
 

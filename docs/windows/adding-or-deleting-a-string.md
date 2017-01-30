@@ -81,5 +81,5 @@ You can quickly insert new entries into the string table using the String editor
  Win32  
   
 ## See Also  
- [String Editor](../mfc/string-editor.md)   
+ [String Editor](../windows/string-editor.md)   
 

@@ -58,7 +58,7 @@ Using the Image editor, icons and cursors can be sized large (64 × 64) with a 2
  None  
   
 ## See Also  
- [Using the 256-Color Palette](../mfc/using-the-256-color-palette-image-editor-for-icons.md)   
- [Accelerator Keys](../mfc/accelerator-keys-image-editor-for-icons.md)   
- [Icons and Cursors: Image Resources for Display Devices](../mfc/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)
+ [Using the 256-Color Palette](../windows/using-the-256-color-palette-image-editor-for-icons.md)   
+ [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)   
+ [Icons and Cursors: Image Resources for Display Devices](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)
 

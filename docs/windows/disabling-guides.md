@@ -50,7 +50,7 @@ You can use special keys in conjunction with the mouse to disable the snapping e
   
 1.  From the **Format** menu, choose **Guide Settings**.  
   
-2.  In the [Guide Settings Dialog Box](../mfc/guide-settings-dialog-box.md), under **Layout Guides**, select **None**.  
+2.  In the [Guide Settings Dialog Box](../windows/guide-settings-dialog-box.md), under **Layout Guides**, select **None**.  
   
     > [!NOTE]
     >  You can also double-click the ruler bar to access the **Guide Settings** dialog box.  
@@ -66,6 +66,6 @@ You can use special keys in conjunction with the mouse to disable the snapping e
  Win32  
   
 ## See Also  
- [Dialog Editor States (Guides and Grids)](../mfc/dialog-editor-states-guides-and-grids.md)   
- [Controls in Dialog Boxes](../mfc/controls-in-dialog-boxes.md)
+ [Dialog Editor States (Guides and Grids)](../windows/dialog-editor-states-guides-and-grids.md)   
+ [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)
 

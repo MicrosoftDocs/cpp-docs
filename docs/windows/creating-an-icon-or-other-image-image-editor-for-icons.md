@@ -65,7 +65,7 @@ You can create a new image (bitmap, icon, cursor, or toolbar), then use the Imag
   
 4.  In the **Templates** pane, choose the resource type you'd like to add to your project.  
   
-     The resource is added to your project in Solution Explorer and the resource opens in the [Image editor](../mfc/image-editor-for-icons.md). You can now use all the tools available in the Image editor to modify your image. For more information on adding images to a managed project, see [Loading a Picture at Design Time](http://msdn.microsoft.com/Library/4dc7b973-afb1-4276-8322-20825af96655).  
+     The resource is added to your project in Solution Explorer and the resource opens in the [Image editor](../windows/image-editor-for-icons.md). You can now use all the tools available in the Image editor to modify your image. For more information on adding images to a managed project, see [Loading a Picture at Design Time](http://msdn.microsoft.com/Library/4dc7b973-afb1-4276-8322-20825af96655).  
   
     > [!NOTE]
     >  Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources. For more information, see [Creating Resource Files](http://msdn.microsoft.com/Library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d) in the *.NET Framework Developer's Guide*.  
@@ -77,9 +77,9 @@ You can create a new image (bitmap, icon, cursor, or toolbar), then use the Imag
  None  
   
 ## See Also  
- [Icons and Cursors: Image Resources for Display Devices](../mfc/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)   
- [Converting Bitmaps to Toolbars](../mfc/converting-bitmaps-to-toolbars.md)   
- [Creating New Toolbars](../mfc/creating-new-toolbars.md)   
- [Editing Graphical Resources](../mfc/editing-graphical-resources-image-editor-for-icons.md)   
- [Image Editor for Icons](../mfc/image-editor-for-icons.md)
+ [Icons and Cursors: Image Resources for Display Devices](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)   
+ [Converting Bitmaps to Toolbars](../windows/converting-bitmaps-to-toolbars.md)   
+ [Creating New Toolbars](../windows/creating-new-toolbars.md)   
+ [Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)   
+ [Image Editor for Icons](../windows/image-editor-for-icons.md)
 

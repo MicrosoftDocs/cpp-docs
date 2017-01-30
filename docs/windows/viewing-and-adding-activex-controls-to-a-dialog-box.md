@@ -49,11 +49,11 @@ Visual Studio enables you to insert ActiveX controls into your dialog box.
   
 3.  On the shortcut menu, click **Insert ActiveX Control**.  
   
-     The [Insert ActiveX Control dialog box](../mfc/insert-activex-control-dialog-box.md) appears, showing all the ActiveX controls on your system. At the bottom of the dialog box, the path to the ActiveX Control file appears.  
+     The [Insert ActiveX Control dialog box](../windows/insert-activex-control-dialog-box.md) appears, showing all the ActiveX controls on your system. At the bottom of the dialog box, the path to the ActiveX Control file appears.  
   
 ### To add an ActiveX control to a dialog box  
   
-1.  In the [Insert ActiveX Control dialog box](../mfc/insert-activex-control-dialog-box.md), select the control you want to add to your dialog box and click **OK**.  
+1.  In the [Insert ActiveX Control dialog box](../windows/insert-activex-control-dialog-box.md), select the control you want to add to your dialog box and click **OK**.  
   
      The control appears in the dialog box, where you can edit it or create handlers for it just as you would any other control.  
   
@@ -72,7 +72,7 @@ Visual Studio enables you to insert ActiveX controls into your dialog box.
  Win32  
   
 ## See Also  
- [Controls in Dialog Boxes](../mfc/controls-in-dialog-boxes.md)   
+ [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)   
  [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)   
  [ActiveX Control Containers](../mfc/activex-control-containers.md)
 

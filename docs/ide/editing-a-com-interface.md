@@ -54,6 +54,6 @@ By using commands from the Class View shortcut menu, you can define new methods 
  Additionally, you can implement new interfaces on your COM control by right-clicking the object's control class in Class View and clicking [Implement Interface](../ide/implement-interface-wizard.md).  
   
 ## See Also  
- [Working with Resource Files](../mfc/working-with-resource-files.md)   
+ [Working with Resource Files](../windows/working-with-resource-files.md)   
  [Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards-cpp.md)   
  [Visual C++ Project Types](../ide/visual-cpp-project-types.md)

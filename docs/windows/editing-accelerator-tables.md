@@ -58,5 +58,5 @@ In Visual C++, you can edit an accelerator table directly with in-place editing 
  Win32  
   
 ## See Also  
- [Accelerator Editor](../mfc/accelerator-editor.md)   
- [Resource Editors](../mfc/resource-editors.md)
+ [Accelerator Editor](../windows/accelerator-editor.md)   
+ [Resource Editors](../windows/resource-editors.md)

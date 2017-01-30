@@ -46,17 +46,17 @@ The Image editor has an extensive set of tools for creating and editing images, 
   
  With the Image editor, you can:  
   
--   [Edit Graphical Resources](../mfc/editing-graphical-resources-image-editor-for-icons.md)  
+-   [Edit Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)  
   
--   [Work with Color](../mfc/working-with-color-image-editor-for-icons.md)  
+-   [Work with Color](../windows/working-with-color-image-editor-for-icons.md)  
   
--   [Work with Icons and Cursors: Image Resources for Display Devices](../mfc/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)  
+-   [Work with Icons and Cursors: Image Resources for Display Devices](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)  
   
--   [Use Accelerator Keys for Image Editor Commands](../mfc/accelerator-keys-image-editor-for-icons.md)  
+-   [Use Accelerator Keys for Image Editor Commands](../windows/accelerator-keys-image-editor-for-icons.md)  
   
  The Image Editor window shows two views of an image, with a split bar separating the two panes. You can drag the split bar from side to side to change the relative sizes of the panes. The active pane displays a selection border.  
   
- The Image Editor window can be adjusted to fit your needs and preferences. You can [change the magnification factor](../mfc/changing-the-magnification-factor-image-editor-for-icons.md) and [display or hide the pixel grid](../mfc/displaying-or-hiding-the-pixel-grid-image-editor-for-icons.md).  
+ The Image Editor window can be adjusted to fit your needs and preferences. You can [change the magnification factor](../windows/changing-the-magnification-factor-image-editor-for-icons.md) and [display or hide the pixel grid](../windows/displaying-or-hiding-the-pixel-grid-image-editor-for-icons.md).  
   
 > [!NOTE]
 >  Using the Image Editor, you can view 32-bit images, but you cannot edit them.  
@@ -73,6 +73,6 @@ The Image editor has an extensive set of tools for creating and editing images, 
  None  
   
 ## See Also  
- [Resource Editors](../mfc/resource-editors.md)   
+ [Resource Editors](../windows/resource-editors.md)   
  [Icons](http://msdn.microsoft.com/library/windows/desktop/ms646973.aspx)
 

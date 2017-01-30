@@ -44,15 +44,15 @@ You can easily create, move, copy, and edit toolbar buttons.
   
 -   [Move a toolbar button](../mfc/moving-a-toolbar-button.md)  
   
--   [Copy buttons from a toolbar resource](../mfc/copying-buttons-from-a-toolbar.md)  
+-   [Copy buttons from a toolbar resource](../windows/copying-buttons-from-a-toolbar.md)  
   
 -   [Delete a toolbar button](../mfc/deleting-a-toolbar-button.md)  
   
--   [Insert a space between buttons on a toolbar resource](../mfc/inserting-a-space-between-buttons-on-a-toolbar.md)  
+-   [Insert a space between buttons on a toolbar resource](../windows/inserting-a-space-between-buttons-on-a-toolbar.md)  
   
--   [Close up a space between buttons on a toolbar](../mfc/removing-space-between-buttons-on-a-toolbar.md)  
+-   [Close up a space between buttons on a toolbar](../windows/removing-space-between-buttons-on-a-toolbar.md)  
   
--   [Edit the property page of a toolbar](../mfc/changing-the-properties-of-a-toolbar-button.md)  
+-   [Edit the property page of a toolbar](../windows/changing-the-properties-of-a-toolbar-button.md)  
   
  For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
@@ -60,5 +60,5 @@ You can easily create, move, copy, and edit toolbar buttons.
  MFC or ATL  
   
 ## See Also  
- [Toolbar Editor](../mfc/toolbar-editor.md)
+ [Toolbar Editor](../windows/toolbar-editor.md)
 

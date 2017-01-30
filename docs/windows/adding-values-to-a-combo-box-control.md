@@ -69,7 +69,7 @@ You can add values to a combo box control as long as you have the Dialog editor 
   
 #### To test the appearance of values in a combo box  
   
-1.  After entering values in the **Data** property, click the **Test** button on the [Dialog Editor Toolbar](../mfc/showing-or-hiding-the-dialog-editor-toolbar.md).  
+1.  After entering values in the **Data** property, click the **Test** button on the [Dialog Editor Toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).  
   
      Try scrolling down the entire value list. Values appear exactly as they are typed in the **Data** property in the Properties window. There is no spelling or capitalization checking.  
   
@@ -81,6 +81,6 @@ You can add values to a combo box control as long as you have the Dialog editor 
  Win32  
   
 ## See Also  
- [Controls in Dialog Boxes](../mfc/controls-in-dialog-boxes.md)   
+ [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)   
  [Controls](../mfc/controls-mfc.md)
 

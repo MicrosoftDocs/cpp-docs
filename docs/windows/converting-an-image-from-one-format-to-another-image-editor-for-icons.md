@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Converting an Image From One Format to Another (Image Editor for Icons)
-You can open GIF or JPEG images in the Image editor and save them as bitmaps. Also, you can open a bitmap file and save it as a GIF or JPEG. Images you work with need not be part of a project for editing in the development environment (see [stand-alone image editing](../mfc/editing-an-image-outside-of-a-project-image-editor-for-icons.md)).  
+You can open GIF or JPEG images in the Image editor and save them as bitmaps. Also, you can open a bitmap file and save it as a GIF or JPEG. Images you work with need not be part of a project for editing in the development environment (see [stand-alone image editing](../windows/editing-an-image-outside-of-a-project-image-editor-for-icons.md)).  
   
 ### To convert an image from one format to another  
   
@@ -56,6 +56,6 @@ You can open GIF or JPEG images in the Image editor and save them as bitmaps. Al
  None  
   
 ## See Also  
- [Editing Graphical Resources](../mfc/editing-graphical-resources-image-editor-for-icons.md)   
- [Image Editor for Icons](../mfc/image-editor-for-icons.md)
+ [Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)   
+ [Image Editor for Icons](../windows/image-editor-for-icons.md)
 

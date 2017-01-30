@@ -39,11 +39,11 @@ translation.priority.ht:
   
 ### To create menu resources with the menu editor  
   
-1.  Referring to the information about using the [menu editor](../mfc/menu-editor.md), create your own menu with the same four commands.  
+1.  Referring to the information about using the [menu editor](../windows/menu-editor.md), create your own menu with the same four commands.  
   
 #### To create toolbar buttons with the graphics editor  
   
-1.  Referring to the information about using the [toolbar editor](../mfc/toolbar-editor.md), edit the toolbar resource to add toolbar buttons for your record navigation commands.  
+1.  Referring to the information about using the [toolbar editor](../windows/toolbar-editor.md), edit the toolbar resource to add toolbar buttons for your record navigation commands.  
   
 ## See Also  
  [Supporting Navigation in a Record View](../data/supporting-navigation-in-a-record-view-mfc-data-access.md)   

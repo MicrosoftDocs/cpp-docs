@@ -91,7 +91,7 @@ This topic describes all the types of files that are associated with Visual C++ 
 |.mfcribbon-ms|Resource|A resource file that contains the XML code that defines the buttons, controls, and attributes in the ribbon. For more information, see [Ribbon Designer (MFC)](../mfc/ribbon-designer-mfc.md).|  
 |.obj, .o||Object files, compiled but not linked.|  
 |.pch|Debug|Precompiled header file.|  
-|.rc, .rc2|Resource|[Resource script files](../mfc/working-with-resource-files.md) to generate resources.|  
+|.rc, .rc2|Resource|[Resource script files](../windows/working-with-resource-files.md) to generate resources.|  
 |.sbr|Compiling|Source browser intermediate file. The input file for [BSCMAKE](../build/reference/bscmake-options.md).|  
 |.sln|Solution|The [solution](http://msdn.microsoft.com/en-us/a45c299d-69f5-4b67-879d-1383417df0a7) file.|  
 |.suo|Solution|The solution options file.|  

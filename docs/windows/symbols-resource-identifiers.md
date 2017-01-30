@@ -50,7 +50,7 @@ IDC_EDITNAME = 5100
   
  Symbols provide a descriptive way of referring to resources and user-interface objects, both in your source code and while you're working with them in the resource editors. You can view and manipulate symbols in one convenient place using the [Resource Symbols dialog box](../windows/viewing-resource-symbols.md).  
   
- When you create a new resource or resource object, the [resource editors](../mfc/resource-editors.md) provide a default name for the resource, for example, `IDC_RADIO1`, and assign a value to it. The name-plus-value definition is stored in the Resource.h file.  
+ When you create a new resource or resource object, the [resource editors](../windows/resource-editors.md) provide a default name for the resource, for example, `IDC_RADIO1`, and assign a value to it. The name-plus-value definition is stored in the Resource.h file.  
   
 > [!NOTE]
 >  When you are copying resources or resource objects from one .rc file to another, Visual C++ may change the transferred resource's symbol value, or symbol name and value, to avoid conflicts with symbol names or values in the existing file.  
@@ -84,6 +84,6 @@ IDC_EDITNAME = 5100
   
 ## See Also  
  [How to: Search for Symbols in Resources](../windows/how-to-search-for-symbols-in-resources.md)   
- [Resource Editors](../mfc/resource-editors.md)   
- [Resource Files](../mfc/resource-files-visual-studio.md)
+ [Resource Editors](../windows/resource-editors.md)   
+ [Resource Files](../windows/resource-files-visual-studio.md)
 

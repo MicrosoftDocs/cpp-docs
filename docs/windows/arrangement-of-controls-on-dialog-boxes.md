@@ -35,25 +35,25 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Arrangement of Controls on Dialog Boxes
-The Dialog editor provides layout tools that align and size controls automatically. For most tasks, you can use the [Dialog Editor Toolbar](../mfc/showing-or-hiding-the-dialog-editor-toolbar.md). All Dialog Editor toolbar commands are also available on the Format menu, and most have [shortcut keys](../mfc/accelerator-keys-for-the-dialog-editor.md).  
+The Dialog editor provides layout tools that align and size controls automatically. For most tasks, you can use the [Dialog Editor Toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md). All Dialog Editor toolbar commands are also available on the Format menu, and most have [shortcut keys](../windows/accelerator-keys-for-the-dialog-editor.md).  
   
- Many layout commands for dialog boxes are available only when more than one control is selected. You can select a single control or multiple controls, and when more than one control is selected, the first one you select is by default the "dominant" control. For information on selecting controls and the dominant control, see [Selecting Controls](../mfc/selecting-controls.md).  
+ Many layout commands for dialog boxes are available only when more than one control is selected. You can select a single control or multiple controls, and when more than one control is selected, the first one you select is by default the "dominant" control. For information on selecting controls and the dominant control, see [Selecting Controls](../windows/selecting-controls.md).  
   
  The location, height, and width of the current control are displayed in the lower-right corner of the status bar. When the entire dialog box is selected, the status bar displays the position of the dialog box as a whole, and its height and width.  
   
--   [Dialog Editor States (Guides and Grids)](../mfc/dialog-editor-states-guides-and-grids.md)  
+-   [Dialog Editor States (Guides and Grids)](../windows/dialog-editor-states-guides-and-grids.md)  
   
--   [Grouping Radio Buttons on a Dialog Box](../mfc/grouping-radio-buttons-on-a-dialog-box.md)  
+-   [Grouping Radio Buttons on a Dialog Box](../windows/grouping-radio-buttons-on-a-dialog-box.md)  
   
--   [Aligning Groups of Controls](../mfc/aligning-groups-of-controls.md)  
+-   [Aligning Groups of Controls](../windows/aligning-groups-of-controls.md)  
   
--   [Evening the Spacing Between Controls](../mfc/evening-the-spacing-between-controls.md)  
+-   [Evening the Spacing Between Controls](../windows/evening-the-spacing-between-controls.md)  
   
--   [Centering Controls in a Dialog Box](../mfc/centering-controls-in-a-dialog-box.md)  
+-   [Centering Controls in a Dialog Box](../windows/centering-controls-in-a-dialog-box.md)  
   
--   [Arranging Push Buttons Along the Right or Bottom of a Dialog Box](../mfc/arranging-push-buttons-along-the-right-or-bottom-of-a-dialog-box.md)  
+-   [Arranging Push Buttons Along the Right or Bottom of a Dialog Box](../windows/arranging-push-buttons-along-the-right-or-bottom-of-a-dialog-box.md)  
   
--   [Changing the Tab Order of Controls](../mfc/changing-the-tab-order-of-controls.md)  
+-   [Changing the Tab Order of Controls](../windows/changing-the-tab-order-of-controls.md)  
   
  For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
@@ -61,6 +61,6 @@ The Dialog editor provides layout tools that align and size controls automatical
  Win32  
   
 ## See Also  
- [Controls in Dialog Boxes](../mfc/controls-in-dialog-boxes.md)   
+ [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)   
  [Controls](../mfc/controls-mfc.md)
 

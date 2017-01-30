@@ -71,7 +71,7 @@ The following control names have the accompanying default events:
  Win32  
   
 ## See Also  
- [Defining Member Variables for Dialog Controls](../mfc/defining-member-variables-for-dialog-controls.md)   
+ [Defining Member Variables for Dialog Controls](../windows/defining-member-variables-for-dialog-controls.md)   
  [Message Types Associated with User-Interface Objects](../mfc/reference/message-types-associated-with-user-interface-objects.md)   
  [Editing a Message Handler](../mfc/reference/editing-a-message-handler.md)   
  [Defining a Message Handler for a Reflected Message](../mfc/reference/defining-a-message-handler-for-a-reflected-message.md)   

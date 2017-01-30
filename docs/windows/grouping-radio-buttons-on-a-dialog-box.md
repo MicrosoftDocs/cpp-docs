@@ -49,7 +49,7 @@ When you add radio buttons to a dialog box, treat them as a group by setting a G
   
 1.  Select the radio button control in the [Toolbox Window](/visualstudio/ide/reference/toolbox) and click the location in the dialog box where you want to place the control.  
   
-2.  Repeat Step 1 to add as many radio buttons as you need. Make sure that the radio buttons in the group are consecutive in the tab order (for more information, see [Changing the Tab Order of Controls](../mfc/changing-the-tab-order-of-controls.md)).  
+2.  Repeat Step 1 to add as many radio buttons as you need. Make sure that the radio buttons in the group are consecutive in the tab order (for more information, see [Changing the Tab Order of Controls](../windows/changing-the-tab-order-of-controls.md)).  
   
 3.  In the [Properties Window](/visualstudio/ide/reference/properties-window), set the **Group** property of the *first* radio button in the tab order to **True**.  
   
@@ -79,7 +79,7 @@ When you add radio buttons to a dialog box, treat them as a group by setting a G
  Win32  
   
 ## See Also  
- [Arrangement of Controls on Dialog Boxes](../mfc/arrangement-of-controls-on-dialog-boxes.md)   
- [Controls in Dialog Boxes](../mfc/controls-in-dialog-boxes.md)   
+ [Arrangement of Controls on Dialog Boxes](../windows/arrangement-of-controls-on-dialog-boxes.md)   
+ [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)   
  [Controls](../mfc/controls-mfc.md)
 

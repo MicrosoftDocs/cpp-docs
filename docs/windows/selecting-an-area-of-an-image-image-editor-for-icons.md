@@ -42,9 +42,9 @@ translation.priority.ht:
 You can use selection tools to define an area of an image that you want to cut, copy, clear, resize, invert, or move. With the **Rectangle Selection** tool you can define and select a rectangular region of the image. With the **Irregular Selection** tool you can draw a freehand outline of the area you want to select for the cut, copy, or other operation.  
   
 > [!NOTE]
->  See the **Rectangle Selection** and **Irregular Selection** tools pictured in [Image Editor toolbar](../mfc/toolbar-image-editor-for-icons.md) or view the Tool tips associated with each button on the **Image Editor** toolbar.  
+>  See the **Rectangle Selection** and **Irregular Selection** tools pictured in [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md) or view the Tool tips associated with each button on the **Image Editor** toolbar.  
   
- You can also create a custom brush from a selection. For more information, see [Creating a Custom Brush](../mfc/creating-a-custom-brush-image-editor-for-icons.md).  
+ You can also create a custom brush from a selection. For more information, see [Creating a Custom Brush](../windows/creating-a-custom-brush-image-editor-for-icons.md).  
   
 ### To select an area of an image  
   
@@ -67,7 +67,7 @@ You can use selection tools to define an area of an image that you want to cut, 
  None  
   
 ## See Also  
- [Accelerator Keys](../mfc/accelerator-keys-image-editor-for-icons.md)   
- [Editing Graphical Resources](../mfc/editing-graphical-resources-image-editor-for-icons.md)   
- [Image Editor for Icons](../mfc/image-editor-for-icons.md)
+ [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)   
+ [Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)   
+ [Image Editor for Icons](../windows/image-editor-for-icons.md)
 

@@ -69,7 +69,7 @@ You can size a combo box when you add it to the dialog box. You can also specify
  Win32  
   
 ## See Also  
- [Adding Values to a Combo Box Control](../mfc/adding-values-to-a-combo-box-control.md)   
- [Controls in Dialog Boxes](../mfc/controls-in-dialog-boxes.md)   
+ [Adding Values to a Combo Box Control](../windows/adding-values-to-a-combo-box-control.md)   
+ [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)   
  [Controls](../mfc/controls-mfc.md)
 

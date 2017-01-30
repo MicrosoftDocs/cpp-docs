@@ -54,16 +54,16 @@ translation.priority.mt:
   
  With the Binary editor, you can:  
   
--   [Open a resource for binary editing](../mfc/opening-a-resource-for-binary-editing.md)  
+-   [Open a resource for binary editing](../windows/opening-a-resource-for-binary-editing.md)  
   
--   [Edit binary data](../mfc/editing-binary-data.md)  
+-   [Edit binary data](../windows/editing-binary-data.md)  
   
--   [Find binary data](../mfc/finding-binary-data.md)  
+-   [Find binary data](../windows/finding-binary-data.md)  
   
--   [Create a new custom or data resource](../mfc/creating-a-new-custom-or-data-resource.md)  
+-   [Create a new custom or data resource](../windows/creating-a-new-custom-or-data-resource.md)  
   
 ## Managed Resources  
- You can use the [Image editor](../mfc/image-editor-for-icons.md) and the Binary editor to work with resource files in managed projects. Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources.  
+ You can use the [Image editor](../windows/image-editor-for-icons.md) and the Binary editor to work with resource files in managed projects. Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources.  
   
  For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
@@ -71,5 +71,5 @@ translation.priority.mt:
  None  
   
 ## See Also  
- [Resource Editors](../mfc/resource-editors.md)
+ [Resource Editors](../windows/resource-editors.md)
 

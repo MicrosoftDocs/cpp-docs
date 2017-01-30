@@ -60,7 +60,7 @@ Below are the accelerator keys for the Image editor commands that are bound to k
 |Image.LineTool|CTRL + L|Draws a straight line with the selected shape, size, and color.|  
 |Image.MagnificationTool|CTRL + M|Activates the **Magnify** tool, which allows you to magnify specific sections of your image.|  
 |Image.Magnify|CTRL + SHIFT + M|Toggles between the current magnification and 1:1 magnification.|  
-|Image.NewImageType|INSERT|Launches the [New \<Device> Image Type dialog box](../mfc/new-device-image-type-dialog-box-image-editor-for-icons.md) with which you can create an image for a different image type.|  
+|Image.NewImageType|INSERT|Launches the [New \<Device> Image Type dialog box](../windows/new-device-image-type-dialog-box-image-editor-for-icons.md) with which you can create an image for a different image type.|  
 |Image.NextColor|CTRL + ]<br /><br /> - or -<br /><br /> CTRL + RIGHT ARROW|Changes the drawing foreground color to the next palette color.|  
 |Image.NextRightColor|CTRL + SHIFT + ]<br /><br /> - or -<br /><br /> SHIFT + CTRL + RIGHT ARROW|Changes the drawing background color to the next palette color.|  
 |Image.OutlinedEllipseTool|SHIFT + ALT + P|Draws a filled ellipse with an outline.|  
@@ -73,11 +73,11 @@ Below are the accelerator keys for the Image editor commands that are bound to k
 |Image.RectangleTool|ATL + R|Draws a rectangle with the selected line width and color.|  
 |Image.Rotate90Degrees|CTRL + SHIFT + H|Rotates the image or selection 90 degrees.|  
 |Image.RoundedRectangleTool|ALT + W|Draws a round rectangle with the selected line width and color.|  
-|Image.ShowGrid|CTRL + ALT + S|Toggles the pixel grid (selects or clears the **Pixel grid** option in the [Grid Settings dialog box](../mfc/grid-settings-dialog-box-image-editor-for-icons.md)).|  
-|Image.ShowTileGrid|CTRL + SHIFT + ALT + S|Toggles the tile grid (selects or clears the **Tile grid** option in the [Grid Settings dialog box](../mfc/grid-settings-dialog-box-image-editor-for-icons.md)).|  
+|Image.ShowGrid|CTRL + ALT + S|Toggles the pixel grid (selects or clears the **Pixel grid** option in the [Grid Settings dialog box](../windows/grid-settings-dialog-box-image-editor-for-icons.md)).|  
+|Image.ShowTileGrid|CTRL + SHIFT + ALT + S|Toggles the tile grid (selects or clears the **Tile grid** option in the [Grid Settings dialog box](../windows/grid-settings-dialog-box-image-editor-for-icons.md)).|  
 |Image.SmallBrush|CTRL + . (period)|Reduces the **Brush** size to one pixel. (See also Image.LargerBrush and Image.SmallerBrush in this table.)|  
 |Image.SmallerBrush|CTRL + - (minus)|Reduces the brush size by one pixel in each direction. To expand the brush size again, see Image.LargerBrush in this table.|  
-|Image.TextTool|CTRL + T|Opens the [Text Tool dialog box](../mfc/text-tool-dialog-box-image-editor-for-icons.md).|  
+|Image.TextTool|CTRL + T|Opens the [Text Tool dialog box](../windows/text-tool-dialog-box-image-editor-for-icons.md).|  
 |Image.UseSelectionAsBrush|CTRL + U|Draws using the current selection as a brush.|  
 |Image.ZoomIn|CTRL + SHIFT + . (period)<br /><br /> - or -<br /><br /> CTRL + UP ARROW|Increases the magnification for the current view.|  
 |Image.ZoomOut|CTRL + , (comma)<br /><br /> - or -<br /><br /> CTRL + DOWN ARROW|Reduces the magnification of the current view.|  
@@ -88,5 +88,5 @@ Below are the accelerator keys for the Image editor commands that are bound to k
  None  
   
 ## See Also  
- [Image Editor for Icons](../mfc/image-editor-for-icons.md)
+ [Image Editor for Icons](../windows/image-editor-for-icons.md)
 

@@ -112,7 +112,7 @@ CMultiDocTemplate(
   
  Note that the string begins with a '\n' character; this is because the first substring is not used for MDI applications and so is not included. You can edit this string using the string editor; the entire string appears as a single entry in the String Editor, not as seven separate entries.  
   
- For more information about these resource types, see [Resource Editors](../../mfc/resource-editors.md).  
+ For more information about these resource types, see [Resource Editors](../../windows/resource-editors.md).  
   
  `pDocClass`  
  Points to the `CRuntimeClass` object of the document class. This class is a **CDocument**-derived class you define to represent your documents.  

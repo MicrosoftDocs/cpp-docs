@@ -232,4 +232,4 @@ MFC projects always include several header files that support windows. These are
   
 ## See Also  
  [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)   
- [Symbols: Resource Identifiers](../mfc/symbols-resource-identifiers.md)
+ [Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)

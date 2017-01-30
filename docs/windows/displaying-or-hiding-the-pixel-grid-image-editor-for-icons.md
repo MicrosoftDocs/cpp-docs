@@ -56,6 +56,6 @@ For all Image Editor panes with a magnification factor of 4 or greater, you can 
  None  
   
 ## See Also  
- [Accelerator Keys](../mfc/accelerator-keys-image-editor-for-icons.md)   
- [Window Panes](../mfc/window-panes-image-editor-for-icons.md)
+ [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)   
+ [Window Panes](../windows/window-panes-image-editor-for-icons.md)
 

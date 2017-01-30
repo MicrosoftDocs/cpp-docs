@@ -57,6 +57,6 @@ translation.priority.ht:
  None  
   
 ## See Also  
- [Accelerator Keys](../mfc/accelerator-keys-image-editor-for-icons.md)   
- [Resizing an Image](../mfc/resizing-an-image-image-editor-for-icons.md)
+ [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)   
+ [Resizing an Image](../windows/resizing-an-image-image-editor-for-icons.md)
 

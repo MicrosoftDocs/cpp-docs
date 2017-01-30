@@ -131,5 +131,5 @@ Controls are objects that users can interact with to enter or manipulate data. T
   
 ## See Also  
  [User Interface Elements](../mfc/user-interface-elements-mfc.md)   
- [Dialog Editor](../mfc/dialog-editor.md)
+ [Dialog Editor](../windows/dialog-editor.md)
 

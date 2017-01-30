@@ -80,4 +80,4 @@ These symbols are also part of the MFC support files, but they support standard 
   
 ## See Also  
  [MFC Predefined Symbols](../windows/mfc-predefined-symbols.md)   
- [Symbols: Resource Identifiers](../mfc/symbols-resource-identifiers.md)
+ [Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)

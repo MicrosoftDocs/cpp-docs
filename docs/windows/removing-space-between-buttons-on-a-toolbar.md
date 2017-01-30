@@ -50,6 +50,6 @@ The following procedure shows you how to remove a space between buttons on a too
  MFC or ATL  
   
 ## See Also  
- [Creating, Moving, and Editing Toolbar Buttons](../mfc/creating-moving-and-editing-toolbar-buttons.md)   
- [Toolbar Editor](../mfc/toolbar-editor.md)
+ [Creating, Moving, and Editing Toolbar Buttons](../windows/creating-moving-and-editing-toolbar-buttons.md)   
+ [Toolbar Editor](../windows/toolbar-editor.md)
 

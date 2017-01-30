@@ -43,7 +43,7 @@ A custom brush is a rectangular portion of an image that you pick up and use lik
   
 ### To create a custom brush from a portion of an image  
   
-1.  [Select the part of the image](../mfc/selecting-an-area-of-an-image-image-editor-for-icons.md) that you want to use for a brush.  
+1.  [Select the part of the image](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md) that you want to use for a brush.  
   
 2.  Holding the **SHIFT** key down, click in the selection and drag it across the image.  
   
@@ -83,7 +83,7 @@ A custom brush is a rectangular portion of an image that you pick up and use lik
  None  
   
 ## See Also  
- [Accelerator Keys](../mfc/accelerator-keys-image-editor-for-icons.md)   
- [Editing Graphical Resources](../mfc/editing-graphical-resources-image-editor-for-icons.md)   
- [Image Editor for Icons](../mfc/image-editor-for-icons.md)
+ [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)   
+ [Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)   
+ [Image Editor for Icons](../windows/image-editor-for-icons.md)
 

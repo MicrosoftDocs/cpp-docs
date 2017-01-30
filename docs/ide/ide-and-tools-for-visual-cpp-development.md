@@ -101,7 +101,7 @@ As part of the Visual Studio Integrated Development Environment (IDE), Visual C+
 ## Adding and Editing Resources  
  The term "resource" in the context of a Visual Studio desktop project includes things such as dialog boxes, icons, localizable strings, spash screens, database connection strings, or any arbitrary data that you want to include in the executable file.  
   
- For more information on adding and editing resources in native desktop C++ projects, see [Working with Resource Files](../mfc/working-with-resource-files.md).  
+ For more information on adding and editing resources in native desktop C++ projects, see [Working with Resource Files](../windows/working-with-resource-files.md).  
   
 ## Building (compiling and linking)  
  Press **Ctrl + Shift + B** to compile and link a project. Visual Studio uses [MSBuild](/visualstudio/msbuild/msbuild1) to create executable code. You can set general build options under **Tools &#124; Options &#124; Projects and Solutions** and you can set properties for specific projects under **Project &#124; Properties**. Build errors and warnings are reported in the Error List (**Ctrl +\\, E**). Additional information is sometimes shown in the Output Window (**Alt + 2**). For more information, see  [Working with Project Properties](../ide/working-with-project-properties.md) and [Building C++ Projects in Visual Studio](../ide/building-cpp-projects-in-visual-studio.md).  

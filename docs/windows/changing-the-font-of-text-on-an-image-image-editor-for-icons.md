@@ -44,15 +44,15 @@ The following procedure is an example of how to:
   
 1.  Create a C++ Windows Forms Application. For details, see [Creating a Windows Application Project](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa). The [Windows Forms Application Template](http://msdn.microsoft.com/en-us/1babdebf-ab3f-4a64-a608-98499a5b9cea) adds a file named app.ico to your project by default.  
   
-2.  In Solution Explorer, double-click the file app.ico. The [Image Editor](../mfc/image-editor-for-icons.md) will open.  
+2.  In Solution Explorer, double-click the file app.ico. The [Image Editor](../windows/image-editor-for-icons.md) will open.  
   
-3.  From the **Image** menu, select **Tools** and then select **Text Tool**. The [Text Tool Dialog Box](../mfc/text-tool-dialog-box-image-editor-for-icons.md) will appear.  
+3.  From the **Image** menu, select **Tools** and then select **Text Tool**. The [Text Tool Dialog Box](../windows/text-tool-dialog-box-image-editor-for-icons.md) will appear.  
   
 4.  In the Text Tool Dialog Box, type `C++` in the empty text area. This text will appear in a resizable box located in the upper left corner of app.ico, in the Image Editor.  
   
 5.  In the Image Editor, drag the resizable box to the center of app.ico, to improve the readability of your text.  
   
-6.  In the Text Tool Dialog Box, click the **Font** button. The [Text Tool Font Dialog Box](../mfc/text-tool-font-dialog-box-image-editor-for-icons.md) will appear.  
+6.  In the Text Tool Dialog Box, click the **Font** button. The [Text Tool Font Dialog Box](../windows/text-tool-font-dialog-box-image-editor-for-icons.md) will appear.  
   
 7.  In the Text Tool Font Dialog Box, select **Times New Roman** from the list of available fonts that are listed in the **Font** list box.  
   
@@ -65,6 +65,6 @@ The following procedure is an example of how to:
 11. Click the **Close** button on the Text Tool dialog box. The resizable box around your text will disappear from the Image Editor.  
   
 ## See Also  
- [Editing Graphical Resources](../mfc/editing-graphical-resources-image-editor-for-icons.md)   
- [Toolbar](../mfc/toolbar-image-editor-for-icons.md)
+ [Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)   
+ [Toolbar](../windows/toolbar-image-editor-for-icons.md)
 

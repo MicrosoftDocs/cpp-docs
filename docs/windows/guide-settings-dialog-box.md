@@ -74,6 +74,6 @@ translation.priority.ht:
  Win32  
   
 ## See Also  
- [Modifying the Layout Grid](../mfc/modifying-the-layout-grid.md)   
- [Dialog Editor States (Guides and Grids)](../mfc/dialog-editor-states-guides-and-grids.md)
+ [Modifying the Layout Grid](../windows/modifying-the-layout-grid.md)   
+ [Dialog Editor States (Guides and Grids)](../windows/dialog-editor-states-guides-and-grids.md)
 

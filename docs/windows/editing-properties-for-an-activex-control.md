@@ -56,8 +56,8 @@ ActiveX controls supplied by independent vendors may come equipped with their ow
  Win32  
   
 ## See Also  
- [Viewing and Adding ActiveX Controls to a Dialog Box](../mfc/viewing-and-adding-activex-controls-to-a-dialog-box.md)   
- [Controls in Dialog Boxes](../mfc/controls-in-dialog-boxes.md)   
+ [Viewing and Adding ActiveX Controls to a Dialog Box](../windows/viewing-and-adding-activex-controls-to-a-dialog-box.md)   
+ [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)   
  [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)   
  [ActiveX Control Containers](../mfc/activex-control-containers.md)
 
