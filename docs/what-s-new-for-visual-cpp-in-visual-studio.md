@@ -85,6 +85,7 @@ This release brings several improvements in optimization, code generation, tools
 * atomic\<T\> now tolerates overloaded operator&().
 * To increase compiler throughput, C++ Standard Library headers now avoid including declarations for unnecessary compiler intrinsics.
 * Slightly improved compiler diagnostics for incorrect bind() calls.
+* Improved the performance of std::string/std::wstring's move constructors by more than 3x
 
 ### Open source library support  
 Vcpkg is an open-source command line tool that greatly simplifies the process of acquiring and building open source C++ static libs and DLLS in Visual Studio. For more information, see [Vcpkg updates: Static linking is now available](https://blogs.msdn.microsoft.com/vcblog/2016/11/01/vcpkg-updates-static-linking-is-now-available/).
@@ -92,6 +93,11 @@ Vcpkg is an open-source command line tool that greatly simplifies the process of
 ### CPPRest SDK 2.9.0  
 The CPPRestSDK, a cross-platform web API for C++, has been updated to version 2.9.0. For more information, see [CppRestSDK 2.9.0 is available on GitHub](https://blogs.msdn.microsoft.com/vcblog/2016/10/21/cpprestsdk-2-9-0-is-available-on-github/).
 
+### ATL
+* Yet another set of name-lookup conformance fixes
+* Existing move constructors and move assignment operators are now properly marked as non-throwing
+* Un-suppress valid warning C4640 about thread safe init of local statics in atlstr.h
+* Thread Safe Initialization of local statics was automatically turned off in the XP toolset when [using ATL AND building a DLL]. This is no longer the case. You can add /Zc:threadSafeInit- in your Project settings if having thread safe initialization off is desired. 
 
 ## C++ IDE
 
