@@ -46,7 +46,7 @@ Graphical resources are the images you define for your application. You can draw
   
 -   [Creating a New Bitmap or Other Image](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)  
   
--   [Selecting and Using a Drawing Tool](../mfc/using-a-drawing-tool-image-editor-for-icons.md)  
+-   [Selecting and Using a Drawing Tool](using-a-drawing-tool-image-editor-for-icons.md)  
   
 -   [Drawing Lines or Closed Figures](../windows/drawing-lines-or-closed-figures-image-editor-for-icons.md)  
   
@@ -60,7 +60,7 @@ Graphical resources are the images you define for your application. You can draw
   
 -   [Creating a Custom Brush](../windows/creating-a-custom-brush-image-editor-for-icons.md)  
   
--   [Changing Image Properties](../mfc/changing-image-properties-image-editor-for-icons.md)  
+-   [Changing Image Properties](changing-image-properties-image-editor-for-icons.md)  
   
 -   [Saving Bitmaps as .gifs or .jpegs](../windows/saving-bitmaps-as-gifs-or-jpegs-image-editor-for-icons.md)  
   
@@ -74,7 +74,7 @@ Graphical resources are the images you define for your application. You can draw
   
 -   [Image Editor Window Panes](../windows/window-panes-image-editor-for-icons.md)  
   
- For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](https://msdn.microsoft.com/library/f45fce5x.aspx) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](https://msdn.microsoft.com/library/xbx3z216.aspx). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](https://msdn.microsoft.com/library/h6270d0z.aspx).  
   
 > [!NOTE]
 >  Using the Image Editor, you can view 32-bit images, but you cannot edit them.  

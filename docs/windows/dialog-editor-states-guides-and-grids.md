@@ -44,7 +44,7 @@ You can arrange controls on dialog boxes with the Dialog editor in one of three 
   
  The [Dialog Editor Toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md) contains buttons that control the state. To change the state, click the appropriate icon. You can also change states by using the **Guide Settings** command on the **Format** menu.  
   
--   [Creating and Setting Guides and Margins](../mfc/creating-and-setting-guides-and-margins.md)  
+-   [Creating and Setting Guides and Margins](creating-and-setting-guides-and-margins.md)  
   
 -   [Aligning Controls on a Guide](../windows/aligning-controls-on-a-guide.md)  
   
@@ -52,7 +52,7 @@ You can arrange controls on dialog boxes with the Dialog editor in one of three 
   
 -   [Modifying the Layout Grid](../windows/modifying-the-layout-grid.md)  
   
- For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](https://msdn.microsoft.com/library/f45fce5x.aspx) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](https://msdn.microsoft.com/library/xbx3z216.aspx). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](https://msdn.microsoft.com/library/h6270d0z.aspx).  
   
 ## Requirements  
  Win32  
@@ -60,5 +60,5 @@ You can arrange controls on dialog boxes with the Dialog editor in one of three 
 ## See Also  
  [Arrangement of Controls on Dialog Boxes](../windows/arrangement-of-controls-on-dialog-boxes.md)   
  [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)   
- [Controls](../mfc/controls-mfc.md)
+ [Controls (MFC)](../mfc/controls-mfc.md)
 

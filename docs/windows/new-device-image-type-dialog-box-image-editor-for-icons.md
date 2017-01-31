@@ -54,7 +54,7 @@ Enables you to create a new device image of a specified type. To open the **New 
 >  Any existing images will not be displayed in this list.  
   
  **Custom**  
- Opens the [Custom Image dialog box](../mfc/custom-image-dialog-box-image-editor-for-icons.md) in which you can create a new image with a custom size and number of colors.  
+ Opens the [Custom Image dialog box](custom-image-dialog-box-image-editor-for-icons.md) in which you can create a new image with a custom size and number of colors.  
   
 ## Requirements  
  None  

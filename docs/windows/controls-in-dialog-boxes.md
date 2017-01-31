@@ -43,7 +43,7 @@ You can add controls to a dialog box using the [Dialog Editor tab](../windows/di
   
  Once you have added a control to the dialog box, you can change properties such as its caption in the [Properties Window](/visualstudio/ide/reference/properties-window). You can select multiple controls and change their properties all at once.  
   
--   [Adding, Editing, or Deleting Controls](../mfc/adding-editing-or-deleting-controls.md)  
+-   [Adding, Editing, or Deleting Controls](adding-editing-or-deleting-controls.md)  
   
 -   [Selecting Controls](../windows/selecting-controls.md)  
   
@@ -51,7 +51,7 @@ You can add controls to a dialog box using the [Dialog Editor tab](../windows/di
   
 -   [Making Controls the Same Width, Height, or Size](../windows/making-controls-the-same-width-height-or-size.md)  
   
--   [Setting the Size of the Combo Box and Its Drop-Down List](../mfc/setting-the-size-of-the-combo-box-and-its-drop-down-list.md)  
+-   [Setting the Size of the Combo Box and Its Drop-Down List](setting-the-size-of-the-combo-box-and-its-drop-down-list.md)  
   
 -   [Adding Values to a Combo Box Control](../windows/adding-values-to-a-combo-box-control.md)  
   
@@ -59,13 +59,13 @@ You can add controls to a dialog box using the [Dialog Editor tab](../windows/di
   
 -   [The Arrangement of Controls on Dialog Boxes](../windows/arrangement-of-controls-on-dialog-boxes.md)  
   
--   [Custom Controls in the Dialog Editor](../mfc/custom-controls-in-the-dialog-editor.md)  
+-   [Custom Controls in the Dialog Editor](custom-controls-in-the-dialog-editor.md)  
   
 -   [Defining Mnemonics (Access Keys)](../windows/defining-mnemonics-access-keys.md)  
   
 -   [Specifying the Location and Size of a Dialog Box](../windows/specifying-the-location-and-size-of-a-dialog-box.md)  
   
- For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](https://msdn.microsoft.com/library/f45fce5x.aspx) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](https://msdn.microsoft.com/library/xbx3z216.aspx). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](https://msdn.microsoft.com/library/h6270d0z.aspx).  
   
 ## Requirements  
  Win32  
