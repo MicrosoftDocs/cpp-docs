@@ -46,17 +46,17 @@ The Image editor has an extensive set of tools for creating and editing images, 
   
  With the Image editor, you can:  
   
--   [Edit Graphical Resources](../mfc/editing-graphical-resources-image-editor-for-icons.md)  
+-   [Edit Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)  
   
--   [Work with Color](../mfc/working-with-color-image-editor-for-icons.md)  
+-   [Work with Color](../windows/working-with-color-image-editor-for-icons.md)  
   
--   [Work with Icons and Cursors: Image Resources for Display Devices](../mfc/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)  
+-   [Work with Icons and Cursors: Image Resources for Display Devices](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)  
   
--   [Use Accelerator Keys for Image Editor Commands](../mfc/accelerator-keys-image-editor-for-icons.md)  
+-   [Use Accelerator Keys for Image Editor Commands](../windows/accelerator-keys-image-editor-for-icons.md)  
   
  The Image Editor window shows two views of an image, with a split bar separating the two panes. You can drag the split bar from side to side to change the relative sizes of the panes. The active pane displays a selection border.  
   
- The Image Editor window can be adjusted to fit your needs and preferences. You can [change the magnification factor](../mfc/changing-the-magnification-factor-image-editor-for-icons.md) and [display or hide the pixel grid](../mfc/displaying-or-hiding-the-pixel-grid-image-editor-for-icons.md).  
+ The Image Editor window can be adjusted to fit your needs and preferences. You can [change the magnification factor](../windows/changing-the-magnification-factor-image-editor-for-icons.md) and [display or hide the pixel grid](../windows/displaying-or-hiding-the-pixel-grid-image-editor-for-icons.md).  
   
 > [!NOTE]
 >  Using the Image Editor, you can view 32-bit images, but you cannot edit them.  
@@ -65,14 +65,14 @@ The Image editor has an extensive set of tools for creating and editing images, 
  You can download at no cost the Visual Studio Image Library which contains many animations, bitmaps, and icons that you can use in your applications. For more information about how to download the library, see [The Visual Studio Image Library](/visualstudio/designers/the-visual-studio-image-library).  
   
 ## Managed Resources  
- You can use the Image editor and the [Binary editor](../mfc/binary-editor.md) to work with resource files in managed projects. Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources.  
+ You can use the Image editor and the [Binary editor](binary-editor.md) to work with resource files in managed projects. Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources.  
   
- For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](https://msdn.microsoft.com/library/f45fce5x.aspx) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](https://msdn.microsoft.com/library/xbx3z216.aspx). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](https://msdn.microsoft.com/library/h6270d0z.aspx).  
   
 ### Requirements  
  None  
   
 ## See Also  
- [Resource Editors](../mfc/resource-editors.md)   
+ [Resource Editors](../windows/resource-editors.md)   
  [Icons](http://msdn.microsoft.com/library/windows/desktop/ms646973.aspx)
 

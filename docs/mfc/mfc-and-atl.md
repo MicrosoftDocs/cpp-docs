@@ -43,5 +43,5 @@ The Microsoft Foundation Classes (MFC) provide a C++ object-oriented wrapper ove
 |[MFC Desktop Applications](../mfc/mfc-desktop-applications.md)|Microsoft Foundation Classes provide a thin object-oriented wrapper over Win32 to enable rapid development of GUI applications in C++.|  
 |[ATL COM Desktop Components](../atl/atl-com-desktop-components.md)|ATL provides class templates and other use constructs to simplify creation of COM objects in C++.|  
 |[ATL/MFC Shared Classes](../atl-mfc-shared/atl-mfc-shared-classes.md)|References for [CStringT Class](../atl-mfc-shared/reference/cstringt-class.md) and other classes that are shared by MFC and ATL.|  
-|[Working with Resource Files](../mfc/working-with-resource-files.md)|The resource editor lets you edit UI resources such as strings, images, and dialog boxes.|  
+|[Working with Resource Files](../windows/working-with-resource-files.md)|The resource editor lets you edit UI resources such as strings, images, and dialog boxes.|  
 |[Visual C++](../visual-cpp-in-visual-studio.md)|Parent topic for all C++ content in the MSDN library.|

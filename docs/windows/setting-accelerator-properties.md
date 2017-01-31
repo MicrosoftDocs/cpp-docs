@@ -57,5 +57,5 @@ In Visual C++ .NET, you can set accelerator properties in the [Properties window
   
 ## See Also  
  [Predefined Accelerator Keys](../windows/predefined-accelerator-keys.md)   
- [Resource Editors](../mfc/resource-editors.md)   
- [Accelerator Editor](../mfc/accelerator-editor.md)
+ [Resource Editors](../windows/resource-editors.md)   
+ [Accelerator Editor](../windows/accelerator-editor.md)

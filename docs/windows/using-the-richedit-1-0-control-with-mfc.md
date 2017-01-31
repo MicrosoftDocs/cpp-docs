@@ -43,6 +43,6 @@ To use a RichEdit control, you must first call [AfxInitRichEdit2](../mfc/referen
  MFC  
   
 ## See Also  
- [Troubleshooting the Dialog Editor](../mfc/troubleshooting-the-dialog-editor.md)   
- [Dialog Editor](../mfc/dialog-editor.md)
+ [Troubleshooting the Dialog Editor](../windows/troubleshooting-the-dialog-editor.md)   
+ [Dialog Editor](../windows/dialog-editor.md)
 

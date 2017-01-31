@@ -56,4 +56,4 @@ translation.priority.ht:
  Win32  
   
 ## See Also  
- [Symbols: Resource Identifiers](../mfc/symbols-resource-identifiers.md)
+ [Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)

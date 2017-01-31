@@ -60,6 +60,6 @@ You can create a runtime dialog box that a user cannot exit. This kind of dialog
   
 ## See Also  
  [How to: Create a Resource](../windows/how-to-create-a-resource.md)   
- [Resource Files](../mfc/resource-files-visual-studio.md)   
- [Dialog Editor](../mfc/dialog-editor.md)
+ [Resource Files](../windows/resource-files-visual-studio.md)   
+ [Dialog Editor](../windows/dialog-editor.md)
 

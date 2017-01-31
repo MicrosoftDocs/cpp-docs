@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Adding an MFC Message Handler
-You can [use the Properties window to add a message handler](../../mfc/reference/mapping-messages-to-functions.md) (a member function that handles Windows messages) to a class and map Windows messages to the message handler. You can also add [an event handler for any dialog box control](../../mfc/adding-event-handlers-for-dialog-box-controls.md).  
+You can [use the Properties window to add a message handler](../../mfc/reference/mapping-messages-to-functions.md) (a member function that handles Windows messages) to a class and map Windows messages to the message handler. You can also add [an event handler for any dialog box control](../../windows/adding-event-handlers-for-dialog-box-controls.md).  
   
  By using the Properties window to define message- and event-handling functions, you can automatically update the message-dispatch table (or message map) and your class header file.  
   
@@ -49,5 +49,5 @@ You can [use the Properties window to add a message handler](../../mfc/reference
  [Adding a Member Variable](../../ide/adding-a-member-variable-visual-cpp.md)   
  [Overriding a Virtual Function](../../ide/overriding-a-virtual-function-visual-cpp.md)   
  [Navigating the Class Structure](../../ide/navigating-the-class-structure-visual-cpp.md)   
- [Dialog Editor](../../mfc/dialog-editor.md)
+ [Dialog Editor](../../windows/dialog-editor.md)
 

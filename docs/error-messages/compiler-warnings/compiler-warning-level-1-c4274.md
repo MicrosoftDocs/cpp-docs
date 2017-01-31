@@ -35,4 +35,4 @@ manager: "ghogen"
 ## See Also  
  [comment (C/C++)](../../preprocessor/comment-c-cpp.md)   
  [Linker Tools Warning LNK4229](../../error-messages/tool-errors/linker-tools-warning-lnk4229.md)   
- [Working with Resource Files](../../mfc/working-with-resource-files.md)
+ [Working with Resource Files](../../windows/working-with-resource-files.md)

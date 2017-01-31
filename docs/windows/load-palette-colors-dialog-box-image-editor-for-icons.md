@@ -53,4 +53,4 @@ Use this dialog box to load special color palettes to use in your project. For m
  None  
   
 ## See Also  
- [Image Editor for Icons](../mfc/image-editor-for-icons.md)
+ [Image Editor for Icons](../windows/image-editor-for-icons.md)

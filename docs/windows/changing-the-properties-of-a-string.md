@@ -60,5 +60,5 @@ translation.priority.ht:
  Win32  
   
 ## See Also  
- [String Editor](../mfc/string-editor.md)   
+ [String Editor](../windows/string-editor.md)   
 

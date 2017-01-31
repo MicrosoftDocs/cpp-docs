@@ -60,4 +60,4 @@ If you open a manifest resource from [Resource View](../windows/resource-view-wi
 ## See Also  
  [Manifest Resources](../windows/manifest-resources.md)   
  [Controls](../mfc/controls-mfc.md)   
- [Working with Resource Files](../mfc/working-with-resource-files.md)
+ [Working with Resource Files](../windows/working-with-resource-files.md)

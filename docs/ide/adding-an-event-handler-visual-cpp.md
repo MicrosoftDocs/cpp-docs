@@ -43,7 +43,7 @@ From the resource editor, you can add a new event handler, or edit an existing e
   
 ### To add an event handler to a dialog box control  
   
-1.  Double-click the dialog box resource in [Resource View](../windows/resource-view-window.md) to open the dialog box resource that contains the control in the [dialog editor](../mfc/dialog-editor.md).  
+1.  Double-click the dialog box resource in [Resource View](../windows/resource-view-window.md) to open the dialog box resource that contains the control in the [dialog editor](../windows/dialog-editor.md).  
   
 2.  Right-click the control for which you want to handle the notification event.  
   
@@ -57,7 +57,7 @@ From the resource editor, you can add a new event handler, or edit an existing e
   
      If the selected message type already has an event handler for the selected class, **Add and edit** is unavailable, and **Edit code** is available. Click **Edit code** to open the text editor at the existing function.  
   
- Alternately, you can add event handlers from the [Properties window](/visualstudio/ide/reference/properties-window). See [Adding Event Handlers for Dialog Box Controls](../mfc/adding-event-handlers-for-dialog-box-controls.md) for more information.  
+ Alternately, you can add event handlers from the [Properties window](/visualstudio/ide/reference/properties-window). See [Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md) for more information.  
   
 ## See Also  
  [Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards-cpp.md)   

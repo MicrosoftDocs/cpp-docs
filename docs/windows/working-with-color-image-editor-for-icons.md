@@ -41,11 +41,11 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Working with Color (Image Editor for Icons)
-The Image editor contains many features that specifically handle and customize colors. You can set a foreground or background color, fill bounded areas with color, or select a color on an image to use as the current foreground or background color. You can use tools on the [Image Editor toolbar](../mfc/toolbar-image-editor-for-icons.md) along with the colors palette in the [Colors window](../windows/colors-window-image-editor-for-icons.md) to create images.  
+The Image editor contains many features that specifically handle and customize colors. You can set a foreground or background color, fill bounded areas with color, or select a color on an image to use as the current foreground or background color. You can use tools on the [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md) along with the colors palette in the [Colors window](../windows/colors-window-image-editor-for-icons.md) to create images.  
   
  All colors for monochrome and 16-color images are shown in the Colors palette in the Colors window. In addition to the 16 standard colors, you can create your own custom colors. Changing any of the colors in the palette will immediately change the corresponding color in the image.  
   
- When working with 256-color icon and cursor images, the Colors property in the [Properties window](/visualstudio/ide/reference/properties-window) is used. For more information, see [Creating a 256-color icon or cursor](../mfc/creating-a-256-color-icon-or-cursor-image-editor-for-icons.md).  
+ When working with 256-color icon and cursor images, the Colors property in the [Properties window](/visualstudio/ide/reference/properties-window) is used. For more information, see [Creating a 256-color icon or cursor](creating-a-256-color-icon-or-cursor-image-editor-for-icons.md).  
   
 > [!NOTE]
 >  Using the Image Editor, you can view 32-bit images, but you cannot edit them.  
@@ -70,11 +70,11 @@ The Image editor contains many features that specifically handle and customize c
   
 -   [Colors Window](../windows/colors-window-image-editor-for-icons.md)  
   
- For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](https://msdn.microsoft.com/library/f45fce5x.aspx) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](https://msdn.microsoft.com/library/xbx3z216.aspx). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](https://msdn.microsoft.com/library/h6270d0z.aspx).  
   
 ## Requirements  
  None  
   
 ## See Also  
- [Accelerator Keys](../mfc/accelerator-keys-image-editor-for-icons.md)   
+ [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)   
 

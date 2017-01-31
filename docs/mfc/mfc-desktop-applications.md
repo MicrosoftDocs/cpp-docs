@@ -87,7 +87,7 @@ The Microsoft Foundation Class (MFC) Library provides an object-oriented wrapper
  [MFC Wizards and Dialog Boxes](reference/mfc-wizards-and-dialog-boxes.md)  
  A guide to the features in Visual Studio for creating MFC applications.  
   
- [Working with Resource Files](working-with-resource-files.md)  
+ [Working with Resource Files](../windows/working-with-resource-files.md)  
  How to use resource files to manage static user interface data such as UI strings and dialog box layout.  
   
 ## Related Sections  

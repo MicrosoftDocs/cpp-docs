@@ -59,7 +59,7 @@ translation.priority.ht:
  Win32  
   
 ## See Also  
- [String Editor](../mfc/string-editor.md)   
- [Resource Files](../mfc/resource-files-visual-studio.md)   
+ [String Editor](../windows/string-editor.md)   
+ [Resource Files](../windows/resource-files-visual-studio.md)   
  [Customizing window layouts](/visualstudio/ide/customizing-window-layouts-in-visual-studio)   
 

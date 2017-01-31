@@ -48,4 +48,4 @@ The accelerator **Type** property determines whether the shortcut key combinatio
   
 ## See Also  
  [Setting Accelerator Properties](../windows/setting-accelerator-properties.md)   
- [Accelerator Editor](../mfc/accelerator-editor.md)
+ [Accelerator Editor](../windows/accelerator-editor.md)

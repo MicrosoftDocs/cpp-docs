@@ -61,4 +61,4 @@ translation.priority.ht:
   
 ## See Also  
  [Creating Pop-up Menus](../windows/creating-pop-up-menus.md)   
- [Menu Editor](../mfc/menu-editor.md)   
+ [Menu Editor](../windows/menu-editor.md)   

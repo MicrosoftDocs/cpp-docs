@@ -44,7 +44,7 @@ To define a member variable for any dialog box control except buttons, you can u
   
 ### To define a member variable for a (non-button) dialog box control  
   
-1.  In the [Dialog editor](../mfc/dialog-editor.md), select a control.  
+1.  In the [Dialog editor](../windows/dialog-editor.md), select a control.  
   
 2.  While pressing the **CTRL** key, double-click the dialog box control.  
   

@@ -48,4 +48,4 @@ The Visual Studio environment works with the files shown in the following table 
  Win32  
   
 ## See Also  
- [Resource Files](../mfc/resource-files-visual-studio.md)
+ [Resource Files](../windows/resource-files-visual-studio.md)

@@ -57,4 +57,4 @@ The information below is organized according to the Menu properties that appear 
  Win32  
   
 ## See Also  
- [Menu Editor](../mfc/menu-editor.md)
+ [Menu Editor](../windows/menu-editor.md)

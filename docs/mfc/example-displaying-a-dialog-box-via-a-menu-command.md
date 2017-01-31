@@ -60,7 +60,7 @@ This topic contains procedures to:
   
 1.  Create the menu command; see [Creating Menus or Menu Items](../windows/creating-a-menu.md).  
   
-2.  Create the dialog box; see [Starting the Dialog Editor](../mfc/creating-a-new-dialog-box.md).  
+2.  Create the dialog box; see [Starting the Dialog Editor](../windows/creating-a-new-dialog-box.md).  
   
 3.  Add a class for your dialog box. See [Adding a Class](../ide/adding-a-class-visual-cpp.md) for more information.  
   

@@ -61,4 +61,4 @@ translation.priority.ht:
   
 ## See Also  
  [Editing Accelerator Tables](../windows/editing-accelerator-tables.md)   
- [Accelerator Editor](../mfc/accelerator-editor.md)
+ [Accelerator Editor](../windows/accelerator-editor.md)

@@ -36,11 +36,11 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Text Tool Font Dialog Box (Image Editor for Icons)
-Specifies font settings when you use the [Text Tool Dialog Box](../mfc/text-tool-dialog-box-image-editor-for-icons.md) of the [Image Editor](../mfc/image-editor-for-icons.md).  
+Specifies font settings when you use the [Text Tool Dialog Box](../windows/text-tool-dialog-box-image-editor-for-icons.md) of the [Image Editor](../windows/image-editor-for-icons.md).  
   
  Use this dialog box for:  
   
--   [Changing the Font of Text on an Image](../mfc/changing-the-font-of-text-on-an-image-image-editor-for-icons.md)  
+-   [Changing the Font of Text on an Image](../windows/changing-the-font-of-text-on-an-image-image-editor-for-icons.md)  
   
  To access this dialog box, click the **Font** button in the Text Tool dialog box.  
   
@@ -63,5 +63,5 @@ Specifies font settings when you use the [Text Tool Dialog Box](../mfc/text-tool
  None  
   
 ## See Also  
- [Editing Graphical Resources](../mfc/editing-graphical-resources-image-editor-for-icons.md)
+ [Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)
 

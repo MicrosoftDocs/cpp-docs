@@ -33,7 +33,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Inserting the Control into a Visual C++ Application
-You can insert an ActiveX control into a dialog box from the toolbar or using the [Insert ActiveX Control](../../mfc/insert-activex-control-dialog-box.md) dialog box.  
+You can insert an ActiveX control into a dialog box from the toolbar or using the [Insert ActiveX Control](../../windows/insert-activex-control-dialog-box.md) dialog box.  
   
 ### To insert an ActiveX control from the Toolbox  
   
@@ -47,7 +47,7 @@ You can insert an ActiveX control into a dialog box from the toolbar or using th
   
 1.  Right-click the dialog box.  
   
-2.  On the shortcut menu, click [Insert ActiveX Control](../../mfc/insert-activex-control-dialog-box.md).  
+2.  On the shortcut menu, click [Insert ActiveX Control](../../windows/insert-activex-control-dialog-box.md).  
   
     > [!NOTE]
     >  When you insert an ActiveX control from **Insert ActiveX Control** into a project, [wrapper classes](../../data/ado-rdo/wrapper-classes.md) are not included in the project. You are responsible for creating a wrapper class to customize the control's functionality.  

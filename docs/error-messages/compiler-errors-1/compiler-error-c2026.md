@@ -63,4 +63,4 @@ imagine a really, really "
 ";  
 ```  
   
- You may want to store exceptionally large string literals (32K or more) in a custom resource or an external file. See [Creating a New Custom or Data Resource](../../mfc/creating-a-new-custom-or-data-resource.md) for more information.
+ You may want to store exceptionally large string literals (32K or more) in a custom resource or an external file. See [Creating a New Custom or Data Resource](../../windows/creating-a-new-custom-or-data-resource.md) for more information.

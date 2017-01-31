@@ -42,7 +42,7 @@ MFC supplies two elements to help you work with menus:
   
 -   A mechanism for updating menus and toolbar buttons: enabling or disabling them on the fly to suit current program conditions.  
   
- Visual C++ also provides a [menu editor](../mfc/menu-editor.md) for creating and editing your program's menu resources.  
+ Visual C++ also provides a [menu editor](../windows/menu-editor.md) for creating and editing your program's menu resources.  
   
 ## What do you want to know more about  
   
