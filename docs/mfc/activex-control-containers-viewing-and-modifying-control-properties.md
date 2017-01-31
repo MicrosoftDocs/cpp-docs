@@ -51,7 +51,7 @@ When you insert an ActiveX control into a project, it is useful to view and chan
   
 2.  Open your main dialog box template.  
   
-3.  Insert an ActiveX control using the **Insert ActiveX Control** dialog box. For more information, see [Viewing and Adding ActiveX Controls to a Dialog Box](../mfc/viewing-and-adding-activex-controls-to-a-dialog-box.md).  
+3.  Insert an ActiveX control using the **Insert ActiveX Control** dialog box. For more information, see [Viewing and Adding ActiveX Controls to a Dialog Box](../windows/viewing-and-adding-activex-controls-to-a-dialog-box.md).  
   
 4.  Select the ActiveX control in the dialog box.  
   

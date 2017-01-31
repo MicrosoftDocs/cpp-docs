@@ -57,6 +57,6 @@ translation.priority.ht:
  Win32  
   
 ## See Also  
- [Symbols: Resource Identifiers](../mfc/symbols-resource-identifiers.md)   
- [Resource Files](../mfc/resource-files-visual-studio.md)   
- [Resource Editors](../mfc/resource-editors.md)
+ [Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)   
+ [Resource Files](../windows/resource-files-visual-studio.md)   
+ [Resource Editors](../windows/resource-editors.md)

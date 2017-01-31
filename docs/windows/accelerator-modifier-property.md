@@ -51,4 +51,4 @@ The following are legal entries for the Modifier property in the accelerator tab
   
 ## See Also  
  [Setting Accelerator Properties](../windows/setting-accelerator-properties.md)   
- [Accelerator Editor](../mfc/accelerator-editor.md)
+ [Accelerator Editor](../windows/accelerator-editor.md)

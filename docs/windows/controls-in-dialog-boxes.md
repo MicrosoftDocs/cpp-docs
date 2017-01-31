@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Controls in Dialog Boxes
-You can add controls to a dialog box using the [Dialog Editor tab](../mfc/dialog-editor-tab-toolbox.md) in the [Toolbox window](/visualstudio/ide/reference/toolbox), which enables you to choose the control you want and drag it onto the dialog box. By default, the Toolbox window is set to auto hide. It appears as a tab on the left margin of your solution when the Dialog editor is open. However, you can pin the Toolbox window into position by clicking the **Auto Hide** button in the upper right corner of the window. For more information on how to control the behavior of this window, see [Window Management](/visualstudio/ide/customizing-window-layouts-in-visual-studio).  
+You can add controls to a dialog box using the [Dialog Editor tab](../windows/dialog-editor-tab-toolbox.md) in the [Toolbox window](/visualstudio/ide/reference/toolbox), which enables you to choose the control you want and drag it onto the dialog box. By default, the Toolbox window is set to auto hide. It appears as a tab on the left margin of your solution when the Dialog editor is open. However, you can pin the Toolbox window into position by clicking the **Auto Hide** button in the upper right corner of the window. For more information on how to control the behavior of this window, see [Window Management](/visualstudio/ide/customizing-window-layouts-in-visual-studio).  
   
  The fastest way to add controls to a dialog box, reposition existing controls, or move controls from one dialog box to another, is to use the drag-and-drop method. The control's position is outlined in a dotted line until it is dropped into the dialog box. When you add a control to a dialog box with the drag-and-drop method, the control is given a standard height appropriate to that type of control.  
   
@@ -43,35 +43,35 @@ You can add controls to a dialog box using the [Dialog Editor tab](../mfc/dialog
   
  Once you have added a control to the dialog box, you can change properties such as its caption in the [Properties Window](/visualstudio/ide/reference/properties-window). You can select multiple controls and change their properties all at once.  
   
--   [Adding, Editing, or Deleting Controls](../mfc/adding-editing-or-deleting-controls.md)  
+-   [Adding, Editing, or Deleting Controls](adding-editing-or-deleting-controls.md)  
   
--   [Selecting Controls](../mfc/selecting-controls.md)  
+-   [Selecting Controls](../windows/selecting-controls.md)  
   
--   [Sizing Individual Controls](../mfc/sizing-individual-controls.md)  
+-   [Sizing Individual Controls](../windows/sizing-individual-controls.md)  
   
--   [Making Controls the Same Width, Height, or Size](../mfc/making-controls-the-same-width-height-or-size.md)  
+-   [Making Controls the Same Width, Height, or Size](../windows/making-controls-the-same-width-height-or-size.md)  
   
--   [Setting the Size of the Combo Box and Its Drop-Down List](../mfc/setting-the-size-of-the-combo-box-and-its-drop-down-list.md)  
+-   [Setting the Size of the Combo Box and Its Drop-Down List](setting-the-size-of-the-combo-box-and-its-drop-down-list.md)  
   
--   [Adding Values to a Combo Box Control](../mfc/adding-values-to-a-combo-box-control.md)  
+-   [Adding Values to a Combo Box Control](../windows/adding-values-to-a-combo-box-control.md)  
   
--   [Setting the Width of a Horizontal Scroll Bar](../mfc/setting-the-width-of-a-horizontal-scroll-bar.md)  
+-   [Setting the Width of a Horizontal Scroll Bar](../windows/setting-the-width-of-a-horizontal-scroll-bar.md)  
   
--   [The Arrangement of Controls on Dialog Boxes](../mfc/arrangement-of-controls-on-dialog-boxes.md)  
+-   [The Arrangement of Controls on Dialog Boxes](../windows/arrangement-of-controls-on-dialog-boxes.md)  
   
--   [Custom Controls in the Dialog Editor](../mfc/custom-controls-in-the-dialog-editor.md)  
+-   [Custom Controls in the Dialog Editor](custom-controls-in-the-dialog-editor.md)  
   
--   [Defining Mnemonics (Access Keys)](../mfc/defining-mnemonics-access-keys.md)  
+-   [Defining Mnemonics (Access Keys)](../windows/defining-mnemonics-access-keys.md)  
   
--   [Specifying the Location and Size of a Dialog Box](../mfc/specifying-the-location-and-size-of-a-dialog-box.md)  
+-   [Specifying the Location and Size of a Dialog Box](../windows/specifying-the-location-and-size-of-a-dialog-box.md)  
   
- For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](https://msdn.microsoft.com/library/f45fce5x.aspx) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](https://msdn.microsoft.com/library/xbx3z216.aspx). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](https://msdn.microsoft.com/library/h6270d0z.aspx).  
   
 ## Requirements  
  Win32  
   
 ## See Also  
- [Adding Event Handlers for Dialog Box Controls](../mfc/adding-event-handlers-for-dialog-box-controls.md)   
+ [Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md)   
  [Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)   
- [Dialog Editor](../mfc/dialog-editor.md)
+ [Dialog Editor](../windows/dialog-editor.md)
 

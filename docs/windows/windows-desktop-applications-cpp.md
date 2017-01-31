@@ -54,7 +54,7 @@ This section discusses how to create C++ desktop applications that run in a wind
   
 -   [Creating an Empty Windows Desktop Application](../windows/creating-an-empty-windows-desktop-application.md)  
   
--   [Working with Resource Files](../mfc/working-with-resource-files.md)  
+-   [Working with Resource Files](../windows/working-with-resource-files.md)  
   
 ## See Also  
  [Visual C++ Guided Tour](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)

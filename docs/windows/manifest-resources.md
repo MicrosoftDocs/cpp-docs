@@ -67,4 +67,4 @@ Manifest resources are XML files that describe the dependencies that an applicat
   
 ## See Also  
  [Controls](../mfc/controls-mfc.md)   
- [Working with Resource Files](../mfc/working-with-resource-files.md)
+ [Working with Resource Files](../windows/working-with-resource-files.md)

@@ -54,12 +54,12 @@ Enables you to create a new device image of a specified type. To open the **New 
 >  Any existing images will not be displayed in this list.  
   
  **Custom**  
- Opens the [Custom Image dialog box](../mfc/custom-image-dialog-box-image-editor-for-icons.md) in which you can create a new image with a custom size and number of colors.  
+ Opens the [Custom Image dialog box](custom-image-dialog-box-image-editor-for-icons.md) in which you can create a new image with a custom size and number of colors.  
   
 ## Requirements  
  None  
   
 ## See Also  
- [Icons and Cursors: Image Resources for Display Devices](../mfc/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)   
- [Image Menu](../mfc/image-menu-image-editor-for-icons.md)   
- [Image Editor for Icons](../mfc/image-editor-for-icons.md)
+ [Icons and Cursors: Image Resources for Display Devices](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)   
+ [Image Menu](../windows/image-menu-image-editor-for-icons.md)   
+ [Image Editor for Icons](../windows/image-editor-for-icons.md)

@@ -65,5 +65,5 @@ You can save and load a Colors palette that contains [customized colors](../wind
  None  
   
 ## See Also  
- [Accelerator Keys](../mfc/accelerator-keys-image-editor-for-icons.md)   
- [Working with Color](../mfc/working-with-color-image-editor-for-icons.md)
+ [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)   
+ [Working with Color](../windows/working-with-color-image-editor-for-icons.md)

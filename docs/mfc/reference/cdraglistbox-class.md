@@ -73,7 +73,7 @@ class CDragListBox : public CListBox
   
  To use a drag list box in an existing dialog box of your application, add a list box control to your dialog template using the dialog editor and then assign a member variable (of Category `Control` and Variable Type `CDragListBox`) corresponding to the list box control in your dialog template.  
   
- For more information on assigning controls to member variables, see [Shortcut for Defining Member Variables for Dialog Controls](../../mfc/defining-member-variables-for-dialog-controls.md).  
+ For more information on assigning controls to member variables, see [Shortcut for Defining Member Variables for Dialog Controls](../../windows/defining-member-variables-for-dialog-controls.md).  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  

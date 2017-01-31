@@ -37,7 +37,7 @@ translation.priority.ht:
 # Modifying the ATL Project
 At this point, your composite control project implements the necessary objects for your composite control. The next step is to add any controls that the composite control will contain and handle any necessary events.  
   
- To add additional ActiveX or Windows controls, add a new resource script and then use the Dialog editor. For more information on adding controls (and related tasks), see [Dialog Editor](../mfc/dialog-editor.md).  
+ To add additional ActiveX or Windows controls, add a new resource script and then use the Dialog editor. For more information on adding controls (and related tasks), see [Dialog Editor](../windows/dialog-editor.md).  
   
  To handle any necessary events from the ActiveX controls, see [Adding Functionality to the Composite Control](../atl/adding-functionality-to-the-composite-control.md).  
   

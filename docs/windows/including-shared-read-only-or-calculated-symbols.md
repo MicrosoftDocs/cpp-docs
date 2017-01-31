@@ -95,4 +95,4 @@ The first time the development environment reads a resource file created by anot
  [Symbol Name Restrictions](../windows/symbol-name-restrictions.md)   
  [Symbol Value Restrictions](../windows/symbol-value-restrictions.md)   
  [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)   
- [Symbols: Resource Identifiers](../mfc/symbols-resource-identifiers.md)
+ [Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)

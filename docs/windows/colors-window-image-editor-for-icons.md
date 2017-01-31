@@ -56,7 +56,7 @@ Colors Window
 > [!NOTE]
 >  The **Screen color** and **Inverse color** tools are only available for icons and cursors.  
   
- You can use the Colors window with the [Image Editor toolbar](../mfc/toolbar-image-editor-for-icons.md).  
+ You can use the Colors window with the [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md).  
   
  For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
@@ -65,7 +65,7 @@ Colors Window
   
 ## See Also  
  [Displaying or Hiding the Colors Window](../windows/displaying-or-hiding-the-colors-window-image-editor-for-icons.md)   
- [Creating Transparent or Inverse Regions in Device Images](../mfc/creating-transparent-or-inverse-regions-in-device-images.md)   
- [Accelerator Keys](../mfc/accelerator-keys-image-editor-for-icons.md)   
+ [Creating Transparent or Inverse Regions in Device Images](../windows/creating-transparent-or-inverse-regions-in-device-images.md)   
+ [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)   
  [Custom Color Selector Dialog Box](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md)   
- [Image Editor for Icons](../mfc/image-editor-for-icons.md)
+ [Image Editor for Icons](../windows/image-editor-for-icons.md)

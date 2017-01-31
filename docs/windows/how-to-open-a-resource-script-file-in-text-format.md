@@ -76,5 +76,5 @@ There may be times when you want to view the contents of your project's resource
  Win32  
   
 ## See Also  
- [Resource Files](../mfc/resource-files-visual-studio.md)   
- [Resource Editors](../mfc/resource-editors.md)
+ [Resource Files](../windows/resource-files-visual-studio.md)   
+ [Resource Editors](../windows/resource-editors.md)

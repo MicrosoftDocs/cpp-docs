@@ -42,7 +42,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Editing Parts of an Image (Image Editor for Icons)
-You can perform standard editing operations — cutting, copying, clearing, and moving — on a [selection](../mfc/selecting-an-area-of-an-image-image-editor-for-icons.md), whether the selection is the entire image or just a part of it. Because the Image editor uses the Windows Clipboard, you can transfer images between the Image editor and other applications for Windows.  
+You can perform standard editing operations — cutting, copying, clearing, and moving — on a [selection](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md), whether the selection is the entire image or just a part of it. Because the Image editor uses the Windows Clipboard, you can transfer images between the Image editor and other applications for Windows.  
   
  In addition, you can resize the selection, whether it includes the entire image or just a part.  
   
@@ -85,16 +85,16 @@ You can perform standard editing operations — cutting, copying, clearing, and 
   
 3.  To anchor the selection in the image at its new location, click outside the selection border.  
   
- For more information on drawing with a selection, see [Creating a Custom Brush](../mfc/creating-a-custom-brush-image-editor-for-icons.md).  
+ For more information on drawing with a selection, see [Creating a Custom Brush](../windows/creating-a-custom-brush-image-editor-for-icons.md).  
   
- For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](https://msdn.microsoft.com/library/f45fce5x.aspx) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](https://msdn.microsoft.com/library/xbx3z216.aspx). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](https://msdn.microsoft.com/library/h6270d0z.aspx).  
   
  Requirements  
   
  None  
   
 ## See Also  
- [Accelerator Keys](../mfc/accelerator-keys-image-editor-for-icons.md)   
- [Editing Graphical Resources](../mfc/editing-graphical-resources-image-editor-for-icons.md)   
- [Image Editor for Icons](../mfc/image-editor-for-icons.md)
+ [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)   
+ [Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)   
+ [Image Editor for Icons](../windows/image-editor-for-icons.md)
 

@@ -367,7 +367,7 @@ int GetImage() const;
  The index of the image associated with this button.  
   
 ### Remarks  
- If the button has a user-defined image (that is, if `bUserButton` was `TRUE` in the constructor), the returned index specifies an image in the collection of user-defined images (see [CMFCToolBar::GetUserImages](../../mfc/reference/cmfctoolbar-class.md#getuserimages)). Otherwise, the index specifies an image in the collection of images that are loaded from a resource file (see [CMFCToolBar::GetImages](../../mfc/reference/cmfctoolbar-class.md#getimages)). For more information about resource files, see [Working with Resource Files](../../mfc/working-with-resource-files.md).  
+ If the button has a user-defined image (that is, if `bUserButton` was `TRUE` in the constructor), the returned index specifies an image in the collection of user-defined images (see [CMFCToolBar::GetUserImages](../../mfc/reference/cmfctoolbar-class.md#getuserimages)). Otherwise, the index specifies an image in the collection of images that are loaded from a resource file (see [CMFCToolBar::GetImages](../../mfc/reference/cmfctoolbar-class.md#getimages)). For more information about resource files, see [Working with Resource Files](../../windows/working-with-resource-files.md).  
   
 ##  <a name="getinvalidaterect"></a>  CMFCToolBarButton::GetInvalidateRect  
  Retrieves the region of the client area of the button that must be redrawn.  
@@ -1213,7 +1213,7 @@ virtual void ResetImageToDefault();
 ```  
   
 ### Remarks  
- This method retrieves the default image from its parent toolbar by using the [CMFCToolBar::GetDefaultImage](../../mfc/reference/cmfctoolbar-class.md#getdefaultimage) method. If the button has no associated default image, this method sets the text label of the button according to its string resource by using the [CStringT::LoadString](../../atl-mfc-shared/reference/cstringt-class.md#loadstring) method. For more information about string resources, see [Working with Resource Files](../../mfc/working-with-resource-files.md).  
+ This method retrieves the default image from its parent toolbar by using the [CMFCToolBar::GetDefaultImage](../../mfc/reference/cmfctoolbar-class.md#getdefaultimage) method. If the button has no associated default image, this method sets the text label of the button according to its string resource by using the [CStringT::LoadString](../../atl-mfc-shared/reference/cstringt-class.md#loadstring) method. For more information about string resources, see [Working with Resource Files](../../windows/working-with-resource-files.md).  
   
  This method does nothing if the button has a user-defined image.  
   

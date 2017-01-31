@@ -39,7 +39,7 @@ This topic describes how to add a toolbar button that contains a Windows control
 ## Adding Controls to Toolbars  
  To add a control to a toolbar, follow these steps:  
   
-1.  Reserve a dummy resource ID for the button in the parent toolbar resource. For more information about how to create buttons by using the Toolbar Editor in Visual Studio, see the [Toolbar Editor](../mfc/toolbar-editor.md) topic.  
+1.  Reserve a dummy resource ID for the button in the parent toolbar resource. For more information about how to create buttons by using the Toolbar Editor in Visual Studio, see the [Toolbar Editor](../windows/toolbar-editor.md) topic.  
   
 2.  Reserve a toolbar image (button icon) for the button in all bitmaps of the parent toolbar.  
   

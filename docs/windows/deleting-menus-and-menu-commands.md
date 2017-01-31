@@ -52,4 +52,4 @@ translation.priority.mt:
  Win32  
   
 ## See Also  
- [Menu Editor](../mfc/menu-editor.md)
+ [Menu Editor](../windows/menu-editor.md)

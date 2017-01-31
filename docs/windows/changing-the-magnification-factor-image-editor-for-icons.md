@@ -42,18 +42,18 @@ By default, the Image editor displays the view in the left pane at actual size a
   
 1.  Select the **Image Editor** pane whose magnification factor you want to change.  
   
-2.  On the [Image Editor toolbar](../mfc/toolbar-image-editor-for-icons.md), click the arrow to the right of the [Magnify tool](../mfc/toolbar-image-editor-for-icons.md) and select the magnification-factor from the submenu: **1X**, **2X**, **6X**, or **8X**.  
+2.  On the [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md), click the arrow to the right of the [Magnify tool](../windows/toolbar-image-editor-for-icons.md) and select the magnification-factor from the submenu: **1X**, **2X**, **6X**, or **8X**.  
   
     > [!NOTE]
     >  To select a magnification factor other than those listed in the **Magnify** tool, use the accelerator keys.  
   
- For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](https://msdn.microsoft.com/library/f45fce5x.aspx) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](https://msdn.microsoft.com/library/xbx3z216.aspx). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](https://msdn.microsoft.com/library/h6270d0z.aspx).  
   
  Requirements  
   
  None  
   
 ## See Also  
- [Accelerator Keys](../mfc/accelerator-keys-image-editor-for-icons.md)   
- [Window Panes](../mfc/window-panes-image-editor-for-icons.md)
+ [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)   
+ [Window Panes](../windows/window-panes-image-editor-for-icons.md)
 

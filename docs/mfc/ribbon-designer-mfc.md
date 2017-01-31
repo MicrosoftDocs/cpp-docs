@@ -127,5 +127,5 @@ The Ribbon Designer lets you create and customize ribbons in MFC applications. A
   
 ## See Also  
  [User Interface Elements](../mfc/user-interface-elements-mfc.md)   
- [Working with Resource Files](../mfc/working-with-resource-files.md)
+ [Working with Resource Files](../windows/working-with-resource-files.md)
 

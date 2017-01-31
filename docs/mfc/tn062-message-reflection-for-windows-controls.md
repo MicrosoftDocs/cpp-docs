@@ -133,7 +133,7 @@ translation.priority.ht:
   
 #### To try the example that creates a reusable control  
   
-1.  Create a new dialog box in an existing application. For more information, see the [dialog editor](../mfc/dialog-editor.md) topic.  
+1.  Create a new dialog box in an existing application. For more information, see the [dialog editor](../windows/dialog-editor.md) topic.  
   
      You must have an application in which to develop the reusable control. If you don't have an existing application to use, create a dialog-based application using AppWizard.  
   

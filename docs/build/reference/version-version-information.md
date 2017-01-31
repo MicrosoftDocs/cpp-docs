@@ -55,7 +55,7 @@ translation.priority.ht:
   
  The *major* and *minor* arguments are decimal numbers in the range 0 through 65,535. The default is version 0.0.  
   
- The information specified with /VERSION does not affect the version information that appears for an application when you view its properties in File Explorer. That version information comes from a resource file that is used to build the application. See [Version Information Editor](../../mfc/version-information-editor.md) for more information.  
+ The information specified with /VERSION does not affect the version information that appears for an application when you view its properties in File Explorer. That version information comes from a resource file that is used to build the application. See [Version Information Editor](../../windows/version-information-editor.md) for more information.  
   
  Another way to insert a version number is with the [VERSION](../../build/reference/version-c-cpp.md) module-definition statement.  
   

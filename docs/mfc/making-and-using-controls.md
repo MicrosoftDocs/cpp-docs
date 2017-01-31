@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Making and Using Controls
-You make most controls for dialog boxes in the Visual C++ [dialog editor](../mfc/dialog-editor.md). But you can also create controls in any dialog box or window.  
+You make most controls for dialog boxes in the Visual C++ [dialog editor](../windows/dialog-editor.md). But you can also create controls in any dialog box or window.  
   
 ## What do you want to know more about  
   

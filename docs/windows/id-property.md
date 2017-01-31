@@ -40,4 +40,4 @@ The ID property references each accelerator table entry in program code. This is
   
 ## See Also  
  [Setting Accelerator Properties](../windows/setting-accelerator-properties.md)   
- [Accelerator Editor](../mfc/accelerator-editor.md)
+ [Accelerator Editor](../windows/accelerator-editor.md)

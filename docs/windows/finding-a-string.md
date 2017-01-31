@@ -63,5 +63,5 @@ You can search for one or more strings in the string table, and use [regular exp
  Win32  
   
 ## See Also  
- [String Editor](../mfc/string-editor.md)   
+ [String Editor](../windows/string-editor.md)   
 
