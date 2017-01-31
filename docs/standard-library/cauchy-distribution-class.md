@@ -16,7 +16,7 @@ f1_keywords:
   - "random/std::cauchy_distribution::reset"
   - "std::cauchy_distribution::a"
   - "random/std::cauchy_distribution::a"
-   - "std::cauchy_distribution::b"
+  - "std::cauchy_distribution::b"
   - "random/std::cauchy_distribution::b"
   - "std::cauchy_distribution::param"
   - "random/std::cauchy_distribution::param"

@@ -69,5 +69,5 @@ The Properties window enables you to bind message handlers (member functions of 
  [Adding a Member Function](../../ide/adding-a-member-function-visual-cpp.md)   
  [Adding a Member Variable](../../ide/adding-a-member-variable-visual-cpp.md)   
  [Overriding a Virtual Function](../../ide/overriding-a-virtual-function-visual-cpp.md)   
- [Adding Event Handlers for Dialog Box Controls](../../mfc/adding-event-handlers-for-dialog-box-controls.md)   
+ [Adding Event Handlers for Dialog Box Controls](../../windows/adding-event-handlers-for-dialog-box-controls.md)   
  [Navigating the Class Structure](../../ide/navigating-the-class-structure-visual-cpp.md)

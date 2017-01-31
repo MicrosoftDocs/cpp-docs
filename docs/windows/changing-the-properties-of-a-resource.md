@@ -55,4 +55,4 @@ translation.priority.ht:
  None  
   
 ## See Also  
- [Resource Editors](../mfc/resource-editors.md)
+ [Resource Editors](../windows/resource-editors.md)

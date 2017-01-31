@@ -99,5 +99,5 @@ There are a number of predefined accelerator keys that may be part of a Windows 
  Win32  
   
 ## See Also  
- [Accelerator Editor](../mfc/accelerator-editor.md)   
- [Resource Editors](../mfc/resource-editors.md)
+ [Accelerator Editor](../windows/accelerator-editor.md)   
+ [Resource Editors](../windows/resource-editors.md)

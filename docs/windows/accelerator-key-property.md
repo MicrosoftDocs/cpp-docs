@@ -63,4 +63,4 @@ The following are legal entries for the Key property in the accelerator table:
 ## See Also  
  [Setting Accelerator Properties](../windows/setting-accelerator-properties.md)   
  [Editing in an Accelerator Table](../windows/editing-in-an-accelerator-table.md)   
- [Accelerator Editor](../mfc/accelerator-editor.md)
+ [Accelerator Editor](../windows/accelerator-editor.md)

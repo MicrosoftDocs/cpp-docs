@@ -65,7 +65,7 @@ When you're designing a dialog box, you can simulate and test its run-time behav
  Win32  
   
 ## See Also  
- [Controls in Dialog Boxes](../mfc/controls-in-dialog-boxes.md)   
- [Dialog Editor](../mfc/dialog-editor.md)   
- [Showing or Hiding the Dialog Editor Toolbar](../mfc/showing-or-hiding-the-dialog-editor-toolbar.md)
+ [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)   
+ [Dialog Editor](../windows/dialog-editor.md)   
+ [Showing or Hiding the Dialog Editor Toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md)
 

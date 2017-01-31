@@ -1,5 +1,5 @@
 ---
-title: "Understanding Window Traits | Microsoft Docs"
+title: "ATL Window Traits | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

@@ -61,4 +61,4 @@ translation.priority.ht:
  Win32  
   
 ## See Also  
- [Working with Resource Files](../mfc/working-with-resource-files.md)
+ [Working with Resource Files](../windows/working-with-resource-files.md)

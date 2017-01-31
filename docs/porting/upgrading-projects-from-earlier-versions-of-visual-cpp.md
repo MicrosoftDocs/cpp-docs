@@ -56,6 +56,6 @@ In most cases, you can open a project that was created in an earlier version of 
   
 ## See Also  
  [Build System Changes](../build/build-system-changes.md)  
- [What's New for Visual C++ in Visual Studio 2017](../top/what-s-new-for-visual-cpp-in-visual-studio.md) 
+ [What's New for Visual C++ in Visual Studio 2017](../what-s-new-for-visual-cpp-in-visual-studio.md) 
  [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)   
  [Nonstandard Behavior](../cpp/nonstandard-behavior.md)

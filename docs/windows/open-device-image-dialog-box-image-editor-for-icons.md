@@ -45,6 +45,6 @@ Use this dialog box to open device images. It lists existing device images in th
  None  
   
 ## See Also  
- [Image Menu](../mfc/image-menu-image-editor-for-icons.md)   
- [Image Editor for Icons](../mfc/image-editor-for-icons.md)
+ [Image Menu](../windows/image-menu-image-editor-for-icons.md)   
+ [Image Editor for Icons](../windows/image-editor-for-icons.md)
 

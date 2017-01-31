@@ -83,5 +83,5 @@ You can view resources in an .rc file without having a project open. The .rc fil
  Win32  
   
 ## See Also  
- [Resource Files](../mfc/resource-files-visual-studio.md)   
- [Resource Editors](../mfc/resource-editors.md)
+ [Resource Files](../windows/resource-files-visual-studio.md)   
+ [Resource Editors](../windows/resource-editors.md)

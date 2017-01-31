@@ -42,5 +42,5 @@ Many times, you want a menu item and a keyboard combination to issue the same pr
  Win32  
   
 ## See Also  
- [Accelerator Editor](../mfc/accelerator-editor.md)   
- [Resource Editors](../mfc/resource-editors.md)
+ [Accelerator Editor](../windows/accelerator-editor.md)   
+ [Resource Editors](../windows/resource-editors.md)

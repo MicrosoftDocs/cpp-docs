@@ -1,5 +1,5 @@
 ---
-title: "Where Can I Find Microsoft Knowledge Base Articles on Database Topics? | Microsoft Docs"
+title: "Where to find KB articles database topics? | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

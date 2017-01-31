@@ -1,5 +1,5 @@
 ---
-title: "Understanding Parse Trees | Microsoft Docs"
+title: "ATL Registrar and Parse Trees | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

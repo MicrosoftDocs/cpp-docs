@@ -57,5 +57,5 @@ The following procedure shows you how to change the caption property of multiple
  Win32  
   
 ## See Also  
- [String Editor](../mfc/string-editor.md)   
+ [String Editor](../windows/string-editor.md)   
 

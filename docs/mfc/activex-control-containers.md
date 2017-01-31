@@ -64,7 +64,7 @@ An ActiveX control container is a container that fully supports ActiveX controls
   
 -   [ActiveX Control Containers: Using Controls in a Non-Dialog Container](../mfc/activex-control-containers-using-controls-in-a-non-dialog-container.md)  
   
- For more information about using ActiveX controls in a dialog box, see the [Dialog Editor](../mfc/dialog-editor.md) topics.  
+ For more information about using ActiveX controls in a dialog box, see the [Dialog Editor](../windows/dialog-editor.md) topics.  
   
  For a list of articles that explain the details of developing ActiveX controls using Visual C++ and the MFC ActiveX control classes, see [MFC ActiveX controls](../mfc/mfc-activex-controls.md). The articles are grouped by functional categories.  
   

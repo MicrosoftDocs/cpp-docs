@@ -40,27 +40,27 @@ Using the Dialog editor, you can add, resize, edit, and delete controls in dialo
   
  You can use the shortcut menu in the Dialog editor to quickly add registered ActiveX controls to a dialog box, and you can add ActiveX controls to the Toolbox for quick access (for more information, see [Customize Toolbox Dialog Box](http://msdn.microsoft.com/en-us/bd07835f-18a8-433e-bccc-7141f65263bb)).  
   
--   [Add a control to a dialog box](../mfc/adding-a-control-to-a-dialog-box.md)  
+-   [Add a control to a dialog box](adding-a-control-to-a-dialog-box.md)  
   
--   [Size a control while you add it](../mfc/sizing-a-control-while-you-add-it.md)  
+-   [Size a control while you add it](sizing-a-control-while-you-add-it.md)  
   
--   [Add multiple controls](../mfc/adding-multiple-controls.md)  
+-   [Add multiple controls](adding-multiple-controls.md)  
   
--   [Add an ActiveX control to a dialog box](../mfc/viewing-and-adding-activex-controls-to-a-dialog-box.md)  
+-   [Add an ActiveX control to a dialog box](viewing-and-adding-activex-controls-to-a-dialog-box.md)  
   
--   [Edit the properties of a control or controls](../mfc/editing-control-properties.md)  
+-   [Edit the properties of a control or controls](editing-control-properties.md)  
   
--   [Delete a control](../mfc/deleting-a-control.md)  
+-   [Delete a control](deleting-a-control.md)  
   
--   [Show or hide the Toolbox window](../mfc/showing-or-hiding-the-dialog-editor-toolbar.md)  
+-   [Show or hide the Toolbox window](showing-or-hiding-the-dialog-editor-toolbar.md)  
   
- For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](https://msdn.microsoft.com/library/f45fce5x.aspx) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](https://msdn.microsoft.com/library/xbx3z216.aspx). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](https://msdn.microsoft.com/library/h6270d0z.aspx).  
   
 ## Requirements  
  Win32  
   
 ## See Also  
- [Controls in Dialog Boxes](../mfc/controls-in-dialog-boxes.md)   
- [Adding Event Handlers for Dialog Box Controls](../mfc/adding-event-handlers-for-dialog-box-controls.md)   
+ [Controls in Dialog Boxes](controls-in-dialog-boxes.md)   
+ [Adding Event Handlers for Dialog Box Controls](adding-event-handlers-for-dialog-box-controls.md)   
  [Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)
 

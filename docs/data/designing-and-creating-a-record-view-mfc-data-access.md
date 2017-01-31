@@ -48,7 +48,7 @@ You can create your record view class with the [MFC Application Wizard](../mfc/r
   
 #### To design your form  
   
-1.  See [Dialog Editor](../mfc/dialog-editor.md).  
+1.  See [Dialog Editor](../windows/dialog-editor.md).  
   
 #### To create your record view class  
   

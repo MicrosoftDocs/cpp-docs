@@ -1,5 +1,5 @@
 ---
-title: "Security Classes | Microsoft Docs"
+title: "Security Classes (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

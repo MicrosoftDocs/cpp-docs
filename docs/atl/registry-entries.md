@@ -1,5 +1,5 @@
 ---
-title: "Registry Entries | Microsoft Docs"
+title: "Registry Entries (ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

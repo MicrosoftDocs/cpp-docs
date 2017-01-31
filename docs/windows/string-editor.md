@@ -50,17 +50,17 @@ A string table is a Windows resource that contains a list of IDs, values, and ca
   
  Using the String editor, you can:  
   
--   [Search for one or more strings](../mfc/finding-a-string.md).  
+-   [Search for one or more strings](../windows/finding-a-string.md).  
   
--   Quickly [insert new entries](../mfc/adding-or-deleting-a-string.md) into the string table.  
+-   Quickly [insert new entries](../windows/adding-or-deleting-a-string.md) into the string table.  
   
--   [Move a string from one resource file to another](../mfc/moving-a-string-from-one-resource-file-to-another.md)  
+-   [Move a string from one resource file to another](../windows/moving-a-string-from-one-resource-file-to-another.md)  
   
--   [Use in-place editing for the ID, Value, and Caption properties](../mfc/changing-the-properties-of-a-string.md) and view changes immediately.  
+-   [Use in-place editing for the ID, Value, and Caption properties](../windows/changing-the-properties-of-a-string.md) and view changes immediately.  
   
--   [Change the caption property of multiple strings](../mfc/changing-the-caption-property-of-multiple-strings.md)  
+-   [Change the caption property of multiple strings](../windows/changing-the-caption-property-of-multiple-strings.md)  
   
--   [Add formatting or special characters to a string](../mfc/adding-formatting-or-special-characters-to-a-string.md)  
+-   [Add formatting or special characters to a string](../windows/adding-formatting-or-special-characters-to-a-string.md)  
   
     > [!NOTE]
     >  Windows does not allow the creation of empty string tables. If you create a string table with no entries, it is deleted automatically when you save the resource file.  
@@ -71,7 +71,7 @@ A string table is a Windows resource that contains a list of IDs, values, and ca
  Win32  
   
 ## See Also  
- [Resource Editors](../mfc/resource-editors.md)   
+ [Resource Editors](../windows/resource-editors.md)   
  [Strings](http://msdn.microsoft.com/library/windows/desktop/ms646979.aspx)   
  [About Strings](http://msdn.microsoft.com/library/windows/desktop/ms647465.aspx)
 

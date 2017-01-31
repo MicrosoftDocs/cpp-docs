@@ -52,5 +52,5 @@ The toolbar family of articles describes MFC toolbars and how to create and use 
   
 ## See Also  
  [User Interface Elements](../mfc/user-interface-elements-mfc.md)   
- [Toolbar Editor](../mfc/toolbar-editor.md)
+ [Toolbar Editor](../windows/toolbar-editor.md)
 

@@ -63,7 +63,7 @@ The Windows common controls can be used in [dialog boxes](../mfc/dialog-boxes.md
     >  You can also use dialog data exchange to set or retrieve values from the controls in a dialog box.  
   
 ## Remarks  
- The addition of some common controls to a dialog box will cause the dialog box to no longer function. Refer to [Adding Controls to a Dialog Causes the Dialog to No Longer Function](../mfc/adding-controls-to-a-dialog-causes-the-dialog-to-no-longer-function.md) for more information on handling this situation.  
+ The addition of some common controls to a dialog box will cause the dialog box to no longer function. Refer to [Adding Controls to a Dialog Causes the Dialog to No Longer Function](../windows/adding-controls-to-a-dialog-causes-the-dialog-to-no-longer-function.md) for more information on handling this situation.  
   
 ## What do you want to do  
   

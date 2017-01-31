@@ -44,23 +44,23 @@ When you are placing or arranging controls in a dialog box, you can use the layo
   
 1.  From the **Format** menu, choose **Guide Settings**.  
   
-2.  In the [Guide Settings Dialog Box](../mfc/guide-settings-dialog-box.md), select or clear the **Grid** button.  
+2.  In the [Guide Settings Dialog Box](../windows/guide-settings-dialog-box.md), select or clear the **Grid** button.  
   
-     You can still control the grid in individual Dialog editor windows using the **Toggle Grid** button on the [Dialog Editor Toolbar](../mfc/showing-or-hiding-the-dialog-editor-toolbar.md).  
+     You can still control the grid in individual Dialog editor windows using the **Toggle Grid** button on the [Dialog Editor Toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).  
   
 ### To change the size of the layout grid  
   
 1.  From the **Format** menu, choose **Guide Settings**.  
   
-2.  In the [Guide Settings Dialog Box](../mfc/guide-settings-dialog-box.md), type the height and width in DLUs for the cells in the grid. The minimum height or width is 4 DLUs. For more information on DLUs, see [The Arrangement of Controls on Dialog Boxes](../mfc/arrangement-of-controls-on-dialog-boxes.md).  
+2.  In the [Guide Settings Dialog Box](../windows/guide-settings-dialog-box.md), type the height and width in DLUs for the cells in the grid. The minimum height or width is 4 DLUs. For more information on DLUs, see [The Arrangement of Controls on Dialog Boxes](../windows/arrangement-of-controls-on-dialog-boxes.md).  
   
- For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](https://msdn.microsoft.com/library/f45fce5x.aspx) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](https://msdn.microsoft.com/library/xbx3z216.aspx). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](https://msdn.microsoft.com/library/h6270d0z.aspx).  
   
  Requirements  
   
  Win32  
   
 ## See Also  
- [Dialog Editor States (Guides and Grids)](../mfc/dialog-editor-states-guides-and-grids.md)   
- [Controls in Dialog Boxes](../mfc/controls-in-dialog-boxes.md)
+ [Dialog Editor States (Guides and Grids)](../windows/dialog-editor-states-guides-and-grids.md)   
+ [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)
 

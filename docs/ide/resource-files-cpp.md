@@ -37,7 +37,7 @@ translation.priority.ht:
 # Resource Files (C++)
 Resources are interface elements that provide information to the user. Bitmaps, icons, toolbars, and cursors are all resources. Some resources can be manipulated to perform an action such as selecting from a menu or entering data in dialog box.  
   
- See [Working with Resources](../mfc/working-with-resource-files.md) for more information.  
+ See [Working with Resources](../windows/working-with-resource-files.md) for more information.  
   
 |File name|Directory location|Solution Explorer location|Description|  
 |---------------|------------------------|--------------------------------|-----------------|  

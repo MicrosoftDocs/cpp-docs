@@ -112,7 +112,7 @@ CSingleDocTemplate(
   
  You can edit this string using the string editor; the entire string appears as a single entry in the String Editor, not as seven separate entries.  
   
- For more information about these resource types, see the [String Editor](../../mfc/string-editor.md).  
+ For more information about these resource types, see the [String Editor](../../windows/string-editor.md).  
   
  `pDocClass`  
  Points to the `CRuntimeClass` object of the document class. This class is a **CDocument**-derived class you define to represent your documents.  

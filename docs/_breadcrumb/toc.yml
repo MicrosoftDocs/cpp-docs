@@ -114,7 +114,7 @@
               topicHref: /cpp/error-messages/tool-errors/vectorizer-and-parallelizer-messages
       - name: Porting and Upgrading
         tocHref: /cpp/porting/
-        topicHref: /cpp/porting/porting-and-upgrading-guide
+        topicHref: /cpp/porting/visual-cpp-porting-and-upgrading-guide
       - name: Text and Strings
         tocHref: /cpp/text/
         topicHref: /cpp/text/text-and-strings

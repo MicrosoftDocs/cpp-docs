@@ -38,7 +38,7 @@ translation.priority.ht:
 # ATL Dialog Wizard
 This wizard inserts into the project an ATL dialog box object, derived from [CAxDialogImpl](../../atl/reference/caxdialogimpl-class.md). A dialog box derived from `CAxDialogImpl` can host ActiveX controls.  
   
- The wizard creates a dialog resource with default **OK** and **Cancel** buttons. You can edit the dialog resource and add ActiveX controls using the [Dialog Editor](../../mfc/dialog-editor.md) in Resource View.  
+ The wizard creates a dialog resource with default **OK** and **Cancel** buttons. You can edit the dialog resource and add ActiveX controls using the [Dialog Editor](../../windows/dialog-editor.md) in Resource View.  
   
  The wizard inserts into the header file a [message map](../../atl/message-maps-atl.md) and declarations for handling the default click events. See [Implementing a Dialog Box](../../atl/implementing-a-dialog-box.md) for more information about ATL dialog boxes.  
   

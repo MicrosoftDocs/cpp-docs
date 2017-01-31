@@ -1,5 +1,5 @@
 ---
-title: "How to: Use Regular Expressions to Validate Data Formatting (C++-CLI) | Microsoft Docs"
+title: "Use Regular Expressions to Validate Formatting (C++-CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

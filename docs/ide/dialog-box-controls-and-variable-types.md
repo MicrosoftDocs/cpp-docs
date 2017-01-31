@@ -37,7 +37,7 @@ translation.priority.ht:
 # Dialog Box Controls and Variable Types
 You can use the [Add Member Variable Wizard](../ide/add-member-variable-wizard.md) to add a member variable to a dialog box control created using MFC. The type of control for which you add the member variable determines the options that appear in the dialog box.  
   
- The following table describes all dialog box control types supported in MFC and the [Dialog Editor](../mfc/dialog-editor.md), and their available types and values.  
+ The following table describes all dialog box control types supported in MFC and the [Dialog Editor](../windows/dialog-editor.md), and their available types and values.  
   
 |Control|Control type|Control variable type|Value variable type|Min/max values (value type only)|  
 |-------------|------------------|---------------------------|-------------------------|-----------------------------------------|  

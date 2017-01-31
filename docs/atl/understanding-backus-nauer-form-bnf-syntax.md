@@ -1,5 +1,5 @@
 ---
-title: "Understanding Backus Nauer Form (BNF) Syntax | Microsoft Docs"
+title: "ATL Registrar and Backus Nauer Form (BNF) Syntax | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

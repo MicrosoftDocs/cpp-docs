@@ -69,6 +69,6 @@ This dialog box allows you to customize the colors you use for your image. For m
  None  
   
 ## See Also  
- [Image Menu](../mfc/image-menu-image-editor-for-icons.md)   
+ [Image Menu](../windows/image-menu-image-editor-for-icons.md)   
  [Customizing or Changing Colors](../windows/customizing-or-changing-colors-image-editor-for-icons.md)   
  [Colors Window](../windows/colors-window-image-editor-for-icons.md)

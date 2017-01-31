@@ -1,5 +1,5 @@
 ---
-title: "String and Text Classes | Microsoft Docs"
+title: "ATL String and Text Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

@@ -100,7 +100,7 @@ Inserts into an ATL project (or an MFC project with ATL support) an ATL control.
  Sets the object description that will appear in the registry  
   
  **ProgID**  
- Sets the name that containers can use instead of the CLSID of the object. This field is not automatically populated. If you do not manually populate this field, the control may not be available to other tools. For example, ActiveX controls that are generated without a `ProgID` are not available in the **Insert ActiveX Control** dialog box. For more information about the dialog box, see [Insert ActiveX Control Dialog Box](../../mfc/insert-activex-control-dialog-box.md).  
+ Sets the name that containers can use instead of the CLSID of the object. This field is not automatically populated. If you do not manually populate this field, the control may not be available to other tools. For example, ActiveX controls that are generated without a `ProgID` are not available in the **Insert ActiveX Control** dialog box. For more information about the dialog box, see [Insert ActiveX Control Dialog Box](../../windows/insert-activex-control-dialog-box.md).  
   
 ## See Also  
  [ATL Control](../../atl/reference/adding-an-atl-control.md)   
