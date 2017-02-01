@@ -29,7 +29,7 @@ apilocation:
   - "msvcr110_clr0400.dll"
   - "msvcr120.dll"
   - "msvcr120_clr0400.dll"
-  = "ntoskrnl.exe"
+  - "ntoskrnl.exe"
   - "ucrtbase.dll"
 apitype: "DLLExport"
 f1_keywords: 
