@@ -258,7 +258,7 @@ HRESULT WINAPI UpdateRegistryFromResourceD(
   
  To statically link to the ATL Registry Component (Registrar), see [CAtlModule::UpdateRegistryFromResourceS](#updateregistryfromresources).  
   
- This method calls [CAtlModule::UpdateRegistryFromResourceDHelper](#updateregistryfromresourcedhelper).  
+ This method calls [CAtlModule::UpdateRegistryFromResourceDHelper](#updateregistryfromresourcedhelper) and [IRegistrar::UnregisterResource](iregistrar-class.md#UnregisterResource).  
   
 ##  <a name="updateregistryfromresourcedhelper"></a>  CAtlModule::UpdateRegistryFromResourceDHelper  
  This method is called by `UpdateRegistryFromResourceD` to perform the registry update.  
