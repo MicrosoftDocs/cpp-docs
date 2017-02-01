@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # IRegistrar Interface
-This interface is defined in atliface.h and is used internally by CAtlModule member functions such as [UpdateRegistryFromResourceD](catlmodule-class.md#UpdateRegistryFromResourceD).   
+This interface is defined in atliface.h and is used internally by CAtlModule member functions such as [UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced).   
   
 ## Syntax  
   
