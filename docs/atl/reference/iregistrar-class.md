@@ -133,7 +133,7 @@ virtual HRESULT STDMETHODCALLTYPE ResourceRegister(
 ```  
    
   
-##  <a name="resourceunreg"></a>  IRegistrar::ResourceUnregister  
+##  <a name="resourceunregister"></a>  IRegistrar::ResourceUnregister  
  Unregisters the resource.  
   
 ```
