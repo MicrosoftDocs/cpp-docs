@@ -194,6 +194,7 @@
 ## [IPropertyPageImpl Class](ipropertypageimpl-class.md)
 ## [IProvideClassInfo2Impl Class](iprovideclassinfo2impl-class.md)
 ## [IQuickActivateImpl Class](iquickactivateimpl-class.md)
+## [IRegistrar Interface](iregistrar-class.md)
 ## [IRunnableObjectImpl Class](irunnableobjectimpl-class.md)
 ## [IServiceProviderImpl Class](iserviceproviderimpl-class.md)
 ## [ISpecifyPropertyPagesImpl Class](ispecifypropertypagesimpl-class.md)
