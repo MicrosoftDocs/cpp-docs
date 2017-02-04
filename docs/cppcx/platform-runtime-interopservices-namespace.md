@@ -1,0 +1,55 @@
+---
+title: "Platform::Runtime::InteropServices Namespace | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/30/2016"
+ms.prod: "windows-client-threshold"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "language-reference"
+f1_keywords: 
+  - "Platform/Platform::Runtime::InteropServices"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "Platform::Runtime::InteropServices Namespace"
+ms.assetid: 546b981a-a360-4a78-b89f-fdf0df848747
+caps.latest.revision: 3
+author: "ghogen"
+ms.author: "ghogen"
+manager: "ghogen"
+---
+# Platform::Runtime::InteropServices Namespace
+This namespace is intended for internal use only, and is not intended to be used for development.  
+  
+## Syntax  
+  
+```cpp  
+  
+namespace Platform {  
+   namespace InteropServices {  
+}}  
+```  
+  
+## Members  
+ Although this namespace is intended for internal use, browsers can display the following members of this namespace.  
+  
+|Name|Remark|  
+|----------|------------|  
+|ComInterfaceType|enumeration|  
+|InterfaceTypeAttribute||  
+|LayoutKind|enumeration|  
+|MarshalAsAttribute||  
+|StuctLayoutAttribute||  
+|UnmanagedType|enumeration|  
+  
+## Inheritance Hierarchy  
+ `Platform`  
+  
+## Requirements  
+ **Metadata:** platform.winmd  
+  
+ **Namespace:** Platform::InteropServices  
+  
+## See Also  
+ [(NOTINBUILD) Platform Namespace](http://msdn.microsoft.com/en-us/f3ce3eab-028c-4204-ba9f-9ab8af17c8c4)
