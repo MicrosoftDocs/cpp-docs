@@ -54,7 +54,7 @@ Used with the [switch_type](../windows/switch-type.md) attribute in a **union**.
   
 -   `char`  
   
--   **boolean**  
+-   `boolean`  
   
 -   `enum`  
   
