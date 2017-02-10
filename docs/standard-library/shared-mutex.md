@@ -130,6 +130,7 @@ void swap(shared_lock<Mutex>& x, shared_lock<Mutex>& y) noexcept;
 ###  <a name="class_shared_mutex"></a> shared_mutex Class  
  Class `shared_mutex` implements a non-recursive mutex with shared ownership semantics.  
   
+```cpp
 class shared_mutex {
    public:
    shared_mutex();
@@ -150,10 +151,12 @@ class shared_mutex {
    typedef void** native_handle_type; // implementation defined
    native_handle_type native_handle();
    };  
-  
+```
+
 ###  <a name="class_shared_timed_mutex"></a> shared_timed_mutex Class  
  Class `shared_timed_mutex` implements a non-recursive mutex with shared ownership semantics that meets the requirements of a timed mutex type.  
   
+```cpp
 class shared_timed_mutex {
    public:
    shared_timed_mutex();
@@ -179,10 +182,12 @@ class shared_timed_mutex {
    bool try_lock_shared_until(const chrono::time_point\<Clock, Duration>& abs_time);
    void unlock_shared();
    };  
-  
+```
+
 ###  <a name="class_shared_lock"></a> shared_lock Class  
  Template class `shared_lock` controls the shared ownership of a shared mutex object within a scope. The template parameter must be a shared mutex type.  
-  
+
+```cpp
 class shared_lock {
    public:
    typedef Mutex mutex_type;
@@ -222,7 +227,8 @@ class shared_lock {
    mutex_type* pm; // exposition only
    bool owns; // exposition only
    };  
-  
+```
+
 ## Functions  
   
 ###  <a name="function_swap"></a> swap Function  

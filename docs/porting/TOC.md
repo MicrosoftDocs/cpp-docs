@@ -8,6 +8,7 @@
 ### [Porting Guide: Spy++](porting-guide-spy-increment.md)
 ## [Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)
 ### [Overview of potential upgrade issues (Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)
+### [Upgrade your code to the Universal CRT](upgrade-your-code-to-the-universal-crt.md)
 ### [Modifying WINVER and _WIN32_WINNT](modifying-winver-and-win32-winnt.md)
 ## [Introduction to Visual C++ for UNIX Users](introduction-to-visual-cpp-for-unix-users.md)
 ## [Porting from UNIX to Win32](porting-from-unix-to-win32.md)
