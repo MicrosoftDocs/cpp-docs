@@ -52,7 +52,7 @@ By default, a record view is associated with a single recordset object, whose fi
   
 #### To fill a combo box or list box from a second recordset  
   
-1.  Create the recordset object ([CRecordset](../mfc/reference/crecordset-class.md) for ODBC, [CDaoRecordset](../mfc/reference/cdaorecordset-class.md) for DAO).  
+1.  Create the recordset object ([CRecordset](../mfc/reference/crecordset-class.md).  
   
 2.  Obtain a pointer to the [CComboBox](../mfc/reference/ccombobox-class.md) object for the combo box control.  
   

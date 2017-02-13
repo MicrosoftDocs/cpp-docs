@@ -41,7 +41,7 @@ The following table shows what you typically must do to work with a record view 
 |You|The framework|  
 |---------|-------------------|  
 |Use the Visual C++ Dialog editor to design the form.|Creates a dialog template resource with controls.|  
-|Use the [MFC Application Wizard](../mfc/reference/database-support-mfc-application-wizard.md) to create classes derived from [CRecordView](../mfc/reference/crecordview-class.md) and [CRecordset](../mfc/reference/crecordset-class.md) or from [CDaoRecordView](../mfc/reference/cdaorecordview-class.md) and [CDaoRecordset](../mfc/reference/cdaorecordset-class.md).|Writes the classes for you.|  
+|Use the [MFC Application Wizard](../mfc/reference/database-support-mfc-application-wizard.md) to create classes derived from [CRecordView](../mfc/reference/crecordview-class.md) and [CRecordset](../mfc/reference/crecordset-class.md).|Writes the classes for you.|  
 |Map record view controls to recordset field data members.|Provides DDX between the controls and the recordset fields.|  
 ||Provides default command handlers for **Move First**, **Move Last**, **Move Next**, and **Move Previous** commands from menus or toolbar buttons.|  
 ||Updates changes to the data source.|  

@@ -37,54 +37,17 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Data Access Programming (MFC/ATL)
-Visual C++ provides several ways to work with databases. The preferred way is to use one of the class libraries such as the Active Template Class Library (ATL) or Microsoft Foundation Class (MFC) Library, which simplify working with the database APIs.  
-  
-> [!NOTE]
->  This topic covers the older technologies you can use for database programming in Visual C++. For information on data access programming using Visual C++ and SQL Server, see [Data Access Using ADO.NET (C++/CLI)](../dotnet/data-access-using-adonet-cpp-cli.md), and [Accessing data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio).  
+Over the years, Visual C++ has provided several ways to work with databases. Currently, the preferred way to connect to databases in native C++ is to use ODBC directly by calling ODBC APIs, or by using the MFC ODBC wrapper classes, or by using a third-party C++ wrapper library for ODBC. The OLE DB standard, and the ATL OLE DB classes and templates are still supported, but the OLE DB provider for SQL Server has been deprecated since SQL Server 2012. The SQL Native Client component, which packages OLE DB and ODBC drivers in a single DLL, is also deprecated. New C++ applications that connect to SQL Server or Azure SQL Database should use the most recent ODBC driver. Microsoft provides versions of this driver for MacOS and Linux in addition to Windows. By using ODBC you gain maximum portability of your code over multiple platforms and data sources. Most SQL database products and many NoSQL products support ODBC.
+
+If you use C++/CLI, you can continued to use ADO.NET as always. For more information, see [Data Access Using ADO.NET (C++/CLI)](../dotnet/data-access-using-adonet-cpp-cli.md), and [Accessing data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio).  
   
  The library classes support the following kinds of data access:  
   
--   ATL provides OLE DB templates and database attributes.  
+-   ATL provides OLE DB templates and database attributes. OLE DB is based on the COM specification, and is only supported on Windows. Use these classes and templates only when maintaining existing applications that connect to Access or data sources other than SQL Server; for example Oracle provides an OLE DB interface. If you are using these classes to connect to SQL Server, you should migrate to ODBC in the near future.
   
--   MFC provides Open Database Connectivity (ODBC) and an ODBC driver.  
+-   MFC provides Open Database Connectivity (ODBC) and Data Acess Objects (DAO) wrapper classes.  DAO is obsolete. Any code based on CDaoDatabase or CDaoRecordset should be upgraded to use ODBC.
   
- These libraries supply abstractions that simplify working with databases, complete with the speed, power, and flexibility of C++. They integrate your data access work with the library's application framework.  
-  
- Alternately, you can directly call database API functions from the COM, ODBC, or DAO software development kits (SDKs). For information about programming directly with the COM, DAO, or ODBC API functions, see the COM SDK, DAO SDK, or ODBC SDK.  
-  
- Use ATL OLE DB if you need to access data, regardless of the form in which it is stored. Use the MFC ODBC classes when you are not using Microsoft Jet (.mdb) databases and want to work with the ODBC API for complete data-source independence. Use the MFC DAO classes when you want to work with Microsoft Jet (.mdb) databases or with external databases such as ODBC data sources.  
-  
-> [!NOTE]
->  Microsoft recommends using OLE DB or ODBC for new projects. DAO should only be used in maintaining existing applications.  
-  
- Besides writing stand-alone database applications, you can often use a database effectively in other kinds of programs as a convenient storage and retrieval medium.  
-  
-|To learn more about|See|  
-|-------------------------|---------|  
-|**Selecting a database technology**||  
-|ODBC vs. DAO|[Should I Use DAO or ODBC?](../data/should-i-use-dao-or-odbc-q.md)|  
-|Using the Microsoft Knowledge Base to find additional articles on database topics written by product support engineers|[Microsoft Knowledge Base](../data/where-can-i-find-microsoft-knowledge-base-articles-on-database-topics-q.md)|  
-|**ATL Database Support (OLE DB)**||  
-|OLE DB programming (conceptual topics)|[OLE DB Programming Overview](../data/oledb/ole-db-programming-overview.md)|  
-|Using the OLE DB consumer templates (conceptual topics)|[OLE DB Consumer Templates](../data/oledb/ole-db-consumer-templates-cpp.md)|  
-|OLE DB consumer attributes|[OLE DB Consumer Attributes](../windows/ole-db-consumer-attributes.md)|  
-|Using the OLE DB provider templates (conceptual topics)|[OLE DB Provider Templates](../data/oledb/ole-db-provider-templates-cpp.md)|  
-|Adding an OLE DB consumer to an MFC project|[Creating an OLE DB Consumer](../data/oledb/creating-an-ole-db-consumer.md)|  
-|**MFC Database Support (ODBC and DAO)**||  
-|What DAO and ODBC are|[What Are DAO and ODBC?](../data/what-are-dao-and-odbc-q.md)|  
-|When to use the MFC database classes|[When Should I Use the Database Classes?](../data/when-should-i-use-the-database-classes-q.md)|  
-|Learn about the MFC database programming model|[What Is the MFC Database Programming Model?](../data/what-is-the-mfc-database-programming-model-q.md).|  
-|Choose between the MFC DAO classes and the MFC ODBC classes|[Should I Use DAO or ODBC?](../data/should-i-use-dao-or-odbc-q.md).|  
-|Data sources you can access with DAO and ODBC|[What Data Sources Can I Access with DAO and ODBC?](../data/what-data-sources-can-i-access-with-dao-and-odbc-q.md)|  
-|Open Database Connectivity (ODBC)|[ODBC and MFC](../data/odbc/odbc-and-mfc.md)|  
-|Whether you can call DAO or ODBC APIs directly while using the classes|[Can I Call DAO or ODBC Directly?](../data/can-i-call-dao-or-odbc-directly-q.md)|  
-|What ODBC drivers are provided|[ODBC Driver List](../data/odbc/odbc-driver-list.md)|  
-|How the database classes work with the MFC document/view architecture|[MFC: Using Database Classes with Documents and Views](../data/mfc-using-database-classes-with-documents-and-views.md)|  
-|Installing MFC database support; what ODBC drivers are installed in Visual C++ by default; what ODBC and DAO SDK components are installed|[Installing MFC Database Support](../data/installing-mfc-database-support.md)|  
-|**Data-Bound Controls (ADO and RDO)**||  
-|Writing a program that uses data-bound controls|[Data-Bound Controls (ADO and RDO)](../data/ado-rdo/data-bound-controls-ado-and-rdo.md)|  
-|Data binding using ActiveX controls|[MFC ActiveX Controls: Using Data Binding in an ActiveX Control](../mfc/mfc-activex-controls-using-data-binding-in-an-activex-control.md)|  
-|Distributing ActiveX controls|[MFC ActiveX Controls: Distributing ActiveX Controls](../mfc/mfc-activex-controls-distributing-activex-controls.md)|  
+
   
 ## See Also  
  [Data Access](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)

@@ -35,9 +35,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # ATL Database Classes (OLE DB Templates)
-Microsoft provides several implementations of OLE DB, a set of COM interfaces that provide uniform access to data in diverse information sources and formats.  
+Microsoft provides several implementations of OLE DB, a set of COM interfaces that provide uniform access to data in diverse information sources and formats.  OLE DB is officially deprecated; this documentation is for developers who are maintaining legacy code. New applications should use ODBC to connect to SQL data sources.
   
- The OLE DB Templates are C++ templates in ATL that make the high-performance OLE DB database technology easier to use by providing classes that implement many of the commonly used OLE DB interfaces.  
+ The OLE DB Templates are C++ templates in ATL that make OLE DB database technology easier to use by providing classes that implement many of the commonly used OLE DB interfaces.  
   
  This template library contains two parts:  
   

@@ -11,7 +11,6 @@ ms.topic: "article"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "DAO [C++], record views"
   - "MFC [C++], record views"
   - "ODBC recordsets [C++], record views"
   - "databases [C++], record views"
@@ -38,9 +37,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Record Views  (MFC Data Access)
-This section applies only to the MFC ODBC and DAO classes. For information about OLE DB record views, see [COleDBRecordView](../mfc/reference/coledbrecordview-class.md) and [Using OLE DB Record Views](../data/oledb/using-ole-db-record-views.md).  
+This section applies only to the MFC ODBC classes. For information about OLE DB record views, see [COleDBRecordView](../mfc/reference/coledbrecordview-class.md) and [Using OLE DB Record Views](../data/oledb/using-ole-db-record-views.md).  
   
- To support form-based data-access applications, the class library provides class [CRecordView](../mfc/reference/crecordview-class.md) and class [CDaoRecordView](../mfc/reference/cdaorecordview-class.md). A record view is a form view object whose controls are mapped directly to the field data members of a [recordset](../data/odbc/recordset-odbc.md) object (and indirectly to the corresponding columns in a query result or table on the data source). Like their base class [CFormView](../mfc/reference/cformview-class.md), `CRecordView` and `CDaoRecordView` are based on a dialog template resource.  
+ To support form-based data-access applications, the class library provides class [CRecordView](../mfc/reference/crecordview-class.md). A record view is a form view object whose controls are mapped directly to the field data members of a [recordset](../data/odbc/recordset-odbc.md) object (and indirectly to the corresponding columns in a query result or table on the data source). Like its base class [CFormView](../mfc/reference/cformview-class.md), `CRecordView` is based on a dialog template resource.  
   
 ## Form Uses  
  Forms are useful for a variety of data-access tasks:  
