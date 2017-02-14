@@ -293,7 +293,7 @@ description: Learn how to use C++ to develop applications, services, and tools f
                                 </a>
                             </li>
                             <li>
-                                <a href="/visualstudio/profiler/profiling-tools">
+                                <a href="/visualstudio/profiling/profiling-tools">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

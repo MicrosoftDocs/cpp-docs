@@ -7,6 +7,7 @@
 ### [Porting Guide: COM Spy](porting-guide-com-spy.md)
 ### [Porting Guide: Spy++](porting-guide-spy-increment.md)
 ## [Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)
+## [Use native multi-targeting in Visual Studio to build old projects](use-native-multi-targeting.md)
 ### [Overview of potential upgrade issues (Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)
 ### [Upgrade your code to the Universal CRT](upgrade-your-code-to-the-universal-crt.md)
 ### [Modifying WINVER and _WIN32_WINNT](modifying-winver-and-win32-winnt.md)
