@@ -43,30 +43,26 @@ A "floating-point constant" is a decimal number that represents a signed real nu
   
 ## Syntax  
  *floating-point-constant*:  
- *fractional-constant exponent-part* opt*floating-suffix* opt  
-  
- *digit-sequence exponent-part floating-suffix* opt  
+ &nbsp;&nbsp; *fractional-constant exponent-part*<sub>opt</sub> *floating-suffix*<sub>opt</sub>  
+ &nbsp;&nbsp; *digit-sequence exponent-part floating-suffix*<sub>opt</sub>  
   
  *fractional-constant*:  
- *digit-sequence* opt**.** *digit-sequence*  
-  
- *digit-sequence*  **.**  
+ &nbsp;&nbsp; *digit-sequence*<sub>opt</sub> **.** *digit-sequence*  
+ &nbsp;&nbsp; *digit-sequence*  **.**  
   
  *exponent-part*:  
- **e**  *sign* opt*digit-sequence*  
-  
- **E**  *sign* opt*digit-sequence*  
+ &nbsp;&nbsp; **e**  *sign*<sub>opt</sub> *digit-sequence*  
+ &nbsp;&nbsp; **E**  *sign*<sub>opt</sub> *digit-sequence*  
   
  *sign* : one of  
- **+ –**  
+ &nbsp;&nbsp; **+ –**  
   
  *digit-sequence*:  
- *digit*  
-  
- *digit-sequence digit*  
+ &nbsp;&nbsp; *digit*  
+ &nbsp;&nbsp; *digit-sequence digit*  
   
  *floating-suffix* : one of  
- **f l F L**  
+ &nbsp;&nbsp; **f l F L**  
   
  You can omit either the digits before the decimal point (the integer portion of the value) or the digits after the decimal point (the fractional portion), but not both. You can leave out the decimal point only if you include an exponent. No white-space characters can separate the digits or characters of the constant.  
   
@@ -80,16 +76,16 @@ A "floating-point constant" is a decimal number that represents a signed real nu
 25E-4     /* =  0.0025 */  
 ```  
   
- Floating-point constants are positive unless they are preceded by a minus sign (**–**). In this case, the minus sign is treated as a unary arithmetic negation operator. Floating-point constants have type **float**, **double**, or `long double`.  
+ Floating-point constants are positive unless they are preceded by a minus sign (**–**). In this case, the minus sign is treated as a unary arithmetic negation operator. Floating-point constants have type `float`, `double`, or `long double`.  
   
- A floating-point constant without an **f**, **F**, **l**, or **L** suffix has type **double**. If the letter **f** or **F** is the suffix, the constant has type **float**. If suffixed by the letter **l** or **L**, it has type `long double`. For example:  
+ A floating-point constant without an **f**, **F**, **l**, or **L** suffix has type `double`. If the letter **f** or **F** is the suffix, the constant has type `float`. If suffixed by the letter **l** or **L**, it has type `long double`. For example:  
   
 ```  
 100L  /* Has type long double  */  
 100F  /* Has type float        */  
 ```  
   
- Note that the Microsoft C compiler maps **long double** to type **double**. See [Storage of Basic Types](../c-language/storage-of-basic-types.md) for information about type **double**, **float**, and **long**.  
+ Note that the Microsoft C compiler internally represents `long double` the same as type `double`. See [Storage of Basic Types](../c-language/storage-of-basic-types.md) for information about type `double`, `float`, and `long double`.  
   
  You can omit the integer portion of the floating-point constant, as shown in the following examples. The number .75 can be expressed in many ways, including the following:  
   
