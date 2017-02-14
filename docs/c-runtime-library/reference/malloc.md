@@ -26,8 +26,8 @@ apitype: "DLLExport"
 f1_keywords: 
   - "malloc"
 dev_langs: 
-  - "C++"
-  - "C"
+  - "cpp"
+  - "c"
 helpviewer_keywords: 
   - "malloc function"
   - "memory allocation"
