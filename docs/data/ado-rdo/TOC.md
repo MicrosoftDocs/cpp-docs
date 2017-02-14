@@ -6,7 +6,7 @@
 ### [Setting Control Properties at Design Time](setting-control-properties-at-design-time.md)
 ### [Setting Event Handlers on ActiveX Controls](setting-event-handlers-on-activex-controls.md)
 ### [Modifying a Control's Run-Time Behavior](modifying-a-control-s-run-time-behavior.md)
-### [Redistributing Controls](redistributing-controls.md)
+
 ## [Databinding with ActiveX Controls in Visual C++](databinding-with-activex-controls-in-visual-cpp.md)
 ### [Data Access: ADO and RDO](data-access-ado-and-rdo.md)
 ### [ADO Databinding](ado-databinding.md)

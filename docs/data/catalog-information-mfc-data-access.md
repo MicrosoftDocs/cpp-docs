@@ -12,7 +12,6 @@ dev_langs:
   - "C++"
 helpviewer_keywords: 
   - "tables [C++], catalog information"
-  - "DAO [C++], catalog information"
   - "tables [C++]"
   - "ODBC [C++], catalog information"
   - "catalog information database [C++]"

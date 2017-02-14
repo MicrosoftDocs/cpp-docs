@@ -11,17 +11,13 @@ ms.topic: "article"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "DAO recordsets, filling list boxes or combo boxes"
   - "record views, filling list boxes"
   - "list boxes, filling from second recordset"
   - "recordsets [C++], filling list boxes or combo boxes"
   - "CComboBox class, filling object from second rowset"
   - "ODBC recordsets [C++], filling list boxes or combo boxes"
   - "combo boxes [C++], filling from second recordset"
-  - "DAO recordsets"
-  - "filling lists or combo boxes"
   - "CListCtrl class, filling from second recordset"
-  - "multiple recordsets in record views"
 ms.assetid: 360c0834-da6b-4dc0-bcea-80e9acd611f0
 caps.latest.revision: 9
 author: "mikeblome"

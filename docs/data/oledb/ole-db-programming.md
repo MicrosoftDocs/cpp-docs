@@ -35,9 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # OLE DB Programming
-This home page is your starting point for information about the Microsoft OLE DB database technology and the OLE DB Template Library.  
-  
- It is important to know that Microsoft provides several implementations of OLE DB. OLE DB is a set of COM interfaces that provide uniform access to data in diverse information sources and formats.  
+Microsoft OLE DB is a legacy technology. The OLE DB provider for SQL Server has been deprecated since SQL Server 2012. The provider is still shipping in SQL Server 2016 but is not guaranteed to be present in future editions of SQL Server. This documentation is intended for developers who are maintaining existing applications that already use OLE DB. New applications, and applications that might one day be upgraded to run on new versions of SQL Server, should move to ODBC as the preferred data access technology.
   
  The OLE DB templates are C++ templates that make the high-performance OLE DB database technology easier to use by providing classes that implement many commonly used OLE DB interfaces. This template library is divided into consumer templates and provider templates.  
   

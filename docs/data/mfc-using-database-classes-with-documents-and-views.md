@@ -14,7 +14,6 @@ helpviewer_keywords:
   - "documents [C++], database applications"
   - "recordsets [C++], documents and views"
   - "CRecordView class, using in database forms"
-  - "DAO recordsets [C++], documents and views"
   - "views [C++], database applications"
   - "forms [C++], database applications"
   - "record views [C++], form-based applications"

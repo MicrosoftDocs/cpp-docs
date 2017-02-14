@@ -12,8 +12,6 @@ dev_langs:
   - "C++"
 helpviewer_keywords: 
   - "ODBC, ODBC classes"
-  - "MFC, DAO and"
-  - "DAO (Data Access Objects), and MFC"
   - "MFC, database applications"
 ms.assetid: 88aabe65-84e3-4122-b636-5d334a5fe570
 caps.latest.revision: 11

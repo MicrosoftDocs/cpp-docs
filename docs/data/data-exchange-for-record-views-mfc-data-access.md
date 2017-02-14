@@ -11,13 +11,10 @@ ms.topic: "article"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "DFX (DAO record field exchange), data exchange mechanism"
-  - "DFX (DAO record field exchange)"
   - "RFX (record field exchange), data exchange mechanism"
   - "RFX (record field exchange), record views"
   - "record views, data exchange"
   - "DDX (dialog data exchange), record views"
-  - "DFX (DAO record field exchange), record views"
   - "RFX (record field exchange)"
 ms.assetid: abc52ca7-6997-47a7-98f3-f347f52b1f72
 caps.latest.revision: 9
