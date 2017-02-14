@@ -37,20 +37,20 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Data Access Programming (MFC/ATL)
-Over the years, Visual C++ has provided several ways to work with databases. Currently, the preferred way to connect to databases in native C++ is to use ODBC directly by calling ODBC APIs, or by using the MFC ODBC wrapper classes, or by using a third-party C++ wrapper library for ODBC. New C++ applications that connect to SQL Server or Azure SQL Database should use [the most recent ODBC driver](https://docs.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server). Microsoft provides versions of this driver for MacOS and Linux in addition to Windows. By using ODBC you gain maximum portability of your code over multiple platforms and data sources. Most SQL database products and many NoSQL products support ODBC.  
+Over the years, Visual C++ has provided several ways to work with databases. In 2011 Microsoft announced that it is aligning on ODBC as the preferred technology for accessing SQL Server products from native code. ODBC is an industry standard, and by using it you gain maximum portability of your code over multiple platforms and data sources. Most SQL database products and many NoSQL products support ODBC. You can use ODBC directly by calling the low-level ODBC APIs, or you can use the MFC ODBC wrapper classes, or a third-party C++ wrapper library. 
+
+OLE DB is a low-level, high-performance API based on the COM specification, and is only supported on Windows. ATL provides OLE DB templates that make it easier to create custom OLE DB providers and consumers. OLE DB support in SQL Server products is officially deprecated and there is no guarantee that it will be supported after SQL Server 2016.  
+
+If your legacy application uses OLE DB or the higher-level ADO interface to connect to SQL Server, you should consider migrating to ODBC in the near future. If you do not require cross-platform portability or the latest SQL Server features, you can possibly use the Microsoft OLE DB Provider for ODBC (MSDASQL).  MSDASQL allows applications that are built on OLEDB and ADO (which uses OLEDB internally) to access data sources through an ODBC driver. MSDASQL ships with the Windows operating system, and Windows Server 2008 & Windows Vista SP1 are the first Windows releases to include a 64-bit version of the technology.
+
+The SQL Native Client component, which packages OLE DB and ODBC drivers in a single DLL, is also deprecated. New C++ applications that connect to SQL Server or Azure SQL Database should use [the most recent ODBC driver](https://docs.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server). The SQL Native Client component, which packages OLE DB and ODBC drivers in a single DLL, is deprecated.  For more information, see [SQL Server Native Client Programming](https://msdn.microsoft.com/en-us/library/ms130892.aspx)
 
 If you use C++/CLI, you can continue to use ADO.NET as always. For more information, see [Data Access Using ADO.NET (C++/CLI)](../dotnet/data-access-using-adonet-cpp-cli.md), and [Accessing data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio).  
   
+-   In addition to the ODBC wrapper classes, MFC also provides Data Acess Objects (DAO) wrapper classes for connecting to Access databases.  However, DAO is obsolete. Any code based on CDaoDatabase or CDaoRecordset should be upgraded to use ODBC.  
+For more information about the history of data access technologies on Microsoft Windows, see [Microsoft Data Access Components (Wikipedia)](https://en.wikipedia.org/wiki/Microsoft_Data_Access_Components).  
 
- The library classes support the following kinds of data access:  
-  
--   ATL provides OLE DB templates and database attributes. OLE DB is based on the COM specification, and is only supported on Windows. The OLE DB standard, and the ATL OLE DB classes and templates are still supported, but the OLE DB provider for SQL Server has been deprecated since SQL Server 2012. The SQL Native Client component, which packages OLE DB and ODBC drivers in a single DLL, is also deprecated. Use these classes and templates only when maintaining existing applications whose data store supports OLE DB. If you are using these classes to connect to SQL Server, you should migrate to ODBC in the near future.
-  
--   MFC provides Open Database Connectivity (ODBC) and Data Acess Objects (DAO) wrapper classes.  DAO is obsolete. Any code based on CDaoDatabase or CDaoRecordset should be upgraded to use ODBC. 
-
-- The ADO and RDO technologies are obsolete and any code that uses them should be upgraded to ODBC or ADO.NET. 
-  
- 
 ## See Also  
  [Data Access](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
- [Microsoft Data Access Components (Wikipedia)]()
+ [Microsoft Open Database Connectivity (ODBC)](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc)
+ [Data Access Technologies Road Map](https://msdn.microsoft.com/en-us/library/ms810810.aspx)
