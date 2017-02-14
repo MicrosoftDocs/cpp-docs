@@ -143,8 +143,9 @@ int main( void )
    }  
 }  
 ```  
-  
-```Output  
+### Output
+
+```  
 Memory space allocated for path name  
 Memory freed  
 ```  
