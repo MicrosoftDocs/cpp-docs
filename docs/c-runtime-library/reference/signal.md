@@ -26,8 +26,8 @@ apitype: "DLLExport"
 f1_keywords: 
   - "signal"
 dev_langs: 
-  - "C++"
-  - "C"
+  - "cpp"
+  - "c"
 helpviewer_keywords: 
   - "signal function"
 ms.assetid: 094118de-d789-4063-b4f4-cffcc80bf29d
