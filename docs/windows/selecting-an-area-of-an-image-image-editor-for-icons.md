@@ -12,7 +12,6 @@ f1_keywords:
   - "vc.editors.image.editing"
 dev_langs: 
   - "C++"
-  - "C++"
 helpviewer_keywords: 
   - "Image editor [C++], image selection"
   - "Image editor [C++], selecting images"

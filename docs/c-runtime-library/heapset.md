@@ -24,7 +24,6 @@ f1_keywords:
   - "heapset"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "checking heap"
   - "heapset function"

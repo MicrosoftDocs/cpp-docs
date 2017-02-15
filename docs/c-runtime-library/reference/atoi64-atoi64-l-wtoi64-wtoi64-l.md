@@ -40,7 +40,6 @@ f1_keywords:
   - "atoi64_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tstoi64 function"
   - "wtoi64 function"

@@ -12,7 +12,6 @@ f1_keywords:
   - "include()"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "include() attribute"
 ms.assetid: 86c9dcb2-d9e0-4fd5-97d7-0bb3e23d6ecc

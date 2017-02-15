@@ -30,7 +30,6 @@ f1_keywords:
   - "_puttchar"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "putchar function"
   - "_puttchar function"

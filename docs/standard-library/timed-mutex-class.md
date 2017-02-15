@@ -68,7 +68,7 @@ class timed_mutex;
 ##  <a name="timed_mutex__lock_method"></a>  timed_mutex::lock Method  
  Blocks the calling thread until the thread obtains ownership of the `mutex`.  
   
-```cpp
+```cpp  
 void lock();
 ```  
   
@@ -78,14 +78,14 @@ void lock();
 ##  <a name="timed_mutex__timed_mutex_constructor"></a>  timed_mutex::timed_mutex Constructor  
  Constructs a `timed_mutex` object that is not locked.  
   
-```cpp
+```cpp  
 timed_mutex();
 ```  
   
 ##  <a name="timed_mutex___dtortimed_mutex_destructor"></a>  timed_mutex::~timed_mutex Destructor  
  Releases any resources that are used by the `mutex` object.  
   
-```cpp
+```cpp  
 ~timed_mutex();
 ```  
   
@@ -95,7 +95,7 @@ timed_mutex();
 ##  <a name="timed_mutex__try_lock_method"></a>  timed_mutex::try_lock Method  
  Attempts to obtain ownership of the `mutex` without blocking.  
   
-```cpp
+```cpp  
 bool try_lock();
 ```  
   
@@ -108,7 +108,7 @@ bool try_lock();
 ##  <a name="timed_mutex__try_lock_for_method"></a>  timed_mutex::try_lock_for Method  
  Attempts to obtain ownership of the `mutex` without blocking.  
   
-```cpp
+```cpp  
 template <class Rep, class Period>
 bool try_lock_for(const chrono::duration<Rep, Period>& Rel_time);
 ```  
@@ -126,7 +126,7 @@ bool try_lock_for(const chrono::duration<Rep, Period>& Rel_time);
 ##  <a name="timed_mutex__try_lock_until_method"></a>  timed_mutex::try_lock_until Method  
  Attempts to obtain ownership of the `mutex` without blocking.  
   
-```cpp
+```cpp  
 template <class Clock, class Duration>
 bool try_lock_for(const chrono::time_point<Clock, Duration>& Abs_time);
 
@@ -146,7 +146,7 @@ bool try_lock_until(const xtime* Abs_time);
 ##  <a name="timed_mutex__unlock_method"></a>  timed_mutex::unlock Method  
  Releases ownership of the `mutex`.  
   
-```cpp
+```cpp  
 void unlock();
 ```  
   

@@ -35,7 +35,6 @@ f1_keywords:
   - "va_end"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "variable argument lists, accessing"
   - "va_start macro"

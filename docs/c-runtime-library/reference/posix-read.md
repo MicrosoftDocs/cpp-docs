@@ -26,7 +26,6 @@ f1_keywords:
   - "read"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "read function"
 ms.assetid: 9e0eead4-d38c-4f65-87f5-f6c12da40ead

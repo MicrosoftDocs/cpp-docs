@@ -34,7 +34,6 @@ f1_keywords:
   - "_swscanf_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "swscanf function"
   - "_stscanf function"

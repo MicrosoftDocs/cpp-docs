@@ -28,7 +28,6 @@ f1_keywords:
   - "_fread_nolock_s"
   - "stdio/_fread_nolock_s"
 dev_langs: 
-  - "C"
   - "C++"
 ms.assetid: 5badb9ab-11df-4e17-8162-30bda2a4572e
 caps.latest.revision: 3

@@ -36,7 +36,6 @@ f1_keywords:
   - "wcspbrk"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "fstrpbrk function"
   - "_ftcspbrk function"

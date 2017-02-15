@@ -38,7 +38,6 @@ f1_keywords:
   - "cmath/abs"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "absolute values"
   - "abs function"
@@ -128,7 +127,7 @@ __int64 _abs64(
 ## Example  
  This program computes and displays the absolute values of several numbers.  
   
-```c  
+```C  
 // crt_abs.c  
 // Build: cl /W3 /TC crt_abs.c  
 // This program demonstrates the use of the abs function  

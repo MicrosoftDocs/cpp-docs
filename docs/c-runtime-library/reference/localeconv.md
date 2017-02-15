@@ -26,7 +26,6 @@ f1_keywords:
   - "localeconv"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "lconv type"
   - "localeconv function"

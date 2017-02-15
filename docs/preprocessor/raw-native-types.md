@@ -12,7 +12,6 @@ f1_keywords:
   - "raw_native_types"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "raw_native_types attribute"
 ms.assetid: 9f38daa8-8dc0-46a5-aff9-f1ff9c1e6f48

@@ -71,7 +71,7 @@ This step-by-step walkthrough demonstrates how to use C++ AMP to accelerate the 
   
 1.  Open MatrixMultiply.cpp and use the following code to replace the existing code.  
   
- ```cpp  
+```cpp  
 #include <iostream>  
   
 void MultiplyWithOutAMP() {  
@@ -111,8 +111,7 @@ void main() {
 1.  In MatrixMultiply.cpp, add the following code before the `main` method.  
   
 ```cpp  
- 
-    void MultiplyWithAMP() {  
+void MultiplyWithAMP() {  
     int aMatrix[] = { 1, 4, 2, 5, 3, 6 };  
     int bMatrix[] = { 7, 8, 9, 10, 11, 12 };  
     int productMatrix[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };  
@@ -141,10 +140,8 @@ void main() {
             std::cout << product(row, col) << "  ";  
         }    
         std::cout << "\n";  
-     }  
- }  
- }  
- 
+    }  
+}  
 ```  
   
     The AMP code resembles the non-AMP code. The call to `parallel_for_each` starts one thread for each element in `product.extent`, and replaces the `for` loops for row and column. The value of the cell at the row and column is available in `idx`. You can access the elements of an `array_view` object by using either the `[]` operator and an index variable, or the `()` operator and the row and column variables. The example demonstrates both methods. The `array_view::synchronize` method copies the values of the `product` variable back to the `productMatrix` variable.  
@@ -231,19 +228,16 @@ void MultiplyWithTiling() {
   
     // Call parallel_for_each by using 2x2 tiles.  
     parallel_for_each(product.extent.tile<TS, TS>(),  
- [=]  (tiled_index<TS, TS> t_idx) restrict(amp)   
- { *// Get the location of the thread relative to the tile (row, col) and the entire array_view (rowGlobal, colGlobal).  
-    int row = t_idx.local[0];   
-    int col = t_idx.local[1];  
-    int rowGlobal = t_idx.global[0];  
-    int colGlobal = t_idx.global[1];  
-    int sum = 0;  
- *// Given a 4x4 matrix and a 2x2 tile size, this loop executes twice for each thread. *// For the first tile and the first loop, it copies a into locA and e into locB. *// For the first tile and the second loop, it copies b into locA and g into locB.  
-    for (int i = 0; i <4; i += TS) {  
-    tile_static int locA[TS][TS];  
-    tile_static int locB[TS][TS];  
-    locA[row][col] = a(rowGlobal, col + i);
-
+        [=] (tiled_index<TS, TS> t_idx) restrict(amp)   
+        { 
+            // Get the location of the thread relative to the tile (row, col) 
+            // and the entire array_view (rowGlobal, colGlobal).  
+            int row = t_idx.local[0];   
+            int col = t_idx.local[1];  
+            int rowGlobal = t_idx.global[0];  
+            int colGlobal = t_idx.global[1];  
+            int sum = 0;  
+  
             // Given a 4x4 matrix and a 2x2 tile size, this loop executes twice for each thread.  
             // For the first tile and the first loop, it copies a into locA and e into locB.  
             // For the first tile and the second loop, it copies b into locA and g into locB.  
@@ -267,6 +261,7 @@ void MultiplyWithTiling() {
                 t_idx.barrier.wait();
                 // Now go on to the next iteration of the loop.            
             }  
+            
             // After both iterations of the loop, copy the sum to the product variable by using the global location.  
             product[t_idx.global] = sum;  
         });

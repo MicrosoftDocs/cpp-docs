@@ -137,7 +137,6 @@ bool regex_match(
 ### Example  
   
 ```cpp  
-  
 #include "stdafx.h"  
 #include <regex>   
 #include <iostream>   

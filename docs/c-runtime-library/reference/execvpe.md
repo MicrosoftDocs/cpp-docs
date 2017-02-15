@@ -26,7 +26,6 @@ f1_keywords:
   - "execvpe"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "execvpe function"
 ms.assetid: ee657071-c459-4bb6-82a2-8925c888f624

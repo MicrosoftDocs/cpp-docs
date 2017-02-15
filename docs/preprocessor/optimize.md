@@ -13,7 +13,6 @@ f1_keywords:
   - "optimize_CPP"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "pragmas, optimize"
   - "optimize pragma"

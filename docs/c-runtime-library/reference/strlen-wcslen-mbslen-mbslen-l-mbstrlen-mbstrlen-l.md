@@ -38,7 +38,6 @@ f1_keywords:
   - "_mbslen"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wcslen function"
   - "string length, getting"

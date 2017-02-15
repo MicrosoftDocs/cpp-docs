@@ -30,7 +30,6 @@ f1_keywords:
   - "_set_thread_local_invalid_parameter_handler"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "invalid parameter handler"
   - "set_invalid_parameter_handler function"
@@ -84,7 +83,7 @@ _invalid_parameter_handler _set_thread_local_invalid_parameter_handler(
   
  The invalid parameter handler function must have the following prototype:  
   
-```c  
+```  
 void _invalid_parameter(  
    const wchar_t * expression,  
    const wchar_t * function,   
@@ -107,7 +106,7 @@ void _invalid_parameter(
 ## Example  
  In the following example, an invalid parameter error handler is used to print the function that received the invalid parameter and the file and line in CRT sources. When the debug CRT library is used, invalid parameter errors also raise an assertion, which is disabled in this example using [_CrtSetReportMode](../../c-runtime-library/reference/crtsetreportmode.md).  
   
-```c  
+```C  
 // crt_set_invalid_parameter_handler.c  
 // compile with: /Zi /MTd  
 #include <stdio.h>  

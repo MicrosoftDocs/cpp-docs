@@ -28,7 +28,6 @@ f1_keywords:
   - "commit"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "files [C++], flushing"
   - "flushing files to disk"

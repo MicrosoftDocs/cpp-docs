@@ -16,7 +16,6 @@ f1_keywords:
   - "type_traits/std::is_final"
 dev_langs: 
   - "C++"
-  - "c++"
 helpviewer_keywords: 
   - "is_final"
 ms.assetid: 9dbad82f-6685-4909-94e8-98e4a93994b9

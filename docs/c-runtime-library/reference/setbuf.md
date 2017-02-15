@@ -27,7 +27,6 @@ f1_keywords:
   - "setbuf"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "setbuf function"
   - "stream buffering"

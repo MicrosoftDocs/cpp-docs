@@ -90,7 +90,7 @@ The <shared_mutex> header provides synchronization primitives for protection of 
   
 ## Syntax  
   
-```cpp
+```cpp  
 namespace std {
     class shared_mutex;
     class shared_timed_mutex;
@@ -130,7 +130,7 @@ void swap(shared_lock<Mutex>& x, shared_lock<Mutex>& y) noexcept;
 ###  <a name="class_shared_mutex"></a> shared_mutex Class  
  Class `shared_mutex` implements a non-recursive mutex with shared ownership semantics.  
   
-```cpp
+```cpp  
 class shared_mutex {
    public:
    shared_mutex();
@@ -156,7 +156,7 @@ class shared_mutex {
 ###  <a name="class_shared_timed_mutex"></a> shared_timed_mutex Class  
  Class `shared_timed_mutex` implements a non-recursive mutex with shared ownership semantics that meets the requirements of a timed mutex type.  
   
-```cpp
+```cpp  
 class shared_timed_mutex {
    public:
    shared_timed_mutex();
@@ -187,7 +187,7 @@ class shared_timed_mutex {
 ###  <a name="class_shared_lock"></a> shared_lock Class  
  Template class `shared_lock` controls the shared ownership of a shared mutex object within a scope. The template parameter must be a shared mutex type.  
 
-```cpp
+```cpp  
 class shared_lock {
    public:
    typedef Mutex mutex_type;
@@ -234,7 +234,7 @@ class shared_lock {
 ###  <a name="function_swap"></a> swap Function  
  Swaps the `shared_lock` objects.  
   
-```cpp
+```cpp  
 template <class Mutex>
 void swap(shared_lock<Mutex>& x, shared_lock<Mutex>& y) noexcept;
 ```  

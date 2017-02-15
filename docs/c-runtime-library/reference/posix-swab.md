@@ -26,7 +26,6 @@ f1_keywords:
   - "swab"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "swab function"
 ms.assetid: fb8b7137-420d-4485-bb65-e1ec68602905

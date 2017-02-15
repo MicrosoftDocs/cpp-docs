@@ -25,7 +25,6 @@ f1_keywords:
   - "outpw"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "outpw function"
   - "outp function"

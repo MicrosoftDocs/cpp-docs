@@ -37,7 +37,6 @@ f1_keywords:
   - "_mbctoupper_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_mbctolower function"
   - "mbctolower_l function"

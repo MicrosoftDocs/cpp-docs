@@ -34,7 +34,6 @@ f1_keywords:
   - "math/tgammaf"
   - "math/tgammal"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "tgamma function"

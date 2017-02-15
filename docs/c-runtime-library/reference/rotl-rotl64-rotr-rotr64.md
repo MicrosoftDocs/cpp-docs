@@ -37,7 +37,6 @@ f1_keywords:
   - "rotl"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "rotl64 function"
   - "_rotl function"

@@ -12,7 +12,6 @@ f1_keywords:
   - "raw_method_prefix"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "raw_method_prefix attribute"
 ms.assetid: 71490313-af78-4bb2-b28a-eee67950d30b

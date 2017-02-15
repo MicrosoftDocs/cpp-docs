@@ -72,7 +72,7 @@ struct iterator_traits {
   
  In this implementation you can also use several template functions that do not make use of partial specialization:  
   
-```cpp
+```cpp  
 template <class Category, class Type, class Diff>
 C _Iter_cat(const iterator<Category, Ty, Diff>&);
 

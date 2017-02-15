@@ -27,7 +27,6 @@ f1_keywords:
   - "fgetpos"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "fgetpos function"
   - "streams, file position indicator"

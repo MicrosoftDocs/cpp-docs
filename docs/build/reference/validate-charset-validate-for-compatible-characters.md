@@ -13,7 +13,6 @@ f1_keywords:
   - "/validate-charset"
   - "validate-charset"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "/validate-charset compiler option"

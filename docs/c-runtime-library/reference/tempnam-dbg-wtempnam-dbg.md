@@ -30,7 +30,6 @@ f1_keywords:
   - "_wtempnam_dbg"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "file names [C++], creating temporary"
   - "tempnam_dbg function"

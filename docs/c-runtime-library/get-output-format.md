@@ -24,7 +24,6 @@ f1_keywords:
   - "_get_output_format"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "output formatting"
   - "get_output_format function"

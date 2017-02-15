@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "integers, casting to floating-point values"
 ms.assetid: 81fd5b7d-15eb-4c11-a8c8-e1621ff54fd3

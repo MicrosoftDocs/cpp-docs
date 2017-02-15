@@ -31,7 +31,6 @@ f1_keywords:
   - "_ismbbkpunct"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_ismbbkpunct_l function"
   - "ismbbkpunct_l function"

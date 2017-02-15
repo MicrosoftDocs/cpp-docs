@@ -28,7 +28,6 @@ f1_keywords:
   - "strdup"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wcsdup function"
   - "strdup function"

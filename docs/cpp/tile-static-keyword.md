@@ -53,7 +53,6 @@ The `tile_static` keyword is used to declare a variable that can be accessed by 
  The following example shows how a `tile_static` variable can be used to accumulate data across several threads in a tile.  
   
 ```cpp  
-  
 // Sample data:  
 int sampledata[] = {  
     2, 2, 9, 7, 1, 4,  

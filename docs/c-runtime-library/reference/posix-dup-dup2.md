@@ -28,7 +28,6 @@ f1_keywords:
   - "dup2"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "dup function"
   - "dup2 function"

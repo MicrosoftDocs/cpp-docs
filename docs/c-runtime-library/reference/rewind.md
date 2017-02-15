@@ -27,7 +27,6 @@ f1_keywords:
   - "rewind"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "rewind function"
   - "repositioning file pointers"

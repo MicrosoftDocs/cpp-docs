@@ -31,7 +31,6 @@ f1_keywords:
   - "_execvpe"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wexecvpe function"
   - "execvpe function"

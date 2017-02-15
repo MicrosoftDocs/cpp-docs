@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "file pointers [C++], append mode"
 ms.assetid: fca94e95-907c-4703-ad7d-2fcac1592168

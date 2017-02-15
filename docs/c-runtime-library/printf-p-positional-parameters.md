@@ -18,7 +18,6 @@ apilocation:
 apitype: "DLLExport"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_printf_p function, positional parameters"
   - "printf_p function, positional parameters"

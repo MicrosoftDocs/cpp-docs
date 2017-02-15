@@ -32,7 +32,6 @@ f1_keywords:
   - "_chgsign"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_chgsignl function"
   - "_chgsignf function"

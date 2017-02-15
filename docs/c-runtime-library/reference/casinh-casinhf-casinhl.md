@@ -34,7 +34,6 @@ f1_keywords:
   - "complex/casinhf"
   - "complex/casinhl"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "casinh function"

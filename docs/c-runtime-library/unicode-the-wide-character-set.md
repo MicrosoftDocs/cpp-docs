@@ -12,7 +12,6 @@ f1_keywords:
   - "c.international"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "Unicode [C++], wide character set"
   - "wide characters [C++], Unicode"

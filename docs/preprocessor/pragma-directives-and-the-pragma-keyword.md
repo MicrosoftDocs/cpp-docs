@@ -12,7 +12,6 @@ f1_keywords:
   - "#pragma"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "#pragma directives, C/C++"
   - "__pragma keyword"

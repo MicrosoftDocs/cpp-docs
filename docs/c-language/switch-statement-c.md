@@ -12,7 +12,6 @@ f1_keywords:
   - "switch"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "switch keyword [C]"
 ms.assetid: fbede014-23bd-4ab1-8094-c8d9d9cb963a

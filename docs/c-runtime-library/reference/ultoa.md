@@ -27,7 +27,6 @@ f1_keywords:
   - "ultoa"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "ultoa function"
 ms.assetid: 71acf6b6-a0dc-4442-b5ab-2456ae013f88

@@ -12,7 +12,6 @@ f1_keywords:
   - "continue"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "loop structures, continue keyword"
   - "continue keyword [C]"

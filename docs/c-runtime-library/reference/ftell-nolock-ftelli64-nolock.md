@@ -31,7 +31,6 @@ f1_keywords:
   - "_ftell_nolock"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "ftelli64_nolock function"
   - "_ftelli64_nolock function"

@@ -53,7 +53,7 @@ variable
   
 ## Example  
 
-```cpp
+```cpp  
 class CArtistsBookmark
 {
 public:

@@ -30,7 +30,6 @@ f1_keywords:
   - "_wasctime"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "asctime function"
   - "tasctime function"

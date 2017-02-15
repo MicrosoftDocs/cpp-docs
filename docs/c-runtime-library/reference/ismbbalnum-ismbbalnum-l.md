@@ -31,7 +31,6 @@ f1_keywords:
   - "ismbbalnum_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_ismbbalnum_l function"
   - "ismbbalnum function"

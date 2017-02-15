@@ -29,7 +29,6 @@ f1_keywords:
   - "_wcstombs_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_wcstombs_l function"
   - "wcstombs function"

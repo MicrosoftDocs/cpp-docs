@@ -17,7 +17,6 @@ f1_keywords:
   - "_OVERFLOW"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_TLOSS constant"
   - "_SING constant"

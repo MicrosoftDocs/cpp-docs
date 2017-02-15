@@ -33,7 +33,6 @@ f1_keywords:
   - "_tgetdcwd"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wgetdcwd function"
   - "working directory"

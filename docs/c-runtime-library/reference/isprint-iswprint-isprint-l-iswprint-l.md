@@ -32,7 +32,6 @@ f1_keywords:
   - "isprint"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_istprint function"
   - "iswprint function"

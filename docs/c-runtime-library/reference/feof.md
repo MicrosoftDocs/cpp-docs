@@ -27,7 +27,6 @@ f1_keywords:
   - "feof"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "end of file, testing for"
   - "feof function"

@@ -28,7 +28,6 @@ f1_keywords:
   - "fpreset"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "fpreset function"
   - "floating-point numbers, resetting math package"

@@ -43,7 +43,6 @@ f1_keywords:
   - "math/llrintf"
   - "math/llrintl"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "lrint function"

@@ -33,7 +33,6 @@ f1_keywords:
   - "wcscpy_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "strcpy_s function"
   - "_tcscpy_s function"

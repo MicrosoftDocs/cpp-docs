@@ -27,7 +27,6 @@ f1_keywords:
   - "calloc_dbg"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_calloc_dbg function"
   - "calloc_dbg function"

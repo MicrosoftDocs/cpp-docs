@@ -26,7 +26,6 @@ f1_keywords:
   - "mkdir"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "mkdir function"
 ms.assetid: 0a212890-181e-45d0-988d-e0f301fcdeb8

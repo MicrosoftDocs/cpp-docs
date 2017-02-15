@@ -28,7 +28,6 @@ f1_keywords:
   - "fetestexcept"
   - "fenv/fetestexcept"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "fetestexept function"

@@ -15,7 +15,6 @@ f1_keywords:
   - "type_traits/std::is_trivial"
 dev_langs: 
   - "C++"
-  - "c++"
 helpviewer_keywords: 
   - "is_trivial"
 ms.assetid: 6beb11d4-2f38-4c7e-9959-ca5d26250df7

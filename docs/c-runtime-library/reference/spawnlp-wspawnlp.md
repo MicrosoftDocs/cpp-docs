@@ -30,7 +30,6 @@ f1_keywords:
   - "_spawnlp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wspawnlp function"
   - "_spawnlp function"

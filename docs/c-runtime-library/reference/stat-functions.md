@@ -83,7 +83,6 @@ f1_keywords:
   - "stat/_wstat64i32"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "files [C++], status information"
   - "_stat function"

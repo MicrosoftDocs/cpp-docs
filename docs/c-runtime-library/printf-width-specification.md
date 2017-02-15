@@ -18,7 +18,6 @@ apilocation:
 apitype: "DLLExport"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "printf function, width specification"
   - "printf function, format specification fields"

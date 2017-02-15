@@ -12,7 +12,6 @@ f1_keywords:
   - "#error"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "#error directive"
   - "preprocessor, directives"

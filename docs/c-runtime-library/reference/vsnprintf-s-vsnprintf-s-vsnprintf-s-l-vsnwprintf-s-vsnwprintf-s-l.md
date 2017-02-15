@@ -33,7 +33,6 @@ f1_keywords:
   - "_vsnwprintf_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "vsnwprintf_s function"
   - "_vsntprintf_s function"

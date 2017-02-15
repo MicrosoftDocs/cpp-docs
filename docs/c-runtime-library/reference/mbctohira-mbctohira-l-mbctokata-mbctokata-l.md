@@ -37,7 +37,6 @@ f1_keywords:
   - "_mbctokata_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_mbctokata function"
   - "_mbctokata_l function"

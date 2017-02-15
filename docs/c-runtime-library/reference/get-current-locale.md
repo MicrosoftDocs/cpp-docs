@@ -29,7 +29,6 @@ f1_keywords:
   - "_get_current_locale"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "get_current_locale function"
   - "_get_current_locale function"

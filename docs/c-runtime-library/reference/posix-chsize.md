@@ -26,7 +26,6 @@ f1_keywords:
   - "chsize"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "chsize function"
 ms.assetid: f94d62f6-b539-4cbf-bf99-b81d081b4216

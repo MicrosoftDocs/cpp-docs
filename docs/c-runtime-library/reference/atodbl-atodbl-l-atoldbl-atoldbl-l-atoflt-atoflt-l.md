@@ -43,7 +43,6 @@ f1_keywords:
   - "_atodbl"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_atodbl function"
   - "_atoldbl_l function"

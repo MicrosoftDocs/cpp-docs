@@ -34,7 +34,6 @@ f1_keywords:
   - "complex/clog10f"
   - "complex/clog10l"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "clog10 function"

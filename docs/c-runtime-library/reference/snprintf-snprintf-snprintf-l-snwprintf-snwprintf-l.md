@@ -41,7 +41,6 @@ f1_keywords:
   - "_snwprintf_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "snwprintf_l function"
   - "sntprintf_l function"
@@ -211,7 +210,7 @@ int _snwprintf_l(
   
 ## Example  
   
-```c  
+```C  
 // crt_snprintf.c  
 // compile with: /W3  
 #include <stdio.h>  

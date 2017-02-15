@@ -12,7 +12,6 @@ f1_keywords:
   - "c.errors"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "error handling, C routines for"
   - "logic errors"

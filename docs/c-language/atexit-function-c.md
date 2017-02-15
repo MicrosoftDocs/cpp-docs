@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "atexit function"
 ms.assetid: 9e1a761d-52f7-4581-a790-3ff97c80f931

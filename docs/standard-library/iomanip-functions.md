@@ -124,7 +124,6 @@ quoted(const char* str, char delimiter, char escape) // or wide versions
   This example shows how to use `quoted` with the default delimiter and escape character using narrow strings. Wide strings are equally supported.  
   
 ```cpp  
-  
 #include <iostream>  
 #include <iomanip>  
 #include <sstream>  

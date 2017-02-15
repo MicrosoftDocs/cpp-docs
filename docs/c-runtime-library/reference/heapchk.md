@@ -28,7 +28,6 @@ f1_keywords:
   - "heapchk"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "debugging [CRT], heap-related problems"
   - "consistency checking of heaps"

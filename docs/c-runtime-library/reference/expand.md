@@ -34,7 +34,6 @@ f1_keywords:
   - "_expand"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "memory blocks, changing size"
   - "_expand function"

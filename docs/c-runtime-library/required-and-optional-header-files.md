@@ -12,7 +12,6 @@ f1_keywords:
   - "c.headers"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "include files, required in run time"
   - "header files, required in run time"

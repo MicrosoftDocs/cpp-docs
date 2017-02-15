@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "streams, states"
 ms.assetid: 5f28c968-f132-403f-968c-8417ff315e52

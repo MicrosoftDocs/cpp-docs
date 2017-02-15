@@ -23,7 +23,6 @@ f1_keywords:
   - "A_ARCH"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "constants [C++], file attributes"
   - "file attribute constants [C++]"

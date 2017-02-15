@@ -13,7 +13,6 @@ f1_keywords:
   - "alloc_text_CPP"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "alloc_text pragma"
   - "pragmas, alloc_text"

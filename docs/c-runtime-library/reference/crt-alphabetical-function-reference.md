@@ -12,7 +12,6 @@ f1_keywords:
   - "vc.tables.runtime"
 dev_langs: 
   - "C++"
-  - "C"
 ms.assetid: c2169b0e-cd86-489a-a2fa-2ee15c03b5c2
 author: "corob-msft"
 ms.author: "corob"

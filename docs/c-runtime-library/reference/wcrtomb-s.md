@@ -27,7 +27,6 @@ f1_keywords:
   - "wcrtomb_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wide characters, converting"
   - "wcrtomb_s function"

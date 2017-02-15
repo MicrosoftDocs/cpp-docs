@@ -31,7 +31,6 @@ f1_keywords:
   - "_wunlink"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "files [C++], deleting"
   - "_wunlink function"

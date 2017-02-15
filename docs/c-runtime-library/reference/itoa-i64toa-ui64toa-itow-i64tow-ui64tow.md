@@ -44,7 +44,6 @@ f1_keywords:
   - "_ui64toa"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_itot function"
   - "ui64toa function"

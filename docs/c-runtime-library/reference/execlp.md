@@ -26,7 +26,6 @@ f1_keywords:
   - "execlp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "execlp function"
 ms.assetid: 68b19143-e7b1-49c6-89b5-084d0d66de9c

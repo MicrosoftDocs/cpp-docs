@@ -13,7 +13,6 @@ f1_keywords:
   - "DEBUG"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "DEBUG macro"
   - "_DEBUG macro"

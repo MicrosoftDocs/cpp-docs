@@ -48,7 +48,6 @@ f1_keywords:
   - "_tcsncset"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_wcsnset function"
   - "strnset_l function"

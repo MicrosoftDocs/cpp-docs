@@ -24,7 +24,6 @@ f1_keywords:
   - "_set_output_format"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_TWO_DIGIT_EXPONENT constant"
   - "output formatting"

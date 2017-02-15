@@ -20,7 +20,6 @@ f1_keywords:
   - "c.math"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "printf function, format specification fields"
 ms.assetid: dc59ea4e-d23a-4f1f-9881-2c919ebefb82

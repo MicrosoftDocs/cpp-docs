@@ -426,7 +426,7 @@ void RFX_Text(
  This example shows several calls to `RFX_Text`. Notice also the two calls to `CFieldExchange::SetFieldType`. For parameters you must write the call to `SetFieldType` and its RFX call. The output column call and its associated RFX calls are normally written by a code wizard.  
   
 ```cpp  
- void CCustomer::DoFieldExchange(CFieldExchange* pFX)
+void CCustomer::DoFieldExchange(CFieldExchange* pFX)
 {
    pFX->SetFieldType(CFieldExchange::outputColumn);
    // Macros such as RFX_Text() and RFX_Int() are dependent on the

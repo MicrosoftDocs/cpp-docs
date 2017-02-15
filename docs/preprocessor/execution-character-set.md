@@ -13,7 +13,6 @@ f1_keywords:
   - "execution_character_set"
   - "vc-pragma.execution_character_set"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "pragma execution_character_set"

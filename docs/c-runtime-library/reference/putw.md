@@ -28,7 +28,6 @@ f1_keywords:
   - "putw"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "integers, writing to streams"
   - "putw function"

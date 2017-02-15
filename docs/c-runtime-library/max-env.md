@@ -13,7 +13,6 @@ f1_keywords:
   - "MAX_ENV"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "MAX_ENV constant"
   - "_MAX_ENV constant"

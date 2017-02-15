@@ -27,7 +27,6 @@ f1_keywords:
   - "putenv"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "putenv function"
 ms.assetid: 1dc49ef3-6b12-484c-8e60-7048bcc999f1

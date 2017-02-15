@@ -26,7 +26,6 @@ f1_keywords:
   - "ltoa"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "ltoa function"
 ms.assetid: dc8f0367-3670-4174-b646-ae93fd8b674d

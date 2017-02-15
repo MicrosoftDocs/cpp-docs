@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "( ) parentheses in return statements"
 ms.assetid: 18cd82cf-f899-4b28-83ad-4eff353ddcb4

@@ -104,7 +104,7 @@ basic_ostream <_Elem, _Tr>& operator<<(
   
  The template function  
   
-```cpp
+```cpp  
 template <class _Elem, class _Tr>
 basic_ostream<Elem, _Tr>& operator<<(
     basic_ostream<Elem, _Tr>& _ostr,
@@ -115,7 +115,7 @@ basic_ostream<Elem, _Tr>& operator<<(
   
  The template function  
   
-```cpp
+```cpp  
 template <class _Elem, class _Tr>
 basic_ostream<Elem, _Tr>& operator<<(
     basic_ostream<Elem, _Tr>& _Ostr,
@@ -126,7 +126,7 @@ basic_ostream<Elem, _Tr>& operator<<(
   
  The template function  
   
-```cpp
+```cpp  
 template <class _Elem, class _Tr>
 basic_ostream<Elem, _Tr>& operator<<(
     basic_ostream<Elem, _Tr>& _Ostr,
@@ -135,7 +135,7 @@ basic_ostream<Elem, _Tr>& operator<<(
   
  behaves the same as  
   
-```cpp
+```cpp  
 template <class _Elem, class _Tr>
 basic_ostream<Elem, _Tr>& operator<<(
     basic_ostream<Elem, _Tr>& _Ostr,
@@ -155,7 +155,7 @@ basic_ostream<Elem, _Tr>& operator<<(
   
  behaves the same as  
   
-```cpp
+```cpp  
 template <class _Elem, class _Tr>
 basic_ostream<Elem, _Tr>& operator<<(
     basic_ostream<Elem, _Tr>& _Ostr,
@@ -166,7 +166,7 @@ basic_ostream<Elem, _Tr>& operator<<(
   
  The template function  
   
-```cpp
+```cpp  
 template <class _Tr>
 basic_ostream<char, _Tr>& operator<<(
     basic_ostream<char, _Tr>& _Ostr,
@@ -175,7 +175,7 @@ basic_ostream<char, _Tr>& operator<<(
   
  behaves the same as  
   
-```cpp
+```cpp  
 template <class _Elem, class _Tr>
 basic_ostream<Elem, _Tr>& operator<<(
     basic_ostream<Elem, _Tr>& _Ostr,
@@ -186,7 +186,7 @@ basic_ostream<Elem, _Tr>& operator<<(
   
  The template function  
   
-```cpp
+```cpp  
 template <class _Tr>
 basic_ostream<char, Tr>& operator<<(
     basic_ostream<char, _Tr>& _Ostr,
@@ -195,7 +195,7 @@ basic_ostream<char, Tr>& operator<<(
   
  behaves the same as  
   
-```cpp
+```cpp  
 template <class _Elem, class _Tr>
 basic_ostream<Elem, _Tr>& operator<<(
     basic_ostream<Elem, _Tr>& _Ostr,
@@ -206,7 +206,7 @@ basic_ostream<Elem, _Tr>& operator<<(
   
  The template function  
   
-```cpp
+```cpp  
 template <class _Tr>
 basic_ostream<char, _Tr>& operator<<(
     basic_ostream<char, _Tr>& _Ostr,
@@ -217,7 +217,7 @@ basic_ostream<char, _Tr>& operator<<(
   
  The template function  
   
-```cpp
+```cpp  
 template <class _Tr>
 basic_ostream<char, _Tr>& operator<<(
     basic_ostream<char, _Tr>& _Ostr,
@@ -228,7 +228,7 @@ basic_ostream<char, _Tr>& operator<<(
   
  The template function:  
   
-```cpp
+```cpp  
 template <class _Tr>
 basic_ostream<char, _Tr>& operator<<(
     basic_ostream<char, _Tr>& _Ostr,
@@ -239,7 +239,7 @@ basic_ostream<char, _Tr>& operator<<(
   
  The template function:  
   
-```cpp
+```cpp  
 template <class _Tr>
 basic_ostream<char, _Tr>& operator<<(
     basic_ostream<char, _Tr>& _Ostr,
@@ -250,7 +250,7 @@ basic_ostream<char, _Tr>& operator<<(
   
  The template function:  
   
-```cpp
+```cpp  
 template <class _Elem, class _Tr, class T>
 basic_ostream<_Elem, _Tr>& operator<<(
     basic_ostream<char, _Tr>&& _Ostr,

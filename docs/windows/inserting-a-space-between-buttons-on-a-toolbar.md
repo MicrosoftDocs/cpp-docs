@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C++"
 helpviewer_keywords: 
   - "Toolbar editor, spacing toolbar buttons"
   - "toolbar buttons (in Toolbar editor), space between buttons"

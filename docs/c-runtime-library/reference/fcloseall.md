@@ -26,7 +26,6 @@ f1_keywords:
   - "fcloseall"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "fcloseall function"
 ms.assetid: 4f14acde-5bc5-43da-a709-7a3c559df3cf

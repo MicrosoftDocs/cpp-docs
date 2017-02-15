@@ -12,7 +12,6 @@ f1_keywords:
   - "c.conversions"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "data conversion routines [C++]"
   - "converting data"

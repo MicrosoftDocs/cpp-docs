@@ -35,7 +35,6 @@ f1_keywords:
   - "towlower"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tolower_l function"
   - "_tolower_l function"

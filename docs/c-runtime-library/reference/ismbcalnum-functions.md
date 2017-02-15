@@ -41,7 +41,6 @@ f1_keywords:
   - "ismbcdigit_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "ismbcalpha function"
   - "_ismbcalnum function"

@@ -31,7 +31,6 @@ f1_keywords:
   - "putchar_nolock"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_puttchar_nolock function"
   - "putchar_nolock function"

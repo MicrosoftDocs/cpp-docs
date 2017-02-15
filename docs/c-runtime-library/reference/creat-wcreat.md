@@ -32,7 +32,6 @@ f1_keywords:
   - "_tcreat"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wcreat function"
   - "_wcreat function"

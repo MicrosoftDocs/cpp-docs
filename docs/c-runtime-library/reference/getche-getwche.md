@@ -29,7 +29,6 @@ f1_keywords:
   - "_getwche"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "characters, getting from console"
   - "_getwche function"

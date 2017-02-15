@@ -28,7 +28,6 @@ f1_keywords:
   - "getmaxstdio"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "files [C++], number open"
   - "_getmaxstdio function"

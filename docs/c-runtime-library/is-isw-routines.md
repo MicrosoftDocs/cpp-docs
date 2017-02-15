@@ -21,7 +21,6 @@ f1_keywords:
   - "is"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "is routines"
   - "isw routines"

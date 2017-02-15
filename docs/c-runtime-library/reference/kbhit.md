@@ -29,7 +29,6 @@ f1_keywords:
   - "conio/_kbhit"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "keyboard input"
   - "user input, checking for keyboard"

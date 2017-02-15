@@ -16,7 +16,6 @@ f1_keywords:
   - "type_traits/std::is_constructible"
 dev_langs: 
   - "C++"
-  - "c++"
 helpviewer_keywords: 
   - "is_constructible"
 ms.assetid: 7cdec5ff-73cf-4f78-a9db-ced2e9c0fd7f

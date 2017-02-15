@@ -30,7 +30,6 @@ f1_keywords:
   - "filelengthi64"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "filelengthi64 function"
   - "lengths, file"

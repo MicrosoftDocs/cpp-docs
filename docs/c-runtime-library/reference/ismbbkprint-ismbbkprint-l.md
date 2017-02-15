@@ -31,7 +31,6 @@ f1_keywords:
   - "ismbbkprint_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_ismbbkprint function"
   - "ismbbkprint_l function"

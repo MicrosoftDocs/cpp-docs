@@ -32,7 +32,6 @@ f1_keywords:
   - "_ungetwc_nolock"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_ungettc_nolock function"
   - "_ungetwc_nolock function"

@@ -34,7 +34,6 @@ f1_keywords:
   - "complex/csqrtf"
   - "complex/csqrtl"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "csqrt function"

@@ -12,7 +12,6 @@ f1_keywords:
   - "_mbcs"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "TCHAR.H data types"
   - "MBCS data type"

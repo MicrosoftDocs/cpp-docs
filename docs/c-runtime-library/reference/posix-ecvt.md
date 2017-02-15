@@ -26,7 +26,6 @@ f1_keywords:
   - "ecvt"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "ecvt function"
 ms.assetid: a24fccea-033a-4cc7-b120-4fd0f525a7e3

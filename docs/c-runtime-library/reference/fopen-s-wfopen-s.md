@@ -30,7 +30,6 @@ f1_keywords:
   - "_wfopen_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_wfopen_s function"
   - "opening files, for file I/O"

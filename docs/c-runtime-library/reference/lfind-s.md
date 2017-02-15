@@ -28,7 +28,6 @@ f1_keywords:
   - "_lfind_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "linear searching"
   - "keys, finding in arrays"

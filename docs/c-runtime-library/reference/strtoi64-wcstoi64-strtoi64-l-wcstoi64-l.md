@@ -37,7 +37,6 @@ f1_keywords:
   - "strtoi64_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_strtoi64 function"
   - "_wcstoi64 function"

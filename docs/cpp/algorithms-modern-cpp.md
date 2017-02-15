@@ -42,14 +42,12 @@ For modern C++ programming, we recommend that you use the algorithms in the [C++
  To write a comparator, use strict `<` and use  *named lambdas* when you can.  
   
 ```cpp  
-  
 auto comp = [](const widget& w1, const widget& w2)  
       { return w1.weight() < w2.weight(); }  
   
 sort( v.begin(), v.end(), comp );  
   
 auto i = lower_bound( v.begin(), v.end(), comp );  
-  
 ```  
   
 ## Loops  
@@ -58,30 +56,25 @@ auto i = lower_bound( v.begin(), v.end(), comp );
  Instead of old C++ like this:  
   
 ```cpp  
-  
-for( auto i = strings.begin(); i != strings.end(); ++i ) {  
-  :::  
-  :::  
+for ( auto i = strings.begin(); i != strings.end(); ++i ) {  
+   /* ... */  
 }  
   
 auto i = v.begin();  
   
-for( ; i != v.end(); ++i ) {  
+for ( ; i != v.end(); ++i ) {  
   if (*i > x && *i < y) break;  
 }  
-  
 ```  
   
  Use modern C++ like this:  
   
 ```cpp  
-  
 for_each( begin(strings), end(strings), [](string& s) {  
-  :::  
-  :::  
+   // ...  
 } );  
-auto i = find_if( begin(v), end(v),  [=](int i) { return i > x && i < y; }  );  
   
+auto i = find_if( begin(v), end(v),  [=](int i) { return i > x && i < y; } );  
 ```  
   
 ### Range-based for loops  

@@ -31,7 +31,6 @@ f1_keywords:
   - "_gmtime64"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "gmtime32 function"
   - "_gmtime64 function"

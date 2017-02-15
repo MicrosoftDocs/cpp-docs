@@ -27,7 +27,6 @@ f1_keywords:
   - "_malloc_dbg"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "malloc_dbg function"
   - "memory allocation"

@@ -26,7 +26,6 @@ f1_keywords:
   - "execvp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "execvp function"
 ms.assetid: a0d0e898-9f06-4aa9-94ce-3ad317318c3a

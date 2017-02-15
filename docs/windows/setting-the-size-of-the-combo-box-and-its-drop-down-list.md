@@ -12,7 +12,6 @@ f1_keywords:
   - "vc.editors.dialog.combo"
 dev_langs: 
   - "C++"
-  - "C++"
 helpviewer_keywords: 
   - "combo boxes, sizing"
   - "controls [C++], sizing"

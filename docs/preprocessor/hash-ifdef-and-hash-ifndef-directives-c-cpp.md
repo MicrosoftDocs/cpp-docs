@@ -13,7 +13,6 @@ f1_keywords:
   - "#ifdef"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "#ifdef directive"
   - "preprocessor, directives"

@@ -34,7 +34,6 @@ f1_keywords:
   - "math/fmaxf"
   - "math/fmaxl"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "fmax function"

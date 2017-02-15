@@ -28,7 +28,6 @@ f1_keywords:
   - "crtdbg/_CrdDoForAllClientObjects"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_CrtDoForAllClientObjects function"
   - "CrtDoForAllClientObjects function"

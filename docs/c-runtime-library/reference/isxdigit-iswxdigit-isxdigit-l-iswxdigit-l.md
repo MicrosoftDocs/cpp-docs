@@ -32,7 +32,6 @@ f1_keywords:
   - "_istxdigit"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "isxdigit function"
   - "istxdigit function"

@@ -25,7 +25,6 @@ f1_keywords:
   - "countof"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "countof macro"
   - "_countof macro"

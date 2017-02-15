@@ -12,7 +12,6 @@ f1_keywords:
   - "c.constants"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "global constants"
 ms.assetid: 778d86fd-3ca6-4d2b-b4c5-aee6dc1efe6b

@@ -26,7 +26,6 @@ f1_keywords:
   - "kbhit"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "kbhit function"
 ms.assetid: 73f1eed7-b3ef-4887-8ec6-755367de1d7d

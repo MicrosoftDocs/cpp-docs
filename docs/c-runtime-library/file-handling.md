@@ -12,7 +12,6 @@ f1_keywords:
   - "c.files"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "files [C++], handling"
   - "files [C++], opening"

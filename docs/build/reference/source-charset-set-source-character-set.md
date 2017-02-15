@@ -13,7 +13,6 @@ f1_keywords:
   - "source-charset"
   - "/source-charset"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "/execution-charset compiler option"

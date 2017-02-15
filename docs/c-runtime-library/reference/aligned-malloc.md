@@ -28,7 +28,6 @@ f1_keywords:
   - "alligned_malloc"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "aligned_malloc function"
   - "_aligned_malloc function"

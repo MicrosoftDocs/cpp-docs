@@ -27,7 +27,6 @@ f1_keywords:
   - "mbrlen"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "mbrlen function"
 ms.assetid: dde8dee9-e091-4c4c-81b3-639808885ae1

@@ -12,7 +12,6 @@ f1_keywords:
   - "vc.editors.texttool"
 dev_langs: 
   - "C++"
-  - "C++"
 helpviewer_keywords: 
   - "text, adding to an image"
   - "Text Tool dialog box"

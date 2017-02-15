@@ -37,7 +37,6 @@ f1_keywords:
   - "vfprintf_p"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "vfprintf_p_l function"
   - "_vftprintf_p_l function"

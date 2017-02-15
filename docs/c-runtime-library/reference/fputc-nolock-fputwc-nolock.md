@@ -33,7 +33,6 @@ f1_keywords:
   - "_fputtc_nolock"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "streams, writing characters to"
   - "fputwc_nolock function"

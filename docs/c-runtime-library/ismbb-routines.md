@@ -22,7 +22,6 @@ f1_keywords:
   - "ismbb"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "ismbb routines"
   - "_ismbb routines"

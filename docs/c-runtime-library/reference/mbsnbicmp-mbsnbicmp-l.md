@@ -37,7 +37,6 @@ f1_keywords:
   - "_mbsnbicmp_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_tcsnicmp_l function"
   - "_strnicmp function"

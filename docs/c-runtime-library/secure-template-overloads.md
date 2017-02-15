@@ -14,7 +14,6 @@ f1_keywords:
   - "_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES"
   - "_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES"

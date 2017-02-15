@@ -12,7 +12,6 @@ f1_keywords:
   - "Ansi"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "underscores, leading"
   - "compatibility [C++], ANSI C"

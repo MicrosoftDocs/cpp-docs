@@ -32,7 +32,6 @@ f1_keywords:
   - "searchenv"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_wsearchenv function"
   - "files [C++], finding"

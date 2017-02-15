@@ -26,7 +26,6 @@ f1_keywords:
   - "access"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "access function"
 ms.assetid: 65197793-bd0a-41c3-9c29-18de2d95d9a6

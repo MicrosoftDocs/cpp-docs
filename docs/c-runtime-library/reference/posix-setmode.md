@@ -26,7 +26,6 @@ f1_keywords:
   - "setmode"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "setmode function"
 ms.assetid: cb959d9e-09f3-45af-8943-85f4ca0d3f5a

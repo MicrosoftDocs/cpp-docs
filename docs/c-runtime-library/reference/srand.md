@@ -27,7 +27,6 @@ f1_keywords:
   - "srand"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "random starting point"
   - "random starting point, setting"

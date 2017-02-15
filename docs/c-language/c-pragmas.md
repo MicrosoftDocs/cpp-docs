@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "pragmas, C/C++"
 ms.assetid: 3d6d36b4-d565-4632-a4cd-e39aeaded5ad

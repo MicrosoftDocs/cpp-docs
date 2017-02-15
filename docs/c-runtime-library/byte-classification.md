@@ -12,7 +12,6 @@ f1_keywords:
   - "c.types.bytes"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "code page 932"
   - "byte classification routines"

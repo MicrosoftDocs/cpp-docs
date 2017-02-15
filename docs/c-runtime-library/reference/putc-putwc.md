@@ -30,7 +30,6 @@ f1_keywords:
   - "putc"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "streams, writing characters to"
   - "characters, writing"

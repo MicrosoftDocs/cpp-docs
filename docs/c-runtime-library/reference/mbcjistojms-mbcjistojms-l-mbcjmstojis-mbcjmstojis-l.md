@@ -37,7 +37,6 @@ f1_keywords:
   - "mbcjmstojis"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_mbcjmstojis_l function"
   - "_mbcjistojms function"

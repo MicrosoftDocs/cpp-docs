@@ -27,7 +27,6 @@ f1_keywords:
   - "Abort"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "aborting current process"
   - "abort function"
@@ -102,7 +101,7 @@ void abort( void );
 ## Example  
  The following program tries to open a file and aborts if the attempt fails.  
   
-```c  
+```C  
 // crt_abort.c  
 // compile with: /TC  
 // This program demonstrates the use of  

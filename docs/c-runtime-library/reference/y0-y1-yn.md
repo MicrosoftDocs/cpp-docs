@@ -30,7 +30,6 @@ f1_keywords:
   - "y0"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "y0 function"
   - "y1 function"

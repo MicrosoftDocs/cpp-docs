@@ -31,7 +31,6 @@ f1_keywords:
   - "_beginthreadex"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_beginthread function"
   - "threading [C++], creating threads"

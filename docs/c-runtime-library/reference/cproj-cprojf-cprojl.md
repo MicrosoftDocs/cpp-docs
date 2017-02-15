@@ -34,7 +34,6 @@ f1_keywords:
   - "complex/cprojf"
   - "complex/cprojl"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "cproj function"

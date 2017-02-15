@@ -31,7 +31,6 @@ f1_keywords:
   - "searchenv_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tsearchenv_s function"
   - "files [C++], finding"

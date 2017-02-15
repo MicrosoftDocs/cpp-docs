@@ -37,7 +37,6 @@ f1_keywords:
   - "_hypotf"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "hypotenuse calculation"
   - "hypot function"

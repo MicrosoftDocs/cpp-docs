@@ -26,7 +26,6 @@ f1_keywords:
   - "cwait"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "cwait function"
 ms.assetid: 1ad1ab19-02e5-4155-94ca-f02c2d5a90a6

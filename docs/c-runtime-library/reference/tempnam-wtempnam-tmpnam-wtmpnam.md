@@ -35,7 +35,6 @@ f1_keywords:
   - "_tempnam"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wtempnam function"
   - "file names [C++], creating temporary"

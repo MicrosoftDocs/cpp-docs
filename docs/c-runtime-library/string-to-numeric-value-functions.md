@@ -21,7 +21,6 @@ f1_keywords:
   - "_tcstoi64"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "parsing, numeric strings"
   - "string conversion, to numeric values"

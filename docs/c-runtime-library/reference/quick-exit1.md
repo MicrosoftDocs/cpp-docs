@@ -29,7 +29,6 @@ f1_keywords:
   - "process/quick_exit"
   - "stdlib/quick_exit"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "quick_exit function"

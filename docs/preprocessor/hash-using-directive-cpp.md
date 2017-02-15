@@ -15,7 +15,6 @@ f1_keywords:
   - "#using_cpp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "using directive (#using)"
   - "#using directive"

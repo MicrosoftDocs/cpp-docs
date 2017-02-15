@@ -63,7 +63,6 @@ f1_keywords:
   - "_findnext32"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_wfindnexti64 function"
   - "_tfindnext32 function"

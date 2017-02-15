@@ -69,8 +69,7 @@ Creates a binary that can be executed in the Windows kernel.
  When the compiler is passed the **/kernel** switch, it predefines a preprocessor macro that's named `_KERNEL_MODE` and has the value **1**. You can use this to conditionally compile code based on whether the execution environment is in user mode or kernel mode. For example, the following code specifies that the class should be in a non-pageable memory segment when it is compiled for kernel mode execution.  
   
 ```cpp  
-  
-      #ifdef _KERNEL_MODE  
+#ifdef _KERNEL_MODE  
 #define NONPAGESECTION __declspec(code_seg("$kerneltext$"))  
 #else  
 #define NONPAGESECTION  
@@ -78,7 +77,7 @@ Creates a binary that can be executed in the Windows kernel.
   
 class NONPAGESECTION MyNonPagedClass  
 {  
-  
+   // ...
 };  
 ```  
   

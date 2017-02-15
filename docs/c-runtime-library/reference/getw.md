@@ -27,7 +27,6 @@ f1_keywords:
   - "_getw"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_getw function"
   - "integers, getting from streams"

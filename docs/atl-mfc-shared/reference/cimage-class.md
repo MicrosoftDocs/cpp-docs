@@ -141,7 +141,7 @@ class CImage
  `CImage` cannot be selected into a new [CDC](../../mfc/reference/cdc-class.md). `CImage` creates its own **HDC** for the image. Because an `HBITMAP` can only be selected into one **HDC** at a time, the `HBITMAP` associated with the `CImage` cannot be selected into another **HDC**. If you need a `CDC`, retrieve the **HDC** from the `CImage` and give it to [CDC::FromHandle](../../mfc/reference/cdc-class.md#cdc__fromhandle.  
   
 ## Example  
-```cpp
+```cpp  
 // Get a CDC for the image
 CDC* pDC = CDC::FromHandle(m_myImage.GetDC());
 
@@ -154,7 +154,7 @@ m_myImage.ReleaseDC();
 
   
 ## Example  
-```cpp
+```cpp  
 void CMyDlg::OnRButtonDown(UINT nFlags, CPoint point)
 {
   UNREFERENCED_PARAMETER(nFlags);
@@ -468,7 +468,7 @@ BOOL CreateEx(
 ### Example  
  The following example creates a 100x100 pixel bitmap, using 16 bits to encode each pixel. In a given 16-bit pixel, bits 0-3 encode the red component, bits 4-7 encode green, and bits 8-11 encode blue. The remaining 4 bits are unused.  
 
-```cpp
+```cpp  
 DWORD adwBitmasks[3] = { 0x0000000f, 0x000000f0, 0x00000f00 };
 m_myImage.CreateEx(100, 100, 16, BI_BITFIELDS, adwBitmasks, 0);
 ```
@@ -666,7 +666,7 @@ static HRESULT GetExporterFilterString(CSimpleString& strExporters,
   
  For example:  
 
-```cpp
+```cpp  
 //First filter in the list will be titled "All Image Files", and
 //will accept files with any extension supported by any exporter.
 CImage::GetExporterFilterString(
@@ -755,7 +755,7 @@ static HRESULT GetImporterFilterString(CSimpleString& strImporters,
   
  For example:  
 
-```cpp
+```cpp  
 //First filter in the list will be titled "All Image Files", and
 //will accept files with any extension supported by any importer.
 CImage::GetImporterFilterString(
@@ -1501,7 +1501,7 @@ BOOL TransparentBlt(
   
 ### Example  
 
-```cpp
+```cpp  
 // Performs a transparent blit from the source image to the destination 
 // image using the images' current transparency settings
 BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage, 

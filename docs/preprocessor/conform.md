@@ -13,7 +13,6 @@ f1_keywords:
   - "vc-pragma.conform"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "conform pragma"
   - "forScope conform pragma"

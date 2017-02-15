@@ -13,7 +13,6 @@ f1_keywords:
   - "vc-pragma.section"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "pragmas, section"
   - "section pragma"

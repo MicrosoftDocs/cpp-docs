@@ -27,7 +27,6 @@ f1_keywords:
   - "btowc"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "btowc function"
 ms.assetid: 99a46e02-6f86-4569-af79-5feca012add8

@@ -35,7 +35,6 @@ f1_keywords:
   - "_tcstol_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wcstol function"
   - "wcstol_l function"

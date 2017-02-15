@@ -61,7 +61,6 @@ f1_keywords:
   - "_wfindfirst64"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_tfindfirst64 function"
   - "_wfindfirst64i32 function"

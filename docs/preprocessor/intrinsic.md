@@ -13,7 +13,6 @@ f1_keywords:
   - "vc-pragma.intrinsic"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "intrinsic pragma"
   - "pragmas, intrinsic"

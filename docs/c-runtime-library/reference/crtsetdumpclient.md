@@ -27,7 +27,6 @@ f1_keywords:
   - "CrtSetDumpClient"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_CrtSetDumpClient function"
   - "CrtSetDumpClient function"

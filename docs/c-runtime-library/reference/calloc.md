@@ -27,7 +27,6 @@ f1_keywords:
   - "calloc"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "memory allocation, arrays"
   - "calloc function"

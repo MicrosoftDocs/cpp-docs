@@ -54,7 +54,7 @@ Conceptually, to create an object on the free store, the compiler generates code
   
 If you compile by using link-time code generation (LTCG), you do not need to specify `/Zc:throwingNew`. When your code is compiled by using LTCG, the compiler can detect if the default, conforming `operator new` implementation is used. If so, the compiler leaves out the null checks automatically. The linker looks for the `/ThrowingNew` flag to tell if the implementation of `operator new` is conforming. You can specify this flag to the linker by including this directive in the source for your custom operator new implementation:  
   
-```cpp
+```cpp  
 #pragma comment(linker, "/ThrowingNew")  
 ```  
   

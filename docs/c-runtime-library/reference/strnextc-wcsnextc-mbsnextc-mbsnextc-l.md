@@ -41,7 +41,6 @@ f1_keywords:
   - "wcsnextc"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_mbsnextc function"
   - "_tcsnextc function"

@@ -45,7 +45,6 @@ f1_keywords:
   - "_tcsncicoll"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "code pages, using for string comparisons"
   - "ftcsncicoll function"

@@ -12,7 +12,6 @@ f1_keywords:
   - "vc.editors.image.editing"
 dev_langs: 
   - "C++"
-  - "C++"
 helpviewer_keywords: 
   - ".gif files, saving bitmaps as"
   - "jpg files, saving bitmaps as"

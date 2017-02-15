@@ -29,7 +29,6 @@ f1_keywords:
   - "GetChar"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "gettchar function"
   - "characters, reading"

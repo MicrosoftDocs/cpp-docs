@@ -31,7 +31,6 @@ f1_keywords:
   - "_fullpath"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_wfullpath function"
   - "relative file paths"

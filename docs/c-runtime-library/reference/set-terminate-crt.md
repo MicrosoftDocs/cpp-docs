@@ -27,7 +27,6 @@ f1_keywords:
   - "set_terminate"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "set_terminate function"
   - "terminate function"

@@ -26,7 +26,6 @@ f1_keywords:
   - "cprintf"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "cprintf function"
 ms.assetid: 573e6634-d7e5-4856-8c01-627dcfbd5fc8

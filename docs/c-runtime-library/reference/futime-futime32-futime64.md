@@ -32,7 +32,6 @@ f1_keywords:
   - "_futime64"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_futime function"
   - "futime32 function"

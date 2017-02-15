@@ -77,7 +77,6 @@ f1_keywords:
   - "__func__"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "timestamps, preprocessor macro"
   - "cl.exe compiler, version number"

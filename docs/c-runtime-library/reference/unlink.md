@@ -26,7 +26,6 @@ f1_keywords:
   - "unlink"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "unlink function"
 ms.assetid: 2cd82055-5770-48be-88ee-4b2c70541c46

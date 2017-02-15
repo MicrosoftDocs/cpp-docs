@@ -34,7 +34,6 @@ f1_keywords:
   - "complex/cargf"
   - "complex/cargl"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "carg function"

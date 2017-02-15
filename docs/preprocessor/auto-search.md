@@ -12,7 +12,6 @@ f1_keywords:
   - "auto_search"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "auto_search attribute"
 ms.assetid: 0fee2503-cd28-4d8c-b4d5-15ca0a91d2d2

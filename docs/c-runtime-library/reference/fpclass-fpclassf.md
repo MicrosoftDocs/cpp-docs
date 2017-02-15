@@ -33,7 +33,6 @@ f1_keywords:
   - "math/_fpclassf"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "fpclass function"
   - "floating-point numbers, IEEE representation"

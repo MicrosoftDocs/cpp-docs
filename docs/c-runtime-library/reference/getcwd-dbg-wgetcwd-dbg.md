@@ -31,7 +31,6 @@ f1_keywords:
   - "wgetcwd_dbg"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wgetcwd_dbg function"
   - "working directory"

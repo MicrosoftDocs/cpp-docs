@@ -13,7 +13,6 @@ f1_keywords:
   - "fenv_access_CPP"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "pragmas, fenv_access"
   - "fenv_access pragma"

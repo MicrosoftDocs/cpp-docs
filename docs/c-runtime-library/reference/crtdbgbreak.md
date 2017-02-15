@@ -27,7 +27,6 @@ f1_keywords:
   - "CrtDbgBreak"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "CrtDbgBreak function"
   - "_CrtDbgBreak function"

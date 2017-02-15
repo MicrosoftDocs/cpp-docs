@@ -27,7 +27,6 @@ f1_keywords:
   - "feraiseexcept"
   - "fenv/feraiseexcept"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "feraiseexcept function"

@@ -34,7 +34,6 @@ f1_keywords:
   - "exp2l"
   - "math/exp2l"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "exp2 function"

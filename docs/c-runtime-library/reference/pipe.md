@@ -28,7 +28,6 @@ f1_keywords:
   - "_pipe"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "pipes, creating"
   - "_pipe function"

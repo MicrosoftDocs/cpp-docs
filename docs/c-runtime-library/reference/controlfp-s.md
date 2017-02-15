@@ -28,7 +28,6 @@ f1_keywords:
   - "_controlfp_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "floating-point numbers, control word"
   - "controlfp_s function"

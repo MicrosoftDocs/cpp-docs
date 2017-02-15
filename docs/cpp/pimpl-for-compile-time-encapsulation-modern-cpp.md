@@ -45,7 +45,6 @@ The *pimpl idiom* is a modern C++ technique to hide implementation, to minimize 
 ## Pimpl header  
   
 ```cpp  
-  
 // my_class.h  
 class my_class {  
    //  ... all public and protected stuff goes here ...  
@@ -61,7 +60,6 @@ private:
  Define the `impl` class in the .cpp file.  
   
 ```cpp  
-  
 // my_class.cpp  
 class my_class::impl {  // defined privately here  
   // ... all private data and functions: all of these  

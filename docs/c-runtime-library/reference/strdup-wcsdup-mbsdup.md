@@ -35,7 +35,6 @@ f1_keywords:
   - "_wcsdup"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wcsdup function"
   - "ftcsdup function"

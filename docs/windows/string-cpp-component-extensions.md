@@ -45,7 +45,6 @@ The Visual C++ compiler supports *strings*, which are objects that represent tex
 ### Syntax  
   
 ```cpp  
-  
 // compile with /ZW  
 using namespace Platform;  
 using namespace default;  

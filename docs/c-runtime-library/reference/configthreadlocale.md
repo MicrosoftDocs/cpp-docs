@@ -98,7 +98,7 @@ int _configthreadlocale(
   
 ## Example  
   
-```C++  
+```cpp  
 // crt_configthreadlocale.cpp  
 //   
 // This program demonstrates the use of _configthreadlocale when  

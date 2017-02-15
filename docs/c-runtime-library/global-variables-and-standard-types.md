@@ -12,7 +12,6 @@ f1_keywords:
   - "c.variables"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "global variables, CRT"
   - "standard types, CRT"

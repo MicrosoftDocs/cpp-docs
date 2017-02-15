@@ -12,7 +12,6 @@ f1_keywords:
   - "c.io"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "stream I/O routines"
   - "I/O [CRT], unicode stream"

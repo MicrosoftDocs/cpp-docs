@@ -28,7 +28,6 @@ f1_keywords:
   - "feholdexcept"
   - "fenv/feholdexcept"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "feholdexcept function"

@@ -27,7 +27,6 @@ f1_keywords:
   - "signal"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "signal function"
 ms.assetid: 094118de-d789-4063-b4f4-cffcc80bf29d
@@ -120,9 +119,7 @@ void (__cdecl *signal(
   
  A program must contain floating-point code if it is to trap the `SIGFPE` exception by using the function. If your program does not have floating-point code and requires the run-time library's signal-handling code, just declare a volatile double and initialize it to zero:  
   
-```  
-volatile double d = 0.0f;   
-```  
+`volatile double d = 0.0f;`  
   
  The `SIGILL` and `SIGTERM` signals are not generated under Windows. They are included for ANSI compatibility. Therefore, you can set signal handlers for these signals by using `signal`, and you can also explicitly generate these signals by calling [raise](../../c-runtime-library/reference/raise.md).  
   
@@ -140,8 +137,7 @@ volatile double d = 0.0f;
  The following example shows how to use `signal` to add some custom behavior to the `SIGABRT` signal. For additional information about abort behavior, see [_set_abort_behavior](../../c-runtime-library/reference/set-abort-behavior.md).  
   
 ```cpp  
-  
-      // crt_signal.c  
+// crt_signal.c  
 // compile with: /EHsc /W4  
 // Use signal to attach a signal handler to the abort routine  
 #include <stdlib.h>  
@@ -171,7 +167,6 @@ int main()
 ```Output  
 This application has requested the Runtime to terminate it in an unusual way.  
 Please contact the application's support team for more information.  
-  
 ```  
   
 ## .NET Framework Equivalent  

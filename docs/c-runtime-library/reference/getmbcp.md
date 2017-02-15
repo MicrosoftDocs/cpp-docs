@@ -28,7 +28,6 @@ f1_keywords:
   - "getmbcp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "code pages, determining current"
   - "_getmbcp function"

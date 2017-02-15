@@ -30,7 +30,6 @@ f1_keywords:
   - "puts"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "strings [C++], writing"
   - "_putts function"

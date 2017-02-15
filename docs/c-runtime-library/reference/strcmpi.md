@@ -27,7 +27,6 @@ f1_keywords:
   - "strcmpi"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "strcmpi function"
 ms.assetid: 74206b2f-9bca-4d32-9cdc-93cb94c2aaa1

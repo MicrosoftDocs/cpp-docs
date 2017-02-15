@@ -33,7 +33,6 @@ f1_keywords:
   - "_wdupenv_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_dupenv_s function"
   - "_tdupenv_s function"

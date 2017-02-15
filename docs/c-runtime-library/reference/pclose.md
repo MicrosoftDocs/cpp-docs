@@ -28,7 +28,6 @@ f1_keywords:
   - "pclose"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_pclose function"
   - "pclose function"

@@ -12,7 +12,6 @@ f1_keywords:
   - "no_auto_exclude"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "no_auto_exclude attribute"
 ms.assetid: 3241ef9c-758a-4e86-bdc5-37da6072430f

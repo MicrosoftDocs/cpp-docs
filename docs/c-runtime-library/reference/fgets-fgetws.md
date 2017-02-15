@@ -30,7 +30,6 @@ f1_keywords:
   - "fgets"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_fgetts function"
   - "streams, getting strings from"

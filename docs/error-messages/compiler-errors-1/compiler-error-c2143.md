@@ -112,7 +112,7 @@ int main() {
   
  C2143 can occur when a closing brace, parenthesis, or semicolon is missing on the line where the error is detected or on one of the lines just above:  
   
-```caml  
+```cpp  
 // C2143d.cpp  
 // compile with: /c  
 class X {  
@@ -191,7 +191,7 @@ template void PrintType(float i, float j);   // OK
   
  In a C program, variables must be declared at the beginning of the function, and they cannot be declared after the function executes non-declaration instructions.  
   
-```c  
+```C  
 // C2143j.c  
 int main()   
 {  
@@ -199,5 +199,4 @@ int main()
     i++;  
     int j = 0; // C2143  
 }  
-  
-```
+```  

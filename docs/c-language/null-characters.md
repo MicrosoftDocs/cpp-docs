@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "null values, appended to binary stream"
 ms.assetid: bca3fc78-0347-41bd-9e3e-94d646104bad

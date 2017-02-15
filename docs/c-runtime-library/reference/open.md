@@ -26,7 +26,6 @@ f1_keywords:
   - "open"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "open function"
 ms.assetid: e3139118-4da2-434b-a551-fcf3fccf49b5

@@ -32,7 +32,6 @@ f1_keywords:
   - "tputenv"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_putenv function"
   - "environment variables, deleting"

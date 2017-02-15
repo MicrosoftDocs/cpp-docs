@@ -30,7 +30,6 @@ f1_keywords:
   - "printf_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wprintf_s function"
   - "tprintf_s function"

@@ -29,7 +29,6 @@ f1_keywords:
   - "lldiv"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "ldiv function"
   - "lldiv function"

@@ -55,7 +55,6 @@ f1_keywords:
   - "ctype/__iswcsymf_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "iscsymf_l function"
   - "iswsym_l function"

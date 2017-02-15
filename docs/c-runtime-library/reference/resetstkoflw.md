@@ -27,7 +27,6 @@ f1_keywords:
   - "_resetstkoflw"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "resetstkoflw function"
   - "stack overflow"

@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "file pointers [C++], file position errors"
 ms.assetid: d5e59d8b-08c0-4927-a338-0b2d8234ce24

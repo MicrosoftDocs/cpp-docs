@@ -40,7 +40,6 @@ f1_keywords:
   - "sntscanf_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_snscanf_s_l function"
   - "snwscanf_s function"

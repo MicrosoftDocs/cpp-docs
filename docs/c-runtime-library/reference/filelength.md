@@ -26,7 +26,6 @@ f1_keywords:
   - "filelength"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "filelength function"
 ms.assetid: 5fbc1912-7822-498d-bbf4-8bada87cf9b9

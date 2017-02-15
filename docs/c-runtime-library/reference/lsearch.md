@@ -28,7 +28,6 @@ f1_keywords:
   - "lsearch"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_lsearch function"
   - "values, searching for"

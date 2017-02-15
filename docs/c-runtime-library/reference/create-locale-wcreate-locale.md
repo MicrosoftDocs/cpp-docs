@@ -31,7 +31,6 @@ f1_keywords:
   - "__create_locale"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "locales, creating"
   - "_create_locale function"

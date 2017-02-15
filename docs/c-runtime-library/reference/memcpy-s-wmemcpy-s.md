@@ -29,7 +29,6 @@ f1_keywords:
   - "memcpy_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "memcpy_s function"
   - "wmemcpy_s function"

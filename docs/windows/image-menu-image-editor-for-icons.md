@@ -12,7 +12,6 @@ f1_keywords:
   - "vc.editors.bitmap"
 dev_langs: 
   - "C++"
-  - "C++"
 helpviewer_keywords: 
   - "Image menu"
 ms.assetid: ac2b4d53-1919-4fd1-a0af-d3c085c45af2

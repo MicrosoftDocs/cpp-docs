@@ -13,7 +13,6 @@ f1_keywords:
   - "const_seg_CPP"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "pragmas, const_seg"
   - "const_seg pragma"

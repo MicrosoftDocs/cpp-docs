@@ -46,7 +46,6 @@ f1_keywords:
   - "_tcsset"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_wcsset_l function"
   - "_tcsset function"

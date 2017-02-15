@@ -36,7 +36,6 @@ f1_keywords:
   - "_ftcscoll"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "code pages, using for string comparisons"
   - "mbscoll function"

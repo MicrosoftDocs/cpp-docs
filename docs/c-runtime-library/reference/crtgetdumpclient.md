@@ -27,7 +27,6 @@ f1_keywords:
   - "_CrtGetDumpClient"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_CrtGetDumpClient function"
   - "CrtGetDumpClient function"

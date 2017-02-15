@@ -37,7 +37,6 @@ Auto-Parallelizer and Auto-Vectorizer are designed to provide automatic performa
  The [/Qpar](../build/reference/qpar-auto-parallelizer.md) compiler switch enables *automatic parallelization* of loops in your code. When you specify this flag without changing your existing code, the compiler evaluates the code to find loops that might benefit from parallelization. Because it might find loops that don't do much work and therefore won't benefit from parallelization, and because every unnecessary parallelization can engender the spawning of a thread pool, extra synchronization, or other processing that would tend to slow performance instead of improving it, the compiler is conservative in selecting the loops that it parallelizes. For example, consider the following example in which the upper bound of the loop is not known at compile time:  
   
 ```cpp  
-  
 void loop_test(int u) {  
    for (int i=0; i<u; ++i)  
       A[i] = B[i] * C[i];  
@@ -47,7 +46,6 @@ void loop_test(int u) {
  Because `u` could be a small value, the compiler won’t automatically parallelize this loop. However, you might still want it parallelized because you know that `u` will always be large. To enable the auto-parallelization, specify [#pragma loop(hint_parallel(n))](../preprocessor/loop.md), where `n` is the number of threads to parallelize across. In the following example, the compiler will attempt to parallelize the loop across 8 threads.  
   
 ```cpp  
-  
 void loop_test(int u) {  
 #pragma loop(hint_parallel(8))  
    for (int i=0; i<u; ++i)  
@@ -60,7 +58,6 @@ void loop_test(int u) {
  There are some loops that the compiler can’t parallelize even if you want it to. Here's an example:  
   
 ```cpp  
-  
 #pragma loop(hint_parallel(8))  
 for (int i=0; i<upper_bound(); ++i)  
     A[i] = B[i] * C[i];  

@@ -64,7 +64,6 @@ f1_keywords:
   - "_CRT_ALLOC_HOOK"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "__timeb64 type"
   - "tm type"

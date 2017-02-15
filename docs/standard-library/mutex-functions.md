@@ -19,7 +19,7 @@ manager: "ghogen"
 ##  <a name="adopt_lock_variable"></a>  adopt_lock Variable  
  Represents an object that can be passed to constructors for [lock_guard](../standard-library/lock-guard-class.md) and [unique_lock](../standard-library/unique-lock-class.md) to indicate that the mutex object that is also being passed to the constructor is locked.  
   
-```cpp
+```cpp  
 const adopt_lock_t adopt_lock;
 ```  
   
@@ -48,14 +48,14 @@ void call_once(once_flag& Flag,
 ##  <a name="defer_lock_variable"></a>  defer_lock Variable  
  Represents an object that can be passed to the constructor for [unique_lock](../standard-library/unique-lock-class.md). This indicates that the constructor should not lock the mutex object that's also being passed to it.  
   
-```cpp
+```cpp  
 const defer_lock_t defer_lock;
 ```  
   
 ##  <a name="lock_function"></a>  lock  
  Attempts to lock all arguments without deadlock.  
   
-```cpp
+```cpp  
 template <class L1, class L2, class... L3>
 void lock(L1&, L2&, L3&...);
 ```  
@@ -68,7 +68,7 @@ void lock(L1&, L2&, L3&...);
 ##  <a name="try_to_lock_variable"></a>  try_to_lock Variable  
  Represents an object that can be passed to the constructor for [unique_lock](../standard-library/unique-lock-class.md) to indicate that the constructor should try to unlock the `mutex` that is also being passed to it without blocking.  
   
-```cpp
+```cpp  
 const try_to_lock_t try_to_lock;
 ```  
   

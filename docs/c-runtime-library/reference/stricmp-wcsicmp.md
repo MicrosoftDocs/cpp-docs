@@ -28,7 +28,6 @@ f1_keywords:
   - "wcsicmp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "stricmp function"
   - "wcsicmp function"

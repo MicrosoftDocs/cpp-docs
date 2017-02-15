@@ -92,7 +92,6 @@ In each case:
  The following code shows how to use `break` in a `while` loop and a `do` loop.  
   
 ```cpp  
-  
 #include <iostream>  
 using namespace std;  
   

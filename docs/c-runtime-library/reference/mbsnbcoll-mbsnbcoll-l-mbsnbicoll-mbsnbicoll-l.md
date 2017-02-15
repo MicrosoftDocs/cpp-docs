@@ -37,7 +37,6 @@ f1_keywords:
   - "mbsnbcoll_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_mbsnbcoll_l function"
   - "mbsnbcoll_l function"

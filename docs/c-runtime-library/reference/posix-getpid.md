@@ -26,7 +26,6 @@ f1_keywords:
   - "getpid"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "getpid function"
 ms.assetid: 4eaabab4-362b-429f-854e-ae4941919824

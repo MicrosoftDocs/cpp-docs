@@ -26,7 +26,6 @@ f1_keywords:
   - "_getws"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "getws function"
   - "getts function"

@@ -27,7 +27,6 @@ f1_keywords:
   - "feupdateenv"
   - "fenv/feupdateenv"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "feupdateenv function"

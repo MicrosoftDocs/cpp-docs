@@ -26,7 +26,6 @@ f1_keywords:
   - "spawnl"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "spawnl function"
 ms.assetid: ae762de9-e761-4fb7-bb63-b7904ed09a98

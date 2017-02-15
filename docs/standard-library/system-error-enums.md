@@ -116,7 +116,6 @@ class io_errc {
 ### Example  
   
 ```cpp  
-  
 // io_errc.cpp  
 // cl.exe /nologo /W4 /EHsc /MTd  
   

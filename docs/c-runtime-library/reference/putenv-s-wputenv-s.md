@@ -30,7 +30,6 @@ f1_keywords:
   - "_putenv_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wputenv_s function"
   - "_putenv_s function"

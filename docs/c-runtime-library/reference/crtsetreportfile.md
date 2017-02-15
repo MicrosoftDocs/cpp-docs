@@ -27,7 +27,6 @@ f1_keywords:
   - "_CrtSetReportFile"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "CrtSetReportFile function"
   - "_CrtSetReportFile function"

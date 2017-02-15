@@ -27,7 +27,6 @@ f1_keywords:
   - "Raise"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "signals, sending to executing programs"
   - "raise function"

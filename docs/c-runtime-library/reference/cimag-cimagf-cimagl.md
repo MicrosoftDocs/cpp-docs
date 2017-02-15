@@ -34,7 +34,6 @@ f1_keywords:
   - "complex/cimagl"
   - "cimag"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "cimag function"

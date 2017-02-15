@@ -32,7 +32,6 @@ f1_keywords:
   - "wchdir"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_tchdir function"
   - "_chdir function"

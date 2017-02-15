@@ -26,7 +26,6 @@ f1_keywords:
   - "tzset"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tzset function"
 ms.assetid: c3afa5d0-cb15-4163-9181-fafb962c95aa

@@ -12,7 +12,6 @@ f1_keywords:
   - "c.exceptions"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "exception handling, routines"
 ms.assetid: f60548c6-850a-4e1e-a79b-a2a6a541ab62

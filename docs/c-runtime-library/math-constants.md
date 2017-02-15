@@ -12,7 +12,6 @@ f1_keywords:
   - "c.constants"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "M_PI constant"
   - "M_PI_2 constant"

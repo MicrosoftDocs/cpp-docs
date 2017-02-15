@@ -12,7 +12,6 @@ f1_keywords:
   - "Rename"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "rename attribute"
 ms.assetid: 5c5c6153-1087-4b7b-87fb-fc59b90b9975

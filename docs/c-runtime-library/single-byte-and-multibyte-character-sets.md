@@ -12,7 +12,6 @@ f1_keywords:
   - "c.character.multibyte"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "SBCS (single byte character set)"
   - "MBCS [C++], about MBCS"

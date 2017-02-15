@@ -31,7 +31,6 @@ f1_keywords:
   - "mbctombb"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_mbctombb function"
   - "mbctombb_l function"

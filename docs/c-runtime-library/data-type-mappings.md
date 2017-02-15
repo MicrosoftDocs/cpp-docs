@@ -20,7 +20,6 @@ f1_keywords:
   - "_TEXT"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_TXCHAR type"
   - "TINT type"

@@ -225,7 +225,6 @@ const error_code& _Code = io_errc::stream);
 ### Example  
   
 ```cpp  
-  
 // ios_base_failure.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -279,7 +278,6 @@ fmtflags flags(fmtflags fmtfl);
 ### Example  
   
 ```cpp  
-  
 // ios_base_flags.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -388,7 +386,6 @@ locale getloc() const;
 ### Example  
   
 ```cpp  
-  
 // ios_base_getlock.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -524,7 +521,6 @@ class ios_base {
 ### Example  
   
 ```cpp  
-  
 // ios_base_openmode.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -590,7 +586,6 @@ streamsize precision(streamsize _Prec);
 ### Example  
   
 ```cpp  
-  
 // ios_base_precision.cpp  
 // compile with: /EHsc  
 #include <iostream>  

@@ -10,7 +10,6 @@ f1_keywords:
   - "std option"
 dev_langs: 
   - "C++"
-  - "c++"
 ms.assetid: 0acb74ba-1aa8-4c05-b96c-682988dc19bd
 caps.latest.revision: 5
 author: "corob-msft"

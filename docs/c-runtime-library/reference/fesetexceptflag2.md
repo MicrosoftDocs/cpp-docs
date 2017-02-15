@@ -28,7 +28,6 @@ f1_keywords:
   - "fesetexceptflag"
   - "fenv/fesetexceptflag"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "fesetexceptflag function"

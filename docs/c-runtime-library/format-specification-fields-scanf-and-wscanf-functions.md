@@ -21,7 +21,6 @@ f1_keywords:
   - "scanf"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "width, specifications in scanf function"
   - "scanf format specifications"

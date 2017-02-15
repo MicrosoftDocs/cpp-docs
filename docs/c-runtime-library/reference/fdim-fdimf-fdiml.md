@@ -34,7 +34,6 @@ f1_keywords:
   - "math/fdimf"
   - "math/fdiml"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "fdim function"

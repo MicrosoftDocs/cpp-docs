@@ -28,7 +28,6 @@ f1_keywords:
   - "setmbcp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "setmbcp function"
   - "_setmbcp function"

@@ -56,7 +56,7 @@ Defines the classes [condition_variable](../standard-library/condition-variable-
   
  *Spurious wakeups* occur when threads that are waiting for condition variables become unblocked without appropriate notifications. To recognize such spurious wakeups, code that waits for a condition to become true should explicitly check that condition when the code returns from a wait function. This is usually done by using a loop; you can use `wait(unique_lock<mutex>& lock, Predicate pred)` to perform this loop for you.  
   
-```cpp
+```cpp  
 while (condition is false)
     wait for condition variable;
 ```  

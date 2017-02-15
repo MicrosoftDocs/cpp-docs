@@ -40,7 +40,6 @@ f1_keywords:
   - "_strtok_s_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_strtok_s_l function"
   - "_mbstok_s_l function"

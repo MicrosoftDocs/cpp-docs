@@ -401,7 +401,6 @@ const_iterator cbegin() const;
  You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- `const`) container of any kind that supports `begin()` and `cbegin()`.  
   
 ```cpp  
- 
 auto i1 = Container.begin();
 // i1 is Container<T>::iterator   
 auto i2 = Container.cbegin();
@@ -425,7 +424,6 @@ const_iterator cend() const;
  You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- `const`) container of any kind that supports `end()` and `cend()`.  
   
 ```cpp  
- 
 auto i1 = Container.end();
 // i1 is Container<T>::iterator   
 auto i2 = Container.cend();
@@ -505,7 +503,7 @@ typedef typename Allocator::const_reference const_reference;
   
 ### Example  
   
-```cpp
+```cpp  
 // deque_const_ref.cpp  
 // compile with: /EHsc  
 #include <deque>  

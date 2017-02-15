@@ -12,7 +12,6 @@ f1_keywords:
   - "c.constants.file"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "translation constants"
   - "file translation [C++], constants"
