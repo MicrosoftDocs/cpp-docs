@@ -11,7 +11,6 @@
 # [Linux Development](linux/download-install-and-setup-the-linux-development-workload.md)
 # [.NET Development with C++/CLI](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
 # [Cloud and Web Programming in Visual C++](cloud/cloud-and-web-programming-in-visual-cpp.md)
-## [C++ REST SDK (Codename "Casablanca")](cloud/cpp-rest-sdk-codename-casablanca.md)
 # [Parallel Programming](parallel/parallel-programming-in-visual-cpp.md)
 # [Data Access](data/data-access-programming-mfc-atl.md)
 # [Text and Strings](text/text-and-strings-in-visual-cpp.md)
