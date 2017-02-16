@@ -1,0 +1,84 @@
+---
+title: "Platform::COMException Class | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/30/2016"
+ms.prod: "windows-client-threshold"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "language-reference"
+f1_keywords: 
+  - "Platform/Platform::COMException"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "Platform::COMException Class"
+ms.assetid: 44fda4e5-574f-4d12-ab5f-4ff3f277448d
+caps.latest.revision: 4
+author: "ghogen"
+ms.author: "ghogen"
+manager: "ghogen"
+---
+# Platform::COMException Class
+Represents COM errors that occur during application execution. COMException is the base class for a set of predefined, standard exceptions.  
+  
+## Syntax  
+  
+```cpp  
+public ref class COMException : Exception,    IException,    IPrintable,    IEquatable  
+```  
+  
+## Members  
+ The COMException class inherits from the Object class and the IException, IPrintable, and IEquatable interfaces.  
+  
+ COMException also has the following types of members.  
+  
+ **Constructors**  
+  
+|Member|Description|  
+|------------|-----------------|  
+|`COMException`|Initializes a new instance of the COMException class.|  
+  
+ **Methods**  
+  
+ The COMException class inherits the Equals(), Finalize(), GetHashCode(), GetType(), MemberwiseClose(), and ToString() methods from the [Platform::Object Class](../cppcx/platform-object-class.md).  
+  
+ **Properties**  
+  
+ The COMException class has the following properties.  
+  
+|Member|Description|  
+|------------|-----------------|  
+|[Exception::HResult Property](../cppcx/exception-hresult-property.md)|The HRESULT that corresponds to the exception.|  
+|[Exception::Message Property](../cppcx/exception-message-property.md)|Message that describes the exception.|  
+  
+## Derived Exceptions  
+ The following predefined exceptions are derived from COMException. They differ from COMException only in their name, the name of their constructor, and their underlying HRESULT value.  
+  
+|Name|Underlying HRESULT|Description|  
+|----------|------------------------|-----------------|  
+|COMException|*user-defined hresult*|Thrown when an unrecognized HRESULT is returned from a COM method call.|  
+|AccessDeniedException|E_ACCESSDENIED|Thrown when access is denied to a resource or feature.|  
+|ChangedStateException|E_CHANGED_STATE|Thrown when methods of a collection iterator or a collection view are called after the parent collection has changed, invalidating the results of the method.|  
+|ClassNotRegisteredException|REGDB_E_CLASSNOTREG|Thrown when a COM class has not been registered.|  
+|DisconnectedException|RPC_E_DISCONNECTED|Thrown when an object is disconnected from its clients.|  
+|FailureException|E_FAIL|Thrown when an operation fails.|  
+|InvalidArgumentException|E_INVALIDARG|Thrown when one of the arguments provided to a method is not valid.|  
+|InvalidCastException|E_NOINTERFACE|Thrown when a type can't be cast to another type.|  
+|NotImplementedException|E_NOTIMPL|Thrown if an interface method hasn't been implemented on a class.|  
+|NullReferenceException|E_POINTER|Thrown when there is an attempt to dereference a null object reference.|  
+|OperationCanceledException|E_ABORT|Thrown when an operation is aborted.|  
+|OutOfBoundsException|E_BOUNDS|Thrown when an operation attempts to access data outside the valid range.|  
+|OutOfMemoryException|E_OUTOFMEMORY|Thrown when there's insufficient memory to complete the operation.|  
+  
+## Requirements  
+ **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
+  
+ **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  
+  
+ **Namespace:** Platform  
+  
+ **Metadata:** platform.winmd  
+  
+## See Also  
+ [Platform namespace](../cppcx/platform-namespace-c-cx.md)
