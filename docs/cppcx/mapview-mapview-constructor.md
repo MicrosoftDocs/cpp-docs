@@ -57,7 +57,7 @@ MapView(::std::initializer_list<
  A function object that can compare two element values as sort keys to determine their relative order in the MapView.  
   
  `m`  
- A reference or [Lvalues and Rvalues](../Topic/Lvalues%20and%20Rvalues%20\(Visual%20C++\).md) to a [map Class](../Topic/map%20Class.md) that is used to initialize the current MapView.  
+ A reference or [Lvalues and Rvalues](.../cpp/lvalues-and-rvalues-visual-cpp.md) to a [map Class](../Topic/map%20Class.md) that is used to initialize the current MapView.  
   
  `first`  
  The input iterator of the first element in a range of elements used to initialize the current MapView.  
@@ -66,7 +66,7 @@ MapView(::std::initializer_list<
  The input iterator of the first element after a range of elements used to initialize the current MapView.  
   
  il  
- A [std::initializer_list<std::pair\<K,V>>](../Topic/initializer_list%20Class.md) whose elements will be inserted into the MapView.  
+ A [std::initializer_list<std::pair\<K,V>>](../standard-library/initializer-list-class.md) whose elements will be inserted into the MapView.  
   
 ## Requirements  
  **Header:** collection.h  

@@ -100,16 +100,16 @@ UnorderedMap();
  The typename of the current UnorderedMap.  
   
  `P`  
- A function object that can compare two keys to determine whether they are equal. This parameter defaults to [std::equal_to\<K>](../Topic/equal_to%20Struct.md).  
+ A function object that can compare two keys to determine whether they are equal. This parameter defaults to [std::equal_to\<K>](../standard-library/equal-to-struct.md).  
   
  `H`  
- A function object that produces a hash value for a keys. This parameter defaults to [hash Class 1](../Topic/hash%20Class%201.md) for the key types that that class supports.  
+ A function object that produces a hash value for a keys. This parameter defaults to [hash Class 1](../standard-library/hash-class.md) for the key types that that class supports.  
   
  `m`  
- A reference or [Lvalues and Rvalues](../Topic/Lvalues%20and%20Rvalues%20\(Visual%20C++\).md) to a [std::unordered_map](../Topic/unordered_map%20Class.md) that is used to initialize the current UnorderedMap.  
+ A reference or [Lvalues and Rvalues](.../cpp/lvalues-and-rvalues-visual-cpp.md) to a [std::unordered_map](../standard-library/unordered-map-class.md) that is used to initialize the current UnorderedMap.  
   
  il  
- A [std::initializer_list](../Topic/initializer_list%20Class.md) of [std::pair](../Topic/pair%20Structure.md)objects that will be used to initialize the map.  
+ A [std::initializer_list](../standard-library/initializer-list-class.md) of [std::pair](../standard-library/pair-struct.md)objects that will be used to initialize the map.  
   
  `first`  
  The input iterator of the first element in a range of elements used to initialize the current UnorderedMap.  

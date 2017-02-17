@@ -73,7 +73,7 @@ Vector(
   
 #### Parameters  
  a  
- A [std::array](../Topic/array%20Class%20\(STL\).md) that will be used to initialize the Vector.  
+ A [std::array](../standard-library/array-class.md) that will be used to initialize the Vector.  
   
  a  
  A [Platform::Array](../cppcx/platform-array-class.md) that will be used to initialize the Vector.  
@@ -82,7 +82,7 @@ Vector(
  The type of a collection of objects that is used to initialize the current Vector.  
   
  il  
- A [std::initializer_list](../Topic/initializer_list%20Class.md) of objects of type `T` that will be used to initialize the Vector.  
+ A [std::initializer_list](../standard-library/initializer-list-class.md) of objects of type `T` that will be used to initialize the Vector.  
   
  `N`  
  The number of elements in a collection of objects that is used to initialize the current Vector.  
@@ -94,7 +94,7 @@ Vector(
  A value that is used to initialize each element in the current Vector.  
   
  `v`  
- An [Lvalues and Rvalues](../Topic/Lvalues%20and%20Rvalues%20\(Visual%20C++\).md) to a [std::vector](../Topic/vector%20Class%201.md) that is used to initialize the current Vector.  
+ An [Lvalues and Rvalues](.../cpp/lvalues-and-rvalues-visual-cpp.md) to a [std::vector](../standard-library/vector-class.md) that is used to initialize the current Vector.  
   
  `ptr`  
  Pointer to a `std::vector` that is used to initialize the current Vector.  
@@ -103,13 +103,13 @@ Vector(
  A [Platform::Array](../cppcx/platform-array-class.md) object that is used to initialize the current Vector.  
   
  `a`  
- A [std::array](../Topic/vector%20Class%201.md) object that is used to initialize the current Vector.  
+ A [std::array](../standard-library/array-class.md) object that is used to initialize the current Vector.  
   
  `first`  
- The first element in a sequence of objects that are used to initialize the current Vector. The type of `first` is passed by means of *perfect forwarding*. For more information, see [Rvalue Reference Declarator: &&](../Topic/Rvalue%20Reference%20Declarator:%20&&.md).  
+ The first element in a sequence of objects that are used to initialize the current Vector. The type of `first` is passed by means of *perfect forwarding*. For more information, see [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).  
   
  `last`  
- The last element in a sequence of objects that are used to initialize the current Vector. The type of `last` is passed by means of *perfect forwarding*. For more information, see [Rvalue Reference Declarator: &&](../Topic/Rvalue%20Reference%20Declarator:%20&&.md).  
+ The last element in a sequence of objects that are used to initialize the current Vector. The type of `last` is passed by means of *perfect forwarding*. For more information, see [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).  
   
 ## Requirements  
  **Header:** collection.h  

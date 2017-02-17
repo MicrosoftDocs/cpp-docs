@@ -37,7 +37,7 @@ ref class UnorderedMapView sealed;
  The type of the value in the key-value pair.  
   
  `C`  
- A type that provides a function object that can compare two key values for equality. By default, [std::equal_to\<K>](../Topic/equal_to%20Struct.md)  
+ A type that provides a function object that can compare two key values for equality. By default, [std::equal_to\<K>](../standard-library/equal-to-struct.md)  
   
 ## Remarks  
  UnorderedMapView is a concrete C++ implementation of the [Windows::Foundation::Collections::IMapView\<K,V>](http://go.microsoft.com/fwlink/p/?LinkId=262409) interface that is passed across the application binary interface (ABI). For more information, see [Collections (C++/CX)](../cppcx/collections-c-cx.md).  

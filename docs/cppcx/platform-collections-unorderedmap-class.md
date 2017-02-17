@@ -37,7 +37,7 @@ ref class Map sealed;
  The type of the value in the key-value pair.  
   
  `C`  
- A type that provides a function object that can compare two element values as sort keys to determine their relative order in the Map. By default,  [std::equal_to\<K>](../Topic/equal_to%20Struct.md).  
+ A type that provides a function object that can compare two element values as sort keys to determine their relative order in the Map. By default,  [std::equal_to\<K>](../standard-library/equal-to-struct.md).  
   
 ## Remarks  
  Allowed types are:  
@@ -52,7 +52,7 @@ ref class Map sealed;
   
 -   public enum class  
   
- UnorderedMap is basically a wrapper for [std::unordered_map](../Topic/unordered_map%20Class.md) that supports storage of [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types. It is the a concrete implementation of the [Windows::Foundation::Collections::IMap](http://go.microsoft.com/fwlink/p/?LinkId=262408) and [IObservableMap](http://msdn.microsoft.com/library/windows/apps/br226050.aspx) types that are passed across public [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] interfaces. If you try to use a Platform::Collections::UnorderedMap type in a public return value or parameter, compiler error C3986 is raised. You can fix the error by changing the type of the parameter or return value to [Windows::Foundation::Collections::IMap](http://go.microsoft.com/fwlink/p/?LinkId=262408).  
+ UnorderedMap is basically a wrapper for [std::unordered_map](../standard-library/unordered-map-class.md) that supports storage of [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types. It is the a concrete implementation of the [Windows::Foundation::Collections::IMap](http://go.microsoft.com/fwlink/p/?LinkId=262408) and [IObservableMap](http://msdn.microsoft.com/library/windows/apps/br226050.aspx) types that are passed across public [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] interfaces. If you try to use a Platform::Collections::UnorderedMap type in a public return value or parameter, compiler error C3986 is raised. You can fix the error by changing the type of the parameter or return value to [Windows::Foundation::Collections::IMap](http://go.microsoft.com/fwlink/p/?LinkId=262408).  
   
  For more information, see [Collections](../cppcx/collections-c-cx.md).  
   

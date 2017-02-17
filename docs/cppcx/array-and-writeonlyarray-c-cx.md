@@ -14,7 +14,7 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Array and WriteOnlyArray (C++-CX)
-You can freely use regular C-style arrays or [std::array](../Topic/array%20Class%20\(STL\).md) in a [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] program (although [std::vector](../Topic/vector%20Class%201.md) is often a better choice), but in any API that is published in metadata, you must convert a C-style array or vector to a [Platform::Array](../cppcx/platform-array-class.md) or [Platform::WriteOnlyArray](../cppcx/platform-writeonlyarray-class.md) type depending on how it is being used. The [Platform::Array](../cppcx/platform-array-class.md) type is neither as efficient nor as powerful as [std::vector](../Topic/vector%20Class%201.md), so as a general guideline you should avoid its use in internal code that performs lots of operations on the array elements.  
+You can freely use regular C-style arrays or [std::array](../standard-library/array-class.md) in a [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] program (although [std::vector](../standard-library/vector-class.md) is often a better choice), but in any API that is published in metadata, you must convert a C-style array or vector to a [Platform::Array](../cppcx/platform-array-class.md) or [Platform::WriteOnlyArray](../cppcx/platform-writeonlyarray-class.md) type depending on how it is being used. The [Platform::Array](../cppcx/platform-array-class.md) type is neither as efficient nor as powerful as [std::vector](../standard-library/vector-class.md), so as a general guideline you should avoid its use in internal code that performs lots of operations on the array elements.  
   
  The following array types can be passed across the ABI:  
   
@@ -84,7 +84,7 @@ You can freely use regular C-style arrays or [std::array](../Topic/array%20Class
  [!code-cpp[cx_arrays#07](../cppcx/codesnippet/CPP/js-array/class1.h#07)]  
   
 ## Avoid exposing an Array as a property  
- In general, you should avoid exposing a `Platform::Array` type as a property in a ref class because the entire array is returned even when client code is only attempting to access a single element. When you need to expose a sequence container as a property in a public ref class, [Windows::Foundation::IVector](http://msdn.microsoft.com/library/windows/apps/br206631.aspx) is a better choice. In private or internal APIs (which are not published to metadata), consider using a standard C++ container such as [std::vector](../Topic/vector%20Class%201.md).  
+ In general, you should avoid exposing a `Platform::Array` type as a property in a ref class because the entire array is returned even when client code is only attempting to access a single element. When you need to expose a sequence container as a property in a public ref class, [Windows::Foundation::IVector](http://msdn.microsoft.com/library/windows/apps/br206631.aspx) is a better choice. In private or internal APIs (which are not published to metadata), consider using a standard C++ container such as [std::vector](../standard-library/vector-class.md).  
   
 ## See Also  
  [Type System](../cppcx/type-system-c-cx.md)   

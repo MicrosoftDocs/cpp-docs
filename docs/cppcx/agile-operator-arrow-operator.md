@@ -33,7 +33,7 @@ const throw();
 ## Return Value  
  A handle to the object represented by the current Agile object.  
   
- This operator actually returns an undisclosed internal type. A convenient way to hold the return value is to assign it to a variable that is declared with the [auto](../Topic/auto%20\(C++\).md) type deduction keyword.  
+ This operator actually returns an undisclosed internal type. A convenient way to hold the return value is to assign it to a variable that is declared with the **auto** type deduction keyword.  
   
 ## Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  

@@ -81,7 +81,7 @@ VectorView(
  The type of a collection of objects that is used to initialize the current VectorView.  
   
  il  
- A [std::initializer_list](../Topic/initializer_list%20Class.md) whose elements will be used to initialize the VectorView.  
+ A [std::initializer_list](../standard-library/initializer-list-class.md) whose elements will be used to initialize the VectorView.  
   
  `N`  
  The number of elements in a collection of objects that is used to initialize the current VectorView.  
@@ -93,7 +93,7 @@ VectorView(
  A value that is used to initialize each element in the current VectorView.  
   
  `v`  
- An [Lvalues and Rvalues](../Topic/Lvalues%20and%20Rvalues%20\(Visual%20C++\).md) to a [::std::vector](../Topic/vector%20Class%201.md) that is used to initialize the current VectorView.  
+ An [Lvalues and Rvalues](.../cpp/lvalues-and-rvalues-visual-cpp.md) to a [std::vector](../standard-library/vector-class.md) that is used to initialize the current VectorView.  
   
  `ptr`  
  Pointer to a `std::vector` that is used to initialize the current VectorView.  
@@ -102,13 +102,13 @@ VectorView(
  A [Platform::Array](../cppcx/platform-array-class.md) object that is used to initialize the current VectorView.  
   
  `a`  
- A [std::array](../Topic/vector%20Class%201.md) object that is used to initialize the current VectorView.  
+ A [std::array](../standard-library/array-class.md) object that is used to initialize the current VectorView.  
   
  `first`  
- The first element in a sequence of objects that are used to initialize the current VectorView. The type of `first` is passed by means of *perfect forwarding*. For more information, see [Rvalue Reference Declarator: &&](../Topic/Rvalue%20Reference%20Declarator:%20&&.md).  
+ The first element in a sequence of objects that are used to initialize the current VectorView. The type of `first` is passed by means of *perfect forwarding*. For more information, see [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).  
   
  `last`  
- The last element in a sequence of objects that are used to initialize the current VectorView. The type of `last` is passed by means of *perfect forwarding*. For more information, see [Rvalue Reference Declarator: &&](../Topic/Rvalue%20Reference%20Declarator:%20&&.md).  
+ The last element in a sequence of objects that are used to initialize the current VectorView. The type of `last` is passed by means of *perfect forwarding*. For more information, see [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).  
   
 ## Requirements  
  **Header:** collection.h  

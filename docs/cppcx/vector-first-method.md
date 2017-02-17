@@ -34,7 +34,7 @@ virtual Windows::Foundation::Collections::IIterator <T>^
  An iterator that points to the first element in the Vector.  
   
 ## Remarks  
- A convenient way to hold the iterator returned by First() is to assign the return value to a variable that is declared with the [auto](../Topic/auto%20\(C++\).md) type deduction keyword. For example, `auto x = myVector->First();`. This iterator knows the length of the collection.  
+ A convenient way to hold the iterator returned by First() is to assign the return value to a variable that is declared with the **auto** type deduction keyword. For example, `auto x = myVector->First();`. This iterator knows the length of the collection.  
   
  When you need a pair of iterators to pass to an STL function, use the free functions [Windows::Foundation::Collections::begin](../cppcx/begin-function.md) and [Windows::Foundation::Collections::end](../cppcx/end-function.md)  
   

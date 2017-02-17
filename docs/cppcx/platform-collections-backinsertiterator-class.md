@@ -36,7 +36,7 @@ class BackInsertIterator : public ::std::iterator< ::std::output_iterator_tag, v
  The type of item in the current collection.  
   
 ## Remarks  
- The BackInsertIterator class implements the rules required by the [back_insert_iterator Class](../Topic/back_insert_iterator%20Class.md).  
+ The BackInsertIterator class implements the rules required by the [back_insert_iterator Class](../standard-library/back-insert-iterator-class.md).  
   
 ## Members  
   

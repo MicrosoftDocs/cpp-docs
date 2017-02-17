@@ -34,7 +34,7 @@ virtual Windows::Foundation::Collections::IIterator<T>^
  An iterator that specifies the first element in the VectorView.  
   
 ## Remarks  
- A convenient way to hold the iterator returned by First() is to assign the return value to a variable that is declared with the [auto](../Topic/auto%20\(C++\).md) type deduction keyword. For example, `auto x = myVectorView->First();`.  
+ A convenient way to hold the iterator returned by First() is to assign the return value to a variable that is declared with the **auto** type deduction keyword. For example, `auto x = myVectorView->First();`.  
   
 ## Requirements  
  **Header:** collection.h  

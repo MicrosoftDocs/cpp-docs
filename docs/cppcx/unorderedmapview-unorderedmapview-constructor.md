@@ -97,10 +97,10 @@ UnorderedMapView(
  A function object that can a hash value for a key. Defaults to [std::hash\<K>](http://msdn.microsoft.com/en-us/54f67435-af9d-4217-a29d-fa4d2491a104) for the types that `std::hash` supports.  
   
  `P`  
- A type that provides a function object that can compare two keys to determine their equality. Defaults to [std::equal_to\<K>](../Topic/equal_to%20Struct.md).  
+ A type that provides a function object that can compare two keys to determine their equality. Defaults to [std::equal_to\<K>](../standard-library/equal-to-struct.md).  
   
  `m`  
- A reference or [Lvalues and Rvalues](../Topic/Lvalues%20and%20Rvalues%20\(Visual%20C++\).md) to a [std::unordered_map](../Topic/unordered_map%20Class.md) that is used to initialize the UnorderedMapView.  
+ A reference or [Lvalues and Rvalues](.../cpp/lvalues-and-rvalues-visual-cpp.md) to a [std::unordered_map](../standard-library/unordered-map-class.md) that is used to initialize the UnorderedMapView.  
   
  `first`  
  The input iterator of the first element in a range of elements used to initialize the UnorderedMapView.  

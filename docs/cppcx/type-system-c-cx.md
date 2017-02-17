@@ -134,7 +134,7 @@ By using the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] architecture, you can 
  For more information, see [Delegates](../cppcx/delegates-c-cx.md).  
   
 ### Exceptions  
- In C++/CX, you can catch custom exception types, [std::exception](../Topic/exception%20Class1.md) types, and [Platform::Exception](../cppcx/platform-exception-class.md) types.  
+ In C++/CX, you can catch custom exception types, [std::exception](../standard-library/exception-class.md) types, and [Platform::Exception](../cppcx/platform-exception-class.md) types.  
   
  For more information, see [Exceptions](../cppcx/exceptions-c-cx.md).  
   
@@ -144,7 +144,7 @@ By using the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] architecture, you can 
  For more information, see [Events](../cppcx/events-c-cx.md).  
   
 ### Casting  
- C++/CX supports the standard C++ cast operators [static_cast](../Topic/static_cast%20Operator.md), [dynamic_cast](../Topic/dynamic_cast%20Operator.md), and [reinterpret_cast](../Topic/reinterpret_cast%20Operator.md), and also the [safe_cast](../Topic/safe_cast%20\(C++%20Component%20Extensions\).md) operator that's specific to C++/CX.  
+ C++/CX supports the standard C++ cast operators [static_cast](../cpp/static-cast-operator.md), [dynamic_cast](../cpp/dynamic-cast-operator.md), and [reinterpret_cast](../cpp/reinterpret-cast-operator.md), and also the **safe_cast** operator that's specific to C++/CX.  
   
  For more information, see [Casting](../cppcx/casting-c-cx.md).  
   

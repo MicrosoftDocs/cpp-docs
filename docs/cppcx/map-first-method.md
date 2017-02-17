@@ -34,7 +34,7 @@ Windows::Foundation::Collections::IKeyValuePair<K, V>^>^ First();
  An iterator that specifies the first element in the map.  
   
 ## Remarks  
- A convenient way to hold the iterator returned by First() is to assign the return value to a variable that is declared with the [auto](../Topic/auto%20\(C++\).md) type deduction keyword. For example, `auto x = myMap->First();`.  
+ A convenient way to hold the iterator returned by First() is to assign the return value to a variable that is declared with the **auto** type deduction keyword. For example, `auto x = myMap->First();`.  
   
 ## Requirements  
  **Header:** collection.h  

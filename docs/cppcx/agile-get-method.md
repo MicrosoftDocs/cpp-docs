@@ -33,7 +33,7 @@ Returns a handle to the object that is represented by the current Agile object.
 ## Return Value  
  A handle to the object that is represented by the current Agile object.  
   
- The type of the return value is actually an undisclosed internal type. A convenient way to hold the return value is to assign it to a variable that is declared with the [auto](../Topic/auto%20\(C++\).md) type deduction keyword. For example, `auto x = myAgileTvariable->Get();`.  
+ The type of the return value is actually an undisclosed internal type. A convenient way to hold the return value is to assign it to a variable that is declared with the **auto** type deduction keyword. For example, `auto x = myAgileTvariable->Get();`.  
   
 ## Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
