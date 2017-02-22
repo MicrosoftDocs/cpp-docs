@@ -77,7 +77,6 @@ The CRT lib directory includes a number of small object files that enable specif
 |noenv.obj|pnoenv.obj|Disables the creation of a cached environment for the CRT.|  
 |nothrownew.obj|pnothrownew.obj|Enables the non-throwing version of new in the CRT. See [new and delete Operators](../cpp/new-and-delete-operators.md).|  
 |setargv.obj|psetargv.obj|Enables command-line argument wildcard expansion. See [Expanding Wildcard Arguments](../c-language/expanding-wildcard-arguments.md).|  
-|smalheap.obj|n/a|Installs a very simple small heap manager.|  
 |threadlocale.obj|pthreadlocale.obj|Enables per-thread locale for all new threads by default.|  
 |wsetargv.obj|pwsetargv.obj|Enables command-line argument wildcard expansion. See [Expanding Wildcard Arguments](../c-language/expanding-wildcard-arguments.md).|  
   

@@ -119,10 +119,10 @@ long double fmaxl(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`fmax`,                `fmaxf`, `fmaxl`|\<math.h>|\<cmath>|  
+|`fmax`, `fmaxf`, `fmaxl`|\<math.h>|\<cmath> or \<math.h>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
  [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [fmin, fminf, fminl](http://msdn.microsoft.com/Library/719840c7-8edd-4a83-bad9-5cc39b73d5a7)
+ [fmin, fminf, fminl](fmin-fminf-fminl.md)  
