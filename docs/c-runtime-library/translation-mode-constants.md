@@ -14,7 +14,6 @@ f1_keywords:
   - "_O_RAW"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "O_BINARY constant"
   - "O_TEXT constant"

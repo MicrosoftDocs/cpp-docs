@@ -32,7 +32,6 @@ f1_keywords:
   - "iswupper"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "istupper function"
   - "iswupper function"

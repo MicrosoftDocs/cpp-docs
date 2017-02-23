@@ -12,7 +12,6 @@ f1_keywords:
   - "vc.editors.opendeviceimage"
 dev_langs: 
   - "C++"
-  - "C++"
 helpviewer_keywords: 
   - "Open <Device> Image dialog box"
 ms.assetid: 27cb60ec-8704-4e58-ab1c-8cc3b34e66be

@@ -12,7 +12,6 @@ f1_keywords:
   - "vc.controls.activex"
 dev_langs: 
   - "C++"
-  - "C++"
 helpviewer_keywords: 
   - "dialog boxes [C++], adding ActiveX controls"
   - "Insert ActiveX Control command"

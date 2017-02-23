@@ -28,7 +28,6 @@ f1_keywords:
   - "time/_getsystime"
   - "time/_setsystime"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "obsolete functions"

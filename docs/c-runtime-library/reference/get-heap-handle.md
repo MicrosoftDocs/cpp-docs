@@ -28,7 +28,6 @@ f1_keywords:
   - "get_heap_handle"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "heap functions"
   - "memory allocation, heap memory"

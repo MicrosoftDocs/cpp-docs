@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "naked functions"
 ms.assetid: fdcb82b9-8ae1-489c-a248-1b477220df0a

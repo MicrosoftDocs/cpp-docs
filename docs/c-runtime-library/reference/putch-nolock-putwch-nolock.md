@@ -32,7 +32,6 @@ f1_keywords:
   - "_putwch_nolock"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "putwch_nolock function"
   - "puttch_nolock function"

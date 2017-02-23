@@ -58,7 +58,6 @@ struct is_default_constructible;
 ## Example  
   
 ```cpp  
-  
 #include <type_traits>   
 #include <iostream>   
   

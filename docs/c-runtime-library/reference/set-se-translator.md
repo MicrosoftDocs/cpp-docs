@@ -27,7 +27,6 @@ f1_keywords:
   - "set_se_translator"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "set_se_translator function"
   - "exception handling, changing"

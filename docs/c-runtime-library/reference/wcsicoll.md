@@ -26,7 +26,6 @@ f1_keywords:
   - "wcsicoll"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wcsicoll function"
 ms.assetid: d049022d-cf60-467f-842b-9a508d9aeaff

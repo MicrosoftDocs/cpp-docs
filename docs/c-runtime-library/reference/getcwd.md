@@ -26,7 +26,6 @@ f1_keywords:
   - "getcwd"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "getcwd function"
 ms.assetid: c740ab06-9ba0-4036-a025-ce3acded3ffe

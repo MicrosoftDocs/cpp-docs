@@ -28,7 +28,6 @@ f1_keywords:
   - "_getdrives"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_getdrives function"
   - "getdrives function"

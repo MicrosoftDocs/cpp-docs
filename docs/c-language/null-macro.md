@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "NULL, macro"
 ms.assetid: 6800f7a4-88a7-442f-87ed-e618e83a0b16

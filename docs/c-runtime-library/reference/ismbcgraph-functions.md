@@ -47,7 +47,6 @@ f1_keywords:
   - "ismbcpunct"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "ismbcspace_l function"
   - "_ismbcprint_l function"

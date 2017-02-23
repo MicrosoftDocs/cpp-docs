@@ -13,7 +13,6 @@ f1_keywords:
   - "EXIT_SUCCESS"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "EXIT_SUCCESS constant"
   - "EXIT_FAILURE constant"

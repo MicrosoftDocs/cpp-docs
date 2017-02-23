@@ -28,7 +28,6 @@ f1_keywords:
   - "_setmaxstdio"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "maximum open files"
   - "_setmaxstdio function"

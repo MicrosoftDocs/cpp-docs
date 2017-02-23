@@ -26,7 +26,6 @@ f1_keywords:
   - "write"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "write function"
 ms.assetid: 1cbf112e-b9ef-4df6-993a-83abd4213acd

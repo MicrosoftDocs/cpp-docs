@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "integer constants"
 ms.assetid: fcf6b83c-2038-49ec-91ca-3d5ca1f83037

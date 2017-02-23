@@ -30,7 +30,6 @@ f1_keywords:
   - "_open"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "opening files, for file I/O"
   - "topen function"

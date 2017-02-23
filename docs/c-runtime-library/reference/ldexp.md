@@ -28,7 +28,6 @@ f1_keywords:
   - "_ldexpl"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "calculating real numbers"
   - "computing real numbers"

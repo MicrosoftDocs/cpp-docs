@@ -28,7 +28,6 @@ f1_keywords:
   - "set_new_handler"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_set_new_handler function"
   - "set_new_handler function"

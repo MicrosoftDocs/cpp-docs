@@ -33,7 +33,6 @@ f1_keywords:
   - "difftime32"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_difftime32 function"
   - "difftime function"

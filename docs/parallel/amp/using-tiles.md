@@ -52,7 +52,6 @@ You can use tiling to maximize the acceleration of your app. Tiling divides thre
  The following example displays the global, tile, and local indices of this tiled matrix. An `array_view` object is created by using elements of type `Description`. The `Description` holds the global, tile, and local indices of the element in the matrix. The code in the call to `parallel_for_each` sets the values of the global, tile, and local indices of each element. The output displays the values in the `Description` structures.  
   
 ```cpp  
-  
 #include <iostream>  
 #include <iomanip>  
 #include <Windows.h>  
@@ -185,7 +184,6 @@ void main() {
 8.  In the complete example, you can change SAMPLESIZE to 4 and the code executes correctly without any other changes.  
   
 ```cpp  
-  
 #include <iostream>  
 #include <amp.h>  
 using namespace concurrency;  
@@ -269,7 +267,6 @@ int main() {
  It might be tempting to create a `tile_static` variable named `total` and increment that variable for each thread, like this:  
   
 ```cpp  
- 
 // Do not do this.  
 tile_static float total;  
 total += matrix[t_idx];  
@@ -283,7 +280,6 @@ averages(t_idx.tile[0],t_idx.tile[1]) /= (float) (SAMPLESIZE* SAMPLESIZE);
  The first problem with this approach is that `tile_static` variables cannot have initializers. The second problem is that there is a race condition on the assignment to `total`, because all of the threads in the tile have access to the variable in no particular order. You could program an algorithm to only allow one thread to access the total at each barrier, as shown next. However, this solution is not extensible.  
   
 ```cpp  
- 
 // Do not do this.  
 tile_static float total;  
 if (t_idx.local[0] == 0&& t_idx.local[1] == 0) {  
@@ -326,7 +322,6 @@ t_idx.barrier.wait();
  In the next example, the barrier synchronizes the writes to `tileValues`, a `tile_static` variable. In this example, `tile_barrier::wait_with_tile_static_memory_fence` is called instead of `tile_barrier::wait`.  
   
 ```cpp  
- 
 // Using a tile_static memory fence.  
 parallel_for_each(matrix.extent.tile<SAMPLESIZE, SAMPLESIZE>(),  
  [=, &averages] (tiled_index<SAMPLESIZE, SAMPLESIZE> t_idx) restrict(amp)   

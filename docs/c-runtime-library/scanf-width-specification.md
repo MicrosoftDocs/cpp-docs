@@ -20,7 +20,6 @@ f1_keywords:
   - "scanf"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "scanf function, width specification"
 ms.assetid: 94b4e8fe-c4a2-4799-8b6c-a2cf28ffb09c

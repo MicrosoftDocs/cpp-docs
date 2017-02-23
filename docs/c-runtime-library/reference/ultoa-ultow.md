@@ -32,7 +32,6 @@ f1_keywords:
   - "_ultot"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "ultot function"
   - "converting integers"

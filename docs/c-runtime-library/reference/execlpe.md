@@ -26,7 +26,6 @@ f1_keywords:
   - "execlpe"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "execlpe function"
 ms.assetid: 33b28785-43e3-4971-b139-33743a7c9a32

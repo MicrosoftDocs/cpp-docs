@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "identifiers, designating objects"
 ms.assetid: d4602fe6-e7e6-40cc-9823-3b1ebf5d3d38

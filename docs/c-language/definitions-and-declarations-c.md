@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "export functions"
 ms.assetid: d150395a-89d4-4298-9ac4-08f84fe1261c

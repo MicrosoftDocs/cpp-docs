@@ -27,7 +27,6 @@ f1_keywords:
   - "matherr"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_matherr function"
   - "matherr function"

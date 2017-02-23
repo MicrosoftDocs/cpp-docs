@@ -68,7 +68,7 @@ class recursive_timed_mutex;
 ##  <a name="recursive_timed_mutex__lock_method"></a>  lock  
  Blocks the calling thread until the thread obtains ownership of the `mutex`.  
   
-```cpp
+```cpp  
 void lock();
 ```  
   
@@ -78,14 +78,14 @@ void lock();
 ##  <a name="recursive_timed_mutex__recursive_timed_mutex_constructor"></a>  recursive_timed_mutex Constructor  
  Constructs a `recursive_timed_mutex` object that is not locked.  
   
-```cpp
+```cpp  
 recursive_timed_mutex();
 ```  
   
 ##  <a name="recursive_timed_mutex___dtorrecursive_timed_mutex_destructor"></a>  ~recursive_timed_mutex Destructor  
  Releases any resources that are used by the `recursive_timed_mutex` object.  
   
-```cpp
+```cpp  
 ~recursive_timed_mutex();
 ```  
   
@@ -95,7 +95,7 @@ recursive_timed_mutex();
 ##  <a name="recursive_timed_mutex__try_lock_method"></a>  try_lock  
  Attempts to obtain ownership of the `mutex` without blocking.  
   
-```cpp
+```cpp  
 bool try_lock() noexcept;
 ```  
   
@@ -108,7 +108,7 @@ bool try_lock() noexcept;
 ##  <a name="recursive_timed_mutex__try_lock_for_method"></a>  try_lock_for  
  Attempts to obtain ownership of the `mutex` without blocking.  
   
-```cpp
+```cpp  
 template <class Rep, class Period>
 bool try_lock_for(const chrono::duration<Rep, Period>& Rel_time);
 ```  
@@ -126,7 +126,7 @@ bool try_lock_for(const chrono::duration<Rep, Period>& Rel_time);
 ##  <a name="recursive_timed_mutex__try_lock_until_method"></a>  try_lock_until  
  Attempts to obtain ownership of the `mutex` without blocking.  
   
-```cpp
+```cpp  
 template <class Clock, class Duration>
 bool try_lock_for(const chrono::time_point<Clock, Duration>& Abs_time);
 
@@ -146,7 +146,7 @@ bool try_lock_until(const xtime* Abs_time);
 ##  <a name="recursive_timed_mutex__unlock_method"></a>  unlock  
  Releases ownership of the `mutex`.  
   
-```cpp
+```cpp  
 void unlock();
 ```  
   

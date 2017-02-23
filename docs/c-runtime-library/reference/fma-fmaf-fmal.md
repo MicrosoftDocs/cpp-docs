@@ -34,7 +34,6 @@ f1_keywords:
   - "math/fmaf"
   - "math/fmal"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "fma function"

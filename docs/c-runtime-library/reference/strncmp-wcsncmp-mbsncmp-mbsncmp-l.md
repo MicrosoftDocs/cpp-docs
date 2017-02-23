@@ -38,7 +38,6 @@ f1_keywords:
   - "wcsncmp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_tcsnccmp function"
   - "ftcsncmp function"

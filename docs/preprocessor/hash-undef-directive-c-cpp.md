@@ -12,7 +12,6 @@ f1_keywords:
   - "#undef"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "#undef directive"
   - "undef directive (#undef)"

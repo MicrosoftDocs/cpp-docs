@@ -28,7 +28,6 @@ f1_keywords:
   - "strnicmp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "strnicmp function"
   - "wcsnicmp function"

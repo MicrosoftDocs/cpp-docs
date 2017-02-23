@@ -26,7 +26,6 @@ f1_keywords:
   - "flushall"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "flushall function"
 ms.assetid: 481429ae-3980-4233-9495-a3ee56e7c838

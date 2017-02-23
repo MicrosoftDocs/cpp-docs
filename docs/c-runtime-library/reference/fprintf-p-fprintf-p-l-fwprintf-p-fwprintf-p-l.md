@@ -34,7 +34,6 @@ f1_keywords:
   - "ftprintf_p"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "fprintf_p_l function"
   - "fprintf_p function"

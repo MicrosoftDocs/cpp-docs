@@ -34,7 +34,6 @@ f1_keywords:
   - "wcscat"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "concatenating strings"
   - "mbscat function"

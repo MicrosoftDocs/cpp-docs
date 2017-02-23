@@ -37,7 +37,6 @@ f1_keywords:
   - "_copysignf"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "copysignl function"
   - "_copysignl function"

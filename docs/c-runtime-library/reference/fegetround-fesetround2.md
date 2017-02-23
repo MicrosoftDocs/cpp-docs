@@ -31,7 +31,6 @@ f1_keywords:
   - "fenv/fegetround"
   - "fenv/fesetround"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "fegetround function"

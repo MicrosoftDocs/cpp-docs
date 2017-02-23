@@ -29,7 +29,6 @@ f1_keywords:
   - "_wdupenv_s_dbg"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_tdupenv_s_dbg function"
   - "dupenv_s_dbg function"

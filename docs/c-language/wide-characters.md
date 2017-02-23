@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wide characters"
 ms.assetid: 165c4a12-8ab9-45fb-9964-c55e9956194c

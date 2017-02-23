@@ -12,7 +12,6 @@ f1_keywords:
   - "_UNICODE"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_TXCHAR type"
   - "TINT type"

@@ -20,7 +20,6 @@ f1_keywords:
   - "_pcwtype"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_wctype function"
   - "_pwctype function"

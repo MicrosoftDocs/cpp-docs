@@ -13,7 +13,6 @@ f1_keywords:
   - "CRT_DISABLE_PERFCRIT_LOCKS"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "CRT_DISABLE_PERFCRIT_LOCKS constant"
   - "_CRT_DISABLE_PERFCRIT_LOCKS constant"

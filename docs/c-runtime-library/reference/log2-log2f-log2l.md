@@ -27,7 +27,6 @@ apilocation:
   - "api-ms-win-crt-math-l1-1-0.dll"
 apitype: "DLLExport"
 dev_langs: 
-  - "C"
   - "C++"
 ms.assetid: 94d11b38-70b7-4d3a-94ac-523153c92b2e
 caps.latest.revision: 14

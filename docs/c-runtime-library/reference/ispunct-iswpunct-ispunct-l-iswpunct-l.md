@@ -32,7 +32,6 @@ f1_keywords:
   - "ispunct"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_istpunct function"
   - "_ispunct_l function"

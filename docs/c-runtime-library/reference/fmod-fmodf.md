@@ -30,7 +30,6 @@ f1_keywords:
   - "fmodf"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "calculating floating-point remainders"
   - "fmodf function"

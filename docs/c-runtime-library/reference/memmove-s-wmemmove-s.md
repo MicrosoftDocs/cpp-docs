@@ -29,7 +29,6 @@ f1_keywords:
   - "memmove_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wmemmove_s function"
   - "memmove_s function"

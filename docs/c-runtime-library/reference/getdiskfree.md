@@ -28,7 +28,6 @@ f1_keywords:
   - "_getdiskfree"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "diskfree_t type"
   - "_getdiskfree function"

@@ -26,7 +26,6 @@ f1_keywords:
   - "umask"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "umask function"
 ms.assetid: d2f697fc-08d5-4b70-9dd5-df3f5bb8b754

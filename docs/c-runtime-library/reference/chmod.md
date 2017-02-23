@@ -26,7 +26,6 @@ f1_keywords:
   - "chmod"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "chmod function"
 ms.assetid: c3294722-2194-4ff4-ac87-d69f155e279b

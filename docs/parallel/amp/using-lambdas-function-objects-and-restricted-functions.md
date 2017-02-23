@@ -34,7 +34,6 @@ translation.priority.ht:
 The C++ AMP code that you want to run on the accelerator is specified as an argument in a call to the [parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) method. You can provide either a lambda expression or a function object (functor) as that argument. Additionally, the lambda expression or function object can call a C++ AMP-restricted function. This topic uses an array addition algorithm to demonstrate lambdas, function objects, and restricted functions. The following example shows the algorithm without C++ AMP code. Two 1-dimensional arrays of equal length are created. The corresponding integer elements are added and stored in a third 1-dimensional array. C++ AMP is not used.  
   
 ```cpp  
- 
 void CpuMethod() {  
  
     int aCPP[] = {1, 2, 3, 4, 5};  
@@ -58,7 +57,6 @@ void CpuMethod() {
  Using a lambda expression is the most direct way to use C++ AMP to rewrite the code.  
   
 ```cpp  
- 
 void AddArraysWithLambda() {  
     int aCPP[] = {1, 2, 3, 4, 5};  
     int bCPP[] = {6, 7, 8, 9, 10};  
@@ -94,7 +92,6 @@ void AddArraysWithLambda() {
  You can factor the accelerator code into a function object.  
   
 ```cpp  
- 
 class AdditionFunctionObject  
 {  
 public:  
@@ -149,7 +146,6 @@ void AddArraysWithFunctionObject() {
  You can further factor the accelerator code by creating a restricted function and calling it from a lambda expression or a function object. The following code example demonstrates how to call a restricted function from a lambda expression.  
   
 ```cpp  
- 
 void AddElementsWithRestrictedFunction(index<1> idx, array_view<int, 1> sum, array_view<int, 1> a, array_view<int, 1> b) restrict(amp)  
 {  
     sum[idx] = a[idx] + b[idx];  

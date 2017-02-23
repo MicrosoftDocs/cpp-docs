@@ -26,7 +26,6 @@ f1_keywords:
   - "ungetch"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "ungetch function"
 ms.assetid: 6921232f-6317-41cd-948b-91d56a11bc0e

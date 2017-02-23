@@ -30,7 +30,6 @@ f1_keywords:
   - "perror"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_tperror function"
   - "tperror function"

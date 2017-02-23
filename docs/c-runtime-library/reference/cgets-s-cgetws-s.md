@@ -31,7 +31,6 @@ f1_keywords:
   - "_cgetws_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "strings [C++], getting from console"
   - "console, getting strings from"

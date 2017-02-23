@@ -15,7 +15,6 @@ f1_keywords:
   - "FREEENTRY"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_USEDENTRY constant"
   - "_FREEENTRY constant"

@@ -34,7 +34,6 @@ f1_keywords:
   - "complex/ccosf"
   - "complex/ccosl"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "ccos function"

@@ -31,7 +31,6 @@ f1_keywords:
   - "_ismbbkana"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_ismbbkana_l function"
   - "_ismbbkana function"

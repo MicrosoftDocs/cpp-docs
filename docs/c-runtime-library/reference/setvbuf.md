@@ -27,7 +27,6 @@ f1_keywords:
   - "setvbuf"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "controlling stream buffering"
   - "stream buffering"

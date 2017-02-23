@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "system function"
 ms.assetid: 0786ccdc-20cd-4d96-b3d8-3230507c3066

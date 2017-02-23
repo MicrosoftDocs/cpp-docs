@@ -27,7 +27,6 @@ f1_keywords:
   - "RTC_NumErrors"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "run-time errors"
   - "_RTC_NumErrors function"

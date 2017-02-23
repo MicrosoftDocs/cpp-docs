@@ -13,7 +13,6 @@ f1_keywords:
   - "vc-pragma.pointers_to_members"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "class members, pointers to"
   - "pragmas, pointers_to_members"

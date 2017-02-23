@@ -32,7 +32,6 @@ f1_keywords:
   - "stdio/fopen"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "opening files, for file I/O"
   - "wfopen function"

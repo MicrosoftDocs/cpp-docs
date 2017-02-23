@@ -30,7 +30,6 @@ f1_keywords:
   - "get_dstbias"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "__dstbias"
   - "daylight saving time offset"

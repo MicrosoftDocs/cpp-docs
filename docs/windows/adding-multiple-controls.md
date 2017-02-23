@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C++"
 helpviewer_keywords: 
   - "controls [Visual Studio], adding multiple"
   - "dialog box controls, adding to dialog boxes"

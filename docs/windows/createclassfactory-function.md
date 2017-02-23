@@ -41,7 +41,6 @@ Creates a factory that produces instances of the specified class.
 ## Syntax  
   
 ```cpp  
-  
 template<typename Factory>  
 inline HRESULT STDMETHODCALLTYPE CreateClassFactory(  
    _In_ unsigned int *flags,   

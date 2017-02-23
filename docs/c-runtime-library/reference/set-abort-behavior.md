@@ -28,7 +28,6 @@ f1_keywords:
   - "set_abort_behavior"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "aborting programs"
   - "_set_abort_behavior function"
@@ -91,9 +90,8 @@ unsigned int _set_abort_behavior(
   
 ## Example  
   
-```c  
-  
-      // crt_set_abort_behavior.c  
+```C  
+// crt_set_abort_behavior.c  
 // compile with: /TC  
 #include <stdlib.h>  
   

@@ -28,7 +28,6 @@ f1_keywords:
   - "get_tzname"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_get_tzname function"
   - "time zones"

@@ -27,7 +27,6 @@ f1_keywords:
   - "_fileno"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "file handles [C++], getting from streams"
   - "fileno function"

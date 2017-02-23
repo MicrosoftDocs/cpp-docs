@@ -21,14 +21,14 @@ manager: "ghogen"
   
  Other typedefs that specialize `basic_string` include [wstring](../standard-library/string-typedefs.md#wstring), [u16string](../standard-library/string-typedefs.md#u16string), and [u32string](../standard-library/string-typedefs.md#u32string).  
   
-```cpp
+```cpp  
 typedef basic_string<char, char_traits<char>, allocator<char>> string;
 ```  
   
 ### Remarks  
  The following are equivalent declarations:  
   
-```cpp
+```cpp  
 string str("");
 
 basic_string<char> str("");
@@ -41,7 +41,7 @@ basic_string<char> str("");
   
  Other typedefs that specialize `basic_string` include [wstring](../standard-library/string-typedefs.md#wstring), [string](../standard-library/string-typedefs.md#string), and [u32string](../standard-library/string-typedefs.md#u32string).  
   
-```cpp
+```cpp  
 typedef basic_string<char16_t, char_traits<char16_t>, allocator<char16_t>> u16string;
 ```  
   
@@ -53,7 +53,7 @@ typedef basic_string<char16_t, char_traits<char16_t>, allocator<char16_t>> u16st
   
  Other typedefs that specialize `basic_string` include [string](../standard-library/string-typedefs.md#string), [u16string](../standard-library/string-typedefs.md#u16string), and [wstring](../standard-library/string-typedefs.md#wstring).  
   
-```cpp
+```cpp  
 typedef basic_string<char32_t, char_traits<char32_t>, allocator<char32_t>> u32string;
 ```  
   
@@ -65,14 +65,14 @@ typedef basic_string<char32_t, char_traits<char32_t>, allocator<char32_t>> u32st
   
  Other typedefs that specialize `basic_string` include [string](../standard-library/string-typedefs.md#string), [u16string](../standard-library/string-typedefs.md#u16string), and [u32string](../standard-library/string-typedefs.md#u32string).  
   
-```cpp
+```cpp  
 typedef basic_string<wchar_t, char_traits<wchar_t>, allocator<wchar_t>> wstring;
 ```  
   
 ### Remarks  
  The following are equivalent declarations:  
   
-```cpp
+```cpp  
 wstring wstr(L"");
 
 basic_string<wchar_t> wstr(L"");

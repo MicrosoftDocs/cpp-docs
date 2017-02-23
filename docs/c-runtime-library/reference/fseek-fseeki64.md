@@ -28,7 +28,6 @@ f1_keywords:
   - "_fseeki64"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_fseeki64 function"
   - "fseeki64 function"

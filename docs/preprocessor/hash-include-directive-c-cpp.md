@@ -12,7 +12,6 @@ f1_keywords:
   - "#include"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "preprocessor, directives"
   - "#include directive"

@@ -26,7 +26,6 @@ f1_keywords:
   - "unexpected"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "unexpected function"
 ms.assetid: 2f873763-15ad-4556-a924-dcf28f2b52b4

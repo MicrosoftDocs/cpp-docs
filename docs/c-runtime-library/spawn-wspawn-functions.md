@@ -31,7 +31,6 @@ f1_keywords:
   - "wspawn"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_tspawnve function"
   - "_spawn functions"

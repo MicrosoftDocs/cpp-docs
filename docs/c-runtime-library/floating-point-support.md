@@ -12,7 +12,6 @@ f1_keywords:
   - "c.math"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "floating-point numbers, math routines"
   - "math routines"

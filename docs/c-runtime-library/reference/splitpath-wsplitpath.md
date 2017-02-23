@@ -32,7 +32,6 @@ f1_keywords:
   - "_tsplitpath"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_splitpath function"
   - "pathnames"

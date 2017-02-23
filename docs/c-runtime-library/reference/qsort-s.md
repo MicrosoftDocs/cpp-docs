@@ -27,7 +27,6 @@ f1_keywords:
   - "qsort_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "arrays [C++], sorting"
   - "quick-sort algorithm"

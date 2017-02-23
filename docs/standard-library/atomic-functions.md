@@ -306,7 +306,7 @@ T* atomic_fetch_add_explicit(
   
  This operation is also overloaded for integral types:  
   
-```cpp
+```cpp  
 integral atomic_fetch_add_explicit(
     volatile atomic-integral* Atom,
     integral Value,
@@ -500,7 +500,7 @@ T* atomic_fetch_sub_explicit(
   
  This operation is also overloaded for integral types:  
   
-```cpp
+```cpp  
 integral atomic_fetch_sub_explicit(
     volatile atomic-integral* Atom,
     integral Value,

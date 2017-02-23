@@ -91,7 +91,6 @@ C++ AMP contains several APIs in the [Concurrency::graphics](../../parallel/amp/
  You can declare a texture object without initialization. The following code example declares several texture objects.  
   
 ```cpp  
-  
 #include <amp.h>  
 #include <amp_graphics.h>  
 using namespace concurrency;  
@@ -117,7 +116,6 @@ void declareTextures() {
  You can also use a constructor to declare and initialize a `texture` object. The following code example instantiates a `texture` object from a vector of `float_4` objects. The bits per scalar element is set to the default. You cannot use this constructor with `norm`, `unorm`, or the short vectors of `norm` and `unorm`, because they do not have a default bits per scalar element.  
   
 ```cpp  
-  
 #include <amp.h>  
 #include <amp_graphics.h>  
 #include <vector>  
@@ -139,7 +137,6 @@ texture<int_4, 2> aTexture(768, 1024, texels.begin(), texels.end());
  You can also declare and initialize a `texture` object by using a constructor overload that takes a pointer to the source data, the size of source data in bytes, and the bits per scalar element.  
   
 ```cpp  
- 
 void createTextureWithBPC() { *// Create the source data.  
     float source[1024* 2];   
     for (int i = 0; i <1024* 2; i++) {  
@@ -165,7 +162,6 @@ void createTextureWithBPC() { *// Create the source data.
  You can read from a `texture` object by using [texture::operator\[\]](reference/texture-class.md#operator_at), [texture::operator() Operator](reference/texture-class.md#operator_call), or [texture::get Method](reference/texture-class.md#get). The two operators return a value, not a reference. Therefore, you cannot write to a `texture` object by using `texture::operator\[\]`.  
   
 ```cpp  
- 
 void readTexture() {  
     std::vector<int_2> src;      
     for (int i = 0; i <16 *32; i++) {  
@@ -201,7 +197,6 @@ void readTexture() {
  The following code example demonstrates how to store texture channels in a short vector, and then access the individual scalar elements as properties of the short vector.  
   
 ```cpp  
- 
 void UseBitsPerScalarElement() { *// Create the image data. *// Each unsigned int (32-bit) represents four 8-bit scalar elements(r,g,b,a values).  
     const int image_height = 16;  
     const int image_width = 16;  
@@ -254,7 +249,6 @@ void UseBitsPerScalarElement() { *// Create the image data. *// Each unsigned in
  The following code example writes values to a texture object.  
   
 ```cpp  
- 
 void writeTexture() {  
     texture<int, 1> tex1(16);
 
@@ -272,7 +266,6 @@ void writeTexture() {
  You can copy between texture objects by using the [copy](reference/concurrency-namespace-functions-amp.md#copy) function or the [copy_async](reference/concurrency-namespace-functions-amp.md#copy_async) function, as shown in the following code example.  
   
 ```cpp  
- 
 void copyHostArrayToTexture() { *// Copy from source array to texture object by using the copy function.  
     float floatSource[1024* 2];   
     for (int i = 0; i <1024* 2; i++) {  

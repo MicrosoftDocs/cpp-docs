@@ -12,7 +12,6 @@ f1_keywords:
   - "vc.editors.icon"
 dev_langs: 
   - "C++"
-  - "C++"
 helpviewer_keywords: 
   - "cursors [C++], creating"
   - "icons [C++], creating"

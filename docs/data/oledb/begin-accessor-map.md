@@ -64,7 +64,7 @@ num
   
 ## Example  
 
- ```cpp
+ ```cpp  
 class CArtistsAccessor
 {
 public:

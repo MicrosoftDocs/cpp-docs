@@ -29,7 +29,6 @@ f1_keywords:
   - "_wctomb_s_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wctomb_s function"
   - "wctomb_s_l function"

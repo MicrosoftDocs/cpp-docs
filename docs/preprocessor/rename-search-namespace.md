@@ -12,7 +12,6 @@ f1_keywords:
   - "rename_search_namespace"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "rename_search_namespace attribute"
 ms.assetid: 47c9d7fd-59dc-4c62-87a1-9011a0040167

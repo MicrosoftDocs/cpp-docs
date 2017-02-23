@@ -37,7 +37,6 @@ f1_keywords:
   - "vcwprintf_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "vcwprintf function"
   - "_vcwprintf_l function"

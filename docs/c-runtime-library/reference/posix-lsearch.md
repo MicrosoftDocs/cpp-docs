@@ -26,7 +26,6 @@ f1_keywords:
   - "lsearch"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "lsearch function"
 ms.assetid: 130da3fc-904a-4375-b0ab-79bfea8a455f

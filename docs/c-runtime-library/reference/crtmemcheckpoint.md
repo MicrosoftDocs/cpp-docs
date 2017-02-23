@@ -28,7 +28,6 @@ f1_keywords:
   - "crtdbg/_CrtMemCheckpoint"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "CrtMemCheckpoint function"
   - "_CrtMemCheckpoint function"

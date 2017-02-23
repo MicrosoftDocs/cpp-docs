@@ -39,7 +39,6 @@ f1_keywords:
   - "_ismbslead_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "ismbstrail function"
   - "_ismbslead function"

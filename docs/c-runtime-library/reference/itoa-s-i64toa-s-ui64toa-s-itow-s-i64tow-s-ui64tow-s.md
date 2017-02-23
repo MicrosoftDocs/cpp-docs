@@ -48,7 +48,6 @@ f1_keywords:
   - "itot_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_ui64toa_s function"
   - "_itow_s function"

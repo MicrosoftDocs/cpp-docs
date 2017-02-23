@@ -26,7 +26,6 @@ f1_keywords:
   - "fileno"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "fileno function"
 ms.assetid: 8f33e1e0-0dc8-4311-b690-ec6e577a64b5

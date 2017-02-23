@@ -26,7 +26,6 @@ f1_keywords:
   - "memicmp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "memicmp function"
 ms.assetid: 45362e9c-7c64-41e9-92bb-7d4999a8635b

@@ -13,7 +13,6 @@ f1_keywords:
   - "once_CPP"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "once pragma"
   - "pragmas, once"

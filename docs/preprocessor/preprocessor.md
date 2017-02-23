@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "preprocessor"
 ms.assetid: e120eda3-b413-49f1-a07c-e9fb128cf500

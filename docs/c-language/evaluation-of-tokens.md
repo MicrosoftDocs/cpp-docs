@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tokens, evaluating"
 ms.assetid: 28870b62-dff6-4644-8b75-d58f340b48d2

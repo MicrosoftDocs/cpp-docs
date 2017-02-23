@@ -28,7 +28,6 @@ f1_keywords:
   - "fwrite_nolock"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "fwrite_nolock function"
   - "streams, writing data to"

@@ -34,7 +34,6 @@ f1_keywords:
   - "fwscanf_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "formatted data [C++], reading from streams"
   - "_ftscanf_s_l function"

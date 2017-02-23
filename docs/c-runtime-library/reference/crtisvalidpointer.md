@@ -27,7 +27,6 @@ f1_keywords:
   - "_CrtIsValidPointer"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "CrtIsValidPointer function"
   - "_CrtIsValidPointer function"

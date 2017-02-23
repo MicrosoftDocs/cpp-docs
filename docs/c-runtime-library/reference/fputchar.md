@@ -26,7 +26,6 @@ f1_keywords:
   - "fputchar"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "fputchar function"
 ms.assetid: d6cf3492-ace9-47a7-9f7d-3c25aa8ad526

@@ -30,7 +30,6 @@ f1_keywords:
   - "_ltow"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "converting integers"
   - "_ltoa function"

@@ -12,7 +12,6 @@ f1_keywords:
   - "implementation_only"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "implementation_only attribute"
 ms.assetid: d8cabc86-4425-45a0-9587-d57536980088

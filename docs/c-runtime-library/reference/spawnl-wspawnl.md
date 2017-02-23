@@ -31,7 +31,6 @@ f1_keywords:
   - "_spawnl"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "spawnl function"
   - "processes, creating"

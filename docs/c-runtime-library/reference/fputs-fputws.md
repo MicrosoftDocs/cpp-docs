@@ -30,7 +30,6 @@ f1_keywords:
   - "_fputts"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "streams, writing strings to"
   - "fputws function"

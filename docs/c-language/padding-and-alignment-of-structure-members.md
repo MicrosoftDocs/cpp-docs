@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "structure members, padding and alignment"
 ms.assetid: c999820b-dd47-41fc-b923-e4c7ebbcd30f

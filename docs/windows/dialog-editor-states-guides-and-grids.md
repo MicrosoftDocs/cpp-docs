@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C++"
 helpviewer_keywords: 
   - "Dialog editor, guides and margins"
 ms.assetid: dbacf9ef-e8b0-4125-a7ce-84911c482e98

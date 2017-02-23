@@ -29,7 +29,6 @@ f1_keywords:
   - "ftell"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "ftell function"
   - "ftelli64 function"

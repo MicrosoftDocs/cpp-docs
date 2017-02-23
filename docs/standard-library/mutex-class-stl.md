@@ -67,7 +67,7 @@ class mutex;
 ##  <a name="mutex__lock_method"></a>  mutex::lock Method  
  Blocks the calling thread until the thread obtains ownership of the `mutex`.  
   
-```cpp
+```cpp  
 void lock();
 ```  
   
@@ -77,14 +77,14 @@ void lock();
 ##  <a name="mutex__mutex_constructor"></a>  mutex::mutex Constructor  
  Constructs a `mutex` object that is not locked.  
   
-```cpp
+```cpp  
 constexpr mutex() noexcept;
 ```  
   
 ##  <a name="mutex___dtormutex_destructor"></a>  mutex::~mutex Destructor  
  Releases any resources that are used by the `mutex` object.  
   
-```cpp
+```cpp  
 ~mutex();
 ```  
   
@@ -104,7 +104,7 @@ native_handle_type native_handle();
 ##  <a name="mutex__try_lock_method"></a>  mutex::try_lock Method  
  Attempts to obtain ownership of the `mutex` without blocking.  
   
-```cpp
+```cpp  
 bool try_lock();
 ```  
   
@@ -117,7 +117,7 @@ bool try_lock();
 ##  <a name="mutex__unlock_method"></a>  mutex::unlock Method  
  Releases ownership of the `mutex`.  
   
-```cpp
+```cpp  
 void unlock();
 ```  
   

@@ -26,7 +26,6 @@ f1_keywords:
   - "cscanf"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "cscanf function"
 ms.assetid: 51aa2da2-0d53-4272-b510-f3eabf049ea7

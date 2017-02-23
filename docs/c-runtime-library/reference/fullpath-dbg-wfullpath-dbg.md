@@ -30,7 +30,6 @@ f1_keywords:
   - "fullpath_dbg"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_fullpath_dbg function"
   - "relative file paths"

@@ -12,7 +12,6 @@ f1_keywords:
   - "c.io"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "I/O [CRT], low-level"
   - "I/O [CRT], functions"

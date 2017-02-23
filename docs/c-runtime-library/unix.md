@@ -12,7 +12,6 @@ f1_keywords:
   - "unix"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "UNIX"
   - "POSIX compatibility"

@@ -29,7 +29,6 @@ f1_keywords:
   - "vfscanf"
 dev_langs: 
   - "C++"
-  - "C"
 ms.assetid: c06450ef-03f1-4d24-a8ac-d2dd98847918
 caps.latest.revision: 6
 author: "corob-msft"

@@ -14,7 +14,6 @@ f1_keywords:
   - "_IOLBF"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_IOFBF constant"
   - "IOFBF constant"

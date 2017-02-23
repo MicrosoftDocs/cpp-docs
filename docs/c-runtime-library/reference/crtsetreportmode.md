@@ -27,7 +27,6 @@ f1_keywords:
   - "CrtSetReportMode"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_CrtSetReportMode function"
   - "CrtSetReportMode function"

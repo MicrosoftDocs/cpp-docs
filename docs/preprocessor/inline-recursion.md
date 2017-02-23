@@ -13,7 +13,6 @@ f1_keywords:
   - "vc-pragma.inline_recursion"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "pragmas, inline_recursion"
   - "inline_recursion pragma"

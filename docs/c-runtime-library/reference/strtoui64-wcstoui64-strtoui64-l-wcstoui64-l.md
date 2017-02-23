@@ -37,7 +37,6 @@ f1_keywords:
   - "wcstoui64_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_strtoui64_l function"
   - "_wcstoui64_l function"

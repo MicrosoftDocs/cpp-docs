@@ -27,7 +27,6 @@ f1_keywords:
   - "_CrtMemDumpStatistics"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_CrtMemDumpStatistics function"
   - "CrtMemDumpStatistics function"

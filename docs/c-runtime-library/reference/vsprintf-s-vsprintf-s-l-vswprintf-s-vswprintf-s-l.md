@@ -31,7 +31,6 @@ f1_keywords:
   - "_vstprintf_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_vstprintf_s_l function"
   - "vsprintf_s_l function"

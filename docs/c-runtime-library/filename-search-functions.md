@@ -19,7 +19,6 @@ apilocation:
 apitype: "DLLExport"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "file names [C++], searching for"
   - "_find function"

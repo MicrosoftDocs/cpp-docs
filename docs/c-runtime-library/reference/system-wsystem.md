@@ -29,7 +29,6 @@ f1_keywords:
   - "_wsystem"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_wsystem function"
   - "wsystem function"

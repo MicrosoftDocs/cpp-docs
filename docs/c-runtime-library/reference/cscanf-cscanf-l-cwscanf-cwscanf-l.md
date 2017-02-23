@@ -39,7 +39,6 @@ f1_keywords:
   - "_tcscanf"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_cwscanf function"
   - "data [C++], reading from the console"

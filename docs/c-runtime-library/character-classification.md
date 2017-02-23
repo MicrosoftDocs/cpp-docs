@@ -12,7 +12,6 @@ f1_keywords:
   - "c.types.character"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "character classification routines"
   - "characters, testing"

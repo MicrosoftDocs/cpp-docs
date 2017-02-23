@@ -12,7 +12,6 @@ f1_keywords:
   - "vc.editors.toolbar"
 dev_langs: 
   - "C++"
-  - "C++"
 helpviewer_keywords: 
   - "Toolbar editor, creating buttons"
   - "toolbar buttons (in Toolbar editor), button image"

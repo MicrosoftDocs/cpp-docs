@@ -27,7 +27,6 @@ f1_keywords:
   - "fsetpos"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "streams, setting position indicators"
   - "fsetpos function"

@@ -34,7 +34,6 @@ f1_keywords:
   - "complex/cacoshf"
   - "complex/cacoshl"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "cacosh function"

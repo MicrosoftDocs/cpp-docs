@@ -12,7 +12,6 @@ f1_keywords:
   - "no_dual_interfaces"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "no_dual_interfaces attribute"
 ms.assetid: 9acd5d9d-4a49-4cdc-9470-73a2c23cf512

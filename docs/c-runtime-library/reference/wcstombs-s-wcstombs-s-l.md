@@ -29,7 +29,6 @@ f1_keywords:
   - "_wcstombs_s_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wcstombs_s function"
   - "string conversion, wide characters"

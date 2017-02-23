@@ -36,7 +36,6 @@ f1_keywords:
   - "_tcsstr"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "strings [C++], searching"
   - "mbsstr function"

@@ -14,7 +14,6 @@ f1_keywords:
   - "_tfinddata_t"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tfinddatat function"
   - "tenviron function"

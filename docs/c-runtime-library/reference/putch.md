@@ -26,7 +26,6 @@ f1_keywords:
   - "putch"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "putch function"
 ms.assetid: 81e733e5-770e-4c7a-b7e4-8e66da109f92

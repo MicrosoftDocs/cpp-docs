@@ -31,7 +31,6 @@ f1_keywords:
   - "wprintf"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "printf function"
   - "printf_l function"

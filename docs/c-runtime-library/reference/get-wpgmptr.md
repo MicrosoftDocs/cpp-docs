@@ -28,7 +28,6 @@ f1_keywords:
   - "_get_wpgmptr"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_wpgmptr global variable"
   - "get_wpgmptr function"

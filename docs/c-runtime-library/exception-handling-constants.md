@@ -15,7 +15,6 @@ f1_keywords:
   - "EXCEPTION_EXECUTE_HANDLER"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "exception handling, constants"
   - "EXCEPTION_CONTINUE_SEARCH constant"

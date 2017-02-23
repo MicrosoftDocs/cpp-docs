@@ -59,15 +59,21 @@ Declares a *property*, which is a member function that behaves and is accessed l
 ### Syntax  
   
 ```cpp  
-  
-   property  
-   type  
-   property_name;  
-  
-propertytypeproperty_name{access-modifiertypeget()inheritance-modifier{property_body};access-modifiervoid set(typevalue)inheritance-modifier{property_body};  
-}propertytypeproperty_name[index_list] {access-modifiertypeget(index_list)inheritance-modifier{property_body};access-modifiervoid set(index_list, value)inheritance-modifier{property_body};  
-}propertytypedefault[index_list] {access-modifiertypeget(index_list)inheritance-modifier {property_body};  
-   access-modifiervoid set(index_list, value)inheritance-modifier{property_body};  
+property type property_name;
+
+property type property_name { 
+   access-modifier type get() inheritance-modifier {property_body}; 
+   access-modifier void set(type value) inheritance-modifier {property_body};
+} 
+
+property type property_name[index_list] { 
+   access-modifier type get(index_list) inheritance-modifier {property_body}; 
+   access-modifier void set(index_list, value) inheritance-modifier {property_body};
+} 
+
+property type default[index_list] { 
+   access-modifier type get(index_list) inheritance-modifier {property_body};
+   access-modifier void set(index_list, value) inheritance-modifier {property_body};
 }  
 ```  
   
@@ -104,22 +110,18 @@ propertytypeproperty_name{access-modifiertypeget()inheritance-modifier{property_
 ## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
  **Syntax**  
   
-```  
-  
-      modifier  
-      property  
-      type  
-      property_name;  
-  
-modifierpropertytypeproperty_name {  
-   modifier void set(type);  
-   modifiertypeget();  
-}  
-modifierpropertytypeproperty_name[index-list, value] {  
-   modifier void set(index-list, value);  
-   modifiertypeget(index-list);  
-  
-modifierpropertytypedefault[index];  
+```cpp  
+modifier property type property_name;
+
+modifier property type property_name {
+   modifier void set(type);
+   modifier type get();
+}
+modifier property type property_name[index-list, value] {
+   modifier void set(index-list, value);
+   modifier type get(index-list);
+
+modifier property type default[index];
 }  
 ```  
   

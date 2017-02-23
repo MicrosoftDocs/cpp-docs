@@ -13,7 +13,6 @@ f1_keywords:
   - "component_CPP"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "component pragma"
   - "pragmas, component"

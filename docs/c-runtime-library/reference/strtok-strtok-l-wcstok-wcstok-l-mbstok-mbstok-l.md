@@ -36,7 +36,6 @@ f1_keywords:
   - "wcstok"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "mbstok_l function"
   - "strings [C++], searching"

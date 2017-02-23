@@ -16,7 +16,6 @@ f1_keywords:
   - "type_traits/std::is_destructible"
 dev_langs: 
   - "C++"
-  - "c++"
 helpviewer_keywords: 
   - "is_destructible"
 ms.assetid: 3bb9b718-1ad5-49ae-93cc-92b93b546b4d

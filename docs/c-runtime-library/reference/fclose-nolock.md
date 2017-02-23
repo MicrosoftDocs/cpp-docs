@@ -28,7 +28,6 @@ f1_keywords:
   - "_fclose_nolock"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "streams, closing"
   - "fclose_nolock function"

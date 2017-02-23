@@ -13,7 +13,6 @@ f1_keywords:
   - "vc-pragma.message"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "message pragma"
   - "pragmas, message"

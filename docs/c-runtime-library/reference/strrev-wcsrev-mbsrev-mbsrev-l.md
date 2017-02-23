@@ -37,7 +37,6 @@ f1_keywords:
   - "_mbsrev"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_mbsrev_l function"
   - "characters [C++], switching"

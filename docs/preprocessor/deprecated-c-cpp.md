@@ -13,7 +13,6 @@ f1_keywords:
   - "deprecated_CPP"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "deprecated pragma"
   - "pragmas, deprecated"

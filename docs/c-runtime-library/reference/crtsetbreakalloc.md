@@ -27,7 +27,6 @@ f1_keywords:
   - "_CrtSetBreakAlloc"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "CrtSetBreakAlloc function"
   - "_CrtSetBreakAlloc function"

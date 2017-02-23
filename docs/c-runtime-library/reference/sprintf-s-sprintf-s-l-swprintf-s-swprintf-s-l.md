@@ -36,7 +36,6 @@ f1_keywords:
   - "_swprintf_s_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "stprintf_s function"
   - "stprintf_s_l function"

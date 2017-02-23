@@ -36,7 +36,6 @@ f1_keywords:
   - "_wtol_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tstol function"
   - "atol function"

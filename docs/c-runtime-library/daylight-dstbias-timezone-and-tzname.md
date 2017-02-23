@@ -17,7 +17,6 @@ f1_keywords:
   - "daylight"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "time zones"
   - "time adjustments"

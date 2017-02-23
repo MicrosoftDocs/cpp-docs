@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "DLL conflicts [C++]"
 ms.assetid: c217ffd2-5d9a-4678-a1df-62a637a96460

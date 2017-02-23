@@ -121,7 +121,7 @@ void wait(unique_lock<mutex>& Lck, Predicate Pred);
   
  In effect, the second method executes the following code.  
   
-```cpp
+```cpp  
 while(!Pred())
     wait(Lck);
 ```    
@@ -162,7 +162,7 @@ bool wait_for(
   
  In effect, the second method executes the following code.  
   
-```cpp
+```cpp  
 while(!Pred())
     if(wait_for(Lck, Rel_time) == cv_status::timeout)
     return Pred();
@@ -216,7 +216,7 @@ bool wait_until(
   
  In effect, the second method executes the following code  
   
-```cpp
+```cpp  
 while(!Pred())
     if(wait_until(Lck, Abs_time) == cv_status::timeout)
     return Pred();

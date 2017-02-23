@@ -28,7 +28,6 @@ f1_keywords:
   - "_set_error_mode"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_set_error_mode function"
   - "set_error_mode function"

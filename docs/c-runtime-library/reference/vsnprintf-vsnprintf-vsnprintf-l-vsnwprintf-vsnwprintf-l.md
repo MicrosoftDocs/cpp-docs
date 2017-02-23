@@ -46,7 +46,6 @@ f1_keywords:
   - "_vsnwprintf_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "vsntprintf function"
   - "_vsnwprintf_l function"
@@ -220,7 +219,7 @@ int _vsnwprintf_l(
   
 ## Example  
   
-```c  
+```C  
 // crt_vsnwprintf.c  
 // compile by using: cl /W3 crt_vsnwprintf.c  
   
@@ -262,7 +261,7 @@ nSize: -1, buff: Hi there!
   
 ## Example  
   
-```c  
+```C  
 // crt_vsnprintf.c  
 // compile by using: cl /W4 crt_vsnprintf.c  
 #include <stdio.h>  

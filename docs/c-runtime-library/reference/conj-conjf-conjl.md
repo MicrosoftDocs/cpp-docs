@@ -34,7 +34,6 @@ f1_keywords:
   - "complex/conjf"
   - "complex/conjl"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "conj function"

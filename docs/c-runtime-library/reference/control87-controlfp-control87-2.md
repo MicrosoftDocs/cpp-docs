@@ -35,7 +35,6 @@ f1_keywords:
   - "_control87_2"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "floating-point numbers, control word"
   - "_control87 function"

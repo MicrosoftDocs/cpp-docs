@@ -31,7 +31,6 @@ f1_keywords:
   - "_ismbbalpha_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "ismbbalpha function"
   - "ismbbalpha_l function"

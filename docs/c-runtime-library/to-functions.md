@@ -20,7 +20,6 @@ f1_keywords:
   - "To"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "to functions"
   - "string conversion, to different characters"

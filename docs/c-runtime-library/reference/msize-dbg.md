@@ -27,7 +27,6 @@ f1_keywords:
   - "msize_dbg"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "memory blocks"
   - "_msize_dbg function"

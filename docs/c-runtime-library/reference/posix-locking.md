@@ -26,7 +26,6 @@ f1_keywords:
   - "locking"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "locking function"
 ms.assetid: 1db15308-543e-44cf-a26f-5539f8e4fb2f

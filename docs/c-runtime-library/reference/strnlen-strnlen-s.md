@@ -45,7 +45,6 @@ f1_keywords:
   - "_tcscnlen_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_tcscnlen function"
   - "_mbstrnlen function"

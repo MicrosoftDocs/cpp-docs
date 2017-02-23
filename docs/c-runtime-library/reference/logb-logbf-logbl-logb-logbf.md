@@ -35,7 +35,6 @@ f1_keywords:
   - "logbf"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_logbf function"
   - "mantissas, floating-point variables"

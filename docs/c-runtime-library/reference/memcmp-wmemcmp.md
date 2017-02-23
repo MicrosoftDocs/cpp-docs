@@ -29,7 +29,6 @@ f1_keywords:
   - "wmemcmp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wmemcmp function"
   - "memcmp function"

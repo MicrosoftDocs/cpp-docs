@@ -30,7 +30,6 @@ f1_keywords:
   - "exp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "exponential calculations"
   - "expf function"

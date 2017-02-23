@@ -122,7 +122,6 @@ struct Derived : public Base
  The following example shows the distinctions between trivial, standard-layout, and POD types:  
   
 ```cpp  
-  
 #include <type_traits>  
 #include <iostream>  
   

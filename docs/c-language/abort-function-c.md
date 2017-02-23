@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "abort function"
 ms.assetid: caa62d67-ffc4-4481-87a4-0c1e2b0f537c

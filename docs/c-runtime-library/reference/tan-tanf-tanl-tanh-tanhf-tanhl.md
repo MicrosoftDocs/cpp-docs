@@ -39,7 +39,6 @@ f1_keywords:
   - "tanhl"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tanl function"
   - "tanhl function"

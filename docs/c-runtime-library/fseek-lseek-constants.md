@@ -14,7 +14,6 @@ f1_keywords:
   - "SEEK_CUR"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "SEEK_SET constant"
   - "SEEK_END constant"

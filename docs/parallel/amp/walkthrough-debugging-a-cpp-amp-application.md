@@ -81,7 +81,6 @@ This topic demonstrates how to debug an application that uses C++ Accelerated Ma
 8.  Open AMPMapReduce.cpp and replace its content with the following code.  
   
  ```cpp  
-  
     // AMPMapReduce.cpp defines the entry point for the program.  
     // The program performs a parallel-sum reduction that computes the sum of an array of integers.   
   

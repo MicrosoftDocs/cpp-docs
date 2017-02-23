@@ -26,7 +26,6 @@ f1_keywords:
   - "mktemp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "mktemp function"
 ms.assetid: b58cba60-034f-4e63-b312-ccbcd489d0a7

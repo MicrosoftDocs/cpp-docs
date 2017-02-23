@@ -30,7 +30,6 @@ f1_keywords:
   - "_CrtDbgReport"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "debug reporting"
   - "_CrtDbgReport function"

@@ -51,7 +51,6 @@ C++ Accelerated Massive Parallelism (C++ AMP) accelerates execution of C++ code 
  The following two examples illustrate the primary components of C++ AMP. Assume that you want to add the corresponding elements of two one-dimensional arrays. For example, you might want to add `{1, 2, 3, 4, 5}` and `{6, 7, 8, 9, 10}` to obtain `{7, 9, 11, 13, 15}`. Without using C++ AMP, you might write the following code to add the numbers and display the results.  
   
 ```cpp  
-  
 #include <iostream>  
   
 void StandardMethod() {  
@@ -175,7 +174,6 @@ std::cout << a[idx] << "\n";
  The [extent Class](../../parallel/amp/reference/extent-class.md) specifies the length of the data in each dimension of the `array` or `array_view` object. You can create an extent and use it to create an `array` or `array_view` object. You can also retrieve the extent of an existing `array` or `array_view` object. The following example prints the length of the extent in each dimension of an `array_view` object.  
   
 ```cpp  
- 
 int aCPP[] = {  
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,   
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};  
@@ -444,7 +442,6 @@ for (int i = 0; i <4; i++) {
 
   
 ```cpp  
-  
 #include <amp.h>  
 #include <amp_math.h>  
 #include <iostream>  

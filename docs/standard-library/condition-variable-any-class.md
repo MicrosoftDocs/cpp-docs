@@ -147,7 +147,7 @@ bool wait_for(Lock& Lck, const chrono::duration<Rep, Period>& Rel_time, Predicat
   
  The second method in effect executes the following code.  
   
-```cpp
+```cpp  
 while(!Pred())
     if(wait_for(Lck, Rel_time) == cv_status::timeout)
     return Pred();

@@ -35,7 +35,6 @@ f1_keywords:
   - "corecrt_wctype/iswascii"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "__isascii function"
   - "_isascii function"

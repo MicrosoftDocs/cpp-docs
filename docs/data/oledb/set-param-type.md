@@ -64,7 +64,7 @@ type
 -   **DBPARAMIO_INPUT &#124; DBPARAMIO_OUTPUT** The parameter is both an input and an output parameter.  
   
 ## Example  
-```cpp
+```cpp  
 class CArtistsProperty
 {
 public:

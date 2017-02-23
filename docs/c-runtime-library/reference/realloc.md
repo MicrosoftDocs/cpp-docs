@@ -30,7 +30,6 @@ f1_keywords:
   - "_frealloc"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_brealloc function"
   - "realloc function"

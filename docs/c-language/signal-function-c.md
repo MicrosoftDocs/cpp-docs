@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "signal function"
 ms.assetid: d3ce419a-50b2-4233-bb50-99312293f9f3

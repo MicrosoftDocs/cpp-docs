@@ -31,7 +31,6 @@ f1_keywords:
   - "clear87"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "clearing floating point status word"
   - "clearfp function"

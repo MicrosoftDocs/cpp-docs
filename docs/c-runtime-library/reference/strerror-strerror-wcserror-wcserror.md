@@ -38,7 +38,6 @@ f1_keywords:
   - "tcserror"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "strerror function"
   - "_strerror function"

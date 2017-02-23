@@ -70,15 +70,13 @@ Specifies the architecture for code generation on x86. Also see [/arch (x64)](..
   
  **/arch** and [/QIfist](../../build/reference/qifist-suppress-ftol.md) cannot be used on the same compiland. In particular, if you do not use `_controlfp` to modify the FP control word, then the run-time startup code sets the x87 FPU control word precision-control field to 53-bits. Therefore, every float and double operation in an expression uses a 53-bit significand and a 15-bit exponent. However, every SSE single-precision operation uses a 24-bit significand and an 8-bit exponent, and SSE2 double-precision operations use a 53-bit significand and an 11-bit exponent. For more information, see [_control87, _controlfp, \__control87_2](../../c-runtime-library/reference/control87-controlfp-control87-2.md). These differences are possible in one expression tree, but not in cases where a user assignment is involved after each subexpression. Consider the following:  
   
-```c  
-  
+```cpp  
 r = f1 * f2 + d;  // Different results are possible on SSE/SSE2.  
 ```  
   
- Against:  
+ Compare:  
   
-```c  
-  
+```cpp  
 t = f1 * f2;   // Do f1 * f2, round to the type of t.  
 r = t + d;     // This should produce the same overall result   
                // whether x87 stack is used or SSE/SSE2 is used.  

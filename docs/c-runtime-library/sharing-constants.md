@@ -16,7 +16,6 @@ f1_keywords:
   - "_SH_COMPAT"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_SH_DENYRW constant"
   - "SH_DENYRD constant"

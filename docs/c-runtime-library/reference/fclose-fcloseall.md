@@ -29,7 +29,6 @@ f1_keywords:
   - "_fcloseall"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "fclose function"
   - "streams, closing"

@@ -34,7 +34,6 @@ f1_keywords:
   - "complex/cpowf"
   - "complex/copwl"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "cpow function"

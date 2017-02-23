@@ -30,7 +30,6 @@ f1_keywords:
   - "_wexecle"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wexecle function"
   - "execle function"

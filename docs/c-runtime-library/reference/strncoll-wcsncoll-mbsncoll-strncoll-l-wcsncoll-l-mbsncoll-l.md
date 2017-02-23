@@ -45,7 +45,6 @@ f1_keywords:
   - "mbsncoll"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_strncoll_l function"
   - "code pages, using for string comparisons"

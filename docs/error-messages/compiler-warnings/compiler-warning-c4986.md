@@ -45,15 +45,13 @@ translation.priority.ht:
  The following sample generates C4986.  
   
 ```cpp  
-  
-      class X { };  
+class X { };  
 void f1() throw (X*);  
 // ...  
 void f1()  
 {  
     // ...  
-}  
-  
+}    
 ```  
   
 ## Example  
@@ -66,6 +64,5 @@ void f1() throw (X*);
 void f1() throw (X*)  
 {  
     // ...  
-}  
-  
+}    
 ```

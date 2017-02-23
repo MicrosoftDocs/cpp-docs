@@ -16,7 +16,6 @@ f1_keywords:
   - "_P_NOWAITO"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_P_OVERLAY constant"
   - "P_DETACH constant"

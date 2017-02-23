@@ -28,7 +28,6 @@ f1_keywords:
   - "_set_errno"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "errno global variable"
   - "set_errno function"

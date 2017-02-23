@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C++"
 helpviewer_keywords: 
   - "size, toolbar buttons"
   - "toolbar buttons (in Toolbar editor), setting properties"

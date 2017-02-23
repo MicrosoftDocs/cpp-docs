@@ -27,7 +27,6 @@ f1_keywords:
   - "free"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "memory blocks, deallocating"
   - "free function"

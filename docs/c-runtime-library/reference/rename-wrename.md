@@ -30,7 +30,6 @@ f1_keywords:
   - "Rename"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "trename function"
   - "directories [C++], renaming"

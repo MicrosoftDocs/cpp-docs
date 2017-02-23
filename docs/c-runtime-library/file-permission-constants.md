@@ -13,7 +13,6 @@ f1_keywords:
   - "_S_IREAD"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "S_IWRITE constant"
   - "constants [C++], file attributes"

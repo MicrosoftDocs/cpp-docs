@@ -96,7 +96,7 @@ These options determine the order in which function arguments are pushed onto th
   
  For C, the `__fastcall` naming convention uses the function name preceded by an at sign (`@`) followed by the size of the function's arguments in bytes. No case translation is done. The compiler uses this template for the naming convention:  
   
-```c  
+```  
 @function_name@number  
 ```  
   
@@ -107,7 +107,7 @@ These options determine the order in which function arguments are pushed onto th
   
  For C, the `__stdcall` naming convention uses the function name preceded by an underscore ( `_` ) and followed by an at sign (@) and the size of the function's arguments in bytes. No case translation is performed. The compiler uses this template for the naming convention:  
   
-```c  
+```  
 _functionname@number  
 ```  
   
@@ -116,7 +116,7 @@ _functionname@number
   
  For C, the `__vectorcall` naming convention uses the function name followed by two at signs (@@) and the size of the function's arguments in bytes. No case translation is performed. The compiler uses this template for the naming convention:  
   
-```c  
+```  
 functionname@@number  
 ```  
   

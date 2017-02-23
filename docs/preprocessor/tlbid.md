@@ -12,7 +12,6 @@ f1_keywords:
   - "tlbid"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tlbid attribute"
 ms.assetid: 54b06785-191b-4e77-a9a5-485f2b4acb09

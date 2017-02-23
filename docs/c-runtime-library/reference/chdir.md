@@ -26,7 +26,6 @@ f1_keywords:
   - "chdir"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "chdir function"
 ms.assetid: a65275a1-41e4-46be-83a5-167dfacb62a0

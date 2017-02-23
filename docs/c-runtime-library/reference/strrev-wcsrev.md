@@ -28,7 +28,6 @@ f1_keywords:
   - "wcsrev"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "strrev function"
   - "wcsrev function"

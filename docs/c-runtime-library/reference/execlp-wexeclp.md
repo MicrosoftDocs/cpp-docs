@@ -30,7 +30,6 @@ f1_keywords:
   - "_execlp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "execlp function"
   - "_execlp function"

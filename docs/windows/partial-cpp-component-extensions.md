@@ -48,17 +48,15 @@ The `partial` keyword enables different parts of the same ref class to be author
 ### Syntax  
   
 ```cpp  
-  
-      partial  
-      class-key  
-      identifier {  
-   /* The first part of the partial class definition. This is typically auto-generated*/  
+partial class-key identifier {  
+   /* The first part of the partial class definition. 
+      This is typically auto-generated */  
 }  
 // ...  
-class-keyidentifier {  
-   /* The subsequent part(s) of the class definition. The same identifier is specified, but the "partial" keyword is omitted. */  
+class-key identifier {  
+   /* The subsequent part(s) of the class definition. The same 
+      identifier is specified, but the "partial" keyword is omitted. */  
 }  
-  
 ```  
   
 ### Parameters  

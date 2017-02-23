@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "declarators, maximum number of"
 ms.assetid: f8410673-e11a-4830-89a3-3ffb7bb6562d

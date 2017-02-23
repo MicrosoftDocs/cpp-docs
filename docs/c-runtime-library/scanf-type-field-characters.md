@@ -20,7 +20,6 @@ f1_keywords:
   - "scanf"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "scanf function, type field characters"
 ms.assetid: 5d546a84-715b-44ca-b1c5-bbe997f9ff62

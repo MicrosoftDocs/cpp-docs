@@ -31,7 +31,6 @@ f1_keywords:
   - "_wspawnvpe"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_wspawnvpe function"
   - "processes, creating"

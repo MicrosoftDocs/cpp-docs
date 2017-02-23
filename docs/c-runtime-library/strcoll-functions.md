@@ -20,7 +20,6 @@ f1_keywords:
   - "strcoll"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "code pages, using for string comparisons"
   - "string comparison [C++], culture-specific"

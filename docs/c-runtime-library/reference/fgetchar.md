@@ -26,7 +26,6 @@ f1_keywords:
   - "fgetchar"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "fgetchar function"
 ms.assetid: 2b27a6f2-d973-4d12-a66d-7e6b01e84470

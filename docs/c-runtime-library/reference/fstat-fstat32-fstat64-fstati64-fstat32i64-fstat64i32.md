@@ -43,7 +43,6 @@ f1_keywords:
   - "_fstat64i32"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_fstat64 function"
   - "fstati64 function"

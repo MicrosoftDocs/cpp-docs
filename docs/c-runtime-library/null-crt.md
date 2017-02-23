@@ -12,7 +12,6 @@ f1_keywords:
   - "null"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "NULL"
   - "null pointers"

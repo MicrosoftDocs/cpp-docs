@@ -12,7 +12,6 @@ f1_keywords:
   - "WCHAR_MAX"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "WCHAR_MAX constant"
 ms.assetid: 2b5f8bfd-9098-47fc-be8f-598a0c975ed4

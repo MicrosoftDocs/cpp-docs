@@ -41,7 +41,6 @@ Creates a factory that produces instances of the specified class that can be act
 ## Syntax  
   
 ```cpp  
-  
 template<typename Factory>  
    inline HRESULT STDMETHODCALLTYPE CreateActivationFactory(  
       _In_ unsigned int *flags,        _In_ const CreatorMap* entry,   

@@ -51,17 +51,16 @@ You can use the [accelerator](../../parallel/amp/reference/accelerator-class.md)
  You can determine the properties of the default accelerator by constructing the default accelerator and examining its properties. The following code example prints the path, amount of accelerator memory, shared memory support, double-precision support, and limited double-precision support of the default accelerator.  
   
 ```cpp  
- 
 void default_properties() {  
     accelerator default_acc;  
-    std::wcout <<default_acc.device_path <<"\n";  
-    std::wcout <<default_acc.dedicated_memory <<"\n";  
-    std::wcout <<(accs[i].supports_cpu_shared_memory    
- "CPU shared memory: true" : "CPU shared memory: false") <<"\n";  
-    std::wcout <<(accs[i].supports_double_precision    
- "double precision: true" : "double precision: false") <<"\n";  
-    std::wcout <<(accs[i].supports_limited_double_precision    
- "limited double precision: true" : "limited double precision: false") <<"\n";  
+    std::wcout << default_acc.device_path << "\n";  
+    std::wcout << default_acc.dedicated_memory << "\n";  
+    std::wcout << (accs[i].supports_cpu_shared_memory ?   
+        "CPU shared memory: true" : "CPU shared memory: false") << "\n";  
+    std::wcout << (accs[i].supports_double_precision ?   
+        "double precision: true" : "double precision: false") << "\n";  
+    std::wcout << (accs[i].supports_limited_double_precision ?   
+        "limited double precision: true" : "limited double precision: false") << "\n";  
 }  
  
 ```  
@@ -70,48 +69,42 @@ void default_properties() {
  You can set the CPPAMP_DEFAULT_ACCELERATOR environment variable to specify the `accelerator::device_path` of the default accelerator. The path is hardware-dependent. The following code uses the `accelerator::get_all` function to retrieve a list of the available accelerators and then displays the path and characteristics of each accelerator.  
   
 ```cpp  
- 
 void list_all_accelerators()  
 {  
-    std::vector<accelerator> accs = accelerator::get_all();
-for (int i = 0; i <accs.size();
-
-i++) {  
-    std::wcout <<accs[i].device_path <<"\n";  
-    std::wcout <<accs[i].dedicated_memory <<"\n";  
-    std::wcout <<(accs[i].supports_cpu_shared_memory    
- "CPU shared memory: true" : "CPU shared memory: false") <<"\n";  
-    std::wcout <<(accs[i].supports_double_precision    
- "double precision: true" : "double precision: false") <<"\n";  
-    std::wcout <<(accs[i].supports_limited_double_precision    
- "limited double precision: true" : "limited double precision: false") <<"\n";  
- }  
+    std::vector<accelerator> accs = accelerator::get_all();  
+  
+    for (int i = 0; i <accs.size(); i++) {  
+        std::wcout << accs[i].device_path << "\n";  
+        std::wcout << accs[i].dedicated_memory << "\n";  
+        std::wcout << (accs[i].supports_cpu_shared_memory ?   
+            "CPU shared memory: true" : "CPU shared memory: false") << "\n";  
+        std::wcout << (accs[i].supports_double_precision ?   
+            "double precision: true" : "double precision: false") << "\n";  
+        std::wcout << (accs[i].supports_limited_double_precision ?   
+            "limited double precision: true" : "limited double precision: false") << "\n";  
+    }  
 }  
- 
 ```  
   
 ## Selecting an Accelerator  
  To select an accelerator, use the `accelerator::get_all` method to retrieve a list of the available accelerators and then select one based on its properties. This example shows how to pick the accelerator that has the most memory:  
   
 ```cpp  
- 
 void pick_with_most_memory()  
 {  
     std::vector<accelerator> accs = accelerator::get_all();
-accelerator acc_chosen = accs[0];  
-    for (int i = 0; i <accs.size();
-
-i++) {  
-    if (accs[i].dedicated_memory> acc_chosen.dedicated_memory) {  
-    acc_chosen = accs[i];  
- }  
- }  
+    accelerator acc_chosen = accs[0];  
+    
+    for (int i = 0; i <accs.size(); i++) {  
+        if (accs[i].dedicated_memory> acc_chosen.dedicated_memory) {  
+            acc_chosen = accs[i];  
+        }  
+    }  
  
-    std::wcout <<"The accelerator with the most memory is "    
- <<acc_chosen.device_path <<"\n"  
- <<acc_chosen.dedicated_memory <<".\n";  
+    std::wcout << "The accelerator with the most memory is "    
+        << acc_chosen.device_path << "\n"  
+        << acc_chosen.dedicated_memory << ".\n";  
 }  
- 
 ```  
   
 > [!NOTE]
@@ -132,24 +125,23 @@ using namespace Concurrency;
   
 int main()  
 {  
-  accelerator acc = accelerator(accelerator::default_accelerator);  
+    accelerator acc = accelerator(accelerator::default_accelerator);  
   
-  // Early out if the default accelerator doesn’t support shared memory.  
-  if(!acc.supports_cpu_shared_memory)  
-  {  
-    std::cout << "The default accelerator does not support shared memory" << std::endl;  
-    return 1;  
-  }  
+    // Early out if the default accelerator doesn’t support shared memory.  
+    if (!acc.supports_cpu_shared_memory)  
+    {  
+        std::cout << "The default accelerator does not support shared memory" << std::endl;  
+        return 1;  
+    }  
   
-  // Override the default CPU access type.  
-  acc.set_default_cpu_access_type(access_type_read_write);  
+    // Override the default CPU access type.  
+    acc.set_default_cpu_access_type(access_type_read_write);  
   
-  // Create an accelerator_view from the default accelerator. The  
-  // accelerator_view reflects the default_cpu_access_type of the  
-  // accelerator it’s associated with.  
-  accelerator_view acc_v = acc.default_view;  
+    // Create an accelerator_view from the default accelerator. The  
+    // accelerator_view reflects the default_cpu_access_type of the  
+    // accelerator it’s associated with.  
+    accelerator_view acc_v = acc.default_view;  
 }  
-  
 ```  
   
  An `accelerator_view` always reflects the `default_cpu_access_type` of the `accelerator` it’s associated with, and it provides no interface to override or change its `access_type`.  
@@ -158,32 +150,26 @@ int main()
  You can change the default accelerator by calling the `accelerator::set_default` method. You can change the default accelerator only once per app execution and you must change it before any code is executed on the GPU. Any subsequent function calls to change the accelerator return `false`. If you want to use a different accelerator in a call to `parallel_for_each`, read the "Using Multiple Accelerators" section in this article. The following code example sets the default accelerator to one that is not emulated, is not connected to a display, and supports double-precision.  
   
 ```cpp  
- 
-    bool pick_accelerator()  
+bool pick_accelerator()  
 {  
     std::vector<accelerator> accs = accelerator::get_all();
-accelerator chosen_one;  
+    accelerator chosen_one;  
  
-    auto result = 
-    std::find_if(accs.begin(), accs.end(), [] (const accelerator& acc)  
- {  
-    return !acc.is_emulated&& 
-    acc.supports_double_precision&& 
- !acc.has_display;  
- });
-
- 
-    if (result != accs.end())  
-    chosen_one = *(result);
-
- 
+    auto result = std::find_if(accs.begin(), accs.end(), 
+        [] (const accelerator& acc) {  
+            return !acc.is_emulated && 
+                acc.supports_double_precision && 
+                !acc.has_display;  
+        });
+  
+    if (result != accs.end()) {  
+        chosen_one = *(result);
+    }
+  
     std::wcout <<chosen_one.description <<std::endl;  
- 
     bool success = accelerator::set_default(chosen_one.device_path);
-
     return success;  
 }  
- 
 ```  
   
 ## Using Multiple Accelerators  

@@ -28,7 +28,6 @@ f1_keywords:
   - "_query_new_mode"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "query_new_mode function"
   - "handler modes"

@@ -13,7 +13,6 @@ f1_keywords:
   - "vc-pragma.hdrstop"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "hdrstop pragma"
   - "pragmas, hdrstop"

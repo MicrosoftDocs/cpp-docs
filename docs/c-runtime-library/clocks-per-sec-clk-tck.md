@@ -13,7 +13,6 @@ f1_keywords:
   - "CLK_TCK"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "CLOCKS_PER_SEC"
   - "CLK_TCK constant"

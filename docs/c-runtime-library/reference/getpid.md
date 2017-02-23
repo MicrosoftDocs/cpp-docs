@@ -27,7 +27,6 @@ f1_keywords:
   - "_getpid"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "getpid function"
   - "_getpid function"

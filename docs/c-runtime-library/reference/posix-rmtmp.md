@@ -26,7 +26,6 @@ f1_keywords:
   - "rmtmp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "rmtmp function"
 ms.assetid: d79f0364-39e8-42fb-a73a-63c22a646cd8

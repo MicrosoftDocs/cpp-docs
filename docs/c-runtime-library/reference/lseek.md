@@ -26,7 +26,6 @@ f1_keywords:
   - "lseek"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "lseek function"
 ms.assetid: 137d7741-5c2e-443e-811a-6a01417fcae7

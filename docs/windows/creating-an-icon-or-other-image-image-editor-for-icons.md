@@ -12,7 +12,6 @@ f1_keywords:
   - "vc.editors.bitmap"
 dev_langs: 
   - "C++"
-  - "C++"
 helpviewer_keywords: 
   - "bitmaps [C++]"
   - "images [C++], creating"

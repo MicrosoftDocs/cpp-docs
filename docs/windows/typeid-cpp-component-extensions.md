@@ -44,7 +44,6 @@ Gets a value that indicates the type of an object.
 ### Syntax  
   
 ```cpp  
-  
 T::typeid  
 ```  
   

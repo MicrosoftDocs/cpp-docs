@@ -31,7 +31,6 @@ f1_keywords:
   - "_ismbclower"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_ismbcupper function"
   - "ismbclower function"

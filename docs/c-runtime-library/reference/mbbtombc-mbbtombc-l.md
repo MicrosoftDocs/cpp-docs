@@ -31,7 +31,6 @@ f1_keywords:
   - "mbbtombc"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "mbbtombc_l function"
   - "mbbtombc function"

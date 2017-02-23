@@ -12,7 +12,6 @@ f1_keywords:
   - "embedded_idl"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "embedded_idl attribute"
 ms.assetid: f1c1c2e8-3872-4172-8795-8d1288a20452

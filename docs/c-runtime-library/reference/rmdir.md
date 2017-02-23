@@ -26,7 +26,6 @@ f1_keywords:
   - "rmdir"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "rmdir function"
 ms.assetid: 03a0aff4-f66c-42a9-bee9-84c46f994952

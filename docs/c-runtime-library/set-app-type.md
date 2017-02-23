@@ -27,7 +27,7 @@ An internal function used at startup to tell the CRT whether the app is a consol
   
 ## Syntax  
   
-```cpp
+```cpp  
 typedef enum _crt_app_type
 {
     _crt_unknown_app,

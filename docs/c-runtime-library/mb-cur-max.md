@@ -12,7 +12,6 @@ f1_keywords:
   - "MB_CUR_MAX"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "MB_CUR_MAX constant"
 ms.assetid: fab22609-c14d-4c19-991c-bd09ff30e604

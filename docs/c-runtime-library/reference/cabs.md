@@ -29,7 +29,6 @@ f1_keywords:
   - "_cabsl"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "cabs function"
   - "cabsl function"

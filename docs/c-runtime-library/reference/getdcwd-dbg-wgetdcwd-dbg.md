@@ -30,7 +30,6 @@ f1_keywords:
   - "wgetdcwd_dbg"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "working directory"
   - "_getdcwd_dbg function"

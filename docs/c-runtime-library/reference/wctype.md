@@ -26,7 +26,6 @@ f1_keywords:
   - "wctype"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wctype function"
   - "wide characters"

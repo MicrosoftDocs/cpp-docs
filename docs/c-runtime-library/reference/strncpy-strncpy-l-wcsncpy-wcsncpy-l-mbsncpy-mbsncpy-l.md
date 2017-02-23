@@ -43,7 +43,6 @@ f1_keywords:
   - "_wcsncpy_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wcsncpy_l function"
   - "characters [C++], copying"

@@ -33,7 +33,6 @@ f1_keywords:
   - "fgetc_nolock"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "fgetc_nolock function"
   - "fgetwc_nolock function"

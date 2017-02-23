@@ -29,7 +29,6 @@ f1_keywords:
   - "mbtowc"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "mbtowc function"
   - "_mbtowc_l function"

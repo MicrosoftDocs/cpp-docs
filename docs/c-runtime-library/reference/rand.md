@@ -27,7 +27,6 @@ f1_keywords:
   - "rand"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "generating pseudorandom numbers"
   - "random numbers, generating"

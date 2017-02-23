@@ -45,7 +45,6 @@ The `safe_cast` operation returns the specified expression as the specified type
 ### Syntax  
   
 ```cpp  
-  
 [default]:: safe_cast<  
 type-id  
 >(  
@@ -64,7 +63,6 @@ expression
 ### Syntax  
   
 ```cpp  
-  
 [default]:: safe_cast<  
 type-id  
 >(  
@@ -129,7 +127,6 @@ Caught expected exception: InvalidCastException
 ### Syntax  
   
 ```cpp  
-  
 [cli]:: safe_cast<  
 type-id  
 >(  

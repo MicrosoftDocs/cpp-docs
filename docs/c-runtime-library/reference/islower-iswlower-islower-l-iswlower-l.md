@@ -38,7 +38,6 @@ f1_keywords:
   - "iswlower"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_islower _l function"
   - "_ismbclower_l function"

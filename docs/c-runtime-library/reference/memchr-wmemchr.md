@@ -28,7 +28,6 @@ f1_keywords:
   - "wmemchr"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "memchr function"
   - "wmemchr function"

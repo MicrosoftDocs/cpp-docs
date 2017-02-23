@@ -30,7 +30,6 @@ f1_keywords:
   - "_wmktemp_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_tmktemp_s function"
   - "mktemp_s function"

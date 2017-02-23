@@ -29,7 +29,6 @@ f1_keywords:
   - "_free_locale"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "__free_locale function"
   - "free_locale function"

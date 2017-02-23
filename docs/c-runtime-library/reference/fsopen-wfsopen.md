@@ -33,7 +33,6 @@ f1_keywords:
   - "_fsopen"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "opening files, streams"
   - "fsopen function"

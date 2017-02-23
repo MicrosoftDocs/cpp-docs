@@ -28,7 +28,6 @@ f1_keywords:
   - "_scalb"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "exponential calculations"
   - "_scalb function"

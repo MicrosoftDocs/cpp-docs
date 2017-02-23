@@ -28,7 +28,6 @@ f1_keywords:
   - "_aligned_free"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_aligned_free function"
   - "aligned_free function"

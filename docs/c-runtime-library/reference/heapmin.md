@@ -28,7 +28,6 @@ f1_keywords:
   - "heapmin"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "heap memory"
   - "minimizing heaps"

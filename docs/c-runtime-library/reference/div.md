@@ -27,7 +27,6 @@ f1_keywords:
   - "div"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "div function"
   - "quotients, computing"

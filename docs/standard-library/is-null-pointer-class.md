@@ -16,7 +16,6 @@ f1_keywords:
   - "type_traits/std::is_null_pointer"
 dev_langs: 
   - "C++"
-  - "c++"
 helpviewer_keywords: 
   - "is_null_pointer"
 ms.assetid: f3b3601b-f162-4803-a6e9-dabf5c3876cc

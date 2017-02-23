@@ -21,7 +21,6 @@ f1_keywords:
   - "_ismbc"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "ismbc routines"
   - "_ismbc routines"

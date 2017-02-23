@@ -13,7 +13,6 @@ f1_keywords:
   - "vc-pragma.function"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "function pragma"
   - "pragmas, function"

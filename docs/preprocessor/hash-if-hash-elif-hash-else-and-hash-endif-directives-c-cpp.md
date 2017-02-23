@@ -16,7 +16,6 @@ f1_keywords:
   - "Defined"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "#elif directive"
   - "conditional compilation, directives"

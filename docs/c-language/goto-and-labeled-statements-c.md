@@ -12,7 +12,6 @@ f1_keywords:
   - "goto"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "labeled statement"
   - "statements, labeled"

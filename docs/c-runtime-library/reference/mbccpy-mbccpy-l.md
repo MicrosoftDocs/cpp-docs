@@ -33,7 +33,6 @@ f1_keywords:
   - "_ftccpy"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_tccpy function"
   - "_tccpy_l function"

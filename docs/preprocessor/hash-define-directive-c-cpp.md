@@ -12,7 +12,6 @@ f1_keywords:
   - "#define"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "define directive (#define), syntax"
   - "preprocessor, directives"

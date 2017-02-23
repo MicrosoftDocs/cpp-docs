@@ -136,7 +136,6 @@ bool bad() const;
 ### Example  
   
 ```cpp  
-  
 // basic_ios_bad.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -301,7 +300,6 @@ void exceptions(io_state Newexcept);
 ### Example  
   
 ```cpp  
-  
 // basic_ios_exceptions.cpp  
 // compile with: /EHsc /GR  
 #include <iostream>  
@@ -352,7 +350,6 @@ bool fail() const;
 ### Example  
   
 ```cpp  
-  
 // basic_ios_fail.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -388,7 +385,6 @@ char_type fill(char_type Char);
 ### Example  
   
 ```cpp  
-  
 // basic_ios_fill.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -452,7 +448,6 @@ locale imbue(const locale& Loc);
 ### Example  
   
 ```cpp  
-  
 // basic_ios_imbue.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -552,7 +547,6 @@ char narrow(char_type Char, char Default = '\0') const;
 ### Example  
   
 ```cpp  
-  
 // basic_ios_narrow.cpp  
 // compile with: /EHsc  
 #include <ios>  
@@ -592,7 +586,6 @@ typedef typename traits_type::off_type off_type;
 ### Example  
   
 ```cpp  
-  
 // basic_ios_opgood.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -622,7 +615,6 @@ bool operator!() const;
 ### Example  
   
 ```cpp  
-  
 // basic_ios_opbad.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -677,7 +669,6 @@ basic_streambuf<Elem, Traits>* _Sb);
 ### Example  
   
 ```cpp  
-  
 // basic_ios_rdbuf.cpp  
 // compile with: /EHsc  
 #include <ios>  
@@ -714,7 +705,6 @@ iostate rdstate() const;
 ### Example  
   
 ```cpp  
-  
 // basic_ios_rdstate.cpp  
 // compile with: /EHsc  
 #include <iostream>  

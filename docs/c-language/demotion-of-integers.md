@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "demoting integers"
 ms.assetid: 51fb3654-60b0-4de7-80eb-bd910086c18a

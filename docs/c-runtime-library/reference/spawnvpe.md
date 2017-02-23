@@ -26,7 +26,6 @@ f1_keywords:
   - "spawnvpe"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "spawnvpe function"
 ms.assetid: be16bf98-5059-4c33-be00-7524142a017e

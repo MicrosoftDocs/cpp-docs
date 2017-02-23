@@ -34,7 +34,6 @@ f1_keywords:
   - "complex/ccoshf"
   - "complex/ccoshl"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "ccosh function"

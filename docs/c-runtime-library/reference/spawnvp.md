@@ -26,7 +26,6 @@ f1_keywords:
   - "spawnvp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "spawnvp function"
 ms.assetid: 25d3896d-1934-4453-ae8b-4fb5480a2657

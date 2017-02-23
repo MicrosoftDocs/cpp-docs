@@ -27,7 +27,6 @@ f1_keywords:
   - "mbsrtowcs_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "mbsrtowcs_s function"
 ms.assetid: 4ee084ec-b15d-4e5a-921d-6584ec3b5a60

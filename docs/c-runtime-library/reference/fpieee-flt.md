@@ -28,7 +28,6 @@ f1_keywords:
   - "_fpieee_flt"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_fpieee_flt function"
   - "exception handling, floating-point"

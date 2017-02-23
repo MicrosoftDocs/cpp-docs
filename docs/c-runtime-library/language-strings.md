@@ -12,7 +12,6 @@ f1_keywords:
   - "c.strings"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "language strings"
 ms.assetid: bbee63b1-af0b-4e44-9eaf-dd3e265c05fd

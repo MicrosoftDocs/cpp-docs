@@ -26,7 +26,6 @@ f1_keywords:
   - "spawnve"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "spawnve function"
 ms.assetid: 39507df8-f15f-45fb-b2b6-01359272b147

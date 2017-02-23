@@ -26,7 +26,6 @@ f1_keywords:
   - "fcvt"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "fcvt function"
 ms.assetid: 1f748ad0-e186-400e-af8e-80d4431523d7

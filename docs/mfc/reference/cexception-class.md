@@ -137,7 +137,7 @@ void Delete();
  You only need to call **Delete** if you are using the C++ **try**- **catch** mechanism. If you are using the MFC macros **TRY** and **CATCH**, then these macros will automatically call this function.  
   
 ### Example  
- ```cpp
+ ```cpp  
  CFile* pFile = NULL;
 // Constructing a CFile object with this override may throw
 // a CFile exception, and won't throw any other exceptions.
@@ -208,7 +208,7 @@ virtual int ReportError(
 ### Example  
  Here is an example of the use of `CException::ReportError`. For another example, see the example for [CATCH](exception-processing.md#catch).  
   
-```cpp
+```cpp  
 CFile fileInput;
 CFileException ex;
 

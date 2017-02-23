@@ -27,7 +27,6 @@ f1_keywords:
   - "_tzset"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_tzset function"
   - "time environment variables"

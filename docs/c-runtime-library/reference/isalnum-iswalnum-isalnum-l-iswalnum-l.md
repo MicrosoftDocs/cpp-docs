@@ -35,7 +35,6 @@ f1_keywords:
   - "_istalnum"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_istalnum function"
   - "_ismbcalnum_l function"

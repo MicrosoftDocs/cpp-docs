@@ -30,7 +30,6 @@ f1_keywords:
   - "_cputws"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "strings [C++], writing"
   - "_cputs function"

@@ -27,7 +27,6 @@ f1_keywords:
   - "__security_init_cookie"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "security cookie [C++]"
   - "__security_init_cookie function"

@@ -26,7 +26,6 @@ f1_keywords:
   - "getw"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "getw function"
 ms.assetid: d3c347a4-3ff1-403b-8d02-2dd3b429bb5f

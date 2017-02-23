@@ -34,7 +34,6 @@ f1_keywords:
   - "complex/catanhf"
   - "complex/catanhl"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "catanh function"

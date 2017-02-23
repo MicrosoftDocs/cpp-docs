@@ -27,7 +27,6 @@ f1_keywords:
   - "_expand_dbg"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "memory blocks, changing size"
   - "expand_dbg function"

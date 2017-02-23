@@ -27,7 +27,6 @@ f1_keywords:
   - "_read"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "data [CRT]"
   - "_read function"

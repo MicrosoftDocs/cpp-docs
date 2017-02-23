@@ -118,7 +118,7 @@ long double remquol(
   
 ## Example  
   
-```c  
+```C  
 // crt_remquo.c  
 // This program displays a floating-point remainder.  
   
