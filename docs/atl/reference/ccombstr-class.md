@@ -279,7 +279,7 @@ CComBSTR(int nSize, LPCOLESTR sz);
 CComBSTR(int nSize, LPCSTR sz);  
 CComBSTR(LPCOLESTR pSrc);  
 CComBSTR(LPCSTR pSrc);  
-CComBSTR(CComBSTR&& src);
+CComBSTR(CComBSTR&& src) throw(); // (Visual Studio 2017)
 ```  
   
 ### Parameters  
@@ -533,12 +533,13 @@ bool operator<(LPCSTR pszSrc) const throw();
  The comparison is performed using the user's default locale.  
   
 ##  <a name="operator_eq"></a>  CComBSTR::operator =  
- Sets the [m_str](#m_str) member to a copy of `pSrc` or to a copy of the `BSTR` member of *src*.  
+ Sets the [m_str](#m_str) member to a copy of `pSrc` or to a copy of the `BSTR` member of *src*. The move assignment operator moves `src` without copying it.   
   
 ```
 CComBSTR& operator= (const CComBSTR& src);  
 CComBSTR& operator= (LPCOLESTR pSrc);  
 CComBSTR& operator= (LPCSTR pSrc);
+CComBSTR& operator= (CComBSTR&& src) throw(); // (Visual Studio 2017)
 ```  
   
 ### Remarks  
