@@ -39,6 +39,7 @@ These macros define connection point maps and entries.
 |-|-|  
 |[BEGIN_CONNECTION_POINT_MAP](#begin_connection_point_map)|Marks the beginning of the connection point map entries.|  
 |[CONNECTION_POINT_ENTRY](#connection_point_entry)|Enters connection points into the map.|  
+|[CONNECTION_POINT_ENTRY_P](#connection_point_entry)| (Visual Studio 2017) Similar to CONNECTION_POINT_ENTRY but takes a pointer to iid.|
 |[END_CONNECTION_POINT_MAP](#end_connection_point_map)|Marks the end of the connection point map entries.|  
 
 ## Requirements  
@@ -63,16 +64,20 @@ BEGIN_CONNECTION_POINT_MAP(x)
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#101](../../atl/codesnippet/cpp/connection-point-macros_1.h)]  
   
-##  <a name="connection_point_entry"></a>  CONNECTION_POINT_ENTRY  
+##  <a name="connection_point_entry"></a>  CONNECTION_POINT_ENTRY and CONNECTION_POINT_ENTRY_P  
  Enters a connection point for the specified interface into the connection point map so that it can be accessed.  
   
 ```
 CONNECTION_POINT_ENTRY(iid)
+CONNECTION_POINT_ENTRY_P(piid) // (Visual Studio 2017)
 ```  
   
 ### Parameters  
  `iid`  
- [in] The GUID of the interface being added to the connection point map.  
+ [in] The GUID of the interface being added to the connection point map. 
+ 
+ `piid`  
+ [in] Pointer to the GUID of the interface being adde.   
   
 ### Remarks  
  Connection point entries in the map are used by [IConnectionPointContainerImpl](../../atl/reference/iconnectionpointcontainerimpl-class.md). The class containing the connection point map must inherit from `IConnectionPointContainerImpl`.  

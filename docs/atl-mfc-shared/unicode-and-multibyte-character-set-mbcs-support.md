@@ -86,13 +86,7 @@ Some languages, for example, Japanese and Chinese, have large character sets. To
   
 ##  <a name="_core_mfc_support_for_mbcs_strings"></a> MFC Support for MBCS Strings  
   
-> [!WARNING]
->  MBCS strings are legacy technology and should not be used in new projects. The following information is provided for scenarios in which you need to maintain existing code that uses MBCS and it is not feasible to upgrade the code to use Unicode.  
-  
  The class library is also enabled for multibyte character sets, but only for double-byte character sets (DBCS).  
-  
-> [!IMPORTANT]
->  In [!INCLUDE[vs_dev12](../atl-mfc-shared/includes/vs_dev12_md.md)] and later, the MBCS versions of the MFC DLLs are available as a free add-in to Visual Studio from the MSDN download site. For more information, see [MFC MBCS DLL Add-in](../mfc/mfc-mbcs-dll-add-on.md).  
   
  In a multibyte character set, a character can be one or two bytes wide. If it is two bytes wide, its first byte is a special "lead byte" that is chosen from a particular range, depending on which code page is in use. Taken together, the lead and "trail bytes" specify a unique character encoding.  
   
