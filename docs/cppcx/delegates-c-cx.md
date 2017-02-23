@@ -16,15 +16,17 @@ manager: "ghogen"
 # Delegates (C++-CX)
 The `delegate` keyword is used to declare a reference type that is the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] equivalent of a function object in standard C++. A delegate declaration similar to a function signature; it specifies the return type and parameter types that its wrapped function must have. This is a user-defined delegate declaration:  
   
- [!CODE [cpp_winrtcomp#02](cpp_winrtcomp#02)]  
+```cpp  
+     public delegate void PrimeFoundHandler(int result);  
+```  
   
  Delegates are most commonly used in conjunction with events. An event has a delegate type, in much the same way that a class can have an interface type. The delegate represents a contract that event handlers much fulfill. Here’s an event class member whose type is the previously-defined delegate:  
   
-```  
+```cpp  
 event PrimeFoundHandler^ primeFoundEvent;  
 ```  
   
- When declaring delegates that will be exposed to clients across the Windows Runtime application binary interface, use [Windows::Foundation::TypedEventHandler\<TSender, TResult>](http://msdn.microsoft.com/%20library/windows/apps/br225997.aspx). This delegate has predefined proxy and stub binaries that enable it to be consumed by Javascript clients.  
+ When declaring delegates that will be exposed to clients across the Windows Runtime application binary interface, use [Windows::Foundation::TypedEventHandler\<TSender, TResult>](http://msdn.microsoft.com/library/windows/apps/br225997.aspx). This delegate has predefined proxy and stub binaries that enable it to be consumed by Javascript clients.  
   
 ## Consuming delegates  
  When you create a [!INCLUDE[win8_appname_long](../cppcx/includes/win8-appname-long-md.md)] app, you often work with a delegate as the type of an event that a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] class exposes. To subscribe to an event, create an instance of its delegate type by specifying a function—or lambda—that matches the delegate signature. Then use the `+=` operator to pass the delegate object to the event member on the class. This is known as subscribing to the event. When the class instance "fires" the event, your function is called, along with any other handlers that were added by your object or other objects.  
