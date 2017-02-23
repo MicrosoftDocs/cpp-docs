@@ -30,7 +30,7 @@ public ref class AccessDeniedException : COMException,    IException,    IPrinta
 ```  
   
 ## Remarks  
- If you hit this exception, ensure that you have requested the appropriate capability and made the required declarations in the package manifest of your app. For more information, see [Configure a Windows 8.1 app package by using the manifest designer](../Topic/Configure%20a%20Windows%208.1%20app%20package%20by%20using%20the%20manifest%20designer.md) and the [COMException](../cppcx/platform-comexception-class.md) class.  
+ If you hit this exception, ensure that you have requested the appropriate capability and made the required declarations in the package manifest of your app. For more information, see [COMException](../cppcx/platform-comexception-class.md) class.  
   
 ## Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  

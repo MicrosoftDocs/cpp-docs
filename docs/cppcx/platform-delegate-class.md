@@ -32,7 +32,7 @@ public delegate void delegate_name();
  The Delegate class has the Equals(), GetHashCode(), and ToString() methods derived from the [Platform::Object Class](../cppcx/platform-object-class.md).  
   
 ## Remarks  
- Use the [delegate](../Topic/delegate%20%20\(C++%20Component%20Extensions\).md) keyword to create delegates; do not use Platform::Delegate explicitly. For more information, see [Delegates](../cppcx/delegates-c-cx.md). For an example of how to create and consume a delegate, see [Creating Windows Runtime Components in C++](../Topic/Creating%20Windows%20Runtime%20Components%20in%20C++.md).  
+ Use the [delegate](../Topic/delegate%20%20\(C++%20Component%20Extensions\).md) keyword to create delegates; do not use Platform::Delegate explicitly. For more information, see [Delegates](../cppcx/delegates-c-cx.md). For an example of how to create and consume a delegate, see [Creating Windows Runtime Components in C++](/MicrosoftDocs/windows-uwp/blob/docs/windows-apps-src/winrt-components/creating-windows-runtime-components-in-cpp.md).  
   
 ## Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  

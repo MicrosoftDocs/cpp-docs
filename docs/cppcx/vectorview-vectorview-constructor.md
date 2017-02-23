@@ -102,7 +102,7 @@ VectorView(
  A [Platform::Array](../cppcx/platform-array-class.md) object that is used to initialize the current VectorView.  
   
  `a`  
- A [std::array](../standard-library/array-class.md) object that is used to initialize the current VectorView.  
+ A [std::array](../standard-library/array-class-stl.md) object that is used to initialize the current VectorView.  
   
  `first`  
  The first element in a sequence of objects that are used to initialize the current VectorView. The type of `first` is passed by means of *perfect forwarding*. For more information, see [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).  

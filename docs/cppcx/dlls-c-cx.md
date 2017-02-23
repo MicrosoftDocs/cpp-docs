@@ -19,7 +19,7 @@ You can use Visual Studio to create either a standard Win32 DLL or a [!INCLUDE[w
 ## [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component DLLs  
  In almost all cases, when you want to create a DLL for use in a [!INCLUDE[win8_appname_long](../cppcx/includes/win8-appname-long-md.md)] app, create it as a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component by using the project template of that name. You can create a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component project for DLLs that have public or private [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types. A [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component can be accessed from apps that are written in any [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)]-compatible language. By default, the compiler settings for a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component project use the **/ZW** switch. A .winmd file must have the same name that the root namespace has. For example, a class that's named A.B.C.MyClass can be instantiated only if it's defined in a metadata file that's named A.winmd or A.B.winmd or A.B.C.winmd. The name of the DLL is not required to match the .winmd file name.  
   
- For more information, see [Creating Windows Runtime Components in C++](../Topic/Creating%20Windows%20Runtime%20Components%20in%20C++.md).  
+ For more information, see [Creating Windows Runtime Components in C++](/MicrosoftDocs/windows-uwp/blob/docs/windows-apps-src/winrt-components/creating-windows-runtime-components-in-cpp.md).  
   
 #### To reference a third-party [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component binary in your project  
   

@@ -67,4 +67,4 @@ template <typename T, typename E>
   
 ## See Also  
  [(NOTINBUILD) Platform Namespace](http://msdn.microsoft.com/en-us/f3ce3eab-028c-4204-ba9f-9ab8af17c8c4)   
- [Creating Windows Runtime Components in C++](../Topic/Creating%20Windows%20Runtime%20Components%20in%20C++.md)
+ [Creating Windows Runtime Components in C++](/MicrosoftDocs/windows-uwp/blob/docs/windows-apps-src/winrt-components/creating-windows-runtime-components-in-cpp.md)
