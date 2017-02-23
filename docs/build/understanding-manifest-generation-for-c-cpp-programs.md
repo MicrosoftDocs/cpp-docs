@@ -1,5 +1,5 @@
 ---
-title: "Understanding Manifest Generation for C-C++ Programs | Microsoft Docs"
+title: "Understanding Manifest Generation for C/C++ Programs | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
