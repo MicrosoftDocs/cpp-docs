@@ -96,8 +96,6 @@ typedef void (*_se_translator_function)(unsigned int, struct _EXCEPTION_POINTERS
 |-------------|---------------------|  
 |`_set_se_translator`|\<eh.h>|  
   
- The functionality provided by `_set_se_translator` is not available in code compiled with the [/clr:pure](../../build/reference/clr-common-language-runtime-compilation.md) compiler option.  
-  
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Example  

@@ -44,9 +44,9 @@ Functions that are implemented in unmanaged DLLs can be called from managed code
   
  The following code consists of an unmanaged and a managed module. The unmanaged module is a DLL that defines a function that accepts a structure called ListString that contains a pointer, and a function called TakesListStruct. The managed module is a command-line application that imports the TakesListStruct function and defines a structure called MListStruct that is equivalent to the native ListStruct except that the double* is represented with an <xref:System.IntPtr> instance. Before calling TakesListStruct, the main function allocates and initializes the memory that this field references.  
   
- The managed module is compiled with /clr, but /clr:pure works as well.  
+ The managed module is compiled with /clr, but /clr:pure works as well. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
   
-```  
+```cpp  
 // TraditionalDll6.cpp  
 // compile with: /EHsc /LD  
 #include <stdio.h>  
@@ -76,7 +76,7 @@ void TakesListStruct(ListStruct list) {
 }  
 ```  
   
-```  
+```cpp  
 // EmbeddedPointerMarshalling.cpp  
 // compile with: /clr  
 using namespace System;  

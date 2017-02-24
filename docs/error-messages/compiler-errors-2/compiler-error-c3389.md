@@ -37,6 +37,8 @@ translation.priority.ht:
 # Compiler Error C3389
 __declspec(keyword) cannot be used with /clr:pure or /clr:safe  
   
+ The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
+  
  A [__declspec](../../cpp/declspec.md) modifier used implies a per process state.  [/clr:pure](../../build/reference/clr-common-language-runtime-compilation.md) implies a per [appdomain](../../cpp/appdomain.md) state.  So, declaring a variable with the `keyword`**__declspec** modifier and compiling with **/clr:pure** is not allowed.  
   
  The following sample generates C3389:  

@@ -37,6 +37,8 @@ translation.priority.ht:
 # Compiler Error C2434
 'symbol' : a symbol declared with __declspec(process) cannot be dynamically initialized in /clr:pure mode  
   
+ The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
+  
  It is not possible to dynamically initialize a per-process variable under **/clr:pure**. For more information, see [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) and [process](../../cpp/process.md).  
   
 ## Example  

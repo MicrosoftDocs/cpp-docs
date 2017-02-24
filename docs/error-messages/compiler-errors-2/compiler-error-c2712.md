@@ -52,6 +52,8 @@ cannot use __try in functions that require object unwinding
 ## Example  
  C2712 can also occur if you compile with **/clr:pure** and declare a static array of pointers-to-functions in a `__try` block. A static member requires the compiler to use dynamic initialization under **/clr:pure**, which implies C++ exception handling. However, C++ exception handling is not allowed in a `__try` block.  
   
+ The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
+  
  The following sample generates C2712 and shows how to fix it.  
   
 ```  

@@ -1,5 +1,5 @@
 ---
-title: "How to: Embed a Manifest Inside a C-C++ Application | Microsoft Docs"
+title: "How to: Embed a Manifest Inside a C/C++ Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

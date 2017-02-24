@@ -1,5 +1,5 @@
 ---
-title: "-nologo (Suppress Startup Banner) (C-C++) | Microsoft Docs"
+title: "-nologo (Suppress Startup Banner) (C/C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

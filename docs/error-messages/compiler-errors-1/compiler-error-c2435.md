@@ -37,10 +37,13 @@ translation.priority.ht:
 # Compiler Error C2435
 'var' : dynamic initialization requires managed CRT, cannot compile with /clr:safe  
   
+ The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
+  
  Initialization of global per–application domain variable requires the CRT compiled with `/clr:pure`, which does not produce a verifiable image.  
   
  For more information, see [appdomain](../../cpp/appdomain.md) and [process](../../cpp/process.md).  
   
+## Example  
  The following sample generates C2435:  
   
 ```  
