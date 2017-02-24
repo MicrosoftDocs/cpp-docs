@@ -90,7 +90,7 @@ DECLARE_MESSAGE_MAP( )
 > [!NOTE]
 >  If you declare any member after `DECLARE_MESSAGE_MAP`, you must specify a new access type (**public**, `private`, or `protected`) for them.  
   
- For more information on message maps and the `DECLARE_MESSAGE_MAP` macro, see [Message Handling and Mapping Topics](message-handling-and-mapping.md).  
+ For more information on message maps and the `DECLARE_MESSAGE_MAP` macro, see [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md).  
   
 ### Example  
 ```cpp  
@@ -145,7 +145,7 @@ END_MESSAGE_MAP( )
 ```  
   
 ### Remarks  
- For more information on message maps and the `END_MESSAGE_MAP` macro, see [Message Handling and Mapping Topics](message-handling-and-mapping.md).  
+ For more information on message maps and the `END_MESSAGE_MAP` macro, see [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md).  
   
 ### Requirements  
  **Header:** afxwin.h  
@@ -171,7 +171,7 @@ ON_COMMAND( id, memberFxn )
   
  When a command-target object receives a Windows **WM_COMMAND** message with the specified ID, `ON_COMMAND` will call the member function `memberFxn` to handle the message.  
   
- Use `ON_COMMAND` to map a single command to a member function. Use [ON_COMMAND_RANGE](#on_command_range) to map a range of command ids to one member function. Only one message-map entry can match a given command id. That is, you can't map a command to more than one handler. For more information and examples, see [Message Handling and Mapping Topics](message-handling-and-mapping.md).  
+ Use `ON_COMMAND` to map a single command to a member function. Use [ON_COMMAND_RANGE](#on_command_range) to map a range of command ids to one member function. Only one message-map entry can match a given command id. That is, you can't map a command to more than one handler. For more information and examples, see [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md).  
   
 ### Example  
 ```cpp  
@@ -207,7 +207,7 @@ ON_CONTROL( wNotifyCode, id, memberFxn )
   
  There should be exactly one `ON_CONTROL` macro statement in your message map for every control notification message that must be mapped to a message-handler function.  
   
- For more information and examples, see [Message Handling and Mapping Topics](message-handling-and-mapping.md).  
+ For more information and examples, see [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md).  
   
 ### Requirements  
  **Header:** afxmsg_.h  
@@ -239,7 +239,7 @@ ON_MESSAGE( message, memberFxn )
 > [!NOTE]
 >  In addition to user-defined messages, `ON_MESSAGE` handles less common Windows messages. For more information, see Knowledge Base article [99848: INFO: Use ON_MESSAGE() Macro to Map Less-Common Messages](http://go.microsoft.com/fwlink/?linkId=192022).  
   
- For more information and examples, see [Message Handling and Mapping Topics](message-handling-and-mapping.md) and [User-Defined Handlers](user-defined-handlers.md)  
+ For more information and examples, see [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md) and [User-Defined Handlers](user-defined-handlers.md)  
   
 ### Example  
 ```cpp  
@@ -288,7 +288,7 @@ ON_OLECMD( pguid, olecmdid, id )
 ### Remarks  
  `IOleCommandTarget` allows a container to receive commands that originate in a DocObject's user interface, and allows the container to send the same commands (such as New, Open, SaveAs, and Print on the File menu; and Copy, Paste, Undo, and so forth on the Edit menu) to a DocObject.  
   
- `IOleCommandTarget` is simpler than OLE Automation's `IDispatch`. `IOleCommandTarget` relies entirely on a standard set of commands that rarely have arguments, and no type information is involved (type safety is diminished for command arguments as well). If you do need to dispatch commands with arguments, use [COleServerDoc::OnExecOleCmd](coleserverdoc.md#onexecolecmd.md).  
+ `IOleCommandTarget` is simpler than OLE Automation's `IDispatch`. `IOleCommandTarget` relies entirely on a standard set of commands that rarely have arguments, and no type information is involved (type safety is diminished for command arguments as well). If you do need to dispatch commands with arguments, use [COleServerDoc::OnExecOleCmd](coleserverdoc-class.md#onexecolecmd.md).  
   
  The `IOleCommandTarget` standard menu commands have been implemented by MFC in the following macros:  
   
@@ -414,7 +414,7 @@ ON_REGISTERED_MESSAGE( nMessageVariable, memberFxn )
 ### Remarks  
  This macro indicates which function will handle the registered message.  
   
- For more information and examples, see [Message Handling and Mapping Topics](message-handling-and-mapping.md).  
+ For more information and examples, see [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md).  
   
 ### Example  
 ```cpp  
@@ -496,7 +496,7 @@ ON_UPDATE_COMMAND_UI( id, memberFxn )
 ### Remarks  
  There should be exactly one `ON_UPDATE_COMMAND_UI` macro statement in your message map for every user-interface update command that must be mapped to a message-handler function.  
   
- For more information and examples, see [Message Handling and Mapping Topics](message-handling-and-mapping.md).  
+ For more information and examples, see [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md).  
   
 ### Requirements  
  **Header:** afxole.h  
@@ -526,7 +526,7 @@ ON_COMMAND_RANGE( id1, id2, memberFxn )
 ### Remarks  
  The range of IDs starts with `id1` and ends with `id2`.  
   
- Use `ON_COMMAND_RANGE` to map a range of command IDs to one member function. Use [ON_COMMAND](#on_command) to map a single command to a member function. Only one message-map entry can match a given command ID. That is, you can't map a command to more than one handler. For more information on mapping message ranges, see [Handlers for Message-Map Ranges](handlers-for-message-map-ranges.md).  
+ Use `ON_COMMAND_RANGE` to map a range of command IDs to one member function. Use [ON_COMMAND](#on_command) to map a single command to a member function. Only one message-map entry can match a given command ID. That is, you can't map a command to more than one handler. For more information on mapping message ranges, see [Handlers for Message-Map Ranges](../../mfc/handlers-for-message-map-ranges.md).  
   
  There is no automatic support for message map ranges, so you must place the macro yourself.  
   
@@ -608,7 +608,7 @@ ON_CONTROL_RANGE( wNotifyCode, id1, id2, memberFxn )
   
  There is no automatic support for message map ranges, so you must place the macro yourself.  
   
- For more information on implementing handler functions for a range of control IDs, refer to [Handlers for Message-Map Ranges](handlers-for-message-map-ranges.md).  
+ For more information on implementing handler functions for a range of control IDs, refer to [Handlers for Message-Map Ranges](../../mfc/handlers-for-message-map-ranges.md).  
   
 ### Requirements  
  **Header:** afxmsg_.h  
