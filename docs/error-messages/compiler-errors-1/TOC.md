@@ -1,4 +1,4 @@
-# [C-C++ Build Errors](c-cpp-build-errors.md)
+# [C/C++ Build Errors](c-cpp-build-errors.md)
 # [Compiler Fatal Errors C999 through C1999](compiler-fatal-errors-c999-through-c1999.md)
 ## [Fatal Error C999](fatal-error-c999.md)
 ## [Fatal Error C1001](fatal-error-c1001.md)

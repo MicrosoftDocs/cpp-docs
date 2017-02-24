@@ -38,6 +38,8 @@ translation.priority.mt:
 # Compiler Warning C4936
 this __declspec is supported only when compiled with /clr or /clr:pure  
   
+ The **/clr:pure** compiler option is deprecated in Visual Studio 2015.  
+  
  A `__declspec` modifier was used but that `__declspec` modifier is only valid when compiled with one of the [/clr](../../build/reference/clr-common-language-runtime-compilation.md) options.  
   
  For more information, see [appdomain](../../cpp/appdomain.md) and [process](../../cpp/process.md).  

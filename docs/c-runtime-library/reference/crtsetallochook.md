@@ -93,7 +93,7 @@ lineNumber);
  For more information about how `_CrtSetAllocHook` can be used with other memory management functions or how to write your own client-defined hook functions, see [Debug Hook Function Writing](/visualstudio/debugger/debug-hook-function-writing).  
   
 > [!NOTE]
->  `_CrtSetAllocHook` is not supported under `/clr:pure`.  
+>  `_CrtSetAllocHook` is not supported under `/clr:pure`. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
   
 ## Requirements  
   

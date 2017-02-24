@@ -86,9 +86,8 @@ You can use Visual C++ in the Visual Studio integrated development environment (
      If you used the sample program, a command window is displayed and shows whether certain integers are found in the set.  
   
 ## Next Steps  
- **Previous:** [Creating Command-Line Applications (C++)](http://msdn.microsoft.com/en-us/2505d9ed-aca4-426a-9071-078a2d707254). **Next:**[Walkthrough: Compiling a Native C++ Program on the Command Line](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md).  
+ **Previous:** [Console Applications in Visual C++](../windows/console-applications-in-visual-cpp.md). **Next:**[Walkthrough: Compiling a Native C++ Program on the Command Line](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md).  
   
 ## See Also  
- [Visual C++ Guided Tour](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)   
  [C++ Language Reference](../cpp/cpp-language-reference.md)   
  [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

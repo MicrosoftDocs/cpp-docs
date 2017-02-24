@@ -122,7 +122,7 @@ _controlfp_s(&current_word, _DN_FLUSH, _MCW_DN);
   
  If the mask is not set correctly, this function generates an invalid parameter exception, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns `EINVAL` and sets `errno` to `EINVAL`.  
   
- This function is ignored when you use [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) or **/clr:pure** to compile because the common language runtime (CLR) only supports the default floating-point precision.  
+ This function is ignored when you use [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) to compile because the common language runtime (CLR) only supports the default floating-point precision.  
   
  **Hexadecimal Values**  
   

@@ -42,7 +42,7 @@ translation.priority.ht:
 ```  
   
 ## Remarks  
- The linker accepts native objects and also MSIL objects that are compiled by using [/clr](../../build/reference/clr-common-language-runtime-compilation.md), /clr:pure, or /clr:safe. When mixed objects in the same build are passed, the verifiability of the resulting output file is, by default, equal to the lowest level of verifiability of the input modules. For example, if you pass both a safe and a pure module to the linker, the output file will be pure. If you pass a native image and a mixed mode image (compiled by using **/clr**), the resulting image will be a mixed mode image.  
+ The linker accepts native objects and also MSIL objects that are compiled by using [/clr](../../build/reference/clr-common-language-runtime-compilation.md), /clr:pure, or /clr:safe. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015. When mixed objects in the same build are passed, the verifiability of the resulting output file is, by default, equal to the lowest level of verifiability of the input modules. For example, if you pass both a safe and a pure module to the linker, the output file will be pure. If you pass a native image and a mixed mode image (compiled by using **/clr**), the resulting image will be a mixed mode image.  
   
  You can use /CLRIMAGETYPE to specify a lower level of verifiability, if that is what you need.  
   

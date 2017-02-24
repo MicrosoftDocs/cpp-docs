@@ -39,6 +39,8 @@ translation.priority.ht:
   
  A type that derived from <xref:System.Runtime.InteropServices.ComImportAttribute> cannot define `member`.  
   
+ The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
+  
 ## Example  
  The following sample generates C3808.  
   
