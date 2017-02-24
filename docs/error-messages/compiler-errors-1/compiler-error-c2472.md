@@ -40,6 +40,8 @@ translation.priority.mt:
   
  This error will occur when types not supported by managed code are used within a pure common language runtime (CLR) environment. Compile with **/clr** to resolve the error.  
   
+ The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
+  
 ## Example  
  The following sample generates C2472.  
   

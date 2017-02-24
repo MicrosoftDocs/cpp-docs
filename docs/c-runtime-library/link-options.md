@@ -61,7 +61,7 @@ translation.priority.mt:
 # Link Options
 The CRT lib directory includes a number of small object files that enable specific CRT features without any code change. These are called "link options" since you just have to add them to the linker command line to use them.  
   
- Pure mode versions have been added. Use the regular versions for native and /clr code, use the pure versions (prefixed with a p) for /clr:pure mode.  
+ Pure mode versions exist but are deprecated in Visual Studio 2015. Use the regular versions for native and /clr code, use the pure versions (prefixed with a p) for /clr:pure mode. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
   
 |Native and /clr|Pure mode|Description|  
 |----------------------|---------------|-----------------|  

@@ -38,6 +38,8 @@ translation.priority.mt:
 # Compiler Error C3268
 'function' : a generic function or a member-function of a generic class cannot have a variable parameter list  
   
+ The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
+  
  See [Generics](../../windows/generics-cpp-component-extensions.md) for more information.  
   
 ## Example  
