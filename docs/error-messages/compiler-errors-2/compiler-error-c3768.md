@@ -37,8 +37,12 @@ translation.priority.ht:
 # Compiler Error C3768
 cannot take the address of a virtual vararg function in pure managed code  
   
+ The **/clr:pure** compiler option is deprecated in Visual Studio 2015.  
+  
  When compiling with `/clr:pure`, you cannot take the address of a virtual `vararg` function.  
   
+## Example  
+
  The following sample generates C3768:  
   
 ```  

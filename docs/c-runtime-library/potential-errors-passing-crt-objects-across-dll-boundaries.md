@@ -42,17 +42,9 @@ When you pass C Run-time (CRT) objects such as file handles, locales, and enviro
  HEAP[]: Invalid Address specified to RtlValidateHeap(#,#)  
   
 ## Causes  
- Each copy of the CRT library has a separate and distinct state. As such, CRT objects such as file handles, environment variables, and locales are only valid for the copy of the CRT where these objects are allocated or set. When a DLL and its users use different copies of the CRT library, you cannot pass these CRT objects across the DLL boundary and expect them to be picked up correctly on the other side.  
+ Each copy of the CRT library has a separate and distinct state, kept in thread local storage by your app or DLL. As such, CRT objects such as file handles, environment variables, and locales are only valid for the copy of the CRT in the app or DLL where these objects are allocated or set. When a DLL and its app clients use different copies of the CRT library, you cannot pass these CRT objects across the DLL boundary and expect them to be picked up correctly on the other side. This is particularly true of CRT versions before the Universal CRT in Visual Studio 2015 and later. There was a version-specific CRT library for every version of Visual Studio built with Visual C++ 2013 or earlier. Internal implementation details of the CRT, for example, its data structures and naming conventions, were different in each version. Dynamically linking code compiled for one version of the CRT to a different version of the CRT DLL has never been supported, though occasionally it would work, more by luck than by design.  
   
- Also, because each copy of the CRT library has its own heap manager, allocating memory in one CRT library and passing the pointer across a DLL boundary to be freed by a different copy of the CRT library is a potential cause for heap corruption.  
-  
- If you design your DLL so that it passes CRT objects across the boundary or allocates memory and expects it to be freed outside the DLL, you restrict the DLL users to use the same copy of the CRT library as the DLL. The DLL and its users use the same copy of the CRT library only if both are linked with the same version of the CRT DLL. This could be a problem if you mix applications built with Visual C++ 5.0 with DLLs that are built by Visual C++ 4.1 or earlier. Because the DLL version of the CRT library used by Visual C++ 4.1 is msvcrt40.dll and the one used by Visual 5.0 is msvcrt.dll, you cannot build your application to use the same copy of the CRT library as these DLLs.  
-  
- However, there is an exception. In US English version and some other localized versions of Windows 2000, such as German, French, and Czech, a forwarder version of the msvcrt40.dll (version 4.20) is shipped. As a result, even though the DLL is linked with msvcrt40.dll and its user is linked with msvcrt.dll, you are still using the same copy of the CRT library because all calls made to msvcrt40.dll are forwarded to msvcrt.dll.  
-  
- However this forwarder version of msvcrt40.dll is not available in some localized versions of Windows 2000, such as Japanese, Korean, and Chinese. So, if your application targets these operating systems, you need to either obtain an upgraded version of the DLL that doesn't rely on msvcrt40.dll or alter your application to not rely on using the same copy of the CRT libraries. If you have developed the DLL, this means rebuilding it with Visual C++ 4.2 or later. If it is a third- party DLL, you need to contact your vendor for an upgrade.  
-  
- Please note that this forwarder DLL version of msvcrt40.dll (version 4.20) cannot be redistributed.  
+ Also, because each copy of the CRT library has its own heap manager, allocating memory in one CRT library and passing the pointer across a DLL boundary to be freed by a different copy of the CRT library is a potential cause for heap corruption. If you design your DLL so that it passes CRT objects across the boundary or allocates memory and expects it to be freed outside the DLL, you restrict the app clients of the DLL to use the same copy of the CRT library as the DLL. The DLL and its clients normally use the same copy of the CRT library only if both are linked at load time to the same version of the CRT DLL. Because the DLL version of the Universal CRT library used by Visual Studio 2015 and later on Windows 10 is now a centrally deployed Windows component, ucrtbase.dll, it is the same for apps built with Visual Studio 2015 and later versions. However, even when the CRT code is identical, you can't hand off memory allocated in one heap to a component that uses a different heap.  
   
 ## Example  
   
@@ -63,11 +55,9 @@ When you pass C Run-time (CRT) objects such as file handles, locales, and enviro
   
  If you rebuild with /MT so that they use separate copies of the CRT, running the resulting test1Main.exe results in an access violation.  
   
-### Code  
-  
-```  
+```cpp  
 // test1Dll.cpp  
-// compile with: /MD /LD  
+// compile with: cl /EHsc /W4 /MD /LD test1Dll.cpp  
 #include <stdio.h>  
 __declspec(dllexport) void writeFile(FILE *stream)  
 {  
@@ -77,11 +67,9 @@ __declspec(dllexport) void writeFile(FILE *stream)
 }  
 ```  
   
-### Code  
-  
-```  
+```cpp  
 // test1Main.cpp  
-// compile with: /MD test1dll.lib  
+// compile with: cl /EHsc /W4 /MD test1Main.cpp test1Dll.lib  
 #include <stdio.h>  
 #include <process.h>  
 void writeFile(FILE *stream);  
@@ -95,9 +83,7 @@ int main(void)
 }  
 ```  
   
-### Output  
-  
-```  
+```Output  
 this is a string  
 ```  
   
@@ -106,11 +92,9 @@ this is a string
 ### Description  
  This example passes environment variables across a DLL boundary.  
   
-### Code  
-  
-```  
+```cpp  
 // test2Dll.cpp  
-// compile with: /MT /LD  
+// compile with: cl /EHsc /W4 /MT /LD test2Dll.cpp  
 #include <stdio.h>  
 #include <stdlib.h>  
   
@@ -128,13 +112,11 @@ __declspec(dllexport) void readEnv()
       printf( "MYLIB has not been set.\n");  
    free( libvar );  
 }  
-```  
+```   
   
-### Code  
-  
-```  
+```cpp  
 // test2Main.cpp  
-// compile with: /MT /link test2dll.lib  
+// compile with: cl /EHsc /W4 /MT test2Main.cpp test2dll.lib   
 #include <stdlib.h>  
 #include <stdio.h>  
   
@@ -147,9 +129,7 @@ int main( void )
 }  
 ```  
   
-### Output  
-  
-```  
+```Output  
 MYLIB has not been set.  
 ```  
   

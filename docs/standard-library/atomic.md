@@ -88,7 +88,7 @@ Defines classes and template classes to use to create types that support atomic 
 ## Remarks  
   
 > [!NOTE]
->  In code that's compiled by using **/clr** or **/clr:pure**, this header is blocked.  
+>  In code that's compiled by using **/clr**, this header is blocked.  
   
  An atomic operation has two key properties that help you use multiple threads to correctly manipulate an object without using mutex locks.  
   

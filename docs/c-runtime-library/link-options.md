@@ -61,7 +61,7 @@ translation.priority.mt:
 # Link Options
 The CRT lib directory includes a number of small object files that enable specific CRT features without any code change. These are called "link options" since you just have to add them to the linker command line to use them.  
   
- Pure mode versions have been added. Use the regular versions for native and /clr code, use the pure versions (prefixed with a p) for /clr:pure mode.  
+ Pure mode versions exist but are deprecated in Visual Studio 2015. Use the regular versions for native and /clr code, use the pure versions (prefixed with a p) for /clr:pure mode. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
   
 |Native and /clr|Pure mode|Description|  
 |----------------------|---------------|-----------------|  
@@ -77,7 +77,6 @@ The CRT lib directory includes a number of small object files that enable specif
 |noenv.obj|pnoenv.obj|Disables the creation of a cached environment for the CRT.|  
 |nothrownew.obj|pnothrownew.obj|Enables the non-throwing version of new in the CRT. See [new and delete Operators](../cpp/new-and-delete-operators.md).|  
 |setargv.obj|psetargv.obj|Enables command-line argument wildcard expansion. See [Expanding Wildcard Arguments](../c-language/expanding-wildcard-arguments.md).|  
-|smalheap.obj|n/a|Installs a very simple small heap manager.|  
 |threadlocale.obj|pthreadlocale.obj|Enables per-thread locale for all new threads by default.|  
 |wsetargv.obj|pwsetargv.obj|Enables command-line argument wildcard expansion. See [Expanding Wildcard Arguments](../c-language/expanding-wildcard-arguments.md).|  
   
