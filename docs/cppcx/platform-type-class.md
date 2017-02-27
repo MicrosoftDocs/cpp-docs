@@ -2,7 +2,8 @@
 title: "Platform::Type Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
-ms.prod: "windows-client-threshold"
+ms.prod: "windows-client-threshold"  
+ms.technology: ""
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -20,7 +21,7 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Platform::Type Class
-Contains run-time information about a type—specifically, a string name and a typecode. Obtained by calling [Object::GetType Method](../cppcx/object-gettype-method.md) on any object or  or using the [typeid](../Topic/typeid%20%20\(C++%20Component%20Extensions\).md) operator on a class or struct name.  
+Contains run-time information about a type—specifically, a string name and a typecode. Obtained by calling [Object::GetType Method](../cppcx/object-gettype-method.md) on any object or  or using the [typeid](../windows/typeid-cpp-component-extensions.md) operator on a class or struct name.  
   
 ## Syntax  
   

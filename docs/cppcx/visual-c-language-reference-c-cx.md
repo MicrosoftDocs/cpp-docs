@@ -2,7 +2,8 @@
 title: "Visual C++ Language Reference (C++-CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
-ms.prod: "windows-client-threshold"
+ms.prod: "windows-client-threshold"  
+ms.technology: ""
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -14,7 +15,7 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Visual C++ Language Reference (C++/CX)
-[!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] ([!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)]) is a set of extensions to the C++ language that enable the creation of Windows apps and [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components in an idiom that is as close as possible to modern C++. Use [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] to write Windows apps and components in native code that easily interact with Visual C#, Visual Basic, and JavaScript, and other languages that support the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)]. In those rare cases that require direct access to the raw COM interfaces, or non-exceptional code, you can use the [Windows Runtime C++ Template Library (WRL)](../Topic/Windows%20Runtime%20C++%20Template%20Library%20\(WRL\).md).  
+[!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] ([!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)]) is a set of extensions to the C++ language that enable the creation of Windows apps and [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components in an idiom that is as close as possible to modern C++. Use [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] to write Windows apps and components in native code that easily interact with Visual C#, Visual Basic, and JavaScript, and other languages that support the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)]. In those rare cases that require direct access to the raw COM interfaces, or non-exceptional code, you can use the [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).  
   
  The new model represents the next generation of native C++ programming on Windows. By using it, you can create:  
   

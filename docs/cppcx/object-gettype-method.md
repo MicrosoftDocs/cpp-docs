@@ -2,7 +2,8 @@
 title: "Object::GetType Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
-ms.prod: "windows-client-threshold"
+ms.prod: "windows-client-threshold"  
+ms.technology: ""
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -20,13 +21,10 @@ Returns a [Platform::Type](../cppcx/platform-type-class.md) object that describe
   
 ## Syntax  
   
-```vb  
+```cpp  
 Object::GetType()  
 ```  
-  
-```c#  
-  
-```  
+
   
 ## Property Value/Return Value  
  A [Platform::Type](../cppcx/platform-type-class.md) object that describes the runtime type of the object.  
@@ -36,7 +34,7 @@ Object::GetType()
   
  The [Windows::UI::Xaml::Interop::TypeName](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx) class is used in the Windows APIs as a language-independent way of passing type information between Windows components and apps. The T[Platform::Type Class](../cppcx/platform-type-class.md) has operators for converting between `Type` and `TypeName`.  
   
- Use the [typeid](../Topic/typeid%20%20\(C++%20Component%20Extensions\).md) operator to return a `Platform::Type` object for a class name, for example when navigating between XAML pages:  
+ Use the [typeid](../windows/typeid-cpp-component-extensions.md) operator to return a `Platform::Type` object for a class name, for example when navigating between XAML pages:  
   
 ```  
 rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);  

@@ -2,7 +2,8 @@
 title: "Platform::Collections::VectorIterator Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
-ms.prod: "windows-client-threshold"
+ms.prod: "windows-client-threshold"  
+ms.technology: ""
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -27,9 +28,7 @@ Provides a Standard Template Library iterator for objects derived from the [!INC
 ## Syntax  
   
 ```  
-template <  
-   typename T  
->  
+template <typename T>  
 class VectorIterator;  
 ```  
   
@@ -64,7 +63,7 @@ class VectorIterator;
 |[VectorIterator::operator!= Operator](../cppcx/vectoriterator-operator-inequality-operator.md)|Indicates whether the current VectorIterator is not equal to a specified VectorIterator.|  
 |[VectorIterator::operator* Operator](../cppcx/vectoriterator-operator-dereference-operator.md)|Retrieves a reference to the element specified by the current VectorIterator.|  
 |[VectorIterator::operatorOperator](../cppcx/vectoriterator-operatoroperator.md)|Retrieves a reference to the element that is a specified displacement from the current VectorIterator.|  
-|[(DELETE) VectorIterator::operator+ Operator](http://msdn.microsoft.com/en-us/b0b1af2c-e2a8-4876-99dc-7351bfc46ce4)|Returns a VectorIterator that references the element at the specified displacement from the specified VectorIterator.|  
+|[VectorIterator::operator+ Operator](vectoriterator-plus-operator.md)|Returns a VectorIterator that references the element at the specified displacement from the specified VectorIterator.|  
 |[VectorIterator::operator++ Operator](../cppcx/vectoriterator-operator-increment-operator.md)|Increments the current VectorIterator.|  
 |[VectorIterator::operator+= Operator](../cppcx/vectoriterator-operator-plus-assign-operator.md)|Increments the current VectorIterator by the specified displacement.|  
 |[VectorIterator::operator< Operator](../cppcx/vectoriterator-operator-less-than-operator.md)|Indicates whether the current VectorIterator is less than a specified VectorIterator.|  
@@ -84,4 +83,4 @@ class VectorIterator;
  **Namespace:** Platform::Collections  
   
 ## See Also  
- [(NOTINBUILD) Platform Namespace](http://msdn.microsoft.com/en-us/f3ce3eab-028c-4204-ba9f-9ab8af17c8c4)
+ [Platform Namespace](platform-namespace-c-cx.md)

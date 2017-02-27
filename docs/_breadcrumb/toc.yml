@@ -54,6 +54,9 @@
           - name: Reference
             tocHref: /cpp/atl-mfc-shared/reference/
             topicHref: /cpp/atl-mfc/shared/reference/classes-shared-by-atl-and-mfc
+         - name: C++/CX Language Reference
+          tocHref: /cpp/cppcx/
+          topicHref: /cpp/cppcx/visual-c-language-reference-c-cx
       - name: Linux
         tocHref: /cpp/linux/
         topicHref: /cpp/linux/download-install-and-setup-the-linux-development-workload

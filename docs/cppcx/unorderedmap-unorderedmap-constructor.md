@@ -2,7 +2,8 @@
 title: "UnorderedMap::UnorderedMap Constructor | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
-ms.prod: "windows-client-threshold"
+ms.prod: "windows-client-threshold"  
+ms.technology: ""
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -109,7 +110,7 @@ UnorderedMap();
  A reference or [Lvalues and Rvalues](.../cpp/lvalues-and-rvalues-visual-cpp.md) to a [std::unordered_map](../standard-library/unordered-map-class.md) that is used to initialize the current UnorderedMap.  
   
  il  
- A [std::initializer_list](../standard-library/initializer-list-class.md) of [std::pair](../standard-library/pair-struct.md)objects that will be used to initialize the map.  
+ A [std::initializer_list](../standard-library/initializer-list-class.md) of [std::pair](../standard-library/pair-structure.md)objects that will be used to initialize the map.  
   
  `first`  
  The input iterator of the first element in a range of elements used to initialize the current UnorderedMap.  

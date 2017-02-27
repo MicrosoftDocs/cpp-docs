@@ -2,7 +2,8 @@
 title: "IBox::Value Property | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
-ms.prod: "windows-client-threshold"
+ms.prod: "windows-client-threshold"  
+ms.technology: ""
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -26,10 +27,6 @@ Returns the value that was originally stored in this object.
   
 ```cpp  
 property T Value {T get();}  
-```  
-  
-```c#  
-  
 ```  
   
 #### Parameters  

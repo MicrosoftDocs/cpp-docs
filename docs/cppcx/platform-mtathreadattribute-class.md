@@ -2,7 +2,8 @@
 title: "Platform::MTAThreadAttribute Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
-ms.prod: "windows-client-threshold"
+ms.prod: "windows-client-threshold"  
+ms.technology: ""
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -54,4 +55,4 @@ public ref class MTAThreadAttribute sealed : Attribute
  **Namespace:** Platform  
   
 ## See Also  
- [(NOTINBUILD) Platform Namespace](http://msdn.microsoft.com/en-us/f3ce3eab-028c-4204-ba9f-9ab8af17c8c4)
+ [Platform Namespace](platform-namespace-c-cx.md)

@@ -2,7 +2,8 @@
 title: "Windows::Foundation::Collections Namespace (C++-CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
-ms.prod: "windows-client-threshold"
+ms.prod: "windows-client-threshold"  
+ms.technology: ""
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -47,5 +48,3 @@ namespace Windows {
   
  **Namespace:** Windows::Foundation::Collections  
   
-## See Also  
- [Windows::Foundation Namespace](../Topic/Windows::Foundation%20Namespace.md)
