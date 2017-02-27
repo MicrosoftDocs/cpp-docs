@@ -84,7 +84,7 @@ EXPORTS
   
 3.  An [/EXPORT](../../build/reference/export-exports-a-function.md) specification in a LINK command  
   
-4.  A [comment](../../preprocessor/comment-c-cpp.md) directive in the source code, of the form `#pragma comment(linker, "/export:``definition``")`  
+4.  A [comment](../../preprocessor/comment-c-cpp.md) directive in the source code, of the form `#pragma comment(linker, "/export: definition ")`  
   
  All four methods can be used in the same program. When LINK builds a program that contains exports, it also creates an import library, unless an .EXP file is used in the build.  
   

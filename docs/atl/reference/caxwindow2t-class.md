@@ -128,7 +128,7 @@ HWND Create(
 ```  
   
 ### Remarks  
- `CAxWindow2T::Create` calls [CWindow::Create](../../atl/reference/cwindow-class.md#create) with the `LPCTSTR``lpstrWndClass` parameter set to the window class that provides control hosting ( **AtlAxWinLic80**).  
+ `CAxWindow2T::Create` calls [CWindow::Create](../../atl/reference/cwindow-class.md#create) with the `LPCTSTR lpstrWndClass` parameter set to the window class that provides control hosting ( **AtlAxWinLic80**).  
   
  See `CWindow::Create` for a description of the parameters and return value.  
   

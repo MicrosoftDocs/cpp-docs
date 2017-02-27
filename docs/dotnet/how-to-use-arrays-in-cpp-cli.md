@@ -38,9 +38,8 @@ This article describes how to use arrays in [!INCLUDE[cppcli](../build/reference
 ## Single-dimension arrays  
  The following sample shows how to create single-dimension arrays of reference, value, and native pointer types. It also shows how to return a single-dimension array from a function and how to pass a single-dimension array as an argument to a function.  
   
-```  
-  
-      // mcppv2_sdarrays.cpp  
+```cpp  
+// mcppv2_sdarrays.cpp  
 // compile with: /clr  
 using namespace System;  
   
@@ -151,8 +150,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 MyClass0[0] = 0  
 MyClass0[1] = 1  
@@ -175,7 +172,7 @@ MyStruct1[1] = 41
   
  The next sample shows how to perform aggregate initialization on single-dimension managed arrays.  
   
-```  
+```cpp  
 // mcppv2_sdarrays_aggregate_init.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -212,10 +209,7 @@ int main() {
    array<N*>^ native1 = gcnew array<N*>{new N(0), new N(1), new N(2)};  
    array<N*>^ native2 = {new N(0), new N(1), new N(2)};  
 }  
-  
 ```  
-  
- **Output**  
   
 ```Output  
 MyClass0[0, 0] = 0  
@@ -231,7 +225,7 @@ IntArray[1, 1] = 11
   
  This example shows how to perform aggregate initialization on a multi-dimension managed array:  
   
-```  
+```cpp  
 // mcppv2_mdarrays_aggregate_initialization.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -276,7 +270,7 @@ int main() {
 ## Jagged arrays  
  This section shows how to create single-dimension arrays of managed arrays of reference, value, and native pointer types. It also shows how to return a single-dimension array of managed arrays from a function and how to pass a single-dimension array as an argument to a function.  
   
-```  
+```cpp  
 // mcppv2_array_of_arrays.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -354,10 +348,7 @@ int main() {
    for (i = 0 ; i < ARRAY_SIZE ; i++)  
       Console::WriteLine(MyStruct1[i].m_i);  
 }  
-  
 ```  
-  
- **Output**  
   
 ```Output  
 MyClass0[0] = 0  
@@ -376,7 +367,7 @@ IntArray[1] = 11
   
  The following sample shows how to perform aggregate initialization with jagged arrays.  
   
-```  
+```cpp  
 // mcppv2_array_of_arrays_aggregate_init.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -461,10 +452,7 @@ int main() {
       Console::WriteLine();  
    }  
 }  
-  
 ```  
-  
- **Output**  
   
 ```Output  
 MyClass0[0] = 0  
@@ -485,7 +473,7 @@ MyClass0[1] = 1
 ## Managed arrays as template type parameters  
  This example shows how to use a managed array as a parameter to a template:  
   
-```  
+```cpp  
 // mcppv2_template_type_params.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -505,10 +493,7 @@ int main() {
    retval += larr->Length - 10;  
    Console::WriteLine("Return Code: {0}", retval);  
 }  
-  
 ```  
-  
- **Output**  
   
 ```Output  
 Return Code: 0  
@@ -517,7 +502,7 @@ Return Code: 0
 ## typedefs for managed arrays  
  This example shows how to make a typedef for a managed array:  
   
-```  
+```cpp  
 // mcppv2_typedef_arrays.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -528,7 +513,6 @@ typedef array<array<G^>^> jagged_array;
 int main() {  
    jagged_array ^ MyArr = gcnew jagged_array (10);  
 }  
-  
 ```  
   
 ## Sorting arrays  
@@ -536,7 +520,7 @@ int main() {
   
  For arrays that contain basic intrinsic types, you can call the `Sort` method. You can override the sort criteria, and doing so is required when you want to sort for arrays of complex types. In this case, the array element type must implement the [IComparable::CompareTo](https://msdn.microsoft.com/en-us/library/system.icomparable.compareto.aspx) method.  
   
-```  
+```cpp  
 // array_sort.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -547,7 +531,6 @@ int main() {
    for (int i=0; i < a->Length; i++)  
       Console::Write("{0} ", a[i] );  
 }  
-  
 ```  
   
 ## Sorting arrays by using custom criteria  
@@ -555,7 +538,7 @@ int main() {
   
  In the following example, a structure named `Element` is derived from <xref:System.IComparable>, and written to provide a <xref:System.IComparable.CompareTo%2A> method that uses the average of two integers as the sort criterion.  
   
-```  
+```cpp  
 using namespace System;  
   
 value struct Element : public IComparable {  
@@ -600,7 +583,7 @@ int main() {
 ## Array covariance  
  Given reference class D that has direct or indirect base class B, an array of type D can be assigned to an array variable of type B.  
   
-```  
+```cpp  
 // clr_array_covariance.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -615,7 +598,7 @@ int main() {
   
  Array covariance doesn't apply to arrays of value class type. For example, arrays of Int32 cannot be converted to Object^ arrays, not even by using boxing.  
   
-```  
+```cpp  
 // clr_array_covariance2.cpp  
 // compile with: /clr  
 using namespace System;  
