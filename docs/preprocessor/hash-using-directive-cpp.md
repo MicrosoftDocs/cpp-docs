@@ -65,7 +65,7 @@ Imports metadata into a program compiled with [/clr](../build/reference/clr-comm
   
  An alternative to use `#using` is the [/FU](../build/reference/fu-name-forced-hash-using-file.md) compiler option.  
   
- .exe assemblies passed to `#using` should be compiled with **/clr:safe** or **/clr:pure**, or with any of the other Visual Studio compilers (Visual Basic or Visual C#, for example).  Attempting to import metadata from an .exe assembly compiled with **/clr** will result in a file load exception.  
+ .exe assemblies passed to `#using` should be compiled by using one of the .NET Visual Studio compilers (Visual Basic or Visual C#, for example).  Attempting to import metadata from an .exe assembly compiled with **/clr** will result in a file load exception.  
   
 > [!NOTE]
 >  A component that is referenced with `#using` can be run with a different version of the file imported at compile time, causing a client application to give unexpected results.  

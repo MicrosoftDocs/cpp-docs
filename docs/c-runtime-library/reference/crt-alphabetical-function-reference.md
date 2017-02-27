@@ -828,11 +828,11 @@ The C Run-Time (CRT) Library reference documentation is arranged alphabetically 
   
  [fmaxl](../../c-runtime-library/reference/fmax-fmaxf-fmaxl.md)  
   
- [fmin](../../c-runtime-library/reference/fmin-fminf-fminl2.md)  
+ [fmin](../../c-runtime-library/reference/fmin-fminf-fminl.md)  
   
- [fminf](../../c-runtime-library/reference/fmin-fminf-fminl2.md)  
+ [fminf](../../c-runtime-library/reference/fmin-fminf-fminl.md)  
   
- [fminl](../../c-runtime-library/reference/fmin-fminf-fminl2.md)  
+ [fminl](../../c-runtime-library/reference/fmin-fminf-fminl.md)  
   
  [fmod](../../c-runtime-library/reference/fmod-fmodf.md)  
   

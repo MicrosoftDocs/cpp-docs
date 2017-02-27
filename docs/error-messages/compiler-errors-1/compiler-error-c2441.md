@@ -37,6 +37,8 @@ translation.priority.ht:
 # Compiler Error C2441
 'variable' : a symbol declared with __declspec(process) must be const in /clr:pure mode  
   
+ The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
+  
  By default, variables are per application domain under **/clr:pure**. A variable marked `__declspec(process)` under **/clr:pure** is prone to errors if modified in one application domain and read in another.  
   
  Therefore, the compiler enforces per process variables be `const` under **/clr:pure**, making them read only in all application domains.  

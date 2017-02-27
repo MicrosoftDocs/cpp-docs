@@ -34,9 +34,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # MASM for x64 (ml64.exe)
-ml64.exe is the assembler that accepts [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] assembly language. For information on ml64.exe compiler options, see [ML and ML64 Command-Line Reference](../../assembler/masm/ml-and-ml64-command-line-reference.md).  
+ml64.exe is the assembler that accepts x64 assembly language. For information on ml64.exe compiler options, see [ML and ML64 Command-Line Reference](../../assembler/masm/ml-and-ml64-command-line-reference.md).  
   
- Inline ASM is not supported for [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)]. Use MASM or compiler intrinsics ([x64 Intrinsics](http://msdn.microsoft.com/en-us/5d1f5d3e-156e-4ebf-932e-fd09be7ced62)).  
+ Inline ASM is not supported for x64. Use MASM or compiler intrinsics ([x64 (amd64) Intrinsics List](../../intrinsics/x64-amd64-intrinsics-list.md)).  
   
  The two workarounds are separate assembly with MASM (which supports x64 fully) and compiler intrinsics. We’ve added a lot of intrinsics to allow customers to make use of special-function instructions (e.g. privileged, bit scan/test, interlocked, etc…) in as close to cross-platform a manner as possible.  
   

@@ -72,7 +72,7 @@ These options determine the order in which function arguments are pushed onto th
   
  Functions that take a variable number of arguments must be marked `__cdecl`.  
   
- **/Gd**, **/Gr**, **/Gv** and **/Gz** are not compatible with [/clr:safe](../../build/reference/clr-common-language-runtime-compilation.md) or **/clr:pure**.  
+ **/Gd**, **/Gr**, **/Gv** and **/Gz** are not compatible with [/clr:safe](../../build/reference/clr-common-language-runtime-compilation.md) or **/clr:pure**. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
   
 > [!NOTE]
 >  By default for x86 processors, C++ member functions use [__thiscall](../../cpp/thiscall.md).  

@@ -37,6 +37,8 @@ translation.priority.ht:
 # Compiler Error C2812
 \#import is not supported with /clr:pure and /clr:safe  
   
+ The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
+  
  [#import Directive](../../preprocessor/hash-import-directive-cpp.md) is not supported with **/clr:pure** and **/clr:safe** because `#import` requires the use of native compiler support libraries.  
   
 ## Example  

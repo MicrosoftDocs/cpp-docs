@@ -62,5 +62,7 @@ translation.priority.ht:
   
  You can also programmatically check if an image was built for the common language runtime.  For more information, see [How to: Determine if an Image is Native or CLR](../../dotnet/how-to-determine-if-an-image-is-native-or-clr.md).  
   
+ The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
+  
 ## See Also  
  [DUMPBIN Options](../../build/reference/dumpbin-options.md)

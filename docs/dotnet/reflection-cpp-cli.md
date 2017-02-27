@@ -45,7 +45,7 @@ Reflection allows known data types to be inspected at runtime. Reflection allows
   
  The most common way to access reflection features is through the <xref:System.Object.GetType%2A> method. This method is provided by [System::Object](https://msdn.microsoft.com/en-us/library/system.object.aspx), from which all garbage-collected classes derive.  
   
- Reflection on an .exe built with the Visual C++ compiler is allowed if the .exe is built with the **/clr:pure** or **/clr:safe** compiler options. See [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) for more information.  
+ Reflection on an .exe built with the Visual C++ compiler is only allowed if the .exe is built with the **/clr:pure** or **/clr:safe** compiler options. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015. See [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) for more information.  
   
  Topics in this section:  
   

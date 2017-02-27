@@ -37,6 +37,8 @@ translation.priority.ht:
 # Compiler Error C2393
 'symbol' : per-appdomain symbol cannot be allocated in segment 'segment'  
   
+ The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
+  
  The use of [appdomain](../../cpp/appdomain.md) variables implies that you are compiling with **/clr:pure** or **/clr:safe**, and a safe or pure image cannot contain data segments.  
   
  See [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) for more information.  

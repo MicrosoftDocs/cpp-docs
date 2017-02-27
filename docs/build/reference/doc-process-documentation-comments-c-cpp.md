@@ -1,5 +1,5 @@
 ---
-title: "-doc (Process Documentation Comments) (C-C++) | Microsoft Docs"
+title: "-doc (Process Documentation Comments) (C/C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

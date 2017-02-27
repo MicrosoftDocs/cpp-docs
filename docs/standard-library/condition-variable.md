@@ -45,7 +45,7 @@ Defines the classes [condition_variable](../standard-library/condition-variable-
 ```  
   
 > [!NOTE]
->  In code that is compiled by using **/clr** or **/clr:pure**, this header is blocked.  
+>  In code that is compiled by using **/clr**, this header is blocked.  
   
 ### Remarks  
  Code that waits for a condition variable must also use a `mutex`. A calling thread must lock the `mutex` before it calls the functions that wait for the condition variable. The `mutex` is then locked when the called function returns. The `mutex` is not locked while the thread waits for the condition to become true. So that there are no unpredictable results, each thread that waits for a condition variable must use the same `mutex` object.  

@@ -44,7 +44,7 @@ Include the standard header \<thread> to define the class `thread` and various s
 ## Remarks  
   
 > [!NOTE]
->  In code that is compiled by using **/clr** or **/clr:pure**, this header is blocked.  
+>  In code that is compiled by using **/clr**, this header is blocked.  
   
  The `__STDCPP_THREADS__` macro is defined as a nonzero value to indicate that threads are supported by this header.  
   

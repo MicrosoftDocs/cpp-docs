@@ -42,7 +42,7 @@ translation.priority.mt:
   
  One reason to use `__thiscall` is in classes whose member functions use `__clrcall` by default. In that case, you can use `__thiscall` to make individual member functions callable from native code.  
   
- When compiling with [/clr:pure](../build/reference/clr-common-language-runtime-compilation.md), all functions and function pointers are `__clrcall` unless specified otherwise.  
+ When compiling with [/clr:pure](../build/reference/clr-common-language-runtime-compilation.md), all functions and function pointers are `__clrcall` unless specified otherwise. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
   
  In releases before Visual C++ 2005, the thiscall calling convention could not be explicitly specified in a program, because `thiscall` was not a keyword.  
   

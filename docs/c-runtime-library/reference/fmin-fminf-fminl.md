@@ -1,5 +1,5 @@
 ---
-title: "fmin, fminf, fminl2 | Microsoft Docs"
+title: "fmin, fminf, fminl | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -87,7 +87,6 @@ long double fminl(
    long double x,   
    long double y  
 );  
-  
 ```  
   
 #### Parameters  
@@ -104,7 +103,7 @@ long double fminl(
 |-----------|------------|  
 |`x` is NaN|`y`|  
 |`y` is NaN|`x`|  
-|`x` and `y` are NaN|nan|  
+|`x` and `y` are NaN|NaN|  
   
  The function does not cause [_matherr](../../c-runtime-library/reference/matherr.md) to be invoked, cause any floating-point exceptions, or change the value of `errno`.  
   
@@ -115,9 +114,10 @@ long double fminl(
   
 |Routine|Required header|  
 |-------------|---------------------|  
-|`fmin`,                `fminf`,  `fminl`|C: \<math.h><br /><br /> C++: \<math.h> or \<cmath>|  
+|`fmin`, `fminf`, `fminl`|C: \<math.h><br />C++: \<math.h> or \<cmath>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)
+ [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)  
+ [fmax, fmaxf, fmaxl](fmax-fmaxf-fmaxl.md)  
