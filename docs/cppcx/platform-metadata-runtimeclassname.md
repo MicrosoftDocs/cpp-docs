@@ -24,7 +24,7 @@ When applied to a class definition, ensures that a private class returns a valid
   
 ## Syntax  
   
-```vb  
+```cpp  
 [Platform::Metadata::RuntimeClassName] name  
 ```  
   

@@ -53,6 +53,63 @@ public ref class MTAThreadAttribute sealed : Attribute
  **Metadata:** platform.winmd  
   
  **Namespace:** Platform  
+
+
+
+## MTAThreadAttribute Constructor 1
+Initializes a new instance of the MTAThreadAttribute class.  
   
+### Syntax  
+  
+```cpp  
+public:MTAThreadAttribute()  
+```  
+  
+
+
+## MTAThreadAttribute::Equals
+Determines whether the specified object is equal to the current object.  
+  
+### Syntax  
+  
+```cpp  
+public:virtual override bool Equals(  Object^ obj)  
+```  
+  
+## Parameters  
+ obj  
+ The object to compare.  
+  
+### Return Value  
+ `true` if the objects are equal; otherwise, `false`.  
+  
+
+
+## MTAThreadAttribute::GetHashCode
+Returns the hash code for this instance.  
+  
+### Syntax  
+  
+```cpp  
+public:int GetHashCode()  
+```  
+  
+### Return Value  
+ The hash code for this instance.  
+  
+
+
+## MTAThreadAttribute::ToString
+Returns a string that represents the current object.  
+  
+### Syntax  
+  
+```cpp  
+public:String^ ToString()  
+```  
+  
+### Return Value  
+ A string that represents the current object.  
+    
 ## See Also  
  [Platform Namespace](platform-namespace-c-cx.md)

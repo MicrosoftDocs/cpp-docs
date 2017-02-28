@@ -25,13 +25,11 @@ Represents a one-dimensional, modifiable array that can be received and passed a
   
 ## Syntax  
   
-```cpp  
-  
+```cpp    
 template <typename T>  
-    private ref class Array<TArg,1> :   
-         public WriteOnlyArray<TArg, 1>,  
-         public IBoxArray<TArg>  
-  
+private ref class Array<TArg, 1> :   
+    public WriteOnlyArray<TArg, 1>,  
+    public IBoxArray<TArg>   
 ```  
   
 ## Members  
@@ -41,7 +39,7 @@ template <typename T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[Array Constructors](../cppcx/array-constructors.md)|Initializes a one-dimensional, modifiable array of types specified by the class template parameter, *T*.|  
+|[Array Constructors](#ctor)|Initializes a one-dimensional, modifiable array of types specified by the class template parameter, *T*.|  
   
 ### Methods  
  See [Platform::WriteOnlyArray Class](../cppcx/platform-writeonlyarray-class.md).  
@@ -50,7 +48,7 @@ template <typename T>
   
 |||  
 |-|-|  
-|[Array::Value Property](../cppcx/array-value-property.md)|Retrieves a handle to the current array.|  
+|[Array::Value Property](#value)|Retrieves a handle to the current array.|  
   
 ## Remarks  
  The Array class is sealed and cannot be inherited.  
@@ -65,7 +63,59 @@ template <typename T>
   
 ## Requirements  
  Compiler option: **/ZW**  
+
+ 
+## <a name="ctor"></a>  Array Constructors
+Initializes a one-dimensional, modifiable array of types specified by the class template parameter, *T*.  
   
+## Syntax  
+  
+```cpp  
+Array(unsigned int size);  
+Array(T* data, unsigned int size);    
+```  
+  
+#### Parameters  
+ `T`  
+ Class template parameter.  
+  
+ `size`  
+ The number of elements in the array.  
+  
+ `data`  
+ A pointer to an array of data of type `T` that is used to initialize this Array object.  
+  
+## Remarks  
+ For more information about how to create instances of Platform::Array, see [Array and WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md).
+
+## <a name="get"></a>  Array::get Method
+Retrieves a reference to the array element at the specified index location.  
+  
+## Syntax  
+  
+```cpp    
+T& get(unsigned int index)  const;  
+```  
+  
+#### Parameters  
+ `index`  
+ A zero-based index that identifies an element in the array. The minimum index is 0 and the maximum index is the value specified by the `size` parameter in the [Array constructor](#ctor).  
+  
+## Return Value  
+ The array element specified by the `index` parameter.  
+  
+## <a name="value"></a>  Array::Value Property
+Retrieves a handle to the current array.  
+  
+## Syntax  
+  
+```cpp 
+property Array^ Value;  
+```  
+  
+## Return Value  
+ A handle to the current array.  
+
 ## See Also  
  [Platform namespace](../cppcx/platform-namespace-c-cx.md)   
  [Array and WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md)

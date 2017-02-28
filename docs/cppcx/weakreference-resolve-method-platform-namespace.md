@@ -21,7 +21,7 @@ Returns a handle to the original ref class, or `nullptr` if the object no longer
   
 ## Syntax  
   
-```vb  
+```cpp  
   
 template<typename T>  
 T^ Resolve() const  

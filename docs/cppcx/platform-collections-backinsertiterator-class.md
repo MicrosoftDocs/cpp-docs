@@ -45,15 +45,15 @@ class BackInsertIterator : public ::std::iterator< ::std::output_iterator_tag, v
   
 |Name|Description|  
 |----------|-----------------|  
-|[BackInsertIterator::BackInsertIterator Constructor](../cppcx/backinsertiterator-backinsertiterator-constructor.md)|Initializes a new instance of the BackInsertIterator class.|  
+|[BackInsertIterator::BackInsertIterator Constructor](#ctor)|Initializes a new instance of the BackInsertIterator class.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[BackInsertIterator::operator* Operator](../cppcx/backinsertiterator-operator-dereference-operator.md)|Retrieves a reference to the current BackInsertIterator.|  
-|[BackInsertIterator::operator++ Operator](../cppcx/backinsertiterator-operator-increment-operator.md)|Returns a reference to the current BackInsertIterator. The iterator is unmodified.|  
-|[BackInsertIterator::operator= Operator](../cppcx/backinsertiterator-operator-assign-operator.md)|Appends the specified object to the end of the current sequential collection.|  
+|[BackInsertIterator::operator* Operator](#operator-dereference)|Retrieves a reference to the current BackInsertIterator.|  
+|[BackInsertIterator::operator++ Operator](#operator-increment)|Returns a reference to the current BackInsertIterator. The iterator is unmodified.|  
+|[BackInsertIterator::operator= Operator](#operator-assign)|Appends the specified object to the end of the current sequential collection.|  
   
 ## Inheritance Hierarchy  
  `BackInsertIterator`  
@@ -62,6 +62,98 @@ class BackInsertIterator : public ::std::iterator< ::std::output_iterator_tag, v
  **Header:** collection.h  
   
  **Namespace:** Platform::Collections  
+  
+---
+## <a name="ctor"></a>  BackInsertIterator::BackInsertIterator Constructor
+Initializes a new instance of the `BackInsertIterator` class.  
+  
+## Syntax  
+  
+```  
+  
+explicit BackInsertIterator(  
+   Windows::Foundation::Collections::IVector<T>^ v  
+);  
+```  
+  
+#### Parameters  
+ `v`  
+ An IVector\<T> object.  
+  
+## Remarks  
+ A `BackInsertIterator` inserts elements after the last element of the object specified by parameter `v`.  
+  
+
+
+
+
+---
+## <a name="operator-assign"></a>  BackInsertIterator::operator= Operator
+Appends the specified object to the end of the current sequential collection.  
+  
+## Syntax  
+  
+```  
+  
+BackInsertIterator& operator=(  
+   const T& t  
+);  
+```  
+  
+#### Parameters  
+ `t`  
+ The object to append to the current collection.  
+  
+## Return Value  
+ A reference to the current BackInsertIterator.  
+  
+
+
+
+
+---
+## <a name="operator-dereference"></a>  BackInsertIterator::operator* Operator
+Retrieves a reference to the current BackInsertIterator.  
+  
+## Syntax  
+  
+```  
+BackInsertIterator& operator*();  
+```  
+  
+## Return Value  
+ A reference to the current BackInsertIterator.  
+  
+## Remarks  
+ This operator returns a reference to the current BackInsertIterator; not to any element in the current collection.  
+  
+
+
+
+
+---
+## <a name="operator-increment"></a>  BackInsertIterator::operator++ Operator
+Returns a reference to the current BackInsertIterator. The iterator is unmodified.  
+  
+## Syntax  
+  
+```  
+  
+BackInsertIterator& operator++();  
+  
+BackInsertIterator operator++(  
+   int  
+);  
+```  
+  
+## Return Value  
+ A reference to the current BackInsertIterator.  
+  
+## Remarks  
+ By design, the first syntax example pre-increments the current BackInsertIterator, and the second syntax post-increments the current BackInsertIterator. The `int` type in the second syntax indicates a post-increment operation, not an actual integer operand.  
+  
+ However, this operator does not actually modify the BackInsertIterator. Instead, this operator returns a reference to the unmodified, current iterator. This is the same behavior as [operator*](#dereference-operator).  
+  
   
 ## See Also  
  [Platform Namespace](platform-namespace-c-cx.md)

@@ -98,7 +98,7 @@ void FindButton(UIElementCollection^ col)
 ## Collection types  
  Collections fall into four categories: modifiable versions and read-only versions of sequence collections and associative collections. In addition, [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] enhances collections by providing three iterator classes that simplify the accessing of collections. 
   
- Elements of a modifiable collection can be changed, but elements of a read-only collection, which is known as a *view*, can only be read. Elements of a [Platform::Collections::Vector](../cppcx/platform-collections-vector-class.md) or[Platform::Collections::VectorView](../cppcx/platform-collections-vectorview-class.md) collection can be accessed by using an iterator or the collection's [Vector::GetAt Method](../cppcx/vector-getat-method.md) and an index. Elements of an associative collection can be accessed by using the collection's [Map::Lookup Method](../cppcx/map-lookup-method.md) and a key.  
+ Elements of a modifiable collection can be changed, but elements of a read-only collection, which is known as a *view*, can only be read. Elements of a [Platform::Collections::Vector](../cppcx/platform-collections-vector-class.md) or[Platform::Collections::VectorView](../cppcx/platform-collections-vectorview-class.md) collection can be accessed by using an iterator or the collection's [Vector::GetAt Method](../cppcx/platform-collections-vector-class.md#getat) and an index. Elements of an associative collection can be accessed by using the collection's [Map::Lookup Method](../cppcx/platform-collections-map-class.md#lookup) and a key.  
   
  [Platform::Collections::Map Class](../cppcx/platform-collections-map-class.md)  
  A modifiable, associative collection. Map elements are key-value pairs. Looking up a key to retrieve its associated value, and iterating through all key-value pairs, are both supported.  
@@ -109,7 +109,7 @@ void FindButton(UIElementCollection^ col)
  A read-only version of a `Map`.  
   
  [Platform::Collections::Vector Class](../cppcx/platform-collections-vector-class.md)  
- A modifiable sequence collection. `Vector<T>` supports constant-time random access and amortized-constant-time [Append](../cppcx/vector-append-method.md) operations..  
+ A modifiable sequence collection. `Vector<T>` supports constant-time random access and amortized-constant-time [Append](../cppcx/platform-collections-vector-class.md#append) operations..  
   
  [Platform::Collections::VectorView Class](../cppcx/platform-collections-vectorview-class.md)  
  A read-only version of a `Vector`.  

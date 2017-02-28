@@ -25,11 +25,10 @@ Represents an object that has a MashalingBehavior=Standard as an agile object, w
   
 ## Syntax  
   
-```scr  
+```cpp  
   
 template <typename T>  
-    class Agile  
-;  
+class Agile;  
 ```  
   
 #### Parameters  
@@ -47,24 +46,24 @@ template <typename T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[Agile::Agile Constructor](../cppcx/agile-agile-constructor.md)|Initializes a new instance of the Agile class.|  
-|[Agile::~Agile Destructor](../cppcx/agile-tilde-agile-destructor.md)|Destroys the current instance of the Agile class.|  
+|[Agile::Agile Constructor](#ctor)|Initializes a new instance of the Agile class.|  
+|[Agile::~Agile Destructor](#dtor)|Destroys the current instance of the Agile class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[Agile::Get](../cppcx/agile-get-method.md)|Returns a handle to the object that is represented by the current Agile object.|  
-|[Agile::GetAddressOf](../cppcx/agile-getaddressof-method.md)|Reinitializes the current Agile object, and then returns the address of a handle to an object of type `T`.|  
-|[Agile::GetAddressOfForInOut](../cppcx/agile-getaddressofforinout-method.md)|Returns the address of a handle to the object represented by the current Agile object.|  
-|[Agile::Release](../cppcx/agile-release-method.md)|Discards the current Agile object's underlying object and context.|  
+|[Agile::Get](#get)|Returns a handle to the object that is represented by the current Agile object.|  
+|[Agile::GetAddressOf](#getaddressof)|Reinitializes the current Agile object, and then returns the address of a handle to an object of type `T`.|  
+|[Agile::GetAddressOfForInOut](#getaddressofforinout)|Returns the address of a handle to the object represented by the current Agile object.|  
+|[Agile::Release](#release)|Discards the current Agile object's underlying object and context.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[Agile::operator->](../cppcx/agile-operator-arrow-operator.md)|Retrieves a handle to the object represented by the current Agile object.|  
-|[Agile::operator=](../cppcx/agile-operator-assign-operator.md)|Assigns the specified value to the current Agile object.|  
+|[Agile::operator->](#operator-arrow)|Retrieves a handle to the object represented by the current Agile object.|  
+|[Agile::operator=](#operator-assign)|Assigns the specified value to the current Agile object.|  
   
 ## Inheritance Hierarchy  
  `Object`  
@@ -79,6 +78,175 @@ template <typename T>
  **Namespace:** Platform  
   
  **Header:** agile.h  
+
+## <a name="ctor"></a>  Agile::Agile Constructor
+Initializes a new instance of the Agile class.  
   
+## Syntax  
+  
+```cpp  
+  
+ Agile();  
+  
+Agile(T^ object);   
+  
+Agile(const Agile<T>& object);  
+  
+Agile(Agile<T>&& object);  
+  
+```  
+  
+#### Parameters  
+ `T`  
+ A type specified by the template typename parameter.  
+  
+ `object`  
+ In the second version of this constructor, an object used to initialize a new Agile instance. In the third version, the object that is copied to the new Agile instance. In the fourth version, the object that is moved to the new Agile instance.  
+  
+## Remarks  
+ The first version of this constructor is the default constructor. The second version initializes new Agile instance class from the object specified by the `object` parameter. The third version is the copy constructor. The fourth version is the move constructor. This constructor cannot throw exceptions.  
+
+## <a name="dtor"></a>  Agile::~Agile Destructor
+Destroys the current instance of the Agile class.  
+  
+## Syntax  
+  
+```cpp  
+  
+~Agile();  
+```  
+  
+## Remarks  
+ This destructor also releases the object represented by the current Agile object.  
+  
+## <a name="get"></a>   Agile::Get Method
+Returns a handle to the object that is represented by the current Agile object.  
+  
+## Syntax  
+  
+```cpp  
+  
+   T^ Get() const  
+;  
+```  
+  
+## Return Value  
+ A handle to the object that is represented by the current Agile object.  
+  
+ The type of the return value is actually an undisclosed internal type. A convenient way to hold the return value is to assign it to a variable that is declared with the **auto** type deduction keyword. For example, `auto x = myAgileTvariable->Get();`.  
+  
+## <a name="getaddressof"></a>  Agile::GetAddressOf Method
+Reinitializes the current Agile object, and then returns the address of a handle to an object of type `T`.  
+  
+## Syntax  
+  
+```cpp  
+  
+T^* GetAddressOf()   
+throw();  
+```  
+  
+#### Parameters  
+ `T`  
+ A type specified by the template typename parameter.  
+  
+## Return Value  
+ The address of a handle to an object of type `T`.  
+  
+## Remarks  
+ This operation releases the current representation of a object of type `T`, if any; reinitializes the Agile object's data members; acquires the current threading context; and then returns the address of a handle-to-object variable that can represent a non-agile object. To cause an Agile class instance to represent an object, use the assignment operator ([Agile::operator=](../cppcx/agile-operator-assign-operator.md)) to assign the object to the Agile class instance.  
+
+## <a name="getaddressofforinput"></a>  Agile::GetAddressOfForInOut Method
+Returns the address of a handle to the object represented by the current Agile object.  
+  
+## Syntax  
+  
+```cpp  
+  
+T^* GetAddressOfForInOut()  throw();  
+  
+```  
+  
+#### Parameters  
+ `T`  
+ A type specified by the template typename parameter.  
+  
+## Return Value  
+ The address of a handle to the object represented by the current Agile object.  
+  
+## Remarks  
+ This operation acquires the current threading context and then returns the address of a handle to the underlying the object.  
+
+## <a name="release"></a>  Agile::Release Method
+Discards the current Agile object's underlying object and context.  
+  
+## Syntax  
+  
+```cpp  
+  
+void Release() throw();  
+  
+```  
+  
+## Remarks  
+ The current Agile object's underlying object and context are discarded, if they exist, and then the value of the Agile object is set to null.  
+
+## <a name="operator-arrow"></a>  Agile::operator-&gt; Operator
+Retrieves a handle to the object represented by the current Agile object.  
+  
+## Syntax  
+  
+```cpp  
+  
+T^ operator->()   
+const throw();  
+```  
+  
+## Return Value  
+ A handle to the object represented by the current Agile object.  
+  
+ This operator actually returns an undisclosed internal type. A convenient way to hold the return value is to assign it to a variable that is declared with the **auto** type deduction keyword.  
+
+## <a name="operator-assign"></a>  Agile::operator= Operator
+Assigns the specified object to the current Agile object.  
+  
+## Syntax  
+  
+```cpp  
+  
+   Agile<T> operator=(T^ object) throw();  
+  
+   Agile<T> operator=(  
+      const Agile<T>& object  
+) throw();  
+  
+   Agile<T> operator=(  
+      Agile<T>&& object  
+) throw();  
+  
+   T^ operator=(  
+      IUnknown* lp  
+) throw();  
+  
+```  
+  
+#### Parameters  
+ `T`  
+ The type specified by the template typename.  
+  
+ `object`  
+ The object or handle to an object that is copied or moved to the current Agile object.  
+  
+ `lp`  
+ The IUnknown interface pointer of a object.  
+  
+## Return Value  
+ A handle to an object of type `T`  
+  
+## Remarks  
+ The first version of the assignment operator copies a handle to a reference type to the current Agile object. The second version copies a reference to an Agile type to the current Agile object. The third version moves an Agile type to the current Agile object. The fourth version moves a pointer to a COM object to the current Agile object.  
+  
+ The assignment operation automatically persists the context of the current Agile object. 
+       
 ## See Also  
  [Platform Namespace](platform-namespace-c-cx.md)

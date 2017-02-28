@@ -64,7 +64,7 @@ byte* Class1::GetPointerToPixelData(IBuffer^ pixelBuffer, unsigned int *length)
   
     -   Use this XAML to replace the `Grid` element:  
   
-        ```vb  
+        ```cpp  
         <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">  
                 <StackPanel HorizontalAlignment="Left" Margin="176,110,0,0" VerticalAlignment="Top" Width="932">  
                     <Image x:Name="Pic"/>  

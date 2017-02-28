@@ -21,7 +21,7 @@ Represents an unordered *map*, which is a collection of key-value pairs.
   
 ## Syntax  
   
-```scr  
+```cpp  
 template <  
    typename K,  
    typename V,  
@@ -63,27 +63,27 @@ ref class Map sealed;
   
 |Name|Description|  
 |----------|-----------------|  
-|UnorderedMap::UnorderedMap Constructor|Initializes a new instance of the Map class.|  
+|[UnorderedMap::UnorderedMap Constructor](#ctor)|Initializes a new instance of the Map class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[UnorderedMap::Clear Method](../cppcx/unorderedmap-clear-method.md)|Removes all key-value pairs from the current Map object.|  
-|[UnorderedMap::First Method](../cppcx/unorderedmap-first-method.md)|Returns an iterator that specifies the first element in the map.|  
-|[UnorderedMap::GetView Method](../cppcx/unorderedmap-getview-method.md)|Returns a read-only view of the current Map; that is, a Platform::Collections::UnorderedMapView Class.|  
-|[UnorderedMap::HasKey Method](../cppcx/unorderedmap-haskey-method.md)|Determines whether the current Map contains the specified key.|  
-|[UnorderedMap::Insert Method](../cppcx/unorderedmap-insert-method.md)|Adds the specified key-value pair to the current Map object.|  
-|[UnorderedMap::Lookup Method](../cppcx/unorderedmap-lookup-method.md)|Retrieves the element at the specified key in the current Map object.|  
-|[UnorderedMap::Remove Method](../cppcx/unorderedmap-remove-method.md)|Deletes the specified key-value pair from the current Map object.|  
-|[UnorderedMap::Size Method](../cppcx/unorderedmap-size-method.md)|Returns the number of elements in the current Map object.|  
+|[UnorderedMap::Clear Method](#clear)|Removes all key-value pairs from the current Map object.|  
+|[UnorderedMap::First Method](#first)|Returns an iterator that specifies the first element in the map.|  
+|[UnorderedMap::GetView Method](#getview)|Returns a read-only view of the current Map; that is, a Platform::Collections::UnorderedMapView Class.|  
+|[UnorderedMap::HasKey Method](#haskey)|Determines whether the current Map contains the specified key.|  
+|[UnorderedMap::Insert Method](#insert)|Adds the specified key-value pair to the current Map object.|  
+|[UnorderedMap::Lookup Method](#lookup)|Retrieves the element at the specified key in the current Map object.|  
+|[UnorderedMap::Remove Method](#remove)|Deletes the specified key-value pair from the current Map object.|  
+|[UnorderedMap::Size Method](#size)|Returns the number of elements in the current Map object.|  
   
 ### Events  
   
 |||  
 |-|-|  
 |Name|Description|  
-|[Map::MapChanged Event](../cppcx/map-mapchanged-event.md) `event`|Occurs when the Map changes.|  
+|[Map::MapChanged Event](#mapchanged) `event`|Occurs when the Map changes.|  
   
 ## Inheritance Hierarchy  
  `UnorderedMap`  
@@ -92,6 +92,273 @@ ref class Map sealed;
  **Header:** collection.h  
   
  **Namespace:** Platform::Collections  
+
+## <a name="clear"></a>  UnorderedMap::Clear Method
+Removes all key-value pairs from the current UnorderedMap object.  
+  
+### Syntax  
+  
+```cpp  
+  
+virtual void Clear();   
+```  
+  
+
+
+## <a name="first"></a>  UnorderedMap::First Method
+Returns an iterator that specifies the first [Windows::Foundation::Collections::IKeyValuePair\<K,V>](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) element in the unordered map.  
+  
+### Syntax  
+  
+```cpp  
+  
+virtual Windows::Foundation::Collections::IIterator<  
+Windows::Foundation::Collections::IKeyValuePair<K, V>^>^ First();  
+```  
+  
+### Return Value  
+ An iterator that specifies the first element in the map.  
+  
+### Remarks  
+ A convenient way to hold the iterator returned by First() is to assign the return value to a variable that is declared with the **auto** type deduction keyword. For example, `auto x = myUnorderedMap->First();`.  
+  
+
+
+## <a name="getview"></a>  UnorderedMap::GetView Method
+Returns a read-only view of the current UnorderedMap; that is, an [Platform::Collections::UnorderedMapView Class](../cppcx/platform-collections-unorderedmapview-class.md) that implements the [Windows::Foundation::Collections::IMapView::IMapView](http://msdn.microsoft.com/library/windows/apps/br226037.aspx) interface.  
+  
+### Syntax  
+  
+```cpp  
+  
+Windows::Foundation::Collections::IMapView<K, V>^   
+   GetView();  
+```  
+  
+### Return Value  
+ An `UnorderedMapView` object.  
+  
+
+
+## <a name="haskey"></a>  UnorderedMap::HasKey Method
+Determines whether the current UnorderedMap contains the specified key.  
+  
+### Syntax  
+  
+```cpp  
+  
+bool HasKey(  
+   K key  
+);  
+```  
+  
+### Parameters  
+ `key`  
+ The key used to locate the UnorderedMap element. The type of `key` is typename *K*.  
+  
+### Return Value  
+ `true` if the key is found; otherwise, `false`.  
+  
+
+
+## <a name="insert"></a>  UnorderedMap::Insert Method
+Adds the specified key-value pair to the current UnorderedMap object.  
+  
+### Syntax  
+  
+```cpp  
+  
+virtual bool Insert(  
+   K key,   
+   V value  
+);  
+```  
+  
+### Parameters  
+ `key`  
+ The key portion of the key-value pair. The type of `key` is typename *K*.  
+  
+ `value`  
+ The value portion of the key-value pair. The type of `value` is typename *V*.  
+  
+### Return Value  
+ `true` if the key of an existing element in the current Map matches `key` and the value portion of that element is set to `value`. `false` if no existing element in the current Map matches `key` and the `key` and `value` parameters are made into a key-value pair and then added to the current UnorderedMap.  
+  
+
+
+## <a name="lookup"></a>  UnorderedMap::Lookup Method
+Retrieves the value of type V that is associated with the specified key of type K.  
+  
+### Syntax  
+  
+```cpp  
+V Lookup(  
+   K key  
+);  
+```  
+  
+### Parameters  
+ `key`  
+ The key used to locate an element in the UnorderedMap. The type of `key` is typename *K*.  
+  
+### Return Value  
+ The value that is paired with the `key`. The type of the return value is typename *V*.  
+  
+
+
+## <a name="mapchanged"></a>  UnorderedMap::MapChanged
+Raised when an item is inserted into or removed from the map.  
+  
+### Syntax  
+  
+```cpp  
+event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;  
+```  
+  
+## Property Value/Return Value  
+ A [MapChangedEventHandler\<K,V>](http://msdn.microsoft.com/library/windows/apps/br206644.aspx) that contains information about the object that raised the event, and the kind of change that occurred. See also [IMapChangedEventArgs\<K>](http://msdn.microsoft.com/library/windows/apps/br226034.aspx) and [CollectionChange Enumeration](http://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx).  
+  
+## .NET Framework Equivalent  
+ Windows Store apps that us C# or Visual Basic project IMap\<K,V> as IDictionary\<K,V>.  
+  
+
+
+## <a name="remove"></a>  UnorderedMap::Remove Method
+Deletes the specified key-value pair from the UnorderedMap object.  
+  
+### Syntax  
+  
+```cpp  
+  
+virtual void Remove(  
+   K key);  
+```  
+  
+### Parameters  
+ `key`  
+ The key portion of the key-value pair. The type of `key` is typename *K*.  
+  
+
+
+## <a name="size"></a>  UnorderedMap::Size Method
+Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) elements in the UnorderedMap.  
+  
+### Syntax  
+  
+```cpp  
+  
+virtual property unsigned int Size;  
+```  
+  
+### Return Value  
+ The number of elements in the Unordered Map.  
+  
+
+
+## <a name="ctor"></a>  UnorderedMap::UnorderedMap Constructor
+Initializes a new instance of the UnorderedMap class.  
+  
+### Syntax  
+  
+```cpp  
+UnorderedMap();  
+  
+  explicit UnorderedMap(  
+      size_t n  
+      );  
+  
+  UnorderedMap(  
+      size_t n,  
+      const H& h  
+      );  
+  
+  UnorderedMap(  
+      size_t n,  
+      const H& h,  
+      const P& p  
+      );  
+  
+  explicit UnorderedMap(  
+      const std::unordered_map<K, V, H, P>& m  
+      );  
+  
+  explicit UnorderedMap(  
+      std::unordered_map<K, V, H, P>&& m  
+      );  
+  
+  template <typename InIt> UnorderedMap(  
+      InIt first,  
+      InIt last  
+      );  
+  
+  template <typename InIt> UnorderedMap(  
+      InIt first,  
+      InIt last,  
+      size_t n  
+      );  
+  
+  template <typename InIt> UnorderedMap(  
+      InIt first,  
+      InIt last,  
+      size_t n,  
+      const H& h  
+      );  
+  
+  template <typename InIt> UnorderedMap(  
+      InIt first,  
+      InIt last,  
+      size_t n,  
+      const H& h,  
+      const P& p  
+      );  
+  
+  UnorderedMap(std::initializer_list<  
+      std::pair<const K, V>> il  
+      );  
+  
+  UnorderedMap(::std::initializer_list<  
+      std::pair<const K, V>> il,  
+      size_t n  
+      );  
+  
+  UnorderedMap(  
+      ::std::initializer_list< ::std::pair<const K, V>> il,  
+      size_t n,  
+      const H& h  
+      );  
+  
+  UnorderedMap(::std::initializer_list<  
+      ::std::pair<const K, V>> il,  
+      size_t n,  
+      const H& h,  
+      const P& p  
+      );  
+```  
+  
+### Parameters  
+ `InIt`  
+ The typename of the current UnorderedMap.  
+  
+ `P`  
+ A function object that can compare two keys to determine whether they are equal. This parameter defaults to [std::equal_to\<K>](../standard-library/equal-to-struct.md).  
+  
+ `H`  
+ A function object that produces a hash value for a keys. This parameter defaults to [hash Class 1](../standard-library/hash-class.md) for the key types that that class supports.  
+  
+ `m`  
+ A reference or [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) to a [std::unordered_map](../standard-library/unordered-map-class.md) that is used to initialize the current UnorderedMap.  
+  
+ il  
+ A [std::initializer_list](../standard-library/initializer-list-class.md) of [std::pair](../standard-library/pair-structure.md)objects that will be used to initialize the map.  
+  
+ `first`  
+ The input iterator of the first element in a range of elements used to initialize the current UnorderedMap.  
+  
+ `last`  
+ The input iterator of the first element after a range of elements used to initialize the current UnorderedMap.  
+  
+
+
   
 ## See Also  
  [Platform Namespace](platform-namespace-c-cx.md)   

@@ -50,7 +50,7 @@ public ref class String sealed : Object,
   
 |Member|Description|  
 |------------|-----------------|  
-|[String::String Constructor](../cppcx/string-string-constructor.md)|Initializes a new instance of the String class.|  
+|[String::String Constructor](#ctor)|Initializes a new instance of the String class.|  
   
  **Methods**  
   
@@ -58,18 +58,18 @@ public ref class String sealed : Object,
   
 |Method|Description|  
 |------------|-----------------|  
-|[String::Begin Method](../cppcx/string-begin-method.md)|Returns a pointer to the beginning of the current string.|  
-|[String::CompareOrdinal Method](../cppcx/string-compareordinal-method.md)|Compares two `String` objects by evaluating the numeric values of the corresponding characters in the two string values represented by the objects.|  
-|[String::Concat Method](../cppcx/string-concat-method.md)|Concatenates the values of two String objects.|  
-|[String::Data Method](../cppcx/string-data-method.md)|Returns a pointer to the beginning of the current string.|  
-|[String::Dispose Method](../cppcx/string-dispose-method.md)|Frees or releases resources.|  
-|[String::End Method](../cppcx/string-end-method.md)|Returns a pointer past the end of the current string.|  
-|[String::Equals Method](../cppcx/string-equals-method.md)|Indicates whether the specified object is equal to the current object.|  
-|[String::GetHashCode Method](../cppcx/string-gethashcode-method.md)|Returns the hash code for this instance.|  
-|[String::IsEmpty Method](../cppcx/string-isempty-method.md)|Indicates whether the current String object is empty.|  
-|[String::IsFastPass Method](../cppcx/string-isfastpass-method.md)|Indicates whether the current String object is is participating in a *fast pass* operation. In a fast pass operation, reference counting is suspended.|  
-|[String::Length Method](../cppcx/string-length-method.md)|Retrieves the length of the current String object.|  
-|[String::ToString Method](../cppcx/string-tostring-method-c-cx.md)|Returns a String object whose value is the same as the current string.|  
+|[String::Begin Method](#begin)|Returns a pointer to the beginning of the current string.|  
+|[String::CompareOrdinal Method](#compareordinal)|Compares two `String` objects by evaluating the numeric values of the corresponding characters in the two string values represented by the objects.|  
+|[String::Concat Method](#concat)|Concatenates the values of two String objects.|  
+|[String::Data Method](#data)|Returns a pointer to the beginning of the current string.|  
+|[String::Dispose Method](#dispose)|Frees or releases resources.|  
+|[String::End Method](#end)|Returns a pointer past the end of the current string.|  
+|[String::Equals Method](#equals)|Indicates whether the specified object is equal to the current object.|  
+|[String::GetHashCode Method](#gethashcode)|Returns the hash code for this instance.|  
+|[String::IsEmpty Method](#isempty)|Indicates whether the current String object is empty.|  
+|[String::IsFastPass Method](#isfastpass)|Indicates whether the current String object is is participating in a *fast pass* operation. In a fast pass operation, reference counting is suspended.|  
+|[String::Length Method](#length)|Retrieves the length of the current String object.|  
+|[String::ToString Method](#tostring)|Returns a String object whose value is the same as the current string.|  
   
  **Properties**  
   
@@ -77,12 +77,12 @@ public ref class String sealed : Object,
   
 |Member|Description|  
 |------------|-----------------|  
-|[String::operator== Operator](../cppcx/string-operator-equality-operator-c-cx.md)|Indicates whether two specifed String objects have the same value.|  
-|[operator+ Operator](../cppcx/string-operator-decrementoperator.md)|Concatenates two String objects into a new String object.|  
-|[String::operator> Operator](../cppcx/string-operator-greater-than-operator-c-cx.md)|Indicates whether the value of one String object is greater than the value of a second String object.|  
-|[String::operator>= Operator](../cppcx/string-operator-greater-than-or-equals-c-cx.md)|Indicates whether the value of one String object is greater than or equal to the value of a second String object.|  
-|[String::operator!= Operator](../cppcx/string-operator-inequality-operator-c-cx.md)|Indicates whether two specifed String objects have different values.|  
-|[String::operator< Operator](../cppcx/string-operator-less-than-operator-c-cx.md)|Indicates whether the value of one String object is less than the value of a second String object.|  
+|[String::operator== Operator](#operator-equality)|Indicates whether two specifed String objects have the same value.|  
+|[operator+ Operator](#operator-plus)|Concatenates two String objects into a new String object.|  
+|[String::operator> Operator](#operator-greater-than)|Indicates whether the value of one String object is greater than the value of a second String object.|  
+|[String::operator>= Operator](#operator-greater-than-or-equals)|Indicates whether the value of one String object is greater than or equal to the value of a second String object.|  
+|[String::operator!= Operator](#operator-inequality)|Indicates whether two specifed String objects have different values.|  
+|[String::operator< Operator](#operator-less-than)|Indicates whether the value of one String object is less than the value of a second String object.|  
   
 ## Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
@@ -92,6 +92,419 @@ public ref class String sealed : Object,
  **Namespace:** Platform  
   
  **Header** vccorlib.h (included by default)  
+
+ 
+## <a name="begin"></a>  String::Begin Method
+Returns a pointer to the beginning of the current string.  
+  
+### Syntax  
+  
+```cpp  
+  
+char16* Begin()  
+```  
+  
+### Return Value  
+ A pointer to the beginning of the current string.  
+  
+## <a name="compareordinal"></a>  String::CompareOrdinal Method
+Compares two `String` objects by evaluating the numeric values of the corresponding characters in the two string values represented by the objects.  
+  
+### Syntax  
+  
+```cpp  
+  
+int CompareOrdinal(  
+           String^ str1,   
+           String^ str2)  
+  
+```  
+  
+### Parameters  
+ `str1`  
+ The first String object.  
+  
+ `str2`  
+ The second String object.  
+  
+### Return Value  
+ An integer that indicates the lexical relationship between the two comparands. The following table lists the possible return values.  
+  
+|Value|Condition|  
+|-----------|---------------|  
+|-1|`str1` is less than `str2`.|  
+|0|`str1` is equals `str2`.|  
+|1|`str1` is greater than `str2`.|  
+  
+
+
+## <a name="concat"></a>  String::Concat Method
+Concatenates the values of two String objects.  
+  
+### Syntax  
+  
+```cpp  
+  
+String^ Concat( String ^ str1,   
+String ^ str2  
+)  
+  
+```  
+  
+### Parameters  
+ `str1`  
+ The first String object, or `null`.  
+  
+ `str2`  
+ The second String object, or `null`.  
+  
+### Return Value  
+ A new String^ object whose value is the concatenation of the values of `str1` and `str2`.  
+  
+ If `str1` is `null` and `str2` is not, `str1` is returned. If `str2` is `null` and `str1` is not, `str2` is returned. If `str1` and `str2` are both `null`, the empty string (L"") is returned.  
+  
+
+
+## <a name="data"></a>  String::Data Method
+Returns a pointer to the beginning of the object's data buffer as a C-style array of `char16` (`wchar_t`) elements.  
+  
+### Syntax  
+  
+```  
+const char16* Data()  
+```  
+  
+### Return Value  
+ A pointer to the beginning of a `const``char16` array of Unicode characters (`char16` is a typedef for `wchar_t`).  
+  
+### Remarks  
+ Use this method to convert from `Platform::String^` to `wchar_t*`. When the `String` object goes out of scope, the Data pointer is no longer guaranteed to be valid. To store the data beyond the lifetime of the original `String` object, use [wcscpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md) to copy the array into memory that you have allocated yourself.  
+  
+
+
+## <a name="dispose"></a>  String::Dispose Method
+Frees or releases resources.  
+  
+### Syntax  
+  
+```cpp  
+  
+virtual override void Dispose()  
+```  
+
+## <a name="end"></a>  String::End Method
+Returns a pointer past the end of the current string.  
+  
+### Syntax  
+  
+```cpp  
+  
+char16* End()  
+```  
+  
+### Return Value  
+ A pointer to past the end of the current string.  
+  
+### Remarks  
+ End() returns Begin()+Length.  
+  
+
+
+## <a name="equals"></a>  String::Equals Method
+Indicates whether the specified String has the same value as the current object.  
+  
+### Syntax  
+  
+```cpp  
+  
+bool String::Equals(Object^ str);  
+  
+bool String::Equals(String^ str);  
+  
+```  
+  
+### Parameters  
+ `str`  
+ The object to compare.  
+  
+### Return Value  
+ `true` if `str` is equal to the current object; otherwise, `false`.  
+  
+### Remarks  
+ This method is equivalent to the [String::CompareOrdinal Method](#compareordinal). In the first overload, it is expected the `str` parameter can be cast to a String^ object.  
+  
+
+
+## <a name="gethashcode"></a>  String::GetHashCode Method
+Returns the hash code for this instance.  
+  
+### Syntax  
+  
+```cpp  
+  
+virtual override int GetHashCode()  
+```  
+  
+### Return Value  
+ The hash code for this instance.  
+  
+
+
+## <a name="isempty"></a>  String::IsEmpty Method
+Indicates whether the current String object is empty.  
+  
+### Syntax  
+  
+```cpp  
+  
+bool IsEmpty()  
+```  
+  
+### Return Value  
+ `true` if the current String object is `null` or the empty string (L""); otherwise, `false`.  
+  
+
+
+## <a name="isfastpass"></a>  String::IsFastPass Method
+Indicates whether the current String object is is participating in a *fast pass* operation. In a fast pass operation, reference counting is suspended.  
+  
+### Syntax  
+  
+```cpp  
+  
+bool IsFastPass();  
+```  
+  
+### Return Value  
+ `true` if the current String object is fast-past; otherwise, `false`.  
+  
+### Remarks  
+ In a call to a function where a reference-counted object is a parameter, and the called function only reads that object, the compiler can safely suspend reference counting and improve calling performance. There is nothing useful that your code can do with this property. The system handles all the details.  
+  
+
+
+## <a name="length"></a>  String::Length Method
+Retrieves the number of characters in the current String object.  
+  
+### Syntax  
+  
+```cpp  
+  
+unsigned int Length()  
+```  
+  
+### Return Value  
+ The number of characters in the current String object.  
+  
+### Remarks  
+ The length of a String with no characters is zero. The length of the following string is 5:  
+  
+```  
+  
+String^ str = "Hello";  
+int len = str->Length(); //len = 5  
+```  
+  
+ The character array returned by the [String::Data Method](#data) has one additional character, which is the terminating NULL or ‘\0’. This character is also two bytes long.  
+  
+
+
+## <a name="operator-plus"></a>  String::operator+ Operator
+Indicates whether two specifed [String](../cppcx/platform-string-class.md) objects have the same value.  
+  
+### Syntax  
+  
+```cpp  
+  
+bool String::operator+( String^ str1,  
+                         String^ str2)  
+  
+```  
+  
+### Parameters  
+ `str1`  
+ The first `String` object.  
+  
+ `str2`  
+ The second `String` object, whose contents will be appended to `str1`.  
+  
+### Return Value  
+ `true` if `str1` is equal to `str2`; otherwise, `false`.  
+  
+### Remarks  
+ This operator creates a `String^` object that contains the data from the two operands. Use it for convenience when extreme performance is not critical. A few calls to "`+`" in a function will probably not be noticeable, but if you are manipulating large objects or text data in a tight loop, then use the standard C++ mechanisms and types.  
+  
+##  <a name="operator-equality"></a> String::operator== Operator
+Indicates whether two specified String objects have the same text value.  
+  
+### Syntax  
+  
+```cpp  
+  
+bool String::operator==( String^ str1,  
+                         String^ str2)  
+  
+```  
+  
+### Parameters  
+ `str1`  
+ The first String object to compare.  
+  
+ `str2`  
+ The second String object to compare.  
+  
+### Return Value  
+ `true` if the contents of `str1` are equal to `str2`; otherwise, `false`.  
+  
+### Remarks  
+ This operator is equivalent to [String::CompareOrdinal Method](#compareordinal).  
+  
+
+
+##  <a name="operator-greater-than"></a>  String::operator&gt; 
+Indicates whether the value of one String object is greater than the value of a second String object.  
+  
+### Syntax  
+  
+```cpp  
+  
+bool String::operator>( String^ str1,  
+                         String^ str2)  
+  
+```  
+  
+### Parameters  
+ `str1`  
+ The first String object.  
+  
+ `str2`  
+ The second String object.  
+  
+### Return Value  
+ `true` if the value of `str1` is greater than the value of `str2`; otherwise, `false`.  
+  
+### Remarks  
+ This operator is equivalent to explicitly calling [String::CompareOrdinal](#compareordinal) and getting a result greater than zero.  
+  
+
+
+## <a name="operator-greater-than-or-equal"></a> String::operator&gt;= 
+Indicates whether the value of one String object is greater than or equal to the value of a second String object.  
+  
+### Syntax  
+  
+```cpp  
+  
+bool String::operator>=( String^ str1,  
+                         String^ str2)  
+  
+```  
+  
+### Parameters  
+ `str1`  
+ The first String object.  
+  
+ `str2`  
+ The second String object.  
+  
+### Return Value  
+ `true` if the value of `str1` is greater than or equal to the value of `str2`; otherwise, `false`.  
+  
+
+
+## <a name="operator-inequality"></a> String::operator!= 
+Indicates whether two specifed String objects have different values.  
+  
+### Syntax  
+  
+```cpp  
+  
+bool String::operator!=( String^ str1,  
+                         String^ str2)  
+  
+```  
+  
+### Parameters  
+ `str1`  
+ The first String object to compare.  
+  
+ `str2`  
+ The second String object to compare.  
+  
+### Return Value  
+ `true` if `str1` is not equal to `str2`; otherwise, `false`.   
+
+
+## <a name="operator-less-than"></a> String::operator&lt; 
+Indicates whether the value of one String object is less than the value of a second String object.  
+  
+### Syntax  
+  
+```cpp  
+  
+bool String::operator<( String^ str1,  
+                         String^ str2)  
+  
+```  
+  
+### Parameters  
+ `str1`  
+ The first String object.  
+  
+ `str2`  
+ The second String object.  
+  
+### Return Value  
+ `true` if the value of `str1` is less than the value of `str2`; otherwise, `false`.  
+  
+## <a name="ctor"></a> String::String Constructor
+Initializes a new instance of the String class with a copy of the input string data.  
+  
+### Syntax  
+  
+```cpp  
+  
+String();  
+  
+String(  
+  char16* s  
+)  
+  
+String(  
+  char16* s,   
+  unsigned int n  
+)  
+```  
+  
+## Parameters  
+ `s`  
+ A series of wide characters that initialize the string. char16  
+  
+ `n`  
+ A number that specifies the length of the string.  
+  
+### Remarks  
+ If performance is critical and you control the lifetime of the source string, you can use [Platform::StringReference](../cppcx/platform-stringreference-class.md) in place of String.  
+### Example  
+  
+```  
+String^ s = L”Hello!”;  
+```  
+  
+
+
+## <a name="tostring"></a> String::ToString
+Returns a String object whose value is the same as the current string.  
+  
+### Syntax  
+  
+```cpp  
+  
+String^ String::ToString()  
+```  
+  
+### Return Value  
+ A String object whose value is the same as the current string.  
   
 ## See Also  
  [Platform namespace](../cppcx/platform-namespace-c-cx.md)
