@@ -80,7 +80,7 @@ bool Equals(
 
 
 ## <a name="gethashcode"></a>  Object::GetHashCode Method
-Returns the [IUnknown](../Topic/IUnknown.md)* identity value for this instance if it is a COM object, or a computed hash value if it is not a COM object.  
+Returns the `IUnknown`* identity value for this instance if it is a COM object, or a computed hash value if it is not a COM object.  
   
 ### Syntax  
   
@@ -92,7 +92,7 @@ public:int GetHashCode()
  A numeric value that uniquely identifies this object.  
   
 ### Remarks  
- You can use GetHashCode to create keys for objects in maps. You can compare hash codes by using [Object::Equals Method](#equals). If the code path is extremely critical and `GetHashCode` and `Equals` are not sufficiently fast, then you can drop down to the underlying COM layer and do native [IUnknown](../Topic/IUnknown.md) pointer comparisons.  
+ You can use GetHashCode to create keys for objects in maps. You can compare hash codes by using [Object::Equals Method](#equals). If the code path is extremely critical and `GetHashCode` and `Equals` are not sufficiently fast, then you can drop down to the underlying COM layer and do native `IUnknown` pointer comparisons.  
   
 
 
@@ -110,7 +110,7 @@ Object::GetType()
  A [Platform::Type](../cppcx/platform-type-class.md) object that describes the runtime type of the object.  
   
 ### Remarks  
- The static [Type::GetTypeCode Method](../cppcx/type-gettypecode) can be used to get a [Platform::TypeCode Enumeration](../cppcx/platform-typecode-enumeration.md) value that represents the current type. This is mostly useful for built-in types. The type code for any ref class besides [Platform::String](../cppcx/platform-string-class.md) is Object (1).  
+ The static [Type::GetTypeCode Method](../cppcx/platform-type-class.md#gettypecode) can be used to get a [Platform::TypeCode Enumeration](../cppcx/platform-typecode-enumeration.md) value that represents the current type. This is mostly useful for built-in types. The type code for any ref class besides [Platform::String](../cppcx/platform-string-class.md) is Object (1).  
   
  The [Windows::UI::Xaml::Interop::TypeName](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx) class is used in the Windows APIs as a language-independent way of passing type information between Windows components and apps. The T[Platform::Type Class](../cppcx/platform-type-class.md) has operators for converting between `Type` and `TypeName`.  
   

@@ -107,7 +107,7 @@ UnorderedMap();
  A function object that produces a hash value for a keys. This parameter defaults to [hash Class 1](../standard-library/hash-class.md) for the key types that that class supports.  
   
  `m`  
- A reference or [Lvalues and Rvalues](.../cpp/lvalues-and-rvalues-visual-cpp.md) to a [std::unordered_map](../standard-library/unordered-map-class.md) that is used to initialize the current UnorderedMap.  
+ A reference or [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) to a [std::unordered_map](../standard-library/unordered-map-class.md) that is used to initialize the current UnorderedMap.  
   
  il  
  A [std::initializer_list](../standard-library/initializer-list-class.md) of [std::pair](../standard-library/pair-structure.md)objects that will be used to initialize the map.  

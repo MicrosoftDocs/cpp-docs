@@ -78,7 +78,7 @@ public ref class String sealed : Object,
 |Member|Description|  
 |------------|-----------------|  
 |[String::operator== Operator](#operator-equality)|Indicates whether two specifed String objects have the same value.|  
-|[operator+ Operator](#operator-decrement)|Concatenates two String objects into a new String object.|  
+|[operator+ Operator](#operator-plus)|Concatenates two String objects into a new String object.|  
 |[String::operator> Operator](#operator-greater-than)|Indicates whether the value of one String object is greater than the value of a second String object.|  
 |[String::operator>= Operator](#operator-greater-than-or-equals)|Indicates whether the value of one String object is greater than or equal to the value of a second String object.|  
 |[String::operator!= Operator](#operator-inequality)|Indicates whether two specifed String objects have different values.|  
