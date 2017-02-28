@@ -43,7 +43,7 @@ bool String::operator==( String^ str1,
  `true` if the contents of `str1` are equal to `str2`; otherwise, `false`.  
   
 ## Remarks  
- This operator is equivalent to [String::CompareOrdinal Method](../cppcx/string-compareordinal-method.md).  
+ This operator is equivalent to [String::CompareOrdinal Method](../cppcx/string-class.md#compareordinal).  
   
 ## Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  

@@ -43,7 +43,7 @@ bool String::operator>( String^ str1,
  `true` if the value of `str1` is greater than the value of `str2`; otherwise, `false`.  
   
 ## Remarks  
- This operator is equivalent to explicitly calling [String::CompareOrdinal](../cppcx/string-compareordinal-method.md) and getting a result greater than zero.  
+ This operator is equivalent to explicitly calling [String::CompareOrdinal](../cppcx/string-class.md#compareordinal) and getting a result greater than zero.  
   
 ## Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  

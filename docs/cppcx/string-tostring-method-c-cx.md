@@ -44,4 +44,4 @@ String^ String::ToString()
   
 ## See Also  
  [Platform::String Class](../cppcx/platform-string-class.md)   
- [String::Begin Method](../cppcx/string-begin-method.md)
+ [String::Begin Method](../cppcx/string-class.md#begin)
