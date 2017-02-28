@@ -78,9 +78,8 @@ Specifies the kind of exception handling used by the compiler, when to optimize 
   
  Use **/EHa** if you want to catch an exception that's raised by something other than a `throw`. This example generates and catches a structured exception:  
   
-```  
-  
-      // compiler_options_EHA.cpp  
+```cpp  
+// compiler_options_EHA.cpp  
 // compile with: /EHa  
 #include <iostream>  
 #include <excpt.h>  

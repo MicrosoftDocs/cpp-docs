@@ -84,9 +84,9 @@ lldiv_t div(
  `div` called by using arguments of type `int` returns a structure of type `div_t`, which comprises the quotient and the remainder. The return value of the overload with arguments of type `long` is `ldiv_t`. Both `div_t` and `ldiv_t` are defined in STDLIB.H.  
   
 ## Remarks  
- The `div` function divides `numer` by `denom` and thereby computes the quotient and the remainder. The [div_t](../../c-runtime-library/standard-types.md) structure contains the quotient, `int``quot`, and the remainder, `int``rem`. The sign of the quotient is the same as that of the mathematical quotient. Its absolute value is the largest integer that is less than the absolute value of the mathematical quotient. If the denominator is 0, the program terminates with an error message.  
+ The `div` function divides `numer` by `denom` and thereby computes the quotient and the remainder. The [div_t](../../c-runtime-library/standard-types.md) structure contains the quotient, `int quot`, and the remainder, `int rem`. The sign of the quotient is the same as that of the mathematical quotient. Its absolute value is the largest integer that is less than the absolute value of the mathematical quotient. If the denominator is 0, the program terminates with an error message.  
   
- The overloads that take arguments of type `long` or `long long` are only available to C++ code. The return type [ldiv_t](../../c-runtime-library/standard-types.md) contains the members `long``quot` and `long``rem`, and the return type [lldiv_t](../../c-runtime-library/standard-types.md) contains the members `long long quot` and `long long rem`, which have the same meanings as the members of `div_t`.  
+ The overloads that take arguments of type `long` or `long long` are only available to C++ code. The return type [ldiv_t](../../c-runtime-library/standard-types.md) contains the members `long quot` and `long rem`, and the return type [lldiv_t](../../c-runtime-library/standard-types.md) contains the members `long long quot` and `long long rem`, which have the same meanings as the members of `div_t`.  
   
 ## Requirements  
   

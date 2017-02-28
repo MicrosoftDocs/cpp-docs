@@ -136,9 +136,8 @@ struct tm *_gmtime64(
   
 ## Example  
   
-```  
-  
-      // crt_gmtime.c  
+```C  
+// crt_gmtime.c  
 // compile with: /W3  
 // This program uses _gmtime64 to convert a long-  
 // integer representation of coordinated universal time  
@@ -167,12 +166,6 @@ int main( void )
 ```Output  
 Coordinated universal time is Tue Feb 12 23:11:31 2002  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::DateTime::UtcNow](https://msdn.microsoft.com/en-us/library/system.datetime.utcnow.aspx)  
-  
--   [System::DateTime::ToUniversalTime](https://msdn.microsoft.com/en-us/library/system.datetime.touniversaltime.aspx)  
   
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   

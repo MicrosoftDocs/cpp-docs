@@ -75,9 +75,8 @@ The same Visual C++ source code might produce different results on the ARM archi
 ### Variable Arguments (varargs) Behavior  
  On the ARM architecture, parameters from the variable arguments list that are passed on the stack are subject to alignment. For example, a 64-bit parameter is aligned on a 64-bit boundary. On x86 and x64, arguments that are passed on the stack are not subject to alignment and pack tightly. This difference can cause a variadic function like `printf` to read memory addresses that were intended as padding on ARM if the expected layout of the variable arguments list is not matched exactly, even though it might work for a subset of some values on the x86 or x64 architectures. Consider this example:  
   
-```  
-  
-      // notice that a 64-bit integer is passed to the function, but '%d' is used to read it.  
+```C  
+// notice that a 64-bit integer is passed to the function, but '%d' is used to read it.  
 // on x86 and x64 this may work for small values because %d will “parse” the low-32 bits of the argument.  
 // on ARM the calling convention will align the 64-bit value and the code will print a random value  
 printf("%d\n", 1LL);     
@@ -85,10 +84,9 @@ printf("%d\n", 1LL);  
   
  In this case, the bug can be fixed by making sure that the correct format specification is used so that that the alignment of the argument is considered. This code is correct:  
   
-```  
+```C  
 // CORRECT: use %I64d for 64-bit integers  
 printf("%I64d\n", 1LL);  
-  
 ```  
   
 ### Argument evaluation order  
@@ -96,16 +94,15 @@ printf("%I64d\n", 1LL);
   
  This kind of error can occur when arguments to a function have side effects that impact other arguments to the function in the same call. Usually this kind of dependency is easy to avoid, but it can sometimes be obscured by dependencies that are difficult to discern, or by operator overloading. Consider this code example:  
   
-```  
+```cpp  
 handle memory_handle;  
   
 memory_handle->acquire(*p);  
-  
 ```  
   
  This appears well-defined, but if `->` and `*` are overloaded operators, then this code is translated to something that resembles this:  
   
-```  
+```cpp  
 Handle::acquire(operator->(memory_handle), operator*(p));  
 ```  
   

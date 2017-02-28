@@ -46,9 +46,8 @@ translation.priority.mt:
   
 ### Code  
   
-```  
-  
-      // sealed_native_keyword.cpp  
+```cpp  
+// sealed_native_keyword.cpp  
 #include <stdio.h>  
 __interface I1 {  
    virtual void f();  
@@ -75,7 +74,7 @@ public:
   
 ### Code  
   
-```  
+```cpp  
 // override_native_keyword.cpp  
 #include <stdio.h>  
 __interface I1 {  
@@ -96,7 +95,7 @@ public:
   
 ### Code  
   
-```  
+```cpp  
 // abstract_native_keyword.cpp  
 class X abstract {};  
   
