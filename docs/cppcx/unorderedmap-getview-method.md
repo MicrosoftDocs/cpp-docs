@@ -21,7 +21,7 @@ Returns a read-only view of the current UnorderedMap; that is, an [Platform::Col
   
 ## Syntax  
   
-```scr  
+```cpp  
   
 Windows::Foundation::Collections::IMapView<K, V>^   
    GetView();  

@@ -23,7 +23,7 @@ Returns the contents of the string as an `__abi_HSTRING`.
   
 ## Syntax  
   
-```scr  
+```cpp  
 __abi_HSTRING GetHSTRING() const  
   
 ```  

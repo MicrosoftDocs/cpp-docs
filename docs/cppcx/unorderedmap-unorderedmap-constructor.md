@@ -21,7 +21,7 @@ Initializes a new instance of the UnorderedMap class.
   
 ## Syntax  
   
-```scr  
+```cpp  
 UnorderedMap();  
   
   explicit UnorderedMap(  

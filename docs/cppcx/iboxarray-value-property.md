@@ -23,7 +23,7 @@ Returns the value that was originally stored in this object.
   
 ## Syntax  
   
-```scr  
+```cpp  
 property T Value {T get();}  
 ```  
   
@@ -45,6 +45,27 @@ property T Value {T get();}
  **Namespace:** Platform  
   
  **Header** platform.winmd  
+
+## IBoxArray::Value Property
+Returns the value that was originally stored in this object.  
+  
+### Syntax  
+  
+```cpp  
+property T Value {T get();}  
+```  
+  
+### Parameters  
+ `T`  
+ The type of the boxed value.  
+  
+## Property Value/Return Value  
+ Returns the value that was originally stored in this object.  
+  
+### Remarks  
+ For an example, see [Boxing](../cppcx/boxing-c-cx.md).  
+  
+
   
 ## See Also  
  [IBoxArray::Value Property](../cppcx/iboxarray-value-property.md)

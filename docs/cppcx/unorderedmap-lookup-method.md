@@ -21,7 +21,7 @@ Retrieves the value of type V that is associated with the specified key of type 
   
 ## Syntax  
   
-```scr  
+```cpp  
 V Lookup(  
    K key  
 );  

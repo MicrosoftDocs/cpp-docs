@@ -35,14 +35,14 @@ class ArrayReference
   
 |Name|Description|  
 |----------|-----------------|  
-|[ArrayReference::ArrayReference Constructor](../cppcx/arrayreference-arrayreference-constructor.md)|Initializes a new instance of the `ArrayReference` class.|  
+|[ArrayReference::ArrayReference Constructor](#ctor)|Initializes a new instance of the `ArrayReference` class.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[ArrayReference::operator() Operator](../cppcx/arrayreference-operator-call-operator.md)|Converts this `ArrayReference` to a `Platform::Array<T>^*`.|  
-|[ArrayReference::operator= Operator](../cppcx/arrayreference-operator-assign-operator.md)|Assigns the contents of another `ArrayReference` to this instance.|  
+|[ArrayReference::operator() Operator](#operator-call)|Converts this `ArrayReference` to a `Platform::Array<T>^*`.|  
+|[ArrayReference::operator= Operator](#operator-assign)|Assigns the contents of another `ArrayReference` to this instance.|  
   
 ## Exceptions  
   
@@ -58,7 +58,74 @@ class ArrayReference
   
  **Header:** vccorlib.h  
   
-## Subsection Heading  
+## <a name="ctor"></a>  ArrayReference::ArrayReference Constructor
+Initializes a new instance of the [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) class.  
+  
+### Syntax  
+  
+```cpp  
+ArrayReference(TArg* ataArg, unsigned int sizeArg, bool needsInitArg = false);  
+ArrayReference(ArrayReference&& otherArg)  
+  
+```  
+  
+### Parameters  
+ `dataArg`  
+ A pointer to the array data.  
+  
+ `sizeArg`  
+ The number of elements in the source array.  
+  
+ `otherArg`  
+ An `ArrayReference` object whose data will be moved to initialize the new instance.  
+  
+### Remarks  
+  
+
+
+## <a name="operator-assign"></a>  ArrayReference::operator= Operator
+Assigns the specified object to the current [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) object by using move semantics.  
+  
+### Syntax  
+  
+```cpp  
+  
+ArrayReference& operator=(ArrayReference&& otherArg);  
+  
+```  
+  
+### Parameters  
+ `otherArg`  
+ The object that is moved to the current `ArrayReference` object.  
+  
+### Return Value  
+ A reference to an object of type `ArrayReference`.  
+  
+### Remarks  
+ `Platform::ArrayReference` is a standard C++ class template, not a ref class.  
+  
+
+
+## <a name="operator-call"></a>  ArrayReference::operator() Operator
+Converts the current [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) object back to a [Platform::Array](../cppcx/platform-array-class.md) class.  
+  
+### Syntax  
+  
+```cpp  
+  
+Array<TArg>^ operator ();  
+  
+```  
+  
+### Return Value  
+ A handle-to-object of type `Array<TArg>^`  
+  
+### Remarks  
+ [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) and [Platform::Array](../cppcx/platform-array-class.md) are standard C++ class templates, not ref classes.  
+  
+
+
+  
   
 ## See Also  
  [Platform namespace](../cppcx/platform-namespace-c-cx.md)

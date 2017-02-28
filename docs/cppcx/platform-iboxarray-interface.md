@@ -42,7 +42,27 @@ interface class IBoxArray
   
 |Method|Description|  
 |------------|-----------------|  
-|Value|Returns the unboxed array that was previously stored in this `IBoxArray` instance.|  
+|[Value](#value)|Returns the unboxed array that was previously stored in this `IBoxArray` instance.|  
+
+## <a name="value"></a> IBoxArray::Value Property
+Returns the value that was originally stored in this object.  
+  
+### Syntax  
+  
+```cpp  
+property T Value {T get();}  
+```  
+  
+### Parameters  
+ `T`  
+ The type of the boxed value.  
+  
+## Property Value/Return Value  
+ Returns the value that was originally stored in this object.  
+  
+### Remarks  
+ For an example, see [Boxing](../cppcx/boxing-c-cx.md).  
+  
   
 ## See Also  
  [Array and WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md)

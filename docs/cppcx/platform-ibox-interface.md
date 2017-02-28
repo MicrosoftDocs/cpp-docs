@@ -44,7 +44,27 @@ interface class IBox
   
 |Method|Description|  
 |------------|-----------------|  
-|Value|Returns the unboxed value that was previously stored in this `IBox` instance.|  
+|[Value](#value)|Returns the unboxed value that was previously stored in this `IBox` instance.|  
+
+## <a name="value"></a> IBox::Value Property
+Returns the value that was originally stored in this object.  
+  
+### Syntax  
+  
+```cpp  
+property T Value {T get();}  
+```  
+  
+### Parameters  
+ `T`  
+ The type of the boxed value.  
+  
+## Property Value/Return Value  
+ Returns the value that was originally stored in this object.  
+  
+### Remarks  
+ For an example, see [Boxing](../cppcx/boxing-c-cx.md).  
+  
   
 ## See Also  
  [Platform namespace](../cppcx/platform-namespace-c-cx.md)

@@ -23,7 +23,7 @@ Returns the contents of the string as a `Platform::String^`.
   
 ## Syntax  
   
-```scr  
+```cpp  
 __declspec(no_release_return) __declspec(no_refcount)  
     ::Platform::String^ GetString() const  
 ```  

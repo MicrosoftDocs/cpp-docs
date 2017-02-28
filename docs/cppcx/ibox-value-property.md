@@ -47,6 +47,7 @@ property T Value {T get();}
  **Namespace:** Platform  
   
  **Header** platform.winmd  
+
   
 ## See Also  
  [Platform::IBox Interface](../cppcx/platform-ibox-interface.md)

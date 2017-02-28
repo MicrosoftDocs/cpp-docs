@@ -33,7 +33,7 @@ public ref class SizeT sealed : ValueType
   
 |Member|Description|  
 |------------|-----------------|  
-|[SizeT::SizeT constructor](../cppcx/sizet-sizet-constructor.md)|Initializes a new instance of the class with the specified value.|  
+|[SizeT::SizeT constructor](#ctor)|Initializes a new instance of the class with the specified value.|  
   
 ## Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
@@ -43,6 +43,23 @@ public ref class SizeT sealed : ValueType
  **Namespace:** Platform  
   
  **Metadata:** platform.winmd  
+
+ ## <a name="ctor"></a>  SizeT::SizeT constructor
+Initializes a new instance of SizeT with the specified value.  
+  
+### Syntax  
+  
+```cpp  
+SizeT( uint32 value1 );   SizeT( void* value2 );  
+```  
+  
+## Parameters  
+ value1  
+ An unsigned 32-bit value.  
+  
+ value2  
+ Pointer to an unsigned 32-bit value.  
+  
   
 ## See Also  
  [Platform namespace](../cppcx/platform-namespace-c-cx.md)

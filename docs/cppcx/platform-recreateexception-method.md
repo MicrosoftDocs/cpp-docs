@@ -21,7 +21,7 @@ This method is for internal use only and is not intended for user code. Use the 
   
 ## Syntax  
   
-```vb  
+```cpp  
 static Exception^ ReCreateException(int hr)  
 ```  
   

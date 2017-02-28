@@ -21,7 +21,7 @@ Provides various ways to construct a WeakReference.
   
 ## Syntax  
   
-```scr  
+```cpp  
 WeakReference();  
 WeakReference(decltype(__nullptr));  
 WeakReference(const WeakReference& __otherArg);  
@@ -31,7 +31,7 @@ explicit WeakReference(const volatile ::Platform::Object^ const __otherArg);
   
 ## Example  
   
-```scr  
+```cpp  
   
 MyClass^ mc = ref new MyClass();  
 WeakReference wr(mc);  

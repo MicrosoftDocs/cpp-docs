@@ -52,17 +52,17 @@ class InputIterator;
   
 |Name|Description|  
 |----------|-----------------|  
-|[InputIterator::InputIterator Constructor](../cppcx/inputiterator-inputiterator-constructor.md)|Initializes a new instance of the InputIterator class.|  
+|[InputIterator::InputIterator Constructor](#ctor)|Initializes a new instance of the InputIterator class.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[InputIterator::operator!= Operator](../cppcx/inputiterator-operator-inequality-operator.md)|Indicates whether the current InputIterator is not equal to a specified InputIterator.|  
-|[InputIterator::operator* Operator](../cppcx/inputiterator-operator-decrementoperator.md)|Retrieves a reference to the element specified by the current InputIterator.|  
-|[InputIterator::operator++ Operator](../cppcx/inputiterator-operator-increment-operator.md)|Increments the current InputIterator.|  
-|[InputIterator::operator== Operator](../cppcx/inputiterator-operator-equality-operator.md)|Indicates whether the current InputIterator is equal to a specified InputIterator.|  
-|[InputIterator::operator-> Operator](../cppcx/inputiterator-operator-arrow-operator.md)|Retrieves the address of the element referenced by the current InputIterator.|  
+|[InputIterator::operator!= Operator](#operator-inequality)|Indicates whether the current InputIterator is not equal to a specified InputIterator.|  
+|[InputIterator::operator* Operator](#operator-decrement)|Retrieves a reference to the element specified by the current InputIterator.|  
+|[InputIterator::operator++ Operator](#operator-increment)|Increments the current InputIterator.|  
+|[InputIterator::operator== Operator](#operator-equality)|Indicates whether the current InputIterator is equal to a specified InputIterator.|  
+|[InputIterator::operator-> Operator](#operator-arrow)|Retrieves the address of the element referenced by the current InputIterator.|  
   
 ## Inheritance Hierarchy  
  `InputIterator`  
@@ -71,6 +71,116 @@ class InputIterator;
  **Header:** collection.h  
   
  **Namespace:** Platform::Collections  
+
+## <a name="ctor"></a>  InputIterator::InputIterator Constructor
+Initializes a new instance of the InputIterator class.  
+  
+### Syntax  
+  
+```  
+InputIterator();  
+explicit InputIterator(  
+   Windows::Foundation::Collections<X>^ iter  
+);  
+```  
+  
+### Parameters  
+ `iter`  
+ An iterator object.  
+  
+
+
+## <a name="operator-arrow"></a>  InputIterator::operator-&gt; Operator
+Retrieves the address of the element specified by the current InputIterator.  
+  
+### Syntax  
+  
+```  
+pointer operator->() const;  
+```  
+  
+### Return Value  
+ The address of the element specified by the current InputIterator.  
+  
+
+
+## <a name="operator-dereference"></a>  InputIterator::operator* Operator
+Retrieves a reference to the element specified by the current InputIterator.  
+  
+### Syntax  
+  
+```  
+reference operator*() const;  
+```  
+  
+### Return Value  
+ The element specified by the current InputIterator.  
+  
+
+
+## <a name="operator-equality"></a>  InputIterator::operator== Operator
+Indicates whether the current InputIterator is equal to a specified InputIterator.  
+  
+### Syntax  
+  
+```  
+bool operator==(  
+   const InputIterator& other  
+) const;  
+```  
+  
+### Parameters  
+ `other`  
+ Another InputIterator.  
+  
+### Return Value  
+ `true` if the current InputIterator is equal to `other`; otherwise, `false`.  
+  
+
+
+## <a name="operator-increment"></a>  InputIterator::operator++ Operator
+Increments the current InputIterator.  
+  
+### Syntax  
+  
+```  
+  
+InputIterator& operator++();  
+  
+InputIterator operator++(  
+   int  
+);  
+```  
+  
+### Return Value  
+ The first syntax increments and then returns the current InputIterator. The second syntax returns a copy of the current InputIterator and then increments the current InputIterator.  
+  
+### Remarks  
+ The first InputIterator syntax pre-increments the current InputIterator.  
+  
+ The second syntax post-increments the current InputIterator. The `int` type in the second syntax indicates a post-increment operation, not an actual integer operand.  
+  
+
+
+## <a name="operator-inequality"></a>  InputIterator::operator!= Operator
+Indicates whether the current InputIterator is not equal to a specified InputIterator.  
+  
+### Syntax  
+  
+```  
+bool operator!=(  
+   const InputIterator& other  
+) const;  
+```  
+  
+### Parameters  
+ `other`  
+ Another InputIterator.  
+  
+### Return Value  
+ `true` if the current InputIterator is not equal to `other`; otherwise, `false`.  
+  
+
   
 ## See Also  
  [Platform Namespace](platform-namespace-c-cx.md)

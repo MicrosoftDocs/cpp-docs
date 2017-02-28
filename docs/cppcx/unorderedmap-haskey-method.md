@@ -21,7 +21,7 @@ Determines whether the current UnorderedMap contains the specified key.
   
 ## Syntax  
   
-```scr  
+```cpp  
   
 bool HasKey(  
    K key  
