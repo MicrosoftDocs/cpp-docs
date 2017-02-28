@@ -49,7 +49,7 @@ In C++, you have several options for connecting to the web and the cloud.
 [OneDrive API](https://dev.onedrive.com/README.htm)  
  The OneDrive API provides a set of HTTP services to connect your application to files and folders in Office 365 and SharePoint Server 2016.
 
-[C++ REST SDK (Codename "Casablanca")](cpp-rest-sdk-codename-casablanca.md)  
+[C++ REST SDK (Codename "Casablanca")](https://github.com/Microsoft/cpprestsdk)  
 Provides a modern, cross-platform, asynchronous API for interacting with REST services.
 
 -	Perform REST calls against any HTTP server, with built-in support for JSON document parsing and serialization
