@@ -36,20 +36,29 @@ In C++, you have several options for connecting to the web and the cloud.
   
  [Windows Azure Mobile Services](http://www.windowsazure.com/develop/mobile/)  
  Provides native APIs that you can use in Windows Store apps or Windows desktop apps to connect to Windows Azure Mobile Services. Although most of the examples on the website are in C#, you can also use C++. For more information, see [Quickstart: Adding a mobile service using C++](http://msdn.microsoft.com/library/windows/apps/dn263181.aspx).  
+
+ [Microsoft Azure Storage Client Library for C++](https://blogs.msdn.microsoft.com/windowsazurestorage/2015/04/29/microsoft-azure-storage-client-library-for-c-v1-0-0-general-availability/)  
+ The Azure Storage Client Library for C++ provides a comprehensive API for working with Azure storage, including but not limited to the following abilities:
+
+- Create, read, delete, and list blob containers, tables, and queues.
+- Create, read, delete, list and copy blobs plus read and write blob ranges.
+- Insert, delete, replace, merge, and query entities in an Azure table.
+- Enqueue and dequeue messages in an Azure queue.
+- Lazily list containers, blobs, tables, and queues, and lazily query entities
+
+[OneDrive API](https://dev.onedrive.com/README.htm)  
+ The OneDrive API provides a set of HTTP services to connect your application to files and folders in Office 365 and SharePoint Server 2016.
+
+[C++ REST SDK (Codename "Casablanca")](cpp-rest-sdk-codename-casablanca.md)  
+ Provides convenient asynchronous HTTP wrapper methods that are designed for cross-platform compatibility and for use in desktop apps on operating systems back to Windows 7 and Windows Server 2012. You can also use these in Universal Windows Platform apps; however, for apps that target only Universal Windows Platform, we recommend that you use the `Windows::Web:HttpClient` class. The C++ REST SDK (codename "Casablanca") also provides helper classes that support REST calls and convert JSON data into C++ types. The SDK is available on [GitHub](https://github.com/Microsoft/cpprestsdk).  
   
- [Live REST Interface](http://msdn.microsoft.com/library/live/hh243648.aspx)  
- Provides REST endpoints that you can use in Windows Store apps, Windows desktop apps, or C++ Linux applications to connect to [Live](http://msdn.microsoft.com/live/ff519582) services such as SkyDrive, Outlook.com, and Skype. C++ apps use these endpoints directly rather than going through the Live SDK, which is for .NET apps only.  
-  
- [C++ REST SDK (Codename "Casablanca")](cpp-rest-sdk-codename-casablanca.md)  
- Provides convenient asynchronous HTTP wrapper methods that are designed for cross-platform compatibility and for use in desktop apps on operating systems back to Windows 7 and Windows Server 2012. You can also use these in Universal Windows Platform apps; however, for apps that target only Universal Windows Platform, we recommend that you use the `Windows::Web:HttpClient` class. The C++ REST SDK (codename "Casablanca") also provides helper classes that support REST calls and convert JSON data into C++ types. The SDK is available on [CodePlex](http://casablanca.codeplex.com/) and it contains sample files such as [live_connect.h](http://casablanca.codeplex.com/SourceControl/latest#Release/collateral/Samples/WindowsLiveAuth/live_connect.h), which provides helper methods for connecting to [Live](http://msdn.microsoft.com/live/ff519582) services.  
-  
- [Windows::Web::Http::HttpClient](https://msdn.microsoft.com/en-us/library/windows/apps/windows.web.http.httpclient.aspx)  
+[Windows::Web::Http::HttpClient](https://msdn.microsoft.com/en-us/library/windows/apps/windows.web.http.httpclient.aspx)  
  A Windows Runtime HTTP client class modeled on the .NET Framework class of the same name in the System.Web namespace. `HttpClient` fully supports asynchronous upload and download over HTTP, and pipeline filters that enable the insertion of custom HTTP handlers into the pipeline. The Windows SDK includes sample filters for metered networks, OAuth authentication, and more.  
   
- [IXMLHTTPRequest2 interface](http://msdn.microsoft.com/library/windows/apps/hh831151.aspx)  
+[IXMLHTTPRequest2 interface](http://msdn.microsoft.com/library/windows/apps/hh831151.aspx)  
  Provides a native COM interface that you can use in Windows Store apps or Windows desktop apps to connect to the Internet over HTTP and issue GET, PUT, and other HTTP commands. For more information, see [Walkthrough: Connecting Using Tasks and XML HTTP Requests](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md).  
   
- [Windows Internet (WinInet)](http://msdn.microsoft.com/library/windows/desktop/aa385331\(v=vs.85\).aspx)  
+[Windows Internet (WinInet)](http://msdn.microsoft.com/library/windows/desktop/aa385331\(v=vs.85\).aspx)  
  Windows API that you can use in Windows desktop apps to connect to the Internet.  
   
 ## See Also  

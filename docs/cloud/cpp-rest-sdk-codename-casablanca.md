@@ -31,6 +31,4 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # C++ REST SDK (Codename &quot;Casablanca&quot;)
-By using the C++ REST SDK (codename "Casablanca"), you can more easily write modern, asynchronous C++ code that connects with cloud-based services.  
-  
- The Casablanca project no longer ships with Visual Studio. The documentation and sources are hosted and occasionally updated on CodePlex. For more detailed information about this project, see [C++ REST SDK (codename "Casablanca")](http://casablanca.codeplex.com/).
+By using the C++ REST SDK (codename "Casablanca"), you can more easily write modern, asynchronous C++ code that connects with cloud-based services.  The C++ REST SDK is an open source project available through GitHub at [Microsoft/cpprestsdk](https://github.com/Microsoft/cpprestsdk).

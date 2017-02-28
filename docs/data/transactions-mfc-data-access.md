@@ -54,7 +54,7 @@ The concept of a transaction was developed to handle cases in which the resultin
   
  You can support transactions in OLE DB (see [Supporting Transactions in OLE DB](../data/oledb/supporting-transactions-in-ole-db.md)) or ODBC (see [Transaction (ODBC)](../data/odbc/transaction-odbc.md)).  
   
- A distributed transaction is a transaction that updates distributed data, that is, data on more than one networked computer system. If you want to support transactions over a distributed system, you should use the Microsoft .NET Framework rather than the OLE DB transaction support.  
+ A distributed transaction is a transaction that updates distributed data, that is, data on more than one networked computer system. If you want to support transactions over a distributed system, you should use ADO.NET rather than the OLE DB transaction support.  
   
 ## See Also  
  [Data Access Programming (MFC/ATL)](../data/data-access-programming-mfc-atl.md)
