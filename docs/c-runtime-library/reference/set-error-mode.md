@@ -96,9 +96,8 @@ int _set_error_mode(
   
 ## Example  
   
-```  
-  
-      // crt_set_error_mode.c  
+```C  
+// crt_set_error_mode.c  
 // compile with: /c  
 #include <stdlib.h>  
 #include <assert.h>  

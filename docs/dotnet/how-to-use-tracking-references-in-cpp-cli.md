@@ -38,9 +38,8 @@ This article shows how to use a tracking reference (%) in [!INCLUDE[cppcli](../b
 ## To pass CLR types by reference  
  The following sample shows how to use a tracking reference to pass CLR types by reference.  
   
-```  
-  
-      // tracking_reference_handles.cpp  
+```cpp  
+// tracking_reference_handles.cpp  
 // compile with: /clr  
 using namespace System;  
   
@@ -86,15 +85,13 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 zip == 20100  
 ```  
   
  The next sample shows that taking the address of a tracking reference returns an [interior_ptr (C++/CLI)](../windows/interior-ptr-cpp-cli.md), and shows how to modify and access data through a tracking reference.  
   
-```  
+```cpp  
 // tracking_reference_data.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -139,8 +136,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 ctor: R(int)  
 ctor: N(int i)  
@@ -149,7 +144,7 @@ ctor: N(int i)
 ## Tracking references and interior pointers  
  The following code sample shows that you can convert between tracking references and interior pointers.  
   
-```  
+```cpp  
 // tracking_reference_interior_ptr.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -195,8 +190,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 ctor: R(int)  
 ctor: N(int i)  
@@ -205,13 +198,22 @@ ctor: N(int i)
 ## Tracking references and value types  
  This sample shows simple boxing through a tracking reference to a value type:  
   
-```  
-// tracking_reference_valuetypes_1.cpp// compile with: /clrusing namespace System;int main() {   int i = 10;   int % j = i;   Object ^ o = j;   // j is implicitly boxed and assigned to o}  
+```cpp  
+// tracking_reference_valuetypes_1.cpp
+// compile with: /clr
+
+using namespace System;
+
+int main() {
+   int i = 10;   
+   int % j = i;   
+   Object ^ o = j;   // j is implicitly boxed and assigned to o
+}  
 ```  
   
  The next sample shows that you can have both tracking references and native references to value types.  
   
-```  
+```cpp  
 // tracking_reference_valuetypes_2.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -228,8 +230,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 13  
 13  
@@ -238,7 +238,7 @@ int main() {
   
  The following sample shows that you can use tracking references together with value types and native types.  
   
-```  
+```cpp  
 // tracking_reference_valuetypes_3.cpp  
 // compile with: /clr  
 value struct G {  
@@ -264,8 +264,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 4  
 4  
@@ -275,7 +273,7 @@ int main() {
   
  This sample shows that you can bind a tracking reference to a value type on the garbage-collected heap:  
   
-```  
+```cpp  
 // tracking_reference_valuetypes_4.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -304,8 +302,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 Original V: 2, Tracking reference to boxed V: 1  
 Tracking reference to boxed V: 3  
@@ -316,7 +312,7 @@ Original V: 4, Reference to handle of originally boxed V: 1
 ## Template functions that take native, value, or reference parameters  
  By using a tracking reference in the signature of a template function, you ensure that the function can be called by a parameter whose type is native, CLR value, or CLR reference.  
   
-```  
+```cpp  
 // tracking_reference_template.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -337,7 +333,7 @@ public:
    }  
 };  
   
-// Class Defintions  
+// Class Definitions  
 ref struct R {  
    int i;  
 };  
@@ -354,8 +350,6 @@ int main() {
    // Temp::f2(hr->i);   
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 T %  

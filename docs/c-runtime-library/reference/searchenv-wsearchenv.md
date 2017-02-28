@@ -139,9 +139,8 @@ void _wsearchenv(
   
 ## Example  
   
-```  
-  
-      // crt_searchenv.c  
+```C  
+// crt_searchenv.c  
 // compile with: /W3  
 // This program searches for a file in  
 // a directory that's specified by an environment variable.  
@@ -169,9 +168,6 @@ int main( void )
 Path for CL.EXE:  
 C:\Program Files\Microsoft Visual Studio 8\VC\BIN\CL.EXE  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Directory Control](../../c-runtime-library/directory-control.md)   

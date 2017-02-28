@@ -158,9 +158,8 @@ errno_t _wgetenv_s(
   
 ## Example  
   
-```  
-  
-      // crt_getenv_s.c  
+```C  
+// crt_getenv_s.c  
 // This program uses getenv_s to retrieve  
 // the LIB environment variable and then uses  
 // _putenv to change it to a new value.  
@@ -219,9 +218,6 @@ int main( void )
 Original LIB variable is: c:\vctools\lib;c:\vctools\atlmfc\lib;c:\vctools\PlatformSDK\lib;c:\vctools\Visual Studio SDKs\DIA Sdk\lib;c:\vctools\Visual Studio SDKs\BSC Sdk\lib  
 New LIB variable is: c:\mylib;c:\yourlib  
 ```  
-  
-## .NET Framework Equivalent  
- [System::Environment::GetEnvironmentVariable](https://msdn.microsoft.com/en-us/library/system.environment.getenvironmentvariable.aspx)  
   
 ## See Also  
  [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
