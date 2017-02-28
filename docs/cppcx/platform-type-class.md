@@ -21,7 +21,7 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Platform::Type Class
-Contains run-time information about a type—specifically, a string name and a typecode. Obtained by calling [Object::GetType Method](../cppcx/object-class.md#gettype) on any object or  or using the [typeid](../windows/typeid-cpp-component-extensions.md) operator on a class or struct name.  
+Contains run-time information about a type—specifically, a string name and a typecode. Obtained by calling [Object::GetType Method](../cppcx/platform-object-class.md#gettype) on any object or  or using the [typeid](../windows/typeid-cpp-component-extensions.md) operator on a class or struct name.  
   
 ## Syntax  
   

@@ -110,7 +110,19 @@ public:property int HResult {    int get();}
   
 ### Remarks  
  For more information about how to interpret the HRESULT value, see [Structure of COM Error Codes](http://go.microsoft.com/fwlink/p/?LinkId=262045).  
+
+## <a name="message"></a> COMException::Message Property
+Message that describes the exception.  
   
+### Syntax  
+  
+```cpp  
+public:property String^ Message {    String^ get();}  
+```  
+  
+### Property Value  
+ A description of the exception.  
+    
 
 ## See Also  
  [Platform namespace](../cppcx/platform-namespace-c-cx.md)
