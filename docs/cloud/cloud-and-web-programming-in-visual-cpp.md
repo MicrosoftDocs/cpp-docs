@@ -49,11 +49,18 @@ In C++, you have several options for connecting to the web and the cloud.
 [OneDrive API](https://dev.onedrive.com/README.htm)  
  The OneDrive API provides a set of HTTP services to connect your application to files and folders in Office 365 and SharePoint Server 2016.
 
-[C++ REST SDK (Codename "Casablanca")](cpp-rest-sdk-codename-casablanca.md)  
- Provides convenient asynchronous HTTP wrapper methods that are designed for cross-platform compatibility and for use in desktop apps on operating systems back to Windows 7 and Windows Server 2012. You can also use these in Universal Windows Platform apps; however, for apps that target only Universal Windows Platform, we recommend that you use the `Windows::Web:HttpClient` class. The C++ REST SDK (codename "Casablanca") also provides helper classes that support REST calls and convert JSON data into C++ types. The SDK is available on [GitHub](https://github.com/Microsoft/cpprestsdk).  
+[C++ REST SDK (Codename "Casablanca")](https://github.com/Microsoft/cpprestsdk)  
+Provides a modern, cross-platform, asynchronous API for interacting with REST services.
+
+-	Perform REST calls against any HTTP server, with built-in support for JSON document parsing and serialization
+-	Supports OAuth 1 and 2, including a local redirect listener
+-	Make Websockets connections against remote services
+-	A fully asynchronous task API based on PPL, including a built-in threadpool
+
+Supports Windows Desktop (7+), Windows Server (2012+), Universal Windows Platform, Linux, OSX, Android, and iOS. 
   
 [Windows::Web::Http::HttpClient](https://msdn.microsoft.com/en-us/library/windows/apps/windows.web.http.httpclient.aspx)  
- A Windows Runtime HTTP client class modeled on the .NET Framework class of the same name in the System.Web namespace. `HttpClient` fully supports asynchronous upload and download over HTTP, and pipeline filters that enable the insertion of custom HTTP handlers into the pipeline. The Windows SDK includes sample filters for metered networks, OAuth authentication, and more.  
+ A Windows Runtime HTTP client class modeled on the .NET Framework class of the same name in the System.Web namespace. `HttpClient` fully supports asynchronous upload and download over HTTP, and pipeline filters that enable the insertion of custom HTTP handlers into the pipeline. The Windows SDK includes sample filters for metered networks, OAuth authentication, and more. For apps that target only Universal Windows Platform, we recommend that you use the `Windows::Web:HttpClient` class. 
   
 [IXMLHTTPRequest2 interface](http://msdn.microsoft.com/library/windows/apps/hh831151.aspx)  
  Provides a native COM interface that you can use in Windows Store apps or Windows desktop apps to connect to the Internet over HTTP and issue GET, PUT, and other HTTP commands. For more information, see [Walkthrough: Connecting Using Tasks and XML HTTP Requests](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md).  

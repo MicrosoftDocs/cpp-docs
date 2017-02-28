@@ -84,7 +84,7 @@ intptr_t _wexecle(
  `cmdname`  
  Path of the file to execute.  
   
- `arg0`, `...``argn`  
+ `arg0, ... argn`  
  List of pointers to parameters.  
   
  `envp`  

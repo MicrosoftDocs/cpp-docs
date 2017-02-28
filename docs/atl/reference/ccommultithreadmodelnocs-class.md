@@ -67,7 +67,7 @@ class CComMultiThreadModelNoCS
 ## Remarks  
  `CComMultiThreadModelNoCS` is similar to [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) in that it provides thread-safe methods for incrementing and decrementing a variable. However, when you reference a critical section class through `CComMultiThreadModelNoCS`, methods such as `Lock` and `Unlock` will do nothing.  
   
- Typically, you use `CComMultiThreadModelNoCS` through the `ThreadModelNoCS``typedef` name. This `typedef` is defined in `CComMultiThreadModelNoCS`, `CComMultiThreadModel`, and [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md).  
+ Typically, you use `CComMultiThreadModelNoCS` through the `ThreadModelNoCS` `typedef` name. This `typedef` is defined in `CComMultiThreadModelNoCS`, `CComMultiThreadModel`, and [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md).  
   
 > [!NOTE]
 >  The global `typedef` names [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) and [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel) do not reference `CComMultiThreadModelNoCS`.  

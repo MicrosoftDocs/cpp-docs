@@ -231,9 +231,8 @@ FILE *_wfopen(
 ## Example  
  The following program opens two files.  It uses `fclose` to close the first file and `_fcloseall` to close all remaining files.  
   
-```  
-  
-      // crt_fopen.c  
+```C  
+// crt_fopen.c  
 // compile with: /W3  
 // This program opens two files. It uses  
 // fclose to close the first file and  
@@ -284,7 +283,7 @@ Number of files closed by _fcloseall: 1
 ## Example  
  The following program creates a file (or overwrites one if it exists), in text mode that has Unicode encoding.  It then writes two strings into the file and closes the file. The output is a file named _wfopen_test.xml, which contains the data from the output section.  
   
-```  
+```C  
 // crt__wfopen.c  
 // compile with: /W3  
 // This program creates a file (or overwrites one if  
@@ -301,9 +300,9 @@ Number of files closed by _fcloseall: 1
   
 int main(int argc, char** argv)  
 {  
-wchar_t str[BUFFER_SIZE];  
-size_t  strSize;  
-FILE*   fileHandle;  
+    wchar_t str[BUFFER_SIZE];  
+    size_t  strSize;  
+    FILE*   fileHandle;  
   
     // Create an the xml file in text and Unicode encoding mode.  
     if ((fileHandle = _wfopen( L"_wfopen_test.xml",L"wt+,ccs=UNICODE")) == NULL) // C4996  
@@ -337,10 +336,6 @@ FILE*   fileHandle;
     return 0;  
 }  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::IO::File::Open](https://msdn.microsoft.com/en-us/library/system.io.file.open.aspx)  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

@@ -115,9 +115,8 @@ struct _diskfree_t {
   
 ## Example  
   
-```  
-  
-      // crt_getdiskfree.c  
+```C  
+// crt_getdiskfree.c  
 // compile with: /c  
 #include <windows.h>  
 #include <direct.h>  
@@ -215,9 +214,6 @@ void utoiRightJustified(TCHAR* szLeft, TCHAR* szRight, unsigned uVal) {
 |  E: | The device is not ready.    |                 |              |  
 ======================================================================  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Directory Control](../../c-runtime-library/directory-control.md)

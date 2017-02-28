@@ -178,13 +178,13 @@ CTime(const DBTIMESTAMP& dbts,int nDST = -1) throw();
 ### Remarks  
  Each constructor is described below:  
   
-- **CTime( );**Constructs an uninitialized `CTime` object. This constructor allows you to define `CTime` object arrays. You should initialize such arrays with valid times before using.  
+- **CTime();** Constructs an uninitialized `CTime` object. This constructor allows you to define `CTime` object arrays. You should initialize such arrays with valid times before using.  
   
-- **CTime( const CTime& );**Constructs a `CTime` object from another `CTime` value.  
+- **CTime( const CTime& );** Constructs a `CTime` object from another `CTime` value.  
   
-- **CTime( __time64_t );**Constructs a `CTime` object from a **__time64_t** type. This constructor expects a UTC time and converts the result to a local time before storing the result.  
+- **CTime( __time64_t );** Constructs a `CTime` object from a **__time64_t** type. This constructor expects a UTC time and converts the result to a local time before storing the result.  
   
-- **CTime( int, int, ...);**Constructs a `CTime` object from local time components with each component constrained to the following ranges:  
+- **CTime( int, int, ...);** Constructs a `CTime` object from local time components with each component constrained to the following ranges:  
   
     |Component|Range|  
     |---------------|-----------|  
@@ -197,11 +197,11 @@ CTime(const DBTIMESTAMP& dbts,int nDST = -1) throw();
   
      This constructor makes the appropriate conversion to UTC. The Debug version of the Microsoft Foundation Class Library asserts if one or more of the time components are out of range. You must validate the arguments before calling. This constructor expects a local time.  
   
-- `CTime`( **WORD, WORD** ) **;**Constructs a `CTime` object from the specified MS-DOS date and time values. This constructor expects a local time.  
+- **CTime( WORD, WORD );** Constructs a `CTime` object from the specified MS-DOS date and time values. This constructor expects a local time.  
   
-- `CTime`( **const SYSTEMTIME&** ) **;**Constructs a `CTime` object from a `SYSTEMTIME` structure. This constructor expects a local time.  
+- **CTime( const SYSTEMTIME& );** Constructs a `CTime` object from a `SYSTEMTIME` structure. This constructor expects a local time.  
   
-- `CTime`( **const FILETIME&** ) **;**Constructs a `CTime` object from a `FILETIME` structure. You most likely will not use `CTime``FILETIME` initialization directly. If you use a `CFile` object to manipulate a file, `CFile::GetStatus` retrieves the file time stamp for you through a `CTime` object initialized with a `FILETIME` structure. This constructor assumes a time based on UTC and automatically converts the value to local time before storing the result.  
+- **CTime( const FILETIME& );** Constructs a `CTime` object from a `FILETIME` structure. You most likely will not use `CTime FILETIME` initialization directly. If you use a `CFile` object to manipulate a file, `CFile::GetStatus` retrieves the file time stamp for you through a `CTime` object initialized with a `FILETIME` structure. This constructor assumes a time based on UTC and automatically converts the value to local time before storing the result.  
   
     > [!NOTE]
     >  The constructor using **DBTIMESTAMP** parameter is only available when OLEDB.h is included.  
