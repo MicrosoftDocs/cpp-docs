@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # User-Interface Updating for Record Views  (MFC Data Access)
-`CRecordView` and `CDaoRecordView` also provide default user-interface update handlers for the navigation commands. These handlers automate enabling and disabling the user-interface objects — menu items and toolbar buttons. The application wizard supplies standard menus and, if you choose the **Dockable Toolbar** option, a set of toolbar buttons for the commands. If you create a record view class using `CRecordView`, you might want to add similar user-interface objects to your application.  
+`CRecordView` provides default user-interface update handlers for the navigation commands. These handlers automate enabling and disabling the user-interface objects — menu items and toolbar buttons. The application wizard supplies standard menus and, if you choose the **Dockable Toolbar** option, a set of toolbar buttons for the commands. If you create a record view class using `CRecordView`, you might want to add similar user-interface objects to your application.  
   
 ### To create menu resources with the menu editor  
   
