@@ -47,7 +47,6 @@ Executes `statement` repeatedly and sequentially for each element in `expression
  This code shows how to use ranged `for` loops to iterate through an array and a vector:  
   
 ```cpp  
-  
 // range-based-for.cpp  
 // compile by using: cl /EHsc /nologo /W4  
 #include <iostream>  

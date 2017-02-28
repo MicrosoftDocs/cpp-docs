@@ -34,7 +34,6 @@ f1_keywords:
   - "strcpy"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "strcpy function"
   - "tcscpy function"

@@ -37,7 +37,6 @@ f1_keywords:
   - "CRTDBG_REPORT_FLAG"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_CRTDBG_CHECK_EVERY_16_DF macro"
   - "CRTDBG_CHECK_EVERY_16_DF macro"

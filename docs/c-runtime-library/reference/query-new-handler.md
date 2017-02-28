@@ -28,7 +28,6 @@ f1_keywords:
   - "query_new_handler"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "query_new_handler function"
   - "handler routines"

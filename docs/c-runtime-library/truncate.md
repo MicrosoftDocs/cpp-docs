@@ -13,7 +13,6 @@ f1_keywords:
   - "TRUNCATE"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "TRUNCATE constant"
   - "_TRUNCATE constant"

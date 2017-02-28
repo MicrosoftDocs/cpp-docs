@@ -102,7 +102,7 @@ long double asinhl(
   
 ## Example  
   
-```c  
+```C  
 // crt_asinh.c  
 // Compile by using: cl /W4 crt_asinh.c  
 // This program displays the hyperbolic sine of pi / 4  

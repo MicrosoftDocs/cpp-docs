@@ -27,7 +27,6 @@ f1_keywords:
   - "_setmode"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "Unicode [C++], console output"
   - "files [C++], modes"

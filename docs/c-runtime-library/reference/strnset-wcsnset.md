@@ -28,7 +28,6 @@ f1_keywords:
   - "strnset"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "strnset function"
   - "wcsnset function"

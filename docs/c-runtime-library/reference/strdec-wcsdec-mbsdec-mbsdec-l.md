@@ -37,7 +37,6 @@ f1_keywords:
   - "_wcsdec"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "mbsdec_l function"
   - "mbsdec function"

@@ -27,7 +27,6 @@ f1_keywords:
   - "_isatty"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "isatty function"
   - "character device checking"

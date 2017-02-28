@@ -36,7 +36,6 @@ f1_keywords:
   - "_iswalpha_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_iswalpha_l function"
   - "_isalpha_l function"

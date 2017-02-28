@@ -31,7 +31,6 @@ f1_keywords:
   - "_strtime_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wstrtime_s function"
   - "copying time to buffers"

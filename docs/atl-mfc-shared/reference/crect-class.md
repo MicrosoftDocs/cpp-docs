@@ -384,7 +384,7 @@ void DeflateRect(int l, int t, int r, int b) throw();
  The first two overloads deflate both pairs of opposite sides of `CRect` so that its total width is decreased by two times *x* (or `cx`) and its total height is decreased by two times *y* (or `cy`). The other two overloads deflate each side of `CRect` independently of the others.  
   
 ### Example  
-```cpp
+```cpp  
    CRect rect(10, 10, 50, 50);
    rect.DeflateRect(1, 2);
    ASSERT(rect.left == 11 && rect.right == 49);
@@ -415,7 +415,7 @@ BOOL EqualRect(LPCRECT lpRect) const throw();
 >  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
-```cpp
+```cpp  
    CRect rect1(35, 150, 10, 25);
    CRect rect2(35, 150, 10, 25);
    CRect rect3(98, 999, 6, 3);
@@ -453,7 +453,7 @@ int Height() const throw();
  CRect rect(20, 30, 80, 70);
  int nHt = rect.Height();
 
-```cpp
+```cpp  
    CRect rect(20, 30, 80, 70);
 int nHt = rect.Height();
 
@@ -540,7 +540,7 @@ BOOL IntersectRect(LPCRECT lpRect1, LPCRECT lpRect2) throw();
  CRect rectTwo(0, 75, 350,  95);
  CRect rectInter;
 
-```cpp
+```cpp  
    CRect rectOne(125,  0, 150, 200);
    CRect rectTwo(0, 75, 350, 95);
    CRect rectInter;
@@ -575,7 +575,7 @@ BOOL IsRectEmpty() const throw();
  CRect rectNone(0, 0, 0, 0);
  CRect rectSome(35, 50, 135, 150);
 
-```cpp
+```cpp  
    CRect rectNone(0, 0, 0, 0);
    CRect rectSome(35, 50, 135, 150);
 ASSERT(rectNone.IsRectEmpty());
@@ -603,7 +603,7 @@ BOOL IsRectNull() const throw();
  CRect rectNone(0, 0, 0, 0);
  CRect rectSome(35, 50, 135, 150);
 
-```cpp
+```cpp  
    CRect rectNone(0, 0, 0, 0);
    CRect rectSome(35, 50, 135, 150);
 ASSERT(rectNone.IsRectNull());
@@ -630,7 +630,7 @@ void MoveToX(int x) throw();
  CRect rect(0, 0, 100, 100);
  rect.MoveToX(10);
 
-```cpp
+```cpp  
    CRect rect(0, 0, 100, 100);
 rect.MoveToX(10);
 
@@ -661,7 +661,7 @@ void MoveToXY(POINT point) throw();
  CRect rect(0, 0, 100, 100);
  rect.MoveToXY(10, 10);
 
-```cpp
+```cpp  
    CRect rect(0, 0, 100, 100);
    rect.MoveToXY(10, 10);
 // rect is now (10, 10, 110, 110);
@@ -685,7 +685,7 @@ void MoveToY(int y) throw();
  CRect rect(0, 0, 100, 100);
  rect.MoveToY(10);
 
-```cpp
+```cpp  
    CRect rect(0, 0, 100, 100);
    rect.MoveToY(10);
 // rect is now (0, 10, 100, 110);
@@ -711,7 +711,7 @@ void NormalizeRect() throw();
  CRect rect1(110, 100, 250, 310);
  CRect rect2(250, 310, 110, 100);
 
-```cpp
+```cpp  
    CRect rect1(110, 100, 250, 310);
    CRect rect2(250, 310, 110, 100);
 rect1.NormalizeRect();
@@ -749,7 +749,7 @@ void OffsetRect(SIZE size) throw();
  CRect rect(0, 0, 35, 35);
  rect.OffsetRect(230, 230);
 
-```cpp
+```cpp  
    CRect rect(0, 0, 35, 35);
    rect.OffsetRect(230, 230);
 
@@ -799,7 +799,7 @@ void operator=(const RECT& srcRect) throw();
  CRect rect(0, 0, 127, 168);
  CRect rect2;
 
-```cpp
+```cpp  
    CRect rect(0, 0, 127, 168);
    CRect rect2;
 
@@ -833,7 +833,7 @@ BOOL operator==(const RECT& rect) const throw();
  CRect rect2(35, 150, 10, 25);
  CRect rect3(98, 999,  6,  3);
 
-```cpp
+```cpp  
    CRect rect1(35, 150, 10, 25);
    CRect rect2(35, 150, 10, 25);
    CRect rect3(98, 999, 6, 3);
@@ -875,7 +875,7 @@ BOOL operator!=(const RECT& rect) const throw();
  CRect rect2(35, 150, 10, 25);
  CRect rect3(98, 999,  6,  3);
 
-```cpp
+```cpp  
    CRect rect1(35, 150, 10, 25);
    CRect rect2(35, 150, 10, 25);
    CRect rect3(98, 999, 6, 3);
@@ -921,7 +921,7 @@ void operator+=(LPCRECT lpRect) throw();
  CPoint pt(35, 65);
  CRect rect2(135, 300, 235, 400);
 
-```cpp
+```cpp  
    CRect   rect1(100, 235, 200, 335);
    CPoint pt(35, 65);
    CRect   rect2(135, 300, 235, 400);
@@ -960,7 +960,7 @@ void operator-=(LPCRECT lpRect) throw();
  CPoint pt(35, 65);
  rect1 -= pt;
 
-```cpp
+```cpp  
    CRect   rect1(100, 235, 200, 335);
    CPoint pt(35, 65);
 
@@ -1012,7 +1012,7 @@ void operator|=(const RECT& rect) throw();
  CRect rect2( 0, 100, 300, 200);
  rect1 |= rect2;
 
-```cpp
+```cpp  
    CRect   rect1(100,  0, 200, 300);
    CRect   rect2(0, 100, 300, 200);
 
@@ -1050,7 +1050,7 @@ CRect operator+(SIZE size) const throw();
  The third overload returns a new `CRect` that is equal to `CRect` inflated by the number of units specifed in each member of the parameter.  
   
 ### Example  
-```cpp
+```cpp  
    CRect   rect1(100, 235, 200, 335);
    CPoint pt(35, 65);
    CRect   rect2;
@@ -1089,7 +1089,7 @@ CRect operator-(LPCRECT lpRect) const throw();
  The third overload returns a new `CRect` that is equal to `CRect` deflated by the number of units specifed in each member of the parameter. Note that this overload functions like [DeflateRect](#deflaterect), not [SubtractRect](#subtractrect).  
   
 ### Example  
-```cpp
+```cpp  
    CRect   rect1(100, 235, 200, 335);
    CPoint pt(35, 65);
    CRect   rect2;
@@ -1121,7 +1121,7 @@ CRect operator&(const RECT& rect2) const throw();
 >  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
-```cpp
+```cpp  
    CRect   rect1(100,  0, 200, 300);
    CRect   rect2(0, 100, 300, 200);
    CRect   rect3;
@@ -1159,7 +1159,7 @@ rect2) const throw();
  CRect rect2( 0, 100, 300, 200);
  CRect rect3;
 
-```cpp
+```cpp  
    CRect   rect1(100,  0, 200, 300);
    CRect   rect2(0, 100, 300, 200);
    CRect   rect3;
@@ -1242,7 +1242,7 @@ void SetRect(int x1, int y1, int x2, int y2) throw();
  CRect rect;
  rect.SetRect(256, 256, 512, 512);
 
-```cpp
+```cpp  
    CRect rect;
    rect.SetRect(256, 256, 512, 512);
    ASSERT(rect == CRect(256, 256, 512, 512));   
@@ -1318,7 +1318,7 @@ BOOL SubtractRect(LPCRECT lpRectSrc1, LPCRECT lpRectSrc2) throw();
 >  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
-```cpp
+```cpp  
    RECT   rectOne;
    RECT   rectTwo;
 
@@ -1393,7 +1393,7 @@ BOOL UnionRect(LPCRECT lpRect1, LPCRECT lpRect2) throw();
 >  Both of the rectangles must be normalized or this function may fail. You can call [NormalizeRect](#normalizerect) to normalize the rectangles before calling this function.  
   
 ### Example  
-```cpp
+```cpp  
    CRect   rect1(100,  0, 200, 300);
    CRect   rect2(0, 100, 300, 200);
    CRect   rect3;
@@ -1421,7 +1421,7 @@ int Width() const throw();
   
 ### Example  
 
-```cpp
+```cpp  
    CRect rect(20, 30, 80, 70);
 int nWid = rect.Width();
    // nWid is now 60

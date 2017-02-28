@@ -12,7 +12,6 @@ f1_keywords:
   - "auto_rename"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "auto_rename attribute"
 ms.assetid: 1075f3ab-f6fc-4e04-8e22-ebe02695a567

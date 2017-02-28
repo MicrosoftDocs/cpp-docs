@@ -13,7 +13,6 @@ f1_keywords:
   - "vc-pragma.warning"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "pragmas, warning"
   - "push pragma warning"

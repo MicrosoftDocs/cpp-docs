@@ -31,7 +31,6 @@ f1_keywords:
   - "_ultoa_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_ultoa_s function"
   - "converting integers"

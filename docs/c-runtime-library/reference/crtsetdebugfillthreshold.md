@@ -27,7 +27,6 @@ f1_keywords:
   - "CrtSetDebugFillThreshold"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "debug, buffer-filling behavior"
   - "CrtSetDebugFillThreshold function"

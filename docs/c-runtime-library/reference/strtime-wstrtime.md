@@ -32,7 +32,6 @@ f1_keywords:
   - "_tstrtime"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "strtime function"
   - "_strtime function"

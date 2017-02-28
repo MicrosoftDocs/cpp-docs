@@ -13,7 +13,6 @@ f1_keywords:
   - "vc.editors.gridsettings"
 dev_langs: 
   - "C++"
-  - "C++"
 helpviewer_keywords: 
   - "Grid Settings dialog box"
 ms.assetid: 59ce033a-ff10-48cd-b414-f9cb74da6789

@@ -27,7 +27,6 @@ f1_keywords:
   - "_freea"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_freea function"
   - "freea function"

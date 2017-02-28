@@ -27,7 +27,6 @@ f1_keywords:
   - "fread"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "reading data [C++], from input streams"
   - "fread function"

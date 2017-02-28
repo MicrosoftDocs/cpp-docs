@@ -34,7 +34,6 @@ f1_keywords:
   - "ftime64_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "ftime32_s function"
   - "ftime_s function"

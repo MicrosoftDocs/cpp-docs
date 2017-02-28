@@ -32,7 +32,6 @@ f1_keywords:
   - "floorf"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "floor function"
   - "floorf function"

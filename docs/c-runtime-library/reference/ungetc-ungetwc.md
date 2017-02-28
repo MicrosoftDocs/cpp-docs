@@ -30,7 +30,6 @@ f1_keywords:
   - "ungetc"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "ungetwc function"
   - "ungettc function"

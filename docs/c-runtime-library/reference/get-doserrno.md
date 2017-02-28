@@ -28,7 +28,6 @@ f1_keywords:
   - "get_doserrno"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "get_doserrno function"
   - "_get_doserrno function"

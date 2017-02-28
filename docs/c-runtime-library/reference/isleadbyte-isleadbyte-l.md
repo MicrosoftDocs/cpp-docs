@@ -30,7 +30,6 @@ f1_keywords:
   - "isleadbyte"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "lead bytes"
   - "_isleadbyte_l function"

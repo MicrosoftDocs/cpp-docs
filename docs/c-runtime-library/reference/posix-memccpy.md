@@ -26,7 +26,6 @@ f1_keywords:
   - "memccpy"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "memccpy function"
 ms.assetid: e9951812-2b69-43e9-bbee-a0001bce4d80

@@ -28,7 +28,6 @@ f1_keywords:
   - "findclose"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_findclose function"
   - "findclose function"

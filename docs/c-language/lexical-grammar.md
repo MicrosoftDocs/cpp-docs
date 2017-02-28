@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "lexical grammar"
 ms.assetid: cb5847fa-aef3-47f5-8825-97c2bf4a3d87

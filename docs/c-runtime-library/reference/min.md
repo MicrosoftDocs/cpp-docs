@@ -28,7 +28,6 @@ f1_keywords:
   - "_min"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "__min macro"
   - "min macro"

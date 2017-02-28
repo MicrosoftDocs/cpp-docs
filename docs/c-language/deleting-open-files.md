@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "files [C++], deleting"
 ms.assetid: 4fba7fb2-df0a-458e-b760-8858e12b855c

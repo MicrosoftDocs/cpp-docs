@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "fmod function"
 ms.assetid: ffb3d9b9-b6e4-45e2-aadb-af60c3ff54f6

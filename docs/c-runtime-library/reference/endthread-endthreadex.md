@@ -31,7 +31,6 @@ f1_keywords:
   - "endthread"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_endthread function"
   - "endthread function"

@@ -34,7 +34,6 @@ f1_keywords:
   - "complex/csinhf"
   - "complex/csinhl"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "csinh function"

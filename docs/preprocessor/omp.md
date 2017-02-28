@@ -13,7 +13,6 @@ f1_keywords:
   - "omp_CPP"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "pragmas, omp"
   - "omp pragma"

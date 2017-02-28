@@ -99,6 +99,8 @@ class CAdapt
 CAdapt();
 CAdapt(const T& rSrc);
 CAdapt(const CAdapt& rSrCA);
+CAdapt(T&& rSrCA);  // (Visual Studio 2017)
+CAdapt(CAdapt<T>&& rSrCA) noexcept; // (Visual Studio 2017)
 ```  
   
 ### Parameters  
@@ -106,7 +108,7 @@ CAdapt(const CAdapt& rSrCA);
  A variable of the type being adapted to be copied into the newly constructed adapter object.  
   
  *rSrCA*  
- An adapter object whose contained data should be copied into the newly constructed adapter object.  
+ An adapter object whose contained data should be copied (or moved) into the newly constructed adapter object.  
   
 ##  <a name="m_t"></a>  CAdapt::m_T  
  Holds the data being adapted.  
@@ -157,11 +159,16 @@ bool operator<(const T& rSrc) const;
   
 ```
 CAdapt& operator= (const T& rSrc);
+CAdapt& operator= (T&& rSrCA); // (Visual Studio 2017)
+CAdapt& operator= (CAdapt<T>&& rSrCA) noexcept; // (Visual Studio 2017)
 ```  
   
 ### Parameters  
  `rSrc`  
- A reference to an object of the adapted type to be copied.  
+ A reference to an object of the adapted type to be copied. 
+
+ `rSrCA`
+  A reference to an object to be moved. 
   
 ### Return Value  
  A reference to the current object.  

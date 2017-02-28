@@ -1,5 +1,5 @@
 ---
-title: "Grammar Summary (C-C++) | Microsoft Docs"
+title: "Grammar Summary (C/C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "grammar"
   - "preprocessor, grammar"

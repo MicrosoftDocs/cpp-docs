@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "punctuators"
 ms.assetid: 8377c8e1-3b7b-4a99-9db9-db7b96edef80

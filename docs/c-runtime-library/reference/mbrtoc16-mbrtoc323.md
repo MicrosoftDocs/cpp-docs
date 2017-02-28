@@ -31,7 +31,6 @@ f1_keywords:
   - "uchar/mbrtoc16"
   - "uchar/mbrtoc32"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "mbrtoc16 function"

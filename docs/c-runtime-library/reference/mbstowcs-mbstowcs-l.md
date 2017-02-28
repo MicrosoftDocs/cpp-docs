@@ -28,7 +28,6 @@ f1_keywords:
   - "mbstowcs"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_mbstowcs_l function"
   - "mbstowcs_l function"

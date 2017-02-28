@@ -20,7 +20,6 @@ f1_keywords:
   - "_doserrno"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "error codes, printing"
   - "sys_errlist global variable"

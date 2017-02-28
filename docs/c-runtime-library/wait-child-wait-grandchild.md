@@ -15,7 +15,6 @@ f1_keywords:
   - "_WAIT_CHILD"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "WAIT_CHILD constant"
   - "WAIT_GRANDCHILD constant"

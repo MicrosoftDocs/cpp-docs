@@ -31,7 +31,6 @@ f1_keywords:
   - "_access_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "access_s function"
   - "taccess_s function"

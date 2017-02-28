@@ -31,7 +31,6 @@ f1_keywords:
   - "_ismbbkalnum_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_ismbbkalnum_l function"
   - "ismbbkalnum_l function"

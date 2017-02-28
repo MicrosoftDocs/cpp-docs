@@ -18,7 +18,6 @@ f1_keywords:
   - "_O_WRONLY"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_O_RDWR constant"
   - "O_EXCL constant"

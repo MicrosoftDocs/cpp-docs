@@ -15,7 +15,6 @@ f1_keywords:
   - "_wpgmptr"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wpgmptr function"
   - "_wpgmptr function"

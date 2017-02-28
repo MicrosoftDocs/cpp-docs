@@ -37,7 +37,6 @@ f1_keywords:
   - "ismbclegal"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "ismbcsymbol function"
   - "ismbclegal_l function"

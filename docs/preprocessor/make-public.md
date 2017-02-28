@@ -13,7 +13,6 @@ f1_keywords:
   - "make_public_CPP"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "pragmas, make_public"
   - "make_public pragma"

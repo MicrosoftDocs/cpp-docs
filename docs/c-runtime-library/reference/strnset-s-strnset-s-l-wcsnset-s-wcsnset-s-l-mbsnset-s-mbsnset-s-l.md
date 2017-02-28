@@ -46,7 +46,6 @@ f1_keywords:
   - "wcsnset_s_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tcsnset_s function"
   - "mbsnset_s_l function"

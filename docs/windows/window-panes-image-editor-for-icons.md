@@ -13,7 +13,6 @@ f1_keywords:
   - "vc.editors.icon"
 dev_langs: 
   - "C++"
-  - "C++"
 helpviewer_keywords: 
   - "graphics editor [C++]"
   - "Image editor [C++], panes"

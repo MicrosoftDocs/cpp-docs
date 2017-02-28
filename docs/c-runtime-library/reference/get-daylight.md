@@ -29,7 +29,6 @@ f1_keywords:
   - "_get_daylight"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "get_daylight function"
   - "daylight saving time offset"

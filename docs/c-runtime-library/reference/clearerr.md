@@ -27,7 +27,6 @@ f1_keywords:
   - "clearerr"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "error indicator for streams"
   - "resetting stream error indicator"

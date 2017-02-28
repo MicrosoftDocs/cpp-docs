@@ -110,7 +110,7 @@ long double remainderl(
   
 ## Example  
   
-```c  
+```C  
 // crt_remainder.c  
 // This program displays a floating-point remainder.  
   

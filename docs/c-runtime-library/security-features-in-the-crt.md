@@ -14,7 +14,6 @@ f1_keywords:
   - "_CRT_SECURE_NO_WARNINGS"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "security deprecation warnings [C++]"
   - "CRT_NONSTDC_NO_DEPRECATE"

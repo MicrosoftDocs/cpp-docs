@@ -34,7 +34,6 @@ f1_keywords:
   - "byteswap_ushort"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_byteswap_uint64 function"
   - "byteswap_uint64 function"

@@ -12,7 +12,6 @@ f1_keywords:
   - "raw_dispinterfaces"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "raw_dispinterfaces attribute"
 ms.assetid: f762864d-29bf-445b-825a-ba7b29a95409

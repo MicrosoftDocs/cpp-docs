@@ -20,7 +20,6 @@ f1_keywords:
   - "new[]"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "operator new[]"
   - "vector new"

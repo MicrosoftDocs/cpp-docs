@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "sequence points"
 ms.assetid: c84885a5-4336-4eba-a643-058df4249903

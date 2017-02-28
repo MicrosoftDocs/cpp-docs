@@ -46,7 +46,6 @@ f1_keywords:
   - "_mbslwr_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_tcslwr_s function"
   - "wcslwr_s function"

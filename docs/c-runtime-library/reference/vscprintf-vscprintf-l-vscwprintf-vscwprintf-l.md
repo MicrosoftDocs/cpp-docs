@@ -36,7 +36,6 @@ f1_keywords:
   - "_vscwprintf_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "vsctprintf function"
   - "_vscprintf_l function"

@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "inline functions [C++], with dllexport and dllimport"
   - "dllimport attribute [C++], inline functions"

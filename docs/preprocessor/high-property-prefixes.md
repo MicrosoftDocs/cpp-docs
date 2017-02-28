@@ -12,7 +12,6 @@ f1_keywords:
   - "high_property_prefixes"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "high_property_prefixes attribute"
 ms.assetid: 91c6cc2b-19b6-4aba-8831-d9e5cccb58b5

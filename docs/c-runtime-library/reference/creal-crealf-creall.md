@@ -34,7 +34,6 @@ f1_keywords:
   - "complex/crealf"
   - "complex/creall"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "creal function"

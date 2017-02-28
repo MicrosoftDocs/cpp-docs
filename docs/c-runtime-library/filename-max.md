@@ -12,7 +12,6 @@ f1_keywords:
   - "FILENAME_MAX"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "FILENAME_MAX constant"
 ms.assetid: fe368d24-3f31-42d6-859c-cbd84f446ee5

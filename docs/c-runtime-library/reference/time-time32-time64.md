@@ -34,7 +34,6 @@ f1_keywords:
   - "_time32"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "time32 function"
   - "_time32 function"
@@ -101,7 +100,7 @@ __time64_t _time64(
   
 ## Example  
   
-```c  
+```C  
 // crt_times.c  
 // compile with: /W3  
 // This program demonstrates these time and date functions:  

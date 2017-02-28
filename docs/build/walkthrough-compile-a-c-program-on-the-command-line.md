@@ -8,8 +8,6 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "command-line applications [C++], C programs"
   - "Visual C, compiling"
@@ -89,7 +87,7 @@ Visual C++ includes a C compiler that you can use to create everything from basi
   
 3.  In Notepad, enter the following lines of code:  
   
-    ```c  
+    ```C  
     #include <stdio.h>  
   
     int main()  

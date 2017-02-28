@@ -26,7 +26,6 @@ f1_keywords:
   - "lfind"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "lfind function"
 ms.assetid: 2528e787-94b6-4740-8a8d-6efc276d1f42

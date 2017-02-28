@@ -34,7 +34,6 @@ f1_keywords:
   - "toupper"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_toupper function"
   - "towupper function"

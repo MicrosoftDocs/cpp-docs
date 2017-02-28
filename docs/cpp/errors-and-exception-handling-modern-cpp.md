@@ -48,7 +48,6 @@ In modern C++, in most scenarios, the preferred way to report and handle both lo
  The following simplified example shows the necessary syntax for throwing and catching exceptions in C++.  
   
 ```cpp  
-  
 #include <stdexcept>  
 #include <limits>  
 #include <iostream>  

@@ -38,7 +38,6 @@ f1_keywords:
   - "_sinhl"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "sinh function"
   - "_sinl function"

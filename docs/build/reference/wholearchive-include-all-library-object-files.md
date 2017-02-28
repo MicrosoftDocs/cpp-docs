@@ -7,8 +7,6 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 dev_langs: 
-  - "Assembly"
-  - "C"
   - "C++"
 ms.assetid: ee92d12f-18af-4602-9683-d6223be62ac9
 caps.latest.revision: 5

@@ -30,7 +30,6 @@ f1_keywords:
   - "_wexecvp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_execvp function"
   - "_wexecvp function"

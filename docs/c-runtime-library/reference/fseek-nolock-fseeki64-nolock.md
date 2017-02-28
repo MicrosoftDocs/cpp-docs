@@ -30,7 +30,6 @@ f1_keywords:
   - "fseeki64_nolock"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_fseek_nolock function"
   - "fseeki64_nolock function"

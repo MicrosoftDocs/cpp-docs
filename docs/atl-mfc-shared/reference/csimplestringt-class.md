@@ -48,8 +48,8 @@ This class represents a `CSimpleStringT` object.
 ```
 template <typename BaseType>
 class CSimpleStringT
-
 ```  
+  
 ### Parameters  
  `BaseType`  
  The character type of the string class. Can be one of the following:  
@@ -148,7 +148,7 @@ void Append(PCXSTR pszSrc);
 ### Example  
  The following example demonstrates the use of `CSimpleStringT::Append`.  
   
-```cpp
+```cpp  
 CSimpleString str1(pMgr), str2(pMgr);
 str1.SetString(_T("Soccer is"));
 str2.SetString(_T(" an elegant game"));
@@ -198,8 +198,8 @@ static void CopyChars(
 ### Example  
  The following example demonstrates the use of `CSimpleStringT::CopyChars`.  
   
-```cpp
- CSimpleString str(_T("xxxxxxxxxxxxxxxxxxx"), 20, pMgr);
+```cpp  
+CSimpleString str(_T("xxxxxxxxxxxxxxxxxxx"), 20, pMgr);
 TCHAR* pszSrc = _T("Hello world!");
 _tprintf_s(_T("%s\n"), str);
 str.CopyChars(str.GetBuffer(), pszSrc, 12);
@@ -266,7 +266,7 @@ explicit CSimpleStringT(IAtlStringMgr* pStringMgr) throw();
 ### Example  
  The following example demonstrates the use of `CSimpleStringT::CSimpleStringT` by using the ATL `typedef``CSimpleString`. `CSimpleString` is a commonly used specialization of the class template `CSimpleStringT`.  
   
-```cpp
+```cpp  
 CSimpleString s1(pMgr);
 // Empty string
 CSimpleString s2(_T("cat"), pMgr);

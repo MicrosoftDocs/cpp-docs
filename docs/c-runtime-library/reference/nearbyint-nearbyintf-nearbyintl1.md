@@ -34,7 +34,6 @@ f1_keywords:
   - "math/narbyintf"
   - "math/narbyintl"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "nearbyint function"

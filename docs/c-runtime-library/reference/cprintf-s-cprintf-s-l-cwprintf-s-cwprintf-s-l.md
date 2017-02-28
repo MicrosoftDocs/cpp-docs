@@ -38,7 +38,6 @@ f1_keywords:
   - "tcprintf_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tcprintf_s_l function"
   - "_cprintf_s_l function"

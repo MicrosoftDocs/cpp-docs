@@ -42,7 +42,6 @@ f1_keywords:
   - "_wcsupr"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tcsupr_l function"
   - "mbsupr function"

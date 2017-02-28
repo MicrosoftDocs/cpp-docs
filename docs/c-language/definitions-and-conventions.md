@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "nonterminals definition"
 ms.assetid: f9b3cf5f-6a7c-4a10-9b18-9d4a43efdaeb

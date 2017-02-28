@@ -28,7 +28,6 @@ f1_keywords:
   - "_set_new_mode"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "handler modes"
   - "_set_new_mode function"

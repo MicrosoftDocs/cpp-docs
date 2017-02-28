@@ -1,5 +1,5 @@
 ---
-title: "#undef Directive (C-C++) | Microsoft Docs"
+title: "#undef Directive (C/C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -12,7 +12,6 @@ f1_keywords:
   - "#undef"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "#undef directive"
   - "undef directive (#undef)"

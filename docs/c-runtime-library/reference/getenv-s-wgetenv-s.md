@@ -30,7 +30,6 @@ f1_keywords:
   - "_wgetenv_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_tgetenv_s function"
   - "wgetenv_s function"

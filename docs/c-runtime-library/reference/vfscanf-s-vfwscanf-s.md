@@ -29,7 +29,6 @@ f1_keywords:
   - "_vftscanf_s"
 dev_langs: 
   - "C++"
-  - "C"
 ms.assetid: 9b0133f0-9a18-4581-b24b-3b72683ad432
 caps.latest.revision: 6
 author: "corob-msft"

@@ -26,7 +26,6 @@ f1_keywords:
   - "close"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "close function"
 ms.assetid: c79689f4-9c86-4a4a-a256-d22e3498f55d

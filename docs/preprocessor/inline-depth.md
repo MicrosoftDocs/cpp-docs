@@ -13,7 +13,6 @@ f1_keywords:
   - "vc-pragma.inline_depth"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "pragmas, inline_depth"
   - "inline_depth pragma"

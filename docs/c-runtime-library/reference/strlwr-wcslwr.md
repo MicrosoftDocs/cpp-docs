@@ -28,7 +28,6 @@ f1_keywords:
   - "strlwr"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "strlwr function"
   - "wcslwr function"

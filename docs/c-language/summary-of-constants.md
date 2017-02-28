@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "constants, C"
 ms.assetid: 4158234c-e189-4e25-970f-52a04bc6380a

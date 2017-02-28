@@ -28,7 +28,6 @@ f1_keywords:
   - "_get_pgmptr"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "get_pgmptr function"
   - "_get_pgmptr function"

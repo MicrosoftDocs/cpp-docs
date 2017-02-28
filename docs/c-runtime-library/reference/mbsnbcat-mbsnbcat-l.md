@@ -31,7 +31,6 @@ f1_keywords:
   - "_mbsnbcat_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tcsncat_l function"
   - "_tcsncat function"

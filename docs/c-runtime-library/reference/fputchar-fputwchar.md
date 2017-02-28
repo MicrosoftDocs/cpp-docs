@@ -33,7 +33,6 @@ f1_keywords:
   - "_fputchar"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "fputchar function"
   - "standard output, writing to"

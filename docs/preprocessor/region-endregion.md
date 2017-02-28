@@ -15,7 +15,6 @@ f1_keywords:
   - "vc-pragma.region"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "pragmas, region"
   - "pragmas, endregion"

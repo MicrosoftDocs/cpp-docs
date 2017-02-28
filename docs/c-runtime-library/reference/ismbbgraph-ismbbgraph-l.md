@@ -31,7 +31,6 @@ f1_keywords:
   - "ismbbgraph_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_ismbbgraph_l function"
   - "ismbbgraph_l function"

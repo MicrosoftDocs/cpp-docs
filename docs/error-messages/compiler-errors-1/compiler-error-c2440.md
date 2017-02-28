@@ -230,7 +230,7 @@ C2440 can occur because of conformance changes to the compiler in Visual Studio 
   
 This sample generates C2440:  
   
-```cpp
+```cpp  
 // c2440h.cpp
 
 template<int *a>

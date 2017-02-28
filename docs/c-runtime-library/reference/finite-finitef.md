@@ -33,7 +33,6 @@ f1_keywords:
   - "float/_finite"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "finite function"
   - "_finite function"

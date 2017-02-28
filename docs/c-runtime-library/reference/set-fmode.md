@@ -28,7 +28,6 @@ f1_keywords:
   - "set_fmode"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "file translation [C++], default mode"
   - "_set_fmode function"

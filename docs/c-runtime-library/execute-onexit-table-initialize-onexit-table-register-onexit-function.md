@@ -21,7 +21,6 @@ f1_keywords:
   - "_register_onexit_function"
   - "process/_register_onexit_function"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "_execute_onexit_table function"

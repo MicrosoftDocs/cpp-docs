@@ -32,7 +32,6 @@ f1_keywords:
   - "_mbsnbcpy_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "mbsnbcpy function"
   - "_mbsnbcpy_l function"

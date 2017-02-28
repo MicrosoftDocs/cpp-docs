@@ -34,7 +34,6 @@ f1_keywords:
   - "complex/cabsf"
   - "complex/cabsl"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "cabs function"

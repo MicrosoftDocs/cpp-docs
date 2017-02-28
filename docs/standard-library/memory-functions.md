@@ -123,7 +123,6 @@ void* align(
  The modified `Ptr` and `Space` parameters enable you to call `align()` repeatedly on the same buffer, possibly with different values for `Alignment` and `Size`. The following code snippet shows one use of `align()`.  
   
 ```cpp  
-  
 #include <type_traits> // std::alignment_of()  
 #include <memory>  
 //...  

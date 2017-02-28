@@ -26,7 +26,6 @@ f1_keywords:
   - "_write"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_write function"
   - "write function"

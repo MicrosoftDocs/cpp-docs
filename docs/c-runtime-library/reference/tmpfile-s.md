@@ -27,7 +27,6 @@ f1_keywords:
   - "tmpfile_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "temporary files"
   - "tmpfile_s function"

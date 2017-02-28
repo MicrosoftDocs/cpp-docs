@@ -34,8 +34,7 @@ translation.priority.ht:
 Use **typename** for qualified names in template definitions to tell the compiler that the given qualified name identifies a type. For more information, see [typename](../cpp/typename.md).  
   
 ```cpp  
-  
-      // template_name_resolution1.cpp  
+// template_name_resolution1.cpp  
 #include <stdio.h>  
 template <class T> class X  
 {  
@@ -57,9 +56,7 @@ int main()
 }  
 ```  
   
-### Output  
-  
-```  
+```Output  
 Name resolved by using typename keyword.  
 ```  
   
@@ -68,7 +65,7 @@ Name resolved by using typename keyword.
  All names are resolved as if they were dependent names. Nevertheless, we recommend that you use fully qualified names if there is any possible conflict.  
   
 ```cpp  
-//template_name_resolution2.cpp  
+// template_name_resolution2.cpp  
 // compile with: /EHsc  
 #include <iostream>  
 using namespace std;  

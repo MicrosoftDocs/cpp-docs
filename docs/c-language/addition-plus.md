@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "pointers, adding integers"
 ms.assetid: b9014fee-825d-46ef-91db-5d46807081fc

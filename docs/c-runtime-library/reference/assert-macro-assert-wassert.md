@@ -32,7 +32,6 @@ f1_keywords:
   - "assert/_wassert"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "aborting programs"
   - "assert function"

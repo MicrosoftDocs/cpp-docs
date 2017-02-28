@@ -12,7 +12,6 @@ f1_keywords:
   - "c.system"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "Windows [C++], system calls"
   - "system calls"

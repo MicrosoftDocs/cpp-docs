@@ -37,7 +37,7 @@ Represents a `struct` that defines a [try_to_lock](../standard-library/mutex-fun
   
 ## Syntax  
   
-```cpp
+```cpp  
 struct try_to_lock_t;
 ```  
   

@@ -13,7 +13,6 @@ f1_keywords:
   - "bss_seg_CPP"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "pragmas, bss_seg"
   - "bss_seg pragma"

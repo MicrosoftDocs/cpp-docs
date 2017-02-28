@@ -46,7 +46,6 @@ f1_keywords:
   - "_strupr_s_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "mbsupr_s_l function"
   - "strupr_s_l function"

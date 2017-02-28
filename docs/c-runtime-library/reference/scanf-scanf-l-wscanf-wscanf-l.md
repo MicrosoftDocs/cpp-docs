@@ -34,7 +34,6 @@ f1_keywords:
   - "_tscanf_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tscanf_l function"
   - "_tscanf_l function"

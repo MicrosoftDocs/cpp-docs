@@ -39,7 +39,6 @@ f1_keywords:
   - "_mbsninc"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_mbsninc_l function"
   - "mbsninc function"

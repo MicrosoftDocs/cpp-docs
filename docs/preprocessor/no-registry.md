@@ -12,7 +12,6 @@ f1_keywords:
   - "no_registry"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "no_registry attribute"
 ms.assetid: d30de4e2-551c-428c-98fd-951330d578d3

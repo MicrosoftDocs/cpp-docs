@@ -27,7 +27,6 @@ f1_keywords:
   - "_malloca"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "memory allocation, stack"
   - "malloca function"

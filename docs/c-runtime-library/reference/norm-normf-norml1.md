@@ -34,7 +34,6 @@ f1_keywords:
   - "complex/normf"
   - "complex/norml"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "norm function"

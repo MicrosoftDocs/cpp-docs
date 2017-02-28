@@ -26,7 +26,6 @@ f1_keywords:
   - "spawnle"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "spawnle function"
 ms.assetid: 7c90cfdd-dcee-4ea6-b709-cd0f7598b0fe

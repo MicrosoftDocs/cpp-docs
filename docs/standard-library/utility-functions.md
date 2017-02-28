@@ -19,7 +19,7 @@ manager: "ghogen"
 ##  <a name="exchange"></a>  exchange  
  **(C++14)** Assigns a new value to an object and returns its old value.  
   
-```cpp
+```cpp  
 template <class T, class Other = T>
 T exchange(T& val, Other&& new_val)
 ```  

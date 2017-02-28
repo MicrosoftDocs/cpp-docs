@@ -48,7 +48,6 @@ f1_keywords:
   - "string/_strnicmp_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tcsnicmp function"
   - "_tcsncicmp function"

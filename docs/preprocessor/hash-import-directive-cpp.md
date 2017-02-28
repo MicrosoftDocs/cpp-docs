@@ -12,7 +12,6 @@ f1_keywords:
   - "#import"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - ".tlh files"
   - "#import directive"

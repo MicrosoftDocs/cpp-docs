@@ -16,7 +16,6 @@ f1_keywords:
   - "type_traits/std::is_trivially_copyable"
 dev_langs: 
   - "C++"
-  - "c++"
 helpviewer_keywords: 
   - "is_trivially_copyable"
 ms.assetid: 89a53bf8-036c-4108-91e1-fe34adbde8b3

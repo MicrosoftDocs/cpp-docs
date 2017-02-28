@@ -28,7 +28,6 @@ f1_keywords:
   - "fread_nolock"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "reading data [C++], from input streams"
   - "data [C++], reading from input stream"

@@ -30,7 +30,6 @@ f1_keywords:
   - "_putwch"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_putch function"
   - "characters, writing"

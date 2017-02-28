@@ -37,6 +37,8 @@ translation.priority.ht:
 # Compiler Warning (level 2) C4412
 'function' : function signature contains type 'type'; C++ objects are unsafe to pass between pure code and mixed or native.  
   
+ The **/clr:pure** compiler option is deprecated in Visual Studio 2015.  
+  
  The compiler detected a potentially unsafe situation that could result in a runtime error: a call is being made from a **/clr:pure** compiland to a function that was imported via dllimport and the function signature contains an unsafe type. A type is unsafe if it contains a member function or has a data member that is an unsafe type or an indirection to an unsafe type.  
   
  This is unsafe because of the difference in the default calling conventions between pure and native code (or mixed native and managed). When importing (via `dllimport`) a function into a **/clr:pure** compiland, ensure that the declarations of each type in the signature are identical to those in the compiland that exports the function (being especially careful about differences in implicit calling conventions).  
@@ -112,7 +114,7 @@ __declspec(dllexport) Safe * __cdecl func2() { return new Safe; }
 ```  
   
 ## Example  
- The default calling convention in a **/clr:pure** compilation is different from a native compilation.  When C4412.h is included, `Test` will be default to `__clrcall`. If you compile and run this program (do not use **/c**), the program will throw an exception.  
+ The default calling convention in a **/clr:pure** compilation is different from a native compilation.  When C4412.h is included, `Test` defaults to `__clrcall`. If you compile and run this program (do not use **/c**), the program will throw an exception.  
   
  The following sample generates C4412.  
   

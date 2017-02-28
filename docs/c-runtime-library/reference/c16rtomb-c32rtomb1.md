@@ -31,7 +31,6 @@ f1_keywords:
   - "uchar/c16rtomb"
   - "uchar/c32rtomb"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "c16rtomb function"

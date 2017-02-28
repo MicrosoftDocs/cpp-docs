@@ -12,7 +12,6 @@ f1_keywords:
   - "vc.editors.image.drawing"
 dev_langs: 
   - "C++"
-  - "C++"
 helpviewer_keywords: 
   - "Image editor [C++], selecting drawing tools"
   - "Image editor [C++], toolbar"

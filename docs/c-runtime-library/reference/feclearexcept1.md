@@ -28,7 +28,6 @@ f1_keywords:
   - "feclearexcept"
   - "fenv/feclearexcept"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "feclearexcept function"

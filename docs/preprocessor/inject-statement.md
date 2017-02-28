@@ -12,7 +12,6 @@ f1_keywords:
   - "inject_statement"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "inject_statement attribute"
 ms.assetid: 07d6f0f4-d9fb-4e18-aa62-f235f142ff5e

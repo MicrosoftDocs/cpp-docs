@@ -30,7 +30,6 @@ f1_keywords:
   - "wcsdup_dbg"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_wcsdup_dbg function"
   - "stdup_dbg function"

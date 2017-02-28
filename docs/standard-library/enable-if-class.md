@@ -61,7 +61,7 @@ struct enable_if;
   
  This alias template is provided:  
   
-```cpp
+```cpp  
 template <bool B, class T = void>
 using enable_if_t = typename enable_if<B,T>::type;
 ```  
@@ -72,7 +72,7 @@ using enable_if_t = typename enable_if<B,T>::type;
   
 -   Scenario 1: Wrapping the return type of a function:  
   
- ```cpp
+ ```cpp  
     template <your_stuff>  
 typename enable_if<your_condition, your_return_type>::type
     yourfunction(args) {// ...
@@ -86,8 +86,7 @@ yourfunction(args) {// ...
   
 -   Scenario 2: Adding a function parameter that has a default argument:  
   
- ```cpp
-
+ ```cpp  
     template <your_stuff>  
 your_return_type_if_present
     yourfunction(args, enable_if_t<your condition, FOO> = BAR) {// ...
@@ -96,16 +95,14 @@ your_return_type_if_present
   
 -   Scenario 3: Adding a template parameter that has a default argument:  
   
- ```cpp
-
+ ```cpp  
     template <your_stuff, typename Dummy = enable_if_t<your_condition>>  
 rest_of_function_declaration_goes_here
 ```  
   
 -   Scenario 4: If your function has a non-templated argument, you can wrap its type:  
   
- ```cpp
-
+ ```cpp  
     template <typename T>  
 void your_function(const T& t,
     enable_if_t<is_something<T>::value, const string&>  
@@ -117,7 +114,7 @@ s) {// ...
   
  Scenario 2 leaves the parameter unnamed. You could say `::type Dummy = BAR`, but the name `Dummy` is irrelevant, and giving it a name is likely to trigger an "unreferenced parameter" warning. You have to choose a `FOO` function parameter type and `BAR` default argument.  You could say `int` and `0`, but then users of your code could accidentally pass to the function an extra integer that would be ignored. Instead, we recommend that you use `void **` and either `0` or `nullptr` because almost nothing is convertible to `void **`:  
   
-```cpp
+```cpp  
 template <your_stuff>  
 your_return_type_if_present
 yourfunction(args, typename enable_if<your_condition, void **>::type = nullptr) {// ...
@@ -141,7 +138,7 @@ yourfunction(args, typename enable_if<your_condition, void **>::type = nullptr) 
 ## Example  
  This example explains how the C++ Standard Library template function [std::make_pair()](../standard-library/utility-functions.md#make_pair) takes advantage of `enable_if`.  
   
-```cpp
+```cpp  
 void func(const pair<int, int>&);
 
 void func(const pair<string, string>&);

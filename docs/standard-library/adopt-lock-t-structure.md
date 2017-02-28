@@ -38,7 +38,7 @@ Represents a type that is used to define an [adopt_lock](../standard-library/mut
   
 ## Syntax  
   
-```cpp
+```cpp  
 struct adopt_lock_t;
 ```  
   

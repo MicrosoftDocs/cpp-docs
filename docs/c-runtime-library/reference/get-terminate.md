@@ -29,7 +29,6 @@ f1_keywords:
   - "__get_terminate"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "__get_terminate function"
   - "get_terminate function"

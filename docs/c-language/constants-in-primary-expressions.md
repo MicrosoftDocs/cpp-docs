@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "constants, primary expressions"
 ms.assetid: 11af9f60-ed5d-4860-b3e7-b91d88a05706

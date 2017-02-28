@@ -33,7 +33,6 @@ f1_keywords:
   - "stdlib/_Exit"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "exit function"
   - "_exit function"

@@ -26,7 +26,6 @@ f1_keywords:
   - "sopen"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "sopen function"
 ms.assetid: 1ce0b707-0c9e-4942-8467-ce7f6cd68acc

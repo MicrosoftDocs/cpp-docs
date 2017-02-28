@@ -34,7 +34,6 @@ f1_keywords:
   - "complex/cexpf"
   - "complex/cexpl"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "cexp function"

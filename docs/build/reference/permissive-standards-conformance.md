@@ -105,7 +105,7 @@ struct A {
 ```  
 
 #### Initialize multiple union members in a member initializer
-```cpp
+```cpp  
 union U
 {
     U()

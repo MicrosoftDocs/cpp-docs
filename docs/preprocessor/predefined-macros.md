@@ -77,7 +77,6 @@ f1_keywords:
   - "__func__"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "timestamps, preprocessor macro"
   - "cl.exe compiler, version number"
@@ -274,7 +273,7 @@ The Visual C++ compiler predefines certain preprocessor macros, depending on the
     }  
     ```  
   
--   **__cplusplus_cli** Defined as the integer literal value 200406 when compiled as C++ and the [/clr](../build/reference/clr-common-language-runtime-compilation.md), [/clr:pure](../build/reference/clr-common-language-runtime-compilation.md), or [/clr:safe](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined. When defined, **__cplusplus_cli** is in effect throughout the translation unit.  
+-   **__cplusplus_cli** Defined as the integer literal value 200406 when compiled as C++ and a [/clr](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined. When defined, **__cplusplus_cli** is in effect throughout the translation unit.  
   
     ```cpp  
     // cplusplus_cli.cpp  
@@ -343,9 +342,9 @@ The Visual C++ compiler predefines certain preprocessor macros, depending on the
   
 -   **_M_CEE** Defined as 001 if any [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined.  
   
--   **_M_CEE_PURE** Defined as 001 if the [/clr:pure](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined.  
+-   **_M_CEE_PURE** Deprecated in Visual Studio 2015. Defined as 001 if the [/clr:pure](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined.  
   
--   **_M_CEE_SAFE** Defined as 001 if the [/clr:safe](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined.  
+-   **_M_CEE_SAFE** Deprecated in Visual Studio 2015. Defined as 001 if the [/clr:safe](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined.  
   
 -   **_M_FP_EXCEPT** Defined as 1 if the [/fp:except](../build/reference/fp-specify-floating-point-behavior.md) or [/fp:strict](../build/reference/fp-specify-floating-point-behavior.md) compiler option is set. Otherwise, undefined.  
   

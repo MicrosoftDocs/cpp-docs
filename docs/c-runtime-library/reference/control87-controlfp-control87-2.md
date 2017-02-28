@@ -35,7 +35,6 @@ f1_keywords:
   - "_control87_2"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "floating-point numbers, control word"
   - "_control87 function"
@@ -144,7 +143,7 @@ _controlfp(_DN_FLUSH, _MCW_DN);
 > [!NOTE]
 >  `__control87_2` is not supported on the ARM or [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] architectures. If you use `__control87_2` and compile your program for the ARM or [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] architectures, the compiler generates an error.  
   
- These functions are ignored when you use [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) or `/clr:pure` to compile because the common language runtime (CLR) only supports the default floating-point precision.  
+ These functions are ignored when you use [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) to compile because the common language runtime (CLR) only supports the default floating-point precision.  
   
  **Hexadecimal Values**  
   

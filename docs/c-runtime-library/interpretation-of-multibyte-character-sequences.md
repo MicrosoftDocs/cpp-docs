@@ -12,7 +12,6 @@ f1_keywords:
   - "c.character.multibyte"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "MBCS [C++], locale code page"
 ms.assetid: da9150de-70ea-4d2f-90e6-ddb9202dd80b

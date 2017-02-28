@@ -30,7 +30,6 @@ f1_keywords:
   - "_tremove"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tremove function"
   - "_wremove function"

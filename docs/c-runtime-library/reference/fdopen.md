@@ -26,7 +26,6 @@ f1_keywords:
   - "fdopen"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "fdopen function"
 ms.assetid: 3243c1d2-2826-4d2d-bfa2-a2da45f9cc7a

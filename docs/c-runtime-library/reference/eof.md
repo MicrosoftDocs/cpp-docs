@@ -27,7 +27,6 @@ f1_keywords:
   - "_eof"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "eof function"
   - "end of file, testing for"

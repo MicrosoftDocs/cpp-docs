@@ -26,7 +26,6 @@ f1_keywords:
   - "tell"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tell function"
 ms.assetid: 3a92a40d-f472-4545-a493-f57c340ee798

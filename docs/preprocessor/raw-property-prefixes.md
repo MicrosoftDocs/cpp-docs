@@ -12,7 +12,6 @@ f1_keywords:
   - "raw_property_prefixes"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "raw_property_prefixes attribute"
 ms.assetid: 03a0f48c-c460-4175-a762-9f7f8d84b12f

@@ -26,7 +26,6 @@ f1_keywords:
   - "cputs"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "cputs function"
 ms.assetid: 0c2a7d4e-623a-4cb2-a0f9-1900c05bac08

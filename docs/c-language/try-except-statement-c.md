@@ -17,7 +17,6 @@ f1_keywords:
   - "__try_cpp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "try-except keyword [C]"
   - "structured exception handling, try-except"

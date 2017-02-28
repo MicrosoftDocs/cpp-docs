@@ -77,7 +77,7 @@ void __fastcall CMyClass::mymethod() { return; }
 ## Example  
  In the following example, the function `DeleteAggrWrapper` is passed arguments in registers:  
   
-```c  
+```cpp  
 // Example of the __fastcall keyword  
 #define FASTCALL    __fastcall  
   

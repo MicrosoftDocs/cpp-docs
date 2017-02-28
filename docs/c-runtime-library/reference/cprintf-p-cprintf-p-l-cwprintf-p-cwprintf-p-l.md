@@ -38,7 +38,6 @@ f1_keywords:
   - "cprintf_p_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_cwprintf_p_l function"
   - "cwprintf_p function"

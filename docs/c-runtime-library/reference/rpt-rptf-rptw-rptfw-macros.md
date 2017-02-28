@@ -42,7 +42,6 @@ f1_keywords:
   - "_RPTF1"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "debugging [CRT], using macros"
   - "_RPTW3 macro"

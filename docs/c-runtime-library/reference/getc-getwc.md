@@ -31,7 +31,6 @@ f1_keywords:
   - "getc"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "characters, reading"
   - "_gettc function"

@@ -152,7 +152,7 @@ bool valid() noexcept;
 ##  <a name="future__wait_method"></a>  future::wait  
  Blocks the current thread until the associated asynchronous state is *ready*.  
   
-```cpp
+```cpp  
 void wait() const;
 ```  
   
@@ -180,7 +180,7 @@ future_status wait_for(const chrono::duration<Rep, Period>& Rel_time) const;
 ##  <a name="future__wait_until_method"></a>  future::wait_until  
  Blocks the current thread until the associated asynchronous state is *ready* or until after a specified time point.  
   
-```cpp
+```cpp  
 template <class Clock, class Duration>
 future_status wait_until(const chrono::time_point<Clock, Duration>& Abs_time) const;
 ```  

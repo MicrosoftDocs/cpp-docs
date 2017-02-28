@@ -12,7 +12,6 @@ f1_keywords:
   - "c.runtime"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "run-time error checking"
   - "run-time errors, checking"

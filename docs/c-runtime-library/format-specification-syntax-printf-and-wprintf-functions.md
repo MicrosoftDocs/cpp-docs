@@ -20,7 +20,6 @@ f1_keywords:
   - "wprintf"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "format specification fields for printf function"
   - "print flag directives"

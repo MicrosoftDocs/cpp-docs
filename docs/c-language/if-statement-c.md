@@ -13,7 +13,6 @@ f1_keywords:
   - "if"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "if keyword [C]"
   - "else clauses"

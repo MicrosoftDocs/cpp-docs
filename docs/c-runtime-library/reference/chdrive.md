@@ -28,7 +28,6 @@ f1_keywords:
   - "_chdrive"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "drives, changing"
   - "_chdrive function"

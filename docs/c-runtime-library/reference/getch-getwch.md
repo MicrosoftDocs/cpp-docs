@@ -30,7 +30,6 @@ f1_keywords:
   - "_getwch"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "characters, getting from console"
   - "getch function"

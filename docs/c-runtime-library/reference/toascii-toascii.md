@@ -30,7 +30,6 @@ f1_keywords:
   - "ctype/__toascii"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "toascii function"
   - "string conversion, to ASCII characters"

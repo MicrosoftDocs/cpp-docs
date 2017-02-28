@@ -13,7 +13,6 @@ f1_keywords:
   - "include_alias_CPP"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "pragmas, include_alias"
   - "include_alias pragma"

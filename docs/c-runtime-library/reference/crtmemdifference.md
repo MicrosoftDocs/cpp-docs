@@ -27,7 +27,6 @@ f1_keywords:
   - "CrtMemDifference"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "CrtMemDifference function"
   - "_CrtMemDifference function"

@@ -27,7 +27,6 @@ f1_keywords:
   - "_cwait"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "cwait function"
   - "_cwait function"

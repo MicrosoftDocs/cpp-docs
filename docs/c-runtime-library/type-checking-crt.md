@@ -12,7 +12,6 @@ f1_keywords:
   - "c.types"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "checking type"
   - "variable argument functions"

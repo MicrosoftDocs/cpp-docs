@@ -20,7 +20,6 @@ f1_keywords:
   - "vprintf"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "vprintf function"
   - "formatted text [C++]"

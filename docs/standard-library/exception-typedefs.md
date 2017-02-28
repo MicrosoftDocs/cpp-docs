@@ -18,7 +18,7 @@ manager: "ghogen"
 ##  <a name="exception_ptr"></a>  exception_ptr  
  A type that describes a pointer to an exception.  
   
-```cpp
+```cpp  
 typedef unspecified exception_ptr;
 ```  
   

@@ -47,7 +47,6 @@ f1_keywords:
   - "math/nexttowardl"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_nextafter function"
   - "nextafter function"

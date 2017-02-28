@@ -30,7 +30,6 @@ f1_keywords:
   - "_onexit_m"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "onexit function"
   - "registry, registering exit routines"

@@ -31,7 +31,6 @@ f1_keywords:
   - "asinf"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "asin function"
   - "asinl function"

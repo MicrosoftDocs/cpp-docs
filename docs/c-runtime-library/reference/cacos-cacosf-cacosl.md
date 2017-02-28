@@ -34,7 +34,6 @@ f1_keywords:
   - "complex/cacosf"
   - "complex/cacosl"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "cacos function"

@@ -35,7 +35,6 @@ f1_keywords:
   - "_ftcscmp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tcscmp function"
   - "strcmp function"

@@ -49,7 +49,6 @@ f1_keywords:
   - "UINT_MAX"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "DBL_MAX_EXP constant"
   - "_DBL_RADIX constant"

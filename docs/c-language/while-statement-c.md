@@ -12,7 +12,6 @@ f1_keywords:
   - "while"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "while keyword [C]"
   - "while keyword [C], syntax"

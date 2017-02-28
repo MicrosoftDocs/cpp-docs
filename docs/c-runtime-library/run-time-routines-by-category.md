@@ -12,7 +12,6 @@ f1_keywords:
   - "c.runtime"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "routines, run-time"
   - "functions [CRT], run-time"

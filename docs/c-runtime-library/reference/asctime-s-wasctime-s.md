@@ -30,7 +30,6 @@ f1_keywords:
   - "_tasctime_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tasctime_s function"
   - "_tasctime_s function"

@@ -30,7 +30,6 @@ f1_keywords:
   - "getchar_nolock"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_getwchar_nolock function"
   - "getwchar_nolock function"

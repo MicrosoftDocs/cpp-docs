@@ -30,7 +30,6 @@ f1_keywords:
   - "_tgetenv"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "getenv function"
   - "tgetenv function"

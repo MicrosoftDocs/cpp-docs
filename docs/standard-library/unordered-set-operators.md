@@ -38,7 +38,6 @@ bool operator!=(const unordered_set <Key, Hash, Pred, Allocator>& left, const un
 ### Example  
   
 ```cpp  
-  
 // unordered_set_ne.cpp   
 // compile by using: cl.exe /EHsc /nologo /W4 /MTd   
 #include <unordered_set>   
@@ -104,7 +103,6 @@ bool operator==(const unordered_set <Key, Hash, Pred, Allocator>& left, const un
 ### Example  
   
 ```cpp  
-  
 // unordered_set_eq.cpp   
 // compile by using: cl.exe /EHsc /nologo /W4 /MTd   
 #include <unordered_set>   

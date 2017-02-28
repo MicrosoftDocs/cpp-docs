@@ -12,7 +12,6 @@ f1_keywords:
   - "c.arguments"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "argument access macros [C++]"
   - "variable-length argument lists"

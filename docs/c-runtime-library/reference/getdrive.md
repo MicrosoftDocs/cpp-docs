@@ -28,7 +28,6 @@ f1_keywords:
   - "getdrive"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "current disk drive"
   - "getdrive function"

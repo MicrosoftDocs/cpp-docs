@@ -42,7 +42,7 @@ Creates an rvalue reference type of the template parameter, if it is an object o
   
 ## Syntax  
   
-```cpp
+```cpp  
 template <class T>
 struct add_rvalue_reference;
 

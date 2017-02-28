@@ -27,7 +27,6 @@ f1_keywords:
   - "_gcvt"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_gcvt function"
   - "_CVTBUFSIZE"

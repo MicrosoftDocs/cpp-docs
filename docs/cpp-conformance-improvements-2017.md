@@ -63,7 +63,7 @@ For the complete list of conformance improvements up through Visual Studio 2015,
 Visual Studio 2017 correctly raises compiler errors related to object creation using initializer lists that were not caught in Visual Studio 2015 and could lead to crashes or undefined runtime behavior.  As per N4594 13.3.1.7p1, in copy-list-initialization, the compiler is required to consider an explicit constructor for overload resolution, but must raise an error if that overload is actually chosen. 
 
 The following two examples compile in Visual Studio 2015 but not in Visual Studio 2017.
-```cpp
+```cpp  
 struct A
 {
     explicit A(int) {} 
@@ -78,14 +78,14 @@ int main()
 }
 ```
 To correct the error, use direct initialization:
-```cpp
+```cpp  
 A a1{ 1 };
 const A& a2{ 1 };
 ```
 
 In Visual Studio 2015, the compiler erroneously treated copy-list-initialization in the same way as regular copy-initialization; it considered only converting constructors for overload resolution. In the following example, Visual Studio 2015 chooses MyInt(23) but Visual Studio 2017 correctly raises the error. 
 
-```cpp
+```cpp  
 // From http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_closed.html#1228
 struct MyList {
        explicit MyStore(int initialCapacity);
@@ -108,7 +108,7 @@ void f() {
 
 This example is similar to the previous one but raises a different error. It succeeds in Visual Studio 2015 and fails in Visual Studio 2017 with C2668. 
 
-```cpp
+```cpp  
 struct A {
     explicit A(int) {}
 };
@@ -129,7 +129,7 @@ int main()
 ### Deprecated typedefs
 Visual Studio 2017 now issues the correct warning for deprecated typedefs that are declared in a class or struct. The following example compiles without warnings in Visual Studio 2015 but produces C4996 in Visual Studio 2017.
 
-```cpp
+```cpp  
 struct A 
 {
     // also for __declspec(deprecated) 
@@ -162,7 +162,7 @@ To correct the error, either declare the array::size() function as constexpr or 
 ### Class types passed to variadic functions
 In Visual Studio 2017, classes or structs that are passed to a variadic function such as printf must be trivially copyable. When passing such objects, the compiler simply makes a bitwise copy and does not call the constructor or destructor. 
 
-```cpp
+```cpp  
 #include <atomic>
 #include <memory>
 #include <stdio.h>
@@ -190,18 +190,18 @@ int main()
 ```
 To correct the error, you can call a member function that returns a trivially copyable type, 
 
-```cpp
+```cpp  
     std::atomic<int> i(0);
     printf("%i\n", i.load());
 ```
 or else perform a static cast to convert the object before passing it:
-```cpp
+```cpp  
     struct S {/* as before */} s(0);
     printf("%i\n", static_cast<int>(s))
 ```
 For strings built and managed using CStringW, the provided ‘operator LPCWSTR()’ should be used to cast a CStringW object to the C pointer expected by the format string.
 
-```cpp
+```cpp  
 CStringW str1;
 CStringW str2;
 str1.Format(… , static_cast<LPCWSTR>(str2));
@@ -210,7 +210,7 @@ str1.Format(… , static_cast<LPCWSTR>(str2));
 ### cv-qualifiers in class construction
 In Visual Studio 2015, the compiler sometimes incorrectly ignores the cv-qualifier when generating a class object via a constructor call. This can potentially cause a crash or unexpected runtime behavior. The following example compiles in Visual Studio 2015 but raises a compiler error in Visual Studio 2017:
 
-```cpp
+```cpp  
 struct S 
 {
     S(int);
@@ -224,7 +224,7 @@ To correct the error, declare operator int() as const.
 ### Access checking on qualified names in templates
 Previous versions of the compiler did not perform access checking on qualified names in some template contexts. This can interfere with expected SFINAE behavior where the substitution is expected to fail due to the inaccessibility of a name. This could have potentially caused a crash or unexpected behavior at runtime due to the compiler incorrectly calling the wrong overload of the operator. In Visual Studio 2017, a compiler error is raised. The specific error might vary but typically it is "C2672 no matching overloaded function found". The following code compiles in Visual Studio 2015 but raises an error in Visual Studio 2017:
 
-```cpp
+```cpp  
 #include <type_traits>
 
 template <class T> class S {
@@ -243,7 +243,7 @@ int main()
 ### Missing template argument lists
 In Visual Studio 2015 and earlier, the compiler did not diagnose missing template argument lists when the template appeared in a template parameter list (for example as part of a default template argument or a non-type template parameter). This can result in unpredictable behavior, including compiler crashes or unexpected runtime behavior. The following code compiles in Visual Studio 2015 but produces an error in Visual Studio 2017.
 
-```cpp
+```cpp  
 template <class T> class ListNode;
 template <class T> using ListNodeMember = ListNode<T> T::*;
 template <class T, ListNodeMember M> class ListHead; // C2955: 'ListNodeMember': use of alias 
@@ -257,7 +257,7 @@ To support expression-SFINAE, the compiler now parses decltype arguments when th
 
 The following example shows such a compiler error that is raised at the point of declaration:
 
-```cpp
+```cpp  
 #include <utility>
 template <class T, class ReturnT, class... ArgsT> class IsCallable
 {
@@ -279,7 +279,7 @@ static_assert(test2, "PASS2");
 ### Default initializers for value class members (C++/CLI)
 In Visual Studio 2015 and earlier, the compiler permitted (but ignored) a default member initializer for a member of a value class.  Default initialization of a value class always zero-initializes the members; a default constructor is not permitted.  In Visual Studio 2017, default member initializers raise a compiler error, as shown in this example:
 
-```cpp
+```cpp  
 value struct V
 {
        int i = 0; // error C3446: 'V::i': a default member initializer  
@@ -290,7 +290,7 @@ value struct V
 ### Default Indexers (C++/CLI)
 In Visual Studio 2015 and earlier, the compiler in some cases misidentified a default property as a default indexer. It was possible to work around the issue by using the identifier "default" to access the property. The workaround itself became problematic after default was introduced as a keyword in C++11. Therefore, in Visual Studio 2017 the bugs that required the workaround were fixed, and the compiler now raises an error when "default" is used to access the default property for a class.
 
-```cpp
+```cpp  
 //class1.cs
 
 using System.Reflection;
@@ -333,7 +333,7 @@ void f(ClassLibrary1::Class1 ^r1, ClassLibrary1::Class2 ^r2)
 
 In Visual Studio 2017, you can access both Value properties by their name:
 
-```cpp
+```cpp  
 #using "class1.dll"
 
 void f(ClassLibrary1::Class1 ^r1, ClassLibrary1::Class2 ^r2)

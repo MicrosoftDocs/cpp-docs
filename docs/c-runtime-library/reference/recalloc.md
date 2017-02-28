@@ -28,7 +28,6 @@ f1_keywords:
   - "recalloc"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_recalloc function"
   - "recalloc function"

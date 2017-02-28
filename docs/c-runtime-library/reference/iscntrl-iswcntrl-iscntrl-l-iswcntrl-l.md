@@ -35,7 +35,6 @@ f1_keywords:
   - "_istcntrl"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "iscntrl function"
   - "_iscntrl_l function"

@@ -32,7 +32,6 @@ f1_keywords:
   - "wcsftime"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_strftime_l function"
   - "strftime function"

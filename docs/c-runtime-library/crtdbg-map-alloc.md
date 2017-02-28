@@ -13,7 +13,6 @@ f1_keywords:
   - "_CRTDBG_MAP_ALLOC"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_CRTDBG_MAP_ALLOC macro"
   - "memory allocation, in debug builds"

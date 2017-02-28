@@ -27,7 +27,6 @@ f1_keywords:
   - "CrtSetReportHook"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "CrtSetReportHook function"
   - "_CrtSetReportHook function"

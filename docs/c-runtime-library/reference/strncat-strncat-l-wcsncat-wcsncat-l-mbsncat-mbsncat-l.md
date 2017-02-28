@@ -43,7 +43,6 @@ f1_keywords:
   - "_tcsncat"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "concatenating strings"
   - "ftcsncat function"

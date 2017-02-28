@@ -12,7 +12,6 @@ f1_keywords:
   - "c.runtime"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "MSVCR71.dll"
   - "libraries [C++], multithreaded"
@@ -88,8 +87,8 @@ This topic discusses the various .lib files that comprise the C run-time librari
 |msvcrtd.lib|Static library for the Debug version of the native CRT startup for use with DLL UCRT and vcruntime. Not redistributable.|**/MDd**|_DEBUG, _MT, _DLL|  
 |msvcmrt.lib|Static library for the mixed native and managed CRT startup for use with DLL UCRT and vcruntime.|**/clr**||  
 |msvcmrtd.lib|Static library for the Debug version of the mixed native and managed CRT startup for use with DLL UCRT and vcruntime. Not redistributable.|**/clr**||  
-|msvcurt.lib|Static library for the pure managed CRT.|**/clr:pure**||  
-|msvcurtd.lib|Static library for the Debug version of the pure managed CRT. Not redistributable.|**/clr:pure**||  
+|msvcurt.lib|**Deprecated** Static library for the pure managed CRT.|**/clr:pure**||  
+|msvcurtd.lib|**Deprecated** Static library for the Debug version of the pure managed CRT. Not redistributable.|**/clr:pure**||  
   
  If you link your program from the command line without a compiler option that specifies a C run-time library, the linker will usethe statically linked CRT libraries: libcmt.lib, libvcruntime.lib, and libucrt.lib.  
   
@@ -99,7 +98,7 @@ This topic discusses the various .lib files that comprise the C run-time librari
   
  If you are using the **/clr** compiler switch, your code will be linked with a static library, msvcmrt.lib. The static library provides a proxy between your managed code and the native CRT. You cannot use the statically linked CRT ( **/MT** or **/MTd** options) with **/clr**. Use the dynamically-linked libraries (**/MD** or **/MDd**) instead.  
   
- If you are using the **/clr:pure** compiler switch, your code will be linked with the static library msvcurt.lib. As with **/clr**, you cannot link with the statically linked library.  
+ If you are using the **/clr:pure** compiler switch, your code will be linked with the static library msvcurt.lib. As with **/clr**, you cannot link with the statically linked library. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
   
  For more information on using the CRT with **/clr**, see [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md); for **/clr:pure**, see [Pure and Verifiable Code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md).  
   

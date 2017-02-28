@@ -12,7 +12,6 @@ f1_keywords:
   - "RAND_MAX"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "RAND_MAX constant"
 ms.assetid: a2039697-8908-4911-bd2d-a2bdd19912a0

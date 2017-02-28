@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "integers"
 ms.assetid: 4ea91011-5b88-41f8-ab3c-c0bca57c6987

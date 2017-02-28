@@ -12,7 +12,6 @@ f1_keywords:
   - "vc.editors.dialog.dialog"
 dev_langs: 
   - "C++"
-  - "C++"
 helpviewer_keywords: 
   - "dialog boxes, adding controls to"
   - "dialog box controls, adding to dialog boxes"

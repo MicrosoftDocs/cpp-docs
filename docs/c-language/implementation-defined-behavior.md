@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "Visual C, portability of Microsoft C"
   - "portability [C++], Microsoft C to ANSI C"

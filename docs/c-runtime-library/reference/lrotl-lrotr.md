@@ -31,7 +31,6 @@ f1_keywords:
   - "_lrotl"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "lrotl function"
   - "bits"

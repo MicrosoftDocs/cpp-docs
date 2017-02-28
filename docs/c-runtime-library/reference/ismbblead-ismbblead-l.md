@@ -33,7 +33,6 @@ f1_keywords:
   - "_istlead"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_ismbblead_l function"
   - "ismbblead function"

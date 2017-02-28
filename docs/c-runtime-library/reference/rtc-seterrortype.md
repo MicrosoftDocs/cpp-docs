@@ -27,7 +27,6 @@ f1_keywords:
   - "_RTC_SetErrorType"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "run-time errors"
   - "RTC_SetErrorType function"

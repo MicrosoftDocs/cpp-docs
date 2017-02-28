@@ -28,7 +28,6 @@ f1_keywords:
   - "_chsize_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "files [C++], changing size"
   - "chsize_s function"

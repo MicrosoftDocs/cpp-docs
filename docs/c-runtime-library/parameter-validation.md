@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "parameters, validation"
 ms.assetid: 019dd5f0-dc61-4d2e-b4e9-b66409ddf1f2

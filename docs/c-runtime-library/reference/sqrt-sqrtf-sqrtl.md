@@ -31,7 +31,6 @@ f1_keywords:
   - "_sqrtl"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "sqrtf function"
   - "sqrt function"

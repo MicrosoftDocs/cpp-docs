@@ -12,7 +12,6 @@ f1_keywords:
   - "c.programs"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "CRT, compatibility"
   - "backward compatibility [C++], C run-time libraries"

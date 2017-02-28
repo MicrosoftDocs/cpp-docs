@@ -34,7 +34,6 @@ f1_keywords:
   - "_isnanf"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "NAN (not a number)"
   - "_isnan function"

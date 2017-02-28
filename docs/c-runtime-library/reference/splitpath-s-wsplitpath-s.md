@@ -31,7 +31,6 @@ f1_keywords:
   - "wsplitpath_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "splitpath_s function"
   - "pathnames"

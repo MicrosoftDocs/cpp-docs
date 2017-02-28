@@ -30,7 +30,6 @@ f1_keywords:
   - "_mktime64"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_mktime32 function"
   - "mktime function"

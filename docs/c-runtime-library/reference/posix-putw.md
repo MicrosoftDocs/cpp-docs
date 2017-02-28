@@ -26,7 +26,6 @@ f1_keywords:
   - "putw"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "putw function"
 ms.assetid: a004fbb6-7643-4f3f-9ee1-87a23154d49a

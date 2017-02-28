@@ -12,7 +12,6 @@ f1_keywords:
   - "c.mappings"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "generic-text mappings"
   - "mappings, generic-text"

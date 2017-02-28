@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "string literals, storage"
 ms.assetid: ba5e4d2c-d456-44b3-a8ca-354af547ac50

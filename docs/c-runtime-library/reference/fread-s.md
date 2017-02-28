@@ -101,7 +101,6 @@ size_t fread_s(
 ## Example  
   
 ```cpp  
-  
 // crt_fread_s.c  
 // Command line: cl /EHsc /nologo /W4 crt_fread_s.c  
 //  
@@ -164,7 +163,6 @@ Number of 11-byte elements read = 2
   
 Contents of buffer after write/read:   
         zyxwvutsrqponmlkjihgfe  
-  
 ```  
   
 ## See Also  

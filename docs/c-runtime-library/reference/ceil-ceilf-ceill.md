@@ -31,7 +31,6 @@ f1_keywords:
   - "ceill"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "calculating value ceilings"
   - "ceill function"

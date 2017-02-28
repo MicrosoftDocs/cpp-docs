@@ -13,7 +13,6 @@ f1_keywords:
   - "L_tmpnam"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "temporary files, length"
   - "L_tmpnam constant"

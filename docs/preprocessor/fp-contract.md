@@ -13,7 +13,6 @@ f1_keywords:
   - "fp_contract_CPP"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "pragmas, fp_contract"
   - "fp_contract pragma"

@@ -207,7 +207,7 @@ Windows on ARM uses the same structured exception handling mechanism for asynchr
   
  The .xdata record is designed so that it is possible to fetch the first 8 bytes and compute the full size of the record, not including the length of the variable-sized exception data that follows. This code snippet computes the record size:  
   
-```c  
+```cpp  
 ULONG ComputeXdataSize(PULONG *Xdata)  
 {  
     ULONG EpilogueScopes;  

@@ -27,7 +27,6 @@ f1_keywords:
   - "malloc"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "malloc function"
   - "memory allocation"
@@ -89,13 +88,7 @@ void *malloc(
 |[fputs](../../c-runtime-library/reference/fputs-fputws.md)|[_getdcwd](../../c-runtime-library/reference/getcwd-wgetcwd.md)|[scanf](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)||  
 |[fread](../../c-runtime-library/reference/fread.md)|[gets](../../c-runtime-library/gets-getws.md)|[_searchenv](../../c-runtime-library/reference/searchenv-wsearchenv.md)||  
   
- The C++ [_set_new_mode](../../c-runtime-library/reference/set-new-mode.md) function sets the new handler mode for `malloc`. The new handler mode indicates whether, on failure, `malloc` is to call the new handler routine as set by [_set_new_handler](../../c-runtime-library/reference/set-new-handler.md). By default, `malloc` does not call the new handler routine on failure to allocate memory. You can override this default behavior so that, when `malloc` fails to allocate memory, `malloc` calls the new handler routine in the same way that the `new` operator does when it fails for the same reason. To override the default, call  
-  
-```cpp  
-_set_new_mode(1)  
-```  
-  
- early in your program, or link with NEWMODE.OBJ (see [Link Options](../../c-runtime-library/link-options.md)).  
+ The C++ [_set_new_mode](../../c-runtime-library/reference/set-new-mode.md) function sets the new handler mode for `malloc`. The new handler mode indicates whether, on failure, `malloc` is to call the new handler routine as set by [_set_new_handler](../../c-runtime-library/reference/set-new-handler.md). By default, `malloc` does not call the new handler routine on failure to allocate memory. You can override this default behavior so that, when `malloc` fails to allocate memory, `malloc` calls the new handler routine in the same way that the `new` operator does when it fails for the same reason. To override the default, call `_set_new_mode(1)` early in your program, or link with NEWMODE.OBJ (see [Link Options](../../c-runtime-library/link-options.md)).  
   
  When the application is linked with a debug version of the C run-time libraries, `malloc` resolves to [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md). For more information about how the heap is managed during the debugging process, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details).  
   
@@ -114,7 +107,7 @@ _set_new_mode(1)
   
 ## Example  
   
-```c  
+```C  
 // crt_malloc.c  
 // This program allocates memory with  
 // malloc, then frees the memory with free.  

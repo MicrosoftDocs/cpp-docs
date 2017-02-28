@@ -28,7 +28,6 @@ f1_keywords:
   - "_msize"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "memory blocks"
   - "msize function"

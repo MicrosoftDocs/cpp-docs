@@ -12,7 +12,6 @@ f1_keywords:
   - "c.flags"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "flags, control"
   - "heap allocation, control flags"

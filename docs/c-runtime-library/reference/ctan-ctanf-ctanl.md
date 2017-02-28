@@ -34,7 +34,6 @@ f1_keywords:
   - "complex/ctanf"
   - "complex/ctanl"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "ctan function"

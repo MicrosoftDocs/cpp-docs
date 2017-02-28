@@ -12,7 +12,6 @@ f1_keywords:
   - "exclude"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "exclude attribute"
 ms.assetid: 0883248a-d4bf-420e-9848-807b28fa976e

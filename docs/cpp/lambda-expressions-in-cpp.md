@@ -79,7 +79,6 @@ void abssort(float* x, unsigned n) {
  You can use the default capture mode (`capture-default` in the Standard syntax) to indicate how to capture any outside variables that are referenced in the lambda: [&] means all variables that you refer to are captured by reference, and [=] means they are captured by value. You can use a default capture mode, and then specify the opposite mode explicitly for specific variables. For example, if a lambda body accesses the external variable `total` by reference and the external variable `factor` by value, then the following capture clauses are equivalent:  
   
 ```cpp  
-  
 [&total, factor]  
 [factor, &total]  
 [&, factor]  

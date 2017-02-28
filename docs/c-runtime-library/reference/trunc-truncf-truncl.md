@@ -34,7 +34,6 @@ f1_keywords:
   - "math/truncf"
   - "math/truncl"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "trunc function"

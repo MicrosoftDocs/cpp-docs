@@ -30,7 +30,6 @@ f1_keywords:
   - "wmemset"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wmemset function"
   - "memset function"

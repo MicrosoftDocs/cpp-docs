@@ -30,7 +30,6 @@ f1_keywords:
   - "_memicmp_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "memicmp function"
   - "_memicmp function"

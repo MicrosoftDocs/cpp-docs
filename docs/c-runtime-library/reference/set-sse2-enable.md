@@ -28,7 +28,6 @@ f1_keywords:
   - "set_SSE2_enable"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_set_SSE2_enable function"
   - "Streaming SIMD Extensions 2 instructions"

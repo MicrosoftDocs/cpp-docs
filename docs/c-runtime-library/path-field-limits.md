@@ -16,7 +16,6 @@ f1_keywords:
   - "_MAX_DRIVE"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "path field constants"
   - "MAX_FNAME constant"

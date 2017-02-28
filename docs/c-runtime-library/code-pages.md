@@ -12,7 +12,6 @@ f1_keywords:
   - "c.international"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "character sets [C++], code pages"
   - "ANSI [C++], code pages"

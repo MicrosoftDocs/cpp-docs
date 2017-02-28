@@ -225,7 +225,7 @@
 ## [_flushall](flushall.md)
 ## [fma, fmaf, fmal](fma-fmaf-fmal.md)
 ## [fmax, fmaxf, fmaxl](fmax-fmaxf-fmaxl.md)
-## [fmin, fminf, fminl2](fmin-fminf-fminl2.md)
+## [fmin, fminf, fminl](fmin-fminf-fminl.md)
 ## [fmod, fmodf](fmod-fmodf.md)
 ## [fopen, _wfopen](fopen-wfopen.md)
 ## [fopen_s, _wfopen_s](fopen-s-wfopen-s.md)

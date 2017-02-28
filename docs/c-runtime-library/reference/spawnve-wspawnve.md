@@ -31,7 +31,6 @@ f1_keywords:
   - "spawnve"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_spawnve function"
   - "spawnve function"

@@ -39,7 +39,6 @@ f1_keywords:
   - "_wexec"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_texecle function"
   - "_texecv function"

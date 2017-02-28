@@ -27,7 +27,6 @@ f1_keywords:
   - "terminate"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "terminate function"
   - "exception handling, termination"

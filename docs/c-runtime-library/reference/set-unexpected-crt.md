@@ -26,7 +26,6 @@ f1_keywords:
   - "set_unexpected"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "set_unexpected function"
   - "unexpected function"

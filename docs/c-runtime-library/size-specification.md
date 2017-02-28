@@ -20,7 +20,6 @@ f1_keywords:
   - "size"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "printf function, format specification fields"
 ms.assetid: 525dc5d8-e70a-4797-a6a0-ec504a27355c

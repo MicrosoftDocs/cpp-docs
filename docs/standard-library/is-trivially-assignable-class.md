@@ -16,7 +16,6 @@ f1_keywords:
   - "type_traits/std::is_trivially_assignable"
 dev_langs: 
   - "C++"
-  - "c++"
 helpviewer_keywords: 
   - "is_trivially_assignable"
 ms.assetid: 1284a8f7-4093-426d-9c9a-dabb46f90d6d

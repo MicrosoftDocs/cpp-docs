@@ -284,7 +284,6 @@ const_local_iterator begin(size_type nbucket) const;
 ### Example  
   
 ```cpp  
-  
 // unordered_set_begin.cpp  
 // compile using: cl.exe /EHsc /nologo /W4 /MTd  
 #include <unordered_set>  
@@ -562,7 +561,6 @@ const_iterator cbegin() const;
  You can use this member function in place of the`begin()` member function to guarantee that the return value is`const_iterator`. Typically, it's used in conjunction with the[auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider`Container` to be a modifiable (non- `const`) container of any kind that supports`begin()` and`cbegin()`.  
   
 ```cpp  
- 
 auto i1 = Container.begin();
 // i1 isContainer<T>::iterator  
 auto i2 = Container.cbegin();
@@ -586,7 +584,6 @@ const_iterator cend() const;
  You can use this member function in place of the`end()` member function to guarantee that the return value is`const_iterator`. Typically, it's used in conjunction with the[auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider`Container` to be a modifiable (non- `const`) container of any kind that supports`end()` and`cend()`.  
   
 ```cpp  
- 
 auto i1 = Container.end();
 // i1 isContainer<T>::iterator  
 auto i2 = Container.cend();
@@ -1129,7 +1126,6 @@ const_local_iterator end(size_type nbucket) const;
 ### Example  
   
 ```cpp  
-  
 // std__unordered_set__unordered_set_end.cpp  
 // compile with: /EHsc  
 #include <unordered_set>  
@@ -2075,7 +2071,6 @@ unordered_set& operator=(unordered_set&& right);
 ### Example  
   
 ```cpp  
-  
 // unordered_set_operator_as.cpp  
 // compile with: /EHsc  
 #include <unordered_set>  

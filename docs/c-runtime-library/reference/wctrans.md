@@ -27,7 +27,6 @@ f1_keywords:
   - "wctrans"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "character codes, wctrans"
   - "characters, codes"

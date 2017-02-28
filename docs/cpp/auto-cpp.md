@@ -105,8 +105,7 @@ int main( )
 ## Type deduction with braced initializers (C++14)  
  The following code exmample shows how to intialize an auto variable using braces. Note the difference between B and C and between A and E.  
   
-```  
-  
+```cpp  
 #include <initializer_list>  
   
 int main()  
@@ -129,7 +128,6 @@ int main()
   
     return 0;  
 }  
-  
 ```  
   
 ## Restrictions and Error Messages  
@@ -153,7 +151,6 @@ int main()
  The following declarations are equivalent. In the first statement, variable `j` is declared to be type `int`. In the second statement, variable `k` is deduced to be type `int` because the initialization expression (0) is an integer.  
   
 ```cpp  
-  
 int j = 0;  // Variable j is explicitly type int.  
 auto k = 0; // Variable k is implicitly type int because 0 is an integer.  
 ```  
@@ -161,7 +158,6 @@ auto k = 0; // Variable k is implicitly type int because 0 is an integer.
  The following declarations are equivalent, but the second declaration is simpler than the first. One of the most compelling reasons to use the `auto` keyword is simplicity.  
   
 ```cpp  
-  
 map<int,list<string>>::iterator i = m.begin();   
 auto i = m.begin();   
 ```  
@@ -169,7 +165,6 @@ auto i = m.begin();
  The following code fragment declares the type of variables `iter` and `elem` when the `for` and range `for` loops start.  
   
 ```cpp  
-  
 // cl /EHsc /nologo /W4  
 #include <deque>  
 using namespace std;  
@@ -193,13 +188,11 @@ int main()
     for (const auto& elem : dqDoubleData) // observes elements IN-PLACE  
     { /* ... */ }  
 }  
-  
 ```  
   
  The following code fragment uses the `new` operator and pointer declaration to declare pointers.  
   
 ```cpp  
-  
 double x = 12.34;  
 auto *y = new auto(x), **z = new auto(&x);  
 ```  
@@ -207,7 +200,6 @@ auto *y = new auto(x), **z = new auto(&x);
  The next code fragment declares multiple symbols in each declaration statement. Notice that all of the symbols in each statement resolve to the same type.  
   
 ```cpp  
-  
 auto x = 1, *y = &x, **z = &y; // Resolves to int.  
 auto a(2.01), *b (&a);         // Resolves to double.  
 auto c = 'a', *d(&c);          // Resolves to char.  
@@ -217,7 +209,6 @@ auto m = 1, &n = m;            // Resolves to int.
  This code fragment uses the conditional operator (`?:`) to declare variable `x` as an integer that has a value of 200:  
   
 ```cpp  
-  
 int v1 = 100, v2 = 200;  
 auto x = v1 > v2 ? v1 : v2;  
 ```  
@@ -225,7 +216,6 @@ auto x = v1 > v2 ? v1 : v2;
  The following code fragment initializes variable `x` to type `int`, variable `y` to a reference to type `const``int`, and variable `fp` to a pointer to a function that returns type `int`.  
   
 ```cpp  
-  
 int f(int x) { return x; }  
 int main()  
 {  
@@ -236,7 +226,6 @@ int main()
     auto fp = p;  
     //...  
 }  
-  
 ```  
   
 ## See Also  

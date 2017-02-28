@@ -36,7 +36,6 @@ f1_keywords:
   - "iswgraph"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "isgraph function"
   - "_istgraph_l function"

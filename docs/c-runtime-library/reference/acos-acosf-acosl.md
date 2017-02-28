@@ -33,7 +33,6 @@ f1_keywords:
   - "math/acosl"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "acos function"
   - "acosl function"

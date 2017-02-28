@@ -12,7 +12,6 @@ f1_keywords:
   - "vc.tables.runtime"
 dev_langs: 
   - "C++"
-  - "C"
 ms.assetid: c2169b0e-cd86-489a-a2fa-2ee15c03b5c2
 author: "corob-msft"
 ms.author: "corob"
@@ -829,11 +828,11 @@ The C Run-Time (CRT) Library reference documentation is arranged alphabetically 
   
  [fmaxl](../../c-runtime-library/reference/fmax-fmaxf-fmaxl.md)  
   
- [fmin](../../c-runtime-library/reference/fmin-fminf-fminl2.md)  
+ [fmin](../../c-runtime-library/reference/fmin-fminf-fminl.md)  
   
- [fminf](../../c-runtime-library/reference/fmin-fminf-fminl2.md)  
+ [fminf](../../c-runtime-library/reference/fmin-fminf-fminl.md)  
   
- [fminl](../../c-runtime-library/reference/fmin-fminf-fminl2.md)  
+ [fminl](../../c-runtime-library/reference/fmin-fminf-fminl.md)  
   
  [fmod](../../c-runtime-library/reference/fmod-fmodf.md)  
   

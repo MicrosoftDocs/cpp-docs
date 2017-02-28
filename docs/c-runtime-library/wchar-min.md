@@ -12,7 +12,6 @@ f1_keywords:
   - "WCHAR_MIN"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "WCHAR_MIN constant"
 ms.assetid: f2d192d7-4412-483f-9839-c29e4f174b83

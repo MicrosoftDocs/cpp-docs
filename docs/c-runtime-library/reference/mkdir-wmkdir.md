@@ -32,7 +32,6 @@ f1_keywords:
   - "_wmkdir"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_wmkdir function"
   - "folders [C++], creating"

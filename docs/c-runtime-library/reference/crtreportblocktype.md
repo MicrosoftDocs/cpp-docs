@@ -27,7 +27,6 @@ f1_keywords:
   - "CrtReportBlockType"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "CrtReportBlockType function"
   - "BLOCK_SUBTYPE macro"

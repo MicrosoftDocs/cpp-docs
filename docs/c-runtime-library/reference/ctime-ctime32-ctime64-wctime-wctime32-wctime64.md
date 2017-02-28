@@ -39,7 +39,6 @@ f1_keywords:
   - "ctime"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tctime64 function"
   - "_ctime32 function"

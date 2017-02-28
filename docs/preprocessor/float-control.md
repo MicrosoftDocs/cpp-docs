@@ -13,7 +13,6 @@ f1_keywords:
   - "float_control_CPP"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "float_control pragma"
   - "pragmas, float_control"

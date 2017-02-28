@@ -13,7 +13,6 @@ f1_keywords:
   - "_fmode"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "file translation [C++], default mode"
   - "fmode function"

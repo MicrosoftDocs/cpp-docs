@@ -12,7 +12,6 @@ f1_keywords:
   - "break"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "break keyword [C]"
 ms.assetid: 015627c7-0924-49b2-a4d1-c77edf5eae6a

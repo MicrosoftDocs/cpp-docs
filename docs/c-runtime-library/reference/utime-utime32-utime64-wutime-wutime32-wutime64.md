@@ -45,7 +45,6 @@ f1_keywords:
   - "_wutime32"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tutime function"
   - "utime32 function"

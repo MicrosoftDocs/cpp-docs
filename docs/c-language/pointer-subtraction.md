@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "pointer subtraction"
 ms.assetid: 4d515690-088a-43f6-bb8c-57b849f7ccf7

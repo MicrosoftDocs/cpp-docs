@@ -41,7 +41,6 @@ bool operator!=(
 ### Example  
   
 ```cpp  
-  
 // list_op_ne.cpp  
 // compile with: /EHsc  
 #include <list>  

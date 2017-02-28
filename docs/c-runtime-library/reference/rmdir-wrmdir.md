@@ -32,7 +32,6 @@ f1_keywords:
   - "_wrmdir"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_rmdir function"
   - "directories [C++], deleting"

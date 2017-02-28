@@ -26,7 +26,6 @@ f1_keywords:
   - "spawnlpe"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "spawnlpe function"
 ms.assetid: 379143a7-f3d0-41de-83cc-2b4321146390

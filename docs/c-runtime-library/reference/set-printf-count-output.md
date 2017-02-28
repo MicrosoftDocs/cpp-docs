@@ -28,7 +28,6 @@ f1_keywords:
   - "_set_printf_count_output"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "%n format"
   - "set_printf_count_output function"

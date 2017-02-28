@@ -28,7 +28,6 @@ f1_keywords:
   - "_ecvt_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_ecvt_s function"
   - "ecvt_s function"

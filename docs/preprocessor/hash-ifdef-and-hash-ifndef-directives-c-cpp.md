@@ -1,5 +1,5 @@
 ---
-title: "#ifdef and #ifndef Directives (C-C++) | Microsoft Docs"
+title: "#ifdef and #ifndef Directives (C/C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -13,7 +13,6 @@ f1_keywords:
   - "#ifdef"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "#ifdef directive"
   - "preprocessor, directives"

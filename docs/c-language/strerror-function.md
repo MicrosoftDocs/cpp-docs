@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "strerror function"
 ms.assetid: 9fb9366e-d9a8-47d4-ad51-d98774a0617f

@@ -15,7 +15,6 @@ f1_keywords:
   - "finally_cpp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "try-catch keyword [C], try-finally keyword [C]"
   - "__finally keyword [C], try-finally statement syntax"

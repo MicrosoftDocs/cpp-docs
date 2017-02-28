@@ -30,7 +30,6 @@ f1_keywords:
   - "j0"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "jn function"
   - "j1 function"

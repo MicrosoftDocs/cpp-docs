@@ -53,7 +53,6 @@ Declares a type that represents a function pointer.
 ### Syntax  
   
 ```cpp  
-  
 access  
 delegate  
 return-type  
@@ -89,7 +88,6 @@ delegate-type-identifier
 ### Syntax  
   
 ```cpp  
-  
 access  
 delegate  
 function_declaration  

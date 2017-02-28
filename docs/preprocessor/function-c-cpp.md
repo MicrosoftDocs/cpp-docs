@@ -1,5 +1,5 @@
 ---
-title: "function (C-C++) | Microsoft Docs"
+title: "function (C/C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -13,7 +13,6 @@ f1_keywords:
   - "vc-pragma.function"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "function pragma"
   - "pragmas, function"

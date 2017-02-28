@@ -31,7 +31,6 @@ f1_keywords:
   - "_wspawnle"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "spawnle function"
   - "processes, creating"

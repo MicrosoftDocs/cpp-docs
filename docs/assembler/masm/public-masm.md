@@ -12,7 +12,6 @@ f1_keywords:
   - "public"
 dev_langs: 
   - "C++"
-  - "Assembly"
 helpviewer_keywords: 
   - "PUBLIC directive"
 ms.assetid: 56e15a68-8a35-4bdd-b1ec-a38cbbf1c582

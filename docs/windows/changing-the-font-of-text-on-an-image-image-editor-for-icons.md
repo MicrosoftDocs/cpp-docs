@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C++"
 helpviewer_keywords: 
   - "fonts, changing on an image"
 ms.assetid: b8849d40-d401-4e06-808f-e615cb2bee3b

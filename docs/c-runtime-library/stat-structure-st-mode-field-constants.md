@@ -25,7 +25,6 @@ f1_keywords:
   - "_S_IFREG"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "S_IFDIR constant"
   - "stat structure"

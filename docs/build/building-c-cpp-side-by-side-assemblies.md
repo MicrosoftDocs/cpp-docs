@@ -1,5 +1,5 @@
 ---
-title: "Building C-C++ Side-by-side Assemblies | Microsoft Docs"
+title: "Building C/C++ Side-by-side Assemblies | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

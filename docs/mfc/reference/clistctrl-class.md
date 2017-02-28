@@ -333,7 +333,7 @@ BOOL Arrange(UINT nCode);
  The `nCode` parameter specifies the alignment style.  
   
 ### Example    
-```cpp
+```cpp  
 	// Align all of the list view control items along the top
 	// of the window (the list view control must be in icon or
 	// small icon mode).
@@ -392,7 +392,7 @@ virtual BOOL Create(
   
 ### Example  
 
-```cpp
+```cpp  
 	m_myListCtrl.Create(
 		WS_CHILD|WS_VISIBLE|WS_BORDER|LVS_REPORT|LVS_EDITLABELS,
 		CRect(10,10,400,200), pParentWnd, IDD_MYLISTCTRL);   
@@ -458,7 +458,7 @@ CImageList* CreateDragImage(
  The `CImageList` object is permanent, and you must delete it when finished. For example:  
   
 
-```cpp
+```cpp  
 		CImageList* pImageList = m_myListCtrl.CreateDragImage(nItem, &point);
 
 		// do something
@@ -479,7 +479,7 @@ BOOL DeleteAllItems();
   
 ### Example  
 
-```cpp
+```cpp  
 	// Delete all of the items from the list view control.
 	m_myListCtrl.DeleteAllItems();
 	ASSERT(m_myListCtrl.GetItemCount() == 0);
@@ -502,7 +502,7 @@ BOOL DeleteColumn(int nCol);
   
 ### Example  
 
-```cpp
+```cpp  
 		int nColumnCount = m_myListCtrl.GetHeaderCtrl()->GetItemCount();
 
 		// Delete all of the columns.
@@ -528,7 +528,7 @@ BOOL DeleteItem(int nItem);
  Nonzero if successful; otherwise zero.  
   
 ### Example  
-```cpp
+```cpp  
 		int nCount = m_myListCtrl.GetItemCount();
 
 		// Delete all of the items from the list view control.
@@ -577,7 +577,7 @@ CEdit* EditLabel(int nItem);
  Use this function to begin in-place editing of the specified list view item's text.  
   
 ### Example  
-```cpp
+```cpp  
 		// Make sure the focus is set to the list view control.
 		m_myListCtrl.SetFocus();
 
@@ -634,7 +634,7 @@ BOOL EnsureVisible(
  The list view control is scrolled if necessary. If the `bPartialOK` parameter is nonzero, no scrolling occurs if the item is partially visible.  
   
 ### Example  
-```cpp
+```cpp  
 		// Ensure that the last item is visible.
 		int nCount = m_myListCtrl.GetItemCount();
 		if (nCount > 0)
@@ -666,7 +666,7 @@ int FindItem(
   
 ### Example  
 
-```cpp
+```cpp  
 		LVFINDINFO info;
 		int nIndex;
 
@@ -713,7 +713,7 @@ BOOL GetBkImage(LVBKIMAGE* plvbkImage) const;
   
 ### Example  
 
-```cpp
+```cpp  
 		LVBKIMAGE bki;
 
 		// If no background image is set for the list view control use
@@ -787,7 +787,7 @@ BOOL GetColumn(
   
 ### Example  
 
-```cpp
+```cpp  
 		LVCOLUMN col;
 
 		col.mask = LVCF_WIDTH;
@@ -825,7 +825,7 @@ BOOL GetColumnOrderArray(
   
 ### Example  
 
-```cpp
+```cpp  
 		// Reverse the order of the columns in the list view control
 		// (i.e. make the first column the last, the last column
 		// the first, and so on...).
@@ -868,7 +868,7 @@ int GetColumnWidth(int nCol) const;
   
 ### Example  
 
-```cpp
+```cpp  
 		// Increase the column width of the second column by 20.
 		int nWidth = m_myListCtrl.GetColumnWidth(1);
 		m_myListCtrl.SetColumnWidth(1, 20 + nWidth);
@@ -900,7 +900,7 @@ CEdit* GetEditControl() const;
   
 ### Example  
 
-```cpp
+```cpp  
 		// The string replacing the text in the edit control.
 		LPCTSTR lpszmyString = _T("custom label!");
 
@@ -957,7 +957,7 @@ POSITION GetFirstSelectedItemPosition() const;
  The following code sample demonstrates the usage of this function.  
   
 
-```cpp
+```cpp  
 		POSITION pos = m_myListCtrl.GetFirstSelectedItemPosition();
 		if (pos == NULL)
 		{
@@ -1048,7 +1048,7 @@ BOOL GetGroupInfoByIndex(
 ### Example  
  The following code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.  
 
-```cpp
+```cpp  
 public:
 	// Variable used to access the list control.
 	CListCtrl m_listCtrl; 
@@ -1057,7 +1057,7 @@ public:
   
 ### Example  
  The following code example demonstrates the `GetGroupInfoByIndex` method. In an earlier section of this code example we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example retrieves information about the group whose index is 0, if such a group exists.    
-```cpp
+```cpp  
 	// GetGroupInfoByIndex
 	const int GROUP_HEADER_BUFFER_SIZE = 40;
 
@@ -1127,7 +1127,7 @@ BOOL GetGroupRect(
   
 ### Example  
  The following code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.    
-```cpp
+```cpp  
 public:
 	// Variable used to access the list control.
 	CListCtrl m_listCtrl; 
@@ -1137,7 +1137,7 @@ public:
 ### Example  
  The following code example demonstrates the `GetGroupRect` method. In an earlier section of this code example, we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example draws a 3D rectangle around the group whose index is 0, if such a group exists.    
   
-```cpp
+```cpp  
 	// GetGroupRect
 
 	// Get the graphics rectangle that surrounds group 0.
@@ -1208,7 +1208,7 @@ HCURSOR GetHotCursor();
   
 ### Example    
   
-```cpp
+```cpp  
 		// Set the hot cursor to be the system app starting cursor.
 		HCURSOR hCursor = ::LoadCursor(NULL, IDC_APPSTARTING);
 		m_myListCtrl.SetHotCursor(hCursor);
@@ -1233,7 +1233,7 @@ int GetHotItem();
   
 ### Example    
   
-```cpp
+```cpp  
 	// Set the hot item to the first item only if no other item is 
 	// highlighted.
 	if (m_myListCtrl.GetHotItem() == -1)
@@ -1256,7 +1256,7 @@ DWORD GetHoverTime() const;
   
 ### Example    
   
-```cpp
+```cpp  
 		// If the hover time is the default set to 1 sec.
 		DWORD dwTime = m_myListCtrl.GetHoverTime();
 		if (dwTime == -1)
@@ -1286,7 +1286,7 @@ CImageList* GetImageList(int nImageList) const;
   
 ### Example    
   
-```cpp
+```cpp  
 		ASSERT(m_myListCtrl.GetImageList(LVSIL_NORMAL) == NULL);
 m_myListCtrl.SetImageList(&m_lcImageList, LVSIL_NORMAL);
 		ASSERT(m_myListCtrl.GetImageList(LVSIL_NORMAL) == &m_lcImageList);
@@ -1393,7 +1393,7 @@ DWORD_PTR GetItemData(int nItem) const;
   
 ### Example  
 
-```cpp
+```cpp  
 	// If any item's data is equal to zero then reset it to -1.
 	for (int i=0; i < m_myListCtrl.GetItemCount(); i++)
 	{
@@ -1434,7 +1434,7 @@ BOOL GetItemIndexRect(
 ### Example  
  The following code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.    
   
-```cpp
+```cpp  
 public:
 	// Variable used to access the list control.
 	CListCtrl m_listCtrl; 
@@ -1444,7 +1444,7 @@ public:
 ### Example  
  The following code example demonstrates the `GetGroupRect` method. Prior to entering this code example we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example draws a 3D rectangle around the second subitem in both columns.    
   
-```cpp
+```cpp  
 	// GetItemIndexRect
 	// Get the rectangle that bounds the second item in the first group.
 	LVITEMINDEX lvItemIndex;
@@ -1480,7 +1480,7 @@ BOOL GetItemPosition(
   
 ### Example    
   
-```cpp
+```cpp  
 		POINT pt;
 
 		// Move all items in the list control 100 pixels to the right.
@@ -1526,7 +1526,7 @@ BOOL GetItemRect(
   
 ### Example    
   
-```cpp
+```cpp  
 // OnClick is the handler for the NM_CLICK notification
 void CListCtrlDlg::OnClick(NMHDR* pNMHDR, LRESULT* pResult)
 {
@@ -1737,7 +1737,7 @@ int GetNextSelectedItem(POSITION& pos) const;
 ### Example  
  The following code sample demonstrates the usage of this function.    
   
-```cpp
+```cpp  
 		POSITION pos = m_myListCtrl.GetFirstSelectedItemPosition();
 		if (pos == NULL)
 		{
@@ -1770,7 +1770,7 @@ UINT GetNumberOfWorkAreas() const;
   
 ### Example    
   
-```cpp
+```cpp  
 		UINT i, uCount = m_myListCtrl.GetNumberOfWorkAreas();
 		LPRECT lpRects = (LPRECT) malloc(uCount*sizeof(RECT));
 
@@ -1849,7 +1849,7 @@ UINT GetSelectedCount() const;
   
 ### Example    
   
-```cpp
+```cpp  
 		UINT i, uSelectedCount = m_myListCtrl.GetSelectedCount();
 		int  nItem = -1;
 
@@ -1881,7 +1881,7 @@ int GetSelectionMark();
   
 ### Example  
 
-```cpp
+```cpp  
 	// Set the selection mark to the first item only if no other item is 
 	// selected.
 	if (m_myListCtrl.GetSelectionMark() == -1)
@@ -1908,7 +1908,7 @@ int GetStringWidth(LPCTSTR lpsz) const;
   
 ### Example  
 
-```cpp
+```cpp  
 		CString strColumn;
 		int nWidth;
 
@@ -2034,7 +2034,7 @@ CToolTipCtrl* GetToolTips() const;
   
 ### Example  
 
-```cpp
+```cpp  
 		CToolTipCtrl* pTip = m_myListCtrl.GetToolTips();
 		if (NULL != pTip)
 		{
@@ -2057,7 +2057,7 @@ int GetTopIndex() const;
 ### Example  
 
  
-```cpp
+```cpp  
 		// Make sure the focus is set to the list view control.
 		m_myListCtrl.SetFocus();
 
@@ -2173,7 +2173,7 @@ int HitTest(
   
 ### Example  
 
-```cpp
+```cpp  
 void CListCtrlDlg::OnRClick(NMHDR* pNMHDR, LRESULT* pResult)
 {
 	LPNMITEMACTIVATE pia = (LPNMITEMACTIVATE)pNMHDR;
@@ -2338,7 +2338,7 @@ int InsertItem(
   
 ### Example  
 
-```cpp
+```cpp  
 		CString strText;
 		int nColumnCount = m_myListCtrl.GetHeaderCtrl()->GetItemCount();
 
@@ -2464,7 +2464,7 @@ UINT MapIndexToID(UINT index) const;
 ### Example  
  The following code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.    
   
-```cpp
+```cpp  
 public:
 	// Variable used to access the list control.
 	CListCtrl m_listCtrl; 
@@ -2474,7 +2474,7 @@ public:
 ### Example  
  The following code example demonstrates the `MapIndexToID` method. In an earlier section of this code example, we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following example maps the index of each list-view item to an identification number, and then retrieves the index for each identification number. Finally, the example reports whether the original indexes were retrieved.    
   
-```cpp
+```cpp  
 	// MapIndexToID
 	int iCount = m_listCtrl.GetItemCount();
 	UINT nId = 0;
@@ -2626,7 +2626,7 @@ BOOL SetBkColor(COLORREF cr);
 ### Example  
 
  
-```cpp
+```cpp  
 		// Use the 3D button face color for the background.
 		COLORREF crBkColor = ::GetSysColor(COLOR_3DFACE);
 		m_myListCtrl.SetBkColor(crBkColor);
@@ -2700,7 +2700,7 @@ BOOL SetCallbackMask(UINT nMask);
 ### Example  
 
  
-```cpp
+```cpp  
 	// Set the callback mask so that only the selected and focused states
 	// are stored for each item.
 	m_myListCtrl.SetCallbackMask(LVIS_SELECTED|LVIS_FOCUSED);
@@ -2731,7 +2731,7 @@ BOOL SetCheck(
 ### Example  
 
  
-```cpp
+```cpp  
 		int nCount = m_myListCtrl.GetItemCount();
 		BOOL fCheck = FALSE;
 
@@ -2833,7 +2833,7 @@ DWORD SetExtendedStyle(DWORD dwNewStyle);
 ### Example  
 
  
-```cpp
+```cpp  
 	// Allow the header controls item to be movable by the user.
 	m_myListCtrl.SetExtendedStyle
 		(m_myListCtrl.GetExtendedStyle()|LVS_EX_HEADERDRAGDROP);
@@ -2968,7 +2968,7 @@ CSize SetIconSpacing(CSize size);
 ### Example  
 
  
-```cpp
+```cpp  
 	// Leave lots of space between icons.
 	m_myListCtrl.SetIconSpacing(CSize(100, 100));
 ```
@@ -3149,7 +3149,7 @@ void SetItemCount(int nItems);
 ### Example  
 
  
-```cpp
+```cpp  
 		CString str;
 
 		// Add 1024 items to the list view control.
@@ -3192,7 +3192,7 @@ BOOL SetItemCountEx(
 ### Example  
 
  
-```cpp
+```cpp  
 		CString str;
 
 		// Add 1024 items to the list view control.
@@ -3233,7 +3233,7 @@ BOOL SetItemData(int nItem, DWORD_PTR dwData);
 ### Example  
 
  
-```cpp
+```cpp  
 	// Set the data of each item to be equal to its index.
 	for (int i = 0; i < m_myListCtrl.GetItemCount(); i++)
 	{
@@ -3434,7 +3434,7 @@ BOOL SetTextBkColor(COLORREF cr);
 ### Example  
 
  
-```cpp
+```cpp  
 		// Use the 3D button face color for the background.
 		COLORREF crBkColor = ::GetSysColor(COLOR_3DFACE);
 		m_myListCtrl.SetTextBkColor(crBkColor);
@@ -3459,7 +3459,7 @@ BOOL SetTextColor(COLORREF cr);
 ### Example  
 
  
-```cpp
+```cpp  
 	// Use the window text color for
 	// the item text of the list view control.
 	COLORREF crTextColor = ::GetSysColor(COLOR_WINDOWTEXT);
@@ -3560,7 +3560,7 @@ void SetWorkAreas(
 ### Example  
 
  
-```cpp
+```cpp  
 	// Remove all working areas.
 	m_myListCtrl.SetWorkAreas(0, NULL);
 ```
@@ -3628,7 +3628,7 @@ The comparison function must return a negative value if the first item should pr
 ### Example  
  The following is a simple comparison function that results in items being sorted by their `lParam` values.  
   
-```cpp
+```cpp  
 // Sort items by associated lParam
 int CALLBACK CListCtrlDlg::MyCompareProc(LPARAM lParam1, LPARAM lParam2, 
 	LPARAM lParamSort)
@@ -3638,7 +3638,7 @@ return (int)(lParam1 - lParam2);
 }
 ```
   
-```cpp
+```cpp  
 // Sort the items by passing in the comparison function.
 void CListCtrlDlg::Sort()
 {
@@ -3687,7 +3687,7 @@ This message is like [LVM_SORTITEMS](http://msdn.microsoft.com/library/windows/d
 ### Example  
  The following code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.  
   
-```cpp
+```cpp  
 public:
 	// Variable used to access the list control.
 	CListCtrl m_listCtrl; 
@@ -3698,7 +3698,7 @@ public:
  The following code example demonstrates the `SortItemEx` method. In an earlier section of this code example, we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example sorts the table by using the values in the "Grade" column.  
   
 
-```cpp
+```cpp  
 // The ListCompareFunc() method is a global function used by SortItemEx().
 int CALLBACK ListCompareFunc(
 							 LPARAM lParam1, 
@@ -3748,7 +3748,7 @@ int SubItemHitTest(LPLVHITTESTINFO pInfo);
   
 ### Example  
 
-```cpp
+```cpp  
 void CListCtrlDlg::OnDblClk(NMHDR* pNMHDR, LRESULT* pResult)
 {
 	UNREFERENCED_PARAMETER(pResult);

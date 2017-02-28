@@ -27,7 +27,6 @@ f1_keywords:
   - "_CrtCheckMemory"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_CrtCheckMemory function"
   - "CrtCheckMemory function"

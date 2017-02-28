@@ -38,7 +38,7 @@ Represents a type that defines a [defer_lock](../standard-library/mutex-function
   
 ## Syntax  
   
-```cpp
+```cpp  
 struct defer_lock_t;
 ```  
   

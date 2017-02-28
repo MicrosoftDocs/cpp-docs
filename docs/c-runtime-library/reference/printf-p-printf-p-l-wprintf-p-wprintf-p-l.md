@@ -36,7 +36,6 @@ f1_keywords:
   - "wprintf_p_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "printf_p function"
   - "printf_p_l function"

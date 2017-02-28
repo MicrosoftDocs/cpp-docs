@@ -39,7 +39,6 @@ f1_keywords:
   - "_cwprintf_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_cprintf_l function"
   - "_cwprintf_l function"

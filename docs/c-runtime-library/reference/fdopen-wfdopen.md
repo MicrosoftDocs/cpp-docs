@@ -31,7 +31,6 @@ f1_keywords:
   - "tfdopen"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wfdopen function"
   - "_fdopen function"

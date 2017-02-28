@@ -12,7 +12,6 @@ f1_keywords:
   - "c.runtime"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "robustness [CRT]"
 ms.assetid: 7f1a87f8-eff9-4b76-ae9b-d133d3de6adf
