@@ -34,13 +34,13 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Features of Record View Classes  (MFC Data Access)
-You can do form-based data-access programming with class [CFormView](../mfc/reference/cformview-class.md), but [CRecordView](../mfc/reference/crecordview-class.md) and [CDaoRecordView](../mfc/reference/cdaorecordview-class.md) are generally better classes to derive from. In addition to their `CFormView` features, `CRecordView` and `CDaoRecordView`:  
+You can do form-based data-access programming with class [CFormView](../mfc/reference/cformview-class.md), but [CRecordView](../mfc/reference/crecordview-class.md) is generally a better class to derive from. In addition to its `CFormView` features, `CRecordView`:  
   
--   Provide dialog data exchange (DDX) between the form controls and the associated recordset object.  
+-   Provides dialog data exchange (DDX) between the form controls and the associated recordset object.  
   
--   Handle Move First, Move Next, Move Previous, and Move Last commands for navigating through the records in the associated recordset object.  
+-   Handles Move First, Move Next, Move Previous, and Move Last commands for navigating through the records in the associated recordset object.  
   
--   Update changes to the current record when the user moves to another record.  
+-   Updates changes to the current record when the user moves to another record.  
   
  For more information about navigation, see [Record Views: Supporting Navigation in a Record View](../data/supporting-navigation-in-a-record-view-mfc-data-access.md).  
   
