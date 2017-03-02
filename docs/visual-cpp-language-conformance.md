@@ -38,7 +38,7 @@ visit the [Visual C++ team blog](http://blogs.msdn.microsoft.com/vcblog/).
   
 ## Compiler Features  
   
-|Feature Area|Supported|  
+|Feature Area| |  
 |----|---|  
 |__C++03/11 Core Language Features__|__Supported__|
 |&nbsp;&nbsp;Everything else|VS 2015 <sup>[1](#note_1)</sup>|
@@ -102,7 +102,7 @@ visit the [Visual C++ team blog](http://blogs.msdn.microsoft.com/vcblog/).
 
 ## Standard Library / STL Features
 
-|Feature Area|Supported|
+|Feature Area| |
 |---|---|
 |__C++17 Standard Library Features__|__Supported__|
 |&nbsp;&nbsp;[P0258R2 has_unique_object_representations](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0258r2.html)|No|
@@ -131,8 +131,8 @@ visit the [Visual C++ team blog](http://blogs.msdn.microsoft.com/vcblog/).
 |&nbsp;&nbsp;[N4562 Library Fundamentals: \<memory_resource>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4562.html#memory.resource.synop)<br />&nbsp;&nbsp;[P0337R0 Deleting polymorphic_allocator Assignment](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0337r0.html)|No|
 |&nbsp;&nbsp;[P0024R2 Parallel Algorithms](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0024r2.html)<br />&nbsp;&nbsp;[P0336R1 Renaming Parallel Execution Policies](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0336r1.pdf)<br />&nbsp;&nbsp;[P0394R4 Parallel Algorithms Should terminate() For Exceptions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0394r4.html)|No|
 |&nbsp;&nbsp;[P0226R1 Mathematical Special Functions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0226r1.pdf)|No|
-|&nbsp;&nbsp;[P0218R1 \<filesystem>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0218r1.html)<br />&nbsp;&nbsp;[P0219R1 Relative Paths For Filesystem](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0219r1.html)<br />&nbsp;&nbsp;[P0392R0 Supporting string_view In Filesystem Paths](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0392r0.pdf)|No|
-|&nbsp;&nbsp;[P0181R1 Ordered By Default](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0181r1.html)|No <sup>[7](#note_7)</sup>|
+|&nbsp;&nbsp;[P0218R1 \<filesystem>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0218r1.html)<br />&nbsp;&nbsp;[P0219R1 Relative Paths For Filesystem](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0219r1.html)<br />&nbsp;&nbsp;[P0392R0 Supporting string_view In Filesystem Paths](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0392r0.pdf)|No <sup>[7](#note_7)</sup>|
+|&nbsp;&nbsp;[P0181R1 Ordered By Default](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0181r1.html)|No <sup>[8](#note_8)</sup>|
 |&nbsp;&nbsp;[P0152R1 atomic::is_always_lock_free](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0152r1.html)|VS 2017.x|
 |&nbsp;&nbsp;[P0403R1 UDLs For \<string_view> ("meow"sv, etc.)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0403r1.html)|VS 2017.x|
 |&nbsp;&nbsp;[P0418R2 atomic compare_exchange memory_order Requirements](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0418r2.html)|VS 2017.x|
@@ -213,9 +213,11 @@ visit the [Visual C++ team blog](http://blogs.msdn.microsoft.com/vcblog/).
 |&nbsp;&nbsp;[N3656 make_unique()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3656.htm)|VS 2013|
 |&nbsp;&nbsp;[N3924 Discouraging rand()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n3924.pdf)|N/A|  
   
+A group of papers listed together indicates that a feature was voted into the Standard, and then one or more papers to fix that feature were also voted in. These features are implemented together.  
+  
 ### Supported values  
-__No__ means not yet implemented. A group of papers listed together indicates that a feature was voted into the Standard, and then a paper to fix that feature was also voted in. These features are implemented together.  
-__Partial__ means the implementation in Visual Studio 2017 is incomplete. For more details, see the Notes section.
+__No__ means not yet implemented.  
+__Partial__ means the implementation in Visual Studio 2017 is incomplete. For more details, see the Notes section.  
 __N/A__ means the proposal papers do not describe features. These papers altered the language of the standard, but didn’t create any work for implementers. They’re listed here for completeness.  
 __VS 2010__ indicates features that are supported in Visual Studio 2010.  
 __VS 2013__ indicates features that are supported in Visual Studio 2013.  
@@ -231,11 +233,10 @@ __VS 2017.x__ indicates features planned for a future update of Visual Studio 20
 <a name="note_4"></a>__4__ This is marked as Not Applicable because compilers are permitted, but not required, to support extended integer types.  Like GCC and Clang, we’ve chosen not to support them.  
 <a name="note_5"></a>__5__ Similarly, this is marked as Not Applicable because compilers are permitted, but not required, to implement this optimization.  
 <a name="note_6"></a>__6__ Features that were not completed in Visual Studio 2015 are broken out elsewhere in this table.  
-<a name="note_7"></a>__7__ The *Ordered By Default* feature has been found to break ABI compatibility in other compilers, is not implemented by any vendor, and is expected to be removed from C++17.  
-<a name="note_star"></a>__*__ These features are guarded by the [/std:c++latest](./build/reference/std-specify-language-standard-version.md) compiler option.  
-  
-The Filesystem TS is implemented in both \<experimental/filesystem> 
+<a name="note_7"></a>__7__ The Filesystem TS is implemented in both \<experimental/filesystem> 
 and \<filesystem> for historical reasons, but its implementation must be corrected before its namespace is moved. Until this is completed, the feature is marked as not yet implemented.  
+<a name="note_8"></a>__8__ The *Ordered By Default* feature has been found to break ABI compatibility in other compilers. It is not implemented by any vendor, and is expected to be removed from C++17.  
+<a name="note_star"></a>__*__ These features are guarded by the [/std:c++latest](./build/reference/std-specify-language-standard-version.md) compiler option.  
   
 ## See Also  
 [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md)  
