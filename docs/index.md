@@ -111,7 +111,7 @@ description: Learn how to use C++ to develop applications, services, and tools f
                                 </a>
                             </li>
                             <li>
-                                <a href="/cpp/linux/download-install-and-setup-the-linux-development-workload">
+                                <a href="/cpp/linux">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -130,7 +130,7 @@ description: Learn how to use C++ to develop applications, services, and tools f
                                 </a>
                             </li>
                             <li>
-                                <a href="/visualstudio/cross-platform/visual-cpp-for-cross-platform-mobile-development">
+                                <a href="/visualstudio/cross-platform/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

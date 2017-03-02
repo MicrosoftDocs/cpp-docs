@@ -69,27 +69,27 @@ ref class Map sealed;
   
 |Name|Description|  
 |----------|-----------------|  
-|[Map::Map Constructor](../cppcx/map-map-constructor.md)|Initializes a new instance of the Map class.|  
+|[Map::Map Constructor](#ctor)|Initializes a new instance of the Map class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[Map::Clear Method](../cppcx/map-clear-method.md)|Removes all key-value pairs from the current Map object.|  
-|[Map::First Method](../cppcx/map-first-method.md)|Returns an iterator that specifies the first element in the map.|  
-|[Map::GetView Method](../cppcx/map-getview-method.md)|Returns a read-only view of the current Map; that is, a [Platform::Collections::MapView Class](../cppcx/platform-collections-mapview-class.md).|  
-|[Map::HasKey Method](../cppcx/map-haskey-method.md)|Determines whether the current Map contains the specified key.|  
-|[Map::Insert Method](../cppcx/map-insert-method.md)|Adds the specified key-value pair to the current Map object.|  
-|[Map::Lookup Method](../cppcx/map-lookup-method.md)|Retrieves the element at the specified key in the current Map object.|  
-|[Map::Remove Method](../cppcx/map-remove-method.md)|Deletes the specified key-value pair from the current Map object.|  
-|[Map::Size Method](../cppcx/map-size-method.md)|Returns the number of elements in the current Map object.|  
+|[Map::Clear Method](#clear)|Removes all key-value pairs from the current Map object.|  
+|[Map::First Method](#first)|Returns an iterator that specifies the first element in the map.|  
+|[Map::GetView Method](#getview)|Returns a read-only view of the current Map; that is, a [Platform::Collections::MapView Class](../cppcx/platform-collections-mapview-class.md).|  
+|[Map::HasKey Method](#haskey)|Determines whether the current Map contains the specified key.|  
+|[Map::Insert Method](#insert)|Adds the specified key-value pair to the current Map object.|  
+|[Map::Lookup Method](#lookup)|Retrieves the element at the specified key in the current Map object.|  
+|[Map::Remove Method](#remove)|Deletes the specified key-value pair from the current Map object.|  
+|[Map::Size Method](#size)|Returns the number of elements in the current Map object.|  
   
 ### Events  
   
 |||  
 |-|-|  
 |Name|Description|  
-|[Map::MapChanged Event](../cppcx/map-mapchanged-event.md) `event`|Occurs when the Map changes.|  
+|[Map::MapChanged Event](#mapchanged-event.md) `event`|Occurs when the Map changes.|  
   
 ## Inheritance Hierarchy  
  `Map`  
@@ -98,6 +98,214 @@ ref class Map sealed;
  **Header:** collection.h  
   
  **Namespace:** Platform::Collections  
+
+## Map::Clear Method
+Removes all key-value pairs from the current Map object.  
+  
+### Syntax  
+  
+```  
+  
+virtual void Clear();   
+```  
+  
+
+
+## <a name="first"</a>  Map::First Method
+Returns an iterator that specifies the first element in the map, or `nullptr` if the map is empty.  
+  
+### Syntax  
+  
+```  
+  
+virtual Windows::Foundation::Collections::IIterator<  
+Windows::Foundation::Collections::IKeyValuePair<K, V>^>^ First();  
+```  
+  
+### Return Value  
+ An iterator that specifies the first element in the map.  
+  
+### Remarks  
+ A convenient way to hold the iterator returned by First() is to assign the return value to a variable that is declared with the **auto** type deduction keyword. For example, `auto x = myMap->First();`.  
+  
+
+
+## <a name="getview"</a>  Map::GetView Method
+Returns a read-only view of the current Map; that is, a [Platform::Collections::MapView Class](../cppcx/platform-collections-mapview-class.md), which implements the [Windows::Foundation::Collections::IMapView\<K,V>](http://msdn.microsoft.com/library/windows/apps/br226037.aspx) interface.  
+  
+### Syntax  
+  
+```  
+  
+Windows::Foundation::Collections::IMapView<K, V>^   
+   GetView();  
+```  
+  
+### Return Value  
+ A `MapView` object.  
+  
+
+
+## <a name="haskey"</a>  Map::HasKey Method
+Determines whether the current Map contains the specified key.  
+  
+### Syntax  
+  
+```  
+  
+bool HasKey(  
+   K key  
+);  
+```  
+  
+### Parameters  
+ `key`  
+ The key used to locate the Map element. The type of `key` is typename *K*.  
+  
+### Return Value  
+ `true` if the key is found; otherwise, `false`.  
+  
+
+
+## <a name="insert"</a>  Map::Insert Method
+Adds the specified key-value pair to the current Map object.  
+  
+### Syntax  
+  
+```  
+  
+virtual bool Insert(  
+   K key,   
+   V value  
+);  
+```  
+  
+### Parameters  
+ `key`  
+ The key portion of the key-value pair. The type of `key` is typename *K*.  
+  
+ `value`  
+ The value portion of the key-value pair. The type of `value` is typename *V*.  
+  
+### Return Value  
+ `true` if the key of an existing element in the current Map matches `key` and the value portion of that element is set to `value`. `false` if no existing element in the current Map matches `key` and the `key` and `value` parameters are made into a key-value pair and then added to the current Map.  
+  
+
+
+## <a name="lookup"</a>  Map::Lookup Method
+Retrieves the value of type V that is associated with the specified key of type K, if the key exists.  
+  
+### Syntax  
+  
+```  
+V Lookup(  
+   K key  
+);  
+```  
+  
+### Parameters  
+ `key`  
+ The key used to locate an element in the Map. The type of `key` is typename *K*.  
+  
+### Return Value  
+ The value that is paired with the `key`. The type of the return value is typename *V*.  
+  
+### Remarks  
+ If the key does not exist, then a [Platform::OutOfBoundsException](../cppcx/platform-outofboundsexception-class.md) is thrown.  
+  
+
+
+## <a name="ctor"</a>  Map::Map Constructor
+Initializes a new instance of the Map class.  
+  
+### Syntax  
+  
+```  
+explicit Map(  
+   const C& comp = C()  
+);  
+explicit Map(  
+   const StdMap& m  
+);  
+explicit Map(  
+   StdMap&& m  
+);  
+template <  
+   typename InIt  
+>  
+Map(  
+   InItfirst,  
+   InItlast,  
+   const C& comp = C()  
+);  
+```  
+  
+### Parameters  
+ `InIt`  
+ The typename of the current Map.  
+  
+ `comp`  
+ A type that provides a function object that can compare two element values as sort keys to determine their relative order in the Map.  
+  
+ `m`  
+ A reference or [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) to a `map Class` that is used to initialize the current Map.  
+  
+ `first`  
+ The input iterator of the first element in a range of elements used to initialize the current Map.  
+  
+ `last`  
+ The input iterator of the first element after a range of elements used to initialize the current Map.  
+  
+
+
+## <a name="mapchanged"</a>  Map::MapChanged Event
+Raised when an item is inserted into or removed from the map.  
+  
+### Syntax  
+  
+```cpp  
+event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;  
+```  
+  
+## Property Value/Return Value  
+ A [MapChangedEventHandler\<K,V>](http://msdn.microsoft.com/library/windows/apps/br206644.aspx) that contains information about the object that raised the event, and the kind of change that occurred. See also [IMapChangedEventArgs\<K>](http://msdn.microsoft.com/library/windows/apps/br226034.aspx) and [CollectionChange Enumeration](http://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx).  
+  
+## .NET Framework Equivalent  
+ Windows Store apps that use C# or Visual Basic project IMap\<K,V> as IDictionary\<K,V>.  
+  
+
+
+## <a name="remove"</a>  Map::Remove Method
+Deletes the specified key-value pair from the current Map object.  
+  
+### Syntax  
+  
+```  
+  
+virtual void Remove(  
+   K key);  
+```  
+  
+### Parameters  
+ `key`  
+ The key portion of the key-value pair. The type of `key` is typename *K*.  
+  
+
+
+## <a name="size"</a>  Map::Size Method
+Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) elements in the Map.  
+  
+### Syntax  
+  
+```  
+  
+virtual property unsigned int Size;  
+```  
+  
+### Return Value  
+ The number of elements in the Map.  
+  
+
   
 ## See Also  
  [Platform Namespace](platform-namespace-c-cx.md)   

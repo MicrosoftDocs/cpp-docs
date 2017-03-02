@@ -49,17 +49,17 @@ ref class UnorderedMapView sealed;
   
 |Name|Description|  
 |----------|-----------------|  
-|[UnorderedMapView::UnorderedMapView Constructor](../cppcx/unorderedmapview-unorderedmapview-constructor.md)|Initializes a new instance of the UnorderedMapView class.|  
+|[UnorderedMapView::UnorderedMapView Constructor](#ctor)|Initializes a new instance of the UnorderedMapView class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[UnorderedMapView::First Method](../cppcx/unorderedmapview-first-method.md)|Returns an iterator that is initialized to the first element in the map view.|  
-|[UnorderedMapView::HasKey Method](../cppcx/unorderedmapview-haskey-method.md)|Determines whether the current UnorderedMapView contains the specified key.|  
-|[UnorderedMapView::Lookup Method](../cppcx/unorderedmapview-lookup-method.md)|Retrieves the element at the specified key in the current UnorderedMapView object.|  
-|[UnorderedMapView::Size Method](../cppcx/unorderedmapview-size-method.md)|Returns the number of elements in the current UnorderedMapView object.|  
-|[UnorderedMapView::Split Method](../cppcx/unorderedmapview-split-method.md)|Splits an original UnorderedMapView object into two UnorderedMapView objects.|  
+|[UnorderedMapView::First Method](#first)|Returns an iterator that is initialized to the first element in the map view.|  
+|[UnorderedMapView::HasKey Method](#haskey)|Determines whether the current UnorderedMapView contains the specified key.|  
+|[UnorderedMapView::Lookup Method](#lookup)|Retrieves the element at the specified key in the current UnorderedMapView object.|  
+|[UnorderedMapView::Size Method](#size)|Returns the number of elements in the current UnorderedMapView object.|  
+|[UnorderedMapView::Split Method](#split)|Splits an original UnorderedMapView object into two UnorderedMapView objects.|  
   
 ## Inheritance Hierarchy  
  `UnorderedMapView`  
@@ -68,6 +68,206 @@ ref class UnorderedMapView sealed;
  **Header:** collection.h  
   
  **Namespace:** Platform::Collections  
+
+## <a name="first"></a>  UnorderedMapView::First Method
+Returns an iterator that specifies the first [Windows::Foundation::Collections::IKeyValuePair\<K,V>](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) element in the unordered map.  
+  
+### Syntax  
+  
+```cpp  
+  
+virtual Windows::Foundation::Collections::IIterator<  
+Windows::Foundation::Collections::IKeyValuePair<K, V>^>^   
+First();  
+```  
+  
+### Return Value  
+ An iterator that specifies the first element in the map view.  
+  
+### Remarks  
+ A convenient way to hold the iterator returned by First() is to assign the return value to a variable that is declared with the **auto** type deduction keyword. For example, `auto x = myMapView->First();`.  
+  
+
+
+## <a name="haskey"></a>  UnorderedMapView::HasKey Method
+Determines whether the current UnorderedMap contains the specified key.  
+  
+### Syntax  
+  
+```cpp  
+  
+bool HasKey(  
+   K key  
+);  
+```  
+  
+### Parameters  
+ `key`  
+ The key used to locate the element. The type of `key` is typename *K*.  
+  
+### Return Value  
+ `true` if the key is found; otherwise, `false`.  
+  
+
+
+## <a name="lookup"></a>  UnorderedMapView::Lookup Method
+Retrieves the value of type V that is associated with the specified key of type K.  
+  
+### Syntax  
+  
+```cpp  
+V Lookup(  
+   K key  
+);  
+```  
+  
+### Parameters  
+ `key`  
+ The key used to locate an element in the UnorderedMapView. The type of `key` is typename *K*.  
+  
+### Return Value  
+ The value that is paired with the `key`. The type of the return value is typename *V*.  
+  
+
+
+## <a name="size"></a>  UnorderedMapView::Size Method
+Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) elements in the UnorderedMapView.  
+  
+### Syntax  
+  
+```cpp  
+  
+virtual property unsigned int Size;  
+```  
+  
+### Return Value  
+ The number of elements in the Unordered MapView.  
+  
+
+
+## <a name="split"></a>  UnorderedMapView::Split Method
+Divides the current UnorderedMapView object into two UnorderedMapView objects. This method is non-operational.  
+  
+### Syntax  
+  
+```cpp  
+void Split(  
+   Windows::Foundation::Collections::IMapView<  
+                         K,  
+                         V>^ * firstPartition,  
+   Windows::Foundation::Collections::IMapView<  
+                         K,  
+                         V>^ * secondPartition  
+);  
+```  
+  
+### Parameters  
+ `firstPartition`  
+ The first part of the original UnorderedMapView object.  
+  
+ `secondPartition`  
+ The second part of the original UnorderedMapView object.  
+  
+### Remarks  
+ This method is not operational; it does nothing.  
+  
+
+
+## <a name="ctor"></a>  UnorderedMapView::UnorderedMapView Constructor
+Initializes a new instance of the UnorderedMapView class.  
+  
+### Syntax  
+  
+```cpp  
+  
+UnorderedMapView();  
+  
+explicit UnorderedMapView(size_t n);  
+  
+UnorderedMapView(size_t n, const H& h);  
+  
+UnorderedMapView(size_t n, const H& h, const P& p);  
+  
+explicit UnorderedMapView(  
+    const std::unordered_map<K, V, H, P>& m  
+    );  
+explicit UnorderedMapView(  
+    std::unordered_map<K, V, H, P>&& m  
+    );  
+  
+template <typename InIt> UnorderedMapView(  
+    InIt first,  
+    InIt last  
+    );  
+  
+template <typename InIt> UnorderedMapView(  
+    InIt first,  
+    InIt last,  
+    size_t n  
+    );  
+  
+template <typename InIt> UnorderedMapView(  
+    InIt first,  
+    InIt last,  
+    size_t n,  
+    const H& h  
+    );  
+  
+template <typename InIt> UnorderedMapView(  
+    InIt first,  
+    InIt last,  
+    size_t n,  
+    const H& h,  
+    const P& p  
+    );  
+  
+UnorderedMapView(  
+    std::initializer_list<std::pair<const K, V>> il  
+    );  
+  
+UnorderedMapView(  
+    std::initializer_list< std::pair<const K, V>> il,  
+    size_t n  
+    );  
+  
+UnorderedMapView(  
+    std::initializer_list< std::pair<const K, V>> il,  
+    size_t n,  
+    const H& h  
+    );  
+  
+UnorderedMapView(  
+    std::initializer_list< std::pair<const K, V>> il,  
+    size_t n,  
+    const H& h,  
+    const P& p  
+    );  
+```  
+  
+### Parameters  
+ n  
+ The number of elements to preallocate space for.  
+  
+ `InIt`  
+ The typename of the UnorderedMapView.  
+  
+ `H`  
+ A function object that can a hash value for a key. Defaults to [std::hash\<K>](http://msdn.microsoft.com/en-us/54f67435-af9d-4217-a29d-fa4d2491a104) for the types that `std::hash` supports.  
+  
+ `P`  
+ A type that provides a function object that can compare two keys to determine their equality. Defaults to [std::equal_to\<K>](../standard-library/equal-to-struct.md).  
+  
+ `m`  
+ A reference or [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) to a [std::unordered_map](../standard-library/unordered-map-class.md) that is used to initialize the UnorderedMapView.  
+  
+ `first`  
+ The input iterator of the first element in a range of elements used to initialize the UnorderedMapView.  
+  
+ `last`  
+ The input iterator of the first element after a range of elements used to initialize the UnorderedMapView.  
+  
+
+
   
 ## See Also  
  [Platform::Collections Namespace](../cppcx/platform-collections-namespace.md)   
