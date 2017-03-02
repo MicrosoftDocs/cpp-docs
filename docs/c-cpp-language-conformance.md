@@ -31,7 +31,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Visual C/C++ Language Conformance 
-This topic summarizes the ISO C++03/11/14 and draft C++17 language standards conformance of compiler features and Standard Library (STL) features for C++ in Visual Studio 2017. The compiler and STL feature names each link to the ISO C++ Standard proposal papers that describe the features.  
+This topic summarizes the ISO C++03/11/14 and draft C++17 language standards conformance of compiler features and Standard Library (STL) features for C++ in Visual Studio 2017. Each compiler and STL feature name links to the ISO C++ Standard proposal paper that describes the feature.  
   
 For current news from the C++ team, 
 visit the [Visual C++ team blog](http://blogs.msdn.microsoft.com/vcblog/).  
