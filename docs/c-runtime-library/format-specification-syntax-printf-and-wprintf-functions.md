@@ -50,33 +50,36 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Format specification syntax: printf and wprintf functions
-The printf family of functions take a format string and optional arguments and produce a formatted sequence of characters for output. The format string may contain both literal output and encoded *format specifications* that describe how to format an argument in the output. This topic describes the syntax used to encode format specifications in the format string. For a listing of these functions, see [Stream I/O](../c-runtime-library/stream-i-o.md).  
+The printf family of functions take a format string and optional arguments and produce a formatted sequence of characters for output. The format string contains zero or more *directives*, which are either literal characters for output or encoded *conversion specifications* that describe how to format an argument in the output. This topic describes the syntax used to encode conversion specifications in the format string. For a listing of these functions, see [Stream I/O](../c-runtime-library/stream-i-o.md).  
   
- A format specification consists of optional and required fields in this form:  
+A conversion specification consists of optional and required fields in this form:  
   
- **%**[[*flags*](#flags)][[*width*](#width)][.[*precision*](#precision)][{ `h` | `l` | `ll` | `w` | `I` | `I32` | `I64` }][*type*](#type)  
+**%**[[*flags*](#flags)][[*width*](#width)][.[*precision*](#precision)][[size](#size)][*type*](#type)  
   
- Each field of the format specification is a character or a number that signifies a particular format option or conversion specifier. The required *type* character specifies the kind of conversion to be applied to an argument. The optional *flags*, *width*, and *precision* fields control additional format aspects. A basic format specification contains only the percent sign and a *type* character—for example, `%s`, which specifies a string conversion. In the secure versions of the functions, if a percent sign is followed by a character that has no meaning as a format field, the invalid parameter handler is invoked. For more information, see [Parameter Validation](../c-runtime-library/parameter-validation.md). In the non-secure versions, the character is copied to the output unchanged. To print a percent-sign character, use `%%`.  
+Each field of the conversion specification is a character or a number that signifies a particular format option or conversion specifier. The required *type* field specifies the kind of conversion to be applied to an argument. The optional *flags*, *width*, and *precision* fields control additional format aspects such as leading spaces or zeroes, justification, and displayed precision. The *size* field specifies the size of the argument consumed and converted.  
   
- The fields of the format specification control the following aspects of argument conversion and formatting:  
+A basic conversion specification contains only the percent sign and a *type* character. For example, `%s` specifies a string conversion. To print a percent-sign character, use `%%`. If a percent sign is followed by a character that has no meaning as a format field, the invalid parameter handler is invoked. For more information, see [Parameter Validation](../c-runtime-library/parameter-validation.md).  
   
- *type*  
- A required conversion specifier character that determines whether the associated argument is interpreted as a character, a string, an integer, or a floating-point number. For more information, see [printf Type Field Characters](../c-runtime-library/printf-type-field-characters.md).  
+The fields of the conversion specification control the following aspects of argument conversion and formatting:  
   
- *flags*  
- Optional character or characters that control output justification and output of signs, blanks, leading zeros, decimal points, and octal and hexadecimal prefixes. For more information, see [Flag Directives](../c-runtime-library/flag-directives.md). More than one flag can appear in a format specification, and flags can appear in any order.  
+*type*  
+A required conversion specifier character that determines whether the associated argument is interpreted as a character, a string, an integer, or a floating-point number. For more information, see [printf Type Field Characters](../c-runtime-library/printf-type-field-characters.md).  
   
- *width*  
- Optional decimal number that specifies the minimum number of characters that are output. For more information, see [printf Width Specification](../c-runtime-library/printf-width-specification.md).  
+*flags*  
+Optional character or characters that control output justification and output of signs, blanks, leading zeros, decimal points, and octal and hexadecimal prefixes. For more information, see [Flag Directives](../c-runtime-library/flag-directives.md). More than one flag can appear in a conversion specification, and flags can appear in any order.  
   
- *precision*  
- Optional decimal number that specifies the maximum number of characters that are printed for strings, the number of significant digits or the number of digits after the decimal-point character for floating-point values, or the minimum number of digits that are printed for integer values. For more information, see "How Precision Values Affect Type" in [Precision Specification](../c-runtime-library/precision-specification.md).  
+*width*  
+Optional decimal number that specifies the minimum number of characters that are output. For more information, see [printf Width Specification](../c-runtime-library/printf-width-specification.md).  
   
- `h` | `l` | `ll` | `w` | `I` | `I32` | `I64`  
- Optional prefixes to *type* that specify the size of the corresponding argument. For more information, see"Size Prefixes" in [Size Specification](../c-runtime-library/size-specification.md).  
+*precision*  
+Optional decimal number that specifies the maximum number of characters that are printed for strings, the number of significant digits or the number of digits after the decimal-point character for floating-point values, or the minimum number of digits that are printed for integer values. For more information, see "How Precision Values Affect Type" in [Precision Specification](../c-runtime-library/precision-specification.md).  
+  
+*size*
+`h` | `l` | `ll` | `w` | `I` | `I32` | `I64`  
+An optional prefix to *type* that specifies the size of the corresponding argument. For more information, see "Size Prefixes" in [Size Specification](../c-runtime-library/size-specification.md).  
   
 > [!IMPORTANT]
->  Ensure that format specification strings are not user-defined. For example, consider a program that prompts the user to enter a name and stores the input in a string variable that's named `name`. To print `name`, do not do this:  
+>  Ensure that conversion specification strings are not user-defined. For example, consider a program that prompts the user to enter a name and stores the input in a string variable that's named `name`. To print `name`, do not do this:  
 >   
 >  `printf( name ); /* Danger!  If name contains "%s", program will crash */`  
 >   
@@ -84,12 +87,12 @@ The printf family of functions take a format string and optional arguments and p
 >   
 >  `printf( "%s", name );`  
   
-## <a name="type"></a> Type field
-In a format specification, the *type* character is a conversion specifier that specifies whether the corresponding argument is to be interpreted as a character, a string, a pointer, an integer, or a floating-point number. The *type* character is the only required format specification field, and it appears after any optional fields.  
+## <a name="type"></a> Type conversion specifier
+The *type* conversion specifier character specifies whether to interpret the corresponding argument as a character, a string, a pointer, an integer, or a floating-point number. The *type* character is the only required conversion specification field, and it appears after any optional fields.  
   
- The arguments that follow the format string are interpreted according to the corresponding *type* character and the optional [size](../c-runtime-library/size-specification.md) prefix. Conversions for character types `char` and `wchar_t` are specified by using `c` or `C`, and single-byte and multi-byte or wide character strings are specified by using `s` or `S`, depending on which formatting function is being used. Character and string arguments that are specified by using `c` and `s` are interpreted as `char` and `char*` by `printf` family functions, or as `wchar_t` and `wchar_t*` by `wprintf` family functions. Character and string arguments that are specified by using `C` and `S` are interpreted as `wchar_t` and `wchar_t*` by `printf` family functions, or as `char` and `char*` by `wprintf` family functions.  
+The arguments that follow the format string are interpreted according to the corresponding *type* character and the optional [size](#size) prefix. Conversions for character types `char` and `wchar_t` are specified by using `c` or `C`, and single-byte and multi-byte or wide character strings are specified by using `s` or `S`, depending on which formatting function is being used. Character and string arguments that are specified by using `c` and `s` are interpreted as `char` and `char*` by `printf` family functions, or as `wchar_t` and `wchar_t*` by `wprintf` family functions. Character and string arguments that are specified by using `C` and `S` are interpreted as `wchar_t` and `wchar_t*` by `printf` family functions, or as `char` and `char*` by `wprintf` family functions. This behavior is Microsoft specific; the ISO C standard uses `c` and `s` consistently for narrow characters and strings, and `C` and `S` for wide characters and strings, in all formatting functions.  
   
- Integer types such as `short`, `int`, `long`, `long long`, and their `unsigned` variants, are specified by using `d`, `i`, `o`, `u`, `x`, and `X`. Floating-point types such as `float`, `double`, and `long double`, are specified by using `a`, `A`, `e`, `E`, `f`, `g`, and `G`. By default, unless they are modified by a `size` field length prefix, integer arguments are coerced to `int` type, and floating-point arguments are coerced to `double`. On 64-bit systems, an `int` is a 32-bit value; therefore, 64-bit integers will be truncated when they are formatted for output unless a `size` prefix of `ll` or `I64` is used. Pointer types that are specified by `p` use the default length for the platform.  
+Integer types such as `short`, `int`, `long`, `long long`, and their `unsigned` variants, are specified by using `d`, `i`, `o`, `u`, `x`, and `X`. Floating-point types such as `float`, `double`, and `long double`, are specified by using `a`, `A`, `e`, `E`, `f`, `g`, and `G`. By default, unless they are modified by a *size* prefix, integer arguments are coerced to `int` type, and floating-point arguments are coerced to `double`. On 64-bit systems, an `int` is a 32-bit value; therefore, 64-bit integers will be truncated when they are formatted for output unless a *size* prefix of `ll` or `I64` is used. Pointer types that are specified by `p` use the default pointer size for the platform.  
   
 > [!NOTE]
 >  The `C`, `S`, and `Z` type characters, and the behavior of the `c` and `s` type characters when they are used with the `printf` and `wprintf` functions, are Microsoft extensions and are not ANSI compatible. [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] does not support the `F` type character.  
@@ -117,19 +120,32 @@ In a format specification, the *type* character is a conversion specifier that s
 |`p`|Pointer type|Displays the argument as an address in hexadecimal digits.|  
 |`s`|String|When used with `printf` functions, specifies a single-byte or multi-byte character string; when used with `wprintf` functions, specifies a wide-character string. Characters are displayed up to the first null character or until the *precision* value is reached.|  
 |`S`|String|When used with `printf` functions, specifies a wide-character string; when used with `wprintf` functions, specifies a single-byte or multi-byte character string. Characters are displayed up to the first null character or until the *precision* value is reached.|  
-|`Z`|`ANSI_STRING` or `UNICODE_STRING` structure|When the address of an [ANSI_STRING](http://msdn.microsoft.com/library/windows/hardware/ff540605.aspx) or [UNICODE_STRING](http://msdn.microsoft.com/library/windows/hardware/ff564879.aspx) structure is passed as the argument, displays the string that's contained in the buffer that's pointed to by the `Buffer` field of the structure. Use a length modifier prefix of `w` to specify a `UNICODE_STRING` argument—for example, `%wZ`. The `Length` field of the structure must be set to the length, in bytes, of the string. The `MaximumLength` field of the structure must be set to the length, in bytes, of the buffer.<br /><br /> Typically, the `Z` type character is used only in driver debugging functions that use a format specification, such as `dbgPrint` and `kdPrint`.|  
+|`Z`|`ANSI_STRING` or `UNICODE_STRING` structure|When the address of an [ANSI_STRING](http://msdn.microsoft.com/library/windows/hardware/ff540605.aspx) or [UNICODE_STRING](http://msdn.microsoft.com/library/windows/hardware/ff564879.aspx) structure is passed as the argument, displays the string that's contained in the buffer that's pointed to by the `Buffer` field of the structure. Use a *size* modifier prefix of `w` to specify a `UNICODE_STRING` argument—for example, `%wZ`. The `Length` field of the structure must be set to the length, in bytes, of the string. The `MaximumLength` field of the structure must be set to the length, in bytes, of the buffer.<br /><br /> Typically, the `Z` type character is used only in driver debugging functions that use a conversion specification, such as `dbgPrint` and `kdPrint`.|  
   
- If the argument that corresponds to a floating-point conversion specifier is infinite, indefinite, or NAN, the following table lists the formatted output.  
+Starting in Visual Studio 2015, if the argument that corresponds to a floating-point conversion specifier is infinite, indefinite, or NaN, the formatted output conforms to the C99 standard. This table lists the formatted output:  
+  
+|Value|Output|  
+|-----------|------------|  
+|infinity|`inf`|  
+|Quiet NaN|`nan`|  
+|Signalling NaN|`nan(snan)`|  
+|Indefinite NaN|`nan(ind)`|  
+  
+Any of these values may be prefixed by a sign. If a floating-point *type* conversion specifier character is a capital letter, then the output is also formatted in capital letters. For example, if the format specifier is `%F` instead of `%f`, an infinity is formatted as `INF` instead of `inf`. The `scanf` functions can also parse these strings, so these values can make a round-trip through `printf` and `scanf` functions.
+  
+Before Visual Studio 2015, the CRT used a different, non-standard format for output of infinite, indefinite, and NaN values:  
   
 |Value|Output|  
 |-----------|------------|  
 |+ infinity|`1.#INF` *random-digits*|  
 |– infinity|`–1.#INF` *random-digits*|  
 |Indefinite (same as quiet NaN)|*digit* `.#IND` *random-digits*|  
-|NAN|*digit* `.#NAN` *random-digits*|  
+|NaN|*digit* `.#NAN` *random-digits*|  
   
+Any of these may have been prefixed by a sign, and may have been formatted slightly differently depending on field width and precision, sometimes with unusual effects. For example, `printf("%.2f\n", INFINITY)` would print `1.#J` because the #INF would be "rounded" to a precision of 2 digits.
+
 > [!NOTE]
->  If the the `Buffer` field of the argument that corresponds to `%Z`, or of the argument that corresponds to `%s` or `%S`, is a null pointer, "(null)" will be displayed.  
+>  If the argument that corresponds to `%s` or `%S`, or the `Buffer` field of the argument that corresponds to `%Z`, is a null pointer, "(null)" is displayed.  
   
 > [!NOTE]
 >  In all exponential formats, the default number of digits of exponent to display is three. By using the [_set_output_format](../c-runtime-library/set-output-format.md) function, you can set the number of digits displayed to two but expanding to three if demanded by the size of exponent.  
@@ -138,7 +154,7 @@ In a format specification, the *type* character is a conversion specifier that s
 >  Because the `%n` format is inherently insecure, it is disabled by default. If `%n` is encountered in a format string, the invalid parameter handler is invoked, as described in [Parameter Validation](../c-runtime-library/parameter-validation.md). To enable `%n` support, see [_set_printf_count_output](../c-runtime-library/reference/set-printf-count-output.md).  
   
 ## <a name="flags"></a> Flag directives
-In a format specification, the first optional field is *flags*. A flag directive is a character that specifies output justification and output of signs, blanks, leading zeros, decimal points, and octal and hexadecimal prefixes. More than one flag directive may appear in a format specification, and flags can appear in any order.  
+In a conversion specification, the first optional field is *flags*. A flag directive is a character that specifies output justification and output of signs, blanks, leading zeros, decimal points, and octal and hexadecimal prefixes. More than one flag directive may appear in a conversion specification, and flags can appear in any order.  
   
 ### Flag characters  
   
@@ -153,7 +169,7 @@ In a format specification, the first optional field is *flags*. A flag directive
 ||When it's used with the `g` or `G` format, the `#` flag forces the output value to contain a decimal point and prevents the truncation of trailing zeros.<br /><br /> Ignored when used with `c`, `d`, `i`, `u`, or `s`.|Decimal point appears only if digits follow it. Trailing zeros are truncated.|  
   
 ## <a name="width"></a> Width specification
-In a format specification, the second optional field is the width specification. The *width* argument is a non-negative decimal integer that controls the minimum number of characters that are output. If the number of characters in the output value is less than the specified width, blanks are added to the left or the right of the values—depending on whether the left-alignment flag (`-`) is specified—until the minimum width is reached. If *width* is prefixed by 0, leading zeros are added to integer or floating-point conversions until the minimum width is reached, except when conversion is to an infinity or NAN.  
+In a conversion specification, the second optional field is the width specification. The *width* argument is a non-negative decimal integer that controls the minimum number of characters that are output. If the number of characters in the output value is less than the specified width, blanks are added to the left or the right of the values—depending on whether the left-alignment flag (`-`) is specified—until the minimum width is reached. If *width* is prefixed by 0, leading zeros are added to integer or floating-point conversions until the minimum width is reached, except when conversion is to an infinity or NaN.  
   
  The width specification never causes a value to be truncated. If the number of characters in the output value is greater than the specified width, or if *width* is not given, all characters of the value are output, subject to the [precision](../c-runtime-library/precision-specification.md) specification.  
   
@@ -161,20 +177,20 @@ In a format specification, the second optional field is the width specification.
   
  `printf("%0*f", 5, 3);  /* 00003 is output */`  
   
- A missing or small *width* value in a format specification does not cause the truncation of an output value. If the result of a conversion is wider than the *width* value, the field expands to contain the conversion result.  
+ A missing or small *width* value in a conversion specification does not cause the truncation of an output value. If the result of a conversion is wider than the *width* value, the field expands to contain the conversion result.  
   
 ## <a name="precision"></a> Precision specification
-In a format specification, the third optional field is the precision specification. It consists of a period (.) followed by a non-negative decimal integer that, depending on the conversion type, specifies the number of string characters, the number of decimal places, or the number of significant digits to be output.  
+In a conversion specification, the third optional field is the precision specification. It consists of a period (.) followed by a non-negative decimal integer that, depending on the conversion type, specifies the number of string characters, the number of decimal places, or the number of significant digits to be output.  
   
  Unlike the width specification, the precision specification can cause either truncation of the output value or rounding of a floating-point value. If *precision* is specified as 0 and the value to be converted is 0, the result is no characters output, as shown in this example:  
   
  `printf( "%.0d", 0 );      /* No characters output */`  
   
- If the precision specification is an asterisk (*), an `int` argument from the argument list supplies the value. In the argument list, the *precision* argument must precede the value that's being formatted, as shown in this example:  
+ If the precision specification is an asterisk (\*), an `int` argument from the argument list supplies the value. In the argument list, the *precision* argument must precede the value that's being formatted, as shown in this example:  
   
  `printf( "%.*f", 3, 3.14159265 );  /* 3.142 output */`  
   
- The type determines either the interpretation of *precision* or the default precision when *precision* is omitted, as shown in the following table.  
+ The *type* character determines either the interpretation of *precision* or the default precision when *precision* is omitted, as shown in the following table.  
   
 ### How Precision Values Affect Type  
   
@@ -188,8 +204,36 @@ In a format specification, the third optional field is the precision specificati
 |`g`, `G`|The precision specifies the maximum number of significant digits printed.|Six significant digits are printed, and any trailing zeros are truncated.|  
 |`s`, `S`|The precision specifies the maximum number of characters to be printed. Characters in excess of *precision* are not printed.|Characters are printed until a null character is encountered.|  
   
-
+## <a name="size"></a> Argument size specification
+In a conversion specification, the *size* field is an argument size modifier for the *type* conversion specifier. The *size* field prefixes to the *type* field—`h`, `l`, `w`, `I`, `I32`, `I64`, and `ll`—specify the "size" of the corresponding argument—long or short, 32-bit or 64-bit, single-byte character or wide character—depending on the conversion specifier that they modify. These size prefixes are used with *type* characters in the `printf` and `wprintf` families of functions to specify the interpretation of argument sizes, as shown in the following table. The *size* field is optional for some argument types. When no size prefix is specified, the formatter consumes integer arguments—for example, signed or unsigned `char`, `short`, `int`, `long`, and enumeration types—as 32-bit `int` types, and `float`, `double`, and `long double` floating-point arguments are consumed as 64-bit `double` types. This matches the default argument promotion rules for variable argument lists. For more information about argument promotion, see Ellipses and Default Arguments in [Postfix expressions](../cpp/postfix-expressions.md). On both 32-bit and 64-bit systems, the conversion specification of a 64-bit integer argument must include a size prefix of `ll` or `I64`. Otherwise, the behavior of the formatter is undefined.  
   
+Some types are different sizes in 32-bit and 64-bit code. For example, `size_t` is 32 bits long in code compiled for x86, and 64 bits in code compiled for x64. To create platform-agnostic formatting code for variable-width types, you can use a variable-width argument size modifier. Alternatively, use a 64-bit argument size modifier and explicitly promote the variable-width argument type to 64 bits. The Microsoft-specific `I` argument size modifier handles variable-width integer arguments.  
+  
+### Size Prefixes for printf and wprintf Format-Type Specifiers  
+  
+|To specify|Use prefix|With type specifier|  
+|----------------|----------------|-------------------------|  
+|`long int`|`l` (lowercase L)|`d`, `i`, `o`, `x`, or `X`|  
+|`long unsigned int`|`l`|`o`, `u`, `x`, or `X`|  
+|`long long`|`ll`|`d`, `i`, `o`, `x`, or `X`|  
+|`short int`|`h`|`d`, `i`, `o`, `x`, or `X`|  
+|`short unsigned int`|`h`|`o`, `u`, `x`, or `X`|  
+|`__int32`|`I32`|`d`, `i`, `o`, `x`, or `X`|  
+|`unsigned __int32`|`I32`|`o`, `u`, `x`, or `X`|  
+|`__int64`|`I64`|`d`, `i`, `o`, `x`, or `X`|  
+|`unsigned __int64`|`I64`|`o`, `u`, `x`, or `X`|  
+|`ptrdiff_t` (that is, `__int32` on 32-bit platforms, `__int64` on 64-bit platforms)|`I`|`d`, `i`, `o`, `x`, or `X`|  
+|`size_t` (that is, `unsigned __int32` on 32-bit platforms, `unsigned __int64` on 64-bit platforms)|`I`|`o`, `u`, `x`, or `X`|  
+|`long double` (In [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)], although `long double` is a distinct type, it has the same internal representation as `double`.)|`l` or `L`|`a`, `A`, `e`, `E`, `f`, `g`, or `G`|  
+|Single-byte character with `printf` and `wprintf` functions. (An `hc` or `hC` type specifier is synonymous with `c` in `printf` functions and with `C` in `wprintf` functions.)|`h`|`c` or `C`|  
+|Wide character with `printf` and `wprintf` functions. (An `lc`, `lC`, `wc` or `wC` type specifier is synonymous with `C` in `printf` functions and with `c` in `wprintf` functions.)|`l` or `w`|`c` or `C`|  
+|Single-byte character string with `printf` and `wprintf` functions. (An `hs` or `hS` type specifier is synonymous with `s` in `printf` functions and with `S` in `wprintf` functions.)|`h`|`s`, `S`, or `Z`|  
+|Wide-character string with `printf` and `wprintf` functions. (An `ls`, `lS`, `ws` or `wS` type specifier is synonymous with `S` in `printf` functions and with `s` in `wprintf` functions.)|`l` or `w`|`s`, `S`, or `Z`|  
+  
+> [!NOTE]
+>  The `I`, `I32`, and `I64` argument size modifier prefixes are Microsoft extensions and are not ANSI-compatible. The `h` prefix when it's used with data of type `char`, the `w` prefix when it's used with data of type `wchar_t`, and the `l` prefix when it's used with data of type `double` are Microsoft extensions. The `hh`, `j`, `z`, and `t` argument size prefixes are not supported.  
+  
+
 ## See Also  
  [printf, _printf_l, wprintf, _wprintf_l](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)   
  [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)   
