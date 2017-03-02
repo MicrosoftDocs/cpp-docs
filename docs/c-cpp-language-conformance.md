@@ -224,8 +224,8 @@ Notes:
 Notes:  
 * An unlinked feature name indicates an individual feature that is found in the Library Fundamentals V1 paper, broken out for separate tracking.  
 * __No__ means not yet implemented. A group of papers listed together indicates that a feature was voted into the Standard, and then a paper to fix that feature was also voted in. These features are implemented together.   
-* __Never__ indicates that the Ordered By Default feature has been found to break ABI compatibility in other compilers, will not be implemented by any vendor, and will be removed from C++17.  
-* __N/A__ papers aren’t actually features. These altered the language of the standard, but didn’t create any work for implementers. They’re listed for completeness.  
+* __Never__ indicates that the *Ordered By Default* feature has been found to break ABI compatibility in other compilers, is not implemented by any vendor, and is expected to be removed from C++17.  
+* __N/A__ means the papers do not describe features. These papers altered the language of the standard, but didn’t create any work for implementers. They’re listed here for completeness.  
 * __VS 2013__ indicates features that are supported in Visual Studio 2013 or earlier.  
 * __VS 2015__ indicates features that are supported in Visual Studio 2015 RTM.  
 * __VS 2015.2__ and __VS 2015.3__ indicate features that are supported in Visual Studio 2015 Update 2 and Visual Studio 2015 Update 3, respectively.  
