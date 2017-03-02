@@ -1,5 +1,5 @@
 ---
-title: "Visual C/C++ Language Conformance | Microsoft Docs"
+title: "Visual C++ Language Conformance | Microsoft Docs"
 ms.custom: ""
 ms.date: "3/1/2017"
 ms.reviewer: ""
@@ -30,8 +30,8 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Visual C/C++ Language Conformance 
-This topic summarizes the ISO C++03/11/14 and draft C++17 language standards conformance of compiler features and Standard Library (STL) features for C++ in Visual Studio 2017. Each compiler and STL feature name links to the ISO C++ Standard proposal paper that describes the feature.  
+# Visual C++ Language Conformance 
+This topic summarizes the ISO C++03/11/14 and draft C++17 language standards conformance of compiler features and Standard Library (STL) features for Visual C++ in Visual Studio 2017. Each compiler and STL feature name links to the ISO C++ Standard proposal paper that describes the feature.  
   
 For current news from the C++ team, 
 visit the [Visual C++ team blog](http://blogs.msdn.microsoft.com/vcblog/).  
