@@ -388,8 +388,8 @@ int main() {
   
 -   no virtual member functions  
   
-> [!NOTE]<!--conformance note-->
->  In Visual Studio 2015 and earlier, an aggregate is not allowed to have  brace-or-equal initializers for non-static members. This restriction was removed in the C++14 standard and implemented in Visual Studio 2017. 
+> [!NOTE]
+>  <!--conformance note-->In Visual Studio 2015 and earlier, an aggregate is not allowed to have  brace-or-equal initializers for non-static members. This restriction was removed in the C++14 standard and implemented in Visual Studio 2017. 
   
  Aggregate initializers consist of a braced initialization list, with or without an equals sign, as in the following example:  
   
