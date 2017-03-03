@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # OLE DB Programming
-Microsoft OLE DB is a legacy technology. The OLE DB provider for SQL Server has been deprecated since SQL Server 2012. The provider is still shipping in SQL Server 2016 but is not guaranteed to be present in future editions of SQL Server. This documentation is intended for developers who are maintaining existing applications that already use OLE DB. New applications, and applications that might one day be upgraded to run on new versions of SQL Server, should move to ODBC as the preferred data access technology.
+Microsoft OLE DB is a legacy technology; for new applications it is the required data access API for linked SQL Servers. All other new applications should use ODBC. The current OLE DB provider for SQL Server is SQLNCLI11.DLL. The provider is still shipping in SQL Server 2016. This documentation is intended for developers who are maintaining existing applications that already use OLE DB.
   
  The OLE DB templates are C++ templates that make the high-performance OLE DB database technology easier to use by providing classes that implement many commonly used OLE DB interfaces. This template library is divided into consumer templates and provider templates.  
   
