@@ -130,7 +130,7 @@ Any of these may have been prefixed by a sign, and may have been formatted sligh
 >  If the argument that corresponds to `%s` or `%S`, or the `Buffer` field of the argument that corresponds to `%Z`, is a null pointer, "(null)" is displayed.  
   
 > [!NOTE]
->  In all exponential formats, the default number of digits of exponent to display is three. By using the [_set_output_format](../c-runtime-library/set-output-format.md) function, you can set the number of digits displayed to two but expanding to three if demanded by the size of exponent.  
+>  In all exponential formats, the minimum number of digits of exponent to display is two, using three only if necessary. By using the [_set_output_format](../c-runtime-library/set-output-format.md) function, you can set the number of digits displayed to three for backward compatibility with code written for Visual Studio 2013 and before.  
   
 > [!IMPORTANT]
 >  Because the `%n` format is inherently insecure, it is disabled by default. If `%n` is encountered in a format string, the invalid parameter handler is invoked, as described in [Parameter Validation](../c-runtime-library/parameter-validation.md). To enable `%n` support, see [_set_printf_count_output](../c-runtime-library/reference/set-printf-count-output.md).  
@@ -145,13 +145,13 @@ The first optional field in a conversion specification contains *flag directives
 |**-**|Left align the result within the given field width.|Right align.|  
 |**+**|Use a sign (+ or –) to prefix the output value if it is of a signed type.|Sign appears only for negative signed values (–).|  
 |**0**|If *width* is prefixed by **0**, leading zeros are added until the minimum width is reached. If both **0** and **-** appear, the **0** is ignored. If **0** is specified for an integer format (**i**, **u**, **x**, **X**, **o**, **d**) and a precision specification is also present—for example, `%04.d`—the **0** is ignored. If **0** is specified for the **a** or **A** floating-point format, leading zeros are prepended to the mantissa, after the `0x` or `0X` prefix.|No padding.|  
-|blank (' ')|Use a blank to prefix the output value if it is signed and positive. The blank is ignored if both the blank and + flags appear.|No blank appears.|  
+|**blank** (' ')|Use a blank to prefix the output value if it is signed and positive. The blank is ignored if both the blank and + flags appear.|No blank appears.|  
 |**#**|When it's used with the **o**, **x**, or **X** format, the **#** flag uses 0, 0x, or 0X, respectively, to prefix any nonzero output value.|No blank appears.|  
 ||When it's used with the **e**, **E**, **f**, **a** or **A** format, the **#** flag forces the output value to contain a decimal point.|Decimal point appears only if digits follow it.|  
 ||When it's used with the **g** or **G** format, the **#** flag forces the output value to contain a decimal point and prevents the truncation of trailing zeros.<br /><br /> Ignored when used with **c**, **d**, **i**, **u**, or **s**.|Decimal point appears only if digits follow it. Trailing zeros are truncated.|  
   
 ## <a name="width"></a> Width specification
-In a conversion specification, the optional width specification field. The *width* argument is a non-negative decimal integer that controls the minimum number of characters that are output. If the number of characters in the output value is less than the specified width, blanks are added to the left or the right of the values—depending on whether the left-alignment flag (**-**) is specified—until the minimum width is reached. If *width* is prefixed by 0, leading zeros are added to integer or floating-point conversions until the minimum width is reached, except when conversion is to an infinity or NaN.  
+In a conversion specification, the optional width specification field appears after any *flags* characters. The *width* argument is a non-negative decimal integer that controls the minimum number of characters that are output. If the number of characters in the output value is less than the specified width, blanks are added to the left or the right of the values—depending on whether the left-alignment flag (**-**) is specified—until the minimum width is reached. If *width* is prefixed by 0, leading zeros are added to integer or floating-point conversions until the minimum width is reached, except when conversion is to an infinity or NaN.  
   
  The width specification never causes a value to be truncated. If the number of characters in the output value is greater than the specified width, or if *width* is not given, all characters of the value are output, subject to the [precision](../c-runtime-library/precision-specification.md) specification.  
   
