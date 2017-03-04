@@ -150,8 +150,8 @@ This step-by-step walkthrough shows how to create a dynamic link library (DLL) f
     1>  stdafx.cpp  
     1>  dllmain.cpp  
     1>  MathLibrary.cpp  
-    1>     Creating library c:\users\username\documents\visual studio 2015\Projects\MathLibraryAndClient\Debug\MathLibrary.lib and object c:\users\username\documents\visual studio 2015\Projects\MathLibraryAndClient\Debug\MathLibrary.exp  
-    1>  MathLibrary.vcxproj -> c:\users\username\documents\visual studio 2015\Projects\MathLibraryAndClient\Debug\MathLibrary.dll  
+    1>     Creating library c:\users\username\documents\visual studio 2017\Projects\MathLibraryAndClient\Debug\MathLibrary.lib and object c:\users\username\documents\visual studio 2017\Projects\MathLibraryAndClient\Debug\MathLibrary.exp  
+    1>  MathLibrary.vcxproj -> c:\users\username\documents\visual studio 2017\Projects\MathLibraryAndClient\Debug\MathLibrary.dll  
     ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========  
     ```  
   
@@ -188,7 +188,7 @@ This step-by-step walkthrough shows how to create a dynamic link library (DLL) f
 2.  To use the math routines that you created in the DLL, you must reference the DLL in your app. To do this, under the **MathClient** project in **Solution Explorer**, select the **References** item. On the menu bar, choose **Project**, **Add Reference**.  
   
     > [!NOTE]
-    >  In older versions of Visual Studio, references are added to your project in a different way. Select the **MathClient** project in **Solution Explorer**, and then on the menu bar, choose **Project**, **References**. In the **Property Pages** dialog box, expand the **Common Properties** node, select **Framework and References**, and then choose the **Add New Reference** button. For more information about the **References** dialog box, see [Adding references](../ide/adding-references-in-visual-cpp-projects.md).  
+    >  In Visual Studio 2013 and earlier, references are added to your project in a different way. Select the **MathClient** project in **Solution Explorer**, and then on the menu bar, choose **Project**, **References**. In the **Property Pages** dialog box, expand the **Common Properties** node, select **Framework and References**, and then choose the **Add New Reference** button. For more information about the **References** dialog box, see [Adding references](../ide/adding-references-in-visual-cpp-projects.md).  
   
 3.  The **Add Reference** dialog box lists the libraries that you can reference. The **Projects** tab lists the projects in the current solution and any libraries that they contain. On the **Projects** tab, select the check box next to **MathLibrary**, and then choose the **OK** button.  
   
@@ -227,11 +227,11 @@ This step-by-step walkthrough shows how to create a dynamic link library (DLL) f
     ```Output  
     1>------ Build started: Project: MathLibrary, Configuration: Debug Win32 ------  
     1>  MathLibrary.cpp  
-    1>  MathLibrary.vcxproj -> c:\users\username\documents\visual studio 2015\Projects\MathLibraryAndClient\Debug\MathLibrary.dll  
+    1>  MathLibrary.vcxproj -> c:\users\username\documents\visual studio 2017\Projects\MathLibraryAndClient\Debug\MathLibrary.dll  
     2>------ Build started: Project: MathClient, Configuration: Debug Win32 ------  
     2>  stdafx.cpp  
     2>  MathClient.cpp  
-    2>  MathClient.vcxproj -> c:\users\username\documents\visual studio 2015\Projects\MathLibraryAndClient\Debug\MathClient.exe  
+    2>  MathClient.vcxproj -> c:\users\username\documents\visual studio 2017\Projects\MathLibraryAndClient\Debug\MathClient.exe  
     ========== Build: 2 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========  
   
     ```  
