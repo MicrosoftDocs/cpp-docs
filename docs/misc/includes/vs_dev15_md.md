@@ -1,1 +1,1 @@
-Visual Studio 2017 RC
+Visual Studio 2017
