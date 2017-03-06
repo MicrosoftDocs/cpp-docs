@@ -15,20 +15,20 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Fundamental types (C++-CX)
-In addition to the standard C++ built-in types, [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] ([!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)]) supports the type system that's defined by the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] architecture by providing typedefs for the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] fundamental types that map to standard C++ types.. [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] implements Boolean, character, and numeric fundamental types. These typedefs are defined in the `default` namespace, which never needs to be specified explicitly. In addition, [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] provides wrappers and concrete implementations for certain [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types and interfaces.  
+In addition to the standard C++ built-in types, [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] (C++/CX) supports the type system that's defined by the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] architecture by providing typedefs for the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] fundamental types that map to standard C++ types.. C++/CX implements Boolean, character, and numeric fundamental types. These typedefs are defined in the `default` namespace, which never needs to be specified explicitly. In addition, C++/CX provides wrappers and concrete implementations for certain [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types and interfaces.  
   
 ## Boolean and Character Types  
  The following table lists the built-in Boolean and character types, and their standard C++ equivalents.  
   
-|Namespace|[!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] name|Definition|Standard C++ name|Range of Values|  
+|Namespace|C++/CX name|Definition|Standard C++ name|Range of Values|  
 |---------------|-----------------------------------------------------------------------|----------------|-------------------------|---------------------|  
 |Platform|Boolean|An 8-bit Boolean value.|bool|`true` (nonzero) and `false` (zero)|  
 |default|char16|A 16-bit non-numeric value that represents a Unicode (UTF-16) code point.|wchar_t<br /><br /> -or-<br /><br /> L'c'|(Specified by the Unicode standard)|  
   
 ## Numeric types  
- The following table lists the built-in numeric types. The numeric types are declared in the `default` namespace and are typedefs for the corresponding C++ built-in type. Not all C++ built-in types (long, for example) are supported in the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)]. For consistency and clarity, we recommend that you use the [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] name.  
+ The following table lists the built-in numeric types. The numeric types are declared in the `default` namespace and are typedefs for the corresponding C++ built-in type. Not all C++ built-in types (long, for example) are supported in the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)]. For consistency and clarity, we recommend that you use the C++/CX name.  
   
-|[!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] name|Definition|Standard C++ name|Range of Values|  
+|C++/CX name|Definition|Standard C++ name|Range of Values|  
 |-----------------------------------------------------------------------|----------------|-------------------------|---------------------|  
 |int8|An 8-bit signed numeric value.|signed char|–128 through 127|  
 |uint8|An 8-bit unsigned numeric value.|unsigned char|0 through 255|  
@@ -42,7 +42,7 @@ In addition to the standard C++ built-in types, [!INCLUDE[cppwrt](../cppcx/inclu
 |float64|A 64-bit IEEE 754 floating-point number.|double|1.7E +/- 308 (15 digits)|  
   
 ## [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] Types  
- The following table lists some additional types that are defined by the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] architecture and are built into [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)]. Object and String are reference types. The others are value types. All of these types are declared in the `Platform` namespace. For a full list, see [Platform namespace](../cppcx/platform-namespace-c-cx.md).  
+ The following table lists some additional types that are defined by the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] architecture and are built into C++/CX. Object and String are reference types. The others are value types. All of these types are declared in the `Platform` namespace. For a full list, see [Platform namespace](../cppcx/platform-namespace-c-cx.md).  
   
 |Name|Definition|  
 |----------|----------------|  

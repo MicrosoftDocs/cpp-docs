@@ -35,7 +35,7 @@ interface class IBoxArray
  The type of the boxed value in each array element.  
   
 ## Remarks  
- `IBoxArray` is the [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] ([!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)]) name for `Windows::Foundation::IReferenceArray`.  
+ `IBoxArray` is the [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] (C++/CX) name for `Windows::Foundation::IReferenceArray`.  
   
 ## Members  
  The `IBoxArray` interface inherits from the `IValueType` interface. `IBoxArray` also has these members:  

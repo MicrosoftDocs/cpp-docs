@@ -178,7 +178,7 @@ modifiereventdelegate^ event_name
   
     -   Create an object of the class that contains the event definition.  
   
- For more information on [!INCLUDE[cppcli](../build/reference/includes/cppcli_md.md)] events, see  
+ For more information on C++/CLI events, see  
   
 -   [Events in an Interface](../dotnet/how-to-use-events-in-cpp-cli.md)  
   

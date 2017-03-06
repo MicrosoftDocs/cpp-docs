@@ -23,7 +23,7 @@ manager: "ghogen"
  [!code-cpp[cx_boxing#01](../cppcx/codesnippet/CPP/cx_boxing/class1.cpp#01)]  
   
 ### Using Platform::IBox\<T> to support nullable value types  
- C# and Visual Basic support the concept of nullable value types. In [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)], you can use the `Platform::IBox<T>` type to expose public methods that support nullable value type parameters. The following example shows a [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] public method that returns null when a C# caller passes null for one of the arguments.  
+ C# and Visual Basic support the concept of nullable value types. In C++/CX, you can use the `Platform::IBox<T>` type to expose public methods that support nullable value type parameters. The following example shows a C++/CX public method that returns null when a C# caller passes null for one of the arguments.  
   
  [!code-cpp[cx_boxing#02](../cppcx/codesnippet/CPP/cx_boxing/class1.h#02)]  
   

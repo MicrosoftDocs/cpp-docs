@@ -39,7 +39,7 @@ The Visual C++ compiler can convert value types to objects in a process called *
  (There are no remarks for this language feature that apply to all runtimes.)  
   
 ## Windows Runtime  
- [!INCLUDE[cppwrt_short](../build/reference/includes/cppwrt_short_md.md)] supports a shorthand syntax for boxing value types and unboxing reference types. A value type is boxed when it is assigned to a variable of type `Object`. An `Object` variable is unboxed when it is assigned to a value type variable and the unboxed type is specified in parentheses; that is, when the object variable is cast to a value type.  
+ C++/CX supports a shorthand syntax for boxing value types and unboxing reference types. A value type is boxed when it is assigned to a variable of type `Object`. An `Object` variable is unboxed when it is assigned to a value type variable and the unboxed type is specified in parentheses; that is, when the object variable is cast to a value type.  
   
 ```  
   

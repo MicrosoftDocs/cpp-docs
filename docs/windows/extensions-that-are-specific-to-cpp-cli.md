@@ -31,7 +31,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Extensions That Are Specific to C++/CLI
-The following language features, which are explained in this section of the documentation, apply only to [!INCLUDE[cppcli](../build/reference/includes/cppcli_md.md)].  
+The following language features, which are explained in this section of the documentation, apply only to C++/CLI.  
   
  [__identifier (C++/CLI)](../windows/identifier-cpp-cli.md)  
   

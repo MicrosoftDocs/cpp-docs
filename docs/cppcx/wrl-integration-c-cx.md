@@ -15,13 +15,13 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # WRL integration (C++-CX)
-You freely can mix [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] code with [!INCLUDE[cppwrl](../cppcx/includes/cppwrl-md.md)] ([!INCLUDE[cppwrl_short](../cppcx/includes/cppwrl-short-md.md)]) code. In the same translation unit, you can use objects declared with [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] handle-to-object (`^`) notation and [!INCLUDE[cppwrl_short](../cppcx/includes/cppwrl-short-md.md)] smart pointer (`ComPtr<T>`) notation. However, you must manually handle return values, and [!INCLUDE[cppwrl_short](../cppcx/includes/cppwrl-short-md.md)] HRESULT error codes and [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] exceptions.  
+You freely can mix C++/CX code with [!INCLUDE[cppwrl](../cppcx/includes/cppwrl-md.md)] ([!INCLUDE[cppwrl_short](../cppcx/includes/cppwrl-short-md.md)]) code. In the same translation unit, you can use objects declared with C++/CX handle-to-object (`^`) notation and [!INCLUDE[cppwrl_short](../cppcx/includes/cppwrl-short-md.md)] smart pointer (`ComPtr<T>`) notation. However, you must manually handle return values, and [!INCLUDE[cppwrl_short](../cppcx/includes/cppwrl-short-md.md)] HRESULT error codes and C++/CX exceptions.  
   
 ## [!INCLUDE[cppwrl_short](../cppcx/includes/cppwrl-short-md.md)] development  
  For more information about authoring and consuming [!INCLUDE[cppwrl_short](../cppcx/includes/cppwrl-short-md.md)] components, see [Windows Runtime C++ Template Library (WRL)](../Topic/Windows%20Runtime%20C++%20Template%20Library%20\(WRL\).md).  
   
 ## Example  
- The following code snippet demonstrates using [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] and [!INCLUDE[cppwrl_short](../cppcx/includes/cppwrl-short-md.md)] to consume [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] classes and examine a metadata file.  
+ The following code snippet demonstrates using C++/CX and [!INCLUDE[cppwrl_short](../cppcx/includes/cppwrl-short-md.md)] to consume [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] classes and examine a metadata file.  
   
  The example taken from a code snippet in the [Building Windows Store apps forum](http://social.msdn.microsoft.com/Forums/winappswithnativecode/thread/211ef583-db11-4e55-926b-6d9ab53dbdb4). The author of this code snippet offers the following disclaimers and stipulations:  
   

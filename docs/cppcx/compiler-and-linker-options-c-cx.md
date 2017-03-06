@@ -15,7 +15,7 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Compiler and Linker options (C++-CX)
-An environment variable, [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] compiler options, and linker options support the building of apps for the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)].  
+An environment variable, C++/CX compiler options, and linker options support the building of apps for the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)].  
   
 ## Library path  
  The %LIBPATH% environment variable specifies the default path to search for .winmd files.  
@@ -41,7 +41,7 @@ An environment variable, [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-
 |/WINMDKEYFILE:*filename*|Specifies a key or a key pair to sign the assembly. The *filename* parameter corresponds to the key that's used to sign the metadata file.|  
   
 ## Remarks  
- When you use **/ZW**, the compiler automatically links to the DLL version of the C Runtime (CRT). Linking to the static library version is not allowed, and any use of CRT functions that are not allowed in a [!INCLUDE[win8_appname_long](../cppcx/includes/win8-appname-long-md.md)] app will cause a compile-time error.  
+ When you use **/ZW**, the compiler automatically links to the DLL version of the C Runtime (CRT). Linking to the static library version is not allowed, and any use of CRT functions that are not allowed in a Universal Windows Platform app will cause a compile-time error.  
   
 ## See Also  
  [Building apps and libraries](../cppcx/building-apps-and-libraries-c-cx.md)

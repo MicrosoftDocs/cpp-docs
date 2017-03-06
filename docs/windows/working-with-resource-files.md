@@ -37,7 +37,7 @@ translation.priority.mt:
 ---
 # Working with Resource Files
 > [!WARNING]
->  This section applies to Windows desktop applications written in C++. For information about resources in [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] apps written in C++, see [Defining App Resources](http://msdn.microsoft.com/en-us/476ea844-632c-4467-9ce3-966be1350dd4).  
+>  This section applies to Windows desktop applications written in C++. For information about resources in Universal Windows Platform apps written in C++, see [Defining App Resources](http://msdn.microsoft.com/en-us/476ea844-632c-4467-9ce3-966be1350dd4).  
 >   
 >  For information on adding resources to C++/CLI  projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.*  
   

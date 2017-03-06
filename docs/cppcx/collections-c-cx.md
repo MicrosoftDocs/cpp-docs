@@ -15,9 +15,9 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Collections (C++-CX)
-In a [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] ([!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)]) program, you can make free use of Standard Template Library (STL) containers, or any other user-defined collection type. However, when you pass collections back and forth across the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] application binary interface (ABI)—for example, to a XAML control or to a JavaScript client—you must use [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] collection types.  
+In a [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] (C++/CX) program, you can make free use of Standard Template Library (STL) containers, or any other user-defined collection type. However, when you pass collections back and forth across the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] application binary interface (ABI)—for example, to a XAML control or to a JavaScript client—you must use [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] collection types.  
   
- The [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] defines the interfaces for collections and related types, and [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] provides the concrete C++ implementations in the collection.h header file. This illustration shows the relationships between the collection types:  
+ The [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] defines the interfaces for collections and related types, and C++/CX provides the concrete C++ implementations in the collection.h header file. This illustration shows the relationships between the collection types:  
   
  ![C&#43;&#43;&#47;CX inheritance tree for collection types](../cppcx/media/cppcxcollectionsinheritancetree.png "CPPCXCollectionsInheritanceTree")  
   
@@ -32,7 +32,7 @@ In a [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] ([!INCLUDE[cppwrt_short]
     > [!IMPORTANT]
     >  Proxy iterators `VectorIterator` and `VectorViewIterator` utilize proxy objects `VectoryProxy<T>` and `ArrowProxy<T>` to enable usage with STL containers. For more information, see "VectorProxy elements" later in this article.  
   
--   The [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] collection types support the same thread safety guarantees that STL containers support.  
+-   The C++/CX collection types support the same thread safety guarantees that STL containers support.  
   
 -   [Windows::Foundation::Collections::IObservableVector](http://msdn.microsoft.com/library/windows/apps/br226052.aspx) and [Windows::Foundation::Collections::IObservableMap](http://msdn.microsoft.com/library/windows/apps/br226050.aspx) define events that are fired when the collection changes in various ways. By implementing these interfaces,  [Platform::Collections::Map](../cppcx/platform-collections-map-class.md) and [Platform::Collections::Vector](../cppcx/platform-collections-vector-class.md) support databinding with XAML collections. For example, if you have a `Vector` that is data-bound to a `Grid`, when you add an item to a collection, the change is reflected in the Grid UI.  
   
@@ -96,7 +96,7 @@ void FindButton(UIElementCollection^ col)
  Elements in a [Platform::Collections::Map](../cppcx/platform-collections-map-class.md) are ordered. Any element to be stored in a `Map` must support less-than comparison with strict weak ordering, either implicitly or by using a custom [stl::less](../standard-library/less-struct.md) comparator that you provide. Scalar types support the comparison implicitly. For non-scalar value types such as `Windows::Foundation::DateTime`, or for custom comparisons—for example, `objA->UniqueID < objB->UniqueID`—you must provide a custom comparator.  
   
 ## Collection types  
- Collections fall into four categories: modifiable versions and read-only versions of sequence collections and associative collections. In addition, [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] enhances collections by providing three iterator classes that simplify the accessing of collections. 
+ Collections fall into four categories: modifiable versions and read-only versions of sequence collections and associative collections. In addition, C++/CX enhances collections by providing three iterator classes that simplify the accessing of collections. 
   
  Elements of a modifiable collection can be changed, but elements of a read-only collection, which is known as a *view*, can only be read. Elements of a [Platform::Collections::Vector](../cppcx/platform-collections-vector-class.md) or[Platform::Collections::VectorView](../cppcx/platform-collections-vectorview-class.md) collection can be accessed by using an iterator or the collection's [Vector::GetAt Method](../cppcx/platform-collections-vector-class.md#getat) and an index. Elements of an associative collection can be accessed by using the collection's [Map::Lookup Method](../cppcx/platform-collections-map-class.md#lookup) and a key.  
   
@@ -124,7 +124,7 @@ void FindButton(UIElementCollection^ col)
  An STL iterator that satisfies the requirements of an STL  `const` random-access iterator.  
   
 ### begin() and end() functions  
- To simplify the use of the STL to process `Vector`, `VectorView`, `Map`, `MapView`, and arbitrary `Windows::Foundation::Collections` objects, [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] supports overloads of the [begin Function](../cppcx/begin-function.md) and [end Function](../cppcx/end-function.md) non-member functions.  
+ To simplify the use of the STL to process `Vector`, `VectorView`, `Map`, `MapView`, and arbitrary `Windows::Foundation::Collections` objects, C++/CX supports overloads of the [begin Function](../cppcx/begin-function.md) and [end Function](../cppcx/end-function.md) non-member functions.  
   
  The following table lists the available iterators and functions.  
   

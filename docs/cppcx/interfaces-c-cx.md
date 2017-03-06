@@ -61,7 +61,7 @@ Although a ref class can inherit from at most one concrete base class, it can im
  [!code-cpp[cx_interfaces#06](../cppcx/codesnippet/CPP/interfacestest/class1.h#06)]  
   
 ## Generic interfaces  
- In [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)], the `generic` keyword is used to represent a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] parameterized type. A parameterized type is emitted in metadata and can be consumed by code that's written in any language that supports type parameters. The [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] defines some generic interfaces—for example,  [Windows::Foundation::Collections::IVector\<T>](Windows::Foundation::Collections::IVector)—but it doesn't support the creation of public user-defined generic interfaces in [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)]. However, you can create private generic interfaces.  
+ In C++/CX, the `generic` keyword is used to represent a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] parameterized type. A parameterized type is emitted in metadata and can be consumed by code that's written in any language that supports type parameters. The [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] defines some generic interfaces—for example,  [Windows::Foundation::Collections::IVector\<T>](Windows::Foundation::Collections::IVector)—but it doesn't support the creation of public user-defined generic interfaces in C++/CX. However, you can create private generic interfaces.  
   
  Here's how [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types can be used to author a generic interface:  
   

@@ -38,7 +38,7 @@ If you use Visual Studio to write a [!INCLUDE[cppwrl](../windows/includes/cppwrl
 >  If you have to manually update the project settings for an existing project, see [DLLs (C++/CX)](http://msdn.microsoft.com/library/windows/apps/hh699881\(v=vs.110\).aspx).  
   
 ## Download the WRL Project Template  
- Visual Studio doesn't provide a template for [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] projects. Here’s how to download a project template that creates a basic class library for [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] apps with [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)].  
+ Visual Studio doesn't provide a template for [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] projects. Here’s how to download a project template that creates a basic class library for Universal Windows Platform apps with [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)].  
   
 #### To download the WRL Project Template  
   
