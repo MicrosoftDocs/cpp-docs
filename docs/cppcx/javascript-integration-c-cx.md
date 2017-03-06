@@ -15,7 +15,7 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # JavaScript integration (C++/CX)
-See [Creating Windows Runtime Components](../Topic/Creating%20Windows%20Runtime%20Components.md).  
+For more information, see [Creating Windows Runtime Components in C++](/MicrosoftDocs/windows-uwp/blob/docs/windows-apps-src/winrt-components/creating-windows-runtime-components-in-cpp.md).  
   
 ## See Also  
  [Interoperating with Other Languages](../cppcx/interoperating-with-other-languages-c-cx.md)
