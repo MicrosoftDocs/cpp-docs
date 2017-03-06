@@ -50,6 +50,95 @@ public value struct Guid
  **Namespace:** Platform  
   
  **Metadata:** platform.winmd  
+
+ 
+## Guid::Guid Constructors
+Initializes a new instance of a Guid struct.  
+  
+### Syntax  
+  
+```cpp  
+  
+    Guid(  
+        unsigned int a,   
+        unsigned short b,   
+        unsigned short c,   
+        unsigned char d,   
+        unsigned char e,   
+        unsigned char f,   
+        unsigned char g,   
+        unsigned char h,   
+        unsigned char i,   
+        unsigned char j,   
+        unsigned char k  
+);  
+  
+    Guid(   
+        GUID m  
+);  
+  
+    Guid(  
+        unsigned int a,   
+        unsigned short b,   
+        unsigned short c,   
+        Array<unsigned char>^ n  
+);  
+```  
+  
+### Parameters  
+ `a`  
+ The first 4 bytes of the GUID.  
+  
+ `b`  
+ The next 2 bytes of the GUID.  
+  
+ `c`  
+ The next 2 bytes of the GUID.  
+  
+ `d`  
+ The next byte of the GUID.  
+  
+ `e`  
+ The next byte of the GUID.  
+  
+ `f`  
+ The next byte of the GUID.  
+  
+ `g`  
+ The next byte of the GUID.  
+  
+ `h`  
+ The next byte of the GUID.  
+  
+ `i`  
+ The next byte of the GUID.  
+  
+ `j`  
+ The next byte of the GUID.  
+  
+ `k`  
+ The next byte of the GUID.  
+  
+ `m`  
+ A GUID as defined .  
+  
+ `n`  
+ The remaining 8 bytes of the GUID.  
+  
+
+
+## Guid::operator() Operator
+Implicitly converts a [GUID structure](http://msdn.microsoft.com/library/windows/desktop/aa373931\(v=vs.85\).aspx)GUID to a Platform::Guid.  
+  
+### Syntax  
+  
+```cpp  
+Platform::Guid operator()  
+```  
+  
+### Return Value  
+ A Guid struct.  
+  
   
 ## See Also  
  [Platform namespace](../cppcx/platform-namespace-c-cx.md)
