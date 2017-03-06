@@ -344,4 +344,4 @@ void f(ClassLibrary1::Class1 ^r1, ClassLibrary1::Class2 ^r2)
 ```
 
 ## See Also  
-[Visual C/C++ Language Conformance](c-cpp-language-conformance.md)  
+[Visual C++ Language Conformance](visual-cpp-language-conformance.md)  
