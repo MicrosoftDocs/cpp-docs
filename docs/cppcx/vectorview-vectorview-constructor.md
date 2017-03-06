@@ -94,7 +94,7 @@ VectorView(
  A value that is used to initialize each element in the current VectorView.  
   
  `v`  
- An [Lvalues and Rvalues](.../cpp/lvalues-and-rvalues-visual-cpp.md) to a [std::vector](../standard-library/vector-class.md) that is used to initialize the current VectorView.  
+ An [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) to a [std::vector](../standard-library/vector-class.md) that is used to initialize the current VectorView.  
   
  `ptr`  
  Pointer to a `std::vector` that is used to initialize the current VectorView.  

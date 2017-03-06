@@ -38,7 +38,7 @@ public ref class COMException : Exception,    IException,    IPrintable,    IEqu
   
 |Member|Description|  
 |------------|-----------------|  
-|`COMException`|Initializes a new instance of the COMException class.|  
+|[COMException](#ctor)|Initializes a new instance of the COMException class.|  
   
  **Methods**  
   
@@ -50,8 +50,8 @@ public ref class COMException : Exception,    IException,    IPrintable,    IEqu
   
 |Member|Description|  
 |------------|-----------------|  
-|[Exception::HResult Property](../cppcx/exception-hresult-property.md)|The HRESULT that corresponds to the exception.|  
-|[Exception::Message Property](../cppcx/exception-message-property.md)|Message that describes the exception.|  
+|[Exception::HResult Property](#hresult)|The HRESULT that corresponds to the exception.|  
+|[Exception::Message Property](#message)|Message that describes the exception.|  
   
 ## Derived Exceptions  
  The following predefined exceptions are derived from COMException. They differ from COMException only in their name, the name of their constructor, and their underlying HRESULT value.  
@@ -80,6 +80,49 @@ public ref class COMException : Exception,    IException,    IPrintable,    IEqu
  **Namespace:** Platform  
   
  **Metadata:** platform.winmd  
+
+## <a name="ctor"></a> COMException::COMException Constructor
+Intializes a new instance of the COMException class.  
   
+### Syntax  
+  
+```cpp  
+COMException( int hresult )  
+```  
+  
+### Parameters  
+ hresult  
+ The error HRESULT that is represented by the exception.  
+  
+
+
+## <a name="hresult"></a> COMException::HResult Property
+The HRESULT that corresponds to the exception.  
+  
+### Syntax  
+  
+```cpp  
+public:property int HResult {    int get();}  
+```  
+  
+## Property Value  
+ An HRESULT value that specifies the error.  
+  
+### Remarks  
+ For more information about how to interpret the HRESULT value, see [Structure of COM Error Codes](http://go.microsoft.com/fwlink/p/?LinkId=262045).  
+
+## <a name="message"></a> COMException::Message Property
+Message that describes the exception.  
+  
+### Syntax  
+  
+```cpp  
+public:property String^ Message {    String^ get();}  
+```  
+  
+### Property Value  
+ A description of the exception.  
+    
+
 ## See Also  
  [Platform namespace](../cppcx/platform-namespace-c-cx.md)

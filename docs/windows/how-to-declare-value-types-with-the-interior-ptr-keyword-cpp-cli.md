@@ -42,7 +42,7 @@ An `interior_ptr` can be used with a value type.
 ## Example  
   
 ### Description  
- The following [!INCLUDE[cppcli](../build/reference/includes/cppcli_md.md)] sample shows how to use an `interior_ptr` with a value type.  
+ The following C++/CLI sample shows how to use an `interior_ptr` with a value type.  
   
 ### Code  
   

@@ -15,7 +15,7 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Enums (C++-CX)
-[!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] supports the `public enum class` keyword, which is analagous to a standard C++ `scoped  enum`. When you use an enumerator that's declared by using the `public enum class` keyword, you must use the enumeration identifier to scope each enumerator value.  
+C++/CX supports the `public enum class` keyword, which is analagous to a standard C++ `scoped  enum`. When you use an enumerator that's declared by using the `public enum class` keyword, you must use the enumeration identifier to scope each enumerator value.  
   
 ## Remarks  
  A `public enum class` that doesn't have an access specifier, such as `public`, is treated as a standard C++ [scoped enum](../cpp/enumerations.md).  

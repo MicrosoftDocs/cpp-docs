@@ -41,7 +41,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Arrays (C++ Component Extensions)
-The `Platform::Array<T>` type in [!INCLUDE[cppwrt_short](../build/reference/includes/cppwrt_short_md.md)], or the `array` keyword in [!INCLUDE[cppcli](../build/reference/includes/cppcli_md.md)], declares an array of a specified type and initial value.  
+The `Platform::Array<T>` type in C++/CX, or the `array` keyword in C++/CLI, declares an array of a specified type and initial value.  
   
 ## All Platforms  
  The array must be declared by using the handle-to-object (^) modifier after the closing angle bracket (>) in the declaration.  

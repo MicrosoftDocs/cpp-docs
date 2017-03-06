@@ -43,8 +43,8 @@ A namespace is a standard C++ construct for grouping types that have related fun
 ## [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] namespaces  
  The Windows API consists of types that are declared in the Windows::\* namespaces. These namespaces are reserved for Windows, and types cannot be added to them. In the **Object Browser**, you can view these namespaces in the windows.winmd file. For documentation about these namespaces, see [Windows API](http://msdn.microsoft.com/library/windows/apps/br211377).  
   
-## [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] namespaces  
- The [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] ([!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)]) define certain types in these namespaces as part of the projection of the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] type system.  
+## C++/CX namespaces  
+ The C++/CX define certain types in these namespaces as part of the projection of the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] type system.  
   
 |||  
 |-|-|  

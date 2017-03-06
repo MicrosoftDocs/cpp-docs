@@ -38,12 +38,12 @@ private ref class WriteOnlyArray<T, 1>
   
 |Name|Description|  
 |----------|-----------------|  
-|[WriteOnlyArray::begin Method](../cppcx/writeonlyarray-begin-method.md)|An iterator that points to the first element of the array.|  
-|[WriteOnlyArray::Data Property](../cppcx/writeonlyarray-data-property.md)|A pointer to the data buffer.|  
-|[WriteOnlyArray::end Method](../cppcx/writeonlyarray-end-method.md)|An iterator that points to one past the last element in the array.|  
-|[WriteOnlyArray::FastPass Property](../cppcx/writeonlyarray-fastpass-property.md)|Indicates whether the array can use the FastPass mechanism, which is an optimization transparently performed by the system. Don’t use this in your code|  
-|[WriteOnlyArray::Length Property](../cppcx/writeonlyarray-length-property.md)|Returns the number of elements in the array.|  
-|[WriteOnlyArray::set Function](../cppcx/writeonlyarray-set-function.md)|Sets the specified element to the specified value.|  
+|[WriteOnlyArray::begin Method](#begin)|An iterator that points to the first element of the array.|  
+|[WriteOnlyArray::Data Property](#data)|A pointer to the data buffer.|  
+|[WriteOnlyArray::end Method](#end)|An iterator that points to one past the last element in the array.|  
+|[WriteOnlyArray::FastPass Property](#fastpass)|Indicates whether the array can use the FastPass mechanism, which is an optimization transparently performed by the system. Don’t use this in your code|  
+|[WriteOnlyArray::Length Property](#length)|Returns the number of elements in the array.|  
+|[WriteOnlyArray::set Function](#set.md)|Sets the specified element to the specified value.|  
   
 ## Inheritance Hierarchy  
  `WriteOnlyArray`  
@@ -54,6 +54,132 @@ private ref class WriteOnlyArray<T, 1>
  **Metadata:** Platform.winmd  
   
  **Namespace:** Platform  
+
+## <a name="begin"></a>  WriteOnlyArray::begin Method
+Returns a pointer to the first element in the array.  
+  
+### Syntax  
+  
+```cpp  
+T* begin() const;  
+```  
+  
+### Return Value  
+ A pointer to the first element in the array.  
+  
+### Remarks  
+ This iterator can be used with STL algorithms such as `std::sort` to operate on elements in the array.  
+  
+
+
+## <a name="data"></a>  WriteOnlyArray::Data Property
+Pointer to the data buffer.  
+  
+### Syntax  
+  
+```cpp  
+property T* Data{  
+   T* get() const;  
+}  
+```  
+  
+### Return Value  
+ A pointer to the raw array bytes.  
+  
+
+
+## <a name="end"></a>  WriteOnlyArray::end Method
+Returns a pointer to one past the last element in the array.  
+  
+### Syntax  
+  
+```cpp  
+T* end() const;  
+```  
+  
+### Return Value  
+ A pointer iterator to one past the last element in the array.  
+  
+### Remarks  
+ This iterator can be used with STL algorithms to perform operations such as `std::sort` on the array elements.  
+  
+
+
+## <a name="fastpass"></a>  WriteOnlyArray::FastPass Property
+Indicates whether the internal FastPass optimization can be performed. Not intended for use by user code.  
+  
+### Syntax  
+  
+```cpp  
+property bool FastPass{  
+   bool get() const;  
+}  
+```  
+  
+### Return Value  
+ Boolean value that indicates whether the array is FastPass.  
+  
+
+
+## <a name="get"></a>  WriteOnlyArray::get Method
+Returns the element at the specified index.  
+  
+### Syntax  
+  
+```cpp  
+T& get(  
+   unsigned int indexArg) const;  
+```  
+  
+### Parameters  
+ `indexArg`  
+  
+### Return Value  
+  
+
+
+## <a name="length"></a>  WriteOnlyArray::Length Property
+Returns the number of elements in the caller-allocated array.  
+  
+### Syntax  
+  
+```cpp  
+property unsigned int Length{  
+   unsigned int get() const;  
+}  
+```  
+  
+### Return Value  
+ The number of elements in the array.  
+  
+
+
+## <a name="set"></a>  WriteOnlyArray::set Function
+Sets the specified value at the specified index in the array.  
+  
+### Syntax  
+  
+```cpp  
+T& set(  
+   unsigned int indexArg,  
+   T valueArg);  
+```  
+  
+### Parameters  
+ `indexArg`  
+ The index of the element to set.  
+  
+ `valueArg`  
+ The value to set at `indexArg`.  
+  
+### Return Value  
+ A reference to the element that was just set.  
+  
+
+  
+### Remarks  
+ For more information about how to interpret the HRESULT value, see [Structure of COM Error Codes](http://go.microsoft.com/fwlink/p/?LinkId=262045).  
+  
   
 ## See Also  
  [Platform Namespace](platform-namespace-c-cx.md)   

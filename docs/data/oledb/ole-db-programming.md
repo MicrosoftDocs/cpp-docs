@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # OLE DB Programming
-Microsoft OLE DB is a legacy technology. The OLE DB provider for SQL Server has been deprecated since SQL Server 2012. The provider is still shipping in SQL Server 2016 but is not guaranteed to be present in future editions of SQL Server. This documentation is intended for developers who are maintaining existing applications that already use OLE DB. New applications, and applications that might one day be upgraded to run on new versions of SQL Server, should move to ODBC as the preferred data access technology.
+Microsoft OLE DB is a legacy technology; for new applications it is the required data access API for linked SQL Servers. All other new applications should use ODBC. The current OLE DB provider for SQL Server is SQLNCLI11.DLL. The provider is still shipping in SQL Server 2016. This documentation is intended for developers who are maintaining existing applications that already use OLE DB.
   
  The OLE DB templates are C++ templates that make the high-performance OLE DB database technology easier to use by providing classes that implement many commonly used OLE DB interfaces. This template library is divided into consumer templates and provider templates.  
   
@@ -50,11 +50,10 @@ Microsoft OLE DB is a legacy technology. The OLE DB provider for SQL Server has 
 |OLE DB templates classes and macros|[OLE DB Templates Reference](../../data/oledb/ole-db-templates.md) (Visual C++)|  
 |OLE DB consumer attributes|[OLE DB Consumer Attributes](../../windows/ole-db-consumer-attributes.md)|  
 |OLE DB interfaces|[OLE DB programmer's reference](https://msdn.microsoft.com/en-us/library/ms713643.aspx) (in the [!INCLUDE[winsdkshort](../../atl-mfc-shared/reference/includes/winsdkshort_md.md)])|  
-|OLE DB templates samples|[OLE DB Templates Samples](http://msdn.microsoft.com/en-us/08958863-0b5f-41ad-ae99-fca7440c553c)|  
+|OLE DB templates samples|[OLE DB Templates Samples](http://msdn.microsoft.com/en-us/08958863-0b5f-41ad-ae99-fca7440c553c)| 
 |Data access programming overview (Visual C++)|[Data Access Programming](../../data/data-access-programming-mfc-atl.md)|  
-|ODBC vs. DAO|[Should I Use DAO or ODBC?](../../data/should-i-use-dao-or-odbc-q.md)|  
 |ODBC conceptual topics|[Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)|  
-|Data-bound controls (ADO and RDO) conceptual topics|[Data-Bound Controls (ADO and RDO)](../../data/ado-rdo/data-bound-controls-ado-and-rdo.md)|  
+
   
 ## See Also  
  [Data Access](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)

@@ -19,10 +19,10 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Namespaces Reference (C++-CX)
-The articles in this section of the documentation describe namespaces that support the compiler for [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] ([!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)]).  
+The articles in this section of the documentation describe namespaces that support the compiler for C++/CX.  
   
 ## Compiler-supplied namespaces  
- To simplify the coding of programs that target the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)], the [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] compiler and its supporting header files provide namespaces that define a wide range of types. The namespaces define the built-in numeric types; strings, arrays, and collections; Visual C++ exceptions that represent [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] errors; and language-specific enhancements to standard [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types.  
+ To simplify the coding of programs that target the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)], the C++/CX compiler and its supporting header files provide namespaces that define a wide range of types. The namespaces define the built-in numeric types; strings, arrays, and collections; Visual C++ exceptions that represent [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] errors; and language-specific enhancements to standard [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types.  
   
 ## Related topics  
   

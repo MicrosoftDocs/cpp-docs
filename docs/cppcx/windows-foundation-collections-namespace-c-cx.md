@@ -21,7 +21,7 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Windows::Foundation::Collections Namespace (C++-CX)
-[!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] supplements the Windows::Foundation::Collections namespace with functions that simplify using the Vector, VectorView, Map, and MapView collection classes.  
+C++/CX supplements the Windows::Foundation::Collections namespace with functions that simplify using the Vector, VectorView, Map, and MapView collection classes.  
   
 ## Syntax  
   

@@ -35,16 +35,16 @@ public ref class STAThreadAttribute sealed : Attribute
   
 |Name|Description|  
 |----------|-----------------|  
-|[STAThreadAttribute constructor 1](../cppcx/stathreadattribute-constructor-1.md)|Initializes a new instance of the class.|  
+|[STAThreadAttribute constructor 1](#ctor)|Initializes a new instance of the class.|  
   
 ### Public Methods  
  The STAThreadAttribute attribute inherits from [Platform::Object Class](../cppcx/platform-object-class.md). STAThreadAttribute also overloads or has the following members:  
   
 |Name|Description|  
 |----------|-----------------|  
-|[STAThreadAttribute::Equals](../cppcx/stathreadattribute-equals.md)|Determines whether the specified object is equal to the current object.|  
-|[STAThreadAttribute::GetHashCode](../cppcx/stathreadattribute-gethashcode.md)|Returns the hash code for this instance.|  
-|[STAThreadAttribute::ToString](../cppcx/stathreadattribute-tostring.md)|Returns a string that represents the current object.|  
+|[STAThreadAttribute::Equals](#equals)|Determines whether the specified object is equal to the current object.|  
+|[STAThreadAttribute::GetHashCode](#gethashcode)|Returns the hash code for this instance.|  
+|[STAThreadAttribute::ToString](#tostring)|Returns a string that represents the current object.|  
   
 ## Inheritance Hierarchy  
  `Platform`  
@@ -53,6 +53,65 @@ public ref class STAThreadAttribute sealed : Attribute
  **Header:** collection.h  
   
  **Namespace:** Platform  
+
+
+
+## <a name="ctor"></a> STAThreadAttribute constructor
+Initializes a new instance of the STAThreadAttribute class.  
+  
+### Syntax  
+  
+```cpp  
+public:STAThreadAttribute()  
+```  
+  
+
+
+## <a name="equals"></a> STAThreadAttribute::Equals
+Determines whether the specified object is equal to the current object.  
+  
+### Syntax  
+  
+```cpp  
+public:virtual override bool Equals(  Object^ obj)  
+```  
+  
+## Parameters  
+ obj  
+ The object to compare.  
+  
+### Return Value  
+ `true` if the objects are equal; otherwise, `false`.  
+  
+
+
+## <a name="gethashcode"></a> STAThreadAttribute::GetHashCode
+Returns the hash code for this instance.  
+  
+### Syntax  
+  
+```cpp  
+public:int GetHashCode()  
+```  
+  
+### Return Value  
+ The hash code for this instance.  
+  
+
+
+## <a name="tostring"></a> STAThreadAttribute::ToString
+Returns a string that represents the current object.  
+  
+### Syntax  
+  
+```cpp  
+public:String^ ToString()  
+```  
+  
+### Return Value  
+ A string that represents the current object.  
+  
+
   
 ## See Also  
  [Platform Namespace](platform-namespace-c-cx.md)

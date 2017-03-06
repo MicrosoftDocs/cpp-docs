@@ -15,7 +15,7 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Building apps and libraries (C++-CX)
-The topics in this section provide a few details about using the build system to produce a [!INCLUDE[win8_appname_long](../cppcx/includes/win8-appname-long-md.md)] app or [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component.  
+The topics in this section provide a few details about using the build system to produce a Universal Windows Platform app or [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component.  
   
 ## In this section  
   
@@ -25,4 +25,4 @@ The topics in this section provide a few details about using the build system to
   
 -   [DLLs](../cppcx/dlls-c-cx.md)  
   
- Note: Visual C++ does not support profile guided optimizations for [!INCLUDE[win8_appname_long](../cppcx/includes/win8-appname-long-md.md)]. If you attempt to build a project with these options set in the IDE, a build error will result. Console applications are also not supported.
+ Note: Visual C++ does not support profile guided optimizations for Universal Windows Platform. If you attempt to build a project with these options set in the IDE, a build error will result. Console applications are also not supported.

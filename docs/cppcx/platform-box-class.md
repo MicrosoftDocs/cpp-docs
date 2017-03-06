@@ -21,18 +21,151 @@ manager: "ghogen"
 # Platform::Box Class
 Enables a value type such as `Windows::Foundation::DateTime` or a scalar type such as `int` to be stored in a `Platform::Object` type. It is usually not necessary to use `Box` explicitly because boxing happens implicitly when you cast a value type to `Object^`.  
   
-## Syntax  
+### Syntax  
   
 ```cpp  
 ref class Box abstract;  
 ```  
+  ### Remarks  
   
-## Remarks  
-  
-## Requirements  
+### Requirements  
  **Header:** vccorlib.h  
   
- **Namespace:** Platform  
+ **Namespace:** Platform
+ 
+## Box::Box Constructor
+Creates a `Box` that can encapsulate a value of the specified type.  
+  
+### Syntax  
+  
+```cpp  
+Box(T valueArg);  
+```  
+  
+### Parameters  
+ `valueArg`  
+ The type of value to be boxed—for example, `int`, `bool`, `float64`, `DateTime`.  
+  
+
+## Box::operator Box&lt;const T&gt;^ Operator
+Enables boxing conversions from a `const` value class `T` or `enum` class `T` to `Box<T>`.  
+  
+### Syntax  
+  
+```cpp  
+operator Box<const T>^(const T valueType);  
+```  
+  
+### Parameters  
+ `T`  
+ Any value class, value struct, or enum type. Includes the built-in types in the [default namespace](../cppcx/default-namespace.md).  
+  
+### Return Value  
+ A `Platform::Box<T>``^` instance that represents the original value boxed in a ref class.  
+  
+
+
+
+
+---
+## Box::operator Box&lt;const volatile T&gt;^ Operator
+Enables boxing conversions from a `const volatile` value class `T` or `enum` type `T` to `Box<T>`.  
+  
+### Syntax  
+  
+```cpp  
+operator Box<const volatile T>^(const volatile T valueType);  
+```  
+  
+### Parameters  
+ `T`  
+ Any enum type, value class, or value struct. Includes the built-in types in the [default namespace](../cppcx/default-namespace.md).  
+  
+### Return Value  
+ A `Platform::Box<T>``^` instance that represents the original value boxed in a ref class.  
+  
+
+
+
+
+---
+## Box::operator Box&lt;T&gt;^ Operator
+Enables boxing conversions from a value class `T` to `Box<T>`.  
+  
+### Syntax  
+  
+```cpp  
+operator Box<const T>^(const T valueType);  
+```  
+  
+### Parameters  
+ `T`  
+ Any enum type, value class, or value struct. Includes the built-in types in the [default namespace](../cppcx/default-namespace.md).  
+  
+### Return Value  
+ A `Platform::Box<T>``^` instance that represents the original value boxed in a ref class.  
+  
+
+
+
+
+---
+## Box::operator Box&lt;volatile T&gt;^ Operator
+Enables boxing conversions from a `volatile` value class `T` or `enum` type `T` to `Box<T>`.  
+  
+### Syntax  
+  
+```cpp  
+operator Box<volatile T>^(volatile T valueType);  
+```  
+  
+### Parameters  
+ `T`  
+ Any enum type, value class, or value struct. Includes the built-in types in the [default namespace](../cppcx/default-namespace.md).  
+  
+### Return Value  
+ A `Platform::Box<T>``^` instance that represents the original value boxed in a ref class.  
+  
+
+
+
+
+---
+## Box::operator T Operator
+Enables boxing conversions from a value class `T` or `enum` class `T` to `Box<T>`.  
+  
+### Syntax  
+  
+```cpp  
+operator Box<T>^(T valueType);  
+```  
+  
+### Parameters  
+ `T`  
+ Any enum type, value class, or value struct. Includes the built-in types in the [default namespace](../cppcx/default-namespace.md).  
+  
+### Return Value  
+ A `Platform::Box<T>``^` instance that represents the original value boxed in a ref class.  
+  
+
+
+
+
+---
+## Box::Value Property
+Returns the value that is encapsulated in the `Box` object.  
+  
+### Syntax  
+  
+```cpp  
+virtual property T Value{  
+   T get();  
+}  
+```  
+  
+### Return Value  
+ Returns the boxed value with the same type as it originally had before it was boxed.  
+  
   
 ## See Also  
  [Platform namespace](../cppcx/platform-namespace-c-cx.md)   
