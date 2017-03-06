@@ -288,7 +288,7 @@ ON_OLECMD( pguid, olecmdid, id )
 ### Remarks  
  `IOleCommandTarget` allows a container to receive commands that originate in a DocObject's user interface, and allows the container to send the same commands (such as New, Open, SaveAs, and Print on the File menu; and Copy, Paste, Undo, and so forth on the Edit menu) to a DocObject.  
   
- `IOleCommandTarget` is simpler than OLE Automation's `IDispatch`. `IOleCommandTarget` relies entirely on a standard set of commands that rarely have arguments, and no type information is involved (type safety is diminished for command arguments as well). If you do need to dispatch commands with arguments, use [COleServerDoc::OnExecOleCmd](coleserverdoc-class.md#onexecolecmd.md).  
+ `IOleCommandTarget` is simpler than OLE Automation's `IDispatch`. `IOleCommandTarget` relies entirely on a standard set of commands that rarely have arguments, and no type information is involved (type safety is diminished for command arguments as well). If you do need to dispatch commands with arguments, use [COleServerDoc::OnExecOleCmd](coleserverdoc-class.md#onexecolecmd).  
   
  The `IOleCommandTarget` standard menu commands have been implemented by MFC in the following macros:  
   
