@@ -94,7 +94,7 @@ errno_t _wasctime_s(
  [in] The size of the buffer used to store the result.  
   
  `_tm`  
- [in] Time/date structure. This function assumes a pointer to a valid `struct``tm` object.  
+ [in] Time/date structure. This function assumes a pointer to a valid `struct tm` object.  
   
 ## Return Value  
  Zero if successful. If there is a failure, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the return value is an error code. Error codes are defined in ERRNO.H. For more information, see [errno Constants](../../c-runtime-library/errno-constants.md). The actual error codes returned for each error condition are shown in the following table.  

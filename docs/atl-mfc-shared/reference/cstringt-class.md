@@ -1335,7 +1335,7 @@ CStringT SpanIncluding(PCXSTR pszCharSet) const;
  A string interpreted as a set of characters.  
   
 ### Return Value  
- A substring that contains characters in the string that are in `pszCharSet`, beginning with the first character in the string and ending when a character is found in the string that is not in `pszCharSet.``SpanIncluding` returns an empty substring if the first character in the string is not in the specified set.  
+ A substring that contains characters in the string that are in `pszCharSet`, beginning with the first character in the string and ending when a character is found in the string that is not in `pszCharSet`. `SpanIncluding` returns an empty substring if the first character in the string is not in the specified set.  
   
 ### Remarks  
  If the first character of the string is not in the character set, then `SpanIncluding` returns an empty string. Otherwise, it returns a sequence of consecutive characters that are in the set.  

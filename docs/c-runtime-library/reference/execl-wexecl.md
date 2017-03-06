@@ -82,7 +82,7 @@ intptr_t _wexecl(
  `cmdname`  
  Path of the file to be executed.  
   
- `arg0`, `...``argn`  
+ `arg0, ... argn`  
  List of pointers to the parameters.  
   
 ## Return Value  

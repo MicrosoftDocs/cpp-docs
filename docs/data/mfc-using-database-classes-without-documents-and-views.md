@@ -14,14 +14,11 @@ helpviewer_keywords:
   - "ODBC applications [C++], without views"
   - "documents [C++], applications without"
   - "ODBC applications [C++]"
-  - "DAO [C++], writing applications"
   - "document/view architecture [C++], in databases"
   - "files [C++], MFC"
-  - "DAO [C++], file support in database applications"
   - "database classes [C++], MFC"
   - "CRecordView class, using in database applications"
   - "database applications [C++], without views"
-  - "CDaoRecordView class, using in database applications"
   - "database applications [C++], application wizard options"
   - "application wizards [C++], creating database applications"
   - "ODBC [C++], file support in database applications"
@@ -126,13 +123,13 @@ CYourNameApp theApp;
   
 -   An application that processes data without user intervention, such as an application that moves data from one database format to another or one that does calculations and performs batch updates.  
   
- Because no document owns the `CRecordset` or `CDaoRecordset` object, you probably want to store it as an embedded data member in your `CWinApp`-derived application class. Alternatives include:  
+ Because no document owns the `CRecordset` object, you probably want to store it as an embedded data member in your `CWinApp`-derived application class. Alternatives include:  
   
--   Not keeping a permanent `CRecordset` or `CDaoRecordset` object at all. You can pass **NULL** to your recordset class constructors. In that case, the framework creates a temporary `CDatabase` or `CDaoDatabase` object using the information in the recordset's `GetDefaultConnect` member function. This is the most likely alternative approach.  
+-   Not keeping a permanent `CRecordset` object at all. You can pass **NULL** to your recordset class constructors. In that case, the framework creates a temporary `CDatabase`  object using the information in the recordset's `GetDefaultConnect` member function. This is the most likely alternative approach.  
   
--   Making the `CRecordset` or `CDaoRecordset` object a global variable. This variable should be a pointer to a recordset object that you create dynamically in your `CWinApp::InitInstance` override. This avoids attempting to construct the object before the framework is initialized.  
+-   Making the `CRecordset` object a global variable. This variable should be a pointer to a recordset object that you create dynamically in your `CWinApp::InitInstance` override. This avoids attempting to construct the object before the framework is initialized.  
   
 -   Using recordset objects as you would within the context of a document or a view. Create recordsets in the member functions of your application or frame-window objects.  
   
 ## See Also  
- [MFC Database Classes (ODBC and DAO)](../data/mfc-database-classes-odbc-and-dao.md)
+ [MFC Database Classes](../data/mfc-database-classes-odbc-and-dao.md)

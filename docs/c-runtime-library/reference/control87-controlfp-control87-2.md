@@ -167,14 +167,12 @@ _controlfp(_DN_FLUSH, _MCW_DN);
   
 ## Example  
   
-```  
-  
-      // crt_cntrl87.c  
+```C  
+// crt_cntrl87.c  
 // processor: x86  
 // This program uses __control87_2 to output the x87 control   
 // word, set the precision to 24 bits, and reset the status to   
 // the default.  
-//  
   
 #include <stdio.h>  
 #include <float.h>  
@@ -205,9 +203,7 @@ int main( void )
 }  
 ```  
   
-## Output  
-  
-```  
+```Output  
 Original: 0x0001  
 0.1 * 0.1 = 1.000000000000000e-002  
 24-bit:   0x0001  
@@ -215,9 +211,6 @@ Original: 0x0001
 Default:  0x0001  
 0.1 * 0.1 = 1.000000000000000e-002  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

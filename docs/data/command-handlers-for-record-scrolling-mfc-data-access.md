@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Command Handlers for Record Scrolling  (MFC Data Access)
-Classes [CRecordView](../mfc/reference/crecordview-class.md) and [CDaoRecordView](../mfc/reference/cdaorecordview-class.md) provide default command handling for the following standard commands:  
+The [CRecordView](../mfc/reference/crecordview-class.md) class provides default command handling for the following standard commands:  
   
 -   **ID_RECORD_MOVE_FIRST**  
   
@@ -45,7 +45,7 @@ Classes [CRecordView](../mfc/reference/crecordview-class.md) and [CDaoRecordView
   
 -   **ID_RECORD_MOVE_PREV**  
   
- The `OnMove` member function of classes `CRecordView` and `CDaoRecordView` provides default command handling for all four commands, which move from record to record. As these commands are issued, RFX (or DFX) loads the new record into the recordset's fields and DDX moves the values into the record form's controls. For information about RFX, see [Record Field Exchange (RFX)](../data/odbc/record-field-exchange-rfx.md).  
+ The `OnMove` member function provides default command handling for all four commands, which move from record to record. As these commands are issued, RFX (or DFX) loads the new record into the recordset's fields and DDX moves the values into the record form's controls. For information about RFX, see [Record Field Exchange (RFX)](../data/odbc/record-field-exchange-rfx.md).  
   
 > [!NOTE]
 >  Be sure to use these standard command IDs for any user-interface objects associated with the standard record navigation commands.  

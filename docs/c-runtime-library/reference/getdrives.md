@@ -77,9 +77,8 @@ unsigned long _getdrives( void );
   
 ## Example  
   
-```  
-  
-      // crt_getdrives.c  
+```C  
+// crt_getdrives.c  
 // This program retrives and lists out  
 // all the logical drives that are   
 // currently mounted on the machine.  
@@ -121,9 +120,6 @@ C:
 D:  
 E:  
 ```  
-  
-## NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Directory Control](../../c-runtime-library/directory-control.md)
