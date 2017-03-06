@@ -38,9 +38,8 @@ This article shows how to use safe_cast in [!INCLUDE[cppcli](../build/reference/
 ## Upcasting  
  An upcast is a cast from a derived type to one of its base classes. This cast is safe and does not require an explicit cast notation. The following sample shows how to perform an upcast, with `safe_cast` and without it.  
   
-```  
-  
-      // safe_upcast.cpp  
+```cpp  
+// safe_upcast.cpp  
 // compile with: /clr  
 using namespace System;  
 interface class A {  
@@ -89,7 +88,7 @@ in B::Test2
 ## Downcasting  
  A downcast is a cast from a base class to a class that's derived from the base class.  A downcast is safe only if the object that's addressed at runtime is actually addressing a derived class object.  Unlike `static_cast`, `safe_cast` performs a dynamic check and throws <xref:System.InvalidCastException> if the conversion fails.  
   
-```  
+```cpp  
 // safe_downcast.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -141,7 +140,7 @@ in B::Test2()
 ## safe_cast with user-defined conversions  
  The next sample shows how you can use `safe_cast` to invoke user-defined conversions.  
   
-```  
+```cpp  
 // safe_cast_udc.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -193,13 +192,14 @@ in operator V^(R^ r)
 ```  
   
 ## safe_cast and boxing operations  
- **Boxing**  
+  
+### Boxing  
   
  Boxing is defined as a compiler-injected, user-defined conversion.  Therefore, you can use `safe_cast` to box a value on the CLR heap.  
   
  The following sample shows boxing with simple and user-defined value types.  A `safe_cast` boxes a value type variable that's on the native stack so that it can be assigned to a variable on the garbage-collected heap.  
   
-```  
+```cpp  
 // safe_cast_boxing.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -225,7 +225,7 @@ int main() {
   
  The next sample shows that boxing has priority over a user-defined conversion in a `safe_cast` operation.  
   
-```  
+```cpp  
 // safe_cast_boxing_2.cpp  
 // compile with: /clr  
 static bool fRetval = true;  
@@ -256,13 +256,13 @@ int main() {
 }  
 ```  
   
- **Unboxing**  
+### Unboxing  
   
  Unboxing is defined as a compiler-injected, user-defined conversion.  Therefore, you can use `safe_cast` to unbox a value on the CLR heap.  
   
  Unboxing is a user-defined conversion, but unlike boxing, unboxing must be explicit—that is, it must be performed by a `static_cast`, C-style cast, or `safe_cast`; unboxing cannot be performed implicitly.  
   
-```  
+```cpp  
 // safe_cast_unboxing.cpp  
 // compile with: /clr  
 int main() {  
@@ -273,7 +273,7 @@ int main() {
   
  The following sample shows unboxing with value types and primitive types.  
   
-```  
+```cpp  
 // safe_cast_unboxing_2.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -320,7 +320,7 @@ int main() {
 ## safe_cast and generic types  
  The next sample shows how you can use `safe_cast` to perform a downcast with a generic type.  
   
-```  
+```cpp  
 // safe_cast_generic_types.cpp  
 // compile with: /clr  
 interface struct I {};  

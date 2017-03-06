@@ -1,5 +1,5 @@
 ---
-title: "C-C++ Build Tools | Microsoft Docs"
+title: "C/C++ Build Tools | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

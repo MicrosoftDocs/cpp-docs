@@ -94,7 +94,7 @@ errno_t _controlfp_s(
   
  The difference between `_control87` and `_controlfp_s` is in how they treat `DENORMAL` values. For Intel (x86), [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)], and ARM platforms, `_control87` can set and clear the DENORMAL OPERAND exception mask. `_controlfp_s` does not modify the DENORMAL OPERAND exception mask. This example demonstrates the difference:  
   
-```  
+```C  
 _control87( _EM_INVALID, _MCW_EM );   
 // DENORMAL is unmasked by this call.  
 unsigned int current_word = 0;  
@@ -106,7 +106,7 @@ _controlfp_s( &current_word, _EM_INVALID, _MCW_EM );
   
  Intel (x86)-derived platforms support the DENORMAL input and output values in hardware. The x86 behavior is to preserve DENORMAL values. The ARM platform and the [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] platforms that have SSE2 support enable DENORMAL operands and results to be flushed, or forced to zero. The `_controlfp_s`, `_controlfp`, and `_control87` functions provide a mask to change this behavior. The following example demonstrates the use of this mask:  
   
-```  
+```C  
 unsigned int current_word = 0;  
 _controlfp_s(&current_word, _DN_SAVE, _MCW_DN);     
 // Denormal values preserved on ARM platforms and on x64 processors with  
@@ -122,9 +122,9 @@ _controlfp_s(&current_word, _DN_FLUSH, _MCW_DN);
   
  If the mask is not set correctly, this function generates an invalid parameter exception, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns `EINVAL` and sets `errno` to `EINVAL`.  
   
- This function is ignored when you use [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) or **/clr:pure** to compile because the common language runtime (CLR) only supports the default floating-point precision.  
+ This function is ignored when you use [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) to compile because the common language runtime (CLR) only supports the default floating-point precision.  
   
- **Hexadecimal Values**  
+### Mask constants and values  
   
  For the `_MCW_EM` mask, clearing it sets the exception, which allows the hardware exception; setting it hides the exception. If a `_EM_UNDERFLOW` or `_EM_OVERFLOW` occurs, no hardware exception is thrown until the next floating-point instruction is executed. To generate a hardware exception immediately after `_EM_UNDERFLOW` or `_EM_OVERFLOW`, call the FWAIT MASM instruction.  
   
@@ -146,14 +146,12 @@ _controlfp_s(&current_word, _DN_FLUSH, _MCW_DN);
   
 ## Example  
   
-```  
-  
-      // crt_contrlfp_s.c  
+```C  
+// crt_contrlfp_s.c  
 // processor: x86  
 // This program uses _controlfp_s to output the FP control   
 // word, set the precision to 24 bits, and reset the status to   
 // the default.  
-//  
   
 #include <stdio.h>  
 #include <float.h>  
@@ -188,9 +186,7 @@ int main( void )
 }  
 ```  
   
-## Output  
-  
-```  
+```Output  
 Original: 0x9001f  
 0.1 * 0.1 = 1.000000000000000e-002  
 24-bit:   0xa001f  
@@ -198,9 +194,6 @@ Original: 0x9001f
 Default:  0x9001f  
 0.1 * 0.1 = 1.000000000000000e-002  
 ```  
-  
-## NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

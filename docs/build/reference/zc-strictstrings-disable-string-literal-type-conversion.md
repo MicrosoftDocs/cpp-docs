@@ -49,7 +49,7 @@ When specified, the compiler requires strict `const`-qualification conformance f
 ```  
   
 ## Remarks  
- If **/Zc:strictStrings** is specified, the compiler enforces the standard C++ `const` qualifications for string literals, as type 'array of `const``char`' or 'array of `const``wchar_t`', depending on the declaration. String literals are immutable, and an attempt to modify the contents of one results in an access violation error at run time. You must declare a string pointer as `const` to initialize it by using a string literal, or use an explicit `const_cast` to initialize a non-`const` pointer. By default, or if **/Zc:strictStrings-** is specified, the compiler does not enforce the standard C++ `const` qualifications for string pointers initialized by using string literals.  
+ If **/Zc:strictStrings** is specified, the compiler enforces the standard C++ `const` qualifications for string literals, as type 'array of `const char`' or 'array of `const wchar_t`', depending on the declaration. String literals are immutable, and an attempt to modify the contents of one results in an access violation error at run time. You must declare a string pointer as `const` to initialize it by using a string literal, or use an explicit `const_cast` to initialize a non-`const` pointer. By default, or if **/Zc:strictStrings-** is specified, the compiler does not enforce the standard C++ `const` qualifications for string pointers initialized by using string literals.  
   
  Use the **/Zc:strictStrings** option to prevent compilation of incorrect code. This example shows how a simple declaration error leads to a crash at run time:  
   

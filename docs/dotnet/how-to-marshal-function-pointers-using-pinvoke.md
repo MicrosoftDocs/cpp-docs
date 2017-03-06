@@ -51,9 +51,9 @@ This topic explains how managed delegates can be used in place of function point
   
  The managed function suppresses garbage collection for the managed delegate to prevent .NET Framework garbage collection from relocating the delegate while the native function executes.  
   
- The managed module is compiled with /clr, but /clr:pure works as well.  
+ The managed module is compiled with /clr, but /clr:pure works as well. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
   
-```  
+```cpp  
 // TraditionalDll5.cpp  
 // compile with: /LD /EHsc  
 #include <iostream>  
@@ -77,7 +77,7 @@ int TakesCallback(CALLBACK fp, int n) {
 }  
 ```  
   
-```  
+```cpp  
 // MarshalDelegate.cpp  
 // compile with: /clr  
 using namespace System;  

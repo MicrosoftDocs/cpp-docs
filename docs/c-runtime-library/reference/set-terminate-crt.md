@@ -85,8 +85,6 @@ typedef void ( *terminate_function )( );
   
  There is a single `set_terminate` handler for all dynamically linked DLLs or EXEs; even if you call `set_terminate` your handler may be replaced by another, or you may be replacing a handler set by another DLL or EXE.  
   
- This function is not supported under **/clr:pure**.  
-  
 ## Requirements  
   
 |Routine|Required header|  

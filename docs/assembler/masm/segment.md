@@ -81,7 +81,7 @@ name ENDS
  Designates how segments should be combined and ordered in the assembled file. Typical values are, `'DATA'`, `'CODE'`, `'CONST'` and `'STACK'`  
   
 ## Remarks  
- For `ALIGN(``n``)`, `n` may be any power of 2 from 1 to 8192; not supported with **/omf**.  
+ For `ALIGN(n)`, `n` may be any power of 2 from 1 to 8192; not supported with **/omf**.  
   
 ## See Also  
  [Directives Reference](../../assembler/masm/directives-reference.md)

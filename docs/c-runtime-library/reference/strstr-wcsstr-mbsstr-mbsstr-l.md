@@ -175,9 +175,8 @@ const unsigned char *_mbsstr_l(
   
 ## Example  
   
-```  
-  
-      // crt_strstr.c  
+```C  
+// crt_strstr.c  
   
 #include <string.h>  
 #include <stdio.h>  
@@ -210,9 +209,6 @@ String to be searched:
   
 lazy found at position 36  
 ```  
-  
-## .NET Framework Equivalent  
- [System::String::IndexOf](https://msdn.microsoft.com/en-us/library/system.string.indexof.aspx)  
   
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   

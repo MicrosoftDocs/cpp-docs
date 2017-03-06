@@ -76,7 +76,7 @@ strcpy(myString, (LPCTSTR)aCString);
  [!code-cpp[NVC_ATLMFC_Utilities#189](../atl-mfc-shared/codesnippet/cpp/cstring-operations-relating-to-c-style-strings_1.cpp)]  
   
 > [!NOTE]
->  The third argument to `strcpy_s` (or the Unicode/MBCS-portable `_tcscpy_s`) is either a `const``wchar_t*` (Unicode) or a `const``char*` (ANSI). The example above passes a `CString` for this argument. The C++ compiler automatically applies the conversion function defined for the `CString` class that converts a `CString` to an `LPCTSTR`. The ability to define casting operations from one type to another is one of the most useful features of C++.  
+>  The third argument to `strcpy_s` (or the Unicode/MBCS-portable `_tcscpy_s`) is either a `const wchar_t*` (Unicode) or a `const char*` (ANSI). The example above passes a `CString` for this argument. The C++ compiler automatically applies the conversion function defined for the `CString` class that converts a `CString` to an `LPCTSTR`. The ability to define casting operations from one type to another is one of the most useful features of C++.  
   
 ##  <a name="_core_working_with_standard_run.2d.time_library_string_functions"></a> Working with Standard Run-Time Library String Functions  
  You should be able to find a `CString` method to perform any string operation for which you might consider using the standard C run-time library string functions such as `strcmp` (or the Unicode/MBCS-portable `_tcscmp`).  
@@ -108,7 +108,7 @@ strcpy(myString, (LPCTSTR)aCString);
 ##  <a name="_core_specifying_cstring_formal_parameters"></a> Specifying CString Formal Parameters  
  For most functions that need a string argument, it is best to specify the formal parameter in the function prototype as a `const` pointer to a character (`LPCTSTR`) instead of a `CString`. When a formal parameter is specified as a `const` pointer to a character, you can pass either a pointer to a `TCHAR` array, a literal string [`"hi there"`], or a `CString` object. The `CString` object will be automatically converted to an `LPCTSTR`. Any place you can use an `LPCTSTR`, you can also use a `CString` object.  
   
- You can also specify a formal parameter as a constant string reference (that is, `const``CString&`) if the argument will not be modified. Drop the `const` modifier if the string will be modified by the function. If a default null value is desired, initialize it to the null string [`""`], as shown below:  
+ You can also specify a formal parameter as a constant string reference (that is, `const CString&`) if the argument will not be modified. Drop the `const` modifier if the string will be modified by the function. If a default null value is desired, initialize it to the null string [`""`], as shown below:  
   
  [!code-cpp[NVC_ATLMFC_Utilities#191](../atl-mfc-shared/codesnippet/cpp/cstring-operations-relating-to-c-style-strings_3.cpp)]  
   

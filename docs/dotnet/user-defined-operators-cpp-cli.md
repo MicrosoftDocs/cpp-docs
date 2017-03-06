@@ -86,9 +86,8 @@ User-defined operators for managed types are allowed as static members or instan
   
 ## Example  
   
-```  
-  
-      // mcppv2_user-defined_operators.cpp  
+```cpp  
+// mcppv2_user-defined_operators.cpp  
 // compile with: /clr  
 using namespace System;  
 public ref struct X {  
@@ -160,7 +159,7 @@ int main() {
 ## Example  
  The following sample demonstrates operator synthesis, which is only available when you use **/clr** to compile. Operator synthesis creates the assignment form of a binary operator, if one is not defined, where the left-hand side of the assignment operator has a CLR type.  
   
-```  
+```cpp  
 // mcppv2_user-defined_operators_2.cpp  
 // compile with: /clr  
 ref struct A {  

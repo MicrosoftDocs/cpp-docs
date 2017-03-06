@@ -167,7 +167,7 @@ errno_t _wfopen_s(
   
  The `"a"` mode does not remove the EOF marker before appending to the file. After appending has occurred, the MS-DOS TYPE command only shows data up to the original EOF marker and not any data that's appended to the file. The `"a+"` mode does remove the EOF marker before appending to the file. After appending, the MS-DOS TYPE command shows all data in the file. The `"a+"` mode is required for appending to a stream file that is terminated by using the CTRL+Z EOF marker.  
   
- When the `"r+",``"w+",` or `"a+"` access type is specified, both reading and writing are allowed. (The file is said to be open for "update".) However, when you switch from reading to writing, the input operation must encounter an EOF marker. If there is no EOF, you must use an intervening call to a file-positioning function. The file-positioning functions are `fsetpos`, `fseek`, and `rewind`. When you switch from writing to reading, you must use an intervening call to either `fflush` or to a file-positioning function.  
+ When the `"r+"`, `"w+",` or `"a+"` access type is specified, both reading and writing are allowed. (The file is said to be open for "update".) However, when you switch from reading to writing, the input operation must encounter an EOF marker. If there is no EOF, you must use an intervening call to a file-positioning function. The file-positioning functions are `fsetpos`, `fseek`, and `rewind`. When you switch from writing to reading, you must use an intervening call to either `fflush` or to a file-positioning function.  
   
  In addition to the above values, the following characters can be included in `mode` to specify the translation mode for newline characters:  
   
@@ -211,11 +211,11 @@ errno_t _wfopen_s(
   
 |Characters in mode string|Equivalent `oflag` value for `_open`/`_sopen`|  
 |-------------------------------|----------------------------------------------------|  
-|`a`|`_O_WRONLY &#124; _O_APPEND` (usually `_O_WRONLY &#124; _O_CREAT &#124;``_O_APPEND`)|  
+|`a`|`_O_WRONLY &#124; _O_APPEND` (usually `_O_WRONLY &#124; _O_CREAT &#124; _O_APPEND`)|  
 |`a+`|`_O_RDWR &#124; _O_APPEND` (usually `_O_RDWR &#124; _O_APPEND &#124; _O_CREAT` )|  
 |`r`|`_O_RDONLY`|  
 |`r+`|`_O_RDWR`|  
-|`w`|`_O_WRONLY` (usually `_O_WRONLY &#124;``_O_CREAT &#124; _O_TRUNC`)|  
+|`w`|`_O_WRONLY` (usually `_O_WRONLY &#124; _O_CREAT &#124; _O_TRUNC`)|  
 |`w+`|`_O_RDWR` (usually `_O_RDWR &#124; _O_CREAT &#124; _O_TRUNC`)|  
 |`b`|`_O_BINARY`|  
 |`t`|`_O_TEXT`|  
@@ -247,9 +247,8 @@ errno_t _wfopen_s(
   
 ## Example  
   
-```  
-  
-      // crt_fopen_s.c  
+```C  
+// crt_fopen_s.c  
 // This program opens two files. It uses  
 // fclose to close the first file and  
 // _fcloseall to close all remaining files.  
@@ -309,12 +308,6 @@ The file 'crt_fopen_s.c' was opened
 The file 'data2' was opened  
 Number of files closed by _fcloseall: 1  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::IO::File::Open](https://msdn.microsoft.com/en-us/library/system.io.file.open.aspx)  
-  
--   <xref:System.IO.FileStream.%23ctor%2A>  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

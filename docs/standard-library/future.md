@@ -47,7 +47,7 @@ Include the standard header \<future> to define template classes and supporting 
 ## Remarks  
   
 > [!NOTE]
->  In code that is compiled by using **/clr** or **/clr:pure**, this header is blocked.  
+>  In code that is compiled by using **/clr**, this header is blocked.  
   
  An *asynchronous provider* stores the result of a function call. An *asynchronous return object* is used to retrieve the result of a function call. An *associated asynchronous state* provides communication between an asynchronous provider and one or more asynchronous return objects.  
   

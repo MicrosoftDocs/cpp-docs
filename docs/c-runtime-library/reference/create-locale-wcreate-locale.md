@@ -128,9 +128,8 @@ _locale_t _wcreate_locale(
   
 ## Example  
   
-```  
-  
-      // crt_create_locale.c  
+```C  
+// crt_create_locale.c  
 // Sets the current locale to "de-CH" using the  
 // setlocale function and demonstrates its effect on the strftime  
 // function.  
@@ -141,53 +140,53 @@ _locale_t _wcreate_locale(
   
 int main(void)  
 {  
-       time_t ltime;  
-       struct tm thetime;  
-       unsigned char str[100];  
-       _locale_t locale;  
+    time_t ltime;  
+    struct tm thetime;  
+    unsigned char str[100];  
+    _locale_t locale;  
   
-       // Create a locale object representing the German (Switzerland) locale  
-       locale = _create_locale(LC_ALL, "de-CH");  
-       time (&ltime);  
-       _gmtime64_s(&thetime, &ltime);  
+    // Create a locale object representing the German (Switzerland) locale  
+    locale = _create_locale(LC_ALL, "de-CH");  
+    time (&ltime);  
+    _gmtime64_s(&thetime, &ltime);  
   
-       // %#x is the long date representation, appropriate to  
-       // the current locale  
-       //  
-       if (!_strftime_l((char *)str, 100, "%#x",   
+    // %#x is the long date representation, appropriate to  
+    // the current locale  
+    if (!_strftime_l((char *)str, 100, "%#x",   
                      (const struct tm *)&thetime, locale))  
-               printf("_strftime_l failed!\n");  
-       else  
-               printf("In de-CH locale, _strftime_l returns '%s'\n",   
-                      str);  
+    {
+        printf("_strftime_l failed!\n");  
+    }
+    else  
+    {
+        printf("In de-CH locale, _strftime_l returns '%s'\n", str);  
+    }
   
-       _free_locale(locale);  
+    _free_locale(locale);  
   
-       // Create a locale object representing the default C locale  
-       locale = _create_locale(LC_ALL, "C");  
-       time (&ltime);  
-       _gmtime64_s(&thetime, &ltime);  
+    // Create a locale object representing the default C locale  
+    locale = _create_locale(LC_ALL, "C");  
+    time(&ltime);  
+    _gmtime64_s(&thetime, &ltime);  
   
-       if (!_strftime_l((char *)str, 100, "%#x",   
+    if (!_strftime_l((char *)str, 100, "%#x",   
                      (const struct tm *)&thetime, locale))  
-               printf("_strftime_l failed!\n");  
-       else  
-               printf("In 'C' locale, _strftime_l returns '%s'\n",   
-                      str);  
+    {
+        printf("_strftime_l failed!\n");  
+    }
+    else  
+    {
+        printf("In 'C' locale, _strftime_l returns '%s'\n", str);  
+    }
   
-       _free_locale(locale);  
+    _free_locale(locale);  
 }  
 ```  
   
-## Sample Output  
-  
-```  
+```Output  
 In de-CH locale, _strftime_l returns 'Samstag, 9. Februar 2002'  
 In 'C' locale, _strftime_l returns 'Saturday, February 09, 2002'  
 ```  
-  
-## .NET Framework Equivalent  
- [System::Globalization::CultureInfo Class](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.aspx)  
   
 ## See Also  
  [Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)   

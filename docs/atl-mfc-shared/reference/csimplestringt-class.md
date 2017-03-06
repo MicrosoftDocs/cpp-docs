@@ -264,7 +264,7 @@ explicit CSimpleStringT(IAtlStringMgr* pStringMgr) throw();
  Construct a new `CSimpleStringT` object. Because the constructors copy the input data into new allocated storage, memory exceptions may result.  
   
 ### Example  
- The following example demonstrates the use of `CSimpleStringT::CSimpleStringT` by using the ATL `typedef``CSimpleString`. `CSimpleString` is a commonly used specialization of the class template `CSimpleStringT`.  
+ The following example demonstrates the use of `CSimpleStringT::CSimpleStringT` by using the ATL `typedef` `CSimpleString`. `CSimpleString` is a commonly used specialization of the class template `CSimpleStringT`.  
   
 ```cpp  
 CSimpleString s1(pMgr);

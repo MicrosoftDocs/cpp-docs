@@ -48,6 +48,8 @@ translation.priority.ht:
 # Mixed, Pure, and Verifiable Feature Comparison (C++/CLI)
 This topic compares features among the different **/clr** compilation modes. For more information, see [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md).  
   
+ The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
+  
 ## Feature Comparison  
   
 |Feature|Mixed (/clr)|Pure (/clr:pure)|Safe (/clr:safe)|Related Information|  

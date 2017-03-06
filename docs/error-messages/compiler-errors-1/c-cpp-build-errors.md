@@ -1,5 +1,5 @@
 ---
-title: "C-C++ Build Errors | Microsoft Docs"
+title: "C/C++ Build Errors | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
