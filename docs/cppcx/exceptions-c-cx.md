@@ -15,7 +15,7 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Exceptions (C++-CX)
-Error handling in [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] ([!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)]) is based on exceptions. At the most fundamental level, [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components report errors as HRESULT values. In [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)], these values are converted to strongly typed exceptions that contain an HRESULT value and, in [!INCLUDE[win81](../cppcx/includes/win81-md.md)], a string description that you can access programmatically.  Exceptions are implemented as a `ref class` that derives from `Platform::Exception`.  The `Platform` namespace defines distinct exception classes for the most common HRESULT values; all other values are reported through the `Platform::COMException` class. All exception classes have an [Exception::HResult Property](../cppcx/platform-exception-class.md#hresult) field that you can use to retrieve the original HRESULT. In [!INCLUDE[win81](../cppcx/includes/win81-md.md)], you can also examine call-stack information for user code in the debugger that can help pinpoint the original source of the exception, even if it originated in code that was written in a language other than C++.  
+Error handling in C++/CX is based on exceptions. At the most fundamental level, [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components report errors as HRESULT values. In C++/CX, these values are converted to strongly typed exceptions that contain an HRESULT value and, in [!INCLUDE[win81](../cppcx/includes/win81-md.md)], a string description that you can access programmatically.  Exceptions are implemented as a `ref class` that derives from `Platform::Exception`.  The `Platform` namespace defines distinct exception classes for the most common HRESULT values; all other values are reported through the `Platform::COMException` class. All exception classes have an [Exception::HResult Property](../cppcx/platform-exception-class.md#hresult) field that you can use to retrieve the original HRESULT. In [!INCLUDE[win81](../cppcx/includes/win81-md.md)], you can also examine call-stack information for user code in the debugger that can help pinpoint the original source of the exception, even if it originated in code that was written in a language other than C++.  
   
 ## Exceptions  
  In your C++ program, you can throw and catch an exception that comes from a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] operation, an exception that's derived from `std::exception`, or a user-defined type. You have to throw a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] exception only when it will cross the application binary interface (ABI) boundary, for example, when the code that catches your exception is written in JavaScript. When a non-[!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] C++ exception reaches the ABI boundary, the exception is translated into a `Platform::FailureException` exception, which represents an E_FAIL HRESULT. For more information about the ABI, see [Creating Windows Runtime Components in C++](/MicrosoftDocs/windows-uwp/blob/docs/windows-apps-src/winrt-components/creating-windows-runtime-components-in-cpp.md).  
@@ -23,7 +23,7 @@ Error handling in [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] ([!INCLUDE[
  You can declare a [Platform::Exception](../cppcx/platform-exception-class.md) by using one of two constructors that take either an HRESULT parameter, or an HRESULT parameter and a [Platform::String](../cppcx/platform-string-class.md)^ parameter that can be passed across the ABI to any Windows Store app that handles it. Or you can declare an exception by using one of two [Exception::CreateException method](exception-class.md#createexception) overloads that take either an HRESULT parameter, or an HRESULT parameter and a `Platform::String^` parameter.  
   
 ## Standard exceptions  
- [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] supports a set of standard exceptions that represent typical HRESULT errors. Each standard exception derives from [Platform::COMException](../cppcx/platform-comexception-class.md), which in turn derives from `Platform::Exception`. When you throw an exception across the ABI boundary, you must throw one of the standard exceptions.  
+ C++/CX supports a set of standard exceptions that represent typical HRESULT errors. Each standard exception derives from [Platform::COMException](../cppcx/platform-comexception-class.md), which in turn derives from `Platform::Exception`. When you throw an exception across the ABI boundary, you must throw one of the standard exceptions.  
   
  You can't derive your own exception type from `Platform::Exception`. To throw a custom exception, use a user-defined HRESULT to construct a `COMException` object.  
   
@@ -97,7 +97,7 @@ void App::OnUnhandledException(Platform::Object^ sender, Windows::ApplicationMod
 ```  
   
 ## Remarks  
- [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] does not use the `finally` clause.  
+ C++/CX does not use the `finally` clause.  
   
 ## See Also  
  [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)   

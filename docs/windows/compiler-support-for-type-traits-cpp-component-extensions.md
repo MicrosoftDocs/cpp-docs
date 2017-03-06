@@ -98,7 +98,7 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
  The following list contains the type traits that are supported by the compiler. All type traits return `false` if the condition specified by the name of the type trait is not met.  
   
- (In the following list, code examples are written only in [!INCLUDE[cppcli](../build/reference/includes/cppcli_md.md)]. But the corresponding type trait is also supported in [!INCLUDE[cppwrt](../build/reference/includes/cppwrt_md.md)] unless stated otherwise. The term, "platform type" refers to either [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] types or common language runtime types.)  
+ (In the following list, code examples are written only in C++/CLI. But the corresponding type trait is also supported in [!INCLUDE[cppwrt](../build/reference/includes/cppwrt_md.md)] unless stated otherwise. The term, "platform type" refers to either [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] types or common language runtime types.)  
   
 -   `__has_assign(` `type` `)`  
   

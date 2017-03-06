@@ -15,21 +15,21 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Static libraries (C++-CX)
-A static library that's used in a [!INCLUDE[win8_appname_long](../cppcx/includes/win8-appname-long-md.md)] app can contain ISO-standard C++ code, including STL types, and also calls to Win32 APIs that are not excluded from the [!INCLUDE[win8_appname_long](../cppcx/includes/win8-appname-long-md.md)] app platform. A static library consumes [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components and may create [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components with certain restrictions.  
+A static library that's used in a Universal Windows Platform app can contain ISO-standard C++ code, including STL types, and also calls to Win32 APIs that are not excluded from the Universal Windows Platform app platform. A static library consumes [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components and may create [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components with certain restrictions.  
   
 ## Creating static libraries  
   
-#### To create a static library for use in a [!INCLUDE[win8_appname_long](../cppcx/includes/win8-appname-long-md.md)] app  
+#### To create a static library for use in a Universal Windows Platform app  
   
-1.  On the menu bar, choose **File** > **New** > **Project** > **Blank Static Library** for [!INCLUDE[win8_appname_long](../cppcx/includes/win8-appname-long-md.md)] apps.  
+1.  On the menu bar, choose **File** > **New** > **Project** > **Blank Static Library** for Universal Windows Platform apps.  
   
-2.  In **Solution Explorer**, open the shortcut menu for the project and then choose **Properties**. In the **Properties** dialog box, on the **Configuration Properties** > **General** page, set [!INCLUDE[win8_appname_long](../cppcx/includes/win8-appname-long-md.md)] app support to **Yes**.  
+2.  In **Solution Explorer**, open the shortcut menu for the project and then choose **Properties**. In the **Properties** dialog box, on the **Configuration Properties** > **General** page, set Universal Windows Platform app support to **Yes**.  
   
 3.  On the **Configuration Properties** > **C/C++** page, set **Consume** [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] **Extension** to **Yes (/ZW)**.  
   
- When you compile a new static library, if you make a call to a Win32 API that's excluded for [!INCLUDE[win8_appname_long](../cppcx/includes/win8-appname-long-md.md)] apps, the compiler will raise error C3861, “Identifier not found.” To look for an alternative method that's supported for the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)], see [Alternatives to Windows APIs in Windows Store apps](http://msdn.microsoft.com/en-us/75568012-61e0-41cc-a4df-c698f54f21ec).  
+ When you compile a new static library, if you make a call to a Win32 API that's excluded for Universal Windows Platform apps, the compiler will raise error C3861, “Identifier not found.” To look for an alternative method that's supported for the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)], see [Alternatives to Windows APIs in Windows Store apps](http://msdn.microsoft.com/en-us/75568012-61e0-41cc-a4df-c698f54f21ec).  
   
- If you add a C++ static library project to a [!INCLUDE[win8_appname_long](../cppcx/includes/win8-appname-long-md.md)] app solution, you might have to update the library project’s property settings so that the [!INCLUDE[win8_appname_long](../cppcx/includes/win8-appname-long-md.md)] support property is set to **Yes**. Without this setting, the code builds and links, but an error occurs when you attempt to verify the app for the [!INCLUDE[win8_appstore_long](../cppcx/includes/win8-appstore-long-md.md)]. The static lib should be compiled with the same compiler settings as the project that consumes it.  
+ If you add a C++ static library project to a Universal Windows Platform app solution, you might have to update the library project’s property settings so that the Universal Windows Platform support property is set to **Yes**. Without this setting, the code builds and links, but an error occurs when you attempt to verify the app for the [!INCLUDE[win8_appstore_long](../cppcx/includes/win8-appstore-long-md.md)]. The static lib should be compiled with the same compiler settings as the project that consumes it.  
   
  If you consume a static library that creates public `ref` classes, public interface classes, or public value classes, the linker raises this warning:  
   

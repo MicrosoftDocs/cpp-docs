@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Declare and Use Interior Pointers and Managed Arrays (C++/CLI)
-The following [!INCLUDE[cppcli](../build/reference/includes/cppcli_md.md)] sample shows how you can declare and use an interior pointer to an array.  
+The following C++/CLI sample shows how you can declare and use an interior pointer to an array.  
   
 > [!IMPORTANT]
 >  This language feature is supported by the **/clr** compiler option, but not by the **/ZW** compiler option.  

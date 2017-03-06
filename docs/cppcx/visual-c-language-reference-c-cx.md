@@ -15,7 +15,7 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Visual C++ Language Reference (C++/CX)
-[!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] ([!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)]) is a set of extensions to the C++ language that enable the creation of Windows apps and [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components in an idiom that is as close as possible to modern C++. Use [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] to write Windows apps and components in native code that easily interact with Visual C#, Visual Basic, and JavaScript, and other languages that support the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)]. In those rare cases that require direct access to the raw COM interfaces, or non-exceptional code, you can use the [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).  
+C++/CX is a set of extensions to the C++ language that enable the creation of Windows apps and [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components in an idiom that is as close as possible to modern C++. Use C++/CX to write Windows apps and components in native code that easily interact with Visual C#, Visual Basic, and JavaScript, and other languages that support the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)]. In those rare cases that require direct access to the raw COM interfaces, or non-exceptional code, you can use the [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).  
   
  The new model represents the next generation of native C++ programming on Windows. By using it, you can create:  
   
@@ -29,10 +29,10 @@ manager: "ghogen"
   
 |||  
 |-|-|  
-|[Quick Reference](../cppcx/quick-reference-c-cx.md)|Table of keywords and operators for [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] ([!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)]).|  
-|[Type System](../cppcx/type-system-c-cx.md)|Describes basic [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] types and programming constructs, and how to utilize [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] to consume and create [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types.|  
+|[Quick Reference](../cppcx/quick-reference-c-cx.md)|Table of keywords and operators for C++/CX.|  
+|[Type System](../cppcx/type-system-c-cx.md)|Describes basic C++/CX types and programming constructs, and how to utilize C++/CX to consume and create [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types.|  
 |[Building apps and libraries](../cppcx/building-apps-and-libraries-c-cx.md)|Discusses how to use the IDE to build apps and link to static libraries aned DLLs.|  
-|[Interoperating with Other Languages](../cppcx/interoperating-with-other-languages-c-cx.md)|Discusses how components that are written by using [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] can be used with components that are written in JavaScript, any managed language, or the [!INCLUDE[cppwrl](../cppcx/includes/cppwrl-md.md)].|  
+|[Interoperating with Other Languages](../cppcx/interoperating-with-other-languages-c-cx.md)|Discusses how components that are written by using C++/CX can be used with components that are written in JavaScript, any managed language, or the [!INCLUDE[cppwrl](../cppcx/includes/cppwrl-md.md)].|  
 |[Threading and Marshaling](../cppcx/threading-and-marshaling-c-cx.md)|Discusses how to specify the threading and marshaling behavior of components that you create.|  
 |[Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)|Reference documentation for the default namespace, the Platform namespace, Platform::Collections, and related namespaces.|  
 |[CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)|Lists the CRT functions that are not available for use in Windows Runtime apps.|  

@@ -15,13 +15,13 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Ref classes and structs (C++-CX)
-The [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] ([!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)]) supports user-defined *ref classes* and *ref structs*, and user-defined *value classes* and *value structs*. These data structures are the primary containers by which [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] supports the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] type system. Their contents are emitted to metadata according to certain specific rules, and this enables them to be passed between [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components and [!INCLUDE[win8_appname_long](../cppcx/includes/win8-appname-long-md.md)] apps that are written in C++ or other languages.  
+The C++/CX supports user-defined *ref classes* and *ref structs*, and user-defined *value classes* and *value structs*. These data structures are the primary containers by which C++/CX supports the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] type system. Their contents are emitted to metadata according to certain specific rules, and this enables them to be passed between [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components and Universal Windows Platform apps that are written in C++ or other languages.  
   
  A ref class or ref struct has these essential features:  
   
 -   It must be declared within a namespace, at namespace scope, and in that namespace it may have public or private accessibility. Only public types are emitted to metadata. Nested public class definitions are not permitted, including nested public [enum](../cppcx/enums-c-cx.md) classes. For more information, see [Namespaces and Type Visibility](../cppcx/namespaces-and-type-visibility-c-cx.md).  
   
--   It may contain as members [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] including ref classes, value classes, ref structs, value structs, or nullable value structs. It may also contain scalar types such as float64, bool, and so on. It may also contain standard C++ types such as `std::vector` or a custom class, as long as they are not public. [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] constructs may have `public`, `protected`, `internal`, `private`, or `protected private` accessibility. All `public` or `protected` members are emitted to metadata. Standard C++ types must have `private`, `internal`, or `protected private` accessibility, which prevents them from being emitted to metadata.  
+-   It may contain as members C++/CX including ref classes, value classes, ref structs, value structs, or nullable value structs. It may also contain scalar types such as float64, bool, and so on. It may also contain standard C++ types such as `std::vector` or a custom class, as long as they are not public. C++/CX constructs may have `public`, `protected`, `internal`, `private`, or `protected private` accessibility. All `public` or `protected` members are emitted to metadata. Standard C++ types must have `private`, `internal`, or `protected private` accessibility, which prevents them from being emitted to metadata.  
   
 -   It may implement one or more *interface classes* or *interface structs*.  
   
@@ -68,18 +68,18 @@ The [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] ([!INCLUDE[cppwrt_short](
   
  A ref struct is the same as a ref class, except that by default its members have `public` accessibility.  
   
- A `public` ref class or ref struct is emitted in metadata, but to be usable from other [!INCLUDE[win8_appname_long](../cppcx/includes/win8-appname-long-md.md)] apps and [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components it must have at least one public or protected constructor. A public ref class that has a public constructor must also be declared as `sealed` to prevent further derivation through the application binary interface (ABI).  
+ A `public` ref class or ref struct is emitted in metadata, but to be usable from other Universal Windows Platform apps and [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components it must have at least one public or protected constructor. A public ref class that has a public constructor must also be declared as `sealed` to prevent further derivation through the application binary interface (ABI).  
   
  Public members may not be declared as const because the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] type system does not support const. You can use a static property to declare a public data member with a constant value.  
   
- When you define a public ref class or struct, the compiler applies the required attributes to the class and stores that information in the .winmd file of the app. However, when you define a public unsealed ref class, manually apply the `Windows::Foundation::Metadata::WebHostHidden` attribute to ensure that the class is not visible to [!INCLUDE[win8_appname_long](../cppcx/includes/win8-appname-long-md.md)] apps that are written in JavaScript.  
+ When you define a public ref class or struct, the compiler applies the required attributes to the class and stores that information in the .winmd file of the app. However, when you define a public unsealed ref class, manually apply the `Windows::Foundation::Metadata::WebHostHidden` attribute to ensure that the class is not visible to Universal Windows Platform apps that are written in JavaScript.  
   
  A ref class can have standard C++ types, including `const` types, in any `private`, `internal`, or `protected private` members.  
   
  Public ref classes that have type parameters are not permitted. User-defined generic ref classes are not permitted. A private, internal, or protected private ref class may be a template.  
   
 ## Destructors  
- In [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)], calling `delete` on a public destructor invokes the destructor regardless of the object's reference count. This behavior enables you to define a destructor that performs custom cleanup of non-RAII resources in a deterministic manner. However, even in this case, the object itself is not deleted from memory. The memory for the object is only freed when the reference count reaches zero.  
+ In C++/CX, calling `delete` on a public destructor invokes the destructor regardless of the object's reference count. This behavior enables you to define a destructor that performs custom cleanup of non-RAII resources in a deterministic manner. However, even in this case, the object itself is not deleted from memory. The memory for the object is only freed when the reference count reaches zero.  
   
  If a class's destructor is not public, then it is only invoked when the reference count reaches zero. If you call `delete` on an object that has a private destructor, the compiler raises warning C4493, which says "delete expression has no effect as the destructor of \<type name> does not have 'public' accessibility."  
   
@@ -95,7 +95,7 @@ The [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] ([!INCLUDE[cppwrt_short](
   
  The behavior is undefined if you try to access members of a class that has already had its destructor run; it will most likely cause the program to crash. Calling `delete t` on a type that has no public destructor has no effect. Calling `delete this` on a type or base class that has a known `private` or `protected private` destructor from within its type hierarchy also has no effect.  
   
- When you declare a public destructor, the compiler generates the code so that the ref class implements `Platform::IDisposable` and the destructor implements the `Dispose` method. `Platform::IDisposable` is the [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] projection of `Windows::Foundation::IClosable`. Never explicitly implement these interfaces.  
+ When you declare a public destructor, the compiler generates the code so that the ref class implements `Platform::IDisposable` and the destructor implements the `Dispose` method. `Platform::IDisposable` is the C++/CX projection of `Windows::Foundation::IClosable`. Never explicitly implement these interfaces.  
   
 ## Inheritance  
  Platform::Object is the universal base class for all ref classes. All ref classes are implicitly convertible to Platform::Object and can override [Object::ToString](../cppcx/object-tostring-method-c-cx.md). However, the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] inheritance model not intended as a general inheritance model; in C++/CX this means that a user-defined public ref class cannot serve as a base class.  
@@ -106,15 +106,15 @@ The [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] ([!INCLUDE[cppwrt_short](
   
  A private base ref class is not required to derive from an existing unsealed class. If you require an object hierarchy to model your own program structure or to enable code reuse, then use private or internal ref classes, or better yet, standard C++ classes. You can expose the functionality of the private object hierarchy through a public sealed ref class wrapper.  
   
- A ref class that has a public or protected constructor in [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] must be declared as sealed. This restriction means that there is no way for classes that are written in other languages such as C# or Visual Basic to inherit from types that you declare in a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component that's written in [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)].  
+ A ref class that has a public or protected constructor in C++/CX must be declared as sealed. This restriction means that there is no way for classes that are written in other languages such as C# or Visual Basic to inherit from types that you declare in a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component that's written in C++/CX.  
   
- Here are the basic rules for inheritance in [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)]:  
+ Here are the basic rules for inheritance in C++/CX:  
   
 -   Ref classes can inherit directly from at most one base ref class, but can implement any number of interfaces.  
   
 -   If a class has a public constructor, it must be declared as sealed to prevent further derivation.  
   
--   You can create public unsealed base classes that have internal or protected private constructors, provided that the base class derives directly or indirectly from an existing unsealed base class such as `Windows::UI::Xaml::DependencyObject`. Inheritance of user-defined ref classes across .winmd files is not supported; however, a ref class can inherit from an interface that's defined in another .winmd file. You can create derived classes from a user-defined base ref class only within the same [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component or [!INCLUDE[win8_appname_long](../cppcx/includes/win8-appname-long-md.md)] app.  
+-   You can create public unsealed base classes that have internal or protected private constructors, provided that the base class derives directly or indirectly from an existing unsealed base class such as `Windows::UI::Xaml::DependencyObject`. Inheritance of user-defined ref classes across .winmd files is not supported; however, a ref class can inherit from an interface that's defined in another .winmd file. You can create derived classes from a user-defined base ref class only within the same [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component or Universal Windows Platform app.  
   
 -   For ref classes, only public inheritance is supported.  
   
