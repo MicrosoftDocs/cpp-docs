@@ -388,7 +388,8 @@ int main() {
   
 -   no virtual member functions  
   
--   no brace-or-equal initializers for non-static members  
+> [!NOTE]
+>  <!--conformance note-->In Visual Studio 2015 and earlier, an aggregate is not allowed to have  brace-or-equal initializers for non-static members. This restriction was removed in the C++14 standard and implemented in Visual Studio 2017. 
   
  Aggregate initializers consist of a braced initialization list, with or without an equals sign, as in the following example:  
   
@@ -435,7 +436,7 @@ myArr3: 8 9 10 0 0
 ```  
   
 > [!IMPORTANT]
->  Array members that declared but not explicitly initialized during aggregate initialization are zero-initialized, as in `myArr3` above.  
+>  Array members that are declared but not explicitly initialized during aggregate initialization are zero-initialized, as in `myArr3` above.  
   
 #### Initializing unions and structs  
  If a union does not have a constructor, you can initialize it with a single value (or with another instance of a union). The value is used to initialize the first non-static field. This is different from struct initialization, in which the first value in the initializer is used to initialize the first field, the second to initialize the second field, and so on. Compare the initialization of unions and structs in the following example:  
