@@ -15,17 +15,17 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # WRL integration (C++-CX)
-You freely can mix [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] code with [!INCLUDE[cppwrl](../cppcx/includes/cppwrl-md.md)] ([!INCLUDE[cppwrl_short](../cppcx/includes/cppwrl-short-md.md)]) code. In the same translation unit, you can use objects declared with [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] handle-to-object (`^`) notation and [!INCLUDE[cppwrl_short](../cppcx/includes/cppwrl-short-md.md)] smart pointer (`ComPtr<T>`) notation. However, you must manually handle return values, and [!INCLUDE[cppwrl_short](../cppcx/includes/cppwrl-short-md.md)] HRESULT error codes and [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] exceptions.  
+You freely can mix [!INCLUDE[cppwrt_short](includes/cppwrt-short-md.md)] code with [!INCLUDE[cppwrl](includes/cppwrl-md.md)] ([!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)]) code. In the same translation unit, you can use objects declared with [!INCLUDE[cppwrt_short](includes/cppwrt-short-md.md)] handle-to-object (`^`) notation and [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] smart pointer (`ComPtr<T>`) notation. However, you must manually handle return values, and [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] HRESULT error codes and [!INCLUDE[cppwrt_short](includes/cppwrt-short-md.md)] exceptions.  
   
-## [!INCLUDE[cppwrl_short](../cppcx/includes/cppwrl-short-md.md)] development  
- For more information about authoring and consuming [!INCLUDE[cppwrl_short](../cppcx/includes/cppwrl-short-md.md)] components, see [Windows Runtime C++ Template Library (WRL)](../Topic/Windows%20Runtime%20C++%20Template%20Library%20\(WRL\).md).  
+## [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] development  
+ For more information about authoring and consuming [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] components, see [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).  
   
 ## Example  
- The following code snippet demonstrates using [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] and [!INCLUDE[cppwrl_short](../cppcx/includes/cppwrl-short-md.md)] to consume [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] classes and examine a metadata file.  
+ The following code snippet demonstrates using [!INCLUDE[cppwrt_short](includes/cppwrt-short-md.md)] and [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] to consume [!INCLUDE[wrt](includes/wrt-md.md)] classes and examine a metadata file.  
   
  The example taken from a code snippet in the [Building Windows Store apps forum](http://social.msdn.microsoft.com/Forums/winappswithnativecode/thread/211ef583-db11-4e55-926b-6d9ab53dbdb4). The author of this code snippet offers the following disclaimers and stipulations:  
   
-1.  C++ doesn't provide specific APIs to reflect on [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types, but Windows metadata files (.winmd) for a type are fully compliant with CLR metadata files. Windows provides the new metadata discovery APIs (RoGetMetaDataFile) to get to the .winmd file for a given type. However, these APIs are of limited use to C++ developers because you can't instantiate a class.  
+1.  C++ doesn't provide specific APIs to reflect on [!INCLUDE[wrt](includes/wrt-md.md)] types, but Windows metadata files (.winmd) for a type are fully compliant with CLR metadata files. Windows provides the new metadata discovery APIs (RoGetMetaDataFile) to get to the .winmd file for a given type. However, these APIs are of limited use to C++ developers because you can't instantiate a class.  
   
 2.  After the code is compiled, you'll also need to pass Runtimeobject.lib and Rometadata.lib to the Linker.  
   
@@ -115,4 +115,4 @@ IVector<String^>^ GetTypeMethods(Object^ instance)
 ```  
   
 ## See Also  
- [Interoperating with Other Languages](../cppcx/interoperating-with-other-languages-c-cx.md)
+ [Interoperating with Other Languages](interoperating-with-other-languages-c-cx.md)
