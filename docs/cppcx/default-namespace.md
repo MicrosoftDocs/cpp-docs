@@ -19,7 +19,7 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # default namespace
-The `default` namespace scopes the built-in types that are supported by [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] (C++/CX).  
+The `default` namespace scopes the built-in types that are supported by C++/CX.  
   
 ## Syntax  
   

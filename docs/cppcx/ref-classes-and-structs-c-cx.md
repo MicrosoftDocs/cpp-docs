@@ -15,7 +15,7 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Ref classes and structs (C++-CX)
-The [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] (C++/CX) supports user-defined *ref classes* and *ref structs*, and user-defined *value classes* and *value structs*. These data structures are the primary containers by which C++/CX supports the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] type system. Their contents are emitted to metadata according to certain specific rules, and this enables them to be passed between [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components and Universal Windows Platform apps that are written in C++ or other languages.  
+The C++/CX supports user-defined *ref classes* and *ref structs*, and user-defined *value classes* and *value structs*. These data structures are the primary containers by which C++/CX supports the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] type system. Their contents are emitted to metadata according to certain specific rules, and this enables them to be passed between [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components and Universal Windows Platform apps that are written in C++ or other languages.  
   
  A ref class or ref struct has these essential features:  
   

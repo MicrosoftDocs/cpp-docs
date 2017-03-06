@@ -15,7 +15,7 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Fundamental types (C++-CX)
-In addition to the standard C++ built-in types, [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] (C++/CX) supports the type system that's defined by the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] architecture by providing typedefs for the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] fundamental types that map to standard C++ types.. C++/CX implements Boolean, character, and numeric fundamental types. These typedefs are defined in the `default` namespace, which never needs to be specified explicitly. In addition, C++/CX provides wrappers and concrete implementations for certain [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types and interfaces.  
+In addition to the standard C++ built-in types, C++/CX supports the type system that's defined by the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] architecture by providing typedefs for the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] fundamental types that map to standard C++ types.. C++/CX implements Boolean, character, and numeric fundamental types. These typedefs are defined in the `default` namespace, which never needs to be specified explicitly. In addition, C++/CX provides wrappers and concrete implementations for certain [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types and interfaces.  
   
 ## Boolean and Character Types  
  The following table lists the built-in Boolean and character types, and their standard C++ equivalents.  
