@@ -1,5 +1,5 @@
 ---
-title: "Quick Reference (C++-CX) | Microsoft Docs"
+title: "Quick Reference (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.prod: "windows-client-threshold"  

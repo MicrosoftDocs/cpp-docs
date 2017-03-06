@@ -1,5 +1,5 @@
 ---
-title: "Static libraries (C++-CX) | Microsoft Docs"
+title: "Static libraries (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "02/03/2017"
 ms.prod: "windows-client-threshold"  
@@ -14,7 +14,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# Static libraries (C++-CX)
+# Static libraries (C++/CX)
 A static library that's used in a Universal Windows Platform app can contain ISO-standard C++ code, including STL types, and also calls to Win32 APIs that are not excluded from the Universal Windows Platform app platform. A static library consumes [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components and may create [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components with certain restrictions.  
   
 ## Creating static libraries  

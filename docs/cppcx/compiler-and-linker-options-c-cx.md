@@ -1,5 +1,5 @@
 ---
-title: "Compiler and Linker options (C++-CX) | Microsoft Docs"
+title: "Compiler and Linker options (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/22/2017"
 ms.prod: "windows-client-threshold"  
@@ -14,7 +14,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# Compiler and Linker options (C++-CX)
+# Compiler and Linker options (C++/CX)
 An environment variable, C++/CX compiler options, and linker options support the building of apps for the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)].  
   
 ## Library path  

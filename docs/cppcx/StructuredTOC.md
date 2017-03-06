@@ -110,7 +110,7 @@
 ##### [Object::GetHashCode Method](object-gethashcode-method.md)
 ##### [Object::GetType Method](object-gettype-method.md)
 ##### [Object::ReferenceEquals Method](object-referenceequals-method.md)
-##### [Object::ToString Method (C++-CX)](object-tostring-method-c-cx.md)
+##### [Object::ToString Method (C++/CX)](object-tostring-method-c-cx.md)
 #### [Platform::ObjectDisposedException Class](platform-objectdisposedexception-class.md)
 #### [Platform::OperationCanceledException Class](platform-operationcanceledexception-class.md)
 #### [Platform::OutOfBoundsException Class](platform-outofboundsexception-class.md)

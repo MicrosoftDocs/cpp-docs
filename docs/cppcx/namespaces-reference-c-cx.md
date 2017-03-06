@@ -1,5 +1,5 @@
 ---
-title: "Namespaces Reference (C++-CX) | Microsoft Docs"
+title: "Namespaces Reference (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/22/2017"
 ms.prod: "windows-client-threshold"  
@@ -18,7 +18,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# Namespaces Reference (C++-CX)
+# Namespaces Reference (C++/CX)
 The articles in this section of the documentation describe namespaces that support the compiler for C++/CX.  
   
 ## Compiler-supplied namespaces  

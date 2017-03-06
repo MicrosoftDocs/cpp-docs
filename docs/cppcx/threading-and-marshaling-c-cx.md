@@ -1,5 +1,5 @@
 ---
-title: "Threading and Marshaling (C++-CX) | Microsoft Docs"
+title: "Threading and Marshaling (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.prod: "windows-client-threshold"  
@@ -20,7 +20,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# Threading and Marshaling (C++-CX)
+# Threading and Marshaling (C++/CX)
 In the vast majority of cases, instances of [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] classes, like standard C++ objects, can be accessed from any thread. Such classes are referred to as "agile". However, a small number of [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] classes that ship with Windows are non-agile, and must be consumed more like COM objects than standard C++ objects. You don't need to be a COM expert to use non-agile classes, but you do need to take into consideration the class's threading model and its marshaling behavior. This article provides background and guidance for those rare scenarios in which you need to consume an instance of a non-agile class.  
   
 ## Threading model and marshaling behavior  

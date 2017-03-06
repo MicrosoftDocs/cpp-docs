@@ -1,5 +1,5 @@
 ---
-title: "WRL integration (C++-CX) | Microsoft Docs"
+title: "WRL integration (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/22/2017"
 ms.prod: "windows-client-threshold"  
@@ -14,7 +14,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# WRL integration (C++-CX)
+# WRL integration (C++/CX)
 You freely can mix [!INCLUDE[cppwrt_short](includes/cppwrt-short-md.md)] code with [!INCLUDE[cppwrl](includes/cppwrl-md.md)] ([!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)]) code. In the same translation unit, you can use objects declared with [!INCLUDE[cppwrt_short](includes/cppwrt-short-md.md)] handle-to-object (`^`) notation and [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] smart pointer (`ComPtr<T>`) notation. However, you must manually handle return values, and [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] HRESULT error codes and [!INCLUDE[cppwrt_short](includes/cppwrt-short-md.md)] exceptions.  
   
 ## [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] development  

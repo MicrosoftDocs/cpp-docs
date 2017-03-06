@@ -1,5 +1,5 @@
 ---
-title: "Strings (C++-CX) | Microsoft Docs"
+title: "Strings (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/22/2017"
 ms.prod: "windows-client-threshold"  
@@ -14,7 +14,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# Strings (C++-CX)
+# Strings (C++/CX)
 Text in the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] is represented in C++/CX by the [Platform::String Class](../cppcx/platform-string-class.md). Use the `Platform::String Class` when you pass strings back and forth to methods in [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] classes, or when you are interacting with other [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components across the application binary interface (ABI) boundary. The `Platform::String Class` provides methods for several common string operations, but it's not designed to be a full-featured string class. In your C++ module, use standard C++ string types such as [wstring](../standard-library/basic-string-class.md) for any significant text processing, and then convert the final result to [Platform::String^](../cppcx/platform-string-class.md) before you pass it to or from a public interface. It's easy and efficient to convert between `wstring` or `wchar_t*` and `Platform::String`.  
   
  **Fast pass**  

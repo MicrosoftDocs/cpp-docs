@@ -1,5 +1,5 @@
 ---
-title: "Exceptions (C++-CX) | Microsoft Docs"
+title: "Exceptions (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/22/2017"
 ms.prod: "windows-client-threshold"  
@@ -14,7 +14,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# Exceptions (C++-CX)
+# Exceptions (C++/CX)
 
 Error handling in C++/CX is based on exceptions. At the most fundamental level, [!INCLUDE[wrt](includes/wrt-md.md)] components report errors as HRESULT values. In C++/CX, these values are converted to strongly typed exceptions that contain an HRESULT value and a string description that you can access programmatically.  Exceptions are implemented as a `ref class` that derives from `Platform::Exception`.  The `Platform` namespace defines distinct exception classes for the most common HRESULT values; all other values are reported through the `Platform::COMException` class. All exception classes have an [Exception::HResult Property](platform-exception-class.md#hresult) field that you can use to retrieve the original HRESULT. You can also examine call-stack information for user code in the debugger that can help pinpoint the original source of the exception, even if it originated in code that was written in a language other than C++.  
   

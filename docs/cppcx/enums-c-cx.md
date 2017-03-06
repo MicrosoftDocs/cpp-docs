@@ -1,5 +1,5 @@
 ---
-title: "Enums (C++-CX) | Microsoft Docs"
+title: "Enums (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.prod: "windows-client-threshold"  
@@ -14,7 +14,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# Enums (C++-CX)
+# Enums (C++/CX)
 C++/CX supports the `public enum class` keyword, which is analagous to a standard C++ `scoped  enum`. When you use an enumerator that's declared by using the `public enum class` keyword, you must use the enumeration identifier to scope each enumerator value.  
   
 ## Remarks  
