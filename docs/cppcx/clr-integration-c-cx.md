@@ -1,5 +1,5 @@
 ---
-title: "CLR integration (C++-CX) | Microsoft Docs"
+title: "CLR integration (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/22/2017"
 ms.prod: "windows-client-threshold"  
@@ -14,7 +14,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# CLR integration (C++-CX)
+# CLR integration (C++/CX)
 Some [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types receive special handling in C++/CX and the languages that are based on the common language runtime (CLR). This article discusses how several types in one language map to another language. For example, the CLR maps Windows.Foundation.IVector to System.Collections.IList, Windows.Foundation.IMap to System.Collections.IDictionary, and so on. Similarly, C++/CX specially maps types such as Platform::Delegate and Platform::String.  
   
 ## Mapping the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] to C++/CX  

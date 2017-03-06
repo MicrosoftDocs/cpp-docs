@@ -1,5 +1,5 @@
 ---
-title: "Properties (C++-CX) | Microsoft Docs"
+title: "Properties (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/22/2017"
 ms.prod: "windows-client-threshold"  
@@ -14,7 +14,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# Properties (C++-CX)
+# Properties (C++/CX)
 [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types expose public data as properties. Client code accesses the property like a public datamember. Internally, the property is implemented as a block that contains a get accessor method, a set accessor method, or both. By using the accessor methods, you can perform additional actions before or after you retrieve the value, for example, you could fire an event or perform validation checks.  
   
 ## Remarks  

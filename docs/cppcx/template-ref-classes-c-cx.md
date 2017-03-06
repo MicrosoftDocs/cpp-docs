@@ -1,5 +1,5 @@
 ---
-title: "Template ref classes (C++-CX) | Microsoft Docs"
+title: "Template ref classes (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/22/2017"
 ms.prod: "windows-client-threshold"  
@@ -14,7 +14,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# Template ref classes (C++-CX)
+# Template ref classes (C++/CX)
 C++ templates are not published to metadata and therefore cannot have public or protected accessibility in your program. You can, of course, use standard C++ templates internally in your program. In addition, you can define a private ref class as a template and you can declare an explicitly specialized template ref class as a private member in a public ref class.  
   
 ## Authoring ref class templates  
