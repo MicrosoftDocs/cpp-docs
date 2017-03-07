@@ -1,5 +1,5 @@
 ---
-title: "Ref classes and structs (C++-CX) | Microsoft Docs"
+title: "Ref classes and structs (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/22/2017"
 ms.prod: "windows-client-threshold"  
@@ -14,7 +14,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# Ref classes and structs (C++-CX)
+# Ref classes and structs (C++/CX)
 The C++/CX supports user-defined *ref classes* and *ref structs*, and user-defined *value classes* and *value structs*. These data structures are the primary containers by which C++/CX supports the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] type system. Their contents are emitted to metadata according to certain specific rules, and this enables them to be passed between [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components and Universal Windows Platform apps that are written in C++ or other languages.  
   
  A ref class or ref struct has these essential features:  

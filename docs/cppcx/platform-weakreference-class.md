@@ -120,7 +120,7 @@ if (bar != nullptr)
 ## See Also  
  [Platform namespace](../cppcx/platform-namespace-c-cx.md
   
-## WeakReference::WeakReference Constructor (C++-CX)
+## WeakReference::WeakReference Constructor (C++/CX)
 Provides various ways to construct a WeakReference.  
   
 ### Syntax  

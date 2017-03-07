@@ -153,7 +153,7 @@ public:static bool ReferenceEquals(  Object^ obj1,   Object^ obj2)
 ### Return Value  
  `true` if the two objects are the same; otherwise, `false`.  
  
-## <a name="tostring"></a>  Object::ToString Method (C++-CX)
+## <a name="tostring"></a>  Object::ToString Method (C++/CX)
 Returns a string that represents the current object.  
   
 ### Syntax  

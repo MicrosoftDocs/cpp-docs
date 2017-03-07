@@ -1,5 +1,5 @@
 ---
-title: "Platform namespace (C++-CX) | Microsoft Docs"
+title: "Platform namespace (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.prod: "windows-client-threshold"  
@@ -20,7 +20,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# Platform namespace (C++-CX)
+# Platform namespace (C++/CX)
 Contains built-in types that are compatible with the Windows Runtime.  
   
 ## Syntax  
