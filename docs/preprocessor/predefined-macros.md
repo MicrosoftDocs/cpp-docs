@@ -342,9 +342,9 @@ The Visual C++ compiler predefines certain preprocessor macros, depending on the
   
 -   **_M_CEE** Defined as 001 if any [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined.  
   
--   **_M_CEE_PURE** Deprecated in Visual Studio 2015. Defined as 001 if the [/clr:pure](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined.  
+-   **_M_CEE_PURE** Deprecated beginning in Visual Studio 2015. Defined as 001 if the [/clr:pure](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined.  
   
--   **_M_CEE_SAFE** Deprecated in Visual Studio 2015. Defined as 001 if the [/clr:safe](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined.  
+-   **_M_CEE_SAFE** Deprecated beginning in Visual Studio 2015. Defined as 001 if the [/clr:safe](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined.  
   
 -   **_M_FP_EXCEPT** Defined as 1 if the [/fp:except](../build/reference/fp-specify-floating-point-behavior.md) or [/fp:strict](../build/reference/fp-specify-floating-point-behavior.md) compiler option is set. Otherwise, undefined.  
   

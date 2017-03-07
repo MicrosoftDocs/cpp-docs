@@ -48,7 +48,7 @@ Visual C++ includes a command-line C++ compiler that you can use to create every
   
  Visual Studio is a powerful integrated development environment that supports a full-featured editor, resource managers, debuggers, and compilers for many languages and platforms. For information on these features and  how to download and install Visual Studio, including the free Visual Studio Community edition, see [VisualStudio.com](https://www.visualstudio.com/).  
   
- The Microsoft Visual C++ Build Tools installs only the command-line compiler, tools, and libraries you need to build C and C++ programs. It's perfect for build labs or classroom exercises and installs relatively quickly. To install only the command-line tools, download and install [Microsoft Visual C++ Build Tools 2015](http://go.microsoft.com/fwlink/?LinkId=691126).  
+ The Visual Studio Build Tools installs only the command-line compilers, tools, and libraries you need to build C and C++ programs. It's perfect for build labs or classroom exercises and installs relatively quickly. To install only the command-line tools, download [Visual Studio Build Tools](https://go.microsoft.com/fwlink/?linkid=840931) and run the installer. For more information, see [Visual C++ Build Tools](http://landinghub.visualstudio.com/visual-cpp-build-tools).  
   
  Before you can build a C or C++ program on the command line, you must verify that the tools are installed, and that you can access them from the command line. Visual C++ has complex requirements for the command-line environment in order to find the tools, headers, and libraries it uses. **You can't use Visual C++ in a plain command prompt window**. Fortunately, Visual C++ installs shortcuts for you to launch a developer command prompt that has the environment set up for command line builds. Unfortunately, the names of the developer command prompt shortcuts and where they are located are different in almost every version of Visual C++ and on different versions of Windows. Your first walkthrough task is finding the right one to use.  
   
@@ -57,7 +57,7 @@ Visual C++ includes a command-line C++ compiler that you can use to create every
   
 ### Open a developer command prompt  
   
-1.  If you have installed Visual Studio 2015 on Windows 10, open the Start menu and choose **All apps**. Scroll down and open the **Visual Studio 2015** folder (not the Visual Studio 2015 app). Choose **Developer Command Prompt for VS2015** to open the command prompt window.  
+1.  If you have installed Visual Studio 2017 on Windows 10, open the Start menu and choose **All apps**. Scroll down and open the **Visual Studio 2017** folder (not the Visual Studio 2017 app). Choose **Developer Command Prompt for VS 2017** to open the command prompt window.  
   
      If you have installed Microsoft Visual C++ Build Tools 2015 on Windows 10, open the **Start** menu and choose **All apps**. Scroll down and open the **Visual C++ Build Tools** folder. Choose **Visual C++ 2015 x86 Native Tools Command Prompt** to open the command prompt window.  
   
@@ -66,10 +66,10 @@ Visual C++ includes a command-line C++ compiler that you can use to create every
 2.  Next, verify that the Visual C++ developer command prompt is set up correctly. In the command prompt window, enter `cl` and verify that the output looks something like this:  
   
     ```Output  
-    C:\Program Files (x86)\Microsoft Visual Studio 14.0>cl  
-    Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x86  
+    C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise>cl  
+    Microsoft (R) C/C++ Optimizing Compiler Version 19.10.25017 for x86  
     Copyright (C) Microsoft Corporation.  All rights reserved.  
-  
+    
     usage: cl [ option... ] filename... [ /link linkoption... ]  
     ```  
   
@@ -133,11 +133,11 @@ Visual C++ includes a command-line C++ compiler that you can use to create every
   
     ```Output  
     c:\hello>cl /EHsc hello.cpp  
-    Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x86  
+    Microsoft (R) C/C++ Optimizing Compiler Version 19.10.25017 for x86  
     Copyright (C) Microsoft Corporation.  All rights reserved.  
   
     hello.cpp  
-    Microsoft (R) Incremental Linker Version 14.00.23918.0  
+    Microsoft (R) Incremental Linker Version 14.10.25017.0  
     Copyright (C) Microsoft Corporation.  All rights reserved.  
   
     /out:hello.exe  
