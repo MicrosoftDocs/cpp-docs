@@ -21,7 +21,7 @@ C++/CX is a set of extensions to the C++ language that enable the creation of Wi
   
 -   C++ Windows apps that use XAML to define the user interface and use the native stack. For more information, see [Create a "hello world" app in C++ (Windows 10)](http://msdn.microsoft.com/library/windows/apps/dn996906.aspx).  
   
--   C++ [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components that can be consumed by JavaScript-based Windows apps. For more information, see [Creating Windows Runtime Components in C++](http://msdn.microsoft.com/library/hh441569.aspx)[Creating Windows Runtime Components in C++](/MicrosoftDocs/windows-uwp/blob/docs/windows-apps-src/winrt-components/creating-windows-runtime-components-in-cpp.md).  
+-   C++ [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components that can be consumed by JavaScript-based Windows apps. For more information, see [Creating Windows Runtime Components in C++](/MicrosoftDocs/windows-uwp/blob/docs/windows-apps-src/winrt-components/creating-windows-runtime-components-in-cpp.md).  
   
 -   Windows DirectX games and graphics-intensive apps. For more information, see [Create a simple Universal Windows Platform (UWP) Game with DirectX](http://msdn.microsoft.com/library/windows/apps/xaml/mt210793.aspx).  
   
