@@ -31,7 +31,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Visual C++ Language Conformance 
-This topic summarizes the ISO C++03/11/14 and draft C++17 language standards conformance of compiler features and Standard Library (STL) features for Visual C++ in Visual Studio 2017. Each compiler and STL feature name links to the ISO C++ Standard proposal paper that describes the feature.  
+This topic summarizes the ISO C++03, C++11, C++14, and Draft C++17 language standards conformance of compiler features and Standard Library (STL) features for Visual C++ in Visual Studio 2017. Each compiler and STL feature name links to the ISO C++ Standard proposal paper that describes the feature, if one is available at publication time.  
   
 For current news from the C++ team, 
 visit the [Visual C++ team blog](http://blogs.msdn.microsoft.com/vcblog/).  
@@ -105,12 +105,18 @@ visit the [Visual C++ team blog](http://blogs.msdn.microsoft.com/vcblog/).
 |Feature Area| |
 |---|---|
 |__C++17 Standard Library Features__|__Supported__|
+|&nbsp;&nbsp;P0433R2 Deduction Guides for the STL|No|
+|&nbsp;&nbsp;P0607R0 Inline Variables for the STL (Options A and B2)|No|
 |&nbsp;&nbsp;[P0258R2 has_unique_object_representations](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0258r2.html)|No|
 |&nbsp;&nbsp;[P0426R1 constexpr For char_traits](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html)|No|
+|&nbsp;&nbsp;P0604R0 Changing is\_callable/result\_of To is\_invocable/invoke\_result (Options A and B)|No|
+|&nbsp;&nbsp;P0156R2 Renaming Variadic lock\_guard to scoped\_lock|No|
+|&nbsp;&nbsp;P0558R1 Resolving atomic<T> Named Base Class Inconsistencies|No|
+|&nbsp;&nbsp;P0298R3 std::byte|No|
 |&nbsp;&nbsp;[P0063R3 C11 Standard Library](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0063r3.html)|No|
 |&nbsp;&nbsp;[P0030R1 hypot(x, y, z)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0030r1.pdf)|No|
-|&nbsp;&nbsp;[P0435R1 Overhauling common_type](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0435r1.pdf)|No|
-|&nbsp;&nbsp;[P0513R0 Poisoning hash](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0513r0.pdf)|No|
+|&nbsp;&nbsp;[P0435R1 Overhauling common_type](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0435r1.pdf)<br />&nbsp;&nbsp;P0548R1 Tweaking common\_type and duration|No|
+|&nbsp;&nbsp;[P0513R0 Poisoning hash](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0513r0.pdf)<br />&nbsp;&nbsp;P0599R1 noexcept hash|No|
 |&nbsp;&nbsp;[P0033R1 Rewording enable_shared_from_this](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0033r1.html)|No|
 |&nbsp;&nbsp;[P0220R1 Library Fundamentals V1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0220r1.html)|Partial <sup>[6](#note_6)</sup>|
 |&nbsp;&nbsp;[P0414R2 shared_ptr\<T[]>, shared_ptr\<T[N]>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0414r2.html)<br />&nbsp;&nbsp;[P0497R0 Fixing shared_ptr For Arrays](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0497r0.html)|No|
@@ -123,16 +129,16 @@ visit the [Visual C++ team blog](http://blogs.msdn.microsoft.com/vcblog/).
 |&nbsp;&nbsp;[P0154R1 hardware_destructive_interference_size, etc.](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0154r1.html)|No|
 |&nbsp;&nbsp;[P0067R5 Elementary String Conversions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0067r5.html)|No|
 |&nbsp;&nbsp;[N4562 Library Fundamentals: Boyer-Moore search()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4562.html#func.searchers.boyer_moore)<br/>&nbsp;&nbsp;[P0253R1 Fixing Searcher Return Types](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0253r1.pdf)|No|
+|&nbsp;&nbsp;P0618R0 Deprecating \<codecvt>|No|
 |&nbsp;&nbsp;[P0521R0 Deprecating shared_ptr::unique()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0521r0.html)|No|
 |&nbsp;&nbsp;[P0174R2 Deprecating Vestigial Library Parts](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0174r2.html)|No|
 |&nbsp;&nbsp;[P0003R5 Removing Dynamic Exception Specifications](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0003r5.html)|No|
 |&nbsp;&nbsp;[P0302R1 Removing Allocator Support In std::function](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0302r1.html)|No|
 |&nbsp;&nbsp;[P0040R3 Extending Memory Management Tools](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0040r3.html)|No|
 |&nbsp;&nbsp;[N4562 Library Fundamentals: \<memory_resource>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4562.html#memory.resource.synop)<br />&nbsp;&nbsp;[P0337R0 Deleting polymorphic_allocator Assignment](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0337r0.html)|No|
-|&nbsp;&nbsp;[P0024R2 Parallel Algorithms](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0024r2.html)<br />&nbsp;&nbsp;[P0336R1 Renaming Parallel Execution Policies](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0336r1.pdf)<br />&nbsp;&nbsp;[P0394R4 Parallel Algorithms Should terminate() For Exceptions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0394r4.html)|No|
+|&nbsp;&nbsp;[P0024R2 Parallel Algorithms](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0024r2.html)<br />&nbsp;&nbsp;[P0336R1 Renaming Parallel Execution Policies](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0336r1.pdf)<br />&nbsp;&nbsp;[P0394R4 Parallel Algorithms Should terminate() For Exceptions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0394r4.html)<br />&nbsp;&nbsp;P0452R1 Unifying \<numeric> Parallel Algorithms|No|
 |&nbsp;&nbsp;[P0226R1 Mathematical Special Functions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0226r1.pdf)|No|
-|&nbsp;&nbsp;[P0218R1 \<filesystem>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0218r1.html)<br />&nbsp;&nbsp;[P0219R1 Relative Paths For Filesystem](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0219r1.html)<br />&nbsp;&nbsp;[P0392R0 Supporting string_view In Filesystem Paths](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0392r0.pdf)|No <sup>[7](#note_7)</sup>|
-|&nbsp;&nbsp;[P0181R1 Ordered By Default](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0181r1.html)|No <sup>[8](#note_8)</sup>|
+|&nbsp;&nbsp;[P0218R1 \<filesystem>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0218r1.html)<br />&nbsp;&nbsp;[P0219R1 Relative Paths For Filesystem](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0219r1.html)<br />&nbsp;&nbsp;[P0392R0 Supporting string_view In Filesystem Paths](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0392r0.pdf)<br />&nbsp;&nbsp;P0430R2 Supporting Non-POSIX Filesystems<br />&nbsp;&nbsp;P0492R2 Resolving NB Comments for Filesystem|No <sup>[7](#note_7)</sup>|
 |&nbsp;&nbsp;[P0152R1 atomic::is_always_lock_free](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0152r1.html)|VS 2017.x|
 |&nbsp;&nbsp;[P0403R1 UDLs For \<string_view> ("meow"sv, etc.)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0403r1.html)|VS 2017.x|
 |&nbsp;&nbsp;[P0418R2 atomic compare_exchange memory_order Requirements](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0418r2.html)|VS 2017.x|
@@ -182,9 +188,14 @@ visit the [Visual C++ team blog](http://blogs.msdn.microsoft.com/vcblog/).
 |&nbsp;&nbsp;[P0180R2 Reserving Namespaces For Future Standardization](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0180r2.html)|N/A|
 |&nbsp;&nbsp;[P0346R1 A \<random> Nomenclature Tweak](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0346r1.pdf)|N/A|
 |&nbsp;&nbsp;[P0371R1 Discouraging memory_order_consume](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0371r1.html)|N/A|
+|&nbsp;&nbsp;P0467R2 Requiring Forward Iterators for Parallel Algorithms|N/A|
 |&nbsp;&nbsp;[P0502R0 Parallel Algorithms Should terminate() For Exceptions, Usually](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0502r0.html)|N/A|
 |&nbsp;&nbsp;[P0503R0 Correcting Library Usage Of "literal type"](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0503r0.html)|N/A|
 |&nbsp;&nbsp;[P0509R1 Updating "Restrictions on exception handling"](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0509r1.pdf)|N/A|
+|&nbsp;&nbsp;P0518R1 Copying Trivially Copy Constructible Elements In Parallel Algorithms|N/A|
+|&nbsp;&nbsp;P0523R1 Relaxing Complexity Requirements Of Parallel Algorithms (General)|N/A|
+|&nbsp;&nbsp;P0574R1 Relaxing Complexity Requirements Of Parallel Algorithms (Specific)|N/A|
+|&nbsp;&nbsp;P0623R0 Final C++17 Parallel Algorithms Fixes|N/A|
 |__C++14 Standard Library Features__|__Supported__|
 |&nbsp;&nbsp;[N3462 SFINAE-Friendly result_of](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3462.html)|VS 2015.2|
 |&nbsp;&nbsp;[N3302 constexpr For \<complex>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2011/n3302.html)|VS 2015|
@@ -235,7 +246,6 @@ __VS 2017.x__ indicates features planned for a future update of Visual Studio 20
 <a name="note_6"></a>__6__ Features that were not completed in Visual Studio 2015 are broken out elsewhere in this table.  
 <a name="note_7"></a>__7__ The Filesystem TS is implemented in both \<experimental/filesystem> 
 and \<filesystem> for historical reasons, but its implementation must be corrected before its namespace is moved. Until this is completed, the feature is marked as not yet implemented.  
-<a name="note_8"></a>__8__ The *Ordered By Default* feature has been found to break ABI compatibility in other compilers. It is not implemented by any vendor, and is expected to be removed from C++17.  
 <a name="note_star"></a>__*__ These features are guarded by the [/std:c++latest](./build/reference/std-specify-language-standard-version.md) compiler option.  
   
 ## See Also  
