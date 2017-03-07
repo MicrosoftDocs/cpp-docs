@@ -164,6 +164,4 @@ ghi abc def
 ```  
   
 ## See Also  
- [printf Type Field Characters](../c-runtime-library/printf-type-field-characters.md)   
- [printf Width Specification](../c-runtime-library/printf-width-specification.md)   
- [Precision Specification](../c-runtime-library/precision-specification.md)
+ [Format Specification Syntax: printf and wprintf Functions](../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)
