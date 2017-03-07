@@ -109,5 +109,4 @@ i = 5
 ```  
   
 ## See Also  
-[Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)  
  [_get_printf_count_output](../../c-runtime-library/reference/get-printf-count-output.md)

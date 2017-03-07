@@ -79,4 +79,4 @@ int _get_printf_count_output();
  See the example for [_set_printf_count_output](../../c-runtime-library/reference/set-printf-count-output.md).  
   
 ## See Also  
-[Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)  
+[_set_printf_count_output](../../c-runtime-library/reference/set-printf-count-output.md)  
