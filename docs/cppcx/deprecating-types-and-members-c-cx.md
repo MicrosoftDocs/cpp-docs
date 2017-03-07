@@ -1,5 +1,5 @@
 ---
-title: "Deprecating types and members (C++-CX) | Microsoft Docs"
+title: "Deprecating types and members (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.prod: "windows-client-threshold"  
@@ -14,7 +14,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# Deprecating types and members (C++-CX)
+# Deprecating types and members (C++/CX)
 In C++/CX, deprecation of [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types and members for producers and consumers by using the [Deprecated](http://msdn.microsoft.com/en-us/8b02ad36-3b5f-4361-888b-e6a99040e57c) attribute is supported. If you consume an API to which this attribute has been applied, you get a compile-time warning message that indicates that the API is deprecated and also recommends an alternative API to use. In your own public types and methods, you can apply this attribute and supply your own custom message.  
   
 > [!CAUTION]

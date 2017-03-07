@@ -1,5 +1,5 @@
 ---
-title: "Enums (C++-CX) | Microsoft Docs"
+title: "Enums (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.prod: "windows-client-threshold"  
@@ -14,13 +14,13 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# Enums (C++-CX)
+# Enums (C++/CX)
 C++/CX supports the `public enum class` keyword, which is analagous to a standard C++ `scoped  enum`. When you use an enumerator that's declared by using the `public enum class` keyword, you must use the enumeration identifier to scope each enumerator value.  
   
 ## Remarks  
- A `public enum class` that doesn't have an access specifier, such as `public`, is treated as a standard C++ [scoped enum](../cpp/enumerations.md).  
+ A `public enum class` that doesn't have an access specifier, such as `public`, is treated as a standard C++ [scoped enum](../cpp/enumerations-cpp.md).  
   
- A `public enum class` or `public enum struct` declaration can have an underlying type of any integral type although the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] itself requires that the type be int32, or uint32 for a flags enum. The following syntax describes the parts of an `public enum class` or `public enum struct`. For more information, see [enum class](../Topic/enum%20class%20%20\(C++%20Component%20Extensions\).md).  
+ A `public enum class` or `public enum struct` declaration can have an underlying type of any integral type although the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] itself requires that the type be int32, or uint32 for a flags enum. The following syntax describes the parts of an `public enum class` or `public enum struct`.  
   
  This example shows how to define a public enum class:  
   

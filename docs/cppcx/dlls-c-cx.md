@@ -1,5 +1,5 @@
 ---
-title: "DLLs (C++-CX) | Microsoft Docs"
+title: "DLLs (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "02/03/2017"
 ms.prod: "windows-client-threshold"  
@@ -14,7 +14,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# DLLs (C++-CX)
+# DLLs (C++/CX)
 You can use Visual Studio to create either a standard Win32 DLL or a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component DLL that can be consumed by Universal Windows Platform apps. A standard DLL that was created by using a version of Visual Studio or the Visual C++ compiler that's earlier than [!INCLUDE[vs_dev11_long](../cppcx/includes/vs-dev11-long-md.md)] may not load correctly in a Universal Windows Platform app and may not pass the app verification test in the [!INCLUDE[win8_appstore_long](../cppcx/includes/win8-appstore-long-md.md)].  
   
 ## [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component DLLs  

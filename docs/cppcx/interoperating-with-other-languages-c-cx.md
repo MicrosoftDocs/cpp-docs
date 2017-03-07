@@ -1,5 +1,5 @@
 ---
-title: "Interoperating with Other Languages (C++-CX) | Microsoft Docs"
+title: "Interoperating with Other Languages (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.prod: "windows-client-threshold"  
@@ -14,7 +14,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# Interoperating with Other Languages (C++-CX)
+# Interoperating with Other Languages (C++/CX)
 This part of the documentation describes how to use C++/CX to author [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components that can be consumed by other programming languages and libraries. You can also author components that can't be consumed by all languages. This section describes different aspects to consider when your C++/CX application interoperates with components that are written by using JavaScript, a .NET Framework managed language, or the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] C++ Template Library.  
   
 ## Related topics  

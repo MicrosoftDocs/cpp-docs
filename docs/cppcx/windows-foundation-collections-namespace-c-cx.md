@@ -1,5 +1,5 @@
 ---
-title: "Windows::Foundation::Collections Namespace (C++-CX) | Microsoft Docs"
+title: "Windows::Foundation::Collections Namespace (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.prod: "windows-client-threshold"  
@@ -20,7 +20,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# Windows::Foundation::Collections Namespace (C++-CX)
+# Windows::Foundation::Collections Namespace (C++/CX)
 C++/CX supplements the Windows::Foundation::Collections namespace with functions that simplify using the Vector, VectorView, Map, and MapView collection classes.  
   
 ## Syntax  

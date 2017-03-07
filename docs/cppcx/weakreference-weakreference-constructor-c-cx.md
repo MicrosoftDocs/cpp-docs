@@ -1,5 +1,5 @@
 ---
-title: "WeakReference::WeakReference Constructor (C++-CX) | Microsoft Docs"
+title: "WeakReference::WeakReference Constructor (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.prod: "windows-client-threshold"  
@@ -16,7 +16,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# WeakReference::WeakReference Constructor (C++-CX)
+# WeakReference::WeakReference Constructor (C++/CX)
 Provides various ways to construct a WeakReference.  
   
 ## Syntax  
