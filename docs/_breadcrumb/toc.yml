@@ -68,7 +68,7 @@
         topicHref: /cpp/parallel/parallel-programming-in-visual-cpp
       - name: Data Access
         tocHref: /cpp/data/
-        topicHref: /cpp/data/data-access
+        topicHref: /cpp/data/
         items:
         - name: OLEDB
           tocHref: /cpp/data/oledb/
