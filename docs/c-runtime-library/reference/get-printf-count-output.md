@@ -65,7 +65,7 @@ int _get_printf_count_output();
  Non-zero if `%n` is supported, 0 if `%n` is not supported.  
   
 ## Remarks  
- If `%n` is not supported (the default), encountering `%n` in the format string of any of the `printf` functions will invoke the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If `%n` support is enabled (see [_set_printf_count_output](../../c-runtime-library/reference/set-printf-count-output.md)) then `%n` will behave as described in [Format Specification Syntax: printf and wprintf Functions](../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
+ If `%n` is not supported (the default), encountering `%n` in the format string of any of the `printf` functions will invoke the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If `%n` support is enabled (see [_set_printf_count_output](../../c-runtime-library/reference/set-printf-count-output.md)) then `%n` will behave as described in [Format Specification Syntax: printf and wprintf Functions](../,,/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
   
 ## Requirements  
   
@@ -79,4 +79,4 @@ int _get_printf_count_output();
  See the example for [_set_printf_count_output](../../c-runtime-library/reference/set-printf-count-output.md).  
   
 ## See Also  
-[Format Specification Syntax: printf and wprintf Functions](../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)  
+[Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)  
