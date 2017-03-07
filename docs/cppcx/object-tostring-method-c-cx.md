@@ -1,5 +1,5 @@
 ---
-title: "Object::ToString Method (C++-CX) | Microsoft Docs"
+title: "Object::ToString Method (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.prod: "windows-client-threshold"  
@@ -20,7 +20,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# Object::ToString Method (C++-CX)
+# Object::ToString Method (C++/CX)
 Returns a string that represents the current object.  
   
 ## Syntax  

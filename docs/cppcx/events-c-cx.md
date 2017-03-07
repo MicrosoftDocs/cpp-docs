@@ -1,5 +1,5 @@
 ---
-title: "Events (C++-CX) | Microsoft Docs"
+title: "Events (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/22/2017"
 ms.prod: "windows-client-threshold"  
@@ -14,7 +14,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# Events (C++-CX)
+# Events (C++/CX)
 A [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] type can declare (that is, publish) events, and client code in the same component or in other components can subscribe to those events by associating methods called *event handlers* with the event. Multiple event handlers can be associated with a single event. When the publishing object raises the event, it causes all event handlers to be invoked. In this way, a subscribing class can perform whatever custom action is appropriate when the publisher raises the event. An event has a delegate type that specifies the signature that all event handlers must have in order to subscribe to the event.  
   
 ## Consuming events in Windows components  

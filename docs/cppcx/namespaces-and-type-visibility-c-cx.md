@@ -1,5 +1,5 @@
 ---
-title: "Namespaces and Type Visibility (C++-CX ) | Microsoft Docs"
+title: "Namespaces and Type Visibility (C++/CX ) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.prod: "windows-client-threshold"  
@@ -14,7 +14,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# Namespaces and Type Visibility (C++-CX )
+# Namespaces and Type Visibility (C++/CX )
 A namespace is a standard C++ construct for grouping types that have related functionality and for preventing name collisions in libraries. The [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] type system requires that all public [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types, including those in your own code, must be declared in a namespace at namespace scope. Public types that are declared at global scope or nested inside another class will cause a compile-time error.  
   
  A .winmd file must have the same name that the root namespace has. For example, a class that's named A.B.C.MyClass can be instantiated only if it's defined in a metadata file that's named A.winmd or A.B.winmd or A.B.C.winmd. The name of the executable is not required to match the .winmd file name.  

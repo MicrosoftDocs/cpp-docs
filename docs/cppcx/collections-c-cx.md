@@ -1,5 +1,5 @@
 ---
-title: "Collections (C++-CX) | Microsoft Docs"
+title: "Collections (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/22/2017"
 ms.prod: "windows-client-threshold"  
@@ -14,7 +14,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# Collections (C++-CX)
+# Collections (C++/CX)
 In a C++/CX program, you can make free use of Standard Template Library (STL) containers, or any other user-defined collection type. However, when you pass collections back and forth across the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] application binary interface (ABI)—for example, to a XAML control or to a JavaScript client—you must use [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] collection types.  
   
  The [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] defines the interfaces for collections and related types, and C++/CX provides the concrete C++ implementations in the collection.h header file. This illustration shows the relationships between the collection types:  

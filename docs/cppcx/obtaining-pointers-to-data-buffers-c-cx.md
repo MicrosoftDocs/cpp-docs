@@ -1,5 +1,5 @@
 ---
-title: "Obtaining pointers to data buffers (C++-CX) | Microsoft Docs"
+title: "Obtaining pointers to data buffers (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.prod: "windows-client-threshold"  
@@ -14,7 +14,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# Obtaining pointers to data buffers (C++-CX)
+# Obtaining pointers to data buffers (C++/CX)
 In the Windows Runtime the [Windows::Storage::Streams::IBuffer](http://msdn.microsoft.com/library/windows/apps/windows.storage.streams.ibuffer.aspx) interface provides a language-neutral, stream-based means to access data buffers. In C++ you can get a raw pointer to the underlying byte array by using the Windows Runtime Library IBufferByteAccess interface that is defined in robuffer.h. By using this approach you can modify the byte array in-place without making any unnecessary copies of the data.  
   
  The following diagram shows a XAML image element, whose source is a [Windows::UI::Xaml::Media::Imaging WriteableBitmap](http://msdn.microsoft.com/%20library/windows/apps/windows.ui.xaml.media.imaging.writeablebitmap.aspx). A client app that's written in any language can pass a reference to the `WriteableBitmap` to C++ code and then C++ can use the reference to get at the underlying buffer. In a Universal Windows Platform app that's written in C++, you can use the function in the following example directly in the source code without packaging it in a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component.  

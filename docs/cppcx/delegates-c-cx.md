@@ -1,5 +1,5 @@
 ---
-title: "Delegates (C++-CX) | Microsoft Docs"
+title: "Delegates (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/22/2017"
 ms.prod: "windows-client-threshold"  
@@ -14,7 +14,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# Delegates (C++-CX)
+# Delegates (C++/CX)
 The `delegate` keyword is used to declare a reference type that is the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] equivalent of a function object in standard C++. A delegate declaration similar to a function signature; it specifies the return type and parameter types that its wrapped function must have. This is a user-defined delegate declaration:  
   
 ```cpp  

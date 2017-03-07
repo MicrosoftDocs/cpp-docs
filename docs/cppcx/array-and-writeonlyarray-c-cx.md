@@ -1,5 +1,5 @@
 ---
-title: "Array and WriteOnlyArray (C++-CX) | Microsoft Docs"
+title: "Array and WriteOnlyArray (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/22/2017"
 ms.prod: "windows-client-threshold"  
@@ -14,7 +14,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# Array and WriteOnlyArray (C++-CX)
+# Array and WriteOnlyArray (C++/CX)
 You can freely use regular C-style arrays or [std::array](../standard-library/array-class-stl.md) in a C++/CX program (although [std::vector](../standard-library/vector-class.md) is often a better choice), but in any API that is published in metadata, you must convert a C-style array or vector to a [Platform::Array](../cppcx/platform-array-class.md) or [Platform::WriteOnlyArray](../cppcx/platform-writeonlyarray-class.md) type depending on how it is being used. The [Platform::Array](../cppcx/platform-array-class.md) type is neither as efficient nor as powerful as [std::vector](../standard-library/vector-class.md), so as a general guideline you should avoid its use in internal code that performs lots of operations on the array elements.  
   
  The following array types can be passed across the ABI:  

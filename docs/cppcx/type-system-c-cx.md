@@ -1,5 +1,5 @@
 ---
-title: "Type System (C++-CX) | Microsoft Docs"
+title: "Type System (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "02/03/2017"
 ms.prod: "windows-client-threshold"  
@@ -14,7 +14,7 @@ author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
 ---
-# Type System (C++-CX)
+# Type System (C++/CX)
 By using the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] architecture, you can use C++/CX, Visual Basic, Visual C# and JavaScript to write apps and components that directly access the Windows API and interoperate with other [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] apps and components. Universal Windows Platform apps that are written in C++ compile to native code that executes directly in the CPU. Universal Windows Platform apps that are written in C# or Visual Basic compile to Microsoft intermediate language (MSIL) and execute in the common language runtime (CLR). Universal Windows Platform apps that are written in JavaScript execute in a run-time environment. The [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] operating system components themselves are written in C++ and run as native code. All of these components and Universal Windows Platform apps communicate directly through the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] application binary interface (ABI).  
   
  To enable support for the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] in a modern C++ idiom, Microsoft created the C++/CX. C++/CX provides built-in base types and implementations of fundamental [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types that enable C++ apps and components to communicate across the ABI with apps that are written in other languages. You can consume any [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] type, or create classes, structs, interfaces, and other user-defined types that can be consumed by other Universal Windows Platform apps and components. a Universal Windows Platform app that's written in C++/CX can also use regular C++ classes and structs as long as they don't have public accessibility.  
