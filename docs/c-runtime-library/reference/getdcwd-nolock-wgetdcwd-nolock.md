@@ -32,7 +32,6 @@ f1_keywords:
   - "getdcwd_nolock"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "getdcwd_nolock function"
   - "_tgetdcwd_nolock function"

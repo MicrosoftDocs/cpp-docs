@@ -54,7 +54,7 @@ Defines templates that provide compile-time constants that give information abou
 ### Alias Templates  
  To simplify type traits expressions, [alias templates](../cpp/aliases-and-typedefs-cpp.md) for `typename some_trait<T>::type` are provided, where " `some_trait`" is the template class name. For example, [add_const](../standard-library/add-const-class.md) has an alias template for its type, `add_const_t`, defined as:  
   
-```cpp
+```cpp  
 template <class T>
 using add_const_t = typename add_const<T>::type;
 ```  

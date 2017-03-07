@@ -28,7 +28,6 @@ f1_keywords:
   - "_rmtmp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "removing temporary files"
   - "_rmtmp function"

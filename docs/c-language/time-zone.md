@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "time zones"
 ms.assetid: ed46f7f2-1e76-493f-bb2f-58b9e6ccce85

@@ -31,7 +31,6 @@ f1_keywords:
   - "_tsopen"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "sopen function"
   - "sharing files"

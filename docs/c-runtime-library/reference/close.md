@@ -27,7 +27,6 @@ f1_keywords:
   - "_close"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_close function"
   - "close function"

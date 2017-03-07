@@ -15,7 +15,6 @@ f1_keywords:
   - "vc-pragma.managed"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "managed pragma"
   - "pragmas, unmanaged"

@@ -26,7 +26,6 @@ f1_keywords:
   - "spawnlp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "spawnlp function"
 ms.assetid: 560da96f-4902-4620-8a92-0d128ecaa001

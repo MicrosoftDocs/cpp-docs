@@ -28,7 +28,6 @@ f1_keywords:
   - "fpreset"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "fpreset function"
   - "floating-point numbers, resetting math package"
@@ -65,7 +64,7 @@ void _fpreset( void );
 ## Remarks  
  The `_fpreset` function reinitializes the floating-point math package. `_fpreset` is usually used with `signal`, `system`, or the `_exec` or `_spawn` functions. If a program traps floating-point error signals (`SIGFPE`) with `signal`, it can safely recover from floating-point errors by invoking `_fpreset` and using `longjmp`.  
   
- This function is deprecated when compiling with [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) or `/clr:pure` because the common language runtime only supports the default floating-point precision.  
+ This function is deprecated when compiling with [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) because the common language runtime only supports the default floating-point precision.  
   
 ## Requirements  
   

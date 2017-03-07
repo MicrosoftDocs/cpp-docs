@@ -46,7 +46,7 @@ translation.priority.ht:
   
  When taking the address of a native function if `__clrcall` is not specified, the compiler uses the native entry point. `__clrcall` indicates that the function is managed and there is no need to go through the transition from managed to native. In that case the compiler uses the managed entry point.  
   
- When **/clr** (not **/clr:pure** or **/clr:safe**) is used and `__clrcall` is not used, taking the address of a function always returns the address of the native entry point function. When `__clrcall` is used, the native entry point function is not created, so you get the address of the managed function, not an entry point thunk function. For more information, see [Double Thunking](../dotnet/double-thunking-cpp.md).  
+ When **/clr** (not **/clr:pure** or **/clr:safe**) is used and `__clrcall` is not used, taking the address of a function always returns the address of the native entry point function. When `__clrcall` is used, the native entry point function is not created, so you get the address of the managed function, not an entry point thunk function. For more information, see [Double Thunking](../dotnet/double-thunking-cpp.md). The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
   
  [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) implies that all functions and function pointers are `__clrcall` and the compiler will not permit a function inside the compiland to be marked anything other than `__clrcall`. When **/clr:pure** is used, `__clrcall` can only be specified on function pointers and external declarations.  
   

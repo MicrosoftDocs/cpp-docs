@@ -27,7 +27,6 @@ f1_keywords:
   - "fflush"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "streams, flushing"
   - "flushing"

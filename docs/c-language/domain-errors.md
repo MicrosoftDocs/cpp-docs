@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "domain errors"
 ms.assetid: 67faa973-c872-40bc-a25f-2ef5559db96c

@@ -28,7 +28,6 @@ f1_keywords:
   - "wcsset"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wcsset function"
   - "strset function"

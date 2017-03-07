@@ -28,7 +28,6 @@ f1_keywords:
   - "fegetenv"
   - "fenv/fegetenv"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "fetegenv function"

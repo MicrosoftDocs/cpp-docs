@@ -28,7 +28,6 @@ f1_keywords:
   - "lock_file"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "file locking [C++]"
   - "_lock_file function"

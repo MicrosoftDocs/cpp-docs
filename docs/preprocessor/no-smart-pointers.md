@@ -12,7 +12,6 @@ f1_keywords:
   - "no_search_pointers"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "no_smart_pointers attribute"
 ms.assetid: d69dd71e-08a8-4446-a3d0-a062dc29cb17

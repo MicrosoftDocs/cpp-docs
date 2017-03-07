@@ -126,7 +126,7 @@ For detailed information about the binomial distribution discrete probability fu
 ## Example  
   
 ```cpp  
- // compile with: /EHsc /W4  
+// compile with: /EHsc /W4  
 #include <random>   
 #include <iostream>  
 #include <iomanip>  

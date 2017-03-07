@@ -32,7 +32,6 @@ f1_keywords:
   - "_mbscat_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wcscat_s function"
   - "strcat_s function"

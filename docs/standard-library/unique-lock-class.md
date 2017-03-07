@@ -94,7 +94,7 @@ class unique_lock;
 ##  <a name="unique_lock__lock_method"></a>  lock  
  Blocks the calling thread until the thread obtains ownership of the associated `mutex`.  
   
-```cpp
+```cpp  
 void lock();
 ```  
   
@@ -108,14 +108,14 @@ void lock();
 ##  <a name="unique_lock__mutex_method"></a>  mutex  
  Retrieves the stored pointer to the associated `mutex`.  
   
-```cpp
+```cpp  
 mutex_type *mutex() const noexcept;
 ```  
   
 ##  <a name="unique_lock__operator_bool"></a>  operator bool  
  Specifies whether the calling thread has ownership of the associated mutex.  
   
-```cpp
+```cpp  
 explicit operator bool() noexcept
 ```  
   
@@ -125,7 +125,7 @@ explicit operator bool() noexcept
 ##  <a name="unique_lock__operator_eq"></a>  operator=  
  Copies the stored `mutex` pointer and associated ownership status from a specified object.  
   
-```cpp
+```cpp  
 unique_lock& operator=(unique_lock&& Other) noexcept;
 ```  
   
@@ -144,7 +144,7 @@ unique_lock& operator=(unique_lock&& Other) noexcept;
 ##  <a name="unique_lock__owns_lock_method"></a>  owns_lock  
  Specifies whether the calling thread owns the associated `mutex`.  
   
-```cpp
+```cpp  
 bool owns_lock() const noexcept;
 ```  
   
@@ -154,7 +154,7 @@ bool owns_lock() const noexcept;
 ##  <a name="unique_lock__release_method"></a>  release  
  Disassociates the `unique_lock` object from the associated `mutex` object.  
   
-```cpp
+```cpp  
 mutex_type *release() noexcept;
 ```  
   
@@ -178,7 +178,7 @@ void swap(unique_lock& Other) noexcept;
 ##  <a name="unique_lock__try_lock_method"></a>  try_lock  
  Attempts to obtain ownership of the associated `mutex` without blocking.  
   
-```cpp
+```cpp  
 bool try_lock() noexcept;
 ```  
   
@@ -214,7 +214,7 @@ bool try_lock_for(
 ##  <a name="unique_lock__try_lock_until_method"></a>  try_lock_until  
  Attempts to obtain ownership of the associated `mutex` without blocking.  
   
-```cpp
+```cpp  
 template <class Clock, class Duration>
 bool try_lock_until(const chrono::time_point<Clock, Duration>& Abs_time);
 
@@ -236,7 +236,7 @@ bool try_lock_until(const xtime* Abs_time);
 ##  <a name="unique_lock__unique_lock_constructor"></a>  unique_lock Constructor  
  Constructs a `unique_lock` object.  
   
-```cpp
+```cpp  
 unique_lock() noexcept;
 unique_lock(unique_lock&& Other) noexcept;
 explicit unique_lock(mutex_type& Mtx);
@@ -292,7 +292,7 @@ unique_lock(mutex_type& Mtx,
 ##  <a name="unique_lock___dtorunique_lock_destructor"></a>  ~unique_lock Destructor  
  Releases any resources that are associated with the `unique_lock` object.  
   
-```cpp
+```cpp  
 ~unique_lock() noexcept;
 ```  
   
@@ -302,7 +302,7 @@ unique_lock(mutex_type& Mtx,
 ##  <a name="unique_lock__unlock_method"></a>  unlock  
  Releases ownership of the associated `mutex`.  
   
-```cpp
+```cpp  
 void unlock();
 ```  
   

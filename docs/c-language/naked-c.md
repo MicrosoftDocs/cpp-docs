@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "naked keyword [C], storage-class attribute"
   - "naked keyword [C]"

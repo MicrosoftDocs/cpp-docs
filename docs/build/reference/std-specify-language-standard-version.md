@@ -10,7 +10,6 @@ f1_keywords:
   - "std option"
 dev_langs: 
   - "C++"
-  - "c++"
 ms.assetid: 0acb74ba-1aa8-4c05-b96c-682988dc19bd
 caps.latest.revision: 5
 author: "corob-msft"
@@ -43,10 +42,10 @@ Enable supported C++ language features from the specified version of the C++ lan
   
  The **/std:c++latest** option enables the set of C++ language and library features implemented by Visual C++ to track the most recent Working Draft and defect updates of the C++ Standard. Use this switch to get the latest language features supported by the compiler. For a list of supported language and library features, see [What's New for Visual C++](../../what-s-new-for-visual-cpp-in-visual-studio.md). The **/std:c++latest** option does not enable features guarded by the **/experimental** switch.  
   
- The **/std:c++14** and **/std:c++latest** options are available beginning in Visual C++ 2013 Update 3.  
+ The **/std:c++14** and **/std:c++latest** options are available beginning in Visual C++ 2015 Update 3.  
   
 > [!NOTE]
->  Depending on the Visual C++ compiler version or update level, certain C++14 features may not be fully implemented or fully conformant when you specify the **/std:c++14** option. For example, the Visual C++ 2015 Update 3 compiler does not fully support C++14-conformant `constexpr`, expression SFINAE, or 2-phase name lookup.  
+>  Depending on the Visual C++ compiler version or update level, certain C++14 features may not be fully implemented or fully conformant when you specify the **/std:c++14** option. For example, the Visual C++ 2017 RTM compiler does not fully support C++14-conformant `constexpr`, expression SFINAE, or 2-phase name lookup. For an overview of C++ language conformance in Visual C++, see [Visual C++ Language Conformance](../../visual-cpp-language-conformance.md). 
   
 ### To set this compiler option in the Visual Studio development environment  
   

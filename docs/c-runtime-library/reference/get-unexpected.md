@@ -28,7 +28,6 @@ f1_keywords:
   - "get_unexpected"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "__get_unexpected function"
   - "get_unexpected function"

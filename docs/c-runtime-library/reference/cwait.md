@@ -27,7 +27,6 @@ f1_keywords:
   - "_cwait"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "cwait function"
   - "_cwait function"
@@ -106,13 +105,12 @@ intptr_t _cwait(
   
 ## Example  
   
-```  
-  
-      // crt_cwait.c  
+```C  
+// crt_cwait.c  
 // compile with: /c  
 // This program launches several processes and waits  
 // for a specified process to finish.  
-//  
+  
 #define _CRT_RAND_S  
   
 #include <windows.h>  
@@ -138,13 +136,13 @@ int main( int argc, char *argv[] )
    srand( (unsigned)time( NULL ) );    // Seed randomizer  
   
    // If no arguments, this is the calling process  
-   if( argc == 1 )  
+   if ( argc == 1 )  
    {  
       // Spawn processes in numeric order  
-      for( c = 0; c < 4; c++ ){  
+      for ( c = 0; c < 4; c++ ) {  
          _flushall();  
          process[c].nPid = _spawnl( _P_NOWAIT, argv[0], argv[0],   
-                             process[c].name, NULL );  
+                                    process[c].name, NULL );  
       }  
   
       // Wait for randomly specified process, and respond when done   
@@ -172,9 +170,6 @@ Hi, Dad. It's Beth.
 Hi, Dad. It's Carl.  
 Hi, Dad. It's Dave.  
 ```  
-  
-## .NET Framework Equivalent  
- [System::Diagnostics::Process::WaitForExit](https://msdn.microsoft.com/en-us/library/system.diagnostics.process.waitforexit.aspx)  
   
 ## See Also  
  [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   

@@ -28,7 +28,6 @@ f1_keywords:
   - "_lfind"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "linear searching"
   - "lfind function"

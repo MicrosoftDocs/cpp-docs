@@ -12,7 +12,6 @@ f1_keywords:
   - "named_guids"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "named_guids attribute"
 ms.assetid: b905e5e5-07fe-4874-8993-e05b9d639045

@@ -28,7 +28,6 @@ f1_keywords:
   - "get_timezone"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "time zones"
   - "get_timezone function"

@@ -32,7 +32,6 @@ f1_keywords:
   - "_mbsnbcmp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "mbsnbcmp_l function"
   - "mbsnbcmp function"

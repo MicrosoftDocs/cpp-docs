@@ -12,7 +12,6 @@ f1_keywords:
   - "no_search_namespace"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "no_search_namespace attribute"
 ms.assetid: 482dc4a7-5acf-456a-a995-ef4ddd5f6018

@@ -30,7 +30,6 @@ f1_keywords:
   - "setlocale"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wsetlocale function"
   - "setlocale function"
@@ -219,7 +218,7 @@ wchar_t *_wsetlocale(
   
 ## Example  
   
-```css  
+```C  
 // crt_setlocale.c  
 //   
 // This program demonstrates the use of setlocale when  

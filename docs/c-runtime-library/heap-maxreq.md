@@ -13,7 +13,6 @@ f1_keywords:
   - "_HEAP_MAXREQ"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "HEAP_MAXREQ constants"
   - "_HEAP_MAXREQ constants"

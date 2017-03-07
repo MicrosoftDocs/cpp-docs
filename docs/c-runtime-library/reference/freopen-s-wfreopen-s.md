@@ -30,7 +30,6 @@ f1_keywords:
   - "_wfreopen_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_tfreopen_s function"
   - "_wfreopen_s function"

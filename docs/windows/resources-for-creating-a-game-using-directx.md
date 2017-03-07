@@ -48,4 +48,4 @@ To create the best desktop games, use Visual C++ and DirectX together.
   
  [Win32 Windows Applications](../windows/windows-desktop-applications-cpp.md) contains articles that describe how to create a basic Windows desktop app.  
   
- [Developing Games](http://msdn.microsoft.com/library/windows/apps/hh452744.aspx) discusses [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] game development, but many of the concepts also apply to desktop games.
+ [Developing Games](http://msdn.microsoft.com/library/windows/apps/hh452744.aspx) discusses Universal Windows Platform game development, but many of the concepts also apply to desktop games.

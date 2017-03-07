@@ -31,7 +31,6 @@ f1_keywords:
   - "wspawnlpe"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_wspawnlpe function"
   - "wspawnlpe function"

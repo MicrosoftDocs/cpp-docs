@@ -13,7 +13,6 @@ f1_keywords:
   - "vc-pragma.auto_inline"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "pragmas, auto_inline"
   - "auto_inline pragma"

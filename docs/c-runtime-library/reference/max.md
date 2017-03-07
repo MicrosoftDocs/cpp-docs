@@ -27,7 +27,6 @@ f1_keywords:
   - "__max"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "max macro"
   - "maximum macro"

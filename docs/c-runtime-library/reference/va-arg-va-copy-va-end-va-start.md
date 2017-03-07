@@ -35,7 +35,6 @@ f1_keywords:
   - "va_end"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "variable argument lists, accessing"
   - "va_start macro"
@@ -167,16 +166,6 @@ int main()
 -1  
   
 (null)  
-```  
-  
- However, when the program is compiled by using **/clr:pure**, the type mismatches cause it to generate an exception. The solution is to use explicit casts:  
-  
-```  
-int main()  
-{  
-   testit( 0, (int)0xFFFFFFFF ); // cast unsigned to int  
-   testit( 1, (char*)NULL );     // cast int to char*  
-}  
 ```  
   
 ## Requirements  

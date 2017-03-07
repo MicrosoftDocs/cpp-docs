@@ -34,7 +34,6 @@ f1_keywords:
   - "statusfp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "floating-point functions, getting status word"
   - "floating-point numbers, status word"
@@ -96,7 +95,7 @@ void _statusfp2(unsigned int *px86, unsigned int *pSSE2)
   
  We recommend `_statusfp2` for chips (such as the Pentium IV) that have both an x87 and an SSE2 floating-point processor. For `_statusfp2`, the addresses are filled by using the floating-point status word for both the x87 or the SSE2 floating-point processor. For a chip that supports x87 and SSE2 floating-point processors, EM_AMBIGUOUS is set to 1 if `_statusfp` or `_controlfp` is used and the action was ambiguous because it could refer to the x87 or the SSE2 floating-point status word. The `_statusfp2` function is only supported on x86 platforms.  
   
- These functions are not useful for [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) or `/clr:pure` compilation because the common language runtime (CLR) only supports the default floating-point precision.  
+ These functions are not useful for [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) because the common language runtime (CLR) only supports the default floating-point precision.  
   
 ## Requirements  
   

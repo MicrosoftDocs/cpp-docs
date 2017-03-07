@@ -31,7 +31,6 @@ f1_keywords:
   - "ismbbtrail_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "ismbbtrail_l function"
   - "_ismbbtrail function"

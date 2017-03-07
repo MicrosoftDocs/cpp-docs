@@ -26,7 +26,6 @@ f1_keywords:
   - "longjmp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "restoring stack environment and execution locale"
   - "longjmp function"

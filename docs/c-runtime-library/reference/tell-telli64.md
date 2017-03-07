@@ -31,7 +31,6 @@ f1_keywords:
   - "_tell"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tell function"
   - "file pointers [C++], getting"

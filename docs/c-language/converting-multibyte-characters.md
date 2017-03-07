@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "multibyte characters, converting"
 ms.assetid: bbee7586-6a60-4168-bb98-0d1c8aa823a1

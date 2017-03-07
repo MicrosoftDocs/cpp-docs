@@ -28,7 +28,6 @@ f1_keywords:
   - "_aligned_recalloc"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "aligned_recalloc function"
   - "_aligned_recalloc function"

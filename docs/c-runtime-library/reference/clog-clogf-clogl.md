@@ -34,7 +34,6 @@ f1_keywords:
   - "complex/clogf"
   - "complex/clogl"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "clog function"

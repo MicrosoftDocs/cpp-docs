@@ -39,7 +39,6 @@ f1_keywords:
   - "mbsspnp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_strspnp function"
   - "_wcsspnp function"

@@ -90,7 +90,7 @@ The <shared_mutex> header provides synchronization primitives for protection of 
   
 ## Syntax  
   
-```cpp
+```cpp  
 namespace std {
     class shared_mutex;
     class shared_timed_mutex;
@@ -123,14 +123,14 @@ void swap(shared_lock<Mutex>& x, shared_lock<Mutex>& y) noexcept;
  The `shared_lock` template class extends support for timed locking and transfer of ownership to a shared mutex. Ownership of the mutex may be obtained at or after construction, and may be transferred to another `shared_lock` object. Objects of type `shared_lock` can be moved, but not copied.  
   
 > [!WARNING]
->  The C++ Standard Library synchronization types in Visual Studio 2015 are based on Windows synchronization primitives and no longer use ConcRT (except when the target platform is Windows XP). The types defined in <shared_mutex> should not be used with any ConcRT types or functions.  
+>  Beginning in Visual Studio 2015, the C++ Standard Library synchronization types are based on Windows synchronization primitives and no longer use ConcRT (except when the target platform is Windows XP). The types defined in <shared_mutex> should not be used with any ConcRT types or functions.  
   
 ## Classes  
   
 ###  <a name="class_shared_mutex"></a> shared_mutex Class  
  Class `shared_mutex` implements a non-recursive mutex with shared ownership semantics.  
   
-```cpp
+```cpp  
 class shared_mutex {
    public:
    shared_mutex();
@@ -156,7 +156,7 @@ class shared_mutex {
 ###  <a name="class_shared_timed_mutex"></a> shared_timed_mutex Class  
  Class `shared_timed_mutex` implements a non-recursive mutex with shared ownership semantics that meets the requirements of a timed mutex type.  
   
-```cpp
+```cpp  
 class shared_timed_mutex {
    public:
    shared_timed_mutex();
@@ -187,7 +187,7 @@ class shared_timed_mutex {
 ###  <a name="class_shared_lock"></a> shared_lock Class  
  Template class `shared_lock` controls the shared ownership of a shared mutex object within a scope. The template parameter must be a shared mutex type.  
 
-```cpp
+```cpp  
 class shared_lock {
    public:
    typedef Mutex mutex_type;
@@ -234,7 +234,7 @@ class shared_lock {
 ###  <a name="function_swap"></a> swap Function  
  Swaps the `shared_lock` objects.  
   
-```cpp
+```cpp  
 template <class Mutex>
 void swap(shared_lock<Mutex>& x, shared_lock<Mutex>& y) noexcept;
 ```  

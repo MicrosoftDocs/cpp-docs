@@ -51,7 +51,6 @@ void swap(
 ### Example  
   
 ```cpp  
-  
 #include <unordered_set>  
 #include <iostream>  
   
@@ -141,7 +140,6 @@ void swap(
 ### Example  
   
 ```cpp  
-  
 // std__unordered_set__u_ms_swap.cpp  
 // compile with: /EHsc  
 #include <unordered_set>  

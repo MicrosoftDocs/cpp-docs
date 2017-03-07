@@ -34,7 +34,6 @@ f1_keywords:
   - "_get_purecall_handler"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_set_purecall_handler function"
   - "set_purecall_handler function"

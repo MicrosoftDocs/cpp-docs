@@ -36,7 +36,6 @@ f1_keywords:
   - "swprintf_p_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "sprintf_p_l function"
   - "swprintf_p function"

@@ -12,7 +12,6 @@ f1_keywords:
   - "c.runtime"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "MSVCR71.dll"
   - "libraries [C++], multithreaded"
@@ -54,7 +53,7 @@ This topic discusses the various .lib files that comprise the C run-time librari
 ## C Run-Time Libraries (CRT)  
  The C Run-time Library (CRT) is the part of the C++ Standard Library that incorporates the ISO C99 standard library. The Visual C++ libraries that implement the CRT support native code development, and both mixed native and managed code, and pure managed code for .NET development. All versions of the CRT support multi-threaded development. Most of the libraries support both static linking, to link the library directly into your code, or dynamic linking to let your code use common DLL files.  
   
- In Visual Studio 2015, the CRT has been refactored into new binaries. The Universal CRT (UCRT) contains the functions and globals exported by the standard C99 CRT library. The UCRT is now a Windows component, and ships as part of Windows 10. The static library, DLL import library, and header files for the UCRT are now found in the Windows 10 SDK. When you install Visual C++, Visual Studio setup installs the subset of the Windows 10 SDK required to use the UCRT. You can use the UCRT on any version of Windows supported by Visual Studio 2015. You can redistribute it using vcredist for supported versions of Windows other than Windows 10. For more information, see [Redistributing Visual C++ Files](../ide/redistributing-visual-cpp-files.md).  
+ Starting in Visual Studio 2015, the CRT has been refactored into new binaries. The Universal CRT (UCRT) contains the functions and globals exported by the standard C99 CRT library. The UCRT is now a Windows component, and ships as part of Windows 10. The static library, DLL import library, and header files for the UCRT are now found in the Windows 10 SDK. When you install Visual C++, Visual Studio setup installs the subset of the Windows 10 SDK required to use the UCRT. You can use the UCRT on any version of Windows supported by Visual Studio 2015 and later versions. You can redistribute it using vcredist for supported versions of Windows other than Windows 10. For more information, see [Redistributing Visual C++ Files](../ide/redistributing-visual-cpp-files.md).  
   
  The following table lists the libraries that implement the UCRT.  
   
@@ -88,8 +87,8 @@ This topic discusses the various .lib files that comprise the C run-time librari
 |msvcrtd.lib|Static library for the Debug version of the native CRT startup for use with DLL UCRT and vcruntime. Not redistributable.|**/MDd**|_DEBUG, _MT, _DLL|  
 |msvcmrt.lib|Static library for the mixed native and managed CRT startup for use with DLL UCRT and vcruntime.|**/clr**||  
 |msvcmrtd.lib|Static library for the Debug version of the mixed native and managed CRT startup for use with DLL UCRT and vcruntime. Not redistributable.|**/clr**||  
-|msvcurt.lib|Static library for the pure managed CRT.|**/clr:pure**||  
-|msvcurtd.lib|Static library for the Debug version of the pure managed CRT. Not redistributable.|**/clr:pure**||  
+|msvcurt.lib|**Deprecated** Static library for the pure managed CRT.|**/clr:pure**||  
+|msvcurtd.lib|**Deprecated** Static library for the Debug version of the pure managed CRT. Not redistributable.|**/clr:pure**||  
   
  If you link your program from the command line without a compiler option that specifies a C run-time library, the linker will usethe statically linked CRT libraries: libcmt.lib, libvcruntime.lib, and libucrt.lib.  
   
@@ -99,7 +98,7 @@ This topic discusses the various .lib files that comprise the C run-time librari
   
  If you are using the **/clr** compiler switch, your code will be linked with a static library, msvcmrt.lib. The static library provides a proxy between your managed code and the native CRT. You cannot use the statically linked CRT ( **/MT** or **/MTd** options) with **/clr**. Use the dynamically-linked libraries (**/MD** or **/MDd**) instead.  
   
- If you are using the **/clr:pure** compiler switch, your code will be linked with the static library msvcurt.lib. As with **/clr**, you cannot link with the statically linked library.  
+ If you are using the **/clr:pure** compiler switch, your code will be linked with the static library msvcurt.lib. As with **/clr**, you cannot link with the statically linked library. The **/clr:pure** and **/clr:safe** compiler options are deprecated starting in Visual Studio 2015.  
   
  For more information on using the CRT with **/clr**, see [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md); for **/clr:pure**, see [Pure and Verifiable Code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md).  
   

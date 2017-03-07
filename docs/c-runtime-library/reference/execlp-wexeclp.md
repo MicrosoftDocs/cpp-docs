@@ -30,7 +30,6 @@ f1_keywords:
   - "_execlp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "execlp function"
   - "_execlp function"
@@ -83,7 +82,7 @@ intptr_t _wexeclp(
  `cmdname`  
  Path of the file to execute.  
   
- `arg0`, `...``argn`  
+ `arg0, ... argn`  
  List of pointers to parameters.  
   
 ## Return Value  

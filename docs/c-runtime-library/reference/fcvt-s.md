@@ -28,7 +28,6 @@ f1_keywords:
   - "_fcvt_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "fcvt_s function"
   - "converting floating point, to strings"

@@ -30,7 +30,6 @@ f1_keywords:
   - "wchmod"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_chmod function"
   - "wchmod function"

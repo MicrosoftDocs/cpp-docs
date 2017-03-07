@@ -37,7 +37,6 @@ f1_keywords:
   - "_copysignf"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "copysignl function"
   - "_copysignl function"
@@ -121,7 +120,7 @@ long double _copysignl(
 |Routine|Required header|  
 |-------------|---------------------|  
 |`_copysign`|\<float.h>|  
-|`copysign`, `copysignf`, `copysignl`, `_copysignf``_copysignl`|\<math.h>|  
+|`copysign`, `copysignf`, `copysignl`, `_copysignf`, `_copysignl`|\<math.h>|  
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   

@@ -48,7 +48,7 @@ translation.priority.ht:
   
  The compiler cannot compile *function* into managed code, even though the [/clr](../../build/reference/clr-common-language-runtime-compilation.md) compiler option is specified. Instead, the compiler emits warning C4793 and an explanatory continuation message, and then compiles *function* into native code. The continuation message contains the *reason* text that explains why *function* cannot be compiled to `MSIL`.  
   
- This is a level 1 warning when you specify the `/clr:pure` compiler option.  
+ This is a level 1 warning when you specify the `/clr:pure` compiler option.  The **/clr:pure** compiler option is deprecated in Visual Studio 2015.  
   
  The following table lists all possible continuation messages.  
   

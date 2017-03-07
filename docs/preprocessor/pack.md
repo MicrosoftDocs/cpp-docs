@@ -13,7 +13,6 @@ f1_keywords:
   - "vc-pragma.pack"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "pragmas, pack"
   - "pack pragma"

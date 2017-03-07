@@ -29,7 +29,6 @@ f1_keywords:
   - "stdlib/_swab"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_swab function"
   - "swapping bytes"
@@ -94,7 +93,7 @@ void _swab(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Example  
-```c 
+```C 
 // crt_swab.c  
   
 #include <stdlib.h>  
@@ -108,7 +107,8 @@ int main()
     printf("Before: %s  %d bytes\n        %s\n\n", from, sizeof(from), to);  
     _swab(from, to, sizeof(from));  
     printf("After:  %s\n        %s\n\n", from, to);  
-}```  
+}  
+```  
   
 ```Output  
 Before: BADCFEHGJILKNMPORQTSVUXWZY  27 bytes  

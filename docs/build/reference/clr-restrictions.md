@@ -73,7 +73,7 @@ Note the following restrictions on the use of **/clr**:
   
 -   The combination of the `_STATIC_CPPLIB` preprocessor definition (`/D_STATIC_CPPLIB`) and the **/clr** or **/clr:pure** compiler option is not supported. This is so because the definition would cause your application to link with the static multithreaded C++ Standard Library, which is not supported. For more information, see the [/MD, /MT, /LD (Use Run-Time Library)](../../build/reference/md-mt-ld-use-run-time-library.md) topic.  
   
--   [/J](../../build/reference/j-default-char-type-is-unsigned.md) is not supported with **/clr:safe** or **/clr:pure**.  
+-   [/J](../../build/reference/j-default-char-type-is-unsigned.md) is not supported with **/clr:safe** or **/clr:pure**. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
   
 -   The ATL and MFC libraries are not supported by pure mode compilation (**/clr:pure**). You can use **/clr:pure** with the C++ Standard Library and the CRT if you also compile with **/MD** or **/MDd**.  
   

@@ -29,7 +29,6 @@ f1_keywords:
   - "ECHILD"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "ENOEXEC constant"
   - "EBADF constant"

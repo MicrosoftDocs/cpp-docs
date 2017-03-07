@@ -27,7 +27,6 @@ f1_keywords:
   - "ferror"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "ferror function"
   - "streams, testing for errors"

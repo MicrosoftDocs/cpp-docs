@@ -31,7 +31,6 @@ f1_keywords:
   - "cexit"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "cleanup operations during processes"
   - "cexit function"

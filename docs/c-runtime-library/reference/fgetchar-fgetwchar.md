@@ -32,7 +32,6 @@ f1_keywords:
   - "fgettchar"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "fgetwchar function"
   - "_fgetchar function"

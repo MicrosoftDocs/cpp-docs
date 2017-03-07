@@ -31,14 +31,14 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Walkthrough: Creating a Windows Store app using WRL and Media Foundation
-Learn how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)]) to create a [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] app that uses [Microsoft Media Foundation](http://msdn.microsoft.com/library/windows/apps/ms694197).  
+Learn how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)]) to create a Universal Windows Platform app that uses [Microsoft Media Foundation](http://msdn.microsoft.com/library/windows/apps/ms694197).  
   
  This example creates a custom Media Foundation transform that applies a grayscale effect to images that are captured from a webcam. The app uses C++ to define the custom transform and C# to use the component to transform the captured images.  
   
 > [!NOTE]
 >  Instead of C#, you can also use JavaScript, Visual Basic, or C++ to consume the custom transform component.  
   
- In most cases, you can use [!INCLUDE[cppwrt](../build/reference/includes/cppwrt_md.md)] ([!INCLUDE[cppwrt_short](../build/reference/includes/cppwrt_short_md.md)]) to create [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] components. (For more information, see [Visual C++ Language Reference](http://msdn.microsoft.com/Library/3f6abf92-4e5e-4ed8-8e11-f9252380d30a).) However, sometimes you have to use the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)]. For example, when you create a media extension for Microsoft Media Foundation, you must create a component that implements both COM and [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] interfaces. Because [!INCLUDE[cppwrt_short](../build/reference/includes/cppwrt_short_md.md)] can only create [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] objects, to create a media extension you must use the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] because it enables the implementation of both COM and [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] interfaces.  
+ In most cases, you can use C++/CX to create [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] components. (For more information, see [Visual C++ Language Reference](http://msdn.microsoft.com/Library/3f6abf92-4e5e-4ed8-8e11-f9252380d30a).) However, sometimes you have to use the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)]. For example, when you create a media extension for Microsoft Media Foundation, you must create a component that implements both COM and [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] interfaces. Because C++/CX can only create [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] objects, to create a media extension you must use the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] because it enables the implementation of both COM and [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] interfaces.  
   
 > [!NOTE]
 >  Although this code example is long, it demonstrates the minimum that's required to create a useful Media Foundation transform. You can use it as a starting point for your own custom transform. This example is adapted from the [Media extensions sample](http://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096), which uses media extensions to apply effects to video, decode video, and create scheme handlers that produce media streams.  
@@ -65,7 +65,7 @@ Learn how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INC
   
 -   Link your component DLL to runtimeobject.lib. Also specify [/WINMD](http://msdn.microsoft.com/Library/ecfadce8-3a3f-40cc-bb01-b4731f8d2fcb) on the linker line to generate Windows metadata.  
   
--   Use project references to make [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] components accessible to [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] apps.  
+-   Use project references to make [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] components accessible to Universal Windows Platform apps.  
   
 ### To use the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] to create the Media Foundation grayscale transform component  
   

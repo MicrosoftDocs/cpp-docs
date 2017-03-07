@@ -43,7 +43,6 @@ f1_keywords:
   - "_wcsncnt"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_strncnt function"
   - "_mbsnbcnt function"

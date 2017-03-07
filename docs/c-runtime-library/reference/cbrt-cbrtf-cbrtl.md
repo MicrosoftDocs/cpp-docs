@@ -102,7 +102,7 @@ long double cbrtl(
   
 ## Example  
   
-```c  
+```C  
 // crt_cbrt.c  
 // Compile using: cl /W4 crt_cbrt.c  
 // This program calculates a cube root.  

@@ -31,7 +31,6 @@ f1_keywords:
   - "sopen_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "sopen_s function"
   - "_wsopen_s function"

@@ -41,7 +41,6 @@ This topic describes rules that are specific to C++ class templates.
  Member functions can be defined inside or outside of a class template. They are defined like function templates if defined outside the class template.  
   
 ```cpp  
-  
 Copy Code  
 // member_function_templates1.cpp  
 template<class T, int i> class MyStack  
@@ -77,7 +76,6 @@ int main()
  Member functions can themselves be function templates, specifying additional parameters, as in the following example.  
   
 ```cpp  
-  
 // member_templates.cpp  
 template<typename T>  
 class X  

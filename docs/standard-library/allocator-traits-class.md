@@ -48,7 +48,7 @@ The template class describes an object that supplements an *allocator type*. An 
   
 ## Syntax  
   
-```cpp
+```cpp  
 template <class Alloc>
 class allocator_traits;
 ```  
@@ -89,7 +89,7 @@ class allocator_traits;
 ##  <a name="allocator_traits__allocate_method"></a>  allocator_traits::allocate Method  
  Static method that allocates memory by using the given allocator parameter.  
   
-```cpp
+```cpp  
 static pointer allocate(Alloc& al, size_type count);
 
 static pointer allocate(Alloc& al, size_type count,
@@ -116,7 +116,7 @@ static pointer allocate(Alloc& al, size_type count,
 ##  <a name="allocator_traits__construct_method"></a>  allocator_traits::construct Method  
  Static method that uses a specified allocator to construct an object.  
   
-```cpp
+```cpp  
 template <class Uty, class Types>
 static void construct(Alloc& al, Uty* ptr, Types&&... args);
 ```  
@@ -137,7 +137,7 @@ static void construct(Alloc& al, Uty* ptr, Types&&... args);
 ##  <a name="allocator_traits__deallocate_method"></a>  allocator_traits::deallocate Method  
  Static method that uses a specified allocator to deallocate a specified number of objects.  
   
-```cpp
+```cpp  
 static void deallocate(Alloc al,
     pointer ptr,
     size_type count);
@@ -161,7 +161,7 @@ static void deallocate(Alloc al,
 ##  <a name="allocator_traits__destroy_method"></a>  allocator_traits::destroy Method  
  Static method that uses a specified allocator to call the destructor on an object without deallocating its memory.  
   
-```cpp
+```cpp  
 template <class Uty>
 static void destroy(Alloc& al, Uty* ptr);
 ```  
@@ -179,7 +179,7 @@ static void destroy(Alloc& al, Uty* ptr);
 ##  <a name="allocator_traits__max_size_method"></a>  allocator_traits::max_size Method  
  Static method that uses a specified allocator to determine the maximum number of objects that can be allocated.  
   
-```cpp
+```cpp  
 static size_type max_size(const Alloc& al);
 ```  
   
@@ -193,7 +193,7 @@ static size_type max_size(const Alloc& al);
 ##  <a name="allocator_traits__select_on_container_copy_construction_method"></a>  allocator_traits::select_on_container_copy_construction Method  
  Static method that calls `select_on_container_copy_construction` on the specified allocator.  
   
-```cpp
+```cpp  
 static Alloc select_on_container_copy_construction(const Alloc& al);
 ```  
   

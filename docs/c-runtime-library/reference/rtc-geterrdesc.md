@@ -27,7 +27,6 @@ f1_keywords:
   - "_RTC_GetErrDesc"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "run-time errors"
   - "_RTC_GetErrDesc function"

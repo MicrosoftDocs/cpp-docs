@@ -40,7 +40,6 @@ f1_keywords:
   - "sntprintf_s_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_snprintf_s_l function"
   - "_snwprintf_s_l function"

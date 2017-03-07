@@ -26,7 +26,6 @@ f1_keywords:
   - "atexit"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "processing, at exit"
   - "atexit function"

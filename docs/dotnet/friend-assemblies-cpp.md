@@ -74,9 +74,8 @@ For applicable runtimes, the *friend assemblies* language feature makes types th
 ### Examples  
  The following code example defines a component that specifies a client assembly that has access to the types in the component.  
   
-```  
-  
-      // friend_assemblies.cpp  
+```cpp  
+// friend_assemblies.cpp  
 // compile by using: /clr /LD  
 using namespace System::Runtime::CompilerServices;  
 using namespace System;  
@@ -93,7 +92,7 @@ public:
   
  The next code example accesses a private type in the component.  
   
-```  
+```cpp  
 // friend_assemblies_2.cpp  
 // compile by using: /clr  
 #using "friend_assemblies.dll" as_friend  
@@ -104,15 +103,15 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
- `Class1::Test_Public`  
+```Output  
+Class1::Test_Public  
+```  
   
  The next code example defines a component but does not specify a client assembly that will have access to the types in the component.  
   
  Notice that the component is linked by using **/opt:noref**. This ensures that private types are emitted in the component's metadata, which is not required when the `InternalsVisibleTo` attribute is present. For more information, see [/OPT (Optimizations)](../build/reference/opt-optimizations.md).  
   
-```  
+```cpp  
 // friend_assemblies_3.cpp  
 // compile by using: /clr /LD /link /opt:noref  
 using namespace System;  
@@ -127,7 +126,7 @@ public:
   
  The following code example defines a client that tries to access a private type in a component that does not give access to its private types. Because of the behavior of the runtime, if you want to catch the exception, you must attempt to access a private type in a helper function.  
   
-```  
+```cpp  
 // friend_assemblies_4.cpp  
 // compile by using: /clr  
 #using "friend_assemblies_3.dll" as_friend  
@@ -148,13 +147,13 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
- `caught an exception`  
+```Output  
+caught an exception  
+```
   
  The next code example shows how to create a strong-name component that specifies a client assembly that will have access to the types in the component.  
   
-```  
+```cpp  
 // friend_assemblies_5.cpp  
 // compile by using: /clr /LD /link /keyfile:friend_assemblies.snk  
 using namespace System::Runtime::CompilerServices;  
@@ -185,7 +184,7 @@ public:
   
  The next code example accesses a private type in the strong-name component.  
   
-```  
+```cpp  
 // friend_assemblies_6.cpp  
 // compile by using: /clr /link /keyfile:friend_assemblies.snk  
 #using "friend_assemblies_5.dll" as_friend  
@@ -196,9 +195,9 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
- `Class1::Test_Public`  
+```Output  
+Class1::Test_Public  
+```  
   
 ## See Also  
  [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)

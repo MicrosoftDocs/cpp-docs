@@ -12,7 +12,6 @@ f1_keywords:
   - "TZNAME_MAX"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "TZNAME_MAX constant"
 ms.assetid: e2286cb8-751d-4557-9650-5c4b98a8f7be

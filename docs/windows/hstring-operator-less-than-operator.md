@@ -39,7 +39,6 @@ Indicates whether the first parameter is less than the second parameter.
 ## Syntax  
   
 ```cpp  
-  
 inline bool operator<(  
     const HString& lhs,   
     const HString& rhs) throw()  

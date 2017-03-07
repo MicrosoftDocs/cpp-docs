@@ -176,7 +176,7 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
   
 -   **%A and %a precision** The default precision of the %A and %a format specifiers was 6 in previous versions of the library. The default precision is now 13 for conformance with the C Standard.  
   
-     This is a runtime behavior change in the output of any function that uses a format string with %A or %a. In the old behavior, the output using the %A specifier might be "1.1A2B3Cp+111". Now the output for the same value is "1.1A2B3C4D5E6F7p+111". To get the old behavior, you can specify the precision, for example, %.6A. See [Precision Specification](../c-runtime-library/precision-specification.md).  
+     This is a runtime behavior change in the output of any function that uses a format string with %A or %a. In the old behavior, the output using the %A specifier might be "1.1A2B3Cp+111". Now the output for the same value is "1.1A2B3C4D5E6F7p+111". To get the old behavior, you can specify the precision, for example, %.6A. See [Precision Specification](../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md#precision).  
   
 -   **%F specifier** The %F format/conversion specifier is now supported. It is functionally equivalent to the %f format specifier, except that infinities and NaNs are formatted using capital letters.  
   
@@ -378,7 +378,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      For example, consider the following code:  
   
     ```cpp  
-  
     struct S   
     {  
         mutable int &r;  
@@ -399,7 +398,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      You can no longer use `char16_t` or `char32_t` as aliases in a typedef, because these types are now treated as built-in. It was common for users and library authors to define char16_t and char32_t as aliases of uint16_t and uint32_t, respectively.  
   
     ```cpp  
-  
     #include <cstdint>  
   
     typedef uint16_t char16_t; //C2628  
@@ -422,7 +420,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Certain code that involves non-type template parameters is now correctly checked for type compatibility when you provide explicit template arguments. For example, the following code compiled without error in previous versions of Visual C++.  
   
     ```cpp  
-  
     struct S1  
     {  
         void f(int);  
@@ -465,7 +462,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      There are a couple of changes to exception handling. First, exception objects have to be either copyable or movable. The following code compiled in [!INCLUDE[cpp_dev12_long](../build/reference/includes/cpp_dev12_long_md.md)], but does not compile in [!INCLUDE[cpp_dev14_long](../porting/includes/cpp_dev14_long_md.md)]:  
   
     ```cpp  
-  
     struct S  
     {  
     public:  
@@ -484,7 +480,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      The problem is that the copy constructor is private, so the object cannot be copied as happens in the normal course of handling an exception. The same applies when the copy constructor is declared `explicit`.  
   
     ```cpp  
-  
     struct S  
     {  
         S();  
@@ -503,7 +498,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Catching an exception by value also requires the exception object to be copyable. The following code compiled in [!INCLUDE[cpp_dev12_long](../build/reference/includes/cpp_dev12_long_md.md)], but does not compile in [!INCLUDE[cpp_dev14_long](../porting/includes/cpp_dev14_long_md.md)]:  
   
     ```cpp  
-  
     struct B  
     {  
     public:  
@@ -529,7 +523,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      You can fix this issue by changing the parameter type for the `catch` to a reference.  
   
     ```cpp  
-  
     catch (D& d)  
     {  
     }  
@@ -541,7 +534,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      The compiler now supports user defined literals. As a consequence, string literals followed by macros without any intervening whitespace are interpreted as user-defined literals, which might produce errors or unexpected results. For example, in previous compilers the following code compiled successfully:  
   
     ```cpp  
-  
     #define _x "there"  
     char* func() {  
         return "hello"_x;  
@@ -556,11 +548,9 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
   
      The compiler interpreted this as a string literal "hello" followed by a macro, which is expanded "there", and then the two string literals were concatenated into one. In [!INCLUDE[cpp_dev14_long](../porting/includes/cpp_dev14_long_md.md)], the compiler interprets this as a user-defined literal, but since there is no matching user-defined literal _x defined, it gives an error.  
   
-    ```cpp  
-  
+    ```Output  
     error C3688: invalid literal suffix '_x'; literal operator or literal operator template 'operator ""_x' not found  
     note: Did you forget a space between the string literal and the prefix of the following string literal?  
-  
     ```  
   
      To fix this problem, add a space between the string literal and the macro.  
@@ -588,7 +578,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      For example, suppose your code defines both a placement new and a placement delete:  
   
     ```cpp  
-  
     void * operator new(std::size_t, std::size_t);  
     void operator delete(void*, std::size_t) noexcept;  
   
@@ -597,7 +586,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      The problem occurs because of the match in function signatures between a placement delete operator you've defined, and the new global sized delete operator. Consider whether you can use a different type other than size_t for any placement new and delete operators.  Note that the type of the size_t typedef is compiler-dependent; it is a typedef for unsigned int in Visual C++. A good solution is to use an enumerated type such as this:  
   
     ```cpp  
-  
     enum class my_type : size_t {};  
   
     ```  
@@ -613,7 +601,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Data members of unions can no longer have reference types. The following code compiled successfully in [!INCLUDE[cpp_dev12_long](../build/reference/includes/cpp_dev12_long_md.md)], but produces an error in [!INCLUDE[cpp_dev14_long](../porting/includes/cpp_dev14_long_md.md)].  
   
     ```cpp  
-  
     union U1   
     {  
         const int i;  
@@ -643,7 +630,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
 -   Anonymous unions are now more conformant to the standard. Previous versions of the compiler generated an explicit constructor and destructor for anonymous unions. These are deleted in [!INCLUDE[cpp_dev14_long](../porting/includes/cpp_dev14_long_md.md)].  
   
     ```cpp  
-  
     struct S   
     {  
         S();  
@@ -662,7 +648,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      The preceding code generates the following error in [!INCLUDE[cpp_dev14_long](../porting/includes/cpp_dev14_long_md.md)]:  
   
     ```cpp  
-  
     error C2280: '<unnamed-type-u>::<unnamed-type-u>(void)': attempting to reference a deleted function  
     note: compiler has generated '<unnamed-type-u>::<unnamed-type-u>' here  
   
@@ -671,7 +656,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      To resolve this issue, provide your own definitions of the constructor and/or destructor.  
   
     ```cpp  
-  
     struct S   
     {  
         // Provide a default constructor by adding an empty function body.  
@@ -693,7 +677,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      In order to conform with the standard, the runtime behavior has changed for members of anonymous structures in unions. The constructor for anonymous structure members in a union is no longer implicitly called when such a union is created. Also, the destructor for anonymous structure members in a union is no longer implicitly called when the union goes out of scope. Consider the following code, in which a union U contains an anonymous structure that contains a member which is a named structure S that has a destructor.  
   
     ```cpp  
-  
     #include <stdio.h>  
     struct S   
     {  
@@ -736,7 +719,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      To restore the original behavior, give the anonymous structure a name. The runtime behavior of non-anonymous structures is the same, regardless of the compiler version.  
   
     ```cpp  
-  
     #include <stdio.h>  
   
     struct S   
@@ -774,7 +756,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Alternatively, try moving the constructor and destructor code into new functions, and add calls to these functions from the constructor and destructor for the union.  
   
     ```cpp  
-  
     #include <stdio.h>  
   
     struct S   
@@ -816,7 +797,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Now, if SFINAE requires the compiler to instantiate the specialization of a class template, then any errors that occur during this process are compiler errors. In previous versions, the compiler would ignore such errors. For example, consider the following code:  
   
     ```cpp  
-  
     #include <type_traits>  
   
     template< typename T>  
@@ -892,7 +872,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (before)  
   
     ```cpp  
-  
     class base  
     {  
     protected:  
@@ -912,7 +891,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (after)  
   
     ```cpp  
-  
     class base;  // as above  
   
     class middle : protected virtual base {};  
@@ -928,7 +906,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      -or -  
   
     ```cpp  
-  
     class base;  // as above  
   
     class middle : private virtual base {};  
@@ -954,7 +931,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (before)  
   
     ```cpp  
-  
     static inline void * __cdecl operator new(size_t cb, const std::nothrow_t&)  // error C2323  
   
     ```  
@@ -962,7 +938,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (after)  
   
     ```cpp  
-  
     void * __cdecl operator new(size_t cb, const std::nothrow_t&)  // removed 'static inline'  
   
     ```  
@@ -982,7 +957,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (before)  
   
     ```cpp  
-  
     typedef int index_t;  
     void bounds_check(index_t index);  
     void login(int column)  
@@ -995,7 +969,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (after)  
   
     ```cpp  
-  
     typedef int index_t;  
     void bounds_check(index_t index);  
     void login(int column)  
@@ -1016,7 +989,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (before)  
   
     ```cpp  
-  
     template <typename class T>  
     class container;  
   
@@ -1025,7 +997,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (after)  
   
     ```cpp  
-  
     template <class T>  // alternatively, could be 'template <typename T>'; 'typename' is not elaborating a type specifier in this case  
     class container;  
   
@@ -1046,7 +1017,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example 1: Ambiguous call to overloaded function (before)  
   
     ```cpp  
-  
     // In previous versions of the compiler, code written in this way would unambiguously call f(int, Args...)  
     template < typename... Args>  
     void f(int, Args...);  //  
@@ -1065,7 +1035,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example 1: ambiguous call to overloaded function (after)  
   
     ```cpp  
-  
     template < typename... Args>  
     void f(int, Args...);  //  
   
@@ -1085,7 +1054,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example 2: change in overload resolution (before)  
   
     ```cpp  
-  
     // In previous versions of the compiler, code written in this way would unambiguously call f(S, Args...)  
     struct S  
     {  
@@ -1110,7 +1078,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example 2: change in overload resolution (after)  
   
     ```cpp  
-  
     struct S;  // as before  
   
     template < typename... Args>  
@@ -1176,7 +1143,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example of C4063 (before)  
   
     ```cpp  
-  
     class settings  
     {  
     public:  
@@ -1211,7 +1177,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example of C4063 (after)  
   
     ```cpp  
-  
     class settings { ... };  // as above  
     int main()  
     {  
@@ -1248,7 +1213,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (before)  
   
     ```cpp  
-  
     #include "..\headers\C4426.h"  // emits warning C4464  
   
     ```  
@@ -1256,7 +1220,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (after)  
   
     ```cpp  
-  
     #include "C4426.h"  // add absolute path to 'headers\' to your project's include directories  
   
     ```  
@@ -1274,7 +1237,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (before)  
   
     ```cpp  
-  
     // C4426.h  
     #pragma optimize("g", off)  
     ...  
@@ -1288,7 +1250,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (after)  
   
     ```cpp  
-  
     // C4426.h  
     #pragma optimize("g", off)  
                 ...  
@@ -1311,7 +1272,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (before)  
   
     ```cpp  
-  
     // C5031_part1.h  
     #pragma warning(push)  
     #pragma warning(disable:####)  
@@ -1335,7 +1295,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (after)  
   
     ```cpp  
-  
     // C5031_part1.h  
     #pragma warning(push)  
     #pragma warning(disable:####)  
@@ -1371,7 +1330,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (before)  
   
     ```cpp  
-  
     // C5032.h  
     #pragma warning(push)  
     #pragma warning(disable:####)  
@@ -1388,7 +1346,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (after)  
   
     ```cpp  
-  
     // C5032.h  
     #pragma warning(push)  
     #pragma warning(disable:####)  
@@ -1422,7 +1379,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (before)  
   
     ```cpp  
-  
     try  
     {  
         auto iter = std::find(v.begin(), v.end(), 5);  
@@ -1437,7 +1393,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (after)  
   
     ```cpp  
-  
     try  
     {  
         auto iter = std::find(v.begin(), v.end(), 5);  
@@ -1465,7 +1420,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example 1:  use of an undeclared type (before)  
   
     ```cpp  
-  
     struct s1  
     {  
         template < typename T>  
@@ -1480,7 +1434,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example 1 (after)  
   
     ```cpp  
-  
     struct s1  
     {  
         template < typename>  // forward declare s2struct s2;   
@@ -1510,7 +1463,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example 2: dependent name is not a type (before)  
   
     ```cpp  
-  
     template < typename T>  
     struct s1  
     {  
@@ -1537,7 +1489,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example 2 (after)  
   
     ```cpp  
-  
     template < typename T> struct s1 { ... };  // as above  
     template < typename T> struct s2 { ... };  // as above  
   
@@ -1565,7 +1516,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (before)  
   
     ```cpp  
-  
     struct A  
     {  
         volatile int i;  
@@ -1590,7 +1540,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (after)  
   
     ```cpp  
-  
     struct A  
     {  
         int i; int j;   
@@ -1623,7 +1572,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (before)  
   
     ```cpp  
-  
     struct A  
     {  
         static void func();  
@@ -1636,7 +1584,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example(after)  
   
     ```cpp  
-  
     struct A  
     {  
         static void func();  
@@ -1665,7 +1612,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (before)  
   
     ```cpp  
-  
     namespace A {  
         public enum class CustomEnum : int32;  // forward declaration; error C2599, error C3197  
     }  
@@ -1691,7 +1637,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (after)  
   
     ```cpp  
-  
               // forward declaration of CustomEnum removed  
   
     namespace A {  
@@ -1725,7 +1670,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (before)  
   
     ```cpp  
-  
               inline void* operator new(size_t sz)  // warning C4595  
     {  
         ...  
@@ -1736,7 +1680,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (after)  
   
     ```cpp  
-  
               void* operator new(size_t sz)  // removed inline  
     {  
         ...  
@@ -1757,7 +1700,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example  
   
     ```cpp  
-  
     #include <type_traits>  
   
                 class X1  
@@ -1789,7 +1731,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (before)  
   
     ```cpp  
-  
     class S {  
     public:  
         S() = default;  
@@ -1810,7 +1751,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example (after)  
   
     ```cpp  
-  
     class S {  
     public:  
         S() = default;  
@@ -1841,7 +1781,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example 1 (before)  
   
     ```cpp  
-  
               [uuid("594382D9-44B0-461A-8DE3-E06A3E73C5EB")]  
     class A {};  
   
@@ -1850,7 +1789,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example 1 (after)  
   
     ```cpp  
-  
     __declspec(uuid("594382D9-44B0-461A-8DE3-E06A3E73C5EB")) A {};  
   
     ```  
@@ -1860,7 +1798,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example 2 (before)  
   
     ```cpp  
-  
     [emitidl];  
     [module(name = "Foo")];  
   
@@ -1885,7 +1822,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example 2 IDL (after)  
   
     ```cpp  
-  
     import "docobj.idl";  
   
     [  
@@ -1919,7 +1855,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Example 2  Implementation (after)  
   
     ```cpp  
-  
     #include <idl.header.h>  
     #include <atlbase.h>  
   
@@ -1950,7 +1885,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      X.cpp (-Ycc.h)  
   
     ```cpp  
-  
     #include "a.h"  
     #include "b.h"  
     #include "c.h"  
@@ -1960,7 +1894,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Z.cpp (-Yuc.h)  
   
     ```cpp  
-  
     #include "b.h"  
     #include "a.h"  // mismatched order relative to X.cpp  
     #include "c.h"  
@@ -1972,7 +1905,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      X.cpp (-Ycc.h)  
   
     ```cpp  
-  
     #include "a.h"  
     #include "b.h"   
     #include "c.h"  
@@ -1982,7 +1914,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      Z.cpp (-Yuc.h)  
   
     ```cpp  
-  
     #include "a.h"  
     #include "b.h" // matched order relative to X.cpp  
     #include "c.h"  
@@ -2024,7 +1955,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
 -   The final keyword now generates an unresolved symbol error where it would have compiled previously:  
   
     ```cpp  
-  
     struct S1 {  
         virtual void f() = 0;  
     };  
@@ -2045,7 +1975,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
 -   When you use friend functions in namespaces, you must re-declare the friend function before you refer to it or you will get an error because the compiler now conforms to the ISO C++ Standard. For example, this no longer compiles:  
   
     ```cpp  
-  
     namespace NS {  
         class C {  
             void func(int);  
@@ -2062,7 +1991,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      To correct this code, declare the friend function:  
   
     ```cpp  
-  
     namespace NS {  
         class C {  
             void func(int);  
@@ -2080,7 +2008,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
 -   The C++ Standard does not allow explicit specialization in a class. Although Visual C++ allows it in some cases, in cases such as the following example, an error is now generated because the compiler doesn't consider the second function to be a specialization of the first one.  
   
     ```cpp  
-  
     template < int N>  
     class S {  
     public:  
@@ -2095,7 +2022,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      To correct this code, modify the second function:  
   
     ```cpp  
-  
     template <> void f(char& val);  
   
     ```  
@@ -2103,7 +2029,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
 -   Visual C++ no longer tries to disambiguate the two functions in the following example, and now emits an error:  
   
     ```cpp  
-  
     template< typename T> void Func(T* t = nullptr);  
     template< typename T> void Func(...);  
   
@@ -2116,7 +2041,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      To correct this code, clarify the call:  
   
     ```cpp  
-  
     template< typename T> void Func(T* t = nullptr);  
     template< typename T> void Func(...);  
   
@@ -2129,7 +2053,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
 -   Before the compiler was made compliant with ISO C++11, the following code would have compiled and caused x to resolve to type int:  
   
     ```cpp  
-  
     auto x = {0};  
     int y = x;  
   
@@ -2138,7 +2061,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      This code now resolves x to a type of std::initializer_list\<int> and causes an error on the next line that tries to assign x to type int. (There is no conversion by default.) To correct this code, use int to replace auto:  
   
     ```cpp  
-  
     int x = {0};  
     int y = x;  
   
@@ -2147,7 +2069,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
 -   Aggregate initialization is no longer allowed when the type of the right-hand value does not match the type of the left-hand value that's being initialized, and an error is issued because the ISO C++11 Standard requires uniform initialization to work without narrowing conversions. Previously, if a narrowing conversion was available, a [Compiler Warning (level 4) C4242](../error-messages/compiler-warnings/compiler-warning-level-4-c4242.md) warning would have been issued instead of an error.  
   
     ```cpp  
-  
     int i = 0;  
     char c = {i}; // error  
   
@@ -2156,7 +2077,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      To correct this code, add an explicit narrowing conversion:  
   
     ```cpp  
-  
     int i = 0;  
     char c = {static_cast<char>(i)};  
   
@@ -2165,7 +2085,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
 -   The following initialization is no longer allowed:  
   
     ```cpp  
-  
     void *p = {{0}};  
   
     ```  
@@ -2173,7 +2092,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      To correct this code, use either of these forms:  
   
     ```cpp  
-  
     void *p = 0;  
     // or  
     void *p = {0};  
@@ -2183,7 +2101,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
 -   Name lookup has changed. The following code is resolved differently in Visual C++ in Visual Studio 2012 and Visual C++ in Visual Studio 2013:  
   
     ```cpp  
-  
     enum class E1 { a };  
     enum class E2 { b };  
   
@@ -2200,7 +2117,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
 -   Object layout has changed. On x64, the object layout of a class may change from previous releases. If it has a virtual function but it doesn’t have a base class that has a virtual function, the object model of the compiler inserts a pointer to a virtual function table after the data member layout. This means the layout may not be optimal in all cases. In previous releases, an optimization for x64 would try to improve the layout for you, but because it failed to work correctly in complex code situations, it was removed in Visual C++ in Visual Studio 2013. For example, consider this code:  
   
     ```cpp  
-  
     __declspec(align(16)) struct S1 {  
     };  
   
@@ -2215,7 +2131,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
 -   In Visual C++ in Visual Studio 2013, the result of sizeof(S2) on x64 is 48, but in previous releases, it evaluates to 32. To make this evaluate to 32 in Visual C++ in Visual Studio 2013 for x64, add a dummy base class that has a virtual function:  
   
     ```cpp  
-  
     __declspec(align(16)) struct S1 {  
     };  
   
@@ -2233,7 +2148,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      To find places in your code that an earlier release would have tried to optimize, use a compiler from that release together with the /W3 compiler option and turn on Warning 4370. For example:  
   
     ```cpp  
-  
     #pragma warning(default:4370)  
   
     __declspec(align(16)) struct S1 {  
@@ -2252,7 +2166,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      The x86 compiler has the same sub-optimal layout issue in all versions of Visual C++. For example, if this code is compiled for x86:  
   
     ```cpp  
-  
     struct S {  
         virtual ~S();  
         int i;  
@@ -2264,7 +2177,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      The result of sizeof(S) is 24. However, this can be reduced to 16 if you use the workaround just mentioned for x64:  
   
     ```cpp  
-  
     struct dummy {  
         virtual ~dummy() {}  
     };  
@@ -2307,7 +2219,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
      If you require an identity type trait, don't use the non-standard std::identity that's defined in <type_traits>                 because it won't work for \<void>                 . Instead, implement your own identity type trait to suit your needs. Here's an example:  
   
     ```cpp  
-  
     template < typename T> struct Identity {  
         typedef T type;  
     };  
@@ -2359,7 +2270,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
 -   Use the template keyword to explicitly disambiguate a dependent name (C++ Language Standard compliance). In the following example, the highlighted template keyword is mandatory to resolve the ambiguity. For more information, see [Name Resolution for Dependent Types](../cpp/name-resolution-for-dependent-types.md).  
   
     ```cpp  
-  
     template < typename X = "", typename = "" AY = "">  
     struct Container { typedef typename AY::template Rebind< X> ::Other AX; };  
   
@@ -2368,7 +2278,6 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
 -   Constant expression of type float is no longer allowed as a template argument, as shown in the following example.  
   
     ```cpp  
-  
     template<float n=3.14>  
     struct B {};  // error C2993: 'float': illegal type for non-type template parameter 'n'  
   

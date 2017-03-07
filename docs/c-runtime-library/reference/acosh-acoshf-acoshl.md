@@ -106,7 +106,7 @@ long double acoshl(
   
 ## Example  
   
-```c  
+```C  
 // crt_acosh.c  
 // Compile by using: cl /W4 crt_acosh.c  
 // This program displays the hyperbolic cosine of pi / 4  

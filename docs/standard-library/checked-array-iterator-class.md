@@ -62,13 +62,13 @@ class checked_array_iterator;
   
  If the destination is not large enough to hold all the elements being copied, such as would be the case if you changed the line:  
   
-```cpp
+```cpp  
 copy(a, a + 5, checked_array_iterator<int*>(b, 5));
 ```  
   
  to  
   
-```cpp
+```cpp  
 copy(a, a + 5, checked_array_iterator<int*>(b, 4));
 ```  
   

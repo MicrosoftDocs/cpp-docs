@@ -26,7 +26,6 @@ f1_keywords:
   - "getche"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "getche function"
 ms.assetid: 95e62bb8-eec0-4145-b2e8-f6406849af52

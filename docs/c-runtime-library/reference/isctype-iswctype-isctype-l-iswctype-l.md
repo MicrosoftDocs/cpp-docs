@@ -37,7 +37,6 @@ f1_keywords:
   - "_iswctype_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "isctype_l function"
   - "iswctype_l function"

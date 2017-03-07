@@ -13,7 +13,6 @@ f1_keywords:
   - "init_seg_CPP"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "pragmas, init_seg"
   - "init_seg pragma"

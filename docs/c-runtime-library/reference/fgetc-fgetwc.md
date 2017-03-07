@@ -30,7 +30,6 @@ f1_keywords:
   - "fgetc"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "fgettc function"
   - "characters, reading"

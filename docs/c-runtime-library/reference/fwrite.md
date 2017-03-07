@@ -27,7 +27,6 @@ f1_keywords:
   - "fwrite"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "streams, writing data to"
   - "fwrite function"

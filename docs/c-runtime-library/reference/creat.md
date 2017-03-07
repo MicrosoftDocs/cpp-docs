@@ -26,7 +26,6 @@ f1_keywords:
   - "creat"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "creat function"
 ms.assetid: 3aa6f0cc-5ae6-40d5-be94-0ab6f53c0c5b

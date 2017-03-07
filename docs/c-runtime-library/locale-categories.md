@@ -19,7 +19,6 @@ f1_keywords:
   - "LC_ALL"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "LC_MIN constant"
   - "LC_MONETARY constant"

@@ -36,7 +36,6 @@ f1_keywords:
   - "_strerror_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "__wcserror_s function"
   - "error messages, printing"

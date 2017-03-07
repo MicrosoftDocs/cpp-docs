@@ -28,7 +28,6 @@ f1_keywords:
   - "_fflush_nolock"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "fflush_nolock function"
   - "_fflush_nolock function"

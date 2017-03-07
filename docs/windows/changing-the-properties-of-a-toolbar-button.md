@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C++"
 helpviewer_keywords: 
   - "toolbar controls [MFC], command ID"
   - "toolbar buttons (in Toolbar editor), setting properties"

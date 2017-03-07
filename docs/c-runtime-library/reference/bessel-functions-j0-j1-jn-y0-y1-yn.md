@@ -38,7 +38,6 @@ f1_keywords:
   - "_yn"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "Bessel functions"
   - "_j0 function"

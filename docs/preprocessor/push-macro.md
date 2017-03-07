@@ -13,7 +13,6 @@ f1_keywords:
   - "push_macro_CPP"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "pragmas, push_macro"
   - "push_macro pragma"

@@ -28,7 +28,6 @@ f1_keywords:
   - "_heapwalk"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "debugging [CRT], heap-related problems"
   - "heapwalk function"

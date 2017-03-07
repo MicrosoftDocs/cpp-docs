@@ -37,7 +37,6 @@ f1_keywords:
   - "_ismbchira"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_ismbckata function"
   - "_ismbchira function"

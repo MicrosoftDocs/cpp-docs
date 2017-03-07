@@ -28,7 +28,6 @@ f1_keywords:
   - "open_osfhandle"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "open_osfhandle function"
   - "file handles [C++], associating"

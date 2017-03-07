@@ -30,7 +30,6 @@ f1_keywords:
   - "freopen"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_wfreopen function"
   - "file pointers [C++], reassigning"

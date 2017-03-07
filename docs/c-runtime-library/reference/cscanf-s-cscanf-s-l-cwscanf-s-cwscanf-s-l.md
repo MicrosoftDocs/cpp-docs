@@ -40,7 +40,6 @@ f1_keywords:
   - "tcscanf_s_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "cscanf_s function"
   - "_cwscanf_s_l function"

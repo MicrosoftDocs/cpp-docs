@@ -35,7 +35,6 @@ f1_keywords:
   - "strspn"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wcsspn function"
   - "strings [C++], searching"

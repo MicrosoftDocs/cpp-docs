@@ -12,7 +12,6 @@ f1_keywords:
   - "c"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "Visual C"
   - "C, language reference"

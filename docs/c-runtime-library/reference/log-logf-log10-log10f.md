@@ -35,7 +35,6 @@ f1_keywords:
   - "log10"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "calculating logarithms"
   - "log10f function"

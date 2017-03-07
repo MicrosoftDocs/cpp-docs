@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wmain function"
 ms.assetid: d0300812-adc4-40c6-bba3-b2da25468c80

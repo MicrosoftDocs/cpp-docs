@@ -41,7 +41,6 @@ f1_keywords:
   - "corecrt_wstdlib/_wtof_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tstof function"
   - "atof_l function"

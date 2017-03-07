@@ -31,7 +31,6 @@ f1_keywords:
   - "fwprintf_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "ftprintf_s_l function"
   - "ftprintf_s function"

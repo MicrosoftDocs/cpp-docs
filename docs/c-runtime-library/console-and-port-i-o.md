@@ -12,7 +12,6 @@ f1_keywords:
   - "c.io"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "routines, console and port I/O"
   - "routines"

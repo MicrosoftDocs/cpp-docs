@@ -13,7 +13,6 @@ f1_keywords:
   - "pop_macro_CPP"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "pop_macro pragma"
   - "pragmas, pop_macro"

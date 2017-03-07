@@ -42,7 +42,6 @@ f1_keywords:
   - "stricoll_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "code pages, using for string comparisons"
   - "_ftcsicoll function"

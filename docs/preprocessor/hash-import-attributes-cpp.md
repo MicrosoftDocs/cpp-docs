@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "#import directive, attributes"
 ms.assetid: 2a5085e3-82ee-4f83-892b-0aa6cc13863b

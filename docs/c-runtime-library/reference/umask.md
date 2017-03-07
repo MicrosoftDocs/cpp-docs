@@ -27,7 +27,6 @@ f1_keywords:
   - "_umask"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "masks, file-permission-setting"
   - "_umask function"

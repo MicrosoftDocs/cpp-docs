@@ -33,7 +33,6 @@ f1_keywords:
   - "_localtime64_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_localtime64_s function"
   - "localtime32_s function"

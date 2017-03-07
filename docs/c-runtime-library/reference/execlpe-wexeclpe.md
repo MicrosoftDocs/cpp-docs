@@ -31,7 +31,6 @@ f1_keywords:
   - "_execlpe"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wexeclpe function"
   - "_wexeclpe function"
@@ -86,7 +85,7 @@ intptr_t _wexeclpe(
  `cmdname`  
  Path of the file to execute.  
   
- `arg0`, `...``argn`  
+ `arg0, ... argn`  
  List of pointers to parameters.  
   
  `envp`  

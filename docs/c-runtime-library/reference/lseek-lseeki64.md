@@ -30,7 +30,6 @@ f1_keywords:
   - "lseeki64"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "lseek function"
   - "_lseek function"

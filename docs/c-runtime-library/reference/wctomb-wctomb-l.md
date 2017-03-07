@@ -28,7 +28,6 @@ f1_keywords:
   - "wctomb"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "string conversion, wide characters"
   - "wide characters, converting"

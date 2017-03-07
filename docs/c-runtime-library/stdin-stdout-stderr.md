@@ -14,7 +14,6 @@ f1_keywords:
   - "stdout"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "stdout function"
   - "standard output stream"

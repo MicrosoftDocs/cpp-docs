@@ -26,7 +26,6 @@ f1_keywords:
   - "setjmp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "programs [C++], saving states"
   - "current state"

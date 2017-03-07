@@ -30,7 +30,6 @@ f1_keywords:
   - "_cputws"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "strings [C++], writing"
   - "_cputs function"
@@ -69,12 +68,11 @@ Puts a string to the console.
 ## Syntax  
   
 ```  
-  
-      int _cputs(   
-const char *str   
+int _cputs(   
+   const char *str   
 );  
 int _cputws(  
-const wchar_t *str   
+   const wchar_t *str   
 );  
 ```  
   
@@ -110,9 +108,8 @@ const wchar_t *str
   
 ## Example  
   
-```  
-  
-      // crt_cputs.c  
+```C  
+// crt_cputs.c  
 // compile with: /c  
 // This program first displays a string to the console.  
   
@@ -161,9 +158,7 @@ int main()
 }  
 ```  
   
-## Output  
-  
-```  
+```Output  
 Hello world (courtesy of _cputs)!  
 Hello world (courtesy of _cputws)!  
 ```  

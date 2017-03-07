@@ -27,7 +27,6 @@ f1_keywords:
   - "wcsrtombs_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "string conversion, wide characters"
   - "wcsrtombs_s function"

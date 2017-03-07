@@ -44,7 +44,6 @@ f1_keywords:
   - "mbsicmp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_wcsicmp function"
   - "_stricmp_l function"

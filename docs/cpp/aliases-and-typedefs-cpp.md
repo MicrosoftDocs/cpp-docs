@@ -53,21 +53,19 @@ using identifier = type;
  The simplest form of an alias is equivalent to the `typedef` mechanism from C++03:  
   
 ```cpp  
-  
 // C++11  
 using counter = long;  
   
 // C++03 equivalent:  
 // typedef long counter;  
-  
 ```  
   
  Both of these enable the creation of variables of type "counter". Something more useful would be a type alias like this one for `std::ios_base::fmtflags`:  
   
 ```cpp  
-  
 // C++11  
 using fmtfl = std::ios_base::fmtflags;  
+  
 // C++03 equivalent:  
 // typedef std::ios_base::fmtflags fmtfl;  
   
@@ -75,13 +73,11 @@ fmtfl fl_orig = std::cout.flags();
 fmtfl fl_hex = (fl_orig & ~std::cout.basefield) | std::cout.showbase | std::cout.hex;  
 // ...  
 std::cout.flags(fl_hex);  
-  
 ```  
   
  Aliases also work with function pointers, but are much more readable than the equivalent typedef:  
   
 ```cpp  
-  
 // C++11  
 using func = void(*)(int);  
   
@@ -108,7 +104,6 @@ ptr<int> ptr_int;
  The following example demonstrates how to use an alias template with a custom allocator—in this case, an integer vector type. You can substitute any type for `int` to create a convenient alias to hide the complex parameter lists in your main functional code. By using the custom allocator throughout your code you can improve readability and reduce the risk of introducing bugs caused by typos.  
   
 ```cpp  
-  
 #include <stdlib.h>  
 #include <new>  
   
@@ -159,8 +154,6 @@ int main ()
     return 0;  
 }  
 ```  
-  
-## Output  
   
 ```Output  
 1701 1764 1664  
@@ -240,7 +233,7 @@ int;  // Illegal declaration
 ### Examples  
  One use of `typedef` declarations is to make declarations more uniform and compact. For example:  
   
-```  
+```cpp  
 typedef char CHAR;          // Character type.  
 typedef CHAR * PSTR;        // Pointer to a string (char *).  
 PSTR strchr( PSTR source, CHAR target );  
@@ -274,7 +267,7 @@ void box( int, int );
   
  `typedef` is often combined with `struct` to declare and name user-defined types:  
   
-```  
+```cpp  
 // typedef_specifier2.cpp  
 #include <stdio.h>  
   
@@ -300,7 +293,7 @@ int main()
 ### Re-declaration of typedefs  
  The `typedef` declaration can be used to redeclare the same name to refer to the same type. For example:  
   
-```  
+```cpp  
 // FILE1.H  
 typedef char CHAR;  
   
@@ -316,14 +309,14 @@ typedef char CHAR;
   
  A `typedef` cannot redefine a name that was previously declared as a different type. Therefore, if FILE2.H contains  
   
-```  
+```cpp  
 // FILE2.H  
 typedef int CHAR;     // Error  
 ```  
   
  the compiler issues an error because of the attempt to redeclare the name `CHAR` to refer to a different type. This extends to constructs such as:  
   
-```  
+```cpp  
 typedef char CHAR;  
 typedef CHAR CHAR;      // OK: redeclared as same type  
   
@@ -337,7 +330,7 @@ typedef union REGS      // OK: name REGS redeclared
 ### typedefs in C++ vs. C  
  Use of the `typedef` specifier with class types is supported largely because of the ANSI C practice of declaring unnamed structures in `typedef` declarations. For example, many C programmers use the following:  
   
-```  
+```cpp  
 // typedef_with_class_types1.cpp  
 // compile with: /c  
 typedef struct {   // Declare an unnamed structure and give it the  
@@ -361,7 +354,7 @@ struct point_t ptOrigin;
   
  In C++, the difference between `typedef` names and real types (declared with the **class**, `struct`, **union**, and `enum` keywords) is more distinct. Although the C practice of declaring a nameless structure in a `typedef` statement still works, it provides no notational benefits as it does in C.  
   
-```  
+```cpp  
 // typedef_with_class_types2.cpp  
 // compile with: /c /W1  
 typedef struct {  

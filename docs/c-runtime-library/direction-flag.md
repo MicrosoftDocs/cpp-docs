@@ -12,7 +12,6 @@ f1_keywords:
   - "c.flags"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "direction flag"
 ms.assetid: 0836b4af-dbbb-4ab8-a4b2-156f2e2099e2

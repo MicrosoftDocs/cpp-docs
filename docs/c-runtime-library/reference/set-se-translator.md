@@ -27,7 +27,6 @@ f1_keywords:
   - "set_se_translator"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "set_se_translator function"
   - "exception handling, changing"
@@ -96,8 +95,6 @@ typedef void (*_se_translator_function)(unsigned int, struct _EXCEPTION_POINTERS
 |Routine|Required header|  
 |-------------|---------------------|  
 |`_set_se_translator`|\<eh.h>|  
-  
- The functionality provided by `_set_se_translator` is not available in code compiled with the [/clr:pure](../../build/reference/clr-common-language-runtime-compilation.md) compiler option.  
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   

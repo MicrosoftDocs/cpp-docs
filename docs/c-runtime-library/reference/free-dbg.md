@@ -27,7 +27,6 @@ f1_keywords:
   - "free_dbg"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "memory blocks, deallocating"
   - "freeing memory"

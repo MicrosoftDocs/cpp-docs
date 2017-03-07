@@ -27,7 +27,6 @@ f1_keywords:
   - "_resetstkoflw"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "resetstkoflw function"
   - "stack overflow"
@@ -115,7 +114,7 @@ int _resetstkoflw ( void );
   
  There are situations where **_resetstkoflw** can fail even if used in a correct location, such as within an **__except** block. If, even after unwinding the stack, there is still not enough stack space left to execute **_resetstkoflw** without writing into the last page of the stack, **_resetstkoflw** fails to reset the last page of the stack as the guard page and returns 0, indicating failure. Therefore, safe usage of this function should include checking the return value instead of assuming that the stack is safe to use.  
   
- Structured exception handling will not catch a `STATUS_STACK_OVERFLOW` exception when the application is compiled with `/clr` or `/clr:pure` (see [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md)).  
+ Structured exception handling will not catch a `STATUS_STACK_OVERFLOW` exception when the application is compiled with `/clr` (see [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md)).  
   
 ## Requirements  
   

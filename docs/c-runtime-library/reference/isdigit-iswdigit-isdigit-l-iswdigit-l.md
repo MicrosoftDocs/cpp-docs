@@ -35,7 +35,6 @@ f1_keywords:
   - "_istdigit_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "iswdigit function"
   - "iswdigit_l function"

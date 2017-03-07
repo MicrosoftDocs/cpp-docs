@@ -31,7 +31,6 @@ f1_keywords:
   - "_mbsbtype"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_mbsbtype function"
   - "mbsbtype function"

@@ -92,7 +92,7 @@ Specifies floating-point behavior in a source code file.
   
  To control floating-point behavior by function, see the [float_control](../../preprocessor/float-control.md) pragma. This overrides the **/fp** compiler setting. We recommend you save and restore local floating-point behavior as good engineering practice:  
   
-```css  
+```cpp  
 #pragma float_control(precise, on, push)  
 // Code that uses /fp:precise mode  
 #pragma float_control(pop)  

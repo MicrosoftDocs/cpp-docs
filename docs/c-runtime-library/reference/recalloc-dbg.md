@@ -27,7 +27,6 @@ f1_keywords:
   - "_recalloc_dbg"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_recalloc_dbg function"
   - "recalloc_dbg function"

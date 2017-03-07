@@ -13,7 +13,6 @@ f1_keywords:
   - "check_stack_CPP"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "check_stack pragma"
   - "pragmas, check_stack"

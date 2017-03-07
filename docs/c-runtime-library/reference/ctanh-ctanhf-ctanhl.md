@@ -34,7 +34,6 @@ f1_keywords:
   - "complex/ctanhf"
   - "complex/ctanhl"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "ctanh function"

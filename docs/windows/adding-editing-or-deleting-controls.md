@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C++"
 helpviewer_keywords: 
   - "Dialog editor, creating controls"
   - "dialog box controls, adding to dialog boxes"

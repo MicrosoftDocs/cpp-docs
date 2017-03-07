@@ -69,7 +69,7 @@ class lock_guard;
 ##  <a name="lock_guard__lock_guard_constructor"></a>  lock_guard::lock_guard Constructor  
  Constructs a `lock_guard` object.  
   
-```cpp
+```cpp  
 explicit lock_guard(mutex_type& Mtx);
 
 lock_guard(mutex_type& Mtx, adopt_lock_t);

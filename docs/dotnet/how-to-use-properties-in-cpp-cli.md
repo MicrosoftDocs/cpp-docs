@@ -39,9 +39,8 @@ This article shows how to use properties in C++/CLI.
 ## Basic properties  
  For basic properties—those that merely assign and retrieve a private data member—you don't have to explicitly define the get and set accessor functions because the compiler automatically provides them when given just the data type of the property. This code demonstrates a basic property:  
   
-```  
-  
-      // SimpleProperties.cpp  
+```cpp  
+// SimpleProperties.cpp  
 // compile with: /clr  
 using namespace System;  
   
@@ -57,8 +56,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 c->Size = 111  
 ```  
@@ -66,7 +63,7 @@ c->Size = 111
 ## Static properties  
  This code sample shows how to declare and use a static property.  A static property can only access static members of its class.  
   
-```  
+```cpp  
 // mcppv2_property_3.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -98,8 +95,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 96  
 47  
@@ -114,7 +109,7 @@ int main() {
   
  This code sample shows how to use default and user-defined indexed properties:  
   
-```  
+```cpp  
 // mcppv2_property_2.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -170,8 +165,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 [ 0 1 2 3 4 ]  
 [ 0 2 4 6 8 ]  
@@ -179,7 +172,7 @@ int main() {
   
  The next sample shows how to call the default indexer by using the `this` pointer.  
   
-```  
+```cpp  
 // call_default_indexer_through_this_pointer.cpp  
 // compile with: /clr /c  
 value class Position {  
@@ -203,7 +196,7 @@ private:
   
  This sample shows how to use <xref:System.Reflection.DefaultMemberAttribute> to specify the default indexer:  
   
-```  
+```cpp  
 // specify_default_indexer.cpp  
 // compile with: /LD /clr  
 using namespace System;  
@@ -219,7 +212,7 @@ public ref struct Squares {
   
  The next sample consumes the metadata that's created in the previous example.  
   
-```  
+```cpp  
 // consume_default_indexer.cpp  
 // compile with: /clr  
 #using "specify_default_indexer.dll"  
@@ -229,8 +222,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 9  
 ```  
@@ -238,7 +229,7 @@ int main() {
 ## Virtual properties  
  This code sample shows how to declare and use virtual properties:  
   
-```  
+```cpp  
 // mcppv2_property_4.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -277,8 +268,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 93  
 43  
@@ -289,7 +278,7 @@ int main() {
   
  To declare a sealed or abstract property, you must define a non-trivial property and then specify the `abstract` or `sealed` keyword on the get and set accessor functions.  
   
-```  
+```cpp  
 // properties_abstract_sealed.cpp  
 // compile with: /clr  
 ref struct A {  
@@ -345,8 +334,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 86  
 87  
@@ -355,7 +342,7 @@ int main() {
 ## Multidimensional properties  
  You can use multidimensional properties to define property accessor methods that take a non-standard number of parameters.  
   
-```  
+```cpp  
 // mcppv2_property_5.cpp  
 // compile with: /clr  
 ref class X {  
@@ -391,8 +378,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 1.1  
 ```  
@@ -400,7 +385,7 @@ int main() {
 ## Overloading property accessors  
  The following example shows how to overload indexed properties.  
   
-```  
+```cpp  
 // mcppv2_property_6.cpp  
 // compile with: /clr  
 ref class X {  
@@ -429,8 +414,6 @@ int main() {
    System::Console::WriteLine(MyX->MyProp["test"]);  
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 3.4  

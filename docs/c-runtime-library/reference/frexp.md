@@ -28,7 +28,6 @@ f1_keywords:
   - "_frexpl"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_frexpl function"
   - "mantissas, floating-point variables"

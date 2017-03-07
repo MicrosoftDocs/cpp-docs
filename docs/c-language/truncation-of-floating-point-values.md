@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "floating-point numbers, truncation"
 ms.assetid: 051a6e22-c636-4af8-9ac4-40160f4affca

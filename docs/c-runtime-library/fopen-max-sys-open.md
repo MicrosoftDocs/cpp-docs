@@ -13,7 +13,6 @@ f1_keywords:
   - "FOPEN_MAX"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "SYS_OPEN constant"
   - "_SYS_OPEN constant"

@@ -12,7 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "/utf-8"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "/utf-8 compiler option"

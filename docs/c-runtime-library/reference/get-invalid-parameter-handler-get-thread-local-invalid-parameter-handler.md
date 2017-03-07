@@ -30,7 +30,6 @@ f1_keywords:
   - "_get_thread_local_invalid_parameter_handler"
   - "stdlib/_get_thread_local_invalid_parameter_handler"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "_get_thread_local_invalid_parameter_handler function"
@@ -73,7 +72,7 @@ _invalid_parameter_handler _get_thread_local_invalid_parameter_handler(void);
   
  The returned invalid parameter handler function pointer has the following type:  
   
-```c  
+```C  
 typedef void (__cdecl* _invalid_parameter_handler)(  
     wchar_t const*,  
     wchar_t const*,  

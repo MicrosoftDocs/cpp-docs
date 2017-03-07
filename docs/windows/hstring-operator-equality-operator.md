@@ -39,7 +39,6 @@ Indicates whether the two parameters are equal.
 ## Syntax  
   
 ```cpp  
-  
 inline bool operator==(  
                const HString& lhs,   
                const HString& rhs) throw()  

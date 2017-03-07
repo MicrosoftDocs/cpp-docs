@@ -40,7 +40,6 @@ f1_keywords:
   - "ctime32_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_wctime32_s function"
   - "ctime64_s function"

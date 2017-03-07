@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "string literals, in primary expressions"
 ms.assetid: 3ec31278-527b-40d2-8c83-6b09e2d81ca6

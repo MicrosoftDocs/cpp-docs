@@ -27,7 +27,6 @@ f1_keywords:
   - "_flushall"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "flushall function"
   - "flushing streams"

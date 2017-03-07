@@ -26,7 +26,6 @@ f1_keywords:
   - "getch"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "getch function"
 ms.assetid: d3a0b744-d63c-4f71-960e-24e619dccd01

@@ -57,7 +57,7 @@ using namespace cli;
   
  **Remarks**  
   
- The [!INCLUDE[cppcli](../build/reference/includes/cppcli_md.md)] supports the `cli` namespace. When compiling with **/clr**, the `using` statement in the Syntax section is implied.  
+ The C++/CLI supports the `cli` namespace. When compiling with **/clr**, the `using` statement in the Syntax section is implied.  
   
  The following language features are in the `cli` namespace:  
   

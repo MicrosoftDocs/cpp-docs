@@ -12,7 +12,6 @@ f1_keywords:
   - "vc.constants"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "commit-to-disk constants"
 ms.assetid: 0b903b23-b4fa-431e-a937-51d95f695ecf

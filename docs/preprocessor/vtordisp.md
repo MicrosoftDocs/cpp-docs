@@ -13,7 +13,6 @@ f1_keywords:
   - "vtordisp_CPP"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "pragmas, vtordisp"
   - "vtordisp pragma"

@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C++"
 helpviewer_keywords: 
   - "RichEdit 1.0 control"
   - "rich edit controls, RichEdit 1.0"

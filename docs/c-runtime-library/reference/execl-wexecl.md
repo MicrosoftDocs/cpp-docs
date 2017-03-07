@@ -30,7 +30,6 @@ f1_keywords:
   - "wexecl"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_execl function"
   - "wexecl function"
@@ -83,7 +82,7 @@ intptr_t _wexecl(
  `cmdname`  
  Path of the file to be executed.  
   
- `arg0`, `...``argn`  
+ `arg0, ... argn`  
  List of pointers to the parameters.  
   
 ## Return Value  

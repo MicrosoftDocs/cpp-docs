@@ -33,7 +33,6 @@ f1_keywords:
   - "_getwc_nolock"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "characters, reading"
   - "_getc_nolock function"

@@ -27,7 +27,6 @@ f1_keywords:
   - "_chsize"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "size"
   - "_chsize function"

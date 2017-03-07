@@ -35,13 +35,11 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Supporting Navigation in a Record View  (MFC Data Access)
-This topic explains how to support movement from record to record in your record view, including information about:  
+This topic explains how to support movement from record to record in your [CRecordView](../mfc/reference/crecordview-class.md) class, including information about:  
   
 -   [Command handling](../data/command-handlers-for-record-scrolling-mfc-data-access.md) for record scrolling commands.  
   
 -   [User-interface update handlers for scrolling](../data/user-interface-updating-for-record-views-mfc-data-access.md) commands.  
-  
- The information in these topics applies to both [CRecordView](../mfc/reference/crecordview-class.md) (ODBC) and [CDaoRecordView](../mfc/reference/cdaorecordview-class.md) (DAO).  
   
 ## See Also  
  [Record Views  (MFC Data Access)](../data/record-views-mfc-data-access.md)   

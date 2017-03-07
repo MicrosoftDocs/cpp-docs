@@ -31,7 +31,6 @@ f1_keywords:
   - "_CRTDBG_CHECK_CRT_DF"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "CrtDumpMemoryLeaks function"
   - "CRTDBG_LEAK_CHECK_DF macro"

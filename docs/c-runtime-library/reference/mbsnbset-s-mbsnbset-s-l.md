@@ -31,7 +31,6 @@ f1_keywords:
   - "mbsnbset_s_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tcsnset_s function"
   - "mbsnbset_s function"

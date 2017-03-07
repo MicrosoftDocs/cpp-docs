@@ -17,7 +17,6 @@ f1_keywords:
   - "SIGSEGV"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "SIGTERM constant"
   - "SIGABRT constant"

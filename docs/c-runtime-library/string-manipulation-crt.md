@@ -12,7 +12,6 @@ f1_keywords:
   - "c.strings"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "strings [C++], manipulating"
   - "string manipulation"

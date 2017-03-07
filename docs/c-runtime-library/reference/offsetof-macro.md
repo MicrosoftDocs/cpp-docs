@@ -24,7 +24,6 @@ f1_keywords:
   - "offsetof"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "structure members, offset"
   - "offsetof macro"

@@ -40,7 +40,6 @@ f1_keywords:
   - "_tcsncat_s_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "concatenating strings"
   - "_mbsncat_s function"

@@ -26,7 +26,6 @@ f1_keywords:
   - "tempnam"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tempnam function"
 ms.assetid: 42446733-f131-470f-b4d0-96918becab11

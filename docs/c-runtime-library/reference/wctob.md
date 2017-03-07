@@ -27,7 +27,6 @@ f1_keywords:
   - "wctob"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wide characters, converting"
   - "wctob function"

@@ -13,7 +13,6 @@ f1_keywords:
   - "while"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "do-while keyword [C]"
 ms.assetid: f2ac20a6-10c7-4a08-b5e3-c3b3639dbeaf

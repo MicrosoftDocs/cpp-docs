@@ -40,7 +40,6 @@ C++ classes are by default value types. This topic provides an introductory over
  If you really want a reference-like type (base class, virtual functions), you need to explicitly disable copying, as shown in the `MyRefType` class in the following code.  
   
 ```cpp  
-  
 // cl /EHsc /nologo /W4  
   
 class MyRefType {  
@@ -76,7 +75,6 @@ test.cpp(15) : error C2248: 'MyRefType::operator =' : cannot access private memb
  By using move semantics you can return-by-value or insert-in-middle. Move is an optimization of copy. There is need for heap allocation as a workaround. Consider the following pseudocode:  
   
 ```cpp  
-  
 #include <set>  
 #include <vector>  
 #include <string>  
@@ -107,7 +105,6 @@ hm5 = hm1+hm2+hm3+hm4+hm5;   // efficient, no extra copies
  For a value-like class where move can be cheaper than a deep copy, enable move construction and move assignment for efficiency. Consider the following pseudocode:  
   
 ```cpp  
-  
 #include <memory>  
 #include <stdexcept>  
 using namespace std;  

@@ -222,7 +222,6 @@ bool operator==(const unordered_multimap <Key, Type, Hash, Pred, Allocator>& lef
 ### Example  
   
 ```cpp  
-  
 // unordered_multimap_op_eq.cpp  
 // compile by using: cl.exe /EHsc /nologo /W4 /MTd  
 #include <unordered_map>  

@@ -28,7 +28,6 @@ f1_keywords:
   - "aligned_realloc"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "aligned_realloc function"
   - "_aligned_realloc function"

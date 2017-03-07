@@ -27,7 +27,6 @@ f1_keywords:
   - "_ASSERT_EXPR"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "debugging [CRT], using macros"
   - "_ASSERTE macro"
@@ -92,9 +91,7 @@ _ASSERTE(
   
  Unless you specify otherwise with the [_CrtSetReportMode](../../c-runtime-library/reference/crtsetreportmode.md) and [_CrtSetReportFile](../../c-runtime-library/reference/crtsetreportfile.md) functions, messages appear in a pop-up dialog box equivalent to setting:  
   
-```c  
-_CrtSetReportMode(CRT_ASSERT, _CRTDBG_MODE_WNDW);  
-```  
+`_CrtSetReportMode(CRT_ASSERT, _CRTDBG_MODE_WNDW);`  
   
  `_CrtDbgReportW` generates the debug report and determines its destination or destinations, based on the current report mode or modes and file defined for the `_CRT_ASSERT` report type. By default, assertion failures and errors are directed to a debug message window. The [_CrtSetReportMode](../../c-runtime-library/reference/crtsetreportmode.md) and [_CrtSetReportFile](../../c-runtime-library/reference/crtsetreportfile.md) functions are used to define the destinations for each report type.  
   
@@ -115,7 +112,7 @@ _CrtSetReportMode(CRT_ASSERT, _CRTDBG_MODE_WNDW);
 ## Example  
  In this program, calls are made to the `_ASSERT` and `_ASSERTE` macros to test the condition `string1 == string2`. If the condition fails, these macros print a diagnostic message. The `_RPTn` and `_RPTFn` group of macros is also exercised in this program, as an alternative to the `printf` function.  
   
-```  
+```C  
 // crt_ASSERT_macro.c  
 // compile with: /D_DEBUG /MTd /Od /Zi /link /verbose:lib /debug  
 //  

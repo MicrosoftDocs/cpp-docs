@@ -12,7 +12,6 @@ f1_keywords:
   - "c.math"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "floating-point numbers, math routines"
   - "math routines"
@@ -147,7 +146,7 @@ The Microsoft C Runtime library (CRT) provides many floating point math library 
   
  [fmax, fmaxf, fmaxl](../c-runtime-library/reference/fmax-fmaxf-fmaxl.md)  
   
- [fmin, fminf, fminl](../c-runtime-library/reference/fmin-fminf-fminl2.md)  
+ [fmin, fminf, fminl](../c-runtime-library/reference/fmin-fminf-fminl.md)  
   
  [fmod, fmodf](../c-runtime-library/reference/fmod-fmodf.md)  
   

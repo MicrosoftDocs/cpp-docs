@@ -28,7 +28,6 @@ f1_keywords:
   - "aligned_offset_malloc"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_aligned_offset_malloc function"
   - "aligned_offset_malloc function"

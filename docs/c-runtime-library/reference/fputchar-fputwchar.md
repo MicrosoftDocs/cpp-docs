@@ -33,7 +33,6 @@ f1_keywords:
   - "_fputchar"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "fputchar function"
   - "standard output, writing to"
@@ -86,7 +85,7 @@ wint_t _fputwchar(
  For more information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- Both of these functions writes the single character `c` to `stdout` and advances the indicator as appropriate. `_fputchar` is equivalent to `fputc(``stdout )`. It is also equivalent to `putchar`, but implemented only as a function, rather than as a function and a macro. Unlike `fputc` and `putchar`, these functions are not compatible with the ANSI standard.  
+ Both of these functions writes the single character `c` to `stdout` and advances the indicator as appropriate. `_fputchar` is equivalent to `fputc( stdout )`. It is also equivalent to `putchar`, but implemented only as a function, rather than as a function and a macro. Unlike `fputc` and `putchar`, these functions are not compatible with the ANSI standard.  
   
 ### Generic-Text Routine Mappings  
   

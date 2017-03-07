@@ -12,7 +12,6 @@ f1_keywords:
   - "no_implementation"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "no_implementation attribute"
 ms.assetid: bdc67785-e131-409c-87bc-f4d2f4abb07b

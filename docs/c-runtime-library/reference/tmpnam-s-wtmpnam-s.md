@@ -30,7 +30,6 @@ f1_keywords:
   - "L_tmpnam_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tmpnam_s function"
   - "file names [C++], creating temporary"

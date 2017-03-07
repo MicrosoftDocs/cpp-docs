@@ -28,7 +28,6 @@ f1_keywords:
   - "wcsupr"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "strupr function"
   - "wcsupr function"

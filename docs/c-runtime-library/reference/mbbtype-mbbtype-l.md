@@ -31,7 +31,6 @@ f1_keywords:
   - "_mbbtype"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_mbbtype function"
   - "_mbbtype_l function"

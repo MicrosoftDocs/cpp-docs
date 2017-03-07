@@ -34,7 +34,6 @@ f1_keywords:
   - "complex/casinf"
   - "complex/casinl"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "casin function"

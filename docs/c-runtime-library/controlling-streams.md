@@ -12,7 +12,6 @@ f1_keywords:
   - "Controlling Streams"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "streams, controlling"
   - "controlling streams"

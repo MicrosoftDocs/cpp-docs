@@ -13,7 +13,6 @@ f1_keywords:
   - "crtDbgFlag"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "memory allocation, tracking flag"
   - "crtDbgFlag constant"

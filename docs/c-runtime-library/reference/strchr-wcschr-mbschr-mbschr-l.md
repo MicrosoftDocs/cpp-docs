@@ -35,7 +35,6 @@ f1_keywords:
   - "_mbschr"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "strings [C++], searching"
   - "mbschr function"

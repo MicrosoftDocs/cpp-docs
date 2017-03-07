@@ -13,7 +13,6 @@ f1_keywords:
   - "SIG_DFL"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "signal action constants"
   - "SIG_IGN constant"

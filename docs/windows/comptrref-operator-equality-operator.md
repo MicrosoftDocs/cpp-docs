@@ -39,7 +39,6 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax  
   
 ```cpp  
-  
 bool operator==(  
    const Details::ComPtrRef<ComPtr<T>>& a,  
    const Details::ComPtrRef<ComPtr<U>>& b  

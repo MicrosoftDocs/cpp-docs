@@ -87,7 +87,7 @@ void __stdcall CMyClass::mymethod() { return; }
 ## Example  
  In the following example, use of __**stdcall** results in all `WINAPI` function types being handled as a standard call:  
   
-```c  
+```cpp  
 // Example of the __stdcall keyword  
 #define WINAPI __stdcall  
 // Example of the __stdcall keyword on function pointer  

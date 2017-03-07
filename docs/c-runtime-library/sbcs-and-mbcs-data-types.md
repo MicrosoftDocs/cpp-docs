@@ -13,7 +13,6 @@ f1_keywords:
   - "SBCS"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "SBCS and MBCS data types"
   - "data types [C], MBCS and SBCS"

@@ -60,7 +60,6 @@ C++ is one of the most widely used programming languages in the world. Well-writ
  The C++ language itself has also evolved. Compare the following code snippets. This one shows how things used to be in C++:  
   
 ```cpp  
-  
 // circle and shape are user-defined types  
 circle* p = new circle( 42 );   
 vector<shape*> v = load_shapes();  
@@ -82,7 +81,6 @@ delete p;
  Here's how the same thing is accomplished in modern C++:  
   
 ```cpp  
-  
 #include <memory>  
 #include <vector>  
 // ...  

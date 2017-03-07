@@ -26,7 +26,6 @@ f1_keywords:
   - "execl"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "execl function"
 ms.assetid: 10f24c52-7ff5-4a61-abcb-fce6d9553f23

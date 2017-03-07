@@ -27,7 +27,6 @@ f1_keywords:
   - "_ecvt"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_ecvt function"
   - "numbers, converting"

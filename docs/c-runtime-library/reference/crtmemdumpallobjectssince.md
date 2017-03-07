@@ -27,7 +27,6 @@ f1_keywords:
   - "_CrtMemDumpAllObjectsSince"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_CrtMemDumpAllObjectsSince function"
   - "CrtMemDumpAllObjectsSince function"

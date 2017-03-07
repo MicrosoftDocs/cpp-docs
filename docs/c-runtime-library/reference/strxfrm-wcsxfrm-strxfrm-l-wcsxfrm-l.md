@@ -32,7 +32,6 @@ f1_keywords:
   - "wcsxfrm"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "strxfrm_l function"
   - "_tcsxfrm function"

@@ -32,7 +32,6 @@ f1_keywords:
   - "powf"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "exponential calculations"
   - "powl function"

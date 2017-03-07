@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "registers"
 ms.assetid: f6654e53-742c-4a30-8620-1a4d436a6ae4

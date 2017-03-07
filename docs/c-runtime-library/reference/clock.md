@@ -27,7 +27,6 @@ f1_keywords:
   - "clock"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "processor time used, calculating"
   - "time, calculating processor"

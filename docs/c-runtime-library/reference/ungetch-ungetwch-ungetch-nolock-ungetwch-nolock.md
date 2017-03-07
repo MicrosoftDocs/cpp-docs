@@ -39,7 +39,6 @@ f1_keywords:
   - "_ungetwch_nolock"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_ungetch function"
   - "ungetwch function"

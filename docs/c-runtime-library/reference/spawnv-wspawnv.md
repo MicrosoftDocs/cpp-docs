@@ -30,7 +30,6 @@ f1_keywords:
   - "_wspawnv"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wspawnv function"
   - "processes, creating"

@@ -12,7 +12,6 @@ f1_keywords:
   - "##"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "preprocessor, operators"
   - "## preprocessor operator"

@@ -12,7 +12,6 @@ f1_keywords:
   - "Byte and Wide Streams"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "byte streams"
   - "wide streams"

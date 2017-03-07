@@ -34,7 +34,6 @@ f1_keywords:
   - "_mkgmtime"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "mkgmtime32 function"
   - "time functions"

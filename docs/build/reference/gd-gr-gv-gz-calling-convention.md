@@ -72,7 +72,7 @@ These options determine the order in which function arguments are pushed onto th
   
  Functions that take a variable number of arguments must be marked `__cdecl`.  
   
- **/Gd**, **/Gr**, **/Gv** and **/Gz** are not compatible with [/clr:safe](../../build/reference/clr-common-language-runtime-compilation.md) or **/clr:pure**.  
+ **/Gd**, **/Gr**, **/Gv** and **/Gz** are not compatible with [/clr:safe](../../build/reference/clr-common-language-runtime-compilation.md) or **/clr:pure**. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
   
 > [!NOTE]
 >  By default for x86 processors, C++ member functions use [__thiscall](../../cpp/thiscall.md).  
@@ -96,7 +96,7 @@ These options determine the order in which function arguments are pushed onto th
   
  For C, the `__fastcall` naming convention uses the function name preceded by an at sign (`@`) followed by the size of the function's arguments in bytes. No case translation is done. The compiler uses this template for the naming convention:  
   
-```c  
+```  
 @function_name@number  
 ```  
   
@@ -107,7 +107,7 @@ These options determine the order in which function arguments are pushed onto th
   
  For C, the `__stdcall` naming convention uses the function name preceded by an underscore ( `_` ) and followed by an at sign (@) and the size of the function's arguments in bytes. No case translation is performed. The compiler uses this template for the naming convention:  
   
-```c  
+```  
 _functionname@number  
 ```  
   
@@ -116,7 +116,7 @@ _functionname@number
   
  For C, the `__vectorcall` naming convention uses the function name followed by two at signs (@@) and the size of the function's arguments in bytes. No case translation is performed. The compiler uses this template for the naming convention:  
   
-```c  
+```  
 functionname@@number  
 ```  
   

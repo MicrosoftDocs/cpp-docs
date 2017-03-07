@@ -30,7 +30,6 @@ f1_keywords:
   - "_vtprintf"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "vwprintf function"
   - "_vwprintf_l function"

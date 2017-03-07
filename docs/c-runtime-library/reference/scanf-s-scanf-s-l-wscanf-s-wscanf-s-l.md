@@ -34,7 +34,6 @@ f1_keywords:
   - "_scanf_s_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "reading data [C++], from input streams"
   - "buffers [C++], buffer overruns"

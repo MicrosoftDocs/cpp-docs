@@ -27,7 +27,6 @@ f1_keywords:
   - "_CrtIsValidHeapPointer"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_CrtIsValidHeapPointer function"
   - "CrtIsValidHeapPointer function"

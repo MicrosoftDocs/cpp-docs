@@ -1,5 +1,5 @@
 ---
-title: "#if, #elif, #else, and #endif Directives (C-C++) | Microsoft Docs"
+title: "#if, #elif, #else, and #endif Directives (C/C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -16,7 +16,6 @@ f1_keywords:
   - "Defined"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "#elif directive"
   - "conditional compilation, directives"

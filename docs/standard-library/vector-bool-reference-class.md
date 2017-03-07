@@ -42,10 +42,10 @@ The `vector<bool>::reference` class is a proxy class provided by the [vector\<bo
  A simulated reference is required because C++ does not natively allow direct references to bits. `vector<bool>` uses only one bit per element, which can be referenced by using this proxy class. However, the reference simulation is not complete because certain assignments are not valid. For example, because the address of the `vector<bool>::reference` object cannot be taken, the following code that uses [vector\<bool>::operator&#91;&#93;](http://msdn.microsoft.com/Library/97738633-690d-4069-b2d9-8c54104fbfdd) is not correct:  
   
 ```cpp  
-    vector<bool> vb;  
-    // ...  
-    bool* pb = &vb[1]; // conversion error - do not use  
-    bool& refb = vb[1];   // conversion error - do not use  
+vector<bool> vb;  
+// ...  
+bool* pb = &vb[1]; // conversion error - do not use  
+bool& refb = vb[1];   // conversion error - do not use  
 ```  
   
 ### Member Functions  

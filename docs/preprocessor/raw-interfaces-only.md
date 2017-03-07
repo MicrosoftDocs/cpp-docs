@@ -12,7 +12,6 @@ f1_keywords:
   - "raw_interfaces_only"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "raw_interfaces_only attribute"
 ms.assetid: 87056c6d-3f34-4248-af58-f5775a35bfb7

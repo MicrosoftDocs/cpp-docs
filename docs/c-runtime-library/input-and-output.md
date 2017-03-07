@@ -12,7 +12,6 @@ f1_keywords:
   - "c.io"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "input routines"
   - "I/O [CRT]"

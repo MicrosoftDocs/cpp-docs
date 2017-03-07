@@ -28,7 +28,6 @@ f1_keywords:
   - "_pipe"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "pipes, creating"
   - "_pipe function"
@@ -64,11 +63,10 @@ Creates a pipe for reading and writing.
 ## Syntax  
   
 ```  
-  
-      int _pipe(  
-int *pfds,  
-unsigned int psize,  
-int textmode   
+int _pipe(  
+   int *pfds,  
+   unsigned int psize,  
+   int textmode   
 );  
 ```  
   
@@ -127,9 +125,8 @@ int textmode
   
 ## Example 1  
   
-```  
-  
-      // crt_pipe.c  
+```C  
+// crt_pipe.c  
 /* This program uses the _pipe function to pass streams of  
  * text to spawned processes.  
  */  
@@ -212,9 +209,7 @@ int main( int argc, char *argv[] )
 }  
 ```  
   
-## Sample Output  
-  
-```  
+```Output  
 Son, what is the square root of 1000?  
 Son, what is the square root of 2000?  
 Son, what iDad, the square root of 1000 is 31.62.  
@@ -236,7 +231,7 @@ Dad, the square root of 8000 is 89.44.
 ## Example 2  
  This is a basic filter application. It spawns the application crt_pipe_beeper after it creates a pipe that directs the spawned application's stdout to the filter. The filter removes ASCII 7 (beep) characters.  
   
-```  
+```C  
 // crt_pipe_beeper.c  
   
 #include <stdio.h>  
@@ -255,7 +250,7 @@ int main()
   
  The actual filter application:  
   
-```  
+```C  
 // crt_pipe_BeepFilter.C  
 // arguments: crt_pipe_beeper.exe  
   
@@ -348,9 +343,7 @@ int main(int argc, char** argv)
 }  
 ```  
   
-## Output  
-  
-```  
+```Output  
 This is speaker beep number 1...  
 This is speaker beep number 2...  
 This is speaker beep number 3...  
@@ -362,9 +355,6 @@ This is speaker beep number 8...
 This is speaker beep number 9...  
 This is speaker beep number 10...  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   

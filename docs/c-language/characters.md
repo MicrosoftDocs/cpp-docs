@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 ms.assetid: 4f42680f-42fd-4356-adae-735dc18c6727
 caps.latest.revision: 8
 author: "mikeblome"

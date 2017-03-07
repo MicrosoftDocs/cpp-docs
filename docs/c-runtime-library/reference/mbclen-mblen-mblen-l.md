@@ -36,7 +36,6 @@ f1_keywords:
   - "mbclen"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tclen function"
   - "_mblen_l function"

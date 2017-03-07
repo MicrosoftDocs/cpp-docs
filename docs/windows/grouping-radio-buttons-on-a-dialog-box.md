@@ -12,7 +12,6 @@ f1_keywords:
   - "vc.editors.dialog.grouping"
 dev_langs: 
   - "C++"
-  - "C++"
 helpviewer_keywords: 
   - "member variables, adding to radio button groups"
   - "variables, dialog box control member variables"

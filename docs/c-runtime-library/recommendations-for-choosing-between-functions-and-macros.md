@@ -12,7 +12,6 @@ f1_keywords:
   - "c.functions"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "functions [CRT], vs. macros"
   - "macros, vs. functions"

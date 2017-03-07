@@ -28,7 +28,6 @@ f1_keywords:
   - "set_doserrno"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_set_doserrno function"
   - "doserrno global variable"

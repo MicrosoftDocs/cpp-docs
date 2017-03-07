@@ -12,7 +12,6 @@ f1_keywords:
   - "EOF"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "EOF function"
   - "WEOF function"

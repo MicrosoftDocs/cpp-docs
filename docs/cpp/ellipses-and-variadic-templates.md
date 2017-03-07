@@ -62,7 +62,6 @@ template<typename ... Arguments> class classname;
  In the preceding examples, `Arguments` is a parameter pack. The class `classname` can accept a variable number of arguments, as in these examples:  
   
 ```cpp  
-  
 template<typename... Arguments> class vtclass;  
   
 vtclass< > vtinstance1;  
@@ -132,7 +131,6 @@ void tfunc(const Arguments&... args)
 -   In a parameter-declaration-clause (`func(parameter-list)`), a "top-level" ellipsis introduces a function parameter pack, and the ellipsis positioning is important:  
   
     ```cpp  
-  
     // v1 is NOT a function parameter pack:  
     template <typename... Types> void func1(std::vector<Types...> v1);   
   

@@ -27,7 +27,6 @@ f1_keywords:
   - "mbrtowc"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "mbrtowc function"
 ms.assetid: a1e87fcc-6de0-4ca1-bf26-508d28490286

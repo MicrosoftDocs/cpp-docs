@@ -56,9 +56,7 @@ Once you have installed Visual Studio side-by-side with your older version, open
   
 Visual Studio is persistent about upgrading your project. To avoid seeing the upgrade dialog every time you load the project, you can define the following property in your projects, or in the .props or .targets files they import:  
   
-```
-<VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>  
-```  
+`<VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>`  
   
 You must remove this property when you want to upgrade your projects.  
   
@@ -84,13 +82,15 @@ You may have an old Visual C++ project that you can't or don't want to upgrade, 
   
 Here are some of the Visual Studio downloads you might need:  
   
-  - [Microsoft Visual Studio 2008 Service Pack 1](https://www.microsoft.com/en-us/download/details.aspx?id=10986)  
-  - [Microsoft Visual Studio 2010 Service Pack 1](https://www.microsoft.com/en-gb/download/details.aspx?id=23691)  
-  - [Microsoft Visual Studio Express 2012 for Windows Desktop
-](https://www.microsoft.com/en-us/download/details.aspx?id=34673)  
-  - [Microsoft Visual Studio Express 2013 for Windows Desktop with Update 5
-](https://www.microsoft.com/en-us/download/details.aspx?id=48131)  
   - [Microsoft Visual Studio Community 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48146)  
+  - [Microsoft Visual Studio Express 2013 for Windows Desktop with Update 5](https://www.microsoft.com/en-us/download/details.aspx?id=48131)  
+  - [Microsoft Visual Studio Express 2012 for Windows Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=34673)  
+  - [Visual Studio 2012 Update 5](https://www.microsoft.com/en-us/download/details.aspx?id=34673)  
+  - [Microsoft Visual C++ 2010 Express (Web Installer)](https://download.microsoft.com/download/1/D/9/1D9A6C0E-FC89-43EE-9658-B9F0E3A76983/vc_web.exe)  
+  - [Microsoft Visual Studio 2010 Service Pack 1](https://www.microsoft.com/en-us/download/details.aspx?id=23691)  
+  - [Microsoft Visual C++ 2008 Express with SP1 (Web Installer)](https://go.microsoft.com/?linkid=7729279)  
+  
+When these products are installed, the 
   
 ## See Also  
  [Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)  

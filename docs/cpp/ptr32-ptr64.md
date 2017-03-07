@@ -56,7 +56,7 @@ int * __ptr64 p64;
  On a 32-bit system, a pointer declared with `__ptr64` is truncated to a 32-bit pointer. On a 64-bit system, a pointer declared with `__ptr32` is coerced to a 64-bit pointer.  
   
 > [!NOTE]
->  You cannot use `__ptr32` or `__ptr64` when compiling with **/clr:pure**. Otherwise, `Compiler Error C2472` will be generated.  
+>  You cannot use `__ptr32` or `__ptr64` when compiling with **/clr:pure**. Otherwise, `Compiler Error C2472` will be generated. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
   
 ## Example  
  The following example shows how to declare and allocate pointers with the `__ptr32` and `__ptr64` keywords.  

@@ -37,7 +37,6 @@ f1_keywords:
   - "coshf"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "cosines"
   - "cosl function"

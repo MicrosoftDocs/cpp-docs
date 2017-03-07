@@ -27,7 +27,6 @@ f1_keywords:
   - "_CrtGetAllocHook"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_CrtGetAllocHook function"
   - "CrtGetAllocHook function"

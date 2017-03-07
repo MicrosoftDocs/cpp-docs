@@ -32,7 +32,6 @@ f1_keywords:
   - "isspace"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "iswspace function"
   - "isspace function"

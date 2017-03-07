@@ -27,7 +27,6 @@ f1_keywords:
   - "set_terminate"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "set_terminate function"
   - "terminate function"
@@ -85,8 +84,6 @@ typedef void ( *terminate_function )( );
 >  The `set_terminate` function only works outside the debugger.  
   
  There is a single `set_terminate` handler for all dynamically linked DLLs or EXEs; even if you call `set_terminate` your handler may be replaced by another, or you may be replacing a handler set by another DLL or EXE.  
-  
- This function is not supported under **/clr:pure**.  
   
 ## Requirements  
   

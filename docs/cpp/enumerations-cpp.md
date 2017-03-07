@@ -109,7 +109,6 @@ namespace CardGame_NonScoped
  Every name in an enumeration is assigned an integral value that corresponds to its place in the order of the values in the enumeration. By default, the first value is assigned 0, the next one is assigned 1, and so on, but you can explicitly set the value of an enumerator, as shown here:  
   
 ```cpp  
-  
 enum Suit { Diamonds = 1, Hearts, Clubs, Spades };  
   
 ```  

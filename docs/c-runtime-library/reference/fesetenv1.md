@@ -28,7 +28,6 @@ f1_keywords:
   - "fesetenv"
   - "fenv/fesetenv"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "fesetenv function"

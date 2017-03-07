@@ -12,7 +12,6 @@ f1_keywords:
   - "c.mappings"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_tWinMain"
   - "TCHAR.H data types, list of routine mappings"

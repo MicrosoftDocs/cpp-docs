@@ -16,7 +16,6 @@ f1_keywords:
   - "_LK_UNLCK"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "LK_UNLCK constant"
   - "LK_NBRLCK constant"

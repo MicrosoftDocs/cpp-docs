@@ -26,7 +26,6 @@ f1_keywords:
   - "itoa"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "itoa function"
 ms.assetid: 1a824780-f3fc-48d4-86c4-d8c866eb7d87

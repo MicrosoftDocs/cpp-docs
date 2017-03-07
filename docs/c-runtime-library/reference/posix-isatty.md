@@ -26,7 +26,6 @@ f1_keywords:
   - "isatty"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "isatty function"
 ms.assetid: 610d0b09-a1db-41ef-9f45-a2c6076b4683

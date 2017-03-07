@@ -37,7 +37,6 @@ f1_keywords:
   - "_timespec32"
   - "_timespec64"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "timespec_get function"

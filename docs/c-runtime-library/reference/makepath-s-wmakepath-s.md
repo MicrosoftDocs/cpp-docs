@@ -31,7 +31,6 @@ f1_keywords:
   - "wmakepath_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_makepath_s function"
   - "wmakepath_s function"

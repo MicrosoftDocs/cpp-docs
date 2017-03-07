@@ -34,7 +34,6 @@ f1_keywords:
   - "complex/catanf"
   - "complex/catanl"
 dev_langs: 
-  - "C"
   - "C++"
 helpviewer_keywords: 
   - "catan function"

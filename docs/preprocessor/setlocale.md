@@ -13,7 +13,6 @@ f1_keywords:
   - "vc-pragma.setlocale"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "pragmas, setlocale"
   - "setlocale pragma"

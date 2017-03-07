@@ -228,7 +228,7 @@ The second constructor constructs an object whose stored parameters are initiali
   
 ##  <a name="uniform_int_distribution__param_type"></a>  uniform_int_distribution::param_type  
  Stores the parameters of the distribution.  
-```cpp
+```cpp  
 struct param_type {  
    typedef uniform_int_distribution<result_type> distribution_type;  
    param_type(

@@ -39,7 +39,7 @@ translation.priority.ht:
   
  A virtual function with [__clrcall](../../cpp/clrcall.md) calling convention in a native type causes the creation of a per application domain vtable. Such a variable may not correct correctly when used in multiple application domains.  
   
- You can resolve this warning by compiling with **/clr:pure**, which makes global variables per appdomain by default, or by explicitly marking the variable `__declspec(appdomain)`.  
+ You can resolve this warning by explicitly marking the variable `__declspec(appdomain)`. In versions of Visual Studio before Visual Studio 2017, you can resolve this warning by compiling with **/clr:pure**, which makes global variables per appdomain by default.  
   
  For more information, see [appdomain](../../cpp/appdomain.md) and [Application Domains and Visual C++](../../dotnet/application-domains-and-visual-cpp.md).  
   

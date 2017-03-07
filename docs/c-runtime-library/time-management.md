@@ -12,7 +12,6 @@ f1_keywords:
   - "c.memory"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "dates, run-time library members"
   - "time, time management"

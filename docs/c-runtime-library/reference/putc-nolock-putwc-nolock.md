@@ -33,7 +33,6 @@ f1_keywords:
   - "putc_nolock"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "puttc_nolock function"
   - "putc_nolock function"

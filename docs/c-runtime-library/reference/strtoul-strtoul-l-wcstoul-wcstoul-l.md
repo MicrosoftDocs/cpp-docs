@@ -32,7 +32,6 @@ f1_keywords:
   - "wcstoul"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_wcstoul_l function"
   - "_tcstoul function"

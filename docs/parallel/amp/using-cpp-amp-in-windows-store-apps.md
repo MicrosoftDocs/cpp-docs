@@ -39,28 +39,21 @@ You can use C++ AMP (C++ Accelerated Massive Parallelism) in your [!INCLUDE[win8
  In a C++ AMP kernel, to access data that’s stored in this way, just wrap the `std::vector` or array storage in a `concurrency::array_view` and then use the array view in a `concurrency::parallel_for_each` loop:  
   
 ```cpp  
- *// simple vector addition example  
+// simple vector addition example  
 std::vector<int> data0(1024, 1);
-
 std::vector<int> data1(1024, 2);
-
 std::vector<int> data_out(data0.size(), 0);
-
- 
+  
 concurrency::array_view<int, 1> av0(data0.size(), data0);
-
 concurrency::array_view<int, 1> av1(data1.size(), data1);
-
 concurrency::array_view<int, 1> av2(data_out.size(), data2);
-
- 
+  
 av2.discard_data();
-
- 
+  
 concurrency::parallel_for_each(av0.extent, [=](concurrency::index<1> idx) restrict(amp)  
-{  
-    av2[idx] = av0[idx] + av1[idx];  
-});
+    {  
+        av2[idx] = av0[idx] + av1[idx];  
+    });
 ```  
   
 ## Marshaling Windows Runtime types  
@@ -72,8 +65,6 @@ concurrency::parallel_for_each(av0.extent, [=](concurrency::index<1> idx) restri
 ```cpp  
 Platform::Array<float>^ arr; // Assume that this was returned by a Windows Runtime API  
 concurrency::array_view<float, 1> av(arr->Length, &arr->get(0));
-
- 
 ```  
   
  If T is not a POD type, use the technique that's described in the following section to use the data with C++ AMP.  
@@ -87,63 +78,55 @@ concurrency::array_view<float, 1> av(arr->Length, &arr->get(0));
 // pixel_color.h  
 ref class pixel_color sealed  
 {  
-    public: 
+public: 
     pixel_color(Platform::String^ color_name, int red, int green, int blue)   
- {  
-    name = color_name;  
-    r = red;  
-    g = green;  
-    b = blue;  
- }  
+    {  
+        name = color_name;  
+        r = red;  
+        g = green;  
+        b = blue;  
+    }  
  
     property Platform::String^ name;   
     property int r;  
     property int g;  
-..property int b;  
+    property int b;  
 };  
- 
+  
 // Some other file  
+  
 std::vector<pixel_color^> pixels (256);
-
- 
-for(pixel_color ^pixel : pixels)   
+  
+for (pixel_color ^pixel : pixels)   
 {  
     pixels.push_back(ref new pixel_color("blue", 0, 0, 255));
-
 }  
+  
 // Create the accelerators  
 auto cpuAccelerator = concurrency::accelerator(concurrency::accelerator::cpu_accelerator);
-
 auto devAccelerator = concurrency::accelerator(concurrency::accelerator::default_accelerator);
-
- 
+  
 // Create the staging arrays  
 concurrency::array<float, 1> red_vec(256, cpuAccelerator.default_view, devAccelerator.default_view);
-
 concurrency::array<float, 1>  blue_vec(256, cpuAccelerator.default_view, devAccelerator.default_view);
-
- 
+  
 // Extract data from the complex array of structs into staging arrays.  
 concurrency::parallel_for(0, 256, [&](int i)  
-{   
-    red_vec[i] = pixels[i]->r;blue_vec[i] = pixels[i]->b;  
-});
-
- 
+    {   
+        red_vec[i] = pixels[i]->r;  
+        blue_vec[i] = pixels[i]->b;  
+    });
+  
 // Array views are still used to copy data to the accelerator  
 concurrency::array_view<float, 1> av_red(red_vec);
-
 concurrency::array_view<float, 1> av_blue(blue_vec);
-
- 
+  
 // Change all pixels from blue to red.  
 concurrency::parallel_for_each(av_red.extent, [=](index<1> idx) restrict(amp)  
-{  
-    av_red[idx] = 255;  
-    av_blue[idx] = 0;  
-});
-
- 
+    {  
+        av_red[idx] = 255;  
+        av_blue[idx] = 0;  
+    });
 ```  
   
 ## See Also  

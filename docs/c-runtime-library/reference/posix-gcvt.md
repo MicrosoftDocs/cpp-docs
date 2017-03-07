@@ -26,7 +26,6 @@ f1_keywords:
   - "gcvt"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "gcvt function"
 ms.assetid: 913478fd-ef22-4dee-b558-ff2bd6d72f3d

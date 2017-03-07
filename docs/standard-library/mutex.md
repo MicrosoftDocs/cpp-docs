@@ -36,7 +36,7 @@ translation.priority.ht:
 Include the standard header \<mutex> to define the classes `mutex`, `recursive_mutex`, `timed_mutex`, and `recursive_timed_mutex`; the templates `lock_guard` and `unique_lock`; and supporting types and functions that define mutual-exclusion code regions.  
   
 > [!WARNING]
->  The C++ Standard Library synchronization types in Visual Studio 2015 are based on Windows synchronization primitives and no longer use ConcRT (except when the target platform is Windows XP). The types defined in \<mutex> should not be used with any ConcRT types or functions.  
+>  Beginning in Visual Studio 2015, the C++ Standard Library synchronization types are based on Windows synchronization primitives and no longer use ConcRT (except when the target platform is Windows XP). The types defined in \<mutex> should not be used with any ConcRT types or functions.  
   
 ## Syntax  
   
@@ -47,7 +47,7 @@ Include the standard header \<mutex> to define the classes `mutex`, `recursive_m
 ## Remarks  
   
 > [!NOTE]
->  In code that is compiled by using **/clr** or **/clr:pure**, this header is blocked.  
+>  In code that is compiled by using **/clr**, this header is blocked.  
   
  The classes `mutex` and `recursive_mutex` are *mutex types*. A mutex type has a default constructor and a destructor that does not throw exceptions. These objects have methods that provide mutual exclusion when multiple threads try to lock the same object. Specifically, a mutex type contains the methods `lock`, `try_lock`, and `unlock`:  
   

@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C++"
 helpviewer_keywords: 
   - "controls [C++], aligning"
 ms.assetid: a4f49a73-4a17-44b3-8568-aa35f646b5cf

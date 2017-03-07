@@ -26,7 +26,6 @@ f1_keywords:
   - "mbsinit"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "mbsinit function"
 ms.assetid: 4618555b-baaa-4d04-93fa-36abae411034

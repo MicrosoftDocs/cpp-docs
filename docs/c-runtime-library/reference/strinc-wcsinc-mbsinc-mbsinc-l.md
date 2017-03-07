@@ -37,7 +37,6 @@ f1_keywords:
   - "_mbsinc_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_mbsinc function"
   - "wcsinc function"

@@ -29,7 +29,6 @@ f1_keywords:
   - "wmemcmp"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wmemcmp function"
   - "memcmp function"
@@ -59,8 +58,7 @@ Compares characters in two buffers.
 ## Syntax  
   
 ```  
-  
-      int memcmp(  
+int memcmp(  
    const void *buf1,  
    const void *buf2,  
    size_t count  
@@ -108,9 +106,8 @@ int wmemcmp(
   
 ## Example  
   
-```  
-  
-      // crt_memcmp.c  
+```C  
+// crt_memcmp.c  
 /* This program uses memcmp to compare  
  * the strings named first and second. If the first  
  * 19 bytes of the strings are equal, the program  
@@ -148,17 +145,12 @@ int main( void )
 }  
 ```  
   
-## Output  
-  
-```  
+```Output  
 Compare '1234567890123456789' to '1234567890123456789':  
 First is equal to second.  
 Compare '1,2' to '1,2':  
 int_arr1 is equal to int_arr2.  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)   

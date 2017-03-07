@@ -35,7 +35,6 @@ f1_keywords:
   - "_mbsrchr"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_mbsrchr function"
   - "tcsrchr function"

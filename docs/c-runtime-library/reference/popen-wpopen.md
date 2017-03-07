@@ -33,7 +33,6 @@ f1_keywords:
   - "_tpopen"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "tpopen function"
   - "pipes, creating"

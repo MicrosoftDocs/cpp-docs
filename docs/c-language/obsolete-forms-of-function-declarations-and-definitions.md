@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "old style function declarations"
 ms.assetid: 67c5038f-0529-4f29-9d0f-c27580977b50

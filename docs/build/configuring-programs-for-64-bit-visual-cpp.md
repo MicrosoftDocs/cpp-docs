@@ -54,7 +54,7 @@ This section contains topics about targeting 64-bit hardware with the Visual C++
   
  [align](../cpp/align-cpp.md)  
   
- [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) for information on how to run an application compiled with **/clr:safe** under WOW64 on a 64-bit operating system.  
+ [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md)  
   
  [/favor (Optimize for Architecture Specifics)](../build/reference/favor-optimize-for-architecture-specifics.md)  
   
@@ -62,7 +62,7 @@ This section contains topics about targeting 64-bit hardware with the Visual C++
   
  [MASM for x64 (ml64.exe)](../assembler/masm/masm-for-x64-ml64-exe.md)  
   
- [x64 Intrinsics](http://msdn.microsoft.com/en-us/5d1f5d3e-156e-4ebf-932e-fd09be7ced62)  
+ [x64 (amd64) Intrinsics List](../intrinsics/x64-amd64-intrinsics-list.md)  
   
 ## See Also  
- [(NOTINBUILD)Visual C++ Programming Methodologies](http://msdn.microsoft.com/en-us/0822f806-fa81-4b65-bf0f-1e2921f30c95)
+ [Building C/C++ Programs](building-c-cpp-programs.md)

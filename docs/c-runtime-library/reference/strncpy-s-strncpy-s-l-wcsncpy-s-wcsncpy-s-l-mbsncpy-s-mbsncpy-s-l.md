@@ -38,7 +38,6 @@ f1_keywords:
   - "_tcsncpy_s_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_wcsncpy_s_l function"
   - "_mbsnbcpy_s function"

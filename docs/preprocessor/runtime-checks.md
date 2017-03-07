@@ -13,7 +13,6 @@ f1_keywords:
   - "runtime_checks_CPP"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "runtime_checks pragma"
   - "pragmas, runtime_checks"

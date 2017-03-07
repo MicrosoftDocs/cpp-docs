@@ -24,7 +24,6 @@ f1_keywords:
   - "_heapadd"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_heapadd function"
   - "memory, adding to heaps"

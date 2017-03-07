@@ -590,14 +590,12 @@ In Visual C++ 2015 and later, ongoing improvements to compiler conformance can s
      Example (before)  
   
     ```cpp  
-  
     static inline void * __cdecl operator new(size_t cb, const std::nothrow_t&)  // error C2323  
     ```  
   
      Example (after)  
   
     ```cpp  
-  
     void * __cdecl operator new(size_t cb, const std::nothrow_t&)  // removed 'static inline'  
     ```  
   
@@ -1254,7 +1252,6 @@ In Visual C++ 2015 and later, ongoing improvements to compiler conformance can s
      Example (after)  
   
     ```cpp  
-  
               // forward declaration of CustomEnum removed  
   
     namespace A {  
@@ -1285,7 +1282,6 @@ In Visual C++ 2015 and later, ongoing improvements to compiler conformance can s
      Example (before)  
   
     ```cpp  
-  
               inline void* operator new(size_t sz)  // warning C4595  
     {  
       ...  
@@ -1295,7 +1291,6 @@ In Visual C++ 2015 and later, ongoing improvements to compiler conformance can s
      Example (after)  
   
     ```cpp  
-  
               void* operator new(size_t sz)  // removed inline  
     {  
       ...  
@@ -1393,7 +1388,6 @@ In Visual C++ 2015 and later, ongoing improvements to compiler conformance can s
      Example 1 (before)  
   
     ```cpp  
-  
               [uuid("594382D9-44B0-461A-8DE3-E06A3E73C5EB")]  
     class A {};  
     ```  
@@ -1401,7 +1395,6 @@ In Visual C++ 2015 and later, ongoing improvements to compiler conformance can s
      Example 1 (after)  
   
     ```cpp  
-  
     __declspec(uuid("594382D9-44B0-461A-8DE3-E06A3E73C5EB")) A {};  
   
     ```  

@@ -17,7 +17,6 @@ f1_keywords:
   - "_HEAPEND"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_HEAPOK constants"
   - "_HEAPEND constants"

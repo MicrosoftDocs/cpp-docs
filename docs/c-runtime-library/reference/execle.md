@@ -26,7 +26,6 @@ f1_keywords:
   - "execle"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "execle function"
 ms.assetid: 5985b615-fe90-4d1c-9c1d-13ec87c8e306

@@ -12,7 +12,6 @@ f1_keywords:
   - "c.debug"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "debugging [CRT], using macros"
   - "macros, debugging with"

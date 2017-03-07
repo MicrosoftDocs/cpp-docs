@@ -43,7 +43,6 @@ f1_keywords:
   - "ismbcl2_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_ismbcl0_l function"
   - "_ismbcl2 function"

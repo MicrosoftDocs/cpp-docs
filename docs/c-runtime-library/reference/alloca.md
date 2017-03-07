@@ -27,7 +27,6 @@ f1_keywords:
   - "alloca"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "memory allocation, stack"
   - "alloca function"

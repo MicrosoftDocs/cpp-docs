@@ -20,7 +20,7 @@ manager: "ghogen"
 ##  <a name="operator_gt__eq"></a>  operator&gt;=  
  Determines whether one `thread::id` object is greater than or equal to another.  
   
-```cpp
+```cpp  
 bool operator>= (
     thread::id Left,
     thread::id Right) noexcept
@@ -42,7 +42,7 @@ bool operator>= (
 ##  <a name="operator_gt_"></a>  operator&gt;  
  Determines whether one `thread::id` object is greater than another.  
   
-```cpp
+```cpp  
 bool operator> (
     thread::id Left,
     thread::id Right) noexcept
@@ -64,7 +64,7 @@ bool operator> (
 ##  <a name="operator_lt__eq"></a>  operator&lt;=  
  Determines whether one `thread::id` object is less than or equal to another.  
   
-```cpp
+```cpp  
 bool operator<= (
     thread::id Left,
     thread::id Right) noexcept
@@ -86,7 +86,7 @@ bool operator<= (
 ##  <a name="operator_lt_"></a>  operator&lt;  
  Determines whether one `thread::id` object is less than another.  
   
-```cpp
+```cpp  
 bool operator<(
     thread::id Left,
     thread::id Right) noexcept
@@ -110,7 +110,7 @@ bool operator<(
 ##  <a name="operator_neq"></a>  operator!=  
  Compares two `thread::id` objects for inequality.  
   
-```cpp
+```cpp  
 bool operator!= (
     thread::id Left,
     thread::id Right) noexcept
@@ -132,7 +132,7 @@ bool operator!= (
 ##  <a name="operator_eq_eq"></a>  operator==  
  Compares two `thread::id` objects for equality.  
   
-```cpp
+```cpp  
 bool operator== (
     thread::id Left,
     thread::id Right) noexcept
@@ -154,7 +154,7 @@ bool operator== (
 ##  <a name="operator_lt__lt_"></a>  operator&lt;&lt;  
  Inserts a text representation of a `thread::id` object into a stream.  
   
-```cpp
+```cpp  
 template <class Elem, class Tr>
 basic_ostream<Elem, Tr>& operator<<(
     basic_ostream<Elem, Tr>& Ostr, thread::id Id);

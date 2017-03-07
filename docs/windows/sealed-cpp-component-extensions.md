@@ -87,8 +87,7 @@ virtualreturn-typeidentifier() sealed {...};
  This following code example shows the effect of `sealed` on a virtual member.  
   
 ```cpp  
-  
-      // sealed_keyword.cpp  
+// sealed_keyword.cpp  
 // compile with: /clr  
 interface struct I1 {  
    virtual void f();  

@@ -18,7 +18,6 @@ f1_keywords:
   - "HUGE_VAL"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_HUGE constant"
   - "HUGE_VAL constant"

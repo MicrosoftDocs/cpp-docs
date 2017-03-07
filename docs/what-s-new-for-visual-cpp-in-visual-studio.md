@@ -60,8 +60,9 @@ This release brings several improvements in optimization, code generation, tools
 - Improved code generation of loops: Support for automatic vectorization of division of constant integers, better identification of memset patterns.
 - Improved code security: Improved emission of buffer overrun compiler diagnostics, and /guard:cf now guards switch statements that generate jump tables.
 - Versioning: The value of the built-in preprocessor macro _MSC_VER is now being monotonically updated at every Visual C++ toolset update. For more information, see [Visual C++ Compiler Version](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/visual-c-compiler-version/).
-- New toolset layout: The compiler and related build tools have a new location and directory structure on your development machine. The new layout enables side-by-side installations of multiple versions of the compiler. For more information, see [Compiler Tools Layout in Visual Studio “15”](https://blogs.msdn.microsoft.com/vcblog/2016/10/07/compiler-tools-layout-in-visual-studio-15/).
-- Improved diagnostics: The output window now shows the column where an error occurs. For more information, see [C++ compiler diagnostics improvements in VS “15” Preview 5](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/c-compiler-diagnostics-improvements-in-vs-15-rc/).
+- New toolset layout: The compiler and related build tools have a new location and directory structure on your development machine. The new layout enables side-by-side installations of multiple versions of the compiler. For more information, see [Compiler Tools Layout in Visual Studio "15"](https://blogs.msdn.microsoft.com/vcblog/2016/10/07/compiler-tools-layout-in-visual-studio-15/).
+- Improved diagnostics: The output window now shows the column where an error occurs. For more information, see [C++ compiler diagnostics improvements in VS "15" Preview 5](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/c-compiler-diagnostics-improvements-in-vs-15-rc/).
+- When using co-routines, the Experimental keyword "yield" (available under /await switch) has been removed. Your code should be updated to use the "co_yield” instead. For more information, see the Visual C++ Team blog. 
 
 ## C++ Libraries
 
@@ -86,6 +87,7 @@ This release brings several improvements in optimization, code generation, tools
 * To increase compiler throughput, C++ Standard Library headers now avoid including declarations for unnecessary compiler intrinsics.
 * Slightly improved compiler diagnostics for incorrect bind() calls.
 * Improved the performance of std::string/std::wstring's move constructors by more than 3x
+* For a complete list of STL improvment see the [STL Fixes In VS 2017 RTM](https://blogs.msdn.microsoft.com/vcblog/2017/02/06/stl-fixes-in-vs-2017-rtm/).
 
 ### Open source library support  
 Vcpkg is an open-source command line tool that greatly simplifies the process of acquiring and building open source C++ static libs and DLLS in Visual Studio. For more information, see [Vcpkg updates: Static linking is now available](https://blogs.msdn.microsoft.com/vcblog/2016/11/01/vcpkg-updates-static-linking-is-now-available/).
@@ -99,7 +101,12 @@ The CPPRestSDK, a cross-platform web API for C++, has been updated to version 2.
 * Un-suppress valid warning C4640 about thread safe init of local statics in atlstr.h
 * Thread Safe Initialization of local statics was automatically turned off in the XP toolset when [using ATL AND building a DLL]. This is no longer the case. You can add /Zc:threadSafeInit- in your Project settings if having thread safe initialization off is desired. 
 
+### Visual C++ Runtime
+* New header "cfguard.h" for Control Flow Guard symbols. 
+
 ## C++ IDE
+
+* Configuration change performance is now better for C++ native projects and much better for C++/CLI projects. When a solution configuration is activated for the first time it will now be faster and all subsequent activations of this solution configuration will be almost instantaneous.
 
 ### Intellisense  
 * The new SQLite-based database engine is now being used by default. This will speed up database operations like Go To Definition and Find All References, and will significantly improve initial solution parse time. The setting has been moved to Tools > Options > Text Editor > C/C++ > Advanced (it was formerly under ...C/C++ > Experimental).
@@ -120,29 +127,28 @@ The CPPRestSDK, a cross-platform web API for C++, has been updated to version 2.
 
 * Find All References (Shift+F12) now helps you get around easily, even in complex codebases. It provides advanced grouping, filtering, sorting, searching within results, and (for some languages) colorization, so you can get a clear understanding of your references. For C++, the new UI includes information about whether we are reading from or writing to a variable.
 
-* _**New in RC**_ The Dot-to-Arrow IntelliSense feature has been moved from experimental to advanced, and is now enabled by default. The editor features Expand Scopes and Expand Precedence have also been moved from experimental to advanced.
+* The Dot-to-Arrow IntelliSense feature has been moved from experimental to advanced, and is now enabled by default. The editor features Expand Scopes and Expand Precedence have also been moved from experimental to advanced.
 
-* _**New in RC**_ The experimental refactoring features Change Signature and Extract Function are now available by default.
+* The experimental refactoring features Change Signature and Extract Function are now available by default.
 
-* _**New in RC**_ We've enabled the new experimental feature for C++ projects ‘Faster project load’. The next time you open a C++ project it will load faster, and the time after that it will load really fast!
+* We've enabled the new experimental feature for C++ projects 'Faster project load'. The next time you open a C++ project it will load faster, and the time after that it will load really fast!
 
 Some of these features are common to other languages, and some are specific to C++. For more information about these new features, see [Announcing Visual Studio “15”](https://blogs.msdn.microsoft.com/visualstudio/2016/10/05/announcing-visual-studio-15-preview-5/). 
 
 ### Support for non-MSBuild projects with Open Folder
 Visual Studio 2017 introduces the “Open Folder” feature, which enables you to code, build and debug in a folder containing source code without the need to create any solutions or projects. This makes it a lot simpler to get started with Visual Studio even if your project is not an MSBuild-based project. With “Open Folder” you get access to the powerful code understanding, editing, building and debugging capabilities that Visual Studio already provides for MSBuild projects. For more information, see [Bring your C++ codebase to Visual Studio with “Open Folder”](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/bring-your-c-codebase-to-visual-studio-with-open-folder/).
 
-* _**New in RC**_ Improvements to the Open Folder experience.     
-You can customize the experience through these json files:
+* Improvements to the Open Folder experience. You can customize the experience through these json files:
   -	CppProperties.json to customize the IntelliSense and browsing experience.
   -	Tasks.json to customize the build steps. 
   -	Launch.json to customize the debugging experience.
 
 ### CMake support via Open Folder
-Visual Studio 2017 introduces support for using CMake projects without converting to MSBuild project files (.vcxproj). For more information, see [CMake support in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/cmake-support-in-visual-studio/). Opening CMake projects with “Open Folder” will automatically configure the environment for C++ editing, building and debugging.
+Visual Studio 2017 introduces support for using CMake projects without converting to MSBuild project files (.vcxproj). For more information, see [CMake support in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/cmake-support-in-visual-studio/) and [CMake support in Visual Studio 2017 – what’s new in the RC.2 update](https://blogs.msdn.microsoft.com/vcblog/2016/12/20/cmake-support-in-visual-studio-2017-whats-new-in-the-rc-update/). Opening CMake projects with “Open Folder” will automatically configure the environment for C++ editing, building and debugging.
 
-* _**New in RC**_ C++ IntelliSense will work without the need to create a CppProperties.json file in the root folder. Along with this, we've added a new dropdown to allow users to easily switch between configurations provided by CMake and CppProperties.json files.
+* C++ IntelliSense will work without the need to create a CppProperties.json file in the root folder. Along with this, we've added a new dropdown to allow users to easily switch between configurations provided by CMake and CppProperties.json files.
 
-* _**New in RC**_ Further configuration is supported via a CMakeSettings.json file that sits in the same folder as the CMakeLists.txt file.
+* Further configuration is supported via a CMakeSettings.json file that sits in the same folder as the CMakeLists.txt file.
 
   ![Cmake Open Folder](media/cmake_cpp.png "CMake Open Folder")
 
@@ -150,7 +156,9 @@ Visual Studio 2017 introduces support for using CMake projects without convertin
 ## C++ Installation Workloads 
 
 ### Windows Desktop Development with C++:  
-We now provide a more granular installation experience for installing the original C++ workload. We have added selectable components that enable you to install just the tools that you need.  Please note that the indicated installation sizes for the components listed in the installer UI are not accurate and underestimate the total size.  
+We now provide a more granular installation experience for installing the original C++ workload. We have added selectable components that enable you to install just the tools that you need.  Please note that the indicated installation sizes for the components listed in the installer UI are not accurate and underestimate the total size.
+
+To successfully create Win32 projects in the C++ desktop workload, you must install both a toolset and a Windows SDK. Installing the recommended (selected) components “VC++ 2017 v141 toolset (x86, x64)” and “Windows 10 SDK (10.0.14393)” will ensure this will work. If the necessary tools are not installed, projects will not be created successfully and the wizard will hang.
 
 ### Linux Development with C++:  
 The popular extension [Visual C++ for Linux Development](https://visualstudiogallery.msdn.microsoft.com/725025cf-7067-45c2-8d01-1e0fd359ae6e) is now part of Visual Studio. This installation provides everything you need to develop and debug C++ applications running on a Linux environment.  
@@ -162,7 +170,7 @@ Use the full power of C++ to build professional games powered by DirectX or Coco
 You can now create and debug mobile apps using Visual Studio that can target Android and iOS.  
 
 ### Universal Windows Apps:  
-C++ comes as an optional component for the Universal Windows App workload.  
+C++ comes as an optional component for the Universal Windows App workload.  Upgrading C++ projects currently must be done manually. If you open a v140-targeted UWP project in Visual Studio 2017, you need to select the v141 platform toolset in the project property pages if you do not have Visual Studio 2015 installed.
 
 ## New options for C++ on Universal Windows Platform
 You now have new options for writing and packaging C++ applications for the Universal Windows Platform and the Windows Store:

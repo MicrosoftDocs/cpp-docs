@@ -32,7 +32,6 @@ f1_keywords:
   - "_tstrdate_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "dates, copying"
   - "tstrdate_s function"

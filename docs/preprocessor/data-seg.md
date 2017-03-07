@@ -13,7 +13,6 @@ f1_keywords:
   - "vc-pragma.data_seg"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "data_seg pragma"
   - "pragmas, data_seg"

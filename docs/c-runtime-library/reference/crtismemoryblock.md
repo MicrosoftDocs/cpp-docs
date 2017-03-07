@@ -27,7 +27,6 @@ f1_keywords:
   - "_CrtIsMemoryBlock"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_CrtIsMemoryBlock function"
   - "CrtIsMemoryBlock function"

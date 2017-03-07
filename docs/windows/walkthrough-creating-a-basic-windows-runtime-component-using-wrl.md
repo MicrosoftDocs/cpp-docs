@@ -31,7 +31,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Walkthrough: Creating a Basic Windows Runtime Component Using WRL
-This document shows how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)]) to create a basic [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] component. The component adds two numbers and raises an event when the result is prime. This document also demonstrates how to use the component from a [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] app that uses JavaScript.  
+This document shows how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)]) to create a basic [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] component. The component adds two numbers and raises an event when the result is prime. This document also demonstrates how to use the component from a Universal Windows Platform app that uses JavaScript.  
   
 ## Prerequisites  
   
@@ -58,7 +58,7 @@ This document shows how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_
   
      We recommend that you use `_Out_` and other source annotation language (SAL) annotations to describe how a function uses its parameters. SAL annotations also describe return values. SAL annotations work with the [C/C++ Code Analysis tool](/visualstudio/code-quality/code-analysis-for-c-cpp-overview) to discover possible defects in C and C++ source code. Common coding errors that are reported by the tool include buffer overruns, uninitialized memory, null pointer dereferences, and memory and resource leaks.  
   
-### To use the component from a [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] app that uses JavaScript  
+### To use the component from a Universal Windows Platform app that uses JavaScript  
   
 1.  In Visual Studio, add a new JavaScript `Blank App` project to the `Contoso` solution. Name the project `CalculatorJS`.  
   

@@ -28,7 +28,6 @@ f1_keywords:
   - "_get_osfhandle"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "operating systems, getting file handles"
   - "get_osfhandle function"

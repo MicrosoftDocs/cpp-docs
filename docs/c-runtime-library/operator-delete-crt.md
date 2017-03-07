@@ -20,7 +20,6 @@ f1_keywords:
   - "delete"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "scalar delete"
   - "operator delete"

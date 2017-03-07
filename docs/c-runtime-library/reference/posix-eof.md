@@ -26,7 +26,6 @@ f1_keywords:
   - "eof"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "eof function"
 ms.assetid: 2e8fb55b-b736-46a6-be5e-15f8876a714f

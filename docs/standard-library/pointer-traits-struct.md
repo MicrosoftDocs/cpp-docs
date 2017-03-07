@@ -46,7 +46,7 @@ Supplies information that is needed by an object of template class `allocator_tr
   
 ## Syntax  
   
-```cpp
+```cpp  
 template <class Ptr>
 struct pointer_traits;
 ```  
@@ -93,7 +93,7 @@ struct Ptr
 ##  <a name="pointer_traits__pointer_to_method"></a>  pointer_to  
  Static method that returns `Ptr::pointer_to(obj)`, if that function exists. Otherwise, it is not possible to convert an arbitrary reference to an object of class `Ptr`. If `Ptr` is a raw pointer, this method returns `addressof(obj)`.  
   
-```cpp
+```cpp  
 static pointer pointer_to(element_type& obj);
 ```  
   

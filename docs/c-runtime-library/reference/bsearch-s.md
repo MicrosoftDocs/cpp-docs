@@ -27,7 +27,6 @@ f1_keywords:
   - "bsearch_s"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "arrays [CRT], binary search"
   - "bsearch_s function"

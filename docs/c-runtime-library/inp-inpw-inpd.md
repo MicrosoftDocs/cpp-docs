@@ -28,7 +28,6 @@ f1_keywords:
   - "_inpd"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "inp function"
   - "inpw function"

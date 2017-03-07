@@ -15,7 +15,6 @@ f1_keywords:
   - "_environ"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "environ function"
   - "_environ function"

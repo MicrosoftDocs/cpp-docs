@@ -57,7 +57,7 @@ Environment-specific extensions and language areas that the standard leaves up t
   
 The **/permissive-** option uses the conformance support in the current compiler version to determine which language constructs are non-conforming. The option does not determine if your code conforms to a specific version of the C++ standard. To enable all implemented compiler support for the latest draft standard, use the [/std:latest](../../build/reference/std-specify-language-standard-version.md) option. To restrict the compiler support to more closely match the C++14 standard, use the [/std:c++14](../../build/reference/std-specify-language-standard-version.md) option, which is the default.  
 
-Not all C++11, C++14, or draft C++17 standards-conforming code is supported by the Visual C++ compiler in Visual Studio 2017 RC. The **/permissive-** option may not detect issues regarding two-phase name lookup, binding a non-const reference to a temporary, treating copy init as direct init, allowing multiple user-defined conversions in initialization, or alternative tokens for logical operators, and other non-supported conformance areas. For more information about conformance issues in Visual C++, see [Nonstandard Behavior](../../cpp/nonstandard-behavior.md).  
+Not all C++11, C++14, or draft C++17 standards-conforming code is supported by the Visual C++ compiler in Visual Studio 2017. The **/permissive-** option may not detect issues regarding two-phase name lookup, binding a non-const reference to a temporary, treating copy init as direct init, allowing multiple user-defined conversions in initialization, or alternative tokens for logical operators, and other non-supported conformance areas. For more information about conformance issues in Visual C++, see [Nonstandard Behavior](../../cpp/nonstandard-behavior.md).  
   
 ### How to fix your code
 Here are some examples of code that is detected as non-conforming when you use **/permissive-**, along with suggested ways to fix the issues.
@@ -105,7 +105,7 @@ struct A {
 ```  
 
 #### Initialize multiple union members in a member initializer
-```cpp
+```cpp  
 union U
 {
     U()

@@ -26,7 +26,6 @@ f1_keywords:
   - "cgets"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "cgets function"
 ms.assetid: 54faf257-5ed6-4301-be19-66d953e901fa

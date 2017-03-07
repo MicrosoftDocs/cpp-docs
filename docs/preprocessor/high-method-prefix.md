@@ -12,7 +12,6 @@ f1_keywords:
   - "high_method_prefix"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "high_method_prefix attribute"
 ms.assetid: cacebf09-12f5-4919-ad40-939e206e340c

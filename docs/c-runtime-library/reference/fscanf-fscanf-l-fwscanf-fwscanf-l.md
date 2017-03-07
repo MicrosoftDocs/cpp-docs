@@ -34,7 +34,6 @@ f1_keywords:
   - "_fscanf_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "fscanf function"
   - "fwscanf function"

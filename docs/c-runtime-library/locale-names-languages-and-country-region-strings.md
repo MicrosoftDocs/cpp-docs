@@ -12,7 +12,6 @@ f1_keywords:
   - "c.strings"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "country/region strings"
   - "localization, locale"

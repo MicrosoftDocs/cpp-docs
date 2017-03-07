@@ -35,7 +35,6 @@ f1_keywords:
   - "math/modfl"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "modf function"
   - "modff function"

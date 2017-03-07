@@ -32,7 +32,6 @@ f1_keywords:
   - "gettche_nolock"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "characters, getting from console"
   - "_gettche_nolock function"

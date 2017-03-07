@@ -31,7 +31,6 @@ f1_keywords:
   - "clear87"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "clearing floating point status word"
   - "clearfp function"
@@ -76,7 +75,7 @@ unsigned int _clearfp( void );
   
  `_clearfp` is a platform-independent, portable version of the `_clear87` routine. It is identical to `_clear87` on Intel (x86) platforms and is also supported by the x64 and ARM platforms. To ensure that your floating-point code is portable to x64 and ARM, use `_clearfp`. If you are only targeting x86 platforms, you can use either `_clear87` or `_clearfp`.  
   
- These functions are deprecated when compiling with [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) or `/clr:pure` because the common language runtime only supports the default floating-point precision.  
+ These functions are deprecated when compiling with [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) because the common language runtime only supports the default floating-point precision.  
   
 ## Requirements  
   

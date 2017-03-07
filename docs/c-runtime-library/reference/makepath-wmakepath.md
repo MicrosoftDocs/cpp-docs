@@ -33,7 +33,6 @@ f1_keywords:
   - "_makepath"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_makepath function"
   - "wmakepath function"

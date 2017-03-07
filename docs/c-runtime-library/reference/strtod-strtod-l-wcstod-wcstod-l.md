@@ -38,7 +38,6 @@ f1_keywords:
   - "corecrt_wstdlib/_wcstod_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "wcstod_l function"
   - "tcstod_l function"

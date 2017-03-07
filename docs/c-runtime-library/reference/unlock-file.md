@@ -28,7 +28,6 @@ f1_keywords:
   - "unlock_file"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "files [C++], unlocking"
   - "unlock_file function"

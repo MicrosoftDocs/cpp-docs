@@ -27,7 +27,6 @@ f1_keywords:
   - "realloc_dbg"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "reallocating memory blocks"
   - "realloc_dbg function"

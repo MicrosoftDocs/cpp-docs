@@ -45,7 +45,6 @@ f1_keywords:
   - "_tcscnlen_l"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "_tcscnlen function"
   - "_mbstrnlen function"
@@ -184,9 +183,8 @@ size_t _mbstrnlen_l(
   
 ## Example  
   
-```  
-  
-      // crt_strnlen.c  
+```C  
+// crt_strnlen.c  
   
 #include <string.h>  
   
@@ -220,9 +218,6 @@ than the maximum size specified, the maximum size is
 returned rather than the actual size of the string.  
  Length: 100   
 ```  
-  
-## .NET Framework Equivalent  
- [System::String::Length](https://msdn.microsoft.com/en-us/library/system.string.length.aspx)  
   
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   

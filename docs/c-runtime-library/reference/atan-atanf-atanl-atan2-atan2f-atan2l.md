@@ -37,7 +37,6 @@ f1_keywords:
   - "atan2f"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "atan function"
   - "atanf function"

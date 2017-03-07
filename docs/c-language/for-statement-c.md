@@ -10,7 +10,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
   - "C++"
-  - "C"
 helpviewer_keywords: 
   - "for keyword [C]"
 ms.assetid: 560a8de4-19db-4868-9f18-dbe51b17900d

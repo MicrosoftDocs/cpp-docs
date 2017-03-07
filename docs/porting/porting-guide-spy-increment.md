@@ -85,7 +85,6 @@ C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afxv_w32.h
  The stdafx.h file contained some of these macro definitions.  
   
 ```cpp  
-  
 #define WINVER       0x0500  // these defines are set so that we get the  
 #define _WIN32_WINNT 0x0500  // maximum set of message/flag definitions,  
 #define _WIN32_IE    0x0400  // from both winuser.h and commctrl.h.  
@@ -108,7 +107,6 @@ LINK : warning LNK4216: Exported entry point _DLLEntryPoint@12
  The entry point for a DLL should not be exported. The entry point is only intended to be called by the loader when the DLL is first loaded into memory, so it should not be in the export table, which is for other callers. We just need to make sure it does not have the `__declspec(dllexport)` directive attached to it. In spyxxhk.c, we have to remove it from two places, the declaration and definition of DLLEntryPoint. It never made sense to use this directive, but previous versions of the linker and compiler did not flag it as problem. The newer versions of the linker give a warning.  
   
 ```cpp  
-  
 // deleted __declspec(dllexport)  
 BOOL WINAPI DLLEntryPoint(HINSTANCE hinstDLL,DWORD fdwReason, LPVOID lpvReserved);  
   
@@ -131,7 +129,6 @@ BOOL WINAPI DLLEntryPoint(HINSTANCE hinstDLL,DWORD fdwReason, LPVOID lpvReserved
  The issue is that the old iostreams library has been removed and replaced. We have to replace the old iostreams with the newer standards.  
   
 ```cpp  
-  
 #include <iostream.h>  
 #include <strstrea.h>  
 #include <iomanip.h>  
@@ -141,7 +138,6 @@ BOOL WINAPI DLLEntryPoint(HINSTANCE hinstDLL,DWORD fdwReason, LPVOID lpvReserved
  These are the updated includes:  
   
 ```cpp  
-  
 #include <iostream>  
 #include <sstream>  
 #include <iomanip>  
@@ -151,7 +147,6 @@ BOOL WINAPI DLLEntryPoint(HINSTANCE hinstDLL,DWORD fdwReason, LPVOID lpvReserved
  With this change, we have problems with ostrstream, which is no longer used. The appropriate replacement is ostringstream. We try adding a typedef for ostrstream to avoid modifying the code too much, at least as a start.  
   
 ```cpp  
-  
 typedef std::basic_ostringstream<TCHAR> ostrstream;  
   
 ```  
@@ -161,7 +156,6 @@ typedef std::basic_ostringstream<TCHAR> ostrstream;
  A few other pieces of code need to be updated.  We replaced the base class ios with ios_base, and we replaced ostream is by basic_ostream\<T>. We add two additional typedefs, and this section compiles.  
   
 ```cpp  
-  
 typedef std::basic_ostream<TCHAR> ostream;  
 typedef ios_base ios;  
   
@@ -184,7 +178,6 @@ error C2039: 'freeze': is not a member of 'std::basic_stringbuf<char,std::char_t
  The next two errors occurred on adjacent lines. The first complains about using ends, which is the old iostream library’s IO manipulator that adds a null terminator to a string.  The second of these errors explains that the output of the str method can’t be assigned to a non-const pointer.  
   
 ```cpp  
-  
 // Null terminate the string in the buffer and  
 // get a pointer to it.  
 //  
@@ -200,7 +193,6 @@ LPSTR psz = str();
  Using the new stream library, ends is not needed since the string is always null-terminated, so that line can be removed. For the second issue, the problem is that now str() doesn’t return a pointer to the character array for a string; it returns the std::string type. The solution to the second is to change the type to LPCSTR and use the c_str() method to request the pointer.  
   
 ```cpp  
-  
 //*this << ends;  
 LPCTSTR psz = str().c_str();  
   
@@ -209,7 +201,6 @@ LPCTSTR psz = str().c_str();
  An error that puzzled us for a while occurred on this code.  
   
 ```cpp  
-  
 MOUT << _T(" chUser:'") << chUser  
 << _T("' (") << (INT)(UCHAR)chUser << _T(')');  
   
@@ -272,7 +263,6 @@ MOUT << _T(" chUser:'") << chUser
  There are so many operator << definitions that this kind of error can be intimidating. After looking more closely at the available overloads, we can see that most of them are irrelevant, and looking more closely at the `mstream` class definition, we identified the following function that we think should be called in this case.  
   
 ```cpp  
-  
 mstream& operator<<(LPTSTR psz)  
 {  
   return (mstream&)ostrstream::operator<<(psz);  
@@ -294,7 +284,6 @@ error C2440: 'static_cast': cannot convert from 'UINT (__thiscall CHotLinkCtrl::
  The error occurs in a message map that is simply a macro:  
   
 ```cpp  
-  
 BEGIN_MESSAGE_MAP(CFindToolIcon, CWnd)  
 // other message omitted …  
 ON_WM_NCHITTEST() // Error occurs on this line.  
@@ -305,7 +294,6 @@ END_MESSAGE_MAP()
  Going to the definition of this macro, we see it references the function OnNcHitTest.  
   
 ```cpp  
-  
 #define ON_WM_NCHITTEST() \  
 { WM_NCHITTEST, 0, 0, 0, AfxSig_l_p, \  
 (AFX_PMSG)(AFX_PMSGW) \  
@@ -374,7 +362,6 @@ warning C4456: declaration of 'lpszBuffer' hides previous local declaration
  The code that produces this involves a macro.  
   
 ```cpp  
-  
 DECODEPARM(CB_GETLBTEXT)  
 {  
   P2WPOUT();  
@@ -417,7 +404,6 @@ DECODEPARM(CB_GETLBTEXT)
  When disabling a warning, you might want to restrict the disabling effect to just the code you that produces the warning, to avoid suppressing the warning when it might provide useful information. We add code to restore the warning just after the line that produces it, or better yet, since this warning occurs in a macro, use the `__pragma` keyword, which works in macros (`#pragma` does not work in macros).  
   
 ```cpp  
-  
 #define PARM(var, type, src)__pragma(warning(disable : 4456))  \  
 type var = (type)src \  
 __pragma(warning(default : 4456))  
@@ -433,7 +419,6 @@ warning C4996: 'GetVersion': was declared deprecated
  The following code shows how the version is obtained.  
   
 ```cpp  
-  
 // check Windows version and set m_bIsWindows9x/m_bIsWindows4x/m_bIsWindows5x flags accordingly.  
 DWORD dwWindowsVersion = GetVersion();  
   
@@ -446,7 +431,6 @@ DWORD dwWindowsVersion = GetVersion();
  There are methods in the CSpyApp class that query the operating system version: IsWindows9x, IsWindows4x and IsWindows5x. A good starting point is to assume that the versions of Windows that we intend to support (Windows 7 and later) are all close to Windows NT 5 as far the technologies used by this older application is concerned. The uses of these methods were to deal with limitations of the older operating systems. So we changed those methods to return TRUE for IsWindows5x and FALSE for the others.  
   
 ```cpp  
-  
 BOOL IsWindows9x() {/*return(m_bIsWindows9x);*/ return FALSE;  }  
 BOOL IsWindows4x() {/*return(m_bIsWindows4x);*/ return FALSE;  }  
 BOOL IsWindows5x() {/*return(m_bIsWindows5x);*/ return TRUE;  }  
@@ -460,7 +444,6 @@ error C2065: 'm_bIsWindows9x': undeclared identifier
 ```  
   
 ```cpp  
-  
 void CSpyApp::OnUpdateSpyProcesses(CCmdUI *pCmdUI)  
 {  
   pCmdUI->Enable(m_bIsWindows9x || hToolhelp32 != NULL);  
@@ -471,7 +454,6 @@ void CSpyApp::OnUpdateSpyProcesses(CCmdUI *pCmdUI)
  We could replace this with a method call or simply pass TRUE and remove the old special case for Windows 9x.  
   
 ```cpp  
-  
 void CSpyApp::OnUpdateSpyProcesses(CCmdUI *pCmdUI)  
 {  
   pCmdUI->Enable(TRUE /*!m_bIsWindows9x || hToolhelp32 != NULL*/);  
@@ -494,7 +476,6 @@ m_bStdMouse = TRUE;
  The declaration of m_bStdMouse indicates that it is a bitfield.  
   
 ```cpp  
-  
 class CTreeListBox : public CListBox  
 {  
   DECLARE_DYNCREATE(CTreeListBox)  
@@ -599,7 +580,6 @@ error C2440: '=': cannot convert from 'char *' to 'TCHAR *'
  The code that produces it is as follows:  
   
 ```cpp  
-  
 pParentNode->m_szText = new char[strTitle.GetLength() + 1];  
 _tcscpy(pParentNode->m_szText, strTitle);  
   
@@ -608,7 +588,6 @@ _tcscpy(pParentNode->m_szText, strTitle);
  Even though the _tcscpy function was used, which is the TCHAR strcpy function for copying a string, the buffer that was allocated was a char buffer. This is easily changed to TCHAR.  
   
 ```cpp  
-  
 pParentNode->m_szText = new TCHAR[strTitle.GetLength() + 1];  
 _tcscpy(pParentNode->m_szText, strTitle);  
   
@@ -623,7 +602,6 @@ _tcscpy(pParentNode->m_szText, strTitle);
  There are a few places where special actions had to be taken. Any use of WideCharToMultiByte or MultiByteToWideChar might require a closer look. Here's one example where WideCharToMultiByte was being used.  
   
 ```cpp  
-  
 BOOL C3dDialogTemplate::GetFont(CString& strFace, WORD& nFontSize)  
 {  
   ASSERT(m_hTemplate != NULL);  
@@ -650,7 +628,6 @@ BOOL C3dDialogTemplate::GetFont(CString& strFace, WORD& nFontSize)
  To address this, we had to understand that the reason this was done was to copy a wide character string representing the name of a font into the internal buffer of a CString, strFace. This required slightly different code for multibyte CString strings as for wide character CString strings, so we added an #ifdef in this case.  
   
 ```cpp  
-  
 #ifdef _MBCS  
 WideCharToMultiByte(CP_ACP, 0, (LPCWSTR)pb, -1,  
 strFace.GetBufferSetLength(LF_FACESIZE), LF_FACESIZE, NULL, NULL);  
@@ -691,7 +668,6 @@ strFace.ReleaseBuffer();
  These issues are relatively easy to fix, but depending on your code, it might affect a lot of code. Here's a typical issue.  
   
 ```cpp  
-  
 int CPerfTextDataBase::NumStrings(LPCTSTR mszStrings) const  
 {  
   for (int n = 0; mszStrings[0] != 0; n++)  
@@ -710,7 +686,6 @@ int CPerfTextDataBase::NumStrings(LPCTSTR mszStrings) const
  This occurs because the compiler has deprecated a compiler option that allowed code that no longer complies with the C++ standard. In the standard, declaring a variable inside a loop restricts its scope to the loop only, so the common practice of using a loop counter outside of the loop requires that the declaration of the counter also be moved outside the loop, as in the following revised code:  
   
 ```cpp  
-  
 int CPerfTextDataBase::NumStrings(LPCTSTR mszStrings) const  
 {  
   int n;  

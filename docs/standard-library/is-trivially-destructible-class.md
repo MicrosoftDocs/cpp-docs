@@ -16,7 +16,6 @@ f1_keywords:
   - "type_traits/std::is_trivially_destructible"
 dev_langs: 
   - "C++"
-  - "c++"
 helpviewer_keywords: 
   - "is_trivially_destructible"
 ms.assetid: 3f7a787d-2448-40c5-ac51-a228318e02ce
