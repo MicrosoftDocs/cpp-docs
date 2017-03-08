@@ -27,21 +27,13 @@ Returns an iterator that is used to insert elements at the end of the specified 
   
 ```  
   
-template <  
-   typename T  
-   >  
-   ::Platform::BackInsertIterator<T>   
-    back_inserter(  
-                  IVector<T>^ v  
-                 );  
+template <typename T>
+Platform::BackInsertIterator<T>   
+    back_inserter(IVector<T>^ v);  
   
-template <  
-   typename T  
-   >  
-   ::Platform::BackInsertIterator<T>   
-   back_inserter(  
-                IObservableVector<T>^ v  
-                );  
+template<typename T>  
+Platform::BackInsertIterator<T>   
+   back_inserter(IObservableVector<T>^ v);  
 ```  
   
 #### Parameters  

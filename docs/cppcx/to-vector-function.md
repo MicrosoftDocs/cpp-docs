@@ -26,18 +26,11 @@ Returns a `std::vector` whose value is the same as the collection underlying the
 ## Syntax  
   
 ```  
-template <  
-   typename T  
->  
-inline ::std::vector<T> to_vector(  
-   IVector<T>^ v  
-);  
-template <  
-   typename T  
->  
-inline ::std::vector<T> to_vector(  
-   IVectorView<T>^ v  
-);  
+template <typename T>  
+inline ::std::vector<T> to_vector(IVector<T>^ v); 
+ 
+template <typename T>  
+inline ::std::vector<T> to_vector(IVectorView<T>^ v);  
 ```  
   
 #### Parameters  

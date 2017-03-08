@@ -106,9 +106,7 @@ Decrements the current VectorIterator.
 ```  
   
 VectorIterator& operator--();  
-VectorIterator operator--(  
-   int  
-);  
+VectorIterator operator--(int);  
 ```  
   
 ### Return Value  
@@ -141,9 +139,7 @@ Indicates whether the current VectorIterator is equal to a specified VectorItera
 ### Syntax  
   
 ```  
-bool operator==(  
-   const VectorIterator& other  
-) const;  
+bool operator==(const VectorIterator& other) const;  
 ```  
   
 ### Parameters  
@@ -162,9 +158,7 @@ Indicates whether the current VectorIterator is greater than a specified VectorI
   
 ```cpp  
   
-bool operator>(  
-   const VectorIterator& other  
-) const   
+bool operator>(const VectorIterator& other) const   
 ```  
   
 ### Parameters  
@@ -183,9 +177,7 @@ Indicates whether the current VectorIterator is greater than or equal to the spe
   
 ```cpp  
   
-bool operator>=(  
-   const VectorIterator& other  
-) const   
+bool operator>=(const VectorIterator& other) const   
 ```  
   
 ### Parameters  
@@ -193,8 +185,7 @@ bool operator>=(
  Another VectorIterator.  
   
 ### Return Value  
- `true` if the current VectorIterator is greater than or equal to `other`; otherwise, `false`.  
-  
+ `true` if the current VectorIterator is greater than or equal to `other`; otherwise, `false`.    
 
 
 ## <a name="operator-increment"></a>  VectorIterator::operator++ Operator
@@ -202,12 +193,9 @@ Increments the current VectorIterator.
   
 ### Syntax  
   
-```  
-  
+```    
 VectorIterator& operator++();  
-VectorIterator operator++(  
-   int  
-);  
+VectorIterator operator++(int);  
 ```  
   
 ### Return Value  
@@ -226,9 +214,7 @@ Indicates whether the current VectorIterator is not equal to a specified VectorI
 ### Syntax  
   
 ```  
-bool operator!=(  
-   const VectorIterator& other  
-) const;  
+bool operator!=(const VectorIterator& other) const;  
 ```  
   
 ### Parameters  
@@ -247,9 +233,7 @@ Indicates whether the current VectorIterator is less than a specified VectorIter
   
 ```cpp  
   
-bool operator<(  
-   const VectorIterator& other  
-) const   
+bool operator<(const VectorIterator& other) const   
 ```  
   
 ### Parameters  
@@ -268,9 +252,7 @@ Indicates whether the current VectorIterator is less than or equal to a specifie
   
 ```cpp  
   
-bool operator<=(  
-   const VectorIterator& other  
-) const   
+bool operator<=(const VectorIterator& other) const   
 ```  
   
 ### Parameters  
@@ -289,13 +271,9 @@ Subtracts either a specified number of elements from the current iterator yieldi
   
 ```  
   
-VectorIterator operator-(  
-   difference_type n  
-) const;  
+VectorIterator operator-(difference_type n) const;  
   
-difference_type operator-(  
-   const VectorIterator& other  
-) const;  
+difference_type operator-(const VectorIterator& other) const;  
 ```  
   
 ### Parameters  
@@ -316,9 +294,7 @@ Increments the current VectorIterator by the specified displacement.
 ### Syntax  
   
 ```  
-VectorIterator& operator+=(  
-   difference_type n  
-);  
+VectorIterator& operator+=(difference_type n);  
 ```  
   
 ### Parameters  
@@ -337,16 +313,12 @@ Returns a VectorIterator that references the element at the specified displaceme
   
 ```  
   
-VectorIterator operator+(  
-   difference_type n) ;  
+VectorIterator operator+(difference_type n);  
   
-template <  
-   typename T  
->  
-inline VectorIterator<T> operator+(  
-   ptrdiff_t n,  
-   const VectorIterator<T>& i  
-);  
+template <typename T>  
+inline VectorIterator<T> operator+(
+  ptrdiff_t n, 
+  const VectorIterator<T>& i);  
   
 ```  
   
@@ -376,9 +348,7 @@ Decrements the current VectorIterator by the specified displacement.
 ### Syntax  
   
 ```  
-VectorIterator& operator-=(  
-   difference_type n  
-);  
+VectorIterator& operator-=(difference_type n);  
 ```  
   
 ### Parameters  
@@ -395,8 +365,7 @@ Retrieves a reference to the element that is a specified displacement from the c
   
 ### Syntax  
   
-```  
-  
+```    
 reference operator[](difference_type n) const;  
 ```  
   
@@ -414,13 +383,11 @@ Initializes a new instance of the VectorIterator class.
   
 ### Syntax  
   
-```  
-  
+```    
 VectorIterator();  
   
 explicit VectorIterator(  
-   Windows::Foundation::Collections::IVector<T>^ v  
-);  
+   Windows::Foundation::Collections::IVector<T>^ v);  
 ```  
   
 ### Parameters  

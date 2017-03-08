@@ -28,9 +28,7 @@ Provides a Standard Template Library iterator for objects derived from the [!INC
 ## Syntax  
   
 ```  
-template <  
-   typename T  
->  
+template <typename T>  
 class VectorViewIterator;  
 ```  
   
@@ -107,9 +105,7 @@ Decrements the current VectorViewIterator.
   
 ```  
 VectorViewIterator& operator--();  
-VectorViewIterator operator--(  
-   int  
-);  
+VectorViewIterator operator--(int);  
 ```  
   
 ### Return Value  
@@ -142,9 +138,7 @@ Indicates whether the current VectorViewIterator is equal to a specified VectorV
 ### Syntax  
   
 ```  
-bool operator==(  
-   const VectorViewIterator& other  
-) const;  
+bool operator==(const VectorViewIterator& other) const;  
 ```  
   
 ### Parameters  
@@ -163,9 +157,7 @@ Indicates whether the current VectorViewIterator is greater than a specified Vec
   
 ```  
   
-bool operator>(  
-   const VectorViewIterator& other  
-) const;  
+bool operator>(const VectorViewIterator& other) const;  
 ```  
   
 ### Parameters  
@@ -184,9 +176,7 @@ Indicates whether the current VectorViewIterator is greater than or equal to the
   
 ```  
   
-bool operator>=(  
-   const VectorViewIterator& other  
-) const;  
+bool operator>=(const VectorViewIterator& other) const;  
 ```  
   
 ### Parameters  
@@ -206,9 +196,7 @@ Increments the current VectorViewIterator.
 ```  
   
 VectorViewIterator& operator++();  
-VectorViewIterator operator++(  
-   int  
-);  
+VectorViewIterator operator++(int);  
 ```  
   
 ### Return Value  
@@ -227,9 +215,7 @@ Indicates whether the current VectorViewIterator is not equal to a specified Vec
 ### Syntax  
   
 ```  
-bool operator!=(  
-   const VectorViewIterator& other  
-) const;  
+bool operator!=(const VectorViewIterator& other) const;  
 ```  
   
 ### Parameters  
@@ -247,9 +233,7 @@ Indicates whether the current VectorIterator is less than a specified VectorIter
 ### Syntax  
   
 ```  
-bool operator<(  
-   const VectorViewIterator& other  
-) const;  
+bool operator<(const VectorViewIterator& other) const;  
 ```  
   
 ### Parameters  
@@ -268,9 +252,7 @@ Indicates whether the current VectorIterator is less than or equal to a specifie
   
 ```  
   
-bool operator<=(  
-   const VectorViewIterator& other  
-) const;  
+bool operator<=(const VectorViewIterator& other) const;  
 ```  
   
 ### Parameters  
@@ -289,13 +271,9 @@ Subtracts either a specified number of elements from the current iterator yieldi
   
 ```  
   
-VectorViewIterator operator-(  
-   difference_type n  
-) const;  
+VectorViewIterator operator-(difference_type n) const;  
   
-difference_type operator-(  
-   const VectorViewIterator& other  
-) const;  
+difference_type operator-(const VectorViewIterator& other) const;  
 ```  
   
 ### Parameters  
@@ -316,9 +294,7 @@ Increments the current VectorViewIterator by the specified displacement.
 ### Syntax  
   
 ```  
-VectorViewIterator& operator+=(  
-   difference_type n  
-);  
+VectorViewIterator& operator+=(difference_type n);  
 ```  
   
 ### Parameters  
@@ -337,17 +313,12 @@ Returns a VectorViewIterator that references the element at the specified displa
   
 ```  
   
-VectorViewIterator operator+(  
-   difference_type n  
-) const;  
+VectorViewIterator operator+(difference_type n) const;  
   
-template <  
-   typename T  
->   
+template <typename T>   
 inline VectorViewIterator<T> operator+  
    (ptrdiff_t n,   
-   const VectorViewIterator<T>& i  
-);  
+   const VectorViewIterator<T>& i);  
   
 ```  
   
@@ -374,9 +345,7 @@ Decrements the current VectorIterator by the specified displacement.
 ### Syntax  
   
 ```  
-VectorViewIterator& operator-=(  
-   difference_type n  
-);  
+VectorViewIterator& operator-=(difference_type n);  
 ```  
   
 ### Parameters  

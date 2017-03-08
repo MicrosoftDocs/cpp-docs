@@ -35,7 +35,7 @@ public value struct IntPtr
 |Member|Description|  
 |------------|-----------------|  
 |[IntPtr::IntPtr Constructor](#ctor)|Initializes a new instance of IntPtr.|  
-|[IntPtr::op_explicit Operator](#op-explici)|Converts the specified parameter to an IntPtr or a pointer to an IntPtr value.|  
+|[IntPtr::op_explicit Operator](#op-explicit)|Converts the specified parameter to an IntPtr or a pointer to an IntPtr value.|  
 |[IntPtr::ToInt32 Method](#toint32)|Converts the current IntPtr to a 32-bit integer.|  
   
 ## Requirements  

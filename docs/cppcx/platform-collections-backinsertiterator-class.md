@@ -26,10 +26,9 @@ Represents an iterator that inserts, rather than overwrites, elements into the b
 ## Syntax  
   
 ```  
-template <  
-   typename T  
->  
-class BackInsertIterator : public ::std::iterator< ::std::output_iterator_tag, void, void, void, void>;  
+template <typename T>  
+class BackInsertIterator : 
+public ::std::iterator<::std::output_iterator_tag, void, void, void, void>;  
 ```  
   
 #### Parameters  
@@ -72,8 +71,7 @@ Initializes a new instance of the `BackInsertIterator` class.
 ```  
   
 explicit BackInsertIterator(  
-   Windows::Foundation::Collections::IVector<T>^ v  
-);  
+   Windows::Foundation::Collections::IVector<T>^ v);  
 ```  
   
 #### Parameters  
@@ -82,22 +80,14 @@ explicit BackInsertIterator(
   
 ## Remarks  
  A `BackInsertIterator` inserts elements after the last element of the object specified by parameter `v`.  
-  
-
-
-
-
----
+ 
 ## <a name="operator-assign"></a>  BackInsertIterator::operator= Operator
 Appends the specified object to the end of the current sequential collection.  
   
 ## Syntax  
   
-```  
-  
-BackInsertIterator& operator=(  
-   const T& t  
-);  
+```    
+BackInsertIterator& operator=( const T& t);  
 ```  
   
 #### Parameters  
@@ -106,12 +96,7 @@ BackInsertIterator& operator=(
   
 ## Return Value  
  A reference to the current BackInsertIterator.  
-  
 
-
-
-
----
 ## <a name="operator-dereference"></a>  BackInsertIterator::operator* Operator
 Retrieves a reference to the current BackInsertIterator.  
   
@@ -126,24 +111,17 @@ BackInsertIterator& operator*();
   
 ## Remarks  
  This operator returns a reference to the current BackInsertIterator; not to any element in the current collection.  
-  
-
-
-
-
----
+ 
 ## <a name="operator-increment"></a>  BackInsertIterator::operator++ Operator
 Returns a reference to the current BackInsertIterator. The iterator is unmodified.  
   
 ## Syntax  
   
-```  
+``` 
   
 BackInsertIterator& operator++();  
   
-BackInsertIterator operator++(  
-   int  
-);  
+BackInsertIterator operator++(int);  
 ```  
   
 ## Return Value  
