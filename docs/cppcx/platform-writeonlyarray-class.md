@@ -31,7 +31,7 @@ Represents a one-dimensional array that's used as an input parameter when the ca
 private ref class WriteOnlyArray<T, 1>  
 ```  
   
-## Members  
+### Members  
   
 ### Public Methods  
  These methods have internal accessibility—that is, they are only accessible within the C++ app or component.  
@@ -48,7 +48,7 @@ private ref class WriteOnlyArray<T, 1>
 ## Inheritance Hierarchy  
  `WriteOnlyArray`  
   
-## Requirements  
+### Requirements  
  Compiler option: **/ZW**  
   
  **Metadata:** Platform.winmd  

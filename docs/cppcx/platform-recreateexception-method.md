@@ -30,10 +30,10 @@ This method is for internal use only and is not intended for user code. Use the 
 static Exception^ ReCreateException(int hr)
 ```
 
-## Parameters
+### Parameters
 `hr`
 
-## Property Value/Return Value
+### Property Value/Return Value
 
 Returns a new Platform::Exception^, based on the specified HRESULT.
 

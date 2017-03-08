@@ -35,12 +35,12 @@ class Agile;
  T  
  The typename for the non-agile class.  
   
-## Remarks  
+### Remarks  
  Most of the classes in the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] are agile. An agile object can call, or be called by, an in-proc or out-of-proc object in the same or a different thread. If an object is not agile, wrap the non-agile object in a `Agile<T>` object, which is agile. Then the `Agile<T>` object can be marshaled, and the underlying non-agile object can be used.  
   
  The `Agile<T>` class is a native, standard C++ class and requires `agile.h`. It represents the non-agile object and the Agile object's *context*. The context specifies an agile object's threading model and marshaling behavior. The operating system uses the context to determine how to marshal an object.  
   
-## Members  
+### Members  
   
 ### Public Constructors  
   
@@ -70,7 +70,7 @@ class Agile;
   
  `Agile`  
   
-## Requirements  
+### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
   
  **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  
@@ -103,7 +103,7 @@ Agile(Agile<T>&& object);
  `object`  
  In the second version of this constructor, an object used to initialize a new Agile instance. In the third version, the object that is copied to the new Agile instance. In the fourth version, the object that is moved to the new Agile instance.  
   
-## Remarks  
+### Remarks  
  The first version of this constructor is the default constructor. The second version initializes new Agile instance class from the object specified by the `object` parameter. The third version is the copy constructor. The fourth version is the move constructor. This constructor cannot throw exceptions.  
 
 ## <a name="dtor"></a>  Agile::~Agile Destructor
@@ -116,7 +116,7 @@ Destroys the current instance of the Agile class.
 ~Agile();  
 ```  
   
-## Remarks  
+### Remarks  
  This destructor also releases the object represented by the current Agile object.  
   
 ## <a name="get"></a>   Agile::Get Method
@@ -130,7 +130,7 @@ Returns a handle to the object that is represented by the current Agile object.
 ;  
 ```  
   
-## Return Value  
+### Return Value  
  A handle to the object that is represented by the current Agile object.  
   
  The type of the return value is actually an undisclosed internal type. A convenient way to hold the return value is to assign it to a variable that is declared with the **auto** type deduction keyword. For example, `auto x = myAgileTvariable->Get();`.  
@@ -150,10 +150,10 @@ throw();
  `T`  
  A type specified by the template typename parameter.  
   
-## Return Value  
+### Return Value  
  The address of a handle to an object of type `T`.  
   
-## Remarks  
+### Remarks  
  This operation releases the current representation of a object of type `T`, if any; reinitializes the Agile object's data members; acquires the current threading context; and then returns the address of a handle-to-object variable that can represent a non-agile object. To cause an Agile class instance to represent an object, use the assignment operator ([Agile::operator=](../cppcx/agile-operator-assign-operator.md)) to assign the object to the Agile class instance.  
 
 ## <a name="getaddressofforinput"></a>  Agile::GetAddressOfForInOut Method
@@ -171,10 +171,10 @@ T^* GetAddressOfForInOut()  throw();
  `T`  
  A type specified by the template typename parameter.  
   
-## Return Value  
+### Return Value  
  The address of a handle to the object represented by the current Agile object.  
   
-## Remarks  
+### Remarks  
  This operation acquires the current threading context and then returns the address of a handle to the underlying the object.  
 
 ## <a name="release"></a>  Agile::Release Method
@@ -188,7 +188,7 @@ void Release() throw();
   
 ```  
   
-## Remarks  
+### Remarks  
  The current Agile object's underlying object and context are discarded, if they exist, and then the value of the Agile object is set to null.  
 
 ## <a name="operator-arrow"></a>  Agile::operator-&gt; Operator
@@ -202,7 +202,7 @@ T^ operator->()
 const throw();  
 ```  
   
-## Return Value  
+### Return Value  
  A handle to the object represented by the current Agile object.  
   
  This operator actually returns an undisclosed internal type. A convenient way to hold the return value is to assign it to a variable that is declared with the **auto** type deduction keyword.  
@@ -240,10 +240,10 @@ Assigns the specified object to the current Agile object.
  `lp`  
  The IUnknown interface pointer of a object.  
   
-## Return Value  
+### Return Value  
  A handle to an object of type `T`  
   
-## Remarks  
+### Remarks  
  The first version of the assignment operator copies a handle to a reference type to the current Agile object. The second version copies a reference to an Agile type to the current Agile object. The third version moves an Agile type to the current Agile object. The fourth version moves a pointer to a COM object to the current Agile object.  
   
  The assignment operation automatically persists the context of the current Agile object. 

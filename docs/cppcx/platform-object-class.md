@@ -29,7 +29,7 @@ Provides common behavior for ref classes and ref structs in Windows Store apps. 
 public ref class Object : Object  
 ```  
   
-## Members  
+### Members  
   
 ### Public Constructors  
   
@@ -52,7 +52,7 @@ public ref class Object : Object
   
  `Object`  
   
-## Requirements  
+### Requirements  
  **Header:** vccorlib.h  
   
  **Namespace:** Platform  
@@ -70,7 +70,7 @@ bool Equals(
 )  
 ```  
   
-## Parameters  
+### Parameters  
  obj  
  The object to compare.  
   
@@ -143,7 +143,7 @@ Determines whether the specified Object instances are the same instance.
 public:static bool ReferenceEquals(  Object^ obj1,   Object^ obj2)  
 ```  
   
-## Parameters  
+### Parameters  
  obj1  
  The first object to compare.  
   

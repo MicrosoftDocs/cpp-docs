@@ -30,14 +30,14 @@ bool Equals(
 )  
 ```  
   
-## Parameters  
+### Parameters  
  obj  
  The object to compare.  
   
-## Return Value  
+### Return Value  
  `true` if the objects are equal, otherwise `false`.  
   
-## Requirements  
+### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
   
  **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  

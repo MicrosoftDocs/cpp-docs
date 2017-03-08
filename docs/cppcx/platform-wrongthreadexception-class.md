@@ -30,10 +30,10 @@ Thrown when a thread calls by way of an interface pointer for a proxy object tha
 public ref class WrongThreadException : COMException,    IException,    IPrintable,    IEquatable  
 ```  
   
-## Remarks  
+### Remarks  
  For more information, see the [COMException](../cppcx/platform-comexception-class.md).  
   
-## Requirements  
+### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
   
  **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  

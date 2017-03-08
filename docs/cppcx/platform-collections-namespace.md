@@ -37,7 +37,7 @@ The Platform::Collection namespace contains the `Map`, `MapView`, `Vector`, and 
 using namespace Platform::Collection;  
 ```  
   
-## Members  
+### Members  
  This namespace contains the following members.  
   
 |Name|Description|  
@@ -54,7 +54,7 @@ using namespace Platform::Collection;
 ## Inheritance Hierarchy  
  [Platform namespace](../cppcx/platform-namespace-c-cx.md)  
   
-## Requirements  
+### Requirements  
  **Metadata:** platform.winmd  
   
  **Namespace:** Platform::Collections  

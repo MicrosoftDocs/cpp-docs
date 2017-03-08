@@ -29,7 +29,7 @@ Contains built-in types that are compatible with the Windows Runtime.
 using namespace Platform;  
 ```  
   
-## Members  
+### Members  
  **Attributes**  
   
  The Platform namespace contains attributes, classes, enumerations, interfaces, and structures. Platform also contains nested namespaces.  

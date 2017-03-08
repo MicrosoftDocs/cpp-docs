@@ -51,7 +51,7 @@ A [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] type can declare (that is, publis
   
  [!code-cpp[cx_events#04](../cppcx/codesnippet/CPP/eventsupportinvs/eventclientclass.h#04)]  
   
-## Remarks  
+### Remarks  
  Multiple handlers may be associated with the same event. The event source sequentially calls into all event handlers from the same thread. If an event receiver blocks within the event handler method, it blocks the event source from invoking other event handlers for this event.  
   
  The order in which the event source invokes event handlers on event receivers is not guaranteed and may differ from call to call.  

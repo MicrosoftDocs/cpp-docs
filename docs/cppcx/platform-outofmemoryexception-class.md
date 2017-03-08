@@ -30,10 +30,10 @@ Thrown when there's insufficient memory to complete the operation.
 public ref class OutOfMemoryException : COMException,    IException,    IPrintable,    IEquatable  
 ```  
   
-## Remarks  
+### Remarks  
  For more information, see the [COMException](../cppcx/platform-comexception-class.md) class.  
   
-## Requirements  
+### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
   
  **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  

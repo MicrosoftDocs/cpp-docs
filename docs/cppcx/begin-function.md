@@ -55,15 +55,15 @@ template <typename T>
  `i`  
  A collection of arbitrary [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] objects that are accessed by an IIterable\<T> interface.  
   
-## Return Value  
+### Return Value  
  An iterator that points to the beginning of the collection.  
   
-## Remarks  
+### Remarks  
  The first two template functions return iterators, and the third template function returns an input iterator.  
   
  The VectorIterator object that is returned by begin is a proxy iterator that stores elements of type VectorProxy\<T>. However, the proxy object is almost never visible to user code. For more information, see [Collections (C++/CX)](../cppcx/collections-c-cx.md).  
   
-## Requirements  
+### Requirements  
  **Header:** collection.h  
   
  **Namespace:** Windows::Foundation::Collections  

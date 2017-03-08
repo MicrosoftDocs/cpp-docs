@@ -26,9 +26,7 @@ Provides a Standard Template Library InputIterator for collections derived from 
 ## Syntax  
   
 ```  
-template <  
-   typename X  
->  
+template <typename X>  
 class InputIterator;  
 ```  
   
@@ -36,7 +34,7 @@ class InputIterator;
  `X`  
  The typename of the InputIterator template class.  
   
-## Members  
+### Members  
   
 ### Public Typedefs  
   
@@ -67,7 +65,7 @@ class InputIterator;
 ## Inheritance Hierarchy  
  `InputIterator`  
   
-## Requirements  
+### Requirements  
  **Header:** collection.h  
   
  **Namespace:** Platform::Collections  
@@ -79,9 +77,7 @@ Initializes a new instance of the InputIterator class.
   
 ```  
 InputIterator();  
-explicit InputIterator(  
-   Windows::Foundation::Collections<X>^ iter  
-);  
+explicit InputIterator(Windows::Foundation::Collections<X>^ iter);  
 ```  
   
 ### Parameters  
@@ -124,9 +120,7 @@ Indicates whether the current InputIterator is equal to a specified InputIterato
 ### Syntax  
   
 ```  
-bool operator==(  
-   const InputIterator& other  
-) const;  
+bool operator== (const InputIterator& other) const;  
 ```  
   
 ### Parameters  
@@ -143,13 +137,9 @@ Increments the current InputIterator.
   
 ### Syntax  
   
-```  
-  
-InputIterator& operator++();  
-  
-InputIterator operator++(  
-   int  
-);  
+```    
+InputIterator& operator++();   
+InputIterator operator++(int);  
 ```  
   
 ### Return Value  
@@ -168,9 +158,7 @@ Indicates whether the current InputIterator is not equal to a specified InputIte
 ### Syntax  
   
 ```  
-bool operator!=(  
-   const InputIterator& other  
-) const;  
+bool operator!=(const InputIterator& other) const;  
 ```  
   
 ### Parameters  
@@ -178,8 +166,7 @@ bool operator!=(
  Another InputIterator.  
   
 ### Return Value  
- `true` if the current InputIterator is not equal to `other`; otherwise, `false`.  
-  
+ `true` if the current InputIterator is not equal to `other`; otherwise, `false`.   
 
   
 ## See Also  
