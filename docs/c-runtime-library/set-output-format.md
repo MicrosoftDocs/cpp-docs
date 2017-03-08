@@ -87,12 +87,9 @@ unsigned int _set_output_format(
   
  For more compatibility information, see [Compatibility](../c-runtime-library/compatibility.md) in the Introduction.  
   
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
-  
 ## Example  
   
-```  
+```C  
 // crt_set_output_format.c  
 #include <stdio.h>  
   
@@ -142,5 +139,4 @@ int main()
   
 ## See Also  
  [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)   
- [printf Type Field Characters](../c-runtime-library/printf-type-field-characters.md)   
  [_get_output_format](../c-runtime-library/get-output-format.md)
