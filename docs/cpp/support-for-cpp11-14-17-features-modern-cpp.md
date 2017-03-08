@@ -34,121 +34,118 @@ translation.priority.mt:
 # Support For C++11/14/17 Features (Modern C++)
 This article describes C++11/14/17 features in Visual C++.  
   
-##  <a name="featurelist"></a> C++11Feature List  
- Visual C++ implements the vast majority of features in the [C++11 core language specification](http://go.microsoft.com/fwlink/p/?LinkID=235092), as well as many C++14 Library features and some features proposed for C++17. The following table lists C++11/14/17 core language features and their implementation status in Visual C++ in Visual Studio 2010, [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)], and [!INCLUDE[cpp_dev12_long](../build/reference/includes/cpp_dev12_long_md.md)], and Visual Studio 2015.  
+##  <a name="featurelist"></a> C++11 Feature List  
+ Visual C++ implements almost all features in the [C++11 core language specification](http://go.microsoft.com/fwlink/p/?LinkID=235092), as well as almost all C++14 Library features and most features proposed for C++17. The following table lists C++11/14/17 core language features and their implementation status in Visual C++ in Visual Studio 2010, Visual Studio 2012, Visual Studio 2013, Visual Studio 2915, and Visual Studio 2017.  
   
 ###  <a name="corelanguagetable"></a> C++11 Core Language Features Table  
   
-|[C++11 Core Language Features](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2009/n2869.html)|Visual Studio 2010|Visual Studio 2012|[!INCLUDE[vs_dev12](../atl-mfc-shared/includes/vs_dev12_md.md)]|Visual Studio 2015|  
-|----------------------------------------------------------------------------------------------------------|------------------------|------------------------|--------------------------------------------------------------|------------------------|  
-|Rvalue references [v0.1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2004/n1610.html), [v1.0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n2118.html), [v2.0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2009/n2844.html), [v2.1](http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_defects.html), [v3.0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2010/n3053.html)|v2.0|v2.1*|v2.1*|v3.0|  
-|[ref-qualifiers](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2439.htm)|No|No|No|Yes|  
-|[Non-static data member initializers](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2756.htm)|No|No|[Yes](../cpp/uniform-initialization-and-delegating-constructors.md)|Yes|  
-|Variadic templates [v0.9](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2242.pdf), [v1.0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2555.pdf)|No|No|[Yes](../cpp/ellipses-and-variadic-templates.md)|Yes|  
-|[Initializer lists](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2672.htm)|No|No|[Yes](../cpp/uniform-initialization-and-delegating-constructors.md)|Yes|  
-|[static_assert](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2004/n1720.html)|Yes|Yes|Yes|Yes|  
-|auto [v0.9](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n1984.pdf), [v1.0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2546.htm)|v1.0|v1.0|v1.0|Yes|  
-|[Trailing return types](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2541.htm)|Yes|Yes|Yes|Yes|  
-|Lambdas [v0.9](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2550.pdf), [v1.0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2658.pdf), [v1.1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2009/n2927.pdf)|v1.0|v1.1|v1.1|Yes|  
-|decltype [v1.0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2343.pdf), [v1.1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2011/n3276.pdf)|v1.0|v1.1**|v1.1|Yes|  
-|[Right angle brackets](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2005/n1757.html)|Yes|Yes|Yes|Yes|  
-|[Default template arguments for function templates](http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_defects.html)|No|No|Yes|Yes|  
-|[Expression SFINAE](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2634.html)|No|No|No|No|  
-|[Alias templates](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2258.pdf)|No|No|[Yes](../cpp/aliases-and-typedefs-cpp.md)|Yes|  
-|[Extern templates](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n1987.htm)|Yes|Yes|Yes|Yes|  
-|[nullptr](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2431.pdf)|Yes|Yes|Yes|Yes|  
-|[Strongly typed enums](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2347.pdf)|Partial|Yes|Yes|Yes|  
-|[Forward declared enums](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2764.pdf)|No|Yes|Yes|Yes|  
-|[Attributes](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2761.pdf)|No|No|No|Yes|  
-|[constexpr](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2235.pdf)|No|No|No|Yes|  
-|[Alignment](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2341.pdf)|TR1|Partial|Partial|Yes|  
-|[Delegating constructors](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n1986.pdf)|No|No|[Yes](../cpp/uniform-initialization-and-delegating-constructors.md)|Yes|  
-|[Inheriting constructors](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2540.htm)|No|No|No|Yes|  
-|[Explicit conversion operators](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2437.pdf)|No|No|Yes|Yes|  
-|[char16_t/char32_t](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2249.html)|No|No|No|Yes|  
-|[Unicode string literals](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2442.htm)|No|No|No|Yes|  
-|[Raw string literals](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2442.htm)|No|No|[Yes](../cpp/string-and-character-literals-cpp.md)|Yes|  
-|[Universal character names in literals](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2170.html)|No|No|No|Yes|  
-|[User-defined literals](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2765.pdf)|No|No|No|Yes|  
-|[Standard-layout and trivial types](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2342.htm)|No|Yes|Yes|Yes|  
-|[Defaulted and deleted functions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2346.htm)|No|No|[Yes*](../cpp/explicitly-defaulted-and-deleted-functions.md)|Yes|  
-|[Extended friend declarations](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2005/n1791.pdf)|Yes|Yes|Yes|Yes|  
-|[Extended sizeof](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2253.html)|No|No|No|Yes|  
-|[Inline namespaces](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2535.htm)|No|No|No|Yes|  
-|[Unrestricted unions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2544.pdf)|No|No|No|Yes|  
-|[Local and unnamed types as template arguments](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2657.htm)|Yes|Yes|Yes|Yes|  
-|[Range-based for-loop](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2009/n2930.html)|No|Yes|Yes|Yes|  
-|override and final [v0.8](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2009/n2928.htm), [v0.9](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2010/n3206.htm), [v1.0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2011/n3272.htm)|Partial|Yes|Yes|Yes|  
-|[Minimal GC support](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2670.htm)|Yes|Yes|Yes|Yes|  
-|[noexcept](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2010/n3050.html)|No|No|No|Yes|  
+|[C++11 Core Language Features](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2009/n2869.html)|Visual Studio 2010|Visual Studio 2012|Visual Studio 2013|Visual Studio 2015|Visual Studio 2017|  
+|-|-|-|-|-|-|  
+|Rvalue references [v0.1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2004/n1610.html), [v1.0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n2118.html), [v2.0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2009/n2844.html), [v2.1](http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_defects.html), [v3.0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2010/n3053.html)|v2.0|v2.1*|v2.1*|v3.0|v3.0|  
+|[ref-qualifiers](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2439.htm)|No|No|No|Yes|Yes|  
+|[Non-static data member initializers](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2756.htm)|No|No|[Yes](../cpp/uniform-initialization-and-delegating-constructors.md)|Yes|Yes|  
+|Variadic templates [v0.9](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2242.pdf), [v1.0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2555.pdf)|No|No|[Yes](../cpp/ellipses-and-variadic-templates.md)|Yes|Yes|  
+|[Initializer lists](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2672.htm)|No|No|[Yes](../cpp/uniform-initialization-and-delegating-constructors.md)|Yes|Yes|  
+|[static_assert](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2004/n1720.html)|Yes|Yes|Yes|Yes|Yes|  
+|auto [v0.9](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n1984.pdf), [v1.0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2546.htm)|v1.0|v1.0|v1.0|Yes|Yes|  
+|[Trailing return types](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2541.htm)|Yes|Yes|Yes|Yes|Yes|  
+|Lambdas [v0.9](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2550.pdf), [v1.0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2658.pdf), [v1.1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2009/n2927.pdf)|v1.0|v1.1|v1.1|Yes|Yes|  
+|decltype [v1.0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2343.pdf), [v1.1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2011/n3276.pdf)|v1.0|v1.1**|v1.1|Yes|Yes|  
+|[Right angle brackets](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2005/n1757.html)|Yes|Yes|Yes|Yes|Yes|  
+|[Default template arguments for function templates](http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_defects.html)|No|No|Yes|Yes|Yes|  
+|[Expression SFINAE](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2634.html)|No|No|No|No|Partial|  
+|[Alias templates](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2258.pdf)|No|No|[Yes](../cpp/aliases-and-typedefs-cpp.md)|Yes|Yes|  
+|[Extern templates](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n1987.htm)|Yes|Yes|Yes|Yes|Yes|  
+|[nullptr](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2431.pdf)|Yes|Yes|Yes|Yes|Yes|  
+|[Strongly typed enums](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2347.pdf)|Partial|Yes|Yes|Yes|Yes|  
+|[Forward declared enums](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2764.pdf)|No|Yes|Yes|Yes|Yes|  
+|[Attributes](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2761.pdf)|No|No|No|Yes|Yes|  
+|[constexpr](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2235.pdf)|No|No|No|Yes|Yes|  
+|[Alignment](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2341.pdf)|TR1|Partial|Partial|Yes|Yes|  
+|[Delegating constructors](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n1986.pdf)|No|No|[Yes](../cpp/uniform-initialization-and-delegating-constructors.md)|Yes|Yes|  
+|[Inheriting constructors](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2540.htm)|No|No|No|Yes|Yes|  
+|[Explicit conversion operators](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2437.pdf)|No|No|Yes|Yes|Yes|  
+|[char16_t/char32_t](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2249.html)|No|No|No|Yes|Yes|  
+|[Unicode string literals](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2442.htm)|No|No|No|Yes|Yes|  
+|[Raw string literals](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2442.htm)|No|No|[Yes](../cpp/string-and-character-literals-cpp.md)|Yes|Yes|  
+|[Universal character names in literals](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2170.html)|No|No|No|Yes|Yes|  
+|[User-defined literals](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2765.pdf)|No|No|No|Yes|Yes|  
+|[Standard-layout and trivial types](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2342.htm)|No|Yes|Yes|Yes|Yes|  
+|[Defaulted and deleted functions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2346.htm)|No|No|[Yes*](../cpp/explicitly-defaulted-and-deleted-functions.md)|Yes|Yes|  
+|[Extended friend declarations](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2005/n1791.pdf)|Yes|Yes|Yes|Yes|Yes|  
+|[Extended sizeof](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2253.html)|No|No|No|Yes|Yes|  
+|[Inline namespaces](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2535.htm)|No|No|No|Yes|Yes|  
+|[Unrestricted unions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2544.pdf)|No|No|No|Yes|Yes|  
+|[Local and unnamed types as template arguments](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2657.htm)|Yes|Yes|Yes|Yes|Yes|  
+|[Range-based for-loop](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2009/n2930.html)|No|Yes|Yes|Yes|Yes|  
+|override and final [v0.8](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2009/n2928.htm), [v0.9](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2010/n3206.htm), [v1.0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2011/n3272.htm)|Partial|Yes|Yes|Yes|Yes|  
+|[Minimal GC support](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2670.htm)|Yes|Yes|Yes|Yes|Yes|  
+|[noexcept](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2010/n3050.html)|No|No|No|Yes|Yes|  
   
  [[In This Article](#top)]  
   
 ###  <a name="concurrencytable"></a> C++11 Core Language Features Table: Concurrency  
   
-|C++11 Core Language Features: Concurrency|Visual Studio 2010|Visual Studio 2012|[!INCLUDE[vs_dev12](../atl-mfc-shared/includes/vs_dev12_md.md)]|Visual Studio 2015|  
-|-------------------------------------------------|------------------------|------------------------|--------------------------------------------------------------|------------------------|  
-|[Reworded sequence points](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2239.html)|N/A|N/A|N/A|Yes|  
-|[Atomics](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2427.html)|No|Yes|Yes|Yes|  
-|[Strong compare and exchange](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2748.html)|No|Yes|Yes|Yes|  
-|[Bidirectional fences](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2752.htm)|No|Yes|Yes|Yes|  
-|[Memory model](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2429.htm)|N/A|N/A|N/A|Yes|  
-|[Data-dependency ordering](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2664.htm)|No|Yes|Yes|Yes|  
-|[Data-dependency ordering: function annotation](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2782.htm)|No|No|No|Yes|  
-|[exception_ptr](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2179.html)|Yes|Yes|Yes|Yes|  
-|[quick_exit](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2440.htm)|No|No|No|Yes|  
-|[Atomics in signal handlers](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2547.htm)|No|Yes|Yes|Yes|  
-|[Thread-local storage](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2659.htm)|Partial|Partial|Partial|Yes|  
-|[Magic statics](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2660.htm)|No|No|No|Yes|  
+|C++11 Core Language Features: Concurrency|Visual Studio 2010|Visual Studio 2012|Visual Studio 2013|Visual Studio 2015|Visual Studio 2017|  
+|-|-|-|-|-|-|  
+|[Reworded sequence points](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2239.html)|N/A|N/A|N/A|Yes|Yes|  
+|[Atomics](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2427.html)|No|Yes|Yes|Yes|Yes|  
+|[Strong compare and exchange](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2748.html)|No|Yes|Yes|Yes|Yes|  
+|[Bidirectional fences](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2752.htm)|No|Yes|Yes|Yes|Yes|  
+|[Memory model](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2429.htm)|N/A|N/A|N/A|Yes|Yes|  
+|[Data-dependency ordering](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2664.htm)|No|Yes|Yes|Yes|Yes|  
+|[Data-dependency ordering: function annotation](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2782.htm)|No|No|No|Yes|Yes|  
+|[exception_ptr](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2179.html)|Yes|Yes|Yes|Yes|Yes|  
+|[quick_exit](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2440.htm)|No|No|No|Yes|Yes|  
+|[Atomics in signal handlers](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2547.htm)|No|Yes|Yes|Yes|Yes|  
+|[Thread-local storage](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2659.htm)|Partial|Partial|Partial|Yes|Yes|  
+|[Magic statics](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2660.htm)|No|No|No|Yes|Yes|  
   
  [[In This Article](#top)]  
   
 ###  <a name="c99table"></a> C++11 Core Language Features: C99  
   
-|C++11 Core Language Features: C99|Visual Studio 2010|Visual Studio 2012|[!INCLUDE[vs_dev12](../atl-mfc-shared/includes/vs_dev12_md.md)]|Visual Studio 2015|  
-|-----------------------------------------|------------------------|------------------------|--------------------------------------------------------------|------------------------|  
-|[__func\_\_](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2340.htm)|Partial|Partial|Partial|Yes|  
-|[C99 preprocessor](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2004/n1653.htm)|Partial|Partial|Partial|Partial|  
-|[long long](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2005/n1811.pdf)|Yes|Yes|Yes|Yes|  
-|[Extended integer types](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n1988.pdf)|N/A|N/A|N/A|N/A|  
+|C++11 Core Language Features: C99|Visual Studio 2010|Visual Studio 2012|Visual Studio 2013|Visual Studio 2015|Visual Studio 2017|  
+|-|-|-|-|-|-|  
+|[__func\_\_](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2340.htm)|Partial|Partial|Partial|Yes|Yes|  
+|[C99 preprocessor](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2004/n1653.htm)|Partial|Partial|Partial|Partial|Partial|  
+|[long long](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2005/n1811.pdf)|Yes|Yes|Yes|Yes|Yes|  
+|[Extended integer types](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n1988.pdf)|N/A|N/A|N/A|N/A|N/A|  
   
  [[In This Article](#top)]  
   
 ###  <a name="cpp14table"></a> C++ 14 Core Language Features  
   
-||||  
-|-|-|-|  
-|Feature|Visual Studio 2013|Visual Studio 2015|  
-|Tweaked wording for contextual conversions|Yes|Yes|  
-|Binary literals|No|Yes|  
-|auto and decltype(auto) return types|No|Yes|  
-|init-captures|No|Yes|  
-|Generic lambdas|No|Yes|  
-|Variable templates|No|No|  
-|Extended constexpr|No|No|  
-|NSDMIs for aggregates|No|No|  
-|Avoiding/fusing allocations|No|No|  
-|[[deprecated]] attributes|No|No|  
-|Sized allocation|No|Yes|  
-|Digit separators|No|Yes|  
+|C++ 14 Core Language Features|Visual Studio 2013|Visual Studio 2015|Visual Studio 2017|  
+|-|-|-|-|  
+|Tweaked wording for contextual conversions|Yes|Yes|Yes|  
+|Binary literals|No|Yes|Yes|  
+|auto and decltype(auto) return types|No|Yes|Yes|  
+|init-captures|No|Yes|Yes|  
+|Generic lambdas|No|Yes|Yes|  
+|Variable templates|No|No|Yes|  
+|Extended constexpr|No|No|Yes|  
+|NSDMIs for aggregates|No|No|Yes|  
+|[[deprecated]] attributes|No|No|Yes|  
+|Sized deallocation|No|Yes|Yes|  
+|Digit separators|No|Yes|Yes|  
   
 ###  <a name="cpp17table"></a> C++17 Proposed Core Language Features  
   
-||||  
-|-|-|-|  
-|Feature|Visual Studio 2013|Visual Studio 2015|  
-|New rules for auto with braced-init-lists|No|No|  
-|Terse static assert|No|No|  
-|typename in template template-parameters|No|No|  
-|Removing trigraphs|Yes|Yes|  
-|Nested namespace definitions|No|No|  
-|N4259 std::uncaught_exceptions()|No|No|  
-|N4261 Fixing qualification conversions|No|No|  
-|N4266 Attributes for namespaces and enumerators|No|No|  
-|N4267 u8 character literals|No|No|  
-|N4268 Allowing more non-type template args|No|No|  
-|N4295 Fold expressions|No|No|  
-|await/resume|No|Yes|  
+|C++17 Core Language Features|Visual Studio 2013|Visual Studio 2015|Visual Studio 2017|  
+|-|-|-|-|  
+|New rules for auto with braced-init-lists|No|No|Yes|  
+|Terse static assert|No|No|Yes|  
+|typename in template template-parameters|No|No|Yes|  
+|Removing trigraphs|Yes|Yes|Yes|  
+|Nested namespace definitions|No|No|Yes|  
+|N4259 std::uncaught_exceptions()|No|No|No|  
+|N4261 Fixing qualification conversions|No|No|No|  
+|N4266 Attributes for namespaces and enumerators|No|No|Yes|  
+|N4267 u8 character literals|No|No|Yes|  
+|N4268 Allowing more non-type template args|No|No|No|  
+|N4295 Fold expressions|No|No|No|  
+|N4628 Coroutines|No|Yes|Yes|  
   
 ##  <a name="tableguide"></a> Guide to the Feature Tables  
   
@@ -164,7 +161,7 @@ This article describes C++11/14/17 features in Visual C++.
  [[In This Article](#top)]  
   
 ###  <a name="lambdas"></a> Lambdas  
- After [lambda functions](../cpp/lambda-expressions-in-cpp.md) were voted into the Working Paper ([version "0.9"](http://go.microsoft.com/fwlink/p/?LinkID=235098)) and mutable lambdas were added ([version "1.0"](http://go.microsoft.com/fwlink/p/?LinkID=235099)), the Standardization Committee overhauled the wording. This produced lambdas  [version "1.1"](http://go.microsoft.com/fwlink/p/?LinkID=235100), which is now fully supported.  The lambdas v1.1 wording clarifies what should occur in corner cases like referring to static members or nested lambdas.  This fixes problems that are triggered by complex lambdas.  Additionally, stateless lambdas are now convertible to function pointers.  This is not in the N2927 wording, but it is counted as part of lambdas v1.1 anyway.  [C++11](http://go.microsoft.com/fwlink/p/?LinkID=235092)**5.1.2 [expr.prim.lambda]/6** has this description: "The closure type for a `lambda-expression` with no `lambda-capture` has a public non-virtual non-explicit const conversion function to pointer to function having the same parameter and return types as the closure type’s function call operator. The value returned by this conversion function shall be the address of a function that, when invoked, has the same eﬀect as invoking the closure type’s function call operator."  (The [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)] implementation is even better than that, because it makes stateless lambdas convertible to function pointers that have arbitrary calling conventions.  This is important when you are using APIs that expect things like `__stdcall` function pointers.)  
+ After [lambda functions](../cpp/lambda-expressions-in-cpp.md) were voted into the Working Paper ([version "0.9"](http://go.microsoft.com/fwlink/p/?LinkID=235098)) and mutable lambdas were added ([version "1.0"](http://go.microsoft.com/fwlink/p/?LinkID=235099)), the Standardization Committee overhauled the wording. This produced lambdas  [version "1.1"](http://go.microsoft.com/fwlink/p/?LinkID=235100), which is now fully supported.  The lambdas v1.1 wording clarifies what should occur in corner cases like referring to static members or nested lambdas.  This fixes problems that are triggered by complex lambdas.  Additionally, stateless lambdas are now convertible to function pointers.  This is not in the N2927 wording, but it is counted as part of lambdas v1.1 anyway.  [C++11](http://go.microsoft.com/fwlink/p/?LinkID=235092)**5.1.2 [expr.prim.lambda]/6** has this description: "The closure type for a `lambda-expression` with no `lambda-capture` has a public non-virtual non-explicit const conversion function to pointer to function having the same parameter and return types as the closure type’s function call operator. The value returned by this conversion function shall be the address of a function that, when invoked, has the same eﬀect as invoking the closure type’s function call operator."  (The Visual Studio 2012 implementation is even better than that, because it makes stateless lambdas convertible to function pointers that have arbitrary calling conventions.  This is important when you are using APIs that expect things like `__stdcall` function pointers.)  
   
  [[In This Article](#top)]  
   
@@ -179,14 +176,14 @@ This article describes C++11/14/17 features in Visual C++.
  [[In This Article](#top)]  
   
 ###  <a name="alignment"></a> Alignment  
- The Core Language keywords `alignas`/`alignof` from the [alignment proposal](http://go.microsoft.com/fwlink/p/?LinkID=235105) that was voted into the Working Paper are implemented in Visual Studio 2015.  Visual C++ in Visual Studio 2010 had `aligned_storage` from TR1. [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)] added `aligned_union` and `std::align()` to the Standard Library and significant issues were fixed in [!INCLUDE[cpp_dev12_long](../build/reference/includes/cpp_dev12_long_md.md)].  
+ The Core Language keywords `alignas`/`alignof` from the [alignment proposal](http://go.microsoft.com/fwlink/p/?LinkID=235105) that was voted into the Working Paper are implemented in Visual Studio 2015.  Visual C++ in Visual Studio 2010 had `aligned_storage` from TR1. Visual Studio 2012 added `aligned_union` and `std::align()` to the Standard Library and significant issues were fixed in Visual Studio 2013.  
   
  [[In This Article](#top)]  
   
 ###  <a name="standardlayout"></a> Standard-Layout and Trivial Types  
  The exposed changes from [N2342 "POD's Revisited; Resolving Core Issue 568 (Revision 5)"](http://go.microsoft.com/fwlink/p/?LinkID=235106) are the additions of `is_trivial` and `is_standard_layout` to the C++ Standard Library's `<type_traits>`.  (N2342 reworked a lot of the Core Language wording, but no compiler changes were required.)  These type traits were available in Visual C++ in Visual Studio 2010, but they just duplicated `is_pod`. Therefore, the table earlier in this document said "No" support.  They are now powered by compiler hooks that are designed to give accurate answers.  
   
- The C++ Standard Library's [common_type<>](../standard-library/common-type-class.md) received a much-needed fix in [!INCLUDE[cpp_dev12_long](../build/reference/includes/cpp_dev12_long_md.md)].  The C++11 specification for `common_type<>` had unexpected and undesired consequences; in particular, it makes `common_type<int, int>::type` return `int&&`. Therefore, [!INCLUDE[cpp_dev12_long](../build/reference/includes/cpp_dev12_long_md.md)] implements the [Proposed Resolution for Library Working Group issue 2141](http://go.microsoft.com/fwlink/p/?LinkId=320075), which makes `common_type<int, int>::type` return `int`.  
+ The C++ Standard Library's [common_type<>](../standard-library/common-type-class.md) received a much-needed fix in Visual Studio 2013.  The C++11 specification for `common_type<>` had unexpected and undesired consequences; in particular, it makes `common_type<int, int>::type` return `int&&`. Therefore, Visual Studio 2013 implements the [Proposed Resolution for Library Working Group issue 2141](http://go.microsoft.com/fwlink/p/?LinkId=320075), which makes `common_type<int, int>::type` return `int`.  
   
  As a side-effect of this change, the identity case no longer works (`common_type<T>` does not always result in type `T`). This complies with the Proposed Resolution, but it breaks any code that relied on the previous behavior.  
   
@@ -205,7 +202,7 @@ template <typename T> struct Identity {
  [[In This Article](#top)]  
   
 ###  <a name="defaultedanddeleted"></a> Defaulted and Deleted Functions  
- These are now supported, but with this exception: For defaulted functions, the use of `=default` to request member-wise move constructors and move assignment operators is not supported. The copies and moves don't interact precisely like the Standard says they should—for example, deletion of moves is specified to also suppress copies, but [!INCLUDE[cpp_dev12_long](../build/reference/includes/cpp_dev12_long_md.md)] does not.  
+ These are now supported, but with this exception: For defaulted functions, the use of `=default` to request member-wise move constructors and move assignment operators is not supported. The copies and moves don't interact precisely like the Standard says they should—for example, deletion of moves is specified to also suppress copies, but Visual Studio 2013 does not.  
   
  For information about how to use defaulted and deleted functions, see [Functions](../cpp/functions-cpp.md).  
   
@@ -229,31 +226,31 @@ template <typename T> struct Identity {
  [[In This Article](#top)]  
   
 ###  <a name="stl"></a> Standard Library Features  
- That covers the Core Language. As for the C++11 Standard Library, we don't have a pretty comparison table of features, but [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)] implemented it, with two exceptions.  First, when a library feature depended on functionality that was missing in the compiler, it was either simulated—for example, simulated variadic templates for `make_shared<T>()`—or it wasn't implemented. (There were only a few cases—most notably, `<initializer_list>`—which were fully implemented in [!INCLUDE[cpp_dev12_long](../build/reference/includes/cpp_dev12_long_md.md)].)  With very few exceptions, C99 was implemented in [!INCLUDE[cpp_dev12_long](../build/reference/includes/cpp_dev12_long_md.md)] and C++ wrapper headers provided. For more information, see [C99 library support in Visual Studio 2013](http://go.microsoft.com/fwlink/p/?LinkId=321308).  
+ That covers the Core Language. As for the C++11 Standard Library, we don't have a pretty comparison table of features, but Visual Studio 2012 implemented it, with two exceptions.  First, when a library feature depended on functionality that was missing in the compiler, it was either simulated—for example, simulated variadic templates for `make_shared<T>()`—or it wasn't implemented. (There were only a few cases—most notably, `<initializer_list>`—which were fully implemented in Visual Studio 2013.)  With very few exceptions, C99 was implemented in Visual Studio 2013 and C++ wrapper headers provided. For more information, see [C99 library support in Visual Studio 2013](http://go.microsoft.com/fwlink/p/?LinkId=321308).  
   
- Here's a partial list of the changes in [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)] and [!INCLUDE[cpp_dev12_long](../build/reference/includes/cpp_dev12_long_md.md)]:  
+ Here's a partial list of the changes in Visual Studio 2012 and Visual Studio 2013:  
   
  **Emplacement:** As required by C++11, `emplace()`/`emplace_front()`/`emplace_back()`/`emplace_hint()`/`emplace_after()` are implemented in all containers for "arbitrary" numbers of arguments (see the "Simulated variadics" section).  For example, `vector<T>` has "`template <typename... Args> void emplace_back(Args&&... args)`", which directly constructs an element of type T at the back of the vector from an arbitrary number of arbitrary arguments, perfectly forwarded.  This can be more efficient than `push_back(T&&)`, which would involve an extra move construction and destruction.  
   
- **Variadics:** [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)] had a scheme for simulating variadic templates. In [!INCLUDE[cpp_dev12_long](../build/reference/includes/cpp_dev12_long_md.md)], the simulations are gone and **variadics are fully implemented**. If your code relies on the old simulated variadics behavior, you have to fix it. However, the switch to real variadic templates has **improved compile times** and **reduced compiler memory consumption**.  
+ **Variadics:** Visual Studio 2012 had a scheme for simulating variadic templates. In Visual Studio 2013, the simulations are gone and **variadics are fully implemented**. If your code relies on the old simulated variadics behavior, you have to fix it. However, the switch to real variadic templates has **improved compile times** and **reduced compiler memory consumption**.  
   
  **Explicit conversion operators:** In the Core Language, explicit conversion operators are a general feature—for example, you can have `explicit operator MyClass()`. However, the Standard Library currently uses only one form: `explicit operator bool()`, which makes classes safely Boolean-testable. (Plain "`operator bool()`" is notoriously dangerous.) Previously, Visual C++ simulated `explicit operator bool()` with `operator pointer-to-member()`, which led to various headaches and slight inefficiencies. Now, this "fake bool" workaround is completely removed.  
   
  **Randomness:** `uniform_int_distribution` is now perfectly unbiased, and `shuffle()` is implemented in `<algorithm>`, which directly accepts Uniform Random Number Generators like `mersenne_twister`.  
   
- **Resistance to overloaded address-of operators:** C++98/03 prohibited an element of a C++ Standard Library container from overloading its address-of operator.  This is what classes like `CComPtr` do, so that helper classes like `CAdapt` were required to shield the C++ Standard Library from such overloads.  During the development of Visual C++ in Visual Studio 2010, C++ Standard Library changes made it reject overloaded address-of operators in even more situations. C++11 changed the requirements to make overloaded address-of operators acceptable. C++11, and Visual C++ in Visual Studio 2010, provide the helper function `std::addressof()`, which can get the true address of an object regardless of operator overloading.  Before Visual C++ in Visual Studio 2010 was released, we attempted to replace occurrences of "`&elem`" with "`std::addressof(elem)`", which is appropriately resistant.  [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)] went further, so that classes that overload their address-of operator should be usable throughout the C++ Standard Library.  
+ **Resistance to overloaded address-of operators:** C++98/03 prohibited an element of a C++ Standard Library container from overloading its address-of operator.  This is what classes like `CComPtr` do, so that helper classes like `CAdapt` were required to shield the C++ Standard Library from such overloads.  During the development of Visual C++ in Visual Studio 2010, C++ Standard Library changes made it reject overloaded address-of operators in even more situations. C++11 changed the requirements to make overloaded address-of operators acceptable. C++11, and Visual C++ in Visual Studio 2010, provide the helper function `std::addressof()`, which can get the true address of an object regardless of operator overloading.  Before Visual C++ in Visual Studio 2010 was released, we attempted to replace occurrences of "`&elem`" with "`std::addressof(elem)`", which is appropriately resistant.  Visual Studio 2012 went further, so that classes that overload their address-of operator should be usable throughout the C++ Standard Library.  
   
- **[!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)] went beyond C++11 in several ways:**  
+ **Visual Studio 2012 went beyond C++11 in several ways:**  
   
  **SCARY iterators:** As permitted but not required by the C++11 Standard, SCARY iterators have been implemented, as described by [N2911 "Minimizing Dependencies within Generic Classes for Faster and Smaller Programs"](http://go.microsoft.com/fwlink/p/?LinkID=235115) and [N2980 "SCARY Iterator Assignment and Initialization, Revision 1"](http://go.microsoft.com/fwlink/p/?LinkID=235116).  
   
  **Filesystem:** The `<filesystem>` header from [the TR2 proposal](http://go.microsoft.com/fwlink/p/?LinkID=235117) has been added. It offers `recursive_directory_iterator` and other interesting features.  Before work on TR2 was frozen because C++0x was running very late and was changing to C++11, the 2006 proposal was derived from [Boost.Filesystem V2](http://go.microsoft.com/fwlink/p/?LinkID=235118). It later evolved into Boost.Filesystem V3, which is implemented in Visual Studio 2015.  
   
- And a major optimization!  All of our containers are now optimally small given their current representations.  This refers to the container objects themselves, not to their pointed-to contents.  For example, `std::vector` contains three raw pointers.  In Visual C++ in Visual Studio 2010, x86 release mode, `std::vector` was 16 bytes.  In [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)], it is 12 bytes, which is optimally small.  This is a big deal—if you have 100,000 vectors in your program, [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)] saves you 400,000 bytes.  Decreased memory usage saves both space and time.  
+ And a major optimization!  All of our containers are now optimally small given their current representations.  This refers to the container objects themselves, not to their pointed-to contents.  For example, `std::vector` contains three raw pointers.  In Visual C++ in Visual Studio 2010, x86 release mode, `std::vector` was 16 bytes.  In Visual Studio 2012, it is 12 bytes, which is optimally small.  This is a big deal—if you have 100,000 vectors in your program, Visual Studio 2012 saves you 400,000 bytes.  Decreased memory usage saves both space and time.  
   
  This was achieved by avoiding the storage of empty allocators and comparators, because `std::allocator` and `std::less` are stateless.  (These optimizations are enabled for custom allocators/comparators too, as long as they are stateless.  Obviously, storage of stateful allocators/comparators cannot be avoided, but those are very rare.)  
   
- **[!INCLUDE[cpp_dev12_long](../build/reference/includes/cpp_dev12_long_md.md)] implemented some key C++14 library features:**  
+ **Visual Studio 2013 implemented some key C++14 library features:**  
   
 -   "Transparent operator functors" `less<>`, `greater<>`, `plus<>`, `multiplies<>`, and so on.  
   
