@@ -34,7 +34,7 @@ class InputIterator;
  `X`  
  The typename of the InputIterator template class.  
   
-## Members  
+### Members  
   
 ### Public Typedefs  
   
@@ -65,7 +65,7 @@ class InputIterator;
 ## Inheritance Hierarchy  
  `InputIterator`  
   
-## Requirements  
+### Requirements  
  **Header:** collection.h  
   
  **Namespace:** Platform::Collections  

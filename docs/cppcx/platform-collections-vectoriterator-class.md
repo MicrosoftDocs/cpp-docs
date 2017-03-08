@@ -36,7 +36,7 @@ class VectorIterator;
  `T`  
  The typename of the VectorIterator template class.  
   
-## Members  
+### Members  
   
 ### Public Typedefs  
   
@@ -77,7 +77,7 @@ class VectorIterator;
 ## Inheritance Hierarchy  
  `VectorIterator`  
   
-## Requirements  
+### Requirements  
  **Header:** collection.h  
   
  **Namespace:** Platform::Collections  

@@ -29,7 +29,7 @@ Represents a [GUID](http://msdn.microsoft.com/library/windows/desktop/aa373931\(
 public value struct Guid  
 ```  
   
-## Members  
+### Members  
  Guid has the Equals(), GetHashCode(), and ToString() methods derived from the [Platform::Object Class](../cppcx/platform-object-class.md), and the GetTypeCode() method derived from the [Platform::Type Class](../cppcx/platform-type-class.md). Guid also has the following members.  
   
 |Member|Description|  
@@ -39,10 +39,10 @@ public value struct Guid
 |[operator!=](#operator-not-equal)|Not equals operator.|  
 |[operator()](#operator-call)|Converts a Guid to a GUID.|  
   
-## Remarks  
+### Remarks  
  For an example of how to generate a new Platform::Guid using the Windows function [CoCreateGuid](http://msdn.microsoft.com/library/windows/desktop/ms688568\(v=vs.85\).aspx), see [WinRT component: How to generate a GUID?](http://blogs.msdn.com/b/eternalcoding/archive/2013/03/25/winrt-component-how-to-generate-a-guid.aspx)  
   
-## Requirements  
+### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
   
  **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  

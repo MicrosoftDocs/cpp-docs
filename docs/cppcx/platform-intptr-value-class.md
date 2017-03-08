@@ -29,7 +29,7 @@ Represents an signed pointer or handle, and whose size is platform-specific (32-
 public value struct IntPtr  
 ```  
   
-## Members  
+### Members  
  IntPtr has the following members:  
   
 |Member|Description|  
@@ -38,7 +38,7 @@ public value struct IntPtr
 |[IntPtr::op_explicit Operator](#op-explicit)|Converts the specified parameter to an IntPtr or a pointer to an IntPtr value.|  
 |[IntPtr::ToInt32 Method](#toint32)|Converts the current IntPtr to a 32-bit integer.|  
   
-## Requirements  
+### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
   
  **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  

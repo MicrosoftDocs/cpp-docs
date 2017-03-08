@@ -37,7 +37,7 @@ template <typename T, typename E>
  `E`  
  Specifies a binary predicate for testing equality with values of type `T`. The default value is `std::equal_to<T>`.  
   
-## Remarks  
+### Remarks  
  Allowed types are:  
   
 1.  integers  
@@ -54,7 +54,7 @@ template <typename T, typename E>
   
  If you attempt to use a Vector type in a public return value or parameter, compiler error C3986 will be raised. You can fix the error by changing the parameter or return value type to [Windows::Foundation::Collections::IVector](http://go.microsoft.com/fwlink/p/?LinkId=262410). For more information, see [Collections (C++/CX)](../cppcx/collections-c-cx.md).  
   
-## Members  
+### Members  
   
 ### Public Constructors  
   
@@ -90,7 +90,7 @@ template <typename T, typename E>
 ## Inheritance Hierarchy  
  `Vector`  
   
-## Requirements  
+### Requirements  
  **Header:** collection.h  
   
  **Namespace:** Platform::Collections  

@@ -29,7 +29,7 @@ Represents COM errors that occur during application execution. COMException is t
 public ref class COMException : Exception,    IException,    IPrintable,    IEquatable  
 ```  
   
-## Members  
+### Members  
  The COMException class inherits from the Object class and the IException, IPrintable, and IEquatable interfaces.  
   
  COMException also has the following types of members.  
@@ -72,7 +72,7 @@ public ref class COMException : Exception,    IException,    IPrintable,    IEqu
 |OutOfBoundsException|E_BOUNDS|Thrown when an operation attempts to access data outside the valid range.|  
 |OutOfMemoryException|E_OUTOFMEMORY|Thrown when there's insufficient memory to complete the operation.|  
   
-## Requirements  
+### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
   
  **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  

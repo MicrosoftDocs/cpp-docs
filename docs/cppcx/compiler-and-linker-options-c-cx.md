@@ -40,7 +40,7 @@ An environment variable, C++/CX compiler options, and linker options support the
 |/WINMDKEYCONTAINER:*name*|Specifies a key container to sign an assembly. The *name* parameter corresponds to the key container that's used to sign the metadata file.|  
 |/WINMDKEYFILE:*filename*|Specifies a key or a key pair to sign the assembly. The *filename* parameter corresponds to the key that's used to sign the metadata file.|  
   
-## Remarks  
+### Remarks  
  When you use **/ZW**, the compiler automatically links to the DLL version of the C Runtime (CRT). Linking to the static library version is not allowed, and any use of CRT functions that are not allowed in a Universal Windows Platform app will cause a compile-time error.  
   
 ## See Also  

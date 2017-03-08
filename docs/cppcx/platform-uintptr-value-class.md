@@ -29,7 +29,7 @@ Represents an unsigned pointer whose size is appropriate for the platform (32-bi
 public value struct UintPtr  
 ```  
   
-## Requirements  
+### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
   
  **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  

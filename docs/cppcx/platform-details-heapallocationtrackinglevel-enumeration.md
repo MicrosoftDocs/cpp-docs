@@ -30,13 +30,13 @@ This enumeration is intended for internal use only, and is not intended to be us
 enumm class HeapAllocationTrackingLevel;  
 ```  
   
-## Remarks  
+### Remarks  
  This enumeration is provided solely for completeness because it can be inspected with browsers.  
   
 ## Inheritance Hierarchy  
  `Platform`  
   
-## Requirements  
+### Requirements  
  **Metadata:** platform.winmd  
   
  **Namespace:** Platform::Details  

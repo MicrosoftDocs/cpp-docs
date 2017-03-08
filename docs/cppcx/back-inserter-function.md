@@ -43,10 +43,10 @@ Platform::BackInsertIterator<T>
  `v`  
  An interface pointer that provides access to the underlying collection.  
   
-## Return Value  
+### Return Value  
  An iterator.  
   
-## Requirements  
+### Requirements  
  **Header:** collection.h  
   
  **Namespace:** Windows::Foundation::Collections  

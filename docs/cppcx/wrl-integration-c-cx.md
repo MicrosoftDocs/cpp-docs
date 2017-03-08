@@ -20,7 +20,7 @@ You freely can mix [!INCLUDE[cppwrt_short](includes/cppwrt-short-md.md)] code wi
 ## [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] development  
  For more information about authoring and consuming [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] components, see [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).  
   
-## Example  
+### Example  
  The following code snippet demonstrates using [!INCLUDE[cppwrt_short](includes/cppwrt-short-md.md)] and [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] to consume [!INCLUDE[wrt](includes/wrt-md.md)] classes and examine a metadata file.  
 >>>>>>> master
   

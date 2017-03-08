@@ -31,7 +31,7 @@ public ref class Platform::Type :
     Platform::Details::IPrintable  
 ```  
   
-## Remarks  
+### Remarks  
  The `Type` class is useful in applications that must direct processing by using an `if` or `switch` statement that branches based on the run-time type of an object. The type code that describes the category of a type is retrieved by using the [Type::GetTypeCode Method](#gettypecode) member function.  
   
 ## Public methods  
@@ -53,7 +53,7 @@ public ref class Platform::Type :
 |[operator Type^](../cppcx/operator-subtracttype-hat.md)|Enables conversion from `Windows::UI::Xaml::Interop::TypeName` to `Platform::Type`.|  
 |[operator Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-subtractwindows-ui-xaml-interop-typename.md)|Enables conversion from `Platform::Type` to `Windows::UI::Xaml::Interop::TypeName`.|  
   
-## Requirements  
+### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
   
  **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  

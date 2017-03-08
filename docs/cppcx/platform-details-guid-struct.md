@@ -30,13 +30,13 @@ This struct is intended for internal use only, and is not intended to be used fo
 ref struct __GUID;  
 ```  
   
-## Remarks  
+### Remarks  
  This struct is provided solely for completeness because it can be inspected with browsers.  
   
 ## Inheritance Hierarchy  
  `Platform`  
   
-## Requirements  
+### Requirements  
  **Metadata:** platform.winmd  
   
  **Namespace:** Platform::Details  

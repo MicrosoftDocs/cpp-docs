@@ -40,9 +40,9 @@ inline ::std::vector<T> to_vector(IVectorView<T>^ v);
  `v`  
  An IVector or IVectorView interface that provides access to an underlying Vector or VectorView object.  
   
-## Return Value  
+### Return Value  
   
-## Requirements  
+### Requirements  
  **Header:** collection.h  
   
  **Namespace:** Windows::Foundation::Collections  

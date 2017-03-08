@@ -32,7 +32,7 @@ namespace Platform {
 }}  
 ```  
   
-## Members  
+### Members  
  Although this namespace is intended for internal use, browsers can display the following members of this namespace.  
   
 |Name|Remark|  
@@ -58,7 +58,7 @@ namespace Platform {
 ## Inheritance Hierarchy  
  `Platform`  
   
-## Requirements  
+### Requirements  
  **Metadata:** platform.winmd  
   
  **Namespace:** Platform::CompilerServices  

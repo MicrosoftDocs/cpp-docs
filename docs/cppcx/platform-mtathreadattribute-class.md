@@ -29,7 +29,7 @@ Indicates that the threading model for an application is multi-threaded apartmen
 public ref class MTAThreadAttribute sealed : Attribute  
 ```  
   
-## Members  
+### Members  
   
 ### Public Constructors  
   
@@ -49,7 +49,7 @@ public ref class MTAThreadAttribute sealed : Attribute
 ## Inheritance Hierarchy  
  `Platform`  
   
-## Requirements  
+### Requirements  
  **Metadata:** platform.winmd  
   
  **Namespace:** Platform  
@@ -76,7 +76,7 @@ Determines whether the specified object is equal to the current object.
 public:virtual override bool Equals(  Object^ obj)  
 ```  
   
-## Parameters  
+### Parameters  
  obj  
  The object to compare.  
   

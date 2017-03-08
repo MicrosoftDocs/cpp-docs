@@ -32,7 +32,7 @@ private ref class Array<TArg, 1> :
     public IBoxArray<TArg>   
 ```  
   
-## Members  
+### Members  
  Platform::Array inherits all its methods from [Platform::WriteOnlyArray Class](../cppcx/platform-writeonlyarray-class.md) and implements the `Value` property of the [Platform::IBoxArray Interface](../cppcx/platform-iboxarray-interface.md).  
   
 ### Public Constructors  
@@ -50,7 +50,7 @@ private ref class Array<TArg, 1> :
 |-|-|  
 |[Array::Value Property](#value)|Retrieves a handle to the current array.|  
   
-## Remarks  
+### Remarks  
  The Array class is sealed and cannot be inherited.  
   
  The Windows Runtime type system does not support the concept of jagged arrays and therefore you cannot pass an IVector<Platform::Array\<T>> as a return value or method parameter. To pass a jagged array or a sequence of sequences across the ABI, use `IVector<IVector<T>^>`.  
@@ -61,7 +61,7 @@ private ref class Array<TArg, 1> :
   
  This class is defined in the vccorlib.h header, which is automatically included by the compiler. It is visible in Intellisense but not in Object Browser because it is not a public type defined in platform.winmd.  
   
-## Requirements  
+### Requirements  
  Compiler option: **/ZW**  
 
  
@@ -85,7 +85,7 @@ Array(T* data, unsigned int size);
  `data`  
  A pointer to an array of data of type `T` that is used to initialize this Array object.  
   
-## Remarks  
+### Remarks  
  For more information about how to create instances of Platform::Array, see [Array and WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md).
 
 ## <a name="get"></a>  Array::get Method
@@ -101,7 +101,7 @@ T& get(unsigned int index)  const;
  `index`  
  A zero-based index that identifies an element in the array. The minimum index is 0 and the maximum index is the value specified by the `size` parameter in the [Array constructor](#ctor).  
   
-## Return Value  
+### Return Value  
  The array element specified by the `index` parameter.  
   
 ## <a name="value"></a>  Array::Value Property
@@ -113,7 +113,7 @@ Retrieves a handle to the current array.
 property Array^ Value;  
 ```  
   
-## Return Value  
+### Return Value  
  A handle to the current array.  
 
 ## See Also  

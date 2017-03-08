@@ -29,13 +29,13 @@ A value class that represents a set of named constants.
 public class Enum  
 ```  
   
-## Members  
+### Members  
  The Enum class inherits the Equals(), GetHashCode(), and ToString() methods from the [Platform::Object Class](../cppcx/platform-object-class.md).  
   
-## Remarks  
+### Remarks  
  Use the [public enum class](../windows/enum-class-cpp-component-extensions.md) keyword to create enumerations. Do not use the Platform::Enum type explicitly. For more information, see [Enums](../cppcx/enums-c-cx.md).  
   
-## Requirements  
+### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
   
  **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  

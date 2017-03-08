@@ -30,12 +30,12 @@ Thrown when the internal state of an object has changed, thereby invalidating th
 public ref class ChangedStateException : COMException,    IException,    IPrintable,    IEquatable  
 ```  
   
-## Remarks  
+### Remarks  
  One example where this exception is thrown is when methods of a collection iterator or a collection view are called after the parent collection has changed, invalidating the results of the method.  
   
  For more information, see the [COMException](../cppcx/platform-comexception-class.md) class.  
   
-## Requirements  
+### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
   
  **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  

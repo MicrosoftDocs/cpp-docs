@@ -36,7 +36,7 @@ class VectorViewIterator;
  `T`  
  The typename of the VectorViewIterator template class.  
   
-## Members  
+### Members  
   
 ### Public Typedefs  
   
@@ -77,7 +77,7 @@ class VectorViewIterator;
 ## Inheritance Hierarchy  
  `VectorViewIterator`  
   
-## Requirements  
+### Requirements  
  **Header:** collection.h  
   
  **Namespace:** Platform::Collections  

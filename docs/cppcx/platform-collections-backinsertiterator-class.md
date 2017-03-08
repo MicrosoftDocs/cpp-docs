@@ -35,10 +35,10 @@ public ::std::iterator<::std::output_iterator_tag, void, void, void, void>;
  `T`  
  The type of item in the current collection.  
   
-## Remarks  
+### Remarks  
  The BackInsertIterator class implements the rules required by the [back_insert_iterator Class](../standard-library/back-insert-iterator-class.md).  
   
-## Members  
+### Members  
   
 ### Public Constructors  
   
@@ -57,7 +57,7 @@ public ::std::iterator<::std::output_iterator_tag, void, void, void, void>;
 ## Inheritance Hierarchy  
  `BackInsertIterator`  
   
-## Requirements  
+### Requirements  
  **Header:** collection.h  
   
  **Namespace:** Platform::Collections  
@@ -78,7 +78,7 @@ explicit BackInsertIterator(
  `v`  
  An IVector\<T> object.  
   
-## Remarks  
+### Remarks  
  A `BackInsertIterator` inserts elements after the last element of the object specified by parameter `v`.  
  
 ## <a name="operator-assign"></a>  BackInsertIterator::operator= Operator
@@ -94,7 +94,7 @@ BackInsertIterator& operator=( const T& t);
  `t`  
  The object to append to the current collection.  
   
-## Return Value  
+### Return Value  
  A reference to the current BackInsertIterator.  
 
 ## <a name="operator-dereference"></a>  BackInsertIterator::operator* Operator
@@ -106,10 +106,10 @@ Retrieves a reference to the current BackInsertIterator.
 BackInsertIterator& operator*();  
 ```  
   
-## Return Value  
+### Return Value  
  A reference to the current BackInsertIterator.  
   
-## Remarks  
+### Remarks  
  This operator returns a reference to the current BackInsertIterator; not to any element in the current collection.  
  
 ## <a name="operator-increment"></a>  BackInsertIterator::operator++ Operator
@@ -124,10 +124,10 @@ BackInsertIterator& operator++();
 BackInsertIterator operator++(int);  
 ```  
   
-## Return Value  
+### Return Value  
  A reference to the current BackInsertIterator.  
   
-## Remarks  
+### Remarks  
  By design, the first syntax example pre-increments the current BackInsertIterator, and the second syntax post-increments the current BackInsertIterator. The `int` type in the second syntax indicates a post-increment operation, not an actual integer operand.  
   
  However, this operator does not actually modify the BackInsertIterator. Instead, this operator returns a reference to the unmodified, current iterator. This is the same behavior as [operator*](#dereference-operator).  
