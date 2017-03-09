@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCAutoHideButton"
+f1_keywords: ['CMFCAutoHideButton', 'AFXAUTOHIDEBUTTON/CMFCAutoHideButton', 'AFXAUTOHIDEBUTTON/CMFCAutoHideButton::BringToTop', 'AFXAUTOHIDEBUTTON/CMFCAutoHideButton::Create', 'AFXAUTOHIDEBUTTON/CMFCAutoHideButton::GetAlignment', 'AFXAUTOHIDEBUTTON/CMFCAutoHideButton::GetAutoHideWindow', 'AFXAUTOHIDEBUTTON/CMFCAutoHideButton::GetParentToolBar', 'AFXAUTOHIDEBUTTON/CMFCAutoHideButton::GetRect', 'AFXAUTOHIDEBUTTON/CMFCAutoHideButton::GetSize', 'AFXAUTOHIDEBUTTON/CMFCAutoHideButton::GetTextSize', 'AFXAUTOHIDEBUTTON/CMFCAutoHideButton::HighlightButton', 'AFXAUTOHIDEBUTTON/CMFCAutoHideButton::IsActive', 'AFXAUTOHIDEBUTTON/CMFCAutoHideButton::IsHighlighted', 'AFXAUTOHIDEBUTTON/CMFCAutoHideButton::IsHorizontal', 'AFXAUTOHIDEBUTTON/CMFCAutoHideButton::IsTop', 'AFXAUTOHIDEBUTTON/CMFCAutoHideButton::IsVisible', 'AFXAUTOHIDEBUTTON/CMFCAutoHideButton::Move', 'AFXAUTOHIDEBUTTON/CMFCAutoHideButton::OnDraw', 'AFXAUTOHIDEBUTTON/CMFCAutoHideButton::OnDrawBorder', 'AFXAUTOHIDEBUTTON/CMFCAutoHideButton::OnFillBackground', 'AFXAUTOHIDEBUTTON/CMFCAutoHideButton::ReplacePane', 'AFXAUTOHIDEBUTTON/CMFCAutoHideButton::ShowAttachedWindow', 'AFXAUTOHIDEBUTTON/CMFCAutoHideButton::ShowButton', 'AFXAUTOHIDEBUTTON/CMFCAutoHideButton::UnSetAutoHideMode']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

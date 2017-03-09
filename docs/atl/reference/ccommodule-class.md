@@ -113,7 +113,7 @@ class CComModule : public _ATL_MODULE
  `CComModule`  
   
 ## Requirements  
- `Header:` atlbase.h  
+ **Header:** atlbase.h  
   
 ##  <a name="getclassobject"></a>  CComModule::GetClassObject  
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  

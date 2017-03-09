@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CPropExchange"
+f1_keywords: ['CPropExchange', 'AFXCTL/CPropExchange', 'AFXCTL/CPropExchange::ExchangeBlobProp', 'AFXCTL/CPropExchange::ExchangeFontProp', 'AFXCTL/CPropExchange::ExchangePersistentProp', 'AFXCTL/CPropExchange::ExchangeProp', 'AFXCTL/CPropExchange::ExchangeVersion', 'AFXCTL/CPropExchange::GetVersion', 'AFXCTL/CPropExchange::IsAsynchronous', 'AFXCTL/CPropExchange::IsLoading']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

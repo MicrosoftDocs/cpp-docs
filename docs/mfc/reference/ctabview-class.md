@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CTabView"
+f1_keywords: ['CTabView', 'AFXTABVIEW/CTabView', 'AFXTABVIEW/CTabView::AddView', 'AFXTABVIEW/CTabView::FindTab', 'AFXTABVIEW/CTabView::GetActiveView', 'AFXTABVIEW/CTabView::GetTabControl', 'AFXTABVIEW/CTabView::RemoveView', 'AFXTABVIEW/CTabView::SetActiveView', 'AFXTABVIEW/CTabView::IsScrollBar', 'AFXTABVIEW/CTabView::OnActivateView']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

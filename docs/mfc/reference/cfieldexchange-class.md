@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CFieldExchange"
+f1_keywords: ['CFieldExchange', 'AFXDB/CFieldExchange', 'AFXDB/CFieldExchange::IsFieldType', 'AFXDB/CFieldExchange::SetFieldType']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

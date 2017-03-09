@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDaoTableDef"
+f1_keywords: ['CDaoTableDef', 'AFXDAO/CDaoTableDef', 'AFXDAO/CDaoTableDef::CDaoTableDef', 'AFXDAO/CDaoTableDef::Append', 'AFXDAO/CDaoTableDef::CanUpdate', 'AFXDAO/CDaoTableDef::Close', 'AFXDAO/CDaoTableDef::Create', 'AFXDAO/CDaoTableDef::CreateField', 'AFXDAO/CDaoTableDef::CreateIndex', 'AFXDAO/CDaoTableDef::DeleteField', 'AFXDAO/CDaoTableDef::DeleteIndex', 'AFXDAO/CDaoTableDef::GetAttributes', 'AFXDAO/CDaoTableDef::GetConnect', 'AFXDAO/CDaoTableDef::GetDateCreated', 'AFXDAO/CDaoTableDef::GetDateLastUpdated', 'AFXDAO/CDaoTableDef::GetFieldCount', 'AFXDAO/CDaoTableDef::GetFieldInfo', 'AFXDAO/CDaoTableDef::GetIndexCount', 'AFXDAO/CDaoTableDef::GetIndexInfo', 'AFXDAO/CDaoTableDef::GetName', 'AFXDAO/CDaoTableDef::GetRecordCount', 'AFXDAO/CDaoTableDef::GetSourceTableName', 'AFXDAO/CDaoTableDef::GetValidationRule', 'AFXDAO/CDaoTableDef::GetValidationText', 'AFXDAO/CDaoTableDef::IsOpen', 'AFXDAO/CDaoTableDef::Open', 'AFXDAO/CDaoTableDef::RefreshLink', 'AFXDAO/CDaoTableDef::SetAttributes', 'AFXDAO/CDaoTableDef::SetConnect', 'AFXDAO/CDaoTableDef::SetName', 'AFXDAO/CDaoTableDef::SetSourceTableName', 'AFXDAO/CDaoTableDef::SetValidationRule', 'AFXDAO/CDaoTableDef::SetValidationText', 'AFXDAO/CDaoTableDef::m_pDAOTableDef', 'AFXDAO/CDaoTableDef::m_pDatabase']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

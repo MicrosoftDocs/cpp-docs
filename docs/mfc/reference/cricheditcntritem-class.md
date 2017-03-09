@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CRichEditCntrItem"
+f1_keywords: ['CRichEditCntrItem', 'AFXRICH/CRichEditCntrItem', 'AFXRICH/CRichEditCntrItem::CRichEditCntrItem', 'AFXRICH/CRichEditCntrItem::SyncToRichEditObject']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

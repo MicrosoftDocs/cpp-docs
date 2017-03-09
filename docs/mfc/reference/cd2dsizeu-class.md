@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CD2DSizeU"
-  - "afxrendertarget/CD2DSizeU"
+f1_keywords: ['CD2DSizeU', 'AFXRENDERTARGET/CD2DSizeU', 'AFXRENDERTARGET/CD2DSizeU::CD2DSizeU', 'AFXRENDERTARGET/CD2DSizeU::IsNull']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

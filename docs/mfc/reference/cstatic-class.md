@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CStatic"
+f1_keywords: ['CStatic', 'AFXWIN/CStatic', 'AFXWIN/CStatic::CStatic', 'AFXWIN/CStatic::Create', 'AFXWIN/CStatic::DrawItem', 'AFXWIN/CStatic::GetBitmap', 'AFXWIN/CStatic::GetCursor', 'AFXWIN/CStatic::GetEnhMetaFile', 'AFXWIN/CStatic::GetIcon', 'AFXWIN/CStatic::SetBitmap', 'AFXWIN/CStatic::SetCursor', 'AFXWIN/CStatic::SetEnhMetaFile', 'AFXWIN/CStatic::SetIcon']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

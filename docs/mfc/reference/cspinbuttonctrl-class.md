@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSpinButtonCtrl"
+f1_keywords: ['CSpinButtonCtrl', 'AFXCMN/CSpinButtonCtrl', 'AFXCMN/CSpinButtonCtrl::CSpinButtonCtrl', 'AFXCMN/CSpinButtonCtrl::Create', 'AFXCMN/CSpinButtonCtrl::CreateEx', 'AFXCMN/CSpinButtonCtrl::GetAccel', 'AFXCMN/CSpinButtonCtrl::GetBase', 'AFXCMN/CSpinButtonCtrl::GetBuddy', 'AFXCMN/CSpinButtonCtrl::GetPos', 'AFXCMN/CSpinButtonCtrl::GetRange', 'AFXCMN/CSpinButtonCtrl::SetAccel', 'AFXCMN/CSpinButtonCtrl::SetBase', 'AFXCMN/CSpinButtonCtrl::SetBuddy', 'AFXCMN/CSpinButtonCtrl::SetPos', 'AFXCMN/CSpinButtonCtrl::SetRange']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CArchiveException"
+f1_keywords: ['CArchiveException', 'AFX/CArchiveException', 'AFX/CArchiveException::CArchiveException', 'AFX/CArchiveException::m_cause', 'AFX/CArchiveException::m_strFileName']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

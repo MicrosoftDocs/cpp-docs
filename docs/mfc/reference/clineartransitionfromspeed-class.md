@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxanimationcontroller/CLinearTransitionFromSpeed"
-  - "CLinearTransitionFromSpeed"
+f1_keywords: ['CLinearTransitionFromSpeed', 'AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed', 'AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed::CLinearTransitionFromSpeed', 'AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed::Create', 'AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed::m_dblFinalValue', 'AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed::m_dblSpeed']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

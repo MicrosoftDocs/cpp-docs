@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleException"
+f1_keywords: ['COleException', 'AFXDISP/COleException', 'AFXDISP/COleException::Process', 'AFXDISP/COleException::m_sc']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

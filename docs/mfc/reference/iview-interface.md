@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IView"
+f1_keywords: ['IView', 'No header/IView', 'No header/IView::OnActivateView', 'No header/IView::OnInitialUpdate', 'No header/IView::OnUpdate']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

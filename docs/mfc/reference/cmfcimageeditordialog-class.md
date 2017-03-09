@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCImageEditorDialog"
+f1_keywords: ['CMFCImageEditorDialog', 'AFXIMAGEEDITORDIALOG/CMFCImageEditorDialog', 'AFXIMAGEEDITORDIALOG/CMFCImageEditorDialog::CMFCImageEditorDialog']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

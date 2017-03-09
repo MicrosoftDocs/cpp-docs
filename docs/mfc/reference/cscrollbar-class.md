@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CScrollBar"
+f1_keywords: ['CScrollBar', 'AFXWIN/CScrollBar', 'AFXWIN/CScrollBar::CScrollBar', 'AFXWIN/CScrollBar::Create', 'AFXWIN/CScrollBar::EnableScrollBar', 'AFXWIN/CScrollBar::GetScrollBarInfo', 'AFXWIN/CScrollBar::GetScrollInfo', 'AFXWIN/CScrollBar::GetScrollLimit', 'AFXWIN/CScrollBar::GetScrollPos', 'AFXWIN/CScrollBar::GetScrollRange', 'AFXWIN/CScrollBar::SetScrollInfo', 'AFXWIN/CScrollBar::SetScrollPos', 'AFXWIN/CScrollBar::SetScrollRange', 'AFXWIN/CScrollBar::ShowScrollBar']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleConvertDialog"
+f1_keywords: ['COleConvertDialog', 'AFXODLGS/COleConvertDialog', 'AFXODLGS/COleConvertDialog::COleConvertDialog', 'AFXODLGS/COleConvertDialog::DoConvert', 'AFXODLGS/COleConvertDialog::DoModal', 'AFXODLGS/COleConvertDialog::GetClassID', 'AFXODLGS/COleConvertDialog::GetDrawAspect', 'AFXODLGS/COleConvertDialog::GetIconicMetafile', 'AFXODLGS/COleConvertDialog::GetSelectionType', 'AFXODLGS/COleConvertDialog::m_cv']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

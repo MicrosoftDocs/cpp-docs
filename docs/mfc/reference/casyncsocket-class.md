@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CAsyncSocket"
+f1_keywords: ['CAsyncSocket', 'AFXSOCK/CAsyncSocket', 'AFXSOCK/CAsyncSocket::CAsyncSocket', 'AFXSOCK/CAsyncSocket::Accept', 'AFXSOCK/CAsyncSocket::AsyncSelect', 'AFXSOCK/CAsyncSocket::Attach', 'AFXSOCK/CAsyncSocket::Bind', 'AFXSOCK/CAsyncSocket::Close', 'AFXSOCK/CAsyncSocket::Connect', 'AFXSOCK/CAsyncSocket::Create', 'AFXSOCK/CAsyncSocket::Detach', 'AFXSOCK/CAsyncSocket::FromHandle', 'AFXSOCK/CAsyncSocket::GetLastError', 'AFXSOCK/CAsyncSocket::GetPeerName', 'AFXSOCK/CAsyncSocket::GetPeerNameEx', 'AFXSOCK/CAsyncSocket::GetSockName', 'AFXSOCK/CAsyncSocket::GetSockNameEx', 'AFXSOCK/CAsyncSocket::GetSockOpt', 'AFXSOCK/CAsyncSocket::IOCtl', 'AFXSOCK/CAsyncSocket::Listen', 'AFXSOCK/CAsyncSocket::Receive', 'AFXSOCK/CAsyncSocket::ReceiveFrom', 'AFXSOCK/CAsyncSocket::ReceiveFromEx', 'AFXSOCK/CAsyncSocket::Send', 'AFXSOCK/CAsyncSocket::SendTo', 'AFXSOCK/CAsyncSocket::SendToEx', 'AFXSOCK/CAsyncSocket::SetSockOpt', 'AFXSOCK/CAsyncSocket::ShutDown', 'AFXSOCK/CASyncSocket::Socket', 'AFXSOCK/CAsyncSocket::OnAccept', 'AFXSOCK/CAsyncSocket::OnClose', 'AFXSOCK/CAsyncSocket::OnConnect', 'AFXSOCK/CAsyncSocket::OnOutOfBandData', 'AFXSOCK/CAsyncSocket::OnReceive', 'AFXSOCK/CAsyncSocket::OnSend', 'AFXSOCK/CAsyncSocket::m_hSocket']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

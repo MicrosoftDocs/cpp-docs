@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMemoryException"
+f1_keywords: ['CMemoryException', 'AFX/CMemoryException', 'AFX/CMemoryException::CMemoryException']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

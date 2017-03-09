@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCCmdUsageCount"
+f1_keywords: ['CMFCCmdUsageCount', 'AFXCMDUSAGECOUNT/CMFCCmdUsageCount', 'AFXCMDUSAGECOUNT/CMFCCmdUsageCount::AddCmd', 'AFXCMDUSAGECOUNT/CMFCCmdUsageCount::GetCount', 'AFXCMDUSAGECOUNT/CMFCCmdUsageCount::HasEnoughInformation', 'AFXCMDUSAGECOUNT/CMFCCmdUsageCount::IsFreqeuntlyUsedCmd', 'AFXCMDUSAGECOUNT/CMFCCmdUsageCount::Reset', 'AFXCMDUSAGECOUNT/CMFCCmdUsageCount::Serialize', 'AFXCMDUSAGECOUNT/CMFCCmdUsageCount::SetOptions']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

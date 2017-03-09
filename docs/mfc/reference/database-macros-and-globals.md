@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.macros.data"
+f1_keywords: ['AFXDB/AFX_ODBC_CALL', 'AFXDB/AFX_SQL_ASYNC', 'AFXDB/AFX_SQL_SYNC', 'AFXDB/AfxGetHENV']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

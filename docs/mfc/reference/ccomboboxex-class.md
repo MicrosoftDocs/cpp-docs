@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComboBoxEx"
+f1_keywords: ['CComboBoxEx', 'AFXCMN/CComboBoxEx', 'AFXCMN/CComboBoxEx::CComboBoxEx', 'AFXCMN/CComboBoxEx::Create', 'AFXCMN/CComboBoxEx::CreateEx', 'AFXCMN/CComboBoxEx::DeleteItem', 'AFXCMN/CComboBoxEx::GetComboBoxCtrl', 'AFXCMN/CComboBoxEx::GetEditCtrl', 'AFXCMN/CComboBoxEx::GetExtendedStyle', 'AFXCMN/CComboBoxEx::GetImageList', 'AFXCMN/CComboBoxEx::GetItem', 'AFXCMN/CComboBoxEx::HasEditChanged', 'AFXCMN/CComboBoxEx::InsertItem', 'AFXCMN/CComboBoxEx::SetExtendedStyle', 'AFXCMN/CComboBoxEx::SetImageList', 'AFXCMN/CComboBoxEx::SetItem', 'AFXCMN/CComboBoxEx::SetWindowTheme']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

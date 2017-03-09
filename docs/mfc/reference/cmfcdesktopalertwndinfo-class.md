@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCDesktopAlertWndInfo"
+f1_keywords: ['CMFCDesktopAlertWndInfo', 'AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo', 'AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_hIcon', 'AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_nURLCmdID', 'AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_strText', 'AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_strURL']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

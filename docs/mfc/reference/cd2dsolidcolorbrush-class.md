@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CD2DSolidColorBrush"
-  - "afxrendertarget/CD2DSolidColorBrush"
+f1_keywords: ['CD2DSolidColorBrush', 'AFXRENDERTARGET/CD2DSolidColorBrush', 'AFXRENDERTARGET/CD2DSolidColorBrush::CD2DSolidColorBrush', 'AFXRENDERTARGET/CD2DSolidColorBrush::Attach', 'AFXRENDERTARGET/CD2DSolidColorBrush::Create', 'AFXRENDERTARGET/CD2DSolidColorBrush::Destroy', 'AFXRENDERTARGET/CD2DSolidColorBrush::Detach', 'AFXRENDERTARGET/CD2DSolidColorBrush::Get', 'AFXRENDERTARGET/CD2DSolidColorBrush::GetColor', 'AFXRENDERTARGET/CD2DSolidColorBrush::SetColor', 'AFXRENDERTARGET/CD2DSolidColorBrush::m_colorSolid', 'AFXRENDERTARGET/CD2DSolidColorBrush::m_pSolidColorBrush']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

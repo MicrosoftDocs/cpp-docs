@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CWinThread"
+f1_keywords: ['CWinThread', 'AFXWIN/CWinThread', 'AFXWIN/CWinThread::CWinThread', 'AFXWIN/CWinThread::CreateThread', 'AFXWIN/CWinThread::ExitInstance', 'AFXWIN/CWinThread::GetMainWnd', 'AFXWIN/CWinThread::GetThreadPriority', 'AFXWIN/CWinThread::InitInstance', 'AFXWIN/CWinThread::IsIdleMessage', 'AFXWIN/CWinThread::OnIdle', 'AFXWIN/CWinThread::PostThreadMessage', 'AFXWIN/CWinThread::PreTranslateMessage', 'AFXWIN/CWinThread::ProcessMessageFilter', 'AFXWIN/CWinThread::ProcessWndProcException', 'AFXWIN/CWinThread::PumpMessage', 'AFXWIN/CWinThread::ResumeThread', 'AFXWIN/CWinThread::Run', 'AFXWIN/CWinThread::SetThreadPriority', 'AFXWIN/CWinThread::SuspendThread', 'AFXWIN/CWinThread::m_bAutoDelete', 'AFXWIN/CWinThread::m_hThread', 'AFXWIN/CWinThread::m_nThreadID', 'AFXWIN/CWinThread::m_pActiveWnd', 'AFXWIN/CWinThread::m_pMainWnd']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

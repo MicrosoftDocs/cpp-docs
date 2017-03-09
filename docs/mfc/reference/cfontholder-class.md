@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CFontHolder"
+f1_keywords: ['CFontHolder', 'AFXCTL/CFontHolder', 'AFXCTL/CFontHolder::CFontHolder', 'AFXCTL/CFontHolder::GetDisplayString', 'AFXCTL/CFontHolder::GetFontDispatch', 'AFXCTL/CFontHolder::GetFontHandle', 'AFXCTL/CFontHolder::InitializeFont', 'AFXCTL/CFontHolder::QueryTextMetrics', 'AFXCTL/CFontHolder::ReleaseFont', 'AFXCTL/CFontHolder::Select', 'AFXCTL/CFontHolder::SetFont', 'AFXCTL/CFontHolder::m_pFont']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

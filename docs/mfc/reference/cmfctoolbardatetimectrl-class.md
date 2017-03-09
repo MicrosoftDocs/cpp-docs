@@ -8,26 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "OnDrawOnCustomizeList"
-  - "CMFCToolBarDateTimeCtrl::OnDraw"
-  - "OnDraw"
-  - "CMFCToolBarDateTimeCtrl.Serialize"
-  - "CMFCToolBarDateTimeCtrl.OnSize"
-  - "CMFCToolBarDateTimeCtrl.OnDrawOnCustomizeList"
-  - "OnSize"
-  - "OnCalculateSize"
-  - "CMFCToolBarDateTimeCtrl"
-  - "CMFCToolBarDateTimeCtrl::OnCalculateSize"
-  - "SetStyle"
-  - "CMFCToolBarDateTimeCtrl::OnDrawOnCustomizeList"
-  - "CMFCToolBarDateTimeCtrl.OnDraw"
-  - "CMFCToolBarDateTimeCtrl.SetStyle"
-  - "CMFCToolBarDateTimeCtrl::SetStyle"
-  - "CMFCToolBarDateTimeCtrl.OnCalculateSize"
-  - "CMFCToolBarDateTimeCtrl::Serialize"
-  - "CMFCToolBarDateTimeCtrl::OnSize"
-  - "Serialize"
+f1_keywords: ['CMFCToolBarDateTimeCtrl', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::CMFCToolBarDateTimeCtrl', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::CanBeStretched', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::CopyFrom', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarButton::ExportToMenuButton', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::GetByCmd', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::GetDateTimeCtrl', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::GetHwnd', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::GetTime', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::GetTimeAll', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::HaveHotBorder', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::NotifyCommand', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnAddToCustomizePage', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnChangeParentWnd', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnClick', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnCtlColor', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnGlobalFontsChanged', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnMove', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnShow', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnUpdateToolTip', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::SetTime', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::SetTimeAll']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

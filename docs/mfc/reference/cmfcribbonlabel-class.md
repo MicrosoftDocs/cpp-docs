@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCRibbonLabel"
+f1_keywords: ['CMFCRibbonLabel', 'AFXRIBBONLABEL/CMFCRibbonLabel', 'AFXRIBBONLABEL/CMFCRibbonLabel::CMFCRibbonLabel', 'AFXRIBBONLABEL/CMFCRibbonLabel::SetACCData']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

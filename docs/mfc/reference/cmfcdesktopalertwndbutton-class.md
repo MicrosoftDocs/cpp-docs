@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCDesktopAlertWndButton"
+f1_keywords: ['CMFCDesktopAlertWndButton', 'AFXDESKTOPALERTWND/CMFCDesktopAlertWndButton', 'AFXDESKTOPALERTWND/CMFCDesktopAlertWndButton::IsCaptionButton', 'AFXDESKTOPALERTWND/CMFCDesktopAlertWndButton::IsCloseButton']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

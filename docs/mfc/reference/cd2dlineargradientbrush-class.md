@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxrendertarget/CD2DLinearGradientBrush"
-  - "CD2DLinearGradientBrush"
+f1_keywords: ['CD2DLinearGradientBrush', 'AFXRENDERTARGET/CD2DLinearGradientBrush', 'AFXRENDERTARGET/CD2DLinearGradientBrush::CD2DLinearGradientBrush', 'AFXRENDERTARGET/CD2DLinearGradientBrush::Attach', 'AFXRENDERTARGET/CD2DLinearGradientBrush::Create', 'AFXRENDERTARGET/CD2DLinearGradientBrush::Destroy', 'AFXRENDERTARGET/CD2DLinearGradientBrush::Detach', 'AFXRENDERTARGET/CD2DLinearGradientBrush::Get', 'AFXRENDERTARGET/CD2DLinearGradientBrush::GetEndPoint', 'AFXRENDERTARGET/CD2DLinearGradientBrush::GetStartPoint', 'AFXRENDERTARGET/CD2DLinearGradientBrush::SetEndPoint', 'AFXRENDERTARGET/CD2DLinearGradientBrush::SetStartPoint', 'AFXRENDERTARGET/CD2DLinearGradientBrush::m_LinearGradientBrushProperties', 'AFXRENDERTARGET/CD2DLinearGradientBrush::m_pLinearGradientBrush']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

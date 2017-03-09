@@ -8,6 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+f1_keywords: ['AFXWIN/AfxDrawGrayBitmap', 'AFXWIN/AfxGetGrayBitmap', 'AFXWIN/AfxDrawDitheredBitmap', 'AFXWIN/AfxGetDitheredBitmap']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

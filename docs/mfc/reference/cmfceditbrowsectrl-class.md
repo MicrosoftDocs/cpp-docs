@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCEditBrowseCtrl"
+f1_keywords: ['CMFCEditBrowseCtrl', 'AFXEDITBROWSECTRL/CMFCEditBrowseCtrl', 'AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::EnableBrowseButton', 'AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::EnableFileBrowseButton', 'AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::EnableFolderBrowseButton', 'AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::GetMode', 'AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnAfterUpdate', 'AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnBrowse', 'AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnChangeLayout', 'AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnDrawBrowseButton', 'AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnIllegalFileName', 'AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::SetBrowseButtonImage']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

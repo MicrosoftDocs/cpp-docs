@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CProgressCtrl"
+f1_keywords: ['CProgressCtrl', 'AFXCMN/CProgressCtrl', 'AFXCMN/CProgressCtrl::CProgressCtrl', 'AFXCMN/CProgressCtrl::Create', 'AFXCMN/CProgressCtrl::CreateEx', 'AFXCMN/CProgressCtrl::GetBarColor', 'AFXCMN/CProgressCtrl::GetBkColor', 'AFXCMN/CProgressCtrl::GetPos', 'AFXCMN/CProgressCtrl::GetRange', 'AFXCMN/CProgressCtrl::GetState', 'AFXCMN/CProgressCtrl::GetStep', 'AFXCMN/CProgressCtrl::OffsetPos', 'AFXCMN/CProgressCtrl::SetBarColor', 'AFXCMN/CProgressCtrl::SetBkColor', 'AFXCMN/CProgressCtrl::SetMarquee', 'AFXCMN/CProgressCtrl::SetPos', 'AFXCMN/CProgressCtrl::SetRange', 'AFXCMN/CProgressCtrl::SetState', 'AFXCMN/CProgressCtrl::SetStep', 'AFXCMN/CProgressCtrl::StepIt']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

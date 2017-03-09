@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CHttpConnection"
+f1_keywords: ['CHttpConnection', 'AFXINET/CHttpConnection', 'AFXINET/CHttpConnection::CHttpConnection', 'AFXINET/CHttpConnection::OpenRequest']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

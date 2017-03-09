@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxrendertarget/CD2DEllipse"
-  - "CD2DEllipse"
+f1_keywords: ['CD2DEllipse', 'AFXRENDERTARGET/CD2DEllipse', 'AFXRENDERTARGET/CD2DEllipse::CD2DEllipse']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

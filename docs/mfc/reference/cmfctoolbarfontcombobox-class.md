@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCToolBarFontComboBox"
+f1_keywords: ['CMFCToolBarFontComboBox', 'AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox', 'AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox::CMFCToolBarFontComboBox', 'AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox::GetFontDesc', 'AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox::SetFont']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

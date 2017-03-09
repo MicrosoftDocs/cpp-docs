@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMapStringToOb"
+f1_keywords: ['CMapStringToOb', 'AFXCOLL/CMapStringToOb', 'AFXCOLL/CMapStringToOb::CMapStringToOb', 'AFXCOLL/CMapStringToOb::GetCount', 'AFXCOLL/CMapStringToOb::GetHashTableSize', 'AFXCOLL/CMapStringToOb::GetNextAssoc', 'AFXCOLL/CMapStringToOb::GetSize', 'AFXCOLL/CMapStringToOb::GetStartPosition', 'AFXCOLL/CMapStringToOb::HashKey', 'AFXCOLL/CMapStringToOb::InitHashTable', 'AFXCOLL/CMapStringToOb::IsEmpty', 'AFXCOLL/CMapStringToOb::Lookup', 'AFXCOLL/CMapStringToOb::LookupKey', 'AFXCOLL/CMapStringToOb::RemoveAll', 'AFXCOLL/CMapStringToOb::RemoveKey', 'AFXCOLL/CMapStringToOb::SetAt']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMultiPageDHtmlDialog"
+f1_keywords: ['CMultiPageDHtmlDialog', 'AFXDHTML/CMultiPageDHtmlDialog', 'AFXDHTML/CMultiPageDHtmlDialog::CMultiPageDHtmlDialog']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

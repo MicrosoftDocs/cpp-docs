@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDocItem"
+f1_keywords: ['CDocItem', 'AFXOLE/CDocItem', 'AFXOLE/CDocItem::GetDocument', 'AFXOLE/CDocItem::IsBlank']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

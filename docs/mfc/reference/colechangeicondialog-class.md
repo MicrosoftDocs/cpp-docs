@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleChangeIconDialog"
+f1_keywords: ['COleChangeIconDialog', 'AFXODLGS/COleChangeIconDialog', 'AFXODLGS/COleChangeIconDialog::COleChangeIconDialog', 'AFXODLGS/COleChangeIconDialog::DoChangeIcon', 'AFXODLGS/COleChangeIconDialog::DoModal', 'AFXODLGS/COleChangeIconDialog::GetIconicMetafile', 'AFXODLGS/COleChangeIconDialog::m_ci']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

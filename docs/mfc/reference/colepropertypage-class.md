@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COlePropertyPage"
+f1_keywords: ['COlePropertyPage', 'AFXCTL/COlePropertyPage', 'AFXCTL/COlePropertyPage::COlePropertyPage', 'AFXCTL/COlePropertyPage::GetControlStatus', 'AFXCTL/COlePropertyPage::GetObjectArray', 'AFXCTL/COlePropertyPage::GetPageSite', 'AFXCTL/COlePropertyPage::IgnoreApply', 'AFXCTL/COlePropertyPage::IsModified', 'AFXCTL/COlePropertyPage::OnEditProperty', 'AFXCTL/COlePropertyPage::OnHelp', 'AFXCTL/COlePropertyPage::OnInitDialog', 'AFXCTL/COlePropertyPage::OnObjectsChanged', 'AFXCTL/COlePropertyPage::OnSetPageSite', 'AFXCTL/COlePropertyPage::SetControlStatus', 'AFXCTL/COlePropertyPage::SetDialogResource', 'AFXCTL/COlePropertyPage::SetHelpInfo', 'AFXCTL/COlePropertyPage::SetModifiedFlag', 'AFXCTL/COlePropertyPage::SetPageName']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

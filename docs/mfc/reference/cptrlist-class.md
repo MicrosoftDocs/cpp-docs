@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CPtrList"
-dev_langs: 
+NO MEMBER TABLE MATCHESdev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "lists, generic"

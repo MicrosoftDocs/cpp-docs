@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCReBar"
+f1_keywords: ['CMFCReBar', 'AFXREBAR/CMFCReBar', 'AFXREBAR/CMFCReBar::AddBar', 'AFXREBAR/CMFCReBar::CalcFixedLayout', 'AFXREBAR/CMFCReBar::CanFloat', 'AFXREBAR/CMFCReBar::Create', 'AFXREBAR/CMFCReBar::EnableDocking', 'AFXREBAR/CMFCReBar::GetReBarBandInfoSize', 'AFXREBAR/CMFCReBar::GetReBarCtrl', 'AFXREBAR/CMFCReBar::OnShowControlBarMenu', 'AFXREBAR/CMFCReBar::OnToolHitTest', 'AFXREBAR/CMFCReBar::OnUpdateCmdUI', 'AFXREBAR/CMFCReBar::SetPaneAlignment']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

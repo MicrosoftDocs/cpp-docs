@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCPropertyGridFontProperty"
+f1_keywords: ['CMFCPropertyGridFontProperty', 'AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty', 'AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty::CMFCPropertyGridFontProperty', 'AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty::GetColor', 'AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty::GetLogFont']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

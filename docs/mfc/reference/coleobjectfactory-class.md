@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleObjectFactory"
+f1_keywords: ['COleObjectFactory', 'AFXDISP/COleObjectFactory', 'AFXDISP/COleObjectFactory::COleObjectFactory', 'AFXDISP/COleObjectFactory::GetClassID', 'AFXDISP/COleObjectFactory::IsLicenseValid', 'AFXDISP/COleObjectFactory::IsRegistered', 'AFXDISP/COleObjectFactory::Register', 'AFXDISP/COleObjectFactory::RegisterAll', 'AFXDISP/COleObjectFactory::Revoke', 'AFXDISP/COleObjectFactory::RevokeAll', 'AFXDISP/COleObjectFactory::UnregisterAll', 'AFXDISP/COleObjectFactory::UpdateRegistry', 'AFXDISP/COleObjectFactory::UpdateRegistryAll', 'AFXDISP/COleObjectFactory::GetLicenseKey', 'AFXDISP/COleObjectFactory::OnCreateObject', 'AFXDISP/COleObjectFactory::VerifyLicenseKey', 'AFXDISP/COleObjectFactory::VerifyUserLicense']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

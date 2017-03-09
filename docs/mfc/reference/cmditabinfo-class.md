@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMDITabInfo"
-  - "CMDITabInfo.CMDITabInfo"
-  - "CMDITabInfo::CMDITabInfo"
+f1_keywords: ['CMDITabInfo', 'AFXMDICLIENTAREAWND/CMDITabInfo', 'AFXMDICLIENTAREAWND/CMDITabInfo::Serialize', 'AFXMDICLIENTAREAWND/CMDITabInfo::m_bAutoColor', 'AFXMDICLIENTAREAWND/CMDITabInfo::m_bDocumentMenu', 'AFXMDICLIENTAREAWND/CMDITabInfo::m_bEnableTabSwap', 'AFXMDICLIENTAREAWND/CMDITabInfo::m_bFlatFrame', 'AFXMDICLIENTAREAWND/CMDITabInfo::m_bTabCloseButton', 'AFXMDICLIENTAREAWND/CMDITabInfo::m_bTabCustomTooltips', 'AFXMDICLIENTAREAWND/CMDITabInfo::m_bTabIcons', 'AFXMDICLIENTAREAWND/CMDITabInfo::m_nTabBorderSize', 'AFXMDICLIENTAREAWND/CMDITabInfo::m_style', 'AFXMDICLIENTAREAWND/CMDITabInfo::m_tabLocation']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

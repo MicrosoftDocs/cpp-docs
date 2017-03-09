@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COlePasteSpecialDialog"
+f1_keywords: ['COlePasteSpecialDialog', 'AFXODLGS/COlePasteSpecialDialog', 'AFXODLGS/COlePasteSpecialDialog::COlePasteSpecialDialog', 'AFXODLGS/COlePasteSpecialDialog::AddFormat', 'AFXODLGS/COlePasteSpecialDialog::AddLinkEntry', 'AFXODLGS/COlePasteSpecialDialog::AddStandardFormats', 'AFXODLGS/COlePasteSpecialDialog::CreateItem', 'AFXODLGS/COlePasteSpecialDialog::DoModal', 'AFXODLGS/COlePasteSpecialDialog::GetDrawAspect', 'AFXODLGS/COlePasteSpecialDialog::GetIconicMetafile', 'AFXODLGS/COlePasteSpecialDialog::GetPasteIndex', 'AFXODLGS/COlePasteSpecialDialog::GetSelectionType', 'AFXODLGS/COlePasteSpecialDialog::m_ps']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

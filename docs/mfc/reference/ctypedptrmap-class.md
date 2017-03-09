@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CTypedPtrMap"
+f1_keywords: ['CTypedPtrMap', 'AFXTEMPL/CTypedPtrMap', 'AFXTEMPL/CTypedPtrMap::GetNextAssoc', 'AFXTEMPL/CTypedPtrMap::Lookup', 'AFXTEMPL/CTypedPtrMap::RemoveKey', 'AFXTEMPL/CTypedPtrMap::SetAt']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

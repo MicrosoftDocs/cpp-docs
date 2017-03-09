@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCHeaderCtrl"
+f1_keywords: ['CMFCHeaderCtrl', 'AFXHEADERCTRL/CMFCHeaderCtrl', 'AFXHEADERCTRL/CMFCHeaderCtrl::CMFCHeaderCtrl', 'AFXHEADERCTRL/CMFCHeaderCtrl::EnableMultipleSort', 'AFXHEADERCTRL/CMFCHeaderCtrl::GetColumnState', 'AFXHEADERCTRL/CMFCHeaderCtrl::GetSortColumn', 'AFXHEADERCTRL/CMFCHeaderCtrl::IsAscending', 'AFXHEADERCTRL/CMFCHeaderCtrl::IsDialogControl', 'AFXHEADERCTRL/CMFCHeaderCtrl::IsMultipleSort', 'AFXHEADERCTRL/CMFCHeaderCtrl::RemoveSortColumn', 'AFXHEADERCTRL/CMFCHeaderCtrl::SetSortColumn', 'AFXHEADERCTRL/CMFCHeaderCtrl::OnDrawItem', 'AFXHEADERCTRL/CMFCHeaderCtrl::OnDrawSortArrow', 'AFXHEADERCTRL/CMFCHeaderCtrl::OnFillBackground']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

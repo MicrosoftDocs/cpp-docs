@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleDispatchDriver"
+f1_keywords: ['COleDispatchDriver', 'AFXDISP/COleDispatchDriver', 'AFXDISP/COleDispatchDriver::COleDispatchDriver', 'AFXDISP/COleDispatchDriver::AttachDispatch', 'AFXDISP/COleDispatchDriver::CreateDispatch', 'AFXDISP/COleDispatchDriver::DetachDispatch', 'AFXDISP/COleDispatchDriver::GetProperty', 'AFXDISP/COleDispatchDriver::InvokeHelper', 'AFXDISP/COleDispatchDriver::ReleaseDispatch', 'AFXDISP/COleDispatchDriver::SetProperty', 'AFXDISP/COleDispatchDriver::m_bAutoRelease', 'AFXDISP/COleDispatchDriver::m_lpDispatch']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

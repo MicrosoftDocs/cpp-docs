@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CHwndRenderTarget"
-  - "afxrendertarget/CHwndRenderTarget"
+f1_keywords: ['CHwndRenderTarget', 'AFXRENDERTARGET/CHwndRenderTarget', 'AFXRENDERTARGET/CHwndRenderTarget::CHwndRenderTarget', 'AFXRENDERTARGET/CHwndRenderTarget::Attach', 'AFXRENDERTARGET/CHwndRenderTarget::CheckWindowState', 'AFXRENDERTARGET/CHwndRenderTarget::Create', 'AFXRENDERTARGET/CHwndRenderTarget::Detach', 'AFXRENDERTARGET/CHwndRenderTarget::GetHwnd', 'AFXRENDERTARGET/CHwndRenderTarget::GetHwndRenderTarget', 'AFXRENDERTARGET/CHwndRenderTarget::ReCreate', 'AFXRENDERTARGET/CHwndRenderTarget::Resize', 'AFXRENDERTARGET/CHwndRenderTarget::m_pHwndRenderTarget']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

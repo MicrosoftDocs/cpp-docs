@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCFontComboBox"
+f1_keywords: ['CMFCFontComboBox', 'AFXFONTCOMBOBOX/CMFCFontComboBox', 'AFXFONTCOMBOBOX/CMFCFontComboBox::CMFCFontComboBox', 'AFXFONTCOMBOBOX/CMFCFontComboBox::GetSelFont', 'AFXFONTCOMBOBOX/CMFCFontComboBox::SelectFont', 'AFXFONTCOMBOBOX/CMFCFontComboBox::Setup', 'AFXFONTCOMBOBOX/CMFCFontComboBox::m_bDrawUsingFont']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
