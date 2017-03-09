@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IPointerInactiveImpl"
+f1_keywords: ['IPointerInactiveImpl', 'ATLCTL/ATL::IPointerInactiveImpl', 'ATLCTL/ATL::IPointerInactiveImpl::GetActivationPolicy', 'ATLCTL/ATL::IPointerInactiveImpl::OnInactiveMouseMove', 'ATLCTL/ATL::IPointerInactiveImpl::OnInactiveSetCursor']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

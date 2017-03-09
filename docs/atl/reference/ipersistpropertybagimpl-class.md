@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IPersistPropertyBagImpl"
-  - "ATL.IPersistPropertyBagImpl<T>"
-  - "ATL::IPersistPropertyBagImpl"
-  - "ATL::IPersistPropertyBagImpl<T>"
-  - "ATL.IPersistPropertyBagImpl"
+f1_keywords: ['IPersistPropertyBagImpl', 'ATLCOM/ATL::IPersistPropertyBagImpl', 'ATLCOM/ATL::IPersistPropertyBagImpl::GetClassID', 'ATLCOM/ATL::IPersistPropertyBagImpl::InitNew', 'ATLCOM/ATL::IPersistPropertyBagImpl::Load', 'ATLCOM/ATL::IPersistPropertyBagImpl::Save']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

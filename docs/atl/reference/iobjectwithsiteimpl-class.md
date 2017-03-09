@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::IObjectWithSiteImpl"
-  - "ATL.IObjectWithSiteImpl<T>"
-  - "IObjectWithSiteImpl"
-  - "ATL.IObjectWithSiteImpl"
-  - "ATL::IObjectWithSiteImpl<T>"
+f1_keywords: ['IObjectWithSiteImpl', 'ATLCOM/ATL::IObjectWithSiteImpl', 'ATLCOM/ATL::IObjectWithSiteImpl::GetSite', 'ATLCOM/ATL::IObjectWithSiteImpl::SetChildSite', 'ATLCOM/ATL::IObjectWithSiteImpl::SetSite', 'ATLCOM/ATL::IObjectWithSiteImpl::m_spUnkSite']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

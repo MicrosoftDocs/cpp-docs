@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IPropertyPage2Impl"
+f1_keywords: ['IPropertyPage2Impl', 'ATLCTL/ATL::IPropertyPage2Impl', 'ATLCTL/ATL::IPropertyPage2Impl::EditProperty']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

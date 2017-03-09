@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::IPersistStreamInitImpl"
-  - "ATL::IPersistStreamInitImpl<T>"
-  - "ATL.IPersistStreamInitImpl<T>"
-  - "IPersistStreamInitImpl"
-  - "ATL.IPersistStreamInitImpl"
+f1_keywords: ['IPersistStreamInitImpl', 'ATLCOM/ATL::IPersistStreamInitImpl', 'ATLCOM/ATL::IPersistStreamInitImpl::GetClassID', 'ATLCOM/ATL::IPersistStreamInitImpl::GetSizeMax', 'ATLCOM/ATL::IPersistStreamInitImpl::InitNew', 'ATLCOM/ATL::IPersistStreamInitImpl::IsDirty', 'ATLCOM/ATL::IPersistStreamInitImpl::Load', 'ATLCOM/ATL::IPersistStreamInitImpl::Save']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

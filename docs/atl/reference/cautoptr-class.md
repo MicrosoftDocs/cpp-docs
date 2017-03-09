@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CAutoPtr"
+f1_keywords: ['CAutoPtr', 'ATLBASE/ATL::CAutoPtr', 'ATLBASE/ATL::CAutoPtr::CAutoPtr', 'ATLBASE/ATL::CAutoPtr::Attach', 'ATLBASE/ATL::CAutoPtr::Detach', 'ATLBASE/ATL::CAutoPtr::Free', 'ATLBASE/ATL::CAutoPtr::m_p']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

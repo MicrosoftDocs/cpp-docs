@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSocketAddr"
-  - "ATL.CSocketAddr"
-  - "ATL::CSocketAddr"
+f1_keywords: ['CSocketAddr', 'ATLSOCKET/ATL::CSocketAddr', 'ATLSOCKET/ATL::CSocketAddr::CSocketAddr', 'ATLSOCKET/ATL::CSocketAddr::FindAddr', 'ATLSOCKET/ATL::CSocketAddr::FindINET4Addr', 'ATLSOCKET/ATL::CSocketAddr::FindINET6Addr', 'ATLSOCKET/ATL::CSocketAddr::GetAddrInfo', 'ATLSOCKET/ATL::CSocketAddr::GetAddrInfoList']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

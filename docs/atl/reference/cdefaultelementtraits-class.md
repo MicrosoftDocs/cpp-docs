@@ -8,13 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CDefaultElementTraits<T>"
-  - "ATL.CDefaultElementTraits"
-  - "ATL::CDefaultElementTraits"
-  - "ATL.CDefaultElementTraits<T>"
-  - "CDefaultElementTraits"
-dev_langs: 
+NO MEMBER TABLE MATCHESdev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "CDefaultElementTraits class"

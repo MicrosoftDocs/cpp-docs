@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSimpleMapEqualHelper"
+f1_keywords: ['CSimpleMapEqualHelper', 'ATLSIMPCOLL/ATL::CSimpleMapEqualHelper', 'ATLSIMPCOLL/ATL::CSimpleMapEqualHelper::IsEqualKey', 'ATLSIMPCOLL/ATL::CSimpleMapEqualHelper::IsEqualValue']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

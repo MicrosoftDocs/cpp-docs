@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IPropertyNotifySinkCP"
-dev_langs: 
+NO MEMBER TABLE MATCHESdev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "connection points [C++], managing"

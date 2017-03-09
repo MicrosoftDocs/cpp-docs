@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CComCriticalSection"
-  - "CComCriticalSection"
-  - "ATL::CComCriticalSection"
+f1_keywords: ['CComCriticalSection', 'ATLCORE/ATL::CComCriticalSection', 'ATLCORE/ATL::CComCriticalSection::CComCriticalSection', 'ATLCORE/ATL::CComCriticalSection::Init', 'ATLCORE/ATL::CComCriticalSection::Lock', 'ATLCORE/ATL::CComCriticalSection::Term', 'ATLCORE/ATL::CComCriticalSection::Unlock', 'ATLCORE/ATL::CComCriticalSection::m_sec']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

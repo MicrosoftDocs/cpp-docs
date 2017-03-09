@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IAtlMemMgr"
+f1_keywords: ['IAtlMemMgr', 'ATLMEM/ATL::IAtlMemMgr', 'ATLMEM/ATL::Allocate', 'ATLMEM/ATL::Free', 'ATLMEM/ATL::GetSize', 'ATLMEM/ATL::Reallocate']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

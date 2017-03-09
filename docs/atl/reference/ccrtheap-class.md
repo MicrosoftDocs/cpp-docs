@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CCRTHeap"
-  - "ATL.CCRTHeap"
-  - "CCRTHeap"
+f1_keywords: ['CCRTHeap', 'ATLMEM/ATL::CCRTHeap', 'ATLMEM/ATL::CCRTHeap::Allocate', 'ATLMEM/ATL::CCRTHeap::Free', 'ATLMEM/ATL::CCRTHeap::GetSize', 'ATLMEM/ATL::CCRTHeap::Reallocate']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

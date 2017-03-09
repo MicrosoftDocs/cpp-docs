@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IThreadPoolConfig"
-  - "ATL::IThreadPoolConfig"
-  - "ATL.IThreadPoolConfig"
+f1_keywords: ['IThreadPoolConfig', 'ATLUTIL/ATL::IThreadPoolConfig', 'ATLUTIL/ATL::GetSize', 'ATLUTIL/ATL::GetTimeout', 'ATLUTIL/ATL::SetSize', 'ATLUTIL/ATL::SetTimeout']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

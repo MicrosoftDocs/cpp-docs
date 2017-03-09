@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CAtlArray"
-  - "ATL.CAtlArray"
-  - "CAtlArray"
+f1_keywords: ['CAtlArray', 'ATLCOLL/ATL::CAtlArray', 'ATLCOLL/ATL::Add', 'ATLCOLL/ATL::Append', 'ATLCOLL/ATL::AssertValid', 'ATLCOLL/ATL::CAtlArray', 'ATLCOLL/ATL::Copy', 'ATLCOLL/ATL::FreeExtra', 'ATLCOLL/ATL::GetAt', 'ATLCOLL/ATL::GetCount', 'ATLCOLL/ATL::GetData', 'ATLCOLL/ATL::InsertArrayAt', 'ATLCOLL/ATL::InsertAt', 'ATLCOLL/ATL::IsEmpty', 'ATLCOLL/ATL::RemoveAll', 'ATLCOLL/ATL::RemoveAt', 'ATLCOLL/ATL::SetAt', 'ATLCOLL/ATL::SetAtGrow', 'ATLCOLL/ATL::SetCount', 'ATLCOLL/ATL::INARGTYPE', 'ATLCOLL/ATL::OUTARGTYPE']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

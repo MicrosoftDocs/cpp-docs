@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::IViewObjectExImpl<T>"
-  - "ATL.IViewObjectExImpl"
-  - "ATL::IViewObjectExImpl"
-  - "ATL.IViewObjectExImpl<T>"
-  - "IViewObjectExImpl"
+f1_keywords: ['IViewObjectExImpl', 'ATLCTL/ATL::IViewObjectExImpl', 'ATLCTL/ATL::IViewObjectExImpl::Draw', 'ATLCTL/ATL::IViewObjectExImpl::Freeze', 'ATLCTL/ATL::IViewObjectExImpl::GetAdvise', 'ATLCTL/ATL::IViewObjectExImpl::GetColorSet', 'ATLCTL/ATL::IViewObjectExImpl::GetExtent', 'ATLCTL/ATL::IViewObjectExImpl::GetNaturalExtent', 'ATLCTL/ATL::IViewObjectExImpl::GetRect', 'ATLCTL/ATL::IViewObjectExImpl::GetViewStatus', 'ATLCTL/ATL::IViewObjectExImpl::QueryHitPoint', 'ATLCTL/ATL::IViewObjectExImpl::QueryHitRect', 'ATLCTL/ATL::IViewObjectExImpl::SetAdvise', 'ATLCTL/ATL::IViewObjectExImpl::Unfreeze']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

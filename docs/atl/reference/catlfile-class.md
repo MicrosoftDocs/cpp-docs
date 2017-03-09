@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CAtlFile"
-  - "ATL::CAtlFile"
-  - "ATL.CAtlFile"
+f1_keywords: ['CAtlFile', 'ATLFILE/ATL::CAtlFile', 'ATLFILE/ATL::CAtlFile::CAtlFile', 'ATLFILE/ATL::CAtlFile::Create', 'ATLFILE/ATL::CAtlFile::Flush', 'ATLFILE/ATL::CAtlFile::GetOverlappedResult', 'ATLFILE/ATL::CAtlFile::GetPosition', 'ATLFILE/ATL::CAtlFile::GetSize', 'ATLFILE/ATL::CAtlFile::LockRange', 'ATLFILE/ATL::CAtlFile::Read', 'ATLFILE/ATL::CAtlFile::Seek', 'ATLFILE/ATL::CAtlFile::SetSize', 'ATLFILE/ATL::CAtlFile::UnlockRange', 'ATLFILE/ATL::CAtlFile::Write', 'ATLFILE/ATL::CAtlFile::m_pTM']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

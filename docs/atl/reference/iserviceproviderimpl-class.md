@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::IServiceProviderImpl<T>"
-  - "ATL.IServiceProviderImpl<T>"
-  - "ATL.IServiceProviderImpl"
-  - "ATL::IServiceProviderImpl"
-  - "IServiceProviderImpl"
+f1_keywords: ['IServiceProviderImpl', 'ATLCOM/ATL::IServiceProviderImpl', 'ATLCOM/ATL::IServiceProviderImpl::QueryService']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

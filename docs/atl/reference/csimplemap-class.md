@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CSimpleMap"
-  - "ATL.CSimpleMap"
-  - "CSimpleMap"
+f1_keywords: ['CSimpleMap', 'ATLSIMPCOLL/ATL::CSimpleMap', 'ATLSIMPCOLL/ATL::CSimpleMap::_ArrayElementType', 'ATLSIMPCOLL/ATL::CSimpleMap::_ArrayKeyType', 'ATLSIMPCOLL/ATL::CSimpleMap::CSimpleMap', 'ATLSIMPCOLL/ATL::CSimpleMap::Add', 'ATLSIMPCOLL/ATL::CSimpleMap::FindKey', 'ATLSIMPCOLL/ATL::CSimpleMap::FindVal', 'ATLSIMPCOLL/ATL::CSimpleMap::GetKeyAt', 'ATLSIMPCOLL/ATL::CSimpleMap::GetSize', 'ATLSIMPCOLL/ATL::CSimpleMap::GetValueAt', 'ATLSIMPCOLL/ATL::CSimpleMap::Lookup', 'ATLSIMPCOLL/ATL::CSimpleMap::Remove', 'ATLSIMPCOLL/ATL::CSimpleMap::RemoveAll', 'ATLSIMPCOLL/ATL::CSimpleMap::RemoveAt', 'ATLSIMPCOLL/ATL::CSimpleMap::ReverseLookup', 'ATLSIMPCOLL/ATL::CSimpleMap::SetAt', 'ATLSIMPCOLL/ATL::CSimpleMap::SetAtIndex']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

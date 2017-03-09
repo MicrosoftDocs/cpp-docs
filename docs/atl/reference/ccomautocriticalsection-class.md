@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CComAutoCriticalSection"
-  - "ATL::CComAutoCriticalSection"
-  - "CComAutoCriticalSection"
+f1_keywords: ['CComAutoCriticalSection', 'ATLCORE/ATL::CComAutoCriticalSection', 'ATLCORE/ATL::CComAutoCriticalSection::CComAutoCriticalSection']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

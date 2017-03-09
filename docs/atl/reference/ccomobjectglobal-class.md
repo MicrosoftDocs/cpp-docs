@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComObjectGlobal"
-  - "ATL::CComObjectGlobal<Base>"
-  - "ATL::CComObjectGlobal"
-  - "ATL.CComObjectGlobal"
-  - "ATL.CComObjectGlobal<Base>"
+f1_keywords: ['CComObjectGlobal', 'ATLCOM/ATL::CComObjectGlobal', 'ATLCOM/ATL::CComObjectGlobal::CComObjectGlobal', 'ATLCOM/ATL::CComObjectGlobal::AddRef', 'ATLCOM/ATL::CComObjectGlobal::QueryInterface', 'ATLCOM/ATL::CComObjectGlobal::Release', 'ATLCOM/ATL::CComObjectGlobal::m_hResFinalConstruct']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

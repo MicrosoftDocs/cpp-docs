@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComPolyObject"
-  - "ATL.CComPolyObject<contained>"
-  - "ATL::CComPolyObject"
-  - "ATL::CComPolyObject<contained>"
-  - "ATL.CComPolyObject"
+f1_keywords: ['CComPolyObject', 'ATLCOM/ATL::CComPolyObject', 'ATLCOM/ATL::CComPolyObject::CComPolyObject', 'ATLCOM/ATL::CComPolyObject::AddRef', 'ATLCOM/ATL::CComPolyObject::CreateInstance', 'ATLCOM/ATL::CComPolyObject::FinalConstruct', 'ATLCOM/ATL::CComPolyObject::FinalRelease', 'ATLCOM/ATL::CComPolyObject::QueryInterface', 'ATLCOM/ATL::CComPolyObject::Release', 'ATLCOM/ATL::CComPolyObject::m_contained']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

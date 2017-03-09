@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CAutoVectorPtr"
-  - "ATL.CAutoVectorPtr"
-  - "ATL.CAutoVectorPtr<T>"
-  - "CAutoVectorPtr"
-  - "ATL::CAutoVectorPtr<T>"
+f1_keywords: ['CAutoVectorPtr', 'ATLBASE/ATL::CAutoVectorPtr', 'ATLBASE/ATL::CAutoVectorPtr::CAutoVectorPtr', 'ATLBASE/ATL::CAutoVectorPtr::Allocate', 'ATLBASE/ATL::CAutoVectorPtr::Attach', 'ATLBASE/ATL::CAutoVectorPtr::Detach', 'ATLBASE/ATL::CAutoVectorPtr::Free', 'ATLBASE/ATL::CAutoVectorPtr::m_p']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CComTearOffObject<Base>"
-  - "ATL::CComTearOffObject"
-  - "ATL.CComTearOffObject"
-  - "ATL.CComTearOffObject<Base>"
-  - "CComTearOffObject"
+f1_keywords: ['CComTearOffObject', 'ATLCOM/ATL::CComTearOffObject', 'ATLCOM/ATL::CComTearOffObject::CComTearOffObject', 'ATLCOM/ATL::CComTearOffObject::AddRef', 'ATLCOM/ATL::CComTearOffObject::QueryInterface', 'ATLCOM/ATL::CComTearOffObject::Release', 'ATLCOM/ATL::CComTearOffObjectBase', 'ATLCOM/ATL::m_pOwner']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

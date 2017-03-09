@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSimpleArrayEqualHelper"
+f1_keywords: ['CSimpleArrayEqualHelper', 'ATLSIMPCOLL/ATL::CSimpleArrayEqualHelper', 'ATLSIMPCOLL/ATL::CSimpleArrayEqualHelper::IsEqual']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

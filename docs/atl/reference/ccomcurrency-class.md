@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComCurrency"
-  - "ATL.CComCurrency"
-  - "ATL::CComCurrency"
+f1_keywords: ['CComCurrency', 'ATLCUR/ATL::CComCurrency', 'ATLCUR/ATL::CComCurrency::CComCurrency', 'ATLCUR/ATL::CComCurrency::GetCurrencyPtr', 'ATLCUR/ATL::CComCurrency::GetFraction', 'ATLCUR/ATL::CComCurrency::GetInteger', 'ATLCUR/ATL::CComCurrency::Round', 'ATLCUR/ATL::CComCurrency::SetFraction', 'ATLCUR/ATL::CComCurrency::SetInteger', 'ATLCUR/ATL::CComCurrency::m_currency']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

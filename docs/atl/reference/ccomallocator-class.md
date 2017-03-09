@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CComAllocator"
-  - "ATL::CComAllocator"
-  - "CComAllocator"
+f1_keywords: ['CComAllocator', 'ATLBASE/ATL::CComAllocator', 'ATLBASE/ATL::CComAllocator::Allocate', 'ATLBASE/ATL::CComAllocator::Free', 'ATLBASE/ATL::CComAllocator::Reallocate']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
