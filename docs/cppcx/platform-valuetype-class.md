@@ -35,10 +35,10 @@ public ref class ValueType : Object
 |-|-|  
 |[ValueType::ToString Method](#tostring)|Returns a string representation of the object. Inherited from [Platform::Object](../cppcx/platform-object-class.md).|  
   
-## Remarks  
+### Remarks  
  The ValueType class is used to construct value types. ValueType is derived from Object, which has basic members. However, the compiler detaches those basic members from value types that are derived from the ValueType class. The compiler reattaches those basic members when a value type is boxed.  
   
-## Requirements  
+### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
   
  **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  

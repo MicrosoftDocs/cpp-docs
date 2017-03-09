@@ -29,20 +29,20 @@ Represents a [GUID](http://msdn.microsoft.com/library/windows/desktop/aa373931\(
 public value struct Guid  
 ```  
   
-## Members  
+### Members  
  Guid has the Equals(), GetHashCode(), and ToString() methods derived from the [Platform::Object Class](../cppcx/platform-object-class.md), and the GetTypeCode() method derived from the [Platform::Type Class](../cppcx/platform-type-class.md). Guid also has the following members.  
   
 |Member|Description|  
 |------------|-----------------|  
-|Guid|Initializes a new instance of the Guid struct.|  
-|operator==|Equals operator.|  
-|operator!=|Not equals operator.|  
-|operator()|Converts a Guid to a GUID.|  
+|[Guid](#ctor)|Initializes a new instance of the Guid struct.|  
+|[operator==](#operator-equality)|Equals operator.|  
+|[operator!=](#operator-not-equal)|Not equals operator.|  
+|[operator()](#operator-call)|Converts a Guid to a GUID.|  
   
-## Remarks  
+### Remarks  
  For an example of how to generate a new Platform::Guid using the Windows function [CoCreateGuid](http://msdn.microsoft.com/library/windows/desktop/ms688568\(v=vs.85\).aspx), see [WinRT component: How to generate a GUID?](http://blogs.msdn.com/b/eternalcoding/archive/2013/03/25/winrt-component-how-to-generate-a-guid.aspx)  
   
-## Requirements  
+### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
   
  **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  
@@ -52,7 +52,7 @@ public value struct Guid
  **Metadata:** platform.winmd  
 
  
-## Guid::Guid Constructors
+## <a name="ctor"></a> Guid::Guid Constructors
 Initializes a new instance of a Guid struct.  
   
 ### Syntax  
@@ -70,19 +70,15 @@ Initializes a new instance of a Guid struct.
         unsigned char h,   
         unsigned char i,   
         unsigned char j,   
-        unsigned char k  
-);  
+        unsigned char k  );  
   
-    Guid(   
-        GUID m  
-);  
+    Guid(GUID m);  
   
     Guid(  
         unsigned int a,   
         unsigned short b,   
         unsigned short c,   
-        Array<unsigned char>^ n  
-);  
+        Array<unsigned char>^ n );  
 ```  
   
 ### Parameters  
@@ -126,8 +122,33 @@ Initializes a new instance of a Guid struct.
  The remaining 8 bytes of the GUID.  
   
 
+## <a name="operator-equality"></a> Guid::operator== Operator
+Compares two guids.  
+  
+### Syntax  
+  
+```cpp  
+Platform::Guid::operator==  
+```  
+  
+### Return Value  
+ True if the two guids are equal.
 
-## Guid::operator() Operator
+## <a name="operator-inequality"></a> Guid::operator!= Operator
+Compares two guids.  
+  
+### Syntax  
+  
+```cpp  
+Platform::Guid::operator!=  
+```  
+  
+### Return Value  
+ True if the two guids are not equal.
+
+
+
+## <a name="operator-call"></a> Guid::operator() Operator
 Implicitly converts a [GUID structure](http://msdn.microsoft.com/library/windows/desktop/aa373931\(v=vs.85\).aspx)GUID to a Platform::Guid.  
   
 ### Syntax  

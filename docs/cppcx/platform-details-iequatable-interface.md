@@ -30,13 +30,13 @@ This interface is intended for internal use only, and is not intended to be used
 interface class IEquatable;  
 ```  
   
-## Remarks  
+### Remarks  
  This interface is provided solely for completeness because it can be inspected with browsers.  
   
 ## Inheritance Hierarchy  
  `Platform`  
   
-## Requirements  
+### Requirements  
  **Metadata:** platform.winmd  
   
  **Namespace:** Platform::Details  

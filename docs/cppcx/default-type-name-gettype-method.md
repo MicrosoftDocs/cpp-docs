@@ -28,10 +28,10 @@ Returns a Platform::Type^ that represents the current type.
 Platform::Type^ GetType()  
 ```  
   
-## Return Value  
+### Return Value  
  A [Platform::Type](../cppcx/platform-type-class.md)^ object that represents the current object.  
   
-## Requirements  
+### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
   
  **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  

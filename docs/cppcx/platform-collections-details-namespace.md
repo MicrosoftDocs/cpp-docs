@@ -28,13 +28,13 @@ This namespace supports the `Platform` infrastructure and is not intended to be 
 namespace Platform {  namespace Collections {    namespace Details {}}}  
 ```  
   
-## Members  
+### Members  
  Members of this namespace are defined in collection.h and are not displayed in Object Browser.  
   
 ## Inheritance Hierarchy  
  [Platform::Collections Namespace](../cppcx/platform-collections-namespace.md)  
   
-## Requirements  
+### Requirements  
  **Header:** Collection.h  
   
  **Namespace:** Platform::Collection::Details  

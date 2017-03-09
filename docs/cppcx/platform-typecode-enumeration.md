@@ -29,7 +29,7 @@ Specifies a numeric category that represents a built-in type.
 enum class TypeCode {};  
 ```  
   
-## Members  
+### Members  
   
 |Type Code|Description|  
 |---------------|-----------------|  
@@ -51,7 +51,7 @@ enum class TypeCode {};
 |UInt64|A default::uint64 type.|  
 |UInt8|A default::uint8 type.|  
   
-## Requirements  
+### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
   
  **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  

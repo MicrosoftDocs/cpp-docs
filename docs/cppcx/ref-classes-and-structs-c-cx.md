@@ -63,7 +63,7 @@ The C++/CX supports user-defined *ref classes* and *ref structs*, and user-defin
   
  When a C++/CX ref class is instantiated, its memory is zero-initialized before its constructor is called; therefore it is not necessary to zero-initialize individual members, including properties. If the C++/CX class derives from a Windows Runtime C++ Library (WRL) class, only the C++/CX derived class portion is zero-initialized.  
   
-## Members  
+### Members  
  A ref class can contain `public`, `protected`, and `private` function members; only `public` and `protected` members are emitted into metadata. Nested classes and ref classes are permitted but cannot be `public`. Public fields are not allowed; public data members must be declared as properties. Private or protected internal data members may be fields. By default in a ref class, the accessibility of all members is `private`.  
   
  A ref struct is the same as a ref class, except that by default its members have `public` accessibility.  

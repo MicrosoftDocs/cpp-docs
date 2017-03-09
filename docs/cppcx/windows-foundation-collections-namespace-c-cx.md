@@ -43,7 +43,7 @@ namespace Windows {
 |[end Function](../cppcx/end-function.md)|Returns an iterator that points beyond the end of a collection.|  
 |[to_vector Function](../cppcx/to-vector-function.md)|Returns a collection as a std::vector.|  
   
-## Requirements  
+### Requirements  
  **Header:** collection.h  
   
  **Namespace:** Windows::Foundation::Collections  

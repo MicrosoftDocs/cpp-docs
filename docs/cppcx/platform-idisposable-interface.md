@@ -34,7 +34,7 @@ public interface class IDisposable
   
  **VersionAttribute**(NTDDI_WIN8)  
   
-## Members  
+### Members  
  The IDisposable interface inherits from the IUnknown interface. IDisposable also has the following types of members:  
   
  **Methods**  
@@ -45,7 +45,7 @@ public interface class IDisposable
 |------------|-----------------|  
 |Dispose|Used to release unmanaged resources.|  
   
-## Requirements  
+### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
   
  **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  

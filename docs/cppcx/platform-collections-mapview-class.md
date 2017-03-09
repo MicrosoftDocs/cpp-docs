@@ -29,8 +29,7 @@ Represents a read-only view into a *map*, which is a collection of key-value pai
 template <  
    typename K,  
    typename V,  
-   typename C = ::std::less<K>  
->  
+   typename C = ::std::less<K>>  
 ref class MapView sealed;  
 ```  
   
@@ -44,10 +43,10 @@ ref class MapView sealed;
  `C`  
  A type that provides a function object that can compare two element values as sort keys to determine their relative order in the MapView. By default, [std::less\<K>](../standard-library/less-struct.md).  
   
-## Remarks  
+### Remarks  
  MapView is a concrete C++ implementation of the [Windows::Foundation::Collections::IMapView \<K,V>](http://go.microsoft.com/fwlink/p/?LinkId=262409) interface that is passed across the application binary interface (ABI). For more information, see [Collections (C++/CX)](../cppcx/collections-c-cx.md).  
   
-## Members  
+### Members  
   
 ### Public Constructors  
   
@@ -68,7 +67,7 @@ ref class MapView sealed;
 ## Inheritance Hierarchy  
  `MapView`  
   
-## Requirements  
+### Requirements  
  **Header:** collection.h  
   
  **Namespace:** Platform::Collections  
@@ -79,11 +78,9 @@ Returns an iterator that specifies the first element in the map view.
   
 ### Syntax  
   
-```  
-  
+```    
 virtual Windows::Foundation::Collections::IIterator<  
-Windows::Foundation::Collections::IKeyValuePair<K, V>^>^   
-First();  
+   Windows::Foundation::Collections::IKeyValuePair<K, V>^>^ First();  
 ```  
   
 ### Return Value  
@@ -101,9 +98,7 @@ Determines whether the current MapView contains the specified key.
   
 ```  
   
-bool HasKey(  
-   K key  
-);  
+bool HasKey(K key);  
 ```  
   
 ### Parameters  
@@ -121,9 +116,7 @@ Retrieves the value of type V that is associated with the specified key of type 
 ### Syntax  
   
 ```  
-V Lookup(  
-   K key  
-);  
+V Lookup(K key);  
 ```  
   
 ### Parameters  
@@ -140,29 +133,21 @@ Initializes a new instance of the MapView class.
   
 ### Syntax  
   
-```  
-explicit MapView(  
-    const C& comp = C()  
-    );  
+```cpp  
+explicit MapView(const C& comp = C());  
   
-explicit MapView(  
-    const ::std::map<K, V, C>& m  
-    );  
+explicit MapView(const ::std::map<K, V, C>& m);  
   
-explicit MapView(  
-    std::map<K, V, C>&& m  
-    );  
+explicit MapView(std::map<K, V, C>&& m);  
   
 template <typename InIt> MapView(  
     InIt first,  
     InIt last,  
-    const C& comp = C()  
-    );  
+    const C& comp = C());  
   
-MapView(::std::initializer_list<  
-    std::pair<const K, V>> il,  
-    const C& comp = C()  
-    );  
+MapView(
+    ::std::initializer_list<std::pair<const K, V>> il,  
+    const C& comp = C());  
 ```  
   
 ### Parameters  
@@ -183,7 +168,7 @@ MapView(::std::initializer_list<
   
  il  
  A [std::initializer_list<std::pair\<K,V>>](../standard-library/initializer-list-class.md) whose elements will be inserted into the MapView.  
-  
+
 
 
 ##  <a name="size"></a> MapView::Size Method
@@ -191,7 +176,7 @@ Returns the number of elements in the current MapView object.
   
 ### Syntax  
   
-```  
+```cpp  
   
 virtual property unsigned int Size;  
 ```  
@@ -209,12 +194,9 @@ Divides the current MapView object into two MapView objects. This method is non-
 ```  
 void Split(  
    Windows::Foundation::Collections::IMapView<  
-                         K,  
-                         V>^ * firstPartition,  
+                         K, V>^ * firstPartition,  
    Windows::Foundation::Collections::IMapView<  
-                         K,  
-                         V>^ * secondPartition  
-);  
+                         K, V>^ * secondPartition);  
 ```  
   
 ### Parameters  

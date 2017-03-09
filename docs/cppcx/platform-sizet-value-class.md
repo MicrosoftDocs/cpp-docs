@@ -29,13 +29,13 @@ Represents the size of an object. SizeT is an unsigned data type.
 public ref class SizeT sealed : ValueType  
 ```  
   
-## Members  
+### Members  
   
 |Member|Description|  
 |------------|-----------------|  
 |[SizeT::SizeT constructor](#ctor)|Initializes a new instance of the class with the specified value.|  
   
-## Requirements  
+### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
   
  **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  
@@ -53,7 +53,7 @@ Initializes a new instance of SizeT with the specified value.
 SizeT( uint32 value1 );   SizeT( void* value2 );  
 ```  
   
-## Parameters  
+### Parameters  
  value1  
  An unsigned 32-bit value.  
   

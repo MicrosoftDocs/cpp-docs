@@ -30,13 +30,13 @@ This delegate is intended for internal use only, and is not intended to be used 
 delegate HeapEntryHandler;  
 ```  
   
-## Remarks  
+### Remarks  
  This class is provided solely for completeness because it can be inspected with browsers.  
   
 ## Inheritance Hierarchy  
  `Platform`  
   
-## Requirements  
+### Requirements  
  **Metadata:** platform.winmd  
   
  **Namespace:** Platform::Details  

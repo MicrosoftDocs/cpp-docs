@@ -27,9 +27,9 @@ An optimization type that you can use to pass string data from `Platform::String
 class StringReference  
 ```  
   
-## Remarks  
+### Remarks  
   
-## Members  
+### Members  
   
 ### Public Constructors  
   
@@ -53,7 +53,7 @@ class StringReference
 |[StringReference::operator=](#operator-equals)|Assigns a `StringReference` to a new `StringReference` instance.|  
 |[StringReference::operator()](#operator-call)|Converts a `StringReference` to a `Platform::String^`.|  
   
-## Requirements  
+### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
   
  **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  

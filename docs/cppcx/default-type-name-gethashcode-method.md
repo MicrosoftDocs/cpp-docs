@@ -27,10 +27,10 @@ Returns the hash code for this instance.
 public:int GetHashCode()  
 ```  
   
-## Return Value  
+### Return Value  
  The hash code for this instance.  
   
-## Requirements  
+### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
   
  **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  

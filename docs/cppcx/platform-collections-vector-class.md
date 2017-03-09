@@ -37,7 +37,7 @@ template <typename T, typename E>
  `E`  
  Specifies a binary predicate for testing equality with values of type `T`. The default value is `std::equal_to<T>`.  
   
-## Remarks  
+### Remarks  
  Allowed types are:  
   
 1.  integers  
@@ -54,7 +54,7 @@ template <typename T, typename E>
   
  If you attempt to use a Vector type in a public return value or parameter, compiler error C3986 will be raised. You can fix the error by changing the parameter or return value type to [Windows::Foundation::Collections::IVector](http://go.microsoft.com/fwlink/p/?LinkId=262410). For more information, see [Collections (C++/CX)](../cppcx/collections-c-cx.md).  
   
-## Members  
+### Members  
   
 ### Public Constructors  
   
@@ -90,7 +90,7 @@ template <typename T, typename E>
 ## Inheritance Hierarchy  
  `Vector`  
   
-## Requirements  
+### Requirements  
  **Header:** collection.h  
   
  **Namespace:** Platform::Collections  
@@ -100,11 +100,8 @@ Inserts the specified item after the last item in the current Vector.
   
 ### Syntax  
   
-```  
-  
-virtual void Append(  
-   T item  
-);  
+```    
+virtual void Append(T item);  
 ```  
   
 ### Parameters  
@@ -118,11 +115,9 @@ Deletes all the elements in the current Vector.
   
 ### Syntax  
   
-```  
-  
+```    
 virtual void Clear();  
-```  
-  
+```   
 
 
 ## <a name="first"></a>  Vector::First Method
@@ -132,8 +127,7 @@ Returns an iterator that points to the first element in the Vector.
   
 ```  
   
-virtual Windows::Foundation::Collections::IIterator <T>^   
-   First();  
+virtual Windows::Foundation::Collections::IIterator <T>^ First();  
 ```  
   
 ### Return Value  
@@ -151,11 +145,8 @@ Retrieves the element of the current Vector that is identifed by the specified i
   
 ### Syntax  
   
-```  
-  
-virtual T GetAt(  
-   unsigned int index  
-);  
+```    
+virtual T GetAt(unsigned int index);  
 ```  
   
 ### Parameters  
@@ -172,12 +163,10 @@ Retrieves a sequence of items from the current Vector, starting at the specified
   
 ### Syntax  
   
-```  
-  
-virtual unsigned int GetMany(  
-   unsigned int startIndex,   
-   ::Platform::WriteOnlyArray<T>^ dest  
-);  
+```    
+virtual unsigned int GetMany(
+    unsigned int startIndex, 
+    Platform::WriteOnlyArray<T>^ dest);  
 ```  
   
 ### Parameters  
@@ -200,10 +189,8 @@ Returns a read-only view of a Vector; that is, an IVectorView.
   
 ### Syntax  
   
-```  
-  
-Windows::Foundation::Collections::IVectorView<T>^   
-   GetView();  
+```    
+Windows::Foundation::Collections::IVectorView<T>^ GetView();  
 ```  
   
 ### Return Value  
@@ -218,10 +205,7 @@ Searches for the specified item in the current Vector, and if found, returns the
   
 ```  
   
-virtual bool IndexOf(  
-   T value,  
-   unsigned int* index  
-);  
+virtual bool IndexOf(T value, unsigned int* index);  
 ```  
   
 ### Parameters  
@@ -246,11 +230,8 @@ Inserts the specified item into the current Vector after the element identified 
   
 ### Syntax  
   
-```  
-  
-virtual void InsertAt(  
-   unsigned int index,   
-   T item)  
+```    
+virtual void InsertAt(unsigned int index, T item)  
 ```  
   
 ### Parameters  
@@ -267,11 +248,8 @@ Deletes the element identified by the specified index from the current Vector.
   
 ### Syntax  
   
-```  
-  
-virtual void RemoveAt(  
-   unsigned int index  
-);  
+```    
+virtual void RemoveAt(unsigned int index);  
 ```  
   
 ### Parameters  
@@ -285,8 +263,7 @@ Deletes the element at the end of the current Vector.
   
 ### Syntax  
   
-```  
-  
+```    
 virtual void RemoveAtEnd();  
 ```  
   
@@ -297,11 +274,8 @@ Deletes the elements in the current Vector and then inserts the elements from th
   
 ### Syntax  
   
-```  
-  
-virtual void ReplaceAll(  
-   const ::Platform::Array<T>^ arr  
-);  
+```    
+virtual void ReplaceAll(const ::Platform::Array<T>^ arr);  
 ```  
   
 ### Parameters  
@@ -315,12 +289,8 @@ Assigns the specified value to the element in the current Vector that is identif
   
 ### Syntax  
   
-```  
-  
-virtual void SetAt(  
-   unsigned int index,   
-   T item  
-);  
+```    
+virtual void SetAt(unsigned int index, T item);  
 ```  
   
 ### Parameters  
@@ -337,8 +307,7 @@ Returns the number of elements in the current Vector object.
   
 ### Syntax  
   
-```  
-  
+```    
 virtual property unsigned int Size;  
 ```  
   
@@ -355,48 +324,18 @@ Initializes a new instance of the Vector class.
 ```  
 Vector();  
   
-explicit Vector(  
-    unsigned int size  
-    );  
+explicit Vector(unsigned int size);  
+Vector( unsigned int size, T value);    
+template <typename U> explicit Vector( const ::std::vector<U>& v);    
+template <typename U> explicit Vector( std::vector<U>&& v);    
+
+Vector( const T * ptr, unsigned int size);    
+template <size_t N> explicit Vector(const T(&arr)[N]);    
+template <size_t N> explicit Vector(const std::array<T, N>& a);   
+explicit Vector(const Array<T>^ arr);  
   
-Vector(  
-    unsigned int size,  
-    T value  
-    );  
-  
-template <typename U> explicit Vector(  
-    const ::std::vector<U>& v  
-    );  
-  
-template <typename U> explicit Vector(  
-    std::vector<U>&& v  
-    );  
-  
-Vector(  
-    const T * ptr,  
-    unsigned int size  
-    );  
-  
-template <size_t N> explicit Vector(  
-    const T(&arr)[N]  
-    );  
-  
-template <size_t N> explicit Vector(  
-    const std::array<T, N>& a  
-    );  
-  
-explicit Vector(  
-    const Array<T>^ arr  
-    );  
-  
-template <typename InIt> Vector(  
-    InIt first,  
-    InIt last  
-    );  
-  
-Vector(  
-    std::initializer_list<T> il  
-    );  
+template <typename InIt> Vector(InIt first, InIt last);   
+Vector(std::initializer_list<T> il);  
 ```  
   
 ### Parameters  

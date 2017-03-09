@@ -51,7 +51,7 @@ Error handling in C++/CX is based on exceptions. At the most fundamental level, 
 ## HResult and Message properties  
  All exceptions have an [HResult](platform-comexception-class.md#hresult) property and a [Message](platform-comexception-class.md#message) property. The [Exception::HResult](platform-exception-class.md#hresult) property gets the exception's underlying numeric HRESULT value. The [Exception::Message](platform-exception-class.md#message) property gets the system-supplied string that describes the exception. In [!INCLUDE[win8](includes/win8-md.md)], the message is available only in the debugger and is read-only. This means that you cannot change it when you rethrow the exception. In [!INCLUDE[win81](includes/win81-md.md)], you can access the message string programmatically and provide a new message if you rethrow the exception. Better callstack information is also available in the debugger, including callstacks for asynchronous method calls.  
   
-## Examples  
+### Examples  
  This example shows how to throw a [!INCLUDE[wrt](includes/wrt-md.md)] exception for synchronous operations:  
   
  [!code-cpp[cx_exceptions#01](codesnippet/CPP/exceptiontest/class1.cpp#01)]  
@@ -97,7 +97,7 @@ void App::OnUnhandledException(Platform::Object^ sender, Windows::ApplicationMod
   
 ```  
   
-## Remarks  
+### Remarks  
  C++/CX does not use the `finally` clause.  
   
 ## See Also  
