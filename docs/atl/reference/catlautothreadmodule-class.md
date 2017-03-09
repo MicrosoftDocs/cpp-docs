@@ -8,7 +8,10 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-NO MEMBER TABLE MATCHESdev_langs: 
+f1_keywords:
+ - "CAtlAutoThreadModule"
+ - "atlbase/ATL::CAtlAutoThreadModule"
+ dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "CAtlAutoThreadModule class"

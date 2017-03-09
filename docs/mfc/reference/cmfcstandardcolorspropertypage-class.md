@@ -8,7 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-NO MEMBER TABLE MATCHESdev_langs: 
+dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "CMFCStandardColorsPropertyPage class"

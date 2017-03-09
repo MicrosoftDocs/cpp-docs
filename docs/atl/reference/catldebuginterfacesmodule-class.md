@@ -8,7 +8,10 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-NO MEMBER TABLE MATCHESdev_langs: 
+f1_keywords:
+ - "CAtlDebugInterfacesModule"
+ - "atlbase/ATL::CAtlDebugInterfacesModule"
+ dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "_ATL_DEBUG_QI macro"

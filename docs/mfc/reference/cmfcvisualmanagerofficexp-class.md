@@ -8,7 +8,9 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-NO MEMBER TABLE MATCHESdev_langs: 
+f1_keywords:
+ - "CMFCVisualManagerOfficeXP"
+dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "CMFCVisualManagerOfficeXP class"

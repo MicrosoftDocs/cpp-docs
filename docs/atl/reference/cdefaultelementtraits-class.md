@@ -8,7 +8,10 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-NO MEMBER TABLE MATCHESdev_langs: 
+f1_keywords:
+ - "CDefaultElementTraits"
+ - "atlcoll/ATL::CDefaultElementTraits"
+dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "CDefaultElementTraits class"
@@ -38,7 +41,7 @@ This class provides default methods and functions for a collection class.
 ## Syntax  
   
 ```
-template<typename T>  
+template <typename T>  
 class CDefaultElementTraits : public CElementTraitsBase<T>,
     public CDefaultHashTraits<T>,
     public CDefaultCompareTraits<T>

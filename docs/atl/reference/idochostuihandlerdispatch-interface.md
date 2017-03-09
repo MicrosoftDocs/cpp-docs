@@ -8,7 +8,10 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-NO MEMBER TABLE MATCHESdev_langs: 
+f1_keywords:
+ - "IDocHostUIHandlerDispatch"
+ - "atlbase/ATL::IDocHostUIHandlerDispatch"
+ dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDocHostUIHandlerDispatch interface"
