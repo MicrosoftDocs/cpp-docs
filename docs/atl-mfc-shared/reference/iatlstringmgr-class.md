@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IAtlStringMgr"
+f1_keywords: ['IAtlStringMgr', 'ATLSIMPSTR/ATL::IAtlStringMgr', 'ATLSIMPSTR/ATL::Allocate', 'ATLSIMPSTR/ATL::Clone', 'ATLSIMPSTR/ATL::Free', 'ATLSIMPSTR/ATL::GetNilString', 'ATLSIMPSTR/ATL::Reallocate']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
