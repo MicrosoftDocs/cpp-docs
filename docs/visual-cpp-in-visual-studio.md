@@ -61,7 +61,7 @@ The Visual Studio 2017 programming language and development tools help you devel
  [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md) 
  Learn about C++ conformance improvements in Visual Studio 2017. 
 
- [Visual C++ language conformance](../visual-cpp-language-conformance.md)  
+ [Visual C++ language conformance](visual-cpp-language-conformance.md)  
  A list of conformance status by feature in Visual C++.
 
  [Visual C++ change history 2003 - 2015](porting/visual-cpp-change-history-2003-2015.md)  
