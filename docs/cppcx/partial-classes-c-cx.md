@@ -84,7 +84,7 @@ A partial class is a construct that supports scenarios in which you are modifyin
   
  The `partial` keyword is supported only in combination with the `ref class` keyword or the `value class` keyword.  
   
-## Examples  
+### Examples  
  The following example defines the `Address` class across two code files. The designer modifies `Address.details.h` and you modify `Address.h`. Only the class definition in the first file uses the `partial` keyword.  
   
  [!code-cpp[cx_partial#07](../cppcx/codesnippet/CPP/partialclassexample/address.details.h#07)]  

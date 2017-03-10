@@ -29,34 +29,34 @@ Indicates that the threading model for an application is multi-threaded apartmen
 public ref class MTAThreadAttribute sealed : Attribute  
 ```  
   
-## Members  
+### Members  
   
 ### Public Constructors  
   
 |Name|Description|  
 |----------|-----------------|  
-|[MTAThreadAttribute Constructor 1](../cppcx/mtathreadattribute-constructor-1.md) constructor|Initializes a new instance of the class.|  
+|[MTAThreadAttribute Constructor 1](#ctor) constructor|Initializes a new instance of the class.|  
   
 ### Public Methods  
  The MTAThreadAttribute attribute inherits from [Platform::Object Class](../cppcx/platform-object-class.md). MTAThreadAttribute also overloads or has the following members:  
   
 |Name|Description|  
 |----------|-----------------|  
-|[MTAThreadAttribute::Equals](../cppcx/mtathreadattribute-equals.md)|Determines whether the specified object is equal to the current object.|  
-|[MTAThreadAttribute::GetHashCode](../cppcx/mtathreadattribute-gethashcode.md)|Returns the hash code for this instance.|  
-|[MTAThreadAttribute::ToString](../cppcx/mtathreadattribute-tostring.md)|Returns a string that represents the current object.|  
+|[MTAThreadAttribute::Equals](#equals)|Determines whether the specified object is equal to the current object.|  
+|[MTAThreadAttribute::GetHashCode](#gethashcode)|Returns the hash code for this instance.|  
+|[MTAThreadAttribute::ToString](#tostring)|Returns a string that represents the current object.|  
   
 ## Inheritance Hierarchy  
  `Platform`  
   
-## Requirements  
+### Requirements  
  **Metadata:** platform.winmd  
   
  **Namespace:** Platform  
 
 
 
-## MTAThreadAttribute Constructor 1
+## <a name="ctor"></a> MTAThreadAttribute Constructor
 Initializes a new instance of the MTAThreadAttribute class.  
   
 ### Syntax  
@@ -67,7 +67,7 @@ public:MTAThreadAttribute()
   
 
 
-## MTAThreadAttribute::Equals
+## <a name="equals"></a> MTAThreadAttribute::Equals
 Determines whether the specified object is equal to the current object.  
   
 ### Syntax  
@@ -76,7 +76,7 @@ Determines whether the specified object is equal to the current object.
 public:virtual override bool Equals(  Object^ obj)  
 ```  
   
-## Parameters  
+### Parameters  
  obj  
  The object to compare.  
   
@@ -85,7 +85,7 @@ public:virtual override bool Equals(  Object^ obj)
   
 
 
-## MTAThreadAttribute::GetHashCode
+## <a name="gethashcode"></a> MTAThreadAttribute::GetHashCode
 Returns the hash code for this instance.  
   
 ### Syntax  
@@ -99,7 +99,7 @@ public:int GetHashCode()
   
 
 
-## MTAThreadAttribute::ToString
+## <a name="tostring"></a> MTAThreadAttribute::ToString
 Returns a string that represents the current object.  
   
 ### Syntax  

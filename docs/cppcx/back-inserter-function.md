@@ -27,21 +27,13 @@ Returns an iterator that is used to insert elements at the end of the specified 
   
 ```  
   
-template <  
-   typename T  
-   >  
-   ::Platform::BackInsertIterator<T>   
-    back_inserter(  
-                  IVector<T>^ v  
-                 );  
+template <typename T>
+Platform::BackInsertIterator<T>   
+    back_inserter(IVector<T>^ v);  
   
-template <  
-   typename T  
-   >  
-   ::Platform::BackInsertIterator<T>   
-   back_inserter(  
-                IObservableVector<T>^ v  
-                );  
+template<typename T>  
+Platform::BackInsertIterator<T>   
+   back_inserter(IObservableVector<T>^ v);  
 ```  
   
 #### Parameters  
@@ -51,10 +43,10 @@ template <
  `v`  
  An interface pointer that provides access to the underlying collection.  
   
-## Return Value  
+### Return Value  
  An iterator.  
   
-## Requirements  
+### Requirements  
  **Header:** collection.h  
   
  **Namespace:** Windows::Foundation::Collections  

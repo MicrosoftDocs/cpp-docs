@@ -49,7 +49,7 @@ The following illustration represents the MFC classes derived from `CObject`:
   
  ![Classes Not Derived From CObject](../mfc/media/mfc_heirarchy_chart3of3.png "mfc_heirarchy_chart3of3")  
   
- You can download the complete chart from the following location: [http://go.microsoft.com/fwlink/LinkId=112301](http://go.microsoft.com/fwlink/linkid=112301).  
+ You can download the complete chart from the following location: [MFC Hierarchy Charts Download](https://aka.ms/hxgg8e).  
   
 ## See Also  
  [Hierarchy Chart Categories](../mfc/hierarchy-chart-categories.md)   

@@ -27,42 +27,40 @@ class WeakReference
   
 #### Parameters  
   
-## Members  
+### Members  
   
 ### Constructors  
   
 |Member|Description|  
 |------------|-----------------|  
-|[WeakReference::WeakReference Constructor](../cppcx/weakreference-weakreference-constructor-c-cx.md)|Initializes a new instance of the WeakReference class.|  
+|[WeakReference::WeakReference Constructor](#ctor)|Initializes a new instance of the WeakReference class.|  
   
 ### Methods  
   
 |Member|Description|  
 |------------|-----------------|  
-|[WeakReference::Resolve Method](../cppcx/weakreference-resolve-method-platform-namespace.md)|Returns a handle to the underlying ref class, or nullptr if the object no longer exists.|  
+|[WeakReference::Resolve Method](#resolve)|Returns a handle to the underlying ref class, or nullptr if the object no longer exists.|  
   
 ### Operators  
   
 |Member|Description|  
 |------------|-----------------|  
-|[WeakReference::operator=](../cppcx/weakreference-operator-assign.md)|Assigns a new value to the WeakReference object.|  
+|[WeakReference::operator=](#operator-assign)|Assigns a new value to the WeakReference object.|  
+|[WeakReference::operator BoolType](#booltype)|Implements the safe bool pattern.|  
   
-## Remarks  
+### Remarks  
  The WeakReference class itself is not a ref class and therefore it does not inherit from Platform::Object^ and cannot be used in the signature of a public method.  
 
-## WeakReference::operator=
+## <a name="operator-assign"></a> WeakReference::operator=
 Assigns a value to a WeakReference.  
   
 ### Syntax  
   
 ```cpp  
-WeakReference& operator=(decltype(__nullptr));  
-  
-WeakReference& operator=(const WeakReference& __otherArg);  
-  
-WeakReference& operator=(WeakReference&& __otherArg);  
-  
-WeakReference& operator=(const volatile ::Platform::Object^ const __otherArg);  
+WeakReference& operator=(decltype(__nullptr));    
+WeakReference& operator=(const WeakReference& otherArg);   
+WeakReference& operator=(WeakReference&& otherArg);    
+WeakReference& operator=(const volatile ::Platform::Object^ const otherArg); 
   
 ```  
   
@@ -71,7 +69,7 @@ WeakReference& operator=(const volatile ::Platform::Object^ const __otherArg);
   
 
 
-## WeakReference::operator BoolType
+## <a name="booltype"></a> WeakReference::operator BoolType
 Implements the safe bool pattern for the WeakReference class. Not to be called explicitly from your code.  
   
 ### Syntax  
@@ -79,11 +77,8 @@ Implements the safe bool pattern for the WeakReference class. Not to be called e
 ```cpp  
 BoolType BoolType()  
 ```  
-  
-## See Also  
- [Platform::WeakReference Class](../cppcx/platform-weakreference-class.md
-  
-## WeakReference::Resolve Method (Platform namespace)
+
+## <a name="resolve"></a> WeakReference::Resolve Method (Platform namespace)
 Returns a handle to the original ref class, or `nullptr` if the object no longer exists.  
   
 ### Syntax  
@@ -96,10 +91,9 @@ T^ Resolve() const
   
 ### Parameters  
   
-## Property Value/Return Value  
+### Property Value/Return Value  
  A handle to the ref class that the WeakReference object was previously associated with, or nullptr.  
   
-### Remarks  
 ### Example  
  This is the description for a Code Example.  
   
@@ -117,10 +111,8 @@ if (bar != nullptr)
   
  Note that the type parameter is T, not T^.  
   
-## See Also  
- [Platform namespace](../cppcx/platform-namespace-c-cx.md
-  
-## WeakReference::WeakReference Constructor (C++/CX)
+ 
+## <a name="ctor"></a> WeakReference::WeakReference Constructor
 Provides various ways to construct a WeakReference.  
   
 ### Syntax  
@@ -128,22 +120,17 @@ Provides various ways to construct a WeakReference.
 ```cpp  
 WeakReference();  
 WeakReference(decltype(__nullptr));  
-WeakReference(const WeakReference& __otherArg);  
-WeakReference(WeakReference&& __otherArg);  
-explicit WeakReference(const volatile ::Platform::Object^ const __otherArg);  
+WeakReference(const WeakReference& otherArg);  
+WeakReference(WeakReference&& otherArg);  
+explicit WeakReference(const volatile ::Platform::Object^ const otherArg);  
 ```  
 ### Example  
   
-```cpp  
-  
+```cpp    
 MyClass^ mc = ref new MyClass();  
 WeakReference wr(mc);  
-MyClass^ copy2 = wr.Resolve<MyClass>();  
-  
+MyClass^ copy2 = wr.Resolve<MyClass>();    
 ```  
-  
-### Remarks  
-  
   
 ## See Also  
  [Platform namespace](../cppcx/platform-namespace-c-cx.md)

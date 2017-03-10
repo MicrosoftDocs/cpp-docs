@@ -29,14 +29,14 @@ Specifies the thread context in which a callback function (event handler) execut
 enum class CallbackContext {};  
 ```  
   
-## Members  
+### Members  
   
 |Type Code|Description|  
 |---------------|-----------------|  
 |Any|The callback function can execute on any thread context.|  
 |Same|The callback function can execute on only the thread context that started the asynchronous operation.|  
   
-## Requirements  
+### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
   
  **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  

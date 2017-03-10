@@ -25,8 +25,7 @@ Represents a read-only view into a *map*, which is a collection of key-value pai
 template <  
    typename K,  
    typename V,  
-   typename C = ::std::equal_to<K>  
->  
+   typename C = ::std::equal_to<K>>  
 ref class UnorderedMapView sealed;  
 ```  
   
@@ -40,10 +39,10 @@ ref class UnorderedMapView sealed;
  `C`  
  A type that provides a function object that can compare two key values for equality. By default, [std::equal_to\<K>](../standard-library/equal-to-struct.md)  
   
-## Remarks  
+### Remarks  
  UnorderedMapView is a concrete C++ implementation of the [Windows::Foundation::Collections::IMapView\<K,V>](http://go.microsoft.com/fwlink/p/?LinkId=262409) interface that is passed across the application binary interface (ABI). For more information, see [Collections (C++/CX)](../cppcx/collections-c-cx.md).  
   
-## Members  
+### Members  
   
 ### Public Constructors  
   
@@ -64,7 +63,7 @@ ref class UnorderedMapView sealed;
 ## Inheritance Hierarchy  
  `UnorderedMapView`  
   
-## Requirements  
+### Requirements  
  **Header:** collection.h  
   
  **Namespace:** Platform::Collections  
@@ -74,11 +73,10 @@ Returns an iterator that specifies the first [Windows::Foundation::Collections::
   
 ### Syntax  
   
-```cpp  
-  
+```cpp   
 virtual Windows::Foundation::Collections::IIterator<  
-Windows::Foundation::Collections::IKeyValuePair<K, V>^>^   
-First();  
+    Windows::Foundation::Collections::IKeyValuePair<K, V>^>^   
+    First();  
 ```  
   
 ### Return Value  
@@ -94,11 +92,8 @@ Determines whether the current UnorderedMap contains the specified key.
   
 ### Syntax  
   
-```cpp  
-  
-bool HasKey(  
-   K key  
-);  
+```cpp    
+bool HasKey(K key);  
 ```  
   
 ### Parameters  
@@ -116,9 +111,7 @@ Retrieves the value of type V that is associated with the specified key of type 
 ### Syntax  
   
 ```cpp  
-V Lookup(  
-   K key  
-);  
+V Lookup(K key);  
 ```  
   
 ### Parameters  
@@ -135,8 +128,7 @@ Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](ht
   
 ### Syntax  
   
-```cpp  
-  
+```cpp    
 virtual property unsigned int Size;  
 ```  
   
@@ -153,12 +145,9 @@ Divides the current UnorderedMapView object into two UnorderedMapView objects. T
 ```cpp  
 void Split(  
    Windows::Foundation::Collections::IMapView<  
-                         K,  
-                         V>^ * firstPartition,  
+                         K,V>^ * firstPartition,  
    Windows::Foundation::Collections::IMapView<  
-                         K,  
-                         V>^ * secondPartition  
-);  
+                         K,V>^ * secondPartition);  
 ```  
   
 ### Parameters  
@@ -180,68 +169,46 @@ Initializes a new instance of the UnorderedMapView class.
   
 ```cpp  
   
-UnorderedMapView();  
-  
-explicit UnorderedMapView(size_t n);  
-  
-UnorderedMapView(size_t n, const H& h);  
-  
+UnorderedMapView();    
+explicit UnorderedMapView(size_t n);   
+UnorderedMapView(size_t n, const H& h);   
 UnorderedMapView(size_t n, const H& h, const P& p);  
   
 explicit UnorderedMapView(  
-    const std::unordered_map<K, V, H, P>& m  
-    );  
+    const std::unordered_map<K, V, H, P>& m);  
 explicit UnorderedMapView(  
-    std::unordered_map<K, V, H, P>&& m  
-    );  
+    std::unordered_map<K, V, H, P>&& m);  
   
-template <typename InIt> UnorderedMapView(  
-    InIt first,  
-    InIt last  
-    );  
-  
-template <typename InIt> UnorderedMapView(  
-    InIt first,  
-    InIt last,  
-    size_t n  
-    );  
+template <typename InIt> UnorderedMapView(InIt first, InIt last );  
+template <typename InIt> UnorderedMapView(InIt first, InIt last, size_t n );  
   
 template <typename InIt> UnorderedMapView(  
     InIt first,  
     InIt last,  
     size_t n,  
-    const H& h  
-    );  
+    const H& h );  
   
 template <typename InIt> UnorderedMapView(  
     InIt first,  
     InIt last,  
     size_t n,  
     const H& h,  
-    const P& p  
-    );  
+    const P& p );  
   
-UnorderedMapView(  
-    std::initializer_list<std::pair<const K, V>> il  
-    );  
+UnorderedMapView(std::initializer_list<std::pair<const K, V>);  
   
-UnorderedMapView(  
-    std::initializer_list< std::pair<const K, V>> il,  
-    size_t n  
-    );  
+UnorderedMapView(std::initializer_list< std::pair<const K, V>> il, size_t n   
   
 UnorderedMapView(  
     std::initializer_list< std::pair<const K, V>> il,  
     size_t n,  
-    const H& h  
-    );  
+    const H& h);  
   
 UnorderedMapView(  
     std::initializer_list< std::pair<const K, V>> il,  
     size_t n,  
     const H& h,  
-    const P& p  
-    );  
+    const P& p );  
 ```  
   
 ### Parameters  
@@ -265,10 +232,7 @@ UnorderedMapView(
   
  `last`  
  The input iterator of the first element after a range of elements used to initialize the UnorderedMapView.  
-  
-
-
-  
+   
 ## See Also  
  [Platform::Collections Namespace](../cppcx/platform-collections-namespace.md)   
  [Windows::Foundation::IMapView](http://go.microsoft.com/fwlink/p/?LinkId=262409)

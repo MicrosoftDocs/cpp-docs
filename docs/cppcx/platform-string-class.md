@@ -41,7 +41,7 @@ public ref class String sealed : Object,
 |`const char16* begin(String^ s)`|Returns a pointer to the beginning of the specified String object.|  
 |`const char16* end(String^ s)`|Returns a pointer past the end of the specified String object.|  
   
-## Members  
+### Members  
  The String class inherits from Object, and the IDisposable, IEquatable, and IPrintable interfaces.  
   
  The String class also has the following types of members.  
@@ -84,7 +84,7 @@ public ref class String sealed : Object,
 |[String::operator!= Operator](#operator-inequality)|Indicates whether two specifed String objects have different values.|  
 |[String::operator< Operator](#operator-less-than)|Indicates whether the value of one String object is less than the value of a second String object.|  
   
-## Requirements  
+### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
   
  **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  
@@ -143,12 +143,8 @@ Concatenates the values of two String objects.
   
 ### Syntax  
   
-```cpp  
-  
-String^ Concat( String ^ str1,   
-String ^ str2  
-)  
-  
+```cpp    
+String^ Concat( String^ str1, String^ str2)  
 ```  
   
 ### Parameters  
@@ -206,7 +202,7 @@ char16* End()
  A pointer to past the end of the current string.  
   
 ### Remarks  
- End() returns Begin()+Length.  
+ End() returns Begin() + Length.  
   
 
 
@@ -255,8 +251,7 @@ Indicates whether the current String object is empty.
   
 ### Syntax  
   
-```cpp  
-  
+```cpp    
 bool IsEmpty()  
 ```  
   
@@ -270,8 +265,7 @@ Indicates whether the current String object is is participating in a *fast pass*
   
 ### Syntax  
   
-```cpp  
-  
+```cpp    
 bool IsFastPass();  
 ```  
   
@@ -288,8 +282,7 @@ Retrieves the number of characters in the current String object.
   
 ### Syntax  
   
-```cpp  
-  
+```cpp    
 unsigned int Length()  
 ```  
   
@@ -299,8 +292,7 @@ unsigned int Length()
 ### Remarks  
  The length of a String with no characters is zero. The length of the following string is 5:  
   
-```  
-  
+```    
 String^ str = "Hello";  
 int len = str->Length(); //len = 5  
 ```  
@@ -316,9 +308,7 @@ Indicates whether two specifed [String](../cppcx/platform-string-class.md) objec
   
 ```cpp  
   
-bool String::operator+( String^ str1,  
-                         String^ str2)  
-  
+bool String::operator+( String^ str1, String^ str2)  
 ```  
   
 ### Parameters  
@@ -339,11 +329,8 @@ Indicates whether two specified String objects have the same text value.
   
 ### Syntax  
   
-```cpp  
-  
-bool String::operator==( String^ str1,  
-                         String^ str2)  
-  
+```cpp    
+bool String::operator==( String^ str1, String^ str2)  
 ```  
   
 ### Parameters  
@@ -366,11 +353,8 @@ Indicates whether the value of one String object is greater than the value of a 
   
 ### Syntax  
   
-```cpp  
-  
-bool String::operator>( String^ str1,  
-                         String^ str2)  
-  
+```cpp    
+bool String::operator>( String^ str1, String^ str2)  
 ```  
   
 ### Parameters  
@@ -393,11 +377,8 @@ Indicates whether the value of one String object is greater than or equal to the
   
 ### Syntax  
   
-```cpp  
-  
-bool String::operator>=( String^ str1,  
-                         String^ str2)  
-  
+```cpp    
+bool String::operator>=( String^ str1, String^ str2) 
 ```  
   
 ### Parameters  
@@ -418,10 +399,7 @@ Indicates whether two specifed String objects have different values.
 ### Syntax  
   
 ```cpp  
-  
-bool String::operator!=( String^ str1,  
-                         String^ str2)  
-  
+bool String::operator!=( String^ str1, String^ str2)  
 ```  
   
 ### Parameters  
@@ -441,10 +419,7 @@ Indicates whether the value of one String object is less than the value of a sec
 ### Syntax  
   
 ```cpp  
-  
-bool String::operator<( String^ str1,  
-                         String^ str2)  
-  
+bool String::operator<( String^ str1, String^ str2)  
 ```  
   
 ### Parameters  
@@ -462,21 +437,13 @@ Initializes a new instance of the String class with a copy of the input string d
   
 ### Syntax  
   
-```cpp  
-  
-String();  
-  
-String(  
-  char16* s  
-)  
-  
-String(  
-  char16* s,   
-  unsigned int n  
-)  
+```cpp    
+String();    
+String(char16* s)  
+String(char16* s, unsigned int n)  
 ```  
   
-## Parameters  
+### Parameters  
  `s`  
  A series of wide characters that initialize the string. char16  
   
@@ -487,19 +454,16 @@ String(
  If performance is critical and you control the lifetime of the source string, you can use [Platform::StringReference](../cppcx/platform-stringreference-class.md) in place of String.  
 ### Example  
   
-```  
+```cpp  
 String^ s = L”Hello!”;  
 ```  
   
-
-
 ## <a name="tostring"></a> String::ToString
 Returns a String object whose value is the same as the current string.  
   
 ### Syntax  
   
 ```cpp  
-  
 String^ String::ToString()  
 ```  
   

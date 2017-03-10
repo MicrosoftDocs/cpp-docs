@@ -29,7 +29,7 @@ Represents errors that occur during application execution. Custom exception clas
 public ref class Exception : Object,    IException,    IPrintable,    IEquatable  
 ```  
   
-## Members  
+### Members  
  The `Exception` class inherits from the `Object` class and the `IException`, `IPrintable`, and `IEquatable` interfaces.  
   
  The `Exception` class also has the following kinds of members.  
@@ -55,7 +55,7 @@ public ref class Exception : Object,    IException,    IPrintable,    IEquatable
 |[Exception::HResult Property](#hresult)|The HRESULT that corresponds to the exception.|  
 |[Exception::Message Property](#message)|A message that describes the exception. This value is read-only and cannot be modified after the `Exception` is constructed.|  
   
-## Requirements  
+### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
   
  **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  
@@ -74,7 +74,7 @@ Exception^ CreateException(int32 hr)
 Exception^ CreateException(int32 hr, Platform::String^ message)  
 ```  
   
-## Parameters  
+### Parameters  
  hr  
  An HRESULT value that you typically get from a call to a COM method. If the value is 0, which is equal to S_OK, this method throws [Platform::InvalidArgumentException](../cppcx/platform-invalidargumentexception-class.md) because COM methods that succeed should not throw exceptions.  
   

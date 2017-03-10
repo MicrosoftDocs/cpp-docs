@@ -30,10 +30,10 @@ Thrown when a COM class has not been registered.
 public ref class ClassNotRegisteredException : COMException,    IException,    IPrintable,    IEquatable  
 ```  
   
-## Remarks  
+### Remarks  
  For more information, see the [COMException](../cppcx/platform-comexception-class.md) class.  
   
-## Requirements  
+### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
   
  **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  

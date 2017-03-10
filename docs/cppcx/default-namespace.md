@@ -27,7 +27,7 @@ The `default` namespace scopes the built-in types that are supported by C++/CX.
 namespace default;  
 ```  
   
-## Members  
+### Members  
  All built-in types inherit the following members.  
   
 |||  
@@ -53,7 +53,7 @@ namespace default;
 |`uint64`|A 64-bit unsigned integer.|  
 |`uint8`|An 8-bit unsigned numeric value.|  
   
-## Requirements  
+### Requirements  
  **Header:** vccorlib.h  
   
 ## See Also  

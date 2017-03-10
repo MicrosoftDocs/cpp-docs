@@ -35,10 +35,10 @@ public ref class DefaultMember abstract : Attribute
   
  [Platform::Metadata::Attribute](../cppcx/platform-metadata-attribute-attribute.md)  
   
-## Remarks  
+### Remarks  
  Apply the DefaultMember attribute to a method that will be consumed by a JavaScript application.  
   
-## Requirements  
+### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
   
  **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  

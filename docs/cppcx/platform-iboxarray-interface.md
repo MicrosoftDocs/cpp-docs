@@ -34,10 +34,10 @@ interface class IBoxArray
  `T`  
  The type of the boxed value in each array element.  
   
-## Remarks  
+### Remarks  
  `IBoxArray` is the C++/CX name for `Windows::Foundation::IReferenceArray`.  
   
-## Members  
+### Members  
  The `IBoxArray` interface inherits from the `IValueType` interface. `IBoxArray` also has these members:  
   
 |Method|Description|  
@@ -57,7 +57,7 @@ property T Value {T get();}
  `T`  
  The type of the boxed value.  
   
-## Property Value/Return Value  
+### Property Value/Return Value  
  Returns the value that was originally stored in this object.  
   
 ### Remarks  

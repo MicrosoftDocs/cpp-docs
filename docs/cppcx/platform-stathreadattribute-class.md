@@ -29,7 +29,7 @@ Indicates that the threading model for an application is single-threaded apartme
 public ref class STAThreadAttribute sealed : Attribute  
 ```  
   
-## Members  
+### Members  
   
 ### Public Constructors  
   
@@ -49,7 +49,7 @@ public ref class STAThreadAttribute sealed : Attribute
 ## Inheritance Hierarchy  
  `Platform`  
   
-## Requirements  
+### Requirements  
  **Header:** collection.h  
   
  **Namespace:** Platform  
@@ -76,7 +76,7 @@ Determines whether the specified object is equal to the current object.
 public:virtual override bool Equals(  Object^ obj)  
 ```  
   
-## Parameters  
+### Parameters  
  obj  
  The object to compare.  
   

@@ -40,7 +40,7 @@ ref class Map sealed;
  `C`  
  A type that provides a function object that can compare two element values as sort keys to determine their relative order in the Map. By default,  [std::equal_to\<K>](../standard-library/equal-to-struct.md).  
   
-## Remarks  
+### Remarks  
  Allowed types are:  
   
 -   integers  
@@ -57,7 +57,7 @@ ref class Map sealed;
   
  For more information, see [Collections](../cppcx/collections-c-cx.md).  
   
-## Members  
+### Members  
   
 ### Public Constructors  
   
@@ -88,7 +88,7 @@ ref class Map sealed;
 ## Inheritance Hierarchy  
  `UnorderedMap`  
   
-## Requirements  
+### Requirements  
  **Header:** collection.h  
   
  **Namespace:** Platform::Collections  
@@ -215,7 +215,7 @@ Raised when an item is inserted into or removed from the map.
 event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;  
 ```  
   
-## Property Value/Return Value  
+### Property Value/Return Value  
  A [MapChangedEventHandler\<K,V>](http://msdn.microsoft.com/library/windows/apps/br206644.aspx) that contains information about the object that raised the event, and the kind of change that occurred. See also [IMapChangedEventArgs\<K>](http://msdn.microsoft.com/library/windows/apps/br226034.aspx) and [CollectionChange Enumeration](http://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx).  
   
 ## .NET Framework Equivalent  

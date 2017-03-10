@@ -29,10 +29,9 @@ Represents a *map*, which is a collection of key-value pairs.
 template <  
    typename K,  
    typename V,  
-   typename C = std::less<K>  
+   typename C = std::less<K>>  
 ref class Map sealed;  
 ```  
-  
 #### Parameters  
  `K`  
  The type of the key in the key-value pair.  
@@ -46,7 +45,7 @@ ref class Map sealed;
  __is_valid_winrt_type()  
  A compiler generated function that validates the type of K and V and provides a friendly error message if the type cannot be stored in the Map.  
   
-## Remarks  
+### Remarks  
  Allowed types are:  
   
 -   integers  
@@ -63,7 +62,7 @@ ref class Map sealed;
   
  For more information, see [Collections](../cppcx/collections-c-cx.md).  
   
-## Members  
+### Members  
   
 ### Public Constructors  
   
@@ -94,7 +93,7 @@ ref class Map sealed;
 ## Inheritance Hierarchy  
  `Map`  
   
-## Requirements  
+### Requirements  
  **Header:** collection.h  
   
  **Namespace:** Platform::Collections  
@@ -104,8 +103,7 @@ Removes all key-value pairs from the current Map object.
   
 ### Syntax  
   
-```  
-  
+```    
 virtual void Clear();   
 ```  
   
@@ -116,8 +114,7 @@ Returns an iterator that specifies the first element in the map, or `nullptr` if
   
 ### Syntax  
   
-```  
-  
+```    
 virtual Windows::Foundation::Collections::IIterator<  
 Windows::Foundation::Collections::IKeyValuePair<K, V>^>^ First();  
 ```  
@@ -135,10 +132,8 @@ Returns a read-only view of the current Map; that is, a [Platform::Collections::
   
 ### Syntax  
   
-```  
-  
-Windows::Foundation::Collections::IMapView<K, V>^   
-   GetView();  
+```    
+Windows::Foundation::Collections::IMapView<K, V>^ GetView();  
 ```  
   
 ### Return Value  
@@ -151,11 +146,8 @@ Determines whether the current Map contains the specified key.
   
 ### Syntax  
   
-```  
-  
-bool HasKey(  
-   K key  
-);  
+```    
+bool HasKey(K key);  
 ```  
   
 ### Parameters  
@@ -174,10 +166,7 @@ Adds the specified key-value pair to the current Map object.
   
 ```  
   
-virtual bool Insert(  
-   K key,   
-   V value  
-);  
+virtual bool Insert(K key, V value);  
 ```  
   
 ### Parameters  
@@ -198,9 +187,7 @@ Retrieves the value of type V that is associated with the specified key of type 
 ### Syntax  
   
 ```  
-V Lookup(  
-   K key  
-);  
+V Lookup(K key);  
 ```  
   
 ### Parameters  
@@ -221,23 +208,14 @@ Initializes a new instance of the Map class.
 ### Syntax  
   
 ```  
-explicit Map(  
-   const C& comp = C()  
-);  
-explicit Map(  
-   const StdMap& m  
-);  
-explicit Map(  
-   StdMap&& m  
-);  
-template <  
-   typename InIt  
->  
+explicit Map(const C& comp = C());  
+explicit Map(const StdMap& m);  
+explicit Map(StdMap&& m ;  
+template <typename InIt>  
 Map(  
    InItfirst,  
    InItlast,  
-   const C& comp = C()  
-);  
+   const C& comp = C());  
 ```  
   
 ### Parameters  
@@ -267,7 +245,7 @@ Raised when an item is inserted into or removed from the map.
 event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;  
 ```  
   
-## Property Value/Return Value  
+### Property Value/Return Value  
  A [MapChangedEventHandler\<K,V>](http://msdn.microsoft.com/library/windows/apps/br206644.aspx) that contains information about the object that raised the event, and the kind of change that occurred. See also [IMapChangedEventArgs\<K>](http://msdn.microsoft.com/library/windows/apps/br226034.aspx) and [CollectionChange Enumeration](http://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx).  
   
 ## .NET Framework Equivalent  
@@ -280,10 +258,8 @@ Deletes the specified key-value pair from the current Map object.
   
 ### Syntax  
   
-```  
-  
-virtual void Remove(  
-   K key);  
+```    
+virtual void Remove(K key);  
 ```  
   
 ### Parameters  
@@ -297,8 +273,7 @@ Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](ht
   
 ### Syntax  
   
-```  
-  
+```    
 virtual property unsigned int Size;  
 ```  
   
