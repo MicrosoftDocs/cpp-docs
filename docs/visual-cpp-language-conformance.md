@@ -31,10 +31,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Visual C++ Language Conformance 
-This topic summarizes the ISO C++03, C++11, C++14, and Draft C++17 language standards conformance of compiler features and Standard Library (STL) features for Visual C++ in Visual Studio 2017. Each compiler and STL feature name links to the ISO C++ Standard proposal paper that describes the feature, if one is available at publication time.  
+This topic summarizes the ISO C++03, C++11, C++14, and Draft C++17 language standards conformance of compiler features and Standard Library (STL) features for Visual C++ in Visual Studio 2017 and earlier versions. Each compiler and STL feature name links to the ISO C++ Standard proposal paper that describes the feature, if one is available at publication time. The Supported column lists the Visual Studio version in which support for the feature first appeared.  
   
-For current news from the C++ team, 
-visit the [Visual C++ team blog](http://blogs.msdn.microsoft.com/vcblog/).  
+For details on conformance improvements and other changes in Visual Studio 2017, see [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md) and [What's New for Visual C++ in Visual Studio 2017](what-s-new-for-visual-cpp-in-visual-studio.md). For conformance changes in earlier versions, see [Visual C++ change history](porting/visual-cpp-change-history-2003-2015.md) and [Visual C++ What's New 2003 through 2015](porting/visual-cpp-what-s-new-2003-through-2015.md). For current news from the C++ team, visit the [Visual C++ team blog](http://blogs.msdn.microsoft.com/vcblog/).  
   
 ## Compiler Features  
   
@@ -224,7 +223,7 @@ visit the [Visual C++ team blog](http://blogs.msdn.microsoft.com/vcblog/).
 |&nbsp;&nbsp;[N3656 make_unique()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3656.htm)|VS 2013|
 |&nbsp;&nbsp;[N3924 Discouraging rand()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n3924.pdf)|N/A|  
   
-A group of papers listed together indicates that a feature was voted into the Standard, and then one or more papers to fix that feature were also voted in. These features are implemented together.  
+A group of papers listed together indicates that a feature was voted into the Standard, and then one or more papers to improve or expand that feature were also voted in. These features are implemented together.  
   
 ### Supported values  
 __No__ means not yet implemented.  
@@ -249,4 +248,10 @@ and \<filesystem> for historical reasons, but its implementation must be correct
 <a name="note_star"></a>__*__ These features are guarded by the [/std:c++latest](./build/reference/std-specify-language-standard-version.md) compiler option.  
   
 ## See Also  
+[C++ Language Reference](cpp/cpp-language-reference.md)  
+[C++ Standard Library](standard-library/cpp-standard-library-reference.md)   
 [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md)  
+[What's New for Visual C++ in Visual Studio 2017](what-s-new-for-visual-cpp-in-visual-studio.md)  
+[Visual C++ change history 2003 through 2015](porting/visual-cpp-change-history-2003-2015.md)  
+[Visual C++ What's New 2003 through 2015](porting/visual-cpp-what-s-new-2003-through-2015.md)  
+[Visual C++ team blog](http://blogs.msdn.microsoft.com/vcblog/)  

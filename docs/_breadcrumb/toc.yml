@@ -76,9 +76,6 @@
         - name: ODBC
           tocHref: /cpp/data/odbc/
           topicHref: /cpp/data/odbc/open-database-connectivity-odbc
-        - name: ADO and RDO
-          tocHref: /cpp/data/ado-rdo/
-          topicHref: /cpp/data/ado-rdo/data-bound-controls-ado-and-rdo
       - name: IDE and Tools
         tocHref: /cpp/ide/
         topicHref: /cpp/ide/ide-and-tools-for-visual-cpp-development

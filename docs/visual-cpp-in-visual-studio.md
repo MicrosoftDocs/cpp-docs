@@ -61,6 +61,9 @@ The Visual Studio 2017 programming language and development tools help you devel
  [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md) 
  Learn about C++ conformance improvements in Visual Studio 2017. 
 
+ [Visual C++ language conformance](visual-cpp-language-conformance.md)  
+ A list of conformance status by feature in Visual C++.
+
  [Visual C++ change history 2003 - 2015](porting/visual-cpp-change-history-2003-2015.md)  
  Learn about the breaking changes in previous versions.  
   
@@ -72,9 +75,6 @@ The Visual Studio 2017 programming language and development tools help you devel
   
  [Visual C++ Porting and Upgrading Guide](porting/visual-cpp-porting-and-upgrading-guide.md)  
  Guidance for porting code and upgrading projects to Visual C++ in Visual Studio 2017, including porting C++ code to Windows 10 and the Universal Windows Platform.  
-  
- [Support For C++11/14/17 Features (Modern C++)](cpp/support-for-cpp11-14-17-features-modern-cpp.md)  
- Learn about support for C++11 and C++14 features in Visual C++.  
   
  [Visual C++ Team Blog](http://blogs.msdn.com/b/vcblog/)  
  Learn more about new features and the latest information from the developers of [!INCLUDE[vcprvc](build/includes/vcprvc_md.md)].  

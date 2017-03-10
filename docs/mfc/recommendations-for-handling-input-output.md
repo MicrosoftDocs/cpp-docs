@@ -55,7 +55,7 @@ Whether you use file-based I/O or not depends on how you respond to the question
   
     -   Yes, the data resides in an ODBC data source:  
   
-         Use MFC's database support. The standard MFC implementation for this case includes a **CDocument** object that stores a `CDatabase` object, as discussed in the article [What Is the MFC Database Programming Model](../data/what-is-the-mfc-database-programming-model-q.md). The application might also read and write an auxiliary file — the purpose of the application wizard "both a database view and file support" option. In this case, you'd use serialization for the auxiliary file.  
+         Use MFC's database support. The standard MFC implementation for this case includes a `CDatabase` object, as discussed in the article [MFC: Using Database Classes with Documents and Views](../data/mfc-using-database-classes-with-documents-and-views.md). The application might also read and write an auxiliary file — the purpose of the application wizard "both a database view and file support" option. In this case, you'd use serialization for the auxiliary file.  
   
     -   No, the data doesn't reside in an ODBC data source.  
   

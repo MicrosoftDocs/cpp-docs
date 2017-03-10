@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Lambda Expressions in C++
-In C++11, a lambda expression—often called a *lambda*—is a convenient way of defining an anonymous function object right at the location where it is invoked or passed as an argument to a function. Typically lambdas are used to encapsulate a few lines of code that are passed to algorithms or asynchronous methods. This article defines what lambdas are, compares them to other programming techniques, describes their advantages, and provides a basic example.  
+In C++11 and later, a lambda expression—often called a *lambda*—is a convenient way of defining an anonymous function object right at the location where it is invoked or passed as an argument to a function. Typically lambdas are used to encapsulate a few lines of code that are passed to algorithms or asynchronous methods. This article defines what lambdas are, compares them to other programming techniques, describes their advantages, and provides a basic example.  
   
 ## Parts of a Lambda Expression  
  The ISO C++ Standard shows a simple lambda that is passed as the third argument to the `std::sort()` function:  
@@ -163,14 +163,14 @@ auto y = [] (auto first, auto second)
  Typically, a lambda's function call operator is const-by-value, but use of the `mutable` keyword cancels this out. It does not produce mutable data members. The mutable specification enables the body of a lambda expression to modify variables that are captured by value. Some of the examples later in this article show how to use `mutable`.  
   
 ### Exception Specification  
- You can use the `throw()` exception specification to indicate that the lambda expression does not throw any exceptions. As with ordinary functions, the Visual C++ compiler generates warning [C4297](../error-messages/compiler-warnings/compiler-warning-level-1-c4297.md) if a lambda expression declares the `throw()` exception specification and the lambda body throws an exception, as shown here:  
+ You can use the `noexcept` exception specification to indicate that the lambda expression does not throw any exceptions. As with ordinary functions, the Visual C++ compiler generates warning [C4297](../error-messages/compiler-warnings/compiler-warning-level-1-c4297.md) if a lambda expression declares the `noexcept` exception specification and the lambda body throws an exception, as shown here:  
   
 ```cpp  
 // throw_lambda_expression.cpp  
 // compile with: /W4 /EHsc   
 int main() // C4297 expected  
 {  
-   []() throw() { throw 5; }();  
+   []() noexcept { throw 5; }();  
 }  
 ```  
   
@@ -185,7 +185,6 @@ int main() // C4297 expected
 auto x1 = [](int i){ return i; }; // OK: return type is int  
 auto x2 = []{ return{ 1, 2 }; };  // ERROR: return type is void, deducing   
                                   // return type from braced-init-list is not valid  
-  
 ```  
   
  A lambda expression can produce another lambda expression as its return value. For more information, see "Higher-Order Lambda Expressions" in [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md).  
@@ -225,7 +224,6 @@ int main()
 ```Output  
 5  
 0  
-  
 ```  
   
  Because the variable `n` is captured by value, its value remains `0` after the call to the lambda expression. The `mutable` specification allows `n` to be modified within the lambda.  
@@ -319,17 +317,13 @@ int main()
     fillVector(v);  
     print("vector v after 2nd call to fillVector(): ", v);  
 }  
-  
 ```  
-  
- **Output:**  
   
 ```Output  
 vector v after call to generate_n() with lambda: 1 1 2 3 5 8 13 21 34  
 x: 1 y: 1  
 vector v after 1st call to fillVector(): 1 2 3 4 5 6 7 8 9  
 vector v after 2nd call to fillVector(): 10 11 12 13 14 15 16 17 18  
-  
 ```  
   
  For more information, see [generate_n](http://msdn.microsoft.com/Library/377e5b0f-1bb8-4b77-9449-fbebf57f6e5e).  
@@ -346,17 +340,7 @@ auto Sqr = [](int t) __declspec(code_seg("PagedMem")) -> int { return t*t; };
   
  To determine whether a modifier is supported by lambdas, see the article about it in the [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md) section of the documentation.  
   
- Visual Studio supports C++11 Standard lambda expression syntax and functionality, with these exceptions:  
-  
--   Like all other classes, lambdas don't get automatically generated move constructors and move assignment operators. For more information about support for rvalue reference behaviors, see the "Rvalue References" section in [Support For C++11/14/17 Features (Modern C++)](../cpp/support-for-cpp11-14-17-features-modern-cpp.md).  
-  
--   The optional *attribute-specifier-seq* is not supported in this version.  
-  
- Visual Studio includes these features in addition to C++11 Standard lambda functionality:  
-  
--   Stateless lambdas, which are omni-convertible to function pointers that use arbitrary calling conventions.  
-  
--   Automatically deduced return types for lambda bodies that are more complicated than `{ return expression; }`, as long as all return statements have the same type. (This functionality is part of the proposed C++14 Standard.)  
+ In addition to C++11 Standard lambda functionality, Visual Studio supports stateless lambdas, which are omni-convertible to function pointers that use arbitrary calling conventions.  
   
 ## See Also  
  [C++ Language Reference](../cpp/cpp-language-reference.md)   
