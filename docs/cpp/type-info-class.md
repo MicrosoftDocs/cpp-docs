@@ -38,9 +38,9 @@ translation.priority.ht:
 # type_info Class
 The **type_info** class describes type information generated within the program by the compiler. Objects of this class effectively store a pointer to a name for the type. The **type_info** class also stores an encoded value suitable for comparing two types for equality or collating order. The encoding rules and collating sequence for types are unspecified and may differ between programs.  
   
- The <`typeinfo>` header file must be included in order to use the **type_info** class. The interface for the **type_info** class is:  
+ The `<typeinfo>` header file must be included in order to use the **type_info** class. The interface for the **type_info** class is:  
   
-```  
+```cpp
 class type_info {  
 public:  
     virtual ~type_info();  
