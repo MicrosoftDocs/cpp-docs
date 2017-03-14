@@ -57,7 +57,7 @@ These are the `/Zc` compiler options:
 |[implicitNoexcept\[-\]](zc-implicitnoexcept-implicit-exception-specifiers.md)|Enable implicit `noexcept` on required functions (on by default).|  
 |[inline\[-\]](zc-inline-remove-unreferenced-comdat.md)|Remove unreferenced function or data if it is COMDAT or has internal linkage only (off by default).|
 |[referenceBinding\[-\]](zc-referencebinding-enforce-reference-binding-rules.md)|A UDT temporary will not bind to an non-const lvalue reference (off by default).|
-|[rvalueCast\[-\]](zc-rvaluecast-enforce-type-conversion-rules.md)|Enforce Standard C++ explicit type conversion rules (on by default).|  
+|[rvalueCast\[-\]](zc-rvaluecast-enforce-type-conversion-rules.md)|Enforce Standard C++ explicit type conversion rules (off by default).|  
 |[sizedDealloc\[-\]](zc-sizeddealloc-enable-global-sized-dealloc-functions.md)|Enable C++14 global sized deallocation functions (on by default).|
 |[strictStrings\[-\]](zc-strictstrings-disable-string-literal-type-conversion.md)|Disable string-literal to `char*` or `wchar_t*` conversion (off by default).|  
 |[threadSafeInit\[-\]](zc-threadsafeinit-thread-safe-local-static-initialization.md)|Enable thread-safe local static initialization (on by default).|
