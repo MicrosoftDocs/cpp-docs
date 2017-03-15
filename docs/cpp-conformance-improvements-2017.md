@@ -87,7 +87,7 @@ In Visual Studio 2015, the compiler erroneously treated copy-list-initialization
 
 ```cpp  
 // From http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_closed.html#1228
-struct MyList {
+struct MyStore {
        explicit MyStore(int initialCapacity);
 };
 
