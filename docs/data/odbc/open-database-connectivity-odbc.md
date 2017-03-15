@@ -48,8 +48,6 @@ The Microsoft Foundation Classes (MFC) library supplies classes for programming 
   
 -   [What ODBC Drivers Are Available](odbc-driver-list.md)  
   
--   [Installing MFC ODBC Support](../data/installing-mfc-database-support.md)    
-  
 -   [Connecting to ODBC Data Sources](data-source-managing-connections-odbc.md)  
   
 -   [Record Field Exchange (RFX)](record-field-exchange-rfx.md) between a database and a recordset object  

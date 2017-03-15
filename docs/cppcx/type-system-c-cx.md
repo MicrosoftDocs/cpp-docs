@@ -86,7 +86,7 @@ By using the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] architecture, you can 
   
 -   Can contain private nested enum, struct, or class definitions.  
   
--   Can directly inherit from one base class and can implement any number of interfaces. All ref classes are implicitly convertible to the [Platform::Object Class](../cppcx/platform-object-class.md) and can override its virtual methods—for example, [Object::ToString](../cppcx/object-tostring-method-c-cx.md).  
+-   Can directly inherit from one base class and can implement any number of interfaces. All ref classes are implicitly convertible to the [Platform::Object Class](../cppcx/platform-object-class.md) and can override its virtual methods—for example, [Object::ToString](../cppcx/platform-object-class.md#tostring).  
   
  A ref class that has a public constructor must be declared as sealed, to prevent further derivation.  
   

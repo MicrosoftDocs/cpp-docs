@@ -62,9 +62,6 @@ This article discusses several issues related to redistributing ActiveX controls
   
 -   [Registering Controls](#_core_registering_controls)  
   
-    > [!NOTE]
-    >  For additional information on redistributing ActiveX controls, see [Redistributing Controls](../data/ado-rdo/redistributing-controls.md).  
-  
 ##  <a name="_core_ansi_or_unicode_control_versions"></a> ANSI or Unicode Control Versions  
  You must decide whether to ship an ANSI or Unicode version of the control, or both. This decision is based on portability factors inherent in ANSI and Unicode character sets.  
   
