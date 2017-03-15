@@ -38,8 +38,6 @@ The following topics help you install the components that you need to start work
   
 ## In This Section  
   
--   [Install MFC ODBC database support](../../data/installing-mfc-database-support.md)  
-  
 -   [Install the ODBC drivers that ship with Visual C++](../../data/odbc/odbc-administrator.md)  
   
 -   [Redistribute ODBC components to your customers](../../data/odbc/odbc-basics.md)  

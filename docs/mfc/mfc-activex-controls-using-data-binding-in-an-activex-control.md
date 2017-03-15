@@ -150,5 +150,4 @@ Conceptual Diagram of a Data-Bound Control
   
 ## See Also  
  [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)   
- [Data-Bound Controls (ADO and RDO)](../data/ado-rdo/data-bound-controls-ado-and-rdo.md)
 

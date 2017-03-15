@@ -40,9 +40,7 @@ translation.priority.ht:
 # Redistributing ODBC Components to Your Customers
 If you incorporate the functionality of the ODBC Administrator programs into your application, you must also distribute to your users the files that run these programs. These ODBC files reside in the \OS\System directory of the Visual C++ CD-ROM. The Redistrb.wri file and the license agreement in the same directory contain a list of ODBC files that you can redistribute.  
   
- Consult the documentation for any ODBC drivers you plan to ship. You need to determine which DLLs and other files to ship.  
-  
- You should also read [Installing Database Support](../../data/installing-database-support-mfc-atl.md) for information about ODBC components and drivers and read [Redistributing Controls](../../data/ado-rdo/redistributing-controls.md), which explains how to redistribute ActiveX controls.  
+ Consult the documentation for any ODBC drivers you plan to ship. You need to determine which DLLs and other files to ship. You should also read [Redistributing ODBC Components to your Customers](../../data/odbc/redistributing-odbc-components-to-your-customers.md), which explains how to redistribute ODBC components.  
   
  In addition, you need to include one other file in most cases. The Odbccr32.dll is the ODBC Cursor Library. This library gives Level 1 drivers the capability of forward and backward scrolling. It also provides the capability of supporting snapshots. For more information about the ODBC Cursor Library, see [ODBC: The ODBC Cursor Library](../../data/odbc/odbc-the-odbc-cursor-library.md).  
   

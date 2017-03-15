@@ -98,7 +98,7 @@ The C++/CX supports user-defined *ref classes* and *ref structs*, and user-defin
  When you declare a public destructor, the compiler generates the code so that the ref class implements `Platform::IDisposable` and the destructor implements the `Dispose` method. `Platform::IDisposable` is the C++/CX projection of `Windows::Foundation::IClosable`. Never explicitly implement these interfaces.  
   
 ## Inheritance  
- Platform::Object is the universal base class for all ref classes. All ref classes are implicitly convertible to Platform::Object and can override [Object::ToString](../cppcx/object-tostring-method-c-cx.md). However, the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] inheritance model not intended as a general inheritance model; in C++/CX this means that a user-defined public ref class cannot serve as a base class.  
+ Platform::Object is the universal base class for all ref classes. All ref classes are implicitly convertible to Platform::Object and can override [Object::ToString](../cppcx/platform-object-class.md#tostring). However, the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] inheritance model not intended as a general inheritance model; in C++/CX this means that a user-defined public ref class cannot serve as a base class.  
   
  If you are creating a XAML user control, and the object participates in the dependency property system, then you can use `Windows::UI::Xaml::DependencyObject` as a base class.  
   
