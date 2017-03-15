@@ -67,8 +67,6 @@ Interaction Between an ActiveX Control Container and a Windowed ActiveX Control
   
 -   [Active Documents](../mfc/active-documents.md)  
   
--   [Using ActiveX Controls](../data/ado-rdo/using-activex-controls.md)  
-  
 -   [Understanding ActiveX Controls](http://msdn.microsoft.com/library/windows/desktop/ms693753)  
   
 -   [Upgrading an Existing ActiveX Control to be Used on the Internet](../mfc/upgrading-an-existing-activex-control.md)  

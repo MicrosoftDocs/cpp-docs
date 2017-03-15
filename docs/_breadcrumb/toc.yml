@@ -76,9 +76,6 @@
         - name: ODBC
           tocHref: /cpp/data/odbc/
           topicHref: /cpp/data/odbc/open-database-connectivity-odbc
-        - name: ADO and RDO
-          tocHref: /cpp/data/ado-rdo/
-          topicHref: /cpp/data/ado-rdo/data-bound-controls-ado-and-rdo
       - name: IDE and Tools
         tocHref: /cpp/ide/
         topicHref: /cpp/ide/ide-and-tools-for-visual-cpp-development
@@ -91,7 +88,7 @@
           tocHref: /cpp/build/building-c-cpp-programs
         - name: Compiler Intrinsics and Assembly Language
           tocHref: /cpp/intrinsics/
-          topicHref: /cpp/intrinsics/c-cpp-intrinsics
+          topicHref: /cpp/intrinsics/compiler-intrinsics-and-assembly-language
           items:
           - name: ARM
             tocHref: /cpp/assembler/arm/
