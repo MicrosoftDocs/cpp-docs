@@ -61,14 +61,11 @@ WeakReference& operator=(decltype(__nullptr));
 WeakReference& operator=(const WeakReference& otherArg);   
 WeakReference& operator=(WeakReference&& otherArg);    
 WeakReference& operator=(const volatile ::Platform::Object^ const otherArg); 
-  
 ```  
   
 ### Remarks  
- The last overload in the list above enables you to assign a ref class to a WeakReference variable. In this case the ref class is downcast to [Platform::Object](../cppcx/platform-object-class.md)^. You restore the original type later by specifying it as the argument for the type parameter in the [WeakReference::Resolve\<T>](../cppcx/weakreference-resolve-method-platform-namespace.md) member function.  
+ The last overload in the list above enables you to assign a ref class to a WeakReference variable. In this case the ref class is downcast to [Platform::Object](../cppcx/platform-object-class.md)^. You restore the original type later by specifying it as the argument for the type parameter in the [WeakReference::Resolve\<T>](#resolve) member function.  
   
-
-
 ## <a name="booltype"></a> WeakReference::operator BoolType
 Implements the safe bool pattern for the WeakReference class. Not to be called explicitly from your code.  
   
