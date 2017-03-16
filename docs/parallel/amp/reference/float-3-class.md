@@ -129,55 +129,55 @@ class float_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|float_3::get_x Method||  
-|float_3::get_xy Method||  
-|float_3::get_xyz Method||  
-|float_3::get_xz Method||  
-|float_3::get_xzy Method||  
-|float_3::get_y Method||  
-|float_3::get_yx Method||  
-|float_3::get_yxz Method||  
-|float_3::get_yz Method||  
-|float_3::get_yzx Method||  
-|float_3::get_z Method||  
-|float_3::get_zx Method||  
-|float_3::get_zxy Method||  
-|float_3::get_zy Method||  
-|float_3::get_zyx Method||  
-|float_3::ref_b Method||  
-|float_3::ref_g Method||  
-|float_3::ref_r Method||  
-|float_3::ref_x Method||  
-|float_3::ref_y Method||  
-|float_3::ref_z Method||  
-|float_3::set_x Method||  
-|float_3::set_xy Method||  
-|float_3::set_xyz Method||  
-|float_3::set_xz Method||  
-|float_3::set_xzy Method||  
-|float_3::set_y Method||  
-|float_3::set_yx Method||  
-|float_3::set_yxz Method||  
-|float_3::set_yz Method||  
-|float_3::set_yzx Method||  
-|float_3::set_z Method||  
-|float_3::set_zx Method||  
-|float_3::set_zxy Method||  
-|float_3::set_zy Method||  
-|float_3::set_zyx Method||  
+|float_3::get_x||  
+|float_3::get_xy||  
+|float_3::get_xyz||  
+|float_3::get_xz||  
+|float_3::get_xzy||  
+|float_3::get_y||  
+|float_3::get_yx||  
+|float_3::get_yxz||  
+|float_3::get_yz||  
+|float_3::get_yzx||  
+|float_3::get_z||  
+|float_3::get_zx||  
+|float_3::get_zxy||  
+|float_3::get_zy||  
+|float_3::get_zyx||  
+|float_3::ref_b||  
+|float_3::ref_g||  
+|float_3::ref_r||  
+|float_3::ref_x||  
+|float_3::ref_y||  
+|float_3::ref_z||  
+|float_3::set_x||  
+|float_3::set_xy||  
+|float_3::set_xyz||  
+|float_3::set_xz||  
+|float_3::set_xzy||  
+|float_3::set_y||  
+|float_3::set_yx||  
+|float_3::set_yxz||  
+|float_3::set_yz||  
+|float_3::set_yzx||  
+|float_3::set_z||  
+|float_3::set_zx||  
+|float_3::set_zxy||  
+|float_3::set_zy||  
+|float_3::set_zyx||  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|float_3::operator- Operator||  
-|float_3::operator-- Operator||  
-|float_3::operator*= Operator||  
-|float_3::operator/= Operator||  
-|float_3::operator++ Operator||  
-|float_3::operator+= Operator||  
-|float_3::operator= Operator||  
-|float_3::operator-= Operator||  
+|float_3::operator-||  
+|float_3::operator--||  
+|float_3::operator*=||  
+|float_3::operator/=||  
+|float_3::operator++||  
+|float_3::operator+=||  
+|float_3::operator=||  
+|float_3::operator-=||  
   
 ### Public Constants  
   
@@ -189,36 +189,36 @@ class float_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|float_3::b Data Member||  
-|float_3::bg Data Member||  
-|float_3::bgr Data Member||  
-|float_3::br Data Member||  
-|float_3::brg Data Member||  
-|float_3::g Data Member||  
-|float_3::gb Data Member||  
-|float_3::gbr Data Member||  
-|float_3::gr Data Member||  
-|float_3::grb Data Member||  
-|float_3::r Data Member||  
-|float_3::rb Data Member||  
-|float_3::rbg Data Member||  
-|float_3::rg Data Member||  
-|float_3::rgb Data Member||  
-|float_3::x Data Member||  
-|float_3::xy Data Member||  
-|float_3::xyz Data Member||  
-|float_3::xz Data Member||  
-|float_3::xzy Data Member||  
-|float_3::y Data Member||  
-|float_3::yx Data Member||  
-|float_3::yxz Data Member||  
-|float_3::yz Data Member||  
-|float_3::yzx Data Member||  
-|float_3::z Data Member||  
-|float_3::zx Data Member||  
-|float_3::zxy Data Member||  
-|float_3::zy Data Member||  
-|float_3::zyx Data Member||  
+|float_3::b||  
+|float_3::bg||  
+|float_3::bgr||  
+|float_3::br||  
+|float_3::brg||  
+|float_3::g||  
+|float_3::gb||  
+|float_3::gbr||  
+|float_3::gr||  
+|float_3::grb||  
+|float_3::r||  
+|float_3::rb||  
+|float_3::rbg||  
+|float_3::rg||  
+|float_3::rgb||  
+|float_3::x||  
+|float_3::xy||  
+|float_3::xyz||  
+|float_3::xz||  
+|float_3::xzy||  
+|float_3::y||  
+|float_3::yx||  
+|float_3::yxz||  
+|float_3::yz||  
+|float_3::yzx||  
+|float_3::z||  
+|float_3::zx||  
+|float_3::zxy||  
+|float_3::zy||  
+|float_3::zyx||  
   
 ## Inheritance Hierarchy  
  `float_3`  

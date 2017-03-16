@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "amp/Concurrency::direct3d_abort"
+f1_keywords: ['runtime_exception', 'AMPRT/runtime_exception', 'AMPRT/Concurrency::runtime_exception', 'AMPRT/Concurrency::runtime_exception::get_error_code']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -57,14 +56,14 @@ class runtime_exception : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[get_error_code Method](#runtime_exception__get_error_code)|Returns the error code that caused the exception.|  
+|[get_error_code](#runtime_exception__get_error_code)|Returns the error code that caused the exception.|  
 
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator= Operator](#operator_eq)|Copies the contents of the specified `runtime_exception` object into this one.|  
+|[operator=](#operator_eq)|Copies the contents of the specified `runtime_exception` object into this one.|  
   
 ## Inheritance Hierarchy  
  `exception`  

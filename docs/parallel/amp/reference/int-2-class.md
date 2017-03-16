@@ -83,38 +83,38 @@ class int_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|int_2::get_x Method||  
-|int_2::get_xy Method||  
-|int_2::get_y Method||  
-|int_2::get_yx Method||  
-|int_2::ref_g Method||  
-|int_2::ref_r Method||  
-|int_2::ref_x Method||  
-|int_2::ref_y Method||  
-|int_2::set_x Method||  
-|int_2::set_xy Method||  
-|int_2::set_y Method||  
-|int_2::set_yx Method||  
+|int_2::get_x||  
+|int_2::get_xy||  
+|int_2::get_y||  
+|int_2::get_yx||  
+|int_2::ref_g||  
+|int_2::ref_r||  
+|int_2::ref_x||  
+|int_2::ref_y||  
+|int_2::set_x||  
+|int_2::set_xy||  
+|int_2::set_y||  
+|int_2::set_yx||  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|int_2::operator- Operator||  
-|int_2::operator-- Operator||  
-|int_2::operator%= Operator||  
-|int_2::operator&= Operator||  
-|int_2::operator*= Operator||  
-|int_2::operator/= Operator||  
-|int_2::operator^= Operator||  
-|int_2::operator&#124;= Operator||  
-|int_2::operator~ Operator||  
-|int_2::operator++ Operator||  
-|int_2::operator+= Operator||  
-|int_2::operator<\<= Operator||  
-|int_2::operator= Operator||  
-|int_2::operator-= Operator||  
-|int_2::operator>>= Operator||  
+|int_2::operator-||  
+|int_2::operator--||  
+|int_2::operator%=||  
+|int_2::operator&=||  
+|int_2::operator*=||  
+|int_2::operator/=||  
+|int_2::operator^=||  
+|int_2::operator&#124;=||  
+|int_2::operator~||  
+|int_2::operator++||  
+|int_2::operator+=||  
+|int_2::operator<\<=||  
+|int_2::operator=||  
+|int_2::operator-=||  
+|int_2::operator>>=||  
   
 ### Public Constants  
   
@@ -126,14 +126,14 @@ class int_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|int_2::g Data Member||  
-|int_2::gr Data Member||  
-|int_2::r Data Member||  
-|int_2::rg Data Member||  
-|int_2::x Data Member||  
-|int_2::xy Data Member||  
-|int_2::y Data Member||  
-|int_2::yx Data Member||  
+|int_2::g||  
+|int_2::gr||  
+|int_2::r||  
+|int_2::rg||  
+|int_2::x||  
+|int_2::xy||  
+|int_2::y||  
+|int_2::yx||  
   
 ## Inheritance Hierarchy  
  `int_2`  

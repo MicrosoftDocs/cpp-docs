@@ -8,12 +8,11 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "amprt/Concurrency::accelerator_view_removed"
+f1_keywords: ['accelerator_view_removed', 'AMPRT/accelerator_view_removed', 'AMPRT/Concurrency::accelerator_view_removed:accelerator_view_removed', 'AMPRT/Concurrency::accelerator_view_removed:get_view_removed_reason']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "amprt/Concurrency::accelerator_view_removed Class"
+  - "AMPRT/Concurrency::accelerator_view_removed:accelerator_view_removed Class"
 ms.assetid: 262446de-311c-454e-a5ed-e2aaced0d88a
 caps.latest.revision: 6
 author: "mikeblome"
@@ -56,7 +55,7 @@ class accelerator_view_removed : public runtime_exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[get_view_removed_reason Method](#get_view_removed_reason)|Returns an HRESULT error code indicating the cause of the `accelerator_view` object's removal.|  
+|[get_view_removed_reason](#get_view_removed_reason)|Returns an HRESULT error code indicating the cause of the `accelerator_view` object's removal.|  
   
 ## Inheritance Hierarchy  
  `exception`  

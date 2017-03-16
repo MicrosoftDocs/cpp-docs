@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "amp/Concurrency::index"
+f1_keywords: ['AMP/index', 'AMP/Concurrency::index::index', 'AMP/Concurrency::index::rank']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -60,15 +59,15 @@ class index;
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator-- Operator](#operator--)|Decrements each element of the `index` object.|  
-|[operator(mod)= Operator](#operator_mod_eq)|Calculates the modulus (remainder) of each element in the `index` object when that element is divided by a number.|  
-|[operator*= Operator](#operator_star_eq)|Multiplies each element of the `index` object by a number.|  
-|[operator/= Operator](#operator_div_eq)|Divides each element of the `index` object by a number.|  
+|[operator--](#operator--)|Decrements each element of the `index` object.|  
+|[operator(mod)=](#operator_mod_eq)|Calculates the modulus (remainder) of each element in the `index` object when that element is divided by a number.|  
+|[operator*=](#operator_star_eq)|Multiplies each element of the `index` object by a number.|  
+|[operator/=](#operator_div_eq)|Divides each element of the `index` object by a number.|  
 |[index::operator\[\]](#operator_at)|Returns the element that's at the specified index.|  
-|[operator++ Operator](#operator_add_add)|Increments each element of the `index` object.|  
-|[operator+= Operator](#operator_add_eq)|Adds the specified number to each element of the `index` object.|  
-|[operator= Operator](#operator_eq)|Copies the contents of the specified `index` object into this one.|  
-|[operator-= Operator](#operator_-_eq)|Subtracts the specified number from each element of the `index` object.|  
+|[operator++](#operator_add_add)|Increments each element of the `index` object.|  
+|[operator+=](#operator_add_eq)|Adds the specified number to each element of the `index` object.|  
+|[operator=](#operator_eq)|Copies the contents of the specified `index` object into this one.|  
+|[operator-=](#operator_-_eq)|Subtracts the specified number from each element of the `index` object.|  
 
   
 ### Public Constants  
@@ -81,7 +80,7 @@ class index;
  `index`  
   
 ## Remarks  
- The `index` structure represents a coordinate vector of *N* integers that specifies a unique position in an *N*-dimensional space. The values in the vector are ordered from most significant to least significant. You can retrieve the values of the components using [operator= Operator](#operator_eq).  
+ The `index` structure represents a coordinate vector of *N* integers that specifies a unique position in an *N*-dimensional space. The values in the vector are ordered from most significant to least significant. You can retrieve the values of the components using [operator=](#operator_eq).  
   
 ## Requirements  
  **Header:** amp.h  
