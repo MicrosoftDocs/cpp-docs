@@ -75,7 +75,6 @@ for( vector<circle*>::iterator i = v.begin();
 }  
   
 delete p;  
-  
 ```  
   
  Here's how the same thing is accomplished in modern C++:  
@@ -92,7 +91,6 @@ for_each( begin(v), end(v), [&](const shared_ptr<shape>& s) {
     if( s && *s == *p )  
         cout << *s << " is a match\n";  
 } );  
-  
 ```  
   
  In modern C++, you don't have to use new/delete or explicit exception handling because you can use smart pointers instead. When you use the `auto` type deduction and [lambda function](../cpp/lambda-expressions-in-cpp.md), you can write code quicker, tighten it, and understand it better. And `for_each` is cleaner, easier to use, and less prone to unintended errors than a `for` loop. You can use boilerplate together with minimal lines of code to write your app. And you can make that code exception-safe and memory-safe, and have no allocation/deallocation or error codes to deal with.  
@@ -106,8 +104,6 @@ for_each( begin(v), end(v), [&](const shared_ptr<shape>& s) {
  Not only the language is modern, the development tools are, too. [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] makes all parts of the development cycle robust and efficient. It includes Application Lifecycle Management (ALM) tools, IDE enhancements like IntelliSense, tool-friendly mechanisms like XAML, and building, debugging, and many other tools.  
   
  The articles in this part of the documentation provide high-level guidelines and best practices for the most important features and techniques for writing modern C++ programs.  
-  
--   [Support For C++11/14/17 Features (Modern C++)](../cpp/support-for-cpp11-14-17-features-modern-cpp.md)  
   
 -   [C++ Type System](../cpp/cpp-type-system-modern-cpp.md)  
   
@@ -136,4 +132,5 @@ for_each( begin(v), end(v), [&](const shared_ptr<shape>& s) {
 ## See Also  
  [C++ Language Reference](../cpp/cpp-language-reference.md)   
  [Lambda Expressions](../cpp/lambda-expressions-in-cpp.md)   
- [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)
+ [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)  
+ [Visual C++ language conformance](../visual-cpp-language-conformance.md)  
