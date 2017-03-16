@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "pplcancellation_token/concurrency::cancellation_token_source"
+f1_keywords: ['cancellation_token_source', 'PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source', 'PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source::cancellation_token_source', 'PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source::cancel', 'PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source::create_linked_source', 'PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source::get_token']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,24 +48,24 @@ class cancellation_token_source;
   
 |Name|Description|  
 |----------|-----------------|  
-|[cancellation_token_source Constructor](#ctor)|Overloaded. Constructs a new `cancellation_token_source`. The source can be used to flag cancellation of some cancelable operation.|  
+|[cancellation_token_source](#ctor)|Overloaded. Constructs a new `cancellation_token_source`. The source can be used to flag cancellation of some cancelable operation.|  
 |[~cancellation_token_source Destructor](#dtor)||  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[cancel Method](#cancel)|Cancels the token. Any `task_group`, `structured_task_group`, or `task` which utilizes the token will be canceled upon this call and throw an exception at the next interruption point.|  
-|[create_linked_source Method](#create_linked_source)|Overloaded. Creates a `cancellation_token_source` which is canceled when the provided token is canceled.|  
-|[get_token Method](#get_token)|Returns a cancellation token associated with this source. The returned token can be polled for cancellation or provide a callback if and when cancellation occurs.|  
+|[cancel](#cancel)|Cancels the token. Any `task_group`, `structured_task_group`, or `task` which utilizes the token will be canceled upon this call and throw an exception at the next interruption point.|  
+|[create_linked_source](#create_linked_source)|Overloaded. Creates a `cancellation_token_source` which is canceled when the provided token is canceled.|  
+|[get_token](#get_token)|Returns a cancellation token associated with this source. The returned token can be polled for cancellation or provide a callback if and when cancellation occurs.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator!= Operator](#operator_neq)||  
-|[operator= Operator](#operator_eq)||  
-|[operator== Operator](#operator_eq_eq)||  
+|[operator!=](#operator_neq)||  
+|[operator=](#operator_eq)||  
+|[operator==](#operator_eq_eq)||  
   
 ## Inheritance Hierarchy  
  `cancellation_token_source`  

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::Context"
+f1_keywords: ['Context', 'CONCRT/concurrency::Context', 'CONCRT/concurrency::Context::Block', 'CONCRT/concurrency::Context::CurrentContext', 'CONCRT/concurrency::Context::GetId', 'CONCRT/concurrency::Context::GetScheduleGroupId', 'CONCRT/concurrency::Context::GetVirtualProcessorId', 'CONCRT/concurrency::Context::Id', 'CONCRT/concurrency::Context::IsCurrentTaskCollectionCanceling', 'CONCRT/concurrency::Context::IsSynchronouslyBlocked', 'CONCRT/concurrency::Context::Oversubscribe', 'CONCRT/concurrency::Context::ScheduleGroupId', 'CONCRT/concurrency::Context::Unblock', 'CONCRT/concurrency::Context::VirtualProcessorId', 'CONCRT/concurrency::Context::Yield']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -55,19 +54,19 @@ class Context;
   
 |Name|Description|  
 |----------|-----------------|  
-|[Block Method](#block)|Blocks the current context.|  
-|[CurrentContext Method](#currentcontext)|Returns a pointer to the current context.|  
-|[GetId Method](#getid)|Returns an identifier for the context that is unique within the scheduler to which the context belongs.|  
-|[GetScheduleGroupId Method](#getschedulegroupid)|Returns an identifier for the schedule group that the context is currently working on.|  
-|[GetVirtualProcessorId Method](#getvirtualprocessorid)|Returns an identifier for the virtual processor that the context is currently executing on.|  
-|[Id Method](#id)|Returns an identifier for the current context that is unique within the scheduler to which the current context belongs.|  
-|[IsCurrentTaskCollectionCanceling Method](#iscurrenttaskcollectioncanceling)|Returns an indication of whether the task collection which is currently executing inline on the current context is in the midst of an active cancellation (or will be shortly).|  
-|[IsSynchronouslyBlocked Method](#issynchronouslyblocked)|Determines whether or not the context is synchronously blocked. A context is considered to be synchronously blocked if it explicitly performed an action which led to blocking.|  
-|[Oversubscribe Method](#oversubscribe)|Injects an additional virtual processor into a scheduler for the duration of a block of code when invoked on a context executing on one of the virtual processors in that scheduler.|  
-|[ScheduleGroupId Method](#schedulegroupid)|Returns an identifier for the schedule group that the current context is working on.|  
-|[Unblock Method](#unblock)|Unblocks the context and causes it to become runnable.|  
-|[VirtualProcessorId Method](#virtualprocessorid)|Returns an identifier for the virtual processor that the current context is executing on.|  
-|[Yield Method](#yield)|Yields execution so that another context can execute. If no other context is available to yield to, the scheduler can yield to another operating system thread.|  
+|[Block](#block)|Blocks the current context.|  
+|[CurrentContext](#currentcontext)|Returns a pointer to the current context.|  
+|[GetId](#getid)|Returns an identifier for the context that is unique within the scheduler to which the context belongs.|  
+|[GetScheduleGroupId](#getschedulegroupid)|Returns an identifier for the schedule group that the context is currently working on.|  
+|[GetVirtualProcessorId](#getvirtualprocessorid)|Returns an identifier for the virtual processor that the context is currently executing on.|  
+|[Id](#id)|Returns an identifier for the current context that is unique within the scheduler to which the current context belongs.|  
+|[IsCurrentTaskCollectionCanceling](#iscurrenttaskcollectioncanceling)|Returns an indication of whether the task collection which is currently executing inline on the current context is in the midst of an active cancellation (or will be shortly).|  
+|[IsSynchronouslyBlocked](#issynchronouslyblocked)|Determines whether or not the context is synchronously blocked. A context is considered to be synchronously blocked if it explicitly performed an action which led to blocking.|  
+|[Oversubscribe](#oversubscribe)|Injects an additional virtual processor into a scheduler for the duration of a block of code when invoked on a context executing on one of the virtual processors in that scheduler.|  
+|[ScheduleGroupId](#schedulegroupid)|Returns an identifier for the schedule group that the current context is working on.|  
+|[Unblock](#unblock)|Unblocks the context and causes it to become runnable.|  
+|[VirtualProcessorId](#virtualprocessorid)|Returns an identifier for the virtual processor that the current context is executing on.|  
+|[Yield](#yield)|Yields execution so that another context can execute. If no other context is available to yield to, the scheduler can yield to another operating system thread.|  
   
 ## Remarks  
  The Concurrency Runtime scheduler (see [Scheduler](scheduler-class.md)) uses execution contexts to execute the work queued to it by your application. A Win32 thread is an example of an execution context on a Windows operating system.  

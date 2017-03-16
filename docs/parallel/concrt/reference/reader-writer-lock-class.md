@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::reader_writer_lock"
+f1_keywords: ['reader_writer_lock', 'CONCRT/concurrency::reader_writer_lock', 'CONCRT/concurrency::reader_writer_lock::scoped_lock', 'CONCRT/concurrency::reader_writer_lock::scoped_lock_read', 'CONCRT/concurrency::reader_writer_lock::reader_writer_lock', 'CONCRT/concurrency::reader_writer_lock::lock', 'CONCRT/concurrency::reader_writer_lock::lock_read', 'CONCRT/concurrency::reader_writer_lock::try_lock', 'CONCRT/concurrency::reader_writer_lock::try_lock_read', 'CONCRT/concurrency::reader_writer_lock::unlock']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -56,18 +55,18 @@ class reader_writer_lock;
   
 |Name|Description|  
 |----------|-----------------|  
-|[reader_writer_lock Constructor](#ctor)|Constructs a new `reader_writer_lock` object.|  
+|[reader_writer_lock](#ctor)|Constructs a new `reader_writer_lock` object.|  
 |[~reader_writer_lock Destructor](#dtor)|Destroys the `reader_writer_lock` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[lock Method](#lock)|Acquires the reader-writer lock as a writer.|  
-|[lock_read Method](#lock_read)|Acquires the reader-writer lock as a reader. If there are writers, active readers have to wait until they are done. The reader simply registers an interest in the lock and waits for writers to release it.|  
-|[try_lock Method](#try_lock)|Attempts to acquire the reader-writer lock as a writer without blocking.|  
-|[try_lock_read Method](#try_lock_read)|Attempts to acquire the reader-writer lock as a reader without blocking.|  
-|[unlock Method](#unlock)|Unlocks the reader-writer lock based on who locked it, reader or writer.|  
+|[lock](#lock)|Acquires the reader-writer lock as a writer.|  
+|[lock_read](#lock_read)|Acquires the reader-writer lock as a reader. If there are writers, active readers have to wait until they are done. The reader simply registers an interest in the lock and waits for writers to release it.|  
+|[try_lock](#try_lock)|Attempts to acquire the reader-writer lock as a writer without blocking.|  
+|[try_lock_read](#try_lock_read)|Attempts to acquire the reader-writer lock as a reader without blocking.|  
+|[unlock](#unlock)|Unlocks the reader-writer lock based on who locked it, reader or writer.|  
   
 ## Remarks  
  For more information, see [Synchronization Data Structures](../../../parallel/concrt/synchronization-data-structures.md).  

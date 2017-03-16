@@ -12,18 +12,18 @@ class task_group;
   
 |Name|Description|  
 |----------|-----------------|  
-|[task_group Constructor](#ctor)|Overloaded. Constructs a new `task_group` object.|  
+|[task_group](#ctor)|Overloaded. Constructs a new `task_group` object.|  
 |[~task_group Destructor](#dtor)|Destroys a `task_group` object. You are expected to call the either the `wait` or `run_and_wait` method on the object prior to the destructor executing, unless the destructor is executing as the result of stack unwinding due to an exception.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[cancel Method](#cancel)|Makes a best effort attempt to cancel the sub-tree of work rooted at this task group. Every task scheduled on the task group will get canceled transitively if possible.|  
-|[is_canceling Method](#is_canceling)|Informs the caller whether or not the task group is currently in the midst of a cancellation. This does not necessarily indicate that the `cancel` method was called on the `task_group` object (although such certainly qualifies this method to return `true`). It may be the case that the `task_group` object is executing inline and a task group further up in the work tree was canceled. In cases such as these where the runtime can determine ahead of time that cancellation will flow through this `task_group` object, `true` will be returned as well.|  
-|[run Method](#run)|Overloaded. Schedules a task on the `task_group` object. If a `task_handle` object is passed as a parameter to `run`, the caller is responsible for managing the lifetime of the `task_handle` object. The version of the method that takes a reference to a function object as a parameter involves heap allocation inside the runtime which may be perform less well than using the version that takes a reference to a `task_handle` object. The version which takes the parameter `_Placement` causes the task to be biased towards executing at the location specified by that parameter.|  
-|[run_and_wait Method](#run_and_wait)|Overloaded. Schedules a task to be run inline on the calling context with the assistance of the `task_group` object for full cancellation support. The function then waits until all work on the `task_group` object has either completed or been canceled. If a `task_handle` object is passed as a parameter to `run_and_wait`, the caller is responsible for managing the lifetime of the `task_handle` object.|  
-|[wait Method](#wait)|Waits until all work on the `task_group` object has either completed or been canceled.|  
+|[cancel](#cancel)|Makes a best effort attempt to cancel the sub-tree of work rooted at this task group. Every task scheduled on the task group will get canceled transitively if possible.|  
+|[is_canceling](#is_canceling)|Informs the caller whether or not the task group is currently in the midst of a cancellation. This does not necessarily indicate that the `cancel` method was called on the `task_group` object (although such certainly qualifies this method to return `true`). It may be the case that the `task_group` object is executing inline and a task group further up in the work tree was canceled. In cases such as these where the runtime can determine ahead of time that cancellation will flow through this `task_group` object, `true` will be returned as well.|  
+|[run](#run)|Overloaded. Schedules a task on the `task_group` object. If a `task_handle` object is passed as a parameter to `run`, the caller is responsible for managing the lifetime of the `task_handle` object. The version of the method that takes a reference to a function object as a parameter involves heap allocation inside the runtime which may be perform less well than using the version that takes a reference to a `task_handle` object. The version which takes the parameter `_Placement` causes the task to be biased towards executing at the location specified by that parameter.|  
+|[run_and_wait](#run_and_wait)|Overloaded. Schedules a task to be run inline on the calling context with the assistance of the `task_group` object for full cancellation support. The function then waits until all work on the `task_group` object has either completed or been canceled. If a `task_handle` object is passed as a parameter to `run_and_wait`, the caller is responsible for managing the lifetime of the `task_handle` object.|  
+|[wait](#wait)|Waits until all work on the `task_group` object has either completed or been canceled.|  
   
 ## Remarks  
  Unlike the heavily restricted `structured_task_group` class, the `task_group` class is much more general construct. It does not have any of the restrictions described by [structured_task_group](structured-task-group-class.md). `task_group` objects may safely be used across threads and utilized in free-form ways. The disadvantage of the `task_group` construct is that it may not perform as well as the `structured_task_group` construct for tasks which perform small amounts of work.  

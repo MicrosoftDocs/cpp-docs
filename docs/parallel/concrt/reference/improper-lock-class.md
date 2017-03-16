@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::improper_lock"
+f1_keywords: ['improper_lock', 'CONCRT/concurrency::improper_lock', 'CONCRT/concurrency::improper_lock::improper_lock']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,7 +48,7 @@ class improper_lock : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[improper_lock Constructor](#ctor)|Overloaded. Constructs an `improper_lock exception`.|  
+|[improper_lock](#ctor)|Overloaded. Constructs an `improper_lock exception`.|  
   
 ## Remarks  
  Typically, this exception is thrown when an attempt is made to acquire a non-reentrant lock recursively on the same context.  

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ppltasks/concurrency::progress_reporter"
+f1_keywords: ['progress_reporter', 'PPLTASKS/concurrency::progress_reporter', 'PPLTASKS/concurrency::progress_reporter::progress_reporter', 'PPLTASKS/concurrency::progress_reporter::report']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -54,13 +53,13 @@ class progress_reporter;
   
 |Name|Description|  
 |----------|-----------------|  
-|[progress_reporter Constructor](#ctor)||  
+|[progress_reporter](#ctor)||  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[report Method](#report)|Sends a progress report to the asynchronous action or operation to which this progress reporter is bound.|  
+|[report](#report)|Sends a progress report to the asynchronous action or operation to which this progress reporter is bound.|  
   
 ## Remarks  
  This type is only available to Windows Store apps.  
