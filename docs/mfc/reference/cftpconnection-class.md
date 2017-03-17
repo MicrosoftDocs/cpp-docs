@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CFtpConnection"
+f1_keywords: ['CFtpConnection', 'AFXINET/CFtpConnection', 'AFXINET/CFtpConnection::CFtpConnection', 'AFXINET/CFtpConnection::Command', 'AFXINET/CFtpConnection::CreateDirectory', 'AFXINET/CFtpConnection::GetCurrentDirectory', 'AFXINET/CFtpConnection::GetCurrentDirectoryAsURL', 'AFXINET/CFtpConnection::GetFile', 'AFXINET/CFtpConnection::OpenFile', 'AFXINET/CFtpConnection::PutFile', 'AFXINET/CFtpConnection::Remove', 'AFXINET/CFtpConnection::RemoveDirectory', 'AFXINET/CFtpConnection::Rename', 'AFXINET/CFtpConnection::SetCurrentDirectory']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COlePropertiesDialog"
+f1_keywords: ['COlePropertiesDialog', 'AFXODLGS/COlePropertiesDialog', 'AFXODLGS/COlePropertiesDialog::COlePropertiesDialog', 'AFXODLGS/COlePropertiesDialog::DoModal', 'AFXODLGS/COlePropertiesDialog::OnApplyScale', 'AFXODLGS/COlePropertiesDialog::m_gp', 'AFXODLGS/COlePropertiesDialog::m_lp', 'AFXODLGS/COlePropertiesDialog::m_op', 'AFXODLGS/COlePropertiesDialog::m_psh', 'AFXODLGS/COlePropertiesDialog::m_vp']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

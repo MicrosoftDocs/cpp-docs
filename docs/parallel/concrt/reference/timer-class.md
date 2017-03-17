@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "agents/concurrency::timer"
+f1_keywords: ['timer', 'AGENTS/concurrency::timer', 'AGENTS/concurrency::timer::timer', 'AGENTS/concurrency::timer::pause', 'AGENTS/concurrency::timer::start', 'AGENTS/concurrency::timer::stop', 'AGENTS/concurrency::timer::accept_message', 'AGENTS/concurrency::timer::consume_message', 'AGENTS/concurrency::timer::link_target_notification', 'AGENTS/concurrency::timer::propagate_to_any_targets', 'AGENTS/concurrency::timer::release_message', 'AGENTS/concurrency::timer::reserve_message', 'AGENTS/concurrency::timer::resume_propagation']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -54,28 +53,28 @@ class timer : public Concurrency::details::_Timer, public source_block<single_li
   
 |Name|Description|  
 |----------|-----------------|  
-|[timer Constructor](#ctor)|Overloaded. Constructs a `timer` messaging block that will fire a given message after a specified interval.|  
+|[timer](#ctor)|Overloaded. Constructs a `timer` messaging block that will fire a given message after a specified interval.|  
 |[~timer Destructor](#dtor)|Destroys a `timer` messaging block.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[pause Method](#pause)|Stops the `timer` messaging block. If it is a repeating `timer` messaging block, it can be restarted with a subsequent `start()` call. For non-repeating timers, this has the same effect as a `stop` call.|  
-|[start Method](#start)|Starts the `timer` messaging block. The specified number of milliseconds after this is called, the specified value will be propagated downstream as a `message`.|  
-|[stop Method](#stop)|Stops the `timer` messaging block.|  
+|[pause](#pause)|Stops the `timer` messaging block. If it is a repeating `timer` messaging block, it can be restarted with a subsequent `start()` call. For non-repeating timers, this has the same effect as a `stop` call.|  
+|[start](#start)|Starts the `timer` messaging block. The specified number of milliseconds after this is called, the specified value will be propagated downstream as a `message`.|  
+|[stop](#stop)|Stops the `timer` messaging block.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[accept_message Method](#accept_message)|Accepts a message that was offered by this `timer` messaging block, transferring ownership to the caller.|  
-|[consume_message Method](#consume_message)|Consumes a message previously offered by the `timer` and reserved by the target, transferring ownership to the caller.|  
-|[link_target_notification Method](#link_target_notification)|A callback that notifies that a new target has been linked to this `timer` messaging block.|  
-|[propagate_to_any_targets Method](#propagate_to_any_targets)|Tries to offer the message produced by the `timer` block to all of the linked targets.|  
-|[release_message Method](#release_message)|Releases a previous message reservation. (Overrides [source_block::release_message](source-block-class.md#release_message).)|  
-|[reserve_message Method](#reserve_message)|Reserves a message previously offered by this `timer` messaging block. (Overrides [source_block::reserve_message](source-block-class.md#reserve_message).)|  
-|[resume_propagation Method](#resume_propagation)|Resumes propagation after a reservation has been released. (Overrides [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
+|[accept_message](#accept_message)|Accepts a message that was offered by this `timer` messaging block, transferring ownership to the caller.|  
+|[consume_message](#consume_message)|Consumes a message previously offered by the `timer` and reserved by the target, transferring ownership to the caller.|  
+|[link_target_notification](#link_target_notification)|A callback that notifies that a new target has been linked to this `timer` messaging block.|  
+|[propagate_to_any_targets](#propagate_to_any_targets)|Tries to offer the message produced by the `timer` block to all of the linked targets.|  
+|[release_message](#release_message)|Releases a previous message reservation. (Overrides [source_block::release_message](source-block-class.md#release_message).)|  
+|[reserve_message](#reserve_message)|Reserves a message previously offered by this `timer` messaging block. (Overrides [source_block::reserve_message](source-block-class.md#reserve_message).)|  
+|[resume_propagation](#resume_propagation)|Resumes propagation after a reservation has been released. (Overrides [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
   
 ## Remarks  
  For more information, see [Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md).  

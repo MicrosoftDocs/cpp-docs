@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ppltasks/concurrency::task_completion_event"
+f1_keywords: ['task_completion_event', 'PPLTASKS/concurrency::task_completion_event', 'PPLTASKS/concurrency::task_completion_event::task_completion_event', 'PPLTASKS/concurrency::task_completion_event::set', 'PPLTASKS/concurrency::task_completion_event::set_exception']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -59,14 +58,14 @@ class task_completion_event<void>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[task_completion_event Constructor](#ctor)|Constructs a `task_completion_event` object.|  
+|[task_completion_event](#ctor)|Constructs a `task_completion_event` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[set Method](#set)|Overloaded. Sets the task completion event.|  
-|[set_exception Method](#set_exception)|Overloaded. Propagates an exception to all tasks associated with this event.|  
+|[set](#set)|Overloaded. Sets the task completion event.|  
+|[set_exception](#set_exception)|Overloaded. Propagates an exception to all tasks associated with this event.|  
   
 ## Remarks  
  Use a task created from a task completion event when your scenario requires you to create a task that will complete, and thereby have its continuations scheduled for execution, at some point in the future. The `task_completion_event` must have the same type as the task you create, and calling the set method on the task completion event with a value of that type will cause the associated task to complete, and provide that value as a result to its continuations.  

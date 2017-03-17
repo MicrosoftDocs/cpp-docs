@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CNonStatelessWorker<Worker>"
-  - "ATL::CNonStatelessWorker"
-  - "ATL.CNonStatelessWorker"
-  - "CNonStatelessWorker"
-  - "ATL::CNonStatelessWorker<Worker>"
+f1_keywords: ['CNonStatelessWorker', 'ATLUTIL/ATL::CNonStatelessWorker', 'ATLUTIL/ATL::CNonStatelessWorker::RequestType', 'ATLUTIL/ATL::CNonStatelessWorker::Execute', 'ATLUTIL/ATL::CNonStatelessWorker::Initialize', 'ATLUTIL/ATL::CNonStatelessWorker::Terminate']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COccManager"
+f1_keywords: ['COccManager', 'AFXOCC/COccManager', 'AFXOCC/COccManager::CreateContainer', 'AFXOCC/COccManager::CreateDlgControls', 'AFXOCC/COccManager::CreateSite', 'AFXOCC/COccManager::GetDefBtnCode', 'AFXOCC/COccManager::IsDialogMessage', 'AFXOCC/COccManager::IsLabelControl', 'AFXOCC/COccManager::IsMatchingMnemonic', 'AFXOCC/COccManager::OnEvent', 'AFXOCC/COccManager::PostCreateDialog', 'AFXOCC/COccManager::PreCreateDialog', 'AFXOCC/COccManager::SetDefaultButton', 'AFXOCC/COccManager::SplitDialogTemplate']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

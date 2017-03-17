@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CTypedPtrArray"
+f1_keywords: ['CTypedPtrArray', 'AFXTEMPL/CTypedPtrArray', 'AFXTEMPL/CTypedPtrArray::Add', 'AFXTEMPL/CTypedPtrArray::Append', 'AFXTEMPL/CTypedPtrArray::Copy', 'AFXTEMPL/CTypedPtrArray::ElementAt', 'AFXTEMPL/CTypedPtrArray::GetAt', 'AFXTEMPL/CTypedPtrArray::InsertAt', 'AFXTEMPL/CTypedPtrArray::SetAt', 'AFXTEMPL/CTypedPtrArray::SetAtGrow']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

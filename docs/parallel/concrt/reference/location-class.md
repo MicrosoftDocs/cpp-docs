@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::location"
+f1_keywords: ['location', 'CONCRT/concurrency::location', 'CONCRT/concurrency::location::location', 'CONCRT/concurrency::location::current', 'CONCRT/concurrency::location::from_numa_node']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,23 +48,23 @@ class location;
   
 |Name|Description|  
 |----------|-----------------|  
-|[location Constructor](#ctor)|Overloaded. Constructs a `location` object.|  
+|[location](#ctor)|Overloaded. Constructs a `location` object.|  
 |[~location Destructor](#dtor)|Destroys a `location` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[current Method](#current)|Returns a `location` object representing the most specific place the calling thread is executing.|  
-|[from_numa_node Method](#from_numa_node)|Returns a `location` object which represents a given NUMA node.|  
+|[current](#current)|Returns a `location` object representing the most specific place the calling thread is executing.|  
+|[from_numa_node](#from_numa_node)|Returns a `location` object which represents a given NUMA node.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator!= Operator](#operator_neq)|Determines whether two `location` objects represent different location.|  
-|[operator= Operator](#operator_eq)|Assigns the contents of a different `location` object to this one.|  
-|[operator== Operator](#operator_eq_eq)|Determines whether two `location` objects represent the same location.|  
+|[operator!=](#operator_neq)|Determines whether two `location` objects represent different location.|  
+|[operator=](#operator_eq)|Assigns the contents of a different `location` object to this one.|  
+|[operator==](#operator_eq_eq)|Determines whether two `location` objects represent the same location.|  
   
 ## Inheritance Hierarchy  
  `location`  

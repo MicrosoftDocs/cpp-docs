@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CCachedDataPathProperty"
+f1_keywords: ['CCachedDataPathProperty', 'AFXCTL/CCachedDataPathProperty', 'AFXCTL/CCachedDataPathProperty::CCachedDataPathProperty', 'AFXCTL/CCachedDataPathProperty::m_Cache']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

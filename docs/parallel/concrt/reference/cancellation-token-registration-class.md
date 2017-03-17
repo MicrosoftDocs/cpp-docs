@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "pplcancellation_token/concurrency::cancellation_token_registration"
+f1_keywords: ['cancellation_token_registration', 'PPLCANCELLATION_TOKEN/concurrency::cancellation_token_registration', 'PPLCANCELLATION_TOKEN/concurrency::cancellation_token_registration::cancellation_token_registration']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,16 +48,16 @@ class cancellation_token_registration;
   
 |Name|Description|  
 |----------|-----------------|  
-|[cancellation_token_registration Constructor](#ctor)||  
+|[cancellation_token_registration](#ctor)||  
 |[~cancellation_token_registration Destructor](#dtor)||  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator!= Operator](#operator_neq)||  
-|[operator= Operator](#operator_eq)||  
-|[operator== Operator](#operator_eq_eq)||  
+|[operator!=](#operator_neq)||  
+|[operator=](#operator_eq)||  
+|[operator==](#operator_eq_eq)||  
   
 ## Inheritance Hierarchy  
  `cancellation_token_registration`  

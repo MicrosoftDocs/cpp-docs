@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CDebugReportHook"
-  - "CDebugReportHook"
-  - "ATL::CDebugReportHook"
+f1_keywords: ['CDebugReportHook', 'ATLUTIL/ATL::CDebugReportHook', 'ATLUTIL/ATL::CDebugReportHook::CDebugReportHook', 'ATLUTIL/ATL::CDebugReportHook::CDebugReportHookProc', 'ATLUTIL/ATL::CDebugReportHook::RemoveHook', 'ATLUTIL/ATL::CDebugReportHook::SetHook', 'ATLUTIL/ATL::CDebugReportHook::SetPipeName', 'ATLUTIL/ATL::CDebugReportHook::SetTimeout']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

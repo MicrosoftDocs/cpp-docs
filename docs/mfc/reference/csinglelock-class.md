@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSingleLock"
+f1_keywords: ['CSingleLock', 'AFXMT/CSingleLock', 'AFXMT/CSingleLock::CSingleLock', 'AFXMT/CSingleLock::IsLocked', 'AFXMT/CSingleLock::Lock', 'AFXMT/CSingleLock::Unlock']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -83,31 +83,31 @@ class float_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|float_2::get_x Method||  
-|float_2::get_xy Method||  
-|float_2::get_y Method||  
-|float_2::get_yx Method||  
-|float_2::ref_g Method||  
-|float_2::ref_r Method||  
-|float_2::ref_x Method||  
-|float_2::ref_y Method||  
-|float_2::set_x Method||  
-|float_2::set_xy Method||  
-|float_2::set_y Method||  
-|float_2::set_yx Method||  
+|float_2::get_x||  
+|float_2::get_xy||  
+|float_2::get_y||  
+|float_2::get_yx||  
+|float_2::ref_g||  
+|float_2::ref_r||  
+|float_2::ref_x||  
+|float_2::ref_y||  
+|float_2::set_x||  
+|float_2::set_xy||  
+|float_2::set_y||  
+|float_2::set_yx||  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|float_2::operator- Operator||  
-|float_2::operator-- Operator||  
-|float_2::operator*= Operator||  
-|float_2::operator/= Operator||  
-|float_2::operator++ Operator||  
-|float_2::operator+= Operator||  
-|float_2::operator= Operator||  
-|float_2::operator-= Operator||  
+|float_2::operator-||  
+|float_2::operator--||  
+|float_2::operator*=||  
+|float_2::operator/=||  
+|float_2::operator++||  
+|float_2::operator+=||  
+|float_2::operator=||  
+|float_2::operator-=||  
   
 ### Public Constants  
   
@@ -119,14 +119,14 @@ class float_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|float_2::g Data Member||  
-|float_2::gr Data Member||  
-|float_2::r Data Member||  
-|float_2::rg Data Member||  
-|float_2::x Data Member||  
-|float_2::xy Data Member||  
-|float_2::y Data Member||  
-|float_2::yx Data Member||  
+|float_2::g||  
+|float_2::gr||  
+|float_2::r||  
+|float_2::rg||  
+|float_2::x||  
+|float_2::xy||  
+|float_2::y||  
+|float_2::yx||  
   
 ## Inheritance Hierarchy  
  `float_2`  

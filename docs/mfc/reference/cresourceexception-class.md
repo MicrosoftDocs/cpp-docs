@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CResourceException"
+f1_keywords: ['CResourceException', 'AFXWIN/CResourceException', 'AFXWIN/CResourceException::CResourceException']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

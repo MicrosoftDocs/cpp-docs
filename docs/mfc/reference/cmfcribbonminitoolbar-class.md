@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCRibbonMiniToolBar"
+f1_keywords: ['CMFCRibbonMiniToolBar', 'AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar', 'AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::IsContextMenuMode', 'AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::IsRibbonMiniToolBar', 'AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::SetCommands', 'AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::Show', 'AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::ShowWithContextMenu']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

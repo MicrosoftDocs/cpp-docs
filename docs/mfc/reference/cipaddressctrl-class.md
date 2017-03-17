@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CIPAddressCtrl"
+f1_keywords: ['CIPAddressCtrl', 'AFXCMN/CIPAddressCtrl', 'AFXCMN/CIPAddressCtrl::CIPAddressCtrl', 'AFXCMN/CIPAddressCtrl::ClearAddress', 'AFXCMN/CIPAddressCtrl::Create', 'AFXCMN/CIPAddressCtrl::CreateEx', 'AFXCMN/CIPAddressCtrl::GetAddress', 'AFXCMN/CIPAddressCtrl::IsBlank', 'AFXCMN/CIPAddressCtrl::SetAddress', 'AFXCMN/CIPAddressCtrl::SetFieldFocus', 'AFXCMN/CIPAddressCtrl::SetFieldRange']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

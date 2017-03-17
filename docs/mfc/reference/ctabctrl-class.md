@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CTabCtrl"
+f1_keywords: ['CTabCtrl', 'AFXCMN/CTabCtrl', 'AFXCMN/CTabCtrl::CTabCtrl', 'AFXCMN/CTabCtrl::AdjustRect', 'AFXCMN/CTabCtrl::Create', 'AFXCMN/CTabCtrl::CreateEx', 'AFXCMN/CTabCtrl::DeleteAllItems', 'AFXCMN/CTabCtrl::DeleteItem', 'AFXCMN/CTabCtrl::DeselectAll', 'AFXCMN/CTabCtrl::DrawItem', 'AFXCMN/CTabCtrl::GetCurFocus', 'AFXCMN/CTabCtrl::GetCurSel', 'AFXCMN/CTabCtrl::GetExtendedStyle', 'AFXCMN/CTabCtrl::GetImageList', 'AFXCMN/CTabCtrl::GetItem', 'AFXCMN/CTabCtrl::GetItemCount', 'AFXCMN/CTabCtrl::GetItemRect', 'AFXCMN/CTabCtrl::GetItemState', 'AFXCMN/CTabCtrl::GetRowCount', 'AFXCMN/CTabCtrl::GetToolTips', 'AFXCMN/CTabCtrl::HighlightItem', 'AFXCMN/CTabCtrl::HitTest', 'AFXCMN/CTabCtrl::InsertItem', 'AFXCMN/CTabCtrl::RemoveImage', 'AFXCMN/CTabCtrl::SetCurFocus', 'AFXCMN/CTabCtrl::SetCurSel', 'AFXCMN/CTabCtrl::SetExtendedStyle', 'AFXCMN/CTabCtrl::SetImageList', 'AFXCMN/CTabCtrl::SetItem', 'AFXCMN/CTabCtrl::SetItemExtra', 'AFXCMN/CTabCtrl::SetItemSize', 'AFXCMN/CTabCtrl::SetItemState', 'AFXCMN/CTabCtrl::SetMinTabWidth', 'AFXCMN/CTabCtrl::SetPadding', 'AFXCMN/CTabCtrl::SetToolTips']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

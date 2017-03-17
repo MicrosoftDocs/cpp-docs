@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CUserTool"
+f1_keywords: ['CUserTool', 'AFXUSERTOOL/CUserTool', 'AFXUSERTOOL/CUserTool::CopyIconToClipboard', 'AFXUSERTOOL/CUserTool::DrawToolIcon', 'AFXUSERTOOL/CUserTool::GetCommand', 'AFXUSERTOOL/CUserTool::GetCommandId', 'AFXUSERTOOL/CUserTool::Invoke', 'AFXUSERTOOL/CUserTool::Serialize', 'AFXUSERTOOL/CUserTool::SetCommand', 'AFXUSERTOOL/CUserTool::SetToolIcon', 'AFXUSERTOOL/CUserTool::LoadDefaultIcon', 'AFXUSERTOOL/CUserTool::m_strArguments', 'AFXUSERTOOL/CUserTool::m_strInitialDirectory', 'AFXUSERTOOL/CUserTool::m_strLabel']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

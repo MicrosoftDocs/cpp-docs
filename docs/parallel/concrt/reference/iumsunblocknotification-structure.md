@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrtrm/concurrency::IUMSUnblockNotification"
+f1_keywords: ['IUMSUnblockNotification', 'CONCRTRM/concurrency::IUMSUnblockNotification', 'CONCRTRM/concurrency::IUMSUnblockNotification::IUMSUnblockNotification::GetContext', 'CONCRTRM/concurrency::IUMSUnblockNotification::IUMSUnblockNotification::GetNextUnblockNotification']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,8 +48,8 @@ struct IUMSUnblockNotification;
   
 |Name|Description|  
 |----------|-----------------|  
-|[IUMSUnblockNotification::GetContext Method](#getcontext)|Returns the `IExecutionContext` interface for the execution context associated with the thread proxy which has unblocked. Once this method returns and the underlying execution context has been rescheduled via a call to the `IThreadProxy::SwitchTo` method, this interface is no longer valid.|  
-|[IUMSUnblockNotification::GetNextUnblockNotification Method](#getnextunblocknotification)|Returns the next `IUMSUnblockNotification` interface in the chain returned from the method `IUMSCompletionList::GetUnblockNotifications`.|  
+|[IUMSUnblockNotification::GetContext](#getcontext)|Returns the `IExecutionContext` interface for the execution context associated with the thread proxy which has unblocked. Once this method returns and the underlying execution context has been rescheduled via a call to the `IThreadProxy::SwitchTo` method, this interface is no longer valid.|  
+|[IUMSUnblockNotification::GetNextUnblockNotification](#getnextunblocknotification)|Returns the next `IUMSUnblockNotification` interface in the chain returned from the method `IUMSCompletionList::GetUnblockNotifications`.|  
   
 ## Inheritance Hierarchy  
  `IUMSUnblockNotification`  

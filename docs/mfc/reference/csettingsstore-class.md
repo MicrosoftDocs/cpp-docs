@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSettingsStore"
+f1_keywords: ['CSettingsStore', 'AFXSETTINGSSTORE/CSettingsStore', 'AFXSETTINGSSTORE/CSettingsStore::CSettingsStore', 'AFXSETTINGSSTORE/CSettingsStore::Close', 'AFXSETTINGSSTORE/CSettingsStore::CreateKey', 'AFXSETTINGSSTORE/CSettingsStore::DeleteKey', 'AFXSETTINGSSTORE/CSettingsStore::DeleteValue', 'AFXSETTINGSSTORE/CSettingsStore::Open', 'AFXSETTINGSSTORE/CSettingsStore::Read', 'AFXSETTINGSSTORE/CSettingsStore::Write']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

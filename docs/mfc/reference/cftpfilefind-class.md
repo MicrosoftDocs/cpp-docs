@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CFtpFileFind"
+f1_keywords: ['CFtpFileFind', 'AFXINET/CFtpFileFind', 'AFXINET/CFtpFileFind::CFtpFileFind', 'AFXINET/CFtpFileFind::FindFile', 'AFXINET/CFtpFileFind::FindNextFile', 'AFXINET/CFtpFileFind::GetFileURL']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

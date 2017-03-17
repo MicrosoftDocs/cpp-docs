@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCImagePaintArea"
+f1_keywords: ['CMFCImagePaintArea', 'AFXIMAGEPAINTAREA/CMFCImagePaintArea', 'AFXIMAGEPAINTAREA/CMFCImagePaintArea::CMFCImagePaintArea', 'AFXIMAGEPAINTAREA/CMFCImagePaintArea::GetMode', 'AFXIMAGEPAINTAREA/CMFCImagePaintArea::SetBitmap', 'AFXIMAGEPAINTAREA/CMFCImagePaintArea::SetColor', 'AFXIMAGEPAINTAREA/CMFCImagePaintArea::SetMode']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

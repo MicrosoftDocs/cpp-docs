@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCMaskedEdit"
+f1_keywords: ['CMFCMaskedEdit', 'AFXMASKEDEDIT/CMFCMaskedEdit', 'AFXMASKEDEDIT/CMFCMaskedEdit::DisableMask', 'AFXMASKEDEDIT/CMFCMaskedEdit::EnableGetMaskedCharsOnly', 'AFXMASKEDEDIT/CMFCMaskedEdit::EnableMask', 'AFXMASKEDEDIT/CMFCMaskedEdit::EnableSelectByGroup', 'AFXMASKEDEDIT/CMFCMaskedEdit::EnableSetMaskedCharsOnly', 'AFXMASKEDEDIT/CMFCMaskedEdit::GetWindowText', 'AFXMASKEDEDIT/CMFCMaskedEdit::SetValidChars', 'AFXMASKEDEDIT/CMFCMaskedEdit::SetWindowText', 'AFXMASKEDEDIT/CMFCMaskedEdit::IsMaskedChar']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

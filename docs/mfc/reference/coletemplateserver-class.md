@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleTemplateServer"
+f1_keywords: ['COleTemplateServer', 'AFXDISP/COleTemplateServer', 'AFXDISP/COleTemplateServer::COleTemplateServer', 'AFXDISP/COleTemplateServer::ConnectTemplate', 'AFXDISP/COleTemplateServer::Unregister', 'AFXDISP/COleTemplateServer::UpdateRegistry']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

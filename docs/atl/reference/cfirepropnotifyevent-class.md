@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CFirePropNotifyEvent"
-  - "ATL::CFirePropNotifyEvent"
-  - "ATL.CFirePropNotifyEvent"
+f1_keywords: ['CFirePropNotifyEvent', 'ATLCTL/ATL::CFirePropNotifyEvent', 'ATLCTL/ATL::CFirePropNotifyEvent::FireOnChanged', 'ATLCTL/ATL::CFirePropNotifyEvent::FireOnRequestEdit']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

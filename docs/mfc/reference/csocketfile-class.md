@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSocketFile"
+f1_keywords: ['CSocketFile', 'AFXSOCK/CSocketFile', 'AFXSOCK/CSocketFile::CSocketFile']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CInvalidArgException"
+f1_keywords: ['CInvalidArgException', 'AFX/CInvalidArgException', 'AFX/CInvalidArgException::CInvalidArgException']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

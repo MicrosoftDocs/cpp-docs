@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCColorPopupMenu"
+f1_keywords: ['CMFCColorPopupMenu', 'AFXCOLORPOPUPMENU/CMFCColorPopupMenu', 'AFXCOLORPOPUPMENU/CMFCColorPopupMenu::CMFCColorPopupMenu', 'AFXCOLORPOPUPMENU/CMFCColorPopupMenu::CreateTearOffBar', 'AFXCOLORPOPUPMENU/CMFCColorPopupMenu::GetMenuBar', 'AFXCOLORPOPUPMENU/CMFCColorPopupMenu::SetPropList']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

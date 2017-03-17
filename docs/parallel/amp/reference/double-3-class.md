@@ -127,55 +127,55 @@ class double_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|double_3::get_x Method||  
-|double_3::get_xy Method||  
-|double_3::get_xyz Method||  
-|double_3::get_xz Method||  
-|double_3::get_xzy Method||  
-|double_3::get_y Method||  
-|double_3::get_yx Method||  
-|double_3::get_yxz Method||  
-|double_3::get_yz Method||  
-|double_3::get_yzx Method||  
-|double_3::get_z Method||  
-|double_3::get_zx Method||  
-|double_3::get_zxy Method||  
-|double_3::get_zy Method||  
-|double_3::get_zyx Method||  
-|double_3::ref_b Method||  
-|double_3::ref_g Method||  
-|double_3::ref_r Method||  
-|double_3::ref_x Method||  
-|double_3::ref_y Method||  
-|double_3::ref_z Method||  
-|double_3::set_x Method||  
-|double_3::set_xy Method||  
-|double_3::set_xyz Method||  
-|double_3::set_xz Method||  
-|double_3::set_xzy Method||  
-|double_3::set_y Method||  
-|double_3::set_yx Method||  
-|double_3::set_yxz Method||  
-|double_3::set_yz Method||  
-|double_3::set_yzx Method||  
-|double_3::set_z Method||  
-|double_3::set_zx Method||  
-|double_3::set_zxy Method||  
-|double_3::set_zy Method||  
-|double_3::set_zyx Method||  
+|double_3::get_x||  
+|double_3::get_xy||  
+|double_3::get_xyz||  
+|double_3::get_xz||  
+|double_3::get_xzy||  
+|double_3::get_y||  
+|double_3::get_yx||  
+|double_3::get_yxz||  
+|double_3::get_yz||  
+|double_3::get_yzx||  
+|double_3::get_z||  
+|double_3::get_zx||  
+|double_3::get_zxy||  
+|double_3::get_zy||  
+|double_3::get_zyx||  
+|double_3::ref_b||  
+|double_3::ref_g||  
+|double_3::ref_r||  
+|double_3::ref_x||  
+|double_3::ref_y||  
+|double_3::ref_z||  
+|double_3::set_x||  
+|double_3::set_xy||  
+|double_3::set_xyz||  
+|double_3::set_xz||  
+|double_3::set_xzy||  
+|double_3::set_y||  
+|double_3::set_yx||  
+|double_3::set_yxz||  
+|double_3::set_yz||  
+|double_3::set_yzx||  
+|double_3::set_z||  
+|double_3::set_zx||  
+|double_3::set_zxy||  
+|double_3::set_zy||  
+|double_3::set_zyx||  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|double_3::operator- Operator||  
-|double_3::operator-- Operator||  
-|double_3::operator*= Operator||  
-|double_3::operator/= Operator||  
-|double_3::operator++ Operator||  
-|double_3::operator+= Operator||  
-|double_3::operator= Operator||  
-|double_3::operator-= Operator||  
+|double_3::operator-||  
+|double_3::operator--||  
+|double_3::operator*=||  
+|double_3::operator/=||  
+|double_3::operator++||  
+|double_3::operator+=||  
+|double_3::operator=||  
+|double_3::operator-=||  
   
 ### Public Constants  
   
@@ -187,36 +187,36 @@ class double_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|double_3::b Data Member||  
-|double_3::bg Data Member||  
-|double_3::bgr Data Member||  
-|double_3::br Data Member||  
-|double_3::brg Data Member||  
-|double_3::g Data Member||  
-|double_3::gb Data Member||  
-|double_3::gbr Data Member||  
-|double_3::gr Data Member||  
-|double_3::grb Data Member||  
-|double_3::r Data Member||  
-|double_3::rb Data Member||  
-|double_3::rbg Data Member||  
-|double_3::rg Data Member||  
-|double_3::rgb Data Member||  
-|double_3::x Data Member||  
-|double_3::xy Data Member||  
-|double_3::xyz Data Member||  
-|double_3::xz Data Member||  
-|double_3::xzy Data Member||  
-|double_3::y Data Member||  
-|double_3::yx Data Member||  
-|double_3::yxz Data Member||  
-|double_3::yz Data Member||  
-|double_3::yzx Data Member||  
-|double_3::z Data Member||  
-|double_3::zx Data Member||  
-|double_3::zxy Data Member||  
-|double_3::zy Data Member||  
-|double_3::zyx Data Member||  
+|double_3::b||  
+|double_3::bg||  
+|double_3::bgr||  
+|double_3::br||  
+|double_3::brg||  
+|double_3::g||  
+|double_3::gb||  
+|double_3::gbr||  
+|double_3::gr||  
+|double_3::grb||  
+|double_3::r||  
+|double_3::rb||  
+|double_3::rbg||  
+|double_3::rg||  
+|double_3::rgb||  
+|double_3::x||  
+|double_3::xy||  
+|double_3::xyz||  
+|double_3::xz||  
+|double_3::xzy||  
+|double_3::y||  
+|double_3::yx||  
+|double_3::yxz||  
+|double_3::yz||  
+|double_3::yzx||  
+|double_3::z||  
+|double_3::zx||  
+|double_3::zxy||  
+|double_3::zy||  
+|double_3::zyx||  
   
 ## Inheritance Hierarchy  
  `double_3`  

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrtrm/concurrency::IScheduler"
+f1_keywords: ['IScheduler', 'CONCRTRM/concurrency::IScheduler', 'CONCRTRM/concurrency::IScheduler::IScheduler::AddVirtualProcessors', 'CONCRTRM/concurrency::IScheduler::IScheduler::GetId', 'CONCRTRM/concurrency::IScheduler::IScheduler::GetPolicy', 'CONCRTRM/concurrency::IScheduler::IScheduler::NotifyResourcesExternallyBusy', 'CONCRTRM/concurrency::IScheduler::IScheduler::NotifyResourcesExternallyIdle', 'CONCRTRM/concurrency::IScheduler::IScheduler::RemoveVirtualProcessors', 'CONCRTRM/concurrency::IScheduler::IScheduler::Statistics']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,13 +48,13 @@ struct IScheduler;
   
 |Name|Description|  
 |----------|-----------------|  
-|[IScheduler::AddVirtualProcessors Method](#addvirtualprocessors)|Provides a scheduler with a set of virtual processor roots for its use. Each `IVirtualProcessorRoot` interface represents the right to execute a single thread that can perform work on behalf of the scheduler.|  
-|[IScheduler::GetId Method](#getid)|Returns a unique identifier for the scheduler.|  
-|[IScheduler::GetPolicy Method](#getpolicy)|Returns a copy of the scheduler's policy. For more information on scheduler policies, see [SchedulerPolicy](schedulerpolicy-class.md).|  
-|[IScheduler::NotifyResourcesExternallyBusy Method](#notifyresourcesexternallybusy)|Notifies this scheduler that the hardware threads represented by the set of virtual processor roots in the array `ppVirtualProcessorRoots` are now being used by other schedulers.|  
-|[IScheduler::NotifyResourcesExternallyIdle Method](#notifyresourcesexternallyidle)|Notifies this scheduler that the hardware threads represented by the set of virtual processor roots in the array `ppVirtualProcessorRoots` are not being used by other schedulers.|  
-|[IScheduler::RemoveVirtualProcessors Method](#removevirtualprocessors)|Initiates the removal of virtual processor roots that were previously allocated to this scheduler.|  
-|[IScheduler::Statistics Method](#statistics)|Provides information related to task arrival and completion rates, and change in queue length for a scheduler.|  
+|[IScheduler::AddVirtualProcessors](#addvirtualprocessors)|Provides a scheduler with a set of virtual processor roots for its use. Each `IVirtualProcessorRoot` interface represents the right to execute a single thread that can perform work on behalf of the scheduler.|  
+|[IScheduler::GetId](#getid)|Returns a unique identifier for the scheduler.|  
+|[IScheduler::GetPolicy](#getpolicy)|Returns a copy of the scheduler's policy. For more information on scheduler policies, see [SchedulerPolicy](schedulerpolicy-class.md).|  
+|[IScheduler::NotifyResourcesExternallyBusy](#notifyresourcesexternallybusy)|Notifies this scheduler that the hardware threads represented by the set of virtual processor roots in the array `ppVirtualProcessorRoots` are now being used by other schedulers.|  
+|[IScheduler::NotifyResourcesExternallyIdle](#notifyresourcesexternallyidle)|Notifies this scheduler that the hardware threads represented by the set of virtual processor roots in the array `ppVirtualProcessorRoots` are not being used by other schedulers.|  
+|[IScheduler::RemoveVirtualProcessors](#removevirtualprocessors)|Initiates the removal of virtual processor roots that were previously allocated to this scheduler.|  
+|[IScheduler::Statistics](#statistics)|Provides information related to task arrival and completion rates, and change in queue length for a scheduler.|  
   
 ## Remarks  
  If you are implementing a custom scheduler that communicates with the Resource Manager, you should provide an implementation of the `IScheduler` interface. This interface is one end of a two-way channel of communication between a scheduler and the Resource Manager. The other end is represented by the `IResourceManager` and `ISchedulerProxy` interfaces which are implemented by the Resource Manager.  
@@ -212,7 +211,7 @@ virtual void Statistics(
   
 ## See Also  
  [concurrency Namespace](concurrency-namespace.md)   
- [PolicyElementKey Enumeration](concurrency-namespace-enums.md)   
+ [PolicyElementKey](concurrency-namespace-enums.md)   
  [SchedulerPolicy Class](schedulerpolicy-class.md)   
  [IExecutionContext Structure](iexecutioncontext-structure.md)   
  [IThreadProxy Structure](ithreadproxy-structure.md)   

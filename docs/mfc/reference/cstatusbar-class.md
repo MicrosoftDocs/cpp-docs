@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CStatusBar"
+f1_keywords: ['CStatusBar', 'AFXEXT/CStatusBar', 'AFXEXT/CStatusBar::CStatusBar', 'AFXEXT/CStatusBar::CommandToIndex', 'AFXEXT/CStatusBar::Create', 'AFXEXT/CStatusBar::CreateEx', 'AFXEXT/CStatusBar::DrawItem', 'AFXEXT/CStatusBar::GetItemID', 'AFXEXT/CStatusBar::GetItemRect', 'AFXEXT/CStatusBar::GetPaneInfo', 'AFXEXT/CStatusBar::GetPaneStyle', 'AFXEXT/CStatusBar::GetPaneText', 'AFXEXT/CStatusBar::GetStatusBarCtrl', 'AFXEXT/CStatusBar::SetIndicators', 'AFXEXT/CStatusBar::SetPaneInfo', 'AFXEXT/CStatusBar::SetPaneStyle', 'AFXEXT/CStatusBar::SetPaneText']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CDacl"
-  - "CDacl"
-  - "ATL.CDacl"
+f1_keywords: ['CDacl', 'ATLSECURITY/ATL::CDacl', 'ATLSECURITY/ATL::CDacl::CDacl', 'ATLSECURITY/ATL::CDacl::AddAllowedAce', 'ATLSECURITY/ATL::CDacl::AddDeniedAce', 'ATLSECURITY/ATL::CDacl::GetAceCount', 'ATLSECURITY/ATL::CDacl::RemoveAce', 'ATLSECURITY/ATL::CDacl::RemoveAllAces']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

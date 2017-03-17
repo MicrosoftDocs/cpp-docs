@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "agents/concurrency::ITarget"
+f1_keywords: ['ITarget', 'AGENTS/concurrency::ITarget', 'AGENTS/concurrency::ITarget::propagate', 'AGENTS/concurrency::ITarget::send', 'AGENTS/concurrency::ITarget::supports_anonymous_source', 'AGENTS/concurrency::ITarget::link_source', 'AGENTS/concurrency::ITarget::unlink_source', 'AGENTS/concurrency::ITarget::unlink_sources']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -67,17 +66,17 @@ class ITarget;
   
 |Name|Description|  
 |----------|-----------------|  
-|[propagate Method](#propagate)|When overridden in a derived class, asynchronously passes a message from a source block to this target block.|  
-|[send Method](#send)|When overridden in a derived class, synchronously passes a message to the target block.|  
-|[supports_anonymous_source Method](#supports_anonymous_source)|When overridden in a derived class, returns true or false depending on whether the message block accepts messages offered by a source that is not linked to it. If the overridden method returns `true`, the target cannot postpone an offered message, as consumption of a postponed message at a later time requires the source to be identified in its sourse link registry.|  
+|[propagate](#propagate)|When overridden in a derived class, asynchronously passes a message from a source block to this target block.|  
+|[send](#send)|When overridden in a derived class, synchronously passes a message to the target block.|  
+|[supports_anonymous_source](#supports_anonymous_source)|When overridden in a derived class, returns true or false depending on whether the message block accepts messages offered by a source that is not linked to it. If the overridden method returns `true`, the target cannot postpone an offered message, as consumption of a postponed message at a later time requires the source to be identified in its sourse link registry.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[link_source Method](#link_source)|When overridden in a derived class, links a specified source block to this `ITarget` block.|  
-|[unlink_source Method](#unlink_source)|When overridden in a derived class, unlinks a specified source block from this `ITarget` block.|  
-|[unlink_sources Method](#unlink_sources)|When overridden in a derived class, unlinks all source blocks from this `ITarget` block.|  
+|[link_source](#link_source)|When overridden in a derived class, links a specified source block to this `ITarget` block.|  
+|[unlink_source](#unlink_source)|When overridden in a derived class, unlinks a specified source block from this `ITarget` block.|  
+|[unlink_sources](#unlink_sources)|When overridden in a derived class, unlinks all source blocks from this `ITarget` block.|  
   
 ## Remarks  
  For more information, see [Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md).  

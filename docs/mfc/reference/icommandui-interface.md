@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ICommandUI"
+f1_keywords: ['ICommandUI', 'AFXWINFORMS/ICommandUI', 'AFXWINFORMS/icommandui__Check', 'AFXWINFORMS/ICommandUI::ContinueRouting', 'AFXWINFORMS/ICommandUI::Enabled', 'AFXWINFORMS/ICommandUI::ID', 'AFXWINFORMS/ICommandUI::Index', 'AFXWINFORMS/ICommandUI::Radio', 'AFXWINFORMS/ICommandUI::Text']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

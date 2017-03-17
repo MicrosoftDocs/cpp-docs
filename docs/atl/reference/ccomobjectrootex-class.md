@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CComObjectRootEx"
-  - "ATL::CComObjectRootEx<ThreadModel>"
-  - "CComObjectRootEx"
-  - "ATL::CComObjectRootEx"
-  - "ATL.CComObjectRootEx<ThreadModel>"
+f1_keywords: ['CComObjectRootEx', 'ATLCOM/ATL::CComObjectRootEx', 'ATLCOM/ATL::CComObjectRootEx', 'ATLCOM/ATL::InternalAddRef', 'ATLCOM/ATL::InternalRelease', 'ATLCOM/ATL::Lock', 'ATLCOM/ATL::Unlock', 'ATLCOM/ATL::FinalConstruct', 'ATLCOM/ATL::FinalRelease', 'ATLCOM/ATL::OuterAddRef', 'ATLCOM/ATL::OuterQueryInterface', 'ATLCOM/ATL::OuterRelease', 'ATLCOM/ATL::InternalQueryInterface', 'ATLCOM/ATL::ObjectMain', 'ATLCOM/ATL::m_dwRef', 'ATLCOM/ATL::m_pOuterUnknown']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

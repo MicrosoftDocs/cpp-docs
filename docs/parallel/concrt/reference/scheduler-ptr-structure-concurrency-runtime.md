@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "pplinterface/concurrency::scheduler_ptr"
+f1_keywords: ['scheduler_ptr', 'PPLINTERFACE/concurrency::scheduler_ptr', 'PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::scheduler_ptr', 'PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::get', 'PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::operator bool']
 dev_langs: 
   - "C++"
 ms.assetid: e88c84af-c306-476d-aef1-f42a0fa0a80f
@@ -47,20 +46,20 @@ struct scheduler_ptr;
   
 |Name|Description|  
 |----------|-----------------|  
-|[scheduler_ptr::scheduler_ptr Constructor](#ctor)|Overloaded. Creates a scheduler pointer from shared_ptr to scheduler|  
+|[scheduler_ptr::scheduler_ptr](#ctor)|Overloaded. Creates a scheduler pointer from shared_ptr to scheduler|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[scheduler_ptr::get Method](#get)|Returns the raw pointer to the scheduler|  
+|[scheduler_ptr::get](#get)|Returns the raw pointer to the scheduler|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[scheduler_ptr::operator bool Operator](#operator_bool)|Test whether the scheduler pointer is non-null|  
-|[scheduler_ptr::operator-&gt; Operator](#operator_ptr)|Behave like a pointer|  
+|[scheduler_ptr::operator bool](#operator_bool)|Test whether the scheduler pointer is non-null|  
+|[scheduler_ptr::operator-&gt;](#operator_ptr)|Behave like a pointer|  
   
 ## Inheritance Hierarchy  
  `scheduler_ptr`  

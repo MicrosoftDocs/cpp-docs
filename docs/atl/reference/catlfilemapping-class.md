@@ -8,13 +8,10 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CAtlFileMapping<T>"
-  - "ATL.CAtlFileMapping"
-  - "ATL::CAtlFileMapping"
-  - "CAtlFileMapping"
-  - "ATL.CAtlFileMapping<T>"
-dev_langs: 
+f1_keywords:
+ - "CAtlFileMapping"
+ - "atlfile/ATL::CAtlFileMapping"
+ dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "CAtlFileMapping class"

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "amprt/Concurrency::unsupported_feature"
+f1_keywords: ['unsupported_feature', 'AMPRT/unsupported_feature', 'AMPRT/Concurrency::unsupported_feature']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

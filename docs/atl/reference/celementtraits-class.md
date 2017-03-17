@@ -8,13 +8,10 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CElementTraits<T>"
-  - "ATL::CElementTraits"
-  - "ATL.CElementTraits"
-  - "ATL::CElementTraits<T>"
-  - "CElementTraits"
-dev_langs: 
+f1_keywords:
+ - "CElementTraits"
+ - "atlcoll/ATL::CElementTraits"
+ dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "CElementTraits class"

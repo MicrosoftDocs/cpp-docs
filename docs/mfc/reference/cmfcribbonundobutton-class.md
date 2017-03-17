@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCRibbonUndoButton"
+f1_keywords: ['CMFCRibbonUndoButton', 'AFXRIBBONUNDOBUTTON/CMFCRibbonUndoButton', 'AFXRIBBONUNDOBUTTON/CMFCRibbonUndoButton::CMFCRibbonUndoButton', 'AFXRIBBONUNDOBUTTON/CMFCRibbonUndoButton::AddUndoAction', 'AFXRIBBONUNDOBUTTON/CMFCRibbonUndoButton::CleanUpUndoList', 'AFXRIBBONUNDOBUTTON/CMFCRibbonUndoButton::GetActionNumber', 'AFXRIBBONUNDOBUTTON/CMFCRibbonUndoButton::HasMenu']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

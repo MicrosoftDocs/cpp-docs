@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDialogEx"
+f1_keywords: ['CDialogEx', 'AFXDIALOGEX/CDialogEx', 'AFXDIALOGEX/CDialogEx::CDialogEx', 'AFXDIALOGEX/CDialogEx::SetBackgroundColor', 'AFXDIALOGEX/CDialogEx::SetBackgroundImage']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

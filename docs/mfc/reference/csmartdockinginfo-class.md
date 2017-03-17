@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSmartDockingInfo"
+f1_keywords: ['CSmartDockingInfo', 'AFXDOCKINGMANAGER/CSmartDockingInfo', 'AFXDOCKINGMANAGER/CSmartDockingInfo::CopyTo', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_bUseThemeColorInShading', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrBaseBackground', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrToneDest', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrToneSrc', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrTransparent', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_nCentralGroupOffset', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_sizeTotal', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_uiMarkerBmpResID', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_uiMarkerLightBmpResID']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

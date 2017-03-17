@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDaoRecordView"
+f1_keywords: ['CDaoRecordView', 'AFXDAO/CDaoRecordView', 'AFXDAO/CDaoRecordView::CDaoRecordView', 'AFXDAO/CDaoRecordView::IsOnFirstRecord', 'AFXDAO/CDaoRecordView::IsOnLastRecord', 'AFXDAO/CDaoRecordView::OnGetRecordset', 'AFXDAO/CDaoRecordView::OnMove']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

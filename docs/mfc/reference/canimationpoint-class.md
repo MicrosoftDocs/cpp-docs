@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CAnimationPoint"
-  - "afxanimationcontroller/CAnimationPoint"
+f1_keywords: ['CAnimationPoint', 'AFXANIMATIONCONTROLLER/CAnimationPoint', 'AFXANIMATIONCONTROLLER/CAnimationPoint::CAnimationPoint', 'AFXANIMATIONCONTROLLER/CAnimationPoint::AddTransition', 'AFXANIMATIONCONTROLLER/CAnimationPoint::GetDefaultValue', 'AFXANIMATIONCONTROLLER/CAnimationPoint::GetValue', 'AFXANIMATIONCONTROLLER/CAnimationPoint::GetX', 'AFXANIMATIONCONTROLLER/CAnimationPoint::GetY', 'AFXANIMATIONCONTROLLER/CAnimationPoint::SetDefaultValue', 'AFXANIMATIONCONTROLLER/CAnimationPoint::GetAnimationVariableList', 'AFXANIMATIONCONTROLLER/CAnimationPoint::m_xValue', 'AFXANIMATIONCONTROLLER/CAnimationPoint::m_yValue']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

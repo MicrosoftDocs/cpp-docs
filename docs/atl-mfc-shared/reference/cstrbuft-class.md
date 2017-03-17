@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CStrBufT<TCharType>"
-  - "ATL.CStrBufT"
-  - "CStrBufT"
-  - "ATL::CStrBufT"
-  - "ATL.CStrBufT<TCharType>"
+f1_keywords: ['CStrBufT', 'ATLSIMPSTR/ATL::CStrBufT', 'ATLSIMPSTR/ATL::CStrBufT::CStrBufT', 'ATLSIMPSTR/ATL::CStrBufT::SetLength', 'ATLSIMPSTR/ATL::CStrBufT::AUTO_LENGTH', 'ATLSIMPSTR/ATL::CStrBufT::SET_LENGTH']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

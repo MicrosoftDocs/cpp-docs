@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMiniFrameWnd"
+f1_keywords: ['CMiniFrameWnd', 'AFXWIN/CMiniFrameWnd', 'AFXWIN/CMiniFrameWnd::CMiniFrameWnd', 'AFXWIN/CMiniFrameWnd::Create', 'AFXWIN/CMiniFrameWnd::CreateEx']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::operation_timed_out"
+f1_keywords: ['operation_timed_out', 'CONCRT/concurrency::operation_timed_out', 'CONCRT/concurrency::operation_timed_out::operation_timed_out']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,7 +48,7 @@ class operation_timed_out : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[operation_timed_out Constructor](#ctor)|Overloaded. Constructs an `operation_timed_out` object.|  
+|[operation_timed_out](#ctor)|Overloaded. Constructs an `operation_timed_out` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  

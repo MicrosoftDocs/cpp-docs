@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMDIChildWnd"
+f1_keywords: ['CMDIChildWnd', 'AFXWIN/CMDIChildWnd', 'AFXWIN/CMDIChildWnd::CMDIChildWnd', 'AFXWIN/CMDIChildWnd::Create', 'AFXWIN/CMDIChildWnd::GetMDIFrame', 'AFXWIN/CMDIChildWnd::MDIActivate', 'AFXWIN/CMDIChildWnd::MDIDestroy', 'AFXWIN/CMDIChildWnd::MDIMaximize', 'AFXWIN/CMDIChildWnd::MDIRestore', 'AFXWIN/CMDIChildWnd::SetHandles']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

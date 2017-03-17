@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CClientDC"
+f1_keywords: ['CClientDC', 'AFXWIN/CClientDC', 'AFXWIN/CClientDC::CClientDC', 'AFXWIN/CClientDC::m_hWnd']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

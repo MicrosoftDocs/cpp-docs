@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ppl/concurrency::simple_partitioner"
+f1_keywords: ['simple_partitioner', 'PPL/concurrency::simple_partitioner', 'PPL/concurrency::simple_partitioner::simple_partitioner']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,7 +48,7 @@ class simple_partitioner;
   
 |Name|Description|  
 |----------|-----------------|  
-|[simple_partitioner Constructor](#ctor)|Constructs a `simple_partitioner` object.|  
+|[simple_partitioner](#ctor)|Constructs a `simple_partitioner` object.|  
 |[~simple_partitioner Destructor](#dtor)|Destroys a `simple_partitioner` object.|  
   
 ## Inheritance Hierarchy  

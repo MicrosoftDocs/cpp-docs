@@ -8,8 +8,8 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCDragFrameImpl"
+f1_keywords:
+  = "CMFCDragFrameImpl"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCWindowsManagerDialog"
+f1_keywords: ['CMFCWindowsManagerDialog', 'AFXWINDOWSMANAGERDIALOG/CMFCWindowsManagerDialog', 'AFXWINDOWSMANAGERDIALOG/CMFCWindowsManagerDialog::CMFCWindowsManagerDialog']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

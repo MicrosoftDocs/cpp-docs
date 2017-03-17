@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CComApartment"
-  - "CComApartment"
-  - "ATL.CComApartment"
+f1_keywords: ['CComApartment', 'ATLBASE/ATL::CComApartment', 'ATLBASE/ATL::CComApartment::CComApartment', 'ATLBASE/ATL::CComApartment::Apartment', 'ATLBASE/ATL::CComApartment::GetLockCount', 'ATLBASE/ATL::CComApartment::Lock', 'ATLBASE/ATL::CComApartment::Unlock', 'ATLBASE/ATL::CComApartment::m_dwThreadID', 'ATLBASE/ATL::CComApartment::m_hThread', 'ATLBASE/ATL::CComApartment::m_nLockCnt']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

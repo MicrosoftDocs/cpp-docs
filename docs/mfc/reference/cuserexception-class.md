@@ -8,8 +8,8 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CUserException"
+f1_keywords:
+- "CUserException"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

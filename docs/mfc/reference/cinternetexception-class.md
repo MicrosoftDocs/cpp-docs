@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CInternetException"
+f1_keywords: ['CInternetException', 'AFXINET/CInternetException', 'AFXINET/CInternetException::CInternetException', 'AFXINET/CInternetException::m_dwContext', 'AFXINET/CInternetException::m_dwError']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

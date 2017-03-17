@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CComClassFactoryAutoThread"
-  - "ATL.CComClassFactoryAutoThread"
-  - "CComClassFactoryAutoThread"
+f1_keywords: ['CComClassFactoryAutoThread', 'ATLCOM/ATL::CComClassFactoryAutoThread', 'ATLCOM/ATL::CComClassFactoryAutoThread::CreateInstance', 'ATLCOM/ATL::CComClassFactoryAutoThread::LockServer']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSplitterWndEx"
+f1_keywords: ['CSplitterWndEx', 'AFXSPLITTERWNDEX/CSplitterWndEx', 'AFXSPLITTERWNDEX/CSplitterWndEx::OnDrawSplitter']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

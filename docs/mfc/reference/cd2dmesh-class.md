@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxrendertarget/CD2DMesh"
-  - "CD2DMesh"
+f1_keywords: ['CD2DMesh', 'AFXRENDERTARGET/CD2DMesh', 'AFXRENDERTARGET/CD2DMesh::CD2DMesh', 'AFXRENDERTARGET/CD2DMesh::Attach', 'AFXRENDERTARGET/CD2DMesh::Create', 'AFXRENDERTARGET/CD2DMesh::Destroy', 'AFXRENDERTARGET/CD2DMesh::Detach', 'AFXRENDERTARGET/CD2DMesh::Get', 'AFXRENDERTARGET/CD2DMesh::IsValid', 'AFXRENDERTARGET/CD2DMesh::Open', 'AFXRENDERTARGET/CD2DMesh::m_pMesh']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

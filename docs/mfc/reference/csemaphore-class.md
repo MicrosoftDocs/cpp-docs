@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSemaphore"
+f1_keywords: ['CSemaphore', 'AFXMT/CSemaphore', 'AFXMT/CSemaphore::CSemaphore']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

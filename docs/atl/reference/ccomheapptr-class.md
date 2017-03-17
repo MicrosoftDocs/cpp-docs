@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CComHeapPtr"
-  - "ATL.CComHeapPtr<T>"
-  - "ATL::CComHeapPtr<T>"
-  - "CComHeapPtr"
-  - "ATL.CComHeapPtr"
+f1_keywords: ['CComHeapPtr', 'ATLBASE/ATL::CComHeapPtr', 'ATLBASE/ATL::CComHeapPtr::CComHeapPtr']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

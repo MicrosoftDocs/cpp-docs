@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComHeap"
-  - "ATL.CComHeap"
-  - "ATL::CComHeap"
+f1_keywords: ['CComHeap', 'ATLCOMMEM/ATL::CComHeap', 'ATLCOMMEM/ATL::CComHeap::Allocate', 'ATLCOMMEM/ATL::CComHeap::Free', 'ATLCOMMEM/ATL::CComHeap::GetSize', 'ATLCOMMEM/ATL::CComHeap::Reallocate']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

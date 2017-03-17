@@ -8,6 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+f1_keywords: ['sampler', 'AMP_GRAPHICS/sampler', 'AMP_GRAPHICS/concurrency::sampler::graphics::sampler', 'AMP_GRAPHICS/concurrency::sampler::graphics::get_address_mode', 'AMP_GRAPHICS/concurrency::sampler::graphics::get_border_color', 'AMP_GRAPHICS/concurrency::sampler::graphics::get_filter_mode', 'AMP_GRAPHICS/concurrency::sampler::graphics::address_mode', 'AMP_GRAPHICS/concurrency::sampler::graphics::border_color', 'AMP_GRAPHICS/concurrency::sampler::graphics::filter_mode']
 dev_langs: 
   - "C++"
 ms.assetid: 9a6a9807-497d-402d-b092-8c4d86275b80
@@ -51,23 +52,23 @@ class sampler;
   
 |Name|Description|  
 |----------|-----------------|  
-|[get_address_mode Method](#get_address_mode)|Returns the `address_mode` that’s associated with the sampler object.|  
-|[get_border_color Method](#get_border_color)|Returns the border color that’s associated with the sampler object.|  
-|[get_filter_mode Method](#get_filter_mode)|Returns the `filter_mode` that’s associated with the sampler object.|  
+|[get_address_mode](#get_address_mode)|Returns the `address_mode` that’s associated with the sampler object.|  
+|[get_border_color](#get_border_color)|Returns the border color that’s associated with the sampler object.|  
+|[get_filter_mode](#get_filter_mode)|Returns the `filter_mode` that’s associated with the sampler object.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator= Operator](#operator_eq)|Overloaded. Assignment operator.|  
+|[operator=](#operator_eq)|Overloaded. Assignment operator.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[address_mode Data Member](#address_mode)|Gets the address mode of the `sampler` object.|  
-|[border_color Data Member](#border_color)|Gets the border color of the `sampler` object.|  
-|[filter_mode Data Member](#filter_mode)|Gets the filter mode of the `sampler` object.|  
+|[address_mode](#address_mode)|Gets the address mode of the `sampler` object.|  
+|[border_color](#border_color)|Gets the border color of the `sampler` object.|  
+|[filter_mode](#filter_mode)|Gets the filter mode of the `sampler` object.|  
   
 ## Inheritance Hierarchy  
  `sampler`  

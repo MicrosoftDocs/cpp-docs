@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IDataObjectImpl"
+f1_keywords: ['IDataObjectImpl', 'ATLCTL/ATL::IDataObjectImpl', 'ATLCTL/ATL::IDataObjectImpl::DAdvise', 'ATLCTL/ATL::IDataObjectImpl::DUnadvise', 'ATLCTL/ATL::IDataObjectImpl::EnumDAdvise', 'ATLCTL/ATL::IDataObjectImpl::EnumFormatEtc', 'ATLCTL/ATL::IDataObjectImpl::FireDataChange', 'ATLCTL/ATL::IDataObjectImpl::GetCanonicalFormatEtc', 'ATLCTL/ATL::IDataObjectImpl::GetData', 'ATLCTL/ATL::IDataObjectImpl::GetDataHere', 'ATLCTL/ATL::IDataObjectImpl::QueryGetData', 'ATLCTL/ATL::IDataObjectImpl::SetData']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxanimationcontroller/CAnimationSize"
-  - "CAnimationSize"
+f1_keywords: ['CAnimationSize', 'AFXANIMATIONCONTROLLER/CAnimationSize', 'AFXANIMATIONCONTROLLER/CAnimationSize::CAnimationSize', 'AFXANIMATIONCONTROLLER/CAnimationSize::AddTransition', 'AFXANIMATIONCONTROLLER/CAnimationSize::GetCX', 'AFXANIMATIONCONTROLLER/CAnimationSize::GetCY', 'AFXANIMATIONCONTROLLER/CAnimationSize::GetDefaultValue', 'AFXANIMATIONCONTROLLER/CAnimationSize::GetValue', 'AFXANIMATIONCONTROLLER/CAnimationSize::SetDefaultValue', 'AFXANIMATIONCONTROLLER/CAnimationSize::GetAnimationVariableList', 'AFXANIMATIONCONTROLLER/CAnimationSize::m_cxValue', 'AFXANIMATIONCONTROLLER/CAnimationSize::m_cyValue']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

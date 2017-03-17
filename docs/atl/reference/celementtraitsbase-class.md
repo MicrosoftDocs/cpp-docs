@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CElementTraitsBase"
-  - "ATL::CElementTraitsBase"
-  - "ATL.CElementTraitsBase<T>"
-  - "ATL::CElementTraitsBase<T>"
-  - "ATL.CElementTraitsBase"
+f1_keywords: ['CElementTraitsBase', 'ATLCOLL/ATL::CElementTraitsBase', 'ATLCOLL/ATL::CElementTraitsBase::INARGTYPE', 'ATLCOLL/ATL::CElementTraitsBase::OUTARGTYPE', 'ATLCOLL/ATL::CElementTraitsBase::CopyElements', 'ATLCOLL/ATL::CElementTraitsBase::RelocateElements']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

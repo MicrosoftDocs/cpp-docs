@@ -85,7 +85,7 @@ translation.priority.ht:
 ## END Microsoft Specific  
   
 ## Requirements  
- `Header:` comdef.h  
+ **Header:** comdef.h  
   
  `Lib:` comsuppw.lib or comsuppwd.lib (see [/Zc:wchar_t (wchar_t Is Native Type)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) for more information)  
   

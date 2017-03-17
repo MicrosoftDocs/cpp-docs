@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxvisualmanagerwindows7/CMFCVisualManagerWindows7"
-  - "CMFCVisualManagerWindows7"
+f1_keywords: ['CMFCVisualManagerWindows7', 'AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7', 'AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7::CMFCVisualManagerWindows7', 'AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7::GetRibbonEditBackgroundColor', 'AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7::OnFillMenuImageRect']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

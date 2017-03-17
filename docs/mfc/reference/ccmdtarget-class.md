@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CCmdTarget"
+f1_keywords: ['CCmdTarget', 'AFXWIN/CCmdTarget', 'AFXWIN/CCmdTarget::CCmdTarget', 'AFXWIN/CCmdTarget::BeginWaitCursor', 'AFXWIN/CCmdTarget::DoOleVerb', 'AFXWIN/CCmdTarget::EnableAutomation', 'AFXWIN/CCmdTarget::EnableConnections', 'AFXWIN/CCmdTarget::EnableTypeLib', 'AFXWIN/CCmdTarget::EndWaitCursor', 'AFXWIN/CCmdTarget::EnumOleVerbs', 'AFXWIN/CCmdTarget::FromIDispatch', 'AFXWIN/CCmdTarget::GetDispatchIID', 'AFXWIN/CCmdTarget::GetIDispatch', 'AFXWIN/CCmdTarget::GetTypeInfoCount', 'AFXWIN/CCmdTarget::GetTypeInfoOfGuid', 'AFXWIN/CCmdTarget::GetTypeLib', 'AFXWIN/CCmdTarget::GetTypeLibCache', 'AFXWIN/CCmdTarget::IsInvokeAllowed', 'AFXWIN/CCmdTarget::IsResultExpected', 'AFXWIN/CCmdTarget::OnCmdMsg', 'AFXWIN/CCmdTarget::OnFinalRelease', 'AFXWIN/CCmdTarget::RestoreWaitCursor']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

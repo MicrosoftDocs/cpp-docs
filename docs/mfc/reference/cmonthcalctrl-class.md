@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMonthCalCtrl"
+f1_keywords: ['CMonthCalCtrl', 'AFXDTCTL/CMonthCalCtrl', 'AFXDTCTL/CMonthCalCtrl::CMonthCalCtrl', 'AFXDTCTL/CMonthCalCtrl::Create', 'AFXDTCTL/CMonthCalCtrl::GetCalendarBorder', 'AFXDTCTL/CMonthCalCtrl::GetCalendarCount', 'AFXDTCTL/CMonthCalCtrl::GetCalendarGridInfo', 'AFXDTCTL/CMonthCalCtrl::GetCalID', 'AFXDTCTL/CMonthCalCtrl::GetColor', 'AFXDTCTL/CMonthCalCtrl::GetCurrentView', 'AFXDTCTL/CMonthCalCtrl::GetCurSel', 'AFXDTCTL/CMonthCalCtrl::GetFirstDayOfWeek', 'AFXDTCTL/CMonthCalCtrl::GetMaxSelCount', 'AFXDTCTL/CMonthCalCtrl::GetMaxTodayWidth', 'AFXDTCTL/CMonthCalCtrl::GetMinReqRect', 'AFXDTCTL/CMonthCalCtrl::GetMonthDelta', 'AFXDTCTL/CMonthCalCtrl::GetMonthRange', 'AFXDTCTL/CMonthCalCtrl::GetRange', 'AFXDTCTL/CMonthCalCtrl::GetSelRange', 'AFXDTCTL/CMonthCalCtrl::GetToday', 'AFXDTCTL/CMonthCalCtrl::HitTest', 'AFXDTCTL/CMonthCalCtrl::IsCenturyView', 'AFXDTCTL/CMonthCalCtrl::IsDecadeView', 'AFXDTCTL/CMonthCalCtrl::IsMonthView', 'AFXDTCTL/CMonthCalCtrl::IsYearView', 'AFXDTCTL/CMonthCalCtrl::SetCalendarBorder', 'AFXDTCTL/CMonthCalCtrl::SetCalendarBorderDefault', 'AFXDTCTL/CMonthCalCtrl::SetCalID', 'AFXDTCTL/CMonthCalCtrl::SetCenturyView', 'AFXDTCTL/CMonthCalCtrl::SetColor', 'AFXDTCTL/CMonthCalCtrl::SetCurrentView', 'AFXDTCTL/CMonthCalCtrl::SetCurSel', 'AFXDTCTL/CMonthCalCtrl::SetDayState', 'AFXDTCTL/CMonthCalCtrl::SetDecadeView', 'AFXDTCTL/CMonthCalCtrl::SetFirstDayOfWeek', 'AFXDTCTL/CMonthCalCtrl::SetMaxSelCount', 'AFXDTCTL/CMonthCalCtrl::SetMonthDelta', 'AFXDTCTL/CMonthCalCtrl::SetMonthView', 'AFXDTCTL/CMonthCalCtrl::SetRange', 'AFXDTCTL/CMonthCalCtrl::SetSelRange', 'AFXDTCTL/CMonthCalCtrl::SetToday', 'AFXDTCTL/CMonthCalCtrl::SetYearView', 'AFXDTCTL/CMonthCalCtrl::SizeMinReq', 'AFXDTCTL/CMonthCalCtrl::SizeRectToMin']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

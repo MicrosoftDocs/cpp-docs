@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CSimpleArray"
-  - "ATL::CSimpleArray"
-  - "CSimpleArray"
+f1_keywords: ['CSimpleArray', 'ATLSIMPCOLL/ATL::CSimpleArray', 'ATLSIMPCOLL/ATL::CSimpleArray::CSimpleArray', 'ATLSIMPCOLL/ATL::CSimpleArray::Add', 'ATLSIMPCOLL/ATL::CSimpleArray::Find', 'ATLSIMPCOLL/ATL::CSimpleArray::GetData', 'ATLSIMPCOLL/ATL::CSimpleArray::GetSize', 'ATLSIMPCOLL/ATL::CSimpleArray::Remove', 'ATLSIMPCOLL/ATL::CSimpleArray::RemoveAll', 'ATLSIMPCOLL/ATL::CSimpleArray::RemoveAt', 'ATLSIMPCOLL/ATL::CSimpleArray::SetAtIndex']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

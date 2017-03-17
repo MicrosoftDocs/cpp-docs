@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "amp_short_vectors/Concurrency::graphics::norm"
+f1_keywords: ['norm', 'AMP_SHORT_VECTORS/norm', 'AMP_SHORT_VECTORS/Concurrency::graphics::norm Constructor']
 dev_langs: 
   - "C++"
 ms.assetid: 73002f3d-c25e-4119-bcd3-4c46c9b6abf1
@@ -54,15 +53,15 @@ class norm;
   
 |Name|Description|  
 |----------|-----------------|  
-|norm::operator- Operator||  
-|norm::operator-- Operator||  
-|norm::operator float Operator|Conversion operator. Convert the norm number to a floating point value.|  
-|norm::operator*= Operator||  
-|norm::operator/= Operator||  
-|norm::operator++ Operator||  
-|norm::operator+= Operator||  
-|norm::operator= Operator||  
-|norm::operator-= Operator||  
+|norm::operator-||  
+|norm::operator--||  
+|norm::operator float|Conversion operator. Convert the norm number to a floating point value.|  
+|norm::operator*=||  
+|norm::operator/=||  
+|norm::operator++||  
+|norm::operator+=||  
+|norm::operator=||  
+|norm::operator-=||  
   
 ## Inheritance Hierarchy  
  `norm`  

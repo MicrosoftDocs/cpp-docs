@@ -8,14 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "GetThisClass"
-  - "CMFCRibbonSeparator::GetThisClass"
-  - "CMFCRibbonSeparator.CreateObject"
-  - "CMFCRibbonSeparator::CreateObject"
-  - "CMFCRibbonSeparator"
-  - "CreateObject"
-  - "CMFCRibbonSeparator.GetThisClass"
+f1_keywords: ['CMFCRibbonSeparator', 'AFXBASERIBBONELEMENT/CMFCRibbonSeparator', 'AFXBASERIBBONELEMENT/CMFCRibbonSeparator::CMFCRibbonSeparator', 'AFXBASERIBBONELEMENT/CMFCRibbonSeparator::AddToListBox', 'AFXBASERIBBONELEMENT/CMFCRibbonSeparator::CopyFrom', 'AFXBASERIBBONELEMENT/CMFCRibbonSeparator::GetRegularSize', 'AFXBASERIBBONELEMENT/CMFCRibbonSeparator::IsSeparator', 'AFXBASERIBBONELEMENT/CMFCRibbonSeparator::IsTabStop', 'AFXBASERIBBONELEMENT/CMFCRibbonSeparator::OnDraw', 'AFXBASERIBBONELEMENT/CMFCRibbonSeparator::OnDrawOnList']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

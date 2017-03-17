@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CWinFormsDialog"
+f1_keywords: ['CWinFormsDialog', 'AFXWINFORMS/CWinFormsDialog', 'AFXWINFORMS/CWinFormsDialog::CWinFormsDialog', 'AFXWINFORMS/CWinFormsDialog::GetControl', 'AFXWINFORMS/CWinFormsDialog::GetControlHandle', 'AFXWINFORMS/CWinFormsDialog::OnInitDialog']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

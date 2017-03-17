@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CCubicTransition"
-  - "afxanimationcontroller/CCubicTransition"
+f1_keywords: ['CCubicTransition', 'AFXANIMATIONCONTROLLER/CCubicTransition', 'AFXANIMATIONCONTROLLER/CCubicTransition::CCubicTransition', 'AFXANIMATIONCONTROLLER/CCubicTransition::Create', 'AFXANIMATIONCONTROLLER/CCubicTransition::m_dblFinalValue', 'AFXANIMATIONCONTROLLER/CCubicTransition::m_dblFinalVelocity', 'AFXANIMATIONCONTROLLER/CCubicTransition::m_duration']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

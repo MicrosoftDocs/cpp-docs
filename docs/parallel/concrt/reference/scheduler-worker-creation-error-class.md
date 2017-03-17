@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::scheduler_worker_creation_error"
+f1_keywords: ['scheduler_worker_creation_error', 'CONCRT/concurrency::scheduler_worker_creation_error', 'CONCRT/concurrency::scheduler_worker_creation_error::scheduler_worker_creation_error']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,7 +48,7 @@ class scheduler_worker_creation_error : public scheduler_resource_allocation_err
   
 |Name|Description|  
 |----------|-----------------|  
-|[scheduler_worker_creation_error Constructor](#ctor)|Overloaded. Constructs a `scheduler_worker_creation_error` object.|  
+|[scheduler_worker_creation_error](#ctor)|Overloaded. Constructs a `scheduler_worker_creation_error` object.|  
   
 ## Remarks  
  This exception is typically thrown when a call to the operating system to create execution contexts from within the Concurrency Runtime fails. Execution contexts are threads that execute tasks in the Concurrency Runtime. The error code which would normally be returned from a call to the Win32 method `GetLastError` is converted to a value of type `HRESULT` and can be retrieved using the base class method `get_error_code`.  

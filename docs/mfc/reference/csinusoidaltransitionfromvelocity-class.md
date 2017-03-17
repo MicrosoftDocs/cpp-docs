@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSinusoidalTransitionFromVelocity"
-  - "afxanimationcontroller/CSinusoidalTransitionFromVelocity"
+f1_keywords: ['CSinusoidalTransitionFromVelocity', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::CSinusoidalTransitionFromVelocity', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::Create', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::m_duration', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::m_period']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CD2DGradientBrush"
-  - "afxrendertarget/CD2DGradientBrush"
+f1_keywords: ['CD2DGradientBrush', 'AFXRENDERTARGET/CD2DGradientBrush', 'AFXRENDERTARGET/CD2DGradientBrush::CD2DGradientBrush', 'AFXRENDERTARGET/CD2DGradientBrush::Destroy', 'AFXRENDERTARGET/CD2DGradientBrush::m_arGradientStops', 'AFXRENDERTARGET/CD2DGradientBrush::m_colorInterpolationGamma', 'AFXRENDERTARGET/CD2DGradientBrush::m_extendMode', 'AFXRENDERTARGET/CD2DGradientBrush::m_pGradientStops']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDaoFieldExchange"
+f1_keywords: ['CDaoFieldExchange', 'AFXDAO/CDaoFieldExchange', 'AFXDAO/CDaoFieldExchange::IsValidOperation', 'AFXDAO/CDaoFieldExchange::SetFieldType', 'AFXDAO/CDaoFieldExchange::m_nOperation', 'AFXDAO/CDaoFieldExchange::m_prs']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

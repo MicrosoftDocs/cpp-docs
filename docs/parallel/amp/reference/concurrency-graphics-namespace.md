@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "amp_graphics/Concurrency::graphics"
-  - "amp_short_vectors/Concurrency::graphics"
+f1_keywords: ['AMP_GRAPHICS/Concurrency']
 dev_langs: 
   - "C++"
 ms.assetid: 4529d3b1-d7da-4ffb-82bf-080915e0f23e
@@ -96,8 +94,8 @@ namespace graphics;
   
 |Name|Description|  
 |----------|-----------------|  
-|[copy Function](concurrency-graphics-namespace-functions.md#copy)|Overloaded. Copies the contents of the source texture into the destination host buffer.|  
-|[copy_async Function](concurrency-graphics-namespace-functions.md#copy_async)|Overloaded. Asynchronously copies the contents of the source texture into the destination host buffer.|  
+|[copy](concurrency-graphics-namespace-functions.md#copy)|Overloaded. Copies the contents of the source texture into the destination host buffer.|  
+|[copy_async](concurrency-graphics-namespace-functions.md#copy_async)|Overloaded. Asynchronously copies the contents of the source texture into the destination host buffer.|  
   
 ## Requirements  
  **Header:** amp_graphics.h  

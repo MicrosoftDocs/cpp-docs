@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CColorDialog"
+f1_keywords: ['CColorDialog', 'AFXDLGS/CColorDialog', 'AFXDLGS/CColorDialog::CColorDialog', 'AFXDLGS/CColorDialog::DoModal', 'AFXDLGS/CColorDialog::GetColor', 'AFXDLGS/CColorDialog::GetSavedCustomColors', 'AFXDLGS/CColorDialog::SetCurrentColor', 'AFXDLGS/CColorDialog::OnColorOK', 'AFXDLGS/CColorDialog::m_cc']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

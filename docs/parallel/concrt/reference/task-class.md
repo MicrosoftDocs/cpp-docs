@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ppltasks/concurrency::task"
+f1_keywords: ['task', 'PPLTASKS/concurrency::task', 'PPLTASKS/concurrency::task::task', 'PPLTASKS/concurrency::task::get', 'PPLTASKS/concurrency::task::is_apartment_aware', 'PPLTASKS/concurrency::task::is_done', 'PPLTASKS/concurrency::task::scheduler', 'PPLTASKS/concurrency::task::then', 'PPLTASKS/concurrency::task::wait']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -68,26 +67,26 @@ class task;
   
 |Name|Description|  
 |----------|-----------------|  
-|[task Constructor](#ctor)|Overloaded. Constructs a `task` object.|  
+|[task](#ctor)|Overloaded. Constructs a `task` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[get Method](#get)|Overloaded. Returns the result this task produced. If the task is not in a terminal state, a call to `get` will wait for the task to finish. This method does not return a value when called on a task with a `result_type` of `void`.|  
-|[is_apartment_aware Method](#is_apartment_aware)|Determines whether the task unwraps a Windows Runtime `IAsyncInfo` interface or is descended from such a task.|  
-|[is_done Method](#is_done)|Determines if the task is completed.|  
-|[scheduler Method](#scheduler)|Returns the scheduler for this task|  
-|[then Method](#then)|Overloaded. Adds a continuation task to this task.|  
-|[wait Method](#wait)|Waits for this task to reach a terminal state. It is possible for `wait` to execute the task inline, if all of the tasks dependencies are satisfied, and it has not already been picked up for execution by a background worker.|  
+|[get](#get)|Overloaded. Returns the result this task produced. If the task is not in a terminal state, a call to `get` will wait for the task to finish. This method does not return a value when called on a task with a `result_type` of `void`.|  
+|[is_apartment_aware](#is_apartment_aware)|Determines whether the task unwraps a Windows Runtime `IAsyncInfo` interface or is descended from such a task.|  
+|[is_done](#is_done)|Determines if the task is completed.|  
+|[scheduler](#scheduler)|Returns the scheduler for this task|  
+|[then](#then)|Overloaded. Adds a continuation task to this task.|  
+|[wait](#wait)|Waits for this task to reach a terminal state. It is possible for `wait` to execute the task inline, if all of the tasks dependencies are satisfied, and it has not already been picked up for execution by a background worker.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator!= Operator](#operator_neq)|Overloaded. Determines whether two `task` objects represent different internal tasks.|  
-|[operator= Operator](#operator_eq)|Overloaded. Replaces the contents of one `task` object with another.|  
-|[operator== Operator](#operator_eq_eq)|Overloaded. Determines whether two `task` objects represent the same internal task.|  
+|[operator!=](#operator_neq)|Overloaded. Determines whether two `task` objects represent different internal tasks.|  
+|[operator=](#operator_eq)|Overloaded. Replaces the contents of one `task` object with another.|  
+|[operator==](#operator_eq_eq)|Overloaded. Determines whether two `task` objects represent the same internal task.|  
   
 ## Remarks  
  For more information, see [Task Parallelism](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).  

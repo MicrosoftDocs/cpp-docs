@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CAtlWinModule"
-  - "ATL.CAtlWinModule"
-  - "CAtlWinModule"
+f1_keywords: ['CAtlWinModule', 'ATLBASE/ATL::CAtlWinModule', 'ATLBASE/ATL::CAtlWinModule::CAtlWinModule', 'ATLBASE/ATL::CAtlWinModule::AddCreateWndData', 'ATLBASE/ATL::CAtlWinModule::ExtractCreateWndData']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

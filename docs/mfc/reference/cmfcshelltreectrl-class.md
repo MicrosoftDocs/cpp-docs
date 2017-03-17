@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCShellTreeCtrl"
+f1_keywords: ['CMFCShellTreeCtrl', 'AFXSHELLTREECTRL/CMFCShellTreeCtrl', 'AFXSHELLTREECTRL/CMFCShellTreeCtrl::EnableShellContextMenu', 'AFXSHELLTREECTRL/CMFCShellTreeCtrl::GetFlags', 'AFXSHELLTREECTRL/CMFCShellTreeCtrl::GetItemPath', 'AFXSHELLTREECTRL/CMFCShellTreeCtrl::GetRelatedList', 'AFXSHELLTREECTRL/CMFCShellTreeCtrl::OnChildNotify', 'AFXSHELLTREECTRL/CMFCShellTreeCtrl::OnGetItemIcon', 'AFXSHELLTREECTRL/CMFCShellTreeCtrl::OnGetItemText', 'AFXSHELLTREECTRL/CMFCShellTreeCtrl::Refresh', 'AFXSHELLTREECTRL/CMFCShellTreeCtrl::SelectPath', 'AFXSHELLTREECTRL/CMFCShellTreeCtrl::SetFlags', 'AFXSHELLTREECTRL/CMFCShellTreeCtrl::SetRelatedList']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

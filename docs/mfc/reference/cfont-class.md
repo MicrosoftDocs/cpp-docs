@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CFont"
+f1_keywords: ['CFont', 'AFXWIN/CFont', 'AFXWIN/CFont::CFont', 'AFXWIN/CFont::CreateFont', 'AFXWIN/CFont::CreateFontIndirect', 'AFXWIN/CFont::CreatePointFont', 'AFXWIN/CFont::CreatePointFontIndirect', 'AFXWIN/CFont::FromHandle', 'AFXWIN/CFont::GetLogFont']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

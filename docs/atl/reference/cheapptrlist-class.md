@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CHeapPtrList"
-  - "CHeapPtrList"
-  - "ATL.CHeapPtrList"
+f1_keywords: ['CHeapPtrList', 'ATLCOLL/ATL::CHeapPtrList', 'ATLCOLL/ATL::CHeapPtrList::CHeapPtrList']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

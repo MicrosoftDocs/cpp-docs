@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "agents/concurrency::network_link_registry"
+f1_keywords: ['network_link_registry', 'AGENTS/concurrency::network_link_registry', 'AGENTS/concurrency::network_link_registry::add', 'AGENTS/concurrency::network_link_registry::begin', 'AGENTS/concurrency::network_link_registry::contains', 'AGENTS/concurrency::network_link_registry::count', 'AGENTS/concurrency::network_link_registry::remove']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -63,11 +62,11 @@ class network_link_registry;
   
 |Name|Description|  
 |----------|-----------------|  
-|[add Method](#add)|When overridden in a derived class, adds a link to the `network_link_registry` object.|  
-|[begin Method](#begin)|When overridden in a derived class, returns an iterator to the first element in the `network_link_registry` object.|  
-|[contains Method](#contains)|When overridden in a derived class, searches the `network_link_registry` object for a specified block.|  
-|[count Method](#count)|When overridden in a derived class, returns the number of items in the `network_link_registry` object.|  
-|[remove Method](#remove)|When overridden in a derived class, removes a specified block from the `network_link_registry` object.|  
+|[add](#add)|When overridden in a derived class, adds a link to the `network_link_registry` object.|  
+|[begin](#begin)|When overridden in a derived class, returns an iterator to the first element in the `network_link_registry` object.|  
+|[contains](#contains)|When overridden in a derived class, searches the `network_link_registry` object for a specified block.|  
+|[count](#count)|When overridden in a derived class, returns the number of items in the `network_link_registry` object.|  
+|[remove](#remove)|When overridden in a derived class, removes a specified block from the `network_link_registry` object.|  
   
 ## Remarks  
  The `network link registry` is not safe for concurrent access.  

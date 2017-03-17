@@ -5,7 +5,13 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "article"  
+f1_keywords:  
+ - "amp_graphics/Concurrency::fast_math::copy_async"
+ - "amp_graphics/Concurrency::fast_math::copy"
+
+dev_langs: 
+  - "C++"  
 ms.assetid: ace01cd5-29d3-4356-930e-c81a61c5f934
 caps.latest.revision: 9
 author: "mikeblome"
@@ -15,7 +21,7 @@ manager: "ghogen"
 # Concurrency::graphics namespace functions
 |||  
 |-|-|  
-|[copy Function (Concurrency::graphics Namespace)](#copy)|[copy_async Function (Concurrency::graphics Namespace)](#copy_async)|  
+|[copy](#copy)|[copy_async](#copy_async)|  
   
 ##  <a name="copy"></a>  copy Function (Concurrency::graphics Namespace)  
  Copies a source texture into a destination buffer, or copies a source buffer into a destination buffer. The general form of this function is `copy(src, dest)`.  
@@ -304,6 +310,11 @@ concurrency::completion_future copy_async(_Src_type& _Src,
   
  `last`  
  An ending iterator into the source container.  
+
+## Requirements  
+ **Header:** amp_graphics.h  
   
+ **Namespace:** Concurrency::graphics 
+
 ## See Also  
  [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

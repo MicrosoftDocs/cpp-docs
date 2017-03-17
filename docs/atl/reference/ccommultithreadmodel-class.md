@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComMultiThreadModel"
-  - "ATL.CComMultiThreadModel"
-  - "ATL::CComMultiThreadModel"
+f1_keywords: ['CComMultiThreadModel', 'ATLBASE/ATL::CComMultiThreadModel', 'ATLBASE/ATL::CComMultiThreadModel::AutoCriticalSection', 'ATLBASE/ATL::CComMultiThreadModel::CriticalSection', 'ATLBASE/ATL::CComMultiThreadModel::ThreadModelNoCS', 'ATLBASE/ATL::CComMultiThreadModel::Decrement', 'ATLBASE/ATL::CComMultiThreadModel::Increment']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,8 +8,8 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleControlModule"
+f1_keywords:
+- "OleControlModule"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

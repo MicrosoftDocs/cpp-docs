@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CStringData"
+f1_keywords: ['CStringData', 'ATLSIMPSTR/ATL::CStringData', 'ATLSIMPSTR/ATL::AddRef', 'ATLSIMPSTR/ATL::data', 'ATLSIMPSTR/ATL::IsLocked', 'ATLSIMPSTR/ATL::IsShared', 'ATLSIMPSTR/ATL::Lock', 'ATLSIMPSTR/ATL::Release', 'ATLSIMPSTR/ATL::Unlock', 'ATLSIMPSTR/ATL::nAllocLength', 'ATLSIMPSTR/ATL::nDataLength', 'ATLSIMPSTR/ATL::nRefs', 'ATLSIMPSTR/ATL::pStringMgr']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

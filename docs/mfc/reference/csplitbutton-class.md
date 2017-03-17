@@ -8,6 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+f1_keywords: ['CSplitButton', 'AFXCMN/CSplitButton', 'AFXCMN/CSplitButton::CSplitButton', 'AFXCMN/CSplitButton::Create', 'AFXCMN/CSplitButton::SetDropDownMenu', 'AFXCMN/CSplitButton::OnDropDown']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

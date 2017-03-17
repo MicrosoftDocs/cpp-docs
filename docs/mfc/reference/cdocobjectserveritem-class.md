@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDocObjectServerItem"
+f1_keywords: ['CDocObjectServerItem', 'AFXDOCOB/CDocObjectServerItem', 'AFXDOCOB/CDocObjectServerItem::CDocObjectServerItem', 'AFXDOCOB/CDocObjectServerItem::GetDocument', 'AFXDOCOB/CDocObjectServerItem::OnHide', 'AFXDOCOB/CDocObjectServerItem::OnShow']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

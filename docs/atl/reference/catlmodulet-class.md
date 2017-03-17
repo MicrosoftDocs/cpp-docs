@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CAtlModuleT<T>"
-  - "ATL.CAtlModuleT"
-  - "ATL.CAtlModuleT<T>"
-  - "ATL::CAtlModuleT"
-  - "CAtlModuleT"
+f1_keywords: ['CAtlModuleT', 'ATLBASE/ATL::CAtlModuleT', 'ATLBASE/ATL::CAtlModuleT::CAtlModuleT', 'ATLBASE/ATL::CAtlModuleT::InitLibId', 'ATLBASE/ATL::CAtlModuleT::RegisterAppId', 'ATLBASE/ATL::CAtlModuleT::RegisterServer', 'ATLBASE/ATL::CAtlModuleT::UnregisterAppId', 'ATLBASE/ATL::CAtlModuleT::UnregisterServer', 'ATLBASE/ATL::CAtlModuleT::UpdateRegistryAppId']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

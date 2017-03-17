@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CAtlException"
-  - "ATL::CAtlException"
-  - "ATL.CAtlException"
+f1_keywords: ['CAtlException', 'ATLEXCEPT/ATL::CAtlException', 'ATLEXCEPT/ATL::CAtlException::CAtlException', 'ATLEXCEPT/ATL::CAtlException::m_hr']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

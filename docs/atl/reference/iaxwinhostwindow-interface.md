@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IAxWinHostWindow"
+f1_keywords: ['IAxWinHostWindow', 'No header/ATL::IAxWinHostWindow', 'No header/ATL::AttachControl', 'No header/ATL::CreateControl', 'No header/ATL::CreateControlEx', 'No header/ATL::QueryControl', 'No header/ATL::SetExternalDispatch', 'No header/ATL::SetExternalUIHandler']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

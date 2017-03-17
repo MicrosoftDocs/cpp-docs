@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCRibbonCheckBox"
+f1_keywords: ['CMFCRibbonCheckBox', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::CMFCRibbonCheckBox', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::GetCompactSize', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::GetIntermediateSize', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::GetRegularSize', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::IsDrawTooltipImage', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::OnDraw', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::OnDrawMenuImage', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::OnDrawOnList', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::SetACCData']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

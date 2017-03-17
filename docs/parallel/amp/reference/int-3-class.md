@@ -127,62 +127,62 @@ class int_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|int_3::get_x Method||  
-|int_3::get_xy Method||  
-|int_3::get_xyz Method||  
-|int_3::get_xz Method||  
-|int_3::get_xzy Method||  
-|int_3::get_y Method||  
-|int_3::get_yx Method||  
-|int_3::get_yxz Method||  
-|int_3::get_yz Method||  
-|int_3::get_yzx Method||  
-|int_3::get_z Method||  
-|int_3::get_zx Method||  
-|int_3::get_zxy Method||  
-|int_3::get_zy Method||  
-|int_3::get_zyx Method||  
-|int_3::ref_b Method||  
-|int_3::ref_g Method||  
-|int_3::ref_r Method||  
-|int_3::ref_x Method||  
-|int_3::ref_y Method||  
-|int_3::ref_z Method||  
-|int_3::set_x Method||  
-|int_3::set_xy Method||  
-|int_3::set_xyz Method||  
-|int_3::set_xz Method||  
-|int_3::set_xzy Method||  
-|int_3::set_y Method||  
-|int_3::set_yx Method||  
-|int_3::set_yxz Method||  
-|int_3::set_yz Method||  
-|int_3::set_yzx Method||  
-|int_3::set_z Method||  
-|int_3::set_zx Method||  
-|int_3::set_zxy Method||  
-|int_3::set_zy Method||  
-|int_3::set_zyx Method||  
+|int_3::get_x||  
+|int_3::get_xy||  
+|int_3::get_xyz||  
+|int_3::get_xz||  
+|int_3::get_xzy||  
+|int_3::get_y||  
+|int_3::get_yx||  
+|int_3::get_yxz||  
+|int_3::get_yz||  
+|int_3::get_yzx||  
+|int_3::get_z||  
+|int_3::get_zx||  
+|int_3::get_zxy||  
+|int_3::get_zy||  
+|int_3::get_zyx||  
+|int_3::ref_b||  
+|int_3::ref_g||  
+|int_3::ref_r||  
+|int_3::ref_x||  
+|int_3::ref_y||  
+|int_3::ref_z||  
+|int_3::set_x||  
+|int_3::set_xy||  
+|int_3::set_xyz||  
+|int_3::set_xz||  
+|int_3::set_xzy||  
+|int_3::set_y||  
+|int_3::set_yx||  
+|int_3::set_yxz||  
+|int_3::set_yz||  
+|int_3::set_yzx||  
+|int_3::set_z||  
+|int_3::set_zx||  
+|int_3::set_zxy||  
+|int_3::set_zy||  
+|int_3::set_zyx||  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|int_3::operator- Operator||  
-|int_3::operator-- Operator||  
-|int_3::operator%= Operator||  
-|int_3::operator&= Operator||  
-|int_3::operator*= Operator||  
-|int_3::operator/= Operator||  
-|int_3::operator^= Operator||  
-|int_3::operator&#124;= Operator||  
-|int_3::operator~ Operator||  
-|int_3::operator++ Operator||  
-|int_3::operator+= Operator||  
-|int_3::operator<\<= Operator||  
-|int_3::operator= Operator||  
-|int_3::operator-= Operator||  
-|int_3::operator>>= Operator||  
+|int_3::operator-||  
+|int_3::operator--||  
+|int_3::operator%=||  
+|int_3::operator&=||  
+|int_3::operator*=||  
+|int_3::operator/=||  
+|int_3::operator^=||  
+|int_3::operator&#124;=||  
+|int_3::operator~||  
+|int_3::operator++||  
+|int_3::operator+=||  
+|int_3::operator<\<=||  
+|int_3::operator=||  
+|int_3::operator-=||  
+|int_3::operator>>=||  
   
 ### Public Constants  
   
@@ -194,36 +194,36 @@ class int_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|int_3::b Data Member||  
-|int_3::bg Data Member||  
-|int_3::bgr Data Member||  
-|int_3::br Data Member||  
-|int_3::brg Data Member||  
-|int_3::g Data Member||  
-|int_3::gb Data Member||  
-|int_3::gbr Data Member||  
-|int_3::gr Data Member||  
-|int_3::grb Data Member||  
-|int_3::r Data Member||  
-|int_3::rb Data Member||  
-|int_3::rbg Data Member||  
-|int_3::rg Data Member||  
-|int_3::rgb Data Member||  
-|int_3::x Data Member||  
-|int_3::xy Data Member||  
-|int_3::xyz Data Member||  
-|int_3::xz Data Member||  
-|int_3::xzy Data Member||  
-|int_3::y Data Member||  
-|int_3::yx Data Member||  
-|int_3::yxz Data Member||  
-|int_3::yz Data Member||  
-|int_3::yzx Data Member||  
-|int_3::z Data Member||  
-|int_3::zx Data Member||  
-|int_3::zxy Data Member||  
-|int_3::zy Data Member||  
-|int_3::zyx Data Member||  
+|int_3::b||  
+|int_3::bg||  
+|int_3::bgr||  
+|int_3::br||  
+|int_3::brg||  
+|int_3::g||  
+|int_3::gb||  
+|int_3::gbr||  
+|int_3::gr||  
+|int_3::grb||  
+|int_3::r||  
+|int_3::rb||  
+|int_3::rbg||  
+|int_3::rg||  
+|int_3::rgb||  
+|int_3::x||  
+|int_3::xy||  
+|int_3::xyz||  
+|int_3::xz||  
+|int_3::xzy||  
+|int_3::y||  
+|int_3::yx||  
+|int_3::yxz||  
+|int_3::yz||  
+|int_3::yzx||  
+|int_3::z||  
+|int_3::zx||  
+|int_3::zxy||  
+|int_3::zy||  
+|int_3::zyx||  
   
 ## Inheritance Hierarchy  
  `int_3`  

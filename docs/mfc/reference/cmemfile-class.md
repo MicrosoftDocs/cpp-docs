@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMemFile"
+f1_keywords: ['CMemFile', 'AFX/CMemFile', 'AFX/CMemFile::CMemFile', 'AFX/CMemFile::Attach', 'AFX/CMemFile::Detach', 'AFX/CMemFile::Alloc', 'AFX/CMemFile::Free', 'AFX/CMemFile::GrowFile', 'AFX/CMemFile::Memcpy', 'AFX/CMemFile::Realloc']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

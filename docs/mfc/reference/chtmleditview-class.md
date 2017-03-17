@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CHtmlEditView"
+f1_keywords: ['CHtmlEditView', 'AFXHTML/CHtmlEditView', 'AFXHTML/CHtmlEditView::CHtmlEditView', 'AFXHTML/CHtmlEditView::Create', 'AFXHTML/CHtmlEditView::GetDHtmlDocument', 'AFXHTML/CHtmlEditView::GetStartDocument']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

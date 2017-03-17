@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CListView"
+f1_keywords: ['CListView', 'AFXCVIEW/CListView', 'AFXCVIEW/CListView::CListView', 'AFXCVIEW/CListView::GetListCtrl', 'AFXCVIEW/CListView::RemoveImageList']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

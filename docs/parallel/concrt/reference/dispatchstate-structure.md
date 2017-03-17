@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrtrm/concurrency::DispatchState"
+f1_keywords: ['DispatchState', 'CONCRTRM/concurrency::DispatchState', 'CONCRTRM/concurrency::DispatchState::DispatchState::DispatchState', 'CONCRTRM/concurrency::DispatchState::DispatchState::m_dispatchStateSize', 'CONCRTRM/concurrency::DispatchState::DispatchState::m_fIsPreviousContextAsynchronouslyBlocked', 'CONCRTRM/concurrency::DispatchState::DispatchState::m_reserved']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,15 +48,15 @@ struct DispatchState;
   
 |Name|Description|  
 |----------|-----------------|  
-|[DispatchState::DispatchState Constructor](#ctor)|Constructs a new `DispatchState` object.|  
+|[DispatchState::DispatchState](#ctor)|Constructs a new `DispatchState` object.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[DispatchState::m_dispatchStateSize Data Member](#m_dispatchstatesize)|Size of this structure, which is used for versioning.|  
-|[DispatchState::m_fIsPreviousContextAsynchronouslyBlocked Data Member](#m_fispreviouscontextasynchronouslyblocked)|Tells whether this context has entered the `Dispatch` method because the previous context asynchronously blocked. This is used only on the UMS scheduling context, and is set to the value `0` for all other execution contexts.|  
-|[DispatchState::m_reserved Data Member](#m_reserved)|Bits reserved for future information passing.|  
+|[DispatchState::m_dispatchStateSize](#m_dispatchstatesize)|Size of this structure, which is used for versioning.|  
+|[DispatchState::m_fIsPreviousContextAsynchronouslyBlocked](#m_fispreviouscontextasynchronouslyblocked)|Tells whether this context has entered the `Dispatch` method because the previous context asynchronously blocked. This is used only on the UMS scheduling context, and is set to the value `0` for all other execution contexts.|  
+|[DispatchState::m_reserved](#m_reserved)|Bits reserved for future information passing.|  
   
 ## Inheritance Hierarchy  
  `DispatchState`  

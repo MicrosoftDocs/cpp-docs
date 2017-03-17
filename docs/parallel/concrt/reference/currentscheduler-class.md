@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::CurrentScheduler"
+f1_keywords: ['CurrentScheduler', 'CONCRT/concurrency::CurrentScheduler', 'CONCRT/concurrency::CurrentScheduler::Create', 'CONCRT/concurrency::CurrentScheduler::CreateScheduleGroup', 'CONCRT/concurrency::CurrentScheduler::Detach', 'CONCRT/concurrency::CurrentScheduler::Get', 'CONCRT/concurrency::CurrentScheduler::GetNumberOfVirtualProcessors', 'CONCRT/concurrency::CurrentScheduler::GetPolicy', 'CONCRT/concurrency::CurrentScheduler::Id', 'CONCRT/concurrency::CurrentScheduler::IsAvailableLocation', 'CONCRT/concurrency::CurrentScheduler::RegisterShutdownEvent', 'CONCRT/concurrency::CurrentScheduler::ScheduleTask']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,16 +48,16 @@ class CurrentScheduler;
   
 |Name|Description|  
 |----------|-----------------|  
-|[Create Method](#create)|Creates a new scheduler whose behavior is described by the `_Policy` parameter and attaches it to the calling context. The newly created scheduler will become the current scheduler for the calling context.|  
-|[CreateScheduleGroup Method](#createschedulegroup)|Overloaded. Creates a new schedule group within the scheduler associated with the calling context. The version that takes the parameter `_Placement` causes tasks within the newly created schedule group to be biased towards executing at the location specified by that parameter.|  
-|[Detach Method](#detach)|Detaches the current scheduler from the calling context and restores the previously attached scheduler as the current scheduler, if one exists. After this method returns, the calling context is then managed by the scheduler that was previously attached to the context using either the `CurrentScheduler::Create` or `Scheduler::Attach` method.|  
-|[Get Method](#get)|Returns a pointer to the scheduler associated with the calling context, also referred to as the current scheduler.|  
-|[GetNumberOfVirtualProcessors Method](#getnumberofvirtualprocessors)|Returns the current number of virtual processors for the scheduler associated with the calling context.|  
-|[GetPolicy Method](#getpolicy)|Returns a copy of the policy that the current scheduler was created with.|  
-|[Id Method](#id)|Returns a unique identifier for the current scheduler.|  
-|[IsAvailableLocation Method](#isavailablelocation)|Determines whether a given location is available on the current scheduler.|  
-|[RegisterShutdownEvent Method](#registershutdownevent)|Causes the Windows event handle passed in the `_ShutdownEvent` parameter to be signaled when the scheduler associated with the current context shuts down and destroys itself. At the time the event is signaled, all work that had been scheduled to the scheduler is complete. Multiple shutdown events can be registered through this method.|  
-|[ScheduleTask Method](#scheduletask)|Overloaded. Schedules a light-weight task within the scheduler associated with the calling context. The light-weight task will be placed in a schedule group determined by the runtime. The version that takes the parameter `_Placement` causes the task to be biased towards executing at the specified location.|  
+|[Create](#create)|Creates a new scheduler whose behavior is described by the `_Policy` parameter and attaches it to the calling context. The newly created scheduler will become the current scheduler for the calling context.|  
+|[CreateScheduleGroup](#createschedulegroup)|Overloaded. Creates a new schedule group within the scheduler associated with the calling context. The version that takes the parameter `_Placement` causes tasks within the newly created schedule group to be biased towards executing at the location specified by that parameter.|  
+|[Detach](#detach)|Detaches the current scheduler from the calling context and restores the previously attached scheduler as the current scheduler, if one exists. After this method returns, the calling context is then managed by the scheduler that was previously attached to the context using either the `CurrentScheduler::Create` or `Scheduler::Attach` method.|  
+|[Get](#get)|Returns a pointer to the scheduler associated with the calling context, also referred to as the current scheduler.|  
+|[GetNumberOfVirtualProcessors](#getnumberofvirtualprocessors)|Returns the current number of virtual processors for the scheduler associated with the calling context.|  
+|[GetPolicy](#getpolicy)|Returns a copy of the policy that the current scheduler was created with.|  
+|[Id](#id)|Returns a unique identifier for the current scheduler.|  
+|[IsAvailableLocation](#isavailablelocation)|Determines whether a given location is available on the current scheduler.|  
+|[RegisterShutdownEvent](#registershutdownevent)|Causes the Windows event handle passed in the `_ShutdownEvent` parameter to be signaled when the scheduler associated with the current context shuts down and destroys itself. At the time the event is signaled, all work that had been scheduled to the scheduler is complete. Multiple shutdown events can be registered through this method.|  
+|[ScheduleTask](#scheduletask)|Overloaded. Schedules a light-weight task within the scheduler associated with the calling context. The light-weight task will be placed in a schedule group determined by the runtime. The version that takes the parameter `_Placement` causes the task to be biased towards executing at the specified location.|  
   
 ## Remarks  
  If there is no scheduler (see [Scheduler](scheduler-class.md)) associated with the calling context, many methods within the `CurrentScheduler` class will result in attachment of the process' default scheduler. This may also imply that the process' default scheduler is created during such a call.  
@@ -255,7 +254,7 @@ static void __cdecl ScheduleTask(
 ## See Also  
  [concurrency Namespace](concurrency-namespace.md)   
  [Scheduler Class](scheduler-class.md)   
- [PolicyElementKey Enumeration](concurrency-namespace-enums.md)   
+ [PolicyElementKey](concurrency-namespace-enums.md)   
  [Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)
 
 

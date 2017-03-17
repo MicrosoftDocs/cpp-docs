@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CFileTimeSpan"
-  - "ATL.CFileTimeSpan"
-  - "ATL::CFileTimeSpan"
+f1_keywords: ['CFileTimeSpan', 'ATLTIME/ATL::CFileTimeSpan', 'ATLTIME/ATL::CFileTimeSpan::CFileTimeSpan', 'ATLTIME/ATL::CFileTimeSpan::GetTimeSpan', 'ATLTIME/ATL::CFileTimeSpan::SetTimeSpan']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

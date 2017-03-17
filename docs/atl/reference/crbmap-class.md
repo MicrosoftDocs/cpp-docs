@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CRBMap"
-  - "CRBMap"
-  - "ATL::CRBMap"
+f1_keywords: ['CRBMap', 'ATLCOLL/ATL::CRBMap', 'ATLCOLL/ATL::CRBMap::CRBMap', 'ATLCOLL/ATL::CRBMap::Lookup', 'ATLCOLL/ATL::CRBMap::RemoveKey', 'ATLCOLL/ATL::CRBMap::SetAt']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
