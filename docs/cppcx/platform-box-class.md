@@ -32,10 +32,17 @@ ref class Box abstract;
  **Header:** vccorlib.h  
   
  **Namespace:** Platform
- 
-## Box::Box Constructor
-Creates a `Box` that can encapsulate a value of the specified type.  
-  
+|Member|Description|  
+|------------|-----------------|
+|[Box Constructor](#ctor)|Creates a `Box` that can encapsulate a value of the specified type.|
+|[operator Box&lt;const T&gt;^](#box-const-t)|Enables boxing conversions from a `const` value class `T` or `enum` class `T` to `Box<T>`.|
+|[operator Box&lt;const volatile T&gt;^](#box-const-volatile-t)|Enables boxing conversions from a `const volatile` value class `T` or `enum` type `T` to `Box<T>`. |
+|[operator Box&lt;T&gt;^](#box-t)|Enables boxing conversions from a value class `T` to `Box<T>`.|
+|[operator Box&lt;volatile T&gt;^](#box-volatile-t)|Enables boxing conversions from a `volatile` value class `T` or `enum` type `T` to `Box<T>`.|
+|[Box::operator T](#t)|Enables boxing conversions from a value class `T` or `enum` class `T` to `Box<T>`.| 
+## <a name="ctor"></a> Box::Box Constructor
+Creates a `Box` that can encapsulate a value of the specified type.|
+|[Value property](#value)|Returns the value that is encapsulated in the `Box` object.|  
 ### Syntax  
   
 ```cpp  
@@ -47,7 +54,7 @@ Box(T valueArg);
  The type of value to be boxed—for example, `int`, `bool`, `float64`, `DateTime`.  
   
 
-## Box::operator Box&lt;const T&gt;^ Operator
+## <a name="box-const-t"></a> Box::operator Box&lt;const T&gt;^ Operator
 Enables boxing conversions from a `const` value class `T` or `enum` class `T` to `Box<T>`.  
   
 ### Syntax  
@@ -61,14 +68,9 @@ operator Box<const T>^(const T valueType);
  Any value class, value struct, or enum type. Includes the built-in types in the [default namespace](../cppcx/default-namespace.md).  
   
 ### Return Value  
- A `Platform::Box<T>``^` instance that represents the original value boxed in a ref class.  
+ A `Platform::Box<T>^` instance that represents the original value boxed in a ref class.  
   
-
-
-
-
----
-## Box::operator Box&lt;const volatile T&gt;^ Operator
+## <a name="box-const-volatile-t"></a> Box::operator Box&lt;const volatile T&gt;^ Operator
 Enables boxing conversions from a `const volatile` value class `T` or `enum` type `T` to `Box<T>`.  
   
 ### Syntax  
@@ -82,14 +84,9 @@ operator Box<const volatile T>^(const volatile T valueType);
  Any enum type, value class, or value struct. Includes the built-in types in the [default namespace](../cppcx/default-namespace.md).  
   
 ### Return Value  
- A `Platform::Box<T>``^` instance that represents the original value boxed in a ref class.  
+ A `Platform::Box<T>^` instance that represents the original value boxed in a ref class.  
   
-
-
-
-
----
-## Box::operator Box&lt;T&gt;^ Operator
+## <a name="box-t"></a> Box::operator Box&lt;T&gt;^ Operator
 Enables boxing conversions from a value class `T` to `Box<T>`.  
   
 ### Syntax  
@@ -103,14 +100,9 @@ operator Box<const T>^(const T valueType);
  Any enum type, value class, or value struct. Includes the built-in types in the [default namespace](../cppcx/default-namespace.md).  
   
 ### Return Value  
- A `Platform::Box<T>``^` instance that represents the original value boxed in a ref class.  
+ A `Platform::Box<T>^` instance that represents the original value boxed in a ref class.  
   
-
-
-
-
----
-## Box::operator Box&lt;volatile T&gt;^ Operator
+## <a name="box-volatile-t"></a> Box::operator Box&lt;volatile T&gt;^ Operator
 Enables boxing conversions from a `volatile` value class `T` or `enum` type `T` to `Box<T>`.  
   
 ### Syntax  
@@ -124,14 +116,9 @@ operator Box<volatile T>^(volatile T valueType);
  Any enum type, value class, or value struct. Includes the built-in types in the [default namespace](../cppcx/default-namespace.md).  
   
 ### Return Value  
- A `Platform::Box<T>``^` instance that represents the original value boxed in a ref class.  
+ A `Platform::Box<T>^` instance that represents the original value boxed in a ref class.  
   
-
-
-
-
----
-## Box::operator T Operator
+## <a name="t"></a>  Box::operator T Operator
 Enables boxing conversions from a value class `T` or `enum` class `T` to `Box<T>`.  
   
 ### Syntax  
@@ -145,14 +132,10 @@ operator Box<T>^(T valueType);
  Any enum type, value class, or value struct. Includes the built-in types in the [default namespace](../cppcx/default-namespace.md).  
   
 ### Return Value  
- A `Platform::Box<T>``^` instance that represents the original value boxed in a ref class.  
+ A `Platform::Box<T>^` instance that represents the original value boxed in a ref class.  
   
 
-
-
-
----
-## Box::Value Property
+## <a name="value"></a> Box::Value Property
 Returns the value that is encapsulated in the `Box` object.  
   
 ### Syntax  
