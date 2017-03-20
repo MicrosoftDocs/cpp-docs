@@ -198,6 +198,7 @@ Since 2011 Microsoft has aligned on ODBC as the standard for native applications
                 <div class="card">
                     <div class="cardText">
                         <h3><a href="https://www.microsoft.com/download/details.aspx?id=53339" title="Microsoft® ODBC Driver 13.1 for SQL Server® - Windows Download Page">ODBC Driver 13.1 for SQL Server</a></h3>
+                        <p>The Microsoft ODBC Driver 13.1 for SQL Server is a single dynamic-link library (DLL) containing run-time support for applications using native-code APIs to connect to Microsoft SQL Server 2008, SQL Server 2008 R2, SQL Server 2012, SQL Server 2016, Analytics Platform System, Azure SQL Database and Azure SQL Data Warehouse. Download the driver here.</p>
                     </div>
                 </div>
             </div>
