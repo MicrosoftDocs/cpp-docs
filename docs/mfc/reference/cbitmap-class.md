@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CBitmap"
+f1_keywords: ['CBitmap', 'AFXWIN/CBitmap', 'AFXWIN/CBitmap::CBitmap', 'AFXWIN/CBitmap::CreateBitmap', 'AFXWIN/CBitmap::CreateBitmapIndirect', 'AFXWIN/CBitmap::CreateCompatibleBitmap', 'AFXWIN/CBitmap::CreateDiscardableBitmap', 'AFXWIN/CBitmap::FromHandle', 'AFXWIN/CBitmap::GetBitmap', 'AFXWIN/CBitmap::GetBitmapBits', 'AFXWIN/CBitmap::GetBitmapDimension', 'AFXWIN/CBitmap::LoadBitmap', 'AFXWIN/CBitmap::LoadMappedBitmap', 'AFXWIN/CBitmap::LoadOEMBitmap', 'AFXWIN/CBitmap::SetBitmapBits', 'AFXWIN/CBitmap::SetBitmapDimension']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

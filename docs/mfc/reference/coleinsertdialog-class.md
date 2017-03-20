@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleInsertDialog"
+f1_keywords: ['COleInsertDialog', 'AFXODLGS/COleInsertDialog', 'AFXODLGS/COleInsertDialog::COleInsertDialog', 'AFXODLGS/COleInsertDialog::CreateItem', 'AFXODLGS/COleInsertDialog::DoModal', 'AFXODLGS/COleInsertDialog::GetClassID', 'AFXODLGS/COleInsertDialog::GetDrawAspect', 'AFXODLGS/COleInsertDialog::GetIconicMetafile', 'AFXODLGS/COleInsertDialog::GetPathName', 'AFXODLGS/COleInsertDialog::GetSelectionType', 'AFXODLGS/COleInsertDialog::m_io']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

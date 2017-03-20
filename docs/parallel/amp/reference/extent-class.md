@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "amp/Concurrency::extent"
+f1_keywords: ['extent', 'AMP/extent', 'AMP/Concurrency::extent::extent', 'AMP/Concurrency::extent::contains', 'AMP/Concurrency::extent::size', 'AMP/Concurrency::extent::tile', 'AMP/Concurrency::extent::rank Constant']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -65,25 +64,25 @@ class extent;
   
 |Name|Description|  
 |----------|-----------------|  
-|[contains Method](#contains)|Verifies that the specified `extent` object has the specified rank.|  
-|[size Method](#size)|Returns the total linear size of the extent (in units of elements).|  
-|[tile Method](#tile)|Produces a `tiled_extent` object with the tile extents given by specified dimensions.|  
+|[contains](#contains)|Verifies that the specified `extent` object has the specified rank.|  
+|[size](#size)|Returns the total linear size of the extent (in units of elements).|  
+|[tile](#tile)|Produces a `tiled_extent` object with the tile extents given by specified dimensions.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator- Operator](#operator_min)|Returns a new `extent` object that's created by subtracting the `index` elements from the corresponding `extent` elements.|  
-|[operator-- Operator](#operator_min_min)|Decrements each element of the `extent` object.|  
-|[operator%= Operator](#operator_mod_eq)|Calculates the modulus (remainder) of each element in the `extent` object when that element is divided by a number.|  
-|[operator*= Operator](#operator_star_eq)|Multiplies each element of the `extent` object by a number.|  
-|[operator/= Operator](#operator_min_eq)|Divides each element of the `extent` object by a number.|  
+|[operator-](#operator_min)|Returns a new `extent` object that's created by subtracting the `index` elements from the corresponding `extent` elements.|  
+|[operator--](#operator_min_min)|Decrements each element of the `extent` object.|  
+|[operator%=](#operator_mod_eq)|Calculates the modulus (remainder) of each element in the `extent` object when that element is divided by a number.|  
+|[operator*=](#operator_star_eq)|Multiplies each element of the `extent` object by a number.|  
+|[operator/=](#operator_min_eq)|Divides each element of the `extent` object by a number.|  
 |[extent::operator\[\]](#operator_at)|Returns the element that's at the specified index.|  
-|[operator+ Operator](#operator_add)|Returns a new `extent` object that's created by adding the corresponding `index` and `extent` elements.|  
-|[operator++ Operator](#operator_add_add)|Increments each element of the `extent` object.|  
-|[operator+= Operator](#operator_add_eq)|Adds the specified number to each element of the `extent` object.|  
-|[operator= Operator](#operator_eq)|Copies the contents of another `extent` object into this one.|  
-|[operator-= Operator](#operator_min_eq)|Subtracts the specified number from each element of the `extent` object.|  
+|[operator+](#operator_add)|Returns a new `extent` object that's created by adding the corresponding `index` and `extent` elements.|  
+|[operator++](#operator_add_add)|Increments each element of the `extent` object.|  
+|[operator+=](#operator_add_eq)|Adds the specified number to each element of the `extent` object.|  
+|[operator=](#operator_eq)|Copies the contents of another `extent` object into this one.|  
+|[operator-=](#operator_min_eq)|Subtracts the specified number from each element of the `extent` object.|  
 
   
 ### Public Constants  

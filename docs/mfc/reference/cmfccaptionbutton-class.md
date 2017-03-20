@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCCaptionButton"
+f1_keywords: ['CMFCCaptionButton', 'AFXCAPTIONBUTTON/CMFCCaptionButton', 'AFXCAPTIONBUTTON/CMFCCaptionButton::CMFCCaptionButton', 'AFXCAPTIONBUTTON/CMFCCaptionButton::GetHit', 'AFXCAPTIONBUTTON/CMFCCaptionButton::GetIconID', 'AFXCAPTIONBUTTON/CMFCCaptionButton::GetRect', 'AFXCAPTIONBUTTON/CMFCCaptionButton::GetSize', 'AFXCAPTIONBUTTON/CMFCCaptionButton::IsMiniFrameButton', 'AFXCAPTIONBUTTON/CMFCCaptionButton::Move', 'AFXCAPTIONBUTTON/CMFCCaptionButton::OnDraw', 'AFXCAPTIONBUTTON/CMFCCaptionButton::SetMiniFrameButton']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

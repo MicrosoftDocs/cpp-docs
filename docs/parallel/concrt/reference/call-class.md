@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concurrency::call"
-  - "agents/concurrency::call"
+f1_keywords: ['call', 'AGENTS/concurrency::call', 'AGENTS/concurrency::call::call', 'AGENTS/concurrency::call::process_input_messages', 'AGENTS/concurrency::call::process_message', 'AGENTS/concurrency::call::propagate_message', 'AGENTS/concurrency::call::send_message', 'AGENTS/concurrency::call::supports_anonymous_source']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -58,18 +56,18 @@ class call : public target_block<multi_link_registry<ISource<T>>>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[call Constructor](#ctor)|Overloaded. Constructs a `call` messaging block.|  
+|[call](#ctor)|Overloaded. Constructs a `call` messaging block.|  
 |[~call Destructor](#dtor)|Destroys the `call` messaging block.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[process_input_messages Method](#process_input_messages)|Executes the call function on the input messages.|  
-|[process_message Method](#process_message)|Processes a message that was accepted by this `call` messaging block.|  
-|[propagate_message Method](#propagate_message)|Asynchronously passes a message from an `ISource` block to this `call` messaging block. It is invoked by the `propagate` method, when called by a source block.|  
-|[send_message Method](#send_message)|Synchronously passes a message from an `ISource` block to this `call` messaging block. It is invoked by the `send` method, when called by a source block.|  
-|[supports_anonymous_source Method](#supports_anonymous_source)|Overrides the `supports_anonymous_source` method to indicate that this block can accept messages offered to it by a source that is not linked. (Overrides [ITarget::supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|  
+|[process_input_messages](#process_input_messages)|Executes the call function on the input messages.|  
+|[process_message](#process_message)|Processes a message that was accepted by this `call` messaging block.|  
+|[propagate_message](#propagate_message)|Asynchronously passes a message from an `ISource` block to this `call` messaging block. It is invoked by the `propagate` method, when called by a source block.|  
+|[send_message](#send_message)|Synchronously passes a message from an `ISource` block to this `call` messaging block. It is invoked by the `send` method, when called by a source block.|  
+|[supports_anonymous_source](#supports_anonymous_source)|Overrides the `supports_anonymous_source` method to indicate that this block can accept messages offered to it by a source that is not linked. (Overrides [ITarget::supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|  
   
 ## Remarks  
  For more information, see [Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md).  

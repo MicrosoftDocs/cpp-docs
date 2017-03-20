@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ppl/concurrency::static_partitioner"
+f1_keywords: ['static_partitioner', 'PPL/concurrency::static_partitioner', 'PPL/concurrency::static_partitioner::static_partitioner']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,7 +48,7 @@ class static_partitioner;
   
 |Name|Description|  
 |----------|-----------------|  
-|[static_partitioner Constructor](#ctor)|Constructs a `static_partitioner` object.|  
+|[static_partitioner](#ctor)|Constructs a `static_partitioner` object.|  
 |[~static_partitioner Destructor](#dtor)|Destroys a `static_partitioner` object.|  
   
 ## Inheritance Hierarchy  

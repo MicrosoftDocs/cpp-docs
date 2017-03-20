@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CHandle"
-  - "ATL::CHandle"
-  - "CHandle"
+f1_keywords: ['CHandle', 'ATLBASE/ATL::CHandle', 'ATLBASE/ATL::CHandle::CHandle', 'ATLBASE/ATL::CHandle::Attach', 'ATLBASE/ATL::CHandle::Close', 'ATLBASE/ATL::CHandle::Detach', 'ATLBASE/ATL::CHandle::m_h']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

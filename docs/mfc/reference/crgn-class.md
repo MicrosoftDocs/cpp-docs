@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CRgn"
+f1_keywords: ['CRgn', 'AFXWIN/CRgn', 'AFXWIN/CRgn::CRgn', 'AFXWIN/CRgn::CombineRgn', 'AFXWIN/CRgn::CopyRgn', 'AFXWIN/CRgn::CreateEllipticRgn', 'AFXWIN/CRgn::CreateEllipticRgnIndirect', 'AFXWIN/CRgn::CreateFromData', 'AFXWIN/CRgn::CreateFromPath', 'AFXWIN/CRgn::CreatePolygonRgn', 'AFXWIN/CRgn::CreatePolyPolygonRgn', 'AFXWIN/CRgn::CreateRectRgn', 'AFXWIN/CRgn::CreateRectRgnIndirect', 'AFXWIN/CRgn::CreateRoundRectRgn', 'AFXWIN/CRgn::EqualRgn', 'AFXWIN/CRgn::FromHandle', 'AFXWIN/CRgn::GetRegionData', 'AFXWIN/CRgn::GetRgnBox', 'AFXWIN/CRgn::OffsetRgn', 'AFXWIN/CRgn::PtInRegion', 'AFXWIN/CRgn::RectInRegion', 'AFXWIN/CRgn::SetRectRgn']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

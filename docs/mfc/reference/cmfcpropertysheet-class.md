@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCPropertySheet"
+f1_keywords: ['CMFCPropertySheet', 'AFXPROPERTYSHEET/CMFCPropertySheet', 'AFXPROPERTYSHEET/CMFCPropertySheet::CMFCPropertySheet', 'AFXPROPERTYSHEET/CMFCPropertySheet::AddPage', 'AFXPROPERTYSHEET/CMFCPropertySheet::AddPageToTree', 'AFXPROPERTYSHEET/CMFCPropertySheet::AddTreeCategory', 'AFXPROPERTYSHEET/CMFCPropertySheet::EnablePageHeader', 'AFXPROPERTYSHEET/CMFCPropertySheet::GetHeaderHeight', 'AFXPROPERTYSHEET/CMFCPropertySheet::GetLook', 'AFXPROPERTYSHEET/CMFCPropertySheet::GetNavBarWidth', 'AFXPROPERTYSHEET/CMFCPropertySheet::GetTab', 'AFXPROPERTYSHEET/CMFCPropertySheet::InitNavigationControl', 'AFXPROPERTYSHEET/CMFCPropertySheet::OnActivatePage', 'AFXPROPERTYSHEET/CMFCPropertySheet::OnDrawPageHeader', 'AFXPROPERTYSHEET/CMFCPropertySheet::OnRemoveTreePage', 'AFXPROPERTYSHEET/CMFCPropertySheet::RemoveCategory', 'AFXPROPERTYSHEET/CMFCPropertySheet::RemovePage', 'AFXPROPERTYSHEET/CMFCPropertySheet::SetIconsList', 'AFXPROPERTYSHEET/CMFCPropertySheet::SetLook']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

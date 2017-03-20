@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IProvideClassInfo2"
-  - "ATL.IProvideClassInfo2Impl"
-  - "IProvideClassInfo2Impl"
-  - "ATL::IProvideClassInfo2Impl"
+f1_keywords: ['IProvideClassInfo2Impl', 'ATLCOM/ATL::IProvideClassInfo2Impl', 'ATLCOM/ATL::IProvideClassInfo2Impl::IProvideClassInfo2Impl', 'ATLCOM/ATL::IProvideClassInfo2Impl::GetClassInfo', 'ATLCOM/ATL::IProvideClassInfo2Impl::GetGUID', 'ATLCOM/ATL::IProvideClassInfo2Impl::_tih']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CComUnkArray"
-  - "ATL.CComUnkArray<nMaxSize>"
-  - "ATL::CComUnkArray<nMaxSize>"
-  - "ATL::CComUnkArray"
-  - "CComUnkArray"
+f1_keywords: ['CComUnkArray', 'ATLCOM/ATL::CComUnkArray', 'ATLCOM/ATL::CComUnkArray::CComUnkArray', 'ATLCOM/ATL::CComUnkArray::Add', 'ATLCOM/ATL::CComUnkArray::begin', 'ATLCOM/ATL::CComUnkArray::end', 'ATLCOM/ATL::CComUnkArray::GetCookie', 'ATLCOM/ATL::CComUnkArray::GetUnknown', 'ATLCOM/ATL::CComUnkArray::Remove']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleResizeBar"
+f1_keywords: ['COleResizeBar', 'AFXOLE/COleResizeBar', 'AFXOLE/COleResizeBar::COleResizeBar', 'AFXOLE/COleResizeBar::Create']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

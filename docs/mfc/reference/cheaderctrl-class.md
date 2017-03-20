@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CHeaderCtrl"
+f1_keywords: ['CHeaderCtrl', 'AFXCMN/CHeaderCtrl', 'AFXCMN/CHeaderCtrl::CHeaderCtrl', 'AFXCMN/CHeaderCtrl::ClearAllFilters', 'AFXCMN/CHeaderCtrl::ClearFilter', 'AFXCMN/CHeaderCtrl::Create', 'AFXCMN/CHeaderCtrl::CreateDragImage', 'AFXCMN/CHeaderCtrl::CreateEx', 'AFXCMN/CHeaderCtrl::DeleteItem', 'AFXCMN/CHeaderCtrl::DrawItem', 'AFXCMN/CHeaderCtrl::EditFilter', 'AFXCMN/CHeaderCtrl::GetBitmapMargin', 'AFXCMN/CHeaderCtrl::GetFocusedItem', 'AFXCMN/CHeaderCtrl::GetImageList', 'AFXCMN/CHeaderCtrl::GetItem', 'AFXCMN/CHeaderCtrl::GetItemCount', 'AFXCMN/CHeaderCtrl::GetItemDropDownRect', 'AFXCMN/CHeaderCtrl::GetItemRect', 'AFXCMN/CHeaderCtrl::GetOrderArray', 'AFXCMN/CHeaderCtrl::GetOverflowRect', 'AFXCMN/CHeaderCtrl::HitTest', 'AFXCMN/CHeaderCtrl::InsertItem', 'AFXCMN/CHeaderCtrl::Layout', 'AFXCMN/CHeaderCtrl::OrderToIndex', 'AFXCMN/CHeaderCtrl::SetBitmapMargin', 'AFXCMN/CHeaderCtrl::SetFilterChangeTimeout', 'AFXCMN/CHeaderCtrl::SetFocusedItem', 'AFXCMN/CHeaderCtrl::SetHotDivider', 'AFXCMN/CHeaderCtrl::SetImageList', 'AFXCMN/CHeaderCtrl::SetItem', 'AFXCMN/CHeaderCtrl::SetOrderArray']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

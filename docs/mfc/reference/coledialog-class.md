@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleDialog"
+f1_keywords: ['COleDialog', 'AFXODLGS/COleDialog', 'AFXODLGS/COleDialog::GetLastError']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

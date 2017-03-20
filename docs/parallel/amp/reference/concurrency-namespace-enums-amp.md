@@ -5,7 +5,10 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "article"  
+f1_keywords: ['amp/Concurrency::access_type', 'amp/Concurrency::queuing_mode']
+dev_langs: 
+  - "C++"  
 ms.assetid: 4c87457e-184f-4992-81ab-ca75e7d524ab
 caps.latest.revision: 8
 author: "mikeblome"

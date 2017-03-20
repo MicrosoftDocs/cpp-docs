@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxanimationcontroller/CReversalTransition"
-  - "CReversalTransition"
+f1_keywords: ['CReversalTransition', 'AFXANIMATIONCONTROLLER/CReversalTransition', 'AFXANIMATIONCONTROLLER/CReversalTransition::CReversalTransition', 'AFXANIMATIONCONTROLLER/CReversalTransition::Create', 'AFXANIMATIONCONTROLLER/CReversalTransition::m_duration']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

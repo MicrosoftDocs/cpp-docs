@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CComObjectNoLock"
-  - "ATL::CComObjectNoLock"
-  - "ATL.CComObjectNoLock<Base>"
-  - "CComObjectNoLock"
-  - "ATL::CComObjectNoLock<Base>"
+f1_keywords: ['CComObjectNoLock', 'ATLCOM/ATL::CComObjectNoLock', 'ATLCOM/ATL::CComObjectNoLock::CComObjectNoLock', 'ATLCOM/ATL::CComObjectNoLock::AddRef', 'ATLCOM/ATL::CComObjectNoLock::QueryInterface', 'ATLCOM/ATL::CComObjectNoLock::Release']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

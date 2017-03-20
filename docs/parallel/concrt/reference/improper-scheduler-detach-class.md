@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::improper_scheduler_detach"
+f1_keywords: ['improper_scheduler_detach', 'CONCRT/concurrency::improper_scheduler_detach', 'CONCRT/concurrency::improper_scheduler_detach::improper_scheduler_detach']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,7 +48,7 @@ class improper_scheduler_detach : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[improper_scheduler_detach Constructor](#ctor)|Overloaded. Constructs an `improper_scheduler_detach` object.|  
+|[improper_scheduler_detach](#ctor)|Overloaded. Constructs an `improper_scheduler_detach` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  

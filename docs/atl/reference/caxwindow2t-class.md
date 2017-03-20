@@ -8,13 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CAxWindow2T<TBase>"
-  - "ATL::CAxWindow2T"
-  - "CAxWindow2T"
-  - "ATL.CAxWindow2T<TBase>"
-  - "ATL.CAxWindow2T"
-  - "CAxWindow2"
+f1_keywords: ['CAxWindow2T', 'ATLWIN/ATL::CAxWindow2T', 'ATLWIN/ATL::CAxWindow2T::CAxWindow2T', 'ATLWIN/ATL::CAxWindow2T::Create', 'ATLWIN/ATL::CAxWindow2T::CreateControlLic', 'ATLWIN/ATL::CAxWindow2T::CreateControlLicEx', 'ATLWIN/ATL::CAxWindow2T::GetWndClassName']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

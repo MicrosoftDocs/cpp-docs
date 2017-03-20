@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleBusyDialog"
+f1_keywords: ['COleBusyDialog', 'AFXODLGS/COleBusyDialog', 'AFXODLGS/COleBusyDialog::COleBusyDialog', 'AFXODLGS/COleBusyDialog::DoModal', 'AFXODLGS/COleBusyDialog::GetSelectionType', 'AFXODLGS/COleBusyDialog::m_bz']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

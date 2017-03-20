@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "amprt/Concurrency::invalid_compute_domain"
+f1_keywords: ['invalid_compute_domain', 'AMPRT/invalid_compute_domain', 'AMPRT/Concurrency::invalid_compute_domain::invalid_compute_domain']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

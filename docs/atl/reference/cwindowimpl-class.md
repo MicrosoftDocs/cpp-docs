@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CWindowImpl"
-  - "ATL.CWindowImpl"
-  - "CWindowImpl"
+f1_keywords: ['CWindowImpl', 'ATLWIN/ATL::CWindowImpl', 'ATLWIN/ATL::CWindowImpl::Create', 'ATLWIN/ATL::DefWindowProc', 'ATLWIN/ATL::GetCurrentMessage', 'ATLWIN/ATL::GetWindowProc', 'ATLWIN/ATL::OnFinalMessage', 'ATLWIN/ATL::SubclassWindow', 'ATLWIN/ATL::UnsubclassWindow', 'ATLWIN/ATL::GetWndClassInfo', 'ATLWIN/ATL::WindowProc', 'ATLWIN/ATL::m_pfnSuperWindowProc']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CAcl"
-  - "ATL::CAcl"
-  - "ATLSECURITY/CAcl"
-  - "ATL.CAcl"
+f1_keywords: ['CAcl', 'ATLSECURITY/ATL::CAcl', 'ATLSECURITY/ATL::CAcl::CAccessMaskArray', 'ATLSECURITY/ATL::CAcl::CAceFlagArray', 'ATLSECURITY/ATL::CAcl::CAceTypeArray', 'ATLSECURITY/ATL::CAcl::CAcl', 'ATLSECURITY/ATL::CAcl::GetAceCount', 'ATLSECURITY/ATL::CAcl::GetAclEntries', 'ATLSECURITY/ATL::CAcl::GetAclEntry', 'ATLSECURITY/ATL::CAcl::GetLength', 'ATLSECURITY/ATL::CAcl::GetPACL', 'ATLSECURITY/ATL::CAcl::IsEmpty', 'ATLSECURITY/ATL::CAcl::IsNull', 'ATLSECURITY/ATL::CAcl::RemoveAce', 'ATLSECURITY/ATL::CAcl::RemoveAces', 'ATLSECURITY/ATL::CAcl::SetEmpty', 'ATLSECURITY/ATL::CAcl::SetNull']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

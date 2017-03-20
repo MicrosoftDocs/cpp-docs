@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComCompositeControl"
-  - "ATL::CComCompositeControl"
-  - "ATL.CComCompositeControl<T>"
-  - "ATL.CComCompositeControl"
-  - "ATL::CComCompositeControl<T>"
+f1_keywords: ['CComCompositeControl', 'ATLCTL/ATL::CComCompositeControl', 'ATLCTL/ATL::CComCompositeControl::CComCompositeControl', 'ATLCTL/ATL::CComCompositeControl::AdviseSinkMap', 'ATLCTL/ATL::CComCompositeControl::CalcExtent', 'ATLCTL/ATL::CComCompositeControl::Create', 'ATLCTL/ATL::CComCompositeControl::CreateControlWindow', 'ATLCTL/ATL::CComCompositeControl::SetBackgroundColorFromAmbient', 'ATLCTL/ATL::CComCompositeControl::m_hbrBackground', 'ATLCTL/ATL::CComCompositeControl::m_hWndFocus']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

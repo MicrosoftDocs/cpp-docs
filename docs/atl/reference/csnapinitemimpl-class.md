@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSnapInItemImpl"
-  - "ATL.CSnapInItemImpl"
-  - "ATL::CSnapInItemImpl"
+f1_keywords: ['CSnapInItemImpl', 'ATLSNAP/ATL::CSnapInItemImpl', 'ATLSNAP/ATL::CSnapInItemImpl::CSnapInItemImpl', 'ATLSNAP/ATL::CSnapInItemImpl::AddMenuItems', 'ATLSNAP/ATL::CSnapInItemImpl::Command', 'ATLSNAP/ATL::CSnapInItemImpl::CreatePropertyPages', 'ATLSNAP/ATL::CSnapInItemImpl::FillData', 'ATLSNAP/ATL::CSnapInItemImpl::GetResultPaneInfo', 'ATLSNAP/ATL::CSnapInItemImpl::GetResultViewType', 'ATLSNAP/ATL::CSnapInItemImpl::GetScopePaneInfo', 'ATLSNAP/ATL::CSnapInItemImpl::Notify', 'ATLSNAP/ATL::CSnapInItemImpl::QueryPagesFor', 'ATLSNAP/ATL::CSnapInItemImpl::SetMenuInsertionFlags', 'ATLSNAP/ATL::CSnapInItemImpl::SetToolbarButtonInfo', 'ATLSNAP/ATL::CSnapInItemImpl::UpdateMenuState', 'ATLSNAP/ATL::CSnapInItemImpl::UpdateToolbarButton', 'ATLSNAP/ATL::CSnapInItemImpl::m_bstrDisplayName', 'ATLSNAP/ATL::CSnapInItemImpl::m_resultDataItem', 'ATLSNAP/ATL::CSnapInItemImpl::m_scopeDataItem']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

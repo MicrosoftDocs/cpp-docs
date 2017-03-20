@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CTabbedPane"
+f1_keywords: ['CTabbedPane', 'AFXTABBEDPANE/CTabbedPane', 'AFXTABBEDPANE/CTabbedPane::DetachPane', 'AFXTABBEDPANE/CTabbedPane::EnableTabAutoColor', 'AFXTABBEDPANE/CTabbedPane::FloatTab', 'AFXTABBEDPANE/CTabbedPane::GetTabArea', 'AFXTABBEDPANE/CTabbedPane::GetTabWnd', 'AFXTABBEDPANE/CTabbedPane::HasAutoHideMode', 'AFXTABBEDPANE/CTabbedPane::IsTabLocationBottom', 'AFXTABBEDPANE/CTabbedPane::ResetTabs', 'AFXTABBEDPANE/CTabbedPane::SetTabAutoColors', 'AFXTABBEDPANE/CTabbedPane::m_bTabsAlwaysTop', 'AFXTABBEDPANE/CTabbedPane::m_pTabWndRTC']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

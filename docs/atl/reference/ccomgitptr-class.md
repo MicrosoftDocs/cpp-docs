@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CComGITPtr<T>"
-  - "CComGITPtr"
-  - "ATL.CComGITPtr"
-  - "ATL.CComGITPtr<T>"
-  - "ATL::CComGITPtr"
+f1_keywords: ['CComGITPtr', 'ATLBASE/ATL::CComGITPtr', 'ATLBASE/ATL::CComGITPtr::CComGITPtr', 'ATLBASE/ATL::CComGITPtr::Attach', 'ATLBASE/ATL::CComGITPtr::CopyTo', 'ATLBASE/ATL::CComGITPtr::Detach', 'ATLBASE/ATL::CComGITPtr::GetCookie', 'ATLBASE/ATL::CComGITPtr::Revoke', 'ATLBASE/ATL::CComGITPtr::m_dwCookie']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

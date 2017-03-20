@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CWindowDC"
+f1_keywords: ['CWindowDC', 'No header/CWindowDC', 'No header/CWindowDC::CWindowDC', 'No header/CWindowDC::m_hWnd']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

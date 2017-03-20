@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CConnectionPoint"
+f1_keywords: ['CConnectionPoint', 'AFXDISP/CConnectionPoint', 'AFXDISP/CConnectionPoint::CConnectionPoint', 'AFXDISP/CConnectionPoint::GetConnections', 'AFXDISP/CConnectionPoint::GetContainer', 'AFXDISP/CConnectionPoint::GetIID', 'AFXDISP/CConnectionPoint::GetMaxConnections', 'AFXDISP/CConnectionPoint::GetNextConnection', 'AFXDISP/CConnectionPoint::GetStartPosition', 'AFXDISP/CConnectionPoint::OnAdvise', 'AFXDISP/CConnectionPoint::QuerySinkInterface']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

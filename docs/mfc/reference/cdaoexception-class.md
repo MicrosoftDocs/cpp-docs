@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDaoException"
+f1_keywords: ['CDaoException', 'AFXDAO/CDaoException', 'AFXDAO/CDaoException::CDaoException', 'AFXDAO/CDaoException::GetErrorCount', 'AFXDAO/CDaoException::GetErrorInfo', 'AFXDAO/CDaoException::m_nAfxDaoError', 'AFXDAO/CDaoException::m_pErrorInfo', 'AFXDAO/CDaoException::m_scode']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

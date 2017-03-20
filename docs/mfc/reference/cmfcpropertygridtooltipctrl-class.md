@@ -8,14 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCPropertyGridToolTipCtrl::PreTranslateMessage"
-  - "~CMFCPropertyGridToolTipCtrl"
-  - "PreTranslateMessage"
-  - "CMFCPropertyGridToolTipCtrl.~CMFCPropertyGridToolTipCtrl"
-  - "CMFCPropertyGridToolTipCtrl"
-  - "CMFCPropertyGridToolTipCtrl.PreTranslateMessage"
-  - "CMFCPropertyGridToolTipCtrl::~CMFCPropertyGridToolTipCtrl"
+f1_keywords: ['CMFCPropertyGridToolTipCtrl', 'AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl', 'AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::CMFCPropertyGridToolTipCtrl', 'AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Create', 'AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Deactivate', 'AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::GetLastRect', 'AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Hide', 'AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::SetTextMargin', 'AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Track']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

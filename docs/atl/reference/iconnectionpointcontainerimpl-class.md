@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::IConnectionPointContainerImpl"
-  - "ATL.IConnectionPointContainerImpl"
-  - "ATL.IConnectionPointContainerImpl<T>"
-  - "IConnectionPointContainerImpl"
-  - "ATL::IConnectionPointContainerImpl<T>"
+f1_keywords: ['IConnectionPointContainerImpl', 'ATLCOM/ATL::IConnectionPointContainerImpl', 'ATLCOM/ATL::IConnectionPointContainerImpl::EnumConnectionPoints', 'ATLCOM/ATL::IConnectionPointContainerImpl::FindConnectionPoint']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

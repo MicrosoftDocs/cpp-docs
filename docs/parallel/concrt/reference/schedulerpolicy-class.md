@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::SchedulerPolicy"
-  - "concrtrm/concurrency::SchedulerPolicy"
+f1_keywords: ['SchedulerPolicy', 'concrt/concurrency::SchedulerPolicy', 'concrt/concurrency::SchedulerPolicy::SchedulerPolicy', 'concrt/concurrency::SchedulerPolicy::GetPolicyValue', 'concrt/concurrency::SchedulerPolicy::SetConcurrencyLimits', 'concrt/concurrency::SchedulerPolicy::SetPolicyValue']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -50,25 +48,25 @@ class SchedulerPolicy;
   
 |Name|Description|  
 |----------|-----------------|  
-|[SchedulerPolicy Constructor](#ctor)|Overloaded. Constructs a new scheduler policy and populates it with values for [policy keys](concurrency-namespace-enums.md) supported by Concurrency Runtime schedulers and the Resource Manager.|  
+|[SchedulerPolicy](#ctor)|Overloaded. Constructs a new scheduler policy and populates it with values for [policy keys](concurrency-namespace-enums.md) supported by Concurrency Runtime schedulers and the Resource Manager.|  
 |[~SchedulerPolicy Destructor](#dtor)|Destroys a scheduler policy.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[GetPolicyValue Method](#getpolicyvalue)|Retrieves the value of the policy key supplied as the `key` parameter.|  
-|[SetConcurrencyLimits Method](#setconcurrencylimits)|Simultaneously sets the `MinConcurrency` and `MaxConcurrency` policies on the `SchedulerPolicy` object.|  
-|[SetPolicyValue Method](#setpolicyvalue)|Sets the value of the policy key supplied as the `key` parameter and returns the old value.|  
+|[GetPolicyValue](#getpolicyvalue)|Retrieves the value of the policy key supplied as the `key` parameter.|  
+|[SetConcurrencyLimits](#setconcurrencylimits)|Simultaneously sets the `MinConcurrency` and `MaxConcurrency` policies on the `SchedulerPolicy` object.|  
+|[SetPolicyValue](#setpolicyvalue)|Sets the value of the policy key supplied as the `key` parameter and returns the old value.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator= Operator](#operator_eq)|Assigns the scheduler policy from another scheduler policy.|  
+|[operator=](#operator_eq)|Assigns the scheduler policy from another scheduler policy.|  
   
 ## Remarks  
- For more information about the policies which can be controlled using the `SchedulerPolicy` class, see [PolicyElementKey Enumeration](concurrency-namespace-enums.md).  
+ For more information about the policies which can be controlled using the `SchedulerPolicy` class, see [PolicyElementKey](concurrency-namespace-enums.md).  
   
 ## Inheritance Hierarchy  
  `SchedulerPolicy`  
@@ -202,7 +200,7 @@ unsigned int SetPolicyValue(
   
 ## See Also  
  [concurrency Namespace](concurrency-namespace.md)   
- [PolicyElementKey Enumeration](concurrency-namespace-enums.md)   
+ [PolicyElementKey](concurrency-namespace-enums.md)   
  [CurrentScheduler Class](currentscheduler-class.md)   
  [Scheduler Class](scheduler-class.md)   
  [Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)

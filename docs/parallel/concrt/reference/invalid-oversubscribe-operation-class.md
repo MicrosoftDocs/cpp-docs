@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::invalid_oversubscribe_operation"
+f1_keywords: ['invalid_oversubscribe_operation', 'CONCRT/concurrency::invalid_oversubscribe_operation', 'CONCRT/concurrency::invalid_oversubscribe_operation::invalid_oversubscribe_operation']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,7 +48,7 @@ class invalid_oversubscribe_operation : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[invalid_oversubscribe_operation Constructor](#ctor)|Overloaded. Constructs an `invalid_oversubscribe_operation` object.|  
+|[invalid_oversubscribe_operation](#ctor)|Overloaded. Constructs an `invalid_oversubscribe_operation` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  

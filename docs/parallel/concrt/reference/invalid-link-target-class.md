@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::invalid_link_target"
+f1_keywords: ['invalid_link_target', 'CONCRT/concurrency::invalid_link_target', 'CONCRT/concurrency::invalid_link_target::invalid_link_target']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,7 +48,7 @@ class invalid_link_target : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[invalid_link_target Constructor](#ctor)|Overloaded. Constructs an `invalid_link_target` object.|  
+|[invalid_link_target](#ctor)|Overloaded. Constructs an `invalid_link_target` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  

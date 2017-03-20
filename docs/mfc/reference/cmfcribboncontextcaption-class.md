@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCRibbonContextCaption"
+f1_keywords: ['CMFCRibbonContextCaption', 'AFXRIBBONBAR/CMFCRibbonContextCaption', 'AFXRIBBONBAR/CMFCRibbonContextCaption::GetColor', 'AFXRIBBONBAR/CMFCRibbonContextCaption::GetRightTabX']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

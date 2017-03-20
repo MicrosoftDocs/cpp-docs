@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IAxWinHostWindowLic"
+f1_keywords: ['IAxWinHostWindowLic', 'No header/ATL::IAxWinHostWindowLic', 'No header/ATL::CreateControlLic', 'No header/ATL::CreateControlLicEx']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

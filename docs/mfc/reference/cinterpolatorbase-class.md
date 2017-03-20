@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxanimationcontroller/CInterpolatorBase"
-  - "CInterpolatorBase"
+f1_keywords: ['CInterpolatorBase', 'AFXANIMATIONCONTROLLER/CInterpolatorBase', 'AFXANIMATIONCONTROLLER/CInterpolatorBase::CInterpolatorBase', 'AFXANIMATIONCONTROLLER/CInterpolatorBase::CreateInstance', 'AFXANIMATIONCONTROLLER/CInterpolatorBase::GetDependencies', 'AFXANIMATIONCONTROLLER/CInterpolatorBase::GetDuration', 'AFXANIMATIONCONTROLLER/CInterpolatorBase::GetFinalValue', 'AFXANIMATIONCONTROLLER/CInterpolatorBase::InterpolateValue', 'AFXANIMATIONCONTROLLER/CInterpolatorBase::InterpolateVelocity', 'AFXANIMATIONCONTROLLER/CInterpolatorBase::SetCustomInterpolator', 'AFXANIMATIONCONTROLLER/CInterpolatorBase::SetDuration', 'AFXANIMATIONCONTROLLER/CInterpolatorBase::SetInitialValueAndVelocity']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

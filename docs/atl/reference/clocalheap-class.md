@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CLocalHeap"
-  - "ATL::CLocalHeap"
-  - "CLocalHeap"
+f1_keywords: ['CLocalHeap', 'ATLMEM/ATL::CLocalHeap', 'ATLMEM/ATL::CLocalHeap::Allocate', 'ATLMEM/ATL::CLocalHeap::Free', 'ATLMEM/ATL::CLocalHeap::GetSize', 'ATLMEM/ATL::CLocalHeap::Reallocate']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

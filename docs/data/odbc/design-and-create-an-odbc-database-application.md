@@ -37,8 +37,6 @@ These topics help you design and set up your ODBC database application.
   
 ## In This Section  
   
--   [Where Can I Find Microsoft Knowledge Base Articles on Database Topics?](../../data/where-can-i-find-microsoft-knowledge-base-articles-on-database-topics-q.md)  
-  
 -   [ODBC and MFC](../../data/odbc/odbc-and-mfc.md)  
   
 -   [Use MFC ODBC Recordsets](../../data/odbc/use-mfc-odbc-recordsets.md)  

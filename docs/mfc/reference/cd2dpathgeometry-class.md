@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxrendertarget/CD2DPathGeometry"
-  - "CD2DPathGeometry"
+f1_keywords: ['CD2DPathGeometry', 'AFXRENDERTARGET/CD2DPathGeometry', 'AFXRENDERTARGET/CD2DPathGeometry::CD2DPathGeometry', 'AFXRENDERTARGET/CD2DPathGeometry::Attach', 'AFXRENDERTARGET/CD2DPathGeometry::Create', 'AFXRENDERTARGET/CD2DPathGeometry::Destroy', 'AFXRENDERTARGET/CD2DPathGeometry::Detach', 'AFXRENDERTARGET/CD2DPathGeometry::GetFigureCount', 'AFXRENDERTARGET/CD2DPathGeometry::GetSegmentCount', 'AFXRENDERTARGET/CD2DPathGeometry::Open', 'AFXRENDERTARGET/CD2DPathGeometry::Stream', 'AFXRENDERTARGET/CD2DPathGeometry::m_pPathGeometry']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

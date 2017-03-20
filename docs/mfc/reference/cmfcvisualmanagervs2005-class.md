@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCVisualManagerVS2005"
+f1_keywords: ['CMFCVisualManagerVS2005', 'AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005', 'AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::GetDockingTabsBordersSize', 'AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::GetMDITabsBordersSize', 'AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::GetPropertyGridGroupColor', 'AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::GetTabFrameColors', 'AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::HasOverlappedAutoHideButtons', 'AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnDrawAutoHideButtonBorder', 'AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnDrawCaptionButton', 'AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnDrawPaneCaption', 'AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnDrawSeparator', 'AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnDrawTab', 'AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnDrawToolBoxFrame', 'AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnEraseTabsArea', 'AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnFillAutoHideButtonBackground', 'AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnFillHighlightedArea', 'AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnFillMiniFrameCaption', 'AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnUpdateSystemColors']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

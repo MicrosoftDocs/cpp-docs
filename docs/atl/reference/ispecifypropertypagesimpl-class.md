@@ -8,13 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ISpecifyPropertyPagesImpl"
-  - "ATL.ISpecifyPropertyPagesImpl<T>"
-  - "ATL::ISpecifyPropertyPagesImpl"
-  - "ATL::ISpecifyPropertyPagesImpl<T>"
-  - "ATL.ISpecifyPropertyPagesImpl"
-  - "ISpecifyPropertyPagesImpl Class"
+f1_keywords: ['ISpecifyPropertyPagesImpl', 'ATLCOM/ATL::ISpecifyPropertyPagesImpl', 'ATLCOM/ATL::ISpecifyPropertyPagesImpl::GetPages']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

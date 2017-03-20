@@ -8,10 +8,9 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CComAutoDeleteCriticalSection"
-  - "CComAutoDeleteCriticalSection"
-  - "ATL::CComAutoDeleteCriticalSection"
+f1_keywords:
+ - "CComAutoDeleteCriticalSection"
+ - "atlcore/ATL::CComAutoDeleteCriticalSection"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

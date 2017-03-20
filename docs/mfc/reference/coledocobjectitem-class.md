@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleDocObjectItem"
+f1_keywords: ['COleDocObjectItem', 'AFXOLE/COleDocObjectItem', 'AFXOLE/COleDocObjectItem::COleDocObjectItem', 'AFXOLE/COleDocObjectItem::DoDefaultPrinting', 'AFXOLE/COleDocObjectItem::ExecCommand', 'AFXOLE/COleDocObjectItem::GetActiveView', 'AFXOLE/COleDocObjectItem::GetPageCount', 'AFXOLE/COleDocObjectItem::OnPreparePrinting', 'AFXOLE/COleDocObjectItem::OnPrint', 'AFXOLE/COleDocObjectItem::QueryCommand', 'AFXOLE/COleDocObjectItem::Release']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

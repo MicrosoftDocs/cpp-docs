@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "amp_short_vectors/Concurrency::graphics::short_vector_traits"
+f1_keywords: ['short_vector_traits', 'AMP_SHORT_VECTORS/short_vector_traits', 'AMP_SHORT_VECTORS/Concurrency::graphics::short_vector_traits::short_vector_traits', 'AMP_SHORT_VECTORS/Concurrency::graphics::short_vector_traits::size Constant']
 dev_langs: 
   - "C++"
 ms.assetid: cd9492da-9e02-4a6e-9d50-b61252cdb460

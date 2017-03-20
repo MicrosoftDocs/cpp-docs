@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CCheckListBox"
+f1_keywords: ['CCheckListBox', 'AFXWIN/CCheckListBox', 'AFXWIN/CCheckListBox::CCheckListBox', 'AFXWIN/CCheckListBox::Create', 'AFXWIN/CCheckListBox::DrawItem', 'AFXWIN/CCheckListBox::Enable', 'AFXWIN/CCheckListBox::GetCheck', 'AFXWIN/CCheckListBox::GetCheckStyle', 'AFXWIN/CCheckListBox::IsEnabled', 'AFXWIN/CCheckListBox::MeasureItem', 'AFXWIN/CCheckListBox::OnGetCheckPosition', 'AFXWIN/CCheckListBox::SetCheck', 'AFXWIN/CCheckListBox::SetCheckStyle']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

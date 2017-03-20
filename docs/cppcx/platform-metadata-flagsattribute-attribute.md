@@ -31,7 +31,7 @@ public ref class Flags abstract : Attribute
 ```  
   
 ## Inheritance  
- [Platform::Object](../cppcx/object-object-constructor.md)  
+ [Platform::Object](../cppcx/platform-object-class.md)   
   
  [Platform::Metadata::Attribute](../cppcx/platform-metadata-attribute-attribute.md)  
   

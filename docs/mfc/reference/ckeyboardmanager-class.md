@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CKeyboardManager"
+f1_keywords: ['CKeyboardManager', 'AFXKEYBOARDMANAGER/CKeyboardManager', 'AFXKEYBOARDMANAGER/CKeyboardManager::CKeyboardManager', 'AFXKEYBOARDMANAGER/CKeyboardManager::CleanUp', 'AFXKEYBOARDMANAGER/CKeyboardManager::FindDefaultAccelerator', 'AFXKEYBOARDMANAGER/CKeyboardManager::IsKeyHandled', 'AFXKEYBOARDMANAGER/CKeyboardManager::IsKeyPrintable', 'AFXKEYBOARDMANAGER/CKeyboardManager::IsShowAllAccelerators', 'AFXKEYBOARDMANAGER/CKeyboardManager::LoadState', 'AFXKEYBOARDMANAGER/CKeyboardManager::ResetAll', 'AFXKEYBOARDMANAGER/CKeyboardManager::SaveState', 'AFXKEYBOARDMANAGER/CKeyboardManager::ShowAllAccelerators', 'AFXKEYBOARDMANAGER/CKeyboardManager::TranslateCharToUpper', 'AFXKEYBOARDMANAGER/CKeyboardManager::UpdateAccelTable']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

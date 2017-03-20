@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IDataObject"
-  - "COleDataObject"
+f1_keywords: ['COleDataObject', 'AFXOLE/COleDataObject', 'AFXOLE/COleDataObject::COleDataObject', 'AFXOLE/COleDataObject::Attach', 'AFXOLE/COleDataObject::AttachClipboard', 'AFXOLE/COleDataObject::BeginEnumFormats', 'AFXOLE/COleDataObject::Detach', 'AFXOLE/COleDataObject::GetData', 'AFXOLE/COleDataObject::GetFileData', 'AFXOLE/COleDataObject::GetGlobalData', 'AFXOLE/COleDataObject::GetNextFormat', 'AFXOLE/COleDataObject::IsDataAvailable', 'AFXOLE/COleDataObject::Release']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

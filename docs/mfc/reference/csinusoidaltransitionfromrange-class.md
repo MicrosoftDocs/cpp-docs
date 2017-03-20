@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxanimationcontroller/CSinusoidalTransitionFromRange"
-  - "CSinusoidalTransitionFromRange"
+f1_keywords: ['CSinusoidalTransitionFromRange', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::CSinusoidalTransitionFromRange', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::Create', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_dblMaximumValue', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_dblMinimumValue', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_duration', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_period', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_slope']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

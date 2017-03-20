@@ -26,16 +26,13 @@ Represents the base class for all attributes.
 ## Syntax  
   
 ```cpp  
-  
 public ref class Attribute abstract : Object  
 ```  
   
 ## Inheritance  
- [Platform::Object](../cppcx/object-object-constructor.md)  
+ [Platform::Object](../cppcx/platform-object-class.md)  
   
  [Platform::Metadata::Attribute](../cppcx/platform-metadata-attribute-attribute.md)  
-  
-### Remarks  
   
 ### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  

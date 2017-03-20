@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CPaneDialog"
+f1_keywords: ['CPaneDialog', 'AFXPANEDIALOG/CPaneDialog', 'AFXPANEDIALOG/CPaneDialog::Create', 'AFXPANEDIALOG/CPaneDialog::HandleInitDialog', 'AFXPANEDIALOG/CPaneDialog::SetOccDialogInfo']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

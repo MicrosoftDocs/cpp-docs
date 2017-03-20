@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CAnimationVariable"
-  - "afxanimationcontroller/CAnimationVariable"
+f1_keywords: ['CAnimationVariable', 'AFXANIMATIONCONTROLLER/CAnimationVariable', 'AFXANIMATIONCONTROLLER/CAnimationVariable::CAnimationVariable', 'AFXANIMATIONCONTROLLER/CAnimationVariable::AddTransition', 'AFXANIMATIONCONTROLLER/CAnimationVariable::ApplyTransitions', 'AFXANIMATIONCONTROLLER/CAnimationVariable::ClearTransitions', 'AFXANIMATIONCONTROLLER/CAnimationVariable::Create', 'AFXANIMATIONCONTROLLER/CAnimationVariable::CreateTransitions', 'AFXANIMATIONCONTROLLER/CAnimationVariable::EnableIntegerValueChangedEvent', 'AFXANIMATIONCONTROLLER/CAnimationVariable::EnableValueChangedEvent', 'AFXANIMATIONCONTROLLER/CAnimationVariable::GetDefaultValue', 'AFXANIMATIONCONTROLLER/CAnimationVariable::GetParentAnimationObject', 'AFXANIMATIONCONTROLLER/CAnimationVariable::GetValue', 'AFXANIMATIONCONTROLLER/CAnimationVariable::GetVariable', 'AFXANIMATIONCONTROLLER/CAnimationVariable::SetDefaultValue', 'AFXANIMATIONCONTROLLER/CAnimationVariable::SetParentAnimationObject', 'AFXANIMATIONCONTROLLER/CAnimationVariable::m_bAutodestroyTransitions', 'AFXANIMATIONCONTROLLER/CAnimationVariable::m_dblDefaultValue', 'AFXANIMATIONCONTROLLER/CAnimationVariable::m_lstTransitions', 'AFXANIMATIONCONTROLLER/CAnimationVariable::m_pParentObject', 'AFXANIMATIONCONTROLLER/CAnimationVariable::m_variable']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

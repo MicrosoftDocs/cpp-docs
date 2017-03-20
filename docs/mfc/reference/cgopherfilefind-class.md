@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CGopherFileFind"
+f1_keywords: ['CGopherFileFind', 'AFXINET/CGopherFileFind', 'AFXINET/CGopherFileFind::CGopherFileFind', 'AFXINET/CGopherFileFind::FindFile', 'AFXINET/CGopherFileFind::FindNextFile', 'AFXINET/CGopherFileFind::GetCreationTime', 'AFXINET/CGopherFileFind::GetLastAccessTime', 'AFXINET/CGopherFileFind::GetLastWriteTime', 'AFXINET/CGopherFileFind::GetLength', 'AFXINET/CGopherFileFind::GetLocator', 'AFXINET/CGopherFileFind::GetScreenName', 'AFXINET/CGopherFileFind::IsDots']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

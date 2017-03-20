@@ -8,8 +8,9 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IPropertyNotifySinkCP"
+f1_keywords:
+ - "IPropertyNotifySinkCP"
+ - "atlctl/ATL::IPropertyNotifySinkCP"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

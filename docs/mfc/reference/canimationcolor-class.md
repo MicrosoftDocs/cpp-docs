@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CAnimationColor"
-  - "afxanimationcontroller/CAnimationColor"
+f1_keywords: ['CAnimationColor', 'AFXANIMATIONCONTROLLER/CAnimationColor', 'AFXANIMATIONCONTROLLER/CAnimationColor::CAnimationColor', 'AFXANIMATIONCONTROLLER/CAnimationColor::AddTransition', 'AFXANIMATIONCONTROLLER/CAnimationColor::GetB', 'AFXANIMATIONCONTROLLER/CAnimationColor::GetDefaultValue', 'AFXANIMATIONCONTROLLER/CAnimationColor::GetG', 'AFXANIMATIONCONTROLLER/CAnimationColor::GetR', 'AFXANIMATIONCONTROLLER/CAnimationColor::GetValue', 'AFXANIMATIONCONTROLLER/CAnimationColor::SetDefaultValue', 'AFXANIMATIONCONTROLLER/CAnimationColor::GetAnimationVariableList', 'AFXANIMATIONCONTROLLER/CAnimationColor::m_bValue', 'AFXANIMATIONCONTROLLER/CAnimationColor::m_gValue', 'AFXANIMATIONCONTROLLER/CAnimationColor::m_rValue']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CPrintDialog"
+f1_keywords: ['CPrintDialog', 'AFXDLGS/CPrintDialog', 'AFXDLGS/CPrintDialog::CPrintDialog', 'AFXDLGS/CPrintDialog::CreatePrinterDC', 'AFXDLGS/CPrintDialog::DoModal', 'AFXDLGS/CPrintDialog::GetCopies', 'AFXDLGS/CPrintDialog::GetDefaults', 'AFXDLGS/CPrintDialog::GetDeviceName', 'AFXDLGS/CPrintDialog::GetDevMode', 'AFXDLGS/CPrintDialog::GetDriverName', 'AFXDLGS/CPrintDialog::GetFromPage', 'AFXDLGS/CPrintDialog::GetPortName', 'AFXDLGS/CPrintDialog::GetPrinterDC', 'AFXDLGS/CPrintDialog::GetToPage', 'AFXDLGS/CPrintDialog::PrintAll', 'AFXDLGS/CPrintDialog::PrintCollate', 'AFXDLGS/CPrintDialog::PrintRange', 'AFXDLGS/CPrintDialog::PrintSelection', 'AFXDLGS/CPrintDialog::m_pd']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

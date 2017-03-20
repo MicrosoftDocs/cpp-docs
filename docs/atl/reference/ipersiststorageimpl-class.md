@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::IPersistStorageImpl"
-  - "ATL::IPersistStorageImpl<T>"
-  - "ATL.IPersistStorageImpl<T>"
-  - "IPersistStorageImpl"
-  - "ATL.IPersistStorageImpl"
+f1_keywords: ['IPersistStorageImpl', 'ATLCOM/ATL::IPersistStorageImpl', 'ATLCOM/ATL::IPersistStorageImpl::GetClassID', 'ATLCOM/ATL::IPersistStorageImpl::HandsOffStorage', 'ATLCOM/ATL::IPersistStorageImpl::InitNew', 'ATLCOM/ATL::IPersistStorageImpl::IsDirty', 'ATLCOM/ATL::IPersistStorageImpl::Load', 'ATLCOM/ATL::IPersistStorageImpl::Save', 'ATLCOM/ATL::IPersistStorageImpl::SaveCompleted']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

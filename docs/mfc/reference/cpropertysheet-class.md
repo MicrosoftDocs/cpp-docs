@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CPropertySheet"
+f1_keywords: ['CPropertySheet', 'AFXDLGS/CPropertySheet', 'AFXDLGS/CPropertySheet::CPropertySheet', 'AFXDLGS/CPropertySheet::AddPage', 'AFXDLGS/CPropertySheet::Construct', 'AFXDLGS/CPropertySheet::Create', 'AFXDLGS/CPropertySheet::DoModal', 'AFXDLGS/CPropertySheet::EnableStackedTabs', 'AFXDLGS/CPropertySheet::EndDialog', 'AFXDLGS/CPropertySheet::GetActiveIndex', 'AFXDLGS/CPropertySheet::GetActivePage', 'AFXDLGS/CPropertySheet::GetPage', 'AFXDLGS/CPropertySheet::GetPageCount', 'AFXDLGS/CPropertySheet::GetPageIndex', 'AFXDLGS/CPropertySheet::GetTabControl', 'AFXDLGS/CPropertySheet::MapDialogRect', 'AFXDLGS/CPropertySheet::OnInitDialog', 'AFXDLGS/CPropertySheet::PressButton', 'AFXDLGS/CPropertySheet::RemovePage', 'AFXDLGS/CPropertySheet::SetActivePage', 'AFXDLGS/CPropertySheet::SetFinishText', 'AFXDLGS/CPropertySheet::SetTitle', 'AFXDLGS/CPropertySheet::SetWizardButtons', 'AFXDLGS/CPropertySheet::SetWizardMode', 'AFXDLGS/CPropertySheet::m_psh']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

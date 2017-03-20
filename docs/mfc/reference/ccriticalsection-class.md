@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CCriticalSection"
+f1_keywords: ['CCriticalSection', 'AFXMT/CCriticalSection', 'AFXMT/CCriticalSection::CCriticalSection', 'AFXMT/CCriticalSection::Lock', 'AFXMT/CCriticalSection::Unlock', 'AFXMT/CCriticalSection::m_sect']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

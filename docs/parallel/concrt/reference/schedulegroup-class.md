@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::ScheduleGroup"
+f1_keywords: ['ScheduleGroup', 'CONCRT/concurrency::ScheduleGroup', 'CONCRT/concurrency::ScheduleGroup::Id', 'CONCRT/concurrency::ScheduleGroup::Reference', 'CONCRT/concurrency::ScheduleGroup::Release', 'CONCRT/concurrency::ScheduleGroup::ScheduleTask']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -55,10 +54,10 @@ class ScheduleGroup;
   
 |Name|Description|  
 |----------|-----------------|  
-|[Id Method](#id)|Returns an identifier for the schedule group that is unique within the scheduler to which the group belongs.|  
-|[Reference Method](#reference)|Increments the schedule group reference count.|  
-|[Release Method](#release)|Decrements the scheduler group reference count.|  
-|[ScheduleTask Method](#scheduletask)|Schedules a light-weight task within the schedule group.|  
+|[Id](#id)|Returns an identifier for the schedule group that is unique within the scheduler to which the group belongs.|  
+|[Reference](#reference)|Increments the schedule group reference count.|  
+|[Release](#release)|Decrements the scheduler group reference count.|  
+|[ScheduleTask](#scheduletask)|Schedules a light-weight task within the schedule group.|  
   
 ## Inheritance Hierarchy  
  `ScheduleGroup`  

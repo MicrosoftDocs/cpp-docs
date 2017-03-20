@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCDropDownToolbarButton"
+f1_keywords: ['CMFCDropDownToolbarButton', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::CMFCDropDownToolbarButton', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::CopyFrom', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::DropDownToolbar', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::ExportToMenuButton', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::GetDropDownToolBar', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::IsDropDown', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::IsExtraSize', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::OnCalculateSize', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::OnChangeParentWnd', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::OnClick', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::OnClickUp', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::OnContextHelp', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::OnCustomizeMenu', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::OnDraw', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::OnDrawOnCustomizeList', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::Serialize', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::SetDefaultCommand', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::m_uiShowBarDelay']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

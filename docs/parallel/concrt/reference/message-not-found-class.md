@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::message_not_found"
+f1_keywords: ['message_not_found', 'CONCRT/concurrency::message_not_found', 'CONCRT/concurrency::message_not_found::message_not_found']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,7 +48,7 @@ class message_not_found : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[message_not_found Constructor](#ctor)|Overloaded. Constructs a `message_not_found` object.|  
+|[message_not_found](#ctor)|Overloaded. Constructs a `message_not_found` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSize"
+f1_keywords: ['CSize', 'ATLTYPES/ATL::CSize', 'ATLTYPES/ATL::CSize::CSize']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

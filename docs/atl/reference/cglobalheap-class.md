@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CGlobalHeap"
-  - "ATL::CGlobalHeap"
-  - "CGlobalHeap"
+f1_keywords: ['CGlobalHeap', 'ATLMEM/ATL::CGlobalHeap', 'ATLMEM/ATL::CGlobalHeap::Allocate', 'ATLMEM/ATL::CGlobalHeap::Free', 'ATLMEM/ATL::CGlobalHeap::GetSize', 'ATLMEM/ATL::CGlobalHeap::Reallocate']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

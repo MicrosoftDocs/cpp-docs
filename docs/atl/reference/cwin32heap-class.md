@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CWin32Heap"
-  - "ATL.CWin32Heap"
-  - "CWin32Heap"
+f1_keywords: ['CWin32Heap', 'ATLMEM/ATL::CWin32Heap', 'ATLMEM/ATL::CWin32Heap::CWin32Heap', 'ATLMEM/ATL::CWin32Heap::Allocate', 'ATLMEM/ATL::CWin32Heap::Attach', 'ATLMEM/ATL::CWin32Heap::Detach', 'ATLMEM/ATL::CWin32Heap::Free', 'ATLMEM/ATL::CWin32Heap::GetSize', 'ATLMEM/ATL::CWin32Heap::Reallocate', 'ATLMEM/ATL::CWin32Heap::m_bOwnHeap', 'ATLMEM/ATL::CWin32Heap::m_hHeap']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

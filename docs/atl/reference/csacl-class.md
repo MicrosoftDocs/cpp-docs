@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CSacl"
-  - "ATL::CSacl"
-  - "CSacl"
+f1_keywords: ['CSacl', 'ATLSECURITY/ATL::CSacl', 'ATLSECURITY/ATL::CSacl::CSacl', 'ATLSECURITY/ATL::CSacl::AddAuditAce', 'ATLSECURITY/ATL::CSacl::GetAceCount', 'ATLSECURITY/ATL::CSacl::RemoveAce', 'ATLSECURITY/ATL::CSacl::RemoveAllAces']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

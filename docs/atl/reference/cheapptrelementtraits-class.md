@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CHeapPtrElementTraits"
-  - "CHeapPtrElementTraits"
-  - "ATL::CHeapPtrElementTraits"
+f1_keywords: ['CHeapPtrElementTraits', 'ATLCOLL/ATL::CHeapPtrElementTraits', 'ATLCOLL/ATL::CHeapPtrElementTraits::INARGTYPE', 'ATLCOLL/ATL::CHeapPtrElementTraits::OUTARGTYPE']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

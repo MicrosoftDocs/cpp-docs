@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CAtlDllModuleT"
-  - "ATL::CAtlDllModuleT<T>"
-  - "ATL::CAtlDllModuleT"
-  - "ATL.CAtlDllModuleT<T>"
-  - "CAtlDllModuleT"
+f1_keywords: ['CAtlDllModuleT', 'ATLBASE/ATL::CAtlDllModuleT', 'ATLBASE/ATL::CAtlDllModuleT::CAtlDllModuleT', 'ATLBASE/ATL::CAtlDllModuleT::DllCanUnloadNow', 'ATLBASE/ATL::CAtlDllModuleT::DllGetClassObject', 'ATLBASE/ATL::CAtlDllModuleT::DllMain', 'ATLBASE/ATL::CAtlDllModuleT::DllRegisterServer', 'ATLBASE/ATL::CAtlDllModuleT::DllUnregisterServer', 'ATLBASE/ATL::CAtlDllModuleT::GetClassObject']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

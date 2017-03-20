@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCFontInfo"
+f1_keywords: ['CMFCFontInfo', 'AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo', 'AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::GetFullName', 'AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_nCharSet', 'AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_nPitchAndFamily', 'AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_nType', 'AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_strName', 'AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_strScript']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

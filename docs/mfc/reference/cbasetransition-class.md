@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CBaseTransition"
-  - "afxanimationcontroller/CBaseTransition"
+f1_keywords: ['CBaseTransition', 'AFXANIMATIONCONTROLLER/CBaseTransition', 'AFXANIMATIONCONTROLLER/CBaseTransition::CBaseTransition', 'AFXANIMATIONCONTROLLER/CBaseTransition::AddToStoryboard', 'AFXANIMATIONCONTROLLER/CBaseTransition::AddToStoryboardAtKeyframes', 'AFXANIMATIONCONTROLLER/CBaseTransition::Clear', 'AFXANIMATIONCONTROLLER/CBaseTransition::Create', 'AFXANIMATIONCONTROLLER/CBaseTransition::GetEndKeyframe', 'AFXANIMATIONCONTROLLER/CBaseTransition::GetRelatedVariable', 'AFXANIMATIONCONTROLLER/CBaseTransition::GetStartKeyframe', 'AFXANIMATIONCONTROLLER/CBaseTransition::GetTransition', 'AFXANIMATIONCONTROLLER/CBaseTransition::GetType', 'AFXANIMATIONCONTROLLER/CBaseTransition::IsAdded', 'AFXANIMATIONCONTROLLER/CBaseTransition::SetKeyframes', 'AFXANIMATIONCONTROLLER/CBaseTransition::SetRelatedVariable', 'AFXANIMATIONCONTROLLER/CBaseTransition::m_bAdded', 'AFXANIMATIONCONTROLLER/CBaseTransition::m_pEndKeyframe', 'AFXANIMATIONCONTROLLER/CBaseTransition::m_pRelatedVariable', 'AFXANIMATIONCONTROLLER/CBaseTransition::m_pStartKeyframe', 'AFXANIMATIONCONTROLLER/CBaseTransition::m_transition', 'AFXANIMATIONCONTROLLER/CBaseTransition::m_type']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

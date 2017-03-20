@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CInternetConnection"
+f1_keywords: ['CInternetConnection', 'AFXINET/CInternetConnection', 'AFXINET/CInternetConnection::CInternetConnection', 'AFXINET/CInternetConnection::GetContext', 'AFXINET/CInternetConnection::GetServerName', 'AFXINET/CInternetConnection::GetSession']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

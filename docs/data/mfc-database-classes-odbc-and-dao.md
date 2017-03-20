@@ -44,8 +44,6 @@ translation.priority.ht:
   
 -   [ODBC and MFC](../data/odbc/odbc-and-mfc.md)  
   
--   [MFC Database Documentation](../data/mfc-database-documentation.md)  
-  
 -   [Using Database Classes with Documents and Views](../data/mfc-using-database-classes-with-documents-and-views.md)  
   
 -   [Using Database Classes Without Documents and Views](../data/mfc-using-database-classes-without-documents-and-views.md)  

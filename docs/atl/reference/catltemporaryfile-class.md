@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CAtlTemporaryFile"
-  - "ATL.CAtlTemporaryFile"
-  - "ATL::CAtlTemporaryFile"
+f1_keywords: ['CAtlTemporaryFile', 'ATLFILE/ATL::CAtlTemporaryFile', 'ATLFILE/ATL::CAtlTemporaryFile::CAtlTemporaryFile', 'ATLFILE/ATL::CAtlTemporaryFile::Close', 'ATLFILE/ATL::CAtlTemporaryFile::Create', 'ATLFILE/ATL::CAtlTemporaryFile::Flush', 'ATLFILE/ATL::CAtlTemporaryFile::GetPosition', 'ATLFILE/ATL::CAtlTemporaryFile::GetSize', 'ATLFILE/ATL::CAtlTemporaryFile::HandsOff', 'ATLFILE/ATL::CAtlTemporaryFile::HandsOn', 'ATLFILE/ATL::CAtlTemporaryFile::LockRange', 'ATLFILE/ATL::CAtlTemporaryFile::Read', 'ATLFILE/ATL::CAtlTemporaryFile::Seek', 'ATLFILE/ATL::CAtlTemporaryFile::SetSize', 'ATLFILE/ATL::CAtlTemporaryFile::TempFileName', 'ATLFILE/ATL::CAtlTemporaryFile::UnlockRange', 'ATLFILE/ATL::CAtlTemporaryFile::Write']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

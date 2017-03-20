@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CCRTAllocator"
+f1_keywords: ['CCRTAllocator', 'ATLCORE/ATL::CCRTAllocator', 'ATLCORE/ATL::CCRTAllocator::Allocate', 'ATLCORE/ATL::CCRTAllocator::Free', 'ATLCORE/ATL::CCRTAllocator::Reallocate']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

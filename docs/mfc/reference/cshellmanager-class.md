@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CShellManager"
+f1_keywords: ['CShellManager', 'AFXSHELLMANAGER/CShellManager', 'AFXSHELLMANAGER/CShellManager::CShellManager', 'AFXSHELLMANAGER/CShellManager::BrowseForFolder', 'AFXSHELLMANAGER/CShellManager::ConcatenateItem', 'AFXSHELLMANAGER/CShellManager::CopyItem', 'AFXSHELLMANAGER/CShellManager::CreateItem', 'AFXSHELLMANAGER/CShellManager::FreeItem', 'AFXSHELLMANAGER/CShellManager::GetItemCount', 'AFXSHELLMANAGER/CShellManager::GetItemSize', 'AFXSHELLMANAGER/CShellManager::GetNextItem', 'AFXSHELLMANAGER/CShellManager::GetParentItem', 'AFXSHELLMANAGER/CShellManager::ItemFromPath']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

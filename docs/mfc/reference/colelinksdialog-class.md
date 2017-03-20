@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleLinksDialog"
+f1_keywords: ['COleLinksDialog', 'AFXODLGS/COleLinksDialog', 'AFXODLGS/COleLinksDialog::COleLinksDialog', 'AFXODLGS/COleLinksDialog::DoModal', 'AFXODLGS/COleLinksDialog::m_el']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

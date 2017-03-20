@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxanimationcontroller/CKeyFrame"
-  - "CKeyFrame"
+f1_keywords: ['CKeyFrame', 'AFXANIMATIONCONTROLLER/CKeyFrame', 'AFXANIMATIONCONTROLLER/CKeyFrame::CKeyFrame', 'AFXANIMATIONCONTROLLER/CKeyFrame::AddToStoryboard', 'AFXANIMATIONCONTROLLER/CKeyFrame::AddToStoryboardAfterTransition', 'AFXANIMATIONCONTROLLER/CKeyFrame::AddToStoryboardAtOffset', 'AFXANIMATIONCONTROLLER/CKeyFrame::GetExistingKeyframe', 'AFXANIMATIONCONTROLLER/CKeyFrame::GetOffset', 'AFXANIMATIONCONTROLLER/CKeyFrame::GetTransition', 'AFXANIMATIONCONTROLLER/CKeyFrame::m_offset', 'AFXANIMATIONCONTROLLER/CKeyFrame::m_pExistingKeyFrame', 'AFXANIMATIONCONTROLLER/CKeyFrame::m_pTransition']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

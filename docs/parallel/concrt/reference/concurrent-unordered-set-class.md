@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concurrent_unordered_set/concurrency::concurrent_unordered_set"
+f1_keywords: ['concurrent_unordered_set', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::concurrent_unordered_set', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::hash_function', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::insert', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::key_eq', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::swap', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::unsafe_erase']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -93,23 +92,23 @@ template <typename K,
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_unordered_set Constructor](#ctor)|Overloaded. Constructs a concurrent unordered set.|  
+|[concurrent_unordered_set](#ctor)|Overloaded. Constructs a concurrent unordered set.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[hash_function Method](#hash_function)|Returns the stored hash function object.|  
-|[insert Method](#insert)|Overloaded. Adds elements to the `concurrent_unordered_set` object.|  
-|[key_eq Method](#key_eq)|Returns the stored equality comparison function object.|  
-|[swap Method](#swap)|Swaps the contents of two `concurrent_unordered_set` objects. This method is not concurrency-safe.|  
-|[unsafe_erase Method](#unsafe_erase)|Overloaded. Removes elements from the `concurrent_unordered_set` at specified positions. This method is not concurrency-safe.|  
+|[hash_function](#hash_function)|Returns the stored hash function object.|  
+|[insert](#insert)|Overloaded. Adds elements to the `concurrent_unordered_set` object.|  
+|[key_eq](#key_eq)|Returns the stored equality comparison function object.|  
+|[swap](#swap)|Swaps the contents of two `concurrent_unordered_set` objects. This method is not concurrency-safe.|  
+|[unsafe_erase](#unsafe_erase)|Overloaded. Removes elements from the `concurrent_unordered_set` at specified positions. This method is not concurrency-safe.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator= Operator](#operator_eq)|Overloaded. Assigns the contents of another `concurrent_unordered_set` object to this one. This method is not concurrency-safe.|  
+|[operator=](#operator_eq)|Overloaded. Assigns the contents of another `concurrent_unordered_set` object to this one. This method is not concurrency-safe.|  
   
 ## Remarks  
  For detailed information on the `concurrent_unordered_set` class, see [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md).  
@@ -649,12 +648,12 @@ iterator unsafe_erase(
  `last`  
   
 ### Return Value  
- The first two member functions return an iterator that designates the first element remaining beyond any elements removed, or [end Method](#end)() if no such element exists. The third member function returns the number of elements it removes.  
+ The first two member functions return an iterator that designates the first element remaining beyond any elements removed, or [end](#end)() if no such element exists. The third member function returns the number of elements it removes.  
   
 ### Remarks  
  The first member function removes the element pointed to by `_Where`. The second member function removes the elements in the range [ `_Begin`, `_End`).  
   
- The third member function removes the elements in the range delimited by [equal_range Method](#equal_range)(KVal).  
+ The third member function removes the elements in the range delimited by [equal_range](#equal_range)(KVal).  
   
 ##  <a name="unsafe_max_bucket_count"></a> unsafe_max_bucket_count 
 

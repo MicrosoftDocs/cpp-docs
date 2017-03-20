@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleChangeSourceDialog"
-  - "OLEUICHANGESOURCE"
+f1_keywords: ['COleChangeSourceDialog', 'AFXODLGS/COleChangeSourceDialog', 'AFXODLGS/COleChangeSourceDialog::COleChangeSourceDialog', 'AFXODLGS/COleChangeSourceDialog::DoModal', 'AFXODLGS/COleChangeSourceDialog::GetDisplayName', 'AFXODLGS/COleChangeSourceDialog::GetFileName', 'AFXODLGS/COleChangeSourceDialog::GetFromPrefix', 'AFXODLGS/COleChangeSourceDialog::GetItemName', 'AFXODLGS/COleChangeSourceDialog::GetToPrefix', 'AFXODLGS/COleChangeSourceDialog::IsValidSource', 'AFXODLGS/COleChangeSourceDialog::m_cs']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

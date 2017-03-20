@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCButton"
+f1_keywords: ['CMFCButton', 'AFXBUTTON/CMFCButton', 'AFXBUTTON/CMFCButton::CleanUp', 'AFXBUTTON/CMFCButton::EnableFullTextTooltip', 'AFXBUTTON/CMFCButton::EnableMenuFont', 'AFXBUTTON/CMFCButton::EnableWindowsTheming', 'AFXBUTTON/CMFCButton::GetToolTipCtrl', 'AFXBUTTON/CMFCButton::IsAutoCheck', 'AFXBUTTON/CMFCButton::IsAutorepeatCommandMode', 'AFXBUTTON/CMFCButton::IsCheckBox', 'AFXBUTTON/CMFCButton::IsChecked', 'AFXBUTTON/CMFCButton::IsHighlighted', 'AFXBUTTON/CMFCButton::IsPressed', 'AFXBUTTON/CMFCButton::IsPushed', 'AFXBUTTON/CMFCButton::IsRadioButton', 'AFXBUTTON/CMFCButton::IsWindowsThemingEnabled', 'AFXBUTTON/CMFCButton::SetAutorepeatMode', 'AFXBUTTON/CMFCButton::SetCheckedImage', 'AFXBUTTON/CMFCButton::SetFaceColor', 'AFXBUTTON/CMFCButton::SetImage', 'AFXBUTTON/CMFCButton::SetMouseCursor', 'AFXBUTTON/CMFCButton::SetMouseCursorHand', 'AFXBUTTON/CMFCButton::SetStdImage', 'AFXBUTTON/CMFCButton::SetTextColor', 'AFXBUTTON/CMFCButton::SetTextHotColor', 'AFXBUTTON/CMFCButton::SetTooltip', 'AFXBUTTON/CMFCButton::SizeToContent', 'AFXBUTTON/CMFCButton::OnDraw', 'AFXBUTTON/CMFCButton::OnDrawBorder', 'AFXBUTTON/CMFCButton::OnDrawFocusRect', 'AFXBUTTON/CMFCButton::OnDrawText', 'AFXBUTTON/CMFCButton::OnFillBackground', 'AFXBUTTON/CMFCButton::SelectFont', 'AFXBUTTON/CMFCButton::m_bDrawFocus', 'AFXBUTTON/CMFCButton::m_bHighlightChecked', 'AFXBUTTON/CMFCButton::m_bRightImage', 'AFXBUTTON/CMFCButton::m_bTransparent', 'AFXBUTTON/CMFCButton::m_nAlignStyle', 'AFXBUTTON/CMFCButton::m_nFlatStyle']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

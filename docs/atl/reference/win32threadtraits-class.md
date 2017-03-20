@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "Win32ThreadTraits"
-  - "ATL::Win32ThreadTraits"
-  - "ATL.Win32ThreadTraits"
+f1_keywords: ['Win32ThreadTraits', 'ATLBASE/ATL::Win32ThreadTraits', 'ATLBASE/ATL::Win32ThreadTraits::CreateThread']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

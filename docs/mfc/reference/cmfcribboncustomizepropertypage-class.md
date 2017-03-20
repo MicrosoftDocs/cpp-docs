@@ -8,17 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "GetThisClass"
-  - "CMFCRibbonCustomizePropertyPage::CreateObject"
-  - "CMFCRibbonCustomizePropertyPage"
-  - "CMFCRibbonCustomizePropertyPage::~CMFCRibbonCustomizePropertyPage"
-  - "CMFCRibbonCustomizePropertyPage.GetThisClass"
-  - "CMFCRibbonCustomizePropertyPage.CreateObject"
-  - "~CMFCRibbonCustomizePropertyPage"
-  - "CreateObject"
-  - "CMFCRibbonCustomizePropertyPage.~CMFCRibbonCustomizePropertyPage"
-  - "CMFCRibbonCustomizePropertyPage::GetThisClass"
+f1_keywords: ['CMFCRibbonCustomizePropertyPage', 'AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage', 'AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage::CMFCRibbonCustomizePropertyPage', 'AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage::AddCustomCategory', 'AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage::OnOK']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

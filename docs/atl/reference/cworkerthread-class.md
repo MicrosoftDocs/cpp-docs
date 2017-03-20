@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CWorkerThread<ThreadTraits>"
-  - "ATL::CWorkerThread"
-  - "ATL.CWorkerThread"
-  - "ATL.CWorkerThread<ThreadTraits>"
-  - "CWorkerThread"
+f1_keywords: ['CWorkerThread', 'ATLUTIL/ATL::CWorkerThread', 'ATLUTIL/ATL::CWorkerThread::CWorkerThread', 'ATLUTIL/ATL::CWorkerThread::AddHandle', 'ATLUTIL/ATL::CWorkerThread::AddTimer', 'ATLUTIL/ATL::CWorkerThread::GetThreadHandle', 'ATLUTIL/ATL::CWorkerThread::GetThreadId', 'ATLUTIL/ATL::CWorkerThread::Initialize', 'ATLUTIL/ATL::CWorkerThread::RemoveHandle', 'ATLUTIL/ATL::CWorkerThread::Shutdown']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

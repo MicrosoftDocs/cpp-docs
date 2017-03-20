@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDBException"
+f1_keywords: ['CDBException', 'AFXDB/CDBException', 'AFXDB/CDBException::m_nRetCode', 'AFXDB/CDBException::m_strError', 'AFXDB/CDBException::m_strStateNativeOrigin']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

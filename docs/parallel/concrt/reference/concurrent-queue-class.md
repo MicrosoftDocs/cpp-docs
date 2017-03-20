@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concurrent_queue/concurrency::concurrent_queue"
-  - "concurrent_queue/Concurrency::concurrent_queue"
+f1_keywords: ['concurrent_queue', 'CONCURRENT_QUEUE/concurrency::concurrent_queue', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::concurrent_queue', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::clear', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::empty', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::get_allocator', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::push', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::try_pop', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::unsafe_begin', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::unsafe_end', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::unsafe_size']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -71,21 +69,21 @@ class concurrent_queue: public ::Concurrency::details::_Concurrent_queue_base_v4
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_queue Constructor](#ctor)|Overloaded. Constructs a concurrent queue.|  
+|[concurrent_queue](#ctor)|Overloaded. Constructs a concurrent queue.|  
 |[~concurrent_queue Destructor](#dtor)|Destroys the concurrent queue.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[clear Method](#clear)|Clears the concurrent queue, destroying any currently enqueued elements. This method is not concurrency-safe.|  
-|[empty Method](#empty)|Tests if the concurrent queue is empty at the moment this method is called. This method is concurrency-safe.|  
-|[get_allocator Method](#get_allocator)|Returns a copy of the allocator used to construct the concurrent queue. This method is concurrency-safe.|  
-|[push Method](#push)|Overloaded. Enqueues an item at tail end of the concurrent queue. This method is concurrency-safe.|  
-|[try_pop Method](#try_pop)|Dequeues an item from the queue if one is available. This method is concurrency-safe.|  
-|[unsafe_begin Method](#unsafe_begin)|Overloaded. Returns an iterator of type `iterator` or `const_iterator` to the beginning of the concurrent queue. This method is not concurrency-safe.|  
-|[unsafe_end Method](#unsafe_end)|Overloaded. Returns an iterator of type `iterator` or `const_iterator` to the end of the concurrent queue. This method is not concurrency-safe.|  
-|[unsafe_size Method](#unsafe_size)|Returns the number of items in the queue. This method is not concurrency-safe.|  
+|[clear](#clear)|Clears the concurrent queue, destroying any currently enqueued elements. This method is not concurrency-safe.|  
+|[empty](#empty)|Tests if the concurrent queue is empty at the moment this method is called. This method is concurrency-safe.|  
+|[get_allocator](#get_allocator)|Returns a copy of the allocator used to construct the concurrent queue. This method is concurrency-safe.|  
+|[push](#push)|Overloaded. Enqueues an item at tail end of the concurrent queue. This method is concurrency-safe.|  
+|[try_pop](#try_pop)|Dequeues an item from the queue if one is available. This method is concurrency-safe.|  
+|[unsafe_begin](#unsafe_begin)|Overloaded. Returns an iterator of type `iterator` or `const_iterator` to the beginning of the concurrent queue. This method is not concurrency-safe.|  
+|[unsafe_end](#unsafe_end)|Overloaded. Returns an iterator of type `iterator` or `const_iterator` to the end of the concurrent queue. This method is not concurrency-safe.|  
+|[unsafe_size](#unsafe_size)|Returns the number of items in the queue. This method is not concurrency-safe.|  
   
 ## Remarks  
  For more information, see [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md).  

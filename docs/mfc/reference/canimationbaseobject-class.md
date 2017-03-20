@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxanimationcontroller/CAnimationBaseObject"
-  - "CAnimationBaseObject"
+f1_keywords: ['CAnimationBaseObject', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::CAnimationBaseObject', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::ApplyTransitions', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::ClearTransitions', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::ContainsVariable', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::CreateTransitions', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::DetachFromController', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::EnableIntegerValueChangedEvent', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::EnableValueChangedEvent', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::GetAutodestroyTransitions', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::GetGroupID', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::GetObjectID', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::GetUserData', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::SetAutodestroyTransitions', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::SetID', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::SetUserData', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::GetAnimationVariableList', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::SetParentAnimationObjects', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::m_bAutodestroyTransitions', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::m_dwUserData', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::m_nGroupID', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::m_nObjectID', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::m_pParentController']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

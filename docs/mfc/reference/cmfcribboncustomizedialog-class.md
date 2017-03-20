@@ -8,14 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "GetThisClass"
-  - "CMFCRibbonCustomizeDialog"
-  - "~CMFCRibbonCustomizeDialog"
-  - "CMFCRibbonCustomizeDialog::GetThisClass"
-  - "CMFCRibbonCustomizeDialog.~CMFCRibbonCustomizeDialog"
-  - "CMFCRibbonCustomizeDialog.GetThisClass"
-  - "CMFCRibbonCustomizeDialog::~CMFCRibbonCustomizeDialog"
+f1_keywords: ['CMFCRibbonCustomizeDialog', 'AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizeDialog', 'AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizeDialog::CMFCRibbonCustomizeDialog']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

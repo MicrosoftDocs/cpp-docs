@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxrendertarget/CD2DLayer"
-  - "CD2DLayer"
+f1_keywords: ['CD2DLayer', 'AFXRENDERTARGET/CD2DLayer', 'AFXRENDERTARGET/CD2DLayer::CD2DLayer', 'AFXRENDERTARGET/CD2DLayer::Attach', 'AFXRENDERTARGET/CD2DLayer::Create', 'AFXRENDERTARGET/CD2DLayer::Destroy', 'AFXRENDERTARGET/CD2DLayer::Detach', 'AFXRENDERTARGET/CD2DLayer::Get', 'AFXRENDERTARGET/CD2DLayer::GetSize', 'AFXRENDERTARGET/CD2DLayer::IsValid', 'AFXRENDERTARGET/CD2DLayer::m_pLayer']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

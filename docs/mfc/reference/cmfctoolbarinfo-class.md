@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCToolBarInfo"
+f1_keywords: ['CMFCToolBarInfo', 'AFXTOOLBAR/CMFCToolBarInfo', 'AFXTOOLBAR/CMFCToolBarInfo::m_uiColdResID', 'AFXTOOLBAR/CMFCToolBarInfo::m_uiDisabledResID', 'AFXTOOLBAR/CMFCToolBarInfo::m_uiHotResID', 'AFXTOOLBAR/CMFCToolBarInfo::m_uiLargeColdResID', 'AFXTOOLBAR/CMFCToolBarInfo::m_uiLargeDisabledResID', 'AFXTOOLBAR/CMFCToolBarInfo::m_uiLargeHotResID', 'AFXTOOLBAR/CMFCToolBarInfo::m_uiMenuDisabledResID', 'AFXTOOLBAR/CMFCToolBarInfo::m_uiMenuResID']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.ICollectionOnSTLImpl"
-  - "ATL::ICollectionOnSTLImpl"
-  - "ICollectionOnSTLImpl"
+f1_keywords: ['ICollectionOnSTLImpl', 'ATLCOM/ATL::ICollectionOnSTLImpl', 'ATLCOM/ATL::ICollectionOnSTLImpl::get__NewEnum', 'ATLCOM/ATL::ICollectionOnSTLImpl::getcount', 'ATLCOM/ATL::ICollectionOnSTLImpl::get_Item', 'ATLCOM/ATL::ICollectionOnSTLImpl::m_coll']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

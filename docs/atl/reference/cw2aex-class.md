@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CW2AEX<t_nBufferLength>"
-  - "CW2AEX"
-  - "ATL.CW2AEX<t_nBufferLength>"
-  - "ATL::CW2AEX"
-  - "ATL.CW2AEX"
+f1_keywords: ['CW2AEX', 'ATLCONV/ATL::CW2AEX', 'ATLCONV/ATL::CW2AEX::CW2AEX', 'ATLCONV/ATL::CW2AEX::m_psz', 'ATLCONV/ATL::CW2AEX::m_szBuffer']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "agents/concurrency::message_processor"
+f1_keywords: ['message_processor', 'AGENTS/concurrency::message_processor', 'AGENTS/concurrency::message_processor::async_send', 'AGENTS/concurrency::message_processor::sync_send', 'AGENTS/concurrency::message_processor::wait', 'AGENTS/concurrency::message_processor::process_incoming_message']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -60,15 +59,15 @@ class message_processor;
   
 |Name|Description|  
 |----------|-----------------|  
-|[async_send Method](#async_send)|When overridden in a derived class, places messages into the block asynchronously.|  
-|[sync_send Method](#sync_send)|When overridden in a derived class, places messages into the block synchronously.|  
-|[wait Method](#wait)|When overridden in a derived class, waits for all asynchronous operations to complete.|  
+|[async_send](#async_send)|When overridden in a derived class, places messages into the block asynchronously.|  
+|[sync_send](#sync_send)|When overridden in a derived class, places messages into the block synchronously.|  
+|[wait](#wait)|When overridden in a derived class, waits for all asynchronous operations to complete.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[process_incoming_message Method](#process_incoming_message)|When overridden in a derived class, performs the forward processing of messages into the block. Called once every time a new message is added and the queue is found to be empty.|  
+|[process_incoming_message](#process_incoming_message)|When overridden in a derived class, performs the forward processing of messages into the block. Called once every time a new message is added and the queue is found to be empty.|  
   
 ## Inheritance Hierarchy  
  `message_processor`  

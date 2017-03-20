@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CRecentDockSiteInfo"
+f1_keywords: ['CRecentDockSiteInfo', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::CleanUp', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentDefaultPaneDivider', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentDockedPercent', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentDockedRect', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentListOfPanes', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentPaneContainer', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentTabContainer', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::Init', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::IsRecentLeftPane', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::SaveListOfRecentPanes', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::SetInfo', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::StoreDockInfo']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

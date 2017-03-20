@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CAtlAutoThreadModuleT"
-  - "ATL::CAtlAutoThreadModuleT"
-  - "CAtlAutoThreadModuleT"
+f1_keywords: ['CAtlAutoThreadModuleT', 'ATLBASE/ATL::CAtlAutoThreadModuleT', 'ATLBASE/ATL::CAtlAutoThreadModuleT::GetDefaultThreads']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

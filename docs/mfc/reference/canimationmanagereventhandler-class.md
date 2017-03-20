@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxanimationcontroller/CAnimationManagerEventHandler"
-  - "CAnimationManagerEventHandler"
+f1_keywords: ['CAnimationManagerEventHandler', 'AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler', 'AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::CAnimationManagerEventHandler', 'AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::CreateInstance', 'AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::OnManagerStatusChanged', 'AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::SetAnimationController']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

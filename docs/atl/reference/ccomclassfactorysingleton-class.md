@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CComClassFactorySingleton"
-  - "ATL.CComClassFactorySingleton<T>"
-  - "ATL::CComClassFactorySingleton"
-  - "ATL::CComClassFactorySingleton<T>"
-  - "CComClassFactorySingleton"
+f1_keywords: ['CComClassFactorySingleton', 'ATLCOM/ATL::CComClassFactorySingleton', 'ATLCOM/ATL::CComClassFactorySingleton::CreateInstance', 'ATLCOM/ATL::CComClassFactorySingleton::m_spObj']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

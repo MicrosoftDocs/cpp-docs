@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxanimationcontroller/CAnimationValue"
-  - "CAnimationValue"
+f1_keywords: ['CAnimationValue', 'AFXANIMATIONCONTROLLER/CAnimationValue', 'AFXANIMATIONCONTROLLER/CAnimationValue::CAnimationValue', 'AFXANIMATIONCONTROLLER/CAnimationValue::AddTransition', 'AFXANIMATIONCONTROLLER/CAnimationValue::GetValue', 'AFXANIMATIONCONTROLLER/CAnimationValue::GetVariable', 'AFXANIMATIONCONTROLLER/CAnimationValue::SetDefaultValue', 'AFXANIMATIONCONTROLLER/CAnimationValue::GetAnimationVariableList', 'AFXANIMATIONCONTROLLER/CAnimationValue::m_value']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

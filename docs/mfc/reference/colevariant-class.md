@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleVariant"
+f1_keywords: ['COleVariant', 'AFXDISP/COleVariant', 'AFXDISP/COleVariant::COleVariant', 'AFXDISP/COleVariant::Attach', 'AFXDISP/COleVariant::ChangeType', 'AFXDISP/COleVariant::Clear', 'AFXDISP/COleVariant::Detach', 'AFXDISP/COleVariant::GetByteArrayFromVariantArray', 'AFXDISP/COleVariant::SetString']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

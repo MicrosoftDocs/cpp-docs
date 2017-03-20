@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleIPFrameWnd"
+f1_keywords: ['COleIPFrameWnd', 'AFXOLE/COleIPFrameWnd', 'AFXOLE/COleIPFrameWnd::COleIPFrameWnd', 'AFXOLE/COleIPFrameWnd::OnCreateControlBars', 'AFXOLE/COleIPFrameWnd::RepositionFrame']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

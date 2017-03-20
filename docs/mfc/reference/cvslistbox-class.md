@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CVSListBox"
+f1_keywords: ['CVSListBox', 'AFXVSLISTBOX/CVSListBox', 'AFXVSLISTBOX/CVSListBox::CVSListBox', 'AFXVSLISTBOX/CVSListBox::AddItem', 'AFXVSLISTBOX/CVSListBox::EditItem', 'AFXVSLISTBOX/CVSListBox::GetCount', 'AFXVSLISTBOX/CVSListBox::GetItemData', 'AFXVSLISTBOX/CVSListBox::GetItemText', 'AFXVSLISTBOX/CVSListBox::GetSelItem', 'AFXVSLISTBOX/CVSListBox::RemoveItem', 'AFXVSLISTBOX/CVSListBox::SelectItem', 'AFXVSLISTBOX/CVSListBox::SetItemData', 'AFXVSLISTBOX/CVSListBox::GetListHwnd']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
