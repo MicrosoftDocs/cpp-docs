@@ -9,7 +9,7 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
-  - "Platform/Platform::Metadata::RuntimeClassName"
+  - "VCCORLIB/Platform::Metadata::RuntimeClassName"
 helpviewer_keywords: 
   - "RuntimeClassName"
   - "Platform::Metadata::RuntimeClassName"

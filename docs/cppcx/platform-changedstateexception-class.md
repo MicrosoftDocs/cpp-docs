@@ -9,8 +9,8 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
-  - "Platform/Platform::ChangedStateException"
-  - "Platform/Platform::ChangedStateException::ChangedStateException"
+  - "VCCORLIB/Platform::ChangedStateException"
+  - "VCCORLIB/Platform::ChangedStateException::ChangedStateException"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

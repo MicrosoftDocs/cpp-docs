@@ -38,14 +38,14 @@ Text in the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] is represented in C++/C
  [!code-cpp[cx_strings#03](../cppcx/codesnippet/CPP/cppcx_strings/class1.cpp#03)]  
   
 ## String conversions  
- A `Platform::String` can contain only `char16` characters, or the `NULL` character. If your application has to work with 8-bit characters, use the [String::Data Method](../cppcx/platform-string-class.md#data) to extract the text as a `const wchar_t*`. You can then use the appropriate Windows functions or Standard Library functions to operate on the data and convert it back to a `wchar_t*` or [wstring](../standard-library/basic-string-class.md), which you can use to construct a new `Platform::String`.  
+ A `Platform::String` can contain only `char16` characters, or the `NULL` character. If your application has to work with 8-bit characters, use the [String::Data](../cppcx/platform-string-class.md#data) to extract the text as a `const wchar_t*`. You can then use the appropriate Windows functions or Standard Library functions to operate on the data and convert it back to a `wchar_t*` or [wstring](../standard-library/basic-string-class.md), which you can use to construct a new `Platform::String`.  
   
  The following code fragment shows how to convert a `String^` variable to and from a `wstring` variable. For more information about the string manipulation that's used in this example, see [basic_string::replace](../standard-library/basic-string-class.md#basic_string__replace).  
   
  [!code-cpp[cx_strings#04](../cppcx/codesnippet/CPP/cppcx_strings/class1.cpp#04)]  
   
 ## String length and embedded NULL values  
- The [String::Length Method](../cppcx/platform-string-class.md#length) returns the number of characters in the string, not the number of bytes. The terminating NULL character is not counted unless you explicitly specify it when you use stack semantics to construct a string.  
+ The [String::Length](../cppcx/platform-string-class.md#length) returns the number of characters in the string, not the number of bytes. The terminating NULL character is not counted unless you explicitly specify it when you use stack semantics to construct a string.  
   
  A `Platform::String` can contain embedded NULL values, but only when the NULL is a result of a concatenation operation. Embedded NULLs are not supported in string literals; therefore, you cannot use embedded NULLs in that manner to initialize a `Platform::String`. Embedded NULL values in a `Platform::String` are ignored when the string is displayed, for example, when it is assigned to a `TextBlock::Text` property. Embedded NULLs are removed when the string value is returned by the `Data`property.  
   
