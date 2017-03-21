@@ -182,20 +182,20 @@ namespace concurrency;
   
 |Name|Description|  
 |----------|-----------------|  
-|[agent_status Enumeration](concurrency-namespace-enums.md#agent_status)|The valid states for an `agent`.|  
-|[Agents_EventType Enumeration](concurrency-namespace-enums.md#agents_eventtype)|The types of events that can be traced using the tracing functionality offered by the Agents Library|  
-|[ConcRT_EventType Enumeration](concurrency-namespace-enums.md#concrt_eventtype)|The types of events that can be traced using the tracing functionality offered by the Concurrency Runtime.|  
-|[Concrt_TraceFlags Enumeration](concurrency-namespace-enums.md#concrt_traceflags)|Trace flags for the event types|  
-|[CriticalRegionType Enumeration](concurrency-namespace-enums.md#criticalregiontype)|The type of critical region a context is inside.|  
-|[DynamicProgressFeedbackType Enumeration](concurrency-namespace-enums.md#dynamicprogressfeedbacktype)|Used by the `DynamicProgressFeedback` policy to describe whether resources for the scheduler will be rebalanced according to statistical information gathered from the scheduler or only based on virtual processors going in and out of the idle state through calls to the `Activate` and `Deactivate` methods on the `IVirtualProcessorRoot` interface. For more information on available scheduler policies, see [PolicyElementKey Enumeration](concurrency-namespace-enums.md#policyelementkey).|  
-|[join_type Enumeration](concurrency-namespace-enums.md#join_type)|The type of a `join` messaging block.|  
-|[message_status Enumeration](concurrency-namespace-enums.md#message_status)|The valid responses for an offer of a `message` object to a block.|  
-|[PolicyElementKey Enumeration](concurrency-namespace-enums.md#policyelementkey)|Policy keys describing aspects of scheduler behavior. Each policy element is described by a key-value pair. For more information about scheduler policies and their impact on schedulers, see [Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md).|  
-|[SchedulerType Enumeration](concurrency-namespace-enums.md#schedulertype)|Used by the `SchedulerKind` policy to describe the type of threads that the scheduler should utilize for underlying execution contexts. For more information on available scheduler policies, see [PolicyElementKey Enumeration](concurrency-namespace-enums.md#policyelementkey).|  
-|[SchedulingProtocolType Enumeration](concurrency-namespace-enums.md#schedulingprotocoltype)|Used by the `SchedulingProtocol` policy to describe which scheduling algorithm will be utilized for the scheduler. For more information on available scheduler policies, see [PolicyElementKey Enumeration](concurrency-namespace-enums.md#policyelementkey).|  
-|[SwitchingProxyState Enumeration](concurrency-namespace-enums.md#switchingproxystate)|Used to denote the state a thread proxy is in, when it is executing a cooperative context switch to a different thread proxy.|  
-|[task_group_status Enumeration](concurrency-namespace-enums.md#task_group_status)|Describes the execution status of a `task_group` or `structured_task_group` object. A value of this type is returned by numerous methods that wait on tasks scheduled to a task group to complete.|  
-|[WinRTInitializationType Enumeration](concurrency-namespace-enums.md#winrtinitializationtype)|Used by the `WinRTInitialization` policy to describe whether and how the Windows Runtime will be initialized on scheduler threads for an application which runs on operating systems with version Windows 8 or higher. For more information on available scheduler policies, see [PolicyElementKey Enumeration](concurrency-namespace-enums.md#policyelementkey).|  
+|[agent_status](concurrency-namespace-enums.md#agent_status)|The valid states for an `agent`.|  
+|[Agents_EventType](concurrency-namespace-enums.md#agents_eventtype)|The types of events that can be traced using the tracing functionality offered by the Agents Library|  
+|[ConcRT_EventType](concurrency-namespace-enums.md#concrt_eventtype)|The types of events that can be traced using the tracing functionality offered by the Concurrency Runtime.|  
+|[Concrt_TraceFlags](concurrency-namespace-enums.md#concrt_traceflags)|Trace flags for the event types|  
+|[CriticalRegionType](concurrency-namespace-enums.md#criticalregiontype)|The type of critical region a context is inside.|  
+|[DynamicProgressFeedbackType](concurrency-namespace-enums.md#dynamicprogressfeedbacktype)|Used by the `DynamicProgressFeedback` policy to describe whether resources for the scheduler will be rebalanced according to statistical information gathered from the scheduler or only based on virtual processors going in and out of the idle state through calls to the `Activate` and `Deactivate` methods on the `IVirtualProcessorRoot` interface. For more information on available scheduler policies, see [PolicyElementKey](concurrency-namespace-enums.md#policyelementkey).|  
+|[join_type](concurrency-namespace-enums.md#join_type)|The type of a `join` messaging block.|  
+|[message_status](concurrency-namespace-enums.md#message_status)|The valid responses for an offer of a `message` object to a block.|  
+|[PolicyElementKey](concurrency-namespace-enums.md#policyelementkey)|Policy keys describing aspects of scheduler behavior. Each policy element is described by a key-value pair. For more information about scheduler policies and their impact on schedulers, see [Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md).|  
+|[SchedulerType](concurrency-namespace-enums.md#schedulertype)|Used by the `SchedulerKind` policy to describe the type of threads that the scheduler should utilize for underlying execution contexts. For more information on available scheduler policies, see [PolicyElementKey](concurrency-namespace-enums.md#policyelementkey).|  
+|[SchedulingProtocolType](concurrency-namespace-enums.md#schedulingprotocoltype)|Used by the `SchedulingProtocol` policy to describe which scheduling algorithm will be utilized for the scheduler. For more information on available scheduler policies, see [PolicyElementKey](concurrency-namespace-enums.md#policyelementkey).|  
+|[SwitchingProxyState](concurrency-namespace-enums.md#switchingproxystate)|Used to denote the state a thread proxy is in, when it is executing a cooperative context switch to a different thread proxy.|  
+|[task_group_status](concurrency-namespace-enums.md#task_group_status)|Describes the execution status of a `task_group` or `structured_task_group` object. A value of this type is returned by numerous methods that wait on tasks scheduled to a task group to complete.|  
+|[WinRTInitializationType](concurrency-namespace-enums.md#winrtinitializationtype)|Used by the `WinRTInitialization` policy to describe whether and how the Windows Runtime will be initialized on scheduler threads for an application which runs on operating systems with version Windows 8 or higher. For more information on available scheduler policies, see [PolicyElementKey](concurrency-namespace-enums.md#policyelementkey).|  
   
 ### Functions  
   
@@ -248,37 +248,37 @@ namespace concurrency;
   
 |Name|Description|  
 |----------|-----------------| 
-|[operator!= Operator](concurrency-namespace-operators.md#operator_neq)|Tests if the `concurrent_vector` object on the left side of the operator is not equal to the `concurrent_vector` object on the right side.|  
-|[operator&& Operator](concurrency-namespace-operators.md#operator_amp_amp)|Overloaded. Creates a task that will complete succesfully when both of the tasks supplied as arguments complete successfully.|  
-|[operator&#124;&#124; Operator](concurrency-namespace-operators.md#operator_lor)|Overloaded. Creates a task that will complete successfully when either of the tasks supplied as arguments completes successfully.|  
-|[operator< Operator](concurrency-namespace-operators.md#operator_lt)|Tests if the `concurrent_vector` object on the left side of the operator is less than the `concurrent_vector` object on the right side.|  
-|[operator<= Operator](concurrency-namespace-operators.md#operator_lt_eq)|Tests if the `concurrent_vector` object on the left side of the operator is less than or equal to the `concurrent_vector` object on the right side.|  
-|[operator== Operator](concurrency-namespace-operators.md#operator_eq_eq)|Tests if the `concurrent_vector` object on the left side of the operator is equal to the `concurrent_vector` object on the right side.|  
-|[operator> Operator](concurrency-namespace-operators.md#operator_gt)|Tests if the `concurrent_vector` object on the left side of the operator is greater than the `concurrent_vector` object on the right side.|  
-|[operator>= Operator](concurrency-namespace-operators.md#operator_lt_eq)|Tests if the `concurrent_vector` object on the left side of the operator is greater than or equal to the `concurrent_vector` object on the right side.|  
+|[operator!=](concurrency-namespace-operators.md#operator_neq)|Tests if the `concurrent_vector` object on the left side of the operator is not equal to the `concurrent_vector` object on the right side.|  
+|[operator&&](concurrency-namespace-operators.md#operator_amp_amp)|Overloaded. Creates a task that will complete succesfully when both of the tasks supplied as arguments complete successfully.|  
+|[operator&#124;&#124;](concurrency-namespace-operators.md#operator_lor)|Overloaded. Creates a task that will complete successfully when either of the tasks supplied as arguments completes successfully.|  
+|[operator<](concurrency-namespace-operators.md#operator_lt)|Tests if the `concurrent_vector` object on the left side of the operator is less than the `concurrent_vector` object on the right side.|  
+|[operator<=](concurrency-namespace-operators.md#operator_lt_eq)|Tests if the `concurrent_vector` object on the left side of the operator is less than or equal to the `concurrent_vector` object on the right side.|  
+|[operator==](concurrency-namespace-operators.md#operator_eq_eq)|Tests if the `concurrent_vector` object on the left side of the operator is equal to the `concurrent_vector` object on the right side.|  
+|[operator>](concurrency-namespace-operators.md#operator_gt)|Tests if the `concurrent_vector` object on the left side of the operator is greater than the `concurrent_vector` object on the right side.|  
+|[operator>=](concurrency-namespace-operators.md#operator_lt_eq)|Tests if the `concurrent_vector` object on the left side of the operator is greater than or equal to the `concurrent_vector` object on the right side.|  
   
 ### Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[AgentEventGuid Constant](concurrency-namespace-constants1.md#agenteventguid)|A category GUID ({B9B5B78C-0713-4898-A21A-C67949DCED07}) describing ETW events fired by the Agents library in the Concurrency Runtime.|  
-|[ChoreEventGuid Constant](concurrency-namespace-constants1.md#choreeventguid)|A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to chores or tasks.|  
-|[ConcRT_ProviderGuid Constant](concurrency-namespace-constants1.md#concrt_providerguid)|The ETW provider GUID for the Concurrency Runtime.|  
-|[CONCRT_RM_VERSION_1 Constant](concurrency-namespace-constants1.md#concrt_rm_version_1)|Indicates support of the Resource Manager interface defined in Visual Studio 2010.|  
-|[ConcRTEventGuid Constant](concurrency-namespace-constants1.md#concrteventguid)|A category GUID describing ETW events fired by the Concurrency Runtime that are not more specifically described by another category.|  
-|[ContextEventGuid Constant](concurrency-namespace-constants1.md#contexteventguid)|A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to contexts.|  
-|[COOPERATIVE_TIMEOUT_INFINITE Constant](concurrency-namespace-constants1.md#cooperative_timeout_infinite)|Value indicating that a wait should never time out.|  
-|[COOPERATIVE_WAIT_TIMEOUT Constant](concurrency-namespace-constants1.md#cooperative_wait_timeout)|Value indicating that a wait timed out.|  
-|[INHERIT_THREAD_PRIORITY Constant](concurrency-namespace-constants1.md#inherit_thread_priority)|Special value for the policy key `ContextPriority` indicating that the thread priority of all contexts in the scheduler should be the same as that of the thread which created the scheduler.|  
-|[LockEventGuid Constant](concurrency-namespace-constants1.md#lockeventguid)|A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to locks.|  
-|[MaxExecutionResources Constant](concurrency-namespace-constants1.md#maxexecutionresources)|Special value for the policy keys `MinConcurrency` and `MaxConcurrency`. Defaults to the number of hardware threads on the machine in the absence of other constraints.|  
-|[PPLParallelForeachEventGuid Constant](concurrency-namespace-constants1.md#pplparallelforeacheventguid)|A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to usage of the `parallel_for_each` function.|  
-|[PPLParallelForEventGuid Constant](concurrency-namespace-constants1.md#pplparallelforeventguid)|A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to usage of the `parallel_for` function.|  
-|[PPLParallelInvokeEventGuid Constant](concurrency-namespace-constants1.md#pplparallelinvokeeventguid)|A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to usage of the `parallel_invoke` function.|  
-|[ResourceManagerEventGuid Constant](concurrency-namespace-constants1.md#resourcemanagereventguid)|A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to the resource manager.|  
-|[ScheduleGroupEventGuid Constant](concurrency-namespace-constants1.md#schedulegroupeventguid)|A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to schedule groups.|  
-|[SchedulerEventGuid Constant](concurrency-namespace-constants1.md#schedulereventguid)|A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to scheduler activity.|  
-|[VirtualProcessorEventGuid Constant](concurrency-namespace-constants1.md#virtualprocessoreventguid)|A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to virtual processors.|  
+|[AgentEventGuid](concurrency-namespace-constants1.md#agenteventguid)|A category GUID ({B9B5B78C-0713-4898-A21A-C67949DCED07}) describing ETW events fired by the Agents library in the Concurrency Runtime.|  
+|[ChoreEventGuid](concurrency-namespace-constants1.md#choreeventguid)|A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to chores or tasks.|  
+|[ConcRT_ProviderGuid](concurrency-namespace-constants1.md#concrt_providerguid)|The ETW provider GUID for the Concurrency Runtime.|  
+|[CONCRT_RM_VERSION_1](concurrency-namespace-constants1.md#concrt_rm_version_1)|Indicates support of the Resource Manager interface defined in Visual Studio 2010.|  
+|[ConcRTEventGuid](concurrency-namespace-constants1.md#concrteventguid)|A category GUID describing ETW events fired by the Concurrency Runtime that are not more specifically described by another category.|  
+|[ContextEventGuid](concurrency-namespace-constants1.md#contexteventguid)|A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to contexts.|  
+|[COOPERATIVE_TIMEOUT_INFINITE](concurrency-namespace-constants1.md#cooperative_timeout_infinite)|Value indicating that a wait should never time out.|  
+|[COOPERATIVE_WAIT_TIMEOUT](concurrency-namespace-constants1.md#cooperative_wait_timeout)|Value indicating that a wait timed out.|  
+|[INHERIT_THREAD_PRIORITY](concurrency-namespace-constants1.md#inherit_thread_priority)|Special value for the policy key `ContextPriority` indicating that the thread priority of all contexts in the scheduler should be the same as that of the thread which created the scheduler.|  
+|[LockEventGuid](concurrency-namespace-constants1.md#lockeventguid)|A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to locks.|  
+|[MaxExecutionResources](concurrency-namespace-constants1.md#maxexecutionresources)|Special value for the policy keys `MinConcurrency` and `MaxConcurrency`. Defaults to the number of hardware threads on the machine in the absence of other constraints.|  
+|[PPLParallelForeachEventGuid](concurrency-namespace-constants1.md#pplparallelforeacheventguid)|A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to usage of the `parallel_for_each` function.|  
+|[PPLParallelForEventGuid](concurrency-namespace-constants1.md#pplparallelforeventguid)|A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to usage of the `parallel_for` function.|  
+|[PPLParallelInvokeEventGuid](concurrency-namespace-constants1.md#pplparallelinvokeeventguid)|A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to usage of the `parallel_invoke` function.|  
+|[ResourceManagerEventGuid](concurrency-namespace-constants1.md#resourcemanagereventguid)|A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to the resource manager.|  
+|[ScheduleGroupEventGuid](concurrency-namespace-constants1.md#schedulegroupeventguid)|A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to schedule groups.|  
+|[SchedulerEventGuid](concurrency-namespace-constants1.md#schedulereventguid)|A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to scheduler activity.|  
+|[VirtualProcessorEventGuid](concurrency-namespace-constants1.md#virtualprocessoreventguid)|A category GUID describing ETW events fired by the Concurrency Runtime that are directly related to virtual processors.|  
   
 ## Requirements  
  **Header:** agents.h, concrt.h, concrtrm.h, concurrent_priority_queue.h, concurrent_queue.h, concurrent_unordered_map.h, concurrent_unordered_set.h, concurrent_vector.h, internal_concurrent_hash.h, internal_split_ordered_list.h, ppl.h, pplcancellation_token.h, pplconcrt.h, pplinterface.h, ppltasks.h  

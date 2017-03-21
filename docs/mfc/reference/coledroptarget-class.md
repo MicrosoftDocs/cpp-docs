@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleDropTarget"
+f1_keywords: ['COleDropTarget', 'AFXOLE/COleDropTarget', 'AFXOLE/COleDropTarget::COleDropTarget', 'AFXOLE/COleDropTarget::OnDragEnter', 'AFXOLE/COleDropTarget::OnDragLeave', 'AFXOLE/COleDropTarget::OnDragOver', 'AFXOLE/COleDropTarget::OnDragScroll', 'AFXOLE/COleDropTarget::OnDrop', 'AFXOLE/COleDropTarget::OnDropEx', 'AFXOLE/COleDropTarget::Register', 'AFXOLE/COleDropTarget::Revoke']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

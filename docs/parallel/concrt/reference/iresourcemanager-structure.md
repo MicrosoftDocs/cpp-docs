@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrtrm/concurrency::IResourceManager"
+f1_keywords: ['IResourceManager', 'CONCRTRM/concurrency::IResourceManager', 'CONCRTRM/concurrency::IResourceManager::IResourceManager::OSVersion', 'CONCRTRM/concurrency::IResourceManager::IResourceManager::CreateNodeTopology', 'CONCRTRM/concurrency::IResourceManager::IResourceManager::GetAvailableNodeCount', 'CONCRTRM/concurrency::IResourceManager::IResourceManager::GetFirstNode', 'CONCRTRM/concurrency::IResourceManager::IResourceManager::Reference', 'CONCRTRM/concurrency::IResourceManager::IResourceManager::RegisterScheduler', 'CONCRTRM/concurrency::IResourceManager::IResourceManager::Release']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,18 +48,18 @@ struct IResourceManager;
   
 |Name|Description|  
 |----------|-----------------|  
-|[IResourceManager::OSVersion Enumeration](#osversion)|An enumerated type that represents the operating system version.|  
+|[IResourceManager::OSVersion](#osversion)|An enumerated type that represents the operating system version.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[IResourceManager::CreateNodeTopology Method](#createnodetopology)|Present only in debug builds of the runtime, this method is a test hook designed to facilitate testing of the Resource Manager on varying hardware topologies, without requiring actual hardware matching the configuration. With retail builds of the runtime, this method will return without performing any action.|  
-|[IResourceManager::GetAvailableNodeCount Method](#getavailablenodecount)|Returns the number of nodes available to the Resource Manager.|  
-|[IResourceManager::GetFirstNode Method](#getfirstnode)|Returns the first node in enumeration order as defined by the Resource Manager.|  
-|[IResourceManager::Reference Method](#reference)|Increments the reference count on the Resource Manager instance.|  
-|[IResourceManager::RegisterScheduler Method](#registerscheduler)|Registers a scheduler with the Resource Manager. Once the scheduler is registered, it should communicate with the Resource Manager using the `ISchedulerProxy` interface that is returned.|  
-|[IResourceManager::Release Method](#release)|Decrements the reference count on the Resource Manager instance. The Resource Manager is destroyed when its reference count goes to `0`.|  
+|[IResourceManager::CreateNodeTopology](#createnodetopology)|Present only in debug builds of the runtime, this method is a test hook designed to facilitate testing of the Resource Manager on varying hardware topologies, without requiring actual hardware matching the configuration. With retail builds of the runtime, this method will return without performing any action.|  
+|[IResourceManager::GetAvailableNodeCount](#getavailablenodecount)|Returns the number of nodes available to the Resource Manager.|  
+|[IResourceManager::GetFirstNode](#getfirstnode)|Returns the first node in enumeration order as defined by the Resource Manager.|  
+|[IResourceManager::Reference](#reference)|Increments the reference count on the Resource Manager instance.|  
+|[IResourceManager::RegisterScheduler](#registerscheduler)|Registers a scheduler with the Resource Manager. Once the scheduler is registered, it should communicate with the Resource Manager using the `ISchedulerProxy` interface that is returned.|  
+|[IResourceManager::Release](#release)|Decrements the reference count on the Resource Manager instance. The Resource Manager is destroyed when its reference count goes to `0`.|  
   
 ## Remarks  
  Use the [CreateResourceManager](concurrency-namespace-functions.md) function to obtain an interface to the singleton Resource Manager instance. The method increments a reference count on the Resource Manager, and you should invoke the [IResourceManager::Release](#release) method to release the reference when you are done with Resource Manager. Typically, each scheduler you create will invoke this method during creation, and release the reference to the Resource Manager after it shuts down.  

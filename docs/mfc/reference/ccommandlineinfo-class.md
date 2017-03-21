@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CCommandLineInfo"
+f1_keywords: ['CCommandLineInfo', 'AFXWIN/CCommandLineInfo', 'AFXWIN/CCommandLineInfo::CCommandLineInfo', 'AFXWIN/CCommandLineInfo::ParseParam', 'AFXWIN/CCommandLineInfo::m_bRunAutomated', 'AFXWIN/CCommandLineInfo::m_bRunEmbedded', 'AFXWIN/CCommandLineInfo::m_bShowSplash', 'AFXWIN/CCommandLineInfo::m_nShellCommand', 'AFXWIN/CCommandLineInfo::m_strDriverName', 'AFXWIN/CCommandLineInfo::m_strFileName', 'AFXWIN/CCommandLineInfo::m_strPortName', 'AFXWIN/CCommandLineInfo::m_strPrinterName', 'AFXWIN/CCommandLineInfo::m_strRestartIdentifier']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -66,8 +65,8 @@ class CCommandLineInfo : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CCommandLineInfo::m_bRunAutomated](#m_brunautomated)|Indicates the command-line **/Automation** option was found.|  
-|[CCommandLineInfo::m_bRunEmbedded](#m_brunembedded)|Indicates the command-line **/Embedding** option was found.|  
+|[CCommandLineInfo::m_bRunAutomated](#m_brunautomated)|Indicates the command-line `/Automation` option was found.|  
+|[CCommandLineInfo::m_bRunEmbedded](#m_brunembedded)|Indicates the command-line `/Embedding` option was found.|  
 |[CCommandLineInfo::m_bShowSplash](#m_bshowsplash)|Indicates if a splash screen should be shown.|  
 |[CCommandLineInfo::m_nShellCommand](#m_nshellcommand)|Indicates the shell command to be processed.|  
 |[CCommandLineInfo::m_strDriverName](#m_strdrivername)|Indicates the driver name if the shell command is Print To; otherwise empty.|  
@@ -85,13 +84,13 @@ class CCommandLineInfo : public CObject
 |----------------------------|----------------------|  
 |*app*|New file.|  
 |*app* filename|Open file.|  
-|*app* **/p** filename|Print file to default printer.|  
-|*app* **/pt** filename printer driver port|Print file to the specified printer.|  
-|*app* **/dde**|Start up and await DDE command.|  
-|*app* **/Automation**|Start up as an OLE automation server.|  
-|*app* **/Embedding**|Start up to edit an embedded OLE item.|  
-|*app* **/Register**<br /><br /> *app* **/Regserver**|Informs the application to perform any registration tasks.|  
-|*app* **/Unregister**<br /><br /> *app* **/Unregserver**|Informs the application to perform any un-registration tasks.|  
+|*app* `/p` filename|Print file to default printer.|  
+|*app* `/pt` filename printer driver port|Print file to the specified printer.|  
+|*app* `/dde`|Start up and await DDE command.|  
+|*app* `/Automation`|Start up as an OLE automation server.|  
+|*app* `/Embedding`|Start up to edit an embedded OLE item.|  
+|*app* `/Register`<br /><br /> *app* `/Regserver`|Informs the application to perform any registration tasks.|  
+|*app* `/Unregister`<br /><br /> *app* `/Unregserver`|Informs the application to perform any un-registration tasks.|  
   
  Derive a new class from `CCommandLineInfo` to handle other flags and parameter values. Override [ParseParam](#parseparam) to handle the new flags.  
   
@@ -111,7 +110,7 @@ CCommandLineInfo();
 ```  
   
 ### Remarks  
- The default is to show the splash screen ( `m_bShowSplash`**=TRUE**) and to execute the New command on the File menu ( `m_nShellCommand`**=NewFile**).  
+ The default is to show the splash screen ( `m_bShowSplash=TRUE`) and to execute the New command on the File menu ( `m_nShellCommand`**=NewFile**).  
   
  The application framework calls [ParseParam](#parseparam) to fill data members of this object.  
   
@@ -119,24 +118,24 @@ CCommandLineInfo();
  [!code-cpp[NVC_MFCDocView#54](../../mfc/codesnippet/cpp/ccommandlineinfo-class_1.cpp)]  
   
 ##  <a name="m_brunautomated"></a>  CCommandLineInfo::m_bRunAutomated  
- Indicates that the **/Automation** flag was found on the command line.  
+ Indicates that the `/Automation` flag was found on the command line.  
   
 ```  
 BOOL m_bRunAutomated;  
 ```  
   
 ### Remarks  
- If **TRUE**, this means start up as an OLE automation server.  
+ If `TRUE`, this means start up as an OLE automation server.  
   
 ##  <a name="m_brunembedded"></a>  CCommandLineInfo::m_bRunEmbedded  
- Indicates that the **/Embedding** flag was found on the command line.  
+ Indicates that the `/Embedding` flag was found on the command line.  
   
 ```  
 BOOL m_bRunEmbedded;  
 ```  
   
 ### Remarks  
- If **TRUE**, this means start up for editing an embedded OLE item.  
+ If `TRUE`, this means start up for editing an embedded OLE item.  
   
 ##  <a name="m_bshowsplash"></a>  CCommandLineInfo::m_bShowSplash  
  Indicates that the splash screen should be displayed.  
@@ -146,7 +145,7 @@ BOOL m_bShowSplash;
 ```  
   
 ### Remarks  
- If **TRUE**, this means the splash screen for this application should be displayed during startup. The default implementation of [ParseParam](#parseparam) sets this data member to **TRUE** if [m_nShellCommand](#m_nshellcommand) is equal to **CCommandLineInfo::FileNew**.  
+ If `TRUE`, this means the splash screen for this application should be displayed during startup. The default implementation of [ParseParam](#parseparam) sets this data member to `TRUE` if [m_nShellCommand](#m_nshellcommand) is equal to `CCommandLineInfo::FileNew`.  
   
 ##  <a name="m_nshellcommand"></a>  CCommandLineInfo::m_nShellCommand  
  Indicates the shell command for this instance of the application.  
@@ -211,7 +210,7 @@ CString m_strDriverName;
 ```  
   
 ### Remarks  
- This parameter is typically the name of the printer driver for a Print To shell command. The default implementation of [ParseParam](#parseparam) sets this data member only if the **/pt** flag was found on the command line.  
+ This parameter is typically the name of the printer driver for a Print To shell command. The default implementation of [ParseParam](#parseparam) sets this data member only if the `/pt` flag was found on the command line.  
   
 ##  <a name="m_strfilename"></a>  CCommandLineInfo::m_strFileName  
  Stores the value of the first non-flag parameter on the command line.  
@@ -231,7 +230,7 @@ CString m_strPortName;
 ```  
   
 ### Remarks  
- This parameter is typically the name of the printer port for a Print To shell command. The default implementation of [ParseParam](#parseparam) sets this data member only if the **/pt** flag was found on the command line.  
+ This parameter is typically the name of the printer port for a Print To shell command. The default implementation of [ParseParam](#parseparam) sets this data member only if the `/pt` flag was found on the command line.  
   
 ##  <a name="m_strprintername"></a>  CCommandLineInfo::m_strPrinterName  
  Stores the value of the second non-flag parameter on the command line.  
@@ -241,7 +240,7 @@ CString m_strPrinterName;
 ```  
   
 ### Remarks  
- This parameter is typically the name of the printer for a Print To shell command. The default implementation of [ParseParam](#parseparam) sets this data member only if the **/pt** flag was found on the command line.  
+ This parameter is typically the name of the printer for a Print To shell command. The default implementation of [ParseParam](#parseparam) sets this data member only if the `/pt` flag was found on the command line.  
   
 ##  <a name="m_strrestartidentifier"></a>  CCommandLineInfo::m_strRestartIdentifier  
  The unique restart identifier on the command line.  
@@ -282,27 +281,27 @@ virtual void ParseParam(
  Indicates if this is the last parameter or flag on the command line.  
   
 ### Remarks  
- [CWinApp::ParseCommandLine](../../mfc/reference/cwinapp-class.md#parsecommandline) calls `ParseParam` once for each parameter or flag on the command line, passing the argument to `pszParam`. If the first character of the parameter is a ' **-**' or a ' **/**', then it is removed and *bFlag* is set to **TRUE**. When parsing the final parameter, `bLast` is set to **TRUE**.  
+ [CWinApp::ParseCommandLine](../../mfc/reference/cwinapp-class.md#parsecommandline) calls `ParseParam` once for each parameter or flag on the command line, passing the argument to `pszParam`. If the first character of the parameter is a ' **-**' or a ' **/**', then it is removed and *bFlag* is set to `TRUE`. When parsing the final parameter, `bLast` is set to `TRUE`.  
   
- The default implementation of this function recognizes the following flags: **/p**, **/pt**, **/dde**, **/Automation**, and **/Embedding**, as shown in the following table:  
+ The default implementation of this function recognizes the following flags: `/p`, `/pt`, `/dde`, `/Automation`, and `/Embedding`, as shown in the following table:  
   
 |Command-line argument|Command executed|  
 |----------------------------|----------------------|  
 |*app*|New file.|  
 |*app* filename|Open file.|  
-|*app* **/p** filename|Print file to default printer.|  
-|*app* **/pt** filename printer driver port|Print file to the specified printer.|  
-|*app* **/dde**|Start up and await DDE command.|  
-|*app* **/Automation**|Start up as an OLE automation server.|  
-|*app* **/Embedding**|Start up to edit an embedded OLE item.|  
-|*app* **/Register**<br /><br /> *app* **/Regserver**|Informs the application to perform any registration tasks.|  
-|*app* **/Unregister**<br /><br /> *app* **/Unregserver**|Informs the application to perform any un-registration tasks.|  
+|*app* `/p` filename|Print file to default printer.|  
+|*app* `/pt` filename printer driver port|Print file to the specified printer.|  
+|*app* `/dde`|Start up and await DDE command.|  
+|*app* `/Automation`|Start up as an OLE automation server.|  
+|*app* `/Embedding`|Start up to edit an embedded OLE item.|  
+|*app* `/Register`<br /><br /> *app* `/Regserver`|Informs the application to perform any registration tasks.|  
+|*app* `/Unregister`<br /><br /> *app* `/Unregserver`|Informs the application to perform any un-registration tasks.|  
   
  This information is stored in [m_bRunAutomated](#m_brunautomated), [m_bRunEmbedded](#m_brunembedded), and [m_nShellCommand](#m_nshellcommand). Flags are marked by either a forward-slash ' **/**' or hyphen ' **-**'.  
   
- The default implementation puts the first non-flag parameter into [m_strFileName](#m_strfilename). In the case of the **/pt** flag, the default implementation puts the second, third, and fourth non-flag parameters into [m_strPrinterName](#m_strprintername), [m_strDriverName](#m_strdrivername), and [m_strPortName](#m_strportname), respectively.  
+ The default implementation puts the first non-flag parameter into [m_strFileName](#m_strfilename). In the case of the `/pt` flag, the default implementation puts the second, third, and fourth non-flag parameters into [m_strPrinterName](#m_strprintername), [m_strDriverName](#m_strdrivername), and [m_strPortName](#m_strportname), respectively.  
   
- The default implementation also sets [m_bShowSplash](#m_bshowsplash) to **TRUE** only in the case of a new file. In the case of a new file, the user has taken action involving the application itself. In any other case, including opening existing files using the shell, the user action involves the file directly. In a document-centric standpoint, the splash screen does not need to announce the application starting up.  
+ The default implementation also sets [m_bShowSplash](#m_bshowsplash) to `TRUE` only in the case of a new file. In the case of a new file, the user has taken action involving the application itself. In any other case, including opening existing files using the shell, the user action involves the file directly. In a document-centric standpoint, the splash screen does not need to announce the application starting up.  
   
  Override this function in your derived class to handle other flag and parameter values.  
   

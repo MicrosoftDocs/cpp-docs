@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CAdapt"
-  - "ATL.CAdapt<T>"
-  - "ATL::CAdapt"
-  - "ATL::CAdapt<T>"
-  - "CAdapt"
+f1_keywords: ['CAdapt', 'ATLCOMCLI/ATL::CAdapt', 'ATLCOMCLI/ATL::CAdapt::CAdapt', 'ATLCOMCLI/ATL::CAdapt::m_T']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

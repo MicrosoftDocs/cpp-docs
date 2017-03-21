@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::IQuickActivateImpl"
-  - "ATL::IQuickActivateImpl<T>"
-  - "ATL.IQuickActivateImpl"
-  - "ATL.IQuickActivateImpl<T>"
-  - "IQuickActivateImpl"
+f1_keywords: ['IQuickActivateImpl', 'ATLCTL/ATL::IQuickActivateImpl', 'ATLCTL/ATL::IQuickActivateImpl::GetContentExtent', 'ATLCTL/ATL::IQuickActivateImpl::QuickActivate', 'ATLCTL/ATL::IQuickActivateImpl::SetContentExtent']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

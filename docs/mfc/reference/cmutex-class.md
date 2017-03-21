@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "Mutex"
-  - "CMutex"
+f1_keywords: ['CMutex', 'AFXMT/CMutex', 'AFXMT/CMutex::CMutex']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

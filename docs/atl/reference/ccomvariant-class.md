@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CComVariant"
-  - "ATL::CComVariant"
-  - "CComVariant"
+f1_keywords: ['CComVariant', 'ATLCOMCLI/ATL::CComVariant', 'ATLCOMCLI/ATL::CComVariant::CComVariant', 'ATLCOMCLI/ATL::CComVariant::Attach', 'ATLCOMCLI/ATL::CComVariant::ChangeType', 'ATLCOMCLI/ATL::CComVariant::Clear', 'ATLCOMCLI/ATL::CComVariant::Copy', 'ATLCOMCLI/ATL::CComVariant::CopyTo', 'ATLCOMCLI/ATL::CComVariant::Detach', 'ATLCOMCLI/ATL::CComVariant::GetSize', 'ATLCOMCLI/ATL::CComVariant::ReadFromStream', 'ATLCOMCLI/ATL::CComVariant::SetByRef', 'ATLCOMCLI/ATL::CComVariant::WriteToStream']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

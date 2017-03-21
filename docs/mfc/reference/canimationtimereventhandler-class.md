@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxanimationcontroller/CAnimationTimerEventHandler"
-  - "CAnimationTimerEventHandler"
+f1_keywords: ['CAnimationTimerEventHandler', 'AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler', 'AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler::CreateInstance', 'AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler::OnPostUpdate', 'AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler::OnPreUpdate', 'AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler::OnRenderingTooSlow', 'AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler::SetAnimationController']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

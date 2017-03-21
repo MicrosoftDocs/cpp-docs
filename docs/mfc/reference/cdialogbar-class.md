@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDialogBar"
+f1_keywords: ['CDialogBar', 'AFXEXT/CDialogBar', 'AFXEXT/CDialogBar::CDialogBar', 'AFXEXT/CDialogBar::Create']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "amp/Concurrency::tiled_index"
+f1_keywords: ['tiled_index', 'AMP/tiled_index', 'AMP/Concurrency::tiled_index::tiled_index', 'AMP/Concurrency::tiled_index::get_tile_extent', 'AMP/Concurrency::tiled_index::barrier ' 'AMP/Concurrency::tiled_index::global ' 'AMP/Concurrency::tiled_index::local ' 'AMP/Concurrency::tiled_index::rank ' 'AMP/Concurrency::tiled_index::tile ' 'AMP/Concurrency::tiled_index::tile_dim0 ' 'AMP/Concurrency::tiled_index::tile_dim1 ' 'AMP/Concurrency::tiled_index::tile_dim2 ' 'AMP/Concurrency::tiled_index::tile_origin ' 'AMP/Concurrency::tiled_index::tile_extent']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -82,7 +81,7 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[get_tile_extent Method](#tiled_index__get_tile_extent)|Returns an [extent](extent-class.md) object that has the values of the `tiled_index` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
+|[get_tile_extent](#tiled_index__get_tile_extent)|Returns an [extent](extent-class.md) object that has the values of the `tiled_index` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
 
 
   
@@ -106,7 +105,7 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[tile_extent Data Member](#tile_extent)|Gets an [extent](extent-class.md) object that has the values of the `tiled_index` template arguments `tiled_index` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
+|[tile_extent](#tile_extent)|Gets an [extent](extent-class.md) object that has the values of the `tiled_index` template arguments `tiled_index` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
 
   
 ## Inheritance Hierarchy  

@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CComAggObject<contained>"
-  - "ATL.CComAggObject"
-  - "ATL.CComAggObject<contained>"
-  - "CComAggObject"
-  - "ATL::CComAggObject"
+f1_keywords: ['CComAggObject', 'ATLCOM/ATL::CComAggObject', 'ATLCOM/ATL::CComAggObject::CComAggObject', 'ATLCOM/ATL::CComAggObject::AddRef', 'ATLCOM/ATL::CComAggObject::CreateInstance', 'ATLCOM/ATL::CComAggObject::FinalConstruct', 'ATLCOM/ATL::CComAggObject::FinalRelease', 'ATLCOM/ATL::CComAggObject::QueryInterface', 'ATLCOM/ATL::CComAggObject::Release', 'ATLCOM/ATL::CComAggObject::m_contained']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

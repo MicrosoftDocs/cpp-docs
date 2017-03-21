@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CAutoRevertImpersonation"
-  - "CAutoRevertImpersonation"
+f1_keywords: ['CAutoRevertImpersonation', 'ATLSECURITY/ATL::CAutoRevertImpersonation', 'ATLSECURITY/ATL::CAutoRevertImpersonation::CAutoRevertImpersonation', 'ATLSECURITY/ATL::CAutoRevertImpersonation::Attach', 'ATLSECURITY/ATL::CAutoRevertImpersonation::Detach', 'ATLSECURITY/ATL::CAutoRevertImpersonation::GetAccessToken']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

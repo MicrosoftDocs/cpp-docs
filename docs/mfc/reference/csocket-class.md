@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSocket"
+f1_keywords: ['CSocket', 'AFXSOCK/CSocket', 'AFXSOCK/CSocket::CSocket', 'AFXSOCK/CSocket::Attach', 'AFXSOCK/CSocket::CancelBlockingCall', 'AFXSOCK/CSocket::Create', 'AFXSOCK/CSocket::FromHandle', 'AFXSOCK/CSocket::IsBlocking', 'AFXSOCK/CSocket::OnMessagePending']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

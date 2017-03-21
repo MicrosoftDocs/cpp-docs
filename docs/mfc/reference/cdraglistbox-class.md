@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDragListBox"
+f1_keywords: ['CDragListBox', 'AFXCMN/CDragListBox', 'AFXCMN/CDragListBox::CDragListBox', 'AFXCMN/CDragListBox::BeginDrag', 'AFXCMN/CDragListBox::CancelDrag', 'AFXCMN/CDragListBox::Dragging', 'AFXCMN/CDragListBox::DrawInsert', 'AFXCMN/CDragListBox::Dropped', 'AFXCMN/CDragListBox::ItemFromPt']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

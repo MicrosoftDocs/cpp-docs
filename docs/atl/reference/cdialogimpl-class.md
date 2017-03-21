@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDialogImpl"
-  - "ATL.CDialogImpl"
-  - "ATL::CDialogImpl"
+f1_keywords: ['CDialogImpl', 'ATLWIN/ATL::CDialogImpl', 'ATLWIN/ATL::Create', 'ATLWIN/ATL::DestroyWindow', 'ATLWIN/ATL::DoModal', 'ATLWIN/ATL::EndDialog', 'ATLWIN/ATL::GetDialogProc', 'ATLWIN/ATL::MapDialogRect', 'ATLWIN/ATL::OnFinalMessage', 'ATLWIN/ATL::DialogProc', 'ATLWIN/ATL::StartDialogProc']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

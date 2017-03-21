@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCLinkCtrl"
+f1_keywords: ['CMFCLinkCtrl', 'AFXLINKCTRL/CMFCLinkCtrl', 'AFXLINKCTRL/CMFCLinkCtrl::SetURL', 'AFXLINKCTRL/CMFCLinkCtrl::SetURLPrefix', 'AFXLINKCTRL/CMFCLinkCtrl::SizeToContent', 'AFXLINKCTRL/CMFCLinkCtrl::OnDrawFocusRect']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

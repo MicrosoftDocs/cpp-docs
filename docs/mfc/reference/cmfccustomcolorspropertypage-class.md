@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCCustomColorsPropertyPage"
+f1_keywords: ['CMFCCustomColorsPropertyPage', 'AFXCUSTOMCOLORSPROPERTYPAGE/CMFCCustomColorsPropertyPage', 'AFXCUSTOMCOLORSPROPERTYPAGE/CMFCCustomColorsPropertyPage::Setup']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

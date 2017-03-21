@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CURRENCY"
-  - "COleCurrency"
+f1_keywords: ['COleCurrency', 'AFXDISP/COleCurrency', 'AFXDISP/COleCurrency::COleCurrency', 'AFXDISP/COleCurrency::Format', 'AFXDISP/COleCurrency::GetStatus', 'AFXDISP/COleCurrency::ParseCurrency', 'AFXDISP/COleCurrency::SetCurrency', 'AFXDISP/COleCurrency::SetStatus', 'AFXDISP/COleCurrency::m_cur', 'AFXDISP/COleCurrency::m_status']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

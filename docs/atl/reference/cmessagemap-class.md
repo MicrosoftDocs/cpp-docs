@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMessageMap"
-  - "ATL.CMessageMap"
-  - "ATL::CMessageMap"
+f1_keywords: ['CMessageMap', 'ATLWIN/ATL::CMessageMap', 'ATLWIN/ATL::CMessageMap::ProcessWindowMessage']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

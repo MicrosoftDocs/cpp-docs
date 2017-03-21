@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CImageList"
+f1_keywords: ['CImageList', 'AFXCMN/CImageList', 'AFXCMN/CImageList::CImageList', 'AFXCMN/CImageList::Add', 'AFXCMN/CImageList::Attach', 'AFXCMN/CImageList::BeginDrag', 'AFXCMN/CImageList::Copy', 'AFXCMN/CImageList::Create', 'AFXCMN/CImageList::DeleteImageList', 'AFXCMN/CImageList::DeleteTempMap', 'AFXCMN/CImageList::Detach', 'AFXCMN/CImageList::DragEnter', 'AFXCMN/CImageList::DragLeave', 'AFXCMN/CImageList::DragMove', 'AFXCMN/CImageList::DragShowNolock', 'AFXCMN/CImageList::Draw', 'AFXCMN/CImageList::DrawEx', 'AFXCMN/CImageList::DrawIndirect', 'AFXCMN/CImageList::EndDrag', 'AFXCMN/CImageList::ExtractIcon', 'AFXCMN/CImageList::FromHandle', 'AFXCMN/CImageList::FromHandlePermanent', 'AFXCMN/CImageList::GetBkColor', 'AFXCMN/CImageList::GetDragImage', 'AFXCMN/CImageList::GetImageCount', 'AFXCMN/CImageList::GetImageInfo', 'AFXCMN/CImageList::GetSafeHandle', 'AFXCMN/CImageList::Read', 'AFXCMN/CImageList::Remove', 'AFXCMN/CImageList::Replace', 'AFXCMN/CImageList::SetBkColor', 'AFXCMN/CImageList::SetDragCursorImage', 'AFXCMN/CImageList::SetImageCount', 'AFXCMN/CImageList::SetOverlayImage', 'AFXCMN/CImageList::Write', 'AFXCMN/CImageList::m_hImageList']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

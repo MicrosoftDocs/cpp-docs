@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::improper_scheduler_reference"
+f1_keywords: ['improper_scheduler_reference', 'CONCRT/concurrency::improper_scheduler_reference', 'CONCRT/concurrency::improper_scheduler_reference::improper_scheduler_reference']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,7 +48,7 @@ class improper_scheduler_reference : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[improper_scheduler_reference Constructor](#ctor)|Overloaded. Constructs an `improper_scheduler_reference` object.|  
+|[improper_scheduler_reference](#ctor)|Overloaded. Constructs an `improper_scheduler_reference` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  

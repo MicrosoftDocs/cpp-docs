@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IOleControlImpl"
+f1_keywords: ['IOleControlImpl', 'ATLCTL/ATL::IOleControlImpl', 'ATLCTL/ATL::IOleControlImpl::FreezeEvents', 'ATLCTL/ATL::IOleControlImpl::GetControlInfo', 'ATLCTL/ATL::IOleControlImpl::OnAmbientPropertyChange', 'ATLCTL/ATL::IOleControlImpl::OnMnemonic']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

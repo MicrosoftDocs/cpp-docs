@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleLinkingDoc"
+f1_keywords: ['COleLinkingDoc', 'AFXOLE/COleLinkingDoc', 'AFXOLE/COleLinkingDoc::COleLinkingDoc', 'AFXOLE/COleLinkingDoc::Register', 'AFXOLE/COleLinkingDoc::Revoke', 'AFXOLE/COleLinkingDoc::OnFindEmbeddedItem', 'AFXOLE/COleLinkingDoc::OnGetLinkedItem']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "amprt/Concurrency::accelerator_view"
+f1_keywords: ['accelerator_view', 'AMPRT/accelerator_view', 'AMPRT/Concurrency::accelerator_view:accelerator_view', 'AMPRT/Concurrency::accelerator_view:create_marker', 'AMPRT/Concurrency::accelerator_view:flush', 'AMPRT/Concurrency::accelerator_view:get_accelerator', 'AMPRT/Concurrency::accelerator_view:get_is_auto_selection', 'AMPRT/Concurrency::accelerator_view:get_is_debug', 'AMPRT/Concurrency::accelerator_view:get_queuing_mode', 'AMPRT/Concurrency::accelerator_view:get_version', 'AMPRT/Concurrency::accelerator_view:wait', 'AMPRT/Concurrency::accelerator_view:accelerator', 'AMPRT/Concurrency::accelerator_view:is_auto_selection', 'AMPRT/Concurrency::accelerator_view:is_debug', 'AMPRT/Concurrency::accelerator_view:queuing_mode', 'AMPRT/Concurrency::accelerator_view:version']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -56,32 +55,32 @@ class accelerator_view;
   
 |Name|Description|  
 |----------|-----------------|  
-|[create_marker Method](#create_marker)|Returns a future to track the completion of all commands submitted so far to this `accelerator_view` object.|  
-|[flush Method](#flush)|Submits all pending commands queued to the `accelerator_view` object to the accelerator for execution.|  
-|[get_accelerator Method](#get_accelerator)|Returns the `accelerator` object for the `accelerator_view` object.|  
-|[get_is_auto_selection Method](#get_is_auto_selection)|Returns a Boolean value that indicates whether the runtime will automatically select an appropriate accelerator when the `accelerator_view` object is passed to a [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each).|  
-|[get_is_debug Method](#get_is_debug)|Returns a Boolean value that indicates whether the `accelerator_view` object has the DEBUG layer enabled for extensive error reporting.|  
-|[get_queuing_mode Method](#get_queuing_mode)|Returns the queuing mode for the `accelerator_view` object.|  
-|[get_version Method](#get_version)|Returns the version of the `accelerator_view`.|  
-|[wait Method](#wait)|Waits for all commands submitted to the `accelerator_view` object to finish.|  
+|[create_marker](#create_marker)|Returns a future to track the completion of all commands submitted so far to this `accelerator_view` object.|  
+|[flush](#flush)|Submits all pending commands queued to the `accelerator_view` object to the accelerator for execution.|  
+|[get_accelerator](#get_accelerator)|Returns the `accelerator` object for the `accelerator_view` object.|  
+|[get_is_auto_selection](#get_is_auto_selection)|Returns a Boolean value that indicates whether the runtime will automatically select an appropriate accelerator when the `accelerator_view` object is passed to a [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each).|  
+|[get_is_debug](#get_is_debug)|Returns a Boolean value that indicates whether the `accelerator_view` object has the DEBUG layer enabled for extensive error reporting.|  
+|[get_queuing_mode](#get_queuing_mode)|Returns the queuing mode for the `accelerator_view` object.|  
+|[get_version](#get_version)|Returns the version of the `accelerator_view`.|  
+|[wait](#wait)|Waits for all commands submitted to the `accelerator_view` object to finish.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator!= Operator](#operator_neq)|Compares this `accelerator_view` object with another and returns `false` if they are the same; otherwise, returns `true`.|  
-|[operator= Operator](#operator_eq)|Copies the contents of the specified `accelerator_view` object into this one.|  
-|[operator== Operator](#operator_eq_eq)|Compares this `accelerator_view` object with another and returns `true` if they are the same; otherwise, returns `false`.|  
+|[operator!=](#operator_neq)|Compares this `accelerator_view` object with another and returns `false` if they are the same; otherwise, returns `true`.|  
+|[operator=](#operator_eq)|Copies the contents of the specified `accelerator_view` object into this one.|  
+|[operator==](#operator_eq_eq)|Compares this `accelerator_view` object with another and returns `true` if they are the same; otherwise, returns `false`.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[accelerator Data Member](#accelerator)|Gets the `accelerator` object for the `accelerator_view` object.|  
-|[is_auto_selection Data Member](#is_auto_selection)|Gets a Boolean value that indicates whether the runtime will automatically select an appropriate accelerator when the `accelerator_view` object is passed to a [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each).|  
-|[is_debug Data Member](#is_debug)|Gets a Boolean value that indicates whether the `accelerator_view` object has the DEBUG layer enabled for extensive error reporting.|  
-|[queuing_mode Data Member](#queuing_mode)|Gets the queuing mode for the `accelerator_view` object.|  
-|[version Data Member](#version)|Gets the version of the accelerator.|  
+|[accelerator](#accelerator)|Gets the `accelerator` object for the `accelerator_view` object.|  
+|[is_auto_selection](#is_auto_selection)|Gets a Boolean value that indicates whether the runtime will automatically select an appropriate accelerator when the `accelerator_view` object is passed to a [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each).|  
+|[is_debug](#is_debug)|Gets a Boolean value that indicates whether the `accelerator_view` object has the DEBUG layer enabled for extensive error reporting.|  
+|[queuing_mode](#queuing_mode)|Gets the queuing mode for the `accelerator_view` object.|  
+|[version](#version)|Gets the version of the accelerator.|  
   
 ## Inheritance Hierarchy  
  `accelerator_view`  

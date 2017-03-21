@@ -73,7 +73,7 @@ public ref class String sealed : Object,
   
  **Properties**  
   
- The String class has the following properties.  
+ The String class has the following operators.  
   
 |Member|Description|  
 |------------|-----------------|  

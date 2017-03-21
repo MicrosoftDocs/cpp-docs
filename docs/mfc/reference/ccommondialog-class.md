@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CCommonDialog"
+f1_keywords: ['CCommonDialog', 'AFXDLGS/CCommonDialog', 'AFXDLGS/CCommonDialog::CCommonDialog']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCToolBarFontSizeComboBox"
+f1_keywords: ['CMFCToolBarFontSizeComboBox', 'AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontSizeComboBox', 'AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontSizeComboBox::CMFCToolBarFontSizeComboBox', 'AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontSizeComboBox::GetTwipSize', 'AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontSizeComboBox::RebuildFontSizes', 'AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontSizeComboBox::SetTwipSize']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

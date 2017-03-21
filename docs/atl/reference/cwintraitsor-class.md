@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CWinTraitsOR"
-  - "ATL::CWinTraitsOR"
-  - "CWinTraitsOR"
+f1_keywords: ['CWinTraitsOR', 'ATLWIN/ATL::CWinTraitsOR', 'ATLWIN/ATL::CWinTraitsOR::GetWndExStyle', 'ATLWIN/ATL::CWinTraitsOR::GetWndStyle']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

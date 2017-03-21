@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDataPathProperty"
+f1_keywords: ['CDataPathProperty', 'AFXCTL/CDataPathProperty', 'AFXCTL/CDataPathProperty::CDataPathProperty', 'AFXCTL/CDataPathProperty::GetControl', 'AFXCTL/CDataPathProperty::GetPath', 'AFXCTL/CDataPathProperty::Open', 'AFXCTL/CDataPathProperty::ResetData', 'AFXCTL/CDataPathProperty::SetControl', 'AFXCTL/CDataPathProperty::SetPath']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

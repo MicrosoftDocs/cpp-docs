@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDWordArray"
+f1_keywords: ['CDWordArray', 'AFXCOLL/CDWordArray', 'AFXCOLL/CObArray::CObArray', 'AFXCOLL/CObArray::Add', 'AFXCOLL/CObArray::Append', 'AFXCOLL/CObArray::Copy', 'AFXCOLL/CObArray::ElementAt', 'AFXCOLL/CObArray::FreeExtra', 'AFXCOLL/CObArray::GetAt', 'AFXCOLL/CObArray::GetCount', 'AFXCOLL/CObArray::GetData', 'AFXCOLL/CObArray::GetSize', 'AFXCOLL/CObArray::GetUpperBound', 'AFXCOLL/CObArray::InsertAt', 'AFXCOLL/CObArray::IsEmpty', 'AFXCOLL/CObArray::RemoveAll', 'AFXCOLL/CObArray::RemoveAt', 'AFXCOLL/CObArray::SetAt', 'AFXCOLL/CObArray::SetAtGrow', 'AFXCOLL/CObArray::SetSize']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

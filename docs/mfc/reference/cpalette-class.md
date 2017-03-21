@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CPalette"
-  - "HPALETTE"
+f1_keywords: ['CPalette', 'AFXWIN/CPalette', 'AFXWIN/CPalette::CPalette', 'AFXWIN/CPalette::AnimatePalette', 'AFXWIN/CPalette::CreateHalftonePalette', 'AFXWIN/CPalette::CreatePalette', 'AFXWIN/CPalette::FromHandle', 'AFXWIN/CPalette::GetEntryCount', 'AFXWIN/CPalette::GetNearestPaletteIndex', 'AFXWIN/CPalette::GetPaletteEntries', 'AFXWIN/CPalette::ResizePalette', 'AFXWIN/CPalette::SetPaletteEntries']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CInterfaceArray"
-  - "CInterfaceArray"
-  - "ATL::CInterfaceArray"
+f1_keywords: ['CInterfaceArray', 'ATLCOLL/ATL::CInterfaceArray', 'ATLCOLL/ATL::CInterfaceArray::CInterfaceArray']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

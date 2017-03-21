@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CD2DBrushProperties"
-  - "afxrendertarget/CD2DBrushProperties"
+f1_keywords: ['CD2DBrushProperties', 'AFXRENDERTARGET/CD2DBrushProperties', 'AFXRENDERTARGET/CD2DBrushProperties::CD2DBrushProperties', 'AFXRENDERTARGET/CD2DBrushProperties::CommonInit']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

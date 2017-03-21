@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCPropertyPage"
+f1_keywords: ['CMFCPropertyPage', 'AFXPROPERTYPAGE/CMFCPropertyPage', 'AFXPROPERTYPAGE/CMFCPropertyPage::CMFCPropertyPage']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

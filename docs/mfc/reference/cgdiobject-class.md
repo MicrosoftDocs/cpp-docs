@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CGdiObject"
+f1_keywords: ['CGdiObject', 'AFXWIN/CGdiObject', 'AFXWIN/CGdiObject::CGdiObject', 'AFXWIN/CGdiObject::Attach', 'AFXWIN/CGdiObject::CreateStockObject', 'AFXWIN/CGdiObject::DeleteObject', 'AFXWIN/CGdiObject::DeleteTempMap', 'AFXWIN/CGdiObject::Detach', 'AFXWIN/CGdiObject::FromHandle', 'AFXWIN/CGdiObject::GetObject', 'AFXWIN/CGdiObject::GetObjectType', 'AFXWIN/CGdiObject::GetSafeHandle', 'AFXWIN/CGdiObject::UnrealizeObject', 'AFXWIN/CGdiObject::m_hObject']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

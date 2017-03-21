@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CObject"
+f1_keywords: ['CObject', 'AFX/CObject', 'AFX/CObject::CObject', 'AFX/CObject::AssertValid', 'AFX/CObject::Dump', 'AFX/CObject::GetRuntimeClass', 'AFX/CObject::IsKindOf', 'AFX/CObject::IsSerializable', 'AFX/CObject::Serialize']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

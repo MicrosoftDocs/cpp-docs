@@ -323,155 +323,155 @@ class double_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|double_4::get_w Method||  
-|double_4::get_wx Method||  
-|double_4::get_wxy Method||  
-|double_4::get_wxyz Method||  
-|double_4::get_wxz Method||  
-|double_4::get_wxzy Method||  
-|double_4::get_wy Method||  
-|double_4::get_wyx Method||  
-|double_4::get_wyxz Method||  
-|double_4::get_wyz Method||  
-|double_4::get_wyzx Method||  
-|double_4::get_wz Method||  
-|double_4::get_wzx Method||  
-|double_4::get_wzxy Method||  
-|double_4::get_wzy Method||  
-|double_4::get_wzyx Method||  
-|double_4::get_x Method||  
-|double_4::get_xw Method||  
-|double_4::get_xwy Method||  
-|double_4::get_xwyz Method||  
-|double_4::get_xwz Method||  
-|double_4::get_xwzy Method||  
-|double_4::get_xy Method||  
-|double_4::get_xyw Method||  
-|double_4::get_xywz Method||  
-|double_4::get_xyz Method||  
-|double_4::get_xyzw Method||  
-|double_4::get_xz Method||  
-|double_4::get_xzw Method||  
-|double_4::get_xzwy Method||  
-|double_4::get_xzy Method||  
-|double_4::get_xzyw Method||  
-|double_4::get_y Method||  
-|double_4::get_yw Method||  
-|double_4::get_ywx Method||  
-|double_4::get_ywxz Method||  
-|double_4::get_ywz Method||  
-|double_4::get_ywzx Method||  
-|double_4::get_yx Method||  
-|double_4::get_yxw Method||  
-|double_4::get_yxwz Method||  
-|double_4::get_yxz Method||  
-|double_4::get_yxzw Method||  
-|double_4::get_yz Method||  
-|double_4::get_yzw Method||  
-|double_4::get_yzwx Method||  
-|double_4::get_yzx Method||  
-|double_4::get_yzxw Method||  
-|double_4::get_z Method||  
-|double_4::get_zw Method||  
-|double_4::get_zwx Method||  
-|double_4::get_zwxy Method||  
-|double_4::get_zwy Method||  
-|double_4::get_zwyx Method||  
-|double_4::get_zx Method||  
-|double_4::get_zxw Method||  
-|double_4::get_zxwy Method||  
-|double_4::get_zxy Method||  
-|double_4::get_zxyw Method||  
-|double_4::get_zy Method||  
-|double_4::get_zyw Method||  
-|double_4::get_zywx Method||  
-|double_4::get_zyx Method||  
-|double_4::get_zyxw Method||  
-|double_4::ref_a Method||  
-|double_4::ref_b Method||  
-|double_4::ref_g Method||  
-|double_4::ref_r Method||  
-|double_4::ref_w Method||  
-|double_4::ref_x Method||  
-|double_4::ref_y Method||  
-|double_4::ref_z Method||  
-|double_4::set_w Method||  
-|double_4::set_wx Method||  
-|double_4::set_wxy Method||  
-|double_4::set_wxyz Method||  
-|double_4::set_wxz Method||  
-|double_4::set_wxzy Method||  
-|double_4::set_wy Method||  
-|double_4::set_wyx Method||  
-|double_4::set_wyxz Method||  
-|double_4::set_wyz Method||  
-|double_4::set_wyzx Method||  
-|double_4::set_wz Method||  
-|double_4::set_wzx Method||  
-|double_4::set_wzxy Method||  
-|double_4::set_wzy Method||  
-|double_4::set_wzyx Method||  
-|double_4::set_x Method||  
-|double_4::set_xw Method||  
-|double_4::set_xwy Method||  
-|double_4::set_xwyz Method||  
-|double_4::set_xwz Method||  
-|double_4::set_xwzy Method||  
-|double_4::set_xy Method||  
-|double_4::set_xyw Method||  
-|double_4::set_xywz Method||  
-|double_4::set_xyz Method||  
-|double_4::set_xyzw Method||  
-|double_4::set_xz Method||  
-|double_4::set_xzw Method||  
-|double_4::set_xzwy Method||  
-|double_4::set_xzy Method||  
-|double_4::set_xzyw Method||  
-|double_4::set_y Method||  
-|double_4::set_yw Method||  
-|double_4::set_ywx Method||  
-|double_4::set_ywxz Method||  
-|double_4::set_ywz Method||  
-|double_4::set_ywzx Method||  
-|double_4::set_yx Method||  
-|double_4::set_yxw Method||  
-|double_4::set_yxwz Method||  
-|double_4::set_yxz Method||  
-|double_4::set_yxzw Method||  
-|double_4::set_yz Method||  
-|double_4::set_yzw Method||  
-|double_4::set_yzwx Method||  
-|double_4::set_yzx Method||  
-|double_4::set_yzxw Method||  
-|double_4::set_z Method||  
-|double_4::set_zw Method||  
-|double_4::set_zwx Method||  
-|double_4::set_zwxy Method||  
-|double_4::set_zwy Method||  
-|double_4::set_zwyx Method||  
-|double_4::set_zx Method||  
-|double_4::set_zxw Method||  
-|double_4::set_zxwy Method||  
-|double_4::set_zxy Method||  
-|double_4::set_zxyw Method||  
-|double_4::set_zy Method||  
-|double_4::set_zyw Method||  
-|double_4::set_zywx Method||  
-|double_4::set_zyx Method||  
-|double_4::set_zyxw Method||  
+|double_4::get_w||  
+|double_4::get_wx||  
+|double_4::get_wxy||  
+|double_4::get_wxyz||  
+|double_4::get_wxz||  
+|double_4::get_wxzy||  
+|double_4::get_wy||  
+|double_4::get_wyx||  
+|double_4::get_wyxz||  
+|double_4::get_wyz||  
+|double_4::get_wyzx||  
+|double_4::get_wz||  
+|double_4::get_wzx||  
+|double_4::get_wzxy||  
+|double_4::get_wzy||  
+|double_4::get_wzyx||  
+|double_4::get_x||  
+|double_4::get_xw||  
+|double_4::get_xwy||  
+|double_4::get_xwyz||  
+|double_4::get_xwz||  
+|double_4::get_xwzy||  
+|double_4::get_xy||  
+|double_4::get_xyw||  
+|double_4::get_xywz||  
+|double_4::get_xyz||  
+|double_4::get_xyzw||  
+|double_4::get_xz||  
+|double_4::get_xzw||  
+|double_4::get_xzwy||  
+|double_4::get_xzy||  
+|double_4::get_xzyw||  
+|double_4::get_y||  
+|double_4::get_yw||  
+|double_4::get_ywx||  
+|double_4::get_ywxz||  
+|double_4::get_ywz||  
+|double_4::get_ywzx||  
+|double_4::get_yx||  
+|double_4::get_yxw||  
+|double_4::get_yxwz||  
+|double_4::get_yxz||  
+|double_4::get_yxzw||  
+|double_4::get_yz||  
+|double_4::get_yzw||  
+|double_4::get_yzwx||  
+|double_4::get_yzx||  
+|double_4::get_yzxw||  
+|double_4::get_z||  
+|double_4::get_zw||  
+|double_4::get_zwx||  
+|double_4::get_zwxy||  
+|double_4::get_zwy||  
+|double_4::get_zwyx||  
+|double_4::get_zx||  
+|double_4::get_zxw||  
+|double_4::get_zxwy||  
+|double_4::get_zxy||  
+|double_4::get_zxyw||  
+|double_4::get_zy||  
+|double_4::get_zyw||  
+|double_4::get_zywx||  
+|double_4::get_zyx||  
+|double_4::get_zyxw||  
+|double_4::ref_a||  
+|double_4::ref_b||  
+|double_4::ref_g||  
+|double_4::ref_r||  
+|double_4::ref_w||  
+|double_4::ref_x||  
+|double_4::ref_y||  
+|double_4::ref_z||  
+|double_4::set_w||  
+|double_4::set_wx||  
+|double_4::set_wxy||  
+|double_4::set_wxyz||  
+|double_4::set_wxz||  
+|double_4::set_wxzy||  
+|double_4::set_wy||  
+|double_4::set_wyx||  
+|double_4::set_wyxz||  
+|double_4::set_wyz||  
+|double_4::set_wyzx||  
+|double_4::set_wz||  
+|double_4::set_wzx||  
+|double_4::set_wzxy||  
+|double_4::set_wzy||  
+|double_4::set_wzyx||  
+|double_4::set_x||  
+|double_4::set_xw||  
+|double_4::set_xwy||  
+|double_4::set_xwyz||  
+|double_4::set_xwz||  
+|double_4::set_xwzy||  
+|double_4::set_xy||  
+|double_4::set_xyw||  
+|double_4::set_xywz||  
+|double_4::set_xyz||  
+|double_4::set_xyzw||  
+|double_4::set_xz||  
+|double_4::set_xzw||  
+|double_4::set_xzwy||  
+|double_4::set_xzy||  
+|double_4::set_xzyw||  
+|double_4::set_y||  
+|double_4::set_yw||  
+|double_4::set_ywx||  
+|double_4::set_ywxz||  
+|double_4::set_ywz||  
+|double_4::set_ywzx||  
+|double_4::set_yx||  
+|double_4::set_yxw||  
+|double_4::set_yxwz||  
+|double_4::set_yxz||  
+|double_4::set_yxzw||  
+|double_4::set_yz||  
+|double_4::set_yzw||  
+|double_4::set_yzwx||  
+|double_4::set_yzx||  
+|double_4::set_yzxw||  
+|double_4::set_z||  
+|double_4::set_zw||  
+|double_4::set_zwx||  
+|double_4::set_zwxy||  
+|double_4::set_zwy||  
+|double_4::set_zwyx||  
+|double_4::set_zx||  
+|double_4::set_zxw||  
+|double_4::set_zxwy||  
+|double_4::set_zxy||  
+|double_4::set_zxyw||  
+|double_4::set_zy||  
+|double_4::set_zyw||  
+|double_4::set_zywx||  
+|double_4::set_zyx||  
+|double_4::set_zyxw||  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|double_4::operator- Operator||  
-|double_4::operator-- Operator||  
-|double_4::operator*= Operator||  
-|double_4::operator/= Operator||  
-|double_4::operator++ Operator||  
-|double_4::operator+= Operator||  
-|double_4::operator= Operator||  
-|double_4::operator-= Operator||  
+|double_4::operator-||  
+|double_4::operator--||  
+|double_4::operator*=||  
+|double_4::operator/=||  
+|double_4::operator++||  
+|double_4::operator+=||  
+|double_4::operator=||  
+|double_4::operator-=||  
   
 ### Public Constants  
   
@@ -483,134 +483,134 @@ class double_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|double_4::a Data Member||  
-|double_4::ab Data Member||  
-|double_4::abg Data Member||  
-|double_4::abgr Data Member||  
-|double_4::abr Data Member||  
-|double_4::abrg Data Member||  
-|double_4::ag Data Member||  
-|double_4::agb Data Member||  
-|double_4::agbr Data Member||  
-|double_4::agr Data Member||  
-|double_4::agrb Data Member||  
-|double_4::ar Data Member||  
-|double_4::arb Data Member||  
-|double_4::arbg Data Member||  
-|double_4::arg Data Member||  
-|double_4::argb Data Member||  
-|double_4::b Data Member||  
-|double_4::ba Data Member||  
-|double_4::bag Data Member||  
-|double_4::bagr Data Member||  
-|double_4::bar Data Member||  
-|double_4::barg Data Member||  
-|double_4::bg Data Member||  
-|double_4::bga Data Member||  
-|double_4::bgar Data Member||  
-|double_4::bgr Data Member||  
-|double_4::bgra Data Member||  
-|double_4::br Data Member||  
-|double_4::bra Data Member||  
-|double_4::brag Data Member||  
-|double_4::brg Data Member||  
-|double_4::brga Data Member||  
-|double_4::g Data Member||  
-|double_4::ga Data Member||  
-|double_4::gab Data Member||  
-|double_4::gabr Data Member||  
-|double_4::gar Data Member||  
-|double_4::garb Data Member||  
-|double_4::gb Data Member||  
-|double_4::gba Data Member||  
-|double_4::gbar Data Member||  
-|double_4::gbr Data Member||  
-|double_4::gbra Data Member||  
-|double_4::gr Data Member||  
-|double_4::gra Data Member||  
-|double_4::grab Data Member||  
-|double_4::grb Data Member||  
-|double_4::grba Data Member||  
-|double_4::r Data Member||  
-|double_4::ra Data Member||  
-|double_4::rab Data Member||  
-|double_4::rabg Data Member||  
-|double_4::rag Data Member||  
-|double_4::ragb Data Member||  
-|double_4::rb Data Member||  
-|double_4::rba Data Member||  
-|double_4::rbag Data Member||  
-|double_4::rbg Data Member||  
-|double_4::rbga Data Member||  
-|double_4::rg Data Member||  
-|double_4::rga Data Member||  
-|double_4::rgab Data Member||  
-|double_4::rgb Data Member||  
-|double_4::rgba Data Member||  
-|double_4::w Data Member||  
-|double_4::wx Data Member||  
-|double_4::wxy Data Member||  
-|double_4::wxyz Data Member||  
-|double_4::wxz Data Member||  
-|double_4::wxzy Data Member||  
-|double_4::wy Data Member||  
-|double_4::wyx Data Member||  
-|double_4::wyxz Data Member||  
-|double_4::wyz Data Member||  
-|double_4::wyzx Data Member||  
-|double_4::wz Data Member||  
-|double_4::wzx Data Member||  
-|double_4::wzxy Data Member||  
-|double_4::wzy Data Member||  
-|double_4::wzyx Data Member||  
-|double_4::x Data Member||  
-|double_4::xw Data Member||  
-|double_4::xwy Data Member||  
-|double_4::xwyz Data Member||  
-|double_4::xwz Data Member||  
-|double_4::xwzy Data Member||  
-|double_4::xy Data Member||  
-|double_4::xyw Data Member||  
-|double_4::xywz Data Member||  
-|double_4::xyz Data Member||  
-|double_4::xyzw Data Member||  
-|double_4::xz Data Member||  
-|double_4::xzw Data Member||  
-|double_4::xzwy Data Member||  
-|double_4::xzy Data Member||  
-|double_4::xzyw Data Member||  
-|double_4::y Data Member||  
-|double_4::yw Data Member||  
-|double_4::ywx Data Member||  
-|double_4::ywxz Data Member||  
-|double_4::ywz Data Member||  
-|double_4::ywzx Data Member||  
-|double_4::yx Data Member||  
-|double_4::yxw Data Member||  
-|double_4::yxwz Data Member||  
-|double_4::yxz Data Member||  
-|double_4::yxzw Data Member||  
-|double_4::yz Data Member||  
-|double_4::yzw Data Member||  
-|double_4::yzwx Data Member||  
-|double_4::yzx Data Member||  
-|double_4::yzxw Data Member||  
-|double_4::z Data Member||  
-|double_4::zw Data Member||  
-|double_4::zwx Data Member||  
-|double_4::zwxy Data Member||  
-|double_4::zwy Data Member||  
-|double_4::zwyx Data Member||  
-|double_4::zx Data Member||  
-|double_4::zxw Data Member||  
-|double_4::zxwy Data Member||  
-|double_4::zxy Data Member||  
-|double_4::zxyw Data Member||  
-|double_4::zy Data Member||  
-|double_4::zyw Data Member||  
-|double_4::zywx Data Member||  
-|double_4::zyx Data Member||  
-|double_4::zyxw Data Member||  
+|double_4::a||  
+|double_4::ab||  
+|double_4::abg||  
+|double_4::abgr||  
+|double_4::abr||  
+|double_4::abrg||  
+|double_4::ag||  
+|double_4::agb||  
+|double_4::agbr||  
+|double_4::agr||  
+|double_4::agrb||  
+|double_4::ar||  
+|double_4::arb||  
+|double_4::arbg||  
+|double_4::arg||  
+|double_4::argb||  
+|double_4::b||  
+|double_4::ba||  
+|double_4::bag||  
+|double_4::bagr||  
+|double_4::bar||  
+|double_4::barg||  
+|double_4::bg||  
+|double_4::bga||  
+|double_4::bgar||  
+|double_4::bgr||  
+|double_4::bgra||  
+|double_4::br||  
+|double_4::bra||  
+|double_4::brag||  
+|double_4::brg||  
+|double_4::brga||  
+|double_4::g||  
+|double_4::ga||  
+|double_4::gab||  
+|double_4::gabr||  
+|double_4::gar||  
+|double_4::garb||  
+|double_4::gb||  
+|double_4::gba||  
+|double_4::gbar||  
+|double_4::gbr||  
+|double_4::gbra||  
+|double_4::gr||  
+|double_4::gra||  
+|double_4::grab||  
+|double_4::grb||  
+|double_4::grba||  
+|double_4::r||  
+|double_4::ra||  
+|double_4::rab||  
+|double_4::rabg||  
+|double_4::rag||  
+|double_4::ragb||  
+|double_4::rb||  
+|double_4::rba||  
+|double_4::rbag||  
+|double_4::rbg||  
+|double_4::rbga||  
+|double_4::rg||  
+|double_4::rga||  
+|double_4::rgab||  
+|double_4::rgb||  
+|double_4::rgba||  
+|double_4::w||  
+|double_4::wx||  
+|double_4::wxy||  
+|double_4::wxyz||  
+|double_4::wxz||  
+|double_4::wxzy||  
+|double_4::wy||  
+|double_4::wyx||  
+|double_4::wyxz||  
+|double_4::wyz||  
+|double_4::wyzx||  
+|double_4::wz||  
+|double_4::wzx||  
+|double_4::wzxy||  
+|double_4::wzy||  
+|double_4::wzyx||  
+|double_4::x||  
+|double_4::xw||  
+|double_4::xwy||  
+|double_4::xwyz||  
+|double_4::xwz||  
+|double_4::xwzy||  
+|double_4::xy||  
+|double_4::xyw||  
+|double_4::xywz||  
+|double_4::xyz||  
+|double_4::xyzw||  
+|double_4::xz||  
+|double_4::xzw||  
+|double_4::xzwy||  
+|double_4::xzy||  
+|double_4::xzyw||  
+|double_4::y||  
+|double_4::yw||  
+|double_4::ywx||  
+|double_4::ywxz||  
+|double_4::ywz||  
+|double_4::ywzx||  
+|double_4::yx||  
+|double_4::yxw||  
+|double_4::yxwz||  
+|double_4::yxz||  
+|double_4::yxzw||  
+|double_4::yz||  
+|double_4::yzw||  
+|double_4::yzwx||  
+|double_4::yzx||  
+|double_4::yzxw||  
+|double_4::z||  
+|double_4::zw||  
+|double_4::zwx||  
+|double_4::zwxy||  
+|double_4::zwy||  
+|double_4::zwyx||  
+|double_4::zx||  
+|double_4::zxw||  
+|double_4::zxwy||  
+|double_4::zxy||  
+|double_4::zxyw||  
+|double_4::zy||  
+|double_4::zyw||  
+|double_4::zywx||  
+|double_4::zyx||  
+|double_4::zyxw||  
   
 ## Inheritance Hierarchy  
  `double_4`  

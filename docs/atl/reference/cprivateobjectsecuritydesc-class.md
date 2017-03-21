@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CPrivateObjectSecurityDesc"
-  - "ATL::CPrivateObjectSecurityDesc"
-  - "CPrivateObjectSecurityDesc"
+f1_keywords: ['CPrivateObjectSecurityDesc', 'ATLSECURITY/ATL::CPrivateObjectSecurityDesc', 'ATLSECURITY/ATL::CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc', 'ATLSECURITY/ATL::CPrivateObjectSecurityDesc::ConvertToAutoInherit', 'ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Create', 'ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Get', 'ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Set']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

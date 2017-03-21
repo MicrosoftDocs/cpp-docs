@@ -127,61 +127,61 @@ class uint_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|uint_3::get_x Method||  
-|uint_3::get_xy Method||  
-|uint_3::get_xyz Method||  
-|uint_3::get_xz Method||  
-|uint_3::get_xzy Method||  
-|uint_3::get_y Method||  
-|uint_3::get_yx Method||  
-|uint_3::get_yxz Method||  
-|uint_3::get_yz Method||  
-|uint_3::get_yzx Method||  
-|uint_3::get_z Method||  
-|uint_3::get_zx Method||  
-|uint_3::get_zxy Method||  
-|uint_3::get_zy Method||  
-|uint_3::get_zyx Method||  
-|uint_t::ref_b Method||  
-|uint_t::ref_g Method||  
-|uint_t::ref_r Method||  
-|uint_t::ref_x Method||  
-|uint_t::ref_y Method||  
-|uint_t::ref_z Method||  
-|uint_3::set_x Method||  
-|uint_3::set_xy Method||  
-|uint_3::set_xyz Method||  
-|uint_3::set_xz Method||  
-|uint_3::set_xzy Method||  
-|uint_3::set_y Method||  
-|uint_3::set_yx Method||  
-|uint_3::set_yxz Method||  
-|uint_3::set_yz Method||  
-|uint_3::set_yzx Method||  
-|uint_3::set_z Method||  
-|uint_3::set_zx Method||  
-|uint_3::set_zxy Method||  
-|uint_3::set_zy Method||  
-|uint_3::set_zyx Method||  
+|uint_3::get_x||  
+|uint_3::get_xy||  
+|uint_3::get_xyz||  
+|uint_3::get_xz||  
+|uint_3::get_xzy||  
+|uint_3::get_y||  
+|uint_3::get_yx||  
+|uint_3::get_yxz||  
+|uint_3::get_yz||  
+|uint_3::get_yzx||  
+|uint_3::get_z||  
+|uint_3::get_zx||  
+|uint_3::get_zxy||  
+|uint_3::get_zy||  
+|uint_3::get_zyx||  
+|uint_t::ref_b||  
+|uint_t::ref_g||  
+|uint_t::ref_r||  
+|uint_t::ref_x||  
+|uint_t::ref_y||  
+|uint_t::ref_z||  
+|uint_3::set_x||  
+|uint_3::set_xy||  
+|uint_3::set_xyz||  
+|uint_3::set_xz||  
+|uint_3::set_xzy||  
+|uint_3::set_y||  
+|uint_3::set_yx||  
+|uint_3::set_yxz||  
+|uint_3::set_yz||  
+|uint_3::set_yzx||  
+|uint_3::set_z||  
+|uint_3::set_zx||  
+|uint_3::set_zxy||  
+|uint_3::set_zy||  
+|uint_3::set_zyx||  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|uint_3::operator-- Operator||  
-|uint_3::operator%= Operator||  
-|uint_3::operator&= Operator||  
-|uint_3::operator*= Operator||  
-|uint_3::operator/= Operator||  
-|uint_3::operator^= Operator||  
-|uint_3::operator&#124;= Operator||  
-|uint_3::operator~ Operator||  
-|uint_3::operator++ Operator||  
-|uint_3::operator+= Operator||  
-|uint_3::operator<\<= Operator||  
-|uint_3::operator= Operator||  
-|uint_3::operator-= Operator||  
-|uint_3::operator>>= Operator||  
+|uint_3::operator--||  
+|uint_3::operator%=||  
+|uint_3::operator&=||  
+|uint_3::operator*=||  
+|uint_3::operator/=||  
+|uint_3::operator^=||  
+|uint_3::operator&#124;=||  
+|uint_3::operator~||  
+|uint_3::operator++||  
+|uint_3::operator+=||  
+|uint_3::operator<\<=||  
+|uint_3::operator=||  
+|uint_3::operator-=||  
+|uint_3::operator>>=||  
   
 ### Public Constants  
   
@@ -193,36 +193,36 @@ class uint_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|uint_3::b Data Member||  
-|uint_3::bg Data Member||  
-|uint_3::bgr Data Member||  
-|uint_3::br Data Member||  
-|uint_3::brg Data Member||  
-|uint_3::g Data Member||  
-|uint_3::gb Data Member||  
-|uint_3::gbr Data Member||  
-|uint_3::gr Data Member||  
-|uint_3::grb Data Member||  
-|uint_3::r Data Member||  
-|uint_3::rb Data Member||  
-|uint_3::rbg Data Member||  
-|uint_3::rg Data Member||  
-|uint_3::rgb Data Member||  
-|uint_3::x Data Member||  
-|uint_3::xy Data Member||  
-|uint_3::xyz Data Member||  
-|uint_3::xz Data Member||  
-|uint_3::xzy Data Member||  
-|uint_3::y Data Member||  
-|uint_3::yx Data Member||  
-|uint_3::yxz Data Member||  
-|uint_3::yz Data Member||  
-|uint_3::yzx Data Member||  
-|uint_3::z Data Member||  
-|uint_3::zx Data Member||  
-|uint_3::zxy Data Member||  
-|uint_3::zy Data Member||  
-|uint_3::zyx Data Member||  
+|uint_3::b||  
+|uint_3::bg||  
+|uint_3::bgr||  
+|uint_3::br||  
+|uint_3::brg||  
+|uint_3::g||  
+|uint_3::gb||  
+|uint_3::gbr||  
+|uint_3::gr||  
+|uint_3::grb||  
+|uint_3::r||  
+|uint_3::rb||  
+|uint_3::rbg||  
+|uint_3::rg||  
+|uint_3::rgb||  
+|uint_3::x||  
+|uint_3::xy||  
+|uint_3::xyz||  
+|uint_3::xz||  
+|uint_3::xzy||  
+|uint_3::y||  
+|uint_3::yx||  
+|uint_3::yxz||  
+|uint_3::yz||  
+|uint_3::yzx||  
+|uint_3::z||  
+|uint_3::zx||  
+|uint_3::zxy||  
+|uint_3::zy||  
+|uint_3::zyx||  
   
 ## Inheritance Hierarchy  
  `uint_3`  

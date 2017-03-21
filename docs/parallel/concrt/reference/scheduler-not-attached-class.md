@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::scheduler_not_attached"
+f1_keywords: ['scheduler_not_attached', 'CONCRT/concurrency::scheduler_not_attached', 'CONCRT/concurrency::scheduler_not_attached::scheduler_not_attached']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,7 +48,7 @@ class scheduler_not_attached : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[scheduler_not_attached Constructor](#ctor)|Overloaded. Constructs a `scheduler_not_attached` object.|  
+|[scheduler_not_attached](#ctor)|Overloaded. Constructs a `scheduler_not_attached` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  

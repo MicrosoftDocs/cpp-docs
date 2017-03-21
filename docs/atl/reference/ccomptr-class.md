@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComPtr"
+f1_keywords: ['CComPtr', 'ATLBASE/ATL::CComPtr', 'ATLBASE/ATL::CComPtr::CComPtr']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCListCtrl"
+f1_keywords: ['CMFCListCtrl', 'AFXLISTCTRL/CMFCListCtrl', 'AFXLISTCTRL/CMFCListCtrl::EnableMarkSortedColumn', 'AFXLISTCTRL/CMFCListCtrl::EnableMultipleSort', 'AFXLISTCTRL/CMFCListCtrl::GetHeaderCtrl', 'AFXLISTCTRL/CMFCListCtrl::IsMultipleSort', 'AFXLISTCTRL/CMFCListCtrl::OnCompareItems', 'AFXLISTCTRL/CMFCListCtrl::OnGetCellBkColor', 'AFXLISTCTRL/CMFCListCtrl::OnGetCellFont', 'AFXLISTCTRL/CMFCListCtrl::OnGetCellTextColor', 'AFXLISTCTRL/CMFCListCtrl::RemoveSortColumn', 'AFXLISTCTRL/CMFCListCtrl::SetSortColumn', 'AFXLISTCTRL/CMFCListCtrl::Sort']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

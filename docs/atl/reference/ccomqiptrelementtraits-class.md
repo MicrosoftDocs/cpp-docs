@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CComQIPtrElementTraits"
-  - "CComQIPtrElementTraits"
-  - "ATL::CComQIPtrElementTraits"
+f1_keywords: ['CComQIPtrElementTraits', 'ATLCOLL/ATL::CComQIPtrElementTraits', 'ATLCOLL/ATL::CComQIPtrElementTraits::INARGTYPE']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

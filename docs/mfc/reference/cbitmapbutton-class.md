@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CBitmapButton"
+f1_keywords: ['CBitmapButton', 'AFXEXT/CBitmapButton', 'AFXEXT/CBitmapButton::CBitmapButton', 'AFXEXT/CBitmapButton::AutoLoad', 'AFXEXT/CBitmapButton::LoadBitmaps', 'AFXEXT/CBitmapButton::SizeToContent']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

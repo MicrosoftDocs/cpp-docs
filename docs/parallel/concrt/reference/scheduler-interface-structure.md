@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "pplinterface/concurrency::scheduler_interface"
+f1_keywords: ['scheduler_interface', 'PPLINTERFACE/concurrency::scheduler_interface', 'PPLINTERFACE/concurrency::scheduler_interface::scheduler_interface::schedule']
 dev_langs: 
   - "C++"
 ms.assetid: 4de61c78-a2c6-4698-bd47-964baf7fa287
@@ -47,7 +46,7 @@ struct __declspec(novtable) scheduler_interface;
   
 |Name|Description|  
 |----------|-----------------|  
-|[scheduler_interface::schedule Method](#schedule)||  
+|[scheduler_interface::schedule](#schedule)||  
   
 ## Inheritance Hierarchy  
  `scheduler_interface`  

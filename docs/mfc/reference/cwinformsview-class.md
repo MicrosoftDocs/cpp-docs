@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CWinFormsView"
+f1_keywords: ['CWinFormsView', 'AFXWINFORMS/CWinFormsView', 'AFXWINFORMS/CWinFormsView::CWinFormsView', 'AFXWINFORMS/CWinFormsView::GetControl']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

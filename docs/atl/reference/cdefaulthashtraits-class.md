@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDefaultHashTraits"
-  - "ATL.CDefaultHashTraits<T>"
-  - "ATL::CDefaultHashTraits<T>"
-  - "ATL.CDefaultHashTraits"
-  - "ATL::CDefaultHashTraits"
+f1_keywords: ['CDefaultHashTraits', 'ATLCOLL/ATL::CDefaultHashTraits', 'ATLCOLL/ATL::CDefaultHashTraits::Hash']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

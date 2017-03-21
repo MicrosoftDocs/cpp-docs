@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CGopherConnection"
+f1_keywords: ['CGopherConnection', 'AFXINET/CGopherConnection', 'AFXINET/CGopherConnection::CGopherConnection', 'AFXINET/CGopherConnection::CreateLocator', 'AFXINET/CGopherConnection::GetAttribute', 'AFXINET/CGopherConnection::OpenFile']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

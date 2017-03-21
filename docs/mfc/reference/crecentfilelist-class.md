@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CRecentFileList"
+f1_keywords: ['CRecentFileList', 'AFXADV/CRecentFileList', 'AFXADV/CRecentFileList::CRecentFileList', 'AFXADV/CRecentFileList::Add', 'AFXADV/CRecentFileList::GetDisplayName', 'AFXADV/CRecentFileList::GetSize', 'AFXADV/CRecentFileList::ReadList', 'AFXADV/CRecentFileList::Remove', 'AFXADV/CRecentFileList::UpdateMenu', 'AFXADV/CRecentFileList::WriteList']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComCoClass"
-  - "ATL.CComCoClass"
-  - "ATL::CComCoClass"
+f1_keywords: ['CComCoClass', 'ATLCOM/ATL::CComCoClass', 'ATLCOM/ATL::CComCoClass::CreateInstance', 'ATLCOM/ATL::CComCoClass::Error', 'ATLCOM/ATL::CComCoClass::GetObjectCLSID', 'ATLCOM/ATL::CComCoClass::GetObjectDescription']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

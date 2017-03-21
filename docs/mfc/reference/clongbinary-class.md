@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "BLOB"
-  - "CLongBinary"
+f1_keywords: ['CLongBinary', 'AFXDB_/CLongBinary', 'AFXDB_/CLongBinary::CLongBinary', 'AFXDB_/CLongBinary::m_dwDataLength', 'AFXDB_/CLongBinary::m_hData']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

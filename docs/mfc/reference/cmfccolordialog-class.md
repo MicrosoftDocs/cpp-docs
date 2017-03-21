@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCColorDialog"
+f1_keywords: ['CMFCColorDialog', 'AFXCOLORDIALOG/CMFCColorDialog', 'AFXCOLORDIALOG/CMFCColorDialog::CMFCColorDialog', 'AFXCOLORDIALOG/CMFCColorDialog::GetColor', 'AFXCOLORDIALOG/CMFCColorDialog::GetPalette', 'AFXCOLORDIALOG/CMFCColorDialog::RebuildPalette', 'AFXCOLORDIALOG/CMFCColorDialog::SetCurrentColor', 'AFXCOLORDIALOG/CMFCColorDialog::SetNewColor', 'AFXCOLORDIALOG/CMFCColorDialog::SetPageOne', 'AFXCOLORDIALOG/CMFCColorDialog::SetPageTwo']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

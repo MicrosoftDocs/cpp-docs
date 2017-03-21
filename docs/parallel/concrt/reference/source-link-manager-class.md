@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "agents/concurrency::source_link_manager"
+f1_keywords: ['source_link_manager', 'AGENTS/concurrency::source_link_manager', 'AGENTS/concurrency::source_link_manager::source_link_manager', 'AGENTS/concurrency::source_link_manager::add', 'AGENTS/concurrency::source_link_manager::begin', 'AGENTS/concurrency::source_link_manager::contains', 'AGENTS/concurrency::source_link_manager::count', 'AGENTS/concurrency::source_link_manager::reference', 'AGENTS/concurrency::source_link_manager::register_target_block', 'AGENTS/concurrency::source_link_manager::release', 'AGENTS/concurrency::source_link_manager::remove', 'AGENTS/concurrency::source_link_manager::set_bound']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -63,22 +62,22 @@ class source_link_manager;
   
 |Name|Description|  
 |----------|-----------------|  
-|[source_link_manager Constructor](#ctor)|Constructs a `source_link_manager` object.|  
+|[source_link_manager](#ctor)|Constructs a `source_link_manager` object.|  
 |[~source_link_manager Destructor](#dtor)|Destroys the `source_link_manager` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[add Method](#add)|Adds a source link to the `source_link_manager` object.|  
-|[begin Method](#begin)|Returns an iterator to the first element in the `source_link_manager` object.|  
-|[contains Method](#contains)|Searches the `network_link_registry` within this `source_link_manager` object for a specified block.|  
-|[count Method](#count)|Counts the number of linked blocks in the `source_link_manager` object.|  
-|[reference Method](#reference)|Acquires a reference on the `source_link_manager` object.|  
-|[register_target_block Method](#register_target_block)|Registers the target block that holds this `source_link_manager` object.|  
-|[release Method](#release)|Releases the reference on the `source_link_manager` object.|  
-|[remove Method](#remove)|Removes a link from the `source_link_manager` object.|  
-|[set_bound Method](#set_bound)|Sets the maximum number of source links that can be added to this `source_link_manager` object.|  
+|[add](#add)|Adds a source link to the `source_link_manager` object.|  
+|[begin](#begin)|Returns an iterator to the first element in the `source_link_manager` object.|  
+|[contains](#contains)|Searches the `network_link_registry` within this `source_link_manager` object for a specified block.|  
+|[count](#count)|Counts the number of linked blocks in the `source_link_manager` object.|  
+|[reference](#reference)|Acquires a reference on the `source_link_manager` object.|  
+|[register_target_block](#register_target_block)|Registers the target block that holds this `source_link_manager` object.|  
+|[release](#release)|Releases the reference on the `source_link_manager` object.|  
+|[remove](#remove)|Removes a link from the `source_link_manager` object.|  
+|[set_bound](#set_bound)|Sets the maximum number of source links that can be added to this `source_link_manager` object.|  
   
 ## Remarks  
  Currently, the source blocks are reference counted. This is a wrapper on a `network_link_registry` object that allows concurrent access to the links and provides the ability to reference the links through callbacks. Message blocks ( `target_block`s or `propagator_block`s) should use this class for their source links.  

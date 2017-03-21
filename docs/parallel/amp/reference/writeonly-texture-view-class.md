@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "amp_graphics/Concurrency::graphics::writeonly_texture_view"
+f1_keywords: ['writeonly_texture_view', 'AMP_GRAPHICS/writeonly_texture_view', 'AMP_GRAPHICS/Concurrency::graphics::writeonly_texture_view', 'AMP_GRAPHICS/Concurrency::graphics::writeonly_texture_view::set', 'AMP_GRAPHICS/Concurrency::graphics::rank Constant']
 dev_langs: 
   - "C++"
 ms.assetid: 8d117ad3-0a1c-41ae-b29c-7c95fdd4d04d
@@ -78,13 +77,13 @@ class writeonly_texture_view<value_type, _Rank> : public details::_Texture_base<
   
 |Name|Description|  
 |----------|-----------------|  
-|[set Method](#set)|Sets the value of the element at the specified index.|  
+|[set](#set)|Sets the value of the element at the specified index.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator= Operator](#operator_eq)|Copies the specified `writeonly_texture_view` object to this one.|  
+|[operator=](#operator_eq)|Copies the specified `writeonly_texture_view` object to this one.|  
   
 ### Public Constants  
   

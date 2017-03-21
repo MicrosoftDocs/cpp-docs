@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CHeapPtr"
-  - "CHeapPtr"
-  - "ATL.CHeapPtr"
+f1_keywords: ['CHeapPtr', 'ATLCORE/ATL::CHeapPtr', 'ATLCORE/ATL::CHeapPtr::CHeapPtr', 'ATLCORE/ATL::CHeapPtr::Allocate', 'ATLCORE/ATL::CHeapPtr::Reallocate']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

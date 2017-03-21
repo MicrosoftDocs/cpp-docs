@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCRibbonLinkCtrl"
+f1_keywords: ['CMFCRibbonLinkCtrl', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::CMFCRibbonLinkCtrl', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::CopyFrom', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::GetCompactSize', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::GetLink', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::GetRegularSize', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::GetToolTipText', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::IsDrawTooltipImage', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OnDraw', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OnDrawMenuImage', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OnMouseMove', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OnSetIcon', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OpenLink', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::SetLink']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

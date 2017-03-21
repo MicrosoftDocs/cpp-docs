@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "agents/concurrency::single_link_registry"
+f1_keywords: ['single_link_registry', 'AGENTS/concurrency::single_link_registry', 'AGENTS/concurrency::single_link_registry::single_link_registry', 'AGENTS/concurrency::single_link_registry::add', 'AGENTS/concurrency::single_link_registry::begin', 'AGENTS/concurrency::single_link_registry::contains', 'AGENTS/concurrency::single_link_registry::count', 'AGENTS/concurrency::single_link_registry::remove']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -54,18 +53,18 @@ class single_link_registry : public network_link_registry<_Block>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[single_link_registry Constructor](#ctor)|Constructs a `single_link_registry` object.|  
+|[single_link_registry](#ctor)|Constructs a `single_link_registry` object.|  
 |[~single_link_registry Destructor](#dtor)|Destroys the `single_link_registry` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[add Method](#add)|Adds a link to the `single_link_registry` object. (Overrides [network_link_registry::add](network-link-registry-class.md#add).)|  
-|[begin Method](#begin)|Returns an iterator to the first element in the `single_link_registry` object. (Overrides [network_link_registry::begin](network-link-registry-class.md#begin).)|  
-|[contains Method](#contains)|Searches the `single_link_registry` object for a specified block. (Overrides [network_link_registry::contains](network-link-registry-class.md#contains).)|  
-|[count Method](#count)|Counts the number of items in the `single_link_registry` object. (Overrides [network_link_registry::count](network-link-registry-class.md#count).)|  
-|[remove Method](#remove)|Removes a link from the `single_link_registry` object. (Overrides [network_link_registry::remove](network-link-registry-class.md#remove).)|  
+|[add](#add)|Adds a link to the `single_link_registry` object. (Overrides [network_link_registry::add](network-link-registry-class.md#add).)|  
+|[begin](#begin)|Returns an iterator to the first element in the `single_link_registry` object. (Overrides [network_link_registry::begin](network-link-registry-class.md#begin).)|  
+|[contains](#contains)|Searches the `single_link_registry` object for a specified block. (Overrides [network_link_registry::contains](network-link-registry-class.md#contains).)|  
+|[count](#count)|Counts the number of items in the `single_link_registry` object. (Overrides [network_link_registry::count](network-link-registry-class.md#count).)|  
+|[remove](#remove)|Removes a link from the `single_link_registry` object. (Overrides [network_link_registry::remove](network-link-registry-class.md#remove).)|  
   
 ## Inheritance Hierarchy  
  [network_link_registry](network-link-registry-class.md)  

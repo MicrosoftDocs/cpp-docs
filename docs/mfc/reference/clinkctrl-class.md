@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CLinkCtrl"
+f1_keywords: ['CLinkCtrl', 'AFXCMN/CLinkCtrl', 'AFXCMN/CLinkCtrl::CLinkCtrl', 'AFXCMN/CLinkCtrl::Create', 'AFXCMN/CLinkCtrl::CreateEx', 'AFXCMN/CLinkCtrl::GetIdealHeight', 'AFXCMN/CLinkCtrl::GetIdealSize', 'AFXCMN/CLinkCtrl::GetItem', 'AFXCMN/CLinkCtrl::GetItemID', 'AFXCMN/CLinkCtrl::GetItemState', 'AFXCMN/CLinkCtrl::GetItemUrl', 'AFXCMN/CLinkCtrl::HitTest', 'AFXCMN/CLinkCtrl::SetItem', 'AFXCMN/CLinkCtrl::SetItemID', 'AFXCMN/CLinkCtrl::SetItemState', 'AFXCMN/CLinkCtrl::SetItemUrl']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

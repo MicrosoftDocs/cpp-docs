@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCRibbonProgressBar"
+f1_keywords: ['CMFCRibbonProgressBar', 'AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar', 'AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::CMFCRibbonProgressBar', 'AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::GetPos', 'AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::GetRangeMax', 'AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::GetRangeMin', 'AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::GetRegularSize', 'AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::IsInfiniteMode', 'AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::OnDraw', 'AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::SetInfiniteMode', 'AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::SetPos', 'AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::SetRange']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

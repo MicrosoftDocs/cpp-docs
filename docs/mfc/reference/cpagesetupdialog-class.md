@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CPageSetupDialog"
+f1_keywords: ['CPageSetupDialog', 'AFXDLGS/CPageSetupDialog', 'AFXDLGS/CPageSetupDialog::CPageSetupDialog', 'AFXDLGS/CPageSetupDialog::CreatePrinterDC', 'AFXDLGS/CPageSetupDialog::DoModal', 'AFXDLGS/CPageSetupDialog::GetDeviceName', 'AFXDLGS/CPageSetupDialog::GetDevMode', 'AFXDLGS/CPageSetupDialog::GetDriverName', 'AFXDLGS/CPageSetupDialog::GetMargins', 'AFXDLGS/CPageSetupDialog::GetPaperSize', 'AFXDLGS/CPageSetupDialog::GetPortName', 'AFXDLGS/CPageSetupDialog::OnDrawPage', 'AFXDLGS/CPageSetupDialog::PreDrawPage', 'AFXDLGS/CPageSetupDialog::m_psd']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

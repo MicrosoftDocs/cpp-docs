@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CStdioFile"
+f1_keywords: ['CStdioFile', 'AFX/CStdioFile', 'AFX/CStdioFile::CStdioFile', 'AFX/CStdioFile::Open', 'AFX/CStdioFile::ReadString', 'AFX/CStdioFile::Seek', 'AFX/CStdioFile::WriteString', 'AFX/CStdioFile::m_pStream']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

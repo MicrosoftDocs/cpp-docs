@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CRecordView"
+f1_keywords: ['CRecordView', 'AFXDB/CRecordView', 'AFXDB/CRecordView::CRecordView', 'AFXDB/CRecordView::IsOnFirstRecord', 'AFXDB/CRecordView::IsOnLastRecord', 'AFXDB/CRecordView::OnGetRecordset', 'AFXDB/CRecordView::OnMove', 'AFXDB/CRecordView::OnMove']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

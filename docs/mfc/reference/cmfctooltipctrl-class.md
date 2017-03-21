@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCToolTipCtrl"
+f1_keywords: ['CMFCToolTipCtrl', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::GetIconSize', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::GetParams', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawBorder', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawDescription', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawIcon', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawLabel', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawSeparator', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnFillBackground', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetDescription', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetFixedWidth', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetHotRibbonButton', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetLocation', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetParams']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCRibbonEdit"
+f1_keywords: ['CMFCRibbonEdit', 'AFXRIBBONEDIT/CMFCRibbonEdit', 'AFXRIBBONEDIT/CMFCRibbonEdit::CMFCRibbonEdit', 'AFXRIBBONEDIT/CMFCRibbonEdit::CanBeStretched', 'AFXRIBBONEDIT/CMFCRibbonEdit::CMFCRibbonEdit', 'AFXRIBBONEDIT/CMFCRibbonEdit::CopyFrom', 'AFXRIBBONEDIT/CMFCRibbonEdit::CreateEdit', 'AFXRIBBONEDIT/CMFCRibbonEdit::DestroyCtrl', 'AFXRIBBONEDIT/CMFCRibbonEdit::DropDownList', 'AFXRIBBONEDIT/CMFCRibbonEdit::EnableSpinButtons', 'AFXRIBBONEDIT/CMFCRibbonEdit::GetCompactSize', 'AFXRIBBONEDIT/CMFCRibbonEdit::GetEditText', 'AFXRIBBONEDIT/CMFCRibbonEdit::GetIntermediateSize', 'AFXRIBBONEDIT/CMFCRibbonEdit::GetTextAlign', 'AFXRIBBONEDIT/CMFCRibbonEdit::GetWidth', 'AFXRIBBONEDIT/CMFCRibbonEdit::HasCompactMode', 'AFXRIBBONEDIT/CMFCRibbonEdit::HasFocus', 'AFXRIBBONEDIT/CMFCRibbonEdit::HasLargeMode', 'AFXRIBBONEDIT/CMFCRibbonEdit::HasSpinButtons', 'AFXRIBBONEDIT/CMFCRibbonEdit::IsHighlighted', 'AFXRIBBONEDIT/CMFCRibbonEdit::OnAfterChangeRect', 'AFXRIBBONEDIT/CMFCRibbonEdit::OnDraw', 'AFXRIBBONEDIT/CMFCRibbonEdit::OnDrawLabelAndImage', 'AFXRIBBONEDIT/CMFCRibbonEdit::OnDrawOnList', 'AFXRIBBONEDIT/CMFCRibbonEdit::OnEnable', 'AFXRIBBONEDIT/CMFCRibbonEdit::OnHighlight', 'AFXRIBBONEDIT/CMFCRibbonEdit::OnKey', 'AFXRIBBONEDIT/CMFCRibbonEdit::OnLButtonDown', 'AFXRIBBONEDIT/CMFCRibbonEdit::OnLButtonUp', 'AFXRIBBONEDIT/CMFCRibbonEdit::OnRTLChanged', 'AFXRIBBONEDIT/CMFCRibbonEdit::OnShow', 'AFXRIBBONEDIT/CMFCRibbonEdit::Redraw', 'AFXRIBBONEDIT/CMFCRibbonEdit::SetACCData', 'AFXRIBBONEDIT/CMFCRibbonEdit::SetEditText', 'AFXRIBBONEDIT/CMFCRibbonEdit::SetTextAlign', 'AFXRIBBONEDIT/CMFCRibbonEdit::SetWidth']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

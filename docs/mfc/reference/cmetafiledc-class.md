@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMetaFileDC"
+f1_keywords: ['CMetaFileDC', 'AFXEXT/CMetaFileDC', 'AFXEXT/CMetaFileDC::CMetaFileDC', 'AFXEXT/CMetaFileDC::Close', 'AFXEXT/CMetaFileDC::CloseEnhanced', 'AFXEXT/CMetaFileDC::Create', 'AFXEXT/CMetaFileDC::CreateEnhanced']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

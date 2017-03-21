@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CTime"
-  - "CTime"
-  - "ATL::CTime"
+f1_keywords: ['CTime', 'ATLTIME/ATL::CTime', 'ATLTIME/ATL::CTime::CTime', 'ATLTIME/ATL::CTime::Format', 'ATLTIME/ATL::CTime::FormatGmt', 'ATLTIME/ATL::CTime::GetAsDBTIMESTAMP', 'ATLTIME/ATL::CTime::GetAsSystemTime', 'ATLTIME/ATL::CTime::GetCurrentTime', 'ATLTIME/ATL::CTime::GetDay', 'ATLTIME/ATL::CTime::GetDayOfWeek', 'ATLTIME/ATL::CTime::GetGmtTm', 'ATLTIME/ATL::CTime::GetHour', 'ATLTIME/ATL::CTime::GetLocalTm', 'ATLTIME/ATL::CTime::GetMinute', 'ATLTIME/ATL::CTime::GetMonth', 'ATLTIME/ATL::CTime::GetSecond', 'ATLTIME/ATL::CTime::GetTime', 'ATLTIME/ATL::CTime::GetYear', 'ATLTIME/ATL::CTime::Serialize64']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

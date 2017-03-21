@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.macros.data"
+f1_keywords: ['AFXDISP/DDX_OCBool', 'AFXDISP/DDX_OCBoolRO', 'AFXDISP/DDX_OCColor', 'AFXDISP/DDX_OCColorRO', 'AFXDISP/DDX_OCFloat', 'AFXDISP/DDX_OCFloatRO', 'AFXDISP/DDX_OCInt', 'AFXDISP/DDX_OCIntRO', 'AFXDISP/DDX_OCShort', 'AFXDISP/DDX_OCShortRO', 'AFXDISP/DDX_OCText', 'AFXDISP/DDX_OCTextRO']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -83,7 +82,7 @@ void AFXAPI DDX_OCBool(
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
 ### Requirements  
-  **Header** afxdisp.h  
+  **Header:** afxdisp.h  
   
 ##  <a name="ddx_ocboolro"></a>  DDX_OCBoolRO  
  The `DDX_OCBoolRO` function manages the transfer of **BOOL** data between a read-only property of an OLE control in a dialog box, form view, or control view object and a **BOOL** data member of the dialog box, form view, or control view object.  

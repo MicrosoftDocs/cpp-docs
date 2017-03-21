@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CComFakeCriticalSection"
-  - "CComFakeCriticalSection"
-  - "ATL::CComFakeCriticalSection"
+f1_keywords: ['CComFakeCriticalSection', 'ATLCORE/ATL::CComFakeCriticalSection', 'ATLCORE/ATL::CComFakeCriticalSection::Init', 'ATLCORE/ATL::CComFakeCriticalSection::Lock', 'ATLCORE/ATL::CComFakeCriticalSection::Term', 'ATLCORE/ATL::CComFakeCriticalSection::Unlock']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

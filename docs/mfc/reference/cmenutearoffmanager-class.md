@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMenuTearOffManager"
+f1_keywords: ['CMenuTearOffManager', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::CMenuTearOffManager', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Build', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::GetRegPath', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Initialize', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::IsDynamicID', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Parse', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Reset', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::SetInUse', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::SetupTearOffMenus']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

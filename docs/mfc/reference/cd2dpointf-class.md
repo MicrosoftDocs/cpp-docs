@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxrendertarget/CD2DPointF"
-  - "CD2DPointF"
+f1_keywords: ['CD2DPointF', 'AFXRENDERTARGET/CD2DPointF', 'AFXRENDERTARGET/CD2DPointF::CD2DPointF']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

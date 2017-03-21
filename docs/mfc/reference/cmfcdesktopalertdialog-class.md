@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCDesktopAlertDialog"
+f1_keywords: ['CMFCDesktopAlertDialog', 'AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog', 'AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::CreateFromParams', 'AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::GetDlgSize', 'AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::HasFocus', 'AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::PreTranslateMessage']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

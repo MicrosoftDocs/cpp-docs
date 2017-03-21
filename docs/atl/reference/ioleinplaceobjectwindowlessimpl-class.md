@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IOleInPlaceObjectWindowlessImpl"
+f1_keywords: ['IOleInPlaceObjectWindowlessImpl', 'ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl', 'ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::ContextSensitiveHelp', 'ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::GetDropTarget', 'ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::GetWindow', 'ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::InPlaceDeactivate', 'ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::OnWindowMessage', 'ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::ReactivateAndUndo', 'ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::SetObjectRects', 'ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::UIDeactivate']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

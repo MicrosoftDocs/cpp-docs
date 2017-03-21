@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::event"
+f1_keywords: ['event', 'CONCRT/concurrency::event', 'CONCRT/concurrency::event::reset', 'CONCRT/concurrency::event::set', 'CONCRT/concurrency::event::wait', 'CONCRT/concurrency::event::wait_for_multiple', 'CONCRT/concurrency::event::timeout_infinite']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -55,16 +54,16 @@ class event;
   
 |Name|Description|  
 |----------|-----------------|  
-|[reset Method](#reset)|Resets the event to a non-signaled state.|  
-|[set Method](#set)|Signals the event.|  
-|[wait Method](#wait)|Waits for the event to become signaled.|  
-|[wait_for_multiple Method](#wait_for_multiple)|Waits for multiple events to become signaled.|  
+|[reset](#reset)|Resets the event to a non-signaled state.|  
+|[set](#set)|Signals the event.|  
+|[wait](#wait)|Waits for the event to become signaled.|  
+|[wait_for_multiple](#wait_for_multiple)|Waits for multiple events to become signaled.|  
   
 ### Public Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[timeout_infinite Constant](#timeout_infinite)|Value indicating that a wait should never time out.|  
+|[timeout_infinite](#timeout_infinite)|Value indicating that a wait should never time out.|  
   
 ## Remarks  
  For more information, see [Synchronization Data Structures](../../../parallel/concrt/synchronization-data-structures.md).  

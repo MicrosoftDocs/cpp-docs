@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CFixedStringT"
+f1_keywords: ['CFixedStringT', 'CSTRINGT/ATL::CFixedStringT', 'CSTRINGT/ATL::CFixedStringT::CFixedStringT']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CComDynamicUnkArray"
-  - "CComDynamicUnkArray"
-  - "ATL::CComDynamicUnkArray"
+f1_keywords: ['CComDynamicUnkArray', 'ATLCOM/ATL::CComDynamicUnkArray', 'ATLCOM/ATL::CComDynamicUnkArray::CComDynamicUnkArray', 'ATLCOM/ATL::CComDynamicUnkArray::Add', 'ATLCOM/ATL::CComDynamicUnkArray::begin', 'ATLCOM/ATL::CComDynamicUnkArray::clear', 'ATLCOM/ATL::CComDynamicUnkArray::end', 'ATLCOM/ATL::CComDynamicUnkArray::GetAt', 'ATLCOM/ATL::CComDynamicUnkArray::GetCookie', 'ATLCOM/ATL::CComDynamicUnkArray::GetSize', 'ATLCOM/ATL::CComDynamicUnkArray::GetUnknown', 'ATLCOM/ATL::CComDynamicUnkArray::Remove']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

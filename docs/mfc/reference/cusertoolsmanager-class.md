@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CUserToolsManager"
+f1_keywords: ['CUserToolsManager', 'AFXUSERTOOLSMANAGER/CUserToolsManager', 'AFXUSERTOOLSMANAGER/CUserToolsManager::CUserToolsManager', 'AFXUSERTOOLSMANAGER/CUserToolsManager::CreateNewTool', 'AFXUSERTOOLSMANAGER/CUserToolsManager::FindTool', 'AFXUSERTOOLSMANAGER/CUserToolsManager::GetArgumentsMenuID', 'AFXUSERTOOLSMANAGER/CUserToolsManager::GetDefExt', 'AFXUSERTOOLSMANAGER/CUserToolsManager::GetFilter', 'AFXUSERTOOLSMANAGER/CUserToolsManager::GetInitialDirMenuID', 'AFXUSERTOOLSMANAGER/CUserToolsManager::GetMaxTools', 'AFXUSERTOOLSMANAGER/CUserToolsManager::GetToolsEntryCmd', 'AFXUSERTOOLSMANAGER/CUserToolsManager::GetUserTools', 'AFXUSERTOOLSMANAGER/CUserToolsManager::InvokeTool', 'AFXUSERTOOLSMANAGER/CUserToolsManager::IsUserToolCmd', 'AFXUSERTOOLSMANAGER/CUserToolsManager::LoadState', 'AFXUSERTOOLSMANAGER/CUserToolsManager::MoveToolDown', 'AFXUSERTOOLSMANAGER/CUserToolsManager::MoveToolUp', 'AFXUSERTOOLSMANAGER/CUserToolsManager::RemoveTool', 'AFXUSERTOOLSMANAGER/CUserToolsManager::SaveState', 'AFXUSERTOOLSMANAGER/CUserToolsManager::SetDefExt', 'AFXUSERTOOLSMANAGER/CUserToolsManager::SetFilter']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

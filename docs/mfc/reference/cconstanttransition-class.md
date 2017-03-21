@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxanimationcontroller/CConstantTransition"
-  - "CConstantTransition"
+f1_keywords: ['CConstantTransition', 'AFXANIMATIONCONTROLLER/CConstantTransition', 'AFXANIMATIONCONTROLLER/CConstantTransition::CConstantTransition', 'AFXANIMATIONCONTROLLER/CConstantTransition::Create', 'AFXANIMATIONCONTROLLER/CConstantTransition::m_duration']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

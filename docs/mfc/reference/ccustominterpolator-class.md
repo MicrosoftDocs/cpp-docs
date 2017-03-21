@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxanimationcontroller/CCustomInterpolator"
-  - "CCustomInterpolator"
+f1_keywords: ['CCustomInterpolator', 'AFXANIMATIONCONTROLLER/CCustomInterpolator', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::CCustomInterpolator', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::GetDependencies', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::GetDuration', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::GetFinalValue', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::Init', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::InterpolateValue', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::InterpolateVelocity', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::SetDuration', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::SetInitialValueAndVelocity', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::m_currentValue', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::m_currentVelocity', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::m_duration', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::m_finalValue', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::m_initialValue', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::m_initialVelocity']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

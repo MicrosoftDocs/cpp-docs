@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "amprt/Concurrency::uninitialized_object"
+f1_keywords: ['uninitialized_object', 'AMPRT/uninitialized_object', 'AMPRT/Concurrency::uninitialized_object']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

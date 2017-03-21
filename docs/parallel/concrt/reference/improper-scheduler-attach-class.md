@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::improper_scheduler_attach"
+f1_keywords: ['improper_scheduler_attach', 'CONCRT/concurrency::improper_scheduler_attach', 'CONCRT/concurrency::improper_scheduler_attach::improper_scheduler_attach']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,7 +48,7 @@ class improper_scheduler_attach : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[improper_scheduler_attach Constructor](#ctor)|Overloaded. Constructs an `improper_scheduler_attach` object.|  
+|[improper_scheduler_attach](#ctor)|Overloaded. Constructs an `improper_scheduler_attach` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  

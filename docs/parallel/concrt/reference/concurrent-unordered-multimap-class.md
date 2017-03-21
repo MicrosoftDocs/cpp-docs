@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concurrent_unordered_map/concurrency::concurrent_unordered_multimap"
+f1_keywords: ['concurrent_unordered_multimap', 'CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap', 'CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::concurrent_unordered_multimap', 'CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::hash_function', 'CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::insert', 'CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::key_eq', 'CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::swap', 'CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::unsafe_erase']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -101,23 +100,23 @@ template <typename K,
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_unordered_multimap Constructor](#ctor)|Overloaded. Constructs a concurrent unordered multimap.|  
+|[concurrent_unordered_multimap](#ctor)|Overloaded. Constructs a concurrent unordered multimap.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[hash_function Method](#hash_function)|Returns the stored hash function object.|  
-|[insert Method](#insert)|Overloaded. Adds elements to the `concurrent_unordered_multimap` object.|  
-|[key_eq Method](#key_eq)|Returns the stored equality comparison function object.|  
-|[swap Method](#swap)|Swaps the contents of two `concurrent_unordered_multimap` objects. This method is not concurrency-safe.|  
-|[unsafe_erase Method](#unsafe_erase)|Overloaded. Removes elements from the `concurrent_unordered_multimap` at specified positions. This method is not concurrency-safe.|  
+|[hash_function](#hash_function)|Returns the stored hash function object.|  
+|[insert](#insert)|Overloaded. Adds elements to the `concurrent_unordered_multimap` object.|  
+|[key_eq](#key_eq)|Returns the stored equality comparison function object.|  
+|[swap](#swap)|Swaps the contents of two `concurrent_unordered_multimap` objects. This method is not concurrency-safe.|  
+|[unsafe_erase](#unsafe_erase)|Overloaded. Removes elements from the `concurrent_unordered_multimap` at specified positions. This method is not concurrency-safe.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator= Operator](#operator_eq)|Overloaded. Assigns the contents of another `concurrent_unordered_multimap` object to this one. This method is not concurrency-safe.|  
+|[operator=](#operator_eq)|Overloaded. Assigns the contents of another `concurrent_unordered_multimap` object to this one. This method is not concurrency-safe.|  
   
 ## Remarks  
  For detailed information on the `concurrent_unordered_multimap` class, see [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md).  

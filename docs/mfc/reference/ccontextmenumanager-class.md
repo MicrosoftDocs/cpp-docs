@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CContextMenuManager"
+f1_keywords: ['CContextMenuManager', 'AFXCONTEXTMENUMANAGER/CContextMenuManager', 'AFXCONTEXTMENUMANAGER/CContextMenuManager::CContextMenuManager', 'AFXCONTEXTMENUMANAGER/CContextMenuManager::AddMenu', 'AFXCONTEXTMENUMANAGER/CContextMenuManager::GetMenuById', 'AFXCONTEXTMENUMANAGER/CContextMenuManager::GetMenuByName', 'AFXCONTEXTMENUMANAGER/CContextMenuManager::GetMenuNames', 'AFXCONTEXTMENUMANAGER/CContextMenuManager::LoadState', 'AFXCONTEXTMENUMANAGER/CContextMenuManager::ResetState', 'AFXCONTEXTMENUMANAGER/CContextMenuManager::SaveState', 'AFXCONTEXTMENUMANAGER/CContextMenuManager::SetDontCloseActiveMenu', 'AFXCONTEXTMENUMANAGER/CContextMenuManager::ShowPopupMenu', 'AFXCONTEXTMENUMANAGER/CContextMenuManager::TrackPopupMenu']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

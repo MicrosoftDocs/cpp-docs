@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.IWorkerThreadClient"
-  - "ATL::IWorkerThreadClient"
-  - "IWorkerThreadClient"
+f1_keywords: ['IWorkerThreadClient', 'ATLUTIL/ATL::IWorkerThreadClient', 'ATLUTIL/ATL::CloseHandle', 'ATLUTIL/ATL::Execute']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

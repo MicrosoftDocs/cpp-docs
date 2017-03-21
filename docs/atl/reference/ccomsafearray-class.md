@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComSafeArray"
+f1_keywords: ['CComSafeArray', 'ATLSAFE/ATL::CComSafeArray', 'ATLSAFE/ATL::CComSafeArray::CComSafeArray', 'ATLSAFE/ATL::CComSafeArray::Add', 'ATLSAFE/ATL::CComSafeArray::Attach', 'ATLSAFE/ATL::CComSafeArray::CopyFrom', 'ATLSAFE/ATL::CComSafeArray::CopyTo', 'ATLSAFE/ATL::CComSafeArray::Create', 'ATLSAFE/ATL::CComSafeArray::Destroy', 'ATLSAFE/ATL::CComSafeArray::Detach', 'ATLSAFE/ATL::CComSafeArray::GetAt', 'ATLSAFE/ATL::CComSafeArray::GetCount', 'ATLSAFE/ATL::CComSafeArray::GetDimensions', 'ATLSAFE/ATL::CComSafeArray::GetLowerBound', 'ATLSAFE/ATL::CComSafeArray::GetSafeArrayPtr', 'ATLSAFE/ATL::CComSafeArray::GetType', 'ATLSAFE/ATL::CComSafeArray::GetUpperBound', 'ATLSAFE/ATL::CComSafeArray::IsSizable', 'ATLSAFE/ATL::CComSafeArray::MultiDimGetAt', 'ATLSAFE/ATL::CComSafeArray::MultiDimSetAt', 'ATLSAFE/ATL::CComSafeArray::Resize', 'ATLSAFE/ATL::CComSafeArray::SetAt', 'ATLSAFE/ATL::CComSafeArray::m_psa']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

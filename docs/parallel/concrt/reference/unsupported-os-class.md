@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::unsupported_os"
+f1_keywords: ['unsupported_os', 'CONCRT/concurrency::unsupported_os', 'CONCRT/concurrency::unsupported_os::unsupported_os']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,7 +48,7 @@ class unsupported_os : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[unsupported_os Constructor](#ctor)|Overloaded. Constructs an `unsupported_os` object.|  
+|[unsupported_os](#ctor)|Overloaded. Constructs an `unsupported_os` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  

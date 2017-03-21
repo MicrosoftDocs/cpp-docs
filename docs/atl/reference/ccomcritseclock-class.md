@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CComCritSecLock"
-  - "ATL.CComCritSecLock<TLock>"
-  - "ATL::CComCritSecLock<TLock>"
-  - "ATL.CComCritSecLock"
-  - "CComCritSecLock"
+f1_keywords: ['CComCritSecLock', 'ATLBASE/ATL::CComCritSecLock', 'ATLBASE/ATL::CComCritSecLock::CComCritSecLock', 'ATLBASE/ATL::CComCritSecLock::Lock', 'ATLBASE/ATL::CComCritSecLock::Unlock']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
