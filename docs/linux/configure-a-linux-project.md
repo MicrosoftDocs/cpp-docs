@@ -66,7 +66,7 @@ Once the files are copied, use the **VC++ Directories** item in Project properti
 ## Copy Sources
 When building, the source files on your development PC are copied to the Linux computer and compiled there.  By default, all sources in the Visual Studio project are copied to the locations set in the settings above.  However, additional sources can also be added to the list, or copying sources can be turned off entirely, which is the default for a Makefile project.
 
-* **Sources to copy** determines which sources are copied to the remote computer.  By default, the **@(SourcesToCopyRemotely)** defaults to all files in the project.
+* **Sources to copy** determines which sources are copied to the remote computer.  By default, the **@(SourcesToCopyRemotely)** defaults to all source code files in the project, but does not include any asset/resource files, such as images.
 
 * **Copy sources** can be turned on and off to enable and disable the copying of source files to the remote computer.
 
