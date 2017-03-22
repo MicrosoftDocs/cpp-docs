@@ -50,7 +50,7 @@ class StringReference
   
 |Name|Description|  
 |----------|-----------------|  
-|[StringReference::operator=](#operator-equals)|Assigns a `StringReference` to a new `StringReference` instance.|  
+|[StringReference::operator=](#operator-assign)|Assigns a `StringReference` to a new `StringReference` instance.|  
 |[StringReference::operator()](#operator-call)|Converts a `StringReference` to a `Platform::String^`.|  
   
 ### Requirements  
@@ -122,7 +122,7 @@ unsigned int Length() const
   
 
 
-## <a name="operator-equals"></a>  StringReference::operator= Operator
+## <a name="operator-assign"></a>  StringReference::operator= Operator
 Assigns the specified object to the current `StringReference` object.  
   
 ### Syntax  

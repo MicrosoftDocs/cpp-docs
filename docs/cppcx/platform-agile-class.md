@@ -155,7 +155,7 @@ throw();
 ### Remarks  
  This operation releases the current representation of a object of type `T`, if any; reinitializes the Agile object's data members; acquires the current threading context; and then returns the address of a handle-to-object variable that can represent a non-agile object. To cause an Agile class instance to represent an object, use the assignment operator ([Agile::operator=](#operator-assign)) to assign the object to the Agile class instance.  
 
-## <a name="getaddressofforinput"></a>  Agile::GetAddressOfForInOut Method
+## <a name="getaddressofforinout"></a>  Agile::GetAddressOfForInOut Method
 Returns the address of a handle to the object represented by the current Agile object.  
   
 ## Syntax  

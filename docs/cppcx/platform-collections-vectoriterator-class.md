@@ -288,7 +288,7 @@ difference_type operator-(const VectorIterator& other) const;
   
 
 
-## <a name="operator-plus-equals"></a>  VectorIterator::operator+= Operator
+## <a name="operator-plus-assign"></a>  VectorIterator::operator+= Operator
 Increments the current VectorIterator by the specified displacement.  
   
 ### Syntax  
