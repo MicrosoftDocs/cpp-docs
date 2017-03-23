@@ -42,7 +42,7 @@ Univeral Windows Platform (UWP) apps embody a set of design principles that emph
   
 |||  
 |-|-|  
-|[Visual C++ language reference (C++/CX)](../cppcx/visual-cpp-language-reference-c-cx.md)|Describes the set of extensions that simplify C++ consumption of [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] APIs and enable error handling that's based on exceptions.|  
+|[Visual C++ language reference (C++/CX)](../cppcx/visual-c-language-reference-c-cx.md)|Describes the set of extensions that simplify C++ consumption of [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] APIs and enable error handling that's based on exceptions.|  
 |[Building apps and libraries (C++/CX)](../cppcx/building-apps-and-libraries-c-cx.md)|Describes how to create DLLs and static libraries that can be accessed from a C++/CX app or component.|  
 |[Tutorial: Create your first Windows Store app using C++](https://docs.microsoft.com/en-us/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp)|A walkthrough that introduces the basic concepts of Universal Windows Platform app development in C++. (Not yet updated for UWP development on Windows 10.)|  
 |[Creating Windows Runtime Components in C++](https://docs.microsoft.com/en-us/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)|Describes how to create DLLs that other Universal Windows Platform apps and components can consume.|  
