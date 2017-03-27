@@ -37,8 +37,10 @@ public ref class Platform::Type :
   
 |||  
 |-|-|  
-|[Type::GetTypeCode](#gettypecode)|Returns a [Platform::TypeCode Enumeration](../cppcx/platform-typecode-enumeration.md) value for the object.|  
-  
+|[Type::GetTypeCode Method](#gettypecode)|Returns a [Platform::TypeCode Enumeration](../cppcx/platform-typecode-enumeration.md) value for the object.| 
+|[Type::ToString Method](#tostring)|Returns the name of the type as specified in its metadata.| 
+
+ 
 ## Public properties  
   
 |||  
@@ -102,7 +104,19 @@ Platform::TypeCode GetTypeCode();
  One of the Platform::TypeCode enumerated values.  
   
 ### Remarks  
- The equivalent of the GetTypeCode() member method is the `typeid` property.  
+ The equivalent of the GetTypeCode() member method is the `typeid` property.
+
+## <a name="tostring"></a> Type::ToString Method
+Retrieves a the name of the type.  
+  
+### Syntax  
+  
+```cpp  
+Platform::String^ ToString();  
+```  
+  
+### Return Value  
+ A name of the type as specified in its metadata.    
   
 ## See Also  
  [Platform namespace](../cppcx/platform-namespace-c-cx.md)

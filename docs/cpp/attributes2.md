@@ -26,6 +26,10 @@ void Foo(int);
 -   `carries_dependency`--specifies that the function propagates data dependency ordering with respect to thread synchronization. The attribute can be applied to one or more parameters, to specify that the passed-in argument carries a dependency into the function body. The attribute can be applied to the function itself, to specify that the return value carries a dependency out of the function.   The compiler can use this information to generate more efficient code.  
   
 -   `deprecated` – specifies that a function is not intended to be used, and might not exist in future versions of a library interface. The compiler can use this to generate an informational message when client code attempts to call the function. Can be applied to declaration of a class, a typedef-name, a variable, a non-static data member, a function, a namespace, an enumeration, an enumerator, or a template specialization.  
+
+-   `fallthrough` - **Visual Studio 2017 and later:**(available with [/std:c++latest](../build/reference/std-specify-language-standard-version.md)) The `[[fallthrough]]` attribute can be used in the context of [switch](switch-statement-cpp.md) statements as a hint to the compiler (or anyone reading the code) that the fallthrough behavior is intended. The Visual C++ compiler currently does not warn on fallthrough behavior, so this attribute has no effect compiler behavior.
+
+**Microsoft-specific:**
   
 -   `gsl::suppress`  -- this Microsoft-specific attribute is used for suppressing warnings from checkers that enforce [Guidelines Support Library (GSL)](https://github.com/Microsoft/GSL) rules in code. For example, consider the code snippet below  
   

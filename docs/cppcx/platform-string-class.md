@@ -70,7 +70,7 @@ public ref class String sealed : Object,
 |[String::Length](#length)|Retrieves the length of the current String object.|  
 |[String::ToString](#tostring)|Returns a String object whose value is the same as the current string.|  
   
- **Properties**  
+ **Operators**  
   
  The String class has the following operators.  
   
@@ -371,7 +371,7 @@ bool String::operator>( String^ str1, String^ str2)
   
 
 
-## <a name="operator-greater-than-or-equal"></a> String::operator&gt;= 
+## <a name="operator-greater-than-or-equals"></a> String::operator&gt;= 
 Indicates whether the value of one String object is greater than or equal to the value of a second String object.  
   
 ### Syntax  

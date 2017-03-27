@@ -72,7 +72,7 @@ ref class MapView sealed;
  **Namespace:** Platform::Collections  
 
 
-## MapView::First Method
+## <a name="first"></a> MapView::First Method
 Returns an iterator that specifies the first element in the map view.  
   
 ### Syntax  
