@@ -58,7 +58,7 @@ public ref class Object : Object
  **Namespace:** Platform  
 
   
-## Object::Equals Method
+## <a name="equals"></a> Object::Equals Method
 Determines whether the specified object is equal to the current object.  
   
 ### Syntax  

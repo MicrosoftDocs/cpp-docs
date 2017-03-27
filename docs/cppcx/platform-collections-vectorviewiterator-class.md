@@ -68,7 +68,7 @@ class VectorViewIterator;
 |[VectorViewIterator::operator+= Operator](#operator-plus-assign)|Increments the current VectorViewIterator by the specified displacement.|  
 |[VectorViewIterator::operator< Operator](#operator-less-than)|Indicates whether the current VectorViewIterator is less than a specified VectorViewIterator.|  
 |[VectorViewIterator::operator\<= Operator](#operator-less-than-or-equals)|Indicates whether the current VectorViewIterator is less than or equal to a specified VectorViewIterator.|  
-|[VectorViewIterator::operator-= Operator](#operator-subtract-assign)|Decrements the current VectorViewIterator by the specified displacement.|  
+|[VectorViewIterator::operator-= Operator](#operator-minus-assign)|Decrements the current VectorViewIterator by the specified displacement.|  
 |[VectorViewIterator::operator== Operator](#operator-equality)|Indicates whether the current VectorViewIterator is equal to a specified VectorViewIterator.|  
 |[VectorViewIterator::operator> Operator](#operator-greater-than)|Indicates whether the current VectorViewIterator is greater than a specified VectorViewIterator.|  
 |[VectorViewIterator::operator-> Operator](#operator-arrow)|Retrieves the address of the element referenced by the current VectorViewIterator.|  
@@ -169,7 +169,7 @@ bool operator>(const VectorViewIterator& other) const;
   
 
 
-## <a name="operator-greater-than"></a>  VectorViewIterator::operator&gt;= Operator
+## <a name="operator-greater-than-or-equals"></a>  VectorViewIterator::operator&gt;= Operator
 Indicates whether the current VectorViewIterator is greater than or equal to the specified VectorViewIterator.  
   
 ### Syntax  
@@ -339,7 +339,7 @@ inline VectorViewIterator<T> operator+
   
 
 
-## <a name="operator-minus-equals"></a>  VectorViewIterator::operator-= Operator
+## <a name="operator-minus-assign"></a>  VectorViewIterator::operator-= Operator
 Decrements the current VectorIterator by the specified displacement.  
   
 ### Syntax  

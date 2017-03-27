@@ -62,7 +62,7 @@ IntPtr( __int64 handle-or-pointer );   IntPtr( void* value );   IntPtr( int 32-b
   
 
 
-## <a name="op_explicit"> </a> IntPtr::op_explicit Operator
+## <a name="op-explicit"> </a> IntPtr::op_explicit Operator
 Converts the specified parameter to an IntPtr or a pointer to an IntPtr value.  
   
 ### Syntax  
