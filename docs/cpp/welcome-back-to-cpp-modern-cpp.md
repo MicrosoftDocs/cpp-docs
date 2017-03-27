@@ -87,10 +87,10 @@ delete p;
 auto p = make_shared<circle>( 42 );  
 vector<shared_ptr<shape>> v = load_shapes();  
   
-for_each( begin(v), end(v), [&](const shared_ptr<shape>& s) {  
+for( auto& s : v ) {  
     if( s && *s == *p )  
         cout << *s << " is a match\n";  
-} );  
+} 
 ```  
   
  In modern C++, you don't have to use new/delete or explicit exception handling because you can use smart pointers instead. When you use the `auto` type deduction and [lambda function](../cpp/lambda-expressions-in-cpp.md), you can write code quicker, tighten it, and understand it better. And `for_each` is cleaner, easier to use, and less prone to unintended errors than a `for` loop. You can use boilerplate together with minimal lines of code to write your app. And you can make that code exception-safe and memory-safe, and have no allocation/deallocation or error codes to deal with.  
