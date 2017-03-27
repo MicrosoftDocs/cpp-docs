@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCPreviewCtrlImpl"
-  - "afxwin/CMFCPreviewCtrlImpl"
+f1_keywords: ['CMFCPreviewCtrlImpl', 'AFXWIN/CMFCPreviewCtrlImpl', 'AFXWIN/CMFCPreviewCtrlImpl::CMFCPreviewCtrlImpl', 'AFXWIN/CMFCPreviewCtrlImpl::Create', 'AFXWIN/CMFCPreviewCtrlImpl::Destroy', 'AFXWIN/CMFCPreviewCtrlImpl::Focus', 'AFXWIN/CMFCPreviewCtrlImpl::GetDocument', 'AFXWIN/CMFCPreviewCtrlImpl::Redraw', 'AFXWIN/CMFCPreviewCtrlImpl::SetDocument', 'AFXWIN/CMFCPreviewCtrlImpl::SetHost', 'AFXWIN/CMFCPreviewCtrlImpl::SetPreviewVisuals', 'AFXWIN/CMFCPreviewCtrlImpl::SetRect', 'AFXWIN/CMFCPreviewCtrlImpl::DoPaint', 'AFXWIN/CMFCPreviewCtrlImpl::m_clrBackColor', 'AFXWIN/CMFCPreviewCtrlImpl::m_clrTextColor', 'AFXWIN/CMFCPreviewCtrlImpl::m_font', 'AFXWIN/CMFCPreviewCtrlImpl::m_pDocument']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

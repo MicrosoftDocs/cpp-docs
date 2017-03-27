@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::task_canceled"
+f1_keywords: ['task_canceled', 'CONCRT/concurrency::task_canceled', 'CONCRT/concurrency::task_canceled::task_canceled']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,7 +48,7 @@ class task_canceled : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[task_canceled Constructor](#ctor)|Overloaded. Constructs a `task_canceled` object.|  
+|[task_canceled](#ctor)|Overloaded. Constructs a `task_canceled` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  

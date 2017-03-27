@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComContainedObject"
+f1_keywords: ['CComContainedObject', 'ATLCOM/ATL::CComContainedObject', 'ATLCOM/ATL::CComContainedObject::CComContainedObject', 'ATLCOM/ATL::CComContainedObject::AddRef', 'ATLCOM/ATL::CComContainedObject::GetControllingUnknown', 'ATLCOM/ATL::CComContainedObject::QueryInterface', 'ATLCOM/ATL::CComContainedObject::Release']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

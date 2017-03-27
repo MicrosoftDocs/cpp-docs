@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CSecurityAttributes"
-  - "ATL::CSecurityAttributes"
-  - "CSecurityAttributes"
+f1_keywords: ['CSecurityAttributes', 'ATLSECURITY/ATL::CSecurityAttributes', 'ATLSECURITY/ATL::CSecurityAttributes::CSecurityAttributes', 'ATLSECURITY/ATL::CSecurityAttributes::Set']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

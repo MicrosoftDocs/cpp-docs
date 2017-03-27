@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSharedFile"
+f1_keywords: ['CSharedFile', 'AFXADV/CSharedFile', 'AFXADV/CSharedFile::CSharedFile', 'AFXADV/CSharedFile::Detach', 'AFXADV/CSharedFile::SetHandle']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

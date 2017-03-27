@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::bad_target"
+f1_keywords: ['bad_target', 'CONCRT/concurrency::bad_target', 'CONCRT/concurrency::bad_target::bad_target']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,7 +48,7 @@ class bad_target : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[bad_target Constructor](#ctor)|Overloaded. Constructs a `bad_target` object.|  
+|[bad_target](#ctor)|Overloaded. Constructs a `bad_target` object.|  
   
 ## Remarks  
  This exception is typically thrown for reasons such as a target attempting to consume a message which is reserved for a different target or releasing a reservation that it does not hold.  

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CGopherFile"
+f1_keywords: ['CGopherFile', 'AFXINET/CGopherFile', 'AFXINET/CGopherFile::CGopherFile']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

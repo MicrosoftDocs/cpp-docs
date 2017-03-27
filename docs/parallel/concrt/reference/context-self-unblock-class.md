@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::context_self_unblock"
+f1_keywords: ['context_self_unblock', 'CONCRT/concurrency::context_self_unblock', 'CONCRT/concurrency::context_self_unblock::context_self_unblock']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,7 +48,7 @@ class context_self_unblock : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[context_self_unblock Constructor](#ctor)|Overloaded. Constructs a `context_self_unblock` object.|  
+|[context_self_unblock](#ctor)|Overloaded. Constructs a `context_self_unblock` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  

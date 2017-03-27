@@ -324,155 +324,155 @@ class uint_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|uint_4::get_w Method||  
-|uint_4::get_wx Method||  
-|uint_4::get_wxy Method||  
-|uint_4::get_wxyz Method||  
-|uint_4::get_wxz Method||  
-|uint_4::get_wxzy Method||  
-|uint_4::get_wy Method||  
-|uint_4::get_wyx Method||  
-|uint_4::get_wyxz Method||  
-|uint_4::get_wyz Method||  
-|uint_4::get_wyzx Method||  
-|uint_4::get_wz Method||  
-|uint_4::get_wzx Method||  
-|uint_4::get_wzxy Method||  
-|uint_4::get_wzy Method||  
-|uint_4::get_wzyx Method||  
-|uint_4::get_x Method||  
-|uint_4::get_xw Method||  
-|uint_4::get_xwy Method||  
-|uint_4::get_xwyz Method||  
-|uint_4::get_xwz Method||  
-|uint_4::get_xwzy Method||  
-|uint_4::get_xy Method||  
-|uint_4::get_xyw Method||  
-|uint_4::get_xywz Method||  
-|uint_4::get_xyz Method||  
-|uint_4::get_xyzw Method||  
-|uint_4::get_xz Method||  
-|uint_4::get_xzw Method||  
-|uint_4::get_xzwy Method||  
-|uint_4::get_xzy Method||  
-|uint_4::get_xzyw Method||  
-|uint_4::get_y Method||  
-|uint_4::get_yw Method||  
-|uint_4::get_ywx Method||  
-|uint_4::get_ywxz Method||  
-|uint_4::get_ywz Method||  
-|uint_4::get_ywzx Method||  
-|uint_4::get_yx Method||  
-|uint_4::get_yxw Method||  
-|uint_4::get_yxwz Method||  
-|uint_4::get_yxz Method||  
-|uint_4::get_yxzw Method||  
-|uint_4::get_yz Method||  
-|uint_4::get_yzw Method||  
-|uint_4::get_yzwx Method||  
-|uint_4::get_yzx Method||  
-|uint_4::get_yzxw Method||  
-|uint_4::get_z Method||  
-|uint_4::get_zw Method||  
-|uint_4::get_zwx Method||  
-|uint_4::get_zwxy Method||  
-|uint_4::get_zwy Method||  
-|uint_4::get_zwyx Method||  
-|uint_4::get_zx Method||  
-|uint_4::get_zxw Method||  
-|uint_4::get_zxwy Method||  
-|uint_4::get_zxy Method||  
-|uint_4::get_zxyw Method||  
-|uint_4::get_zy Method||  
-|uint_4::get_zyw Method||  
-|uint_4::get_zywx Method||  
-|uint_4::get_zyx Method||  
-|uint_4::get_zyxw Method||  
-|uint_4::ref_a Method||  
-|uint_4::ref_b Method||  
-|uint_4::ref_g Method||  
-|uint_4::ref_r Method||  
-|uint_4::ref_w Method||  
-|uint_4::ref_x Method||  
-|uint_4::ref_y Method||  
-|uint_4::ref_z Method||  
-|uint_4::set_w Method||  
-|uint_4::set_wx Method||  
-|uint_4::set_wxy Method||  
-|uint_4::set_wxyz Method||  
-|uint_4::set_wxz Method||  
-|uint_4::set_wxzy Method||  
-|uint_4::set_wy Method||  
-|uint_4::set_wyx Method||  
-|uint_4::set_wyxz Method||  
-|uint_4::set_wyz Method||  
-|uint_4::set_wyzx Method||  
-|uint_4::set_wz Method||  
-|uint_4::set_wzx Method||  
-|uint_4::set_wzxy Method||  
-|uint_4::set_wzy Method||  
-|uint_4::set_wzyx Method||  
-|uint_4::set_x Method||  
-|uint_4::set_xw Method||  
-|uint_4::set_xwy Method||  
-|uint_4::set_xwyz Method||  
-|uint_4::set_xwz Method||  
-|uint_4::set_xwzy Method||  
-|uint_4::set_xy Method||  
-|uint_4::set_xyw Method||  
-|uint_4::set_xywz Method||  
-|uint_4::set_xyz Method||  
-|uint_4::set_xyzw Method||  
-|uint_4::set_xz Method||  
-|uint_4::set_xzw Method||  
-|uint_4::set_xzwy Method||  
-|uint_4::set_xzy Method||  
-|uint_4::set_xzyw Method||  
-|uint_4::set_y Method||  
-|uint_4::set_yw Method||  
-|uint_4::set_ywx Method||  
-|uint_4::set_ywxz Method||  
-|uint_4::set_ywz Method||  
-|uint_4::set_ywzx Method||  
-|uint_4::set_yx Method||  
-|uint_4::set_yxw Method||  
-|uint_4::set_yxwz Method||  
-|uint_4::set_yxz Method||  
-|uint_4::set_yxzw Method||  
-|uint_4::set_yz Method||  
-|uint_4::set_yzw Method||  
-|uint_4::set_yzwx Method||  
-|uint_4::set_yzx Method||  
-|uint_4::set_yzxw Method||  
-|uint_4::set_z Method||  
-|uint_4::set_zw Method||  
-|uint_4::set_zwx Method||  
-|uint_4::set_zwxy Method||  
-|uint_4::set_zwy Method||  
-|uint_4::set_zwyx Method||  
-|uint_4::set_zx Method||  
-|uint_4::set_zxw Method||  
-|uint_4::set_zxwy Method||  
-|uint_4::set_zxy Method||  
-|uint_4::set_zxyw Method||  
-|uint_4::set_zy Method||  
-|uint_4::set_zyw Method||  
-|uint_4::set_zywx Method||  
-|uint_4::set_zyx Method||  
-|uint_4::set_zyxw Method||  
+|uint_4::get_w||  
+|uint_4::get_wx||  
+|uint_4::get_wxy||  
+|uint_4::get_wxyz||  
+|uint_4::get_wxz||  
+|uint_4::get_wxzy||  
+|uint_4::get_wy||  
+|uint_4::get_wyx||  
+|uint_4::get_wyxz||  
+|uint_4::get_wyz||  
+|uint_4::get_wyzx||  
+|uint_4::get_wz||  
+|uint_4::get_wzx||  
+|uint_4::get_wzxy||  
+|uint_4::get_wzy||  
+|uint_4::get_wzyx||  
+|uint_4::get_x||  
+|uint_4::get_xw||  
+|uint_4::get_xwy||  
+|uint_4::get_xwyz||  
+|uint_4::get_xwz||  
+|uint_4::get_xwzy||  
+|uint_4::get_xy||  
+|uint_4::get_xyw||  
+|uint_4::get_xywz||  
+|uint_4::get_xyz||  
+|uint_4::get_xyzw||  
+|uint_4::get_xz||  
+|uint_4::get_xzw||  
+|uint_4::get_xzwy||  
+|uint_4::get_xzy||  
+|uint_4::get_xzyw||  
+|uint_4::get_y||  
+|uint_4::get_yw||  
+|uint_4::get_ywx||  
+|uint_4::get_ywxz||  
+|uint_4::get_ywz||  
+|uint_4::get_ywzx||  
+|uint_4::get_yx||  
+|uint_4::get_yxw||  
+|uint_4::get_yxwz||  
+|uint_4::get_yxz||  
+|uint_4::get_yxzw||  
+|uint_4::get_yz||  
+|uint_4::get_yzw||  
+|uint_4::get_yzwx||  
+|uint_4::get_yzx||  
+|uint_4::get_yzxw||  
+|uint_4::get_z||  
+|uint_4::get_zw||  
+|uint_4::get_zwx||  
+|uint_4::get_zwxy||  
+|uint_4::get_zwy||  
+|uint_4::get_zwyx||  
+|uint_4::get_zx||  
+|uint_4::get_zxw||  
+|uint_4::get_zxwy||  
+|uint_4::get_zxy||  
+|uint_4::get_zxyw||  
+|uint_4::get_zy||  
+|uint_4::get_zyw||  
+|uint_4::get_zywx||  
+|uint_4::get_zyx||  
+|uint_4::get_zyxw||  
+|uint_4::ref_a||  
+|uint_4::ref_b||  
+|uint_4::ref_g||  
+|uint_4::ref_r||  
+|uint_4::ref_w||  
+|uint_4::ref_x||  
+|uint_4::ref_y||  
+|uint_4::ref_z||  
+|uint_4::set_w||  
+|uint_4::set_wx||  
+|uint_4::set_wxy||  
+|uint_4::set_wxyz||  
+|uint_4::set_wxz||  
+|uint_4::set_wxzy||  
+|uint_4::set_wy||  
+|uint_4::set_wyx||  
+|uint_4::set_wyxz||  
+|uint_4::set_wyz||  
+|uint_4::set_wyzx||  
+|uint_4::set_wz||  
+|uint_4::set_wzx||  
+|uint_4::set_wzxy||  
+|uint_4::set_wzy||  
+|uint_4::set_wzyx||  
+|uint_4::set_x||  
+|uint_4::set_xw||  
+|uint_4::set_xwy||  
+|uint_4::set_xwyz||  
+|uint_4::set_xwz||  
+|uint_4::set_xwzy||  
+|uint_4::set_xy||  
+|uint_4::set_xyw||  
+|uint_4::set_xywz||  
+|uint_4::set_xyz||  
+|uint_4::set_xyzw||  
+|uint_4::set_xz||  
+|uint_4::set_xzw||  
+|uint_4::set_xzwy||  
+|uint_4::set_xzy||  
+|uint_4::set_xzyw||  
+|uint_4::set_y||  
+|uint_4::set_yw||  
+|uint_4::set_ywx||  
+|uint_4::set_ywxz||  
+|uint_4::set_ywz||  
+|uint_4::set_ywzx||  
+|uint_4::set_yx||  
+|uint_4::set_yxw||  
+|uint_4::set_yxwz||  
+|uint_4::set_yxz||  
+|uint_4::set_yxzw||  
+|uint_4::set_yz||  
+|uint_4::set_yzw||  
+|uint_4::set_yzwx||  
+|uint_4::set_yzx||  
+|uint_4::set_yzxw||  
+|uint_4::set_z||  
+|uint_4::set_zw||  
+|uint_4::set_zwx||  
+|uint_4::set_zwxy||  
+|uint_4::set_zwy||  
+|uint_4::set_zwyx||  
+|uint_4::set_zx||  
+|uint_4::set_zxw||  
+|uint_4::set_zxwy||  
+|uint_4::set_zxy||  
+|uint_4::set_zxyw||  
+|uint_4::set_zy||  
+|uint_4::set_zyw||  
+|uint_4::set_zywx||  
+|uint_4::set_zyx||  
+|uint_4::set_zyxw||  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|uint_4::operator- Operator||  
-|uint_4::operator-- Operator||  
-|uint_4::operator*= Operator||  
-|uint_4::operator/= Operator||  
-|uint_4::operator++ Operator||  
-|uint_4::operator+= Operator||  
-|uint_4::operator= Operator||  
-|uint_4::operator-= Operator||  
+|uint_4::operator-||  
+|uint_4::operator--||  
+|uint_4::operator*=||  
+|uint_4::operator/=||  
+|uint_4::operator++||  
+|uint_4::operator+=||  
+|uint_4::operator=||  
+|uint_4::operator-=||  
   
 ### Public Constants  
   
@@ -485,134 +485,134 @@ class uint_4;
   
 |Name|Description|  
 |----------|-----------------|  
-|uint_4::a Data Member||  
-|uint_4::ab Data Member||  
-|uint_4::abg Data Member||  
-|uint_4::abgr Data Member||  
-|uint_4::abr Data Member||  
-|uint_4::abrg Data Member||  
-|uint_4::ag Data Member||  
-|uint_4::agb Data Member||  
-|uint_4::agbr Data Member||  
-|uint_4::agr Data Member||  
-|uint_4::agrb Data Member||  
-|uint_4::ar Data Member||  
-|uint_4::arb Data Member||  
-|uint_4::arbg Data Member||  
-|uint_4::arg Data Member||  
-|uint_4::argb Data Member||  
-|uint_4::b Data Member||  
-|uint_4::ba Data Member||  
-|uint_4::bag Data Member||  
-|uint_4::bagr Data Member||  
-|uint_4::bar Data Member||  
-|uint_4::barg Data Member||  
-|uint_4::bg Data Member||  
-|uint_4::bga Data Member||  
-|uint_4::bgar Data Member||  
-|uint_4::bgr Data Member||  
-|uint_4::bgra Data Member||  
-|uint_4::br Data Member||  
-|uint_4::bra Data Member||  
-|uint_4::brag Data Member||  
-|uint_4::brg Data Member||  
-|uint_4::brga Data Member||  
-|uint_4::g Data Member||  
-|uint_4::ga Data Member||  
-|uint_4::gab Data Member||  
-|uint_4::gabr Data Member||  
-|uint_4::gar Data Member||  
-|uint_4::garb Data Member||  
-|uint_4::gb Data Member||  
-|uint_4::gba Data Member||  
-|uint_4::gbar Data Member||  
-|uint_4::gbr Data Member||  
-|uint_4::gbra Data Member||  
-|uint_4::gr Data Member||  
-|uint_4::gra Data Member||  
-|uint_4::grab Data Member||  
-|uint_4::grb Data Member||  
-|uint_4::grba Data Member||  
-|uint_4::r Data Member||  
-|uint_4::ra Data Member||  
-|uint_4::rab Data Member||  
-|uint_4::rabg Data Member||  
-|uint_4::rag Data Member||  
-|uint_4::ragb Data Member||  
-|uint_4::rb Data Member||  
-|uint_4::rba Data Member||  
-|uint_4::rbag Data Member||  
-|uint_4::rbg Data Member||  
-|uint_4::rbga Data Member||  
-|uint_4::rg Data Member||  
-|uint_4::rga Data Member||  
-|uint_4::rgab Data Member||  
-|uint_4::rgb Data Member||  
-|uint_4::rgba Data Member||  
-|uint_4::w Data Member||  
-|uint_4::wx Data Member||  
-|uint_4::wxy Data Member||  
-|uint_4::wxyz Data Member||  
-|uint_4::wxz Data Member||  
-|uint_4::wxzy Data Member||  
-|uint_4::wy Data Member||  
-|uint_4::wyx Data Member||  
-|uint_4::wyxz Data Member||  
-|uint_4::wyz Data Member||  
-|uint_4::wyzx Data Member||  
-|uint_4::wz Data Member||  
-|uint_4::wzx Data Member||  
-|uint_4::wzxy Data Member||  
-|uint_4::wzy Data Member||  
-|uint_4::wzyx Data Member||  
-|uint_4::x Data Member||  
-|uint_4::xw Data Member||  
-|uint_4::xwy Data Member||  
-|uint_4::xwyz Data Member||  
-|uint_4::xwz Data Member||  
-|uint_4::xwzy Data Member||  
-|uint_4::xy Data Member||  
-|uint_4::xyw Data Member||  
-|uint_4::xywz Data Member||  
-|uint_4::xyz Data Member||  
-|uint_4::xyzw Data Member||  
-|uint_4::xz Data Member||  
-|uint_4::xzw Data Member||  
-|uint_4::xzwy Data Member||  
-|uint_4::xzy Data Member||  
-|uint_4::xzyw Data Member||  
-|uint_4::y Data Member||  
-|uint_4::yw Data Member||  
-|uint_4::ywx Data Member||  
-|uint_4::ywxz Data Member||  
-|uint_4::ywz Data Member||  
-|uint_4::ywzx Data Member||  
-|uint_4::yx Data Member||  
-|uint_4::yxw Data Member||  
-|uint_4::yxwz Data Member||  
-|uint_4::yxz Data Member||  
-|uint_4::yxzw Data Member||  
-|uint_4::yz Data Member||  
-|uint_4::yzw Data Member||  
-|uint_4::yzwx Data Member||  
-|uint_4::yzx Data Member||  
-|uint_4::yzxw Data Member||  
-|uint_4::z Data Member||  
-|uint_4::zw Data Member||  
-|uint_4::zwx Data Member||  
-|uint_4::zwxy Data Member||  
-|uint_4::zwy Data Member||  
-|uint_4::zwyx Data Member||  
-|uint_4::zx Data Member||  
-|uint_4::zxw Data Member||  
-|uint_4::zxwy Data Member||  
-|uint_4::zxy Data Member||  
-|uint_4::zxyw Data Member||  
-|uint_4::zy Data Member||  
-|uint_4::zyw Data Member||  
-|uint_4::zywx Data Member||  
-|uint_4::zyx Data Member||  
-|uint_4::zyxw Data Member||  
+|uint_4::a||  
+|uint_4::ab||  
+|uint_4::abg||  
+|uint_4::abgr||  
+|uint_4::abr||  
+|uint_4::abrg||  
+|uint_4::ag||  
+|uint_4::agb||  
+|uint_4::agbr||  
+|uint_4::agr||  
+|uint_4::agrb||  
+|uint_4::ar||  
+|uint_4::arb||  
+|uint_4::arbg||  
+|uint_4::arg||  
+|uint_4::argb||  
+|uint_4::b||  
+|uint_4::ba||  
+|uint_4::bag||  
+|uint_4::bagr||  
+|uint_4::bar||  
+|uint_4::barg||  
+|uint_4::bg||  
+|uint_4::bga||  
+|uint_4::bgar||  
+|uint_4::bgr||  
+|uint_4::bgra||  
+|uint_4::br||  
+|uint_4::bra||  
+|uint_4::brag||  
+|uint_4::brg||  
+|uint_4::brga||  
+|uint_4::g||  
+|uint_4::ga||  
+|uint_4::gab||  
+|uint_4::gabr||  
+|uint_4::gar||  
+|uint_4::garb||  
+|uint_4::gb||  
+|uint_4::gba||  
+|uint_4::gbar||  
+|uint_4::gbr||  
+|uint_4::gbra||  
+|uint_4::gr||  
+|uint_4::gra||  
+|uint_4::grab||  
+|uint_4::grb||  
+|uint_4::grba||  
+|uint_4::r||  
+|uint_4::ra||  
+|uint_4::rab||  
+|uint_4::rabg||  
+|uint_4::rag||  
+|uint_4::ragb||  
+|uint_4::rb||  
+|uint_4::rba||  
+|uint_4::rbag||  
+|uint_4::rbg||  
+|uint_4::rbga||  
+|uint_4::rg||  
+|uint_4::rga||  
+|uint_4::rgab||  
+|uint_4::rgb||  
+|uint_4::rgba||  
+|uint_4::w||  
+|uint_4::wx||  
+|uint_4::wxy||  
+|uint_4::wxyz||  
+|uint_4::wxz||  
+|uint_4::wxzy||  
+|uint_4::wy||  
+|uint_4::wyx||  
+|uint_4::wyxz||  
+|uint_4::wyz||  
+|uint_4::wyzx||  
+|uint_4::wz||  
+|uint_4::wzx||  
+|uint_4::wzxy||  
+|uint_4::wzy||  
+|uint_4::wzyx||  
+|uint_4::x||  
+|uint_4::xw||  
+|uint_4::xwy||  
+|uint_4::xwyz||  
+|uint_4::xwz||  
+|uint_4::xwzy||  
+|uint_4::xy||  
+|uint_4::xyw||  
+|uint_4::xywz||  
+|uint_4::xyz||  
+|uint_4::xyzw||  
+|uint_4::xz||  
+|uint_4::xzw||  
+|uint_4::xzwy||  
+|uint_4::xzy||  
+|uint_4::xzyw||  
+|uint_4::y||  
+|uint_4::yw||  
+|uint_4::ywx||  
+|uint_4::ywxz||  
+|uint_4::ywz||  
+|uint_4::ywzx||  
+|uint_4::yx||  
+|uint_4::yxw||  
+|uint_4::yxwz||  
+|uint_4::yxz||  
+|uint_4::yxzw||  
+|uint_4::yz||  
+|uint_4::yzw||  
+|uint_4::yzwx||  
+|uint_4::yzx||  
+|uint_4::yzxw||  
+|uint_4::z||  
+|uint_4::zw||  
+|uint_4::zwx||  
+|uint_4::zwxy||  
+|uint_4::zwy||  
+|uint_4::zwyx||  
+|uint_4::zx||  
+|uint_4::zxw||  
+|uint_4::zxwy||  
+|uint_4::zxy||  
+|uint_4::zxyw||  
+|uint_4::zy||  
+|uint_4::zyw||  
+|uint_4::zywx||  
+|uint_4::zyx||  
+|uint_4::zyxw||  
   
 ## Inheritance Hierarchy  
  `uint_4`  

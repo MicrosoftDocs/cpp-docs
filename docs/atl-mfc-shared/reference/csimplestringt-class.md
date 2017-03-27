@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CSimpleStringT"
-  - "ATL::CSimpleStringT"
-  - "ATL::CSimpleStringT<BaseType>"
-  - "ATL.CSimpleStringT<BaseType>"
-  - "CSimpleStringT"
+f1_keywords: ['CSimpleStringT', 'ATLSIMPSTR/ATL::CSimpleStringT', 'ATLSIMPSTR/ATL::CSimpleStringT::PCXSTR', 'ATLSIMPSTR/ATL::CSimpleStringT::PXSTR', 'ATLSIMPSTR/ATL::CSimpleStringT::CSimpleStringT', 'ATLSIMPSTR/ATL::CSimpleStringT::Append', 'ATLSIMPSTR/ATL::CSimpleStringT::AppendChar', 'ATLSIMPSTR/ATL::CSimpleStringT::CopyChars', 'ATLSIMPSTR/ATL::CSimpleStringT::CopyCharsOverlapped', 'ATLSIMPSTR/ATL::CSimpleStringT::Empty', 'ATLSIMPSTR/ATL::CSimpleStringT::FreeExtra', 'ATLSIMPSTR/ATL::CSimpleStringT::GetAllocLength', 'ATLSIMPSTR/ATL::CSimpleStringT::GetAt', 'ATLSIMPSTR/ATL::CSimpleStringT::GetBuffer', 'ATLSIMPSTR/ATL::CSimpleStringT::GetBufferSetLength', 'ATLSIMPSTR/ATL::CSimpleStringT::GetLength', 'ATLSIMPSTR/ATL::CSimpleStringT::GetManager', 'ATLSIMPSTR/ATL::CSimpleStringT::GetString', 'ATLSIMPSTR/ATL::CSimpleStringT::IsEmpty', 'ATLSIMPSTR/ATL::CSimpleStringT::LockBuffer', 'ATLSIMPSTR/ATL::CSimpleStringT::Preallocate', 'ATLSIMPSTR/ATL::CSimpleStringT::ReleaseBuffer', 'ATLSIMPSTR/ATL::CSimpleStringT::ReleaseBufferSetLength', 'ATLSIMPSTR/ATL::CSimpleStringT::SetAt', 'ATLSIMPSTR/ATL::CSimpleStringT::SetManager', 'ATLSIMPSTR/ATL::CSimpleStringT::SetString', 'ATLSIMPSTR/ATL::CSimpleStringT::StringLength', 'ATLSIMPSTR/ATL::CSimpleStringT::Truncate', 'ATLSIMPSTR/ATL::CSimpleStringT::UnlockBuffer']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

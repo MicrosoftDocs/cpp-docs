@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrtrm/concurrency::ITopologyNode"
+f1_keywords: ['ITopologyNode', 'CONCRTRM/concurrency::ITopologyNode', 'CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetExecutionResourceCount', 'CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetFirstExecutionResource', 'CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetId', 'CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetNext', 'CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetNumaNode']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,11 +48,11 @@ struct ITopologyNode;
   
 |Name|Description|  
 |----------|-----------------|  
-|[ITopologyNode::GetExecutionResourceCount Method](#getexecutionresourcecount)|Returns the number of execution resources grouped together under this node.|  
-|[ITopologyNode::GetFirstExecutionResource Method](#getfirstexecutionresource)|Returns the first execution resource grouped under this node in enumeration order.|  
-|[ITopologyNode::GetId Method](#getid)|Returns the Resource Manager's unique identifier for this node.|  
-|[ITopologyNode::GetNext Method](#getnext)|Returns an interface to the next topology node in enumeration order.|  
-|[ITopologyNode::GetNumaNode Method](#getnumanode)|Returns the Windows assigned NUMA node number to which this Resource Maanger node belongs.|  
+|[ITopologyNode::GetExecutionResourceCount](#getexecutionresourcecount)|Returns the number of execution resources grouped together under this node.|  
+|[ITopologyNode::GetFirstExecutionResource](#getfirstexecutionresource)|Returns the first execution resource grouped under this node in enumeration order.|  
+|[ITopologyNode::GetId](#getid)|Returns the Resource Manager's unique identifier for this node.|  
+|[ITopologyNode::GetNext](#getnext)|Returns an interface to the next topology node in enumeration order.|  
+|[ITopologyNode::GetNumaNode](#getnumanode)|Returns the Windows assigned NUMA node number to which this Resource Maanger node belongs.|  
   
 ## Remarks  
  This interface is typically utilized to walk the topology of the system as observed by the Resource Manager.  

@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CAutoPtrList"
-  - "CAutoPtrList"
-  - "ATL.CAutoPtrList"
-  - "ATL::CAutoPtrList<E>"
-  - "ATL.CAutoPtrList<E>"
+f1_keywords: ['CAutoPtrList', 'ATLCOLL/ATL::CAutoPtrList', 'ATLCOLL/ATL::CAutoPtrList::CAutoPtrList']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CSimpleDialog"
-  - "CSimpleDialgo"
-  - "CSimpleDialog"
-  - "ATL.CSimpleDialog"
+f1_keywords: ['CSimpleDialog', 'ATLWIN/ATL::CSimpleDialog', 'ATLWIN/ATL::CSimpleDialog::DoModal']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

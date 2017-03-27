@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CWndClassInfo"
+f1_keywords: ['CWndClassInfo', 'ATLWIN/ATL::CWndClassInfo', 'ATLWIN/ATL::Register', 'ATLWIN/ATL::m_atom', 'ATLWIN/ATL::m_bSystemCursor', 'ATLWIN/ATL::m_lpszCursorID', 'ATLWIN/ATL::m_lpszOrigName', 'ATLWIN/ATL::m_szAutoName', 'ATLWIN/ATL::m_wc', 'ATLWIN/ATL::pWndProc']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

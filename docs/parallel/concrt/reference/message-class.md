@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "agents/concurrency::message"
+f1_keywords: ['message', 'AGENTS/concurrency::message', 'AGENTS/concurrency::message::message', 'AGENTS/concurrency::message::add_ref', 'AGENTS/concurrency::message::msg_id', 'AGENTS/concurrency::message::remove_ref', 'AGENTS/concurrency::message::payload']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -60,22 +59,22 @@ class message : public ::Concurrency::details::_Runtime_object;
   
 |Name|Description|  
 |----------|-----------------|  
-|[message Constructor](#ctor)|Overloaded. Constructs a `message` object.|  
+|[message](#ctor)|Overloaded. Constructs a `message` object.|  
 |[~message Destructor](#dtor)|Destroys the `message` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[add_ref Method](#add_ref)|Adds to the reference count for the `message` object. Used for message blocks that need reference counting to determine message lifetimes.|  
-|[msg_id Method](#msg_id)|Returns the ID of the `message` object.|  
-|[remove_ref Method](#remove_ref)|Subtracts from the reference count for the `message` object. Used for message blocks that need reference counting to determine message lifetimes.|  
+|[add_ref](#add_ref)|Adds to the reference count for the `message` object. Used for message blocks that need reference counting to determine message lifetimes.|  
+|[msg_id](#msg_id)|Returns the ID of the `message` object.|  
+|[remove_ref](#remove_ref)|Subtracts from the reference count for the `message` object. Used for message blocks that need reference counting to determine message lifetimes.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[payload Data Member](#payload)|The payload of the `message` object.|  
+|[payload](#payload)|The payload of the `message` object.|  
   
 ## Remarks  
  For more information, see [Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md).  

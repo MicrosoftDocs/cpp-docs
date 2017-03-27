@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCTabDropTarget"
+f1_keywords: ['CMFCTabDropTarget', 'AFXBASETABCTRL/CMFCTabDropTarget', 'AFXBASETABCTRL/CMFCTabDropTarget::OnDragEnter', 'AFXBASETABCTRL/CMFCTabDropTarget::OnDragLeave', 'AFXBASETABCTRL/CMFCTabDropTarget::OnDragOver', 'AFXBASETABCTRL/CMFCTabDropTarget::OnDropEx', 'AFXBASETABCTRL/CMFCTabDropTarget::Register']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

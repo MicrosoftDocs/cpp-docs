@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CDefaultCompareTraits<T>"
-  - "ATL::CDefaultCompareTraits"
-  - "ATL.CDefaultCompareTraits"
-  - "ATL::CDefaultCompareTraits<T>"
-  - "CDefaultCompareTraits"
+f1_keywords: ['CDefaultCompareTraits', 'ATLCOLL/ATL::CDefaultCompareTraits', 'ATLCOLL/ATL::CDefaultCompareTraits::CompareElements', 'ATLCOLL/ATL::CDefaultCompareTraits::CompareElementsOrdered']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

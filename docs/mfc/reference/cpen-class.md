@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "HPEN"
-  - "CPen"
+f1_keywords: ['CPen', 'AFXWIN/CPen', 'AFXWIN/CPen::CPen', 'AFXWIN/CPen::CreatePen', 'AFXWIN/CPen::CreatePenIndirect', 'AFXWIN/CPen::FromHandle', 'AFXWIN/CPen::GetExtLogPen', 'AFXWIN/CPen::GetLogPen']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

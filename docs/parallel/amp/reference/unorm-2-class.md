@@ -83,30 +83,30 @@ class unorm_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|unorm_2::get_x Method||  
-|unorm_2::get_xy Method||  
-|unorm_2::get_y Method||  
-|unorm_2::get_yx Method||  
-|unorm_2::ref_g Method||  
-|unorm_2::ref_r Method||  
-|unorm_2::ref_x Method||  
-|unorm_2::ref_y Method||  
-|unorm_2::set_x Method||  
-|unorm_2::set_xy Method||  
-|unorm_2::set_y Method||  
-|unorm_2::set_yx Method||  
+|unorm_2::get_x||  
+|unorm_2::get_xy||  
+|unorm_2::get_y||  
+|unorm_2::get_yx||  
+|unorm_2::ref_g||  
+|unorm_2::ref_r||  
+|unorm_2::ref_x||  
+|unorm_2::ref_y||  
+|unorm_2::set_x||  
+|unorm_2::set_xy||  
+|unorm_2::set_y||  
+|unorm_2::set_yx||  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|unorm_2::operator-- Operator||  
-|unorm_2::operator*= Operator||  
-|unorm_2::operator/= Operator||  
-|unorm_2::operator++ Operator||  
-|unorm_2::operator+= Operator||  
-|unorm_2::operator= Operator||  
-|unorm_2::operator-= Operator||  
+|unorm_2::operator--||  
+|unorm_2::operator*=||  
+|unorm_2::operator/=||  
+|unorm_2::operator++||  
+|unorm_2::operator+=||  
+|unorm_2::operator=||  
+|unorm_2::operator-=||  
   
 ### Public Constants  
   
@@ -118,14 +118,14 @@ class unorm_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|unorm_2::g Data Member||  
-|unorm_2::gr Data Member||  
-|unorm_2::r Data Member||  
-|unorm_2::rg Data Member||  
-|unorm_2::x Data Member||  
-|unorm_2::xy Data Member||  
-|unorm_2::y Data Member||  
-|unorm_2::yx Data Member||  
+|unorm_2::g||  
+|unorm_2::gr||  
+|unorm_2::r||  
+|unorm_2::rg||  
+|unorm_2::x||  
+|unorm_2::xy||  
+|unorm_2::y||  
+|unorm_2::yx||  
   
 ## Inheritance Hierarchy  
  `unorm_2`  

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CTooltipManager"
+f1_keywords: ['CTooltipManager', 'AFXTOOLTIPMANAGER/CTooltipManager', 'AFXTOOLTIPMANAGER/CTooltipManager::CreateToolTip', 'AFXTOOLTIPMANAGER/CTooltipManager::DeleteToolTip', 'AFXTOOLTIPMANAGER/CTooltipManager::SetTooltipParams', 'AFXTOOLTIPMANAGER/CTooltipManager::SetTooltipText', 'AFXTOOLTIPMANAGER/CTooltipManager::UpdateTooltips']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

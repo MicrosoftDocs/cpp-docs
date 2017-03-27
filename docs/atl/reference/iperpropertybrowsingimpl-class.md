@@ -8,13 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.IPerPropertyBrowsingImpl"
-  - "IPerPropertyBrowsing"
-  - "ATL::IPerPropertyBrowsingImpl"
-  - "ATL::IPerPropertyBrowsingImpl<T>"
-  - "IPerPropertyBrowsingImpl"
-  - "ATL.IPerPropertyBrowsingImpl<T>"
+f1_keywords: ['IPerPropertyBrowsingImpl', 'ATLCTL/ATL::IPerPropertyBrowsingImpl', 'ATLCTL/ATL::IPerPropertyBrowsingImpl::GetDisplayString', 'ATLCTL/ATL::IPerPropertyBrowsingImpl::GetPredefinedStrings', 'ATLCTL/ATL::IPerPropertyBrowsingImpl::GetPredefinedValue', 'ATLCTL/ATL::IPerPropertyBrowsingImpl::MapPropertyToPage']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

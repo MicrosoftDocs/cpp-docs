@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "amp/Concurrency::array"
+f1_keywords: ['array', 'AMP/array', 'AMP/Concurrency::array::array', 'AMP/Concurrency::array::copy_to', 'AMP/Concurrency::array::data', 'AMP/Concurrency::array::get_accelerator_view', 'AMP/Concurrency::array::get_associated_accelerator_view', 'AMP/Concurrency::array::get_cpu_access_type', 'AMP/Concurrency::array::get_extent', 'AMP/Concurrency::array::reinterpret_as', 'AMP/Concurrency::array::section', 'AMP/Concurrency::array::view_as', 'AMP/Concurrency::array::rank', 'AMP/Concurrency::array::accelerator_view', 'AMP/Concurrency::array::associated_accelerator_view', 'AMP/Concurrency::array::cpu_access_type', 'AMP/Concurrency::array::extent']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -63,24 +62,24 @@ friend class array;
   
 |Name|Description|  
 |----------|-----------------|  
-|[copy_to Method](#copy_to)|Copies the contents of the array to another array.|  
-|[data Method](#data)|Returns a pointer to the raw data of the array.|  
-|[get_accelerator_view Method](#get_accelerator_view)|Returns the [accelerator_view](accelerator-view-class.md) object that represents the location where the array is allocated. This property can be accessed only on the CPU.|  
-|[get_associated_accelerator_view Method](#get_associated_accelerator_view)|Gets the second [accelerator_view](accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the `array` object.|  
-|[get_cpu_access_type Method](#get_cpu_access_type)|Returns the [access_type](concurrency-namespace-enums-amp.md#access_type) of the array. This method can be accessed only on the CPU.|  
-|[get_extent Method](#get_extent)|Returns the [extent](extent-class.md) object of the array.|  
-|[reinterpret_as Method](#reinterpret_as)|Returns a one-dimensional array that contains all the elements in the `array` object.|  
-|[section Method](#section)|Returns a subsection of the `array` object that is at the specified origin and, optionally, that has the specified extent.|  
-|[view_as Method](#view_as)|Returns an [array_view](array-view-class.md) object that is constructed from the `array` object.|  
+|[copy_to](#copy_to)|Copies the contents of the array to another array.|  
+|[data](#data)|Returns a pointer to the raw data of the array.|  
+|[get_accelerator_view](#get_accelerator_view)|Returns the [accelerator_view](accelerator-view-class.md) object that represents the location where the array is allocated. This property can be accessed only on the CPU.|  
+|[get_associated_accelerator_view](#get_associated_accelerator_view)|Gets the second [accelerator_view](accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the `array` object.|  
+|[get_cpu_access_type](#get_cpu_access_type)|Returns the [access_type](concurrency-namespace-enums-amp.md#access_type) of the array. This method can be accessed only on the CPU.|  
+|[get_extent](#get_extent)|Returns the [extent](extent-class.md) object of the array.|  
+|[reinterpret_as](#reinterpret_as)|Returns a one-dimensional array that contains all the elements in the `array` object.|  
+|[section](#section)|Returns a subsection of the `array` object that is at the specified origin and, optionally, that has the specified extent.|  
+|[view_as](#view_as)|Returns an [array_view](array-view-class.md) object that is constructed from the `array` object.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator std::vector&lt;value_type&gt; Operator](#operator_vec)|Uses `copy(*this, vector)` to implicitly convert the array to a std::[vector](../../../standard-library/vector-class.md) object.|  
-|[operator() Operator](#operator_call)|Returns the element value that is specified by the parameters.|  
-|[operator[] Operator](#operator_at)|Returns the element that is at the specified index.|  
-|[operator= Operator](#operator_eq)|Copies the contents of the specified `array` object into this one.|  
+|[operator std::vector&lt;value_type&gt;](#operator_vec)|Uses `copy(*this, vector)` to implicitly convert the array to a std::[vector](../../../standard-library/vector-class.md) object.|  
+|[operator()](#operator_call)|Returns the element value that is specified by the parameters.|  
+|[operator[]](#operator_at)|Returns the element that is at the specified index.|  
+|[operator=](#operator_eq)|Copies the contents of the specified `array` object into this one.|  
   
 ### Public Constants  
   
@@ -92,10 +91,10 @@ friend class array;
   
 |Name|Description|  
 |----------|-----------------|  
-|[accelerator_view Data Member](#accelerator_view)|Gets the [accelerator_view](accelerator-view-class.md) object that represents the location where the array is allocated. This property can be accessed only on the CPU.|  
-|[associated_accelerator_view Data Member](#associated_accelerator_view)|Gets the second [accelerator_view](accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the `array` object.|  
-|[cpu_access_type Data Member](#cpu_access_type)|Gets the [access_type](concurrency-namespace-enums-amp.md#access_type) that represents how the CPU can access the storage of the array.|  
-|[extent Data Member](#extent)|Gets the extent that defines the shape of the array.|  
+|[accelerator_view](#accelerator_view)|Gets the [accelerator_view](accelerator-view-class.md) object that represents the location where the array is allocated. This property can be accessed only on the CPU.|  
+|[associated_accelerator_view](#associated_accelerator_view)|Gets the second [accelerator_view](accelerator-view-class.md) object that is passed as a parameter when a staging constructor is called to instantiate the `array` object.|  
+|[cpu_access_type](#cpu_access_type)|Gets the [access_type](concurrency-namespace-enums-amp.md#access_type) that represents how the CPU can access the storage of the array.|  
+|[extent](#extent)|Gets the extent that defines the shape of the array.|  
   
 ## Remarks  
  The type `array<T,N>` represents a dense and regular (not jagged) *N*-dimensional array that is located in a specific location, such as an accelerator or the CPU. The data type of the elements in the array is `T`, which must be of a type that is compatible with the target accelerator. Although the rank, `N`, (of the array is determined statically and is part of the type, the extent of the array is determined by the runtime and is expressed by using class `extent<N>`.  

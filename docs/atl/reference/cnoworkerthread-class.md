@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CNoWorkerThread"
-  - "ATL.CNoWorkerThread"
-  - "CNoWorkerThread"
+f1_keywords: ['CNoWorkerThread', 'ATLUTIL/ATL::CNoWorkerThread', 'ATLUTIL/ATL::CNoWorkerThread::AddHandle', 'ATLUTIL/ATL::CNoWorkerThread::AddTimer', 'ATLUTIL/ATL::CNoWorkerThread::GetThreadHandle', 'ATLUTIL/ATL::CNoWorkerThread::GetThreadId', 'ATLUTIL/ATL::CNoWorkerThread::Initialize', 'ATLUTIL/ATL::CNoWorkerThread::RemoveHandle', 'ATLUTIL/ATL::CNoWorkerThread::Shutdown']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

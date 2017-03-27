@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrtrm/concurrency::IExecutionContext"
+f1_keywords: ['IExecutionContext', 'CONCRTRM/concurrency::IExecutionContext', 'CONCRTRM/concurrency::IExecutionContext::IExecutionContext::Dispatch', 'CONCRTRM/concurrency::IExecutionContext::IExecutionContext::GetId', 'CONCRTRM/concurrency::IExecutionContext::IExecutionContext::GetProxy', 'CONCRTRM/concurrency::IExecutionContext::IExecutionContext::GetScheduler', 'CONCRTRM/concurrency::IExecutionContext::IExecutionContext::SetProxy']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,11 +48,11 @@ struct IExecutionContext;
   
 |Name|Description|  
 |----------|-----------------|  
-|[IExecutionContext::Dispatch Method](#dispatch)|The method that is called when a thread proxy starts executing a particular execution context. This should be the main worker routine for your scheduler.|  
-|[IExecutionContext::GetId Method](#getid)|Returns a unique identifier for the execution context.|  
-|[IExecutionContext::GetProxy Method](#getproxy)|Returns an interface to the thread proxy that is executing this context.|  
-|[IExecutionContext::GetScheduler Method](#getscheduler)|Returns an interface to the scheduler this execution context belongs to.|  
-|[IExecutionContext::SetProxy Method](#setproxy)|Associates a thread proxy with this execution context. The associated thread proxy invokes this method right before it starts executing the context's `Dispatch` method.|  
+|[IExecutionContext::Dispatch](#dispatch)|The method that is called when a thread proxy starts executing a particular execution context. This should be the main worker routine for your scheduler.|  
+|[IExecutionContext::GetId](#getid)|Returns a unique identifier for the execution context.|  
+|[IExecutionContext::GetProxy](#getproxy)|Returns an interface to the thread proxy that is executing this context.|  
+|[IExecutionContext::GetScheduler](#getscheduler)|Returns an interface to the scheduler this execution context belongs to.|  
+|[IExecutionContext::SetProxy](#setproxy)|Associates a thread proxy with this execution context. The associated thread proxy invokes this method right before it starts executing the context's `Dispatch` method.|  
   
 ## Remarks  
  If you are implementing a custom scheduler that interfaces with the Concurrency Runtime's Resource Manager, you will need to implement the `IExecutionContext` interface. The threads created by the Resource Manager perform work on behalf of your scheduler by executing the `IExecutionContext::Dispatch` method.  

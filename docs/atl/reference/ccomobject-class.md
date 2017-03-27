@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CComObject<Base>"
-  - "ATL::CComObject"
-  - "ATL::CComObject<Base>"
-  - "ATL.CComObject"
-  - "CComObject"
+f1_keywords: ['CComObject', 'ATLCOM/ATL::CComObject', 'ATLCOM/ATL::CComObject::CComObject', 'ATLCOM/ATL::CComObject::AddRef', 'ATLCOM/ATL::CComObject::CreateInstance', 'ATLCOM/ATL::CComObject::QueryInterface', 'ATLCOM/ATL::CComObject::Release']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

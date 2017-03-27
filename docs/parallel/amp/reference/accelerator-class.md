@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "amprt/Concurrency::accelerator"
+f1_keywords: ['AMPRT/accelerator', 'AMPRT/Concurrency::accelerator::accelerator', 'AMPRT/Concurrency::accelerator::create_view', 'AMPRT/Concurrency::accelerator::get_all', 'AMPRT/Concurrency::accelerator::get_auto_selection_view', 'AMPRT/Concurrency::accelerator::get_dedicated_memory', 'AMPRT/Concurrency::accelerator::get_default_cpu_access_type', 'AMPRT/Concurrency::accelerator::get_default_view', 'AMPRT/Concurrency::accelerator::get_description', 'AMPRT/Concurrency::accelerator::get_device_path', 'AMPRT/Concurrency::accelerator::get_has_display', 'AMPRT/Concurrency::accelerator::get_is_debug', 'AMPRT/Concurrency::accelerator::get_is_emulated', 'AMPRT/Concurrency::accelerator::get_supports_cpu_shared_memory', 'AMPRT/Concurrency::accelerator::get_supports_double_precision', 'AMPRT/Concurrency::accelerator::get_supports_limited_double_precision', 'AMPRT/Concurrency::accelerator::get_version', 'AMPRT/Concurrency::accelerator::set_default', 'AMPRT/Concurrency::accelerator::set_default_cpu_access_type', 'AMPRT/Concurrency::accelerator::cpu_accelerator', 'AMPRT/Concurrency::accelerator::dedicated_memory', 'AMPRT/Concurrency::accelerator::default_accelerator', 'AMPRT/Concurrency::accelerator::default_cpu_access_type', 'AMPRT/Concurrency::accelerator::default_view', 'AMPRT/Concurrency::accelerator::description', 'AMPRT/Concurrency::accelerator::device_path', 'AMPRT/Concurrency::accelerator::direct3d_ref', 'AMPRT/Concurrency::accelerator::direct3d_warp', 'AMPRT/Concurrency::accelerator::has_display', 'AMPRT/Concurrency::accelerator::is_debug', 'AMPRT/Concurrency::accelerator::is_emulated', 'AMPRT/Concurrency::accelerator::supports_cpu_shared_memory', 'AMPRT/Concurrency::accelerator::supports_double_precision', 'AMPRT/Concurrency::accelerator::supports_limited_double_precision', 'AMPRT/Concurrency::accelerator::version']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -56,52 +55,52 @@ class accelerator;
   
 |Name|Description|  
 |----------|-----------------|  
-|[create_view Method](#create_view)|Creates and returns an `accelerator_view` object on this accelerator.|  
-|[get_all Method](#get_all)|Returns a vector of `accelerator` objects that represent all the available accelerators.|  
-|[get_auto_selection_view Method](#get_auto_selection_view)|Returns the auto-selection `accelerator_view`.|  
-|[get_dedicated_memory Method](#get_dedicated_memory)|Returns the dedicated memory for the `accelerator`, in kilobytes.|  
-|[get_default_cpu_access_type Method](#get_default_cpu_access_type)|Returns the default [access_type](concurrency-namespace-enums-amp.md#access_type) for buffers created on this accelerator.|  
-|[get_default_view Method](#get_default_view)|Returns the default `accelerator_view` object that is associated with the `accelerator`.|  
-|[get_description Method](#get_description)|Returns a short description of the `accelerator` device.|  
-|[get_device_path Method](#get_device_path)|Returns the path of the device.|  
-|[get_has_display Method](#get_has_display)|Determines whether the `accelerator` is attached to a display.|  
-|[get_is_debug Method](#get_is_debug)|Determines whether the `accelerator` has the DEBUG layer enabled for extensive error reporting.|  
-|[get_is_emulated Method](#get_is_emulated)|Determines whether the `accelerator` is emulated.|  
-|[get_supports_cpu_shared_memory Method](#get_supports_cpu_shared_memory)|Determines whether the `accelerator` supports shared memory|  
-|[get_supports_double_precision Method](#get_supports_double_precision)|Determines whether the `accelerator` is attached to a display.|  
-|[get_supports_limited_double_precision Method](#get_supports_limited_double_precision)|Determines whether the `accelerator` has limited support for double-precision math.|  
-|[get_version Method](#get_version)|Returns the version of the `accelerator`.|  
-|[set_default Method](#set_default)|Returns the path of the default accelerator.|  
-|[set_default_cpu_access_type Method](#set_default_cpu_access_type)|Sets the default CPU [access_type](concurrency-namespace-enums-amp.md#access_type)for arrays and implicit memory allocations made on this `accelerator`.|  
+|[create_view](#create_view)|Creates and returns an `accelerator_view` object on this accelerator.|  
+|[get_all](#get_all)|Returns a vector of `accelerator` objects that represent all the available accelerators.|  
+|[get_auto_selection_view](#get_auto_selection_view)|Returns the auto-selection `accelerator_view`.|  
+|[get_dedicated_memory](#get_dedicated_memory)|Returns the dedicated memory for the `accelerator`, in kilobytes.|  
+|[get_default_cpu_access_type](#get_default_cpu_access_type)|Returns the default [access_type](concurrency-namespace-enums-amp.md#access_type) for buffers created on this accelerator.|  
+|[get_default_view](#get_default_view)|Returns the default `accelerator_view` object that is associated with the `accelerator`.|  
+|[get_description](#get_description)|Returns a short description of the `accelerator` device.|  
+|[get_device_path](#get_device_path)|Returns the path of the device.|  
+|[get_has_display](#get_has_display)|Determines whether the `accelerator` is attached to a display.|  
+|[get_is_debug](#get_is_debug)|Determines whether the `accelerator` has the DEBUG layer enabled for extensive error reporting.|  
+|[get_is_emulated](#get_is_emulated)|Determines whether the `accelerator` is emulated.|  
+|[get_supports_cpu_shared_memory](#get_supports_cpu_shared_memory)|Determines whether the `accelerator` supports shared memory|  
+|[get_supports_double_precision](#get_supports_double_precision)|Determines whether the `accelerator` is attached to a display.|  
+|[get_supports_limited_double_precision](#get_supports_limited_double_precision)|Determines whether the `accelerator` has limited support for double-precision math.|  
+|[get_version](#get_version)|Returns the version of the `accelerator`.|  
+|[set_default](#set_default)|Returns the path of the default accelerator.|  
+|[set_default_cpu_access_type](#set_default_cpu_access_type)|Sets the default CPU [access_type](concurrency-namespace-enums-amp.md#access_type)for arrays and implicit memory allocations made on this `accelerator`.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator!= Operator](#operator_neq)|Compares this `accelerator` object with another and returns `false` if they are the same; otherwise, returns `true`.|  
-|[operator= Operator](#operator_eq)|Copies the contents of the specified `accelerator` object to this one.|  
-|[operator== Operator](#operator_eq_eq)|Compares this `accelerator` object with another and returns `true` if they are the same; otherwise, returns `false`.|  
+|[operator!=](#operator_neq)|Compares this `accelerator` object with another and returns `false` if they are the same; otherwise, returns `true`.|  
+|[operator=](#operator_eq)|Copies the contents of the specified `accelerator` object to this one.|  
+|[operator==](#operator_eq_eq)|Compares this `accelerator` object with another and returns `true` if they are the same; otherwise, returns `false`.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[cpu_accelerator Data Member](#cpu_accelerator)|Gets a string constant for the CPU `accelerator`.|  
-|[dedicated_memory Data Member](#dedicated_memory)|Gets the dedicated memory for the `accelerator`, in kilobytes.|  
-|[default_accelerator Data Member](#default_accelerator)|Gets a string constant for the default `accelerator`.|  
-|[default_cpu_access_type Data Member](#default_cpu_access_type)|Gets or sets the default CPU [access_type](concurrency-namespace-enums-amp.md#access_type)for arrays and implicit memory allocations made on this `accelerator`.|  
-|[default_view Data Member](#default_view)|Gets the default `accelerator_view` object that is associated with the `accelerator`.|  
-|[description Data Member](#description)|Gets a short description of the `accelerator` device.|  
-|[device_path Data Member](#device_path)|Gets the path of the device.|  
-|[direct3d_ref Data Member](#direct3d_ref)|Gets a string constant for a Direct3D reference `accelerator`.|  
-|[direct3d_warp Data Member](#direct3d_warp)|Gets the string constant for an `accelerator` object that you can use for executing C++ AMP code on multi-core CPUs that use Streaming SIMD Extensions (SSE).|  
-|[has_display Data Member](#has_display)|Gets a Boolean value that indicates whether the `accelerator` is attached to a display.|  
-|[is_debug Data Member](#is_debug)|Indicates whether the `accelerator` has the DEBUG layer enabled for extensive error reporting.|  
-|[is_emulated Data Member](#is_emulated)|Indicates whether the `accelerator` is emulated.|  
-|[supports_cpu_shared_memory Data Member](#supports_cpu_shared_memory)|Indicates whether the `accelerator` supports shared memory.|  
-|[supports_double_precision Data Member](#supports_double_precision)|Indicates whether the accelerator supports double-precision math.|  
-|[supports_limited_double_precision Data Member](#supports_limited_double_precision)|Indicates whether the accelerator has limited support for double-precision math.|  
-|[version Data Member](#version)|Gets the version of the `accelerator`.|  
+|[cpu_accelerator](#cpu_accelerator)|Gets a string constant for the CPU `accelerator`.|  
+|[dedicated_memory](#dedicated_memory)|Gets the dedicated memory for the `accelerator`, in kilobytes.|  
+|[default_accelerator](#default_accelerator)|Gets a string constant for the default `accelerator`.|  
+|[default_cpu_access_type](#default_cpu_access_type)|Gets or sets the default CPU [access_type](concurrency-namespace-enums-amp.md#access_type)for arrays and implicit memory allocations made on this `accelerator`.|  
+|[default_view](#default_view)|Gets the default `accelerator_view` object that is associated with the `accelerator`.|  
+|[description](#description)|Gets a short description of the `accelerator` device.|  
+|[device_path](#device_path)|Gets the path of the device.|  
+|[direct3d_ref](#direct3d_ref)|Gets a string constant for a Direct3D reference `accelerator`.|  
+|[direct3d_warp](#direct3d_warp)|Gets the string constant for an `accelerator` object that you can use for executing C++ AMP code on multi-core CPUs that use Streaming SIMD Extensions (SSE).|  
+|[has_display](#has_display)|Gets a Boolean value that indicates whether the `accelerator` is attached to a display.|  
+|[is_debug](#is_debug)|Indicates whether the `accelerator` has the DEBUG layer enabled for extensive error reporting.|  
+|[is_emulated](#is_emulated)|Indicates whether the `accelerator` is emulated.|  
+|[supports_cpu_shared_memory](#supports_cpu_shared_memory)|Indicates whether the `accelerator` supports shared memory.|  
+|[supports_double_precision](#supports_double_precision)|Indicates whether the accelerator supports double-precision math.|  
+|[supports_limited_double_precision](#supports_limited_double_precision)|Indicates whether the accelerator has limited support for double-precision math.|  
+|[version](#version)|Gets the version of the `accelerator`.|  
   
 ## Inheritance Hierarchy  
  `accelerator`  

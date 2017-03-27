@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCRibbonStatusBar"
+f1_keywords: ['CMFCRibbonStatusBar', 'AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar', 'AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::AddDynamicElement', 'AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::AddElement', 'AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::AddExtendedElement', 'AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::AddSeparator', 'AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::Create', 'AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::CreateEx', 'AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::FindByID', 'AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::FindElement', 'AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::GetCount', 'AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::GetElement', 'AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::GetExCount', 'AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::GetExElement', 'AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::GetExtendedArea', 'AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::GetSpace', 'AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::IsBottomFrame', 'AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::IsExtendedElement', 'AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::IsInformationMode', 'AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::RecalcLayout', 'AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::RemoveAll', 'AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::RemoveElement', 'AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::SetInformation', 'AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::OnDrawInformation']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

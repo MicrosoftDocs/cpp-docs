@@ -48,9 +48,8 @@ This step-by-step article describes how to use the Visual C++ Redistributable Pa
   
 2.  Create a file, name it setup.bat, and add the following commands to it. Change `MyMFCApplication` to the name of your project.  
   
-    ```  
-  
-              @echo off  
+    ```cmd
+    @echo off  
     vcredist_x86.exe  
     mkdir "C:\Program Files\MyMFCApplication"  
     copy MyMFCApplication.exe "C:\Program Files\MyMFCApplication"  

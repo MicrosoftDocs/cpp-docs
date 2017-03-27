@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDockState"
+f1_keywords: ['CDockState', 'AFXADV/CDockState', 'AFXADV/CDockState::Clear', 'AFXADV/CDockState::GetVersion', 'AFXADV/CDockState::LoadState', 'AFXADV/CDockState::SaveState', 'AFXADV/CDockState::m_arrBarInfo']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

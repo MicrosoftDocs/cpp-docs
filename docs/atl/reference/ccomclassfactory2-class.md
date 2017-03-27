@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CComClassFactory2<license>"
-  - "CComClassFactory2"
-  - "ATL.CComClassFactory2<license>"
-  - "ATL::CComClassFactory2"
-  - "ATL.CComClassFactory2"
+f1_keywords: ['CComClassFactory2', 'ATLCOM/ATL::CComClassFactory2', 'ATLCOM/ATL::CComClassFactory2::CreateInstance', 'ATLCOM/ATL::CComClassFactory2::CreateInstanceLic', 'ATLCOM/ATL::CComClassFactory2::GetLicInfo', 'ATLCOM/ATL::CComClassFactory2::LockServer', 'ATLCOM/ATL::CComClassFactory2::RequestLicKey']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -49,7 +49,7 @@ class invalid_scheduler_policy_value : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[invalid_scheduler_policy_value Constructor](invalid-scheduler-policy-thread-specification-class.md#ctor|Overloaded. Constructs an `invalid_scheduler_policy_value` object.|  
+|[invalid_scheduler_policy_value](invalid-scheduler-policy-thread-specification-class.md#ctor|Overloaded. Constructs an `invalid_scheduler_policy_value` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  

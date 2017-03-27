@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCAcceleratorKey"
+f1_keywords: ['CMFCAcceleratorKey', 'AFXACCELERATORKEY/CMFCAcceleratorKey', 'AFXACCELERATORKEY/CMFCAcceleratorKey::CMFCAcceleratorKey', 'AFXACCELERATORKEY/CMFCAcceleratorKey::Format', 'AFXACCELERATORKEY/CMFCAcceleratorKey::SetAccelerator']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

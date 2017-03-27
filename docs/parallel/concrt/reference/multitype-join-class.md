@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "agents/concurrency::multitype_join"
+f1_keywords: ['multitype_join', 'AGENTS/concurrency::multitype_join', 'AGENTS/concurrency::multitype_join::multitype_join', 'AGENTS/concurrency::multitype_join::accept', 'AGENTS/concurrency::multitype_join::acquire_ref', 'AGENTS/concurrency::multitype_join::consume', 'AGENTS/concurrency::multitype_join::link_target', 'AGENTS/concurrency::multitype_join::release', 'AGENTS/concurrency::multitype_join::release_ref', 'AGENTS/concurrency::multitype_join::reserve', 'AGENTS/concurrency::multitype_join::unlink_target', 'AGENTS/concurrency::multitype_join::unlink_targets']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -66,22 +65,22 @@ class multitype_join: public ISource<typename _Unwrap<T>::type>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[multitype_join Constructor](#ctor)|Overloaded. Constructs a `multitype_join` messaging block.|  
+|[multitype_join](#ctor)|Overloaded. Constructs a `multitype_join` messaging block.|  
 |[~multitype_join Destructor](#dtor)|Destroys the `multitype_join` messaging block.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[accept Method](#accept)|Accepts a message that was offered by this `multitype_join` block, transferring ownership to the caller.|  
-|[acquire_ref Method](#acquire_ref)|Acquires a reference count on this `multitype_join` messaging block, to prevent deletion.|  
-|[consume Method](#consume)|Consumes a message previously offered by the `multitype_join` messaging block and successfully reserved by the target, transferring ownership to the caller.|  
-|[link_target Method](#link_target)|Links a target block to this `multitype_join` messaging block.|  
-|[release Method](#release)|Releases a previous successful message reservation.|  
-|[release_ref Method](#release_ref)|Releases a reference count on this `multiple_join` messaging block.|  
-|[reserve Method](#reserve)|Reserves a message previously offered by this `multitype_join` messaging block.|  
-|[unlink_target Method](#unlink_target)|Unlinks a target block from this `multitype_join` messaging block.|  
-|[unlink_targets Method](#unlink_targets)|Unlinks all targets from this `multitype_join` messaging block. (Overrides [ISource::unlink_targets](isource-class.md#unlink_targets).)|  
+|[accept](#accept)|Accepts a message that was offered by this `multitype_join` block, transferring ownership to the caller.|  
+|[acquire_ref](#acquire_ref)|Acquires a reference count on this `multitype_join` messaging block, to prevent deletion.|  
+|[consume](#consume)|Consumes a message previously offered by the `multitype_join` messaging block and successfully reserved by the target, transferring ownership to the caller.|  
+|[link_target](#link_target)|Links a target block to this `multitype_join` messaging block.|  
+|[release](#release)|Releases a previous successful message reservation.|  
+|[release_ref](#release_ref)|Releases a reference count on this `multiple_join` messaging block.|  
+|[reserve](#reserve)|Reserves a message previously offered by this `multitype_join` messaging block.|  
+|[unlink_target](#unlink_target)|Unlinks a target block from this `multitype_join` messaging block.|  
+|[unlink_targets](#unlink_targets)|Unlinks all targets from this `multitype_join` messaging block. (Overrides [ISource::unlink_targets](isource-class.md#unlink_targets).)|  
   
 ## Remarks  
  For more information, see [Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md).  

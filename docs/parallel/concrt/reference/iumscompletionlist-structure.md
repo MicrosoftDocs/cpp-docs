@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrtrm/concurrency::IUMSCompletionList"
+f1_keywords: ['IUMSCompletionList', 'CONCRTRM/concurrency::IUMSCompletionList', 'CONCRTRM/concurrency::IUMSCompletionList::IUMSCompletionList::GetUnblockNotifications']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,7 +48,7 @@ struct IUMSCompletionList;
   
 |Name|Description|  
 |----------|-----------------|  
-|[IUMSCompletionList::GetUnblockNotifications Method](#getunblocknotifications)|Retrieves a chain of `IUMSUnblockNotification` interfaces representing execution contexts whose associated thread proxies have unblocked since the last time this method was invoked.|  
+|[IUMSCompletionList::GetUnblockNotifications](#getunblocknotifications)|Retrieves a chain of `IUMSUnblockNotification` interfaces representing execution contexts whose associated thread proxies have unblocked since the last time this method was invoked.|  
   
 ## Remarks  
  A scheduler must be extraordinarily careful about what actions are performed after utilizing this interface to dequeue items from the completion list. The items should be placed on the scheduler's list of runnable contexts and be generally accessible as soon as possible. It is entirely possible that one of the dequeued items has been given ownership of an arbitrary lock. The scheduler can make no arbitrary function calls that may block between the call to dequeue items and the placement of those items on a list that can be generally accessed from within the scheduler.  

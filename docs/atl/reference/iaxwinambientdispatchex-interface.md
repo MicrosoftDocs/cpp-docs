@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.IAxWinAmbientDispatchEx"
-  - "IAxWinAmbientDispatchEx"
-  - "ATL::IAxWinAmbientDispatchEx"
+f1_keywords: ['IAxWinAmbientDispatchEx', 'No header/ATL::IAxWinAmbientDispatchEx', 'No header/ATL::SetAmbientDispatch']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

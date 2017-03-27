@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "agents/concurrency::multi_link_registry"
+f1_keywords: ['multi_link_registry', 'AGENTS/concurrency::multi_link_registry', 'AGENTS/concurrency::multi_link_registry::multi_link_registry', 'AGENTS/concurrency::multi_link_registry::add', 'AGENTS/concurrency::multi_link_registry::begin', 'AGENTS/concurrency::multi_link_registry::contains', 'AGENTS/concurrency::multi_link_registry::count', 'AGENTS/concurrency::multi_link_registry::remove', 'AGENTS/concurrency::multi_link_registry::set_bound']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -54,19 +53,19 @@ class multi_link_registry : public network_link_registry<_Block>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[multi_link_registry Constructor](#ctor)|Constructs a `multi_link_registry` object.|  
+|[multi_link_registry](#ctor)|Constructs a `multi_link_registry` object.|  
 |[~multi_link_registry Destructor](#dtor)|Destroys the `multi_link_registry` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[add Method](#add)|Adds a link to the `multi_link_registry` object. (Overrides [network_link_registry::add](network-link-registry-class.md#add).)|  
-|[begin Method](#begin)|Returns an iterator to the first element in the `multi_link_registry` object. (Overrides [network_link_registry::begin](network-link-registry-class.md#begin).)|  
-|[contains Method](#contains)|Searches the `multi_link_registry` object for a specified block. (Overrides [network_link_registry::contains](network-link-registry-class.md#contains).)|  
-|[count Method](#count)|Counts the number of items in the `multi_link_registry` object. (Overrides [network_link_registry::count](network-link-registry-class.md#count).)|  
-|[remove Method](#remove)|Removes a link from the `multi_link_registry` object. (Overrides [network_link_registry::remove](network-link-registry-class.md#remove).)|  
-|[set_bound Method](#set_bound)|Sets an upper bound on the number of links that the `multi_link_registry` object can hold.|  
+|[add](#add)|Adds a link to the `multi_link_registry` object. (Overrides [network_link_registry::add](network-link-registry-class.md#add).)|  
+|[begin](#begin)|Returns an iterator to the first element in the `multi_link_registry` object. (Overrides [network_link_registry::begin](network-link-registry-class.md#begin).)|  
+|[contains](#contains)|Searches the `multi_link_registry` object for a specified block. (Overrides [network_link_registry::contains](network-link-registry-class.md#contains).)|  
+|[count](#count)|Counts the number of items in the `multi_link_registry` object. (Overrides [network_link_registry::count](network-link-registry-class.md#count).)|  
+|[remove](#remove)|Removes a link from the `multi_link_registry` object. (Overrides [network_link_registry::remove](network-link-registry-class.md#remove).)|  
+|[set_bound](#set_bound)|Sets an upper bound on the number of links that the `multi_link_registry` object can hold.|  
   
 ## Inheritance Hierarchy  
  [network_link_registry](network-link-registry-class.md)  

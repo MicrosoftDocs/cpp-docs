@@ -8,16 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCBaseToolBar::CreateObject"
-  - "~CMFCBaseToolBar"
-  - "CMFCBaseToolBar"
-  - "CMFCBaseToolBar::CMFCBaseToolBar"
-  - "CMFCBaseToolBar::~CMFCBaseToolBar"
-  - "CMFCBaseToolBar.~CMFCBaseToolBar"
-  - "CreateObject"
-  - "CMFCBaseToolBar.CMFCBaseToolBar"
-  - "CMFCBaseToolBar.CreateObject"
+f1_keywords: ['CMFCBaseToolBar', 'AFXBASETOOLBAR/CMFCBaseToolBar', 'AFXBASETOOLBAR/CMFCBaseToolBar::GetDockingMode', 'AFXBASETOOLBAR/CMFCBaseToolBar::GetMinSize', 'AFXBASETOOLBAR/CMFCBaseToolBar::OnAfterChangeParent']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

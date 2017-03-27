@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDiscreteTransition"
-  - "afxanimationcontroller/CDiscreteTransition"
+f1_keywords: ['CDiscreteTransition', 'AFXANIMATIONCONTROLLER/CDiscreteTransition', 'AFXANIMATIONCONTROLLER/CDiscreteTransition::CDiscreteTransition', 'AFXANIMATIONCONTROLLER/CDiscreteTransition::Create', 'AFXANIMATIONCONTROLLER/CDiscreteTransition::m_dblFinalValue', 'AFXANIMATIONCONTROLLER/CDiscreteTransition::m_delay', 'AFXANIMATIONCONTROLLER/CDiscreteTransition::m_hold']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

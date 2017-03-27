@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxanimationcontroller/CInstantaneousTransition"
-  - "CInstantaneousTransition"
+f1_keywords: ['CInstantaneousTransition', 'AFXANIMATIONCONTROLLER/CInstantaneousTransition', 'AFXANIMATIONCONTROLLER/CInstantaneousTransition::CInstantaneousTransition', 'AFXANIMATIONCONTROLLER/CInstantaneousTransition::Create', 'AFXANIMATIONCONTROLLER/CInstantaneousTransition::m_dblFinalValue']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

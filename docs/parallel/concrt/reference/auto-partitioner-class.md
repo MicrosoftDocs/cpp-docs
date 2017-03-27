@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ppl/concurrency::auto_partitioner"
+f1_keywords: ['auto_partitioner', 'PPL/concurrency::auto_partitioner', 'PPL/concurrency::auto_partitioner::auto_partitioner']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,7 +48,7 @@ class auto_partitioner;
   
 |Name|Description|  
 |----------|-----------------|  
-|[auto_partitioner Constructor](#ctor)|Constructs a `auto_partitioner` object.|  
+|[auto_partitioner](#ctor)|Constructs a `auto_partitioner` object.|  
 |[~auto_partitioner Destructor](#dtor)|Destroys a `auto_partitioner` object.|  
   
 ## Inheritance Hierarchy  

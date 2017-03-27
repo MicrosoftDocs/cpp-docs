@@ -31,7 +31,7 @@ translation.priority.ht:
 # C++ conformance improvements in [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)]
 
 ## New language features  
-With support for generalized constexpr and NSDMI for aggregates, the compiler is now complete for features added in the C++14 Standard. Note that the compiler still lacks a few features from the C++11 and C++98 Standards.
+With support for generalized constexpr and NSDMI for aggregates, the compiler is now complete for features added in the C++14 Standard. Note that the compiler still lacks a few features from the C++11 and C++98 Standards. See [Visual C++ Language Conformance](visual-cpp-language-conformance.md) for a table that shows the current state of the compiler.
 
 ### C++11:
 **Expression SFINAE support in more libraries** 
@@ -87,7 +87,7 @@ In Visual Studio 2015, the compiler erroneously treated copy-list-initialization
 
 ```cpp  
 // From http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_closed.html#1228
-struct MyList {
+struct MyStore {
        explicit MyStore(int initialCapacity);
 };
 
@@ -274,6 +274,22 @@ constexpr bool test1 = IsCallable<int(), int>::value;
 static_assert(test1, "PASS1");
 constexpr bool test2 = !IsCallable<int*, int>::value;
 static_assert(test2, "PASS2");
+```
+### Classes declared in anonymous namespaces
+According to the C++ standard, a class declared inside an anonymous namespace has internal linkage, and therefore cannot be exported. In Visual Studio 2015 and earlier, this rule was not enforced. In Visual Studio 2017 the rule is partially enforced. The following example raises this error in Visual Studio 2017: "error C2201: 'const `anonymous namespace'::S1::`vftable'': must have external linkage in order to be exported/imported."
+
+```cpp
+namespace
+{
+	struct __declspec(dllexport) S1 { virtual void f() {} }; //C2201
+}
+```
+
+### Classes declared in anonymous namespaces
+According to the C++ standard, a class declared inside an anonymous namespace has internal linkage, and therefore cannot be exported. In Visual Studio 2015 and earlier, this rule was not enforced. In Visual Studio 2017 the rule is partially enforced. The following example raises this error in Visual Studio 2017: "error C2201: 'const `anonymous namespace'::S1::`vftable'': must have external linkage in order to be exported/imported."
+
+```cpp
+struct __declspec(dllexport) S1 { virtual void f() {} }; //C2201
 ```
 
 ### Default initializers for value class members (C++/CLI)

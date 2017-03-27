@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IObjectSafetyImpl"
+f1_keywords: ['IObjectSafetyImpl', 'ATLCTL/ATL::IObjectSafetyImpl', 'ATLCTL/ATL::IObjectSafetyImpl::GetInterfaceSafetyOptions', 'ATLCTL/ATL::IObjectSafetyImpl::SetInterfaceSafetyOptions', 'ATLCTL/ATL::IObjectSafetyImpl::m_dwCurrentSafety']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

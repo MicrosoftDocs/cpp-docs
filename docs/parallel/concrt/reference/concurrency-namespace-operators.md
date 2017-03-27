@@ -6,6 +6,9 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+f1_keywords: ['concrt/concurrency::operator!=', 'concrt/concurrency:[operator&amp;&amp', 'concrt/concurrency:[operator&amp;&amp']
+dev_langs: 
+  - "C++"
 ms.assetid: 8e373f23-fc8e-49f7-82e6-ba0c57b822f8
 caps.latest.revision: 7
 author: "mikeblome"
@@ -15,51 +18,45 @@ manager: "ghogen"
 # concurrency namespace Operators
 ||||  
 |-|-|-|  
-|[operator!= Operator](#operator_neq)|[operator&amp;&amp; Operator](#operator_amp_amp)|[operator&gt; Operator](#operator_gt)|  
-|[operator&gt;= Operator](#operator_gt_eq)|[operator&lt; Operator](#operator_lt)|[operator&lt;= Operator](#operator_lt_eq)|  
-|[operator== Operator](#operator_eq_eq)|[operator|| Operator](#operator_lor)|  
+|[operator!=](#operator_neq)|[operator&amp;&amp;](#operator_amp_amp)|[operator&gt;](#operator_gt)|  
+|[operator&gt;=](#operator_gt_eq)|[operator&lt;](#operator_lt)|[operator&lt;=](#operator_lt_eq)|  
+|[operator==](#operator_eq_eq)|[operator||](#operator_lor)|  
   
 ##  <a name="operator_lor"></a>  operator&#124;&#124; Operator  
  Creates a task that will complete successfully when either of the tasks supplied as arguments completes successfully.  
   
 ```  
-template<
-    typename _ReturnType  
->  
-task<_ReturnType>   operator||(
-    const task<_ReturnType>& _Lhs,  
-    const task<_ReturnType>& _Rhs);
+template<typename ReturnType>  
+task<ReturnType> operator||(
+    const task<ReturnType>& lhs,  
+    const task<ReturnType>& rhs);
 
  
-template<
-    typename _ReturnType  
->  
-task<std::vector<_ReturnType>>   operator||(
-    const task<std::vector<_ReturnType>>& _Lhs,  
-    const task<_ReturnType>& _Rhs);
+template<typename ReturnType>  
+task<std::vector<ReturnType>> operator||(
+    const task<std::vector<ReturnType>>& lhs,  
+    const task<ReturnType>& rhs);
 
  
-template<
-    typename _ReturnType  
->  
-task<std::vector<_ReturnType>>   operator||(
-    const task<_ReturnType>& _Lhs,  
-    const task<std::vector<_ReturnType>>& _Rhs);
+template<typename ReturnType>  
+task<std::vector<ReturnType>> operator||(
+    const task<ReturnType>& lhs,  
+    const task<std::vector<ReturnType>>& rhs);
 
  
-inline task<void>   operator||(
-    const task<void>& _Lhs,  
-    const task<void>& _Rhs);
+inline task<void> operator||(
+    const task<void>& lhs,  
+    const task<void>& rhs);
 ```  
   
 ### Parameters  
- `_ReturnType`  
+ `ReturnType`  
  The type of the returned task.  
   
- `_Lhs`  
+ `lhs`  
  The first task to combine into the resulting task.  
   
- `_Rhs`  
+ `rhs`  
  The second task to combine into the resulting task.  
   
 ### Return Value  
@@ -72,51 +69,43 @@ inline task<void>   operator||(
  Creates a task that will complete succesfully when both of the tasks supplied as arguments complete successfully.  
   
 ```  
-template<
-    typename _ReturnType  
->  
-task<std::vector<_ReturnType>>    operator&&(
-    const task<_ReturnType>& _Lhs,  
-    const task<_ReturnType>& _Rhs);
+template<typename ReturnType>  
+task<std::vector<ReturnType>>  operator&&(
+    const task<ReturnType>& lhs,  
+    const task<ReturnType>& rhs);
 
  
-template<
-    typename _ReturnType  
->  
-task<std::vector<_ReturnType>>    operator&&(
-    const task<std::vector<_ReturnType>>& _Lhs,  
-    const task<_ReturnType>& _Rhs);
+template<typename ReturnType>  
+task<std::vector<ReturnType>>  operator&&(
+    const task<std::vector<ReturnType>>& lhs,  
+    const task<ReturnType>& rhs);
 
  
-template<
-    typename _ReturnType  
->  
-task<std::vector<_ReturnType>>    operator&&(
-    const task<_ReturnType>& _Lhs,  
-    const task<std::vector<_ReturnType>>& _Rhs);
+template<typename ReturnType>  
+task<std::vector<ReturnType>>  operator&&(
+    const task<ReturnType>& lhs,  
+    const task<std::vector<ReturnType>>& rhs);
 
  
-template<
-    typename _ReturnType  
->  
-task<std::vector<_ReturnType>>    operator&&(
-    const task<std::vector<_ReturnType>>& _Lhs,  
-    const task<std::vector<_ReturnType>>& _Rhs);
+template<typename ReturnType>  
+task<std::vector<ReturnType>>  operator&&(
+    const task<std::vector<ReturnType>>& lhs,  
+    const task<std::vector<ReturnType>>& rhs);
 
  
-inline task<void>    operator&&(
-    const task<void>& _Lhs,  
-    const task<void>& _Rhs);
+inline task<void>  operator&&(
+    const task<void>& lhs,  
+    const task<void>& rhs);
 ```  
   
 ### Parameters  
- `_ReturnType`  
+ `ReturnType`  
  The type of the returned task.  
   
- `_Lhs`  
+ `lhs`  
  The first task to combine into the resulting task.  
   
- `_Rhs`  
+ `rhs`  
  The second task to combine into the resulting task.  
   
 ### Return Value  
@@ -129,11 +118,7 @@ inline task<void>    operator&&(
  Tests if the `concurrent_vector` object on the left side of the operator is equal to the `concurrent_vector` object on the right side.  
   
 ```  
-template<
-    typename T,  
-    class A1,  
-    class A2  
->  
+template<typename T, class A1, class A2>  
 inline bool operator== (
     const concurrent_vector<T, A1>& _A,  
     const concurrent_vector<T, A2>& _B);
@@ -167,11 +152,7 @@ inline bool operator== (
  Tests if the `concurrent_vector` object on the left side of the operator is not equal to the `concurrent_vector` object on the right side.  
   
 ```  
-template<
-    typename T,  
-    class A1,  
-    class A2  
->  
+template<typename T, class A1, class A2>  
 inline bool operator!= (
     const concurrent_vector<T, A1>& _A,  
     const concurrent_vector<T, A2>& _B);
@@ -205,11 +186,7 @@ inline bool operator!= (
  Tests if the `concurrent_vector` object on the left side of the operator is less than the `concurrent_vector` object on the right side.  
   
 ```  
-template<
-    typename T,  
-    class A1,  
-    class A2  
->  
+template<typename T, class A1, class A2>  
 inline bool operator<(
     const concurrent_vector<T, A1>& _A,  
     const concurrent_vector<T, A2>& _B);
@@ -243,11 +220,7 @@ inline bool operator<(
  Tests if the `concurrent_vector` object on the left side of the operator is less than or equal to the `concurrent_vector` object on the right side.  
   
 ```  
-template<
-    typename T,  
-    class A1,  
-    class A2  
->  
+template<typename T, class A1, class A2>  
 inline bool operator<= (
     const concurrent_vector<T, A1>& _A,  
     const concurrent_vector<T, A2>& _B);
@@ -281,11 +254,7 @@ inline bool operator<= (
  Tests if the `concurrent_vector` object on the left side of the operator is greater than the `concurrent_vector` object on the right side.  
   
 ```  
-template<
-    typename T,  
-    class A1,  
-    class A2  
->  
+template<typename T, class A1, class A2>  
 inline bool operator>(
     const concurrent_vector<T, A1>& _A,  
     const concurrent_vector<T, A2>& _B);
@@ -319,11 +288,7 @@ inline bool operator>(
  Tests if the `concurrent_vector` object on the left side of the operator is greater than or equal to the `concurrent_vector` object on the right side.  
   
 ```  
-template<
-    typename T,  
-    class A1,  
-    class A2  
->  
+template<typename T, class A1, class A2>  
 inline bool operator>= (
     const concurrent_vector<T, A1>& _A,  
     const concurrent_vector<T, A2>& _B);

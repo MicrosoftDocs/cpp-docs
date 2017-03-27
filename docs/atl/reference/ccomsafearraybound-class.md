@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CComSafeArrayBound"
-  - "ATL::CComSafeArrayBound"
-  - "CComSafeArrayBound"
+f1_keywords: ['CComSafeArrayBound', 'ATLSAFE/ATL::CComSafeArrayBound', 'ATLSAFE/ATL::CComSafeArrayBound', 'ATLSAFE/ATL::GetCount', 'ATLSAFE/ATL::GetLowerBound', 'ATLSAFE/ATL::GetUpperBound', 'ATLSAFE/ATL::SetCount', 'ATLSAFE/ATL::SetLowerBound']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

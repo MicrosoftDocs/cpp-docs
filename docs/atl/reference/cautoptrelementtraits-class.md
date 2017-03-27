@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CAutoPtrElementTraits"
-  - "CAutoPtrElementTraits"
-  - "ATL::CAutoPtrElementTraits<T>"
-  - "ATL.CAutoPtrElementTraits<T>"
-  - "ATL::CAutoPtrElementTraits"
+f1_keywords: ['CAutoPtrElementTraits', 'ATLCOLL/ATL::CAutoPtrElementTraits', 'ATLCOLL/ATL::CAutoPtrElementTraits::INARGTYPE', 'ATLCOLL/ATL::CAutoPtrElementTraits::OUTARGTYPE']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

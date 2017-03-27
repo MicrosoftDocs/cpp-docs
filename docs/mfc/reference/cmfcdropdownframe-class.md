@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCDropDownFrame"
+f1_keywords: ['CMFCDropDownFrame', 'AFXDROPDOWNTOOLBAR/CMFCDropDownFrame', 'AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::Create', 'AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::GetParentMenuBar', 'AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::GetParentPopupMenu', 'AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::RecalcLayout', 'AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::SetAutoDestroy']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CAnimateCtrl"
+f1_keywords: ['CAnimateCtrl', 'AFXCMN/CAnimateCtrl', 'AFXCMN/CAnimateCtrl::CAnimateCtrl', 'AFXCMN/CAnimateCtrl::Close', 'AFXCMN/CAnimateCtrl::Create', 'AFXCMN/CAnimateCtrl::CreateEx', 'AFXCMN/CAnimateCtrl::IsPlaying', 'AFXCMN/CAnimateCtrl::Open', 'AFXCMN/CAnimateCtrl::Play', 'AFXCMN/CAnimateCtrl::Seek', 'AFXCMN/CAnimateCtrl::Stop']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

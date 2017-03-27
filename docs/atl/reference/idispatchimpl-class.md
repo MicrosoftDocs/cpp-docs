@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IDispatchImpl"
-  - "ATL.IDispatchImpl"
-  - "ATL::IDispatchImpl"
+f1_keywords: ['IDispatchImpl', 'ATLCOM/ATL::IDispatchImpl', 'ATLCOM/ATL::IDispatchImpl::IDispatchImpl', 'ATLCOM/ATL::IDispatchImpl::GetIDsOfNames', 'ATLCOM/ATL::IDispatchImpl::GetTypeInfo', 'ATLCOM/ATL::IDispatchImpl::GetTypeInfoCount', 'ATLCOM/ATL::IDispatchImpl::Invoke']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

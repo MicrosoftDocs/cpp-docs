@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSmoothStopTransition"
-  - "afxanimationcontroller/CSmoothStopTransition"
+f1_keywords: ['CSmoothStopTransition', 'AFXANIMATIONCONTROLLER/CSmoothStopTransition', 'AFXANIMATIONCONTROLLER/CSmoothStopTransition::CSmoothStopTransition', 'AFXANIMATIONCONTROLLER/CSmoothStopTransition::Create', 'AFXANIMATIONCONTROLLER/CSmoothStopTransition::m_dblFinalValue', 'AFXANIMATIONCONTROLLER/CSmoothStopTransition::m_maximumDuration']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

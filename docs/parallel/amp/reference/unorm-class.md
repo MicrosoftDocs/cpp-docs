@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "amp_short_vectors/Concurrency::graphics::unorm"
-  - "amp/Concurrency::graphics::unorm"
+f1_keywords: ['unorm', 'AMP_SHORT_VECTORS/unorm', 'AMP_SHORT_VECTORS/Concurrency::graphics::unorm Constructor']
 dev_langs: 
   - "C++"
 ms.assetid: bc30bd20-6452-4d5f-9158-3b11c4c16ed2
@@ -55,14 +53,14 @@ class unorm;
   
 |Name|Description|  
 |----------|-----------------|  
-|unorm::operator-- Operator||  
-|unorm::operator float Operator|Conversion operator. Convert the unorm number to a floating point value.|  
-|unorm::operator*= Operator||  
-|unorm::operator/= Operator||  
-|unorm::operator++ Operator||  
-|unorm::operator+= Operator||  
-|unorm::operator= Operator||  
-|unorm::operator-= Operator||  
+|unorm::operator--||  
+|unorm::operator float|Conversion operator. Convert the unorm number to a floating point value.|  
+|unorm::operator*=||  
+|unorm::operator/=||  
+|unorm::operator++||  
+|unorm::operator+=||  
+|unorm::operator=||  
+|unorm::operator-=||  
   
 ## Inheritance Hierarchy  
  `unorm`  

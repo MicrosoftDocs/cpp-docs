@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CPropertyPage"
+f1_keywords: ['CPropertyPage', 'AFXDLGS/CPropertyPage', 'AFXDLGS/CPropertyPage::CPropertyPage', 'AFXDLGS/CPropertyPage::CancelToClose', 'AFXDLGS/CPropertyPage::Construct', 'AFXDLGS/CPropertyPage::GetPSP', 'AFXDLGS/CPropertyPage::OnApply', 'AFXDLGS/CPropertyPage::OnCancel', 'AFXDLGS/CPropertyPage::OnKillActive', 'AFXDLGS/CPropertyPage::OnOK', 'AFXDLGS/CPropertyPage::OnQueryCancel', 'AFXDLGS/CPropertyPage::OnReset', 'AFXDLGS/CPropertyPage::OnSetActive', 'AFXDLGS/CPropertyPage::OnWizardBack', 'AFXDLGS/CPropertyPage::OnWizardFinish', 'AFXDLGS/CPropertyPage::OnWizardNext', 'AFXDLGS/CPropertyPage::QuerySiblings', 'AFXDLGS/CPropertyPage::SetModified', 'AFXDLGS/CPropertyPage::m_psp']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

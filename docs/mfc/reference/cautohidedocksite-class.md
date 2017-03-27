@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CAutoHideDockSite"
-  - "AllowShowOnPaneMenu"
-  - "CAutoHideDockSite::AllowShowOnPaneMenu"
-  - "CAutoHideDockSite.AllowShowOnPaneMenu"
+f1_keywords: ['CAutoHideDockSite', 'AFXAUTOHIDEDOCKSITE/CAutoHideDockSite', 'AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::CanAcceptPane', 'AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::DockPane', 'AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::GetAlignRect', 'AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::RepositionPanes', 'AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::SetOffsetLeft', 'AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::SetOffsetRight', 'AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::UnSetAutoHideMode', 'AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::m_nExtraSpace']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

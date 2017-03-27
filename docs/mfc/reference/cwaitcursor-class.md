@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CWaitCursor"
+f1_keywords: ['CWaitCursor', 'AFXWIN/CWaitCursor', 'AFXWIN/CWaitCursor::CWaitCursor', 'AFXWIN/CWaitCursor::Restore']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

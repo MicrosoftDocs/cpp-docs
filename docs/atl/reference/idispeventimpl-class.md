@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IDispEventImpl"
+f1_keywords: ['IDispEventImpl', 'ATLCOM/ATL::IDispEventImpl', 'ATLCOM/ATL::IDispEventImpl::IDispEventImpl', 'ATLCOM/ATL::IDispEventImpl::GetFuncInfoFromId', 'ATLCOM/ATL::IDispEventImpl::GetIDsOfNames', 'ATLCOM/ATL::IDispEventImpl::GetTypeInfo', 'ATLCOM/ATL::IDispEventImpl::GetTypeInfoCount', 'ATLCOM/ATL::IDispEventImpl::GetUserDefinedType']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

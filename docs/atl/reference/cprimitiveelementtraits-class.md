@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CPrimitiveElementTraits<T>"
-  - "CPrimitiveElementTraits"
-  - "ATL.CPrimitiveElementTraits"
-  - "ATL::CPrimitiveElementTraits<T>"
-  - "ATL::CPrimitiveElementTraits"
+f1_keywords: ['CPrimitiveElementTraits', 'ATLCOLL/ATL::CPrimitiveElementTraits', 'ATLCOLL/ATL::CPrimitiveElementTraits::INARGTYPE', 'ATLCOLL/ATL::CPrimitiveElementTraits::OUTARGTYPE']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

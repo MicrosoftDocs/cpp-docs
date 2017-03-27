@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IRunnableObjectImpl"
+f1_keywords: ['IRunnableObjectImpl', 'ATLCTL/ATL::IRunnableObjectImpl', 'ATLCTL/ATL::IRunnableObjectImpl::GetRunningClass', 'ATLCTL/ATL::IRunnableObjectImpl::IsRunning', 'ATLCTL/ATL::IRunnableObjectImpl::LockRunning', 'ATLCTL/ATL::IRunnableObjectImpl::Run', 'ATLCTL/ATL::IRunnableObjectImpl::SetContainedObject']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

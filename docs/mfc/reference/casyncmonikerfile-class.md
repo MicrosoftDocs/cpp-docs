@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CAsyncMonikerFile"
+f1_keywords: ['CAsyncMonikerFile', 'AFXOLE/CAsyncMonikerFile', 'AFXOLE/CAsyncMonikerFile::CAsyncMonikerFile', 'AFXOLE/CAsyncMonikerFile::Close', 'AFXOLE/CAsyncMonikerFile::GetBinding', 'AFXOLE/CAsyncMonikerFile::GetFormatEtc', 'AFXOLE/CAsyncMonikerFile::Open', 'AFXOLE/CAsyncMonikerFile::CreateBindStatusCallback', 'AFXOLE/CAsyncMonikerFile::GetBindInfo', 'AFXOLE/CAsyncMonikerFile::GetPriority', 'AFXOLE/CAsyncMonikerFile::OnDataAvailable', 'AFXOLE/CAsyncMonikerFile::OnLowResource', 'AFXOLE/CAsyncMonikerFile::OnProgress', 'AFXOLE/CAsyncMonikerFile::OnStartBinding', 'AFXOLE/CAsyncMonikerFile::OnStopBinding']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

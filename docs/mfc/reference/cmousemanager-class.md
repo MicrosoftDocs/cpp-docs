@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMouseManager"
+f1_keywords: ['CMouseManager', 'AFXMOUSEMANAGER/CMouseManager', 'AFXMOUSEMANAGER/CMouseManager::AddView', 'AFXMOUSEMANAGER/CMouseManager::GetViewDblClickCommand', 'AFXMOUSEMANAGER/CMouseManager::GetViewIconId', 'AFXMOUSEMANAGER/CMouseManager::GetViewIdByName', 'AFXMOUSEMANAGER/CMouseManager::GetViewNames', 'AFXMOUSEMANAGER/CMouseManager::LoadState', 'AFXMOUSEMANAGER/CMouseManager::SaveState', 'AFXMOUSEMANAGER/CMouseManager::SetCommandForDblClk']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

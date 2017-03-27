@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ppl/concurrency::affinity_partitioner"
+f1_keywords: ['affinity_partitioner', 'PPL/concurrency::affinity_partitioner', 'PPL/concurrency::affinity_partitioner::affinity_partitioner']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,7 +48,7 @@ class affinity_partitioner;
   
 |Name|Description|  
 |----------|-----------------|  
-|[affinity_partitioner Constructor](#ctor)|Constructs an `affinity_partitioner` object.|  
+|[affinity_partitioner](#ctor)|Constructs an `affinity_partitioner` object.|  
 |[~affinity_partitioner Destructor](#dtor)|Destroys an `affinity_partitioner` object.|  
   
 ## Inheritance Hierarchy  

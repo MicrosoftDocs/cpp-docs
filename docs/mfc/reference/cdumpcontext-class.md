@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDumpContext"
+f1_keywords: ['CDumpContext', 'AFX/CDumpContext', 'AFX/CDumpContext::CDumpContext', 'AFX/CDumpContext::DumpAsHex', 'AFX/CDumpContext::Flush', 'AFX/CDumpContext::GetDepth', 'AFX/CDumpContext::HexDump', 'AFX/CDumpContext::SetDepth']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CFontDialog"
+f1_keywords: ['CFontDialog', 'AFXDLGS/CFontDialog', 'AFXDLGS/CFontDialog::CFontDialog', 'AFXDLGS/CFontDialog::DoModal', 'AFXDLGS/CFontDialog::GetCharFormat', 'AFXDLGS/CFontDialog::GetColor', 'AFXDLGS/CFontDialog::GetCurrentFont', 'AFXDLGS/CFontDialog::GetFaceName', 'AFXDLGS/CFontDialog::GetSize', 'AFXDLGS/CFontDialog::GetStyleName', 'AFXDLGS/CFontDialog::GetWeight', 'AFXDLGS/CFontDialog::IsBold', 'AFXDLGS/CFontDialog::IsItalic', 'AFXDLGS/CFontDialog::IsStrikeOut', 'AFXDLGS/CFontDialog::IsUnderline', 'AFXDLGS/CFontDialog::m_cf']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

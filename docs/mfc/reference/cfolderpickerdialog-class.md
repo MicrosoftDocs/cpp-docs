@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxdlgs/CFolderPickerDialog"
-  - "CFolderPickerDialog"
+f1_keywords: ['CFolderPickerDialog', 'AFXDLGS/CFolderPickerDialog', 'AFXDLGS/CFolderPickerDialog::CFolderPickerDialog']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

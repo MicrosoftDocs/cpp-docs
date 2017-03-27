@@ -42,15 +42,6 @@ Multibyte character sets (MBCSs) are an older approach to the need to support ch
   
  The most common MBCS implementation is double-byte character sets (DBCSs). Visual C++ in general, and MFC in particular, is fully enabled for DBCS.  
   
-> [!WARNING]
->  In Visual Studio 2013 and later, the MFC libraries for multi-byle character encoding (MBCS) will be provided as an add-on to Visual Studio and will be available free of charge to Visual Studio customers (Professional and Enterprise editions only) from the MSDN download site.  
->   
->  The libraries require about 440 MB on your drive, and the installation includes all localized versions of the libraries. You can install it on any machine on which Visual Studio Community, Professional, or Enterprise edition is installed, and which has the in-box MFC feature enabled.  
->   
->  If you uninstall or repair Visual Studio, the MBCS libraries will also be uninstalled or repaired. However, if you just remove the MFC feature, the MBCS libraries will remain on your system. If you repair the MBCS libraries, Visual Studio is not modified in any way.  
->   
->  The Redistributable Packages for Visual Studio 2013 and later will still include the MBCS MFC DLLs. No additional steps are required to redistribute the DLLs to your customers.  
-  
  For samples, see the MFC source code files.  
   
  For platforms used in markets whose languages use large character sets, the best alternative to Unicode is MBCS. MFC supports MBCS by using internationalizable data types and C run-time functions. You should do the same in your code.  

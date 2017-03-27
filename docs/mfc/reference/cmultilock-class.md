@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMultiLock"
+f1_keywords: ['CMultiLock', 'AFXMT/CMultiLock', 'AFXMT/CMultiLock::CMultiLock', 'AFXMT/CMultiLock::IsLocked', 'AFXMT/CMultiLock::Lock', 'AFXMT/CMultiLock::Unlock']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,13 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CWinTraits"
-  - "CMDIChildWinTraits"
-  - "ATL.CWinTraits"
-  - "CFrameWinTraits"
-  - "ATL::CWinTraits"
-  - "CControlWinTraits"
+f1_keywords: ['CWinTraits', 'ATLWIN/ATL::CWinTraits', 'ATLWIN/ATL::CWinTraits::GetWndExStyle', 'ATLWIN/ATL::CWinTraits::GetWndStyle']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

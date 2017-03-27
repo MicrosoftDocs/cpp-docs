@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CAutoPtrArray<E>"
-  - "CAutoPtrArray"
-  - "ATL::CAutoPtrArray"
-  - "ATL.CAutoPtrArray<E>"
-  - "ATL.CAutoPtrArray"
+f1_keywords: ['CAutoPtrArray', 'ATLCOLL/ATL::CAutoPtrArray', 'ATLCOLL/ATL::CAutoPtrArray::CAutoPtrArray']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

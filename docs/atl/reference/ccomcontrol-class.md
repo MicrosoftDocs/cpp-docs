@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComControl"
+f1_keywords: ['CComControl', 'ATLCTL/ATL::CComControl', 'ATLCTL/ATL::CComControl::CComControl', 'ATLCTL/ATL::CComControl::ControlQueryInterface', 'ATLCTL/ATL::CComControl::CreateControlWindow', 'ATLCTL/ATL::CComControl::FireOnChanged', 'ATLCTL/ATL::CComControl::FireOnRequestEdit', 'ATLCTL/ATL::CComControl::MessageBox']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

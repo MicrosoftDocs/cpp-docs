@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxadv/CJumpList"
-  - "CJumpList"
+f1_keywords: ['CJumpList', 'AFXADV/CJumpList', 'AFXADV/CJumpList::CJumpList', 'AFXADV/CJumpList::AbortList', 'AFXADV/CJumpList::AddDestination', 'AFXADV/CJumpList::AddKnownCategory', 'AFXADV/CJumpList::AddTask', 'AFXADV/CJumpList::AddTasks', 'AFXADV/CJumpList::AddTaskSeparator', 'AFXADV/CJumpList::ClearAll', 'AFXADV/CJumpList::ClearAllDestinations', 'AFXADV/CJumpList::CommitList', 'AFXADV/CJumpList::GetDestinationList', 'AFXADV/CJumpList::GetMaxSlots', 'AFXADV/CJumpList::GetRemovedItems', 'AFXADV/CJumpList::InitializeList', 'AFXADV/CJumpList::SetAppID']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

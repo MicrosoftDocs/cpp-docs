@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CTreeView"
+f1_keywords: ['CTreeView', 'AFXCVIEW/CTreeView', 'AFXCVIEW/CTreeView::CTreeView', 'AFXCVIEW/CTreeView::GetTreeCtrl']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

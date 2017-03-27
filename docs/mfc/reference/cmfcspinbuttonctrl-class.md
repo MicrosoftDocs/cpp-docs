@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCSpinButtonCtrl"
+f1_keywords: ['CMFCSpinButtonCtrl', 'AFXSPINBUTTONCTRL/CMFCSpinButtonCtrl', 'AFXSPINBUTTONCTRL/CMFCSpinButtonCtrl::OnDraw']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

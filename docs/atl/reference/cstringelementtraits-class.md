@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CStringElementTraits<T>"
-  - "ATL::CStringElementTraits<T>"
-  - "CStringElementTraits"
-  - "ATL.CStringElementTraits"
-  - "ATL::CStringElementTraits"
+f1_keywords: ['CStringElementTraits', 'CSTRINGT/ATL::CStringElementTraits', 'CSTRINGT/ATL::CStringElementTraits::INARGTYPE', 'CSTRINGT/ATL::CStringElementTraits::OUTARGTYPE', 'CSTRINGT/ATL::CStringElementTraits::CompareElements', 'CSTRINGT/ATL::CStringElementTraits::CompareElementsOrdered', 'CSTRINGT/ATL::CStringElementTraits::CopyElements', 'CSTRINGT/ATL::CStringElementTraits::Hash', 'CSTRINGT/ATL::CStringElementTraits::RelocateElements']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

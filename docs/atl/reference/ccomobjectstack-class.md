@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CComObjectStack"
-  - "ATL.CComObjectStack"
-  - "ATL::CComObjectStack<Base>"
-  - "ATL.CComObjectStack<Base>"
-  - "CComObjectStack"
+f1_keywords: ['CComObjectStack', 'ATLCOM/ATL::CComObjectStack', 'ATLCOM/ATL::CComObjectStack::CComObjectStack', 'ATLCOM/ATL::CComObjectStack::AddRef', 'ATLCOM/ATL::CComObjectStack::QueryInterface', 'ATLCOM/ATL::CComObjectStack::Release', 'ATLCOM/ATL::CComObjectStack::m_hResFinalConstruct']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

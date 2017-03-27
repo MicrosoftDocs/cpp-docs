@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCRibbonFontComboBox"
+f1_keywords: ['CMFCRibbonFontComboBox', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::CMFCRibbonFontComboBox', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::BuildFonts', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetCharSet', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetFontDesc', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetFontType', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetPitchAndFamily', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::RebuildFonts', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::SetFont']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

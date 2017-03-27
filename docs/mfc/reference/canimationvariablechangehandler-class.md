@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxanimationcontroller/CAnimationVariableChangeHandler"
-  - "CAnimationVariableChangeHandler"
+f1_keywords: ['CAnimationVariableChangeHandler', 'AFXANIMATIONCONTROLLER/CAnimationVariableChangeHandler', 'AFXANIMATIONCONTROLLER/CAnimationVariableChangeHandler::OnValueChanged', 'AFXANIMATIONCONTROLLER/CAnimationVariableChangeHandler::SetAnimationController']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

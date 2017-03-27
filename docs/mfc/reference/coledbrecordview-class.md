@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleDBRecordView"
+f1_keywords: ['COleDBRecordView', 'AFXOLEDB/COleDBRecordView', 'AFXOLEDB/COleDBRecordView::COleDBRecordView', 'AFXOLEDB/COleDBRecordView::OnGetRowset', 'AFXOLEDB/COleDBRecordView::OnMove']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

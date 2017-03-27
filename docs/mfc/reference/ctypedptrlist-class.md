@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CTypedPtrList"
+f1_keywords: ['CTypedPtrList', 'AFXTEMPL/CTypedPtrList', 'AFXTEMPL/CTypedPtrList::AddHead', 'AFXTEMPL/CTypedPtrList::AddTail', 'AFXTEMPL/CTypedPtrList::GetAt', 'AFXTEMPL/CTypedPtrList::GetHead', 'AFXTEMPL/CTypedPtrList::GetNext', 'AFXTEMPL/CTypedPtrList::GetPrev', 'AFXTEMPL/CTypedPtrList::GetTail', 'AFXTEMPL/CTypedPtrList::RemoveHead', 'AFXTEMPL/CTypedPtrList::RemoveTail', 'AFXTEMPL/CTypedPtrList::SetAt']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

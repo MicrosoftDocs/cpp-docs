@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComSafeDeleteCriticalSection"
-  - "ATL::CComSafeDeleteCriticalSection"
-  - "ATL.CComSafeDeleteCriticalSection"
+f1_keywords: ['CComSafeDeleteCriticalSection', 'ATLCORE/ATL::CComSafeDeleteCriticalSection', 'ATLCORE/ATL::CComSafeDeleteCriticalSection::CComSafeDeleteCriticalSection', 'ATLCORE/ATL::CComSafeDeleteCriticalSection::Init', 'ATLCORE/ATL::CComSafeDeleteCriticalSection::Lock', 'ATLCORE/ATL::CComSafeDeleteCriticalSection::Term', 'ATLCORE/ATL::m_bInitialized']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

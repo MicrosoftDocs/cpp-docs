@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CAxDialogImpl"
-  - "ATL.CAxDialogImpl"
-  - "CAxDialogImpl"
+f1_keywords: ['CAxDialogImpl', 'ATLWIN/ATL::CAxDialogImpl', 'ATLWIN/ATL::CAxDialogImpl::AdviseSinkMap', 'ATLWIN/ATL::CAxDialogImpl::Create', 'ATLWIN/ATL::CAxDialogImpl::DestroyWindow', 'ATLWIN/ATL::CAxDialogImpl::DoModal', 'ATLWIN/ATL::CAxDialogImpl::EndDialog', 'ATLWIN/ATL::CAxDialogImpl::GetDialogProc', 'ATLWIN/ATL::CAxDialogImpl::GetIDD', 'ATLWIN/ATL::CAxDialogImpl::IsDialogMessage', 'ATLWIN/ATL::CAxDialogImpl::m_bModal']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

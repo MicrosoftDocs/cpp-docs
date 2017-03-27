@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CComCachedTearOffObject"
-  - "ATL.CComCachedTearOffObject"
-  - "ATL.CComCachedTearOffObject<contained>"
-  - "CComCachedTearOffObject"
-  - "ATL::CComCachedTearOffObject<contained>"
+f1_keywords: ['CComCachedTearOffObject', 'ATLCOM/ATL::CComCachedTearOffObject', 'ATLCOM/ATL::CComCachedTearOffObject::CComCachedTearOffObject', 'ATLCOM/ATL::CComCachedTearOffObject::AddRef', 'ATLCOM/ATL::CComCachedTearOffObject::FinalConstruct', 'ATLCOM/ATL::CComCachedTearOffObject::FinalRelease', 'ATLCOM/ATL::CComCachedTearOffObject::QueryInterface', 'ATLCOM/ATL::CComCachedTearOffObject::Release', 'ATLCOM/ATL::CComCachedTearOffObject::m_contained']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

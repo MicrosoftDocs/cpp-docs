@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleStreamFile"
+f1_keywords: ['COleStreamFile', 'AFXOLE/COleStreamFile', 'AFXOLE/COleStreamFile::COleStreamFile', 'AFXOLE/COleStreamFile::Attach', 'AFXOLE/COleStreamFile::CreateMemoryStream', 'AFXOLE/COleStreamFile::CreateStream', 'AFXOLE/COleStreamFile::Detach', 'AFXOLE/COleStreamFile::GetStream', 'AFXOLE/COleStreamFile::OpenStream']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

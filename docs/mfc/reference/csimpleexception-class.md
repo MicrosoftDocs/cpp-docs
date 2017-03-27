@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSimpleException"
+f1_keywords: ['CSimpleException', 'AFX/CSimpleException', 'AFX/CSimpleException::CSimpleException', 'AFX/CSimpleException::GetErrorMessage']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

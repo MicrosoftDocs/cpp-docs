@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCRibbonMainPanel"
+f1_keywords: ['CMFCRibbonMainPanel', 'AFXRIBBONMAINPANEL/CMFCRibbonMainPanel', 'AFXRIBBONMAINPANEL/CMFCRibbonMainPanel::Add', 'AFXRIBBONMAINPANEL/CMFCRibbonMainPanel::AddRecentFilesList', 'AFXRIBBONMAINPANEL/CMFCRibbonMainPanel::AddToBottom', 'AFXRIBBONMAINPANEL/CMFCRibbonMainPanel::AddToRight', 'AFXRIBBONMAINPANEL/CMFCRibbonMainPanel::GetCommandsFrame']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

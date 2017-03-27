@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCDisableMenuAnimation"
+f1_keywords: ['CMFCDisableMenuAnimation', 'AFXPOPUPMENU/CMFCDisableMenuAnimation', 'AFXPOPUPMENU/CMFCDisableMenuAnimation::Restore']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

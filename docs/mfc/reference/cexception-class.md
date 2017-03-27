@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CException"
+f1_keywords: ['CException', 'AFX/CException', 'AFX/CException::CException', 'AFX/CException::Delete', 'AFX/CException::ReportError']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

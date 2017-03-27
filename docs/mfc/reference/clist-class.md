@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CList"
+f1_keywords: ['CList', 'AFXTEMPL/CList', 'AFXTEMPL/CList::CList', 'AFXTEMPL/CList::AddHead', 'AFXTEMPL/CList::AddTail', 'AFXTEMPL/CList::Find', 'AFXTEMPL/CList::FindIndex', 'AFXTEMPL/CList::GetAt', 'AFXTEMPL/CList::GetCount', 'AFXTEMPL/CList::GetHead', 'AFXTEMPL/CList::GetHeadPosition', 'AFXTEMPL/CList::GetNext', 'AFXTEMPL/CList::GetPrev', 'AFXTEMPL/CList::GetSize', 'AFXTEMPL/CList::GetTail', 'AFXTEMPL/CList::GetTailPosition', 'AFXTEMPL/CList::InsertAfter', 'AFXTEMPL/CList::InsertBefore', 'AFXTEMPL/CList::IsEmpty', 'AFXTEMPL/CList::RemoveAll', 'AFXTEMPL/CList::RemoveAt', 'AFXTEMPL/CList::RemoveHead', 'AFXTEMPL/CList::RemoveTail', 'AFXTEMPL/CList::SetAt']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComSimpleThreadAllocator"
-  - "ATL::CComSimpleThreadAllocator"
-  - "ATL.CComSimpleThreadAllocator"
+f1_keywords: ['CComSimpleThreadAllocator', 'ATLBASE/ATL::CComSimpleThreadAllocator', 'ATLBASE/ATL::CComSimpleThreadAllocator::GetThread']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

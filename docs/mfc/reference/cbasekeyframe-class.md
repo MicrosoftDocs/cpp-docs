@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CBaseKeyFrame"
-  - "afxanimationcontroller/CBaseKeyFrame"
+f1_keywords: ['CBaseKeyFrame', 'AFXANIMATIONCONTROLLER/CBaseKeyFrame', 'AFXANIMATIONCONTROLLER/CBaseKeyFrame::CBaseKeyFrame', 'AFXANIMATIONCONTROLLER/CBaseKeyFrame::AddToStoryboard', 'AFXANIMATIONCONTROLLER/CBaseKeyFrame::GetAnimationKeyframe', 'AFXANIMATIONCONTROLLER/CBaseKeyFrame::IsAdded', 'AFXANIMATIONCONTROLLER/CBaseKeyFrame::IsKeyframeAtOffset', 'AFXANIMATIONCONTROLLER/CBaseKeyFrame::m_bAdded', 'AFXANIMATIONCONTROLLER/CBaseKeyFrame::m_bIsKeyframeAtOffset', 'AFXANIMATIONCONTROLLER/CBaseKeyFrame::m_keyframe']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

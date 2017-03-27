@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CEvent"
+f1_keywords: ['CEvent', 'AFXMT/CEvent', 'AFXMT/CEvent::CEvent', 'AFXMT/CEvent::PulseEvent', 'AFXMT/CEvent::ResetEvent', 'AFXMT/CEvent::SetEvent', 'AFXMT/CEvent::Unlock']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CPaintDC"
+f1_keywords: ['CPaintDC', 'AFXWIN/CPaintDC', 'AFXWIN/CPaintDC::CPaintDC', 'AFXWIN/CPaintDC::m_ps', 'AFXWIN/CPaintDC::m_hWnd']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

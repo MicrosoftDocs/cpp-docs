@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCRibbonGalleryMenuButton"
+f1_keywords: ['CMFCRibbonGalleryMenuButton', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::CMFCRibbonGalleryMenuButton', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::CopyFrom', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::CreatePopupMenu', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::GetPalette', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::HasButton', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::IsEmptyMenuAllowed']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

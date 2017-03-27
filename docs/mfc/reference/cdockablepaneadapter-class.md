@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDockablePaneAdapter"
+f1_keywords: ['CDockablePaneAdapter', 'AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter', 'AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::GetWrappedWnd', 'AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::LoadState', 'AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::SaveState', 'AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::SetWrappedWnd']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

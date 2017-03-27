@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDateTimeCtrl"
+f1_keywords: ['CDateTimeCtrl', 'AFXDTCTL/CDateTimeCtrl', 'AFXDTCTL/CDateTimeCtrl::CDateTimeCtrl', 'AFXDTCTL/CDateTimeCtrl::CloseMonthCal', 'AFXDTCTL/CDateTimeCtrl::Create', 'AFXDTCTL/CDateTimeCtrl::GetDateTimePickerInfo', 'AFXDTCTL/CDateTimeCtrl::GetIdealSize', 'AFXDTCTL/CDateTimeCtrl::GetMonthCalColor', 'AFXDTCTL/CDateTimeCtrl::GetMonthCalCtrl', 'AFXDTCTL/CDateTimeCtrl::GetMonthCalFont', 'AFXDTCTL/CDateTimeCtrl::GetMonthCalStyle', 'AFXDTCTL/CDateTimeCtrl::GetRange', 'AFXDTCTL/CDateTimeCtrl::GetTime', 'AFXDTCTL/CDateTimeCtrl::SetFormat', 'AFXDTCTL/CDateTimeCtrl::SetMonthCalColor', 'AFXDTCTL/CDateTimeCtrl::SetMonthCalFont', 'AFXDTCTL/CDateTimeCtrl::SetMonthCalStyle', 'AFXDTCTL/CDateTimeCtrl::SetRange', 'AFXDTCTL/CDateTimeCtrl::SetTime']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

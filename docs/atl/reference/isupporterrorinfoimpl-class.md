@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::ISupportErrorInfoImpl<piid>"
-  - "ATL::ISupportErrorInfoImpl"
-  - "ISupportErrorInfoImpl"
-  - "ATL.ISupportErrorInfoImpl<piid>"
-  - "ATL.ISupportErrorInfoImpl"
+f1_keywords: ['ISupportErrorInfoImpl', 'ATLCOM/ATL::ISupportErrorInfoImpl', 'ATLCOM/ATL::ISupportErrorInfoImpl::InterfaceSupportsErrorInfo']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

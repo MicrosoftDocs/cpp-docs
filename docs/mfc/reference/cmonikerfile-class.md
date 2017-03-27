@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMonikerFile"
+f1_keywords: ['CMonikerFile', 'AFXOLE/CMonikerFile', 'AFXOLE/CMonikerFile::CMonikerFile', 'AFXOLE/CMonikerFile::Close', 'AFXOLE/CMonikerFile::Detach', 'AFXOLE/CMonikerFile::GetMoniker', 'AFXOLE/CMonikerFile::Open', 'AFXOLE/CMonikerFile::CreateBindContext']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

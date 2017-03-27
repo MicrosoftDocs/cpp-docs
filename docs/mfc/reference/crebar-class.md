@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CReBar"
+f1_keywords: ['CReBar', 'AFXEXT/CReBar', 'AFXEXT/CReBar::AddBar', 'AFXEXT/CReBar::Create', 'AFXEXT/CReBar::GetReBarCtrl']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

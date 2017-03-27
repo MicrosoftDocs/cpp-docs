@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDefaultCharTraits"
-  - "ATL::CDefaultCharTraits<T>"
-  - "ATL.CDefaultCharTraits"
-  - "ATL.CDefaultCharTraits<T>"
-  - "ATL::CDefaultCharTraits"
+f1_keywords: ['CDefaultCharTraits', 'ATLCOLL/ATL::CDefaultCharTraits', 'ATLCOLL/ATL::CDefaultCharTraits::CharToLower', 'ATLCOLL/ATL::CDefaultCharTraits::CharToUpper']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

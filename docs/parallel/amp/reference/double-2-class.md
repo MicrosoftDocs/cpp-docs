@@ -83,31 +83,31 @@ class double_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|double_2::get_x Method||  
-|double_2::get_xy Method||  
-|double_2::get_y Method||  
-|double_2::get_yx Method||  
-|double_2::ref_g Method||  
-|double_2::ref_r Method||  
-|double_2::ref_x Method||  
-|double_2::ref_y Method||  
-|double_2::set_x Method||  
-|double_2::set_xy Method||  
-|double_2::set_y Method||  
-|double_2::set_yx Method||  
+|double_2::get_x||  
+|double_2::get_xy||  
+|double_2::get_y||  
+|double_2::get_yx||  
+|double_2::ref_g||  
+|double_2::ref_r||  
+|double_2::ref_x||  
+|double_2::ref_y||  
+|double_2::set_x||  
+|double_2::set_xy||  
+|double_2::set_y||  
+|double_2::set_yx||  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|double_2::operator- Operator||  
-|double_2::operator-- Operator||  
-|double_2::operator*= Operator||  
-|double_2::operator/= Operator||  
-|double_2::operator++ Operator||  
-|double_2::operator+= Operator||  
-|double_2::operator= Operator||  
-|double_2::operator-= Operator||  
+|double_2::operator-||  
+|double_2::operator--||  
+|double_2::operator*=||  
+|double_2::operator/=||  
+|double_2::operator++||  
+|double_2::operator+=||  
+|double_2::operator=||  
+|double_2::operator-=||  
   
 ### Public Constants  
   
@@ -119,14 +119,14 @@ class double_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|double_2::g Data Member||  
-|double_2::gr Data Member||  
-|double_2::r Data Member||  
-|double_2::rg Data Member||  
-|double_2::x Data Member||  
-|double_2::xy Data Member||  
-|double_2::y Data Member||  
-|double_2::yx Data Member||  
+|double_2::g||  
+|double_2::gr||  
+|double_2::r||  
+|double_2::rg||  
+|double_2::x||  
+|double_2::xy||  
+|double_2::y||  
+|double_2::yx||  
   
 ## Inheritance Hierarchy  
  `double_2`  

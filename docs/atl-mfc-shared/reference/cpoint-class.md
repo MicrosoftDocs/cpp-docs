@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CPoint"
+f1_keywords: ['CPoint', 'ATLTYPES/ATL::CPoint', 'ATLTYPES/ATL::CPoint::CPoint', 'ATLTYPES/ATL::CPoint::Offset']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

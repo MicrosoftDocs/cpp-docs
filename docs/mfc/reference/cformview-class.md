@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CFormView"
+f1_keywords: ['CFormView', 'AFXEXT/CFormView', 'AFXEXT/CFormView::CFormView', 'AFXEXT/CFormView::IsInitDlgCompleted']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

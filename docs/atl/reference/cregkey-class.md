@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CRegKey"
-  - "ATL::CRegKey"
-  - "ATL.CRegKey"
+f1_keywords: ['CRegKey', 'ATLBASE/ATL::CRegKey', 'ATLBASE/ATL::CRegKey::CRegKey', 'ATLBASE/ATL::CRegKey::Attach', 'ATLBASE/ATL::CRegKey::Close', 'ATLBASE/ATL::CRegKey::Create', 'ATLBASE/ATL::CRegKey::DeleteSubKey', 'ATLBASE/ATL::CRegKey::DeleteValue', 'ATLBASE/ATL::CRegKey::Detach', 'ATLBASE/ATL::CRegKey::EnumKey', 'ATLBASE/ATL::CRegKey::Flush', 'ATLBASE/ATL::CRegKey::GetKeySecurity', 'ATLBASE/ATL::CRegKey::NotifyChangeKeyValue', 'ATLBASE/ATL::CRegKey::Open', 'ATLBASE/ATL::CRegKey::QueryBinaryValue', 'ATLBASE/ATL::CRegKey::QueryDWORDValue', 'ATLBASE/ATL::CRegKey::QueryGUIDValue', 'ATLBASE/ATL::CRegKey::QueryMultiStringValue', 'ATLBASE/ATL::CRegKey::QueryQWORDValue', 'ATLBASE/ATL::CRegKey::QueryStringValue', 'ATLBASE/ATL::CRegKey::QueryValue', 'ATLBASE/ATL::CRegKey::RecurseDeleteKey', 'ATLBASE/ATL::CRegKey::SetBinaryValue', 'ATLBASE/ATL::CRegKey::SetDWORDValue', 'ATLBASE/ATL::CRegKey::SetGUIDValue', 'ATLBASE/ATL::CRegKey::SetKeySecurity', 'ATLBASE/ATL::CRegKey::SetKeyValue', 'ATLBASE/ATL::CRegKey::SetMultiStringValue', 'ATLBASE/ATL::CRegKey::SetQWORDValue', 'ATLBASE/ATL::CRegKey::SetStringValue', 'ATLBASE/ATL::CRegKey::SetValue', 'ATLBASE/ATL::CRegKey::m_hKey', 'ATLBASE/ATL::CRegKey::m_pTM']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

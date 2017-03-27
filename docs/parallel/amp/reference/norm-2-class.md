@@ -83,31 +83,31 @@ class norm_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|norm_2::get_x Method||  
-|norm_2::get_xy Method||  
-|norm_2::get_y Method||  
-|norm_2::get_yx Method||  
-|norm_2::ref_g Method||  
-|norm_2::ref_r Method||  
-|norm_2::ref_x Method||  
-|norm_2::ref_y Method||  
-|norm_2::set_x Method||  
-|norm_2::set_xy Method||  
-|norm_2::set_y Method||  
-|norm_2::set_yx Method||  
+|norm_2::get_x||  
+|norm_2::get_xy||  
+|norm_2::get_y||  
+|norm_2::get_yx||  
+|norm_2::ref_g||  
+|norm_2::ref_r||  
+|norm_2::ref_x||  
+|norm_2::ref_y||  
+|norm_2::set_x||  
+|norm_2::set_xy||  
+|norm_2::set_y||  
+|norm_2::set_yx||  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|norm_2::operator- Operator||  
-|norm_2::operator-- Operator||  
-|norm_2::operator*= Operator||  
-|norm_2::operator/= Operator||  
-|norm_2::operator++ Operator||  
-|norm_2::operator+= Operator||  
-|norm_2::operator= Operator||  
-|norm_2::operator-= Operator||  
+|norm_2::operator-||  
+|norm_2::operator--||  
+|norm_2::operator*=||  
+|norm_2::operator/=||  
+|norm_2::operator++||  
+|norm_2::operator+=||  
+|norm_2::operator=||  
+|norm_2::operator-=||  
   
 ### Public Constants  
   
@@ -119,14 +119,14 @@ class norm_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|norm_2::g Data Member||  
-|norm_2::gr Data Member||  
-|norm_2::r Data Member||  
-|norm_2::rg Data Member||  
-|norm_2::x Data Member||  
-|norm_2::xy Data Member||  
-|norm_2::y Data Member||  
-|norm_2::yx Data Member||  
+|norm_2::g||  
+|norm_2::gr||  
+|norm_2::r||  
+|norm_2::rg||  
+|norm_2::x||  
+|norm_2::xy||  
+|norm_2::y||  
+|norm_2::yx||  
   
 ## Inheritance Hierarchy  
  `norm_2`  

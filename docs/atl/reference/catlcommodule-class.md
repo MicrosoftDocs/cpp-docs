@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CAtlComModule"
-  - "CAtlComModule"
-  - "ATL::CAtlComModule"
+f1_keywords: ['CAtlComModule', 'ATLBASE/ATL::CAtlComModule', 'ATLBASE/ATL::CAtlComModule::CAtlComModule', 'ATLBASE/ATL::CAtlComModule::RegisterServer', 'ATLBASE/ATL::CAtlComModule::RegisterTypeLib', 'ATLBASE/ATL::CAtlComModule::UnregisterServer', 'ATLBASE/ATL::CAtlComModule::UnRegisterTypeLib']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

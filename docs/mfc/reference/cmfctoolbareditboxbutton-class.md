@@ -8,23 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "OnDrawOnCustomizeList"
-  - "OnDraw"
-  - "CMFCToolBarEditBoxButton::OnDrawOnCustomizeList"
-  - "CMFCToolBarEditBoxButton.SetACCData"
-  - "CMFCToolBarEditBoxButton::OnDraw"
-  - "OnCalculateSize"
-  - "SetACCData"
-  - "CMFCToolBarEditBoxButton"
-  - "CMFCToolBarEditBoxButton::SetACCData"
-  - "CMFCToolBarEditBoxButton::Serialize"
-  - "CMFCToolBarEditBoxButton.OnDraw"
-  - "CMFCToolBarEditBoxButton.OnDrawOnCustomizeList"
-  - "CMFCToolBarEditBoxButton::OnCalculateSize"
-  - "Serialize"
-  - "CMFCToolBarEditBoxButton.Serialize"
-  - "CMFCToolBarEditBoxButton.OnCalculateSize"
+f1_keywords: ['CMFCToolBarEditBoxButton', 'AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton', 'AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::CMFCToolBarEditBoxButton', 'AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::CanBeStretched', 'AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::CopyFrom', 'AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::GetByCmd', 'AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::GetContentsAll', 'AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::GetContextMenuID', 'AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::GetEditBorder', 'AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::GetHwnd', 'AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::GetInvalidateRect', 'AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::HaveHotBorder', 'AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::IsFlatMode', 'AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::NotifyCommand', 'AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnAddToCustomizePage', 'AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnChangeParentWnd', 'AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnClick', 'AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnCtlColor', 'AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnGlobalFontsChanged', 'AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnMove', 'AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnShow', 'AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnSize', 'AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnUpdateToolTip', 'AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::SetContextMenuID', 'AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::SetFlatMode']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

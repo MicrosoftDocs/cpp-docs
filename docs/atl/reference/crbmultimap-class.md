@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CRBMultiMap"
-  - "ATL.CRBMultiMap"
-  - "ATL::CRBMultiMap"
+f1_keywords: ['CRBMultiMap', 'ATLCOLL/ATL::CRBMultiMap', 'ATLCOLL/ATL::CRBMultiMap::CRBMultiMap', 'ATLCOLL/ATL::CRBMultiMap::FindFirstWithKey', 'ATLCOLL/ATL::CRBMultiMap::GetNextValueWithKey', 'ATLCOLL/ATL::CRBMultiMap::GetNextWithKey', 'ATLCOLL/ATL::CRBMultiMap::Insert', 'ATLCOLL/ATL::CRBMultiMap::RemoveKey']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

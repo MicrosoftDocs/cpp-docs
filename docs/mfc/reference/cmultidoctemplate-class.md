@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMultiDocTemplate"
+f1_keywords: ['CMultiDocTemplate', 'AFXWIN/CMultiDocTemplate', 'AFXWIN/CMultiDocTemplate::CMultiDocTemplate']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

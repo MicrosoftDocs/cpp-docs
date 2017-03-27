@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxanimationcontroller/CAnimationVariableIntegerChangeHandler"
-  - "CAnimationVariableIntegerChangeHandler"
+f1_keywords: ['CAnimationVariableIntegerChangeHandler', 'AFXANIMATIONCONTROLLER/CAnimationVariableIntegerChangeHandler', 'AFXANIMATIONCONTROLLER/CAnimationVariableIntegerChangeHandler::CAnimationVariableIntegerChangeHandler', 'AFXANIMATIONCONTROLLER/CAnimationVariableIntegerChangeHandler::CreateInstance', 'AFXANIMATIONCONTROLLER/CAnimationVariableIntegerChangeHandler::OnIntegerValueChanged', 'AFXANIMATIONCONTROLLER/CAnimationVariableIntegerChangeHandler::SetAnimationController']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

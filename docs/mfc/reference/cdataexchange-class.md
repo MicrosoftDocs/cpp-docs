@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDataExchange"
+f1_keywords: ['CDataExchange', 'AFXWIN/CDataExchange', 'AFXWIN/CDataExchange::CDataExchange', 'AFXWIN/CDataExchange::Fail', 'AFXWIN/CDataExchange::PrepareCtrl', 'AFXWIN/CDataExchange::PrepareEditCtrl', 'AFXWIN/CDataExchange::PrepareOleCtrl', 'AFXWIN/CDataExchange::m_bSaveAndValidate', 'AFXWIN/CDataExchange::m_pDlgWnd']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

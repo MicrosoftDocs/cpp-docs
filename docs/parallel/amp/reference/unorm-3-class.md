@@ -127,54 +127,54 @@ class unorm_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|unorm_3::get_x Method||  
-|unorm_3::get_xy Method||  
-|unorm_3::get_xyz Method||  
-|unorm_3::get_xz Method||  
-|unorm_3::get_xzy Method||  
-|unorm_3::get_y Method||  
-|unorm_3::get_yx Method||  
-|unorm_3::get_yxz Method||  
-|unorm_3::get_yz Method||  
-|unorm_3::get_yzx Method||  
-|unorm_3::get_z Method||  
-|unorm_3::get_zx Method||  
-|unorm_3::get_zxy Method||  
-|unorm_3::get_zy Method||  
-|unorm_3::get_zyx Method||  
-|Unorm_3::ref_b Method||  
-|Unorm_3::ref_g Method||  
-|Unorm_3::ref_r Method||  
-|Unorm_3::ref_x Method||  
-|Unorm_3::ref_y Method||  
-|Unorm_3::ref_z Method||  
-|unorm_3::set_x Method||  
-|unorm_3::set_xy Method||  
-|unorm_3::set_xyz Method||  
-|unorm_3::set_xz Method||  
-|unorm_3::set_xzy Method||  
-|unorm_3::set_y Method||  
-|unorm_3::set_yx Method||  
-|unorm_3::set_yxz Method||  
-|unorm_3::set_yz Method||  
-|unorm_3::set_yzx Method||  
-|unorm_3::set_z Method||  
-|unorm_3::set_zx Method||  
-|unorm_3::set_zxy Method||  
-|unorm_3::set_zy Method||  
-|unorm_3::set_zyx Method||  
+|unorm_3::get_x||  
+|unorm_3::get_xy||  
+|unorm_3::get_xyz||  
+|unorm_3::get_xz||  
+|unorm_3::get_xzy||  
+|unorm_3::get_y||  
+|unorm_3::get_yx||  
+|unorm_3::get_yxz||  
+|unorm_3::get_yz||  
+|unorm_3::get_yzx||  
+|unorm_3::get_z||  
+|unorm_3::get_zx||  
+|unorm_3::get_zxy||  
+|unorm_3::get_zy||  
+|unorm_3::get_zyx||  
+|Unorm_3::ref_b||  
+|Unorm_3::ref_g||  
+|Unorm_3::ref_r||  
+|Unorm_3::ref_x||  
+|Unorm_3::ref_y||  
+|Unorm_3::ref_z||  
+|unorm_3::set_x||  
+|unorm_3::set_xy||  
+|unorm_3::set_xyz||  
+|unorm_3::set_xz||  
+|unorm_3::set_xzy||  
+|unorm_3::set_y||  
+|unorm_3::set_yx||  
+|unorm_3::set_yxz||  
+|unorm_3::set_yz||  
+|unorm_3::set_yzx||  
+|unorm_3::set_z||  
+|unorm_3::set_zx||  
+|unorm_3::set_zxy||  
+|unorm_3::set_zy||  
+|unorm_3::set_zyx||  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|unorm_3::operator-- Operator||  
-|unorm_3::operator*= Operator||  
-|unorm_3::operator/= Operator||  
-|unorm_3::operator++ Operator||  
-|unorm_3::operator+= Operator||  
-|unorm_3::operator= Operator||  
-|unorm_3::operator-= Operator||  
+|unorm_3::operator--||  
+|unorm_3::operator*=||  
+|unorm_3::operator/=||  
+|unorm_3::operator++||  
+|unorm_3::operator+=||  
+|unorm_3::operator=||  
+|unorm_3::operator-=||  
   
 ### Public Constants  
   
@@ -186,36 +186,36 @@ class unorm_3;
   
 |Name|Description|  
 |----------|-----------------|  
-|unorm_3::b Data Member||  
-|unorm_3::bg Data Member||  
-|unorm_3::bgr Data Member||  
-|unorm_3::br Data Member||  
-|unorm_3::brg Data Member||  
-|unorm_3::g Data Member||  
-|unorm_3::gb Data Member||  
-|unorm_3::gbr Data Member||  
-|unorm_3::gr Data Member||  
-|unorm_3::grb Data Member||  
-|unorm_3::r Data Member||  
-|unorm_3::rb Data Member||  
-|unorm_3::rbg Data Member||  
-|unorm_3::rg Data Member||  
-|unorm_3::rgb Data Member||  
-|unorm_3::x Data Member||  
-|unorm_3::xy Data Member||  
-|unorm_3::xyz Data Member||  
-|unorm_3::xz Data Member||  
-|unorm_3::xzy Data Member||  
-|unorm_3::y Data Member||  
-|unorm_3::yx Data Member||  
-|unorm_3::yxz Data Member||  
-|unorm_3::yz Data Member||  
-|unorm_3::yzx Data Member||  
-|unorm_3::z Data Member||  
-|unorm_3::zx Data Member||  
-|unorm_3::zxy Data Member||  
-|unorm_3::zy Data Member||  
-|unorm_3::zyx Data Member||  
+|unorm_3::b||  
+|unorm_3::bg||  
+|unorm_3::bgr||  
+|unorm_3::br||  
+|unorm_3::brg||  
+|unorm_3::g||  
+|unorm_3::gb||  
+|unorm_3::gbr||  
+|unorm_3::gr||  
+|unorm_3::grb||  
+|unorm_3::r||  
+|unorm_3::rb||  
+|unorm_3::rbg||  
+|unorm_3::rg||  
+|unorm_3::rgb||  
+|unorm_3::x||  
+|unorm_3::xy||  
+|unorm_3::xyz||  
+|unorm_3::xz||  
+|unorm_3::xzy||  
+|unorm_3::y||  
+|unorm_3::yx||  
+|unorm_3::yxz||  
+|unorm_3::yz||  
+|unorm_3::yzx||  
+|unorm_3::z||  
+|unorm_3::zx||  
+|unorm_3::zxy||  
+|unorm_3::zy||  
+|unorm_3::zyx||  
   
 ## Inheritance Hierarchy  
  `unorm_3`  

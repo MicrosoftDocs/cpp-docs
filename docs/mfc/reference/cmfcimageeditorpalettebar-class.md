@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCImageEditorPaletteBar"
+f1_keywords: ['CMFCImageEditorPaletteBar', 'AFXIMAGEEDITORDIALOG/CMFCImageEditorPaletteBar', 'AFXIMAGEEDITORDIALOG/CMFCImageEditorPaletteBar::GetRowHeight', 'AFXIMAGEEDITORDIALOG/CMFCImageEditorPaletteBar::IsButtonExtraSizeAvailable']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CContainedWindow"
-  - "CContainedWindowT"
-  - "ATL.CContainedWindowT"
+f1_keywords: ['CContainedWindowT', 'ATLWIN/ATL::CContainedWindowT', 'ATLWIN/ATL::CContainedWindowT::CContainedWindowT', 'ATLWIN/ATL::CContainedWindowT::Create', 'ATLWIN/ATL::CContainedWindowT::DefWindowProc', 'ATLWIN/ATL::CContainedWindowT::GetCurrentMessage', 'ATLWIN/ATL::CContainedWindowT::RegisterWndSuperclass', 'ATLWIN/ATL::CContainedWindowT::SubclassWindow', 'ATLWIN/ATL::CContainedWindowT::SwitchMessageMap', 'ATLWIN/ATL::CContainedWindowT::UnsubclassWindow', 'ATLWIN/ATL::CContainedWindowT::WindowProc', 'ATLWIN/ATL::CContainedWindowT::m_dwMsgMapID', 'ATLWIN/ATL::CContainedWindowT::m_lpszClassName', 'ATLWIN/ATL::CContainedWindowT::m_pfnSuperWindowProc', 'ATLWIN/ATL::CContainedWindowT::m_pObject']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

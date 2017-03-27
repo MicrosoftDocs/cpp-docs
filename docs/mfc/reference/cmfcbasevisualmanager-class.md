@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCBaseVisualManager"
-  - "CMFCBaseVisualManager.~CMFCBaseVisualManager"
-  - "~CMFCBaseVisualManager"
-  - "CMFCBaseVisualManager::~CMFCBaseVisualManager"
+f1_keywords: ['CMFCBaseVisualManager', 'AFXVISUALMANAGER/CMFCBaseVisualManager', 'AFXVISUALMANAGER/CMFCBaseVisualManager::CMFCBaseVisualManager', 'AFXVISUALMANAGER/CMFCBaseVisualManager::DrawCheckBox', 'AFXVISUALMANAGER/CMFCBaseVisualManager::DrawComboBorder', 'AFXVISUALMANAGER/CMFCBaseVisualManager::DrawComboDropButton', 'AFXVISUALMANAGER/CMFCBaseVisualManager::DrawPushButton', 'AFXVISUALMANAGER/CMFCBaseVisualManager::DrawRadioButton', 'AFXVISUALMANAGER/CMFCBaseVisualManager::DrawStatusBarProgress', 'AFXVISUALMANAGER/CMFCBaseVisualManager::FillReBarPane', 'AFXVISUALMANAGER/CMFCBaseVisualManager::GetStandardWindowsTheme', 'AFXVISUALMANAGER/CMFCBaseVisualManager::CleanUpThemes', 'AFXVISUALMANAGER/CMFCBaseVisualManager::UpdateSystemColors']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

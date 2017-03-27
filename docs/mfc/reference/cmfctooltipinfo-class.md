@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCToolTipInfo"
+f1_keywords: ['CMFCToolTipInfo', 'AFXTOOLTIPCTRL/CMFCToolTipInfo', 'AFXTOOLTIPCTRL/CMFCToolTipInfo::m_bBalloonTooltip', 'AFXTOOLTIPCTRL/CMFCToolTipInfo::m_bBoldLabel', 'AFXTOOLTIPCTRL/CMFCToolTipInfo::m_bDrawDescription', 'AFXTOOLTIPCTRL/CMFCToolTipInfo::m_bDrawIcon', 'AFXTOOLTIPCTRL/CMFCToolTipInfo::m_bDrawSeparator', 'AFXTOOLTIPCTRL/CMFCToolTipInfo::m_bRoundedCorners', 'AFXTOOLTIPCTRL/CMFCToolTipInfo::m_bVislManagerTheme', 'AFXTOOLTIPCTRL/CMFCToolTipInfo::m_clrBorder', 'AFXTOOLTIPCTRL/CMFCToolTipInfo::m_clrFill', 'AFXTOOLTIPCTRL/CMFCToolTipInfo::m_clrFillGradient', 'AFXTOOLTIPCTRL/CMFCToolTipInfo::m_clrText', 'AFXTOOLTIPCTRL/CMFCToolTipInfo::m_nGradientAngle', 'AFXTOOLTIPCTRL/CMFCToolTipInfo::m_nMaxDescrWidth']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

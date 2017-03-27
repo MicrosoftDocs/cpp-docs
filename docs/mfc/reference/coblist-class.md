@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CObList"
+f1_keywords: ['CObList', 'AFXCOLL/CObList', 'AFXCOLL/CObList::CObList', 'AFXCOLL/CObList::AddHead', 'AFXCOLL/CObList::AddTail', 'AFXCOLL/CObList::Find', 'AFXCOLL/CObList::FindIndex', 'AFXCOLL/CObList::GetAt', 'AFXCOLL/CObList::GetCount', 'AFXCOLL/CObList::GetHead', 'AFXCOLL/CObList::GetHeadPosition', 'AFXCOLL/CObList::GetNext', 'AFXCOLL/CObList::GetPrev', 'AFXCOLL/CObList::GetSize', 'AFXCOLL/CObList::GetTail', 'AFXCOLL/CObList::GetTailPosition', 'AFXCOLL/CObList::InsertAfter', 'AFXCOLL/CObList::InsertBefore', 'AFXCOLL/CObList::IsEmpty', 'AFXCOLL/CObList::RemoveAll', 'AFXCOLL/CObList::RemoveAt', 'AFXCOLL/CObList::RemoveHead', 'AFXCOLL/CObList::RemoveTail', 'AFXCOLL/CObList::SetAt']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

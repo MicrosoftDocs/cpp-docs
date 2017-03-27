@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CComQIPtr"
-  - "ATL::CComQIPtr"
-  - "CComQIPtr"
+f1_keywords: ['CComQIPtr', 'ATLCOMCLI/ATL::CComQIPtr', 'ATLCOMCLI/ATL::CComQIPtr::CComQIPtr']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

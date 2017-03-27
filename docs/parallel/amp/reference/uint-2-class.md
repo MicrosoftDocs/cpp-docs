@@ -84,37 +84,37 @@ class uint_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|uint_2::get_x Method||  
-|uint_2::get_xy Method||  
-|uint_2::get_y Method||  
-|uint_2::get_yx Method||  
+|uint_2::get_x||  
+|uint_2::get_xy||  
+|uint_2::get_y||  
+|uint_2::get_yx||  
 |uint_2::ref_g_Method||  
 |uint_2::ref_r_Method||  
 |uint_2::ref_x_Method||  
 |uint_2::ref_y_Method||  
-|uint_2::set_x Method||  
-|uint_2::set_xy Method||  
-|uint_2::set_y Method||  
-|uint_2::set_yx Method||  
+|uint_2::set_x||  
+|uint_2::set_xy||  
+|uint_2::set_y||  
+|uint_2::set_yx||  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|uint_2::operator-- Operator||  
-|uint_2::operator%= Operator||  
-|uint_2::operator&= Operator||  
-|uint_2::operator*= Operator||  
-|uint_2::operator/= Operator||  
-|uint_2::operator^= Operator||  
-|uint_2::operator&#124;= Operator||  
-|uint_2::operator~ Operator||  
-|uint_2::operator++ Operator||  
-|uint_2::operator+= Operator||  
-|uint_2::operator<\<= Operator||  
-|uint_2::operator= Operator||  
-|uint_2::operator-= Operator||  
-|uint_2::operator>>= Operator||  
+|uint_2::operator--||  
+|uint_2::operator%=||  
+|uint_2::operator&=||  
+|uint_2::operator*=||  
+|uint_2::operator/=||  
+|uint_2::operator^=||  
+|uint_2::operator&#124;=||  
+|uint_2::operator~||  
+|uint_2::operator++||  
+|uint_2::operator+=||  
+|uint_2::operator<\<=||  
+|uint_2::operator=||  
+|uint_2::operator-=||  
+|uint_2::operator>>=||  
   
 ### Public Constants  
   
@@ -126,14 +126,14 @@ class uint_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|uint_2::g Data Member||  
-|uint_2::gr Data Member||  
-|uint_2::r Data Member||  
-|uint_2::rg Data Member||  
-|uint_2::x Data Member||  
-|uint_2::xy Data Member||  
-|uint_2::y Data Member||  
-|uint_2::yx Data Member||  
+|uint_2::g||  
+|uint_2::gr||  
+|uint_2::r||  
+|uint_2::rg||  
+|uint_2::x||  
+|uint_2::xy||  
+|uint_2::y||  
+|uint_2::yx||  
   
 ## Inheritance Hierarchy  
  `uint_2`  

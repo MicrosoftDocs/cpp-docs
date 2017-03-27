@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCDropDownToolBar"
+f1_keywords: ['CMFCDropDownToolBar', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::AllowShowOnPaneMenu', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::LoadBitmap', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::LoadToolBar', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnLButtonUp', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnMouseMove', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnSendCommand', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnUpdateCmdUI']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

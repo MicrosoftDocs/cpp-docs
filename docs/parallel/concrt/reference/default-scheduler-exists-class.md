@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::default_scheduler_exists"
+f1_keywords: ['default_scheduler_exists', 'CONCRT/concurrency::default_scheduler_exists', 'CONCRT/concurrency::default_scheduler_exists::default_scheduler_exists']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,7 +48,7 @@ class default_scheduler_exists : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[default_scheduler_exists Constructor](#ctor)|Overloaded. Constructs a `default_scheduler_exists` object.|  
+|[default_scheduler_exists](#ctor)|Overloaded. Constructs a `default_scheduler_exists` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  

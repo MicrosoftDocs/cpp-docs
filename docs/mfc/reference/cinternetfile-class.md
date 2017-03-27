@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CInternetFile"
+f1_keywords: ['CInternetFile', 'AFXINET/CInternetFile', 'AFXINET/CInternetFile::CInternetFile', 'AFXINET/CInternetFile::Abort', 'AFXINET/CInternetFile::Close', 'AFXINET/CInternetFile::Flush', 'AFXINET/CInternetFile::GetLength', 'AFXINET/CInternetFile::Read', 'AFXINET/CInternetFile::ReadString', 'AFXINET/CInternetFile::Seek', 'AFXINET/CInternetFile::SetReadBufferSize', 'AFXINET/CInternetFile::SetWriteBufferSize', 'AFXINET/CInternetFile::Write', 'AFXINET/CInternetFile::WriteString', 'AFXINET/CInternetFile::m_hFile']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

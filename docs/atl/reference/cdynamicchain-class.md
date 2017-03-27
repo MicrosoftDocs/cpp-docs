@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CDynamicChain"
-  - "ATL.CDynamicChain"
-  - "CDynamicChain"
+f1_keywords: ['CDynamicChain', 'ATLWIN/ATL::CDynamicChain', 'ATLWIN/ATL::CDynamicChain::CDynamicChain', 'ATLWIN/ATL::CDynamicChain::CallChain', 'ATLWIN/ATL::CDynamicChain::RemoveChainEntry', 'ATLWIN/ATL::CDynamicChain::SetChainEntry']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

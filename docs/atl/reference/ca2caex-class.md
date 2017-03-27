@@ -8,13 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CA2CAEX"
-  - "ATL.CA2CAEX<t_nBufferLength>"
-  - "ATLCONV/CA2CAEX"
-  - "ATL::CA2CAEX<t_nBufferLength>"
-  - "ATL::CA2CAEX"
-  - "CA2CAEX"
+f1_keywords: ['CA2CAEX', 'ATLCONV/ATL::CA2CAEX', 'ATLCONV/ATL::CA2CAEX::CA2CAEX', 'ATLCONV/ATL::CA2CAEX::m_psz']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

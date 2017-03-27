@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concrtrm/concurrency::ITopologyExecutionResource"
+f1_keywords: ['ITopologyExecutionResource', 'CONCRTRM/concurrency::ITopologyExecutionResource', 'CONCRTRM/concurrency::ITopologyExecutionResource::ITopologyExecutionResource::GetId', 'CONCRTRM/concurrency::ITopologyExecutionResource::ITopologyExecutionResource::GetNext']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -49,8 +48,8 @@ struct ITopologyExecutionResource;
   
 |Name|Description|  
 |----------|-----------------|  
-|[ITopologyExecutionResource::GetId Method](#getid)|Returns the Resource Manager's unique identifier for this execution resource.|  
-|[ITopologyExecutionResource::GetNext Method](#getnext)|Returns an interface to the next execution resource in enumeration order.|  
+|[ITopologyExecutionResource::GetId](#getid)|Returns the Resource Manager's unique identifier for this execution resource.|  
+|[ITopologyExecutionResource::GetNext](#getnext)|Returns an interface to the next execution resource in enumeration order.|  
   
 ## Remarks  
  This interface is typically utilized to walk the topology of the system as observed by the Resource Manager.  

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ppltasks/concurrency::task_continuation_context"
+f1_keywords: ['task_continuation_context', 'PPLTASKS/concurrency::task_continuation_context', 'PPLTASKS/concurrency::task_continuation_context::get_current_winrt_context', 'PPLTASKS/concurrency::task_continuation_context::use_arbitrary', 'PPLTASKS/concurrency::task_continuation_context::use_current', 'PPLTASKS/concurrency::task_continuation_context::use_default', 'PPLTASKS/concurrency::task_continuation_context::use_synchronous_execution']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -50,11 +49,11 @@ class task_continuation_context : public details::_ContextCallback;
   
 |Name|Description|  
 |----------|-----------------|  
-|[get_current_winrt_context Method](#get_current_winrt_context)|Returns a task continuation context object that represents the current winrt thread context.|  
-|[use_arbitrary Method](#use_arbitrary)|Creates a task continuation context which allows the Runtime to choose the execution context for a continuation.|  
-|[use_current Method](#use_current)|Returns a task continuation context object that represents the current execution context.|  
-|[use_default Method](#use_default)|Creates the default task continuation context.|  
-|[use_synchronous_execution Method](#use_synchronous_execution)|Returns a task continuation context object that represents the synchronous execution context.|  
+|[get_current_winrt_context](#get_current_winrt_context)|Returns a task continuation context object that represents the current winrt thread context.|  
+|[use_arbitrary](#use_arbitrary)|Creates a task continuation context which allows the Runtime to choose the execution context for a continuation.|  
+|[use_current](#use_current)|Returns a task continuation context object that represents the current execution context.|  
+|[use_default](#use_default)|Creates the default task continuation context.|  
+|[use_synchronous_execution](#use_synchronous_execution)|Returns a task continuation context object that represents the synchronous execution context.|  
   
 ## Inheritance Hierarchy  
  `_ContextCallback`  

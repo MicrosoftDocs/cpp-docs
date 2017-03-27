@@ -8,8 +8,6 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCStandardColorsPropertyPage"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
