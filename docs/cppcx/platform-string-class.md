@@ -8,8 +8,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "Platform/Platform::String"
+f1_keywords: ['VCCORLIB/Platform::String::String', 'VCCORLIB/Platform::String::Begin', 'VCCORLIB/Platform::String::CompareOrdinal', 'VCCORLIB/Platform::String::Concat', 'VCCORLIB/Platform::String::Data', 'VCCORLIB/Platform::String::Dispose', 'VCCORLIB/Platform::String::End', 'VCCORLIB/Platform::String::Equals', 'VCCORLIB/Platform::String::GetHashCode', 'VCCORLIB/Platform::String::IsEmpty', 'VCCORLIB/Platform::String::IsFastPass', 'VCCORLIB/Platform::String::Length', 'VCCORLIB/Platform::String::ToString']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -50,7 +49,7 @@ public ref class String sealed : Object,
   
 |Member|Description|  
 |------------|-----------------|  
-|[String::String Constructor](#ctor)|Initializes a new instance of the String class.|  
+|[String::String](#ctor)|Initializes a new instance of the String class.|  
   
  **Methods**  
   
@@ -58,20 +57,20 @@ public ref class String sealed : Object,
   
 |Method|Description|  
 |------------|-----------------|  
-|[String::Begin Method](#begin)|Returns a pointer to the beginning of the current string.|  
-|[String::CompareOrdinal Method](#compareordinal)|Compares two `String` objects by evaluating the numeric values of the corresponding characters in the two string values represented by the objects.|  
-|[String::Concat Method](#concat)|Concatenates the values of two String objects.|  
-|[String::Data Method](#data)|Returns a pointer to the beginning of the current string.|  
-|[String::Dispose Method](#dispose)|Frees or releases resources.|  
-|[String::End Method](#end)|Returns a pointer past the end of the current string.|  
-|[String::Equals Method](#equals)|Indicates whether the specified object is equal to the current object.|  
-|[String::GetHashCode Method](#gethashcode)|Returns the hash code for this instance.|  
-|[String::IsEmpty Method](#isempty)|Indicates whether the current String object is empty.|  
-|[String::IsFastPass Method](#isfastpass)|Indicates whether the current String object is is participating in a *fast pass* operation. In a fast pass operation, reference counting is suspended.|  
-|[String::Length Method](#length)|Retrieves the length of the current String object.|  
-|[String::ToString Method](#tostring)|Returns a String object whose value is the same as the current string.|  
+|[String::Begin](#begin)|Returns a pointer to the beginning of the current string.|  
+|[String::CompareOrdinal](#compareordinal)|Compares two `String` objects by evaluating the numeric values of the corresponding characters in the two string values represented by the objects.|  
+|[String::Concat](#concat)|Concatenates the values of two String objects.|  
+|[String::Data](#data)|Returns a pointer to the beginning of the current string.|  
+|[String::Dispose](#dispose)|Frees or releases resources.|  
+|[String::End](#end)|Returns a pointer past the end of the current string.|  
+|[String::Equals](#equals)|Indicates whether the specified object is equal to the current object.|  
+|[String::GetHashCode](#gethashcode)|Returns the hash code for this instance.|  
+|[String::IsEmpty](#isempty)|Indicates whether the current String object is empty.|  
+|[String::IsFastPass](#isfastpass)|Indicates whether the current String object is is participating in a *fast pass* operation. In a fast pass operation, reference counting is suspended.|  
+|[String::Length](#length)|Retrieves the length of the current String object.|  
+|[String::ToString](#tostring)|Returns a String object whose value is the same as the current string.|  
   
- **Properties**  
+ **Operators**  
   
  The String class has the following operators.  
   
@@ -227,7 +226,7 @@ bool String::Equals(String^ str);
  `true` if `str` is equal to the current object; otherwise, `false`.  
   
 ### Remarks  
- This method is equivalent to the [String::CompareOrdinal Method](#compareordinal). In the first overload, it is expected the `str` parameter can be cast to a String^ object.  
+ This method is equivalent to the [String::CompareOrdinal](#compareordinal). In the first overload, it is expected the `str` parameter can be cast to a String^ object.  
   
 
 
@@ -297,7 +296,7 @@ String^ str = "Hello";
 int len = str->Length(); //len = 5  
 ```  
   
- The character array returned by the [String::Data Method](#data) has one additional character, which is the terminating NULL or ‘\0’. This character is also two bytes long.  
+ The character array returned by the [String::Data](#data) has one additional character, which is the terminating NULL or ‘\0’. This character is also two bytes long.  
   
 
 
@@ -344,7 +343,7 @@ bool String::operator==( String^ str1, String^ str2)
  `true` if the contents of `str1` are equal to `str2`; otherwise, `false`.  
   
 ### Remarks  
- This operator is equivalent to [String::CompareOrdinal Method](#compareordinal).  
+ This operator is equivalent to [String::CompareOrdinal](#compareordinal).  
   
 
 
@@ -372,7 +371,7 @@ bool String::operator>( String^ str1, String^ str2)
   
 
 
-## <a name="operator-greater-than-or-equal"></a> String::operator&gt;= 
+## <a name="operator-greater-than-or-equals"></a> String::operator&gt;= 
 Indicates whether the value of one String object is greater than or equal to the value of a second String object.  
   
 ### Syntax  

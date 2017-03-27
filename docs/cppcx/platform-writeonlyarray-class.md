@@ -5,11 +5,10 @@ ms.date: "12/30/2016"
 ms.prod: "windows-client-threshold"  
 ms.technology: ""
 ms.reviewer: ""
-ms.suite: ""
+s.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "Platform/Platform::WriteOnlyArray"
+f1_keywords: ['VCCORLIB/Platform::WriteOnlyArray::begin', 'VCCORLIB/Platform::WriteOnlyArray::Data', 'VCCORLIB/Platform::WriteOnlyArray::end', 'VCCORLIB/Platform::WriteOnlyArray::FastPass', 'VCCORLIB/Platform::WriteOnlyArray::Length', 'VCCORLIB/Platform::WriteOnlyArray::set']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -38,12 +37,14 @@ private ref class WriteOnlyArray<T, 1>
   
 |Name|Description|  
 |----------|-----------------|  
-|[WriteOnlyArray::begin Method](#begin)|An iterator that points to the first element of the array.|  
-|[WriteOnlyArray::Data Property](#data)|A pointer to the data buffer.|  
-|[WriteOnlyArray::end Method](#end)|An iterator that points to one past the last element in the array.|  
-|[WriteOnlyArray::FastPass Property](#fastpass)|Indicates whether the array can use the FastPass mechanism, which is an optimization transparently performed by the system. Don’t use this in your code|  
-|[WriteOnlyArray::Length Property](#length)|Returns the number of elements in the array.|  
-|[WriteOnlyArray::set Function](#set.md)|Sets the specified element to the specified value.|  
+
+|[WriteOnlyArray::begin](#begin)|An iterator that points to the first element of the array.|  
+|[WriteOnlyArray::Data](#data)|A pointer to the data buffer.|  
+|[WriteOnlyArray::end](#end)|An iterator that points to one past the last element in the array.|  
+|[WriteOnlyArray::FastPass](#fastpass)|Indicates whether the array can use the FastPass mechanism, which is an optimization transparently performed by the system. Don’t use this in your code|  
+|[WriteOnlyArray::Length](#length)|Returns the number of elements in the array.|  
+|[WriteOnlyArray::set](#set)|Sets the specified element to the specified value.|  
+
   
 ## Inheritance Hierarchy  
  `WriteOnlyArray`  

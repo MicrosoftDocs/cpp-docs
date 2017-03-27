@@ -8,8 +8,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "Platform/Platform::StringReference"
+f1_keywords: ['VCCORLIB/Platform::StringReference::StringReference', 'VCCORLIB/Platform::StringReference::Data', 'VCCORLIB/Platform::StringReference::Length', 'VCCORLIB/Platform::StringReference::GetHSTRING', 'VCCORLIB/Platform::StringReference::GetString']
 dev_langs: 
   - "C++"
 ms.assetid: 2d09c7ec-0f16-458e-83ed-7225a1b9221e
@@ -35,22 +34,22 @@ class StringReference
   
 |Name|Description|  
 |----------|-----------------|  
-|[StringReference::StringReference Constructor](#ctor)|Two constructors for creating instances of `StringReference`.|  
+|[StringReference::StringReference](#ctor)|Two constructors for creating instances of `StringReference`.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[StringReference::Data Method](#data)|Returns the string data as an array of char16 values.|  
-|[StringReference::Length Method](#length)|Returns the number of characters in the string.|  
-|[StringReference::GetHSTRING Method](#gethstring)|Returns the string data as an HSTRING.|  
-|[StringReference::GetString Method](#getstring)|Returns the string data as a `Platform::String^`.|  
+|[StringReference::Data](#data)|Returns the string data as an array of char16 values.|  
+|[StringReference::Length](#length)|Returns the number of characters in the string.|  
+|[StringReference::GetHSTRING](#gethstring)|Returns the string data as an HSTRING.|  
+|[StringReference::GetString](#getstring)|Returns the string data as a `Platform::String^`.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[StringReference::operator=](#operator-equals)|Assigns a `StringReference` to a new `StringReference` instance.|  
+|[StringReference::operator=](#operator-assign)|Assigns a `StringReference` to a new `StringReference` instance.|  
 |[StringReference::operator()](#operator-call)|Converts a `StringReference` to a `Platform::String^`.|  
   
 ### Requirements  
@@ -122,7 +121,7 @@ unsigned int Length() const
   
 
 
-## <a name="operator-equals"></a>  StringReference::operator= Operator
+## <a name="operator-assign"></a>  StringReference::operator= Operator
 Assigns the specified object to the current `StringReference` object.  
   
 ### Syntax  

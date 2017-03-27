@@ -63,27 +63,27 @@ ref class Map sealed;
   
 |Name|Description|  
 |----------|-----------------|  
-|[UnorderedMap::UnorderedMap Constructor](#ctor)|Initializes a new instance of the Map class.|  
+|[UnorderedMap::UnorderedMap](#ctor)|Initializes a new instance of the Map class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[UnorderedMap::Clear Method](#clear)|Removes all key-value pairs from the current Map object.|  
-|[UnorderedMap::First Method](#first)|Returns an iterator that specifies the first element in the map.|  
-|[UnorderedMap::GetView Method](#getview)|Returns a read-only view of the current Map; that is, a Platform::Collections::UnorderedMapView Class.|  
-|[UnorderedMap::HasKey Method](#haskey)|Determines whether the current Map contains the specified key.|  
-|[UnorderedMap::Insert Method](#insert)|Adds the specified key-value pair to the current Map object.|  
-|[UnorderedMap::Lookup Method](#lookup)|Retrieves the element at the specified key in the current Map object.|  
-|[UnorderedMap::Remove Method](#remove)|Deletes the specified key-value pair from the current Map object.|  
-|[UnorderedMap::Size Method](#size)|Returns the number of elements in the current Map object.|  
+|[UnorderedMap::Clear](#clear)|Removes all key-value pairs from the current Map object.|  
+|[UnorderedMap::First](#first)|Returns an iterator that specifies the first element in the map.|  
+|[UnorderedMap::GetView](#getview)|Returns a read-only view of the current Map; that is, a Platform::Collections::UnorderedMapView Class.|  
+|[UnorderedMap::HasKey](#haskey)|Determines whether the current Map contains the specified key.|  
+|[UnorderedMap::Insert](#insert)|Adds the specified key-value pair to the current Map object.|  
+|[UnorderedMap::Lookup](#lookup)|Retrieves the element at the specified key in the current Map object.|  
+|[UnorderedMap::Remove](#remove)|Deletes the specified key-value pair from the current Map object.|  
+|[UnorderedMap::Size](#size)|Returns the number of elements in the current Map object.|  
   
 ### Events  
   
 |||  
 |-|-|  
 |Name|Description|  
-|[Map::MapChanged Event](#mapchanged) `event`|Occurs when the Map changes.|  
+|[Map::MapChanged](#mapchanged) `event`|Occurs when the Map changes.|  
   
 ## Inheritance Hierarchy  
  `UnorderedMap`  

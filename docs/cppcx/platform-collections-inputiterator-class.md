@@ -8,8 +8,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "collection/Platform::Collections::InputIterator"
+f1_keywords: ['COLLECTION/Platform::Collections::InputIterator::InputIterator']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -50,7 +49,7 @@ class InputIterator;
   
 |Name|Description|  
 |----------|-----------------|  
-|[InputIterator::InputIterator Constructor](#ctor)|Initializes a new instance of the InputIterator class.|  
+|[InputIterator::InputIterator](#ctor)|Initializes a new instance of the InputIterator class.|  
   
 ### Public Operators  
   

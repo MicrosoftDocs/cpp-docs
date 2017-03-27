@@ -168,7 +168,7 @@ description: Learn how to use C++ to develop applications, services, and tools f
                                 </a>
                             </li>
                             <li>
-                                <a href="https://microsoft.github.io/PTVS/">
+                                <a href="/visualstudio/python/cpp-and-python">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
