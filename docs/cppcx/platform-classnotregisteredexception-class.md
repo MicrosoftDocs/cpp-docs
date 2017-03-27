@@ -9,8 +9,8 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
-  - "Platform/Platform::ClassNotRegisteredException::ClassNotRegisteredException"
-  - "Platform/Platform::ClassNotRegisteredException"
+  - "VCCORLIB/Platform::ClassNotRegisteredException::ClassNotRegisteredException"
+  - "VCCORLIB/Platform::ClassNotRegisteredException"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

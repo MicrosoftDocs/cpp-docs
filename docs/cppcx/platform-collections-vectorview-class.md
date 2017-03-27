@@ -8,8 +8,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "collection/Platform::Collections::VectorView"
+f1_keywords: ['COLLECTION/Platform::Collections::VectorView::VectorView', 'COLLECTION/Platform::Collections::VectorView::First', 'COLLECTION/Platform::Collections::VectorView::GetAt', 'COLLECTION/Platform::Collections::VectorView::GetMany', 'COLLECTION/Platform::Collections::VectorView::IndexOf', 'COLLECTION/Platform::Collections::VectorView::Size']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -46,17 +45,17 @@ template <typename T, typename E>
   
 |Name|Description|  
 |----------|-----------------|  
-|[VectorView::VectorView Constructor](#ctor)|Initializes a new instance of the VectorView class.|  
+|[VectorView::VectorView](#ctor)|Initializes a new instance of the VectorView class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[VectorView::First Method](#first)|Returns an iterator that specifies the first element in the VectorView.|  
-|[VectorView::GetAt Method](#getat)|Retrieves the element of the current VectorView that is indicated by the specified index.|  
-|[VectorView::GetMany Method](#getmany)|Retrieves a sequence of items from the current VectorView, starting at the specified index.|  
-|[VectorView::IndexOf Method](#indexof)|Searches for the specified item in the current VectorView, and if found, returns the index of the item.|  
-|[VectorView::Size Method](#size)|Returns the number of elements in the current VectorView object.|  
+|[VectorView::First](#first)|Returns an iterator that specifies the first element in the VectorView.|  
+|[VectorView::GetAt](#getat)|Retrieves the element of the current VectorView that is indicated by the specified index.|  
+|[VectorView::GetMany](#getmany)|Retrieves a sequence of items from the current VectorView, starting at the specified index.|  
+|[VectorView::IndexOf](#indexof)|Searches for the specified item in the current VectorView, and if found, returns the index of the item.|  
+|[VectorView::Size](#size)|Returns the number of elements in the current VectorView object.|  
   
 ## Inheritance Hierarchy  
  `VectorView`  

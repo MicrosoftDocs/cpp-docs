@@ -9,8 +9,8 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
-  - "Platform/Platform::NullReferenceException"
-  - "Platform/Platform::NullReferenceException::NullReferenceException"
+  - "VCCORLIB/Platform::NullReferenceException"
+  - "VCCORLIB/Platform::NullReferenceException::NullReferenceException"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

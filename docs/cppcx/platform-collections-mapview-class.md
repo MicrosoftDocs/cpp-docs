@@ -8,8 +8,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "collection/Platform::Collections::MapView"
+f1_keywords: ['COLLECTION/Platform::Collections::MapView::MapView', 'COLLECTION/Platform::Collections::MapView::First', 'COLLECTION/Platform::Collections::MapView::HasKey', 'COLLECTION/Platform::Collections::MapView::Lookup', 'COLLECTION/Platform::Collections::MapView::Size', 'COLLECTION/Platform::Collections::MapView::Split']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -52,17 +51,17 @@ ref class MapView sealed;
   
 |Name|Description|  
 |----------|-----------------|  
-|[MapView::MapView Constructor](#ctor)|Initializes a new instance of the MapView class.|  
+|[MapView::MapView](#ctor)|Initializes a new instance of the MapView class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[MapView::First Method](#first)|Returns an iterator that is initialized to the first element in the map view.|  
-|[MapView::HasKey Method](#haskey)|Determines whether the current MapView contains the specified key.|  
-|[MapView::Lookup Method](#lookup)|Retrieves the element at the specified key in the current MapView object.|  
-|[MapView::Size Method](#size)|Returns the number of elements in the current MapView object.|  
-|[MapView::Split Method](#split)|Splits an original MapView object into two MapView objects.|  
+|[MapView::First](#first)|Returns an iterator that is initialized to the first element in the map view.|  
+|[MapView::HasKey](#haskey)|Determines whether the current MapView contains the specified key.|  
+|[MapView::Lookup](#lookup)|Retrieves the element at the specified key in the current MapView object.|  
+|[MapView::Size](#size)|Returns the number of elements in the current MapView object.|  
+|[MapView::Split](#split)|Splits an original MapView object into two MapView objects.|  
   
 ## Inheritance Hierarchy  
  `MapView`  

@@ -8,8 +8,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "collection/Platform::Collections::Map"
+f1_keywords: ['COLLECTION/Platform::Collections::Map::Map', 'COLLECTION/Platform::Collections::Map::Clear', 'COLLECTION/Platform::Collections::Map::First', 'COLLECTION/Platform::Collections::Map::GetView', 'COLLECTION/Platform::Collections::Map::HasKey', 'COLLECTION/Platform::Collections::Map::Insert', 'COLLECTION/Platform::Collections::Map::Lookup', 'COLLECTION/Platform::Collections::Map::Remove', 'COLLECTION/Platform::Collections::Map::Size']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -68,27 +67,27 @@ ref class Map sealed;
   
 |Name|Description|  
 |----------|-----------------|  
-|[Map::Map Constructor](#ctor)|Initializes a new instance of the Map class.|  
+|[Map::Map](#ctor)|Initializes a new instance of the Map class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[Map::Clear Method](#clear)|Removes all key-value pairs from the current Map object.|  
-|[Map::First Method](#first)|Returns an iterator that specifies the first element in the map.|  
-|[Map::GetView Method](#getview)|Returns a read-only view of the current Map; that is, a [Platform::Collections::MapView Class](../cppcx/platform-collections-mapview-class.md).|  
-|[Map::HasKey Method](#haskey)|Determines whether the current Map contains the specified key.|  
-|[Map::Insert Method](#insert)|Adds the specified key-value pair to the current Map object.|  
-|[Map::Lookup Method](#lookup)|Retrieves the element at the specified key in the current Map object.|  
-|[Map::Remove Method](#remove)|Deletes the specified key-value pair from the current Map object.|  
-|[Map::Size Method](#size)|Returns the number of elements in the current Map object.|  
+|[Map::Clear](#clear)|Removes all key-value pairs from the current Map object.|  
+|[Map::First](#first)|Returns an iterator that specifies the first element in the map.|  
+|[Map::GetView](#getview)|Returns a read-only view of the current Map; that is, a [Platform::Collections::MapView Class](../cppcx/platform-collections-mapview-class.md).|  
+|[Map::HasKey](#haskey)|Determines whether the current Map contains the specified key.|  
+|[Map::Insert](#insert)|Adds the specified key-value pair to the current Map object.|  
+|[Map::Lookup](#lookup)|Retrieves the element at the specified key in the current Map object.|  
+|[Map::Remove](#remove)|Deletes the specified key-value pair from the current Map object.|  
+|[Map::Size](#size)|Returns the number of elements in the current Map object.|  
   
 ### Events  
   
 |||  
 |-|-|  
 |Name|Description|  
-|[Map::MapChanged Event](#mapchanged-event.md) `event`|Occurs when the Map changes.|  
+|[Map::MapChanged](#mapchanged-event.md) `event`|Occurs when the Map changes.|  
   
 ## Inheritance Hierarchy  
  `Map`  

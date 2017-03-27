@@ -9,7 +9,7 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
-  - "Platform/Platform::Object::GetHashCode"
+  - "VCCORLIB/Platform::Object::GetHashCode"
 dev_langs: 
   - "C++"
 ms.assetid: 58ea60f8-f820-4103-9b9b-b6635ada3fa5

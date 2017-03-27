@@ -8,8 +8,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vccorlib/Platform::Array"
+f1_keywords: ['VCCORLIB/Namespace not found::Platform', 'VCCORLIB/Namespace not found::Platform::Array Constructors', 'VCCORLIB/Namespace not found::Platform::Array::Value']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -48,7 +47,7 @@ private ref class Array<TArg, 1> :
   
 |||  
 |-|-|  
-|[Array::Value Property](#value)|Retrieves a handle to the current array.|  
+|[Array::Value](#value)|Retrieves a handle to the current array.|  
   
 ### Remarks  
  The Array class is sealed and cannot be inherited.  

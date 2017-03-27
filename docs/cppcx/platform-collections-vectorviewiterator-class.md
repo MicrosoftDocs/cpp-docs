@@ -8,8 +8,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "collection/Platform::Collections::VectorViewIterator"
+f1_keywords: ['COLLECTION/Platform::Collections::VectorViewIterator::VectorViewIterator']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -52,7 +51,7 @@ class VectorViewIterator;
   
 |Name|Description|  
 |----------|-----------------|  
-|[VectorViewIterator::VectorViewIterator Constructor](#ctor)|Initializes a new instance of the VectorViewIterator class.|  
+|[VectorViewIterator::VectorViewIterator](#ctor)|Initializes a new instance of the VectorViewIterator class.|  
   
 ### Public Operators  
   

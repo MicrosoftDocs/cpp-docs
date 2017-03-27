@@ -33,13 +33,13 @@ class WeakReference
   
 |Member|Description|  
 |------------|-----------------|  
-|[WeakReference::WeakReference Constructor](#ctor)|Initializes a new instance of the WeakReference class.|  
+|[WeakReference::WeakReference](#ctor)|Initializes a new instance of the WeakReference class.|  
   
 ### Methods  
   
 |Member|Description|  
 |------------|-----------------|  
-|[WeakReference::Resolve Method](#resolve)|Returns a handle to the underlying ref class, or nullptr if the object no longer exists.|  
+|[WeakReference::Resolve](#resolve)|Returns a handle to the underlying ref class, or nullptr if the object no longer exists.|  
   
 ### Operators  
   

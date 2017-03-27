@@ -9,7 +9,7 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
-  - "Platform/Platform::Box"
+  - "VCCORLIB/Platform::Box"
 dev_langs: 
   - "C++"
 ms.assetid: b3d7ea37-e98a-4fbc-80b0-ad35e50250c6
@@ -34,7 +34,7 @@ ref class Box abstract;
  **Namespace:** Platform
 |Member|Description|  
 |------------|-----------------|
-|[Box Constructor](#ctor)|Creates a `Box` that can encapsulate a value of the specified type.|
+|[Box](#ctor)|Creates a `Box` that can encapsulate a value of the specified type.|
 |[operator Box&lt;const T&gt;^](#box-const-t)|Enables boxing conversions from a `const` value class `T` or `enum` class `T` to `Box<T>`.|
 |[operator Box&lt;const volatile T&gt;^](#box-const-volatile-t)|Enables boxing conversions from a `const volatile` value class `T` or `enum` type `T` to `Box<T>`. |
 |[operator Box&lt;T&gt;^](#box-t)|Enables boxing conversions from a value class `T` to `Box<T>`.|

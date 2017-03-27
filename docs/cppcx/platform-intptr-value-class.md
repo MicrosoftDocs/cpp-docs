@@ -8,8 +8,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "Platform/Platform::IntPtr"
+f1_keywords: ['VCCORLIB/PlatformIntPtr::IntPtr', 'VCCORLIB/PlatformIntPtr::op_explicit Operator', 'VCCORLIB/PlatformIntPtr::ToInt32']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -34,9 +33,9 @@ public value struct IntPtr
   
 |Member|Description|  
 |------------|-----------------|  
-|[IntPtr::IntPtr Constructor](#ctor)|Initializes a new instance of IntPtr.|  
+|[IntPtr::IntPtr](#ctor)|Initializes a new instance of IntPtr.|  
 |[IntPtr::op_explicit Operator](#op-explicit)|Converts the specified parameter to an IntPtr or a pointer to an IntPtr value.|  
-|[IntPtr::ToInt32 Method](#toint32)|Converts the current IntPtr to a 32-bit integer.|  
+|[IntPtr::ToInt32](#toint32)|Converts the current IntPtr to a 32-bit integer.|  
   
 ### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  

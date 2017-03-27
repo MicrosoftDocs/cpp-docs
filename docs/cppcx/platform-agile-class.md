@@ -8,8 +8,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "agile/Platform::Agile"
+f1_keywords: ['AGILE/Platform::Platform', 'AGILE/Platform::Platform::Agile::Agile', 'AGILE/Platform::Platform::Agile::Get', 'AGILE/Platform::Platform::Agile::GetAddressOf', 'AGILE/Platform::Platform::Agile::GetAddressOfForInOut', 'AGILE/Platform::Platform::Agile::Release']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -45,7 +44,7 @@ class Agile;
   
 |Name|Description|  
 |----------|-----------------|  
-|[Agile::Agile Constructor](#ctor)|Initializes a new instance of the Agile class.|  
+|[Agile::Agile](#ctor)|Initializes a new instance of the Agile class.|  
 |[Agile::~Agile Destructor](#dtor)|Destroys the current instance of the Agile class.|  
   
 ### Public Methods  
