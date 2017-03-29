@@ -9,7 +9,7 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
-  - "Platform/Platform::Object::Equals"
+  - "VCCORLIB/Platform::Object::Equals"
 dev_langs: 
   - "C++"
 ms.assetid: 4450f835-06fc-4758-8d0a-72cf00007873

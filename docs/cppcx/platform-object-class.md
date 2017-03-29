@@ -8,8 +8,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "Platform/Platform::Object"
+f1_keywords: ['VCCORLIB/Platform::Object::Object', 'VCCORLIB/Platform::Object::Equals', 'VCCORLIB/Platform::Object::GetHashCode', 'VCCORLIB/Platform::Object::ReferenceEquals', 'VCCORLIB/Platform::ToString', 'VCCORLIB/Platform::GetType']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -35,17 +34,17 @@ public ref class Object : Object
   
 |Name|Description|  
 |----------|-----------------|  
-|[Object::Object Constructor](#ctor)|Initializes a new instance of the Object class.|  
+|[Object::Object](#ctor)|Initializes a new instance of the Object class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[Object::Equals Method](#equals)|Determines whether the specified object is equal to the current object.|  
-|[Object::GetHashCode Method](#gethashcode)|Returns the hash code for this instance.|  
-|[Object::ReferenceEquals Method](#referenceequals)|Determines whether the specified Object instances are the same instance.|  
-|[ToString Method](#tostring)|Returns a string that represents the current object. Can be overridden.|  
-|[GetType Method](#gettype)|Gets a [Platform::Type](../cppcx/platform-type-class.md) that describes the current instance.|  
+|[Object::Equals](#equals)|Determines whether the specified object is equal to the current object.|  
+|[Object::GetHashCode](#gethashcode)|Returns the hash code for this instance.|  
+|[Object::ReferenceEquals](#referenceequals)|Determines whether the specified Object instances are the same instance.|  
+|[ToString](#tostring)|Returns a string that represents the current object. Can be overridden.|  
+|[GetType](#gettype)|Gets a [Platform::Type](../cppcx/platform-type-class.md) that describes the current instance.|  
   
 ## Inheritance Hierarchy  
  `Object`  
@@ -58,7 +57,7 @@ public ref class Object : Object
  **Namespace:** Platform  
 
   
-## Object::Equals Method
+## <a name="equals"></a> Object::Equals Method
 Determines whether the specified object is equal to the current object.  
   
 ### Syntax  
@@ -92,7 +91,7 @@ public:int GetHashCode()
  A numeric value that uniquely identifies this object.  
   
 ### Remarks  
- You can use GetHashCode to create keys for objects in maps. You can compare hash codes by using [Object::Equals Method](#equals). If the code path is extremely critical and `GetHashCode` and `Equals` are not sufficiently fast, then you can drop down to the underlying COM layer and do native `IUnknown` pointer comparisons.  
+ You can use GetHashCode to create keys for objects in maps. You can compare hash codes by using [Object::Equals](#equals). If the code path is extremely critical and `GetHashCode` and `Equals` are not sufficiently fast, then you can drop down to the underlying COM layer and do native `IUnknown` pointer comparisons.  
   
 
 
@@ -110,7 +109,7 @@ Object::GetType()
  A [Platform::Type](../cppcx/platform-type-class.md) object that describes the runtime type of the object.  
   
 ### Remarks  
- The static [Type::GetTypeCode Method](../cppcx/platform-type-class.md#gettypecode) can be used to get a [Platform::TypeCode Enumeration](../cppcx/platform-typecode-enumeration.md) value that represents the current type. This is mostly useful for built-in types. The type code for any ref class besides [Platform::String](../cppcx/platform-string-class.md) is Object (1).  
+ The static [Type::GetTypeCode](../cppcx/platform-type-class.md#gettypecode) can be used to get a [Platform::TypeCode Enumeration](../cppcx/platform-typecode-enumeration.md) value that represents the current type. This is mostly useful for built-in types. The type code for any ref class besides [Platform::String](../cppcx/platform-string-class.md) is Object (1).  
   
  The [Windows::UI::Xaml::Interop::TypeName](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx) class is used in the Windows APIs as a language-independent way of passing type information between Windows components and apps. The T[Platform::Type Class](../cppcx/platform-type-class.md) has operators for converting between `Type` and `TypeName`.  
   

@@ -9,8 +9,8 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
-  - "Platform/Platform::InvalidArgumentException"
-  - "Platform/Platform::InvalidArgumentException::InvalidArgumentException"
+  - "VCCORLIB/Platform::InvalidArgumentException"
+  - "VCCORLIB/Platform::InvalidArgumentException::InvalidArgumentException"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

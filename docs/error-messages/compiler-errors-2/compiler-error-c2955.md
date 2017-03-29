@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2955 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "03/28/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -87,4 +87,16 @@ int main() {
    GC^ g;   // C2955  
    GC <int>^ g;  
 }  
+```
+
+## Example
+**Visual Studio 2017 and later:** The compiler correctly diagnoses missing template argument lists when the template appears in a template parameter list (for example as part of a default template argument or a non-type template parameter). The following code compiles in Visual Studio 2015 but produces an error in Visual Studio 2017.
+
+```
+template <class T> class ListNode;
+template <class T> using ListNodeMember = ListNode<T> T::*;
+template <class T, ListNodeMember M> class ListHead; // C2955: 'ListNodeMember': use of alias 
+                                                     // template requires template argument list
+
+// correct:  template <class T, ListNodeMember<T> M> class ListHead;
 ```

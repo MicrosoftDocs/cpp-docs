@@ -124,7 +124,7 @@ decltype(auto) myFunc(T&& t, U&& u)
 ## Example  
  The following code example declares the late-specified return type of template function `Plus()`. The `Plus` function processes its two operands with the `operator+` overload. Consequently, the interpretation of the plus operator (+) and the return type of the `Plus` function depends on the types of the function arguments.  
   
-```  
+```cpp  
 // decltype_1.cpp  
 // compile with: /EHsc  
 //  
@@ -200,6 +200,30 @@ int main()
   
  42  
   
+## Example
+**Visual Studio 2017 and later:** The compiler parses decltype arguments when the templates are declared rather than instantiated. Consequently, if a non-dependent specialization is found in the decltype argument, it will not be deferred to instantiation-time and will be processed immediately and any resulting errors will be diagnosed at that time.
+
+The following example shows such a compiler error that is raised at the point of declaration:
+
+```cpp
+#include <utility>
+template <class T, class ReturnT, class... ArgsT> class IsCallable
+{
+public:
+       struct BadType {};
+       template <class U>
+       static decltype(std::declval<T>()(std::declval<ArgsT>()...)) Test(int); //C2064. Should be declval<U>
+       template <class U>
+       static BadType Test(...);
+       static constexpr bool value = std::is_convertible<decltype(Test<T>(0)), ReturnT>::value;
+};
+
+constexpr bool test1 = IsCallable<int(), int>::value;
+static_assert(test1, "PASS1");
+constexpr bool test2 = !IsCallable<int*, int>::value;
+static_assert(test2, "PASS2");
+```
+
 ## Requirements  
  Visual C++ 2010 or later versions.  
   

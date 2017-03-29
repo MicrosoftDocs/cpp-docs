@@ -9,8 +9,8 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
-  - "Platform/Platform::AccessDeniedException"
-  - "Platform/Platform::AccessDeniedException::AccessDeniedException"
+  - "VCCORLIB/Platform::AccessDeniedException"
+  - "VCCORLIB/Platform::AccessDeniedException::AccessDeniedException"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

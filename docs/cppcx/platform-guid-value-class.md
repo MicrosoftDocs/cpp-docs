@@ -8,8 +8,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "Platform/Platform::Guid"
+f1_keywords: ['VCCORLIB/Platform::Guid']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

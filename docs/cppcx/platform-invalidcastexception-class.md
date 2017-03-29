@@ -9,8 +9,8 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
-  - "Platform/Platform::InvalidCastException::InvalidCastException"
-  - "Platform/Platform::InvalidCastException"
+  - "VCCORLIB/Platform::InvalidCastException::InvalidCastException"
+  - "VCCORLIB/Platform::InvalidCastException"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

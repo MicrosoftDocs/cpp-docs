@@ -48,17 +48,17 @@ ref class UnorderedMapView sealed;
   
 |Name|Description|  
 |----------|-----------------|  
-|[UnorderedMapView::UnorderedMapView Constructor](#ctor)|Initializes a new instance of the UnorderedMapView class.|  
+|[UnorderedMapView::UnorderedMapView](#ctor)|Initializes a new instance of the UnorderedMapView class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[UnorderedMapView::First Method](#first)|Returns an iterator that is initialized to the first element in the map view.|  
-|[UnorderedMapView::HasKey Method](#haskey)|Determines whether the current UnorderedMapView contains the specified key.|  
-|[UnorderedMapView::Lookup Method](#lookup)|Retrieves the element at the specified key in the current UnorderedMapView object.|  
-|[UnorderedMapView::Size Method](#size)|Returns the number of elements in the current UnorderedMapView object.|  
-|[UnorderedMapView::Split Method](#split)|Splits an original UnorderedMapView object into two UnorderedMapView objects.|  
+|[UnorderedMapView::First](#first)|Returns an iterator that is initialized to the first element in the map view.|  
+|[UnorderedMapView::HasKey](#haskey)|Determines whether the current UnorderedMapView contains the specified key.|  
+|[UnorderedMapView::Lookup](#lookup)|Retrieves the element at the specified key in the current UnorderedMapView object.|  
+|[UnorderedMapView::Size](#size)|Returns the number of elements in the current UnorderedMapView object.|  
+|[UnorderedMapView::Split](#split)|Splits an original UnorderedMapView object into two UnorderedMapView objects.|  
   
 ## Inheritance Hierarchy  
  `UnorderedMapView`  

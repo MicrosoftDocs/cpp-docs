@@ -36,20 +36,17 @@ Univeral Windows Platform (UWP) apps embody a set of design principles that emph
 
 > [!TIP]  
 > For Windows 10, you can use the Desktop App Converter to package your existing desktop application for deployment through the Windows Store. For more information, see [Using Visual C++ Runtime in Centennial project](https://blogs.msdn.microsoft.com/vcblog/2016/07/07/using-visual-c-runtime-in-centennial-project) and [Bring your desktop app to the Universal Windows Platform (UWP) with the Desktop Bridge](https://msdn.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-root).
-   
-> [!NOTE]
->  Much of the documentation for UWP app development in C++ is on the [Windows Developer Center](http://go.microsoft.com/fwlink/p/?LinkId=255563) website. Some of the links in this article go to that website.  
+  
   
 ## UWP apps that Use C++/CX  
   
 |||  
 |-|-|  
-|[Visual C++ language reference (C++/CX)](http://go.microsoft.com/fwlink/p/?LinkId=255561)|Describes the set of extensions that simplify C++ consumption of [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] APIs and enable error handling that's based on exceptions.|  
-|[Building apps and libraries (C++/CX)](http://go.microsoft.com/fwlink/p/?LinkId=264858)|Describes how to create DLLs and static libraries that can be accessed from a C++/CX app or component.|  
-|[Tutorial: Create your first Windows Store app using C++](http://go.microsoft.com/fwlink/p/?LinkId=255556)|A walkthrough that introduces the basic concepts of Universal Windows Platform app development in C++. (Not yet updated for UWP development on Windows 10.)|  
-|[Roadmap for Windows Store apps using C++](http://go.microsoft.com/fwlink/p/?LinkId=255553)|Provides links to articles about Universal Windows Platform app and game development in C++.|  
-|[Creating Windows Runtime Components in C++](http://go.microsoft.com/fwlink/p/?LinkId=255559)|Describes how to create DLLs that other Universal Windows Platform apps and components can consume.|  
-|[Developing games](http://go.microsoft.com/fwlink/p/?LinkId=255554)|Describes how to use DirectX and C++ to create games.|  
+|[Visual C++ language reference (C++/CX)](../cppcx/visual-c-language-reference-c-cx.md)|Describes the set of extensions that simplify C++ consumption of [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] APIs and enable error handling that's based on exceptions.|  
+|[Building apps and libraries (C++/CX)](../cppcx/building-apps-and-libraries-c-cx.md)|Describes how to create DLLs and static libraries that can be accessed from a C++/CX app or component.|  
+|[Tutorial: Create your first Windows Store app using C++](https://docs.microsoft.com/en-us/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp)|A walkthrough that introduces the basic concepts of Universal Windows Platform app development in C++. (Not yet updated for UWP development on Windows 10.)|  
+|[Creating Windows Runtime Components in C++](https://docs.microsoft.com/en-us/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)|Describes how to create DLLs that other Universal Windows Platform apps and components can consume.|  
+|[Developing games](https://docs.microsoft.com/en-us/windows/uwp/gaming/)|Describes how to use DirectX and C++ to create games.|  
   
 ## Universal Windows Platform Apps that Use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)])  
  The [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] provides the low-level COM interfaces by which ISO C++ code can access the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] in an exception-free environment. In most cases, we recommend that you use C++/CX instead of the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] for Universal Windows Platform app development. For information about the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)], see [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).  
