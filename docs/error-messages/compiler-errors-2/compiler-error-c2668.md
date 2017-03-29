@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2668 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "03/28/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -153,4 +153,26 @@ int main() {
    pow(9,9);   // C2668  
    pow((double)9,9);   // OK  
 }  
+```
+
+## Example  
+This code succeeds in Visual Studio 2015 but fails in Visual Studio 2017 and later with C2668. In Visual Studio 2015, the compiler erroneously treated copy-list-initialization in the same way as regular copy-initialization; it considered only converting constructors for overload resolution. 
+
+```
+C++
+struct A {
+    explicit A(int) {}
+};
+
+struct B {
+    B(int) {}
+};
+
+void f(const A&) {}
+void f(const B&) {}
+
+int main()
+{
+    f({ 1 }); // error C2668: 'f': ambiguous call to overloaded function
+}
 ```
