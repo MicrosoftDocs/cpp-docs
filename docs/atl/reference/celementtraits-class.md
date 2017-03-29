@@ -11,7 +11,7 @@ ms.topic: "reference"
 f1_keywords:
  - "CElementTraits"
  - "atlcoll/ATL::CElementTraits"
- dev_langs: 
+dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "CElementTraits class"
