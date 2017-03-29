@@ -40,7 +40,9 @@ The compiler encountered a deprecated declaration.
   
  This warning or error has several possible meanings.  
   
- `C4996` occurs when the compiler encounters a function or variable that is marked as [deprecated](../../cpp/deprecated-cpp.md). Several functions, member functions, template functions, and global variables in the libraries in Visual Studio are marked as deprecated. These functions may have a different preferred name, may be insecure or have a more secure variant, or may be obsolete. The error message may include a suggested replacement for the deprecated function or global variable. You can turn this warning off with the [warning](../../preprocessor/warning.md) pragma or the **/wd4996** command line option. You can also use preprocessor macros to turn off certain classes of deprecation warnings.  
+ `C4996` occurs when the compiler encounters a function or variable that is marked as [deprecated](../../cpp/deprecated-cpp.md). Several functions, member functions, template functions, and global variables in the libraries in Visual Studio are marked as deprecated. These functions may have a different preferred name, may be insecure or have a more secure variant, or may be obsolete. The error message may include a suggested replacement for the deprecated function or global variable. You can turn this warning off with the [warning](../../preprocessor/warning.md) pragma or the **/wd4996** command line option. You can also use preprocessor macros to turn off certain classes of deprecation warnings. 
+
+This warning is also issued when you attempt to access a function, class member or typedef that has the C++14 `[[deprecated]]` attribute. For more information, see [C++ Standard Attributes](../../cpp/attributes2.md). 
   
  **The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name:** new_name**. See online help for details.**  
   
