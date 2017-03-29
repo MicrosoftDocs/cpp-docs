@@ -374,8 +374,9 @@ CPair *PGetNextAssoc(const CPair* pAssocRet);
  Finds the value mapped to a given key.  
   
 ```  
-const CPair* PLookup(ARG_KEY  key) const;
-CPair* PLookup(Â    ARG_KEY  keyÂ);  ```  
+const CPair* PLookup(ARG_KEY key) const;
+CPair* PLookup(ARG_KEY key);  
+```  
   
 ### Parameters  
  `key`  
