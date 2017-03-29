@@ -817,7 +817,8 @@ virtual BOOL IsTaskbarInteractionEnabled();
  Loads the cursor resource named by `lpszResourceName` or specified by `nIDResource` from the current executable file.  
   
 ```  
-HCURSOR LoadCursor(LPCTSTR lpszResourceName) const;  HCURSOR LoadCursor(UINT nIDResource) const;  ```  
+HCURSOR LoadCursor(LPCTSTR lpszResourceName) const;  HCURSOR LoadCursor(UINT nIDResource) const;  
+```  
   
 ### Parameters  
  `lpszResourceName`  
@@ -841,7 +842,8 @@ HCURSOR LoadCursor(LPCTSTR lpszResourceName) const;  HCURSOR LoadCursor(UINT nID
  Loads the icon resource named by `lpszResourceName` or specified by `nIDResource` from the executable file.  
   
 ```  
-HICON LoadIcon(LPCTSTR lpszResourceName) const;  HICON LoadIcon(UINT nIDResource) const;  ```  
+HICON LoadIcon(LPCTSTR lpszResourceName) const;  HICON LoadIcon(UINT nIDResource) const;  
+```  
   
 ### Parameters  
  `lpszResourceName`  
@@ -1739,7 +1741,8 @@ void SetHelpMode(AFX_HELP_TYPE eHelpType);
   
 ```  
 void SetRegistryKey(LPCTSTR lpszRegistryKey);  
-void SetRegistryKey(UINT nIDRegistryKey);```  
+void SetRegistryKey(UINT nIDRegistryKey);
+```  
   
 ### Parameters  
  *lpszRegistryKey*  

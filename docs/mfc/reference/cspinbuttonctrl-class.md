@@ -212,7 +212,8 @@ CWnd* GetBuddy() const;
  Retrieves the current position of a spin button control.  
   
 ```  
-int GetPos() const;  int GetPos32(LPBOOL lpbError = NULL) const;  ```  
+int GetPos() const;  int GetPos32(LPBOOL lpbError = NULL) const;  
+```  
   
 ### Parameters  
  *lpbError*  
@@ -312,7 +313,8 @@ CWnd* SetBuddy(CWnd* pWndBuddy);
   
 ```  
 int SetPos(int nPos);  
-int SetPos32(int nPos);```  
+int SetPos32(int nPos);
+```  
   
 ### Parameters  
  `nPos`  
