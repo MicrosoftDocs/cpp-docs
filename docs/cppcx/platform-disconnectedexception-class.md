@@ -9,8 +9,8 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
-  - "Platform/Platform::DisconnectedException"
-  - "Platform/Platform::DisconnectedException::DisconnectedException"
+  - "VCCORLIB/Platform::DisconnectedException"
+  - "VCCORLIB/Platform::DisconnectedException::DisconnectedException"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

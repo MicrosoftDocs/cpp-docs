@@ -9,7 +9,7 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
-  - "Platform/Platform::Runtime::InteropServices"
+  - "VCCORLIB/Platform::Runtime::InteropServices"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

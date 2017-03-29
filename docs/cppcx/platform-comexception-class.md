@@ -8,8 +8,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "Platform/Platform::COMException"
+f1_keywords: ['VCCORLIB/Platform::COMException', 'VCCORLIB/Platform::Exception::HResult', 'VCCORLIB/Platform::Exception::Message']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -50,8 +49,8 @@ public ref class COMException : Exception,    IException,    IPrintable,    IEqu
   
 |Member|Description|  
 |------------|-----------------|  
-|[Exception::HResult Property](#hresult)|The HRESULT that corresponds to the exception.|  
-|[Exception::Message Property](#message)|Message that describes the exception.|  
+|[Exception::HResult](#hresult)|The HRESULT that corresponds to the exception.|  
+|[Exception::Message](#message)|Message that describes the exception.|  
   
 ## Derived Exceptions  
  The following predefined exceptions are derived from COMException. They differ from COMException only in their name, the name of their constructor, and their underlying HRESULT value.  

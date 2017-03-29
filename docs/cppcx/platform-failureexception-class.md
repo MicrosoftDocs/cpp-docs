@@ -9,8 +9,8 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
-  - "Platform/Platform::FailureException::FailureException"
-  - "Platform/Platform::FailureException"
+  - "VCCORLIB/Platform::FailureException::FailureException"
+  - "VCCORLIB/Platform::FailureException"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

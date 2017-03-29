@@ -9,8 +9,8 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
-  - "Platform/Platform::WrongThreadException"
-  - "Platform/Platform::WrongThreadException::WrongThreadException"
+  - "VCCORLIB/Platform::WrongThreadException"
+  - "VCCORLIB/Platform::WrongThreadException::WrongThreadException"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

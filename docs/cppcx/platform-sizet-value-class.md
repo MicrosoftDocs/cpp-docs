@@ -8,8 +8,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "Platform/Platform::SizeT"
+f1_keywords: ['VCCORLIB/PlatformSizeT::SizeT constructor']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

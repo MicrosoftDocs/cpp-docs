@@ -8,8 +8,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "Platform/Platform::ArrayReference"
+f1_keywords: ['VCCORLIB/Platform::ArrayReference::ArrayReference']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -35,7 +34,7 @@ class ArrayReference
   
 |Name|Description|  
 |----------|-----------------|  
-|[ArrayReference::ArrayReference Constructor](#ctor)|Initializes a new instance of the `ArrayReference` class.|  
+|[ArrayReference::ArrayReference](#ctor)|Initializes a new instance of the `ArrayReference` class.|  
   
 ### Public Operators  
   

@@ -9,7 +9,7 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
-  - "Platform/Platform::Details::IEquatable"
+  - "VCCORLIB/Platform::Details::IEquatable"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

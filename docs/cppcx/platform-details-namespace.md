@@ -9,7 +9,7 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
-  - "Platform/Platform::Details"
+  - "VCCORLIB/Platform::Details"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,8 +8,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "collection/Platform::Collections::Map"
+f1_keywords: ['COLLECTION/Platform::Collections::Map::Map', 'COLLECTION/Platform::Collections::Map::Clear', 'COLLECTION/Platform::Collections::Map::First', 'COLLECTION/Platform::Collections::Map::GetView', 'COLLECTION/Platform::Collections::Map::HasKey', 'COLLECTION/Platform::Collections::Map::Insert', 'COLLECTION/Platform::Collections::Map::Lookup', 'COLLECTION/Platform::Collections::Map::Remove', 'COLLECTION/Platform::Collections::Map::Size']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -68,27 +67,27 @@ ref class Map sealed;
   
 |Name|Description|  
 |----------|-----------------|  
-|[Map::Map Constructor](#ctor)|Initializes a new instance of the Map class.|  
+|[Map::Map](#ctor)|Initializes a new instance of the Map class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[Map::Clear Method](#clear)|Removes all key-value pairs from the current Map object.|  
-|[Map::First Method](#first)|Returns an iterator that specifies the first element in the map.|  
-|[Map::GetView Method](#getview)|Returns a read-only view of the current Map; that is, a [Platform::Collections::MapView Class](../cppcx/platform-collections-mapview-class.md).|  
-|[Map::HasKey Method](#haskey)|Determines whether the current Map contains the specified key.|  
-|[Map::Insert Method](#insert)|Adds the specified key-value pair to the current Map object.|  
-|[Map::Lookup Method](#lookup)|Retrieves the element at the specified key in the current Map object.|  
-|[Map::Remove Method](#remove)|Deletes the specified key-value pair from the current Map object.|  
-|[Map::Size Method](#size)|Returns the number of elements in the current Map object.|  
+|[Map::Clear](#clear)|Removes all key-value pairs from the current Map object.|  
+|[Map::First](#first)|Returns an iterator that specifies the first element in the map.|  
+|[Map::GetView](#getview)|Returns a read-only view of the current Map; that is, a [Platform::Collections::MapView Class](../cppcx/platform-collections-mapview-class.md).|  
+|[Map::HasKey](#haskey)|Determines whether the current Map contains the specified key.|  
+|[Map::Insert](#insert)|Adds the specified key-value pair to the current Map object.|  
+|[Map::Lookup](#lookup)|Retrieves the element at the specified key in the current Map object.|  
+|[Map::Remove](#remove)|Deletes the specified key-value pair from the current Map object.|  
+|[Map::Size](#size)|Returns the number of elements in the current Map object.|  
   
 ### Events  
   
 |||  
 |-|-|  
 |Name|Description|  
-|[Map::MapChanged Event](#mapchanged-event.md) `event`|Occurs when the Map changes.|  
+|[Map::MapChanged](#mapchanged-event.md) `event`|Occurs when the Map changes.|  
   
 ## Inheritance Hierarchy  
  `Map`  
@@ -98,7 +97,7 @@ ref class Map sealed;
   
  **Namespace:** Platform::Collections  
 
-## Map::Clear Method
+## <a name="clear"></a>  Map::Clear Method
 Removes all key-value pairs from the current Map object.  
   
 ### Syntax  
@@ -109,7 +108,7 @@ virtual void Clear();
   
 
 
-## <a name="first"</a>  Map::First Method
+## <a name="first"></a>  Map::First Method
 Returns an iterator that specifies the first element in the map, or `nullptr` if the map is empty.  
   
 ### Syntax  
@@ -127,7 +126,7 @@ Windows::Foundation::Collections::IKeyValuePair<K, V>^>^ First();
   
 
 
-## <a name="getview"</a>  Map::GetView Method
+## <a name="getview"></a>  Map::GetView Method
 Returns a read-only view of the current Map; that is, a [Platform::Collections::MapView Class](../cppcx/platform-collections-mapview-class.md), which implements the [Windows::Foundation::Collections::IMapView\<K,V>](http://msdn.microsoft.com/library/windows/apps/br226037.aspx) interface.  
   
 ### Syntax  
@@ -141,7 +140,7 @@ Windows::Foundation::Collections::IMapView<K, V>^ GetView();
   
 
 
-## <a name="haskey"</a>  Map::HasKey Method
+## <a name="haskey"></a>  Map::HasKey Method
 Determines whether the current Map contains the specified key.  
   
 ### Syntax  
@@ -159,7 +158,7 @@ bool HasKey(K key);
   
 
 
-## <a name="insert"</a>  Map::Insert Method
+## <a name="insert"></a>  Map::Insert Method
 Adds the specified key-value pair to the current Map object.  
   
 ### Syntax  
@@ -181,7 +180,7 @@ virtual bool Insert(K key, V value);
   
 
 
-## <a name="lookup"</a>  Map::Lookup Method
+## <a name="lookup"></a>  Map::Lookup Method
 Retrieves the value of type V that is associated with the specified key of type K, if the key exists.  
   
 ### Syntax  
@@ -202,7 +201,7 @@ V Lookup(K key);
   
 
 
-## <a name="ctor"</a>  Map::Map Constructor
+## <a name="ctor"></a>  Map::Map Constructor
 Initializes a new instance of the Map class.  
   
 ### Syntax  
@@ -236,7 +235,7 @@ Map(
   
 
 
-## <a name="mapchanged"</a>  Map::MapChanged Event
+## <a name="mapchanged"></a>  Map::MapChanged Event
 Raised when an item is inserted into or removed from the map.  
   
 ### Syntax  
@@ -253,7 +252,7 @@ event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;
   
 
 
-## <a name="remove"</a>  Map::Remove Method
+## <a name="remove"></a>  Map::Remove Method
 Deletes the specified key-value pair from the current Map object.  
   
 ### Syntax  
@@ -268,7 +267,7 @@ virtual void Remove(K key);
   
 
 
-## <a name="size"</a>  Map::Size Method
+## <a name="size"></a>  Map::Size Method
 Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) elements in the Map.  
   
 ### Syntax  
