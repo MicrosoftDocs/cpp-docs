@@ -141,9 +141,6 @@ int main( void )
 Hello there!The line entered was: Hello there!  
 ```  
   
-## .NET Framework Equivalent  
- [System::Console::Read](https://msdn.microsoft.com/en-us/library/system.console.read.aspx)  
-  
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [gets, _getws](../../c-runtime-library/gets-getws.md)   

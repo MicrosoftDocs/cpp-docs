@@ -205,9 +205,6 @@ cat cow dog goat horse human pig rat
 cat found at 002F0F04  
 ```  
   
-## .NET Framework Equivalent  
- <xref:System.Collections.ArrayList.BinarySearch%2A>  
-  
 ## See Also  
  [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)   
  [_lfind](../../c-runtime-library/reference/lfind.md)   

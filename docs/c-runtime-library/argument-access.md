@@ -40,11 +40,11 @@ The `va_arg`, `va_end`, and `va_start` macros provide access to function argumen
   
 ### Argument-Access Macros  
   
-|Macro|Use|.NET Framework equivalent|  
-|-----------|---------|-------------------------------|  
-|[va_arg](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md)|Retrieve argument from list|[System::ParamArrayAttribute Class](https://msdn.microsoft.com/en-us/library/system.paramarrayattribute.aspx)|  
-|[va_end](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md)|Reset pointer|[System::ParamArrayAttribute Class](https://msdn.microsoft.com/en-us/library/system.paramarrayattribute.aspx)|  
-|[va_start](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md)|Set pointer to beginning of argument list|[System::ParamArrayAttribute Class](https://msdn.microsoft.com/en-us/library/system.paramarrayattribute.aspx)|  
+|Macro|Use|  
+|-----------|-------------------------------|  
+|[va_arg](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md)|Retrieve argument from list|  
+|[va_end](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md)|Reset pointer|  
+|[va_start](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md)|Set pointer to beginning of argument list|  
   
 ## See Also  
  [Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)

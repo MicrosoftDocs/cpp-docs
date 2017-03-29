@@ -91,9 +91,6 @@ _ASSERTE( _CrtCheckMemory( ) );
 ## Example  
  For a sample of how to use `_CrtCheckMemory`, see [crt_dbg1](http://msdn.microsoft.com/en-us/17b4b20c-e849-48f5-8eb5-dca6509cbaf9).  
   
-## .NET Framework Equivalent  
- [System::Diagnostics::PerformanceCounter](https://msdn.microsoft.com/en-us/library/system.diagnostics.performancecounter.aspx)  
-  
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)   
  [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md)   

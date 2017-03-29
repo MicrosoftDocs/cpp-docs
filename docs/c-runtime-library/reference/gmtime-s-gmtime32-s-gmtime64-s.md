@@ -196,12 +196,6 @@ int main( void )
 Coordinated universal time is Fri Apr 25 20:12:33 2003  
 ```  
   
-## .NET Framework Equivalent  
-  
--   [System::DateTime::UtcNow](https://msdn.microsoft.com/en-us/library/system.datetime.utcnow.aspx)  
-  
--   [System::DateTime::ToUniversalTime](https://msdn.microsoft.com/en-us/library/system.datetime.touniversaltime.aspx)  
-  
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   
  [asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md)   

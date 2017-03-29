@@ -138,9 +138,6 @@ after fgetpos: gets a stream
 after fsetpos: gets a stream  
 ```  
   
-## .NET Framework Equivalent  
- [System::IO::FileStream::Position](https://msdn.microsoft.com/en-us/library/system.io.filestream.position.aspx)  
-  
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fsetpos](../../c-runtime-library/reference/fsetpos.md)

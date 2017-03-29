@@ -146,9 +146,6 @@ int main( void )
 C:\Code  
 ```  
   
-## .NET Framework Equivalent  
- [System::Environment::CurrentDirectory](https://msdn.microsoft.com/en-us/library/system.environment.currentdirectory.aspx)  
-  
 ## See Also  
  [Directory Control](../../c-runtime-library/directory-control.md)   
  [_chdir, _wchdir](../../c-runtime-library/reference/chdir-wchdir.md)   

@@ -136,9 +136,6 @@ roundl(2.500000) is 3
 roundl(-2.500000) is -3  
 ```  
   
-## .NET Framework Equivalent  
- [System::Math::Round](https://msdn.microsoft.com/en-us/library/system.math.round.aspx)  
-  
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [ceil, ceilf, ceill](../../c-runtime-library/reference/ceil-ceilf-ceill.md)   

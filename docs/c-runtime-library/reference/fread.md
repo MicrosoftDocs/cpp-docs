@@ -147,9 +147,6 @@ Number of items read = 25
 Contents of buffer = zyxwvutsrqponmlkjihgfedcb  
 ```  
   
-## .NET Framework Equivalent  
- [System::IO::FileStream::Read](https://msdn.microsoft.com/en-us/library/system.io.filestream.read.aspx)  
-  
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fwrite](../../c-runtime-library/reference/fwrite.md)   

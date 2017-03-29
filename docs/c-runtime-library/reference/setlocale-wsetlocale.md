@@ -320,9 +320,6 @@ The thread locale is now set to de-DE.
 The time in de-DE locale is: 'Mittwoch, 12. Mai 2004'  
 ```  
   
-## .NET Framework Equivalent  
- [System::Globalization::CultureInfo Class](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.aspx)  
-  
 ## See Also  
  [Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)   
  [_configthreadlocale](../../c-runtime-library/reference/configthreadlocale.md)   

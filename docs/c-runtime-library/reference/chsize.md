@@ -130,12 +130,6 @@ Size successfully changed
 File length after:  329678  
 ```  
   
-## .NET Framework Equivalent  
-  
--   [System::IO::Stream::SetLength](https://msdn.microsoft.com/en-us/library/system.io.stream.setlength.aspx)  
-  
--   [System::IO::FileStream::SetLength](https://msdn.microsoft.com/en-us/library/system.io.filestream.setlength.aspx)  
-  
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   
  [_close](../../c-runtime-library/reference/close.md)   

@@ -130,9 +130,6 @@ int main( void )
 Position after trying to read 100 bytes: 100  
 ```  
   
-## .NET Framework Equivalent  
- [System::IO::FileStream::Position](https://msdn.microsoft.com/en-us/library/system.io.filestream.position.aspx)  
-  
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)   

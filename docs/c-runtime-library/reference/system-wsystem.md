@@ -145,12 +145,6 @@ Line one.
 Line two.  
 ```  
   
-## .NET Framework Equivalent  
-  
--   [System::Diagnostics::ProcessStartInfo Class](https://msdn.microsoft.com/en-us/library/system.diagnostics.processstartinfo.aspx)  
-  
--   [System::Diagnostics::Process Class](https://msdn.microsoft.com/en-us/library/system.diagnostics.process.aspx)  
-  
 ## See Also  
  [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
  [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)   

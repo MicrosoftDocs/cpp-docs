@@ -257,9 +257,6 @@ intptr_t _wfindfirst64i32(
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
-## .NET Framework Equivalent  
- [System::IO::DirectoryInfo::GetFiles](https://msdn.microsoft.com/en-us/library/system.io.directoryinfo.getfiles.aspx)  
-  
 ## See Also  
  [System Calls](../../c-runtime-library/system-calls.md)   
  [Filename Search Functions](../../c-runtime-library/filename-search-functions.md)

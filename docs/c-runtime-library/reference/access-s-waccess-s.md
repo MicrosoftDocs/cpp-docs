@@ -167,9 +167,6 @@ File crt_access_s.c exists.
 File crt_access_s.c does not have write permission.  
 ```  
   
-## .NET Framework Equivalent  
- <xref:System.IO.FileAccess?displayProperty=fullName>  
-  
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   
  [_access, _waccess](../../c-runtime-library/reference/access-waccess.md)   

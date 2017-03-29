@@ -139,9 +139,6 @@ Enter the same sentence with gets: This is a test
 This is a test  
 ```  
   
-## .NET Framework Equivalent  
- [System::IO::FileStream::Flush](https://msdn.microsoft.com/en-us/library/2bw4h516.aspx)  
-  
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)   

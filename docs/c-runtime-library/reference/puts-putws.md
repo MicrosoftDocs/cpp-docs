@@ -129,9 +129,6 @@ int main( void )
 Hello world from puts!  
 ```  
   
-## .NET Framework Equivalent  
- [System::Console::Write](https://msdn.microsoft.com/en-us/library/system.console.write.aspx)  
-  
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fputs, fputws](../../c-runtime-library/reference/fputs-fputws.md)   

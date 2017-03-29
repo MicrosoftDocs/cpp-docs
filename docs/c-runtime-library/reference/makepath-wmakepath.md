@@ -161,9 +161,6 @@ Path extracted with _splitpath:
   Ext: .c  
 ```  
   
-## .NET Framework Equivalent  
- [System::IO::File::Create](https://msdn.microsoft.com/en-us/library/system.io.file.create.aspx)  
-  
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   
  [_fullpath, _wfullpath](../../c-runtime-library/reference/fullpath-wfullpath.md)   

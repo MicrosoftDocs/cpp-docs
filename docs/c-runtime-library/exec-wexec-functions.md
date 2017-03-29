@@ -248,11 +248,7 @@ int main( int ac, char* av[] )
 }  
 ```  
   
-## .NET Framework Equivalent  
-  
--   [System::Diagnostics::Process Class](https://msdn.microsoft.com/en-us/library/system.diagnostics.process.aspx)  
-  
--   [System::Diagnostics::ProcessStartInfo Class](https://msdn.microsoft.com/en-us/library/system.diagnostics.processstartinfo.aspx)  
+## Requirements  
   
  **Header:** process.h  
   

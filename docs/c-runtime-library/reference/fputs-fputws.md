@@ -123,9 +123,6 @@ int main( void )
 Hello world from fputs.  
 ```  
   
-## .NET Framework Equivalent  
- [System::IO::StreamWriter::Write](https://msdn.microsoft.com/en-us/library/system.io.streamwriter.write.aspx)  
-  
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fgets, fgetws](../../c-runtime-library/reference/fgets-fgetws.md)   
