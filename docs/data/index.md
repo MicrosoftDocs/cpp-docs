@@ -86,7 +86,7 @@ Since 2011 Microsoft has aligned on ODBC as the standard for native applications
         </a>
     </li>
     <li>
-        <a href="data-access-programming-mfc-atl">
+        <a href="data-access-programming-mfc-atl.md">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -105,7 +105,7 @@ Since 2011 Microsoft has aligned on ODBC as the standard for native applications
         </a>
     </li>
     <li>
-        <a href="odbc/open-database-connectivity-odbc">
+        <a href="odbc/open-database-connectivity-odbc.md">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -124,7 +124,7 @@ Since 2011 Microsoft has aligned on ODBC as the standard for native applications
         </a>
     </li>
     <li>
-        <a href="oledb/ole-db-programming">
+        <a href="oledb/ole-db-programming.md">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
