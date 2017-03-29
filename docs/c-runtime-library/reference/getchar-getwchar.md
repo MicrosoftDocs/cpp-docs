@@ -118,12 +118,6 @@ int main()
 This textInput was: This text  
 ```  
   
-## .NET Framework Equivalent  
-  
--   [System::IO::StreamReader::Read](https://msdn.microsoft.com/en-us/library/system.io.streamreader.read.aspx)  
-  
--   [System::Console::Read](https://msdn.microsoft.com/en-us/library/system.console.read.aspx)  
-  
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [getc, getwc](../../c-runtime-library/reference/getc-getwc.md)   

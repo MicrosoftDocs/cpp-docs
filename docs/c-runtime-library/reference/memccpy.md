@@ -131,12 +131,6 @@ Result: The quick brown dog jumps
 Length: 25 characters  
 ```  
   
-## .NET Framework Equivalent  
-  
--   [System::Buffer::BlockCopy](https://msdn.microsoft.com/en-us/library/system.buffer.blockcopy.aspx)  
-  
--   [System::String::Copy](https://msdn.microsoft.com/en-us/library/system.string.copy.aspx)  
-  
 ## See Also  
  [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)   
  [memchr, wmemchr](../../c-runtime-library/reference/memchr-wmemchr.md)   

@@ -171,9 +171,6 @@ Daylight savings time flag (1 means Daylight time is in effect): 1
 The time is Mon Apr 28 11:08:54.230 2003  
 ```  
   
-## .NET Framework Equivalent  
- [System::DateTime::Now](https://msdn.microsoft.com/en-us/library/system.datetime.now.aspx)  
-  
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   
  [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)   

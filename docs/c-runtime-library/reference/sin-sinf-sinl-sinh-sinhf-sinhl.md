@@ -170,12 +170,6 @@ cos( 1.570796 ) = 0.000000
 cosh( 1.570796 ) = 2.509178  
 ```  
   
-## .NET Framework Equivalent  
-  
--   [System::Math::Sin](https://msdn.microsoft.com/en-us/library/system.math.sin.aspx)  
-  
--   [System::Math::Sinh](https://msdn.microsoft.com/en-us/library/system.math.sinh.aspx)  
-  
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [acos, acosf, acosl](../../c-runtime-library/reference/acos-acosf-acosl.md)   

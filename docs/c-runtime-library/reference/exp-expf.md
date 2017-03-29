@@ -124,9 +124,6 @@ int main( void )
 exp( 2.302585 ) = 10.000000  
 ```  
   
-## .NET Framework Equivalent  
- [System::Math::Exp](https://msdn.microsoft.com/en-us/library/system.math.exp.aspx)  
-  
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [log, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md)   

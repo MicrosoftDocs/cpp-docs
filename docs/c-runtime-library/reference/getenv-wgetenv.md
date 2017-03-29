@@ -160,9 +160,6 @@ Original LIB variable is: C:\progra~1\devstu~1\vc\lib
 New LIB variable is: c:\mylib;c:\yourlib  
 ```  
   
-## .NET Framework Equivalent  
- [System::Environment::GetEnvironmentVariable](https://msdn.microsoft.com/en-us/library/system.environment.getenvironmentvariable.aspx)  
-  
 ## See Also  
  [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
  [_putenv, _wputenv](../../c-runtime-library/reference/putenv-wputenv.md)   

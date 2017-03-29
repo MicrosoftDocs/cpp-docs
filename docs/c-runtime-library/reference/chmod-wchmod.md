@@ -194,12 +194,6 @@ Access is denied.
 Mode set to read/write  
 ```  
   
-## .NET Framework Equivalent  
-  
--   [System::IO::File::SetAttributes](https://msdn.microsoft.com/en-us/library/system.io.file.setattributes.aspx)  
-  
--   [System::Security::Permissions::FileIOPermission](https://msdn.microsoft.com/en-us/library/system.security.permissions.fileiopermission.aspx)  
-  
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   
  [_access, _waccess](../../c-runtime-library/reference/access-waccess.md)   

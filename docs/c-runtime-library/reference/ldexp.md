@@ -130,9 +130,6 @@ int main( void )
 4.0 times two to the power of 3 is 32.0  
 ```  
   
-## .NET Framework Equivalent  
- [System::Math::Pow](https://msdn.microsoft.com/en-us/library/system.math.pow.aspx)  
-  
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [frexp](../../c-runtime-library/reference/frexp.md)   

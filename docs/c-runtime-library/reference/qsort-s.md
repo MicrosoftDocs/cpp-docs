@@ -278,9 +278,6 @@ España Español espantado
 table tablet tableux  
 ```  
   
-## .NET Framework Equivalent  
- <xref:System.Collections.ArrayList.Sort%2A>  
-  
 ## See Also  
  [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)   
  [bsearch_s](../../c-runtime-library/reference/bsearch-s.md)   

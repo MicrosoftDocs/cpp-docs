@@ -132,9 +132,6 @@ int main( void )
 source: 3.1415926535   buffer: '3141592654'  decimal: 1  sign: 0  
 ```  
   
-## .NET Framework Equivalent  
- [System::Convert::ToString](https://msdn.microsoft.com/en-us/library/system.convert.tostring.aspx)  
-  
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

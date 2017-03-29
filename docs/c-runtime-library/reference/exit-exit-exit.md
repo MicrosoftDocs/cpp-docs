@@ -131,9 +131,6 @@ int main( void )
 }  
 ```  
   
-## .NET Framework Equivalent  
- [System::Diagnostics::Process::Kill](https://msdn.microsoft.com/en-us/library/system.diagnostics.process.kill.aspx)  
-  
 ## See Also  
  [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
  [abort](../../c-runtime-library/reference/abort.md)   

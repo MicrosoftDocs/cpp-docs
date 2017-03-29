@@ -106,8 +106,5 @@ Associates a C run-time file descriptor with an existing operating-system file h
 ## Libraries  
  All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
-## .NET Framework Equivalent  
- [System::IO::FileStream::Handle](https://msdn.microsoft.com/en-us/library/system.io.filestream.handle.aspx)  
-  
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)

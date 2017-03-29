@@ -106,9 +106,6 @@ fyi, ENOENT = 2
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
-## NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
-  
 ## See Also  
  [_set_errno](../../c-runtime-library/reference/set-errno.md)   
  [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)

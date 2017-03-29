@@ -155,12 +155,6 @@ Directory '\testtmp' was successfully created
 Directory '\testtmp' was successfully removed  
 ```  
   
-## .NET Framework Equivalent  
-  
--   [System::IO::Directory::CreateDirectory](https://msdn.microsoft.com/en-us/library/system.io.directory.createdirectory.aspx)  
-  
--   [System::IO::DirectoryInfo::CreateSubdirectory](https://msdn.microsoft.com/en-us/library/system.io.directoryinfo.createsubdirectory.aspx)  
-  
 ## See Also  
  [Directory Control](../../c-runtime-library/directory-control.md)   
  [_chdir, _wchdir](../../c-runtime-library/reference/chdir-wchdir.md)   

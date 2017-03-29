@@ -129,9 +129,6 @@ tanh( 0.785398 ) = 0.655794
 atanh( 0.655794 ) = 0.785398  
 ```  
   
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
-  
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [acos, acosf, acosl](../../c-runtime-library/reference/acos-acosf-acosl.md)   

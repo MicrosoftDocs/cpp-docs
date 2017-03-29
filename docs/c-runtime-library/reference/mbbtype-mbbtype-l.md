@@ -115,8 +115,5 @@ int _mbbtype_l(
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
-## .NET Framework Equivalent  
- Not applicable, but see [System::Globalization::CultureInfo](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.aspx).  
-  
 ## See Also  
  [Byte Classification](../../c-runtime-library/byte-classification.md)

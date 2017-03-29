@@ -140,9 +140,6 @@ int _towupper_l(
 ## Example  
  See the example in [to Functions](../../c-runtime-library/to-functions.md).  
   
-## .NET Framework Equivalent  
- [System::Char::ToUpper](https://msdn.microsoft.com/en-us/library/system.char.toupper.aspx)  
-  
 ## See Also  
  [is, isw Routines](../../c-runtime-library/is-isw-routines.md)   
  [to Functions](../../c-runtime-library/to-functions.md)   

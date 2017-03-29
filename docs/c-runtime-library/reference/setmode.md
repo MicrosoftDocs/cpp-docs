@@ -144,12 +144,6 @@ int main(void) {
 }  
 ```  
   
-## .NET Framework Equivalent  
-  
--   [System::IO::BinaryReader Class](https://msdn.microsoft.com/en-us/library/system.io.binaryreader.aspx)  
-  
--   [System::IO::TextReader Class](https://msdn.microsoft.com/en-us/library/system.io.textreader.aspx)  
-  
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   
  [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)   

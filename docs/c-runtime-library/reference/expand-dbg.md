@@ -166,9 +166,6 @@ Size of block after _expand_dbg of 1 more long: 164
 ## Comment  
  The output of this program depends on your computer's ability to expand all the sections. If all sections are expanded, the output is reflected in the Output section.  
   
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
-  
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)   
  [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md)

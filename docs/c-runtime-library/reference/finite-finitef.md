@@ -91,9 +91,6 @@ int _finitef(
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
-## .NET Framework Equivalent  
- [System::Double::IsInfinity](https://msdn.microsoft.com/en-us/library/system.double.isinfinity.aspx)  
-  
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [isnan, _isnan, _isnanf](../../c-runtime-library/reference/isnan-isnan-isnanf.md)   

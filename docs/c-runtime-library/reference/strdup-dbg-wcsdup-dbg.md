@@ -117,9 +117,6 @@ wchar_t *_wcsdup_dbg(
 ## Libraries  
  All debug versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
-## .NET Framework Equivalent  
- [System::String::Clone](https://msdn.microsoft.com/en-us/library/system.string.clone.aspx)  
-  
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [_strdup, _wcsdup, _mbsdup](../../c-runtime-library/reference/strdup-wcsdup-mbsdup.md)   

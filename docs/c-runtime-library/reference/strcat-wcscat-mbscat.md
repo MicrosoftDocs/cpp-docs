@@ -144,9 +144,6 @@ unsigned char *_mbscat(
 ## Example  
  See the example for [strcpy](../../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md).  
   
-## .NET Framework Equivalent  
- [System::String::Concat](https://msdn.microsoft.com/en-us/library/system.string.concat.aspx)  
-  
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](../../c-runtime-library/reference/strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)   

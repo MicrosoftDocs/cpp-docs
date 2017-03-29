@@ -91,12 +91,6 @@ errno_t _chsize_s(
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
-## .NET Framework Equivalent  
-  
--   [System::IO::Stream::SetLength](https://msdn.microsoft.com/en-us/library/system.io.stream.setlength.aspx)  
-  
--   [System::IO::FileStream::SetLength](https://msdn.microsoft.com/en-us/library/system.io.filestream.setlength.aspx)  
-  
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   
  [_chsize](../../c-runtime-library/reference/chsize.md)   

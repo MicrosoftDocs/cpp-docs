@@ -91,9 +91,6 @@ int main()
 |-----------|---------------------|  
 |`_STATIC_ASSERT`|\<crtdbg.h>|  
   
-## .NET Framework Equivalent  
- [System::Diagnostics::Debug::Assert](https://msdn.microsoft.com/en-us/library/system.diagnostics.debug.assert.aspx)  
-  
 ## See Also  
  [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
  [_ASSERT, _ASSERTE, _ASSERT_EXPR Macros](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)

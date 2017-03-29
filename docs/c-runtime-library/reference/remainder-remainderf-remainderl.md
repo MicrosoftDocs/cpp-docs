@@ -130,9 +130,6 @@ int main( void )
 The remainder of -10.00 / 3.00 is -1.000000  
 ```  
   
-## .NET Framework Equivalent  
- [System::Math::IEEERemainder](https://msdn.microsoft.com/en-us/library/system.math.ieeeremainder.aspx)  
-  
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [ldiv, lldiv](../../c-runtime-library/reference/ldiv-lldiv.md)   

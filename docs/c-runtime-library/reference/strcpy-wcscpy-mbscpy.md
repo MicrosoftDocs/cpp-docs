@@ -174,9 +174,6 @@ int main( void )
 String = Hello world from strcpy and strcat!  
 ```  
   
-## .NET Framework Equivalent  
- [System::String::Copy](https://msdn.microsoft.com/en-us/library/system.string.copy.aspx)  
-  
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [strcat, wcscat, _mbscat](../../c-runtime-library/reference/strcat-wcscat-mbscat.md)   

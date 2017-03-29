@@ -79,9 +79,6 @@ void _unlock_file(
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
-## .NET Framework Equivalent  
- [System::IO::FileStream::Lock](https://msdn.microsoft.com/en-us/library/system.io.filestream.lock.aspx)  
-  
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   
  [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)   

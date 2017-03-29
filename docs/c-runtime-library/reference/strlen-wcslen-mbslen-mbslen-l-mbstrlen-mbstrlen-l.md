@@ -208,9 +208,6 @@ Length of 'ABCァD' : 5
 Bytes in 'ABCァD' : 6  
 ```  
   
-## .NET Framework Equivalent  
- [System::String::Length](https://msdn.microsoft.com/en-us/library/system.string.length.aspx)  
-  
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   

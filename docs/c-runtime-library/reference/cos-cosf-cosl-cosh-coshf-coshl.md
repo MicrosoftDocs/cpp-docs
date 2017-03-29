@@ -136,12 +136,6 @@ long double coshl(
 ## Example  
  See the example in [sin, sinf, sinl, sinh, sinhf, sinhl](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md).  
   
-## .NET Framework Equivalent  
-  
--   [System::Math::Cos](https://msdn.microsoft.com/en-us/library/system.math.cos.aspx)  
-  
--   [System::Math::Cosh](https://msdn.microsoft.com/en-us/library/system.math.cosh.aspx)  
-  
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [acos, acosf, acosl](../../c-runtime-library/reference/acos-acosf-acosl.md)   

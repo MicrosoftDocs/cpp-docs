@@ -82,8 +82,5 @@ void _CrtMemDumpStatistics(
   
  **Libraries:** Debug versions of [CRT Library Features](../../c-runtime-library/crt-library-features.md) only.  
   
-## .NET Framework Equivalent  
- <xref:System.Diagnostics.PerformanceCounter?displayProperty=fullName>  
-  
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)

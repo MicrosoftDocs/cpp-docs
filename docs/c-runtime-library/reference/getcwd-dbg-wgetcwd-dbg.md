@@ -122,9 +122,6 @@ wchar_t *_wgetcwd_dbg(
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
-## .NET Framework Equivalent  
- <xref:System.Environment.CurrentDirectory%2A>  
-  
 ## See Also  
  [_getcwd, _wgetcwd](../../c-runtime-library/reference/getcwd-wgetcwd.md)   
  [Directory Control](../../c-runtime-library/directory-control.md)   

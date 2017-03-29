@@ -139,9 +139,6 @@ The ceil of 2.8 is 3.000000
 The ceil of -2.8 is -2.000000  
 ```  
   
-## .NET Framework Equivalent  
- [System::Math::Floor](https://msdn.microsoft.com/en-us/library/system.math.floor.aspx)  
-  
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [ceil, ceilf, ceill](../../c-runtime-library/reference/ceil-ceilf-ceill.md)   
