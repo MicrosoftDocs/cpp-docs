@@ -195,7 +195,7 @@ CWinApp* AFXAPI AfxGetApp();
  A pointer to the single `CWinApp` object for the application.  
   
 ### Remarks  
- If this method returns NULL, it might indicate that the applicationâ€™s main window has not been fully initialized yet. It might also indicate a problem.  
+ If this method returns NULL, it might indicate that the application main window has not been fully initialized yet. It might also indicate a problem.  
   
 ### Example  
  [!code-cpp[NVC_MFCWindowing#126](../../mfc/reference/codesnippet/cpp/application-information-and-management_1.cpp)]  

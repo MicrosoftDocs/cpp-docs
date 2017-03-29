@@ -616,7 +616,7 @@ BOOL  AfxIsValidString(
  The pointer to test.  
   
  `nLength`  
- Specifies the length of the string to be tested, in bytes. A value of â€“1 indicates that the string will be null-terminated.  
+ Specifies the length of the string to be tested, in bytes. A value of -1 indicates that the string will be null-terminated.  
   
 ### Return Value  
  In debug builds, nonzero if the specified pointer points to a string of the specified size; otherwise 0.  
