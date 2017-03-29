@@ -304,7 +304,8 @@ UINT GetPaneStyle(int nIndex) const;
  Call this member function to retrieve the text that appears in a status-bar pane.  
   
 ```  
-CString GetPaneText(int nIndex) const;  void GetPaneText(int nIndex, CString& rString) const;  ```  
+CString GetPaneText(int nIndex) const;  void GetPaneText(int nIndex, CString& rString) const;  
+```  
   
 ### Parameters  
  `nIndex`  

@@ -516,7 +516,8 @@ CPoint GetCharPos(long lChar) const;
  Gets the default character formatting attributes of this `CRichEditCtrl` object.  
   
 ```  
-DWORD GetDefaultCharFormat(CHARFORMAT& cf) const;  DWORD GetDefaultCharFormat(CHARFORMAT2& cf) const;  ```  
+DWORD GetDefaultCharFormat(CHARFORMAT& cf) const;  DWORD GetDefaultCharFormat(CHARFORMAT2& cf) const;  
+```  
   
 ### Parameters  
  `cf`  
@@ -686,7 +687,8 @@ UINT GetOptions() const;
  Gets the paragraph formatting attributes of the current selection.  
   
 ```  
-DWORD GetParaFormat(PARAFORMAT& pf) const;  DWORD GetParaFormat(PARAFORMAT2& pf) const;  ```  
+DWORD GetParaFormat(PARAFORMAT& pf) const;  DWORD GetParaFormat(PARAFORMAT2& pf) const;  
+```  
   
 ### Parameters  
  `pf`  
@@ -798,7 +800,8 @@ void GetSel(
  Gets the character formatting attributes of the current selection.  
   
 ```  
-DWORD GetSelectionCharFormat(CHARFORMAT& cf) const;  DWORD GetSelectionCharFormat(CHARFORMAT2& cf) const;  ```  
+DWORD GetSelectionCharFormat(CHARFORMAT& cf) const;  DWORD GetSelectionCharFormat(CHARFORMAT2& cf) const;  
+```  
   
 ### Parameters  
  `cf`  
@@ -847,7 +850,8 @@ WORD GetSelectionType() const;
  Retrieves the text from the current selection in this `CRichEditCtrl` object.  
   
 ```  
-long GetSelText(LPSTR lpBuf) const;  CString GetSelText() const;  ```  
+long GetSelText(LPSTR lpBuf) const;  CString GetSelText() const;  
+```  
   
 ### Parameters  
  `lpBuf`  
@@ -1273,7 +1277,8 @@ COLORREF SetBackgroundColor(
   
 ```  
 BOOL SetDefaultCharFormat(CHARFORMAT& cf);  
-BOOL SetDefaultCharFormat(CHARFORMAT2& cf);```  
+BOOL SetDefaultCharFormat(CHARFORMAT2& cf);
+```  
   
 ### Parameters  
  `cf`  
@@ -1405,7 +1410,8 @@ void SetOptions(
   
 ```  
 BOOL SetParaFormat(PARAFORMAT& pf);  
-BOOL SetParaFormat(PARAFORMAT2& pf);```  
+BOOL SetParaFormat(PARAFORMAT2& pf);
+```  
   
 ### Parameters  
  `pf`  
@@ -1529,7 +1535,8 @@ void SetSel(CHARRANGE& cr);
   
 ```  
 BOOL SetSelectionCharFormat(CHARFORMAT& cf);  
-BOOL SetSelectionCharFormat(CHARFORMAT2& cf);```  
+BOOL SetSelectionCharFormat(CHARFORMAT2& cf);
+```  
   
 ### Parameters  
  `cf`  
@@ -1624,7 +1631,8 @@ UINT SetUndoLimit(UINT nLimit);
   
 ```  
 BOOL SetWordCharFormat(CHARFORMAT& cf);  
-BOOL SetWordCharFormat(CHARFORMAT2& cf);```  
+BOOL SetWordCharFormat(CHARFORMAT2& cf);
+```  
   
 ### Parameters  
  `cf`  
