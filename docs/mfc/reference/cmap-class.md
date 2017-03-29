@@ -94,7 +94,7 @@ template<class KEY, class ARG_KEY, class VALUE, class ARG_VALUE>class CMap : pub
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMap::operator [ ]](#operator_at)|Inserts an element into the map â€” operator substitution for `SetAt`.|  
+|[CMap::operator [ ]](#operator_at)|Inserts an element into the map ‒ operator substitution for `SetAt`.|  
   
 ## Remarks  
  Once you have inserted a key-value pair (element) into the map, you can efficiently retrieve or delete the pair using the key to access it. You can also iterate over all the elements in the map.  
@@ -144,9 +144,9 @@ CMap(INT_PTR nBlockSize = 10);
   
  The structure is composed of two fields:  
   
-- **keyÂ Â Â** The actual value of the key type.  
+- **key** The actual value of the key type.  
   
-- **valueÂ Â Â** The value of the associated object.  
+- **value** The value of the associated object.  
   
  It is used to store the return values from [CMap::PLookup](#plookup), [CMap::PGetFirstAssoc](#pgetfirstassoc), and [CMap::PGetNextAssoc](#pgetnextassoc).  
   
@@ -249,7 +249,7 @@ POSITION GetStartPosition() const;
  Initializes the hash table.  
   
 ```  
-void InitHashTable(UINT hashSize, BOOL  bAllocNow = TRUEÂ);  
+void InitHashTable(UINT hashSize, BOOL  bAllocNow = TRUE);  
 ```  
   
 ### Parameters  
@@ -336,7 +336,8 @@ VALUE& operator[](arg_key key);
  Returns the first entry of the map object.  
   
 ```  
-const CPair* PGetFirstAssoc() const;Â CPair* PGetFirstAssoc();  
+const CPair* PGetFirstAssoc() const; 
+CPair* PGetFirstAssoc();  
 ```  
   
 ### Return Value  

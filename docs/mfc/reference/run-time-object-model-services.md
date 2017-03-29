@@ -231,7 +231,7 @@ IMPLEMENT_SERIAL(class_name, base_class_name, wSchema)
  The name of the base class.  
   
  *wSchema*  
- A **UINT** "version number" that will be encoded in the archive to enable a deserializing program to identify and handle data created by earlier program versions. The class schema number must not be â€“1.  
+ A **UINT** "version number" that will be encoded in the archive to enable a deserializing program to identify and handle data created by earlier program versions. The class schema number must not be -1.  
   
 ### Remarks  
  Use the `IMPLEMENT_SERIAL` macro in a .cpp module; then link the resulting object code only once.  
