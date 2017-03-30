@@ -184,9 +184,6 @@ Compare strings:
    _stricmp:  String 1 is equal to string 2  
 ```  
   
-## .NET Framework Equivalent  
- [System::String::CompareOrdinal](https://msdn.microsoft.com/en-us/library/system.string.compareordinal.aspx)  
-  
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [memcmp, wmemcmp](../../c-runtime-library/reference/memcmp-wmemcmp.md)   

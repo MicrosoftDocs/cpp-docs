@@ -107,9 +107,6 @@ long double asinl(
 ## Example  
  For more information, see [acos, acosf, acosl](../../c-runtime-library/reference/acos-acosf-acosl.md).  
   
-## .NET Framework Equivalent  
- [System::Math::Asin](https://msdn.microsoft.com/en-us/library/system.math.asin.aspx)  
-  
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [acos, acosf, acosl](../../c-runtime-library/reference/acos-acosf-acosl.md)   

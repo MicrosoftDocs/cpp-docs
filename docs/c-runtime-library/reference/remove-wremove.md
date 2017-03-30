@@ -132,9 +132,6 @@ This file will be deleted.
 Deleted 'CRT_REMOVE.TXT'  
 ```  
   
-## .NET Framework Equivalent  
- [System::IO::File::Delete](https://msdn.microsoft.com/en-us/library/system.io.file.delete.aspx)  
-  
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   
  [_unlink, _wunlink](../../c-runtime-library/reference/unlink-wunlink.md)

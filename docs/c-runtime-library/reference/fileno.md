@@ -111,9 +111,6 @@ The file descriptor for stdout is 1
 The file descriptor for stderr is 2  
 ```  
   
-## .NET Framework Equivalent  
- [System::IO::FileStream::Handle](https://msdn.microsoft.com/en-us/library/system.io.filestream.handle.aspx)  
-  
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [_fdopen, _wfdopen](../../c-runtime-library/reference/fdopen-wfdopen.md)   

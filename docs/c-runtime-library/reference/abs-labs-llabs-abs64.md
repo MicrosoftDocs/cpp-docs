@@ -181,9 +181,6 @@ Microsoft implementation-specific results:
   
 ```  
   
-## .NET Framework Equivalent  
- [System::Math::Abs](https://msdn.microsoft.com/en-us/library/system.math.abs.aspx)  
-  
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

@@ -414,9 +414,6 @@ After strncpy_s (with null-termination):
    'mice'  
 ```  
   
-## .NET Framework Equivalent  
- [System::String::Copy](https://msdn.microsoft.com/en-us/library/system.string.copy.aspx)  
-  
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   

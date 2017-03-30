@@ -189,9 +189,6 @@ int main( void )
 Tue Feb 12 10:05:58 AM  
 ```  
   
-## .NET Framework Equivalent  
- [System::DateTime::ToLocalTime](https://msdn.microsoft.com/en-us/library/system.datetime.tolocaltime.aspx)  
-  
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   
  [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)   

@@ -184,9 +184,6 @@ crt_ASSERT_macro.c(59) : Assertion failed: p1 == p2
 'I am p1' != 'I am p2'  
 ```  
   
-## .NET Framework Equivalent  
- [System::Diagnostics::Debug::Assert](https://msdn.microsoft.com/en-us/library/system.diagnostics.debug.assert.aspx)  
-  
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)   
  [assert Macro, _assert, _wassert](../../c-runtime-library/reference/assert-macro-assert-wassert.md)   

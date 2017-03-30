@@ -382,9 +382,6 @@ Invalid parameter handler invoked: (L"Buffer is too small" && 0)
     new contents of dest: ''  
 ```  
   
-## .NET Framework Equivalent  
- [System::String::Concat](https://msdn.microsoft.com/en-us/library/system.string.concat.aspx)  
-  
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   

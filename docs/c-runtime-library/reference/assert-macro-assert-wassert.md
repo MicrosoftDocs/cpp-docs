@@ -165,9 +165,6 @@ A problem caused the program to stop working correctly. Windows will close the p
   
  If a debugger is installed, choose the **Debug** button to start the debugger, or **Close program** to exit.  
   
-## .NET Framework Equivalent  
- [System::Diagnostics::Debug::Assert](https://msdn.microsoft.com/en-us/library/system.diagnostics.debug.assert.aspx)  
-  
 ## See Also  
  [Error Handling](../../c-runtime-library/error-handling-crt.md)   
  [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   

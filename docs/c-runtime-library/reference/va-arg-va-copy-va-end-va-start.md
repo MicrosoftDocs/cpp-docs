@@ -246,9 +246,6 @@ Deviation is: 0.000000
   
 ```  
   
-## .NET Framework Equivalent  
- [System::ParamArrayAttribute Class](https://msdn.microsoft.com/en-us/library/system.paramarrayattribute.aspx)  
-  
 ## See Also  
  [Argument Access](../../c-runtime-library/argument-access.md)   
  [vfprintf, _vfprintf_l, vfwprintf, _vfwprintf_l](../../c-runtime-library/reference/vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md)

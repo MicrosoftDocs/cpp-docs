@@ -162,9 +162,6 @@ Full path is: C:\test
 Full path is: C:\Documents and Settings\user\test  
 ```  
   
-## .NET Framework Equivalent  
- [System::IO::File::Create](https://msdn.microsoft.com/en-us/library/system.io.file.create.aspx)  
-  
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   
  [_getcwd, _wgetcwd](../../c-runtime-library/reference/getcwd-wgetcwd.md)   

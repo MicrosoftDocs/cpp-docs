@@ -151,12 +151,6 @@ Line two.
 Line one.  
 ```  
   
-## .NET Framework Equivalent  
-  
--   [System::IO::StreamReader::ReadLine](https://msdn.microsoft.com/en-us/library/system.io.streamreader.readline.aspx)  
-  
--   [System::IO::TextReader::ReadBlock](https://msdn.microsoft.com/en-us/library/system.io.textreader.readblock.aspx)  
-  
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fputs, fputws](../../c-runtime-library/reference/fputs-fputws.md)   

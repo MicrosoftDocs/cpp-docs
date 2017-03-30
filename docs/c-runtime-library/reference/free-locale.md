@@ -82,9 +82,6 @@ void _free_locale(
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
-## .NET Framework Equivalent  
- No equivalent.  
-  
 ## See Also  
  [_get_current_locale](../../c-runtime-library/reference/get-current-locale.md)   
  [_create_locale, _wcreate_locale](../../c-runtime-library/reference/create-locale-wcreate-locale.md)

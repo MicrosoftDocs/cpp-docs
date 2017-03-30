@@ -183,12 +183,6 @@ successfully reassigned
 This will go to the file 'freopen.out'  
 ```  
   
-## .NET Framework Equivalent  
-  
--   <xref:System.IO.File.Open%2A>  
-  
--   <xref:System.IO.FileStream.%23ctor%2A>  
-  
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)   
