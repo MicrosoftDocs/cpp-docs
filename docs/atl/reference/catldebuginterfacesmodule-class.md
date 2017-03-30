@@ -11,7 +11,7 @@ ms.topic: "reference"
 f1_keywords:
  - "CAtlDebugInterfacesModule"
  - "atlbase/ATL::CAtlDebugInterfacesModule"
- dev_langs: 
+dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "_ATL_DEBUG_QI macro"
