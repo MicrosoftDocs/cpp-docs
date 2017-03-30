@@ -226,9 +226,6 @@ WC String: AaBbCcÜïα∩≡xXyYzZ
 |-------------|---------------------|  
 |`mbrtowc`|\<wchar.h>|  
   
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
-  
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Locale](../../c-runtime-library/locale.md)   

@@ -79,9 +79,6 @@ _locale_t _get_current_locale(void);
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
-## .NET Framework Equivalent  
- No equivalent.  
-  
 ## See Also  
  [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)   
  [_create_locale, _wcreate_locale](../../c-runtime-library/reference/create-locale-wcreate-locale.md)   

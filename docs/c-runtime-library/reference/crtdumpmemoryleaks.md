@@ -97,8 +97,5 @@ int _CrtDumpMemoryLeaks( void );
 ## Example  
  For a sample of how to use `_CrtDumpMemoryLeaks`, see [crt_dbg1](http://msdn.microsoft.com/en-us/17b4b20c-e849-48f5-8eb5-dca6509cbaf9).  
   
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
-  
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)

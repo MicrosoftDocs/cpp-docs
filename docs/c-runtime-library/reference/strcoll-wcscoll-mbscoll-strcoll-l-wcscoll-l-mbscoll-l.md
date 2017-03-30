@@ -153,9 +153,6 @@ int _mbscoll_l(
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
-## .NET Framework Equivalent  
- [System::String::Compare](https://msdn.microsoft.com/en-us/library/system.string.compare.aspx)  
-  
 ## See Also  
  [Locale](../../c-runtime-library/locale.md)   
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   

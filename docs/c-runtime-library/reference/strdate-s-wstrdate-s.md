@@ -136,9 +136,6 @@ errno_t _wstrdate_s(
 ## Example  
  See the example for [time](../../c-runtime-library/reference/time-time32-time64.md).  
   
-## .NET Framework Equivalent  
- [System::DateTime::Parse](https://msdn.microsoft.com/en-us/library/system.datetime.parse.aspx)  
-  
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   
  [asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md)   

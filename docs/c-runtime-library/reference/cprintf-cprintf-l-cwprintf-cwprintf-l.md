@@ -171,9 +171,6 @@ int main( void )
 -16  001d  62511  A Test  
 ```  
   
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
-  
 ## See Also  
  [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   
  [_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](../../c-runtime-library/reference/cscanf-cscanf-l-cwscanf-cwscanf-l.md)   

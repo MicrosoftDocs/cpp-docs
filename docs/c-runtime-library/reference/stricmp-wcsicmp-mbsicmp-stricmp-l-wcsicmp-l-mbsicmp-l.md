@@ -243,9 +243,6 @@ Compare strings:
    _stricmp:  String 1 is equal to string 2  
 ```  
   
-## .NET Framework Equivalent  
- [System::String::Compare](https://msdn.microsoft.com/en-us/library/system.string.compare.aspx)  
-  
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [memcmp, wmemcmp](../../c-runtime-library/reference/memcmp-wmemcmp.md)   

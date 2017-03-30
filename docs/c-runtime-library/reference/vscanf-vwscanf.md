@@ -161,14 +161,6 @@ The number of fields input is 6
 The contents are: 36 92.300003 y n Wide characters  
 ```  
   
-## .NET Framework Equivalent  
-  
--   [System::Console::Read](https://msdn.microsoft.com/en-us/library/system.console.read.aspx)  
-  
--   [System::Console::ReadLine](https://msdn.microsoft.com/en-us/library/system.console.readline.aspx)  
-  
--   See also `Parse` methods, such as [System::Double::Parse](https://msdn.microsoft.com/en-us/library/system.double.parse.aspx).  
-  
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

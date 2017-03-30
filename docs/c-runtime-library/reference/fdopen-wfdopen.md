@@ -212,9 +212,6 @@ Line two
 Lines in file: 2  
 ```  
   
-## .NET Framework Equivalent  
- <xref:System.IO.FileStream.%23ctor%2A>  
-  
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [_dup, _dup2](../../c-runtime-library/reference/dup-dup2.md)   

@@ -77,7 +77,7 @@ class CProgressCtrl : public CWnd
 ## Remarks  
  A progress bar control is a window that an application can use to indicate the progress of a lengthy operation. It consists of a rectangle that is gradually filled, from left to right, with the system highlight color as an operation progresses.  
   
- A progress bar control has a range and a current position. The range represents the total duration of the operation, and the current position represents the progress the application has made toward completing the operation. The window procedure uses the range and the current position to determine the percentage of the progress bar to fill with the highlight color. Because the range and current position values are expressed as signed integers, the possible range of current position values is from â€“2,147,483,648 to 2,147,483,647 inclusive.  
+ A progress bar control has a range and a current position. The range represents the total duration of the operation, and the current position represents the progress the application has made toward completing the operation. The window procedure uses the range and the current position to determine the percentage of the progress bar to fill with the highlight color. Because the range and current position values are expressed as signed integers, the possible range of current position values is from -2,147,483,648 to 2,147,483,647 inclusive.  
   
  For more information on using `CProgressCtrl`, see [Controls](../../mfc/controls-mfc.md) and [Using CProgressCtrl](../../mfc/using-cprogressctrl.md).  
   

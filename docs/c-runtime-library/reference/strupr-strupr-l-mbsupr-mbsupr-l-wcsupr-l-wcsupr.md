@@ -186,9 +186,6 @@ unsigned char *_mbsupr_l(
 ## Example  
  See the example for [_strlwr](../../c-runtime-library/reference/strlwr-wcslwr-mbslwr-strlwr-l-wcslwr-l-mbslwr-l.md).  
   
-## .NET Framework Equivalent  
- [System::String::ToUpper](https://msdn.microsoft.com/en-us/library/system.string.toupper.aspx)  
-  
 ## See Also  
  [Locale](../../c-runtime-library/locale.md)   
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   

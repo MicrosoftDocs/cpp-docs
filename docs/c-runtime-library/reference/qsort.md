@@ -154,9 +154,6 @@ int compare( const void *arg1, const void *arg2 )
 boy deserves every favor good  
 ```  
   
-## .NET Framework Equivalent  
- [System::Collections::ArrayList::Sort](https://msdn.microsoft.com/en-us/library/system.collections.arraylist.sort.aspx)  
-  
 ## See Also  
  [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)   
  [bsearch](../../c-runtime-library/reference/bsearch.md)   

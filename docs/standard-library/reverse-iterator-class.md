@@ -52,13 +52,13 @@ class reverse_iterator
  The type that represents the iterator to be adapted to operate in reverse.  
   
 ## Remarks  
- Existing C++ Standard Library containers also define `reverse_iterator` and `const_reverse_iterator` types and have member functions `rbegin` and `rend` that return reverse iterators. These iterators have overwrite semantics. The `reverse_iterator` adaptor supplements this functionality as offers insert semantics and can also be used with streams.  
+ Existing C++ Standard Library containers also define `reverse_iterator` and `const_reverse_iterator` types and have member functions `rbegin` and `rend` that return reverse iterators. These iterators have overwrite semantics. The `reverse_iterator` adaptor supplements this functionality as it offers insert semantics and can also be used with streams.  
   
- The `reverse_iterator`s that require a bidirectional iterator must not call any of the member functions `operator+=`, `operator+`, `operator-=`, `operator-`, or `operator[]`, which may only be used with random-access iterators.  
+ The `reverse_iterator` that requires a bidirectional iterator must not call any of the member functions `operator+=`, `operator+`, `operator-=`, `operator-`, or `operator[]`, which may only be used with random-access iterators.  
   
- If the range of an iterator is [ ` first`,  last), where the square bracket on the left indicates the inclusion on \_ *First* and the parenthesis on the right indicates the inclusion of elements up to \_ *Left* but excluding \_ *Left* itself. The same elements are included in the reversed sequence [ **rev** â€“ ` first`, **rev** â€“ \_ *Left*) so that if \_ *Left* is the one-past-the-end element in a sequence, then the first element **rev** â€“ \_ *First* in the reversed sequence points to \*(\_ *Left* â€“ 1 ). The identity which relates all reverse iterators to their underlying iterators is:  
+ The range of an iterator is [*first*, *last*), where the square bracket on the left indicates the inclusion of *first* and the parenthesis on the right indicates the inclusion of elements up to but excluding *last* itself. The same elements are included in the reversed sequence [ **rev** - *first*, **rev** - *last*) so that if *last* is the one-past-the-end element in a sequence, then the first element **rev** - *first* in the reversed sequence points to \*(*last* - 1). The identity which relates all reverse iterators to their underlying iterators is:  
   
- &\*( **reverse_iterator** ( *i* ) ) == &\*( *i* â€“ 1 ).  
+ &\*( **reverse_iterator** ( *i* ) ) == &\*( *i* - 1 ).  
   
  In practice, this means that in the reversed sequence the reverse_iterator will refer to the element one position beyond (to the right of) the element that the iterator had referred to in the original sequence. So if an iterator addressed the element 6 in the sequence (2, 4, 6, 8), then the `reverse_iterator` will address the element 4 in the reversed sequence (8, 6, 4, 2).  
   
@@ -115,7 +115,7 @@ RandomIterator base() const;
 ### Remarks  
  The identity that relates all reverse iterators to their underlying iterators is:  
   
- &\*( `reverse_iterator` ( *i* ) ) == &\*( *i* â€“ 1 ).  
+ &\*( `reverse_iterator` ( *i* ) ) == &\*( *i* - 1 ).  
   
  In practice, this means that in the reversed sequence the `reverse_iterator` will refer to the element one position beyond (to the right of) the element that the iterator had referred to in the original sequence. So if an iterator addressed the element 6 in the sequence (2, 4, 6, 8), then the `reverse_iterator` will address the element 4 in the reversed sequence (8, 6, 4, 2).  
   
@@ -207,7 +207,7 @@ reference operator*() const;
  The value of the elements addressed by the reverse_iterator.  
   
 ### Remarks  
- The operator returns \*( **current** â€“ 1).  
+ The operator returns \*( **current** - 1).  
   
 ### Example  
   
@@ -933,7 +933,7 @@ reverse_iterator(const reverse_iterator<Type>& right);
 ### Remarks  
  The identity which relates all reverse iterators to their underlying iterators is:  
   
- &\*( `reverse_iterator` ( *i* ) ) == &\*( *i* â€“ 1 ).  
+ &\*( `reverse_iterator` ( *i* ) ) == &\*( *i* - 1 ).  
   
  In practice, this means that in the reversed sequence the reverse_iterator will refer to the element one position beyond (to the right of) the element that the iterator had referred to in the original sequence. So if an iterator addressed the element 6 in the sequence (2, 4, 6, 8), then the `reverse_iterator` will address the element 4 in the reversed sequence (8, 6, 4, 2).  
   

@@ -144,12 +144,6 @@ int main( void )
 This is the line of output  
 ```  
   
-## .NET Framework Equivalent  
-  
--   [System::IO::StreamWriter::Write](https://msdn.microsoft.com/en-us/library/system.io.streamwriter.write.aspx)  
-  
--   [System::Console::Write](https://msdn.microsoft.com/en-us/library/system.console.write.aspx)  
-  
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fputc, fputwc](../../c-runtime-library/reference/fputc-fputwc.md)   

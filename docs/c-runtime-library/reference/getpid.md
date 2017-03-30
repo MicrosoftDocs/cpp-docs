@@ -100,9 +100,6 @@ int main( void )
 Process id: 3584  
 ```  
   
-## .NET Framework Equivalent  
- [System::Diagnostics::Process::Id](https://msdn.microsoft.com/en-us/library/system.diagnostics.process.id.aspx)  
-  
 ## See Also  
  [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
  [_mktemp, _wmktemp](../../c-runtime-library/reference/mktemp-wmktemp.md)

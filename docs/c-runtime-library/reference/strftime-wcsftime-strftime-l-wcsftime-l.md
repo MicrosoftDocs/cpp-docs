@@ -225,18 +225,6 @@ size_t _wcsftime_l(
 ## Example  
  See the example for [time](../../c-runtime-library/reference/time-time32-time64.md).  
   
-## .NET Framework Equivalent  
-  
--   [System::DateTime::ToLongDateString](https://msdn.microsoft.com/en-us/library/system.datetime.tolongdatestring.aspx)  
-  
--   [System::DateTime::ToLongTimeString](https://msdn.microsoft.com/en-us/library/system.datetime.tolongtimestring.aspx)  
-  
--   [System::DateTime::ToShortDateString](https://msdn.microsoft.com/en-us/library/system.datetime.toshortdatestring.aspx)  
-  
--   [System::DateTime::ToShortTimeString](https://msdn.microsoft.com/en-us/library/system.datetime.toshorttimestring.aspx)  
-  
--   [System::DateTime::ToString](https://msdn.microsoft.com/en-us/library/system.datetime.tostring.aspx)  
-  
 ## See Also  
  [Locale](../../c-runtime-library/locale.md)   
  [Time Management](../../c-runtime-library/time-management.md)   

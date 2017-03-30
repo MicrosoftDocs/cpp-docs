@@ -160,9 +160,6 @@ strcat_s(buf, 16 – strlen(buf), " End"); // Incorrect
 ## Example  
  See the code example in [strcpy_s, wcscpy_s, _mbscpy_s](../../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md).  
   
-## .NET Framework Equivalent  
- [System::String::Concat](https://msdn.microsoft.com/en-us/library/system.string.concat.aspx)  
-  
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](../../c-runtime-library/reference/strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)   

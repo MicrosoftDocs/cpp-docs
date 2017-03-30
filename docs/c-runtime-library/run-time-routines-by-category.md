@@ -40,8 +40,6 @@ translation.priority.ht:
 # Run-Time Routines by Category
 This section lists and describes Microsoft run-time library routines by category. For reference convenience, some routines are listed in more than one category. Multibyte-character routines and wide-character routines are grouped with single-byte – character counterparts, where they exist.  
   
- This section also provides .NET Framework equivalent methods or classes where available.  
-  
  The main categories of Microsoft run-time library routines are:  
   
 |||  

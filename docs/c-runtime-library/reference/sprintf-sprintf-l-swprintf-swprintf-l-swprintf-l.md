@@ -237,9 +237,6 @@ wrote 11 characters
 wrote -1 characters  
 ```  
   
-## .NET Framework Equivalent  
- [System::String::Format](https://msdn.microsoft.com/en-us/library/system.string.format.aspx)  
-  
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)   

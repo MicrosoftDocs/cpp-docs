@@ -183,12 +183,6 @@ Function: atol( "3336402735171707160320" ) = 2147483647
 Overflow condition occurred.  
 ```  
   
-## .NET Framework Equivalent  
-  
--   [System::Convert::ToInt32](https://msdn.microsoft.com/en-us/library/system.convert.toint32.aspx)  
-  
--   [System::Convert::ToUInt32](https://msdn.microsoft.com/en-us/library/system.convert.touint32.aspx)  
-  
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

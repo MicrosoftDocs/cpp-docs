@@ -184,16 +184,6 @@ int main( void )
 The time is Wed Feb 13 16:04:43 2002  
 ```  
   
-## .NET Framework Equivalent  
-  
--   [System::DateTime::GetDateTimeFormats](https://msdn.microsoft.com/en-us/library/system.datetime.getdatetimeformats.aspx)  
-  
--   [System::DateTime::ToString](https://msdn.microsoft.com/en-us/library/system.datetime.tostring.aspx)  
-  
--   [System::DateTime::ToLongTimeString](https://msdn.microsoft.com/en-us/library/system.datetime.tolongtimestring.aspx)  
-  
--   [System::DateTime::ToShortTimeString](https://msdn.microsoft.com/en-us/library/system.datetime.toshorttimestring.aspx)  
-  
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   
  [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)   

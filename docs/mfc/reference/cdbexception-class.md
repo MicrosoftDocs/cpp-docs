@@ -114,7 +114,7 @@ class CDBException : public CException
   
 - **AFX_SQL_ERROR_RECORDSET_FORWARD_ONLY** An attempt to scroll did not succeed because the data source does not support backward scrolling.  
   
-- **AFX_SQL_ERROR_SNAPSHOT_NOT_SUPPORTED** A call to `CRecordset::Open` requesting a snapshot failed. Snapshots are not supported by the driver. (This should only occur when the ODBC cursor library â€” ODBCCURS.DLL â€” is not present.)  
+- **AFX_SQL_ERROR_SNAPSHOT_NOT_SUPPORTED** A call to `CRecordset::Open` requesting a snapshot failed. Snapshots are not supported by the driver. (This should only occur when the ODBC cursor library ODBCCURS.DLL is not present.)  
   
 - **AFX_SQL_ERROR_SQL_CONFORMANCE** The driver for a `CDatabase::OpenEx` or `CDatabase::Open` call does not conform to the required ODBC SQL Conformance level of "Minimum" ( **SQL_OSC_MINIMUM**).  
   

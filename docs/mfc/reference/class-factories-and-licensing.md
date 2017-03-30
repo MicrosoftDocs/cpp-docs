@@ -167,7 +167,7 @@ BOOL AFXAPI AfxVerifyLicFile(
  Nonzero if the license file exists and begins with the character sequence in `pszLicFileContents`; otherwise 0.  
   
 ### Remarks  
- If `cch` is â€“ 1, this function uses:  
+ If `cch` is -1, this function uses:  
   
  [!code-cpp[NVC_MFC_Utilities#36](../../mfc/codesnippet/cpp/class-factories-and-licensing_2.cpp)]  
 
