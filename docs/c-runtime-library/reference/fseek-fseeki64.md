@@ -163,12 +163,6 @@ File pointer is set to middle of first line.
 This is the file 'fseek.out'.  
 ```  
   
-## .NET Framework Equivalent  
-  
--   [System::IO::FileStream::Position](https://msdn.microsoft.com/en-us/library/system.io.filestream.position.aspx)  
-  
--   [System::IO::FileStream::Seek](https://msdn.microsoft.com/en-us/library/system.io.filestream.seek.aspx)  
-  
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)   

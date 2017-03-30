@@ -1,5 +1,5 @@
 ---
-title: "fesetenv1 | Microsoft Docs"
+title: "fesetenv | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -60,15 +60,14 @@ Sets the current floating-point environment.
 int fesetenv(  
    const fenv_t *penv  
 );  
-  
 ```  
   
 #### Parameters  
  `penv`  
- Pointer to a `fenv_t` object that contains a floating-point environment as set by a call to [fegetenv](http://msdn.microsoft.com/Library/61df848d-6ba8-4c6e-be35-216436fe7736) or [feholdexcept](http://msdn.microsoft.com/Library/c286ace3-ec39-482a-be8b-f998d31003d9). You can also specify the default startup floating-point environment by using the FE_DFL_ENV macro.  
+ Pointer to a `fenv_t` object that contains a floating-point environment as set by a call to [fegetenv](fegetenv1.md) or [feholdexcept](feholdexcept2.md). You can also specify the default startup floating-point environment by using the FE_DFL_ENV macro.  
   
 ## Return Value  
- Returns 0 if the environment was successfully set.        Otherwise, returns a nonzero value.  
+ Returns 0 if the environment was successfully set. Otherwise, returns a nonzero value.  
   
 ## Remarks  
  The `fesetenv` function sets the current floating-point environment from the value stored in the `fenv_t` object pointed to by `penv`. The floating point environment is the set of status flags and control modes that affect floating-point calculations. This includes the rounding mode and the status flags for floating-point exceptions.  If `penv` is not FE_DFL_ENV or does not point to a valid `fenv_t` object, subsequent behavior is undefined.  

@@ -168,9 +168,6 @@ int main( )
 Converted value: 12000  
 ```  
   
-## .NET Framework Equivalent  
- <xref:System.Convert.ToString%2A>  
-  
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

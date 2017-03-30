@@ -166,9 +166,6 @@ Volume in drive C has no label.
                0 Dir(s)  67,326,029,824 bytes free  
 ```  
   
-## .NET Framework Equivalent  
- [System::Environment::CurrentDirectory](https://msdn.microsoft.com/en-us/library/system.environment.currentdirectory.aspx)  
-  
 ## See Also  
  [Directory Control](../../c-runtime-library/directory-control.md)   
  [_mkdir, _wmkdir](../../c-runtime-library/reference/mkdir-wmkdir.md)   

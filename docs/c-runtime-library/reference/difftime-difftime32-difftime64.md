@@ -166,9 +166,6 @@ Using random floating point numbers 1.04749e+038 2.01482e+038 1.72737e+038Multip
 Program takes      5 seconds.  
 ```  
   
-## .NET Framework Equivalent  
- [System::DateTime::Subtract](https://msdn.microsoft.com/en-us/library/system.datetime.subtract.aspx)  
-  
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [Time Management](../../c-runtime-library/time-management.md)   

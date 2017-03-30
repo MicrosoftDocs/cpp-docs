@@ -120,9 +120,6 @@ int _wrmdir(
 ## Example  
  See the example for [_mkdir](../../c-runtime-library/reference/mkdir-wmkdir.md).  
   
-## .NET Framework Equivalent  
- [System::IO::Directory::Delete](https://msdn.microsoft.com/en-us/library/system.io.directory.delete.aspx)  
-  
 ## See Also  
  [Directory Control](../../c-runtime-library/directory-control.md)   
  [_chdir, _wchdir](../../c-runtime-library/reference/chdir-wchdir.md)   

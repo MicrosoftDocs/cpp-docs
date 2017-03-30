@@ -139,9 +139,6 @@ int main( )
 Hello found  
 ```  
   
-## .NET Framework Equivalent  
- [System::Collections::ArrayList::Contains](https://msdn.microsoft.com/en-us/library/system.collections.arraylist.contains.aspx)  
-  
 ## See Also  
  [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)   
  [_lfind_s](../../c-runtime-library/reference/lfind-s.md)   

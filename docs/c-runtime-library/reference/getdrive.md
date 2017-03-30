@@ -126,9 +126,6 @@ F: (Current directory is F:\)
 G: (Current directory is G:\)  
 ```  
   
-## .NET Framework Equivalent  
- [System::Environment::CurrentDirectory](https://msdn.microsoft.com/en-us/library/system.environment.currentdirectory.aspx)  
-  
 ## See Also  
  [Directory Control](../../c-runtime-library/directory-control.md)   
  [_chdrive](../../c-runtime-library/reference/chdrive.md)   

@@ -159,9 +159,6 @@ string = 3.1415926535898This stopped it
   
 ```  
   
-## .NET Framework Equivalent  
- [System::Convert::ToDouble](https://msdn.microsoft.com/en-us/library/system.convert.todouble.aspx)  
-  
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

@@ -109,9 +109,6 @@ lineNumber);
 ## Example  
  For a sample of how to use `_CrtSetAllocHook`, see [crt_dbg2](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167).  
   
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
-  
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)   
  [_CrtGetAllocHook](../../c-runtime-library/reference/crtgetallochook.md)

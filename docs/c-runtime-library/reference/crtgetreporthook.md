@@ -82,9 +82,6 @@ _CRT_REPORT_HOOK _CrtGetReportHook( void );
 ## Example  
  For a sample of how to use `_CrtSetReportHook`, see [report](http://msdn.microsoft.com/en-us/f6e08c30-6bd9-459a-830a-56deec0d2051).  
   
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
-  
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)   
  [_CrtSetReportHook](../../c-runtime-library/reference/crtsetreporthook.md)

@@ -186,12 +186,6 @@ successfully reassigned
 This will go to the file 'freopen.out'  
 ```  
   
-## .NET Framework Equivalent  
-  
--   [System::IO::File::Open](https://msdn.microsoft.com/en-us/library/system.io.file.open.aspx)  
-  
--   <xref:System.IO.FileStream.%23ctor%2A>  
-  
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [freopen, _wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)   

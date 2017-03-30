@@ -153,16 +153,6 @@ int main(int argc, char *argv[]) {
   
  See [crt_dbg2](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167) for an example of how to change the report function.  
   
-## .NET Framework Equivalent  
-  
--   [System::Diagnostics::Debug::Write](https://msdn.microsoft.com/en-us/library/system.diagnostics.debug.write.aspx)  
-  
--   [System::Diagnostics::Debug::Writeline](https://msdn.microsoft.com/en-us/library/system.diagnostics.debug.writeline.aspx)  
-  
--   [System::Diagnostics::Debug::WriteIf](https://msdn.microsoft.com/en-us/library/system.diagnostics.debug.writeif.aspx)  
-  
--   [System::Diagnostics::Debug::WriteLineIf](https://msdn.microsoft.com/en-us/library/system.diagnostics.debug.writelineif.aspx)  
-  
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)   
  [_CrtSetReportMode](../../c-runtime-library/reference/crtsetreportmode.md)   

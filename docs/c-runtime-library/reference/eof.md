@@ -135,9 +135,6 @@ This file contains some text.
 Number of bytes read = 29  
 ```  
   
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
-  
 ## See Also  
  [Error Handling](../../c-runtime-library/error-handling-crt.md)   
  [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)   

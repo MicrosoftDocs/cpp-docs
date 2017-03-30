@@ -155,9 +155,6 @@ Arcsine of 0.000000 = 0.000000
 Arccosine of 0.000000 = 1.570796  
 ```  
   
-## .NET Framework Equivalent  
- [System::Math::Acos](https://msdn.microsoft.com/en-us/library/system.math.acos.aspx)  
-  
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [asin, asinf, asinl](../../c-runtime-library/reference/asin-asinf-asinl.md)   

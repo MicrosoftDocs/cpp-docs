@@ -96,9 +96,6 @@ Tests the given integer value `c` for a particular condition, by using the curre
   
  The `_ismbb` routines are implemented both as functions and as macros. For more information about how to choose either implementation, see [Recommendations for Choosing Between Functions and Macros](../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md).  
   
-## .NET Framework Equivalent  
- Not applicable, but see [System::Globalization::CultureInfo](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.aspx).  
-  
 ## See Also  
  [Byte Classification](../c-runtime-library/byte-classification.md)   
  [is, isw Routines](../c-runtime-library/is-isw-routines.md)   

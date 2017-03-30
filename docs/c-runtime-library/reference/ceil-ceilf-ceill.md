@@ -106,9 +106,6 @@ long double ceill(
 ## Example  
  See the example for [floor](../../c-runtime-library/reference/floor-floorf-floorl.md).  
   
-## .NET Framework Equivalent  
- [System::Math::Ceiling](https://msdn.microsoft.com/en-us/library/system.math.ceiling.aspx)  
-  
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [floor, floorf, floorl](../../c-runtime-library/reference/floor-floorf-floorl.md)   

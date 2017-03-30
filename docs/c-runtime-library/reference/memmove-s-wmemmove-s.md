@@ -147,9 +147,6 @@ Before: 0123456789
  After: 0012345789  
 ```  
   
-## .NET Framework Equivalent  
- [System::Buffer::BlockCopy](https://msdn.microsoft.com/en-us/library/system.buffer.blockcopy.aspx)  
-  
 ## See Also  
  [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)   
  [_memccpy](../../c-runtime-library/reference/memccpy.md)   

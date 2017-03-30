@@ -98,9 +98,6 @@ size_t fwrite(
 ## Example  
  See the example for [fread](../../c-runtime-library/reference/fread.md).  
   
-## .NET Framework Equivalent  
- [System::IO::FileStream::Write](https://msdn.microsoft.com/en-us/library/system.io.filestream.write.aspx)  
-  
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [_setmode](../../c-runtime-library/reference/setmode.md)   

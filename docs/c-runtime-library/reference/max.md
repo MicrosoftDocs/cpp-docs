@@ -85,9 +85,6 @@ type __max(
 ## Example  
  For more information, see the example for [__min](../../c-runtime-library/reference/min.md).  
   
-## .NET Framework Equivalent  
- [System::Math::Max](https://msdn.microsoft.com/en-us/library/system.math.max.aspx)  
-  
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [__min](../../c-runtime-library/reference/min.md)

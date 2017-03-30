@@ -158,9 +158,6 @@ Before: This is a test of the wmemset function
 After:  **** is a test of the wmemset function  
 ```  
   
-## .NET Framework Equivalent  
- [System::Buffer::SetByte](https://msdn.microsoft.com/en-us/library/system.buffer.setbyte.aspx)  
-  
 ## See Also  
  [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)   
  [_memccpy](../../c-runtime-library/reference/memccpy.md)   
