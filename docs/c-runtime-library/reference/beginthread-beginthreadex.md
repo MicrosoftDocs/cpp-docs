@@ -333,9 +333,6 @@ In second thread...
 Counter should be 1000000; it is-> 1000000  
 ```  
   
-## .NET Framework Equivalent  
- [System::Threading::Thread::Start](https://msdn.microsoft.com/en-us/library/system.threading.thread.start.aspx)  
-  
 ## See Also  
  [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
  [_endthread, _endthreadex](../../c-runtime-library/reference/endthread-endthreadex.md)   

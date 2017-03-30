@@ -160,9 +160,6 @@ Current time is Fri Apr 25 13:34:07 2003
 In 20 days the time will be Thu May 15 13:34:07 2003  
 ```  
   
-## .NET Framework Equivalent  
- <xref:System.DateTimeOffset.%23ctor%2A>  
-  
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   
  [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)   

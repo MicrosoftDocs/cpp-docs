@@ -175,9 +175,6 @@ const unsigned char *_mbsrchr_l(
 ## Example  
  For an example of using `strrchr`, see [strchr](../../c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l.md).  
   
-## .NET Framework Equivalent  
- [System::String::LastIndexOf](https://msdn.microsoft.com/en-us/library/system.string.lastindexof.aspx)  
-  
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   

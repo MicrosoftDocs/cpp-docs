@@ -5,13 +5,13 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
-  - "devlang-cpp"
+- "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords:
  - "IAtlAutoThreadModule"
  - "atlbase/ATL::IAtlAutoThreadModule"
- dev_langs: 
+dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IAtlAutoThreadModule class"

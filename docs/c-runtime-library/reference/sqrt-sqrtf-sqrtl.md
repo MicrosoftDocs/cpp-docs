@@ -130,9 +130,6 @@ int main( void )
 The square root of 45.35 is 6.73  
 ```  
   
-## .NET Framework Equivalent  
- [System::Math::Sqrt](https://msdn.microsoft.com/en-us/library/system.math.sqrt.aspx)  
-  
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [exp, expf](../../c-runtime-library/reference/exp-expf.md)   

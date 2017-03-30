@@ -143,14 +143,6 @@ int _ismbcdigit_l
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
-## .NET Framework Equivalent  
-  
--   [System::Char::IsLetter](https://msdn.microsoft.com/en-us/library/system.char.isletter.aspx)  
-  
--   [System::Char::IsDigit](https://msdn.microsoft.com/en-us/library/system.char.isdigit.aspx)  
-  
--   For `_ismbcalnum`: Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
-  
 ## See Also  
  [Character Classification](../../c-runtime-library/character-classification.md)   
  [_ismbc Routines](../../c-runtime-library/ismbc-routines.md)   

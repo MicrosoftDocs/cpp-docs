@@ -188,18 +188,6 @@ int main( void )
 Current date and time: Wed May 14 15:30:17 2003  
 ```  
   
-## .NET Framework Equivalent  
-  
--   <xref:System.DateTime.ToLongDateString%2A?displayProperty=fullName>  
-  
--   <xref:System.DateTime.ToLongTimeString%2A?displayProperty=fullName>  
-  
--   <xref:System.DateTime.ToShortDateString%2A?displayProperty=fullName>  
-  
--   <xref:System.DateTime.ToShortTimeString%2A?displayProperty=fullName>  
-  
--   <xref:System.DateTime.ToString%2A?displayProperty=fullName>  
-  
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   
  [ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](../../c-runtime-library/reference/ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)   

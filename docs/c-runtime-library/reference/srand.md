@@ -86,9 +86,6 @@ void srand(
 ## Example  
  See the example for [rand](../../c-runtime-library/reference/rand.md).  
   
-## .NET Framework Equivalent  
- [System::Random Class](https://msdn.microsoft.com/en-us/library/system.random.aspx)  
-  
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [rand](../../c-runtime-library/reference/rand.md)

@@ -160,9 +160,6 @@ int main( void )
 The portion of 'cabbage' containing only a, b, or c is 5 bytes long  
 ```  
   
-## .NET Framework Equivalent  
- [System::String::Substring](https://msdn.microsoft.com/en-us/library/system.string.substring.aspx)  
-  
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   

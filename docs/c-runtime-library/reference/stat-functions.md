@@ -350,16 +350,6 @@ Drive         : C:
 Time modified : Thu Feb 07 14:39:36 2002  
 ```  
   
-## .NET Framework Equivalent  
-  
--   [System::IO::File::GetAttributes](https://msdn.microsoft.com/en-us/library/system.io.file.getattributes.aspx)  
-  
--   [System::IO::File::GetCreationTime](https://msdn.microsoft.com/en-us/library/system.io.file.getcreationtime.aspx)  
-  
--   [System::IO::File::GetLastAccessTime](https://msdn.microsoft.com/en-us/library/system.io.file.getlastaccesstime.aspx)  
-  
--   [System::IO::File::GetLastWriteTime](https://msdn.microsoft.com/en-us/library/system.io.file.getlastwritetime.aspx)  
-  
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   
  [_access, _waccess](../../c-runtime-library/reference/access-waccess.md)   

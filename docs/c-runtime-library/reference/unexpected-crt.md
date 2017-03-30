@@ -68,9 +68,6 @@ void unexpected( void );
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
-## .NET Framework Equivalent  
- [System::Exception Class](https://msdn.microsoft.com/en-us/library/system.exception.aspx)  
-  
 ## See Also  
  [Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)   
  [abort](../../c-runtime-library/reference/abort.md)   

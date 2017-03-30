@@ -166,12 +166,6 @@ Arctangent of 5.000000: 1.373401
 Arctangent of 0.500000 / 5.000000: 0.099669  
 ```  
   
-## .NET Framework Equivalent  
-  
--   [System::Math::Atan](https://msdn.microsoft.com/en-us/library/system.math.atan.aspx)  
-  
--   [System::Math::Atan2](https://msdn.microsoft.com/en-us/library/system.math.atan2.aspx)  
-  
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [acos, acosf, acosl](../../c-runtime-library/reference/acos-acosf-acosl.md)   

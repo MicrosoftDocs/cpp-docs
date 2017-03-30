@@ -146,9 +146,6 @@ Original: This is the buffer text
 Copy:     This is the buffer text  
 ```  
   
-## .NET Framework Equivalent  
- [System::String::Clone](https://msdn.microsoft.com/en-us/library/system.string.clone.aspx)  
-  
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [memset, wmemset](../../c-runtime-library/reference/memset-wmemset.md)   

@@ -226,9 +226,6 @@ Result:   first r found at position 12
 Result:   last r found at position 30  
 ```  
   
-## .NET Framework Equivalent  
- [System::String::IndexOf](https://msdn.microsoft.com/en-us/library/system.string.indexof.aspx)  
-  
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   

@@ -192,9 +192,6 @@ No one can change these bytes while I'm reading them
 Now I'm done. Do what you will with them  
 ```  
   
-## .NET Framework Equivalent  
- [System::IO::FileStream::Lock](https://msdn.microsoft.com/en-us/library/system.io.filestream.lock.aspx)  
-  
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   
  [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)   

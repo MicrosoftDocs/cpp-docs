@@ -132,12 +132,6 @@ intptr_t _wspawnvpe(
 ## Example  
  See the example in [_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md).  
   
-## .NET Framework Equivalent  
-  
--   [System::Diagnostics::Process Class](https://msdn.microsoft.com/en-us/library/system.diagnostics.process.aspx)  
-  
--   [System::Diagnostics::ProcessStartInfo Class](https://msdn.microsoft.com/en-us/library/system.diagnostics.processstartinfo.aspx)  
-  
 ## See Also  
  [abort](../../c-runtime-library/reference/abort.md)   
  [atexit](../../c-runtime-library/reference/atexit.md)   

@@ -118,12 +118,6 @@ int _ismbcupper_l(
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
-## .NET Framework Equivalent  
-  
--   [System::Char::IsLower](https://msdn.microsoft.com/en-us/library/system.char.islower.aspx)  
-  
--   [System::Char::IsUpper](https://msdn.microsoft.com/en-us/library/system.char.isupper.aspx)  
-  
 ## See Also  
  [Character Classification](../../c-runtime-library/character-classification.md)   
  [_ismbc Routines](../../c-runtime-library/ismbc-routines.md)   
