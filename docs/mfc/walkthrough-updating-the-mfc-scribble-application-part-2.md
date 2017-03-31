@@ -279,7 +279,7 @@ if (nCurSel>= 0)
   
     1.  In the **Resource View** window, open the IDR_SCRIBBTYPE menu resource.  
   
-    2.  Right-click the **Color** menu item and click **Add Event Handler…**. The **Event Handler Wizard** appears.  
+    2.  Right-click the **Color** menu item and click **Add Event Handler**. The **Event Handler Wizard** appears.  
   
     3.  In the **Class list** box in the wizard, select **CScribbleDoc** and then click the **Add and Edit** button. This creates the `CScribbleDoc::OnPenColor` event handler stub.  
   

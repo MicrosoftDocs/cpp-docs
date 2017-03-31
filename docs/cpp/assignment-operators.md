@@ -71,7 +71,7 @@ translation.priority.ht:
   
       expression assignment-operator expression   
 assignment-operator : one of  
-   =   *=   /=   %=   +=   –=   <<=   >>=   &=   ^=   |=  
+   =   *=   /=   %=   +=   -=   <<=   >>=   &=   ^=   |=  
 ```  
   
 ## Remarks  
@@ -86,7 +86,7 @@ assignment-operator : one of
 |`/=`|Divide the value of the first operand by the value of the second operand; store the result in the object specified by the first operand.|  
 |`%=`|Take modulus of the first operand specified by the value of the second operand; store the result in the object specified by the first operand.|  
 |`+=`|Add the value of the second operand to the value of the first operand; store the result in the object specified by the first operand.|  
-|**–=**|Subtract the value of the second operand from the value of the first operand; store the result in the object specified by the first operand.|  
+|**-=**|Subtract the value of the second operand from the value of the first operand; store the result in the object specified by the first operand.|  
 |**<\<=**|Shift the value of the first operand left the number of bits specified by the value of the second operand; store the result in the object specified by the first operand.|  
 |**>>=**|Shift the value of the first operand right the number of bits specified by the value of the second operand; store the result in the object specified by the first operand.|  
 |**&=**|Obtain the bitwise AND of the first and second operands; store the result in the object specified by the first operand.|  
@@ -202,7 +202,7 @@ B = A;
   
 -   An arithmetic type  
   
--   A pointer, if `op` is + or –  
+-   A pointer, if `op` is + or -  
   
  The *e1* `op`= *e2* form behaves as *e1* *= e1* `op` *e2*, but *e1* is evaluated only once.  
   

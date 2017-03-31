@@ -85,9 +85,9 @@ long double asinl(
  Value whose arcsine is to be calculated.  
   
 ## Return Value  
- The `asin` function returns the arcsine (the inverse sine function) of `x` in the range –π/2 to π/2 radians.  
+ The `asin` function returns the arcsine (the inverse sine function) of `x` in the range -π/2 to π/2 radians.  
   
- By default, if `x` is less than –1 or greater than 1, `asin` returns an indefinite.  
+ By default, if `x` is less than -1 or greater than 1, `asin` returns an indefinite.  
   
 |Input|SEH Exception|Matherr Exception|  
 |-----------|-------------------|-----------------------|  

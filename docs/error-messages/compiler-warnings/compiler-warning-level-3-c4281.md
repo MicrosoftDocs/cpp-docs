@@ -35,9 +35,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Compiler Warning (level 3) C4281
-'operator –>' recursion occurred through type 'type'  
+'operator ->' recursion occurred through type 'type'  
   
- Your code allows **operator–>** to call itself.  
+ Your code allows **operator->** to call itself.  
   
  The following sample generates C4281:  
   

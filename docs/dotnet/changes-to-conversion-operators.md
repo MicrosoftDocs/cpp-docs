@@ -63,9 +63,9 @@ class MyDouble {
   
  The C# code looks more like C++ than Managed Extensions for C++ does. That is not the case in the new syntax.  
   
- The ISO-C++ committee introduced a keyword, `explicit`, to mitigate unintended consequences – for example, an `Array` class which takes a single integer argument as a dimension will implicitly convert any integer into an `Array` object which is not what you want. One way to prevent this is a design idiom of a dummy second argument to a constructor  
+ The ISO-C++ committee introduced a keyword, `explicit`, to mitigate unintended consequences - for example, an `Array` class which takes a single integer argument as a dimension will implicitly convert any integer into an `Array` object which is not what you want. One way to prevent this is a design idiom of a dummy second argument to a constructor  
   
- On the other hand, you should not provide a conversion pair when designing a class type within C++. The best example for that is the standard string class. The implicit conversion is the single-argument constructor taking a C-style string. However, it does not provide the corresponding implicit conversion operator – that of converting a string object to a C-style string, but rather requires the user to explicitly invoke a named function – in this case, `c_str()`.  
+ On the other hand, you should not provide a conversion pair when designing a class type within C++. The best example for that is the standard string class. The implicit conversion is the single-argument constructor taking a C-style string. However, it does not provide the corresponding implicit conversion operator - that of converting a string object to a C-style string, but rather requires the user to explicitly invoke a named function - in this case, `c_str()`.  
   
  So, associating an implicit/explicit behavior on a conversion operator (and as encapsulating the set of conversions to a single form of declaration) appears to be an improvement on the original C++ support for conversion operators, which eventually led to the `explicit` keyword. The [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)] language support for conversion operators looks as follows, which is slightly less verbose than that of C# because of the default behavior of the operator supporting an implicit application of the conversion algorithm:  
   

@@ -33,7 +33,7 @@ translation.priority.ht:
 # Range of char Values
 **ANSI 3.2.1.1** Whether a "plain" **char** has the same range of values as a **signed char** or an `unsigned char`  
   
- All signed character values range from –128 to 127. All unsigned character values range from 0 to 255.  
+ All signed character values range from -128 to 127. All unsigned character values range from 0 to 255.  
   
  The /J compiler option changes the default from **signed** to `unsigned`.  
   

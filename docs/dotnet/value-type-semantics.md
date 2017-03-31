@@ -84,7 +84,7 @@ v.ToString(); // new syntax
 ## There is No Longer a Value Class Default Constructor  
  Another difference with a value type between Managed Extensions and the new syntax is the removal of support for a default constructor. This is because there are occasions during execution in which the CLR can create an instance of the value type without invoking the associated default constructor. That is, the attempt under Managed Extensions to support a default constructor within a value type could not in practice be guaranteed. Given that absence of guarantee, it was felt to be better to drop the support altogether rather than have it be non-deterministic in its application.  
   
- This is not as bad as it might initially seem. This is because each object of a value type is zeroed out automatically (that is, each type is initialized to its default value). As a result, the members of a local instance are never undefined. In this sense, the loss of the ability to define a trivial default constructor is really not a loss at all – and in fact is more efficient when performed by the CLR.  
+ This is not as bad as it might initially seem. This is because each object of a value type is zeroed out automatically (that is, each type is initialized to its default value). As a result, the members of a local instance are never undefined. In this sense, the loss of the ability to define a trivial default constructor is really not a loss at all - and in fact is more efficient when performed by the CLR.  
   
  The problem is when a user of Managed Extensions defines a non-trivial default constructor. This has no mapping to the new syntax. The code within the constructor will need to be migrated into a named initialization method that would then need to be explicitly invoked by the user.  
   
@@ -168,7 +168,7 @@ int main()
    H * h = new H;  
    int __pin * k = & h -> j;  
   
-   // …  
+   // ...  
 };  
 ```  
   
@@ -186,7 +186,7 @@ int main()
    H^ h = gcnew H;  
    pin_ptr<int> k = &h->j;  
   
-   // …  
+   // ...  
 }  
 ```  
   

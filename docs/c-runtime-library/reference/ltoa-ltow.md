@@ -102,7 +102,7 @@ wchar_t *_ltow(
  Each of these functions returns a pointer to `str`. There is no error return.  
   
 ## Remarks  
- The `_ltoa` function converts the digits of `value` to a null-terminated character string and stores the result (up to 33 bytes) in `str`. The `radix` argument specifies the base of `value`, which must be in the range 2 – 36. If `radix` equals 10 and `value` is negative, the first character of the stored string is the minus sign (–). `_ltow` is a wide-character version of `_ltoa`; the second argument and return value of `_ltow` are wide-character strings. Each of these functions is Microsoft-specific.  
+ The `_ltoa` function converts the digits of `value` to a null-terminated character string and stores the result (up to 33 bytes) in `str`. The `radix` argument specifies the base of `value`, which must be in the range 2 - 36. If `radix` equals 10 and `value` is negative, the first character of the stored string is the minus sign (-). `_ltow` is a wide-character version of `_ltoa`; the second argument and return value of `_ltow` are wide-character strings. Each of these functions is Microsoft-specific.  
   
 > [!IMPORTANT]
 >  To prevent buffer overruns, ensure that the `str` buffer is large enough to hold the converted digits plus the trailing null-character and a sign character.  

@@ -6,7 +6,7 @@ namespace PublicEnumTest
     //<snippet01>
     // Define the enum
     public enum class TrafficLight : int { Red, Yellow, Green }; 
-    //…
+    // ...
     //</snippet01>
 
     public ref class Class1 sealed

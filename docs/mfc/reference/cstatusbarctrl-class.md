@@ -269,7 +269,7 @@ int GetParts(
  Number of parts for which to retrieve coordinates. If this parameter is greater than the number of parts in the control, the message retrieves coordinates for existing parts only.  
   
  *pParts*  
- Address of an integer array having the same number of elements as the number of parts specified by `nParts`. Each element in the array receives the client coordinate of the right edge of the corresponding part. If an element is set to – 1, the position of the right edge for that part extends to the right edge of the status bar.  
+ Address of an integer array having the same number of elements as the number of parts specified by `nParts`. Each element in the array receives the client coordinate of the right edge of the corresponding part. If an element is set to - 1, the position of the right edge for that part extends to the right edge of the status bar.  
   
 ### Return Value  
  The number of parts in the control if successful, or zero otherwise.  
@@ -479,7 +479,7 @@ BOOL SetParts(
  Number of parts to set. The number of parts cannot be greater than 255.  
   
  *pWidths*  
- Address of an integer array having the same number of elements as parts specified by `nParts`. Each element in the array specifies the position, in client coordinates, of the right edge of the corresponding part. If an element is – 1, the position of the right edge for that part extends to the right edge of the control.  
+ Address of an integer array having the same number of elements as parts specified by `nParts`. Each element in the array specifies the position, in client coordinates, of the right edge of the corresponding part. If an element is - 1, the position of the right edge for that part extends to the right edge of the control.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  

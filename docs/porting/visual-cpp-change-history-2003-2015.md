@@ -1383,11 +1383,10 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
     {  
         auto iter = std::find(v.begin(), v.end(), 5);  
     }  
-    catch (…)  
+    catch (...)  
     {  
         do_something();   // ok  
     }  
-  
     ```  
   
      Example (after)  
@@ -1397,11 +1396,10 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
     {  
         auto iter = std::find(v.begin(), v.end(), 5);  
     }  
-    catch (…)  
+    catch (...)  
     {  
         do_something();   // warning C4702: unreachable code  
     }  
-  
     ```  
   
 ###  <a name="VS_Update2"></a> Conformance Improvements in Update 2  

@@ -66,7 +66,7 @@ The Ribbon Designer lets you create and customize ribbons in MFC applications. A
  <ID>  
  <NAME>IDB_BUTTONS</NAME>  
  <VALUE>113</VALUE>  
- </ID> …  
+ </ID>   
  ```  
   
  To use the ribbon resource in your MFC application, load the resource by calling [CMFCRibbonBar::LoadFromResource](../mfc/reference/cmfcribbonbar-class.md#loadfromresource).  

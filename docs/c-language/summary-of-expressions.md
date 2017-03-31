@@ -67,11 +67,11 @@ translation.priority.ht:
   
  *postfix-expression*  **.**  *identifier*  
   
- *postfix-expression*  **–>**  *identifier*  
+ *postfix-expression*  **->**  *identifier*  
   
  *postfix-expression*  **++**  
   
- *postfix-expression*  **––**  
+ *postfix-expression*  **--**  
   
  *argument-expression-list*:  
  *assignment-expression*  
@@ -83,7 +83,7 @@ translation.priority.ht:
   
  **++**  *unary-expression*  
   
- **––**  *unary-expression*  
+ **--**  *unary-expression*  
   
  *unary-operator*  
   
@@ -94,7 +94,7 @@ translation.priority.ht:
  **sizeof (**  *type-name*  **)**  
   
  *unary-operator*: one of  
- **& \* + – ~ !**  
+ **& \* + - ~ !**  
   
  *cast-expression*:  
  *unary-expression*  
@@ -115,7 +115,7 @@ translation.priority.ht:
   
  *additive-expression*  **+**  *multiplicative-expression*  
   
- *additive-expression*  **–**  *multiplicative-expression*  
+ *additive-expression*  **-**  *multiplicative-expression*  
   
  *shift-expression*:  
  *additive-expression*  

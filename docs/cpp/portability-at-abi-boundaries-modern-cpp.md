@@ -34,7 +34,7 @@ translation.priority.ht:
 Use sufficiently portable types and conventions at binary interface boundaries. A “portable type” is a C built-in type or a struct that contains only C built-in types. Class types can only be used when caller and callee agree on layout, calling convention, etc. This is only possible when both are compiled with the same compiler and compiler settings.  
   
 ## How to flatten a class for C portability  
- When callers may be compiled with another compiler/language, then “flatten” to an “extern C” API with a specific calling convention:  
+ When callers may be compiled with another compiler/language, then “flatten” to an **extern "C"** API with a specific calling convention:  
   
 ```cpp  
 // class widget {  
@@ -42,13 +42,12 @@ Use sufficiently portable types and conventions at binary interface boundaries. 
 //   ~widget();  
 //   double method( int, gadget& );  
 // };  
-extern “C” {    // functions using explicit “this”  
-  struct widget;   // + opaque type (fwd decl only)  
-  widget* STDCALL widget_create();    // ctor → create new  “this”  
-  void STDCALL widget_destroy( widget* );    // dtor → consume “this”  
-  double STDCALL widget_method( widget*, int, gadget* );    // method → use “this”  
+extern "C" {        // functions using explicit "this"  
+   struct widget;   // opaque type (forward declaration only)  
+   widget* STDCALL widget_create();      // constructor creates new "this"  
+   void STDCALL widget_destroy(widget*); // destructor consumes "this"  
+   double STDCALL widget_method(widget*, int, gadget*); // method uses "this"  
 }  
-  
 ```  
   
 ## See Also  

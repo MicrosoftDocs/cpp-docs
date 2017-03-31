@@ -112,7 +112,7 @@ long double coshl(
  Angle in radians.  
   
 ## Return Value  
- The cosine or hyperbolic cosine of `x`. If `x` is greater than or equal to 263, or less than or equal to –263, a loss of significance in the result of a call to `cos`, `cosf`, or `cosl` occurs.  
+ The cosine or hyperbolic cosine of `x`. If `x` is greater than or equal to 263, or less than or equal to -263, a loss of significance in the result of a call to `cos`, `cosf`, or `cosl` occurs.  
   
  By default, if the result is too large in a `cosh`, `coshf`, or `coshl` call, the function returns `HUGE_VAL` and sets `errno` to `ERANGE`.  
   

@@ -434,7 +434,7 @@ long FindText(
  Pointer to the [FINDTEXTEX](http://msdn.microsoft.com/library/windows/desktop/bb787909) structure giving the parameters for the search and returning the range where the match was found.  
   
 ### Return Value  
- Zero-based character position of the next match; – 1 if there are no more matches.  
+ Zero-based character position of the next match; - 1 if there are no more matches.  
   
 ### Remarks  
  You can search either up or down by setting the proper range parameters in the [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) structure within the **FINDTEXTEX** structure.  
@@ -789,7 +789,7 @@ void GetSel(
   
 - **GetSel(** `nStartChar` **,** `nEndChar` **)** This form returns the bounds in the parameters `nStartChar` and `nEndChar`.  
   
- The selection includes everything if the beginning ( **cpMin** or `nStartChar`) is 0 and the end ( **cpMax** or `nEndChar`) is – 1.  
+ The selection includes everything if the beginning ( **cpMin** or `nStartChar`) is 0 and the end ( **cpMax** or `nEndChar`) is - 1.  
   
  For more information, see [EM_EXGETSEL](http://msdn.microsoft.com/library/windows/desktop/bb788001) message and [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
@@ -1029,10 +1029,10 @@ long LineFromChar(long nIndex) const;
   
 ### Parameters  
  `nIndex`  
- Contains the zero-based index value for the desired character in the text of the edit control, or contains –1. If `nIndex` is –1, it specifies the current line, that is, the line that contains the caret.  
+ Contains the zero-based index value for the desired character in the text of the edit control, or contains -1. If `nIndex` is -1, it specifies the current line, that is, the line that contains the caret.  
   
 ### Return Value  
- The zero-based line number of the line containing the character index specified by `nIndex`. If `nIndex` is –1, the number of the line that contains the first character of the selection is returned. If there is no selection, the current line number is returned.  
+ The zero-based line number of the line containing the character index specified by `nIndex`. If `nIndex` is -1, the number of the line that contains the first character of the selection is returned. If there is no selection, the current line number is returned.  
   
 ### Remarks  
  A character index is the number of characters from the beginning of the rich edit control. For character counting, an OLE item is counted as a single character.  
@@ -1051,10 +1051,10 @@ int LineIndex(int nLine = -1) const;
   
 ### Parameters  
  `nLine`  
- Contains the index value for the desired line in the text of the edit control, or contains –1. If `nLine` is –1, it specifies the current line, that is, the line that contains the caret.  
+ Contains the index value for the desired line in the text of the edit control, or contains -1. If `nLine` is -1, it specifies the current line, that is, the line that contains the caret.  
   
 ### Return Value  
- The character index of the line specified in `nLine` or –1 if the specified line number is greater then the number of lines in the edit control.  
+ The character index of the line specified in `nLine` or -1 if the specified line number is greater then the number of lines in the edit control.  
   
 ### Remarks  
  The character index is the number of characters from the beginning of the rich edit control to the specified line.  
@@ -1073,7 +1073,7 @@ int LineLength(int nLine = -1) const;
   
 ### Parameters  
  `nLine`  
- Specifies the character index of a character in the line whose length is to be retrieved. If this parameter is –1, the length of the current line (the line that contains the caret) is returned, not including the length of any selected text within the line. When `LineLength` is called for a single-line edit control, this parameter is ignored.  
+ Specifies the character index of a character in the line whose length is to be retrieved. If this parameter is -1, the length of the current line (the line that contains the caret) is returned, not including the length of any selected text within the line. When `LineLength` is called for a single-line edit control, this parameter is ignored.  
   
 ### Return Value  
  When `LineLength` is called for a multiple-line edit control, the return value is the length (in bytes) of the line specified by `nLine`. When `LineLength` is called for a single-line edit control, the return value is the length (in bytes) of the text in the edit control.  
@@ -1523,7 +1523,7 @@ void SetSel(CHARRANGE& cr);
   
  The caret is placed at the end of the selection indicated by the greater of the start ( **cpMin** or `nStartChar`) and end ( **cpMax** or `nEndChar`) indices. This function scrolls the contents of the `CRichEditCtrl` so that the caret is visible.  
   
- To select all the text in this `CRichEditCtrl` object, call `SetSel` with a start index of 0 and an end index of – 1.  
+ To select all the text in this `CRichEditCtrl` object, call `SetSel` with a start index of 0 and an end index of - 1.  
   
  For more information, see [EM_EXSETSEL](http://msdn.microsoft.com/library/windows/desktop/bb788007) message and [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   

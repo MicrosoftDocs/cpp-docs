@@ -52,7 +52,7 @@ Punctuators in C++ have syntactic and semantic meaning to the compiler but do no
  Any of the following characters are considered punctuators:  
 
 ```  
-! % ^ & * ( ) – + = { } | ~  
+! % ^ & * ( ) - + = { } | ~  
 [ ] \ ; ' : " < > ? , . / #  
 ```  
 

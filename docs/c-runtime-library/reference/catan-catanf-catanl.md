@@ -60,7 +60,7 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # catan, catanf, catanl
-Retrieves the arctangent of a complex number with branch cuts outside the interval [−1; +1] along the imaginary axis.  
+Retrieves the arctangent of a complex number with branch cuts outside the interval [-1; +1] along the imaginary axis.  
   
 ## Syntax  
   
@@ -87,7 +87,7 @@ _Lcomplex catanl(
  A complex number that represents an angle, in radians.  
   
 ## Return Value  
- The arctangent of `z`, in radians. The result is unbounded along the imaginary axis, and  in the interval [−π/2; +π/2] along the real axis.  
+ The arctangent of `z`, in radians. The result is unbounded along the imaginary axis, and  in the interval [-π/2; +π/2] along the real axis.  
   
 ## Remarks  
  Because C++ allows overloading, you can call overloads of `catan` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `catan` always takes and returns a `_Dcomplex` value.  

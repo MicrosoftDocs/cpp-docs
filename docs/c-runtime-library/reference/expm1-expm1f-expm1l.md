@@ -83,7 +83,7 @@ long double expm1l(
  The floating-point exponential value.  
   
 ## Return Value  
- The `expm1` functions return a floating-point value that represents e<sup>x</sup> – 1, if successful. On overflow, `expm1` returns `HUGE_VAL`, `expm1f` returns `HUGE_VALF`, `expm1l` returns `HUGE_VALL`, and `errno` is set to `ERANGE`. For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
+ The `expm1` functions return a floating-point value that represents e<sup>x</sup> - 1, if successful. On overflow, `expm1` returns `HUGE_VAL`, `expm1f` returns `HUGE_VALF`, `expm1l` returns `HUGE_VALL`, and `errno` is set to `ERANGE`. For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
  Because C++ allows overloading, you can call overloads of `expm1` that take and return `float` and `long double` values. In a C program, `expm1` always takes and returns a `double`.  

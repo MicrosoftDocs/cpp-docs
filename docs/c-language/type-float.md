@@ -43,7 +43,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Type float
-Floating-point numbers use the IEEE (Institute of Electrical and Electronics Engineers) format. Single-precision values with float type have 4 bytes, consisting of a sign bit, an 8-bit excess-127 binary exponent, and a 23-bit mantissa. The mantissa represents a number between 1.0 and 2.0. Since the high-order bit of the mantissa is always 1, it is not stored in the number. This representation gives a range of approximately 3.4E–38 to 3.4E+38 for type float.  
+Floating-point numbers use the IEEE (Institute of Electrical and Electronics Engineers) format. Single-precision values with float type have 4 bytes, consisting of a sign bit, an 8-bit excess-127 binary exponent, and a 23-bit mantissa. The mantissa represents a number between 1.0 and 2.0. Since the high-order bit of the mantissa is always 1, it is not stored in the number. This representation gives a range of approximately 3.4E-38 to 3.4E+38 for type float.  
   
  You can declare variables as float or double, depending on the needs of your application. The principal differences between the two types are the significance they can represent, the storage they require, and their range. The following table shows the relationship between significance and storage requirements.  
   
@@ -51,8 +51,8 @@ Floating-point numbers use the IEEE (Institute of Electrical and Electronics Eng
   
 |Type|Significant digits|Number of bytes|  
 |----------|------------------------|---------------------|  
-|float|6 – 7|4|  
-|double|15 – 16|8|  
+|float|6 - 7|4|  
+|double|15 - 16|8|  
   
  Floating-point variables are represented by a mantissa, which contains the value of the number, and an exponent, which contains the order of magnitude of the number.  
   
@@ -77,8 +77,8 @@ Floating-point numbers use the IEEE (Institute of Electrical and Electronics Eng
   
 |Type|Minimum value|Maximum value|  
 |----------|-------------------|-------------------|  
-|float|1.175494351 E – 38|3.402823466 E + 38|  
-|double|2.2250738585072014 E – 308|1.7976931348623158 E + 308|  
+|float|1.175494351 E - 38|3.402823466 E + 38|  
+|double|2.2250738585072014 E - 308|1.7976931348623158 E + 308|  
   
  If precision is less of a concern than storage, consider using type float for floating-point variables. Conversely, if precision is the most important criterion, use type double.  
   

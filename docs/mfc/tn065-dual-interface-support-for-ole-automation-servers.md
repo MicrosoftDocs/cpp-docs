@@ -376,7 +376,7 @@ STDMETHODIMP CAutoClickDoc::XDualAClick::put_text(BSTR newText)
   
  `CATCH_ALL_DUAL` takes care of returning the correct error code when an exception occurs. `CATCH_ALL_DUAL` converts an MFC exception into OLE Automation error-handling information using the **ICreateErrorInfo** interface. (An example `CATCH_ALL_DUAL` macro is in the file MFCDUAL.H in the [ACDUAL](../visual-cpp-samples.md) sample. The function it calls to handle exceptions, `DualHandleException`, is in the file MFCDUAL.CPP.) `CATCH_ALL_DUAL` determines the error code to return based on the type of exception that occurred:  
   
-- [COleDispatchException](../mfc/reference/coledispatchexception-class.md) – In this case, `HRESULT` is constructed using the following code:  
+- [COleDispatchException](../mfc/reference/coledispatchexception-class.md) - In this case, `HRESULT` is constructed using the following code:  
   
  ```  
     hr = MAKE_HRESULT(SEVERITY_ERROR,
@@ -387,9 +387,9 @@ STDMETHODIMP CAutoClickDoc::XDualAClick::put_text(BSTR newText)
   
      This creates an `HRESULT` specific to the interface that caused the exception. The error code is offset by 0x200 to avoid any conflicts with system-defined `HRESULT`s for standard OLE interfaces.  
   
-- [CMemoryException](../mfc/reference/cmemoryexception-class.md) – In this case, `E_OUTOFMEMORY` is returned.  
+- [CMemoryException](../mfc/reference/cmemoryexception-class.md) - In this case, `E_OUTOFMEMORY` is returned.  
   
--   Any other exception – In this case, `E_UNEXPECTED` is returned.  
+-   Any other exception - In this case, `E_UNEXPECTED` is returned.  
   
  To indicate that the OLE Automation error handler is used, you should also implement the **ISupportErrorInfo** interface.  
   

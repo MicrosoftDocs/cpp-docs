@@ -185,7 +185,7 @@ int _wfindnext64i32(
  File information buffer.  
   
 ## Return Value  
- If successful, returns 0. Otherwise, returns –1 and sets `errno` to a value indicating the nature of the failure. Possible error codes are shown in the following table.  
+ If successful, returns 0. Otherwise, returns -1 and sets `errno` to a value indicating the nature of the failure. Possible error codes are shown in the following table.  
   
  `EINVAL`  
  Invalid parameter: `fileinfo` was `NULL`. Or, the operating system returned an unexpected error.  

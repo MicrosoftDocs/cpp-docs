@@ -44,11 +44,11 @@ translation.priority.ht:
   
 ```  
 expression .* expression  
-expression –>* expression  
+expression ->* expression  
 ```  
   
 ## Remarks  
- The pointer-to-member operators, .* and –>\*, return the value of a specific class member for the object specified on the left side of the expression.  The right side must specify a member of the class.  The following example shows how to use these operators:  
+ The pointer-to-member operators, .* and ->\*, return the value of a specific class member for the object specified on the left side of the expression.  The right side must specify a member of the class.  The following example shows how to use these operators:  
   
 ```  
 // expre_Expressions_with_Pointer_Member_Operators.cpp  
@@ -101,11 +101,11 @@ m_func1
   
  The binary operator .* combines its first operand, which must be an object of class type, with its second operand, which must be a pointer-to-member type.  
   
- The binary operator –>* combines its first operand, which must be a pointer to an object of class type, with its second operand, which must be a pointer-to-member type.  
+ The binary operator ->* combines its first operand, which must be a pointer to an object of class type, with its second operand, which must be a pointer-to-member type.  
   
  In an expression containing the .* operator, the first operand must be of the class type of, and be accessible to, the pointer to member specified in the second operand or of an accessible type unambiguously derived from and accessible to that class.  
   
- In an expression containing the –>* operator, the first operand must be of the type "pointer to the class type" of the type specified in the second operand, or it must be of a type unambiguously derived from that class.  
+ In an expression containing the ->* operator, the first operand must be of the type "pointer to the class type" of the type specified in the second operand, or it must be of a type unambiguously derived from that class.  
   
 ## Example  
  Consider the following classes and program fragment:  
@@ -146,7 +146,7 @@ int main() {
 }  
 ```  
   
- The result of the .* or –>\* pointer-to-member operators is an object or function of the type specified in the declaration of the pointer to member. So, in the preceding example, the result of the expression `ADerived.*pmfnFunc1()` is a pointer to a function that returns void. This result is an l-value if the second operand is an l-value.  
+ The result of the .* or ->\* pointer-to-member operators is an object or function of the type specified in the declaration of the pointer to member. So, in the preceding example, the result of the expression `ADerived.*pmfnFunc1()` is a pointer to a function that returns void. This result is an l-value if the second operand is an l-value.  
   
 > [!NOTE]
 >  If the result of one of the pointer-to-member operators is a function, then the result can be used only as an operand to the function call operator.  

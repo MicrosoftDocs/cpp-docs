@@ -126,7 +126,7 @@ switch( i )
 }  
 ```  
   
- In this example, a **break** statement follows each statement of the `switch` body. The **break** statement forces an exit from the statement body after one statement is executed. If `i` is equal to –1, only `n` is incremented. The **break** following the statement `n++;` causes execution control to pass out of the statement body, bypassing the remaining statements. Similarly, if `i` is equal to 0, only `z` is incremented; if `i` is equal to 1, only `p` is incremented. The final **break** statement is not strictly necessary, since control passes out of the body at the end of the compound statement, but it is included for consistency.  
+ In this example, a **break** statement follows each statement of the `switch` body. The **break** statement forces an exit from the statement body after one statement is executed. If `i` is equal to -1, only `n` is incremented. The **break** following the statement `n++;` causes execution control to pass out of the statement body, bypassing the remaining statements. Similarly, if `i` is equal to 0, only `z` is incremented; if `i` is equal to 1, only `p` is incremented. The final **break** statement is not strictly necessary, since control passes out of the body at the end of the compound statement, but it is included for consistency.  
   
  A single statement can carry multiple **case** labels, as the following example shows:  
   

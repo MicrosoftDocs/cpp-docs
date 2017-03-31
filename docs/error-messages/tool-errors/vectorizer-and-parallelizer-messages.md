@@ -673,7 +673,7 @@ void code_1203(int *A)
 |-----------------|-----------------|  
 |1300|Loop body contains no—or very little—computation.|  
 |1301|Loop stride is not +1.|  
-|1302|Loop is a “do-while”.|  
+|1302|Loop is a "do-while".|  
 |1303|Too few loop iterations for vectorization to provide value.|  
 |1304|Loop includes assignments that are of different sizes.|  
 |1305|Not enough type information.|  

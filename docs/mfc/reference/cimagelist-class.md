@@ -146,7 +146,7 @@ int Add(HICON hIcon);
  Handle of the icon that contains the bitmap and mask for the new image.  
   
 ### Return Value  
- Zero-based index of the first new image if successful; otherwise – 1.  
+ Zero-based index of the first new image if successful; otherwise - 1.  
   
 ### Remarks  
  You are responsible for releasing the icon handle when you are done with it.  
@@ -585,13 +585,13 @@ BOOL DrawIndirect(
  The zero-based index of the image to be drawn.  
   
  `pt`  
- A [POINT](http://msdn.microsoft.com/library/windows/desktop/dd162805) structure containing the x– and y– coordinates where the image will be drawn.  
+ A [POINT](http://msdn.microsoft.com/library/windows/desktop/dd162805) structure containing the x- and y- coordinates where the image will be drawn.  
   
  `sz`  
  A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure indicating the size of the image to be drawn.  
   
  *ptOrigin*  
- A [POINT](http://msdn.microsoft.com/library/windows/desktop/dd162805) structure containing the x– and y–coordinates specifying the upper left corner of the drawing operation with respect to the image itself. Pixels of the image that are to the left of the x–coordinate and above the y–coordinate are not drawn.  
+ A [POINT](http://msdn.microsoft.com/library/windows/desktop/dd162805) structure containing the x- and y-coordinates specifying the upper left corner of the drawing operation with respect to the image itself. Pixels of the image that are to the left of the x-coordinate and above the y-coordinate are not drawn.  
   
  `fStyle`  
  Flag specifying the drawing style and, optionally, the overlay image. See the Remarks section for information on the overlay image. The MFC default implementation, `ILD_NORMAL`, draws the image using the background color for the image list. If the background color is the `CLR_NONE` value, the image is drawn transparently using a mask.  
@@ -893,7 +893,7 @@ int Replace(
 ### Return Value  
  The version returning **BOOL** returns nonzero if successful; otherwise 0.  
   
- The version returning `int` returns the zero-based index of the image if successful; otherwise – 1.  
+ The version returning `int` returns the zero-based index of the image if successful; otherwise - 1.  
   
 ### Remarks  
  Call this member function after calling [SetImageCount](#setimagecount) to assign the new, valid images to the placeholder image index numbers.  

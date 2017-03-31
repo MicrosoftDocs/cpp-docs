@@ -501,7 +501,7 @@ template<class ForwardIterator,  class Type,  class BinaryPredicate>
   
  The value types of the forward iterators need to be less-than comparable to be ordered, so that, given two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements  
   
- The complexity of the algorithm is logarithmic for random-access iterators and linear otherwise, with the number of steps proportional to ( `last` – `first`).  
+ The complexity of the algorithm is logarithmic for random-access iterators and linear otherwise, with the number of steps proportional to ( `last` - `first`).  
   
 ### Example  
   
@@ -607,7 +607,7 @@ template<class InputIterator, class OutputIterator>
  An output iterator addressing the position of the first element in the destination range.  
   
 ### Return Value  
- An output iterator addressing the position that is one past the final element in the destination range, that is, the iterator addresses `result` + ( `last` –  `first` ).  
+ An output iterator addressing the position that is one past the final element in the destination range, that is, the iterator addresses `result` + ( `last` -  `first` ).  
   
 ### Remarks  
  The source range must be valid and there must be sufficient space at the destination to hold all the elements being copied.  
@@ -696,7 +696,7 @@ template<class BidirectionalIterator1, class BidirectionalIterator2>
  A bidirectional iterator addressing the position of one past the final element in the destination range.  
   
 ### Return Value  
- An output iterator addressing the position that is one past the final element in the destination range, that is, the iterator addresses `destEnd` – ( `last` –  `first` ).  
+ An output iterator addressing the position that is one past the final element in the destination range, that is, the iterator addresses `destEnd` - ( `last` -  `first` ).  
   
 ### Remarks  
  The source range must be valid and there must be sufficient space at the destination to hold all the elements being copied.  
@@ -1098,7 +1098,7 @@ pair<ForwardIterator, ForwardIterator> equal_range(
   
  Elements in the possibly empty subrange defined by the pair of iterators returned by `equal_range` will be equivalent to `val` in the sense defined by the predicate used.  
   
- The complexity of the algorithm is logarithmic for random-access iterators and linear otherwise, with the number of steps proportional to ( `last` – `first`).  
+ The complexity of the algorithm is logarithmic for random-access iterators and linear otherwise, with the number of steps proportional to ( `last` - `first`).  
   
 ### Example  
   
@@ -1842,7 +1842,7 @@ Function for_each(
   
  The range referenced must be valid; all pointers must be dereferenceable and, within the sequence, the last position must be reachable from the first by incrementation.  
   
- The complexity is linear with at most ( `last` –  `first`) comparisons.  
+ The complexity is linear with at most ( `last` -  `first`) comparisons.  
   
 ### Example  
   
@@ -1983,7 +1983,7 @@ void generate(
   
  The range referenced must be valid; all pointers must be dereferenceable and, within the sequence, the last position must be reachable from the first by incrementation.  
   
- The complexity is linear, with exactly ( `last` –  `first`) calls to the generator being required.  
+ The complexity is linear, with exactly ( `last` -  `first`) calls to the generator being required.  
   
 ### Example  
   
@@ -2150,7 +2150,7 @@ bool includes(
   
  The value types of the input iterators need be less-than comparable to be ordered, so that, given two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. More precisely, the algorithm tests whether all the elements in the first sorted range under a specified binary predicate have equivalent ordering to those in the second sorted range.  
   
- The complexity of the algorithm is linear with at most 2 \* ( ( *last1 – first1*) – ( * last2 – first2*) ) – 1 comparisons for nonempty source ranges.  
+ The complexity of the algorithm is linear with at most 2 \* ( ( *last1 - first1*) - ( * last2 - first2*) ) - 1 comparisons for nonempty source ranges.  
   
 ### Example  
   
@@ -2337,7 +2337,7 @@ void inplace_merge(
   
  The sorted consecutive ranges must each be arranged as a precondition to the application of the `inplace_merge` algorithm in accordance with the same ordering as is to be used by the algorithm to sort the combined ranges. The operation is stable as the relative order of elements within each range is preserved. When there are equivalent elements in both source ranges, the element is the first range precedes the element from the second in the combined range.  
   
- The complexity depends on the available memory as the algorithm allocates memory to a temporary buffer. If sufficient memory is available, the best case is linear with ( * last – first*) – 1 comparisons; if no auxiliary memory is available, the worst case is  *N* log *(N)*, where  *N* = ( * last – first*).  
+ The complexity depends on the available memory as the algorithm allocates memory to a temporary buffer. If sufficient memory is available, the best case is linear with ( * last - first*) - 1 comparisons; if no auxiliary memory is available, the worst case is  *N* log *(N)*, where  *N* = ( * last - first*).  
   
 ### Example  
   
@@ -3073,7 +3073,7 @@ ForwardIterator lower_bound(
   
  The value types of the forward iterators need be less-than comparable to be ordered, so that, given two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements  
   
- The complexity of the algorithm is logarithmic for random-access iterators and linear otherwise, with the number of steps proportional to ( `last – first`).  
+ The complexity of the algorithm is logarithmic for random-access iterators and linear otherwise, with the number of steps proportional to ( `last - first`).  
   
 ### Example  
   
@@ -3202,7 +3202,7 @@ void make_heap(
   
  Heaps are an ideal way to implement priority queues and they are used in the implementation of the C++ Standard Library container adaptor [priority_queue Class](../standard-library/priority-queue-class.md).  
   
- The complexity is linear, requiring 3 \* ( * last – first*) comparisons.  
+ The complexity is linear, requiring 3 \* ( * last - first*) comparisons.  
   
 ### Example  
   
@@ -3487,7 +3487,7 @@ ForwardIterator max_element(ForwardIterator first, ForwardIterator last, BinaryP
 ### Remarks  
  The range referenced must be valid; all pointers must be dereferenceable and within each sequence the last position is reachable from the first by incrementation.  
   
- The complexity is linear: ( `last` –  `first`) – 1 comparisons are required for a nonempty range.  
+ The complexity is linear: ( `last` -  `first`) - 1 comparisons are required for a nonempty range.  
   
 ### Example  
   
@@ -3645,7 +3645,7 @@ OutputIterator merge(
   
  The value types of the input iterators need be less-than comparable to be ordered, so that, given two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. When there are equivalent elements in both source ranges, the elements in the first range precede the elements from the second source range in the destination range.  
   
- The complexity of the algorithm is linear with at most ( * last1 – first1*) – ( * last2 – first2*) – 1 comparisons.  
+ The complexity of the algorithm is linear with at most ( * last1 - first1*) - ( * last2 - first2*) - 1 comparisons.  
   
  The [list class](../standard-library/list-class.md) provides a member function "merge" to merge the elements of two lists.  
   
@@ -3998,7 +3998,7 @@ ForwardIterator min_element(ForwardIterator first, ForwardIterator last, BinaryP
 ### Remarks  
  The range referenced must be valid; all pointers must be dereferenceable and within each sequence the last position is reachable from the first by incrementation.  
   
- The complexity is linear: ( `last` – `first`) – 1 comparisons are required for a nonempty range.  
+ The complexity is linear: ( `last` - `first`) - 1 comparisons are required for a nonempty range.  
   
 ### Example  
   
@@ -4449,7 +4449,7 @@ bool next_permutation(BidirectionalIterator first, BidirectionalIterator last, B
   
  The default binary predicate is less than and the elements in the range must be less than comparable to insure that the next permutation is well defined.  
   
- The complexity is linear with at most ( * last – first*)/2 swaps.  
+ The complexity is linear with at most ( * last - first*)/2 swaps.  
   
 ### Example  
   
@@ -4622,7 +4622,7 @@ void nth_element( RandomAccessIterator first, RandomAccessIterator _Nth, RandomA
   
  Elements are equivalent, but not necessarily equal, if neither is less than the other.  
   
- The average of a sort complexity is linear with respect to  * last – first*.  
+ The average of a sort complexity is linear with respect to  * last - first*.  
   
 ### Example  
   
@@ -4977,7 +4977,7 @@ template<class BidirectionalIterator, class Predicate>
   
  Elements  *a* and  *b* are equivalent, but not necessarily equal, if both  *Pr* ( *a*,  *b*) is false and  *Pr* ( *b*,  *a*) if false, where  *Pr* is the parameter-specified predicate. The **partition** algorithm is not stable and does not guarantee that the relative ordering of equivalent elements will be preserved. The algorithm **stable_ partition** does preserve this original ordering.  
   
- The complexity is linear: there are ( `last` –  `first`) applications of `comp` and at most ( `last` –  `first`)/2 swaps.  
+ The complexity is linear: there are ( `last` -  `first`) applications of `comp` and at most ( `last` -  `first`)/2 swaps.  
   
 ### Example  
   
@@ -5117,7 +5117,7 @@ void pop_heap(RandomAccessIterator first, RandomAccessIterator last, BinaryPredi
   
  The range excluding the newly added element at the end must be a heap.  
   
- The complexity is logarithmic, requiring at most log ( * last – first*) comparisons.  
+ The complexity is logarithmic, requiring at most log ( * last - first*) comparisons.  
   
 ### Example  
   
@@ -5216,7 +5216,7 @@ template<class BidirectionalIterator, class BinaryPredicate>
   
  The default binary predicate is less than and the elements in the range must be less-than comparable to ensure that the previous permutation is well defined.  
   
- The complexity is linear, with at most ( `last` –  `first`)/2 swaps.  
+ The complexity is linear, with at most ( `last` -  `first`)/2 swaps.  
   
 ### Example  
   
@@ -5389,7 +5389,7 @@ void push_heap( RandomAccessIterator first, RandomAccessIterator last, BinaryPre
   
  The range excluding the newly added element at the end must be a heap.  
   
- The complexity is logarithmic, requiring at most log ( *last – first*) comparisons.  
+ The complexity is logarithmic, requiring at most log ( *last - first*) comparisons.  
   
 ### Example  
   
@@ -5490,7 +5490,7 @@ template<class ForwardIterator, class Type>
   
  The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.  
   
- The complexity is linear; there are ( `last` –  `first`) comparisons for equality.  
+ The complexity is linear; there are ( `last` -  `first`) comparisons for equality.  
   
  The [list class](../standard-library/list-class.md) has a more efficient member function version of **remove**, which also relinks pointers.  
   
@@ -5574,7 +5574,7 @@ template<class InputIterator, class OutputIterator, class Type>
   
  The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.  
   
- The complexity is linear; there are ( `last` –  `first`) comparisons for equality and at most ( `last` –  `first`) assignments.  
+ The complexity is linear; there are ( `last` -  `first`) comparisons for equality and at most ( `last` -  `first`) assignments.  
   
 ### Example  
   
@@ -5653,7 +5653,7 @@ OutputIterator remove_copy_if(InputIterator first, InputIterator Last, OutputIte
   
  The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.  
   
- The complexity is linear: there are ( `last` –  `first`) comparisons for equality and at most ( `last` –  `first`) assignments.  
+ The complexity is linear: there are ( `last` -  `first`) comparisons for equality and at most ( `last` -  `first`) assignments.  
   
  For information on how these functions behave, see [Checked Iterators](../standard-library/checked-iterators.md).  
   
@@ -5736,7 +5736,7 @@ template<class ForwardIterator, class Predicate>
   
  The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.  
   
- The complexity is linear: there are ( `last` –  `first`) comparisons for equality.  
+ The complexity is linear: there are ( `last` -  `first`) comparisons for equality.  
   
  List has a more efficient member function version of remove which relinks pointers.  
   
@@ -5818,7 +5818,7 @@ void replace(ForwardIterator first, ForwardIterator last, const Type& _OldVal, c
   
  The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.  
   
- The complexity is linear; there are ( `last` –  `first`) comparisons for equality and at most ( `last` –  `first`) assignments of new values.  
+ The complexity is linear; there are ( `last` -  `first`) comparisons for equality and at most ( `last` -  `first`) assignments of new values.  
   
 ### Example  
   
@@ -5898,7 +5898,7 @@ int main( ) {
   
  The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.  
   
- The complexity is linear: there are ( `last` –  `first`) comparisons for equality and at most ( `last` –  `first`) assignments of new values.  
+ The complexity is linear: there are ( `last` -  `first`) comparisons for equality and at most ( `last` -  `first`) assignments of new values.  
   
 ### Example  
   
@@ -5997,7 +5997,7 @@ OutputIterator replace_copy_if(
   
  The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.  
   
- The complexity is linear; there are ( `last` –  `first`) comparisons for equality and at most ( `last` –  `first`) assignments of new values.  
+ The complexity is linear; there are ( `last` -  `first`) comparisons for equality and at most ( `last` -  `first`) assignments of new values.  
   
 ### Example  
   
@@ -6094,7 +6094,7 @@ void replace_if(ForwardIterator first, ForwardIterator last, Predicate pred, con
   
  The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.  
   
- The complexity is linear: there are ( `last` –  `first`) comparisons for equality and at most ( `last` –  `first`) assignments of new values.  
+ The complexity is linear: there are ( `last` -  `first`) comparisons for equality and at most ( `last` -  `first`) assignments of new values.  
   
 ### Example  
   
@@ -6291,7 +6291,7 @@ template<class ForwardIterator>
 ### Remarks  
  The ranges referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation.  
   
- The complexity is linear with at most ( `last` –  `first`) swaps.  
+ The complexity is linear with at most ( `last` -  `first`) swaps.  
   
 ### Example  
   
@@ -6400,7 +6400,7 @@ OutputIterator rotate_copy(
 ### Remarks  
  The ranges referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation.  
   
- The complexity is linear with at most ( `last` –  `first`) swaps.  
+ The complexity is linear with at most ( `last` -  `first`) swaps.  
   
 ### Example  
   
@@ -6792,7 +6792,7 @@ OutputIterator set_difference(
   
  The value types of the input iterators need be less-than-comparable to be ordered, so that, given two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. When there are equivalent elements in both source ranges, the elements in the first range precede the elements from the second source range in the destination range. If the source ranges contain duplicates of an element such that there are more in the first source range than in the second, then the destination range will contain the number by which the occurrences of those elements in the first source range exceed the occurrences of those elements in the second source range.  
   
- The complexity of the algorithm is linear with at most 2 \* ( ( *last1 – first1*) – ( *last2 – first2*) ) – 1 comparisons for nonempty source ranges.  
+ The complexity of the algorithm is linear with at most 2 \* ( ( *last1 - first1*) - ( *last2 - first2*) ) - 1 comparisons for nonempty source ranges.  
   
 ### Example  
   
@@ -6969,7 +6969,7 @@ OutputIterator set_intersection(
   
  The value types of the input iterators need be less-than comparable to be ordered, so that, given two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. When there are equivalent elements in both source ranges, the elements in the first range precede the elements from the second source range in the destination range. If the source ranges contain duplicates of an element, then the destination range will contain the maximum number of those elements that occur in both source ranges.  
   
- The complexity of the algorithm is linear with at most 2 \* ( ( *last1 – first1*) + ( *last2 – first2*) ) – 1 comparisons for nonempty source ranges.  
+ The complexity of the algorithm is linear with at most 2 \* ( ( *last1 - first1*) + ( *last2 - first2*) ) - 1 comparisons for nonempty source ranges.  
   
 ### Example  
   
@@ -7140,7 +7140,7 @@ OutputIterator set_symmetric_difference(
   
  The value types of the input iterators need be less-than comparable to be ordered, so that, given two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. When there are equivalent elements in both source ranges, the elements in the first range precede the elements from the second source range in the destination range. If the source ranges contain duplicates of an element, then the destination range will contain the absolute value of the number by which the occurrences of those elements in the one of the source ranges exceeds the occurrences of those elements in the second source range.  
   
- The complexity of the algorithm is linear with at most 2 \* ( (*last1 – first1*) – (*last2 – first2*) ) – 1 comparisons for nonempty source ranges.  
+ The complexity of the algorithm is linear with at most 2 \* ( (*last1 - first1*) - (*last2 - first2*) ) - 1 comparisons for nonempty source ranges.  
   
 ### Example  
   
@@ -7316,7 +7316,7 @@ OutputIterator set_union(
   
  The value types of the input iterators need be less-than comparable to be ordered, so that, given two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. When there are equivalent elements in both source ranges, the elements in the first range precede the elements from the second source range in the destination range. If the source ranges contain duplicates of an element, then the destination range will contain the maximum number of those elements that occur in both source ranges.  
   
- The complexity of the algorithm is linear with at most 2 \* ( ( *last1 – first1*) – ( *last2 – first2*) ) – 1 comparisons.  
+ The complexity of the algorithm is linear with at most 2 \* ( ( *last1 - first1*) - ( *last2 - first2*) ) - 1 comparisons.  
   
 ### Example  
   
@@ -7492,7 +7492,7 @@ template<class RandomAccessIterator, class Predicate>
   
  Elements are equivalent, but not necessarily equal, if neither is less than the other. The `sort` algorithm is not stable and so does not guarantee that the relative ordering of equivalent elements will be preserved. The algorithm `stable_sort` does preserve this original ordering.  
   
- The average of a sort complexity is  *O*( *N* log  *N*), where  *N* =  *last – first*.  
+ The average of a sort complexity is  *O*( *N* log  *N*), where  *N* =  *last - first*.  
   
 ### Example  
   
@@ -7603,7 +7603,7 @@ template<class RandomAccessIterator, class Predicate>
   
  The range referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation.  
   
- The complexity is at most  *N* log  *N*, where  *N* = ( *last – first*).  
+ The complexity is at most  *N* log  *N*, where  *N* = ( *last - first*).  
   
 ### Example  
   
@@ -7760,7 +7760,7 @@ void stable_sort(
   
  Elements are equivalent, but not necessarily equal, if neither is less than the other. The **sort** algorithm is stable and guarantees that the relative ordering of equivalent elements will be preserved.  
   
- The run-time complexity of `stable_sort` depends on the amount of memory available, but the best case (given sufficient memory) is  *O*( *N* log  *N*) and the worst case is  *O*(  *N* ( log  *N* )2 ), where  *N* =  *last – First.* Usually, the **sort** algorithm is significantly faster than `stable_sort`.  
+ The run-time complexity of `stable_sort` depends on the amount of memory available, but the best case (given sufficient memory) is  *O*( *N* log  *N*) and the worst case is  *O*(  *N* ( log  *N* )2 ), where  *N* =  *last - First.* Usually, the **sort** algorithm is significantly faster than `stable_sort`.  
   
 ### Example  
   
@@ -7938,7 +7938,7 @@ ForwardIterator2 swap_ranges(
 ### Remarks  
  The ranges referenced must be valid; all pointers must be dereferenceable and within each sequence the last position is reachable from the first by incrementation. The second range has to be as large as the first range.  
   
- The complexity is linear with `last1` –  `first1` swaps performed. If elements from containers of the same type are being swapped, them the `swap` member function from that container should be used, because the member function typically has constant complexity.  
+ The complexity is linear with `last1` -  `first1` swaps performed. If elements from containers of the same type are being swapped, them the `swap` member function from that container should be used, because the member function typically has constant complexity.  
   
 ### Example  
   
@@ -8046,7 +8046,7 @@ OutputIterator transform(
   
  If `result` is set equal to  `first1` in the first version of the algorithm *,* then the source and destination ranges will be the same and the sequence will be modified in place. But the `result` may not address a position within the range [  `first1` +1, `last1`).  
   
- The complexity is linear with at most ( `last1` –  `first1`) comparisons.  
+ The complexity is linear with at most ( `last1` -  `first1`) comparisons.  
   
 ### Example  
   
@@ -8172,7 +8172,7 @@ template<class ForwardIterator, class Predicate>
   
  The range referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation. he number of elements in the sequence is not changed by the algorithm **unique** and the elements beyond the end of the modified sequence are dereferenceable but not specified.  
   
- The complexity is linear, requiring ( `last` –  `first`) – 1 comparisons.  
+ The complexity is linear, requiring ( `last` -  `first`) - 1 comparisons.  
   
  List provides a more efficient member function "unique", which may perform better.  
   
@@ -8305,7 +8305,7 @@ OutputIterator unique_copy( InputIterator first,
   
  The ranges referenced must be valid; all pointers must be dereferenceable and within a sequence the last position is reachable from the first by incrementation.  
   
- The complexity is linear, requiring ( `last` –  `first`) comparisons.  
+ The complexity is linear, requiring ( `last` -  `first`) comparisons.  
   
 ### Example  
   

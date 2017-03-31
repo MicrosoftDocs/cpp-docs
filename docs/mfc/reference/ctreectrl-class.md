@@ -1023,7 +1023,7 @@ UINT GetVisibleCount() const;
 ```  
   
 ### Return Value  
- The number of visible items in the tree view control; otherwise – 1.  
+ The number of visible items in the tree view control; otherwise - 1.  
   
 ### Example  
   See the example for [CTreeCtrl::SetCheck](#setcheck).  

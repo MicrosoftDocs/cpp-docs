@@ -111,8 +111,8 @@ size_t mbrlen(
 ## Example  
  This example shows how the interpretation of multibyte characters depends on the current code page, and demonstrates the resuming capability of `mbrlen`.  
   
-```  
- // crt_mbrlen.c  
+```C  
+// crt_mbrlen.c  
 // Compile by using: cl crt_mbrlen.c  
 #include <stdlib.h>  
 #include <stdio.h>  

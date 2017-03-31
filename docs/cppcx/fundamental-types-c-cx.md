@@ -30,13 +30,13 @@ In addition to the standard C++ built-in types, C++/CX supports the type system 
   
 |C++/CX name|Definition|Standard C++ name|Range of Values|  
 |-----------------------------------------------------------------------|----------------|-------------------------|---------------------|  
-|int8|An 8-bit signed numeric value.|signed char|–128 through 127|  
+|int8|An 8-bit signed numeric value.|signed char|-128 through 127|  
 |uint8|An 8-bit unsigned numeric value.|unsigned char|0 through 255|  
-|int16|A 16-bit signed integer.|short|–32,768 through 32,767|  
+|int16|A 16-bit signed integer.|short|-32,768 through 32,767|  
 |uint16|A 16-bit unsigned integer.|unsigned short|0 through 65,535|  
-|int32|A 32-bit signed integer.|int|–2,147,483,648 through 2,147,483,647|  
+|int32|A 32-bit signed integer.|int|-2,147,483,648 through 2,147,483,647|  
 |uint32|A 32-bit unsigned integer.|unsigned int|0 through 4,294,967,295|  
-|int64|A 64-bit signed integer.|long long  -or- __int64|–9,223,372,036,854, 775,808 through  9,223,372,036,854,775,807|  
+|int64|A 64-bit signed integer.|long long  -or- __int64|-9,223,372,036,854, 775,808 through  9,223,372,036,854,775,807|  
 |uint64|A 64-bit unsigned integer.|unsigned long long  -or- unsigned __int64|0 through 18,446,744,073,709,551,615|  
 |float32|A 32-bit IEEE 754 floating-point number.|float|3.4E +/- 38 (7 digits)|  
 |float64|A 64-bit IEEE 754 floating-point number.|double|1.7E +/- 308 (15 digits)|  

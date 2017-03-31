@@ -44,7 +44,7 @@ translation.priority.ht:
   
 ```  
 expression + expression   
-expression – expression  
+expression - expression  
 ```  
   
 ## Remarks  
@@ -52,11 +52,11 @@ expression – expression
   
 -   Addition (**+**)  
   
--   Subtraction (**–**)  
+-   Subtraction (**-**)  
   
  These binary operators have left-to-right associativity.  
   
- The additive operators take operands of arithmetic or pointer types. The result of the addition (**+**) operator is the sum of the operands. The result of the subtraction (**–**) operator is the difference between the operands. If one or both of the operands are pointers, they must be pointers to objects, not to functions. If both operands are pointers, the results are not meaningful unless both are pointers to objects in the same array.  
+ The additive operators take operands of arithmetic or pointer types. The result of the addition (**+**) operator is the sum of the operands. The result of the subtraction (**-**) operator is the difference between the operands. If one or both of the operands are pointers, they must be pointers to objects, not to functions. If both operands are pointers, the results are not meaningful unless both are pointers to objects in the same array.  
   
  Additive operators take operands of *arithmetic*, *integral*, and *scalar* types. These are defined in the following table.  
   
@@ -76,9 +76,9 @@ expression – expression
   
  *integral* + *scalar*  
   
- *arithmetic* – *arithmetic*  
+ *arithmetic* - *arithmetic*  
   
- *scalar* – *scalar*  
+ *scalar* - *scalar*  
   
  Note that addition and subtraction are not equivalent operations.  
   
@@ -127,7 +127,7 @@ for( int i = 0; i < 10; ++i )
 ## Pointer subtraction  
  If both operands are pointers, the result of subtraction is the difference (in array elements) between the operands. The subtraction expression yields a signed integral result of type ptrdiff_t (defined in the standard include file STDDEF.H).  
   
- One of the operands can be of integral type, as long as it is the second operand. The result of the subtraction is of the same type as the original pointer. The value of the subtraction is a pointer to the (*n* – *i*)th array element, where *n* is the element pointed to by the original pointer and *i* is the integral value of the second operand.  
+ One of the operands can be of integral type, as long as it is the second operand. The result of the subtraction is of the same type as the original pointer. The value of the subtraction is a pointer to the (*n* - *i*)th array element, where *n* is the element pointed to by the original pointer and *i* is the integral value of the second operand.  
   
 ## See Also  
  [Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)   

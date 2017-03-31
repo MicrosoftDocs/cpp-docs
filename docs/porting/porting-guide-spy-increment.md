@@ -285,10 +285,9 @@ error C2440: 'static_cast': cannot convert from 'UINT (__thiscall CHotLinkCtrl::
   
 ```cpp  
 BEGIN_MESSAGE_MAP(CFindToolIcon, CWnd)  
-// other message omitted …  
+// other messages omitted...  
 ON_WM_NCHITTEST() // Error occurs on this line.  
 END_MESSAGE_MAP()  
-  
 ```  
   
  Going to the definition of this macro, we see it references the function OnNcHitTest.  
@@ -298,7 +297,6 @@ END_MESSAGE_MAP()
 { WM_NCHITTEST, 0, 0, 0, AfxSig_l_p, \  
 (AFX_PMSG)(AFX_PMSGW) \  
 (static_cast< LRESULT (AFX_MSG_CALL CWnd::*)(CPoint) > (&ThisClass :: OnNcHitTest)) },  
-  
 ```  
   
  The problem has to do with the mismatch in the pointer to member function types. The problem isn’t the conversion from CHotLinkCtrl as a class type to CWnd as the class type, since that is a valid derived-to-base conversion. The problem is the return type: UINT vs. LRESULT. LRESULT resolves to LONG_PTR which is a 64-bit pointer or a 32-bit pointer, depending on the target binary type, so UINT does not convert to this type. This is not uncommon when upgrading code written before 2005 since the return type of many message map methods changed from UINT to LRESULT in Visual Studio 2005 as part of the 64-bit compatibility changes. We change the return type from UINT in the following code to LRESULT:  

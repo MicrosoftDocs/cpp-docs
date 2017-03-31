@@ -113,7 +113,7 @@ W2CA      (LPCWSTR) -> (LPCSTR)
 W2A      (LPCWSTR) -> (LPSTR)  
 ```  
   
- Besides doing text conversions, there are also macros and helper functions for converting `TEXTMETRIC`, `DEVMODE`, `BSTR`, and OLE allocated strings. These macros are beyond the scope of this discussion – refer to AFXPRIV.H for more information on those macros.  
+ Besides doing text conversions, there are also macros and helper functions for converting `TEXTMETRIC`, `DEVMODE`, `BSTR`, and OLE allocated strings. These macros are beyond the scope of this discussion - refer to AFXPRIV.H for more information on those macros.  
   
 ## OLE Conversion Macros  
  The OLE conversion macros are designed specifically for handling functions that expect **OLESTR** characters. If you examine the OLE headers, you will see many references to **LPCOLESTR** and **OLECHAR**. These types are used to refer to the type of characters used in OLE interfaces in a way that is not specific to the platform. **OLECHAR** maps to `char` in Win16 and Macintosh platforms and **WCHAR** in Win32.  

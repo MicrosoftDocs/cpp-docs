@@ -79,7 +79,7 @@ int _dup2(
  Any file descriptor.  
   
 ## Return Value  
- `_dup` returns a new file descriptor. `_dup2` returns 0 to indicate success. If an error occurs, each function returns –1 and sets `errno` to `EBADF` if the file descriptor is invalid or to `EMFILE` if no more file descriptors are available. In the case of an invalid file descriptor, the function also invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).  
+ `_dup` returns a new file descriptor. `_dup2` returns 0 to indicate success. If an error occurs, each function returns -1 and sets `errno` to `EBADF` if the file descriptor is invalid or to `EMFILE` if no more file descriptors are available. In the case of an invalid file descriptor, the function also invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).  
   
  For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   

@@ -124,7 +124,7 @@ Microsoft Visual C++ is consistent with the IEEE numeric standards. There are th
     2.5 = 1.25 * 2**1 = 0100 0000 0010 0000 ... 0000 0000 = 4020 0000  
     ```  
   
--   1/10 is a repeating fraction in binary. The mantissa is just shy of 1.6, and the biased exponent says that 1.6 is to be divided by 16 (it is 011 1101 1 in binary, which is 123 in decimal). The true exponent is 123 – 127 = –4, which means that the factor by which to multiply is 2**–4 = 1/16. Note that the stored mantissa is rounded up in the last bit — an attempt to represent the unrepresentable number as accurately as possible. (The reason that 1/10 and 1/100 are not exactly representable in binary is similar to the reason that 1/3 is not exactly representable in decimal.)  
+-   1/10 is a repeating fraction in binary. The mantissa is just shy of 1.6, and the biased exponent says that 1.6 is to be divided by 16 (it is 011 1101 1 in binary, which is 123 in decimal). The true exponent is 123 - 127 = -4, which means that the factor by which to multiply is 2**-4 = 1/16. Note that the stored mantissa is rounded up in the last bit — an attempt to represent the unrepresentable number as accurately as possible. (The reason that 1/10 and 1/100 are not exactly representable in binary is similar to the reason that 1/3 is not exactly representable in decimal.)  
   
     ```  
     0.1 = 1.6 * 2**-4 = 0011 1101 1100 1100 ... 1100 1101 = 3DCC CCCD  

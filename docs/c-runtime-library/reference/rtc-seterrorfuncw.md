@@ -79,7 +79,7 @@ Designates a function as the handler for the reporting of run-time error checks 
   
  Make sure that the address that you pass to `_RTC_SetErrorFuncW` is that of a valid error handling function.  
   
- If an error has been assigned a type of –1 by using [_RTC_SetErrorType](../../c-runtime-library/reference/rtc-seterrortype.md), the error handling function is not called.  
+ If an error has been assigned a type of -1 by using [_RTC_SetErrorType](../../c-runtime-library/reference/rtc-seterrortype.md), the error handling function is not called.  
   
  Before you can call this function, you must first call one of the run-time error-check initialization functions. For more information, see [Using Run-Time Checks Without the C Run-Time Library](/visualstudio/debugger/using-run-time-checks-without-the-c-run-time-library).  
   

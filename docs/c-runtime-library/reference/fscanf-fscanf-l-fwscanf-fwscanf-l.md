@@ -130,7 +130,7 @@ int _fwscanf_l(
 |`_ftscanf`|`fscanf`|`fscanf`|`fwscanf`|  
 |`_ftscanf_l`|`_fscanf_l`|`_fscanf_l`|`_fwscanf_l`|  
   
- For more information, see [Format Specification Fields – scanf functions and wscanf Functions](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).  
+ For more information, see [Format Specification Fields - scanf functions and wscanf Functions](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).  
   
 ## Requirements  
   

@@ -112,7 +112,7 @@ int _ismbcsymbol_l(
   
 |Routine|Test condition|Code page 932 example|  
 |-------------|--------------------|---------------------------|  
-|`_ismbclegal`|Valid multibyte|Returns nonzero if and only if the first byte of `c` is within ranges 0x81 – 0x9F or 0xE0 – 0xFC, while the second byte is within ranges 0x40 - 0x7E or 0x80 - FC.|  
+|`_ismbclegal`|Valid multibyte|Returns nonzero if and only if the first byte of `c` is within ranges 0x81 - 0x9F or 0xE0 - 0xFC, while the second byte is within ranges 0x40 - 0x7E or 0x80 - FC.|  
 |`_ismbcsymbol`|Multibyte symbol|Returns nonzero if and only if 0x8141<=`c`<=0x81AC.|  
   
 ### Generic-Text Routine Mappings  

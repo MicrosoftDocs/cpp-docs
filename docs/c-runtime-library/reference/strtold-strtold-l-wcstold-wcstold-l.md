@@ -92,7 +92,7 @@ long double wcstold_l(
  The locale to use.  
   
 ## Return Value  
- `strtold` returns the value of the floating-point number as a `long double`, except when the representation would cause an overflow—in that case, the function returns +/–`HUGE_VALL`. The sign of `HUGE_VALL` matches the sign of the value that cannot be represented. `strtold` returns 0 if no conversion can be performed or an underflow occurs.  
+ `strtold` returns the value of the floating-point number as a `long double`, except when the representation would cause an overflow—in that case, the function returns +/-`HUGE_VALL`. The sign of `HUGE_VALL` matches the sign of the value that cannot be represented. `strtold` returns 0 if no conversion can be performed or an underflow occurs.  
   
  `wcstold` returns values analogously to `strtold`. For both functions, `errno` is set to `ERANGE` if overflow or underflow occurs and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).  
   
@@ -116,7 +116,7 @@ long double wcstold_l(
   
  [`whitespace`] [`sign`] [`digits`] [`.digits`] [ {`d` &#124; `D` &#124; `e` &#124; `E`}[`sign`]`digits`]  
   
- A `whitespace` may consist of space and tab characters, which are ignored; `sign` is either plus (`+`) or minus (`–`); and `digits` are one or more decimal digits. If no digits appear before the radix character, at least one must appear after the radix character. The decimal digits can be followed by an exponent, which consists of an introductory letter (`d`, `D`, `e`, or `E`) and an optionally signed integer. If neither an exponent part nor a radix character appears, a radix character is assumed to follow the last digit in the string. The first character that does not fit this form stops the scan.  
+ A `whitespace` may consist of space and tab characters, which are ignored; `sign` is either plus (`+`) or minus (`-`); and `digits` are one or more decimal digits. If no digits appear before the radix character, at least one must appear after the radix character. The decimal digits can be followed by an exponent, which consists of an introductory letter (`d`, `D`, `e`, or `E`) and an optionally signed integer. If neither an exponent part nor a radix character appears, a radix character is assumed to follow the last digit in the string. The first character that does not fit this form stops the scan.  
   
 ## Requirements  
   

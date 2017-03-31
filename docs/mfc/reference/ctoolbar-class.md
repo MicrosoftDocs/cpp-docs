@@ -155,7 +155,7 @@ int CommandToIndex(UINT nIDFind) const;
  Command ID of a toolbar button.  
   
 ### Return Value  
- The index of the button, or –1 if no button has the given command ID.  
+ The index of the button, or -1 if no button has the given command ID.  
   
 ##  <a name="create"></a>  CToolBar::Create  
  This member function creates a Windows toolbar (a child window) and associates it with the `CToolBar` object.  
@@ -391,7 +391,8 @@ CToolBarCtrl& GetToolBarCtrl() const;
   
 ```  
 BOOL LoadBitmap(LPCTSTR lpszResourceName);  
-BOOL LoadBitmap(UINT nIDResource);```  
+BOOL LoadBitmap(UINT nIDResource);
+```  
   
 ### Parameters  
  `lpszResourceName`  
@@ -414,7 +415,8 @@ BOOL LoadBitmap(UINT nIDResource);```
   
 ```  
 BOOL LoadToolBar(LPCTSTR lpszResourceName);  
-BOOL LoadToolBar(UINT nIDResource);```  
+BOOL LoadToolBar(UINT nIDResource);
+```  
   
 ### Parameters  
  `lpszResourceName`  

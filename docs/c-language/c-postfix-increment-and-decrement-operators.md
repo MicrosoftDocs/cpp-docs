@@ -41,7 +41,7 @@ Operands of the postfix increment and decrement operators are scalar types that 
  *postfix-expression*:  
  *postfix-expression*  **++**  
   
- *postfix-expression*  **––**  
+ *postfix-expression*  **--**  
   
  The result of the postfix increment or decrement operation is the value of the operand. After the result is obtained, the value of the operand is incremented (or decremented). The following code illustrates the postfix increment operator.  
   

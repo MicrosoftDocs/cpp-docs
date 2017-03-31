@@ -133,7 +133,7 @@ int swprintf_s(
  For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
   
 ## Return Value  
- The number of characters written, or –1 if an error occurred. If `buffer` or `format` is a null pointer, `sprintf_s` and `swprintf_s` return -1 and set `errno` to `EINVAL`.  
+ The number of characters written, or -1 if an error occurred. If `buffer` or `format` is a null pointer, `sprintf_s` and `swprintf_s` return -1 and set `errno` to `EINVAL`.  
   
  `sprintf_s` returns the number of bytes stored in `buffer`, not counting the terminating null character. `swprintf_s` returns the number of wide characters stored in `buffer`, not counting the terminating null wide character.  
   

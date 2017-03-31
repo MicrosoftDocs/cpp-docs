@@ -84,12 +84,12 @@ long double acosl(
   
 #### Parameters  
  `x`  
- Value between –1 and 1, for which to calculate the arccosine (the inverse cosine).  
+ Value between -1 and 1, for which to calculate the arccosine (the inverse cosine).  
   
 ## Return Value  
  The `acos` function returns the arccosine of `x` in the range 0 to π radians.  
   
- By default, if `x` is less than –1 or greater than 1, `acos` returns an indefinite.  
+ By default, if `x` is less than -1 or greater than 1, `acos` returns an indefinite.  
   
 |Input|SEH Exception|Matherr Exception|  
 |-----------|-------------------|-----------------------|  

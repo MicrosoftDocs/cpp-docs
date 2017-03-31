@@ -49,7 +49,7 @@ Binary operators act on two operands in an expression. The binary operators are:
   
     -   Addition (+)  
   
-    -   Subtraction (–)  
+    -   Subtraction (-)  
   
 -   [Shift operators](../cpp/left-shift-and-right-shift-operators-input-and-output.md)  
   
@@ -91,7 +91,7 @@ Binary operators act on two operands in an expression. The binary operators are:
   
     -   Addition assignment (+=)  
   
-    -   Subtraction assignment (–=)  
+    -   Subtraction assignment (-=)  
   
     -   Multiplication assignment (*=)  
   

@@ -45,7 +45,7 @@ public ref class Platform::Type :
   
 |||  
 |-|-|  
-|[Type::FullName](#fullname)|Returns a [Platform::String Class](../cppcx/platform-string-class.md)^ that represents the fully qualified name of the type, and uses . (dot) as a separator, not :: (double colon)—for example, “MyNamespace.MyClass”.|  
+|[Type::FullName](#fullname)|Returns a [Platform::String Class](../cppcx/platform-string-class.md)^ that represents the fully qualified name of the type, and uses . (dot) as a separator, not :: (double colon)—for example, `MyNamespace.MyClass`.|  
   
 ## Conversion operators  
   
@@ -65,7 +65,7 @@ public ref class Platform::Type :
 
  
 ## <a name="fullname"></a> Type::FullName Property
-Retrieves the fully-qualified name of the current type in the form “Namespace.Type”.  
+Retrieves the fully-qualified name of the current type in the form `Namespace.Type`.  
   
 ### Syntax  
   
@@ -84,8 +84,8 @@ MainPage::MainPage()
 {  
     InitializeComponent();  
     Type^ t = this->GetType();  
-    auto s = t->FullName; // returns “TestApp.MainPage”  
-    auto s2 = t->ToString(); //also returns “TestApp.MainPage”  
+    auto s = t->FullName; // returns "TestApp.MainPage"  
+    auto s2 = t->ToString(); //also returns "TestApp.MainPage"  
 }  
 ```  
   

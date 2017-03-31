@@ -112,7 +112,7 @@ long double sinhl(
  Angle in radians.  
   
 ## Return Value  
- The `sin` functions return the sine of `x`. If `x` is greater than or equal to 263, or less than or equal to –263, a loss of significance in the result occurs.  
+ The `sin` functions return the sine of `x`. If `x` is greater than or equal to 263, or less than or equal to -263, a loss of significance in the result occurs.  
   
  The `sinh` functions return the hyperbolic sine of `x`. By default, if the result is too large, `sinh` sets `errno` to `ERANGE` and returns ±`HUGE_VAL`.  
   

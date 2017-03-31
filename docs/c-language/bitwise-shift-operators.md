@@ -75,7 +75,7 @@ z = ( x << 8 ) + ( y >> 8 );
   
  In this example, `x` is shifted left eight positions and `y` is shifted right eight positions. The shifted values are added, giving 0xAA55, and assigned to `z`.  
   
- Shifting a negative value to the right yields half the original value, rounded down. For example, –253 (binary 11111111 00000011) shifted right one bit produces –127 (binary 11111111 10000001). A positive 253 shifts right to produce +126.  
+ Shifting a negative value to the right yields half the original value, rounded down. For example, -253 (binary 11111111 00000011) shifted right one bit produces -127 (binary 11111111 10000001). A positive 253 shifts right to produce +126.  
   
  Right shifts preserve the sign bit. When a signed integer shifts right, the most-significant bit remains set. When an unsigned integer shifts right, the most-significant bit is cleared.  
   

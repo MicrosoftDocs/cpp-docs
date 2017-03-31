@@ -220,7 +220,7 @@ int AddBitmap(
  Pointer to the `CBitmap` object that contains the button image or images to add.  
   
 ### Return Value  
- Zero-based index of the first new image if successful; otherwise – 1.  
+ Zero-based index of the first new image if successful; otherwise - 1.  
   
 ### Remarks  
  You can use the Windows API [CreateMappedBitmap](http://msdn.microsoft.com/library/windows/desktop/bb787467) to map colors before adding the bitmap to the toolbar. If you pass a pointer to a **CBitMap** object, you must ensure that the bitmap is not destroyed until after the toolbar is destroyed.  
@@ -319,7 +319,7 @@ int AddString(UINT nStringID);
  Resource identifier of the string resource to add to the toolbar control's string list.  
   
 ### Return Value  
- The zero-based index of the first new string added if successful; otherwise –1.  
+ The zero-based index of the first new string added if successful; otherwise -1.  
   
 ##  <a name="addstrings"></a>  CToolBarCtrl::AddStrings  
  Adds a new string or strings to the list of strings available for a toolbar control.  
@@ -333,7 +333,7 @@ int AddStrings(LPCTSTR lpszStrings);
  Address of a buffer that contains one or more null-terminated strings to add to the toolbar's string list. The last string must be terminated with two null characters.  
   
 ### Return Value  
- The zero-based index of the first new string added if successful; otherwise –1.  
+ The zero-based index of the first new string added if successful; otherwise -1.  
   
 ### Remarks  
  Strings in the buffer must be separated by a null character. You must ensure that the last string has two null terminators. To properly format a constant string, you might write it as:  
@@ -959,7 +959,7 @@ int GetState(int nID) const;
  Command identifier of the button for which to retrieve information.  
   
 ### Return Value  
- The button state information if successful or – 1 otherwise. The button state information can be a combination of the values listed in [CToolBarCtrl::AddButtons](#addbuttons).  
+ The button state information if successful or - 1 otherwise. The button state information can be a combination of the values listed in [CToolBarCtrl::AddButtons](#addbuttons).  
   
 ### Remarks  
  This function is especially handy if you want to retrieve more than one of the button states. To just retrieve one state, use one of the following member functions: [IsButtonEnabled](#isbuttonenabled), [IsButtonChecked](#isbuttonchecked), [IsButtonPressed](#isbuttonpressed), [IsButtonHidden](#isbuttonhidden), or [IsButtonIndeterminate](#isbuttonindeterminate). However, the `GetState` member function is the only way to detect the `TBSTATE_WRAP` button state.  

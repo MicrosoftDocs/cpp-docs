@@ -51,7 +51,7 @@ translation.priority.ht:
   
  3. Notice that the word 'Print' now is floating under your mouse pointer.  
   
- 4. Look at the status bar (at the very bottom of the WordPad window) – notice that it now shows the text "Prints the active document".  
+ 4. Look at the status bar (at the very bottom of the WordPad window) - notice that it now shows the text "Prints the active document".  
   
  The 'Print' in Step 3 is the "Tool tip name," and the 'Prints the active document' from Step 4 is the "description of the button for the status bar."  
   

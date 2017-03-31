@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # operator EQ
-Returns true (–1) if *expression1* equals *expression2*, or returns false (0) if it does not.  
+Returns true (-1) if *expression1* equals *expression2*, or returns false (0) if it does not.  
   
 ## Syntax  
   

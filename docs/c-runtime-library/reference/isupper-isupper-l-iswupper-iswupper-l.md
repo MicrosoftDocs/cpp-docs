@@ -91,7 +91,7 @@ int _iwsupper_l(
  Locale to use.  
   
 ## Return Value  
- Each of these routines returns nonzero if `c` is a particular representation of an uppercase letter. `isupper` returns a nonzero value if `c` is an uppercase character (A – Z). `iswupper` returns a nonzero value if `c` is a wide character that corresponds to an uppercase letter, or if `c` is one of an implementation-defined set of wide characters for which none of `iswcntrl`, `iswdigit`, `iswpunct`, or `iswspace` is nonzero. Each of these routines returns 0 if `c` does not satisfy the test condition.  
+ Each of these routines returns nonzero if `c` is a particular representation of an uppercase letter. `isupper` returns a nonzero value if `c` is an uppercase character (A - Z). `iswupper` returns a nonzero value if `c` is a wide character that corresponds to an uppercase letter, or if `c` is one of an implementation-defined set of wide characters for which none of `iswcntrl`, `iswdigit`, `iswpunct`, or `iswspace` is nonzero. Each of these routines returns 0 if `c` does not satisfy the test condition.  
   
  The versions of these functions that have the `_l` suffix use the locale that's passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).  
   

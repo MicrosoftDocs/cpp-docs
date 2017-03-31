@@ -249,7 +249,7 @@ void SetRetryReply(DWORD nRetryReply = 0);
   
  The caller's response is controlled by the functions `SetRetryReply` and [SetMessagePendingDelay](#setmessagependingdelay). `SetRetryReply` determines how long the calling application should wait between retries for a given call. `SetMessagePendingDelay` determines how long the calling application waits for a response from the server before taking further action.  
   
- Usually the defaults are acceptable and do not need to be changed. The framework retries the call every `nRetryReply` milliseconds until the call goes through or the message-pending delay has expired. A value of 0 for `nRetryReply` specifies an immediate retry, and – 1 specifies cancellation of the call.  
+ Usually the defaults are acceptable and do not need to be changed. The framework retries the call every `nRetryReply` milliseconds until the call goes through or the message-pending delay has expired. A value of 0 for `nRetryReply` specifies an immediate retry, and - 1 specifies cancellation of the call.  
   
  When the message-pending delay has expired, the OLE "busy dialog box" (see [COleBusyDialog](../../mfc/reference/colebusydialog-class.md)) is displayed so that the user can choose to cancel or retry the call. Call [EnableBusyDialog](#enablebusydialog) to enable or disable this dialog box.  
   

@@ -42,11 +42,11 @@ It is recommended that a C/C++ application (or library) have its manifest embedd
   
 -   If you are not doing an incremental build you can directly embed the manifest using a command line similar to the following as a post-build step:  
   
-     **mt.exe –manifest MyApp.exe.manifest -outputresource:MyApp.exe;1**  
+     **mt.exe -manifest MyApp.exe.manifest -outputresource:MyApp.exe;1**  
   
      or  
   
-     **mt.exe –manifest MyLibrary.dll.manifest -outputresource:MyLibrary.dll;2**  
+     **mt.exe -manifest MyLibrary.dll.manifest -outputresource:MyLibrary.dll;2**  
   
      (1 for an EXE, 2 for a DLL.)  
   

@@ -274,7 +274,7 @@ const char32_t* raw_utf32 = UR"(An unescaped \ character)";
  A delimiter is a user-defined sequence of up to 16 characters that immediately precedes the opening parenthesis of a raw string literal and immediately follows its closing parenthesis.  For example, in `R"abc(Hello"\()abc"` the delimiter sequence is `abc` and the string content is `Hello"\(`. You can use a delimiter to disambiguate raw strings that contain both double quotation marks and parentheses. This causes a compiler error:  
   
 ```cpp  
-// meant to represent the string: )”  
+// meant to represent the string: )"  
 const char* bad_parens = R"()")";  // error C2059  
 ```  
   

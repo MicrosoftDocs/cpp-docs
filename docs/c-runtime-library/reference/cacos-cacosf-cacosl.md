@@ -60,7 +60,7 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # cacos, cacosf, cacosl
-Retrieves the arccosine of a complex number, with branch cuts outside the interval [−1, +1] along the real axis.  
+Retrieves the arccosine of a complex number, with branch cuts outside the interval [-1, +1] along the real axis.  
   
 ## Syntax  
   

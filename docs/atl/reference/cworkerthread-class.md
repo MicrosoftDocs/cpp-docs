@@ -87,7 +87,7 @@ class CWorkerThread
   
 3.  Call [CWorkerThread::AddHandle](#addhandle) with the handle of a kernel object and a pointer to an implementation of [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md).  
   
-     – or –  
+     - or -  
   
      Call [CWorkerThread::AddTimer](#addtimer) with a pointer to an implementation of [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md).  
   

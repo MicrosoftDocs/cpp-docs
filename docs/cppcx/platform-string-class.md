@@ -296,7 +296,7 @@ String^ str = "Hello";
 int len = str->Length(); //len = 5  
 ```  
   
- The character array returned by the [String::Data](#data) has one additional character, which is the terminating NULL or ‘\0’. This character is also two bytes long.  
+ The character array returned by the [String::Data](#data) has one additional character, which is the terminating NULL or '\0'. This character is also two bytes long.  
   
 
 
@@ -454,7 +454,7 @@ String(char16* s, unsigned int n)
 ### Example  
   
 ```cpp  
-String^ s = L”Hello!”;  
+String^ s = L"Hello!";  
 ```  
   
 ## <a name="tostring"></a> String::ToString

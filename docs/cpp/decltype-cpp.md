@@ -47,7 +47,7 @@ The `decltype` type specifier yields the type of a specified expression. The `de
 decltype( expression )  
 ```  
   
-#### Parameters  
+### Parameters  
   
 |Parameter|Description|  
 |---------------|-----------------|  
@@ -61,15 +61,15 @@ decltype( expression )
   
  The compiler uses the following rules to determine the type of the `expression` parameter.  
   
--   If the `expression` parameter is an identifier or a [class member access](../cpp/member-access-operators-dot-and.md), `decltype(``expression``)` is the type of the entity named by `expression`. If there is no such entity or the `expression` parameter names a set of overloaded functions, the compiler yields an error message.  
+-   If the `expression` parameter is an identifier or a [class member access](../cpp/member-access-operators-dot-and.md), `decltype(expression)` is the type of the entity named by `expression`. If there is no such entity or the `expression` parameter names a set of overloaded functions, the compiler yields an error message.  
   
--   If the `expression` parameter is a call to a function or an overloaded operator function, `decltype(``expression``)` is the return type of the function. Parentheses around an overloaded operator are ignored.  
+-   If the `expression` parameter is a call to a function or an overloaded operator function, `decltype(expression)` is the return type of the function. Parentheses around an overloaded operator are ignored.  
   
--   If the `expression` parameter is an [rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md), `decltype(``expression``)` is the type of `expression`. If the `expression` parameter is an [lvalue](../cpp/lvalues-and-rvalues-visual-cpp.md), `decltype(``expression``)` is an [lvalue reference](../cpp/lvalue-reference-declarator-amp.md) to the type of `expression`.  
+-   If the `expression` parameter is an [rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md), `decltype(expression)` is the type of `expression`. If the `expression` parameter is an [lvalue](../cpp/lvalues-and-rvalues-visual-cpp.md), `decltype(expression)` is an [lvalue reference](../cpp/lvalue-reference-declarator-amp.md) to the type of `expression`.  
   
  The following code example demonstrates some uses of the `decltype` type specifier. First, assume that you have coded the following statements.  
   
-```  
+```cpp  
 int var;  
 const int&& fx();   
 struct A { double x; }  
@@ -90,20 +90,20 @@ const A* a = new A();
   
  In C++11, you can use the `decltype` type specifier on a trailing return type, together with the `auto` keyword, to declare a template function whose return type depends on the types of its template arguments. For example, consider the following code example in which the return type of the template function depends on the types of the template arguments. In the code example, the *UNKNOWN* placeholder indicates that the return type cannot be specified.  
   
-```  
+```cpp  
 template<typename T, typename U>  
-UNKNOWNfunc(T&& t, U&& u){ return t + u; };   
+UNKNOWN func(T&& t, U&& u){ return t + u; };   
 ```  
   
  The introduction of the `decltype` type specifier enables a developer to obtain the type of the expression that the template function returns. Use the *alternative function declaration syntax* that is shown later, the `auto` keyword, and the `decltype` type specifier to declare a *late-specified* return type. The late-specified return type is determined when the declaration is compiled, instead of when it is coded.  
   
- The following prototype illustrates the syntax of an alternative function declaration. Note that the `const` and `volatile` qualifiers, and the `throw`[exception specification](../cpp/exception-specifications-throw-cpp.md) are optional. The *function_body* placeholder represents a compound statement that specifies what the function does. As a best coding practice, the *expression* placeholder in the `decltype` statement should match the expression specified by the `return` statement, if any, in the *function_body*.  
+ The following prototype illustrates the syntax of an alternative function declaration. Note that the `const` and `volatile` qualifiers, and the `throw` [exception specification](../cpp/exception-specifications-throw-cpp.md) are optional. The *function_body* placeholder represents a compound statement that specifies what the function does. As a best coding practice, the *expression* placeholder in the `decltype` statement should match the expression specified by the `return` statement, if any, in the *function_body*.  
   
- `auto` *function_name* `(` *parameters*opt`)``const`opt`volatile`opt`−>``decltype(`*expression*`)``throw`opt`{`*function_body*`};`  
+ **auto** *function_name* **(** *parameters*<sub>opt</sub> **)** **const**<sub>opt</sub> **volatile**<sub>opt</sub> **->** **decltype(** *expression* **)** **throw**<sub>opt</sub> **{** *function_body* **};**  
   
  In the following code example, the late-specified return type of the `myFunc` template function is determined by the types of the `t` and `u` template arguments. As a best coding practice, the code example also uses rvalue references and the `forward` function template, which support *perfect forwarding*. For more information, see [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).  
   
-```  
+```cpp  
 //C++11  
  template<typename T, typename U>  
 auto myFunc(T&& t, U&& u) -> decltype (forward<T>(t) + forward<U>(u))   
@@ -126,9 +126,8 @@ decltype(auto) myFunc(T&& t, U&& u)
   
 ```cpp  
 // decltype_1.cpp  
-// compile with: /EHsc  
-//  
-#include "stdafx.h"  
+// compile with: cl /EHsc decltype_1.cpp  
+  
 #include <iostream>  
 #include <string>  
 #include <utility>  
@@ -188,17 +187,12 @@ int main()
 }  
 ```  
   
- **Output**  
-  
- This code example yields the following results.  
-  
- 13  
-  
- 13.5  
-  
- Hello, world!  
-  
- 42  
+```Output  
+Plus(i, 9) = 13
+Plus(dx, dy) = 13.5
+Hello, world!
+x3.Dump() = 42
+```
   
 ## Example
 **Visual Studio 2017 and later:** The compiler parses decltype arguments when the templates are declared rather than instantiated. Consequently, if a non-dependent specialization is found in the decltype argument, it will not be deferred to instantiation-time and will be processed immediately and any resulting errors will be diagnosed at that time.
@@ -210,12 +204,12 @@ The following example shows such a compiler error that is raised at the point of
 template <class T, class ReturnT, class... ArgsT> class IsCallable
 {
 public:
-       struct BadType {};
-       template <class U>
-       static decltype(std::declval<T>()(std::declval<ArgsT>()...)) Test(int); //C2064. Should be declval<U>
-       template <class U>
-       static BadType Test(...);
-       static constexpr bool value = std::is_convertible<decltype(Test<T>(0)), ReturnT>::value;
+   struct BadType {};
+   template <class U>
+   static decltype(std::declval<T>()(std::declval<ArgsT>()...)) Test(int); //C2064. Should be declval<U>
+   template <class U>
+   static BadType Test(...);
+   static constexpr bool value = std::is_convertible<decltype(Test<T>(0)), ReturnT>::value;
 };
 
 constexpr bool test1 = IsCallable<int(), int>::value;
@@ -227,5 +221,5 @@ static_assert(test2, "PASS2");
 ## Requirements  
  Visual C++ 2010 or later versions.  
   
- decltype(auto) requires Visual Studio 2015 or later  
+ `decltype(auto)` requires Visual Studio 2015 or later.  
   

@@ -83,7 +83,7 @@ long double atanhl(
  Floating-point value.  
   
 ## Return Value  
- The `atanh` functions return the inverse hyberbolic tangent (arc hyperbolic tangent) of `x`. If `x` is greater than 1, or less than –1, `errno` is set to `EDOM` and the result is a quiet NaN. If `x` is equal to 1 or -1, a positive or negative infinity is returned, respectively, and `errno` is set to `ERANGE`.  
+ The `atanh` functions return the inverse hyberbolic tangent (arc hyperbolic tangent) of `x`. If `x` is greater than 1, or less than -1, `errno` is set to `EDOM` and the result is a quiet NaN. If `x` is equal to 1 or -1, a positive or negative infinity is returned, respectively, and `errno` is set to `ERANGE`.  
   
 |Input|SEH Exception|`Matherr` Exception|  
 |-----------|-------------------|-------------------------|  

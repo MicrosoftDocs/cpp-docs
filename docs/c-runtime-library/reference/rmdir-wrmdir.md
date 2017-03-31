@@ -81,7 +81,7 @@ int _wrmdir(
  Path of the directory to be removed.  
   
 ## Return Value  
- Each of these functions returns 0 if the directory is successfully deleted. A return value of –1 indicates an error and `errno` is set to one of the following values:  
+ Each of these functions returns 0 if the directory is successfully deleted. A return value of -1 indicates an error and `errno` is set to one of the following values:  
   
  **ENOTEMPTY**  
  Given path is not a directory, the directory is not empty, or the directory is either the current working directory or the root directory.  

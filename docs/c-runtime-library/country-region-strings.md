@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Country/Region Strings
-Country and region strings can be combined with a language string to create a locale specification for the `setlocale`, `_wsetlocale`, `_create_locale`, and `_wcreate_locale` functions. For lists of country/region names that are supported by various Windows operating system versions, see the [National Language Support (NLS) API Reference](http://msdn.microsoft.com/goglobal/bb896001.aspx).In the lists, the country/region string can be any of the country values in the **Locale – Language Country/Region** column, or any of the abbreviations in the **Country or Region name abbreviation** column.  
+Country and region strings can be combined with a language string to create a locale specification for the `setlocale`, `_wsetlocale`, `_create_locale`, and `_wcreate_locale` functions. For lists of country/region names that are supported by various Windows operating system versions, see the [National Language Support (NLS) API Reference](http://msdn.microsoft.com/goglobal/bb896001.aspx).In the lists, the country/region string can be any of the country values in the **Locale - Language Country/Region** column, or any of the abbreviations in the **Country or Region name abbreviation** column.  
   
  The C run-time library implementation also supports the following additional country/region strings and abbreviations:  
   

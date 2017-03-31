@@ -88,7 +88,7 @@ intptr_t _wexecvpe(
  Array of pointers to environment settings.  
   
 ## Return Value  
- If successful, these functions do not return to the calling process. A return value of –1 indicates an error, in which case the `errno` global variable is set.  
+ If successful, these functions do not return to the calling process. A return value of -1 indicates an error, in which case the `errno` global variable is set.  
   
 |`errno` value|Description|  
 |-------------------|-----------------|  

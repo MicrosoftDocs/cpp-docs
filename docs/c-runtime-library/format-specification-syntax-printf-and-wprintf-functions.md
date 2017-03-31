@@ -91,14 +91,14 @@ Integer types such as `short`, `int`, `long`, `long long`, and their `unsigned` 
 |**u**|Integer|Unsigned decimal integer.|  
 |**x**|Integer|Unsigned hexadecimal integer; uses "abcdef."|  
 |**X**|Integer|Unsigned hexadecimal integer; uses "ABCDEF."|  
-|**e**|Floating-point|Signed value that has the form [–]*d.dddd*__e±__*dd*[*d*] where *d* is one decimal digit, *dddd* is one or more decimal digits depending on the specified precision, or six by default, and *dd*[*d*] is two or three decimal digits depending on the [output format](../c-runtime-library/set-output-format.md) and size of the exponent.|  
+|**e**|Floating-point|Signed value that has the form [-]*d.dddd*__e±__*dd*[*d*] where *d* is one decimal digit, *dddd* is one or more decimal digits depending on the specified precision, or six by default, and *dd*[*d*] is two or three decimal digits depending on the [output format](../c-runtime-library/set-output-format.md) and size of the exponent.|  
 |**E**|Floating-point|Identical to the **e** format except that **E** rather than **e** introduces the exponent.|  
-|**f**|Floating-point|Signed value that has the form [–]*dddd*__.__*dddd*, where *dddd* is one or more decimal digits. The number of digits before the decimal point depends on the magnitude of the number, and the number of digits after the decimal point depends on the requested precision, or six by default.|  
+|**f**|Floating-point|Signed value that has the form [-]*dddd*__.__*dddd*, where *dddd* is one or more decimal digits. The number of digits before the decimal point depends on the magnitude of the number, and the number of digits after the decimal point depends on the requested precision, or six by default.|  
 |**F**|Floating-point|Identical to the **f** format except that infinity and nan output is capitalized.|  
-|**g**|Floating-point|Signed values are displayed in **f** or **e** format, whichever is more compact for the given value and precision. The **e** format is used only when the exponent of the value is less than –4 or greater than or equal to the *precision* argument. Trailing zeros are truncated, and the decimal point appears only if one or more digits follow it.|  
+|**g**|Floating-point|Signed values are displayed in **f** or **e** format, whichever is more compact for the given value and precision. The **e** format is used only when the exponent of the value is less than -4 or greater than or equal to the *precision* argument. Trailing zeros are truncated, and the decimal point appears only if one or more digits follow it.|  
 |**G**|Floating-point|Identical to the **g** format, except that **E**, rather than **e**, introduces the exponent (where appropriate).|  
-|**a**|Floating-point|Signed hexadecimal double-precision floating-point value that has the form [−]0x*h.hhhh*__p±__*dd*, where *h.hhhh* are the hex digits (using lower case letters) of the mantissa, and *dd* are one or more digits for the exponent. The precision specifies the number of digits after the point.|  
-|**A**|Floating-point|Signed hexadecimal double-precision floating-point value that has the form [−]0X*h.hhhh*__P±__*dd*, where *h.hhhh* are the hex digits (using capital letters) of the mantissa, and *dd* are one or more digits for the exponent. The precision specifies the number of digits after the point.|  
+|**a**|Floating-point|Signed hexadecimal double-precision floating-point value that has the form [-]0x*h.hhhh*__p±__*dd*, where *h.hhhh* are the hex digits (using lower case letters) of the mantissa, and *dd* are one or more digits for the exponent. The precision specifies the number of digits after the point.|  
+|**A**|Floating-point|Signed hexadecimal double-precision floating-point value that has the form [-]0X*h.hhhh*__P±__*dd*, where *h.hhhh* are the hex digits (using capital letters) of the mantissa, and *dd* are one or more digits for the exponent. The precision specifies the number of digits after the point.|  
 |**n**|Pointer to integer|Number of characters that are successfully written so far to the stream or buffer. This value is stored in the integer whose address is given as the argument. The size of the integer pointed to can be controlled by an argument size specification prefix. The **n** specifier is disabled by default; for information see the important security note.|  
 |**p**|Pointer type|Displays the argument as an address in hexadecimal digits.|  
 |**s**|String|When used with `printf` functions, specifies a single-byte or multi-byte character string; when used with `wprintf` functions, specifies a wide-character string. Characters are displayed up to the first null character or until the *precision* value is reached.|  
@@ -121,7 +121,7 @@ Before Visual Studio 2015, the CRT used a different, non-standard format for out
 |Value|Output|  
 |-----------|------------|  
 |+ infinity|`1.#INF` *random-digits*|  
-|– infinity|`–1.#INF` *random-digits*|  
+|- infinity|`-1.#INF` *random-digits*|  
 |Indefinite (same as quiet NaN)|*digit* `.#IND` *random-digits*|  
 |NaN|*digit* `.#NAN` *random-digits*|  
   
@@ -144,7 +144,7 @@ The first optional field in a conversion specification contains *flag directives
 |Flag|Meaning|Default|  
 |----------|-------------|-------------|  
 |**-**|Left align the result within the given field width.|Right align.|  
-|**+**|Use a sign (+ or –) to prefix the output value if it is of a signed type.|Sign appears only for negative signed values (–).|  
+|**+**|Use a sign (+ or -) to prefix the output value if it is of a signed type.|Sign appears only for negative signed values (-).|  
 |**0**|If *width* is prefixed by **0**, leading zeros are added until the minimum width is reached. If both **0** and **-** appear, the **0** is ignored. If **0** is specified for an integer format (**i**, **u**, **x**, **X**, **o**, **d**) and a precision specification is also present—for example, `%04.d`—the **0** is ignored. If **0** is specified for the **a** or **A** floating-point format, leading zeros are prepended to the mantissa, after the `0x` or `0X` prefix.|No padding.|  
 |**blank** (' ')|Use a blank to prefix the output value if it is signed and positive. The blank is ignored if both the blank and + flags appear.|No blank appears.|  
 |**#**|When it's used with the **o**, **x**, or **X** format, the **#** flag uses 0, 0x, or 0X, respectively, to prefix any nonzero output value.|No blank appears.|  

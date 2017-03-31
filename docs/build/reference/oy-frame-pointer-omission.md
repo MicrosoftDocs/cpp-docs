@@ -55,9 +55,9 @@ Suppresses creation of frame pointers on the call stack.
   
  **/Oy** enables frame-pointer omission and **/Oy-** disables omission. **/Oy** is available only in x86 compilers.  
   
- If your code requires EBP-based addressing, you can specify the **/Oy–** option after the **/Ox** option or use [optimize](../../preprocessor/optimize.md) with the "**y**" and **off** arguments to gain maximum optimization with EBP-based addressing. The compiler detects most situations where EBP-based addressing is required (for instance, with the `_alloca` and `setjmp` functions and with structured exception handling).  
+ If your code requires EBP-based addressing, you can specify the **/Oy-** option after the **/Ox** option or use [optimize](../../preprocessor/optimize.md) with the "**y**" and **off** arguments to gain maximum optimization with EBP-based addressing. The compiler detects most situations where EBP-based addressing is required (for instance, with the `_alloca` and `setjmp` functions and with structured exception handling).  
   
- The [/Ox (Full Optimization)](../../build/reference/ox-full-optimization.md) and [/O1, /O2 (Minimize Size, Maximize Speed)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) options imply **/Oy**. Specifying **/Oy–** after the **/Ox**, **/O1**, or **/O2** option disables **/Oy**, whether it is explicit or implied.  
+ The [/Ox (Full Optimization)](../../build/reference/ox-full-optimization.md) and [/O1, /O2 (Minimize Size, Maximize Speed)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) options imply **/Oy**. Specifying **/Oy-** after the **/Ox**, **/O1**, or **/O2** option disables **/Oy**, whether it is explicit or implied.  
   
  The **/Oy** compiler option makes using the debugger more difficult because the compiler suppresses frame pointer information. If you specify a debug compiler option ([/Z7, /Zi, /ZI](../../build/reference/z7-zi-zi-debug-information-format.md)), we recommend that you specify the **/Oy-** option after any other optimization compiler options.  
   

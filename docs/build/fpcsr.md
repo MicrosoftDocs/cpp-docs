@@ -37,10 +37,10 @@ The register state also includes the x87 FPU control word. The calling conventio
   
 ```  
 FPCSR[0:6]: Exception masks all 1's (all exceptions masked)  
-FPCSR[7]: Reserved – 0  
-FPCSR[8:9]: Precision Control – 10B (double precision)  
+FPCSR[7]: Reserved - 0  
+FPCSR[8:9]: Precision Control - 10B (double precision)  
 FPCSR[10:11]: Rounding  control - 0 (round to nearest)  
-FPCSR[12]: Infinity control – 0 (not used)  
+FPCSR[12]: Infinity control - 0 (not used)  
 ```  
   
  A callee that modifies any of the fields within FPCSR must restore them before returning to its caller. Furthermore, a caller that has modified any of these fields must restore them to their standard values before invoking a callee unless by agreement the callee expects the modified values.  

@@ -245,7 +245,7 @@ Sexpr ^ Loop (Sexpr^ input) {
 Object^ obj = nullptr;  
 char*   pstr = nullptr; // 0 would also work here  
   
-// Error: no conversion of nullptr to 0 …  
+// Error: no conversion of nullptr to 0  
 int ival = nullptr;  
 ```  
   

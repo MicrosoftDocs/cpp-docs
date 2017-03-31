@@ -101,7 +101,7 @@ int _mblen_l(
  Locale to use.  
   
 ## Return Value  
- `_mbclen` returns 1 or 2, according to whether the multibyte character `c` is 1 or 2 bytes long. There is no error return for `_mbclen`. If `mbstr` is not `NULL`, `mblen` returns the length, in bytes, of the multibyte character. If `mbstr` is `NULL` or it points to the wide-character null character, `mblen` returns 0. If the object that `mbstr` points to does not form a valid multibyte character within the first `count` characters, `mblen` returns –1.  
+ `_mbclen` returns 1 or 2, according to whether the multibyte character `c` is 1 or 2 bytes long. There is no error return for `_mbclen`. If `mbstr` is not `NULL`, `mblen` returns the length, in bytes, of the multibyte character. If `mbstr` is `NULL` or it points to the wide-character null character, `mblen` returns 0. If the object that `mbstr` points to does not form a valid multibyte character within the first `count` characters, `mblen` returns -1.  
   
 ## Remarks  
  The `_mbclen` function returns the length, in bytes, of the multibyte character `c`. If `c` does not point to the lead byte of a multibyte character as determined by an implicit call to `_ismbblead`, the result of `_mbclen` is unpredictable.  

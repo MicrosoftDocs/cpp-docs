@@ -91,7 +91,7 @@ long double ldexpl(
  Integer exponent.  
   
 ## Return Value  
- The `ldexp` function returns the value of `x` * 2<sup>exp</sup> if successful. On overflow, and depending on the sign of `x`, `ldexp` returns +/– `HUGE_VAL`; the `errno` value is set to `ERANGE`.  
+ The `ldexp` function returns the value of `x` * 2<sup>exp</sup> if successful. On overflow, and depending on the sign of `x`, `ldexp` returns +/- `HUGE_VAL`; the `errno` value is set to `ERANGE`.  
   
  For more information about `errno` and possible error return values, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   

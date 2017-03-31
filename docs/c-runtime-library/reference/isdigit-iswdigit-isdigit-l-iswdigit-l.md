@@ -97,7 +97,7 @@ int _iswdigit_l(
  The locale to use.  
   
 ## Return Value  
- Each of these routines returns nonzero if `c` is a particular representation of a decimal-digit character. `isdigit` returns a nonzero value if `c` is a decimal digit (0 – 9). `iswdigit` returns a nonzero value if `c` is a wide character that corresponds to a decimal-digit character. Each of these routines returns 0 if `c` does not satisfy the test condition.  
+ Each of these routines returns nonzero if `c` is a particular representation of a decimal-digit character. `isdigit` returns a nonzero value if `c` is a decimal digit (0 - 9). `iswdigit` returns a nonzero value if `c` is a wide character that corresponds to a decimal-digit character. Each of these routines returns 0 if `c` does not satisfy the test condition.  
   
  The versions of these functions that have the `_l` suffix use the locale that's passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).  
   

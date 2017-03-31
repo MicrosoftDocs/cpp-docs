@@ -183,7 +183,7 @@ intptr_t _wfindfirst64i32(
  File information buffer.  
   
 ## Return Value  
- If successful, `_findfirst` returns a unique search handle identifying the file or group of files that match the `filespec` specification, which can be used in a subsequent call to [_findnext](../../c-runtime-library/reference/findnext-functions.md) or to `_findclose`. Otherwise, `_findfirst` returns –1 and sets `errno` to one of the following values.  
+ If successful, `_findfirst` returns a unique search handle identifying the file or group of files that match the `filespec` specification, which can be used in a subsequent call to [_findnext](../../c-runtime-library/reference/findnext-functions.md) or to `_findclose`. Otherwise, `_findfirst` returns -1 and sets `errno` to one of the following values.  
   
  `EINVAL`  
  Invalid parameter: `filespec` or `fileinfo` was `NULL`. Or, the operating system returned an unexpected error.  

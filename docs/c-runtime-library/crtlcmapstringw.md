@@ -74,7 +74,7 @@ int __crtLCMapStringW(
  `cchSrc`  
  Size, in characters, of the string pointed to by the `lpSrcStr` parameter. This count can include the NULL terminator, or not include it.  
   
- A `cchSrc` value of –1 specifies that the string pointed to by `lpSrcStr` is null-terminated. If this is the case, and this function is being used in its string-mapping mode, the function calculates the string's length itself, and null-terminates the mapped string stored into `*lpDestStr`.  
+ A `cchSrc` value of -1 specifies that the string pointed to by `lpSrcStr` is null-terminated. If this is the case, and this function is being used in its string-mapping mode, the function calculates the string's length itself, and null-terminates the mapped string stored into `*lpDestStr`.  
   
  `lpDestStr`  
  Long pointer to a buffer into which the function stores the mapped string or sort key.  

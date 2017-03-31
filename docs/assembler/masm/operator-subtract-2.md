@@ -44,7 +44,7 @@ Returns *expression1* minus *expression2*.
   
 ```  
   
-expression1 – expression2  
+expression1 - expression2  
 ```  
   
 ## See Also  

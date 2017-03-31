@@ -50,10 +50,10 @@ When writing an internet application, you often examine and add to the informati
   
 |Group|Meaning|  
 |-----------|-------------|  
-|200–299|Success|  
-|300–399|Information|  
-|400–499|Request error|  
-|500–599|Server error|  
+|200-299|Success|  
+|300-399|Information|  
+|400-499|Request error|  
+|500-599|Server error|  
   
  The Hypertext Transfer Protocol (HTTP) is an application-level protocol for hypermedia information systems. For more information about HTTP, and how Web browsers and servers communicate, see the Hypertext Transfer Protocol (HTTP) specification:  
   

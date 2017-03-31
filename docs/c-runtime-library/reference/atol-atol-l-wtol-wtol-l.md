@@ -115,7 +115,7 @@ long _wtol_l(
   
  [`whitespace`] [`sign`] [`digits`]]  
   
- A `whitespace` consists of space or tab characters, which are ignored; `sign` is either plus (+) or minus (–); and `digits` are one or more digits.  
+ A `whitespace` consists of space or tab characters, which are ignored; `sign` is either plus (+) or minus (-); and `digits` are one or more digits.  
   
  `_wtol` is identical to `atol` except that it takes a wide character string.  
   

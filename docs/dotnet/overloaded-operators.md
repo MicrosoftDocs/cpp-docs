@@ -36,7 +36,7 @@ translation.priority.ht:
 # Overloaded Operators
 Operator overloading has changed significantly from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
   
- In the declaration of a reference type, for example, rather than using the native `operator+` syntax, you explicitly write out the underlying internal name of the operator – in this case, `op_Addition`. In addition, the invocation of an operator has to be explicitly invoked through that name, thus precluding the two primary benefits of operator overloading: (a) the intuitive syntax, and (b) the ability to intermix new types with existing types. For example:  
+ In the declaration of a reference type, for example, rather than using the native `operator+` syntax, you explicitly write out the underlying internal name of the operator - in this case, `op_Addition`. In addition, the invocation of an operator has to be explicitly invoked through that name, thus precluding the two primary benefits of operator overloading: (a) the intuitive syntax, and (b) the ability to intermix new types with existing types. For example:  
   
 ```  
 public __gc __sealed class Vector {  

@@ -126,6 +126,6 @@ The cube root of -64.64 is -4.013289
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
- [exp, expf](../../c-runtime-library/reference/exp-expf.md)   
+ [exp, expf, expl](../../c-runtime-library/reference/exp-expf.md)   
  [log, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md)   
  [pow, powf, powl](../../c-runtime-library/reference/pow-powf-powl.md)

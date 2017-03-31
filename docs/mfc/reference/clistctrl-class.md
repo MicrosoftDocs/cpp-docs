@@ -233,9 +233,9 @@ class CListCtrl : public CWnd
   
      When enabled, allows the control to support up to `DWORD` items. This is possible by placing the overhead of managing item data on the application. Except for the item selection and focus information, all item information must be managed by the application. For more information, see [Using CListCtrl: Virtual List Controls](../../mfc/virtual-list-controls.md).  
   
--   One– and two– click activation  
+-   One- and two- click activation  
   
-     When enabled, allows hot tracking (automatic highlighting of the item text) and one– or two– click activation of the highlighted item.  
+     When enabled, allows hot tracking (automatic highlighting of the item text) and one- or two- click activation of the highlighted item.  
   
 -   Drag and drop column ordering  
   
@@ -251,7 +251,7 @@ class CListCtrl : public CWnd
  By default, the list view control is responsible for storing an item's icon and text attributes. However, in addition to these item types, class `CListCtrl` supports "callback items." A "callback item" is a list view item for which the application — rather than the control — stores the text, icon, or both. A callback mask is used to specify which item attributes (text and/or icon) are supplied by the application. If an application uses callback items, it must be able to supply the text and/or icon attributes on demand. Callback items are helpful when your application already maintains some of this information. For more information, see [Using CListCtrl: Callback Items and the Callback Mask](../callback-items-and-the-callback-mask.md).  
   
 ## Image Lists  
- The icons, header item images, and application– defined states for list view items are contained in several image lists (implemented by class [CImageList](cimagelist-class.md)), which you create and assign to the list view control. Each list view control can have up to four different types of image lists:  
+ The icons, header item images, and application- defined states for list view items are contained in several image lists (implemented by class [CImageList](cimagelist-class.md)), which you create and assign to the list view control. Each list view control can have up to four different types of image lists:  
   
 -   Large icon  
   

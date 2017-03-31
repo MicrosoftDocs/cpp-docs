@@ -76,8 +76,8 @@ class CTime
   
 |||  
 |-|-|  
-|[operator + –](#operator_add_-)|These operators add and subtract `CTimeSpan` and `CTime` objects.|  
-|[operator +=, –=](#operator_add_eq_-_eq)|These operators add and subtract a `CTimeSpan` object to and from this `CTime` object.|  
+|[operator + -](#operator_add_-)|These operators add and subtract `CTimeSpan` and `CTime` objects.|  
+|[operator +=, -=](#operator_add_eq_-_eq)|These operators add and subtract a `CTimeSpan` object to and from this `CTime` object.|  
 |[operator =](#operator_eq)|The assignment operator.|  
 |[operator ==, < , etc.](#ctime_comparison_operators)|Comparison operators.|  
   
@@ -185,9 +185,9 @@ CTime(const DBTIMESTAMP& dbts,int nDST = -1) throw();
   
     |Component|Range|  
     |---------------|-----------|  
-    |`nYear`|1970–3000|  
-    |`nMonth`|1–12|  
-    |`nDay`|1–31|  
+    |`nYear`|1970-3000|  
+    |`nMonth`|1-12|  
+    |`nDay`|1-31|  
     |`nHour`|0-23|  
     |`nMin`|0-59|  
     |`nSec`|0-59|  
@@ -261,7 +261,7 @@ CString FormatGmt(UINT nFormatID) const;
  See the example for [CTime::Format](#format).  
   
 ##  <a name="getasdbtimestamp"></a>  CTime::GetAsDBTIMESTAMP  
- Call this member function to convert the time information stored in the `CTime` object to a Win32–compatible DBTIMESTAMP structure.  
+ Call this member function to convert the time information stored in the `CTime` object to a Win32-compatible DBTIMESTAMP structure.  
   
 ```  
 bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
@@ -281,7 +281,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
  [!code-cpp[NVC_ATLMFC_Utilities#150](../../atl-mfc-shared/codesnippet/cpp/ctime-class_4.cpp)]  
   
 ##  <a name="getassystemtime"></a>  CTime::GetAsSystemTime  
- Call this member function to convert the time information stored in the `CTime` object to a Win32–compatible [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) structure.  
+ Call this member function to convert the time information stored in the `CTime` object to a Win32-compatible [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) structure.  
   
 ```  
 bool GetAsSystemTime(SYSTEMTIME& st) const throw();

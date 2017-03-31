@@ -45,7 +45,7 @@ You can create Visual C++ programs that use .NET classes and compile them by usi
   
 ### To create a new project in Visual Studio and add a new source file  
   
-1.  Create a new project. On the **File** menu, point to **New**, and then click **Project…**.  
+1.  Create a new project. On the **File** menu, point to **New**, and then click **Project**.  
   
 2.  From the Visual C++ project types, click **CLR**, and then click **CLR Empty Project**.  
   
@@ -59,7 +59,7 @@ You can create Visual C++ programs that use .NET classes and compile them by usi
   
 5.  Add a new source file to the project:  
   
-    -   Right-click the **Source Files** folder in Solution Explorer, point to **Add** and click **New Item…**.  
+    -   Right-click the **Source Files** folder in Solution Explorer, point to **Add** and click **New Item**.  
   
     -   Click **C++ File (.cpp)** and type a file name and then click **Add**.  
   

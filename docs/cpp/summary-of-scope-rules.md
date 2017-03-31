@@ -49,12 +49,12 @@ The use of a name must be unambiguous within its scope (up to the point where ov
   
 -   Member-selection for objects and references (**.**)  
   
--   Member-selection for pointers (**–>**)  
+-   Member-selection for pointers (**->**)  
   
 ## Qualified names  
  Names used with the binary scope-resolution operator (`::`) are called "qualified names." The name specified after the binary scope-resolution operator must be a member of the class specified on the left of the operator or a member of its base class(es).  
   
- Names specified after the member-selection operator (**.** or **–>**) must be members of the class type of the object specified on the left of the operator or members of its base class(es). Names specified on the right of the member-selection operator (**–>**) can also be objects of another class type, provided that the left-hand side of **–>** is a class object and that the class defines an overloaded member-selection operator (**–>**) that evaluates to a pointer to some other class type. (This provision is discussed in more detail in [Class Member Access](../cpp/member-access.md).)  
+ Names specified after the member-selection operator (**.** or **->**) must be members of the class type of the object specified on the left of the operator or members of its base class(es). Names specified on the right of the member-selection operator (**->**) can also be objects of another class type, provided that the left-hand side of **->** is a class object and that the class defines an overloaded member-selection operator (**->**) that evaluates to a pointer to some other class type. (This provision is discussed in more detail in [Class Member Access](../cpp/member-access.md).)  
   
  The compiler searches for names in the following order, stopping when the name is found:  
   

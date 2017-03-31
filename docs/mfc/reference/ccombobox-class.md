@@ -241,7 +241,7 @@ virtual int CompareItem(LPCOMPAREITEMSTRUCT lpCompareItemStruct);
   
 |Value|Meaning|  
 |-----------|-------------|  
-|– 1|Item 1 sorts before item 2.|  
+|- 1|Item 1 sorts before item 2.|  
 |0|Item 1 and item 2 sort the same.|  
 |1|Item 1 sorts after item 2.|  
   
@@ -437,7 +437,7 @@ int FindString(
   
 ### Parameters  
  `nStartAfter`  
- Contains the zero-based index of the item before the first item to be searched. When the search reaches the bottom of the list box, it continues from the top of the list box back to the item specified by `nStartAfter`. If –1, the entire list box is searched from the beginning.  
+ Contains the zero-based index of the item before the first item to be searched. When the search reaches the bottom of the list box, it continues from the top of the list box back to the item specified by `nStartAfter`. If -1, the entire list box is searched from the beginning.  
   
  `lpszString`  
  Points to the null-terminated string that contains the prefix to search for. The search is case independent, so this string can contain any combination of uppercase and lowercase letters.  
@@ -462,7 +462,7 @@ int FindStringExact(
   
 ### Parameters  
  `nIndexStart`  
- Specifies the zero-based index of the item before the first item to be searched. When the search reaches the bottom of the list box, it continues from the top of the list box back to the item specified by `nIndexStart`. If `nIndexStart` is –1, the entire list box is searched from the beginning.  
+ Specifies the zero-based index of the item before the first item to be searched. When the search reaches the bottom of the list box, it continues from the top of the list box back to the item specified by `nIndexStart`. If `nIndexStart` is -1, the entire list box is searched from the beginning.  
   
  `lpszFind`  
  Points to the null-terminated string to search for. This string can contain a complete filename, including the extension. The search is not case sensitive, so this string can contain any combination of uppercase and lowercase letters.  
@@ -680,7 +680,7 @@ void* GetItemDataPtr(int nIndex) const;
  Contains the zero-based index of an item in the combo box's list box.  
   
 ### Return Value  
- Retrieves a pointer, or –1 if an error occurs.  
+ Retrieves a pointer, or -1 if an error occurs.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CComboBox#22](../../mfc/reference/codesnippet/cpp/ccombobox-class_22.cpp)]  
@@ -694,7 +694,7 @@ int GetItemHeight(int nIndex) const;
   
 ### Parameters  
  `nIndex`  
- Specifies the component of the combo box whose height is to be retrieved. If the `nIndex` parameter is –1, the height of the edit-control (or static-text) portion of the combo box is retrieved. If the combo box has the [CBS_OWNERDRAWVARIABLE](../../mfc/reference/combo-box-styles.md) style, `nIndex` specifies the zero-based index of the list item whose height is to be retrieved. Otherwise, `nIndex` should be set to 0.  
+ Specifies the component of the combo box whose height is to be retrieved. If the `nIndex` parameter is -1, the height of the edit-control (or static-text) portion of the combo box is retrieved. If the combo box has the [CBS_OWNERDRAWVARIABLE](../../mfc/reference/combo-box-styles.md) style, `nIndex` specifies the zero-based index of the list item whose height is to be retrieved. Otherwise, `nIndex` should be set to 0.  
   
 ### Return Value  
  The height, in pixels, of the specified item in a combo box. The return value is **CB_ERR** if an error occurs.  
@@ -836,7 +836,7 @@ int InsertString(
   
 ### Parameters  
  `nIndex`  
- Contains the zero-based index to the position in the list box that will receive the string. If this parameter is –1, the string is added to the end of the list.  
+ Contains the zero-based index to the position in the list box that will receive the string. If this parameter is -1, the string is added to the end of the list.  
   
  `lpszString`  
  Points to the null-terminated string that is to be inserted.  
@@ -930,7 +930,7 @@ int SelectString(
   
 ### Parameters  
  `nStartAfter`  
- Contains the zero-based index of the item before the first item to be searched. When the search reaches the bottom of the list box, it continues from the top of the list box back to the item specified by `nStartAfter`. If –1, the entire list box is searched from the beginning.  
+ Contains the zero-based index of the item before the first item to be searched. When the search reaches the bottom of the list box, it continues from the top of the list box back to the item specified by `nStartAfter`. If -1, the entire list box is searched from the beginning.  
   
  `lpszString`  
  Points to the null-terminated string that contains the prefix to search for. The search is case independent, so this string can contain any combination of uppercase and lowercase letters.  
@@ -986,10 +986,10 @@ int SetCurSel(int nSelect);
   
 ### Parameters  
  `nSelect`  
- Specifies the zero-based index of the string to select. If –1, any current selection in the list box is removed and the edit control is cleared.  
+ Specifies the zero-based index of the string to select. If -1, any current selection in the list box is removed and the edit control is cleared.  
   
 ### Return Value  
- The zero-based index of the item selected if the message is successful. The return value is **CB_ERR** if `nSelect` is greater than the number of items in the list or if `nSelect` is set to –1, which clears the selection.  
+ The zero-based index of the item selected if the message is successful. The return value is **CB_ERR** if `nSelect` is greater than the number of items in the list or if `nSelect` is set to -1, which clears the selection.  
   
 ### Remarks  
  If necessary, the list box scrolls the string into view (if the list box is visible). The text in the edit control of the combo box is changed to reflect the new selection. Any previous selection in the list box is removed.  
@@ -1030,10 +1030,10 @@ BOOL SetEditSel(
   
 ### Parameters  
  `nStartChar`  
- Specifies the starting position. If the starting position is set to –1, then any existing selection is removed.  
+ Specifies the starting position. If the starting position is set to -1, then any existing selection is removed.  
   
  `nEndChar`  
- Specifies the ending position. If the ending position is set to –1, then all text from the starting position to the last character in the edit control is selected.  
+ Specifies the ending position. If the ending position is set to -1, then all text from the starting position to the last character in the edit control is selected.  
   
 ### Return Value  
  Nonzero if the member function is successful; otherwise 0. It is **CB_ERR** if `CComboBox` has the [CBS_DROPDOWNLIST](../../mfc/reference/combo-box-styles.md) style or does not have a list box.  
@@ -1155,7 +1155,7 @@ int SetItemHeight(
   
  If the combo box has the [CBS_OWNERDRAWVARIABLE](../../mfc/reference/combo-box-styles.md) style, `nIndex` specifies the zero-based index of the list item whose height is to be set; otherwise, `nIndex` must be 0 and the height of all list items will be set.  
   
- If `nIndex` is –1, the height of the edit-control or static-text portion of the combo box is to be set.  
+ If `nIndex` is -1, the height of the edit-control or static-text portion of the combo box is to be set.  
   
  `cyItemHeight`  
  Specifies the height, in pixels, of the combo-box component identified by `nIndex`.  

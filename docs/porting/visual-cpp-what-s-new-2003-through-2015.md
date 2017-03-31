@@ -1015,7 +1015,7 @@ In Visual C++ 2015 and later, ongoing improvements to compiler conformance can s
     {   
         auto iter = std::find(v.begin(), v.end(), 5);   
     }   
-    catch(…)   
+    catch(...)   
     {   
         do_something();  // ok   
     }  
@@ -1028,7 +1028,7 @@ In Visual C++ 2015 and later, ongoing improvements to compiler conformance can s
     {   
         auto iter = std::find(v.begin(), v.end(), 5);   
     }   
-    catch(…)   
+    catch(...)   
     {   
         do_something();  // warning C4702: unreachable code  
     }  

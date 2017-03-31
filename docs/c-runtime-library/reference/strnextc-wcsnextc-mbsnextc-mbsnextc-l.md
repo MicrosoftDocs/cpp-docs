@@ -120,7 +120,7 @@ unsigned int _mbsnextc_l(
 |---------------------|--------------------------------------|--------------------|-----------------------|  
 |`_tcsnextc`|`_strnextc`|`_mbsnextc`|`_wcsnextc`|  
   
- `_strnextc` and `_wcsnextc` are single-byte–character string and wide-character string versions of `_mbsnextc`. `_wcsnextc` returns the integer value of the next wide character in `string`; `_strnextc` returns the integer value of the next single-byte character in `string`. `_strnextc` and `_wcsnextc` are provided only for this mapping and should not be used otherwise. For more information, see [Using Generic-Text Mappings](../../c-runtime-library/using-generic-text-mappings.md) and [Generic-Text Mappings](../../c-runtime-library/generic-text-mappings.md).  
+ `_strnextc` and `_wcsnextc` are single-byte-character string and wide-character string versions of `_mbsnextc`. `_wcsnextc` returns the integer value of the next wide character in `string`; `_strnextc` returns the integer value of the next single-byte character in `string`. `_strnextc` and `_wcsnextc` are provided only for this mapping and should not be used otherwise. For more information, see [Using Generic-Text Mappings](../../c-runtime-library/using-generic-text-mappings.md) and [Generic-Text Mappings](../../c-runtime-library/generic-text-mappings.md).  
   
  `_mbsnextc_l` is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   

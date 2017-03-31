@@ -97,7 +97,7 @@ public __gc __sealed class String {};
 public ref class String sealed {};  
 ```  
   
- One can also specify a class as both abstract and sealed – this is a special condition that indicates a static class. This is described in the CLR documentation as follows:  
+ One can also specify a class as both abstract and sealed - this is a special condition that indicates a static class. This is described in the CLR documentation as follows:  
   
  "A type that is both `abstract` and `sealed` should have only static members, and serves as what some languages call a namespace."  
   

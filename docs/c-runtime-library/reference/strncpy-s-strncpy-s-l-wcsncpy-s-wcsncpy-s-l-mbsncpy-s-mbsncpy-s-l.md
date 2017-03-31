@@ -203,7 +203,7 @@ errno_t _mbsncpy_s_l(
   
  means that we are asking `strncpy_s` to copy five characters into a buffer five bytes long; this would leave no space for the null terminator, hence `strncpy_s` zeroes out the string and calls the invalid parameter handler.  
   
- If truncation behavior is needed, use `_TRUNCATE` or (`size` – 1):  
+ If truncation behavior is needed, use `_TRUNCATE` or (`size` - 1):  
   
  `strncpy_s(dst, 5, "a long string", _TRUNCATE);`  
   

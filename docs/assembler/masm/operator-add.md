@@ -46,7 +46,7 @@ The first operator returns *expression1* plus *expression2*. The second operator
 ```  
   
       expression1 + expression2  
-–expression  
+-expression  
 ```  
   
 ## See Also  

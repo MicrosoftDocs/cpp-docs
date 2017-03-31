@@ -137,7 +137,7 @@ BOOL ClearAllFilters();
  `true` if this method is successful; otherwise, `false`.  
   
 ### Remarks  
- This method implements the behavior of the Win32 message [HDM_CLEARFILTER](http://msdn.microsoft.com/library/windows/desktop/bb775306) with a column value of –1, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method implements the behavior of the Win32 message [HDM_CLEARFILTER](http://msdn.microsoft.com/library/windows/desktop/bb775306) with a column value of -1, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Example  
  [!code-cpp[NVC_MFC_CHeaderCtrl#2](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_2.cpp)]  
@@ -426,7 +426,7 @@ int GetItemCount() const;
 ```  
   
 ### Return Value  
- Number of header control items if successful; otherwise – 1.  
+ Number of header control items if successful; otherwise - 1.  
   
 ### Example  
   See the example for [CHeaderCtrl::DeleteItem](#deleteitem).  
@@ -555,7 +555,7 @@ int HitTest(LPHDHITTESTINFO* phdhti);
 |[in, out] `phdhti`|Pointer to a [HDHITTESTINFO](http://msdn.microsoft.com/library/windows/desktop/bb775245) structure that specifies the point to test and receives the results of the test.|  
   
 ### Return Value  
- The zero-based index of the header item, if any, at the specified position; otherwise, –1.  
+ The zero-based index of the header item, if any, at the specified position; otherwise, -1.  
   
 ### Remarks  
  This method sends the [HDM_HITTEST](http://msdn.microsoft.com/library/windows/desktop/bb775349) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
@@ -587,7 +587,7 @@ int InsertItem(
  Pointer to an [HDITEM](http://msdn.microsoft.com/library/windows/desktop/bb775247) structure that contains information about the item to be inserted.  
   
 ### Return Value  
- Index of the new item if successful; otherwise – 1.  
+ Index of the new item if successful; otherwise - 1.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CHeaderCtrl#12](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_17.cpp)]  
@@ -703,7 +703,8 @@ BOOL SetFocusedItem(int iItem);
   
 ```  
 int SetHotDivider(CPoint pt);  
-int SetHotDivider(int nIndex);```  
+int SetHotDivider(int nIndex);
+```  
   
 ### Parameters  
  `pt`  

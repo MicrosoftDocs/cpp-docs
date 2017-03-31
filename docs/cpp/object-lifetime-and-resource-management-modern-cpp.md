@@ -83,21 +83,20 @@ node::node() : parent(...) { children.emplace_back(new node(...) ); }
 ```cpp  
 class widget {  
 private:  
-  gadget g;   // lifetime automatically tied to enclosing object  
+    gadget g;   // lifetime automatically tied to enclosing object  
 public:  
-  void draw();  
+    void draw();  
 };  
   
 void functionUsingWidget () {  
-  widget w;   // lifetime automatically tied to enclosing scope  
-              // constructs w, including the w.g gadget member  
-  …  
-  w.draw();  
-  …  
+    widget w;   // lifetime automatically tied to enclosing scope  
+                // constructs w, including the w.g gadget member  
+    // ...
+    w.draw();  
+    // ...
 } // automatic destruction and deallocation for w and w.g  
   // automatic exception safety,   
   // as if "finally { w.dispose(); w.g.dispose(); }"  
-  
 ```  
   
  Use static lifetime sparingly (global static, function local static) because problems can arise. What happens when the constructor of a global object throws an exception? Typically, the app faults in a way that can be difficult to debug. Construction order is problematic for static lifetime objects, and is not concurrency-safe. Not only is object construction a problem, destruction order can be complex, especially where polymorphism is involved. Even if your object or variable isn’t polymorphic and doesn't have complex construction/destruction ordering, there’s still the issue of thread-safe concurrency. A multithreaded app can’t safely modify the data in static objects without having thread-local storage, resource locks, and other special precautions.  

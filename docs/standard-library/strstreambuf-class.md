@@ -229,7 +229,7 @@ streamsize pcount() const;
  A count of the number of elements written to the controlled sequence.  
   
 ### Remarks  
- Specifically, if [pptr](../standard-library/basic-streambuf-class.md#basic_streambuf__pptr) is a null pointer, the function returns zero. Otherwise, it returns `pptr` – [pbase](../standard-library/basic-streambuf-class.md#basic_streambuf__pbase).  
+ Specifically, if [pptr](../standard-library/basic-streambuf-class.md#basic_streambuf__pptr) is a null pointer, the function returns zero. Otherwise, it returns `pptr` - [pbase](../standard-library/basic-streambuf-class.md#basic_streambuf__pbase).  
   
 ### Example  
   

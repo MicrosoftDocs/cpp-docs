@@ -119,7 +119,7 @@ Type arg(const complex<Type>& complexNum);
  The argument of the complex number.  
   
 ### Remarks  
- The argument is the angle that the complex vector makes with the positive real axis in the complex plane. For a complex number *a + bi*, the argument is equal to arctan( *b/a*) *.* The angle has a positive sense when measured in a counterclockwise direction from the positive real axis and a negative sense when measured in a clockwise direction. The principal values are greater than –pi and less than or equal to +pi.  
+ The argument is the angle that the complex vector makes with the positive real axis in the complex plane. For a complex number *a + bi*, the argument is equal to arctan( *b/a*) *.* The angle has a positive sense when measured in a counterclockwise direction from the positive real axis and a negative sense when measured in a clockwise direction. The principal values are greater than -pi and less than or equal to +pi.  
   
 ### Example  
   
@@ -202,7 +202,7 @@ complex<Type> conj(const complex<Type>& complexNum);
  The complex conjugate of the input complex number.  
   
 ### Remarks  
- The complex conjugate of a complex number *a + bi* is *a – bi*. The product of a complex number and its conjugate is the norm of the number *a*2 + *b*2.  
+ The complex conjugate of a complex number *a + bi* is *a - bi*. The product of a complex number and its conjugate is the norm of the number *a*2 + *b*2.  
   
 ### Example  
   
@@ -1038,7 +1038,7 @@ complex<Type> sin(const complex<Type>& complexNum);
 ### Remarks  
  Identities defining the complex sines:  
   
- sin ( *z*) = (1/2 *i*)\*( exp ( *iz*) – exp (- *iz*) )  
+ sin ( *z*) = (1/2 *i*)\*( exp ( *iz*) - exp (- *iz*) )  
   
  sin ( *z*) = sin ( *a + bi*) = sin ( *a*) cosh ( *b*) + icos ( *a*) sinh ( *b*)  
   
@@ -1125,7 +1125,7 @@ complex<Type> sinh(const complex<Type>& complexNum);
 ### Remarks  
  Identities defining the complex hyperbolic sines:  
   
- sinh ( *z*) = (1/2)\*( exp ( *z*) – exp (- *z*) )  
+ sinh ( *z*) = (1/2)\*( exp ( *z*) - exp (- *z*) )  
   
  sinh ( *z*) = sinh ( *a + bi*) = sinh ( *a*) cos ( *b*) + *i*cosh ( *a*) sin ( *b*)  
   
@@ -1285,7 +1285,7 @@ complex<Type> tan(const complex<Type>& complexNum);
 ### Remarks  
  Identities defining the complex cotangent:  
   
- tan ( *z*) = sin ( *z*) / cos ( *z*) = ( exp ( *iz*) – exp (- *iz*) ) / *i*( exp ( *iz*) + exp (- *iz*) )  
+ tan ( *z*) = sin ( *z*) / cos ( *z*) = ( exp ( *iz*) - exp (- *iz*) ) / *i*( exp ( *iz*) + exp (- *iz*) )  
   
 ### Example  
   
@@ -1370,7 +1370,7 @@ complex<Type> tanh(const complex<Type>& complexNum);
 ### Remarks  
  Identities defining the complex hyperbolic cotangent:  
   
- tanh ( *z*) = sinh ( *z*) / cosh ( *z*) = ( exp ( *z*) – exp (- *z*) ) / ( exp ( *z*) + exp (- *z*) )  
+ tanh ( *z*) = sinh ( *z*) / cosh ( *z*) = ( exp ( *z*) - exp (- *z*) ) / ( exp ( *z*) + exp (- *z*) )  
   
 ### Example  
   

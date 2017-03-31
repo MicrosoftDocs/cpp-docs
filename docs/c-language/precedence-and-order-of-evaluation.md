@@ -44,11 +44,11 @@ The precedence and associativity of C operators affect the grouping and evaluati
   
 |Symbol1|Type of Operation|Associativity|  
 |-------------|-----------------------|-------------------|  
-|**[ ] ( ) . –>** postfix `++` and postfix **––**|Expression|Left to right|  
-|prefix `++` and prefix **–– sizeof &   \*   + – ~ !**|Unary|Right to left|  
+|**[ ] ( ) . ->** postfix `++` and postfix **--**|Expression|Left to right|  
+|prefix `++` and prefix **-- sizeof &   \*   + - ~ !**|Unary|Right to left|  
 |*typecasts*|Unary|Right to left|  
 |**\* / %**|Multiplicative|Left to right|  
-|**+ –**|Additive|Left to right|  
+|**+ -**|Additive|Left to right|  
 |**<\< >>**|Bitwise shift|Left to right|  
 |**\< > \<= >=**|Relational|Left to right|  
 |**== !=**|Equality|Left to right|  
@@ -58,7 +58,7 @@ The precedence and associativity of C operators affect the grouping and evaluati
 |**&&**|Logical-AND|Left to right|  
 |`&#124;&#124;`|Logical-OR|Left to right|  
 |**? :**|Conditional-expression|Right to left|  
-|**= \*= /= %=**<br /><br /> **+= –= <\<= >>=&=**<br /><br /> **^= &#124;=**|Simple and compound assignment2|Right to left|  
+|**= \*= /= %=**<br /><br /> **+= -= <\<= >>=&=**<br /><br /> **^= &#124;=**|Simple and compound assignment2|Right to left|  
 |**,**|Sequential evaluation|Left to right|  
   
  1. Operators are listed in descending order of precedence. If several operators appear on the same line or in a group, they have equal precedence.  
@@ -85,13 +85,13 @@ x && y++
 |----------------|-----------------------|  
 |`a & b &#124;&#124; c`|`(a & b) &#124;&#124; c`|  
 |`a = b &#124;&#124; c`|`a = (b &#124;&#124; c)`|  
-|`q && r &#124;&#124; s--`|`(q && r) &#124;&#124; s––`|  
+|`q && r &#124;&#124; s--`|`(q && r) &#124;&#124; s--`|  
   
  In the first expression, the bitwise-AND operator (`&`) has higher precedence than the logical-OR operator (`||`), so `a & b` forms the first operand of the logical-OR operation.  
   
  In the second expression, the logical-OR operator (`||`) has higher precedence than the simple-assignment operator (`=`), so `b || c` is grouped as the right-hand operand in the assignment. Note that the value assigned to `a` is either 0 or 1.  
   
- The third expression shows a correctly formed expression that may produce an unexpected result. The logical-AND operator (`&&`) has higher precedence than the logical-OR operator (`||`), so `q && r` is grouped as an operand. Since the logical operators guarantee evaluation of operands from left to right, `q && r` is evaluated before `s––`. However, if `q && r` evaluates to a nonzero value, `s––` is not evaluated, and `s` is not decremented. If not decrementing `s` would cause a problem in your program, `s––` should appear as the first operand of the expression, or `s` should be decremented in a separate operation.  
+ The third expression shows a correctly formed expression that may produce an unexpected result. The logical-AND operator (`&&`) has higher precedence than the logical-OR operator (`||`), so `q && r` is grouped as an operand. Since the logical operators guarantee evaluation of operands from left to right, `q && r` is evaluated before `s--`. However, if `q && r` evaluates to a nonzero value, `s--` is not evaluated, and `s` is not decremented. If not decrementing `s` would cause a problem in your program, `s--` should appear as the first operand of the expression, or `s` should be decremented in a separate operation.  
   
  The following expression is illegal and produces a diagnostic message at compile time:  
   

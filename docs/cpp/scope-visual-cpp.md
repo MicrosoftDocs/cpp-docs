@@ -57,7 +57,7 @@ C++ names can be used only in certain regions of a program. This area is called 
   
      In C++, file scope is also known as namespace scope.  
   
--   **Class scope** Names of class members have class scope. Class member functions can be accessed only by using the member-selection operators (**.** or **–>**) or pointer-to-member operators (**.\*** or **–>\***) on an object or pointer to an object of that class; nonstatic class member data is considered local to the object of that class. Consider the following class declaration:  
+-   **Class scope** Names of class members have class scope. Class member functions can be accessed only by using the member-selection operators (**.** or **->**) or pointer-to-member operators (**.\*** or **->\***) on an object or pointer to an object of that class; nonstatic class member data is considered local to the object of that class. Consider the following class declaration:  
   
     ```  
     class Point  

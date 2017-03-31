@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Compiler Error C2286
-pointers to members of 'identifier' representation is already set to 'inheritance' – declaration ignored  
+pointers to members of 'identifier' representation is already set to 'inheritance' - declaration ignored  
   
  Two different pointer-to-members representations exist for class.  
   

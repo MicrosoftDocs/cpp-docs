@@ -70,7 +70,7 @@ intptr_t _get_osfhandle(
  An existing file descriptor.  
   
 ## Return Value  
- An operating-system file handle if `fd` is valid. Otherwise, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns `INVALID_HANDLE_VALUE` (–1) and sets `errno` to `EBADF`, indicating an invalid file handle.  
+ An operating-system file handle if `fd` is valid. Otherwise, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns `INVALID_HANDLE_VALUE` (-1) and sets `errno` to `EBADF`, indicating an invalid file handle.  
   
 ## Remarks  
  To close a file opened with `_get_osfhandle`, call `_close`. The underlying handle is also closed by a call to `_close`, so it is not necessary to call the Win32 function `CloseHandle` on the original handle.  

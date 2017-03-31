@@ -43,7 +43,7 @@ translation.priority.ht:
 # Code Pages
 A `code page` is a character set, which can include numbers, punctuation marks, and other glyphs. Different languages and locales may use different code pages. For example, ANSI code page 1252 is used for English and most European languages; OEM code page 932 is used for Japanese Kanji.  
   
- A code page can be represented in a table as a mapping of characters to single-byte values or multibyte values. Many code pages share the ASCII character set for characters in the range 0x00 – 0x7F.  
+ A code page can be represented in a table as a mapping of characters to single-byte values or multibyte values. Many code pages share the ASCII character set for characters in the range 0x00 - 0x7F.  
   
  The Microsoft run-time library uses the following types of code pages:  
   
@@ -59,7 +59,7 @@ A `code page` is a character set, which can include numbers, punctuation marks, 
   
 -   Multibyte code page. The behavior of most of the multibyte-character routines in the run-time library depends on the current multibyte code page setting. By default, these routines use the system-default ANSI code page. At run-time you can query and change the multibyte code page with [_getmbcp](../c-runtime-library/reference/getmbcp.md) and [_setmbcp](../c-runtime-library/reference/setmbcp.md), respectively.  
   
--   The "C" locale is defined by ANSI to correspond to the locale in which C programs have traditionally executed. The code page for the "C" locale ("C" code page) corresponds to the ASCII character set. For example, in the "C" locale, `islower` returns true for the values 0x61 – 0x7A only. In another locale, `islower` may return true for these as well as other values, as defined by that locale.  
+-   The "C" locale is defined by ANSI to correspond to the locale in which C programs have traditionally executed. The code page for the "C" locale ("C" code page) corresponds to the ASCII character set. For example, in the "C" locale, `islower` returns true for the values 0x61 - 0x7A only. In another locale, `islower` may return true for these as well as other values, as defined by that locale.  
   
 ## See Also  
  [Internationalization](../c-runtime-library/internationalization.md)   

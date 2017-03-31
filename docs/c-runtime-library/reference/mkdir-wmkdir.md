@@ -81,7 +81,7 @@ int _wmkdir(
  Path for a new directory.  
   
 ## Return Value  
- Each of these functions returns the value 0 if the new directory was created. On an error, the function returns –1 and sets `errno` as follows.  
+ Each of these functions returns the value 0 if the new directory was created. On an error, the function returns -1 and sets `errno` as follows.  
   
  `EEXIST`  
  Directory was not created because `dirname` is the name of an existing file, directory, or device.  

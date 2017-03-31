@@ -102,7 +102,7 @@ An initializer specifies the initial value of a variable. You can initialize var
   
 -   Numeric variables are initialized to 0 (or 0.0, or 0.0000000000, etc.).  
   
--   Char variables are initialized to ‘\0’.  
+-   Char variables are initialized to `'\0'`.  
   
 -   Pointers are initialized to `nullptr`.  
   

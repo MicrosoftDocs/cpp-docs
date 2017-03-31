@@ -73,7 +73,7 @@ int _heapadd(
  Size of memory to add, in bytes.  
   
 ## Return Value  
- If successful, `_heapadd` returns 0; otherwise, the function returns –1 and sets `errno` to `ENOSYS`.  
+ If successful, `_heapadd` returns 0; otherwise, the function returns -1 and sets `errno` to `ENOSYS`.  
   
  For more information about this and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   

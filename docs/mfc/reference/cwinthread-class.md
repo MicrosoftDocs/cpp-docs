@@ -437,7 +437,7 @@ virtual LRESULT ProcessWndProcException(
  Points to a [MSG structure](../../mfc/reference/msg-structure1.md) containing information about the windows message that caused the framework to throw an exception.  
   
 ### Return Value  
- –1 if a `WM_CREATE` exception is generated; otherwise 0.  
+ -1 if a `WM_CREATE` exception is generated; otherwise 0.  
   
 ### Remarks  
  Do not call this member function directly.  

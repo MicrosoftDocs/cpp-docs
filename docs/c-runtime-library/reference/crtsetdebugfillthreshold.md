@@ -72,7 +72,7 @@ size_t _CrtSetDebugFillThreshold(
  The previous threshold.  
   
 ## Remarks  
- The debug versions of some security-enhanced CRT functions fill the buffer passed to them with a special character (0xFD). This helps to find cases where the incorrect size was passed to the function. Unfortunately, it also reduces performance. To improve performance, use `_CrtSetDebugFillThreshold` to disable buffer-filling for buffers larger than the threshold. A threshold of 0 will disable it for all buffers.  
+ The debug versions of some security-enhanced CRT functions fill the buffer passed to them with a special character (0xFE). This helps to find cases where the incorrect size was passed to the function. Unfortunately, it also reduces performance. To improve performance, use `_CrtSetDebugFillThreshold` to disable buffer-filling for buffers larger than the threshold. A threshold of 0 will disable it for all buffers.  
   
  The default threshold is `SIZE_T_MAX`.  
   
@@ -127,9 +127,9 @@ size_t _CrtSetDebugFillThreshold(
   
 ## Example  
   
-```  
-// crt_crtsetdebugfillthreshold.cpp  
-// compile with: /MTd  
+```C  
+// crt_crtsetdebugfillthreshold.c  
+// compile with: cl /MTd crt_crtsetdebugfillthreshold.c  
 #include <stdio.h>  
 #include <stdlib.h>  
 #include <string.h>  
@@ -164,7 +164,7 @@ int main( void )
 }  
 ```  
   
-```  
+```Output  
 With buffer-filling on:  
 68  h  
 6f  o  
@@ -172,10 +172,10 @@ With buffer-filling on:
 64  d  
 79  y  
 00  
-fd  ²  
-fd  ²  
-fd  ²  
-fd  ²  
+fe  ■  
+fe  ■  
+fe  ■  
+fe  ■  
 With buffer-filling off:  
 68  h  
 6f  o  

@@ -98,7 +98,7 @@ size_t _mbstowcs_l(
  The locale to use.  
   
 ## Return Value  
- If `mbstowcs` successfully converts the source string, it returns the number of converted multibyte characters. If the `wcstr` argument is `NULL`, the function returns the required size (in wide characters) of the destination string. If `mbstowcs` encounters an invalid multibyte character, it returns –1. If the return value is `count`, the wide-character string is not null-terminated.  
+ If `mbstowcs` successfully converts the source string, it returns the number of converted multibyte characters. If the `wcstr` argument is `NULL`, the function returns the required size (in wide characters) of the destination string. If `mbstowcs` encounters an invalid multibyte character, it returns -1. If the return value is `count`, the wide-character string is not null-terminated.  
   
 > [!IMPORTANT]
 >  Ensure that `wcstr` and `mbstr` do not overlap, and that `count` correctly reflects the number of multibyte characters to convert.  

@@ -81,8 +81,8 @@ scanf_s("%20s", str, 21);
 |Single-byte character with `wscanf`|**h**|**c** or **C**|  
 |Wide character with `scanf`|**l**|**c** or **C**|  
 |Wide character with `wscanf`|**l**|**c**, or **C**|  
-|Single-byte – character string with `scanf`|**h**|**s** or **S**|  
-|Single-byte – character string with `wscanf`|**h**|**s** or **S**|  
+|Single-byte - character string with `scanf`|**h**|**s** or **S**|  
+|Single-byte - character string with `wscanf`|**h**|**s** or **S**|  
 |Wide-character string with `scanf`|**l**|**s** or **S**|  
 |Wide-character string with `wscanf`|**l**|**s** or **S**|  
   

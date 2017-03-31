@@ -70,7 +70,7 @@ int _commit(
  File descriptor referring to the open file.  
   
 ## Return Value  
- `_commit` returns 0 if the file was successfully flushed to disk. A return value of –1 indicates an error.  
+ `_commit` returns 0 if the file was successfully flushed to disk. A return value of -1 indicates an error.  
   
 ## Remarks  
  The `_commit` function forces the operating system to write the file associated with `fd` to disk. This call ensures that the specified file is flushed immediately, not at the operating system's discretion.  

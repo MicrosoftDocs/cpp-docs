@@ -107,7 +107,7 @@ long double sqrtl(
   
 ## Example  
   
-```  
+```C  
 // crt_sqrt.c  
 // This program calculates a square root.  
   
@@ -132,7 +132,7 @@ The square root of 45.35 is 6.73
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
- [exp, expf](../../c-runtime-library/reference/exp-expf.md)   
+ [exp, expf, expl](../../c-runtime-library/reference/exp-expf.md)   
  [log, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md)   
  [pow, powf, powl](../../c-runtime-library/reference/pow-powf-powl.md)   
  [_CIsqrt](../../c-runtime-library/cisqrt.md)

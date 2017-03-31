@@ -84,7 +84,7 @@ int _wputenv(
  Environment-string definition.  
   
 ## Return Value  
- Return 0 if successful or –1 in the case of an error.  
+ Return 0 if successful or -1 in the case of an error.  
   
 ## Remarks  
  The `_putenv` function adds new environment variables or modifies the values of existing environment variables. Environment variables define the environment in which a process executes (for example, the default search path for libraries to be linked with a program). `_wputenv` is a wide-character version of `_putenv`; the `envstring` argument to `_wputenv` is a wide-character string.  

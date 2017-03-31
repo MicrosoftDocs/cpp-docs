@@ -56,7 +56,7 @@ The sequential-evaluation operator, also called the "comma operator," evaluates 
 for ( i = j = 1; i + j < 20; i += i, j-- );  
 ```  
   
- In this example, each operand of the **for** statement's third expression is evaluated independently. The left operand `i += i` is evaluated first; then the right operand, `j––`, is evaluated.  
+ In this example, each operand of the **for** statement's third expression is evaluated independently. The left operand `i += i` is evaluated first; then the right operand, `j--`, is evaluated.  
   
 ```  
 func_one( x, y + 2, z );  

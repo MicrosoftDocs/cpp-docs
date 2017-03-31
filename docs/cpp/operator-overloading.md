@@ -76,12 +76,12 @@ type operator operator-symbol ( parameter-list )
 |`+`|Unary Plus|Unary|  
 |`++`|Increment <sup>1</sup>|Unary|  
 |`+=`|Addition assignment|Binary|  
-|`–`|Subtraction|Binary|  
-|`–`|Unary negation|Unary|  
-|`––`|Decrement <sup>1</sup>|Unary|  
-|`–=`|Subtraction assignment|Binary|  
-|`–>`|Member selection|Binary|  
-|`–>*`|Pointer-to-member selection|Binary|  
+|`-`|Subtraction|Binary|  
+|`-`|Unary negation|Unary|  
+|`--`|Decrement <sup>1</sup>|Unary|  
+|`-=`|Subtraction assignment|Binary|  
+|`->`|Member selection|Binary|  
+|`->*`|Pointer-to-member selection|Binary|  
 |`/`|Division|Binary|  
 |`/=`|Division assignment|Binary|  
 |`<`|Less than|Binary|  

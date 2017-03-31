@@ -105,7 +105,7 @@ wchar_t *_ultow(
  Each of these functions returns a pointer to `str`. There is no error return.  
   
 ## Remarks  
- The `_ultoa` function converts `value` to a null-terminated character string and stores the result (up to 33 bytes) in `str`. No overflow checking is performed. `radix` specifies the base of `value`; `radix` must be in the range 2 – 36. `_ultow` is a wide-character version of `_ultoa`.  
+ The `_ultoa` function converts `value` to a null-terminated character string and stores the result (up to 33 bytes) in `str`. No overflow checking is performed. `radix` specifies the base of `value`; `radix` must be in the range 2 - 36. `_ultow` is a wide-character version of `_ultoa`.  
   
 > [!IMPORTANT]
 >  To prevent buffer overruns, ensure that the `str` buffer is large enough to hold the converted digits plus the trailing null-character.  

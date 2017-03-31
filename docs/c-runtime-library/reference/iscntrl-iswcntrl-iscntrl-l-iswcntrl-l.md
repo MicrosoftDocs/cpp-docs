@@ -93,7 +93,7 @@ int _iswcntrl_l(
  The locale to use.  
   
 ## Return Value  
- Each of these routines returns nonzero if `c` is a particular representation of a control character. `iscntrl` returns a nonzero value if `c` is a control character (0x00 – 0x1F or 0x7F). `iswcntrl` returns a nonzero value if `c` is a control wide character. Each of these routines returns 0 if `c` does not satisfy the test condition.  
+ Each of these routines returns nonzero if `c` is a particular representation of a control character. `iscntrl` returns a nonzero value if `c` is a control character (0x00 - 0x1F or 0x7F). `iswcntrl` returns a nonzero value if `c` is a control wide character. Each of these routines returns 0 if `c` does not satisfy the test condition.  
   
  The versions of these functions that have the `_l` suffix use the locale parameter that's passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).  
   

@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Compiler Warning (level 2) C4275
-non – DLL-interface classkey 'identifier' used as base for DLL-interface classkey 'identifier'  
+non - DLL-interface classkey 'identifier' used as base for DLL-interface classkey 'identifier'  
   
  An exported class was derived from a class that was not exported.  
   

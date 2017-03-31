@@ -2860,7 +2860,7 @@ UINT GetDlgItemInt(
 ### Remarks  
  It translates the text of the specified control in the given dialog box into an integer value by stripping any extra spaces at the beginning of the text and converting decimal digits. It stops the translation when it reaches the end of the text or encounters any nonnumeric character.  
   
- If `bSigned` is **TRUE**, `GetDlgItemInt` checks for a minus sign (–) at the beginning of the text and translates the text into a signed number. Otherwise, it creates an unsigned value.  
+ If `bSigned` is **TRUE**, `GetDlgItemInt` checks for a minus sign (-) at the beginning of the text and translates the text into a signed number. Otherwise, it creates an unsigned value.  
   
  It sends a [WM_GETTEXT](http://msdn.microsoft.com/library/windows/desktop/ms632627) message to the control.  
   
@@ -4739,7 +4739,7 @@ afx_msg int OnCharToItem(
  Specifies the current caret position.  
   
 ### Return Value  
- The framework calls this member function to specify the action that the application performed in response to the call. A return value of –2 indicates that the application handled all aspects of selecting the item and wants no further action by the list box. A return value of –1 indicates that the list box should perform the default action in response to the keystroke. A return value of 0 or greater specifies the zero-based index of an item in the list box and indicates that the list box should perform the default action for the keystroke on the given item.  
+ The framework calls this member function to specify the action that the application performed in response to the call. A return value of -2 indicates that the application handled all aspects of selecting the item and wants no further action by the list box. A return value of -1 indicates that the list box should perform the default action in response to the keystroke. A return value of 0 or greater specifies the zero-based index of an item in the list box and indicates that the list box should perform the default action for the keystroke on the given item.  
   
 ### Remarks  
   
@@ -4893,7 +4893,7 @@ afx_msg int OnCompareItem(
   
 |Value|Meaning|  
 |-----------|-------------|  
-|–1|Item 1 sorts before item 2.|  
+|-1|Item 1 sorts before item 2.|  
 |0|Item 1 and item 2 sort the same.|  
 |1|Item 1 sorts after item 2.|  
   
@@ -4984,7 +4984,7 @@ afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
  Points to a [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) structure that contains information about the `CWnd` object being created.  
   
 ### Return Value  
- `OnCreate` must return 0 to continue the creation of the `CWnd` object. If the application returns –1, the window will be destroyed.  
+ `OnCreate` must return 0 to continue the creation of the `CWnd` object. If the application returns -1, the window will be destroyed.  
   
 ### Remarks  
  The `CWnd` object receives this call after the window is created but before it becomes visible. `OnCreate` is called before the **Create** or `CreateEx` member function returns.  
@@ -5070,10 +5070,10 @@ afx_msg void OnDeadChar(
   
 |Value|Description|  
 |-----------|-----------------|  
-|0–7|Scan code (OEM-dependent value). Low byte of high-order word.|  
+|0-7|Scan code (OEM-dependent value). Low byte of high-order word.|  
 |8|Extended key, such as a function key or a key on the numeric keypad (1 if it is an extended key; otherwise 0).|  
-|9–10|Not used.|  
-|11–12|Used internally by Windows.|  
+|9-10|Not used.|  
+|11-12|Used internally by Windows.|  
 |13|Context code (1 if the ALT key is held down while the key is pressed; otherwise 0).|  
 |14|Previous key state (1 if the key is down before the call, 0 if the key is up).|  
 |15|Transition state (1 if the key is being released, 0 if the key is being pressed).|  
@@ -5823,10 +5823,10 @@ afx_msg void OnKeyDown(
   
 |Value|Description|  
 |-----------|-----------------|  
-|0–7|Scan code (OEM-dependent value).|  
+|0-7|Scan code (OEM-dependent value).|  
 |8|Extended key, such as a function key or a key on the numeric keypad (1 if it is an extended key).|  
-|9–10|Not used.|  
-|11–12|Used internally by Windows.|  
+|9-10|Not used.|  
+|11-12|Used internally by Windows.|  
 |13|Context code (1 if the ALT key is held down while the key is pressed; otherwise 0).|  
 |14|Previous key state (1 if the key is down before the call, 0 if the key is up).|  
 |15|Transition state (1 if the key is being released, 0 if the key is being pressed).|  
@@ -5865,10 +5865,10 @@ afx_msg void OnKeyUp(
   
 |Value|Description|  
 |-----------|-----------------|  
-|0–7|Scan code (OEM-dependent value). Low byte of high-order word.|  
+|0-7|Scan code (OEM-dependent value). Low byte of high-order word.|  
 |8|Extended key, such as a function key or a key on the numeric keypad (1 if it is an extended key; otherwise 0).|  
-|9–10|Not used.|  
-|11–12|Used internally by Windows.|  
+|9-10|Not used.|  
+|11-12|Used internally by Windows.|  
 |13|Context code (1 if the ALT key is held down while the key is pressed; otherwise 0).|  
 |14|Previous key state (1 if the key is down before the call, 0 if the key is up).|  
 |15|Transition state (1 if the key is being released, 0 if the key is being pressed).|  
@@ -7868,10 +7868,10 @@ afx_msg void OnSysDeadChar(
   
 |Value|Meaning|  
 |-----------|-------------|  
-|0–7|Scan code (OEM-dependent value). Low byte of high-order word.|  
+|0-7|Scan code (OEM-dependent value). Low byte of high-order word.|  
 |8|Extended key, such as a function key or a key on the numeric keypad (1 if it is an extended key; otherwise 0).|  
-|9–10|Not used.|  
-|11–12|Used internally by Windows.|  
+|9-10|Not used.|  
+|11-12|Used internally by Windows.|  
 |13|Context code (1 if the ALT key is held down while the key is pressed; otherwise 0).|  
 |14|Previous key state (1 if the key is down before the call, 0 if the key is up).|  
 |15|Transition state (1 if the key is being released, 0 if the key is being pressed).|  
@@ -7904,10 +7904,10 @@ afx_msg void OnSysKeyDown(
   
 |Value|Meaning|  
 |-----------|-------------|  
-|0–7|Scan code (OEM-dependent value). Low byte of high-order word.|  
+|0-7|Scan code (OEM-dependent value). Low byte of high-order word.|  
 |8|Extended key, such as a function key or a key on the numeric keypad (1 if it is an extended key; otherwise 0).|  
-|9–10|Not used.|  
-|11–12|Used internally by Windows.|  
+|9-10|Not used.|  
+|11-12|Used internally by Windows.|  
 |13|Context code (1 if the ALT key is held down while the key is pressed, 0 otherwise).|  
 |14|Previous key state (1 if the key is down before the message is sent, 0 if the key is up).|  
 |15|Transition state (1 if the key is being released, 0 if the key is being pressed).|  
@@ -7948,10 +7948,10 @@ afx_msg void OnSysKeyUp(
   
 |Value|Meaning|  
 |-----------|-------------|  
-|0–7|Scan code (OEM-dependent value). Low byte of high-order word.|  
+|0-7|Scan code (OEM-dependent value). Low byte of high-order word.|  
 |8|Extended key, such as a function key or a key on the numeric keypad (1 if it is an extended key; otherwise 0).|  
-|9–10|Not used.|  
-|11–12|Used internally by Windows.|  
+|9-10|Not used.|  
+|11-12|Used internally by Windows.|  
 |13|Context code (1 if the ALT key is held down while the key is pressed, 0 otherwise).|  
 |14|Previous key state (1 if the key is down before the message is sent, 0 if the key is up).|  
 |15|Transition state (1 if the key is being released, 0 if the key is being pressed).|  
@@ -8247,7 +8247,7 @@ afx_msg int OnVKeyToItem(
  Specifies the current caret position.  
   
 ### Return Value  
- Specifies the action that the application performed in response to the message. A return value of –2 indicates that the application handled all aspects of selecting the item and requires no further action by the list box. A return value of –1 indicates that the list box should perform the default action in response to the keystroke. A return value of 0 or greater specifies the zero-based index of an item in the list box and indicates that the list box should perform the default action for the keystroke on the given item.  
+ Specifies the action that the application performed in response to the message. A return value of -2 indicates that the application handled all aspects of selecting the item and requires no further action by the list box. A return value of -1 indicates that the list box should perform the default action in response to the keystroke. A return value of 0 or greater specifies the zero-based index of an item in the list box and indicates that the list box should perform the default action for the keystroke on the given item.  
   
 ### Remarks  
  This member function is called by the framework only for list boxes that have the [LBS_HASSTRINGS](../../mfc/reference/list-box-styles.md) style.  

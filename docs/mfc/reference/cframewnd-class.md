@@ -470,9 +470,9 @@ virtual DWORD GetMenuBarState();
 ### Return Value  
  The return value can have the following values:  
   
--   AFX_MBS_VISIBLE (0x01) – The menu is visible.  
+-   AFX_MBS_VISIBLE (0x01) - The menu is visible.  
   
--   AFX_MBS_HIDDEN (0x02) – The menu is hidden.  
+-   AFX_MBS_HIDDEN (0x02) - The menu is hidden.  
   
 ### Remarks  
  If a runtime error occurs, this method asserts in Debug mode and raises an exception derived from the [CException](../../mfc/reference/cexception-class.md) class.  
@@ -899,7 +899,7 @@ virtual BOOL SetMenuBarState(DWORD nState);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `nState`|Specifies whether to display or hide the menu. The `nState` parameter can have the following values:<br /><br /> -   AFX_MBS_VISIBLE (0x01) – Displays the menu if it is hidden, but has no effect if it is visible.<br />-   AFX_MBS_HIDDEN (0x02) – Hides the menu if it is visible, but has no effect if it is hidden.|  
+|[in] `nState`|Specifies whether to display or hide the menu. The `nState` parameter can have the following values:<br /><br /> -   AFX_MBS_VISIBLE (0x01) - Displays the menu if it is hidden, but has no effect if it is visible.<br />-   AFX_MBS_HIDDEN (0x02) - Hides the menu if it is visible, but has no effect if it is hidden.|  
   
 ### Return Value  
  `true` if this method successfully changes the menu state; otherwise, `false`.  
@@ -930,7 +930,8 @@ virtual void SetMenuBarVisibility(DWORD nStyle);
   
 ```  
 void SetMessageText(LPCTSTR lpszText);  
-void SetMessageText(UINT nID);```  
+void SetMessageText(UINT nID);
+```  
   
 ### Parameters  
  `lpszText`  

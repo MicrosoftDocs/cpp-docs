@@ -106,7 +106,7 @@ try {
    throw CSomeOtherException();  
 }  
 catch(...) {  
-   // Catch all exceptions – dangerous!!!  
+   // Catch all exceptions - dangerous!!!  
    // Respond (perhaps only partially) to the exception, then  
    // re-throw to pass the exception to some other handler  
    // ...  

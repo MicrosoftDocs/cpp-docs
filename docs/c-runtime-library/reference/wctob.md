@@ -67,7 +67,7 @@ int wctob(
  Value to translate.  
   
 ## Return Value  
- If `wctob` successfully converts a wide character, it returns its multibyte character representation, only if the multibyte character is exactly one byte long. If `wctob` encounters a wide character it cannot convert to a multibyte character or the multibyte character is not exactly one byte long, it returns a –1.  
+ If `wctob` successfully converts a wide character, it returns its multibyte character representation, only if the multibyte character is exactly one byte long. If `wctob` encounters a wide character it cannot convert to a multibyte character or the multibyte character is not exactly one byte long, it returns a -1.  
   
 ## Remarks  
  The `wctob` function converts a wide character contained in `wchar` to the corresponding multibyte character passed by the return `int` value, if the multibyte character is exactly one byte long.  

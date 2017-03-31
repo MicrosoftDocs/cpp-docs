@@ -114,7 +114,7 @@ long double atan2l(
  Any numbers.  
   
 ## Return Value  
- `atan` returns the arctangent of `x` in the range –π/2 to π/2 radians. `atan2` returns the arctangent of `y/x` in the range –π to π radians. If `x` is 0, `atan` returns 0. If both parameters of `atan2` are 0, the function returns 0. All results are in radians.  
+ `atan` returns the arctangent of `x` in the range -π/2 to π/2 radians. `atan2` returns the arctangent of `y/x` in the range -π to π radians. If `x` is 0, `atan` returns 0. If both parameters of `atan2` are 0, the function returns 0. All results are in radians.  
   
  `atan2` uses the signs of both parameters to determine the quadrant of the return value.  
   

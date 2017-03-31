@@ -69,7 +69,7 @@ int _setmaxstdio(
  New maximum for the number of simultaneously open files at the `stdio` level.  
   
 ## Return Value  
- Returns `newmax` if successful; –1 otherwise.  
+ Returns `newmax` if successful; -1 otherwise.  
   
  If `newmax` is less than `_IOB_ENTRIES` or greater then the maximum number of handles available in the operating system, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets `errno` to `EINVAL`.  
   

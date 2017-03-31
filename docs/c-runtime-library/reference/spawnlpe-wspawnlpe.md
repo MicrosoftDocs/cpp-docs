@@ -102,7 +102,7 @@ intptr_t _wspawnlpe(
  Array of pointers to environment settings.  
   
 ## Return Value  
- The return value from a synchronous `_spawnlpe` or `_wspawnlpe` (`_P_WAIT` specified for `mode`) is the exit status of the new process. The return value from an asynchronous `_spawnlpe` or `_wspawnlpe` (`_P_NOWAIT` or `_P_NOWAITO` specified for `mode`) is the process handle. The exit status is 0 if the process terminated normally. You can set the exit status to a nonzero value if the spawned process specifically uses a nonzero argument to call the `exit` routine. If the new process did not explicitly set a positive exit status, a positive exit status indicates an abnormal exit caused by an abort or an interrupt. A return value of –1 indicates an error (the new process is not started). In this case, `errno` is set to one of the following values.  
+ The return value from a synchronous `_spawnlpe` or `_wspawnlpe` (`_P_WAIT` specified for `mode`) is the exit status of the new process. The return value from an asynchronous `_spawnlpe` or `_wspawnlpe` (`_P_NOWAIT` or `_P_NOWAITO` specified for `mode`) is the process handle. The exit status is 0 if the process terminated normally. You can set the exit status to a nonzero value if the spawned process specifically uses a nonzero argument to call the `exit` routine. If the new process did not explicitly set a positive exit status, a positive exit status indicates an abnormal exit caused by an abort or an interrupt. A return value of -1 indicates an error (the new process is not started). In this case, `errno` is set to one of the following values.  
   
  `E2BIG`  
  Argument list exceeds 1024 bytes.  

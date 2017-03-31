@@ -49,7 +49,7 @@ It is possible to use the MFC exception-handling paradigm solely to catch except
   
      If the first allocation fails, you can simply throw the memory exception. If the first allocation is successful but the second one fails, you must free the first allocation block before throwing the exception. If both allocations succeed, you can proceed normally and free the blocks when exiting the function.  
   
-     – or –  
+     - or -  
   
 2.  Use a user-defined exception to indicate a problem condition. You can throw an item of any type, even an entire class, as your exception.  
   

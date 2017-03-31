@@ -207,7 +207,7 @@ virtual UINT GetHandleMask() const;
 ### Remarks  
  The resize handles appear on the sides and corners of the rectangle and allow the user to control the shape and size of the rectangle.  
   
- A rectangle has 8 resize handles numbered 0–7. Each resize handle is represented by a bit in the mask; the value of that bit is 2^ *n*, where *n* is the resize handle number. Bits 0–3 correspond to the corner resize handles, starting at the top left moving clockwise. Bits 4–7 correspond to the side resize handles starting at the top moving clockwise. The following illustration shows a rectangle's resize handles and their corresponding resize handle numbers and values:  
+ A rectangle has 8 resize handles numbered 0-7. Each resize handle is represented by a bit in the mask; the value of that bit is 2^ *n*, where *n* is the resize handle number. Bits 0-3 correspond to the corner resize handles, starting at the top left moving clockwise. Bits 4-7 correspond to the side resize handles starting at the top moving clockwise. The following illustration shows a rectangle's resize handles and their corresponding resize handle numbers and values:  
   
  ![Resize handle numbers](../../mfc/reference/media/vc35dp1.gif "vc35dp1")  
   
@@ -243,7 +243,7 @@ int HitTest(CPoint point) const;
 ### Return Value  
  The value returned is based on the enumerated type **CRectTracker::TrackerHit** and can have one of the following values:  
   
-- **CRectTracker::hitNothing** –1  
+- **CRectTracker::hitNothing** -1  
   
 - **CRectTracker::hitTopLeft** 0  
   

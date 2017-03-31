@@ -56,7 +56,7 @@ Every integer constant is given a type based on its value and the way it is expr
 778866LU  
 ```  
   
- The type you assign to a constant depends on the value the constant represents. A constant's value must be in the range of representable values for its type. A constant's type determines which conversions are performed when the constant is used in an expression or when the minus sign (**–**) is applied. This list summarizes the conversion rules for integer constants.  
+ The type you assign to a constant depends on the value the constant represents. A constant's value must be in the range of representable values for its type. A constant's type determines which conversions are performed when the constant is used in an expression or when the minus sign (**-**) is applied. This list summarizes the conversion rules for integer constants.  
   
 -   The type for a decimal constant without a suffix is either `int`, **long int**, or **unsigned long int**. The first of these three types in which the constant's value can be represented is the type assigned to the constant.  
   

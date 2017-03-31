@@ -78,7 +78,7 @@ Locks or unlocks bytes of a file.
  Number of bytes to lock.  
   
 ## Return Value  
- `_locking` returns 0 if successful. A return value of –1 indicates failure, in which case [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) is set to one of the following values.  
+ `_locking` returns 0 if successful. A return value of -1 indicates failure, in which case [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) is set to one of the following values.  
   
  `EACCES`  
  Locking violation (file already locked or unlocked).  

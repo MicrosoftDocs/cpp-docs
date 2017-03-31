@@ -91,7 +91,7 @@ wchar_t *fgetws(
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.  
   
 ## Remarks  
- The `fgets` function reads a string from the input `stream` argument and stores it in `str`. `fgets` reads characters from the current stream position to and including the first newline character, to the end of the stream, or until the number of characters read is equal to `n` – 1, whichever comes first. The result stored in `str` is appended with a null character. The newline character, if read, is included in the string.  
+ The `fgets` function reads a string from the input `stream` argument and stores it in `str`. `fgets` reads characters from the current stream position to and including the first newline character, to the end of the stream, or until the number of characters read is equal to `n` - 1, whichever comes first. The result stored in `str` is appended with a null character. The newline character, if read, is included in the string.  
   
  `fgetws` is a wide-character version of `fgets`.  
   

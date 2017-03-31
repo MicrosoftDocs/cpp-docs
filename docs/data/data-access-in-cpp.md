@@ -60,7 +60,7 @@ Connect to Azure SQL Database from C or C++ applications.
 [Microsoft Azure Storage Client Library for C++](https://github.com/Azure/azure-storage-cpp)
 [Azure Storage](/azure/storage/storage-introduction) is a cloud storage solution for modern applications that rely on durability, availability, and scalability to meet the needs of their customers. Connect to Azure Storage from C++ by using the Azure Storage Client Library for C++.
 
-[ODBC Driver 13.1 for SQL Server – Windows Released](https://blogs.msdn.microsoft.com/sqlnativeclient/2016/08/01/announcing-the-odbc-driver-13-1-for-sql-server/")
+[ODBC Driver 13.1 for SQL Server - Windows Released](https://blogs.msdn.microsoft.com/sqlnativeclient/2016/08/01/announcing-the-odbc-driver-13-1-for-sql-server/")
 The latest ODBC driver provides robust data access to Microsoft SQL Server 2016 Microsoft Azure SQL Database for C/C++ based applications. Provides support for features including always encrypted, Azure Active Directory, and AlwaysOn Availability Groupsi. Also available for MacOS and Linux.     
  
 [SQL Server Native Client]("https://msdn.microsoft.com/library/ms130892.aspx")

@@ -37,7 +37,7 @@ A scalar return value that can fit into 64 bits is returned through RAX—this i
   
  These examples show how parameters and return values are passed for functions with the specified declarations:  
   
-## Example of return value 1 – 64 bit result  
+## Example of return value 1 - 64 bit result  
   
 ```Output  
 __int64 func1(int a, float b, int c, int d, int e);  
@@ -45,7 +45,7 @@ __int64 func1(int a, float b, int c, int d, int e);
 // callee returns __int64 result in RAX.  
 ```  
   
-## Example of return value 2 – 128 bit result  
+## Example of return value 2 - 128 bit result  
   
 ```Output  
 __m128 func2(float a, double b, int c, __m64 d);   
@@ -53,7 +53,7 @@ __m128 func2(float a, double b, int c, __m64 d);
 // callee returns __m128 result in XMM0.  
 ```  
   
-## Example of return value 3 – user type result by pointer  
+## Example of return value 3 - user type result by pointer  
   
 ```Output  
 struct Struct1 {  
@@ -65,7 +65,7 @@ Struct1 func3(int a, double b, int c, float d);
 // callee returns pointer to Struct1 result in RAX.  
 ```  
   
-## Example of return value 4 – user type result by value  
+## Example of return value 4 - user type result by value  
   
 ```Output  
 struct Struct2 {  

@@ -66,7 +66,7 @@ class COleDBRecordView : public CFormView
 > [!NOTE]
 >  If you are working with the Data Access Objects (DAO) classes rather than the OLE DB Consumer Template classes, use class [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) instead. For more information, see the article [Overview: Database Programming](../../data/data-access-programming-mfc-atl.md).  
   
- `COleDBRecordView` keeps track of the user's position in the rowset so that the record view can update the user interface. When the user moves to either end of the rowset, the record view disables user interface objects ‒ such as menu items or toolbar buttons ‒ for moving further in the same direction.  
+ `COleDBRecordView` keeps track of the user's position in the rowset so that the record view can update the user interface. When the user moves to either end of the rowset, the record view disables user interface objects — such as menu items or toolbar buttons — for moving further in the same direction.  
   
  For more information about rowset classes, see the [Using OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md) article.  
   
@@ -142,13 +142,13 @@ virtual BOOL OnMove(UINT nIDMoveCommand);
  `nIDMoveCommand`  
  One of the following standard command ID values:  
   
-- `ID_RECORD_FIRST` ‒ Move to the first record in the recordset.  
+- `ID_RECORD_FIRST` — Move to the first record in the recordset.  
   
-- `ID_RECORD_LAST` ‒ Move to the last record in the recordset.  
+- `ID_RECORD_LAST` — Move to the last record in the recordset.  
   
-- `ID_RECORD_NEXT` ‒ Move to the next record in the recordset.  
+- `ID_RECORD_NEXT` — Move to the next record in the recordset.  
   
-- `ID_RECORD_PREV` ‒ Move to the previous record in the recordset.  
+- `ID_RECORD_PREV` — Move to the previous record in the recordset.  
   
 ### Return Value  
  Nonzero if the move was successful; otherwise 0 if the move request was denied.  

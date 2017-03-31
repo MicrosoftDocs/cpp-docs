@@ -128,7 +128,7 @@ int CommandToIndex(UINT nIDFind) const;
  String ID of the indicator whose index is to be retrieved.  
   
 ### Return Value  
- The index of the indicator if successful; –1 if not successful.  
+ The index of the indicator if successful; -1 if not successful.  
   
 ### Remarks  
  The index of the first indicator is 0.  

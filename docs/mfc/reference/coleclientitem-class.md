@@ -185,13 +185,13 @@ void Activate(
   
 |Value|Meaning|Symbol|  
 |-----------|-------------|------------|  
-|– 0|Primary verb|`OLEIVERB_PRIMARY`|  
-|– 1|Secondary verb|(None)|  
-|– 1|Display item for editing|`OLEIVERB_SHOW`|  
-|– 2|Edit item in separate window|`OLEIVERB_OPEN`|  
-|– 3|Hide item|`OLEIVERB_HIDE`|  
+|- 0|Primary verb|`OLEIVERB_PRIMARY`|  
+|- 1|Secondary verb|(None)|  
+|- 1|Display item for editing|`OLEIVERB_SHOW`|  
+|- 2|Edit item in separate window|`OLEIVERB_OPEN`|  
+|- 3|Hide item|`OLEIVERB_HIDE`|  
   
- The –1 value is typically an alias for another verb. If open editing is not supported, –2 has the same effect as –1. For additional values, see [IOleObject::DoVerb](http://msdn.microsoft.com/library/windows/desktop/ms694508) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The -1 value is typically an alias for another verb. If open editing is not supported, -2 has the same effect as -1. For additional values, see [IOleObject::DoVerb](http://msdn.microsoft.com/library/windows/desktop/ms694508) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
  `pView`  
  Pointer to the container view window that contains the OLE item; this is used by the server application for in-place activation. This parameter should be **NULL** if the container does not support in-place activation.  
@@ -818,13 +818,13 @@ virtual BOOL DoVerb(
   
 |Value|Meaning|Symbol|  
 |-----------|-------------|------------|  
-|– 0|Primary verb|`OLEIVERB_PRIMARY`|  
-|– 1|Secondary verb|(None)|  
-|– 1|Display item for editing|`OLEIVERB_SHOW`|  
-|– 2|Edit item in separate window|`OLEIVERB_OPEN`|  
-|– 3|Hide item|`OLEIVERB_HIDE`|  
+|- 0|Primary verb|`OLEIVERB_PRIMARY`|  
+|- 1|Secondary verb|(None)|  
+|- 1|Display item for editing|`OLEIVERB_SHOW`|  
+|- 2|Edit item in separate window|`OLEIVERB_OPEN`|  
+|- 3|Hide item|`OLEIVERB_HIDE`|  
   
- The –1 value is typically an alias for another verb. If open editing is not supported, –2 has the same effect as –1. For additional values, see [IOleObject::DoVerb](http://msdn.microsoft.com/library/windows/desktop/ms694508) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The -1 value is typically an alias for another verb. If open editing is not supported, -2 has the same effect as -1. For additional values, see [IOleObject::DoVerb](http://msdn.microsoft.com/library/windows/desktop/ms694508) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
  `pView`  
  Pointer to the view window; this is used by the server for in-place activation. This parameter should be **NULL** if the container application does not allow in-place activation.  
@@ -858,7 +858,7 @@ BOOL Draw(
  Pointer to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or `RECT` structure that defines the bounding rectangle in which to draw the OLE item (in logical units determined by the device context).  
   
  `nDrawAspect`  
- Specifies the aspect of the OLE item, that is, how it should be displayed. If `nDrawAspect` is –1, the last aspect set by using [SetDrawAspect](#setdrawaspect) is used. For more information about possible values for this flag, see [SetDrawAspect](#setdrawaspect).  
+ Specifies the aspect of the OLE item, that is, how it should be displayed. If `nDrawAspect` is -1, the last aspect set by using [SetDrawAspect](#setdrawaspect) is used. For more information about possible values for this flag, see [SetDrawAspect](#setdrawaspect).  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -1010,7 +1010,8 @@ BOOL GetExtent(
 ```  
 HICON GetIconFromRegistry() const;  
   
-static HICON GetIconFromRegistry(CLSID& clsid);```  
+static HICON GetIconFromRegistry(CLSID& clsid);
+```  
   
 ### Parameters  
  `clsid`  
@@ -1757,7 +1758,8 @@ void SetLinkUpdateOptions(OLEUPDATE dwUpdateOpt);
   
 ```  
 BOOL SetPrintDevice(const DVTARGETDEVICE* ptd);  
-BOOL SetPrintDevice(const PRINTDLG* ppd);```  
+BOOL SetPrintDevice(const PRINTDLG* ppd);
+```  
   
 ### Parameters  
  `ptd`  

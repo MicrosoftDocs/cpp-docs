@@ -134,7 +134,7 @@ virtual iter_type do_put(
  An output iterator the addresses the position one beyond the last element produced.  
   
 ### Remarks  
- The first virtual protected member function generates sequential elements beginning at ` next` to produce a monetary output field from the [string_type](#money_put__string_type) object ` val`. The sequence controlled by ` val` must begin with one or more decimal digits, optionally preceded by a minus sign (–), which represents the amount. The function returns an iterator designating the first element beyond the generated monetary output field.  
+ The first virtual protected member function generates sequential elements beginning at ` next` to produce a monetary output field from the [string_type](#money_put__string_type) object ` val`. The sequence controlled by ` val` must begin with one or more decimal digits, optionally preceded by a minus sign (-), which represents the amount. The function returns an iterator designating the first element beyond the generated monetary output field.  
   
  The second virtual protected member function behaves the same as the first, except that it effectively first converts ` val` to a sequence of decimal digits, optionally preceded by a minus sign, then converts that sequence as above.  
   

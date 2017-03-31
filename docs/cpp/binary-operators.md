@@ -52,10 +52,10 @@ The following table shows a list of operators that can be overloaded.
 |**\*=**|Multiplication/assignment|  
 |**+**|Addition|  
 |`+=`|Addition/assignment|  
-|**–**|Subtraction|  
-|**–=**|Subtraction/assignment|  
-|**–>**|Member selection|  
-|**–>\***|Pointer-to-member selection|  
+|**-**|Subtraction|  
+|**-=**|Subtraction/assignment|  
+|**->**|Member selection|  
+|**->\***|Pointer-to-member selection|  
 |**/**|Division|  
 |`/=`|Division/assignment|  
 |**<**|Less than|  

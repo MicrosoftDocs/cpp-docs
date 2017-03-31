@@ -91,11 +91,11 @@ int _mbbtype_l(
   
 |Value of `type`|`_mbbtype` tests for|Return value|`c`|  
 |---------------------|--------------------------|------------------|---------|  
-|Any value except 1|Valid single byte or lead byte|`_MBC_SINGLE` (0)|Single byte (0x20 – 0x7E, 0xA1 – 0xDF)|  
-|Any value except 1|Valid single byte or lead byte|`_MBC_LEAD` (1)|Lead byte of multibyte character (0x81 – 0x9F, 0xE0 – 0xFC)|  
-|Any value except 1|Valid single-byte or lead byte|`_MBC_ILLEGAL`<br /><br /> ( –1)|Invalid character (any value except 0x20 – 0x7E, 0xA1 – 0xDF, 0x81 – 0x9F, 0xE0 – 0xFC|  
-|1|Valid trail byte|`_MBC_TRAIL` (2)|Trailing byte of multibyte character (0x40 – 0x7E, 0x80 – 0xFC)|  
-|1|Valid trail byte|`_MBC_ILLEGAL`<br /><br /> ( –1)|Invalid character (any value except 0x20 – 0x7E, 0xA1 – 0xDF, 0x81 – 0x9F, 0xE0 – 0xFC|  
+|Any value except 1|Valid single byte or lead byte|`_MBC_SINGLE` (0)|Single byte (0x20 - 0x7E, 0xA1 - 0xDF)|  
+|Any value except 1|Valid single byte or lead byte|`_MBC_LEAD` (1)|Lead byte of multibyte character (0x81 - 0x9F, 0xE0 - 0xFC)|  
+|Any value except 1|Valid single-byte or lead byte|`_MBC_ILLEGAL`<br /><br /> ( -1)|Invalid character (any value except 0x20 - 0x7E, 0xA1 - 0xDF, 0x81 - 0x9F, 0xE0 - 0xFC|  
+|1|Valid trail byte|`_MBC_TRAIL` (2)|Trailing byte of multibyte character (0x40 - 0x7E, 0x80 - 0xFC)|  
+|1|Valid trail byte|`_MBC_ILLEGAL`<br /><br /> ( -1)|Invalid character (any value except 0x20 - 0x7E, 0xA1 - 0xDF, 0x81 - 0x9F, 0xE0 - 0xFC|  
   
 ## Remarks  
  The `_mbbtype` function determines the type of a byte in a multibyte character. If the value of `type` is any value except 1, `_mbbtype` tests for a valid single-byte or lead byte of a multibyte character. If the value of `type` is 1, `_mbbtype` tests for a valid trail byte of a multibyte character.  

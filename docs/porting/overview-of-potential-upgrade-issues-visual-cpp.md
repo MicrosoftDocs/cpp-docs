@@ -43,7 +43,7 @@ Over the years, the Visual C++ compiler has undergone many changes, along with c
   
 2.  If you cannot (or do not want to) rebuild the static library, you may try linking with legacy_stdio_definitions.lib. If it satisfies the link-time dependencies of your static library, you will want to thoroughly test the static library as it is used in the binary, to make sure that it is not adversely affected by any of the [behavioral changes that were made to the Universal CRT](visual-cpp-change-history-2003-2015.md#BK_CRT).  
   
-3.  If your static library’s dependencies are not satisfied by legacy_stdio_definitions.lib or if the library does not work with the Universal CRT due to the aforementioned behavioral changes, we would recommend encapsulating your static library into a DLL that you link with the correct version of the Microsoft C Runtime. For example, if the static library was built using Visual C++ 2013, you would want to build this DLL using Visual C++ 2013 and the Visual C++ 2013 libraries as well. By building the library into a DLL, you encapsulate the implementation detail that is its dependency on a particular version of the Microsoft C Runtime. (Note that you will want to be careful that the DLL interface does not “leak” details of which C Runtime it uses, e.g. by returning a FILE* across the DLL boundary or by returning a malloc-allocated pointer and expecting the caller to free it.)  
+3.  If your static library’s dependencies are not satisfied by legacy_stdio_definitions.lib or if the library does not work with the Universal CRT due to the aforementioned behavioral changes, we would recommend encapsulating your static library into a DLL that you link with the correct version of the Microsoft C Runtime. For example, if the static library was built using Visual C++ 2013, you would want to build this DLL using Visual C++ 2013 and the Visual C++ 2013 libraries as well. By building the library into a DLL, you encapsulate the implementation detail that is its dependency on a particular version of the Microsoft C Runtime. (Note that you will want to be careful that the DLL interface does not leak details of which C Runtime it uses, e.g. by returning a FILE* across the DLL boundary or by returning a malloc-allocated pointer and expecting the caller to free it.)  
   
  Use of multiple CRTs in a single process is not in and of itself problematic (indeed, most processes will end up loading multiple CRT DLLs; for example, Windows operating system components will depend on msvcrt.dll and the CLR will depend on its own private CRT). Problems arise when you jumble state from different CRTs. For example, you should not allocate memory using msvcr110.dll!malloc and attempt to deallocate that memory using msvcr120.dll!free, and you should not attempt to open a FILE using msvcr110!fopen and attempt to read from that FILE using msvcr120!fread. As long as you don’t jumble state from different CRTs, you can safely have multiple CRTs loaded in a single process.  
   
@@ -62,13 +62,13 @@ Over the years, the Visual C++ compiler has undergone many changes, along with c
 ### LNK2019: Unresolved external  
  For unresolved symbols, you might need to fix up your project settings.  
   
--   •   If the source file is in a non-default location, did you add the path to the project’s include directories?  
+-   If the source file is in a non-default location, did you add the path to the project’s include directories?  
   
--   •   If the external is defined in a .lib file, have you specified the lib path in the project properties and is the correct version of the .lib file actually located there?  
+-   If the external is defined in a .lib file, have you specified the lib path in the project properties and is the correct version of the .lib file actually located there?  
   
--   •   Are you attempting to link to a .lib file that was compiled with a different version of Visual Studio? If so, see the previous section on library and toolset dependencies.  
+-   Are you attempting to link to a .lib file that was compiled with a different version of Visual Studio? If so, see the previous section on library and toolset dependencies.  
   
--   •   Do the types of the arguments at the call site actually match an existing overload of the function? Verify the underlying types for any typedefs in the function’s signature and in the code that calls the function are what you expect them to be.  
+-   Do the types of the arguments at the call site actually match an existing overload of the function? Verify the underlying types for any typedefs in the function’s signature and in the code that calls the function are what you expect them to be.  
   
  To troubleshoot unresolved symbol errors, you can try using dumpbin.exe to examine the symbols defined in a binary. Try the following command line to view symbols defined in a library:  
   
@@ -103,16 +103,16 @@ dumpbin.exe /LINKERMEMBER somelibrary.lib
   
  One example of a common compiler error you might see when upgrading is when a non-const argument is passed to a const parameter. Older versions of Visual C++ did not always flag this as an error. For more information, see [The compiler's more strict conversions](porting-guide-spy-increment.md#stricter_conversions).  
   
- For more information on specific conformance improvements, see [Visual C++ change history 2003 – 2015](visual-cpp-change-history-2003-2015.md) and [C++ conformance improvements in Visual Studio 2017](../cpp-conformance-improvements-2017.md).  
+ For more information on specific conformance improvements, see [Visual C++ change history 2003 - 2015](visual-cpp-change-history-2003-2015.md) and [C++ conformance improvements in Visual Studio 2017](../cpp-conformance-improvements-2017.md).  
   
 ## Errors involving \<stdint.h> integral types  
  The \<stdint.h> header defines typedefs and macros that, unlike built-in integral types, are guaranteed to have a specified length on all platforms. Some examples are uint32_t and int64_t. Visual C++ added \<stdint.h> in Visual Studio 2010. Code that was written before 2010 might have provided private definitions for those types and those definitions might not always be consistent with the \<stdint.h> definitions.  
   
  If the error is C2371, and a stdint type is involved, it probably means that the type is defined in a header either in your code or a third-party lib file.  When upgrading, you should eliminate any custom definitions of \<stdint.h> types, but first compare the custom definitions to the current standard definitions to ensure you are not introducing new problems.  
   
- You can press F12 “Go to Definition” to see where the type in question is defined.  
+ You can press F12 **Go to Definition** to see where the type in question is defined.  
   
- The [/showIncludes](../build/reference/showincludes-list-include-files.md) compiler option can be useful here. In the Property Pages dialog box for your project, open the **C/C++**, **Advanced** page and set **Show Includes** to “Yes”. Then rebuild your project and see the list of #includes in the output window.  Each header is indented under the header that includes it.  
+ The [/showIncludes](../build/reference/showincludes-list-include-files.md) compiler option can be useful here. In the Property Pages dialog box for your project, open the **C/C++**, **Advanced** page and set **Show Includes** to **Yes**. Then rebuild your project and see the list of #includes in the output window.  Each header is indented under the header that includes it.  
   
 ## Errors involving CRT functions  
  Many changes have been made to the C runtime over the years. Many secure versions of functions have been added, and some have been removed. Also, as described earlier in this article, Microsoft’s implementation of the CRT was refactored in Visual Studio 2015 into new binaries and associated .lib files.  
@@ -145,7 +145,7 @@ dumpbin.exe /LINKERMEMBER somelibrary.lib
  For more information, see [Updating the Target Windows Version](porting-guide-spy-increment.md#updating_winver) and [More outdated header files](porting-guide-spy-increment.md#outdated_header_files).  
   
 ## ATL / MFC  
- ATL and MFC are relatively stable APIs but changes are made occasionally. See the [Visual C++ change history 2003 – 2015](visual-cpp-change-history-2003-2015.md) for more information and [What's New for Visual C++ in Visual Studio 2017](../what-s-new-for-visual-cpp-in-visual-studio.md) and [C++ conformance improvements in Visual Studio 2017](../cpp-conformance-improvements-2017.md).  
+ ATL and MFC are relatively stable APIs but changes are made occasionally. See the [Visual C++ change history 2003 - 2015](visual-cpp-change-history-2003-2015.md) for more information and [What's New for Visual C++ in Visual Studio 2017](../what-s-new-for-visual-cpp-in-visual-studio.md) and [C++ conformance improvements in Visual Studio 2017](../cpp-conformance-improvements-2017.md).  
   
 ### LNK 2005 _DllMain@12 already defined in MSVCRTD.lib  
  This error can occur in MFC applications. It indicates an ordering issue between the CRT library and the MFC library. MFC needs to be linked first so that it provides new and delete operators. To fix the error, use the /NODEFAULTLIB switch to Ignore these default libraries: MSVCRTD.lib and mfcs140d.lib. Then add these same libs as additional dependencies.  

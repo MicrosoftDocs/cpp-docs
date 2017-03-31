@@ -101,7 +101,7 @@ int _CrtDbgReportW(
  Optional substitution arguments used by `format`.  
   
 ## Return Value  
- For all report destinations, `_CrtDbgReport` and `_CrtDbgReportW` return –1 if an error occurs and 0 if no errors are encountered. However, when the report destination is a debug message window and the user clicks the **Retry** button, these functions return 1. If the user clicks the **Abort** button in the Debug Message window, these functions immediately abort and do not return a value.  
+ For all report destinations, `_CrtDbgReport` and `_CrtDbgReportW` return -1 if an error occurs and 0 if no errors are encountered. However, when the report destination is a debug message window and the user clicks the **Retry** button, these functions return 1. If the user clicks the **Abort** button in the Debug Message window, these functions immediately abort and do not return a value.  
   
  The [_RPT, _RPTF](../../c-runtime-library/reference/rpt-rptf-rptw-rptfw-macros.md) debug macros call `_CrtDbgReport` to generate their debug reports. The wide-character versions of these macros as well as [_ASSERT&#91;E&#93;](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md), `_RPTW n` and `_RPTFW n`, use `_CrtDbgReportW` to generate their debug reports. When `_CrtDbgReport` or `_CrtDbgReportW` return 1, these macros start the debugger, provided that just-in-time (JIT) debugging is enabled.  
   

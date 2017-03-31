@@ -36,7 +36,7 @@ A namespace is a standard C++ construct for grouping types that have related fun
 |private|The default accessibility. Same meaning as in standard C++.|No|  
 |protected|Same meaning as in standard C++, both within the app or component and in metadata.|Yes|  
 |public|Same meaning as in standard C++.|Yes|  
-|`public protected` –or- `protected public`|Protected accessibility in metadata, public within the app or component.|Yes|  
+|`public protected` -or- `protected public`|Protected accessibility in metadata, public within the app or component.|Yes|  
 |`protected private` or `private protected`|Not visible in metadata; protected accessibility within the app or component.||  
 |`internal` or `private public`|The member is public within the app or component, but is not visible in metadata.|No|  
   

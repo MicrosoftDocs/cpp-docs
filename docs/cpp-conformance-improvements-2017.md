@@ -199,12 +199,12 @@ or else perform a static cast to convert the object before passing it:
     struct S {/* as before */} s(0);
     printf("%i\n", static_cast<int>(s))
 ```
-For strings built and managed using CStringW, the provided ‘operator LPCWSTR()’ should be used to cast a CStringW object to the C pointer expected by the format string.
+For strings built and managed using CStringW, the provided `operator LPCWSTR()` should be used to cast a CStringW object to the C pointer expected by the format string.
 
 ```cpp  
 CStringW str1;
 CStringW str2;
-str1.Format(… , static_cast<LPCWSTR>(str2));
+str1.Format(L"%s", static_cast<LPCWSTR>(str2));
 ```
 
 ### cv-qualifiers in class construction

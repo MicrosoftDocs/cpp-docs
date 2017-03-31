@@ -77,7 +77,7 @@ int _finitef(
  The floating-point value to test.  
   
 ## Return Value  
- Both `_finite` and `_finitef` return a nonzero value if the argument *x* is finite; that is, if –INF < `x` < +INF. It returns 0 if the argument is infinite or a NAN.  
+ Both `_finite` and `_finitef` return a nonzero value if the argument *x* is finite; that is, if -INF < `x` < +INF. It returns 0 if the argument is infinite or a NAN.  
   
 ## Remarks  
  The `_finite` and `_finitef` functions are Microsoft specific. The `_finitef` function is only available when compiled for x86, ARM, or ARM64 platforms.  

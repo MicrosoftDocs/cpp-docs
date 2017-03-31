@@ -67,4 +67,4 @@ void __cdecl _CIexp();
   
 ## See Also  
  [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [exp, expf](../c-runtime-library/reference/exp-expf.md)
+ [exp, expf, expl](../c-runtime-library/reference/exp-expf.md)

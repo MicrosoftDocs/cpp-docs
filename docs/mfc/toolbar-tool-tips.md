@@ -68,7 +68,7 @@ Tool tips are the tiny popup windows that present short descriptions of a toolba
   
  If a control bar with tool tips enabled has child controls placed on it, the control bar will display a tool tip for every child control on the control bar as long as it meets the following criteria:  
   
--   The ID of the control is not – 1.  
+-   The ID of the control is not - 1.  
   
 -   The string-table entry with the same ID as the child control in the resource file has a tool tip string.  
   

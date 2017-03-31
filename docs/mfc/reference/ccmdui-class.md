@@ -85,7 +85,7 @@ class CCmdUI
   
 |User-Interface Item|Enable|SetCheck|SetRadio|SetText|  
 |--------------------------|------------|--------------|--------------|-------------|  
-|Menu item|Enables or disables|Checks (×) or unchecks|Checks using dot (•)|Sets item text|  
+|Menu item|Enables or disables|Checks or unchecks|Checks using a dot|Sets item text|  
 |Toolbar button|Enables or disables|Selects, unselects, or indeterminate|Same as `SetCheck`|(Not applicable)|  
 |Status-bar pane|Makes text visible or invisible|Sets pop-out or normal border|Same as `SetCheck`|Sets pane text|  
 |Normal button in `CDialogBar`|Enables or disables|Checks or unchecks check box|Same as `SetCheck`|Sets button text|  

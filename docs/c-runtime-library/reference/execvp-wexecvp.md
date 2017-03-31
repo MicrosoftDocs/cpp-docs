@@ -82,7 +82,7 @@ intptr_t _wexecvp(
  Array of pointers to parameters.  
   
 ## Return Value  
- If successful, these functions do not return to the calling process. A return value of –1 indicates an error, in which case the `errno` global variable is set.  
+ If successful, these functions do not return to the calling process. A return value of -1 indicates an error, in which case the `errno` global variable is set.  
   
 |`errno` value|Description|  
 |-------------------|-----------------|  

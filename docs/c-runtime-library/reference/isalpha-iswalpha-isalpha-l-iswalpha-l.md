@@ -96,7 +96,7 @@ int _iswalpha_l(
  The locale to use instead of the current locale.  
   
 ## Return Value  
- Each of these routines returns nonzero if `c` is a particular representation of an alphabetic character. `isalpha` returns a nonzero value if `c` is within the ranges A – Z or a – z. `iswalpha` returns a nonzero value only for wide characters for which `iswupper` or `iswlower` is nonzero; that is, for any wide character that is one of an implementation-defined set for which none of `iswcntrl`, `iswdigit`, `iswpunct`, or `iswspace` is nonzero. Each of these routines returns 0 if `c` does not satisfy the test condition.  
+ Each of these routines returns nonzero if `c` is a particular representation of an alphabetic character. `isalpha` returns a nonzero value if `c` is within the ranges A - Z or a - z. `iswalpha` returns a nonzero value only for wide characters for which `iswupper` or `iswlower` is nonzero; that is, for any wide character that is one of an implementation-defined set for which none of `iswcntrl`, `iswdigit`, `iswpunct`, or `iswspace` is nonzero. Each of these routines returns 0 if `c` does not satisfy the test condition.  
   
  The versions of these functions that have the `_l` suffix use the locale parameter that's passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).  
   

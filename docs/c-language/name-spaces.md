@@ -53,7 +53,7 @@ The compiler sets up "name spaces" to distinguish between the identifiers used f
  These tags are part of structure, union, and enumeration type specifiers and, if present, always immediately follow the reserved words `struct`, **union**, or `enum`. The tag names must be distinct from all other structure, enumeration, or union tags with the same visibility.  
   
  Members of structures or unions  
- Member names are allocated in name spaces associated with each structure and union type. That is, the same identifier can be a component name in any number of structures or unions at the same time. Definitions of component names always occur within structure or union type specifiers. Uses of component names always immediately follow the member-selection operators (**–>** and **.**). The name of a member must be unique within the structure or union, but it does not have to be distinct from other names in the program, including the names of members of different structures and unions, or the name of the structure itself.  
+ Member names are allocated in name spaces associated with each structure and union type. That is, the same identifier can be a component name in any number of structures or unions at the same time. Definitions of component names always occur within structure or union type specifiers. Uses of component names always immediately follow the member-selection operators (**->** and **.**). The name of a member must be unique within the structure or union, but it does not have to be distinct from other names in the program, including the names of members of different structures and unions, or the name of the structure itself.  
   
  Ordinary identifiers  
  All other names fall into a name space that includes variables, functions (including formal parameters and local variables), and enumeration constants. Identifier names have nested visibility, so you can redefine them within blocks.  
@@ -71,7 +71,7 @@ struct student {
    } student;  
 ```  
   
- When `student` appears after the `struct` keyword, the compiler recognizes it as a structure tag. When `student` appears after a member-selection operator (**–>** or **.**), the name refers to the structure member. In other contexts, `student` refers to the structure variable. However, overloading the tag name space is not recommended since it obscures meaning.  
+ When `student` appears after the `struct` keyword, the compiler recognizes it as a structure tag. When `student` appears after a member-selection operator (**->** or **.**), the name refers to the structure member. In other contexts, `student` refers to the structure variable. However, overloading the tag name space is not recommended since it obscures meaning.  
   
 ## See Also  
  [Program Structure](../c-language/program-structure.md)

@@ -184,7 +184,7 @@ CAtlTransactionManager* pTM);
 |Value|Description|  
 |-----------|-----------------|  
 |`CFile::typeBinary`|Sets binary mode (used in derived classes only).|  
-|`CFile::typeText`|Sets text mode with special processing for carriage return–linefeed pairs (used in derived classes only).|  
+|`CFile::typeText`|Sets text mode with special processing for carriage return-linefeed pairs (used in derived classes only).|  
 |`CFile::typeUnicode`|Sets Unicode mode (used in derived classes only). Text is written to the file in Unicode format when the application is built in a Unicode configuration. No BOM is written to the file.|  
   
  Choose only one of the following file share mode options. The default file share mode is `CFile::shareExclusive`, which is exclusive.  
@@ -552,7 +552,7 @@ virtual UINT Read(
  Pointer to the user-supplied buffer that is to receive the data read from the file.  
   
  `nCount`  
- The maximum number of bytes to be read from the file. For text-mode files, carriage return–linefeed pairs are counted as single characters.  
+ The maximum number of bytes to be read from the file. For text-mode files, carriage return-linefeed pairs are counted as single characters.  
   
 ### Return Value  
  The number of bytes transferred to the buffer. Note that for all `CFile` classes, the return value may be less than `nCount` if the end of file was reached.  
@@ -783,7 +783,7 @@ virtual void Write(
  A pointer to the user-supplied buffer that contains the data to be written to the file.  
   
  `nCount`  
- The number of bytes to be transferred from the buffer. For text-mode files, carriage return–linefeed pairs are counted as single characters.  
+ The number of bytes to be transferred from the buffer. For text-mode files, carriage return-linefeed pairs are counted as single characters.  
   
 ### Remarks  
  **Write** throws an exception in response to several conditions, including the disk-full condition.  

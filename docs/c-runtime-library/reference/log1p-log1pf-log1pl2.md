@@ -105,7 +105,7 @@ long double log1pl(
 |±SNaN|Same as input|INVALID||  
 |±QNaN, indefinite|Same as input|||  
   
- The `errno` value is set to ERANGE if `x` = -1. The `errno` value is set to EDOM if `x` < −1.  
+ The `errno` value is set to ERANGE if `x` = -1. The `errno` value is set to EDOM if `x` < -1.  
   
 ## Remarks  
  The `log1p` functions may be more accurate than using log(`x`+1) when x is near 0.  

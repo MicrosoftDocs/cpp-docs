@@ -35,9 +35,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Compiler Warning (level 2) C4285
-return type for 'identifier::operator –>' is recursive if applied using infix notation  
+return type for 'identifier::operator ->' is recursive if applied using infix notation  
   
- The specified **operator–>()** function cannot return the type for which it is defined or a reference to the type for which it is defined.  
+ The specified **operator->()** function cannot return the type for which it is defined or a reference to the type for which it is defined.  
   
  The following sample generates C4285:  
   

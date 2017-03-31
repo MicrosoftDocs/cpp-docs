@@ -186,7 +186,7 @@ OutputIterator adjacent_difference(
 ### Remarks  
  The output iterator _ *result* is allowed to be the same iterator as the input iterator * first,* so that `adjacent_difference`s may be computed in place.  
   
- For a sequence of values *a*1, *a*2, *a*3, in an input range, the first template function stores successive **partial_difference**s *a*1, *a*2 - *a*1, a3 – *a*2, in the destination range.  
+ For a sequence of values *a*1, *a*2, *a*3, in an input range, the first template function stores successive **partial_difference**s *a*1, *a*2 - *a*1, a3 - *a*2, in the destination range.  
   
  For a sequence of values *a*1, *a*2, *a*3, in an input range, the second template function stores successive **partial_difference**s *a*1, *a*2 `binary_op` *a*1, *a*3 `binary_op` *a*2, in the destination range.  
   

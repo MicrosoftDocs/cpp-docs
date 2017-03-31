@@ -1,5 +1,5 @@
 ---
-title: "Subtraction (–) | Microsoft Docs"
+title: "Subtraction (-) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -33,8 +33,8 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Subtraction (–)
-The subtraction operator (**–**) subtracts the second operand from the first. Both operands can be either integral or floating types, or one operand can be a pointer and the other an integer.  
+# Subtraction (-)
+The subtraction operator (**-**) subtracts the second operand from the first. Both operands can be either integral or floating types, or one operand can be a pointer and the other an integer.  
   
  When two pointers are subtracted, the difference is converted to a signed integral value by dividing the difference by the size of a value of the type that the pointers address. The size of the integral value is defined by the type **ptrdiff_t** in the standard include file STDDEF.H. The result represents the number of memory positions of that type between the two addresses. The result is only guaranteed to be meaningful for two elements of the same array, as discussed in [Pointer Arithmetic](../c-language/pointer-arithmetic.md).  
   

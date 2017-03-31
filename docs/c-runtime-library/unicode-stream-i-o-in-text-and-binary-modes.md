@@ -43,7 +43,7 @@ When a Unicode stream I/O routine (such as `fwprintf`, `fwscanf`, `fgetwc`, `fpu
   
 -   Unicode-to-MBCS or MBCS-to-Unicode conversion. When a Unicode stream-I/O function operates in text mode, the source or destination stream is assumed to be a sequence of multibyte characters. Therefore, the Unicode stream-input functions convert multibyte characters to wide characters (as if by a call to the `mbtowc` function). For the same reason, the Unicode stream-output functions convert wide characters to multibyte characters (as if by a call to the `wctomb` function).  
   
--   Carriage return – linefeed (CR-LF) translation. This translation occurs before the MBCS – Unicode conversion (for Unicode stream input functions) and after the Unicode – MBCS conversion (for Unicode stream output functions). During input, each carriage return – linefeed combination is translated into a single linefeed character. During output, each linefeed character is translated into a carriage return – linefeed combination.  
+-   Carriage return - linefeed (CR-LF) translation. This translation occurs before the MBCS - Unicode conversion (for Unicode stream input functions) and after the Unicode - MBCS conversion (for Unicode stream output functions). During input, each carriage return - linefeed combination is translated into a single linefeed character. During output, each linefeed character is translated into a carriage return - linefeed combination.  
   
  However, when a Unicode stream-I/O function operates in binary mode, the file is assumed to be Unicode, and no CR-LF translation or character conversion occurs during input or output. Use the _setmode( _fileno( stdin ), _O_BINARY ); instruction in order to correctly use wcin on a UNICODE text file.  
   

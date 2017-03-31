@@ -60,7 +60,7 @@ The unary operators that can be overloaded are the following:
   
 9. conversion operators  
   
- The postfix increment and decrement operators (`++` and **––**) are treated separately in [Increment and Decrement](../cpp/increment-and-decrement-operator-overloading-cpp.md).  
+ The postfix increment and decrement operators (`++` and **--**) are treated separately in [Increment and Decrement](../cpp/increment-and-decrement-operator-overloading-cpp.md).  
   
  Conversion operators are also discussed in a separate topic; see [User-Defined Type Conversions](../cpp/user-defined-type-conversions-cpp.md).  
   

@@ -96,7 +96,7 @@ ret
  In practice, when a frame pointer is used, there is no good reason to adjust RSP in two steps, so the following epilog would be used instead:  
   
 ```  
-lea      RSP, fixed-allocation-size – 128[R13]  
+lea      RSP, fixed-allocation-size - 128[R13]  
 pop      R13  
 pop      R14  
 pop      R15  

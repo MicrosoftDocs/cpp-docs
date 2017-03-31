@@ -219,7 +219,7 @@ virtual int do_encoding() const throw();
 ### Return Value  
  The protected virtual member function returns:  
   
--   –1, if the encoding of sequences of type `extern_type` is state dependent.  
+-   -1, if the encoding of sequences of type `extern_type` is state dependent.  
   
 -   0, if the encoding involves sequences of varying lengths.  
   
@@ -311,9 +311,9 @@ virtual int do_length(
 ### Remarks  
  The protected virtual member function effectively calls `do_in`( `_State`, ` first1`, ` last1`, ` next1`, `_Buf`, `_Buf` + `_Len2`, ` next2`) for `_State` (a copy of state), some buffer `_Buf`, and pointers ` next1`and ` next2`.  
   
- It then returns ` next2` – **buf**. Thus, it counts the maximum number of conversions, not greater than `_Len2`, defined by the source sequence at [ ` first1`, ` last1`).  
+ It then returns ` next2` - **buf**. Thus, it counts the maximum number of conversions, not greater than `_Len2`, defined by the source sequence at [ ` first1`, ` last1`).  
   
- The template version always returns the lesser of ` last1` – ` first1` and `_Len2`.  
+ The template version always returns the lesser of ` last1` - ` first1` and `_Len2`.  
   
 ### Example  
   See the example for [length](#codecvt__length), which calls **do_length**.  
@@ -442,7 +442,7 @@ int encoding() const throw();
   
  The protected virtual member function returns:  
   
--   –1, if the encoding of sequences of type `extern_type` is state dependent.  
+-   -1, if the encoding of sequences of type `extern_type` is state dependent.  
   
 -   0, if the encoding involves sequences of varying lengths.  
   

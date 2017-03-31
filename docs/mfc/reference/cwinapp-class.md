@@ -378,7 +378,7 @@ virtual void DoWaitCursor(int nCode);
   
 ### Parameters  
  `nCode`  
- If this parameter is 1, a wait cursor appears. If 0, the wait cursor is restored without incrementing the reference count. If –1, the wait cursor ends.  
+ If this parameter is 1, a wait cursor appears. If 0, the wait cursor is restored without incrementing the reference count. If -1, the wait cursor ends.  
   
 ### Remarks  
  The default implements an hourglass cursor. `DoWaitCursor` maintains a reference count. When positive, the hourglass cursor is displayed.  

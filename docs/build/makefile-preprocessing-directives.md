@@ -71,12 +71,12 @@ translation.priority.ht:
 Preprocessing directives are not case sensitive. The initial exclamation point (!) must appear at the beginning of the line. Zero or more spaces or tabs can appear after the exclamation point, for indentation.  
   
  **!CMDSWITCHES**  
- {**+**&#124; **–**}*option*... Turns each *option* listed on or off. Spaces or tabs must appear before the + or – operator; none can appear between the operator and the [option letters](../build/nmake-options.md). Letters are not case sensitive and are specified without a slash ( / ). To turn some options on and others off, use separate specifications of **!CMDSWITCHES**.  
+ {**+**&#124; **-**}*option*... Turns each *option* listed on or off. Spaces or tabs must appear before the + or - operator; none can appear between the operator and the [option letters](../build/nmake-options.md). Letters are not case sensitive and are specified without a slash ( / ). To turn some options on and others off, use separate specifications of **!CMDSWITCHES**.  
   
  Only /D, /I, /N, and /S can be used in a makefile. In Tools.ini, all options are allowed except /F, /HELP, /NOLOGO, /X, and /?. Changes specified in a description block do not take effect until the next description block. This directive updates **MAKEFLAGS**; changes are inherited during recursion if **MAKEFLAGS** is specified.  
   
  **!ERROR**  *text*  
- Displays *text* in error U1050, then halts NMAKE, even if /K, /I, **.IGNORE**, **!CMDSWITCHES**, or the dash (–) command modifier is used. Spaces or tabs before *text* are ignored.  
+ Displays *text* in error U1050, then halts NMAKE, even if /K, /I, **.IGNORE**, **!CMDSWITCHES**, or the dash (-) command modifier is used. Spaces or tabs before *text* are ignored.  
   
  **!MESSAGE**  *text*  
  Displays *text* to standard output. Spaces or tabs before *text* are ignored.  

@@ -579,7 +579,7 @@ int FindOneOf(PCXSTR pszCharSet) const throw();
  String containing characters for matching.  
   
 ### Return Value  
- The zero-based index of the first character in this string that is also in `pszCharSet`; –1 if there is no match.  
+ The zero-based index of the first character in this string that is also in `pszCharSet`; -1 if there is no match.  
   
 ### Remarks  
  Finds the first occurrence of any of the characters in `pszCharSet`.  
@@ -1247,7 +1247,7 @@ int ReverseFind(XCHAR ch) const throw();
  The character to search for.  
   
 ### Return Value  
- The zero-based index of the last character in this `CStringT` object that matches the requested character, or –1 if the character is not found.  
+ The zero-based index of the last character in this `CStringT` object that matches the requested character, or -1 if the character is not found.  
   
 ### Remarks  
  The function is similar to the run-time function `strrchr`.  

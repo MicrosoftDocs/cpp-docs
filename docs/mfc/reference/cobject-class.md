@@ -126,7 +126,8 @@ virtual void AssertValid() const;
   
 ```  
 CObject();  
-CObject(const CObject& objectSrc);```  
+CObject(const CObject& objectSrc);
+```  
   
 ### Parameters  
  *objectSrc*  
@@ -191,7 +192,7 @@ virtual CRuntimeClass* GetRuntimeClass() const;
   
 - **int m_nObjectSize** The size of the object, in bytes. If the object has data members that point to allocated memory, the size of that memory is not included.  
   
-- **UINT m_wSchema** The schema number ( – 1 for nonserializable classes). See the [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) macro for a description of schema number.  
+- **UINT m_wSchema** The schema number ( - 1 for nonserializable classes). See the [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) macro for a description of schema number.  
   
 - **CObject\* ( PASCAL\* m_pfnCreateObject )( )** A function pointer to the default constructor that creates an object of your class (valid only if the class supports dynamic creation; otherwise, returns **NULL**).  
   
@@ -294,7 +295,8 @@ void PASCAL operator delete(
 void* PASCAL operator new(size_t nSize);  
 void* PASCAL operator new(size_t, void* p);
 
- void* PASCAL operator new(
+ 
+void* PASCAL operator new(
     size_t nSize,  
     LPCSTR lpszFileName,  
     int nLine);

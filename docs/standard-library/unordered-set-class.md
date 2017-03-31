@@ -1408,11 +1408,11 @@ void insert(initializer_list<value_type> IList);
   
  The[value_type](../standard-library/map-class.md#map__value_type) of a container is a typedef that belongs to the container, and, for set, `unordered_set<V>::value_type` is type`const V`.  
   
- The range member function (5) inserts the sequence of element values into an unordered_set that corresponds to each element addressed by an iterator in the range`[First, Last)`; therefore, `Last` does not get inserted. The container member function`end()` refers to the position just after the last element in the container‒for example, the statement`s.insert(v.begin(), v.end());` attempts to insert all elements of`v` into`s`. Only elements that have unique values in the range are inserted; duplicates are ignored. To observe which elements are rejected, use the single-element versions of`insert`.  
+ The range member function (5) inserts the sequence of element values into an unordered_set that corresponds to each element addressed by an iterator in the range`[First, Last)`; therefore, `Last` does not get inserted. The container member function`end()` refers to the position just after the last element in the container—for example, the statement`s.insert(v.begin(), v.end());` attempts to insert all elements of`v` into`s`. Only elements that have unique values in the range are inserted; duplicates are ignored. To observe which elements are rejected, use the single-element versions of`insert`.  
   
  The initializer list member function (6) uses an[initializer_list](../standard-library/initializer-list.md) to copy elements into the unordered_set.  
   
- For insertion of an element constructed in place‒that is, no copy or move operations are performed‒see[set::emplace](../standard-library/set-class.md#set__emplace) and[set::emplace_hint](../standard-library/set-class.md#set__emplace_hint).  
+ For insertion of an element constructed in place—that is, no copy or move operations are performed—see[set::emplace](../standard-library/set-class.md#set__emplace) and[set::emplace_hint](../standard-library/set-class.md#set__emplace_hint).  
   
  For a code example, see[set::insert](../standard-library/set-class.md#set__insert).  
   

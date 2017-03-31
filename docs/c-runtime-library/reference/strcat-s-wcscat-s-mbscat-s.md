@@ -130,7 +130,7 @@ errno_t _mbscat_s(
 char buf[16];  
 strcpy_s(buf, 16, "Start");  
 strcat_s(buf, 16, " End");               // Correct  
-strcat_s(buf, 16 – strlen(buf), " End"); // Incorrect  
+strcat_s(buf, 16 - strlen(buf), " End"); // Incorrect  
 ```  
   
  `wcscat_s` and `_mbscat_s` are wide-character and multibyte-character versions of `strcat_s`. The arguments and return value of `wcscat_s` are wide-character strings; those of `_mbscat_s` are multibyte-character strings. These three functions behave identically otherwise.  

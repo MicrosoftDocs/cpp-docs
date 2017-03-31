@@ -60,7 +60,7 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # exp2, exp2f, exp2l
-Computes 2 raised to the specified value (ie, 2ˣ ).  
+Computes 2 raised to the specified value.  
   
 ## Syntax  
   
@@ -84,7 +84,6 @@ float exp2f(
 long double exp2l(  
    long double x  
 );  
-  
 ```  
   
 #### Parameters  
@@ -92,7 +91,7 @@ long double exp2l(
  The value of the exponent.  
   
 ## Return Value  
- If successful, returns the base-2 exponent of `x` (2ˣ) . Otherwise, may return one of the following values:  
+ If successful, returns the base-2 exponent of `x`, that is, 2<sup>x</sup>. Otherwise, it returns one of the following values:  
   
 |Issue|Return|  
 |-----------|------------|  
@@ -101,22 +100,22 @@ long double exp2l(
 |`x` = +INFINITY|+INFINITY|  
 |`x` = NaN|NaN|  
 |Overflow range error|+HUGE_VAL, +HUGE_VALF, or +HUGE_VALL|  
-|Underflow range error|correct result, after rounding|  
+|Underflow range error|Correct result, after rounding|  
   
  Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).  
   
 ## Remarks  
- Because C++ allows overloading, you can call overloads of `exp2` that take and return float and long double types. In a C program, `exp2` always takes and returns a double.  
+ Because C++ allows overloading, you can call overloads of `exp2` that take and return **float** and **long double** types. In a C program, `exp2` always takes and returns a **double**.  
   
 ## Requirements  
   
 |Routine|C header|C++ header|  
 |-------------|--------------|------------------|  
-|`exp`,                `expf`, `expl`|\<math.h>|\<cmath>|  
+|`exp`, `expf`, `expl`|\<math.h>|\<cmath>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
  [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [exp, expf](../../c-runtime-library/reference/exp-expf.md)   
+ [exp, expf, expl](../../c-runtime-library/reference/exp-expf.md)   
  [log2, log2f, log2l](../../c-runtime-library/reference/log2-log2f-log2l.md)

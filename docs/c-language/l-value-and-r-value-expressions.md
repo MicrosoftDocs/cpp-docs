@@ -48,7 +48,7 @@ Expressions that refer to memory locations are called "l-value" expressions. An 
   
 -   A subscript (**[ ]**) expression that does not evaluate to an array  
   
--   A member-selection expression (**–>** or **.**)  
+-   A member-selection expression (**->** or **.**)  
   
 -   A unary-indirection (**\***) expression that does not refer to an array  
   

@@ -126,7 +126,7 @@
 #### [C Multiplicative Operators](c-multiplicative-operators.md)
 #### [C Additive Operators](c-additive-operators.md)
 ##### [Addition (+)](addition-plus.md)
-##### [Subtraction (–)](subtraction-minus.md)
+##### [Subtraction (-)](subtraction-minus.md)
 ##### [Using the Additive Operators](using-the-additive-operators.md)
 ##### [Pointer Arithmetic](pointer-arithmetic.md)
 #### [Bitwise Shift Operators](bitwise-shift-operators.md)

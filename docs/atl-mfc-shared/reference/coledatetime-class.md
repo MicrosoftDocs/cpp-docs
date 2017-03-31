@@ -64,13 +64,13 @@ class COleDateTime
 |[COleDateTime::GetAsSystemTime](#getassystemtime)|Call this method to obtain the time in the `COleDateTime` object as a [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) data structure.|  
 |[COleDateTime::GetAsUDATE](#getasudate)|Call this method to obtain the time in the `COleDateTime` as a **UDATE** data structure.|  
 |[COleDateTime::GetCurrentTime](#getcurrenttime)|Creates a `COleDateTime` object that represents the current time (static member function).|  
-|[COleDateTime::GetDay](#getday)|Returns the day this `COleDateTime` object represents (1 – 31).|  
+|[COleDateTime::GetDay](#getday)|Returns the day this `COleDateTime` object represents (1 - 31).|  
 |[COleDateTime::GetDayOfWeek](#getdayofweek)|Returns the day of the week this `COleDateTime` object represents (Sunday = 1).|  
 |[COleDateTime::GetDayOfYear](#getdayofyear)|Returns the day of the year this `COleDateTime` object represents (Jan 1 = 1).|  
-|[COleDateTime::GetHour](#gethour)|Returns the hour this `COleDateTime` object represents (0 – 23).|  
-|[COleDateTime::GetMinute](#getminute)|Returns the minute this `COleDateTime` object represents (0 – 59).|  
-|[COleDateTime::GetMonth](#getmonth)|Returns the month this `COleDateTime` object represents (1 – 12).|  
-|[COleDateTime::GetSecond](#getsecond)|Returns the second this `COleDateTime` object represents (0 – 59).|  
+|[COleDateTime::GetHour](#gethour)|Returns the hour this `COleDateTime` object represents (0 - 23).|  
+|[COleDateTime::GetMinute](#getminute)|Returns the minute this `COleDateTime` object represents (0 - 59).|  
+|[COleDateTime::GetMonth](#getmonth)|Returns the month this `COleDateTime` object represents (1 - 12).|  
+|[COleDateTime::GetSecond](#getsecond)|Returns the second this `COleDateTime` object represents (0 - 59).|  
 |[COleDateTime::GetStatus](#getstatus)|Gets the status (validity) of this `COleDateTime` object.|  
 |[COleDateTime::GetYear](#getyear)|Returns the year this `COleDateTime` object represents.|  
 |[COleDateTime::ParseDateTime](#parsedatetime)|Reads a date/time value from a string and sets the value of `COleDateTime`.|  
@@ -220,12 +220,12 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
   
 |Date/time component|Valid range|  
 |--------------------------|-----------------|  
-|year|100 – 9999|  
-|month|0 – 12|  
-|day|0 – 31|  
-|hour|0 – 23|  
-|minute|0 – 59|  
-|second|0 – 59|  
+|year|100 - 9999|  
+|month|0 - 12|  
+|day|0 - 31|  
+|hour|0 - 23|  
+|minute|0 - 59|  
+|second|0 - 59|  
   
  Note that the actual upper bound for the day component varies based on the month and year components. For details, see the **SetDate** or `SetDateTime` member functions.  
   
@@ -920,9 +920,9 @@ int SetDate(
   
 |Parameter|Bounds|  
 |---------------|------------|  
-|`nYear`|100 – 9999|  
-|`nMonth`|1 – 12|  
-|`nDay`|0 – 31|  
+|`nYear`|100 - 9999|  
+|`nMonth`|1 - 12|  
+|`nDay`|0 - 31|  
   
  If the day of the month overflows, it is converted to the correct day of the next month and the month and/or year is incremented accordingly. A day value of zero indicates the last day of the previous month. The behavior is the same as `SystemTimeToVariantTime`.  
   
@@ -987,12 +987,12 @@ int SetDateTime(
   
 |Parameter|Bounds|  
 |---------------|------------|  
-|`nYear`|100 – 9999|  
-|`nMonth`|1 – 12|  
-|`nDay`|0 – 31|  
-|`nHour`|0 – 23|  
-|`nMin`|0 – 59|  
-|`nSec`|0 – 59|  
+|`nYear`|100 - 9999|  
+|`nMonth`|1 - 12|  
+|`nDay`|0 - 31|  
+|`nHour`|0 - 23|  
+|`nMin`|0 - 59|  
+|`nSec`|0 - 59|  
   
  If the day of the month overflows, it is converted to the correct day of the next month and the month and/or year is incremented accordingly. A day value of zero indicates the last day of the previous month. The behavior is the same as [SystemTimeToVariantTime](http://msdn.microsoft.com/en-us/d9d69521-9b33-4fc5-8a1c-929f216db450).  
   
@@ -1085,9 +1085,9 @@ int SetTime(
   
 |Parameter|Bounds|  
 |---------------|------------|  
-|`nHour`|0 – 23|  
-|`nMin`|0 – 59|  
-|`nSec`|0 – 59|  
+|`nHour`|0 - 23|  
+|`nMin`|0 - 59|  
+|`nSec`|0 - 59|  
   
  If the time value specified by the parameters is not valid, the status of this object is set to invalid and the value of this object is not changed.  
   

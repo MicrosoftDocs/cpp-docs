@@ -632,7 +632,7 @@ int OffsetRgn(POINT point);
 ### Remarks  
  The function moves the region *x* units along the x-axis and *y* units along the y-axis.  
   
- The coordinate values of a region must be less than or equal to 32,767 and greater than or equal to –32,768. The *x* and *y* parameters must be carefully chosen to prevent invalid region coordinates.  
+ The coordinate values of a region must be less than or equal to 32,767 and greater than or equal to -32,768. The *x* and *y* parameters must be carefully chosen to prevent invalid region coordinates.  
   
 ### Example  
   See the example for [CRgn::CreateEllipticRgn](#createellipticrgn).  

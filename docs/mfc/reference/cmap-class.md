@@ -94,7 +94,7 @@ template<class KEY, class ARG_KEY, class VALUE, class ARG_VALUE>class CMap : pub
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMap::operator [ ]](#operator_at)|Inserts an element into the map ‒ operator substitution for `SetAt`.|  
+|[CMap::operator [ ]](#operator_at)|Inserts an element into the map — operator substitution for `SetAt`.|  
   
 ## Remarks  
  Once you have inserted a key-value pair (element) into the map, you can efficiently retrieve or delete the pair using the key to access it. You can also iterate over all the elements in the map.  

@@ -85,7 +85,7 @@ int _wcreat(
  Permission setting.  
   
 ## Return Value  
- These functions, if successful, return a file descriptor to the created file. Otherwise, the functions return –1 and set `errno` as shown in the following table.  
+ These functions, if successful, return a file descriptor to the created file. Otherwise, the functions return -1 and set `errno` as shown in the following table.  
   
 |`errno` setting|Description|  
 |---------------------|-----------------|  

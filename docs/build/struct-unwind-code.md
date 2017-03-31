@@ -59,7 +59,7 @@ The unwind code array is used to record the sequence of operations in the prolog
   
  UWOP_ALLOC_LARGE (1)2 or 3 nodes  
   
- Allocate a large-sized area on the stack. There are two forms. If the operation info equals 0, then the size of the allocation divided by 8 is recorded in the next slot, allowing an allocation up to 512K – 8. If the operation info equals 1, then the unscaled size of the allocation is recorded in the next two slots in little-endian format, allowing allocations up to 4GB – 8.  
+ Allocate a large-sized area on the stack. There are two forms. If the operation info equals 0, then the size of the allocation divided by 8 is recorded in the next slot, allowing an allocation up to 512K - 8. If the operation info equals 1, then the unscaled size of the allocation is recorded in the next two slots in little-endian format, allowing allocations up to 4GB - 8.  
   
  UWOP_ALLOC_SMALL (2)1 node  
   
@@ -72,7 +72,7 @@ The unwind code array is used to record the sequence of operations in the prolog
 |**Allocation Size**|**Unwind Code**|  
 |8 to 128 bytes|UWOP_ALLOC_SMALL|  
 |136 to 512K-8 bytes|UWOP_ALLOC_LARGE, operation info = 0|  
-|512K to 4G–8 bytes|UWOP_ALLOC_LARGE, operation info = 1|  
+|512K to 4G-8 bytes|UWOP_ALLOC_LARGE, operation info = 1|  
   
  UWOP_SET_FPREG (3)1 node  
   

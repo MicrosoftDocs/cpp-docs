@@ -314,7 +314,7 @@ int FindExtension() const;
 ```  
   
 ### Return Value  
- Returns the position of the "." preceding the extension. If no extension is found, returns –1.  
+ Returns the position of the "." preceding the extension. If no extension is found, returns -1.  
   
 ### Remarks  
  For more information, see [PathFindExtension](http://msdn.microsoft.com/library/windows/desktop/bb773587).  
@@ -327,7 +327,7 @@ int FindFileName() const;
 ```  
   
 ### Return Value  
- Returns the position of the file name. If no file name is found, returns –1.  
+ Returns the position of the file name. If no file name is found, returns -1.  
   
 ### Remarks  
  For more information, see [PathFindFileName](http://msdn.microsoft.com/library/windows/desktop/bb773589).  

@@ -84,28 +84,28 @@ struct tm *_gmtime64(
  A pointer to a structure of type [tm](../../c-runtime-library/standard-types.md). The fields of the returned structure hold the evaluated value of the `timer` argument in UTC rather than in local time. Each of the structure fields is of type `int`, as follows:  
   
  `tm_sec`  
- Seconds after minute (0 – 59).  
+ Seconds after minute (0 - 59).  
   
  `tm_min`  
- Minutes after hour (0 – 59).  
+ Minutes after hour (0 - 59).  
   
  `tm_hour`  
- Hours since midnight (0 – 23).  
+ Hours since midnight (0 - 23).  
   
  `tm_mday`  
- Day of month (1 – 31).  
+ Day of month (1 - 31).  
   
  `tm_mon`  
- Month (0 – 11; January = 0).  
+ Month (0 - 11; January = 0).  
   
  `tm_year`  
  Year (current year minus 1900).  
   
  `tm_wday`  
- Day of week (0 – 6; Sunday = 0).  
+ Day of week (0 - 6; Sunday = 0).  
   
  `tm_yday`  
- Day of year (0 – 365; January 1 = 0).  
+ Day of year (0 - 365; January 1 = 0).  
   
  `tm_isdst`  
  Always 0 for `gmtime`.  

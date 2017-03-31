@@ -53,7 +53,7 @@ argc[ ,char*argv[] [,char*envp[] ] ] );intwmain(intargc[ ,wchar_t*argv[] [,wchar
  `argv`  
  An array of null-terminated strings representing command-line arguments entered by the user of the program. By convention, `argv`**[0]** is the command with which the program is invoked, `argv`**[1]** is the first command-line argument, and so on, until `argv`**[**`argc`**]**, which is always **NULL**. See [Customizing Command Line Processing](../cpp/customizing-cpp-command-line-processing.md) for information on suppressing command-line processing.  
   
- The first command-line argument is always `argv`**[1]** and the last one is `argv`**[**`argc` – 1**]**.  
+ The first command-line argument is always `argv`**[1]** and the last one is `argv`**[**`argc` - 1**]**.  
   
 > [!NOTE]
 >  By convention, `argv`**[0]** is the command with which the program is invoked.  However, it is possible to spawn a process using [CreateProcess](http://msdn.microsoft.com/library/windows/desktop/ms683197) and if you use both the first and second arguments (`lpApplicationName` and `lpCommandLine`), `argv`**[0]** may not be the executable name; use [GetModuleFileName](http://msdn.microsoft.com/library/windows/desktop/ms683197) to retrieve the executable name, and its fully-qualified path.  

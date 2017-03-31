@@ -2210,7 +2210,7 @@ virtual BOOL OnGetViewExtent(
  `DWORD` describing which form, or aspect, of an object is to be displayed. Valid values are taken from the enumeration [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) or **DVASPECT2**.  
   
  *lindex*  
- The portion of the object that is of interest. Currently only –1 is valid.  
+ The portion of the object that is of interest. Currently only -1 is valid.  
   
  `ptd`  
  Points to the [DVTARGETDEVICE](http://msdn.microsoft.com/library/windows/desktop/ms686613) structure defining the target device for which the object's size should be returned.  

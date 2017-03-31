@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # C Additive Operators
-The additive operators perform addition (**+**) and subtraction (**–**).  
+The additive operators perform addition (**+**) and subtraction (**-**).  
   
 ## Syntax  
  *additive-expression*:  
@@ -45,7 +45,7 @@ The additive operators perform addition (**+**) and subtraction (**–**).
   
  *additive-expression*  **+**  *multiplicative-expression*  
   
- *additive-expression*  **–**  *multiplicative-expression*  
+ *additive-expression*  **-**  *multiplicative-expression*  
   
 > [!NOTE]
 >  Although the syntax for *additive-expression* includes *multiplicative-expression*, this does not imply that expressions using multiplication are required. See the syntax in [C Language Syntax Summary](../c-language/c-language-syntax-summary.md), for *multiplicative-expression*, *cast-expression*, and *unary-expression*.  

@@ -162,7 +162,7 @@ int main( void )
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
- [exp, expf](../../c-runtime-library/reference/exp-expf.md)   
+ [exp, expf, expl](../../c-runtime-library/reference/exp-expf.md)   
  [log, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md)   
  [sqrt, sqrtf, sqrtl](../../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)   
  [_CIpow](../../c-runtime-library/cipow.md)

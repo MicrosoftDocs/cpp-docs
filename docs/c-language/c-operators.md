@@ -46,18 +46,18 @@ The C operators are a subset of the [C++ built-in operators](../cpp/cpp-built-in
   
 |Symbol|Name|  
 |------------|----------|  
-|**– ~ !**|Negation and complement operators|  
+|**- ~ !**|Negation and complement operators|  
 |**\* &**|Indirection and address-of operators|  
 |`sizeof`|Size operator|  
 |**+**|Unary plus operator|  
-|**++ ––**|Unary increment and decrement operators|  
+|**++ --**|Unary increment and decrement operators|  
   
  Binary operators associate from left to right. C provides the following binary operators:  
   
 |Symbol|Name|  
 |------------|----------|  
 |**\* / %**|Multiplicative operators|  
-|**+ –**|Additive operators|  
+|**+ -**|Additive operators|  
 |**<\< >>**|Shift operators|  
 |**\<   >   \<=   >=   ==   !=**|Relational operators|  
 |**&   &#124; ^**|Bitwise operators|  
@@ -68,7 +68,7 @@ The C operators are a subset of the [C++ built-in operators](../cpp/cpp-built-in
   
  The conditional-expression operator has lower precedence than binary expressions and differs from them in being right associative.  
   
- Expressions with operators also include assignment expressions, which use unary or binary assignment operators. The unary assignment operators are the increment (`++`) and decrement (**––**) operators; the binary assignment operators are the simple-assignment operator (**=**) and the compound-assignment operators. Each compound-assignment operator is a combination of another binary operator with the simple-assignment operator.  
+ Expressions with operators also include assignment expressions, which use unary or binary assignment operators. The unary assignment operators are the increment (`++`) and decrement (**--**) operators; the binary assignment operators are the simple-assignment operator (**=**) and the compound-assignment operators. Each compound-assignment operator is a combination of another binary operator with the simple-assignment operator.  
   
 ## See Also  
  [Expressions and Assignments](../c-language/expressions-and-assignments.md)

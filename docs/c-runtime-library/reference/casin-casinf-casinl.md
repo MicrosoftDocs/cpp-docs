@@ -60,7 +60,7 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # casin, casinf, casinl
-Retrieves the arcsine of a complex number, with branch cuts outside the interval [−1, +1] along the real axis.  
+Retrieves the arcsine of a complex number, with branch cuts outside the interval [-1, +1] along the real axis.  
   
 ## Syntax  
   
@@ -87,7 +87,7 @@ _Lcomplex casinl(
  A complex number that represents an angle, in radians.  
   
 ## Return Value  
- The arcsine of `z`, in radians. The result is unbounded along the imaginary axis, and in the interval [−π/2, +π/2] along the real axis.  
+ The arcsine of `z`, in radians. The result is unbounded along the imaginary axis, and in the interval [-π/2, +π/2] along the real axis.  
   
 ## Remarks  
  Because C++ allows overloading, you can call overloads of `casin` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `casin` always takes and returns a `_Dcomplex` value.  

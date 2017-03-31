@@ -92,7 +92,7 @@ int _iswxdigit_l(
  Locale to use.  
   
 ## Return Value  
- Each of these routines returns nonzero if `c` is a particular representation of a hexadecimal digit. `isxdigit` returns a nonzero value if `c` is a hexadecimal digit (A – F, a – f, or 0 – 9). `iswxdigit` returns a nonzero value if `c` is a wide character that corresponds to a hexadecimal digit character. Each of these routines returns 0 if `c` does not satisfy the test condition.  
+ Each of these routines returns nonzero if `c` is a particular representation of a hexadecimal digit. `isxdigit` returns a nonzero value if `c` is a hexadecimal digit (A - F, a - f, or 0 - 9). `iswxdigit` returns a nonzero value if `c` is a wide character that corresponds to a hexadecimal digit character. Each of these routines returns 0 if `c` does not satisfy the test condition.  
   
  For the "C" locale, the `iswxdigit` function does not support Unicode full-width hexadecimal characters.  
   

@@ -86,7 +86,7 @@ int _ismbblead_l(
  Returns a nonzero value if the integer `c` is the first byte of a multibyte character.  
   
 ## Remarks  
- Multibyte characters consist of a lead byte followed by a trailing byte. Lead bytes are distinguished by being in a particular range for a given character set. For example, in code page 932 only, lead bytes range from 0x81 – 0x9F and 0xE0 – 0xFC.  
+ Multibyte characters consist of a lead byte followed by a trailing byte. Lead bytes are distinguished by being in a particular range for a given character set. For example, in code page 932 only, lead bytes range from 0x81 - 0x9F and 0xE0 - 0xFC.  
   
  `_ismbblead` uses the current locale for locale-dependent behavior. `_ismbblead_l` is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   

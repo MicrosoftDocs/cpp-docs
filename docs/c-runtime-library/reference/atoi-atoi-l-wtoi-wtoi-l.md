@@ -110,7 +110,7 @@ int _wtoi_l(
   
  [`whitespace`] [`sign`] [`digits`]]  
   
- A `whitespace` consists of space or tab characters, which are ignored; `sign` is either plus (+) or minus (–); and `digits` are one or more digits.  
+ A `whitespace` consists of space or tab characters, which are ignored; `sign` is either plus (+) or minus (-); and `digits` are one or more digits.  
   
  The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).  
   

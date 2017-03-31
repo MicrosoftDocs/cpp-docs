@@ -67,7 +67,7 @@ int _close(
  File descriptor referring to the open file.  
   
 ## Return Value  
- `_close` returns 0 if the file was successfully closed. A return value of –1 indicates an error.  
+ `_close` returns 0 if the file was successfully closed. A return value of -1 indicates an error.  
   
 ## Remarks  
  The `_close` function closes the file associated with `fd`.  

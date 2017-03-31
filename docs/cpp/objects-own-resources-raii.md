@@ -38,23 +38,21 @@ Make sure that objects own resources. This principle is also known as “resourc
   
 ```cpp  
 void f() {  
-  unique_ptr<widget> p( new widget(…) );  
-  my_class x( new widget() );  
-  …  
+    unique_ptr<widget> p( new widget() );  
+    my_class x( new widget() );  
+    // ...  
 } // automatic destruction and deallocation for both widget objects  
-  // automatic exception safety, as if “finally { p->dispose(); x.w.dispose(); }”  
-  
+  // automatic exception safety, as if "finally { p->dispose(); x.w.dispose(); }"  
 ```  
   
  Always immediately pass any new resource to another object that owns it.  
   
 ```cpp  
 void g() {  
-  other_class y( OpenFile() );  
-  …  
+    other_class y( OpenFile() );  
+    // ...  
 } // automatic closing and release for file resource  
-  // automatic exception safety, as if “finally { y.file.dispose(); }”  
-  
+  // automatic exception safety, as if "finally { y.file.dispose(); }"  
 ```  
   
 ## See Also  

@@ -116,7 +116,7 @@ long double tanhl(
  Angle in radians.  
   
 ## Return Value  
- The `tan` functions return the tangent of `x`. If `x` is greater than or equal to 263, or less than or equal to –263, a loss of significance in the result occurs.  
+ The `tan` functions return the tangent of `x`. If `x` is greater than or equal to 263, or less than or equal to -263, a loss of significance in the result occurs.  
   
  The `tanh` functions return the hyperbolic tangent of `x`. There is no error return.  
   

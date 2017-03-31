@@ -81,7 +81,7 @@ int _pipe(
  File mode.  
   
 ## Return Value  
- Returns 0 if successful. Returns –1 to indicate an error. On error, `errno` is set to one of these values:  
+ Returns 0 if successful. Returns -1 to indicate an error. On error, `errno` is set to one of these values:  
   
 -   `EMFILE`, which indicates that no more file descriptors are available.  
   

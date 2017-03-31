@@ -83,7 +83,7 @@ int main()
 long nBytes = BufferedOutput::bytecount;  
 ```  
   
- For the static member to exist, it is not necessary that any objects of the class type exist. Static members can also be accessed using the member-selection (**.** and **–>**) operators. For example:  
+ For the static member to exist, it is not necessary that any objects of the class type exist. Static members can also be accessed using the member-selection (**.** and **->**) operators. For example:  
   
 ```  
 BufferedOutput Console;  

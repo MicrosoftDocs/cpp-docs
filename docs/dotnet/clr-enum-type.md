@@ -96,7 +96,7 @@ int main()
 }  
 ```  
   
- For the native C++ programmer, the natural answer to the question of which instance of the overloaded `f()` is invoked is that of `f(int)`. An enum is a symbolic integral constant, and it participates in the standard integral promotions which take precedence in this case.  And in fact in Managed Extensions this was the instance to which the call resolves. This caused a number of surprises – not when we used them in a native C++ frame of mind – but when we needed them to interact with the existing BCL (Base Class Library) framework, where an `Enum` is a class indirectly derived from `Object`. In the [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)] language design, the instance of `f()` invoked is that of `f(Object^)`.  
+ For the native C++ programmer, the natural answer to the question of which instance of the overloaded `f()` is invoked is that of `f(int)`. An enum is a symbolic integral constant, and it participates in the standard integral promotions which take precedence in this case.  And in fact in Managed Extensions this was the instance to which the call resolves. This caused a number of surprises - not when we used them in a native C++ frame of mind - but when we needed them to interact with the existing BCL (Base Class Library) framework, where an `Enum` is a class indirectly derived from `Object`. In the [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)] language design, the instance of `f()` invoked is that of `f(Object^)`.  
   
  The way [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)] has chosen to enforce this is to not support implicit conversions between a CLR enum type and the arithmetic types. This means that any assignment of an object of a CLR enum type to an arithmetic type will require an explicit cast. So, for example, given  
   
@@ -143,7 +143,7 @@ public:
    XDCMake() {  
       optionList = new ListDictionary;  
   
-      // here are the problems …  
+      // here are the problems...  
       optionList->Add(S"?", __box(OPTION_USAGE)); // (1)  
       optionList->Add(S"help", __box(OPTION_USAGE)); // (2)  
   

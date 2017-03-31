@@ -35,9 +35,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Compiler Warning (level 3) C4280
-'operator –>' was self recursive through type 'type'  
+'operator ->' was self recursive through type 'type'  
   
- Your code incorrectly allows **operator–>** to call itself.  
+ Your code incorrectly allows **operator->** to call itself.  
   
  The following sample generates C4280:  
   

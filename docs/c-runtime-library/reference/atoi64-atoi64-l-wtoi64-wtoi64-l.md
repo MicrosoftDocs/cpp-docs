@@ -122,7 +122,7 @@ __int64 _wtoi64_l(
 [whitespace] [sign] [digits]]  
 ```  
   
- A `whitespace` consists of space or tab characters, which are ignored; `sign` is either plus (+) or minus (–); and `digits` are one or more digits.  
+ A `whitespace` consists of space or tab characters, which are ignored; `sign` is either plus (+) or minus (-); and `digits` are one or more digits.  
   
  `_wtoi64` is identical to `_atoi64` except that it takes a wide character string as a parameter.  
   

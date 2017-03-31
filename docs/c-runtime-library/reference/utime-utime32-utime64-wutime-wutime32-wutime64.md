@@ -126,7 +126,7 @@ int _wutime64(
  Pointer to stored time values.  
   
 ## Return Value  
- Each of these functions returns 0 if the file-modification time was changed. A return value of –1 indicates an error. If an invalid parameter is passed, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and `errno` is set to one of the following values:  
+ Each of these functions returns 0 if the file-modification time was changed. A return value of -1 indicates an error. If an invalid parameter is passed, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and `errno` is set to one of the following values:  
   
  `EACCES`  
  Path specifies directory or read-only file  

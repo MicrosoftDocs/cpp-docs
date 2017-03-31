@@ -87,7 +87,7 @@ _Lcomplex clogl(
  The base of the logarithm.  
   
 ## Return Value  
- The natural logarithm of `z`. The result is unbounded along the real axis and in the interval [−iπ, +iπ] along the imaginary axis.  
+ The natural logarithm of `z`. The result is unbounded along the real axis and in the interval [-iπ, +iπ] along the imaginary axis.  
   
  The possible return values are:  
   

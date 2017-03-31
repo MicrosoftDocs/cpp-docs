@@ -98,7 +98,7 @@ HRESULT Open(
 |If|Then|  
 |--------|----------|  
 |The **cParamSets** element of `pParams` is greater than 1|*`pRowsAffected` represents the total number of rows affected by all of the parameter sets specified in the execution.|  
-|The number of affected rows is not available|*`pRowsAffected` is set to –1.|  
+|The number of affected rows is not available|*`pRowsAffected` is set to -1.|  
 |The command does not update, delete, or insert rows|*`pRowsAffected` is undefined.|  
   
  `guidCommand`  

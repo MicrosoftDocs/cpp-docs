@@ -79,7 +79,7 @@ int _wchdir(
  Path of new working directory.  
   
 ## Return Value  
- These functions return a value of 0 if successful. A return value of –1 indicates failure. If the specified path could not be found, `errno` is set to `ENOENT`. If `dirname` is NULL, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns -1.  
+ These functions return a value of 0 if successful. A return value of -1 indicates failure. If the specified path could not be found, `errno` is set to `ENOENT`. If `dirname` is NULL, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns -1.  
   
 ## Remarks  
  The `_chdir` function changes the current working directory to the directory specified by `dirname`. The `dirname` parameter must refer to an existing directory. This function can change the current working directory on any drive. If a new drive letter is specified in `dirname`, the default drive letter is changed as well. For example, if A is the default drive letter and \BIN is the current working directory, the following call changes the current working directory for drive C and establishes C as the new default drive:  

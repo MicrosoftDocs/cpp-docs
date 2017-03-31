@@ -87,7 +87,7 @@ _Lcomplex cacoshl(
  A complex number that represents an angle, in radians.  
   
 ## Return Value  
- The inverse hyperbolic cosine of `z`, in radians. The result is unbounded and non-negative along the real axis, and  in the interval [−iπ, +iπ] along the imaginary axis.  
+ The inverse hyperbolic cosine of `z`, in radians. The result is unbounded and non-negative along the real axis, and  in the interval [-iπ, +iπ] along the imaginary axis.  
   
 ## Remarks  
  Because C++ allows overloading, you can call overloads of `cacosh` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `cacosh` always takes and returns a `_Dcomplex` value.  

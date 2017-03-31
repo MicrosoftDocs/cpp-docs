@@ -39,7 +39,7 @@ translation.priority.ht:
   
  The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
   
- Initialization of global per–application domain variable requires the CRT compiled with `/clr:pure`, which does not produce a verifiable image.  
+ Initialization of global per-application domain variable requires the CRT compiled with `/clr:pure`, which does not produce a verifiable image.  
   
  For more information, see [appdomain](../../cpp/appdomain.md) and [process](../../cpp/process.md).  
   

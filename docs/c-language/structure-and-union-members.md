@@ -48,7 +48,7 @@ postfix-expression
 .  
 identifier  
 postfix-expression  
-–>  
+->  
 identifier  
   
 ```  
@@ -61,12 +61,12 @@ identifier
   
  The two forms of member-selection expressions have similar effects.  
   
- In fact, an expression involving the member-selection operator (**–>**) is a shorthand version of an expression using the period (**.**) if the expression before the period consists of the indirection operator (**\***) applied to a pointer value. Therefore,  
+ In fact, an expression involving the member-selection operator (**->**) is a shorthand version of an expression using the period (**.**) if the expression before the period consists of the indirection operator (**\***) applied to a pointer value. Therefore,  
   
 ```  
   
 expression  
-–>  
+->  
 identifier  
   
 ```  
@@ -105,10 +105,10 @@ item.sp = &item;
  In the example above, the address of the `item` structure is assigned to the `sp` member of the structure. This means that `item` contains a pointer to itself.  
   
 ```  
-(item.sp)–>a = 24;  
+(item.sp)->a = 24;  
 ```  
   
- In this example, the pointer expression `item.sp` is used with the member-selection operator (**–>**) to assign a value to the member `a`.  
+ In this example, the pointer expression `item.sp` is used with the member-selection operator (**->**) to assign a value to the member `a`.  
   
 ```  
 list[8].b = 12;  

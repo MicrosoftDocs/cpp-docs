@@ -35,6 +35,6 @@ An implementation of the OpenMP C/C++ API is *OpenMP-compliant* if it recognizes
   
  The OpenMP C and C++ API is an extension to the base language that is supported by an implementation. If the base language does not support a language construct or extension that appears in this document, the OpenMP implementation is not required to support it.  
   
- All standard C and C++ library functions and built-in functions (that is, functions of which the compiler has specific knowledge) must be thread-safe. Unsynchronized use of thread–safe functions by different threads inside a parallel region does not produce undefined behavior. However, the behavior might not be the same as in a serial region. (A random number generation function is an example.)  
+ All standard C and C++ library functions and built-in functions (that is, functions of which the compiler has specific knowledge) must be thread-safe. Unsynchronized use of thread-safe functions by different threads inside a parallel region does not produce undefined behavior. However, the behavior might not be the same as in a serial region. (A random number generation function is an example.)  
   
  The OpenMP C/C++ API specifies that certain behavior is *implementation-defined.* A conforming OpenMP implementation is required to define and document its behavior in these cases. See [Appendix E](../../parallel/openmp/e-implementation-defined-behaviors-in-openmp-c-cpp.md), page 97, for a list of implementation-defined behaviors.

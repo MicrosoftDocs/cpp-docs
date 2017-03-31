@@ -486,7 +486,7 @@ UINT EnableMenuItem(
 - **MF_GRAYED** Disables the menu item so that it cannot be selected and dims it.  
   
 ### Return Value  
- Previous state ( **MF_DISABLED**, `MF_ENABLED`, or **MF_GRAYED**) or –1 if not valid.  
+ Previous state ( **MF_DISABLED**, `MF_ENABLED`, or **MF_GRAYED**) or -1 if not valid.  
   
 ### Remarks  
  The [CreateMenu](#createmenu), [InsertMenu](#insertmenu), [ModifyMenu](#modifymenu), and [LoadMenuIndirect](#loadmenuindirect) member functions can also set the state (enabled, disabled, or dimmed) of a menu item.  
@@ -588,7 +588,7 @@ UINT GetMenuItemCount() const;
 ```  
   
 ### Return Value  
- The number of items in the menu if the function is successful; otherwise –1.  
+ The number of items in the menu if the function is successful; otherwise -1.  
   
 ### Example  
   See the example for [CWnd::GetMenu](../../mfc/reference/cwnd-class.md#getmenu).  
@@ -605,7 +605,7 @@ UINT GetMenuItemID(int nPos) const;
  Specifies the position (zero-based) of the menu item whose ID is being retrieved.  
   
 ### Return Value  
- The item ID for the specified item in a pop-up menu if the function is successful. If the specified item is a pop-up menu (as opposed to an item within the pop-up menu), the return value is –1. If `nPos` corresponds to a **SEPARATOR** menu item, the return value is 0.  
+ The item ID for the specified item in a pop-up menu if the function is successful. If the specified item is a pop-up menu (as opposed to an item within the pop-up menu), the return value is -1. If `nPos` corresponds to a **SEPARATOR** menu item, the return value is 0.  
   
 ### Example  
   See the example for [CMenu::InsertMenu](#insertmenu).  
@@ -779,7 +779,7 @@ BOOL InsertMenu(
 |nFlags|Interpretation of nPosition|  
 |------------|---------------------------------|  
 |**MF_BYCOMMAND**|Specifies that the parameter gives the command ID of the existing menu item. This is the default if neither **MF_BYCOMMAND** nor **MF_BYPOSITION** is set.|  
-|**MF_BYPOSITION**|Specifies that the parameter gives the position of the existing menu item. The first item is at position 0. If `nPosition` is –1, the new menu item is appended to the end of the menu.|  
+|**MF_BYPOSITION**|Specifies that the parameter gives the position of the existing menu item. The first item is at position 0. If `nPosition` is -1, the new menu item is appended to the end of the menu.|  
   
  `nFlags`  
  Specifies how `nPosition` is interpreted and specifies information about the state of the new menu item when it is added to the menu. For a list of the flags that may be set, see the [AppendMenu](#appendmenu) member function. To specify more than one value, use the bitwise OR operator to combine them with the **MF_BYCOMMAND** or **MF_BYPOSITION** flag.  
@@ -842,7 +842,8 @@ BOOL InsertMenuItem(
   
 ```  
 BOOL LoadMenu(LPCTSTR lpszResourceName);  
-BOOL LoadMenu(UINT nIDResource);```  
+BOOL LoadMenu(UINT nIDResource);
+```  
   
 ### Parameters  
  `lpszResourceName`  

@@ -36,7 +36,7 @@ translation.priority.ht:
 # Signed Bitwise Operations
 **ANSI 3.3** The results of bitwise operations on signed integers  
   
- Bitwise operations on signed integers work the same as bitwise operations on unsigned integers. For example, `–16 & 99` can be expressed in binary as  
+ Bitwise operations on signed integers work the same as bitwise operations on unsigned integers. For example, `-16 & 99` can be expressed in binary as  
   
 ```  
   11111111 11110000  

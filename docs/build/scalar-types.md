@@ -34,15 +34,15 @@ translation.priority.mt:
 # Scalar Types
 Although the access of data can stem from any alignment, it is recommended that data be aligned on its natural boundary to avoid performance loss (or a multiple thereof). Enums are constant integers and are treated as 32-bit integers. The following table describes the type definition and recommended storage for it as it pertains to alignment using the following alignment values:  
   
--   Byte – 8 bits  
+-   Byte - 8 bits  
   
--   Word – 16 bits  
+-   Word - 16 bits  
   
--   Double Word – 32 bits  
+-   Double Word - 32 bits  
   
--   Quad Word – 64 bits  
+-   Quad Word - 64 bits  
   
--   Octa Word – 128 bits  
+-   Octa Word - 128 bits  
   
 |||||  
 |-|-|-|-|  
