@@ -45,7 +45,7 @@ template<class _BidIt> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `reverse`. For more information, see [reverse](http://msdn.microsoft.com/Library/824d7107-6cff-40d3-8875-e07a6fc4f16e).  
+ This function behaves the same as the C++ Standard Library function `reverse`. For more information, see [reverse](../standard-library/algorithm-functions.md#reverse).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

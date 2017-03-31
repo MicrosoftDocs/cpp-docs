@@ -299,7 +299,7 @@ BOOL CheckMenuRadioItem(
  At the same time, the function unchecks all other menu items in the associated group and clears the radio-item type flag for those items. The checked item is displayed using a radio button (or bullet) bitmap instead of a check mark bitmap.  
   
 ### Example  
-  See the example for [ON_COMMAND_RANGE](http://msdn.microsoft.com/library/c52719fc-dd6e-48c9-af79-383f48d608e0).  
+  See the example for [ON_COMMAND_RANGE](message-map-macros-mfc.md#on_command_range).  
   
 ##  <a name="cmenu"></a>  CMenu::CMenu  
  Creates an empty menu and attaches it to a `CMenu` object.  

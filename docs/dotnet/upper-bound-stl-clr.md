@@ -48,7 +48,7 @@ template<class _FwdIt, class _Ty, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `upper_bound`. For more information, see [upper_bound](http://msdn.microsoft.com/Library/dc465786-0704-42b4-af2a-3fabc917c928).  
+ This function behaves the same as the C++ Standard Library function `upper_bound`. For more information, see [upper_bound](../standard-library/algorithm-functions.md#upper_bound).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

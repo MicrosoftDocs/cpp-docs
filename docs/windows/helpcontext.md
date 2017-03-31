@@ -76,5 +76,4 @@ Specifies a context ID that lets the user view information about this element in
  [Method Attributes](../windows/method-attributes.md)   
  [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
  [helpfile](../windows/helpfile.md)   
- [helpstring](../windows/helpstring.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [helpstring](../windows/helpstring.md)   

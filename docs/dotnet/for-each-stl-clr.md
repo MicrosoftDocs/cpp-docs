@@ -45,7 +45,7 @@ template<class _InIt, class _Fn1> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `for_each`. For more information, see [for_each](http://msdn.microsoft.com/Library/8cb2ae72-bef6-488b-b011-0475c0787e33).  
+ This function behaves the same as the C++ Standard Library function `for_each`. For more information, see [for_each](../standard-library/algorithm-functions.md#for_each).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

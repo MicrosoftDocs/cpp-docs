@@ -69,5 +69,4 @@ Designates the parameter that receives the return value of the member.
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
  [Parameter Attributes](../windows/parameter-attributes.md)   
- [Method Attributes](../windows/method-attributes.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [Method Attributes](../windows/method-attributes.md)   

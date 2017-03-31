@@ -42,7 +42,7 @@ translation.priority.ht:
 # Multithreading: Creating User-Interface Threads
 A user-interface thread is commonly used to handle user input and respond to user events independently of threads executing other portions of the application. The main application thread (provided in your `CWinApp`-derived class) is already created and started for you. This topic describes the steps necessary to create additional user-interface threads.  
   
- The first thing you must do when creating a user-interface thread is derive a class from [CWinThread](../mfc/reference/cwinthread-class.md). You must declare and implement this class, using the [DECLARE_DYNCREATE](http://msdn.microsoft.com/library/f550e757-9dec-4875-b13f-841a982f5314) and [IMPLEMENT_DYNCREATE](http://msdn.microsoft.com/library/89ebcfa1-cc4d-49eb-a09b-8618f44f5e98) macros. This class must override some functions and can override others. These functions and what they should do are presented in the following table.  
+ The first thing you must do when creating a user-interface thread is derive a class from [CWinThread](../mfc/reference/cwinthread-class.md). You must declare and implement this class, using the [DECLARE_DYNCREATE](../mfc/reference/run-time-object-model-services.md#declare_dyncreate) and [IMPLEMENT_DYNCREATE](../mfc/reference/run-time-object-model-services.md#implement_dyncreate) macros. This class must override some functions and can override others. These functions and what they should do are presented in the following table.  
   
 ### Functions to Override When Creating a User-Interface Thread  
   
@@ -57,9 +57,9 @@ A user-interface thread is commonly used to handle user input and respond to use
 |[Run](../mfc/reference/cwinthread-class.md#run)|Controlling function for the thread. Contains the message pump. Rarely overridden.|  
 
   
- MFC provides two versions of `AfxBeginThread` through parameter overloading: one that can only create worker threads and one that can create user-interface threads or worker threads. To start your user-interface thread, call the second overload of [AfxBeginThread](http://msdn.microsoft.com/library/e9e8684d-24f7-4599-8fdf-1f4f560a753b), providing the following information:  
+ MFC provides two versions of `AfxBeginThread` through parameter overloading: one that can only create worker threads and one that can create user-interface threads or worker threads. To start your user-interface thread, call the second overload of [AfxBeginThread](../mfc/reference/application-information-and-management.md#afxbeginthread), providing the following information:  
   
--   The [RUNTIME_CLASS](http://msdn.microsoft.com/library/98cbea2a-a210-44f3-8bc0-0bed990d7014) of the class you derived from `CWinThread`.  
+-   The [RUNTIME_CLASS](../mfc/reference/run-time-object-model-services.md#runtime_class) of the class you derived from `CWinThread`.  
   
 -   (Optional) The desired priority level. The default is normal priority. For more information about the available priority levels, see [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) in the [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
   

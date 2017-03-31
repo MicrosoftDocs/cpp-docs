@@ -70,5 +70,4 @@ Indicates a property that should be displayed to the user as bindable.
  [Data Member Attributes](../windows/data-member-attributes.md)   
  [defaultbind](../windows/defaultbind.md)   
  [immediatebind](../windows/immediatebind.md)   
- [requestedit](../windows/requestedit.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [requestedit](../windows/requestedit.md)   

@@ -47,7 +47,7 @@ template<class _RanIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `sort`. For more information, see [sort](http://msdn.microsoft.com/Library/9b0a4fc1-5131-4c73-9c2e-d72211f2d0ae).  
+ This function behaves the same as the C++ Standard Library function `sort`. For more information, see [sort](../mfc/reference/cmfclistctrl-class.md#sort).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

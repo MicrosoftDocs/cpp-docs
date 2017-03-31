@@ -35,7 +35,7 @@ These macros provide string conversion features.
   
 |||  
 |-|-|  
-|[ATL and MFC String Conversion Macros](http://msdn.microsoft.com/library/8f53659e-0464-4424-97db-6b8453c49863)|Set of macros that convert between string types.|  
+|[ATL and MFC String Conversion Macros](string-conversion-macros.md)|Set of macros that convert between string types.|  
 |[DEVMODE and TEXTMETRIC String Conversion Macros](http://msdn.microsoft.com/library/85cebec0-2a18-48e5-9c1c-99d5b7f15425)|Set of macros that convert the strings within `DEVMODE` and `TEXTMETRIC` structures.|  
   
 ##  <a name="atl_and_mfc_string_conversion_macros"></a>  ATL and MFC String Conversion Macros  

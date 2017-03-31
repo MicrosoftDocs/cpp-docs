@@ -49,7 +49,7 @@ When you begin a new project, depending on the project type, some symbol IDs are
     > [!NOTE]
     >  Predefined symbols are always read-only.  
   
- For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+
   
 ## Requirements  
  Win32, MFC, or ATL  

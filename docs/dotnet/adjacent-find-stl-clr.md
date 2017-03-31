@@ -47,7 +47,7 @@ template<class _FwdIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `adjacent_find`. For more information, see [adjacent_find](http://msdn.microsoft.com/Library/81efd39c-ff0e-476a-9a72-740ea788d966).  
+ This function behaves the same as the C++ Standard Library function `adjacent_find`. For more information, see [adjacent_find](../standard-library/algorithm-functions.md#adjacent_find).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

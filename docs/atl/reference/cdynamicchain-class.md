@@ -69,7 +69,7 @@ class CDynamicChain
   
  To add support for dynamic chaining of message maps, do the following:  
   
--   Derive your class from `CDynamicChain`. In the message map, specify the [CHAIN_MSG_MAP_DYNAMIC](http://msdn.microsoft.com/library/7e5c72b7-cb31-4f3b-8a1b-6293804af220) macro to chain to another object's default message map.  
+-   Derive your class from `CDynamicChain`. In the message map, specify the [CHAIN_MSG_MAP_DYNAMIC](message-map-macros-atl.md#chain_msg_map_dynamic) macro to chain to another object's default message map.  
   
 -   Derive every class you want to chain to from [CMessageMap](../../atl/reference/cmessagemap-class.md). `CMessageMap` allows an object to expose its message maps to other objects.  
   
@@ -126,7 +126,7 @@ BOOL CallChain(
  **TRUE** if the message is fully processed; otherwise, **FALSE**.  
   
 ### Remarks  
- For the window procedure to invoke `CallChain`, you must specify the [CHAIN_MSG_MAP_DYNAMIC](http://msdn.microsoft.com/library/7e5c72b7-cb31-4f3b-8a1b-6293804af220) macro in your message map. For an example, see the [CDynamicChain](../../atl/reference/cdynamicchain-class.md) overview.  
+ For the window procedure to invoke `CallChain`, you must specify the [CHAIN_MSG_MAP_DYNAMIC](message-map-macros-atl.md#chain_msg_map_dynamic) macro in your message map. For an example, see the [CDynamicChain](../../atl/reference/cdynamicchain-class.md) overview.  
   
  `CallChain` requires a previous call to [SetChainEntry](#setchainentry) to associate the `dwChainID` value with an object and its message map.  
   
@@ -179,7 +179,7 @@ BOOL SetChainEntry(
  [in] A pointer to the chained object declaring the message map. This object must derive from [CMessageMap](../../atl/reference/cmessagemap-class.md).  
   
  `dwMsgMapID`  
- [in] The identifier of the message map in the chained object. The default value is 0, which identifies the default message map declared with [BEGIN_MSG_MAP](http://msdn.microsoft.com/library/8bbb5af9-18b1-48c6-880e-166f599ee554). To specify an alternate message map declared with [ALT_MSG_MAP(msgMapID)](http://msdn.microsoft.com/library/2c8871bf-abc0-4d52-bcf7-6b2ab9eb5af8), pass `msgMapID`.  
+ [in] The identifier of the message map in the chained object. The default value is 0, which identifies the default message map declared with [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map). To specify an alternate message map declared with [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map), pass `msgMapID`.  
   
 ### Return Value  
  **TRUE** if the message map is successfully added to the collection. Otherwise, **FALSE**.  

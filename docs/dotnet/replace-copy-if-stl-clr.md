@@ -46,7 +46,7 @@ template<class _InIt, class _OutIt, class _Pr, class _Ty> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `replace_copy_if`. For more information, see [replace_copy_if](http://msdn.microsoft.com/Library/3541f157-b8e0-4f83-bfdf-3e786ed26a3b).  
+ This function behaves the same as the C++ Standard Library function `replace_copy_if`. For more information, see [replace_copy_if](../standard-library/algorithm-functions.md#replace_copy_if).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

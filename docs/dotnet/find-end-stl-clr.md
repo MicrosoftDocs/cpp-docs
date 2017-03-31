@@ -49,7 +49,7 @@ template<class _FwdIt1, class _FwdIt2, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `find_end`. For more information, see [find_end](http://msdn.microsoft.com/Library/831c0501-75d0-4ed8-9519-9b8c1dfef98a).  
+ This function behaves the same as the C++ Standard Library function `find_end`. For more information, see [find_end](../standard-library/algorithm-functions.md#find_end).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

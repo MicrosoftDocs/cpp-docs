@@ -42,7 +42,7 @@ When you create a new skeleton application with the Application Wizard, the Appl
   
  [!code-cpp[NVC_MFCMessageHandling#1](../mfc/codesnippet/cpp/where-to-find-message-maps_1.cpp)]  
   
- The message map consists of a collection of macros. Two macros, [BEGIN_MESSAGE_MAP](http://msdn.microsoft.com/library/d9201e18-04e0-4639-9810-f15768627fc2) and [END_MESSAGE_MAP](http://msdn.microsoft.com/library/40f611f1-a3b4-4097-b683-091bf7cfab8b), bracket the message map. Other macros, such as `ON_COMMAND`, fill in the message map's contents.  
+ The message map consists of a collection of macros. Two macros, [BEGIN_MESSAGE_MAP](reference/message-map-macros-mfc.md#begin_message_map) and [END_MESSAGE_MAP](reference/message-map-macros-mfc.md#end_message_map), bracket the message map. Other macros, such as `ON_COMMAND`, fill in the message map's contents.  
   
 > [!NOTE]
 >  The message-map macros are not followed by semicolons.  

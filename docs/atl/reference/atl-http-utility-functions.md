@@ -51,7 +51,15 @@ inline BOOL AtlCanonicalizeUrl(
  Pointer to a variable that contains the length in characters of `szCanonicalized`. If the function succeeds, the variable receives the number of characters written to the buffer not including the terminating null character. If the function fails, the variable receives the required length in bytes of the buffer including space for the terminating null character.  
   
  `dwFlags`  
- Flags controlling the behavior of this function. See [ATL_URL Flags](http://msdn.microsoft.com/library/76e8cc5c-4e17-4eb1-ac29-a94d5256c4a7).  
+ ATL_URL flags controlling the behavior of this function. 
+
+- `ATL_URL_BROWSER_MODE` Does not encode or decode characters after "#" or "?", and does not remove trailing white space after "?". If this value is not specified, the entire URL is encoded and trailing white space is removed.
+- `ATL_URL_DECODE` Converts all %XX sequences to characters, including escape sequences, before the URL is parsed.
+- `ATL_URL_ENCODE_PERCENT` Encodes any percent signs encountered. By default, percent signs are not encoded.
+- `ATL_URL_ENCODE_SPACES_ONLY` Encodes spaces only.
+- `ATL_URL_ESCAPE` Converts all escape sequences (%XX) to their corresponding characters.
+- `ATL_URL_NO_ENCODE` Does not convert unsafe characters to escape sequences.
+- `ATL_URL_NO_META` Does not remove meta sequences (such as "." and "..") from the URL. 
   
 ### Return Value  
  Returns **TRUE** on success, **FALSE** on failure.  
@@ -129,7 +137,7 @@ inline BOOL AtlEscapeUrl(
  The size of the buffer `lpszStringOut`.  
   
  `dwFlags`  
- Flags controlling the behavior of this function. See [ATL_URL Flags](http://msdn.microsoft.com/library/76e8cc5c-4e17-4eb1-ac29-a94d5256c4a7).  
+ ATL_URL flags controlling the behavior of this function. See [ATLCanonicalizeUrl](#atlcanonicalizeurl) for possible values.  
   
 ### Return Value  
  Returns **TRUE** on success, **FALSE** on failure.  

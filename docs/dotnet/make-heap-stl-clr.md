@@ -47,7 +47,7 @@ template<class _RanIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `make_heap`. For more information, see [make_heap](http://msdn.microsoft.com/Library/b09f795c-f368-4aa8-b57e-61ee6100ddc2).  
+ This function behaves the same as the C++ Standard Library function `make_heap`. For more information, see [make_heap](../standard-library/algorithm-functions.md#make_heap).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

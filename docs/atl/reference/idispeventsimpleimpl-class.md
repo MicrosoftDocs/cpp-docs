@@ -74,9 +74,9 @@ class ATL_NO_VTABLE IDispEventSimpleImpl : public _IDispEventLocator<nID, pdiid>
 ## Remarks  
  `IDispEventSimpleImpl` provides a way of implementing an event dispinterface without requiring you to supply implementation code for every method/event on that interface. `IDispEventSimpleImpl` provides implementations of the `IDispatch` methods. You only need to supply implementations for the events that you are interested in handling.  
   
- `IDispEventSimpleImpl` works in conjunction with the [event sink map](http://msdn.microsoft.com/library/32542b3d-ac43-4139-8ac4-41c48481744f) in your class to route events to the appropriate handler function. To use this class:  
+ `IDispEventSimpleImpl` works in conjunction with the event sink map in your class to route events to the appropriate handler function. To use this class:  
   
--   Add a [SINK_ENTRY_INFO](http://msdn.microsoft.com/library/1a0ae260-2c82-4926-a537-db01e5f206a7) macro to the event sink map for each event on each object that you want to handle.  
+-   Add a [SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info) macro to the event sink map for each event on each object that you want to handle.  
   
 -   Supply type information for each event by passing a pointer to an [_ATL_FUNC_INFO](../../atl/reference/atl-func-info-structure.md) structure as a parameter to each entry. On the x86 platform, the `_ATL_FUNC_INFO.cc` value must be CC_CDECL with the callback function calling method of __stdcall.  
   
@@ -125,7 +125,7 @@ HRESULT Advise(IUnknown* pUnk);
 > [!NOTE]
 >  If your class derives from multiple `IDispEventSimpleImpl` classes, you will need to disambiguate calls to this method by scoping the call with the particular base class you are interested in.  
   
- `Advise` establishes a connection with the default event source, it gets the IID of the default event source of the object as determined by [AtlGetObjectSourceInterface](http://msdn.microsoft.com/library/a8528f45-fbfb-4e24-ad1a-1d69b2897155).  
+ `Advise` establishes a connection with the default event source, it gets the IID of the default event source of the object as determined by [AtlGetObjectSourceInterface](composite-control-global-functions.md#atlgetobjectsourceinterface).  
   
 ##  <a name="dispeventadvise"></a>  IDispEventSimpleImpl::DispEventAdvise  
  Call this method to establish a connection with the event source represented by *pUnk*.  
@@ -255,11 +255,11 @@ HRESULT Unadvise(IUnknown* pUnk);
   
  `Unadvise` breaks a connection that was established with the default event source specified in `pdiid`.  
   
- **Unavise** breaks a connection with the default event source, it gets the IID of the default event source of the object as determined by [AtlGetObjectSourceInterface](http://msdn.microsoft.com/library/a8528f45-fbfb-4e24-ad1a-1d69b2897155).  
+ **Unavise** breaks a connection with the default event source, it gets the IID of the default event source of the object as determined by [AtlGetObjectSourceInterface](composite-control-global-functions.md#atlgetobjectsourceinterface).  
   
 ## See Also  
  [_ATL_FUNC_INFO Structure](../../atl/reference/atl-func-info-structure.md)   
  [IDispatchImpl Class](../../atl/reference/idispatchimpl-class.md)   
  [IDispEventImpl Class](../../atl/reference/idispeventimpl-class.md)   
- [SINK_ENTRY_INFO](http://msdn.microsoft.com/library/1a0ae260-2c82-4926-a537-db01e5f206a7)   
+ [SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info)   
  [Class Overview](../../atl/atl-class-overview.md)

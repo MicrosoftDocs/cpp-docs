@@ -110,15 +110,7 @@ ATL provides code for manipulating paths and URLs in the form of [CPathT](../atl
 |[ATLPath::StripToRoot](../atl/reference/atl-path-functions.md#striptoroot)|This function is an overloaded wrapper for [PathStripToRoot](http://msdn.microsoft.com/library/windows/desktop/bb773757).|  
 |[ATLPath::UnquoteSpaces](../atl/reference/atl-path-functions.md#unquotespaces)|This function is an overloaded wrapper for [PathUnquoteSpaces](http://msdn.microsoft.com/library/windows/desktop/bb773763).|  
   
-### Macros  
-  
-|||  
-|-|-|  
-|[ATL_URL Flags](http://msdn.microsoft.com/library/76e8cc5c-4e17-4eb1-ac29-a94d5256c4a7)|These flags modify the behavior of [AtlEscapeUrl](http://msdn.microsoft.com/library/e4413300-dd10-43ad-9eaf-772e58398316) and [AtlCanonicalizeUrl](http://msdn.microsoft.com/library/80015d95-081d-4bbb-a176-77670cdb16e8) .|  
-|[ATL_WORKER_THREAD_WAIT](http://msdn.microsoft.com/library/4d209004-47f4-4c6a-98b4-aee49ffb0911)|This macro defines the default value in milliseconds that [CWorkerThread::Shutdown](../atl/reference/cworkerthread-class.md#shutdown) will wait for the worker thread to shut down.|  
-|[ATLS_DEFAULT_THREADPOOLSHUTDOWNTIMEOUT](http://msdn.microsoft.com/library/c1e660a7-d490-42af-bbe1-ded76e80cc10)|This macro defines the default time in milliseconds that [CThreadPool](../atl/reference/cthreadpool-class.md) will wait for a thread to shut down.|  
-|[ATLS_DEFAULT_THREADSPERPROC](http://msdn.microsoft.com/library/e0dcf107-72a9-4122-abb4-83c63aa7d571)|This macro defines the default number of threads per processor used by [CThreadPool](../atl/reference/cthreadpool-class.md).|  
-  
+
 ## See Also  
  [Concepts](../atl/active-template-library-atl-concepts.md)   
  [ATL COM Desktop Components](../atl/atl-com-desktop-components.md)

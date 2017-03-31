@@ -48,7 +48,7 @@ template<class _BidIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `inplace_merge` For more information, see [inplace_merge](http://msdn.microsoft.com/Library/a3a7d861-2b47-4b0c-a2ac-df805c813437).  
+ This function behaves the same as the C++ Standard Library function `inplace_merge` For more information, see [inplace_merge](../standard-library/algorithm-functions.md#inplace_merge).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

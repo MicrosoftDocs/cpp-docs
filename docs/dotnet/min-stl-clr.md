@@ -47,7 +47,7 @@ template<class _Ty, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `min`. For more information, see [min](http://msdn.microsoft.com/Library/636d6d14-3957-43c0-a197-653afa45e2d7).  
+ This function behaves the same as the C++ Standard Library function `min`. For more information, see [min](../standard-library/algorithm-functions.md#min).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

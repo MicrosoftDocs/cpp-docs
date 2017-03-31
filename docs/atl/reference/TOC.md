@@ -225,6 +225,7 @@
 ## [Aggregation and Class Factory Macros](aggregation-and-class-factory-macros.md)
 ## [Category Macros](category-macros.md)
 ## [COM Map Macros](com-map-macros.md)
+## [COM Interface Entry Macros](com-interface-entry-macros.md)
 ## [Compiler Options Macros](compiler-options-macros.md)
 ## [Composite Control Macros](composite-control-macros.md)
 ## [Connection Point Macros](connection-point-macros.md)

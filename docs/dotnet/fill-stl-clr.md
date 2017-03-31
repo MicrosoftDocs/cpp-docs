@@ -45,7 +45,7 @@ template<class _FwdIt, class _Ty> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `fill`. For more information, see [fill](http://msdn.microsoft.com/Library/b1f09e99-a9d2-4e4c-97f8-aaccc20b4420).  
+ This function behaves the same as the C++ Standard Library function `fill`. For more information, see [fill](../standard-library/algorithm-functions.md#fill).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

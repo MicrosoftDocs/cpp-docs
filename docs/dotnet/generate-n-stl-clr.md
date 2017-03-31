@@ -45,7 +45,7 @@ template<class _OutIt, class _Diff, class _Fn0> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `generate_n`. For more information, see [generate_n](http://msdn.microsoft.com/Library/377e5b0f-1bb8-4b77-9449-fbebf57f6e5e).  
+ This function behaves the same as the C++ Standard Library function `generate_n`. For more information, see [generate_n](../standard-library/algorithm-functions.md#generate_n).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

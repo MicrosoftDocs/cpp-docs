@@ -90,5 +90,4 @@ __interface IMyI
  [Interface Attributes](../windows/interface-attributes.md)   
  [Class Attributes](../windows/class-attributes.md)   
  [Method Attributes](../windows/method-attributes.md)   
- [module](../windows/module-cpp.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [module](../windows/module-cpp.md)   

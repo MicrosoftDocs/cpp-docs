@@ -48,7 +48,7 @@ template<class _RanIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `nth_element`. For more information, see [nth_element](http://msdn.microsoft.com/Library/eda88e94-8840-4568-a83b-d03deeda9cf6).  
+ This function behaves the same as the C++ Standard Library function `nth_element`. For more information, see [nth_element](../standard-library/algorithm-functions.md#nth_element).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

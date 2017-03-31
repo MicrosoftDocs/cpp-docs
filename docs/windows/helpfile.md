@@ -76,5 +76,4 @@ Sets the name of the Help file for a type library.
  [Method Attributes](../windows/method-attributes.md)   
  [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
  [helpcontext](../windows/helpcontext.md)   
- [helpstring](../windows/helpstring.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [helpstring](../windows/helpstring.md)   

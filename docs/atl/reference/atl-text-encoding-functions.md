@@ -23,7 +23,7 @@ These functions support text encoding and decoding.
 |[AtlHexValue](#atlhexvalue)|Call this function to get the numeric value of a hexadecimal digit. |
 |[AtlUnicodeToUTF8](#atlunicodetoutf8)|Call this function to convert a Unicode string to UTF-8. |
 |[BEncode](#bencode)|Call this function to convert some data using the "B" encoding.|
-|[BEncodeGetRequiredLength](#beencodegetrequiredlength)|Call this function to get the size in characters of a buffer that could contain a string encoded from data of the specified size.|
+|[BEncodeGetRequiredLength](#bencodegetrequiredlength)|Call this function to get the size in characters of a buffer that could contain a string encoded from data of the specified size.|
 |[EscapeXML](#escapexml)|Call this function to convert characters that are unsafe for use in XML to their safe equivalents.|
 |[GetExtendedChars](#getextendedchars)|Call this function to get the number of extended characters in a string.|
 |[IsExtendedChar](#isextendedchar)|Call this function to find out if a given character is an extended character (less than 32, greater than 126, and not a tab, linefeed or carriage return)|
@@ -240,7 +240,7 @@ inline BOOL BEncode(
 ### Remarks  
  The "B" encoding scheme is described in RFC 2047 ([http://www.ietf.org/rfc/rfc2047.txt](http://www.ietf.org/rfc/rfc2047.txt)).  
   
-## <a name="beencodegetrequiredlength"></a> BEncodeGetRequiredLength 
+## <a name="bencodegetrequiredlength"></a> BEncodeGetRequiredLength 
 Call this function to get the size in characters of a buffer that could contain a string encoded from data of the specified size.  
   
 ```  
@@ -286,7 +286,12 @@ inline int EscapeXML(
  The length in characters of the caller-allocated buffer.  
   
  `dwFlags`  
- Flags describing how the conversion is to be performed. See [ATL_ESC Flags](http://msdn.microsoft.com/library/daf3aa3c-7498-4d63-9fb6-e05b4815c2b8).  
+ ATL_ESC Flags describing how the conversion is to be performed. 
+
+- `ATL_ESC_FLAG_NONE` Default behavior. Quote marks and apostrophes are not converted.
+- `ATL_ESC_FLAG_ATTR` Quote marks and apostrophes are converted to `&quot;` and `&apos;` respectively.
+
+
   
 ### Return Value  
  The length in characters of the converted string.  
@@ -468,7 +473,11 @@ inline BOOL QPEncode(
  Pointer to a variable that contains the length in characters of `szDest`. If the function succeeds, the variable receives the number of characters written to the buffer. If the function fails, the variable receives the required length in characters of the buffer.  
   
  `dwFlags`  
- Flags describing how the conversion is to be performed. See [ATLSMTP_QPENCODE Flags](http://msdn.microsoft.com/library/6b15a3ab-8e57-49e4-8104-09b26ebb96c4).  
+ ATLSMTP_QPENCODE flags describing how the conversion is to be performed. 
+- `ATLSMTP_QPENCODE_DOT` If a period appears at the start of a line, it is added to the output as well as encoded.
+- `ATLSMTP_QPENCODE_TRAILING_SOFT` Appends `=\r\n` to the encoded string.
+
+The quoted-printable encoding scheme is described in [RFC 2045](http://www.ietf.org/rfc/rfc2045.txt).
   
 ### Return Value  
  Returns **TRUE** on success, **FALSE** on failure.  
@@ -570,7 +579,10 @@ inline BOOL UUEncode(
  The file to be added to the header when ATLSMTP_UUENCODE_HEADER is specified in `dwFlags`.  
   
  `dwFlags`  
- Flags controlling the behavior of this function. See [ATLSMTP_UUENCODE Flags](http://msdn.microsoft.com/library/ecb79b81-b764-4a48-a05c-a9dee6e7bbce).  
+ Flags controlling the behavior of this function. 
+- `ATLSMTP_UUENCODE_HEADE` The header will be encoded.
+- `ATLSMTP_UUENCODE_END` The end will be encoded.
+- `ATLSMTP_UUENCODE_DOT` Data stuffing will be performed.  
   
 ### Return Value  
  Returns **TRUE** on success, **FALSE** on failure.  

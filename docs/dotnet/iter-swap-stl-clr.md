@@ -45,7 +45,7 @@ template<class _FwdIt1, class _FwdIt2> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `iter_swap`. For more information, see [iter_swap](http://msdn.microsoft.com/Library/c29e658c-0e99-4f11-ad60-d09301a15e1d).  
+ This function behaves the same as the C++ Standard Library function `iter_swap`. For more information, see [iter_swap](../standard-library/algorithm-functions.md#iter_swap).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

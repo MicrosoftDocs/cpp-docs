@@ -76,5 +76,4 @@ Specifies a character string that is used to describe the element to which it ap
  [Method Attributes](../windows/method-attributes.md)   
  [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
  [helpfile](../windows/helpfile.md)   
- [helpcontext](../windows/helpcontext.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [helpcontext](../windows/helpcontext.md)   

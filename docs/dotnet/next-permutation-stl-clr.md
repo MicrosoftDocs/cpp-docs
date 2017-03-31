@@ -47,7 +47,7 @@ template<class _BidIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `next_permutation`. For more information, see [next_permutation](http://msdn.microsoft.com/Library/d412620b-73f7-4bdd-9ee6-e581504e9859).  
+ This function behaves the same as the C++ Standard Library function `next_permutation`. For more information, see [next_permutation](../standard-library/algorithm-functions.md#next_permutation).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  
