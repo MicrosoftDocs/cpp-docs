@@ -170,13 +170,5 @@ Volume in drive Z has no label.
 File time modified  
 ```  
   
-## .NET Framework Equivalent  
-  
--   [System::IO::File::SetLastAccessTime](https://msdn.microsoft.com/en-us/library/system.io.file.setlastaccesstime.aspx)  
-  
--   [System::IO::File::SetLastWriteTime](https://msdn.microsoft.com/en-us/library/system.io.file.setlastwritetime.aspx)  
-  
--   [System::IO::File::SetCreationTime](https://msdn.microsoft.com/en-us/library/system.io.file.setcreationtime.aspx)  
-  
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)

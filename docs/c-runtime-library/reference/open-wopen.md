@@ -257,12 +257,6 @@ Open succeeded on input file
 Open succeeded on output file  
 ```  
   
-## .NET Framework Equivalent  
-  
--   [System::IO::File::Open](https://msdn.microsoft.com/en-us/library/system.io.file.open.aspx)  
-  
--   <xref:System.IO.FileStream.%23ctor%2A>  
-  
 ## See Also  
  [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)   
  [_chmod, _wchmod](../../c-runtime-library/reference/chmod-wchmod.md)   

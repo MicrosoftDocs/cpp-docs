@@ -9,7 +9,7 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
-  - "Platform/Platform::Object::GetType"
+  - "VCCORLIB/Platform::Object::GetType"
 dev_langs: 
   - "C++"
 ms.assetid: 21d0bf92-fac4-48cd-9108-c6f57ba1196a

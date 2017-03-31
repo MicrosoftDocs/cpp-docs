@@ -189,8 +189,5 @@ log10( -5.0 ) = 6.989700e-001
 Normal: log( 0.0 ) = -1.#INF00e+000  
 ```  
   
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
-  
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

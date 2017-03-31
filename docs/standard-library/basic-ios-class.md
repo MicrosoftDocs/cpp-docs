@@ -218,7 +218,7 @@ const basic_ios<Elem, Traits>& right);
  The **this** object for the stream to which you are copying the flags.  
   
 ### Remarks  
- The member function reports the callback eventÂ erase_event. It then copies from ` right` into **\*this** the fill character, the tie pointer, and the formatting information. Before altering the exception mask, it reports the callback event copyfmt_event. If, after the copy is complete, **state &**[exceptions](#basic_ios__exceptions) is nonzero, the function effectively calls [clear](#basic_ios__clear) with the argument [rdstate](#basic_ios__rdstate). It returns **\*this**.  
+ The member function reports the callback event **erase\_event**. It then copies from `right` into **\*this** the fill character, the tie pointer, and the formatting information. Before altering the exception mask, it reports the callback event **copyfmt_event**. If, after the copy is complete, **state &**[exceptions](#basic_ios__exceptions) is nonzero, the function effectively calls [clear](#basic_ios__clear) with the argument [rdstate](#basic_ios__rdstate). It returns **\*this**.  
   
 ### Example  
   
@@ -527,7 +527,6 @@ void move(basic_ios&& right);
  Finds the equivalent char to a given `char_type`.  
   
 ```  
- 
 char narrow(char_type Char, char Default = '\0') const;
 ```  
   
@@ -542,7 +541,7 @@ char narrow(char_type Char, char Default = '\0') const;
  The equivalent `char` to a given `char_type`.  
   
 ### Remarks  
- The member function returns [use_facet](../standard-library/basic-filebuf-class.md#basic_filebuf__open)**<**Â **ctype**\< **E**> >( [getloc](../standard-library/ios-base-class.md#ios_base__getloc)( ) ). `narrow`( `Char`, `Default`).  
+ The member function returns [use_facet](../standard-library/basic-filebuf-class.md#basic_filebuf__open)\<ctype\<E> >( [getloc](../standard-library/ios-base-class.md#ios_base__getloc)( ) ).`narrow`( `Char`, `Default`).  
   
 ### Example  
   
@@ -563,7 +562,6 @@ int main( )
   y[0] = wcout.narrow( x[0] );  
   cout << y[0] << endl;  
 }  
-  
 ```  
   
 ##  <a name="basic_ios__off_type"></a>  basic_ios::off_type  

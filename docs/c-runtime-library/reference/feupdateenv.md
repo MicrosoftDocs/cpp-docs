@@ -61,12 +61,12 @@ int feupdateenv(
 );  
 ```  
   
-#### Parameters  
+### Parameters  
  `penv`  
- Pointer to a `fenv_t` object that contains a floating-point environment as set by a call to [fegetenv](http://msdn.microsoft.com/Library/61df848d-6ba8-4c6e-be35-216436fe7736) or [feholdexcept](http://msdn.microsoft.com/Library/c286ace3-ec39-482a-be8b-f998d31003d9). You can also specify the default startup floating-point environment by using the FE_DFL_ENV macro.  
+ Pointer to a `fenv_t` object that contains a floating-point environment as set by a call to [fegetenv](fegetenv1.md) or [feholdexcept](feholdexcept2.md). You can also specify the default startup floating-point environment by using the FE_DFL_ENV macro.  
   
 ## Return Value  
- Returns 0 if all actions completed successfully.        Otherwise, returns a nonzero value.  
+ Returns 0 if all actions completed successfully. Otherwise, returns a nonzero value.  
   
 ## Remarks  
  The `feupdateenv` function performs multiple actions. First, it stores the current raised floating-point exception status flags in automatic storage. Then, it sets the current floating-point environment from the value stored in the `fenv_t` object pointed to by `penv`. If `penv` is not FE_DFL_ENV or does not point to a valid `fenv_t` object, subsequent behavior is undefined. Finally, `feupdateenv` raises the locally stored floating-point exceptions.  

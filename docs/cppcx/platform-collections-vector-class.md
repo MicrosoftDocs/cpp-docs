@@ -8,8 +8,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "collection/Platform::Collections::Vector"
+f1_keywords: ['COLLECTION/Platform::Collections::Vector::Vector', 'COLLECTION/Platform::Collections::Vector::Append', 'COLLECTION/Platform::Collections::Vector::Clear', 'COLLECTION/Platform::Collections::Vector::First', 'COLLECTION/Platform::Collections::Vector::GetAt', 'COLLECTION/Platform::Collections::Vector::GetMany', 'COLLECTION/Platform::Collections::Vector::GetView', 'COLLECTION/Platform::Collections::Vector::IndexOf', 'COLLECTION/Platform::Collections::Vector::InsertAt', 'COLLECTION/Platform::Collections::Vector::ReplaceAll', 'COLLECTION/Platform::Collections::Vector::RemoveAt', 'COLLECTION/Platform::Collections::Vector::RemoveAtEnd', 'COLLECTION/Platform::Collections::Vector::SetAt', 'COLLECTION/Platform::Collections::Vector::Size', 'COLLECTION/Platform::Collections::Vector::VectorChanged']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -60,25 +59,25 @@ template <typename T, typename E>
   
 |Name|Description|  
 |----------|-----------------|  
-|[Vector::Vector Constructor](#ctor)|Initializes a new instance of the Vector class.|  
+|[Vector::Vector](#ctor)|Initializes a new instance of the Vector class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[Vector::Append Method](#append)|Inserts the specified item after the last item in the current Vector.|  
-|[Vector::Clear Method](#clear)|Deletes all the elements in the current Vector.|  
-|[Vector::First Method](#first)|Returns an iterator that specifies the first element in the Vector.|  
-|[Vector::GetAt Method](#getat)|Retrieves the element of the current Vector that is identifed by the specified index.|  
-|[Vector::GetMany Method](#getmany)|Retrieves a sequence of items from the current Vector, starting at the specified index.|  
-|[Vector::GetView Method](#getview)|Returns a read-only view of a Vector; that is, a [Platform::Collections::VectorView](../cppcx/platform-collections-vectorview-class.md).|  
-|[Vector::IndexOf Method](#indexof)|Searches for the specified item in the current Vector, and if found, returns the index of the item.|  
-|[Vector::InsertAt Method](#insertat)|Inserts the specified item into the current Vector after the element identified by the specified index.|  
-|[Vector::ReplaceAll Method](#replaceall)|Deletes the elements in the current Vector and then inserts the elements from the specified array.|  
-|[Vector::RemoveAt Method](#removeat)|Deletes the element identified by the specified index from the current Vector.|  
-|[Vector::RemoveAtEnd Method](#removeatend)|Deletes the element at the end of the current Vector.|  
-|[Vector::SetAt Method](#setat)|Assigns the specified value to the element in the current Vector that is identified by the specified index.|  
-|[Vector::Size Method](#size)|Returns the number of elements in the current Vector object.|  
+|[Vector::Append](#append)|Inserts the specified item after the last item in the current Vector.|  
+|[Vector::Clear](#clear)|Deletes all the elements in the current Vector.|  
+|[Vector::First](#first)|Returns an iterator that specifies the first element in the Vector.|  
+|[Vector::GetAt](#getat)|Retrieves the element of the current Vector that is identifed by the specified index.|  
+|[Vector::GetMany](#getmany)|Retrieves a sequence of items from the current Vector, starting at the specified index.|  
+|[Vector::GetView](#getview)|Returns a read-only view of a Vector; that is, a [Platform::Collections::VectorView](../cppcx/platform-collections-vectorview-class.md).|  
+|[Vector::IndexOf](#indexof)|Searches for the specified item in the current Vector, and if found, returns the index of the item.|  
+|[Vector::InsertAt](#insertat)|Inserts the specified item into the current Vector after the element identified by the specified index.|  
+|[Vector::ReplaceAll](#replaceall)|Deletes the elements in the current Vector and then inserts the elements from the specified array.|  
+|[Vector::RemoveAt](#removeat)|Deletes the element identified by the specified index from the current Vector.|  
+|[Vector::RemoveAtEnd](#removeatend)|Deletes the element at the end of the current Vector.|  
+|[Vector::SetAt](#setat)|Assigns the specified value to the element in the current Vector that is identified by the specified index.|  
+|[Vector::Size](#size)|Returns the number of elements in the current Vector object.|  
   
 ### Events  
   

@@ -11,7 +11,7 @@ ms.topic: "reference"
 f1_keywords:
  - "CAtlFileMapping"
  - "atlfile/ATL::CAtlFileMapping"
- dev_langs: 
+dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "CAtlFileMapping class"

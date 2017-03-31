@@ -8,8 +8,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "collection/Platform::Collections::VectorIterator"
+f1_keywords: ['COLLECTION/Platform::Collections::VectorIterator::VectorIterator']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -52,7 +51,7 @@ class VectorIterator;
   
 |Name|Description|  
 |----------|-----------------|  
-|[VectorIterator::VectorIterator Constructor](#ctor)|Initializes a new instance of the VectorIterator class.|  
+|[VectorIterator::VectorIterator](#ctor)|Initializes a new instance of the VectorIterator class.|  
   
 ### Public Operators  
   
@@ -288,7 +287,7 @@ difference_type operator-(const VectorIterator& other) const;
   
 
 
-## <a name="operator-plus-equals"></a>  VectorIterator::operator+= Operator
+## <a name="operator-plus-assign"></a>  VectorIterator::operator+= Operator
 Increments the current VectorIterator by the specified displacement.  
   
 ### Syntax  

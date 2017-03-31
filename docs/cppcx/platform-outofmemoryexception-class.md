@@ -9,8 +9,8 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
-  - "Platform/Platform::OutOfMemoryException"
-  - "Platform/Platform::OutOfMemoryException::OutOfMemoryException"
+  - "VCCORLIB/Platform::OutOfMemoryException"
+  - "VCCORLIB/Platform::OutOfMemoryException::OutOfMemoryException"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

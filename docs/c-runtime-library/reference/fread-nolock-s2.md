@@ -95,9 +95,6 @@ size_t _fread_nolock_s(
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
-## .NET Framework Equivalent  
- [System::IO::FileStream::Read](https://msdn.microsoft.com/en-us/library/system.io.filestream.read.aspx)  
-  
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fwrite](../../c-runtime-library/reference/fwrite.md)   

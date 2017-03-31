@@ -79,8 +79,5 @@ void __security_init_cookie(void);
   
  `__security_init_cookie` is a Microsoft extension to the standard C Runtime Library. For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
-## .NET Framework Equivalent  
- Not applicable. This function should only be called from native code, not managed code.  
-  
 ## See Also  
  [Compiler Security Checks In Depth](http://go.microsoft.com/fwlink/?linkid=7260)

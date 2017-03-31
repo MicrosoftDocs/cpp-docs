@@ -170,9 +170,6 @@ Character count: 25
   
 ```  
   
-## .NET Framework Equivalent  
- [System::String::Length](https://msdn.microsoft.com/en-us/library/system.string.length.aspx)  
-  
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)

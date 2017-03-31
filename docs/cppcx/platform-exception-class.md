@@ -8,8 +8,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "Platform/Platform::Exception"
+f1_keywords: ['VCCORLIB/Platform::Exception::Exception', 'VCCORLIB/Platform::Exception::CreateException', 'VCCORLIB/Platform::Exception::HResult', 'VCCORLIB/Platform::Exception::Message']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -38,22 +37,22 @@ public ref class Exception : Object,    IException,    IPrintable,    IEquatable
   
 |Member|Description|  
 |------------|-----------------|  
-|[Exception::Exception Constructor](#ctor)|Initializes a new instance of the `Exception` class.|  
+|[Exception::Exception](#ctor)|Initializes a new instance of the `Exception` class.|  
   
 ### Methods  
  The `Exception` class inherits the `Equals()`, `Finalize()`,`GetHashCode()`,`GetType()`,`MemberwiseClose()`, and `ToString()` methods from the [Platform::Object Class](../cppcx/platform-object-class.md). The `Exception` class also has the following method.  
   
 |Member|Description|  
 |------------|-----------------|  
-|[Exception::CreateException Method](#createexception)|Creates an exception that represents the specified HRESULT value.|  
+|[Exception::CreateException](#createexception)|Creates an exception that represents the specified HRESULT value.|  
   
 ### Properties  
  The Exception class also has the following properties.  
   
 |Member|Description|  
 |------------|-----------------|  
-|[Exception::HResult Property](#hresult)|The HRESULT that corresponds to the exception.|  
-|[Exception::Message Property](#message)|A message that describes the exception. This value is read-only and cannot be modified after the `Exception` is constructed.|  
+|[Exception::HResult](#hresult)|The HRESULT that corresponds to the exception.|  
+|[Exception::Message](#message)|A message that describes the exception. This value is read-only and cannot be modified after the `Exception` is constructed.|  
   
 ### Requirements  
  **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  

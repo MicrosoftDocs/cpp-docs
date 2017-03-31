@@ -179,12 +179,6 @@ Overflow condition occurred.
   
 ```  
   
-## .NET Framework Equivalent  
-  
--   [System::Convert::ToInt64](https://msdn.microsoft.com/en-us/library/system.convert.toint64.aspx)  
-  
--   [System::Convert::ToUInt64](https://msdn.microsoft.com/en-us/library/system.convert.touint64.aspx)  
-  
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

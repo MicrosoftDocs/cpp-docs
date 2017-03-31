@@ -134,18 +134,6 @@ int main( void )
 The current time is 14:21:44  
 ```  
   
-## .NET Framework Equivalent  
-  
--   [System::DateTime::ToLongDateString](https://msdn.microsoft.com/en-us/library/system.datetime.tolongdatestring.aspx)  
-  
--   [System::DateTime::ToLongTimeString](https://msdn.microsoft.com/en-us/library/system.datetime.tolongtimestring.aspx)  
-  
--   [System::DateTime::ToShortDateString](https://msdn.microsoft.com/en-us/library/system.datetime.toshortdatestring.aspx)  
-  
--   [System::DateTime::ToShortTimeString](https://msdn.microsoft.com/en-us/library/system.datetime.toshorttimestring.aspx)  
-  
--   [System::DateTime::ToString](https://msdn.microsoft.com/en-us/library/system.datetime.tostring.aspx)  
-  
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   
  [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)   

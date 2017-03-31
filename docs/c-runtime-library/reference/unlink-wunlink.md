@@ -130,9 +130,6 @@ This file will be deleted.
 Deleted 'CRT_UNLINK.TXT'  
 ```  
   
-## .NET Framework Equivalent  
- [System::IO::File::Delete](https://msdn.microsoft.com/en-us/library/system.io.file.delete.aspx)  
-  
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   
  [_close](../../c-runtime-library/reference/close.md)   

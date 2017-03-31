@@ -81,9 +81,6 @@ Returns a brief description of a run-time error check (RTC) type.
 ## Libraries  
  All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
-  
 ## See Also  
  [_RTC_NumErrors](../../c-runtime-library/reference/rtc-numerrors.md)   
  [Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)

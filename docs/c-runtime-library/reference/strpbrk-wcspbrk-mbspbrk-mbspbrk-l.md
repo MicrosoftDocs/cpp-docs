@@ -211,9 +211,6 @@ int main( void )
 4: 5 pigs  
 ```  
   
-## .NET Framework Equivalent  
- [System::String::IndexOfAny](https://msdn.microsoft.com/en-us/library/system.string.indexofany.aspx)  
-  
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   

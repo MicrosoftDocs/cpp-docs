@@ -11,7 +11,7 @@ ms.topic: "reference"
 f1_keywords:
  - "IDocHostUIHandlerDispatch"
  - "atlbase/ATL::IDocHostUIHandlerDispatch"
- dev_langs: 
+dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDocHostUIHandlerDispatch interface"

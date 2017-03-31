@@ -146,9 +146,6 @@ unsigned long _wcstoul_l(
 ## Example  
  See the example for [strtod](../../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md).  
   
-## .NET Framework Equivalent  
- [System::Convert::ToUInt64](https://msdn.microsoft.com/en-us/library/system.convert.touint32.aspx)  
-  
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Locale](../../c-runtime-library/locale.md)   

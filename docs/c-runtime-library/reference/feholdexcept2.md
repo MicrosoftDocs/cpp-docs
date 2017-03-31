@@ -60,7 +60,6 @@ Saves the current floating-point environment in the specified object, clears the
 int feholdexcept(  
    fenv_t *penv  
 );  
-  
 ```  
   
 #### Parameters  
@@ -68,10 +67,10 @@ int feholdexcept(
  Pointer to an `fenv_t` object to contain a copy of the floating-point environment.  
   
 ## Return Value  
- Returns zero if and only if the function is able to successfully turn on non-stop floating-point        exception handling.  
+ Returns zero if and only if the function is able to successfully turn on non-stop floating-point exception handling.  
   
 ## Remarks  
- The `feholdexcept` function is used to store the state of the current floating point environment in the `fenv_t` object pointed to by `penv`, and to set the environment to not interrupt execution on floating-point exceptions. This is known as non-stop mode.  This mode continues until the environment is restored using [fesetenv](http://msdn.microsoft.com/Library/a34b2705-0bd4-452e-a30f-eea3898d8183) or [feupdateenv](../../c-runtime-library/reference/feupdateenv.md).  
+ The `feholdexcept` function is used to store the state of the current floating point environment in the `fenv_t` object pointed to by `penv`, and to set the environment to not interrupt execution on floating-point exceptions. This is known as non-stop mode.  This mode continues until the environment is restored using [fesetenv](fesetenv1.md) or [feupdateenv](../../c-runtime-library/reference/feupdateenv.md).  
   
  You can use this function at the beginning of a subroutine that needs to hide one or more floating-point exceptions from the caller. To report an exception, you can simply clear  the unwanted exceptions by using [feclearexcept,](../../c-runtime-library/reference/feclearexcept1.md) and then end the non-stop mode with a call to `feupdateenv`.  
   
@@ -88,5 +87,5 @@ int feholdexcept(
 ## See Also  
  [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
  [feclearexcept](../../c-runtime-library/reference/feclearexcept1.md)   
- [fesetenv](http://msdn.microsoft.com/Library/a34b2705-0bd4-452e-a30f-eea3898d8183)   
+ [fesetenv](fesetenv1.md)   
  [feupdateenv](../../c-runtime-library/reference/feupdateenv.md)

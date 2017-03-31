@@ -147,9 +147,6 @@ int main( void )
    66  
 ```  
   
-## .NET Framework Equivalent  
- [System::Random Class](https://msdn.microsoft.com/en-us/library/system.random.aspx)  
-  
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [srand](../../c-runtime-library/reference/srand.md)   

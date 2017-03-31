@@ -143,9 +143,6 @@ int main()
 OS date: 04/25/03  
 ```  
   
-## .NET Framework Equivalent  
- [System::DateTime::Parse](https://msdn.microsoft.com/en-us/library/system.datetime.parse.aspx)  
-  
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   
  [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)   

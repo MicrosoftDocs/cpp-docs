@@ -32,10 +32,10 @@ namespace default;
   
 |||  
 |-|-|  
-|[default::(type_name)::Equals Method](../cppcx/default-type-name-equals-method.md)|Determines whether the specified object is equal to the current object.|  
-|[default::(type_name)::GetHashCode Method](../cppcx/default-type-name-gethashcode-method.md)|Returns the hash code for this instance.|  
-|[default::(type_name)::GetType Method](../cppcx/default-type-name-gettype-method.md)|Returns a string that represents the current type.|  
-|[default::(type_name)::ToString Method](../cppcx/default-type-name-tostring-method.md)|Returns a string that represents the current type.|  
+|[default::(type_name)::Equals](../cppcx/default-type-name-equals-method.md)|Determines whether the specified object is equal to the current object.|  
+|[default::(type_name)::GetHashCode](../cppcx/default-type-name-gethashcode-method.md)|Returns the hash code for this instance.|  
+|[default::(type_name)::GetType](../cppcx/default-type-name-gettype-method.md)|Returns a string that represents the current type.|  
+|[default::(type_name)::ToString](../cppcx/default-type-name-tostring-method.md)|Returns a string that represents the current type.|  
   
 ### Built-in types  
   

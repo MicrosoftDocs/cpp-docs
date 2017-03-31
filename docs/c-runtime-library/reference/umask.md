@@ -130,9 +130,6 @@ int main( void )
 Oldmask = 0x0000  
 ```  
   
-## .NET Framework Equivalent  
- [System::IO::File::SetAttributes](https://msdn.microsoft.com/en-us/library/system.io.file.setattributes.aspx)  
-  
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   
  [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)   

@@ -978,7 +978,8 @@ CWnd* ChildWindowFromPoint(
  Converts the client coordinates of a given point or rectangle on the display to screen coordinates.  
   
 ```  
-void ClientToScreen(LPPOINT lpPoint) const;  void ClientToScreen(LPRECT lpRect) const;  ```  
+void ClientToScreen(LPPOINT lpPoint) const;  void ClientToScreen(LPRECT lpRect) const;  
+```  
   
 ### Parameters  
  `lpPoint`  
@@ -1080,7 +1081,7 @@ virtual HRESULT CreateAccessibleProxy(
     LPARAM lParam,  
     LRESULT* pResult);
 ```  
-  
+   
 ### Parameters  
  `wParam`  
  Identifies the object accessed by the Active Accessibility proxy. Can be one of the following values  
@@ -1996,7 +1997,8 @@ void EndPaint(LPPAINTSTRUCT lpPaint);
   
 ```  
 BOOL ExecuteDlgInit(LPCTSTR lpszResourceName);  
-BOOL ExecuteDlgInit(LPVOID lpResource);```  
+BOOL ExecuteDlgInit(LPVOID lpResource);
+```  
   
 ### Parameters  
  `lpszResourceName`  
@@ -9020,7 +9022,8 @@ int RunModalLoop(DWORD dwFlags = 0);
  Converts the screen coordinates of a given point or rectangle on the display to client coordinates.  
   
 ```  
-void ScreenToClient(LPPOINT lpPoint) const;  void ScreenToClient(LPRECT lpRect) const;  ```  
+void ScreenToClient(LPPOINT lpPoint) const;  void ScreenToClient(LPRECT lpRect) const;  
+```  
   
 ### Parameters  
  `lpPoint`  

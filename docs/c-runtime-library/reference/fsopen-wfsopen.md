@@ -180,12 +180,6 @@ int main( void )
 No one else in the network can write to this file until we are done.  
 ```  
   
-## .NET Framework Equivalent  
-  
--   [System::IO::File::Open](https://msdn.microsoft.com/en-us/library/system.io.file.open.aspx)  
-  
--   <xref:System.IO.FileStream.%23ctor%2A>  
-  
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)   

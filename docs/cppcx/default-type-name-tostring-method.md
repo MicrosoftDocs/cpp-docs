@@ -9,7 +9,7 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
-  - "Platform/Platform::Object::ToString"
+  - "VCCORLIB/Platform::Object::ToString"
 dev_langs: 
   - "C++"
 ms.assetid: 2541955f-d844-4bd8-944d-185198c86579

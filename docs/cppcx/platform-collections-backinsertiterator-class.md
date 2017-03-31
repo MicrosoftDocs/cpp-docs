@@ -8,8 +8,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "collection/Platform::Collections::BackInsertIterator"
+f1_keywords: ['COLLECTION/Platform::Collections::BackInsertIterator::BackInsertIterator']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -44,7 +43,7 @@ public ::std::iterator<::std::output_iterator_tag, void, void, void, void>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[BackInsertIterator::BackInsertIterator Constructor](#ctor)|Initializes a new instance of the BackInsertIterator class.|  
+|[BackInsertIterator::BackInsertIterator](#ctor)|Initializes a new instance of the BackInsertIterator class.|  
   
 ### Public Operators  
   

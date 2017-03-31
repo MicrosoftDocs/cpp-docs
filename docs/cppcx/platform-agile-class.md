@@ -8,8 +8,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "agile/Platform::Agile"
+f1_keywords: ['AGILE/Platform::Platform', 'AGILE/Platform::Platform::Agile::Agile', 'AGILE/Platform::Platform::Agile::Get', 'AGILE/Platform::Platform::Agile::GetAddressOf', 'AGILE/Platform::Platform::Agile::GetAddressOfForInOut', 'AGILE/Platform::Platform::Agile::Release']
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -45,7 +44,7 @@ class Agile;
   
 |Name|Description|  
 |----------|-----------------|  
-|[Agile::Agile Constructor](#ctor)|Initializes a new instance of the Agile class.|  
+|[Agile::Agile](#ctor)|Initializes a new instance of the Agile class.|  
 |[Agile::~Agile Destructor](#dtor)|Destroys the current instance of the Agile class.|  
   
 ### Public Methods  
@@ -155,7 +154,7 @@ throw();
 ### Remarks  
  This operation releases the current representation of a object of type `T`, if any; reinitializes the Agile object's data members; acquires the current threading context; and then returns the address of a handle-to-object variable that can represent a non-agile object. To cause an Agile class instance to represent an object, use the assignment operator ([Agile::operator=](#operator-assign)) to assign the object to the Agile class instance.  
 
-## <a name="getaddressofforinput"></a>  Agile::GetAddressOfForInOut Method
+## <a name="getaddressofforinout"></a>  Agile::GetAddressOfForInOut Method
 Returns the address of a handle to the object represented by the current Agile object.  
   
 ## Syntax  

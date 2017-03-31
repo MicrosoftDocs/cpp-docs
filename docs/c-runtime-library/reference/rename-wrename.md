@@ -155,8 +155,5 @@ int main( void )
 File 'CRT_RENAMER.OBJ' renamed to 'CRT_RENAMER.JBO'  
 ```  
   
-## .NET Framework Equivalent  
- [System::IO::File::Move](https://msdn.microsoft.com/en-us/library/system.io.file.move.aspx)  
-  
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)

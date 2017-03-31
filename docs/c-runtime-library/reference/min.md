@@ -107,9 +107,6 @@ The larger of 10 and 21 is 21
 The smaller of 10 and 21 is 10  
 ```  
   
-## .NET Framework Equivalent  
- [System::Math::Min](https://msdn.microsoft.com/en-us/library/system.math.min.aspx)  
-  
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [__max](../../c-runtime-library/reference/max.md)

@@ -138,9 +138,6 @@ if (( _access( "datafile",2 )) == -1 )
 ## Example  
  See the example for [perror](../../c-runtime-library/reference/perror-wperror.md).  
   
-## .NET Framework Equivalent  
- [System::Exception::Message](https://msdn.microsoft.com/en-us/library/system.exception.message.aspx)  
-  
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [clearerr](../../c-runtime-library/reference/clearerr.md)   

@@ -126,12 +126,6 @@ intptr_t _wspawnv(
 ## Example  
  See the example in [_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md).  
   
-## .NET Framework Equivalent  
-  
--   [System::Diagnostics::Process Class](https://msdn.microsoft.com/en-us/library/system.diagnostics.process.aspx)  
-  
--   [System::Diagnostics::ProcessStartInfo Class](https://msdn.microsoft.com/en-us/library/system.diagnostics.processstartinfo.aspx)  
-  
 ## See Also  
  [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
  [_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)   

@@ -128,9 +128,6 @@ Line two.
 First data word in file: 0x656e694c  
 ```  
   
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
-  
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [_putw](../../c-runtime-library/reference/putw.md)

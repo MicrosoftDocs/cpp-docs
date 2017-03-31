@@ -124,9 +124,6 @@ int main( void )
 The cube root of -64.64 is -4.013289  
 ```  
   
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
-  
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [exp, expf](../../c-runtime-library/reference/exp-expf.md)   

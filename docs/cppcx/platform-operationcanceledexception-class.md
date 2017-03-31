@@ -9,8 +9,8 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
-  - "Platform/Platform::OperationCanceledException::OperationCanceledException"
-  - "Platform/Platform::OperationCanceledException"
+  - "VCCORLIB/Platform::OperationCanceledException::OperationCanceledException"
+  - "VCCORLIB/Platform::OperationCanceledException"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -207,7 +207,7 @@ int AFXAPI AfxMessageBox(
 ### Remarks  
  The first form of this overloaded function displays a text string pointed to by `lpszText` in the message box and uses `nIDHelp` to describe a Help context. The Help context is used to jump to an associated Help topic when the user presses the Help key (typically F1).  
   
- The second form of the function uses the string resource with the ID `nIDPrompt` to display a message in the message box. The associated Help page is found through the value of `nIDHelp`. If the default value of `nIDHelp` is used (â€“ 1), the string resource ID, `nIDPrompt`, is used for the Help context. For more information about defining Help contexts, see [Technical Note 28](../../mfc/tn028-context-sensitive-help-support.md).  
+ The second form of the function uses the string resource with the ID `nIDPrompt` to display a message in the message box. The associated Help page is found through the value of `nIDHelp`. If the default value of `nIDHelp` is used (-1), the string resource ID, `nIDPrompt`, is used for the Help context. For more information about defining Help contexts, see [Technical Note 28](../../mfc/tn028-context-sensitive-help-support.md).  
   
 ### Example  
  [!code-cpp[NVC_MFCWindowing#133](../../mfc/reference/codesnippet/cpp/cstring-formatting-and-message-box-display_4.cpp)]  

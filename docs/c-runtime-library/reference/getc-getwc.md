@@ -160,12 +160,6 @@ Line two.
 Input was: Line one.  
 ```  
   
-## .NET Framework Equivalent  
-  
--   [System::IO::StreamReader::Read](https://msdn.microsoft.com/en-us/library/system.io.streamreader.read.aspx)  
-  
--   [System::Console::Read](https://msdn.microsoft.com/en-us/library/system.console.read.aspx)  
-  
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)   

@@ -9,8 +9,8 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
-  - "Platform/Platform::OutOfBoundsException"
-  - "Platform/Platform::OutOfBoundsException::OutOfBoundsException"
+  - "VCCORLIB/Platform::OutOfBoundsException"
+  - "VCCORLIB/Platform::OutOfBoundsException::OutOfBoundsException"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

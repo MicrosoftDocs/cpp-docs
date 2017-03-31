@@ -291,9 +291,6 @@ Buffer overrun: s = 'ars.' (should be 'test')
   
  The layout of automatic variables and the level of error detection and code protection can vary with changed compiler settings. This example may have different results when built in other compilation environments or with other compiler options.  
   
-## .NET Framework Equivalent  
- [System::String::Copy](https://msdn.microsoft.com/en-us/library/system.string.copy.aspx)  
-  
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   

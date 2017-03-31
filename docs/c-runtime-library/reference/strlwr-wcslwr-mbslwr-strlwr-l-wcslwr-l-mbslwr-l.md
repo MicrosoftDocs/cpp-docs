@@ -214,9 +214,6 @@ Lower: the string to end all strings!
 Upper: THE STRING TO END ALL STRINGS!  
 ```  
   
-## .NET Framework Equivalent  
- [System::String::ToLower](https://msdn.microsoft.com/en-us/library/system.string.tolower.aspx)  
-  
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   

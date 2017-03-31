@@ -57,4 +57,5 @@ This section discusses how to create C++ desktop applications that run in a wind
 -   [Working with Resource Files](../windows/working-with-resource-files.md)  
   
 ## See Also  
- [Visual C++](../visual-cpp-in-visual-studio.md)
+ [Visual C++ in Visual Studio](../visual-cpp-in-visual-studio.md)
+
