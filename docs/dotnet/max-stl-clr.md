@@ -47,7 +47,7 @@ template<class _Ty, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `max`. For more information, see [max](http://msdn.microsoft.com/Library/342d6303-fac9-46f2-a7f2-3a8c3c048cd6).  
+ This function behaves the same as the C++ Standard Library function `max`. For more information, see [max](../standard-library/algorithm-functions.md#max).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

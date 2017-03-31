@@ -49,7 +49,7 @@ template<class _InIt, class _RanIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `partial_sort_copy`. For more information, see [partial_sort_copy](http://msdn.microsoft.com/Library/cf137213-7eb6-4109-a94b-3b3d572e19ce).  
+ This function behaves the same as the C++ Standard Library function `partial_sort_copy`. For more information, see [partial_sort_copy](../standard-library/algorithm-functions.md#partial_sort_copy).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

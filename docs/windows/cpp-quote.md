@@ -75,5 +75,4 @@ Emits the specified string, without the quote characters, into the generated .id
   
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
- [Stand-Alone Attributes](../windows/stand-alone-attributes.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [Stand-Alone Attributes](../windows/stand-alone-attributes.md)   

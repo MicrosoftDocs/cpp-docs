@@ -65,5 +65,4 @@ Tells the caller that if there is an error when calling that function, then the 
  For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
   
 ## See Also  
- [IDL Attributes](../windows/idl-attributes.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [IDL Attributes](../windows/idl-attributes.md)   

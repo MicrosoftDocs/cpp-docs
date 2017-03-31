@@ -50,4 +50,4 @@ The SafeInt library helps prevent integer overflows that might result when the a
   
 |Section|Description|  
 |-------------|-----------------|  
-|[C/C++ Language and Standard Libraries](../cpp/c-cpp-language-and-standard-libraries.md)|Reference and conceptual content for the C and C++ languages and standard libraries.|
+|[C++ Language Reference](../cpp/cpp-language-reference.md)|Reference and conceptual content for the C++ language.|

@@ -70,5 +70,4 @@ Indicates that a parameter is to be passed from the calling procedure to the cal
  [Method Attributes](../windows/method-attributes.md)   
  [defaultvalue](../windows/defaultvalue.md)   
  [id](../windows/id.md)   
- [out](../windows/out-cpp.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [out](../windows/out-cpp.md)   

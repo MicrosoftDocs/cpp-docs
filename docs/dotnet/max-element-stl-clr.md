@@ -47,7 +47,7 @@ template<class _FwdIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `max_element`. For more information, see [max_element](http://msdn.microsoft.com/Library/c25c9018-3a02-45a3-a234-f6576b90cd59).  
+ This function behaves the same as the C++ Standard Library function `max_element`. For more information, see [max_element](../standard-library/algorithm-functions.md#max_element).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

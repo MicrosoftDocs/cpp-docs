@@ -49,7 +49,7 @@ template<class _InIt1, class _InIt2, class _OutIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `set_union`. For more information, see [set_union](http://msdn.microsoft.com/Library/6b714f7b-8585-4a1c-9cfb-e10f02d6547a).  
+ This function behaves the same as the C++ Standard Library function `set_union`. For more information, see [set_union](../standard-library/algorithm-functions.md#set_union).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

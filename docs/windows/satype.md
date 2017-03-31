@@ -84,5 +84,4 @@ __interface A {
  [Compiler Attributes](../windows/compiler-attributes.md)   
  [Parameter Attributes](../windows/parameter-attributes.md)   
  [Method Attributes](../windows/method-attributes.md)   
- [id](../windows/id.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [id](../windows/id.md)   

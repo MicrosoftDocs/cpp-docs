@@ -69,5 +69,4 @@ Identifies pointer parameters that are returned from the called procedure to the
  [IDL Attributes](../windows/idl-attributes.md)   
  [Parameter Attributes](../windows/parameter-attributes.md)   
  [defaultvalue](../windows/defaultvalue.md)   
- [id](../windows/id.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [id](../windows/id.md)   

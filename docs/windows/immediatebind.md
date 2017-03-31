@@ -69,5 +69,4 @@ Indicates that the database will be notified immediately of all changes to a pro
  [Method Attributes](../windows/method-attributes.md)   
  [defaultbind](../windows/defaultbind.md)   
  [displaybind](../windows/displaybind.md)   
- [requestedit](../windows/requestedit.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [requestedit](../windows/requestedit.md)   

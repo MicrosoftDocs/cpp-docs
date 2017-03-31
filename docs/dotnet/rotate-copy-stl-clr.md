@@ -46,7 +46,7 @@ template<class _FwdIt, class _OutIt> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `rotate_copy`. For more information, see [rotate_copy](http://msdn.microsoft.com/Library/06c5bb1d-3b44-4c06-8f39-e926c0829bae).  
+ This function behaves the same as the C++ Standard Library function `rotate_copy`. For more information, see [rotate_copy](../standard-library/algorithm-functions.md#rotate_copy).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

@@ -49,7 +49,7 @@ template<class _FwdIt1, class _FwdIt2, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `find_first_of`. For more information, see [find_first_of](http://msdn.microsoft.com/Library/e00a4ca9-6d56-446e-9174-14ffdbc87079).  
+ This function behaves the same as the C++ Standard Library function `find_first_of`. For more information, see [find_first_of](../standard-library/algorithm-functions.md#find_first_of).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

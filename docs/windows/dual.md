@@ -102,5 +102,4 @@ __interface IStatic : IDispatch
  [custom](../windows/custom-cpp.md)   
  [dispinterface](../windows/dispinterface.md)   
  [object](../windows/object-cpp.md)   
- [__interface](../cpp/interface.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [__interface](../cpp/interface.md)   

@@ -244,7 +244,7 @@ HRESULT Shutdown(DWORD dwWait = ATL_WORKER_THREAD_WAIT) throw();
   
 ### Parameters  
  `dwWait`  
- The time in milliseconds to wait for the worker thread to shut down.  
+ The time in milliseconds to wait for the worker thread to shut down. ATL_WORKER_THREAD_WAIT defaults to 10 seconds. If necessary, you can define your own value for this symbol before including atlutil.h. 
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure, such as if the timeout value, `dwWait`, is exceeded.  

@@ -82,5 +82,4 @@ Causes an .idl or .h file to be included in the generated .idl file.
  [import](../windows/import.md)   
  [importidl](../windows/importidl.md)   
  [include](../windows/include-cpp.md)   
- [importlib](../windows/importlib.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [importlib](../windows/importlib.md)   

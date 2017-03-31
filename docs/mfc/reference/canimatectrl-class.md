@@ -318,5 +318,5 @@ BOOL Stop();
  [CWnd Class](../../mfc/reference/cwnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CAnimateCtrl::Create](#create)   
- [ON_CONTROL](http://msdn.microsoft.com/library/2cb7ebdf-296b-4606-b191-3449835003db)
+ [ON_CONTROL](message-map-macros-mfc.md#on_control)
 

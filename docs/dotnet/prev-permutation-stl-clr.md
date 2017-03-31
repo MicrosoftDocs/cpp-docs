@@ -47,7 +47,7 @@ template<class _BidIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `prev_permutation`. For more information, see [prev_permutation](http://msdn.microsoft.com/Library/c467e0f9-931d-4028-b835-fbbf51158d97).  
+ This function behaves the same as the C++ Standard Library function `prev_permutation`. For more information, see [prev_permutation](../standard-library/algorithm-functions.md#prev_permutation).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

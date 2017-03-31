@@ -70,5 +70,4 @@ Indicates that the property supports the **OnRequestEdit** notification.
  [Data Member Attributes](../windows/data-member-attributes.md)   
  [defaultbind](../windows/defaultbind.md)   
  [displaybind](../windows/displaybind.md)   
- [immediatebind](../windows/immediatebind.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [immediatebind](../windows/immediatebind.md)   

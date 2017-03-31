@@ -49,7 +49,7 @@ template<class _FwdIt1, class _Diff2, class _Ty, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `search_n`. For more information, see [search_n](http://msdn.microsoft.com/Library/8daa0c12-bac4-4cef-9213-45ef9a8d86af).  
+ This function behaves the same as the C++ Standard Library function `search_n`. For more information, see [search_n](../standard-library/algorithm-functions.md#search_n).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

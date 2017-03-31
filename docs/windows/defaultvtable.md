@@ -97,5 +97,4 @@ class CMyC3 : public IMyI3 {};
   
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
- [Class Attributes](../windows/class-attributes.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [Class Attributes](../windows/class-attributes.md)   

@@ -48,7 +48,7 @@ template<class _RanIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `partial_sort`. For more information, see [partial_sort](http://msdn.microsoft.com/Library/327453e4-16c0-423c-bc1a-abea8ca63157).  
+ This function behaves the same as the C++ Standard Library function `partial_sort`. For more information, see [partial_sort](../standard-library/algorithm-functions.md#partial_sort).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

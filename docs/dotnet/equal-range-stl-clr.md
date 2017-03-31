@@ -49,7 +49,7 @@ template<class _FwdIt, class _Ty, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `equal_range`. For more information, see [equal_range](http://msdn.microsoft.com/Library/f508fa87-41c6-4799-90dc-4ebf17d2126a).  
+ This function behaves the same as the C++ Standard Library function `equal_range`. For more information, see [equal_range](../standard-library/algorithm-functions.md#equal_range).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

@@ -67,5 +67,4 @@ Prevents the compiler from injecting code as a result of attribute use.
  For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
   
 ## See Also  
- [Compiler Attributes](../windows/compiler-attributes.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [Compiler Attributes](../windows/compiler-attributes.md)   

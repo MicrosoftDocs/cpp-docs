@@ -63,7 +63,7 @@ The name of the function identified by the third parameter of the `NOTIFY_HANDLE
  The result of message processing. 0 if successful.  
   
 ## Remarks  
- For an example of using this message handler in a message map, see [NOTIFY_HANDLER](http://msdn.microsoft.com/library/0c546767-9683-45f9-9cbc-e243a7106790).  
+ For an example of using this message handler in a message map, see [NOTIFY_HANDLER](reference/message-map-macros-atl.md#notify_handler)).  
   
 ## See Also  
  [Implementing a Window](../atl/implementing-a-window.md)   

@@ -46,7 +46,7 @@ template<class _FwdIt, class _Ty> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `replace`. For more information, see [replace](http://msdn.microsoft.com/Library/8324dd0c-f3f7-4035-9fbe-654010366149).  
+ This function behaves the same as the C++ Standard Library function `replace`. For more information, see [replace](../standard-library/algorithm-functions.md#replace).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

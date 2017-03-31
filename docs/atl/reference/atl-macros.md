@@ -84,7 +84,7 @@ To find an ATL macro by category, see the following topics.
  [Snap-In Object Macros](../../atl/reference/snap-in-object-macros.md)  
  Provide support for snap-in extensions.  
   
- [String Conversion Macros](http://msdn.microsoft.com/library/8f53659e-0464-4424-97db-6b8453c49863)  
+ [String Conversion Macros](string-conversion-macros.md)  
  Provide string conversion features.  
   
  [Window Class Macros](../../atl/reference/window-class-macros.md)  

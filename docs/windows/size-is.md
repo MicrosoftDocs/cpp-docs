@@ -76,5 +76,4 @@ Specify the size of memory allocated for sized pointers, sized pointers to sized
  [first_is](../windows/first-is.md)   
  [last_is](../windows/last-is.md)   
  [max_is](../windows/max-is.md)   
- [length_is](../windows/length-is.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [length_is](../windows/length-is.md)   

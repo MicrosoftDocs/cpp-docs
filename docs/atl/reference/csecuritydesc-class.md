@@ -93,7 +93,7 @@ class CSecurityDesc
 |[CSecurityDesc::operator =](#operator_eq)|Assignment operator.|  
   
 ## Remarks  
- The **SECURITY_DESCRIPTOR** structure contains the security information associated with an object. Applications use this structure to set and query an object's security status. See also [AtlGetSecurityDescriptor](http://msdn.microsoft.com/library/233578b8-dcc5-4f51-8e62-7cdcc2ff6b11).  
+ The **SECURITY_DESCRIPTOR** structure contains the security information associated with an object. Applications use this structure to set and query an object's security status. See also [AtlGetSecurityDescriptor](security-global-functions.md#atlgetsecuritydescriptor).  
   
  Applications should not modify the **SECURITY_DESCRIPTOR** structure directly, and instead should use the class methods provided.  
   

@@ -46,7 +46,7 @@ template<class _InIt, class _Ty> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `count`. For more information, see [count](http://msdn.microsoft.com/Library/42d33762-e593-4719-ad85-6fb27a83bf41).  
+ This function behaves the same as the C++ Standard Library function `count`. For more information, see [count](../standard-library/algorithm-functions.md#count).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

@@ -47,7 +47,7 @@ template<class _BidIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `stable_sort`. For more information, see [stable_sort](http://msdn.microsoft.com/Library/5af850b2-7556-42a9-be78-0ba2557fe7f7).  
+ This function behaves the same as the C++ Standard Library function `stable_sort`. For more information, see [stable_sort](../standard-library/algorithm-functions.md#stable_sort).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

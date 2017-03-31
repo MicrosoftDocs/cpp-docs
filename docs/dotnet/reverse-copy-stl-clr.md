@@ -45,7 +45,7 @@ template<class _BidIt, class _OutIt> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `reverse_copy`. For more information, see [reverse_copy](http://msdn.microsoft.com/Library/84567cb2-dc19-43a0-831f-6a03a85acb66).  
+ This function behaves the same as the C++ Standard Library function `reverse_copy`. For more information, see [reverse_copy](../standard-library/algorithm-functions.md#reverse_copy).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

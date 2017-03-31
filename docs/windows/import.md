@@ -97,5 +97,4 @@ library MyLib {
  [importidl](../windows/importidl.md)   
  [importlib](../windows/importlib.md)   
  [include](../windows/include-cpp.md)   
- [includelib](../windows/includelib-cpp.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [includelib](../windows/includelib-cpp.md)   
