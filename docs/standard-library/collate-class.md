@@ -152,7 +152,7 @@ int compare(const CharType* first1,
 ### Return Value  
  The member function returns:  
   
--   –1 if the first sequence compares less than the second sequence.  
+-   -1 if the first sequence compares less than the second sequence.  
   
 -   +1 if the second sequence compares less than the first sequence.  
   

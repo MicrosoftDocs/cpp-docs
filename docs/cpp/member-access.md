@@ -38,13 +38,13 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Member Access
-Class member access can be controlled by overloading the member access operator (**–>**). This operator is considered a unary operator in this usage, and the overloaded operator function must be a class member function. Therefore, the declaration for such a function is:  
+Class member access can be controlled by overloading the member access operator (**->**). This operator is considered a unary operator in this usage, and the overloaded operator function must be a class member function. Therefore, the declaration for such a function is:  
   
 ## Syntax  
   
 ```  
   
-class-type *operator–>()  
+class-type *operator->()  
 ```  
   
 ## Remarks  

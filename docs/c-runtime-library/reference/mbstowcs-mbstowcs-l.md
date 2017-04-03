@@ -98,7 +98,7 @@ size_t _mbstowcs_l(
  The locale to use.  
   
 ## Return Value  
- If `mbstowcs` successfully converts the source string, it returns the number of converted multibyte characters. If the `wcstr` argument is `NULL`, the function returns the required size (in wide characters) of the destination string. If `mbstowcs` encounters an invalid multibyte character, it returns –1. If the return value is `count`, the wide-character string is not null-terminated.  
+ If `mbstowcs` successfully converts the source string, it returns the number of converted multibyte characters. If the `wcstr` argument is `NULL`, the function returns the required size (in wide characters) of the destination string. If `mbstowcs` encounters an invalid multibyte character, it returns -1. If the return value is `count`, the wide-character string is not null-terminated.  
   
 > [!IMPORTANT]
 >  Ensure that `wcstr` and `mbstr` do not overlap, and that `count` correctly reflects the number of multibyte characters to convert.  
@@ -217,9 +217,6 @@ Convert back to wide-character string:
   Characters converted: 2  
   Hex value of first 2 wide characters: 0x3042 0x3043  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

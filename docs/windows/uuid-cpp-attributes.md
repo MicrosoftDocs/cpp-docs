@@ -80,5 +80,4 @@ Specifies the unique ID for a class or interface.
  [Interface Attributes](../windows/interface-attributes.md)   
  [Class Attributes](../windows/class-attributes.md)   
  [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
- [uuid](http://msdn.microsoft.com/library/windows/desktop/aa367302)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [uuid](http://msdn.microsoft.com/library/windows/desktop/aa367302)   

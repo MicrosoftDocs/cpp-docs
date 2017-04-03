@@ -58,7 +58,7 @@ translation.priority.ht:
  **E**  *sign* opt*digit-sequence*  
   
  *sign*: one of  
- **+ –**  
+ **+ -**  
   
  *digit-sequence*:  
  *digit*  

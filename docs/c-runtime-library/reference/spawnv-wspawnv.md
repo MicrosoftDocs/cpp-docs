@@ -90,7 +90,7 @@ intptr_t _wspawnv(
  Array of pointers to arguments. The argument `argv`[0] is usually a pointer to a path in real mode or to the program name in protected mode, and `argv`[1] through `argv`[`n`] are pointers to the character strings forming the new argument list. The argument `argv`[`n` +1] must be a `NULL` pointer to mark the end of the argument list.  
   
 ## Return Value  
- The return value from a synchronous `_spawnv` or `_wspawnv` (`_P_WAIT` specified for `mode`) is the exit status of the new process. The return value from an asynchronous `_spawnv` or `_wspawnv` (`_P_NOWAIT` or `_P_NOWAITO` specified for `mode`) is the process handle. The exit status is 0 if the process terminated normally. You can set the exit status to a nonzero value if the spawned process specifically calls the `exit` routine with a nonzero argument. If the new process did not explicitly set a positive exit status, a positive exit status indicates an abnormal exit with an abort or an interrupt. A return value of –1 indicates an error (the new process is not started). In this case, `errno` is set to one of the following values.  
+ The return value from a synchronous `_spawnv` or `_wspawnv` (`_P_WAIT` specified for `mode`) is the exit status of the new process. The return value from an asynchronous `_spawnv` or `_wspawnv` (`_P_NOWAIT` or `_P_NOWAITO` specified for `mode`) is the process handle. The exit status is 0 if the process terminated normally. You can set the exit status to a nonzero value if the spawned process specifically calls the `exit` routine with a nonzero argument. If the new process did not explicitly set a positive exit status, a positive exit status indicates an abnormal exit with an abort or an interrupt. A return value of -1 indicates an error (the new process is not started). In this case, `errno` is set to one of the following values.  
   
  `E2BIG`  
  Argument list exceeds 1024 bytes.  
@@ -125,12 +125,6 @@ intptr_t _wspawnv(
   
 ## Example  
  See the example in [_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md).  
-  
-## .NET Framework Equivalent  
-  
--   [System::Diagnostics::Process Class](https://msdn.microsoft.com/en-us/library/system.diagnostics.process.aspx)  
-  
--   [System::Diagnostics::ProcessStartInfo Class](https://msdn.microsoft.com/en-us/library/system.diagnostics.processstartinfo.aspx)  
   
 ## See Also  
  [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   

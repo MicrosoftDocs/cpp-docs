@@ -92,7 +92,7 @@ Writing fast code requires understanding all aspects of your application and how
 ##  <a name="_core_cache_hits_and_page_faults"></a> Cache Misses and Page Faults  
  Missed cache hits, on both the internal and external cache, as well as page faults (going to secondary storage for program instructions and data) slow the performance of a program.  
   
- A CPU cache hit can cost your program 10–20 clock cycles. An external cache hit can cost 20–40 clock cycles. A page fault can cost one million clock cycles (assuming a processor that handles 500 million instructions/second and a time of 2 millisecond for a page fault). Therefore, it is in the best interest of program execution to write code that will reduce the number of missed cache hits and page faults.  
+ A CPU cache hit can cost your program 10-20 clock cycles. An external cache hit can cost 20-40 clock cycles. A page fault can cost one million clock cycles (assuming a processor that handles 500 million instructions/second and a time of 2 millisecond for a page fault). Therefore, it is in the best interest of program execution to write code that will reduce the number of missed cache hits and page faults.  
   
  One reason for slow programs is that they take more page faults or miss the cache more often than necessary. To avoid this, it's important to use data structures with good locality of reference, which means keeping related things together. Sometimes a data structure that looks great turns out to be horrible because of poor locality of reference, and sometimes the reverse is true. Here are two examples:  
   
@@ -103,9 +103,9 @@ Writing fast code requires understanding all aspects of your application and how
 ##  <a name="_core_sorting_and_searching"></a> Sorting and Searching  
  Sorting is inherently time consuming compared to many typical operations. The best way to avoid unnecessary slowdown is to avoid sorting at critical times. You may be able to:  
   
--   Defer sorting until a non-performance–critical time.  
+-   Defer sorting until a non-performance-critical time.  
   
--   Sort the data at an earlier, non-performance–critical time.  
+-   Sort the data at an earlier, non-performance-critical time.  
   
 -   Sort only the part of the data that truly needs sorting.  
   

@@ -49,7 +49,7 @@ You can use the project configurations in Visual Studio to set up C++ applicatio
   
 3.  Choose the **Configuration Manager** button to open the **Configuration Manager** dialog box.  
   
-4.  In the **Active Solution Platform** drop-down list, select the **\<New…>** option to open the **New Solution Platform** dialog box.  
+4.  In the **Active Solution Platform** drop-down list, select the **\<New...>** option to open the **New Solution Platform** dialog box.  
   
 5.  In the **Type or select the new platform** drop-down list, select a 64-bit platform.  
   

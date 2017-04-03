@@ -38,7 +38,7 @@ translation.priority.ht:
   
 1.  In the dialog box, select the control and press the **DELETE** key.  
   
-     \- or –  
+     \- or -  
   
 2.  On the **Edit** menu, click **Delete**.  
   

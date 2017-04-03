@@ -11,7 +11,7 @@ ms.topic: "reference"
 f1_keywords:
  - "CAtlDebugInterfacesModule"
  - "atlbase/ATL::CAtlDebugInterfacesModule"
- dev_langs: 
+dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "_ATL_DEBUG_QI macro"
@@ -46,7 +46,7 @@ class CAtlDebugInterfacesModule
 ```  
   
 ## Remarks  
- `CAtlDebugInterfacesModule` provides the support required for debugging interfaces. It is included in any project that defines the symbol [_ATL_DEBUG_QI](http://msdn.microsoft.com/library/4f1feddf-1469-42ad-a2f7-5a816d1c0bc5).  
+ `CAtlDebugInterfacesModule` provides the support required for debugging interfaces. It is included in any project that defines the symbol [_ATL_DEBUG_QI](debugging-and-error-reporting-macros.md#_atl_debug_qi).  
   
 ## Requirements  
  **Header:** atlbase.h  

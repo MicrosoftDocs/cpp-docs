@@ -45,9 +45,9 @@ The following are legal entries for the Key property in the accelerator table:
   
     -   Values from 033 through 255, whether preceded by 0's or not are interpreted as ANSI values.  
   
--   A single keyboard character. Uppercase A – Z or the numbers 0 – 9 can be either ASCII or virtual key values; any other character is ASCII only.  
+-   A single keyboard character. Uppercase A - Z or the numbers 0 - 9 can be either ASCII or virtual key values; any other character is ASCII only.  
   
--   A single keyboard character in the range A – Z (uppercase only), preceded by a caret (^) (for example, ^C). This enters the ASCII value of the key when it is pressed with the CTRL key held down.  
+-   A single keyboard character in the range A - Z (uppercase only), preceded by a caret (^) (for example, ^C). This enters the ASCII value of the key when it is pressed with the CTRL key held down.  
   
     > [!NOTE]
     >  When entering an ASCII value, the modifier property options are limited. The only control key available for use is the ALT key.  

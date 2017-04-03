@@ -36,7 +36,11 @@ The `alignas` type specifier is a portable, C++ standard way to specify custom a
 ## Example  
  You can use `alignas` on a class, struck or union, or on individual members. When multiple `alignas` specifiers are encountered, the compiler will choose the strictest one, (the one with the largest value).  
   
-```  
+```cpp  
+// alignas_alignof.cpp
+// compile with: cl /EHsc alignas_alignof.cpp
+#include <iostream>
+
 struct alignas(16) Bar  
 {      
     int i;       // 4 bytes  
@@ -44,9 +48,11 @@ struct alignas(16) Bar
     alignas(4) char arr[3];  
     short s;          // 2 bytes  
 };  
-…  
-cout << alignof(Bar) << endl; // output: 16  
-  
+
+int main()
+{  
+    std::cout << alignof(Bar) << std::endl; // output: 16  
+}  
 ```  
   
 ## See Also  

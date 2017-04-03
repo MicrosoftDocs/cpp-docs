@@ -78,7 +78,7 @@ Locks or unlocks bytes of a file.
  Number of bytes to lock.  
   
 ## Return Value  
- `_locking` returns 0 if successful. A return value of –1 indicates failure, in which case [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) is set to one of the following values.  
+ `_locking` returns 0 if successful. A return value of -1 indicates failure, in which case [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) is set to one of the following values.  
   
  `EACCES`  
  Locking violation (file already locked or unlocked).  
@@ -191,9 +191,6 @@ No one can change these bytes while I'm reading them
 30 bytes read: The first thirty bytes of this  
 Now I'm done. Do what you will with them  
 ```  
-  
-## .NET Framework Equivalent  
- [System::IO::FileStream::Lock](https://msdn.microsoft.com/en-us/library/system.io.filestream.lock.aspx)  
   
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   

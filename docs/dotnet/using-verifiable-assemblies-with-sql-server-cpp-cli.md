@@ -92,7 +92,7 @@ go
  SQL scripts can be executed interactively in SQL Query Analyzer or at the command line with the sqlcmd.exe utility. The following command line connects to MyServer, uses the default database, uses a trusted connection, inputs MyScript.sql, and outputs MyResult.txt.  
   
 ```  
-sqlcmd –S MyServer -E –i myScript.sql –o myResult.txt  
+sqlcmd -S MyServer -E -i myScript.sql -o myResult.txt  
 ```  
   
 ## See Also  

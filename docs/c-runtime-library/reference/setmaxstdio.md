@@ -69,7 +69,7 @@ int _setmaxstdio(
  New maximum for the number of simultaneously open files at the `stdio` level.  
   
 ## Return Value  
- Returns `newmax` if successful; –1 otherwise.  
+ Returns `newmax` if successful; -1 otherwise.  
   
  If `newmax` is less than `_IOB_ENTRIES` or greater then the maximum number of handles available in the operating system, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets `errno` to `EINVAL`.  
   
@@ -95,9 +95,6 @@ int _setmaxstdio(
   
 ## Example  
  See [_getmaxstdio](../../c-runtime-library/reference/getmaxstdio.md) for an example of using `_setmaxstdio`.  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)

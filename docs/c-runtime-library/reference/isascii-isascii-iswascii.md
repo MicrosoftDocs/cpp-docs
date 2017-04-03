@@ -82,7 +82,7 @@ int iswascii(
  Integer to test.  
   
 ## Return Value  
- Each of these routines returns nonzero if `c` is a particular representation of an ASCII character. `__isascii` returns a nonzero value if `c` is an ASCII character (in the range 0x00 – 0x7F). `iswascii` returns a nonzero value if `c` is a wide-character representation of an ASCII character. Each of these routines returns 0 if `c` does not satisfy the test condition.  
+ Each of these routines returns nonzero if `c` is a particular representation of an ASCII character. `__isascii` returns a nonzero value if `c` is an ASCII character (in the range 0x00 - 0x7F). `iswascii` returns a nonzero value if `c` is a wide-character representation of an ASCII character. Each of these routines returns 0 if `c` does not satisfy the test condition.  
   
 ## Remarks  
  Both `__isascii` and `iswascii` are implemented as macros unless the preprocessor macro _CTYPE_DISABLE_MACROS is defined.  

@@ -83,22 +83,18 @@ Formats and prints to the console. More-secure versions are available; see [_cpr
   
 ```  
 int _cprintf(   
-   const char * format [,   
-   argument] ...   
+   const char * format [, argument_list]  
 );  
-int _cprintf_l(   
+int _cprintf_l(  
    const char * format,  
-   locale_t locale [,  
-   argument] …   
+   locale_t locale [, argument_list]  
 );  
 int _cwprintf(  
-   const wchar * format [,   
-   argument] …  
+   const wchar * format [, argument_list]  
 );  
 int _cwprintf_l(  
    const wchar * format,  
-   locale_t locale [,   
-   argument] …  
+   locale_t locale [, argument_list]  
 );  
 ```  
   
@@ -106,8 +102,8 @@ int _cwprintf_l(
  `format`  
  Format-control string.  
   
- `argument`  
- Optional parameters.  
+ `argument_list`  
+ Optional parameters for the format string.  
   
  `locale`  
  The locale to use.  
@@ -116,9 +112,9 @@ int _cwprintf_l(
  The number of characters printed.  
   
 ## Remarks  
- Thesefunctions format and print a series of characters and values directly to the console, using the `_putch` function (`_putwch` for `_cwprintf`) to output characters. Each `argument` (if any) is converted and output according to the corresponding format specification in `format`. The format has the same form and function as the `format` parameter for the [printf](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) function. Unlike the `fprintf`, `printf`, and `sprintf` functions, neither `_cprintf` nor `_cwprintf` translates line-feed characters into carriage return–line feed (CR-LF) combinations when output.  
+ These functions format and print a series of characters and values directly to the console, using the `_putch` function (`_putwch` for `_cwprintf`) to output characters. Each argument in `argument_list` (if any) is converted and output according to the corresponding format specification in `format`. The `format` argument uses the [format specification syntax for printf and wprintf functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). Unlike the `fprintf`, `printf`, and `sprintf` functions, neither `_cprintf` nor `_cwprintf` translates line-feed characters into carriage return-line feed (CR-LF) combinations when output.  
   
- An important distinction is that `_cwprintf` displays Unicode characters when used in Windows NT. Unlike `_cprintf`, `_cwprintf` uses the current console locale settings.  
+ An important distinction is that `_cwprintf` displays Unicode characters when used in Windows. Unlike `_cprintf`, `_cwprintf` uses the current console locale settings.  
   
  The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current locale.  
   
@@ -170,9 +166,6 @@ int main( void )
 ```Output  
 -16  001d  62511  A Test  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   

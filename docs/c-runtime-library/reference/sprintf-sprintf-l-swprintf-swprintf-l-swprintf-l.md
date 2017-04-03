@@ -144,7 +144,7 @@ int _sprintf_l(
  For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
   
 ## Return Value  
- The number of characters written, or –1 if an error occurred. If `buffer` or `format` is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.  
+ The number of characters written, or -1 if an error occurred. If `buffer` or `format` is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.  
   
  `sprintf` returns the number of bytes stored in `buffer`, not counting the terminating null character. `swprintf`returns the number of wide characters stored in `buffer`, not counting the terminating null wide character.  
   
@@ -236,9 +236,6 @@ int main( void )
 wrote 11 characters  
 wrote -1 characters  
 ```  
-  
-## .NET Framework Equivalent  
- [System::String::Format](https://msdn.microsoft.com/en-us/library/system.string.format.aspx)  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

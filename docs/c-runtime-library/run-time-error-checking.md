@@ -42,12 +42,12 @@ The C run-time library contains the functions that support run-time error checks
   
 ### Run-Time Error Checking Functions  
   
-|Function|Use|.NET Framework equivalent|  
-|--------------|---------|-------------------------------|  
-|[_RTC_GetErrDesc](../c-runtime-library/reference/rtc-geterrdesc.md)|Returns a brief description of a run-time error check type.||  
-|[_RTC_NumErrors](../c-runtime-library/reference/rtc-numerrors.md)|Returns the total number of errors that can be detected by run-time error checks.||  
-|[_RTC_SetErrorFunc](../c-runtime-library/reference/rtc-seterrorfunc.md)|Designates a function as the handler for reporting run-time error checks.||  
-|[_RTC_SetErrorType](../c-runtime-library/reference/rtc-seterrortype.md)|Associates an error that is detected by run-time error checks with a type.||  
+|Function|Use|  
+|--------------|---------|  
+|[_RTC_GetErrDesc](../c-runtime-library/reference/rtc-geterrdesc.md)|Returns a brief description of a run-time error check type.|  
+|[_RTC_NumErrors](../c-runtime-library/reference/rtc-numerrors.md)|Returns the total number of errors that can be detected by run-time error checks.|  
+|[_RTC_SetErrorFunc](../c-runtime-library/reference/rtc-seterrorfunc.md)|Designates a function as the handler for reporting run-time error checks.|  
+|[_RTC_SetErrorType](../c-runtime-library/reference/rtc-seterrortype.md)|Associates an error that is detected by run-time error checks with a type.|  
   
 ## See Also  
  [Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)   

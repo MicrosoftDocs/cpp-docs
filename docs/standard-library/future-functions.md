@@ -39,10 +39,10 @@ future<typename result_of<Fn(ArgTypes...)>::type>
 |||  
 |-|-|  
 |*dfn*|The result of calling `decay_copy(forward<Fn>(fn))`.|  
-|*dargs*|The results of the calls `decay_copy(forward<ArgsTypes>(args…))`.|  
-|*Ty*|The type `result_of<Fn(ArgTypes…)>::type`.|  
+|*dargs*|The results of the calls `decay_copy(forward<ArgsTypes>(args...))`.|  
+|*Ty*|The type `result_of<Fn(ArgTypes...)>::type`.|  
   
- The first template function returns `async(launch::any, fn, args…)`.  
+ The first template function returns `async(launch::any, fn, args...)`.  
   
  The second function returns a `future<Ty>` object whose *associated asynchronous state* holds a result together with the values of *dfn* and *dargs* and a thread object to manage a separate thread of execution.  
   
@@ -54,7 +54,7 @@ future<typename result_of<Fn(ArgTypes...)>::type>
   
  If `policy` is `launch::deferred`, the function marks its associated asynchronous state as holding a *deferred function* and returns. The first call to any non-timed function that waits for the associated asynchronous state to be ready in effect calls the deferred function by evaluating `INVOKE(dfn, dargs..., Ty)`.  
   
- In all cases, the associated asynchronous state of the `future` object is not set to *ready* until the evaluation of `INVOKE(dfn, dargs…, Ty)` completes, either by throwing an exception or by returning normally. The result of the associated asynchronous state is an exception if one was thrown, or any value that's returned by the evaluation.  
+ In all cases, the associated asynchronous state of the `future` object is not set to *ready* until the evaluation of `INVOKE(dfn, dargs..., Ty)` completes, either by throwing an exception or by returning normally. The result of the associated asynchronous state is an exception if one was thrown, or any value that's returned by the evaluation.  
   
 > [!NOTE]
 >  For a `future`—or the last [shared_future](../standard-library/shared-future-class.md)—that's attached to a task started with `std::async`, the destructor blocks if the task has not completed; that is, it blocks if this thread did not yet call `.get()` or `.wait()` and the task is still running. If a `future` obtained from `std::async` is moved outside the local scope, other code that uses it must be aware that its destructor may block for the shared state to become ready.  

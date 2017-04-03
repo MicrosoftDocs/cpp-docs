@@ -83,7 +83,7 @@ int _waccess(
  Read/write attribute.  
   
 ## Return Value  
- Each function returns 0 if the file has the given mode. The function returns –1 if the named file does not exist or does not have the given mode; in this case, `errno` is set as shown in the following table.  
+ Each function returns 0 if the file has the given mode. The function returns -1 if the named file does not exist or does not have the given mode; in this case, `errno` is set as shown in the following table.  
   
  `EACCES`  
  Access denied: the file's permission setting does not allow specified access.  
@@ -157,9 +157,6 @@ int main( void )
 File crt_ACCESS.C exists.  
 File crt_ACCESS.C does not have write permission.  
 ```  
-  
-## .NET Framework Equivalent  
- <xref:System.IO.FileAccess?displayProperty=fullName>  
   
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   

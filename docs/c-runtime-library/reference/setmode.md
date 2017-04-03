@@ -76,12 +76,12 @@ int _setmode (
 ## Return Value  
  If successful, returns the previous translation mode.  
   
- If invalid parameters are passed to this function, the invalid-parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns –1 and sets `errno` to either `EBADF`, which indicates an invalid file descriptor, or `EINVAL`, which indicates an invalid `mode` argument.  
+ If invalid parameters are passed to this function, the invalid-parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets `errno` to either `EBADF`, which indicates an invalid file descriptor, or `EINVAL`, which indicates an invalid `mode` argument.  
   
  For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- The `_setmode` function sets to `mode` the translation mode of the file given by `fd`. Passing `_O_TEXT` as `mode` sets text (that is, translated) mode. Carriage return–line feed (CR-LF) combinations are translated into a single line feed character on input. Line feed characters are translated into CR-LF combinations on output. Passing `_O_BINARY` sets binary (untranslated) mode, in which these translations are suppressed.  
+ The `_setmode` function sets to `mode` the translation mode of the file given by `fd`. Passing `_O_TEXT` as `mode` sets text (that is, translated) mode. Carriage return-line feed (CR-LF) combinations are translated into a single line feed character on input. Line feed characters are translated into CR-LF combinations on output. Passing `_O_BINARY` sets binary (untranslated) mode, in which these translations are suppressed.  
   
  You can also pass `_O_U16TEXT`, `_O_U8TEXT`, or _`O_WTEXT` to enable Unicode mode, as demonstrated in the second example later in this document. `_setmode` is typically used to modify the default translation mode of `stdin` and `stdout`, but you can use it on any file. If you apply `_setmode` to the file descriptor for a stream, call `_setmode` before you perform any input or output operations on the stream.  
   
@@ -143,12 +143,6 @@ int main(void) {
     return 0;  
 }  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::IO::BinaryReader Class](https://msdn.microsoft.com/en-us/library/system.io.binaryreader.aspx)  
-  
--   [System::IO::TextReader Class](https://msdn.microsoft.com/en-us/library/system.io.textreader.aspx)  
   
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   

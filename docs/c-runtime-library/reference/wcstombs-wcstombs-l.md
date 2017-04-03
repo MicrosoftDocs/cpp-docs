@@ -103,7 +103,7 @@ size_t _wcstombs_l(
  The locale to use.  
   
 ## Return Value  
- If `wcstombs` successfully converts the multibyte string, it returns the number of bytes written into the multibyte output string, excluding the terminating `NULL` (if any). If the `mbstr` argument is `NULL`, `wcstombs` returns the required size in bytes of the destination string. If `wcstombs` encounters a wide character it cannot convert to a multibyte character, it returns –1 cast to type `size_t` and sets `errno` to `EILSEQ`.  
+ If `wcstombs` successfully converts the multibyte string, it returns the number of bytes written into the multibyte output string, excluding the terminating `NULL` (if any). If the `mbstr` argument is `NULL`, `wcstombs` returns the required size in bytes of the destination string. If `wcstombs` encounters a wide character it cannot convert to a multibyte character, it returns -1 cast to type `size_t` and sets `errno` to `EILSEQ`.  
   
 ## Remarks  
  The `wcstombs` function converts the wide-character string pointed to by `wcstr` to the corresponding multibyte characters and stores the results in the `mbstr` array. The `count` parameter indicates the maximum number of bytes that can be stored in the multibyte output string (that is, the size of `mbstr`). In general, it is not known how many bytes will be required when converting a wide-character string. Some wide characters will require only one byte in the output string; others require two. If there are two bytes in the multibyte output string for every wide character in the input string (including the wide character `NULL`), the result is guaranteed to fit.  
@@ -167,9 +167,6 @@ Convert wide-character string:
    Characters converted: 13  
     Multibyte character: Hello, world.  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

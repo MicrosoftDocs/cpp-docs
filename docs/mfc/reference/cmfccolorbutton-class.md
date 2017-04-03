@@ -66,7 +66,7 @@ class CMFCColorButton : public CMFCButton
 |Name|Description|  
 |----------|-----------------|  
 |[CMFCColorButton::EnableAutomaticButton](#enableautomaticbutton)|Enables and disables an "automatic" button that is positioned above the regular color buttons. (The standard system automatic button is labeled **Automatic**.)|  
-|[CMFCColorButton::EnableOtherButton](#enableotherbutton)|Enables and disables an "other" button that is positioned below the regular color buttons. (The standard system "other" button is labeled **More Colors…**.)|  
+|[CMFCColorButton::EnableOtherButton](#enableotherbutton)|Enables and disables an "other" button that is positioned below the regular color buttons. (The standard system "other" button is labeled **More Colors**.)|  
 |[CMFCColorButton::GetAutomaticColor](#getautomaticcolor)|Retrieves the current automatic color.|  
 |[CMFCColorButton::GetColor](#getcolor)|Retrieves a button's color.|  
 |[CMFCColorButton::SetColor](#setcolor)|Sets a button's color.|  
@@ -107,7 +107,7 @@ class CMFCColorButton : public CMFCButton
 |`m_strOtherText`|A string. The label of the "other" button in a color selection menu.|  
   
 ## Remarks  
- By default, the `CMFCColorButton` class behaves as a push button that opens a color picker dialog box. The color picker dialog box contains an array of small color buttons and an "other" button that displays a custom color picker. (The standard system "other" button is labeled **More Colors…**.) When a user selects a new color, the `CMFCColorButton` object reflects the change and displays the selected color.  
+ By default, the `CMFCColorButton` class behaves as a push button that opens a color picker dialog box. The color picker dialog box contains an array of small color buttons and an "other" button that displays a custom color picker. (The standard system "other" button is labeled **More Colors**.) When a user selects a new color, the `CMFCColorButton` object reflects the change and displays the selected color.  
   
  Create a color button control either directly in your code, or by using the **ClassWizard** tool and a dialog box template. If you create a color button control directly, add a `CMFCColorButton` variable to your application, and then call the constructor and `Create` methods of the `CMFCColorButton` object. If you use the **ClassWizard**, add a `CButton` variable to your application, and then change the type of the variable from `CButton` to `CMFCColorButton`.  
   

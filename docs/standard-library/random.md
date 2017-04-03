@@ -325,7 +325,7 @@ This code demonstrates two different randomizations—randomize a vector of inte
 |-|-|  
 |[cauchy_distribution Class](../standard-library/cauchy-distribution-class.md)|Produces a Cauchy distribution of real (floating point) values.|  
 |[chi_squared_distribution Class](../standard-library/chi-squared-distribution-class.md)|Produces a chi-squared distribution of real (floating point) values.|  
-|[fisher_f_distribution Class](../standard-library/fisher-f-distribution-class.md)|Produces an F-distribution (also known as Snedecor's F distribution or the Fisher–Snedecor distribution) of real (floating point) values.|  
+|[fisher_f_distribution Class](../standard-library/fisher-f-distribution-class.md)|Produces an F-distribution (also known as Snedecor's F distribution or the Fisher-Snedecor distribution) of real (floating point) values.|  
 |[lognormal_distribution Class](../standard-library/lognormal-distribution-class.md)|Produces a log-normal distribution of real (floating point) values.|  
 |[normal_distribution Class](../standard-library/normal-distribution-class.md)|Produces a normal (Gaussian) distribution of real (floating point) values.|  
 |[student_t_distribution Class](../standard-library/student-t-distribution-class.md)|Produces a Student's *t*-distribution of real (floating point) values.|  

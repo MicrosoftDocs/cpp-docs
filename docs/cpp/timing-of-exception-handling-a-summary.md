@@ -55,7 +55,7 @@ A termination handler is executed no matter how the `__try` statement block is t
   
 3.  If this filter passes control (returns 0), the process continues until a filter is found that does not pass control.  
   
-4.  If this filter returns –1, execution continues where the exception was raised, and no termination takes place.  
+4.  If this filter returns -1, execution continues where the exception was raised, and no termination takes place.  
   
 5.  If the filter returns 1, the following events occur:  
   

@@ -70,7 +70,7 @@ A custom brush is a rectangular portion of an image that you pick up and use lik
   
 #### To double or halve the custom brush size  
   
-1.  Press the **PLUS SIGN** (**+**) key to double the brush size, or the **MINUS SIGN** (**–**) key to halve it.  
+1.  Press the **PLUS SIGN** (**+**) key to double the brush size, or the **MINUS SIGN** (**-**) key to halve it.  
   
 #### To cancel the custom brush  
   

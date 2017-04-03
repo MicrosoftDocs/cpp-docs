@@ -75,5 +75,4 @@ Specifies a `dispid` parameter for a member function (either a property or a met
  [Data Member Attributes](../windows/data-member-attributes.md)   
  [defaultvalue](../windows/defaultvalue.md)   
  [in](../windows/in-cpp.md)   
- [out](../windows/out-cpp.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [out](../windows/out-cpp.md)   

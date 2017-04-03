@@ -123,9 +123,6 @@ wchar_t *_wfullpath_dbg(
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
-## .NET Framework Equivalent  
- <xref:System.IO.File.Create%2A>  
-  
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   
  [_fullpath, _wfullpath](../../c-runtime-library/reference/fullpath-wfullpath.md)   

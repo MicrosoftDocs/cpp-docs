@@ -51,7 +51,7 @@ Unary operators appear before their operand and associate from right to left.
  **sizeof (**  *type-name*  **)**  
   
  *unary-operator*: one of  
- **& \* + –** `~` **!**  
+ **& \* + -** `~` **!**  
   
 ## See Also  
  [C Operators](../c-language/c-operators.md)

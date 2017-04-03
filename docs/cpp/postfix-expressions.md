@@ -44,16 +44,16 @@ Postfix expressions consist of primary expressions or expressions in which postf
 |[Subscript operator](../cpp/subscript-operator.md)|**[ ]**|  
 |[Function call operator](../cpp/function-call-operator-parens.md)|**( )**|  
 |[Explicit type conversion operator](../cpp/explicit-type-conversion-operator-parens.md)|*type-name* **( )**|  
-|[Member access operator](../cpp/member-access-operators-dot-and.md)|**.** or **–>**|  
+|[Member access operator](../cpp/member-access-operators-dot-and.md)|**.** or **->**|  
 |[Postfix increment operator](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|`++`|  
-|[Postfix decrement operator](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|**––**|  
+|[Postfix decrement operator](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|**--**|  
   
  The following syntax describes possible postfix expressions:  
   
 ```  
   
       primary-expression   
-postfix-expression[expression]postfix-expression(expression-list)simple-type-name(expression-list)postfix-expression.namepostfix-expression–>namepostfix-expression++postfix-expression––cast-keyword < typename > (expression )typeid ( typename )  
+postfix-expression[expression]postfix-expression(expression-list)simple-type-name(expression-list)postfix-expression.namepostfix-expression->namepostfix-expression++postfix-expression--cast-keyword < typename > (expression )typeid ( typename )  
 ```  
   
  The *postfix-expression* above may be a primary expression or another postfix expression.  See **primary expressions**.  Postfix expressions group left to right, thus allowing the expressions to be chained together as follows:  

@@ -55,7 +55,7 @@ int fx( [ParamArray] Int32[] ); // 2
 fx( 1, 2 );  
 ```  
   
- resolves to `fx(…)` while in the new syntax, it resolves to the `ParamArray` instance. On the off chance that your program behavior depends on the invocation of the ellipsis instance over that of the `ParamArray`, you will need to modify either the signature or the call.  
+ resolves to `fx(...)` while in the new syntax, it resolves to the `ParamArray` instance. On the off chance that your program behavior depends on the invocation of the ellipsis instance over that of the `ParamArray`, you will need to modify either the signature or the call.  
   
 ## See Also  
  [General Language Changes (C++/CLI)](../dotnet/general-language-changes-cpp-cli.md)

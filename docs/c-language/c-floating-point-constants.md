@@ -54,7 +54,7 @@ A "floating-point constant" is a decimal number that represents a signed real nu
  &nbsp;&nbsp; **E**  *sign*<sub>opt</sub> *digit-sequence*  
   
  *sign* : one of  
- &nbsp;&nbsp; **+ –**  
+ &nbsp;&nbsp; **+ -**  
   
  *digit-sequence*:  
  &nbsp;&nbsp; *digit*  
@@ -75,7 +75,7 @@ A "floating-point constant" is a decimal number that represents a signed real nu
 25E-4     /* =  0.0025 */  
 ```  
   
- Floating-point constants are positive unless they are preceded by a minus sign (**–**). In this case, the minus sign is treated as a unary arithmetic negation operator. Floating-point constants have type `float`, `double`, or `long double`.  
+ Floating-point constants are positive unless they are preceded by a minus sign (**-**). In this case, the minus sign is treated as a unary arithmetic negation operator. Floating-point constants have type `float`, `double`, or `long double`.  
   
  A floating-point constant without an **f**, **F**, **l**, or **L** suffix has type `double`. If the letter **f** or **F** is the suffix, the constant has type `float`. If suffixed by the letter **l** or **L**, it has type `long double`. For example:  
   

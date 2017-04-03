@@ -158,7 +158,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/Yd](../../build/reference/yd-place-debug-information-in-object-file.md)|Deprecated. Places complete debugging information in all object files. Use [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md) instead.|  
 |[/Yl](../../build/reference/yl-inject-pch-reference-for-debug-library.md)|Injects a PCH reference when creating a debug library|  
 |[/Yu](../../build/reference/yu-use-precompiled-header-file.md)|Uses a precompiled header file during build.|  
-|[/Z7](../../build/reference/z7-zi-zi-debug-information-format.md)|Generates C 7.0–compatible debugging information.|  
+|[/Z7](../../build/reference/z7-zi-zi-debug-information-format.md)|Generates C 7.0-compatible debugging information.|  
 |[/Za](../../build/reference/za-ze-disable-language-extensions.md)|Disables language extensions.|  
 |[/Zc](../../build/reference/zc-conformance.md)|Specifies standard behavior under [/Ze](../../build/reference/za-ze-disable-language-extensions.md).[/Za, /Ze (Disable Language Extensions)](../../build/reference/za-ze-disable-language-extensions.md)|  
 |[/Ze](../../build/reference/za-ze-disable-language-extensions.md)|Deprecated. Enables language extensions.|  

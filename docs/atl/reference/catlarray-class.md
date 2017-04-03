@@ -117,7 +117,7 @@ size_t Add();
  Returns the index of the added element.  
   
 ### Remarks  
- The new element is added to the end of the array. If no element is provided, an empty element is added; that is, the array is increased in size as though a real element has been added. If the operation fails, [AtlThrow](http://msdn.microsoft.com/library/2bd111da-8170-488d-914a-c9bf6b6765f7) is called with the argument E_OUTOFMEMORY.  
+ The new element is added to the end of the array. If no element is provided, an empty element is added; that is, the array is increased in size as though a real element has been added. If the operation fails, [AtlThrow](debugging-and-error-reporting-global-functions.md#atlthrow) is called with the argument E_OUTOFMEMORY.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#1](../../atl/codesnippet/cpp/catlarray-class_1.cpp)]  

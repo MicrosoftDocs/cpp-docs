@@ -432,7 +432,7 @@ Epilogue:
   
 -   Word 0  
   
-    -   `Function Start RVA` = 0x000535F8 (= 0x004535F8–0x00400000)  
+    -   `Function Start RVA` = 0x000535F8 (= 0x004535F8-0x00400000)  
   
 -   Word 1  
   
@@ -467,7 +467,7 @@ Epilogue:
   
 -   Word 0  
   
-    -   `Function Start RVA` = 0x000533AC (= 0x004533AC –0x00400000)  
+    -   `Function Start RVA` = 0x000533AC (= 0x004533AC -0x00400000)  
   
 -   Word 1  
   
@@ -502,7 +502,7 @@ Epilogue:
   
 -   Word 0  
   
-    -   `Function Start RVA` = 0x00053988 (= 0x00453988–0x00400000)  
+    -   `Function Start RVA` = 0x00053988 (= 0x00453988-0x00400000)  
   
 -   Word 1  
   
@@ -548,7 +548,7 @@ Epilogues:
   
 -   Word 0  
   
-    -   `Function Start RVA` = 0x000592F4 (= 0x004592F4–0x00400000)  
+    -   `Function Start RVA` = 0x000592F4 (= 0x004592F4-0x00400000)  
   
 -   Word 1  
   
@@ -608,7 +608,7 @@ Epilogue:
   
 -   Word 0  
   
-    -   `Function Start RVA` = 0x00085A20 (= 0x00485A20–0x00400000)  
+    -   `Function Start RVA` = 0x00085A20 (= 0x00485A20-0x00400000)  
   
 -   Word 1  
   
@@ -666,7 +666,7 @@ Epilogue:
   
 -   Word 0  
   
-    -   `Function Start RVA` = 0x00088C24 (= 0x00488C24–0x00400000)  
+    -   `Function Start RVA` = 0x00088C24 (= 0x00488C24-0x00400000)  
   
 -   Word 1  
   
@@ -702,7 +702,7 @@ Epilogue:
   
     -   Unwind code 4 = 0xFF: end  
   
--   Word 3 specifies an exception handler  = 0x0019A7ED (= 0x0059A7ED – 0x00400000)  
+-   Word 3 specifies an exception handler  = 0x0019A7ED (= 0x0059A7ED - 0x00400000)  
   
 -   Words 4 and beyond are inlined exception data  
   
@@ -725,7 +725,7 @@ Function:
   
 -   Word 0  
   
-    -   `Function Start RVA` = 0x00088C72 (= 0x00488C72–0x00400000)  
+    -   `Function Start RVA` = 0x00088C72 (= 0x00488C72-0x00400000)  
   
 -   Word 1  
   

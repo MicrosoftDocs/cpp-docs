@@ -367,7 +367,8 @@ INT_PTR GetCount() const;
 ```  
 const CObject** GetData() const;  
   
-CObject** GetData();```  
+CObject** GetData();
+```  
   
 ### Return Value  
  A pointer to the array of `CObject` pointers.  
@@ -432,7 +433,7 @@ INT_PTR GetUpperBound() const;
 ### Remarks  
  Because array indexes are zero-based, this function returns a value 1 less than `GetSize`.  
   
- The condition **GetUpperBound( )** = –1 indicates that the array contains no elements.  
+ The condition **GetUpperBound( )** = -1 indicates that the array contains no elements.  
   
  The following table shows other member functions that are similar to `CObArray::GetUpperBound`.  
   

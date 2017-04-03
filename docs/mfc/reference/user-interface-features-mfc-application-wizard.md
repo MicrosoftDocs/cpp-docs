@@ -68,7 +68,7 @@ This topic explains the options that you can use to specify the look of your app
 |------------|-----------------|  
 |**Use a classic menu**|Specifies that your application contains a classic, non-draggable menu.|  
 |**Use a classic docking toolbar**|Adds a standard Windows toolbar to your application. The toolbar contains buttons for creating a new document; opening and saving document files; cutting copying, pasting, or printing text; and entering Help mode. Enabling this option also adds menu commands to display or hide the toolbar.|  
-|**Use a browser style toolbar**|Adds an Internet Explorer–style toolbar to your application.|  
+|**Use a browser style toolbar**|Adds an Internet Explorer-style toolbar to your application.|  
 |**Use a menu bar and toolbar**|Indicates that your application contains a draggable menu bar and a toolbar.|  
 |**User-defined toolbars and images**|Allows the user to customize the toolbar and the toolbar images at runtime.|  
 |**Personalized menu behavior**|Specifies whether the menu contains the full list of items when opened, or if it contains only the commands that the user most frequently uses.|  

@@ -99,5 +99,4 @@ __interface IPropDemo : IDispatch {
  [defaultbind](../windows/defaultbind.md)   
  [displaybind](../windows/displaybind.md)   
  [immediatebind](../windows/immediatebind.md)   
- [requestedit](../windows/requestedit.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [requestedit](../windows/requestedit.md)   

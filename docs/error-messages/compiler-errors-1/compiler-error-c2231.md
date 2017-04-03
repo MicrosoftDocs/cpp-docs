@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Compiler Error C2231
-'.' : left operand points to 'class-key', use '–>'  
+'.' : left operand points to 'class-key', use '->'  
   
  The operand to the left of the member-selection operation (.) is a pointer instead of a class, structure, or union.  
   

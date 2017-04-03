@@ -130,7 +130,7 @@ int _fwscanf_l(
 |`_ftscanf`|`fscanf`|`fscanf`|`fwscanf`|  
 |`_ftscanf_l`|`_fscanf_l`|`_fscanf_l`|`_fwscanf_l`|  
   
- For more information, see [Format Specification Fields – scanf functions and wscanf Functions](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).  
+ For more information, see [Format Specification Fields - scanf functions and wscanf Functions](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).  
   
 ## Requirements  
   
@@ -199,9 +199,6 @@ a-string
 3.141590  
 x  
 ```  
-  
-## .NET Framework Equivalent  
- [System::IO::StreamReader::ReadLine](https://msdn.microsoft.com/en-us/library/system.io.streamreader.readline.aspx). See also `Parse` methods, such as [System::Double::Parse](https://msdn.microsoft.com/en-us/library/system.double.parse.aspx).  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

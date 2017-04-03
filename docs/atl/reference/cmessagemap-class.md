@@ -99,7 +99,7 @@ virtual BOOL ProcessWindowMessage(
  [out] The result of the message processing.  
   
  `dwMsgMapID`  
- [in] The identifier of the message map that will process the message. The default message map, declared with [BEGIN_MSG_MAP](http://msdn.microsoft.com/library/8bbb5af9-18b1-48c6-880e-166f599ee554), is identified by 0. An alternate message map, declared with [ALT_MSG_MAP(msgMapID)](http://msdn.microsoft.com/library/2c8871bf-abc0-4d52-bcf7-6b2ab9eb5af8), is identified by `msgMapID`.  
+ [in] The identifier of the message map that will process the message. The default message map, declared with [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map), is identified by 0. An alternate message map, declared with [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map), is identified by `msgMapID`.  
   
 ### Return Value  
  **TRUE** if the message is fully handled; otherwise, **FALSE**.  
@@ -109,6 +109,6 @@ virtual BOOL ProcessWindowMessage(
   
 ## See Also  
  [CDynamicChain Class](../../atl/reference/cdynamicchain-class.md)   
- [BEGIN_MSG_MAP](http://msdn.microsoft.com/library/8bbb5af9-18b1-48c6-880e-166f599ee554)   
- [ALT_MSG_MAP](http://msdn.microsoft.com/library/2c8871bf-abc0-4d52-bcf7-6b2ab9eb5af8)   
+ [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)   
+ [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map)   
  [Class Overview](../../atl/atl-class-overview.md)

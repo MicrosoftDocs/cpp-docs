@@ -91,7 +91,7 @@ INT_PTR DoModal(HWND hWndParent = ::GetActiveWindow());
 ### Return Value  
  If successful, the return value is the resource ID of the control that dismissed the dialog box.  
   
- If the function fails, the return value is –1. To get extended error information, call `GetLastError`.  
+ If the function fails, the return value is -1. To get extended error information, call `GetLastError`.  
   
 ### Remarks  
  This method handles all interaction with the user while the dialog box is active. This is what makes the dialog box modal; that is, the user cannot interact with other windows until the dialog box is closed.  

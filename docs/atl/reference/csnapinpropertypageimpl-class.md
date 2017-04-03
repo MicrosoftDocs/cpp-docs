@@ -235,7 +235,7 @@ BOOL OnWizardBack();
   
 -   0 to automatically advance to the previous page.  
   
--   –1 to prevent the page from changing.  
+-   -1 to prevent the page from changing.  
   
  To jump to a page other than the next one, return the identifier of the dialog box to be displayed.  
   
@@ -266,7 +266,7 @@ BOOL OnWizardNext();
   
 -   0 to automatically advance to the next page.  
   
--   –1 to prevent the page from changing.  
+-   -1 to prevent the page from changing.  
   
  To jump to a page other than the next one, return the identifier of the dialog box to be displayed.  
   

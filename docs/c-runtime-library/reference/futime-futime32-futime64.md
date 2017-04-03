@@ -89,7 +89,7 @@ int _futime64(
  Pointer to the structure containing the new modification date.  
   
 ## Return Value  
- Return 0 if successful. If an error occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns –1 and `errno` is set to `EBADF`, indicating an invalid file descriptor, or `EINVAL`, indicating an invalid parameter.  
+ Return 0 if successful. If an error occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and `errno` is set to `EBADF`, indicating an invalid file descriptor, or `EINVAL`, indicating an invalid parameter.  
   
 ## Remarks  
  The `_futime` routine sets the modification date and the access time on the open file associated with `fd`*.* `_futime` is identical to [_utime](../../c-runtime-library/reference/utime-utime32-utime64-wutime-wutime32-wutime64.md), except that its argument is the file descriptor of an open file, rather than the name of a file or a path to a file. The `_utimbuf` structure contains fields for the new modification date and access time. Both fields must contain valid values. `_utimbuf32` and `_utimbuf64` are identical to `_utimbuf` except for the use of the 32-bit and 64-bit time types, respectively. `_futime` and `_utimbuf` use a 64-bit time type and `_futime` is identical in behavior to `_futime64`. If you need to force the old behavior, define `_USE_32BIT_TIME_T`. Doing this causes `_futime` to be identical in behavior to `_futime32` and causes the `_utimbuf` structure to use the 32-bit time type, making it equivalent to `__utimbuf32`.  
@@ -169,14 +169,6 @@ Volume in drive Z has no label.
                0 Dir(s)  24,268,476,416 bytes free  
 File time modified  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::IO::File::SetLastAccessTime](https://msdn.microsoft.com/en-us/library/system.io.file.setlastaccesstime.aspx)  
-  
--   [System::IO::File::SetLastWriteTime](https://msdn.microsoft.com/en-us/library/system.io.file.setlastwritetime.aspx)  
-  
--   [System::IO::File::SetCreationTime](https://msdn.microsoft.com/en-us/library/system.io.file.setcreationtime.aspx)  
   
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)

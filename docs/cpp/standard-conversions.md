@@ -159,7 +159,7 @@ cout << (float)1E300 << endl;
 ## Conversions between integral and floating point types  
  Certain expressions can cause objects of floating type to be converted to integral types, or vice versa. When an object of integral type is converted to a floating type and the original value cannot be represented exactly, the result is either the next higher or the next lower representable value.  
   
- When an object of floating type is converted to an integral type, the fractional part is truncated. No rounding takes place in the conversion process. Truncation means that a number like 1.3 is converted to 1, and –1.3 is converted to –1.  
+ When an object of floating type is converted to an integral type, the fractional part is truncated. No rounding takes place in the conversion process. Truncation means that a number like 1.3 is converted to 1, and -1.3 is converted to -1.  
   
 ## Arithmetic conversions  
  Many binary operators (discussed in [Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)) cause conversions of operands and yield results the same way. The way these operators cause conversions is called "usual arithmetic conversions." Arithmetic conversions of operands of different native types are performed as shown in the following table. Typedef types behave according to their underlying native types.  

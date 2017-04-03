@@ -267,10 +267,10 @@ BOOL Play(
  Zero-based index of the frame where playing begins. Value must be less than 65,536. A value of 0 means begin with the first frame in the AVI clip.  
   
  `nTo`  
- Zero-based index of the frame where playing ends. Value must be less than 65,536. A value of – 1 means end with the last frame in the AVI clip.  
+ Zero-based index of the frame where playing ends. Value must be less than 65,536. A value of - 1 means end with the last frame in the AVI clip.  
   
  *nRep*  
- Number of times to replay the AVI clip. A value of – 1 means replay the file indefinitely.  
+ Number of times to replay the AVI clip. A value of - 1 means replay the file indefinitely.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
@@ -290,7 +290,7 @@ BOOL Seek(UINT nTo);
   
 ### Parameters  
  `nTo`  
- Zero-based index of the frame to display. Value must be less than 65,536. A value of 0 means display the first frame in the AVI clip. A value of –1 means display the last frame in the AVI clip.  
+ Zero-based index of the frame to display. Value must be less than 65,536. A value of 0 means display the first frame in the AVI clip. A value of -1 means display the last frame in the AVI clip.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
@@ -318,5 +318,5 @@ BOOL Stop();
  [CWnd Class](../../mfc/reference/cwnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CAnimateCtrl::Create](#create)   
- [ON_CONTROL](http://msdn.microsoft.com/library/2cb7ebdf-296b-4606-b191-3449835003db)
+ [ON_CONTROL](message-map-macros-mfc.md#on_control)
 

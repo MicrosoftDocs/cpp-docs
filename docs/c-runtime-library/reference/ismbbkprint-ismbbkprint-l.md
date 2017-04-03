@@ -79,7 +79,7 @@ int _ismbbkprint_l(
  Locale to use.  
   
 ## Return Value  
- `_ismbbkprint` returns a nonzero value if the integer `c` is a non-ASCII text or non-ASCII punctuation symbol or 0 if it is not. For example, in code page 932 only, `_ismbbkprint` tests for katakana alphanumeric or katakana punctuation (range: 0xA1 – 0xDF). `_ismbbkprint` uses the current locale for locale-dependent character settings. `_ismbbkprint_l` is identical except that it uses the locale passed in. For more information, see [Locale](../../c-runtime-library/locale.md).  
+ `_ismbbkprint` returns a nonzero value if the integer `c` is a non-ASCII text or non-ASCII punctuation symbol or 0 if it is not. For example, in code page 932 only, `_ismbbkprint` tests for katakana alphanumeric or katakana punctuation (range: 0xA1 - 0xDF). `_ismbbkprint` uses the current locale for locale-dependent character settings. `_ismbbkprint_l` is identical except that it uses the locale passed in. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
 ## Requirements  
   
@@ -89,9 +89,6 @@ int _ismbbkprint_l(
 |`_ismbbkprint_l`|\<mbctype.h>|  
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Byte Classification](../../c-runtime-library/byte-classification.md)   

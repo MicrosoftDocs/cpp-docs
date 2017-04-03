@@ -58,7 +58,7 @@ Fetches the row marked by a bookmark or the row at a specified offset (`lSkip`) 
  [in] A bookmark marking the location from which you want to fetch data.  
   
  `lSkip`  
- [in] The number count of rows from the bookmark to the target row. If `lSkip` is zero, the first row fetched is the bookmarked row. If `lSkip` is 1, the first row fetched is the row after the bookmarked row. If `lSkip` is –1, the first row fetched is the row before the bookmarked row.  
+ [in] The number count of rows from the bookmark to the target row. If `lSkip` is zero, the first row fetched is the bookmarked row. If `lSkip` is 1, the first row fetched is the row after the bookmarked row. If `lSkip` is -1, the first row fetched is the row before the bookmarked row.  
   
 ## Return Value  
  See [IRowset::GetData](https://msdn.microsoft.com/en-us/library/ms716988.aspx) in the *OLE DB Programmer's Reference*.  

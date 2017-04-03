@@ -74,7 +74,7 @@ __int64 _ftelli64(
  Target `FILE` structure.  
   
 ## Return Value  
- `ftell` and `_ftelli64` return the current file position. The value returned by `ftell` and `_ftelli64` may not reflect the physical byte offset for streams opened in text mode, because text mode causes carriage return–linefeed translation. Use `ftell` with `fseek`or`_ftelli64`with`_fseeki64` to return to file locations correctly. On error, `ftell`and`_ftelli64` invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return –1L and set `errno` to one of two constants, defined in ERRNO.H. The `EBADF` constant means the `stream` argument is not a valid file pointer value or does not refer to an open file. `EINVAL` means an invalid `stream` argument was passed to the function. On devices incapable of seeking (such as terminals and printers), or when `stream` does not refer to an open file, the return value is undefined.  
+ `ftell` and `_ftelli64` return the current file position. The value returned by `ftell` and `_ftelli64` may not reflect the physical byte offset for streams opened in text mode, because text mode causes carriage return-linefeed translation. Use `ftell` with `fseek`or`_ftelli64`with`_fseeki64` to return to file locations correctly. On error, `ftell`and`_ftelli64` invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1L and set `errno` to one of two constants, defined in ERRNO.H. The `EBADF` constant means the `stream` argument is not a valid file pointer value or does not refer to an open file. `EINVAL` means an invalid `stream` argument was passed to the function. On devices incapable of seeking (such as terminals and printers), or when `stream` does not refer to an open file, the return value is undefined.  
   
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, return codes.  
   
@@ -129,9 +129,6 @@ int main( void )
 ```Output  
 Position after trying to read 100 bytes: 100  
 ```  
-  
-## .NET Framework Equivalent  
- [System::IO::FileStream::Position](https://msdn.microsoft.com/en-us/library/system.io.filestream.position.aspx)  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

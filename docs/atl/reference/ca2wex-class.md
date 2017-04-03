@@ -96,10 +96,10 @@ class CA2WEX
   
 - **CA2W**  
   
- For a discussion of these text conversion macros, see [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/library/8f53659e-0464-4424-97db-6b8453c49863).  
+ For a discussion of these text conversion macros, see [ATL and MFC String Conversion Macros](string-conversion-macros.md).  
   
 ## Example  
- See [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/library/8f53659e-0464-4424-97db-6b8453c49863) for an example of using these string conversion macros.  
+ See [ATL and MFC String Conversion Macros](string-conversion-macros.md) for an example of using these string conversion macros.  
   
 ## Requirements  
  **Header:** atlconv.h  

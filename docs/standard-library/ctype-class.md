@@ -222,7 +222,7 @@ virtual const CharType* do_narrow(
  The second protected member function returns a pointer to the destination range of native characters converted from characters of type `CharType`.  
   
 ### Remarks  
- The second protected member template function stores in `dest`[ `I`] the value `do_narrow`( `first` [ `I`], `default`), for `I` in the interval [0, `last` – `first`).  
+ The second protected member template function stores in `dest`[ `I`] the value `do_narrow`( `first` [ `I`], `default`), for `I` in the interval [0, `last` - `first`).  
   
 ### Example  
   See the example for [narrow](#ctype__narrow), which calls `do_narrow`.  
@@ -311,7 +311,7 @@ virtual const CharType *do_tolower(
  The first protected member function returns the lowercase form of the parameter `ch`. If no lowercase form exists, it returns `ch`. The second protected member function returns `last`.  
   
 ### Remarks  
- The second protected member template function replaces each element `first` [ `I`], for `I` in the interval [0, `last` – `first`), with `do_tolower`( `first` [ `I`]).  
+ The second protected member template function replaces each element `first` [ `I`], for `I` in the interval [0, `last` - `first`), with `do_tolower`( `first` [ `I`]).  
   
 ### Example  
   See the example for [tolower](#ctype__tolower), which calls `do_tolower`.  
@@ -342,7 +342,7 @@ virtual const CharType *do_toupper(
  The first protected member function returns the uppercase form of the parameter `ch`. If no uppercase form exists, it returns `ch`. The second protected member function returns `last`.  
   
 ### Remarks  
- The second protected member template function replaces each element `first` [ `I`], for `I` in the interval [0, `last` – `first`), with `do_toupper`( `first` [ `I`]).  
+ The second protected member template function replaces each element `first` [ `I`], for `I` in the interval [0, `last` - `first`), with `do_toupper`( `first` [ `I`]).  
   
 ### Example  
   See the example for [toupper](#ctype__toupper), which calls `do_toupper`.  

@@ -49,7 +49,7 @@ int main( int argc, char *argv[], char *envp[] )
   
  All elements of the **argv** array are pointers to strings.  
   
- A program invoked with no command-line arguments will receive a value of one for **argc**, as the name of the executable file is placed in **argv[0]**. (In MS-DOS versions prior to 3.0, the executable-file name is not available. The letter "C" is placed in **argv[0]**.) Strings pointed to by **argv[1]** through **argv[argc – 1]** represent program parameters.  
+ A program invoked with no command-line arguments will receive a value of one for **argc**, as the name of the executable file is placed in **argv[0]**. (In MS-DOS versions prior to 3.0, the executable-file name is not available. The letter "C" is placed in **argv[0]**.) Strings pointed to by **argv[1]** through **argv[argc - 1]** represent program parameters.  
   
  The parameters **argc** and **argv** are modifiable and retain their last-stored values between program startup and program termination.  
   

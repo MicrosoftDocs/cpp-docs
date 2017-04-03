@@ -106,7 +106,7 @@ int main()
     T str1( "ABCD" );  
     const char* str2 = "DEFG";  
   
-    // Error – Ambiguous call to operator<()  
+    // Error - Ambiguous call to operator<()  
     // Trying to convert str1 to char* and then call   
     // operator<( const char*, const char* )?  
     //  OR  

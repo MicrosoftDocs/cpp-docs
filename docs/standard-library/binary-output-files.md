@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Binary Output Files
-Streams were originally designed for text, so the default output mode is text. In text mode, the newline character (hexadecimal 10) expands to a carriage return–linefeed (16-bit only). The expansion can cause problems, as shown here:  
+Streams were originally designed for text, so the default output mode is text. In text mode, the newline character (hexadecimal 10) expands to a carriage return-linefeed (16-bit only). The expansion can cause problems, as shown here:  
   
 ```  
 // binary_output_files.cpp  

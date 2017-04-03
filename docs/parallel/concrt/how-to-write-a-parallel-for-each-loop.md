@@ -38,7 +38,7 @@ translation.priority.mt:
 This example shows how to use the [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algorithm to compute the count of prime numbers in a [std::array](../../standard-library/array-class-stl.md) object in parallel.  
   
 ## Example  
- The following example computes the count of prime numbers in an array two times. The example first uses the [std::for_each](http://msdn.microsoft.com/library/8cb2ae72-bef6-488b-b011-0475c0787e33) algorithm to compute the count serially. The example then uses the `parallel_for_each` algorithm to perform the same task in parallel. The example also prints to the console the time that is required to perform both computations.  
+ The following example computes the count of prime numbers in an array two times. The example first uses the [std::for_each](../../standard-library/algorithm-functions.md#for_each) algorithm to compute the count serially. The example then uses the `parallel_for_each` algorithm to perform the same task in parallel. The example also prints to the console the time that is required to perform both computations.  
   
  [!code-cpp[concrt-parallel-count-primes#1](../../parallel/concrt/codesnippet/cpp/how-to-write-a-parallel-for-each-loop_1.cpp)]  
   

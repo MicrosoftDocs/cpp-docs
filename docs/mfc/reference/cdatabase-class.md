@@ -59,7 +59,7 @@ class CDatabase : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDatabase::BeginTrans](#begintrans)|Starts a "transaction" â€” a series of reversible calls to the `AddNew`, **Edit**, **Delete**, and **Update** member functions of class `CRecordset` â€” on the connected data source. The data source must support transactions for **BeginTrans** to have any effect.|  
+|[CDatabase::BeginTrans](#begintrans)|Starts a "transaction" — a series of reversible calls to the `AddNew`, **Edit**, **Delete**, and **Update** member functions of class `CRecordset` — on the connected data source. The data source must support transactions for **BeginTrans** to have any effect.|  
 |[CDatabase::BindParameters](#bindparameters)|Allows you to bind parameters before calling `CDatabase::ExecuteSQL`.|  
 |[CDatabase::Cancel](#cancel)|Cancels an asynchronous operation or a process from a second thread.|  
 |[CDatabase::CanTransact](#cantransact)|Returns nonzero if the data source supports transactions.|  
@@ -369,7 +369,7 @@ BOOL IsOpen() const;
  Nonzero if the `CDatabase` object is currently connected; otherwise 0.  
   
 ##  <a name="m_hdbc"></a>  CDatabase::m_hdbc  
- Contains a public handle to an ODBC data source connection â€” a "connection handle."  
+ Contains a public handle to an ODBC data source connection — a "connection handle."  
   
 ### Remarks  
  Normally, you will have no need to access this member variable directly. Instead, the framework allocates the handle when you call `OpenEx` or **Open**. The framework deallocates the handle when you call the **delete** operator on the `CDatabase` object. Note that the **Close** member function does not deallocate the handle.  
@@ -416,7 +416,7 @@ virtual BOOL Open(
   
 ### Parameters  
  `lpszDSN`  
- Specifies a data source name â€” a name registered with ODBC through the ODBC Administrator program. If a DSN value is specified in `lpszConnect` (in the form "DSN=\<data-source>"), it must not be specified again in `lpszDSN`. In this case, `lpszDSN` should be **NULL**. Otherwise, you can pass **NULL** if you want to present the user with a Data Source dialog box in which the user can select a data source. For further information, see Remarks.  
+ Specifies a data source name — a name registered with ODBC through the ODBC Administrator program. If a DSN value is specified in `lpszConnect` (in the form "DSN=\<data-source>"), it must not be specified again in `lpszDSN`. In this case, `lpszDSN` should be **NULL**. Otherwise, you can pass **NULL** if you want to present the user with a Data Source dialog box in which the user can select a data source. For further information, see Remarks.  
   
  `bExclusive`  
  Not supported in this version of the class library. Currently, an assertion fails if this parameter is **TRUE**. The data source is always opened as shared (not exclusive).  
@@ -514,7 +514,7 @@ BOOL Rollback();
   See the article [Transaction: Performing a Transaction in a Recordset (ODBC)](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md).  
   
 ##  <a name="setlogintimeout"></a>  CDatabase::SetLoginTimeout  
- Call this member function â€” before you call `OpenEx` or **Open** â€” to override the default number of seconds allowed before an attempted data source connection times out.  
+ Call this member function — before you call `OpenEx` or **Open** — to override the default number of seconds allowed before an attempted data source connection times out.  
   
 ```  
 void SetLoginTimeout(DWORD dwSeconds);

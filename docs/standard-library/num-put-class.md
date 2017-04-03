@@ -181,9 +181,9 @@ virtual iter_type do_put(
   
  If **iosbase**. [width](../standard-library/ios-base-class.md#ios_base__width) is nonzero, a field width of this value is prepended. The function then calls **iosbase**. **width**(0) to reset the field width to zero.  
   
- Padding occurs only if the minimum number of elements *N* required to specify the output field is less than **iosbase**. [width](../standard-library/ios-base-class.md#ios_base__width). Such padding consists of a sequence of *N* – **width** copies of **fill**. Padding then occurs as follows:  
+ Padding occurs only if the minimum number of elements *N* required to specify the output field is less than **iosbase**. [width](../standard-library/ios-base-class.md#ios_base__width). Such padding consists of a sequence of *N* - **width** copies of **fill**. Padding then occurs as follows:  
   
--   If **iosbase**. **flags** & `ios_base::adjustfield` == `ios_base::`[left](../standard-library/ios-functions.md#left), the flag **–** is prepended. (Padding occurs after the generated text.)  
+-   If **iosbase**. **flags** & `ios_base::adjustfield` == `ios_base::`[left](../standard-library/ios-functions.md#left), the flag **-** is prepended. (Padding occurs after the generated text.)  
   
 -   If **iosbase.flags** & **ios_base::adjustfield** == `ios_base::`[internal](../standard-library/ios-functions.md#internal), the flag **0** is prepended. (For a numeric output field, padding occurs where the print functions pad with 0.)  
   

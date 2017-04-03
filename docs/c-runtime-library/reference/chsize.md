@@ -73,7 +73,7 @@ int _chsize(
  New length of the file in bytes.  
   
 ## Return Value  
- `_chsize` returns the value 0 if the file size is successfully changed. A return value of –1 indicates an error: `errno` is set to `EACCES` if the specified file is locked against access, to `EBADF` if the specified file is read-only or the descriptor is invalid, `ENOSPC` if no space is left on the device, or `EINVAL` if `size` is less than zero.  
+ `_chsize` returns the value 0 if the file size is successfully changed. A return value of -1 indicates an error: `errno` is set to `EACCES` if the specified file is locked against access, to `EBADF` if the specified file is read-only or the descriptor is invalid, `ENOSPC` if no space is left on the device, or `EINVAL` if `size` is less than zero.  
   
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, return codes.  
   
@@ -129,12 +129,6 @@ File length before: 0
 Size successfully changed  
 File length after:  329678  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::IO::Stream::SetLength](https://msdn.microsoft.com/en-us/library/system.io.stream.setlength.aspx)  
-  
--   [System::IO::FileStream::SetLength](https://msdn.microsoft.com/en-us/library/system.io.filestream.setlength.aspx)  
   
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   

@@ -112,7 +112,7 @@ int _ismbcsymbol_l(
   
 |Routine|Test condition|Code page 932 example|  
 |-------------|--------------------|---------------------------|  
-|`_ismbclegal`|Valid multibyte|Returns nonzero if and only if the first byte of `c` is within ranges 0x81 – 0x9F or 0xE0 – 0xFC, while the second byte is within ranges 0x40 - 0x7E or 0x80 - FC.|  
+|`_ismbclegal`|Valid multibyte|Returns nonzero if and only if the first byte of `c` is within ranges 0x81 - 0x9F or 0xE0 - 0xFC, while the second byte is within ranges 0x40 - 0x7E or 0x80 - FC.|  
 |`_ismbcsymbol`|Multibyte symbol|Returns nonzero if and only if 0x8141<=`c`<=0x81AC.|  
   
 ### Generic-Text Routine Mappings  
@@ -130,9 +130,6 @@ int _ismbcsymbol_l(
 |`_ismbcsymbol,_ismbcsymbol_l`|\<mbstring.h>|  
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Character Classification](../../c-runtime-library/character-classification.md)   

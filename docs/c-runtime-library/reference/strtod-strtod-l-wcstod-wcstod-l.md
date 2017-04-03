@@ -107,7 +107,7 @@ double wcstod_l(
  The locale to use.  
   
 ## Return Value  
- `strtod` returns the value of the floating-point number, except when the representation would cause an overflow, in which case the function returns +/–`HUGE_VAL`. The sign of `HUGE_VAL` matches the sign of the value that cannot be represented. `strtod` returns 0 if no conversion can be performed or an underflow occurs.  
+ `strtod` returns the value of the floating-point number, except when the representation would cause an overflow, in which case the function returns +/-`HUGE_VAL`. The sign of `HUGE_VAL` matches the sign of the value that cannot be represented. `strtod` returns 0 if no conversion can be performed or an underflow occurs.  
   
  `wcstod` returns values analogously to `strtod`. For both functions, `errno` is set to `ERANGE` if overflow or underflow occurs and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).  
   
@@ -131,7 +131,7 @@ double wcstod_l(
   
  [`whitespace`] [`sign`] [`digits`] [`.digits`] [ {`e` &#124; `E`}[`sign`]`digits`]  
   
- A `whitespace` may consist of space and tab characters, which are ignored; `sign` is either plus (`+`) or minus (`–`); and `digits` are one or more decimal digits. If no digits appear before the radix character, at least one must appear after the radix character. The decimal digits can be followed by an exponent, which consists of an introductory letter (`e` or `E`) and an optionally signed integer. If neither an exponent part nor a radix character appears, a radix character is assumed to follow the last digit in the string. The first character that does not fit this form stops the scan.  
+ A `whitespace` may consist of space and tab characters, which are ignored; `sign` is either plus (`+`) or minus (`-`); and `digits` are one or more decimal digits. If no digits appear before the radix character, at least one must appear after the radix character. The decimal digits can be followed by an exponent, which consists of an introductory letter (`e` or `E`) and an optionally signed integer. If neither an exponent part nor a radix character appears, a radix character is assumed to follow the last digit in the string. The first character that does not fit this form stops the scan.  
  
  The UCRT versions of these functions do not support conversion of Fortran-style (`d` or `D`) exponent letters. This non-standard extension was supported by earlier versions of the CRT, and may be a breaking change for your code.  
   

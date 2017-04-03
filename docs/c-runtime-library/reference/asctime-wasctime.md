@@ -86,14 +86,14 @@ wchar_t *_wasctime(
   
 |timeptr member|Value|  
 |--------------------|-----------|  
-|`tm_hour`|Hours since midnight (0–23)|  
+|`tm_hour`|Hours since midnight (0-23)|  
 |`tm_isdst`|Positive if daylight saving time is in effect; 0 if daylight saving time is not in effect; negative if status of daylight saving time is unknown. The C run-time library assumes the United States' rules for implementing the calculation of Daylight Saving Time (DST).|  
-|`tm_mday`|Day of month (1–31)|  
-|`tm_min`|Minutes after hour (0–59)|  
-|`tm_mon`|Month (0–11; January = 0)|  
-|`tm_sec`|Seconds after minute (0–59)|  
-|`tm_wday`|Day of week (0–6; Sunday = 0)|  
-|`tm_yday`|Day of year (0–365; January 1 = 0)|  
+|`tm_mday`|Day of month (1-31)|  
+|`tm_min`|Minutes after hour (0-59)|  
+|`tm_mon`|Month (0-11; January = 0)|  
+|`tm_sec`|Seconds after minute (0-59)|  
+|`tm_wday`|Day of week (0-6; Sunday = 0)|  
+|`tm_yday`|Day of year (0-365; January 1 = 0)|  
 |`tm_year`|Year (current year minus 1900)|  
   
  The converted character string is also adjusted according to the local time zone settings. For information about configuring the local time, see the [time](../../c-runtime-library/reference/time-time32-time64.md), [_ftime](../../c-runtime-library/reference/ftime-ftime32-ftime64.md), and [localtime](../../c-runtime-library/reference/localtime-localtime32-localtime64.md) functions and the [_tzset](../../c-runtime-library/reference/tzset.md) function for information about defining the time zone environment and global variables.  
@@ -147,18 +147,6 @@ int main( void )
 ```Output  
 Current date and time: Sun Feb 03 11:38:58 2002  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::DateTime::ToLongDateString](https://msdn.microsoft.com/en-us/library/system.datetime.tolongdatestring.aspx)  
-  
--   [System::DateTime::ToLongTimeString](https://msdn.microsoft.com/en-us/library/system.datetime.tolongtimestring.aspx)  
-  
--   [System::DateTime::ToShortDateString](https://msdn.microsoft.com/en-us/library/system.datetime.toshortdatestring.aspx)  
-  
--   [System::DateTime::ToShortTimeString](https://msdn.microsoft.com/en-us/library/system.datetime.toshorttimestring.aspx)  
-  
--   [System::DateTime::ToString](https://msdn.microsoft.com/en-us/library/system.datetime.tostring.aspx)  
   
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   

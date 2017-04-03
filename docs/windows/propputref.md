@@ -68,5 +68,4 @@ Specifies a property setting function that uses a reference instead of a value.
  [IDL Attributes](../windows/idl-attributes.md)   
  [Method Attributes](../windows/method-attributes.md)   
  [propget](../windows/propget.md)   
- [propput](../windows/propput.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [propput](../windows/propput.md)   

@@ -906,7 +906,7 @@ virtual CSize MovePane(
  Not used.  
   
 ### Return Value  
- A `CSize` object that contains the differences in width and height between the new and old rectangles (old rectangle – `rectNew`).  
+ A `CSize` object that contains the differences in width and height between the new and old rectangles (old rectangle - `rectNew`).  
   
 ### Remarks  
  This method is used only for dockable panes.  

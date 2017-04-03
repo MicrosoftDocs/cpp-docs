@@ -85,7 +85,7 @@ size_t fread(
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.  
   
 ## Remarks  
- The `fread` function reads up to `count` items of `size` bytes from the input `stream` and stores them in `buffer`*.* The file pointer associated with `stream` (if there is one) is increased by the number of bytes actually read. If the given stream is opened in text mode, carriage return–linefeed pairs are replaced with single linefeed characters. The replacement has no effect on the file pointer or the return value. The file-pointer position is indeterminate if an error occurs. The value of a partially read item cannot be determined.  
+ The `fread` function reads up to `count` items of `size` bytes from the input `stream` and stores them in `buffer`*.* The file pointer associated with `stream` (if there is one) is increased by the number of bytes actually read. If the given stream is opened in text mode, carriage return-linefeed pairs are replaced with single linefeed characters. The replacement has no effect on the file pointer or the return value. The file-pointer position is indeterminate if an error occurs. The value of a partially read item cannot be determined.  
   
  This function locks out other threads. If you need a non-locking version, use `_fread_nolock`.  
   
@@ -146,9 +146,6 @@ Wrote 25 items
 Number of items read = 25  
 Contents of buffer = zyxwvutsrqponmlkjihgfedcb  
 ```  
-  
-## .NET Framework Equivalent  
- [System::IO::FileStream::Read](https://msdn.microsoft.com/en-us/library/system.io.filestream.read.aspx)  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

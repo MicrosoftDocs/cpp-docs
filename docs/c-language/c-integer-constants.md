@@ -87,7 +87,7 @@ An "integer constant" is a decimal (base 10), octal (base 8), or hexadecimal (ba
  *64-bit integer-suffix*:  
  **i64**  
   
- Integer constants are positive unless they are preceded by a minus sign (**–**). The minus sign is interpreted as the unary arithmetic negation operator. (See [Unary Arithmetic Operators](../c-language/unary-arithmetic-operators.md) for information about this operator.)  
+ Integer constants are positive unless they are preceded by a minus sign (**-**). The minus sign is interpreted as the unary arithmetic negation operator. (See [Unary Arithmetic Operators](../c-language/unary-arithmetic-operators.md) for information about this operator.)  
   
  If an integer constant begins with **0x** or **0X**, it is hexadecimal. If it begins with the digit **0**, it is octal. Otherwise, it is assumed to be decimal.  
   

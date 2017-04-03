@@ -117,7 +117,7 @@ HRESULT Advise(
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- See [AtlAdvise](http://msdn.microsoft.com/library/625a2f03-6b7f-4761-be5d-d2871d1d3254) for more information.  
+ See [AtlAdvise](connection-point-global-functions.md#atladvise) for more information.  
   
 ##  <a name="attach"></a>  CComPtrBase::Attach  
  Call this method to take ownership of an existing pointer.  
@@ -367,7 +367,7 @@ HRESULT SetSite(IUnknown* punkParent) throw();
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This method calls [AtlSetChildSite](http://msdn.microsoft.com/library/2a8ece19-6bfd-4e89-9d1d-e5a78f95e2df).  
+ This method calls [AtlSetChildSite](composite-control-global-functions.md#atlsetchildsite).  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)

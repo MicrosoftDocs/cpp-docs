@@ -39,7 +39,7 @@ translation.priority.ht:
 # Explicit Override of an Interface Member
 The syntax for declaring an explicit override of an interface member within a class has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
   
- You often want to provide two instances of an interface member within a class that implements the interface – one that is used when class objects are manipulated through an interface handle, and one that is used when class objects are used through the class interface. For example:  
+ You often want to provide two instances of an interface member within a class that implements the interface - one that is used when class objects are manipulated through an interface handle, and one that is used when class objects are used through the class interface. For example:  
   
 ```  
 public __gc class R : public ICloneable {  
@@ -66,7 +66,7 @@ public:
 };  
 ```  
   
- This revision requires that the interface member being explicitly overridden be given a unique name within the class. Here, I've provided the awkward name of `InterfaceClone`. The behavior is still the same – an invocation through the `ICloneable` interface invokes the renamed `InterfaceClone,` while a call through an object of type `R` invokes the second `Clone` instance.  
+ This revision requires that the interface member being explicitly overridden be given a unique name within the class. Here, I've provided the awkward name of `InterfaceClone`. The behavior is still the same - an invocation through the `ICloneable` interface invokes the renamed `InterfaceClone,` while a call through an object of type `R` invokes the second `Clone` instance.  
   
 ## See Also  
  [Member Declarations within a Class or Interface (C++/CLI)](../dotnet/member-declarations-within-a-class-or-interface-cpp-cli.md)   

@@ -42,7 +42,5 @@ The Microsoft run-time library provides many routines that are useful for creati
   
  Also included are the ISO646 operator alternatives.  
   
- For information about .NET Framework equivalents, see [System::Globalization::CultureInfo Class](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.aspx).  
-  
 ## See Also  
  [Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)

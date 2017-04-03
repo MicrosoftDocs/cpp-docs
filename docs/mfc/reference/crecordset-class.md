@@ -675,7 +675,7 @@ long GetRecordCount() const;
 ```  
   
 ### Return Value  
- The number of records in the recordset; 0 if the recordset contains no records; or –1 if the record count cannot be determined.  
+ The number of records in the recordset; 0 if the recordset contains no records; or -1 if the record count cannot be determined.  
   
 ### Remarks  
   
@@ -775,9 +775,9 @@ void GetStatus(CRecordsetStatus& rStatus) const;
   
  The two members of **CRecordsetStatus** have the following meanings:  
   
-- **m_lCurrentRecord** Contains the zero-based index of the current record in the recordset, if known. If the index cannot be determined, this member contains **AFX_CURRENT_RECORD_UNDEFINED** (–2). If `IsBOF` is **TRUE** (empty recordset or attempt to scroll before first record), then **m_lCurrentRecord** is set to **AFX_CURRENT_RECORD_BOF** (–1). If on the first record, then it is set to 0, second record 1, and so on.  
+- **m_lCurrentRecord** Contains the zero-based index of the current record in the recordset, if known. If the index cannot be determined, this member contains **AFX_CURRENT_RECORD_UNDEFINED** (-2). If `IsBOF` is **TRUE** (empty recordset or attempt to scroll before first record), then **m_lCurrentRecord** is set to **AFX_CURRENT_RECORD_BOF** (-1). If on the first record, then it is set to 0, second record 1, and so on.  
   
-- **m_bRecordCountFinal** Nonzero if the total number of records in the recordset has been determined. Generally this must be accomplished by starting at the beginning of the recordset and calling `MoveNext` until `IsEOF` returns nonzero. If this member is zero, the record count as returned by `GetRecordCount`, if not –1, is only a "high water mark" count of the records.  
+- **m_bRecordCountFinal** Nonzero if the total number of records in the recordset has been determined. Generally this must be accomplished by starting at the beginning of the recordset and calling `MoveNext` until `IsEOF` returns nonzero. If this member is zero, the record count as returned by `GetRecordCount`, if not -1, is only a "high water mark" count of the records.  
   
 ##  <a name="getsql"></a>  CRecordset::GetSQL  
  Call this member function to get the SQL statement that was used to select the recordset's records when it was opened.  

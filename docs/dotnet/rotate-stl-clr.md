@@ -45,7 +45,7 @@ template<class _FwdIt> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `rotate`. For more information, see [rotate](http://msdn.microsoft.com/Library/dacfa67d-4139-45a5-8265-2e2187231392).  
+ This function behaves the same as the C++ Standard Library function `rotate`. For more information, see [rotate](../standard-library/algorithm-functions.md#rotate).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

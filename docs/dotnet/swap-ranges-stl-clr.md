@@ -46,7 +46,7 @@ template<class _FwdIt1, class _FwdIt2> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `swap_ranges`. For more information, see [swap_ranges](http://msdn.microsoft.com/Library/6dbc8367-d97b-4a25-978d-7f94eb465cbc).  
+ This function behaves the same as the C++ Standard Library function `swap_ranges`. For more information, see [swap_ranges](../standard-library/algorithm-functions.md#swap_ranges).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

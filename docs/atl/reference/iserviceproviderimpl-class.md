@@ -61,9 +61,9 @@ class ATL_NO_VTABLE IServiceProviderImpl : public IServiceProvider
   
  **IServiceProviderImpl** specifies one method: [QueryService](#queryservice), which creates or accesses the specified service and returns an interface pointer to the specified interface for the service.  
   
- `IServiceProviderImpl` uses a service map, starting with [BEGIN_SERVICE_MAP](http://msdn.microsoft.com/library/3c6ae156-8776-4588-8227-2d234daec236) and ending with [END_SERVICE_MAP](http://msdn.microsoft.com/library/9a35d02a-014c-413a-bb0b-bcca11ab45a6).  
+ `IServiceProviderImpl` uses a service map, starting with [BEGIN_SERVICE_MAP](service-map-macros.md#begin_service_map) and ending with [END_SERVICE_MAP](service-map-macros.md#end_service_map).  
   
- The service map contains two entries: [SERVICE_ENTRY](http://msdn.microsoft.com/library/e65ff9cc-15e8-41cf-b686-f99eb6686ca9), which indicates a specified service id (SID) supported by the object, and [SERVICE_ENTRY_CHAIN](http://msdn.microsoft.com/library/09be4ce4-3ccd-4ff2-a95e-a9d5275354c1), which calls `QueryService` to chain to another object.  
+ The service map contains two entries: [SERVICE_ENTRY](service-map-macros.md#service_entry), which indicates a specified service id (SID) supported by the object, and [SERVICE_ENTRY_CHAIN](service-map-macros.md#service_entry_chain), which calls `QueryService` to chain to another object.  
   
 ## Inheritance Hierarchy  
  `IServiceProvider`  

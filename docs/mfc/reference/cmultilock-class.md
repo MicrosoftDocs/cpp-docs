@@ -134,19 +134,19 @@ DWORD Lock(
  Specifies other conditions that are allowed to abort the wait. For a full list of the available options for this parameter, see [MsgWaitForMultipleObjects](http://msdn.microsoft.com/library/windows/desktop/ms684242) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Return Value  
- If `Lock` fails, it returns – 1. If successful, it returns one of the following values:  
+ If `Lock` fails, it returns - 1. If successful, it returns one of the following values:  
   
--   Between **WAIT_OBJECT_0** and **WAIT_OBJECT_0** + (number of objects – 1)  
+-   Between **WAIT_OBJECT_0** and **WAIT_OBJECT_0** + (number of objects - 1)  
   
-     If `bWaitForAll` is **TRUE**, all objects are signaled (available). If `bWaitForAll` is **FALSE**, the return value – **WAIT_OBJECT_0** is the index in the array of objects of the object that is signaled (available).  
+     If `bWaitForAll` is **TRUE**, all objects are signaled (available). If `bWaitForAll` is **FALSE**, the return value - **WAIT_OBJECT_0** is the index in the array of objects of the object that is signaled (available).  
   
 - **WAIT_OBJECT_0** + (number of objects)  
   
      An event specified in `dwWakeMask` is available in the thread's input queue.  
   
--   Between **WAIT_ABANDONED_0** and **WAIT_ABANDONED_0** + (number of objects – 1)  
+-   Between **WAIT_ABANDONED_0** and **WAIT_ABANDONED_0** + (number of objects - 1)  
   
-     If `bWaitForAll` is **TRUE**, all objects are signaled, and at least one of the objects is an abandoned mutex object. If `bWaitForAll` is **FALSE**, the return value – **WAIT_ABANDONED_0** is the index in the array of objects of the abandoned mutex object that satisfied the wait.  
+     If `bWaitForAll` is **TRUE**, all objects are signaled, and at least one of the objects is an abandoned mutex object. If `bWaitForAll` is **FALSE**, the return value - **WAIT_ABANDONED_0** is the index in the array of objects of the abandoned mutex object that satisfied the wait.  
   
 - **WAIT_TIMEOUT**  
   

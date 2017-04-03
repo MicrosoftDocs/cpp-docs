@@ -84,12 +84,12 @@ long double acosl(
   
 #### Parameters  
  `x`  
- Value between –1 and 1, for which to calculate the arccosine (the inverse cosine).  
+ Value between -1 and 1, for which to calculate the arccosine (the inverse cosine).  
   
 ## Return Value  
  The `acos` function returns the arccosine of `x` in the range 0 to π radians.  
   
- By default, if `x` is less than –1 or greater than 1, `acos` returns an indefinite.  
+ By default, if `x` is less than -1 or greater than 1, `acos` returns an indefinite.  
   
 |Input|SEH Exception|Matherr Exception|  
 |-----------|-------------------|-----------------------|  
@@ -154,9 +154,6 @@ int main( int ac, char* av[] )
 Arcsine of 0.000000 = 0.000000  
 Arccosine of 0.000000 = 1.570796  
 ```  
-  
-## .NET Framework Equivalent  
- [System::Math::Acos](https://msdn.microsoft.com/en-us/library/system.math.acos.aspx)  
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

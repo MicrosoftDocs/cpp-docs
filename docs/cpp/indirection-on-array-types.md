@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Indirection on Array Types
-Use of the indirection operator (**\***) on an *n*-dimensional array type yields an *n*–1 dimensional array. If *n* is 1, a scalar (or array element) is yielded.  
+Use of the indirection operator (**\***) on an *n*-dimensional array type yields an *n*-1 dimensional array. If *n* is 1, a scalar (or array element) is yielded.  
   
 ## See Also  
  [Arrays](../cpp/arrays-cpp.md)

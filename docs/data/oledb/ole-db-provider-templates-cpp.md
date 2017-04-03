@@ -61,7 +61,7 @@ OLE DB is an important part of the Microsoft Universal Data Access strategy. The
   
 -   Exposing your data to other data sources such as SQL Server, Excel, and Access. This can be very useful if you want to transfer data among different formats.  
   
--   Participating in cross–data source (heterogeneous) operations. This can be a very effective way of data warehousing. By using OLE DB providers, you can keep data in its native format and still be able to access it in a simple operation.  
+-   Participating in cross-data source (heterogeneous) operations. This can be a very effective way of data warehousing. By using OLE DB providers, you can keep data in its native format and still be able to access it in a simple operation.  
   
 -   Adding additional capabilities to your data, such as query processing.  
   

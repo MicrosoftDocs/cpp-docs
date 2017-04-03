@@ -41,7 +41,7 @@ An MFC application is an executable application for Windows that is based on the
 > [!IMPORTANT]
 >  MFC projects are not supported in Visual Studio Express editions.  
   
- MFC executables generally fall into five types: standard Windows applications, dialog boxes, forms-based applications, Explorer-style applications, and Web browser–style applications. For more information, see:  
+ MFC executables generally fall into five types: standard Windows applications, dialog boxes, forms-based applications, Explorer-style applications, and Web browser-style applications. For more information, see:  
   
 -   [Using the Classes to Write Windows Applications](../../mfc/using-the-classes-to-write-applications-for-windows.md)  
   

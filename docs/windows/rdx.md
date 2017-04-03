@@ -100,5 +100,4 @@ public:
   
 ## See Also  
  [COM Attributes](../windows/com-attributes.md)   
- [registration_script](../windows/registration-script.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [registration_script](../windows/registration-script.md)   

@@ -85,7 +85,7 @@ unsigned int _mbbtombc_l(
  If `_mbbtombc` successfully converts `c`, it returns a multibyte character; otherwise, it returns `c`.  
   
 ## Remarks  
- The `_mbbtombc` function converts a given single-byte multibyte character to a corresponding double-byte multibyte character. Characters must be within the range 0x20 – 0x7E or 0xA1 – 0xDF to be converted.  
+ The `_mbbtombc` function converts a given single-byte multibyte character to a corresponding double-byte multibyte character. Characters must be within the range 0x20 - 0x7E or 0xA1 - 0xDF to be converted.  
   
  The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of this function are identical, except that `_mbbtombc` uses the current locale for this locale-dependent behavior and `_mbbtombc_l` instead uses the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -99,9 +99,6 @@ unsigned int _mbbtombc_l(
 |`_mbbtombc_l`|\<mbstring.h>|  
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

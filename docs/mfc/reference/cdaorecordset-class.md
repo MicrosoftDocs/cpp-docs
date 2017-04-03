@@ -691,7 +691,7 @@ long GetAbsolutePosition();
 ### Remarks  
  The AbsolutePosition property value of the underlying DAO object is zero-based; a setting of 0 refers to the first record in the recordset. You can determine the number of populated records in the recordset by calling [GetRecordCount](#getrecordcount). Calling `GetRecordCount` may take some time because it must access all records to determine the count.  
   
- If there is no current record, as when there are no records in the recordset, – 1 is returned. If the current record is deleted, the AbsolutePosition property value is not defined, and MFC throws an exception if it is referenced. For dynaset-type recordsets, new records are added to the end of the sequence.  
+ If there is no current record, as when there are no records in the recordset, - 1 is returned. If the current record is deleted, the AbsolutePosition property value is not defined, and MFC throws an exception if it is referenced. For dynaset-type recordsets, new records are added to the end of the sequence.  
   
 > [!NOTE]
 >  This property is not intended to be used as a surrogate record number. Bookmarks are still the recommended way of retaining and returning to a given position and are the only way to position the current record across all types of recordset objects. In particular, the position of a given record changes when record(s) preceding it are deleted. There is also no assurance that a given record will have the same absolute position if the recordset is re-created again because the order of individual records within a recordset is not guaranteed unless it is created with a SQL statement using an **ORDERBY** clause.  
@@ -1067,7 +1067,8 @@ CString GetName();
   
 ```  
 virtual COleVariant GetParamValue(int nIndex);  
-virtual COleVariant GetParamValue(LPCTSTR lpszName);```  
+virtual COleVariant GetParamValue(LPCTSTR lpszName);
+```  
   
 ### Parameters  
  `nIndex`  
@@ -1122,7 +1123,7 @@ long GetRecordCount();
   
  The value of `GetRecordCount` from a table-type recordset reflects the approximate number of records in the table and is affected immediately as table records are added and deleted.  
   
- A recordset with no records returns a value of 0. When working with attached tables or ODBC databases, `GetRecordCount` always returns – 1. Calling the **Requery** member function on a recordset resets the value of `GetRecordCount` just as if the query were re-executed.  
+ A recordset with no records returns a value of 0. When working with attached tables or ODBC databases, `GetRecordCount` always returns - 1. Calling the **Requery** member function on a recordset resets the value of `GetRecordCount` just as if the query were re-executed.  
   
  For related information, see the topic "RecordCount Property" in DAO Help.  
   
@@ -2033,7 +2034,8 @@ void SetFieldValue(
   
 ```  
 void SetFieldValueNull(int nIndex);  
-void SetFieldValueNull(LPCTSTR lpszName);```  
+void SetFieldValueNull(LPCTSTR lpszName);
+```  
   
 ### Parameters  
  `nIndex`  
@@ -2103,7 +2105,8 @@ virtual void SetParamValue(
   
 ```  
 void SetParamValueNull(int nIndex);  
-void SetParamValueNull(LPCTSTR lpszName);```  
+void SetParamValueNull(LPCTSTR lpszName);
+```  
   
 ### Parameters  
  `nIndex`  

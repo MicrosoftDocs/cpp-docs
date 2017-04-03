@@ -91,7 +91,7 @@ int _iswprint_l(
  The locale to use.  
   
 ## Return Value  
- Each of these routines returns nonzero if `c` is a particular representation of a printable character. `isprint` returns a nonzero value if `c` is a printable character—this includes the space character (0x20 – 0x7E). `iswprint` returns a nonzero value if `c` is a printable wide character—this includes the space wide character. Each of these routines returns 0 if `c` does not satisfy the test condition.  
+ Each of these routines returns nonzero if `c` is a particular representation of a printable character. `isprint` returns a nonzero value if `c` is a printable character—this includes the space character (0x20 - 0x7E). `iswprint` returns a nonzero value if `c` is a printable wide character—this includes the space wide character. Each of these routines returns 0 if `c` does not satisfy the test condition.  
   
  The result of the test condition for these functions depends on the `LC_CTYPE` category setting of the locale; see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions that do not have the `_l` suffix use the current locale for any locale-dependent behavior; the versions that do have the `_l` suffix are identical except that they use the locale that's passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -113,9 +113,6 @@ int _iswprint_l(
 |`_iswprint_l`|\<ctype.h> or \<wchar.h>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Character Classification](../../c-runtime-library/character-classification.md)   

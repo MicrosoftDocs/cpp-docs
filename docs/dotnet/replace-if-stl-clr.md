@@ -46,7 +46,7 @@ template<class _FwdIt, class _Pr, class _Ty> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `replace_if`. For more information, see [replace_if](http://msdn.microsoft.com/Library/3d01105a-046d-42aa-9dc9-a6b1c53ec802).  
+ This function behaves the same as the C++ Standard Library function `replace_if`. For more information, see [replace_if](../standard-library/algorithm-functions.md#replace_if).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

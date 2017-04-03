@@ -240,9 +240,6 @@ After GoodAppend:  This is the initial string!Extra text t (39 chars)
   
  Note that `BadAppend` caused a buffer overrun.  
   
-## .NET Framework Equivalent  
- [System::String::Concat](https://msdn.microsoft.com/en-us/library/system.string.concat.aspx)  
-  
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [_mbsnbcat, _mbsnbcat_l](../../c-runtime-library/reference/mbsnbcat-mbsnbcat-l.md)   

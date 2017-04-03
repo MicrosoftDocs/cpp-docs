@@ -98,7 +98,7 @@ The Microsoft C Runtime library (CRT) provides many floating point math library 
   
  [erf, erff, erfl, erfc, erfcf, erfcl](../c-runtime-library/reference/erf-erff-erfl-erfc-erfcf-erfcl.md)  
   
- [exp, expf](../c-runtime-library/reference/exp-expf.md)  
+ [exp, expf, expl](../c-runtime-library/reference/exp-expf.md)  
   
  [exp2, exp2f, exp2l](../c-runtime-library/reference/exp2-exp2f-exp2l.md)  
   

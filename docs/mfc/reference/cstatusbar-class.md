@@ -128,7 +128,7 @@ int CommandToIndex(UINT nIDFind) const;
  String ID of the indicator whose index is to be retrieved.  
   
 ### Return Value  
- The index of the indicator if successful; –1 if not successful.  
+ The index of the indicator if successful; -1 if not successful.  
   
 ### Remarks  
  The index of the first indicator is 0.  
@@ -304,7 +304,8 @@ UINT GetPaneStyle(int nIndex) const;
  Call this member function to retrieve the text that appears in a status-bar pane.  
   
 ```  
-CString GetPaneText(int nIndex) const;  void GetPaneText(int nIndex, CString& rString) const;  ```  
+CString GetPaneText(int nIndex) const;  void GetPaneText(int nIndex, CString& rString) const;  
+```  
   
 ### Parameters  
  `nIndex`  

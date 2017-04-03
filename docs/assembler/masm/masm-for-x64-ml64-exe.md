@@ -38,7 +38,7 @@ ml64.exe is the assembler that accepts x64 assembly language. For information on
   
  Inline ASM is not supported for x64. Use MASM or compiler intrinsics ([x64 (amd64) Intrinsics List](../../intrinsics/x64-amd64-intrinsics-list.md)).  
   
- The two workarounds are separate assembly with MASM (which supports x64 fully) and compiler intrinsics. We’ve added a lot of intrinsics to allow customers to make use of special-function instructions (e.g. privileged, bit scan/test, interlocked, etc…) in as close to cross-platform a manner as possible.  
+ The two workarounds are separate assembly with MASM (which supports x64 fully) and compiler intrinsics. We’ve added a lot of intrinsics to allow customers to make use of special-function instructions (e.g. privileged, bit scan/test, interlocked, etc.) in as close to cross-platform a manner as possible.  
   
 ## ml64-Specific Directives  
  Use the following directives with ml64.exe:  

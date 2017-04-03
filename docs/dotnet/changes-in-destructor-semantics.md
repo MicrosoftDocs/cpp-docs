@@ -142,7 +142,7 @@ public:
    R() { /* acquire expensive resource */ }  
    ~R() { /* release expensive resource */ }  
   
-   // … everything else …  
+   // everything else...  
 };  
 ```  
   
@@ -153,7 +153,7 @@ void f() {
    R r;   
    r.methodCall();  
   
-   // r is automatically destructed here –  
+   // r is automatically destructed here -  
    // that is, r.Dispose() is invoked  
 }  
 ```  
@@ -183,7 +183,7 @@ public:
 };  
 ```  
   
- The `!` prefix is analogous to tilde (`~`) that introduces a class destructor – that is, both post-lifetime methods have a token prefixing the name of the class. If the synthesized `Finalize` method occurs within a derived class, an invocation of the base class `Finalize` method is inserted at its end. If the destructor is explicitly invoked, the finalizer is suppressed. Here is what the transformation might look like:  
+ The `!` prefix is analogous to tilde (`~`) that introduces a class destructor - that is, both post-lifetime methods have a token prefixing the name of the class. If the synthesized `Finalize` method occurs within a derived class, an invocation of the base class `Finalize` method is inserted at its end. If the destructor is explicitly invoked, the finalizer is suppressed. Here is what the transformation might look like:  
   
 ```  
 // internal transformation under new syntax  

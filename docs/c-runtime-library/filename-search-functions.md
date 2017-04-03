@@ -64,10 +64,10 @@ These functions search for and close searches for specified file names:
  File attribute.  
   
  `time_t time_create`  
- Time of file creation (–1L for FAT file systems). This time is stored in UTC format. To convert to the local time, use [localtime_s](../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md).  
+ Time of file creation (-1L for FAT file systems). This time is stored in UTC format. To convert to the local time, use [localtime_s](../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md).  
   
  `time_t time_access`  
- Time of the last file access (–1L for FAT file systems). This time is stored in UTC format. To convert to the local time, use `localtime_s`.  
+ Time of the last file access (-1L for FAT file systems). This time is stored in UTC format. To convert to the local time, use `localtime_s`.  
   
  `time_t time_write`  
  Time of the last write to file. This time is stored in UTC format. To convert to the local time, use `localtime_s`.  
@@ -78,7 +78,7 @@ These functions search for and close searches for specified file names:
  `char name`[ `_MAX_PATH`]  
  Null-terminated name of matched file or directory, without the path.  
   
- In file systems that do not support the creation and last access times of a file, such as the FAT system, the `time_create` and `time_access` fields are always –1L.  
+ In file systems that do not support the creation and last access times of a file, such as the FAT system, the `time_create` and `time_access` fields are always -1L.  
   
  `_MAX_PATH` is defined in Stdlib.h as 260 bytes.  
   

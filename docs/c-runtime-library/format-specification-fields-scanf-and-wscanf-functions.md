@@ -59,9 +59,9 @@ The information here applies to the entire `scanf` family of functions, includin
   
  The `format` argument specifies the interpretation of the input and can contain one or more of the following:  
   
--   White-space characters: blank (' '); tab ('\t'); or newline ('\n'). A white-space character causes `scanf` to read, but not store, all consecutive white-space characters in the input up to the next non–white-space character. One white-space character in the format matches any number (including 0) and combination of white-space characters in the input.  
+-   White-space characters: blank (' '); tab ('\t'); or newline ('\n'). A white-space character causes `scanf` to read, but not store, all consecutive white-space characters in the input up to the next non-white-space character. One white-space character in the format matches any number (including 0) and combination of white-space characters in the input.  
   
--   Non–white-space characters, except for the percent sign (`%`). A non–white-space character causes `scanf` to read, but not store, a matching non–white-space character. If the next character in the input stream does not match, `scanf` terminates.  
+-   Non-white-space characters, except for the percent sign (`%`). A non-white-space character causes `scanf` to read, but not store, a matching non-white-space character. If the next character in the input stream does not match, `scanf` terminates.  
   
 -   Format specifications, introduced by the percent sign (`%`). A format specification causes `scanf` to read and convert characters in the input into values of a specified type. The value is assigned to an argument in the argument list.  
   

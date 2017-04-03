@@ -43,7 +43,7 @@ The file time and the date are stored individually, using unsigned integers as b
 |-------------------|-----------------------|---------------------------|-----------------------|  
 |Length:|5|6|5|  
 |Contents:|hours|minutes|2-second increments|  
-|Value Range:|0–23|0–59|0–29 in 2-second intervals|  
+|Value Range:|0-23|0-59|0-29 in 2-second intervals|  
   
 ### Date  
   
@@ -51,7 +51,7 @@ The file time and the date are stored individually, using unsigned integers as b
 |-------------------|-------------------------------|-------------------|-----------------------|  
 |Length:|7|4|5|  
 |Contents:|year|month|day|  
-|Value Range:|0–119|1–12|1–31|  
+|Value Range:|0-119|1-12|1-31|  
 ||(relative to 1980)|||  
   
 ## See Also  

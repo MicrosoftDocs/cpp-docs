@@ -96,7 +96,7 @@ int main() {
 ```  
   
 ## Positive and negative subscripts  
- The first element of an array is element 0. The range of a C++ array is from *array*[0] to *array*[*size* – 1]. However, C++ supports positive and negative subscripts. Negative subscripts must fall within array boundaries; if they do not, the results are unpredictable. The following code shows positive and negative array subscripts:  
+ The first element of an array is element 0. The range of a C++ array is from *array*[0] to *array*[*size* - 1]. However, C++ supports positive and negative subscripts. Negative subscripts must fall within array boundaries; if they do not, the results are unpredictable. The following code shows positive and negative array subscripts:  
   
 ```  
 #include <iostream>  

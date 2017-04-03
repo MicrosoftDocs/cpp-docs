@@ -110,7 +110,7 @@ int _wtoi_l(
   
  [`whitespace`] [`sign`] [`digits`]]  
   
- A `whitespace` consists of space or tab characters, which are ignored; `sign` is either plus (+) or minus (–); and `digits` are one or more digits.  
+ A `whitespace` consists of space or tab characters, which are ignored; `sign` is either plus (+) or minus (-); and `digits` are one or more digits.  
   
  The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -174,12 +174,6 @@ Function: atoi( "31412764" ) = 31412764
 Function: atoi( "3336402735171707160320" ) = 2147483647  
 Overflow condition occurred.  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::Convert::ToInt32](https://msdn.microsoft.com/en-us/library/system.convert.toint32.aspx)  
-  
--   [System::Convert::ToUInt32](https://msdn.microsoft.com/en-us/library/system.convert.touint32.aspx)  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

@@ -82,7 +82,7 @@ int _wchmod(
  Permission setting for the file.  
   
 ## Return Value  
- These functions return 0 if the permission setting is successfully changed. A return value of –1 indicates failure. If the specified file could not be found, `errno` is set to `ENOENT`; if a parameter is invalid, `errno` is set to `EINVAL`.  
+ These functions return 0 if the permission setting is successfully changed. A return value of -1 indicates failure. If the specified file could not be found, `errno` is set to `ENOENT`; if a parameter is invalid, `errno` is set to `EINVAL`.  
   
 ## Remarks  
  The `_chmod` function changes the permission setting of the file specified by `filename`*.* The permission setting controls the read and write access to the file. The integer expression `pmode` contains one or both of the following manifest constants, defined in SYS\Stat.h.  
@@ -193,12 +193,6 @@ A line of text.
 Access is denied.  
 Mode set to read/write  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::IO::File::SetAttributes](https://msdn.microsoft.com/en-us/library/system.io.file.setattributes.aspx)  
-  
--   [System::Security::Permissions::FileIOPermission](https://msdn.microsoft.com/en-us/library/system.security.permissions.fileiopermission.aspx)  
   
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   

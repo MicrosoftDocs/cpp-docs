@@ -247,7 +247,8 @@ CPropertyPage(
 ```  
 const PROPSHEETPAGE& GetPSP() const;  
   
-PROPSHEETPAGE& GetPSP();```  
+PROPSHEETPAGE& GetPSP();
+```  
   
 ### Return Value  
  A reference to the **PROPSHEETPAGE** structure.  
@@ -400,7 +401,7 @@ virtual LRESULT OnWizardBack();
 ```  
   
 ### Return Value  
- 0 to automatically advance to the next page; –1 to prevent the page from changing. To jump to a page other than the next one, return the identifier of the dialog to be displayed.  
+ 0 to automatically advance to the next page; -1 to prevent the page from changing. To jump to a page other than the next one, return the identifier of the dialog to be displayed.  
   
 ### Remarks  
  Override this member function to specify some action the user must take when the Back button is pressed.  
@@ -446,7 +447,7 @@ virtual LRESULT OnWizardNext();
 ```  
   
 ### Return Value  
- 0 to automatically advance to the next page; –1 to prevent the page from changing. To jump to a page other than the next one, return the identifier of the dialog to be displayed.  
+ 0 to automatically advance to the next page; -1 to prevent the page from changing. To jump to a page other than the next one, return the identifier of the dialog to be displayed.  
   
 ### Remarks  
  Override this member function to specify some action the user must take when the Next button is pressed.  

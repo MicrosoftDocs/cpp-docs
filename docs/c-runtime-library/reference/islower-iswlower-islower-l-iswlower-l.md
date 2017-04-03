@@ -99,7 +99,7 @@ int _iswlower_l(
  Locale to use.  
   
 ## Return Value  
- Each of these routines returns nonzero if `c` is a particular representation of a lowercase character. `islower` returns a nonzero value if `c` is a lowercase character (a – z). `iswlower` returns a nonzero value if `c` is a wide character that corresponds to a lowercase letter, or if `c` is one of an implementation-defined set of wide characters for which none of `iswcntrl`, `iswdigit`, `iswpunct`, or `iswspace` is nonzero. Each of these routines returns 0 if `c` does not satisfy the test condition.  
+ Each of these routines returns nonzero if `c` is a particular representation of a lowercase character. `islower` returns a nonzero value if `c` is a lowercase character (a - z). `iswlower` returns a nonzero value if `c` is a wide character that corresponds to a lowercase letter, or if `c` is one of an implementation-defined set of wide characters for which none of `iswcntrl`, `iswdigit`, `iswpunct`, or `iswspace` is nonzero. Each of these routines returns 0 if `c` does not satisfy the test condition.  
   
  The versions of these functions that have the `_l` suffix use the locale that's passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -122,9 +122,6 @@ int _iswlower_l(
 |`_swlower_l`|\<ctype.h> or \<wchar.h>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## .NET Framework Equivalent  
- [System::Char::IsLower](https://msdn.microsoft.com/en-us/library/system.char.islower.aspx)  
   
 ## See Also  
  [Character Classification](../../c-runtime-library/character-classification.md)   

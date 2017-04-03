@@ -44,7 +44,7 @@ CL [option...] file... [option | file]... [lib...] [@command-file] [/link link-o
   
 |Entry|Meaning|  
 |-----------|-------------|  
-|*option*|One or more [CL options](../../build/reference/compiler-options.md). Note that all options apply to all specified source files. Options are specified by either a forward slash (/) or a dash (–). If an option takes an argument, the option's description documents whether a space is allowed between the option and the arguments. Option names (except for the /HELP option) are case sensitive. See [Order of CL Options](../../build/reference/order-of-cl-options.md) for more information.|  
+|*option*|One or more [CL options](../../build/reference/compiler-options.md). Note that all options apply to all specified source files. Options are specified by either a forward slash (/) or a dash (-). If an option takes an argument, the option's description documents whether a space is allowed between the option and the arguments. Option names (except for the /HELP option) are case sensitive. See [Order of CL Options](../../build/reference/order-of-cl-options.md) for more information.|  
 |`file`|The name of one or more source files, .obj files, or libraries. CL compiles source files and passes the names of the .obj files and libraries to the linker. See [CL Filename Syntax](../../build/reference/cl-filename-syntax.md) for more information.|  
 |*lib*|One or more library names. CL passes these names to the linker.|  
 |*command-file*|A file that contains multiple options and filenames. See [CL Command Files](../../build/reference/cl-command-files.md) for more information.|  

@@ -91,10 +91,10 @@ int _mbsbtype_l(
   
 |Return value|Byte type|  
 |------------------|---------------|  
-|`_MBC_SINGLE` (0)|Single-byte character. For example, in code page 932, `_mbsbtype` returns 0 if the specified byte is within the range 0x20 – 0x7E or 0xA1 – 0xDF.|  
-|`_MBC_LEAD` (1)|Lead byte of multibyte character. For example, in code page 932, `_mbsbtype` returns 1 if the specified byte is within the range 0x81 – 0x9F or 0xE0 – 0xFC.|  
-|`_MBC_TRAIL` (2)|Trailing byte of multibyte character. For example, in code page 932, `_mbsbtype` returns 2 if the specified byte is within the range 0x40 – 0x7E or 0x80 – 0xFC.|  
-|`_MBC_ILLEGAL` (–1)|`NULL` string, invalid character, or `NULL` byte found before the byte at offset `count` in `mbstr`.|  
+|`_MBC_SINGLE` (0)|Single-byte character. For example, in code page 932, `_mbsbtype` returns 0 if the specified byte is within the range 0x20 - 0x7E or 0xA1 - 0xDF.|  
+|`_MBC_LEAD` (1)|Lead byte of multibyte character. For example, in code page 932, `_mbsbtype` returns 1 if the specified byte is within the range 0x81 - 0x9F or 0xE0 - 0xFC.|  
+|`_MBC_TRAIL` (2)|Trailing byte of multibyte character. For example, in code page 932, `_mbsbtype` returns 2 if the specified byte is within the range 0x40 - 0x7E or 0x80 - 0xFC.|  
+|`_MBC_ILLEGAL` (-1)|`NULL` string, invalid character, or `NULL` byte found before the byte at offset `count` in `mbstr`.|  
   
 ## Remarks  
  The `_mbsbtype` function determines the type of a byte in a multibyte character string. The function examines only the byte at offset `count` in `mbstr`, ignoring invalid characters before the specified byte.  
@@ -113,9 +113,6 @@ int _mbsbtype_l(
  \* For manifest constants used as return values.  
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## .NET Framework Equivalent  
- Not applicable, but see [System::Globalization::CultureInfo](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.aspx).  
   
 ## See Also  
  [Byte Classification](../../c-runtime-library/byte-classification.md)

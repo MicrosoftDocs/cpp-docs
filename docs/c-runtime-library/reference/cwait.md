@@ -77,7 +77,7 @@ intptr_t _cwait(
  NULL: Ignored by Windows operating system applications; for other applications: action code to perform on `procHandle`.  
   
 ## Return Value  
- When the specified process has successfully completed, returns the handle of the specified process and sets `termstat` to the result code that's returned by the specified process. Otherwise, returns –1 and sets `errno` as follows.  
+ When the specified process has successfully completed, returns the handle of the specified process and sets `termstat` to the result code that's returned by the specified process. Otherwise, returns -1 and sets `errno` as follows.  
   
 |Value|Description|  
 |-----------|-----------------|  

@@ -87,7 +87,7 @@ __int64 _lseeki64(
  Initial position.  
   
 ## Return Value  
- `_lseek` returns the offset, in bytes, of the new position from the beginning of the file. `_lseeki64` returns the offset in a 64-bit integer. The function returns –1L to indicate an error. If passed an invalid parameter, such as a bad file descriptor, or the value for *origin* is invalid or the position specified by *offset* is before the beginning of the file, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EBADF` and return -1L. On devices incapable of seeking (such as terminals and printers), the return value is undefined.  
+ `_lseek` returns the offset, in bytes, of the new position from the beginning of the file. `_lseeki64` returns the offset in a 64-bit integer. The function returns -1L to indicate an error. If passed an invalid parameter, such as a bad file descriptor, or the value for *origin* is invalid or the position specified by *offset* is before the beginning of the file, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EBADF` and return -1L. On devices incapable of seeking (such as terminals and printers), the return value is undefined.  
   
  For more information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   

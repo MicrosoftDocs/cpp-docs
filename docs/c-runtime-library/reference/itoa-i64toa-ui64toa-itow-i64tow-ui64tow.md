@@ -164,13 +164,13 @@ wchar_t * _ui64tow(
  String result.  
   
  `radix`  
- Base of `value`; which must be in the range 2–36.  
+ Base of `value`; which must be in the range 2-36.  
   
 ## Return Value  
  Each of these functions returns a pointer to `str`. There is no error return.  
   
 ## Remarks  
- The `_itoa`, `_i64toa`, and `_ui64toa` functions convert the digits of the given `value` argument to a null-terminated character string and stores the result (up to 33 characters for `_itoa` and 65 for `_i64toa` and `_ui64toa`) in `str`. If `radix` equals 10 and `value` is negative, the first character of the stored string is the minus sign ( `–` ). `_itow`, `_i64tow`, and `_ui64tow` are wide-character versions of `_itoa`, `_i64toa`, and `_ui64toa`, respectively.  
+ The `_itoa`, `_i64toa`, and `_ui64toa` functions convert the digits of the given `value` argument to a null-terminated character string and stores the result (up to 33 characters for `_itoa` and 65 for `_i64toa` and `_ui64toa`) in `str`. If `radix` equals 10 and `value` is negative, the first character of the stored string is the minus sign ( `-` ). `_itow`, `_i64tow`, and `_ui64tow` are wide-character versions of `_itoa`, `_i64toa`, and `_ui64toa`, respectively.  
   
 > [!IMPORTANT]
 >  To prevent buffer overruns, ensure that the `str` buffer is large enough to hold the converted digits plus the trailing null-character and a sign character.  
@@ -267,9 +267,6 @@ base 4: 33333333333333333333333333333333 (32 chars)
 base 3: 11112220022122120101211020120210210211220 (41 chars)  
 base 2: 1111111111111111111111111111111111111111111111111111111111111111 (64 chars)  
 ```  
-  
-## .NET Framework Equivalent  
- [System::Convert::ToString](https://msdn.microsoft.com/en-us/library/system.convert.tostring.aspx)  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

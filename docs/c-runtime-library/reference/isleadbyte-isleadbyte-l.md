@@ -81,7 +81,7 @@ int _isleadbyte_l(
  `isleadbyte` returns a nonzero value if the argument satisfies the test condition or 0 if it does not. In the "C" locale and in single-byte character set (SBCS) locales, `isleadbyte` always returns 0.  
   
 ## Remarks  
- The `isleadbyte` macro returns a nonzero value if its argument is the first byte of a multibyte character. `isleadbyte` produces a meaningful result for any integer argument from –1 (`EOF`) to `UCHAR_MAX` (0xFF), inclusive.  
+ The `isleadbyte` macro returns a nonzero value if its argument is the first byte of a multibyte character. `isleadbyte` produces a meaningful result for any integer argument from -1 (`EOF`) to `UCHAR_MAX` (0xFF), inclusive.  
   
  The expected argument type of `isleadbyte` is `int`; if a signed character is passed, the compiler may convert it to an integer by sign extension, yielding unpredictable results.  
   
@@ -101,9 +101,6 @@ int _isleadbyte_l(
 |`_isleadbyte_l`|\<ctype.h>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## .NET Framework Equivalent  
- Not applicable, but see [System::Globalization::CultureInfo](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.aspx).  
   
 ## See Also  
  [Byte Classification](../../c-runtime-library/byte-classification.md)   

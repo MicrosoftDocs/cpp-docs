@@ -75,7 +75,7 @@ int GetArray() __gc[] {
 }  
 ```  
   
- is considerably simplified in the new syntax (note that because boxing is implicit in the new syntax, the `__box` operator has been eliminated – see [Value Types and Their Behaviors (C++/CLI)](../dotnet/value-types-and-their-behaviors-cpp-cli.md) for a discussion):  
+ is considerably simplified in the new syntax (note that because boxing is implicit in the new syntax, the `__box` operator has been eliminated - see [Value Types and Their Behaviors (C++/CLI)](../dotnet/value-types-and-their-behaviors-cpp-cli.md) for a discussion):  
   
 ```  
 array<int>^ GetArray() {  

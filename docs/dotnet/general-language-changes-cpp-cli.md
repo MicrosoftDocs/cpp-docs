@@ -39,7 +39,7 @@ A number of CLR language features changed from Managed Extensions for C++ to [!I
  Discusses how the handling of string literals has changed.  
   
  [Param Array and Ellipsis](../dotnet/param-array-and-ellipsis.md)  
- Discusses how `ParamArray` is now given precedence over the ellipsis (`…`) for resolving function calls with varying numbers of arguments.  
+ Discusses how `ParamArray` is now given precedence over the ellipsis (`...`) for resolving function calls with varying numbers of arguments.  
   
  [typeof Goes to T::typeid](../dotnet/typeof-goes-to-t-typeid.md)  
  Discusses how the `typeof` operator has been supplanted by `typeid`.  

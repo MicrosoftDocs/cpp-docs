@@ -116,7 +116,7 @@ long double tanhl(
  Angle in radians.  
   
 ## Return Value  
- The `tan` functions return the tangent of `x`. If `x` is greater than or equal to 263, or less than or equal to –263, a loss of significance in the result occurs.  
+ The `tan` functions return the tangent of `x`. If `x` is greater than or equal to 263, or less than or equal to -263, a loss of significance in the result occurs.  
   
  The `tanh` functions return the hyperbolic tangent of `x`. There is no error return.  
   
@@ -163,12 +163,6 @@ int main( void )
 tan( 0.785398 ) = 1.000000  
 tanh( 1.000000 ) = 0.761594  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::Math::Tan](https://msdn.microsoft.com/en-us/library/system.math.tan.aspx)  
-  
--   [System::Math::Tanh](https://msdn.microsoft.com/en-us/library/system.math.tanh.aspx)  
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

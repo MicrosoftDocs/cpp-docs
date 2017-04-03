@@ -40,8 +40,14 @@ These functions provide support for loading and registering a type library.
   
 |||  
 |-|-|  
+|[AfxRegCreateKey](#afxrefcreatekey)|Creates the specified registry key.|
+|[AfxRegDeleteKey](#afxrefdeletekey)|Deletes the specified registry key.|
+|[AfxRegisterPreviewHandler](#afxregisterpreviewhandler)|A helper to register a preview handler.|
+|[AfxUnregisterPreviewHandler](#afxunregisterpreviewhandler)| A helper to unregister a preview handler. |
 |[AtlRegisterTypeLib](#atlregistertypelib)|This function is called to register a type library.|  
 |[AtlUnRegisterTypeLib](#atlunregistertypelib)|This function is called to unregister a type library|  
+|[AfxRegOpenKey](#afxregopenkey)|Opens the specified registry key.|
+|[AfxRegOpenKeyEx](#afxregopenkeyex)|Opens the specified registry key.|
 |[AtlLoadTypeLib](#atlloadtypelib)|This function is called to load a type library.|  
 |[AtlUpdateRegistryFromResourceD](#atlupdateregistryfromresourced)|This function is called to update the registry from the supplied resource.|  
 |[RegistryDataExchange](#registrydataexchange)|This function is called to read from, or write to, the system registry. Called by the [Registry Data Exchange Macros](../../atl/reference/registry-data-exchange-macros.md).|  
@@ -80,6 +86,81 @@ ATLINLINE ATLAPI AtlGetPerUserRegistration(bool* pEnabled);
 ### Requirements  
  **Header:** atlbase.h  
 
+ ## <a name="afxregcreatekey"></a> AfxRegCreateKey
+ Creates the specified registry key.  
+  
+### Syntax  
+  
+```  
+LONG AFXAPI AfxRegCreateKey(HKEY hKey, LPCTSTR lpSubKey, PHKEY phkResult, CAtlTransactionManager* pTM = NULL);  
+```  
+  
+### Parameters  
+ `hKey`  
+ A handle to an open registry key.  
+  
+ `lpSubKey`  
+ The name of a key that this function opens or creates.  
+  
+ `phkResult`  
+ A pointer to a variable that receives a handle to the opened or created key.  
+  
+ `pTM`  
+ Pointer to a `CAtlTransactionManager` object.  
+  
+### Return Value  
+ If the function succeeds, the return value is ERROR_SUCCESS. If the function fails, the return value is a nonzero error code defined in Winerror.h.  
+
+### Requirements  
+ **Header:** afxpriv.h  
+
+## <a name="afxregdeletekey"></a> AfxRegDeleteKey
+Deletes the specified registry key.  
+  
+### Syntax  
+  
+```  
+LONG AFXAPI AfxRegDeleteKey(HKEY hKey, LPCTSTR lpSubKey, CAtlTransactionManager* pTM = NULL);  
+```  
+  
+### Parameters  
+ `hKey`  
+ A handle to an open registry key.  
+  
+ `lpSubKey`  
+ The name of the key to be deleted.  
+  
+ `pTM`  
+ Pointer to a `CAtlTransactionManager` object.  
+  
+### Return Value  
+ If the function succeeds, the return value is ERROR_SUCCESS. If the function fails, the return value is a nonzero error code defined in Winerror.h.  
+  
+### Requirements  
+ **Header:** afxpriv.h  
+
+## <a name="afxregisterpreviewhandler"></a>
+A helper to register a preview handler.  
+  
+### Syntax  
+  
+```  
+BOOL AFXAPI AfxRegisterPreviewHandler(LPCTSTR lpszCLSID, LPCTSTR lpszShortTypeName, LPCTSTR lpszFilterExt);  
+```  
+  
+### Parameters  
+ `lpszCLSID`  
+ Specifies the CLSID of handler.  
+  
+ `lpszShortTypeName`  
+ Specifies the ProgID of handler.  
+  
+ `lpszFilterExt`  
+ Specifies the file extension registered with this handler.  
+  
+### Requirements  
+ **Header:** afxdisp.h   
+
 ##  <a name="atlregistertypelib"></a>  AtlRegisterTypeLib  
  This function is called to register a type library.  
   
@@ -102,6 +183,84 @@ ATLAPI AtlRegisterTypeLib(HINSTANCE hInstTypeLib, LPCOLESTR lpszIndex);
  This helper function is utilized by [AtlComModuleUnregisterServer](server-registration-global-functions.md#atlcommoduleunregisterserver) and [CAtlComModule::RegisterTypeLib](../../atl/reference/catlcommodule-class.md#registertypelib).  
 ### Requirements  
  **Header:** atlbase.h
+
+ ## <a name="afxregopenkey"></a> AfxRegOpenKey
+ Opens the specified registry key.  
+  
+### Syntax  
+  
+```  
+LONG AFXAPI AfxRegOpenKey(HKEY hKey, LPCTSTR lpSubKey, PHKEY phkResult, CAtlTransactionManager* pTM = NULL);  
+```  
+  
+### Parameters  
+ `hKey`  
+ A handle to an open registry key.  
+  
+ `lpSubKey`  
+ The name of a key that this function opens or creates.  
+  
+ `phkResult`  
+ A pointer to a variable that receives a handle to the created key.  
+  
+ `pTM`  
+ Pointer to a `CAtlTransactionManager` object.  
+  
+### Return Value  
+ If the function succeeds, the return value is ERROR_SUCCESS. If the function fails, the return value is a nonzero error code defined in Winerror.h.  
+  
+### Requirements  
+ **Header:** afxpriv.h  
+
+## <a name="afxregopenkeyex"></a>  AfxRegOpenKeyEx
+Opens the specified registry key. 
+
+### Syntax  
+  
+```  
+LONG AFXAPI AfxRegOpenKeyEx(HKEY hKey, LPCTSTR lpSubKey, DWORD ulOptions, REGSAM samDesired, PHKEY phkResult, CAtlTransactionManager* pTM = NULL);  
+```  
+  
+### Parameters  
+ `hKey`  
+ A handle to an open registry key.  
+  
+ `lpSubKey`  
+ The name of a key that this function opens or creates.  
+  
+ `ulOptions`  
+ This parameter is reserved and must be zero.  
+  
+ `samDesired`  
+ A mask that specifies the desired access rights to the key.  
+  
+ `phkResult`  
+ A pointer to a variable that receives a handle to the opened key.  
+  
+ `pTM`  
+ Pointer to a `CAtlTransactionManager` object.  
+  
+### Return Value  
+ If the function succeeds, the return value is ERROR_SUCCESS. If the function fails, the return value is a nonzero error code defined in Winerror.h.  
+  
+### Requirements  
+ **Header:** afxpriv.h  
+
+ ## <a name="afxunregisterpreviewhandler"></a> AfxUnregisterPreviewHandler
+ A helper to unregister a preview handler.  
+  
+### Syntax  
+  
+```  
+BOOL AFXAPI AfxUnRegisterPreviewHandler(LPCTSTR lpszCLSID);  
+```  
+  
+### Parameters  
+ `lpszCLSID`  
+ Specifies the CLSID of the handler to be unregistered.  
+  
+### Requirements  
+ **Header:** afxdisp.h  
 
 ## <a name="atlsetperuserregistration"></a> AtlSetPerUserRegistration
 Sets whether the application redirects registry access to the **HKEY_CURRENT_USER** (**HKCU**) node.  
@@ -189,11 +348,7 @@ ATLINLINE ATLAPI AtlLoadTypeLib(
 <removed>
 ```  
   
-### Parameters  
-  
-### Return Value  
-  
-### Remarks  
+
   
 ##  <a name="registrydataexchange"></a>  RegistryDataExchange  
  This function is called to read from, or write to, the system registry.  

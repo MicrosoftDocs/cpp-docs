@@ -124,9 +124,6 @@ wchar_t *_wgetdcwd_dbg(
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
-## .NET Framework Equivalent  
- <xref:System.Environment.CurrentDirectory%2A?displayProperty=fullName>  
-  
 ## See Also  
  [_getdcwd, _wgetdcwd](../../c-runtime-library/reference/getdcwd-wgetdcwd.md)   
  [Directory Control](../../c-runtime-library/directory-control.md)   

@@ -66,7 +66,7 @@ translation.priority.ht:
 |`_strtoi64`|Convert string to 64-bit `__int64` integer|  
 |`_strtoui64`|Convert string to unsigned 64-bit `__int64` integer|  
   
- `wcstod`, `wcstol`, `wcstoul`, and `_wcstoi64` are wide-character versions of `strtod`, `strtol`, `strtoul`, and `_strtoi64`, respectively. The string argument to each of these wide-character functions is a wide-character string; each function behaves identically to its single-byte–character counterpart otherwise.  
+ `wcstod`, `wcstol`, `wcstoul`, and `_wcstoi64` are wide-character versions of `strtod`, `strtol`, `strtoul`, and `_strtoi64`, respectively. The string argument to each of these wide-character functions is a wide-character string; each function behaves identically to its single-byte-character counterpart otherwise.  
   
  The `strtod` function takes two arguments: the first is the input string, and the second a pointer to the character which ends the conversion process. `strtol`, `strtoul`, **_strtoi64** and **_strtoui64** take a third argument as the number base to use in the conversion process.  
   
@@ -78,13 +78,13 @@ translation.priority.ht:
   
  [*whitespace*] [*sign*] [`digits`] [**.**`digits`] [ {**d** &#124; **D** &#124; **e** &#124; **E**}[*sign*]`digits`]  
   
- A *whitespace* may consist of space or tab characters, which are ignored; *sign* is either plus (**+**) or minus (**–**); and `digits` are one or more decimal digits. If no digits appear before the radix character, at least one must appear after the radix character. The decimal digits can be followed by an exponent, which consists of an introductory letter (**d**, **D**, **e**, or **E**) and an optionally signed integer. If neither an exponent part nor a radix character appears, a radix character is assumed to follow the last digit in the string. The first character that does not fit this form stops the scan.  
+ A *whitespace* may consist of space or tab characters, which are ignored; *sign* is either plus (**+**) or minus (**-**); and `digits` are one or more decimal digits. If no digits appear before the radix character, at least one must appear after the radix character. The decimal digits can be followed by an exponent, which consists of an introductory letter (**d**, **D**, **e**, or **E**) and an optionally signed integer. If neither an exponent part nor a radix character appears, a radix character is assumed to follow the last digit in the string. The first character that does not fit this form stops the scan.  
   
  The `strtol`, `strtoul`, `_strtoi64`, and `_strtoui64` functions expect a string of the following form:  
   
- [*whitespace*] [{**+** &#124; **–**}] [**0** [{ **x** &#124; **X** }]] [`digits`]  
+ [*whitespace*] [{**+** &#124; **-**}] [**0** [{ **x** &#124; **X** }]] [`digits`]  
   
- If the base argument is between 2 and 36, then it is used as the base of the number. If it is 0, the initial characters referenced to by the end-of-conversion pointer are used to determine the base. If the first character is 0 and the second character is not 'x' or 'X', the string is interpreted as an octal integer; otherwise, it is interpreted as a decimal number. If the first character is '0' and the second character is 'x' or 'X', the string is interpreted as a hexadecimal integer. If the first character is '1' through '9', the string is interpreted as a decimal integer. The letters 'a' through 'z' (or 'A' through 'Z') are assigned the values 10 through 35; only letters whose assigned values are less than *base* are permitted. `strtoul` and `_strtoui64` allow a plus (**+**) or minus (**–**) sign prefix; a leading minus sign indicates that the return value is negated.  
+ If the base argument is between 2 and 36, then it is used as the base of the number. If it is 0, the initial characters referenced to by the end-of-conversion pointer are used to determine the base. If the first character is 0 and the second character is not 'x' or 'X', the string is interpreted as an octal integer; otherwise, it is interpreted as a decimal number. If the first character is '0' and the second character is 'x' or 'X', the string is interpreted as a hexadecimal integer. If the first character is '1' through '9', the string is interpreted as a decimal integer. The letters 'a' through 'z' (or 'A' through 'Z') are assigned the values 10 through 35; only letters whose assigned values are less than *base* are permitted. `strtoul` and `_strtoui64` allow a plus (**+**) or minus (**-**) sign prefix; a leading minus sign indicates that the return value is negated.  
   
  The output value is affected by the setting of the `LC_NUMERIC` category setting of the locale; see [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead.  
   
@@ -105,7 +105,7 @@ translation.priority.ht:
   
  **_I64_MAX**, _**I64_MIN**, and **_UI64_MAX** are defined in LIMITS.H.  
   
- `wcstod`, `wcstol`, `wcstoul`, `_wcstoi64`, and `_wcstoui64` are wide-character versions of `strtod`, `strtol`, `strtoul`, `_strtoi64`, and `_strtoui64`, respectively; the pointer to an end-of-conversion argument to each of these wide-character functions is a wide-character string. Otherwise, each of these wide-character functions behaves identically to its single-byte–character counterpart.  
+ `wcstod`, `wcstol`, `wcstoul`, `_wcstoi64`, and `_wcstoui64` are wide-character versions of `strtod`, `strtol`, `strtoul`, `_strtoi64`, and `_strtoui64`, respectively; the pointer to an end-of-conversion argument to each of these wide-character functions is a wide-character string. Otherwise, each of these wide-character functions behaves identically to its single-byte-character counterpart.  
   
 ## See Also  
  [Data Conversion](../c-runtime-library/data-conversion.md)   

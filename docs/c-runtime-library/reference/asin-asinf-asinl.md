@@ -85,9 +85,9 @@ long double asinl(
  Value whose arcsine is to be calculated.  
   
 ## Return Value  
- The `asin` function returns the arcsine (the inverse sine function) of `x` in the range –π/2 to π/2 radians.  
+ The `asin` function returns the arcsine (the inverse sine function) of `x` in the range -π/2 to π/2 radians.  
   
- By default, if `x` is less than –1 or greater than 1, `asin` returns an indefinite.  
+ By default, if `x` is less than -1 or greater than 1, `asin` returns an indefinite.  
   
 |Input|SEH Exception|Matherr Exception|  
 |-----------|-------------------|-----------------------|  
@@ -106,9 +106,6 @@ long double asinl(
   
 ## Example  
  For more information, see [acos, acosf, acosl](../../c-runtime-library/reference/acos-acosf-acosl.md).  
-  
-## .NET Framework Equivalent  
- [System::Math::Asin](https://msdn.microsoft.com/en-us/library/system.math.asin.aspx)  
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

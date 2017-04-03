@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # operator LT
-Returns true (–1) if *expression1* is less than *expression2*, or returns false (0) if it is not.  
+Returns true (-1) if *expression1* is less than *expression2*, or returns false (0) if it is not.  
   
 ## Syntax  
   

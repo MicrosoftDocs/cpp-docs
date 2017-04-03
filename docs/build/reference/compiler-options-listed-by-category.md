@@ -136,7 +136,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/vmm](../../build/reference/vmm-vms-vmv-general-purpose-representation.md)|Declares multiple inheritance.|  
 |[/vms](../../build/reference/vmm-vms-vmv-general-purpose-representation.md)|Declares single inheritance.|  
 |[/vmv](../../build/reference/vmm-vms-vmv-general-purpose-representation.md)|Declares virtual inheritance.|  
-|[/Z7](../../build/reference/z7-zi-zi-debug-information-format.md)|Generates C 7.0–compatible debugging information.|  
+|[/Z7](../../build/reference/z7-zi-zi-debug-information-format.md)|Generates C 7.0-compatible debugging information.|  
 |[/Za](../../build/reference/za-ze-disable-language-extensions.md)|Disables language extensions.|  
 |[/Zc](../../build/reference/zc-conformance.md)|Specifies standard behavior under [/Ze](../../build/reference/za-ze-disable-language-extensions.md).|  
 |[/Ze](../../build/reference/za-ze-disable-language-extensions.md)|Deprecated. Enables language extensions.|  

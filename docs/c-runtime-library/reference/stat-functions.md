@@ -198,7 +198,7 @@ int _wstat64i32(
  Pointer to structure that stores results.  
   
 ## Return Value  
- Each of these functions returns 0 if the file-status information is obtained. A return value of –1 indicates an error, in which case `errno` is set to `ENOENT`, indicating that the filename or path could not be found. A return value of `EINVAL` indicates an invalid parameter; `errno` is also set to `EINVAL` in this case.  
+ Each of these functions returns 0 if the file-status information is obtained. A return value of -1 indicates an error, in which case `errno` is set to `ENOENT`, indicating that the filename or path could not be found. A return value of `EINVAL` indicates an invalid parameter; `errno` is also set to `EINVAL` in this case.  
   
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on this, and other, return codes.  
   
@@ -349,16 +349,6 @@ File size     : 732
 Drive         : C:  
 Time modified : Thu Feb 07 14:39:36 2002  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::IO::File::GetAttributes](https://msdn.microsoft.com/en-us/library/system.io.file.getattributes.aspx)  
-  
--   [System::IO::File::GetCreationTime](https://msdn.microsoft.com/en-us/library/system.io.file.getcreationtime.aspx)  
-  
--   [System::IO::File::GetLastAccessTime](https://msdn.microsoft.com/en-us/library/system.io.file.getlastaccesstime.aspx)  
-  
--   [System::IO::File::GetLastWriteTime](https://msdn.microsoft.com/en-us/library/system.io.file.getlastwritetime.aspx)  
   
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   

@@ -237,7 +237,7 @@ In the IDE, all information that is needed to build a project is exposed as *pro
  For more information, see [MSBuild Properties](/visualstudio/msbuild/msbuild-properties).  
   
 ## Adding an include directory to the set of default directories  
- When you add an include directory to a project, it is important not to override all the default directories. The correct way to add a directory is to append the new path, for example “C:\MyNewIncludeDir\”, and then to Append the **$(IncludePath)** macro to the property value.  
+ When you add an include directory to a project, it is important not to override all the default directories. The correct way to add a directory is to append the new path, for example "C:\MyNewIncludeDir\", and then to Append the **$(IncludePath)** macro to the property value.  
   
 ## Setting environment variables for a build  
  The Visual C++ compiler (cl.exe) recognizes certain environment variables, specifically LIB, LIBPATH, PATH, and INCLUDE. When you build with the IDE, the properties that are set in the [VC++ Directories Property Page](../ide/vcpp-directories-property-page.md) property page are used to set those environment variables. If LIB, LIBPATH, and INCLUDE values have already been set, for example by a Developer Command Prompt, they are replaced with the values of the corresponding MSBuild properties. The build then prepends the value of the VC++ Directories executable directories property to PATH. You can set a user-defined environment variable by created a user-defined macro and then checking the box that says **Set this macro as an environment variable in the build environment**.  
@@ -272,7 +272,7 @@ Overriding properties and targets in this way is equivalent to adding the follow
 
 ```cmd 
 <Import Project=="C:\sources\my_props.props" />
-<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />  already in each vcxproj
+<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
 <Import Project==" C:\sources\my_target.targets"" />
 ```
 

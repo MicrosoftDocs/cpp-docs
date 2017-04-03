@@ -384,7 +384,7 @@ virtual void OnUpdateCmdUI(
  Flag that indicates whether a control that has no update handler should be automatically displayed as disabled.  
   
 ### Remarks  
- To update an individual button or pane, use the `ON_UPDATE_COMMAND_UI` macro in your message map to set an update handler appropriately. See [ON_UPDATE_COMMAND_UI](http://msdn.microsoft.com/library/c4de3c21-2d2e-4b89-a4ce-d0c0e2d9edc4) for more information about using this macro.  
+ To update an individual button or pane, use the `ON_UPDATE_COMMAND_UI` macro in your message map to set an update handler appropriately. See [ON_UPDATE_COMMAND_UI](message-map-macros-mfc.md#on_update_command_ui) for more information about using this macro.  
   
  `OnUpdateCmdUI` is called by the framework when the application is idle. The frame window to be updated must be a child window, at least indirectly, of a visible frame window. `OnUpdateCmdUI` is an advanced overridable.  
   

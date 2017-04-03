@@ -108,7 +108,7 @@ errno_t _ultow_s(
  Zero if the function was successful or an error code.  
   
 ## Remarks  
- The `_ultoa_s` function converts the digits of `value` to a null-terminated character string and stores the result (up to 33 bytes) in `str`. The `radix` argument specifies the base of `value`, which must be in the range 2 – 36. `_ultow_s` is a wide character version of `_ultoa_s`; the second argument of `_ultow_s` is a wide character strings.  
+ The `_ultoa_s` function converts the digits of `value` to a null-terminated character string and stores the result (up to 33 bytes) in `str`. The `radix` argument specifies the base of `value`, which must be in the range 2 - 36. `_ultow_s` is a wide character version of `_ultoa_s`; the second argument of `_ultow_s` is a wide character strings.  
   
  If `str` is a `NULL` pointer, or if `sizeOfstr` is less than or equal to zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL` or if the `value` or `str` out of range of a long integer, these functions will return a -1 and set the `errno` to `ERANGE`.  
   
@@ -128,9 +128,6 @@ errno_t _ultow_s(
 |`_ultow_s`|\<stdlib.h>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## .NET Framework Equivalent  
- [System::Convert::ToString](https://msdn.microsoft.com/en-us/library/system.convert.tostring.aspx)  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

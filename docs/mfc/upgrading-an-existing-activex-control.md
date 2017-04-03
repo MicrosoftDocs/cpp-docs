@@ -144,7 +144,7 @@ file-win32-x86=http://activex.microsoft.com/controls/vc/mfc42.cab
 C:\CabDevKit\cabarc.exe -s 6144 N spindial.cab spindial.ocx spindial.inf   
 ```  
   
- The `–s 6144` parameter reserves space in the cabinet for code signing.  
+ The `-s 6144` parameter reserves space in the cabinet for code signing.  
   
 ### The Version Tag  
  Note here that the `#Version` information specified with a CAB file applies to the control specified by the `CLASSID` parameter of the `<OBJECT>` tag.  

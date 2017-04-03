@@ -1332,7 +1332,7 @@ LONG SetTransparentColor(LONG iTransparentColor) throw();
   
 ### Parameters  
  *iTransparentColor*  
- The index, in a color palette, of the color to set to transparent. If –1, no color is set to transparent.  
+ The index, in a color palette, of the color to set to transparent. If -1, no color is set to transparent.  
   
 ### Return Value  
  The index of the color previously set as transparent.  

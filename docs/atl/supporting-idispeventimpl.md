@@ -75,7 +75,7 @@ The template class [IDispEventImpl](../atl/reference/idispeventimpl-class.md) ca
 ## Declaring an Event Sink Map  
  In order for the event notifications to be handled by the proper function, your class must route each event to its correct handler. This is achieved by declaring an event sink map.  
   
- ATL provides several macros, [BEGIN_SINK_MAP](http://msdn.microsoft.com/library/32542b3d-ac43-4139-8ac4-41c48481744f), [END_SINK_MAP](http://msdn.microsoft.com/library/c8bb87a0-b224-46e5-9edc-fc4d7f1129b4), and [SINK_ENTRY_EX](http://msdn.microsoft.com/library/33a5fff6-5248-47c0-8cf4-8bdf760e86e5), that make this mapping easier. The standard format is as follows:  
+ ATL provides several macros, [BEGIN_SINK_MAP](reference/composite-control-macros.md#begin_sink_map), [END_SINK_MAP](reference/composite-control-macros.md#end_sink_map), and [SINK_ENTRY_EX](reference/composite-control-macros.md#sink_entry_ex), that make this mapping easier. The standard format is as follows:  
   
  `BEGIN_SINK_MAP(comClass)`  
   

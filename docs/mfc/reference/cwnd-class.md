@@ -978,7 +978,8 @@ CWnd* ChildWindowFromPoint(
  Converts the client coordinates of a given point or rectangle on the display to screen coordinates.  
   
 ```  
-void ClientToScreen(LPPOINT lpPoint) const;  void ClientToScreen(LPRECT lpRect) const;  ```  
+void ClientToScreen(LPPOINT lpPoint) const;  void ClientToScreen(LPRECT lpRect) const;  
+```  
   
 ### Parameters  
  `lpPoint`  
@@ -1080,7 +1081,7 @@ virtual HRESULT CreateAccessibleProxy(
     LPARAM lParam,  
     LRESULT* pResult);
 ```  
-  
+   
 ### Parameters  
  `wParam`  
  Identifies the object accessed by the Active Accessibility proxy. Can be one of the following values  
@@ -1996,7 +1997,8 @@ void EndPaint(LPPAINTSTRUCT lpPaint);
   
 ```  
 BOOL ExecuteDlgInit(LPCTSTR lpszResourceName);  
-BOOL ExecuteDlgInit(LPVOID lpResource);```  
+BOOL ExecuteDlgInit(LPVOID lpResource);
+```  
   
 ### Parameters  
  `lpszResourceName`  
@@ -2009,7 +2011,7 @@ BOOL ExecuteDlgInit(LPVOID lpResource);```
  **TRUE** if a dialog resource is executed; otherwise **FALSE**.  
   
 ### Remarks  
- `ExecuteDlgInit` will use resources bound to the executing module, or resources from other sources. To accomplish this, `ExecuteDlgInit` finds a resource handle by calling `AfxFindResourceHandle`. If your MFC application does not use the shared DLL (MFCx0[U][D].DLL), **AfxFindResourceHandle** calls [AfxGetResourceHandle](http://msdn.microsoft.com/library/d0eff6c4-f566-471a-96b7-a5a70a751a92), which returns the current resource handle for the executable. If your MFC application that uses MFCx0[U][D].DLL, `AfxFindResourceHandle` traverses the **CDynLinkLibrary** object list of shared and extension DLLs looking for the correct resource handle.  
+ `ExecuteDlgInit` will use resources bound to the executing module, or resources from other sources. To accomplish this, `ExecuteDlgInit` finds a resource handle by calling `AfxFindResourceHandle`. If your MFC application does not use the shared DLL (MFCx0[U][D].DLL), **AfxFindResourceHandle** calls [AfxGetResourceHandle](application-information-and-management.md#afxgetresourcehandle), which returns the current resource handle for the executable. If your MFC application that uses MFCx0[U][D].DLL, `AfxFindResourceHandle` traverses the **CDynLinkLibrary** object list of shared and extension DLLs looking for the correct resource handle.  
   
 ##  <a name="filtertooltipmessage"></a>  CWnd::FilterToolTipMessage  
  Called by the framework to display tool tip messages.  
@@ -2858,7 +2860,7 @@ UINT GetDlgItemInt(
 ### Remarks  
  It translates the text of the specified control in the given dialog box into an integer value by stripping any extra spaces at the beginning of the text and converting decimal digits. It stops the translation when it reaches the end of the text or encounters any nonnumeric character.  
   
- If `bSigned` is **TRUE**, `GetDlgItemInt` checks for a minus sign (–) at the beginning of the text and translates the text into a signed number. Otherwise, it creates an unsigned value.  
+ If `bSigned` is **TRUE**, `GetDlgItemInt` checks for a minus sign (-) at the beginning of the text and translates the text into a signed number. Otherwise, it creates an unsigned value.  
   
  It sends a [WM_GETTEXT](http://msdn.microsoft.com/library/windows/desktop/ms632627) message to the control.  
   
@@ -4737,7 +4739,7 @@ afx_msg int OnCharToItem(
  Specifies the current caret position.  
   
 ### Return Value  
- The framework calls this member function to specify the action that the application performed in response to the call. A return value of –2 indicates that the application handled all aspects of selecting the item and wants no further action by the list box. A return value of –1 indicates that the list box should perform the default action in response to the keystroke. A return value of 0 or greater specifies the zero-based index of an item in the list box and indicates that the list box should perform the default action for the keystroke on the given item.  
+ The framework calls this member function to specify the action that the application performed in response to the call. A return value of -2 indicates that the application handled all aspects of selecting the item and wants no further action by the list box. A return value of -1 indicates that the list box should perform the default action in response to the keystroke. A return value of 0 or greater specifies the zero-based index of an item in the list box and indicates that the list box should perform the default action for the keystroke on the given item.  
   
 ### Remarks  
   
@@ -4891,7 +4893,7 @@ afx_msg int OnCompareItem(
   
 |Value|Meaning|  
 |-----------|-------------|  
-|–1|Item 1 sorts before item 2.|  
+|-1|Item 1 sorts before item 2.|  
 |0|Item 1 and item 2 sort the same.|  
 |1|Item 1 sorts after item 2.|  
   
@@ -4982,7 +4984,7 @@ afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
  Points to a [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) structure that contains information about the `CWnd` object being created.  
   
 ### Return Value  
- `OnCreate` must return 0 to continue the creation of the `CWnd` object. If the application returns –1, the window will be destroyed.  
+ `OnCreate` must return 0 to continue the creation of the `CWnd` object. If the application returns -1, the window will be destroyed.  
   
 ### Remarks  
  The `CWnd` object receives this call after the window is created but before it becomes visible. `OnCreate` is called before the **Create** or `CreateEx` member function returns.  
@@ -5068,10 +5070,10 @@ afx_msg void OnDeadChar(
   
 |Value|Description|  
 |-----------|-----------------|  
-|0–7|Scan code (OEM-dependent value). Low byte of high-order word.|  
+|0-7|Scan code (OEM-dependent value). Low byte of high-order word.|  
 |8|Extended key, such as a function key or a key on the numeric keypad (1 if it is an extended key; otherwise 0).|  
-|9–10|Not used.|  
-|11–12|Used internally by Windows.|  
+|9-10|Not used.|  
+|11-12|Used internally by Windows.|  
 |13|Context code (1 if the ALT key is held down while the key is pressed; otherwise 0).|  
 |14|Previous key state (1 if the key is down before the call, 0 if the key is up).|  
 |15|Transition state (1 if the key is being released, 0 if the key is being pressed).|  
@@ -5821,10 +5823,10 @@ afx_msg void OnKeyDown(
   
 |Value|Description|  
 |-----------|-----------------|  
-|0–7|Scan code (OEM-dependent value).|  
+|0-7|Scan code (OEM-dependent value).|  
 |8|Extended key, such as a function key or a key on the numeric keypad (1 if it is an extended key).|  
-|9–10|Not used.|  
-|11–12|Used internally by Windows.|  
+|9-10|Not used.|  
+|11-12|Used internally by Windows.|  
 |13|Context code (1 if the ALT key is held down while the key is pressed; otherwise 0).|  
 |14|Previous key state (1 if the key is down before the call, 0 if the key is up).|  
 |15|Transition state (1 if the key is being released, 0 if the key is being pressed).|  
@@ -5863,10 +5865,10 @@ afx_msg void OnKeyUp(
   
 |Value|Description|  
 |-----------|-----------------|  
-|0–7|Scan code (OEM-dependent value). Low byte of high-order word.|  
+|0-7|Scan code (OEM-dependent value). Low byte of high-order word.|  
 |8|Extended key, such as a function key or a key on the numeric keypad (1 if it is an extended key; otherwise 0).|  
-|9–10|Not used.|  
-|11–12|Used internally by Windows.|  
+|9-10|Not used.|  
+|11-12|Used internally by Windows.|  
 |13|Context code (1 if the ALT key is held down while the key is pressed; otherwise 0).|  
 |14|Previous key state (1 if the key is down before the call, 0 if the key is up).|  
 |15|Transition state (1 if the key is being released, 0 if the key is being pressed).|  
@@ -7866,10 +7868,10 @@ afx_msg void OnSysDeadChar(
   
 |Value|Meaning|  
 |-----------|-------------|  
-|0–7|Scan code (OEM-dependent value). Low byte of high-order word.|  
+|0-7|Scan code (OEM-dependent value). Low byte of high-order word.|  
 |8|Extended key, such as a function key or a key on the numeric keypad (1 if it is an extended key; otherwise 0).|  
-|9–10|Not used.|  
-|11–12|Used internally by Windows.|  
+|9-10|Not used.|  
+|11-12|Used internally by Windows.|  
 |13|Context code (1 if the ALT key is held down while the key is pressed; otherwise 0).|  
 |14|Previous key state (1 if the key is down before the call, 0 if the key is up).|  
 |15|Transition state (1 if the key is being released, 0 if the key is being pressed).|  
@@ -7902,10 +7904,10 @@ afx_msg void OnSysKeyDown(
   
 |Value|Meaning|  
 |-----------|-------------|  
-|0–7|Scan code (OEM-dependent value). Low byte of high-order word.|  
+|0-7|Scan code (OEM-dependent value). Low byte of high-order word.|  
 |8|Extended key, such as a function key or a key on the numeric keypad (1 if it is an extended key; otherwise 0).|  
-|9–10|Not used.|  
-|11–12|Used internally by Windows.|  
+|9-10|Not used.|  
+|11-12|Used internally by Windows.|  
 |13|Context code (1 if the ALT key is held down while the key is pressed, 0 otherwise).|  
 |14|Previous key state (1 if the key is down before the message is sent, 0 if the key is up).|  
 |15|Transition state (1 if the key is being released, 0 if the key is being pressed).|  
@@ -7946,10 +7948,10 @@ afx_msg void OnSysKeyUp(
   
 |Value|Meaning|  
 |-----------|-------------|  
-|0–7|Scan code (OEM-dependent value). Low byte of high-order word.|  
+|0-7|Scan code (OEM-dependent value). Low byte of high-order word.|  
 |8|Extended key, such as a function key or a key on the numeric keypad (1 if it is an extended key; otherwise 0).|  
-|9–10|Not used.|  
-|11–12|Used internally by Windows.|  
+|9-10|Not used.|  
+|11-12|Used internally by Windows.|  
 |13|Context code (1 if the ALT key is held down while the key is pressed, 0 otherwise).|  
 |14|Previous key state (1 if the key is down before the message is sent, 0 if the key is up).|  
 |15|Transition state (1 if the key is being released, 0 if the key is being pressed).|  
@@ -8245,7 +8247,7 @@ afx_msg int OnVKeyToItem(
  Specifies the current caret position.  
   
 ### Return Value  
- Specifies the action that the application performed in response to the message. A return value of –2 indicates that the application handled all aspects of selecting the item and requires no further action by the list box. A return value of –1 indicates that the list box should perform the default action in response to the keystroke. A return value of 0 or greater specifies the zero-based index of an item in the list box and indicates that the list box should perform the default action for the keystroke on the given item.  
+ Specifies the action that the application performed in response to the message. A return value of -2 indicates that the application handled all aspects of selecting the item and requires no further action by the list box. A return value of -1 indicates that the list box should perform the default action in response to the keystroke. A return value of 0 or greater specifies the zero-based index of an item in the list box and indicates that the list box should perform the default action for the keystroke on the given item.  
   
 ### Remarks  
  This member function is called by the framework only for list boxes that have the [LBS_HASSTRINGS](../../mfc/reference/list-box-styles.md) style.  
@@ -9020,7 +9022,8 @@ int RunModalLoop(DWORD dwFlags = 0);
  Converts the screen coordinates of a given point or rectangle on the display to client coordinates.  
   
 ```  
-void ScreenToClient(LPPOINT lpPoint) const;  void ScreenToClient(LPRECT lpRect) const;  ```  
+void ScreenToClient(LPPOINT lpPoint) const;  void ScreenToClient(LPRECT lpRect) const;  
+```  
   
 ### Parameters  
  `lpPoint`  
@@ -10120,7 +10123,7 @@ BOOL UpdateData(BOOL bSaveAndValidate = TRUE);
  The framework automatically calls `UpdateData` with `bSaveAndValidate` set to **FALSE** when a modal dialog box is created in the default implementation of [CDialog::OnInitDialog](../../mfc/reference/cdialog-class.md#oninitdialog). The call occurs before the dialog box is visible. The default implementation of [CDialog::OnOK](../../mfc/reference/cdialog-class.md#onok) calls this member function with `bSaveAndValidate` set to **TRUE** to retrieve the data, and if successful, will close the dialog box. (If the Cancel button is clicked in the dialog box, the dialog box is closed without the data being retrieved.)  
   
 ##  <a name="updatedialogcontrols"></a>  CWnd::UpdateDialogControls  
- Call this member function to update the state of dialog buttons and other controls in a dialog box or window that uses the [ON_UPDATE_COMMAND_UI](http://msdn.microsoft.com/library/c4de3c21-2d2e-4b89-a4ce-d0c0e2d9edc4) callback mechanism.  
+ Call this member function to update the state of dialog buttons and other controls in a dialog box or window that uses the [ON_UPDATE_COMMAND_UI](message-map-macros-mfc.md#on_update_command_ui) callback mechanism.  
   
 ```  
 void UpdateDialogControls(

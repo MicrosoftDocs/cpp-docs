@@ -79,7 +79,7 @@ int _wsystem(
  The command to be executed.  
   
 ## Return Value  
- If `command` is `NULL` and the command interpreter is found, returns a nonzero value. If the command interpreter is not found, returns 0 and sets `errno` to `ENOENT`. If `command` is not `NULL`, `system` returns the value that is returned by the command interpreter. It returns the value 0 only if the command interpreter returns the value 0. A return value of – 1 indicates an error, and `errno` is set to one of the following values:  
+ If `command` is `NULL` and the command interpreter is found, returns a nonzero value. If the command interpreter is not found, returns 0 and sets `errno` to `ENOENT`. If `command` is not `NULL`, `system` returns the value that is returned by the command interpreter. It returns the value 0 only if the command interpreter returns the value 0. A return value of - 1 indicates an error, and `errno` is set to one of the following values:  
   
  `E2BIG`  
  The argument list (which is system-dependent) is too big.  
@@ -144,12 +144,6 @@ Line two.
 Line one.  
 Line two.  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::Diagnostics::ProcessStartInfo Class](https://msdn.microsoft.com/en-us/library/system.diagnostics.processstartinfo.aspx)  
-  
--   [System::Diagnostics::Process Class](https://msdn.microsoft.com/en-us/library/system.diagnostics.process.aspx)  
   
 ## See Also  
  [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   

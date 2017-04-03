@@ -117,14 +117,14 @@ errno_t _wasctime_s(
   
 |timeptr member|Value|  
 |--------------------|-----------|  
-|`tm_hour`|Hours since midnight (0–23)|  
+|`tm_hour`|Hours since midnight (0-23)|  
 |`tm_isdst`|Positive if daylight saving time is in effect; 0 if daylight saving time is not in effect; negative if status of daylight saving time is unknown. The C run-time library assumes the United States' rules for implementing the calculation of Daylight Saving Time (DST).|  
-|`tm_mday`|Day of month (1–31)|  
-|`tm_min`|Minutes after hour (0–59)|  
-|`tm_mon`|Month (0–11; January = 0)|  
-|`tm_sec`|Seconds after minute (0–59)|  
-|`tm_wday`|Day of week (0–6; Sunday = 0)|  
-|`tm_yday`|Day of year (0–365; January 1 = 0)|  
+|`tm_mday`|Day of month (1-31)|  
+|`tm_min`|Minutes after hour (0-59)|  
+|`tm_mon`|Month (0-11; January = 0)|  
+|`tm_sec`|Seconds after minute (0-59)|  
+|`tm_wday`|Day of week (0-6; Sunday = 0)|  
+|`tm_yday`|Day of year (0-365; January 1 = 0)|  
 |`tm_year`|Year (current year minus 1900)|  
   
  The converted character string is also adjusted according to the local time zone settings. See the [time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md), [_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md), and [localtime_s, _localtime32_s, _localtime64_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md) functions for information about configuring the local time and the [_tzset](../../c-runtime-library/reference/tzset.md) function for information about defining the time zone environment and global variables.  
@@ -187,18 +187,6 @@ int main( void )
 ```Output  
 Current date and time: Wed May 14 15:30:17 2003  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   <xref:System.DateTime.ToLongDateString%2A?displayProperty=fullName>  
-  
--   <xref:System.DateTime.ToLongTimeString%2A?displayProperty=fullName>  
-  
--   <xref:System.DateTime.ToShortDateString%2A?displayProperty=fullName>  
-  
--   <xref:System.DateTime.ToShortTimeString%2A?displayProperty=fullName>  
-  
--   <xref:System.DateTime.ToString%2A?displayProperty=fullName>  
   
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   

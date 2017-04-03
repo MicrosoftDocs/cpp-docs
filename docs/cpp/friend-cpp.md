@@ -138,7 +138,7 @@ class G
 >  Although the entire second class must be a friend to the first class, you can select which functions in the first class will be friends of the second class.  
   
 ## friend functions  
- A `friend` function is a function that is not a member of a class but has access to the class's private and protected members. Friend functions are not considered class members; they are normal external functions that are given special access privileges. Friends are not in the class's scope, and they are not called using the member-selection operators (**.** and –**>**) unless they are members of another class. A `friend` function is declared by the class that is granting access. The `friend` declaration can be placed anywhere in the class declaration. It is not affected by the access control keywords.  
+ A `friend` function is a function that is not a member of a class but has access to the class's private and protected members. Friend functions are not considered class members; they are normal external functions that are given special access privileges. Friends are not in the class's scope, and they are not called using the member-selection operators (**.** and -**>**) unless they are members of another class. A `friend` function is declared by the class that is granting access. The `friend` declaration can be placed anywhere in the class declaration. It is not affected by the access control keywords.  
   
  The following example shows a `Point` class and a friend function, `ChangePrivate`. The `friend` function has access to the private data member of the `Point` object it receives as a parameter.  
   

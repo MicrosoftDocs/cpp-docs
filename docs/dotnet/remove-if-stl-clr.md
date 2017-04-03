@@ -45,7 +45,7 @@ template<class _FwdIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `remove_if`. For more information, see [remove_if](http://msdn.microsoft.com/Library/3b784953-0db6-42a8-84fc-865101abf901).  
+ This function behaves the same as the C++ Standard Library function `remove_if`. For more information, see [remove_if](../standard-library/algorithm-functions.md#remove_if).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

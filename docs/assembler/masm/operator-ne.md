@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # operator NE
-Returns true (–1) if *expression1* does not equal *expression2*, or returns false (0) if it does.  
+Returns true (-1) if *expression1* does not equal *expression2*, or returns false (0) if it does.  
   
 ## Syntax  
   

@@ -153,7 +153,7 @@ CWinThread();
 ```  
   
 ### Remarks  
- To begin the thread's execution, call the [CreateThread](#createthread) member function. You will usually create threads by calling [AfxBeginThread](http://msdn.microsoft.com/library/e9e8684d-24f7-4599-8fdf-1f4f560a753b), which will call this constructor and `CreateThread`.  
+ To begin the thread's execution, call the [CreateThread](#createthread) member function. You will usually create threads by calling [AfxBeginThread](application-information-and-management.md#afxbeginthread), which will call this constructor and `CreateThread`.  
   
 ##  <a name="exitinstance"></a>  CWinThread::ExitInstance  
  Called by the framework from within a rarely overridden [Run](#run) member function to exit this instance of the thread, or if a call to [InitInstance](#initinstance) fails.  
@@ -437,7 +437,7 @@ virtual LRESULT ProcessWndProcException(
  Points to a [MSG structure](../../mfc/reference/msg-structure1.md) containing information about the windows message that caused the framework to throw an exception.  
   
 ### Return Value  
- –1 if a `WM_CREATE` exception is generated; otherwise 0.  
+ -1 if a `WM_CREATE` exception is generated; otherwise 0.  
   
 ### Remarks  
  Do not call this member function directly.  

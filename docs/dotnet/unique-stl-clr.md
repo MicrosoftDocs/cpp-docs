@@ -47,7 +47,7 @@ template<class _FwdIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `unique`. For more information, see [unique](http://msdn.microsoft.com/Library/a9615038-2b77-43bf-876b-9f79be88eff0).  
+ This function behaves the same as the C++ Standard Library function `unique`. For more information, see [unique](../standard-library/algorithm-functions.md#unique).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

@@ -45,7 +45,7 @@ While copying in a resource, you can change its language property or condition p
  The language and condition of a resource are shown in parentheses after the name of the resource in the Workspace window. In this example the resource named IDD_AboutBox is using Finnish as its language and its condition is XX33.  
   
 ```  
-IDD_AboutBox (Finnish – XX33)  
+IDD_AboutBox (Finnish - XX33)  
 ```  
   
 ### To copy an existing resource and change its language or condition  
@@ -60,7 +60,7 @@ IDD_AboutBox (Finnish – XX33)
   
     -   In the **Condition** box, type the condition.  
   
- For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+
   
  Requirements  
   

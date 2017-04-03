@@ -292,7 +292,7 @@ int GetCurSel() const;
 ```  
   
 ### Return Value  
- Zero-based index of the selected tab if successful or – 1 if no tab is selected.  
+ Zero-based index of the selected tab if successful or - 1 if no tab is selected.  
   
 ##  <a name="getextendedstyle"></a>  CTabCtrl::GetExtendedStyle  
  Retrieves the extended styles that are currently in use for the tab control.  
@@ -357,7 +357,7 @@ BOOL GetItem(int nItem,   TCITEM* pTabCtrlItem) const;
  Size of the buffer pointed to by **pszText**. This member is ignored if the structure is not receiving information.  
   
  `iImage`  
- Index into the tab control's image list, or – 1 if there is no image for the tab.  
+ Index into the tab control's image list, or - 1 if there is no image for the tab.  
   
  **lParam**  
  Application-defined data associated with the tab. If there are more than four bytes of application-defined data per tab, an application must define a structure and use it instead of the `TCITEM` structure. The first member of the application-defined structure must be a [TCITEMHEADER](http://msdn.microsoft.com/library/windows/desktop/bb760556)structure. The **TCITEMHEADER** structure is identical to the `TCITEM` structure, but without the **lParam** member. The difference between the size of your structure and the size of the **TCITEMHEADER** structure should equal the number of extra bytes per tab.  
@@ -483,7 +483,7 @@ int HitTest(TCHITTESTINFO* pHitTestInfo) const;
  Pointer to a [TCHITTESTINFO](http://msdn.microsoft.com/library/windows/desktop/bb760553) structure, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)], which specifies the screen position to test.  
   
 ### Return Value  
- Returns the zero-based index of the tab or – 1 if no tab is at the specified position.  
+ Returns the zero-based index of the tab or - 1 if no tab is at the specified position.  
   
 ##  <a name="insertitem"></a>  CTabCtrl::InsertItem  
  Inserts a new tab in an existing tab control.  
@@ -559,7 +559,7 @@ LONG InsertItem(
  Specifies which states are to be set. For more information, see [TCITEM](http://msdn.microsoft.com/library/windows/desktop/bb760554) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
 ### Return Value  
- Zero-based index of the new tab if successful; otherwise – 1.  
+ Zero-based index of the new tab if successful; otherwise - 1.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CTabCtrl#5](../../mfc/reference/codesnippet/cpp/ctabctrl-class_5.cpp)]  
@@ -604,7 +604,7 @@ int SetCurSel(int nItem);
  The zero-based index of the item to be selected.  
   
 ### Return Value  
- Zero-based index of the previously selected tab if successful, otherwise – 1.  
+ Zero-based index of the previously selected tab if successful, otherwise - 1.  
   
 ### Remarks  
  A tab control does not send a **TCN_SELCHANGING** or **TCN_SELCHANGE** notification message when a tab is selected using this function. These notifications are sent, using **WM_NOTIFY**, when the user clicks or uses the keyboard to change tabs.  

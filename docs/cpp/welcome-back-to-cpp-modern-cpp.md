@@ -66,7 +66,7 @@ vector<shape*> v = load_shapes();
   
 for( vector<circle*>::iterator i = v.begin(); i != v.end(); ++i ) {  
     if( *i && **i == *p )  
-        cout << **i << “ is a match\n”;  
+        cout << **i << " is a match\n";  
 }  
   
 for( vector<circle*>::iterator i = v.begin();  

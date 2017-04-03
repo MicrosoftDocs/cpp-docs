@@ -116,7 +116,7 @@ int _cwprintf_p_l(
 ## Remarks  
  These functions format and print a series of characters and values directly to the console, using the `_putch` and `_putwch` functions to output characters. Each `argument` (if any) is converted and output according to the corresponding format specification in `format`. The format has the same form and function as the `format` parameter for the [printf_p](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) function. The difference between `_cprintf_p` and `cprintf_s` is that `_cprintf_p` supports positional parameters, which allows specifying the order in which the arguments are used in the format string. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).  
   
- Unlike the `fprintf_p`, `printf_p`, and `sprintf_p` functions, neither `_cprintf_p` nor `_cwprintf_p` translates line-feed characters into carriage return–line feed (CR-LF) combinations when output. An important distinction is that `_cwprintf_p` displays Unicode characters when used in Windows NT. Unlike `_cprintf_p`, `_cwprintf_p` uses the current console locale settings.  
+ Unlike the `fprintf_p`, `printf_p`, and `sprintf_p` functions, neither `_cprintf_p` nor `_cwprintf_p` translates line-feed characters into carriage return-line feed (CR-LF) combinations when output. An important distinction is that `_cwprintf_p` displays Unicode characters when used in Windows NT. Unlike `_cprintf_p`, `_cwprintf_p` uses the current console locale settings.  
   
  The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current locale.  
   

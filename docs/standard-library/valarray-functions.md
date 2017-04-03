@@ -159,7 +159,7 @@ valarray<Type> asin(const valarray<Type>& left);
 ### Remarks  
  The units of the returned elements are in radians.  
   
- The return value is a principal value between +pi/2 and –pi/2 that is consistent with the sine value input.  
+ The return value is a principal value between +pi/2 and -pi/2 that is consistent with the sine value input.  
   
 ### Example  
   
@@ -228,7 +228,7 @@ valarray<Type> atan(const valarray<Type>& left);
 ### Remarks  
  The units of the returned elements are in radians.  
   
- The return value is a principal value between +pi/2 and –pi/2 that is consistent with the tangent value input.  
+ The return value is a principal value between +pi/2 and -pi/2 that is consistent with the tangent value input.  
   
 ### Example  
   
@@ -315,7 +315,7 @@ valarray<Type> atan2(const Type& left, const valarray<Type>& right);
 ### Remarks  
  The units of the returned elements are in radians.  
   
- This function preserves information about the signs of the components in the argument that is lost by the standard tangent function, and this knowledge of the quadrant enables the return value to be assigned a unique angle between +pi and –pi.  
+ This function preserves information about the signs of the components in the argument that is lost by the standard tangent function, and this knowledge of the quadrant enables the return value to be assigned a unique angle between +pi and -pi.  
   
  If ` left` and ` right` have a different number of elements, the result is undefined.  
   
@@ -892,7 +892,7 @@ valarray<Type> sinh(const valarray<Type>& left);
 ### Remarks  
  Identities defining the hyperbolic sine in terms of exponential function:  
   
- sinh ( *z* ) = ( exp ( *z* ) – exp ( - *z* ) ) / 2  
+ sinh ( *z* ) = ( exp ( *z* ) - exp ( - *z* ) ) / 2  
   
 ### Example  
   
@@ -1116,7 +1116,7 @@ valarray<Type> tanh(const valarray<Type>& left);
 ### Remarks  
  Identities defining the hyperbolic tangent in terms of the exponential function:  
   
- tanh ( *z* ) = sinh ( *z* ) / cosh ( *z* ) = ( exp ( *z* ) – exp ( - *z* ) ) / ( exp ( *z* ) + exp ( - *z* ) )  
+ tanh ( *z* ) = sinh ( *z* ) / cosh ( *z* ) = ( exp ( *z* ) - exp ( - *z* ) ) / ( exp ( *z* ) + exp ( - *z* ) )  
   
 ### Example  
   

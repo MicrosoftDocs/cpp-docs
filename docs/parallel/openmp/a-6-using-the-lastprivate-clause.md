@@ -43,4 +43,4 @@ Correct execution sometimes depends on the value that the last iteration of a lo
 a[i]=b[i];  
 ```  
   
- In the preceding example, the value of `i` at the end of the parallel region will equal `n–1`, as in the sequential case.
+ In the preceding example, the value of `i` at the end of the parallel region will equal `n-1`, as in the sequential case.

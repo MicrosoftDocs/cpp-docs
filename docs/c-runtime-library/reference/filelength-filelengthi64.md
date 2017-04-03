@@ -76,7 +76,7 @@ __int64 _filelengthi64(
  Target the file descriptor.  
   
 ## Return Value  
- Both `_filelength` and `_filelengthi64` return the file length, in bytes, of the target file associated with `fd`. If `fd` is an invalid file descriptor, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, both functions return –1L to indicate an error and set `errno` to `EBADF`.  
+ Both `_filelength` and `_filelengthi64` return the file length, in bytes, of the target file associated with `fd`. If `fd` is an invalid file descriptor, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, both functions return -1L to indicate an error and set `errno` to `EBADF`.  
   
 ## Requirements  
   
@@ -89,12 +89,6 @@ __int64 _filelengthi64(
   
 ## Example  
  See the example for [_chsize](../../c-runtime-library/reference/chsize.md).  
-  
-## .NET Framework Equivalent  
-  
--   [System::IO::Stream::SetLength](https://msdn.microsoft.com/en-us/library/system.io.stream.setlength.aspx)  
-  
--   [System::IO::FileStream::SetLength](https://msdn.microsoft.com/en-us/library/system.io.filestream.setlength.aspx)  
   
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   

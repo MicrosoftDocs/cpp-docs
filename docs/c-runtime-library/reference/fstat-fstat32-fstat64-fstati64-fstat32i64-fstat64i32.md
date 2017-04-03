@@ -117,7 +117,7 @@ int _fstat64i32(
  Pointer to the structure to store results.  
   
 ## Return Value  
- Returns 0 if the file-status information is obtained. A return value of –1 indicates an error. If the file descriptor is invalid or `buffer` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EBADF`, in the case of an invalid file descriptor, or to `EINVAL`, if `buffer` is `NULL`.  
+ Returns 0 if the file-status information is obtained. A return value of -1 indicates an error. If the file descriptor is invalid or `buffer` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EBADF`, in the case of an invalid file descriptor, or to `EINVAL`, if `buffer` is `NULL`.  
   
 ## Remarks  
  The `_fstat` function obtains information about the open file associated with `fd` and stores it in the structure pointed to by `buffer`. The `_stat` structure, defined in SYS\Stat.h, contains the following fields.  
@@ -246,9 +246,6 @@ int main( void )
 File size     : 16  
 Time modified : Wed May 07 15:25:11 2003  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   

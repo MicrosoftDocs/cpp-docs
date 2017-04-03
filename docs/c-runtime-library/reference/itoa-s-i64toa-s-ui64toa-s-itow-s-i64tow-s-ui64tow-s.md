@@ -153,7 +153,7 @@ errno_t _itow_s(
  Size of the buffer in single-byte characters or wide characters.  
   
  [in] `radix`  
- Base of `value`; which must be in the range 2–36.  
+ Base of `value`; which must be in the range 2-36.  
   
 ## Return Value  
  Zero if successful; an error code on failure. If any of the following conditions applies, the function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).  
@@ -263,9 +263,6 @@ base 4: 33333333333333333333333333333333 (32 chars)
 base 3: 11112220022122120101211020120210210211220 (41 chars)  
 base 2: 1111111111111111111111111111111111111111111111111111111111111111 (64 chars)  
 ```  
-  
-## .NET Framework Equivalent  
- [System::Convert::ToString](https://msdn.microsoft.com/en-us/library/system.convert.tostring.aspx)  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

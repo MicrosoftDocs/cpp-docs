@@ -60,7 +60,7 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # casinh, casinhf, casinhl
-Retrieves the inverse hyperbolic sine of a complex number, with branch cuts outside the interval [−i, +i] along the imaginary axis.  
+Retrieves the inverse hyperbolic sine of a complex number, with branch cuts outside the interval [-i, +i] along the imaginary axis.  
   
 ## Syntax  
   
@@ -87,7 +87,7 @@ _Lcomplex casinhl(
  A complex number that represents an angle, in radians.  
   
 ## Return Value  
- The inverse hyperbolic sine of `z`, in radians. The result is unbound along the real axis, and in the interval [−iπ/2, +iπ/2] along the imaginary axis.  
+ The inverse hyperbolic sine of `z`, in radians. The result is unbound along the real axis, and in the interval [-iπ/2, +iπ/2] along the imaginary axis.  
   
 ## Remarks  
  Because C++ allows overloading, you can call overloads of `casinh` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `casinh` always takes and returns a `_Dcomplex` value.  

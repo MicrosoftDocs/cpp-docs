@@ -45,7 +45,7 @@ template<class _BidIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `stable_partition`. For more information, see [stable_partition](http://msdn.microsoft.com/Library/224e97bf-b752-4c10-aa8c-95031dd535de).  
+ This function behaves the same as the C++ Standard Library function `stable_partition`. For more information, see [stable_partition](../standard-library/algorithm-functions.md#stable_partition).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

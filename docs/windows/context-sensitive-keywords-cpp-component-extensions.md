@@ -67,7 +67,7 @@ translation.priority.mt:
   
 -   `where` (part of [Generics](../windows/generics-cpp-component-extensions.md))  
   
- For readability purposes, you may want to limit your use of context-sensitive keywords as user–defined symbols.  
+ For readability purposes, you may want to limit your use of context-sensitive keywords as user-defined symbols.  
   
 ## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
  **Remarks**  

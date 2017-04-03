@@ -46,11 +46,11 @@ The postfix operators have the highest precedence (the tightest binding) in expr
   
  *postfix-expression*  **.**  *identifier*  
   
- *postfix-expression*  **–>**  *identifier*  
+ *postfix-expression*  **->**  *identifier*  
   
  *postfix-expression*  **++**  
   
- *postfix-expression*  **––**  
+ *postfix-expression*  **--**  
   
  Operators in this precedence level are the array subscripts, function calls, structure and union members, and postfix increment and decrement operators.  
   

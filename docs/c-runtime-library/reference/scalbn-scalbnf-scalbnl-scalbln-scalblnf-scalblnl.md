@@ -120,7 +120,7 @@ long double scalblnl(
  Integer exponent.  
   
 ## Return Value  
- The `scalbn` functions return the value of `x` * `FLT_RADIX`<sup>exp</sup> when successful. On overflow (depending on the sign of `x`), `scalbn` returns +/– `HUGE_VAL`; the `errno` value is set to `ERANGE`.  
+ The `scalbn` functions return the value of `x` * `FLT_RADIX`<sup>exp</sup> when successful. On overflow (depending on the sign of `x`), `scalbn` returns +/- `HUGE_VAL`; the `errno` value is set to `ERANGE`.  
   
  For more information about `errno` and possible error return values, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
@@ -160,9 +160,6 @@ int main( void )
 ```  
 6.4 times FLT_RADIX to the power of 3 is 51.2  
 ```  
-  
-## .NET Framework Equivalent  
- [System::Math::Pow](https://msdn.microsoft.com/en-us/library/system.math.pow.aspx)  
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

@@ -88,9 +88,6 @@ long double nanl(
 |--------------|--------------|------------------|  
 |`nan`, `nanf`, `nanl`|\<math.h>|\<cmath>|  
   
-## .NET Framework Equivalent  
- [System::Double::NaN](https://msdn.microsoft.com/en-us/library/system.double.nan.aspx)  
-  
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [_finite, _finitef](../../c-runtime-library/reference/finite-finitef.md)   

@@ -49,7 +49,7 @@ This is a guide to moving your Visual C++ programs from Managed Extensions for C
  Discusses changes in language keywords, including the removal of the double underscore and the introduction of both contextual and spaced keywords.  
   
  [Managed Types (C++/CL)](../dotnet/managed-types-cpp-cl.md)  
- Looks at syntactic changes in the declaration of the Common Type System (CTS) – this includes changes in the declaration of classes, arrays (including the parameter array), enums, and so on.  
+ Looks at syntactic changes in the declaration of the Common Type System (CTS) - this includes changes in the declaration of classes, arrays (including the parameter array), enums, and so on.  
   
  [Member Declarations within a Class or Interface (C++/CLI)](../dotnet/member-declarations-within-a-class-or-interface-cpp-cli.md)  
  Presents the changes involving class members such as scalar properties, index properties, operators, delegates, and events.  

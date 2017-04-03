@@ -69,7 +69,7 @@ public:
 };  
 ```  
   
- If the access methods of the property reflect distinct access levels – such as a `public``get` and a `private` or `protected``set`, an explicit access label can be specified. By default, the access level of the property reflects that of the enclosing access level. For example, in the above definition of `Vector`, both the `get` and `set` methods are `public`. To make the `set` method `protected` or `private`, the definition would be revised as follows:  
+ If the access methods of the property reflect distinct access levels - such as a `public``get` and a `private` or `protected``set`, an explicit access label can be specified. By default, the access level of the property reflects that of the enclosing access level. For example, in the above definition of `Vector`, both the `get` and `set` methods are `public`. To make the `set` method `protected` or `private`, the definition would be revised as follows:  
   
 ```  
 public ref class Vector sealed {   
@@ -84,7 +84,7 @@ public:
          _x = newx;  
       }  
   
-   } // note: extent of private culminates here …  
+   } // note: extent of private culminates here  
   
 // note: dot is a public method of Vector  
 double dot( const Vector^ wv );  

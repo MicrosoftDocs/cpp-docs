@@ -675,10 +675,10 @@ int LineFromChar(int nIndex = -1) const;
   
 ### Parameters  
  `nIndex`  
- Contains the zero-based index value for the desired character in the text of the edit control, or contains –1. If `nIndex` is –1, it specifies the current line, that is, the line that contains the caret.  
+ Contains the zero-based index value for the desired character in the text of the edit control, or contains -1. If `nIndex` is -1, it specifies the current line, that is, the line that contains the caret.  
   
 ### Return Value  
- The zero-based line number of the line containing the character index specified by `nIndex`. If `nIndex` is –1, the number of the line that contains the first character of the selection is returned. If there is no selection, the current line number is returned.  
+ The zero-based line number of the line containing the character index specified by `nIndex`. If `nIndex` is -1, the number of the line that contains the first character of the selection is returned. If there is no selection, the current line number is returned.  
   
 ### Remarks  
  A character index is the number of characters from the beginning of the edit control.  
@@ -699,10 +699,10 @@ int LineIndex(int nLine = -1) const;
   
 ### Parameters  
  `nLine`  
- Contains the index value for the desired line in the text of the edit control, or contains –1. If `nLine` is –1, it specifies the current line, that is, the line that contains the caret.  
+ Contains the index value for the desired line in the text of the edit control, or contains -1. If `nLine` is -1, it specifies the current line, that is, the line that contains the caret.  
   
 ### Return Value  
- The character index of the line specified in `nLine` or –1 if the specified line number is greater than the number of lines in the edit control.  
+ The character index of the line specified in `nLine` or -1 if the specified line number is greater than the number of lines in the edit control.  
   
 ### Remarks  
  The character index is the number of characters from the beginning of the edit control to the specified line.  
@@ -732,7 +732,7 @@ int LineLength(int nLine = -1) const;
   
  If the `nLine` parameter is more than the number of characters in the control, the return value is zero.  
   
- If the `nLine` parameter is –1, the return value is the number of unselected characters in the lines that contain selected characters. For example, if the selection extends from the fourth character of one line through the eighth character from the end of the next line, the return value is 10. That is, three characters on the first line and seven on the next.  
+ If the `nLine` parameter is -1, the return value is the number of unselected characters in the lines that contain selected characters. For example, if the selection extends from the fourth character of one line through the eighth character from the end of the next line, the return value is 10. That is, three characters on the first line and seven on the next.  
   
  For more information about the `TCHAR` type, see the `TCHAR` row in the table in [Windows Data Types](http://msdn.microsoft.com/library/windows/desktop/aa383751).  
   
@@ -1101,13 +1101,13 @@ void SetSel(
   
 ### Parameters  
  *dwSelection*  
- Specifies the starting position in the low-order word and the ending position in the high-order word. If the low-order word is 0 and the high-order word is –1, all the text in the edit control is selected. If the low-order word is –1, any current selection is removed.  
+ Specifies the starting position in the low-order word and the ending position in the high-order word. If the low-order word is 0 and the high-order word is -1, all the text in the edit control is selected. If the low-order word is -1, any current selection is removed.  
   
  *bNoScroll*  
  Indicates whether the caret should be scrolled into view. If **FALSE**, the caret is scrolled into view. If **TRUE**, the caret is not scrolled into view.  
   
  `nStartChar`  
- Specifies the starting position. If `nStartChar` is 0 and `nEndChar` is –1, all the text in the edit control is selected. If `nStartChar` is –1, any current selection is removed.  
+ Specifies the starting position. If `nStartChar` is 0 and `nEndChar` is -1, all the text in the edit control is selected. If `nStartChar` is -1, any current selection is removed.  
   
  `nEndChar`  
  Specifies the ending position.  
@@ -1125,7 +1125,8 @@ void SetSel(
 void SetTabStops();  
 BOOL SetTabStops(const int& cxEachStop);
 
- BOOL SetTabStops(
+ 
+BOOL SetTabStops(
     int nTabStops,  
     LPINT rgTabStops);
 ```  

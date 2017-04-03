@@ -108,7 +108,7 @@ long long _wtoll_l(
 [whitespace] [sign] [digits]  
 ```  
   
- A `whitespace` consists of space or tab characters, which are ignored; `sign` is either plus (+) or minus (–); and `digits` are one or more digits.  
+ A `whitespace` consists of space or tab characters, which are ignored; `sign` is either plus (+) or minus (-); and `digits` are one or more digits.  
   
  `_wtoll` is identical to `atoll` except that it takes a wide character string as a parameter.  
   
@@ -178,12 +178,6 @@ Function: atoll("3336402735171707160320") = 9223372036854775807
 Overflow condition occurred.  
   
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::Convert::ToInt64](https://msdn.microsoft.com/en-us/library/system.convert.toint64.aspx)  
-  
--   [System::Convert::ToUInt64](https://msdn.microsoft.com/en-us/library/system.convert.touint64.aspx)  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

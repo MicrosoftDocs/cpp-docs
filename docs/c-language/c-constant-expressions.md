@@ -57,7 +57,7 @@ A constant expression is evaluated at compile time, not run time, and can be use
  *unary-expression assignment-operator assignment-expression*  
   
  *assignment-operator*: one of  
- **= \*= /= %= += –= <\<= >>= &= ^= &#124;=**  
+ **= \*= /= %= += -= <\<= >>= &= ^= &#124;=**  
   
  The nonterminals for struct declarator, enumerator, direct declarator, direct-abstract declarator, and labeled statement contain the *constant-expression* nonterminal.  
   

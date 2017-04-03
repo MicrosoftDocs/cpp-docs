@@ -87,7 +87,7 @@ __time64_t _mkgmtime64(
  A pointer to the UTC time as a `struct``tm` to convert.  
   
 ## Return Value  
- A quantity of type `__time32_t` or `__time64_t` representing the number of seconds elapsed since midnight, January 1, 1970, in Coordinated Universal Time (UTC). If the date is out of range (see the Remarks section) or the input cannot be interpreted as a valid time, the return value is –1.  
+ A quantity of type `__time32_t` or `__time64_t` representing the number of seconds elapsed since midnight, January 1, 1970, in Coordinated Universal Time (UTC). If the date is out of range (see the Remarks section) or the input cannot be interpreted as a valid time, the return value is -1.  
   
 ## Remarks  
  The `_mkgmtime32` and `_mkgmtime64` functions convert a UTC time to a `__time32_t` or `__time64_t` type representing the time in UTC. To convert a local time to UTC time, use `mktime`, `_mktime32`, and `_mktime64` instead.  
@@ -104,7 +104,7 @@ __time64_t _mkgmtime64(
   
  The C run-time library uses the TZ environment variable to determine the correct daylight savings time. If TZ is not set, the operating system is queried to get the correct regional daylight savings time behavior. `tm_isdst` is a required field. If not set, its value is undefined and the return value from `mktime` is unpredictable.  
   
- The range of the `_mkgmtime32` function is from midnight, January 1, 1970, UTC to 23:59:59 January 18, 2038, UTC. The range of `_mkgmtime64` is from midnight, January 1, 1970, UTC to 23:59:59, December 31, 3000, UTC. An out-of-range date results in a return value of –1. The range of `_mkgmtime` depends on whether `_USE_32BIT_TIME_T` is defined. If not defined (the default) the range is that of `_mkgmtime64`; otherwise, the range is limited to the 32-bit range of `_mkgmtime32`.  
+ The range of the `_mkgmtime32` function is from midnight, January 1, 1970, UTC to 23:59:59 January 18, 2038, UTC. The range of `_mkgmtime64` is from midnight, January 1, 1970, UTC to 23:59:59, December 31, 3000, UTC. An out-of-range date results in a return value of -1. The range of `_mkgmtime` depends on whether `_USE_32BIT_TIME_T` is defined. If not defined (the default) the range is that of `_mkgmtime64`; otherwise, the range is limited to the 32-bit range of `_mkgmtime32`.  
   
  Note that `gmtime` and `localtime` use a single statically allocated buffer for the conversion. If you supply this buffer to `mkgmtime`, the previous contents are destroyed.  
   

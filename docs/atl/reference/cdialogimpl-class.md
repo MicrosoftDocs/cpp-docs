@@ -307,5 +307,5 @@ static LRESULT CALLBACK StartDialogProc(
  After the initial call to `StartDialogProc`, `DialogProc` is set as a dialog procedure, and further calls go there.  
   
 ## See Also  
- [BEGIN_MSG_MAP](http://msdn.microsoft.com/library/8bbb5af9-18b1-48c6-880e-166f599ee554)   
+ [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)   
  [Class Overview](../../atl/atl-class-overview.md)

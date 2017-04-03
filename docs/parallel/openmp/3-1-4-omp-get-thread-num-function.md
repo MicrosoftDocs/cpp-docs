@@ -31,7 +31,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # 3.1.4 omp_get_thread_num Function
-The `omp_get_thread_num` function returns the thread number, within its team, of the thread executing the function. The thread number lies between 0 and **omp_get_num_threads()**–1, inclusive. The master thread of the team is thread 0.  
+The `omp_get_thread_num` function returns the thread number, within its team, of the thread executing the function. The thread number lies between 0 and **omp_get_num_threads()**-1, inclusive. The master thread of the team is thread 0.  
   
  The format is as follows:  
   

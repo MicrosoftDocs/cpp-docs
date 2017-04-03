@@ -132,7 +132,7 @@ int _ismbcl2_l(
 |`_ismbcl2`|JIS level-2: 0x989F<=`c`<=0xEAA4.|  
 |`_ismbcl2_l`|JIS level-2: 0x989F<=`c`<=0xEAA4.|  
   
- The functions check that the specified value `c` matches the test conditions described above, but do not check that `c` is a valid multibyte character. If the lower byte is in the ranges 0x00 – 0x3F, 0x7F, or 0xFD – 0xFF, these functions return a nonzero value, indicating that the character satisfies the test condition. Use [_ismbbtrail](../../c-runtime-library/reference/ismbbtrail-ismbbtrail-l.md) to test whether the multibyte character is defined.  
+ The functions check that the specified value `c` matches the test conditions described above, but do not check that `c` is a valid multibyte character. If the lower byte is in the ranges 0x00 - 0x3F, 0x7F, or 0xFD - 0xFF, these functions return a nonzero value, indicating that the character satisfies the test condition. Use [_ismbbtrail](../../c-runtime-library/reference/ismbbtrail-ismbbtrail-l.md) to test whether the multibyte character is defined.  
   
  **End Code Page 932 Specific**  
   
@@ -148,9 +148,6 @@ int _ismbcl2_l(
 |`_ismbcl2_l`|\<mbstring.h>|  
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Character Classification](../../c-runtime-library/character-classification.md)   

@@ -111,8 +111,8 @@ size_t mbrlen(
 ## Example  
  This example shows how the interpretation of multibyte characters depends on the current code page, and demonstrates the resuming capability of `mbrlen`.  
   
-```  
- // crt_mbrlen.c  
+```C  
+// crt_mbrlen.c  
 // Compile by using: cl crt_mbrlen.c  
 #include <stdlib.h>  
 #include <stdio.h>  
@@ -169,9 +169,6 @@ Code page: 932
 Character count: 25  
   
 ```  
-  
-## .NET Framework Equivalent  
- [System::String::Length](https://msdn.microsoft.com/en-us/library/system.string.length.aspx)  
   
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   

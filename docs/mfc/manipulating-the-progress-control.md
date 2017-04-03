@@ -52,7 +52,7 @@ There are three ways to change the current position of a progress control ([CPro
 2.  Use the [StepIt](../mfc/reference/cprogressctrl-class.md#stepit) member function to increment the position. This causes the control to redraw itself.  
   
     > [!NOTE]
-    >  `StepIt` will cause the position to wrap. For example, given a range of 1 –100, a step of 20, and a position of 90, `StepIt` will set the position to 10.  
+    >  `StepIt` will cause the position to wrap. For example, given a range of 1 -100, a step of 20, and a position of 90, `StepIt` will set the position to 10.  
   
 ### To change the position by an arbitrary amount  
   

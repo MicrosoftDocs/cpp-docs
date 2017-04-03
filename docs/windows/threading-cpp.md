@@ -90,5 +90,4 @@ Specifies the threading model for a COM object.
  [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
  [Class Attributes](../windows/class-attributes.md)   
  [Multithreading Support for Older Code (Visual C++)](../parallel/multithreading-support-for-older-code-visual-cpp.md)   
- [Neutral Apartments](http://msdn.microsoft.com/library/windows/desktop/ms681813)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [Neutral Apartments](http://msdn.microsoft.com/library/windows/desktop/ms681813)   

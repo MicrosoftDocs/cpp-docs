@@ -51,4 +51,4 @@ For additional reference material on C++ and the preprocessor, see:
 Compiler and linker options are documented in the [C/C++ Building Reference](../build/reference/c-cpp-building-reference.md).  
   
 ## See Also  
-[C/C++ Language and Standard Libraries](../cpp/c-cpp-language-and-standard-libraries.md)   
+[C++ Language Reference](../cpp/cpp-language-reference.md)   

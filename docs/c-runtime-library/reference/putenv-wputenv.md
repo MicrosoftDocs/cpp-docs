@@ -84,7 +84,7 @@ int _wputenv(
  Environment-string definition.  
   
 ## Return Value  
- Return 0 if successful or –1 in the case of an error.  
+ Return 0 if successful or -1 in the case of an error.  
   
 ## Remarks  
  The `_putenv` function adds new environment variables or modifies the values of existing environment variables. Environment variables define the environment in which a process executes (for example, the default search path for libraries to be linked with a program). `_wputenv` is a wide-character version of `_putenv`; the `envstring` argument to `_wputenv` is a wide-character string.  
@@ -117,9 +117,6 @@ int _wputenv(
   
 ## Example  
  For a sample of how to use `_putenv`, see [getenv, _wgetenv](../../c-runtime-library/reference/getenv-wgetenv.md).  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   

@@ -72,7 +72,7 @@ double _scalb(
  Long integer exponent.  
   
 ## Return Value  
- Returns an exponential value if successful. On overflow (depending on the sign of `x`), `_scalb` returns +/– `HUGE_VAL`; the `errno` variable is set to `ERANGE`.  
+ Returns an exponential value if successful. On overflow (depending on the sign of `x`), `_scalb` returns +/- `HUGE_VAL`; the `errno` variable is set to `ERANGE`.  
   
  For more information about this and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
@@ -86,9 +86,6 @@ double _scalb(
 |`_scalb`|\<float.h>|  
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

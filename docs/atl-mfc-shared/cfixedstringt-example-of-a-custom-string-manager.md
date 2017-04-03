@@ -43,7 +43,7 @@ The ATL library implements one example of a custom string manager used by class 
   
 -   **pMgr:** A pointer to the `IAtlStringMgr` interface of a "backup string manager."  
   
- The constructor stores the values of `pData` and **pMgr** in their respective member variables (`m_pData` and **m_pMgr**). It then sets the length of the buffer to zero, the available length equal to the maximum size of the fixed buffer, and the reference count to –1. The reference count value indicates the buffer is locked and to use this instance of **CFixedStringMgr** as the string manager.  
+ The constructor stores the values of `pData` and **pMgr** in their respective member variables (`m_pData` and **m_pMgr**). It then sets the length of the buffer to zero, the available length equal to the maximum size of the fixed buffer, and the reference count to -1. The reference count value indicates the buffer is locked and to use this instance of **CFixedStringMgr** as the string manager.  
   
  Marking the buffer as locked prevents other `CStringT` instances from holding a shared reference to the buffer. If other `CStringT` instances were allowed to share the buffer it would be possible for the buffer contained by `CFixedStringT` to be deleted while other strings were still using the buffer.  
   

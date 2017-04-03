@@ -130,7 +130,7 @@ errno_t _mbscat_s(
 char buf[16];  
 strcpy_s(buf, 16, "Start");  
 strcat_s(buf, 16, " End");               // Correct  
-strcat_s(buf, 16 – strlen(buf), " End"); // Incorrect  
+strcat_s(buf, 16 - strlen(buf), " End"); // Incorrect  
 ```  
   
  `wcscat_s` and `_mbscat_s` are wide-character and multibyte-character versions of `strcat_s`. The arguments and return value of `wcscat_s` are wide-character strings; those of `_mbscat_s` are multibyte-character strings. These three functions behave identically otherwise.  
@@ -159,9 +159,6 @@ strcat_s(buf, 16 – strlen(buf), " End"); // Incorrect
   
 ## Example  
  See the code example in [strcpy_s, wcscpy_s, _mbscpy_s](../../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md).  
-  
-## .NET Framework Equivalent  
- [System::String::Concat](https://msdn.microsoft.com/en-us/library/system.string.concat.aspx)  
   
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   

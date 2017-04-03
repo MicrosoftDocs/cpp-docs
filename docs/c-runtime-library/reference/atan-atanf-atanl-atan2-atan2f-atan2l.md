@@ -114,7 +114,7 @@ long double atan2l(
  Any numbers.  
   
 ## Return Value  
- `atan` returns the arctangent of `x` in the range –π/2 to π/2 radians. `atan2` returns the arctangent of `y/x` in the range –π to π radians. If `x` is 0, `atan` returns 0. If both parameters of `atan2` are 0, the function returns 0. All results are in radians.  
+ `atan` returns the arctangent of `x` in the range -π/2 to π/2 radians. `atan2` returns the arctangent of `y/x` in the range -π to π radians. If `x` is 0, `atan` returns 0. If both parameters of `atan2` are 0, the function returns 0. All results are in radians.  
   
  `atan2` uses the signs of both parameters to determine the quadrant of the return value.  
   
@@ -165,12 +165,6 @@ int main( int ac, char* av[] )
 Arctangent of 5.000000: 1.373401  
 Arctangent of 0.500000 / 5.000000: 0.099669  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::Math::Atan](https://msdn.microsoft.com/en-us/library/system.math.atan.aspx)  
-  
--   [System::Math::Atan2](https://msdn.microsoft.com/en-us/library/system.math.atan2.aspx)  
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

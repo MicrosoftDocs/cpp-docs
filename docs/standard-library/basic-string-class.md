@@ -74,7 +74,7 @@ class basic_string;
 |[const_reverse_iterator](#basic_string__const_reverse_iterator)|A type that provides a random-access iterator that can read any `const` element in the string.|  
 |[difference_type](#basic_string__difference_type)|A type that provides the difference between two iterators that refer to elements within the same string.|  
 |[iterator](#basic_string__iterator)|A type that provides a random-access iterator that can read or modify any element in a string.|  
-|[npos](#basic_string__npos)|An unsigned integral value initialized to –1 that indicates either "not found" or "all remaining characters" when a search function fails.|  
+|[npos](#basic_string__npos)|An unsigned integral value initialized to -1 that indicates either "not found" or "all remaining characters" when a search function fails.|  
 |[pointer](#basic_string__pointer)|A type that provides a pointer to a character element in a string or character array.|  
 |[reference](#basic_string__reference)|A type that provides a reference to an element stored in a string.|  
 |[reverse_iterator](#basic_string__reverse_iterator)|A type that provides a random-access iterator that can read or modify an element in a reversed string.|  
@@ -507,7 +507,7 @@ reference at(size_type _Off);
  A reference to the character of the string at the position specified by the parameter index.  
   
 ### Remarks  
- The first element of the string has an index of zero and the following elements are indexed consecutively by the positive integers, so that a string of length *n* has an *n*th element indexed by the number *n –* 1.  
+ The first element of the string has an index of zero and the following elements are indexed consecutively by the positive integers, so that a string of length *n* has an *n*th element indexed by the number *n -* 1.  
   
  The member [operator&#91;&#93;](#basic_string__operator_at) is faster than the member function **at** for providing read and write access to the elements of a string.  
   
@@ -3129,7 +3129,7 @@ int main( )
 ```  
   
 ##  <a name="basic_string__npos"></a>  basic_string::npos  
- An unsigned integral value initialized to –1 that indicates either "not found" or "all remaining characters" when a search function fails.  
+ An unsigned integral value initialized to -1 that indicates either "not found" or "all remaining characters" when a search function fails.  
   
 ```  
 static const size_type npos = -1;  

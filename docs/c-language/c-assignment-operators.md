@@ -69,7 +69,7 @@ An assignment operation assigns the value of the right-hand operand to the stora
  *unary-expression assignment-operator assignment-expression*  
   
  *assignment-operator*: one of  
- **= \*=** `/=` `%=` `+=` **–= <\<= >>= &=** `^=` `|=`  
+ **= \*=** `/=` `%=` `+=` **-= <\<= >>= &=** `^=` `|=`  
   
  The assignment operators in C can both transform and assign values in a single operation. C provides the following assignment operators:  
   
@@ -80,7 +80,7 @@ An assignment operation assigns the value of the right-hand operand to the stora
 |`/=`|Division assignment|  
 |`%=`|Remainder assignment|  
 |`+=`|Addition assignment|  
-|**–=**|Subtraction assignment|  
+|**-=**|Subtraction assignment|  
 |**<\<=**|Left-shift assignment|  
 |**>>=**|Right-shift assignment|  
 |**&=**|Bitwise-AND assignment|  

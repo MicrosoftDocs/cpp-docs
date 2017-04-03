@@ -38,14 +38,14 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # check_stack
-Instructs the compiler to turn off stack probes if **off** (or **–**) is specified, or to turn on stack probes if **on** (or **+**) is specified.  
+Instructs the compiler to turn off stack probes if **off** (or **-**) is specified, or to turn on stack probes if **on** (or **+**) is specified.  
   
 ## Syntax  
   
 ```  
   
       #pragma check_stack([ {on | off}] )  
-#pragma check_stack{+ | –}  
+#pragma check_stack{+ | -}  
 ```  
   
 ## Remarks  
@@ -60,7 +60,7 @@ Instructs the compiler to turn off stack probes if **off** (or **–**) is speci
 |**#pragma check_stack( )** or<br /><br /> **#pragma check_stack**|Yes|Turns off stack checking for functions that follow|  
 |**#pragma check_stack( )** or<br /><br /> **#pragma check_stack**|No|Turns on stack checking for functions that follow|  
 |**#pragma check_stack(on)**<br /><br /> or **#pragma check_stack +**|Yes or No|Turns on stack checking for functions that follow|  
-|**#pragma check_stack(off)**<br /><br /> or **#pragma check_stack –**|Yes or No|Turns off stack checking for functions that follow|  
+|**#pragma check_stack(off)**<br /><br /> or **#pragma check_stack -**|Yes or No|Turns off stack checking for functions that follow|  
   
 ## See Also  
  [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

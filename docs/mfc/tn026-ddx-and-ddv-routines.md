@@ -197,7 +197,7 @@ ExtraDDX=<keys>;<vb-keys>; <prompt>; <type>; <initValue>; <DDX_Proc>
 [;<DDV_Proc>; <prompt1>; <arg1>; [<prompt2>; <fmt2>]]  
 ```  
   
- where  is a number 1 – n indicating which DDX type in the list that is being defined.  
+ where  is a number 1 - n indicating which DDX type in the list that is being defined.  
   
  Each field is delimited by a ';' character. The fields and their purpose are described below.  
   

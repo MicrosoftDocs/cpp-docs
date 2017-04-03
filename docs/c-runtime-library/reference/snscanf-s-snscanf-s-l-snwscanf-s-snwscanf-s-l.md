@@ -85,28 +85,24 @@ Reads formatted data of a specified length from a string. These are versions of 
 int __cdecl _snscanf_s(  
    const char * input,  
    size_t length,  
-   const char * format,  
-   ...  
+   const char * format [, argument_list]  
 );  
 int __cdecl _snscanf_s_l(  
    const char * input,  
    size_t length,  
    const char * format,  
-   locale_t locale,  
-   ...  
+   locale_t locale [, argument_list]
 );  
 int __cdecl _snwscanf_s(  
    const wchar_t * input,  
    size_t length,  
-   const wchar_t * format,  
-   ...  
+   const wchar_t * format [, argument_list]
 );  
 int __cdecl _snwscanf_s_l(  
    const wchar_t * input,  
    size_t length,  
    const wchar_t * format,  
-   locale_t locale,  
-   …  
+   locale_t locale [, argument_list]
 );  
 ```  
   
@@ -125,6 +121,9 @@ int __cdecl _snwscanf_s_l(
   
  `locale`  
  The locale to use.  
+  
+ `argument_list`  
+ Optional arguments to be assigned according to the format string.  
   
 ## Return Value  
  Both of these functions returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is `EOF` for an error or if the end of the string is reached before the first conversion. For more information, see [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](../../c-runtime-library/reference/sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md).  
@@ -193,9 +192,6 @@ int main( )
 _snscanf_s converted 2 fields: 15 and 12.000000  
 _snwscanf_s converted 2 fields: 15 and 12.000000  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [scanf Width Specification](../../c-runtime-library/scanf-width-specification.md)

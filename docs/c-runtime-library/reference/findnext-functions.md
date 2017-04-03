@@ -185,7 +185,7 @@ int _wfindnext64i32(
  File information buffer.  
   
 ## Return Value  
- If successful, returns 0. Otherwise, returns –1 and sets `errno` to a value indicating the nature of the failure. Possible error codes are shown in the following table.  
+ If successful, returns 0. Otherwise, returns -1 and sets `errno` to a value indicating the nature of the failure. Possible error codes are shown in the following table.  
   
  `EINVAL`  
  Invalid parameter: `fileinfo` was `NULL`. Or, the operating system returned an unexpected error.  
@@ -252,9 +252,6 @@ int _wfindnext64i32(
   
 ## Libraries  
  All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [System Calls](../../c-runtime-library/system-calls.md)   

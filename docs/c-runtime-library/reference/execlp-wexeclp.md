@@ -86,7 +86,7 @@ intptr_t _wexeclp(
  List of pointers to parameters.  
   
 ## Return Value  
- If successful, these functions do not return to the calling process. A return value of –1 indicates an error, in which case the `errno` global variable is set.  
+ If successful, these functions do not return to the calling process. A return value of -1 indicates an error, in which case the `errno` global variable is set.  
   
 |`errno` value|Description|  
 |-------------------|-----------------|  
@@ -116,12 +116,6 @@ intptr_t _wexeclp(
   
 ## Example  
  See the example in [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md).  
-  
-## .NET Framework Equivalent  
-  
--   [System::Diagnostics::Process Class](https://msdn.microsoft.com/en-us/library/system.diagnostics.process.aspx)  
-  
--   [System::Diagnostics::ProcessStartInfo Class](https://msdn.microsoft.com/en-us/library/system.diagnostics.processstartinfo.aspx)  
   
 ## See Also  
  [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   

@@ -49,12 +49,12 @@ __gc class MyBaseClass {
 __gc class MyDerivedClass : public MyBaseClass {  
 public:  
    // okay in Managed Extensions; g() overrides MyBaseClass::g()  
-   // error in new syntax; cannot override: MyBaseClass::g() is inaccessible …  
+   // error in new syntax; cannot override: MyBaseClass::g() is inaccessible  
    void g();  
 };  
 ```  
   
- There is no real mapping of this sort of design onto the new syntax. One simply has to make the base class members accessible – that is, non-private. The inherited methods do not have to bear the same access. In this example, the least invasive change is to make the MyBaseClass member `protected`. This way the general program's access to the method through MyBaseClass is still prohibited.  
+ There is no real mapping of this sort of design onto the new syntax. One simply has to make the base class members accessible - that is, non-private. The inherited methods do not have to bear the same access. In this example, the least invasive change is to make the MyBaseClass member `protected`. This way the general program's access to the method through MyBaseClass is still prohibited.  
   
 ```  
 ref class MyBaseClass {  

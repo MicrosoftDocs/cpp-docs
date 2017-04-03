@@ -229,5 +229,5 @@ STDMETHOD_(ULONG, Release)();
   
 ## See Also  
  [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   
- [DECLARE_POLY_AGGREGATABLE](http://msdn.microsoft.com/library/7569e738-cfbc-4404-ba1d-78dcefa3bdb3)   
+ [DECLARE_POLY_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_poly_aggregatable)   
  [Class Overview](../../atl/atl-class-overview.md)

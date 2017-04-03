@@ -277,7 +277,7 @@ class CDC : public CObject
  To use a `CDC` object, construct it, and then call its member functions that parallel Windows functions that use device contexts.  
   
 > [!NOTE]
->  Under Windows 95/98, all screen coordinates are limited to 16 bits. Therefore, an `int` passed to a `CDC` member function must lie in the range –32768 to 32767.  
+>  Under Windows 95/98, all screen coordinates are limited to 16 bits. Therefore, an `int` passed to a `CDC` member function must lie in the range -32768 to 32767.  
   
  For specific uses, the Microsoft Foundation Class Library provides several classes derived from `CDC` . `CPaintDC` encapsulates calls to `BeginPaint` and `EndPaint`. `CClientDC` manages a display context associated with a window's client area. `CWindowDC` manages a display context associated with an entire window, including its frame and controls. `CMetaFileDC` associates a device context with a metafile.  
   
@@ -762,7 +762,7 @@ BOOL Chord(
 ### Remarks  
  The ( `x1`, `y1`) and ( `x2`, `y2`) parameters specify the upper-left and lower-right corners, respectively, of a rectangle bounding the ellipse that is part of the chord. The ( *x3*, `y3`) and ( `x4`, `y4`) parameters specify the endpoints of a line that intersects the ellipse. The chord is drawn by using the selected pen and filled by using the selected brush.  
   
- The figure drawn by the `Chord` function extends up to, but does not include the right and bottom coordinates. This means that the height of the figure is `y2` – `y1` and the width of the figure is `x2` – `x1`.  
+ The figure drawn by the `Chord` function extends up to, but does not include the right and bottom coordinates. This means that the height of the figure is `y2` - `y1` and the width of the figure is `x2` - `x1`.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#31](../../mfc/codesnippet/cpp/cdc-class_3.cpp)]  
@@ -1358,10 +1358,10 @@ int DrawText(
   
 ### Parameters  
  `lpszString`  
- Points to the string to be drawn. If `nCount` is –1, the string must be null-terminated.  
+ Points to the string to be drawn. If `nCount` is -1, the string must be null-terminated.  
   
  `nCount`  
- Specifies the number of chars in the string. If `nCount` is –1, then `lpszString` is assumed to be a long pointer to a null-terminated string and `DrawText` computes the character count automatically.  
+ Specifies the number of chars in the string. If `nCount` is -1, then `lpszString` is assumed to be a long pointer to a null-terminated string and `DrawText` computes the character count automatically.  
   
  `lpRect`  
  Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object that contains the rectangle (in logical coordinates) in which the text is to be formatted.  
@@ -1412,10 +1412,10 @@ int DrawTextEx(
   
 ### Parameters  
  `lpszString`  
- Points to the string to be drawn. If `nCount` is –1, the string must be null terminated.  
+ Points to the string to be drawn. If `nCount` is -1, the string must be null terminated.  
   
  `nCount`  
- Specifies the number of chars in the string. If `nCount` is –1, then `lpszString` is assumed to be a long pointer to a null-terminated string and `DrawText` computes the character count automatically.  
+ Specifies the number of chars in the string. If `nCount` is -1, then `lpszString` is assumed to be a long pointer to a null-terminated string and `DrawText` computes the character count automatically.  
   
  `lpRect`  
  Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object that contains the rectangle (in logical coordinates) in which the text is to be formatted.  
@@ -1472,7 +1472,7 @@ BOOL Ellipse(LPCRECT lpRect);
 ### Remarks  
  The center of the ellipse is the center of the bounding rectangle specified by `x1`, `y1`, `x2`, and `y2`, or `lpRect`. The ellipse is drawn with the current pen, and its interior is filled with the current brush.  
   
- The figure drawn by this function extends up to, but does not include, the right and bottom coordinates. This means that the height of the figure is `y2` – `y1` and the width of the figure is `x2` – `x1`.  
+ The figure drawn by this function extends up to, but does not include, the right and bottom coordinates. This means that the height of the figure is `y2` - `y1` and the width of the figure is `x2` - `x1`.  
   
  If either the width or the height of the bounding rectangle is 0, no ellipse is drawn.  
   
@@ -1691,7 +1691,7 @@ int ExcludeClipRect(LPCRECT lpRect);
 - **SIMPLEREGION** The region has no overlapping borders.  
   
 ### Remarks  
- The width of the rectangle, specified by the absolute value of `x2` – `x1`, must not exceed 32,767 units. This limit applies to the height of the rectangle as well.  
+ The width of the rectangle, specified by the absolute value of `x2` - `x1`, must not exceed 32,767 units. This limit applies to the height of the rectangle as well.  
   
 ##  <a name="excludeupdatergn"></a>  CDC::ExcludeUpdateRgn  
  Prevents drawing within invalid areas of a window by excluding an updated region in the window from the clipping region associated with the `CDC` object.  
@@ -2510,7 +2510,7 @@ DWORD GetFontData(
  Specifies the length, in bytes, of the information to be retrieved. If this parameter is 0, `GetFontData` returns the size of the data specified in the `dwTable` parameter.  
   
 ### Return Value  
- Specifies the number of bytes returned in the buffer pointed to by `lpData` if the function is successful; otherwise –1.  
+ Specifies the number of bytes returned in the buffer pointed to by `lpData` if the function is successful; otherwise -1.  
   
 ### Remarks  
  The information to retrieve is identified by specifying an offset into the font file and the length of the information to return.  
@@ -2519,7 +2519,7 @@ DWORD GetFontData(
   
  Applications can determine whether a font can be embedded by checking the **otmfsType** member of the [OUTLINETEXTMETRIC](http://msdn.microsoft.com/library/windows/desktop/dd162755) structure. If bit 1 of **otmfsType** is set, embedding is not permitted for the font. If bit 1 is clear, the font can be embedded. If bit 2 is set, the embedding is read only.  
   
- If an application attempts to use this function to retrieve information for a non-TrueType font, the `GetFontData` member function returns –1.  
+ If an application attempts to use this function to retrieve information for a non-TrueType font, the `GetFontData` member function returns -1.  
   
 ##  <a name="getfontlanguageinfo"></a>  CDC::GetFontLanguageInfo  
  Returns information about the currently selected font for the specified display context.  
@@ -2574,7 +2574,7 @@ DWORD GetGlyphOutline(
  Points to a [MAT2](http://msdn.microsoft.com/library/windows/desktop/dd145048) structure that contains a transformation matrix for the character. This parameter cannot be **NULL**, even when the **GGO_NATIVE** value is specified for `nFormat`.  
   
 ### Return Value  
- The size, in bytes, of the buffer required for the retrieved information if `cbBuffer` is 0 or `lpBuffer` is **NULL**. Otherwise, it is a positive value if the function is successful, or –1 if there is an error.  
+ The size, in bytes, of the buffer required for the retrieved information if `cbBuffer` is 0 or `lpBuffer` is **NULL**. Otherwise, it is a positive value if the function is successful, or -1 if there is an error.  
   
 ### Remarks  
  An application can rotate characters retrieved in bitmap format by specifying a 2-by-2 transformation matrix in the structure pointed to by `lpmat2`.  
@@ -2767,7 +2767,7 @@ CSize GetOutputTabbedTextExtent(
  Points to a character string to be measured. You can also pass a [CString](../../atl-mfc-shared/reference/cstringt-class.md) object for this parameter.  
   
  `nCount`  
- Specifies the number of characters in the string. If `nCount` is –1, the length is calculated.  
+ Specifies the number of characters in the string. If `nCount` is -1, the length is calculated.  
   
  `nTabPositions`  
  Specifies the number of tab-stop positions in the array pointed to by `lpnTabStopPositions`.  
@@ -2806,7 +2806,7 @@ CSize GetOutputTextExtent(const CString& str) const;
  Points to a string of characters. You can also pass a [CString](../../atl-mfc-shared/reference/cstringt-class.md) object for this parameter.  
   
  `nCount`  
- Specifies the number of characters in the string. If `nCount` is –1, the length is calculated.  
+ Specifies the number of characters in the string. If `nCount` is -1, the length is calculated.  
   
  `str`  
  A `CString` object that contains the specified characters to be measured.  
@@ -2896,10 +2896,10 @@ COLORREF GetPixel(POINT point) const;
  Specifies the logical x- and y-coordinates of the point to be examined.  
   
 ### Return Value  
- For either version of the function, an RGB color value for the color of the given point. It is –1 if the coordinates do not specify a point in the clipping region.  
+ For either version of the function, an RGB color value for the color of the given point. It is -1 if the coordinates do not specify a point in the clipping region.  
   
 ### Remarks  
- The point must be in the clipping region. If the point is not in the clipping region, the function has no effect and returns –1.  
+ The point must be in the clipping region. If the point is not in the clipping region, the function has no effect and returns -1.  
   
  Not all devices support the **GetPixel** function. For more information, see the **RC_BITBLT** raster capability under the [GetDeviceCaps](#getdevicecaps) member function.  
   
@@ -2980,7 +2980,7 @@ CSize GetTabbedTextExtent(
  Points to a character string. You can also pass a [CString](../../atl-mfc-shared/reference/cstringt-class.md) object for this parameter.  
   
  `nCount`  
- Specifies the number of characters in the string. If `nCount` is –1, the length is calculated.  
+ Specifies the number of characters in the string. If `nCount` is -1, the length is calculated.  
   
  `nTabPositions`  
  Specifies the number of tab-stop positions in the array pointed to by `lpnTabStopPositions`.  
@@ -3347,7 +3347,7 @@ virtual BOOL GrayString(
  Specifies a far pointer to data to be passed to the output function. If `lpfnOutput` is **NULL**, `lpData` must be a long pointer to the string to be output.  
   
  `nCount`  
- Specifies the number of characters to be output. If this parameter is 0, `GrayString` calculates the length of the string (assuming that `lpData` is a pointer to the string). If `nCount` is –1 and the function pointed to by `lpfnOutput` returns 0, the image is shown but not dimmed.  
+ Specifies the number of characters to be output. If this parameter is 0, `GrayString` calculates the length of the string (assuming that `lpData` is a pointer to the string). If `nCount` is -1 and the function pointed to by `lpfnOutput` returns 0, the image is shown but not dimmed.  
   
  *x*  
  Specifies the logical x-coordinate of the starting position of the rectangle that encloses the string.  
@@ -3554,7 +3554,7 @@ void LPtoDP(LPSIZE lpSize) const;
 ### Remarks  
  The function maps the coordinates of each point, or dimensions of a size, from GDI's logical coordinate system into a device coordinate system. The conversion depends on the current mapping mode and the settings of the origins and extents of the device's window and viewport.  
   
- The x- and y-coordinates of points are 2-byte signed integers in the range –32,768 through 32,767. In cases where the mapping mode would result in values larger than these limits, the system sets the values to –32,768 and 32,767, respectively.  
+ The x- and y-coordinates of points are 2-byte signed integers in the range -32,768 through 32,767. In cases where the mapping mode would result in values larger than these limits, the system sets the values to -32,768 and 32,767, respectively.  
   
 ##  <a name="lptohimetric"></a>  CDC::LPtoHIMETRIC  
  Call this function to convert logical units into **HIMETRIC** units.  
@@ -3916,7 +3916,7 @@ BOOL Pie(
   
  The arc is drawn with the selected pen, moving in a counterclockwise direction. Two additional lines are drawn from each endpoint to the arc's center. The pie-shaped area is filled with the current brush. If *x3* equals `x4` and `y3` equals `y4`, the result is an ellipse with a single line from the center of the ellipse to the point ( *x3*, `y3`) or ( `x4`, `y4`).  
   
- The figure drawn by this function extends up to but does not include the right and bottom coordinates. This means that the height of the figure is `y2` – `y1` and the width of the figure is `x2` – `x1`. Both the width and the height of the bounding rectangle must be greater than 2 units and less than 32,767 units.  
+ The figure drawn by this function extends up to but does not include the right and bottom coordinates. This means that the height of the figure is `y2` - `y1` and the width of the figure is `x2` - `x1`. Both the width and the height of the bounding rectangle must be greater than 2 units and less than 32,767 units.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#37](../../mfc/codesnippet/cpp/cdc-class_9.cpp)]  
@@ -4326,7 +4326,7 @@ BOOL Rectangle(LPCRECT lpRect);
 ### Remarks  
  The interior of the rectangle is filled using the current brush.  
   
- The rectangle extends up to, but does not include, the right and bottom coordinates. This means that the height of the rectangle is `y2` – `y1` and the width of the rectangle is `x2` – `x1`. Both the width and the height of a rectangle must be greater than 2 units and less than 32,767 units.  
+ The rectangle extends up to, but does not include, the right and bottom coordinates. This means that the height of the rectangle is `y2` - `y1` and the width of the rectangle is `x2` - `x1`. Both the width and the height of a rectangle must be greater than 2 units and less than 32,767 units.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#39](../../mfc/codesnippet/cpp/cdc-class_11.cpp)]  
@@ -4397,7 +4397,7 @@ virtual BOOL RestoreDC(int nSavedDC);
   
 ### Parameters  
  `nSavedDC`  
- Specifies the device context to be restored. It can be a value returned by a previous `SaveDC` function call. If `nSavedDC` is –1, the most recently saved device context is restored.  
+ Specifies the device context to be restored. It can be a value returned by a previous `SaveDC` function call. If `nSavedDC` is -1, the most recently saved device context is restored.  
   
 ### Return Value  
  Nonzero if the specified context was restored; otherwise 0.  
@@ -4456,7 +4456,7 @@ BOOL RoundRect(
 ### Remarks  
  The interior of the rectangle is filled using the current brush.  
   
- The figure this function draws extends up to but does not include the right and bottom coordinates. This means that the height of the figure is `y2` – `y1` and the width of the figure is `x2` – `x1`. Both the height and the width of the bounding rectangle must be greater than 2 units and less than 32,767 units.  
+ The figure this function draws extends up to but does not include the right and bottom coordinates. This means that the height of the figure is `y2` - `y1` and the width of the figure is `x2` - `x1`. Both the height and the width of the bounding rectangle must be greater than 2 units and less than 32,767 units.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#40](../../mfc/codesnippet/cpp/cdc-class_12.cpp)]  
@@ -4957,13 +4957,13 @@ CPoint SetBrushOrg(POINT point);
   
 ### Parameters  
  *x*  
- Specifies the x-coordinate (in device units) of the new origin. This value must be in the range 0–7.  
+ Specifies the x-coordinate (in device units) of the new origin. This value must be in the range 0-7.  
   
  *y*  
- Specifies the y-coordinate (in device units) of the new origin. This value must be in the range 0–7.  
+ Specifies the y-coordinate (in device units) of the new origin. This value must be in the range 0-7.  
   
  `point`  
- Specifies the x- and y-coordinates of the new origin. Each value must be in the range 0–7. You can pass either a **POINT** structure or a `CPoint` object for this parameter.  
+ Specifies the x- and y-coordinates of the new origin. Each value must be in the range 0-7. You can pass either a **POINT** structure or a `CPoint` object for this parameter.  
   
 ### Return Value  
  The previous origin of the brush in device units.  
@@ -5198,7 +5198,7 @@ COLORREF SetPixel(
  Specifies the logical x- and y-coordinates of the point to be set. You can pass either a **POINT** structure or a `CPoint` object for this parameter.  
   
 ### Return Value  
- An RGB value for the color that the point is actually painted. This value can be different from that specified by `crColor` if an approximation of that color is used. If the function fails (if the point is outside the clipping region), the return value is –1.  
+ An RGB value for the color that the point is actually painted. This value can be different from that specified by `crColor` if an approximation of that color is used. If the function fails (if the point is outside the clipping region), the return value is -1.  
   
 ### Remarks  
  The point must be in the clipping region. If the point is not in the clipping region, the function does nothing.  
@@ -5829,7 +5829,7 @@ CSize TabbedTextOut(
  Points to the character string to draw. You can pass either a pointer to an array of characters or a [CString](../../atl-mfc-shared/reference/cstringt-class.md) object for this parameter.  
   
  `nCount`  
- Specifies the number of characters in the string. If `nCount` is –1, the length is calculated.  
+ Specifies the number of characters in the string. If `nCount` is -1, the length is calculated.  
   
  `nTabPositions`  
  Specifies the number of values in the array of tab-stop positions.  

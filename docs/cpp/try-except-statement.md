@@ -90,7 +90,7 @@ __except ( expression )
   
 3.  If an exception occurs during execution of the guarded section or in any routine the guarded section calls, the `__except` *expression* (called the *filter* expression) is evaluated and the value determines how the exception is handled. There are three values:  
   
-     **EXCEPTION_CONTINUE_EXECUTION (–1)** Exception is dismissed. Continue execution at the point where the exception occurred.  
+     **EXCEPTION_CONTINUE_EXECUTION (-1)** Exception is dismissed. Continue execution at the point where the exception occurred.  
   
      **EXCEPTION_CONTINUE_SEARCH (0)** Exception is not recognized. Continue to search up the stack for a handler, first for containing **try-except** statements, then for handlers with the next highest precedence.  
   

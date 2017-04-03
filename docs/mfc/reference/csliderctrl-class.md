@@ -385,7 +385,7 @@ int GetTic(int nTic) const;
  Zero-based index identifying a tick mark.  
   
 ### Return Value  
- The position of the specified tick mark or – 1 if `nTic` does not specify a valid index.  
+ The position of the specified tick mark or - 1 if `nTic` does not specify a valid index.  
   
 ##  <a name="getticarray"></a>  CSliderCtrl::GetTicArray  
  Retrieves the address of the array containing the positions of tick marks for a slider control.  
@@ -409,7 +409,7 @@ int GetTicPos(int nTic) const;
  Zero-based index identifying a tick mark.  
   
 ### Return Value  
- The physical position, in client coordinates, of the specified tick mark or – 1 if `nTic` does not specify a valid index.  
+ The physical position, in client coordinates, of the specified tick mark or - 1 if `nTic` does not specify a valid index.  
   
 ##  <a name="gettooltips"></a>  CSliderCtrl::GetToolTips  
  Retrieves the handle to the tooltip control assigned to the slider control, if any.  

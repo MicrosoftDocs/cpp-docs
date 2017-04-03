@@ -49,7 +49,7 @@ template<class _InIt1, class _InIt2, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `includes`. For more information, see [includes](http://msdn.microsoft.com/Library/7038e179-3813-46f3-9b6f-85d8214e9768).  
+ This function behaves the same as the C++ Standard Library function `includes`. For more information, see [includes](../standard-library/algorithm-functions.md#includes).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

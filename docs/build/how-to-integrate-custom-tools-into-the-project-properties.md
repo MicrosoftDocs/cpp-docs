@@ -47,7 +47,7 @@ You can add custom tool options to the Visual Studio **Property Pages** window b
   
 2.  Save the file in the %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\ folder. Every rule in the **Property Pages** window is represented by an XML file in this folder. Make sure that the file is uniquely named in the folder.  
   
-3.  Copy the content of %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\cl.xml, close it without saving changes, and then paste the content in your new XML file. You can use any XML schema file – this is just one that can be used so you start with a template.  
+3.  Copy the content of %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\cl.xml, close it without saving changes, and then paste the content in your new XML file. You can use any XML schema file - this is just one that can be used so you start with a template.  
   
 4.  In the new XML file, modify the content according to your requirements. Make sure to change the **Rule Name** and **Rule.DisplayName** at the top of the file.  
   

@@ -116,7 +116,7 @@ FILE *_wfsopen(
   
 |Term|Definition|  
 |----------|----------------|  
-|`t`|Opens a file in text (translated) mode. In this mode, carriage return–line feed (CR-LF) combinations are translated into single line feeds (LF) on input and LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading or reading/writing, `_fsopen` checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using `fseek` and `ftell` to move within a file that ends with a CTRL+Z might cause `fseek` to behave improperly near the end of the file.|  
+|`t`|Opens a file in text (translated) mode. In this mode, carriage return-line feed (CR-LF) combinations are translated into single line feeds (LF) on input and LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading or reading/writing, `_fsopen` checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using `fseek` and `ftell` to move within a file that ends with a CTRL+Z might cause `fseek` to behave improperly near the end of the file.|  
 |`b`|Opens a file in binary (untranslated) mode; the above translations are suppressed.|  
 |`S`|Specifies that caching is optimized for, but not restricted to, sequential access from disk.|  
 |`R`|Specifies that caching is optimized for, but not restricted to, random access from disk.|  
@@ -179,12 +179,6 @@ int main( void )
 ```Output  
 No one else in the network can write to this file until we are done.  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::IO::File::Open](https://msdn.microsoft.com/en-us/library/system.io.file.open.aspx)  
-  
--   <xref:System.IO.FileStream.%23ctor%2A>  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

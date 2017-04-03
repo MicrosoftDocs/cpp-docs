@@ -136,7 +136,7 @@ Object ^ obj2 = 1;
  See [Declaration of a CLR Reference Class Object](../dotnet/declaration-of-a-clr-reference-class-object.md) for more information.  
   
 ## Array Declaration  
- The CLR array has been redesigned. It is similar to the stl `vector` template collection, but maps to the underlying `System::Array` class – that is, it is not a template implementation.  
+ The CLR array has been redesigned. It is similar to the stl `vector` template collection, but maps to the underlying `System::Array` class - that is, it is not a template implementation.  
   
  See [Declaration of a CLR Array](../dotnet/declaration-of-a-clr-array.md) for more information.  
   
@@ -242,7 +242,7 @@ public:
    {  
       double get()             { return _x; }  
       void   set( double newx ){ _x = newx; }  
-   } // Note: no semi-colon …  
+   } // Note: no semi-colon  
 };  
 ```  
   

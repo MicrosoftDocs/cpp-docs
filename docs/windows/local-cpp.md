@@ -68,5 +68,4 @@ When used in the interface header, allows you to use the MIDL compiler as a head
  [IDL Attributes](../windows/idl-attributes.md)   
  [Interface Attributes](../windows/interface-attributes.md)   
  [Method Attributes](../windows/method-attributes.md)   
- [call_as](../windows/call-as.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [call_as](../windows/call-as.md)   

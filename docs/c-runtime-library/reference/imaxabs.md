@@ -105,9 +105,6 @@ int main(int argc, char *argv[])
 The absolute value of -9223372036854775806 is 9223372036854775806  
 ```  
   
-## .NET Framework Equivalent  
- [System::Math::Abs](https://msdn.microsoft.com/en-us/library/system.math.abs.aspx)  
-  
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

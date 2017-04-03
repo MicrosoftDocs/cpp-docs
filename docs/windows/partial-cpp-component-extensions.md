@@ -69,7 +69,7 @@ class-key identifier {
 ### Remarks  
  A partial class supports scenarios where you modify one part of a class definition in one file, and automatic code-generating software—for example, the XAML designer—modifies code in the same class in another file. By using a partial class, you can prevent the automatic code generator from overwriting your code. In a Visual Studio project, the `partial` modifier is applied automatically to the generated file.  
   
- Contents: With two exceptions, a partial class definition can contain anything that the full class definition could contain if the `partial` keyword was omitted. However, you can't specify class accessibility (for example, `public partial class X {…};`),  or a `declspec`.  
+ Contents: With two exceptions, a partial class definition can contain anything that the full class definition could contain if the `partial` keyword was omitted. However, you can't specify class accessibility (for example, `public partial class X { ... };`),  or a `declspec`.  
   
  Access specifiers used in a partial class definition for *identifier* do not affect the default accessibility in a subsequent partial or full class definition for *identifier*. Inline definitions of static data members are allowed.  
   

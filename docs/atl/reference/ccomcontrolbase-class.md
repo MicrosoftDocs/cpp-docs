@@ -925,7 +925,7 @@ SIZE m_sizeExtent;
   
  This size is scaled by the display. The control's physical size is specified in the `m_sizeNatural` data member and is fixed.  
   
- You can convert the size to pixels with the global function [AtlHiMetricToPixel](http://msdn.microsoft.com/library/00c3af58-7298-4082-9a2e-5b68a8cec6fd).  
+ You can convert the size to pixels with the global function [AtlHiMetricToPixel](pixel-himetric-conversion-global-functions.md#atlhimetrictopixel).  
   
 ##  <a name="m_sizenatural"></a>  CComControlBase::m_sizeNatural  
  The physical size of the control in HIMETRIC units (each unit is 0.01 millimeters).  
@@ -941,7 +941,7 @@ SIZE m_sizeNatural;
   
  This size is fixed, while the size in `m_sizeExtent` is scaled by the display.  
   
- You can convert the size to pixels with the global function [AtlHiMetricToPixel](http://msdn.microsoft.com/library/00c3af58-7298-4082-9a2e-5b68a8cec6fd).  
+ You can convert the size to pixels with the global function [AtlHiMetricToPixel](pixel-himetric-conversion-global-functions.md#atlhimetrictopixel).  
   
 ##  <a name="m_spadvisesink"></a>  CComControlBase::m_spAdviseSink  
  A direct pointer to the advisory connection on the container (the container's [IAdviseSink](http://msdn.microsoft.com/library/windows/desktop/ms692513)).  

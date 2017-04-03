@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # operator SHORT
-Sets the type of *label* to short. All jumps to *label* must be short (within the range –128 to +127 bytes from the jump instruction to *label*).  
+Sets the type of *label* to short. All jumps to *label* must be short (within the range -128 to +127 bytes from the jump instruction to *label*).  
   
 ## Syntax  
   

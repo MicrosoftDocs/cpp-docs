@@ -105,7 +105,7 @@ long double erfcl(
   
  ![The error function of x](../../c-runtime-library/reference/media/crt_erf_formula.PNG "CRT_erf_formula")  
   
- The complementary Gauss error function is defined as 1 – erf(x). The `erf` functions return a value in the range -1.0 to 1.0. There is no error return. The `erfc` functions return a value in the range 0 to 2. If `x` is too large for `erfc`, the `errno` variable is set to `ERANGE`.  
+ The complementary Gauss error function is defined as 1 - erf(x). The `erf` functions return a value in the range -1.0 to 1.0. There is no error return. The `erfc` functions return a value in the range 0 to 2. If `x` is too large for `erfc`, the `errno` variable is set to `ERANGE`.  
   
  Because C++ allows overloading, you can call overloads of `erf` and `erfc` that take and return `float` and `long double` types. In a C program, `erf` and `erfc` always take and return a `double`.  
   
@@ -116,9 +116,6 @@ long double erfcl(
 |`erf`, `erff`, `erfl`, `erfc`, `erfcf`, `erfcl`|\<math.h>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)

@@ -203,9 +203,6 @@ Before: This is a test
 After:  **** is a test  
 ```  
   
-## .NET Framework Equivalent  
- [System::String::Replace](https://msdn.microsoft.com/en-us/library/system.string.replace.aspx)  
-  
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   

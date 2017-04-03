@@ -199,7 +199,7 @@ virtual int CharToItem(
  The current position of the list-box caret.  
   
 ### Return Value  
- Returns – 1 or – 2 for no further action or a nonnegative number to specify an index of a list-box item on which to perform the default action for the keystroke. The default implementation returns – 1.  
+ Returns - 1 or - 2 for no further action or a nonnegative number to specify an index of a list-box item on which to perform the default action for the keystroke. The default implementation returns - 1.  
   
 ### Remarks  
  The `WM_CHARTOITEM` message is sent by the list box when it receives a `WM_CHAR` message, but only if the list box meets all of these criteria:  
@@ -212,7 +212,7 @@ virtual int CharToItem(
   
  You should never call this function yourself. Override this function to provide your own custom handling of keyboard messages.  
   
- In your override, you must return a value to tell the framework what action you performed. A return value of – 1 or – 2 indicates that you handled all aspects of selecting the item and requires no further action by the list box. Before returning – 1 or – 2, you could set the selection or move the caret or both. To set the selection, use [SetCurSel](#setcursel) or [SetSel](#setsel). To move the caret, use [SetCaretIndex](#setcaretindex).  
+ In your override, you must return a value to tell the framework what action you performed. A return value of - 1 or - 2 indicates that you handled all aspects of selecting the item and requires no further action by the list box. Before returning - 1 or - 2, you could set the selection or move the caret or both. To set the selection, use [SetCurSel](#setcursel) or [SetSel](#setsel). To move the caret, use [SetCaretIndex](#setcaretindex).  
   
  A return value of 0 or greater specifies the index of an item in the list box and indicates that the list box should perform the default action for the keystroke on the given item.  
   
@@ -248,7 +248,7 @@ virtual int CompareItem(LPCOMPAREITEMSTRUCT lpCompareItemStruct);
   
 |Value|Meaning|  
 |-----------|-------------|  
-|–1|Item 1 sorts before item 2.|  
+|-1|Item 1 sorts before item 2.|  
 |0|Item 1 and item 2 sort the same.|  
 |1|Item 1 sorts after item 2.|  
   
@@ -417,7 +417,7 @@ int FindString(
   
 ### Parameters  
  `nStartAfter`  
- Contains the zero-based index of the item before the first item to be searched. When the search reaches the bottom of the list box, it continues from the top of the list box back to the item specified by `nStartAfter`. If `nStartAfter` is –1, the entire list box is searched from the beginning.  
+ Contains the zero-based index of the item before the first item to be searched. When the search reaches the bottom of the list box, it continues from the top of the list box back to the item specified by `nStartAfter`. If `nStartAfter` is -1, the entire list box is searched from the beginning.  
   
  `lpszItem`  
  Points to the null-terminated string that contains the prefix to search for. The search is case independent, so this string may contain any combination of uppercase and lowercase letters.  
@@ -442,7 +442,7 @@ int FindStringExact(
   
 ### Parameters  
  `nIndexStart`  
- Specifies the zero-based index of the item before the first item to be searched. When the search reaches the bottom of the list box, it continues from the top of the list box back to the item specified by `nIndexStart`. If `nIndexStart` is –1, the entire list box is searched from the beginning.  
+ Specifies the zero-based index of the item before the first item to be searched. When the search reaches the bottom of the list box, it continues from the top of the list box back to the item specified by `nIndexStart`. If `nIndexStart` is -1, the entire list box is searched from the beginning.  
   
  `lpszFind`  
  Points to the null-terminated string to search for. This string can contain a complete filename, including the extension. The search is not case sensitive, so the string can contain any combination of uppercase and lowercase letters.  
@@ -570,7 +570,7 @@ void* GetItemDataPtr(int nIndex) const;
  Specifies the zero-based index of the item in the list box.  
   
 ### Return Value  
- Retrieves a pointer, or –1 if an error occurs.  
+ Retrieves a pointer, or -1 if an error occurs.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CListBox#16](../../mfc/codesnippet/cpp/clistbox-class_16.cpp)]  
@@ -805,7 +805,7 @@ int InsertString(
   
 ### Parameters  
  `nIndex`  
- Specifies the zero-based index of the position to insert the string. If this parameter is –1, the string is added to the end of the list.  
+ Specifies the zero-based index of the position to insert the string. If this parameter is -1, the string is added to the end of the list.  
   
  `lpszItem`  
  Points to the null-terminated string that is to be inserted.  
@@ -886,7 +886,7 @@ int SelectString(
   
 ### Parameters  
  `nStartAfter`  
- Contains the zero-based index of the item before the first item to be searched. When the search reaches the bottom of the list box, it continues from the top of the list box back to the item specified by `nStartAfter`. If `nStartAfter` is –1, the entire list box is searched from the beginning.  
+ Contains the zero-based index of the item before the first item to be searched. When the search reaches the bottom of the list box, it continues from the top of the list box back to the item specified by `nStartAfter`. If `nStartAfter` is -1, the entire list box is searched from the beginning.  
   
  `lpszItem`  
  Points to the null-terminated string that contains the prefix to search for. The search is case independent, so this string may contain any combination of uppercase and lowercase letters.  
@@ -1000,7 +1000,7 @@ int SetCurSel(int nSelect);
   
 ### Parameters  
  `nSelect`  
- Specifies the zero-based index of the string to be selected. If `nSelect` is –1, the list box is set to have no selection.  
+ Specifies the zero-based index of the string to be selected. If `nSelect` is -1, the list box is set to have no selection.  
   
 ### Return Value  
  `LB_ERR` if an error occurs.  
@@ -1139,7 +1139,7 @@ int SetSel(
   
 ### Parameters  
  `nIndex`  
- Contains the zero-based index of the string to be set. If –1, the selection is added to or removed from all strings, depending on the value of `bSelect`.  
+ Contains the zero-based index of the string to be set. If -1, the selection is added to or removed from all strings, depending on the value of `bSelect`.  
   
  `bSelect`  
  Specifies how to set the selection. If `bSelect` is `TRUE`, the string is selected and highlighted; if `FALSE`, the highlight is removed and the string is no longer selected. The specified string is selected and highlighted by default.  
@@ -1162,7 +1162,8 @@ int SetSel(
 void SetTabStops();  
 BOOL SetTabStops(const int& cxEachStop);
 
- BOOL SetTabStops(
+ 
+BOOL SetTabStops(
     int nTabStops,  
     LPINT rgTabStops);
 ```  
@@ -1227,7 +1228,7 @@ virtual int VKeyToItem(
  The current position of the list-box caret.  
   
 ### Return Value  
- Returns – 2 for no further action, – 1 for default action, or a nonnegative number to specify an index of a list box item on which to perform the default action for the keystroke.  
+ Returns - 2 for no further action, - 1 for default action, or a nonnegative number to specify an index of a list box item on which to perform the default action for the keystroke.  
   
 ### Remarks  
  The `WM_VKEYTOITEM` message is sent by the list box when it receives a `WM_KEYDOWN` message, but only if the list box meets both of the following:  
@@ -1238,9 +1239,9 @@ virtual int VKeyToItem(
   
  You should never call this function yourself. Override this function to provide your own custom handling of keyboard messages.  
   
- You must return a value to tell the framework what action your override performed. A return value of – 2 indicates that the application handled all aspects of selecting the item and requires no further action by the list box. Before returning – 2, you could set the selection or move the caret or both. To set the selection, use [SetCurSel](#setcursel) or [SetSel](#setsel). To move the caret, use [SetCaretIndex](#setcaretindex).  
+ You must return a value to tell the framework what action your override performed. A return value of - 2 indicates that the application handled all aspects of selecting the item and requires no further action by the list box. Before returning - 2, you could set the selection or move the caret or both. To set the selection, use [SetCurSel](#setcursel) or [SetSel](#setsel). To move the caret, use [SetCaretIndex](#setcaretindex).  
   
- A return value of – 1 indicates that the list box should perform the default action in response to the keystroke.The default implementation returns – 1.  
+ A return value of - 1 indicates that the list box should perform the default action in response to the keystroke.The default implementation returns - 1.  
   
  A return value of 0 or greater specifies the index of an item in the list box and indicates that the list box should perform the default action for the keystroke on the given item.  
   

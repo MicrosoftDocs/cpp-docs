@@ -99,7 +99,7 @@ public:
 |-|-|  
 |[get](#auto_ptr__get)|The member function returns the stored pointer `myptr`.|  
 |[release](#auto_ptr__release)|The member replaces the stored pointer `myptr` with a null pointer and returns the previously stored pointer.|  
-|[reset](#auto_ptr__reset)|The member function evaluates the expression `deleteÂ myptr`, but only if the stored pointer value `myptr` changes as a result of function call. It then replaces the stored pointer with `ptr`.|  
+|[reset](#auto_ptr__reset)|The member function evaluates the expression `delete myptr`, but only if the stored pointer value `myptr` changes as a result of function call. It then replaces the stored pointer with `ptr`.|  
   
 ### Operators  
   
@@ -470,7 +470,7 @@ Destructing 00311B88 Value: 6
 ```  
   
 ##  <a name="auto_ptr__reset"></a>  auto_ptr::reset  
- The member function evaluates the expression **delete**Â **myptr**, but only if the stored pointer value **myptr** changes as a result of a function call. It then replaces the stored pointer with **ptr**.  
+ The member function evaluates the expression **delete** **myptr**, but only if the stored pointer value **myptr** changes as a result of a function call. It then replaces the stored pointer with **ptr**.  
   
 ```   
 void reset(Type* ptr = 0);

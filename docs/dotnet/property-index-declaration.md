@@ -38,7 +38,7 @@ translation.priority.ht:
 # Property Index Declaration
 The syntax for declaring an indexed property has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
   
- The two primary shortcoming of the Managed Extensions language support of indexed properties is the inability to provide class-level subscripting; that is, all indexed properties are required to be given a name, and thus there is no way, for example, to provide a managed subscript operator that can be directly applied to a `Vector` or `Matrix` class object. A second less significant shortcoming is that it is visually difficult to distinguish a property from an indexed property – the number of parameters is the only indication. Finally, indexed properties suffer from the same problems as those of non-indexed properties – the accessors are not treated as an atomic unit, but separated into individual methods.  For example:  
+ The two primary shortcoming of the Managed Extensions language support of indexed properties is the inability to provide class-level subscripting; that is, all indexed properties are required to be given a name, and thus there is no way, for example, to provide a managed subscript operator that can be directly applied to a `Vector` or `Matrix` class object. A second less significant shortcoming is that it is visually difficult to distinguish a property from an indexed property - the number of parameters is the only indication. Finally, indexed properties suffer from the same problems as those of non-indexed properties - the accessors are not treated as an atomic unit, but separated into individual methods.  For example:  
   
 ```  
 public __gc class Vector;  
@@ -85,10 +85,10 @@ private:
 public:  
    // ok: class level indexer now  
    //  
-   //     Matrix mat …  
+   //     Matrix mat;  
    //     mat[ 0, 0 ] = 1;   
    //  
-   // invokes the set accessor of the default indexer …  
+   // invokes the set accessor of the default indexer  
   
    property float default [int,int] {  
       float get( int r, int c );  

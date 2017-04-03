@@ -274,7 +274,7 @@ const char32_t* raw_utf32 = UR"(An unescaped \ character)";
  A delimiter is a user-defined sequence of up to 16 characters that immediately precedes the opening parenthesis of a raw string literal and immediately follows its closing parenthesis.  For example, in `R"abc(Hello"\()abc"` the delimiter sequence is `abc` and the string content is `Hello"\(`. You can use a delimiter to disambiguate raw strings that contain both double quotation marks and parentheses. This causes a compiler error:  
   
 ```cpp  
-// meant to represent the string: )”  
+// meant to represent the string: )"  
 const char* bad_parens = R"()")";  // error C2059  
 ```  
   
@@ -294,7 +294,7 @@ goodbye)";
 ```  
   
 ### std::string Literals (C++14)  
- std::string literals are Standard Library implementations of user-defined literals (see below) that are represented as "xyx"s (with a `s` suffix). This kind of string literal produces a temporary object of type std::string, std::wstring, std::u32string or std::u16string depending on the prefix that is specified. When no prefix is used, as above, a std::string is produced. L"xyz"s produces a std::wstring. u"xyz"s produces a [std::u16string](http://msdn.microsoft.com/Library/5e1dcd3a-b1e4-4ee0-8389-629f7c2061c1), and U"xyz"s produces a [std::u32string](http://msdn.microsoft.com/Library/fd3970a3-a8b2-42ff-aadd-1cc99045f88a).  
+ std::string literals are Standard Library implementations of user-defined literals (see below) that are represented as "xyx"s (with a `s` suffix). This kind of string literal produces a temporary object of type std::string, std::wstring, std::u32string or std::u16string depending on the prefix that is specified. When no prefix is used, as above, a std::string is produced. L"xyz"s produces a std::wstring. u"xyz"s produces a [std::u16string](../standard-library/string-typedefs.md#u16string), and U"xyz"s produces a [std::u32string](../standard-library/string-typedefs.md#u32string).  
   
 ```cpp  
 //#include <string>  

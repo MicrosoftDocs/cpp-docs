@@ -46,7 +46,7 @@ Makefile preprocessing expressions can use operators that act on constant values
   
  To compare two strings, use the equality (`==`) operator or the inequality (`!=`) operator. Enclose strings in double quotation marks.  
   
- Integer constants can use the unary operators for numerical negation (`–`), one's complement (`~`), and logical negation (`!`).  
+ Integer constants can use the unary operators for numerical negation (`-`), one's complement (`~`), and logical negation (`!`).  
   
  Expressions can use the following operators. The operators of equal precedence are grouped together, and the groups are listed in decreasing order of precedence. Unary operators associate with the operand to the right. Binary operators of equal precedence associate operands from left to right.  
   

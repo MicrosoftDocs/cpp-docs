@@ -89,7 +89,7 @@ The compiler includes warnings that are turned off by default because most users
 |[C4549](../error-messages/compiler-warnings/compiler-warning-level-1-c4549.md) (level 1)|'operator': operator before comma has no effect; did you intend 'operator'?|  
 |[C4555](../error-messages/compiler-warnings/compiler-warning-level-1-c4555.md) (level 1)|expression has no effect; expected expression with side-effect|  
 |[C4557](../error-messages/compiler-warnings/compiler-warning-level-3-c4557.md) (level 3)|'__assume' contains effect 'effect'|  
-|[C4571](../error-messages/compiler-warnings/compiler-warning-level-4-c4571.md) (level 4)|informational: catch(…) semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught|  
+|[C4571](../error-messages/compiler-warnings/compiler-warning-level-4-c4571.md) (level 4)|informational: catch(...) semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught|  
 |C4574 (level 4)|'identifier' is defined to be '0': did you mean to use '#if identifier'?|  
 |C4608 (level 3)|'symbol1' has already been initialized by another union member in the initializer list, 'symbol2'|  
 |[C4619](../error-messages/compiler-warnings/compiler-warning-level-3-c4619.md) (level 3)|#pragma warning: there is no warning number 'number'|  

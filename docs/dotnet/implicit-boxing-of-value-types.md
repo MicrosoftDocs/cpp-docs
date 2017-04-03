@@ -49,7 +49,7 @@ The boxing of value types has changed from Managed Extensions for C++ to [!INCLU
   
  This provides the flexibility required by language developers, but at the cost of a complicated semantics. This burden of complication is stripped away if we restrict a virtual base class to be without state and simply allow it to specify an interface. This is a recommended design idiom within C++. Within CLR programming, it is raised to policy with the Interface type.  
   
- Here is a simple code sample– and in this case, the explicit boxing is unnecessary:  
+ Here is a simple code sample- and in this case, the explicit boxing is unnecessary:  
   
 ```  
 // Managed Extensions for C++ requires explicit __box operation  

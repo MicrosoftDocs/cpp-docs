@@ -294,7 +294,7 @@ streamsize in_avail();
  The number of elements that are ready to be read from the buffer.  
   
 ### Remarks  
- If a [read position](../standard-library/basic-streambuf-class.md) is available, the member function returns [egptr](#basic_streambuf__egptr) – [gptr](#basic_streambuf__gptr). Otherwise, it returns [showmanyc](#basic_streambuf__showmanyc).  
+ If a [read position](../standard-library/basic-streambuf-class.md) is available, the member function returns [egptr](#basic_streambuf__egptr) - [gptr](#basic_streambuf__gptr). Otherwise, it returns [showmanyc](#basic_streambuf__showmanyc).  
   
 ### Example  
   
@@ -526,7 +526,7 @@ int pubsync();
 ```  
   
 ### Return Value  
- Returns [sync](#basic_streambuf__sync) or –1 if failure.  
+ Returns [sync](#basic_streambuf__sync) or -1 if failure.  
   
 ##  <a name="basic_streambuf__sbumpc"></a>  basic_streambuf::sbumpc  
  Reads and returns the current element, moving the stream pointer.  

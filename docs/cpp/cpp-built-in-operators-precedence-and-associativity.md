@@ -52,11 +52,11 @@ The C++ language includes all C operators and adds several new operators. Operat
 |`Group 1 precedence, no associativity`|  
 |[Scope resolution](../cpp/scope-resolution-operator.md)|`::`|  
 |`Group 2 precedence, left to right associativity`|  
-|[Member selection (object or pointer)](../cpp/member-access-operators-dot-and.md)|`. or –>`|  
+|[Member selection (object or pointer)](../cpp/member-access-operators-dot-and.md)|`. or ->`|  
 |[Array subscript](../cpp/subscript-operator.md)|`[ ]`|  
 |[Function call](../cpp/function-call-operator-parens.md)|`( )`|  
 |[Postfix increment](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|`++`|  
-|[Postfix decrement](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|`––`|  
+|[Postfix decrement](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|`--`|  
 |[Type name](../cpp/typeid-operator.md)|`typeid( )`|  
 |[Constant type conversion](../cpp/const-cast-operator.md)|`const_cast`|  
 |[Dynamic type conversion](../cpp/dynamic-cast-operator.md)|`dynamic_cast`|  
@@ -65,7 +65,7 @@ The C++ language includes all C operators and adds several new operators. Operat
 |`Group 3 precedence, right to left associativity`|  
 |[Size of object or type](../cpp/sizeof-operator.md)|`sizeof`|  
 |[Prefix increment](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md)|`++`|  
-|[Prefix decrement](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md)|`––`|  
+|[Prefix decrement](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md)|`--`|  
 |[One's complement](../cpp/one-s-complement-operator-tilde.md)|`~`|  
 |[Logical not](../cpp/logical-negation-operator-exclpt.md)|`!`|  
 |[Unary negation](../cpp/unary-plus-and-negation-operators-plus-and.md)|`-`|  
@@ -76,14 +76,14 @@ The C++ language includes all C operators and adds several new operators. Operat
 |[Destroy object](../cpp/delete-operator-cpp.md)|`delete`|  
 |[Cast](../cpp/cast-operator-parens.md)|`Cast: ()`|  
 |`Group 4 precedence, left to right associativity`|  
-|[Pointer-to-member (objects or pointers)](../cpp/pointer-to-member-operators-dot-star-and-star.md)|`.* or –>*`|  
+|[Pointer-to-member (objects or pointers)](../cpp/pointer-to-member-operators-dot-star-and-star.md)|`.* or ->*`|  
 |`Group 5 precedence, left to right associativity`|  
 |[Multiplication](../cpp/multiplicative-operators-and-the-modulus-operator.md)|`*`|  
 |[Division](../cpp/multiplicative-operators-and-the-modulus-operator.md)|`/`|  
 |[Modulus](../cpp/multiplicative-operators-and-the-modulus-operator.md)|`%`|  
 |`Group 6 precedence, left to right associativity`|  
 |[Addition](../cpp/additive-operators-plus-and.md)|`+`|  
-|[Subtraction](../cpp/additive-operators-plus-and.md)|`–`|  
+|[Subtraction](../cpp/additive-operators-plus-and.md)|`-`|  
 |`Group 7 precedence, left to right associativity`|  
 |[Left shift](../cpp/left-shift-and-right-shift-operators-input-and-output.md)|`<<`|  
 |[Right shift](../cpp/left-shift-and-right-shift-operators-input-and-output.md)|`>>`|  
@@ -113,7 +113,7 @@ The C++ language includes all C operators and adds several new operators. Operat
 |[Division assignment](../cpp/assignment-operators.md)|`/=`|  
 |[Modulus assignment](../cpp/assignment-operators.md)|`%=`|  
 |[Addition assignment](../cpp/assignment-operators.md)|`+=`|  
-|[Subtraction assignment](../cpp/assignment-operators.md)|`–=`|  
+|[Subtraction assignment](../cpp/assignment-operators.md)|`-=`|  
 |[Left-shift assignment](../cpp/assignment-operators.md)|`<<=`|  
 |[Right-shift assignment](../cpp/assignment-operators.md)|`>>=`|  
 |[Bitwise AND assignment](../cpp/assignment-operators.md)|`&=`|  
