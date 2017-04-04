@@ -69,7 +69,7 @@ You can create Visual C++ programs that use .NET classes and compile them by usi
   
      For example, you can use the [How to: Write a Text File (C++/CLI)](../dotnet/how-to-write-a-text-file-cpp-cli.md) sample program (in the **File Handling and I/O** node of the Programming Guide).  
   
-     If you use the sample program, notice that you use the `gcnew`keyword instead of `new` when creating a .NET object, and that `gcnew` returns a handle (`^`) rather than a pointer (`*`):  
+     If you use the sample program, notice that you use the `gcnew` keyword instead of `new` when creating a .NET object, and that `gcnew` returns a handle (`^`) rather than a pointer (`*`):  
   
      `StreamWriter^ sw = gcnew StreamWriter(fileName);`  
   

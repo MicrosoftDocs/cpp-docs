@@ -46,7 +46,7 @@ The class describes the storage and member functions common to both input and ou
   
 -   An exception mask in an object of type [iostate](#ios_base__iostate).  
   
--   A field width in an object of type `int`*.*  
+-   A field width in an object of type `int`.  
   
 -   A display precision in an object of type `int`.  
   
@@ -551,7 +551,7 @@ base&
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  An object of type `ios_base`.  
   
 ### Return Value  

@@ -79,7 +79,7 @@ wint_t _getwch_nolock( void );
  Returns the character read. There is no error return.  
   
 ## Remarks  
- `_getch_nolock` and `_getwch_nolock` are identical to `_getch` and`_getchw` except that they not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
+ `_getch_nolock` and `_getwch_nolock` are identical to `_getch` and `_getchw` except that they not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
   
 ### Generic-Text Routine Mappings  
   

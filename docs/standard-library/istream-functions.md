@@ -33,10 +33,10 @@ void swap(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  A stream.  
   
- ` right`  
+ `right`  
  A stream.  
   
 ##  <a name="ws"></a>  ws  

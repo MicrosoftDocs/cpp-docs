@@ -83,10 +83,10 @@ basic_string<CharType, Traits, Allocator>&& operator+(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  A C-style string or an object of type `basic_string` to be concatenated.  
   
- ` right`  
+ `right`  
  A C-style string or an object of type `basic_string` to be concatenated.  
   
 ### Return Value  
@@ -168,10 +168,10 @@ bool operator!=(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  A C-style string or an object of type `basic_string` to be compared.  
   
- ` right`  
+ `right`  
  A C-style string or an object of type `basic_string` to be compared.  
   
 ### Return Value  
@@ -255,10 +255,10 @@ bool operator==(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  A C-style string or an object of type `basic_string` to be compared.  
   
- ` right`  
+ `right`  
  A C-style string or an object of type `basic_string` to be compared.  
   
 ### Return Value  
@@ -342,10 +342,10 @@ bool operator<(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  A C-style string or an object of type `basic_string` to be compared.  
   
- ` right`  
+ `right`  
  A C-style string or an object of type `basic_string` to be compared.  
   
 ### Return Value  
@@ -434,10 +434,10 @@ bool operator<=(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  A C-style string or an object of type `basic_string` to be compared.  
   
- ` right`  
+ `right`  
  A C-style string or an object of type `basic_string` to be compared.  
   
 ### Return Value  
@@ -526,7 +526,7 @@ basic_ostream<CharType, Traits>& operator<<(
  _Ostr  
  The output stream being written to.  
   
- ` str`  
+ `str`  
  The string to be entered into the output stream.  
   
 ### Return Value  
@@ -556,10 +556,10 @@ bool operator>(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  A C-style string or an object of type `basic_string` to be compared.  
   
- ` right`  
+ `right`  
  A C-style string or an object of type `basic_string` to be compared.  
   
 ### Return Value  
@@ -655,10 +655,10 @@ bool operator>=(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  A C-style string or an object of type `basic_string` to be compared.  
   
- ` right`  
+ `right`  
  A C-style string or an object of type `basic_string` to be compared.  
   
 ### Return Value  
@@ -747,16 +747,16 @@ basic_istream<CharType, Traits>& operator>>(
  `_Istr`  
  The input stream used to extract the sequence  
   
- ` right`  
+ `right`  
  The string that is being extracted from the input stream.  
   
 ### Return Value  
- Reads the value of the specified string from `_Istr` and returns it into ` right.`  
+ Reads the value of the specified string from `_Istr` and returns it into `right`.  
   
 ### Remarks  
  The operator skips the leading white spaces unless the `skipws` flag is set. It reads all the following characters until the next character is a white space or the end of the file is reached.  
   
- The template function overloads **operator>>** to replace the sequence controlled by ` right` with a sequence of elements extracted from the stream `_Istr`. Extraction stops:  
+ The template function overloads **operator>>** to replace the sequence controlled by `right` with a sequence of elements extracted from the stream `_Istr`. Extraction stops:  
   
 -   At end of file.  
   

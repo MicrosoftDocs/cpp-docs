@@ -359,7 +359,7 @@ explicit queue(const container_type& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The **const** container of which the constructed queue is to be a copy.  
   
 ### Remarks  

@@ -46,7 +46,7 @@ float_control( value,setting [push] | push | pop )
 ```  
   
 ## Flags  
- `value` *,* `setting` **[push]**  
+ `value`, `setting` **[push]**  
  Specifies floating-point behavior. `value` can be **precise** or **except**. For more information, see [/fp (Specify Floating-Point Behavior)](../build/reference/fp-specify-floating-point-behavior.md). `setting` can either be **on** or **off**.  
   
  If `value` is **precise**, the settings for **precise** and **except** are being specified. **except** can only be set to **on** when **precise** is also set to **on**.  
@@ -57,7 +57,7 @@ float_control( value,setting [push] | push | pop )
  Push the current `float_control` setting on to the internal compiler stack  
   
  **pop**  
- Removes the`float_control` setting from the top of the internal compiler stack and makes that the new `float_control` setting.  
+ Removes the `float_control` setting from the top of the internal compiler stack and makes that the new `float_control` setting.  
   
 ## Remarks  
  You cannot turn `float_control precise` off when **except** is on. Similarly, **precise** cannot be turned off when `fenv_access` is on. To go from strict model to a fast model with the `float_control` pragma, use the following code:  

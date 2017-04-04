@@ -455,7 +455,7 @@ template<class InputIterator, class UnaryPredicate>
 ### Remarks  
  The template function returns `true` only if, for some `N` in the range  
   
- `[0,`  `last`  `-`   `first` `)`, the predicate `comp``(*(` `first` `+ N))` is true.  
+ `[0, last - first)`, the predicate `comp(*(first + N))` is true.  
   
 ##  <a name="binary_search"></a>  binary_search  
  Tests whether there is an element in a sorted range that is equal to a specified value or that is equivalent to it in a sense specified by a binary predicate.  
@@ -487,7 +487,7 @@ template<class ForwardIterator,  class Type,  class BinaryPredicate>
  The value required to be matched by the value of the element or that must satisfy the condition with the element value specified by the binary predicate.  
   
  `comp`  
- User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns `true`when satisfied and `false` when not satisfied.  
+ User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns `true` when satisfied and `false` when not satisfied.  
   
 ### Return Value  
  `true` if an element is found in the range that is equal or equivalent to the specified value; otherwise, `false`.  
@@ -820,7 +820,7 @@ template<class InputIterator, class Size, class OutputIterator>
  Returns an output iterator where elements have been copied to. It is the same as the returned value of the third parameter, `dest`.  
   
 ### Remarks  
- The template function evaluates `*(dest + N) = *(first + N))` once for each `N` in the range `[0,` `count``)`, for strictly increasing values of `N` starting with the lowest value. It then returns `dest` `+ N`. If `dest` and `first` designate regions of storage, `dest` must not be in the range `[``first``,` `Last``)`.  
+ The template function evaluates `*(dest + N) = *(first + N))` once for each `N` in the range `[0, count)`, for strictly increasing values of `N` starting with the lowest value. It then returns `dest + N`. If `dest` and `first` designate regions of storage, `dest` must not be in the range `[first, last)`.  
   
 ##  <a name="count"></a>  count  
  Returns the number of elements in a range whose values match a specified value.  
@@ -2474,7 +2474,7 @@ bool is_heap(
  A random access iterator that indicates the end of a range.  
   
  `comp`  
- A condition to test to order elements. A binary predicate takes a single argument and returns `true`or `false`.  
+ A condition to test to order elements. A binary predicate takes a single argument and returns `true` or `false`.  
   
 ### Return Value  
  Returns `true` if the elements in the specified range form a heap, `false` if they do not.  
@@ -2539,7 +2539,7 @@ bool is_partitioned(
  An input iterator that indicates the end of a range.  
   
  `comp`  
- The condition to test for. This is provided by a user-defined predicate function object that defines the condition to be satisfied by the element being searched for. A predicate takes a single argument and returns `true`or `false`.  
+ The condition to test for. This is provided by a user-defined predicate function object that defines the condition to be satisfied by the element being searched for. A predicate takes a single argument and returns `true` or `false`.  
   
 ### Return Value  
  Returns true when all of the elements in the given range that test `true` for a condition come before any elements that test `false`, and otherwise returns `false`.  
@@ -4390,7 +4390,7 @@ template<class InputIterator, class OutputIterator>
  The output iterator that is to contain the moved elements.  
   
 ### Remarks  
- The template function evaluates `*(``dest` `+ N) =`  move `(*(` `first` `+ N)))` once for each `N` in the range `[0,` `last` `-`  `first``)`, for strictly increasing values of `N` starting with the lowest value. It then returns `dest` `+ N`. If `dest`and  `first` designate regions of storage, `dest` must not be in the range `[` `first``,` `last``)`.  
+ The template function evaluates `*(dest + N) = move(*(first + N))` once for each `N` in the range `[0, last - first)`, for strictly increasing values of `N` starting with the lowest value. It then returns `dest + N`. If `dest` and `first` designate regions of storage, `dest` must not be in the range `[first, last)`.  
   
 ##  <a name="move_backward"></a>  move_backward  
  Moves the elements of one iterator to another. The move starts with the last element in a specified range, and ends with the first element in that range.  
@@ -4415,7 +4415,7 @@ template<class BidirectionalIterator1, class BidirectionalIterator2>
  A bidirectional iterator addressing the position of one past the final element in the destination range.  
   
 ### Remarks  
- The template function evaluates `*(``destEnd` `- N - 1) =` `move``(*(``last` `- N - 1)))` once for each `N` in the range `[0,` `last` `-`  `first``)`, for strictly increasing values of `N` starting with the lowest value. It then returns `destEnd` `- (``last` `-`  `first``)`. If `destEnd` and  `first` designate regions of storage, `destEnd` must not be in the range `[` `first``,` `last``)`.  
+ The template function evaluates `*(destEnd - N - 1) = move(*(last - N - 1))` once for each `N` in the range `[0, last - first)`, for strictly increasing values of `N` starting with the lowest value. It then returns `destEnd - (last - first)`. If `destEnd` and  `first` designate regions of storage, `destEnd` must not be in the range `[first, last)`.  
   
  `move` and `move_backward` are functionally equivalent to using `copy` and `copy_backward` with a move iterator.  
   
@@ -4712,7 +4712,7 @@ bool none_of(InputIterator first, InputIterator last, BinaryPredicate comp);
  Returns `true` if the condition is not detected at least once in the indicated range, and `false` if the condition is detected.  
   
 ### Remarks  
- The template function returns `true` only if, for some `N` in the range `[0,` `last` `-`  `first``)`, the predicate `comp``(*(` `first` `+ N))` is always `false`.  
+ The template function returns `true` only if, for some `N` in the range `[0, last - first)`, the predicate `comp(*(first + N))` is always `false`.  
   
 ##  <a name="partial_sort"></a>  partial_sort  
  Arranges a specified number of the smaller elements in a range into a nondescending order or according to an ordering criterion specified by a binary predicate.  
@@ -5050,7 +5050,7 @@ template<class InputIterator, class OutputIterator1, class OutputIterator2, clas
  The condition to test for. This is provided by a user-defined predicate function object that defines the condition to be tested. A predicate takes a single argument and returns `true` or `false`.  
   
 ### Remarks  
- The template function copies each element `X` in `[` `first``,` `last``)` to `*``dest1``++` if `_Pred``(X)` is true, or to `*``dest2``++ if not`. It returns `pair<OutputIterator1, OutputIterator2>(``dest1``,` `dest2``)`.  
+ The template function copies each element `X` in `[first,last)` to `*dest1++` if `_Pred(X)` is true, or to `*dest2++` if not. It returns `pair<OutputIterator1, OutputIterator2>(dest1, dest2)`.  
   
 ##  <a name="partition_point"></a>  partition_point  
  Returns the first element in the given range that does not satisfy the condition. The elements are sorted so that those that satisfy the condition come before those that do not.  
@@ -5078,7 +5078,7 @@ template<class ForwardIterator, class Predicate>
  Returns a `ForwardIterator` that refers to the first element that does not fulfill the condition tested for by `comp`, or returns `last` if one is not found.  
   
 ### Remarks  
- The template function finds the first iterator `it` in `[` `first``,``last``)` for which `comp(*it)` is `false`. The sequence must be ordered by `comp`.  
+ The template function finds the first iterator `it` in `[first, last)` for which `comp(*it)` is `false`. The sequence must be ordered by `comp`.  
   
 ##  <a name="pop_heap"></a>  pop_heap  
  Removes the largest element from the front of a heap to the next-to-last position in the range and then forms a new heap from the remaining elements.  
@@ -8044,9 +8044,9 @@ OutputIterator transform(
 ### Remarks  
  The ranges referenced must be valid; all pointers must be dereferenceable and within each sequence the last position must be reachable from the first by incrementation. The destination range must be large enough to contain the transformed source range.  
   
- If `result` is set equal to  `first1` in the first version of the algorithm *,* then the source and destination ranges will be the same and the sequence will be modified in place. But the `result` may not address a position within the range [  `first1` +1, `last1`).  
+ If `result` is set equal to  `first1` in the first version of the algorithm, then the source and destination ranges will be the same and the sequence will be modified in place. But the `result` may not address a position within the range [`first1` + 1, `last1`).  
   
- The complexity is linear with at most ( `last1` -  `first1`) comparisons.  
+ The complexity is linear with at most (`last1` -  `first1`) comparisons.  
   
 ### Example  
   

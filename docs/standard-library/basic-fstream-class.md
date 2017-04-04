@@ -229,14 +229,14 @@ basic_fstream& operator=(basic_fstream&& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  An lvalue reference to a `basic_fstream` object.  
   
 ### Return Value  
  Returns `*this`.  
   
 ### Remarks  
- The member operator replaces the contents of the object by using the contents of ` right`, treated as an rvalue reference.  
+ The member operator replaces the contents of the object by using the contents of `right`, treated as an rvalue reference.  
   
 ##  <a name="basic_fstream__rdbuf"></a>  basic_fstream::rdbuf  
  Returns the address of the stored stream buffer, of type pointer to [basic_filebuf](../standard-library/basic-filebuf-class.md)\< **Elem**, **Tr**>.  
@@ -259,11 +259,11 @@ void swap(basic_fstream& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  An `lvalue` reference to a `basic_fstream` object.  
   
 ### Remarks  
- The member function exchanges the contents of this object and the contents of ` right`.  
+ The member function exchanges the contents of this object and the contents of `right`.  
   
 ## See Also  
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   

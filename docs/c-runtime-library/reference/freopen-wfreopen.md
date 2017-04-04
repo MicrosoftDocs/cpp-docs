@@ -93,7 +93,7 @@ FILE *_wfreopen(
 ## Remarks  
  More secure versions of these functions exist, see [freopen_s, _wfreopen_s](../../c-runtime-library/reference/freopen-s-wfreopen-s.md).  
   
- The `freopen` function closes the file currently associated with `stream` and reassigns `stream` to the file specified by `path`*.* `_wfreopen` is a wide-character version of `_freopen`; the `path` and `mode` arguments to `_wfreopen` are wide-character strings. `_wfreopen` and `_freopen` behave identically otherwise.  
+ The `freopen` function closes the file currently associated with `stream` and reassigns `stream` to the file specified by `path`. `_wfreopen` is a wide-character version of `_freopen`; the `path` and `mode` arguments to `_wfreopen` are wide-character strings. `_wfreopen` and `_freopen` behave identically otherwise.  
   
 ### Generic-Text Routine Mappings  
   
@@ -101,7 +101,7 @@ FILE *_wfreopen(
 |---------------------|------------------------------------|--------------------|-----------------------|  
 |`_tfreopen`|`freopen`|`freopen`|`_wfreopen`|  
   
- `freopen` is typically used to redirect the pre-opened files `stdin`, `stdout`, and `stderr` to files specified by the user. The new file associated with `stream` is opened with `mode`*,* which is a character string specifying the type of access requested for the file, as follows:  
+ `freopen` is typically used to redirect the pre-opened files `stdin`, `stdout`, and `stderr` to files specified by the user. The new file associated with `stream` is opened with `mode`, which is a character string specifying the type of access requested for the file, as follows:  
   
  `"r"`  
  Opens for reading. If the file does not exist or cannot be found, the `freopen` call fails.  

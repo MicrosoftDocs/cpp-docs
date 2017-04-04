@@ -37,7 +37,7 @@ translation.priority.ht:
 # Compiler Warning (level 3) C4357
 param array argument in formal argument list for delegate 'del' ignored when generating 'function'  
   
- The `ParamArray` attribute was ignored, and `function`cannot be called with variable arguments.  
+ The `ParamArray` attribute was ignored, and `function` cannot be called with variable arguments.  
   
  The following sample generates C4357:  
   

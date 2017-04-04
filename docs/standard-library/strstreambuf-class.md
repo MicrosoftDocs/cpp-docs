@@ -360,7 +360,7 @@ strstreambuf(const unsigned char* _Getptr,
  *_Allocfunc*  
  The function used to allocate buffer memory.  
   
- ` count`  
+ `count`  
  Determines the length of the buffer pointed to by `_Getptr`. If `_Getptr` is not an argument (first constructor form), a suggested allocation size for the buffers.  
   
  *_Freefunc*  
@@ -373,7 +373,7 @@ strstreambuf(const unsigned char* _Getptr,
  A buffer used for output.  
   
 ### Remarks  
- The first constructor stores a null pointer in all the pointers controlling the input buffer, the output buffer, and strstreambuf allocation. It sets the stored strstreambuf mode to make the controlled sequence modifiable and extendable. It also accepts ` count` as a suggested initial allocation size.  
+ The first constructor stores a null pointer in all the pointers controlling the input buffer, the output buffer, and strstreambuf allocation. It sets the stored strstreambuf mode to make the controlled sequence modifiable and extendable. It also accepts `count` as a suggested initial allocation size.  
   
  The second constructor behaves like the first, except that it stores _ *Allocfunc* as the pointer to the function to call to allocate storage and \_ *Freefunc* as the pointer to the function to call to free that storage.  
   
@@ -396,11 +396,11 @@ unsigned char *putptr = 0);
   
  also behave like the first, except that `_Getptr` designates the array object used to hold the controlled sequence. (Hence, it must not be a null pointer.) The number of elements *N* in the array is determined as follows:  
   
--   If ( ` count` > 0), then *N* is **count**.  
+-   If ( `count` > 0), then *N* is **count**.  
   
--   If `(`` count` == 0), then *N* is `strlen`( ( **const**`char` *) `_Getptr` ).  
+-   If `(``count` == 0), then *N* is `strlen`( ( **const**`char` *) `_Getptr` ).  
   
--   If ( ` count` < 0), then *N* is **INT_MAX**.  
+-   If ( `count` < 0), then *N* is **INT_MAX**.  
   
  If `_Putptr` is a null pointer, the function establishes just an input buffer by executing:  
   

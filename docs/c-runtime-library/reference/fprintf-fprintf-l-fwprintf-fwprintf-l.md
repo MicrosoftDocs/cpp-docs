@@ -113,7 +113,7 @@ int _fwprintf_l(
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.  
   
 ## Remarks  
- `fprintf` formats and prints a series of characters and values to the output `stream`*.* Each function `argument` (if any) is converted and output according to the corresponding format specification in `format`*.* For `fprintf`, the `format` argument has the same syntax and use that it has in `printf`.  
+ `fprintf` formats and prints a series of characters and values to the output `stream`. Each function `argument` (if any) is converted and output according to the corresponding format specification in `format`. For `fprintf`, the `format` argument has the same syntax and use that it has in `printf`.  
   
  `fwprintf` is a wide-character version of `fprintf`; in `fwprintf`, `format` is a wide-character string. These functions behave identically if the stream is opened in ANSI mode. `fprintf` does not currently support output into a UNICODE stream.  
   

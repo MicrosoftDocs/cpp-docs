@@ -30,14 +30,14 @@ operator&(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  The first of the two bitsets whose respective elements are to be combined with the bitwise `AND`.  
   
- ` right`  
+ `right`  
  The second of the two valarrays whose respective elements are to be combined with the bitwise `AND`.  
   
 ### Return Value  
- A bitset whose elements are the result of performing the `AND` operation on the corresponding elements of ` left` and ` right`.  
+ A bitset whose elements are the result of performing the `AND` operation on the corresponding elements of `left` and `right`.  
   
 ### Example  
   
@@ -80,7 +80,7 @@ basic_ostream<CharType, Traits>& operator<<(
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  An object of type **bitset\<N>** that is to be inserted into the output stream as a string.  
   
 ### Return Value  
@@ -139,7 +139,7 @@ _Istr,
  `_Istr`  
  The string that is entered into the input stream to be inserted into the bitset.  
   
- ` right`  
+ `right`  
  The bitset that is receiving the bits from the input stream.  
   
 ### Return Value  
@@ -217,14 +217,14 @@ operator^(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  The first of the two bitsets whose respective elements are to be combined with the bitwise `EXCLUSIVE-OR`.  
   
- ` right`  
+ `right`  
  The second of the two valarrays whose respective elements are to be combined with the bitwise `EXCLUSIVE-OR`.  
   
 ### Return Value  
- A bitset whose elements are the result of performing the `EXCLUSIVE-OR` operation on the corresponding elements of ` left` and ` right`.  
+ A bitset whose elements are the result of performing the `EXCLUSIVE-OR` operation on the corresponding elements of `left` and `right`.  
   
 ### Example  
   
@@ -266,14 +266,14 @@ operator|(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  The first of the two bitsets whose respective elements are to be combined with the bitwise `OR`.  
   
- ` right`  
+ `right`  
  The second of the two valarrays whose respective elements are to be combined with the bitwise `OR`.  
   
 ### Return Value  
- A bitset whose elements are the result of performing the `OR` operation on the corresponding elements of ` left` and ` right`.  
+ A bitset whose elements are the result of performing the `OR` operation on the corresponding elements of `left` and `right`.  
   
 ### Example  
   

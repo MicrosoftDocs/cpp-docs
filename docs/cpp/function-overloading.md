@@ -250,7 +250,7 @@ volatile Over&
   
 -   Sequences of conversions that can be shortened by removing intermediate conversions are not considered.  
   
- The resultant sequence of conversions, if any, is called the best matching sequence. There are several ways to convert an object of type `int` to type `unsigned long`using standard conversions (described in [Standard Conversions](../cpp/standard-conversions.md)):  
+ The resultant sequence of conversions, if any, is called the best matching sequence. There are several ways to convert an object of type `int` to type `unsigned long` using standard conversions (described in [Standard Conversions](../cpp/standard-conversions.md)):  
   
 -   Convert from `int` to `long` and then from `long` to `unsigned long`.  
   

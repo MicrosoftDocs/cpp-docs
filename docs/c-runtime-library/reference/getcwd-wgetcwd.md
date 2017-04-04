@@ -90,7 +90,7 @@ wchar_t *_wgetcwd(
  For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- The `_getcwd` function gets the full path of the current working directory for the default drive and stores it at `buffer`. The integer argument `maxlen` specifies the maximum length for the path. An error occurs if the length of the path (including the terminating null character) exceeds `maxlen`*.* The `buffer` argument can be `NULL`; a buffer of at least size `maxlen` (more only if necessary) is automatically allocated, using `malloc`, to store the path. This buffer can later be freed by calling `free` and passing it the `_getcwd` return value (a pointer to the allocated buffer).  
+ The `_getcwd` function gets the full path of the current working directory for the default drive and stores it at `buffer`. The integer argument `maxlen` specifies the maximum length for the path. An error occurs if the length of the path (including the terminating null character) exceeds `maxlen`. The `buffer` argument can be `NULL`; a buffer of at least size `maxlen` (more only if necessary) is automatically allocated, using `malloc`, to store the path. This buffer can later be freed by calling `free` and passing it the `_getcwd` return value (a pointer to the allocated buffer).  
   
  `_getcwd` returns a string that represents the path of the current working directory. If the current working directory is the root, the string ends with a backslash ( `\` ). If the current working directory is a directory other than the root, the string ends with the directory name and not with a backslash.  
   

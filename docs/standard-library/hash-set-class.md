@@ -83,13 +83,13 @@ class hash_set
   
  The hash_set should be the associative container of choice when the conditions associating the values with their keys are satisfied by the application. The elements of a hash_set are unique and serve as their own sort keys. A model for this type of structure is an ordered list of, say, words in which the words may occur only once. If multiple occurrences of the words were allowed, then a hash_multiset would be the appropriate container structure. If values need to be attached to a list of unique key words, then a hash_map would be an appropriate structure to contain this data. If instead the keys are not unique, then a hash_multimap would be the container of choice.  
   
- The hash_set orders the sequence it controls by calling a stored hash **Traits** object of type [value_compare](#hash_set__value_compare). This stored object may be accessed by calling the member function [key_comp](#hash_set__key_comp). Such a function object must behave the same as an object of class *hash_compare<Key, less\<Key> >.* Specifically, for all values ` key` of type Key, the call Trait( ` key` ) yields a distribution of values of type size_t.  
+ The hash_set orders the sequence it controls by calling a stored hash **Traits** object of type [value_compare](#hash_set__value_compare). This stored object may be accessed by calling the member function [key_comp](#hash_set__key_comp). Such a function object must behave the same as an object of class *hash_compare<Key, less\<Key> >.* Specifically, for all values `key` of type Key, the call Trait( `key` ) yields a distribution of values of type size_t.  
   
  In general, the elements need be merely less than comparable to establish this order: so that, given any two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the non-equivalent elements. On a more technical note, the comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense. A binary predicate *f*( *x*, *y*) is a function object that has two argument objects x and y and a return value of true or false. An ordering imposed on a hash_set is a strict weak ordering if the binary predicate is irreflexive, antisymmetric, and transitive and if equivalence is transitive, where two objects *x* and *y* are defined to be equivalent when both *f*( *x*, *y*) and *f*( *y*, *x*) are false. If the stronger condition of equality between keys replaces that of equivalence, then the ordering becomes total (in the sense that all the elements are ordered with respect to each other) and the keys matched will be indiscernible from each other.  
   
  The actual order of elements in the controlled sequence depends on the hash function, the ordering function, and the current size of the hash table stored in the container object. You cannot determine the current size of the hash table, so you cannot in general predict the order of elements in the controlled sequence. Inserting elements invalidates no iterators, and removing elements invalidates only those iterators that had specifically pointed at the removed elements.  
   
- The iterator provided by the hash_set class is a bidirectional iterator, but the class member functions [insert](#hash_set__insert) and [hash_set](#hash_set__hash_set) have versions that take as template parameters a weaker input iterator, whose functionality requirements are more minimal than those guaranteed by the class of bidirectional iterators. The different iterator concepts form a family related by refinements in their functionality. Each iterator concept has its own set of requirements, and the algorithms that work with them must limit their assumptions to the requirements provided by that type of iterator. It may be assumed that an input iterator may be dereferenced to refer to some object and that it may be incremented to the next iterator in the sequence. This is a minimal set of functionality, but it is enough to be able to talk meaningfully about a range of iterators [ ` first`, ` last`) in the context of the class member functions.  
+ The iterator provided by the hash_set class is a bidirectional iterator, but the class member functions [insert](#hash_set__insert) and [hash_set](#hash_set__hash_set) have versions that take as template parameters a weaker input iterator, whose functionality requirements are more minimal than those guaranteed by the class of bidirectional iterators. The different iterator concepts form a family related by refinements in their functionality. Each iterator concept has its own set of requirements, and the algorithms that work with them must limit their assumptions to the requirements provided by that type of iterator. It may be assumed that an input iterator may be dereferenced to refer to some object and that it may be incremented to the next iterator in the sequence. This is a minimal set of functionality, but it is enough to be able to talk meaningfully about a range of iterators [ `first`, `last`) in the context of the class member functions.  
   
  In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
   
@@ -498,7 +498,7 @@ size_type count(const Key& key) const;
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The key of the elements to be matched from the hash_set.  
   
 ### Return Value  
@@ -665,7 +665,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::diff
 ```  
   
 ### Remarks  
- The `difference_type` is the type returned when subtracting or incrementing through iterators of the container. The `difference_type` is typically used to represent the number of elements in the range [ ` first`, ` last`) between the iterators ` first` and ` last`, includes the element pointed to by ` first` and the range of elements up to, but not including, the element pointed to by ` last`.  
+ The `difference_type` is the type returned when subtracting or incrementing through iterators of the container. The `difference_type` is typically used to represent the number of elements in the range [ `first`, `last`) between the iterators `first` and `last`, includes the element pointed to by `first` and the range of elements up to, but not including, the element pointed to by `last`.  
   
  Note that although `difference_type` is available for all iterators that satisfy the requirements of an input iterator, which includes the class of bidirectional iterators supported by reversible containers such as set, subtraction between iterators is only supported by random-access iterators provided by a random access container, such as vector or deque.  
   
@@ -750,7 +750,7 @@ emplace(
 |||  
 |-|-|  
 |Parameter|Description|  
-|` val`|The value of an element to be inserted into the [hash_set](../standard-library/hash-set-class.md) unless the `hash_set` already contains that element or, more generally, an element whose key is equivalently ordered.|  
+|`val`|The value of an element to be inserted into the [hash_set](../standard-library/hash-set-class.md) unless the `hash_set` already contains that element or, more generally, an element whose key is equivalently ordered.|  
   
 ### Return Value  
  The `emplace` member function returns a pair whose `bool` component returns `true` if an insertion was make and `false` if the `hash_set` already contained an element whose key had an equivalent value in the ordering, and whose iterator component returns the address where a new element was inserted or where the element was already located.  
@@ -803,7 +803,7 @@ iterator emplace(
 |||  
 |-|-|  
 |Parameter|Description|  
-|` val`|The value of an element to be inserted into the [hash_set](../standard-library/hash-set-class.md) unless the `hash_set` already contains that element or, more generally, an element whose key is equivalently ordered.|  
+|`val`|The value of an element to be inserted into the [hash_set](../standard-library/hash-set-class.md) unless the `hash_set` already contains that element or, more generally, an element whose key is equivalently ordered.|  
 |`_Where`|The place to start searching for the correct point of insertion. (Insertion can occur in amortized constant time, instead of logarithmic time, if the insertion point immediately follows `_Where`.)|  
   
 ### Return Value  
@@ -966,7 +966,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key to be compared with the sort key of an element from the hash_set being searched.  
   
 ### Return Value  
@@ -1055,13 +1055,13 @@ size_type erase(const key_type& key);
  `_Where`  
  Position of the element to be removed from the hash_set.  
   
- ` first`  
+ `first`  
  Position of the first element removed from the hash_set.  
   
- ` last`  
+ `last`  
  Position just beyond the last element removed from the hash_set.  
   
- ` key`  
+ `key`  
  The key of the elements to be removed from the hash_set.  
   
 ### Return Value  
@@ -1168,7 +1168,7 @@ const_iterator find(const Key& key) const;
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key to be matched by the sort key of an element from the hash_set being searched.  
   
 ### Return Value  
@@ -1592,7 +1592,7 @@ iterator lower_bound(const Key& key);
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key to be compared with the sort key of an element from the hash_set being searched.  
   
 ### Return Value  
@@ -1707,10 +1707,10 @@ hash_set& operator=(hash_set&& right);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` right`|The [hash_set](../standard-library/hash-set-class.md) being copied into the `hash_set`.|  
+|`right`|The [hash_set](../standard-library/hash-set-class.md) being copied into the `hash_set`.|  
   
 ### Remarks  
- After erasing any existing elements in a `hash_set`, `operator=` either copies or moves the contents of ` right` into the `hash_set`.  
+ After erasing any existing elements in a `hash_set`, `operator=` either copies or moves the contents of `right` into the `hash_set`.  
   
 ### Example  
   
@@ -2083,7 +2083,7 @@ void swap(hash_set& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The argument hash_set providing the elements to be swapped with the target hash_set.  
   
 ### Remarks  
@@ -2159,7 +2159,7 @@ iterator upper_bound(const Key& key);
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key to be compared with the sort key of an element from the hash_set being searched.  
   
 ### Return Value  

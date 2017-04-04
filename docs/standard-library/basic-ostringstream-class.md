@@ -104,7 +104,7 @@ explicit basic_ostringstream(const basic_string<Elem, Tr, Alloc>& str, ios_base:
  `_Mode`  
  One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#ios_base__openmode).  
   
- ` str`  
+ `str`  
  An object of type `basic_string`.  
   
 ### Remarks  

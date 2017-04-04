@@ -104,35 +104,25 @@ template<typename InIt>
   
  The constructor:  
   
- `template<typename InIt>`  
-  
- `priority_queue(InIt first, InIt last);`  
+ `template<typename InIt> priority_queue(InIt first, InIt last);`  
   
  creates an empty wrapped container, with the default ordering predicate, then pushes the sequence `[``first``,` `last``)`. You use it to specify an initial controlled sequence from a specified eqeuence, with the specified ordering predicate.  
   
  The constructor:  
   
- `template<typename InIt>`  
-  
- `priority_queue(InIt first, InIt last,`  
-  
- `value_compare^ pred);`  
+ `template<typename InIt> priority_queue(InIt first, InIt last, value_compare^ pred);`  
   
  creates an empty wrapped container, with the ordering predicate `pred`, then pushes the sequence `[``first``,` `last``)`. You use it to specify an initial controlled sequence from a specified seqeuence, with the specified ordering predicate.  
   
  The constructor:  
   
- `template<typename InIt>`  
-  
- `priority_queue(InIt first, InIt last,`  
-  
- `value_compare^ pred, container_type% cont);`  
+ `template<typename InIt> priority_queue(InIt first, InIt last, value_compare^ pred, container_type% cont);`  
   
  creates an empty wrapped container, with the ordering predicate `pred`, then pushes all the elements of `cont` plus the sequence `[``first``,` `last``)`. You use it to specify an initial controlled sequence from an existing container and a specified seqeuence, with the specified ordering predicate.  
   
 ## Example  
   
-```  
+```cpp  
 // cliext_priority_queue_construct.cpp   
 // compile with: /clr   
 #include <cliext/queue>   

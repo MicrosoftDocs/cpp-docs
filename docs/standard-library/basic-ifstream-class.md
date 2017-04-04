@@ -256,14 +256,14 @@ basic_ifstream& operator=(basic_ifstream&& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  An rvalue reference to a `basic_ifstream` object.  
   
 ### Return Value  
  Returns `*this`.  
   
 ### Remarks  
- The member operator replaces the contents of the object by using the contents of ` right`, treated as an rvalue reference. For more information, see [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md).  
+ The member operator replaces the contents of the object by using the contents of `right`, treated as an rvalue reference. For more information, see [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md).  
   
 ##  <a name="basic_ifstream__rdbuf"></a>  basic_ifstream::rdbuf  
  Returns the address of the stored stream buffer.  
@@ -286,11 +286,11 @@ void swap(basic_ifstream& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  A reference to another stream buffer.  
   
 ### Remarks  
- The member function exchanges the contents of this object for the contents of ` right`.  
+ The member function exchanges the contents of this object for the contents of `right`.  
   
 ## See Also  
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   

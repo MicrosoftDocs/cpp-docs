@@ -533,7 +533,7 @@ size_type count(const Key& key) const;
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The key of the elements to be matched from the hash_multimap.  
   
 ### Return Value  
@@ -542,9 +542,9 @@ size_type count(const Key& key) const;
 ### Remarks  
  The member function returns the number of elements in the range  
   
- **[lower_bound (** ` key` **), upper_bound (** ` key` **) )**  
+ **[lower_bound (** `key` **), upper_bound (** `key` **) )**  
   
- which have a key value ` key`.  
+ which have a key value `key`.  
   
  In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
   
@@ -711,7 +711,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::di
 ```  
   
 ### Remarks  
- The `difference_type` is the type returned when subtracting or incrementing through iterators of the container. The `difference_type` is typically used to represent the number of elements in the range *[ first,  last)* between the iterators ` first` and ` last`, includes the element pointed to by ` first` and the range of elements up to, but not including, the element pointed to by ` last`.  
+ The `difference_type` is the type returned when subtracting or incrementing through iterators of the container. The `difference_type` is typically used to represent the number of elements in the range *[ first,  last)* between the iterators `first` and `last`, includes the element pointed to by `first` and the range of elements up to, but not including, the element pointed to by `last`.  
   
  Note that although `difference_type` is available for all iterators that satisfy the requirements of an input iterator, which includes the class of bidirectional iterators supported by reversible containers such as set, subtraction between iterators is only supported by random-access iterators provided by a random-access container such as vector.  
   
@@ -794,7 +794,7 @@ iterator emplace(ValTy&& val);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` val`|The value used to move construct an element to be inserted into the [hash_multimap](../standard-library/hash-multimap-class.md).|  
+|`val`|The value used to move construct an element to be inserted into the [hash_multimap](../standard-library/hash-multimap-class.md).|  
   
 ### Return Value  
  The `emplace` member function returns an iterator that points to the position where the new element was inserted.  
@@ -852,7 +852,7 @@ iterator emplace_hint(
 |||  
 |-|-|  
 |Parameter|Description|  
-|` val`|The value used to move construct an element to be inserted into the [hash_multimap](../standard-library/hash-multimap-class.md) unless the `hash_multimap` already contains that element (or, more generally, an element whose key is equivalently ordered).|  
+|`val`|The value used to move construct an element to be inserted into the [hash_multimap](../standard-library/hash-multimap-class.md) unless the `hash_multimap` already contains that element (or, more generally, an element whose key is equivalently ordered).|  
 |`_Where`|A hint regarding the place to start searching for the correct point of insertion.|  
   
 ### Return Value  
@@ -1030,7 +1030,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key to be compared with the sort key of an element from the hash_multimap being searched.  
   
 ### Return Value  
@@ -1123,13 +1123,13 @@ size_type erase(const key_type& key);
  `_Where`  
  Position of the element to be removed from the hash_multimap.  
   
- ` first`  
+ `first`  
  Position of the first element removed from the hash_multimap.  
   
- ` last`  
+ `last`  
  Position just beyond the last element removed from the hash_multimap.  
   
- ` key`  
+ `key`  
  The key of the elements to be removed from the hash_multimap.  
   
 ### Return Value  
@@ -1242,7 +1242,7 @@ const_iterator find(const Key& key) const;
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The key to be matched by the sort key of an element from the hash_multimap being searched.  
   
 ### Return Value  
@@ -1580,9 +1580,9 @@ key_compare key_comp() const;
 ### Remarks  
  The stored object defines the member function  
   
- **bool operator(const Key&** ` left` **, const Key&** ` right` **);**  
+ **bool operator(const Key&** `left` **, const Key&** `right` **);**  
   
- which returns **true** if ` left` precedes and is not equal to ` right` in the sort order.  
+ which returns **true** if `left` precedes and is not equal to `right` in the sort order.  
   
  In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
   
@@ -1691,7 +1691,7 @@ const_iterator lower_bound(const Key& key) const;
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key to be compared with the sort key of an element from the hash_multimap being searched.  
   
 ### Return Value  
@@ -1848,10 +1848,10 @@ hash_multimap& operator=(hash_multimap&& right);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` right`|The [hash_multimap](../standard-library/hash-multimap-class.md) being copied into the `hash_multimap`.|  
+|`right`|The [hash_multimap](../standard-library/hash-multimap-class.md) being copied into the `hash_multimap`.|  
   
 ### Remarks  
- After erasing any existing elements in a `hash_multimap`, `operator=` either copies or moves the contents of ` right` into the `hash_multimap`.  
+ After erasing any existing elements in a `hash_multimap`, `operator=` either copies or moves the contents of `right` into the `hash_multimap`.  
   
 ### Example  
   
@@ -2245,7 +2245,7 @@ void swap(hash_multimap& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The hash_multimap providing the elements to be swapped or the hash_multimap whose elements are to be exchanged with those of the hash_multimap.  
   
 ### Remarks  
@@ -2319,7 +2319,7 @@ const_iterator upper_bound(const Key& key) const;
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key to be compared with the sort key of an element from the hash_multimap being searched.  
   
 ### Return Value  
@@ -2407,9 +2407,9 @@ value_compare value_comp() const;
 ### Remarks  
  For a hash_multimap *m*, if two elements *e*1( *k*1 *, d*1) and *e*2( *k*2 *, d*2) are objects of type [value_type](#hash_multimap__value_type), where *k*1 and *k*2 are their keys of type [key_type](#hash_multimap__key_type) and `d`1 and `d`2 are their data of type [mapped_type](#hash_multimap__mapped_type), then *m.*`value_comp`( )( *e*1 *, e*2) is equivalent to *m.*`key_comp`( ) ( *k*1 *, k*2). A stored object defines the member function  
   
- **bool operator**( **value_type&**` left`, **value_type&** ` right`);  
+ **bool operator**( **value_type&**`left`, **value_type&** `right`);  
   
- which returns **true** if the key value of ` left` precedes and is not equal to the key value of ` right` in the sort order.  
+ which returns **true** if the key value of `left` precedes and is not equal to the key value of `right` in the sort order.  
   
  In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
   
@@ -2472,7 +2472,7 @@ typedef pair<const Key, Type> value_type;
 ```  
   
 ### Remarks  
- `value_type` is declared to be `pair` *\<***const**[key_type](#hash_multimap__key_type), [mapped_type](#hash_multimap__mapped_type)> and not `pair` *<*`key_type`*,* `mapped_type`*>* because the keys of an associative container may not be changed using a nonconstant iterator or reference.  
+ `value_type` is declared to be pair\<const [key_type](#hash_multimap__key_type), [mapped_type](#hash_multimap__mapped_type)> and not pair\<key_type, mapped_type> because the keys of an associative container may not be changed using a nonconstant iterator or reference.  
   
  In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
   

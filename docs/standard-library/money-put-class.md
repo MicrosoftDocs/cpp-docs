@@ -115,7 +115,7 @@ virtual iter_type do_put(
 ```  
   
 ### Parameters  
- ` next`  
+ `next`  
  An iterator addressing the first element of the inserted string.  
   
  `_Intl`  
@@ -127,16 +127,16 @@ virtual iter_type do_put(
  `_Fill`  
  A character which is used for spacing.  
   
- ` val`  
+ `val`  
  A string object to be converted.  
   
 ### Return Value  
  An output iterator the addresses the position one beyond the last element produced.  
   
 ### Remarks  
- The first virtual protected member function generates sequential elements beginning at ` next` to produce a monetary output field from the [string_type](#money_put__string_type) object ` val`. The sequence controlled by ` val` must begin with one or more decimal digits, optionally preceded by a minus sign (-), which represents the amount. The function returns an iterator designating the first element beyond the generated monetary output field.  
+ The first virtual protected member function generates sequential elements beginning at `next` to produce a monetary output field from the [string_type](#money_put__string_type) object `val`. The sequence controlled by `val` must begin with one or more decimal digits, optionally preceded by a minus sign (-), which represents the amount. The function returns an iterator designating the first element beyond the generated monetary output field.  
   
- The second virtual protected member function behaves the same as the first, except that it effectively first converts ` val` to a sequence of decimal digits, optionally preceded by a minus sign, then converts that sequence as above.  
+ The second virtual protected member function behaves the same as the first, except that it effectively first converts `val` to a sequence of decimal digits, optionally preceded by a minus sign, then converts that sequence as above.  
   
  The format of a monetary output field is determined by the [locale facet](../standard-library/locale-class.md#facet_class) fac returned by the (effective) call [use_facet](../standard-library/locale-functions.md#use_facet) < [moneypunct](../standard-library/moneypunct-class.md)\< **CharType**, **intl**> >( **iosbase**. [getloc](../standard-library/ios-base-class.md#ios_base__getloc)).  
   
@@ -201,7 +201,7 @@ explicit money_put(size_t _Refs = 0);
   
 -   1: the lifetime of the object must be manually managed.  
   
--   \> 0: these values are not defined.  
+-   \> 1: these values are not defined.  
   
  No direct examples are possible, because the destructor is protected.  
   
@@ -228,7 +228,7 @@ iter_type put(
 ```  
   
 ### Parameters  
- ` next`  
+ `next`  
  An iterator addressing the first element of the inserted string.  
   
  `_Intl`  
@@ -240,14 +240,14 @@ iter_type put(
  `_Fill`  
  A character which is used for spacing.  
   
- ` val`  
+ `val`  
  A string object to be converted.  
   
 ### Return Value  
  An output iterator the addresses the position one beyond the last element produced.  
   
 ### Remarks  
- Both member functions return [do_put](#money_put__do_put)( ` next`, `_Intl`, `_Iosbase`, `_Fill`, ` val`).  
+ Both member functions return [do_put](#money_put__do_put)( `next`, `_Intl`, `_Iosbase`, `_Fill`, `val`).  
   
 ### Example  
   

@@ -146,7 +146,7 @@ int _sprintf_l(
 ## Return Value  
  The number of characters written, or -1 if an error occurred. If `buffer` or `format` is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.  
   
- `sprintf` returns the number of bytes stored in `buffer`, not counting the terminating null character. `swprintf`returns the number of wide characters stored in `buffer`, not counting the terminating null wide character.  
+ `sprintf` returns the number of bytes stored in `buffer`, not counting the terminating null character. `swprintf` returns the number of wide characters stored in `buffer`, not counting the terminating null wide character.  
   
 ## Remarks  
  The `sprintf` function formats and stores a series of characters and values in `buffer`. Each `argument` (if any) is converted and output according to the corresponding format specification in `format`. The format consists of ordinary characters and has the same form and function as the `format` argument for [printf](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md). A null character is appended after the last character written. If copying occurs between strings that overlap, the behavior is undefined.  

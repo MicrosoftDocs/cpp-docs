@@ -153,11 +153,11 @@ slice(
  `_Len`  
  The number of elements in the subset.  
   
- ` stride`  
+ `stride`  
  The distance between elements in the subset.  
   
 ### Return Value  
- The default constructor stores zeros for the starting index, total length, and stride. The second constructor stores `_StartIndex` for the starting index, `_Len` for the total length, and ` stride` for the stride.  
+ The default constructor stores zeros for the starting index, total length, and stride. The second constructor stores `_StartIndex` for the starting index, `_Len` for the total length, and `stride` for the stride.  
   
 ### Remarks  
  The stride may be negative.  

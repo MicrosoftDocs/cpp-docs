@@ -39,10 +39,10 @@ bool operator!=(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  A complex number or object of its parameter type to be tested for inequality.  
   
- ` right`  
+ `right`  
  A complex number or object of its parameter type to be tested for inequality.  
   
 ### Return Value  
@@ -175,10 +175,10 @@ complex<Type> operator*(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  The first of two complex numbers or a number that is of the parameter type for a complex number that is to be multiplied by the * operation.  
   
- ` right`  
+ `right`  
  The second of two complex numbers or a number that is of the parameter type for a complex number that is to be multiplied by the * operation.  
   
 ### Return Value  
@@ -272,17 +272,17 @@ complex<Type> operator+(const complex<Type>& left);
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  The first of two complex numbers or a number that is of the parameter type for a complex number that is to be added by the + operation.  
   
- ` right`  
+ `right`  
  The second of two complex numbers or a number that is of the parameter type for a complex number that is to be added by the + operation.  
   
 ### Return Value  
  The complex number that results from the addition of the two numbers whose value and type are specified by the parameter inputs.  
   
 ### Remarks  
- The operation is overloaded so that simple arithmetic operations can be executed without the conversion of the data to a particular format. The unary operator returns ` left.`  
+ The operation is overloaded so that simple arithmetic operations can be executed without the conversion of the data to a particular format. The unary operator returns `left`.  
   
 ### Example  
   
@@ -408,14 +408,14 @@ complex<Type> operator-(const complex<Type>& left);
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  The first of two complex numbers or a number that is of the parameter type for a complex number that is to be subtracted by the - operation.  
   
- ` right`  
+ `right`  
  The second of two complex numbers or a number that is of the parameter type for a complex number that is to be subtracted by the - operation.  
   
 ### Return Value  
- The complex number that results from the subtraction of ` right` from ` left`, the two numbers whose values are specified by the parameter inputs.  
+ The complex number that results from the subtraction of `right` from `left`, the two numbers whose values are specified by the parameter inputs.  
   
 ### Remarks  
  The operation is overloaded so that simple arithmetic operations can be executed without the conversion of the data to a particular format.  
@@ -543,10 +543,10 @@ complex<Type> operator*(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  A complex number or a number that is of the parameter type for a complex number that is the numerator to be divided by the denominator with the / operation.  
   
- ` right`  
+ `right`  
  A complex number or a number that is of the parameter type for a complex number that is the denominator to be used to divide the numerator with the / operation.  
   
 ### Return Value  
@@ -652,7 +652,7 @@ basic_ostream<Elem, Traits>& operator<<(
  `Ostr`  
  The output stream into which the complex number is being entered.  
   
- ` right`  
+ `right`  
  The complex number to be entered into the output stream  
   
 ### Return Value  
@@ -718,10 +718,10 @@ bool operator==(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  A complex number or object of its parameter type to be tested for inequality.  
   
- ` right`  
+ `right`  
  A complex number or object of its parameter type to be tested for inequality.  
   
 ### Return Value  
@@ -847,11 +847,11 @@ basic_istream<Elem, Traits>& operator>>(
  `Istr`  
  The input stream from which the complex number is being extracted.  
   
- ` right`  
+ `right`  
  The complex number that is being extracted from the input stream.  
   
 ### Return Value  
- Reads the value of the specified complex number from `Istr` and returns it into ` right.`  
+ Reads the value of the specified complex number from `Istr` and returns it into `right`.  
   
 ### Remarks  
  The valid input formats are  

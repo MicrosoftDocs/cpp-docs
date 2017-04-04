@@ -117,18 +117,18 @@ basic_istringstream(
  `_Mode`  
  One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#ios_base__openmode).  
   
- ` str`  
+ `str`  
  An object of type `basic_string`.  
   
- ` right`  
+ `right`  
  An rvalue reference of a `basic_istringstream` object.  
   
 ### Remarks  
  The first constructor initializes the base class by calling [basic_istream](../standard-library/basic-istream-class.md)( `sb`), where `sb` is the stored object of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< `Elem`, `Tr`, `Alloc`>. It also initializes `sb` by calling `basic_stringbuf`< `Elem`, `Tr`, `Alloc`>( `_Mode` &#124; `ios_base::in`).  
   
- The second constructor initializes the base class by calling `basic_istream(sb)`. It also initializes `sb` by calling `basic_stringbuf`< `Elem`, `Tr`, `Alloc`>( ` str`, `_Mode` &#124; `ios_base::in`).  
+ The second constructor initializes the base class by calling `basic_istream(sb)`. It also initializes `sb` by calling `basic_stringbuf`< `Elem`, `Tr`, `Alloc`>( `str`, `_Mode` &#124; `ios_base::in`).  
   
- The third constructor initializes the object with the contents of ` right`, treated as an rvalue reference.  
+ The third constructor initializes the object with the contents of `right`, treated as an rvalue reference.  
   
 ##  <a name="basic_istringstream__operator_eq"></a>  basic_istringstream::operator=  
  Assigns the values to this `basic_istringstream` object from the object parameter.  
@@ -138,11 +138,11 @@ basic_istringstream& operator=(basic_istringstream&& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  An rvalue reference to a `basic_istringstream` object.  
   
 ### Remarks  
- The member operator replaces the contents of the object with the contents of ` right`, treated as an rvalue reference move assignment.  
+ The member operator replaces the contents of the object with the contents of `right`, treated as an rvalue reference move assignment.  
   
 ##  <a name="basic_istringstream__rdbuf"></a>  basic_istringstream::rdbuf  
  Returns the address of the stored stream buffer of type **pointer** to [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>.  
@@ -192,10 +192,10 @@ void swap(basic_istringstream& right);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|` right`|An `lvalue` reference to a `basic_istringstream` object.|  
+|`right`|An `lvalue` reference to a `basic_istringstream` object.|  
   
 ### Remarks  
- The member function exchanges the values of this object and the values of ` right`.  
+ The member function exchanges the values of this object and the values of `right`.  
   
 ## See Also  
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   

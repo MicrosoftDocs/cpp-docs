@@ -59,7 +59,7 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # _endthread, _endthreadex
-Terminates a thread; `_endthread` terminates a thread that's created by `_beginthread` and  `_endthreadex` terminates a thread that's created by`_beginthreadex`.  
+Terminates a thread; `_endthread` terminates a thread that's created by `_beginthread` and  `_endthreadex` terminates a thread that's created by `_beginthreadex`.  
   
 ## Syntax  
   

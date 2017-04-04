@@ -52,9 +52,9 @@ Specifies a file name for the program database (PDB) file created by [/Z7, /Zi, 
 ```  
   
 ## Remarks  
- Without **/Fd**, the PDB file name defaults to VC`x`0.pdb., where `x` is the major version of Visual C++ in use.  
+ Without **/Fd**, the PDB file name defaults to VC*x*0.pdb, where *x* is the major version of Visual C++ in use.  
   
- If you specify a path name that does not include a file name (the path ends in backslash), the compiler creates a .pdb file named VC`x`0.pdb. in the specified directory.  
+ If you specify a path name that does not include a file name (the path ends in backslash), the compiler creates a .pdb file named VC*x*0.pdb in the specified directory.  
   
  If you specify a file name that does not include an extension, the compiler uses .pdb as the extension.  
   

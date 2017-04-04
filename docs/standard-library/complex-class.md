@@ -119,11 +119,11 @@ constexpr complex(
  `_ImagVal`  
  The value of the imaginary part used to initialize the complex number being constructed.  
   
- ` complexNum`  
+ `complexNum`  
  The complex number whose real and imaginary parts are used to initialize the complex number being constructed.  
   
 ### Remarks  
- The first constructor initializes the stored real part to _ *RealVal* and the stored imaginary part to \_ *Imagval*. The second constructor initializes the stored real part to ` complexNum`**.real**() and the stored imaginary part to ` complexNum`**.imag**().  
+ The first constructor initializes the stored real part to _ *RealVal* and the stored imaginary part to \_ *Imagval*. The second constructor initializes the stored real part to `complexNum`**.real**() and the stored imaginary part to `complexNum`**.imag**().  
   
  In this implementation, if a translator does not support member template functions, the template:  
   
@@ -192,7 +192,7 @@ T imag(const T& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  A complex number whose imaginary value is to be extracted.  
   
 ### Return Value  
@@ -245,7 +245,7 @@ complex<Type>& operator*=(const complex<Type>& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  A complex number or a number that is of the same type as the parameter of the target complex number.  
   
 ### Return Value  
@@ -325,7 +325,7 @@ complex<Type>& operator+=(const complex<Type>& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  A complex number or a number that is of the same type as the parameter of the target complex number.  
   
 ### Return Value  
@@ -424,7 +424,7 @@ complex<Type>& operator-=(const complex<Type>& complexNum);
 ```  
   
 ### Parameters  
- ` complexNum`  
+ `complexNum`  
  A complex number to be subtracted from the target complex number.  
   
  `_RealPart`  
@@ -528,7 +528,7 @@ complex<Type>& operator/=(const complex<Type>& complexNum);
 ```  
   
 ### Parameters  
- ` complexNum`  
+ `complexNum`  
  A complex number to be subtracted from the target complex number.  
   
  `_RealPart`  
@@ -626,7 +626,7 @@ complex<Type>& operator=(const Type& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  A complex number or a number that is of the same type as the parameter of the target complex number.  
   
 ### Return Value  
@@ -700,7 +700,7 @@ T real(const T& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  A complex number whose real value is to be extracted.  
   
 ### Return Value  

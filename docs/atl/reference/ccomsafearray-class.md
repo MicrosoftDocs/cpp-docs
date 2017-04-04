@@ -455,7 +455,7 @@ HRESULT MultiDimGetAt(const LONG* alIndex, T& t);
   
 ### Parameters  
  `alIndex`  
- Pointer to a vector of indexes for each dimension in the array. The leftmost (most significant) dimension is `alIndex`[0] *.*  
+ Pointer to a vector of indexes for each dimension in the array. The leftmost (most significant) dimension is `alIndex[0]`.  
   
  *t*  
  A reference to the data returned.  

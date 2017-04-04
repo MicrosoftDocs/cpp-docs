@@ -25,7 +25,7 @@ typedef basic_istringstream<char> istringstream;
 ```  
   
 ### Remarks  
- The type is a synonym for template class [basic_istringstream](../standard-library/basic-istringstream-class.md), specialized for elements of type `char`*.*  
+ The type is a synonym for template class [basic_istringstream](../standard-library/basic-istringstream-class.md), specialized for elements of type `char`.  
   
 ##  <a name="ostringstream"></a>  ostringstream  
  Creates a type `basic_ostringstream` specialized on a `char` template parameter.  
@@ -35,7 +35,7 @@ typedef basic_ostringstream<char> ostringstream;
 ```  
   
 ### Remarks  
- The type is a synonym for template class [basic_ostringstream](../standard-library/basic-ostringstream-class.md), specialized for elements of type `char`*.*  
+ The type is a synonym for template class [basic_ostringstream](../standard-library/basic-ostringstream-class.md), specialized for elements of type `char`.  
   
 ##  <a name="stringbuf"></a>  stringbuf  
  Creates a type `basic_stringbuf` specialized on a `char` template parameter.  
@@ -45,7 +45,7 @@ typedef basic_stringbuf<char> stringbuf;
 ```  
   
 ### Remarks  
- The type is a synonym for template class [basic_stringbuf](../standard-library/basic-stringbuf-class.md), specialized for elements of type `char`*.*  
+ The type is a synonym for template class [basic_stringbuf](../standard-library/basic-stringbuf-class.md), specialized for elements of type `char`.  
   
 ##  <a name="stringstream"></a>  stringstream  
  Creates a type `basic_stringstream` specialized on a `char` template parameter.  
@@ -55,7 +55,7 @@ typedef basic_stringstream<char> stringstream;
 ```  
   
 ### Remarks  
- The type is a synonym for template class [basic_stringstream](../standard-library/basic-stringstream-class.md), specialized for elements of type `char`*.*  
+ The type is a synonym for template class [basic_stringstream](../standard-library/basic-stringstream-class.md), specialized for elements of type `char`.  
   
 ##  <a name="wistringstream"></a>  wistringstream  
  Creates a type `basic_istringstream` specialized on a `wchar_t` template parameter.  

@@ -52,7 +52,7 @@ class list
  The element data type to be stored in the list.  
   
  `Allocator`  
- The type that represents the stored allocator object that encapsulates details about the list's allocation and deallocation of memory. This argument is optional, and the default value is **allocator**\< *Type*> *.*  
+ The type that represents the stored allocator object that encapsulates details about the list's allocation and deallocation of memory. This argument is optional, and the default value is **allocator**\<*Type*>.  
   
 ## Remarks  
  The choice of container type should be based in general on the type of searching and inserting required by the application. Vectors should be the preferred container for managing a sequence when random access to any element is at a premium and insertions or deletions of elements are only required at the end of a sequence. The performance of the class deque container is superior when random access is needed and insertions and deletions at both the beginning and the end of a sequence are at a premium.  
@@ -589,7 +589,7 @@ typedef typename Allocator::difference_type difference_type;
 ```  
   
 ### Remarks  
- The `difference_type` is the type returned when subtracting or incrementing through iterators of the container. The `difference_type` is typically used to represent the number of elements in the range [ ` first`, ` last`) between the iterators ` first` and ` last`, includes the element pointed to by ` first` and the range of elements up to, but not including, the element pointed to by ` last`.  
+ The `difference_type` is the type returned when subtracting or incrementing through iterators of the container. The `difference_type` is typically used to represent the number of elements in the range [ `first`, `last`) between the iterators `first` and `last`, includes the element pointed to by `first` and the range of elements up to, but not including, the element pointed to by `last`.  
   
  Note that although `difference_type` is available for all iterators that satisfy the requirements of an input iterator, which includes the class of bidirectional iterators supported by reversible containers like set, subtraction between iterators is only supported by random-access iterators provided by a random-access container, such as [vector Class](../standard-library/vector-class.md).  
   
@@ -649,7 +649,7 @@ void emplace_back(iterator Where, Type&& val);
 |-|-|  
 |Parameter|Description|  
 |`Where`|The position in the target [list](../standard-library/list-class.md) where the first element is inserted.|  
-|` val`|The element added to the end of the `list`.|  
+|`val`|The element added to the end of the `list`.|  
   
 ### Remarks  
  If an exception is thrown, the `list` is left unaltered and the exception is rethrown.  
@@ -690,7 +690,7 @@ void emplace_back(Type&& val);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` val`|The element added to the end of the [list](../standard-library/list-class.md).|  
+|`val`|The element added to the end of the [list](../standard-library/list-class.md).|  
   
 ### Remarks  
  If an exception is thrown, the `list` is left unaltered and the exception is rethrown.  
@@ -731,7 +731,7 @@ void emplace_front(Type&& val);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` val`|The element added to the beginning of the [list](../standard-library/list-class.md).|  
+|`val`|The element added to the beginning of the [list](../standard-library/list-class.md).|  
   
 ### Remarks  
  If an exception is thrown, the `list` is left unaltered and the exception is rethrown.  
@@ -864,10 +864,10 @@ iterator erase(iterator first, iterator last);
  `Where`  
  Position of the element to be removed from the list.  
   
- ` first`  
+ `first`  
  Position of the first element removed from the list.  
   
- ` last`  
+ `last`  
  Position just beyond the last element removed from the list.  
   
 ### Return Value  
@@ -1301,16 +1301,16 @@ void merge(list<Type, Allocator>& right, Traits comp);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The argument list to be merged with the target list.  
   
- ` comp`  
+ `comp`  
  The comparison operator used to order the elements of the target list.  
   
 ### Remarks  
- The argument list ` right` is merged with the target list.  
+ The argument list `right` is merged with the target list.  
   
- Both argument and target lists must be ordered with the same comparison relation by which the resulting sequence is to be ordered. The default order for the first member function is ascending order. The second member function imposes the user-specified comparison operation ` comp` of class **Traits**.  
+ Both argument and target lists must be ordered with the same comparison relation by which the resulting sequence is to be ordered. The default order for the first member function is ascending order. The second member function imposes the user-specified comparison operation `comp` of class **Traits**.  
   
 ### Example  
   
@@ -1384,10 +1384,10 @@ list& operator=(list&& right);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` right`|The [list](../standard-library/list-class.md) being copied into the `list`.|  
+|`right`|The [list](../standard-library/list-class.md) being copied into the `list`.|  
   
 ### Remarks  
- After erasing any existing elements in a `list`, the operator either copies or moves the contents of ` right` into the `list`.  
+ After erasing any existing elements in a `list`, the operator either copies or moves the contents of `right` into the `list`.  
   
 ### Example  
   
@@ -1534,7 +1534,7 @@ void push_back(void push_back(Type&& val);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` val`|The element added to the end of the list.|  
+|`val`|The element added to the end of the list.|  
   
 ### Remarks  
  If an exception is thrown, the list is left unaltered and the exception is rethrown.  
@@ -1589,7 +1589,7 @@ void push_front(Type&& val);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` val`|The element added to the beginning of the list.|  
+|`val`|The element added to the beginning of the list.|  
   
 ### Remarks  
  If an exception is thrown, the list is left unaltered and the exception is rethrown.  
@@ -1742,7 +1742,7 @@ void remove(const Type& val);
 ```  
   
 ### Parameters  
- ` val`  
+ `val`  
  The value which, if held by an element, will result in that element's removal from the list.  
   
 ### Remarks  
@@ -1797,7 +1797,7 @@ void remove_if(Predicate pred)
 ```  
   
 ### Parameters  
- ` pred`  
+ `pred`  
  The unary predicate which, if satisfied by an element, results in the deletion of that element from the list.  
   
 ### Example  
@@ -1946,7 +1946,7 @@ void resize(size_type _Newsize, Type val);
  `_Newsize`  
  The new size of the list.  
   
- ` val`  
+ `val`  
  The value of the new elements to be added to the list if the new size is larger that the original size. If the value is omitted, the new elements are assigned the default value for the class.  
   
 ### Remarks  
@@ -2114,13 +2114,13 @@ void sort(Traits comp);
 ```  
   
 ### Parameters  
- ` comp`  
+ `comp`  
  The comparison operator used to order successive elements.  
   
 ### Remarks  
  The first member function puts the elements in ascending order by default.  
   
- The member template function orders the elements according to the user-specified comparison operation ` comp` of class **Traits**.  
+ The member template function orders the elements according to the user-specified comparison operation `comp` of class **Traits**.  
   
 ### Example  
   
@@ -2295,11 +2295,11 @@ friend void swap(list<Type, Allocator>& left, list<Type, Allocator>& right)
 ```  
   
 ### Parameters  
- ` right`  
- The list providing the elements to be swapped, or the list whose elements are to be exchanged with those of the list ` left`.  
+ `right`  
+ The list providing the elements to be swapped, or the list whose elements are to be exchanged with those of the list `left`.  
   
- ` left`  
- A list whose elements are to be exchanged with those of the list ` right`.  
+ `left`  
+ A list whose elements are to be exchanged with those of the list `right`.  
   
 ### Example  
   
@@ -2360,7 +2360,7 @@ void unique(BinaryPredicate pred);
 ```  
   
 ### Parameters  
- ` pred`  
+ `pred`  
  The binary predicate used to compare successive elements.  
   
 ### Remarks  
@@ -2368,7 +2368,7 @@ void unique(BinaryPredicate pred);
   
  The first member function removes every element that compares equal to its preceding element.  
   
- The second member function removes every element that satisfies the predicate function ` pred` when compared with its preceding element. You can use any of the binary function objects declared in the `<functional>`header for the argument  pred or you can create your own.  
+ The second member function removes every element that satisfies the predicate function `pred` when compared with its preceding element. You can use any of the binary function objects declared in the `<functional>`header for the argument  pred or you can create your own.  
   
 ### Example  
   

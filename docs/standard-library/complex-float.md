@@ -68,7 +68,7 @@ constexpr complex(
  `_ImagVal`  
  The value of type **float** for the imaginary part of the complex number being constructed.  
   
- ` complexNum`  
+ `complexNum`  
  The complex number of type **double** or of type `long double` whose real and imaginary parts are used to initialize a complex number of type **float** being constructed.  
   
 ## Return Value  

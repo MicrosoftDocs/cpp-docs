@@ -393,7 +393,7 @@ size_type count(const Key& key) const;
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The key of the elements to be matched from the set.  
   
 ### Return Value  
@@ -530,7 +530,7 @@ typedef typename allocator_type::difference_type difference_type;
 ```  
   
 ### Remarks  
- The `difference_type` is the type returned when subtracting or incrementing through iterators of the container. The `difference_type` is typically used to represent the number of elements in the range *[ first,  last)* between the iterators ` first` and ` last`, includes the element pointed to by ` first` and the range of elements up to, but not including, the element pointed to by ` last`.  
+ The `difference_type` is the type returned when subtracting or incrementing through iterators of the container. The `difference_type` is typically used to represent the number of elements in the range *[ first,  last)* between the iterators `first` and `last`, includes the element pointed to by `first` and the range of elements up to, but not including, the element pointed to by `last`.  
   
  Note that although `difference_type` is available for all iterators that satisfy the requirements of an input iterator, which includes the class of bidirectional iterators supported by reversible containers such as set, subtraction between iterators is only supported by random-access iterators provided by a random-access container such as vector.  
   
@@ -818,7 +818,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key to be compared with the sort key of an element from the set being searched.  
   
 ### Return Value  
@@ -1453,7 +1453,7 @@ iterator lower_bound(const Key& key);
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key to be compared with the sort key of an element from the set being searched.  
   
 ### Return Value  
@@ -1552,12 +1552,12 @@ set& operator=(set&& right);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` right`|The `set` providing new elements to be assigned to this `set`.|  
+|`right`|The `set` providing new elements to be assigned to this `set`.|  
   
 ### Remarks  
- The first version of `operator=` uses an [lvalue reference](../cpp/lvalue-reference-declarator-amp.md) for ` right`, to copy elements from ` right` to this `set`.  
+ The first version of `operator=` uses an [lvalue reference](../cpp/lvalue-reference-declarator-amp.md) for `right`, to copy elements from `right` to this `set`.  
   
- The second version uses an [rvalue reference](../cpp/rvalue-reference-declarator-amp-amp.md) for  right. It moves elements from ` right` to this `set`.  
+ The second version uses an [rvalue reference](../cpp/rvalue-reference-declarator-amp-amp.md) for  right. It moves elements from `right` to this `set`.  
   
  Any elements in this `set` before the operator function executes are discarded.  
   
@@ -2050,7 +2050,7 @@ void swap(
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The argument set providing the elements to be swapped with the target set.  
   
 ### Remarks  
@@ -2116,7 +2116,7 @@ iterator upper_bound(const Key& key);
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key to be compared with the sort key of an element from the set being searched.  
   
 ### Return Value  

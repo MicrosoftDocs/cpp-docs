@@ -50,42 +50,42 @@ printf_s( "%hu\n", u );  // Prints 65533
   
  No information is lost when a signed integer is converted to a floating value, except that some precision may be lost when a **long int** or **unsigned long int** value is converted to a **float** value.  
   
- The following table summarizes conversions from signed integral types. This table assumes that the `char` type is signed by default. If you use a compile-time option to change the default for the `char` type to unsigned, the conversions given in the [Conversions from Unsigned Integral Types](../c-language/conversions-from-unsigned-integral-types.md) table for the `unsigned char` type apply instead of the conversions in the following table, Conversions from Signed Integral Types.  
+ The following table summarizes conversions from signed integral types. This table assumes that the **char** type is signed by default. If you use a compile-time option to change the default for the **char** type to unsigned, the conversions given in the [Conversions from Unsigned Integral Types](../c-language/conversions-from-unsigned-integral-types.md) table for the **unsigned char** type apply instead of the conversions in the following table, Conversions from Signed Integral Types.  
   
 ### Conversions from Signed Integral Types  
   
 |From|To|Method|  
 |----------|--------|------------|  
-|`char`1|**short**|Sign-extend|  
-|`char`|**long**|Sign-extend|  
-|`char`|`unsigned char`|Preserve pattern; high-order bit loses function as sign bit|  
-|`char`|**unsigned short**|Sign-extend to **short**; convert **short** to **unsigned short**|  
-|`char`|`unsigned long`|Sign-extend to **long**; convert **long** to `unsigned long`|  
-|`char`|**float**|Sign-extend to **long**; convert **long** to **float**|  
-|`char`|**double**|Sign-extend to **long**; convert **long** to **double**|  
-|`char`|`long double`|Sign-extend to **long**; convert **long** to **double**|  
-|**short**|`char`|Preserve low-order byte|  
+|**char**1|**short**|Sign-extend|  
+|**char**|**long**|Sign-extend|  
+|**char**|**unsigned char**|Preserve pattern; high-order bit loses function as sign bit|  
+|**char**|**unsigned short**|Sign-extend to **short**; convert **short** to **unsigned short**|  
+|**char**|**unsigned long**|Sign-extend to **long**; convert **long** to **unsigned long**|  
+|**char**|**float**|Sign-extend to **long**; convert **long** to **float**|  
+|**char**|**double**|Sign-extend to **long**; convert **long** to **double**|  
+|**char**|**long double**|Sign-extend to **long**; convert **long** to **double**|  
+|**short**|**char**|Preserve low-order byte|  
 |**short**|**long**|Sign-extend|  
-|**short**|`unsigned char`|Preserve low-order byte|  
+|**short**|**unsigned char**|Preserve low-order byte|  
 |**short**|**unsigned short**|Preserve bit pattern; high-order bit loses function as sign bit|  
-|**short**|`unsigned long`|Sign-extend to **long**; convert **long** to `unsigned long`|  
+|**short**|**unsigned long**|Sign-extend to **long**; convert **long** to **unsigned long**|  
 |**short**|**float**|Sign-extend to **long**; convert **long** to **float**|  
 |**short**|**double**|Sign-extend to **long**; convert **long** to **double**|  
-|**short**|`long double`|Sign-extend to **long**; convert **long** to **double**|  
-|**long**|`char`|Preserve low-order byte|  
+|**short**|**long double**|Sign-extend to **long**; convert **long** to **double**|  
+|**long**|**char**|Preserve low-order byte|  
 |**long**|**short**|Preserve low-order word|  
-|**long**|`unsigned char`|Preserve low-order byte|  
+|**long**|**unsigned char**|Preserve low-order byte|  
 |**long**|**unsigned short**|Preserve low-order word|  
-|**long**|`unsigned long`|Preserve bit pattern; high-order bit loses function as sign bit|  
+|**long**|**unsigned long**|Preserve bit pattern; high-order bit loses function as sign bit|  
 |**long**|**float**|Represent as **float**. If **long** cannot be represented exactly, some precision is lost.|  
 |**long**|**double**|Represent as **double**. If **long** cannot be represented exactly as a **double**, some precision is lost.|  
-|**long**|`long double`|Represent as **double**. If **long** cannot be represented exactly as a **double**, some precision is lost.|  
+|**long**|**long double**|Represent as **double**. If **long** cannot be represented exactly as a **double**, some precision is lost.|  
   
- 1. All `char` entries assume that the `char` type is signed by default.  
+ 1. All **char** entries assume that the **char** type is signed by default.  
   
  **Microsoft Specific**  
   
- For the Microsoft 32-bit C compiler, an integer is equivalent to a **long**. Conversion of an `int` value proceeds the same as for a **long**.  
+ For the Microsoft 32-bit C compiler, an integer is equivalent to a **long**. Conversion of an **int** value proceeds the same as for a **long**.  
   
  **END Microsoft Specific**  
   

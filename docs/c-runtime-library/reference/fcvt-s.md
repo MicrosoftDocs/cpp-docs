@@ -121,7 +121,7 @@ errno_t _fcvt_s(
   
  A buffer of length `_CVTBUFSIZE` is sufficient for any floating point value.  
   
- The difference between `_ecvt_s` and `_fcvt_s` is in the interpretation of the `count` parameter. `_ecvt_s` interprets `count` as the total number of digits in the output string, and `_fcvt_s` interprets c`ount` as the number of digits after the decimal point.  
+ The difference between `_ecvt_s` and `_fcvt_s` is in the interpretation of the `count` parameter. `_ecvt_s` interprets `count` as the total number of digits in the output string, and `_fcvt_s` interprets `count` as the number of digits after the decimal point.  
   
  In C++, using this function is simplified by a template overload; the overload can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).  
   

@@ -120,13 +120,13 @@ long double fdiml(
 ## Remarks  
  Because C++ allows overloading, you can call overloads of `fdim` that take and return float and long double types. In a C program, `fdim` always takes and returns a double.  
   
- Except for the NaN handling, this function is equivalent to [fmax, fmaxf, fmaxl](../../c-runtime-library/reference/fmax-fmaxf-fmaxl.md)(`x`-`y,` 0).  
+ Except for the NaN handling, this function is equivalent to `fmax(x - y, 0)`.  
   
 ## Requirements  
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`fdim`,                `fdimf`,  `fdiml`|\<math.h>|\<cmath>|  
+|`fdim`, `fdimf`, `fdiml`|\<math.h>|\<cmath>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   

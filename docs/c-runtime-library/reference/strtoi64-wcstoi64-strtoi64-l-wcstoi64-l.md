@@ -120,7 +120,7 @@ __int64 _wcstoi64_l(
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, return codes.  
   
 ## Remarks  
- The `_strtoi64`function converts `nptr` to an `__int64`. Both functions stop reading the string `nptr` at the first character they cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to `base`. `_wcstoi64` is a wide-character version of `_strtoi64`; its `nptr` argument is a wide-character string. These functions behave identically otherwise.  
+ The `_strtoi64` function converts `nptr` to an `__int64`. Both functions stop reading the string `nptr` at the first character they cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to `base`. `_wcstoi64` is a wide-character version of `_strtoi64`; its `nptr` argument is a wide-character string. These functions behave identically otherwise.  
   
 ### Generic-Text Routine Mappings  
   
@@ -129,7 +129,7 @@ __int64 _wcstoi64_l(
 |`_tcstoi64`|`_strtoi64`|`_strtoi64`|`_wcstoi64`|  
 |`_tcstoi64_l`|`_strtoi64_l`|`_strtoi64_l`|`_wcstoi64_l`|  
   
- The locale's `LC_NUMERIC` category setting determines recognition of the radix character in `nptr`*;* for more information, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The functions without the _l suffix use the current locale; `_strtoi64_l` and`_wcstoi64_l` are identical to the corresponding function without the `_l` suffix except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
+ The locale's `LC_NUMERIC` category setting determines recognition of the radix character in `nptr`*;* for more information, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The functions without the _l suffix use the current locale; `_strtoi64_l` and `_wcstoi64_l` are identical to the corresponding function without the `_l` suffix except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
  If `endptr` is not `NULL`, a pointer to the character that stopped the scan is stored at the location pointed to by `endptr`. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of `nptr` is stored at the location pointed to by `endptr`.  
   

@@ -318,7 +318,7 @@ back_insert_iterator<Container>& operator=(typename Container::value_type&& val)
 ```  
   
 ### Parameters  
- ` val`  
+ `val`  
  The value to be inserted into the container.  
   
 ### Return Value  

@@ -107,15 +107,13 @@ int main() {
  Notice that throughout a function body, the last setting of the `warning` pragma will be in effect for the whole function.  
   
 ## Push and Pop  
- The `warning` pragma also supports the following syntax.  
+ The `warning` pragma also supports the following syntax, where `n` represents a warning level (1 through 4).  
   
- `#pragma warning(` `push` [ `,``n` ] `)`  
+ `#pragma warning( push [ , n ] )`  
   
- `#pragma warning(` `pop )`  
-  
- Where `n` represents a warning level (1 through 4).  
-  
- The pragma `warning( push )` stores the current warning state for every warning. The pragma `warning( push,` `n``)` stores the current state for every warning and sets the global warning level to `n`.  
+ `#pragma warning( pop )`  
+   
+ The pragma `warning( push )` stores the current warning state for every warning. The pragma `warning( push, n )` stores the current state for every warning and sets the global warning level to `n`.  
   
  The pragma `warning( pop )` pops the last warning state pushed onto the stack. Any changes that you made to the warning state between `push` and `pop` are undone. Consider this example:  
   

@@ -121,7 +121,7 @@ public:
   
  `unique_ptr` uniquely manages a resource. Each `unique_ptr` object stores a pointer to the object that it owns or stores a null pointer. A resource can be owned by no more than one `unique_ptr` object;  when a `unique_ptr` object that owns a particular resource is destroyed, the resource is freed. A `unique_ptr` object may be moved, but not copied;  for more information, see [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).  
   
- The resource is freed by calling a stored `deleter` object of type `Del` that knows how resources are allocated for a particular `unique_ptr`. The default `deleter``default_delete``<T>` assumes that the resource pointed to by ` ptr` is allocated with `new`, and that it can be freed by calling `delete _``Ptr`. (A partial specialization `unique_ptr<T[]>`manages array objects allocated with `new[]`, and has the default `deleter``default_delete<T[]>`, specialized to call delete[] ` ptr`.)  
+ The resource is freed by calling a stored `deleter` object of type `Del` that knows how resources are allocated for a particular `unique_ptr`. The default `deleter``default_delete``<T>` assumes that the resource pointed to by `ptr` is allocated with `new`, and that it can be freed by calling `delete _``Ptr`. (A partial specialization `unique_ptr<T[]>`manages array objects allocated with `new[]`, and has the default `deleter``default_delete<T[]>`, specialized to call delete[] `ptr`.)  
   
  The stored pointer to an owned resource, `stored_ptr` has type `pointer`. It is `Del::pointer` if defined, and `T *` if not. The stored `deleter` object `stored_deleter` occupies no space in the object if the `deleter` is stateless. Note that `Del` can be a reference type.  
   
@@ -221,7 +221,7 @@ unique_ptr& operator=(pointer-type);
  A `unique_ptr` reference used to assign the value of to the current `unique_ptr`.  
   
 ### Remarks  
- The member functions call `reset(`` right``.release())` and move ` right``.stored_deleter` to `stored_deleter`, then return `*this`.  
+ The member functions call `reset(``right``.release())` and move `right``.stored_deleter` to `stored_deleter`, then return `*this`.  
   
 ##  <a name="pointer"></a>  pointer  
  A synonym for `Del::pointer` if defined, otherwise `Type *`.  
@@ -320,7 +320,7 @@ void swap(unique_ptr& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  A `unique_ptr` used to swap pointers.  
   
 ### Remarks  
@@ -352,9 +352,9 @@ unique_ptr(unique_ptr<Ty2, Del2>&& right);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|` ptr`|A pointer to the resource to be assigned to a `unique_ptr.`|  
+|`ptr`|A pointer to the resource to be assigned to a `unique_ptr.`|  
 |`_Deleter`|A `deleter` to be assigned to a `unique_ptr`.|  
-|` right`|An `rvalue reference` to a `unique_ptr` from which `unique_ptr` fields are move assigned to the newly constructed `unique_ptr`.|  
+|`right`|An `rvalue reference` to a `unique_ptr` from which `unique_ptr` fields are move assigned to the newly constructed `unique_ptr`.|  
   
 ### Remarks  
  The first two constructors construct an object that manages no resource. The third constructor stores `ptr` in `stored_ptr`. The fourth constructor stores `ptr` in `stored_ptr` and `deleter` in `stored_deleter`.  

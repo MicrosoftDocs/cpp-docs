@@ -66,7 +66,7 @@ wint_t getwchar();
 ```  
   
 ## Return Value  
- Returns the character read. To indicate a read error or end-of-file condition, `getchar``returns EOF`, and `getwchar` returns `WEOF`. For `getchar`, use `ferror` or `feof` to check for an error or for end of file.  
+ Returns the character read. To indicate a read error or end-of-file condition, `getchar` returns `EOF`, and `getwchar` returns `WEOF`. For `getchar`, use `ferror` or `feof` to check for an error or for end of file.  
   
 ## Remarks  
  Each routine reads a single character from `stdin` and increments the associated file pointer to point to the next character. `getchar` is the same as [_fgetchar](../../c-runtime-library/reference/fgetc-fgetwc.md), but it is implemented as a function and as a macro.  

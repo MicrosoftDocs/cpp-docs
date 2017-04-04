@@ -55,15 +55,13 @@ DWORD m_dwStatus;
 ## Remarks  
  These flags specify or indicate the status of various attributes for the data source object. Contains one or more of the following `enum` values:  
   
- `enum DATASOURCE_FLAGS {`  
-  
- `DSF_MASK_INIT     = 0xFFFFF00F,`  
-  
- `DSF_PERSIST_DIRTY = 0x00000001,`  
-  
- `DSF_INITIALIZED   = 0x00000010,`  
-  
- `};`  
+```  
+enum DATASOURCE_FLAGS {  
+    DSF_MASK_INIT     = 0xFFFFF00F,  
+    DSF_PERSIST_DIRTY = 0x00000001,  
+    DSF_INITIALIZED   = 0x00000010,  
+};  
+```  
   
 |||  
 |-|-|  

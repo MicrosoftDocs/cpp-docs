@@ -98,16 +98,16 @@ unsigned char *_mbsdec_l(
   
 #### Parameters  
  `start`  
- Pointer to any character (or for `_mbsdec` and _`mbsdec_l`, the first byte of any multibyte character) in the source string; `start` must precede `current` in the source string.  
+ Pointer to any character (or for `_mbsdec` and `_mbsdec_l`, the first byte of any multibyte character) in the source string; `start` must precede `current` in the source string.  
   
  `current`  
- Pointer to any character (or for `_mbsdec` and _`mbsdec_l`, the first byte of any multibyte character) in the source string; `current` must follow `start` in the source string.  
+ Pointer to any character (or for `_mbsdec` and `_mbsdec_l`, the first byte of any multibyte character) in the source string; `current` must follow `start` in the source string.  
   
  `locale`  
  Locale to use.  
   
 ## Return Value  
- `_mbsdec`, _`mbsdec_l`, `_strdec`, and `_wcsdec` each return a pointer to the character that immediately precedes `current`; `_mbsdec` returns `NULL` if the value of `start` is greater than or equal to that of `current`. `_tcsdec` maps to one of these functions and its return value depends on the mapping.  
+ `_mbsdec`, `_mbsdec_l`, `_strdec`, and `_wcsdec` each return a pointer to the character that immediately precedes `current`; `_mbsdec` returns `NULL` if the value of `start` is greater than or equal to that of `current`. `_tcsdec` maps to one of these functions and its return value depends on the mapping.  
   
 ## Remarks  
  The `_mbsdec` and `_mbsdec_l` functions return a pointer to the first byte of the multibyte character that immediately precedes `current` in the string that contains `start`.  

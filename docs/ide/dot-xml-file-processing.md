@@ -98,7 +98,7 @@ The compiler generates an ID string for each construct in your code that is tagg
   
      For a type that is defined as `public class MyClass<T, U>`.  
   
-     For methods taking generic types as parameters, the generic type parameters are specified as numbers prefaced with back ticks (for example `0,`1).  Each number representing a zero-based array notation for the type's generic parameters.  
+     For methods taking generic types as parameters, the generic type parameters are specified as numbers prefaced with back ticks (for example \`0, \`1).  Each number representing a zero-based array notation for the type's generic parameters.  
   
 ## Example  
  The following examples show how the ID strings for a class and its members would be generated.  

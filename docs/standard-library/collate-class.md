@@ -100,7 +100,7 @@ typedef CharType char_type;
 ```  
 public:  
     explicit collate(
-    size_t_Refs = 0);
+    size_t _Refs = 0);
 
 protected:  
     collate(
@@ -122,9 +122,9 @@ protected:
   
 -   1: The lifetime of the object must be manually managed.  
   
--   \> 0: These values are not defined.  
+-   \> 1: These values are not defined.  
   
- The constructor initializes its base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)( `_Refs`).  
+ The constructor initializes its base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)(`_Refs`).  
   
 ##  <a name="collate__compare"></a>  collate::compare  
  Compares two character sequences according to their facet-specific rules for equality or inequality.  
@@ -137,16 +137,16 @@ int compare(const CharType* first1,
 ```  
   
 ### Parameters  
- ` first1`  
+ `first1`  
  Pointer to the first element in the first sequence to be compared.  
   
- ` last1`  
+ `last1`  
  Pointer to the last element in the first sequence to be compared.  
   
- ` first2`  
+ `first2`  
  Pointer to the first element in the second sequence to be compared.  
   
- ` last2`  
+ `last2`  
  Pointer to the last element in the second sequence to be compared.  
   
 ### Return Value  
@@ -161,7 +161,7 @@ int compare(const CharType* first1,
 ### Remarks  
  The first sequence compares less if it has the smaller element in the earliest unequal pair in the sequences, or, if no unequal pairs exist, but the first sequence is shorter.  
   
- The member function returns [do_compare](#collate__do_compare)( ` first1`, ` last1`, ` first2`, ` last2`).  
+ The member function returns [do_compare](#collate__do_compare)( `first1`, `last1`, `first2`, `last2`).  
   
 ### Example  
   
@@ -199,16 +199,16 @@ virtual int do_compare(const CharType* first1,
 ```  
   
 ### Parameters  
- ` first1`  
+ `first1`  
  Pointer to the first element in the first sequence to be compared.  
   
- ` last1`  
+ `last1`  
  Pointer to the last element in the first sequence to be compared.  
   
- ` first2`  
+ `first2`  
  Pointer to the first element in the second sequence to be compared.  
   
- ` last2`  
+ `last2`  
  Pointer to the last element in the second sequence to be compared.  
   
 ### Return Value  
@@ -234,10 +234,10 @@ virtual long do_hash(const CharType* first, const CharType* last) const;
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  A pointer to the first character in the sequence whose has value is to be determined.  
   
- ` last`  
+ `last`  
  A pointer to the last character in the sequence whose has value is to be determined.  
   
 ### Return Value  
@@ -257,17 +257,17 @@ virtual string_type do_transform(const CharType* first, const CharType* last) co
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  A pointer to the first character in the sequence to be converted.  
   
- ` last`  
+ `last`  
  A pointer to the last character in the sequence to be converted.  
   
 ### Return Value  
  A string that is the transformed character sequence.  
   
 ### Remarks  
- The protected virtual member function returns an object of class [string_type](#collate__string_type) whose controlled sequence is a copy of the sequence [ ` first`, ` last`). If a class derived from collate\< **CharType**> overrides [do_compare](#collate__do_compare), it should also override `do_transform` to match. When passed to `collate::compare`, two transformed strings should yield the same result that you would get from passing the untransformed strings to compare in the derived class.  
+ The protected virtual member function returns an object of class [string_type](#collate__string_type) whose controlled sequence is a copy of the sequence [ `first`, `last`). If a class derived from collate\< **CharType**> overrides [do_compare](#collate__do_compare), it should also override `do_transform` to match. When passed to `collate::compare`, two transformed strings should yield the same result that you would get from passing the untransformed strings to compare in the derived class.  
   
 ### Example  
   See the example for [transform](#collate__transform), which calls `do_transform`.  
@@ -280,17 +280,17 @@ long hash(const CharType* first, const CharType* last) const;
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  A pointer to the first character in the sequence whose has value is to be determined.  
   
- ` last`  
+ `last`  
  A pointer to the last character in the sequence whose has value is to be determined.  
   
 ### Return Value  
  A hash value of type **long** for the sequence.  
   
 ### Remarks  
- The member function returns [do_hash](#collate__do_hash)( ` first`, ` last`).  
+ The member function returns [do_hash](#collate__do_hash)( `first`, `last`).  
   
  A hash value can be useful, for example, in distributing sequences pseudo-randomly across an array of lists.  
   
@@ -343,17 +343,17 @@ string_type transform(const CharType* first, const CharType* last) const;
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  A pointer to the first character in the sequence to be converted.  
   
- ` last`  
+ `last`  
  A pointer to the last character in the sequence to be converted.  
   
 ### Return Value  
  A string that contains the transformed character sequence.  
   
 ### Remarks  
- The member function returns [do_transform](#collate__do_transform)( ` first`, ` last`).  
+ The member function returns [do_transform](#collate__do_transform)( `first`, `last`).  
   
 ### Example  
   

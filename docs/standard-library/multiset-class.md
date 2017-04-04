@@ -388,7 +388,7 @@ size_type count(const Key& key) const;
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The key of the elements to be matched from the multiset.  
   
 ### Return Value  
@@ -536,7 +536,7 @@ typedef typename allocator_type::difference_type difference_type;
 ```  
   
 ### Remarks  
- The `difference_type` is the type returned when subtracting or incrementing through iterators of the container. The `difference_type` is typically used to represent the number of elements in the range [ ` first`, ` last`) between the iterators ` first` and ` last`, includes the element pointed to by ` first` and the range of elements up to, but not including, the element pointed to by ` last`.  
+ The `difference_type` is the type returned when subtracting or incrementing through iterators of the container. The `difference_type` is typically used to represent the number of elements in the range [ `first`, `last`) between the iterators `first` and `last`, includes the element pointed to by `first` and the range of elements up to, but not including, the element pointed to by `last`.  
   
  Note that although `difference_type` is available for all iterators that satisfy the requirements of an input iterator, which includes the class of bidirectional iterators supported by reversible containers like set, subtraction between iterators is only supported by random-access iterators provided by a random-access container like vector.  
   
@@ -763,7 +763,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key to be compared with the sort key of an element from the multiset being searched.  
   
 ### Return Value  
@@ -1299,7 +1299,7 @@ iterator lower_bound(const Key& key);
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key to be compared with the sort key of an element from the multiset being searched.  
   
 ### Return Value  
@@ -1579,10 +1579,10 @@ multiset& operator=(multiset&& right);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` right`|The `multiset` from which elements are copied or moved.|  
+|`right`|The `multiset` from which elements are copied or moved.|  
   
 ### Remarks  
- `operator=` copies or moves the elements in ` right` into this `multiset`, depending on the reference type (lvalue or rvalue) used. Elements that are in this `multiset` before `operator=` executes are discarded.  
+ `operator=` copies or moves the elements in `right` into this `multiset`, depending on the reference type (lvalue or rvalue) used. Elements that are in this `multiset` before `operator=` executes are discarded.  
   
 ### Example  
   
@@ -1883,7 +1883,7 @@ void swap(
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The argument multiset providing the elements to be swapped with the target multiset.  
   
 ### Remarks  
@@ -1949,7 +1949,7 @@ iterator upper_bound(const Key& key);
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key to be compared with the sort key of an element from the multiset being searched.  
   
 ### Return Value  

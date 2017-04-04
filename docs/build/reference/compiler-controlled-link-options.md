@@ -45,7 +45,7 @@ The CL compiler automatically calls LINK unless you specify the /c option. CL pr
 |----------------------|---------------------------------|  
 |Any file name extension other than .c, .cxx, .cpp, or .def|Passes a file name as input to LINK|  
 |*filename*.def|Passes /DEF:*filename*.def|  
-|/F`number`|Passes /STACK:`number`|  
+|/F*number*|Passes /STACK:*number*|  
 |/Fd*filename*|Passes /PDB:*filename*|  
 |/Fe*filename*|Passes /OUT:*filename*|  
 |/Fm*filename*|Passes /MAP:*filename*|  

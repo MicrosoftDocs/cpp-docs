@@ -273,7 +273,7 @@ const Ty& at(const Key& key) const;
 |||  
 |-|-|  
 |Parameter|Description|  
-|` key`|The key value to find.|  
+|`key`|The key value to find.|  
   
 ### Return Value  
  A reference to the data value of the element found.  
@@ -2117,12 +2117,12 @@ unordered_map& operator=(unordered_map&& right);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` right`|The unordered_map that the operator function assigns content from.|  
+|`right`|The unordered_map that the operator function assigns content from.|  
   
 ### Remarks  
- The first version copies all of the elements from ` right` to this unordered_map.  
+ The first version copies all of the elements from `right` to this unordered_map.  
   
- The second version moves all of the elements from ` right` to this unordered_map.  
+ The second version moves all of the elements from `right` to this unordered_map.  
   
  Any elements that are in this unordered_map before `operator`= executes are discarded.  
   

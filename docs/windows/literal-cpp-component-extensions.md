@@ -54,7 +54,7 @@ A variable (data member) marked as `literal` in a **/clr** compilation is the na
 ## Common Language Runtime  
   
 ## Remarks  
- A data member marked as `literal`must be initialized when declared and the value must be a constant integral, enum, or string type. Conversion from the type of the initialization expression to the type of the static const data-member must not require a user-defined conversion.  
+ A data member marked as `literal` must be initialized when declared and the value must be a constant integral, enum, or string type. Conversion from the type of the initialization expression to the type of the static const data-member must not require a user-defined conversion.  
   
  No memory is allocated for the literal field at runtime; the compiler only inserts its value in the metadata for the class.  
   

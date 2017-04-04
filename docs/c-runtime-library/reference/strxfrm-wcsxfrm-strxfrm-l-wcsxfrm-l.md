@@ -101,7 +101,7 @@ size_t wcsxfrm_l(
  Source string.  
   
  `count`  
- Maximum number of characters to place in `strDest`*.*  
+ Maximum number of characters to place in `strDest`.  
   
  `locale`  
  The locale to use.  

@@ -44,7 +44,7 @@ translation.priority.ht:
 # Library Naming Conventions
 Object-code libraries for MFC use the following naming conventions. The library names have the form  
   
- *u*AFX`c`W`d`.LIB  
+ *u*AFX*c*W*d*.LIB  
   
  where the letters shown in italic lowercase are placeholders for specifiers whose meanings are shown in the following table:  
   
@@ -53,8 +53,8 @@ Object-code libraries for MFC use the following naming conventions. The library 
 |Specifier|Values and meanings|  
 |---------------|-------------------------|  
 |*u*|ANSI (N) or Unicode (U)|  
-|`c`|Type of program to create: C=all|  
-|`d`|Debug or Release: D=Debug; omit specifier for Release|  
+|*c*|Type of program to create: C=all|  
+|*d*|Debug or Release: D=Debug; omit specifier for Release|  
   
  The default is to build a debug Windows ANSI application for the Intel platform: NAFXCWD.Lib. All libraries listed in the following table are included prebuilt in the \atlmfc\lib directory on the Visual C++ CD-ROM.  
   

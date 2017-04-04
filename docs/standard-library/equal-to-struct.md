@@ -62,14 +62,14 @@ struct equal_to<void>
 ```  
   
 #### Parameters  
- `Type`, ` T`, ` U`  
+ `Type`, `T`, `U`  
  Any type that supports an `operator==` that takes operands of the specified or inferred types.  
   
  `Left`  
- The left operand of the equality operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type ` T`.  
+ The left operand of the equality operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `T`.  
   
  `Right`  
- The right operand of the equality operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type ` U`.  
+ The right operand of the equality operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `U`.  
   
 ## Return Value  
  The result of `Left``==``Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator==`.  

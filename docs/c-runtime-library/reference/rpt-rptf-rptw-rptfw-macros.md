@@ -157,7 +157,7 @@ _RPTFWn(
  Substitution arguments used by `format`.  
   
 ## Remarks  
- All these macros take the `reportType`and `format`parameters. In addition, they might also take up to four additional arguments, signified by the number appended to the macro name. For example, `_RPT0` and `_RPTF0` take no additional arguments, `_RPT1` and `_RPTF1` take `arg1`, `_RPT2` and `_RPTF2` take `arg1` and `arg2`, and so on.  
+ All these macros take the `reportType` and `format` parameters. In addition, they might also take up to four additional arguments, signified by the number appended to the macro name. For example, `_RPT0` and `_RPTF0` take no additional arguments, `_RPT1` and `_RPTF1` take `arg1`, `_RPT2` and `_RPTF2` take `arg1` and `arg2`, and so on.  
   
  The `_RPT` and `_RPTF` macros are similar to the [printf](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md) function, because they can be used to track an application's progress during the debugging process. However, these macros are more flexible than `printf` because they do not need to be enclosed in `#ifdef` statements to prevent them from being called in a retail build of an application. This flexibility is achieved by using the [_DEBUG](../../c-runtime-library/debug.md) macro; the `_RPT` and `_RPTF` macros are only available when the `_DEBUG` flag is defined. When `_DEBUG` is not defined, calls to these macros are removed during preprocessing.  
   

@@ -98,7 +98,7 @@ errno_t wmemmove_s(
 |any|< `count`|any|`ERANGE`|not modified|  
   
 ## Remarks  
- Copies `count` bytes of characters from `src` to `dest`*.* If some regions of the source area and the destination overlap, `memmove_s` ensures that the original source bytes in the overlapping region are copied before being overwritten.  
+ Copies `count` bytes of characters from `src` to `dest`. If some regions of the source area and the destination overlap, `memmove_s` ensures that the original source bytes in the overlapping region are copied before being overwritten.  
   
  If `dest` or if `src` is a null pointer, or if the destination string is too small, these functions invoke an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions return `EINVAL` and set `errno` to `EINVAL`.  
   

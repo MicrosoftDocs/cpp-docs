@@ -211,7 +211,7 @@ const basic_ios<Elem, Traits>& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The stream whose flags you want to copy.  
   
 ### Return Value  
@@ -521,7 +521,7 @@ void move(basic_ios&& right);
  The `ios_base` object to move values from.  
   
 ### Remarks  
- The protected member function moves all the values stored in ` right` to `*this` except the stored `stream buffer pointer`, which is unchanged in ` right` and set to a null pointer in `*this`. The stored `tie pointer` is set to a null pointer in ` right`.  
+ The protected member function moves all the values stored in `right` to `*this` except the stored `stream buffer pointer`, which is unchanged in `right` and set to a null pointer in `*this`. The stored `tie pointer` is set to a null pointer in `right`.  
   
 ##  <a name="basic_ios__narrow"></a>  basic_ios::narrow  
  Finds the equivalent char to a given `char_type`.  
@@ -796,11 +796,11 @@ basic_streambuf<Elem, Tr>* strbuf)
 ```  
   
 ### Parameters  
- ` strbuf`  
+ `strbuf`  
  The stream buffer to become the read buffer.  
   
 ### Remarks  
- The protected member function stores ` strbuf` in the `stream buffer pointer`.It does not call `clear`.  
+ The protected member function stores `strbuf` in the `stream buffer pointer`.It does not call `clear`.  
   
 ##  <a name="basic_ios__tie"></a>  basic_ios::tie  
  Ensures that one stream is processed before another stream.  
@@ -813,11 +813,11 @@ basic_ostream<Elem, Traits>* str);
 ```  
   
 ### Parameters  
- ` str`  
+ `str`  
  A stream.  
   
 ### Return Value  
- The first member function returns the stored tie pointer. The second member function stores ` str` in the tie pointer and returns its previous stored value.  
+ The first member function returns the stored tie pointer. The second member function stores `str` in the tie pointer and returns its previous stored value.  
   
 ### Remarks  
  `tie` causes two streams to be synchronized, such that, operations on one stream occur after operations on the other stream are complete.  
@@ -898,7 +898,7 @@ void swap(basic_ios&& right);
  The `basic_ios` object that is used to exchange values.  
   
 ### Remarks  
- The protected member function exchanges all the values stored in ` right` with `*this` except the stored `stream buffer pointer`.  
+ The protected member function exchanges all the values stored in `right` with `*this` except the stored `stream buffer pointer`.  
   
 ## See Also  
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   

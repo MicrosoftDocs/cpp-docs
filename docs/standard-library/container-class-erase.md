@@ -51,7 +51,7 @@ iterator erase(
 ```  
   
 ## Remarks  
- The first member function removes the element of the controlled sequence pointed to by _*Where***.** The second member function removes the elements of the controlled sequence in the range [` first`, ` last`). Both return an iterator that designates the first element remaining beyond any elements removed, or [end](../standard-library/container-class-end.md) if no such element exists.  
+ The first member function removes the element of the controlled sequence pointed to by *_Where*. The second member function removes the elements of the controlled sequence in the range [`first`, `last`). Both return an iterator that designates the first element remaining beyond any elements removed, or [end](../standard-library/container-class-end.md) if no such element exists.  
   
  The member functions throw an exception only if a copy operation throws an exception.  
   

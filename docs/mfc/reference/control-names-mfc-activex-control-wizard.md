@@ -59,11 +59,11 @@ Specify the names for the control class and property page class, the type names,
   
  By default, the control type ID appears as follows:  
   
- *ProjectName*.*ShortName*Ctrl.1  
+ *ProjectName.ShortName*Ctrl.1  
   
  If you change the short name in this dialog box, the control type ID appears as follows:  
   
- *ProjectName*.*NewShortName*Ctrl.1  
+ *ProjectName.NewShortName*Ctrl.1  
   
  **PropPage class name**  
  By default, the name of the property page class is based on the short name, with `C` as a prefix and `PropPage` as a suffix. For example, if your control's short name is `Price`, the property page class name is `CPricePropPage`. This name should match the control class name, appended with `PropPage`.  
@@ -84,11 +84,11 @@ Specify the names for the control class and property page class, the type names,
   
  By default, the property page type ID appears as follows:  
   
- *ProjectName*.*ShortName*PropPage.1  
+ *ProjectName.ShortName*PropPage.1  
   
  If you change the short name in this dialog box, the property page type ID appears as follows:  
   
- *ProjectName*.*NewShortName*PropPage.1  
+ *ProjectName.NewShortName*PropPage.1  
   
 ## See Also  
  [MFC ActiveX Control Wizard](../../mfc/reference/mfc-activex-control-wizard.md)   

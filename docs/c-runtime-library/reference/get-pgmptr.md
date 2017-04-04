@@ -54,7 +54,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # _get_pgmptr
-Gets the current value of the `_pgmptr`global variable.  
+Gets the current value of the `_pgmptr` global variable.  
   
 ## Syntax  
   
@@ -72,7 +72,7 @@ errno_t _get_pgmptr( 
  Returns zero if successful; an error code on failure. If `pValue` is `NULL`, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.  
   
 ## Remarks  
- The `_pgmptr`global variable contains the full path to the executable associated with the process. For more information, see [_pgmptr, _wpgmptr](../../c-runtime-library/pgmptr-wpgmptr.md).  
+ The `_pgmptr` global variable contains the full path to the executable associated with the process. For more information, see [_pgmptr, _wpgmptr](../../c-runtime-library/pgmptr-wpgmptr.md).  
   
 ## Requirements  
   

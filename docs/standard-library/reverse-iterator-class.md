@@ -924,7 +924,7 @@ reverse_iterator(const reverse_iterator<Type>& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The iterator that is to be adapted to a `reverse_iterator`.  
   
 ### Return Value  

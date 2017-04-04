@@ -87,7 +87,7 @@ errno_t _umask_s(
  If one of the above conditions occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `_umask_s` returns `EINVAL` and sets `errno` to `EINVAL`.  
   
 ## Remarks  
- The `_umask_s` function sets the file-permission mask of the current process to the mode specified by `mode`*.* The file-permission mask modifies the permission setting of new files created by `_creat`, `_open`, or `_sopen`. If a bit in the mask is 1, the corresponding bit in the file's requested permission value is set to 0 (disallowed). If a bit in the mask is 0, the corresponding bit is left unchanged. The permission setting for a new file is not set until the file is closed for the first time.  
+ The `_umask_s` function sets the file-permission mask of the current process to the mode specified by `mode`. The file-permission mask modifies the permission setting of new files created by `_creat`, `_open`, or `_sopen`. If a bit in the mask is 1, the corresponding bit in the file's requested permission value is set to 0 (disallowed). If a bit in the mask is 0, the corresponding bit is left unchanged. The permission setting for a new file is not set until the file is closed for the first time.  
   
  The integer expression `pmode` contains one or both of the following manifest constants, defined in SYS\STAT.H:  
   

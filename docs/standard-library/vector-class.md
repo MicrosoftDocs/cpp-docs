@@ -794,7 +794,7 @@ iterator emplace(
 |-|-|  
 |Parameter|Description|  
 |`_Where`|The position in the [vector](../standard-library/vector-class.md) where the first element is inserted.|  
-|` val`|The value of the element being inserted into the `vector`.|  
+|`val`|The value of the element being inserted into the `vector`.|  
   
 ### Return Value  
  The function returns an iterator that points to the position where the new element was inserted into the `vector`.  
@@ -970,8 +970,8 @@ iterator erase(
 |-|-|  
 |Parameter|Description|  
 |`_Where`|Position of the element to be removed from the vector.|  
-|` first`|Position of the first element removed from the vector.|  
-|` last`|Position just beyond the last element removed from the vector.|  
+|`first`|Position of the first element removed from the vector.|  
+|`last`|Position just beyond the last element removed from the vector.|  
   
 ### Return Value  
  An iterator that designates the first element remaining beyond any elements removed, or a pointer to the end of the vector if no such element exists.  
@@ -1306,10 +1306,10 @@ vector& operator=(vector&& right);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` right`|The [vector](../standard-library/vector-class.md) being copied into the `vector`.|  
+|`right`|The [vector](../standard-library/vector-class.md) being copied into the `vector`.|  
   
 ### Remarks  
- After erasing any existing elements in a `vector`, `operator=` either copies or moves the contents of ` right` into the `vector`.  
+ After erasing any existing elements in a `vector`, `operator=` either copies or moves the contents of `right` into the `vector`.  
   
 ### Example  
   
@@ -1568,7 +1568,7 @@ void reserve(size_type count);
 ```  
   
 ### Parameters  
- ` count`  
+ `count`  
  The minimum length of storage to be allocated for the vector.  
   
 ### Example  
@@ -1839,11 +1839,11 @@ friend void swap(
 ```  
   
 ### Parameters  
- ` right`  
- A vector providing the elements to be swapped, or a vector whose elements are to be exchanged with those of the vector ` left`.  
+ `right`  
+ A vector providing the elements to be swapped, or a vector whose elements are to be exchanged with those of the vector `left`.  
   
- ` left`  
- A vector whose elements are to be exchanged with those of the vector ` right`.  
+ `left`  
+ A vector whose elements are to be exchanged with those of the vector `right`.  
   
 ### Example  
   

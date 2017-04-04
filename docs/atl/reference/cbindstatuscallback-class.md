@@ -249,15 +249,13 @@ ATL_PDATAAVAILABLE m_pFunc;
 ### Remarks  
  The function pointed to by `m_pFunc` is a member of your object's class and has the following syntax:  
   
- `void Function_Name(`  
-  
- `CBindStatusCallback<T>* pbsc,`  
-  
- `BYTE* pBytes,`  
-  
- `DWORD dwSize`  
-  
- `);`  
+```  
+void Function_Name(  
+   CBindStatusCallback<T>* pbsc,  
+   BYTE* pBytes,  
+   DWORD dwSize  
+   );  
+```  
   
 ##  <a name="m_pt"></a>  CBindStatusCallback::m_pT  
  A pointer to the object requesting the asynchronous data transfer.  

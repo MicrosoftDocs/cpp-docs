@@ -156,17 +156,17 @@ basic_ostream(basic_ostream&& right);
 ```  
   
 ### Parameters  
- ` strbuf`  
+ `strbuf`  
  An object of type [basic_streambuf](../standard-library/basic-streambuf-class.md).  
   
  `_Isstd`  
  `true` if this is a standard stream; otherwise, `false`.  
   
- ` right`  
+ `right`  
  An rvalue reference to an object of type `basic_ostream`.  
   
 ### Remarks  
- The first constructor initializes the base class by calling [init](../standard-library/basic-ios-class.md#basic_ios__init)(` strbuf`). The second constructor initializes the base class by calling [basic_ios::move](../standard-library/basic-ios-class.md#basic_ios__move)`(`` right``)`.  
+ The first constructor initializes the base class by calling [init](../standard-library/basic-ios-class.md#basic_ios__init)(`strbuf`). The second constructor initializes the base class by calling [basic_ios::move](../standard-library/basic-ios-class.md#basic_ios__move)`(``right``)`.  
   
 ### Example  
   See the example for [basic_ofstream::basic_ofstream](../standard-library/basic-ofstream-class.md#basic_ofstream__basic_ofstream) to learn more about output streams.  
@@ -236,10 +236,10 @@ basic_ostream<Elem, Tr>& operator<<(const void* val);
  `Pfn`  
  A function pointer.  
   
- ` strbuf`  
+ `strbuf`  
  A pointer to a **stream_buf** object.  
   
- ` val`  
+ `val`  
  An element to write to the stream.  
   
 ### Return Value  
@@ -256,7 +256,7 @@ basic_ostream<Elem, Tr>& operator<<(const void* val);
 basic_ostream<Elem, Tr>& operator<<(basic_streambuf<Elem, Tr>* strbuf);
 ```  
   
- extracts elements from ` strbuf`, if ` strbuf` is not a null pointer, and inserts them. Extraction stops on end of file, or if an extraction throws an exception (which is rethrown). It also stops, without extracting the element in question, if an insertion fails. If the function inserts no elements, or if an extraction throws an exception, the function calls [setstate](../standard-library/basic-ios-class.md#basic_ios__setstate)(**failbit**). In any case, the function returns **\*this**.  
+ extracts elements from `strbuf`, if `strbuf` is not a null pointer, and inserts them. Extraction stops on end of file, or if an extraction throws an exception (which is rethrown). It also stops, without extracting the element in question, if an insertion fails. If the function inserts no elements, or if an extraction throws an exception, the function calls [setstate](../standard-library/basic-ios-class.md#basic_ios__setstate)(**failbit**). In any case, the function returns **\*this**.  
   
  The function  
   
@@ -264,7 +264,7 @@ basic_ostream<Elem, Tr>& operator<<(basic_streambuf<Elem, Tr>* strbuf);
 basic_ostream<Elem, Tr>& operator<<(bool val);
 ```  
   
- converts _`Val` to a Boolean field and inserts it by calling [use_facet](../standard-library/basic-filebuf-class.md#basic_filebuf__open)**<num_put\<Elem, OutIt>**`(`[getloc](../standard-library/ios-base-class.md#ios_base__getloc)). [put](#basic_ostream__put)(**OutIt**([rdbuf](../standard-library/basic-ios-class.md#basic_ios__rdbuf)), **\*this**, `getloc`, **val**). Here, **OutIt** is defined as [ostreambuf_iterator](../standard-library/ostreambuf-iterator-class.md)**\<Elem, Tr>**. The function returns **\*this**.  
+ converts `_Val` to a Boolean field and inserts it by calling [use_facet](../standard-library/basic-filebuf-class.md#basic_filebuf__open)**<num_put\<Elem, OutIt>**`(`[getloc](../standard-library/ios-base-class.md#ios_base__getloc)). [put](#basic_ostream__put)(**OutIt**([rdbuf](../standard-library/basic-ios-class.md#basic_ios__rdbuf)), **\*this**, `getloc`, **val**). Here, **OutIt** is defined as [ostreambuf_iterator](../standard-library/ostreambuf-iterator-class.md)**\<Elem, Tr>**. The function returns **\*this**.  
   
  The functions  
   
@@ -280,7 +280,7 @@ basic_ostream<Elem, Tr>& operator<<(unsigned long long val);
 basic_ostream<Elem, Tr>& operator<<(const void* val);
 ```  
   
- each convert ` val` to a numeric field and insert it by calling **use_facet<num_put\<Elem, OutIt>**(`getloc`). **put**(**OutIt**(`rdbuf`), **\*this**, `getloc`, **val**). Here, **OutIt** is defined as **ostreambuf_iterator\<Elem, Tr>**. The function returns **\*this**.  
+ each convert `val` to a numeric field and insert it by calling **use_facet<num_put\<Elem, OutIt>**(`getloc`). **put**(**OutIt**(`rdbuf`), **\*this**, `getloc`, **val**). Here, **OutIt** is defined as **ostreambuf_iterator\<Elem, Tr>**. The function returns **\*this**.  
   
  The functions  
   
@@ -350,11 +350,11 @@ basic_ostream& operator=(basic_ostream&& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  An `rvalue` reference to a `basic_ostream` object.  
   
 ### Remarks  
- The member operator calls swap `(`` right``)`.  
+ The member operator calls swap `(``right``)`.  
   
 ##  <a name="basic_ostream__put"></a>  basic_ostream::put  
  Puts a character in a stream.  
@@ -417,7 +417,7 @@ basic_ostream<Elem, Tr>& seekp(off_type _Off, ios_base::seekdir _Way);
  A reference to the basic_ostream object.  
   
 ### Remarks  
- If [fail](../standard-library/basic-ios-class.md#basic_ios__fail) is **false**, the first member function calls **newpos =** [rdbuf](../standard-library/basic-ios-class.md#basic_ios__rdbuf)**->** [pubseekpos](../standard-library/basic-streambuf-class.md#basic_streambuf__pubseekpos)(_*Pos*), for some `pos_type` temporary object **newpos**. If **fail** is false, the second function calls **newpos = rdbuf->** [pubseekoff](../standard-library/basic-streambuf-class.md#basic_streambuf__pubseekoff)(*_Off, _Way*). In either case, if (`off_type`)**newpos ==** (`off_type`)(-1) (the positioning operation fails), then the function calls **istr.**[setstate](../standard-library/basic-ios-class.md#basic_ios__setstate)(**failbit**). Both functions return **\*this**.  
+ If [fail](../standard-library/basic-ios-class.md#basic_ios__fail) is **false**, the first member function calls **newpos =** [rdbuf](../standard-library/basic-ios-class.md#basic_ios__rdbuf)**->** [pubseekpos](../standard-library/basic-streambuf-class.md#basic_streambuf__pubseekpos)(*_Pos*), for some `pos_type` temporary object **newpos**. If **fail** is false, the second function calls **newpos = rdbuf->** [pubseekoff](../standard-library/basic-streambuf-class.md#basic_streambuf__pubseekoff)(*_Off, _Way*). In either case, if (`off_type`)**newpos ==** (`off_type`)(-1) (the positioning operation fails), then the function calls **istr.**[setstate](../standard-library/basic-ios-class.md#basic_ios__setstate)(**failbit**). Both functions return **\*this**.  
   
 ### Example  
   
@@ -472,11 +472,11 @@ void swap(basic_ostream& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  A reference to a `basic_ostream` object.  
   
 ### Remarks  
- The member function calls [basic_ios::swap](../standard-library/basic-ios-class.md#basic_ios__swap)`(`` right``)` to exchange the contents of this object for the contents of ` right`.  
+ The member function calls [basic_ios::swap](../standard-library/basic-ios-class.md#basic_ios__swap)`(``right``)` to exchange the contents of this object for the contents of `right`.  
   
 ##  <a name="basic_ostream__tellp"></a>  basic_ostream::tellp  
  Report position in output stream.  
@@ -502,17 +502,17 @@ basic_ostream<Elem, Tr>& write(const char_type* str, streamsize count);
 ```  
   
 ### Parameters  
- ` count`  
+ `count`  
  Count of characters to put into the stream.  
   
- ` str`  
+ `str`  
  Characters to put into the stream.  
   
 ### Return Value  
  A reference to the basic_ostream object.  
   
 ### Remarks  
- The [unformatted output function](../standard-library/basic-ostream-class.md) inserts the sequence of ` count` elements beginning at ` str`.  
+ The [unformatted output function](../standard-library/basic-ostream-class.md) inserts the sequence of `count` elements beginning at `str`.  
   
 ### Example  
   See [streamsize](../standard-library/ios-typedefs.md#streamsize) for an example using `write`.  

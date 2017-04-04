@@ -221,7 +221,7 @@ This walkthrough demonstrates how to modify an existing MFC application to use t
   
     3.  Click the **Print** button and then click **Insert** to add a button. Change **Caption** to `&Quick Print`, **ID** to `ID_FILE_PRINT_DIRECT`, **Image** to `7`, and **Image Large** to `7`.  
   
-    4.  Click the **Print** button and then click **Insert** to add another button. Change **Caption** to `Print Pre&view`, **ID** to `ID_FILE_PRINT_PREVIEW`, **Image** to `6`, and **Image Large** to`6`.  
+    4.  Click the **Print** button and then click **Insert** to add another button. Change **Caption** to `Print Pre&view`, **ID** to `ID_FILE_PRINT_PREVIEW`, **Image** to `6`, and **Image Large** to `6`.  
   
     5.  You have now modified the **Main Items**. Click **Close** to exit the **Items Editor**.  
   
@@ -229,7 +229,7 @@ This walkthrough demonstrates how to modify an existing MFC application to use t
   
     1.  In the **Properties** window, click the ellipsis (**...**) next to **Button** to open the **Items Editor**.  
   
-    2.  Click **Add** to add a button. Change **Caption** to `E&xit`, **ID** to `ID_APP_EXIT`, **Image** to`8`.  
+    2.  Click **Add** to add a button. Change **Caption** to `E&xit`, **ID** to `ID_APP_EXIT`, **Image** to `8`.  
   
  [[Sections](#top)]  
   

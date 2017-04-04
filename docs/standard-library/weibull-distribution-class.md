@@ -254,7 +254,7 @@ The `param_type` structure used to construct the distribution.
 ### Remarks  
  **Precondition:** `0.0 < a` and `0.0 < b`  
   
- The first constructor constructs an object whose stored `a`value holds the value *a* and whose stored `b` value holds the value *b*.  
+ The first constructor constructs an object whose stored `a` value holds the value *a* and whose stored `b` value holds the value *b*.  
   
  The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   

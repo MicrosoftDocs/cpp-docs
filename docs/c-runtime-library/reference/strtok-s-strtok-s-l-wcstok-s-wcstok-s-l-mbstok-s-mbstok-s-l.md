@@ -147,7 +147,7 @@ _locale_tlocale
  If `strToken` is `NULL` but context is a pointer to a valid context pointer, there is no error.  
   
 ## Remarks  
- The `strtok_s` function finds the next token in `strToken`. The set of characters in `strDelimit` specifies possible delimiters of the token to be found in `strToken` on the current call. `wcstok_s` and `_mbstok_s`are wide-character and multibyte-character versions of `strtok_s`. The arguments and return values of `wcstok_s` and `_wcstok_s_l` are wide-character strings; those of `_mbstok_s` and `_mbstok_s_l` are multibyte-character strings. These three functions behave identically otherwise.  
+ The `strtok_s` function finds the next token in `strToken`. The set of characters in `strDelimit` specifies possible delimiters of the token to be found in `strToken` on the current call. `wcstok_s` and `_mbstok_s` are wide-character and multibyte-character versions of `strtok_s`. The arguments and return values of `wcstok_s` and `_wcstok_s_l` are wide-character strings; those of `_mbstok_s` and `_mbstok_s_l` are multibyte-character strings. These three functions behave identically otherwise.  
   
  This function validates its parameters. If an error condition occurs, as in the Error Conditions table, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `NULL`.  
   
@@ -170,8 +170,8 @@ _locale_tlocale
 |-------------|---------------------|  
 |`strtok_s`|\<string.h>|  
 |`_strtok_s_l`|\<string.h>|  
-|`wcstok_s,`<br /><br /> `_wcstok_s_l`|\<string.h> or \<wchar.h>|  
-|`_mbstok_s,`<br /><br /> `_mbstok_s_l`|\<mbstring.h>|  
+|`wcstok_s`,<br /><br /> `_wcstok_s_l`|\<string.h> or \<wchar.h>|  
+|`_mbstok_s`,<br /><br /> `_mbstok_s_l`|\<mbstring.h>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   

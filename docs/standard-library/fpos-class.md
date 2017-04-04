@@ -120,14 +120,14 @@ bool operator!=(const fpos<Statetype>& right) const;
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The file-position indicator against which to compare.  
   
 ### Return Value  
  **true** if the file-position indicators are not equal, otherwise **false**.  
   
 ### Remarks  
- The member function returns **!**( **\*this ==** ` right`).  
+ The member function returns `!(*this == right)`.  
   
 ### Example  
   
@@ -231,14 +231,14 @@ fpos<Statetype> operator-(streamoff _Off) const;
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  File position.  
   
  `_Off`  
  Stream offset.  
   
 ### Return Value  
- The first member function returns **(streamoff)\*this - (streamoff)**` right`. The second member function returns **fpos(\*this) -=** `_Off`.  
+ The first member function returns `(streamoff)*this - (streamoff) right`. The second member function returns `fpos(*this) -= _Off`.  
   
 ### Example  
   See [operator!=](#fpos__operator_neq) for a sample of using `operator-`.  
@@ -255,7 +255,7 @@ fpos<Statetype>& operator-=(streamoff _Off);
  Stream offset.  
   
 ### Return Value  
- The member function returns **fpos(\*this) -=** `_Off`.  
+ The member function returns `fpos(*this) -= _Off`.  
   
 ### Remarks  
  For positioning within a file, the result is generally valid only for binary streams that do not have a state-dependent encoding.  
@@ -271,14 +271,14 @@ bool operator==(const fpos<Statetype>& right) const;
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The file-position indicator against which to compare.  
   
 ### Return Value  
  **true** if the file-position indicators are equal; otherwise **false**.  
   
 ### Remarks  
- The member function returns **(streamoff)\*this == (streamoff)**` right`.  
+ The member function returns `(streamoff)*this == (streamoff)right`.  
   
 ### Example  
   See [operator!=](#fpos__operator_neq) for a sample of using `operator+=`.  

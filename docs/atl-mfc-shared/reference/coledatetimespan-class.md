@@ -347,15 +347,13 @@ DateTimeSpanStatus GetStatus() const throw();
 ### Remarks  
  The return value is defined by the **DateTimeSpanStatus** enumerated type, which is defined within the `COleDateTimeSpan` class.  
   
- `enum DateTimeSpanStatus{`  
-  
- `valid = 0,`  
-  
- `invalid = 1,`  
-  
- `null = 2,`  
-  
- `};`  
+```  
+enum DateTimeSpanStatus{  
+   valid = 0,  
+   invalid = 1,  
+   null = 2,  
+};  
+```  
   
  For a brief description of these status values, see the following list:  
   
@@ -526,15 +524,14 @@ DateTimeSpanStatus m_status;
 ```  
   
 ### Remarks  
- `enum DateTimeSpanStatus{`  
   
- `valid = 0,`  
-  
- `invalid = 1,`  
-  
- `null = 2,`  
-  
- `};`  
+```  
+enum DateTimeSpanStatus{  
+   valid = 0,  
+   invalid = 1,  
+   null = 2,  
+   };  
+```  
   
  For a brief description of these status values, see the following list:  
   
@@ -665,15 +662,13 @@ void SetStatus(DateTimeSpanStatus status) throw();
 ### Remarks  
  The *Status* parameter value is defined by the **DateTimeSpanStatus** enumerated type, which is defined within the `COleDateTimeSpan` class.  
   
- `enum DateTimeSpanStatus{`  
-  
- `valid = 0,`  
-  
- `invalid = 1,`  
-  
- `null = 2,`  
-  
- `};`  
+```  
+enum DateTimeSpanStatus{  
+   valid = 0,  
+   invalid = 1,  
+   null = 2,  
+   };  
+```  
   
  For a brief description of these status values, see the following list:  
   

@@ -341,7 +341,7 @@ void SetRange32(
 ```  
   
 ### Parameters  
- `nLower`and `nUpper`  
+ `nLower` and `nUpper`  
  Upper and lower limits for the control. For `SetRange`, neither limit can be greater than **UD_MAXVAL** or less than **UD_MINVAL**; in addition, the difference between the two limits cannot exceed **UD_MAXVAL**. `SetRange32` places no restrictions on the limits; use any integers.  
   
 ### Remarks  

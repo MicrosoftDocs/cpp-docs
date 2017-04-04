@@ -250,17 +250,13 @@ UINT GetSelectionType() const;
 ### Remarks  
  The return type values are specified by the **Selection** enumeration type declared in the `COleInsertDialog` class.  
   
- `enum Selection`  
-  
- `{`  
-  
- `createNewItem,`  
-  
- `insertFromFile,`  
-  
- `linkToFile`  
-  
- `};`  
+```  
+enum Selection {
+    createNewItem,
+    insertFromFile,
+    linkToFile
+    };  
+```  
   
  Brief descriptions of these values follow:  
   

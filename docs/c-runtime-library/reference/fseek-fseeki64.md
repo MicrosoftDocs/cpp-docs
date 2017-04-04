@@ -87,7 +87,7 @@ int _fseeki64(
  If successful, `fseek` and `_fseeki64` returns 0. Otherwise, it returns a nonzero value. On devices incapable of seeking, the return value is undefined. If `stream` is a null pointer, or if `origin` is not one of allowed values described below, `fseek` and `_fseeki64` invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1.  
   
 ## Remarks  
- The `fseek` and `_fseeki64` functions moves the file pointer (if any) associated with `stream` to a new location that is `offset` bytes from `origin`*.* The next operation on the stream takes place at the new location. On a stream open for update, the next operation can be either a read or a write. The argument origin must be one of the following constants, defined in STDIO.H:  
+ The `fseek` and `_fseeki64` functions moves the file pointer (if any) associated with `stream` to a new location that is `offset` bytes from `origin`. The next operation on the stream takes place at the new location. On a stream open for update, the next operation can be either a read or a write. The argument origin must be one of the following constants, defined in STDIO.H:  
   
  `SEEK_CUR`  
  Current position of file pointer.  
@@ -98,17 +98,17 @@ int _fseeki64(
  `SEEK_SET`  
  Beginning of file.  
   
- You can use `fseek` and `_fseeki64` to reposition the pointer anywhere in a file. The pointer can also be positioned beyond the end of the file. `fseek` and `_fseeki64`clears the end-of-file indicator and negates the effect of any prior `ungetc` calls against `stream`.  
+ You can use `fseek` and `_fseeki64` to reposition the pointer anywhere in a file. The pointer can also be positioned beyond the end of the file. `fseek` and `_fseeki64` clears the end-of-file indicator and negates the effect of any prior `ungetc` calls against `stream`.  
   
  When a file is opened for appending data, the current file position is determined by the last I/O operation, not by where the next write would occur. If no I/O operation has yet occurred on a file opened for appending, the file position is the start of the file.  
   
- For streams opened in text mode, `fseek` and `_fseeki64`have limited use, because carriage return-linefeed translations can cause `fseek` and `_fseeki64`to produce unexpected results. The only `fseek` and `_fseeki64`operations guaranteed to work on streams opened in text mode are:  
+ For streams opened in text mode, `fseek` and `_fseeki64` have limited use, because carriage return-linefeed translations can cause `fseek` and `_fseeki64` to produce unexpected results. The only `fseek` and `_fseeki64` operations guaranteed to work on streams opened in text mode are:  
   
 -   Seeking with an offset of 0 relative to any of the origin values.  
   
--   Seeking from the beginning of the file with an offset value returned from a call to `ftell` when using `fseek`or `_ftelli64`when using`_fseeki64`.  
+-   Seeking from the beginning of the file with an offset value returned from a call to `ftell` when using `fseek` or `_ftelli64` when using `_fseeki64`.  
   
- Also in text mode, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading/writing, `fopen` and all related routines check for a CTRL+Z at the end of the file and remove it if possible. This is done because using the combination of `fseek` and `ftell`or`_fseeki64` and `_ftelli64`, to move within a file that ends with a CTRL+Z may cause `fseek` or `_fseeki64` to behave improperly near the end of the file.  
+ Also in text mode, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading/writing, `fopen` and all related routines check for a CTRL+Z at the end of the file and remove it if possible. This is done because using the combination of `fseek` and `ftell` or `_fseeki64` and `_ftelli64`, to move within a file that ends with a CTRL+Z may cause `fseek` or `_fseeki64` to behave improperly near the end of the file.  
   
  When the CRT opens a file that begins with a Byte Order Mark (BOM), the file pointer is positioned after the BOM (that is, at the start of the file's actual content). If you have to `fseek` to the beginning of the file, use `ftell` to get the initial position and `fseek` to it rather than to position 0.  
   

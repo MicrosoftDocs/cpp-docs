@@ -62,7 +62,7 @@ A snapshot is a recordset that reflects a static view of the data as it existed 
 > [!NOTE]
 >  If you want to use both snapshots and dynasets, you must base them on two different `CDatabase` objects (two different connections).  
   
- For more information about the properties snapshots share with all recordsets, see [Recordset (ODBC)](../../data/odbc/recordset-odbc.md). For more information about ODBC and snapshots*,* including the ODBC Cursor Library, see [ODBC](../../data/odbc/odbc-basics.md).  
+ For more information about the properties snapshots share with all recordsets, see [Recordset (ODBC)](../../data/odbc/recordset-odbc.md). For more information about ODBC and snapshots, including the ODBC Cursor Library, see [ODBC](../../data/odbc/odbc-basics.md).  
   
 ## See Also  
  [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

@@ -49,8 +49,8 @@ Creates a listing file containing assembler code.
   
 ## Syntax  
   
-`/FA`[`c`\][`s`\][`u`]  
-`/Fa`_pathname_  
+> **/FA**[**c**\][**s**\][**u**]  
+> **/Fa**_pathname_  
   
 ## Remarks  
 The `/FA` compiler option generates an assembler listing file for each translation unit in the compilation, which generally corresponds to a C or C++ source file. By default, only assembler is included in the listing file, which is encoded as ANSI. The optional `c`, `s`, and `u` arguments to `/FA` control whether machine code or source code are output together with the assembler listing, and whether the listing is encoded as UTF-8.  

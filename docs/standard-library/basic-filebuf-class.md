@@ -418,14 +418,14 @@ basic_filebuf& operator=(basic_filebuf&& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  An rvalue reference to a [basic_filebuf](../standard-library/basic-filebuf-class.md) object.  
   
 ### Return Value  
  Returns *this.  
   
 ### Remarks  
- The member operator replaces the contents of the object by using the contents of ` right`, treated as an rvalue reference. For more information, see [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).  
+ The member operator replaces the contents of the object by using the contents of `right`, treated as an rvalue reference. For more information, see [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).  
   
 ##  <a name="basic_filebuf__overflow"></a>  basic_filebuf::overflow  
  Called when a new character is inserted into a full buffer.  
@@ -471,7 +471,7 @@ virtual int_type pbackfail(int_type _Meta = traits_type::eof);
   
 -   If the function can make a `putback` position available, it can do so, set the next pointer to point at that position, and store **ch** in that position.  
   
--   If the function can push back an element onto the input stream, it can do so, such as by calling `ungetc` for an element of type `char`*.*  
+-   If the function can push back an element onto the input stream, it can do so, such as by calling `ungetc` for an element of type `char`.  
   
 ##  <a name="basic_filebuf__pos_type"></a>  basic_filebuf::pos_type  
  Makes this type within basic_filebuf's scope equivalent to the type of the same name in the **Tr** scope.  
@@ -546,14 +546,14 @@ virtual basic_streambuf<Elem, Tr> *setbuf(
  `_Buffer`  
  Pointer to a buffer.  
   
- ` count`  
+ `count`  
  Size of the buffer.  
   
 ### Return Value  
  The protected member function returns zero if the file pointer `fp` is a null pointer.  
   
 ### Remarks  
- `setbuf` calls `setvbuf`( **fp**, ( `char` \*) `_Buffer`, `_IOFBF`, ` count` \* `sizeof` ( **Elem**) ) to offer the array of ` count` elements beginning at _ *Buffer* as a buffer for the stream. If that function returns a nonzero value, the function returns a null pointer. Otherwise, it returns **this** to signal success.  
+ `setbuf` calls `setvbuf`( **fp**, ( `char` \*) `_Buffer`, `_IOFBF`, `count` \* `sizeof` ( **Elem**) ) to offer the array of `count` elements beginning at _ *Buffer* as a buffer for the stream. If that function returns a nonzero value, the function returns a null pointer. Otherwise, it returns **this** to signal success.  
   
 ##  <a name="basic_filebuf__swap"></a>  basic_filebuf::swap  
  Exchanges the contents of this `basic_filebuf` for the contents of the provided `basic_filebuf`.  
@@ -563,7 +563,7 @@ void swap(basic_filebuf& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  An `lvalue` reference to another `basic_filebuf`.  
   
 ##  <a name="basic_filebuf__sync"></a>  basic_filebuf::sync  
@@ -598,7 +598,7 @@ virtual int_type underflow();
   
 -   If a read position is available, it takes **ch** as the element stored in the read position and advances the next pointer for the input buffer.  
   
--   It can read one or more elements of type `char`*,* as if by successive calls of the form `fgetc`( **fp**), and convert them to an element **ch** of type **Elem** by using the file conversion facet fac to call **fac.in** as needed. If any read or conversion fails, the function does not succeed.  
+-   It can read one or more elements of type `char`, as if by successive calls of the form `fgetc`(**fp**), and convert them to an element **ch** of type **Elem** by using the file conversion facet fac to call **fac.in** as needed. If any read or conversion fails, the function does not succeed.  
   
 ## See Also  
  [\<fstream>](../standard-library/fstream.md)   

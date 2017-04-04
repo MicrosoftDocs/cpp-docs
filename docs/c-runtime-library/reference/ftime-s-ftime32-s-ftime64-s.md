@@ -82,13 +82,13 @@ errno_t _ftime64_s(
   
 #### Parameters  
  `timeptr`  
- Pointer to a `_timeb,``__timeb32`, or `__timeb64` structure.  
+ Pointer to a `_timeb`, `__timeb32`, or `__timeb64` structure.  
   
 ## Return Value  
  Zero if successful, an error code on failure. If `timeptr` is `NULL`, the return value is `EINVAL`.  
   
 ## Remarks  
- The `_ftime_s` function gets the current local time and stores it in the structure pointed to by `timeptr`*.* The `_timeb,``__timeb32`,and`__timeb64` structures are defined in SYS\Timeb.h. They contain four fields, which are listed in the following table.  
+ The `_ftime_s` function gets the current local time and stores it in the structure pointed to by `timeptr`. The `_timeb`, `__timeb32`, and `__timeb64` structures are defined in SYS\Timeb.h. They contain four fields, which are listed in the following table.  
   
  `dstflag`  
  Nonzero if daylight savings time is currently in effect for the local time zone. (See [_tzset](../../c-runtime-library/reference/tzset.md) for an explanation of how daylight savings time is determined.)  
@@ -104,7 +104,7 @@ errno_t _ftime64_s(
   
  `_ftime64_s`, which uses the `__timeb64` structure, allows file-creation dates to be expressed up through 23:59:59, December 31, 3000, UTC; whereas `_ftime32_s` only represents dates through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for all these functions.  
   
- `_ftime_s` is equivalent to `_ftime64_s` and `_timeb` contains a 64-bit time. This is true unless _`USE_32BIT_TIME_T` is defined, in which case the old behavior is in effect; \_`ftime_s` uses a 32-bit time and `_timeb` contains a 32-bit time.  
+ `_ftime_s` is equivalent to `_ftime64_s` and `_timeb` contains a 64-bit time. This is true unless `_USE_32BIT_TIME_T` is defined, in which case the old behavior is in effect; `_ftime_s` uses a 32-bit time and `_timeb` contains a 32-bit time.  
   
  `_ftime_s` validates its parameters. If passed a null pointer as `timeptr`, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets `errno` to `EINVAL`.  
   

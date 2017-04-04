@@ -101,7 +101,7 @@ int _wputenv(
   
  Do not change an environment entry directly: instead, use `_putenv` or `_wputenv` to change it. In particular, direct freeing elements of the `_environ[]` global array might lead to invalid memory being addressed.  
   
- `getenv` and `_putenv` use the global variable `_environ` to access the environment table; `_wgetenv` and `_wputenv` use `_wenviron`. `_putenv` and `_wputenv` might change the value of `_environ` and `_wenviron`, thus invalidating the `_envp` argument to `main` and the _`wenvp` argument to `wmain`. Therefore, it is safer to use `_environ` or `_wenviron` to access the environment information. For more information about the relation of `_putenv` and `_wputenv` to global variables, see [_environ, _wenviron](../../c-runtime-library/environ-wenviron.md).  
+ `getenv` and `_putenv` use the global variable `_environ` to access the environment table; `_wgetenv` and `_wputenv` use `_wenviron`. `_putenv` and `_wputenv` might change the value of `_environ` and `_wenviron`, thus invalidating the `_envp` argument to `main` and the `_wenvp` argument to `wmain`. Therefore, it is safer to use `_environ` or `_wenviron` to access the environment information. For more information about the relation of `_putenv` and `_wputenv` to global variables, see [_environ, _wenviron](../../c-runtime-library/environ-wenviron.md).  
   
 > [!NOTE]
 >  The `_putenv` and `_getenv` families of functions are not thread-safe. `_getenv` could return a string pointer while `_putenv` is modifying the string, causing random failures. Make sure that calls to these functions are synchronized.  

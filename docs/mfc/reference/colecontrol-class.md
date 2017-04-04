@@ -1225,21 +1225,16 @@ virtual DWORD GetControlFlags();
 ### Return Value  
  An ORed combination of the flags in the ControlFlags enumeration:  
   
- `enum ControlFlags {`  
-  
- `fastBeginPaint = 0x0001,`  
-  
- `clipPaintDC = 0x0002,`  
-  
- `pointerInactive = 0x0004,`  
-  
- `noFlickerActivate = 0x0008,`  
-  
- `windowlessActivate = 0x0010,`  
-  
- `canOptimizeDraw = 0x0020,`  
-  
- `};`  
+```  
+enum ControlFlags {
+    fastBeginPaint = 0x0001,
+    clipPaintDC = 0x0002,
+    pointerInactive = 0x0004,
+    noFlickerActivate = 0x0008,
+    windowlessActivate = 0x0010,
+    canOptimizeDraw = 0x0020,
+    };  
+```  
   
 ### Remarks  
  By default, `GetControlFlags` returns `fastBeginPaint | clipPaintDC`.  

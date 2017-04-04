@@ -68,14 +68,14 @@ public:
 };
 ```  
 #### Parameters  
- ` right`  
+ `right`  
  The `auto_ptr` from which to get an existing resource.  
   
- ` ptr`  
+ `ptr`  
  The pointer specified to replace the stored pointer.  
   
 ## Remarks  
- The template class describes a smart pointer, called an `auto_ptr,` to an allocated object. The pointer must be either null or designate an object allocated by `new`. The `auto_ptr` transfers ownership if its stored value is assigned to another object. (It replaces the stored value after a transfer with a null pointer.) The destructor for `auto_ptr<Type>` deletes the allocated object. The `auto_ptr<Type>` ensures that an allocated object is automatically deleted when control leaves a block, even through a thrown exception. You should not construct two `auto_ptr<Type>` objects that own the same object.  
+ The template class describes a smart pointer, called an `auto_ptr`, to an allocated object. The pointer must be either null or designate an object allocated by `new`. The `auto_ptr` transfers ownership if its stored value is assigned to another object. (It replaces the stored value after a transfer with a null pointer.) The destructor for `auto_ptr<Type>` deletes the allocated object. The `auto_ptr<Type>` ensures that an allocated object is automatically deleted when control leaves a block, even through a thrown exception. You should not construct two `auto_ptr<Type>` objects that own the same object.  
   
  You can pass an `auto_ptr<Type>` object by value as an argument to a function call. An `auto_ptr` cannot be an element of any Standard Library container. You cannot reliably manage a sequence of `auto_ptr<Type>` objects with a C++ Standard Library container.  
   
@@ -131,16 +131,16 @@ auto _ptr(auto _ptr<Other>& right) throw();
 ```  
   
 ### Parameters  
- ` ptr`  
+ `ptr`  
  The pointer to the object that `auto_ptr` encapsulates.  
   
- ` right`  
+ `right`  
  The `auto_ptr` object to be copied by the constructor.  
   
 ### Remarks  
- The first constructor stores ` ptr` in **myptr**, the stored pointer to the allocated object. The second constructor transfers ownership of the pointer stored in ` right`, by storing ` right`. [release](#auto_ptr__release) in **myptr**.  
+ The first constructor stores `ptr` in **myptr**, the stored pointer to the allocated object. The second constructor transfers ownership of the pointer stored in `right`, by storing `right`. [release](#auto_ptr__release) in **myptr**.  
   
- The third constructor behaves the same as the second, except that it stores **right**. `ref`. **release** in **myptr**, where `ref` is the reference stored in ` right`.  
+ The third constructor behaves the same as the second, except that it stores **right**. `ref`. **release** in **myptr**, where `ref` is the reference stored in `right`.  
   
  The template constructor behaves the same as the second constructor, provided that a pointer to **Other** can be implicitly converted to a pointer to **Type**.  
   
@@ -279,7 +279,7 @@ auto_ptr<Type>& operator=(auto_ptr_ref<Type> right) throw();
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  An object of type `auto_ptr`.  
   
 ### Return Value  
@@ -477,7 +477,7 @@ void reset(Type* ptr = 0);
 ```  
   
 ### Parameters  
- ` ptr`  
+ `ptr`  
  The pointer specified to replace the stored pointer **myptr**.  
   
 ### Example  

@@ -302,16 +302,16 @@ static char_type *_Copy_s(
 ```  
   
 ### Parameters  
- ` dest`  
+ `dest`  
  The string or character array targeted to receive the copied sequence of characters.  
   
- ` dest_size`  
- The size of ` dest`. If `char_type` is `char`, then this size is in bytes. If `char_type` is `wchar_t`, then this size is in words.  
+ `dest_size`  
+ The size of `dest`. If `char_type` is `char`, then this size is in bytes. If `char_type` is `wchar_t`, then this size is in words.  
   
  `_From`  
  The source string or character array to be copied.  
   
- ` count`  
+ `count`  
  The number of elements to be copied.  
   
 ### Return Value  
@@ -548,7 +548,7 @@ static const char_type* find(const char_type* str,
 ```  
   
 ### Parameters  
- ` str`  
+ `str`  
  The first character in the string to be searched.  
   
  `_Num`  
@@ -623,7 +623,7 @@ static size_t length(const char_type* str);
 ```  
   
 ### Parameters  
- ` str`  
+ `str`  
  The C-string whose length is to be measured.  
   
 ### Return Value  
@@ -796,20 +796,20 @@ static char_type *_Move_s(
 ```  
   
 ### Parameters  
- ` dest`  
+ `dest`  
  The element at the beginning of the string or character array targeted to receive the copied sequence of characters.  
   
- ` dest_size`  
- The size of ` dest`. If `char_type` is `char`, then this is in bytes. If `char_type` is `wchar_t`, then this is in words.  
+ `dest_size`  
+ The size of `dest`. If `char_type` is `char`, then this is in bytes. If `char_type` is `wchar_t`, then this is in words.  
   
  `_From`  
  The element at the beginning of the source string or character array to be copied.  
   
- ` count`  
+ `count`  
  The number of elements to be copied from the source string.  
   
 ### Return Value  
- The first element ` dest` copied into the string or character array targeted to receive the copied sequence of characters.  
+ The first element `dest` copied into the string or character array targeted to receive the copied sequence of characters.  
   
 ### Remarks  
  The source and destination may overlap.  

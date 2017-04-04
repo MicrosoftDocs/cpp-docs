@@ -62,7 +62,7 @@ complex(
  `_ImagVal`  
  The value of type `long double` for the imaginary part of the complex number being constructed.  
   
- ` complexNum`  
+ `complexNum`  
  The complex number of type **double** or of type **float** whose real and imaginary parts are used to initialize a complex number of type `long double` being constructed.  
   
 ## Return Value  

@@ -52,7 +52,7 @@ class ostream_iterator
  The type of object to be inserted into the output stream.  
   
  `CharType`  
- The type that represents the character type for the `ostream_iterator`. This argument is optional and the default value is `char`*.*  
+ The type that represents the character type for the `ostream_iterator`. This argument is optional and the default value is `char`.  
   
  `Traits`  
  The type that represents the character type for the `ostream_iterator`. This argument is optional and the default value is `char_traits`\< *CharType>.*  

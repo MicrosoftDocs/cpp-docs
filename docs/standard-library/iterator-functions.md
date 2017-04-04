@@ -324,14 +324,14 @@ typename iterator_traits<InputIterator>::difference_type distance(InputIterator 
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  The first iterator whose distance from the second is to be determined.  
   
- ` last`  
+ `last`  
  The second iterator whose distance from the first is to be determined.  
   
 ### Return Value  
- The number of times that ` first` must be incremented until it equal ` last`.  
+ The number of times that `first` must be incremented until it equal `last`.  
   
 ### Remarks  
  The distance function has constant complexity when **InputIterator** satisfies the requirements for a random-access iterator; otherwise, it has linear complexity and so is potentially expensive.  
@@ -483,7 +483,7 @@ After the front insertions, the list L is:
 ```  
   
 ##  <a name="inserter"></a>  inserter  
- A helper template function that lets you use `inserter(``_Cont``,``_Where``)` instead of `insert_iterator<Container>(``_Cont`, `_Where``)`.  
+ A helper template function that lets you use `inserter(_Cont, _Where)` instead of `insert_iterator<Container>(_Cont, _Where)`.  
   
 ```  
 template <class Container>  
@@ -501,7 +501,7 @@ inserter(
  An iterator locating the point of insertion.  
   
 ### Remarks  
- The template function returns [insert_iterator](../standard-library/insert-iterator-class.md#insert_iterator__insert_iterator)`<Container>(``_Cont``,` `_Where``)`.  
+ The template function returns [insert_iterator](../standard-library/insert-iterator-class.md#insert_iterator__insert_iterator)`<Container>(_Cont, _Where)`.  
   
 ### Example  
   
@@ -742,7 +742,7 @@ InputIterator next(
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  The current position.  
   
  `_Off`  
@@ -765,7 +765,7 @@ BidirectionalIterator prev(
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  The current position.  
   
  `_Off`  

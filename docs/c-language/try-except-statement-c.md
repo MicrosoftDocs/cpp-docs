@@ -64,7 +64,7 @@ translation.priority.ht:
   
 2.  If no exception occurs during execution of the guarded section, execution continues at the statement after the `__except` clause.  
   
-3.  If an exception occurs during execution of the guarded section or in any routine the guarded section calls, the`__except` expression is evaluated and the value returned determines how the exception is handled. There are three values:  
+3.  If an exception occurs during execution of the guarded section or in any routine the guarded section calls, the `__except` expression is evaluated and the value returned determines how the exception is handled. There are three values:  
   
      `EXCEPTION_CONTINUE_SEARCH` Exception is not recognized. Continue to search up the stack for a handler, first for containing **try-except** statements, then for handlers with the next highest precedence.  
   

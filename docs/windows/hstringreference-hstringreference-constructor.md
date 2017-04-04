@@ -67,7 +67,7 @@ HStringReference(HStringReference&& other) throw();
   
  The second constructor initializes a new HStringReference object that the size specifeid by parameter `len`.  
   
- The third constructor initializes a new HStringReference object to the value of the `other`parameter, and then destroys the `other` parameter.  
+ The third constructor initializes a new HStringReference object to the value of the `other` parameter, and then destroys the `other` parameter.  
   
 ## Requirements  
  **Header:** corewrappers.h  

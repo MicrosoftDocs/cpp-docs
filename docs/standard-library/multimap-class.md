@@ -421,7 +421,7 @@ size_type count(const Key& key) const;
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The key of the elements to be matched from the multimap.  
   
 ### Return Value  
@@ -432,7 +432,7 @@ size_type count(const Key& key) const;
   
  [ `lower_bound` (_ *Key* ), `upper_bound` (\_ *Key* ) )  
   
- that have a key value ` key`.  
+ that have a key value `key`.  
   
 ### Example  
   The following example demonstrates the use of the multimap::count member function.  
@@ -582,7 +582,7 @@ typedef typename allocator_type::difference_type difference_type;
 ```  
   
 ### Remarks  
- The `difference_type` is the type returned when subtracting or incrementing through iterators of the container. The `difference_type` is typically used to represent the number of elements in the range [ * first,  last*) between the iterators ` first` and ` last`, includes the element pointed to by ` first` and the range of elements up to, but not including, the element pointed to by * last*.  
+ The `difference_type` is the type returned when subtracting or incrementing through iterators of the container. The `difference_type` is typically used to represent the number of elements in the range [*first*, *last*) between the iterators `first` and `last`, includes the element pointed to by `first` and the range of elements up to, but not including, the element pointed to by `last`.  
   
  Note that although `difference_type` is available for all iterators that satisfy the requirements of an input iterator, which includes the class of bidirectional iterators supported by reversible containers such as set, subtraction between iterators is only supported by random-access iterators provided by a random-access container such as vector.  
   
@@ -801,7 +801,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key to be compared with the sort key of an element from the multimap being searched.  
   
 ### Return Value  
@@ -1350,7 +1350,7 @@ const_iterator lower_bound(const Key& key) const;
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key to be compared with the sort key of an element from the multimap being searched.  
   
 ### Return Value  
@@ -1672,10 +1672,10 @@ multimap& operator=(multimap&& right);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` right`|The [multimap](../standard-library/multimap-class.md) being copied into the `multimap`.|  
+|`right`|The [multimap](../standard-library/multimap-class.md) being copied into the `multimap`.|  
   
 ### Remarks  
- After erasing any existing elements in a `multimap`, `operator=` either copies or moves the contents of ` right` into the `multimap`.  
+ After erasing any existing elements in a `multimap`, `operator=` either copies or moves the contents of `right` into the `multimap`.  
   
 ### Example  
   
@@ -2019,8 +2019,8 @@ void swap(
 ```  
   
 ### Parameters  
- ` right`  
- The multimap providing the elements to be swapped, or the multimap whose elements are to be exchanged with those of the multimap ` left`.  
+ `right`  
+ The multimap providing the elements to be swapped, or the multimap whose elements are to be exchanged with those of the multimap `left`.  
   
 ### Remarks  
  The member function invalidates no references, pointers, or iterators that designate elements in the two multimaps whose elements are being exchanged.  
@@ -2086,7 +2086,7 @@ const_iterator upper_bound(const Key& key) const;
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key to be compared with the sort key of an element from the multimap being searched.  
   
 ### Return Value  

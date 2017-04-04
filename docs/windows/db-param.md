@@ -87,7 +87,7 @@ Associates the specified member variable with an input or output parameter and d
   
  **db_param** is used in conjunction with either the [db_table](../windows/db-table.md) or [db_command](../windows/db-command.md) attributes.  
   
- When the consumer attribute provider applies this attribute to a class, the compiler will rename the class to _*YourClassName*Accessor, where *YourClassName* is the name you gave the class, and the compiler will also create a class called *YourClassName,* which derives from \_*YourClassName*Accessor.  In Class View, you will see both classes.  
+ When the consumer attribute provider applies this attribute to a class, the compiler will rename the class to \_*YourClassName*Accessor, where *YourClassName* is the name you gave the class, and the compiler will also create a class called *YourClassName*, which derives from \_*YourClassName*Accessor.  In Class View, you will see both classes.  
   
 ## Example  
  The following example creates a command class based on the SalesbyYear stored procedure in the Northwind database. It associates the first parameter in the stored procedure with the `m_RETURN_VALUE` variable, and defines it as an output parameter. It associates the last two (input) parameters with `m_Beginning_Date` and `m_Ending_Date`.  
@@ -142,4 +142,4 @@ struct CSalesbyYear {
  For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
   
 ## See Also  
- [OLE DB Consumer Attributes](../windows/ole-db-consumer-attributes.md)   
+ [OLE DB Consumer Attributes](../windows/ole-db-consumer-attributes.md)   

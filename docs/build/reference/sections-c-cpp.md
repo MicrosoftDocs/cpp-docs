@@ -51,7 +51,7 @@ definitions
   
  `.section_name specifier`  
   
- where `.section_name` is the name of a section in your program image and `specifier`is one or more of the following access modifiers:  
+ where `.section_name` is the name of a section in your program image and `specifier` is one or more of the following access modifiers:  
   
 |Modifier|Description|  
 |--------------|-----------------|  

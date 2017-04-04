@@ -125,7 +125,7 @@ int _mbsicoll_l(
  The locale to use.  
   
 ## Return Value  
- Each of these functions returns a value indicating the relationship of `string1` to `string2`*,* as follows.  
+ Each of these functions returns a value indicating the relationship of `string1` to `string2`, as follows.  
   
 |Return value|Relationship of string1 to string2|  
 |------------------|----------------------------------------|  

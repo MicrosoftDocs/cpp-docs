@@ -110,7 +110,7 @@ _set_new_mode(1)
   
  early in your program or link with Newmode.obj.  
   
- If a user-defined `operator new`is provided, the new handler functions are not automatically called on failure.  
+ If a user-defined `operator new` is provided, the new handler functions are not automatically called on failure.  
   
  For more information, see [new](../../cpp/new-operator-cpp.md) and [delete](../../cpp/delete-operator-cpp.md) in the *C++ Language Reference*.  
   

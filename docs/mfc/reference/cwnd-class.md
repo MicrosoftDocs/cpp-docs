@@ -8981,7 +8981,7 @@ void RepositionBars(UINT nIDFirst,
   
 - **CWnd::reposQuery** The layout of the control bars is not done; instead `lpRectParam` is initialized with the size of the client area, as if the layout had actually been done.  
   
-- **CWnd::reposExtra** Adds the values of `lpRectParam` to the client area of `nIDLast` and also performs the layout *.*  
+- **CWnd::reposExtra** Adds the values of `lpRectParam` to the client area of `nIDLast` and also performs the layout.  
   
  `lpRectParam`  
  Points to a [RECT structure](../../mfc/reference/rect-structure1.md); the usage of which depends on the value of `nFlag`.  
@@ -10133,7 +10133,7 @@ void UpdateDialogControls(
   
 ### Parameters  
  `pTarget`  
- Points to the main frame window of the application, and is used for routing update messages *.*  
+ Points to the main frame window of the application, and is used for routing update messages.  
   
  `bDisableIfNoHndler`  
  Flag that indicates whether a control that has no update handler should be automatically displayed as disabled.  

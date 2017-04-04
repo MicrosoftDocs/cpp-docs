@@ -109,29 +109,19 @@ hash_map(System::Collections::Generic::IEnumerable<GValue>^ right,
   
  The constructor:  
   
- `template<typename InIter>`  
-  
- `hash_map(InIter first, InIter last);`  
+ `template<typename InIter> hash_map(InIter first, InIter last);`  
   
  initializes the controlled sequence with the sequence `[``first``,` `last``)`, with the default ordering predicate, and with the default hash function. You use it to make the controlled sequence a copy of another sequence, with the default ordering predicate and hash function.  
   
  The constructor:  
   
- `template<typename InIter>`  
-  
- `hash_map(InIter first, InIter last,`  
-  
- `key_compare^ pred);`  
+ `template<typename InIter> hash_map(InIter first, InIter last, key_compare^ pred);`  
   
  initializes the controlled sequence with the sequence `[``first``,` `last``)`, with the ordering predicate `pred`, and with the default hash function. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate and the default hash function.  
   
  The constructor:  
   
- `template<typename InIter>`  
-  
- `hash_map(InIter first, InIter last,`  
-  
- `key_compare^ pred, hasher^ hashfn);`  
+ `template<typename InIter> hash_map(InIter first, InIter last, key_compare^ pred, hasher^ hashfn);`  
   
  initializes the controlled sequence with the sequence `[``first``,` `last``)`, with the ordering predicate `pred`, and with the hash function `hashfn`. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate and hash function.  
   
@@ -143,17 +133,13 @@ hash_map(System::Collections::Generic::IEnumerable<GValue>^ right,
   
  The constructor:  
   
- `hash_map(System::Collections::Generic::IEnumerable<Key>^ right,`  
-  
- `key_compare^ pred);`  
+ `hash_map(System::Collections::Generic::IEnumerable<Key>^ right, key_compare^ pred);`  
   
  initializes the controlled sequence with the sequence designated by the enumerator `right`, with the ordering predicate `pred`, and with the default hash function. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the specified ordering predicate and default hash function.  
   
  The constructor:  
   
- `hash_map(System::Collections::Generic::IEnumerable<Key>^ right,`  
-  
- `key_compare^ pred, hasher^ hashfn);`  
+ `hash_map(System::Collections::Generic::IEnumerable<Key>^ right, key_compare^ pred, hasher^ hashfn);`  
   
  initializes the controlled sequence with the sequence designated by the enumerator `right`, with the ordering predicate `pred`, and with the hash function `hashfn`. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the specified ordering predicate and hash function.  
   

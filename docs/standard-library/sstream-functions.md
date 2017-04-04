@@ -44,11 +44,11 @@ void swap(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|` left`|Reference to an `sstream` object.|  
-|` right`|Reference to an `sstream` object.|  
+|`left`|Reference to an `sstream` object.|  
+|`right`|Reference to an `sstream` object.|  
   
 ### Remarks  
- The template function executes ` left``.swap(`` right``)`.  
+ The template function executes `left.swap(right)`.  
   
 ## See Also  
  [\<sstream>](../standard-library/sstream.md)

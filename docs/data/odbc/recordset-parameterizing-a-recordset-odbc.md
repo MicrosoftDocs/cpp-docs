@@ -168,7 +168,7 @@ This topic applies to the MFC ODBC classes.
   
 4.  Call the **Open** member function (or **Requery**, for an existing recordset).  
   
- For example, suppose you want to specify a filter string for your recordset using information obtained at run time. Assume you have constructed a recordset of class `CStudentSet` earlier — called `rsStudent`s — and now want to requery it for a particular kind of student information.  
+ For example, suppose you want to specify a filter string for your recordset using information obtained at run time. Assume you have constructed a recordset of class `CStudentSet` earlier — called `rsStudents` — and now want to requery it for a particular kind of student information.  
   
 ```  
 // Set up a filter string with   

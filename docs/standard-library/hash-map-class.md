@@ -200,7 +200,7 @@ const Type& at(const Key& key) const;
 |||  
 |-|-|  
 |Parameter|Description|  
-|` key`|The key value of the element that is to be found.|  
+|`key`|The key value of the element that is to be found.|  
   
 ### Return Value  
  A reference to the data value of the element found.  
@@ -578,7 +578,7 @@ size_type count(const Key& key) const;
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The key value of the elements to be matched from the hash_map.  
   
 ### Return Value  
@@ -832,7 +832,7 @@ emplace(
 |||  
 |-|-|  
 |Parameter|Description|  
-|` val`|The value used to move construct an element to be inserted into the [hash_map](../standard-library/hash-map-class.md) unless the `hash_map` already contains that element (or, more generally, an element whose key is equivalently ordered).|  
+|`val`|The value used to move construct an element to be inserted into the [hash_map](../standard-library/hash-map-class.md) unless the `hash_map` already contains that element (or, more generally, an element whose key is equivalently ordered).|  
   
 ### Return Value  
  The `emplace` member function returns a pair whose bool component returns true if an insertion was made and false if the `hash_map` already contained an element whose key had an equivalent value in the ordering, and whose iterator component returns the address where a new element was inserted or where the element was already located.  
@@ -892,7 +892,7 @@ iterator emplace_hint(
 |||  
 |-|-|  
 |Parameter|Description|  
-|` val`|The value used to move construct an element to be inserted into the [hash_map](../standard-library/hash-map-class.md) unless the `hash_map` already contains that element (or, more generally, an element whose key is equivalently ordered).|  
+|`val`|The value used to move construct an element to be inserted into the [hash_map](../standard-library/hash-map-class.md) unless the `hash_map` already contains that element (or, more generally, an element whose key is equivalently ordered).|  
 |`_Where`|A hint regarding the place to start searching for the correct point of insertion.|  
   
 ### Return Value  
@@ -1068,7 +1068,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key value to be compared with the sort key of an element from the hash_map being searched.  
   
 ### Return Value  
@@ -1159,13 +1159,13 @@ size_type erase(const key_type& key);
  `_Where`  
  Position of the element to be removed from the hash_map.  
   
- ` first`  
+ `first`  
  Position of the first element removed from the hash_map.  
   
- ` last`  
+ `last`  
  Position just beyond the last element removed from the hash_map.  
   
- ` key`  
+ `key`  
  The key value of the elements to be removed from the hash_map.  
   
 ### Return Value  
@@ -1276,7 +1276,7 @@ const_iterator find(const Key& key) const;
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The key value to be matched by the sort key of an element from the hash_map being searched.  
   
 ### Return Value  
@@ -1530,10 +1530,10 @@ iterator insert(
 |||  
 |-|-|  
 |Parameter|Description|  
-|` val`|The value of an element to be inserted into the hash_map unless the hash_map already contains that element (or, more generally, an element whose key is equivalently ordered).|  
+|`val`|The value of an element to be inserted into the hash_map unless the hash_map already contains that element (or, more generally, an element whose key is equivalently ordered).|  
 |`_Where`|A hint regarding the place to start searching for the correct point of insertion.|  
-|` first`|The position of the first element to be copied from a hash_map.|  
-|` last`|The position just beyond the last element to be copied from a hash_map.|  
+|`first`|The position of the first element to be copied from a hash_map.|  
+|`last`|The position just beyond the last element to be copied from a hash_map.|  
   
 ### Return Value  
  The first **insert** member function returns a pair whose bool component returns true if an insertion was made and false if the hash_map already contained an element whose key had an equivalent value in the ordering, and whose iterator component returns the address where a new element was inserted or where the element was already located.  
@@ -1700,9 +1700,9 @@ key_compare key_comp() const;
 ### Remarks  
  The stored object defines the member function  
   
- **bool operator**( **const Key&** ` left`**, const Key&** ` right`);  
+ **bool operator**( **const Key&** `left`**, const Key&** `right`);  
   
- that returns **true** if ` left` precedes and is not equal to ` right` in the sort order.  
+ that returns **true** if `left` precedes and is not equal to `right` in the sort order.  
   
  In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
   
@@ -1815,7 +1815,7 @@ const_iterator lower_bound(const Key& key) const;
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key value to be compared with the sort key of an element from the hash_map being searched.  
   
 ### Return Value  
@@ -1955,7 +1955,7 @@ Type& operator[](Key&& key);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` key`|The key value of the element that is to be inserted.|  
+|`key`|The key value of the element that is to be inserted.|  
   
 ### Return Value  
  A reference to the data value of the inserted element.  
@@ -1967,7 +1967,7 @@ Type& operator[](Key&& key);
   
  `m[ key] = DataValue`;  
   
- where DataValue is the value of the `mapped_type` of the element with a key value of ` key`.  
+ where DataValue is the value of the `mapped_type` of the element with a key value of `key`.  
   
  When using `operator[]` to insert elements, the returned reference does not indicate whether an insertion is changing a preexisting element or creating a new one. The member functions [find](../standard-library/map-class.md#map__find) and [insert](../standard-library/map-class.md#map__insert) can be used to determine whether an element with a specified key is already present before an insertion.  
   
@@ -2051,10 +2051,10 @@ hash_map& operator=(hash_map&& right);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` right`|The [hash_map Class](../standard-library/hash-map-class.md) being copied into the `hash_map`.|  
+|`right`|The [hash_map Class](../standard-library/hash-map-class.md) being copied into the `hash_map`.|  
   
 ### Remarks  
- After erasing any existing elements in a `hash_map`, `operator=` either copies or moves the contents of ` right` into the `hash_map`.  
+ After erasing any existing elements in a `hash_map`, `operator=` either copies or moves the contents of `right` into the `hash_map`.  
   
 ### Example  
   
@@ -2453,7 +2453,7 @@ void swap(hash_map& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The argument hash_map providing the elements to be swapped with the target hash_map.  
   
 ### Remarks  
@@ -2529,7 +2529,7 @@ const_iterator upper_bound(const Key& key) const;
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key value to be compared with the sort key value of an element from the hash_map being searched.  
   
 ### Return Value  
@@ -2609,9 +2609,9 @@ value_compare value_comp() const;
 ### Remarks  
  For a hash_map *m*, if two elements *e*1 *(k*1 *, d*1 *)* and *e*2 *(k*2 *, d*2 *)* are objects of type [value_type](#hash_map__value_type), where *k*1 and *k*2 are their keys of type [key_type](#hash_map__key_type) and `d`1 and `d`2 are their data of type [mapped_type](#hash_map__mapped_type), then *m.*`value_comp`*( )(e*1 *, e*2 *)* is equivalent to *m.*`key_comp`*( ) (k*1 *, k*2 *)*. A stored object defines the member function  
   
- **bool operator**( **value_type&** ` left`, **value_type&** ` right`) **;**  
+ **bool operator**( **value_type&** `left`, **value_type&** `right`) **;**  
   
- which returns **true** if the key value of ` left` precedes and is not equal to the key value of ` right` in the sort order.  
+ which returns **true** if the key value of `left` precedes and is not equal to the key value of `right` in the sort order.  
   
  In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
   

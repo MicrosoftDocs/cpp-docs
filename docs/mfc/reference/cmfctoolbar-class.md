@@ -1157,7 +1157,7 @@ BOOL GetGrayDisabledButtons() const;
 ```  
   
 ### Return Value  
- `TRUE` to dim the images of disabled buttons; `FALSE`to obtain images from the collection of disabled images.  
+ `TRUE` to dim the images of disabled buttons; `FALSE` to obtain images from the collection of disabled images.  
   
 ### Remarks  
  Use [CMFCToolBar::SetGrayDisabledButtons](#setgraydisabledbuttons) to switch between dimmed images and the images from the collection of disabled images.  

@@ -90,10 +90,10 @@ wchar_t *_wgetdcwd_dbg(
  Storage location for the path.  
   
  `maxlen`  
- Maximum length of the path in characters: `char` for `_getdcwd_dbg`and `wchar_t`for `_wgetdcwd_dbg`.  
+ Maximum length of the path in characters: `char` for `_getdcwd_dbg` and `wchar_t` for `_wgetdcwd_dbg`.  
   
  `blockType`  
- Requested type of the memory block: `_CLIENT_BLOCK`or `_NORMAL_BLOCK`.  
+ Requested type of the memory block: `_CLIENT_BLOCK` or `_NORMAL_BLOCK`.  
   
  `filename`  
  Pointer to the name of the source file that requested the allocation operation or `NULL`.  

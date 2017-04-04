@@ -625,19 +625,15 @@ DateTimeStatus GetStatus() const throw();
 ### Remarks  
  The return value is defined by the **DateTimeStatus** enumerated type, which is defined within the `COleDateTime` class.  
   
- `enum DateTimeStatus`  
-  
- `{`  
-  
- `error = -1,`  
-  
- `valid = 0,`  
-  
- `invalid = 1,    // Invalid date (out of range, etc.)`  
-  
- `null = 2,       // Literally has no value`  
-  
- `};`  
+```  
+enum DateTimeStatus  
+{  
+   error = -1,  
+   valid = 0,  
+   invalid = 1,    // Invalid date (out of range, etc.)  
+   null = 2,       // Literally has no value  
+};  
+```  
   
  For a brief description of these status values, see the following list:  
   
@@ -884,9 +880,7 @@ bool ParseDateTime(
   
  `"8:30:00 Jan. 25, 1996"`  
   
- `"1/25/1996 8:30:00"  // always specify the full year,`  
-  
- `// even in a 'short date' format`  
+ `"1/25/1996 8:30:00"  // always specify the full year, even in a 'short date' format`  
   
  Note that the locale ID will also affect whether the string format is acceptable for conversion to a date/time value.  
   

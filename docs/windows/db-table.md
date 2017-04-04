@@ -65,7 +65,7 @@ Opens an OLE DB table.
 ## Remarks  
  **db_table** creates a [CTable](../data/oledb/ctable-class.md) object, which is used by an OLE DB consumer to open a table. You can use this attribute only at the class level; you cannot use it inline. Use **db_column** to bind table columns to variables; use **db_param** to delimit (set the parameter type and so on) of parameters.  
   
- When the consumer attribute provider applies this attribute to a class, the compiler will rename the class to _*YourClassName*Accessor, where *YourClassName* is the name you gave the class, and the compiler will also create a class called *YourClassName,* which derives from \_*YourClassName*Accessor.  In Class View, you will see both classes.  
+ When the consumer attribute provider applies this attribute to a class, the compiler will rename the class to \_*YourClassName*Accessor, where *YourClassName* is the name you gave the class, and the compiler will also create a class called *YourClassName*, which derives from \_*YourClassName*Accessor.  In Class View, you will see both classes.  
   
 ## Example  
  The following example opens the Products table for use by `CProducts`.  
@@ -99,4 +99,4 @@ class CProducts {
  For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
   
 ## See Also  
- [OLE DB Consumer Attributes](../windows/ole-db-consumer-attributes.md)   
+ [OLE DB Consumer Attributes](../windows/ole-db-consumer-attributes.md)   

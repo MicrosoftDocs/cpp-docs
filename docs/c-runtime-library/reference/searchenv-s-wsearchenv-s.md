@@ -110,7 +110,7 @@ errno_t _wsearchenv_s(
  Buffer to store the complete path.  
   
  [in] `numberOfElements`  
- Size of the `pathname`buffer.  
+ Size of the `pathname` buffer.  
   
 ## Return Value  
  Zero if successful; an error code on failure.  
