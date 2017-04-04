@@ -76,6 +76,7 @@ When a program executes, a number of abnormal conditions and errors called "exce
 |-|-|  
 |[AfxThrowArchiveException](#afxthrowarchiveexception)|Throws an archive exception.|  
 |[AfxThrowFileException](#afxthrowfileexception)|Throws a file exception.|  
+|[AfxThrowInvalidArgException](#afxthrowinvalidargexception)|Throws an invalid argument exception.|
 |[AfxThrowMemoryException](#afxthrowmemoryexception)|Throws a memory exception.|  
 |[AfxThrowNotSupportedException](#afxthrownotsupportedexception)|Throws a not-supported exception.|  
 |[AfxThrowResourceException](#afxthrowresourceexception)|Throws a Windows resource-not-found exception.|  
@@ -331,6 +332,26 @@ void AfxThrowFileException(
   
 ### Requirements  
   **Header** afx.h  
+
+## <a name="afxthrowinvalidargexception"></a>  AfxThrowInvalidArgException
+Throws an invalid argument exception.  
+   
+### Syntax    
+```
+void AfxThrowInvalidArgException( );  
+```  
+   
+### Remarks  
+ This function is called when invalid arguments are used.  
+   
+### Requirements  
+ **Header:** afx.h  
+   
+### See Also  
+ [Macros and Globals](mfc-macros-and-globals.md)   
+ [CInvalidArgException Class](cinvalidargexception-class.md)   
+ [THROW](#throw)
+  
   
 ##  <a name="afxthrowmemoryexception"></a>  AfxThrowMemoryException  
  Throws a memory exception.  

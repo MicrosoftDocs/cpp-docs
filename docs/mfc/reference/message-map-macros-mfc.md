@@ -57,6 +57,7 @@ To support message maps, MFC supplies the following macros:
 |||  
 |-|-|  
 |[ON_COMMAND](#on_command)|Indicates which function will handle a specified command message.|  
+|[ON_COMMAND_EX](#on_command_ex)|Indicates which function will handle a specified command message.|  
 |[ON_CONTROL](#on_control)|Indicates which function will handle a specified control-notification message.|  
 |[ON_MESSAGE](#on_message)|Indicates which function will handle a user-defined message.|  
 |[ON_OLECMD](#on_olecmd)|Indicates which function will handle a menu command from a DocObject or its container.|  
@@ -182,6 +183,48 @@ END_MESSAGE_MAP()
   
 ### Requirements  
  **Header:** afxmsg_.h  
+
+ ## <a name="on_command_ex"></a>  ON_COMMAND_EX
+Extended command-handler member function.  
+   
+### Syntax  
+  ```  
+ON_COMMAND_EX(id, memberFxn);  
+```
+### Parameters  
+ `id`  
+ The command ID.  
+  
+ `memberFxn`  
+ The name of the  message-handler  function to which the  command is mapped.  
+   
+### Remarks 
+An extended form of  command message  handlers is available  for advanced uses. The  `ON_COMMAND_EX` macro  is used for such  message handlers, and  it provides a superset  of the [ON_COMMAND] (#on_command)  functionality.  Extended  command-handler member  functions take a single  parameter, a **UINT**  containing the command  ID, and return a  **BOOL**. The return  value should be TRUE to 
+
+This macro maps a command message to an extended command-handler member function.  
+   
+### Syntax  
+```  
+ON_COMMAND_EX(id,  memberFxn);  
+```
+### Parameters  
+ `id`  
+ The command ID.  
+  
+ `memberFxn`  
+ The name of the message-handler function to which the command is mapped.  
+   
+### Remarks  
+ An extended form of command message handlers is available for advanced uses. The `ON_COMMAND_EX` macro is used for such message handlers, and it provides a superset of the [ON_COMMAND](message-map-macros-mfc.md#on_command) functionality. Extended command-handler member functions take a single parameter, a **UINT** containing the command ID, and return a **BOOL**. The return value should be TRUE to indicate that the command has been handled; otherwise routing will continue to other command target objects.  
+For more information, see Technical Note [TN006: Message Maps]tm006-message-maps.md).  
+   
+### Requirements  
+ Header file: afxmsg_.h  
+   
+### See Also  
+ [ON_COMMAND](message-map-macros-mfc.md#on_command)   
+ [TN006: Message Maps]tm006-message-maps.md)
+
   
 ## <a name="on_control"></a>  ON_CONTROL
 Indicates which function will handle a custom-control notification message.  
