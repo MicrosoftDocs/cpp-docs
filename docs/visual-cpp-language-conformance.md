@@ -34,6 +34,9 @@ translation.priority.ht:
 This topic summarizes the ISO C++03, C++11, C++14, and Draft C++17 language standards conformance of compiler features and Standard Library (STL) features for Visual C++ in Visual Studio 2017 and earlier versions. Each compiler and STL feature name links to the ISO C++ Standard proposal paper that describes the feature, if one is available at publication time. The Supported column lists the Visual Studio version in which support for the feature first appeared.  
   
 For details on conformance improvements and other changes in Visual Studio 2017, see [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md) and [What's New for Visual C++ in Visual Studio 2017](what-s-new-for-visual-cpp-in-visual-studio.md). For conformance changes in earlier versions, see [Visual C++ change history](porting/visual-cpp-change-history-2003-2015.md) and [Visual C++ What's New 2003 through 2015](porting/visual-cpp-what-s-new-2003-through-2015.md). For current news from the C++ team, visit the [Visual C++ team blog](http://blogs.msdn.microsoft.com/vcblog/).  
+
+ > [!NOTE]
+ > There are no binary breaking changes between Visual Studio 2015 and Visual Studio 2017.
   
 ## Compiler Features  
   
