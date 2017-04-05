@@ -42,7 +42,7 @@
             "ms.prod": "visual-studio-dev15",
             "ms.technology": "devlang-cpp",
             "ms.tgt_pltfrm": "",
-            "scopedSearch": ["C++"]
+            "searchScope": ["C++"]
     },
     "fileMetadata": {},
     "template": [],
